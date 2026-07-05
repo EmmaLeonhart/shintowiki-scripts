@@ -10,12 +10,14 @@ on:
       - "shinto_miraheze/**.py"
       - "modern-quickstatements/**.py"
       - "shinto-label-generator/**.py"
+      - "recreate-deleted-wikidata/**.py"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "shinto_miraheze/**.py"
       - "modern-quickstatements/**.py"
       - "shinto-label-generator/**.py"
+      - "recreate-deleted-wikidata/**.py"
   workflow_dispatch:
 
 jobs:
@@ -37,4 +39,4 @@ jobs:
         run: pip install pytest requests mwclient opencc-python-reimplemented hanja pykakasi
 
       - name: Run tests
-        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ -q
+        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ recreate-deleted-wikidata/tests/ -q

@@ -1,0 +1,1577 @@
+# Recreate deleted-QID ill targets — QuickStatements (HUMAN-GATED, NOT auto-submitted). See generate_recreate_quickstatements.py.
+# recreate deleted ill target (was Q135491453) — from [[1-day onsen facility]]
+CREATE
+LAST	Lde	"One Day Spa"
+LAST	Lja	"ワンデイ・スパ"
+LAST	Lzh	"一日水疗"
+
+# recreate deleted ill target (was Q135500318) — from [[1-day onsen facility]]
+CREATE
+LAST	Lde	"Yukemuri no Shō"
+LAST	Lja	"湯けむりの庄"
+LAST	Lzh	"蒸汽温泉庄"
+
+# recreate deleted ill target (was Q135500321) — from [[1-day onsen facility]]
+CREATE
+LAST	Lde	"Yukemuri no Sato"
+LAST	Lja	"湯けむりの里"
+LAST	Lzh	"蒸汽温泉里"
+
+# recreate deleted ill target (was Q135500328) — from [[1-day onsen facility]]
+CREATE
+LAST	Lde	"Yumoto Group"
+LAST	Lja	"湯本グループ"
+LAST	Lzh	"汤本集团"
+
+# recreate deleted ill target (original QID lost) — from [[1-day onsen facility]]
+CREATE
+LAST	Len	"Hamabowl EAS"
+LAST	Lde	"Yokohama Hamaball"
+LAST	Lja	"横浜ハマボール"
+LAST	Lzh	"横滨哈马球"
+
+# recreate deleted ill target (original QID lost) — from [[26-Rank cap system]]
+CREATE
+LAST	Len	"Ritsuryō Forty-Eight Rank System"
+LAST	Lja	"冠位四十八階"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Ariyo]]
+CREATE
+LAST	Len	"Abe Yasukichi"
+LAST	Lja	"安倍泰吉"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Ariyo]]
+CREATE
+LAST	Len	"Abe Arimori"
+LAST	Lja	"安倍有盛"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Ariyo]]
+CREATE
+LAST	Len	"Abe Arishige"
+LAST	Lja	"安倍有重"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Masafumi"
+LAST	Lja	"安倍政文"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasuari"
+LAST	Lja	"安倍泰有"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasutoshi"
+LAST	Lja	"安倍泰時"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Kiyohiro"
+LAST	Lja	"安倍季弘"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Gyōshun"
+LAST	Lja	"安倍業俊"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasushige"
+LAST	Lja	"安倍泰茂"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasunari"
+LAST	Lja	"安倍泰成"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasutada"
+LAST	Lja	"安倍泰忠"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Chōnaga"
+LAST	Lja	"安倍親長"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasumi"
+LAST	Lja	"安倍泰明"
+
+# recreate deleted ill target (original QID lost) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Kintoki"
+LAST	Lja	"安倍兼時"
+
+# recreate deleted ill target (original QID lost) — from [[Achi Shrine (Kurashiki)]]
+CREATE
+LAST	Len	"Kibi no Anaumi"
+LAST	Lja	"吉備の穴海"
+
+# recreate deleted ill target (original QID lost) — from [[Achi clan]]
+CREATE
+LAST	Len	"Ōmiya Isuzu Shrine"
+LAST	Lja	"大宮五十鈴神社"
+
+# recreate deleted ill target (original QID lost) — from [[Achi clan]]
+CREATE
+LAST	Len	"Kamimiya Togata Shrine"
+LAST	Lja	"上宮外縣神社"
+
+# recreate deleted ill target (original QID lost) — from [[Acupuncture Hakase]]
+CREATE
+LAST	Len	"Fukane Munetsugu"
+LAST	Lja	"深根宗継"
+
+# recreate deleted ill target (original QID lost) — from [[Acupuncture Hakase]]
+CREATE
+LAST	Len	"Katsuragi Takamune"
+LAST	Lja	"葛城高宗"
+
+# recreate deleted ill target (original QID lost) — from [[Acupuncture Hakase]]
+CREATE
+LAST	Len	"Tanba Tadayaki"
+LAST	Lja	"丹波忠明"
+
+# recreate deleted ill target (original QID lost) — from [[Adachi Yoshikage]]
+CREATE
+LAST	Len	"Mutō Yorisuke"
+LAST	Lja	"武藤頼佐"
+
+# recreate deleted ill target (original QID lost) — from [[Adachi Yoshikage]]
+CREATE
+LAST	Len	"Adachi Kagemura"
+LAST	Lja	"安達景村"
+
+# recreate deleted ill target (original QID lost) — from [[Adachi Yoshikage]]
+CREATE
+LAST	Len	"Adachi Shigekage"
+LAST	Lja	"安達重景"
+
+# recreate deleted ill target (original QID lost) — from [[Adachi Yoshikage]]
+CREATE
+LAST	Len	"Adachi Tokikage"
+LAST	Lja	"安達時景"
+
+# recreate deleted ill target (original QID lost) — from [[Aedo Hashihime Shrine]]
+CREATE
+LAST	Len	"Gōkaku Shrine"
+LAST	Lja	"合格神社"
+
+# recreate deleted ill target (original QID lost) — from [[Aedo Hashihime Shrine]]
+CREATE
+LAST	Len	"Arakida Moriyoshi"
+LAST	Lja	"荒木田守良"
+
+# recreate deleted ill target (was Q135500704) — from [[Agata Shrine]]
+CREATE
+LAST	Len	"Agata Shrine (Yokkaichi)"
+LAST	Lja	"縣神社 (四日市市)"
+
+# recreate deleted ill target (was Q135500707) — from [[Agata Shrine]]
+CREATE
+LAST	Len	"Agata Shrine (Izumo)"
+LAST	Lja	"縣神社 (出雲市)"
+
+# recreate deleted ill target (original QID lost) — from [[Agata Shrine (Gero City)]]
+CREATE
+LAST	Len	"Ietsumiko no Kami"
+LAST	Lja	"家津御子神"
+
+# recreate deleted ill target (original QID lost) — from [[Agata Shrine (Gero City)]]
+CREATE
+LAST	Len	"Kumano Kusu no Mi no Mikoto"
+LAST	Lja	"熊野久須美命"
+
+# recreate deleted ill target (original QID lost) — from [[Agata Shrine (Gero City)]]
+CREATE
+LAST	Len	"Cedar of Agata Shrine"
+LAST	Lja	"県神社のスギ"
+
+# recreate deleted ill target (original QID lost) — from [[Agata Shrine (Ōamishirasato)]]
+CREATE
+LAST	Len	"Kimi-no-Mori"
+LAST	Lja	"季美の森"
+
+# recreate deleted ill target (original QID lost) — from [[Agata no Inukai clan]]
+CREATE
+LAST	Len	"Ken Inukai Tegoro"
+LAST	Lja	"県犬養手強"
+
+# recreate deleted ill target (original QID lost) — from [[Akagi Shrine (Fujimi Town Yokomuro)]]
+CREATE
+LAST	Len	"Okutsuhiko no Mikoto"
+LAST	Lja	"奥津彦命"
+
+# recreate deleted ill target (original QID lost) — from [[Akagi Shrine (Fujimi Town Yokomuro)]]
+CREATE
+LAST	Len	"Okutsuhime no Mikoto"
+LAST	Lja	"奥津姫命"
+
+# recreate deleted ill target (original QID lost) — from [[Akagi Shrine (Fujimi Town Yokomuro)]]
+CREATE
+LAST	Len	"Tatsuta-hime"
+LAST	Lja	"竜田姫命"
+
+# recreate deleted ill target (was Q135505918) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Araguchi Town)"
+LAST	Lja	"赤城神社 (前橋市荒口町)"
+
+# recreate deleted ill target (was Q135505921) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Arai Town)"
+LAST	Lja	"赤城神社 (前橋市新井町)"
+
+# recreate deleted ill target (was Q135505923) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kameizumi Town)"
+LAST	Lja	"赤城神社 (前橋市亀泉町)"
+
+# recreate deleted ill target (was Q135505924) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Shimo Koide Town)"
+LAST	Lja	"赤城神社 (前橋市下小出町)"
+
+# recreate deleted ill target (was Q135505926) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Sekine Town)"
+LAST	Lja	"赤城神社 (前橋市関根町)"
+
+# recreate deleted ill target (was Q135505928) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Urushikubo)"
+LAST	Lja	"赤城神社 (前橋市富士見町漆窪)"
+
+# recreate deleted ill target (was Q135505930) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Yone)"
+LAST	Lja	"赤城神社 (前橋市富士見町米野)"
+
+# recreate deleted ill target (was Q135505932) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Tajima)"
+LAST	Lja	"赤城神社 (前橋市富士見町田島)"
+
+# recreate deleted ill target (was Q135505933) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Miyaji Town)"
+LAST	Lja	"赤城神社 (前橋市宮地町)"
+
+# recreate deleted ill target (was Q135505935) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Iwanohana Town)"
+LAST	Lja	"赤城神社 (高崎市岩鼻町)"
+
+# recreate deleted ill target (was Q135505937) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Watanuki Town)"
+LAST	Lja	"赤城神社 (高崎市綿貫町)"
+
+# recreate deleted ill target (was Q135505939) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Shimotaki Town)"
+LAST	Lja	"赤城神社 (高崎市下滝町)"
+
+# recreate deleted ill target (was Q135505941) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kawauchi 2nd Town)"
+LAST	Lja	"赤城神社 (桐生市川内町2)"
+
+# recreate deleted ill target (was Q135505943) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kawauchi 5th Town)"
+LAST	Lja	"赤城神社 (桐生市川内町5)"
+
+# recreate deleted ill target (was Q135505946) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kawauchi 1st Town)"
+LAST	Lja	"赤城神社 (桐生市川内町1)"
+
+# recreate deleted ill target (was Q135505947) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Niisato Itabashi Town)"
+LAST	Lja	"赤城神社 (桐生市新里町板橋)"
+
+# recreate deleted ill target (was Q135505949) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Niisato Takei Town)"
+LAST	Lja	"赤城神社 (桐生市新里町武井)"
+
+# recreate deleted ill target (was Q135505951) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kurohone Yagihara Town)"
+LAST	Lja	"赤城神社 (桐生市黒保根町八木原)"
+
+# recreate deleted ill target (was Q135505953) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kurohone Shimo Tazawa Town)"
+LAST	Lja	"赤城神社 (桐生市黒保根町下田沢)"
+
+# recreate deleted ill target (was Q135505955) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Miyamae Town)"
+LAST	Lja	"赤城神社 (伊勢崎市宮前町)"
+
+# recreate deleted ill target (was Q135505957) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kunisada Town)"
+LAST	Lja	"赤城神社 (伊勢崎市国定町)"
+
+# recreate deleted ill target (was Q135505965) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Sakai Hiratsuka Town)"
+LAST	Lja	"赤城神社 (伊勢崎市境平塚)"
+
+# recreate deleted ill target (was Q135505970) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Tone Town Oigami)"
+LAST	Lja	"赤城神社 (沼田市利根町老神)"
+
+# recreate deleted ill target (was Q135505974) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Bōjizuka Town)"
+LAST	Lja	"赤城神社 (館林市傍示塚町)"
+
+# recreate deleted ill target (was Q135505979) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kitakatsushika Town Yasaki)"
+LAST	Lja	"赤城神社 (渋川市北橘町八崎)"
+
+# recreate deleted ill target (was Q135505981) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kitakatsushika Town Jonanmu)"
+LAST	Lja	"赤城神社 (渋川市北橘町上南室)"
+
+# recreate deleted ill target (original QID lost) — from [[Ame-no-Hibaraooshinadomi-no-Kami]]
+CREATE
+LAST	Len	"Totsumachine no Kami"
+LAST	Lja	"遠津待根神"
+
+# recreate deleted ill target (original QID lost) — from [[Ame-no-Hibaraooshinadomi-no-Kami]]
+CREATE
+LAST	Len	"Wakajinzume no Kami"
+LAST	Lja	"若尽女神"
+
+# recreate deleted ill target (original QID lost) — from [[Anesaki Kofun Group]]
+CREATE
+LAST	Len	"Rokusonōbara Kofun"
+LAST	Lja	"六孫王原古墳"
+
+# recreate deleted ill target (original QID lost) — from [[Annual event]]
+CREATE
+LAST	Len	"Inari Festival"
+LAST	Lja	"稲荷祭"
+
+# recreate deleted ill target (original QID lost) — from [[Annual event]]
+CREATE
+LAST	Len	"Fuyumatsuri"
+LAST	Lja	"鞴祭"
+
+# recreate deleted ill target (original QID lost) — from [[April 1 (Lunisolar)]]
+CREATE
+LAST	Len	"Shimabara Sea"
+LAST	Lja	"島原海"
+
+# recreate deleted ill target (original QID lost) — from [[April 15 (Lunisolar)]]
+CREATE
+LAST	Len	"haiku poet"
+LAST	Lja	"Haiku Poet"
+
+# recreate deleted ill target (original QID lost) — from [[April 4 (Lunisolar)]]
+CREATE
+LAST	Len	"Haiku"
+LAST	Lja	"Haiku Poet"
+
+# recreate deleted ill target (original QID lost) — from [[Arakawato Hime]]
+CREATE
+LAST	Len	"Nakata Norinobu"
+LAST	Lja	"中田憲信"
+
+# recreate deleted ill target (original QID lost) — from [[Atami Onsen]]
+CREATE
+LAST	Len	"Shima no Yu"
+LAST	Lja	"島の湯"
+
+# recreate deleted ill target (original QID lost) — from [[Atami Onsen]]
+CREATE
+LAST	Len	"Ōtsuki Hotel"
+LAST	Lja	"大月ホテル"
+
+# recreate deleted ill target (original QID lost) — from [[August 20 (Lunisolar)]]
+CREATE
+LAST	Len	"Intercalation (timekeeping)"
+LAST	Lja	"閏 (時の計)"
+
+# recreate deleted ill target (original QID lost) — from [[August 3 (Lunisolar)]]
+CREATE
+LAST	Len	"Tōritsu Shōdai-ji"
+LAST	Lja	"唐律招提寺"
+
+# recreate deleted ill target (original QID lost) — from [[August 5 (Lunisolar)]]
+CREATE
+LAST	Len	"Chōkui no Sei"
+LAST	Lja	"鐘匱の制"
+
+# recreate deleted ill target (original QID lost) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Kige"
+LAST	Lde	"Kamibe Kige"
+LAST	Lja	"神部伎閇"
+
+# recreate deleted ill target (original QID lost) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Yukunaa"
+LAST	Lde	"Kamibe Yukunaa"
+LAST	Lja	"神部宿奈"
+
+# recreate deleted ill target (original QID lost) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Futamibumi"
+LAST	Lde	"Kamibe Futamibumi"
+LAST	Lja	"神部二身"
+
+# recreate deleted ill target (original QID lost) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Kogui"
+LAST	Lde	"Kamibe Kogui"
+LAST	Lja	"神部小椅"
+
+# recreate deleted ill target (original QID lost) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Tsumuji"
+LAST	Lde	"Kamibe Tsumuji"
+LAST	Lja	"神部都牟自"
+
+# recreate deleted ill target (original QID lost) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Manyo"
+LAST	Lde	"Kamibe Manyo"
+LAST	Lja	"神部万侶"
+
+# recreate deleted ill target (original QID lost) — from [[Awata Shrine]]
+CREATE
+LAST	Len	"Oyayatsuhime no Kami"
+LAST	Lja	"大屋津媛神"
+
+# recreate deleted ill target (original QID lost) — from [[Awata Shrine]]
+CREATE
+LAST	Len	"Tsumatsuhime no Kami"
+LAST	Lja	"抓津媛神"
+
+# recreate deleted ill target (original QID lost) — from [[Bath Additive]]
+CREATE
+LAST	Len	"herbal baths"
+LAST	Lde	"Kräuterbäder"
+LAST	Lja	"薬湯"
+LAST	Lzh	"药汤"
+
+# recreate deleted ill target (original QID lost) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Bath Roman"
+LAST	Lde	"Bath Roman"
+LAST	Lja	"バスロマン"
+LAST	Lzh	"泡澡罗曼"
+
+# recreate deleted ill target (original QID lost) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Young Venus"
+LAST	Lde	"Young Venus"
+LAST	Lja	"ヤングビーナス"
+LAST	Lzh	"年轻维纳斯"
+
+# recreate deleted ill target (original QID lost) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Asahi Shōnō"
+LAST	Lde	"Asahi Sōnō"
+LAST	Lja	"アサヒ晶脳"
+LAST	Lzh	"旭日晶脑"
+
+# recreate deleted ill target (original QID lost) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Bath Melody"
+LAST	Lde	"Bath Melody"
+LAST	Lja	"バスメロディー"
+LAST	Lzh	"浴曲"
+
+# recreate deleted ill target (original QID lost) — from [[Bath tax]]
+CREATE
+LAST	Len	"Mineral spring bathhouse"
+LAST	Lde	"Mineralquellenbad"
+LAST	Lja	"鉱泉浴場"
+LAST	Lzh	"矿泉浴场"
+
+# recreate deleted ill target (original QID lost) — from [[Bengala]]
+CREATE
+LAST	Len	"Color Index"
+LAST	Lja	"カラーカード"
+
+# recreate deleted ill target (original QID lost) — from [[Bungo no Kuni Fudoki]]
+CREATE
+LAST	Len	"Kansei 12"
+LAST	Lja	"寛政12年"
+
+# recreate deleted ill target (original QID lost) — from [[Bungo no Kuni Fudoki]]
+CREATE
+LAST	Len	"Bunka 1"
+LAST	Lja	"文化元年"
+
+# recreate deleted ill target (original QID lost) — from [[Bōseikyō]]
+CREATE
+LAST	Len	"Bōseikyō"
+LAST	Lja	"Bōseikyō"
+
+# recreate deleted ill target (original QID lost) — from [[Bōseikyō]]
+CREATE
+LAST	Len	"Wa mirrors"
+LAST	Lja	"和鏡"
+
+# recreate deleted ill target (original QID lost) — from [[Bōseikyō]]
+CREATE
+LAST	Len	"imitation mirrors"
+LAST	Lja	"Bōseikyō"
+
+# recreate deleted ill target (original QID lost) — from [[Bōseikyō]]
+CREATE
+LAST	Len	"imitation mirrors"
+LAST	Lja	"'''Bōseikyō'''"
+
+# recreate deleted ill target (original QID lost) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Ishibuto Daigongen"
+LAST	Lja	"石鈇大権現"
+
+# recreate deleted ill target (original QID lost) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Kushimikenu-no-mikoto"
+LAST	Lja	"櫛御気野命"
+
+# recreate deleted ill target (original QID lost) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Konomine-dera"
+LAST	Lja	"國軸山金峯山寺"
+
+# recreate deleted ill target (original QID lost) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Jisshōji"
+LAST	Lja	"実城寺"
+
+# recreate deleted ill target (original QID lost) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Kōshin-dō"
+LAST	Lja	"Kōshin-dō"
+
+# recreate deleted ill target (original QID lost) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Benten-gū"
+LAST	Lja	"弁天宮"
+
+# recreate deleted ill target (original QID lost) — from [[Chest-shaped Sarcophagus]]
+CREATE
+LAST	Len	"rope attachment projections"
+LAST	Lja	"縄掛突起"
+
+# recreate deleted ill target (original QID lost) — from [[Chest-shaped Sarcophagus]]
+CREATE
+LAST	Len	"rhyolitic welded tuff"
+LAST	Lja	"流紋岩質溶結凝灰岩"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Mago Matsuri"
+LAST	Lja	"孫見祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Yanaginawa Matsuri"
+LAST	Lja	"柳波まつり"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Hanayome Matsuri"
+LAST	Lja	"花嫁まつり"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Yubune Matsuri – Hayabusa Procession"
+LAST	Lja	"流鏑馬祭・流鏑馬連行"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Mifune Matsuri"
+LAST	Lja	"三船祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Taikō Matsuri"
+LAST	Lja	"太閤祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Yamanari Gion Matsuri"
+LAST	Lja	"山梨祇園祭り"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Kagoshima Summer Matsuri"
+LAST	Lja	"かごしま夏祭り"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Zuiki-sai"
+LAST	Lja	"ずいき祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Akama Shrine"
+LAST	Lja	"桜名八幡立坂神社"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Tenmon-sai"
+LAST	Lja	"天門祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Taishōjidai-sai"
+LAST	Lja	"大正時代祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Tokyo Jidai-sai"
+LAST	Lja	"東京時代祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Nōnindō Matsuri"
+LAST	Lja	"能仁堂まつり"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Benten Chigo"
+LAST	Lja	"弁天稚児"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Tokyo Hana Matsuri"
+LAST	Lja	"東京花祭り"
+
+# recreate deleted ill target (original QID lost) — from [[Chigo]]
+CREATE
+LAST	Len	"Miyajima Kanzen-sai"
+LAST	Lja	"宮島管絃祭"
+
+# recreate deleted ill target (original QID lost) — from [[Chikatō-no-Kami]]
+CREATE
+LAST	Len	"Suwa District, Tashitsuki"
+LAST	Lja	"東白川郡棚倉町八槻"
+LAST	Len	"Suwa District, Tashitsuki"
+
+# recreate deleted ill target (was Q135551185) — from [[Chikugo River Fireworks Festival]]
+CREATE
+LAST	Len	"Suitengu Dedication Fireworks Festival"
+LAST	Lja	"水天宮奉納花火大会"
+
+# recreate deleted ill target (original QID lost) — from [[Chimyō Gongen]]
+CREATE
+LAST	Len	"Three Deities of Mount Daisen"
+LAST	Lja	"大山三所権現"
+
+# recreate deleted ill target (original QID lost) — from [[Chimyō Gongen]]
+CREATE
+LAST	Len	"33 Kannon Pilgrimage of Daisen-ji"
+LAST	Lja	"大山寺三十三カ所地蔵めぐり"
+
+# recreate deleted ill target (original QID lost) — from [[Chimyō Gongen]]
+CREATE
+LAST	Len	"Chugoku Kannon Pilgrimage"
+LAST	Lja	"中国観音霊場"
+
+# recreate deleted ill target (original QID lost) — from [[Chinkoku-ji]]
+CREATE
+LAST	Len	"Kyushu 88 Sacred Sites"
+LAST	Lja	"九州八十八箇所霊場"
+
+# recreate deleted ill target (original QID lost) — from [[Chinkoku-ji]]
+CREATE
+LAST	Len	"Kyushu 36 Fudō Sacred Sites"
+LAST	Lja	"九州三十六不動霊場"
+
+# recreate deleted ill target (original QID lost) — from [[Chukain Temple]]
+CREATE
+LAST	Len	"Inner Palace"
+LAST	Lja	"内裏外郭"
+
+# recreate deleted ill target (original QID lost) — from [[City Offices (Tōji and Sai)]]
+CREATE
+LAST	Len	"Teiō Henki"
+LAST	Lja	"帝王編年記"
+LAST	Sjawiki	"帝王編年記"
+
+# recreate deleted ill target (original QID lost) — from [[City Offices (Tōji and Sai)]]
+CREATE
+LAST	Len	"Teiō Hennenki"
+LAST	Lja	"帝王編年記"
+LAST	Sjawiki	"帝王編年記"
+
+# recreate deleted ill target (original QID lost) — from [[December 11 (Lunisolar)]]
+CREATE
+LAST	Len	"Haiku poet"
+LAST	Lja	"俳句詩人"
+
+# recreate deleted ill target (original QID lost) — from [[Dōmeki]]
+CREATE
+LAST	Len	"chieftain"
+LAST	Lja	"頭目"
+LAST	Sjawiki	"頭目"
+
+# recreate deleted ill target (original QID lost) — from [[February 11 (Lunisolar)]]
+CREATE
+LAST	Len	"Kōshi Kakurei"
+LAST	Lja	"鐘匱の制"
+
+# recreate deleted ill target (original QID lost) — from [[Furutama-no-Mikoto]]
+CREATE
+LAST	Len	"Amanosakitama no mikoto"
+LAST	Lja	"天前玉命"
+
+# recreate deleted ill target (original QID lost) — from [[Furutama-no-Mikoto]]
+CREATE
+LAST	Len	"Kuroshima Isone hime"
+LAST	Lja	"黒島磯根御気姫命"
+
+# recreate deleted ill target (original QID lost) — from [[Furutsuka Kofun]]
+CREATE
+LAST	Len	"Kotsuka Shrine"
+LAST	Lja	"古津賀神社"
+
+# recreate deleted ill target (original QID lost) — from [[Furyū-odori]]
+CREATE
+LAST	Len	"Wago Nembutsu Odori"
+LAST	Lja	"和合の念仏踊"
+
+# recreate deleted ill target (original QID lost) — from [[Furyū-odori]]
+CREATE
+LAST	Len	"Ayato Night Nembutsu and Bon Odori"
+LAST	Lja	"綾渡の夜念仏と盆踊"
+
+# recreate deleted ill target (original QID lost) — from [[Futagoyama Kofun]]
+CREATE
+LAST	Len	"Futagoyama Park (disambiguation)"
+LAST	Lja	"二子山公園 (曖昧さ回避)"
+
+# recreate deleted ill target (original QID lost) — from [[Futon Daiko]]
+CREATE
+LAST	Len	"Mitsurugi Shrine Summer Grand Festival"
+LAST	Lja	"御劔神社 夏季大祭"
+
+# recreate deleted ill target (original QID lost) — from [[Futon Daiko]]
+CREATE
+LAST	Len	"Yoshikuni Sakurai"
+LAST	Lja	"桜井義国"
+
+# recreate deleted ill target (original QID lost) — from [[Gekū Sando]]
+CREATE
+LAST	Len	"JR Ise Sangu Line"
+LAST	Lja	"JR参宮線"
+
+# recreate deleted ill target (original QID lost) — from [[Gero Onsen]]
+CREATE
+LAST	Len	"Gero Onsen Ryokan Cooperative"
+LAST	Lja	"下呂温泉旅館協同組合"
+
+# recreate deleted ill target (original QID lost) — from [[Gifu Shichifukujin]]
+CREATE
+LAST	Len	"Kisshō-ji (Gifu)"
+LAST	Lja	"吉祥寺 (岐阜市)"
+
+# recreate deleted ill target (original QID lost) — from [[Gifu Shichifukujin]]
+CREATE
+LAST	Len	"Daikaku-ji (Gifu)"
+LAST	Lja	"大覚寺 (岐阜市)"
+
+# recreate deleted ill target (original QID lost) — from [[Gion Shrine (Kurashiki)]]
+CREATE
+LAST	Len	"Cleyera japonica var. grandis"
+LAST	Lde	"GermanName"
+LAST	Lja	"クスドイゲ"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Noheji Gion Festival"
+LAST	Lja	"野辺地祇園祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Suga Shrine Gion Festival"
+LAST	Lja	"須賀神社祇園祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Enoshima Tenno Festival"
+LAST	Lja	"江ノ島天王祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Tanbayama Gion Festival"
+LAST	Lja	"丹波山祇園祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Yasaka Shrine Gion Festival (Ryugasaki)"
+LAST	Lja	"八坂神社祇園祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Fujioka Festival"
+LAST	Lja	"藤岡まつり"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Horikome Naked Festival"
+LAST	Lja	"堀米の裸祭り"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Yamanashi Gion Festival"
+LAST	Lja	"山梨祇園祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Hosoe Shrine Gion Festival"
+LAST	Lja	"細江神社祇園祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Minami Tenma-chō Tennō Festival"
+LAST	Lja	"南伝馬町天王祭"
+
+# recreate deleted ill target (original QID lost) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Ōtenma-chō Tennō Festival"
+LAST	Lja	"大伝馬町天王祭"
+
+# recreate deleted ill target (was Q135504358) — from [[Gojō Tenjin Shrine]]
+CREATE
+LAST	Len	"Gojō Castle Tenjin Shrine"
+LAST	Lja	"五城天神社"
+
+# recreate deleted ill target (original QID lost) — from [[Goryō Shrine (Miyamae, Fujisawa)]]
+CREATE
+LAST	Len	"The Twelve Heavenly Kings"
+LAST	Lja	"十二天王"
+
+# recreate deleted ill target (original QID lost) — from [[Hachioji Shrine (Kariya City)]]
+CREATE
+LAST	Len	"Mononobe no Soshin"
+LAST	Lja	"物部祖神"
+
+# recreate deleted ill target (original QID lost) — from [[Hachiōji (disambiguation)]]
+CREATE
+LAST	Len	"Sun and Moon Light Buddha"
+LAST	Lja	"日月燈明佛"
+
+# recreate deleted ill target (original QID lost) — from [[Hachiōji (disambiguation)]]
+CREATE
+LAST	Len	"日月燈明佛"
+LAST	Lja	"日月燈明佛"
+
+# recreate deleted ill target (original QID lost) — from [[Haisho]]
+CREATE
+LAST	Len	"Ritual Site"
+LAST	Lja	"祭祀遺跡"
+LAST	Sjawiki	"祭祀遺跡"
+
+# recreate deleted ill target (original QID lost) — from [[Han-style mirror]]
+CREATE
+LAST	Len	"ritual sites"
+LAST	Lja	"祭祀遺跡"
+LAST	Sjawiki	"祭祀遺跡"
+
+# recreate deleted ill target (original QID lost) — from [[Himuro Gongen]]
+CREATE
+LAST	Len	"Himuro Falls"
+LAST	Lja	"氷室大滝"
+
+# recreate deleted ill target (original QID lost) — from [[Hodosan Shrine]]
+CREATE
+LAST	Len	"Chichibu Three Shrines"
+LAST	Lja	"秩父三社"
+
+# recreate deleted ill target (original QID lost) — from [[Homisuwajūgosho Shrine]]
+CREATE
+LAST	Len	"Five Deities of Heaven, Earth, and Man"
+LAST	Lja	"天地人五行神"
+
+# recreate deleted ill target (was Q135583892) — from [[Hoshida Myōkengū]]
+CREATE
+LAST	Len	"Taioshin Sen Chintaku Reifu no Kami"
+LAST	Lja	"太上神仙鎮宅霊符神"
+
+# recreate deleted ill target (original QID lost) — from [[Hot Spring Bathing Instructor]]
+CREATE
+LAST	Len	"health science"
+LAST	Lde	"Gesundheitswissenschaft"
+LAST	Lja	"健康学"
+LAST	Lzh	"健康学"
+
+# recreate deleted ill target (original QID lost) — from [[Hot Spring Bathing Instructor]]
+CREATE
+LAST	Len	"thermal physiology"
+LAST	Lde	"Thermophysiologie"
+LAST	Lja	"温熱生理学"
+LAST	Lzh	"热生理学"
+
+# recreate deleted ill target (original QID lost) — from [[Hot Spring Bathing Instructor]]
+CREATE
+LAST	Len	"balneology"
+LAST	Lde	"Balneologie"
+LAST	Lja	"温泉医学"
+LAST	Lzh	"温泉医学"
+
+# recreate deleted ill target (original QID lost) — from [[Hot Spring Bathing Instructor]]
+CREATE
+LAST	Len	"hot spring program–type health promotion facilities"
+LAST	Lde	"Thermalquellenprogramm-Gesundheitsförderungseinrichtungen"
+LAST	Lja	"温泉利用プログラム型健康増進施設"
+LAST	Lzh	"温泉利用项目型健康促进设施"
+
+# recreate deleted ill target (original QID lost) — from [[Hot Spring Mark]]
+CREATE
+LAST	Len	"hot spring sources"
+LAST	Lde	"Heißquellenquellen"
+LAST	Lja	"温泉および鉱泉の泉源"
+LAST	Lzh	"温泉及矿泉泉源"
+
+# recreate deleted ill target (original QID lost) — from [[Hot Spring Utilization Instructor]]
+CREATE
+LAST	Len	"thermal physiology & therapy"
+LAST	Lde	"Thermophysiologie und Therapie"
+LAST	Lja	"温熱生理・治療学"
+LAST	Lzh	"热生理与治疗学"
+
+# recreate deleted ill target (original QID lost) — from [[Hot Spring Utilization Instructor]]
+CREATE
+LAST	Len	"hot spring utilization–type health promotion facilities"
+LAST	Lde	"Thermalnutzungsprogramm-Gesundheitsförderungseinrichtungen"
+LAST	Lja	"温泉利用型健康増進施設"
+LAST	Lzh	"温泉利用型健康促进设施"
+
+# recreate deleted ill target (original QID lost) — from [[Hozumi no Kujii]]
+CREATE
+LAST	Len	"Hozumi-Suzuki Clan Genealogy"
+LAST	Lja	"穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜"
+
+# recreate deleted ill target (original QID lost) — from [[Hyōtan-yama Kofun]]
+CREATE
+LAST	Len	"Moriyama Hyōtan-yama Kofun"
+LAST	Lja	"守山瓢箪山古墳"
+
+# recreate deleted ill target (original QID lost) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Hyōtan-tsuka Kofun (Moka)"
+LAST	Lja	"瓢箪塚古墳 (真岡市)"
+
+# recreate deleted ill target (original QID lost) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Kamihamada Kofun Group"
+LAST	Lja	"上浜田古墳群"
+
+# recreate deleted ill target (original QID lost) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Hyōtan-tsuka Kofun (Shizuoka)"
+LAST	Lja	"瓢箪塚古墳 (静岡市)"
+
+# recreate deleted ill target (original QID lost) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Nishinohara Kofun Group"
+LAST	Lja	"西ノ原古墳群"
+
+# recreate deleted ill target (original QID lost) — from [[Hōri]]
+CREATE
+LAST	Len	"Iga-hiko"
+LAST	Lja	"伊賀彦"
+
+# recreate deleted ill target (original QID lost) — from [[Hōri]]
+CREATE
+LAST	Len	"Iga Hiko"
+LAST	Lja	"伊賀彦"
+
+# recreate deleted ill target (original QID lost) — from [[Hōri]]
+CREATE
+LAST	Len	"御匙"
+LAST	Lja	"御匙"
+
+# recreate deleted ill target (original QID lost) — from [[Hōri]]
+CREATE
+LAST	Len	"御鑰"
+LAST	Lja	"御鑰"
+
+# recreate deleted ill target (original QID lost) — from [[Hōtō Shrine]]
+CREATE
+LAST	Len	"Nozaki Oki-no-Kami Tsunayoshi"
+LAST	Lja	"野崎隠岐守綱吉"
+
+# recreate deleted ill target (original QID lost) — from [[Ibukidonushi no Kami]]
+CREATE
+LAST	Len	"Nakatomi Harai Kunkai"
+LAST	Lja	"中臣祓訓解"
+
+# recreate deleted ill target (original QID lost) — from [[Ikutachi]]
+CREATE
+LAST	Len	"Ne no Kuni"
+LAST	Lja	"根之堅州国"
+
+# recreate deleted ill target (original QID lost) — from [[Ima Izumiguchi Hachiman-yama Kofun]]
+CREATE
+LAST	Len	"Suga-no-Sawa Kofun Cluster"
+LAST	Lja	"菅ノ沢古墳群"
+
+# recreate deleted ill target (original QID lost) — from [[Ima Izumiguchi Hachiman-yama Kofun]]
+CREATE
+LAST	Len	"Suga-no-Sawa Gobyō Kofun"
+LAST	Lja	"菅ノ沢御廟古墳"
+
+# recreate deleted ill target (original QID lost) — from [[Imajuku Ōtsuka Kofun]]
+CREATE
+LAST	Len	"Imajuku Kofun Group"
+LAST	Lja	"今宿古墳群"
+
+# recreate deleted ill target (original QID lost) — from [[Inukaibe]]
+CREATE
+LAST	Len	"Ama Inukai no Muraji"
+LAST	Lja	"海犬養連"
+
+# recreate deleted ill target (original QID lost) — from [[Inukaibe]]
+CREATE
+LAST	Len	"Waka Inukai no Muraji"
+LAST	Lja	"若犬養連"
+
+# recreate deleted ill target (original QID lost) — from [[Inukaibe]]
+CREATE
+LAST	Len	"Azumi Inukai no Muraji"
+LAST	Lja	"阿曇犬養連"
+
+# recreate deleted ill target (original QID lost) — from [[Ise Calendar]]
+CREATE
+LAST	Len	"calendar makers"
+LAST	Lja	"暦師"
+
+# recreate deleted ill target (original QID lost) — from [[Ise Calendar]]
+CREATE
+LAST	Len	"Calendar makers"
+LAST	Lja	"暦師"
+
+# recreate deleted ill target (original QID lost) — from [[Ise Calendar]]
+CREATE
+LAST	Len	"Rekidō"
+LAST	Lja	"暦師"
+
+# recreate deleted ill target (original QID lost) — from [[Isekisan Shrine]]
+CREATE
+LAST	Len	"Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto"
+LAST	Lja	"天照国照彦火明櫛玉饒早日命"
+
+# recreate deleted ill target (original QID lost) — from [[Isekisan Shrine]]
+CREATE
+LAST	Len	"Ontoku‐ji"
+LAST	Lja	"恩徳寺 (たつの市)"
+
+# recreate deleted ill target (original QID lost) — from [[Isurugi Gongen]]
+CREATE
+LAST	Len	"Five Gongen"
+LAST	Lja	"五所権現"
+
+# recreate deleted ill target (original QID lost) — from [[Isurugi Gongen]]
+CREATE
+LAST	Len	"Isurugi Hiko"
+LAST	Lja	"伊須流岐比古神"
+
+# recreate deleted ill target (original QID lost) — from [[Isurugi Hikojinja]]
+CREATE
+LAST	Len	"Isurugihiko-no-Kami"
+LAST	Lja	"伊須流岐比古神"
+
+# recreate deleted ill target (original QID lost) — from [[Isurugi Hikojinja]]
+CREATE
+LAST	Len	"Gosha Gongen"
+LAST	Lja	"五社権現"
+
+# recreate deleted ill target (original QID lost) — from [[Itsuhayahime-no-Mikoto]]
+CREATE
+LAST	Len	"Sawaetahara-Rokurohiko-no-Kami"
+LAST	Lja	"佐和恵多良六老彦神"
+
+# recreate deleted ill target (original QID lost) — from [[Itsukahara Kofun]]
+CREATE
+LAST	Len	"Myokenzan Kofun (Muko City)"
+LAST	Lja	"妙見山古墳 (向日市)"
+
+# recreate deleted ill target (original QID lost) — from [[Iwatsukiwake no Mikoto]]
+CREATE
+LAST	Len	"Iwakia Betsuō Tomb"
+LAST	Lja	"磐城別王墓"
+
+# recreate deleted ill target (original QID lost) — from [[Iwatsukiwake no Mikoto]]
+CREATE
+LAST	Len	"Nihon Kodai Shizoku Jinmei Jiten"
+LAST	Lja	"日本古代氏族人名辞典 普及版"
+
+# recreate deleted ill target (original QID lost) — from [[Iwatsukiwake no Mikoto]]
+CREATE
+LAST	Len	"Mitarashi-hime"
+LAST	Lja	"三足比咩命"
+
+# recreate deleted ill target (original QID lost) — from [[Iwatsukiwake no Mikoto]]
+CREATE
+LAST	Len	"Iwa tsuku wake no Mikoto"
+LAST	Lja	"岩衝別命"
+
+# recreate deleted ill target (original QID lost) — from [[Iwaya Myōken-gū]]
+CREATE
+LAST	Len	"Jippāramitsu-ji"
+LAST	Lja	"十波羅蜜寺"
+
+# recreate deleted ill target (original QID lost) — from [[Iyo Shrine]]
+CREATE
+LAST	Len	"Iyozuhiko no Mikoto"
+LAST	Lja	"伊予津彦命"
+
+# recreate deleted ill target (original QID lost) — from [[Iyo Shrine]]
+CREATE
+LAST	Len	"Iyozuhime no Mikoto"
+LAST	Lja	"伊予津姫命"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Abashiri Church"
+LAST	Lja	"出雲大社網走教会"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Misanjin Church"
+LAST	Lja	"出雲大社三神教会"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Hakodate Church"
+LAST	Lja	"出雲大社函館教会"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Shonai Church"
+LAST	Lja	"出雲大社庄内教会"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Sakunomiya Religious Society"
+LAST	Lja	"出雲大社佐久之宮講社"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Doi Church"
+LAST	Lja	"出雲大社土居教会"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Karatsu Church"
+LAST	Lja	"出雲大社唐津教会"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Takachiho Church"
+LAST	Lja	"出雲大社高千穂教会"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Malaysia Religious Society"
+LAST	Lja	"出雲大社マレーシア講社"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Iyo Shichifukujin Sacred Sites"
+LAST	Lja	"伊予七福神霊場"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Miyao Katsuyoshi"
+LAST	Lja	"宮王勝良"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Sengetakaaki"
+LAST	Lja	"千家尊愛"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Sengetakamochi"
+LAST	Lja	"千家尊有"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Miyao Shigemaru"
+LAST	Lja	"宮王重丸"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Sengemichihiko"
+LAST	Lja	"千家達彦"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo clan]]
+CREATE
+LAST	Len	"Aogaki Publishing"
+LAST	Lja	"青垣出版"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo-no-Iwai Shrine (Yorii Town)]]
+CREATE
+LAST	Len	"Kōkage Ōkami"
+LAST	Lja	"蚕影大神"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo-no-Iwai Shrine (Yorii Town)]]
+CREATE
+LAST	Len	"Mitsumine Ōkami"
+LAST	Lja	"三峰大神"
+
+# recreate deleted ill target (original QID lost) — from [[Izumo-no-Iwai Shrine (Yorii Town)]]
+CREATE
+LAST	Len	"Kohō Ōkami"
+LAST	Lja	"古峰大神"
+
+# recreate deleted ill target (original QID lost) — from [[Japanese Indigenous Theory]]
+CREATE
+LAST	Len	"Pre-Ainu theory"
+LAST	Lja	"プレ・アイヌ説"
+
+# recreate deleted ill target (original QID lost) — from [[Jikkō kyō]]
+CREATE
+LAST	Len	"Formation of Kōha Shintō"
+LAST	Lja	"教派神道の形成"
+
+# recreate deleted ill target (original QID lost) — from [[Jinjachō]]
+CREATE
+LAST	Len	"Morimasa Hachiman Shrine"
+LAST	Lja	"森正八幡神社"
+
+# recreate deleted ill target (original QID lost) — from [[Jungle bath]]
+# ⚠ ALREADY: ja article is linked to live Q113498032 — likely a DUPLICATE; verify before creating.
+CREATE
+LAST	Len	"rock baths"
+LAST	Lde	"Felsenbad"
+LAST	Lja	"岩風呂"
+LAST	Lzh	"岩浴池"
+
+# recreate deleted ill target (original QID lost) — from [[Jungle bath]]
+CREATE
+LAST	Len	"Tropical decor"
+LAST	Lde	"Tropendekor"
+LAST	Lja	"南国趣味"
+LAST	Lzh	"南国趣味"
+
+# recreate deleted ill target (original QID lost) — from [[Jungle bath]]
+CREATE
+LAST	Len	"Hell bath"
+LAST	Lde	"Höllenbad"
+LAST	Lja	"地獄風呂"
+LAST	Lzh	"地狱浴"
+
+# recreate deleted ill target (original QID lost) — from [[Kalpina]]
+CREATE
+LAST	Len	"King Pasenadi"
+LAST	Lja	"波斯匿王"
+LAST	Sjawiki	"波斯匿王"
+
+# recreate deleted ill target (original QID lost) — from [[Kamo Akimasa]]
+CREATE
+LAST	Len	"Melchior (Kamo clan)"
+LAST	Lja	"メルショル (賀茂氏)"
+
+# recreate deleted ill target (original QID lost) — from [[Kashima Jingū]]
+CREATE
+LAST	Len	"Nakatomi Tsuchitoku"
+LAST	Lja	"中臣連千徳"
+
+# recreate deleted ill target (original QID lost) — from [[Kashima Jingū]]
+CREATE
+LAST	Len	"Nakatomi Ōsō"
+LAST	Lja	"中臣鹿島連大宗"
+
+# recreate deleted ill target (original QID lost) — from [[Kawachi no Ōkimi (Late Nara period)]]
+CREATE
+LAST	Len	"Nakatomi no Ikemori"
+LAST	Lja	"中臣池守"
+
+# recreate deleted ill target (original QID lost) — from [[Kawachi-no-Mikoto]]
+CREATE
+LAST	Len	"Nakatomi no Ōshima"
+LAST	Lja	"藤原大嶋"
+
+# recreate deleted ill target (original QID lost) — from [[Kawara Shrine (Gekū)]]
+CREATE
+LAST	Len	"Kawa-no-Kami"
+LAST	Lja	"川神"
+
+# recreate deleted ill target (original QID lost) — from [[Kawara Shrine (Gekū)]]
+CREATE
+LAST	Len	"Mori-no-Kami"
+LAST	Lja	"木神"
+
+# recreate deleted ill target (original QID lost) — from [[Kawara Shrine (Gekū)]]
+CREATE
+LAST	Len	"River deity"
+LAST	Lja	"川神"
+
+# recreate deleted ill target (original QID lost) — from [[Kawara Shrine (Gekū)]]
+CREATE
+LAST	Len	"Tree deity"
+LAST	Lja	"木神"
+
+# recreate deleted ill target (original QID lost) — from [[Kinomiya Faith]]
+CREATE
+LAST	Len	"tree worship"
+LAST	Lja	"樹木信仰"
+
+# recreate deleted ill target (original QID lost) — from [[Kotohira shrines]]
+CREATE
+LAST	Len	"Kamado Town"
+LAST	Lja	"釜戸町2510番地の1"
+
+# recreate deleted ill target (original QID lost) — from [[Koyasu Jizō Temple]]
+CREATE
+LAST	Len	"Kōyasan Campaign"
+LAST	Lja	"高野山攻め"
+
+# recreate deleted ill target (original QID lost) — from [[Koyasu Jizō Temple]]
+CREATE
+LAST	Len	"Hōrin-ji (Wakayama)"
+LAST	Lja	"法輪寺 (和歌山市)"
+
+# recreate deleted ill target (original QID lost) — from [[Koyasu Jizō Temple]]
+CREATE
+LAST	Len	"Fugen-ji (Hashimoto, Wakayama)"
+LAST	Lja	"普賢寺 (橋本市菖蒲谷)"
+
+# recreate deleted ill target (original QID lost) — from [[Kubotsu Ōji Shrine]]
+CREATE
+LAST	Len	"Kumano Pilgrimage"
+LAST	Lja	"熊野御幸"
+
+# recreate deleted ill target (original QID lost) — from [[Kumano Nyakuōji Shrine]]
+CREATE
+LAST	Len	"Kyoto's Three Kumano Shrines"
+LAST	Lja	"京都三熊野"
+
+# recreate deleted ill target (original QID lost) — from [[Kumata Shrine]]
+CREATE
+LAST	Len	"Kumano Shōjō Gongen"
+LAST	Lja	"熊野證誠権現"
+
+# recreate deleted ill target (original QID lost) — from [[Kuno no Kuni no Miyatsuko]]
+CREATE
+LAST	Len	"Nanatsumori Shrine"
+LAST	Lja	"七ツ森神社"
+
+# recreate deleted ill target (original QID lost) — from [[List of Kofun in Japan with the Name "Hyō"]]
+CREATE
+LAST	Len	"Hyōtan-zuka Kofun (Mooka City)"
+LAST	Lja	"瓢箪塚古墳 (真岡市)"
+
+# recreate deleted ill target (original QID lost) — from [[List of Kofun in Japan with the Name "Hyō"]]
+CREATE
+LAST	Len	"Hyōtan-zuka Kofun (Shizuoka City)"
+LAST	Lja	"瓢箪塚古墳 (静岡市)"
+
+# recreate deleted ill target (original QID lost) — from [[Magatsuhi-no-kami]]
+CREATE
+LAST	Len	"Nakatomi no Harae Kunkai"
+LAST	Lja	"中臣祓訓解"
+
+# recreate deleted ill target (original QID lost) — from [[Mishine-no-Mikura]]
+CREATE
+LAST	Len	"Mikagi"
+LAST	Lja	"御鑰"
+
+# recreate deleted ill target (original QID lost) — from [[Motoinari Kofun]]
+CREATE
+LAST	Len	"Myokenyama Kofun (Muko)"
+LAST	Lja	"妙見山古墳 (向日市)"
+
+# recreate deleted ill target (original QID lost) — from [[Mount Aonomine]]
+CREATE
+LAST	Len	"Protective Forest for Navigation"
+LAST	Lja	"航行目標保安林"
+
+# recreate deleted ill target (original QID lost) — from [[Myōkenyama Kofun]]
+CREATE
+LAST	Len	"Myōkenyama Kofun (Muko)"
+LAST	Lja	"妙見山古墳 (向日市)"
+
+# recreate deleted ill target (original QID lost) — from [[Nishida Osamu]]
+CREATE
+LAST	Len	"Nakatomi no Momo / Nakatomi Momo-shō"
+LAST	Lja	"中臣秡・中臣秡抄"
+
+# recreate deleted ill target (original QID lost) — from [[Omikiyama no Mikoto]]
+CREATE
+LAST	Len	"Nakatomi Sakado clan"
+LAST	Lja	"中臣酒人宿祢"
+
+# recreate deleted ill target (original QID lost) — from [[Ono Family (Shake)]]
+CREATE
+LAST	Len	"Senke Sonai"
+LAST	Lja	"千家尊愛"
+
+# recreate deleted ill target (original QID lost) — from [[Prince Inishikiirihiko]]
+CREATE
+LAST	Len	"Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition"
+LAST	Lde	"Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition"
+LAST	Lja	"日本古代氏族人名辞典 普及版"
+LAST	Lzh	"Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition"
+
+# recreate deleted ill target (original QID lost) — from [[September 1 (Lunisolar)]]
+CREATE
+LAST	Len	"Haiku Poet"
+LAST	Lja	"Haiku Poet"
+
+# recreate deleted ill target (original QID lost) — from [[Shidori Shrine (Nara)]]
+CREATE
+LAST	Len	"Nakatomi Tokikaze"
+LAST	Lde	"Nakatomi Tokikaze (German)"
+LAST	Lja	"中臣時風"
+LAST	Lzh	"Nakatomi Tokikaze (Chinese)"
+
+# recreate deleted ill target (was Q124499736) — from [[Summer Matsuri]]
+CREATE
+LAST	Lja	"帰省"
+LAST	Sjawiki	"帰省"
+
+# recreate deleted ill target (original QID lost) — from [[Takeminakata & Minomikotohikokamiwake Shrine]]
+CREATE
+LAST	Len	"Niwa-tsume no Mikoto"
+LAST	Lja	"庭津女命"
+
+# recreate deleted ill target (original QID lost) — from [[Takeo Shimokorihiko Shrine]]
+CREATE
+LAST	Len	"Taira clan"
+
+# recreate deleted ill target (original QID lost) — from [[Tamamoro Shrine]]
+CREATE
+LAST	Len	"Norinobu Nakata"
+LAST	Lja	"中田憲信"
+
+# recreate deleted ill target (original QID lost) — from [[Tanba clan]]
+CREATE
+LAST	Len	"Bouryuu"
+
+# recreate deleted ill target (original QID lost) — from [[Tenno-no-Mori Kofun]]
+CREATE
+LAST	Len	"Myōkenyama Kofun (Mukō)"
+LAST	Lja	"妙見山古墳 (向日市)"
+
+# recreate deleted ill target (original QID lost) — from [[Todoroki-hime-no-Mikoto Shrine]]
+CREATE
+LAST	Len	"Okutsuhiko-no-Mikoto"
+LAST	Lja	"奥津彦命"
+
+# recreate deleted ill target (original QID lost) — from [[Todoroki-hime-no-Mikoto Shrine]]
+CREATE
+LAST	Len	"Okutsuhime-no-Mikoto"
+LAST	Lja	"奥津姫命"
+
+# recreate deleted ill target (original QID lost) — from [[Tsukushi no Iwai]]
+CREATE
+LAST	Len	"Chikugo no Kuni Fudoki"
+LAST	Lja	"筑後国風土記"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Kiyotosaku Yokoanabo"
+LAST	Lja	"清戸迫横穴墓"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Izumizaki Yokoanabo"
+LAST	Lja	"泉崎横穴墓"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Todoroki Ravine Yokoanabo Cluster"
+LAST	Lja	"谷沢川横穴群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+# ⚠ ALREADY: ja article is linked to live Q85774637 — likely a DUPLICATE; verify before creating.
+CREATE
+LAST	Len	"Kitaema Yokoanabo Cluster"
+LAST	Lja	"北江間横穴群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Jūōmen Yokoanabo Cluster"
+LAST	Lja	"十王免横穴群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Kitsunedani Yokoanabo Cluster"
+LAST	Lja	"狐谷横穴墓群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Kamikonishi Yokoanabo Cluster"
+LAST	Lja	"上塩冶横穴墓群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Takatsuku Yokoanabo Cluster"
+LAST	Lja	"高津久横穴墓群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Takenami Site"
+LAST	Lja	"竹並遺跡"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Shiroyama Yokoanabo Cluster"
+LAST	Lja	"城山横穴群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Mizumachi Site"
+LAST	Lja	"水町遺跡"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Kozuki Yokoanabo"
+LAST	Lja	"古月横穴"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Ishinuki Nagino Yokoanabo Cluster"
+LAST	Lja	"石貫ナギノ横穴群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Ishinuki Anakanon Yokoanabo Cluster"
+LAST	Lja	"石貫穴観音横穴群"
+
+# recreate deleted ill target (original QID lost) — from [[Yokoanabo]]
+CREATE
+LAST	Len	"Nabeta Yokoanabo Cluster"
+LAST	Lja	"鍋田横穴群"
+
+# recreate deleted ill target (original QID lost) — from [[Ōbashi no Mikoto]]
+CREATE
+LAST	Len	"Nakatomi no Amabisha-kyō"
+LAST	Lja	"中臣阿麻毘舎卿連"
+
+# recreate deleted ill target (original QID lost) — from [[Ōnakatomi clan]]
+CREATE
+LAST	Len	"Nakabusa"
+LAST	Lja	"大中臣仲房"
+
+# recreate deleted ill target (original QID lost) — from [[Ōnakatomi clan]]
+CREATE
+LAST	Len	"Tamenaka"
+LAST	Lja	"大中臣為仲"
+
