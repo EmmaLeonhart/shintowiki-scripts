@@ -4,6 +4,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Q10928586 Ikasuri no Kami: kami name everywhere, not a shrine (Emma)
+
+Resolved the dual-classification blocker. Q10928586 (座摩神) is P31 kami (Q524158)
+that also carries a shrine class, so the shrine pipeline had been emitting affixed
+labels ("Ikasuri no Kami Schrein", "Santuario Ikasuri no Kami", "معبد …") into 47
+per-language files, conflicting with the kami generator's bare "Ikasuri no Kami".
+Emma: "just the transliteration everywhere"; Toki Pona is the one language forced
+off the plain form — label "jan sewi Ikasuli" (deity classifier), alias "tomo sewi
+Ikasuli". Done: (1) `EXCLUDE_QIDS = {"Q10928586"}` in
+generate_multilang_quickstatements.py, pre-seeded into each language's `seen` set so
+both source loops skip it (durable — CI regen won't reintroduce it); (2) removed the
+47 affixed lines from the committed per-language files (kami_labels keeps its 55 bare
+names); (3) new `quickstatements/manual_overrides.txt` carrying the tok label
+(idempotent — already the live value) + the new Atok alias. Verified the alias path
+is real: select_label_proposals passes any Qxxx line through, direct_daily_edits
+routes Axx → wbsetaliases. Q10928586 now has 0 cross-file value conflicts. New
+test_kami_shrine_exclusion.py (3 tests). Suite 145 → 148.
+
 ## 2026-07-04 — QA audit: fixed 731 illegal-'y' toki pona labels (YOON_MAP typo)
 
 Phonotactic audit of every committed `Ltok` label (32,010 of them) against the toki

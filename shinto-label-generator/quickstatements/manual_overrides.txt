@@ -1,0 +1,12 @@
+# Hand-authored item-specific label/alias overrides that no systematic generator
+# produces. One QuickStatement per line (tab-separated), same format the drip
+# consumes. Lxx = label, Axx = alias.
+#
+# Q10928586 座摩神 / Ikasuri no Kami — a kami, bare transliteration in every
+# language (handled by generate_kami_quickstatements.py). Toki Pona is the one
+# language "forced" off the plain transliteration (Emma 2026-07-04): the deity
+# classifier "jan sewi" is the label, with "tomo sewi" (building/shrine sense)
+# kept as an alias. The Ltok line is already the live value on Wikidata, so it is
+# an idempotent no-op that documents intent; the Atok alias is the new addition.
+Q10928586	Ltok	"jan sewi Ikasuli"
+Q10928586	Atok	"tomo sewi Ikasuli"

@@ -1004,6 +1004,15 @@ def run_sparql(query, label):
 # Main
 # ----------------------------
 
+# Items that match the shrine/temple SPARQL but are actually DEITIES (kami), not
+# shrines. Their labels come from generate_kami_quickstatements.py as bare names,
+# so the shrine pipeline must NOT emit an affixed "X Shrine" label for them.
+# Emma 2026-07-04 on Q10928586 (座摩神 / Ikasuri no Kami): "just the transliteration
+# everywhere" — no "Shrine" affix in any language. Add a QID here whenever a kami
+# leaks into the shrine query (P31 includes both a shrine class and Q524158 kami).
+EXCLUDE_QIDS = {"Q10928586"}
+
+
 def main():
     _ensure_utf8_stdout()
     outdir = "quickstatements"
@@ -1011,9 +1020,9 @@ def main():
 
     def _gen_lang(lang):
         print(f"\n=== {lang.upper()} ===")
-        
+
         rows = []
-        seen = set()
+        seen = set(EXCLUDE_QIDS)   # pre-seed so both source loops skip the kami above
 
         # 1. From English labels (primary, accurate source — B1).
         en_results = run_sparql(make_sparql_en(lang), f"shrines (en source) missing {lang} label")
