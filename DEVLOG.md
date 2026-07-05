@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Lock clean audit dimensions as permanent guards
+
+Two more integrity audits this tick, both CLEAN: (a) invisible control/format chars
+(C0/C1, BOM, zero-width space, bidi embed/override/isolate) — 0, and no stray
+ZWNJ/ZWJ joiners either; (b) lowercase-initial Cyrillic/Greek labels — the only 40
+are descriptive common nouns in concept_/courtrank_translations (correctly lowercase
+per ru/uk convention), all 105k proper-name transliterations properly capitalised.
+The transliteration audit surface is now largely exhausted (recent sweeps —
+ASCII-in-script, overlong, QS-quoting, duplicate-lines, control-chars, capitalisation
+— all clean). Key gap noticed: the clean-but-unfixed dimensions had NO test, so a CI
+regen could silently reintroduce them (as happened with kami-exclusion/whitespace).
+New test_label_integrity.py adds three permanent file-invariant guards over every
+committed label: no control/format chars, well-formed QS quoting (value is "…" with
+doubled internal quotes), no exact-duplicate lines. Suite 157 → 160.
+
 ## 2026-07-05 — QA audit: 19 mixed-script ko labels (hanja_read kana leak)
 
 Audited all committed ko labels: 19 carried residual Han/kana because hanja_read only
