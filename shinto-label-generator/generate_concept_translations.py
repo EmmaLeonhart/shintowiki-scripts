@@ -70,6 +70,53 @@ TRANSLATIONS = {
         "ro": "cult imperial", "ru": "культ императора", "uk": "культ імператора",
         "pl": "kult władcy", "cs": "císařský kult",
     },
+    "Q1068640": {  # folk religion (民間信仰)
+        "de": "Volksreligion", "nl": "volksreligie", "sv": "folkreligion",
+        "da": "folkereligion", "es": "religión popular", "ca": "religió popular",
+        "gl": "relixión popular", "pt": "religião popular", "fr": "religion populaire",
+        "it": "religione popolare", "ro": "religie populară", "ru": "народная религия",
+        "uk": "народна релігія", "pl": "religia ludowa", "cs": "lidové náboženství",
+    },
+    "Q1189816": {  # ethnic religion (民族宗教)
+        "de": "ethnische Religion", "nl": "etnische religie", "sv": "etnisk religion",
+        "da": "etnisk religion", "es": "religión étnica", "ca": "religió ètnica",
+        "gl": "relixión étnica", "pt": "religião étnica", "fr": "religion ethnique",
+        "it": "religione etnica", "ro": "religie etnică", "ru": "этническая религия",
+        "uk": "етнічна релігія", "pl": "religia etniczna", "cs": "etnické náboženství",
+    },
+    "Q108704490": {  # polytheistic religion (多神教)
+        "de": "polytheistische Religion", "nl": "polytheïstische religie",
+        "sv": "polyteistisk religion", "da": "polyteistisk religion",
+        "es": "religión politeísta", "ca": "religió politeista",
+        "gl": "relixión politeísta", "pt": "religião politeísta",
+        "fr": "religion polythéiste", "it": "religione politeista",
+        "ro": "religie politeistă", "ru": "политеистическая религия",
+        "uk": "політеїстична релігія", "pl": "religia politeistyczna",
+        "cs": "polyteistické náboženství",
+    },
+    "Q188213": {  # state religion (国教)
+        "de": "Staatsreligion", "nl": "staatsgodsdienst", "sv": "statsreligion",
+        "da": "statsreligion", "es": "religión de Estado", "ca": "religió d'Estat",
+        "gl": "relixión de Estado", "pt": "religião de Estado", "fr": "religion d'État",
+        "it": "religione di Stato", "ro": "religie de stat", "ru": "государственная религия",
+        "uk": "державна релігія", "pl": "religia państwowa", "cs": "státní náboženství",
+    },
+    "Q13414953": {  # religious denomination (教派)
+        "de": "Konfession", "nl": "denominatie", "sv": "trossamfund",
+        "da": "trossamfund", "es": "confesión religiosa", "ca": "confessió religiosa",
+        "gl": "confesión relixiosa", "pt": "denominação religiosa",
+        "fr": "confession religieuse", "it": "confessione religiosa",
+        "ro": "confesiune religioasă", "ru": "религиозная деноминация",
+        "uk": "релігійна деномінація", "pl": "wyznanie religijne",
+        "cs": "náboženská denominace",
+    },
+    "Q7882536": {  # non-denominational (単立)
+        "de": "konfessionslos", "nl": "niet-confessioneel", "sv": "konfessionslös",
+        "da": "konfessionsløs", "es": "no confesional", "ca": "no confessional",
+        "gl": "non confesional", "pt": "não confessional", "fr": "non confessionnel",
+        "it": "non confessionale", "ro": "neconfesional", "ru": "внеконфессиональный",
+        "uk": "позаконфесійний", "pl": "bezwyznaniowy", "cs": "bezkonfesní",
+    },
 }
 
 

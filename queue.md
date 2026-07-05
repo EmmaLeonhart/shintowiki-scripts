@@ -34,8 +34,7 @@ Remaining:
 
 1. **Translation tier (cron-driven, ongoing).** Daily 15:00 run
    (`generate_concept_translations.py`) hand-translates descriptive Shinto concepts
-   into confident languages, non-destructive + state-tracked. Batch 1 done (5
-   concepts → 44 labels). Left: more concepts, Shinto-property names (P13723 etc.;
+   into confident languages, non-destructive + state-tracked. Batches 1-2 done (11 concepts, 57 labels). Left: more concepts, Shinto-property names (P13723 etc.;
    relevance filter in `bfs/property_label_report.md`), the concept-classes, and the
    90-item text residue (`bfs/text_labels_residue.md`). World-religion drift =
    already labelled, skip.
