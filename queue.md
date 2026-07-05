@@ -30,14 +30,27 @@ daily submission (routed to direct-daily-edits since the QS path is retired). Th
 drip opens FULLY on `RAMP_DATE` = 2027-05-23 (a deliberate ~1-year community-review
 window). So the labels reach Wikidata; the tail just drains slowly until the ramp.
 
-Remaining:
+Translation tier — investigated & closed for the local work-loop (2026-07-05):
 
-1. **Translation tier (cron-driven, ongoing).** Daily 15:00 run
-   (`generate_concept_translations.py`) hand-translates descriptive Shinto concepts
-   into confident languages, non-destructive + state-tracked. Batches 1-2 done (11 concepts, 57 labels). Left: more concepts, Shinto-property names (P13723 etc.;
-   relevance filter in `bfs/property_label_report.md`), the concept-classes, and the
-   90-item text residue (`bfs/text_labels_residue.md`). World-religion drift =
-   already labelled, skip.
+- **Descriptive concepts: DONE.** `generate_concept_translations.py`'s hand-authored
+  dict is fully drained (11/11 concepts, 57 labels, in the drip). It only translates
+  what a human authors into the dict — no auto-discovery — so it is NOT "ongoing";
+  it no-ops until someone adds entries. The confidently-Shinto concepts are exhausted.
+- **Shinto property names: DONE.** The only two genuinely Shinto-specific descriptive
+  properties — P13723 shrine ranking, P14005 court rank — are translated
+  (`generate_property_translations.py`, in the drip). Every other entry in
+  `bfs/property_label_report.md` is a GENERIC community-maintained Wikidata property
+  (worshipped by, official religion, next-higher-rank, literal translation, …) —
+  core infrastructure, out of this project's remit; do NOT mass-propose translations.
+- **Concept-classes / 90-item text residue (`bfs/text_labels_residue.md`):** these are
+  translation-not-transliteration of mostly non-Japanese / foreign-encyclopedia /
+  infra titles — i.e. bulk LLM-grunge, which per the top-of-file policy belongs to the
+  claude.ai remote routine (`remote_queue.json`), NOT the local work-loop. Not
+  actionable here without guessing.
+
+So the local-work-loop portion of the label-generalization effort is COMPLETE: the
+transliteration matrix is shipped + drip-delivered, and every confidently-actionable
+translation is done. What's left is remote-routine drift and the 2027 delivery ramp.
 (Sanskrit-engine polish DONE: Greek double-nasal νντ→ντ; Arabic/Perso-Arabic/Hebrew
 word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he אינדרא.)
 

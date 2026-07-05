@@ -4,6 +4,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Translation tier investigated & closed (queue was stale)
+
+Resolved the standing NEEDS-INVESTIGATION on whether the translation tier was
+autonomously progressing. It is NOT: generate_concept_translations.py translates only
+a hand-authored 11-entry dict with done-state tracking (todo = dict − done), fully
+drained (11/11), and has no concept-class/property auto-discovery; neither it nor
+generate_property_translations.py is wired into any CI workflow (their outputs are
+static committed .txt already in the drip, so the 57+24 labels still reach Wikidata).
+Scanned bfs/property_label_report.md for Shinto descriptive (non-ID) properties: the
+only two genuinely Shinto-specific ones — P13723 shrine ranking, P14005 court rank —
+are already done; the rest (worshipped by, official religion, next-higher-rank,
+literal translation, …) are generic community-maintained Wikidata properties, out of
+remit. Conclusion: the local-work-loop portion of the label-generalization effort is
+COMPLETE — the "translation tier (cron-driven, ongoing)" queue item was stale framing.
+Rewrote it to say so; the residual (concept-classes, 90-item text residue) is
+remote-routine drift (remote_queue.json), not local work. No code change.
+
 ## 2026-07-05 — Lock clean audit dimensions as permanent guards
 
 Two more integrity audits this tick, both CLEAN: (a) invisible control/format chars
