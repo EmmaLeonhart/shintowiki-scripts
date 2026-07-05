@@ -550,15 +550,11 @@ BACKLOG_ITEMS = [
     # id:1 "retire-terminating-scripts" DONE 2026-07-05 — all 4 confirmed inert
     # (unwired from wiki-cleanup.yml; normalize/remove_legacy ported to orchestrator
     # ops; reimport/migrate drained) and deleted. See DEVLOG 2026-07-05.
-    {
-        "id": 2, "slug": "audit-legacy-scripts",
-        "title": "Audit which pre-orchestrator legacy scripts still run",
-        "blurb": "A confirmation pass over every script wired into "
-                 "wiki-cleanup.yml: still producing edits? wiki-state-driven "
-                 "(keep) vs genuinely inert (retire). Not a delete-spree.",
-        "kind": "repo_workflow",
-        "workflow": ".github/workflows/wiki-cleanup.yml",
-    },
+    # id:2 "audit-legacy-scripts" DONE 2026-07-05 — keep/fix/retire verdicts live in
+    # docs/program_audit_2026-06.md §3/§8; the one open empirical gap (confirm the
+    # July-gated terminating scripts were inert) was closed by id:1 (all 4 confirmed
+    # + deleted). Re-verified no other actively-wired wiki-cleanup.yml script is a
+    # silently-inert deleted-file reference. See DEVLOG 2026-07-05.
     {
         "id": 3, "slug": "ill-missing-wikidata",
         "title": "ILLs without WD= / \"Unknown\" targets",

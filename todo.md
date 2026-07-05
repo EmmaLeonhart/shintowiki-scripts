@@ -34,7 +34,6 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 
 - **Full program audit:** [`docs/program_audit_2026-06.md`](docs/program_audit_2026-06.md) (2026-06-05) — the single read-through of the whole machine: CI invocation graph, orchestrators+ops, legacy CI scripts, the Wikidata QS path, the sync/cloud-queue loop, known kludges, in-flight migrations, keep/fix/retire verdicts.
 
-- [ ] **Audit which pre-orchestrator legacy scripts still run.** Most should stay — they run frequently or are wiki-state-driven (no `.state` file, by design). Catalogue each script wired into the workflows: still producing edits? trigger? wiki-state-driven (keep) vs genuinely inert (retire). Not a delete-spree — a confirmation pass. The catalogue + keep/fix/retire verdicts already exist in [`docs/program_audit_2026-06.md`](docs/program_audit_2026-06.md) §3/§8; the empirical "still producing edits?" confirmation for the July-gated terminating scripts is the remaining gap (overlaps the July-2026 reminder above). **Retired 2026-06-06:** `audit_double_category_qids.py` (was the one unconditional-retire verdict — disabled + superseded).
 
 
 ## Wiki content tasks (manual / human review)

@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Backlog #2 audit-legacy-scripts CLOSED
+
+The legacy-script audit's keep/fix/retire verdicts have lived in
+`docs/program_audit_2026-06.md` §3/§8 since 2026-06-05; the only open piece was the
+empirical "are the July-gated terminating scripts actually inert?" confirmation —
+and that was closed by backlog #1 (all 4 confirmed inert + deleted, `57bcb140`).
+Re-verified this session that no *other* actively-wired script in `wiki-cleanup.yml`
+points at a deleted file (the reimport/overwrite steps that name now-touchy scripts
+are all commented out; every uncommented `python3 …` step resolves to an existing
+file). Removed #2 from the `generate_pages.py` backlog board and from `todo.md`.
+Backlog board now: #1/#2 done, #3/#4/#6/#7 shipped-automation (residual = inherent
+human review / remote routine), #5/#8 the genuinely-buildable remainder.
+
 ## 2026-07-05 — Removed dead local launchers cleanup_loop.sh + "cleanup loop.bat"
 
 Follow-up to the id:1 "retire-terminating-scripts" deletion (same day). Both

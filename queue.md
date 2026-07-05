@@ -89,6 +89,29 @@ word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he �
 
 ---
 
+## Backlog board barrel-through (2026-07-05 session)
+
+Working the 8 `BACKLOG_ITEMS` (`site/generate_pages.py`). #1 done this session;
+#3/#4/#6/#7 are shipped-automation whose residual is inherent human review / remote-
+routine (not build tasks). The two genuinely-buildable items:
+
+- [ ] **#2 audit-legacy-scripts — CLOSE.** The July-gated terminating-script "still
+  producing edits?" gap (the one open piece) was closed by #1 (all 4 confirmed inert +
+  deleted). Verify nothing else wired into `wiki-cleanup.yml` is silently inert, then
+  remove #2 from the backlog board + todo.md.
+- [ ] **#5(c) Japanese category names — jawiki-anchored resolution phase.** Add a phase
+  (c) to `generate_category_translation_moves.py`: for residual cats with no local
+  `{{wikidata link}}`, resolve via the *jawiki* category of the same title → its enwiki
+  category sitelink (authoritative cross-wiki, NOT place-name guessing). Unresolved →
+  residual. Unit-test the pure sitelink-extraction helper. Targets the 578-entry residual
+  (144 `の歴史` + 69 `の建築物` are the bulk).
+- [ ] **#8 recreate-deleted-WD — build `generate_recreate_quickstatements.py`.** Walk
+  `[[Category:Pages with deleted QID in ill template]]`, render `CREATE` + minimal claim
+  set (P11250|"shinto:…") to a HUMAN-REVIEW .txt (NOT auto-submitted — WD item creation
+  is human-gated). Tests for the block rendering.
+
+---
+
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
