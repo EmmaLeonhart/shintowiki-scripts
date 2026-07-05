@@ -38,12 +38,6 @@ Remaining:
    relevance filter in `bfs/property_label_report.md`), the concept-classes, and the
    90-item text residue (`bfs/text_labels_residue.md`). World-religion drift =
    already labelled, skip.
-2. **zh man'yōgana gap: katakana ヴ (vu) leaks untransliterated** (audit 2026-07-04).
-   15 zh-family labels keep a raw ヴ (Q1001037 ヴァルナ Varuna → "ヴ阿留奈"; Q20078554
-   ソヴィエト…). Japanese has no man'yōgana for /v/; the standard convention approximates
-   ヴ as バ行 (v→b: ヴ=bu, ヴァ=ba, ヴィ=bi, ヴェ=be, ヴォ=bo). Add those to the
-   kana→man'yōgana map in `generate_chinese_quickstatements.py` (+ small-kana combo
-   handling). Small/bounded; do when picking up the Chinese generator.
 (Sanskrit-engine polish DONE: Greek double-nasal νντ→ντ; Arabic/Perso-Arabic/Hebrew
 word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he אינדרא.)
 

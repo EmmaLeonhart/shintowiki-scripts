@@ -16,6 +16,7 @@ import requests
 import hanja
 from koreanizer import koreanize
 from fetch_shrines_tokiponize import process_label
+from generate_multilang_quickstatements import EXCLUDE_QIDS
 
 # Windows UTF-8 console fix (guard against double-wrapping from imports)
 if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
@@ -143,7 +144,10 @@ def japanese_to_korean_hanja(ja_label):
 
 def main():
     rows = []
-    seen_qids = set()
+    # Pre-seed so kami that also carry a shrine class (e.g. Q10928586 座摩神) are
+    # skipped here — their bare-name ko label comes from generate_kami_quickstatements,
+    # not a "…신사" affix (Emma 2026-07-04). Same EXCLUDE_QIDS as the shrine pipeline.
+    seen_qids = set(EXCLUDE_QIDS)
     skipped = 0
 
     # --- Path 1: Shrines with Indonesian labels → koreanize ---

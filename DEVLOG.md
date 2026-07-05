@@ -4,6 +4,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — zh /v/ (ヴ) man'yōgana fix + two regressions CI regen exposed
+
+Queue item: the katakana ヴ (vu) leak. Japanese has no man'yōgana for /v/; added the
+standard v→b (ば行) mapping to generate_chinese_quickstatements.KANA_TO_CHINESE, using
+the pair-first lookahead so ヴァ→马 (ba), ヴィ→尾 (bi), ヴ→武 (bu), etc. Recomputed the
+15 affected zh-family labels deterministically from their known ja (Q1001037 ヴァルナ →
+马留奈/馬留奈 Varuna; Q20078554 ソヴィエト… → 曽尾江都…); traditional/simplified variants
+now differentiated (馬 vs 马). 0 raw ヴ/ゔ left. New test_chinese_vsound.py.
+
+Fixing that made the full suite red — the session-start SYNC had pulled a CI regen
+(ebf3624b) that regenerated the source .txt from the generators and REVERTED two
+earlier fixes whose .txt patches weren't backed by generator-level changes:
+  (1) Q10928586 shrine label reappeared in ko.txt — my EXCLUDE_QIDS lived only in
+      generate_multilang; the separate generate_korean_quickstatements had no
+      exclusion. Fixed durably: it now imports EXCLUDE_QIDS and pre-seeds seen_qids
+      (both its id and ja paths skip it).
+  (2) 11 he.txt labels regained edge whitespace — my earlier fix was at name
+      extraction, but the Hebrew "מקדש <name>" affix path adds its own edge space.
+      Fixed durably: whitespace normalisation moved to generate_multilang's write
+      step, so every language (incl. affix paths) is collapsed+stripped at emit.
+Re-cleaned the committed ko.txt/he.txt to match. Lesson: .txt patches are ephemeral
+(CI regenerates over them) — the durable fix must live in the generator. Suite 152→154.
+
 ## 2026-07-04 — QA audit: label whitespace hygiene (1,938 labels) + integrity sweeps
 
 Ran several offline integrity audits over all committed labels. CLEAN: 457k

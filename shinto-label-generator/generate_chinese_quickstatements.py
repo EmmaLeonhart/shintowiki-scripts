@@ -132,6 +132,13 @@ KANA_TO_CHINESE = {
     "バ": "马", "ビ": "尾", "ブ": "武", "ベ": "部", "ボ": "母",
     "パ": "波", "ピ": "比", "プ": "布", "ペ": "部", "ポ": "保",
 
+    # v-sound (ヴ / ゔ): Japanese has no man'yōgana for /v/; the standard convention
+    # approximates ヴ as ば行 (v -> b). The 2-char combos are matched before the bare
+    # ヴ by japanese_to_chinese's pair-first lookahead, so ヴァ -> 马 (ba), not 武+阿.
+    "ヴァ": "马", "ヴィ": "尾", "ヴゥ": "武", "ヴェ": "部", "ヴォ": "母",
+    "ゔぁ": "马", "ゔぃ": "尾", "ゔぅ": "武", "ゔぇ": "部", "ゔぉ": "母",
+    "ヴ": "武", "ゔ": "武",
+
     # Small kana
     "っ": "", "ッ": "",
     "ゃ": "也", "ゅ": "由", "ょ": "与",

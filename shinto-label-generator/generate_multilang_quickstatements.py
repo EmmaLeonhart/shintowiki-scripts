@@ -1074,7 +1074,11 @@ def main():
         filepath = os.path.join(outdir, f"{lang}.txt")
         with open(filepath, "w", encoding="utf-8", newline="\n") as f:
             for row in rows:
-                escaped = row["label"].replace('"', '""')
+                # Final whitespace hygiene at the write point (catches every language,
+                # incl. affix paths like Hebrew "מקדש <name>" that can leave an edge
+                # space). Collapse space/tab/nbsp/narrow-nbsp -> one ASCII space + strip.
+                label = re.sub(r'[ \t  ]+', ' ', row["label"]).strip()
+                escaped = label.replace('"', '""')
                 f.write(f'{row["qid"]}\tL{lang}\t"{escaped}"\n')
 
         print(f"  Total: Wrote {len(rows)} to {filepath}")
