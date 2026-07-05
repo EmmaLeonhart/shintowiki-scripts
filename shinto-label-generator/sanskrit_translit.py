@@ -222,6 +222,9 @@ def sanskrit(name, lang):
             r = _map_word(w, _CYR)
         elif kind == "grk":
             r = _map_word(w, _GRK)
+            # nasal + voiced-stop digraph: the digraph already carries the nasal,
+            # so drop the redundant one (Indra: ν+ντ = "νντ" -> "ντ", cf. el "Ίντρα")
+            r = r.replace("νντ", "ντ").replace("μμπ", "μπ").replace("γγκ", "γκ")
         elif kind == "ara":
             r = _map_word(w, _ARA)
         elif kind == "per":
