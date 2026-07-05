@@ -36,6 +36,7 @@ REPO_ROOT = os.path.dirname(HERE)
 DELETED_TXT = os.path.join(REPO_ROOT, "context dump", "deleted.txt")
 RECREATE_TXT = os.path.join(HERE, "recreate_quickstatements.txt")
 OUT_MD = os.path.join(HERE, "deleted_log_rag.md")
+OUT_JSON = os.path.join(HERE, "deleted_log_rag.json")
 
 UA = ("EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle; "
       "immanuelleleonhart@gmail.com) rag_deleted_logs")
@@ -94,17 +95,42 @@ def load_ill_recovered():
 
 def reason_bucket(comment):
     c = (comment or "").lower()
+    if "author request" in c:
+        return "author-request"          # Immanuelle self-requested — likely intentional
+    if "no evidence" in c:
+        return "rfd-no-evidence"          # editors judged the entity non-existent — high re-delete risk
+    if "conflation" in c or "conflat" in c:
+        return "rfd-conflation"
+    if "improperly created" in c or "per request at" in c or "project_chat" in c or "project chat" in c:
+        return "batch-improperly-created"
     if "empty" in c:
         return "empty-item"
-    if "improperly created" in c or "per request" in c or "project_chat" in c or "project chat" in c:
-        return "batch-improperly-created"
     if "duplicate" in c or "merge" in c:
         return "duplicate/merge"
     if "test" in c or "vandal" in c or "nonsense" in c:
         return "test/vandalism"
+    if "rfd" in c or "requests for deletion" in c:
+        return "rfd-other"
     if not c:
         return "no-reason-given"
     return "other"
+
+
+def parse_content_was(comment):
+    """Recover the item's label from a MediaWiki 'content was: "X"' deletion comment.
+
+    Strips the ', and the only contributor was …' boilerplate tail. Returns '' if no
+    payload (truly-empty items log `content was: ""`).
+    """
+    if "content was:" not in (comment or ""):
+        return ""
+    tail = comment.split("content was:", 1)[1].strip()
+    m = re.match(r'\s*"(.*?)"(?:,?\s*and the only contributor|,?\s*and the (?:first|second))',
+                 tail, re.S)
+    if not m:
+        m = re.match(r'\s*"(.*)"\s*$', tail, re.S)
+    label = (m.group(1) if m else tail).strip().strip('"').strip()
+    return label
 
 
 def main():
@@ -126,6 +152,7 @@ def main():
             "qid": qid, "size": size, "del_ts": ts,
             "admin": admin, "comment": comment,
             "bucket": reason_bucket(comment),
+            "content_was": parse_content_was(comment),
             "ill_recovered": qid in ill,
             "ill_labels": ill.get(qid, []),
         })
@@ -156,24 +183,44 @@ def main():
     for a, n in admins.most_common(10):
         lines.append(f"- {a}: {n}")
 
-    # The actionable subset: NOT plain "empty-item", OR has ill labels, OR substantive.
-    actionable = [r for r in records
-                  if r["ill_recovered"] or r["bucket"] != "empty-item"
-                  or (r["size"] or 0) >= 1000]
-    lines.append(f"\n## Candidate-for-recreation subset ({len(actionable)})\n")
-    lines.append("Excludes items that are *both* deleted-as-empty AND sub-1000-byte AND "
-                 "not ill-recovered — those are genuine empty stubs, leave deleted.\n")
-    lines.append("| QID | bytes | reason bucket | admin | ill? | comment |")
-    lines.append("|---|---|---|---|---|---|")
-    for r in sorted(actionable, key=lambda r: -(r["size"] or 0)):
-        c = r["comment"].replace("|", "\\|")[:70]
-        lines.append(f"| {r['qid']} | {r['size']} | {r['bucket']} | {r['admin']} "
-                     f"| {'Y' if r['ill_recovered'] else ''} | {c} |")
+    # Recovered English labels: either from the public 'content was:' log comment
+    # or from backlog #8's ill templates. This is the concrete RAG yield.
+    label_recovered = [r for r in records if r["content_was"] or r["ill_labels"]]
+    lines.append(f"\n## Recovered English labels ({len(label_recovered)})\n")
+    lines.append("From the public `content was: \"X\"` deletion comments and/or backlog #8's "
+                 "shinto-wiki `{{ill}}` templates — the concrete content the public record "
+                 "still yields for these deleted items.\n")
+    lines.append("| QID | recovered label (log) | ill labels (#8) | bytes | del reason |")
+    lines.append("|---|---|---|---|---|")
+    for r in sorted(label_recovered, key=lambda r: -(r["size"] or 0)):
+        cw = r["content_was"].replace("|", "\\|")
+        il = ", ".join(r["ill_labels"]).replace("|", "\\|")
+        lines.append(f"| {r['qid']} | {cw} | {il} | {r['size']} | {r['bucket']} |")
+
+    # The recreation-candidate subset: has a recovered label AND a reason that isn't
+    # "author-request" (Immanuelle's own deletion) / "rfd-no-evidence" (editors judged
+    # it non-existent — recreating invites re-deletion).
+    LEAVE = {"author-request", "rfd-no-evidence", "rfd-conflation"}
+    candidates = [r for r in label_recovered if r["bucket"] not in LEAVE]
+    lines.append(f"\n## Net recreation candidates ({len(candidates)})\n")
+    lines.append("Recovered-label items MINUS author-request (Immanuelle's own deletion "
+                 "request — leave unless she says otherwise) and RfD no-evidence/conflation "
+                 "(editors judged the entity non-existent/conflated — recreating invites "
+                 "re-deletion). These are the items with both recoverable content AND no "
+                 "standing objection on record.\n")
+    lines.append("| QID | label | bytes | del reason | ill? |")
+    lines.append("|---|---|---|---|---|")
+    for r in sorted(candidates, key=lambda r: -(r["size"] or 0)):
+        cw = (r["content_was"] or ", ".join(r["ill_labels"])).replace("|", "\\|")
+        lines.append(f"| {r['qid']} | {cw} | {r['size']} | {r['bucket']} "
+                     f"| {'Y' if r['ill_recovered'] else ''} |")
 
     open(OUT_MD, "w", encoding="utf-8").write("\n".join(lines) + "\n")
-    print(f"\nWrote {OUT_MD}")
+    with open(OUT_JSON, "w", encoding="utf-8") as fh:
+        json.dump(records, fh, ensure_ascii=False, indent=1)
+    print(f"\nWrote {OUT_MD} and {OUT_JSON}")
     print("Buckets:", dict(buckets))
-    print(f"Actionable subset: {len(actionable)} / {len(records)}")
+    print(f"Label-recovered: {len(label_recovered)}; net recreation candidates: {len(candidates)}")
 
 
 if __name__ == "__main__":

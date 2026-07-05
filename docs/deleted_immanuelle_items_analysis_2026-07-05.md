@@ -22,31 +22,64 @@ backlog #8 (recreate-deleted-wikidata).
   - `>3000 B`: 1
 - **Overlap with backlog #8's recovered set: 35.** Of the 36 old QIDs backlog #8 recovered from `[[Category:Pages with deleted QID in ill template]]` (the ill-target provenance comments), **35 are confirmed present in this deleted-Immanuelle list** — validating the queue's predicted overlap between "deleted Immanuelle items" and "the 304 deleted ill targets".
 
-## The RAG blocker — stated explicitly (per the queue instruction, not fabricated)
+## RAG from the public deletion logs (corrected 2026-07-05 after Emma's note)
 
-**The dump gives the LIST of deleted QIDs but NOT their content.** Each row carries only the
-QID, a deletion timestamp, a byte size, an admin-only `Special:Undelete` link (EmmaBot /
-a non-admin cannot read deleted revisions), and a `Special:Log` link (public, but shows only
-the deletion log entry — who/when/comment — never the content).
+**Correction.** An earlier draft of this doc called content recovery "blocked, needs an admin
+undelete export." That was premature — it flagged the admin-gated *undelete* link but never
+probed the *public deletion log*. Emma: "the deletion logs are public just not the content …
+we can agentic RAG stuff from it … cross reference the info we have." Correct. The public
+`Special:Log` for each QID carries the deleting admin + a deletion **reason**, and for many
+items the reason string even **preserves the item's label** (`content was: "X"`).
+`rag_deleted_logs.py` pulls all 455 public logs (read-only, throttled) and cross-references
+reason + byte-size + backlog #8's ill labels. Output: `deleted_log_rag.md` / `.json`.
 
-Agentic RAG cannot reconstruct a deleted Wikidata item from its QID alone: the QID number is
-semantically opaque, and once deleted the item content is not publicly retrievable. The only
-public inference channel is **cross-wiki references** — what other pages pointed at the QID —
-and the one relevant corpus (the shinto-wiki `{{ill}}` templates) has **already been mined by
-backlog #8**, which recovered exactly the 35 overlapping items above. Chasing the remaining
-~420 via web archives / caches is near-zero-yield (58% are sub-400-byte stubs that were never
-substantial) and RAG-expensive.
+### What the public logs actually yield
 
-**Therefore:**
-- The substantive-subset reconstruction is **BLOCKED-ON-USER-ACTION**: it needs an actual
-  *content* export of the deleted items (an admin `Special:Undelete` dump / XTools content
-  export), which only Emma (with adminship) can produce. The current dump is a *listing*, not
-  a content dump.
-- The ~264 sub-400-byte stubs are effectively **OUT-OF-SCOPE**: near-empty, low recreation
-  value, and unlikely to survive Wikidata's deletion review even if recreated.
-- The already-actionable path is unchanged: the 35 overlapping (and the broader 304 ill
-  targets) are handled by backlog #8's shipped, human-gated generator — content sourced from
-  the shinto-wiki ills, never from the opaque deleted QIDs.
+Deletion-reason buckets (455 items):
+- **`empty-item`: 322** — deleted as "empty" (had a label but no statements). **273 of these
+  carry a clean `content was: "X"` English label** recovered directly from the public log —
+  kami (`Niwa-tsume no Mikoto`, `Mori-no-Kami`), shrines (`Morimasa Hachiman Shrine`), a whole
+  cluster of `Izumo-taisha <place> Church` branch orgs, people, concepts. Median label length
+  19 chars; all clean (no JSON/quote noise). This is the big RAG yield.
+- **`author-request`: 96** — Immanuelle *herself* requested these deletions.
+- **`batch-improperly-created`: 26** — the `[[Wikidata:Project chat/Archive/2025/08#Deletion
+  of improperly created items]]` cleanup, which **Immanuelle initiated herself** (items she
+  said were "created by mistake"; Addshore cleaned them up + their redirects).
+- **`rfd-*`: 7** — RfD "no evidence for existence" / conflation; editors judged these
+  non-existent → recreating invites re-deletion.
+
+### The decisive findings for recreation
+
+1. **273 of 455 deleted items have a clean recovered English label** from the public logs — a
+   *large* actionable set, not a small one (an earlier draft of this doc wrongly called it
+   small). These are the `empty-item` deletions that had a label but no statements — i.e.
+   real Shinto entities that were deleted only for lacking claims. Give them proper sourced
+   claims and they survive re-deletion. Full list: the "Recovered English labels" table in
+   `deleted_log_rag.md` (+ `deleted_log_rag.json`).
+2. **~122 were deleted at Immanuelle's OWN request** (96 author-request + 26 self-initiated
+   batch). Recreating those undoes her own decision — leave unless she says otherwise. (These
+   do NOT overlap the 273: author-request/batch comments carry no `content was:` label.)
+3. **The labels can be combined with the shinto wiki** (Emma's point): each recovered label is
+   very likely a shinto-miraheze page carrying real content (description, `{{ill}}`
+   per-language labels, categories, jawiki sitelink) — the material to build a Wikidata item
+   that survives review. **But this cross-reference needs a LIVE wiki search:** the repo mirrors
+   only ~984 gated pages (need_translation/git_synced/duplicated_content/miraheze_unique/
+   fandom_unique) and only **1 of the 273** labels matches locally; miraheze is also
+   Cloudflare-blocked from the dev session. So "how much shinto-wiki content exists for these"
+   **cannot be answered locally** — it needs a CI wiki-search pass (see next-step spec below).
+
+**Therefore (revised):**
+- Content recovery is **NOT hard-blocked** — public logs recover 273 clean labels with zero
+  admin access. The earlier "needs an admin undelete export" call is withdrawn.
+- The **next build step** is a CI-wired cross-reference: for each of the 273 labels, search the
+  live shinto wiki for the matching page and pull its content (ills/categories/jawiki link) to
+  enrich a `CREATE` block. This extends backlog #8's already-CI-wired generator (the one place
+  that reaches the wiki). It must run in CI — miraheze is unreachable + Cloudflare-blocked from
+  dev, so it can't be verified locally; do NOT blind-wire it without a CI dry-run.
+- The **decision Emma owns** (flagged on `[[Open questions]]`): (a) build that CI cross-reference
+  to enrich the 273? and (b) do you want any of your own ~122 author-requested/batch items back?
+- The ~180 truly-empty items with `content was: ""` (no label) + the RfD-no-evidence items stay
+  **OUT-OF-SCOPE**.
 
 ## Incidental finding folded out of the chat dump
 
