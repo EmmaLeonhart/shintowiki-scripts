@@ -6,16 +6,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-## Standardization — deferred tails (need new transliterators; not CI-gated)
-
-- **th** (33/135 labels): needs a real Thai transliterator (pre-posed vowel
-  signs); build only as its own deliberate task.
-- **pa/km/lo/dz/new/mad/shn** (≤16 labels each): no script converter, 0-2
-  observed labels — revisit only if a converter arrives or Sonnet does them.
-- **cdo**: zero observed labels, mixed-script wiki — parked with evidence.
-
----
-
 ## Multilingual label generalization (BFS-driven)
 
 Goal: name every important Shinto entity in all ~60 covered languages. All the
@@ -111,16 +101,12 @@ jawiki-article existence gates the sitelink (notability anchor); ja-already-link
 live-item flags probable duplicates (2 found). Only **7/304** currently have a safe
 jawiki sitelink → the rest need content before they'd survive re-deletion.
 
-**Remaining (NOT this session — recreation itself is out of scope, per Emma):**
+**Remaining:**
 - [ ] Per-target research to give each item enough content to not be auto-deleted again
-  (Wikidata churn is the risk). The count (304, only ~36 with recovered QIDs) is small
-  enough to research individually. Enrich `CREATE` blocks with whatever authoritative
-  data can be found (claims, better sitelinks, descriptions) beyond the current
-  labels+provenance.
-- [ ] Decide the minimum viable claim set per target-type (person / shrine / facility /
-  concept) that survives Wikidata deletion review.
-- [ ] Only after review: feed vetted blocks through the QuickStatements pipeline
-  (human-gated; still respect the WD-editing rules in CLAUDE.md).
+  (autonomous RAG — like the fandom crossref already done). Enrich `CREATE` blocks with
+  authoritative data (claims, better sitelinks, descriptions) beyond labels+provenance.
+- The min-claim-set-per-type decision + recreation go/no-go + human-gated QS submission are
+  **NEEDS-DECISION (Emma)** → see "Blockers awaiting Emma" at the queue end.
 
 ## Next-session analysis pass — DONE (2026-07-05)
 
@@ -174,21 +160,33 @@ Pinned tail (keep last, always):
 
 ---
 
-## END-OF-QUEUE (Emma-placed 2026-07-05 — investigate only when reached, not before)
+## Blockers — parked at queue end (awaiting Emma; mirrored to [[Open questions]] 2026-07-05)
 
-- [ ] **Fandom `Template:Ill` keeps getting wrongly deleted — the "no miraheze equivalent"
-  delete pipeline isn't covering redirects.** The fandom bot ("Their Eminence") deletes
-  `https://shinto.fandom.com/wiki/Template:Ill` on a recurring schedule with summary
-  "Bot: no Shinto equivalent time triggered pipeline" (observed 2026-06-30 08:29 and
-  2026-07-05 08:07 — recurs every few days). It should NOT be deleted. Emma: this indicates
-  our "delete fandom pages with no miraheze equivalent" op **isn't covering redirects** — the
-  miraheze equivalent of `Template:Ill` is very likely a REDIRECT that the equivalence check
-  doesn't count as "having an equivalent", so the op wrongly flags it as orphaned and deletes
-  it.
-  - **IMMEDIATE MITIGATION (Emma 2026-07-05 — critical, do this first to void the problem):**
-    make `Template:Ill` a **git-synced page on BOTH wikis** (add it to the git-synced set so it
-    is force-present on miraheze AND fandom). With a synced miraheze `Template:Ill` present, the
-    "no miraheze equivalent" check passes and the recurring fandom deletion stops; the sync also
-    restores it if deleted. Do this as the immediate fix.
+These are the not-done items that need Emma's decision/action or are deferred by her explicit
+instruction. The work-loop skips them (they're parked, not top-actionable). Autonomous work
+items (vet the 213 candidates; per-target enrichment RAG) stay in their sections above.
+
+- [ ] **NEEDS-DECISION (Emma) — recreate the deleted items? + min claim set per type.** The
+  fandom crossref recovered ~213 deleted Immanuelle items (203 QID-anchored) with per-language
+  content (`recreate-deleted-wikidata/shinto_wiki_crossref.md`). The ~122 self-deleted are moot
+  (not on the wikis). Decision needed: (a) do you want the recoverable set recreated on Wikidata
+  at all; (b) the minimum viable claim set per target-type (person / shrine / facility / concept)
+  that survives Wikidata deletion review. Actual creation is human-gated + off-limits autonomously
+  (CLAUDE.md WD rules); nothing goes to Wikidata without your go-ahead.
+
+- [ ] **OUT-OF-SCOPE / deferred by Emma — `Template:Ill` wrongful-deletion fix** (investigate
+  only when reached). The fandom bot deletes `shinto.fandom.com/wiki/Template:Ill` on a recurring
+  schedule ("Bot: no Shinto equivalent time triggered pipeline"; observed 2026-06-30, 2026-07-05
+  — recurs every few days). Root cause: the "delete fandom pages with no miraheze equivalent" op
+  likely isn't counting a miraheze REDIRECT as an equivalent, so it wrongly orphans+deletes it.
+  - **IMMEDIATE MITIGATION (Emma — critical, do first):** make `Template:Ill` a git-synced page
+    on BOTH wikis (force-present on miraheze + fandom) so the equivalence check passes and the
+    sync restores it if deleted.
   - **ROOT-CAUSE FOLLOW-UP:** make the no-equivalent check follow/count redirect targets on the
-    miraheze side before deleting (likely in the fandom delete-orphans / fandom-cleanup pipeline).
+    miraheze side before deleting (fandom delete-orphans / fandom-cleanup pipeline).
+
+- [ ] **OUT-OF-SCOPE / needs a build decision — long-tail language transliterators.** `th` Thai
+  (33/135 labels) needs a real Thai transliterator (pre-posed vowel signs) — build only as its
+  own deliberate task. `pa/km/lo/dz/new/mad/shn` (≤16 labels each): no script converter, 0-2
+  observed labels. `cdo`: zero observed labels, mixed-script wiki. Parked with evidence; revisit
+  only if Emma wants a transliterator built or a converter arrives.
