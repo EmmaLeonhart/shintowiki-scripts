@@ -4,6 +4,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — QA audit: fixed 731 illegal-'y' toki pona labels (YOON_MAP typo)
+
+Phonotactic audit of every committed `Ltok` label (32,010 of them) against the toki
+pona alphabet found 731 carrying the letter **'y'**, which is NOT a toki pona letter
+— the /j/ glide is written 'j'. Root cause: four `YOON_MAP` entries in
+`tokiponizer.py` mis-spelled the glide with 'y' (rya/ryu/ryo → liya/liyu/liyo, nyu →
+niyu) while every sibling was correct (mya→mija, pyu→piju, ja→sija). Fixed the four
+map entries to lija/liju/lijo/niju; verified the engine now emits Liju/Niju/Lijo and
+`YOON_MAP` holds zero 'y'. Applied the identical y→j correction to the 731 committed
+labels across kami_labels/text_labels/tok.txt (deterministic — 'y' is *always* the
+mis-rendered glide; CI's next regenerate from the fixed engine will reproduce these
+byte-for-byte). Re-audit: 0 violations. New `tests/test_tokiponizer.py` locks the
+glide outputs, the no-'y' `YOON_MAP` invariant, and a cross-generator guard asserting
+EVERY committed tok label is phonotactically legal (alphabet + cluster + final-coda).
+Suite 142 → 145.
+
 ## 2026-07-04 — QA audit: fixed 692 drip-order label collisions (text vs shikinaisha)
 
 Audited every `quickstatements/*.txt` category file for the actual defect that
