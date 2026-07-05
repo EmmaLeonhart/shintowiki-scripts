@@ -156,15 +156,17 @@ history (proven: `Niwa-tsume no Mikoto` → `Q135579706`, matches the RAG). Pure
 (8 cases, green). Report: `shinto_wiki_crossref.md/.json`. Also wired into
 `recreate-deleted-crossref.yml` (weekly refresh).
 
-Full fandom run done: 272 labels → **215 matched a fandom ill, 211 with per-language langlinks**
-(recreation content), 28 QID-validated via `dd=`. Report: `shinto_wiki_crossref.md/.json`.
+Full `--deep` fandom run done: 272 labels → **215 matched, 213 with per-language langlinks,
+203 with the original QID recovered from history AND validated against the RAG** (+ host-page
+categories + jawiki sitelink + context per item). Report: `shinto_wiki_crossref.md/.json`.
 The ~122 self-deleted (author-request + batch) are **moot — confirmed NOT on the wikis**
-(0/122 labeled, 0/15 sampled QIDs referenced on fandom); dropped from scope, no Emma decision
-needed. So the recreation surface = the ~211 fandom-matched, langlink-bearing items.
+(0/122 labeled, 0/15 sampled QIDs referenced on fandom); dropped from scope. Recreation
+surface = the ~213 fandom-matched, langlink-bearing items (203 QID-anchored).
 
-- [ ] **NEEDS-INVESTIGATION (next loop) — vet the ~211 fandom-matched candidates** and feed the
-  strong ones (langlinks recovered, no live wikidata link yet) through #8's human-gated
-  generator. Run `--deep` for QID validation on the subset lacking a `dd=`.
+- [ ] **NEEDS-INVESTIGATION (next loop) — vet the ~213 fandom-matched candidates** (per-item
+  data in `shinto_wiki_crossref.md`) and feed the strong ones through #8's human-gated
+  generator, respecting the CLAUDE.md Wikidata rules. 203 are QID-anchored; the ~12
+  label-only matches + the 57 unmatched need a closer look.
 
 ## Stop removing history from miraheze (Emma 2026-07-05 — no longer necessary)
 

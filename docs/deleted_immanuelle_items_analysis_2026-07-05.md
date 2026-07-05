@@ -99,10 +99,12 @@ Deletion-reason buckets (455 items):
   run was verified live (12-label sample → 9 matched, all with langlinks). Read-only; 429-bail.
 - Also wired into `.github/workflows/recreate-deleted-crossref.yml` (weekly + dispatch) for
   periodic refresh, though — unlike miraheze work — it can also just be run locally.
-- **Full fandom run (2026-07-05):** 272 labels → **215 matched a fandom ill**, **211 with
-  per-language langlinks** (the recreation content), 28 with the original QID validated against
-  the RAG via a surviving `dd=` (more recoverable with `--deep` history). Per-item:
-  `recreate-deleted-wikidata/shinto_wiki_crossref.md`/`.json`. This is the recreation surface.
+- **Full `--deep` fandom run (2026-07-05):** 272 labels → **215 matched a fandom ill**, **213
+  with per-language langlinks** (the recreation content), **203 with the original QID recovered
+  from `dd=`/fandom history AND validated against the RAG deleted QID**, 13 with a jawiki
+  sitelink. Each per-item record also carries the host page's categories (type signal) + its own
+  wikidata item (relationship context). Per-item: `recreate-deleted-wikidata/shinto_wiki_crossref.md`/`.json`.
+  This is the recreation surface, and 203 of them are QID-anchored (not just label-matched).
 - **The ~122 self-deleted items are moot — confirmed not on the wikis** (Emma's guess, verified):
   0/122 carry a recovered label, and 0/15 sampled author-request/batch QIDs are referenced
   anywhere on fandom (`insource:"Q…"`). They were standalone Wikidata items Immanuelle created
