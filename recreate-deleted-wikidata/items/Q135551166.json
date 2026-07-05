@@ -1,0 +1,40 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Tokyo Jidai-sai\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 309,
+    "timestamp": "20250801074608"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Tokyo Jidai-sai",
+    "langlinks": {
+      "ja": "東京時代祭"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551166"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551166",
+  "recovered_label": "Tokyo Jidai-sai",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

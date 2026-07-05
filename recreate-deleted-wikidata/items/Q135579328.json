@@ -1,0 +1,36 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Izumo-taisha Sakunomiya Religious Society\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 350,
+    "timestamp": "20250802040339"
+  },
+  "fandom": {
+    "categories": [
+      "Izumo Grand Shrine",
+      "Shinto shrines in Matsuyama",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo Taisha Matsuyama Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Izumo-taisha Sakunomiya Religious Society",
+    "langlinks": {
+      "ja": "出雲大社佐久之宮講社"
+    },
+    "page": "Izumo Taisha Matsuyama Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:08:42Z)",
+    "recovered_qid": "Q135579328"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579328",
+  "recovered_label": "Izumo-taisha Sakunomiya Religious Society",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

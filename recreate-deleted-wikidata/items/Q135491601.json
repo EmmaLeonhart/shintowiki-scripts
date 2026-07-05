@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakata Norinobu\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 390,
+    "timestamp": "20250729004825"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491601",
+  "recovered_label": "Nakata Norinobu",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

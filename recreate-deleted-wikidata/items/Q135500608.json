@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Yasukichi\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 304,
+    "timestamp": "20250729224525"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500608",
+  "recovered_label": "Abe no Yasukichi",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Saroj",
+    "comment": "Author request: [[Wikidata:Requests for deletions|RfD]]: created by accident",
+    "reason_bucket": "author-request",
+    "size_bytes": 762,
+    "timestamp": "20250624235642"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135069954",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": true
+}

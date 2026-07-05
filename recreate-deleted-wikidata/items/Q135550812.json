@@ -1,0 +1,42 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Chikugo no Kuni Fudoki\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 319,
+    "timestamp": "20250801055050"
+  },
+  "fandom": {
+    "categories": [
+      "528 deaths",
+      "5th-century Japanese people",
+      "6th-century Japanese people",
+      "People of ancient Japan",
+      "People of Kofun-period Japan",
+      "People Who Died in Battle Before the Kofun Period",
+      "Tsukushi no Kimi Iwai",
+      "Wikidata no short description",
+      "Year of birth unknown",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": "Q135550812",
+    "host_pages": [
+      "Tsukushi no Iwai"
+    ],
+    "ja_sitelink": null,
+    "label": "Chikugo no Kuni Fudoki",
+    "langlinks": {
+      "ja": "筑後国風土記"
+    },
+    "page": "Tsukushi no Iwai",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135550812"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550812",
+  "recovered_label": "Chikugo no Kuni Fudoki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

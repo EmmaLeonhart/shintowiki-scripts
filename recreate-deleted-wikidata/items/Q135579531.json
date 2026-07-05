@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Pre-Ainu theory\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 315,
+    "timestamp": "20250802042013"
+  },
+  "fandom": {
+    "categories": [
+      "Historical Views",
+      "New Leftist Ideology and Culture in Japan",
+      "Pseudohistory",
+      "Racism in Japan",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Japanese Indigenous Theory"
+    ],
+    "ja_sitelink": null,
+    "label": "Pre-Ainu theory",
+    "langlinks": {
+      "ja": "プレ・アイヌ説"
+    },
+    "page": "Japanese Indigenous Theory",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:31Z)",
+    "recovered_qid": "Q135579531"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579531",
+  "recovered_label": "Pre-Ainu theory",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

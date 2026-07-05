@@ -1,0 +1,44 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Nagataki Hakusan Shrine\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 320,
+    "timestamp": "20250730021034"
+  },
+  "fandom": {
+    "categories": [
+      "Buildings and structures in Gujo",
+      "Former Prefectural Shrines in Gifu Prefecture",
+      "Gifu Prefecture designated tangible cultural property",
+      "Gujō Domain",
+      "Hakusan Shrines",
+      "Hakusan-jinja",
+      "History of Gujo",
+      "Municipality Designated Intangible Folk Cultural Properties",
+      "Natural Monuments Designated by Gifu Prefecture",
+      "Shinto shrines in Gifu Prefecture",
+      "Wikidata has short description"
+    ],
+    "current_ill_qid": "Q135505741",
+    "host_pages": [
+      "Hakusan Nakai Shrine",
+      "Hakusan Faith"
+    ],
+    "ja_sitelink": null,
+    "label": "Nagataki Hakusan Shrine",
+    "langlinks": {
+      "ja": "長滝白山神社"
+    },
+    "page": "Hakusan Nakai Shrine",
+    "qid_matches_rag": false,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135505741"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135504611",
+  "recovered_label": "Nagataki Hakusan Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

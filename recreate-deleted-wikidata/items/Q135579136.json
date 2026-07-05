@@ -1,0 +1,37 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Nishinohara Kofun Group\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 320,
+    "timestamp": "20250802035455"
+  },
+  "fandom": {
+    "categories": [
+      "All disambiguation pages",
+      "Kofun",
+      "Kofun disambiguations",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Hyōtan-zuka Kofun"
+    ],
+    "ja_sitelink": null,
+    "label": "Nishinohara Kofun Group",
+    "langlinks": {
+      "ja": "西ノ原古墳群"
+    },
+    "page": "Hyōtan-zuka Kofun",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:38Z)",
+    "recovered_qid": "Q135579136"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579136",
+  "recovered_label": "Nishinohara Kofun Group",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

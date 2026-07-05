@@ -1,0 +1,35 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kisshō-ji (Gifu)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 317,
+    "timestamp": "20250730020350"
+  },
+  "fandom": {
+    "categories": [
+      "Seven Lucky Gods Pilgrimages",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Gifu Shichifukujin"
+    ],
+    "ja_sitelink": null,
+    "label": "Kisshō-ji (Gifu)",
+    "langlinks": {
+      "ja": "吉祥寺 (岐阜市)"
+    },
+    "page": "Gifu Shichifukujin",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T19:16:06Z)",
+    "recovered_qid": "Q135504271"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135504271",
+  "recovered_label": "Kisshō-ji (Gifu)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

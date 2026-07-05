@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"One Day Spa\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 452,
+    "timestamp": "20250728234939"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135491453",
+  "recovered_label": "One Day Spa",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

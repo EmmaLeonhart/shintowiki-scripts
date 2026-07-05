@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Aso Shrine (Ronsha 1)\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 1180,
+    "timestamp": "20250703162112"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135198302",
+  "recovered_label": "Aso Shrine (Ronsha 1)",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Infrastruktur",
+    "comment": "Empty item",
+    "reason_bucket": "empty-item",
+    "size_bytes": 931,
+    "timestamp": "20250802232631"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135598279",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

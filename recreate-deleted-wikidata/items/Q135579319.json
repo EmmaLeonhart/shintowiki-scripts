@@ -1,0 +1,45 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kohō Ōkami\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 303,
+    "timestamp": "20250802040309"
+  },
+  "fandom": {
+    "categories": [
+      "Buildings and structures in Yorii Town",
+      "Former Gō-sha in Saitama Prefecture",
+      "Image Requests for Osato District",
+      "Pages linked to by wikidata",
+      "Shikinaisha in Musashi Province",
+      "Shinto shrines in Saitama Prefecture",
+      "Wikidata has short description",
+      "Shikinai Shōsha",
+      "Kokuhei-sha",
+      "Shikinai Ronsha",
+      "Test cases",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo-no-Iwai Shrine (Yorii Town)"
+    ],
+    "ja_sitelink": null,
+    "label": "Kohō Ōkami",
+    "langlinks": {
+      "ja": "古峰大神"
+    },
+    "page": "Izumo-no-Iwai Shrine (Yorii Town)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:15Z)",
+    "recovered_qid": "Q135579319"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579319",
+  "recovered_label": "Kohō Ōkami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

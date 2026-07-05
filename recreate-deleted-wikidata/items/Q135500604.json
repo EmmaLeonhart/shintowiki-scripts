@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Ritsuryō Forty-Eight Rank System\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 330,
+    "timestamp": "20250729224522"
+  },
+  "fandom": {
+    "categories": [
+      "Cap-and-Rank System",
+      "Enumerations of 26",
+      "Emperor Tenji",
+      "Asuka period",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "26-Rank cap system"
+    ],
+    "ja_sitelink": null,
+    "label": "Ritsuryō Forty-Eight Rank System",
+    "langlinks": {
+      "ja": "冠位四十八階"
+    },
+    "page": "26-Rank cap system",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-23T22:53:34Z)",
+    "recovered_qid": "Q135500604"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500604",
+  "recovered_label": "Ritsuryō Forty-Eight Rank System",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Suga-no-Sawa Kofun Cluster\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 323,
+    "timestamp": "20250802035741"
+  },
+  "fandom": {
+    "categories": [
+      "History of Ota, Gunma",
+      "Kofun of Gunma prefecture",
+      "Pages using infobox ancient site with unknown parameters",
+      "Wikidata no short description",
+      "Zenpō-kōen-fun",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ima Izumiguchi Hachiman-yama Kofun"
+    ],
+    "ja_sitelink": null,
+    "label": "Suga-no-Sawa Kofun Cluster",
+    "langlinks": {
+      "ja": "菅ノ沢古墳群"
+    },
+    "page": "Ima Izumiguchi Hachiman-yama Kofun",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:49Z)",
+    "recovered_qid": "Q135579220"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579220",
+  "recovered_label": "Suga-no-Sawa Kofun Cluster",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

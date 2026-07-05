@@ -1,0 +1,41 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Nanatsumori Shrine\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 312,
+    "timestamp": "20250730033309"
+  },
+  "fandom": {
+    "categories": [
+      "Wikidata generated shikinaisha pages",
+      "Shikinaisha",
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shikinai Shōsha",
+      "Kokuhei-sha",
+      "Shikinaisha in Tōtōmi Province"
+    ],
+    "current_ill_qid": "Q135069409",
+    "host_pages": [
+      "Kohoriheno Shrine",
+      "Kuno no Kuni no Miyatsuko",
+      "久努国造"
+    ],
+    "ja_sitelink": null,
+    "label": "Nanatsumori Shrine",
+    "langlinks": {
+      "ja": "七ツ森神社"
+    },
+    "page": "Kohoriheno Shrine",
+    "qid_matches_rag": false,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135069409"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506353",
+  "recovered_label": "Nanatsumori Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

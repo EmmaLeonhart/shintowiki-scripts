@@ -1,0 +1,37 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Teiō Henki\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 388,
+    "timestamp": "20250801064035"
+  },
+  "fandom": {
+    "categories": [
+      "Officials of the Ritsuryō System",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages",
+      "Pages with duplicated content"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "City Offices (Tōji and Sai)"
+    ],
+    "ja_sitelink": null,
+    "label": "Teiō Henki",
+    "langlinks": {
+      "ja": "帝王編年記"
+    },
+    "page": "City Offices (Tōji and Sai)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:29Z)",
+    "recovered_qid": "Q135550950"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550950",
+  "recovered_label": "Teiō Henki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

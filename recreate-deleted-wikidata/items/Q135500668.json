@@ -1,0 +1,41 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Fukane Munetsugu\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 307,
+    "timestamp": "20250729224624"
+  },
+  "fandom": {
+    "categories": [
+      "Japanese medical educators of the 8th century",
+      "Japanese physicians of the 8th century",
+      "Japanese medical educators of the 9th century",
+      "9th-century Japanese physicians",
+      "Imperial Bureau of Pharmacology",
+      "Officials of the Ritsuryō System",
+      "Medical educators in Japan",
+      "Acupuncture",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Acupuncture Hakase"
+    ],
+    "ja_sitelink": null,
+    "label": "Fukane Munetsugu",
+    "langlinks": {
+      "ja": "深根宗継"
+    },
+    "page": "Acupuncture Hakase",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:35Z)",
+    "recovered_qid": "Q135500668"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500668",
+  "recovered_label": "Fukane Munetsugu",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

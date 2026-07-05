@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Wolverène",
+    "comment": "draft-only item",
+    "reason_bucket": "other",
+    "size_bytes": 415,
+    "timestamp": "20230526074647"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q118708738",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

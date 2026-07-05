@@ -1,0 +1,43 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Suitengu Dedication Fireworks Festival\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 344,
+    "timestamp": "20250801074715"
+  },
+  "fandom": {
+    "categories": [
+      "Japan in 1650",
+      "August",
+      "Culture of Kurume",
+      "久留米藩",
+      "水天宮",
+      "福岡県の花火大会",
+      "筑後川水系",
+      "西日本新聞社",
+      "Pages with deleted QID in ill template",
+      "Suiten-gū Shrines",
+      "Independently git synced pages"
+    ],
+    "current_ill_qid": "Q135551185",
+    "host_pages": [
+      "Chikugo River Fireworks Festival"
+    ],
+    "ja_sitelink": null,
+    "label": "Suitengu Dedication Fireworks Festival",
+    "langlinks": {
+      "ja": "水天宮奉納花火大会"
+    },
+    "page": "Chikugo River Fireworks Festival",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135551185"
+  },
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135551185",
+  "recovered_label": "Suitengu Dedication Fireworks Festival",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

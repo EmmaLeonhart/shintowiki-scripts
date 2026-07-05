@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Madamebiblio",
+    "comment": "Empty item",
+    "reason_bucket": "empty-item",
+    "size_bytes": 303,
+    "timestamp": "20250731230507"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135540735",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

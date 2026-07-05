@@ -1,0 +1,36 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Chōkui no Sei\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 305,
+    "timestamp": "20250728223017"
+  },
+  "fandom": {
+    "categories": [
+      "Days",
+      "旧暦8月",
+      "Pages with deleted QID in ill template",
+      "Lunisolar August"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "August 5 (Lunisolar)"
+    ],
+    "ja_sitelink": null,
+    "label": "Chōkui no Sei",
+    "langlinks": {
+      "ja": "鐘匱の制"
+    },
+    "page": "August 5 (Lunisolar)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:47Z)",
+    "recovered_qid": "Q135490496"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135490496",
+  "recovered_label": "Chōkui no Sei",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,39 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi Sakado clan\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 317,
+    "timestamp": "20250729004908"
+  },
+  "fandom": {
+    "categories": [
+      "Nakatomi clan",
+      "People of ancient Japan",
+      "Wikidata no short description",
+      "Year of birth unknown",
+      "Year_of_birth_unknown",
+      "Year_of_death_unknown",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Omikiyama no Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi Sakado clan",
+    "langlinks": {
+      "ja": "中臣酒人宿祢"
+    },
+    "page": "Omikiyama no Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:54:07Z)",
+    "recovered_qid": "Q135491611"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491611",
+  "recovered_label": "Nakatomi Sakado clan",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

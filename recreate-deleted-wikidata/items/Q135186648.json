@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"jinja-net.jp\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 328,
+    "timestamp": "20250701235255"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135186648",
+  "recovered_label": "jinja-net.jp",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Moriyama Hyōtan-yama Kofun\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 327,
+    "timestamp": "20250802035430"
+  },
+  "fandom": {
+    "categories": [
+      "All disambiguation pages",
+      "Kofun",
+      "Kofun disambiguations",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Hyōtan-yama Kofun",
+      "List of Kofun in Japan with the Name \"Hyō\""
+    ],
+    "ja_sitelink": null,
+    "label": "Moriyama Hyōtan-yama Kofun",
+    "langlinks": {
+      "ja": "守山瓢箪山古墳"
+    },
+    "page": "Hyōtan-yama Kofun",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:38Z)",
+    "recovered_qid": "Q135579120"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579120",
+  "recovered_label": "Moriyama Hyōtan-yama Kofun",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

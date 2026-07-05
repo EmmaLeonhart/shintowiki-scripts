@@ -1,0 +1,37 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"御匙\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 289,
+    "timestamp": "20250802035513"
+  },
+  "fandom": {
+    "categories": [
+      "Titles and Positions in Shintō",
+      "translated pages with valid en interwikis",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Hōri"
+    ],
+    "ja_sitelink": null,
+    "label": "御匙",
+    "langlinks": {
+      "ja": "御匙"
+    },
+    "page": "Hōri",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:39Z)",
+    "recovered_qid": "Q135579154"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579154",
+  "recovered_label": "御匙",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

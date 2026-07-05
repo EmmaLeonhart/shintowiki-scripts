@@ -1,0 +1,40 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Taishōjidai-sai\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 310,
+    "timestamp": "20250801074603"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Taishōjidai-sai",
+    "langlinks": {
+      "ja": "大正時代祭"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551164"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551164",
+  "recovered_label": "Taishōjidai-sai",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

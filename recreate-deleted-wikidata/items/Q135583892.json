@@ -1,0 +1,39 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Taioshin Sen Chintaku Reifu no Kami\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 255,
+    "timestamp": "20250802193108"
+  },
+  "fandom": {
+    "categories": [
+      "Katano, Osaka",
+      "Setsumatsusha",
+      "Shinbutsu shūgō",
+      "Shinto shrines in Osaka Prefecture",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template",
+      "Independently git synced pages"
+    ],
+    "current_ill_qid": "Q135583892",
+    "host_pages": [
+      "Hoshida Myōkengū"
+    ],
+    "ja_sitelink": null,
+    "label": "Taioshin Sen Chintaku Reifu no Kami",
+    "langlinks": {
+      "ja": "太上神仙鎮宅霊符神"
+    },
+    "page": "Hoshida Myōkengū",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135583892"
+  },
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135583892",
+  "recovered_label": "Taioshin Sen Chintaku Reifu no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

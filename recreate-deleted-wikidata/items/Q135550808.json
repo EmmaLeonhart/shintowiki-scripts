@@ -1,0 +1,42 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Chichibu Three Shrines\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 313,
+    "timestamp": "20250801055026"
+  },
+  "fandom": {
+    "categories": [
+      "Architecture of Nagatoro Town",
+      "Beppyo shrines",
+      "Former_Prefectural_Shrines_in_Saitama_Prefecture",
+      "History of Nagatoro",
+      "Kanto Mountains",
+      "Ken-sha",
+      "Shinto shrines in Saitama Prefecture",
+      "Wikidata has short description",
+      "Yamato Takeru Legend",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Hodosan Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Chichibu Three Shrines",
+    "langlinks": {
+      "ja": "秩父三社"
+    },
+    "page": "Hodosan Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:30Z)",
+    "recovered_qid": "Q135550808"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550808",
+  "recovered_label": "Chichibu Three Shrines",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,43 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Akagi Shrine (Niisato Takei Town)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 351,
+    "timestamp": "20250730031729"
+  },
+  "fandom": {
+    "categories": [
+      "Myōjin Taisha",
+      "Myōjin Taisha",
+      "Kamitsukeno clan",
+      "Kōzuke Province",
+      "Shikinaisha in Kōzuke Province",
+      "Shinto shrines with the same name",
+      "Shrine disambiguations",
+      "Independently git synced pages",
+      "Akagi Shrines",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": "Q135505949",
+    "host_pages": [
+      "Akagi Shrines"
+    ],
+    "ja_sitelink": null,
+    "label": "Akagi Shrine (Niisato Takei Town)",
+    "langlinks": {
+      "ja": "赤城神社 (桐生市新里町武井)"
+    },
+    "page": "Akagi Shrines",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135505949"
+  },
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135505949",
+  "recovered_label": "Akagi Shrine (Niisato Takei Town)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

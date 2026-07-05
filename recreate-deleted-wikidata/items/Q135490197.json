@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Haiku Poet\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 312,
+    "timestamp": "20250728210816"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135490197",
+  "recovered_label": "Haiku Poet",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

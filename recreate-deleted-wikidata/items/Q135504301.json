@@ -1,0 +1,37 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Yasaka Shrine Gion Festival (Ryugasaki)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 339,
+    "timestamp": "20250730020411"
+  },
+  "fandom": {
+    "categories": [
+      "Festivals in Japan",
+      "Gion festivals",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Gion and Tenno Festivals"
+    ],
+    "ja_sitelink": "祇園祭#日本全国の祇園祭",
+    "label": "Yasaka Shrine Gion Festival (Ryugasaki)",
+    "langlinks": {
+      "ja": "八坂神社祇園祭"
+    },
+    "page": "Gion and Tenno Festivals",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:44:41Z)",
+    "recovered_qid": "Q135504301"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135504301",
+  "recovered_label": "Yasaka Shrine Gion Festival (Ryugasaki)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

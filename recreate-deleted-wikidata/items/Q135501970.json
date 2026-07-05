@@ -1,0 +1,41 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Arakida Moriyoshi\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 311,
+    "timestamp": "20250729231746"
+  },
+  "fandom": {
+    "categories": [
+      "Shinto shrines in Ise City",
+      "橋の文化",
+      "125 Shrines of Ise",
+      "Pages with deleted QID in ill template",
+      "Bridges in culture",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with 100+ untranslated japanese characters",
+      "Pages with 150+ untranslated japanese characters",
+      "Pages with 200+ untranslated japanese characters"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Aedo Hashihime Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Arakida Moriyoshi",
+    "langlinks": {
+      "ja": "荒木田守良"
+    },
+    "page": "Aedo Hashihime Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:19Z)",
+    "recovered_qid": "Q135501970"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135501970",
+  "recovered_label": "Arakida Moriyoshi",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

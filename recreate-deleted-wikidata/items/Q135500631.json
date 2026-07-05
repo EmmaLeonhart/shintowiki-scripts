@@ -1,0 +1,39 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Gyōshun\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 306,
+    "timestamp": "20250729224548"
+  },
+  "fandom": {
+    "categories": [
+      "1110 births",
+      "1183 deaths",
+      "安倍氏",
+      "Aristocrats of the Late Heian Period",
+      "Recipients of Lower Senior Fourth Rank",
+      "Onmyōji",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Abe no Yasuchika"
+    ],
+    "ja_sitelink": null,
+    "label": "Abe no Gyōshun",
+    "langlinks": {
+      "ja": "安倍業俊"
+    },
+    "page": "Abe no Yasuchika",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:32Z)",
+    "recovered_qid": "Q135500631"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500631",
+  "recovered_label": "Abe no Gyōshun",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

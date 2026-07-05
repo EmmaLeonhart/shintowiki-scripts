@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Okutsuhiko no Mikoto\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 475,
+    "timestamp": "20250801052034"
+  },
+  "fandom": {
+    "categories": [
+      "Buildings and structures in Maebashi",
+      "History of Maebashi",
+      "Former Gō-sha in Gunma Prefecture",
+      "Shinto shrines in Gunma Prefecture",
+      "Akagi Shrines",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Akagi Shrine (Fujimi Town Yokomuro)"
+    ],
+    "ja_sitelink": null,
+    "label": "Okutsuhiko no Mikoto",
+    "langlinks": {
+      "ja": "奥津彦命"
+    },
+    "page": "Akagi Shrine (Fujimi Town Yokomuro)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:41Z)",
+    "recovered_qid": "Q135550732"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550732",
+  "recovered_label": "Okutsuhiko no Mikoto",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

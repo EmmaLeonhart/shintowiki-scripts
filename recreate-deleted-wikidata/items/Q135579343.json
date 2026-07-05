@@ -1,0 +1,36 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Izumo-taisha Takachiho Church\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 335,
+    "timestamp": "20250802040428"
+  },
+  "fandom": {
+    "categories": [
+      "Izumo Grand Shrine",
+      "Shinto shrines in Matsuyama",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo Taisha Matsuyama Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Izumo-taisha Takachiho Church",
+    "langlinks": {
+      "ja": "出雲大社高千穂教会"
+    },
+    "page": "Izumo Taisha Matsuyama Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:08:42Z)",
+    "recovered_qid": "Q135579343"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579343",
+  "recovered_label": "Izumo-taisha Takachiho Church",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

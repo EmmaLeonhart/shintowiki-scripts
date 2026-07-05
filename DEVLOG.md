@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Per-QID JSON files for every deleted item (Emma request)
+
+Emma: "make json files on each deleted qid for the info we have on them." Built
+`recreate-deleted-wikidata/build_item_json.py` — a pure local merge (no network) of
+`deleted_log_rag.json` (XTools listing + public deletion log) × `shinto_wiki_crossref.json`
+(fandom recovery), keyed by QID → one `items/<QID>.json` per deleted item + an `items/_index.json`
+manifest. Each file consolidates: deletion metadata (admin, full comment preserving the label,
+reason bucket, byte size, timestamp), the recovered English label, `self_deleted` flag (Emma's
+own author-request/batch deletions — moot), and — when the item matched a fandom ill — the host
+page(s), per-language langlinks, the recovered+RAG-validated original QID and its source,
+jawiki sitelink, and host-page categories, plus a `recreation_candidate` boolean (matched +
+has langlinks + not self-deleted + not RfD-no-evidence/conflation). Wrote **455 files**:
+215 fandom-matched, 213 recreation candidates, 122 self-deleted (out of scope). 5 unit tests
+on the merge/flag logic (21 green total in the dir). Re-runnable + deterministic (sorted).
+
 ## 2026-07-05 — Miraheze history removal: already stopped (2026-06-01 cutoff) — queue item resolved
 
 Emma queued: "if we are still removing history from miraheze, stop — not necessary anymore."

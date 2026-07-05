@@ -1,0 +1,52 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Shōkyō\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 291,
+    "timestamp": "20250728221200"
+  },
+  "fandom": {
+    "categories": [
+      "Days 22 of Japanese Lunar months",
+      "Days of the Japanese Lunisolar Calendar",
+      "Lunisolar May",
+      "Tomobiki",
+      "Wikidata has short description",
+      "WikiProject Japanese Calendar"
+    ],
+    "current_ill_qid": "Q1069086",
+    "host_pages": [
+      "May 22 (Lunisolar)",
+      "May 25 (Lunisolar)",
+      "July 23 (Lunisolar)",
+      "August 9 (Lunisolar)",
+      "November 19 (Lunisolar)"
+    ],
+    "ja_sitelink": null,
+    "label": "Shōkyō",
+    "langlinks": {
+      "de": "Shōkyō",
+      "en": "Shōryaku",
+      "fa": "شوکیو",
+      "fr": "Ère Shōkei",
+      "ja": "正恭",
+      "ko": "쇼쿄",
+      "ru": "Сёкэй",
+      "simple": "Shōkyō",
+      "sr": "Шокјо",
+      "tr": "Shōkyō",
+      "zh": "正慶"
+    },
+    "page": "May 22 (Lunisolar)",
+    "qid_matches_rag": false,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q1069086"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135490455",
+  "recovered_label": "Shōkyō",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

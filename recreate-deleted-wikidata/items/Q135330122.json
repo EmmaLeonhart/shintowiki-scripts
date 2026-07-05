@@ -1,0 +1,31 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Amanomikemunushi no Kami\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 244,
+    "timestamp": "20250714223000"
+  },
+  "fandom": {
+    "categories": [],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Amanomikemunushi-no-Kami"
+    ],
+    "ja_sitelink": null,
+    "label": "Amanomikemunushi no Kami",
+    "langlinks": {
+      "ja": "Amanomikemunushi no Kami"
+    },
+    "page": "Amanomikemunushi-no-Kami",
+    "qid_matches_rag": false,
+    "qid_source": null,
+    "recovered_qid": null
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135330122",
+  "recovered_label": "Amanomikemunushi no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

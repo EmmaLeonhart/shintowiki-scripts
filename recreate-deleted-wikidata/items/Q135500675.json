@@ -1,0 +1,41 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Tanba Tadayaki\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 305,
+    "timestamp": "20250729224630"
+  },
+  "fandom": {
+    "categories": [
+      "Japanese medical educators of the 8th century",
+      "Japanese physicians of the 8th century",
+      "Japanese medical educators of the 9th century",
+      "9th-century Japanese physicians",
+      "Imperial Bureau of Pharmacology",
+      "Officials of the Ritsuryō System",
+      "Medical educators in Japan",
+      "Acupuncture",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Acupuncture Hakase"
+    ],
+    "ja_sitelink": null,
+    "label": "Tanba Tadayaki",
+    "langlinks": {
+      "ja": "丹波忠明"
+    },
+    "page": "Acupuncture Hakase",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:35Z)",
+    "recovered_qid": "Q135500675"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500675",
+  "recovered_label": "Tanba Tadayaki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

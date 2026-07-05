@@ -1,0 +1,37 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Rokusonōbara Kofun\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 316,
+    "timestamp": "20250729225158"
+  },
+  "fandom": {
+    "categories": [
+      "Chiba Heritage Top 100",
+      "Kofun in Chiba Prefecture",
+      "Kofun clusters",
+      "市原市の歴史",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Anesaki Kofun Group"
+    ],
+    "ja_sitelink": null,
+    "label": "Rokusonōbara Kofun",
+    "langlinks": {
+      "ja": "六孫王原古墳"
+    },
+    "page": "Anesaki Kofun Group",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:04Z)",
+    "recovered_qid": "Q135500938"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500938",
+  "recovered_label": "Rokusonōbara Kofun",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

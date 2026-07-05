@@ -1,0 +1,42 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kōshin-dō\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 301,
+    "timestamp": "20250801074456"
+  },
+  "fandom": {
+    "categories": [
+      "Buddhist temples in Nara Prefecture",
+      "Buildings and structures in Yamatokoriyama, Nara",
+      "History of Yamatokoriyama, Nara",
+      "Kōshin",
+      "Sangaku",
+      "Tiantai temples",
+      "Tiantai_temples",
+      "Wikidata has short description"
+    ],
+    "current_ill_qid": "Q11486000",
+    "host_pages": [
+      "Konrin-in",
+      "Kōshin-machi",
+      "Kōshin Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Kōshin-dō",
+    "langlinks": {
+      "ja": "Kōshin-dō"
+    },
+    "page": "Konrin-in",
+    "qid_matches_rag": false,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q11486000"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551148",
+  "recovered_label": "Kōshin-dō",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

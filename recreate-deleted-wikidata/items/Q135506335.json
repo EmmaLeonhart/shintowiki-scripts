@@ -1,0 +1,47 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kumano Shōjō Gongen\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 318,
+    "timestamp": "20250730033233"
+  },
+  "fandom": {
+    "categories": [
+      "Architecture of Muromachi period",
+      "Buildings and structures in Hirano-ku, Osaka",
+      "Cultural heritage monuments in Japan",
+      "Edo period architecture",
+      "Former Fu-sha in Osaka",
+      "Gion shrines",
+      "Hirano-ku, Osaka",
+      "History of Hirano Ward",
+      "Important Cultural Properties in Osaka City",
+      "Kasuga-Utsushi",
+      "Ken-sha",
+      "Sakanoue no Tamuramaro",
+      "Shinto shrines in Osaka",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Kumata Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Kumano Shōjō Gongen",
+    "langlinks": {
+      "ja": "熊野證誠権現"
+    },
+    "page": "Kumata Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:50:58Z)",
+    "recovered_qid": "Q135506335"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506335",
+  "recovered_label": "Kumano Shōjō Gongen",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

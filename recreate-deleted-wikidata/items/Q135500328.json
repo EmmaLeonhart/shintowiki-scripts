@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Yumoto Group\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 451,
+    "timestamp": "20250729223258"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135500328",
+  "recovered_label": "Yumoto Group",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

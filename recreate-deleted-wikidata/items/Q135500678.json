@@ -1,0 +1,40 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Mutō Yorisuke\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 305,
+    "timestamp": "20250729224632"
+  },
+  "fandom": {
+    "categories": [
+      "1210 births",
+      "1253 deaths",
+      "Adachi Kagemori",
+      "Adachi clan",
+      "引付衆",
+      "Gokenin of the Kamakura shogunate",
+      "鎌倉幕府評定衆",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Adachi Yoshikage"
+    ],
+    "ja_sitelink": null,
+    "label": "Mutō Yorisuke",
+    "langlinks": {
+      "ja": "武藤頼佐"
+    },
+    "page": "Adachi Yoshikage",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:36Z)",
+    "recovered_qid": "Q135500678"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500678",
+  "recovered_label": "Mutō Yorisuke",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

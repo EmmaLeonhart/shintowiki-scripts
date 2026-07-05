@@ -1,0 +1,45 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kyushu 36 Fudō Sacred Sites\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 334,
+    "timestamp": "20250801064020"
+  },
+  "fandom": {
+    "categories": [
+      "九州地方にある日本庭園",
+      "九州西国三十三箇所",
+      "Bettoji Temples",
+      "宗像市の建築物",
+      "宗像市の歴史",
+      "Munakata shrines",
+      "Temples of Shingon-shū Omuro-ha",
+      "Jingū-ji",
+      "Buddhist temples in Fukuoka Prefecture",
+      "福岡県の重要文化財",
+      "Kūkai",
+      "Pages with deleted QID in ill template",
+      "Important Cultural Property of Japan in Fukuoka prefecture"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chinkoku-ji"
+    ],
+    "ja_sitelink": null,
+    "label": "Kyushu 36 Fudō Sacred Sites",
+    "langlinks": {
+      "ja": "九州三十六不動霊場"
+    },
+    "page": "Chinkoku-ji",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:22Z)",
+    "recovered_qid": "Q135550946"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550946",
+  "recovered_label": "Kyushu 36 Fudō Sacred Sites",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

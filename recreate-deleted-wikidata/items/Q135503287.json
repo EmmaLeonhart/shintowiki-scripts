@@ -1,0 +1,36 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Wakajinzume no Kami\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 310,
+    "timestamp": "20250730011410"
+  },
+  "fandom": {
+    "categories": [
+      "Seventeen Generations of Earthly Deities",
+      "Kunitsukami",
+      "Japanese deities",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ame-no-Hibaraooshinadomi-no-Kami"
+    ],
+    "ja_sitelink": null,
+    "label": "Wakajinzume no Kami",
+    "langlinks": {
+      "ja": "若尽女神"
+    },
+    "page": "Ame-no-Hibaraooshinadomi-no-Kami",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:54Z)",
+    "recovered_qid": "Q135503287"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503287",
+  "recovered_label": "Wakajinzume no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

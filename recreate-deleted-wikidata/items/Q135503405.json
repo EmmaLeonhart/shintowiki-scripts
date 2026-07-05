@@ -1,0 +1,43 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Tsumatsuhime no Kami\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 311,
+    "timestamp": "20250730011747"
+  },
+  "fandom": {
+    "categories": [
+      "京都市の画像提供依頼",
+      "Shinto shrines in Kyoto",
+      "Former Fu-sha in Kyoto",
+      "東山区の建築物",
+      "東山区の歴史",
+      "Gion shrines",
+      "Shinto shrines of Jinja Honkyō",
+      "粟田口",
+      "Chinjusha",
+      "Pages with deleted QID in ill template",
+      "Buildings and structures in Higashiyama-ku, Kyoto"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Awata Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Tsumatsuhime no Kami",
+    "langlinks": {
+      "ja": "抓津媛神"
+    },
+    "page": "Awata Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:54Z)",
+    "recovered_qid": "Q135503405"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503405",
+  "recovered_label": "Tsumatsuhime no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

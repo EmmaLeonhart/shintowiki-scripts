@@ -1,0 +1,43 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi Tokikaze\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 479,
+    "timestamp": "20250729004911"
+  },
+  "fandom": {
+    "categories": [
+      "Kasuga-Utsushi",
+      "Shinto shrines in Japan",
+      "Shinto shrines in Nara",
+      "Shizuri Faith",
+      "Shizuri Shrines",
+      "Son-sha in Nara Prefecture",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Shidori Shrine (Nara)"
+    ],
+    "ja_sitelink": "天羽槌雄神",
+    "label": "Nakatomi Tokikaze",
+    "langlinks": {
+      "de": "Nakatomi Tokikaze (German)",
+      "ja": "中臣時風",
+      "zh": "Nakatomi Tokikaze (Chinese)"
+    },
+    "page": "Shidori Shrine (Nara)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:55:50Z)",
+    "recovered_qid": "Q135491612"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491612",
+  "recovered_label": "Nakatomi Tokikaze",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

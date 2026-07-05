@@ -1,0 +1,44 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Shima no Yu\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 298,
+    "timestamp": "20250730000203"
+  },
+  "fandom": {
+    "categories": [
+      "Regional collective trademarks",
+      "熱海市の地理",
+      "熱海市の歴史",
+      "Hot springs of Shizuoka Prefecture",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with 100+ untranslated japanese characters",
+      "Pages with 150+ untranslated japanese characters",
+      "Pages with 200+ untranslated japanese characters",
+      "Pages with 250+ untranslated japanese characters",
+      "incorrect template category applied",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Atami Onsen"
+    ],
+    "ja_sitelink": null,
+    "label": "Shima no Yu",
+    "langlinks": {
+      "ja": "島の湯"
+    },
+    "page": "Atami Onsen",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:36Z)",
+    "recovered_qid": "Q135502402"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135502402",
+  "recovered_label": "Shima no Yu",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,39 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"calendar makers\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 383,
+    "timestamp": "20250802035851"
+  },
+  "fandom": {
+    "categories": [
+      "Astronomy in the Edo period",
+      "History of Ise, Mie",
+      "History of Mie Prefecture",
+      "Japanese Calendar",
+      "Wikidata no short description",
+      "WikiProject Japanese Calendar",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ise Calendar"
+    ],
+    "ja_sitelink": null,
+    "label": "calendar makers",
+    "langlinks": {
+      "ja": "暦師"
+    },
+    "page": "Ise Calendar",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:55Z)",
+    "recovered_qid": "Q135579243"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579243",
+  "recovered_label": "calendar makers",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

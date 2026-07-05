@@ -1,0 +1,43 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Akagi Shrine (Sakai Hiratsuka Town)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 350,
+    "timestamp": "20250730031747"
+  },
+  "fandom": {
+    "categories": [
+      "Myōjin Taisha",
+      "Myōjin Taisha",
+      "Kamitsukeno clan",
+      "Kōzuke Province",
+      "Shikinaisha in Kōzuke Province",
+      "Shinto shrines with the same name",
+      "Shrine disambiguations",
+      "Independently git synced pages",
+      "Akagi Shrines",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": "Q135505965",
+    "host_pages": [
+      "Akagi Shrines"
+    ],
+    "ja_sitelink": null,
+    "label": "Akagi Shrine (Sakai Hiratsuka Town)",
+    "langlinks": {
+      "ja": "赤城神社 (伊勢崎市境平塚)"
+    },
+    "page": "Akagi Shrines",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135505965"
+  },
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135505965",
+  "recovered_label": "Akagi Shrine (Sakai Hiratsuka Town)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

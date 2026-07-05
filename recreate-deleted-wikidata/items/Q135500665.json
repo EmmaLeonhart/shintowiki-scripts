@@ -1,0 +1,41 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Kamimiya Togata Shrine\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 319,
+    "timestamp": "20250729224621"
+  },
+  "fandom": {
+    "categories": [
+      "Clans of Chūbu Region",
+      "Clans of Shinano Province",
+      "History of Saitama Prefecture",
+      "Japanese clans",
+      "Uji",
+      "History of Nagano Prefecture",
+      "阿智村の歴史",
+      "阿智氏",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Achi clan"
+    ],
+    "ja_sitelink": null,
+    "label": "Kamimiya Togata Shrine",
+    "langlinks": {
+      "ja": "上宮外縣神社"
+    },
+    "page": "Achi clan",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:34Z)",
+    "recovered_qid": "Q135500665"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500665",
+  "recovered_label": "Kamimiya Togata Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

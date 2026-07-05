@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Arishige\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 303,
+    "timestamp": "20250729224532"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500613",
+  "recovered_label": "Abe no Arishige",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

@@ -1,0 +1,40 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Adachi Shigekage\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 307,
+    "timestamp": "20250729224640"
+  },
+  "fandom": {
+    "categories": [
+      "1210 births",
+      "1253 deaths",
+      "Adachi Kagemori",
+      "Adachi clan",
+      "引付衆",
+      "Gokenin of the Kamakura shogunate",
+      "鎌倉幕府評定衆",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Adachi Yoshikage"
+    ],
+    "ja_sitelink": null,
+    "label": "Adachi Shigekage",
+    "langlinks": {
+      "ja": "安達重景"
+    },
+    "page": "Adachi Yoshikage",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:36Z)",
+    "recovered_qid": "Q135500687"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500687",
+  "recovered_label": "Adachi Shigekage",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,36 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Three Deities of Mount Daisen\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 326,
+    "timestamp": "20250801064004"
+  },
+  "fandom": {
+    "categories": [
+      "Shugendō deities",
+      "Kṣitigarbha",
+      "Gongen",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chimyō Gongen"
+    ],
+    "ja_sitelink": null,
+    "label": "Three Deities of Mount Daisen",
+    "langlinks": {
+      "ja": "大山三所権現"
+    },
+    "page": "Chimyō Gongen",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:20Z)",
+    "recovered_qid": "Q135550940"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550940",
+  "recovered_label": "Three Deities of Mount Daisen",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Emu",
+    "comment": "[[Wikidata:Requests for deletions|RfD]]: Conflation of two different people.",
+    "reason_bucket": "rfd-conflation",
+    "size_bytes": 1550,
+    "timestamp": "20250620101416"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q134988444",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

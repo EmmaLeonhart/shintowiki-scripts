@@ -1,0 +1,39 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kyoto's Three Kumano Shrines\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 322,
+    "timestamp": "20250730033227"
+  },
+  "fandom": {
+    "categories": [
+      "Buildings and structures in Sakyo-ku, Kyoto",
+      "Chinjusha",
+      "History of Sakyo-ku, Kyoto",
+      "Shinto shrines in Kyoto",
+      "Son-sha in Kyoto Prefecture",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Kumano Nyakuōji Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Kyoto's Three Kumano Shrines",
+    "langlinks": {
+      "ja": "京都三熊野"
+    },
+    "page": "Kumano Nyakuōji Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:50:57Z)",
+    "recovered_qid": "Q135506332"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506332",
+  "recovered_label": "Kyoto's Three Kumano Shrines",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

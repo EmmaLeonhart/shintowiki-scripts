@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi Harai Kunkai\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 408,
+    "timestamp": "20250729004835"
+  },
+  "fandom": {
+    "categories": [
+      "Amatsukami",
+      "Evil deities",
+      "Japanese deities",
+      "Kunitsukami",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ibukidonushi no Kami"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi Harai Kunkai",
+    "langlinks": {
+      "ja": "中臣祓訓解"
+    },
+    "page": "Ibukidonushi no Kami",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:41Z)",
+    "recovered_qid": "Q135491602"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491602",
+  "recovered_label": "Nakatomi Harai Kunkai",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

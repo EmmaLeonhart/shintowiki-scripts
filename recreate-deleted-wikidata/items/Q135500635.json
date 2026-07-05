@@ -1,0 +1,39 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Yasushige\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 307,
+    "timestamp": "20250729224551"
+  },
+  "fandom": {
+    "categories": [
+      "1110 births",
+      "1183 deaths",
+      "安倍氏",
+      "Aristocrats of the Late Heian Period",
+      "Recipients of Lower Senior Fourth Rank",
+      "Onmyōji",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Abe no Yasuchika"
+    ],
+    "ja_sitelink": null,
+    "label": "Abe no Yasushige",
+    "langlinks": {
+      "ja": "安倍泰茂"
+    },
+    "page": "Abe no Yasuchika",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:32Z)",
+    "recovered_qid": "Q135500635"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500635",
+  "recovered_label": "Abe no Yasushige",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

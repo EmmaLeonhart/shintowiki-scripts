@@ -1,0 +1,40 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Hōrin-ji (Wakayama)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 323,
+    "timestamp": "20250730033121"
+  },
+  "fandom": {
+    "categories": [
+      "Buddhist temples in Wakayama Prefecture",
+      "Buildings and structures in Hashimoto, Wakayama",
+      "Common names",
+      "History of Hashimoto, Wakayama",
+      "Kōyasan Shingon temples",
+      "Temples of Kṣitigarbha",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Koyasu Jizō Temple"
+    ],
+    "ja_sitelink": null,
+    "label": "Hōrin-ji (Wakayama)",
+    "langlinks": {
+      "ja": "法輪寺 (和歌山市)"
+    },
+    "page": "Koyasu Jizō Temple",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:09:45Z)",
+    "recovered_qid": "Q135506290"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506290",
+  "recovered_label": "Hōrin-ji (Wakayama)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,37 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Color Index\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 308,
+    "timestamp": "20250730011832"
+  },
+  "fandom": {
+    "categories": [
+      "Glass",
+      "Lenses",
+      "Colors",
+      "Iron oxide pigments",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Bengala"
+    ],
+    "ja_sitelink": null,
+    "label": "Color Index",
+    "langlinks": {
+      "ja": "カラーカード"
+    },
+    "page": "Bengala",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:00Z)",
+    "recovered_qid": "Q135503431"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503431",
+  "recovered_label": "Color Index",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

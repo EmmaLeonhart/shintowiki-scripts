@@ -1,0 +1,36 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Inner Palace\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 303,
+    "timestamp": "20250801064032"
+  },
+  "fandom": {
+    "categories": [
+      "上京区の歴史",
+      "平安宮",
+      "Pages with deleted QID in ill template",
+      "Heian Palace"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chukain Temple"
+    ],
+    "ja_sitelink": null,
+    "label": "Inner Palace",
+    "langlinks": {
+      "ja": "内裏外郭"
+    },
+    "page": "Chukain Temple",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:26Z)",
+    "recovered_qid": "Q135550949"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550949",
+  "recovered_label": "Inner Palace",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

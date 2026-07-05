@@ -1,0 +1,42 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi no Amabisha-kyō\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 328,
+    "timestamp": "20250729004919"
+  },
+  "fandom": {
+    "categories": [
+      "Characters in Japanese mythology",
+      "Nakatomi clan",
+      "People of ancient Japan",
+      "People of Kofun-period Japan",
+      "Wikidata no short description",
+      "Year of birth unknown",
+      "Year of death unknown",
+      "Year_of_birth_unknown",
+      "Year_of_death_unknown",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ōbashi no Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi no Amabisha-kyō",
+    "langlinks": {
+      "ja": "中臣阿麻毘舎卿連"
+    },
+    "page": "Ōbashi no Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:59:42Z)",
+    "recovered_qid": "Q135491615"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491615",
+  "recovered_label": "Nakatomi no Amabisha-kyō",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

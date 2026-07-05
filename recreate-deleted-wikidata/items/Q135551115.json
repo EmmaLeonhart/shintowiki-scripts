@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kansei 12\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 298,
+    "timestamp": "20250801074252"
+  },
+  "fandom": {
+    "categories": [
+      "History of Ōita Prefecture",
+      "Bungo Province",
+      "風土記",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template",
+      "Fudoki"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Bungo no Kuni Fudoki"
+    ],
+    "ja_sitelink": null,
+    "label": "Kansei 12",
+    "langlinks": {
+      "ja": "寛政12年"
+    },
+    "page": "Bungo no Kuni Fudoki",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:06Z)",
+    "recovered_qid": "Q135551115"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551115",
+  "recovered_label": "Kansei 12",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

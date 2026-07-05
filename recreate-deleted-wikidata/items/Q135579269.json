@@ -1,0 +1,39 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Sawaetahara-Rokurohiko-no-Kami\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 336,
+    "timestamp": "20250802040002"
+  },
+  "fandom": {
+    "categories": [
+      "Goddesses",
+      "Japanese deities",
+      "Kunitsukami",
+      "Suwa faith",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template",
+      "Independently git synced pages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Itsuhayahime-no-Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Sawaetahara-Rokurohiko-no-Kami",
+    "langlinks": {
+      "ja": "佐和恵多良六老彦神"
+    },
+    "page": "Itsuhayahime-no-Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-15T21:34:21Z)",
+    "recovered_qid": "Q135579269"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579269",
+  "recovered_label": "Sawaetahara-Rokurohiko-no-Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

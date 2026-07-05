@@ -1,0 +1,43 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi no Ōshima\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 310,
+    "timestamp": "20250729004859"
+  },
+  "fandom": {
+    "categories": [
+      "694 deaths",
+      "728 deaths",
+      "Pages with duplicated content",
+      "People of Buzen Province",
+      "People of Chikuzen Province",
+      "Princes of Japan in the Asuka period",
+      "Princes of Japan in the Nara period",
+      "Wikidata has short description",
+      "Year of birth unknown",
+      "Pages with deleted QID in ill template",
+      "Pages with duplicated content"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Kawachi-no-Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi no Ōshima",
+    "langlinks": {
+      "ja": "藤原大嶋"
+    },
+    "page": "Kawachi-no-Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:50:02Z)",
+    "recovered_qid": "Q135491608"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491608",
+  "recovered_label": "Nakatomi no Ōshima",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

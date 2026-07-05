@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Yukemuri no Sato\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 462,
+    "timestamp": "20250729223244"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135500321",
+  "recovered_label": "Yukemuri no Sato",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

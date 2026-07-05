@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Addshore",
+    "comment": "Deleting per request at [[Wikidata:Project_chat#Deletion_of_improperly_created_items]]",
+    "reason_bucket": "batch-improperly-created",
+    "size_bytes": 935,
+    "timestamp": "20250802232613"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135598257",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": true
+}

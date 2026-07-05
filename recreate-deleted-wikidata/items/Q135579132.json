@@ -1,0 +1,37 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Hyōtan-tsuka Kofun (Shizuoka)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 439,
+    "timestamp": "20250802035448"
+  },
+  "fandom": {
+    "categories": [
+      "All disambiguation pages",
+      "Kofun",
+      "Kofun disambiguations",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Hyōtan-zuka Kofun"
+    ],
+    "ja_sitelink": null,
+    "label": "Hyōtan-tsuka Kofun (Shizuoka)",
+    "langlinks": {
+      "ja": "瓢箪塚古墳 (静岡市)"
+    },
+    "page": "Hyōtan-zuka Kofun",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:38Z)",
+    "recovered_qid": "Q135579132"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579132",
+  "recovered_label": "Hyōtan-tsuka Kofun (Shizuoka)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

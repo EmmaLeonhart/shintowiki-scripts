@@ -1,0 +1,34 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Inari Festival\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 301,
+    "timestamp": "20250801073614"
+  },
+  "fandom": {
+    "categories": [
+      "Annual events",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Annual event"
+    ],
+    "ja_sitelink": null,
+    "label": "Inari Festival",
+    "langlinks": {
+      "ja": "稲荷祭"
+    },
+    "page": "Annual event",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:05Z)",
+    "recovered_qid": "Q135551094"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551094",
+  "recovered_label": "Inari Festival",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

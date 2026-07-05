@@ -1,0 +1,38 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Kibi no Anaumi\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 308,
+    "timestamp": "20250729224614"
+  },
+  "fandom": {
+    "categories": [
+      "Shinto shrines in Kurashiki",
+      "Kurashiki Bikan historical quarter",
+      "Former Prefectural Shrines in Okayama Prefecture",
+      "Shinbutsu bunri",
+      "Chinjusha",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Achi Shrine (Kurashiki)"
+    ],
+    "ja_sitelink": null,
+    "label": "Kibi no Anaumi",
+    "langlinks": {
+      "ja": "吉備の穴海"
+    },
+    "page": "Achi Shrine (Kurashiki)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:34Z)",
+    "recovered_qid": "Q135500658"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500658",
+  "recovered_label": "Kibi no Anaumi",
+  "recreation_candidate": true,
+  "self_deleted": false
+}
