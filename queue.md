@@ -131,19 +131,22 @@ misses). #8 per-target research is larger but content/Emma-gated.
 
 ---
 
-## Context dump + agentic RAG on deleted Immanuelle-created Wikidata items (next session)
+## Context dump + agentic RAG on deleted Immanuelle-created Wikidata items — PROCESSED (2026-07-05)
 
-- [ ] **Go over the context dump** committed this session in `context dump/` (a saved
-  Claude Code page + assets, `911bbfb6`). Read it for the info/links it carries and fold
-  anything actionable into the queue/plan.
-- [ ] **Agentic RAG on the Wikidata items that Immanuelle created and that were then
-  deleted.** Emma is dumping these (there are likely account restrictions preventing a
-  live API pull, so the source is the dump, not a query). **Check the `context dump/` for
-  the item info / links first**, then do agentic RAG over the things linked there to
-  reconstruct enough content for recreation. **If that context is missing from the dump,
-  say so explicitly** (don't fabricate) and flag it as blocked-on-Emma-providing-the-dump.
-  Feeds directly into backlog #8 (deleted-QID recreation) above — the deleted
-  Immanuelle-created items overlap the 304 deleted ill targets.
+Context dump reviewed. Full analysis: `docs/deleted_immanuelle_items_analysis_2026-07-05.md`.
+Facts: `context dump/deleted.txt` is an XTools export of **455 deleted Immanuelle-created
+Q-items** (list only — QID + timestamp + byte-size + admin-gated undelete link; NO content);
+`chat dump.md` is the interrupted-session transcript (backlog #1/#2/#8, no deleted-item
+content). **35** of the deleted QIDs overlap backlog #8's recovered ill-target set — those
+are already covered by #8 (content sourced from shinto-wiki ills, not the deleted items).
+
+- [ ] **BLOCKED-ON-USER-ACTION — RAG for the ~420 non-overlapping deleted items.** The dump
+  is a *listing*, not content. Deleted WD items aren't publicly retrievable (non-admin), the
+  one public inference corpus (shinto-wiki ills) is already mined by #8, and 58% are
+  sub-400-byte near-empty stubs. Reconstruction needs an **admin `Special:Undelete` content
+  export from Emma** — flagged on `[[Open questions]]`. If she declines, backlog #8's 304
+  ill-targets are the whole actionable surface; leave the stubs deleted. (Do NOT fabricate
+  content for opaque QIDs.)
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.

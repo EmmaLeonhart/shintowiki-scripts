@@ -8,6 +8,10 @@ This page is the interface between Emma (human) and the bot agents that work on 
 * '''Emma:''' edit answers in-line under each question; the agent deletes it once acted on. Free-form context goes under [[#Notes|Notes]].
 * '''This page is wiki-wins.''' The wiki is canonical; Emma's edits here propagate down to the repo. (The 2026-06-07 bot clobber of this page is fixed — <code>fetch-depth:0</code> + most-recent-edit-wins + explicit wiki-wins for this page.)
 
+== Open questions ==
+
+* '''Recreating the ~420 deleted Immanuelle-created Wikidata items needs a CONTENT export, not the listing.''' (added by agent 2026-07-05) The <code>context dump/deleted.txt</code> XTools export lists '''455''' deleted Q-items you created, but carries only QID + deletion-timestamp + byte-size + an admin-only <code>Special:Undelete</code> link — '''not the item content'''. Backlog #8's generator already recovered the '''35''' of these that are referenced by shinto-wiki <code>{{ill}}</code> templates (content sourced from the wiki, not the deleted items). The other ~420 have no public content source (deleted WD items aren't retrievable by a non-admin; 58% are sub-400-byte near-empty stubs). '''Decision needed:''' do you want the ~420 recreated? If so, please provide an actual admin <code>Special:Undelete</code> content export (the listing alone is insufficient); otherwise we treat backlog #8's 304 ill-targets as the whole actionable surface and leave the stubs deleted. Full analysis: <code>docs/deleted_immanuelle_items_analysis_2026-07-05.md</code>.
+
 == Notes ==
 
 ''(free-form scratch space for Emma)''

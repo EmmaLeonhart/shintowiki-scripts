@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Context dump processed: deleted-Immanuelle-items RAG blocker identified
+
+Went over `context dump/` (committed `911bbfb`). `deleted.txt` = XTools export of **455
+deleted Immanuelle-created Q-items** (Main ns); each row carries only QID + deletion timestamp
++ byte-size + admin-only `Special:Undelete` link + public `Special:Log` link — **no content**.
+`chat dump.md` = the interrupted-session transcript (backlog #1/#2/#8), no deleted-item
+content. Cross-referenced the 455 against backlog #8's recovered ill-target QIDs: **35
+overlap** (of #8's 36 recovered old QIDs) — validating the queue's predicted overlap; those 35
+are already covered by #8 (content from shinto-wiki ills). Size distribution: 264/455 (58%)
+are sub-400-byte near-empty stubs. **Honest blocker (stated, not fabricated):** the dump is a
+*listing*, not content; a deleted WD item can't be reconstructed from its opaque QID, deleted
+items aren't publicly retrievable by a non-admin, and the one public inference corpus
+(shinto-wiki ills) is already mined by #8 — so reconstructing the ~420 non-overlapping items
+needs an admin `Special:Undelete` content export only Emma can make. Wrote
+`docs/deleted_immanuelle_items_analysis_2026-07-05.md`; flagged the decision on
+`[[Open questions]]` (repo-side edit — can't reach the wiki, Cloudflare-challenged; the
+git-synced sync is wiki-wins for that page so it can never clobber Emma's copy). Incidental:
+the chat dump confirms the cleanup-loop 07-03/07-04 failures were the known
+category-orchestrator ~160-min timeout, not a code defect.
+
 ## 2026-07-05 — Next-session analysis pass: per-item backlog resolution status doc
 
 Emma-requested hand-off. Wrote `docs/backlog_resolution_status_2026-07-05.md` — for each of
