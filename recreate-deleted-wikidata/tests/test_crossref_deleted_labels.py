@@ -54,6 +54,20 @@ def test_page_wikidata_qid():
     assert cx.page_wikidata_qid("no link here") is None
 
 
+def test_page_signals():
+    text = (
+        "{{wikidata link|Q42}}\n[[ja:天神社]]\n"
+        "[[Category:Shinto shrines in Gunma Prefecture]]\n"
+        "[[Category:Buildings and structures in Gunma Prefecture]]\n"
+    )
+    s = cx.page_signals(text)
+    assert s["page_wikidata_qid"] == "Q42"
+    assert s["ja_sitelink"] == "天神社"
+    assert len(s["categories"]) == 2
+    empty = cx.page_signals("")
+    assert empty == {"page_wikidata_qid": None, "ja_sitelink": None, "categories": []}
+
+
 def test_md_cell_escapes_pipe():
     assert cx.md_cell("a|b") == "a\\|b"
     assert cx.md_cell(None) == ""
@@ -62,9 +76,10 @@ def test_md_cell_escapes_pipe():
 def test_render_smoke():
     results = [{
         "qid": "Q135579706", "label": "Niwa-tsume no Mikoto", "size": 311, "bucket": "empty-item",
-        "fandom_page": "Takeminakata Shrine", "langlinks": {"ja": "庭津女命"},
-        "current_ill_qid": "", "recovered_qid": "Q135579706", "qid_source": "history(2026-05-14)",
-        "matched": True, "qid_matches_rag": True,
+        "fandom_page": "Takeminakata Shrine", "host_pages": ["Takeminakata Shrine"],
+        "langlinks": {"ja": "庭津女命"}, "current_ill_qid": "", "recovered_qid": "Q135579706",
+        "qid_source": "history(2026-05-14)", "page_wikidata_qid": None, "ja_sitelink": "諏訪",
+        "categories": ["Kami"], "matched": True, "qid_matches_rag": True,
     }]
     out = cx.render(results)
     assert "Niwa-tsume no Mikoto" in out and "matches the RAG" in out and "✓" in out

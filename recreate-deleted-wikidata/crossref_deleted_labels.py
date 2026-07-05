@@ -57,6 +57,8 @@ OUT_JSON = os.path.join(SCRIPT_DIR, "shinto_wiki_crossref.json")
 
 _ILL_RE = re.compile(r"\{\{\s*ill\s*\|([^{}]*)\}\}", re.IGNORECASE)
 _WD_LINK_RE = re.compile(r"\{\{\s*wikidata link\s*\|\s*(Q\d+)", re.IGNORECASE)
+_JA_SITELINK_RE = re.compile(r"\[\[\s*:?\s*ja\s*:\s*([^\]|]+)", re.IGNORECASE)
+_CAT_RE = re.compile(r"\[\[\s*Category\s*:\s*([^\]|]+)", re.IGNORECASE)
 _QID_PARAM_RE = re.compile(r"^(?:qid|wd|dd)$", re.IGNORECASE)
 _QID_RE = re.compile(r"^Q\d+$")
 _LANG_RE = re.compile(r"^[a-z][a-z-]{1,11}$")
@@ -117,6 +119,18 @@ def page_wikidata_qid(text: str) -> "str|None":
     return m.group(1) if m else None
 
 
+def page_signals(text: str) -> dict:
+    """Host-page context for a recreated item: does it already have a live item,
+    its jawiki sitelink (notability anchor), and its categories (type signal)."""
+    text = text or ""
+    ja = _JA_SITELINK_RE.search(text)
+    return {
+        "page_wikidata_qid": page_wikidata_qid(text),
+        "ja_sitelink": ja.group(1).strip() if ja else None,
+        "categories": [c.strip() for c in _CAT_RE.findall(text)],
+    }
+
+
 def md_cell(s) -> str:
     return str(s if s is not None else "").replace("|", "\\|")
 
@@ -160,22 +174,22 @@ def fetch_content(title: str, revid: "int|None" = None) -> str:
     return ""
 
 
-def history_revids(title: str, limit: int = 60):
+def recover_original_qid(title: str, label: str, batch: int = 40):
+    """Recover the pre-overwrite QID from fandom history for the ill on `title`.
+
+    Optimised: fetches a batch of revisions WITH content in one API call
+    (newest→oldest) and scans locally for the newest revision where the ill for
+    `label` still carried a real qid — rather than one call per revision.
+    Returns (qid, timestamp) or (None, None)."""
     d = _get_json({"action": "query", "prop": "revisions", "titles": title,
-                   "rvprop": "ids|timestamp", "rvlimit": limit})
+                   "rvprop": "content|timestamp|ids", "rvslots": "main",
+                   "rvlimit": batch})
     for p in d.get("query", {}).get("pages", {}).values():
-        return [(r["revid"], r["timestamp"]) for r in p.get("revisions", [])]
-    return []
-
-
-def recover_original_qid(title: str, label: str):
-    """Walk fandom history for the pre-overwrite revision where the ill still had
-    a real qid. Returns (qid, timestamp) or (None, None). Expensive."""
-    for revid, ts in history_revids(title):
-        parsed = find_ill(fetch_content(title, revid), label)
-        time.sleep(READ_THROTTLE)
-        if parsed and parsed["qid"]:
-            return parsed["qid"], ts
+        for r in p.get("revisions", []):
+            txt = r.get("slots", {}).get("main", {}).get("*", "") or ""
+            parsed = find_ill(txt, label)
+            if parsed and parsed["qid"]:
+                return parsed["qid"], r.get("timestamp")
     return None, None
 
 
@@ -196,51 +210,82 @@ def load_labels():
 
 
 def crossref_one(item, deep=False):
+    """Gather as-thorough-as-possible info for one deleted item (Emma 2026-07-05):
+    aggregate langlinks across EVERY fandom page whose ill matches the label, plus
+    the primary host page's categories / jawiki sitelink / existing-item check, and
+    (deep) the original QID from history."""
     label = item["label"]
+    langlinks, host_pages = {}, []
+    current_qid = ""
+    primary = None
     for title in search_pages(label):
+        text = fetch_content(title)
         time.sleep(READ_THROTTLE)
-        parsed = find_ill(fetch_content(title), label)
-        time.sleep(READ_THROTTLE)
+        parsed = find_ill(text, label)
         if parsed is None:
             continue
-        rec = {**item, "fandom_page": title,
-               "langlinks": parsed["langlinks"],
-               "current_ill_qid": parsed["qid"],
-               "recovered_qid": parsed["qid"] or None,
-               "qid_source": "current-ill" if parsed["qid"] else None,
-               "matched": True}
-        if not rec["recovered_qid"] and deep:
-            rq, ts = recover_original_qid(title, label)
-            if rq:
-                rec["recovered_qid"] = rq
-                rec["qid_source"] = f"history({ts})"
-        rec["qid_matches_rag"] = bool(rec["recovered_qid"]) and rec["recovered_qid"] == item["qid"]
-        return rec
-    return {**item, "fandom_page": None, "langlinks": {}, "current_ill_qid": "",
-            "recovered_qid": None, "qid_source": None, "matched": False,
-            "qid_matches_rag": False}
+        host_pages.append(title)
+        langlinks.update(parsed["langlinks"])       # union across pages
+        current_qid = current_qid or parsed["qid"]
+        if primary is None:
+            primary = {"title": title, "signals": page_signals(text)}
+
+    if primary is None:
+        return {**item, "fandom_page": None, "host_pages": [], "langlinks": {},
+                "current_ill_qid": "", "recovered_qid": None, "qid_source": None,
+                "page_wikidata_qid": None, "ja_sitelink": None, "categories": [],
+                "matched": False, "qid_matches_rag": False}
+
+    rec = {**item,
+           "fandom_page": primary["title"], "host_pages": host_pages,
+           "langlinks": langlinks, "current_ill_qid": current_qid,
+           "recovered_qid": current_qid or None,
+           "qid_source": "current-ill" if current_qid else None,
+           "page_wikidata_qid": primary["signals"]["page_wikidata_qid"],
+           "ja_sitelink": primary["signals"]["ja_sitelink"],
+           "categories": primary["signals"]["categories"],
+           "matched": True}
+    if not rec["recovered_qid"] and deep:
+        rq, ts = recover_original_qid(primary["title"], label)
+        time.sleep(READ_THROTTLE)
+        if rq:
+            rec["recovered_qid"] = rq
+            rec["qid_source"] = f"history({ts})"
+    rec["qid_matches_rag"] = bool(rec["recovered_qid"]) and rec["recovered_qid"] == item["qid"]
+    return rec
 
 
 def render(results):
     matched = [r for r in results if r["matched"]]
     with_ll = [r for r in matched if r["langlinks"]]
     validated = [r for r in matched if r["qid_matches_rag"]]
+    with_ja = [r for r in matched if r.get("ja_sitelink")]
     lines = ["# Deleted-item labels × fandom wiki — cross-reference\n",
-             "Auto-generated by `crossref_deleted_labels.py`. Recovers recreation content for "
-             "the deleted Immanuelle Wikidata items from the fandom `{{ill}}` templates "
-             "(read-only). The RAG gives QID+label; fandom gives the per-language langlinks + "
-             "host page, and (with `--deep`) the original QID from history.\n",
+             "Auto-generated by `crossref_deleted_labels.py`. Recovers as-thorough-as-possible "
+             "recreation info per deleted Immanuelle Wikidata item from the fandom `{{ill}}` "
+             "templates + host pages (read-only). The RAG gives QID+label+deletion-reason; "
+             "fandom gives per-language langlinks (union across all referencing pages), the host "
+             "page's categories + jawiki sitelink + the host page's own item (context — the "
+             "deleted entity is a sub-topic *on* that page, not the page itself), and "
+             "(`--deep`) the original QID from page history.\n",
              f"- Labels cross-referenced: **{len(results)}**",
              f"- Matched a fandom ill: **{len(matched)}**",
-             f"- Matched WITH per-language langlinks (recreation content): **{len(with_ll)}**",
-             f"- Original QID recovered from fandom AND matches the RAG deleted QID: **{len(validated)}**\n",
-             "| deleted QID (RAG) | label | fandom page | #langlinks | recovered QID | source | matches RAG |",
-             "|---|---|---|---|---|---|---|"]
+             f"- With per-language langlinks (recreation content): **{len(with_ll)}**",
+             f"- With a jawiki sitelink (notability anchor): **{len(with_ja)}**",
+             f"- Original QID recovered AND matches the RAG deleted QID: **{len(validated)}**\n",
+             "## Per-item (sorted by richest first)\n",
+             "Columns: `host item` = the fandom page's OWN wikidata item (context for the "
+             "relationship/sitelink, NOT the deleted entity — that entity is the ill target).\n",
+             "| deleted QID | label | del reason | fandom page | langs | ja sitelink | host item | recovered QID | src | ✓RAG | categories |",
+             "|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in sorted(results, key=lambda r: (-len(r["langlinks"]), not r["matched"])):
+        langs = ",".join(sorted(r["langlinks"])) if r["langlinks"] else ""
+        cats = "; ".join(r.get("categories", [])[:4])
         lines.append(
-            f"| {r['qid']} | {md_cell(r['label'])} | {md_cell(r['fandom_page'])} "
-            f"| {len(r['langlinks'])} | {md_cell(r['recovered_qid'])} "
-            f"| {md_cell(r['qid_source'])} | {'✓' if r['qid_matches_rag'] else ''} |")
+            f"| {r['qid']} | {md_cell(r['label'])} | {md_cell(r.get('bucket'))} "
+            f"| {md_cell(r['fandom_page'])} | {md_cell(langs)} | {md_cell(r.get('ja_sitelink'))} "
+            f"| {md_cell(r.get('page_wikidata_qid'))} | {md_cell(r['recovered_qid'])} "
+            f"| {md_cell(r['qid_source'])} | {'✓' if r['qid_matches_rag'] else ''} | {md_cell(cats)} |")
     return "\n".join(lines) + "\n"
 
 
