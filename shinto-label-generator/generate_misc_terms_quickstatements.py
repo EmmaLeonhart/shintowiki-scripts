@@ -70,15 +70,17 @@ def main():
             continue
         kept.append(f"{qid} {en}")
         romaji = clean_name(en)
+        rom_src = f'romaji "{romaji}"'          # provenance: phonetic langs derive from this
         for lang in covered:
             if lang in existing or lang in ZH_CODES:
                 continue
             lab = bare_name(lang, romaji, ja, ko_mode="phonetic")
             if lab:
-                lines.append((qid, lang, lab))
+                lines.append((qid, lang, lab, rom_src))
+        zh_src = f'ja kanji "{ja}"'             # provenance: CJK derives from the kanji
         for code, lab in zh_map(ja).items():
             if code in covered and code not in existing and lab:
-                lines.append((qid, code, lab))
+                lines.append((qid, code, lab, zh_src))
 
     outdir = os.path.join(HERE, "quickstatements")
     os.makedirs(outdir, exist_ok=True)

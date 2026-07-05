@@ -57,14 +57,17 @@ Annotate each generated label line with the source it derives from, as a `# <sou
 comment line (drip selector + submitter skip `#`, so it never reaches Wikidata; same
 pattern generate_indonesian_proposals.py already uses). FOUNDATION SHIPPED: `write_qs`
 now emits a provenance comment for 4-tuple `(qid, lang, label, source)` rows
-(backward-compatible; tested), and `generate_kami_quickstatements.py` is wired
-(phonetic ← `romaji "…"`, CJK ← `ja kanji "…"`). CI regen adds the comments to
-`kami_labels.txt` on next run. ROLLOUT (thread a per-label `source` 4th element):
-the 7 other write_qs users — buddhist, human, misc_terms, province, text, shrine_rank,
-courtrank_buddhist — then the custom-loop generators korean (hanja vs koreanize) and
-chinese (ja kanji) and multilang (id/en source label). One generator per tick is fine;
-each is a mechanical 3-tuple→4-tuple change. Note: each wired file ~doubles in line
-count on regen (a comment per label) — that is the intended "annotate output lines".
+(backward-compatible; tested). WIRED so far (phonetic ← `romaji "…"`, CJK ←
+`ja kanji "…"`, ko-hanja ← `ja kanji "…" (hanja)`): kami, **human, misc_terms,
+shrine_rank, courtrank_buddhist** (2026-07-05). CI regen adds the comments to those
+files on next run. ROLLOUT REMAINING (thread a per-label `source` 4th element): the
+3 other write_qs users — **buddhist** (3 branches: JP-romaji / Sanskrit-verbatim /
+CJK — use `Sanskrit "…"` for the Sanskrit branch), **province**, **text** — then the
+custom-loop generators korean (hanja vs koreanize) and chinese (ja kanji) and multilang
+(id/en source label). One generator per tick is fine; each is a mechanical
+3-tuple→4-tuple change (remember to fix each generator's sample-print loop, which
+unpacks 3-tuples). Note: each wired file ~doubles in line count on regen (a comment per
+label) — that is the intended "annotate output lines".
 (Sanskrit-engine polish DONE: Greek double-nasal νντ→ντ; Arabic/Perso-Arabic/Hebrew
 word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he אינדרא.)
 

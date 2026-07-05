@@ -50,23 +50,27 @@ def main():
         ja = d["ja"]
         existing = d["langs"]
         romaji = romaji_source(d["en"], ja)
+        hanja_src = f'ja kanji "{ja}" (hanja)'   # ko here is a sino-Korean reading
+        zh_src = f'ja kanji "{ja}"'               # CJK derives from the kanji
         if romaji:
+            rom_src = f'romaji "{romaji}"'        # phonetic langs derive from this
             for lang in covered:
                 if lang in existing or lang in ZH_CODES:
                     continue
                 lab = bare_name(lang, romaji, ja, ko_mode="hanja")
                 if lab:
-                    lines.append((qid, lang, lab))
+                    src = hanja_src if lang == "ko" else rom_src
+                    lines.append((qid, lang, lab, src))
                     per_lang[lang] = per_lang.get(lang, 0) + 1
         elif "ko" in covered and "ko" not in existing:
             # no romaji, but the kanji still yields a sino-Korean reading
             lab = bare_name("ko", "", ja, ko_mode="hanja")
             if lab:
-                lines.append((qid, "ko", lab))
+                lines.append((qid, "ko", lab, hanja_src))
                 per_lang["ko"] = per_lang.get("ko", 0) + 1
         for code, lab in zh_map(ja).items():
             if code in covered and code not in existing and lab:
-                lines.append((qid, code, lab))
+                lines.append((qid, code, lab, zh_src))
                 per_lang[code] = per_lang.get(code, 0) + 1
 
     outdir = os.path.join(HERE, "quickstatements")
@@ -78,7 +82,7 @@ def main():
     print(f"  {len(items)} rank items.")
     print("\n--- sample ---")
     shown = 0
-    for qid, lang, lab in lines:
+    for qid, lang, lab, *_ in lines:
         if lang in ("de", "ru", "el", "hi", "ar", "zh", "ko", "tok") and shown < 24:
             print(f"  {qid:12s} {lang:6s} | {lab}")
             shown += 1

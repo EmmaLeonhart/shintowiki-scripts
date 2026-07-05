@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Provenance rollout: human / misc_terms / shrine_rank / courtrank wired
+
+Continued the provenance-comment rollout (queue "Active" item), 4 more write_qs
+generators wired to emit `# <source>` provenance: human, misc_terms, shrine_rank,
+courtrank_buddhist. Sources: phonetic langs ← `romaji "…"`, CJK ← `ja kanji "…"`, and
+ko-under-hanja-mode ← `ja kanji "…" (hanja)` (shrine_rank/courtrank use ko_mode="hanja",
+so ko's source is the kanji reading, not romaji — set accordingly). Also fixed each
+generator's sample-print loop that unpacked 3-tuples (would crash on the 4-tuples,
+after write_qs had already written correct output) — human's fragile
+lines.index()-based counter replaced with a simple counter. Import-checked all 4; the
+write_qs 4-tuple path is already tested; CI regen applies the comments. Remaining:
+buddhist (3 branches), province, text, then korean/chinese/multilang. Suite 165.
+
 ## 2026-07-05 — QuickStatements provenance comments: foundation + kami wired
 
 Translation tier being closed, promoted the next label-generator-horizon todo item

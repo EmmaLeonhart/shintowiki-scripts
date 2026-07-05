@@ -48,20 +48,24 @@ def gen(qids, ko_mode, outname, covered):
     for qid, d in items.items():
         ja, en, existing = d["ja"], d["en"], d["langs"]
         romaji = romaji_source(en, ja)
+        zh_src = f'ja kanji "{ja}"'                # CJK derives from the kanji
+        hanja_src = f'ja kanji "{ja}" (hanja)'    # sino-Korean reading of the kanji
         if romaji:
+            rom_src = f'romaji "{romaji}"'         # phonetic langs derive from this
             for lang in covered:
                 if lang in existing or lang in ZH_CODES:
                     continue
                 lab = bare_name(lang, romaji, ja, ko_mode=ko_mode)
                 if lab:
-                    lines.append((qid, lang, lab)); per_lang[lang] = per_lang.get(lang, 0) + 1
+                    src = hanja_src if (lang == "ko" and ko_mode == "hanja") else rom_src
+                    lines.append((qid, lang, lab, src)); per_lang[lang] = per_lang.get(lang, 0) + 1
         elif ko_mode == "hanja" and "ko" in covered and "ko" not in existing:
             lab = bare_name("ko", "", ja, ko_mode="hanja")
             if lab:
-                lines.append((qid, "ko", lab)); per_lang["ko"] = per_lang.get("ko", 0) + 1
+                lines.append((qid, "ko", lab, hanja_src)); per_lang["ko"] = per_lang.get("ko", 0) + 1
         for code, lab in zh_map(ja).items():
             if code in covered and code not in existing and lab:
-                lines.append((qid, code, lab)); per_lang[code] = per_lang.get(code, 0) + 1
+                lines.append((qid, code, lab, zh_src)); per_lang[code] = per_lang.get(code, 0) + 1
     outdir = os.path.join(HERE, "quickstatements")
     os.makedirs(outdir, exist_ok=True)
     outpath = os.path.join(outdir, outname)

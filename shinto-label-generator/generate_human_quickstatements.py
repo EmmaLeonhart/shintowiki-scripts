@@ -54,15 +54,17 @@ def main():
             continue
         kept.append(f"{qid} {en}")
         romaji = clean_name(en)
+        rom_src = f'romaji "{romaji}"'          # provenance: phonetic langs derive from this
         for lang in covered:
             if lang in existing or lang in ZH_CODES:
                 continue
             lab = bare_name(lang, romaji, ja, ko_mode="phonetic")
             if lab:
-                lines.append((qid, lang, lab)); per_lang[lang] = per_lang.get(lang, 0) + 1
+                lines.append((qid, lang, lab, rom_src)); per_lang[lang] = per_lang.get(lang, 0) + 1
+        zh_src = f'ja kanji "{ja}"'             # provenance: CJK derives from the kanji
         for code, lab in zh_map(ja).items():
             if code in covered and code not in existing and lab:
-                lines.append((qid, code, lab)); per_lang[code] = per_lang.get(code, 0) + 1
+                lines.append((qid, code, lab, zh_src)); per_lang[code] = per_lang.get(code, 0) + 1
 
     outdir = os.path.join(HERE, "quickstatements")
     os.makedirs(outdir, exist_ok=True)
@@ -71,10 +73,12 @@ def main():
     print(f"\nKept {len(kept)} Japanese people -> {len(lines)} labels ({len(per_lang)} langs) -> {outpath}")
     print(f"Skipped {len(skipped)} (foreign/non-name): {skipped}")
     print("\nsample:")
-    for qid, lang, lab in lines:
+    shown = 0
+    for qid, lang, lab, *_ in lines:
         if lang in ("ru", "el", "hi", "ko", "zh") and lab:
             print(f"  {qid} {lang}: {lab}")
-            if len([1 for _ in lines[:lines.index((qid,lang,lab))+1]]) > 12:
+            shown += 1
+            if shown > 12:
                 break
 
 
