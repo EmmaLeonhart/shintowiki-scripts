@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — QA audit: fixed 692 drip-order label collisions (text vs shikinaisha)
+
+Audited every `quickstatements/*.txt` category file for the actual defect that
+matters in the drip pool: the same `(qid, lang)` proposed with DIFFERENT values by
+two generators, so which label lands is decided by random drip order. Found 693 such
+conflicts, all between `text_labels.txt` and `shikinaisha_lists.txt`: both were
+labelling the 69 "List of Shikinaisha in X Province" items. The generic text
+labeller only transliterated their NAME; the dedicated, hand-authored
+`generate_shikinaisha_list_quickstatements.py` emits proper per-language descriptive
+list-titles ("Liste der Shikinaisha in der Provinz Yamashiro"). Fix: the text
+generator now cedes the 69 list items (matched by the "List of Shikinaisha in"
+en-title prefix — precise: hits exactly those 69, keeps the parent text Engishiki
+Jinmyōchō). 693 → 3 residual conflicts, all the parent in cs/sl/lt, differing only
+by capitalisation (a benign tie both generators legitimately produce; not worth
+touching Emma's hand-built shikinaisha generator). Added a file-based regression
+test asserting no cross-file value conflicts (parent exempted). Suite 141 → 142.
+(Separately noted, not fixed: 48 collisions on the single dual-classified item
+Q10928586 "Ikasuri no Kami" — kami bare-name vs shrine-affixed name from the older
+shrine pipeline; one item, a data-modelling question, left alone.)
+
 ## 2026-07-04 — Sanskrit engine hardened: tests + Cyrillic/Greek capitalisation
 
 `tests/test_sanskrit_translit.py` (9 tests) locks in the engine that had been

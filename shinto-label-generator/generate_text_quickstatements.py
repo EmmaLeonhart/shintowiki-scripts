@@ -103,11 +103,25 @@ def labels_for_item(en, ja, missing):
 def main():
     _utf8()
     rows = []
+    skipped_lists = 0
     with open(SRC, encoding="utf-8") as f:
         for row in csv.DictReader(f, delimiter="\t"):
-            if re.match(r"^Q\d+$", row.get("qid", "")):
-                rows.append(row)
-    print(f"texts.tsv: {len(rows)} items")
+            if not re.match(r"^Q\d+$", row.get("qid", "")):
+                continue
+            # The 69 "List of Shikinaisha in X Province" items are LIST articles,
+            # not plain texts: the dedicated generate_shikinaisha_list_quickstatements.py
+            # owns them and emits proper per-language descriptive list-titles
+            # ("Liste der Shikinaisha in der Provinz Yamashiro"). This generic
+            # labeller would only transliterate their NAME, colliding with the
+            # dedicated file in the drip pool with a worse value. Cede them.
+            # (The parent Engishiki Jinmyōchō, Q11064932, is a genuine text and
+            # stays here — its en title has no "List of Shikinaisha in" prefix.)
+            if row.get("en", "").startswith("List of Shikinaisha in"):
+                skipped_lists += 1
+                continue
+            rows.append(row)
+    print(f"texts.tsv: {len(rows)} items "
+          f"({skipped_lists} Shikinaisha-list items ceded to the dedicated generator)")
 
     info = fetch_labels([r["qid"] for r in rows])
 

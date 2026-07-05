@@ -52,3 +52,47 @@ def test_target_langs_excludes_sources():
     t = target_langs()
     assert "ja" not in t and "en" not in t and "mul" not in t
     assert "de" in t and "zh" in t and "ko" in t
+
+
+# --- Drip-collision regression (2026-07-04) --------------------------------
+# The generic text labeller and the dedicated Shikinaisha-list generator both
+# used to emit labels for the 69 "List of Shikinaisha in X" items with DIFFERENT
+# values (bare name-transliteration vs a proper descriptive list-title), so which
+# one landed depended on random drip order. The text generator now cedes those 69
+# items. Guard: no two category .txt files may propose DIFFERENT values for the
+# same (qid, lang). Only benign exception — the parent Engishiki Jinmyōchō, whose
+# name both files legitimately transliterate, differing only by capitalization.
+_QS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                       "quickstatements")
+_CATEGORY_FILES = [
+    "kami_labels.txt", "buddhist_deity_labels.txt", "province_labels.txt",
+    "human_labels.txt", "text_labels.txt", "misc_term_labels.txt",
+    "shikinaisha_lists.txt", "courtrank_labels.txt", "courtrank_translations.txt",
+    "concept_translations.txt", "property_translations.txt",
+]
+_COLLISION_EXEMPT_QIDS = {"Q11064932"}  # Engishiki Jinmyōchō (capitalisation tie)
+
+
+def test_no_conflicting_labels_across_category_files():
+    seen = {}  # (qid, lang) -> (value, filename)
+    conflicts = []
+    for name in _CATEGORY_FILES:
+        path = os.path.join(_QS_DIR, name)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                line = line.rstrip("\n")
+                if not line.strip():
+                    continue
+                parts = line.split("\t")
+                if len(parts) < 3 or not parts[1].startswith("L"):
+                    continue
+                qid, lang, val = parts[0], parts[1], parts[2]
+                key = (qid, lang)
+                if key in seen and seen[key][0] != val and qid not in _COLLISION_EXEMPT_QIDS:
+                    conflicts.append((key, seen[key], (val, name)))
+                seen.setdefault(key, (val, name))
+    assert not conflicts, (
+        f"{len(conflicts)} (qid,lang) proposed with different values across "
+        f"category files (drip-order non-determinism); e.g. {conflicts[:3]}")
