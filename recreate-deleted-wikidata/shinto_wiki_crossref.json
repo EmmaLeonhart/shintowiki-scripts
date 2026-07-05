@@ -1,0 +1,3984 @@
+[
+ {
+  "qid": "Q135583892",
+  "label": "Taioshin Sen Chintaku Reifu no Kami",
+  "size": 255,
+  "bucket": "empty-item",
+  "fandom_page": "Hoshida Myōkengū",
+  "langlinks": {
+   "ja": "太上神仙鎮宅霊符神"
+  },
+  "current_ill_qid": "Q135583892",
+  "recovered_qid": "Q135583892",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135579706",
+  "label": "Niwa-tsume no Mikoto",
+  "size": 311,
+  "bucket": "empty-item",
+  "fandom_page": "Takeminakata & Minomikotohikokamiwake Shrine",
+  "langlinks": {
+   "ja": "庭津女命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579705",
+  "label": "Mori-no-Kami",
+  "size": 375,
+  "bucket": "empty-item",
+  "fandom_page": "Kawara Shrine (Gekū)",
+  "langlinks": {
+   "ja": "木神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579704",
+  "label": "Kawa-no-Kami",
+  "size": 376,
+  "bucket": "empty-item",
+  "fandom_page": "Kawara Shrine (Gekū)",
+  "langlinks": {
+   "ja": "川神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579622",
+  "label": "Melchior (Kamo clan)",
+  "size": 326,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579538",
+  "label": "Morimasa Hachiman Shrine",
+  "size": 321,
+  "bucket": "empty-item",
+  "fandom_page": "Jinjachō",
+  "langlinks": {
+   "ja": "森正八幡神社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579532",
+  "label": "Formation of Sect Shinto",
+  "size": 326,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579531",
+  "label": "Pre-Ainu theory",
+  "size": 315,
+  "bucket": "empty-item",
+  "fandom_page": "Japanese Indigenous Theory",
+  "langlinks": {
+   "ja": "プレ・アイヌ説"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579353",
+  "label": "Aogaki Publishing",
+  "size": 308,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579352",
+  "label": "Sengemichihiko",
+  "size": 378,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taishakyo Mission of Hawaii",
+  "langlinks": {
+   "ja": "千家達彦"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579351",
+  "label": "Miyao Shigemaru",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taishakyo Mission of Hawaii",
+  "langlinks": {
+   "ja": "宮王重丸"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579350",
+  "label": "Sengetakamochi",
+  "size": 378,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taishakyo Mission of Hawaii",
+  "langlinks": {
+   "ja": "千家尊有"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579349",
+  "label": "Sengetakaaki",
+  "size": 454,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taishakyo Mission of Hawaii",
+  "langlinks": {
+   "ja": "千家尊愛"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579348",
+  "label": "Miyao Katsuyoshi",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taishakyo Mission of Hawaii",
+  "langlinks": {
+   "ja": "宮王勝良"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579347",
+  "label": "Iyo Shichifukujin Sacred Sites",
+  "size": 330,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taisha Matsuyama Shrine",
+  "langlinks": {
+   "ja": "伊予七福神霊場"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579345",
+  "label": "Izumo-taisha Malaysia Religious Society",
+  "size": 351,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taisha Matsuyama Shrine",
+  "langlinks": {
+   "ja": "出雲大社マレーシア講社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579343",
+  "label": "Izumo-taisha Takachiho Church",
+  "size": 335,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taisha Matsuyama Shrine",
+  "langlinks": {
+   "ja": "出雲大社高千穂教会"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579341",
+  "label": "Izumo-taisha Karatsu Church",
+  "size": 330,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taisha Matsuyama Shrine",
+  "langlinks": {
+   "ja": "出雲大社唐津教会"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579340",
+  "label": "Izumo-taisha Doi Church",
+  "size": 326,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579328",
+  "label": "Izumo-taisha Sakunomiya Religious Society",
+  "size": 350,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taisha Matsuyama Shrine",
+  "langlinks": {
+   "ja": "出雲大社佐久之宮講社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579327",
+  "label": "Izumo-taisha Shonai Church",
+  "size": 329,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taisha Matsuyama Shrine",
+  "langlinks": {
+   "ja": "出雲大社庄内教会"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579325",
+  "label": "Izumo-taisha Hakodate Church",
+  "size": 331,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579324",
+  "label": "Izumo-taisha Misanjin Church",
+  "size": 331,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo Taisha Matsuyama Shrine",
+  "langlinks": {
+   "ja": "出雲大社三神教会"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579322",
+  "label": "Izumo-taisha Abashiri Church",
+  "size": 331,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579319",
+  "label": "Kohō Ōkami",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo-no-Iwai Shrine (Yorii Town)",
+  "langlinks": {
+   "ja": "古峰大神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579318",
+  "label": "Mitsumine Ōkami",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo-no-Iwai Shrine (Yorii Town)",
+  "langlinks": {
+   "ja": "三峰大神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579317",
+  "label": "Kōkage Ōkami",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": "Izumo-no-Iwai Shrine (Yorii Town)",
+  "langlinks": {
+   "ja": "蚕影大神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579309",
+  "label": "Iyozuhime no Mikoto",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Iyo Shrine",
+  "langlinks": {
+   "ja": "伊予津姫命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579308",
+  "label": "Iyozuhiko no Mikoto",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Iyo Shrine",
+  "langlinks": {
+   "ja": "伊予津彦命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579307",
+  "label": "Jippāramitsu-ji",
+  "size": 310,
+  "bucket": "empty-item",
+  "fandom_page": "Iwaya Myōken-gū",
+  "langlinks": {
+   "ja": "十波羅蜜寺"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579300",
+  "label": "Iwa tsuku wake no Mikoto",
+  "size": 315,
+  "bucket": "empty-item",
+  "fandom_page": "Iwatsukiwake no Mikoto",
+  "langlinks": {
+   "ja": "岩衝別命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579297",
+  "label": "Mitarashi-hime",
+  "size": 308,
+  "bucket": "empty-item",
+  "fandom_page": "Iwatsukiwake no Mikoto",
+  "langlinks": {
+   "ja": "三足比咩命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579296",
+  "label": "Nihon Kodai Shizoku Jinmei Jiten",
+  "size": 700,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579295",
+  "label": "Iwakia Betsuō Tomb",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Iwatsukiwake no Mikoto",
+  "langlinks": {
+   "ja": "磐城別王墓"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579270",
+  "label": "Myokenzan Kofun (Muko City)",
+  "size": 582,
+  "bucket": "empty-item",
+  "fandom_page": "Itsukahara Kofun",
+  "langlinks": {
+   "ja": "妙見山古墳 (向日市)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579269",
+  "label": "Sawaetahara-Rokurohiko-no-Kami",
+  "size": 336,
+  "bucket": "empty-item",
+  "fandom_page": "Itsuhayahime-no-Mikoto",
+  "langlinks": {
+   "ja": "佐和恵多良六老彦神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579265",
+  "label": "Gosha Gongen",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": "Isurugi Hikojinja",
+  "langlinks": {
+   "ja": "五社権現"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579264",
+  "label": "Isurugi Hiko",
+  "size": 471,
+  "bucket": "empty-item",
+  "fandom_page": "Isurugi Gongen",
+  "langlinks": {
+   "ja": "伊須流岐比古神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579263",
+  "label": "Five Gongen",
+  "size": 302,
+  "bucket": "empty-item",
+  "fandom_page": "Isurugi Gongen",
+  "langlinks": {
+   "ja": "五所権現"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579247",
+  "label": "Ontoku‐ji",
+  "size": 391,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579244",
+  "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+  "size": 376,
+  "bucket": "empty-item",
+  "fandom_page": "Isekisan Shrine",
+  "langlinks": {
+   "ja": "天照国照彦火明櫛玉饒早日命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579243",
+  "label": "calendar makers",
+  "size": 383,
+  "bucket": "empty-item",
+  "fandom_page": "Ise Calendar",
+  "langlinks": {
+   "ja": "暦師"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579242",
+  "label": "Azumi Inukai no Muraji",
+  "size": 316,
+  "bucket": "empty-item",
+  "fandom_page": "Inukaibe",
+  "langlinks": {
+   "ja": "阿曇犬養連"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579241",
+  "label": "Waka Inukai no Muraji",
+  "size": 312,
+  "bucket": "empty-item",
+  "fandom_page": "Inukaibe",
+  "langlinks": {
+   "ja": "若犬養連"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579240",
+  "label": "Ama Inukai no Muraji",
+  "size": 311,
+  "bucket": "empty-item",
+  "fandom_page": "Inukaibe",
+  "langlinks": {
+   "ja": "海犬養連"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579222",
+  "label": "Imajuku Kofun Group",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Imajuku Ōtsuka Kofun",
+  "langlinks": {
+   "ja": "今宿古墳群"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579221",
+  "label": "Suga-no-Sawa Gobyō Kofun",
+  "size": 325,
+  "bucket": "empty-item",
+  "fandom_page": "Ima Izumiguchi Hachiman-yama Kofun",
+  "langlinks": {
+   "ja": "菅ノ沢御廟古墳"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579220",
+  "label": "Suga-no-Sawa Kofun Cluster",
+  "size": 323,
+  "bucket": "empty-item",
+  "fandom_page": "Ima Izumiguchi Hachiman-yama Kofun",
+  "langlinks": {
+   "ja": "菅ノ沢古墳群"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579218",
+  "label": "Ne no Kuni",
+  "size": 304,
+  "bucket": "empty-item",
+  "fandom_page": "Ikutachi",
+  "langlinks": {
+   "ja": "根之堅州国"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579162",
+  "label": "Nozaki Oki-no-Kami Tsunayoshi",
+  "size": 329,
+  "bucket": "empty-item",
+  "fandom_page": "Hōtō Shrine",
+  "langlinks": {
+   "ja": "野崎隠岐守綱吉"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579157",
+  "label": "御鑰",
+  "size": 363,
+  "bucket": "empty-item",
+  "fandom_page": "Hōri",
+  "langlinks": {
+   "ja": "御鑰"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579154",
+  "label": "御匙",
+  "size": 289,
+  "bucket": "empty-item",
+  "fandom_page": "Hōri",
+  "langlinks": {
+   "ja": "御匙"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579148",
+  "label": "Iga-hiko",
+  "size": 370,
+  "bucket": "empty-item",
+  "fandom_page": "Hōri",
+  "langlinks": {
+   "ja": "伊賀彦"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579136",
+  "label": "Nishinohara Kofun Group",
+  "size": 320,
+  "bucket": "empty-item",
+  "fandom_page": "Hyōtan-zuka Kofun",
+  "langlinks": {
+   "ja": "西ノ原古墳群"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579132",
+  "label": "Hyōtan-tsuka Kofun (Shizuoka)",
+  "size": 439,
+  "bucket": "empty-item",
+  "fandom_page": "Hyōtan-zuka Kofun",
+  "langlinks": {
+   "ja": "瓢箪塚古墳 (静岡市)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579128",
+  "label": "Kamihamada Kofun Group",
+  "size": 319,
+  "bucket": "empty-item",
+  "fandom_page": "Hyōtan-zuka Kofun",
+  "langlinks": {
+   "ja": "上浜田古墳群"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579124",
+  "label": "Hyōtan-tsuka Kofun (Moka)",
+  "size": 432,
+  "bucket": "empty-item",
+  "fandom_page": "Hyōtan-zuka Kofun",
+  "langlinks": {
+   "ja": "瓢箪塚古墳 (真岡市)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579120",
+  "label": "Moriyama Hyōtan-yama Kofun",
+  "size": 327,
+  "bucket": "empty-item",
+  "fandom_page": "Hyōtan-yama Kofun",
+  "langlinks": {
+   "ja": "守山瓢箪山古墳"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579116",
+  "label": "Hozumi-Suzuki Clan Genealogy",
+  "size": 367,
+  "bucket": "empty-item",
+  "fandom_page": "Hozumi no Kujii",
+  "langlinks": {
+   "ja": "穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579080",
+  "label": "balneology",
+  "size": 442,
+  "bucket": "empty-item",
+  "fandom_page": "Hot Spring Bathing Instructor",
+  "langlinks": {
+   "de": "Balneologie",
+   "ja": "温泉医学",
+   "zh": "温泉医学"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579071",
+  "label": "health science",
+  "size": 450,
+  "bucket": "empty-item",
+  "fandom_page": "Hot Spring Bathing Instructor",
+  "langlinks": {
+   "de": "Gesundheitswissenschaft",
+   "ja": "健康学",
+   "zh": "健康学"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135579030",
+  "label": "Five Deities of Heaven, Earth, and Man",
+  "size": 335,
+  "bucket": "empty-item",
+  "fandom_page": "Homisuwajūgosho Shrine",
+  "langlinks": {
+   "ja": "天地人五行神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135578954",
+  "label": "Himuro Falls",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": "Himuro Gongen",
+  "langlinks": {
+   "ja": "氷室大滝"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551185",
+  "label": "Suitengu Dedication Fireworks Festival",
+  "size": 344,
+  "bucket": "empty-item",
+  "fandom_page": "Chikugo River Fireworks Festival",
+  "langlinks": {
+   "ja": "水天宮奉納花火大会"
+  },
+  "current_ill_qid": "Q135551185",
+  "recovered_qid": "Q135551185",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135551182",
+  "label": "東白川郡棚倉町八槻",
+  "size": 331,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551170",
+  "label": "Miyajima Kanzen-sai",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "宮島管絃祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551169",
+  "label": "Tokyo Hana Matsuri",
+  "size": 312,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "東京花祭り"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551168",
+  "label": "Benten Chigo",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "弁天稚児"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551167",
+  "label": "Nōnindō Matsuri",
+  "size": 314,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "能仁堂まつり"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551166",
+  "label": "Tokyo Jidai-sai",
+  "size": 309,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "東京時代祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551164",
+  "label": "Taishōjidai-sai",
+  "size": 310,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "大正時代祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551163",
+  "label": "Tenmon-sai",
+  "size": 297,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "天門祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551162",
+  "label": "Akama Shrine",
+  "size": 315,
+  "bucket": "empty-item",
+  "fandom_page": "Previous Emperor Festival",
+  "langlinks": {
+   "en": "Akama Shrine"
+  },
+  "current_ill_qid": "Q712617",
+  "recovered_qid": "Q712617",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551161",
+  "label": "Zuiki-sai",
+  "size": 299,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "ずいき祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551160",
+  "label": "Kagoshima Summer Matsuri",
+  "size": 324,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "かごしま夏祭り"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551159",
+  "label": "Yamanari Gion Matsuri",
+  "size": 318,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "山梨祇園祭り"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551158",
+  "label": "Taikō Matsuri",
+  "size": 301,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551157",
+  "label": "Mifune Matsuri",
+  "size": 301,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551156",
+  "label": "Yubune Matsuri – Hayabusa Procession",
+  "size": 347,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "流鏑馬祭・流鏑馬連行"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551155",
+  "label": "Hanayome Matsuri",
+  "size": 310,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "花嫁まつり"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551154",
+  "label": "Yanaginawa Matsuri",
+  "size": 312,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551153",
+  "label": "Mago Matsuri",
+  "size": 299,
+  "bucket": "empty-item",
+  "fandom_page": "Chigo",
+  "langlinks": {
+   "ja": "孫見祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551151",
+  "label": "rhyolitic welded tuff",
+  "size": 327,
+  "bucket": "empty-item",
+  "fandom_page": "Chest-shaped Sarcophagus",
+  "langlinks": {
+   "ja": "流紋岩質溶結凝灰岩"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551150",
+  "label": "rope attachment projections",
+  "size": 318,
+  "bucket": "empty-item",
+  "fandom_page": "Chest-shaped Sarcophagus",
+  "langlinks": {
+   "ja": "縄掛突起"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551149",
+  "label": "Benten-gū",
+  "size": 297,
+  "bucket": "empty-item",
+  "fandom_page": "Changes to deities in the Meiji period",
+  "langlinks": {
+   "ja": "弁天宮"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551148",
+  "label": "Kōshin-dō",
+  "size": 301,
+  "bucket": "empty-item",
+  "fandom_page": "Konrin-in",
+  "langlinks": {
+   "ja": "Kōshin-dō"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551147",
+  "label": "Jisshōji",
+  "size": 295,
+  "bucket": "empty-item",
+  "fandom_page": "Changes to deities in the Meiji period",
+  "langlinks": {
+   "ja": "実城寺"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551146",
+  "label": "Konomine-dera",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Changes to deities in the Meiji period",
+  "langlinks": {
+   "ja": "國軸山金峯山寺"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551145",
+  "label": "Kushimikenu-no-mikoto",
+  "size": 315,
+  "bucket": "empty-item",
+  "fandom_page": "Changes to deities in the Meiji period",
+  "langlinks": {
+   "ja": "櫛御気野命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551144",
+  "label": "Ishibuto Daigongen",
+  "size": 312,
+  "bucket": "empty-item",
+  "fandom_page": "Changes to deities in the Meiji period",
+  "langlinks": {
+   "ja": "石鈇大権現"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551142",
+  "label": "Nabeta Cave Tomb Cluster",
+  "size": 318,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551141",
+  "label": "Ishinuki Anakanon Cave Tomb Cluster",
+  "size": 338,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551140",
+  "label": "Ishinuki Nagino Cave Tomb Cluster",
+  "size": 336,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551139",
+  "label": "Kozuki Cave Tomb",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551138",
+  "label": "Mizumachi Site",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": "Bikuniyama Yokoanabo Cluster",
+  "langlinks": {
+   "en": "Mizumachi Site"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551134",
+  "label": "Shiroyama Cave Tomb Cluster",
+  "size": 321,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551133",
+  "label": "Takenami Site",
+  "size": 304,
+  "bucket": "empty-item",
+  "fandom_page": "Bikuniyama Yokoanabo Cluster",
+  "langlinks": {
+   "en": "Takenami Site"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551132",
+  "label": "Takatsuku Cave Tomb Cluster",
+  "size": 327,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551131",
+  "label": "Kamikonishi Cave Tomb Cluster",
+  "size": 329,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551129",
+  "label": "Kitsunedani Cave Tomb Cluster",
+  "size": 326,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551128",
+  "label": "Jūōmen Cave Tomb Cluster",
+  "size": 323,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551127",
+  "label": "Kitaema Cave Tomb Cluster",
+  "size": 322,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551126",
+  "label": "Todoroki Ravine Cave Tomb Cluster",
+  "size": 330,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551125",
+  "label": "Izumizaki Cave Tomb",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551123",
+  "label": "Kiyotosaku Cave Tomb",
+  "size": 317,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551121",
+  "label": "imitation mirrors",
+  "size": 312,
+  "bucket": "empty-item",
+  "fandom_page": "Bōseikyō",
+  "langlinks": {
+   "ja": "Bōseikyō"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551119",
+  "label": "Wa mirrors",
+  "size": 294,
+  "bucket": "empty-item",
+  "fandom_page": "Bōseikyō",
+  "langlinks": {
+   "ja": "和鏡"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551117",
+  "label": "Bunka 1",
+  "size": 297,
+  "bucket": "empty-item",
+  "fandom_page": "Bungo no Kuni Fudoki",
+  "langlinks": {
+   "ja": "文化元年"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551115",
+  "label": "Kansei 12",
+  "size": 298,
+  "bucket": "empty-item",
+  "fandom_page": "Bungo no Kuni Fudoki",
+  "langlinks": {
+   "ja": "寛政12年"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551112",
+  "label": "Kamibe Manyo",
+  "size": 374,
+  "bucket": "empty-item",
+  "fandom_page": "Awaga Daimyojin Mototsufumi",
+  "langlinks": {
+   "de": "Kamibe Manyo",
+   "ja": "神部万侶"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551111",
+  "label": "Kamibe Tsumuji",
+  "size": 381,
+  "bucket": "empty-item",
+  "fandom_page": "Awaga Daimyojin Mototsufumi",
+  "langlinks": {
+   "de": "Kamibe Tsumuji",
+   "ja": "神部都牟自"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551110",
+  "label": "Kamibe Kogui",
+  "size": 374,
+  "bucket": "empty-item",
+  "fandom_page": "Awaga Daimyojin Mototsufumi",
+  "langlinks": {
+   "de": "Kamibe Kogui",
+   "ja": "神部小椅"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551109",
+  "label": "Kamibe Futamibumi",
+  "size": 384,
+  "bucket": "empty-item",
+  "fandom_page": "Awaga Daimyojin Mototsufumi",
+  "langlinks": {
+   "de": "Kamibe Futamibumi",
+   "ja": "神部二身"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551108",
+  "label": "Kamibe Yukunaa",
+  "size": 378,
+  "bucket": "empty-item",
+  "fandom_page": "Awaga Daimyojin Mototsufumi",
+  "langlinks": {
+   "de": "Kamibe Yukunaa",
+   "ja": "神部宿奈"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551107",
+  "label": "Kamibe Kige",
+  "size": 372,
+  "bucket": "empty-item",
+  "fandom_page": "Awaga Daimyojin Mototsufumi",
+  "langlinks": {
+   "de": "Kamibe Kige",
+   "ja": "神部伎閇"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135551094",
+  "label": "Inari Festival",
+  "size": 301,
+  "bucket": "empty-item",
+  "fandom_page": "Annual event",
+  "langlinks": {
+   "ja": "稲荷祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550950",
+  "label": "Teiō Henki",
+  "size": 388,
+  "bucket": "empty-item",
+  "fandom_page": "City Offices (Tōji and Sai)",
+  "langlinks": {
+   "ja": "帝王編年記"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550949",
+  "label": "Inner Palace",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": "Chukain Temple",
+  "langlinks": {
+   "ja": "内裏外郭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550946",
+  "label": "Kyushu 36 Fudō Sacred Sites",
+  "size": 334,
+  "bucket": "empty-item",
+  "fandom_page": "Chinkoku-ji",
+  "langlinks": {
+   "ja": "九州三十六不動霊場"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550945",
+  "label": "Kyushu 88 Sacred Sites",
+  "size": 328,
+  "bucket": "empty-item",
+  "fandom_page": "Chinkoku-ji",
+  "langlinks": {
+   "ja": "九州八十八箇所霊場"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550944",
+  "label": "Chugoku Kannon Pilgrimage",
+  "size": 322,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550941",
+  "label": "33 Kannon Pilgrimage of Daisen-ji",
+  "size": 351,
+  "bucket": "empty-item",
+  "fandom_page": "Chimyō Gongen",
+  "langlinks": {
+   "ja": "大山寺三十三カ所地蔵めぐり"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550940",
+  "label": "Three Deities of Mount Daisen",
+  "size": 326,
+  "bucket": "empty-item",
+  "fandom_page": "Chimyō Gongen",
+  "langlinks": {
+   "ja": "大山三所権現"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550812",
+  "label": "Chikugo no Kuni Fudoki",
+  "size": 319,
+  "bucket": "empty-item",
+  "fandom_page": "Tsukushi no Iwai",
+  "langlinks": {
+   "ja": "筑後国風土記"
+  },
+  "current_ill_qid": "Q135550812",
+  "recovered_qid": "Q135550812",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135550808",
+  "label": "Chichibu Three Shrines",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Hodosan Shrine",
+  "langlinks": {
+   "ja": "秩父三社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550734",
+  "label": "Tatsuta-hime",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrine (Fujimi Town Yokomuro)",
+  "langlinks": {
+   "ja": "竜田姫命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550733",
+  "label": "Okutsuhime no Mikoto",
+  "size": 475,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrine (Fujimi Town Yokomuro)",
+  "langlinks": {
+   "ja": "奥津姫命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135550732",
+  "label": "Okutsuhiko no Mikoto",
+  "size": 475,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrine (Fujimi Town Yokomuro)",
+  "langlinks": {
+   "ja": "奥津彦命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135524958",
+  "label": "Bouryuu",
+  "size": 290,
+  "bucket": "empty-item",
+  "fandom_page": "Tanba clan",
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135524731",
+  "label": "Ōnakatomi no Tamenaka",
+  "size": 382,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135524730",
+  "label": "Ōnakatomi no Nakabusa",
+  "size": 382,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506353",
+  "label": "Nanatsumori Shrine",
+  "size": 312,
+  "bucket": "empty-item",
+  "fandom_page": "Kohoriheno Shrine",
+  "langlinks": {},
+  "current_ill_qid": "Q135069409",
+  "recovered_qid": "Q135069409",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506335",
+  "label": "Kumano Shōjō Gongen",
+  "size": 318,
+  "bucket": "empty-item",
+  "fandom_page": "Kumata Shrine",
+  "langlinks": {
+   "ja": "熊野證誠権現"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506332",
+  "label": "Kyoto's Three Kumano Shrines",
+  "size": 322,
+  "bucket": "empty-item",
+  "fandom_page": "Kumano Nyakuōji Shrine",
+  "langlinks": {
+   "ja": "京都三熊野"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506327",
+  "label": "Kumano Pilgrimage",
+  "size": 308,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506292",
+  "label": "Fugen-ji (Hashimoto, Wakayama)",
+  "size": 339,
+  "bucket": "empty-item",
+  "fandom_page": "Koyasu Jizō Temple",
+  "langlinks": {
+   "ja": "普賢寺 (橋本市菖蒲谷)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506290",
+  "label": "Hōrin-ji (Wakayama)",
+  "size": 323,
+  "bucket": "empty-item",
+  "fandom_page": "Koyasu Jizō Temple",
+  "langlinks": {
+   "ja": "法輪寺 (和歌山市)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506282",
+  "label": "Kōyasan Campaign",
+  "size": 311,
+  "bucket": "empty-item",
+  "fandom_page": "Koyasu Jizō Temple",
+  "langlinks": {
+   "ja": "高野山攻め"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135506253",
+  "label": "Kamado Town",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "Kotohira shrines",
+  "langlinks": {
+   "ja": "釜戸町2510番地の1"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135505981",
+  "label": "Akagi Shrine (Kitakatsushika Town Jonanmu)",
+  "size": 363,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (渋川市北橘町上南室)"
+  },
+  "current_ill_qid": "Q135505981",
+  "recovered_qid": "Q135505981",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505979",
+  "label": "Akagi Shrine (Kitakatsushika Town Yasaki)",
+  "size": 359,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (渋川市北橘町八崎)"
+  },
+  "current_ill_qid": "Q135505979",
+  "recovered_qid": "Q135505979",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505974",
+  "label": "Akagi Shrine (Bōjizuka Town)",
+  "size": 344,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (館林市傍示塚町)"
+  },
+  "current_ill_qid": "Q135505974",
+  "recovered_qid": "Q135505974",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505970",
+  "label": "Akagi Shrine (Tone Town Oigami)",
+  "size": 349,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (沼田市利根町老神)"
+  },
+  "current_ill_qid": "Q135505970",
+  "recovered_qid": "Q135505970",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505965",
+  "label": "Akagi Shrine (Sakai Hiratsuka Town)",
+  "size": 350,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (伊勢崎市境平塚)"
+  },
+  "current_ill_qid": "Q135505965",
+  "recovered_qid": "Q135505965",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505957",
+  "label": "Akagi Shrine (Kunisada Town)",
+  "size": 343,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (伊勢崎市国定町)"
+  },
+  "current_ill_qid": "Q135505957",
+  "recovered_qid": "Q135505957",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505955",
+  "label": "Akagi Shrine (Miyamae Town)",
+  "size": 342,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (伊勢崎市宮前町)"
+  },
+  "current_ill_qid": "Q135505955",
+  "recovered_qid": "Q135505955",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505953",
+  "label": "Akagi Shrine (Kurohone Shimo Tazawa Town)",
+  "size": 365,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (桐生市黒保根町下田沢)"
+  },
+  "current_ill_qid": "Q135505953",
+  "recovered_qid": "Q135505953",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505951",
+  "label": "Akagi Shrine (Kurohone Yagihara Town)",
+  "size": 361,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (桐生市黒保根町八木原)"
+  },
+  "current_ill_qid": "Q135505951",
+  "recovered_qid": "Q135505951",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505949",
+  "label": "Akagi Shrine (Niisato Takei Town)",
+  "size": 351,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (桐生市新里町武井)"
+  },
+  "current_ill_qid": "Q135505949",
+  "recovered_qid": "Q135505949",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505947",
+  "label": "Akagi Shrine (Niisato Itabashi Town)",
+  "size": 354,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (桐生市新里町板橋)"
+  },
+  "current_ill_qid": "Q135505947",
+  "recovered_qid": "Q135505947",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505946",
+  "label": "Akagi Shrine (Kawauchi 1-chome)",
+  "size": 345,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135505943",
+  "label": "Akagi Shrine (Kiryū-shi Kawauchi-chō 5-chōme)",
+  "size": 345,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135505941",
+  "label": "Akagi Shrine (Kawauchi 2nd Town)",
+  "size": 345,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (桐生市川内町2)"
+  },
+  "current_ill_qid": "Q135505941",
+  "recovered_qid": "Q135505941",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505939",
+  "label": "Akagi Shrine (Shimotaki Town)",
+  "size": 341,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (高崎市下滝町)"
+  },
+  "current_ill_qid": "Q135505939",
+  "recovered_qid": "Q135505939",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505937",
+  "label": "Akagi Shrine (Watanuki Town)",
+  "size": 340,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (高崎市綿貫町)"
+  },
+  "current_ill_qid": "Q135505937",
+  "recovered_qid": "Q135505937",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505935",
+  "label": "Akagi Shrine (Iwanohana Town)",
+  "size": 341,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135505933",
+  "label": "Akagi Shrine (Miyaji Town)",
+  "size": 338,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市宮地町)"
+  },
+  "current_ill_qid": "Q135505933",
+  "recovered_qid": "Q135505933",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505932",
+  "label": "Akagi Shrine (Fujimi Town Tajima)",
+  "size": 354,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市富士見町田島)"
+  },
+  "current_ill_qid": "Q135505932",
+  "recovered_qid": "Q135505932",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505930",
+  "label": "Akagi Shrine (Fujimi Town Yone)",
+  "size": 352,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市富士見町米野)"
+  },
+  "current_ill_qid": "Q135505930",
+  "recovered_qid": "Q135505930",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505928",
+  "label": "Akagi Shrine (Fujimi Town Urushikubo)",
+  "size": 358,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市富士見町漆窪)"
+  },
+  "current_ill_qid": "Q135505928",
+  "recovered_qid": "Q135505928",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505926",
+  "label": "Akagi Shrine (Sekine Town)",
+  "size": 338,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市関根町)"
+  },
+  "current_ill_qid": "Q135505926",
+  "recovered_qid": "Q135505926",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505924",
+  "label": "Akagi Shrine (Shimo Koide Town)",
+  "size": 346,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市下小出町)"
+  },
+  "current_ill_qid": "Q135505924",
+  "recovered_qid": "Q135505924",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505923",
+  "label": "Akagi Shrine (Kameizumi Town)",
+  "size": 341,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市亀泉町)"
+  },
+  "current_ill_qid": "Q135505923",
+  "recovered_qid": "Q135505923",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505921",
+  "label": "Akagi Shrine (Arai Town)",
+  "size": 336,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市新井町)"
+  },
+  "current_ill_qid": "Q135505921",
+  "recovered_qid": "Q135505921",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135505918",
+  "label": "Akagi Shrine (Araguchi Town)",
+  "size": 340,
+  "bucket": "empty-item",
+  "fandom_page": "Akagi Shrines",
+  "langlinks": {
+   "ja": "赤城神社 (前橋市荒口町)"
+  },
+  "current_ill_qid": "Q135505918",
+  "recovered_qid": "Q135505918",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135504611",
+  "label": "Nagataki Hakusan Shrine",
+  "size": 320,
+  "bucket": "empty-item",
+  "fandom_page": "Hakusan Nakai Shrine",
+  "langlinks": {},
+  "current_ill_qid": "Q135505741",
+  "recovered_qid": "Q135505741",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504575",
+  "label": "Ritual Site",
+  "size": 383,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504561",
+  "label": "Candra-sūrya-pradīpa",
+  "size": 403,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504559",
+  "label": "Mononobe no Soshin",
+  "size": 309,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504457",
+  "label": "The Twelve Heavenly Kings",
+  "size": 316,
+  "bucket": "empty-item",
+  "fandom_page": "Goryō Shrine (Miyamae, Fujisawa)",
+  "langlinks": {
+   "ja": "十二天王"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504358",
+  "label": "Gojō Castle Tenjin Shrine",
+  "size": 412,
+  "bucket": "empty-item",
+  "fandom_page": "Gojō Tenjin Shrine",
+  "langlinks": {
+   "ja": "五城天神社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504314",
+  "label": "Ōtenma-chō Tennō Festival",
+  "size": 328,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "大伝馬町天王祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504311",
+  "label": "Minami Tenma-chō Tennō Festival",
+  "size": 333,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "南伝馬町天王祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504309",
+  "label": "Hosoe Shrine Gion Festival",
+  "size": 326,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "細江神社祇園祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504307",
+  "label": "Yamanashi Gion Festival",
+  "size": 317,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "山梨祇園祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504305",
+  "label": "Horikome Naked Festival",
+  "size": 320,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "堀米の裸祭り"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504303",
+  "label": "Fujioka Festival",
+  "size": 310,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "藤岡まつり"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504301",
+  "label": "Yasaka Shrine Gion Festival (Ryugasaki)",
+  "size": 339,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "八坂神社祇園祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504297",
+  "label": "Tanbayama Gion Festival",
+  "size": 320,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "丹波山祇園祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504293",
+  "label": "Enoshima Tenno Festival",
+  "size": 320,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "江ノ島天王祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504287",
+  "label": "Suga Shrine Gion Festival",
+  "size": 325,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "須賀神社祇園祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504283",
+  "label": "Noheji Gion Festival",
+  "size": 317,
+  "bucket": "empty-item",
+  "fandom_page": "Gion and Tenno Festivals",
+  "langlinks": {
+   "ja": "野辺地祇園祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504279",
+  "label": "Cleyera japonica var. grandis",
+  "size": 461,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504275",
+  "label": "Daikaku-ji (Gifu)",
+  "size": 317,
+  "bucket": "empty-item",
+  "fandom_page": "Gifu Shichifukujin",
+  "langlinks": {
+   "ja": "大覚寺 (岐阜市)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504271",
+  "label": "Kisshō-ji (Gifu)",
+  "size": 317,
+  "bucket": "empty-item",
+  "fandom_page": "Gifu Shichifukujin",
+  "langlinks": {
+   "ja": "吉祥寺 (岐阜市)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504266",
+  "label": "JR Ise Sangu Line",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": "Gekū Sando",
+  "langlinks": {
+   "ja": "JR参宮線"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504246",
+  "label": "Mitsurugi Shrine Summer Grand Festival",
+  "size": 342,
+  "bucket": "empty-item",
+  "fandom_page": "Futon Daiko",
+  "langlinks": {
+   "ja": "御劔神社 夏季大祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504200",
+  "label": "Futagoyama Park (disambiguation)",
+  "size": 344,
+  "bucket": "empty-item",
+  "fandom_page": "Futagoyama Kofun",
+  "langlinks": {
+   "ja": "二子山公園 (曖昧さ回避)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504180",
+  "label": "Ayato Night Nembutsu and Bon Odori",
+  "size": 340,
+  "bucket": "empty-item",
+  "fandom_page": "Atobe Dancing Nembutsu",
+  "langlinks": {
+   "en": "Ayato Night Nembutsu and Bon Odori"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504178",
+  "label": "Wago Nembutsu Odori",
+  "size": 316,
+  "bucket": "empty-item",
+  "fandom_page": "Atobe Dancing Nembutsu",
+  "langlinks": {
+   "en": "Wago Nembutsu Odori"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504173",
+  "label": "Kotsuka Shrine",
+  "size": 308,
+  "bucket": "empty-item",
+  "fandom_page": "Furutsuka Kofun",
+  "langlinks": {
+   "ja": "古津賀神社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504171",
+  "label": "Kuroshima Isone hime",
+  "size": 323,
+  "bucket": "empty-item",
+  "fandom_page": "Furutama-no-Mikoto",
+  "langlinks": {
+   "ja": "黒島磯根御気姫命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135504169",
+  "label": "Amanosakitama no mikoto",
+  "size": 391,
+  "bucket": "empty-item",
+  "fandom_page": "Furutama-no-Mikoto",
+  "langlinks": {
+   "ja": "天前玉命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503431",
+  "label": "Color Index",
+  "size": 308,
+  "bucket": "empty-item",
+  "fandom_page": "Bengala",
+  "langlinks": {
+   "ja": "カラーカード"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503427",
+  "label": "Mineral spring bathhouse",
+  "size": 462,
+  "bucket": "empty-item",
+  "fandom_page": "Bath tax",
+  "langlinks": {
+   "de": "Mineralquellenbad",
+   "ja": "鉱泉浴場",
+   "zh": "矿泉浴场"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503424",
+  "label": "Bath Melody",
+  "size": 445,
+  "bucket": "empty-item",
+  "fandom_page": "Bath Additive",
+  "langlinks": {
+   "de": "Bath Melody",
+   "ja": "バスメロディー",
+   "zh": "浴曲"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503423",
+  "label": "Asahi Shōnō",
+  "size": 449,
+  "bucket": "empty-item",
+  "fandom_page": "Bath Additive",
+  "langlinks": {
+   "de": "Asahi Sōnō",
+   "ja": "アサヒ晶脳",
+   "zh": "旭日晶脑"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503420",
+  "label": "Young Venus",
+  "size": 455,
+  "bucket": "empty-item",
+  "fandom_page": "Bath Additive",
+  "langlinks": {
+   "de": "Young Venus",
+   "ja": "ヤングビーナス",
+   "zh": "年轻维纳斯"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503417",
+  "label": "Bath Roman",
+  "size": 444,
+  "bucket": "empty-item",
+  "fandom_page": "Bath Additive",
+  "langlinks": {
+   "de": "Bath Roman",
+   "ja": "バスロマン",
+   "zh": "泡澡罗曼"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503410",
+  "label": "herbal baths",
+  "size": 433,
+  "bucket": "empty-item",
+  "fandom_page": "Bath Additive",
+  "langlinks": {
+   "de": "Kräuterbäder",
+   "ja": "薬湯",
+   "zh": "药汤"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503405",
+  "label": "Tsumatsuhime no Kami",
+  "size": 311,
+  "bucket": "empty-item",
+  "fandom_page": "Awata Shrine",
+  "langlinks": {
+   "ja": "抓津媛神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503402",
+  "label": "Oyayatsuhime no Kami",
+  "size": 314,
+  "bucket": "empty-item",
+  "fandom_page": "Awata Shrine",
+  "langlinks": {
+   "ja": "大屋津媛神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503392",
+  "label": "Tōritsu Shōdai-ji",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": "August 3 (Lunisolar)",
+  "langlinks": {
+   "ja": "唐律招提寺"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503382",
+  "label": "Intercalation (timekeeping)",
+  "size": 393,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503346",
+  "label": "Protective Forest for Navigation",
+  "size": 332,
+  "bucket": "empty-item",
+  "fandom_page": "Mount Aonomine",
+  "langlinks": {
+   "ja": "航行目標保安林"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503326",
+  "label": "Fuyumatsuri",
+  "size": 295,
+  "bucket": "empty-item",
+  "fandom_page": "Annual event",
+  "langlinks": {
+   "ja": "鞴祭"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503290",
+  "label": "Totsumachine no Kami",
+  "size": 314,
+  "bucket": "empty-item",
+  "fandom_page": "Ame-no-Hibaraooshinadomi-no-Kami",
+  "langlinks": {
+   "ja": "遠津待根神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135503287",
+  "label": "Wakajinzume no Kami",
+  "size": 310,
+  "bucket": "empty-item",
+  "fandom_page": "Ame-no-Hibaraooshinadomi-no-Kami",
+  "langlinks": {
+   "ja": "若尽女神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135502435",
+  "label": "Ōtsuki Hotel",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": "Atami Onsen",
+  "langlinks": {
+   "ja": "大月ホテル"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135502402",
+  "label": "Shima no Yu",
+  "size": 298,
+  "bucket": "empty-item",
+  "fandom_page": "Atami Onsen",
+  "langlinks": {
+   "ja": "島の湯"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135501970",
+  "label": "Arakida Moriyoshi",
+  "size": 311,
+  "bucket": "empty-item",
+  "fandom_page": "Aedo Hashihime Shrine",
+  "langlinks": {
+   "ja": "荒木田守良"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500938",
+  "label": "Rokusonōbara Kofun",
+  "size": 316,
+  "bucket": "empty-item",
+  "fandom_page": "Anesaki Kofun Group",
+  "langlinks": {
+   "ja": "六孫王原古墳"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500723",
+  "label": "Agata no Inukai no Tegoro",
+  "size": 311,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500720",
+  "label": "Kimi-no-Mori",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": "Agata Shrine (Ōamishirasato)",
+  "langlinks": {
+   "ja": "季美の森"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500718",
+  "label": "Cedar of Agata Shrine",
+  "size": 318,
+  "bucket": "empty-item",
+  "fandom_page": "Agata Shrine (Gero City)",
+  "langlinks": {
+   "ja": "県神社のスギ"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500713",
+  "label": "Kumano Kusu no Mi no Mikoto",
+  "size": 324,
+  "bucket": "empty-item",
+  "fandom_page": "Agata Shrine (Gero City)",
+  "langlinks": {
+   "ja": "熊野久須美命"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500709",
+  "label": "Ietsumiko no Kami",
+  "size": 311,
+  "bucket": "empty-item",
+  "fandom_page": "Agata Shrine (Gero City)",
+  "langlinks": {
+   "ja": "家津御子神"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500707",
+  "label": "Agata Shrine (Izumo)",
+  "size": 320,
+  "bucket": "empty-item",
+  "fandom_page": "Agata Shrine",
+  "langlinks": {
+   "ja": "縣神社 (出雲市)"
+  },
+  "current_ill_qid": "Q135500707",
+  "recovered_qid": "Q135500707",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135500704",
+  "label": "Agata Shrine (Yokkaichi)",
+  "size": 327,
+  "bucket": "empty-item",
+  "fandom_page": "Agata Shrine",
+  "langlinks": {
+   "ja": "縣神社 (四日市市)"
+  },
+  "current_ill_qid": "Q135500704",
+  "recovered_qid": "Q135500704",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": true
+ },
+ {
+  "qid": "Q135500695",
+  "label": "Gōkaku Shrine",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": "Aedo Hashihime Shrine",
+  "langlinks": {
+   "ja": "合格神社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500691",
+  "label": "Adachi Tokikage",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Adachi Yoshikage",
+  "langlinks": {
+   "ja": "安達時景"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500687",
+  "label": "Adachi Shigekage",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": "Adachi Yoshikage",
+  "langlinks": {
+   "ja": "安達重景"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500682",
+  "label": "Adachi Kagemura",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Adachi Yoshikage",
+  "langlinks": {
+   "ja": "安達景村"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500678",
+  "label": "Mutō Yorisuke",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": "Adachi Yoshikage",
+  "langlinks": {
+   "ja": "武藤頼佐"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500675",
+  "label": "Tanba Tadayaki",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": "Acupuncture Hakase",
+  "langlinks": {
+   "ja": "丹波忠明"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500672",
+  "label": "Katsuragi Takamune",
+  "size": 309,
+  "bucket": "empty-item",
+  "fandom_page": "Acupuncture Hakase",
+  "langlinks": {
+   "ja": "葛城高宗"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500668",
+  "label": "Fukane Munetsugu",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": "Acupuncture Hakase",
+  "langlinks": {
+   "ja": "深根宗継"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500665",
+  "label": "Kamimiya Togata Shrine",
+  "size": 319,
+  "bucket": "empty-item",
+  "fandom_page": "Achi clan",
+  "langlinks": {
+   "ja": "上宮外縣神社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500663",
+  "label": "Ōmiya Isuzu Shrine",
+  "size": 319,
+  "bucket": "empty-item",
+  "fandom_page": "Achi clan",
+  "langlinks": {
+   "ja": "大宮五十鈴神社"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500658",
+  "label": "Kibi no Anaumi",
+  "size": 308,
+  "bucket": "empty-item",
+  "fandom_page": "Achi Shrine (Kurashiki)",
+  "langlinks": {
+   "ja": "吉備の穴海"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500650",
+  "label": "Abe no Kintoki",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍兼時"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500647",
+  "label": "Abe no Yasumi",
+  "size": 304,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍泰明"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500645",
+  "label": "Abe no Chōnaga",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍親長"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500641",
+  "label": "Abe no Yasutada",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍泰忠"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500638",
+  "label": "Abe no Yasunari",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍泰成"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500635",
+  "label": "Abe no Yasushige",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍泰茂"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500631",
+  "label": "Abe no Gyōshun",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍業俊"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500627",
+  "label": "Abe no Kiyohiro",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍季弘"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500624",
+  "label": "Abe no Yasutoshi",
+  "size": 307,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500621",
+  "label": "Abe no Yasuari",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500617",
+  "label": "Abe no Masafumi",
+  "size": 306,
+  "bucket": "empty-item",
+  "fandom_page": "Abe no Yasuchika",
+  "langlinks": {
+   "ja": "安倍政文"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500613",
+  "label": "Abe no Arishige",
+  "size": 303,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500611",
+  "label": "Abe no Arimori",
+  "size": 302,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500608",
+  "label": "Abe no Yasukichi",
+  "size": 304,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500604",
+  "label": "Ritsuryō Forty-Eight Rank System",
+  "size": 330,
+  "bucket": "empty-item",
+  "fandom_page": "26-Rank cap system",
+  "langlinks": {
+   "ja": "冠位四十八階"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500328",
+  "label": "Yumoto Group",
+  "size": 451,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500321",
+  "label": "Yukemuri no Sato",
+  "size": 462,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135500318",
+  "label": "Yukemuri no Shō",
+  "size": 462,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135493131",
+  "label": "Yoshikuni Sakurai",
+  "size": 308,
+  "bucket": "empty-item",
+  "fandom_page": "Futon Daiko",
+  "langlinks": {
+   "ja": "桜井義国"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135493039",
+  "label": "Gero Onsen Ryokan Association",
+  "size": 338,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491615",
+  "label": "Nakatomi no Amabisha-kyō",
+  "size": 328,
+  "bucket": "empty-item",
+  "fandom_page": "Ōbashi no Mikoto",
+  "langlinks": {
+   "ja": "中臣阿麻毘舎卿連"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491612",
+  "label": "Nakatomi Tokikaze",
+  "size": 479,
+  "bucket": "empty-item",
+  "fandom_page": "Shidori Shrine (Nara)",
+  "langlinks": {
+   "de": "Nakatomi Tokikaze (German)",
+   "ja": "中臣時風",
+   "zh": "Nakatomi Tokikaze (Chinese)"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491611",
+  "label": "Nakatomi Sakado clan",
+  "size": 317,
+  "bucket": "empty-item",
+  "fandom_page": "Omikiyama no Mikoto",
+  "langlinks": {
+   "ja": "中臣酒人宿祢"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491610",
+  "label": "Nakatomi no Momo / Nakatomi Momo-shō",
+  "size": 340,
+  "bucket": "empty-item",
+  "fandom_page": "Nishida Osamu",
+  "langlinks": {
+   "ja": "中臣秡・中臣秡抄"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491609",
+  "label": "Nakatomi no Ikemori",
+  "size": 310,
+  "bucket": "empty-item",
+  "fandom_page": "Kawachi no Ōkimi (Late Nara period)",
+  "langlinks": {
+   "ja": "中臣池守"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491608",
+  "label": "Nakatomi no Ōshima",
+  "size": 310,
+  "bucket": "empty-item",
+  "fandom_page": "Kawachi-no-Mikoto",
+  "langlinks": {
+   "ja": "藤原大嶋"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491607",
+  "label": "Nakatomi Ōsō",
+  "size": 314,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491605",
+  "label": "Nakatomi Tsuchitoku",
+  "size": 313,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491602",
+  "label": "Nakatomi Harai Kunkai",
+  "size": 408,
+  "bucket": "empty-item",
+  "fandom_page": "Ibukidonushi no Kami",
+  "langlinks": {
+   "ja": "中臣祓訓解"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491601",
+  "label": "Nakata Norinobu",
+  "size": 390,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135491453",
+  "label": "One Day Spa",
+  "size": 452,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135490496",
+  "label": "Chōkui no Sei",
+  "size": 305,
+  "bucket": "empty-item",
+  "fandom_page": "August 5 (Lunisolar)",
+  "langlinks": {
+   "ja": "鐘匱の制"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135490458",
+  "label": "Wakugōda",
+  "size": 302,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135490455",
+  "label": "Shōkyō",
+  "size": 291,
+  "bucket": "empty-item",
+  "fandom_page": "May 22 (Lunisolar)",
+  "langlinks": {
+   "en": "Shōkyō"
+  },
+  "current_ill_qid": "Q1069086",
+  "recovered_qid": "Q1069086",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135490442",
+  "label": "Mōka no Shun",
+  "size": 304,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135490377",
+  "label": "Shimabara Sea",
+  "size": 300,
+  "bucket": "empty-item",
+  "fandom_page": "April 1 (Lunisolar)",
+  "langlinks": {
+   "ja": "島原海"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135490197",
+  "label": "Haiku Poet",
+  "size": 312,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135330122",
+  "label": "Amanomikemunushi no Kami",
+  "size": 244,
+  "bucket": "empty-item",
+  "fandom_page": "Amanomikemunushi-no-Kami",
+  "langlinks": {
+   "ja": "Amanomikemunushi no Kami"
+  },
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135206886",
+  "label": "Not Ronsha",
+  "size": 230,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135198302",
+  "label": "Aso Shrine (Ronsha 1)",
+  "size": 1180,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135193091",
+  "label": "Tenjinsha",
+  "size": 1205,
+  "bucket": "empty-item",
+  "fandom_page": "Tenjinsha",
+  "langlinks": {},
+  "current_ill_qid": "Q17191784",
+  "recovered_qid": "Q17191784",
+  "qid_source": "current-ill",
+  "matched": true,
+  "qid_matches_rag": false
+ },
+ {
+  "qid": "Q135186648",
+  "label": "jinja-net.jp",
+  "size": 328,
+  "bucket": "empty-item",
+  "fandom_page": null,
+  "langlinks": {},
+  "current_ill_qid": "",
+  "recovered_qid": null,
+  "qid_source": null,
+  "matched": false,
+  "qid_matches_rag": false
+ }
+]

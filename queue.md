@@ -156,12 +156,15 @@ history (proven: `Niwa-tsume no Mikoto` → `Q135579706`, matches the RAG). Pure
 (8 cases, green). Report: `shinto_wiki_crossref.md/.json`. Also wired into
 `recreate-deleted-crossref.yml` (weekly refresh).
 
-- [ ] **NEEDS-DECISION (Emma) — recreate any of the ~122 self-deleted items?** author-request
-  + self-initiated batch were Immanuelle's own deletions; recreating undoes her call. Flagged
-  on `[[Open questions]]`. The ~180 truly-empty (`content was:""`) + RfD-no-evidence stay out.
-- [ ] **NEEDS-INVESTIGATION (next loop) — vet the fandom crossref output** and feed the strong
-  candidates (matched fandom page, langlinks recovered, no live wikidata link yet) through #8's
-  human-gated generator. Run `--deep` for QID validation on the subset lacking a `dd=`.
+Full fandom run done: 272 labels → **215 matched a fandom ill, 211 with per-language langlinks**
+(recreation content), 28 QID-validated via `dd=`. Report: `shinto_wiki_crossref.md/.json`.
+The ~122 self-deleted (author-request + batch) are **moot — confirmed NOT on the wikis**
+(0/122 labeled, 0/15 sampled QIDs referenced on fandom); dropped from scope, no Emma decision
+needed. So the recreation surface = the ~211 fandom-matched, langlink-bearing items.
+
+- [ ] **NEEDS-INVESTIGATION (next loop) — vet the ~211 fandom-matched candidates** and feed the
+  strong ones (langlinks recovered, no live wikidata link yet) through #8's human-gated
+  generator. Run `--deep` for QID validation on the subset lacking a `dd=`.
 
 ## Stop removing history from miraheze (Emma 2026-07-05 — no longer necessary)
 

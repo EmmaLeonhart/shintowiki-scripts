@@ -99,10 +99,20 @@ Deletion-reason buckets (455 items):
   run was verified live (12-label sample → 9 matched, all with langlinks). Read-only; 429-bail.
 - Also wired into `.github/workflows/recreate-deleted-crossref.yml` (weekly + dispatch) for
   periodic refresh, though — unlike miraheze work — it can also just be run locally.
-- **Decision still Emma's** (flagged on `[[Open questions]]`): do you want any of your own ~122
-  author-requested / self-initiated-batch items back? Those are your own deletions.
-- The ~180 truly-empty items with `content was: ""` (no label) + RfD-no-evidence items stay
+- **Full fandom run (2026-07-05):** 272 labels → **215 matched a fandom ill**, **211 with
+  per-language langlinks** (the recreation content), 28 with the original QID validated against
+  the RAG via a surviving `dd=` (more recoverable with `--deep` history). Per-item:
+  `recreate-deleted-wikidata/shinto_wiki_crossref.md`/`.json`. This is the recreation surface.
+- **The ~122 self-deleted items are moot — confirmed not on the wikis** (Emma's guess, verified):
+  0/122 carry a recovered label, and 0/15 sampled author-request/batch QIDs are referenced
+  anywhere on fandom (`insource:"Q…"`). They were standalone Wikidata items Immanuelle created
+  and removed — nothing references them, nothing to recreate from. Dropped from scope (no Emma
+  decision needed).
+- The truly-empty items with `content was: ""` (no label) + RfD-no-evidence items stay
   **OUT-OF-SCOPE**.
+- **Net: the actionable recreation surface is the ~211 fandom-matched, langlink-bearing items**
+  — feed vetted ones through backlog #8's human-gated generator (respecting the CLAUDE.md
+  Wikidata rules). No standing open decision remains for Emma beyond that normal human gate.
 
 ## Incidental finding folded out of the chat dump
 
