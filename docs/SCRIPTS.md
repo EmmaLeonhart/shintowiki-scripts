@@ -33,7 +33,6 @@ The pipeline is a chain of reusable workflows orchestrated by `cleanup-loop.yml`
 |--------|--------|-------------|
 | `run_step.sh` | ACTIVE | Wrapper for each cleanup loop step. Updates `User:EmmaBot` stage before/after execution. |
 | `commit_state.sh` | ACTIVE | Commits changed `*.state`, `*.log`, `*.errors` files after each chunk. |
-| `cleanup_loop.sh` | LEGACY | Original local orchestrator script. Superseded by the GitHub Actions workflow chain, but kept for reference. |
 
 ---
 

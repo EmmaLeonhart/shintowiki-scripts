@@ -4,6 +4,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Removed dead local launchers cleanup_loop.sh + "cleanup loop.bat"
+
+Follow-up to the id:1 "retire-terminating-scripts" deletion (same day). Both
+`shinto_miraheze/cleanup_loop.sh` and `shinto_miraheze/cleanup loop.bat` still
+invoked the 4 just-deleted scripts (reimport_from_enwiki / migrate_talk_pages /
+normalize_category_pages / remove_legacy_cat_templates). Neither was wired into
+any workflow — no `.github/workflows/*.yml` calls them; the live path is
+`wiki-cleanup.yml` (aka the cleanup-loop.yml job chain) + the per-namespace
+orchestrators. They were legacy monolithic local loops (last meaningfully edited
+2026-02-26 / 2026-03-19), superseded by the current per-workflow + orchestrator
+architecture. Deleted both from the working tree (git history retains them);
+removed the `cleanup_loop.sh` LEGACY row from `docs/SCRIPTS.md`. Older DEVLOG
+mentions of these scripts left intact for history. Verdict on the interrupted-
+session commit `57bcb140` that deleted the 4 scripts: correct — date-gated
+planned task, ported ops registered + green in prod, 317 tests pass, no live CI
+ref, no Python imports.
+
 ## 2026-07-05 — Provenance rollout COMPLETE: multilang wired; korean/chinese/tok already had it
 
 Audited comment coverage across every quickstatements/*.txt and found the CI-run
