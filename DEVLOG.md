@@ -4,6 +4,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Backlog #8: deleted-QID recreation info-gathering generator (human-gated)
+
+Built `recreate-deleted-wikidata/generate_recreate_quickstatements.py` in a NEW isolated
+dir that no submitter reads (submit_daily_batch uses a fixed filename allowlist;
+select_label_proposals globs only shinto-label-generator/quickstatements). Actual
+recreation is OUT OF SCOPE this session (Emma) — the deliverable is the info-gathering +
+generated QuickStatements. Investigation corrected the original todo design: the category's
+144 pages already carry their OWN `{{wikidata link}}`; the deleted QIDs belong to the ill
+**targets** (sub-topics), so it does NOT emit `P11250|"shinto:<page>"` (would duplicate the
+page's item = the "re-deleted" failure). Walks the category → **304 distinct deleted
+targets** → info-rich `CREATE` blocks (per-language labels from the ill) in
+`recreate_quickstatements.txt` + human-review `review.md`. Old QIDs carried as `#`
+provenance comments — **36 recovered**: 31 from the ill's `dd=` param, +5 from detecting
+the data-loss bug Emma flagged (the deleted QID had been written into the link-TITLE slot,
+destroying the English name — now recovered as the QID, en name noted lost, other-language
+labels preserved). Enrichment (Wikidata, to the extent possible): jawiki-article existence
+gates the sitelink (the notability anchor — only 7/304 currently have one), and
+ja-already-linked-to-a-live-item flags probable duplicates (2). 7 unit tests on the pure
+parser/renderer; wired into ci.yml (new paths filter + pytest dir). Remaining recreation
+work (per-target content research, min-claim-set per type, human-gated submission) queued
+for a future session. Also queued (Emma-requested): a next-session analysis pass over all
+8 backlog problems and the degree each was resolved.
+
 ## 2026-07-05 — Backlog #5(c): place-name gazetteer phase (authoritative, not guessing)
 
 Added phase 4 to `generate_category_translation_moves.py` for the productive

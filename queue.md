@@ -99,10 +99,45 @@ routine (not build tasks). The two genuinely-buildable items:
   producing edits?" gap (the one open piece) was closed by #1 (all 4 confirmed inert +
   deleted). Verify nothing else wired into `wiki-cleanup.yml` is silently inert, then
   remove #2 from the backlog board + todo.md.
-- [ ] **#8 recreate-deleted-WD — build `generate_recreate_quickstatements.py`.** Walk
-  `[[Category:Pages with deleted QID in ill template]]`, render `CREATE` + minimal claim
-  set (P11250|"shinto:…") to a HUMAN-REVIEW .txt (NOT auto-submitted — WD item creation
-  is human-gated). Tests for the block rendering.
+## Backlog #8 — recreate deleted Wikidata items (CONTINUATION for a future session)
+
+Generator SHIPPED this session: `recreate-deleted-wikidata/generate_recreate_quickstatements.py`
+(isolated dir; NOT auto-submitted; 7 unit tests; CI-wired). It walks
+`[[Category:Pages with deleted QID in ill template]]` (144 pages → **304 distinct
+deleted ill targets**) and writes info-rich `CREATE` blocks to
+`recreate-deleted-wikidata/recreate_quickstatements.txt` + a human-review `review.md`.
+Corrected the original design: the deleted QIDs are the ill **targets** (sub-topics),
+NOT the pages (which already have their own items) — so NO `P11250|"shinto:…"`. Old
+QIDs are carried as `#` provenance comments (36 recovered — 31 from `dd=`, +5 from the
+QID-was-written-into-the-label-slot data-loss bug, now detected & recovered). Enrichment:
+jawiki-article existence gates the sitelink (notability anchor); ja-already-linked-to-a-
+live-item flags probable duplicates (2 found). Only **7/304** currently have a safe
+jawiki sitelink → the rest need content before they'd survive re-deletion.
+
+**Remaining (NOT this session — recreation itself is out of scope, per Emma):**
+- [ ] Per-target research to give each item enough content to not be auto-deleted again
+  (Wikidata churn is the risk). The count (304, only ~36 with recovered QIDs) is small
+  enough to research individually. Enrich `CREATE` blocks with whatever authoritative
+  data can be found (claims, better sitelinks, descriptions) beyond the current
+  labels+provenance.
+- [ ] Decide the minimum viable claim set per target-type (person / shrine / facility /
+  concept) that survives Wikidata deletion review.
+- [ ] Only after review: feed vetted blocks through the QuickStatements pipeline
+  (human-gated; still respect the WD-editing rules in CLAUDE.md).
+
+## Next-session analysis pass (Emma-requested 2026-07-05)
+
+- [ ] **Analyze all 8 backlog-board problems and the degree each was resolved this
+  session**, as input for the next session. Board (`site/generate_pages.py` BACKLOG_ITEMS)
+  + `todo.md` + DEVLOG 2026-07-05 entries are the source. Quick status to verify/expand:
+  #1 retire-terminating-scripts ✅ done; #2 audit-legacy-scripts ✅ closed; #3 ILL-missing-WD
+  = shipped automation, residual is human review; #4 duplicate-QID tail = ~7-page drain;
+  #5 Japanese category names = phase (c) jawiki→enwiki place gazetteer shipped (~90% of the
+  214 歴史/建築物 residual), tail = other suffixes + gazetteer misses; #6 multiple-wikidata-
+  links = shipped, residual human review; #7 duplicated-content/need-translation = remote
+  cloud-queue routine; #8 recreate-deleted-WD = info-gathering generator shipped, actual
+  recreation deferred (see above). Produce a written per-item "resolved / partial / not
+  started + what's left" so the next session can pick the highest-value thread.
 
 ---
 
