@@ -27,10 +27,20 @@ Resolution, in priority order (the plan's canonical-name choice rule):
    imported enwiki maintenance categories whose only Japanese part is the date.
 3. **Hand-maintained template-prefix lookup** for the few pure-template cats with
    no QID.
+4. **Place-name gazetteer (authoritative, not guessing).** For the productive
+   ``<place>の歴史`` / ``<place>の建築物`` content cats that carry no category-level
+   QID, the *topic* half is a fixed English category-naming convention while the
+   *place* half is resolved AUTHORITATIVELY: the place stem is looked up as a
+   jawiki ARTICLE title on Wikidata and its enwiki sitelink (the canonical English
+   place name) is used — no transliteration/guessing. A P31 gate requires the
+   item to be a Japanese administrative division, so a stem matching a non-place
+   jawiki article is rejected → residual. Stems with no clean jawiki→enwiki chain
+   (e.g. prefecture-prefixed ``埼玉県美里町`` whose article is ``美里町 (埼玉県)``)
+   also fall to residual — never machine-guessed.
 
-Place-name gazetteer patterns (``<place>の神社`` etc.) are deliberately NOT
-attempted here — that's where guessing risk lives; those land in the residual
-report for the follow-on gazetteer phase.
+Other place-name patterns (``の神社`` when no category QID, ``の重要文化財``,
+``の旧県社`` shrine-rank-by-place, ``の画像提供依頼`` maintenance, bare ``<place>郡``
+districts, …) are still left to the residual report for later phases.
 
 This script makes NO wiki edits. It reads the wiki (category enumeration +
 category-page wikitext) and Wikidata (labels/sitelinks), then APPENDS new rows to
@@ -104,6 +114,61 @@ _DATED_RE = re.compile(
 # Only for cats with NO {{wikidata link}} (phase 1 handles the rest, e.g.
 # WikiProject用テンプレート → Q7054879 → "Category:WikiProject templates").
 _TEMPLATE_LOOKUP: dict[str, str] = {}
+
+# ─── phase 4: place-name gazetteer (authoritative, NOT guessing) ─────────
+# Productive "<place>の<topic>" content categories. The *topic* half is a fixed
+# English category-naming convention (deterministic); the *place* half is resolved
+# AUTHORITATIVELY — the place stem is looked up as a jawiki ARTICLE title on
+# Wikidata and its enwiki sitelink (the canonical English place name) is used. No
+# transliteration/guessing of the place. A stem that doesn't resolve to a
+# Japanese-administrative-division item with an enwiki article → residual.
+#
+# Ordered longest-suffix-first so e.g. a longer suffix wins over a prefix of it.
+_PLACE_SUFFIXES: list[tuple[str, str]] = [
+    ("の建築物", "Buildings and structures in {}"),
+    ("の歴史", "History of {}"),
+]
+
+# P31 classes that confirm the resolved stem is a Japanese place (gate against a
+# stem that happens to match a non-place jawiki article — e.g. a religion or a
+# company). Verified labels 2026-07-05.
+_PLACE_CLASSES: frozenset = frozenset({
+    "Q1054813",   # municipality of Japan
+    "Q494721",    # city of Japan
+    "Q1059478",   # town of Japan
+    "Q4174776",   # village of Japan
+    "Q137773",    # ward of Japan
+    "Q1145012",   # special city of Japan
+    "Q17221353",  # capital of prefecture
+    "Q1549591",   # big city
+    "Q828359",    # commuter town
+    "Q50337",     # prefecture of Japan
+    "Q56061",     # administrative territorial entity (generic — still a place)
+})
+
+
+def parse_place_pattern(name: str) -> "tuple[str, str] | None":
+    """Split ``<place><suffix>`` → ``(place_stem, english_format)`` for the
+    productive place-content suffixes. Returns None if no suffix matches or the
+    place stem would be empty. Pure — no network."""
+    for suf, fmt in _PLACE_SUFFIXES:
+        if name.endswith(suf):
+            stem = name[: -len(suf)]
+            if stem:
+                return stem, fmt
+    return None
+
+
+def place_category(fmt: str, enwiki: str, p31: "list[str]") -> "str | None":
+    """Given a resolved place stem (its enwiki article title + P31 classes) and a
+    topic format, return the English ``Category:…`` name — but ONLY if the item is
+    a confirmed Japanese place (P31 gate) and has an enwiki article. Otherwise
+    None (→ residual). Pure — no network."""
+    if not enwiki or enwiki.startswith("Category:"):
+        return None
+    if not any(p in _PLACE_CLASSES for p in p31):
+        return None
+    return "Category:" + fmt.format(enwiki)
 
 
 def get_subcats() -> tuple[list[str], bool]:
@@ -200,6 +265,41 @@ def fetch_wd_category_names(qids: list[str]) -> dict[str, str]:
     return out
 
 
+def fetch_place_resolutions(stems: list[str]) -> "dict[str, tuple[str, list[str]]]":
+    """Resolve each place stem by its jawiki ARTICLE title on Wikidata → its
+    enwiki sitelink + P31 classes. Returns {stem: (enwiki_title, [P31 QIDs])} for
+    stems that have a Wikidata item; the caller applies the place gate. Batched by
+    50 (wbgetentities cap). ``normalize`` is NOT sent — Wikidata rejects it for
+    multi-title requests."""
+    out: "dict[str, tuple[str, list[str]]]" = {}
+    uniq = sorted(set(stems))
+    for i in range(0, len(uniq), 50):
+        batch = uniq[i:i + 50]
+        r = _get_json(WD_API, {
+            "action": "wbgetentities", "sites": "jawiki",
+            "titles": "|".join(batch), "props": "sitelinks|claims",
+            "sitefilter": "enwiki|jawiki", "languages": "en", "format": "json",
+        })
+        if r is None:
+            time.sleep(READ_THROTTLE)
+            continue
+        for qid, e in r.get("entities", {}).items():
+            if qid.startswith("-") or "missing" in e:
+                continue
+            sl = e.get("sitelinks", {})
+            ja = (sl.get("jawiki", {}) or {}).get("title", "")
+            en = (sl.get("enwiki", {}) or {}).get("title", "")
+            p31 = [
+                c["mainsnak"]["datavalue"]["value"]["id"]
+                for c in e.get("claims", {}).get("P31", [])
+                if c.get("mainsnak", {}).get("datavalue")
+            ]
+            if ja:
+                out[ja] = (en, p31)
+        time.sleep(READ_THROTTLE)
+    return out
+
+
 def dated_transform(name: str) -> "str | None":
     m = _DATED_RE.match(name)
     if not m:
@@ -258,6 +358,21 @@ def main():
     wd_names = fetch_wd_category_names(list(qids.values()))
     print(f"  QIDs resolving to an English Category: {len(wd_names)}")
 
+    # Phase 4 data: place stems for the "<place>の<topic>" cats that phases 1–3
+    # won't resolve (no category-level QID). Resolve them authoritatively via the
+    # jawiki article → enwiki sitelink. Only stems from cats not already
+    # QID-anchored are worth fetching.
+    place_stems = []
+    for c in todo:
+        if qids.get(c) in wd_names:
+            continue  # phase 1 will win
+        pp = parse_place_pattern(c)
+        if pp:
+            place_stems.append(pp[0])
+    place_res = fetch_place_resolutions(place_stems) if place_stems else {}
+    print(f"  place stems to resolve: {len(set(place_stems))}  "
+          f"(jawiki→WD items: {len(place_res)})")
+
     new_rows: list[tuple[str, str, str]] = []   # (source, dest, reason)
     residual: list[str] = []
     for c in todo:
@@ -279,6 +394,17 @@ def main():
         if dest is None and c in _TEMPLATE_LOOKUP:
             dest = _TEMPLATE_LOOKUP[c]
             reason = "template lookup"
+        # 4. Place-name gazetteer (authoritative jawiki→enwiki place resolution).
+        if dest is None:
+            pp = parse_place_pattern(c)
+            if pp:
+                stem, fmt = pp
+                info = place_res.get(stem)
+                if info:
+                    cand = place_category(fmt, info[0], info[1])
+                    if cand:
+                        dest = cand
+                        reason = f"place gazetteer (jawiki '{stem}' → enwiki)"
 
         if dest and dest != src:
             new_rows.append((src, dest, reason))

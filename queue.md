@@ -99,12 +99,6 @@ routine (not build tasks). The two genuinely-buildable items:
   producing edits?" gap (the one open piece) was closed by #1 (all 4 confirmed inert +
   deleted). Verify nothing else wired into `wiki-cleanup.yml` is silently inert, then
   remove #2 from the backlog board + todo.md.
-- [ ] **#5(c) Japanese category names — jawiki-anchored resolution phase.** Add a phase
-  (c) to `generate_category_translation_moves.py`: for residual cats with no local
-  `{{wikidata link}}`, resolve via the *jawiki* category of the same title → its enwiki
-  category sitelink (authoritative cross-wiki, NOT place-name guessing). Unresolved →
-  residual. Unit-test the pure sitelink-extraction helper. Targets the 578-entry residual
-  (144 `の歴史` + 69 `の建築物` are the bulk).
 - [ ] **#8 recreate-deleted-WD — build `generate_recreate_quickstatements.py`.** Walk
   `[[Category:Pages with deleted QID in ill template]]`, render `CREATE` + minimal claim
   set (P11250|"shinto:…") to a HUMAN-REVIEW .txt (NOT auto-submitted — WD item creation

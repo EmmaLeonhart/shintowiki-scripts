@@ -4,6 +4,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Backlog #5(c): place-name gazetteer phase (authoritative, not guessing)
+
+Added phase 4 to `generate_category_translation_moves.py` for the productive
+`<place>の歴史` / `<place>の建築物` content categories (214 of the 578-entry residual).
+First tried the safe jawiki-*category*-anchored route (look up the category's jawiki
+title → enwiki category sitelink) but ALL sampled items had no enwiki category sitelink
+— these Japan-specific place categories simply don't exist on enwiki. So resolution
+anchors on the **place stem** instead: strip the topic suffix, look the stem up as a
+jawiki ARTICLE title on Wikidata, take its enwiki sitelink (canonical English place
+name), and apply the fixed English category convention ("History of X" / "Buildings and
+structures in X"). The place name is authoritative (Wikidata cross-wiki), never
+transliterated/guessed. A P31 gate requires the item to be a Japanese administrative
+division (city/town/village/ward/special-city/prefecture/…), so a stem matching a
+non-place jawiki article is rejected → residual; prefecture-prefixed stems whose jawiki
+article is disambiguated (`埼玉県美里町` → article `美里町 (埼玉県)`) also fall to residual.
+Measured hit rate on a 60-cat sample: 54/60 (90%) resolve to correct enwiki place names
+(三条市→Sanjō, Niigata; 三宅村→Miyake, Tokyo; …). New rows append to `category_moves.csv`
+(consumed by the monthly `move_categories.py`); unresolved stay in the residual report.
+8 new unit tests on the pure parse/gate helpers (parse_place_pattern, place_category);
+suite green. Verified E2E against live Wikidata. Deliberately still out of scope: `の神社`
+(no cat-QID cases), `の重要文化財`/`の国宝`, `の旧県社`/`の旧郷社`/`の旧村社` shrine-rank-by-
+place, `の画像提供依頼` maintenance, bare `<place>郡` districts — later phases.
+
 ## 2026-07-05 — Backlog #2 audit-legacy-scripts CLOSED
 
 The legacy-script audit's keep/fix/retire verdicts have lived in

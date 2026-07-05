@@ -37,3 +37,48 @@ def test_dated_all_months():
     for n, name in g._JP_MONTHS.items():
         out = g.dated_transform(f"Foo from 2021年{n}月")
         assert out == f"Category:Foo from {name} 2021"
+
+
+# ─── phase 4: place-name gazetteer ──────────────────────────
+def test_parse_place_history():
+    assert g.parse_place_pattern("三条市の歴史") == ("三条市", "History of {}")
+
+
+def test_parse_place_buildings():
+    assert (g.parse_place_pattern("三宅村の建築物")
+            == ("三宅村", "Buildings and structures in {}"))
+
+
+def test_parse_place_empty_stem_is_none():
+    # A bare suffix with no place stem must not match.
+    assert g.parse_place_pattern("の歴史") is None
+
+
+def test_parse_place_non_pattern_is_none():
+    assert g.parse_place_pattern("下県郡") is None            # bare district, no suffix
+    assert g.parse_place_pattern("三吉神社") is None           # a shrine, not <place>の…
+    assert g.parse_place_pattern("三省堂の国語辞典") is None    # unhandled suffix
+
+
+def test_place_category_gated_and_formatted():
+    # Confirmed Japanese place (city of Japan) with an enwiki article → resolved.
+    assert (g.place_category("History of {}", "Sanjō, Niigata", ["Q494721"])
+            == "Category:History of Sanjō, Niigata")
+    assert (g.place_category("Buildings and structures in {}", "Miyake, Tokyo",
+                             ["Q1059478"])
+            == "Category:Buildings and structures in Miyake, Tokyo")
+
+
+def test_place_category_rejects_non_place_p31():
+    # Stem resolves to a jawiki article that is NOT a Japanese place (e.g. a
+    # religion / company class) → rejected, goes to residual.
+    assert g.place_category("History of {}", "Christianity", ["Q9174"]) is None
+
+
+def test_place_category_rejects_missing_enwiki():
+    assert g.place_category("History of {}", "", ["Q494721"]) is None
+
+
+def test_place_category_rejects_category_titled_enwiki():
+    # An enwiki sitelink that is itself a Category: is not an article place name.
+    assert g.place_category("History of {}", "Category:Foo", ["Q494721"]) is None
