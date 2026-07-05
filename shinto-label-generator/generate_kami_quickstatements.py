@@ -50,10 +50,12 @@ def main():
         # the kanji and is emitted regardless.
         if romaji:
             for lang in covered:
-                if lang in existing or lang in ZH_CODES:
+                if lang in existing or lang in ZH_CODES:   # never touch an existing label
                     continue
                 lab = bare_name(lang, romaji, ja, ko_mode="phonetic")
                 if lab:
+                    if lang == "tok":          # kami are deities: jan sewi classifier (Emma)
+                        lab = "jan sewi " + lab
                     lines.append((qid, lang, lab))
                     per_lang[lang] = per_lang.get(lang, 0) + 1
         else:

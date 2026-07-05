@@ -38,14 +38,7 @@ Remaining:
    relevance filter in `bfs/property_label_report.md`), the concept-classes, and the
    90-item text residue (`bfs/text_labels_residue.md`). World-religion drift =
    already labelled, skip.
-2. **Kami tok classifier — NEEDS-DECISION (Emma).** Buddhist-deity tok now carries
-   `jan sewi` (person + sacred). The 352 kami tok labels (in `kami_labels.txt`) carry
-   NO classifier ("Enma", not "jan sewi Enma"). Deities should take one — but `jan
-   sewi` = *person*-deity, and many kami are mountains/rivers/objects/concepts, which
-   would want a different head noun (`ma sewi` land, `ijo sewi` thing, …). Decision:
-   one classifier for all kami, or per-kami by P31 type? Don't blanket-apply until
-   decided (would mis-classify the non-person kami).
-3. **Polish (low priority):** Sanskrit engine niceties — Arabic initial-vowel
+2. **Polish (low priority):** Sanskrit engine niceties — Arabic initial-vowel
    carrier, Greek d→ντ inside clusters. (tok for Sanskrit deities DONE — `jan sewi`
    classifier + n-coda-aware cluster-breaking; court-rank non-CJK translation DONE.)
 
