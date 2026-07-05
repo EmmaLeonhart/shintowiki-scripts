@@ -32,17 +32,16 @@ window). So the labels reach Wikidata; the tail just drains slowly until the ram
 
 Remaining:
 
-1. **Court ranks — non-CJK lexical translation.** "Junior/Senior Nth Rank" → each
-   language; the rendering of 正/従 varies, so translate carefully, don't invent.
-2. **Translation tier (cron-driven, ongoing).** Daily 15:00 run
+1. **Translation tier (cron-driven, ongoing).** Daily 15:00 run
    (`generate_concept_translations.py`) hand-translates descriptive Shinto concepts
    into confident languages, non-destructive + state-tracked. Batch 1 done (5
    concepts → 44 labels). Left: more concepts, Shinto-property names (P13723 etc.;
    relevance filter in `bfs/property_label_report.md`), the concept-classes, and the
    90-item text residue (`bfs/text_labels_residue.md`). World-religion drift =
    already labelled, skip.
-3. **Polish:** tok for Sanskrit deities (needs a syllabifier); Sanskrit engine
-   niceties (Arabic initial-vowel carrier, Greek d→ντ in clusters).
+2. **Polish (low priority):** Sanskrit engine niceties — Arabic initial-vowel
+   carrier, Greek d→ντ inside clusters. (tok for Sanskrit deities DONE — sewi
+   classifier + cluster-breaking; court-rank non-CJK translation DONE.)
 
 ---
 
