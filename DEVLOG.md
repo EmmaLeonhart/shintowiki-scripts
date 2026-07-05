@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — Sanskrit engine hardened: tests + Cyrillic/Greek capitalisation
+
+`tests/test_sanskrit_translit.py` (9 tests) locks in the engine that had been
+iterated heavily but untested: Devanagari virama clusters (इन्द्र/स्कन्द), Greek
+double-nasal collapse (Ιντρα), Arabic-family word-initial vowel carriers (إندرا/
+ایندرا/אינדרא), and toki pona n-coda + epenthetic cluster-breaking (Intala/Sakanta).
+Also fixed `_cap`: Cyrillic/Greek names were left lowercase (индра) — the isascii
+guard blocked Unicode capitalisation; now Индра/Ιντρα. Regenerated buddhist; suite
+132 → 141.
+
 ## 2026-07-04 — Label-generalization queue rewritten to match reality
 
 Queue BFS section was badly stale (said Buddhist deities "shelved" when they're

@@ -200,7 +200,9 @@ def _tokipona(word):
 
 
 def _cap(s):
-    return s[:1].upper() + s[1:] if s and s[0].isascii() else s
+    # only called for Cyrillic/Greek (cap=True); Unicode .upper() capitalises
+    # и→И, ι→Ι. (Devanagari/Bengali/Arabic/Hebrew pass cap=False — no case.)
+    return s[:1].upper() + s[1:] if s else s
 
 
 # ---------------------------------------------------------------------------
