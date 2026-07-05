@@ -149,6 +149,38 @@ def _map_word(word, table):
     return "".join(table.get(t, "") for t in _tokens(word))
 
 
+# Toki Pona: strict (C)V(n) syllables, phonemes {p t k s m n l w j / a e i o u}.
+# Map each sound to the nearest tok phoneme; BREAK consonant clusters by inserting
+# an epenthetic 'a' (never drop). Caller prepends the classifier (e.g. "sewi").
+_TOK_C = {
+    "kh": "k", "gh": "k", "ch": "s", "jh": "s", "th": "t", "dh": "t",
+    "ph": "p", "bh": "p", "sh": "s",
+    "k": "k", "g": "k", "c": "s", "j": "s", "t": "t", "d": "t", "p": "p",
+    "b": "p", "m": "m", "n": "n", "y": "j", "r": "l", "l": "l", "v": "w",
+    "w": "w", "s": "s", "h": "",          # toki pona has no /h/
+}
+_TOK_V = {"a": "a", "i": "i", "u": "u", "e": "e", "o": "o", "ai": "a", "au": "o"}
+_TOK_VOWELS = set("aeiou")
+
+
+def _tokipona(word):
+    out = []
+    for t in _tokens(word):
+        if t in _TOK_V:
+            out.append(_TOK_V[t])
+        elif t in _TOK_C:
+            c = _TOK_C[t]
+            if not c:
+                continue
+            if out and out[-1] not in _TOK_VOWELS:   # cluster -> epenthetic vowel
+                out.append("a")
+            out.append(c)
+    s = "".join(out)
+    if s and s[-1] not in _TOK_VOWELS and s[-1] != "n":   # illegal final consonant
+        s += "a"
+    return s[:1].upper() + s[1:] if s else ""
+
+
 def _cap(s):
     return s[:1].upper() + s[1:] if s and s[0].isascii() else s
 
@@ -165,6 +197,7 @@ _LANG = {
     "ar": ("ara", False), "arz": ("ara", False),
     "fa": ("per", False), "ur": ("per", False),
     "he": ("heb", False),
+    "tok": ("tok", False),
 }
 
 
@@ -192,6 +225,8 @@ def sanskrit(name, lang):
             r = _map_word(w, _PER)
         elif kind == "heb":
             r = _map_word(w, _HEB)
+        elif kind == "tok":
+            r = _tokipona(w)
         else:
             r = ""
         if cap:

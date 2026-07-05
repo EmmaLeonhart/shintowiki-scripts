@@ -30,9 +30,9 @@ CLASS = "Q65122124"
 # For a SANSKRIT-named deity: the Sanskrit engine handles these scripts; the true
 # Latin-script langs get the name verbatim; CJK from the kanji; these non-Latin
 # scripts aren't in the Sanskrit module yet, so they're skipped (honest gap).
-SANSKRIT_SCRIPTS = sanskrit_translit.SUPPORTED   # hi mai mr bn as ru uk el ar arz fa ur he
-NONLATIN_TODO = {"tok"}                          # toki pona can't take Sanskrit clusters yet
-LATIN = set(COVERED) - SANSKRIT_SCRIPTS - NONLATIN_TODO - set(ZH_CODES) - {"ko"}
+SANSKRIT_SCRIPTS = sanskrit_translit.SUPPORTED   # hi mai mr bn as ru uk el ar arz fa ur he tok
+LATIN = set(COVERED) - SANSKRIT_SCRIPTS - set(ZH_CODES) - {"ko"}
+SEWI = "sewi "   # toki pona deity classifier (proper names need a head noun)
 
 
 def _utf8():
@@ -73,6 +73,8 @@ def main():
                     continue
                 lab = bare_name(lang, src, ja, ko_mode="phonetic")
                 if lab:
+                    if lang == "tok":               # deities take the sewi classifier
+                        lab = SEWI + lab
                     lines.append((qid, lang, lab))
             for code, lab in zh_map(ja).items():
                 if code in covered and code not in existing and lab:
@@ -82,10 +84,12 @@ def main():
             for lang in LATIN:                      # true Latin scripts: verbatim
                 if lang in covered and lang not in existing:
                     lines.append((qid, lang, src))
-            for lang in SANSKRIT_SCRIPTS:           # Devanagari/Bengali/Cyrillic/Greek
+            for lang in SANSKRIT_SCRIPTS:           # Devanagari/Bengali/Cyrillic/Greek/tok
                 if lang in covered and lang not in existing:
                     lab = sanskrit_translit.sanskrit(src, lang)
                     if lab:
+                        if lang == "tok":
+                            lab = SEWI + lab
                         lines.append((qid, lang, lab))
             emit_zh_ko(qid, ja, existing)           # CJK + ko from kanji
 
