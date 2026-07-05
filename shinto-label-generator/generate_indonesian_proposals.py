@@ -86,7 +86,7 @@ def to_romaji(text):
         if name.endswith(suffix):
             name = name[:-len(suffix)].strip()
             break
-    return name
+    return re.sub(r'[ \t  ]+', ' ', name).strip()   # collapse spaces incl nbsp; keep U+3000
 
 def main():
     results = fetch_candidates()

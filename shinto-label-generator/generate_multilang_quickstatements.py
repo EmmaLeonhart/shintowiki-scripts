@@ -569,8 +569,8 @@ def extract_name(id_label):
     p_type is 'shrine' or 'temple'."""
     cleaned = re.sub(r'\([^)]*\)', '', id_label)
     cleaned = re.sub(r'\[[^\]]*\]', '', cleaned)
-    cleaned = cleaned.strip()
-    
+    cleaned = re.sub(r'[ \t  ]+', ' ', cleaned).strip()   # collapse spaces incl nbsp; keep U+3000
+
     # Check prefixes
     # Kuil = Shrine (usually), Wihara = Temple
     prefixes = [
@@ -607,7 +607,8 @@ def extract_name_from_en(en_label):
     the id path). '<Name>-gu Shrine' / '<Name>-sha Shrine' / '<Name>-ji Temple'
     keep the hyphenated part in the name."""
     cleaned = re.sub(r'\([^)]*\)', '', en_label)
-    cleaned = re.sub(r'\[[^\]]*\]', '', cleaned).strip()
+    cleaned = re.sub(r'\[[^\]]*\]', '', cleaned)
+    cleaned = re.sub(r'[ \t  ]+', ' ', cleaned).strip()   # collapse spaces incl nbsp; keep U+3000
     for suffix, is_grand, p_type in _EN_SUFFIXES:
         if cleaned.endswith(suffix):
             name = cleaned[: -len(suffix)].strip()

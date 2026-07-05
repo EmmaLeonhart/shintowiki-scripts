@@ -4,6 +4,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-04 — QA audit: label whitespace hygiene (1,938 labels) + integrity sweeps
+
+Ran several offline integrity audits over all committed labels. CLEAN: 457k
+non-Latin-script labels have zero stray ASCII letters (transliterators aren't
+leaking untransliterated Latin); zero labels exceed Wikidata's 250-char limit.
+FIXED — whitespace: 1,938 labels carried stray whitespace propagated verbatim from
+sloppy Wikidata source labels — ASCII double-spaces (206, often from parenthetical
+removal), non-breaking space U+00A0 (1,523), narrow no-break space U+202F (186), and
+leading/trailing (23). Root cause confirmed at source (the en label itself, e.g.
+'Kurosawa  Ontake Shrine' — no component dropped). Fixed the extract steps in
+generate_multilang_quickstatements.py (extract_name / extract_name_from_en) and
+generate_indonesian_proposals.to_romaji to collapse [space/tab/nbsp/narrow-nbsp] to a
+single ASCII space + strip; applied the same deterministic normalisation to the 1,938
+committed labels. DELIBERATELY LEFT ALONE: 45 CJK labels containing the ideographic
+space U+3000 (甲埜神社　諏訪神社　合殿) — a legitimate CJK separator, collapsing it is a
+style change not a fix. NOTED as queue follow-up (not guessed): 15 zh labels leak a
+raw katakana ヴ (vu) — Japanese has no man'yōgana for /v/; needs the v→b convention
+added to the Chinese generator. New test_label_whitespace.py (4 tests). Suite 148→152.
+
 ## 2026-07-04 — Q10928586 Ikasuri no Kami: kami name everywhere, not a shrine (Emma)
 
 Resolved the dual-classification blocker. Q10928586 (座摩神) is P31 kami (Q524158)
