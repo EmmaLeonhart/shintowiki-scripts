@@ -71,14 +71,37 @@ Deletion-reason buckets (455 items):
 **Therefore (revised):**
 - Content recovery is **NOT hard-blocked** — public logs recover 273 clean labels with zero
   admin access. The earlier "needs an admin undelete export" call is withdrawn.
-- The **next build step** is a CI-wired cross-reference: for each of the 273 labels, search the
-  live shinto wiki for the matching page and pull its content (ills/categories/jawiki link) to
-  enrich a `CREATE` block. This extends backlog #8's already-CI-wired generator (the one place
-  that reaches the wiki). It must run in CI — miraheze is unreachable + Cloudflare-blocked from
-  dev, so it can't be verified locally; do NOT blind-wire it without a CI dry-run.
-- The **decision Emma owns** (flagged on `[[Open questions]]`): (a) build that CI cross-reference
-  to enrich the 273? and (b) do you want any of your own ~122 author-requested/batch items back?
-- The ~180 truly-empty items with `content was: ""` (no label) + the RfD-no-evidence items stay
+
+### What CI already stores + where the QID actually lives (investigated 2026-07-05, Emma-corrected)
+
+- **wikidata-deleted** ills (had a QID, deleted): the `deleted_qids_in_ill` orchestrator op
+  (every CI sweep) tags `[[Category:Pages with deleted QID in ill template]]` and rewrites the
+  ill to `qid=DELETED_QID`. The original QID is **NOT lost** (an earlier draft wrongly said so):
+  it is preserved discreetly in a `dd=` param on many ills, and — Emma's key point — it is in
+  the **fandom wiki page HISTORY** for the rest (the shinto content was imported from fandom;
+  fandom keeps history). Proven: the pre-overwrite fandom revision of `Niwa-tsume no Mikoto`
+  carries `qid=Q135579706`, exactly matching the RAG's deleted QID for that label.
+- **wikidata-less** ills (never created): `unresolved_ill_qid` op tags
+  `[[Category:Pages with unresolved QID in ill template]]`, drained by `fix_ill_destinations.py`.
+- CI **detects + categorises** both; the authoritative deleted-QID list + labels come from the
+  Wikidata logs (the RAG). No `deleted_qids_report.txt` is committed; the #8 recreation
+  generator is not scheduled (run once by hand).
+
+### Built this session (Emma greenlit the cross-reference; corrected to use fandom)
+
+- `crossref_deleted_labels.py` — for each RAG-recovered label, finds the **fandom**
+  `{{ill|<label>|…}}` and pulls: the per-language **langlinks** (recreation content — they
+  survive the `qid=DELETED_QID` overwrite), the current ill qid (`dd=` recoveries), the host
+  page, and — with `--deep` — the ORIGINAL qid from fandom history, validated against the RAG.
+  **Fandom, not miraheze**, because (a) miraheze is Cloudflare-blocked from dev (403) while
+  fandom is reachable → this is verifiable locally, and (b) the original QID lives in fandom
+  history. Pure ill-parsing/matching logic unit-tested (`tests/`, 8 cases, green); the fandom
+  run was verified live (12-label sample → 9 matched, all with langlinks). Read-only; 429-bail.
+- Also wired into `.github/workflows/recreate-deleted-crossref.yml` (weekly + dispatch) for
+  periodic refresh, though — unlike miraheze work — it can also just be run locally.
+- **Decision still Emma's** (flagged on `[[Open questions]]`): do you want any of your own ~122
+  author-requested / self-initiated-batch items back? Those are your own deletions.
+- The ~180 truly-empty items with `content was: ""` (no label) + RfD-no-evidence items stay
   **OUT-OF-SCOPE**.
 
 ## Incidental finding folded out of the chat dump

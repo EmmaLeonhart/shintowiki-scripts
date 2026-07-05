@@ -140,14 +140,61 @@ Q-items** (list only — QID + timestamp + byte-size + admin-gated undelete link
 content). **35** of the deleted QIDs overlap backlog #8's recovered ill-target set — those
 are already covered by #8 (content sourced from shinto-wiki ills, not the deleted items).
 
-- [ ] **BLOCKED-ON-USER-ACTION — RAG for the ~420 non-overlapping deleted items.** The dump
-  is a *listing*, not content. Deleted WD items aren't publicly retrievable (non-admin), the
-  one public inference corpus (shinto-wiki ills) is already mined by #8, and 58% are
-  sub-400-byte near-empty stubs. Reconstruction needs an **admin `Special:Undelete` content
-  export from Emma** — flagged on `[[Open questions]]`. If she declines, backlog #8's 304
-  ill-targets are the whole actionable surface; leave the stubs deleted. (Do NOT fabricate
-  content for opaque QIDs.)
+RAG DONE (corrected — my earlier "blocked" call was wrong): the deletion LOGS are public.
+`rag_deleted_logs.py` recovered **273 clean English labels** from `content was:"X"` log
+comments (kami, shrines, Izumo-taisha branch churches, people). Buckets: 322 empty-item /
+96 author-request / 26 self-initiated batch / 7 RfD. ~122 were Emma's OWN deletions
+(author-request + batch) → leave unless she says.
+
+RECOVERY via FANDOM (Emma's steer — don't rely on labels alone; the QID is saved discreetly in
+`dd=` for some ills and is in the fandom page HISTORY for the rest; fandom is NOT
+Cloudflare-blocked). `crossref_deleted_labels.py` (rebuilt against shinto.fandom.com, verified
+live from dev) finds the fandom `{{ill|<label>|…}}` for each recovered label and pulls the
+per-language langlinks (recreation content — they survive the `qid=DELETED_QID` overwrite),
+the current ill qid (`dd=` recoveries), the host page, and (`--deep`) the ORIGINAL qid from
+history (proven: `Niwa-tsume no Mikoto` → `Q135579706`, matches the RAG). Pure logic unit-tested
+(8 cases, green). Report: `shinto_wiki_crossref.md/.json`. Also wired into
+`recreate-deleted-crossref.yml` (weekly refresh).
+
+- [ ] **NEEDS-DECISION (Emma) — recreate any of the ~122 self-deleted items?** author-request
+  + self-initiated batch were Immanuelle's own deletions; recreating undoes her call. Flagged
+  on `[[Open questions]]`. The ~180 truly-empty (`content was:""`) + RfD-no-evidence stay out.
+- [ ] **NEEDS-INVESTIGATION (next loop) — vet the fandom crossref output** and feed the strong
+  candidates (matched fandom page, langlinks recovered, no live wikidata link yet) through #8's
+  human-gated generator. Run `--deep` for QID validation on the subset lacking a `dd=`.
+
+## Stop removing history from miraheze (Emma 2026-07-05 — no longer necessary)
+
+- [ ] **If miraheze history removal is still running, stop it.** The `history_offload` op
+  (in every orchestrator's OPS, gated by `ENABLE_HISTORY_OFFLOAD=1` + `ENABLE_REVDEL=1`,
+  destructive delete+recreate only on category ns 14 as of 2026-05-11) mirrors history to
+  fandom+XML then delete+recreates the miraheze page to purge visible history. Emma: this
+  isn't necessary anymore. INVESTIGATE whether any scheduled trigger / workflow-dispatch is
+  still passing `enable_history_offload=true` (+ `enable_revdel`); if so, stop passing it (or
+  disable the destructive stage). The fandom mirror it produced is actually load-bearing for
+  the deleted-item recovery above — but the *miraheze* history purge is the part to stop.
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
+
+---
+
+## END-OF-QUEUE (Emma-placed 2026-07-05 — investigate only when reached, not before)
+
+- [ ] **Fandom `Template:Ill` keeps getting wrongly deleted — the "no miraheze equivalent"
+  delete pipeline isn't covering redirects.** The fandom bot ("Their Eminence") deletes
+  `https://shinto.fandom.com/wiki/Template:Ill` on a recurring schedule with summary
+  "Bot: no Shinto equivalent time triggered pipeline" (observed 2026-06-30 08:29 and
+  2026-07-05 08:07 — recurs every few days). It should NOT be deleted. Emma: this indicates
+  our "delete fandom pages with no miraheze equivalent" op **isn't covering redirects** — the
+  miraheze equivalent of `Template:Ill` is very likely a REDIRECT that the equivalence check
+  doesn't count as "having an equivalent", so the op wrongly flags it as orphaned and deletes
+  it.
+  - **IMMEDIATE MITIGATION (Emma 2026-07-05 — critical, do this first to void the problem):**
+    make `Template:Ill` a **git-synced page on BOTH wikis** (add it to the git-synced set so it
+    is force-present on miraheze AND fandom). With a synced miraheze `Template:Ill` present, the
+    "no miraheze equivalent" check passes and the recurring fandom deletion stops; the sync also
+    restores it if deleted. Do this as the immediate fix.
+  - **ROOT-CAUSE FOLLOW-UP:** make the no-equivalent check follow/count redirect targets on the
+    miraheze side before deleting (likely in the fandom delete-orphans / fandom-cleanup pipeline).

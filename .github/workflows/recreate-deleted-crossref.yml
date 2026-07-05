@@ -1,0 +1,81 @@
+name: Recreate-deleted cross-reference
+
+# Backlog #8 intelligence-gathering (read-only, human-gated recreation).
+#
+# Refreshes the deleted-Immanuelle-items dataset and cross-references it against
+# the live shinto wiki — the wiki is Cloudflare-protected and unreachable from a
+# dev session, so this work runs here in CI (GitHub Actions egress is not
+# challenged), like every other wiki access in this repo.
+#
+#   1. rag_deleted_logs.py       — pulls the PUBLIC Wikidata deletion logs for the
+#      455 deleted QIDs in `context dump/deleted.txt` (an XTools export), buckets
+#      by deletion reason, and recovers the item label from `content was: "X"`
+#      comments. Read-only against wikidata.org. → deleted_log_rag.md/.json
+#   2. crossref_deleted_labels.py — finds the fandom {{ill|<label>|…}} for each
+#      recovered label and pulls recreation content: per-language langlinks (they
+#      survive the qid=DELETED_QID overwrite), the current ill qid (dd= recoveries),
+#      the host page. Read-only against shinto.fandom.com (fandom keeps history and
+#      is NOT Cloudflare-blocked — the deleted items' original QIDs live there).
+#      → shinto_wiki_crossref.md/.json
+#
+# NO wiki writes and NO Wikidata edits — both scripts are read-only and neither
+# feeds the QuickStatements submitter (this dir is outside every submitter's
+# allowlist/glob). Recreation stays human-gated. No secrets required; both APIs
+# are read with a compliant User-Agent. Both scripts bail on HTTP 429.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly, Monday 04:17 UTC (off-peak minute; not on :00/:30).
+    - cron: "17 4 * * 1"
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  crossref:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: RAG public deletion logs (Wikidata, read-only)
+        run: python3 recreate-deleted-wikidata/rag_deleted_logs.py
+
+      - name: Cross-reference labels vs shinto wiki (read-only)
+        run: python3 recreate-deleted-wikidata/crossref_deleted_labels.py --apply
+
+      - name: Commit + push reports
+        run: |
+          git add -f \
+            recreate-deleted-wikidata/deleted_log_rag.md \
+            recreate-deleted-wikidata/deleted_log_rag.json \
+            recreate-deleted-wikidata/shinto_wiki_crossref.md \
+            recreate-deleted-wikidata/shinto_wiki_crossref.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No cross-reference changes to commit."
+          else
+            git commit -m "chore(recreate-deleted): refresh deleted-items cross-reference [skip ci]"
+            for i in 1 2 3 4; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+              git push origin "HEAD:${GITHUB_REF_NAME}" && { echo "pushed."; break; }
+              sleep $((2 ** i))
+            done
+          fi
