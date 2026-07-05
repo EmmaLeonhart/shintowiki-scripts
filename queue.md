@@ -38,11 +38,8 @@ Remaining:
    relevance filter in `bfs/property_label_report.md`), the concept-classes, and the
    90-item text residue (`bfs/text_labels_residue.md`). World-religion drift =
    already labelled, skip.
-2. **Polish (low priority) — NEEDS-INVESTIGATION:** the one remaining Sanskrit-engine
-   nicety is the Arabic/Perso-Arabic initial-vowel carrier (Indra → "يندرا" starts
-   with a bare ya; a word-initial vowel should take an alef/hamza carrier). The exact
-   convention (short vs long vowel, hamza) needs research — don't approximate. (Greek
-   double-nasal in clusters FIXED: νντ→ντ, "Ίντρα"-style.)
+(Sanskrit-engine polish DONE: Greek double-nasal νντ→ντ; Arabic/Perso-Arabic/Hebrew
+word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he אינדרא.)
 
 ---
 

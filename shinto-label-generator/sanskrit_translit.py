@@ -145,8 +145,23 @@ _HEB = {
 }
 
 
-def _map_word(word, table):
-    return "".join(table.get(t, "") for t in _tokens(word))
+# Word-initial vowel carriers. Arabic/Persian/Hebrew can't start a word with a bare
+# vowel letter — a word-initial vowel sits on an alef (+hamza) / alef-yod-waw.
+# Verified against Wikipedia renderings: Indra = ar إندرا, fa/ur ایندرا, he אינדרא.
+_ARA_INIT = {"a": "أ", "i": "إ", "u": "أو", "e": "إ", "o": "أو", "ai": "أي", "au": "أو"}
+_PER_INIT = {"a": "ا", "i": "ای", "u": "او", "e": "ای", "o": "او", "ai": "ای", "au": "او"}
+_HEB_INIT = {"a": "א", "i": "אי", "u": "או", "e": "א", "o": "או", "ai": "אי", "au": "או"}
+
+
+def _map_word(word, table, init=None):
+    toks = _tokens(word)
+    out = []
+    for i, t in enumerate(toks):
+        if init and i == 0 and t in _VOWELS and t in init:
+            out.append(init[t])            # word-initial vowel -> carrier
+        else:
+            out.append(table.get(t, ""))
+    return "".join(out)
 
 
 # Toki Pona: (C)V(n) syllables; phonemes {p t k s m n l w j / a e i o u}. Map each
@@ -226,11 +241,11 @@ def sanskrit(name, lang):
             # so drop the redundant one (Indra: ν+ντ = "νντ" -> "ντ", cf. el "Ίντρα")
             r = r.replace("νντ", "ντ").replace("μμπ", "μπ").replace("γγκ", "γκ")
         elif kind == "ara":
-            r = _map_word(w, _ARA)
+            r = _map_word(w, _ARA, _ARA_INIT)
         elif kind == "per":
-            r = _map_word(w, _PER)
+            r = _map_word(w, _PER, _PER_INIT)
         elif kind == "heb":
-            r = _map_word(w, _HEB)
+            r = _map_word(w, _HEB, _HEB_INIT)
         elif kind == "tok":
             r = _tokipona(w)
         else:
