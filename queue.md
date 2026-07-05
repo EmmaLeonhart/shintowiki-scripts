@@ -22,6 +22,14 @@ Goal: name every important Shinto entity in all ~60 covered languages. All the
 transliteration categories (kami / Buddhist deities+Sanskrit engine / provinces /
 people / texts / Shikinaisha lists / court-ranks-CJK / misc-terms) are SHIPPED and
 wired into the 11-step `!regenerateQuickStatements.bat` — see DEVLOG 2026-07-04.
+
+DELIVERY to Wikidata (verified 2026-07-04): `modern-quickstatements/select_label_proposals.py`
+globs `shinto-label-generator/quickstatements/*.txt` — ALL category files included,
+not just `<lang>.txt` — into `label_proposals_drip.txt`, drip-fed **20/day** by the
+daily submission (routed to direct-daily-edits since the QS path is retired). The
+drip opens FULLY on `RAMP_DATE` = 2027-05-23 (a deliberate ~1-year community-review
+window). So the labels reach Wikidata; the tail just drains slowly until the ramp.
+
 Remaining:
 
 1. **Court ranks — non-CJK lexical translation.** "Junior/Senior Nth Rank" → each
