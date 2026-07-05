@@ -149,9 +149,11 @@ def _map_word(word, table):
     return "".join(table.get(t, "") for t in _tokens(word))
 
 
-# Toki Pona: strict (C)V(n) syllables, phonemes {p t k s m n l w j / a e i o u}.
-# Map each sound to the nearest tok phoneme; BREAK consonant clusters by inserting
-# an epenthetic 'a' (never drop). Caller prepends the classifier (e.g. "sewi").
+# Toki Pona: (C)V(n) syllables; phonemes {p t k s m n l w j / a e i o u}. Map each
+# sound to the nearest tok phoneme. `n` is a valid CODA and stays before a following
+# consonant (nt/np/nk/nm are real — cf. kami tok "Enma", "konken", "menten"); only
+# a cluster of two NON-`n` consonants gets an epenthetic 'a' (never drop). Deity
+# names take the classifier "jan sewi" (added by the caller).
 _TOK_C = {
     "kh": "k", "gh": "k", "ch": "s", "jh": "s", "th": "t", "dh": "t",
     "ph": "p", "bh": "p", "sh": "s",
@@ -172,7 +174,8 @@ def _tokipona(word):
             c = _TOK_C[t]
             if not c:
                 continue
-            if out and out[-1] not in _TOK_VOWELS:   # cluster -> epenthetic vowel
+            # two NON-'n' consonants -> epenthetic 'a'; 'n' is a legal coda, keep it
+            if out and out[-1] not in _TOK_VOWELS and out[-1] != "n":
                 out.append("a")
             out.append(c)
     s = "".join(out)

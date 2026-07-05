@@ -32,7 +32,7 @@ CLASS = "Q65122124"
 # scripts aren't in the Sanskrit module yet, so they're skipped (honest gap).
 SANSKRIT_SCRIPTS = sanskrit_translit.SUPPORTED   # hi mai mr bn as ru uk el ar arz fa ur he tok
 LATIN = set(COVERED) - SANSKRIT_SCRIPTS - set(ZH_CODES) - {"ko"}
-SEWI = "sewi "   # toki pona deity classifier (proper names need a head noun)
+SEWI = "jan sewi "   # toki pona deity classifier (jan=person + sewi=sacred)
 
 
 def _utf8():
