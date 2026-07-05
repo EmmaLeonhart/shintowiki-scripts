@@ -547,20 +547,9 @@ def _wiki_href(title):
 
 # kind: "repo_static" | "repo_workflow" | "category" | "category_multi" | "search"
 BACKLOG_ITEMS = [
-    {
-        "id": 1, "slug": "retire-terminating-scripts",
-        "title": "Retire terminating cleanup scripts (July 2026)",
-        "blurb": "Scheduled for July 2026: confirm these are inert (state covers "
-                 "every eligible page → no more edits), then remove from the "
-                 "workflow and delete. Time-gated, not yet actionable.",
-        "kind": "repo_static",
-        "scripts": [
-            "shinto_miraheze/reimport_from_enwiki.py",
-            "shinto_miraheze/migrate_talk_pages.py",
-            "shinto_miraheze/normalize_category_pages.py",
-            "shinto_miraheze/remove_legacy_cat_templates.py",
-        ],
-    },
+    # id:1 "retire-terminating-scripts" DONE 2026-07-05 — all 4 confirmed inert
+    # (unwired from wiki-cleanup.yml; normalize/remove_legacy ported to orchestrator
+    # ops; reimport/migrate drained) and deleted. See DEVLOG 2026-07-05.
     {
         "id": 2, "slug": "audit-legacy-scripts",
         "title": "Audit which pre-orchestrator legacy scripts still run",
