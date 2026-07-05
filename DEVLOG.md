@@ -4,25 +4,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
-## 2026-07-05 — Backlog #2 (audit-legacy-scripts) closed: stale terminating-script review cleared
+## 2026-07-05 — Next-session analysis pass: per-item backlog resolution status doc
 
-Closed the last buildable piece of backlog #2. The July-2026 terminating-script review was
-the one open empirical gap; it was resolved by backlog #1 (all four scripts —
-`reimport_from_enwiki`, `migrate_talk_pages`, `normalize_category_pages`,
-`remove_legacy_cat_templates` — confirmed inert and deleted from the repo). Re-verified:
-`grep` confirms none of the four exists as a file and none is referenced by an active
-(uncommented) workflow step; the only actively-wired `wiki-cleanup.yml` steps are cycling
-orchestrator-adjacent ops, SPARQL/enwiki-driven generators, deletion sweeps, or
-intentionally date-gated no-ops (`add_/remove_wikidata_crud_categories`) — no
-silently-inert deleted-file references remain. Fixed the concrete residual: the
-`wiki-cleanup.yml` header comment (lines 19-27) still listed the four deleted scripts as
-"Terminating scripts kept here (review July 2026)" — rewrote it to record the review as
-COMPLETE and to keep only the forward-looking policy for future terminating scripts. The
-board (`site/generate_pages.py` BACKLOG_ITEMS) already carried #2 as a DONE comment; todo.md
-has no distinct #2 line (it maps to the `docs/program_audit_2026-06.md` reference pointer).
-Removed the #2 bullet from queue.md. (Noted for the status report, not part of #2: several
-`cleanup-loop.yml` scheduled runs 2026-06-29→07-04 show `failure`; the 07-05 run succeeded —
-worth a look next loop, but not a silently-inert-script symptom.)
+Emma-requested hand-off. Wrote `docs/backlog_resolution_status_2026-07-05.md` — for each of
+the 8 `BACKLOG_ITEMS` (`site/generate_pages.py`), how far it got this session and what is
+left, tagged RESOLVED / SHIPPED-AUTOMATION / PARTIAL / DEFERRED, with a one-line scoreboard.
+Scoreboard: #1 RESOLVED, #2 RESOLVED, #3 SHIPPED-AUTOMATION (residual = human review),
+#4 SHIPPED-AUTOMATION (~7-page review remnant), #5 PARTIAL (the next-session build thread —
+later gazetteer suffixes + prefecture-disambiguated misses, then the human queue),
+#6 SHIPPED-AUTOMATION (human review), #7 SHIPPED-AUTOMATION (remote cloud-queue routine),
+#8 DEFERRED (info-gathering shipped; per-target research + human-gated recreation remain).
+Sources: the board, todo.md, queue.md, the 2026-07-05 DEVLOG entries. Removed the analysis-
+pass item from queue.md.
+
+## 2026-07-05 — Backlog #2 follow-up: cleared residual the earlier close missed
+
+The earlier same-day "#2 CLOSED" entry (below) re-verified the scripts but left two loose
+ends. Cleared both: (1) the `wiki-cleanup.yml` header comment (lines 19-27) still listed the
+four deleted scripts as "Terminating scripts kept here (review July 2026)" — rewrote it to
+record the review COMPLETE and keep only the forward policy for future terminating scripts;
+(2) the queue.md #2 bullet was still open despite the board/todo already reflecting done —
+removed it. Re-confirmed via `grep` that none of the four scripts exists as a file and none
+is referenced by an active (uncommented) workflow step. (Noted for the status report, not
+part of #2: several `cleanup-loop.yml` scheduled runs 2026-06-29→07-04 show `failure`; the
+07-05 run succeeded — worth a look next loop, not a silently-inert-script symptom.)
 
 ## 2026-07-05 — Backlog #8: deleted-QID recreation info-gathering generator (human-gated)
 
