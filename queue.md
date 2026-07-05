@@ -52,7 +52,7 @@ So the translation tier is COMPLETE: the transliteration matrix is shipped +
 drip-delivered, and every confidently-actionable translation is done. What's left is
 remote-routine drift and the 2027 delivery ramp.
 
-**Active — QuickStatements provenance comments** (promoted from todo.md 2026-07-05).
+**DONE — QuickStatements provenance comments** (2026-07-05; promoted from todo.md).
 Annotate each generated label line with the source it derives from, as a `# <source>`
 comment line (drip selector + submitter skip `#`, so it never reaches Wikidata; same
 pattern generate_indonesian_proposals.py already uses). FOUNDATION SHIPPED: `write_qs`
@@ -76,11 +76,14 @@ shrine_rank, courtrank_buddhist, buddhist, **province**, **text** (text's
 a provenance assertion updated). These apply on Emma's next local
 `!regenerateQuickStatements.bat`.
 
-ROLLOUT REMAINING — the 3 CI-run generators (these DO apply on CI once wired; thread a
-per-label `source`, fix any 3-tuple sample loop): **korean** (hanja vs koreanize source),
-**chinese** (ja kanji), **multilang** (the id/en source label it extracts). indonesian
-already emits `# Source:` comments. One generator per tick. Each wired file ~doubles in
-line count on regen (a comment per label) — the intended "annotate output lines".
+ROLLOUT COMPLETE — every transliteration generator now emits provenance. CI-run
+(korean, indonesian, chinese, tokiponize already did; **multilang** wired 2026-07-05 →
+applies next CI regen) + all 8 category generators (apply on the local `.bat` rebuild).
+Not covered, by design: `shikinaisha_lists` (frame-built descriptive list-titles, not a
+transliteration of one source label — could add a province/parent source later if wanted)
+and the hand-authored `courtrank_/concept_/property_translations` (translations, no source
+label → N/A). Each wired file ~doubles in line count on regen — the intended "annotate
+output lines".
 (Sanskrit-engine polish DONE: Greek double-nasal νντ→ντ; Arabic/Perso-Arabic/Hebrew
 word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he אינדרא.)
 

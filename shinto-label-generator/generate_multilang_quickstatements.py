@@ -1038,7 +1038,8 @@ def main():
             name, is_grand, p_type = extracted
             label = format_label(lang, name, is_grand, p_type)
             if label:
-                rows.append({"qid": qid, "label": label})
+                rows.append({"qid": qid, "label": label,
+                             "source": f'EN "{binding["enLabel"]["value"]}"'})
                 seen.add(qid)
                 en_added += 1
         print(f"  From English: {en_added} rows")
@@ -1063,7 +1064,7 @@ def main():
 
             label = format_label(lang, name, is_grand, p_type)
             if label:
-                rows.append({"qid": qid, "label": label})
+                rows.append({"qid": qid, "label": label, "source": f'ID "{id_label}"'})
                 id_added += 1
             else:
                 skipped += 1
@@ -1079,6 +1080,12 @@ def main():
                 # space). Collapse space/tab/nbsp/narrow-nbsp -> one ASCII space + strip.
                 label = re.sub(r'[ \t  ]+', ' ', row["label"]).strip()
                 escaped = label.replace('"', '""')
+                # provenance: the source shrine label this transliteration derives from
+                # (same '# Source:' style korean/chinese use; comment lines skipped by
+                # the drip selector + submitter, so they never reach Wikidata)
+                src = re.sub(r'\s+', ' ', row.get("source", "")).strip()
+                if src:
+                    f.write(f'# Source: {src}\n')
                 f.write(f'{row["qid"]}\tL{lang}\t"{escaped}"\n')
 
         print(f"  Total: Wrote {len(rows)} to {filepath}")

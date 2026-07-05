@@ -26,9 +26,11 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
   fill-pipeline until that's clarified.)_
 - [x] **QuickStatements provenance comments:** annotate output lines with the
   source label they derive from (id-label for most languages, ja kanji for zh,
-  reading-vs-hanja for ko). _IN PROGRESS 2026-07-05 — foundation shipped (write_qs
-  4-tuple provenance + kami wired + tests); per-generator rollout tracked in
-  [queue.md](queue.md) "Active — QuickStatements provenance comments"._
+  reading-vs-hanja for ko). _DONE 2026-07-05 — every transliteration generator emits
+  a `# Source:`/`# <source>` comment (korean/indonesian/chinese/tokiponize already
+  did; write_qs 4-tuple + all 8 category generators + multilang wired this day).
+  N/A: shikinaisha_lists (frame-built titles) + hand-authored *_translations. See
+  DEVLOG 2026-07-05 and queue.md "DONE — QuickStatements provenance comments"._
 - [ ] **Long-tail language expansion:** `python language_registry.py` prints
   the uncovered languages by label count; th is the biggest (needs a real Thai
   transliterator — pre-posed vowel signs).

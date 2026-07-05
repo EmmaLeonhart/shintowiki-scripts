@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Provenance rollout COMPLETE: multilang wired; korean/chinese/tok already had it
+
+Audited comment coverage across every quickstatements/*.txt and found the CI-run
+generators korean (ko.txt), indonesian (id_proposed), chinese (zh + all variants/gan),
+and tokiponize (tok.txt) ALREADY emit `# Source:` provenance (55k/22k/53k/32k comment
+lines) — so only multilang was missing. Wired it: each row now carries a `source`
+(`EN "…"` from the English-label path, `ID "…"` from the Indonesian path) and the write
+loop emits `# Source: <source>` before the label (whitespace-sanitised; drip + submitter
+skip `#`). Applies on the next CI regen. courtrank_labels.txt is written by
+generate_courtrank_buddhist's gen() (already wired). That completes the rollout: every
+transliteration generator emits provenance. Deliberately N/A: shikinaisha_lists
+(frame-built descriptive titles, not a one-source transliteration) and the hand-authored
+*_translations (no source label). todo item closed. Suite 166.
+
 ## 2026-07-05 — Provenance: province + text wired — all 8 category generators done
 
 Wired the last two category generators. province: framed langs + ko ← `romaji "…"`,
