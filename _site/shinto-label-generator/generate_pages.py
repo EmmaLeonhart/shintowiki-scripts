@@ -131,8 +131,33 @@ LANGS = [
       in Egyptian Arabic, Japanese <em>g</em> maps to <strong>ج</strong>.</p>"""),
 
     ("id_proposed", "Indonesian (Proposed)", "Bahasa Indonesia", "🇮🇩", """\
-      <p>Proposed Indonesian labels for Japanese-only shrines. Generated from 
+      <p>Proposed Indonesian labels for Japanese-only shrines. Generated from
       Japanese Kanji/Kana using <code>pykakasi</code> for Romaji conversion.</p>"""),
+
+    # Cross-category label sets — one file spanning ALL covered languages
+    # (not per-language). Same QuickStatements format, so they render here too.
+    ("shikinaisha_lists", "Shikinaisha lists (all langs)", "式内社一覧", "📜", """\
+      <p>Labels for the <strong>Engishiki Jinmyōchō</strong> (延喜式神名帳) and its 69
+      per-province "List of Shikinaisha" items, in 58 languages in one file. The
+      "{list-word} Shikinaisha in {province}" frame is authored per language; the
+      province name is transliterated (Latin keeps romaji), CJK from the kanji.</p>"""),
+
+    ("kami_labels", "Kami / deities (all langs)", "神", "⛩️", """\
+      <p>Multi-language labels for <strong>kami</strong> (Shinto deities;
+      <code>P31/P279* Q524158</code>). Bare-name transliteration via
+      <code>translit_common</code> — romaji → each script, CJK from the kanji, Korean
+      phonetic. English-gloss labels (no romaji reading) get CJK only, never a
+      phonetically-mangled transliteration.</p>"""),
+
+    ("shrine_rank_labels", "Shrine ranks (all langs)", "社格", "🏵️", """\
+      <p>Labels for the <strong>shrine ranks</strong> (社格) — Kanpei Taisha, Ichinomiya,
+      Myōjin Taisha, … (<code>P31 Q10444029</code>). Bare-term transliteration; Korean
+      uses the sino-Korean (hanja) reading since ranks are Sino-Japanese compounds.</p>"""),
+
+    ("province_labels", "Provinces of Japan (all langs)", "令制国", "🗾", """\
+      <p>Labels for the old <strong>provinces of Japan</strong> (令制国;
+      <code>P31 Q860290</code>). A per-language "{X} Province" frame paired with the
+      shared name transliteration; CJK from the kanji (which carries 国).</p>"""),
 ]
 
 PAGE_TEMPLATE = """\
