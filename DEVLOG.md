@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — QA audit: 19 mixed-script ko labels (hanja_read kana leak)
+
+Audited all committed ko labels: 19 carried residual Han/kana because hanja_read only
+rejected leftover HAN, not kana. hanja.translate converts Han and leaves kana/Latin
+verbatim, so pure-katakana names (Q15221664 ターラカ) and partial conversions
+(Q107016745 国指定文化財等データベース → '국지정문화재등データベース') emitted mixed-script
+garbage. Fixed the shared helper: hanja_read now also returns None if any hiragana/
+katakana survives — a valid sino-Korean reading is pure Hangul. Recomputed the 19 via
+the fixed per-generator logic (buddhist = hanja-only → drop; text = hanja else
+koreanize(romaji) fallback): 2 text items gained clean phonetic Hangul (Q106840430
+시카고마뉴아루오부스타이루; Q4212085 카나즈카이), 17 dropped (foreign-encyclopedia titles
+with no clean reading — honest gap, not garbage). Re-audit: 0 ko leaks. Also verified
+clean this pass: QuickStatements quoting (0 malformed) and exact-duplicate lines (0).
+New test_ko_hanja_read.py. Suite 154 → 157.
+
 ## 2026-07-05 — zh /v/ (ヴ) man'yōgana fix + two regressions CI regen exposed
 
 Queue item: the katakana ヴ (vu) leak. Japanese has no man'yōgana for /v/; added the

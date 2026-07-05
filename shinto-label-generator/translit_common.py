@@ -87,11 +87,17 @@ def romaji_source(en, ja):
 
 
 def hanja_read(ja_kanji):
-    """Sino-Korean reading of a kanji string, or None if unresolved."""
+    """Sino-Korean reading of a kanji string, or None if unresolved. A valid reading
+    is pure Hangul — so reject the output if ANY Han is left unconverted OR if any
+    Japanese kana survived (hanja only converts Han, leaving kana/Latin verbatim,
+    which would otherwise emit mixed-script garbage like '국지정문화재등データベース')."""
     if not ja_kanji:
         return None
     out = hanja.translate(ja_kanji, "substitution")
-    if any("一" <= c <= "鿿" or "㐀" <= c <= "䶿" for c in out):
+    if any("一" <= c <= "鿿" or "㐀" <= c <= "䶿"        # residual Han (unconverted)
+           or "ぁ" <= c <= "ゖ"                   # hiragana
+           or "ァ" <= c <= "ヺ"                   # katakana
+           for c in out):
         return None
     return out or None
 
