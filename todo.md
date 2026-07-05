@@ -18,9 +18,17 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 - [ ] **EN/FR/ID gap regularization:** some shrines have labels in one or two
   of English/French/Indonesian but not all three (old technical failures).
   Analyze the gaps, then a pipeline to fill missing ones where the others exist.
-- [ ] **QuickStatements provenance comments:** annotate output lines with the
+  _(2026-07-05 assessment — likely partly superseded: the BFS/multilang pipeline now
+  generates fr + id fills for covered shrines INTO the drip, so a live-Wikidata gap
+  query is confounded — it can't cleanly separate "genuinely unaddressed" from "queued,
+  fills after the 2027 ramp". NEEDS-DECISION from Emma: is this still wanted as a
+  distinct same-source cross-fill, or is it subsumed by the BFS drip? Don't build the
+  fill-pipeline until that's clarified.)_
+- [x] **QuickStatements provenance comments:** annotate output lines with the
   source label they derive from (id-label for most languages, ja kanji for zh,
-  reading-vs-hanja for ko).
+  reading-vs-hanja for ko). _IN PROGRESS 2026-07-05 — foundation shipped (write_qs
+  4-tuple provenance + kami wired + tests); per-generator rollout tracked in
+  [queue.md](queue.md) "Active — QuickStatements provenance comments"._
 - [ ] **Long-tail language expansion:** `python language_registry.py` prints
   the uncovered languages by label count; th is the biggest (needs a real Thai
   transliterator — pre-posed vowel signs).

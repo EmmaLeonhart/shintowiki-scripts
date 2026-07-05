@@ -49,6 +49,7 @@ def main():
         # Phonetic transliterations need a real romaji reading; CJK comes from
         # the kanji and is emitted regardless.
         if romaji:
+            src = f'romaji "{romaji}"'          # provenance: phonetic langs derive from this
             for lang in covered:
                 if lang in existing or lang in ZH_CODES:   # never touch an existing label
                     continue
@@ -56,13 +57,14 @@ def main():
                 if lab:
                     if lang == "tok":          # kami are deities: jan sewi classifier (Emma)
                         lab = "jan sewi " + lab
-                    lines.append((qid, lang, lab))
+                    lines.append((qid, lang, lab, src))
                     per_lang[lang] = per_lang.get(lang, 0) + 1
         else:
             no_name += 1
+        zh_src = f'ja kanji "{ja}"'             # provenance: CJK derives from the kanji
         for code, lab in zh_map(ja).items():
             if code in covered and code not in existing and lab:
-                lines.append((qid, code, lab))
+                lines.append((qid, code, lab, zh_src))
                 per_lang[code] = per_lang.get(code, 0) + 1
 
     outdir = os.path.join(HERE, "quickstatements")
@@ -74,7 +76,7 @@ def main():
     print(f"  {len(items)} kami; skipped {no_name} with no usable source name.")
     print("\n--- sample ---")
     shown = 0
-    for qid, lang, lab in lines:
+    for qid, lang, lab, *_src in lines:
         if lang in ("de", "ru", "el", "hi", "ar", "zh", "ko", "tok") and shown < 24:
             print(f"  {qid:12s} {lang:6s} | {lab}")
             shown += 1

@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — QuickStatements provenance comments: foundation + kami wired
+
+Translation tier being closed, promoted the next label-generator-horizon todo item
+(provenance comments) into the work-loop. write_qs now accepts an optional 4th `source`
+element per line and emits a `# <source>` provenance comment before the label (sanitised
+tab/newline-free; drip selector + submitter both skip `#`, so it never reaches
+Wikidata) — backward compatible with existing 3-tuple callers, new test_write_qs_
+provenance.py (5 tests). Wired generate_kami_quickstatements end-to-end (phonetic langs
+← `romaji "…"`, CJK ← `ja kanji "…"`); CI regen will add the comments to kami_labels.txt.
+Rollout for the other 7 write_qs users + korean/chinese/multilang planned in queue.md,
+one generator per tick. Also recorded the EN/FR/ID gap-regularization todo as
+NEEDS-DECISION: the BFS pipeline already queues fr/id fills into the drip, so a
+live-Wikidata gap query is confounded — needs Emma's intent before building. Suite
+160 → 165.
+
 ## 2026-07-05 — Translation tier investigated & closed (queue was stale)
 
 Resolved the standing NEEDS-INVESTIGATION on whether the translation tier was

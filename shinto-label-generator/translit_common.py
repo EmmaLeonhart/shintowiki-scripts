@@ -186,8 +186,22 @@ def fetch_labels(qids):
 
 
 def write_qs(path, lines):
-    """lines: iterable of (qid, lang, label). QuickStatements label format."""
+    """lines: iterable of (qid, lang, label) OR (qid, lang, label, source).
+
+    When a 4th `source` element is present and truthy, a ``# <source>`` provenance
+    comment line is written immediately before the label — noting the source label the
+    transliteration derives from (todo: "annotate output lines with the source label").
+    Comment lines are skipped by both the drip selector (select_label_proposals) and
+    the submitter (direct_daily_edits), so they never reach Wikidata. Backward
+    compatible: 3-tuples emit just the label line."""
     with open(path, "w", encoding="utf-8", newline="\n") as f:
-        for qid, lang, label in lines:
+        for row in lines:
+            qid, lang, label = row[0], row[1], row[2]
+            source = row[3] if len(row) > 3 else None
+            if source:
+                # keep the comment single-line and tab-free so it can't be misparsed
+                src = str(source).replace("\t", " ").replace("\r", " ").replace("\n", " ").strip()
+                if src:
+                    f.write(f"# {src}\n")
             esc = label.replace('"', '""')
             f.write(f'{qid}\tL{lang}\t"{esc}"\n')
