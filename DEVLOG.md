@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Provenance: province + text wired — all 8 category generators done
+
+Wired the last two category generators. province: framed langs + ko ← `romaji "…"`,
+CJK ← `ja kanji "…"` (+ 3-tuple sample-loop fix). text: restructured `labels_for_item`
+to return `(lang, label, source)` triples (zh ← `ja kanji`, ko ← `ja kanji … (hanja)` or
+`romaji`, tok/engine ← `romaji`, Latin-verbatim ← `title "…"` since the label IS the
+title); updated main's unpack and the test `_d` helper (adapted to triples, not
+weakened) + added a provenance assertion test. That assertion caught a real wrong
+assumption of mine (I expected `de`→romaji, but `de` is Latin-verbatim → `title` source)
+— fixed the test to the correct behaviour rather than the code. All 8 category
+generators now emit provenance (apply on the local .bat rebuild). Remaining: the 3
+CI-run generators korean/chinese/multilang (apply on CI once wired). Suite 165 → 166.
+
 ## 2026-07-05 — Provenance: buddhist wired + corrected a wrong CI claim, verified E2E
 
 Two things. (1) Wired the buddhist generator for provenance (all 3 branches —

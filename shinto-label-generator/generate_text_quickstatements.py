@@ -62,30 +62,34 @@ def target_langs():
 
 
 def labels_for_item(en, ja, missing):
-    """[(lang, label)] for one text item across the missing languages."""
+    """[(lang, label, source)] for one text item across the missing languages.
+    `source` is the provenance note (the label the transliteration derives from)."""
     romaji = romaji_source(en, ja)
     latin_title = clean_name(en) if clean_name(en) else (romaji or "")
     kanji = ja if ja and _HAN.search(ja) else None
 
     out = []
     zh_labels = zh_map(kanji) if kanji else {}
+    zh_src = f'ja kanji "{kanji}"' if kanji else None
+    rom_src = f'romaji "{romaji}"' if romaji else None
     for lang in missing:
         if lang in ZH_CODES:
             if zh_labels.get(lang):
-                out.append((lang, zh_labels[lang]))
+                out.append((lang, zh_labels[lang], zh_src))
             continue
         if lang == "ko":
             label = hanja_read(kanji) if kanji else None
+            src = f'ja kanji "{kanji}" (hanja)' if label else None
             if not label and romaji:
-                label = koreanize(romaji)
+                label = koreanize(romaji); src = rom_src
             if label:
-                out.append((lang, label))
+                out.append((lang, label, src))
             continue
         if lang == "tok":
             if romaji:
                 label = bare_name("tok", romaji)
                 if label:
-                    out.append((lang, label))
+                    out.append((lang, label, rom_src))
             continue
         if not romaji:
             # Latin + engine scripts need a real reading; emitting the
@@ -93,10 +97,12 @@ def labels_for_item(en, ja, missing):
             continue
         if lang in _ENGINE_LANGS:
             label = bare_name(lang, romaji)
+            src = rom_src
         else:
             label = latin_title or romaji
+            src = f'title "{latin_title or romaji}"'   # kept verbatim, so its own title
         if label:
-            out.append((lang, label))
+            out.append((lang, label, src))
     return out
 
 
@@ -137,8 +143,8 @@ def main():
             continue
         got = labels_for_item(en, ja, missing)
         if got:
-            for lang, label in got:
-                lines.append((qid, lang, label))
+            for lang, label, source in got:
+                lines.append((qid, lang, label, source))
         else:
             residue.append((qid, en, ja, r["p31_types"]))
 

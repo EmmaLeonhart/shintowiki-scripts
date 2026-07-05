@@ -70,13 +70,17 @@ well-formed `# <source>` lines, one per label, integrity tests green — then re
 category files stay a consistent set for the next full rebuild). The CI-run subset
 (korean/chinese/multilang) DOES apply on CI once wired.
 
-WIRED so far: kami, human, misc_terms, shrine_rank, courtrank_buddhist, **buddhist**
-(2026-07-05). ROLLOUT REMAINING (thread a per-label `source`; fix each generator's
-sample-print loop that unpacks 3-tuples): category generators **province**, **text**
-(local-rebuild-gated), then the CI-run **korean** (hanja vs koreanize), **chinese**
-(ja kanji), **multilang** (id/en source label) — these last three apply on CI once
-wired. One generator per tick. Each wired file ~doubles in line count on regen (a comment
-per label) — the intended "annotate output lines".
+WIRED — ALL 8 CATEGORY generators done (2026-07-05): kami, human, misc_terms,
+shrine_rank, courtrank_buddhist, buddhist, **province**, **text** (text's
+`labels_for_item` now returns `(lang, label, source)` triples; its test helper +
+a provenance assertion updated). These apply on Emma's next local
+`!regenerateQuickStatements.bat`.
+
+ROLLOUT REMAINING — the 3 CI-run generators (these DO apply on CI once wired; thread a
+per-label `source`, fix any 3-tuple sample loop): **korean** (hanja vs koreanize source),
+**chinese** (ja kanji), **multilang** (the id/en source label it extracts). indonesian
+already emits `# Source:` comments. One generator per tick. Each wired file ~doubles in
+line count on regen (a comment per label) — the intended "annotate output lines".
 (Sanskrit-engine polish DONE: Greek double-nasal νντ→ντ; Arabic/Perso-Arabic/Hebrew
 word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he אינדרא.)
 

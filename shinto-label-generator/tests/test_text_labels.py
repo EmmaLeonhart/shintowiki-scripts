@@ -11,8 +11,9 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from generate_text_quickstatements import labels_for_item, target_langs  # noqa: E402
 
 
-def _d(pairs):
-    return dict(pairs)
+def _d(triples):
+    # labels_for_item now yields (lang, label, source); collapse to {lang: label}
+    return {lang: label for lang, label, *_ in triples}
 
 
 def test_romaji_title_covers_latin_engine_zh_ko():
@@ -46,6 +47,16 @@ def test_sinitic_title_non_romaji_en_still_gets_zh_ko():
 def test_unroutable_item_yields_nothing():
     # No romaji, no kana, no kanji: e.g. an empty-label encyclopedia article.
     assert labels_for_item("", "", ["de", "ru", "zh", "ko"]) == []
+
+
+def test_labels_carry_provenance_source():
+    # each triple's 3rd element notes where the label derives from
+    got = labels_for_item("Engishiki", "延喜式", ["de", "ru", "zh", "ko"])
+    src = {lang: source for lang, _label, source in got}
+    assert src["de"].startswith("title ")          # Latin verbatim: label IS the title
+    assert src["ru"].startswith("romaji ")         # engine lang from the romaji reading
+    assert src["zh"].startswith("ja kanji ")       # zh from the kanji
+    assert "hanja" in src["ko"]                     # ko sino-Korean reading of the kanji
 
 
 def test_target_langs_excludes_sources():

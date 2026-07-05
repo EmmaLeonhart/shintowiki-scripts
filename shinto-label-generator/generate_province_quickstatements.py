@@ -84,24 +84,26 @@ def main():
 
         # Framed transliterations (need a romaji province name)
         if has_romaji:
+            rom_src = f'romaji "{name_en}"'        # provenance: framed langs + ko derive from this
             for lang, tmpl in FRAME.items():
                 if lang not in covered or lang in existing:
                     continue
                 n = bare_name(lang, name_en, ja)   # translit or plain romaji
                 if n:
-                    lines.append((qid, lang, tmpl.format(n=n)))
+                    lines.append((qid, lang, tmpl.format(n=n), rom_src))
                     per_lang[lang] = per_lang.get(lang, 0) + 1
             # Korean: phonetic name + 국 (matches the Shikinaisha convention)
             if "ko" in covered and "ko" not in existing:
                 k = koreanize(name_en)
                 if k:
-                    lines.append((qid, "ko", f"{k}국"))
+                    lines.append((qid, "ko", f"{k}국", rom_src))
                     per_lang["ko"] = per_lang.get("ko", 0) + 1
 
         # CJK from the kanji label (already carries 国), regardless of romaji
+        zh_src = f'ja kanji "{ja}"'                # provenance: CJK derives from the kanji
         for code, lab in zh_map(ja).items():
             if code in covered and code not in existing and lab:
-                lines.append((qid, code, lab))
+                lines.append((qid, code, lab, zh_src))
                 per_lang[code] = per_lang.get(code, 0) + 1
 
     outdir = os.path.join(HERE, "quickstatements")
@@ -113,7 +115,7 @@ def main():
     print(f"  {len(items)} provinces.")
     print("\n--- sample ---")
     shown = 0
-    for qid, lang, lab in lines:
+    for qid, lang, lab, *_ in lines:
         if lang in ("de", "ru", "el", "fr", "zh", "ko", "tok") and shown < 21:
             print(f"  {qid:12s} {lang:6s} | {lab}")
             shown += 1
