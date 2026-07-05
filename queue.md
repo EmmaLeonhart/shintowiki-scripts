@@ -168,17 +168,6 @@ surface = the ~213 fandom-matched, langlink-bearing items (203 QID-anchored).
   generator, respecting the CLAUDE.md Wikidata rules. 203 are QID-anchored; the ~12
   label-only matches + the 57 unmatched need a closer look.
 
-## Stop removing history from miraheze (Emma 2026-07-05 — no longer necessary)
-
-- [ ] **If miraheze history removal is still running, stop it.** The `history_offload` op
-  (in every orchestrator's OPS, gated by `ENABLE_HISTORY_OFFLOAD=1` + `ENABLE_REVDEL=1`,
-  destructive delete+recreate only on category ns 14 as of 2026-05-11) mirrors history to
-  fandom+XML then delete+recreates the miraheze page to purge visible history. Emma: this
-  isn't necessary anymore. INVESTIGATE whether any scheduled trigger / workflow-dispatch is
-  still passing `enable_history_offload=true` (+ `enable_revdel`); if so, stop passing it (or
-  disable the destructive stage). The fandom mirror it produced is actually load-bearing for
-  the deleted-item recovery above — but the *miraheze* history purge is the part to stop.
-
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.

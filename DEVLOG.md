@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Miraheze history removal: already stopped (2026-06-01 cutoff) — queue item resolved
+
+Emma queued: "if we are still removing history from miraheze, stop — not necessary anymore."
+Investigated instead of assuming. `cleanup-loop.yml` DOES pass `enable_history_offload: true`
++ `enable_revdel: true` to every orchestrator, BUT the `history_offload` op has a code-level
+`CUTOFF_DATE = datetime.date(2026, 6, 1)`: past that date it hard-returns "disabled past cutoff"
+unless `FORCE_HISTORY_OFFLOAD_PAST_CUTOFF=1`, which is set NOWHERE in the workflows (the only
+reference is the op reading the env var). Today is 2026-07-05 → the op has been a no-op on every
+run since June 1. So we are NOT still removing miraheze history — it stopped over a month ago;
+Emma's concern is already satisfied. The `enable_*` flags in cleanup-loop.yml are moot (the code
+cutoff overrides them); left as-is rather than churning 22 lines of the critical daily workflow
+for a purely cosmetic change — the cutoff is the authoritative, load-bearing stop. Pruned the
+queue item.
+
 ## 2026-07-05 — Context dump processed: deleted-Immanuelle-items RAG blocker identified
 
 Went over `context dump/` (committed `911bbfb`). `deleted.txt` = XTools export of **455
