@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Backlog #2 (audit-legacy-scripts) closed: stale terminating-script review cleared
+
+Closed the last buildable piece of backlog #2. The July-2026 terminating-script review was
+the one open empirical gap; it was resolved by backlog #1 (all four scripts —
+`reimport_from_enwiki`, `migrate_talk_pages`, `normalize_category_pages`,
+`remove_legacy_cat_templates` — confirmed inert and deleted from the repo). Re-verified:
+`grep` confirms none of the four exists as a file and none is referenced by an active
+(uncommented) workflow step; the only actively-wired `wiki-cleanup.yml` steps are cycling
+orchestrator-adjacent ops, SPARQL/enwiki-driven generators, deletion sweeps, or
+intentionally date-gated no-ops (`add_/remove_wikidata_crud_categories`) — no
+silently-inert deleted-file references remain. Fixed the concrete residual: the
+`wiki-cleanup.yml` header comment (lines 19-27) still listed the four deleted scripts as
+"Terminating scripts kept here (review July 2026)" — rewrote it to record the review as
+COMPLETE and to keep only the forward-looking policy for future terminating scripts. The
+board (`site/generate_pages.py` BACKLOG_ITEMS) already carried #2 as a DONE comment; todo.md
+has no distinct #2 line (it maps to the `docs/program_audit_2026-06.md` reference pointer).
+Removed the #2 bullet from queue.md. (Noted for the status report, not part of #2: several
+`cleanup-loop.yml` scheduled runs 2026-06-29→07-04 show `failure`; the 07-05 run succeeded —
+worth a look next loop, but not a silently-inert-script symptom.)
+
 ## 2026-07-05 — Backlog #8: deleted-QID recreation info-gathering generator (human-gated)
 
 Built `recreate-deleted-wikidata/generate_recreate_quickstatements.py` in a NEW isolated
