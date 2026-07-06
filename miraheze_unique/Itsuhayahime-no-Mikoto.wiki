@@ -24,7 +24,7 @@ In *Shuho Suwa-keizu*, it is concluded that Itsuhayahime-no-Mikoto and Ishihayah
 == Genealogy ==
 [[File:Moriya Family Tree - 守矢氏系図.png|170px|thumbnail|center|{{ill|The Moriya clan|ja|守矢氏}}'s first five generations<br />(from Moriya to Yatsukushi-no-Kami)]]
 She is one of the daughters of {{ill|Izuhayao-no-Mikoto|ja|出早雄命}}
-, a child of {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}} and {{ill|Yasakatome|en|Yasakatome|qid=Q9150392|lt=Yasakatome-no-Kami}}. Her mother is {{ill|Tamaru-hime|ja|多満留姫}}, daughter of {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moriya}}.<ref>*History of Moreya Shrine* (2017), accessed August 17, 2017.</ref> She has siblings such as {{ill|Kamoha no Kami|ja|可毛羽神|12=simple|13=User:Immanuelle/Kamohane-no-Kami|ja_comment=jawiki link invalid|qid=Q135493216}}, {{ill|Wakakihime-no-Kami|ja|若木比売神|12=simple|13=User:Immanuelle/Wakakihime-no-Kami|ja_comment=jawiki link invalid|qid=Q135492776}}, {{ill|Kusanoi-hime|ja|草奈井比売神|12=simple|13=User:Immanuelle/Kusanai-no-Kami|ja_comment=jawiki link invalid|qid=Q135493035}}, and {{ill|Sawaetahara-Rokurohiko-no-Kami|ja|佐和恵多良六老彦神|qid=DELETED_QID}}.
+, a child of {{ill|Takeminakata|en|Takeminakata|qid=Q9150391|qid=Q9150391|lt=Takeminakata}} and {{ill|Yasakatome|en|Yasakatome|qid=Q9150392|lt=Yasakatome-no-Kami}}. Her mother is {{ill|Tamaru-hime|ja|多満留姫}}, daughter of {{ill|Moreya|en|Moreya|qid=Q11146526|lt=Moriya}}.<ref>*History of Moreya Shrine* (2017), accessed August 17, 2017.</ref> She has siblings such as {{ill|Kamoha no Kami|ja|可毛羽神|12=simple|13=User:Immanuelle/Kamohane-no-Kami|ja_comment=jawiki link invalid|qid=Q135493216}}, {{ill|Wakakihime-no-Kami|ja|若木比売神|12=simple|13=User:Immanuelle/Wakakihime-no-Kami|ja_comment=jawiki link invalid|qid=Q135492776}}, {{ill|Kusanoi-hime|ja|草奈井比売神|12=simple|13=User:Immanuelle/Kusanai-no-Kami|ja_comment=jawiki link invalid|qid=Q135493035}}, and {{ill|Sawaetahara-Rokurohiko-no-Kami|ja|佐和恵多良六老彦神|qid=Q140446116}}.
 
 The *Dai Nihon Jinjishi* describes her as the consort of {{ill|Ame no Murakumo|ja|天村雲命|12=simple|13=User:Immanuelle/Ame-no-Murakumo-no-Mikoto|ja_comment=jawiki redirects to QID FIXED|qid=Q91088537}}.
 
@@ -56,3 +56,6 @@ The *Dai Nihon Jinjishi* describes her as the consort of {{ill|Ame no Murakumo|j
 [[Category:Wikidata no short description]]
 [[Category:Pages with deleted QID in ill template]]
 [[Category:Independently git synced pages]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

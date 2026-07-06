@@ -43,7 +43,7 @@ The shrine is also renowned for its cherry blossoms and has been designated as "
 
 === Auxiliary Shrines ===
 
-* {{ill|Chintaku Shrine|ja|鎮宅社|12=simple|13=User:Immanuelle/Chintaku Shrine|ja_comment=jawiki link invalid|qid=Q135579034|1=Chintaku Shrine}} – Dedicated to {{ill|Taioshin Sen Chintaku Reifu no Kami|ja|太上神仙鎮宅霊符神|12=simple|13=User:Immanuelle/Taioshin Sen|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135583892}}
+* {{ill|Chintaku Shrine|ja|鎮宅社|12=simple|13=User:Immanuelle/Chintaku Shrine|ja_comment=jawiki link invalid|qid=Q135579034|1=Chintaku Shrine}} – Dedicated to {{ill|Taioshin Sen Chintaku Reifu no Kami|ja|太上神仙鎮宅霊符神|12=simple|13=User:Immanuelle/Taioshin Sen|ja_comment=jawiki link invalid|qid=Q140446143}}
 * Sanpō Kōjin Shrine – Dedicated to {{ill|Sanpō Kōjin|ja|三宝荒神|12=simple|13=User:Immanuelle/Sanpō Kōjin|comment=changed title based on wikidata|1=Sanbo Kojin|qid=Q13577821}}
 * Toyotomi Inari Shrine – Dedicated to {{ill|Ukemochi|ja|保食大神|12=simple|13=User:Immanuelle/Ukemochi|ja_comment=jawiki redirects to QID FIXED|qid=Q2280323|1=Ukemochi|comment=changed title based on wikidata|qid=Q2280323}}
 * Ryūō Shrine – Dedicated to Toyotama Ryūō and Toyosei Ryūō
@@ -162,3 +162,6 @@ File:星田妙見宮鳥居.jpg|Torii at Hoshida Myōkengū
 [[Category:Wikidata has short description]]
 [[Category:Pages with deleted QID in ill template]]
 [[Category:Independently git synced pages]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

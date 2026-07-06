@@ -6,7 +6,7 @@
 * {{ill|Gojō Tenjin-gū|ja|五條天神社 (京都市)|1=Gojō Tenjin-gū|12=simple|13=User:Immanuelle/Gojō Tenjin-gū|13=User:Immanuelle/Gojō Tenjin-gū|qq=}} - Located in {{ill|Shimogyō-ku, Kyoto|en|Shimogyō-ku, Kyoto|qid=Q1077022|lt=Shimogyō-ku|1=Shimogyō-ku, Kyoto}}, {{ill|Kyoto|en|Kyoto|qid=Q34600|lt=Kyoto|1=Kyoto}}, {{ill|Kyoto Prefecture|en|Kyoto Prefecture|qid=Q120730|lt=Kyoto Prefecture|1=Kyoto Prefecture}}. Its registered name as a religious corporation uses the modern form, "五条天神社."
 
 == Related Articles ==
-* {{ill|Gojō Castle Tenjin Shrine|ja|五城天神社|12=simple|13=User:Immanuelle/Gojō Castle Tenjin Shrine|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135504358}} - Located in Uchiko-chō, Kita District, Ehime Prefecture.
+* {{ill|Gojō Castle Tenjin Shrine|ja|五城天神社|12=simple|13=User:Immanuelle/Gojō Castle Tenjin Shrine|ja_comment=jawiki link invalid|qid=Q140446026}} - Located in Uchiko-chō, Kita District, Ehime Prefecture.
 * {{ill|Gojōzan Tenjin Shrine|ja|五條山天神社|12=simple|13=User:Immanuelle/Gojōzan Tenjin Shrine|ja_comment=jawiki link invalid|qid=Q135504364|1=Gojōzan Tenjin Shrine}} - Located in Akabanechō, Nara City, Nara Prefecture.
 * {{ill|Goryō Tenjin Shrine|ja|五霊天神社|12=simple|13=User:Immanuelle/Goryō Tenjin Shrine|ja_comment=jawiki link invalid|qid=Q135504369|1=Goryō Tenjin Shrine}} - Located in Hanada-chō, Himeji City, Hyōgo Prefecture. The registered name as a religious corporation uses the traditional kanji, "五靈天神社."
 * {{ill|Tenjinsha|lt=Tenjinsha|lt=Tenjin Shrine (disambiguation)|ja|天神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Tenjin Shrine (disambiguation)|ja_comment=jawiki redirects to 天神社}}
@@ -33,3 +33,6 @@
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with deleted QID in ill template]]
 [[Category:Independently git synced pages]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

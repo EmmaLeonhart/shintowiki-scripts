@@ -6,7 +6,7 @@
 | Image description = 
 | Alias = 
 | Official name = 
-| Former name = {{ill|Suitengu Dedication Fireworks Festival|ja|水天宮奉納花火大会|12=simple|13=User:Immanuelle/Suitengu Dedication Fireworks Festival|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid|qid=DELETED_QID|dd=Q135551185}}<br />（{{ill|1964|en|1964|qid=Q2652|lt=1964|1=1964}}まで）
+| Former name = {{ill|Suitengu Dedication Fireworks Festival|ja|水天宮奉納花火大会|12=simple|13=User:Immanuelle/Suitengu Dedication Fireworks Festival|ja_comment=jawiki link invalid|ja_comment=jawiki link invalid|qid=Q140446094}}<br />（{{ill|1964|en|1964|qid=Q2652|lt=1964|1=1964}}まで）
 | Event Date = {{ill|August 5|en|August 5|qid=Q2783|lt=August 5|1=August 5}}
 | First Held = {{ill|1650|en|1650|qid=Q6951|lt=1650|1=1650}}
 | Venue = Kyomachi, Shino-yama
@@ -102,3 +102,6 @@ Due to traffic restrictions and congestion on the day of the event, it is diffic
 [[Category:Pages with deleted QID in ill template]]
 [[Category:Suiten-gū Shrines]]
 [[Category:Independently git synced pages]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]
