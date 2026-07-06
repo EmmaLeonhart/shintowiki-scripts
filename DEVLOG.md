@@ -4,6 +4,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Post-crash recovery + queue de-stale audit (Emma)
+
+Second Claude Code session crashed mid-task the prior night (re-running the recreation matcher for
+stragglers). Diagnosed: no lost work (everything committed pre-crash, CI green); session-only crons
+died. Recovery: (1) matcher now matches on exact ja label alone — a single item under the exact ja
+label is ours regardless of P31, since Emma never changes ja labels but re-types items after
+(Izumo 講社 → shrine-church); relinked the 5 P31-changed stragglers. (2) Emma created the 4
+remaining items (Q140446400–403); relinked their ills as plain text swaps (岩衝別命 → Q11587884,
+already merged). (3) `build_recreation_quickstatements` no longer emits section-anchor (`#`)
+Sjawiki sitelinks — the bad host-page/section sitelinks Emma had to strip. Key lesson recorded:
+the recreate-deleted effort is **disposable repair work** — do the dumb direct thing (text
+replacement), don't over-build durable pipelines/tests for it.
+
+**Queue de-stale audit:** `queue.md` had degraded into a status snapshot — completed-work
+narrative (multilingual-label rollout, backlog board, provenance comments, analysis pass — all
+shipped) left in place instead of deleted, and easy autonomous work mis-filed under "Blockers —
+parked/awaiting Emma." Rewrote to open items only; un-parked the `Template:Ill` mitigation and the
+Thai transliterator (they're work, not blockers); corrected the stale "79 untyped" → actual 24;
+dropped the merged handoff-read item (branch `ps5j2l` merged in 733ade6c). "Back of queue" =
+easy/do-last, not deferred.
+
 ## 2026-07-06 — Deferred relations → daily-edit queue + merged-QID replacement (Emma)
 
 Emma ran the 167 recreation QuickStatements (items created; she changed some en labels but kept
