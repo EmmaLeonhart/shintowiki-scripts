@@ -4,6 +4,13 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Deleted-QID ill tail fully drained (Emma)
+
+All deleted-QID ill targets resolved: the recreation candidates + the 53 non-candidate tail were created (Emma ran the QS; types keyword-guessed, human-defaults she corrects), ills relinked via her EXACT QID lists (Q140447xxx). In-slot-QID ills (Q702140 Ōnamuchi, Q568647 Taira, Kōshin-dō Q124683618) and concept links (川神→river deity, 樹木信仰→tree worship) resolved; the 2 non-entities (a street address, Bouryuu) de-illed. The apparent 151 residual was the git-sync instruction COMMENT on 144 pages, not real ills. Lesson: use exact QIDs when given, never Wikidata-search (matched coincidental old items once, reverted).
+
+
+---
+
 ## 2026-07-06 — Template:Ill fix + merged-QID op (Emma, queue barrel-through)
 
 **Template:Ill wrongful deletion.** Mitigation: git-synced `Template:Ill` (redirect →
