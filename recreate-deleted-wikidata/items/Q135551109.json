@@ -6,6 +6,248 @@
     "size_bytes": 384,
     "timestamp": "20250801074232"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميبي فوتاميبومي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميبي فوتاميبومي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিবে ফ়ুতামিবুমি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিবে ফ়ুতামিবুমি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamibe Futamibumi",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Καμιμπε Φουταμιμπουμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamibe Futamibumi",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیبه فوتامیبومی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמיבה פוטאמיבומי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिबे फ़ुतमिबुमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "神部二身",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिबे फ़ुतमिबुमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिबे फ़ुतामिबुमि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камибэ Футамибуми",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камібе Футамібумі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیبه فوتامیبومی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamibe Futamibumi",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "神部二身",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "神部二身",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kamibe Futamibumi"
+  },
   "fandom": {
     "categories": [
       "Japan in 708",

@@ -6,6 +6,20 @@
     "size_bytes": 341,
     "timestamp": "20250730031710"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Shimotaki Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (高崎市下滝町)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

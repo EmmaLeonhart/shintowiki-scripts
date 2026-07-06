@@ -6,6 +6,248 @@
     "size_bytes": 306,
     "timestamp": "20250729224636"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أداتشي كاغيمورا",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أداتشي كاجيمورا",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অদাচি কাগেমুৰা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অদাচি কাগেমুরা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Adači Kagemura",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αντατσι Καγκεμουρα",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Adachi Kagemura",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اداچی کاگهمورا",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安達景村",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אדאצ׳י קאגהמורא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अदचि कगेमुर",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安達景村",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Adači Kagemura",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अदचि कगेमुर",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अदाचि कागेमुरा",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Адати Кагэмура",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Adači Kagemura",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Адаті Кагемура",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اداچی کاگهمورا",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Adachi Kagemura",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安达景村",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安达景村",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安达景村",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安達景村",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安達景村",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安達景村",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安达景村",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安達景村",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Adachi Kagemura"
+  },
   "fandom": {
     "categories": [
       "1210 births",

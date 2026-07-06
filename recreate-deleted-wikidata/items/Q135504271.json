@@ -6,6 +6,20 @@
     "size_bytes": 317,
     "timestamp": "20250730020350"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kisshō-ji (Gifu)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "吉祥寺 (岐阜市)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Seven Lucky Gods Pilgrimages",

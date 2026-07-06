@@ -6,6 +6,20 @@
     "size_bytes": 330,
     "timestamp": "20250802040435"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Iyo Shichifukujin Sacred Sites",
+        "source": "native"
+      },
+      "ja": {
+        "label": "伊予七福神霊場",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Izumo Grand Shrine",

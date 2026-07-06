@@ -6,6 +6,20 @@
     "size_bytes": 330,
     "timestamp": "20250802040422"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Izumo-taisha Karatsu Church",
+        "source": "native"
+      },
+      "ja": {
+        "label": "出雲大社唐津教会",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Izumo Grand Shrine",

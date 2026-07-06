@@ -6,6 +6,20 @@
     "size_bytes": 345,
     "timestamp": "20250730031714"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Kawauchi 2nd Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (桐生市川内町2)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

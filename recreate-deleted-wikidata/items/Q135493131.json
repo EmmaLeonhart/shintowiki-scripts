@@ -6,6 +6,248 @@
     "size_bytes": 308,
     "timestamp": "20250729074640"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "يوشيكوني ساكوراي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "يوشيكوني ساكوراي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "যোশিকুনি সাকুৰাই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "যোশিকুনি সাকুরাই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Jošikuni Sakurai",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Γιοσικουνι Σακουραι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Yoshikuni Sakurai",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "یوشیکونی ساکورای",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "桜井義國",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "he": {
+        "label": "יושיקוני סאקוראי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "योशिकुनि सकुरइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "桜井義国",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Yošikuni Sakurai",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "योशिकुनि सकुरइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "योशिकुनि साकुराइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Ёсикуни Сакураи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Jošikuni Sakurai",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Ёсікуні Сакураі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "یوشیکونی ساکورای",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Yoshikuni Sakurai",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "桜井义国",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "桜井义国",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "桜井义国",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "桜井義國",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "桜井義國",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "桜井義國",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "桜井义国",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "桜井義國",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Yoshikuni Sakurai"
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

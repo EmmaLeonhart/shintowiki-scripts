@@ -6,6 +6,28 @@
     "size_bytes": 450,
     "timestamp": "20250802035332"
   },
+  "enrichment": {
+    "label_count": 4,
+    "labels": {
+      "de": {
+        "label": "Gesundheitswissenschaft",
+        "source": "fandom"
+      },
+      "en": {
+        "label": "health science",
+        "source": "native"
+      },
+      "ja": {
+        "label": "健康学",
+        "source": "fandom"
+      },
+      "zh": {
+        "label": "健康学",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Hot_springs_of_Japan",

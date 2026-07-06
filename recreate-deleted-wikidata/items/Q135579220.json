@@ -6,6 +6,20 @@
     "size_bytes": 323,
     "timestamp": "20250802035741"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Suga-no-Sawa Kofun Cluster",
+        "source": "native"
+      },
+      "ja": {
+        "label": "菅ノ沢古墳群",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "History of Ota, Gunma",

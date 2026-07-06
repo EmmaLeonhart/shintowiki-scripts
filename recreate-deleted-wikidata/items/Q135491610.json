@@ -6,6 +6,20 @@
     "size_bytes": 340,
     "timestamp": "20250729004905"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Nakatomi no Momo / Nakatomi Momo-shō",
+        "source": "native"
+      },
+      "ja": {
+        "label": "中臣秡・中臣秡抄",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "1909 births",

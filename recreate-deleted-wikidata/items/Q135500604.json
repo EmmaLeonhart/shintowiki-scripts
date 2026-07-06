@@ -6,6 +6,20 @@
     "size_bytes": 330,
     "timestamp": "20250729224522"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Ritsuryō Forty-Eight Rank System",
+        "source": "native"
+      },
+      "ja": {
+        "label": "冠位四十八階",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Cap-and-Rank System",

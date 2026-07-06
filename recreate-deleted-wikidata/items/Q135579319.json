@@ -6,6 +6,248 @@
     "size_bytes": 303,
     "timestamp": "20250802040309"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كوهو أوكامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كوهو أوكامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কোহো ওকামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কোহো ওকামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kohó Ókami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κοχο Οκαμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kohō Ōkami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کوهو اوکامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "古峯大神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קוהו אוקאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कोहो ओकमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "古峰大神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कोहो ओकमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कोहो ओकामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кохо Оками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Koho Okami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кохо Окамі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کوهو اوکامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kohō Ōkami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "古峰大神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "古峰大神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "古峰大神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "古峯大神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "古峯大神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "古峯大神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "古峰大神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "古峰大神",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kohō Ōkami"
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Yorii Town",

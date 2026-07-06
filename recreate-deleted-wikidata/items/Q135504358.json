@@ -6,6 +6,20 @@
     "size_bytes": 412,
     "timestamp": "20250730020532"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Gojō Castle Tenjin Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "五城天神社",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "All disambiguation pages",

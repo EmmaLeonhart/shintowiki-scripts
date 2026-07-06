@@ -6,6 +6,248 @@
     "size_bytes": 316,
     "timestamp": "20250730020122"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "واغو نيبوتسو أودوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "واجو نيبوتسو أودوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "বাগো নেবুত্সু ওদোৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "বাগো নেবুত্সু ওদোরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Vago Nembucu Odori",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ουαγκο Νεμπουτσου Οντορι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Wago Nembutsu Odori",
+        "source": "fandom"
+      },
+      "eo": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "واگو نهبوتسو اودوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "和合之念仏踊",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ואגו נהבוצו אודורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "वगो नेबुत्सु ओदोरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "和合の念仏踊",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Vago Nembutsu Odori",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "वगो नेबुत्सु ओदोरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "वागो नेबुत्सु ओदोरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Ваго Нэбуцу Одори",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Vago Nembucu Odori",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Ваго Небуцу Одорі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "واگو نهبوتسو اودوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Wago Nembutsu Odori",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "和合之念仏踊",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "和合之念仏踊",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "和合之念仏踊",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "和合之念仏踊",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "和合之念仏踴",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "和合之念仏踴",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "和合之念仏踊",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "和合之念仏踴",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Wago Nembutsu Odori"
+  },
   "fandom": {
     "categories": [
       "Buddhist holidays",

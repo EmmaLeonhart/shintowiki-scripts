@@ -6,6 +6,248 @@
     "size_bytes": 315,
     "timestamp": "20250802040201"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "إيوا تسوكو واكي نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "إيوا تسوكو واكي نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ইবা ত্সুকু বাকে নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ইবা ত্সুকু বাকে নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Iva cuku vake no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ιουα Τσουκου Ουακε Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ایوا تسوکو واکه نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "巖衝別命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "איוא צוקו ואקה נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "इव त्सुकु वके नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "岩衝別命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Iva tsuku vake no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "इव त्सुकु वके नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "इवा त्सुकु वाके नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Ива Цуку Вакэ Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Iva cuku vake no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Ива Цуку Ваке Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ایوا تسوکو واکه نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Iwa tsuku wake no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "岩冲别命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "岩冲别命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "岩冲别命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "巖衝別命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "巖衝別命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "巖衝別命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "岩冲别命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "巖衝別命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Iwa tsuku wake no Mikoto"
+  },
   "fandom": {
     "categories": [
       "Male imperial family members before the Kofun period",

@@ -6,6 +6,248 @@
     "size_bytes": 310,
     "timestamp": "20250730011410"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "واكاجينزومي نو كامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "واكاجينزومي نو كامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "বাকাজিনাজ়ুমে নো কামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "বাকাজিনাজ়ুমে নো কামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Vakadžinzume no Kami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ουακατζινζουμε Νο Καμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Wakajinzume no Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "واکاجینزومه نو کامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "若盡女神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ואקאג׳יןזומה נו קאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "वकजिनज़ुमे नो कमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "若尽女神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Vakajinzume no Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "वकजिनज़ुमे नो कमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "वाकाजिनाज़ुमे नो कामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Вакадзиндзумэ Но Ками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Vakadžinzume no Kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Вакадзіндзуме Но Камі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "واکاجینزومه نو کامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Wakajinzume no Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "若尽女神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "若尽女神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "若尽女神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "若盡女神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "若盡女神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "若盡女神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "若尽女神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "若盡女神",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Wakajinzume no Kami"
+  },
   "fandom": {
     "categories": [
       "Seventeen Generations of Earthly Deities",

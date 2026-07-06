@@ -6,6 +6,248 @@
     "size_bytes": 310,
     "timestamp": "20250801074528"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "هانايومي ماتسوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "هانايومي ماتسوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "হানাযোমে মাত্সুৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "হানাযোমে মাত্সুরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Hanajome Macuri",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Χαναγιομε Ματσουρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Hanayome Matsuri",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "هانایومه ماتسوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "花嫁萬津利",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "he": {
+        "label": "האנאיומה מאצורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "हनयोमे मत्सुरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "花嫁まつり",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "हनयोमे मत्सुरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "हानायोमे मात्सुरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Ханаёмэ Мацури",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Hanajome Macuri",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Ханаёме Мацурі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "هانایومه ماتسوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Hanayome Matsuri",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "花嫁万津利",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "花嫁万津利",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "花嫁万津利",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "花嫁萬津利",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "花嫁萬津利",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "花嫁萬津利",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "花嫁万津利",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "花嫁萬津利",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Hanayome Matsuri"
+  },
   "fandom": {
     "categories": [
       "Monks",

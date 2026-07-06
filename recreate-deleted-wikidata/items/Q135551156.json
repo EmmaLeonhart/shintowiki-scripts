@@ -6,6 +6,20 @@
     "size_bytes": 347,
     "timestamp": "20250801074532"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Yubune Matsuri – Hayabusa Procession",
+        "source": "native"
+      },
+      "ja": {
+        "label": "流鏑馬祭・流鏑馬連行",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Monks",

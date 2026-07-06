@@ -6,6 +6,248 @@
     "size_bytes": 321,
     "timestamp": "20250802042034"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "موريماسا هاتشيمان ريني",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "موريماسا هاتشيمان ريني",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মোৰিমাসা হাচিমানা ৰিনে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মোরিমাসা হাচিমানা রিনে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Morimasa Hačiman Šrine",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μοριμασα Χατσιμαν Ρινε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "موریماسا هاچیمان رینه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מורימאסא האצ׳ימאן רינה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मोरिमस हचिमन रिने",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "森正八幡神社",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Morimasa Hačiman Šrine",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मोरिमस हचिमन रिने",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मोरिमासा हाचिमाना रिने",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Моримаса Хатиман Ринэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Morimasa Hačiman Šrine",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Морімаса Хатіман Ріне",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "موریماسا هاچیمان رینه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Morimasa Hachiman Shrine",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "森正八幡神社",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Morimasa Hachiman Shrine"
+  },
   "fandom": {
     "categories": [
       "Association of Shinto Shrines",

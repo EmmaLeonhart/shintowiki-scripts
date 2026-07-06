@@ -6,6 +6,20 @@
     "size_bytes": 354,
     "timestamp": "20250730031655"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Fujimi Town Tajima)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (前橋市富士見町田島)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

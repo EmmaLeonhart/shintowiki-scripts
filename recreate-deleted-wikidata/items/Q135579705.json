@@ -6,6 +6,248 @@
     "size_bytes": 375,
     "timestamp": "20250802042954"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "مورينوكامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "مورينوكامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মোৰিনোকামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মোরিনোকামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Morinokami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μορινοκαμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Mori-no-Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "مورینوکامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מורינוקאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मोरिनोकमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "木神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मोरिनोकमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मोरिनोकामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Мориноками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mori-no-kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Морінокамі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "مورینوکامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Mori-no-Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "木神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "木神",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Mori-no-Kami"
+  },
   "fandom": {
     "categories": [
       "125 Shrines of Ise",

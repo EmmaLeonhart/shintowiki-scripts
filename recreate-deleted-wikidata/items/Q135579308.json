@@ -6,6 +6,248 @@
     "size_bytes": 313,
     "timestamp": "20250802040236"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "إييوزوهيكو نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "إييوزوهيكو نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ইযোজ়ুহিকো নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ইযোজ়ুহিকো নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Ijozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ιγιοζουχικο Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اییوزوهیکو نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "伊予津彥命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אייוזוהיקו נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "इयोज़ुहिको नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "伊予津彦命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "इयोज़ुहिको नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "इयोज़ुहिको नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Иёдзухико Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Ijozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Иёдзухіко Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اییوزوهیکو نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Iyozuhiko no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "伊予津彦命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "伊予津彦命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "伊予津彦命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "伊予津彥命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "伊予津彥命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "伊予津彥命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "伊予津彦命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "伊予津彥命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Iyozuhiko no Mikoto"
+  },
   "fandom": {
     "categories": [
       "Architecture of Iyo City",

@@ -6,6 +6,248 @@
     "size_bytes": 454,
     "timestamp": "20250802040442"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "سينغيتاكااكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "سينجيتاكااكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "সেনাগেতাকাঅকি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "সেনাগেতাকাঅকি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σενγκετακαακι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Sengetakaaki",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "سهنگهتاکااکی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "he": {
+        "label": "סהןגהטאקאאקי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "सेनगेतकअकि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "千家尊愛",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "सेनगेतकअकि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "सेनागेताकाअकि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Сэнгэтакааки",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Сенгетакаакі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "سهنگهتاکااکی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "千家尊愛",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Sengetakaaki"
+  },
   "fandom": {
     "categories": [
       "1906 establishments in Hawaii",

@@ -6,6 +6,20 @@
     "size_bytes": 318,
     "timestamp": "20250801074509"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "rope attachment projections",
+        "source": "native"
+      },
+      "ja": {
+        "label": "縄掛突起",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "古墳",

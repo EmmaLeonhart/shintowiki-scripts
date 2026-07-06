@@ -6,6 +6,20 @@
     "size_bytes": 335,
     "timestamp": "20250802035235"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Five Deities of Heaven, Earth, and Man",
+        "source": "native"
+      },
+      "ja": {
+        "label": "天地人五行神",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Hokuto, Yamanashi",

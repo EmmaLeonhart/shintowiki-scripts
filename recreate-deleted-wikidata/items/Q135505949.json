@@ -6,6 +6,20 @@
     "size_bytes": 351,
     "timestamp": "20250730031729"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Niisato Takei Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (桐生市新里町武井)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

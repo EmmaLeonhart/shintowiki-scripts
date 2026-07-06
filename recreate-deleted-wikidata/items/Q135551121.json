@@ -6,6 +6,20 @@
     "size_bytes": 312,
     "timestamp": "20250801074308"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "imitation mirrors",
+        "source": "native"
+      },
+      "ja": {
+        "label": "Bōseikyō",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "考古資料",

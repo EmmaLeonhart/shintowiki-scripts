@@ -6,6 +6,248 @@
     "size_bytes": 301,
     "timestamp": "20250801074456"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كوشيندو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كوشيندو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কোশিনাদো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কোশিনাদো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kóšindó",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κοσινντο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kōshin-dō",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کوشیندو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קושיןדו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कोशिनदो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "Kōshin-dō",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kōšin-dō",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कोशिनदो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कोशिनादो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Косиндо",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Košin-do",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Косіндо",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کوشیندو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "Kōshin-dō",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kōshin-dō"
+  },
   "fandom": {
     "categories": [
       "Buddhist temples in Nara Prefecture",

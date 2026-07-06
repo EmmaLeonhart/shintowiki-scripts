@@ -6,6 +6,248 @@
     "size_bytes": 449,
     "timestamp": "20250730011815"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أساهي شونو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أساهي شونو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অসাহি শোনো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অসাহি শোনো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Asahi Šónó",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Asahi Sōnō",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Ασαχι Σονο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Asahi Shōnō",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اساهی شونو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אסאהי נו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "असहि शोनो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "アサヒ晶脳",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Asahi Šōnō",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "असहि शोनो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "असाहि शोनो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Асахи Сёно",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Asahi Šono",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Асахі Сёно",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اساهی شونو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Asahi Shōnō",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "旭日晶脑",
+        "source": "fandom"
+      },
+      "zh-cn": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "阿佐比晶脳",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Asahi Shōnō"
+  },
   "fandom": {
     "categories": [
       "Bathing",

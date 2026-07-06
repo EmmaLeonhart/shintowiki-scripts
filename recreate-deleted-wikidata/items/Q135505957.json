@@ -6,6 +6,20 @@
     "size_bytes": 343,
     "timestamp": "20250730031744"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Kunisada Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (伊勢崎市国定町)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

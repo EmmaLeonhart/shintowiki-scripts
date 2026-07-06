@@ -6,6 +6,20 @@
     "size_bytes": 308,
     "timestamp": "20250730020116"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kotsuka Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "古津賀神社",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Kofun of Kochi prefecture",

@@ -6,6 +6,248 @@
     "size_bytes": 305,
     "timestamp": "20250728223017"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تشوكوي نو سيي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تشوكوي نو سيي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "চোকুই নো সেই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "চোকুই নো সেই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Čókui no Sei",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τσοκουι Νο Σει",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Chōkui no Sei",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "چوکوی نو سهی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "鍾匱之制",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קוי נו סהי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "चोकुइ नो सेइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "鐘匱の制",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Čōkui no Sei",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "चोकुइ नो सेइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "चोकुइ नो सेइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Тёкуи Но Сэи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Čokui no Sei",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Тёкуі Но Сеі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "چوکوی نو سهی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Chōkui no Sei",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "钟匮之制",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "钟匮之制",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "钟匮之制",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "鍾匱之制",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "鍾匱之制",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "鍾匱之制",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "钟匮之制",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "鍾匱之制",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Chōkui no Sei"
+  },
   "fandom": {
     "categories": [
       "Days",

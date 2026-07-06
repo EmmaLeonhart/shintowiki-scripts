@@ -6,6 +6,20 @@
     "size_bytes": 313,
     "timestamp": "20250802040142"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Iwakia Betsuō Tomb",
+        "source": "native"
+      },
+      "ja": {
+        "label": "磐城別王墓",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Male imperial family members before the Kofun period",

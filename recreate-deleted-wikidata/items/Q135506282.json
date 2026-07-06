@@ -6,6 +6,20 @@
     "size_bytes": 311,
     "timestamp": "20250730033106"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kōyasan Campaign",
+        "source": "native"
+      },
+      "ja": {
+        "label": "高野山攻め",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Buddhist temples in Wakayama Prefecture",

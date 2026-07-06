@@ -6,6 +6,248 @@
     "size_bytes": 318,
     "timestamp": "20250801074543"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ياماناري غيون ماتسوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ياماناري جيون ماتسوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "যামানাৰি গিওনা মাত্সুৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "যামানারি গিওনা মাত্সুরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Jamanari Gion Macuri",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Γιαμαναρι Γκιον Ματσουρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "یاماناری گیون ماتسوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "山梨祇園祭利",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ימאנארי גיון מאצורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "यमनरि गिओन मत्सुरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "山梨祇園祭り",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "यमनरि गिओन मत्सुरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "यामानारि गिओना मात्सुरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Яманари Гион Мацури",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Jamanari Gion Macuri",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Яманарі Гіон Мацурі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "یاماناری گیون ماتسوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Yamanari Gion Matsuri",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "山梨祇园祭利",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "山梨祇园祭利",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "山梨祇园祭利",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "山梨祇園祭利",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "山梨祇園祭利",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "山梨祇園祭利",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "山梨祇园祭利",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "山梨祇園祭利",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Yamanari Gion Matsuri"
+  },
   "fandom": {
     "categories": [
       "Monks",

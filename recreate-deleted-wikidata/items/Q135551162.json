@@ -6,6 +6,16 @@
     "size_bytes": 315,
     "timestamp": "20250801074555"
   },
+  "enrichment": {
+    "label_count": 1,
+    "labels": {
+      "en": {
+        "label": "Akama Shrine",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Culture of Shimonoseki",

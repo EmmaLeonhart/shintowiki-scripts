@@ -6,6 +6,20 @@
     "size_bytes": 351,
     "timestamp": "20250801064007"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "33 Kannon Pilgrimage of Daisen-ji",
+        "source": "native"
+      },
+      "ja": {
+        "label": "大山寺三十三カ所地蔵めぐり",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Shugendō deities",

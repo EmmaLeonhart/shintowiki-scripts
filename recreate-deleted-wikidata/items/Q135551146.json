@@ -6,6 +6,248 @@
     "size_bytes": 313,
     "timestamp": "20250801074450"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كونومينيديرا",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كونومينيديرا",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কোনোমিনেদেৰা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কোনোমিনেদেরা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Konominedera",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κονομινεντερα",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Konomine-dera",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کونومینهدهرا",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "國軸山金峯山寺",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קונומינהדהרא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कोनोमिनेदेर",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "國軸山金峯山寺",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कोनोमिनेदेर",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कोनोमिनेदेरा",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кономинэдэра",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кономінедера",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کونومینهدهرا",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Konomine-dera",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "国轴山金峰山寺",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "国轴山金峰山寺",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "国轴山金峰山寺",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "國軸山金峯山寺",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "國軸山金峯山寺",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "國軸山金峯山寺",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "国轴山金峰山寺",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "國軸山金峰山寺",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Konomine-dera"
+  },
   "fandom": {
     "categories": [
       "Former Buddhist temples",

@@ -6,6 +6,20 @@
     "size_bytes": 363,
     "timestamp": "20250730031802"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Kitakatsushika Town Jonanmu)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (渋川市北橘町上南室)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

@@ -6,6 +6,20 @@
     "size_bytes": 326,
     "timestamp": "20250730020424"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Hosoe Shrine Gion Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "細江神社祇園祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

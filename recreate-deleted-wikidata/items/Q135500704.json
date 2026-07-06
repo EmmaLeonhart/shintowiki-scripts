@@ -6,6 +6,20 @@
     "size_bytes": 327,
     "timestamp": "20250729224656"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Agata Shrine (Yokkaichi)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "縣神社 (四日市市)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Shinto shrines with the same name",

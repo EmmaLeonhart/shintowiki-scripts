@@ -6,6 +6,248 @@
     "size_bytes": 307,
     "timestamp": "20250729224640"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أداتشي شيغيكاغي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أداتشي شيجيكاجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অদাচি শিগেকাগে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অদাচি শিগেকাগে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Adači Šigekage",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αντατσι Σιγκεκαγκε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Adachi Shigekage",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اداچی شیگهکاگه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安達重景",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אדאצ׳י שיגהקאגה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अदचि शिगेकगे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安達重景",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Adači Šigekage",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अदचि शिगेकगे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अदाचि शिगेकागे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Адати Сигэкагэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Adači Šigekage",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Адаті Сігекаге",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اداچی شیگهکاگه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Adachi Shigekage",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安达重景",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安达重景",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安达重景",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安達重景",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安達重景",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安達重景",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安达重景",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安達重景",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Adachi Shigekage"
+  },
   "fandom": {
     "categories": [
       "1210 births",

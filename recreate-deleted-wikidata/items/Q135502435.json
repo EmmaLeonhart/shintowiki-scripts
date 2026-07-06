@@ -6,6 +6,248 @@
     "size_bytes": 307,
     "timestamp": "20250730000312"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أوتسوكي هوتي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أوتسوكي هوتي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ওত্সুকি হোতে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ওত্সুকি হোতে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Ócuki Hotel",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Οτσουκι Χοτε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Ōtsuki Hotel",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اوتسوکی هوته",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אוצוקי הוטה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "ओत्सुकि होते",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "大月ホテル",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "ओत्सुकि होते",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ओत्सुकि होते",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Оцуки Хотэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Ocuki Hotel",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Оцукі Хоте",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اوتسوکی هوته",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Ōtsuki Hotel",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "大月保天留",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "大月保天留",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Ōtsuki Hotel"
+  },
   "fandom": {
     "categories": [
       "Regional collective trademarks",

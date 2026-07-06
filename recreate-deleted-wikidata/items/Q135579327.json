@@ -6,6 +6,20 @@
     "size_bytes": 329,
     "timestamp": "20250802040336"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Izumo-taisha Shonai Church",
+        "source": "native"
+      },
+      "ja": {
+        "label": "出雲大社庄内教会",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Izumo Grand Shrine",

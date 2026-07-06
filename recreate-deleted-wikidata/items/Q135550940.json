@@ -6,6 +6,20 @@
     "size_bytes": 326,
     "timestamp": "20250801064004"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Three Deities of Mount Daisen",
+        "source": "native"
+      },
+      "ja": {
+        "label": "大山三所権現",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Shugendō deities",

@@ -6,6 +6,248 @@
     "size_bytes": 310,
     "timestamp": "20250802040232"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "جيباراميتسوجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "جيباراميتسوجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "জিপাৰামিত্সুজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "জিপারামিত্সুজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Džippáramicudži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τζιπαραμιτσουτζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Jippāramitsu-ji",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "جیپارامیتسوجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ג׳יפאראמיצוג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "जिपरमित्सुजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "十波羅蜜寺",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "जिपरमित्सुजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "जिपारामित्सुजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Дзипарамицудзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Džipparamicu-dži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Дзіпараміцудзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "جیپارامیتسوجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Jippāramitsu-ji"
+  },
   "fandom": {
     "categories": [
       "Buddhist temples in Kagawa Prefecture",

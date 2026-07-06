@@ -6,6 +6,248 @@
     "size_bytes": 324,
     "timestamp": "20250729224704"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كومانو كوسو نو مي نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كومانو كوسو نو مي نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কুমানো কুসু নো মি নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কুমানো কুসু নো মি নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κουμανο Κουσου Νο Μι Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کومانو کوسو نو می نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "熊野久須美命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קומאנו קוסו נו מי נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कुमनो कुसु नो मि नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "熊野久須美命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कुमनो कुसु नो मि नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कुमानो कुसु नो मि नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кумано Кусу Но Ми Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кумано Кусу Но Мі Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کومانو کوسو نو می نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kumano Kusu no Mi no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "熊野久须美命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "熊野久须美命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "熊野久须美命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "熊野久須美命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "熊野久須美命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "熊野久須美命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "熊野久须美命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "熊野久須美命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kumano Kusu no Mi no Mikoto"
+  },
   "fandom": {
     "categories": [
       "下呂市の建築物",

@@ -6,6 +6,248 @@
     "size_bytes": 319,
     "timestamp": "20250729224621"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميمييا توغاتا ريني",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميمييا توجاتا ريني",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিমিযা তোগাতা ৰিনে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিমিযা তোগাতা রিনে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamimija Togata Šrine",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Καμιμιγια Τογκατα Ρινε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیمییا توگاتا رینه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "上宮外縣神社",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמימיי טוגאטא רינה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिमिय तोगत रिने",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "上宮外縣神社",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamimiya Togata Šrine",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिमिय तोगत रिने",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिमिया तोगाता रिने",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камимия Тогата Ринэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamimija Togata Šrine",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камімія Тогата Ріне",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیمییا توگاتا رینه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamimiya Togata Shrine",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "上宫外县神社",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "上宫外县神社",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "上宫外县神社",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "上宮外縣神社",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "上宮外縣神社",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "上宮外縣神社",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "上宫外县神社",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "上宮外縣神社",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kamimiya Togata Shrine"
+  },
   "fandom": {
     "categories": [
       "Clans of Chūbu Region",

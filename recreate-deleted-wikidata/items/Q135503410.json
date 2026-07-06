@@ -6,6 +6,28 @@
     "size_bytes": 433,
     "timestamp": "20250730011754"
   },
+  "enrichment": {
+    "label_count": 4,
+    "labels": {
+      "de": {
+        "label": "Kräuterbäder",
+        "source": "fandom"
+      },
+      "en": {
+        "label": "herbal baths",
+        "source": "native"
+      },
+      "ja": {
+        "label": "薬湯",
+        "source": "fandom"
+      },
+      "zh": {
+        "label": "药汤",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Bathing",

@@ -6,6 +6,248 @@
     "size_bytes": 303,
     "timestamp": "20250802035952"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "غوشا غونغين",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "جوشا جونجين",
+        "source": "translit"
+      },
+      "as": {
+        "label": "গোশা গোনাগেনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "গোশা গোনাগেনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Goša Gongen",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Γκοσα Γκονγκεν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Gosha Gongen",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "گوشا گونگهن",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "he": {
+        "label": "גו גוןגהן",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "गोश गोनगेन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "五社権現",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Goša Gongen",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "गोश गोनगेन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "गोशा गोनागेना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Гося Гонгэн",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Goša Gongen",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Гося Гонген",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "گوشا گونگهن",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "五社権現",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Gosha Gongen"
+  },
   "fandom": {
     "categories": [
       "Azuchi-Momoyama period",

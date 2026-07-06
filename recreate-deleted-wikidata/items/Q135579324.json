@@ -6,6 +6,20 @@
     "size_bytes": 331,
     "timestamp": "20250802040325"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Izumo-taisha Misanjin Church",
+        "source": "native"
+      },
+      "ja": {
+        "label": "出雲大社三神教会",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Izumo Grand Shrine",

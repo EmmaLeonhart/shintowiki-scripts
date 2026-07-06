@@ -6,6 +6,20 @@
     "size_bytes": 340,
     "timestamp": "20250730031706"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Watanuki Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (高崎市綿貫町)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

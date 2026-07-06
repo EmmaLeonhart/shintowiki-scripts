@@ -6,6 +6,20 @@
     "size_bytes": 320,
     "timestamp": "20250730020417"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Horikome Naked Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "堀米の裸祭り",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

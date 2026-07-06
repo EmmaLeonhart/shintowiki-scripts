@@ -6,6 +6,20 @@
     "size_bytes": 335,
     "timestamp": "20250802040428"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Izumo-taisha Takachiho Church",
+        "source": "native"
+      },
+      "ja": {
+        "label": "出雲大社高千穂教会",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Izumo Grand Shrine",

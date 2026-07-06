@@ -6,6 +6,20 @@
     "size_bytes": 350,
     "timestamp": "20250730031747"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Sakai Hiratsuka Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (伊勢崎市境平塚)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

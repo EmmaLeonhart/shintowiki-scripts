@@ -6,6 +6,20 @@
     "size_bytes": 332,
     "timestamp": "20250730011556"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Protective Forest for Navigation",
+        "source": "native"
+      },
+      "ja": {
+        "label": "航行目標保安林",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Geography of Shima, Mie",

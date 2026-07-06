@@ -6,6 +6,20 @@
     "size_bytes": 327,
     "timestamp": "20250801074514"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "rhyolitic welded tuff",
+        "source": "native"
+      },
+      "ja": {
+        "label": "流紋岩質溶結凝灰岩",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "古墳",

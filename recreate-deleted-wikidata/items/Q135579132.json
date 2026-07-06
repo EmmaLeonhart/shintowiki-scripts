@@ -6,6 +6,248 @@
     "size_bytes": 439,
     "timestamp": "20250802035448"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "هيوتانتسوكا كوفون",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "هيوتانتسوكا كوفون",
+        "source": "translit"
+      },
+      "as": {
+        "label": "হ্যোতানাত্সুকা কোফ়ুনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "হ্যোতানাত্সুকা কোফ়ুনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Hjótancuka Kofun",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Χιοταντσουκα Κοφουν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Hyōtan-tsuka Kofun (Shizuoka)",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "هیوتانتسوکا کوفون",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "瓢簞冢古墳 (靜岡市)",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טאןצוקא קופון",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "ह्योतनत्सुक कोफ़ुन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "瓢箪塚古墳 (静岡市)",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "ह्योतनत्सुक कोफ़ुन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ह्योतानात्सुका कोफ़ुना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Хётанцука Кофун",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Hjotan-cuka Kofun",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Хётанцука Кофун",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "هیوتانتسوکا کوفون",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Hyōtan-tsuka Kofun",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "瓢箪冢古坟 (静冈市)",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "瓢箪冢古坟 (静冈市)",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "瓢箪冢古坟 (静冈市)",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "瓢簞冢古墳 (靜岡市)",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "瓢簞冢古墳 (靜岡市)",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "瓢簞冢古墳 (靜岡市)",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "瓢箪冢古坟 (静冈市)",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "瓢簞冢古墳 (靜岡市)",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Hyōtan-tsuka Kofun"
+  },
   "fandom": {
     "categories": [
       "All disambiguation pages",

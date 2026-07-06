@@ -6,6 +6,248 @@
     "size_bytes": 455,
     "timestamp": "20250730011812"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "يانغوبيناسو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "يانجوبيناسو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "যানাগুবিনাসু",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "az": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "যানাগুবিনাসু",
+        "source": "translit"
+      },
+      "br": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "jangubiーnasu",
+        "source": "translit"
+      },
+      "da": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Young Venus",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Γιανγκουμπινασου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Young Venus",
+        "source": "native"
+      },
+      "eo": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "es": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "یانگوبیناسو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "he": {
+        "label": "יןגובינאסו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "यनगुबिनसु",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "it": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "ヤングビーナス",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "la": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "यनगुबिनसु",
+        "source": "translit"
+      },
+      "min": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "यानागुबिनासु",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Янгубинасу",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "jangubiーnasu",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Янгубінасу",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "یانگوبیناسو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "war": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "年轻维纳斯",
+        "source": "fandom"
+      },
+      "zh-cn": {
+        "label": "也无具尾奈须",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "也无具尾奈须",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "也无具尾奈须",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "yangubiーnasu"
+  },
   "fandom": {
     "categories": [
       "Bathing",

@@ -6,6 +6,248 @@
     "size_bytes": 311,
     "timestamp": "20250729231746"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أراكيدا مورييوشي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أراكيدا مورييوشي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অৰাকিদা মোৰিযোশি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অরাকিদা মোরিযোশি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Arakida Morijoši",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αρακιντα Μοριγιοσι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Arakida Moriyoshi",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اراکیدا مورییوشی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אראקידא מורייושי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अरकिद मोरियोशि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "荒木田守良",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Arakida Moriyoši",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अरकिद मोरियोशि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अराकिदा मोरियोशि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Аракида Мориёси",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Arakida Morijoši",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Аракіда Моріёсі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اراکیدا مورییوشی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Arakida Moriyoshi",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "荒木田守良",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "荒木田守良",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Arakida Moriyoshi"
+  },
   "fandom": {
     "categories": [
       "Shinto shrines in Ise City",

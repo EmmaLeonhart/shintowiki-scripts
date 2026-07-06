@@ -6,6 +6,20 @@
     "size_bytes": 298,
     "timestamp": "20250801074252"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kansei 12",
+        "source": "native"
+      },
+      "ja": {
+        "label": "寛政12年",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "History of Ōita Prefecture",

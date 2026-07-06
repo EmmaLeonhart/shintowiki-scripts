@@ -6,6 +6,248 @@
     "size_bytes": 475,
     "timestamp": "20250801052034"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أوكوتسوهيكو نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أوكوتسوهيكو نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ওকুত্সুহিকো নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ওকুত্সুহিকো নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Okucuhiko no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Οκουτσουχικο Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اوکوتسوهیکو نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "奧津彥命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אוקוצוהיקו נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "ओकुत्सुहिको नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "奥津彦命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "ओकुत्सुहिको नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ओकुत्सुहिको नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Окуцухико Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Okucuhiko no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Окуцухіко Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اوکوتسوهیکو نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Okutsuhiko no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "奥津彦命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "奥津彦命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "奥津彦命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "奧津彥命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "奧津彥命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "奧津彥命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "奥津彦命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "奧津彥命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Okutsuhiko no Mikoto"
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Maebashi",

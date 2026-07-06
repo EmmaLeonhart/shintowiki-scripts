@@ -6,6 +6,20 @@
     "size_bytes": 310,
     "timestamp": "20250730020414"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Fujioka Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "藤岡まつり",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

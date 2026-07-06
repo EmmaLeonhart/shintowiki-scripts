@@ -6,6 +6,20 @@
     "size_bytes": 302,
     "timestamp": "20250802035944"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Five Gongen",
+        "source": "native"
+      },
+      "ja": {
+        "label": "五所権現",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Gongen",

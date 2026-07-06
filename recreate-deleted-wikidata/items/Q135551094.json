@@ -6,6 +6,20 @@
     "size_bytes": 301,
     "timestamp": "20250801073614"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Inari Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "稲荷祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Annual events",

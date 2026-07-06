@@ -6,6 +6,248 @@
     "size_bytes": 311,
     "timestamp": "20250802042958"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "نيواتسومي نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "نيواتسومي نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নিবাত্সুমে নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নিবাত্সুমে নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nivacume no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νιουατσουμε Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "نیواتسومه نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ניואצומה נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "निवत्सुमे नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "庭津女命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Niva-tsume no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "निवत्सुमे नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "निवात्सुमे नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Нивацумэ Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Niva-cume no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Нівацуме Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "نیواتسومه نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "庭津女命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Niwa-tsume no Mikoto"
+  },
   "fandom": {
     "categories": [
       "All disambiguation pages",

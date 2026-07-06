@@ -6,6 +6,248 @@
     "size_bytes": 374,
     "timestamp": "20250801074242"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميبي مانيو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميبي مانيو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিবে মান্যো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিবে মান্যো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamibe Manjo",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamibe Manyo",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Καμιμπε Μανιο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamibe Manyo",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیبه مانیو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "神部萬侶",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמיבה מא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिबे मन्यो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "神部万侶",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिबे मन्यो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिबे मान्यो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камибэ Манё",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamibe Manjo",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камібе Манё",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیبه مانیو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamibe Manyo",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "神部万侣",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "神部万侣",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "神部万侣",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "神部萬侶",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "神部萬侶",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "神部萬侶",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "神部万侣",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "神部萬侶",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kamibe Manyo"
+  },
   "fandom": {
     "categories": [
       "Japan in 708",

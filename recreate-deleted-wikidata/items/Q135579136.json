@@ -6,6 +6,248 @@
     "size_bytes": 320,
     "timestamp": "20250802035455"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "نيشينوهارا كوفون روو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "نيشينوهارا كوفون روو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নিশিনোহাৰা কোফ়ুনা ৰোউ",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নিশিনোহারা কোফ়ুনা রোউ",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nišinohara Kofun Group",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νισινοχαρα Κοφουν Ροου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nishinohara Kofun Group",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "نیشینوهارا کوفون روو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "西之原古墳羣",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נישינוהארא קופון רוו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "निशिनोहर कोफ़ुन रोउ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "西ノ原古墳群",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nišinohara Kofun Group",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "निशिनोहर कोफ़ुन रोउ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "निशिनोहारा कोफ़ुना रोउ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Нисинохара Кофун Роу",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nišinohara Kofun Group",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Нісінохара Кофун Роу",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "نیشینوهارا کوفون روو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nishinohara Kofun Group",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "西之原古坟群",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "西之原古坟群",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "西之原古坟群",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "西之原古墳羣",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "西之原古墳羣",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "西之原古墳羣",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "西之原古坟群",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "西之原古墳群",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Nishinohara Kofun Group"
+  },
   "fandom": {
     "categories": [
       "All disambiguation pages",

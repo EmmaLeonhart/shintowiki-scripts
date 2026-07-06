@@ -6,6 +6,20 @@
     "size_bytes": 319,
     "timestamp": "20250729224619"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Ōmiya Isuzu Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "大宮五十鈴神社",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Clans of Chūbu Region",

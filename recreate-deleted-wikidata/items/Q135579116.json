@@ -6,6 +6,20 @@
     "size_bytes": 367,
     "timestamp": "20250802035425"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Hozumi-Suzuki Clan Genealogy",
+        "source": "native"
+      },
+      "ja": {
+        "label": "穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Hozumi Clan",

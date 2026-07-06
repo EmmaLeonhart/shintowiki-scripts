@@ -6,6 +6,248 @@
     "size_bytes": 304,
     "timestamp": "20250802035735"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ني نو كوني",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ني نو كوني",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নে নো কুনি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নে নো কুনি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νε Νο Κουνι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Ne no Kuni",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "نه نو کونی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "根之堅州國",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נה נו קוני",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "ने नो कुनि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "根之堅州国",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "ने नो कुनि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ने नो कुनि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Нэ Но Куни",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Не Но Куні",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "نه نو کونی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Ne no Kuni",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "根之坚州国",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "根之坚州国",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "根之坚州国",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "根之堅州國",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "根之堅州國",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "根之堅州國",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "根之坚州国",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "根之堅州國",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Ne no Kuni"
+  },
   "fandom": {
     "categories": [
       "Japanese mythology",

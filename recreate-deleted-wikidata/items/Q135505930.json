@@ -6,6 +6,20 @@
     "size_bytes": 352,
     "timestamp": "20250730031652"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Fujimi Town Yone)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (前橋市富士見町米野)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

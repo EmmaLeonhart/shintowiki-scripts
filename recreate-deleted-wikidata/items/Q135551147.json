@@ -6,6 +6,20 @@
     "size_bytes": 295,
     "timestamp": "20250801074453"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Jisshōji",
+        "source": "native"
+      },
+      "ja": {
+        "label": "実城寺",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Former Buddhist temples",

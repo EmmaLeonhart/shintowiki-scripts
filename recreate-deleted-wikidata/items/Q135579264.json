@@ -6,6 +6,248 @@
     "size_bytes": 471,
     "timestamp": "20250802035947"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "إيسوروغي هيكو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "إيسوروجي هيكو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ইসুৰুগি হিকো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ইসুরুগি হিকো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ισουρουγκι Χικο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Isurugi Hiko",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ایسوروگی هیکو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "伊須流岐比古神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "he": {
+        "label": "איסורוגי היקו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "इसुरुगि हिको",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "伊須流岐比古神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "इसुरुगि हिको",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "इसुरुगि हिको",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Исуруги Хико",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Исуругі Хіко",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ایسوروگی هیکو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Isurugi Hiko",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "伊须流岐比古神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "伊须流岐比古神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "伊须流岐比古神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "伊須流岐比古神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "伊須流岐比古神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "伊須流岐比古神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "伊须流岐比古神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "伊須流岐比古神",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Isurugi Hiko"
+  },
   "fandom": {
     "categories": [
       "Gongen",

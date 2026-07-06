@@ -6,6 +6,248 @@
     "size_bytes": 295,
     "timestamp": "20250730011520"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "فويوماتسوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "فويوماتسوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ফ়ুযুমাত্সুৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ফ়ুযুমাত্সুরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Fujumacuri",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Φουγιουματσουρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Fuyumatsuri",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "فویوماتسوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "he": {
+        "label": "פויומאצורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "फ़ुयुमत्सुरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "鞴祭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "फ़ुयुमत्सुरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "फ़ुयुमात्सुरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Фуюмацури",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Fujumacuri",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Фуюмацурі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "فویوماتسوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Fuyumatsuri",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "鞴祭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "鞴祭",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Fuyumatsuri"
+  },
   "fandom": {
     "categories": [
       "Annual events",

@@ -6,6 +6,20 @@
     "size_bytes": 316,
     "timestamp": "20250730020711"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "The Twelve Heavenly Kings",
+        "source": "native"
+      },
+      "ja": {
+        "label": "十二天王",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Shinto shrines in Fujisawa",

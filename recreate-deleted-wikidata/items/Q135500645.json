@@ -6,6 +6,248 @@
     "size_bytes": 306,
     "timestamp": "20250729224600"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو تشوناغا",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو تشوناجا",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো চোনাগা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো চোনাগা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Čónaga",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Τσοναγκα",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Chōnaga",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو چوناگا",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍親長",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו נאגא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो चोनग",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍親長",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Čōnaga",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो चोनग",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो चोनागा",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Тёнага",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Čonaga",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Тёнага",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو چوناگا",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Chōnaga",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍亲长",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍亲长",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍亲长",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍親長",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍親長",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍親長",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍亲长",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍親長",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Abe no Chōnaga"
+  },
   "fandom": {
     "categories": [
       "1110 births",

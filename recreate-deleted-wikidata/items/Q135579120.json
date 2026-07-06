@@ -6,6 +6,248 @@
     "size_bytes": 327,
     "timestamp": "20250802035430"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "موريياما هيوتانياما كوفون",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "موريياما هيوتانياما كوفون",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মোৰিযামা হ্যোতান্যামা কোফ়ুনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মোরিযামা হ্যোতান্যামা কোফ়ুনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Morijama Hjótanjama Kofun",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μοριγιαμα Χιοτανιαμα Κοφουν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "مورییاما هیوتانیاما کوفون",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "守山瓢簞山古墳",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מוריימא טאמא קופון",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मोरियम ह्योतन्यम कोफ़ुन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "守山瓢箪山古墳",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मोरियम ह्योतन्यम कोफ़ुन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मोरियामा ह्योतान्यामा कोफ़ुना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Морияма Хётаняма Кофун",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Morijama Hjotan-jama Kofun",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Моріяма Хётаняма Кофун",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "مورییاما هیوتانیاما کوفون",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Moriyama Hyōtan-yama Kofun",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "守山瓢箪山古坟",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "守山瓢箪山古坟",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "守山瓢箪山古坟",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "守山瓢簞山古墳",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "守山瓢簞山古墳",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "守山瓢簞山古墳",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "守山瓢箪山古坟",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "守山瓢簞山古墳",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Moriyama Hyōtan-yama Kofun"
+  },
   "fandom": {
     "categories": [
       "All disambiguation pages",

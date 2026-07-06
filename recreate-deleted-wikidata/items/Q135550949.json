@@ -6,6 +6,20 @@
     "size_bytes": 303,
     "timestamp": "20250801064032"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Inner Palace",
+        "source": "native"
+      },
+      "ja": {
+        "label": "内裏外郭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "上京区の歴史",

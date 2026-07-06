@@ -6,6 +6,20 @@
     "size_bytes": 338,
     "timestamp": "20250730031659"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Miyaji Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (前橋市宮地町)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

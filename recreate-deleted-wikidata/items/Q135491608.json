@@ -6,6 +6,248 @@
     "size_bytes": 310,
     "timestamp": "20250729004859"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ناكاتومي نو أوشيما",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ناكاتومي نو أوشيما",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নাকাতোমি নো ওশিমা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নাকাতোমি নো ওশিমা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nakatomi no Óšima",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νακατομι Νο Οσιμα",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nakatomi no Ōshima",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ناکاتومی نو اوشیما",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נאקאטומי נו אושימא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "नकतोमि नो ओशिम",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "藤原大嶋",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nakatomi no Ōšima",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "नकतोमि नो ओशिम",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "नाकातोमि नो ओशिमा",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Накатоми Но Осима",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nakatomi no Ošima",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Накатомі Но Осіма",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ناکاتومی نو اوشیما",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nakatomi no Ōshima",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "藤原大嶋",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Nakatomi no Ōshima"
+  },
   "fandom": {
     "categories": [
       "694 deaths",

@@ -6,6 +6,248 @@
     "size_bytes": 313,
     "timestamp": "20250730011724"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "توريتسو شودايجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "توريتسو شودايجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তোৰিত্সু শোদাইজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তোরিত্সু শোদাইজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Tóricu Šódaidži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τοριτσου Σονταιτζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "توریتسو شودایجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טוריצו דאיג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तोरित्सु शोदइजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "唐律招提寺",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Tōritsu Šōdai-ji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तोरित्सु शोदइजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तोरित्सु शोदाइजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Торицу Сёдаидзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Toricu Šodai-dži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Торіцу Сёдаідзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "توریتسو شودایجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Tōritsu Shōdai-ji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "唐律招提寺",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Tōritsu Shōdai-ji"
+  },
   "fandom": {
     "categories": [
       "Days",

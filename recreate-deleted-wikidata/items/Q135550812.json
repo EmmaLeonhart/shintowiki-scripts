@@ -6,6 +6,248 @@
     "size_bytes": 319,
     "timestamp": "20250801055050"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تشيكوغو نو كوني فودوكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تشيكوجو نو كوني فودوكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "চিকুগো নো কুনি ফ়ুদোকি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "চিকুগো নো কুনি ফ়ুদোকি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Čikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τσικουγκο Νο Κουνι Φουντοκι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "چیکوگو نو کونی فودوکی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "he": {
+        "label": "צ׳יקוגו נו קוני פודוקי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "चिकुगो नो कुनि फ़ुदोकि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "筑後国風土記",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Čikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "चिकुगो नो कुनि फ़ुदोकि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "चिकुगो नो कुनि फ़ुदोकि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Тикуго Но Куни Фудоки",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Čikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Тікуго Но Куні Фудокі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "چیکوگو نو کونی فودوکی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Chikugo no Kuni Fudoki"
+  },
   "fandom": {
     "categories": [
       "528 deaths",

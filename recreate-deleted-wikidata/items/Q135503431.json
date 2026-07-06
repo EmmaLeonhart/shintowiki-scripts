@@ -6,6 +6,248 @@
     "size_bytes": 308,
     "timestamp": "20250730011832"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاراكادو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاراكادو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কাৰাকাদো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "az": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কারাকাদো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "da": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "de": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Καρακαντο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Color Index",
+        "source": "native"
+      },
+      "eo": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "es": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کاراکادو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאראקאדו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "करकदो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "it": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "カラーカード",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "la": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "करकदो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "काराकादो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Каракадо",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Каракадо",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کاراکادو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "war": {
+        "label": "karaーkaーdo",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "加良加土",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "加良加土",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "karaーkaーdo"
+  },
   "fandom": {
     "categories": [
       "Glass",

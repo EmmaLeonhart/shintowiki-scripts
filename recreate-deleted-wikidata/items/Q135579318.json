@@ -6,6 +6,248 @@
     "size_bytes": 307,
     "timestamp": "20250802040306"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ميتسوميني أوكامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميتسوميني أوكامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মিত্সুমিনে ওকামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মিত্সুমিনে ওকামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Micumine Ókami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιτσουμινε Οκαμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Mitsumine Ōkami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "میتسومینه اوکامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מיצומינה אוקאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मित्सुमिने ओकमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "三峰大神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मित्सुमिने ओकमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मित्सुमिने ओकामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Мицуминэ Оками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Micumine Okami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Міцуміне Окамі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "میتسومینه اوکامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "三峰大神",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Mitsumine Ōkami"
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Yorii Town",

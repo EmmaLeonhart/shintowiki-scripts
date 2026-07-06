@@ -6,6 +6,20 @@
     "size_bytes": 305,
     "timestamp": "20250729224647"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Gōkaku Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "合格神社",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Shinto shrines in Ise City",

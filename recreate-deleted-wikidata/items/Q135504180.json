@@ -6,6 +6,20 @@
     "size_bytes": 340,
     "timestamp": "20250730020125"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Ayato Night Nembutsu and Bon Odori",
+        "source": "fandom"
+      },
+      "ja": {
+        "label": "綾渡の夜念仏と盆踊",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Buddhist holidays",

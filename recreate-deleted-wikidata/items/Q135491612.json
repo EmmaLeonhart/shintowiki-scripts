@@ -6,6 +6,248 @@
     "size_bytes": 479,
     "timestamp": "20250729004911"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ناكاتومي توكيكازي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ناكاتومي توكيكازي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নাকাতোমি তোকিকাজ়ে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নাকাতোমি তোকিকাজ়ে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nakatomi Tokikaze (German)",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Νακατομι Τοκικαζε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nakatomi Tokikaze",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ناکاتومی توکیکازه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "中臣時風",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נאקאטומי טוקיקאזה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "नकतोमि तोकिकज़े",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "中臣時風",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "नकतोमि तोकिकज़े",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "नाकातोमि तोकिकाज़े",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Накатоми Токикадзэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Накатомі Токікадзе",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ناکاتومی توکیکازه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nakatomi Tokikaze",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "Nakatomi Tokikaze (Chinese)",
+        "source": "fandom"
+      },
+      "zh-cn": {
+        "label": "中臣时风",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "中臣时风",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "中臣時風",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "中臣時風",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "中臣時風",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "中臣时风",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "中臣時風",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Nakatomi Tokikaze"
+  },
   "fandom": {
     "categories": [
       "Kasuga-Utsushi",

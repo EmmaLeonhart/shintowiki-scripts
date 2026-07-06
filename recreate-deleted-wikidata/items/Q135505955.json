@@ -6,6 +6,20 @@
     "size_bytes": 342,
     "timestamp": "20250730031740"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Miyamae Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (伊勢崎市宮前町)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

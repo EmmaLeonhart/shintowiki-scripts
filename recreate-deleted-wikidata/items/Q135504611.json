@@ -6,6 +6,248 @@
     "size_bytes": 320,
     "timestamp": "20250730021034"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ناغاتاكي هاكوسان ريني",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ناجاتاكي هاكوسان ريني",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নাগাতাকি হাকুসানা ৰিনে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নাগাতাকি হাকুসানা রিনে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nagataki Hakusan Šrine",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ναγκατακι Χακουσαν Ρινε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ناگاتاکی هاکوسان رینه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "長滝白山神社",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נאגאטאקי האקוסאן רינה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "नगतकि हकुसन रिने",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "長滝白山神社",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nagataki Hakusan Šrine",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "नगतकि हकुसन रिने",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "नागाताकि हाकुसाना रिने",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Нагатаки Хакусан Ринэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nagataki Hakusan Šrine",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Нагатакі Хакусан Ріне",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ناگاتاکی هاکوسان رینه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nagataki Hakusan Shrine",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "长滝白山神社",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "长滝白山神社",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "长滝白山神社",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "長滝白山神社",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "長滝白山神社",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "長滝白山神社",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "长滝白山神社",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "長滝白山神社",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Nagataki Hakusan Shrine"
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Gujo",

@@ -6,6 +6,248 @@
     "size_bytes": 297,
     "timestamp": "20250801074559"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تينمونساي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تينمونساي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তেনামোনাসাই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তেনামোনাসাই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Tenmonsai",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τενμονσαι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Tenmon-sai",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "تهنمونسای",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "天門祭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טהןמוןסאי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तेनमोनसइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "天門祭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तेनमोनसइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तेनामोनासाइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Тэнмонсаи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Тенмонсаі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "تهنمونسای",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Tenmon-sai",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "天门祭",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "天门祭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "天门祭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "天門祭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "天門祭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "天門祭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "天门祭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "天門祭",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Tenmon-sai"
+  },
   "fandom": {
     "categories": [
       "Monks",

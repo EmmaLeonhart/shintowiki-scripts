@@ -6,6 +6,248 @@
     "size_bytes": 370,
     "timestamp": "20250802035507"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "إيغاهيكو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "إيجاهيكو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ইগাহিকো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ইগাহিকো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Igahiko",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ιγκαχικο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Iga-hiko",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ایگاهیکو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "伊賀彥",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "he": {
+        "label": "איגאהיקו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "इगहिको",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "伊賀彦",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "इगहिको",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "इगाहिको",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Игахико",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Игахіко",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ایگاهیکو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Iga-hiko",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "伊贺彦",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "伊贺彦",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "伊贺彦",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "伊賀彥",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "伊賀彥",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "伊賀彥",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "伊贺彦",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "伊賀彥",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Iga-hiko"
+  },
   "fandom": {
     "categories": [
       "Titles and Positions in Shintō",

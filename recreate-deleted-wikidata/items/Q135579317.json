@@ -6,6 +6,248 @@
     "size_bytes": 305,
     "timestamp": "20250802040303"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كوكاغي أوكامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كوكاجي أوكامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কোকাগে ওকামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কোকাগে ওকামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kókage Ókami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κοκαγκε Οκαμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kōkage Ōkami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کوکاگه اوکامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "蠶影大神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קוקאגה אוקאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कोकगे ओकमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "蚕影大神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कोकगे ओकमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कोकागे ओकामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кокагэ Оками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kokage Okami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кокаге Окамі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کوکاگه اوکامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kōkage Ōkami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "蚕影大神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "蚕影大神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "蚕影大神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "蠶影大神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "蠶影大神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "蠶影大神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "蚕影大神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "蠶影大神",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kōkage Ōkami"
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Yorii Town",

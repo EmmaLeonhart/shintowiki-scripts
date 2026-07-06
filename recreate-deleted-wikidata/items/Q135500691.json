@@ -6,6 +6,248 @@
     "size_bytes": 306,
     "timestamp": "20250729224643"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أداتشي توكيكاغي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أداتشي توكيكاجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অদাচি তোকিকাগে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অদাচি তোকিকাগে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Adači Tokikage",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αντατσι Τοκικαγκε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Adachi Tokikage",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اداچی توکیکاگه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安達時景",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אדאצ׳י טוקיקאגה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अदचि तोकिकगे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安達時景",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Adači Tokikage",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अदचि तोकिकगे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अदाचि तोकिकागे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Адати Токикагэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Adači Tokikage",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Адаті Токікаге",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اداچی توکیکاگه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Adachi Tokikage",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安达时景",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安达时景",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安达时景",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安達時景",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安達時景",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安達時景",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安达时景",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安達時景",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Adachi Tokikage"
+  },
   "fandom": {
     "categories": [
       "1210 births",

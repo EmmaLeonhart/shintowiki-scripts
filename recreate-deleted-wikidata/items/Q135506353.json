@@ -6,6 +6,20 @@
     "size_bytes": 312,
     "timestamp": "20250730033309"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Nanatsumori Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "七ツ森神社",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Wikidata generated shikinaisha pages",

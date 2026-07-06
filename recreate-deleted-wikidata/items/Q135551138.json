@@ -6,6 +6,208 @@
     "size_bytes": 305,
     "timestamp": "20250801074412"
   },
+  "enrichment": {
+    "label_count": 49,
+    "labels": {
+      "ar": {
+        "label": "ميزوماتشي إيتي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميزوماتشي إيتي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মিজ়ুমাচি ইতে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মিজ়ুমাচি ইতে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mizumači Site",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιζουματσι Ιτε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Mizumachi Site",
+        "source": "fandom"
+      },
+      "eo": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "میزوماچی ایته",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מיזומאצ׳י איטה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मिज़ुमचि इते",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "jv": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Mizumači Site",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मिज़ुमचि इते",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मिज़ुमाचि इते",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Мидзумати Итэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mizumači Site",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Мідзуматі Ите",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "میزوماچی ایته",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Mizumachi Site",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Mizumachi Site"
+  },
   "fandom": {
     "categories": [
       "埼玉県の古墳",

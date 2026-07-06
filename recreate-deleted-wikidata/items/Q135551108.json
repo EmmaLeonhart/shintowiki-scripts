@@ -6,6 +6,248 @@
     "size_bytes": 378,
     "timestamp": "20250801074228"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميبي يوكوناا",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميبي يوكوناا",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিবে যুকুনাঅ",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিবে যুকুনাঅ",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamibe Jukunaa",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamibe Yukunaa",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Καμιμπε Γιουκουναα",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamibe Yukunaa",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیبه یوکوناا",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמיבה יוקונאא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिबे युकुनअ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "神部宿奈",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिबे युकुनअ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिबे युकुनाअ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камибэ Юкунаа",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamibe Jukunaa",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камібе Юкунаа",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیبه یوکوناا",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamibe Yukunaa",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "神部宿奈",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "神部宿奈",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kamibe Yukunaa"
+  },
   "fandom": {
     "categories": [
       "Japan in 708",

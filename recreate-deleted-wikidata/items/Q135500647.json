@@ -6,6 +6,248 @@
     "size_bytes": 304,
     "timestamp": "20250729224604"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو ياسومي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو ياسومي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো যাসুমি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো যাসুমি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Jasumi",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Γιασουμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Yasumi",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو یاسومی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו יסומי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो यसुमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍泰明",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो यसुमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो यासुमि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Ясуми",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Jasumi",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Ясумі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو یاسومی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Yasumi",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍泰明",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍泰明",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Abe no Yasumi"
+  },
   "fandom": {
     "categories": [
       "1110 births",

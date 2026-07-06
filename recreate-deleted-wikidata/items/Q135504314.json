@@ -6,6 +6,20 @@
     "size_bytes": 328,
     "timestamp": "20250730020430"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Ōtenma-chō Tennō Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "大伝馬町天王祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

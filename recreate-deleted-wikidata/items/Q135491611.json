@@ -6,6 +6,20 @@
     "size_bytes": 317,
     "timestamp": "20250729004908"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Nakatomi Sakado clan",
+        "source": "native"
+      },
+      "ja": {
+        "label": "中臣酒人宿祢",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Nakatomi clan",

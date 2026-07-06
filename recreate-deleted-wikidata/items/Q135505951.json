@@ -6,6 +6,20 @@
     "size_bytes": 361,
     "timestamp": "20250730031732"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Kurohone Yagihara Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (桐生市黒保根町八木原)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

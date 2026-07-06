@@ -6,6 +6,248 @@
     "size_bytes": 307,
     "timestamp": "20250729224551"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو ياسوشيغي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو ياسوشيجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো যাসুশিগে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো যাসুশিগে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Jasušige",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Γιασουσιγκε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Yasushige",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو یاسوشیگه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו יסושיגה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो यसुशिगे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍泰茂",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Yasušige",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो यसुशिगे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो यासुशिगे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Ясусигэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Jasušige",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Ясусіге",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو یاسوشیگه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Yasushige",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍泰茂",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Abe no Yasushige"
+  },
   "fandom": {
     "categories": [
       "1110 births",

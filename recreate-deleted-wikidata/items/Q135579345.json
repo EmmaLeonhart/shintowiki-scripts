@@ -6,6 +6,20 @@
     "size_bytes": 351,
     "timestamp": "20250802040431"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Izumo-taisha Malaysia Religious Society",
+        "source": "native"
+      },
+      "ja": {
+        "label": "出雲大社マレーシア講社",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Izumo Grand Shrine",

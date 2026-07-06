@@ -6,6 +6,20 @@
     "size_bytes": 354,
     "timestamp": "20250730031725"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Niisato Itabashi Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (桐生市新里町板橋)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

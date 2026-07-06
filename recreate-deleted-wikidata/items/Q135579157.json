@@ -6,6 +6,20 @@
     "size_bytes": 363,
     "timestamp": "20250802035516"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "御鑰",
+        "source": "native"
+      },
+      "ja": {
+        "label": "御鑰",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Titles and Positions in Shintō",

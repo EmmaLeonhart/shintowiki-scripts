@@ -6,6 +6,248 @@
     "size_bytes": 303,
     "timestamp": "20250801052050"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تاتسوتاهيمي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تاتسوتاهيمي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তাত্সুতাহিমে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তাত্সুতাহিমে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Tacutahime",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τατσουταχιμε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Tatsuta-hime",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "تاتسوتاهیمه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טאצוטאהימה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तत्सुतहिमे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "竜田姫命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तत्सुतहिमे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तात्सुताहिमे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Тацутахимэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Tacuta-hime",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Тацутахіме",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "تاتسوتاهیمه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Tatsuta-hime",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "竜田姫命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "竜田姫命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Tatsuta-hime"
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Maebashi",

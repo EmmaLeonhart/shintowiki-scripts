@@ -6,6 +6,20 @@
     "size_bytes": 359,
     "timestamp": "20250730031758"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Kitakatsushika Town Yasaki)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (渋川市北橘町八崎)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Myōjin Taisha",

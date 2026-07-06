@@ -6,6 +6,248 @@
     "size_bytes": 376,
     "timestamp": "20250802035854"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أماتيراسو كونيتيروهيكو هيكاري كوشي تاما هاياسوي نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أماتيراسو كونيتيروهيكو هيكاري كوشي تاما هاياسوي نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অমাতেৰাসু কুনিতেৰুহিকো হিকাৰি কুশি তামা হাযাসুই নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অমাতেরাসু কুনিতেরুহিকো হিকারি কুশি তামা হাযাসুই নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kuši Tama Hajasui no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αματερασου Κουνιτερουχικο Χικαρι Κουσι Ταμα Χαγιασουι Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اماتهراسو کونیتهروهیکو هیکاری کوشی تاما هایاسوی نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "天照國照彥火明櫛玉饒早日命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אמאטהראסו קוניטהרוהיקו היקארי קושי טאמא האיסוי נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अमतेरसु कुनितेरुहिको हिकरि कुशि तम हयसुइ नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "天照国照彦火明櫛玉饒早日命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kuši Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अमतेरसु कुनितेरुहिको हिकरि कुशि तम हयसुइ नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अमातेरासु कुनितेरुहिको हिकारि कुशि तामा हायासुइ नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Аматэрасу Кунитэрухико Хикари Куси Тама Хаясуи Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kuši Tama Hajasui no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Аматерасу Кунітерухіко Хікарі Кусі Тама Хаясуі Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اماتهراسو کونیتهروهیکو هیکاری کوشی تاما هایاسوی نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "天照国照彦火明栉玉饶早日命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "天照国照彦火明栉玉饶早日命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "天照国照彦火明栉玉饶早日命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "天照國照彥火明櫛玉饒早日命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "天照國照彥火明櫛玉饒早日命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "天照國照彥火明櫛玉饒早日命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "天照国照彦火明栉玉饶早日命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "天照國照彥火明櫛玉饒早日命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto"
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Tatsuno, Hyogo",

@@ -6,6 +6,20 @@
     "size_bytes": 317,
     "timestamp": "20250730020358"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Noheji Gion Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "野辺地祇園祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

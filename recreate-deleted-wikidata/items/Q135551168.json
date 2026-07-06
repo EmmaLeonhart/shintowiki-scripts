@@ -6,6 +6,248 @@
     "size_bytes": 303,
     "timestamp": "20250801074615"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "بينتين تشيغو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "بينتين تشيجو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "বেনাতেনা চিগো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "বেনাতেনা চিগো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Benten Čigo",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μπεντεν Τσιγκο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Benten Chigo",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "بهنتهن چیگو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "he": {
+        "label": "בהןטהן צ׳יגו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "बेनतेन चिगो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "弁天稚児",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Benten Čigo",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "बेनतेन चिगो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "बेनातेना चिगो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Бэнтэн Тиго",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Benten Čigo",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Бентен Тіго",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "بهنتهن چیگو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Benten Chigo",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "弁天稚児",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "弁天稚児",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Benten Chigo"
+  },
   "fandom": {
     "categories": [
       "Monks",

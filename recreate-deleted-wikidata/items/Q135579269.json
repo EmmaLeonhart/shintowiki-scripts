@@ -6,6 +6,248 @@
     "size_bytes": 336,
     "timestamp": "20250802040002"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ساوايتاهاراروكوروهيكونوكامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ساوايتاهاراروكوروهيكونوكامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "সাবাএতাহাৰাৰোকুৰোহিকোনোকামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "সাবাএতাহারারোকুরোহিকোনোকামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Savaetahararokurohikonokami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σαουαεταχαραροκουροχικονοκαμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ساواهتاهاراروکوروهیکونوکامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "佐和恵多良六老彥神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "סאואהטאהארארוקורוהיקונוקאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "सवएतहररोकुरोहिकोनोकमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "佐和恵多良六老彦神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Savaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "सवएतहररोकुरोहिकोनोकमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "सावाएताहारारोकुरोहिकोनोकामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Саваэтахарарокурохиконоками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Savaetahara-rokurohiko-no-kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Саваетахарарокурохіконокамі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ساواهتاهاراروکوروهیکونوکامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Sawaetahara-Rokurohiko-no-Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "佐和恵多良六老彦神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "佐和恵多良六老彦神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "佐和恵多良六老彦神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "佐和恵多良六老彥神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "佐和恵多良六老彥神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "佐和恵多良六老彥神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "佐和恵多良六老彦神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "佐和恵多良六老彥神",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Sawaetahara-Rokurohiko-no-Kami"
+  },
   "fandom": {
     "categories": [
       "Goddesses",

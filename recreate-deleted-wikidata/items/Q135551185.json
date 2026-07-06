@@ -6,6 +6,20 @@
     "size_bytes": 344,
     "timestamp": "20250801074715"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Suitengu Dedication Fireworks Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "水天宮奉納花火大会",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Japan in 1650",

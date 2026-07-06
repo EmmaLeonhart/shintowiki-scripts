@@ -4,6 +4,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Recreation candidates: names across many languages (Emma request)
+
+Emma: "all recreation candidates should have names across many languages ... they all need a
+bit more data to really run." First correction to my own prior claim: I'd said most candidates
+"only have ja" — WRONG; 210/213 have en+ja at minimum (en = the recovered/fandom label), I'd
+miscounted by looking only at the ill's secondary langlinks. Built `enrich_multilang.py`,
+reusing the project's blessed transliteration engine (`shinto-label-generator/translit_common.py`
+— same one that feeds the daily label pipeline): derive the romaji reading from en+ja, render
+into every `ALL_LANGS` language (Latin keeps romaji; Cyrillic/Greek/Arabic/Perso-Arabic/Hebrew/
+Devanagari/Bengali/Korean/Toki-Pona transliterate; zh family via man'yōgana→OpenCC), with the
+authoritative fandom langlinks winning over transliteration. Result: **213 candidates × median
+59 languages = 7,255 label strings**, written into each `items/<QID>.json` as
+`enrichment.labels` (each tagged native/fandom/translit) + `enrichment.romaji_reading`. Local,
+deterministic, no network. 3 unit tests (24 green in-dir); CI already installs the engine deps.
+
+Also caught + reverted an UNSOUND first pass at P31: I'd derived instance-of from the fandom
+HOST-PAGE categories, but those describe the page, not the deleted ill-TARGET (it mislabeled the
+kami "Niwa-tsume no Mikoto" as a "disambiguation page" because its host page is a shrine-dab
+page). jawiki lookup on the ja names returns 0/18 (these entities have no jawiki articles — why
+they were empty-deleted). So P31 needs a name-based Shinto classifier (next), not host-page cats.
+
 ## 2026-07-05 — Per-QID JSON files for every deleted item (Emma request)
 
 Emma: "make json files on each deleted qid for the info we have on them." Built

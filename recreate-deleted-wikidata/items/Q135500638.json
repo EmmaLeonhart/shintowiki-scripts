@@ -6,6 +6,248 @@
     "size_bytes": 306,
     "timestamp": "20250729224554"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو ياسوناري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو ياسوناري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো যাসুনাৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো যাসুনারি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Jasunari",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Γιασουναρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Yasunari",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو یاسوناری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו יסונארי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो यसुनरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍泰成",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो यसुनरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो यासुनारि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Ясунари",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Jasunari",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Ясунарі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو یاسوناری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Yasunari",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍泰成",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍泰成",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Abe no Yasunari"
+  },
   "fandom": {
     "categories": [
       "1110 births",

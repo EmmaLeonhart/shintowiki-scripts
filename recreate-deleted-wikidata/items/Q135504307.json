@@ -6,6 +6,20 @@
     "size_bytes": 317,
     "timestamp": "20250730020420"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Yamanashi Gion Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "山梨祇園祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

@@ -6,6 +6,20 @@
     "size_bytes": 334,
     "timestamp": "20250801064020"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kyushu 36 Fudō Sacred Sites",
+        "source": "native"
+      },
+      "ja": {
+        "label": "九州三十六不動霊場",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "九州地方にある日本庭園",

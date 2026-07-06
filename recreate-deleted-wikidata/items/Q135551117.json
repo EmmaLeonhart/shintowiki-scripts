@@ -6,6 +6,20 @@
     "size_bytes": 297,
     "timestamp": "20250801074254"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Bunka 1",
+        "source": "native"
+      },
+      "ja": {
+        "label": "文化元年",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "History of Ōita Prefecture",

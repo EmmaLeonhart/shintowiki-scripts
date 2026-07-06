@@ -6,6 +6,248 @@
     "size_bytes": 313,
     "timestamp": "20250801074622"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ميياجيما كانزينساي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميياجيما كانزينساي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মিযাজিমা কানাজ়েনাসাই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মিযাজিমা কানাজ়েনাসাই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mijadžima Kanzensai",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιγιατζιμα Κανζενσαι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "مییاجیما کانزهنسای",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "宮島管絃祭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מייג׳ימא קאןזהןסאי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मियजिम कनज़ेनसइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "宮島管絃祭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मियजिम कनज़ेनसइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मियाजिमा कानाज़ेनासाइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Миядзима Кандзэнсаи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mijadžima Kanzen-sai",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Міядзіма Кандзенсаі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "مییاجیما کانزهنسای",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Miyajima Kanzen-sai",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "宫岛管弦祭",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "宫岛管弦祭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "宫岛管弦祭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "宮島管絃祭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "宮島管絃祭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "宮島管絃祭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "宫岛管弦祭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "宮島管絃祭",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Miyajima Kanzen-sai"
+  },
   "fandom": {
     "categories": [
       "Monks",

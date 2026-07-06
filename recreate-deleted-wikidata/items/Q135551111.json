@@ -6,6 +6,248 @@
     "size_bytes": 381,
     "timestamp": "20250801074239"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميبي تسوموجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميبي تسوموجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিবে ত্সুমুজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিবে ত্সুমুজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamibe Cumudži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamibe Tsumuji",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Καμιμπε Τσουμουτζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamibe Tsumuji",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیبه تسوموجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמיבה צומוג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिबे त्सुमुजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "神部都牟自",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिबे त्सुमुजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिबे त्सुमुजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камибэ Цумудзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamibe Cumudži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камібе Цумудзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیبه تسوموجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamibe Tsumuji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "神部都牟自",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "神部都牟自",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kamibe Tsumuji"
+  },
   "fandom": {
     "categories": [
       "Japan in 708",

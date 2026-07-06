@@ -6,6 +6,20 @@
     "size_bytes": 313,
     "timestamp": "20250801055026"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Chichibu Three Shrines",
+        "source": "native"
+      },
+      "ja": {
+        "label": "秩父三社",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Architecture of Nagatoro Town",

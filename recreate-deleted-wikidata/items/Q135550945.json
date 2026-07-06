@@ -6,6 +6,20 @@
     "size_bytes": 328,
     "timestamp": "20250801064016"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kyushu 88 Sacred Sites",
+        "source": "native"
+      },
+      "ja": {
+        "label": "九州八十八箇所霊場",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "九州地方にある日本庭園",

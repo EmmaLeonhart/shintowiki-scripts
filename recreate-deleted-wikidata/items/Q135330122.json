@@ -6,6 +6,248 @@
     "size_bytes": 244,
     "timestamp": "20250714223000"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أمانوميكيمونوشي نو كامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أمانوميكيمونوشي نو كامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অমানোমিকেমুনুশি নো কামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অমানোমিকেমুনুশি নো কামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Amanomikemunuši no Kami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμανομικεμουνουσι Νο Καμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "امانومیکهمونوشی نو کامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אמאנומיקהמונושי נו קאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अमनोमिकेमुनुशि नो कमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Amanomikemunuši no Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अमनोमिकेमुनुशि नो कमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अमानोमिकेमुनुशि नो कामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Аманомикэмунуси Но Ками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Amanomikemunuši no Kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Аманомікемунусі Но Камі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "امانومیکهمونوشی نو کامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "Amanomikemunushi no Kami",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Amanomikemunushi no Kami"
+  },
   "fandom": {
     "categories": [],
     "current_ill_qid": null,

@@ -6,6 +6,248 @@
     "size_bytes": 444,
     "timestamp": "20250730011805"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "باسورومان",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "باسورومان",
+        "source": "translit"
+      },
+      "as": {
+        "label": "বাসুৰোমানা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "az": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "বাসুরোমানা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "da": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Bath Roman",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Μπασουρομαν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Bath Roman",
+        "source": "native"
+      },
+      "eo": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "es": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "باسورومان",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "馬須路萬無",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "he": {
+        "label": "באסורומאן",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "बसुरोमन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "it": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "バスロマン",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "la": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "बसुरोमन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "बासुरोमाना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Басуроман",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Басуроман",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "باسورومان",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "war": {
+        "label": "basuroman",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "泡澡罗曼",
+        "source": "fandom"
+      },
+      "zh-cn": {
+        "label": "马须路万无",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "马须路万无",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "馬須路萬無",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "馬須路萬無",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "馬須路萬無",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "马须路万无",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "馬須路萬無",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "basuroman"
+  },
   "fandom": {
     "categories": [
       "Bathing",

@@ -6,6 +6,20 @@
     "size_bytes": 307,
     "timestamp": "20250730020346"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "JR Ise Sangu Line",
+        "source": "native"
+      },
+      "ja": {
+        "label": "JR参宮線",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Defunct prefectural roads in Mie",

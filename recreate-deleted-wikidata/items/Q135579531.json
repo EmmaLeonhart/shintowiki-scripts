@@ -6,6 +6,20 @@
     "size_bytes": 315,
     "timestamp": "20250802042013"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Pre-Ainu theory",
+        "source": "native"
+      },
+      "ja": {
+        "label": "プレ・アイヌ説",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Historical Views",

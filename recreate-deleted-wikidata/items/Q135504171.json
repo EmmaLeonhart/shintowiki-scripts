@@ -6,6 +6,248 @@
     "size_bytes": 323,
     "timestamp": "20250730020111"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كوروشيما إيسوني هيمي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كوروشيما إيسوني هيمي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কুৰোশিমা ইসোনে হিমে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কুরোশিমা ইসোনে হিমে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kurošima Isone hime",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κουροσιμα Ισονε Χιμε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kuroshima Isone hime",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کوروشیما ایسونه هیمه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "黒島磯根御気姫命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קורושימא איסונה הימה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कुरोशिम इसोने हिमे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "黒島磯根御気姫命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kurošima Isone hime",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कुरोशिम इसोने हिमे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कुरोशिमा इसोने हिमे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Куросима Исонэ Химэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kurošima Isone hime",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Куросіма Исоне Хіме",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کوروشیما ایسونه هیمه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kuroshima Isone hime",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "黒岛矶根御気姫命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "黒岛矶根御気姫命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "黒岛矶根御気姫命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "黒島磯根御気姫命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "黒島磯根御気姫命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "黒島磯根御気姫命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "黒岛矶根御気姫命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "黒島磯根御気姫命",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kuroshima Isone hime"
+  },
   "fandom": {
     "categories": [
       "Japanese deities",

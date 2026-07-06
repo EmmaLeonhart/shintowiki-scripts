@@ -6,6 +6,20 @@
     "size_bytes": 339,
     "timestamp": "20250730020411"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Yasaka Shrine Gion Festival (Ryugasaki)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "八坂神社祇園祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

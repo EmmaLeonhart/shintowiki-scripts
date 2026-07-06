@@ -6,6 +6,20 @@
     "size_bytes": 294,
     "timestamp": "20250801074257"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Wa mirrors",
+        "source": "native"
+      },
+      "ja": {
+        "label": "和鏡",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "考古資料",

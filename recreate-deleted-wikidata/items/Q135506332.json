@@ -6,6 +6,20 @@
     "size_bytes": 322,
     "timestamp": "20250730033227"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kyoto's Three Kumano Shrines",
+        "source": "native"
+      },
+      "ja": {
+        "label": "京都三熊野",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Buildings and structures in Sakyo-ku, Kyoto",

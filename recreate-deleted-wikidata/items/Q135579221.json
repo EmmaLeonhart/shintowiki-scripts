@@ -6,6 +6,248 @@
     "size_bytes": 325,
     "timestamp": "20250802035747"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "سوغانوساوا غوبيو كوفون",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "سوجانوساوا جوبيو كوفون",
+        "source": "translit"
+      },
+      "as": {
+        "label": "সুগানোসাবা গোব্যো কোফ়ুনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "সুগানোসাবা গোব্যো কোফ়ুনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Suganosava Gobjó Kofun",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σουγκανοσαουα Γκομπιο Κοφουν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "سوگانوساوا گوبیو کوفون",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "菅之沢御廟古墳",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "he": {
+        "label": "סוגאנוסאוא גו קופון",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "सुगनोसव गोब्यो कोफ़ुन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "菅ノ沢御廟古墳",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Suga-no-Sava Gobyō Kofun",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "सुगनोसव गोब्यो कोफ़ुन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "सुगानोसावा गोब्यो कोफ़ुना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Суганосава Гобё Кофун",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Suga-no-sava Gobjo Kofun",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Суганосава Гобё Кофун",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "سوگانوساوا گوبیو کوفون",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Suga-no-Sawa Gobyō Kofun",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "菅之沢御庙古坟",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "菅之沢御庙古坟",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "菅之沢御庙古坟",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "菅之沢御廟古墳",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "菅之沢御廟古墳",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "菅之沢御廟古墳",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "菅之沢御庙古坟",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "菅之沢御廟古墳",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Suga-no-Sawa Gobyō Kofun"
+  },
   "fandom": {
     "categories": [
       "History of Ota, Gunma",

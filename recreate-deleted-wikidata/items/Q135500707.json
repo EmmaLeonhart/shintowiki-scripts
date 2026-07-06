@@ -6,6 +6,20 @@
     "size_bytes": 320,
     "timestamp": "20250729224658"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Agata Shrine (Izumo)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "縣神社 (出雲市)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Shinto shrines with the same name",

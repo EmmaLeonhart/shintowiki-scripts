@@ -6,6 +6,20 @@
     "size_bytes": 318,
     "timestamp": "20250729224708"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Cedar of Agata Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "県神社のスギ",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "下呂市の建築物",

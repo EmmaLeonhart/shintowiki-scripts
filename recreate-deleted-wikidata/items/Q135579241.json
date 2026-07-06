@@ -6,6 +6,248 @@
     "size_bytes": 312,
     "timestamp": "20250802035846"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "واكا إينوكاي نو موراجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "واكا إينوكاي نو موراجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "বাকা ইনুকাই নো মুৰাজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "বাকা ইনুকাই নো মুরাজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Vaka Inukai no Muradži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ουακα Ινουκαι Νο Μουρατζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Waka Inukai no Muraji",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "واکا اینوکای نو موراجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "若犬養連",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ואקא אינוקאי נו מוראג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "वक इनुकइ नो मुरजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "若犬養連",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Vaka Inukai no Muraji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "वक इनुकइ नो मुरजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "वाका इनुकाइ नो मुराजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Вака Инукаи Но Мурадзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Vaka Inukai no Muradži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Вака Инукаі Но Мурадзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "واکا اینوکای نو موراجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Waka Inukai no Muraji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "若犬养连",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "若犬养连",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "若犬养连",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "若犬養連",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "若犬養連",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "若犬養連",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "若犬养连",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "若犬養連",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Waka Inukai no Muraji"
+  },
   "fandom": {
     "categories": [
       "Bumin",

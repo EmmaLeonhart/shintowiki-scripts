@@ -6,6 +6,20 @@
     "size_bytes": 342,
     "timestamp": "20250730020321"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Mitsurugi Shrine Summer Grand Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "御劔神社 夏季大祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

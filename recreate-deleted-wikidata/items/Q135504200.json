@@ -6,6 +6,20 @@
     "size_bytes": 344,
     "timestamp": "20250730020154"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Futagoyama Park (disambiguation)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "二子山公園 (曖昧さ回避)",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "All disambiguation pages",

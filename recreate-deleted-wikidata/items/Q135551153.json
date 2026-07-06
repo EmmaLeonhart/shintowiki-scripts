@@ -6,6 +6,248 @@
     "size_bytes": 299,
     "timestamp": "20250801074519"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ماغو ماتسوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ماجو ماتسوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মাগো মাত্সুৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মাগো মাত্সুরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mago Macuri",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μαγκο Ματσουρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Mago Matsuri",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ماگو ماتسوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "孫見祭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מאגו מאצורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मगो मत्सुरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "孫見祭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मगो मत्सुरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मागो मात्सुरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Маго Мацури",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mago Macuri",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Маго Мацурі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ماگو ماتسوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Mago Matsuri",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "孙见祭",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "孙见祭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "孙见祭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "孫見祭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "孫見祭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "孫見祭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "孙见祭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "孫見祭",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Mago Matsuri"
+  },
   "fandom": {
     "categories": [
       "Monks",

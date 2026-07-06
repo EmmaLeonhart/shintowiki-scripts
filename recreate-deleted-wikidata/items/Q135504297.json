@@ -6,6 +6,20 @@
     "size_bytes": 320,
     "timestamp": "20250730020408"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Tanbayama Gion Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "丹波山祇園祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

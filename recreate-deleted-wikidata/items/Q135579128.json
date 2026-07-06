@@ -6,6 +6,248 @@
     "size_bytes": 319,
     "timestamp": "20250802035443"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميهامادا كوفون روو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميهامادا كوفون روو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিহামাদা কোফ়ুনা ৰোউ",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিহামাদা কোফ়ুনা রোউ",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Καμιχαμαντα Κοφουν Ροου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamihamada Kofun Group",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیهامادا کوفون روو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "上浜田古墳羣",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמיהאמאדא קופון רוו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिहमद कोफ़ुन रोउ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "上浜田古墳群",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिहमद कोफ़ुन रोउ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिहामादा कोफ़ुना रोउ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камихамада Кофун Роу",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Каміхамада Кофун Роу",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیهامادا کوفون روو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamihamada Kofun Group",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "上浜田古坟群",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "上浜田古坟群",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "上浜田古坟群",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "上浜田古墳羣",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "上浜田古墳羣",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "上浜田古墳羣",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "上浜田古坟群",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "上浜田古墳群",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Kamihamada Kofun Group"
+  },
   "fandom": {
     "categories": [
       "All disambiguation pages",

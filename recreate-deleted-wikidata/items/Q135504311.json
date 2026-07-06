@@ -6,6 +6,20 @@
     "size_bytes": 333,
     "timestamp": "20250730020427"
   },
+  "enrichment": {
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Minami Tenma-chō Tennō Festival",
+        "source": "native"
+      },
+      "ja": {
+        "label": "南伝馬町天王祭",
+        "source": "fandom"
+      }
+    },
+    "romaji_reading": null
+  },
   "fandom": {
     "categories": [
       "Festivals in Japan",

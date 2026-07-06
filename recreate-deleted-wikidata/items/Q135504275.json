@@ -6,6 +6,248 @@
     "size_bytes": 317,
     "timestamp": "20250730020352"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "دايكاكوجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "دايكاكوجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "দাইকাকুজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "দাইকাকুজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Daikakudži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νταικακουτζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Daikaku-ji (Gifu)",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "دایکاکوجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "דאיקאקוג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "दइककुजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "दइककुजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "दाइकाकुजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Даикакудзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Daikaku-dži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Даікакудзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "دایکاکوجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Daikaku-ji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "大覚寺 (岐阜市)",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Daikaku-ji"
+  },
   "fandom": {
     "categories": [
       "Seven Lucky Gods Pilgrimages",

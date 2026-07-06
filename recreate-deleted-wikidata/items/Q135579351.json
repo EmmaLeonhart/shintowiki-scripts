@@ -6,6 +6,248 @@
     "size_bytes": 306,
     "timestamp": "20250802040452"
   },
+  "enrichment": {
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ميياو شيغيمارو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميياو شيجيمارو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মিযাও শিগেমাৰু",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মিযাও শিগেমারু",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mijao Šigemaru",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιγιαο Σιγκεμαρου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Miyao Shigemaru",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "مییاو شیگهمارو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "宮王重丸",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מייו שיגהמארו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मियओ शिगेमरु",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "宮王重丸",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Miyao Šigemaru",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मियओ शिगेमरु",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मियाओ शिगेमारु",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Мияо Сигэмару",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mijao Šigemaru",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Міяо Сігемару",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "مییاو شیگهمارو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Miyao Shigemaru",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "宫王重丸",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "宫王重丸",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "宫王重丸",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "宮王重丸",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "宮王重丸",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "宮王重丸",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "宫王重丸",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "宮王重丸",
+        "source": "translit"
+      }
+    },
+    "romaji_reading": "Miyao Shigemaru"
+  },
   "fandom": {
     "categories": [
       "1906 establishments in Hawaii",
