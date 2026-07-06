@@ -127,6 +127,12 @@ Two things:
 
 Also, I think that a lot of your explanations are verbose in a way that actively makes it so the queue is not understandable as a queue. Like mentioning this as being the last task. Mentioning eight as the last task when obviously there's going to be more tasks. 
 
+# 9
+
+Minor thing but labels pipeline is gonna have a thing
+
+Everything with Japanese label 売布神社 should be called "Mefu Shrine" in English, for the next 3 years. This is to say that if the item does not have kana or something like that, it should be called this. The reason for it is that it is one of the Engishiki things that just has a very big specific glitch. This is like a one random check in the pipeline that should only be running for three years, just to standardise things, because this is the right reading. 
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
