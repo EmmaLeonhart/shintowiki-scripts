@@ -12,7 +12,7 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 ''(These mirror actionable blockers in <code>queue.md</code>. Answer inline; the agent deletes each once acted on.)''
 
-''(No open questions right now. Emma resolved 2026-07-06: the referenced deleted items — the ill targets — were recreated this session; the ~213 UNREFERENCED deleted items are NOT to be recreated — they were deleted for a reason and break no links.)''
+* '''CI Wikidata editing is broken — bot token lacks edit permission (needs Emma).''' The GitHub-Actions Wikidata editor (<code>direct_daily_edits.py</code>) logs in as Immanuelle but EVERY edit fails: run 28802688487 (2026-07-06) = 0 OK / 299 FAIL — 112× "You do not have the permissions needed to carry out this action", 140× "The save has failed", 47× qualifier fails. So NO CI Wikidata edits have landed (green runs are 5h of failed attempts exiting 0). Browser QuickStatements works because it uses Emma's full login. '''Fix (Emma only):''' regenerate the Wikidata bot password for Immanuelle at <code>Special:BotPasswords</code> with grants "Edit existing pages" + "Create, edit, and move pages" + "High-volume (bot) editing", then update the <code>BOT_TOKEN</code> (and <code>MW_BOTNAME</code> if changed) GitHub secret. Until then the daily QS pipeline edits nothing.
 
 == Notes ==
 
