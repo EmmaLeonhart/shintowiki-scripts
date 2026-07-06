@@ -28,15 +28,7 @@ autonomous follow-up. **Repair is disposable — dumb direct text swaps, no dura
   relink to created/live QID; duplicates → live QID. Un-sync each resolved page.
 - [ ] **Optional per-item enrichment:** P131 (from host-page place) + coordinates — authoritative only.
 
-## 2. `Template:Ill` wrongful-deletion fix (easy)
-
-The fandom bot recurrently deletes `shinto.fandom.com/wiki/Template:Ill` ("no Shinto equivalent")
-because the check doesn't count a miraheze **redirect** as an equivalent.
-
-- [ ] **Root cause:** make the fandom delete-orphans check follow miraheze redirect targets first
-  (mitigation done 2026-07-06 — git-synced in both unique dirs).
-
-## 3. Long-tail language transliterators (build task)
+## 2. Long-tail language transliterators (build task)
 
 - [ ] **Thai (`th`)** transliterator — pre-posed vowel signs (33/135 labels). `pa/km/lo/dz/new/mad/shn`
   (≤16 labels) + `cdo` have no converter — only if one arrives. `python
