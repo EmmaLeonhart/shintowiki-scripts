@@ -108,6 +108,8 @@ I noticed on this item https://www.wikidata.org/wiki/Q134736475 I noticed the pi
 
 It might be that there was some kind of a primary name that was attached to it, and this is a secondary one, but I'm not really sure. 
 
+Oh no, there's a clear, looks like a typo or something in it, so I'm not sure what the origin of it is, but this is not a thing. This is not cool. We need to fix wherever it went wrong in the pipeline, and my thought with the pipeline is that it went wrong because of the fact that it was one of the agentic sessions on the cloud that did this thing, and we might want to have it so that our cloud sessions have some sort of verification that this stuff follows proper Japanese phonology. 
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
