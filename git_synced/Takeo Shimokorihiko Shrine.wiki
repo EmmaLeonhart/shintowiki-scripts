@@ -1,0 +1,164 @@
+{{Expand Japanese|健男霜凝日子神社}}
+
+{{Infobox religious building
+| name = Takeo Shimokorihiko Shrine
+| native_name = 健男霜凝日子神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Takeo Shimokorihiko Shrine
+| coordinates = {{coord|32.872957|131.356406}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Takeo Shimokorihiko Shrine'''|健男霜凝日子神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bungo Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
+* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
+* {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287|lt=Shikinai Shōsha}}
+* {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
+* {{ill|Kokuhei-sha|qid=Q135160342}}<ref>Kokugakuin University Shrine database</ref>
+
+== part of (P361) ==
+
+* {{ill|List of Shikinaisha in Bungo Province|ja|豊後国の式内社一覧|qid=Q11633695}}
+** Series ordinal: 1
+** P155: {{ill|Toyohimeno- Shrine|qid=Q135041483|lt=Toyohimeno- Shrine}}
+** P156: {{ill|Sasamutano Shrine|qid=Q135041485}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Taketa, Ōita|ar|تاكيتا (أويتا)|azb|تاکه‌تا، اوئیتا|ce|Такета|ceb|Takedamachi|de|Taketa|es|Taketa|fa|تاکه‌تا، اوئیتا|fi|Taketa|fr|Taketa|gl|Taketa|id|Taketa, Ōita|it|Taketa|ja|竹田市|ko|다케타시|mg|Takedamachi|mzn|تاکه‌تا، اوئیتا|nl|Taketa|pl|Taketa|pt|Taketa|ro|Taketa|ru|Такета|sv|Taketa|tg|Такета|tl|Taketa, Ōita|tr|Taketa|tt|Такета|uk|Такета|ur|تاکیتا، اویتا|vi|Taketa, Ōita|war|Taketa, Ōita|zh|竹田市|zh_classical|竹田市|zh_min_nan|Taketa-chhī|zh_yue|竹田|qid=Q850508}}
+* {{ill|Bungo Province|lt=Bungo Province|ar|مقاطعة بونغو|cs|Provincie Bungo|de|Provinz Bungo|en|Bungo Province|es|Provincia de Bungo|fa|ولایت بونگو|fr|Bungo (province)|gl|Provincia de Bungo|he|בונגו (מחוז)|id|Provinsi Bungo|it|Bungo (provincia)|ja|豊後国|ko|분고국|lt|Bungo žemė|nl|Bungo (provincie)|no|Bungo|pt|Província de Bungo|ru|Бунго (провинция)|simple|Bungo Province|sk|Bungo (provincia)|sr|Провинција Бунго|sv|Bungo, Japan|th|แคว้นบุงโงะ|tr|Bungo (vilayet)|uk|Провінція Бунґо|vi|Tỉnh Bungo (Tên cũ)|zh_min_nan|Bungo-kok|zh|豐後國|qid=Q864148}}
+* {{ill|Naoiri District, Ōita|ja|直入郡|zh|直入郡|qid=Q6964536}}
+
+== coordinate location (P625) ==
+
+* {{coord|32.872957|131.356406}}<ref>Kokugakuin University Shrine database</ref>
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 183311
+** P3831: {{ill|Kokugakuin University Shrine database|qid=Q135159299}}
+
+== modern shrine ranking (P13723) ==
+
+* {{ill|Ken-sha|qid=Q90139226|lt=Ken-sha|qid=Q90139226}}
+** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
+** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
+
+== country (P17) ==
+
+* {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17}}
+
+== name in kana (P1814) ==
+
+* たけおしもごおりひこじんじゃ
+
+== Corporate Number (Japan) (P3225) ==
+
+* 4320005005966
+
+== said to be the same as (P460) ==
+
+* {{ill|Takewoshimokorihikono Shrine|qid=Q135041484|lt=Takewoshimokorihikono Shrine}}
+** P2868: {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
+
+== street address (P6375) ==
+
+* {'text': '大分県竹田市神原1822番地', 'language': 'ja'}
+
+[[ja:健男霜凝日子神社]]
+
+{{wikidata link|Q30935472|ja|健男霜凝日子神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{神社
+|名称   = Takeo Shimokorihiko Shrine
+|画像   = {{画像募集中|cat=竹田市}}
+|所在地 = {{ill|Ōita Prefecture|Q133924|qid=Q133924}}{{ill|Taketa, Ōita|ar|تاكيتا (أويتا)|azb|تاکه‌تا، اوئیتا|ce|Такета|ceb|Takedamachi|de|Taketa|es|Taketa|fa|تاکه‌تا، اوئیتا|fi|Taketa|fr|Taketa|gl|Taketa|id|Taketa, Ōita|it|Taketa|ja|竹田市|ko|다케타시|mg|Takedamachi|mzn|تاکه‌تا، اوئیتا|nl|Taketa|pl|Taketa|pt|Taketa|ro|Taketa|ru|Такета|sv|Taketa|tg|Такета|tl|Taketa, Ōita|tr|Taketa|tt|Такета|uk|Такета|ur|تاکیتا، اویتا|vi|Taketa, Ōita|war|Taketa, Ōita|zh|竹田市|zh_classical|竹田市|zh_min_nan|Taketa-chhī|zh_yue|竹田|qid=Q850508}} Kanbara 1822 (Lower shrine)
+|位置 = {{WikidataCoord}}
+|祭神   = Takeo Shimokorihiko Ōkami<br />{{ill|Toyotama-hime|de|Toyotama-hime|es|Toyotama-hime|fa|تویوتاما-هیمه|fi|Otohime|fr|Otohime|id|Toyotama-hime|ja|トヨタマヒメ|ko|도요타마히메|mni|ꯇꯣꯌꯣꯇꯃ-ꯍꯤꯃꯦ|pl|Toyotama-hime|ru|Тоётама-химэ|simple|Toyotama-hime|sv|Otohime|uk|Тойотама-хіме|vi|Toyotama-hime|zh|豐玉毘賣命|qid=Q2329261|lt=Toyotama-hime no Mikoto}}<br />{{ill|Itsuse no Mikoto|fr|Hikoitsuse no Mikoto|ja|彦五瀬命|ko|이쓰세노미코토|pl|Itsuse|zh|彥五瀨命|qid=Q10881970}} and 9 other deities<ref name="170319c1">[http://www.niigata-u.com/files/oita2017/170319c1.html Takeo Shimokorihiko Shrine Lower Shrine, Kanbara, Taketa City] Ōita Hyakkei</ref>
+|社格   = Former {{ill|Ken-sha|Q90139226|qid=Q90139226}}
+|創建   ={{ill|Hakuchi (era)|de|Hakuchi (Ära)|es|Hakuchi (era)|fa|هاکوچی (دوره)|fr|Ère Hakuchi|hr|Hakuchi (razdoblje)|ia|Hakuchi (era)|id|Hakuchi|ja|白雉|ko|하쿠치|ru|Хакути|sh|Hakuchi (era)|simple|Hakuchi (era)|sr|Хакучи|th|ฮากูจิ (ศักราช)|tr|Hakuchi (dönem)|uk|Хакуті|zh|白雉|zh_yue|白雉|qid=Q540118}} 2 ({{ill|651|ab|651|af|651|am|651 እ.ኤ.አ.|an|651|ar|651|ary|651|ast|651|az|651|azb|۶۵۱ (میلادی)|be|651|be_x_old|651|bg|651|bn|৬৫১|bpy|মারি ৬৫১|br|651|bs|651.|ca|651|cdo|651 nièng|ceb|651|ckb|٦٥١|crh|651|cs|651|cv|651|cy|651|da|651|de|651|el|651|eml|651|eo|651|es|651|et|651|eu|651|fa|۶۵۱ (میلادی)|fi|651|fo|651|fr|651|fy|651|ga|651|gan|651年|gd|651|gl|651|he|651|hi|651|hr|651.|ht|651 (almanak jilyen)|hu|651|hy|651|id|651|io|651|it|651|ja|651年|jv|651|ka|651|kk|651 жыл|ko|651년|la|651|lb|651|lij|651|lmo|651|lt|651 m.|map_bms|651|mdf|651|mg|651|mhr|651|mk|651|mr|इ.स. ६५१|mrj|651 и|ms|651|mzn|۶۵۱|nah|651|nap|651|nds|651|nds_nl|651|new|सन् ६५१|nl|651|nn|651|no|651|nrm|651|nso|651|oc|651|or|୬୫୧|os|651-æм аз|pa|651|pl|651|pnb|651|pt|651|qu|651|ro|651|ru|651 год|rue|651|sa|६५१|scn|651|sd|651ع|se|651|sh|651.|shn|651|si|651|sk|651|sl|651|sq|651|sr|651|su|651|sv|651|sw|651|tg|Соли 651|th|พ.ศ. 1194|tk|651|tl|651|tly|651|tr|651|tt|651 ел|uk|651|ur|651ء|uz|651|vec|651|vi|651|war|651|wuu|651年|xmf|651|zh|651年|zh_min_nan|651 nî|zh_yue|651年|qid=Q31095}})
+|本殿   =
+|別名   =
+|札所等 =
+|例祭   =
+|神事   =
+|地図 = {{Location map|Japan Oita|label=Takeo Shimokorihiko<br />Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Takeo Shimokorihiko Shrine''' (たけおしもごおりひこじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Ōita Prefecture|Q133924|qid=Q133924}} {{ill|Taketa, Ōita|ar|تاكيتا (أويتا)|azb|تاکه‌تا، اوئیتا|ce|Такета|ceb|Takedamachi|de|Taketa|es|Taketa|fa|تاکه‌تا، اوئیتا|fi|Taketa|fr|Taketa|gl|Taketa|id|Taketa, Ōita|it|Taketa|ja|竹田市|ko|다케타시|mg|Takedamachi|mzn|تاکه‌تا، اوئیتا|nl|Taketa|pl|Taketa|pt|Taketa|ro|Taketa|ru|Такета|sv|Taketa|tg|Такета|tl|Taketa, Ōita|tr|Taketa|tt|Такета|uk|Такета|ur|تاکیتا، اویتا|vi|Taketa, Ōita|war|Taketa, Ōita|zh|竹田市|zh_classical|竹田市|zh_min_nan|Taketa-chhī|zh_yue|竹田|qid=Q850508}}.
+
+=== Overview ===
+The shrine originates from rituals associated with the worship of {{ill|Mount Sobo|arz|جبل مونت سوبو|ceb|Sobo-zan|fr|Mont Sobo|ja|祖母山|lld|Mont Sobo|my|ဆိုဘိုတောင်|pl|Góry Sobo|pnb|ٹلہ سوبو|vi|Núi Sobo|zh|祖母山|qid=Q3695986}}. It consists of the '''Upper shrine''' on the summit of Mount Sobo, the '''Lower shrine''' in Kanbara, Taketa, the '''Shinkōsho''' (procession site), and '''Anamori Shrine'''<ref name="170319c1" />. It is also known as '''Ubadake Daimyōjin''', '''Uha Myōjin''', and '''Sobosan Daimyōjin'''.
+
+=== History ===
+It is said that the shrine buildings of the Lower shrine were erected in {{ill|651|ab|651|af|651|am|651 እ.ኤ.አ.|an|651|ar|651|ary|651|ast|651|az|651|azb|۶۵۱ (میلادی)|be|651|be_x_old|651|bg|651|bn|৬৫১|bpy|মারি ৬৫১|br|651|bs|651.|ca|651|cdo|651 nièng|ceb|651|ckb|٦٥١|crh|651|cs|651|cv|651|cy|651|da|651|de|651|el|651|eml|651|eo|651|es|651|et|651|eu|651|fa|۶۵۱ (میلادی)|fi|651|fo|651|fr|651|fy|651|ga|651|gan|651年|gd|651|gl|651|he|651|hi|651|hr|651.|ht|651 (almanak jilyen)|hu|651|hy|651|id|651|io|651|it|651|ja|651年|jv|651|ka|651|kk|651 жыл|ko|651년|la|651|lb|651|lij|651|lmo|651|lt|651 m.|map_bms|651|mdf|651|mg|651|mhr|651|mk|651|mr|इ.स. ६५१|mrj|651 и|ms|651|mzn|۶۵۱|nah|651|nap|651|nds|651|nds_nl|651|new|सन् ६५१|nl|651|nn|651|no|651|nrm|651|nso|651|oc|651|or|୬୫୧|os|651-æм аз|pa|651|pl|651|pnb|651|pt|651|qu|651|ro|651|ru|651 год|rue|651|sa|६५१|scn|651|sd|651ع|se|651|sh|651.|shn|651|si|651|sk|651|sl|651|sq|651|sr|651|su|651|sv|651|sw|651|tg|Соли 651|th|พ.ศ. 1194|tk|651|tl|651|tly|651|tr|651|tt|651 ел|uk|651|ur|651ء|uz|651|vec|651|vi|651|war|651|wuu|651年|xmf|651|zh|651年|zh_min_nan|651 nî|zh_yue|651年|qid=Q31095}} ({{ill|Hakuchi (era)|de|Hakuchi (Ära)|es|Hakuchi (era)|fa|هاکوچی (دوره)|fr|Ère Hakuchi|hr|Hakuchi (razdoblje)|ia|Hakuchi (era)|id|Hakuchi|ja|白雉|ko|하쿠치|ru|Хакути|sh|Hakuchi (era)|simple|Hakuchi (era)|sr|Хакучи|th|ฮากูจิ (ศักราช)|tr|Hakuchi (dönem)|uk|Хакуті|zh|白雉|zh_yue|白雉|qid=Q540118}} 2), during the {{ill|Taika Reform|az|Tayka islahatı|be|Рэформы Тайка|ca|Reformes Taika|cs|Reforma Taika|de|Taika-Reform|es|Reforma Taika|et|Taika reform|fa|اصلاحات تایکا|fi|Taika-uudistukset|fr|Réforme de Taika|he|רפורמת טאיקה|hu|Taika-reform|id|Reformasi Taika|it|Editti di riforma di Taika|ja|大化の改新|ko|다이카 개신|ms|Pembaharuan Taika|nl|Taika-hervormingen|pl|Reforma Taika|pt|Reformas Taika|ru|Реформы Тайка|sh|Taika reforme|sl|Reforme Taika|sr|Таика реформе|sv|Taikareformerna|th|การปฏิรูปปีไทกะ|tr|Taika Reformları|uk|Реформи Тайка|vi|Cải cách Taika|zh|大化改新|zh_classical|大化革新|zh_min_nan|Tāi-hoà Kái-sin|zh_yue|大化革新|qid=Q570140}}<ref name="170319c1" />.
+
+{{quote|Takeo Shimokorihiko Shrine<br>
+Section 1: Enshrined Deity<br>
+Located at Kanbara in Ubadake Village, {{ill|Naoiri District, Ōita|ja|直入郡|zh|直入郡|qid=Q6964536}}, this is an ancient shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engishiki}}. {{ill|Toyotama-hime|de|Toyotama-hime|es|Toyotama-hime|fa|تویوتاما-هیمه|fi|Otohime|fr|Otohime|id|Toyotama-hime|ja|トヨタマヒメ|ko|도요타마히메|mni|ꯇꯣꯌꯣꯇꯃ-ꯍꯤꯃꯦ|pl|Toyotama-hime|ru|Тоётама-химэ|simple|Toyotama-hime|sv|Otohime|uk|Тойотама-хіме|vi|Toyotama-hime|zh|豐玉毘賣命|qid=Q2329261|lt=Toyotama-hime no Mikoto}} is enshrined together with {{ill|Itsuse no Mikoto|fr|Hikoitsuse no Mikoto|ja|彦五瀬命|ko|이쓰세노미코토|pl|Itsuse|zh|彥五瀨命|qid=Q10881970}}, and it is called Takeo Shimokorihiko Shrine. It was consecrated in {{ill|Hakuchi (era)|de|Hakuchi (Ära)|es|Hakuchi (era)|fa|هاکوچی (دوره)|fr|Ère Hakuchi|hr|Hakuchi (razdoblje)|ia|Hakuchi (era)|id|Hakuchi|ja|白雉|ko|하쿠치|ru|Хакути|sh|Hakuchi (era)|simple|Hakuchi (era)|sr|Хакучи|th|ฮากูจิ (ศักราช)|tr|Hakuchi (dönem)|uk|Хакуті|zh|白雉|zh_yue|白雉|qid=Q540118}} 2 of {{ill|Emperor Kōtoku|ar|الإمبراطور كوتوكو|arz|الامبراطور كوتوكو|azb|کوتوکو (ایمپیراتور)|be|Імператар Котаку|ca|Kōtoku Tennō|ckb|ئیمپراتۆر کۆتۆکو|cs|Kótoku|de|Kōtoku|es|Kōtoku Tennō|fa|امپراتور کوتوکو|fr|Kōtoku|id|Kaisar Kōtoku|it|Kōtoku|ja|孝徳天皇|ka|კოტოკუ|ko|고토쿠 천황|mr|कोतोकू|nl|Kotoku|pl|Kōtoku|pt|Kotoku|ru|Император Котоку|sh|Car Kōtoku|simple|Emperor Kōtoku|sl|Cesar Kotoku|sv|Kotoku|th|จักรพรรดิโคโตกุ|tl|Emperador Kōtoku|tr|Kōtoku (imparator)|uk|Імператор Котоку|uz|Imperator Kōtoku|vi|Thiên hoàng Kōtoku|wuu|孝德天皇|yo|Emperor Kōtoku|zh|孝德天皇|zh_min_nan|Kôtoku Thian-hông|zh_yue|孝德天皇|qid=Q317980}}'s reign. ...|''{{ill|UNKNOWN|lt=Toyokoku Shōshi}}'' (1907){{sfn|大分県|1907}}}}
+
+According to the ''{{ill|Shoku Nihon Kōki|Q1041301|qid=Q1041301}}'', the shrine received the {{ill|Shinkai (divine rank)|fa|شینکای (رتبه الهی)|ja|神階|qid=Q11591025}} (divine rank) of {{ill|Junior Fifth Rank|Q11071125|qid=Q11071125|lt=Junior Fifth Rank, Lower Grade}} in {{ill|Jōwa (Heian period)|Q1075605|qid=Q1075605}} 10 ({{ill|843|Q23469|qid=Q23469}}). According to the ''{{ill|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Sandai Jitsuroku}}'', it received {{ill|Senior Fifth Rank|Q11123280|qid=Q11123280|lt=Senior Fifth Rank, Lower Grade}} in {{ill|Gangyō|Q747451|qid=Q747451}} 7 ({{ill|883|Q30355|qid=Q30355}}). In the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}'' of {{ill|Enchō|Q1327274|qid=Q1327274}} 5 ({{ill|927|Q30470|qid=Q30470}}), "Takeo Shimokorihiko Shrine" is listed as one of the five Shikinaisha of {{ill|Bungo Province|Q864148|qid=Q864148}}. Either the Lower shrine or Anamori Shrine of this shrine is identified as the shrine in question<ref name="170319c1" />.
+
+Regarding the former shrine ranking under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}: it was designated a {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} in Meiji 6 ({{ill|1873|Q7757|qid=Q7757}}), and a {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} in Meiji 12 ({{ill|1879|Q7783|qid=Q7783}})<ref name="170319c1" />.
+
+=== Shrine treasures ===
+The treasures include a {{ill|Mirror|Q35197|qid=Q35197}}, sacred swords, {{ill|biane|Q5358873|qid=Q5358873|lt=votive tablets}}, war banners, and others.
+{{quote|
+Section 2: Shrine Treasures<br>
+The shrine storehouse contains timbers from the {{ill|Hakuchi (era)|de|Hakuchi (Ära)|es|Hakuchi (era)|fa|هاکوچی (دوره)|fr|Ère Hakuchi|hr|Hakuchi (razdoblje)|ia|Hakuchi (era)|id|Hakuchi|ja|白雉|ko|하쿠치|ru|Хакути|sh|Hakuchi (era)|simple|Hakuchi (era)|sr|Хакучи|th|ฮากูจิ (ศักราช)|tr|Hakuchi (dönem)|uk|Хакуті|zh|白雉|zh_yue|白雉|qid=Q540118}} era, two {{ill|Military colours, standards and guidons|Q2912707|qid=Q2912707|lt=war banners}} used by {{ill|Ogata no Saburo Koreyoshi|Q7079849|qid=Q7079849}} in the pursuit of the {{ill|Taira clan|Q568647|Taira clan|qid=DELETED_QID|lt=Taira clan}}, two votive tablets, a mirror by {{ill|Fujiwara no Mitsunaga|Q16767296|qid=Q16767296}}, swords by {{ill|UNKNOWN|lt=Yamato no Kami}} Tadayuki, Rai Yukinaga, Ise {{ill|Muramasa|Q1849828|qid=Q1849828}}, Ryōkai, Amakuni, and over a dozen other unsigned sacred swords, as well as wooden dogs, crocodile figures, and other items.{{efn|Mokuku (wooden dogs) are animals resembling weasels (''[https://webarchives.tnm.jp/imgsearch/show/C0078820 Illustrations of Various Beasts]'', "[https://baike.baidu.com/item/%E6%9C%A8%E7%8B%97 Baidu Encyclopedia]").}}
+|''{{ill|UNKNOWN|lt=Toyokoku Shōshi}}'' (1907){{sfn|大分県|1907}}}}
+
+=== Overview of sub-shrines ===
+=== Upper shrine ===
+This is a small shrine located on the summit of Mount Sobo. At present, no rituals are conducted at this location<ref name="170319c1" />. Note that the summit of Mount Sobo also has an upper shrine belonging to Sobodake Shrine, which is located at the foot of the mountain on the Miyazaki Prefecture side.
+
+=== Lower shrine ===
+* Location: 1822 Ōaza Kanbara, Taketa, Ōita Prefecture
+It is said that the shrine buildings were erected in Hakuchi 2 (650). It is also called '''Takeo Shrine''' or '''Takeo-sha'''. Together with {{ill|Takeo Shimokorihiko Shrine|Q30935472|qid=Q30935472|lt=Anamori Shrine}}, it is considered a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} for "Takeo Shimokorihiko Shrine" listed in the ''Engishiki Jinmyōchō''.
+
+=== Shinkōsho (procession site) ===
+* Location: 1772 Ōaza Kanbara, Taketa, Ōita Prefecture
+This was formerly a place of distant worship (yōhaijo). In Shōwa 9 ({{ill|1934|Q18714|qid=Q18714}}), shrine buildings were erected with the aim of elevating the shrine to the rank of {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} (minor national shrine), but this promotion was never achieved. After {{ill|World War II|Q362|qid=Q362}}, the site became the center of shrine rituals as the Shinkōsho<ref>[http://www.niigata-u.com/files/oita2017/170319b1.html Takeo Shimokorihiko Shrine Shinkōsho, Kanbara, Taketa City] Ōita Hyakkei</ref>.
+
+=== Anamori Shrine ===
+* Location: 1432 Ōaza Kanbara, Taketa, Ōita Prefecture
+* Enshrined deity: Ubadake Daimyōjin
+Behind the shrine there is a cave where the great serpent, believed to be the incarnation of Ubadake Daimyōjin, is said to have dwelt. This cave is regarded as the sacred object of worship (goshintai). The birth legend of {{ill|Ogata no Saburo Koreyoshi|Q7079849|qid=Q7079849}} associated with this great serpent is also recounted in the ''{{ill|The Tale of the Heike|ar|قصة الهائيكي|ban|Heike Monogatari|ca|Heike monogatari|cs|Příběh rodu Taira|de|Heike Monogatari|es|Heike Monogatari|fa|هیکه مونوگاتاری|fi|Heike monogatari|fr|Le Dit des Heike|hu|Heike monogatari|id|Heike Monogatari|it|Heike monogatari|ja|平家物語|ko|헤이케모노가타리|pl|Heike monogatari|pt|Heike Monogatari|ru|Повесть о доме Тайра|simple|The Tale of the Heike|sv|Heike monogatari|th|ตำนานเฮเกะ|tr|Heike Monogatari|uk|Хейке моноґатарі|vi|Truyện kể Heike|zh|平家物语|zh_yue|平家物語|qid=Q830740}}'', Book Eight, in the chapter titled "Onokami" (Ogata's Lineage)<ref>[http://www.manabu-oshieru.com/daigakujuken/kobun/heike/08/0303.html Tale of the Heike - Book Eight, Onokami: "In the province of Bungo..." (Original text and modern translation)] Manabu-Oshieru.COM</ref>. There is a tradition that taking home a small stone from inside the cave will bring the blessing of children, and many visitors come to pray for success in romance and fertility<ref>[https://www.city.taketa.oita.jp/photo_news/?id=971 Photo News: The torii gate on the approach to Anamori Shrine restored to its beautiful form for the first time in 50 years!] Taketa City, August 30, 2014</ref>. The shrine was formerly also called '''Ike no Myōjin''' (Pond Deity) or '''Iwaya Daimyōjin''' (Cave Great Deity)<ref>[http://www.niigata-u.com/files/oita2017/170319a1.html Anamori Shrine, Kanbara, Taketa City] Ōita Hyakkei</ref>. Together with the {{ill|Takeo Shimokorihiko Shrine|Q30935472|qid=Q30935472|lt=Lower shrine}}, it is considered a candidate shrine for "Takeo Shimokorihiko Shrine" listed in the ''Engishiki Jinmyōchō''.
+
+=== Notes ===
+;Annotations
+{{notelist}}
+;Sources
+{{reflist|2}}
+
+=== Related articles ===
+* {{ill|List of Shikinaisha in Bungo Province|ja|豊後国の式内社一覧|qid=Q11633695}}
+
+=== References ===
+*{{Cite book|和書|author=大分県|authorlink=大分県| translator=| title=[https://dl.ndl.go.jp/info:ndljp/pid/766788/82 豊国小志]| page=| publisher=甲斐書店| location =大分県| year=1907| isbn=| ref=harv}}
+* 歴史的行政区域データセットβ版『[https://geoshape.ex.nii.ac.jp/city/resource/44B0120020.html 直入郡嫗嶽村]』
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Takeo Shimokorihiko Shrine]][[Category:Shikinaisha|Takeo Shimokorihiko Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Bungo Province]]
+[[Category:Shinto shrines in Ōita Prefecture]]
+[[Category:Former Prefectural Shrines in Oita Prefecture]]
+[[Category:竹田市の歴史]]
+[[Category:竹田市の建築物]]
+[[Category:Shikinaisha in Bungo Province]]
+[[Category:竹田市の画像提供依頼]]
+[[Category:Wikipedia requested photographs in Ōita Prefecture]]
+[[Category:神社の画像提供依頼]]
+[[Category:Pages with deleted QID in ill template]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

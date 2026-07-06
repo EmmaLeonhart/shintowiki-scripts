@@ -1,0 +1,57 @@
+{{Infobox religious building|religious_affiliation = [[Shinto]]| name        = Hōtō Shrine
+| location     = 523 Takashima, Karatsu, Saga Prefecture, Japan
+| coordinates = {{Coord|33.473889|N|129.988056}}
+| deity     = Nozaki Oki-no-Kami Tsunayoshi
+| founded     = Meiwa 5 (1768)
+| Status      = 
+| festivals   = {{ill|August 23 (Lunisolar)|ja|8月23日 (旧暦)}}
+| image       = File:Houtou Shrine, Saga, Japan.jpg
+| prefecture= {{ill|Karatsu, Saga|qid=Q738275}}
+}}
+
+'''Hōtō Shrine''' (宝当神社, ''Hōtō Jinja'') is a Shinto shrine located on {{ill|Takashima|ja|高島 (唐津市)|12=simple|13=User:Immanuelle/Takashima (Saga)|ja_comment=jawiki redirects to 高島 (佐賀県)|comment=changed title based on wikidata|qid=Q11669590}}, a small island approximately 2 km north of {{ill|Karatsu Castle|en|Karatsu Castle|qid=Q1073585|lt=Karatsu Castle}} in {{ill|Karatsu Bay|ja|唐津湾|12=simple|13=User:Immanuelle/Karatsu Bay|comment=changed title based on wikidata|qid=Q11418635}}, Saga Prefecture, Japan.
+
+== Overview ==
+Hōtō Shrine is a {{ill|Ubusunagami|en|Ubusunagami|qid=Q1392097|lt=Ubusunagami}} (guardian deity of a locality) shrine and a {{ill|sessha|ja|末社|1|2|3|4|5|6|7|8|9|10|11|12|13|fixed redirect|lt=Sessha}} of {{ill|Shioya Shrine (Hiroshima)|ja|塩屋神社}}. It is dedicated to {{ill|Nozaki Oki-no-Kami Tsunayoshi|ja|野崎隠岐守綱吉|qid=DELETED_QID}}, a local hero who defeated a pirate named Yoshii Shugo and saved the island's inhabitants. Tsunayoshi died on the island in [[:en:Tenshō|Tenshō]] 13 (1586), and a small shrine was built at his grave, originally named ''Tsunayoshi Shrine''.<ref>{{Cite book|title=Saga Prefecture Place names|publisher=Heibonsha|date=1980|pages=353}}</ref><ref name="otome">{{Cite book|title=Fukuoka and Surrounding Areas: A Shrine Pilgrimage Guide|publisher=Mates Publishing|date=2016|pages=102}}</ref> The current shrine building was erected in Meiwa 5 (1768). During the Meiji period, the shrine became known as Hōtō Shrine, deriving its name from the Japanese word for "treasure" (宝).<ref name="shima">{{Cite book|title=Island Hopping in Kyushu: 58 Skies and Seas|publisher=Kaichosha|date=2019|pages=32–33}}</ref>
+
+The shrine’s festival is held on {{ill|August 23 (Lunisolar)|ja|8月23日 (旧暦)}}, commemorating the anniversary of Tsunayoshi’s death.
+
+== Connection to Lottery ==
+In 1992, a local resident prayed at Hōtō Shrine for success in the lottery and won a large sum, leading to the shrine gaining fame as a site where one could pray for lottery winnings.<ref name="lottery">{{Cite book|title=Saga Tales: SAGA MONOGATARI|publisher=Saga Prefecture Tourism Office|date=unknown|pages=133}}</ref> 
+
+Before its popularity, the ferry route between Karatsu and Takashima was mainly used by residents and fishermen. However, the shrine's newfound reputation as a "lottery shrine" drew large numbers of visitors, especially during the release of major lotteries. Facilities on the island, such as restaurants and visitor centers, have since been developed by local revitalization groups.
+
+Within the shrine precincts, visitors can purchase typical shrine items such as {{ill|Omamori|en|Omamori|qid=Q1756788|lt=omamori}} and amulets for good fortune, as well as special lottery-related items like ''Hitō Omamori'' (必当御守, ''certain-win amulets'') and ''Hōtō Atari-ya'' arrows.<ref name="shima" /><ref name="otome" /><ref name="lottery" />
+
+A nearby shop, "Nozaki Shoten," features a famous ''lucky cat'' that appears to pray with its front paws, further enhancing the shrine's reputation.<ref name="shima" />
+
+Additionally, the "Hōtō no Kan Honpo" store on the island sells lottery tickets, making it a one-stop destination for visitors seeking both to pray and purchase tickets.
+
+== festivals ==
+The main festival, held annually on [[August 23 (lunar calendar)]], honors Nozaki Tsunayoshi and features various traditional ceremonies.
+
+== Access ==
+* The shrine is located on Takashima Island, which can be reached by ferry from Karatsu. The ferry operates regularly and is accessible from Karatsu City’s harbor.
+
+== References ==
+{{Reflist}}
+
+== External Links ==
+* [https://houtoujinja.jp/ Official Website of Hōtō Shrine]
+
+{{Lottery}}
+{{Shinto-navbox}}
+
+{{translated page|ja|宝当神社|version=98309626|comment=Imported full ja history}}
+{{commons category|Hōtō-jinja}}
+{{wikidata link|Q11452551|ja|宝当神社|de|Hōtō-Schrein|grok=none|check_date=2026-05-29}}
+[[Category:Buildings and structures in Saga Prefecture]]
+[[Category:Karatsu, Saga]]
+[[Category:Religion in Saga Prefecture]]
+[[Category:Shinto shrines]]
+[[Category:Shinto shrines in Saga Prefecture]]
+[[Category:Wikidata has short description]]
+[[Category:Pages with deleted QID in ill template]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

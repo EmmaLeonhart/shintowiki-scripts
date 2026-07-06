@@ -192,6 +192,14 @@ readiness: `recreate-deleted-wikidata/items/_recreation_readiness.md`. Remaining
   pages exist on both (verified 27/27 miraheze=fandom=YES) and the langlink content is already in
   the item JSONs. There is nothing page-wise to pull/fix; recreating them is purely the human-gated
   Wikidata-item task. Remaining autonomous step: assign each a P31 (a few need per-item research).
+- [ ] **Edit the ills on the 144 git-synced pages** (Emma 2026-07-06). All 144 pages in
+  `[[Category:Pages with deleted QID in ill template]]` were pulled into `git_synced/` (via
+  `recreate-deleted-wikidata/pull_ill_pages_to_git_synced.py`; category tag appended so the CI
+  `sync_git_synced_pages.py` establishes the sync). Now edit each page's `{{ill|…|qid=DELETED_QID}}`
+  templates: sub-topics that are really **sections** → convert to `[[Page#Section]]` links (verify
+  the section exists); real separate entities → keep for recreation (see the typed dataset);
+  duplicates → relink to the live QID. **Un-sync when resolved**: remove `[[Category:Git synced
+  pages]]` from the local file and the next sync drops both the on-wiki tag and the local copy.
 - [ ] **Analyze the `User:Immanuelle/` draft pages** (Emma 2026-07-06): the ills carry
   `13=User:Immanuelle/<name>` draft targets. Enumerate those draft pages on shinto.miraheze.org,
   read them, and try to deal with them (they may hold intended content for the deleted items /

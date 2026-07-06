@@ -1,0 +1,75 @@
+{{Citation needed|date=2022-12-15}}
+
+'''Onsen-​riyō Shidōsha''' (温泉利用指導者) is a qualification awarded to individuals who complete an eight-day training course conducted by the {{ill|Japan Health Development Foundation|de|Japanische Stiftung für Gesundheitsentwicklung|ja|一般財団法人日本健康開発財団|zh|日本健康开发财团}}. Holders provide bathing instruction and general lifestyle guidance to those receiving {{ill|Balneotherapy|de|Thermalquellentherapie|ja|温泉療養|zh|温泉疗养|12=simple|13=User:Immanuelle/hot spring therapy|ja_comment=jawiki redirects to 温泉療法|comment=changed title based on wikidata|qid=Q2016490}} under the direction of a [[:en:Physician|physician]].
+
+== Roles of Onsen-​riyō Shidōsha ==
+* Implement bathing instruction and overall lifestyle guidance based on a hot spring therapy prescription prepared by a physician.  
+* Manage facility safety and perform emergency life-saving procedures in the event of accidents.
+
+== Program Overview ==
+To obtain this qualification, candidates must complete an eight-day training course organized by the Japan Health Development Foundation. This is an advanced qualification above the {{ill|Onsen-​nyūyoku Shidōin|de|Onsen-Badeinstruktor|ja|温泉入浴指導員|zh|温泉入浴指导员}}. Prerequisites include being a {{ill|public health nurse|de|Öffentliche GesundheitskRankenschwester|ja|保健師|zh|公共卫生护士|12=simple|13=User:Immanuelle/public health nurse|comment=changed title based on wikidata|qid=Q67529900}}, {{ill|Registered dietitian|de|zugelassener Ernährungsberater|ja|管理栄養士|zh|注册营养师|12=simple|13=User:Immanuelle/registered dietitian|comment=changed title based on wikidata|qid=Q11603267}}, {{ill|health exercise instructor|de|Gesundheitssportleiter|ja|健康運動指導士|zh|健康运动指导师|12=simple|13=User:Immanuelle/health exercise instructor|comment=changed title based on wikidata|qid=Q11387215}}, a graduate of a four-year {{ill|sports higher education institution|de|Sporthochschule|ja|体育大学|zh|体育大学|12=simple|13=User:Immanuelle/University of Physical Education|comment=changed title based on wikidata|qid=Q1499580}}, etc. The curriculum covers health science, balneology, {{ill|thermal physiology & therapy|de|Thermophysiologie und Therapie|ja|温熱生理・治療学|zh|热生理与治疗学|qid=DELETED_QID}}, first aid, and related subjects. Placement of an Onsen-​riyō Shidōsha is mandatory in Ministry-certified {{ill|hot spring utilization–type health promotion facilities|de|Thermalnutzungsprogramm-Gesundheitsförderungseinrichtungen|ja|温泉利用型健康増進施設|zh|温泉利用型健康促进设施|qid=DELETED_QID}}.
+{| class="wikitable"
+! Item !! {{ill|Hot Spring Bathing Instructor|ja|温泉入浴指導員}} (温泉入浴指導員) !! {{ill|Hot Spring Utilization Instructor|ja|温泉利用指導者}} (温泉利用指導者)
+|-
+! Purpose & target users
+| General bathers—guides healthy-use programs for any visitor.
+| Medically prescribed bathers—follows a physician’s treatment order.
+|-
+! Training duration
+| 2 days
+| 8 days
+|-
+! Prerequisites
+| None
+| Must already be a public health nurse, registered dietitian, health exercise instructor, four-year physical education graduate, etc.
+|-
+! Qualification level
+| Basic qualification
+| Advanced qualification (above Onsen-nyūyoku Shidōin)
+|-
+! Core curriculum
+| 
+* Health science basics    
+* Thermal-physiology    
+* {{ill|Balneotherapy|en|Balneotherapy|qid=Q2016490|lt=Balneology}}    
+* Bathing-program practicum    
+* Lifesaving course (first aid & CPR)
+| 
+* Health science    
+* {{ill|Balneotherapy|en|Balneotherapy|qid=Q2016490|lt=Balneology}}    
+* Thermal-physiology & therapy    
+* First aid & CPR
+|-
+! Facility designation
+| Placement required in Ministry-certified “hot spring program–type health promotion facilities.”
+| Placement required in Ministry-certified “hot spring utilization–type health promotion facilities.”
+|-
+! Category tags
+| Required-placement qualification
+| Required-placement qualification;
+Medical qualification
+|}
+
+== External links ==
+* [http://www.jph-ri.or.jp/guide/shidousya.html]
+
+== See also ==
+* {{ill|Onsen|en|Onsen|qid=Q655311|lt=hot spring}}  
+* {{ill|Balneotherapy|en|Balneotherapy|qid=Q2016490|lt=balneotherapy}}  
+* {{ill|Onsen-​nyūyoku Shidōin|de|Onsen-Badeinstruktor|ja|温泉入浴指導員|zh|温泉入浴指导员}}
+
+{{Onsen-stub}}
+
+{{Onsen}}
+{{translated page|ja|温泉利用指導者|version=92912854|comment=Imported full ja history}}
+
+{{wikidata link|Q11562931|ja|温泉利用指導者|de|Onsen-riyō Shidōsha|grok=none|check_date=2026-05-29}}
+[[Category:Hot_springs_of_Japan]]
+[[Category:Mandatory qualifications]]
+[[Category:Medical credentials]]
+[[Category:Onsens]]
+[[Category:Wikidata no short description]]
+[[Category:Pages with deleted QID in ill template]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

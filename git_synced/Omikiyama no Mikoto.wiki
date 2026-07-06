@@ -1,0 +1,58 @@
+{{Infobox person|gender={{ill|Male (gender)|qid=Q6581097}}|children={{ill|Nakatomi no Ikatsu|qid=Q55536814}}|father={{ill|Kuninazu no Ōkashima no Mikoto|qid=Q99517269}}|mother={{ill|Niikawa-hime no Mikoto|qid=Q108044745}}}}
+{{Infobox Noble
+| name = Omi Sayama no Mikoto
+| image = 
+| image_size = 
+| caption = 
+| era = [[Kofun period]]
+| birth_date = Unknown
+| death_date = Unknown
+| other_names = Nakatomi no Ōsayama no Mikoto, Omi Sayama
+| honorary_title = 
+| deity_name = 
+| posthumous_name = 
+| burial_place = 
+| Rank = 
+| lord = [[Emperor Keikō]], {{ill|Yamato Takeru|ja|日本武尊|lt=Prince Yamato Takeru|3=ヤマトタケル|12=simple|13=User:Immanuelle/Yamato Takeru|13=User:Immanuelle/Yamato Takeru|ja_comment=jawiki redirects to ヤマトタケル|comment=changed title based on wikidata|qid=Q461258}}
+| clan = {{ill|Nakatomi clan|en|Nakatomi clan|qid=Q1198447|lt=Nakatomi clan}}
+| parents = Father: {{ill|Kuninazu no Ōkashima no Mikoto|ja|国摩大鹿島命|12=simple|13=User:Immanuelle/Kunimoro no Ōkashima no Mikoto|comment=changed title based on wikidata|qid=Q99517269}}
+| children = {{ill|Nakatomi no Ikatsu|ja|雷大臣命|lt=Rai Daijin no Mikoto}}
+}}
+
+'''Omi Sayama no Mikoto''' (臣狭山命) was an ancient Japanese noble from the {{ill|Kofun period|en|Kofun period|qid=Q459939|lt=Kofun period}}, regarded as an ancestor of the {{ill|Nakatomi clan|en|Nakatomi clan|qid=Q1198447|lt=Nakatomi clan}}.
+
+== Overview ==
+
+The name appears with variations in historical texts, including '''Nakatomi no Ōsayama no Mikoto''' (中臣巨狭山命) in the *{{ill|Hitachi no Kuni Fudoki|ja|常陸国風土記}}* and '''Omi Sayama''' (意美佐夜麻) in the *{{ill|Shoku Nihongi|en|Shoku Nihongi|qid=Q611399|lt=Shoku Nihongi}}*.<ref>"Emperor Kanmu, July 16, 781," *Shoku Nihongi*, vol. 36.</ref>
+
+In the *Hitachi no Kuni Fudoki*, Omi Sayama no Mikoto is associated with the origin of the sacred boat ritual of {{ill|Kashima Jingū|en|Kashima Shrine|qid=Q706499|lt=Kashima Shrine}}. During the reign of {{ill|Emperor Keikō|en|Emperor Keikō|qid=Q329723|lt=Emperor Keikō}}, the deity {{ill|Takemikazuchi|ja|武甕槌命|12=simple|13=User:Immanuelle/Takemikazuchi|ja_comment=jawiki redirects to QID FIXED|qid=Q1502690}} instructed Omi Sayama no Mikoto to prepare a sacred boat. Following the divine instructions, he constructed three new boats over two jō (about 6 meters) in length and offered them to the emperor. The text describes a mystical encounter in which the boat appeared alternately on land and sea, reinforcing his reverence for the deity.
+
+In the *Shoku Nihongi*, Omi Sayama no Mikoto is mentioned as the father of {{ill|Ikatsu no Mikoto|ja|伊賀津臣}} (also known as Nakatomi no Ikatsu).
+
+The *{{ill|Shinsen Shōjiroku|en|Shinsen Shōjiroku|qid=Q1045362|lt=Shinsen Shōjiroku}}* records him as the thirteenth-generation descendant of Tsuhayatama no Mikoto and the tenth-generation descendant of {{ill|Ame-no-Koyane|ja|天児屋根命|12=simple|13=User:Immanuelle/Ame-no-Koyane|13=User:Immanuelle/Ame-no-Koyane|qid=Q2564508}}, identifying him as the progenitor of the {{ill|Nakatomi Sakado clan|ja|中臣酒人宿祢|qid=DELETED_QID}} and {{ill|Nakatomi Takara clan|ja|中臣高良比連}}.<ref>"Kawachi Province, Kami-betsu, Tenjin Line," *Shinsen Shōjiroku*, 806 CE.</ref><ref>"Sakyō Province, Kami-betsu, Tenjin Line," *Shinsen Shōjiroku*, 806 CE.</ref>
+
+He is also enshrined as an auxiliary deity at {{ill|Sayama Shrine|ja|狭山神社}}.
+
+== Genealogy ==
+Omi Sayama no Mikoto is identified as the son of {{ill|Kuninazu no Ōkashima no Mikoto|ja|国摩大鹿島命|12=simple|13=User:Immanuelle/Kunimoro no Ōkashima no Mikoto|comment=changed title based on wikidata|qid=Q99517269}}. His child is {{ill|Nakatomi no Ikatsu|ja|雷大臣命|lt=Rai Daijin no Mikoto}}, who is noted as a significant ancestor in the Nakatomi lineage.<ref>*{{ill|Sonpi Bunmyaku|en|Sonpi Bunmyaku|qid=Q1704738|lt=Sonpi Bunmyaku}}</ref><ref>Matsuo Shrine Genealogy (in *{{ill|Gunsho Ruijū|ja|続群書類従|12=simple|13=User:Immanuelle/Zoku Gunsho Ruijū|ja_comment=jawiki redirects to 群書類従|comment=changed title based on wikidata|qid=Q1554852}}*, vol. 181).</ref>
+
+== Related Articles ==
+* {{ill|Urabe clan|ja|占部氏}}
+* {{ill|Fudoki|en|Fudoki|qid=Q1194534|lt=Fudoki}}
+
+== References ==
+{{Reflist}}
+
+{{translated page|ja|臣狭山命|version=91088253|comment=Imported full ja history}}
+
+{{wikidata link|Q99517230|ja|臣狭山命|check_date=2026-05-18}}
+[[Category:Nakatomi clan]]
+[[Category:People of ancient Japan]]
+[[Category:Wikidata no short description]]
+[[Category:Year of birth unknown]]
+[[Category:Year_of_birth_unknown]]
+[[Category:Year_of_death_unknown]]
+[[Category:Pages with deleted QID in ill template]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

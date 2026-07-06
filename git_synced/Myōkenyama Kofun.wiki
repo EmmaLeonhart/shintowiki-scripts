@@ -1,0 +1,25 @@
+
+'''Myōkenyama Kofun''' (妙見山古墳/妙見山1号墳/妙見山古墳)
+* {{ill|Myōkenyama Kofun (Muko)|ja|妙見山古墳 (向日市)|qid=DELETED_QID}} - A keyhole-shaped kofun located in {{ill|Mukō|ar|موكو (كيوتو)|azb|موکو، کیوتو|ca|Mukō|ce|Муко (Япон)|ceb|Mukō|de|Mukō|es|Mukō (Kioto)|fa|موکو، کیوتو|fi|Mukō|fr|Mukō|gl|Mukō|hy|Մուկո|id|Mukō, Kyōto|it|Mukō|ja|向日市|ko|무코시|lt|Mukas (Kiotas)|mg|Mukō|my|မုခိုးမြို့|mzn|موکو، کیوتو|nl|Muko (Kyoto)|pl|Mukō|pt|Muko|ro|Mukō|ru|Муко|sv|Mukō|tg|Муко|tl|Mukō|tr|Mukō|tt|Муко|tum|Mukō|uk|Муко|ur|موکو|vi|Mukō, Kyōto|war|Mukō, Kyoto|zh|向日市|zh_classical|向日市|zh_min_nan|Mukô-chhī|zh_yue|向日|qid=Q850640|lt=Muko City}}, Kyoto Prefecture.
+* {{ill|Myōkenyama Kofun (Kyoto)|ja|妙見山古墳 (京都市)}} - A keyhole-shaped kofun that existed in Nishikyō-ku, Kyoto City, Kyoto Prefecture.
+* {{ill|Myōkenyama Kofun (Katano)|ja|妙見山古墳 (交野市)}} - A kofun that existed in Katano City, Osaka Prefecture.
+* {{ill|Takeda Myōkenyama Kofun|ja|竹田妙見山古墳}} - A keyhole-shaped kofun located in Kagamino, Tomata District, Okayama Prefecture.
+* {{ill|Doi Myōkenyama Kofun|ja|土居妙見山古墳}} - A keyhole-shaped kofun located in Kagamino, Tomata District, Okayama Prefecture.
+* {{ill|Myōkensan Kofun|en|Myōkensan Kofun|qid=Q48763217|lt=Myōkensan Kofun}} - A keyhole-shaped kofun located in Imabari City, Ehime Prefecture. Also known as "Myōkenyama No. 1 Kofun." A National Historic Site.
+
+{{disambiguation}}
+
+{{disambiguation}}
+
+{{Kofun navbar}}
+
+{{translated page|ja|妙見山古墳|version=67204199|comment=Imported full ja history}}
+
+{{wikidata link|Q48763219|ja|妙見山古墳|grok=none|check_date=2026-06-03}}
+[[Category:Kofun]]
+[[Category:Wikidata has short description]]
+[[Category:Pages with deleted QID in ill template]]
+[[Category:Pages with unresolved QID in ill template]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

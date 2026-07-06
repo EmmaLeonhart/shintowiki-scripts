@@ -1,0 +1,48 @@
+{{Infobox person|gender={{ill|Male (gender)|qid=Q6581097}}|children={{ill|Tōtsu Ayume Maguwashi Hime|ja|遠津年魚眼眼妙媛|qid=Q97539597}}|father={{ill|Kitone-no-Mikoto|ja|鬼刀禰命|qid=Q97636304}}}}
+
+{{Multiple issues
+|notability=2020-07
+}}
+{{Infobox Noble
+| name = Arakato-be
+| image = 
+| imagesize = 
+| caption = 
+| era = {{ill|Yayoi period|en|Yayoi period|qid=Q207858|lt=Yayoi period}}
+| birth_date = Unknown
+| death_date = Unknown
+| other_names = Arakato-be-no-Mikoto, Ki no Kuni no Miyatsuko Arakato-be, Arakato-be, Kii Arakato-be
+| posthumous_name = 
+| deity_name = 
+| Buddhist_name = 
+| burial_place = 
+| court_Rank = 
+| ruler = 
+| family = {{ill|Ki clan (ancient Japan)|ja|紀氏|de|Ki (Klan)|uk|Рід Кі|ko|기씨 (황별)|fr|Kii no Kuni no Miyatsuko|consistent_qid=false}} ({{ill|Kii no Kuni no Miyatsuko|ja|紀国造|lt=Ki no Kuni no Miyatsuko}})
+| parents = Father: {{ill|Kitone-no-Mikoto|ja|鬼刀禰命|qid=Q97636304}}
+| siblings = {{ill|Kushitama no Mikoto|ja|久志多麻命}}, {{ill|Kagesanako no Mikoto|ja|蔭佐奈胡命}}
+| children = {{ill|Michishimamato no Mikoto|ja|美智支真止乃命}}, {{ill|Tōtsu Ayume Maguwashi Hime|ja|遠津年魚眼眼妙媛}}, {{ill|Nakatsuhime|ja|中日女}}
+| notable_info = 
+}}
+'''Arakato-be''' (あらかとべ, dates unknown) was an ancient Japanese noble and a member of the {{ill|Kii no Kuni no Miyatsuko|ja|紀国造|lt=Ki no Kuni no Miyatsuko}} lineage.
+== Overview ==
+In the {{ill|Kojiki|ace|Kojiki|ar|كوجيكي|az|Kociki|bcl|Kojiki|be|Кодзікі|bg|Коджики|ca|Kojiki|ckb|کۆجیکی|cs|Kodžiki|da|Kojiki|de|Kojiki|eo|Koĝiki|es|Kojiki|et|Kojiki|eu|Kojiki|fa|کوجیکی|fi|Kojiki|fr|Kojiki|gl|Kojiki|he|קוג'יקי|hi|कोजिकी|hr|Kojiki|hu|Kodzsiki|hy|Կոձիկի|id|Kojiki|it|Kojiki|ja|古事記|ka|კოძიკი|kk|Кодзики|kn|ಕೋಜಿಕಿ|ko|고사기|la|Kojiki|lt|Kodžiki|mk|Коџики|ml|കൊജികി|ms|Kojiki|my|ခိုဂျိခိ|nl|Kojiki|no|Kojiki|oc|Kojiki|pl|Kojiki|pt|Kojiki|ro|Kojiki|rsk|Кодїки|ru|Кодзики|sh|Kojiki|simple|Kojiki|sk|Kodžiki|sl|Kodžiki|sr|Коџики|sv|Kojiki|ta|கோஜிகி|th|โคจิกิ|tl|Kojiki|tr|Kojiki|uk|Кодзікі|vi|Cổ sự ký|zh|古事記|zh_classical|古事記|qid=Q813031|lt=Kojiki}}, she is referred to as '''Ki no Kuni no Miyatsuko Arakato-be-no-Mikoto''' or simply '''Arakato-be-no-Mikoto'''. In the {{ill|Kujiki|en|Kujiki|qid=Q2716751|lt=Sendai Kuji Hongi}} "Tenson Hongi" section, she is called '''Kii Arakato-be'''. Genealogical records also use the name '''Arakato-be-no-Mikoto'''.
+Arakato-be is described as the fourth or fifth-generation descendant of {{ill|Amanomichine|fr|Amanomichine|ja|天道根命|simple|Amanomichine|zh|天道根命|qid=Q10940767}}. Her children include {{ill|Michishimamato no Mikoto|ja|美智支真止乃命}} and {{ill|Tōtsu Ayume Maguwashi Hime|ja|遠津年魚眼眼妙媛}}, the consort of {{ill|Emperor Sujin|en|Emperor Sujin|qid=Q333530|lt=Emperor Sujin}}.<ref>{{ill|Nakata Norinobu|ja|中田憲信|qid=DELETED_QID}}, "Mochizuki," in ''Shokeifu'', Volume 4.</ref> In the "Tenson Hongi," her daughter {{ill|Nakatsuhime|ja|中日女}} is identified as the wife of {{ill|Ōaragawa no Mikoto|ja|大新河命}}, an ancestor of the {{ill|Tōtomi no Kuni no Miyatsuko|ja|遠淡海国造}}, {{ill|Kuno no Kuni no Miyatsuko|ja|久努国造}}, and other clans such as the {{ill|Yatabe no Muraji|ja|矢田部氏}} and {{ill|Yatsudō no Muraji|ja|矢集氏}}.
+== References ==
+{{Reflist}}
+== Related articles ==
+* {{ill|Kuni no miyatsuko|en|Kuni no miyatsuko|qid=Q2483673|lt=Kuni no miyatsuko}}
+* {{ill|Tobe|ja|トベ}}
+* {{ill|list of ancient Japanese figures|ja|飛鳥時代以前の人物一覧|12=simple|13=User:Immanuelle/List of figures before the Asuka period|comment=changed title based on wikidata|qid=Q11665973}}
+
+{{translated page|ja|荒河戸畔|version=84536055|comment=Imported full ja history}}
+
+{{wikidata link|Q97539561|ja|荒河戸畔|ja|荒川戸畔|grok=none|check_date=2026-05-28}}
+[[Category:People of the Yayoi period]]
+[[Category:生没年不詳]]
+[[Category:Kii no Kuni no Miyatsuko]]
+[[Category:Pages with deleted QID in ill template]]
+[[Category:Pages with interwikis with duplicate languages]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]

@@ -1,0 +1,153 @@
+
+{{Expand Japanese|上許曾神社}}
+
+{{Infobox religious building
+| name = Kamikoso Shrine
+| native_name = 上許曾神社
+| image = Kamikoso shrine.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamikoso Shrine
+| coordinates = {{coord|35.474194|136.31725}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kaya-no-hime|es|Kaya-no-hime|fa|کایا-نو-هیمه|it|Kaya-no-hime|ja|カヤノヒメ|zh|鹿屋野比賣神|qid=Q8191878|lt=Kaya-no-hime}}
+}}
+
+{{nihongo|'''Kamikoso Shrine'''|上許曾神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+== instance of (P31) ==
+
+* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}
+* {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
+* {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
+* {{ill|Kokuhei-sha|qid=Q135160342}}<ref>Kokugakuin University Shrine database</ref>
+* {{ill|Disputed Shikinaisha or Shikigeisha|qid=Q135038714}}<ref>Kokugakuin University Shrine database</ref>
+* {{ill|Shikinai Supershrine|qid=Q135419779}}
+
+== part of (P361) ==
+
+* {{ill|List of Shikinaisha in Ōmi Province|ja|近江国の式内社一覧|qid=Q11638477|lt=List of Shikinaisha in Ōmi Province}}
+** Series ordinal: 64
+** P155: {{ill|Masotano Shrine|qid=Q135039829}}
+** P156: {{ill|Ohohano Shrine (Q135039830)|qid=Q135039830}}
+
+== located in the administrative territorial entity (P131) ==
+
+* {{ill|Nagahama, Shiga|lt=Nagahama|ar|ناغاهاما (شيغا)|azb|ناقاهاما، شیقا|ceb|Nagahama (lungsod sa Hapon)|ce|Нагахама (Сига)|cs|Nagahama (Šiga)|de|Nagahama|en|Nagahama, Shiga|envoyage|Nagahama|eo|Nagahama|es|Nagahama (Shiga)|fa|ناگاهاما، شیگا|fi|Nagahama|fr|Nagahama|frvoyage|Nagahama|gl|Nagahama|id|Nagahama, Shiga|it|Nagahama|ja|長浜市|ko|나가하마시|mzn|ناگاهاما، شیگا|nl|Nagahama|no|Nagahama|pl|Nagahama|pt|Nagahama|ro|Nagahama|ru|Нагахама (Сига)|sv|Nagahama|tg|Нагаҳама|th|นางาฮามะ|tl|Nagahama, Shiga|tr|Nagahama|tt|Нагахама (Сига)|uk|Наґахама|uz|Nagahama|vec|Nagahama|vi|Nagahama, Shiga|war|Nagahama, Shiga|zh_classical|長濱市|zh_min_nan|Nagahama-chhī|zh_yue|長濱|zh|長濱市|qid=Q844130}}
+* {{ill|Ōmi Province|ltq=Q843882|qid=Q843882}}
+* {{ill|Azai District, Ōmi|ltq=Q4832118|qid=Q4832118}}
+
+== coordinate location (P625) ==
+
+* {{coord|35.474194|136.31725}}
+
+== image (P18) ==
+
+* Kamikoso shrine.jpg
+
+== dedicated to (P825) ==
+
+* {{ill|Kaya-no-hime|es|Kaya-no-hime|fa|کایا-نو-هیمه|it|Kaya-no-hime|ja|カヤノヒメ|zh|鹿屋野比賣神|qid=Q8191878|lt=Kaya-no-hime}}
+
+== Kokugakuin University Digital Museum entry ID (P13677) ==
+
+* 181844
+** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
+
+== modern shrine ranking (P13723) ==
+
+* {{ill|Gō-sha|ltq=Q134917316|qid=Q134917316}}
+** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
+** P1534: {{ill|Shinto Directive|fa|بخشنامه شینتو|fr|Directive shinto|id|Pengarahan Shinto|ja|神道指令|zh|神道指令|qid=Q3029647|lt=Shinto Directive}}
+
+== architectural style (P149) ==
+
+* {{ill|East Asian hip-and-gable roof|ltq=Q855025|qid=Q855025}}
+
+== country (P17) ==
+
+* {{ill|Japan|ltq=Q17|qid=Q17}}
+
+== Corporate Number (Japan) (P3225) ==
+
+* 7160005003604
+
+== has part(s) (P527) ==
+
+* {{ill|Kamikoso Shrine|lt=Kamikoso Shrine|qid=Q135193657}}
+** P1352: {'amount': '+1', 'unit': '1'}
+** P3831: {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
+* {{ill|Kawamichi Shrine|ltq=Q135193658|qid=Q135193658}}<ref>Kokugakuin University Shrine database</ref>
+** P1352: {'amount': '+2', 'unit': '1'}
+** P3831: {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
+
+== street address (P6375) ==
+
+* {'text': '滋賀県長浜市高山町2', 'language': 'ja'}
+
+[[ja:上許曾神社]]
+
+{{wikidata link|Q11360119|ja|上許曾神社|grok=none|check_date=2026-05-30}}
+
+== Japanese content ==
+{{出典の明記|date=14 June 2016 (Tue) 12:41 (UTC)}}
+{{神社
+|名称   = Kamikoso Shrine
+|画像   = [[File:Kamikoso shrine.jpg|270px]]<br />Worship hall
+|所在地 = {{ill|Shiga Prefecture|Q131358|qid=Q131358}}{{ill|Nagahama, Shiga|Q844130|qid=Q844130}} Takayama-chō 2
+|位置   = {{ウィキ座標2段度分秒|35|28|27.1|N|136|19|02.1|E|region:JP-25_type:landmark}}
+|祭神   = {{ill|Hayato Nakamura|Q11365189|qid=Q11365189|lt=Kusanohime-no-Mikoto}}
+|社格   = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br/>former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+|創建   = {{ill|789|Q31558|qid=Q31558}} (Enryaku 8)
+|本殿   = {{ill|East Asian hip-and-gable roof|Q855025|qid=Q855025}}
+|別名   = 
+|札所   = 
+|例祭   = {{ill|April 10|Q2502|qid=Q2502}}
+|神事   = 
+|地図 = {{Location map|Japan Shiga|label=Kamikoso Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
+}}
+'''Kamikoso Shrine''' (かみこそじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} enshrined in {{ill|Nagahama, Shiga|Q844130|qid=Q844130}}, {{ill|Shiga Prefecture|Q131358|qid=Q131358}}.
+
+=== Enshrined deities ===
+* Principal deity
+** {{ill|Hayato Nakamura|Q11365189|qid=Q11365189|lt=Kusanohime-no-Mikoto}}
+* Associated deities
+** {{ill|Q702140|qid=DELETED_QID|lt=Ōnamuchi-no-Mikoto}}
+** {{ill|Kotoshironushi-no-Mikoto|lt=Kotoshironushi|Q8009611|qid=Q8009611|qid=Q8009611|lt=Kotoshironushi-no-Mikoto}}
+** {{ill|Sumiyoshi sanjin|lt=Sumiyoshi Ōkami|qid=Q1114013}}
+** {{ill|Haniyasu-hiko and Haniyasu-hime|Q9285919|qid=Q9285919|lt=Haniyama Ōkami}}
+
+=== History ===
+It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} said to have been {{ill|Cuy|Q1146687|qid=Q1146687}}-enshrined by {{ill|Sangi (Japan)|Q1133663|qid=Q1133663}} {{ill|Tachibana no Naramaro|Q7673717|qid=Q7673717}} in {{ill|789|Q31558|qid=Q31558}} (Enryaku 8). There is a record that in {{ill|851|Q29966|qid=Q29966}} (Ninju 1), it was granted Senior Sixth Rank. In the {{ill|Jishō|Q1194671|qid=Q1194671}} era (1177-1181), four deities were enshrined in the {{ill|Aidono|Q135009883|qid=Q135009883}}. In {{ill|1876|Q7766|qid=Q7766}} (Meiji 9), it was ranked as a {{ill|Son-sha|ja|村社|qid=Q134917284}}, and in Meiji 15 it was promoted to {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+
+=== Festivals ===
+* Annual festival
+:Held on April 10.
+
+=== Notes ===
+{{脚注ヘルプ}}
+{{Reflist}}
+
+=== External links ===
+* [http://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1104 上許曾神社]（滋賀県神社庁）
+{{神道 横}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Kamikoso Shrine]][[Category:Shikinaisha|Kamikoso Shrine]][[Category:Shikinaisha|Kamikoso Shrine]][[Category:Disputed Shikinaisha or Shikigeisha]]
+[[Category:Shikinaisha in Ōmi Province]]
+[[Category:Shinto shrines in Shiga Prefecture]]
+[[Category:長浜市の歴史]]
+[[Category:Buildings and structures in Nagahama, Shiga]]
+[[Category:近江国の式内社]]
+[[Category:滋賀県の旧郷社]]
+[[Category:Pages with deleted QID in ill template]]
+[[Category:Former Gō-sha in Shiga Prefecture]]
+
+<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
+[[Category:Git synced pages]]
