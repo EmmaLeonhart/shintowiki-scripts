@@ -122,19 +122,35 @@ jawiki sitelink → the rest need content before they'd survive re-deletion.
 - [ ] Only after review: feed vetted blocks through the QuickStatements pipeline
   (human-gated; still respect the WD-editing rules in CLAUDE.md).
 
-## Context dump + agentic RAG on deleted Immanuelle-created Wikidata items (next session)
+## Backlog #8 — recreation-data build for deleted ill-target items (Emma-directed 2026-07-05)
 
-- [ ] **Go over the context dump** committed this session in `context dump/` (a saved
-  Claude Code page + assets, `911bbfb6`). Read it for the info/links it carries and fold
-  anything actionable into the queue/plan.
-- [ ] **Agentic RAG on the Wikidata items that Immanuelle created and that were then
-  deleted.** Emma is dumping these (there are likely account restrictions preventing a
-  live API pull, so the source is the dump, not a query). **Check the `context dump/` for
-  the item info / links first**, then do agentic RAG over the things linked there to
-  reconstruct enough content for recreation. **If that context is missing from the dump,
-  say so explicitly** (don't fabricate) and flag it as blocked-on-Emma-providing-the-dump.
-  Feeds directly into backlog #8 (deleted-QID recreation) above — the deleted
-  Immanuelle-created items overlap the 304 deleted ill targets.
+Context dump reviewed: `chat dump.md` = the interrupted session's transcript (its work is
+already committed: #1/#2/#5c/#8-generator); `deleted.txt` = an XTools list of **455**
+Immanuelle-created-then-deleted QIDs (QID + date + byte-size + Undelete/Log links, **no item
+content**). Cross-ref confirmed: **35 of the 38** QIDs the #8 generator recovered are in that
+dump. Deletion-log diving is NOT needed — content was already reconstructed from live wiki
+`{{ill}}` templates into `recreate-deleted-wikidata/review.md` + `recreate_quickstatements.txt`
+(304 targets, trimmed to actually-linked-on-the-wiki).
+
+Emma's taxonomy (sorting rule): **empty stubs = real things → recreate**; **deletion-requested
+= usually duplicates → relink to the existing live item, not recreate**; **deleted-but-still-
+used-on-wiki = the complicated middle** (our 304 are all used). Build the dataset in THIS order
+(all LOCAL/read-only until the final human-gated submission; respect the Wikidata QS-only +
+freeze rules — recreation itself stays human-gated):
+
+1. [ ] **Consolidate into a structured JSON.** The generator currently keeps only ONE source
+  page per target and emits no JSON. Produce `targets.json` keyed per deleted target with:
+  ALL articles that link it (not just the first), old QID (`dd=` where preserved, else null),
+  ja label, en label, other-language labels already present (de/zh are common), + enrichment
+  flags (existing live Wikidata QID, ja-article-exists). Keep the `.txt`/`.md` outputs.
+2. [ ] **Add bare-minimum P31/P279.** Per target type (person / shrine / facility / concept)
+  add instance-of / subclass-of so a recreated item is minimally valid. Human-reviewable; no submit.
+3. [ ] **Translate labels to more languages** where the base labels support it (many already
+  carry zh/de).
+4. [ ] **Genealogy targets: link relatives.** The Abe-no-X / clan people need P22/P25/relatives
+  pulled from their source articles.
+5. [ ] **Dedup RAG.** A more thorough check that each target doesn't already have a live
+  Wikidata item (beyond the ja-sitelink test) before it counts as a recreation candidate.
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
