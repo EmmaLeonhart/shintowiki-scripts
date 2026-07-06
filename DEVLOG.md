@@ -46,6 +46,18 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — Category translation: 郡-district investigation → no convention (queue #3)
+
+Investigated whether bare `<place>郡` district residual categories can be machine-resolved. Result:
+NO — do not add a resolver. Of the 9 bare 郡 residual cats, 6 have no jawiki→enwiki article at all
+(abolished/historical districts); the 3 that resolve (揖保郡→"Ibo District, Hyōgo", 稲敷郡→"Inashiki
+District, Ibaraki", 船井郡→"Funai District, Kyoto") have NO matching enwiki *category*, and their P31
+(district of Japan Q1122846) isn't a place-gate class. Same disciplined outcome as 旧県社: no verified
+enwiki category convention → stays residual, never machine-guessed. This exhausts the
+machine-resolvable productive patterns; the rest of the residual is human-translation / bespoke-
+resolver territory. No code change (the deliverable is the documented negative that prevents a bad
+auto-guess).
+
 ## 2026-07-06 — Category translation: の重要文化財 suffix (queue #3, residual tail)
 
 Added `<place>の重要文化財` → "Important Cultural Properties of <place>" to the phase-4 gazetteer.

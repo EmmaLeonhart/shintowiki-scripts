@@ -37,22 +37,25 @@ Once the loop runs: the **18 Japanese-named duplicate categories** tagged this s
 
 - [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
-## 3. Category-name translation — residual tail
+## 3. Category-name translation — residual tail (machine-resolvable patterns EXHAUSTED)
 
-`[[Category:Japanese language category names]]` (~1186 subcats). Resolved so far: dated-maintenance
-transform, phase-1 Wikidata-category-anchored (which already covers ~all `の神社` shrine cats — they
-carry category QIDs → authoritative enwiki category sitelink), and phase-4 place gazetteer
-(`の建築物`/`の歴史`/`の神社`/`の寺院`, jawiki→enwiki place + P31 gate). ~425 residual remain in
-`docs/category_translation_residual.md`. Remaining productive patterns need EITHER a verified enwiki
-category convention (only then a suffix is added) OR human translation — never machine-guessed:
+`[[Category:Japanese language category names]]` (~1186 subcats). Resolved: dated-maintenance
+transform, phase-1 Wikidata-category-anchored (covers ~all QID'd cats incl. `の神社` shrines via
+authoritative enwiki category sitelink), and phase-4 place gazetteer (`の建築物`/`の歴史`/`の神社`/
+`の寺院`/`の重要文化財`, jawiki→enwiki place + P31 gate). All productive patterns with a VERIFIED
+enwiki category convention are now handled. The residual is genuinely human-translation / bespoke
+territory (documented negatives, never machine-guessed):
 
-- [ ] Work the residual tail. DONE: `の重要文化財` → "Important Cultural Properties of <place>"
-  (verified enwiki "of" convention, added). VERIFIED-NO-CONVENTION (leave to human, never guess):
-  `の旧県社` shrine-rank-by-place (enwiki has no "Former prefectural shrines"/"Kensha" category).
-  Still open: `<place>郡` bare districts (enwiki "<Name> District, <Prefecture>" — a place-naming
-  pattern, needs its own resolver, not a topic suffix), `の画像提供依頼` maintenance (image-request),
-  `<sect>の寺院` sect-temples (needs a sect→English path). Add a suffix only when the enwiki
-  convention is verified. Low urgency — phases 1/4 drain the bulk.
+- `の旧県社` shrine-rank-by-place — enwiki has no "Former prefectural shrines"/"Kensha" category.
+- bare `<place>郡` districts — 6/9 have no enwiki article (abolished districts); the 3 that resolve
+  (Ibo/Inashiki/Funai District) have NO matching enwiki *category*, and their P31 (district Q1122846)
+  isn't a place-gate class. No category convention → residual.
+- `の画像提供依頼` (image-request maintenance) + `<sect>の寺院` sect-temples — each need a bespoke
+  path (maintenance-cat convention / sect→English name), not a place suffix.
+
+- [ ] (low, human/bespoke only) Anything here advances only via human translation or a purpose-built
+  resolver — do NOT add a place suffix for these (no verified enwiki category convention). Residual
+  auto-refreshes at `docs/category_translation_residual.md` on each CI generator run.
 
 ## 4. EN/FR/ID label-gap regularization
 
