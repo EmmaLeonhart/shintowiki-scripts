@@ -1,0 +1,259 @@
+CREATE
+LAST	Len	"Melchior (Kamo clan)"
+LAST	Lja	"メルショル (賀茂氏)"
+LAST	P31	Q5
+
+CREATE
+LAST	Lja	"ワンデイ・スパ"
+LAST	P31	Q27686
+
+CREATE
+LAST	Len	"Mifune Matsuri"
+LAST	Lja	"三船祭"
+LAST	P31	Q132241
+
+CREATE
+LAST	Len	"Kamikonishi Yokoanabo Cluster"
+LAST	Lja	"上塩冶横穴墓群"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Gero Onsen Ryokan Cooperative"
+LAST	Lja	"下呂温泉旅館協同組合"
+LAST	P31	Q177380
+
+CREATE
+LAST	Len	"Chugoku Kannon Pilgrimage"
+LAST	Lja	"中国観音霊場"
+LAST	P31	Q4588528
+
+CREATE
+LAST	Len	"Nakata Norinobu"
+LAST	Lja	"中田憲信"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Nakatomi Tsuchitoku"
+LAST	Lja	"中臣連千徳"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Nakatomi Ōsō"
+LAST	Lja	"中臣鹿島連大宗"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Haiku poet"
+LAST	Lja	"俳句詩人"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Izumo-taisha Hakodate Church"
+LAST	Lja	"出雲大社函館教会"
+LAST	P31	Q135437254
+
+CREATE
+LAST	Len	"Izumo-taisha Doi Church"
+LAST	Lja	"出雲大社土居教会"
+LAST	P31	Q135437254
+
+CREATE
+LAST	Len	"Izumo-taisha Abashiri Church"
+LAST	Lja	"出雲大社網走教会"
+LAST	P31	Q135437254
+
+CREATE
+LAST	Len	"Jūōmen Yokoanabo Cluster"
+LAST	Lja	"十王免横穴群"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Tropical decor"
+LAST	Lja	"南国趣味"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Hell bath"
+LAST	Lja	"地獄風呂"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Nakabusa"
+LAST	Lja	"大中臣仲房"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Tamenaka"
+LAST	Lja	"大中臣為仲"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Taikō Matsuri"
+LAST	Lja	"太閤祭"
+LAST	P31	Q132241
+
+CREATE
+LAST	Len	"Abe Arimori"
+LAST	Lja	"安倍有盛"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Abe Arishige"
+LAST	Lja	"安倍有重"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Abe Yasukichi"
+LAST	Lja	"安倍泰吉"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Abe no Yasutoshi"
+LAST	Lja	"安倍泰時"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Abe no Yasuari"
+LAST	Lja	"安倍泰有"
+LAST	P31	Q5
+
+CREATE
+LAST	Lja	"帰省"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Ontoku‐ji"
+LAST	Lja	"恩徳寺 (たつの市)"
+LAST	P31	Q5393308
+
+CREATE
+LAST	Len	"Formation of Kōha Shintō"
+LAST	Lja	"教派神道の形成"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Nihon Kodai Shizoku Jinmei Jiten"
+LAST	Lja	"日本古代氏族人名辞典 普及版"
+LAST	P31	Q23622
+
+CREATE
+LAST	Len	"Suwa District, Tashitsuki"
+LAST	Lja	"東白川郡棚倉町八槻"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Yanaginawa Matsuri"
+LAST	Lja	"柳波まつり"
+LAST	P31	Q132241
+
+CREATE
+LAST	Len	"Hamabowl EAS"
+LAST	Lja	"横浜ハマボール"
+LAST	P31	Q27686
+
+CREATE
+LAST	Len	"Izumizaki Yokoanabo"
+LAST	Lja	"泉崎横穴墓"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Kiyotosaku Yokoanabo"
+LAST	Lja	"清戸迫横穴墓"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"hot spring sources"
+LAST	Lja	"温泉および鉱泉の泉源"
+LAST	P31	Q177380
+
+CREATE
+LAST	Len	"hot spring program–type health promotion facilities"
+LAST	Lja	"温泉利用プログラム型健康増進施設"
+LAST	P31	Q177380
+
+CREATE
+LAST	Len	"hot spring utilization–type health promotion facilities"
+LAST	Lja	"温泉利用型健康増進施設"
+LAST	P31	Q177380
+
+CREATE
+LAST	Len	"thermal physiology & therapy"
+LAST	Lja	"温熱生理・治療学"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"thermal physiology"
+LAST	Lja	"温熱生理学"
+LAST	P31	Q5
+
+CREATE
+LAST	Lja	"湯けむりの庄"
+LAST	P31	Q27686
+
+CREATE
+LAST	Lja	"湯けむりの里"
+LAST	P31	Q27686
+
+CREATE
+LAST	Lja	"湯本グループ"
+LAST	P31	Q27686
+
+CREATE
+LAST	Len	"Kumano Pilgrimage"
+LAST	Lja	"熊野御幸"
+LAST	P31	Q1644573
+
+CREATE
+LAST	Len	"Mononobe no Soshin"
+LAST	Lja	"物部祖神"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Kitsunedani Yokoanabo Cluster"
+LAST	Lja	"狐谷横穴墓群"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Ishinuki Anakanon Yokoanabo Cluster"
+LAST	Lja	"石貫穴観音横穴群"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Todoroki Ravine Yokoanabo Cluster"
+LAST	Lja	"谷沢川横穴群"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Akagi Shrine (Kawauchi 1st Town)"
+LAST	Lja	"赤城神社 (桐生市川内町1)"
+LAST	P31	Q845945
+
+CREATE
+LAST	Len	"Akagi Shrine (Kawauchi 5th Town)"
+LAST	Lja	"赤城神社 (桐生市川内町5)"
+LAST	P31	Q845945
+
+CREATE
+LAST	Len	"Akagi Shrine (Iwanohana Town)"
+LAST	Lja	"赤城神社 (高崎市岩鼻町)"
+LAST	P31	Q845945
+
+CREATE
+LAST	Len	"Nabeta Yokoanabo Cluster"
+LAST	Lja	"鍋田横穴群"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Intercalation (timekeeping)"
+LAST	Lja	"閏 (時の計)"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Aogaki Publishing"
+LAST	Lja	"青垣出版"
+LAST	P31	Q2085381
+
+CREATE
+LAST	Len	"Takatsuku Yokoanabo Cluster"
+LAST	Lja	"高津久横穴墓群"
+LAST	P31	Q839954
