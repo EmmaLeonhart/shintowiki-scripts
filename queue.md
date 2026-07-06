@@ -16,12 +16,13 @@ Dataset in `recreate-deleted-wikidata/`; readiness `items/_recreation_readiness.
 the items via QuickStatements (human-gated, minimal claim set); relinking ills to new QIDs is the
 autonomous follow-up. **Repair is disposable — dumb direct text swaps, no durable pipelines.**
 
-- [ ] **Finish P31 typing of the 24 still-untyped candidates** (186/210 typed). Type only where a
-  name signal is definitional; verify each type QID live; NEVER guess; leave ambiguous ones for
-  Emma. Tail: Shimabara Sea, court offices 御匙/御鑰, Kyoto's Three Kumano, Ōtsuki Hotel, Color
-  Index, Inner Palace, Nakatomi Sakado clan, Kibi no Anaumi, Kimi-no-Mori, Shōkyō, Benten Chigo,
-  rope attachment projections, Hozumi-Suzuki Clan Genealogy (+ verify JR Ise Sangū Line & rhyolitic
-  welded tuff for existing-item duplicates).
+- [ ] **P31 tail — 16 genuinely-ambiguous items need Emma** (2026-07-06: Ōtsuki Hotel typed →
+  hotel Q27686; JR Ise Sangū Line flagged duplicate of 参宮線 Q872023, recreation_candidate=false).
+  The rest resist a definitional type without guessing: Shimabara Sea, court offices 御匙/御鑰,
+  Kyoto's Three Kumano, Color Index, Inner Palace, Nakatomi Sakado clan (clan-QID choice), Kibi no
+  Anaumi, Kimi-no-Mori, Shōkyō, Benten Chigo, rope attachment projections, Hozumi-Suzuki Clan
+  Genealogy, Protective Forest for Navigation, rhyolitic welded tuff (subtype-vs-dup of welded tuff
+  Q256438). NEEDS-DECISION Emma.
 - [ ] **Edit the ills on the 144 git-synced pages** (`[[Category:Pages with deleted QID in ill
   template]]`). Per `{{ill|…|qid=DELETED_QID}}`: sections → `[[Page#Section]]`; real entities →
   relink to created/live QID; duplicates → live QID. Un-sync each resolved page.

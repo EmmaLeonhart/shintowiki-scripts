@@ -25,6 +25,7 @@
     "p31": null,
     "p31_label": null,
     "p31_property": null,
+    "possible_existing": "Q872023",
     "romaji_reading": null,
     "type_confidence": "none",
     "type_source": null
@@ -63,6 +64,6 @@
   "ill_recovered": false,
   "qid": "Q135504266",
   "recovered_label": "JR Ise Sangu Line",
-  "recreation_candidate": true,
+  "recreation_candidate": false,
   "self_deleted": false
 }
