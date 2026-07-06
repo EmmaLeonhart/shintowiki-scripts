@@ -1,45 +1,272 @@
-# Wikimedia-category items: shinto categories with a jawiki category but no Wikidata item.
-# english-named get an en label; japanese-named are bare (pipeline links them later).
+# Wikimedia-category items for shintowiki categories in [[Category:Categories missing wikidata]] ({{wikidata link||ja|Category:X}}).
+# english-named get an en label; japanese-named are bare (pipeline links later).
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:1940年代設立の日本企業"
+LAST	Sjawiki	"Category:10世紀アジアの軍人"
+LAST	Len	"Category:10th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:アクセシビリティ・テンプレート"
-LAST	Len	"Category:Accessibility templates"
+LAST	Sjawiki	"Category:11世紀アジアの軍人"
+LAST	Len	"Category:11th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:ACジャパン正会員企業・団体"
+LAST	Sjawiki	"Category:12世紀アジアの軍人"
+LAST	Len	"Category:12th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:テンプレートによって追加されるカテゴリ"
-LAST	Len	"Category:Categories added by templates"
+LAST	Sjawiki	"Category:13世紀アジアの軍人"
+LAST	Len	"Category:13th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:Template:SKOSlink"
-LAST	Len	"Category:Template:SKOSlink"
+LAST	Sjawiki	"Category:14世紀アジアの軍人"
+LAST	Len	"Category:14th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:コモンズに同一・同名のものがあるメディア"
+LAST	Sjawiki	"Category:15世紀アジアの軍人"
+LAST	Len	"Category:15th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:コモンズの重複メディアに履歴継承の問題があるメディア"
+LAST	Sjawiki	"Category:16世紀アジアの軍人"
+LAST	Len	"Category:16th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:名数で表現される山"
+LAST	Sjawiki	"Category:17世紀アジアの軍人"
+LAST	Len	"Category:17th Century Asian Military Personnel"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:戦後の高知"
+LAST	Sjawiki	"Category:17世紀日本の儒学者"
+LAST	Len	"Category:17th-century Japanese Confucian scholars"
 
 CREATE
 LAST	P31	Q4167836
-LAST	Sjawiki	"Category:銃撃事件"
+LAST	Sjawiki	"Category:18世紀アジアの軍人"
+LAST	Len	"Category:18th Century Asian Military Personnel"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:18世紀日本の教育"
+LAST	Len	"Category:18th Century Education in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:18世紀日本の教育者"
+LAST	Len	"Category:18th century Japanese educators"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:18世紀日本の儒学者"
+LAST	Len	"Category:18th-century Japanese Confucian scholars"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:19世紀アジアの軍人"
+LAST	Len	"Category:19th Century Asian Military Personnel"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:19世紀日本の教育"
+LAST	Len	"Category:19th Century Education in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:19世紀の国学者"
+LAST	Len	"Category:19th century Kokugaku scholars"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:19世紀のKokugakuist"
+LAST	Len	"Category:19th-century Kokugaku scholars"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:2020年の日本の事件"
+LAST	Len	"Category:2020 incidents in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:20世紀アジアの軍人"
+LAST	Len	"Category:20th Century Asian Military Personnel"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:20世紀アジアの学者"
+LAST	Len	"Category:20th century Asian scholars"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:20世紀の評論家"
+LAST	Len	"Category:20th Century Critics"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:20世紀日本の教育"
+LAST	Len	"Category:20th Century Education in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:20世紀アジアの女性王族"
+LAST	Len	"Category:20th-century Asian female royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:20世紀アジアの王族"
+LAST	Len	"Category:20th-century Asian royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:20世紀日本の女性 (職業別)"
+LAST	Len	"Category:20th-century Japanese women (by occupation)"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:21世紀日本の教育"
+LAST	Len	"Category:21st Century Education in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:21世紀日本の民俗学者"
+LAST	Len	"Category:21st century Japanese folklorists"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:21世紀アジアの女性王族"
+LAST	Len	"Category:21st-century Asian female royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:21世紀アジアの王族"
+LAST	Len	"Category:21st-century Asian royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:21世紀日本の女性 (職業別)"
+LAST	Len	"Category:21st-century Japanese women (by occupation)"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:6世紀アジアの軍人"
+LAST	Len	"Category:6th Century Asian Military Personnel"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:6世紀アジアの女性王族"
+LAST	Len	"Category:6th-century Asian female royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:6世紀アジアの王族"
+LAST	Len	"Category:6th-century Asian royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:6世紀日本の女性 (職業別)"
+LAST	Len	"Category:6th-century Japanese women (by occupation)"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:7世紀アジアの軍人"
+LAST	Len	"Category:7th Century Asian Military Personnel"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:7世紀日本の教育"
+LAST	Len	"Category:7th Century Education in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:7世紀アジアの女性王族"
+LAST	Len	"Category:7th-century Asian female royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:7世紀アジアの王族"
+LAST	Len	"Category:7th-century Asian royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:7世紀日本の女性 (職業別)"
+LAST	Len	"Category:7th-century Japanese women (by occupation)"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:8世紀日本の教育"
+LAST	Len	"Category:8th Century Education in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:8世紀アジアの女性王族"
+LAST	Len	"Category:8th-century Asian female royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:8世紀アジアの王族"
+LAST	Len	"Category:8th-century Asian royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:8世紀日本の女性 (職業別)"
+LAST	Len	"Category:8th-century Japanese women (by occupation)"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:9世紀日本の教育"
+LAST	Len	"Category:9th Century Education in Japan"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:9世紀アジアの王族"
+LAST	Len	"Category:9th-century Asian royalty"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:9世紀日本の医師"
+LAST	Len	"Category:9th-century Japanese physicians"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:富山県の行政機関"
+LAST	Len	"Category:Administrative Agencies in Toyama Prefecture"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:仏教における死後"
+LAST	Len	"Category:Afterlife in Buddhism"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:侍従武官"
+LAST	Len	"Category:Aides-de-Camp to the Emperor"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:陸上自衛隊の空挺部隊"
+LAST	Len	"Category:Airborne units of the Japan Ground Self-Defense Force"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:飴"
+LAST	Len	"Category:Ame candy"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:アプレゲール犯罪"
+LAST	Len	"Category:Après-guerre crime"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:横浜市の考古遺跡"
+LAST	Len	"Category:Archaeological sites in Yokohama"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:国分寺崖線の考古遺跡"
+LAST	Len	"Category:Archaeological sites on the Kokubunji Cliff"
