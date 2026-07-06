@@ -18,9 +18,7 @@
 
 {{nihongo|'''Sakuta Shrine'''|佐久太神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
 
-[[ja:佐久太神社]]
-
-{{wikidata link|Q11382602|ja|佐久太神社|check_date=2026-05-25}}
+{{wikidata link|Q11382602|ja|佐久太神社|grok=none|check_date=2026-07-06}}
 
 == Japanese content ==
 {{神社
@@ -37,7 +35,7 @@
  | 地図= {{Location map|Japan Gifu|label=Sakuta Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Sakuta Shrine''' (さくたじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Tomika, Gifu|arz|توميكا|ceb|Tomika-chō|es|Tomika (Gifu)|fa|تومیکا، گیفو|fr|Tomika|it|Tomika|ja|富加町|ko|도미카정|ms|Tomika, Gifu|my|တိုမိခမြို့၊ ဂိဖု|pl|Tomika|ru|Томика|tl|Tomika, Gifu|tr|Tomika|uk|Томіка|ur|ٹومیکا، گیفو|uz|Tomika (Gifu)|zh|富加町|qid=Q1203855}}, {{ill|Kamo District, Gifu|ceb|Kamo-gun (distrito sa Hapon, Gifu-ken)|es|Distrito de Kamo (Gifu)|fr|District de Kamo (Gifu)|id|Distrik Kamo, Gifu|it|Distretto di Kamo (Gifu)|ja|加茂郡|ko|가모군 (기후현)|pl|Powiat Kamo|pt|Distrito de Kamo|th|อำเภอคาโมะ|uk|Повіт Камо (Ґіфу)|vi|Kamo (quận)|zh|加茂郡|qid=Q1348656}}, {{ill|Gifu Prefecture|Q131277|qid=Q131277}}. It is the {{ill|Mino Province|ckb|پارێزگای مینۆ|cs|Mino (provincie)|de|Provinz Mino|es|Provincia de Mino|eu|Mino probintzia|fa|ولایت مینو|fr|Province de Mino|gl|Provincia de Mino|hak|Mî-nùng-koet|id|Provinsi Mino|it|Mino (provincia)|ja|美濃国|ko|미노국|lt|Mino žemė|nl|Mino (provincie)|pt|Província de Mino|ru|Мино (провинция)|simple|Mino Province|sk|Mino (provincia)|sr|Провинција Мино|th|แคว้นมิโนะ|tr|Mino (vilayet)|uk|Провінція Міно|vi|Tỉnh Mino|wuu|美濃国|zh|美濃國|zh_min_nan|Mino-kok|zh_yue|美濃國|qid=Q864156}} Kamo District Sakuta Shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha register}}. Its {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former rank}} was village shrine.
+'''Sakuta Shrine''' (さくたじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Tomika, Gifu|arz|توميكا|ceb|Tomika-chō|es|Tomika (Gifu)|fa|تومیکا، گیفو|fr|Tomika|it|Tomika|ja|富加町|ko|도미카정|ms|Tomika, Gifu|my|တိုမိခမြို့၊ ဂိဖု|pl|Tomika|ru|Томика|tl|Tomika, Gifu|tr|Tomika|uk|Томіка|ur|ٹومیکا، گیفو|uz|Tomika (Gifu)|zh|富加町|qid=Q1203855}}, {{ill|Kamo District, Gifu|ceb|Kamo-gun (distrito sa Hapon, Gifu-ken)|es|Distrito de Kamo (Gifu)|fr|District de Kamo (Gifu)|id|Distrik Kamo, Gifu|it|Distretto di Kamo (Gifu)|ja|加茂郡|ko|가모군 (기후현)|pl|Powiat Kamo|pt|Distrito de Kamo|th|อำเภอคาโมะ|uk|Повіт Камо (Ґіфу)|vi|Kamo (quận)|zh|加茂郡|qid=Q1348656}}, {{ill|Gifu Prefecture|Q131277|qid=Q131277}}. It is the {{ill|Mino Province|ckb|پارێزگای مینۆ|cs|Mino (provincie)|de|Provinz Mino|es|Provincia de Mino|eu|Mino probintzia|fa|ولایت مینو|fr|Province de Mino|gl|Provincia de Mino|hak|Mî-nùng-koet|id|Provinsi Mino|it|Mino (provincia)|ja|美濃国|ko|미노국|lt|Mino žemė|nl|Mino (provincie)|pt|Província de Mino|ru|Мино (провинция)|simple|Mino Province|sk|Mino (provincia)|sr|Провинција Мино|th|แคว้นมิโนะ|tr|Mino (vilayet)|uk|Провінція Міно|vi|Tỉnh Mino|wuu|美濃国|zh|美濃國|zh_min_nan|Mino-kok|zh_yue|美濃國|qid=Q864156}} Kamo District Sakuta Shrine listed in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Shikinaisha register}}. Its {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former rank}} was village shrine.
 
 === Overview ===
 The date of founding is unknown. It is said to have been called "Kumano Gongen" in the {{ill|Edo period|Q184963|qid=Q184963}}.
@@ -47,9 +45,9 @@ The date of founding is unknown. It is said to have been called "Kumano Gongen" 
 *{{ill|Ukemochi|Q2280323|qid=Q2280323|lt=Ukemochi no Kami}}
 === Merged deities ===
 *{{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Kagutsuchi no Kami}}
-*{{ill|Konohanasakuya-hime|Q1781862|qid=Q1781862|lt=Konohana-sakuya-hime no Kami}}
-*{{ill|Izanami|Q682306|qid=Q682306|lt=Izanami no Kami}}
-*{{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi no Kami}}
+*{{ill|Konohanasakuya-hime|az|Konohanasakuya|ca|Konohana no Sakuya hime|de|Konohanasakuyahime|fa|کونوهاناساکویا-هیمه|fr|Konohana-no-Sakuya|it|Konohanasakuya-hime|ja|コノハナノサクヤビメ|ko|고노하나노사쿠야비메|mni|ꯀꯣꯅꯣꯍꯅꯁꯀꯨꯌ-ꯍꯤꯃꯦ|pl|Konohanasakuya-hime|ru|Коноханасакуя-химэ|sv|Konohanasakuyahime|th|เซ็นเง็ง|vi|Konohana Sakuya Hime|zh|木花開耶姬|qid=Q1781862|lt=Konohana-sakuya-hime no Kami}}
+*{{ill|Izanami|ar|إزانامي|az|İzanami|bcl|Izanami|bs|Izanami|ca|Izanami|da|Izanami|el|Ιζανάμι|eo|Izanami|es|Izanami|fa|ایزانامی|fi|Izanami|fr|Izanami|he|איזאנמי|hr|Izanami|hu|Izanami|hy|Իզանամի|id|Izanami|it|Izanami|ja|イザナミ|ko|이자나미|mk|Изанами|mni|ꯏꯓꯥꯅꯥꯃꯤ|pt|Izanami|rsk|Изанами|ru|Идзанами|simple|Izanami|sl|Izanami|sr|Изанами|sv|Izanami|ta|இசநமி|th|อิซานามิ|tl|Izanami|tr|Izanami|uk|Ідзанамі|zh|伊邪那美|qid=Q682306|lt=Izanami no Kami}}
+*{{ill|Izanagi|abstract|Q813858|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|rsk|Изанаґи|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858|lt=Izanagi no Kami}}
 *{{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037|lt=Sarutahiko no Kami}}
 *{{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728|qid=Q3080728|lt=Ukanomitama no Kami}}
 *Ōmiya-me no Kami
@@ -81,5 +79,6 @@ The date of founding is unknown. It is said to have been called "Kumano Gongen" 
 [[Category:富加町の歴史]]
 [[Category:Municipal Tangible Cultural Properties in Gifu Prefecture]]
 [[Category:富加町の建築物]]
+[[Category:Pages with unresolved QID in ill template]]
 
 [[Category:Git synced pages]]

@@ -18,9 +18,8 @@
 {{nihongo|'''Samatado Shrine'''|佐麻多度神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
 {{commons category|Category:Samatado-jinja}}
-[[ja:佐麻多度神社]]
 
-{{wikidata link|Q11385140|commons|Category:Samatado-jinja|ja|佐麻多度神社|check_date=2026-05-25}}
+{{wikidata link|Q11385140|commons|Category:Samatado-jinja|ja|佐麻多度神社|grok=none|check_date=2026-07-06}}
 
 == Japanese content ==
 {{神社
@@ -39,7 +38,7 @@
 |地図 = {{Location map|Japan Osaka|label=Samatado<br />Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Samatado Shrine''' (さまたどじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Yao, Osaka|ar|ياو (أوساكا)|bcl|Yao, Osaka|be|Яо|bg|Яо|ca|Yao (Osaka)|ce|Яо (Осака)|ceb|Yao-shi|de|Yao (Osaka)|eo|Jao|es|Yao (Osaka)|et|Yao|fa|یائو، اوساکا|fi|Yao|fr|Yao (Osaka)|ga|Yao|gl|Yao|hy|Յաո|id|Yao, Osaka|it|Yao (Osaka)|ja|八尾市|ko|야오시|ms|Yao, Osaka|mzn|یائو، اوساکا|nl|Yao (Osaka)|no|Yao (Osaka)|pl|Yao (miasto)|pt|Yao (Osaka)|ro|Yao (municipiu)|ru|Яо (Япония)|sco|Yao, Osaka|sh|Yao, Osaka|simple|Yao, Osaka|sr|Јао|sv|Yao, Osaka|tg|Яо|th|ยาโอะ|tl|Yao, Osaka|tr|Yao, Osaka|tt|Яо (Осака)|uk|Яо (Осака)|ur|یاو، اوساکا|vi|Yao, Ōsaka|war|Yao, Osaka|zh|八尾市|zh_classical|八尾市|zh_min_nan|Yao-chhī|zh_yue|八尾|qid=Q490872}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former rank was {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+'''Samatado Shrine''' (さまたどじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Yao, Osaka|ar|ياو (أوساكا)|bcl|Yao, Osaka|be|Яо|bg|Яо|ca|Yao (Osaka)|ce|Яо (Осака)|ceb|Yao-shi|de|Yao (Osaka)|eo|Jao|es|Yao (Osaka)|et|Yao|fa|یائو، اوساکا|fi|Yao|fr|Yao (Osaka)|ga|Yao|gl|Yao|hy|Յաո|id|Yao, Osaka|it|Yao (Osaka)|ja|八尾市|ko|야오시|ms|Yao, Osaka|mzn|یائو، اوساکا|nl|Yao (Osaka)|no|Yao (Osaka)|pl|Yao (miasto)|pt|Yao (Osaka)|ro|Yao (municipiu)|ru|Яо (Япония)|sco|Yao, Osaka|sh|Yao, Osaka|simple|Yao, Osaka|sr|Јао|sv|Yao, Osaka|tg|Яо|th|ยาโอะ|tl|Yao, Osaka|tr|Yao, Osaka|tt|Яо (Осака)|uk|Яо (Осака)|ur|یاو، اوساکا|vi|Yao, Ōsaka|war|Yao, Osaka|zh|八尾市|zh_classical|八尾市|zh_min_nan|Yao-chhī|zh_yue|八尾|qid=Q490872}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former rank was {{ill|Son-sha|Q134917284|qid=Q134917284}}.
 
 === Enshrined deity ===
 ;Main deity
@@ -47,7 +46,7 @@
 :Samatado Ōkami is the ubusuna deity of Yamahata village, but details are unclear because historical materials on Samatado Ōkami and related ancient clans are unknown<ref name="戸原">[http://www.y-tohara.com/naka-samatado.html Shikinaisha of Kawachi / Samatado Shrine (Yao)] accessed 2019-02-17</ref>. The '{{ill|Engishiki Jinmyōchō Studies|ja|神名帳考証|qid=Q11588824}}' records it as "Sawa-me deity" and "Haniyasu deity"<ref name="戸原" />.
 
 === History ===
-Founding year and original deity are unknown, but it is said to have been founded in the Yamato period (600s CE). The original site was about 100 m higher, within temple lands of Byakka Kannon-in at Taniguchi Tenjinyama on the slope of {{ill|Mount Takayasu|Q11669140|qid=Q11669140}}. In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, it is listed as a small shrine in {{ill|Kawachi Province|be|Каваты (правінцыя)|ca|Província de Kawachi|ckb|پارێزگای کاواچی|cs|Provincie Kawači|de|Provinz Kawachi|es|Provincia de Kawachi|fa|ولایت کاواچی|fr|Province de Kawachi|gl|Provincia de Kawachi|hak|Kawachi-koet|id|Provinsi Kawachi|it|Kawachi (provincia)|ja|河内国|ko|가와치국|lt|Kavačio žemė|nl|Kawachi (provincie)|pt|Província de Kawachi|ru|Кавати (провинция)|simple|Kawachi Province|sk|Kawači (provincia)|sr|Провинција Кавачи|tr|Kawachi (vilayet)|uk|Провінція Каваті|zh|河內國|zh_min_nan|Kawati-kok|zh_yue|河內國|qid=Q1047150}} Takayasu District.
+Founding year and original deity are unknown, but it is said to have been founded in the Yamato period (600s CE). The original site was about 100 m higher, within temple lands of Byakka Kannon-in at Taniguchi Tenjinyama on the slope of {{ill|Mount Takayasu|Q11669140|qid=Q11669140}}. In the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}}, it is listed as a small shrine in {{ill|Kawachi Province|be|Каваты (правінцыя)|ca|Província de Kawachi|ckb|پارێزگای کاواچی|cs|Provincie Kawači|de|Provinz Kawachi|es|Provincia de Kawachi|fa|ولایت کاواچی|fr|Province de Kawachi|gl|Provincia de Kawachi|hak|Kawachi-koet|id|Provinsi Kawachi|it|Kawachi (provincia)|ja|河内国|ko|가와치국|lt|Kavačio žemė|nl|Kawachi (provincie)|pt|Província de Kawachi|ru|Кавати (провинция)|simple|Kawachi Province|sk|Kawači (provincia)|sr|Провинција Кавачи|tr|Kawachi (vilayet)|uk|Провінція Каваті|zh|河內國|zh_min_nan|Kawati-kok|zh_yue|河內國|qid=Q1047150}} Takayasu District.
 
 With the 1872 (Meiji 5) separation of Shinto and Buddhism decree, the temple was abolished and Samatado Shrine was ranked as village shrine. In April of the same year, it merged with Yamahata Shrine. In June 1899 (Meiji 32), it moved to the current site because visiting had been inconvenient.
 
@@ -100,5 +99,6 @@ On the south side of the precinct beside the torii are four "{{ill|Chikaraishi|Q
 [[Category:Buildings and structures in Yao, Osaka]]
 [[Category:History of Yao, Osaka]]
 [[Category:高安 (八尾市)]]
+[[Category:Pages with unresolved QID in ill template]]
 
 [[Category:Git synced pages]]
