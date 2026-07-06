@@ -81,27 +81,34 @@ entities and leave a `"redirects"` entity untouched. The stale QID still resolve
   transform, orchestrator saves); throttle + 429-bail; cache QID→target per run. This is *durable*
   maintenance (merges happen forever), unlike the disposable recreation repair.
 
-## 6. Create Wikidata items for jawiki-only categories (Emma — end of queue; auto-open QS on GitHub)
+## 6. Create Wikidata items for jawiki-only categories (Emma — END of queue; auto-open QS on GitHub)
 
-Shintowiki categories that have a jawiki category but NO Wikidata item should get a
-**Wikimedia-category item** created via QuickStatements — the easiest kind: `P31=Q4167836`
-(Wikimedia category) + `Sjawiki` sitelink to the jawiki category + English label + link to our
-shintowiki category (P11250) and fandom category. Reads work from dev (miraheze API reachable
-with the compliant UA), so this is buildable locally.
+**Deferred to end of queue (Emma 2026-07-05):** entangled with the interwiki migration. All
+interwikis were migrated into the `{{wikidata link}}` template, and *anything relying on raw
+interwiki links (`[[ja:カテゴリ:…]]`) has been broken for ages* — so a generator built on reading
+raw interwikis is on shaky ground and must be reconsidered against the current
+`{{wikidata link}}`-based model before building. More pressing items come first.
 
-**Finding (2026-07-05):** the obvious source `[[Category:Emmabot jawiki categories with only
-jawiki category and no wikidata]]` (populated by `shinto_miraheze/enrich_jawiki_categories.py`)
-has only **10 members, mostly generic maintenance junk** (`Categories added by templates`,
-`Template:SKOSlink`, Commons-dup-media, `1940年代設立の日本企業`) — not Shinto content categories.
-So the real target set is either already drained or must be found by a broader query: shintowiki
-categories carrying a `[[ja:Category:…]]` interwiki but no `{{wikidata link}}`. Japanese-named
-cats need an English label (overlaps the category-translation backlog); English-named ones are
-trivial.
+Goal: shintowiki categories that have a jawiki category but NO Wikidata item get a
+**Wikimedia-category item** via QuickStatements. Per Emma's rule: every item = `CREATE` +
+`P31=Q4167836` (Wikimedia category) + `Sjawiki` (the jawiki category); **english-named** cats
+also get `Len` (English label); **japanese-named / overlapping** cats get NO label and NO wiki
+links — the pipeline connects those (translated name + shinto/fandom) later. Don't emit
+shinto/fandom links in the QS; the existing `enrich_jawiki_categories.py` / P11250 pipeline
+attaches them once the item exists.
 
-- [ ] Determine the real target set (broad query, not just the 10-member tracking cat), then a
-  generator emitting `CREATE` blocks (`P31=Q4167836` + `Sjawiki` + `Len` + P11250/fandom link).
-  **After generation, auto-open the QuickStatements `.txt` on GitHub** (per Emma) so she can run
-  it. Skip the junk maintenance categories.
+**Findings (2026-07-05, reads work from dev via compliant UA):** the source is
+`[[Category:Emmabot jawiki categories with only jawiki category and no wikidata]]`
+(maintained by `shinto_miraheze/enrich_jawiki_categories.py`). The enrich input is fully drained
+(`Emmabot categories with jawiki` = 0); of all shinto cats with a jawiki category, **214 already
+have items, exactly 10 do not** → those 10 ARE the set (currently mostly maintenance/generic
+cats — `Accessibility templates`, `Template:SKOSlink`, `1940年代設立の日本企業`, …; only 3 are
+english-named). Each member's jawiki cat is currently in its wikitext as `[[ja:カテゴリ:X]]` →
+`Sjawiki = "Category:X"`. Verify each jawiki category truly lacks an item before CREATE (avoid dups).
+
+- [ ] Build the generator (reconciling with the `{{wikidata link}}` interwiki model, not raw
+  `[[ja:…]]`), emit the CREATE blocks, and **auto-open the QuickStatements `.txt` on GitHub**
+  after generation (per Emma) so she can run it (human-gated).
 
 ## Pinned tail (keep last, always)
 
