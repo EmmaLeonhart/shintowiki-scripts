@@ -20,6 +20,14 @@ def test_shrine_wins_over_bare_kami_char():
     assert _p31("Ōmiya Isuzu Shrine", "大宮五十鈴神社") == "Q845945"
 
 
+def test_bath_additive_products():
+    # Emma 2026-07-06 research: 入浴剤 brands → Q11388990 bath additive.
+    assert _p31("Bath Roman", "バスロマン") == "Q11388990"
+    assert _p31("Young Venus", "ヤングビーナス") == "Q11388990"
+    # A confirmed person still resolves to human, not a product.
+    assert _p31("Adachi Kagemura", "安達景村") == "Q5"
+
+
 def test_izumo_branch_church_is_shrine_church():
     # Emma 2026-07-06: Izumo-taisha branch churches (教会) → Q135437254 Shrine Church.
     assert _p31("Izumo-taisha Karatsu Church", "出雲大社唐津教会") == "Q135437254"

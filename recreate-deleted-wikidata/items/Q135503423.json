@@ -7,7 +7,7 @@
     "timestamp": "20250730011815"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "Japanese bath additive product (入浴剤)",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -250,12 +250,12 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q11388990",
+    "p31_label": "bath additive",
+    "p31_property": "P31",
     "romaji_reading": "Asahi Shōnō",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "emma-research"
   },
   "fandom": {
     "categories": [

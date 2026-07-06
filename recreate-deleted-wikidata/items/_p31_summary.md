@@ -1,19 +1,20 @@
 # Recreation-candidate P31 (instance of) — from entity name
 
 - Candidates: **213**
-- Assigned a P31: **161**  ·  left for review: **52**
+- Assigned a P31: **165**  ·  left for review: **48**
 
 Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31.py` docstring. Uncertain → null, never guessed.
 
 ## Type distribution
 
-- (none — review): 52
+- (none — review): 48
 - Shinto shrine: 42
 - human: 38
 - kami: 28
 - festival: 26
 - Buddhist temple: 9
 - kofun: 6
+- bath additive: 4
 - kofun group: 4
 - shrine church: 4
 - dance: 2
@@ -74,6 +75,10 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579328 | Izumo-taisha Sakunomiya Religious Society | 出雲大社佐久之宮講社 | Shinto shrine | high |
 | Q135579345 | Izumo-taisha Malaysia Religious Society | 出雲大社マレーシア講社 | Shinto shrine | high |
 | Q135579538 | Morimasa Hachiman Shrine | 森正八幡神社 | Shinto shrine | high |
+| Q135503417 | Bath Roman | バスロマン | bath additive | high |
+| Q135503420 | Young Venus | ヤングビーナス | bath additive | high |
+| Q135503423 | Asahi Shōnō | アサヒ晶脳 | bath additive | high |
+| Q135503424 | Bath Melody | バスメロディー | bath additive | high |
 | Q135550812 | Chikugo no Kuni Fudoki | 筑後国風土記 | book | medium |
 | Q135550950 | Teiō Henki | 帝王編年記 | book | medium |
 | Q135504178 | Wago Nembutsu Odori | 和合の念仏踊 | dance | medium |
@@ -196,10 +201,6 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135502435 | Ōtsuki Hotel | 大月ホテル |  | none |
 | Q135503346 | Protective Forest for Navigation | 航行目標保安林 |  | none |
 | Q135503410 | herbal baths | 薬湯 |  | none |
-| Q135503417 | Bath Roman | バスロマン |  | none |
-| Q135503420 | Young Venus | ヤングビーナス |  | none |
-| Q135503423 | Asahi Shōnō | アサヒ晶脳 |  | none |
-| Q135503424 | Bath Melody | バスメロディー |  | none |
 | Q135503427 | Mineral spring bathhouse | 鉱泉浴場 |  | none |
 | Q135503431 | Color Index | カラーカード |  | none |
 | Q135504200 | Futagoyama Park (disambiguation) | 二子山公園 (曖昧さ回避) |  | none |

@@ -68,6 +68,11 @@ CONFIRMED_HUMAN_JA = frozenset({
     "宮王勝良", "宮王重丸",
 })
 
+# Bath-additive product brands (入浴剤) — Emma 2026-07-06 asked to research + classify.
+# All real Japanese bath additives; P31 Q11388990. カラーカード (color card) excluded —
+# not a bath additive.
+CONFIRMED_BATH_JA = frozenset({"バスロマン", "ヤングビーナス", "アサヒ晶脳", "バスメロディー"})
+
 
 def classify(en, ja):
     """Return (p31_qid, p31_label, description, confidence, source)."""
@@ -80,6 +85,10 @@ def classify(en, ja):
     # no definitional name suffix) — exact ja match, checked first.
     if ja in CONFIRMED_HUMAN_JA:
         return "Q5", "human", "Japanese historical figure", "high", "emma-confirmed"
+    # Bath-additive product brands (入浴剤 — no name suffix; researched per Emma
+    # 2026-07-06). Q11388990 = "bath additive" (health/beauty product), verified live.
+    if ja in CONFIRMED_BATH_JA:
+        return "Q11388990", "bath additive", "Japanese bath additive product (入浴剤)", "high", "emma-research"
 
     # Izumo high-priest houses (Senge 千家 / Kitajima 北島) — people.
     if ja.startswith(("千家", "北島")):
