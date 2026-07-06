@@ -92,6 +92,15 @@ it (or de-ill if there's no reasonable match). Best-effort; imperfect beats a de
   (mirror the category_translation one) if the volume returns; a handful get done by hand.
   Retire `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (superseded by this policy).
 
+## 7. Full audit of Emma's items → suggest properties / edits / changes (awaiting her list/image)
+
+Emma 2026-07-06 (end-of-queue = not-immediate, NOT parked): she will provide a set of items (via an
+image / a full list). The task: look over ALL of them individually and give suggestions — Wikidata
+properties to add, edits, or other changes per item. A genuine per-item review, not a skim.
+
+- [ ] When Emma provides the items: review each one and return concrete suggestions (properties/
+  edits/changes). Ask her for the list/image if not yet given.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
