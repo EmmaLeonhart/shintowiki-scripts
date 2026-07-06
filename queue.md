@@ -102,13 +102,22 @@ properties to add, edits, or other changes per item. A genuine per-item review, 
   edits/changes). Ask her for the list/image if not yet given.
 
 
-## Alias investigation
+## 8. LAST TASK — audit all pipeline-added aliases + the damage we may have caused
 
-I noticed on this item https://www.wikidata.org/wiki/Q134736475 I noticed the pipeline gave an English language name in the aliases section, as opposed to an English language name in the actual section, as opposed to the regular one. I'm not sure what's going on with it. I'm not sure if there was some kind of an error where it was supposed to be given a different name, but it was given this one. It should probably not have this, and I just did the edit. It probably should not have this. This seems like it's a bit of a weird way of doing it. If our pipeline is accidentally putting English language translations of names into the aliases, that's a bug. 
+Emma 2026-07-06 (explicitly the last scheduled task). Origin: Q134736475 had a typo'd English name
+(`Zebshō-ji Temple`) in its ALIASES. Root cause found + the generator fixed (`b11f8b54`: label-only,
+no aliases — the pipeline reused other same-named items' labels as aliases, dragging in their typos +
+disambiguators). But the **damage is already out on Wikidata** and needs a full accounting:
 
-It might be that there was some kind of a primary name that was attached to it, and this is a secondary one, but I'm not really sure. 
-
-Oh no, there's a clear, looks like a typo or something in it, so I'm not sure what the origin of it is, but this is not a thing. This is not cool. We need to fix wherever it went wrong in the pipeline, and my thought with the pipeline is that it went wrong because of the fact that it was one of the agentic sessions on the cloud that did this thing, and we might want to have it so that our cloud sessions have some sort of verification that this stuff follows proper Japanese phonology. 
+- [ ] Audit every alias the pipeline ADDED to Wikidata (cross-ref the old `Aen` lines we submitted vs
+  live Wikidata aliases): how many, which are junk (typos like `Zebshō`, comma-disambiguators like
+  `…, Hino, Tokyo`), how many landed. Generate QuickStatements to REMOVE the junk (never a bespoke
+  editor) — at minimum the ~72 comma-disambiguators.
+- [ ] Trace the SOURCE typos: `Zebshō` etc. are real bad labels on OTHER Wikidata items (likely from a
+  cloud agentic session). Find them; they need correcting on Wikidata too.
+- [ ] Emma's structural fix: give cloud agentic sessions a **Japanese-phonology validator** — reject a
+  romaji label that doesn't decompose into valid mora (e.g. `Zeb` fails: `b` can't be a syllable coda,
+  only `n` can). Gate new labels + flag existing bad ones for the cleanup above. 
 
 ## Pinned tail (keep last, always)
 
