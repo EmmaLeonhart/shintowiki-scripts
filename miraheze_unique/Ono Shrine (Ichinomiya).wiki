@@ -84,68 +84,11 @@ It is the "Ono Shrine" of the {{ill|Warrant of Deities of the Engi Era|ja|延喜
 
 {{wikidata link|Q131227053|ja|大野神社|check_date=2026-05-18}}
 
-== instance of (P31) ==
-
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
-* {{ill|Shikinai Shosha|lt=Shikinai Shōsha|en|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
-* {{ill|Kokuhei-sha|ltq=Q135160342|qid=Q135160342}}<ref>Kokugakuin University Shrine database</ref>
-
-
-== part of (P361) ==
-
-* {{ill|List of Shikinaisha in Owari Province|ltq=Q11465292|qid=Q11465292}}
-** Series ordinal: 43
-** P155: {{ill|Komori Katte Shrine|ltq=Q11603933|qid=Q11603933}}
-** P156: {{ill|Ishizukuri Shrine|lt=Ishizukuri Shrine|ja|石作神社 (岐南町)|qid=Q11585161}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Ichinomiya, Aichi|ltq=Q270810|qid=Q270810}}
-* {{ill|Owari Province|ltq=Q514506|qid=Q514506}}
-* {{ill|Haguri District|hu|Haguri körzet|ja|葉栗郡|ko|하구리군 (아이치현)|pl|Powiat Haguri|sr|Област Хагури|zh|葉栗郡|qid=Q1032507|lt=Haguri district}}
-
-== coordinate location (P625) ==
-
-* {{coord|35.352868|136.824961}}
-
-== image (P18) ==
-
-* Ono-jinja, Ichinomiya.jpg
-
-== dedicated to (P825) ==
-
-* {{ill|Hachiman|lt=Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|en|Hachiman|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637}}
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 181383
-** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
-
-== modern shrine ranking (P13723) ==
-
-* {{ill|Son-sha|ja|村社|qid=Q134917284|lt=Son-sha}}
-** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
-** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
-
-== country (P17) ==
-
-* {{ill|Japan|ltq=Q17|qid=Q17}}
-
-== Corporate Number (Japan) (P3225) ==
-
-* 2180005009777
-
-== street address (P6375) ==
-
-* {'text': '愛知県一宮市浅井町大野郷東1042', 'language': 'ja'}
-
 [[ja:大野神社 (一宮市)]]
 
 {{wikidata link|Q11439718}}
 
 == Japanese content ==
-[[Category:sync these pages now]]
 {{Citation needed|date=October 26, 2014 (Sun) 11:02 (UTC)~}}
 '''Ōno Shrine''' (Ōno-jinja) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Azai|Q11556970|qid=Q11556970|lt=Asai-chō}}, {{ill|Ichinomiya, Aichi|Q270810|qid=Q270810}}, {{ill|Aichi Prefecture|Q80434|qid=Q80434}}. Its former {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} status was that of a village shrine. It is located south of {{ill|Onogokurakuji Park|ja|大野極楽寺公園|qid=Q11439660}}, near the {{ill|Okakoi embankment|ja|御囲堤|qid=Q11488847}}.
 
@@ -184,3 +127,5 @@ It is listed as the “Ōno Shrine” of {{ill|Haguri District|hu|Haguri körzet
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
+
+[[Category:Git synced pages]]
