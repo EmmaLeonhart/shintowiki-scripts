@@ -55,10 +55,10 @@ image=File:Grand Shrine of Izumo Matsuyama Branch Torii.jpg
 * {{ill|Izumo-no-Kuni-no-Miyatsuko|ja|Izumo Province 造}} 
 * {{ill|Izumo-taishakyo|fa|ایزومو-تایشاکیو|ja|出雲大社教|simple|Izumo-taishakyo|qid=Q6102386|lt=Izumo-taishakyo}}
 ; Hokkaido
-* {{ill|Izumo-taisha Abashiri Church|ja|出雲大社網走教会|qid=Q140447360}}
+* {{ill|Izumo-taisha Abashiri Church|ja|出雲大社網走教会|qid=DELETED_QID}}
 * {{ill|Izumo-taisha Shintotsukawa Branch|ja|出雲大社新十津川分院|ja_comment=jawiki link invalid|qid=Q135579323}}
 * {{ill|Izumo-taisha Misanjin Church|ja|出雲大社三神教会|qid=Q140446128}}
-* {{ill|Izumo-taisha Hakodate Church|ja|出雲大社函館教会|qid=Q140447358}}
+* {{ill|Izumo-taisha Hakodate Church|ja|出雲大社函館教会|qid=DELETED_QID}}
 ; Tohoku Region
 * {{ill|Izumo-taisha Hirosaki Branch|ja|出雲大社弘前分院|ja_comment=jawiki link invalid|qid=Q135579326}}
 * {{ill|Izumo-taisha Shonai Church|ja|出雲大社庄内教会|qid=Q140446129}}
@@ -88,7 +88,7 @@ image=File:Grand Shrine of Izumo Matsuyama Branch Torii.jpg
 * {{ill|Izumo-taisha Tosa Branch Shrine|ja|出雲大社土佐分祠|ja_comment=jawiki link invalid|qid=Q135579336}}
 * {{ill|Izumo-taisha Takamatsu Branch Shrine|ja|出雲大社高松分祠|qid=Q135579337}}
 * {{ill|Izumo-taisha Sanuki Branch|ja|出雲大社讃岐分院|ja_comment=jawiki link invalid|qid=Q135579338}}
-* {{ill|Izumo-taisha Doi Church|ja|出雲大社土居教会|qid=Q140447359}} - Located in {{ill|Doi Town, Shikoku-Chuo City, Ehime Prefecture|ja|愛媛県四国中央市土居町土居}}.
+* {{ill|Izumo-taisha Doi Church|ja|出雲大社土居教会|qid=DELETED_QID}} - Located in {{ill|Doi Town, Shikoku-Chuo City, Ehime Prefecture|ja|愛媛県四国中央市土居町土居}}.
 ; Kyushu and Okinawa Region
 * {{ill|Izumo-taisha Fukuoka Branch|ja|出雲大社福岡分院|comment=changed title based on wikidata|qid=Q28693460}}
 * {{ill|Izumo-taisha Karatsu Church|ja|出雲大社唐津教会|qid=Q140446131}} - Located in {{ill|Sashi, Karatsu City, Saga Prefecture|ja|佐賀県唐津市佐志}}.

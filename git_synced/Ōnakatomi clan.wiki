@@ -101,9 +101,9 @@ By the late Heian period, the [[Shirakawa clan]] succeeded the Ōnakatomi as her
 {{familytree |border=0| |||||||||||||||||||!||||||!|||!|||!}}
 {{familytree |border=0|||||||||||||||||||01||||02|03|04|01={{ill|Ōnakatomi no Oyashige|ja|大中臣親定|lt=Oyashige|lt_ja=親定|ja_comment=jawiki link invalid|qid=Q135524727}}|02={{ill|Ōnakatomi no Senbou|ja|大中臣宣房|lt=Senbou|lt_ja=宣房|ja_comment=jawiki link invalid|qid=Q135524728}}|03={{ill|Sadanaga|ja|大中臣定長|lt=Sadanaga|lt_ja=定長|comment=changed title based on wikidata|qid=Q11431851}}|04={{ill|Kayōmon'in no Echizen|es|Kayō Mon In no Echizen|fr|Kayō Mon In no Echizen|it|Kayōmon'in no Echizen|ja|嘉陽門院越前|pl|Kayōmon-in no Echizen|qid=Q3194422|lt=Kayomon-in Echizen}}}}
 {{familytree |border=0| |||||||||||||||||||!||||||!}}
-{{familytree |border=0|||||||||||||||||||01||||02|01={{ill|Oyanaka|ja|大中臣親仲|qid=Q17213336|lt=Oyanaka}}|02={{ill|Nakabusa|ja|大中臣仲房|qid=Q140447364|lt=Nakabusa}}}}
+{{familytree |border=0|||||||||||||||||||01||||02|01={{ill|Oyanaka|ja|大中臣親仲|qid=Q17213336|lt=Oyanaka}}|02={{ill|Nakabusa|ja|大中臣仲房|qid=DELETED_QID|lt=Nakabusa}}}}
 {{familytree |border=0| |||||||||||||||||||)|-|-|.|||!|}}
-{{familytree |border=0|||||||||||||||||||01|02|03|01={{ill|Ōnakatomi no Chikaaki|ja|大中臣親章|qid=Q17213302|lt=Oyashou}}|02={{ill|Oyataka|ja|大中臣親隆|qid=Q17213318|lt=Oyataka}}|03={{ill|Tamenaka|ja|大中臣為仲|qid=Q140447365|lt=Tamenaka}}}}
+{{familytree |border=0|||||||||||||||||||01|02|03|01={{ill|Ōnakatomi no Chikaaki|ja|大中臣親章|qid=Q17213302|lt=Oyashou}}|02={{ill|Oyataka|ja|大中臣親隆|qid=Q17213318|lt=Oyataka}}|03={{ill|Tamenaka|ja|大中臣為仲|qid=DELETED_QID|lt=Tamenaka}}}}
 {{familytree |border=0| ||||||||||||||||||||||!|||!|}}
 {{familytree |border=0||||||||||||||||||||||||01|02|01={{ill|Ōnakatomi no Yoshitaka|ja|大中臣能隆|qid=Q17210621|lt=Noryuu}}<br/>〔{{ill|Fujinami clan|ja|藤波家 (大中臣氏)|ko|후지나미가 (오나카토미씨)|qid=Q11624591|lt=Fujinami-ke}}〕|02={{ill|Tametada|ja|大中臣為定|qid=Q11431856|lt=Tametada}}}}
 {{familytree/end}}
