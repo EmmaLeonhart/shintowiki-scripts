@@ -9,6 +9,7 @@ Environment variables:
     BOT_TOKEN   - Wikidata bot-password token
 """
 
+import datetime
 import io
 import json
 import os
@@ -27,7 +28,18 @@ UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scr
 # PRIMARY (only) Wikidata editor, not a fallback. 300/day drains the ~25k
 # pending lines in ~3 months instead of years; delays stay well inside bot
 # norms. Still gated to once per day by cleanup-loop.yml.
-MAX_EDITS = 300
+#
+# CAP is a runtime date-gate, NOT a commit-then-revert (Emma 2026-07-06: reverting
+# a config value is how things break — express the exception as a rule instead).
+# On the catch-up days below the cap is raised; every other day it is 300. At
+# ~30-90s/edit the 6h job timeout admits ~360 edits, so 500 is a real bump.
+_DEFAULT_MAX_EDITS = 300
+_CAP_EXCEPTIONS = {
+    datetime.date(2026, 7, 6): 500,
+    datetime.date(2026, 7, 7): 500,
+}
+MAX_EDITS = _CAP_EXCEPTIONS.get(datetime.datetime.now(datetime.timezone.utc).date(),
+                                _DEFAULT_MAX_EDITS)
 MIN_DELAY = 30
 MAX_DELAY = 90
 
