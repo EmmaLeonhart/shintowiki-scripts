@@ -98,7 +98,14 @@ def md_reading(ch: str) -> "str | None":
             return None
         txt = pg["revisions"][0]["slots"]["main"]["content"]
         m = re.findall(r"\|\s*md\s*=\s*([^|}\n]+)", txt)
-        return m[0].split("/")[0].strip() if m else None
+        if not m:
+            return None
+        # Keep only the first clean syllable: md= may carry slash-variants
+        # (hâ/â), comma lists, or parenthetical annotations, none of which belong
+        # in a single-character reading (they leak stray tokens + double-spaces
+        # into cdo labels — the 2026-07-06 whitespace-test regression).
+        syllable = re.split(r"[\s(),;~/]", m[0].strip())[0].strip()
+        return syllable or None
     except Exception:
         return None
 

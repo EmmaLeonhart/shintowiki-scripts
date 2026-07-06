@@ -41,6 +41,23 @@ def test_cdoify_empty_is_none():
     assert z.cdoify(None) is None
 
 
+def test_cdoify_gates_non_cjk_label():
+    # A disambiguated label (parens/space) has no clean char-by-char Bàng-uâ-cê
+    # form — it must be WITHHELD, not romanized into stray tokens + double-spaces.
+    # (Regression: 2026-07-06 the passthrough branch leaked "sìng siâ ( … )" and
+    # tripped the forbidden-whitespace test on cdo.txt.)
+    assert z.cdoify("神社（京都府）") is None
+    assert z.cdoify("神社 (Kyoto)") is None
+    assert z.cdoify("ABC神社") is None
+
+
+def test_cdoify_first_syllable_only():
+    # A stored reading with a slash-variant must collapse to the first syllable,
+    # never leaking the "/" or a second reading into the label.
+    assert "/" not in (z.cdoify("下") or "")
+    assert " " not in (z.cdoify("下") or "x")  # single char → single syllable
+
+
 def test_cdoify_shinjitai_fallback():
     # 恵 (shinjitai) isn't a table key, but its Chinese-traditional form 惠 is;
     # cdoify must resolve it via the shinjitai map rather than gating the label.

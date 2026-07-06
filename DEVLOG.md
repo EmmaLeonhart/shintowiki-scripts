@@ -46,6 +46,17 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — cdo regression fix: gate non-CJK labels + first-syllable readings
+
+CI regenerated + committed `cdo.txt` and the forbidden-whitespace test went red (788 labels): the
+`cdoify` non-CJK passthrough branch romanized disambiguated labels like `神社（京都府）` into stray
+tokens + double-spaces (`sìng siâ   ( … )`). Fix: `cdoify` now GATES any label that isn't purely
+CJK (a disambiguated label has no clean char-by-char Bàng-uâ-cê form → withhold), and collapses each
+stored reading to its first clean syllable (slash-variants/annotations stripped). Cleaned the 10
+slash-variant table values, fixed `fetch_cdo_readings.py` extraction to store clean syllables, and
+regenerated `cdo.txt` from the committed zh-hant labels (34,352 emitted, 19,075 gated). +2 regression
+tests. Suite green.
+
 ## 2026-07-06 — Category translation: 郡-district investigation → no convention (queue #3)
 
 Investigated whether bare `<place>郡` district residual categories can be machine-resolved. Result:

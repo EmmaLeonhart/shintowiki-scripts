@@ -102,9 +102,11 @@ _CDO_SHINJITAI = {"恵": "惠", "曽": "曾", "気": "氣"}
 
 def cdoify(hanzi):
     """Min Dong (Bàng-uâ-cê) romanization of a (traditional) hanzi string: each
-    CJK char → its Wiktionary md= reading, space-joined. GATED — returns None if
-    ANY CJK character has no reading (never a partial label). Non-CJK characters
-    pass through unchanged (rare in these labels)."""
+    CJK char → its Wiktionary md= reading, single-space-joined. GATED twice —
+    returns None if (a) ANY CJK character has no reading, or (b) the label is not
+    PURELY CJK. A disambiguated label like ``神社（京都府）`` has no clean
+    char-by-char Bàng-uâ-cê form (the parens/space would leak into the output as
+    stray tokens and multi-spaces), so it is withheld rather than mangled."""
     if not hanzi:
         return None
     out = []
@@ -115,11 +117,18 @@ def cdoify(hanzi):
                        or CDO_READINGS.get(_s2t.convert(ch)))
             if not reading:
                 return None
-            out.append(reading)
+            # A stored reading may carry slash-variants or annotations; keep only
+            # the first clean syllable (no whitespace/punct) so no stray tokens or
+            # double-spaces leak into the label.
+            syllable = re.split(r"[\s(),;~/]", reading.strip())[0].strip()
+            if not syllable:
+                return None
+            out.append(syllable)
         else:
-            out.append(ch)
-    label = " ".join(out).strip()
-    return label or None
+            # Any non-CJK char (paren, space, latin, ・, ー, digit) → not cleanly
+            # romanizable → withhold the whole label.
+            return None
+    return " ".join(out) or None
 
 # ----------------------------
 # Kana → Chinese character mapping (man'yogana-style phonetic substitution)
