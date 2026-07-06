@@ -37,15 +37,20 @@ Once the loop runs: the **18 Japanese-named duplicate categories** tagged this s
 
 - [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
-## 3. Category-name translation — phase (c) place-name gazetteer
+## 3. Category-name translation — residual tail
 
-THE real category backlog: `[[Category:Japanese language category names]]` (~1189 subcats).
-Phases a+b shipped (dated-maintenance transform + Wikidata-anchored resolver). Remaining:
+`[[Category:Japanese language category names]]` (~1186 subcats). Resolved so far: dated-maintenance
+transform, phase-1 Wikidata-category-anchored (which already covers ~all `の神社` shrine cats — they
+carry category QIDs → authoritative enwiki category sitelink), and phase-4 place gazetteer
+(`の建築物`/`の歴史`/`の神社`/`の寺院`, jawiki→enwiki place + P31 gate). ~425 residual remain in
+`docs/category_translation_residual.md`. Remaining productive patterns need EITHER a verified enwiki
+category convention (only then a suffix is added) OR human translation — never machine-guessed:
 
-- [ ] **Phase (c):** a JP→EN place-name gazetteer for the residual content cats with no
-  Wikidata-category anchor — the productive patterns `<place>の神社` → `Shinto shrines in <place>`,
-  `<place>市`/`<place>県`. Bootstrap the gazetteer from Wikidata place labels (authoritative, not
-  guessing). Residual list auto-maintained at `docs/category_translation_residual.md`.
+- [ ] Work the residual tail: `の重要文化財` (Important Cultural Properties), `の旧県社`
+  (shrine-rank-by-place), `<place>郡` bare districts, and `<sect>の寺院` sect-temples (P31 gate
+  correctly sends these to residual — they're temples OF a Buddhist school, not IN a place; needs a
+  separate sect→English-name path if wanted). Add a suffix only when the enwiki convention is
+  verified; otherwise leave for human translation. Low urgency — phases 1/4 already drain the bulk.
 
 ## 4. Un-sync the 144 resolved deleted-QID-ill pages
 

@@ -28,8 +28,10 @@ Resolution, in priority order (the plan's canonical-name choice rule):
 3. **Hand-maintained template-prefix lookup** for the few pure-template cats with
    no QID.
 4. **Place-name gazetteer (authoritative, not guessing).** For the productive
-   ``<place>の歴史`` / ``<place>の建築物`` content cats that carry no category-level
-   QID, the *topic* half is a fixed English category-naming convention while the
+   ``<place>の神社`` / ``<place>の寺院`` / ``<place>の歴史`` / ``<place>の建築物``
+   content cats that carry no category-level QID, the *topic* half is a fixed,
+   VERIFIED English category-naming convention (``Shinto shrines in`` / ``Buddhist
+   temples in`` / ``History of`` / ``Buildings and structures in``) while the
    *place* half is resolved AUTHORITATIVELY: the place stem is looked up as a
    jawiki ARTICLE title on Wikidata and its enwiki sitelink (the canonical English
    place name) is used — no transliteration/guessing. A P31 gate requires the
@@ -38,9 +40,10 @@ Resolution, in priority order (the plan's canonical-name choice rule):
    (e.g. prefecture-prefixed ``埼玉県美里町`` whose article is ``美里町 (埼玉県)``)
    also fall to residual — never machine-guessed.
 
-Other place-name patterns (``の神社`` when no category QID, ``の重要文化財``,
+Other place-name patterns (``の重要文化財`` important-cultural-property,
 ``の旧県社`` shrine-rank-by-place, ``の画像提供依頼`` maintenance, bare ``<place>郡``
-districts, …) are still left to the residual report for later phases.
+districts, …) are still left to the residual report for later phases — only
+topics whose enwiki category convention is verified get a suffix here.
 
 This script makes NO wiki edits. It reads the wiki (category enumeration +
 category-page wikitext) and Wikidata (labels/sitelinks), then APPENDS new rows to
@@ -124,8 +127,16 @@ _TEMPLATE_LOOKUP: dict[str, str] = {}
 # Japanese-administrative-division item with an enwiki article → residual.
 #
 # Ordered longest-suffix-first so e.g. a longer suffix wins over a prefix of it.
+# Each topic half is a VERIFIED enwiki category-naming convention (not a guess):
+# enwiki has "Category:Shinto shrines in Tokyo", "Category:Buddhist temples in
+# Kyoto Prefecture", "Category:Buildings and structures in <place>", "Category:
+# History of <place>". The leading の is load-bearing: it distinguishes
+# "<place>の神社" (shrines IN a place) from "<name>神社" (one specific shrine,
+# which must NOT match — see test_parse_place_non_pattern_is_none).
 _PLACE_SUFFIXES: list[tuple[str, str]] = [
     ("の建築物", "Buildings and structures in {}"),
+    ("の神社", "Shinto shrines in {}"),
+    ("の寺院", "Buddhist temples in {}"),
     ("の歴史", "History of {}"),
 ]
 

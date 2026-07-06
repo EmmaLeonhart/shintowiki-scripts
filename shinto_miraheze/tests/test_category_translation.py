@@ -49,6 +49,31 @@ def test_parse_place_buildings():
             == ("三宅村", "Buildings and structures in {}"))
 
 
+def test_parse_place_shrines():
+    # <place>の神社 → "Shinto shrines in <place>" (the productive shrine pattern).
+    assert (g.parse_place_pattern("さいたま市の神社")
+            == ("さいたま市", "Shinto shrines in {}"))
+
+
+def test_parse_place_temples():
+    assert (g.parse_place_pattern("京都市の寺院")
+            == ("京都市", "Buddhist temples in {}"))
+
+
+def test_parse_place_specific_shrine_not_matched():
+    # A specific shrine named "<name>神社" has NO の before 神社, so it must NOT be
+    # read as "shrines in <name>". This is the whole reason the の is in the suffix.
+    assert g.parse_place_pattern("氷川神社") is None
+    assert g.parse_place_pattern("三吉神社") is None
+
+
+def test_shrines_category_gated_and_formatted():
+    assert (g.place_category("Shinto shrines in {}", "Saitama (city)", ["Q494721"])
+            == "Category:Shinto shrines in Saitama (city)")
+    assert (g.place_category("Buddhist temples in {}", "Kyoto", ["Q494721"])
+            == "Category:Buddhist temples in Kyoto")
+
+
 def test_parse_place_empty_stem_is_none():
     # A bare suffix with no place stem must not match.
     assert g.parse_place_pattern("の歴史") is None

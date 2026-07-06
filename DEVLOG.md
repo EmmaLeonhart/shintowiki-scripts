@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Category translation: phase-4 の神社/の寺院 fallback suffixes (queue #3)
+
+Extended `generate_category_translation_moves.py`'s place gazetteer with two verified enwiki
+conventions: `<place>の神社` → `Shinto shrines in <place>`, `<place>の寺院` → `Buddhist temples in
+<place>` (reusing the authoritative jawiki-article→enwiki-sitelink resolution + P31 place gate). +4
+tests. Investigation finding: shrine categories are **already** predominantly resolved by phase 1
+— they carry category-level `{{wikidata link|Q…}}` whose enwiki *category* sitelink is
+authoritative (e.g. `姫路市の神社`→Q28695280→`Category:Shinto shrines in Himeji City`; the "City"
+is Wikidata's recorded enwiki category name, now stale/deleted on enwiki but still the authoritative
+record). So the new suffixes add 0 net rows today; the only non-QID `の寺院` cats in the backlog are
+Buddhist *sects* (`法華宗本門流の寺院`), which the P31 gate correctly rejects to residual (temples OF
+a school ≠ temples IN a place). Kept as a correct, safe fallback for future non-QID place cats.
+
+---
+
 ## 2026-07-06 — cleanup-loop reliability: orchestrator wall-clock self-stop (queue #1)
 
 **Diagnosis of "what changed with the categories."** The cleanup-loop has been 5–11h/fire and
