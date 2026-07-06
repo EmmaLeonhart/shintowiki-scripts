@@ -6,6 +6,25 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
+## ⭐ FRONT OF QUEUE — do these first, in order (Emma 2026-07-06)
+
+1. [ ] **READ THE HANDOFF DOCUMENT** `docs/deleted_items_recreation_handoff_2026-07-06.md`
+   before touching the deleted-item work. It captures the full recreation pipeline built on
+   branch `claude/work-queue-processing-ps5j2l` (not merged to main). A session started on `main`
+   prematurely; this handoff is the bridge so it doesn't duplicate or clobber the branch work.
+
+2. [ ] **MAIN PRIORITY — classify the remaining 79 unclassified recreation candidates (P31).**
+   `enrich_p31.py` now types 134/213 from the entity name; **79 are left null for human review**
+   (Izumo-taisha 教会 churches, 霊場 sacred-site lists, geographic 海/湯, rank/系 systems, person
+   names without clan markers). Push the count down further ONLY where a name signal is
+   definitional — add rules like the shrine/temple/kofun ones, verifying every new type QID live
+   on Wikidata. NEVER guess (a host-page-category pass already mislabeled a kami as a dab page —
+   see the handoff §5). Leave the genuinely-ambiguous for Emma. Then continue "a bit more data"
+   enrichment (P17=Japan for shrines/festivals/temples, P131 place) per the handoff §6. Recreation
+   itself stays human-gated (Emma go/no-go + min-claim-set — see Blockers at queue end).
+
+---
+
 ## Multilingual label generalization (BFS-driven)
 
 Goal: name every important Shinto entity in all ~60 covered languages. All the

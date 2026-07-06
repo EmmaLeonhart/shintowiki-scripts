@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Handoff doc for the deleted-item recreation pipeline + queue front reorder
+
+Emma: write a clear handoff and put it at the FRONT of the queue, because a session started on
+`main` prematurely while this branch (`claude/work-queue-processing-ps5j2l`) did extensive
+deleted-item recreation work. Wrote `docs/deleted_items_recreation_handoff_2026-07-06.md` — the
+full pipeline (source → rag_deleted_logs → crossref → build_item_json → enrich_multilang →
+enrich_p31), the per-QID data model, current numbers (213 candidates, 203 QID-validated, median
+59 langs, 134 P31-typed, 79 for review), the load-bearing decisions/gotchas (never guess P31;
+host-page categories are the wrong signal; verify type QIDs live; self-deleted 122 are moot;
+recreation is human-gated), what's left, and branch/merge status. Reordered queue.md: a new
+"⭐ FRONT OF QUEUE" section with item 1 = read the handoff, item 2 = classify the remaining 79
+unclassified P31s (definitional signals only, never guess) + continue "more data" enrichment.
+
 ## 2026-07-06 — Recreation candidates: P31 (instance of) from the entity name
 
 Second half of Emma's "P31 or subclass of" ask, done the sound way after reverting the
