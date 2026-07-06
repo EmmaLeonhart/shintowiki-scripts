@@ -1,0 +1,59 @@
+name: Strip Property Dumps
+
+# Emma tags Wikidata-generated shikinaisha pages into
+# [[Category:sync these pages now]]; this pulls them into git_synced/, strips the
+# raw Wikidata property-dump sections (== <property> (Pxxx) ==), retags them as
+# git-synced pages, and commits. The existing repo-wins sync_git_synced_pages
+# (git-synced-sync workflow) then pushes the cleaned pages to the wiki. Runs every
+# 2 hours + on manual dispatch so Emma's tagging drains without a manual re-run.
+
+on:
+  schedule:
+    - cron: "37 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: strip-property-dumps
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  strip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Strip property dumps into git_synced/
+        run: python3 shinto_miraheze/git_sync_strip_property_dumps.py --apply
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add git_synced/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No stripped pages to commit."
+            exit 0
+          fi
+          git commit -m "chore(strip): property-dump strip of newly-tagged shikinaisha pages [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push; then echo "pushed on attempt $attempt"; exit 0; fi
+            echo "push rejected (attempt $attempt); rebasing"
+            git pull --rebase || git rebase --abort || true
+          done
+          echo "WARNING: push failed after retries; next run retries."
