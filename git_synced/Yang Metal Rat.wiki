@@ -63,13 +63,13 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2020|en|2020|qid=Q25337|lt=2020 AD}}
 * {{ill|2080 AD|ja|2080年|lt=2080 AD}}
-* {{ill|22nd century|ja|2140年|12=simple|13=User:Immanuelle/2140|comment=changed title based on wikidata|lt=2140 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2200年|12=simple|13=User:Immanuelle/2200|comment=changed title based on wikidata|lt=2200 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2260年|12=simple|13=User:Immanuelle/2260|comment=changed title based on wikidata|lt=2260 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2320年|12=simple|13=User:Immanuelle/2320|comment=changed title based on wikidata|lt=2320 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
-* {{ill|24th century|ja|2380年|12=simple|13=User:Immanuelle/2380|comment=changed title based on wikidata|lt=2380 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2140年|comment=changed title based on wikidata|lt=2140 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2200年|comment=changed title based on wikidata|lt=2200 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2260年|comment=changed title based on wikidata|lt=2260 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2320年|comment=changed title based on wikidata|lt=2320 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|24th century|ja|2380年|comment=changed title based on wikidata|lt=2380 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2440 AD|ja|2440年|lt=2440 AD}}
-* {{ill|25th century|ja|2500年|12=simple|13=User:Immanuelle/2500|comment=changed title based on wikidata|lt=2500 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
+* {{ill|25th century|ja|2500年|comment=changed title based on wikidata|lt=2500 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
 * {{ill|2560 AD|ja|2560年|lt=2560 AD}}
 * {{ill|2620 AD|ja|2620年|lt=2620 AD}}
 * {{ill|2680 AD|ja|2680年|lt=2680 AD}}
@@ -85,10 +85,10 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final
 
 ==Days of Yang Metal Rat==
 === Selected Day (選日) ===
-The day of {{ill|Yang Metal Rat|ja|庚子}} is the 8th day of {{ill|Tenitsu-shin|ja|天一天上|12=simple|13=User:Immanuelle/Ten Ten Ichijō|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
+The day of {{ill|Yang Metal Rat|ja|庚子}} is the 8th day of {{ill|Tenitsu-shin|ja|天一天上|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 
 ==See Also==
-* {{ill|Gengzi|ja|庚子 (西涼)|lt=Metal Rat (Xiliang)|lt_ja=庚子 (西涼)|12=simple|13=User:Immanuelle/Metal Rat (Xiliang)|comment=changed title based on wikidata|qid=Q5371236}} – The era name of the dynasty of {{ill|China (region)|ja|中国|2=ja|3=中国|lt=China|12=simple|13=User:Immanuelle/China|comment=changed title based on wikidata|qid=Q29520}}, during the {{ill|Sixteen Kingdoms|en|Sixteen Kingdoms|qid=Q683551|lt=Five Hu Sixteen Kingdoms period}}, of the kingdom {{ill|Western Liang (Sixteen Kingdoms)|en|Western Liang (Sixteen Kingdoms)|qid=Q994451|lt=Xiliang}}, covering 400–404 AD.
+* {{ill|Gengzi|ja|庚子 (西涼)|lt=Metal Rat (Xiliang)|lt_ja=庚子 (西涼)|comment=changed title based on wikidata|qid=Q5371236}} – The era name of the dynasty of {{ill|China (region)|ja|中国|2=ja|3=中国|lt=China|comment=changed title based on wikidata|qid=Q29520}}, during the {{ill|Sixteen Kingdoms|en|Sixteen Kingdoms|qid=Q683551|lt=Five Hu Sixteen Kingdoms period}}, of the kingdom {{ill|Western Liang (Sixteen Kingdoms)|en|Western Liang (Sixteen Kingdoms)|qid=Q994451|lt=Xiliang}}, covering 400–404 AD.
 *{{prefix}}
 *{{intitle}}
 

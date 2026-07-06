@@ -22,7 +22,7 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 That is, if a Western calendar year N (N>0) is a year of Renchin, then
 
 <math> N - \lfloor{N/60}\rfloor * 60 = 32 </math>
-Here, the symbol <math> \lfloor x \rfloor</math> denotes the {{ill|Floor and ceiling functions|ja|床関数|12=simple|13=User:Immanuelle/Floor function|ja_comment=fixed jawiki redirect|3=床関数と天井関数|comment=changed title based on wikidata|qid=Q215193}}.
+Here, the symbol <math> \lfloor x \rfloor</math> denotes the {{ill|Floor and ceiling functions|ja|床関数|ja_comment=fixed jawiki redirect|3=床関数と天井関数|comment=changed title based on wikidata|qid=Q215193}}.
 
 {| class="wikitable"
 |+'''Yang Water Dragon (壬辰)'s years table'''
@@ -67,10 +67,10 @@ Here, the symbol <math> \lfloor x \rfloor</math> denotes the {{ill|Floor and cei
 |
 * {{ill|2012|en|2012|qid=Q1990|lt=2012 AD}}
 * {{ill|2072 AD|ja|2072年|lt=2072 AD}}
-* {{ill|22nd century|ja|2132年|12=simple|13=User:Immanuelle/2132|comment=changed title based on wikidata|lt=2132 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2192年|12=simple|13=User:Immanuelle/2192|comment=changed title based on wikidata|lt=2192 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2252年|12=simple|13=User:Immanuelle/2252|comment=changed title based on wikidata|lt=2252 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2312年|12=simple|13=User:Immanuelle/2312|comment=changed title based on wikidata|lt=2312 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2132年|comment=changed title based on wikidata|lt=2132 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2192年|comment=changed title based on wikidata|lt=2192 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2252年|comment=changed title based on wikidata|lt=2252 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2312年|comment=changed title based on wikidata|lt=2312 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2372 AD|ja|2372年|lt=2372 AD}}
 * {{ill|2432 AD|ja|2432年|lt=2432 AD}}
 * {{ill|2492 AD|ja|2492年|lt=2492 AD}}
@@ -85,7 +85,7 @@ Here, the symbol <math> \lfloor x \rfloor</math> denotes the {{ill|Floor and cei
 |}
 
 ===Events===
-* In {{ill|Bunroku|en|Bunroku|qid=Q1373039|lt=Bunroku}} 1 (1592 AD), the campaign known as {{ill|Imjin War|ja|文禄・慶長の役#文禄の役|lt=Bunroku Campaign|lt_ja=文禄の役|12=simple|13=User:Immanuelle/Bunroku Campaign|comment=changed title based on wikidata|qid=Q576338}} took place, which is known in Korea as the {{ill|Imjin War|ja|壬辰倭乱|12=simple|13=User:Immanuelle/Imjin War|ja_comment=fixed jawiki redirect|3=文禄・慶長の役|comment=changed title based on wikidata|qid=Q576338}}.
+* In {{ill|Bunroku|en|Bunroku|qid=Q1373039|lt=Bunroku}} 1 (1592 AD), the campaign known as {{ill|Imjin War|ja|文禄・慶長の役#文禄の役|lt=Bunroku Campaign|lt_ja=文禄の役|comment=changed title based on wikidata|qid=Q576338}} took place, which is known in Korea as the {{ill|Imjin War|ja|壬辰倭乱|ja_comment=fixed jawiki redirect|3=文禄・慶長の役|comment=changed title based on wikidata|qid=Q576338}}.
 
 ==Months of Yang Water Dragon==
 In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 1 or 6 (when the {{ill|Heavenly Stems|af|Hemelstam|ca|Troncs celestes|cdo|Tiĕng-găng|de|Himmelsstämme|es|Troncos celestiales|fa|شاخه‌های آسمانی|fi|Taivaalliset rungot|fr|Tige céleste|gan|天干|hak|Thiên-kôn|id|Batang Langit|it|Tronco celeste|ja|十干|ko|천간|mk|Небесни стебла|ms|Tiangan|nl|Hemelse Stammen|pl|Niebiańskie pnie|ru|Небесные стволы|tr|Göksel Gövdeler|uk|Небесні стовбури|za|Diengan|zh|天干|zh_min_nan|Thian-kan|zh_yue|天干|qid=Q1190985|lt=Heavenly Stems}} are {{ill|Kanoto (辛)|ja|辛|lt=Kanoto (辛)}} and {{ill|Hinoe (丙)|ja|丙|lt=Hinoe (丙)}}), the month of {{ill|March|en|March|qid=Q110|lt=March}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=Month}} of {{ill|Yang Water Dragon|ja|壬辰}}. However, here the term "month" may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦}} or to the {{ill|Solar term|af|Sontermyn|ar|فصل شمسي|ast|Términos solares|cdo|Cáik-ké|cs|24 ťie-čchi|eo|Suna Periodo|es|Términos solares|fr|Période solaire|hak|Chiet-hì|he|תקופות חמה (לוח השנה הסיני)|id|Posisi matahari|ja|二十四節気|ko|절기|ms|Jieqi|ro|Termen solar|th|ภาวะ (ปฏิทินจีน)|tr|Güneş dönemi|vi|Tiết khí|wuu|節氣|za|Cietheiq|zh|节气|zh_classical|節氣|zh_min_nan|Cheh-khùi|zh_yue|節氣|qid=Q1190993|lt=Solar term}} (from {{ill|Qingming (solar term)|en|Qingming (solar term)|qid=Q1680269|lt=Qingming}} until the day before {{ill|Lixia|af|Lixia|cdo|Lĭk-hâ|hak|Li̍p-ha|id|Lixia|ja|立夏|ko|입하|sv|Lixia|vi|Lập hạ|wuu|立夏|za|Laebhah|zh|立夏|zh_classical|立夏|zh_min_nan|Li̍p-hā|zh_yue|立夏|qid=Q1191007|lt=Lixia}}) as applicable.
@@ -93,7 +93,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final
 ==Days of Yang Water Dragon==
 The {{ill|Senjitsu|ja|選日}} for {{ill|Yang Water Dragon|ja|壬辰}} is as follows.
 ==={{nihongo|selection days|選日|senjitsu}}===
-The day of {{ill|Yang Water Dragon|ja|壬辰}} is the 9th day of {{ill|Ten directions|ja|十方暮|12=simple|13=User:Immanuelle/Shihoumoku|comment=changed title based on wikidata|qid=Q11405067}}.
+The day of {{ill|Yang Water Dragon|ja|壬辰}} is the 9th day of {{ill|Ten directions|ja|十方暮|comment=changed title based on wikidata|qid=Q11405067}}.
 
 ==See Also==
 *{{prefix}}

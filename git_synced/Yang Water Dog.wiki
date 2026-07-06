@@ -61,10 +61,10 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 * {{ill|1982|en|1982|qid=Q2436|lt=1982 AD}}
 |
 * {{ill|2042 AD|ja|2042年|lt=2042 AD}}
-* {{ill|2100s|ja|2102年|12=simple|13=User:Immanuelle/2102|comment=changed title based on wikidata|lt=2102 AD|ja_comment=fixed jawiki redirect|3=2100年代|qid=Q1209304}}
-* {{ill|22nd century|ja|2162年|12=simple|13=User:Immanuelle/2162|comment=changed title based on wikidata|lt=2162 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2222年|12=simple|13=User:Immanuelle/2222|comment=changed title based on wikidata|lt=2222 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|23rd century|ja|2282年|12=simple|13=User:Immanuelle/2282|comment=changed title based on wikidata|lt=2282 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|2100s|ja|2102年|comment=changed title based on wikidata|lt=2102 AD|ja_comment=fixed jawiki redirect|3=2100年代|qid=Q1209304}}
+* {{ill|22nd century|ja|2162年|comment=changed title based on wikidata|lt=2162 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2222年|comment=changed title based on wikidata|lt=2222 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2282年|comment=changed title based on wikidata|lt=2282 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
 * {{ill|2342 AD|ja|2342年|lt=2342 AD}}
 * {{ill|2402 AD|ja|2402年|lt=2402 AD}}
 * {{ill|2462 AD|ja|2462年|lt=2462 AD}}

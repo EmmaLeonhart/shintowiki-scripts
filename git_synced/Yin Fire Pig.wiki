@@ -61,11 +61,11 @@ A {{ill|Common Era|ar|الحقبة العامة|ary|إيرا عامة|as|সা�
 |
 * {{ill|2007|en|2007|qid=Q2024|lt=2007 AD}}
 * {{ill|2067 AD|ja|2067年|lt=2067 AD}}
-* {{ill|22nd century|ja|2127年|12=simple|13=User:Immanuelle/2127|comment=changed title based on wikidata|lt=2127 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2187年|12=simple|13=User:Immanuelle/2187|comment=changed title based on wikidata|lt=2187 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2247年|12=simple|13=User:Immanuelle/2247|comment=changed title based on wikidata|lt=2247 AD|ja_comment=jawiki redirects to 23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2307年|12=simple|13=User:Immanuelle/2307|comment=changed title based on wikidata|lt=2307 AD|ja_comment=jawiki redirects to 24世紀|qid=Q49838}}
-* {{ill|24th century|ja|2367年|12=simple|13=User:Immanuelle/2367|comment=changed title based on wikidata|lt=2367 AD|ja_comment=jawiki redirects to 24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2127年|comment=changed title based on wikidata|lt=2127 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2187年|comment=changed title based on wikidata|lt=2187 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2247年|comment=changed title based on wikidata|lt=2247 AD|ja_comment=jawiki redirects to 23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2307年|comment=changed title based on wikidata|lt=2307 AD|ja_comment=jawiki redirects to 24世紀|qid=Q49838}}
+* {{ill|24th century|ja|2367年|comment=changed title based on wikidata|lt=2367 AD|ja_comment=jawiki redirects to 24世紀|qid=Q49838}}
 * {{ill|2427 AD|ja|2427年|lt=2427 AD}}
 * {{ill|2487 AD|ja|2487年|lt=2487 AD}}
 * {{ill|2547 AD|ja|2547年|lt=2547 AD}}
@@ -80,7 +80,7 @@ A {{ill|Common Era|ar|الحقبة العامة|ary|إيرا عامة|as|সা�
 
 === Events ===
 * In {{ill|Empress Jitō|en|Empress Jitō|qid=Q232026|lt=Jitō Tennō}}'s 1st year (687 AD), from the Asukaike Kōbō Ruins, {{ill|Fuhonsen|en|Fuhonsen|qid=Q11456988|lt=Tomihon-sen}} were detected and wooden tablets inscribed with "丁亥年" were unearthed from the same soil layer, leading to the estimation that the Tomihon-sen were cast during this period.
-* In {{ill|Ōei|en|Ōei|qid=Q1193078|lt=Ōei}} 14 (January 1408 AD), the {{ill|1408 Ōei earthquake|ja|応永地震|12=simple|13=User:Immanuelle/Ōei Earthquake|comment=changed title based on wikidata|qid=Q105715627}} occurred; it may have been confused with the Hōei Earthquake, which falls within the same Sexagenary cycle.
+* In {{ill|Ōei|en|Ōei|qid=Q1193078|lt=Ōei}} 14 (January 1408 AD), the {{ill|1408 Ōei earthquake|ja|応永地震|comment=changed title based on wikidata|qid=Q105715627}} occurred; it may have been confused with the Hōei Earthquake, which falls within the same Sexagenary cycle.
 * In {{ill|Hōei|en|Hōei|qid=Q1145262|lt=Hōei}} 4 (1707 AD), the "Teigai no Hen" (Crisis of 亥) occurred, marked by the {{ill|1707 Hōei earthquake|en|1707 Hōei earthquake|qid=Q2001581|lt=Hōei Earthquake}}<ref>[https://cir.nii.ac.jp/crid/1390572174727612416 都司嘉宣(1981)] 都司嘉宣編: 高知県地震津波史料, 防災科学技術研究資料 57, i-253, 1981-03-20, 独立行政法人防災科学技術研究所</ref> and the {{ill|Hōei eruption|en|Hōei eruption|qid=Q288045|lt=Hōei Great Eruption}}.
 * From January 25 to February 6, 2008, the Teigai Snow Disaster occurred; since this period fell before the Lunisolar New Year (正月) and Spring Festival (春節), it is considered part of a Teigai year.
 
@@ -90,7 +90,7 @@ In a {{ill|Common Era|ar|الحقبة العامة|ary|إيرا عامة|as|স�
 ==Days of Yin Fire Pig==
 The {{ill|Senjitsu|ja|選日}} for {{ill|Yin Fire Pig|ja|丁亥}} is as follows.
 === 選日 ===
-The day of {{ill|Yin Fire Pig|ja|丁亥}} is the 4th day of {{ill|Ten directions|ja|十方暮|12=simple|13=User:Immanuelle/Shihoumoku|comment=changed title based on wikidata|qid=Q11405067}}.
+The day of {{ill|Yin Fire Pig|ja|丁亥}} is the 4th day of {{ill|Ten directions|ja|十方暮|comment=changed title based on wikidata|qid=Q11405067}}.
 
 ==See Also==
 *{{prefix}}

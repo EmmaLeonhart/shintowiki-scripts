@@ -62,10 +62,10 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |-
 | 
 * {{ill|2028|en|2028|qid=Q12809|lt=2028 AD}}
-* {{ill|2088 AD|ja|2088年|12=simple|13=User:Immanuelle/2088 AD|ja_comment=fixed jawiki redirect|3=2080年代|comment=enwiki is a redirect}}
-* {{ill|22nd century|ja|2148年|12=simple|13=User:Immanuelle/2148 AD|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
-* {{ill|22nd century|ja|2208年|12=simple|13=User:Immanuelle/2208 AD|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
-* {{ill|23rd century|ja|2268年|12=simple|13=User:Immanuelle/2268 AD|ja_comment=fixed jawiki redirect|3=23世紀|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|2088 AD|ja|2088年|ja_comment=fixed jawiki redirect|3=2080年代|comment=enwiki is a redirect}}
+* {{ill|22nd century|ja|2148年|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
+* {{ill|22nd century|ja|2208年|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
+* {{ill|23rd century|ja|2268年|ja_comment=fixed jawiki redirect|3=23世紀|comment=changed title based on wikidata|qid=Q49832}}
 * {{ill|2328 AD|ja|2328年}}
 * {{ill|2388 AD|ja|2388年}}
 * {{ill|2448 AD|ja|2448年}}
@@ -88,7 +88,7 @@ In years whose last digit in the Western calendar is 2 or 7 (corresponding to th
 
 ==Days of Yang Earth Monkey==
 === Date Selection ===
-The day of Wushen is the 16th day (the final day) of the {{ill|Tenitsu-shin|ja|天一天上|12=simple|13=User:Immanuelle/Tengitenjō|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
+The day of Wushen is the 16th day (the final day) of the {{ill|Tenitsu-shin|ja|天一天上|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 
 == See Also ==
 * {{prefix}}

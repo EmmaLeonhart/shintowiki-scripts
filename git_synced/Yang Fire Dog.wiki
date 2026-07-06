@@ -62,10 +62,10 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2006|en|2006|qid=Q2021|lt=2006 AD}}
 * {{ill|2066 AD|ja|2066年|lt=2066 AD}}
-* {{ill|22nd century|ja|2126年|12=simple|13=User:Immanuelle/2126|comment=changed title based on wikidata|lt=2126 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2186年|12=simple|13=User:Immanuelle/2186|comment=changed title based on wikidata|lt=2186 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2246年|12=simple|13=User:Immanuelle/2246|comment=changed title based on wikidata|lt=2246 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2306年|12=simple|13=User:Immanuelle/2306|comment=changed title based on wikidata|lt=2306 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2126年|comment=changed title based on wikidata|lt=2126 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2186年|comment=changed title based on wikidata|lt=2186 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2246年|comment=changed title based on wikidata|lt=2246 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2306年|comment=changed title based on wikidata|lt=2306 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2366 AD|ja|2366年|lt=2366 AD}}
 * {{ill|2426 AD|ja|2426年|lt=2426 AD}}
 * {{ill|2486 AD|ja|2486年|lt=2486 AD}}
@@ -85,7 +85,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose last 
 ==Days of Yang Fire Dog==
 The [[Day Selection|selection]] for a Bingu day is as follows.
 === Day Selection ===
-A Bingu day is the 3rd day of {{ill|Ten directions|ja|十方暮|12=simple|13=User:Immanuelle/Tenpōkure|comment=changed title based on wikidata|qid=Q11405067}}.
+A Bingu day is the 3rd day of {{ill|Ten directions|ja|十方暮|comment=changed title based on wikidata|qid=Q11405067}}.
 == See Also ==
 * {{prefix}}
 * {{intitle}}

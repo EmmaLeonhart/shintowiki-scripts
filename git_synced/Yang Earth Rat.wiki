@@ -61,17 +61,17 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2008|en|2008|qid=Q2004|lt=2008 AD}}
 * {{ill|2068 AD|ja|2068年}}
-* {{ill|22nd century|ja|2128年|12=simple|13=User:Immanuelle/2128 AD|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
-* {{ill|22nd century|ja|2188年|12=simple|13=User:Immanuelle/2188 AD|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
-* {{ill|23rd century|ja|2248年|12=simple|13=User:Immanuelle/2248 AD|ja_comment=fixed jawiki redirect|3=23世紀|comment=changed title based on wikidata|qid=Q49832}}
-* {{ill|24th century|ja|2308年|12=simple|13=User:Immanuelle/2308 AD|ja_comment=fixed jawiki redirect|3=24世紀|comment=changed title based on wikidata|qid=Q49838}}
-* {{ill|24th century|ja|2368年|12=simple|13=User:Immanuelle/2368 AD|ja_comment=fixed jawiki redirect|3=24世紀|comment=changed title based on wikidata|qid=Q49838}}
+* {{ill|22nd century|ja|2128年|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
+* {{ill|22nd century|ja|2188年|ja_comment=fixed jawiki redirect|3=22世紀|comment=changed title based on wikidata|qid=Q11177}}
+* {{ill|23rd century|ja|2248年|ja_comment=fixed jawiki redirect|3=23世紀|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|24th century|ja|2308年|ja_comment=fixed jawiki redirect|3=24世紀|comment=changed title based on wikidata|qid=Q49838}}
+* {{ill|24th century|ja|2368年|ja_comment=fixed jawiki redirect|3=24世紀|comment=changed title based on wikidata|qid=Q49838}}
 * {{ill|2428 AD|ja|2428年}}
 * {{ill|2488 AD|ja|2488年}}
 * {{ill|2548 AD|ja|2548年}}
 * {{ill|2608 AD|ja|2608年}}
 * {{ill|2668 AD|ja|2668年}}
-* {{ill|3rd millennium|ja|2728年|12=simple|13=User:Immanuelle/2728 AD|ja_comment=fixed jawiki redirect|3=3千年紀|comment=changed title based on wikidata|qid=Q26224}}
+* {{ill|3rd millennium|ja|2728年|ja_comment=fixed jawiki redirect|3=3千年紀|comment=changed title based on wikidata|qid=Q26224}}
 * {{ill|2788 AD|ja|2788年}}
 * {{ill|2848 AD|ja|2848年}}
 * {{ill|2908 AD|ja|2908年}}
@@ -84,7 +84,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose last 
 ==Days of Yang Earth Rat==
 The selection of auspicious days for Yang Earth Rat is as follows.
 === Selected Day ===
-The Yang Earth Rat day is the 5th day of {{ill|Ten directions|ja|十方暮|12=simple|13=User:Immanuelle/Tenpōgure|comment=changed title based on wikidata|qid=Q11405067}}.
+The Yang Earth Rat day is the 5th day of {{ill|Ten directions|ja|十方暮|comment=changed title based on wikidata|qid=Q11405067}}.
 == See Also ==
 * {{prefix}}
 * {{intitle}}

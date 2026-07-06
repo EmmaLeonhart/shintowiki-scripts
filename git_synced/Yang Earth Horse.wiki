@@ -60,10 +60,10 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 * {{ill|1978|en|1978|qid=Q2483|lt=1978 AD}}
 |
 * {{ill|2038 AD|ja|2038年|lt=2038 AD}}
-* {{ill|2090s|ja|2098年|12=simple|13=User:Immanuelle/2098|comment=changed title based on wikidata|lt=2098 AD|ja_comment=fixed jawiki redirect|3=2090年代|qid=Q845811}}
-* {{ill|22nd century|ja|2158年|12=simple|13=User:Immanuelle/2158|comment=changed title based on wikidata|lt=2158 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2218年|12=simple|13=User:Immanuelle/2218|comment=changed title based on wikidata|lt=2218 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|23rd century|ja|2278年|12=simple|13=User:Immanuelle/2278|comment=changed title based on wikidata|lt=2278 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|2090s|ja|2098年|comment=changed title based on wikidata|lt=2098 AD|ja_comment=fixed jawiki redirect|3=2090年代|qid=Q845811}}
+* {{ill|22nd century|ja|2158年|comment=changed title based on wikidata|lt=2158 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2218年|comment=changed title based on wikidata|lt=2218 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2278年|comment=changed title based on wikidata|lt=2278 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
 * {{ill|2338 AD|ja|2338年|lt=2338 AD}}
 * {{ill|2398 AD|ja|2398年|lt=2398 AD}}
 * {{ill|2458 AD|ja|2458年|lt=2458 AD}}

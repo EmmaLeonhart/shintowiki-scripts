@@ -61,10 +61,10 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2004|en|2004|qid=Q2014|lt=2004 AD}}
 * {{ill|2064 AD|ja|2064年|lt=2064 AD}}
-* {{ill|22nd century|ja|2124年|12=simple|13=User:Immanuelle/2124|comment=changed title based on wikidata|lt=2124 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2184年|12=simple|13=User:Immanuelle/2184|comment=changed title based on wikidata|lt=2184 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2244年|12=simple|13=User:Immanuelle/2244|comment=changed title based on wikidata|lt=2244 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2304年|12=simple|13=User:Immanuelle/2304|comment=changed title based on wikidata|lt=2304 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2124年|comment=changed title based on wikidata|lt=2124 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2184年|comment=changed title based on wikidata|lt=2184 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2244年|comment=changed title based on wikidata|lt=2244 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2304年|comment=changed title based on wikidata|lt=2304 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2364 AD|ja|2364年|lt=2364 AD}}
 * {{ill|2424 AD|ja|2424年|lt=2424 AD}}
 * {{ill|2484 AD|ja|2484年|lt=2484 AD}}
@@ -87,7 +87,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final
 The {{ill|Senjitsu|ja|選日}} for {{ill|Yang Wood Monkey|ja|甲申}} is as follows.
 
 === Selected Day (選日) ===
-The day of {{ill|Yang Wood Monkey|ja|甲申}} is the 7th day (last day) of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Small Earth|lt_ja=小土|12=simple|13=User:Immanuelle/Hanto|comment=changed title based on wikidata|qid=Q11571306}} and the 1st day of {{ill|Ten directions|ja|十方暮|12=simple|13=User:Immanuelle/Shihoumoku|comment=changed title based on wikidata|qid=Q11405067}}.
+The day of {{ill|Yang Wood Monkey|ja|甲申}} is the 7th day (last day) of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Small Earth|lt_ja=小土|comment=changed title based on wikidata|qid=Q11571306}} and the 1st day of {{ill|Ten directions|ja|十方暮|comment=changed title based on wikidata|qid=Q11405067}}.
 
 ==See Also==
 *{{prefix}}

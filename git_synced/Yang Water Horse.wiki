@@ -61,11 +61,11 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2002|en|2002|qid=Q1987|lt=2002 AD}}
 * {{ill|2062 AD|ja|2062年|lt=2062 AD}}
-* {{ill|22nd century|ja|2122年|12=simple|13=User:Immanuelle/2122|comment=changed title based on wikidata|lt=2122 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2182年|12=simple|13=User:Immanuelle/2182|comment=changed title based on wikidata|lt=2182 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2242年|12=simple|13=User:Immanuelle/2242|comment=changed title based on wikidata|lt=2242 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2302年|12=simple|13=User:Immanuelle/2302|comment=changed title based on wikidata|lt=2302 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
-* {{ill|24th century|ja|2362年|12=simple|13=User:Immanuelle/2362|comment=changed title based on wikidata|lt=2362 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2122年|comment=changed title based on wikidata|lt=2122 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2182年|comment=changed title based on wikidata|lt=2182 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2242年|comment=changed title based on wikidata|lt=2242 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2302年|comment=changed title based on wikidata|lt=2302 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|24th century|ja|2362年|comment=changed title based on wikidata|lt=2362 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2422 AD|ja|2422年|lt=2422 AD}}
 * {{ill|2482 AD|ja|2482年|lt=2482 AD}}
 * {{ill|2542 AD|ja|2542年|lt=2542 AD}}
@@ -79,8 +79,8 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |}
 
 === Events ===
-* In {{ill|Tenshō (Momoyama period)|en|Tenshō (Momoyama period)|qid=Q1145058|lt=Tenshō Era}} 10th Year (1582 AD) – the {{ill|Tenshō-Jingo war|ja|天正壬午の乱|12=simple|13=User:Immanuelle/Tenshō Ren-Go Rebellion|comment=changed title based on wikidata|qid=Q10939819}}.
-* In {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096|lt=Meiji era}} 15th Year (1882 AD) – the {{ill|Imo Incident|ja|壬午事変|12=simple|13=User:Immanuelle/Ren-Go Incident|ja_comment=fixed jawiki redirect|3=壬午軍乱|comment=changed title based on wikidata|qid=Q709191}} (also known as the Ren-Go Military Rebellion).
+* In {{ill|Tenshō (Momoyama period)|en|Tenshō (Momoyama period)|qid=Q1145058|lt=Tenshō Era}} 10th Year (1582 AD) – the {{ill|Tenshō-Jingo war|ja|天正壬午の乱|comment=changed title based on wikidata|qid=Q10939819}}.
+* In {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096|lt=Meiji era}} 15th Year (1882 AD) – the {{ill|Imo Incident|ja|壬午事変|ja_comment=fixed jawiki redirect|3=壬午軍乱|comment=changed title based on wikidata|qid=Q709191}} (also known as the Ren-Go Military Rebellion).
 
 ==Months of Yang Water Horse==
 In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose last digit is 0 or 5 (i.e. when the {{ill|Heavenly Stems|af|Hemelstam|ca|Troncs celestes|cdo|Tiĕng-găng|de|Himmelsstämme|es|Troncos celestiales|fa|شاخه‌های آسمانی|fi|Taivaalliset rungot|fr|Tige céleste|gan|天干|hak|Thiên-kôn|id|Batang Langit|it|Tronco celeste|ja|十干|ko|천간|mk|Небесни стебла|ms|Tiangan|nl|Hemelse Stammen|pl|Niebiańskie pnie|ru|Небесные стволы|tr|Göksel Gövdeler|uk|Небесні стовбури|za|Diengan|zh|天干|zh_min_nan|Thian-kan|zh_yue|天干|qid=Q1190985|lt=Ten Heavenly Stems}} are {{ill|Kanoe (庚)|ja|庚|lt=Kanoe (庚)}} or {{ill|Kinoto (乙)|ja|乙|lt=Kinoto (乙)}}), the month of {{ill|May|en|May|qid=Q119|lt=May}} becomes the {{ill|Month|en|Month|qid=Q5151|lt=Month (Calendar)}} of Ren-Go. However, here the term “month” may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦}} or to a seasonal month (from {{ill|Mangzhong|en|Mangzhong|qid=Q1147880|lt=Mangzhong}} until the day before {{ill|Xiaoshu|en|Xiaoshu|qid=Q1190976|lt=Xiaoshu}}) as applicable.
@@ -88,7 +88,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose last 
 ==Days of Yang Water Horse==
 The {{ill|Senjitsu|ja|選日}} for a Ren-Go day is as follows.
 === Day Selection ===
-A Ren-Go day is the 5th day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Shōdo|lt_ja=小土|12=simple|13=User:Immanuelle/Small Earth|comment=changed title based on wikidata|qid=Q11571306}}.
+A Ren-Go day is the 5th day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Shōdo|lt_ja=小土|comment=changed title based on wikidata|qid=Q11571306}}.
 == See Also ==
 * {{prefix}}
 * {{intitle}}

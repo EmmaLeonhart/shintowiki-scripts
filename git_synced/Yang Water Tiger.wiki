@@ -61,9 +61,9 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2022|en|2022|qid=Q49625|lt=2022 AD}}
 * {{ill|2082 AD|ja|2080年代}}
-* {{ill|22nd century|ja|22世紀|12=simple|13=User:Immanuelle/2142 AD|ja_comment=fixed jawiki redirect|comment=changed title based on wikidata|qid=Q11177}}
-* {{ill|23rd century|ja|23世紀|12=simple|13=User:Immanuelle/2202 AD|ja_comment=fixed jawiki redirect|comment=changed title based on wikidata|qid=Q49832}}
-* {{ill|23rd century|ja|23世紀|12=simple|13=User:Immanuelle/2262 AD|ja_comment=fixed jawiki redirect|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|22nd century|ja|22世紀|ja_comment=fixed jawiki redirect|comment=changed title based on wikidata|qid=Q11177}}
+* {{ill|23rd century|ja|23世紀|ja_comment=fixed jawiki redirect|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|23rd century|ja|23世紀|ja_comment=fixed jawiki redirect|comment=changed title based on wikidata|qid=Q49832}}
 * {{ill|2322 AD|ja|2322年}}
 * {{ill|2382 AD|ja|2382年}}
 * {{ill|2442 AD|ja|2442年}}
@@ -83,7 +83,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose last 
 
 ==Days of Yang Water Tiger==
 === Selected Day ===
-The Yang Water Tiger day is the 10th day of {{ill|Tenitsu-shin|ja|天一天上|12=simple|13=User:Immanuelle/Tian Yi Tianshang|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
+The Yang Water Tiger day is the 10th day of {{ill|Tenitsu-shin|ja|天一天上|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 == See Also ==
 * {{prefix}}
 * {{intitle}}

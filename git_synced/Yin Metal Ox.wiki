@@ -61,10 +61,10 @@ A {{ill|Common Era|ar|الحقبة العامة|ary|إيرا عامة|as|সা�
 |
 * {{ill|2021|en|2021|qid=Q49628|lt=2021 AD}}
 * {{ill|2081 AD|ja|2081年}}
-* {{ill|22nd century|ja|2141年|12=simple|13=User:Immanuelle/2141 AD|ja_comment=jawiki redirects to 22世紀|comment=changed title based on wikidata|qid=Q11177}}
-* {{ill|23rd century|ja|2201年|12=simple|13=User:Immanuelle/2201 AD|ja_comment=jawiki redirects to 23世紀|comment=changed title based on wikidata|qid=Q49832}}
-* {{ill|23rd century|ja|2261年|12=simple|13=User:Immanuelle/2261 AD|ja_comment=jawiki redirects to 23世紀|comment=changed title based on wikidata|qid=Q49832}}
-* {{ill|24th century|ja|2321年|12=simple|13=User:Immanuelle/2321 AD|ja_comment=jawiki redirects to 24世紀|comment=changed title based on wikidata|qid=Q49838}}
+* {{ill|22nd century|ja|2141年|ja_comment=jawiki redirects to 22世紀|comment=changed title based on wikidata|qid=Q11177}}
+* {{ill|23rd century|ja|2201年|ja_comment=jawiki redirects to 23世紀|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|23rd century|ja|2261年|ja_comment=jawiki redirects to 23世紀|comment=changed title based on wikidata|qid=Q49832}}
+* {{ill|24th century|ja|2321年|ja_comment=jawiki redirects to 24世紀|comment=changed title based on wikidata|qid=Q49838}}
 * {{ill|2381 AD|ja|2381年}}
 * {{ill|2441 AD|ja|2441年}}
 * {{ill|2501 AD|ja|2501年}}
@@ -79,13 +79,13 @@ A {{ill|Common Era|ar|الحقبة العامة|ary|إيرا عامة|as|সা�
 |}
 
 === Events ===
-* In {{ill|Guangxu Era|ja|光緒|12=simple|13=User:Immanuelle/Guangxu|comment=changed title based on wikidata|qid=Q1135852}} 27th Year and {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 34th Year (1901 AD) – The {{ill|Boxer Protocol|ja|辛丑和約|lt=Beijing Protocol|12=simple|13=User:Immanuelle/Beijing Protocol|ja_comment=jawiki redirects to 北京議定書|comment=changed title based on wikidata|qid=Q672556}}, concerning the Boxer Rebellion (excluding Russia) among a coalition of 11 countries (including Austria, Britain, and France) and the Qing Empire, was signed.
+* In {{ill|Guangxu Era|ja|光緒|comment=changed title based on wikidata|qid=Q1135852}} 27th Year and {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} 34th Year (1901 AD) – The {{ill|Boxer Protocol|ja|辛丑和約|lt=Beijing Protocol|ja_comment=jawiki redirects to 北京議定書|comment=changed title based on wikidata|qid=Q672556}}, concerning the Boxer Rebellion (excluding Russia) among a coalition of 11 countries (including Austria, Britain, and France) and the Qing Empire, was signed.
 ==Months of Yin Metal Ox==
 In a Western calendar year whose last digit is either 1 or 6 (corresponding to the Heavenly Stems {{ill|Kanoto (辛)|ja|辛|lt=Kanoto (辛)}} and {{ill|Hinoe (丙)|ja|丙|lt=Hinoe (丙)}}), the month of December becomes the Yin Metal Ox month. Note that here "month" may refer either to the month of the old calendar or to a seasonal month defined from {{ill|Xiaohan|af|Xiaohan|cdo|Siēu-hàng|fr|Xiǎohán (période solaire)|hak|Séu-hòn|ja|小寒|ko|소한|sv|Xiaohan|vi|Tiểu hàn|za|Siujhanz|zh|小寒|zh_classical|小寒|zh_min_nan|Siáu-hân|zh_yue|小寒|qid=Q1190989|lt=Xiaohan}} until the day before {{ill|Lichun|af|Lichun|bo|དཔྱིད་ཚུགས།|cdo|Lĭk-chŭng|es|Lichun|fr|Lichun|hak|Li̍p-chhûn|id|Lichun|ja|立春|ko|입춘|ms|Lichun|sv|Lichun|uz|Lichun|vi|Lập xuân|wuu|立春|za|Laebcin|zh|立春|zh_classical|立春|zh_min_nan|Li̍p-chhun|zh_yue|立春|qid=Q1364685|lt=Risshun}}.
 
 ==Days of Yin Metal Ox==
 === 選日 ===
-The Yin Metal Ox day is the 9th day of {{ill|Tenitsu-shin|ja|天一天上|12=simple|13=User:Immanuelle/Tian Yi Tian Shang|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
+The Yin Metal Ox day is the 9th day of {{ill|Tenitsu-shin|ja|天一天上|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 == See Also ==
 * {{prefix}}
 * {{intitle}}

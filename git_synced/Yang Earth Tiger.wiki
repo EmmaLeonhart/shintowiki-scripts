@@ -61,12 +61,12 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 * {{ill|1998|en|1998|qid=Q2089|lt=1998 AD}}
 |
 * {{ill|2058 AD|ja|2058年|lt=2058 AD}}
-* {{ill|22nd century|ja|2118年|12=simple|13=User:Immanuelle/2118|comment=changed title based on wikidata|lt=2118 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2178年|12=simple|13=User:Immanuelle/2178|comment=changed title based on wikidata|lt=2178 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2238年|12=simple|13=User:Immanuelle/2238|comment=changed title based on wikidata|lt=2238 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|23rd century|ja|2298年|12=simple|13=User:Immanuelle/2298|comment=changed title based on wikidata|lt=2298 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|22nd century|ja|2118年|comment=changed title based on wikidata|lt=2118 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2178年|comment=changed title based on wikidata|lt=2178 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2238年|comment=changed title based on wikidata|lt=2238 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2298年|comment=changed title based on wikidata|lt=2298 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
 * {{ill|2358 AD|ja|2358年|lt=2358 AD}}
-* {{ill|25th century|ja|2418年|12=simple|13=User:Immanuelle/2418|comment=changed title based on wikidata|lt=2418 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
+* {{ill|25th century|ja|2418年|comment=changed title based on wikidata|lt=2418 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
 * {{ill|2478 AD|ja|2478年|lt=2478 AD}}
 * {{ill|2538 AD|ja|2538年|lt=2538 AD}}
 * {{ill|2598 AD|ja|2598年|lt=2598 AD}}
@@ -84,7 +84,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final
 ==Days of Yang Earth Tiger==
 The {{ill|Senjitsu|ja|選日}} for Bointora is as follows.
 === Selected Day (選日) ===
-Bointora day is the 1st day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Small Earth|lt_ja=小土|12=simple|13=User:Immanuelle/Hando|comment=changed title based on wikidata|qid=Q11571306}}.
+Bointora day is the 1st day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Small Earth|lt_ja=小土|comment=changed title based on wikidata|qid=Q11571306}}.
 ==See Also==
 *{{prefix}}
 *{{intitle}}

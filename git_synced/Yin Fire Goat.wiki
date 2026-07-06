@@ -61,12 +61,12 @@ A {{ill|Common Era|ar|الحقبة العامة|ary|إيرا عامة|as|সা�
 |
 * {{ill|2027|en|2027|qid=Q12814|lt=2027 AD}}
 * {{ill|2087 AD|ja|2087年|lt=2087 AD}}
-* {{ill|22nd century|ja|2147年|12=simple|13=User:Immanuelle/2147|comment=changed title based on wikidata|lt=2147 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2207年|12=simple|13=User:Immanuelle/2207|comment=changed title based on wikidata|lt=2207 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2267年|12=simple|13=User:Immanuelle/2267|comment=changed title based on wikidata|lt=2267 AD|ja_comment=jawiki redirects to 23世紀|qid=Q49832}}
+* {{ill|22nd century|ja|2147年|comment=changed title based on wikidata|lt=2147 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2207年|comment=changed title based on wikidata|lt=2207 AD|ja_comment=jawiki redirects to 22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2267年|comment=changed title based on wikidata|lt=2267 AD|ja_comment=jawiki redirects to 23世紀|qid=Q49832}}
 * {{ill|2327 AD|ja|2327年|lt=2327 AD}}
 * {{ill|2387 AD|ja|2387年|lt=2387 AD}}
-* {{ill|25th century|ja|2447年|12=simple|13=User:Immanuelle/2447|comment=changed title based on wikidata|lt=2447 AD|ja_comment=jawiki redirects to 25世紀|qid=Q49839}}
+* {{ill|25th century|ja|2447年|comment=changed title based on wikidata|lt=2447 AD|ja_comment=jawiki redirects to 25世紀|qid=Q49839}}
 * {{ill|2507 AD|ja|2507年|lt=2507 AD}}
 * {{ill|2567 AD|ja|2567年|lt=2567 AD}}
 * {{ill|2627 AD|ja|2627年|lt=2627 AD}}
@@ -86,7 +86,7 @@ In a Common Era year, if the final digit is 2 or 7 (that is, when the Ten Heaven
 
 ==Days of Yin Fire Goat==
 === Day Selection ===
-A day of Teibi is the 15th day of {{ill|Tenitsu-shin|ja|天一天上|12=simple|13=User:Immanuelle/Ten Heaven, One Heaven|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
+A day of Teibi is the 15th day of {{ill|Tenitsu-shin|ja|天一天上|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 == See Also ==
 * {{prefix}}
 * {{intitle}}

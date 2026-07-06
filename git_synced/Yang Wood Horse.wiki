@@ -62,10 +62,10 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2014|en|2014|qid=Q1999|lt=2014 AD}}
 * {{ill|2074 AD|ja|2074年|lt=2074 AD}}
-* {{ill|22nd century|ja|2134年|12=simple|13=User:Immanuelle/2134|comment=changed title based on wikidata|lt=2134 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2194年|12=simple|13=User:Immanuelle/2194|comment=changed title based on wikidata|lt=2194 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2254年|12=simple|13=User:Immanuelle/2254|comment=changed title based on wikidata|lt=2254 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2314年|12=simple|13=User:Immanuelle/2314|comment=changed title based on wikidata|lt=2314 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2134年|comment=changed title based on wikidata|lt=2134 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2194年|comment=changed title based on wikidata|lt=2194 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2254年|comment=changed title based on wikidata|lt=2254 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2314年|comment=changed title based on wikidata|lt=2314 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2374 AD|ja|2374年|lt=2374 AD}}
 * {{ill|2434 AD|ja|2434年|lt=2434 AD}}
 * {{ill|2494 AD|ja|2494年|lt=2494 AD}}
@@ -88,7 +88,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final
 ==Days of Yang Wood Horse==
 The {{ill|Senjitsu|ja|選日}} for a Kōgo day is as follows.
 === Day Selection ===
-A Kōgo day is the 2nd day of {{ill|Tenitsu-shin|ja|天一天上|12=simple|13=User:Immanuelle/Ten Heaven, One Heaven|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
+A Kōgo day is the 2nd day of {{ill|Tenitsu-shin|ja|天一天上|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 
 ==See Also==
 *{{prefix}}

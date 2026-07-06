@@ -61,13 +61,13 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 * {{ill|1994|en|1994|qid=Q2067|lt=1994 AD}}
 |
 * {{ill|2054 AD|ja|2054年|lt=2054 AD}}
-* {{ill|22nd century|ja|2114年|12=simple|13=User:Immanuelle/2114|comment=changed title based on wikidata|lt=2114 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2174年|12=simple|13=User:Immanuelle/2174|comment=changed title based on wikidata|lt=2174 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2234年|12=simple|13=User:Immanuelle/2234|comment=changed title based on wikidata|lt=2234 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|23rd century|ja|2294年|12=simple|13=User:Immanuelle/2294|comment=changed title based on wikidata|lt=2294 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|22nd century|ja|2114年|comment=changed title based on wikidata|lt=2114 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2174年|comment=changed title based on wikidata|lt=2174 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2234年|comment=changed title based on wikidata|lt=2234 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2294年|comment=changed title based on wikidata|lt=2294 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
 * {{ill|2354 AD|ja|2354年|lt=2354 AD}}
 * {{ill|2414 AD|ja|2414年|lt=2414 AD}}
-* {{ill|25th century|ja|2474年|12=simple|13=User:Immanuelle/2474|comment=changed title based on wikidata|lt=2474 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
+* {{ill|25th century|ja|2474年|comment=changed title based on wikidata|lt=2474 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
 * {{ill|2534 AD|ja|2534年|lt=2534 AD}}
 * {{ill|2594 AD|ja|2594年|lt=2594 AD}}
 * {{ill|2654 AD|ja|2654年|lt=2654 AD}}
@@ -82,7 +82,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final
 ==Days of Yang Wood Dog==
 The {{ill|Senjitsu|ja|選日}} for 甲戌 is as follows.
 === Selected Day (選日) ===
-The day of 甲戌 is the 5th day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Large Earth|lt_ja=大土|12=simple|13=User:Immanuelle/Large Earth|comment=changed title based on wikidata|qid=Q11571306}}.
+The day of 甲戌 is the 5th day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Large Earth|lt_ja=大土|comment=changed title based on wikidata|qid=Q11571306}}.
 
 ==See Also==
 *{{prefix}}

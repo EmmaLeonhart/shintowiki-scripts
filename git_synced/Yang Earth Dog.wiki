@@ -61,13 +61,13 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |
 * {{ill|2018|en|2018|qid=Q25291|lt=2018 AD}}
 * {{ill|2078 AD|ja|2078年|lt=2078 AD}}
-* {{ill|22nd century|ja|2138年|12=simple|13=User:Immanuelle/2138|comment=changed title based on wikidata|lt=2138 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2198年|12=simple|13=User:Immanuelle/2198|comment=changed title based on wikidata|lt=2198 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2258年|12=simple|13=User:Immanuelle/2258|comment=changed title based on wikidata|lt=2258 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2318年|12=simple|13=User:Immanuelle/2318|comment=changed title based on wikidata|lt=2318 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2138年|comment=changed title based on wikidata|lt=2138 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2198年|comment=changed title based on wikidata|lt=2198 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2258年|comment=changed title based on wikidata|lt=2258 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2318年|comment=changed title based on wikidata|lt=2318 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2378 AD|ja|2378年|lt=2378 AD}}
 * {{ill|2438 AD|ja|2438年|lt=2438 AD}}
-* {{ill|25th century|ja|2498年|12=simple|13=User:Immanuelle/2498|comment=changed title based on wikidata|lt=2498 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
+* {{ill|25th century|ja|2498年|comment=changed title based on wikidata|lt=2498 AD|ja_comment=fixed jawiki redirect|3=25世紀|qid=Q49839}}
 * {{ill|2558 AD|ja|2558年|lt=2558 AD}}
 * {{ill|2618 AD|ja|2618年|lt=2618 AD}}
 * {{ill|2678 AD|ja|2678年|lt=2678 AD}}
@@ -79,14 +79,14 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |}
 
 === Events ===
-* In the 9th year of {{ill|Tenpō|en|Tenpō|qid=Q1369045|lt=Tenpō}} ({{ill|1838|en|1838|qid=Q7612|lt=1838 AD}}), {{ill|Takano Chōei|en|Takano Chōei|qid=Q944693|lt=Kōya Nagahide}} authored the work {{ill|Bojutsu Yume Monogatari|ja|戊戌夢物語|12=simple|13=User:Immanuelle/Wuxu Dream Tale|comment=changed title based on wikidata|qid=Q11495335}}.
-* In the 24th year of {{ill|Guangxu Era|ja|光緒|12=simple|13=User:Immanuelle/Guangxu|comment=changed title based on wikidata|qid=Q1135852}} ({{ill|1898|en|1898|qid=Q7848|lt=1898 AD}}), during the Qing dynasty, the reforms and political upheaval known as the {{ill|Hundred Days' Reform|en|Hundred Days' Reform|qid=Q917709|lt=Wuxu Reform}} and the {{ill|Hundred Days' Reform|ja|戊戌の政変|12=simple|13=User:Immanuelle/Wuxu Coup|ja_comment=fixed jawiki redirect|3=戊戌の変法|comment=changed title based on wikidata|qid=Q917709}} took place.
+* In the 9th year of {{ill|Tenpō|en|Tenpō|qid=Q1369045|lt=Tenpō}} ({{ill|1838|en|1838|qid=Q7612|lt=1838 AD}}), {{ill|Takano Chōei|en|Takano Chōei|qid=Q944693|lt=Kōya Nagahide}} authored the work {{ill|Bojutsu Yume Monogatari|ja|戊戌夢物語|comment=changed title based on wikidata|qid=Q11495335}}.
+* In the 24th year of {{ill|Guangxu Era|ja|光緒|comment=changed title based on wikidata|qid=Q1135852}} ({{ill|1898|en|1898|qid=Q7848|lt=1898 AD}}), during the Qing dynasty, the reforms and political upheaval known as the {{ill|Hundred Days' Reform|en|Hundred Days' Reform|qid=Q917709|lt=Wuxu Reform}} and the {{ill|Hundred Days' Reform|ja|戊戌の政変|ja_comment=fixed jawiki redirect|3=戊戌の変法|comment=changed title based on wikidata|qid=Q917709}} took place.
 ==Months of Yang Earth Dog==
 In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 1 or 6 (i.e. when the Ten Heavenly Stems are {{ill|Kanoto (辛)|ja|辛|lt=Kanoto (辛)}} or {{ill|Hinoe (丙)|ja|丙|lt=Hinoe (丙)}}), the month of {{ill|September|en|September|qid=Q123|lt=September}} becomes the {{ill|Month|en|Month|qid=Q5151|lt=Month}} of Wuxu. However, the term “month” here may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦}} or to a seasonal month (from {{ill|Hanlu|en|Hanlu|qid=Q1193124|lt=Hanro}} until the day before {{ill|Lidong|en|Lidong|qid=Q1191018|lt=Rittō}}) as applicable.
 ==Days of Yang Earth Dog==
 The {{ill|Senjitsu|ja|選日}} for a Wuxu day is as follows.
 === Day Selection ===
-A Wuxu day is the 6th day of {{ill|Tenitsu-shin|ja|天一天上|12=simple|13=User:Immanuelle/Ten Heaven, One Heaven|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
+A Wuxu day is the 6th day of {{ill|Tenitsu-shin|ja|天一天上|ja_comment=天一神|2=ja|3=天一神|comment=changed title based on wikidata|qid=Q11442153}}.
 == See Also ==
 * {{prefix}}
 * {{intitle}}

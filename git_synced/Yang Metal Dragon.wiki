@@ -24,11 +24,11 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 ! {{ill|1st millennium BC|en|1st millennium BC|qid=Q25716|lt=1st Millennium BC}} !! {{ill|1st millennium|en|1st millennium|qid=Q25868|lt=1st Millennium}} !! {{ill|2nd millennium|en|2nd millennium|qid=Q25860|lt=2nd Millennium}} !! {{ill|3rd millennium|en|3rd millennium|qid=Q26224|lt=3rd Millennium}}
 |-
 |
-* {{ill|10th century BC|ja|紀元前941年|12=simple|13=User:Immanuelle/941 BC|ja_comment=fixed jawiki redirect|3=紀元前10世紀|comment=changed title based on wikidata|qid=Q25425}}
-* {{ill|9th century BC|ja|紀元前881年|12=simple|13=User:Immanuelle/881 BC|ja_comment=fixed jawiki redirect|3=紀元前9世紀|comment=changed title based on wikidata|qid=Q25424}}
-* {{ill|821 BC|ja|紀元前821年|12=simple|13=User:Immanuelle/821 BC|comment=changed title based on wikidata|qid=Q762894}}
-* {{ill|761 BC|ja|紀元前761年|12=simple|13=User:Immanuelle/761 BC|comment=changed title based on wikidata|qid=Q1133172}}
-* {{ill|701 BC|ja|紀元前701年|12=simple|13=User:Immanuelle/701 BC|comment=changed title based on wikidata|qid=Q716987}}
+* {{ill|10th century BC|ja|紀元前941年|ja_comment=fixed jawiki redirect|3=紀元前10世紀|comment=changed title based on wikidata|qid=Q25425}}
+* {{ill|9th century BC|ja|紀元前881年|ja_comment=fixed jawiki redirect|3=紀元前9世紀|comment=changed title based on wikidata|qid=Q25424}}
+* {{ill|821 BC|ja|紀元前821年|comment=changed title based on wikidata|qid=Q762894}}
+* {{ill|761 BC|ja|紀元前761年|comment=changed title based on wikidata|qid=Q1133172}}
+* {{ill|701 BC|ja|紀元前701年|comment=changed title based on wikidata|qid=Q716987}}
 * {{ill|641 BC|en|641 BC|qid=Q1059311|lt=641 BC}}
 * {{ill|581 BC|en|581 BC|qid=Q244721|lt=581 BC}}
 * {{ill|521 BC|en|521 BC|qid=Q220807|lt=521 BC}}
@@ -78,11 +78,11 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 * {{ill|2000|en|2000|qid=Q1985|lt=2000 AD}}
 |
 * {{ill|2060 AD|ja|2060年|lt=2060 AD}}
-* {{ill|22nd century|ja|2120年|12=simple|13=User:Immanuelle/2120|comment=changed title based on wikidata|lt=2120 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2180年|12=simple|13=User:Immanuelle/2180|comment=changed title based on wikidata|lt=2180 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2240年|12=simple|13=User:Immanuelle/2240|comment=changed title based on wikidata|lt=2240 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|23rd century|ja|2300年|12=simple|13=User:Immanuelle/2300|comment=changed title based on wikidata|lt=2300 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|24th century|ja|2360年|12=simple|13=User:Immanuelle/2360|comment=changed title based on wikidata|lt=2360 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
+* {{ill|22nd century|ja|2120年|comment=changed title based on wikidata|lt=2120 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2180年|comment=changed title based on wikidata|lt=2180 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2240年|comment=changed title based on wikidata|lt=2240 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2300年|comment=changed title based on wikidata|lt=2300 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|24th century|ja|2360年|comment=changed title based on wikidata|lt=2360 AD|ja_comment=fixed jawiki redirect|3=24世紀|qid=Q49838}}
 * {{ill|2420 AD|ja|2420年|lt=2420 AD}}
 * {{ill|2480 AD|ja|2480年|lt=2480 AD}}
 * {{ill|2540 AD|ja|2540年|lt=2540 AD}}
@@ -96,13 +96,13 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 |}
 
 ==Months of Yang Metal Dragon==
-In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 0 or 5 (when the {{ill|Heavenly Stems|af|Hemelstam|ca|Troncs celestes|cdo|Tiĕng-găng|de|Himmelsstämme|es|Troncos celestiales|fa|شاخه‌های آسمانی|fi|Taivaalliset rungot|fr|Tige céleste|gan|天干|hak|Thiên-kôn|id|Batang Langit|it|Tronco celeste|ja|十干|ko|천간|mk|Небесни стебла|ms|Tiangan|nl|Hemelse Stammen|pl|Niebiańskie pnie|ru|Небесные стволы|tr|Göksel Gövdeler|uk|Небесні стовбури|za|Diengan|zh|天干|zh_min_nan|Thian-kan|zh_yue|天干|qid=Q1190985|lt=Heavenly Stems}} are {{ill|Kanoe (庚)|ja|庚|lt=Kanoe (庚)}} or {{ill|Kinoto (乙)|ja|乙|lt=Kinoto (乙)}}), the month of {{ill|March|en|March|qid=Q110|lt=March}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=month (calendar)}} of {{ill|Yang Metal Dragon|ja|庚辰|2=ja|12=simple|13=User:Immanuelle/Koushin|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦}} or to the seasonal month (from {{ill|Qingming (solar term)|en|Qingming (solar term)|qid=Q1680269|lt=Qingming}} until the day before {{ill|Lixia|af|Lixia|cdo|Lĭk-hâ|hak|Li̍p-ha|id|Lixia|ja|立夏|ko|입하|sv|Lixia|vi|Lập hạ|wuu|立夏|za|Laebhah|zh|立夏|zh_classical|立夏|zh_min_nan|Li̍p-hā|zh_yue|立夏|qid=Q1191007|lt=Lixia}}) as applicable.
+In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final digit is 0 or 5 (when the {{ill|Heavenly Stems|af|Hemelstam|ca|Troncs celestes|cdo|Tiĕng-găng|de|Himmelsstämme|es|Troncos celestiales|fa|شاخه‌های آسمانی|fi|Taivaalliset rungot|fr|Tige céleste|gan|天干|hak|Thiên-kôn|id|Batang Langit|it|Tronco celeste|ja|十干|ko|천간|mk|Небесни стебла|ms|Tiangan|nl|Hemelse Stammen|pl|Niebiańskie pnie|ru|Небесные стволы|tr|Göksel Gövdeler|uk|Небесні стовбури|za|Diengan|zh|天干|zh_min_nan|Thian-kan|zh_yue|天干|qid=Q1190985|lt=Heavenly Stems}} are {{ill|Kanoe (庚)|ja|庚|lt=Kanoe (庚)}} or {{ill|Kinoto (乙)|ja|乙|lt=Kinoto (乙)}}), the month of {{ill|March|en|March|qid=Q110|lt=March}} is designated as the {{ill|Month|en|Month|qid=Q5151|lt=month (calendar)}} of {{ill|Yang Metal Dragon|ja|庚辰|2=ja|ja_comment=jawiki link invalid}}. However, here the term "month" may refer either to the month of the {{ill|Japanese Lunisolar Calendar|ja|旧暦}} or to the seasonal month (from {{ill|Qingming (solar term)|en|Qingming (solar term)|qid=Q1680269|lt=Qingming}} until the day before {{ill|Lixia|af|Lixia|cdo|Lĭk-hâ|hak|Li̍p-ha|id|Lixia|ja|立夏|ko|입하|sv|Lixia|vi|Lập hạ|wuu|立夏|za|Laebhah|zh|立夏|zh_classical|立夏|zh_min_nan|Li̍p-hā|zh_yue|立夏|qid=Q1191007|lt=Lixia}}) as applicable.
 
 ==Days of Yang Metal Dragon==
 * {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}} (the founder and first {{ill|Emperor of Japan|en|Emperor of Japan|qid=Q208233|lt=Emperor}} of {{ill|Japan|en|Japan|qid=Q17|lt=Japan}})'s birthday.
 
 === Selected Day (選日) ===
-The day of {{ill|Yang Metal Dragon|ja|庚辰|2=ja|12=simple|13=User:Immanuelle/Koushin|ja_comment=jawiki link invalid}} is the 3rd day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Small Earth|lt_ja=小土|12=simple|13=User:Immanuelle/Hando|comment=changed title based on wikidata|qid=Q11571306}}.
+The day of {{ill|Yang Metal Dragon|ja|庚辰|2=ja|ja_comment=jawiki link invalid}} is the 3rd day of {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Small Earth|lt_ja=小土|comment=changed title based on wikidata|qid=Q11571306}}.
 
 ==See Also==
 *{{prefix}}

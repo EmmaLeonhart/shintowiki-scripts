@@ -64,10 +64,10 @@ A {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year that leaves a 
 * {{ill|1996|en|1996|qid=Q2070|lt=1996 AD}}
 |
 * {{ill|2056 AD|ja|2056年|lt=2056 AD}}
-* {{ill|22nd century|ja|2116年|12=simple|13=User:Immanuelle/2116|comment=changed title based on wikidata|lt=2116 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|22nd century|ja|2176年|12=simple|13=User:Immanuelle/2176|comment=changed title based on wikidata|lt=2176 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
-* {{ill|23rd century|ja|2236年|12=simple|13=User:Immanuelle/2236|comment=changed title based on wikidata|lt=2236 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
-* {{ill|23rd century|ja|2296年|12=simple|13=User:Immanuelle/2296|comment=changed title based on wikidata|lt=2296 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|22nd century|ja|2116年|comment=changed title based on wikidata|lt=2116 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|22nd century|ja|2176年|comment=changed title based on wikidata|lt=2176 AD|ja_comment=fixed jawiki redirect|3=22世紀|qid=Q11177}}
+* {{ill|23rd century|ja|2236年|comment=changed title based on wikidata|lt=2236 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
+* {{ill|23rd century|ja|2296年|comment=changed title based on wikidata|lt=2296 AD|ja_comment=fixed jawiki redirect|3=23世紀|qid=Q49832}}
 * {{ill|2356 AD|ja|2356年|lt=2356 AD}}
 * {{ill|2416 AD|ja|2416年|lt=2416 AD}}
 * {{ill|2476 AD|ja|2476年|lt=2476 AD}}
@@ -87,7 +87,7 @@ In a {{ill|Common Era|en|Common Era|qid=Q208141|lt=Common Era}} year whose final
 ==Days of Yang Fire Rat==
 The {{ill|Senjitsu|ja|選日}} for Besshi is as follows.
 ===Selected Day (選日)===
-Besshi day is the 7th (final) day of the {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Hando|lt_ja=大土|12=simple|13=User:Immanuelle/Hando|comment=changed title based on wikidata|qid=Q11571306}} period.
+Besshi day is the 7th (final) day of the {{ill|Tsuchi (Japanese term)|ja|犯土|lt=Hando|lt_ja=大土|comment=changed title based on wikidata|qid=Q11571306}} period.
 
 ==See Also==
 *{{prefix}}
