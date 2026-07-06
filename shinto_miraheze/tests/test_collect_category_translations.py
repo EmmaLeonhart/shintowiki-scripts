@@ -39,6 +39,15 @@ def test_worker_file_has_markers_and_context():
     assert "page A" in txt and "wikidata link" in txt
 
 
+def test_has_cjk_filters_already_english():
+    # genuinely Japanese-named → queue
+    assert b._has_cjk("三条市の歴史")
+    assert b._has_cjk("さいたま市の神社")
+    # already-English residual (failed phase-1 QID) → NOT queued for RAG
+    assert not b._has_cjk("Buildings and structures in Kurume")
+    assert not b._has_cjk("1988 books")
+
+
 def test_safe_filename_matches_sync_convention():
     # ':' -> %3A, '/' -> %2F, with the Category: prefix, .wiki suffix
     assert b._safe_filename("三条市の歴史") == "Category%3A三条市の歴史.wiki"

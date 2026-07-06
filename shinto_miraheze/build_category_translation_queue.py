@@ -38,6 +38,20 @@ USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shinto
 READ_THROTTLE = 0.25
 
 
+def _has_cjk(name: str) -> bool:
+    """True if the category NAME contains Japanese/CJK script — i.e. it genuinely
+    needs translation. `[[Category:Japanese language category names]]` also holds
+    some ALREADY-ENGLISH categories that merely failed phase-1 QID resolution
+    (e.g. 'Buildings and structures in Kurume' with a stale/non-category QID);
+    those must NOT be sent to RAG — there is nothing to translate."""
+    for ch in name:
+        if ("぀" <= ch <= "ヿ"      # hiragana + katakana
+                or "一" <= ch <= "鿿"   # CJK unified
+                or "㐀" <= ch <= "䶿"):  # CJK ext A
+            return True
+    return False
+
+
 def _safe_filename(cat_name: str) -> str:
     """Match sync_git_synced_pages.title_to_filename: ':' → '%3A', '/' → '%2F'.
     The category name has no 'Category:' prefix here; we store the full title."""
@@ -98,11 +112,15 @@ def main():
 
     print("Resolving deterministically to find the residual…")
     _new_rows, residual, complete = g.resolve_all()
-    print(f"Residual to queue for RAG: {len(residual)}"
+    # Only genuinely-Japanese-named categories need RAG translation; drop the
+    # already-English residual (failed phase-1 QID resolution, nothing to translate).
+    jp_residual = [c for c in residual if _has_cjk(c)]
+    print(f"Residual: {len(residual)} | genuinely-Japanese (queue for RAG): "
+          f"{len(jp_residual)} | already-English (skipped): {len(residual) - len(jp_residual)}"
           f"{'' if complete else '  (PARTIAL enumeration)'}")
 
     written = skipped = 0
-    for cat_name in residual:
+    for cat_name in jp_residual:
         path = os.path.join(OUT_DIR, _safe_filename(cat_name))
         if os.path.exists(path):
             skipped += 1
