@@ -212,6 +212,24 @@ readiness: `recreate-deleted-wikidata/items/_recreation_readiness.md`. Remaining
 Recreation itself + the min-claim-set + verifying the dedup-flagged are **NEEDS-DECISION (Emma)**
 → see "Blockers awaiting Emma" below.
 
+---
+
+## Merged-QID redirect resolution op (LOW PRIORITY — keep at the very end; least time-dependent)
+
+Emma 2026-07-05: many of these ill QIDs are weird sub-topics linked to weird places and have a
+decent chance of being merged over time. A Wikidata **merge** turns the old item into a *redirect*
+to the survivor — it is NOT deleted/"missing" — so nothing currently canonicalizes it: the existing
+ops (`deleted_qids_in_ill`, `wikidata_lookup`) only act on `"missing"` entities and leave a
+`"redirects"` entity untouched. The stale QID still resolves when clicked but never updates.
+
+- [ ] **Build an orchestrator op that rewrites merged QIDs on the wiki.** For each `{{ill|…|qid=Q…}}`
+  (and consider `{{wikidata link}}`), query `wbgetentities`; if the entity is a **redirect**, rewrite
+  the QID in the wikitext to the redirect **target** (follow the chain to the final survivor). Light
+  op (pure text transform, orchestrator saves); throttle + 429-bail; cache QID→target per run.
+  This is *durable* maintenance (merges happen forever), unlike the disposable recreation repair —
+  so it's a real op, not a one-off script. Kept at queue end: less important + less time-dependent
+  than the rest, so it gets worked only after the earlier items.
+
 Pinned tail (keep last, always):
 - [ ] Run the status-report action once more independently as an end-of-session summary.
 
