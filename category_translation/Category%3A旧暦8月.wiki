@@ -1,0 +1,51 @@
+<!-- SOURCE: Category:旧暦8月 -->
+<!-- TRANSLATED: -->
+<!-- TASK: replace the empty TRANSLATED marker above with the canonical English 'Category:...' name for this Japanese-named category. Research it — use the member sample + the category wikitext + the jawiki/Wikidata equivalent. Follow real enwiki category-naming conventions; do NOT invent or transliterate blindly. When the TRANSLATED marker is filled, this file is done (collect_category_translations.py folds it into category_moves.csv and deletes it). If genuinely untranslatable, leave TRANSLATED empty and add a line '<!-- SKIP: <reason> -->'. -->
+
+== Members (sample) ==
+* August (Lunisolar)
+* August 1 (Lunisolar)
+* August 10 (Lunisolar)
+* August 11 (Lunisolar)
+* August 12 (Lunisolar)
+* August 13 (Lunisolar)
+* August 14 (Lunisolar)
+* August 15 (Lunisolar)
+* August 16 (Lunisolar)
+* August 17 (Lunisolar)
+* August 18 (Lunisolar)
+* August 19 (Lunisolar)
+* August 2 (Lunisolar)
+* August 20 (Lunisolar)
+* August 21 (Lunisolar)
+* August 22 (Lunisolar)
+* August 23 (Lunisolar)
+* August 24 (Lunisolar)
+* August 25 (Lunisolar)
+* August 26 (Lunisolar)
+* August 27 (Lunisolar)
+* August 28 (Lunisolar)
+* August 29 (Lunisolar)
+* August 3 (Lunisolar)
+* August 30 (Lunisolar)
+
+== Category page wikitext ==
+<pre>
+<!-- bot-jp-cat-merge-notice -->
+'''This Japanese-named category is being merged into [[:Category:Lunisolar August]]. EmmaBot is moving members to the English-named category; this page will be cleaned up once empty.'''
+
+<!--templates-->
+{{wikidata link|Q9533063}}
+<!--interwikis-->
+[[ja:Category:旧暦8月]]
+[[cdo:Category:Nùng-lĭk 8 nguŏk]]
+[[hak:Category:Nùng-la̍k 8-ngie̍t]]
+[[ko:Category:음력 8월]]
+[[za:Category:Ndwenbet]]
+[[zh:Category:八月]]
+<!--categories-->
+[[Category:Japanese language category names]]
+[[Category:Tier 3 Categories]]
+[[Category:Tier 1 Categories]]
+[[Category:crud categories]]
+</pre>

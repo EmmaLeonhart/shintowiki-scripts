@@ -1,0 +1,27 @@
+<!-- SOURCE: Category:大分県出身の人物 -->
+<!-- TRANSLATED: -->
+<!-- TASK: replace the empty TRANSLATED marker above with the canonical English 'Category:...' name for this Japanese-named category. Research it — use the member sample + the category wikitext + the jawiki/Wikidata equivalent. Follow real enwiki category-naming conventions; do NOT invent or transliterate blindly. When the TRANSLATED marker is filled, this file is done (collect_category_translations.py folds it into category_moves.csv and deletes it). If genuinely untranslatable, leave TRANSLATED empty and add a line '<!-- SKIP: <reason> -->'. -->
+
+== Members (sample) ==
+* Daigo Hisa
+
+== Category page wikitext ==
+<pre>
+<!--templates-->
+<!--interwikis-->
+[[ja:Category:大分県出身の人物]]
+[[ar:Category:مواليد في أويتا (محافظة)]]
+[[az:Category:Oita prefekturasında doğulanlar]]
+[[be:Category:Нарадзіліся ў прэфектуры Оіта]]
+[[commons:Category:Births in Oita prefecture]]
+[[cs:Category:Narození v prefektuře Óita]]
+[[fr:Category:Naissance dans la préfecture d'Ōita]]
+[[gl:Category:Nados na prefectura de Ōita]]
+[[it:Category:Nati in prefettura di Ōita]]
+[[pl:Category:Ludzie urodzeni w prefekturze Ōita]]
+[[ru:Category:Родившиеся в префектуре Оита]]
+[[tr:Category:Ōita ili doğumlular]]
+[[uk:Category:Уродженці префектури Оїта]]
+<!--categories-->
+[[Category:Japanese language category names]]
+</pre>

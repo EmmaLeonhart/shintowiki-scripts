@@ -1,0 +1,43 @@
+<!-- SOURCE: Category:静岡県の旧村社 -->
+<!-- TRANSLATED: -->
+<!-- TASK: replace the empty TRANSLATED marker above with the canonical English 'Category:...' name for this Japanese-named category. Research it — use the member sample + the category wikitext + the jawiki/Wikidata equivalent. Follow real enwiki category-naming conventions; do NOT invent or transliterate blindly. When the TRANSLATED marker is filled, this file is done (collect_category_translations.py folds it into category_moves.csv and deletes it). If genuinely untranslatable, leave TRANSLATED empty and add a line '<!-- SKIP: <reason> -->'. -->
+
+== Members (sample) ==
+* Ajiko Shrine
+* Awabitamashiratama-hime-no-Mikoto Shrine
+* Hachiman Shrine (Otoi)
+* Hachiman Shrine (Q134927474)
+* Hayatamawakenomikoto Shrine
+* Himemiya Shrine
+* Hinatano Shrine
+* Ikamashi Shrine
+* Ikeda Shrine (Shizuoka)
+* Inohanako Shrine
+* Ishifu Shrine
+* Ita Shrine
+* Kunihashiramikoto Shrine
+* Minowa Shrine
+* Mishima Shrine (Minamiizu)
+* Mishima Shrine (Minamiizu-chō Nijō)
+* Mishima Shrine (Tsumara)
+* Mitaka Shrine
+* Morokuchi Shrine (Q116694076)
+* Nagahama Shrine
+* Nagoya Shrine
+* Naka Shrine (Matsuzaki)
+* Ogawaizumisui Shrine
+* Ouji Shrine
+* Sanai Shrine
+
+== Category page wikitext ==
+<pre>
+<!--templates-->
+{{wikidata link|Q18742585}}
+<!--interwikis-->
+[[ja:Category:静岡県の旧村社]]
+[[ja:Category:静岡県の旧村社[[ja:Category:静岡県の旧村社]]
+<!--categories-->
+[[Category:Tier 3 Categories]]
+[[Category:Tier 1 Categories]]
+[[Category:Japanese language category names]]
+</pre>
