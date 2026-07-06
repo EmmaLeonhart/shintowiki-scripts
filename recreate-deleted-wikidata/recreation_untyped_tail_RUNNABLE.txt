@@ -1,0 +1,80 @@
+# recreate Shōkyō (was Q135490455) — from [[May 22 (Lunisolar)]]
+CREATE
+LAST	Len	"Shōkyō"
+LAST	Lde	"Shōkyō"
+LAST	Len	"Shōryaku"
+LAST	Lfa	"شوکیو"
+LAST	Lfr	"Ère Shōkei"
+LAST	Lja	"正恭"
+LAST	Lru	"Сёкэй"
+LAST	Lsimple	"Shōkyō"
+LAST	Lsr	"Шокјо"
+LAST	Ltr	"Shōkyō"
+LAST	Lzh	"正慶"
+LAST	P31	Q5
+
+# recreate Kimi-no-Mori (was Q135500720) — from [[Agata Shrine (Ōamishirasato)]]
+CREATE
+LAST	Len	"Kimi-no-Mori"
+LAST	Lja	"季美の森"
+LAST	P31	Q486972
+
+# recreate Protective Forest for Navigation (was Q135503346) — from [[Mount Aonomine]]
+CREATE
+LAST	Len	"Protective Forest for Navigation"
+LAST	Lja	"航行目標保安林"
+LAST	P31	Q473972
+
+# recreate Color Index (was Q135503431) — from [[Bengala]]
+CREATE
+LAST	Len	"Color Index"
+LAST	Lja	"カラーカード"
+LAST	P31	Q3346024
+
+# recreate Kyoto's Three Kumano Shrines (was Q135506332) — from [[Kumano Nyakuōji Shrine]]
+CREATE
+LAST	Len	"Kyoto's Three Kumano Shrines"
+LAST	Lja	"京都三熊野"
+LAST	P31	Q845945
+
+# recreate Inner Palace (was Q135550949) — from [[Chukain Temple]]
+CREATE
+LAST	Len	"Inner Palace"
+LAST	Lja	"内裏外郭"
+LAST	P31	Q811979
+
+# recreate rope attachment projections (was Q135551150) — from [[Chest-shaped Sarcophagus]]
+CREATE
+LAST	Len	"rope attachment projections"
+LAST	Lja	"縄掛突起"
+LAST	P31	Q391414
+
+# recreate rhyolitic welded tuff (was Q135551151) — from [[Chest-shaped Sarcophagus]]
+CREATE
+LAST	Len	"rhyolitic welded tuff"
+LAST	Lja	"流紋岩質溶結凝灰岩"
+LAST	P31	Q8063
+
+# recreate Benten Chigo (was Q135551168) — from [[Chigo]]
+CREATE
+LAST	Len	"Benten Chigo"
+LAST	Lja	"弁天稚児"
+LAST	P31	Q5
+
+# recreate Hozumi-Suzuki Clan Genealogy (was Q135579116) — from [[Hozumi no Kujii]]
+CREATE
+LAST	Len	"Hozumi-Suzuki Clan Genealogy"
+LAST	Lja	"穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜"
+LAST	P31	Q9353932
+
+# recreate 御匙 (was Q135579154) — from [[Hōri]]
+CREATE
+LAST	Len	"御匙"
+LAST	Lja	"御匙"
+LAST	P31	Q4164871
+
+# recreate 御鑰 (was Q135579157) — from [[Hōri]]
+CREATE
+LAST	Len	"御鑰"
+LAST	Lja	"御鑰"
+LAST	P31	Q4164871
