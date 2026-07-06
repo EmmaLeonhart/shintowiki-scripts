@@ -8,6 +8,7 @@
   },
   "enrichment": {
     "description_en": null,
+    "drop_reason": "disambiguation page, not an item",
     "label_count": 2,
     "labels": {
       "en": {

@@ -253,6 +253,13 @@
     "p31": null,
     "p31_label": null,
     "p31_property": null,
+    "possible_existing": [
+      {
+        "label": "Ne no Kuni",
+        "note": "likely duplicate of live item — relink, do not recreate",
+        "qid": "Q7555425"
+      }
+    ],
     "romaji_reading": "Ne no Kuni",
     "type_confidence": "none",
     "type_source": null

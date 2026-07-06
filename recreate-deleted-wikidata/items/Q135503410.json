@@ -33,6 +33,13 @@
     "p31": null,
     "p31_label": null,
     "p31_property": null,
+    "possible_existing": [
+      {
+        "label": "herbal baths",
+        "note": "likely duplicate of live item — relink, do not recreate",
+        "qid": "Q16496694"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "none",
     "type_source": null

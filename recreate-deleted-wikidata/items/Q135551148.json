@@ -253,6 +253,13 @@
     "p31": null,
     "p31_label": null,
     "p31_property": null,
+    "possible_existing": [
+      {
+        "label": "Kōshin-dō",
+        "note": "likely duplicate of live item — relink, do not recreate",
+        "qid": "Q124683618"
+      }
+    ],
     "romaji_reading": "Kōshin-dō",
     "type_confidence": "none",
     "type_source": null

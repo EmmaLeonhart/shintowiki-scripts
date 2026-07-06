@@ -8,6 +8,7 @@
   },
   "enrichment": {
     "description_en": null,
+    "drop_reason": "street address, not an item",
     "label_count": 59,
     "labels": {
       "ar": {
