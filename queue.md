@@ -23,9 +23,9 @@ TWO root causes found + fixed:
    -retry loop (5 attempts) + non-fatal exit (mirrors `commit_state.sh`; _site is cosmetic — Pages
    deploys from the uploaded artifact, not the repo commit).
 
-- [ ] Confirm on a live fire that the cleanup-loop now green-completes end-to-end (both fixes in).
-  Next scheduled fire (`23 2 * * *`) validates, or a manual dispatch. If it still reds, diagnose the
-  next-failing step.
+- [ ] VALIDATED 2026-07-06: run 28802688487 (fix `7b0f0379`) — `generate-pages/build` ✓ green + every
+  orchestrator ✓; only `direct-daily-edits` (5h WD editor) still finishing. Confirm that final step
+  lands green, then delete this item.
 - [ ] THROUGHPUT (separate, lower priority): a full category cycle still takes ~many fires at
   ~1000 pages/145min. Only if draining item 2 proves too slow: skip history_offload/fandom_mirror on
   the ~3k enwiki-junk cats or shard ns14. No premature optimization.

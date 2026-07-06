@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Durability enrichment continued from crashed session (batches 6–12, ~106 statements)
+
+Emma's local machine crashed mid-way through a claude.ai session doing durability
+enrichment of the ~230 "vulnerable" Wikidata items created 2026-01-01 (Q140445965…
+Q140447403, 0 sitelinks + 0 backlinks). She exported that chat into the repo root
+(`Claude Code.html`) and asked to continue "opening the QuickStatements." Recovered
+the crash's one at-risk artifact (rebased + pushed her unpushed `q` commit), recreated
+the three session-local work-loop crons, then resumed the method: per QID-ascending
+block, build a dossier (Wikidata statements + label disambiguator + wiki context),
+infer ONLY grounded facts, append verified QuickStatements to `durability_enrich.txt`,
+write `_batchN_url.txt`, and open each batch in Emma's browser via PowerShell
+`Start-Process` (never `cmd start` — it mangles `#`/`%`).
+
+Batches 6–12 (~106 verified statements, 140/230 items now carry ≥1 durability claim):
+P21 male for named male individuals (Abe/Nakatomi/Ōnakatomi/Kamibe clusters); P131
+located-in from explicit city disambiguators (Akagi shrines→Kiryū/Takasaki/Maebashi,
+kofun, Izumo branch churches→Karatsu/Takachiho/Hakodate/Abashiri); P17 Japan for
+inherently-Japanese items missing country (yokoana clusters, bath products, temples).
+
+The kami were the key correction (Emma): NOT skipped — they carry a bidirectional
+worship link. Property is **P1049 "worshipped by"** (kami→shrine), reciprocal **P825
+"dedicated to"** (shrine→kami); NOT P1885 "cult center" (rejected). The shrine↔kami
+linkage is NOT on Wikidata and NOT under the kami's ja title on the live wiki — it
+lives in the repo's mirrored shinto-wiki crossref
+(`recreate-deleted-wikidata/shinto_wiki_crossref.json`, `langlinks.ja` +
+`page_wikidata_qid`). Joined 25 orphaned kami stubs to it: 24 matched a real host
+shrine → emitted 24 P1049 + 16 P825 reciprocals (using QIDs). Confirmed these bare
+stubs (created 2026-07-06 via a QS batch, label + P31 only) are REAL kami linked to
+real shrines, not hallucinations. Method captured in memory `project_durability_enrichment`.
+
+Residual (~40 items) is genuinely low-yield: ambiguous-location festivals (need per-item
+geo research — parked on an explicit Emma decision) and abstract stubs (academic
+disciplines, occupations, hot-spring facility types, hotel/onsen brands, historical
+seas, muraji-clan "human" stubs) with no clean grounded fact. Also validated queue #1:
+cleanup-loop run 28802688487 (fix 7b0f0379) went green through generate-pages/build.
+
 ## 2026-07-06 — cdo (Min Dong) transliterator SHIPPED — gated cdoify + registry (queue #5 done)
 
 Completed cdo end-to-end. `cdoify(hanzi)` in `generate_chinese_quickstatements.py` romanizes the
