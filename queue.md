@@ -51,9 +51,6 @@ durable pipelines for it.**
   `[[Category:Git synced pages]]` → next sync drops the on-wiki tag + local copy).
 - [ ] **Optional per-item enrichment for the ready set:** P131 (admin territory from host-page
   place) + coordinates — authoritative only.
-- [ ] **Analyze the `User:Immanuelle/` draft targets** (low). Precise extraction only:
-  `13=User:Immanuelle/…` INSIDE `{{ill|…|qid=DELETED_QID}}` (a plain scan returns 2212 noise hits).
-  Lower value now that recreation runs off minimal QuickStatements, not draft content.
 
 ## 3. `Template:Ill` wrongful-deletion fix (easy — was mis-parked)
 

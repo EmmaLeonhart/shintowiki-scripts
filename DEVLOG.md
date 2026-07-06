@@ -17,6 +17,14 @@ Sjawiki sitelinks — the bad host-page/section sitelinks Emma had to strip. Key
 the recreate-deleted effort is **disposable repair work** — do the dumb direct thing (text
 replacement), don't over-build durable pipelines/tests for it.
 
+**Context-dump audit + deletion:** verified 455/455 deleted.txt QIDs have committed `items/`
+JSONs (derived reports all tracked); chat/session dumps carried no uncaptured work → deleted
+`context dump/` (recoverable from git 911bbfb). **User:Immanuelle draft-target strip:** removed
+3,418 `|12=simple|13=User:Immanuelle/…` junk params across 199 git_synced ills (0 remaining).
+The `normalize_ill_wikidata` op drops these on the wiki, but git_synced is repo-wins on sync so
+the op can't win there — stripped repo-side. (40 bare orphan `12=simple` left — separate
+numeric-key concern, not a User:Immanuelle draft.)
+
 **Queue de-stale audit:** `queue.md` had degraded into a status snapshot — completed-work
 narrative (multilingual-label rollout, backlog board, provenance comments, analysis pass — all
 shipped) left in place instead of deleted, and easy autonomous work mis-filed under "Blockers —
