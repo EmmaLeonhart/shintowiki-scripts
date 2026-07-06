@@ -11,33 +11,63 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ---
 
-## 1. Get the cleanup-loop reliably working (Emma priority)
+## 1. Get the cleanup-loop reliably working (top priority — enables everything else)
 
 The cleanup-loop is still unreliable: the category-orchestrator step intermittently hits its
-160-min timeout (07-04 failed on it; the `63926a81` mwclient-retry-cap helped so 07-05 passed,
-but runs take 8h+ and the 07-06 run ran 3h+). The category orchestrator "has never completed a
-full cycle" (CLAUDE.md), so the category deprecation / translation / interlang-consolidation
-back-pressure never fully drains.
+160-min timeout (07-04 failed on it; `63926a81` mwclient-retry-cap helped so 07-05 passed, but
+runs take 8h+ and the 07-06 run ran 3h+). The category orchestrator "has never completed a full
+cycle," so the category ops back-pressure never fully drains. **This gates items 2–5 below** —
+the deprecation moves, interlang consolidation, and merged-QID canonicalization all run inside it.
 
 - [ ] Make the cleanup-loop green-complete every fire. Diagnose the category-orchestrator
-  slowness (allpages(ns=14) walk vs the 150-min internal budget / 160-min step timeout — why it
-  overshoots), and fix: the internal time-budget should stop it and commit state well before the
-  step timeout so it resumes next run (it is cursor-resumable), and/or split the namespace across
-  jobs. Verify a real run green-completes, not just local.
+  overshoot (allpages(ns=14) walk vs the 150-min internal budget / 160-min step timeout — why it
+  doesn't stop-and-commit-state in time), fix so it resumes cleanly next run (it is
+  cursor-resumable) and/or split the namespace across jobs. Verify a real run green-completes.
 
-## 2. cdo (Min Dong) transliterator (lowest priority — do last)
+## 2. Drain the category-deprecation back-pressure (depends on #1)
 
-cdo = the **romanization (Bàng-uâ-cê) of the hanzi the zh label already produces**
-(`generate_chinese_quickstatements.py`: kana→man'yōgana + OpenCC). Pipeline: zh-hanzi →
-per-character Min Dong reading → Bàng-uâ-cê string. **Approach found + started 2026-07-06:**
-Wiktionary exposes the reading in the zh-pron `|md=` param (神→sìng, 社→siâ); no pip library
-exists (`pyfoochow` absent, opencc is script-only). Partial data fetched into
-`shinto-label-generator/cdo_readings.json` (37 of the man'yōgana + common-shrine hanzi).
+Once the loop runs: the **18 Japanese-named duplicate categories** tagged this session into
+`[[Category:Japanese language category names]]` get translated (cloud) + merged by
+`move_categories`; the interlang consolidation (`{{wikidata link}}` merge) and the new
+`merged_qids_in_ill` op sweep the wiki.
 
-- [ ] Finish the hanzi→Min-Dong table (shrine names carry arbitrary kanji, so fetch `md=` for the
-  full kanji set the zh generator emits over the shrine query), then wire a `cdoify()` that reads
-  the zh output and joins the BUC readings. Zero cdo labels observed on JP shrines/temples, so
-  this is last — but it gets done.
+- [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
+
+## 3. Category-name translation — phase (c) place-name gazetteer
+
+THE real category backlog: `[[Category:Japanese language category names]]` (~1189 subcats).
+Phases a+b shipped (dated-maintenance transform + Wikidata-anchored resolver). Remaining:
+
+- [ ] **Phase (c):** a JP→EN place-name gazetteer for the residual content cats with no
+  Wikidata-category anchor — the productive patterns `<place>の神社` → `Shinto shrines in <place>`,
+  `<place>市`/`<place>県`. Bootstrap the gazetteer from Wikidata place labels (authoritative, not
+  guessing). Residual list auto-maintained at `docs/category_translation_residual.md`.
+
+## 4. Un-sync the 144 resolved deleted-QID-ill pages
+
+All 144 pages' `{{ill|…|qid=DELETED_QID}}` are now resolved (created/relinked/de-illed) and the
+instruction comment is removed, but they still carry `[[Category:Git synced pages]]`, so
+`git_synced/` is still 144 pages larger than normal.
+
+- [ ] Remove `[[Category:Git synced pages]]` from each resolved page so the next
+  `sync_git_synced_pages` run pushes the final content to the wiki and drops the local copy.
+  Verify the sync pushes-then-drops (doesn't drop before propagating the relinked content).
+
+## 5. EN/FR/ID label-gap regularization
+
+- [ ] Some shrines have labels in one/two of en/fr/id but not all three (old technical failures).
+  NEEDS-DECISION (Emma): is this still a distinct same-source cross-fill, or is it subsumed by the
+  BFS/multilang drip (which now generates fr+id fills into the drip, confounding a live-Wikidata
+  gap query)? Confirm scope, then build the fill where the others exist.
+
+## 6. cdo (Min Dong) transliterator (do last)
+
+cdo = the romanization (Bàng-uâ-cê) of the hanzi the zh label already produces. Approach found +
+started: Wiktionary `|md=` param (神→sìng); no pip lib (`pyfoochow` absent). Partial data in
+`shinto-label-generator/cdo_readings.json` (37 hanzi).
+
+- [ ] Finish the hanzi→Min-Dong table (fetch `md=` for the full kanji set the zh generator emits),
+  wire `cdoify()` reading the zh output. Zero cdo labels observed, so last — but it gets done.
 
 ## Pinned tail (keep last, always)
 
