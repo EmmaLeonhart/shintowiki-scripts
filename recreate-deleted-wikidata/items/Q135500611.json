@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Arimori\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 302,
+    "timestamp": "20250729224529"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500611",
+  "recovered_label": "Abe no Arimori",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

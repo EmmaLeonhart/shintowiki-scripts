@@ -1,0 +1,289 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Tanba Tadayaki\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 305,
+    "timestamp": "20250729224630"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تانبا تاداياكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تانبا تاداياكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তানাবা তাদাযাকি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তানাবা তাদাযাকি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Tanba Tadajaki",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τανμπα Τανταγιακι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Tanba Tadayaki",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "تانبا تادایاکی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טאןבא טאדאיקי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तनब तदयकि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "丹波忠明",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तनब तदयकि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तानाबा तादायाकि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Танба Тадаяки",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Tanba Tadajaki",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Танба Тадаякі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "تانبا تادایاکی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Tanba Tadayaki",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "丹波忠明",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "丹波忠明",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Tanba Tadayaki",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Japanese medical educators of the 8th century",
+      "Japanese physicians of the 8th century",
+      "Japanese medical educators of the 9th century",
+      "9th-century Japanese physicians",
+      "Imperial Bureau of Pharmacology",
+      "Officials of the Ritsuryō System",
+      "Medical educators in Japan",
+      "Acupuncture",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Acupuncture Hakase"
+    ],
+    "ja_sitelink": null,
+    "label": "Tanba Tadayaki",
+    "langlinks": {
+      "ja": "丹波忠明"
+    },
+    "page": "Acupuncture Hakase",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:35Z)",
+    "recovered_qid": "Q135500675"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500675",
+  "recovered_label": "Tanba Tadayaki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

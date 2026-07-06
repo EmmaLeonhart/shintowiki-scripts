@@ -1,0 +1,60 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Iwakia Betsuō Tomb\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 313,
+    "timestamp": "20250802040142"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Iwakia Betsuō Tomb",
+        "source": "native"
+      },
+      "ja": {
+        "label": "磐城別王墓",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Male imperial family members before the Kofun period",
+      "Municipal History of Hakui",
+      "Wikidata has short description",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with 100+ untranslated japanese characters",
+      "Pages with 150+ untranslated japanese characters",
+      "Pages with interwikis with duplicate languages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Iwatsukiwake no Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Iwakia Betsuō Tomb",
+    "langlinks": {
+      "ja": "磐城別王墓"
+    },
+    "page": "Iwatsukiwake no Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:07Z)",
+    "recovered_qid": "Q135579295"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579295",
+  "recovered_label": "Iwakia Betsuō Tomb",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

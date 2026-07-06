@@ -1,0 +1,57 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"The Twelve Heavenly Kings\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 316,
+    "timestamp": "20250730020711"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "The Twelve Heavenly Kings",
+        "source": "native"
+      },
+      "ja": {
+        "label": "十二天王",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Shinto shrines in Fujisawa",
+      "Wikidata has short description",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Goryō Shrine (Miyamae, Fujisawa)"
+    ],
+    "ja_sitelink": "御霊神社 (藤沢市宮前)",
+    "label": "The Twelve Heavenly Kings",
+    "langlinks": {
+      "ja": "十二天王"
+    },
+    "page": "Goryō Shrine (Miyamae, Fujisawa)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:44:46Z)",
+    "recovered_qid": "Q135504457"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135504457",
+  "recovered_label": "The Twelve Heavenly Kings",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

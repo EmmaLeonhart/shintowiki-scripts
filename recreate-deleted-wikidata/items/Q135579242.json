@@ -1,0 +1,283 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Azumi Inukai no Muraji\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 316,
+    "timestamp": "20250802035848"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أزومي إينوكاي نو موراجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أزومي إينوكاي نو موراجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অজ়ুমি ইনুকাই নো মুৰাজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অজ়ুমি ইনুকাই নো মুরাজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Azumi Inukai no Muradži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αζουμι Ινουκαι Νο Μουρατζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ازومی اینوکای نو موراجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "阿曇犬養連",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אזומי אינוקאי נו מוראג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अज़ुमि इनुकइ नो मुरजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "阿曇犬養連",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अज़ुमि इनुकइ नो मुरजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अज़ुमि इनुकाइ नो मुराजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Адзуми Инукаи Но Мурадзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Azumi Inukai no Muradži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Адзумі Инукаі Но Мурадзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ازومی اینوکای نو موراجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Azumi Inukai no Muraji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "阿昙犬养连",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "阿昙犬养连",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "阿昙犬养连",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "阿曇犬養連",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "阿曇犬養連",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "阿曇犬養連",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "阿昙犬养连",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "阿曇犬養連",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Azumi Inukai no Muraji",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "Bumin",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Inukaibe"
+    ],
+    "ja_sitelink": null,
+    "label": "Azumi Inukai no Muraji",
+    "langlinks": {
+      "ja": "阿曇犬養連"
+    },
+    "page": "Inukaibe",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:01:13Z)",
+    "recovered_qid": "Q135579242"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579242",
+  "recovered_label": "Azumi Inukai no Muraji",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

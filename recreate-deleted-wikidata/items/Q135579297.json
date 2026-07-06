@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Mitarashi-hime\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 308,
+    "timestamp": "20250802040153"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ميتاراشيهيمي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميتاراشيهيمي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মিতাৰাশিহিমে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মিতারাশিহিমে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mitarašihime",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιταρασιχιμε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Mitarashi-hime",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "میتاراشیهیمه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מיטאראשיהימה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मितरशिहिमे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "三足比咩命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Mitaraši-hime",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मितरशिहिमे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मिताराशिहिमे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Митарасихимэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mitaraši-hime",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Мітарасіхіме",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "میتاراشیهیمه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Mitarashi-hime",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "三足比咩命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "三足比咩命",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Mitarashi-hime",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Male imperial family members before the Kofun period",
+      "Municipal History of Hakui",
+      "Wikidata has short description",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with 100+ untranslated japanese characters",
+      "Pages with 150+ untranslated japanese characters",
+      "Pages with interwikis with duplicate languages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Iwatsukiwake no Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Mitarashi-hime",
+    "langlinks": {
+      "ja": "三足比咩命"
+    },
+    "page": "Iwatsukiwake no Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:07Z)",
+    "recovered_qid": "Q135579297"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579297",
+  "recovered_label": "Mitarashi-hime",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi no Ikemori\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 310,
+    "timestamp": "20250729004903"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ناكاتومي نو إيكيموري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ناكاتومي نو إيكيموري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নাকাতোমি নো ইকেমোৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নাকাতোমি নো ইকেমোরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νακατομι Νο Ικεμορι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nakatomi no Ikemori",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ناکاتومی نو ایکهموری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נאקאטומי נו איקהמורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "नकतोमि नो इकेमोरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "中臣池守",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "नकतोमि नो इकेमोरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "नाकातोमि नो इकेमोरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Накатоми Но Икэмори",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Накатомі Но Икеморі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ناکاتومی نو ایکهموری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nakatomi no Ikemori",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "中臣池守",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "中臣池守",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Nakatomi no Ikemori",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "8th-century births",
+      "8th-century deaths",
+      "Imperial Princes of Japan",
+      "Recipients of Lower Senior Fifth Rank",
+      "Wikidata no English label",
+      "Wikidata no short description",
+      "Pages with interwikis with duplicate languages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Kawachi no Ōkimi (Late Nara period)"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi no Ikemori",
+    "langlinks": {
+      "ja": "中臣池守"
+    },
+    "page": "Kawachi no Ōkimi (Late Nara period)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:50:04Z)",
+    "recovered_qid": "Q135491609"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491609",
+  "recovered_label": "Nakatomi no Ikemori",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

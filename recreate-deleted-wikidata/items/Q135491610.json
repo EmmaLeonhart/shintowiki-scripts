@@ -1,0 +1,64 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi no Momo / Nakatomi Momo-shō\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 340,
+    "timestamp": "20250729004905"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Nakatomi no Momo / Nakatomi Momo-shō",
+        "source": "native"
+      },
+      "ja": {
+        "label": "中臣秡・中臣秡抄",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "1909 births",
+      "1981 deaths",
+      "Abe no Seimei",
+      "Divination",
+      "Faculty of Kokugakuin University",
+      "Kokugakuin University alumni",
+      "Onmyōdō",
+      "People from Mie Prefecture",
+      "Shintō Scholars",
+      "Wikidata no short description",
+      "Pages with interwikis with duplicate languages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Nishida Osamu"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi no Momo / Nakatomi Momo-shō",
+    "langlinks": {
+      "ja": "中臣秡・中臣秡抄"
+    },
+    "page": "Nishida Osamu",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:53:19Z)",
+    "recovered_qid": "Q135491610"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491610",
+  "recovered_label": "Nakatomi no Momo / Nakatomi Momo-shō",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

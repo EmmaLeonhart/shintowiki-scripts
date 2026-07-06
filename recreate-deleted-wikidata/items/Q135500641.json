@@ -1,0 +1,287 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Yasutada\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 306,
+    "timestamp": "20250729224557"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو ياسوتادا",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو ياسوتادا",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো যাসুতাদা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো যাসুতাদা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Jasutada",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Γιασουταντα",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Yasutada",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو یاسوتادا",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו יסוטאדא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो यसुतद",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍泰忠",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो यसुतद",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो यासुतादा",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Ясутада",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Jasutada",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Ясутада",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو یاسوتادا",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Yasutada",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍泰忠",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Abe no Yasutada",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "1110 births",
+      "1183 deaths",
+      "安倍氏",
+      "Aristocrats of the Late Heian Period",
+      "Recipients of Lower Senior Fourth Rank",
+      "Onmyōji",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Abe no Yasuchika"
+    ],
+    "ja_sitelink": null,
+    "label": "Abe no Yasutada",
+    "langlinks": {
+      "ja": "安倍泰忠"
+    },
+    "page": "Abe no Yasuchika",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:32Z)",
+    "recovered_qid": "Q135500641"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500641",
+  "recovered_label": "Abe no Yasutada",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

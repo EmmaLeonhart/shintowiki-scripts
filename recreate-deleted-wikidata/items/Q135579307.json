@@ -1,0 +1,286 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Jippāramitsu-ji\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 310,
+    "timestamp": "20250802040232"
+  },
+  "enrichment": {
+    "description_en": "Buddhist temple in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "جيباراميتسوجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "جيباراميتسوجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "জিপাৰামিত্সুজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "জিপারামিত্সুজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Džippáramicudži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τζιπαραμιτσουτζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Jippāramitsu-ji",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "جیپارامیتسوجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ג׳יפאראמיצוג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "जिपरमित्सुजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "十波羅蜜寺",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "जिपरमित्सुजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "जिपारामित्सुजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Дзипарамицудзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Džipparamicu-dži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Дзіпараміцудзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "جیپارامیتسوجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Jippāramitsu-ji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "十波罗蜜寺",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "十波羅蜜寺",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5393308",
+    "p31_label": "Buddhist temple",
+    "p31_property": "P31",
+    "romaji_reading": "Jippāramitsu-ji",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Buddhist temples in Kagawa Prefecture",
+      "Buildings and structures in Mitoyo, Kagawa",
+      "Municipal History of Mitoyo",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template",
+      "Independently git synced pages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Iwaya Myōken-gū"
+    ],
+    "ja_sitelink": null,
+    "label": "Jippāramitsu-ji",
+    "langlinks": {
+      "ja": "十波羅蜜寺"
+    },
+    "page": "Iwaya Myōken-gū",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-15T21:34:25Z)",
+    "recovered_qid": "Q135579307"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579307",
+  "recovered_label": "Jippāramitsu-ji",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

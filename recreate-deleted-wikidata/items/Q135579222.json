@@ -1,0 +1,59 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Imajuku Kofun Group\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 313,
+    "timestamp": "20250802035752"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Imajuku Kofun Group",
+        "source": "native"
+      },
+      "ja": {
+        "label": "今宿古墳群",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "History of Nishi Ward, Fukuoka City",
+      "Kofun of Fukuoka prefecture",
+      "Pages using infobox ancient site with unknown parameters",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Imajuku Ōtsuka Kofun",
+      "Kabutozuka Kofun"
+    ],
+    "ja_sitelink": null,
+    "label": "Imajuku Kofun Group",
+    "langlinks": {
+      "ja": "今宿古墳群"
+    },
+    "page": "Imajuku Ōtsuka Kofun",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:50Z)",
+    "recovered_qid": "Q135579222"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579222",
+  "recovered_label": "Imajuku Kofun Group",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

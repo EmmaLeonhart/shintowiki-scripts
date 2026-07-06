@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Yukemuri no Shō\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 462,
+    "timestamp": "20250729223239"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135500318",
+  "recovered_label": "Yukemuri no Shō",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

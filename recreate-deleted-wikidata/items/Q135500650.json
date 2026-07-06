@@ -1,0 +1,287 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Kintoki\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 305,
+    "timestamp": "20250729224607"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو كينتوكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو كينتوكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো কিনাতোকি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো কিনাতোকি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Κιντοκι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Kintoki",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو کینتوکی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍兼時",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו קיןטוקי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो किनतोकि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍兼時",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो किनतोकि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो किनातोकि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Кинтоки",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Кінтокі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو کینتوکی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Kintoki",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍兼时",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍兼时",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍兼时",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍兼時",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍兼時",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍兼時",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍兼时",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍兼時",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Abe no Kintoki",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "1110 births",
+      "1183 deaths",
+      "安倍氏",
+      "Aristocrats of the Late Heian Period",
+      "Recipients of Lower Senior Fourth Rank",
+      "Onmyōji",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Abe no Yasuchika"
+    ],
+    "ja_sitelink": null,
+    "label": "Abe no Kintoki",
+    "langlinks": {
+      "ja": "安倍兼時"
+    },
+    "page": "Abe no Yasuchika",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:32Z)",
+    "recovered_qid": "Q135500650"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500650",
+  "recovered_label": "Abe no Kintoki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

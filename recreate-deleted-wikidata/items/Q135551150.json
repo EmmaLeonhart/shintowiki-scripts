@@ -1,0 +1,59 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"rope attachment projections\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 318,
+    "timestamp": "20250801074509"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "rope attachment projections",
+        "source": "native"
+      },
+      "ja": {
+        "label": "縄掛突起",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "古墳",
+      "日本の考古資料",
+      "Coffins",
+      "遺構",
+      "Archaeological remains",
+      "Pages with deleted QID in ill template",
+      "Kofun (general concept)"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chest-shaped Sarcophagus"
+    ],
+    "ja_sitelink": null,
+    "label": "rope attachment projections",
+    "langlinks": {
+      "ja": "縄掛突起"
+    },
+    "page": "Chest-shaped Sarcophagus",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:14Z)",
+    "recovered_qid": "Q135551150"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551150",
+  "recovered_label": "rope attachment projections",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

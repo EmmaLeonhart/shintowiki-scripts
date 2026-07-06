@@ -4,30 +4,113 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
-## 2026-07-05 — Backlog resolution analysis doc (all 8 board items)
+## 2026-07-06 — Recreation candidates: P31 (instance of) from the entity name
 
-Emma-requested next-session input: wrote `docs/backlog_resolution_2026-07-05.md`
-— per-item RESOLVED/PARTIAL/NOT-STARTED + what's-left across all 8 `BACKLOG_ITEMS`,
-synthesized from the board, `todo.md`, and today's DEVLOG entries. Conclusion: #1/#2
-resolved; #3/#4/#6/#7 shipped automation whose residual is inherent human review or
-the remote cloud routine (not build tasks); #5 (Japanese category names, phase c/d)
-is the single highest-value autonomous build thread; #8 (recreate deleted WD) is
-gated on per-target research + an Emma minimum-claim-set decision. Removed the
-"Next-session analysis pass" item from queue.md.
+Second half of Emma's "P31 or subclass of" ask, done the sound way after reverting the
+host-page-category approach. `enrich_p31.py` classifies from the entity NAME — primarily the
+Japanese suffix (definitional): 祭→festival Q132241, 命·尊→kami Q524158, 社·宮·大社·神宮→Shinto
+shrine Q845945, bare 神→kami, 踊→dance Q11639, 連·禰 / clan-patronymic→human Q5, 記·書·抄·風土記→
+book Q571; English label corroborates. All target QIDs verified live on Wikidata. Result: **91/213
+confidently typed** (kami 28, festival 26, shrine 17, human 16, dance 2, book 2) + an English
+description each; **122 left null for human review** (geographic/kofun/church/system/misc — never
+guessed). Verified the earlier mislabel is fixed: Niwa-tsume no Mikoto now → kami, not
+"disambiguation page". 7 unit tests (31 green in-dir). Written into each `items/<QID>.json`
+`enrichment` block alongside the multilingual labels; triage in `items/_p31_summary.md`.
 
-## 2026-07-05 — wiki-cleanup.yml header + stale queue bullet follow-up (#2 loose ends)
+## 2026-07-06 — Recreation candidates: names across many languages (Emma request)
 
-Follow-up to the earlier #2-CLOSED entry. The queue.md `#2 audit-legacy-scripts`
-bullet was never deleted even though the work shipped (board + todo.md already
-scrubbed, DEVLOG entry written) — deleted it now per delete-don't-check. Also
-found the `wiki-cleanup.yml` header still listed the four now-deleted terminating
-scripts (reimport_from_enwiki, migrate_talk_pages, normalize_category_pages,
-remove_legacy_cat_templates) under a "review July 2026 — see todo.md" note, i.e.
-pointing at files that no longer exist. Rewrote that comment block to record the
-July 2026 review as DONE (removed/ported) and re-ran the audit: every uncommented
-`python3 …` step in the workflow resolves to an existing script; the only
-reimport/overwrite references left are inside commented-out blocks. No silently
-inert wiring remains.
+Emma: "all recreation candidates should have names across many languages ... they all need a
+bit more data to really run." First correction to my own prior claim: I'd said most candidates
+"only have ja" — WRONG; 210/213 have en+ja at minimum (en = the recovered/fandom label), I'd
+miscounted by looking only at the ill's secondary langlinks. Built `enrich_multilang.py`,
+reusing the project's blessed transliteration engine (`shinto-label-generator/translit_common.py`
+— same one that feeds the daily label pipeline): derive the romaji reading from en+ja, render
+into every `ALL_LANGS` language (Latin keeps romaji; Cyrillic/Greek/Arabic/Perso-Arabic/Hebrew/
+Devanagari/Bengali/Korean/Toki-Pona transliterate; zh family via man'yōgana→OpenCC), with the
+authoritative fandom langlinks winning over transliteration. Result: **213 candidates × median
+59 languages = 7,255 label strings**, written into each `items/<QID>.json` as
+`enrichment.labels` (each tagged native/fandom/translit) + `enrichment.romaji_reading`. Local,
+deterministic, no network. 3 unit tests (24 green in-dir); CI already installs the engine deps.
+
+Also caught + reverted an UNSOUND first pass at P31: I'd derived instance-of from the fandom
+HOST-PAGE categories, but those describe the page, not the deleted ill-TARGET (it mislabeled the
+kami "Niwa-tsume no Mikoto" as a "disambiguation page" because its host page is a shrine-dab
+page). jawiki lookup on the ja names returns 0/18 (these entities have no jawiki articles — why
+they were empty-deleted). So P31 needs a name-based Shinto classifier (next), not host-page cats.
+
+## 2026-07-05 — Per-QID JSON files for every deleted item (Emma request)
+
+Emma: "make json files on each deleted qid for the info we have on them." Built
+`recreate-deleted-wikidata/build_item_json.py` — a pure local merge (no network) of
+`deleted_log_rag.json` (XTools listing + public deletion log) × `shinto_wiki_crossref.json`
+(fandom recovery), keyed by QID → one `items/<QID>.json` per deleted item + an `items/_index.json`
+manifest. Each file consolidates: deletion metadata (admin, full comment preserving the label,
+reason bucket, byte size, timestamp), the recovered English label, `self_deleted` flag (Emma's
+own author-request/batch deletions — moot), and — when the item matched a fandom ill — the host
+page(s), per-language langlinks, the recovered+RAG-validated original QID and its source,
+jawiki sitelink, and host-page categories, plus a `recreation_candidate` boolean (matched +
+has langlinks + not self-deleted + not RfD-no-evidence/conflation). Wrote **455 files**:
+215 fandom-matched, 213 recreation candidates, 122 self-deleted (out of scope). 5 unit tests
+on the merge/flag logic (21 green total in the dir). Re-runnable + deterministic (sorted).
+
+## 2026-07-05 — Miraheze history removal: already stopped (2026-06-01 cutoff) — queue item resolved
+
+Emma queued: "if we are still removing history from miraheze, stop — not necessary anymore."
+Investigated instead of assuming. `cleanup-loop.yml` DOES pass `enable_history_offload: true`
++ `enable_revdel: true` to every orchestrator, BUT the `history_offload` op has a code-level
+`CUTOFF_DATE = datetime.date(2026, 6, 1)`: past that date it hard-returns "disabled past cutoff"
+unless `FORCE_HISTORY_OFFLOAD_PAST_CUTOFF=1`, which is set NOWHERE in the workflows (the only
+reference is the op reading the env var). Today is 2026-07-05 → the op has been a no-op on every
+run since June 1. So we are NOT still removing miraheze history — it stopped over a month ago;
+Emma's concern is already satisfied. The `enable_*` flags in cleanup-loop.yml are moot (the code
+cutoff overrides them); left as-is rather than churning 22 lines of the critical daily workflow
+for a purely cosmetic change — the cutoff is the authoritative, load-bearing stop. Pruned the
+queue item.
+
+## 2026-07-05 — Context dump processed: deleted-Immanuelle-items RAG blocker identified
+
+Went over `context dump/` (committed `911bbfb`). `deleted.txt` = XTools export of **455
+deleted Immanuelle-created Q-items** (Main ns); each row carries only QID + deletion timestamp
++ byte-size + admin-only `Special:Undelete` link + public `Special:Log` link — **no content**.
+`chat dump.md` = the interrupted-session transcript (backlog #1/#2/#8), no deleted-item
+content. Cross-referenced the 455 against backlog #8's recovered ill-target QIDs: **35
+overlap** (of #8's 36 recovered old QIDs) — validating the queue's predicted overlap; those 35
+are already covered by #8 (content from shinto-wiki ills). Size distribution: 264/455 (58%)
+are sub-400-byte near-empty stubs. **Honest blocker (stated, not fabricated):** the dump is a
+*listing*, not content; a deleted WD item can't be reconstructed from its opaque QID, deleted
+items aren't publicly retrievable by a non-admin, and the one public inference corpus
+(shinto-wiki ills) is already mined by #8 — so reconstructing the ~420 non-overlapping items
+needs an admin `Special:Undelete` content export only Emma can make. Wrote
+`docs/deleted_immanuelle_items_analysis_2026-07-05.md`; flagged the decision on
+`[[Open questions]]` (repo-side edit — can't reach the wiki, Cloudflare-challenged; the
+git-synced sync is wiki-wins for that page so it can never clobber Emma's copy). Incidental:
+the chat dump confirms the cleanup-loop 07-03/07-04 failures were the known
+category-orchestrator ~160-min timeout, not a code defect.
+
+## 2026-07-05 — Next-session analysis pass: per-item backlog resolution status doc
+
+Emma-requested hand-off. Wrote `docs/backlog_resolution_status_2026-07-05.md` — for each of
+the 8 `BACKLOG_ITEMS` (`site/generate_pages.py`), how far it got this session and what is
+left, tagged RESOLVED / SHIPPED-AUTOMATION / PARTIAL / DEFERRED, with a one-line scoreboard.
+Scoreboard: #1 RESOLVED, #2 RESOLVED, #3 SHIPPED-AUTOMATION (residual = human review),
+#4 SHIPPED-AUTOMATION (~7-page review remnant), #5 PARTIAL (the next-session build thread —
+later gazetteer suffixes + prefecture-disambiguated misses, then the human queue),
+#6 SHIPPED-AUTOMATION (human review), #7 SHIPPED-AUTOMATION (remote cloud-queue routine),
+#8 DEFERRED (info-gathering shipped; per-target research + human-gated recreation remain).
+Sources: the board, todo.md, queue.md, the 2026-07-05 DEVLOG entries. Removed the analysis-
+pass item from queue.md.
+
+## 2026-07-05 — Backlog #2 follow-up: cleared residual the earlier close missed
+
+The earlier same-day "#2 CLOSED" entry (below) re-verified the scripts but left two loose
+ends. Cleared both: (1) the `wiki-cleanup.yml` header comment (lines 19-27) still listed the
+four deleted scripts as "Terminating scripts kept here (review July 2026)" — rewrote it to
+record the review COMPLETE and keep only the forward policy for future terminating scripts;
+(2) the queue.md #2 bullet was still open despite the board/todo already reflecting done —
+removed it. Re-confirmed via `grep` that none of the four scripts exists as a file and none
+is referenced by an active (uncommented) workflow step. (Noted for the status report, not
+part of #2: several `cleanup-loop.yml` scheduled runs 2026-06-29→07-04 show `failure`; the
+07-05 run succeeded — worth a look next loop, not a silently-inert-script symptom.)
 
 ## 2026-07-05 — Backlog #8: deleted-QID recreation info-gathering generator (human-gated)
 

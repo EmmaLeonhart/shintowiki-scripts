@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Dexbot",
+    "comment": "Bot: Automatic deletion of an item that used to have a sitelink that is deleted and doesn't have any good statement, no backlink in main namespace and no sitelinks. Label: \"Fire Calming Festival\" The last deleted sitelink: [[:w:ja:鎮火祭]]",
+    "reason_bucket": "other",
+    "size_bytes": 351,
+    "timestamp": "20240518030848"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q125963787",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

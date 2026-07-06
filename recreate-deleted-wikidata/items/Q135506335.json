@@ -1,0 +1,295 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kumano Shōjō Gongen\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 318,
+    "timestamp": "20250730033233"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كومانو شوجو غونغين",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كومانو شوجو جونجين",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কুমানো শোজো গোনাগেনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কুমানো শোজো গোনাগেনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kumano Šódžó Gongen",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κουμανο Σοτζο Γκονγκεν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کومانو شوجو گونگهن",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "熊野證誠権現",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קומאנו גוןגהן",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कुमनो शोजो गोनगेन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "熊野證誠権現",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kumano Šōjō Gongen",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कुमनो शोजो गोनगेन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कुमानो शोजो गोनागेना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кумано Сёдзё Гонгэн",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kumano Šodžo Gongen",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кумано Сёдзё Гонген",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کومانو شوجو گونگهن",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kumano Shōjō Gongen",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "熊野证诚権现",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "熊野证诚権现",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "熊野证诚権现",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "熊野證誠権現",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "熊野證誠権現",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "熊野證誠権現",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "熊野证诚権现",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "熊野證誠権現",
+        "source": "translit"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": "Kumano Shōjō Gongen",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Architecture of Muromachi period",
+      "Buildings and structures in Hirano-ku, Osaka",
+      "Cultural heritage monuments in Japan",
+      "Edo period architecture",
+      "Former Fu-sha in Osaka",
+      "Gion shrines",
+      "Hirano-ku, Osaka",
+      "History of Hirano Ward",
+      "Important Cultural Properties in Osaka City",
+      "Kasuga-Utsushi",
+      "Ken-sha",
+      "Sakanoue no Tamuramaro",
+      "Shinto shrines in Osaka",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Kumata Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Kumano Shōjō Gongen",
+    "langlinks": {
+      "ja": "熊野證誠権現"
+    },
+    "page": "Kumata Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:50:58Z)",
+    "recovered_qid": "Q135506335"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506335",
+  "recovered_label": "Kumano Shōjō Gongen",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

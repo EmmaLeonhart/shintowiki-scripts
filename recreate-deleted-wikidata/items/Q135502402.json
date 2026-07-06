@@ -1,0 +1,292 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Shima no Yu\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 298,
+    "timestamp": "20250730000203"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "شيما نو يو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "شيما نو يو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "শিমা নো যু",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "শিমা নো যু",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Šima no Ju",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σιμα Νο Γιου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Shima no Yu",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "شیما نو یو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "島之湯",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "he": {
+        "label": "שימא נו יו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "शिम नो यु",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "島の湯",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Šima no Yu",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "शिम नो यु",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "शिमा नो यु",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Сима Но Ю",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Šima no Ju",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Сіма Но Ю",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "شیما نو یو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Shima no Yu",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "岛之汤",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "岛之汤",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "岛之汤",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "島之湯",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "島之湯",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "島之湯",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "岛之汤",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "島之湯",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Shima no Yu",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Regional collective trademarks",
+      "熱海市の地理",
+      "熱海市の歴史",
+      "Hot springs of Shizuoka Prefecture",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with 100+ untranslated japanese characters",
+      "Pages with 150+ untranslated japanese characters",
+      "Pages with 200+ untranslated japanese characters",
+      "Pages with 250+ untranslated japanese characters",
+      "incorrect template category applied",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Atami Onsen"
+    ],
+    "ja_sitelink": null,
+    "label": "Shima no Yu",
+    "langlinks": {
+      "ja": "島の湯"
+    },
+    "page": "Atami Onsen",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:36Z)",
+    "recovered_qid": "Q135502402"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135502402",
+  "recovered_label": "Shima no Yu",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

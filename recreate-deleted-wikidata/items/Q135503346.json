@@ -1,0 +1,59 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Protective Forest for Navigation\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 332,
+    "timestamp": "20250730011556"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Protective Forest for Navigation",
+        "source": "native"
+      },
+      "ja": {
+        "label": "航行目標保安林",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Geography of Shima, Mie",
+      "Geography of Toba, Mie",
+      "Mountain Gazetteers",
+      "Mountains of Mie Prefecture",
+      "Water transport in Japan",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Mount Aonomine"
+    ],
+    "ja_sitelink": null,
+    "label": "Protective Forest for Navigation",
+    "langlinks": {
+      "ja": "航行目標保安林"
+    },
+    "page": "Mount Aonomine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:52:47Z)",
+    "recovered_qid": "Q135503346"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503346",
+  "recovered_label": "Protective Forest for Navigation",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

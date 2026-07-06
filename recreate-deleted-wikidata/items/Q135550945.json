@@ -1,0 +1,65 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kyushu 88 Sacred Sites\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 328,
+    "timestamp": "20250801064016"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kyushu 88 Sacred Sites",
+        "source": "native"
+      },
+      "ja": {
+        "label": "九州八十八箇所霊場",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "九州地方にある日本庭園",
+      "九州西国三十三箇所",
+      "Bettoji Temples",
+      "宗像市の建築物",
+      "宗像市の歴史",
+      "Munakata shrines",
+      "Temples of Shingon-shū Omuro-ha",
+      "Jingū-ji",
+      "Buddhist temples in Fukuoka Prefecture",
+      "福岡県の重要文化財",
+      "Kūkai",
+      "Pages with deleted QID in ill template",
+      "Important Cultural Property of Japan in Fukuoka prefecture"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chinkoku-ji"
+    ],
+    "ja_sitelink": null,
+    "label": "Kyushu 88 Sacred Sites",
+    "langlinks": {
+      "ja": "九州八十八箇所霊場"
+    },
+    "page": "Chinkoku-ji",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:22Z)",
+    "recovered_qid": "Q135550945"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550945",
+  "recovered_label": "Kyushu 88 Sacred Sites",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

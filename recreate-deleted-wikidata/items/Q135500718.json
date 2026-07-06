@@ -1,0 +1,60 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Cedar of Agata Shrine\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 318,
+    "timestamp": "20250729224708"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Cedar of Agata Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "県神社のスギ",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "下呂市の建築物",
+      "下呂市の歴史",
+      "Independent shrines",
+      "Son-sha in Gifu Prefecture",
+      "Shinto shrines in Gifu Prefecture",
+      "Natural Monuments Designated by Gifu Prefecture",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Agata Shrine (Gero City)"
+    ],
+    "ja_sitelink": null,
+    "label": "Cedar of Agata Shrine",
+    "langlinks": {
+      "ja": "県神社のスギ"
+    },
+    "page": "Agata Shrine (Gero City)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:37Z)",
+    "recovered_qid": "Q135500718"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500718",
+  "recovered_label": "Cedar of Agata Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

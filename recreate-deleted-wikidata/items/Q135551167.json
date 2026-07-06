@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Nōnindō Matsuri\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 314,
+    "timestamp": "20250801074611"
+  },
+  "enrichment": {
+    "description_en": "festival in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "نونيندو ماتسوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "نونيندو ماتسوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নোনিনাদো মাত্সুৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নোনিনাদো মাত্সুরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nónindó Macuri",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νονινντο Ματσουρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nōnindō Matsuri",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "نونیندو ماتسوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "能仁堂萬津利",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נוניןדו מאצורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "नोनिनदो मत्सुरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "能仁堂まつり",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "नोनिनदो मत्सुरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "नोनिनादो मात्सुरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Нониндо Мацури",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nonindo Macuri",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Ноніндо Мацурі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "نونیندو ماتسوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nōnindō Matsuri",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "能仁堂万津利",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "能仁堂万津利",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "能仁堂万津利",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "能仁堂萬津利",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "能仁堂萬津利",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "能仁堂萬津利",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "能仁堂万津利",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "能仁堂萬津利",
+        "source": "translit"
+      }
+    },
+    "p31": "Q132241",
+    "p31_label": "festival",
+    "p31_property": "P31",
+    "romaji_reading": "Nōnindō Matsuri",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Nōnindō Matsuri",
+    "langlinks": {
+      "ja": "能仁堂まつり"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551167"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551167",
+  "recovered_label": "Nōnindō Matsuri",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

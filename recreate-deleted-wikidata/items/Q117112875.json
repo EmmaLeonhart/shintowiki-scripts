@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Dexbot",
+    "comment": "Bot: Automatic deletion of an item that used to have a sitelink that is deleted and doesn't have any good statement, no backlink in main namespace and no sitelinks. Label: \"H₂weh₁yú\" The last deleted sitelink: [[:w:simple:H₂weh₁yú]]",
+    "reason_bucket": "other",
+    "size_bytes": 362,
+    "timestamp": "20230314164019"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q117112875",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

@@ -1,0 +1,60 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Hozumi-Suzuki Clan Genealogy\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 367,
+    "timestamp": "20250802035425"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Hozumi-Suzuki Clan Genealogy",
+        "source": "native"
+      },
+      "ja": {
+        "label": "穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Hozumi Clan",
+      "People of Asuka-period Japan",
+      "Wikidata no short description",
+      "Year of birth unknown",
+      "Year of death unknown",
+      "Year_of_birth_unknown",
+      "Year_of_death_unknown",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Hozumi no Kujii"
+    ],
+    "ja_sitelink": null,
+    "label": "Hozumi-Suzuki Clan Genealogy",
+    "langlinks": {
+      "ja": "穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜"
+    },
+    "page": "Hozumi no Kujii",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:37Z)",
+    "recovered_qid": "Q135579116"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579116",
+  "recovered_label": "Hozumi-Suzuki Clan Genealogy",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

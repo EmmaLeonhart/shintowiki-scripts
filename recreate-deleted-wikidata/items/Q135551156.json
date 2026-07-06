@@ -1,0 +1,60 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Yubune Matsuri – Hayabusa Procession\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 347,
+    "timestamp": "20250801074532"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Yubune Matsuri – Hayabusa Procession",
+        "source": "native"
+      },
+      "ja": {
+        "label": "流鏑馬祭・流鏑馬連行",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Yubune Matsuri – Hayabusa Procession",
+    "langlinks": {
+      "ja": "流鏑馬祭・流鏑馬連行"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551156"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551156",
+  "recovered_label": "Yubune Matsuri – Hayabusa Procession",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

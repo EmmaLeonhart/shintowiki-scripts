@@ -1,0 +1,292 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Sengemichihiko\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 378,
+    "timestamp": "20250802040456"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "سينغيميتشيهيكو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "سينجيميتشيهيكو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "সেনাগেমিচিহিকো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "সেনাগেমিচিহিকো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Sengemičihiko",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σενγκεμιτσιχικο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Sengemichihiko",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "سهنگهمیچیهیکو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "千家達彥",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "he": {
+        "label": "סהןגהמיצ׳יהיקו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "सेनगेमिचिहिको",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "千家達彦",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Sengemičihiko",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "सेनगेमिचिहिको",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "सेनागेमिचिहिको",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Сэнгэмитихико",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Sengemičihiko",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Сенгемітіхіко",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "سهنگهمیچیهیکو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Sengemichihiko",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "千家达彦",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "千家达彦",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "千家达彦",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "千家達彥",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "千家達彥",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "千家達彥",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "千家达彦",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "千家達彥",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Sengemichihiko",
+    "type_confidence": "medium",
+    "type_source": "izumo-priest-clan"
+  },
+  "fandom": {
+    "categories": [
+      "1906 establishments in Hawaii",
+      "20th-century Shinto shrines",
+      "Izumo Grand Shrine",
+      "Japanese-American culture",
+      "Japanese-American culture in Honolulu",
+      "Religious buildings and structures completed in 1922",
+      "Religious buildings and structures completed in 1963",
+      "Religious buildings and structures in Honolulu",
+      "Shinto shrines in the United States",
+      "translated pages with valid en interwikis",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo Taishakyo Mission of Hawaii"
+    ],
+    "ja_sitelink": null,
+    "label": "Sengemichihiko",
+    "langlinks": {
+      "ja": "千家達彦"
+    },
+    "page": "Izumo Taishakyo Mission of Hawaii",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-04-28T07:31:07Z)",
+    "recovered_qid": "Q135579352"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579352",
+  "recovered_label": "Sengemichihiko",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

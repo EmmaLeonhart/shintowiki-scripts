@@ -1,0 +1,290 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Chikugo no Kuni Fudoki\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 319,
+    "timestamp": "20250801055050"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical text",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تشيكوغو نو كوني فودوكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تشيكوجو نو كوني فودوكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "চিকুগো নো কুনি ফ়ুদোকি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "চিকুগো নো কুনি ফ়ুদোকি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Čikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τσικουγκο Νο Κουνι Φουντοκι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "چیکوگو نو کونی فودوکی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "he": {
+        "label": "צ׳יקוגו נו קוני פודוקי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "चिकुगो नो कुनि फ़ुदोकि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "筑後国風土記",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Čikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "चिकुगो नो कुनि फ़ुदोकि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "चिकुगो नो कुनि फ़ुदोकि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Тикуго Но Куни Фудоки",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Čikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Тікуго Но Куні Фудокі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "چیکوگو نو کونی فودوکی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Chikugo no Kuni Fudoki",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "筑后国风土记",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "筑後國風土記",
+        "source": "translit"
+      }
+    },
+    "p31": "Q571",
+    "p31_label": "book",
+    "p31_property": "P31",
+    "romaji_reading": "Chikugo no Kuni Fudoki",
+    "type_confidence": "medium",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "528 deaths",
+      "5th-century Japanese people",
+      "6th-century Japanese people",
+      "People of ancient Japan",
+      "People of Kofun-period Japan",
+      "People Who Died in Battle Before the Kofun Period",
+      "Tsukushi no Kimi Iwai",
+      "Wikidata no short description",
+      "Year of birth unknown",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": "Q135550812",
+    "host_pages": [
+      "Tsukushi no Iwai"
+    ],
+    "ja_sitelink": null,
+    "label": "Chikugo no Kuni Fudoki",
+    "langlinks": {
+      "ja": "筑後国風土記"
+    },
+    "page": "Tsukushi no Iwai",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135550812"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550812",
+  "recovered_label": "Chikugo no Kuni Fudoki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

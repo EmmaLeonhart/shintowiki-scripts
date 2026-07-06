@@ -1,0 +1,285 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Ishibuto Daigongen\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 312,
+    "timestamp": "20250801074443"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "إيشيبوتو دايغونغين",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "إيشيبوتو دايجونجين",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ইশিবুতো দাইগোনাগেনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ইশিবুতো দাইগোনাগেনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Išibuto Daigongen",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ισιμπουτο Νταιγκονγκεν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Ishibuto Daigongen",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ایشیبوتو دایگونگهن",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "石鈇大権現",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אישיבוטו דאיגוןגהן",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "इशिबुतो दइगोनगेन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "石鈇大権現",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Išibuto Daigongen",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "इशिबुतो दइगोनगेन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "इशिबुतो दाइगोनागेना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Исибуто Даигонгэн",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Išibuto Daigongen",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Исібуто Даігонген",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ایشیبوتو دایگونگهن",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Ishibuto Daigongen",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "石𫓧大権现",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "石𫓧大権现",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "石𫓧大権现",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "石鈇大権現",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "石鈇大権現",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "石鈇大権現",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "石𫓧大権现",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "石鈇大権現",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Ishibuto Daigongen",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Former Buddhist temples",
+      "Shinbutsu bunri",
+      "Shinbutsu shūgō",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Changes to deities in the Meiji period"
+    ],
+    "ja_sitelink": null,
+    "label": "Ishibuto Daigongen",
+    "langlinks": {
+      "ja": "石鈇大権現"
+    },
+    "page": "Changes to deities in the Meiji period",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:12Z)",
+    "recovered_qid": "Q135551144"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551144",
+  "recovered_label": "Ishibuto Daigongen",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

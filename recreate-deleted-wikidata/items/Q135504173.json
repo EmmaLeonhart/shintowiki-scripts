@@ -1,0 +1,59 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kotsuka Shrine\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 308,
+    "timestamp": "20250730020116"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kotsuka Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "古津賀神社",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Kofun of Kochi prefecture",
+      "Municipal Historic Sites in Kōchi Prefecture",
+      "Municipal History of Shimanto",
+      "Pages using infobox ancient site with unknown parameters",
+      "Round Kofun",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Furutsuka Kofun"
+    ],
+    "ja_sitelink": null,
+    "label": "Kotsuka Shrine",
+    "langlinks": {
+      "ja": "古津賀神社"
+    },
+    "page": "Furutsuka Kofun",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:44:35Z)",
+    "recovered_qid": "Q135504173"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135504173",
+  "recovered_label": "Kotsuka Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

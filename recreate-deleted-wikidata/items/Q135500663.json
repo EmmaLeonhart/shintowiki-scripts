@@ -1,0 +1,61 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Ōmiya Isuzu Shrine\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 319,
+    "timestamp": "20250729224619"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Ōmiya Isuzu Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "大宮五十鈴神社",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Clans of Chūbu Region",
+      "Clans of Shinano Province",
+      "History of Saitama Prefecture",
+      "Japanese clans",
+      "Uji",
+      "History of Nagano Prefecture",
+      "阿智村の歴史",
+      "阿智氏",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Achi clan"
+    ],
+    "ja_sitelink": null,
+    "label": "Ōmiya Isuzu Shrine",
+    "langlinks": {
+      "ja": "大宮五十鈴神社"
+    },
+    "page": "Achi clan",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:34Z)",
+    "recovered_qid": "Q135500663"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500663",
+  "recovered_label": "Ōmiya Isuzu Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Fugen-ji (Hashimoto, Wakayama)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 339,
+    "timestamp": "20250730033124"
+  },
+  "enrichment": {
+    "description_en": "Buddhist temple in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "فوغينجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "فوجينجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ফ়ুগেনাজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ফ়ুগেনাজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Fugendži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Φουγκεντζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Fugen-ji (Hashimoto, Wakayama)",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "فوگهنجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "普賢寺 (橋本市菖蒲谷)",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "פוגהןג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "फ़ुगेनजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "普賢寺 (橋本市菖蒲谷)",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "फ़ुगेनजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "फ़ुगेनाजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Фугэндзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Fugen-dži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Фугендзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "فوگهنجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Fugen-ji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "普贤寺 (桥本市菖蒲谷)",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "普贤寺 (桥本市菖蒲谷)",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "普贤寺 (桥本市菖蒲谷)",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "普賢寺 (橋本市菖蒲谷)",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "普賢寺 (橋本市菖蒲谷)",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "普賢寺 (橋本市菖蒲谷)",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "普贤寺 (桥本市菖蒲谷)",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "普賢寺 (橋本市菖蒲谷)",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5393308",
+    "p31_label": "Buddhist temple",
+    "p31_property": "P31",
+    "romaji_reading": "Fugen-ji",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Buddhist temples in Wakayama Prefecture",
+      "Buildings and structures in Hashimoto, Wakayama",
+      "Common names",
+      "History of Hashimoto, Wakayama",
+      "Kōyasan Shingon temples",
+      "Temples of Kṣitigarbha",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Koyasu Jizō Temple"
+    ],
+    "ja_sitelink": null,
+    "label": "Fugen-ji (Hashimoto, Wakayama)",
+    "langlinks": {
+      "ja": "普賢寺 (橋本市菖蒲谷)"
+    },
+    "page": "Koyasu Jizō Temple",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:09:45Z)",
+    "recovered_qid": "Q135506292"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506292",
+  "recovered_label": "Fugen-ji (Hashimoto, Wakayama)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

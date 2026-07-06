@@ -1,0 +1,289 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Young Venus\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 455,
+    "timestamp": "20250730011812"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "يانغوبيناسو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "يانجوبيناسو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "যানাগুবিনাসু",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "az": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "যানাগুবিনাসু",
+        "source": "translit"
+      },
+      "br": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "jangubiーnasu",
+        "source": "translit"
+      },
+      "da": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Young Venus",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Γιανγκουμπινασου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Young Venus",
+        "source": "native"
+      },
+      "eo": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "es": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "یانگوبیناسو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "he": {
+        "label": "יןגובינאסו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "यनगुबिनसु",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "it": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "ヤングビーナス",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "la": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "यनगुबिनसु",
+        "source": "translit"
+      },
+      "min": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "यानागुबिनासु",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Янгубинасу",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "jangubiーnasu",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Янгубінасу",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "یانگوبیناسو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "war": {
+        "label": "yangubiーnasu",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "年轻维纳斯",
+        "source": "fandom"
+      },
+      "zh-cn": {
+        "label": "也无具尾奈须",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "也无具尾奈须",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "也无具尾奈须",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "也無具尾奈須",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "yangubiーnasu",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Bathing",
+      "Bath additives",
+      "医薬部外品",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages",
+      "Quasi-drugs",
+      "Pages with duplicated content"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Bath Additive"
+    ],
+    "ja_sitelink": null,
+    "label": "Young Venus",
+    "langlinks": {
+      "de": "Young Venus",
+      "ja": "ヤングビーナス",
+      "zh": "年轻维纳斯"
+    },
+    "page": "Bath Additive",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:00Z)",
+    "recovered_qid": "Q135503420"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503420",
+  "recovered_label": "Young Venus",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

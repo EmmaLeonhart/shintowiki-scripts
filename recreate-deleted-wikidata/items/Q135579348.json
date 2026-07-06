@@ -1,0 +1,292 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Miyao Katsuyoshi\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 307,
+    "timestamp": "20250802040438"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ميياو كاتسويوشي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميياو كاتسويوشي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মিযাও কাত্সুযোশি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মিযাও কাত্সুযোশি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mijao Kacujoši",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιγιαο Κατσουγιοσι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Miyao Katsuyoshi",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "مییاو کاتسویوشی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "宮王勝良",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מייו קאצויושי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मियओ कत्सुयोशि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "宮王勝良",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Miyao Katsuyoši",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मियओ कत्सुयोशि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मियाओ कात्सुयोशि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Мияо Кацуёси",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mijao Kacujoši",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Міяо Кацуёсі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "مییاو کاتسویوشی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Miyao Katsuyoshi",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "宫王胜良",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "宫王胜良",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "宫王胜良",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "宮王勝良",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "宮王勝良",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "宮王勝良",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "宫王胜良",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "宮王勝良",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Miyao Katsuyoshi",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "1906 establishments in Hawaii",
+      "20th-century Shinto shrines",
+      "Izumo Grand Shrine",
+      "Japanese-American culture",
+      "Japanese-American culture in Honolulu",
+      "Religious buildings and structures completed in 1922",
+      "Religious buildings and structures completed in 1963",
+      "Religious buildings and structures in Honolulu",
+      "Shinto shrines in the United States",
+      "translated pages with valid en interwikis",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo Taishakyo Mission of Hawaii"
+    ],
+    "ja_sitelink": null,
+    "label": "Miyao Katsuyoshi",
+    "langlinks": {
+      "ja": "宮王勝良"
+    },
+    "page": "Izumo Taishakyo Mission of Hawaii",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:16Z)",
+    "recovered_qid": "Q135579348"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579348",
+  "recovered_label": "Miyao Katsuyoshi",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

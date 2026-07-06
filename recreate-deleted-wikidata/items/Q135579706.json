@@ -1,0 +1,292 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Niwa-tsume no Mikoto\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 311,
+    "timestamp": "20250802042958"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "نيواتسومي نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "نيواتسومي نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নিবাত্সুমে নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নিবাত্সুমে নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nivacume no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νιουατσουμε Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "نیواتسومه نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "ניואצומה נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "निवत्सुमे नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "庭津女命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Niva-tsume no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "निवत्सुमे नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "निवात्सुमे नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Нивацумэ Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Niva-cume no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Нівацуме Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "نیواتسومه نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Niwa-tsume no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "庭津女命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "庭津女命",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Niwa-tsume no Mikoto",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "All disambiguation pages",
+      "Myōjin Taisha",
+      "Shikinaisha in Shinano Province",
+      "Shinto shrines in Nagano Prefecture",
+      "Shrine disambiguations",
+      "shrine disambiguations",
+      "Suwa faith",
+      "Wikidata has short description",
+      "Myōjin Taisha",
+      "Kokuhei-sha",
+      "Pages with deleted QID in ill template",
+      "Independently git synced pages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Takeminakata & Minomikotohikokamiwake Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Niwa-tsume no Mikoto",
+    "langlinks": {
+      "ja": "庭津女命"
+    },
+    "page": "Takeminakata & Minomikotohikokamiwake Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:57:47Z)",
+    "recovered_qid": "Q135579706"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579706",
+  "recovered_label": "Niwa-tsume no Mikoto",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

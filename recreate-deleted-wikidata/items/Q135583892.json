@@ -1,0 +1,287 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Taioshin Sen Chintaku Reifu no Kami\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 255,
+    "timestamp": "20250802193108"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تايوشين سين تشينتاكو رييفو نو كامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تايوشين سين تشينتاكو رييفو نو كامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তাইওশিনা সেনা চিনাতাকু ৰেইফ়ু নো কামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তাইওশিনা সেনা চিনাতাকু রেইফ়ু নো কামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Taiošin Sen Čintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ταιοσιν Σεν Τσιντακου Ρειφου Νο Καμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "تایوشین سهن چینتاکو رهیفو نو کامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "太上神仙鎮宅霊符神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טאיושין סהן צ׳יןטאקו רהיפו נו קאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तइओशिन सेन चिनतकु रेइफ़ु नो कमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "太上神仙鎮宅霊符神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Taiošin Sen Čintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तइओशिन सेन चिनतकु रेइफ़ु नो कमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ताइओशिना सेना चिनाताकु रेइफ़ु नो कामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Таиосин Сэн Тинтаку Рэифу Но Ками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Taiošin Sen Čintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Таіосін Сен Тінтаку Реіфу Но Камі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "تایوشین سهن چینتاکو رهیفو نو کامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Taioshin Sen Chintaku Reifu no Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "太上神仙镇宅霊符神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "太上神仙镇宅霊符神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "太上神仙镇宅霊符神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "太上神仙鎮宅霊符神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "太上神仙鎮宅霊符神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "太上神仙鎮宅霊符神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "太上神仙镇宅霊符神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "太上神仙鎮宅霊符神",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Taioshin Sen Chintaku Reifu no Kami",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Katano, Osaka",
+      "Setsumatsusha",
+      "Shinbutsu shūgō",
+      "Shinto shrines in Osaka Prefecture",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template",
+      "Independently git synced pages"
+    ],
+    "current_ill_qid": "Q135583892",
+    "host_pages": [
+      "Hoshida Myōkengū"
+    ],
+    "ja_sitelink": null,
+    "label": "Taioshin Sen Chintaku Reifu no Kami",
+    "langlinks": {
+      "ja": "太上神仙鎮宅霊符神"
+    },
+    "page": "Hoshida Myōkengū",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135583892"
+  },
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135583892",
+  "recovered_label": "Taioshin Sen Chintaku Reifu no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

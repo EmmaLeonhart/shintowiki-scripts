@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Emu",
+    "comment": "[[Wikidata:Requests for deletions|RfD]]: No evidence for existence.",
+    "reason_bucket": "rfd-no-evidence",
+    "size_bytes": 1535,
+    "timestamp": "20250620101839"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q134988462",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

@@ -1,0 +1,290 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Amanosakitama no mikoto\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 391,
+    "timestamp": "20250730020106"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أمانوساكيتاما نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أمانوساكيتاما نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অমানোসাকিতামা নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অমানোসাকিতামা নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμανοσακιταμα Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Amanosakitama no mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "امانوساکیتاما نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אמאנוסאקיטאמא נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अमनोसकितम नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "天前玉命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अमनोसकितम नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अमानोसाकितामा नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Аманосакитама Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Аманосакітама Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "امانوساکیتاما نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Amanosakitama no mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "天前玉命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "天前玉命",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Amanosakitama no mikoto",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Japanese deities",
+      "Japanese gods",
+      "Japanese people",
+      "Owari clan",
+      "Shinto kami",
+      "Wikidata no short description",
+      "Yamato clan",
+      "Yamato Province",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Furutama-no-Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Amanosakitama no mikoto",
+    "langlinks": {
+      "ja": "天前玉命"
+    },
+    "page": "Furutama-no-Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:44:35Z)",
+    "recovered_qid": "Q135504169"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135504169",
+  "recovered_label": "Amanosakitama no mikoto",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

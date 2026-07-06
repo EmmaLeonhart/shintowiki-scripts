@@ -1,0 +1,289 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Fukane Munetsugu\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 307,
+    "timestamp": "20250729224624"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "فوكاني مونيتسوغو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "فوكاني مونيتسوجو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ফ়ুকানে মুনেত্সুগু",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ফ়ুকানে মুনেত্সুগু",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Fukane Munecugu",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Φουκανε Μουνετσουγκου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Fukane Munetsugu",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "فوکانه مونهتسوگو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "he": {
+        "label": "פוקאנה מונהצוגו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "फ़ुकने मुनेत्सुगु",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "深根宗継",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "फ़ुकने मुनेत्सुगु",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "फ़ुकाने मुनेत्सुगु",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Фуканэ Мунэцугу",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Fukane Munecugu",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Фукане Мунецугу",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "فوکانه مونهتسوگو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Fukane Munetsugu",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "深根宗継",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "深根宗継",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Fukane Munetsugu",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Japanese medical educators of the 8th century",
+      "Japanese physicians of the 8th century",
+      "Japanese medical educators of the 9th century",
+      "9th-century Japanese physicians",
+      "Imperial Bureau of Pharmacology",
+      "Officials of the Ritsuryō System",
+      "Medical educators in Japan",
+      "Acupuncture",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Acupuncture Hakase"
+    ],
+    "ja_sitelink": null,
+    "label": "Fukane Munetsugu",
+    "langlinks": {
+      "ja": "深根宗継"
+    },
+    "page": "Acupuncture Hakase",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:35Z)",
+    "recovered_qid": "Q135500668"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500668",
+  "recovered_label": "Fukane Munetsugu",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

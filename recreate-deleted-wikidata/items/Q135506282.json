@@ -1,0 +1,60 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kōyasan Campaign\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 311,
+    "timestamp": "20250730033106"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Kōyasan Campaign",
+        "source": "native"
+      },
+      "ja": {
+        "label": "高野山攻め",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Buddhist temples in Wakayama Prefecture",
+      "Buildings and structures in Hashimoto, Wakayama",
+      "Common names",
+      "History of Hashimoto, Wakayama",
+      "Kōyasan Shingon temples",
+      "Temples of Kṣitigarbha",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Koyasu Jizō Temple"
+    ],
+    "ja_sitelink": null,
+    "label": "Kōyasan Campaign",
+    "langlinks": {
+      "ja": "高野山攻め"
+    },
+    "page": "Koyasu Jizō Temple",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:09:45Z)",
+    "recovered_qid": "Q135506282"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506282",
+  "recovered_label": "Kōyasan Campaign",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,308 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Shōkyō\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 291,
+    "timestamp": "20250728221200"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 61,
+    "labels": {
+      "ar": {
+        "label": "شوكيو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "شوكيو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "শোক্যো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "শোক্যো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Šókjó",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Shōkyō",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Σοκιο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Shōryaku",
+        "source": "fandom"
+      },
+      "eo": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "شوکیو",
+        "source": "fandom"
+      },
+      "fi": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Ère Shōkei",
+        "source": "fandom"
+      },
+      "gan": {
+        "label": "正恭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "शोक्यो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "正恭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "ko": {
+        "label": "쇼쿄",
+        "source": "fandom"
+      },
+      "la": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Šōkyō",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "शोक्यो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "शोक्यो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Сёкэй",
+        "source": "fandom"
+      },
+      "sh": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "simple": {
+        "label": "Shōkyō",
+        "source": "fandom"
+      },
+      "sl": {
+        "label": "Šokjo",
+        "source": "translit"
+      },
+      "sr": {
+        "label": "Шокјо",
+        "source": "fandom"
+      },
+      "sv": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Shōkyō",
+        "source": "fandom"
+      },
+      "uk": {
+        "label": "Сёкё",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "شوکیو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Shōkyō",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "正慶",
+        "source": "fandom"
+      },
+      "zh-cn": {
+        "label": "正恭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "正恭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "正恭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "正恭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "正恭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "正恭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "正恭",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Shōkyō",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Days 22 of Japanese Lunar months",
+      "Days of the Japanese Lunisolar Calendar",
+      "Lunisolar May",
+      "Tomobiki",
+      "Wikidata has short description",
+      "WikiProject Japanese Calendar"
+    ],
+    "current_ill_qid": "Q1069086",
+    "host_pages": [
+      "May 22 (Lunisolar)",
+      "May 25 (Lunisolar)",
+      "July 23 (Lunisolar)",
+      "August 9 (Lunisolar)",
+      "November 19 (Lunisolar)"
+    ],
+    "ja_sitelink": null,
+    "label": "Shōkyō",
+    "langlinks": {
+      "de": "Shōkyō",
+      "en": "Shōryaku",
+      "fa": "شوکیو",
+      "fr": "Ère Shōkei",
+      "ja": "正恭",
+      "ko": "쇼쿄",
+      "ru": "Сёкэй",
+      "simple": "Shōkyō",
+      "sr": "Шокјо",
+      "tr": "Shōkyō",
+      "zh": "正慶"
+    },
+    "page": "May 22 (Lunisolar)",
+    "qid_matches_rag": false,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q1069086"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135490455",
+  "recovered_label": "Shōkyō",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

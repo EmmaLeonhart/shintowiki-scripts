@@ -1,0 +1,285 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Rokusonōbara Kofun\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 316,
+    "timestamp": "20250729225158"
+  },
+  "enrichment": {
+    "description_en": "kofun (ancient Japanese burial mound)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "روكوسونوبارا كوفون",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "روكوسونوبارا كوفون",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ৰোকুসোনোবাৰা কোফ়ুনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "রোকুসোনোবারা কোফ়ুনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Rokusonóbara Kofun",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ροκουσονομπαρα Κοφουν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Rokusonōbara Kofun",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "روکوسونوبارا کوفون",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "六孫王原古墳",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "he": {
+        "label": "רוקוסונובארא קופון",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "रोकुसोनोबर कोफ़ुन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "六孫王原古墳",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "रोकुसोनोबर कोफ़ुन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "रोकुसोनोबारा कोफ़ुना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Рокусонобара Кофун",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Rokusonobara Kofun",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Рокусонобара Кофун",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "روکوسونوبارا کوفون",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Rokusonōbara Kofun",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "六孙王原古坟",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "六孙王原古坟",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "六孙王原古坟",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "六孫王原古墳",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "六孫王原古墳",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "六孫王原古墳",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "六孙王原古坟",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "六孫王原古墳",
+        "source": "translit"
+      }
+    },
+    "p31": "Q1141225",
+    "p31_label": "kofun",
+    "p31_property": "P31",
+    "romaji_reading": "Rokusonōbara Kofun",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Chiba Heritage Top 100",
+      "Kofun in Chiba Prefecture",
+      "Kofun clusters",
+      "市原市の歴史",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Anesaki Kofun Group"
+    ],
+    "ja_sitelink": null,
+    "label": "Rokusonōbara Kofun",
+    "langlinks": {
+      "ja": "六孫王原古墳"
+    },
+    "page": "Anesaki Kofun Group",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:04Z)",
+    "recovered_qid": "Q135500938"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500938",
+  "recovered_label": "Rokusonōbara Kofun",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

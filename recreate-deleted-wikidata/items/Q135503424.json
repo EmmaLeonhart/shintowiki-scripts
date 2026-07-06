@@ -1,0 +1,289 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Bath Melody\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 445,
+    "timestamp": "20250730011819"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "باسوميرودي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "باسوميرودي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "বাসুমেৰোদে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "az": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "বাসুমেরোদে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "da": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Bath Melody",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Μπασουμεροντε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Bath Melody",
+        "source": "native"
+      },
+      "eo": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "es": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "باسومهروده",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "馬須女路出伊",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "he": {
+        "label": "באסומהרודה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "बसुमेरोदे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "it": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "バスメロディー",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "la": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "बसुमेरोदे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "बासुमेरोदे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Басумэродэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Басумероде",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "باسومهروده",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "war": {
+        "label": "basumerodeぃー",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "浴曲",
+        "source": "fandom"
+      },
+      "zh-cn": {
+        "label": "马须女路出伊",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "马须女路出伊",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "馬須女路出伊",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "馬須女路出伊",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "馬須女路出伊",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "马须女路出伊",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "馬須女路出伊",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "basumerodeぃー",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Bathing",
+      "Bath additives",
+      "医薬部外品",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages",
+      "Quasi-drugs",
+      "Pages with duplicated content"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Bath Additive"
+    ],
+    "ja_sitelink": null,
+    "label": "Bath Melody",
+    "langlinks": {
+      "de": "Bath Melody",
+      "ja": "バスメロディー",
+      "zh": "浴曲"
+    },
+    "page": "Bath Additive",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:00Z)",
+    "recovered_qid": "Q135503424"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503424",
+  "recovered_label": "Bath Melody",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

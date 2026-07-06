@@ -1,0 +1,292 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Sengetakaaki\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 454,
+    "timestamp": "20250802040442"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "سينغيتاكااكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "سينجيتاكااكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "সেনাগেতাকাঅকি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "সেনাগেতাকাঅকি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σενγκετακαακι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Sengetakaaki",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "سهنگهتاکااکی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "he": {
+        "label": "סהןגהטאקאאקי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "सेनगेतकअकि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "千家尊愛",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "सेनगेतकअकि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "सेनागेताकाअकि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Сэнгэтакааки",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Сенгетакаакі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "سهنگهتاکااکی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Sengetakaaki",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "千家尊愛",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "千家尊爱",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "千家尊愛",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Sengetakaaki",
+    "type_confidence": "medium",
+    "type_source": "izumo-priest-clan"
+  },
+  "fandom": {
+    "categories": [
+      "1906 establishments in Hawaii",
+      "20th-century Shinto shrines",
+      "Izumo Grand Shrine",
+      "Japanese-American culture",
+      "Japanese-American culture in Honolulu",
+      "Religious buildings and structures completed in 1922",
+      "Religious buildings and structures completed in 1963",
+      "Religious buildings and structures in Honolulu",
+      "Shinto shrines in the United States",
+      "translated pages with valid en interwikis",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo Taishakyo Mission of Hawaii"
+    ],
+    "ja_sitelink": null,
+    "label": "Sengetakaaki",
+    "langlinks": {
+      "ja": "千家尊愛"
+    },
+    "page": "Izumo Taishakyo Mission of Hawaii",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-04-28T07:31:07Z)",
+    "recovered_qid": "Q135579349"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579349",
+  "recovered_label": "Sengetakaaki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

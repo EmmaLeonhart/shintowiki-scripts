@@ -1,0 +1,284 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Totsumachine no Kami\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 314,
+    "timestamp": "20250730011418"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "توتسوماتشيني نو كامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "توتسوماتشيني نو كامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তোত্সুমাচিনে নো কামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তোত্সুমাচিনে নো কামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Tocumačine no Kami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τοτσουματσινε Νο Καμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Totsumachine no Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "توتسوماچینه نو کامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "遠津待根神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טוצומאצ׳ינה נו קאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तोत्सुमचिने नो कमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "遠津待根神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Totsumačine no Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तोत्सुमचिने नो कमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तोत्सुमाचिने नो कामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Тоцуматинэ Но Ками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Tocumačine no Kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Тоцуматіне Но Камі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "توتسوماچینه نو کامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Totsumachine no Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "远津待根神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "远津待根神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "远津待根神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "遠津待根神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "遠津待根神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "遠津待根神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "远津待根神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "遠津待根神",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Totsumachine no Kami",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Seventeen Generations of Earthly Deities",
+      "Kunitsukami",
+      "Japanese deities",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ame-no-Hibaraooshinadomi-no-Kami"
+    ],
+    "ja_sitelink": null,
+    "label": "Totsumachine no Kami",
+    "langlinks": {
+      "ja": "遠津待根神"
+    },
+    "page": "Ame-no-Hibaraooshinadomi-no-Kami",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:54Z)",
+    "recovered_qid": "Q135503290"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503290",
+  "recovered_label": "Totsumachine no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

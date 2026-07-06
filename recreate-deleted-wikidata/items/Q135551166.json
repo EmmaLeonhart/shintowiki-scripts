@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Tokyo Jidai-sai\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 309,
+    "timestamp": "20250801074608"
+  },
+  "enrichment": {
+    "description_en": "festival in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "توكيو جيدايساي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "توكيو جيدايساي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তোক্যো জিদাইসাই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তোক্যো জিদাইসাই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Tokjo Džidaisai",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τοκιο Τζινταισαι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Tokyo Jidai-sai",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "توکیو جیدایسای",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "東京時代祭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טו ג׳ידאיסאי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तोक्यो जिदइसइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "東京時代祭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तोक्यो जिदइसइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तोक्यो जिदाइसाइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Токё Дзидаисаи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Tokjo Džidai-sai",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Токё Дзідаісаі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "توکیو جیدایسای",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Tokyo Jidai-sai",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "东京时代祭",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "东京时代祭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "东京时代祭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "東京時代祭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "東京時代祭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "東京時代祭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "东京时代祭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "東京時代祭",
+        "source": "translit"
+      }
+    },
+    "p31": "Q132241",
+    "p31_label": "festival",
+    "p31_property": "P31",
+    "romaji_reading": "Tokyo Jidai-sai",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Tokyo Jidai-sai",
+    "langlinks": {
+      "ja": "東京時代祭"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551166"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551166",
+  "recovered_label": "Tokyo Jidai-sai",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,286 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Okutsuhime no Mikoto\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 475,
+    "timestamp": "20250801052043"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أوكوتسوهيمي نو ميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أوكوتسوهيمي نو ميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ওকুত্সুহিমে নো মিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ওকুত্সুহিমে নো মিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Okucuhime no Mikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Οκουτσουχιμε Νο Μικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اوکوتسوهیمه نو میکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "奧津姫命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אוקוצוהימה נו מיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "ओकुत्सुहिमे नो मिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "奥津姫命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "ओकुत्सुहिमे नो मिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ओकुत्सुहिमे नो मिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Окуцухимэ Но Микото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Okucuhime no Mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Окуцухіме Но Мікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اوکوتسوهیمه نو میکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Okutsuhime no Mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "奥津姫命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "奥津姫命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "奥津姫命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "奧津姫命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "奧津姫命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "奧津姫命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "奥津姫命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "奧津姫命",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Okutsuhime no Mikoto",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Buildings and structures in Maebashi",
+      "History of Maebashi",
+      "Former Gō-sha in Gunma Prefecture",
+      "Shinto shrines in Gunma Prefecture",
+      "Akagi Shrines",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Akagi Shrine (Fujimi Town Yokomuro)"
+    ],
+    "ja_sitelink": null,
+    "label": "Okutsuhime no Mikoto",
+    "langlinks": {
+      "ja": "奥津姫命"
+    },
+    "page": "Akagi Shrine (Fujimi Town Yokomuro)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:41Z)",
+    "recovered_qid": "Q135550733"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550733",
+  "recovered_label": "Okutsuhime no Mikoto",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

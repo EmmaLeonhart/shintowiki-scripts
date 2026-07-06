@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Taishōjidai-sai\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 310,
+    "timestamp": "20250801074603"
+  },
+  "enrichment": {
+    "description_en": "festival in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تايشوجيدايساي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تايشوجيدايساي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তাইশোজিদাইসাই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তাইশোজিদাইসাই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Taišódžidaisai",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ταισοτζινταισαι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Taishōjidai-sai",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "تایشوجیدایسای",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "大正時代祭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טאיג׳ידאיסאי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तइशोजिदइसइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "大正時代祭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Taišōjidai-sai",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तइशोजिदइसइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ताइशोजिदाइसाइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Таисёдзидаисаи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Taišodžidai-sai",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Таісёдзідаісаі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "تایشوجیدایسای",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Taishōjidai-sai",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "大正时代祭",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "大正时代祭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "大正时代祭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "大正時代祭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "大正時代祭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "大正時代祭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "大正时代祭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "大正時代祭",
+        "source": "translit"
+      }
+    },
+    "p31": "Q132241",
+    "p31_label": "festival",
+    "p31_property": "P31",
+    "romaji_reading": "Taishōjidai-sai",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Taishōjidai-sai",
+    "langlinks": {
+      "ja": "大正時代祭"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551164"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551164",
+  "recovered_label": "Taishōjidai-sai",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,292 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Sengetakamochi\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 378,
+    "timestamp": "20250802040449"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "سينغيتاكاموتشي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "سينجيتاكاموتشي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "সেনাগেতাকামোচি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "সেনাগেতাকামোচি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Sengetakamoči",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σενγκετακαμοτσι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Sengetakamochi",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "سهنگهتاکاموچی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "he": {
+        "label": "סהןגהטאקאמוצ׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "सेनगेतकमोचि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "千家尊有",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Sengetakamoči",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "सेनगेतकमोचि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "सेनागेताकामोचि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Сэнгэтакамоти",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Sengetakamoči",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Сенгетакамоті",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "سهنگهتاکاموچی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Sengetakamochi",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "千家尊有",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "千家尊有",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Sengetakamochi",
+    "type_confidence": "medium",
+    "type_source": "izumo-priest-clan"
+  },
+  "fandom": {
+    "categories": [
+      "1906 establishments in Hawaii",
+      "20th-century Shinto shrines",
+      "Izumo Grand Shrine",
+      "Japanese-American culture",
+      "Japanese-American culture in Honolulu",
+      "Religious buildings and structures completed in 1922",
+      "Religious buildings and structures completed in 1963",
+      "Religious buildings and structures in Honolulu",
+      "Shinto shrines in the United States",
+      "translated pages with valid en interwikis",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo Taishakyo Mission of Hawaii"
+    ],
+    "ja_sitelink": null,
+    "label": "Sengetakamochi",
+    "langlinks": {
+      "ja": "千家尊有"
+    },
+    "page": "Izumo Taishakyo Mission of Hawaii",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-04-28T07:31:07Z)",
+    "recovered_qid": "Q135579350"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579350",
+  "recovered_label": "Sengetakamochi",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,56 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Agata Shrine (Yokkaichi)\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 327,
+    "timestamp": "20250729224656"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Agata Shrine (Yokkaichi)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "縣神社 (四日市市)",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Shinto shrines with the same name",
+      "Shrine disambiguations",
+      "Independently git synced pages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": "Q135500704",
+    "host_pages": [
+      "Agata Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Agata Shrine (Yokkaichi)",
+    "langlinks": {
+      "ja": "縣神社 (四日市市)"
+    },
+    "page": "Agata Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135500704"
+  },
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135500704",
+  "recovered_label": "Agata Shrine (Yokkaichi)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

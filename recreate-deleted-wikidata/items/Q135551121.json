@@ -1,0 +1,58 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"imitation mirrors\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 312,
+    "timestamp": "20250801074308"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "imitation mirrors",
+        "source": "native"
+      },
+      "ja": {
+        "label": "Bōseikyō",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "考古資料",
+      "Archaeological artifacts",
+      "Bronze mirrors",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages",
+      "Archaeological data"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Bōseikyō"
+    ],
+    "ja_sitelink": null,
+    "label": "imitation mirrors",
+    "langlinks": {
+      "ja": "Bōseikyō"
+    },
+    "page": "Bōseikyō",
+    "qid_matches_rag": false,
+    "qid_source": "history(2026-05-14T23:43:10Z)",
+    "recovered_qid": "Q135551120"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551121",
+  "recovered_label": "imitation mirrors",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

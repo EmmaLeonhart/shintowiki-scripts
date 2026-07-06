@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Mutō Yorisuke\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 305,
+    "timestamp": "20250729224632"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "موتو يوريسوكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "موتو يوريسوكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মুতো যোৰিসুকে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মুতো যোরিসুকে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mutó Jorisuke",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μουτο Γιορισουκε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Mutō Yorisuke",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "موتو یوریسوکه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מוטו יוריסוקה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मुतो योरिसुके",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "武藤頼佐",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मुतो योरिसुके",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मुतो योरिसुके",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Муто Ёрисукэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Muto Jorisuke",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Муто Ёрісуке",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "موتو یوریسوکه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Mutō Yorisuke",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "武藤頼佐",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Mutō Yorisuke",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "1210 births",
+      "1253 deaths",
+      "Adachi Kagemori",
+      "Adachi clan",
+      "引付衆",
+      "Gokenin of the Kamakura shogunate",
+      "鎌倉幕府評定衆",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Adachi Yoshikage"
+    ],
+    "ja_sitelink": null,
+    "label": "Mutō Yorisuke",
+    "langlinks": {
+      "ja": "武藤頼佐"
+    },
+    "page": "Adachi Yoshikage",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:36Z)",
+    "recovered_qid": "Q135500678"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500678",
+  "recovered_label": "Mutō Yorisuke",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

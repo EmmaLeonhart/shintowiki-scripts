@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Hōrin-ji (Wakayama)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 323,
+    "timestamp": "20250730033121"
+  },
+  "enrichment": {
+    "description_en": "Buddhist temple in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "هورينجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "هورينجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "হোৰিনাজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "হোরিনাজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Hórindži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Χοριντζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Hōrin-ji (Wakayama)",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "هورینجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "法輪寺 (和歌山市)",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "הוריןג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "होरिनजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "法輪寺 (和歌山市)",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "होरिनजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "होरिनाजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Хориндзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Horin-dži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Хоріндзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "هورینجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Hōrin-ji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "法轮寺 (和歌山市)",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "法轮寺 (和歌山市)",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "法轮寺 (和歌山市)",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "法輪寺 (和歌山市)",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "法輪寺 (和歌山市)",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "法輪寺 (和歌山市)",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "法轮寺 (和歌山市)",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "法輪寺 (和歌山市)",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5393308",
+    "p31_label": "Buddhist temple",
+    "p31_property": "P31",
+    "romaji_reading": "Hōrin-ji",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Buddhist temples in Wakayama Prefecture",
+      "Buildings and structures in Hashimoto, Wakayama",
+      "Common names",
+      "History of Hashimoto, Wakayama",
+      "Kōyasan Shingon temples",
+      "Temples of Kṣitigarbha",
+      "Wikidata has short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Koyasu Jizō Temple"
+    ],
+    "ja_sitelink": null,
+    "label": "Hōrin-ji (Wakayama)",
+    "langlinks": {
+      "ja": "法輪寺 (和歌山市)"
+    },
+    "page": "Koyasu Jizō Temple",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:09:45Z)",
+    "recovered_qid": "Q135506290"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506290",
+  "recovered_label": "Hōrin-ji (Wakayama)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

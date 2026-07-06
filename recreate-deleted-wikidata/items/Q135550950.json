@@ -1,0 +1,285 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Teiō Henki\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 388,
+    "timestamp": "20250801064035"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical text",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "تييو هينكي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تييو هينكي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তেইও হেনাকি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তেইও হেনাকি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Teió Henki",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τειο Χενκι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Teiō Henki",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "تهیو ههنکی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "帝王編年記",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טהיו ההןקי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तेइओ हेनकि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "帝王編年記",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तेइओ हेनकि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तेइओ हेनाकि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Тэио Хэнки",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Teio Henki",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Теіо Хенкі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "تهیو ههنکی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Teiō Henki",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "帝王编年记",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "帝王编年记",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "帝王编年记",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "帝王編年記",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "帝王編年記",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "帝王編年記",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "帝王编年记",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "帝王編年記",
+        "source": "translit"
+      }
+    },
+    "p31": "Q571",
+    "p31_label": "book",
+    "p31_property": "P31",
+    "romaji_reading": "Teiō Henki",
+    "type_confidence": "medium",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Officials of the Ritsuryō System",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages",
+      "Pages with duplicated content"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "City Offices (Tōji and Sai)"
+    ],
+    "ja_sitelink": null,
+    "label": "Teiō Henki",
+    "langlinks": {
+      "ja": "帝王編年記"
+    },
+    "page": "City Offices (Tōji and Sai)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:29Z)",
+    "recovered_qid": "Q135550950"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135550950",
+  "recovered_label": "Teiō Henki",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

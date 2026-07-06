@@ -1,0 +1,61 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Gōkaku Shrine\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 305,
+    "timestamp": "20250729224647"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Gōkaku Shrine",
+        "source": "native"
+      },
+      "ja": {
+        "label": "合格神社",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Shinto shrines in Ise City",
+      "橋の文化",
+      "125 Shrines of Ise",
+      "Pages with deleted QID in ill template",
+      "Bridges in culture",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with 100+ untranslated japanese characters",
+      "Pages with 150+ untranslated japanese characters",
+      "Pages with 200+ untranslated japanese characters"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Aedo Hashihime Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Gōkaku Shrine",
+    "langlinks": {
+      "ja": "合格神社"
+    },
+    "page": "Aedo Hashihime Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:19Z)",
+    "recovered_qid": "Q135500695"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500695",
+  "recovered_label": "Gōkaku Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

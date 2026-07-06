@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Zuiki-sai\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 299,
+    "timestamp": "20250801074551"
+  },
+  "enrichment": {
+    "description_en": "festival in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "زويكيساي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "زويكيساي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "জ়ুইকিসাই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "জ়ুইকিসাই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Zuikisai",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ζουικισαι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Zuiki-sai",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "زویکیسای",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "頭伊紀祭",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "he": {
+        "label": "זויקיסאי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "ज़ुइकिसइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "ずいき祭",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "ज़ुइकिसइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ज़ुइकिसाइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Дзуикисаи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Дзуікісаі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "زویکیسای",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Zuiki-sai",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "头伊纪祭",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "头伊纪祭",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "头伊纪祭",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "頭伊紀祭",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "頭伊紀祭",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "頭伊紀祭",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "头伊纪祭",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "頭伊紀祭",
+        "source": "translit"
+      }
+    },
+    "p31": "Q132241",
+    "p31_label": "festival",
+    "p31_property": "P31",
+    "romaji_reading": "Zuiki-sai",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Zuiki-sai",
+    "langlinks": {
+      "ja": "ずいき祭"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551161"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551161",
+  "recovered_label": "Zuiki-sai",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

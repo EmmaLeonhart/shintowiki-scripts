@@ -1,0 +1,293 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Mitsumine Ōkami\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 307,
+    "timestamp": "20250802040306"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ميتسوميني أوكامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميتسوميني أوكامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "মিত্সুমিনে ওকামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "মিত্সুমিনে ওকামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Micumine Ókami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιτσουμινε Οκαμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Mitsumine Ōkami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "میتسومینه اوکامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "מיצומינה אוקאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "मित्सुमिने ओकमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "三峰大神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "मित्सुमिने ओकमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "मित्सुमिने ओकामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Мицуминэ Оками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Micumine Okami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Міцуміне Окамі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "میتسومینه اوکامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Mitsumine Ōkami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "三峯大神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "三峰大神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "三峰大神",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Mitsumine Ōkami",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Buildings and structures in Yorii Town",
+      "Former Gō-sha in Saitama Prefecture",
+      "Image Requests for Osato District",
+      "Pages linked to by wikidata",
+      "Shikinaisha in Musashi Province",
+      "Shinto shrines in Saitama Prefecture",
+      "Wikidata has short description",
+      "Shikinai Shōsha",
+      "Kokuhei-sha",
+      "Shikinai Ronsha",
+      "Test cases",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Izumo-no-Iwai Shrine (Yorii Town)"
+    ],
+    "ja_sitelink": null,
+    "label": "Mitsumine Ōkami",
+    "langlinks": {
+      "ja": "三峰大神"
+    },
+    "page": "Izumo-no-Iwai Shrine (Yorii Town)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:15Z)",
+    "recovered_qid": "Q135579318"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579318",
+  "recovered_label": "Mitsumine Ōkami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

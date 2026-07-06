@@ -1,0 +1,3642 @@
+[
+  {
+    "fandom_matched": false,
+    "qid": "Q116480203",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117112875",
+    "reason_bucket": "other",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117479597",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117480737",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117480748",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117480761",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117480779",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117480792",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117480828",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117481365",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117481411",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117501113",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117509466",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q117509620",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q118708738",
+    "reason_bucket": "other",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q118711169",
+    "reason_bucket": "other",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q125963787",
+    "reason_bucket": "other",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q134988419",
+    "reason_bucket": "rfd-no-evidence",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q134988444",
+    "reason_bucket": "rfd-conflation",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q134988458",
+    "reason_bucket": "rfd-no-evidence",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q134988460",
+    "reason_bucket": "rfd-no-evidence",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q134988462",
+    "reason_bucket": "rfd-no-evidence",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q134988474",
+    "reason_bucket": "rfd-no-evidence",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045373",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045376",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045380",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045381",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045382",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045385",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045387",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045388",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045389",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045391",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045401",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135045402",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135069485",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135069951",
+    "reason_bucket": "rfd-other",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135069954",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179880",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179881",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179883",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179889",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179890",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179893",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179894",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179899",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179900",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179906",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179907",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179908",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179910",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179913",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179914",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179927",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179928",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135179929",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185615",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185641",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185642",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185646",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185647",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185690",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185691",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185703",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185718",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185719",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185723",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185724",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185754",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185755",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185765",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185766",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185793",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185794",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185888",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185890",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185969",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135185975",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186016",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186017",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186018",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186019",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186035",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186036",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186038",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186039",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186042",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186043",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186045",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186046",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186648",
+    "reason_bucket": "empty-item",
+    "recovered_label": "jinja-net.jp",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186802",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186803",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186808",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186809",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186812",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186813",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186814",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186817",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186818",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186821",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186826",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186827",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186831",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186834",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186856",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186859",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186880",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186883",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186903",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186908",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186909",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186910",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186912",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186916",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186920",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186921",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186923",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186924",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186928",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186929",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135186930",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135193091",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tenjinsha",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135193368",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135193679",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135193816",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135194833",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135194852",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135194853",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135194981",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135194982",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135194983",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135195285",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135195290",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135195730",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135197287",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135198302",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Aso Shrine (Ronsha 1)",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135199958",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135199985",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135199995",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135206886",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Not Ronsha",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135289776",
+    "reason_bucket": "author-request",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135330122",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Amanomikemunushi no Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135490197",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Haiku Poet",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135490377",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Shimabara Sea",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135490442",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mōka no Shun",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135490455",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Shōkyō",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135490458",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Wakugōda",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135490496",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Chōkui no Sei",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135490857",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135491453",
+    "reason_bucket": "empty-item",
+    "recovered_label": "One Day Spa",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135491601",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakata Norinobu",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135491602",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi Harai Kunkai",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135491605",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi Tsuchitoku",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135491607",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi Ōsō",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135491608",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi no Ōshima",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135491609",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi no Ikemori",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135491610",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi no Momo / Nakatomi Momo-shō",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135491611",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi Sakado clan",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135491612",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi Tokikaze",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135491615",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nakatomi no Amabisha-kyō",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135493039",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Gero Onsen Ryokan Association",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135493131",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yoshikuni Sakurai",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500318",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yukemuri no Shō",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500321",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yukemuri no Sato",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500328",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yumoto Group",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500604",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ritsuryō Forty-Eight Rank System",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500608",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Yasukichi",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500611",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Arimori",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500613",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Arishige",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500617",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Masafumi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500621",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Yasuari",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500624",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Yasutoshi",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500627",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Kiyohiro",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500631",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Gyōshun",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500635",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Yasushige",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500638",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Yasunari",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500641",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Yasutada",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500645",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Chōnaga",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500647",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Yasumi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500650",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Abe no Kintoki",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500658",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kibi no Anaumi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500663",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ōmiya Isuzu Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500665",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamimiya Togata Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500668",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Fukane Munetsugu",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500672",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Katsuragi Takamune",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500675",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tanba Tadayaki",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500678",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mutō Yorisuke",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500682",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Adachi Kagemura",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500687",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Adachi Shigekage",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500691",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Adachi Tokikage",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500695",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Gōkaku Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500704",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Agata Shrine (Yokkaichi)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500707",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Agata Shrine (Izumo)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500709",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ietsumiko no Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500713",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kumano Kusu no Mi no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500718",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Cedar of Agata Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500720",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kimi-no-Mori",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135500723",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Agata no Inukai no Tegoro",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135500938",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Rokusonōbara Kofun",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135501970",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Arakida Moriyoshi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135502402",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Shima no Yu",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135502435",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ōtsuki Hotel",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503287",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Wakajinzume no Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503290",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Totsumachine no Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503326",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Fuyumatsuri",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503346",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Protective Forest for Navigation",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135503382",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Intercalation (timekeeping)",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503392",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tōritsu Shōdai-ji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503402",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Oyayatsuhime no Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503405",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tsumatsuhime no Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503410",
+    "reason_bucket": "empty-item",
+    "recovered_label": "herbal baths",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503417",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Bath Roman",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503420",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Young Venus",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503423",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Asahi Shōnō",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503424",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Bath Melody",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503427",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mineral spring bathhouse",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135503431",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Color Index",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504169",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Amanosakitama no mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504171",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kuroshima Isone hime",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504173",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kotsuka Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504178",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Wago Nembutsu Odori",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504180",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ayato Night Nembutsu and Bon Odori",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504200",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Futagoyama Park (disambiguation)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504246",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mitsurugi Shrine Summer Grand Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504266",
+    "reason_bucket": "empty-item",
+    "recovered_label": "JR Ise Sangu Line",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504271",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kisshō-ji (Gifu)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504275",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Daikaku-ji (Gifu)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135504279",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Cleyera japonica var. grandis",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504283",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Noheji Gion Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504287",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Suga Shrine Gion Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504293",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Enoshima Tenno Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504297",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tanbayama Gion Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504301",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yasaka Shrine Gion Festival (Ryugasaki)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504303",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Fujioka Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504305",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Horikome Naked Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504307",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yamanashi Gion Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504309",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Hosoe Shrine Gion Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504311",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Minami Tenma-chō Tennō Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504314",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ōtenma-chō Tennō Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504358",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Gojō Castle Tenjin Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504457",
+    "reason_bucket": "empty-item",
+    "recovered_label": "The Twelve Heavenly Kings",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135504559",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mononobe no Soshin",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135504561",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Candra-sūrya-pradīpa",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135504575",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ritual Site",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135504611",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nagataki Hakusan Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505918",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Araguchi Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505921",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Arai Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505923",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kameizumi Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505924",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Shimo Koide Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505926",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Sekine Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505928",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Fujimi Town Urushikubo)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505930",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Fujimi Town Yone)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505932",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Fujimi Town Tajima)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505933",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Miyaji Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135505935",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Iwanohana Town)",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505937",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Watanuki Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505939",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Shimotaki Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505941",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kawauchi 2nd Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135505943",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kiryū-shi Kawauchi-chō 5-chōme)",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135505946",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kawauchi 1-chome)",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505947",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Niisato Itabashi Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505949",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Niisato Takei Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505951",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kurohone Yagihara Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505953",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kurohone Shimo Tazawa Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505955",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Miyamae Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505957",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kunisada Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505965",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Sakai Hiratsuka Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505970",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Tone Town Oigami)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505974",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Bōjizuka Town)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505979",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kitakatsushika Town Yasaki)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135505981",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akagi Shrine (Kitakatsushika Town Jonanmu)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135506253",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamado Town",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135506282",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kōyasan Campaign",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135506290",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Hōrin-ji (Wakayama)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135506292",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Fugen-ji (Hashimoto, Wakayama)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135506327",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kumano Pilgrimage",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135506332",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kyoto's Three Kumano Shrines",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135506335",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kumano Shōjō Gongen",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135506353",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nanatsumori Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135524730",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ōnakatomi no Nakabusa",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135524731",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ōnakatomi no Tamenaka",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135524958",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Bouryuu",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135540735",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550732",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Okutsuhiko no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550733",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Okutsuhime no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550734",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tatsuta-hime",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550808",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Chichibu Three Shrines",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550812",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Chikugo no Kuni Fudoki",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550940",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Three Deities of Mount Daisen",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550941",
+    "reason_bucket": "empty-item",
+    "recovered_label": "33 Kannon Pilgrimage of Daisen-ji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135550944",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Chugoku Kannon Pilgrimage",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550945",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kyushu 88 Sacred Sites",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550946",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kyushu 36 Fudō Sacred Sites",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550949",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Inner Palace",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135550950",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Teiō Henki",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551094",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Inari Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551107",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamibe Kige",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551108",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamibe Yukunaa",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551109",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamibe Futamibumi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551110",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamibe Kogui",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551111",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamibe Tsumuji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551112",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamibe Manyo",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551115",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kansei 12",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551117",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Bunka 1",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551119",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Wa mirrors",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551120",
+    "reason_bucket": "empty-item",
+    "recovered_label": "imitation mirrors",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551121",
+    "reason_bucket": "empty-item",
+    "recovered_label": "imitation mirrors",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551123",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kiyotosaku Cave Tomb",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551125",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumizaki Cave Tomb",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551126",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Todoroki Ravine Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551127",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kitaema Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551128",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Jūōmen Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551129",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kitsunedani Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551131",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamikonishi Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551132",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Takatsuku Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551133",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Takenami Site",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551134",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Shiroyama Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551138",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mizumachi Site",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551139",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kozuki Cave Tomb",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551140",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ishinuki Nagino Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551141",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ishinuki Anakanon Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551142",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nabeta Cave Tomb Cluster",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551144",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ishibuto Daigongen",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551145",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kushimikenu-no-mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551146",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Konomine-dera",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551147",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Jisshōji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551148",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kōshin-dō",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551149",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Benten-gū",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551150",
+    "reason_bucket": "empty-item",
+    "recovered_label": "rope attachment projections",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551151",
+    "reason_bucket": "empty-item",
+    "recovered_label": "rhyolitic welded tuff",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551153",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mago Matsuri",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551154",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yanaginawa Matsuri",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551155",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Hanayome Matsuri",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551156",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yubune Matsuri – Hayabusa Procession",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551157",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mifune Matsuri",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551158",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Taikō Matsuri",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551159",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Yamanari Gion Matsuri",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551160",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kagoshima Summer Matsuri",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551161",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Zuiki-sai",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551162",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Akama Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551163",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tenmon-sai",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551164",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Taishōjidai-sai",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551166",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tokyo Jidai-sai",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551167",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nōnindō Matsuri",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551168",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Benten Chigo",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551169",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Tokyo Hana Matsuri",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551170",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Miyajima Kanzen-sai",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135551182",
+    "reason_bucket": "empty-item",
+    "recovered_label": "東白川郡棚倉町八槻",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135551185",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Suitengu Dedication Fireworks Festival",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135578954",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Himuro Falls",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579030",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Five Deities of Heaven, Earth, and Man",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579071",
+    "reason_bucket": "empty-item",
+    "recovered_label": "health science",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579075",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579080",
+    "reason_bucket": "empty-item",
+    "recovered_label": "balneology",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579083",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579085",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579089",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579092",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579116",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Hozumi-Suzuki Clan Genealogy",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579120",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Moriyama Hyōtan-yama Kofun",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579124",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Hyōtan-tsuka Kofun (Moka)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579128",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kamihamada Kofun Group",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579132",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Hyōtan-tsuka Kofun (Shizuoka)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579136",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nishinohara Kofun Group",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579148",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Iga-hiko",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579154",
+    "reason_bucket": "empty-item",
+    "recovered_label": "御匙",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579157",
+    "reason_bucket": "empty-item",
+    "recovered_label": "御鑰",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579162",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nozaki Oki-no-Kami Tsunayoshi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579218",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ne no Kuni",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579220",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Suga-no-Sawa Kofun Cluster",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579221",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Suga-no-Sawa Gobyō Kofun",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579222",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Imajuku Kofun Group",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579240",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ama Inukai no Muraji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579241",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Waka Inukai no Muraji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579242",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Azumi Inukai no Muraji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579243",
+    "reason_bucket": "empty-item",
+    "recovered_label": "calendar makers",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579244",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579247",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Ontoku‐ji",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579263",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Five Gongen",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579264",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Isurugi Hiko",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579265",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Gosha Gongen",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579269",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Sawaetahara-Rokurohiko-no-Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579270",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Myokenzan Kofun (Muko City)",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579295",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Iwakia Betsuō Tomb",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579296",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Nihon Kodai Shizoku Jinmei Jiten",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579297",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mitarashi-hime",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579300",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Iwa tsuku wake no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579307",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Jippāramitsu-ji",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579308",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Iyozuhiko no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579309",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Iyozuhime no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579317",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kōkage Ōkami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579318",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mitsumine Ōkami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579319",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kohō Ōkami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579322",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Abashiri Church",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579324",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Misanjin Church",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579325",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Hakodate Church",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579327",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Shonai Church",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579328",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Sakunomiya Religious Society",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579340",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Doi Church",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579341",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Karatsu Church",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579343",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Takachiho Church",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579345",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Izumo-taisha Malaysia Religious Society",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579347",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Iyo Shichifukujin Sacred Sites",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579348",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Miyao Katsuyoshi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579349",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Sengetakaaki",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579350",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Sengetakamochi",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579351",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Miyao Shigemaru",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579352",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Sengemichihiko",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579353",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Aogaki Publishing",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579531",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Pre-Ainu theory",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579532",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Formation of Sect Shinto",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579538",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Morimasa Hachiman Shrine",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579580",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579582",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135579622",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Melchior (Kamo clan)",
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579704",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Kawa-no-Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579705",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Mori-no-Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135579706",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Niwa-tsume no Mikoto",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135583587",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": true,
+    "qid": "Q135583892",
+    "reason_bucket": "empty-item",
+    "recovered_label": "Taioshin Sen Chintaku Reifu no Kami",
+    "recreation_candidate": true,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597509",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597623",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597633",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597652",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597670",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597787",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597814",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597824",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597854",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597873",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597891",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597910",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597929",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597967",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597976",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135597993",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598002",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598012",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598033",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598043",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598052",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598116",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598159",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598169",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598179",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598190",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598201",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598235",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598246",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598257",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598268",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598279",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q135598322",
+    "reason_bucket": "batch-improperly-created",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": true
+  },
+  {
+    "fandom_matched": false,
+    "qid": "Q137394543",
+    "reason_bucket": "empty-item",
+    "recovered_label": null,
+    "recreation_candidate": false,
+    "self_deleted": false
+  }
+]

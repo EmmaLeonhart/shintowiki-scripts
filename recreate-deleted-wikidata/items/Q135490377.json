@@ -1,0 +1,284 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Shimabara Sea\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 300,
+    "timestamp": "20250728215620"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "شيمابارا سيا",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "شيمابارا سيا",
+        "source": "translit"
+      },
+      "as": {
+        "label": "শিমাবাৰা সেঅ",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "শিমাবারা সেঅ",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Šimabara Sea",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Σιμαμπαρα Σεα",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Shimabara Sea",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "شیمابارا سها",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "島原海",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "he": {
+        "label": "שימאבארא סהא",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "शिमबर सेअ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "島原海",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Šimabara Sea",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "शिमबर सेअ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "शिमाबारा सेअ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Симабара Сэа",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Šimabara Sea",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Сімабара Сеа",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "شیمابارا سها",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Shimabara Sea",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "岛原海",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "岛原海",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "岛原海",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "島原海",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "島原海",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "島原海",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "岛原海",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "島原海",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Shimabara Sea",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Days",
+      "旧暦4月",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "April 1 (Lunisolar)"
+    ],
+    "ja_sitelink": null,
+    "label": "Shimabara Sea",
+    "langlinks": {
+      "ja": "島原海"
+    },
+    "page": "April 1 (Lunisolar)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:10Z)",
+    "recovered_qid": "Q135490377"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135490377",
+  "recovered_label": "Shimabara Sea",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

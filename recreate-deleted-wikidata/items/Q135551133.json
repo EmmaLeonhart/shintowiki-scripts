@@ -1,0 +1,250 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Takenami Site\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 304,
+    "timestamp": "20250801074400"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 49,
+    "labels": {
+      "ar": {
+        "label": "تاكينامي إيتي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "تاكينامي إيتي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তাকেনামি ইতে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তাকেনামি ইতে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τακεναμι Ιτε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Takenami Site",
+        "source": "fandom"
+      },
+      "eo": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "تاکهنامی ایته",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טאקהנאמי איטה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तकेनमि इते",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "jv": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तकेनमि इते",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ताकेनामि इते",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Такэнами Итэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Такенамі Ите",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "تاکهنامی ایته",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Takenami Site",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Takenami Site",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Takenami Site",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "埼玉県の古墳",
+      "東松山市の歴史",
+      "群集墳",
+      "Pages with interwikis with duplicate languages",
+      "Gunshūfun",
+      "Kofun of Saitama prefecture"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Bikuniyama Yokoanabo Cluster",
+      "Hikoshigaya Yokoanabo Cluster",
+      "Takane Yokoanabo Cluster",
+      "Kuroiwa Yokoanabo Cluster",
+      "Jūrō Yokoanabo Cluster"
+    ],
+    "ja_sitelink": null,
+    "label": "Takenami Site",
+    "langlinks": {
+      "en": "Takenami Site"
+    },
+    "page": "Bikuniyama Yokoanabo Cluster",
+    "qid_matches_rag": false,
+    "qid_source": null,
+    "recovered_qid": null
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551133",
+  "recovered_label": "Takenami Site",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

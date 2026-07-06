@@ -1,0 +1,69 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"herbal baths\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 433,
+    "timestamp": "20250730011754"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 4,
+    "labels": {
+      "de": {
+        "label": "Kräuterbäder",
+        "source": "fandom"
+      },
+      "en": {
+        "label": "herbal baths",
+        "source": "native"
+      },
+      "ja": {
+        "label": "薬湯",
+        "source": "fandom"
+      },
+      "zh": {
+        "label": "药汤",
+        "source": "fandom"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": null,
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Bathing",
+      "Bath additives",
+      "医薬部外品",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages",
+      "Quasi-drugs",
+      "Pages with duplicated content"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Bath Additive"
+    ],
+    "ja_sitelink": null,
+    "label": "herbal baths",
+    "langlinks": {
+      "de": "Kräuterbäder",
+      "ja": "薬湯",
+      "zh": "药汤"
+    },
+    "page": "Bath Additive",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:00Z)",
+    "recovered_qid": "Q135503410"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503410",
+  "recovered_label": "herbal baths",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

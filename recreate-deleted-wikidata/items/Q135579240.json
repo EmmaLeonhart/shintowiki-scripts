@@ -1,0 +1,283 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Ama Inukai no Muraji\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 311,
+    "timestamp": "20250802035843"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أما إينوكاي نو موراجي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أما إينوكاي نو موراجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অমা ইনুকাই নো মুৰাজি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অমা ইনুকাই নো মুরাজি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Ama Inukai no Muradži",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμα Ινουκαι Νο Μουρατζι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Ama Inukai no Muraji",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اما اینوکای نو موراجی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "海犬養連",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אמא אינוקאי נו מוראג׳י",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अम इनुकइ नो मुरजि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "海犬養連",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अम इनुकइ नो मुरजि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अमा इनुकाइ नो मुराजि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Ама Инукаи Но Мурадзи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Ama Inukai no Muradži",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Ама Инукаі Но Мурадзі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اما اینوکای نو موراجی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Ama Inukai no Muraji",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "海犬养连",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "海犬养连",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "海犬养连",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "海犬養連",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "海犬養連",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "海犬養連",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "海犬养连",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "海犬養連",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Ama Inukai no Muraji",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "Bumin",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Inukaibe"
+    ],
+    "ja_sitelink": null,
+    "label": "Ama Inukai no Muraji",
+    "langlinks": {
+      "ja": "海犬養連"
+    },
+    "page": "Inukaibe",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-05T10:01:13Z)",
+    "recovered_qid": "Q135579240"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579240",
+  "recovered_label": "Ama Inukai no Muraji",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

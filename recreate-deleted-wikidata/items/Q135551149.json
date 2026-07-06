@@ -1,0 +1,285 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Benten-gū\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 297,
+    "timestamp": "20250801074504"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "بينتينغو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "بينتينجو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "বেনাতেনাগু",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "বেনাতেনাগু",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Bentengú",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μπεντενγκου",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Benten-gū",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "بهنتهنگو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "弁天宮",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "he": {
+        "label": "בהןטהןגו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "बेनतेनगु",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "弁天宮",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "बेनतेनगु",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "बेनातेनागु",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Бэнтэнгу",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Benten-gu",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Бентенгу",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "بهنتهنگو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Benten-gū",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "弁天宫",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "弁天宫",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "弁天宫",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "弁天宮",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "弁天宮",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "弁天宮",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "弁天宫",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "弁天宮",
+        "source": "translit"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": "Benten-gū",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Former Buddhist temples",
+      "Shinbutsu bunri",
+      "Shinbutsu shūgō",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Changes to deities in the Meiji period"
+    ],
+    "ja_sitelink": null,
+    "label": "Benten-gū",
+    "langlinks": {
+      "ja": "弁天宮"
+    },
+    "page": "Changes to deities in the Meiji period",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:12Z)",
+    "recovered_qid": "Q135551149"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551149",
+  "recovered_label": "Benten-gū",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

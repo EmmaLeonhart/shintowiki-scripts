@@ -6,16 +6,6 @@ Bulk LLM-grunge work (duplicated_content reorg, need_translation translation, fa
 
 ---
 
-## Standardization — deferred tails (need new transliterators; not CI-gated)
-
-- **th** (33/135 labels): needs a real Thai transliterator (pre-posed vowel
-  signs); build only as its own deliberate task.
-- **pa/km/lo/dz/new/mad/shn** (≤16 labels each): no script converter, 0-2
-  observed labels — revisit only if a converter arrives or Sonnet does them.
-- **cdo**: zero observed labels, mixed-script wiki — parked with evidence.
-
----
-
 ## Multilingual label generalization (BFS-driven)
 
 Goal: name every important Shinto entity in all ~60 covered languages. All the
@@ -91,10 +81,10 @@ word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he �
 
 ## Backlog board barrel-through (2026-07-05 session)
 
-Working the 8 `BACKLOG_ITEMS` (`site/generate_pages.py`). #1 and #2 done this session;
+Working the 8 `BACKLOG_ITEMS` (`site/generate_pages.py`). #1 + #2 DONE this session;
 #3/#4/#6/#7 are shipped-automation whose residual is inherent human review / remote-
-routine (not build tasks). The genuinely-buildable remainder is #5 (Japanese category
-names, phased) and #8 (recreate deleted Wikidata items, below).
+routine (not build tasks); #8 has its own continuation section below; the analysis pass
+its own section further down. Nothing buildable left in the board itself.
 
 ## Backlog #8 — recreate deleted Wikidata items (CONTINUATION for a future session)
 
@@ -111,26 +101,19 @@ jawiki-article existence gates the sitelink (notability anchor); ja-already-link
 live-item flags probable duplicates (2 found). Only **7/304** currently have a safe
 jawiki sitelink → the rest need content before they'd survive re-deletion.
 
-**Remaining (NOT this session — recreation itself is out of scope, per Emma):**
+**Remaining:**
 - [ ] Per-target research to give each item enough content to not be auto-deleted again
-  (Wikidata churn is the risk). The count (304, only ~36 with recovered QIDs) is small
-  enough to research individually. Enrich `CREATE` blocks with whatever authoritative
-  data can be found (claims, better sitelinks, descriptions) beyond the current
-  labels+provenance.
-- [ ] Decide the minimum viable claim set per target-type (person / shrine / facility /
-  concept) that survives Wikidata deletion review.
-- [ ] Only after review: feed vetted blocks through the QuickStatements pipeline
-  (human-gated; still respect the WD-editing rules in CLAUDE.md).
+  (autonomous RAG — like the fandom crossref already done). Enrich `CREATE` blocks with
+  authoritative data (claims, better sitelinks, descriptions) beyond labels+provenance.
+- The min-claim-set-per-type decision + recreation go/no-go + human-gated QS submission are
+  **NEEDS-DECISION (Emma)** → see "Blockers awaiting Emma" at the queue end.
 
-## Backlog #8 — recreation-data build for deleted ill-target items (Emma-directed 2026-07-05)
+## Next-session analysis pass — DONE (2026-07-05)
 
-Context dump reviewed: `chat dump.md` = the interrupted session's transcript (its work is
-already committed: #1/#2/#5c/#8-generator); `deleted.txt` = an XTools list of **455**
-Immanuelle-created-then-deleted QIDs (QID + date + byte-size + Undelete/Log links, **no item
-content**). Cross-ref confirmed: **35 of the 38** QIDs the #8 generator recovered are in that
-dump. Deletion-log diving is NOT needed — content was already reconstructed from live wiki
-`{{ill}}` templates into `recreate-deleted-wikidata/review.md` + `recreate_quickstatements.txt`
-(304 targets, trimmed to actually-linked-on-the-wiki).
+Written per-item "resolved / partial / not started + what's left" over all 8 backlog
+problems shipped to `docs/backlog_resolution_status_2026-07-05.md`. Highest-value
+remaining build thread flagged there: **#5 phase (c) tail** (later gazetteer suffixes +
+misses). #8 per-target research is larger but content/Emma-gated.
 
 Emma's taxonomy (sorting rule): **empty stubs = real things → recreate**; **deletion-requested
 = usually duplicates → relink to the existing live item, not recreate**; **deleted-but-still-
@@ -138,20 +121,76 @@ used-on-wiki = the complicated middle** (our 304 are all used). Build the datase
 (all LOCAL/read-only until the final human-gated submission; respect the Wikidata QS-only +
 freeze rules — recreation itself stays human-gated):
 
-1. [ ] **Consolidate into a structured JSON.** The generator currently keeps only ONE source
-  page per target and emits no JSON. Produce `targets.json` keyed per deleted target with:
-  ALL articles that link it (not just the first), old QID (`dd=` where preserved, else null),
-  ja label, en label, other-language labels already present (de/zh are common), + enrichment
-  flags (existing live Wikidata QID, ja-article-exists). Keep the `.txt`/`.md` outputs.
-2. [ ] **Add bare-minimum P31/P279.** Per target type (person / shrine / facility / concept)
-  add instance-of / subclass-of so a recreated item is minimally valid. Human-reviewable; no submit.
-3. [ ] **Translate labels to more languages** where the base labels support it (many already
-  carry zh/de).
-4. [ ] **Genealogy targets: link relatives.** The Abe-no-X / clan people need P22/P25/relatives
-  pulled from their source articles.
-5. [ ] **Dedup RAG.** A more thorough check that each target doesn't already have a live
-  Wikidata item (beyond the ja-sitelink test) before it counts as a recreation candidate.
+## Context dump + agentic RAG on deleted Immanuelle-created Wikidata items — PROCESSED (2026-07-05)
+
+Context dump reviewed. Full analysis: `docs/deleted_immanuelle_items_analysis_2026-07-05.md`.
+Facts: `context dump/deleted.txt` is an XTools export of **455 deleted Immanuelle-created
+Q-items** (list only — QID + timestamp + byte-size + admin-gated undelete link; NO content);
+`chat dump.md` is the interrupted-session transcript (backlog #1/#2/#8, no deleted-item
+content). **35** of the deleted QIDs overlap backlog #8's recovered ill-target set — those
+are already covered by #8 (content sourced from shinto-wiki ills, not the deleted items).
+
+RAG DONE (corrected — my earlier "blocked" call was wrong): the deletion LOGS are public.
+`rag_deleted_logs.py` recovered **273 clean English labels** from `content was:"X"` log
+comments (kami, shrines, Izumo-taisha branch churches, people). Buckets: 322 empty-item /
+96 author-request / 26 self-initiated batch / 7 RfD. ~122 were Emma's OWN deletions
+(author-request + batch) → leave unless she says.
+
+RECOVERY via FANDOM (Emma's steer — don't rely on labels alone; the QID is saved discreetly in
+`dd=` for some ills and is in the fandom page HISTORY for the rest; fandom is NOT
+Cloudflare-blocked). `crossref_deleted_labels.py` (rebuilt against shinto.fandom.com, verified
+live from dev) finds the fandom `{{ill|<label>|…}}` for each recovered label and pulls the
+per-language langlinks (recreation content — they survive the `qid=DELETED_QID` overwrite),
+the current ill qid (`dd=` recoveries), the host page, and (`--deep`) the ORIGINAL qid from
+history (proven: `Niwa-tsume no Mikoto` → `Q135579706`, matches the RAG). Pure logic unit-tested
+(8 cases, green). Report: `shinto_wiki_crossref.md/.json`. Also wired into
+`recreate-deleted-crossref.yml` (weekly refresh).
+
+Full `--deep` fandom run done: 272 labels → **215 matched, 213 with per-language langlinks,
+203 with the original QID recovered from history AND validated against the RAG** (+ host-page
+categories + jawiki sitelink + context per item). Report: `shinto_wiki_crossref.md/.json`.
+The ~122 self-deleted (author-request + batch) are **moot — confirmed NOT on the wikis**
+(0/122 labeled, 0/15 sampled QIDs referenced on fandom); dropped from scope. Recreation
+surface = the ~213 fandom-matched, langlink-bearing items (203 QID-anchored).
+
+- [ ] **NEEDS-INVESTIGATION (next loop) — vet the ~213 fandom-matched candidates** (per-item
+  data in `shinto_wiki_crossref.md`) and feed the strong ones through #8's human-gated
+  generator, respecting the CLAUDE.md Wikidata rules. 203 are QID-anchored; the ~12
+  label-only matches + the 57 unmatched need a closer look.
 
 Pinned tail (keep last, always):
 - [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
+
+---
+
+## Blockers — parked at queue end (awaiting Emma; mirrored to [[Open questions]] 2026-07-05)
+
+These are the not-done items that need Emma's decision/action or are deferred by her explicit
+instruction. The work-loop skips them (they're parked, not top-actionable). Autonomous work
+items (vet the 213 candidates; per-target enrichment RAG) stay in their sections above.
+
+- [ ] **NEEDS-DECISION (Emma) — recreate the deleted items? + min claim set per type.** The
+  fandom crossref recovered ~213 deleted Immanuelle items (203 QID-anchored) with per-language
+  content (`recreate-deleted-wikidata/shinto_wiki_crossref.md`). The ~122 self-deleted are moot
+  (not on the wikis). Decision needed: (a) do you want the recoverable set recreated on Wikidata
+  at all; (b) the minimum viable claim set per target-type (person / shrine / facility / concept)
+  that survives Wikidata deletion review. Actual creation is human-gated + off-limits autonomously
+  (CLAUDE.md WD rules); nothing goes to Wikidata without your go-ahead.
+
+- [ ] **OUT-OF-SCOPE / deferred by Emma — `Template:Ill` wrongful-deletion fix** (investigate
+  only when reached). The fandom bot deletes `shinto.fandom.com/wiki/Template:Ill` on a recurring
+  schedule ("Bot: no Shinto equivalent time triggered pipeline"; observed 2026-06-30, 2026-07-05
+  — recurs every few days). Root cause: the "delete fandom pages with no miraheze equivalent" op
+  likely isn't counting a miraheze REDIRECT as an equivalent, so it wrongly orphans+deletes it.
+  - **IMMEDIATE MITIGATION (Emma — critical, do first):** make `Template:Ill` a git-synced page
+    on BOTH wikis (force-present on miraheze + fandom) so the equivalence check passes and the
+    sync restores it if deleted.
+  - **ROOT-CAUSE FOLLOW-UP:** make the no-equivalent check follow/count redirect targets on the
+    miraheze side before deleting (fandom delete-orphans / fandom-cleanup pipeline).
+
+- [ ] **OUT-OF-SCOPE / needs a build decision — long-tail language transliterators.** `th` Thai
+  (33/135 labels) needs a real Thai transliterator (pre-posed vowel signs) — build only as its
+  own deliberate task. `pa/km/lo/dz/new/mad/shn` (≤16 labels each): no script converter, 0-2
+  observed labels. `cdo`: zero observed labels, mixed-script wiki. Parked with evidence; revisit
+  only if Emma wants a transliterator built or a converter arrives.

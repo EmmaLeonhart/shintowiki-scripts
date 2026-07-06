@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Intercalation (timekeeping)\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 393,
+    "timestamp": "20250730011700"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503382",
+  "recovered_label": "Intercalation (timekeeping)",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

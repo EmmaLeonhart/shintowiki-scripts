@@ -1,0 +1,290 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi no Amabisha-kyō\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 328,
+    "timestamp": "20250729004919"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ناكاتومي نو أمابيشاكيو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ناكاتومي نو أمابيشاكيو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নাকাতোমি নো অমাবিশাক্যো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নাকাতোমি নো অমাবিশাক্যো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nakatomi no Amabišakjó",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νακατομι Νο Αμαμπισακιο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ناکاتومی نو امابیشاکیو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "中臣阿麻毘舎卿連",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נאקאטומי נו אמאבי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "नकतोमि नो अमबिशक्यो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "中臣阿麻毘舎卿連",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nakatomi no Amabiša-kyō",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "नकतोमि नो अमबिशक्यो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "नाकातोमि नो अमाबिशाक्यो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Накатоми Но Амабисякё",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nakatomi no Amabiša-kjo",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Накатомі Но Амабісякё",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ناکاتومی نو امابیشاکیو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nakatomi no Amabisha-kyō",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "中臣阿麻毘舎卿连",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "中臣阿麻毘舎卿连",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "中臣阿麻毘舎卿连",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "中臣阿麻毘舎卿連",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "中臣阿麻毘舎卿連",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "中臣阿麻毘舎卿連",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "中臣阿麻毘舎卿连",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "中臣阿麻毘舎卿連",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Nakatomi no Amabisha-kyō",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "Characters in Japanese mythology",
+      "Nakatomi clan",
+      "People of ancient Japan",
+      "People of Kofun-period Japan",
+      "Wikidata no short description",
+      "Year of birth unknown",
+      "Year of death unknown",
+      "Year_of_birth_unknown",
+      "Year_of_death_unknown",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ōbashi no Mikoto"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi no Amabisha-kyō",
+    "langlinks": {
+      "ja": "中臣阿麻毘舎卿連"
+    },
+    "page": "Ōbashi no Mikoto",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:59:42Z)",
+    "recovered_qid": "Q135491615"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491615",
+  "recovered_label": "Nakatomi no Amabisha-kyō",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

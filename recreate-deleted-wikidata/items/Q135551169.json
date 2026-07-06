@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Tokyo Hana Matsuri\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 312,
+    "timestamp": "20250801074619"
+  },
+  "enrichment": {
+    "description_en": "festival in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "توكيو هانا ماتسوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "توكيو هانا ماتسوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "তোক্যো হানা মাত্সুৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "তোক্যো হানা মাত্সুরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Tokjo Hana Macuri",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Τοκιο Χανα Ματσουρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "توکیو هانا ماتسوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "東京花祭利",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "he": {
+        "label": "טו האנא מאצורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "तोक्यो हन मत्सुरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "東京花祭り",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "तोक्यो हन मत्सुरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "तोक्यो हाना मात्सुरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Токё Хана Мацури",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Tokjo Hana Macuri",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Токё Хана Мацурі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "توکیو هانا ماتسوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Tokyo Hana Matsuri",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "东京花祭利",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "东京花祭利",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "东京花祭利",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "東京花祭利",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "東京花祭利",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "東京花祭利",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "东京花祭利",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "東京花祭利",
+        "source": "translit"
+      }
+    },
+    "p31": "Q132241",
+    "p31_label": "festival",
+    "p31_property": "P31",
+    "romaji_reading": "Tokyo Hana Matsuri",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Tokyo Hana Matsuri",
+    "langlinks": {
+      "ja": "東京花祭り"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551169"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551169",
+  "recovered_label": "Tokyo Hana Matsuri",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,291 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Oyayatsuhime no Kami\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 314,
+    "timestamp": "20250730011743"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أوياياتسوهيمي نو كامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أوياياتسوهيمي نو كامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ওযাযাত্সুহিমে নো কামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ওযাযাত্সুহিমে নো কামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Ojajacuhime no Kami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ογιαγιατσουχιμε Νο Καμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "اویایاتسوهیمه نو کامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אוייצוהימה נו קאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "ओययत्सुहिमे नो कमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "大屋津媛神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "ओययत्सुहिमे नो कमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "ओयायात्सुहिमे नो कामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Ояяцухимэ Но Ками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Ojajacuhime no Kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Ояяцухіме Но Камі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "اویایاتسوهیمه نو کامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Oyayatsuhime no Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "大屋津媛神",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Oyayatsuhime no Kami",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "京都市の画像提供依頼",
+      "Shinto shrines in Kyoto",
+      "Former Fu-sha in Kyoto",
+      "東山区の建築物",
+      "東山区の歴史",
+      "Gion shrines",
+      "Shinto shrines of Jinja Honkyō",
+      "粟田口",
+      "Chinjusha",
+      "Pages with deleted QID in ill template",
+      "Buildings and structures in Higashiyama-ku, Kyoto"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Awata Shrine"
+    ],
+    "ja_sitelink": null,
+    "label": "Oyayatsuhime no Kami",
+    "langlinks": {
+      "ja": "大屋津媛神"
+    },
+    "page": "Awata Shrine",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:42:54Z)",
+    "recovered_qid": "Q135503402"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135503402",
+  "recovered_label": "Oyayatsuhime no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

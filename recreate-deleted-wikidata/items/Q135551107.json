@@ -1,0 +1,287 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kamibe Kige\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 372,
+    "timestamp": "20250801074225"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميبي كيغي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميبي كيجي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিবে কিগে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিবে কিগে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamibe Kige",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Καμιμπε Κιγκε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamibe Kige",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیبه کیگه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמיבה קיגה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिबे किगे",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "神部伎閇",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिबे किगे",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिबे किगे",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камибэ Кигэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камібе Кіге",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیبه کیگه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamibe Kige",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "神部伎閇",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "神部伎閇",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Kamibe Kige",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Japan in 708",
+      "8th-century books",
+      "Tajima Province",
+      "日本の古文書",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Awaga Daimyojin Mototsufumi"
+    ],
+    "ja_sitelink": null,
+    "label": "Kamibe Kige",
+    "langlinks": {
+      "de": "Kamibe Kige",
+      "ja": "神部伎閇"
+    },
+    "page": "Awaga Daimyojin Mototsufumi",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-27T02:44:09Z)",
+    "recovered_qid": "Q135551107"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551107",
+  "recovered_label": "Kamibe Kige",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

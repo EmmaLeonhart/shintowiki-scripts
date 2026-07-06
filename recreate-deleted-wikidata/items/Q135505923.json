@@ -1,0 +1,63 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Akagi Shrine (Kameizumi Town)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 341,
+    "timestamp": "20250730031637"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 2,
+    "labels": {
+      "en": {
+        "label": "Akagi Shrine (Kameizumi Town)",
+        "source": "native"
+      },
+      "ja": {
+        "label": "赤城神社 (前橋市亀泉町)",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Myōjin Taisha",
+      "Myōjin Taisha",
+      "Kamitsukeno clan",
+      "Kōzuke Province",
+      "Shikinaisha in Kōzuke Province",
+      "Shinto shrines with the same name",
+      "Shrine disambiguations",
+      "Independently git synced pages",
+      "Akagi Shrines",
+      "Pages with 50+ untranslated japanese characters",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": "Q135505923",
+    "host_pages": [
+      "Akagi Shrines"
+    ],
+    "ja_sitelink": null,
+    "label": "Akagi Shrine (Kameizumi Town)",
+    "langlinks": {
+      "ja": "赤城神社 (前橋市亀泉町)"
+    },
+    "page": "Akagi Shrines",
+    "qid_matches_rag": true,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q135505923"
+  },
+  "ill_labels": [],
+  "ill_recovered": true,
+  "qid": "Q135505923",
+  "recovered_label": "Akagi Shrine (Kameizumi Town)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

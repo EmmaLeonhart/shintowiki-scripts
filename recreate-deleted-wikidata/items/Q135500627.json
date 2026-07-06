@@ -1,0 +1,287 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Kiyohiro\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 306,
+    "timestamp": "20250729224544"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو كييوهيرو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو كييوهيرو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো কিযোহিৰো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো কিযোহিরো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Kijohiro",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Κιγιοχιρο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Kiyohiro",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو کییوهیرو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו קייוהירו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो कियोहिरो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍季弘",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो कियोहिरो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो कियोहिरो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Киёхиро",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Kijohiro",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Кіёхіро",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو کییوهیرو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Kiyohiro",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍季弘",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍季弘",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Abe no Kiyohiro",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "1110 births",
+      "1183 deaths",
+      "安倍氏",
+      "Aristocrats of the Late Heian Period",
+      "Recipients of Lower Senior Fourth Rank",
+      "Onmyōji",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Abe no Yasuchika"
+    ],
+    "ja_sitelink": null,
+    "label": "Abe no Kiyohiro",
+    "langlinks": {
+      "ja": "安倍季弘"
+    },
+    "page": "Abe no Yasuchika",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:32Z)",
+    "recovered_qid": "Q135500627"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500627",
+  "recovered_label": "Abe no Kiyohiro",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

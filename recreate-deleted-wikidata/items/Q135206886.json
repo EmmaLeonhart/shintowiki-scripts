@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Not Ronsha\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 230,
+    "timestamp": "20250703224120"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135206886",
+  "recovered_label": "Not Ronsha",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

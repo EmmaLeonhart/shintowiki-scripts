@@ -1,0 +1,284 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kamado Town\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 313,
+    "timestamp": "20250730033010"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كامادو تون",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كامادو تون",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামাদো তোনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামাদো তোনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamado Tovn",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Καμαντο Τον",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamado Town",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامادو تون",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמאדו טון",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमदो तोन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "釜戸町2510番地の1",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamado Tovn",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमदो तोन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामादो तोना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камадо Тон",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamado Tovn",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камадо Тон",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامادو تون",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamado Town",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "釜戸町2510番地之1",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Kamado Town",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "translated pages with valid en interwikis",
+      "Wikidata no short description",
+      "Pages with interwikis with duplicate languages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Kotohira shrines"
+    ],
+    "ja_sitelink": null,
+    "label": "Kamado Town",
+    "langlinks": {
+      "ja": "釜戸町2510番地の1"
+    },
+    "page": "Kotohira shrines",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:50:50Z)",
+    "recovered_qid": "Q135506253"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135506253",
+  "recovered_label": "Kamado Town",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

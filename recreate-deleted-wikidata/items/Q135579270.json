@@ -1,0 +1,289 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Myokenzan Kofun (Muko City)\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 582,
+    "timestamp": "20250802040006"
+  },
+  "enrichment": {
+    "description_en": "kofun (ancient Japanese burial mound)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ميوكينزان كوفون",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ميوكينزان كوفون",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ম্যোকেনাজ়ানা কোফ়ুনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ম্যোকেনাজ়ানা কোফ়ুনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Mjokenzan Kofun",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Μιοκενζαν Κοφουν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Myokenzan Kofun (Muko City)",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "میوکهنزان کوفون",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "妙見山古墳 (向日市)",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קהןזאן קופון",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "म्योकेनज़न कोफ़ुन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "妙見山古墳 (向日市)",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "म्योकेनज़न कोफ़ुन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "म्योकेनाज़ाना कोफ़ुना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Мёкэндзан Кофун",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Mjokenzan Kofun",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Мёкендзан Кофун",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "میوکهنزان کوفون",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Myokenzan Kofun",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "妙见山古坟 (向日市)",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "妙见山古坟 (向日市)",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "妙见山古坟 (向日市)",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "妙見山古墳 (向日市)",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "妙見山古墳 (向日市)",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "妙見山古墳 (向日市)",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "妙见山古坟 (向日市)",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "妙見山古墳 (向日市)",
+        "source": "translit"
+      }
+    },
+    "p31": "Q1141225",
+    "p31_label": "kofun",
+    "p31_property": "P31",
+    "romaji_reading": "Myokenzan Kofun",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "History of Muko, Kyoto",
+      "Kofun of Kyoto prefecture",
+      "National historic sites in Kyoto prefecture",
+      "Otokuni Kofun Group",
+      "Pages using infobox ancient site with unknown parameters",
+      "Wikidata has short description",
+      "Zenpō-kōen-fun",
+      "Pages with interwikis with duplicate languages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Itsukahara Kofun"
+    ],
+    "ja_sitelink": null,
+    "label": "Myokenzan Kofun (Muko City)",
+    "langlinks": {
+      "ja": "妙見山古墳 (向日市)"
+    },
+    "page": "Itsukahara Kofun",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:03Z)",
+    "recovered_qid": "Q135579270"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579270",
+  "recovered_label": "Myokenzan Kofun (Muko City)",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

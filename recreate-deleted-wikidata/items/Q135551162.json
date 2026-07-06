@@ -1,0 +1,57 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Akama Shrine\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 315,
+    "timestamp": "20250801074555"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 1,
+    "labels": {
+      "en": {
+        "label": "Akama Shrine",
+        "source": "fandom"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Culture of Shimonoseki",
+      "Festivals in Yamaguchi Prefecture",
+      "Japanese Imperial Rituals",
+      "Municipality Designated Intangible Folk Cultural Properties",
+      "Previous Emperor&#39;s Festival",
+      "Shinto festivals",
+      "Wikidata no short description"
+    ],
+    "current_ill_qid": "Q712617",
+    "host_pages": [
+      "Previous Emperor Festival",
+      "List of Shinto shrines in Japan",
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Akama Shrine",
+    "langlinks": {
+      "en": "Akama Shrine"
+    },
+    "page": "Previous Emperor Festival",
+    "qid_matches_rag": false,
+    "qid_source": "current-ill",
+    "recovered_qid": "Q712617"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551162",
+  "recovered_label": "Akama Shrine",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

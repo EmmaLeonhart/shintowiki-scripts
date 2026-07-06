@@ -1,0 +1,286 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Kibi no Anaumi\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 308,
+    "timestamp": "20250729224614"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كيبي نو أناومي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كيبي نو أناومي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কিবি নো অনাউমি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কিবি নো অনাউমি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κιμπι Νο Αναουμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kibi no Anaumi",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کیبی نو اناومی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "吉備之穴海",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קיבי נו אנאומי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "किबि नो अनउमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "吉備の穴海",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "किबि नो अनउमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "किबि नो अनाउमि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Киби Но Анауми",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кібі Но Анаумі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کیبی نو اناومی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kibi no Anaumi",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "吉备之穴海",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "吉备之穴海",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "吉备之穴海",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "吉備之穴海",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "吉備之穴海",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "吉備之穴海",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "吉备之穴海",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "吉備之穴海",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Kibi no Anaumi",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Shinto shrines in Kurashiki",
+      "Kurashiki Bikan historical quarter",
+      "Former Prefectural Shrines in Okayama Prefecture",
+      "Shinbutsu bunri",
+      "Chinjusha",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Achi Shrine (Kurashiki)"
+    ],
+    "ja_sitelink": null,
+    "label": "Kibi no Anaumi",
+    "langlinks": {
+      "ja": "吉備の穴海"
+    },
+    "page": "Achi Shrine (Kurashiki)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:34Z)",
+    "recovered_qid": "Q135500658"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500658",
+  "recovered_label": "Kibi no Anaumi",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

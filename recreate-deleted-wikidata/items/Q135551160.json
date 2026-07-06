@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kagoshima Summer Matsuri\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 324,
+    "timestamp": "20250801074547"
+  },
+  "enrichment": {
+    "description_en": "festival in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاغوشيما سومي ماتسوري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاجوشيما سومي ماتسوري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কাগোশিমা সুমে মাত্সুৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কাগোশিমা সুমে মাত্সুরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kagošima Summer Macuri",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Καγκοσιμα Σουμε Ματσουρι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کاگوشیما سومه ماتسوری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "加吾志萬夏祭利",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאגושימא סומה מאצורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कगोशिम सुमे मत्सुरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "かごしま夏祭り",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kagošima Summer Matsuri",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कगोशिम सुमे मत्सुरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कागोशिमा सुमे मात्सुरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кагосима Сумэ Мацури",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kagošima Summer Macuri",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кагосіма Суме Мацурі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کاگوشیما سومه ماتسوری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kagoshima Summer Matsuri",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "加吾志万夏祭利",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "加吾志万夏祭利",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "加吾志万夏祭利",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "加吾志萬夏祭利",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "加吾志萬夏祭利",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "加吾志萬夏祭利",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "加吾志万夏祭利",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "加吾志萬夏祭利",
+        "source": "translit"
+      }
+    },
+    "p31": "Q132241",
+    "p31_label": "festival",
+    "p31_property": "P31",
+    "romaji_reading": "Kagoshima Summer Matsuri",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Monks",
+      "Homosexuality",
+      "Tendai",
+      "Children",
+      "Festivals in Japan",
+      "Dances of Japan",
+      "Shudō",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Chigo"
+    ],
+    "ja_sitelink": null,
+    "label": "Kagoshima Summer Matsuri",
+    "langlinks": {
+      "ja": "かごしま夏祭り"
+    },
+    "page": "Chigo",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:17Z)",
+    "recovered_qid": "Q135551160"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551160",
+  "recovered_label": "Kagoshima Summer Matsuri",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

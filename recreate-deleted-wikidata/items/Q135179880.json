@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Saroj",
+    "comment": "Author request: [[Wikidata:Requests for deletions|RfD]]: Empty item without usage",
+    "reason_bucket": "author-request",
+    "size_bytes": 1195,
+    "timestamp": "20250701012238"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135179880",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": true
+}

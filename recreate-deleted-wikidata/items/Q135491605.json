@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi Tsuchitoku\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 313,
+    "timestamp": "20250729004845"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491605",
+  "recovered_label": "Nakatomi Tsuchitoku",
+  "recreation_candidate": false,
+  "self_deleted": false
+}

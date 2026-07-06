@@ -1,0 +1,286 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Kimi-no-Mori\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 303,
+    "timestamp": "20250729224711"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كيمينوموري",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كيمينوموري",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কিমিনোমোৰি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কিমিনোমোরি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kiminomori",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κιμινομορι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kimi-no-Mori",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کیمینوموری",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קימינומורי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "किमिनोमोरि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "季美の森",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "किमिनोमोरि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "किमिनोमोरि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Киминомори",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kimi-no-mori",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кіміноморі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کیمینوموری",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kimi-no-Mori",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "季美之森",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "季美之森",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Kimi-no-Mori",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Son-sha in Chiba Prefecture",
+      "Shinto shrines in Chiba Prefecture",
+      "大網白里市の建築物",
+      "大網白里市の歴史",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Agata Shrine (Ōamishirasato)"
+    ],
+    "ja_sitelink": null,
+    "label": "Kimi-no-Mori",
+    "langlinks": {
+      "ja": "季美の森"
+    },
+    "page": "Agata Shrine (Ōamishirasato)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:37Z)",
+    "recovered_qid": "Q135500720"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500720",
+  "recovered_label": "Kimi-no-Mori",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

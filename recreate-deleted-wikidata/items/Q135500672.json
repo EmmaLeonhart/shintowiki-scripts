@@ -1,0 +1,289 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Katsuragi Takamune\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 309,
+    "timestamp": "20250729224627"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاتسوراغي تاكاموني",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاتسوراجي تاكاموني",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কাত্সুৰাগি তাকামুনে",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কাত্সুরাগি তাকামুনে",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kacuragi Takamune",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κατσουραγκι Τακαμουνε",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Katsuragi Takamune",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کاتسوراگی تاکامونه",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאצוראגי טאקאמונה",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कत्सुरगि तकमुने",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "葛城高宗",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कत्सुरगि तकमुने",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कात्सुरागि ताकामुने",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кацураги Такамунэ",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kacuragi Takamune",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кацурагі Такамуне",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کاتسوراگی تاکامونه",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Katsuragi Takamune",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "葛城高宗",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "葛城高宗",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Katsuragi Takamune",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Japanese medical educators of the 8th century",
+      "Japanese physicians of the 8th century",
+      "Japanese medical educators of the 9th century",
+      "9th-century Japanese physicians",
+      "Imperial Bureau of Pharmacology",
+      "Officials of the Ritsuryō System",
+      "Medical educators in Japan",
+      "Acupuncture",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Acupuncture Hakase"
+    ],
+    "ja_sitelink": null,
+    "label": "Katsuragi Takamune",
+    "langlinks": {
+      "ja": "葛城高宗"
+    },
+    "page": "Acupuncture Hakase",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:35Z)",
+    "recovered_qid": "Q135500672"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500672",
+  "recovered_label": "Katsuragi Takamune",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

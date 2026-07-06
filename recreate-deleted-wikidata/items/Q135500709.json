@@ -1,0 +1,288 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Ietsumiko no Kami\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 311,
+    "timestamp": "20250729224701"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "إييتسوميكو نو كامي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "إييتسوميكو نو كامي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "ইএত্সুমিকো নো কামি",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "ইএত্সুমিকো নো কামি",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Iecumiko no Kami",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Ιετσουμικο Νο Καμι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Ietsumiko no Kami",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ایهتسومیکو نو کامی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "he": {
+        "label": "איהצומיקו נו קאמי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "इएत्सुमिको नो कमि",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "家津御子神",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "इएत्सुमिको नो कमि",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "इएत्सुमिको नो कामि",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Иэцумико Но Ками",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Iecumiko no Kami",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Иецуміко Но Камі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ایهتسومیکو نو کامی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Ietsumiko no Kami",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "家津御子神",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "家津御子神",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Ietsumiko no Kami",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "下呂市の建築物",
+      "下呂市の歴史",
+      "Independent shrines",
+      "Son-sha in Gifu Prefecture",
+      "Shinto shrines in Gifu Prefecture",
+      "Natural Monuments Designated by Gifu Prefecture",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Agata Shrine (Gero City)"
+    ],
+    "ja_sitelink": null,
+    "label": "Ietsumiko no Kami",
+    "langlinks": {
+      "ja": "家津御子神"
+    },
+    "page": "Agata Shrine (Gero City)",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:37Z)",
+    "recovered_qid": "Q135500709"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500709",
+  "recovered_label": "Ietsumiko no Kami",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

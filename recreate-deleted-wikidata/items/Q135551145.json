@@ -1,0 +1,285 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kushimikenu-no-mikoto\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 315,
+    "timestamp": "20250801074446"
+  },
+  "enrichment": {
+    "description_en": "kami (Shinto deity)",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كوشيميكينونوميكوتو",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كوشيميكينونوميكوتو",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কুশিমিকেনুনোমিকোতো",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কুশিমিকেনুনোমিকোতো",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kušimikenunomikoto",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Κουσιμικενουνομικοτο",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کوشیمیکهنونومیکوتو",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "櫛御気野命",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קושימיקהנונומיקוטו",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कुशिमिकेनुनोमिकोतो",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "櫛御気野命",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kušimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कुशिमिकेनुनोमिकोतो",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कुशिमिकेनुनोमिकोतो",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Кусимикэнуномикото",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kušimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Кусімікенуномікото",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کوشیمیکهنونومیکوتو",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kushimikenu-no-mikoto",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "栉御気野命",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "栉御気野命",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "栉御気野命",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "櫛御気野命",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "櫛御気野命",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "櫛御気野命",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "栉御気野命",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "櫛御気野命",
+        "source": "translit"
+      }
+    },
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Kushimikenu-no-mikoto",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Former Buddhist temples",
+      "Shinbutsu bunri",
+      "Shinbutsu shūgō",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Changes to deities in the Meiji period"
+    ],
+    "ja_sitelink": null,
+    "label": "Kushimikenu-no-mikoto",
+    "langlinks": {
+      "ja": "櫛御気野命"
+    },
+    "page": "Changes to deities in the Meiji period",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:43:12Z)",
+    "recovered_qid": "Q135551145"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551145",
+  "recovered_label": "Kushimikenu-no-mikoto",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

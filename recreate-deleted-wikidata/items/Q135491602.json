@@ -1,0 +1,286 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Nakatomi Harai Kunkai\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 408,
+    "timestamp": "20250729004835"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "ناكاتومي هاراي كونكاي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "ناكاتومي هاراي كونكاي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "নাকাতোমি হাৰাই কুনাকাই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "নাকাতোমি হারাই কুনাকাই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Νακατομι Χαραι Κουνκαι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ناکاتومی هارای کونکای",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "中臣祓訓解",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "he": {
+        "label": "נאקאטומי האראי קוןקאי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "नकतोमि हरइ कुनकइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "中臣祓訓解",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "नकतोमि हरइ कुनकइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "नाकातोमि हाराइ कुनाकाइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Накатоми Хараи Кункаи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Накатомі Хараі Кункаі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ناکاتومی هارای کونکای",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Nakatomi Harai Kunkai",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "中臣祓训解",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "中臣祓训解",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "中臣祓训解",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "中臣祓訓解",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "中臣祓訓解",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "中臣祓訓解",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "中臣祓训解",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "中臣祓訓解",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Nakatomi Harai Kunkai",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Amatsukami",
+      "Evil deities",
+      "Japanese deities",
+      "Kunitsukami",
+      "Wikidata no short description",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Ibukidonushi no Kami"
+    ],
+    "ja_sitelink": null,
+    "label": "Nakatomi Harai Kunkai",
+    "langlinks": {
+      "ja": "中臣祓訓解"
+    },
+    "page": "Ibukidonushi no Kami",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:47:41Z)",
+    "recovered_qid": "Q135491602"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135491602",
+  "recovered_label": "Nakatomi Harai Kunkai",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

@@ -1,0 +1,302 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Gosha Gongen\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 303,
+    "timestamp": "20250802035952"
+  },
+  "enrichment": {
+    "description_en": "Shinto shrine in Japan",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "غوشا غونغين",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "جوشا جونجين",
+        "source": "translit"
+      },
+      "as": {
+        "label": "গোশা গোনাগেনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "গোশা গোনাগেনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Goša Gongen",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Γκοσα Γκονγκεν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Gosha Gongen",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "گوشا گونگهن",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "he": {
+        "label": "גו גוןגהן",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "गोश गोनगेन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "五社権現",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Goša Gongen",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "गोश गोनगेन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "गोशा गोनागेना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Гося Гонгэн",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Goša Gongen",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Гося Гонген",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "گوشا گونگهن",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Gosha Gongen",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "五社権現",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "五社権现",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "五社権現",
+        "source": "translit"
+      }
+    },
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
+    "romaji_reading": "Gosha Gongen",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
+  },
+  "fandom": {
+    "categories": [
+      "Azuchi-Momoyama period",
+      "Buddhism in Japan",
+      "Buildings and structures in Nakanoto, Ishikawa",
+      "Former Gō-sha in Ishikawa Prefecture",
+      "Heian period",
+      "Holy cities",
+      "Kamakura period",
+      "Municipal History of Nakanoto",
+      "Muromachi period",
+      "Nakanoto, Ishikawa",
+      "Nanboku-chō period",
+      "Ni-no-Miya",
+      "Noto Province",
+      "Sengoku period",
+      "Shikinaisha in Noto Province",
+      "Shinto shrines",
+      "Shinto shrines in Ishikawa Prefecture",
+      "Wikidata has short description",
+      "Shikinai Shōsha",
+      "Kokuhei-sha",
+      "Pages with interwikis with duplicate languages",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Isurugi Hikojinja"
+    ],
+    "ja_sitelink": null,
+    "label": "Gosha Gongen",
+    "langlinks": {
+      "ja": "五社権現"
+    },
+    "page": "Isurugi Hikojinja",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:48:02Z)",
+    "recovered_qid": "Q135579265"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135579265",
+  "recovered_label": "Gosha Gongen",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

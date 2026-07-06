@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Dexbot",
+    "comment": "Bot: Automatic deletion of empty item",
+    "reason_bucket": "empty-item",
+    "size_bytes": 391,
+    "timestamp": "20230411002827"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q117501113",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

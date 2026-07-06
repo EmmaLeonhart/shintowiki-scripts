@@ -1,0 +1,287 @@
+{
+  "deletion": {
+    "admin": "Xezbeth",
+    "comment": "Empty item: content was: \"Kamibe Kogui\", and the only contributor was \"[[Special:Contributions/Immanuelle|Immanuelle]]\" ([[User talk:Immanuelle|talk]])",
+    "reason_bucket": "empty-item",
+    "size_bytes": 374,
+    "timestamp": "20250801074235"
+  },
+  "enrichment": {
+    "description_en": null,
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "كاميبي كوغوي",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "كاميبي كوجوي",
+        "source": "translit"
+      },
+      "as": {
+        "label": "কামিবে কোগুই",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "কামিবে কোগুই",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Kamibe Kogui",
+        "source": "fandom"
+      },
+      "el": {
+        "label": "Καμιμπε Κογκουι",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Kamibe Kogui",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "کامیبه کوگوی",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "he": {
+        "label": "קאמיבה קוגוי",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "कमिबे कोगुइ",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "神部小椅",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "कमिबे कोगुइ",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "कामिबे कोगुइ",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Камибэ Когуи",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Камібе Когуі",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "کامیبه کوگوی",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Kamibe Kogui",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "神部小椅",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "神部小椅",
+        "source": "translit"
+      }
+    },
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Kamibe Kogui",
+    "type_confidence": "none",
+    "type_source": null
+  },
+  "fandom": {
+    "categories": [
+      "Japan in 708",
+      "8th-century books",
+      "Tajima Province",
+      "日本の古文書",
+      "Pages with deleted QID in ill template",
+      "Pages with interwikis with duplicate languages"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Awaga Daimyojin Mototsufumi"
+    ],
+    "ja_sitelink": null,
+    "label": "Kamibe Kogui",
+    "langlinks": {
+      "de": "Kamibe Kogui",
+      "ja": "神部小椅"
+    },
+    "page": "Awaga Daimyojin Mototsufumi",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-27T02:44:09Z)",
+    "recovered_qid": "Q135551110"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135551110",
+  "recovered_label": "Kamibe Kogui",
+  "recreation_candidate": true,
+  "self_deleted": false
+}

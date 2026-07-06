@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 766,
+    "timestamp": "20250624075407"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135045381",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

@@ -1,0 +1,16 @@
+{
+  "deletion": {
+    "admin": "Mahir256",
+    "comment": "empty category item (no sitelinks, no backlinks from main/property/lexeme namespaces, only one statement 'P31 Q4167836')",
+    "reason_bucket": "empty-item",
+    "size_bytes": 533,
+    "timestamp": "20230411024855"
+  },
+  "fandom": null,
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q117509620",
+  "recovered_label": null,
+  "recreation_candidate": false,
+  "self_deleted": false
+}

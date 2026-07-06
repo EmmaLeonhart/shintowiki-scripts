@@ -1,0 +1,287 @@
+{
+  "deletion": {
+    "admin": "MisterSynergy",
+    "comment": "Empty item: content was: \"Abe no Gyōshun\"",
+    "reason_bucket": "empty-item",
+    "size_bytes": 306,
+    "timestamp": "20250729224548"
+  },
+  "enrichment": {
+    "description_en": "Japanese historical figure",
+    "label_count": 59,
+    "labels": {
+      "ar": {
+        "label": "أبي نو غيوشون",
+        "source": "translit"
+      },
+      "arz": {
+        "label": "أبي نو جيوشون",
+        "source": "translit"
+      },
+      "as": {
+        "label": "অবে নো গ্যোশুনা",
+        "source": "translit"
+      },
+      "ast": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "az": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "bn": {
+        "label": "অবে নো গ্যোশুনা",
+        "source": "translit"
+      },
+      "br": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "ca": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "ceb": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "cs": {
+        "label": "Abe no Gjóšun",
+        "source": "translit"
+      },
+      "da": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "de": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "el": {
+        "label": "Αμπε Νο Γκιοσουν",
+        "source": "translit"
+      },
+      "en": {
+        "label": "Abe no Gyōshun",
+        "source": "native"
+      },
+      "eo": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "es": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "eu": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "fa": {
+        "label": "ابه نو گیوشون",
+        "source": "translit"
+      },
+      "fi": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "fr": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "gan": {
+        "label": "安倍業俊",
+        "source": "translit"
+      },
+      "gl": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "he": {
+        "label": "אבה נו ן",
+        "source": "translit"
+      },
+      "hi": {
+        "label": "अबे नो ग्योशुन",
+        "source": "translit"
+      },
+      "hr": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "hu": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "it": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "ja": {
+        "label": "安倍業俊",
+        "source": "fandom"
+      },
+      "jv": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "la": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "lt": {
+        "label": "Abe no Gyōšun",
+        "source": "translit"
+      },
+      "mai": {
+        "label": "अबे नो ग्योशुन",
+        "source": "translit"
+      },
+      "min": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "mr": {
+        "label": "अबे नो ग्योशुना",
+        "source": "translit"
+      },
+      "ms": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "nb": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "nl": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "nn": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "pl": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "pt": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "ro": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "ru": {
+        "label": "Абэ Но Гёсюн",
+        "source": "translit"
+      },
+      "sh": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "sl": {
+        "label": "Abe no Gjošun",
+        "source": "translit"
+      },
+      "sv": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "tl": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "tr": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "uk": {
+        "label": "Абе Но Гёсюн",
+        "source": "translit"
+      },
+      "ur": {
+        "label": "ابه نو گیوشون",
+        "source": "translit"
+      },
+      "vi": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "war": {
+        "label": "Abe no Gyōshun",
+        "source": "translit"
+      },
+      "zh": {
+        "label": "安倍业俊",
+        "source": "translit"
+      },
+      "zh-cn": {
+        "label": "安倍业俊",
+        "source": "translit"
+      },
+      "zh-hans": {
+        "label": "安倍业俊",
+        "source": "translit"
+      },
+      "zh-hant": {
+        "label": "安倍業俊",
+        "source": "translit"
+      },
+      "zh-hk": {
+        "label": "安倍業俊",
+        "source": "translit"
+      },
+      "zh-mo": {
+        "label": "安倍業俊",
+        "source": "translit"
+      },
+      "zh-sg": {
+        "label": "安倍业俊",
+        "source": "translit"
+      },
+      "zh-tw": {
+        "label": "安倍業俊",
+        "source": "translit"
+      }
+    },
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Abe no Gyōshun",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
+  },
+  "fandom": {
+    "categories": [
+      "1110 births",
+      "1183 deaths",
+      "安倍氏",
+      "Aristocrats of the Late Heian Period",
+      "Recipients of Lower Senior Fourth Rank",
+      "Onmyōji",
+      "Pages with deleted QID in ill template"
+    ],
+    "current_ill_qid": null,
+    "host_pages": [
+      "Abe no Yasuchika"
+    ],
+    "ja_sitelink": null,
+    "label": "Abe no Gyōshun",
+    "langlinks": {
+      "ja": "安倍業俊"
+    },
+    "page": "Abe no Yasuchika",
+    "qid_matches_rag": true,
+    "qid_source": "history(2026-05-14T23:41:32Z)",
+    "recovered_qid": "Q135500631"
+  },
+  "ill_labels": [],
+  "ill_recovered": false,
+  "qid": "Q135500631",
+  "recovered_label": "Abe no Gyōshun",
+  "recreation_candidate": true,
+  "self_deleted": false
+}
