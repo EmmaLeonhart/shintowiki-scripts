@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Broad dedup sweep over recreation candidates (181 → 167)
+
+Emma-requested pre-recreation dedup: `dedup_recreation_candidates.py` searches Wikidata by
+each candidate's exact ja-kanji (then en) label. 16 exact-label matches found; verified each
+before applying. **13 confirmed duplicates** (exact ja + type-compatible live item — shrines,
+kami, kofun, temple, festival, gazetteer, the 48-rank system) flagged possible_existing +
+their ills relinked in git_synced/. **2 en-fallback FALSE POSITIVES kept in recreation**:
+Young Venus (ヤングビーナス, our bath additive) matched a *sculpture* (Q108702052); Mori-no-Kami
+(木神) matched a *Detective Conan manga chapter* (Q73729880) — different entities, coincidental
+label. **1 uncertain held** (Kawa-no-Kami 川神 → Q104869018, en-only match, target lacks ja/P31 —
+recreation_candidate=false pending human review). Recreation QuickStatements now **167 CREATE
+blocks**; 26 duplicates relinked total. Recreation stays human-gated (Emma runs the QS). 62 tests green.
+
 ## 2026-07-06 — Deleted-item recreation dataset: enrichment pipeline (174/213 typed)
 
 Worked off the remote handoff (`docs/deleted_items_recreation_handoff_2026-07-06.md`) after

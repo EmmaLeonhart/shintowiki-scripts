@@ -25,6 +25,13 @@
     "p31": "Q132241",
     "p31_label": "festival",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "Yasaka Shrine Gion Festival",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q133287908"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "high",
     "type_source": "name-suffix"

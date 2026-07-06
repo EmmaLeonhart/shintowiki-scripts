@@ -253,6 +253,13 @@
     "p31": "Q524158",
     "p31_label": "kami",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "Totsumatone-no-Kami (kami)",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q135330329"
+      }
+    ],
     "romaji_reading": "Totsumachine no Kami",
     "type_confidence": "high",
     "type_source": "name-suffix"

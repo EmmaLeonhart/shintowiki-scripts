@@ -25,6 +25,13 @@
     "p31": "Q178706",
     "p31_label": "institution",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "48 Cap Rank System",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q135579719"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "high",
     "type_source": "researched"

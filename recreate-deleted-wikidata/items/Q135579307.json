@@ -253,6 +253,13 @@
     "p31": "Q5393308",
     "p31_label": "Buddhist temple",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "Jippāramitsu-ji",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q132040939"
+      }
+    ],
     "romaji_reading": "Jippāramitsu-ji",
     "type_confidence": "high",
     "type_source": "name-suffix"

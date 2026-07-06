@@ -25,6 +25,13 @@
     "p31": "Q11411019",
     "p31_label": "kofun group",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "Imajuku Kofun Group",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q103946619"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "high",
     "type_source": "name-suffix"

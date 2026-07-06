@@ -253,6 +253,13 @@
     "p31": "Q524158",
     "p31_label": "kami",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "Amanosakitama no Mikoto (kami)",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q106241395"
+      }
+    ],
     "romaji_reading": "Amanosakitama no mikoto",
     "type_confidence": "high",
     "type_source": "name-suffix"

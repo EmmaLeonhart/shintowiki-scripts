@@ -9,7 +9,7 @@
 | caption = {{ill|Yagi Shrine|ja|夜疑神社|en|Draft:Yagi Shrine|fr|Yagi-jinja}} a shrine that worships her
 | cult_centre = {{ill|Yagi Shrine|ja|夜疑神社|en|Draft:Yagi Shrine|fr|Yagi-jinja}}
 | cult_center = {{ill|Yagi Shrine|ja|夜疑神社|en|Draft:Yagi Shrine|fr|Yagi-jinja}}
-| children = {{ill|Takeuioki-no-Mikoto|ja|武位起命}}''' , {{ill|Amanosakitama no mikoto|ja|天前玉命|qid=DELETED_QID}} , {{ill|Kuroshima Isone hime|ja|黒島磯根御気姫命|qid=DELETED_QID}}''', '''{{ill|Onotehime|ja|大野手比売|lt=Ōnotehime-no-Kami}}'''|||draft
+| children = {{ill|Takeuioki-no-Mikoto|ja|武位起命}}''' , {{ill|Amanosakitama no mikoto|ja|天前玉命|qid=Q106241395}} , {{ill|Kuroshima Isone hime|ja|黒島磯根御気姫命|qid=Q134846348}}''', '''{{ill|Onotehime|ja|大野手比売|lt=Ōnotehime-no-Kami}}'''|||draft
 |name=Furutama-no-Mikoto| gender = {{ill|Female (gender)|qid=Q6581072}}; {{ill|Male (gender)|qid=Q6581097}}
 | parents = {{ill|Watatsumi|abstract|Q1474187|az|Vatatsumi|de|Watatsumi|es|Watatsumi|fa|واتاتسومی|fr|Watatsumi|hu|Vatacumi|ja|ワタツミ|ko|와타쓰미|mni|ꯋꯇꯠꯁꯨꯃꯤ|pl|Watatsumi|ru|Ватацуми|simple|Watatsumi|uk|Вататсумі|zh|綿津見|qid=Q1474187}}
 | consort = {{ill|Hoori|qid=Q1051960}}
@@ -45,7 +45,7 @@ Furutama is mentioned as a [[Hitorigami]] in the [[Kujiki]].<ref name=":1" />
 |Explicitly the younger sister in ''Kojiki/Nihon Shoki''
 |-
 |'''Children in the sources'''
-|''{{ill|Amanosakitama no mikoto|ja|天前玉命|qid=DELETED_QID|lt=Sakitama-no-Mikoto}}'' & ''Ame-no-Oshitachi-no-Mikoto (天忍立命)'' (Sendai Kuji Hongi)  • Later genealogies add '''{{ill|Takeuioki-no-Mikoto|ja|武位起命|lt=Takeiki-no-Mikoto}} (武位起命)''', Ten-Sakitama-no-Mikoto, etc.<ref>https://ameblo.jp/yumenowarutu/entry-12860638510.html?utm_source=chatgpt.com</ref>
+|''{{ill|Amanosakitama no mikoto|ja|天前玉命|qid=Q106241395|lt=Sakitama-no-Mikoto}}'' & ''Ame-no-Oshitachi-no-Mikoto (天忍立命)'' (Sendai Kuji Hongi)  • Later genealogies add '''{{ill|Takeuioki-no-Mikoto|ja|武位起命|lt=Takeiki-no-Mikoto}} (武位起命)''', Ten-Sakitama-no-Mikoto, etc.<ref>https://ameblo.jp/yumenowarutu/entry-12860638510.html?utm_source=chatgpt.com</ref>
 |• With '''Hoori''' (alternate in ''Sendai Kuji Hongi''): '''{{ill|Takeuioki-no-Mikoto|ja|武位起命|lt=Takeiki-no-Mikoto}}''' is born while she is fostering Ugayafukiaezu  • With '''Ugayafukiaezu''': [[Itsuse no Mikoto|Itsuse]], {{ill|Inahi no Mikoto|en|Inahi no Mikoto|qid=Q11420805|lt=Inahi}}, [[Mikeiri no Mikoto|Mikeirino]], and '''{{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}}''' (mainstream ''Kojiki/Nihon Shoki'')
 |-
 |'''Function / cult'''

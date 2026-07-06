@@ -25,6 +25,13 @@
     "p31": "Q845945",
     "p31_label": "Shinto shrine",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "Nanatsumori Shrine",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q134957351"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "high",
     "type_source": "name-suffix"

@@ -253,6 +253,13 @@
     "p31": "Q571",
     "p31_label": "book",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "label": "Chikugo Fudoki",
+        "note": "broad-dedup exact ja match to a live type-compatible item — relink, do not recreate",
+        "qid": "Q135597604"
+      }
+    ],
     "romaji_reading": "Chikugo no Kuni Fudoki",
     "type_confidence": "medium",
     "type_source": "name-suffix"
