@@ -1,0 +1,191 @@
+# Item audit — 2026-01-01 batch (276 items)
+
+## By type
+
+-   46  human
+-   46  (other: Q4167836)
+-   35  shrine
+-   29  festival
+-   23  kami
+-   11  yokoana/site
+-    9  shrine-church
+-    8  temple
+-    8  (other: no P31)
+-    6  kofun
+-    5  (other: Q27686)
+-    4  (other: Q11388990)
+-    3  gongen
+-    3  (other: Q11862829)
+-    3  kofungun
+-    2  (other: Q571)
+-    2  dance
+-    2  (other: Q10565932)
+-    2  (other: Q15324)
+-    2  (other: Q1644573)
+-    2  (other: Q177380)
+-    1  (other: Q178706)
+-    1  (other: Q10884)
+-    1  (other: Q655311)
+-    1  (other: Q785952)
+-    1  (other: Q188055)
+-    1  (other: Q135237007)
+-    1  (other: Q34038)
+-    1  (other: Q126919260)
+-    1  (other: Q10565932,Q134986972)
+-    1  (other: Q17737)
+-    1  (other: Q111252729)
+-    1  (other: Q13417114)
+-    1  (other: Q486972)
+-    1  (other: Q473972)
+-    1  (other: Q3346024)
+-    1  (other: Q811979)
+-    1  (other: Q4164871)
+-    1  (other: Q9353932)
+-    1  (other: Q43229)
+-    1  (other: Q1656682)
+-    1  (other: Q7725634)
+-    1  (other: Q23622)
+-    1  (other: Q2221906)
+-    1  (other: Q13226383)
+-    1  (other: Q2085381)
+
+## Most-common missing core property
+
+-   45  birth date (P569)
+-   45  death date (P570)
+-   44  occupation (P106)
+-   41  located in (P131)
+-   35  dedicated to (kami) (P825)
+-   27  family name (P734)
+-   17  country (P17)
+-    6  sex/gender (P21)
+
+## Per-item suggestions (127 items with a core-property gap)
+
+- Q140445967 | Nakatomi no Ikemori | human -> add: occupation, birth date, death date
+- Q140445968 | Nakatomi no Momo / Nakatomi Momo-shō | human -> add: sex/gender, occupation, birth date, death date, family name
+- Q140445970 | Nakatomi no Amabisha-kyō | human -> add: occupation, birth date, death date
+- Q140445971 | Yoshikuni Sakurai | human -> add: occupation, birth date, death date
+- Q140445972 | Abe no Masafumi | human -> add: occupation, birth date, death date, family name
+- Q140445973 | Abe no Kiyohiro | human -> add: occupation, birth date, death date, family name
+- Q140445974 | Abe no Gyōshun | human -> add: occupation, birth date, death date, family name
+- Q140445975 | Abe no Yasushige | human -> add: occupation, birth date, death date, family name
+- Q140445976 | Abe no Yasunari | human -> add: occupation, birth date, death date, family name
+- Q140445977 | Abe no Yasutada | human -> add: occupation, birth date, death date, family name
+- Q140445978 | Abe no Chōnaga | human -> add: occupation, birth date, death date, family name
+- Q140445979 | Abe no Yasumi | human -> add: occupation, birth date, death date, family name
+- Q140445981 | Abe no Kintoki | human -> add: occupation, birth date, death date
+- Q140445982 | Ōmiya Isuzu Shrine | shrine -> add: located in, dedicated to (kami)
+- Q140445983 | Kamimiya Togata Shrine | shrine -> add: located in, dedicated to (kami)
+- Q140445984 | Fukane Munetsugu | human -> add: birth date, death date, family name
+- Q140445985 | Katsuragi Takamune | human -> add: birth date, death date, family name
+- Q140445986 | Mutō Yorisuke | human -> add: occupation, birth date, death date
+- Q140445987 | Adachi Shigekage | human -> add: occupation, birth date, death date
+- Q140445988 | Adachi Tokikage | human -> add: occupation, birth date, death date
+- Q140445989 | Gōkaku Shrine | shrine -> add: located in, dedicated to (kami)
+- Q140445990 | Agata Shrine (Yokkaichi) | shrine -> add: dedicated to (kami)
+- Q140445991 | Agata Shrine (Izumo) | shrine -> add: dedicated to (kami)
+- Q140445996 | Rokusonōbara Kofun | kofun -> add: located in
+- Q140445997 | Arakida Moriyoshi | human -> add: occupation, birth date, death date, family name
+- Q140445999 | Fuyumatsuri | festival -> add: located in
+- Q140446008 | Kotsuka Shrine | shrine -> add: dedicated to (kami)
+- Q140446009 | Wago Nembutsu Odori | dance -> add: country
+- Q140446011 | Ayato Night Nembutsu and Bon Odori | dance -> add: country
+- Q140446012 | Mitsurugi Shrine Summer Grand Festival | festival -> add: located in
+- Q140446026 | Gojō Castle Tenjin Shrine | shrine -> add: dedicated to (kami)
+- Q140446027 | Akagi Shrine (Arai Town) | shrine -> add: dedicated to (kami)
+- Q140446028 | Akagi Shrine (Kameizumi Town) | shrine -> add: dedicated to (kami)
+- Q140446029 | Akagi Shrine (Shimo Koide Town) | shrine -> add: dedicated to (kami)
+- Q140446030 | Akagi Shrine (Sekine Town) | shrine -> add: dedicated to (kami)
+- Q140446031 | Akagi Shrine (Fujimi Town Urushikubo) | shrine -> add: dedicated to (kami)
+- Q140446033 | Akagi Shrine (Fujimi Town Yone) | shrine -> add: dedicated to (kami)
+- Q140446034 | Akagi Shrine (Fujimi Town Tajima) | shrine -> add: dedicated to (kami)
+- Q140446035 | Nakatomi Tokikaze | human -> add: occupation, birth date, death date
+- Q140446036 | Akagi Shrine (Miyaji Town) | shrine -> add: dedicated to (kami)
+- Q140446037 | Akagi Shrine (Watanuki Town) | shrine -> add: dedicated to (kami)
+- Q140446038 | Akagi Shrine (Shimotaki Town) | shrine -> add: dedicated to (kami)
+- Q140446040 | Akagi Shrine (Kawauchi 2nd Town) | shrine -> add: dedicated to (kami)
+- Q140446041 | Akagi Shrine (Niisato Itabashi Town) | shrine -> add: dedicated to (kami)
+- Q140446042 | Akagi Shrine (Niisato Takei Town) | shrine -> add: dedicated to (kami)
+- Q140446043 | Akagi Shrine (Kurohone Yagihara Town) | shrine -> add: dedicated to (kami)
+- Q140446044 | Akagi Shrine (Kurohone Shimo Tazawa Town) | shrine -> add: dedicated to (kami)
+- Q140446045 | Akagi Shrine (Miyamae Town) | shrine -> add: dedicated to (kami)
+- Q140446046 | Akagi Shrine (Kunisada Town) | shrine -> add: dedicated to (kami)
+- Q140446047 | Akagi Shrine (Sakai Hiratsuka Town) | shrine -> add: dedicated to (kami)
+- Q140446048 | Akagi Shrine (Tone Town Oigami) | shrine -> add: dedicated to (kami)
+- Q140446049 | Akagi Shrine (Bōjizuka Town) | shrine -> add: dedicated to (kami)
+- Q140446050 | Akagi Shrine (Kitakatsushika Town Yasaki) | shrine -> add: dedicated to (kami)
+- Q140446051 | Akagi Shrine (Kitakatsushika Town Jonanmu) | shrine -> add: dedicated to (kami)
+- Q140446060 | Chichibu Three Shrines | shrine -> add: dedicated to (kami)
+- Q140446067 | Kamibe Kige | human -> add: occupation, birth date, death date, family name
+- Q140446068 | Kamibe Yukunaa | human -> add: occupation, birth date, death date, family name
+- Q140446069 | Kamibe Futamibumi | human -> add: occupation, birth date, death date, family name
+- Q140446070 | Kamibe Kogui | human -> add: occupation, birth date, death date, family name
+- Q140446071 | Kamibe Tsumuji | human -> add: occupation, birth date, death date, family name
+- Q140446072 | Kamibe Manyo | human -> add: occupation, birth date, death date, family name
+- Q140446074 | Takenami Site | yokoana/site -> add: located in
+- Q140446075 | Mizumachi Site | yokoana/site -> add: located in
+- Q140446078 | Konomine-dera | temple -> add: located in
+- Q140446079 | Jisshōji | temple -> add: located in
+- Q140446080 | Mago Matsuri | festival -> add: located in
+- Q140446082 | Hanayome Matsuri | festival -> add: located in
+- Q140446083 | Yabusame Festival and Procession | festival -> add: located in
+- Q140446084 | Yamanari Gion Matsuri | festival -> add: located in
+- Q140446087 | Tenmon-sai | festival -> add: located in
+- Q140446088 | Taishōjidai-sai | festival -> add: located in
+- Q140446090 | Nōnindō Matsuri | festival -> add: located in
+- Q140446094 | Suitengu Dedication Fireworks Festival | festival -> add: located in
+- Q140446098 | Moriyama Hyōtan-yama Kofun | kofun -> add: located in
+- Q140446100 | Kamihamada Kofun Group | kofungun -> add: located in
+- Q140446102 | Nishinohara Kofun Group | kofungun -> add: located in
+- Q140446105 | Nozaki Oki-no-Kami Tsunayoshi | human -> add: occupation, family name
+- Q140446106 | Suga-no-Sawa Kofun Cluster | kofungun -> add: located in
+- Q140446107 | Suga-no-Sawa Gobyō Kofun | kofun -> add: located in
+- Q140446108 | Ama Inukai no Muraji | human -> add: sex/gender, occupation, birth date, death date, family name
+- Q140446109 | Waka Inukai no Muraji | human -> add: sex/gender, occupation, birth date, death date, family name
+- Q140446110 | Azumi Inukai no Muraji | human -> add: sex/gender, occupation, birth date, death date, family name
+- Q140446128 | Izumo-taisha Misanjin Church | shrine-church -> add: located in, country
+- Q140446129 | Izumo-taisha Shonai Church | shrine-church -> add: located in, country
+- Q140446130 | Izumo-taisha Sakunomiya Church | shrine-church -> add: located in
+- Q140446131 | Izumo-taisha Karatsu Church | shrine-church -> add: country
+- Q140446132 | Izumo-taisha Takachiho Church | shrine-church -> add: country
+- Q140446133 | Izumo-taisha Malaysia Church | shrine-church -> add: located in
+- Q140446136 | Miyao Katsuyoshi | human -> add: occupation, birth date, death date, family name
+- Q140446137 | Senge Takaaki | human -> add: occupation, birth date, death date
+- Q140446138 | Senge Takamochi | human -> add: occupation, birth date, death date
+- Q140446139 | Miyao Shigemaru | human -> add: occupation, birth date, death date, family name
+- Q140446161 | Suga Shrine Gion Festival | festival -> add: located in
+- Q140446166 | Yamanashi Gion Festival | festival -> add: located in
+- Q140446402 | Akagi Shrine (Araguchi Town) | shrine -> add: dedicated to (kami)
+- Q140447336 | Kyoto's Three Kumano Shrines | shrine -> add: country, dedicated to (kami)
+- Q140447347 | Melchior (Kamo clan) | human -> add: sex/gender, occupation, birth date, death date, family name
+- Q140447349 | Mifune Matsuri | festival -> add: country
+- Q140447350 | Kamikonishi Yokoanabo Cluster | yokoana/site -> add: located in
+- Q140447354 | Nakata Norinobu | human -> add: occupation, birth date, death date, family name
+- Q140447355 | Nakatomi Tsuchitoku | human -> add: occupation, birth date, death date
+- Q140447356 | Nakatomi Ōsō | human -> add: occupation, birth date, death date
+- Q140447357 | Haiku poet | human -> add: sex/gender, occupation, birth date, death date, family name
+- Q140447358 | Izumo-taisha Hakodate Church | shrine-church -> add: country
+- Q140447359 | Izumo-taisha Doi Church | shrine-church -> add: located in, country
+- Q140447360 | Izumo-taisha Abashiri Church | shrine-church -> add: country
+- Q140447361 | Jūōmen Yokoanabo Cluster | yokoana/site -> add: located in
+- Q140447364 | Nakabusa | human -> add: occupation, birth date, death date
+- Q140447365 | Tamenaka | human -> add: occupation, birth date, death date
+- Q140447366 | Taikō Matsuri | festival -> add: located in, country
+- Q140447368 | Abe Arimori | human -> add: occupation, birth date, death date
+- Q140447369 | Abe Arishige | human -> add: occupation, birth date, death date
+- Q140447370 | Abe Yasukichi | human -> add: occupation, birth date, death date
+- Q140447371 | Abe no Yasutoshi | human -> add: occupation, birth date, death date
+- Q140447372 | Abe no Yasuari | human -> add: occupation, birth date, death date
+- Q140447376 | Ontoku‐ji | temple -> add: country
+- Q140447380 | Yanaginawa Matsuri | festival -> add: located in, country
+- Q140447382 | Izumizaki Yokoanabo | yokoana/site -> add: located in
+- Q140447383 | Kiyotosaku Yokoanabo | yokoana/site -> add: located in
+- Q140447394 | Kitsunedani Yokoanabo Cluster | yokoana/site -> add: located in
+- Q140447395 | Ishinuki Anakanon Yokoanabo Cluster | yokoana/site -> add: located in
+- Q140447396 | Todoroki Ravine Yokoanabo Cluster | yokoana/site -> add: located in
+- Q140447397 | Akagi Shrine (Kawauchi 1st Town) | shrine -> add: country, dedicated to (kami)
+- Q140447398 | Akagi Shrine (Kawauchi 5th Town) | shrine -> add: country, dedicated to (kami)
+- Q140447399 | Akagi Shrine (Iwanohana Town) | shrine -> add: country, dedicated to (kami)
+- Q140447400 | Nabeta Yokoanabo Cluster | yokoana/site -> add: located in
+- Q140447403 | Takatsuku Yokoanabo Cluster | yokoana/site -> add: located in
