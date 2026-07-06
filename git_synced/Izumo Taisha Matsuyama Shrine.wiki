@@ -69,7 +69,7 @@ image=File:Grand Shrine of Izumo Matsuyama Branch Torii.jpg
 * {{ill|Izumo-taisha Sagami-bunshi|ja|出雲大社相模分祠|12=simple|13=User:Immanuelle/Izumo-taisha Sagami Branch Shrine|comment=changed title based on wikidata|qid=Q11395867}}
 ; Chubu Region
 * {{ill|Izumo-taisha Fukui Branch|ja|出雲大社福井分院|12=simple|13=User:Immanuelle/Izumo-taisha Fukui Branch|comment=changed title based on wikidata|qid=Q28682161}}
-* {{ill|Izumo-taisha Sakunomiya Religious Society|ja|出雲大社佐久之宮講社|qid=DELETED_QID}} - Located in {{ill|Iwamurada, Saku City, Nagano Prefecture|ja|長野県佐久市岩村田}}.
+* {{ill|Izumo-taisha Sakunomiya Religious Society|ja|出雲大社佐久之宮講社|qid=Q140446130}} - Located in {{ill|Iwamurada, Saku City, Nagano Prefecture|ja|長野県佐久市岩村田}}.
 * {{ill|Izumo Taisha Hida Kyōkai|ja|出雲大社飛騨教会|12=simple|13=User:Immanuelle/Izumo-taisha Hida Church|comment=changed title based on wikidata|qid=Q28693310}}
 * {{ill|Izumo-taisha Hamamatsu Branch|ja|出雲大社浜松分院|12=simple|13=User:Immanuelle/Izumo-taisha Hamamatsu Branch|ja_comment=jawiki link invalid|qid=Q135579329}} - Located in {{ill|Chuo Ward, Hamamatsu, Shizuoka Prefecture|ja|静岡県浜松市中央区}}.
 ; Kansai Region
@@ -97,7 +97,7 @@ image=File:Grand Shrine of Izumo Matsuyama Branch Torii.jpg
 * {{ill|Izumo Taisha Okinawa Branch|ja|出雲大社沖縄分社|12=simple|13=User:Immanuelle/Izumo-taisha Okinawa Branch Shrine|comment=changed title based on wikidata|qid=Q38278464}}
 ; Other
 * {{ill|Izumo Taishakyo Mission of Hawaii|en|Izumo Taishakyo Mission of Hawaii|qid=Q6102414|lt=Hawaii Izumo-taisha}}
-* {{ill|Izumo-taisha Malaysia Religious Society|ja|出雲大社マレーシア講社|qid=DELETED_QID}}
+* {{ill|Izumo-taisha Malaysia Religious Society|ja|出雲大社マレーシア講社|qid=Q140446133}}
 * {{ill|Izumo-daijingū|ja|出雲大神宮|my|အိဇုမိုဒိုင်းဂျင်းဂူး|zh|出雲大神宮|qid=Q10896675|lt=Izumo Daijingū}} (Moto Izumo) - Located in {{ill|Chitose-cho, Kameoka City, Kyoto Prefecture|ja|京都府亀岡市千歳町}}. Listed as a {{ill|Myōjin Taisha|ja|名神大社|fr|Myōjin Taisha|zh|名神大社}} and a {{ill|First Shrine of Tanba Province|ja|丹波国一宮}}, it is an independent Shinto shrine.
 * {{ill|Iyo Shichifukujin Sacred Sites|ja|伊予七福神霊場|qid=Q140446134}}
 * {{ill|Hitachi-no-Kuni Izumo-taisha|ja|常陸国出雲大社|12=simple|13=User:Immanuelle/Hitachi-no-Kuni Izumo-taisha|comment=changed title based on wikidata|qid=Q107410070}} - Located in {{ill|Fukuhara, Kasama City, Ibaraki Prefecture|ja|茨城県笠間市福原}}.

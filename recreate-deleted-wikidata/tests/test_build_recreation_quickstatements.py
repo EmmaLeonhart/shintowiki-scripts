@@ -64,6 +64,19 @@ def test_block_place_gets_p17_and_sitelink():
     assert 'LAST\tSjawiki\t"縣神社 (四日市市)"' in lines
 
 
+def test_section_anchor_sitelink_is_dropped():
+    # Emma 2026-07-06: a section-anchor sitelink (contains '#') is invalid and must
+    # never be emitted — it caused the bad host-page/section sitelinks she stripped.
+    rec = {"recovered_label": "Ōtenma-chō Tennō Festival",
+           "fandom": {"langlinks": {"ja": "大伝馬町天王祭"}, "host_pages": ["Gion and Tenno Festivals"],
+                      "ja_sitelink": "祇園祭#日本全国の祇園祭"},
+           "enrichment": {"description_en": "festival in Japan", "p31": "Q132241",
+                          "p31_property": "P31", "p17": "Q17"}}
+    lines = b.block(rec, "Q135504314")
+    assert 'LAST\tP31\tQ132241' in lines
+    assert not any("Sjawiki" in ln for ln in lines)
+
+
 def test_block_subclass_uses_p279():
     rec = _rec(p31="Q1041984", p31_property="P279")
     lines = b.block(rec, "Q1")

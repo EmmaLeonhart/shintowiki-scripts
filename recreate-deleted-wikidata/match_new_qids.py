@@ -37,6 +37,10 @@ GIT_SYNCED = os.path.join(REPO, "git_synced")
 WD = "https://www.wikidata.org/w/api.php"
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 THROTTLE = 0.2
+# Emma's recreation batch spans ~Q140445965–Q140446168. Any exact-ja item at or above
+# this floor is one of those fresh creations (deleted-item QIDs are Q135xxxxxx, far
+# below). Used ONLY to disambiguate when several items share the same ja label.
+FRESH_MIN = 140_440_000
 _FORBIDDEN = set('<>:"/\\|?*')
 _ILL = re.compile(r"\{\{\s*ill\s*\|([^{}]*)\}\}", re.IGNORECASE)
 
@@ -90,6 +94,28 @@ def p31_of(qids):
     return out
 
 
+def choose_hit(cands, our_p31, p31s):
+    """Which exact-ja-label candidate is our recreated item.
+
+    Emma 2026-07-06: the Japanese labels were NEVER changed after creation, so a SINGLE
+    item under the exact ja label IS ours — accept it regardless of P31 (she re-types
+    items afterward: the Izumo 講社 → shrine-church; P279 subclasses have empty P31).
+    Only when MULTIPLE items share the ja label do we disambiguate: prefer our assigned
+    P31, else the single item in the fresh recreation-batch QID range. Coincidental
+    pre-existing items are already excluded upstream (possible_existing skip + the dedup
+    sweep, which would surface any real ja-collision as a multi-candidate case here).
+    """
+    if not cands:
+        return None
+    if len(cands) == 1:
+        return cands[0]
+    hit = next((q for q in cands if our_p31 in p31s.get(q, [])), None)
+    if hit is None:
+        fresh = [q for q in cands if int(q[1:]) >= FRESH_MIN]
+        hit = fresh[0] if len(fresh) == 1 else None
+    return hit
+
+
 def build_mapping():
     """{deleted_qid(file stem) : {"new": qid, "ja": ja, "en": en, "p31": p31,
     "relations": [...], "hosts": [...]}} for candidates matched to a new item."""
@@ -108,10 +134,12 @@ def build_mapping():
     for stem, r, ja, enr in recs:
         cands = ja_candidates(ja)
         if not cands:
+            print(f"  no exact-ja item yet: {ja}")
             continue
-        p31s = p31_of(cands)
         our = enr["p31"]
-        hit = next((q for q in cands if our in p31s.get(q, [])), None)
+        # only spend the P31 lookup when we actually have to disambiguate
+        p31s = p31_of(cands) if len(cands) > 1 else {}
+        hit = choose_hit(cands, our, p31s)
         if hit:
             mapping[stem] = {
                 "new": hit, "ja": ja,
@@ -122,7 +150,7 @@ def build_mapping():
             }
             print(f"  MATCH {r.get('recovered_label') or ja} ({ja}) → {hit}")
         else:
-            print(f"  no confident match: {ja} (candidates {cands} P31 mismatch)")
+            print(f"  ambiguous, needs review: {ja} (candidates {cands})")
     return mapping
 
 

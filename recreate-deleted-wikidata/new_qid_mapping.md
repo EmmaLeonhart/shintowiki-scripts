@@ -30,6 +30,7 @@
 | Q135500707 | 縣神社 (出雲市) | Agata Shrine (Izumo) | Q140445991 |
 | Q135500709 | 家津御子神 | Ietsumiko no Kami | Q140445993 |
 | Q135500713 | 熊野久須美命 | Kumano Kusu no Mi no Mikoto | Q140445994 |
+| Q135500718 | 県神社のスギ | Cedar of Agata Shrine | Q140445995 |
 | Q135500938 | 六孫王原古墳 | Rokusonōbara Kofun | Q140445996 |
 | Q135501970 | 荒木田守良 | Arakida Moriyoshi | Q140445997 |
 | Q135502402 | 島の湯 | Shima no Yu | Q140445998 |
@@ -100,6 +101,7 @@
 | Q135551110 | 神部小椅 | Kamibe Kogui | Q140446070 |
 | Q135551111 | 神部都牟自 | Kamibe Tsumuji | Q140446071 |
 | Q135551112 | 神部万侶 | Kamibe Manyo | Q140446072 |
+| Q135551119 | 和鏡 | Wa mirrors | Q140446073 |
 | Q135551144 | 石鈇大権現 | Ishibuto Daigongen | Q140446076 |
 | Q135551145 | 櫛御気野命 | Kushimikenu-no-mikoto | Q140446077 |
 | Q135551146 | 國軸山金峯山寺 | Konomine-dera | Q140446078 |
@@ -132,8 +134,8 @@
 | Q135579240 | 海犬養連 | Ama Inukai no Muraji | Q140446108 |
 | Q135579241 | 若犬養連 | Waka Inukai no Muraji | Q140446109 |
 | Q135579242 | 阿曇犬養連 | Azumi Inukai no Muraji | Q140446110 |
+| Q135579243 | 暦師 | calendar makers | Q140446111 |
 | Q135579244 | 天照国照彦火明櫛玉饒早日命 | Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto | Q140446112 |
-| Q135579263 | 五所権現 | Five Gongen | Q140446113 |
 | Q135579264 | 伊須流岐比古神 | Isurugi Hiko | Q140446114 |
 | Q135579269 | 佐和恵多良六老彦神 | Sawaetahara-Rokurohiko-no-Kami | Q140446116 |
 | Q135579270 | 妙見山古墳 (向日市) | Myokenzan Kofun (Muko City) | Q140446117 |
@@ -146,8 +148,10 @@
 | Q135579319 | 古峰大神 | Kohō Ōkami | Q140446127 |
 | Q135579324 | 出雲大社三神教会 | Izumo-taisha Misanjin Church | Q140446128 |
 | Q135579327 | 出雲大社庄内教会 | Izumo-taisha Shonai Church | Q140446129 |
+| Q135579328 | 出雲大社佐久之宮講社 | Izumo-taisha Sakunomiya Religious Society | Q140446130 |
 | Q135579341 | 出雲大社唐津教会 | Izumo-taisha Karatsu Church | Q140446131 |
 | Q135579343 | 出雲大社高千穂教会 | Izumo-taisha Takachiho Church | Q140446132 |
+| Q135579345 | 出雲大社マレーシア講社 | Izumo-taisha Malaysia Religious Society | Q140446133 |
 | Q135579347 | 伊予七福神霊場 | Iyo Shichifukujin Sacred Sites | Q140446134 |
 | Q135579348 | 宮王勝良 | Miyao Katsuyoshi | Q140446136 |
 | Q135579349 | 千家尊愛 | Sengetakaaki | Q140446137 |

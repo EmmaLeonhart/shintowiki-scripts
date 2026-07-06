@@ -81,9 +81,14 @@ def block(rec, deleted_qid):
     for r in enr.get("relations") or []:
         if r.get("target_qid"):
             lines.append(f"LAST\t{r['property']}\t{r['target_qid']}")
-    # jawiki sitelink (notability anchor) — only where a safe one exists.
-    if fa.get("ja_sitelink"):
-        lines.append(f"LAST\tSjawiki\t{qs(fa['ja_sitelink'])}")
+    # jawiki sitelink (notability anchor) — only where a safe one exists. NEVER emit a
+    # section-anchor link (contains '#'): it is invalid as a Wikidata sitelink and was
+    # the source of most of the bad host-page/section sitelinks Emma had to strip by
+    # hand (2026-07-06 — e.g. 祇園祭#日本全国の祇園祭 on 11 festival sub-topics). A plain
+    # page title still emits (it may be a genuine standalone article for the sub-topic).
+    sl = fa.get("ja_sitelink")
+    if sl and "#" not in sl:
+        lines.append(f"LAST\tSjawiki\t{qs(sl)}")
     return lines
 
 
