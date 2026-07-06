@@ -4,6 +4,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — cleanup-loop reliability: orchestrator wall-clock self-stop (queue #1)
+
+**Diagnosis of "what changed with the categories."** The cleanup-loop has been 5–11h/fire and
+mostly RED since 2026-06-26. Root cause is the ns14 (Category) namespace ballooning to **28,176
+pages** — the bulk enwiki-import maintenance categories (`0th-century literature`, `1004
+establishments`, `1005 deaths`, date/century/deaths cats), only ~900 shrine-related. The category
+orchestrator runs heavy per-page ops (`ENABLE_HISTORY_OFFLOAD` / `ENABLE_FANDOM_MIRROR` /
+`ENABLE_WIKIDATA_LOOKUP`), so 1000 pages cost 2h40m — and the only stop conditions were
+page-count (`MAX_STATE_GROWTH_PER_RUN=1000`) and edit-count, neither of which bounds wall-clock
+when per-page cost varies 100×. Result: the step hit its 160-min CI timeout, killed RED mid-page;
+on a true mwclient stall it committed nothing ("No state changes to commit"). `63926a81`
+(max_retries=5) stopped the pure-stall variant so 07-05 finally went green (8h), but slow-but-
+progressing runs still risked the red timeout.
+
+**Fix.** `common.run_orchestrator` now has a wall-clock self-stop: `MAX_RUN_SECONDS` (default 145
+min, env `ORCHESTRATOR_MAX_SECONDS`), checked at the top of every loop iteration. When the budget
+is hit it stops the walk cleanly mid-cycle, commits the incrementally-appended progress, and exits
+GREEN (`finished_all=False` ⇒ state is NOT cleared, so the next fire resumes from the cursor).
+145 min sits under the category step's 160-min timeout (15-min commit margin) and well under the
+330-min jobs — so it applies universally, also bounding the 3h20m module-orchestrator job. Tests:
+`shinto_miraheze/tests/test_orchestrator_wall_clock.py` (deadline stop doesn't clear state; clean
+exhaust does clear; env override). Still needs a live cleanup-loop fire to confirm green-complete.
+
+---
+
 ## 2026-07-06 — Deleted-QID ill tail fully drained (Emma)
 
 All deleted-QID ill targets resolved: the recreation candidates + the 53 non-candidate tail were created (Emma ran the QS; types keyword-guessed, human-defaults she corrects), ills relinked via her EXACT QID lists (Q140447xxx). In-slot-QID ills (Q702140 Ōnamuchi, Q568647 Taira, Kōshin-dō Q124683618) and concept links (川神→river deity, 樹木信仰→tree worship) resolved; the 2 non-entities (a street address, Bouryuu) de-illed. The apparent 151 residual was the git-sync instruction COMMENT on 144 pages, not real ills. Lesson: use exact QIDs when given, never Wikidata-search (matched coincidental old items once, reverted).

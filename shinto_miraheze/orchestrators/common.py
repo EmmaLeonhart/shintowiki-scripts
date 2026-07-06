@@ -73,6 +73,21 @@ THROTTLE = 2.5
 # roughly "fetch 1000 pages worth of content" = ~10-15 min.
 MAX_STATE_GROWTH_PER_RUN = 1000
 
+# Wall-clock self-stop. The state-growth cap above assumes ~10-15 min per
+# 1000 pages, but that only holds for pure text ops. In the category
+# namespace with the heavy ops enabled (ENABLE_HISTORY_OFFLOAD,
+# ENABLE_FANDOM_MIRROR, ENABLE_WIKIDATA_LOOKUP), each page can cost several
+# network round-trips + an XML-archive git op, so 1000 pages took 2h40m and
+# blew straight through the 160-min CI step timeout — killed red, mid-page,
+# and (on a true stall) with nothing committed. A page-count cap can't
+# bound wall-clock when per-page cost varies by two orders of magnitude;
+# only a clock can. When this many seconds have elapsed, the walk stops
+# cleanly mid-cycle, commits the progress appended so far, and exits GREEN
+# so the next fire resumes from the cursor. Default 145 min leaves a ~15-min
+# margin under the 160-min step timeout for the final state commit + cleanup.
+# Override with ORCHESTRATOR_MAX_SECONDS (e.g. tighter for a shorter step).
+MAX_RUN_SECONDS = int(os.getenv("ORCHESTRATOR_MAX_SECONDS", str(145 * 60)))
+
 # Matches hard redirects AND the common template-based soft/category
 # redirect forms. Exported so individual ops can opt out of running
 # on redirects (e.g. history_offload refuses outright — delete+recreate
@@ -238,6 +253,7 @@ def run_orchestrator(
     would_edit = 0  # dry-run counter (changes the code would have made)
     state_growth = 0  # titles appended to state in THIS run (bounded below)
     finished_all = True
+    run_start = time.monotonic()  # wall-clock deadline anchor (see MAX_RUN_SECONDS)
 
     def _mark_done(t: str) -> None:
         """Append `t` to state and bump the per-run growth counter. All
@@ -248,6 +264,12 @@ def run_orchestrator(
         state_growth += 1
 
     for title in iter_allpages(site, namespace, start_from=start_from):
+        elapsed = time.monotonic() - run_start
+        if elapsed >= MAX_RUN_SECONDS:
+            print(f"Reached wall-clock budget ({MAX_RUN_SECONDS}s, elapsed {elapsed:.0f}s) "
+                  f"after {state_growth} pages this run; stopping mid-cycle (clean, green).")
+            finished_all = False
+            break
         if apply and state_growth >= MAX_STATE_GROWTH_PER_RUN:
             print(f"Reached max state growth per run ({MAX_STATE_GROWTH_PER_RUN}); stopping mid-cycle.")
             finished_all = False
