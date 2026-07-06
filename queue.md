@@ -46,11 +46,13 @@ carry category QIDs → authoritative enwiki category sitelink), and phase-4 pla
 `docs/category_translation_residual.md`. Remaining productive patterns need EITHER a verified enwiki
 category convention (only then a suffix is added) OR human translation — never machine-guessed:
 
-- [ ] Work the residual tail: `の重要文化財` (Important Cultural Properties), `の旧県社`
-  (shrine-rank-by-place), `<place>郡` bare districts, and `<sect>の寺院` sect-temples (P31 gate
-  correctly sends these to residual — they're temples OF a Buddhist school, not IN a place; needs a
-  separate sect→English-name path if wanted). Add a suffix only when the enwiki convention is
-  verified; otherwise leave for human translation. Low urgency — phases 1/4 already drain the bulk.
+- [ ] Work the residual tail. DONE: `の重要文化財` → "Important Cultural Properties of <place>"
+  (verified enwiki "of" convention, added). VERIFIED-NO-CONVENTION (leave to human, never guess):
+  `の旧県社` shrine-rank-by-place (enwiki has no "Former prefectural shrines"/"Kensha" category).
+  Still open: `<place>郡` bare districts (enwiki "<Name> District, <Prefecture>" — a place-naming
+  pattern, needs its own resolver, not a topic suffix), `の画像提供依頼` maintenance (image-request),
+  `<sect>の寺院` sect-temples (needs a sect→English path). Add a suffix only when the enwiki
+  convention is verified. Low urgency — phases 1/4 drain the bulk.
 
 ## 4. EN/FR/ID label-gap regularization
 

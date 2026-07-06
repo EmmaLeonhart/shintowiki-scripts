@@ -46,6 +46,16 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — Category translation: の重要文化財 suffix (queue #3, residual tail)
+
+Added `<place>の重要文化財` → "Important Cultural Properties of <place>" to the phase-4 gazetteer.
+Verified the enwiki convention first (it's "of", not "in" — Category:Important Cultural Properties
+of Kyoto Prefecture / of Hyōgo Prefecture exist); live-checked 京都府の重要文化財 → "Category:Important
+Cultural Properties of Kyoto Prefecture". Also verified `の旧県社` (former prefectural shrines) has
+NO enwiki category convention (no "Former prefectural shrines"/"Kensha"), so it stays residual —
+never machine-guessed. +2 tests. Remaining residual (郡 districts, image-request maintenance,
+sect-temples) needs its own resolvers, left for later / human.
+
 ## 2026-07-06 — Category translation: phase-4 の神社/の寺院 fallback suffixes (queue #3)
 
 Extended `generate_category_translation_moves.py`'s place gazetteer with two verified enwiki

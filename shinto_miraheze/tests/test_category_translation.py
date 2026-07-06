@@ -74,6 +74,20 @@ def test_shrines_category_gated_and_formatted():
             == "Category:Buddhist temples in Kyoto")
 
 
+def test_parse_place_important_cultural_properties():
+    # <place>の重要文化財 → "Important Cultural Properties of <place>" (enwiki uses
+    # "of", not "in" — verified against Category:Important Cultural Properties of
+    # Kyoto Prefecture / of Hyōgo Prefecture).
+    assert (g.parse_place_pattern("京都府の重要文化財")
+            == ("京都府", "Important Cultural Properties of {}"))
+
+
+def test_icp_category_formatted():
+    assert (g.place_category("Important Cultural Properties of {}", "Kyoto Prefecture",
+                             ["Q50337"])
+            == "Category:Important Cultural Properties of Kyoto Prefecture")
+
+
 def test_parse_place_empty_stem_is_none():
     # A bare suffix with no place stem must not match.
     assert g.parse_place_pattern("の歴史") is None

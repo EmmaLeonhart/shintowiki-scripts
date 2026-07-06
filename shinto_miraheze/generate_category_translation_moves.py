@@ -134,6 +134,7 @@ _TEMPLATE_LOOKUP: dict[str, str] = {}
 # "<place>の神社" (shrines IN a place) from "<name>神社" (one specific shrine,
 # which must NOT match — see test_parse_place_non_pattern_is_none).
 _PLACE_SUFFIXES: list[tuple[str, str]] = [
+    ("の重要文化財", "Important Cultural Properties of {}"),  # enwiki uses "of", not "in"
     ("の建築物", "Buildings and structures in {}"),
     ("の神社", "Shinto shrines in {}"),
     ("の寺院", "Buddhist temples in {}"),
