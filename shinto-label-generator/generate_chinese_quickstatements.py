@@ -12,6 +12,7 @@ Output: quickstatements/zh.txt
 import os
 import sys
 import io
+import json
 import re
 import requests
 from opencc import OpenCC
@@ -77,6 +78,48 @@ def zh_variants(simplified):
         "gan": _s2t.convert(simplified),
         "zh-mo": _s2hk.convert(simplified),
     }
+
+
+# ----------------------------
+# cdo (Min Dong / Bàng-uâ-cê) romanization of the SAME hanzi (Emma's directive):
+# not a phonetic transliteration of the kana, but the Min Dong reading of every
+# character in the zh-hant (traditional) label, space-joined. Readings come from
+# cdo_readings.json (built by fetch_cdo_readings.py from Wiktionary |md=). GATED:
+# emit ONLY when every CJK character is covered — never a partial/wrong label.
+# ----------------------------
+_CDO_READINGS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                  "cdo_readings.json")
+try:
+    with open(_CDO_READINGS_PATH, encoding="utf-8") as _cf:
+        CDO_READINGS = json.load(_cf)
+except FileNotFoundError:
+    CDO_READINGS = {}
+
+# Japanese-shinjitai man'yōgana forms OpenCC s2t leaves alone; the md= reading
+# lives on the Chinese-traditional page (keeps cdoify in sync with the fetcher).
+_CDO_SHINJITAI = {"恵": "惠", "曽": "曾", "気": "氣"}
+
+
+def cdoify(hanzi):
+    """Min Dong (Bàng-uâ-cê) romanization of a (traditional) hanzi string: each
+    CJK char → its Wiktionary md= reading, space-joined. GATED — returns None if
+    ANY CJK character has no reading (never a partial label). Non-CJK characters
+    pass through unchanged (rare in these labels)."""
+    if not hanzi:
+        return None
+    out = []
+    for ch in hanzi:
+        if "一" <= ch <= "鿿":
+            reading = (CDO_READINGS.get(ch)
+                       or CDO_READINGS.get(_CDO_SHINJITAI.get(ch, ch))
+                       or CDO_READINGS.get(_s2t.convert(ch)))
+            if not reading:
+                return None
+            out.append(reading)
+        else:
+            out.append(ch)
+    label = " ".join(out).strip()
+    return label or None
 
 # ----------------------------
 # Kana → Chinese character mapping (man'yogana-style phonetic substitution)
@@ -274,6 +317,28 @@ def main():
             if variant_lines[code]:
                 f.write("\n")
         print(f"  Wrote {len(rows)} {code} QuickStatements to {vpath}")
+
+    # cdo (Min Dong): romanize the zh-hant form; GATED — only rows where every
+    # char has a reading get a line. Zero cdo labels exist on shrines today, so
+    # this fills a real gap; coverage grows as fetch_cdo_readings.py --corpus is
+    # rerun. Skipped rows (an uncovered char) are counted, not silently dropped.
+    cdo_lines = []
+    cdo_skipped = 0
+    for row in rows:
+        cdo_label = cdoify(zh_variants(row["zh_label"])["zh-hant"])
+        if cdo_label is None:
+            cdo_skipped += 1
+            continue
+        esc = cdo_label.replace('"', '""')
+        cdo_lines.append(f'# Source: JA "{row["ja_label"]}"')
+        cdo_lines.append(f'{row["qid"]}\tLcdo\t"{esc}"')
+    cdo_path = os.path.join(outdir, "cdo.txt")
+    with open(cdo_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(cdo_lines))
+        if cdo_lines:
+            f.write("\n")
+    print(f"  Wrote {len(cdo_lines) // 2} cdo QuickStatements to {cdo_path} "
+          f"(gated: {cdo_skipped} rows skipped for an uncovered char)")
 
     # Sample output
     print("\n--- Sample output ---")

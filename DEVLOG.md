@@ -4,6 +4,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — cdo (Min Dong) transliterator SHIPPED — gated cdoify + registry (queue #5 done)
+
+Completed cdo end-to-end. `cdoify(hanzi)` in `generate_chinese_quickstatements.py` romanizes the
+zh-hant (traditional) label char-by-char via the Min Dong `md=` readings in `cdo_readings.json`
+(now 1502 entries after the `--corpus` RAG walk; 1502/2192 corpus-char coverage, 690 chars have no
+Wiktionary reading = genuine gaps). GATED: emits None if any char is uncovered, so no partial/wrong
+label ever ships (神社→"sìng siâ", 神宮→"sìng gṳ̆ng"; a rare uncovered char → whole label withheld).
+Wired into `main()` as a gated `cdo.txt` emission (skipped-row count logged, not silently dropped),
+registered in `language_registry.py` (`mindong-md-romanization`). +6 cdo tests, registry test
+updated (cdo now covered; nan is the new uncovered example). 186 label-generator tests green.
+Ongoing: rerun `--corpus` as the corpus grows (maintenance, not a blocker).
+
 ## 2026-07-06 — cdo (Min Dong) transliterator: RAG infrastructure + man'yōgana core (queue #5)
 
 Down payment on the last/lowest-priority queue item. Built `fetch_cdo_readings.py` — the

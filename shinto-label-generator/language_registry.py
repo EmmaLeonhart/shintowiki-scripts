@@ -92,6 +92,10 @@ COVERED = {
     "zh-sg": ("generate_chinese_quickstatements.py", "simplified-base"),
     "gan": ("generate_chinese_quickstatements.py", "opencc-s2t"),
     "zh-mo": ("generate_chinese_quickstatements.py", "opencc-s2hk"),
+    # cdo (Min Dong): Bàng-uâ-cê romanization of the zh-hant hanzi via Wiktionary
+    # md= readings (cdo_readings.json); GATED — only labels whose every char is
+    # covered are emitted.
+    "cdo": ("generate_chinese_quickstatements.py", "mindong-md-romanization"),
     "ko": ("generate_korean_quickstatements.py", "hangul/hanja"),
     "tok": ("fetch_shrines_tokiponize.py", "tokiponize"),
     "id": ("generate_indonesian_proposals.py", "romaji"),

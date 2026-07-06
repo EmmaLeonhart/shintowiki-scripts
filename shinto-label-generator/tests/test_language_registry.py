@@ -22,15 +22,15 @@ def test_source_langs_not_treated_as_todo():
 
 
 def test_uncovered_language_is_todo():
-    # cdo (Min Dong — mixed Chinese chars + Bàng-uâ-cê romanization, not a plain
-    # transliteration) still has no generator; th/my/pa/new/mad/km/lo/dz/shn all
-    # gained one 2026-07-06 (wunsen for Thai, Aksharamukha for the Brahmic set).
-    rows = [("de", 267), ("my", 25), ("th", 33), ("cdo", 5)]
+    # nan (Min Nan / Southern Min — another Chinese-topolect romanization) still
+    # has no generator; cdo gained one 2026-07-06 (Min Dong md= romanization of
+    # the zh-hant hanzi), as did th/my/pa/new/mad/km/lo/dz/shn earlier that day.
+    rows = [("de", 267), ("my", 25), ("cdo", 5), ("nan", 7)]
     covered, todo = r.split_coverage(rows)
     cov_langs = {c["lang"] for c in covered}
     todo_langs = {c["lang"] for c in todo}
-    assert {"de", "my", "th"} <= cov_langs
-    assert "cdo" in todo_langs
+    assert {"de", "my", "cdo"} <= cov_langs
+    assert "nan" in todo_langs
 
 
 def test_todo_sorted_by_count_desc():

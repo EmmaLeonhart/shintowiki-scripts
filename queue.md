@@ -69,22 +69,15 @@ category convention (only then a suffix is added) OR human translation — never
   Emma's go-ahead (CLAUDE.md WD rules). Analysis: `docs/deleted_immanuelle_items_analysis_2026-07-05.md`.
   If yes, express as QuickStatements only (feed the daily pipeline) — never a bespoke editor.
 
-## 5. cdo (Min Dong) transliterator (do last)
+## 5. cdo (Min Dong) transliterator — maintenance only
 
-cdo = the Bàng-uâ-cê romanization of the SAME hanzi the zh generator produces (Emma's directive).
-Infrastructure built (`fetch_cdo_readings.py` RAG tool + `cdo_readings.json`, 96 entries). Key
-findings baked in: Min Dong `|md=` readings live on TRADITIONAL char pages (万→none, 萬→uâng), so
-the table is traditional-keyed and cdo romanizes the zh-hant (traditional) variant; a shinjitai map
-(恵→惠, 曽→曾, 気→氣) covers forms OpenCC leaves alone. The fixed man'yōgana core is 63/65 covered
-(佐, 禰 have no Wiktionary reading — genuine data gaps). Remaining:
+Built + wired (gated `cdoify` in `generate_chinese_quickstatements.py`, registered, emits `cdo.txt`;
+`cdo_readings.json` 1502 entries, 1502/2192 corpus-char coverage). No open task — the only ongoing
+work is coverage growth:
 
-- [ ] Run `python fetch_cdo_readings.py --corpus --apply` (add `--corpus` walking the full shrine zh
-  output) to cover the long tail of real shrine-name kanji — the agentic-RAG expansion. Log any
-  chars with no `md=` reading (don't guess).
-- [ ] Wire a GATED `cdoify(hanzi_str)`: normalise each char via `to_trad`, look up every reading,
-  and emit ONLY when ALL chars are covered (else return None — never a wrong partial label). Then
-  register cdo in `language_registry.py` + dispatch in the zh pipeline. Zero cdo labels exist today,
-  so coverage-first then wire — but it gets done.
+- [ ] (low, recurring) Rerun `python fetch_cdo_readings.py --corpus --apply` after the zh corpus
+  grows, to pick up new shrine-name chars. 690 chars currently have no Wiktionary `md=` reading
+  (genuine gaps); gated cdo simply withholds labels containing them. Not a blocker.
 
 ## Pinned tail (keep last, always)
 
