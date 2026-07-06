@@ -1,0 +1,45 @@
+# Wikimedia-category items: shinto categories with a jawiki category but no Wikidata item.
+# english-named get an en label; japanese-named are bare (pipeline links them later).
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:1940年代設立の日本企業"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:アクセシビリティ・テンプレート"
+LAST	Len	"Category:Accessibility templates"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:ACジャパン正会員企業・団体"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:テンプレートによって追加されるカテゴリ"
+LAST	Len	"Category:Categories added by templates"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:Template:SKOSlink"
+LAST	Len	"Category:Template:SKOSlink"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:コモンズに同一・同名のものがあるメディア"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:コモンズの重複メディアに履歴継承の問題があるメディア"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:名数で表現される山"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:戦後の高知"
+
+CREATE
+LAST	P31	Q4167836
+LAST	Sjawiki	"Category:銃撃事件"
