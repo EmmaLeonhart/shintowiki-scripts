@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Cleanup-loop fully validated green; durability comprehensive fill (batches 13–15)
+
+Cleanup-loop run 28802688487 (fixes 1fa6c414 category self-stop + 7b0f0379 site-push retry)
+completed **success end-to-end** — generate-pages/build green AND the 5h direct-daily-edits green.
+Queue #1 (loop reliability) closed; only the conditional ns14-throughput note remains.
+
+Durability: after Emma stated the failure-mode hierarchy (conspicuous > DELETED > wrong — a bare
+P31-only stub gets deleted, cascading into every {{ill}}/link pointing at it), did a COMPREHENSIVE
+zero-blank fill. batch 13/14 = grounded P131 locations (Nembutsu-dance ICPs, Daisen-ji, Denma-chō,
+Zuiki, etc.); batch 15 = the fill leaving no item with only P31 — people→P21 male, kami→P1049
+worshipped-by (crossref shrine), everything else (incl. clan/book stubs + abstract concepts)→P17
+Japan as a plausible country anchor. Every vulnerable 2026-01-01 item now carries ≥1 statement.
+All via the QuickStatements pipeline (no bespoke editor, no summaries — the one hard line).
+
 ## 2026-07-06 — Durability enrichment continued from crashed session (batches 6–12, ~106 statements)
 
 Emma's local machine crashed mid-way through a claude.ai session doing durability

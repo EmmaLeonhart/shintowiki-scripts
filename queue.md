@@ -12,26 +12,13 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ---
 
-## 1. Get the cleanup-loop reliably working (top priority — enables everything else)
+## 1. Category-orchestrator throughput (conditional, low priority)
 
-TWO root causes found + fixed:
-1. **Category timeout** (`1fa6c414`): ns14 ballooned to 28,176 pages × heavy per-page ops → blew the
-   160-min step timeout. Added a wall-clock self-stop (`MAX_RUN_SECONDS=145min`). VALIDATED — the
-   07-06 run's category-orchestrator step ran GREEN in 6m11s.
-2. **Site-build push race** (`generate-pages.yml`): the "Commit updated _site to repo" step did a
-   single `git push` with no retry; a sibling job pushed first → `! [rejected] main -> main` → the
-   step exit-1'd and reddened the WHOLE cleanup-loop (the actual 07-06 failure). Fixed: fetch-rebase
-   -retry loop (5 attempts) + non-fatal exit (mirrors `commit_state.sh`; _site is cosmetic — Pages
-   deploys from the uploaded artifact, not the repo commit).
+- [ ] A full ns14 category cycle still takes ~many fires at ~1000 pages/145min. ONLY if #2's drain
+  proves too slow: skip history_offload/fandom_mirror on the ~3k enwiki-junk cats, or shard ns14. No
+  premature optimization. (Cleanup-loop reliability itself is DONE — run 28802688487 green end-to-end.)
 
-- [ ] VALIDATED 2026-07-06: run 28802688487 (fix `7b0f0379`) — `generate-pages/build` ✓ green + every
-  orchestrator ✓; only `direct-daily-edits` (5h WD editor) still finishing. Confirm that final step
-  lands green, then delete this item.
-- [ ] THROUGHPUT (separate, lower priority): a full category cycle still takes ~many fires at
-  ~1000 pages/145min. Only if draining item 2 proves too slow: skip history_offload/fandom_mirror on
-  the ~3k enwiki-junk cats or shard ns14. No premature optimization.
-
-## 2. Drain the category-deprecation back-pressure (depends on #1)
+## 2. Drain the category-deprecation back-pressure
 
 Once the loop runs: the **18 Japanese-named duplicate categories** tagged this session into
 `[[Category:Japanese language category names]]` get translated (cloud) + merged by
