@@ -7,6 +7,7 @@
     "timestamp": "20250801074412"
   },
   "enrichment": {
+    "description_en": null,
     "label_count": 49,
     "labels": {
       "ar": {
@@ -206,7 +207,12 @@
         "source": "translit"
       }
     },
-    "romaji_reading": "Mizumachi Site"
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "Mizumachi Site",
+    "type_confidence": "none",
+    "type_source": null
   },
   "fandom": {
     "categories": [

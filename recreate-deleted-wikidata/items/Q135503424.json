@@ -7,6 +7,7 @@
     "timestamp": "20250730011819"
   },
   "enrichment": {
+    "description_en": null,
     "label_count": 59,
     "labels": {
       "ar": {
@@ -246,7 +247,12 @@
         "source": "translit"
       }
     },
-    "romaji_reading": "basumerodeぃー"
+    "p31": null,
+    "p31_label": null,
+    "p31_property": null,
+    "romaji_reading": "basumerodeぃー",
+    "type_confidence": "none",
+    "type_source": null
   },
   "fandom": {
     "categories": [

@@ -7,6 +7,7 @@
     "timestamp": "20250801052043"
   },
   "enrichment": {
+    "description_en": "kami (Shinto deity)",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -246,7 +247,12 @@
         "source": "translit"
       }
     },
-    "romaji_reading": "Okutsuhime no Mikoto"
+    "p31": "Q524158",
+    "p31_label": "kami",
+    "p31_property": "P31",
+    "romaji_reading": "Okutsuhime no Mikoto",
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [

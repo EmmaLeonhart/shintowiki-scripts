@@ -7,6 +7,7 @@
     "timestamp": "20250729224544"
   },
   "enrichment": {
+    "description_en": "Japanese historical figure",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -246,7 +247,12 @@
         "source": "translit"
       }
     },
-    "romaji_reading": "Abe no Kiyohiro"
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "romaji_reading": "Abe no Kiyohiro",
+    "type_confidence": "medium",
+    "type_source": "name-pattern"
   },
   "fandom": {
     "categories": [

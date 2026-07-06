@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Recreation candidates: P31 (instance of) from the entity name
+
+Second half of Emma's "P31 or subclass of" ask, done the sound way after reverting the
+host-page-category approach. `enrich_p31.py` classifies from the entity NAME — primarily the
+Japanese suffix (definitional): 祭→festival Q132241, 命·尊→kami Q524158, 社·宮·大社·神宮→Shinto
+shrine Q845945, bare 神→kami, 踊→dance Q11639, 連·禰 / clan-patronymic→human Q5, 記·書·抄·風土記→
+book Q571; English label corroborates. All target QIDs verified live on Wikidata. Result: **91/213
+confidently typed** (kami 28, festival 26, shrine 17, human 16, dance 2, book 2) + an English
+description each; **122 left null for human review** (geographic/kofun/church/system/misc — never
+guessed). Verified the earlier mislabel is fixed: Niwa-tsume no Mikoto now → kami, not
+"disambiguation page". 7 unit tests (31 green in-dir). Written into each `items/<QID>.json`
+`enrichment` block alongside the multilingual labels; triage in `items/_p31_summary.md`.
+
 ## 2026-07-06 — Recreation candidates: names across many languages (Emma request)
 
 Emma: "all recreation candidates should have names across many languages ... they all need a

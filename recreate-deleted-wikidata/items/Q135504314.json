@@ -7,6 +7,7 @@
     "timestamp": "20250730020430"
   },
   "enrichment": {
+    "description_en": "festival in Japan",
     "label_count": 2,
     "labels": {
       "en": {
@@ -18,7 +19,12 @@
         "source": "fandom"
       }
     },
-    "romaji_reading": null
+    "p31": "Q132241",
+    "p31_label": "festival",
+    "p31_property": "P31",
+    "romaji_reading": null,
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [
