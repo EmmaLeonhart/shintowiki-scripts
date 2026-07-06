@@ -78,6 +78,20 @@ left behind.
   `source,destination` to `category_moves.csv` (consumed by the existing monthly `move_categories`).
   Uncapped; the cloud consumer paces itself. Verify a sample of proposed names before wiring to move.
 
+## 6. POLICY: deleted-QID ills → best EXISTING Wikidata item, never recreate
+
+Emma 2026-07-06: recreation is a losing game — a recreated item (Q140447362 "Tropical decor",
+南国趣味) got re-deleted, breaking its relink. **Do not recreate.** For any `{{ill|…|qid=DELETED_QID}}`
+(or an ill whose QID is later deleted), search Wikidata for the BEST EXISTING item and set `qid=` to
+it (or de-ill if there's no reasonable match). Best-effort; imperfect beats a dead link.
+
+- Tropical decor (the ONLY current case, on Jungle bath) → RAG'd to **Q368949 "exoticism"** and
+  relinked. Done.
+- [ ] If deleted-QID ills accumulate again (the `deleted_qids_in_ill` op re-flags dead QIDs on its
+  sweep), resolve each RAG→existing-item, not by recreation. Only worth a `remote_queue` RAG source
+  (mirror the category_translation one) if the volume returns; a handful get done by hand.
+  Retire `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (superseded by this policy).
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
