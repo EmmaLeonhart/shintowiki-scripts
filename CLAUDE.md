@@ -276,6 +276,15 @@ the retry — do not replace it with a single-shot push.
 
 ## Gotchas
 
+* **Urgency: corrupted/time-sensitive DATA beats pipeline glitches.** A broken
+  automated *pipeline* (cleanup-loop, an orchestrator timing out) is often the
+  LEAST urgent thing — it's durable infrastructure, fixable any time, and a delay
+  only delays automated draining. What's MOST urgent is corrupted / one-shot /
+  time-sensitive DATA — QuickStatements that can only be run today, corrupted
+  single-use data that leaves things long-term STUCK. Do the time-sensitive
+  disposable data FIRST; defer the pipeline repair (even when you've just
+  root-caused it). Emma 2026-07-05: chasing the cleanup-loop root cause while
+  the run-today category QuickStatements waited was exactly backwards.
 * **Almost every weird thing on the shinto wiki is SIGNAL, not corruption.** Emma
   built the wiki solo with idiosyncratic, deliberate conventions, never expecting
   agents or other humans to edit it (stated 2026-07-05). Unusual template params,
