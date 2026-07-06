@@ -56,12 +56,30 @@ def _last_word(en):
     return words[-1] if words else ""
 
 
+# Confirmed-human candidates (Emma 2026-07-06) whose names carry no definitional
+# suffix — historical people from clan genealogies / family trees. Keyed by ja name
+# so we type exactly these, never a fuzzy surname heuristic (中臣 also begins the
+# TEXT 中臣祓訓解, so a surname-prefix rule would misfire). These get P31=Q5 + the
+# relations/dedup passes.
+CONFIRMED_HUMAN_JA = frozenset({
+    "中臣時風", "桜井義国", "深根宗継", "葛城高宗", "丹波忠明", "武藤頼佐",
+    "安達景村", "安達重景", "安達時景", "荒木田守良", "神部伎閇", "神部宿奈",
+    "神部二身", "神部小椅", "神部都牟自", "神部万侶", "野崎隠岐守綱吉",
+    "宮王勝良", "宮王重丸",
+})
+
+
 def classify(en, ja):
     """Return (p31_qid, p31_label, description, confidence, source)."""
     en = _strip_paren(en or "")
     ja = _strip_paren(ja or "")
     jl = ja[-1] if ja else ""
     last = _last_word(en)
+
+    # Emma-confirmed historical people (family-tree / clan-genealogy figures with
+    # no definitional name suffix) — exact ja match, checked first.
+    if ja in CONFIRMED_HUMAN_JA:
+        return "Q5", "human", "Japanese historical figure", "high", "emma-confirmed"
 
     # Izumo high-priest houses (Senge 千家 / Kitajima 北島) — people.
     if ja.startswith(("千家", "北島")):

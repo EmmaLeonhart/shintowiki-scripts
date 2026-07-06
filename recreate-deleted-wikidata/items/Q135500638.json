@@ -258,6 +258,7 @@
       {
         "property": "P22",
         "relation": "father",
+        "source": "infobox",
         "source_page": "Abe no Yasuchika",
         "target_label_en": "Abe no Yasuchika",
         "target_label_ja": "安倍泰親",
@@ -266,6 +267,7 @@
       {
         "property": "P21",
         "relation": "sex or gender",
+        "source": "infobox",
         "source_page": "Abe no Yasuchika",
         "target_label_en": "male",
         "target_qid": "Q6581097"

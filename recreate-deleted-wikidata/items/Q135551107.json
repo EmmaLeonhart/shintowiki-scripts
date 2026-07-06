@@ -7,7 +7,7 @@
     "timestamp": "20250801074225"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "Japanese historical figure",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -250,12 +250,33 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "possible_existing": [],
+    "relations": [
+      {
+        "property": "P22",
+        "relation": "father",
+        "source": "familytree-lineage",
+        "source_page": "Awaga Daimyojin Mototsufumi",
+        "target_label_en": "Miwabe no Oshi",
+        "target_label_ja": "神部忍",
+        "target_qid": "Q119380449"
+      },
+      {
+        "property": "P40",
+        "relation": "child",
+        "source": "familytree-lineage",
+        "source_page": "Awaga Daimyojin Mototsufumi",
+        "target_label_en": "Miwabe no Naku",
+        "target_label_ja": "神部奈久",
+        "target_qid": "Q119380451"
+      }
+    ],
     "romaji_reading": "Kamibe Kige",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "emma-confirmed"
   },
   "fandom": {
     "categories": [

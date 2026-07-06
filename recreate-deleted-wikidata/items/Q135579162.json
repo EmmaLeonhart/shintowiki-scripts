@@ -7,7 +7,7 @@
     "timestamp": "20250802035521"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "Japanese historical figure",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -250,12 +250,14 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
+    "possible_existing": [],
+    "relations": [],
     "romaji_reading": "Nozaki Oki-no-Kami Tsunayoshi",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "emma-confirmed"
   },
   "fandom": {
     "categories": [

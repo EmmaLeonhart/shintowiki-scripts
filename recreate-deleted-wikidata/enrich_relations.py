@@ -124,6 +124,63 @@ def host_ja(wikitext):
     return m.group(1) if m else ""
 
 
+def _ill_node(inner):
+    """Parse one {{ill|…}} inner → (en, ja, qid). qid = real Q from `qid=` (not
+    DELETED_QID), else ''. Pure."""
+    parts = [p.strip() for p in inner.split("|")]
+    positional, ja, qid = [], "", ""
+    for i, p in enumerate(parts):
+        if "=" in p:
+            k, _, v = p.partition("=")
+            k, v = k.strip().lower(), v.strip()
+            if k == "ja" and v:
+                ja = v
+            elif k == "qid" and re.match(r"Q\d+$", v):
+                qid = v
+            continue
+        if i == 0 or p:
+            positional.append(p)
+    en = positional[0] if positional else ""
+    if not ja:
+        for j in range(1, len(positional) - 1):
+            if positional[j] == "ja" and positional[j + 1]:
+                ja = positional[j + 1]
+                break
+    return en, ja, qid
+
+
+def familytree_chain(wikitext):
+    """Ordered node list [(en, ja, qid)] from {{familytree}} rows. For a linear
+    vertical 系図 (one node per row, `!` connectors — the Awaga priest lineage
+    form) consecutive entries are parent→child. Pure."""
+    nodes = []
+    for line in wikitext.splitlines():
+        if "{{familytree" not in line.lower():
+            continue
+        for m in re.finditer(r"=\s*'*\{\{\s*ill\s*\|([^{}]*)\}\}", line):
+            en, ja, qid = _ill_node(m.group(1))
+            if en or ja:
+                nodes.append((en, ja, qid))
+    return nodes
+
+
+def familytree_relation(cand_en, cand_ja, wikitext):
+    """(parent_node, child_node) for the candidate in a linear familytree lineage,
+    each (en, ja, qid) or None. Vertical descent line ⇒ node above = parent (P22),
+    node below = child (P40). Pure."""
+    chain = familytree_chain(wikitext)
+    idx = None
+    for i, (en, ja, _q) in enumerate(chain):
+        if (cand_ja and ja and cand_ja == ja) or (cand_en and en and cand_en == en):
+            idx = i
+            break
+    if idx is None:
+        return None, None
+    parent = chain[idx - 1] if idx > 0 else None
+    child = chain[idx + 1] if idx + 1 < len(chain) else None
+    return parent, child
+
+
 def host_wikidata_qid(wikitext):
     """The host article's OWN declared Wikidata item — from its {{wikidata link|Q…}}
     template (or a `|wikidata=Q…` infobox param). Authoritative: the article states
@@ -134,36 +191,53 @@ def host_wikidata_qid(wikitext):
     return m.group(1) if m else None
 
 
+def _indirect(field, start):
+    """True if the reference beginning at `start` is preceded by 'Daughter of' /
+    'Son of' — i.e. names a grand-parent, not a direct parent. Pure."""
+    pre = re.sub(r"[\s'’]+", " ", field[max(0, start - 24):start]).strip().lower()
+    return pre.endswith("daughter of") or pre.endswith("son of") or pre.endswith(" of")
+
+
+def _direct_in(field, cand_en, cand_ja):
+    """True if the candidate appears in `field` as a DIRECT reference — NOT as
+    'Daughter of {{ill|X}}' / 'Son of X' (which makes X a grand-parent, not a
+    parent — e.g. Adachi Yoshikage's 'Mother: Daughter of Mutō Yorisuke'). Pure."""
+    for m in _ILL.finditer(field):
+        en, ja, _q = _ill_node(m.group(1))
+        if ((cand_ja and ja and ja == cand_ja) or (cand_en and en and en == cand_en)) \
+                and not _indirect(field, m.start()):
+            return True
+    for m in _WLINK.finditer(field):
+        if cand_en and m.group(1).strip() == cand_en and not _indirect(field, m.start()):
+            return True
+    return False
+
+
 def classify_candidate(cand_en, cand_ja, wikitext):
     """Which relation the candidate has to the host subject, by the field it sits in.
     Returns one of REL_PROP's keys (+ host sex applied for child) or None. Pure."""
     sex = host_sex(wikitext)
 
-    def _has(field_labels):
-        for en, ja in _targets_in(_field(wikitext, *field_labels)):
-            if (cand_ja and ja and cand_ja == ja) or (cand_en and en and cand_en == en):
-                return True
-        return False
+    def _has(*labels):
+        return _direct_in(_field(wikitext, *labels), cand_en, cand_ja)
 
-    if _has(["Children", "Sons", "Daughters"]):
+    if _has("Children", "Sons", "Daughters"):
         return "child_of_host_female" if sex == "female" else "child_of_host_male"
-    if _has(["Siblings", "Brothers", "Sisters"]):
+    if _has("Siblings", "Brothers", "Sisters"):
         return "sibling_of_host"
-    if _has(["Father"]):
+    if _has("Father"):
         return "father_of_host"
-    if _has(["Mother"]):
+    if _has("Mother"):
         return "mother_of_host"
-    # Parentage line packs Father:/Mother: together.
-    par = _field(wikitext, "Parentage")
+    # Parentage / parents line packs Father:/Mother: together (Adachi uses `parents`).
+    par = _field(wikitext, "Parentage", "parents")
     if par:
         fa = par.split("Mother")[0]
         mo = par[len(fa):]
-        for en, ja in _targets_in(fa):
-            if (cand_ja and ja and cand_ja == ja) or (cand_en and en and cand_en == en):
-                return "father_of_host"
-        for en, ja in _targets_in(mo):
-            if (cand_ja and ja and cand_ja == ja) or (cand_en and en and cand_en == en):
-                return "mother_of_host"
+        if _direct_in(fa, cand_en, cand_ja):
+            return "father_of_host"
+        if _direct_in(mo, cand_en, cand_ja):
+            return "mother_of_host"
     return None
 
 
@@ -223,23 +297,42 @@ def main():
             wt = wt_cache[host]
             if not wt:
                 continue
+            # (a) Labeled infobox/Family fields — the host subject is the relative.
             key = classify_candidate(cand_en, cand_ja, wt)
-            if not key:
-                continue
-            prop, rel_label, sex_qid = REL_PROP[key]
-            h_ja = host_ja(wt)
-            if host not in qid_cache:
-                qid_cache[host] = host_wikidata_qid(wt)  # article's declared item
-            relations.append({
-                "property": prop, "relation": rel_label,
-                "target_label_en": host, "target_label_ja": h_ja,
-                "target_qid": qid_cache[host], "source_page": host,
-            })
-            if sex_qid and not any(r.get("property") == "P21" for r in relations):
-                relations.append({"property": "P21", "relation":
-                                  "sex or gender", "target_label_en":
-                                  "male" if sex_qid == "Q6581097" else "female",
-                                  "target_qid": sex_qid, "source_page": host})
+            if key:
+                prop, rel_label, sex_qid = REL_PROP[key]
+                h_ja = host_ja(wt)
+                if host not in qid_cache:
+                    qid_cache[host] = host_wikidata_qid(wt)  # article's declared item
+                relations.append({
+                    "property": prop, "relation": rel_label,
+                    "target_label_en": host, "target_label_ja": h_ja,
+                    "target_qid": qid_cache[host], "source_page": host,
+                    "source": "infobox",
+                })
+                if sex_qid and not any(r.get("property") == "P21" for r in relations):
+                    relations.append({"property": "P21", "relation": "sex or gender",
+                                      "target_label_en":
+                                      "male" if sex_qid == "Q6581097" else "female",
+                                      "target_qid": sex_qid, "source_page": host,
+                                      "source": "infobox"})
+
+            # (b) {{familytree}} vertical lineage — node above/below = father/child.
+            parent, child = familytree_relation(cand_en, cand_ja, wt)
+            if parent:
+                relations.append({
+                    "property": "P22", "relation": "father",
+                    "target_label_en": parent[0], "target_label_ja": parent[1],
+                    "target_qid": parent[2] or None, "source_page": host,
+                    "source": "familytree-lineage",
+                })
+            if child:
+                relations.append({
+                    "property": "P40", "relation": "child",
+                    "target_label_en": child[0], "target_label_ja": child[1],
+                    "target_qid": child[2] or None, "source_page": host,
+                    "source": "familytree-lineage",
+                })
         enr["relations"] = relations
         with open(f, "w", encoding="utf-8") as fh:
             json.dump(rec, fh, ensure_ascii=False, indent=2, sort_keys=True)

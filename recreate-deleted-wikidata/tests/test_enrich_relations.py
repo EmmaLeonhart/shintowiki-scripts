@@ -51,6 +51,41 @@ def test_candidate_unrelated_is_none():
     assert r.classify_candidate("Some Stranger", "無関係の人", WT) is None
 
 
+FT = (
+    "{{familytree/start}}\n"
+    "{{familytree |border=0|||||||01||||| 01='''{{ill|Kamibe Shinobi|ja|神部忍|12=simple}}'''}}\n"
+    "{{familytree |border=0| |||||||!||||||}}\n"
+    "{{familytree |border=0|||||||01||||| 01='''{{ill|Kamibe Kige|ja|神部伎閇|qid=DELETED_QID}}'''}}\n"
+    "{{familytree |border=0| |||||||!||||||}}\n"
+    "{{familytree |border=0|||||||01||||| 01='''{{ill|Ōkuninushi|en|Ōkuninushi|qid=Q276944}}'''}}\n"
+    "{{familytree/end}}\n"
+)
+
+
+def test_familytree_chain_is_ordered():
+    chain = r.familytree_chain(FT)
+    assert [c[1] for c in chain] == ["神部忍", "神部伎閇", ""]  # 3rd node has no ja
+    assert chain[2][2] == "Q276944"  # real qid captured, DELETED_QID dropped
+    assert chain[1][2] == ""         # Kamibe Kige's qid=DELETED_QID → no qid
+
+
+def test_familytree_relation_parent_and_child():
+    parent, child = r.familytree_relation("Kamibe Kige", "神部伎閇", FT)
+    assert parent[1] == "神部忍"                 # node above = father
+    assert child[0] == "Ōkuninushi" and child[2] == "Q276944"  # node below = child, qid
+
+
+def test_parents_field_variant():
+    wt = "| parents = Father: {{ill|Mutō Yorisuke|ja|武藤頼佐|qid=DELETED_QID}}; Mother: X\n"
+    assert r.classify_candidate("Mutō Yorisuke", "武藤頼佐", wt) == "father_of_host"
+
+
+def test_daughter_of_is_not_a_direct_parent():
+    # 'Mother: Daughter of X' → X is a grand-parent, NOT the host's parent.
+    wt = "| parents = Father: Y; Mother: Daughter of {{ill|Mutō Yorisuke|ja|武藤頼佐|qid=DELETED_QID}}\n"
+    assert r.classify_candidate("Mutō Yorisuke", "武藤頼佐", wt) is None
+
+
 def test_host_wikidata_qid_from_declared_link():
     # Authoritative host QID comes from the article's own {{wikidata link}}, not search.
     assert r.host_wikidata_qid("{{wikidata link|Q11450335}}\nbody") == "Q11450335"

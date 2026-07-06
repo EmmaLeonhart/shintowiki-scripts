@@ -1,17 +1,17 @@
 # Recreation-candidate P31 (instance of) — from entity name
 
 - Candidates: **213**
-- Assigned a P31: **142**  ·  left for review: **71**
+- Assigned a P31: **161**  ·  left for review: **52**
 
 Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31.py` docstring. Uncertain → null, never guessed.
 
 ## Type distribution
 
-- (none — review): 71
+- (none — review): 52
 - Shinto shrine: 42
+- human: 38
 - kami: 28
 - festival: 26
-- human: 19
 - Buddhist temple: 9
 - kofun: 6
 - kofun group: 4
@@ -107,7 +107,9 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135491608 | Nakatomi no Ōshima | 藤原大嶋 | human | medium |
 | Q135491609 | Nakatomi no Ikemori | 中臣池守 | human | medium |
 | Q135491610 | Nakatomi no Momo / Nakatomi Momo-shō | 中臣秡・中臣秡抄 | human | medium |
+| Q135491612 | Nakatomi Tokikaze | 中臣時風 | human | high |
 | Q135491615 | Nakatomi no Amabisha-kyō | 中臣阿麻毘舎卿連 | human | medium |
+| Q135493131 | Yoshikuni Sakurai | 桜井義国 | human | high |
 | Q135500617 | Abe no Masafumi | 安倍政文 | human | medium |
 | Q135500627 | Abe no Kiyohiro | 安倍季弘 | human | medium |
 | Q135500631 | Abe no Gyōshun | 安倍業俊 | human | medium |
@@ -117,11 +119,28 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135500645 | Abe no Chōnaga | 安倍親長 | human | medium |
 | Q135500647 | Abe no Yasumi | 安倍泰明 | human | medium |
 | Q135500650 | Abe no Kintoki | 安倍兼時 | human | medium |
+| Q135500668 | Fukane Munetsugu | 深根宗継 | human | high |
+| Q135500672 | Katsuragi Takamune | 葛城高宗 | human | high |
+| Q135500675 | Tanba Tadayaki | 丹波忠明 | human | high |
+| Q135500678 | Mutō Yorisuke | 武藤頼佐 | human | high |
+| Q135500682 | Adachi Kagemura | 安達景村 | human | high |
+| Q135500687 | Adachi Shigekage | 安達重景 | human | high |
+| Q135500691 | Adachi Tokikage | 安達時景 | human | high |
+| Q135501970 | Arakida Moriyoshi | 荒木田守良 | human | high |
+| Q135551107 | Kamibe Kige | 神部伎閇 | human | high |
+| Q135551108 | Kamibe Yukunaa | 神部宿奈 | human | high |
+| Q135551109 | Kamibe Futamibumi | 神部二身 | human | high |
+| Q135551110 | Kamibe Kogui | 神部小椅 | human | high |
+| Q135551111 | Kamibe Tsumuji | 神部都牟自 | human | high |
+| Q135551112 | Kamibe Manyo | 神部万侶 | human | high |
+| Q135579162 | Nozaki Oki-no-Kami Tsunayoshi | 野崎隠岐守綱吉 | human | high |
 | Q135579240 | Ama Inukai no Muraji | 海犬養連 | human | medium |
 | Q135579241 | Waka Inukai no Muraji | 若犬養連 | human | medium |
 | Q135579242 | Azumi Inukai no Muraji | 阿曇犬養連 | human | medium |
+| Q135579348 | Miyao Katsuyoshi | 宮王勝良 | human | high |
 | Q135579349 | Sengetakaaki | 千家尊愛 | human | medium |
 | Q135579350 | Sengetakamochi | 千家尊有 | human | medium |
+| Q135579351 | Miyao Shigemaru | 宮王重丸 | human | high |
 | Q135579352 | Sengemichihiko | 千家達彦 | human | medium |
 | Q135330122 | Amanomikemunushi no Kami | Amanomikemunushi no Kami | kami | high |
 | Q135500709 | Ietsumiko no Kami | 家津御子神 | kami | high |
@@ -170,19 +189,9 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135490496 | Chōkui no Sei | 鐘匱の制 |  | none |
 | Q135491602 | Nakatomi Harai Kunkai | 中臣祓訓解 |  | none |
 | Q135491611 | Nakatomi Sakado clan | 中臣酒人宿祢 |  | none |
-| Q135491612 | Nakatomi Tokikaze | 中臣時風 |  | none |
-| Q135493131 | Yoshikuni Sakurai | 桜井義国 |  | none |
 | Q135500604 | Ritsuryō Forty-Eight Rank System | 冠位四十八階 |  | none |
 | Q135500658 | Kibi no Anaumi | 吉備の穴海 |  | none |
-| Q135500668 | Fukane Munetsugu | 深根宗継 |  | none |
-| Q135500672 | Katsuragi Takamune | 葛城高宗 |  | none |
-| Q135500675 | Tanba Tadayaki | 丹波忠明 |  | none |
-| Q135500678 | Mutō Yorisuke | 武藤頼佐 |  | none |
-| Q135500682 | Adachi Kagemura | 安達景村 |  | none |
-| Q135500687 | Adachi Shigekage | 安達重景 |  | none |
-| Q135500691 | Adachi Tokikage | 安達時景 |  | none |
 | Q135500720 | Kimi-no-Mori | 季美の森 |  | none |
-| Q135501970 | Arakida Moriyoshi | 荒木田守良 |  | none |
 | Q135502402 | Shima no Yu | 島の湯 |  | none |
 | Q135502435 | Ōtsuki Hotel | 大月ホテル |  | none |
 | Q135503346 | Protective Forest for Navigation | 航行目標保安林 |  | none |
@@ -203,12 +212,6 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135550945 | Kyushu 88 Sacred Sites | 九州八十八箇所霊場 |  | none |
 | Q135550946 | Kyushu 36 Fudō Sacred Sites | 九州三十六不動霊場 |  | none |
 | Q135550949 | Inner Palace | 内裏外郭 |  | none |
-| Q135551107 | Kamibe Kige | 神部伎閇 |  | none |
-| Q135551108 | Kamibe Yukunaa | 神部宿奈 |  | none |
-| Q135551109 | Kamibe Futamibumi | 神部二身 |  | none |
-| Q135551110 | Kamibe Kogui | 神部小椅 |  | none |
-| Q135551111 | Kamibe Tsumuji | 神部都牟自 |  | none |
-| Q135551112 | Kamibe Manyo | 神部万侶 |  | none |
 | Q135551115 | Kansei 12 | 寛政12年 |  | none |
 | Q135551117 | Bunka 1 | 文化元年 |  | none |
 | Q135551119 | Wa mirrors | 和鏡 |  | none |
@@ -228,11 +231,8 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579148 | Iga-hiko | 伊賀彦 |  | none |
 | Q135579154 | 御匙 | 御匙 |  | none |
 | Q135579157 | 御鑰 | 御鑰 |  | none |
-| Q135579162 | Nozaki Oki-no-Kami Tsunayoshi | 野崎隠岐守綱吉 |  | none |
 | Q135579218 | Ne no Kuni | 根之堅州国 |  | none |
 | Q135579243 | calendar makers | 暦師 |  | none |
 | Q135579295 | Iwakia Betsuō Tomb | 磐城別王墓 |  | none |
 | Q135579347 | Iyo Shichifukujin Sacred Sites | 伊予七福神霊場 |  | none |
-| Q135579348 | Miyao Katsuyoshi | 宮王勝良 |  | none |
-| Q135579351 | Miyao Shigemaru | 宮王重丸 |  | none |
 | Q135579531 | Pre-Ainu theory | プレ・アイヌ説 |  | none |
