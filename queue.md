@@ -38,17 +38,6 @@ autonomous follow-up. **Repair is disposable — dumb direct text swaps, no dura
   `pa/km/lo/dz/new/mad/shn` (≤16 labels) + `cdo` have no converter either. `python
   shinto-label-generator/language_registry.py` lists uncovered languages by count.
 
-## 3. Fix the cleanup-loop pipeline
-
-The whole cleanup-loop has been failing for ~a week: the **category-orchestrator step times out
-at 160 min** every run (its allpages(ns=14) walk can't finish), so the category deprecation /
-translation / interlang-consolidation never drains. Everything else in the loop passes.
-
-- [ ] Make the category orchestrator finish within the window — make it resumable via a cursor so
-  each run processes a bounded slice and continues next run (never restarts from zero), and/or
-  split the namespace across jobs, and/or raise the 160-min step timeout. Then the deprecation of
-  the 18 tagged duplicate categories (and the interlang consolidation) drains.
-
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
