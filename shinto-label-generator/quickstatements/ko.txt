@@ -107202,6 +107202,110 @@ Q140391437	Lko	"양충사"
 Q140391480	Lko	"임광사횡빈시서구"
 # Source: JA "瑞雲寺" (hanja reading)
 Q140428527	Lko	"서운사"
+# Source: JA "大宮五十鈴神社" (hanja reading)
+Q140445982	Lko	"대궁오십령신사"
+# Source: JA "上宮外縣神社" (hanja reading)
+Q140445983	Lko	"상궁외현신사"
+# Source: JA "合格神社" (hanja reading)
+Q140445989	Lko	"합격신사"
+# Source: JA "縣神社 (四日市市)" (hanja reading)
+Q140445990	Lko	"현신사사일시시"
+# Source: JA "縣神社 (出雲市)" (hanja reading)
+Q140445991	Lko	"현신사출운시"
+# Source: JA "唐律招提寺" (hanja reading)
+Q140446000	Lko	"당률초제사"
+# Source: JA "古津賀神社" (hanja reading)
+Q140446008	Lko	"고진하신사"
+# Source: JA "吉祥寺 (岐阜市)" (hanja reading)
+Q140446013	Lko	"길상사기부시"
+# Source: JA "大覚寺 (岐阜市)" (hanja reading)
+Q140446014	Lko	"대각사기부시"
+# Source: JA "五城天神社" (hanja reading)
+Q140446026	Lko	"오성천신사"
+# Source: JA "赤城神社 (前橋市新井町)" (hanja reading)
+Q140446027	Lko	"적성신사전교시신정정"
+# Source: JA "赤城神社 (前橋市亀泉町)" (hanja reading)
+Q140446028	Lko	"적성신사전교시구천정"
+# Source: JA "赤城神社 (前橋市下小出町)" (hanja reading)
+Q140446029	Lko	"적성신사전교시하소출정"
+# Source: JA "赤城神社 (前橋市関根町)" (hanja reading)
+Q140446030	Lko	"적성신사전교시관근정"
+# Source: JA "赤城神社 (前橋市富士見町漆窪)" (hanja reading)
+Q140446031	Lko	"적성신사전교시부사견정칠와"
+# Source: JA "赤城神社 (前橋市富士見町米野)" (hanja reading)
+Q140446033	Lko	"적성신사전교시부사견정미야"
+# Source: JA "赤城神社 (前橋市富士見町田島)" (hanja reading)
+Q140446034	Lko	"적성신사전교시부사견정전도"
+# Source: JA "赤城神社 (前橋市宮地町)" (hanja reading)
+Q140446036	Lko	"적성신사전교시궁지정"
+# Source: JA "赤城神社 (高崎市綿貫町)" (hanja reading)
+Q140446037	Lko	"적성신사고기시면관정"
+# Source: JA "赤城神社 (高崎市下滝町)" (hanja reading)
+Q140446038	Lko	"적성신사고기시하롱정"
+# Source: JA "赤城神社 (桐生市川内町2)" (hanja reading)
+Q140446040	Lko	"적성신사동생시천내정"
+# Source: JA "赤城神社 (桐生市新里町板橋)" (hanja reading)
+Q140446041	Lko	"적성신사동생시신리정판교"
+# Source: JA "赤城神社 (桐生市新里町武井)" (hanja reading)
+Q140446042	Lko	"적성신사동생시신리정무정"
+# Source: JA "赤城神社 (桐生市黒保根町八木原)" (hanja reading)
+Q140446043	Lko	"적성신사동생시흑보근정팔목원"
+# Source: JA "赤城神社 (桐生市黒保根町下田沢)" (hanja reading)
+Q140446044	Lko	"적성신사동생시흑보근정하전택"
+# Source: JA "赤城神社 (伊勢崎市宮前町)" (hanja reading)
+Q140446045	Lko	"적성신사이세기시궁전정"
+# Source: JA "赤城神社 (伊勢崎市国定町)" (hanja reading)
+Q140446046	Lko	"적성신사이세기시국정정"
+# Source: JA "赤城神社 (伊勢崎市境平塚)" (hanja reading)
+Q140446047	Lko	"적성신사이세기시경평총"
+# Source: JA "赤城神社 (沼田市利根町老神)" (hanja reading)
+Q140446048	Lko	"적성신사소전시리근정로신"
+# Source: JA "赤城神社 (館林市傍示塚町)" (hanja reading)
+Q140446049	Lko	"적성신사관림시방시총정"
+# Source: JA "赤城神社 (渋川市北橘町八崎)" (hanja reading)
+Q140446050	Lko	"적성신사삽천시북귤정팔기"
+# Source: JA "赤城神社 (渋川市北橘町上南室)" (hanja reading)
+Q140446051	Lko	"적성신사삽천시북귤정상남실"
+# Source: JA "法輪寺 (和歌山市)" (hanja reading)
+Q140446054	Lko	"법륜사화가산시"
+# Source: JA "普賢寺 (橋本市菖蒲谷)" (hanja reading)
+Q140446055	Lko	"보현사교본시창포곡"
+# Source: JA "秩父三社" (hanja reading)
+Q140446060	Lko	"질부삼사"
+# Source: JA "大山寺三十三カ所地蔵めぐり" (hanja reading)
+Q140446062	Lko	"대산사삼십삼카소지장메구리"
+# Source: JA "國軸山金峯山寺" (hanja reading)
+Q140446078	Lko	"국축산금봉산사"
+# Source: JA "実城寺" (hanja reading)
+Q140446079	Lko	"실성사"
+# Source: JA "出雲大社三神教会" (hanja reading)
+Q140446128	Lko	"출운대사삼신교회"
+# Source: JA "出雲大社庄内教会" (hanja reading)
+Q140446129	Lko	"출운대사장내교회"
+# Source: JA "出雲大社佐久之宮講社" (hanja reading)
+Q140446130	Lko	"출운대사좌구지궁강사"
+# Source: JA "出雲大社唐津教会" (hanja reading)
+Q140446131	Lko	"출운대사당진교회"
+# Source: JA "出雲大社高千穂教会" (hanja reading)
+Q140446132	Lko	"출운대사고천수교회"
+# Source: JA "出雲大社マレーシア講社" (hanja reading)
+Q140446133	Lko	"출운대사마레시아강사"
+# Source: JA "赤城神社 (前橋市荒口町)" (hanja reading)
+Q140446402	Lko	"적성신사전교시황구정"
+# Source: JA "京都三熊野" (hanja reading)
+Q140447336	Lko	"경도삼웅야"
+# Source: JA "出雲大社函館教会" (hanja reading)
+Q140447358	Lko	"출운대사함관교회"
+# Source: JA "出雲大社土居教会" (hanja reading)
+Q140447359	Lko	"출운대사토거교회"
+# Source: JA "出雲大社網走教会" (hanja reading)
+Q140447360	Lko	"출운대사망주교회"
+# Source: JA "赤城神社 (桐生市川内町1)" (hanja reading)
+Q140447397	Lko	"적성신사동생시천내정"
+# Source: JA "赤城神社 (桐生市川内町5)" (hanja reading)
+Q140447398	Lko	"적성신사동생시천내정"
+# Source: JA "赤城神社 (高崎市岩鼻町)" (hanja reading)
+Q140447399	Lko	"적성신사고기시암비정"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
