@@ -276,6 +276,16 @@ the retry — do not replace it with a single-shot push.
 
 ## Gotchas
 
+* **Almost every weird thing on the shinto wiki is SIGNAL, not corruption.** Emma
+  built the wiki solo with idiosyncratic, deliberate conventions, never expecting
+  agents or other humans to edit it (stated 2026-07-05). Unusual template params,
+  odd category names, empty-looking `{{wikidata link||ja|Category:X}}`, repeated
+  `legacy legacy legacy` suffixes, weird dab formatting — all encode real meaning.
+  DO NOT normalize / clean up / delete a weird pattern on the assumption it's an
+  error. Even genuine-looking corruption is usually recoverable signal: e.g. a bad
+  jawiki target `19世紀のKokugakuist` is not hallucinated — it's a real target damaged
+  by a bad text replacement (`国学者`→`Kokugakuist`), to be CORRECTED, never deleted.
+  Investigate what a weird thing was meant to be and repair it; ask Emma if unsure.
 * **DO NOT "fix" the `Pages without wikidata legacy[ legacy[ legacy]]` category
   state, and do not auto-edit the Q-titled `[[Category:Double category qids]]`
   dab pages.** Emma did this *surgically and intentionally* (2026-06-08). The

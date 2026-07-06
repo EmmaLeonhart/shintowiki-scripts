@@ -1,0 +1,10 @@
+<!--templates-->
+{{translated page|ja|Category:国分寺崖線の考古遺跡|version=93464059}}
+{{translated page|ja|国分寺崖線の考古遺跡|2=Category:国分寺崖線の考古遺跡|comment=minor fix to get the category to display, cannot get the revision but idk if I even need this just doing it out of OCD and uncertainty over attribution requirements}}
+{{wikidata link||ja|Category:国分寺崖線の考古遺跡}}
+<!--interwikis-->
+<!--categories-->
+[[Category:Archaeological sites in Tokyo]]
+[[Category:Tier 1 Categories]]
+[[Category:Tier 1 Categories with no enwiki]]
+[[Category:Git synced pages]]

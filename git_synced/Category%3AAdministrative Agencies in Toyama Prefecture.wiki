@@ -1,0 +1,18 @@
+<!--templates-->
+{{Pathnavbox|
+* {{Pathnav|主要カテゴリ|社会|…|日本の政治 (都道府県別)|富山県の政治|富山県の官公庁}}
+* {{Pathnav|主要カテゴリ|社会|…|日本の行政 (都道府県別)|富山県の行政}}
+* {{Pathnav|主要カテゴリ|社会|政治|行政|行政機関|各国の行政機関|日本の行政機関|日本の行政機関 (都道府県別)}}
+}}
+{{Template:Category:Prefectures of Japan/下位|富山県|[[行政機関]]|行政機関|行政|きようせいきかん}}
+{{translated page|ja|Category:富山県の行政機関|comment=category history here}}
+{{translated page|ja|Category:富山県の行政機関|version=85406993}}
+{{wikidata link||ja|Category:富山県の行政機関}}
+<!--interwikis-->
+<!--categories-->
+[[Category:Administration of Toyama Prefecture]]
+[[Category:Administrative Agencies of Japan by Prefecture]]
+[[Category:Government Offices in Toyama Prefecture]]
+[[Category:Tier 2 Categories with no enwiki]]
+[[Category:Tier 2 Categories]]
+[[Category:Git synced pages]]
