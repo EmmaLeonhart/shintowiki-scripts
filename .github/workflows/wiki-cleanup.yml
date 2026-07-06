@@ -16,15 +16,18 @@ name: Legacy Wiki Cleanup
 # runs every registered per-page op in one visit, replacing the prior model
 # of 11 separate state files.
 #
-# Terminating scripts kept here (review July 2026 — see todo.md):
-#   - reimport_from_enwiki.py        (input-file driven, already done per state)
-#   - migrate_talk_pages.py          (talk-page rebuild, all subject namespaces)
-#   - normalize_category_pages.py    (Category ns, weekly)
-#   - remove_legacy_cat_templates.py (Category ns, monthly)
+# July 2026 terminating-script review: DONE (2026-07-05). The four scripts
+# formerly parked here for review are all removed — confirmed inert and
+# deleted (reimport_from_enwiki, migrate_talk_pages) or ported to
+# orchestrator ops and deleted as standalone (normalize_category_pages →
+# ops/normalize_category_page.py, remove_legacy_cat_templates →
+# ops/remove_legacy_cat_templates.py). No active step in this workflow points
+# at a deleted script — every uncommented `python3 …` step resolves to a file
+# that exists (re-audited 2026-07-05).
 #
-# When a terminating script's state shows it has processed every eligible
-# page AND the script stops producing edits across multiple runs, remove its
-# step from this workflow and delete the script from the repo.
+# Rule going forward: when a terminating script's state shows it has processed
+# every eligible page AND it stops producing edits across multiple runs,
+# remove its step from this workflow and delete the script from the repo.
 
 on:
   workflow_dispatch:

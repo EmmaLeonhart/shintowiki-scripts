@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — wiki-cleanup.yml header + stale queue bullet follow-up (#2 loose ends)
+
+Follow-up to the earlier #2-CLOSED entry. The queue.md `#2 audit-legacy-scripts`
+bullet was never deleted even though the work shipped (board + todo.md already
+scrubbed, DEVLOG entry written) — deleted it now per delete-don't-check. Also
+found the `wiki-cleanup.yml` header still listed the four now-deleted terminating
+scripts (reimport_from_enwiki, migrate_talk_pages, normalize_category_pages,
+remove_legacy_cat_templates) under a "review July 2026 — see todo.md" note, i.e.
+pointing at files that no longer exist. Rewrote that comment block to record the
+July 2026 review as DONE (removed/ported) and re-ran the audit: every uncommented
+`python3 …` step in the workflow resolves to an existing script; the only
+reimport/overwrite references left are inside commented-out blocks. No silently
+inert wiring remains.
+
 ## 2026-07-05 — Backlog #8: deleted-QID recreation info-gathering generator (human-gated)
 
 Built `recreate-deleted-wikidata/generate_recreate_quickstatements.py` in a NEW isolated

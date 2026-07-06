@@ -91,14 +91,11 @@ word-initial vowel carriers — Indra → ar إندرا / fa ایندرا / he �
 
 ## Backlog board barrel-through (2026-07-05 session)
 
-Working the 8 `BACKLOG_ITEMS` (`site/generate_pages.py`). #1 done this session;
+Working the 8 `BACKLOG_ITEMS` (`site/generate_pages.py`). #1 and #2 done this session;
 #3/#4/#6/#7 are shipped-automation whose residual is inherent human review / remote-
-routine (not build tasks). The two genuinely-buildable items:
+routine (not build tasks). The genuinely-buildable remainder is #5 (Japanese category
+names, phased) and #8 (recreate deleted Wikidata items, below).
 
-- [ ] **#2 audit-legacy-scripts — CLOSE.** The July-gated terminating-script "still
-  producing edits?" gap (the one open piece) was closed by #1 (all 4 confirmed inert +
-  deleted). Verify nothing else wired into `wiki-cleanup.yml` is silently inert, then
-  remove #2 from the backlog board + todo.md.
 ## Backlog #8 — recreate deleted Wikidata items (CONTINUATION for a future session)
 
 Generator SHIPPED this session: `recreate-deleted-wikidata/generate_recreate_quickstatements.py`
