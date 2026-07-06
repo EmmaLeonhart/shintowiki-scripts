@@ -85,12 +85,12 @@ Wikidata:
   clusters (disambiguation / data-quality). BLOCKED-ON-EXTERNAL: WDQS 429-outaged 2026-07-06 — retry
   when it recovers.
 
-## 10. Repo-file audit — sweep junk (longer horizon, NOT for today)
+## 10. Repo-file audit — sweep junk (do LAST today, after the others)
 
 - [ ] Audit the repo's files and remove crud no longer needed now that its source task is done — e.g.
   root `2026-01-01.txt` (the durability audit input; durability sweep is finished) and the
-  durability scratch/`_batchN_url.txt` files. Genuine file-by-file pass, delete-don't-archive. Low
-  priority; do it later, not today.
+  durability scratch/`_batchN_url.txt` files. Genuine file-by-file pass, delete-don't-archive. This is
+  for TODAY — just at the end, after the other items.
 
 ## Pinned tail (keep last, always)
 
