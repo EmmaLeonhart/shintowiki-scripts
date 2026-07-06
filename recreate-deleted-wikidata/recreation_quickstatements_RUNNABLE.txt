@@ -1,0 +1,1130 @@
+CREATE
+LAST	Len	"Chōkui no Sei"
+LAST	Lja	"鐘匱の制"
+LAST	Den	"ancient Japanese petition institution"
+LAST	P31	Q178706
+
+CREATE
+LAST	Len	"Nakatomi Harai Kunkai"
+LAST	Lja	"中臣祓訓解"
+LAST	Den	"Japanese historical text (commentary)"
+LAST	P31	Q571
+
+CREATE
+LAST	Len	"Nakatomi no Ikemori"
+LAST	Lja	"中臣池守"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Nakatomi no Momo / Nakatomi Momo-shō"
+LAST	Lja	"中臣秡・中臣秡抄"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Nakatomi Tokikaze"
+LAST	Lde	"Nakatomi Tokikaze (German)"
+LAST	Lja	"中臣時風"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	Sjawiki	"天羽槌雄神"
+
+CREATE
+LAST	Len	"Nakatomi no Amabisha-kyō"
+LAST	Lja	"中臣阿麻毘舎卿連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Yoshikuni Sakurai"
+LAST	Lja	"桜井義国"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Abe no Masafumi"
+LAST	Lja	"安倍政文"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P3373	Q11450335
+
+CREATE
+LAST	Len	"Abe no Kiyohiro"
+LAST	Lja	"安倍季弘"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+CREATE
+LAST	Len	"Abe no Gyōshun"
+LAST	Lja	"安倍業俊"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+CREATE
+LAST	Len	"Abe no Yasushige"
+LAST	Lja	"安倍泰茂"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+CREATE
+LAST	Len	"Abe no Yasunari"
+LAST	Lja	"安倍泰成"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+CREATE
+LAST	Len	"Abe no Yasutada"
+LAST	Lja	"安倍泰忠"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+CREATE
+LAST	Len	"Abe no Chōnaga"
+LAST	Lja	"安倍親長"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+CREATE
+LAST	Len	"Abe no Yasumi"
+LAST	Lja	"安倍泰明"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+CREATE
+LAST	Len	"Abe no Kintoki"
+LAST	Lja	"安倍兼時"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Ōmiya Isuzu Shrine"
+LAST	Lja	"大宮五十鈴神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kamimiya Togata Shrine"
+LAST	Lja	"上宮外縣神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Fukane Munetsugu"
+LAST	Lja	"深根宗継"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Katsuragi Takamune"
+LAST	Lja	"葛城高宗"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Mutō Yorisuke"
+LAST	Lja	"武藤頼佐"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Adachi Shigekage"
+LAST	Lja	"安達重景"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Adachi Tokikage"
+LAST	Lja	"安達時景"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Gōkaku Shrine"
+LAST	Lja	"合格神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Agata Shrine (Yokkaichi)"
+LAST	Lja	"縣神社 (四日市市)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Agata Shrine (Izumo)"
+LAST	Lja	"縣神社 (出雲市)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Ietsumiko no Kami"
+LAST	Lja	"家津御子神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Kumano Kusu no Mi no Mikoto"
+LAST	Lja	"熊野久須美命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Cedar of Agata Shrine"
+LAST	Lja	"県神社のスギ"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Rokusonōbara Kofun"
+LAST	Lja	"六孫王原古墳"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Arakida Moriyoshi"
+LAST	Lja	"荒木田守良"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Shima no Yu"
+LAST	Lja	"島の湯"
+LAST	Den	"Japanese hot spring (onsen)"
+LAST	P31	Q655311
+
+CREATE
+LAST	Len	"Fuyumatsuri"
+LAST	Lja	"鞴祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Tōritsu Shōdai-ji"
+LAST	Lja	"唐律招提寺"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Oyayatsuhime no Kami"
+LAST	Lja	"大屋津媛神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Tsumatsuhime no Kami"
+LAST	Lja	"抓津媛神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Bath Roman"
+LAST	Lde	"Bath Roman"
+LAST	Lja	"バスロマン"
+LAST	Lzh	"泡澡罗曼"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+CREATE
+LAST	Len	"Young Venus"
+LAST	Lde	"Young Venus"
+LAST	Lja	"ヤングビーナス"
+LAST	Lzh	"年轻维纳斯"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+CREATE
+LAST	Len	"Asahi Shōnō"
+LAST	Lde	"Asahi Sōnō"
+LAST	Lja	"アサヒ晶脳"
+LAST	Lzh	"旭日晶脑"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+CREATE
+LAST	Len	"Bath Melody"
+LAST	Lde	"Bath Melody"
+LAST	Lja	"バスメロディー"
+LAST	Lzh	"浴曲"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+CREATE
+LAST	Len	"Mineral spring bathhouse"
+LAST	Lde	"Mineralquellenbad"
+LAST	Lja	"鉱泉浴場"
+LAST	Lzh	"矿泉浴场"
+LAST	Den	"public bathhouse in Japan"
+LAST	P31	Q785952
+
+CREATE
+LAST	Len	"Kotsuka Shrine"
+LAST	Lja	"古津賀神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Wago Nembutsu Odori"
+LAST	Len	"Wago Nembutsu Odori"
+LAST	Lja	"和合の念仏踊"
+LAST	Den	"Japanese traditional dance"
+LAST	P31	Q11639
+
+CREATE
+LAST	Len	"Ayato Night Nembutsu and Bon Odori"
+LAST	Len	"Ayato Night Nembutsu and Bon Odori"
+LAST	Lja	"綾渡の夜念仏と盆踊"
+LAST	Den	"Japanese traditional dance"
+LAST	P31	Q11639
+
+CREATE
+LAST	Len	"Mitsurugi Shrine Summer Grand Festival"
+LAST	Lja	"御劔神社 夏季大祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kisshō-ji (Gifu)"
+LAST	Lja	"吉祥寺 (岐阜市)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Daikaku-ji (Gifu)"
+LAST	Lja	"大覚寺 (岐阜市)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Noheji Gion Festival"
+LAST	Lja	"野辺地祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Suga Shrine Gion Festival"
+LAST	Lja	"須賀神社祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Enoshima Tenno Festival"
+LAST	Lja	"江ノ島天王祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Tanbayama Gion Festival"
+LAST	Lja	"丹波山祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Fujioka Festival"
+LAST	Lja	"藤岡まつり"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Horikome Naked Festival"
+LAST	Lja	"堀米の裸祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Yamanashi Gion Festival"
+LAST	Lja	"山梨祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Hosoe Shrine Gion Festival"
+LAST	Lja	"細江神社祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Minami Tenma-chō Tennō Festival"
+LAST	Lja	"南伝馬町天王祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Ōtenma-chō Tennō Festival"
+LAST	Lja	"大伝馬町天王祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+CREATE
+LAST	Len	"Gojō Castle Tenjin Shrine"
+LAST	Lja	"五城天神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"The Twelve Heavenly Kings"
+LAST	Lja	"十二天王"
+LAST	Den	"group of Buddhist guardian deities"
+LAST	P31	Q111252729
+LAST	Sjawiki	"御霊神社 (藤沢市宮前)"
+
+CREATE
+LAST	Len	"Akagi Shrine (Araguchi Town)"
+LAST	Lja	"赤城神社 (前橋市荒口町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Arai Town)"
+LAST	Lja	"赤城神社 (前橋市新井町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Kameizumi Town)"
+LAST	Lja	"赤城神社 (前橋市亀泉町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Shimo Koide Town)"
+LAST	Lja	"赤城神社 (前橋市下小出町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Sekine Town)"
+LAST	Lja	"赤城神社 (前橋市関根町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Urushikubo)"
+LAST	Lja	"赤城神社 (前橋市富士見町漆窪)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Yone)"
+LAST	Lja	"赤城神社 (前橋市富士見町米野)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Tajima)"
+LAST	Lja	"赤城神社 (前橋市富士見町田島)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Miyaji Town)"
+LAST	Lja	"赤城神社 (前橋市宮地町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Watanuki Town)"
+LAST	Lja	"赤城神社 (高崎市綿貫町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Shimotaki Town)"
+LAST	Lja	"赤城神社 (高崎市下滝町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Kawauchi 2nd Town)"
+LAST	Lja	"赤城神社 (桐生市川内町2)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Niisato Itabashi Town)"
+LAST	Lja	"赤城神社 (桐生市新里町板橋)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Niisato Takei Town)"
+LAST	Lja	"赤城神社 (桐生市新里町武井)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Kurohone Yagihara Town)"
+LAST	Lja	"赤城神社 (桐生市黒保根町八木原)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Kurohone Shimo Tazawa Town)"
+LAST	Lja	"赤城神社 (桐生市黒保根町下田沢)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Miyamae Town)"
+LAST	Lja	"赤城神社 (伊勢崎市宮前町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Kunisada Town)"
+LAST	Lja	"赤城神社 (伊勢崎市国定町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Sakai Hiratsuka Town)"
+LAST	Lja	"赤城神社 (伊勢崎市境平塚)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Tone Town Oigami)"
+LAST	Lja	"赤城神社 (沼田市利根町老神)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Bōjizuka Town)"
+LAST	Lja	"赤城神社 (館林市傍示塚町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Kitakatsushika Town Yasaki)"
+LAST	Lja	"赤城神社 (渋川市北橘町八崎)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Akagi Shrine (Kitakatsushika Town Jonanmu)"
+LAST	Lja	"赤城神社 (渋川市北橘町上南室)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kōyasan Campaign"
+LAST	Lja	"高野山攻め"
+LAST	Den	"siege in Japanese history"
+LAST	P31	Q188055
+
+CREATE
+LAST	Len	"Hōrin-ji (Wakayama)"
+LAST	Lja	"法輪寺 (和歌山市)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Fugen-ji (Hashimoto, Wakayama)"
+LAST	Lja	"普賢寺 (橋本市菖蒲谷)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kumano Shōjō Gongen"
+LAST	Lja	"熊野證誠権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+CREATE
+LAST	Len	"Okutsuhiko no Mikoto"
+LAST	Lja	"奥津彦命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Okutsuhime no Mikoto"
+LAST	Lja	"奥津姫命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Tatsuta-hime"
+LAST	Lja	"竜田姫命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Chichibu Three Shrines"
+LAST	Lja	"秩父三社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Three Deities of Mount Daisen"
+LAST	Lja	"大山三所権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+CREATE
+LAST	Len	"33 Kannon Pilgrimage of Daisen-ji"
+LAST	Lja	"大山寺三十三カ所地蔵めぐり"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kyushu 88 Sacred Sites"
+LAST	Lja	"九州八十八箇所霊場"
+LAST	Den	"Buddhist sacred-site pilgrimage network"
+LAST	P31	Q10565932
+
+CREATE
+LAST	Len	"Kyushu 36 Fudō Sacred Sites"
+LAST	Lja	"九州三十六不動霊場"
+LAST	Den	"Buddhist sacred-site pilgrimage network"
+LAST	P31	Q10565932
+
+CREATE
+LAST	Len	"Teiō Henki"
+LAST	Lja	"帝王編年記"
+LAST	Den	"Japanese historical text"
+LAST	P31	Q571
+
+CREATE
+LAST	Len	"Inari Festival"
+LAST	Lja	"稲荷祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kamibe Kige"
+LAST	Lde	"Kamibe Kige"
+LAST	Lja	"神部伎閇"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q119380449
+LAST	P40	Q119380451
+
+CREATE
+LAST	Len	"Kamibe Yukunaa"
+LAST	Lde	"Kamibe Yukunaa"
+LAST	Lja	"神部宿奈"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q119380451
+
+CREATE
+LAST	Len	"Kamibe Futamibumi"
+LAST	Lde	"Kamibe Futamibumi"
+LAST	Lja	"神部二身"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Kamibe Kogui"
+LAST	Lde	"Kamibe Kogui"
+LAST	Lja	"神部小椅"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Kamibe Tsumuji"
+LAST	Lde	"Kamibe Tsumuji"
+LAST	Lja	"神部都牟自"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Kamibe Manyo"
+LAST	Lde	"Kamibe Manyo"
+LAST	Lja	"神部万侶"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P40	Q55407015
+
+CREATE
+LAST	Len	"Wa mirrors"
+LAST	Lja	"和鏡"
+LAST	Den	"type of Japanese bronze mirror"
+LAST	P279	Q1041984
+
+CREATE
+LAST	Len	"Takenami Site"
+LAST	Len	"Takenami Site"
+LAST	Den	"archaeological site in Japan"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Mizumachi Site"
+LAST	Len	"Mizumachi Site"
+LAST	Den	"archaeological site in Japan"
+LAST	P31	Q839954
+
+CREATE
+LAST	Len	"Ishibuto Daigongen"
+LAST	Lja	"石鈇大権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+CREATE
+LAST	Len	"Kushimikenu-no-mikoto"
+LAST	Lja	"櫛御気野命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Konomine-dera"
+LAST	Lja	"國軸山金峯山寺"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Jisshōji"
+LAST	Lja	"実城寺"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Mago Matsuri"
+LAST	Lja	"孫見祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Hanayome Matsuri"
+LAST	Lja	"花嫁まつり"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Yubune Matsuri – Hayabusa Procession"
+LAST	Lja	"流鏑馬祭・流鏑馬連行"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Yamanari Gion Matsuri"
+LAST	Lja	"山梨祇園祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kagoshima Summer Matsuri"
+LAST	Lja	"かごしま夏祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Zuiki-sai"
+LAST	Lja	"ずいき祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Tenmon-sai"
+LAST	Lja	"天門祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Taishōjidai-sai"
+LAST	Lja	"大正時代祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Tokyo Jidai-sai"
+LAST	Lja	"東京時代祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Nōnindō Matsuri"
+LAST	Lja	"能仁堂まつり"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Tokyo Hana Matsuri"
+LAST	Lja	"東京花祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Miyajima Kanzen-sai"
+LAST	Lja	"宮島管絃祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Suitengu Dedication Fireworks Festival"
+LAST	Lja	"水天宮奉納花火大会"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Himuro Falls"
+LAST	Lja	"氷室大滝"
+LAST	Den	"waterfall in Japan"
+LAST	P31	Q34038
+
+CREATE
+LAST	Len	"Five Deities of Heaven, Earth, and Man"
+LAST	Lja	"天地人五行神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"health science"
+LAST	Lde	"Gesundheitswissenschaft"
+LAST	Lja	"健康学"
+LAST	Lzh	"健康学"
+LAST	Den	"academic discipline"
+LAST	P31	Q11862829
+
+CREATE
+LAST	Len	"Moriyama Hyōtan-yama Kofun"
+LAST	Lja	"守山瓢箪山古墳"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Hyōtan-tsuka Kofun (Moka)"
+LAST	Lja	"瓢箪塚古墳 (真岡市)"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Kamihamada Kofun Group"
+LAST	Lja	"上浜田古墳群"
+LAST	Den	"group of kofun (ancient Japanese burial mounds)"
+LAST	P31	Q11411019
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Hyōtan-tsuka Kofun (Shizuoka)"
+LAST	Lja	"瓢箪塚古墳 (静岡市)"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Nishinohara Kofun Group"
+LAST	Lja	"西ノ原古墳群"
+LAST	Den	"group of kofun (ancient Japanese burial mounds)"
+LAST	P31	Q11411019
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Iga-hiko"
+LAST	Lja	"伊賀彦"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Nozaki Oki-no-Kami Tsunayoshi"
+LAST	Lja	"野崎隠岐守綱吉"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Suga-no-Sawa Kofun Cluster"
+LAST	Lja	"菅ノ沢古墳群"
+LAST	Den	"group of kofun (ancient Japanese burial mounds)"
+LAST	P31	Q11411019
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Suga-no-Sawa Gobyō Kofun"
+LAST	Lja	"菅ノ沢御廟古墳"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Ama Inukai no Muraji"
+LAST	Lja	"海犬養連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Waka Inukai no Muraji"
+LAST	Lja	"若犬養連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Azumi Inukai no Muraji"
+LAST	Lja	"阿曇犬養連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"calendar makers"
+LAST	Lja	"暦師"
+LAST	Den	"calendar-maker occupation"
+LAST	P279	Q12737077
+
+CREATE
+LAST	Len	"Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto"
+LAST	Lja	"天照国照彦火明櫛玉饒早日命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Five Gongen"
+LAST	Lja	"五所権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+CREATE
+LAST	Len	"Isurugi Hiko"
+LAST	Lja	"伊須流岐比古神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Gosha Gongen"
+LAST	Lja	"五社権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+CREATE
+LAST	Len	"Sawaetahara-Rokurohiko-no-Kami"
+LAST	Lja	"佐和恵多良六老彦神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Myokenzan Kofun (Muko City)"
+LAST	Lja	"妙見山古墳 (向日市)"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Iwakia Betsuō Tomb"
+LAST	Lja	"磐城別王墓"
+LAST	Den	"Japanese imperial tomb"
+LAST	P31	Q126919260
+
+CREATE
+LAST	Len	"Mitarashi-hime"
+LAST	Lja	"三足比咩命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Iwa tsuku wake no Mikoto"
+LAST	Lja	"岩衝別命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Iyozuhiko no Mikoto"
+LAST	Lja	"伊予津彦命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Iyozuhime no Mikoto"
+LAST	Lja	"伊予津姫命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Kōkage Ōkami"
+LAST	Lja	"蚕影大神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Mitsumine Ōkami"
+LAST	Lja	"三峰大神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Kohō Ōkami"
+LAST	Lja	"古峰大神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Izumo-taisha Misanjin Church"
+LAST	Lja	"出雲大社三神教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+CREATE
+LAST	Len	"Izumo-taisha Shonai Church"
+LAST	Lja	"出雲大社庄内教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+CREATE
+LAST	Len	"Izumo-taisha Sakunomiya Religious Society"
+LAST	Lja	"出雲大社佐久之宮講社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Izumo-taisha Karatsu Church"
+LAST	Lja	"出雲大社唐津教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+CREATE
+LAST	Len	"Izumo-taisha Takachiho Church"
+LAST	Lja	"出雲大社高千穂教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+CREATE
+LAST	Len	"Izumo-taisha Malaysia Religious Society"
+LAST	Lja	"出雲大社マレーシア講社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+CREATE
+LAST	Len	"Iyo Shichifukujin Sacred Sites"
+LAST	Lja	"伊予七福神霊場"
+LAST	Den	"Buddhist sacred-site pilgrimage network"
+LAST	P31	Q10565932
+
+CREATE
+LAST	Len	"Miyao Katsuyoshi"
+LAST	Lja	"宮王勝良"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Sengetakaaki"
+LAST	Lja	"千家尊愛"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Sengetakamochi"
+LAST	Lja	"千家尊有"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Miyao Shigemaru"
+LAST	Lja	"宮王重丸"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+CREATE
+LAST	Len	"Pre-Ainu theory"
+LAST	Lja	"プレ・アイヌ説"
+LAST	Den	"theory in Japanese prehistory"
+LAST	P31	Q17737
+
+CREATE
+LAST	Len	"Mori-no-Kami"
+LAST	Lja	"木神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Niwa-tsume no Mikoto"
+LAST	Lja	"庭津女命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+CREATE
+LAST	Len	"Taioshin Sen Chintaku Reifu no Kami"
+LAST	Lja	"太上神仙鎮宅霊符神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158

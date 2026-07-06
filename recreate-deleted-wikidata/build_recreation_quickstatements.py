@@ -27,6 +27,8 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ITEMS = os.path.join(HERE, "items")
 OUT = os.path.join(HERE, "recreation_quickstatements.txt")
+# Comment-free copy to paste straight into QuickStatements (V1 may reject '#' lines).
+OUT_RUN = os.path.join(HERE, "recreation_quickstatements_RUNNABLE.txt")
 
 
 def qs(value):
@@ -120,7 +122,18 @@ def main():
                  "# Duplicates (relinked to live items) and untyped items are excluded.\n\n")
         fh.write("\n\n".join(blocks) + "\n")
 
+    # Comment-free runnable copy — strip '#' lines, keep CREATE/LAST + single blank separators.
+    run_lines = []
+    for blk in blocks:
+        for ln in blk.split("\n"):
+            if not ln.lstrip().startswith("#"):
+                run_lines.append(ln)
+        run_lines.append("")
+    with open(OUT_RUN, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(run_lines).strip() + "\n")
+
     print(f"Wrote {len(blocks)} CREATE blocks to {os.path.relpath(OUT, HERE)}")
+    print(f"Wrote comment-free runnable copy to {os.path.relpath(OUT_RUN, HERE)}")
     print(f"  skipped: {skipped_dup} duplicates (relinked), {skipped_untyped} untyped, "
           f"{skipped_excl} excluded non-items, {skipped_malformed} malformed-ill (romaji ja)")
     for en, ja, host in malformed:
