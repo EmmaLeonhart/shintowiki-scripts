@@ -1,0 +1,1427 @@
+# FLESHED-OUT recreation QuickStatements — HUMAN-GATED, NOT auto-submitted.
+# Labels = en + ja + existing langlinks (no translit expansion); +P31/P279, P17, description, family relations (live-QID targets only), sitelink where safe.
+# Duplicates (relinked to live items) and untyped items are excluded.
+
+# recreate Amanomikemunushi no Kami (was Q135330122) — from [[Amanomikemunushi-no-Kami]]
+CREATE
+LAST	Len	"Amanomikemunushi no Kami"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Chōkui no Sei (was Q135490496) — from [[August 5 (Lunisolar)]]
+CREATE
+LAST	Len	"Chōkui no Sei"
+LAST	Lja	"鐘匱の制"
+LAST	Den	"ancient Japanese petition institution"
+LAST	P31	Q178706
+
+# recreate Nakatomi Harai Kunkai (was Q135491602) — from [[Ibukidonushi no Kami]]
+CREATE
+LAST	Len	"Nakatomi Harai Kunkai"
+LAST	Lja	"中臣祓訓解"
+LAST	Den	"Japanese historical text (commentary)"
+LAST	P31	Q571
+
+# recreate Nakatomi no Ikemori (was Q135491609) — from [[Kawachi no Ōkimi (Late Nara period)]]
+CREATE
+LAST	Len	"Nakatomi no Ikemori"
+LAST	Lja	"中臣池守"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Nakatomi no Momo / Nakatomi Momo-shō (was Q135491610) — from [[Nishida Osamu]]
+CREATE
+LAST	Len	"Nakatomi no Momo / Nakatomi Momo-shō"
+LAST	Lja	"中臣秡・中臣秡抄"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Nakatomi Tokikaze (was Q135491612) — from [[Shidori Shrine (Nara)]]
+CREATE
+LAST	Len	"Nakatomi Tokikaze"
+LAST	Lde	"Nakatomi Tokikaze (German)"
+LAST	Lja	"中臣時風"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	Sjawiki	"天羽槌雄神"
+
+# recreate Nakatomi no Amabisha-kyō (was Q135491615) — from [[Ōbashi no Mikoto]]
+CREATE
+LAST	Len	"Nakatomi no Amabisha-kyō"
+LAST	Lja	"中臣阿麻毘舎卿連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Yoshikuni Sakurai (was Q135493131) — from [[Futon Daiko]]
+CREATE
+LAST	Len	"Yoshikuni Sakurai"
+LAST	Lja	"桜井義国"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Ritsuryō Forty-Eight Rank System (was Q135500604) — from [[26-Rank cap system]]
+CREATE
+LAST	Len	"Ritsuryō Forty-Eight Rank System"
+LAST	Lja	"冠位四十八階"
+LAST	Den	"historical Japanese cap-rank institution"
+LAST	P31	Q178706
+
+# recreate Abe no Masafumi (was Q135500617) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Masafumi"
+LAST	Lja	"安倍政文"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P3373	Q11450335
+
+# recreate Abe no Kiyohiro (was Q135500627) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Kiyohiro"
+LAST	Lja	"安倍季弘"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+# recreate Abe no Gyōshun (was Q135500631) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Gyōshun"
+LAST	Lja	"安倍業俊"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+# recreate Abe no Yasushige (was Q135500635) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasushige"
+LAST	Lja	"安倍泰茂"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+# recreate Abe no Yasunari (was Q135500638) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasunari"
+LAST	Lja	"安倍泰成"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+# recreate Abe no Yasutada (was Q135500641) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasutada"
+LAST	Lja	"安倍泰忠"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+# recreate Abe no Chōnaga (was Q135500645) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Chōnaga"
+LAST	Lja	"安倍親長"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+# recreate Abe no Yasumi (was Q135500647) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Yasumi"
+LAST	Lja	"安倍泰明"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q11450335
+LAST	P21	Q6581097
+
+# recreate Abe no Kintoki (was Q135500650) — from [[Abe no Yasuchika]]
+CREATE
+LAST	Len	"Abe no Kintoki"
+LAST	Lja	"安倍兼時"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Ōmiya Isuzu Shrine (was Q135500663) — from [[Achi clan]]
+CREATE
+LAST	Len	"Ōmiya Isuzu Shrine"
+LAST	Lja	"大宮五十鈴神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Kamimiya Togata Shrine (was Q135500665) — from [[Achi clan]]
+CREATE
+LAST	Len	"Kamimiya Togata Shrine"
+LAST	Lja	"上宮外縣神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Fukane Munetsugu (was Q135500668) — from [[Acupuncture Hakase]]
+CREATE
+LAST	Len	"Fukane Munetsugu"
+LAST	Lja	"深根宗継"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Katsuragi Takamune (was Q135500672) — from [[Acupuncture Hakase]]
+CREATE
+LAST	Len	"Katsuragi Takamune"
+LAST	Lja	"葛城高宗"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Mutō Yorisuke (was Q135500678) — from [[Adachi Yoshikage]]
+CREATE
+LAST	Len	"Mutō Yorisuke"
+LAST	Lja	"武藤頼佐"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Adachi Shigekage (was Q135500687) — from [[Adachi Yoshikage]]
+CREATE
+LAST	Len	"Adachi Shigekage"
+LAST	Lja	"安達重景"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Adachi Tokikage (was Q135500691) — from [[Adachi Yoshikage]]
+CREATE
+LAST	Len	"Adachi Tokikage"
+LAST	Lja	"安達時景"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Gōkaku Shrine (was Q135500695) — from [[Aedo Hashihime Shrine]]
+CREATE
+LAST	Len	"Gōkaku Shrine"
+LAST	Lja	"合格神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Agata Shrine (Yokkaichi) (was Q135500704) — from [[Agata Shrine]]
+CREATE
+LAST	Len	"Agata Shrine (Yokkaichi)"
+LAST	Lja	"縣神社 (四日市市)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Agata Shrine (Izumo) (was Q135500707) — from [[Agata Shrine]]
+CREATE
+LAST	Len	"Agata Shrine (Izumo)"
+LAST	Lja	"縣神社 (出雲市)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Ietsumiko no Kami (was Q135500709) — from [[Agata Shrine (Gero City)]]
+CREATE
+LAST	Len	"Ietsumiko no Kami"
+LAST	Lja	"家津御子神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Kumano Kusu no Mi no Mikoto (was Q135500713) — from [[Agata Shrine (Gero City)]]
+CREATE
+LAST	Len	"Kumano Kusu no Mi no Mikoto"
+LAST	Lja	"熊野久須美命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Cedar of Agata Shrine (was Q135500718) — from [[Agata Shrine (Gero City)]]
+CREATE
+LAST	Len	"Cedar of Agata Shrine"
+LAST	Lja	"県神社のスギ"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Rokusonōbara Kofun (was Q135500938) — from [[Anesaki Kofun Group]]
+CREATE
+LAST	Len	"Rokusonōbara Kofun"
+LAST	Lja	"六孫王原古墳"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+# recreate Arakida Moriyoshi (was Q135501970) — from [[Aedo Hashihime Shrine]]
+CREATE
+LAST	Len	"Arakida Moriyoshi"
+LAST	Lja	"荒木田守良"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Shima no Yu (was Q135502402) — from [[Atami Onsen]]
+CREATE
+LAST	Len	"Shima no Yu"
+LAST	Lja	"島の湯"
+LAST	Den	"Japanese hot spring (onsen)"
+LAST	P31	Q655311
+
+# recreate Wakajinzume no Kami (was Q135503287) — from [[Ame-no-Hibaraooshinadomi-no-Kami]]
+CREATE
+LAST	Len	"Wakajinzume no Kami"
+LAST	Lja	"若尽女神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Totsumachine no Kami (was Q135503290) — from [[Ame-no-Hibaraooshinadomi-no-Kami]]
+CREATE
+LAST	Len	"Totsumachine no Kami"
+LAST	Lja	"遠津待根神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Fuyumatsuri (was Q135503326) — from [[Annual event]]
+CREATE
+LAST	Len	"Fuyumatsuri"
+LAST	Lja	"鞴祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Tōritsu Shōdai-ji (was Q135503392) — from [[August 3 (Lunisolar)]]
+CREATE
+LAST	Len	"Tōritsu Shōdai-ji"
+LAST	Lja	"唐律招提寺"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Oyayatsuhime no Kami (was Q135503402) — from [[Awata Shrine]]
+CREATE
+LAST	Len	"Oyayatsuhime no Kami"
+LAST	Lja	"大屋津媛神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Tsumatsuhime no Kami (was Q135503405) — from [[Awata Shrine]]
+CREATE
+LAST	Len	"Tsumatsuhime no Kami"
+LAST	Lja	"抓津媛神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Bath Roman (was Q135503417) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Bath Roman"
+LAST	Lde	"Bath Roman"
+LAST	Lja	"バスロマン"
+LAST	Lzh	"泡澡罗曼"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+# recreate Young Venus (was Q135503420) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Young Venus"
+LAST	Lde	"Young Venus"
+LAST	Lja	"ヤングビーナス"
+LAST	Lzh	"年轻维纳斯"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+# recreate Asahi Shōnō (was Q135503423) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Asahi Shōnō"
+LAST	Lde	"Asahi Sōnō"
+LAST	Lja	"アサヒ晶脳"
+LAST	Lzh	"旭日晶脑"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+# recreate Bath Melody (was Q135503424) — from [[Bath Additive]]
+CREATE
+LAST	Len	"Bath Melody"
+LAST	Lde	"Bath Melody"
+LAST	Lja	"バスメロディー"
+LAST	Lzh	"浴曲"
+LAST	Den	"Japanese bath additive product (入浴剤)"
+LAST	P31	Q11388990
+
+# recreate Mineral spring bathhouse (was Q135503427) — from [[Bath tax]]
+CREATE
+LAST	Len	"Mineral spring bathhouse"
+LAST	Lde	"Mineralquellenbad"
+LAST	Lja	"鉱泉浴場"
+LAST	Lzh	"矿泉浴场"
+LAST	Den	"public bathhouse in Japan"
+LAST	P31	Q785952
+
+# recreate Amanosakitama no mikoto (was Q135504169) — from [[Furutama-no-Mikoto]]
+CREATE
+LAST	Len	"Amanosakitama no mikoto"
+LAST	Lja	"天前玉命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Kuroshima Isone hime (was Q135504171) — from [[Furutama-no-Mikoto]]
+CREATE
+LAST	Len	"Kuroshima Isone hime"
+LAST	Lja	"黒島磯根御気姫命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Kotsuka Shrine (was Q135504173) — from [[Furutsuka Kofun]]
+CREATE
+LAST	Len	"Kotsuka Shrine"
+LAST	Lja	"古津賀神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Wago Nembutsu Odori (was Q135504178) — from [[Atobe Dancing Nembutsu]]
+CREATE
+LAST	Len	"Wago Nembutsu Odori"
+LAST	Len	"Wago Nembutsu Odori"
+LAST	Lja	"和合の念仏踊"
+LAST	Den	"Japanese traditional dance"
+LAST	P31	Q11639
+
+# recreate Ayato Night Nembutsu and Bon Odori (was Q135504180) — from [[Atobe Dancing Nembutsu]]
+CREATE
+LAST	Len	"Ayato Night Nembutsu and Bon Odori"
+LAST	Len	"Ayato Night Nembutsu and Bon Odori"
+LAST	Lja	"綾渡の夜念仏と盆踊"
+LAST	Den	"Japanese traditional dance"
+LAST	P31	Q11639
+
+# recreate Mitsurugi Shrine Summer Grand Festival (was Q135504246) — from [[Futon Daiko]]
+CREATE
+LAST	Len	"Mitsurugi Shrine Summer Grand Festival"
+LAST	Lja	"御劔神社 夏季大祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Kisshō-ji (Gifu) (was Q135504271) — from [[Gifu Shichifukujin]]
+CREATE
+LAST	Len	"Kisshō-ji (Gifu)"
+LAST	Lja	"吉祥寺 (岐阜市)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Daikaku-ji (Gifu) (was Q135504275) — from [[Gifu Shichifukujin]]
+CREATE
+LAST	Len	"Daikaku-ji (Gifu)"
+LAST	Lja	"大覚寺 (岐阜市)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Noheji Gion Festival (was Q135504283) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Noheji Gion Festival"
+LAST	Lja	"野辺地祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Suga Shrine Gion Festival (was Q135504287) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Suga Shrine Gion Festival"
+LAST	Lja	"須賀神社祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Enoshima Tenno Festival (was Q135504293) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Enoshima Tenno Festival"
+LAST	Lja	"江ノ島天王祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Tanbayama Gion Festival (was Q135504297) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Tanbayama Gion Festival"
+LAST	Lja	"丹波山祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Yasaka Shrine Gion Festival (Ryugasaki) (was Q135504301) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Yasaka Shrine Gion Festival (Ryugasaki)"
+LAST	Lja	"八坂神社祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Fujioka Festival (was Q135504303) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Fujioka Festival"
+LAST	Lja	"藤岡まつり"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Horikome Naked Festival (was Q135504305) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Horikome Naked Festival"
+LAST	Lja	"堀米の裸祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Yamanashi Gion Festival (was Q135504307) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Yamanashi Gion Festival"
+LAST	Lja	"山梨祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Hosoe Shrine Gion Festival (was Q135504309) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Hosoe Shrine Gion Festival"
+LAST	Lja	"細江神社祇園祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Minami Tenma-chō Tennō Festival (was Q135504311) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Minami Tenma-chō Tennō Festival"
+LAST	Lja	"南伝馬町天王祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Ōtenma-chō Tennō Festival (was Q135504314) — from [[Gion and Tenno Festivals]]
+CREATE
+LAST	Len	"Ōtenma-chō Tennō Festival"
+LAST	Lja	"大伝馬町天王祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+LAST	Sjawiki	"祇園祭#日本全国の祇園祭"
+
+# recreate Gojō Castle Tenjin Shrine (was Q135504358) — from [[Gojō Tenjin Shrine]]
+CREATE
+LAST	Len	"Gojō Castle Tenjin Shrine"
+LAST	Lja	"五城天神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate The Twelve Heavenly Kings (was Q135504457) — from [[Goryō Shrine (Miyamae, Fujisawa)]]
+CREATE
+LAST	Len	"The Twelve Heavenly Kings"
+LAST	Lja	"十二天王"
+LAST	Den	"group of Buddhist guardian deities"
+LAST	P31	Q111252729
+LAST	Sjawiki	"御霊神社 (藤沢市宮前)"
+
+# recreate Nagataki Hakusan Shrine (was Q135504611) — from [[Hakusan Nakai Shrine]]
+CREATE
+LAST	Len	"Nagataki Hakusan Shrine"
+LAST	Lja	"長滝白山神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Araguchi Town) (was Q135505918) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Araguchi Town)"
+LAST	Lja	"赤城神社 (前橋市荒口町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Arai Town) (was Q135505921) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Arai Town)"
+LAST	Lja	"赤城神社 (前橋市新井町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Kameizumi Town) (was Q135505923) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kameizumi Town)"
+LAST	Lja	"赤城神社 (前橋市亀泉町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Shimo Koide Town) (was Q135505924) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Shimo Koide Town)"
+LAST	Lja	"赤城神社 (前橋市下小出町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Sekine Town) (was Q135505926) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Sekine Town)"
+LAST	Lja	"赤城神社 (前橋市関根町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Fujimi Town Urushikubo) (was Q135505928) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Urushikubo)"
+LAST	Lja	"赤城神社 (前橋市富士見町漆窪)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Fujimi Town Yone) (was Q135505930) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Yone)"
+LAST	Lja	"赤城神社 (前橋市富士見町米野)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Fujimi Town Tajima) (was Q135505932) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Fujimi Town Tajima)"
+LAST	Lja	"赤城神社 (前橋市富士見町田島)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Miyaji Town) (was Q135505933) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Miyaji Town)"
+LAST	Lja	"赤城神社 (前橋市宮地町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Watanuki Town) (was Q135505937) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Watanuki Town)"
+LAST	Lja	"赤城神社 (高崎市綿貫町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Shimotaki Town) (was Q135505939) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Shimotaki Town)"
+LAST	Lja	"赤城神社 (高崎市下滝町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Kawauchi 2nd Town) (was Q135505941) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kawauchi 2nd Town)"
+LAST	Lja	"赤城神社 (桐生市川内町2)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Niisato Itabashi Town) (was Q135505947) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Niisato Itabashi Town)"
+LAST	Lja	"赤城神社 (桐生市新里町板橋)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Niisato Takei Town) (was Q135505949) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Niisato Takei Town)"
+LAST	Lja	"赤城神社 (桐生市新里町武井)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Kurohone Yagihara Town) (was Q135505951) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kurohone Yagihara Town)"
+LAST	Lja	"赤城神社 (桐生市黒保根町八木原)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Kurohone Shimo Tazawa Town) (was Q135505953) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kurohone Shimo Tazawa Town)"
+LAST	Lja	"赤城神社 (桐生市黒保根町下田沢)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Miyamae Town) (was Q135505955) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Miyamae Town)"
+LAST	Lja	"赤城神社 (伊勢崎市宮前町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Kunisada Town) (was Q135505957) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kunisada Town)"
+LAST	Lja	"赤城神社 (伊勢崎市国定町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Sakai Hiratsuka Town) (was Q135505965) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Sakai Hiratsuka Town)"
+LAST	Lja	"赤城神社 (伊勢崎市境平塚)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Tone Town Oigami) (was Q135505970) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Tone Town Oigami)"
+LAST	Lja	"赤城神社 (沼田市利根町老神)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Bōjizuka Town) (was Q135505974) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Bōjizuka Town)"
+LAST	Lja	"赤城神社 (館林市傍示塚町)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Kitakatsushika Town Yasaki) (was Q135505979) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kitakatsushika Town Yasaki)"
+LAST	Lja	"赤城神社 (渋川市北橘町八崎)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Akagi Shrine (Kitakatsushika Town Jonanmu) (was Q135505981) — from [[Akagi Shrines]]
+CREATE
+LAST	Len	"Akagi Shrine (Kitakatsushika Town Jonanmu)"
+LAST	Lja	"赤城神社 (渋川市北橘町上南室)"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Kōyasan Campaign (was Q135506282) — from [[Koyasu Jizō Temple]]
+CREATE
+LAST	Len	"Kōyasan Campaign"
+LAST	Lja	"高野山攻め"
+LAST	Den	"siege in Japanese history"
+LAST	P31	Q188055
+
+# recreate Hōrin-ji (Wakayama) (was Q135506290) — from [[Koyasu Jizō Temple]]
+CREATE
+LAST	Len	"Hōrin-ji (Wakayama)"
+LAST	Lja	"法輪寺 (和歌山市)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Fugen-ji (Hashimoto, Wakayama) (was Q135506292) — from [[Koyasu Jizō Temple]]
+CREATE
+LAST	Len	"Fugen-ji (Hashimoto, Wakayama)"
+LAST	Lja	"普賢寺 (橋本市菖蒲谷)"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Kumano Shōjō Gongen (was Q135506335) — from [[Kumata Shrine]]
+CREATE
+LAST	Len	"Kumano Shōjō Gongen"
+LAST	Lja	"熊野證誠権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+# recreate Nanatsumori Shrine (was Q135506353) — from [[Kohoriheno Shrine]]
+CREATE
+LAST	Len	"Nanatsumori Shrine"
+LAST	Lja	"七ツ森神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Okutsuhiko no Mikoto (was Q135550732) — from [[Akagi Shrine (Fujimi Town Yokomuro)]]
+CREATE
+LAST	Len	"Okutsuhiko no Mikoto"
+LAST	Lja	"奥津彦命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Okutsuhime no Mikoto (was Q135550733) — from [[Akagi Shrine (Fujimi Town Yokomuro)]]
+CREATE
+LAST	Len	"Okutsuhime no Mikoto"
+LAST	Lja	"奥津姫命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Tatsuta-hime (was Q135550734) — from [[Akagi Shrine (Fujimi Town Yokomuro)]]
+CREATE
+LAST	Len	"Tatsuta-hime"
+LAST	Lja	"竜田姫命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Chichibu Three Shrines (was Q135550808) — from [[Hodosan Shrine]]
+CREATE
+LAST	Len	"Chichibu Three Shrines"
+LAST	Lja	"秩父三社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Chikugo no Kuni Fudoki (was Q135550812) — from [[Tsukushi no Iwai]]
+CREATE
+LAST	Len	"Chikugo no Kuni Fudoki"
+LAST	Lja	"筑後国風土記"
+LAST	Den	"Japanese historical text"
+LAST	P31	Q571
+
+# recreate Three Deities of Mount Daisen (was Q135550940) — from [[Chimyō Gongen]]
+CREATE
+LAST	Len	"Three Deities of Mount Daisen"
+LAST	Lja	"大山三所権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+# recreate 33 Kannon Pilgrimage of Daisen-ji (was Q135550941) — from [[Chimyō Gongen]]
+CREATE
+LAST	Len	"33 Kannon Pilgrimage of Daisen-ji"
+LAST	Lja	"大山寺三十三カ所地蔵めぐり"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Kyushu 88 Sacred Sites (was Q135550945) — from [[Chinkoku-ji]]
+CREATE
+LAST	Len	"Kyushu 88 Sacred Sites"
+LAST	Lja	"九州八十八箇所霊場"
+LAST	Den	"Buddhist sacred-site pilgrimage network"
+LAST	P31	Q10565932
+
+# recreate Kyushu 36 Fudō Sacred Sites (was Q135550946) — from [[Chinkoku-ji]]
+CREATE
+LAST	Len	"Kyushu 36 Fudō Sacred Sites"
+LAST	Lja	"九州三十六不動霊場"
+LAST	Den	"Buddhist sacred-site pilgrimage network"
+LAST	P31	Q10565932
+
+# recreate Teiō Henki (was Q135550950) — from [[City Offices (Tōji and Sai)]]
+CREATE
+LAST	Len	"Teiō Henki"
+LAST	Lja	"帝王編年記"
+LAST	Den	"Japanese historical text"
+LAST	P31	Q571
+
+# recreate Inari Festival (was Q135551094) — from [[Annual event]]
+CREATE
+LAST	Len	"Inari Festival"
+LAST	Lja	"稲荷祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Kamibe Kige (was Q135551107) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Kige"
+LAST	Lde	"Kamibe Kige"
+LAST	Lja	"神部伎閇"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q119380449
+LAST	P40	Q119380451
+
+# recreate Kamibe Yukunaa (was Q135551108) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Yukunaa"
+LAST	Lde	"Kamibe Yukunaa"
+LAST	Lja	"神部宿奈"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P22	Q119380451
+
+# recreate Kamibe Futamibumi (was Q135551109) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Futamibumi"
+LAST	Lde	"Kamibe Futamibumi"
+LAST	Lja	"神部二身"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Kamibe Kogui (was Q135551110) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Kogui"
+LAST	Lde	"Kamibe Kogui"
+LAST	Lja	"神部小椅"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Kamibe Tsumuji (was Q135551111) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Tsumuji"
+LAST	Lde	"Kamibe Tsumuji"
+LAST	Lja	"神部都牟自"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Kamibe Manyo (was Q135551112) — from [[Awaga Daimyojin Mototsufumi]]
+CREATE
+LAST	Len	"Kamibe Manyo"
+LAST	Lde	"Kamibe Manyo"
+LAST	Lja	"神部万侶"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+LAST	P40	Q55407015
+
+# recreate Wa mirrors (was Q135551119) — from [[Bōseikyō]]
+CREATE
+LAST	Len	"Wa mirrors"
+LAST	Lja	"和鏡"
+LAST	Den	"type of Japanese bronze mirror"
+LAST	P279	Q1041984
+
+# recreate imitation mirrors (was Q135551121) — from [[Bōseikyō]]
+CREATE
+LAST	Len	"imitation mirrors"
+LAST	Den	"type of imitation bronze mirror"
+LAST	P279	Q1041984
+
+# recreate Takenami Site (was Q135551133) — from [[Bikuniyama Yokoanabo Cluster]]
+CREATE
+LAST	Len	"Takenami Site"
+LAST	Len	"Takenami Site"
+LAST	Den	"archaeological site in Japan"
+LAST	P31	Q839954
+
+# recreate Mizumachi Site (was Q135551138) — from [[Bikuniyama Yokoanabo Cluster]]
+CREATE
+LAST	Len	"Mizumachi Site"
+LAST	Len	"Mizumachi Site"
+LAST	Den	"archaeological site in Japan"
+LAST	P31	Q839954
+
+# recreate Ishibuto Daigongen (was Q135551144) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Ishibuto Daigongen"
+LAST	Lja	"石鈇大権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+# recreate Kushimikenu-no-mikoto (was Q135551145) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Kushimikenu-no-mikoto"
+LAST	Lja	"櫛御気野命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Konomine-dera (was Q135551146) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Konomine-dera"
+LAST	Lja	"國軸山金峯山寺"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Jisshōji (was Q135551147) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Jisshōji"
+LAST	Lja	"実城寺"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Benten-gū (was Q135551149) — from [[Changes to deities in the Meiji period]]
+CREATE
+LAST	Len	"Benten-gū"
+LAST	Lja	"弁天宮"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Mago Matsuri (was Q135551153) — from [[Chigo]]
+CREATE
+LAST	Len	"Mago Matsuri"
+LAST	Lja	"孫見祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Hanayome Matsuri (was Q135551155) — from [[Chigo]]
+CREATE
+LAST	Len	"Hanayome Matsuri"
+LAST	Lja	"花嫁まつり"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Yubune Matsuri – Hayabusa Procession (was Q135551156) — from [[Chigo]]
+CREATE
+LAST	Len	"Yubune Matsuri – Hayabusa Procession"
+LAST	Lja	"流鏑馬祭・流鏑馬連行"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Yamanari Gion Matsuri (was Q135551159) — from [[Chigo]]
+CREATE
+LAST	Len	"Yamanari Gion Matsuri"
+LAST	Lja	"山梨祇園祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Kagoshima Summer Matsuri (was Q135551160) — from [[Chigo]]
+CREATE
+LAST	Len	"Kagoshima Summer Matsuri"
+LAST	Lja	"かごしま夏祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Zuiki-sai (was Q135551161) — from [[Chigo]]
+CREATE
+LAST	Len	"Zuiki-sai"
+LAST	Lja	"ずいき祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Akama Shrine (was Q135551162) — from [[Previous Emperor Festival]]
+CREATE
+LAST	Len	"Akama Shrine"
+LAST	Len	"Akama Shrine"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Tenmon-sai (was Q135551163) — from [[Chigo]]
+CREATE
+LAST	Len	"Tenmon-sai"
+LAST	Lja	"天門祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Taishōjidai-sai (was Q135551164) — from [[Chigo]]
+CREATE
+LAST	Len	"Taishōjidai-sai"
+LAST	Lja	"大正時代祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Tokyo Jidai-sai (was Q135551166) — from [[Chigo]]
+CREATE
+LAST	Len	"Tokyo Jidai-sai"
+LAST	Lja	"東京時代祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Nōnindō Matsuri (was Q135551167) — from [[Chigo]]
+CREATE
+LAST	Len	"Nōnindō Matsuri"
+LAST	Lja	"能仁堂まつり"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Tokyo Hana Matsuri (was Q135551169) — from [[Chigo]]
+CREATE
+LAST	Len	"Tokyo Hana Matsuri"
+LAST	Lja	"東京花祭り"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Miyajima Kanzen-sai (was Q135551170) — from [[Chigo]]
+CREATE
+LAST	Len	"Miyajima Kanzen-sai"
+LAST	Lja	"宮島管絃祭"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Suitengu Dedication Fireworks Festival (was Q135551185) — from [[Chikugo River Fireworks Festival]]
+CREATE
+LAST	Len	"Suitengu Dedication Fireworks Festival"
+LAST	Lja	"水天宮奉納花火大会"
+LAST	Den	"festival in Japan"
+LAST	P31	Q132241
+LAST	P17	Q17
+
+# recreate Himuro Falls (was Q135578954) — from [[Himuro Gongen]]
+CREATE
+LAST	Len	"Himuro Falls"
+LAST	Lja	"氷室大滝"
+LAST	Den	"waterfall in Japan"
+LAST	P31	Q34038
+
+# recreate Five Deities of Heaven, Earth, and Man (was Q135579030) — from [[Homisuwajūgosho Shrine]]
+CREATE
+LAST	Len	"Five Deities of Heaven, Earth, and Man"
+LAST	Lja	"天地人五行神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate health science (was Q135579071) — from [[Hot Spring Bathing Instructor]]
+CREATE
+LAST	Len	"health science"
+LAST	Lde	"Gesundheitswissenschaft"
+LAST	Lja	"健康学"
+LAST	Lzh	"健康学"
+LAST	Den	"academic discipline"
+LAST	P31	Q11862829
+
+# recreate Moriyama Hyōtan-yama Kofun (was Q135579120) — from [[Hyōtan-yama Kofun]]
+CREATE
+LAST	Len	"Moriyama Hyōtan-yama Kofun"
+LAST	Lja	"守山瓢箪山古墳"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+# recreate Hyōtan-tsuka Kofun (Moka) (was Q135579124) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Hyōtan-tsuka Kofun (Moka)"
+LAST	Lja	"瓢箪塚古墳 (真岡市)"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+# recreate Kamihamada Kofun Group (was Q135579128) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Kamihamada Kofun Group"
+LAST	Lja	"上浜田古墳群"
+LAST	Den	"group of kofun (ancient Japanese burial mounds)"
+LAST	P31	Q11411019
+LAST	P17	Q17
+
+# recreate Hyōtan-tsuka Kofun (Shizuoka) (was Q135579132) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Hyōtan-tsuka Kofun (Shizuoka)"
+LAST	Lja	"瓢箪塚古墳 (静岡市)"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+# recreate Nishinohara Kofun Group (was Q135579136) — from [[Hyōtan-zuka Kofun]]
+CREATE
+LAST	Len	"Nishinohara Kofun Group"
+LAST	Lja	"西ノ原古墳群"
+LAST	Den	"group of kofun (ancient Japanese burial mounds)"
+LAST	P31	Q11411019
+LAST	P17	Q17
+
+# recreate Iga-hiko (was Q135579148) — from [[Hōri]]
+CREATE
+LAST	Len	"Iga-hiko"
+LAST	Lja	"伊賀彦"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Nozaki Oki-no-Kami Tsunayoshi (was Q135579162) — from [[Hōtō Shrine]]
+CREATE
+LAST	Len	"Nozaki Oki-no-Kami Tsunayoshi"
+LAST	Lja	"野崎隠岐守綱吉"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Suga-no-Sawa Kofun Cluster (was Q135579220) — from [[Ima Izumiguchi Hachiman-yama Kofun]]
+CREATE
+LAST	Len	"Suga-no-Sawa Kofun Cluster"
+LAST	Lja	"菅ノ沢古墳群"
+LAST	Den	"group of kofun (ancient Japanese burial mounds)"
+LAST	P31	Q11411019
+LAST	P17	Q17
+
+# recreate Suga-no-Sawa Gobyō Kofun (was Q135579221) — from [[Ima Izumiguchi Hachiman-yama Kofun]]
+CREATE
+LAST	Len	"Suga-no-Sawa Gobyō Kofun"
+LAST	Lja	"菅ノ沢御廟古墳"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+# recreate Imajuku Kofun Group (was Q135579222) — from [[Imajuku Ōtsuka Kofun]]
+CREATE
+LAST	Len	"Imajuku Kofun Group"
+LAST	Lja	"今宿古墳群"
+LAST	Den	"group of kofun (ancient Japanese burial mounds)"
+LAST	P31	Q11411019
+LAST	P17	Q17
+
+# recreate Ama Inukai no Muraji (was Q135579240) — from [[Inukaibe]]
+CREATE
+LAST	Len	"Ama Inukai no Muraji"
+LAST	Lja	"海犬養連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Waka Inukai no Muraji (was Q135579241) — from [[Inukaibe]]
+CREATE
+LAST	Len	"Waka Inukai no Muraji"
+LAST	Lja	"若犬養連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Azumi Inukai no Muraji (was Q135579242) — from [[Inukaibe]]
+CREATE
+LAST	Len	"Azumi Inukai no Muraji"
+LAST	Lja	"阿曇犬養連"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate calendar makers (was Q135579243) — from [[Ise Calendar]]
+CREATE
+LAST	Len	"calendar makers"
+LAST	Lja	"暦師"
+LAST	Den	"calendar-maker occupation"
+LAST	P279	Q12737077
+
+# recreate Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto (was Q135579244) — from [[Isekisan Shrine]]
+CREATE
+LAST	Len	"Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto"
+LAST	Lja	"天照国照彦火明櫛玉饒早日命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Five Gongen (was Q135579263) — from [[Isurugi Gongen]]
+CREATE
+LAST	Len	"Five Gongen"
+LAST	Lja	"五所権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+# recreate Isurugi Hiko (was Q135579264) — from [[Isurugi Gongen]]
+CREATE
+LAST	Len	"Isurugi Hiko"
+LAST	Lja	"伊須流岐比古神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Gosha Gongen (was Q135579265) — from [[Isurugi Hikojinja]]
+CREATE
+LAST	Len	"Gosha Gongen"
+LAST	Lja	"五社権現"
+LAST	Den	"gongen (syncretic Shinto-Buddhist kami)"
+LAST	P31	Q3080343
+
+# recreate Sawaetahara-Rokurohiko-no-Kami (was Q135579269) — from [[Itsuhayahime-no-Mikoto]]
+CREATE
+LAST	Len	"Sawaetahara-Rokurohiko-no-Kami"
+LAST	Lja	"佐和恵多良六老彦神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Myokenzan Kofun (Muko City) (was Q135579270) — from [[Itsukahara Kofun]]
+CREATE
+LAST	Len	"Myokenzan Kofun (Muko City)"
+LAST	Lja	"妙見山古墳 (向日市)"
+LAST	Den	"kofun (ancient Japanese burial mound)"
+LAST	P31	Q1141225
+LAST	P17	Q17
+
+# recreate Iwakia Betsuō Tomb (was Q135579295) — from [[Iwatsukiwake no Mikoto]]
+CREATE
+LAST	Len	"Iwakia Betsuō Tomb"
+LAST	Lja	"磐城別王墓"
+LAST	Den	"Japanese imperial tomb"
+LAST	P31	Q126919260
+
+# recreate Mitarashi-hime (was Q135579297) — from [[Iwatsukiwake no Mikoto]]
+CREATE
+LAST	Len	"Mitarashi-hime"
+LAST	Lja	"三足比咩命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Iwa tsuku wake no Mikoto (was Q135579300) — from [[Iwatsukiwake no Mikoto]]
+CREATE
+LAST	Len	"Iwa tsuku wake no Mikoto"
+LAST	Lja	"岩衝別命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Jippāramitsu-ji (was Q135579307) — from [[Iwaya Myōken-gū]]
+CREATE
+LAST	Len	"Jippāramitsu-ji"
+LAST	Lja	"十波羅蜜寺"
+LAST	Den	"Buddhist temple in Japan"
+LAST	P31	Q5393308
+LAST	P17	Q17
+
+# recreate Iyozuhiko no Mikoto (was Q135579308) — from [[Iyo Shrine]]
+CREATE
+LAST	Len	"Iyozuhiko no Mikoto"
+LAST	Lja	"伊予津彦命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Iyozuhime no Mikoto (was Q135579309) — from [[Iyo Shrine]]
+CREATE
+LAST	Len	"Iyozuhime no Mikoto"
+LAST	Lja	"伊予津姫命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Kōkage Ōkami (was Q135579317) — from [[Izumo-no-Iwai Shrine (Yorii Town)]]
+CREATE
+LAST	Len	"Kōkage Ōkami"
+LAST	Lja	"蚕影大神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Mitsumine Ōkami (was Q135579318) — from [[Izumo-no-Iwai Shrine (Yorii Town)]]
+CREATE
+LAST	Len	"Mitsumine Ōkami"
+LAST	Lja	"三峰大神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Kohō Ōkami (was Q135579319) — from [[Izumo-no-Iwai Shrine (Yorii Town)]]
+CREATE
+LAST	Len	"Kohō Ōkami"
+LAST	Lja	"古峰大神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Izumo-taisha Misanjin Church (was Q135579324) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Misanjin Church"
+LAST	Lja	"出雲大社三神教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+# recreate Izumo-taisha Shonai Church (was Q135579327) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Shonai Church"
+LAST	Lja	"出雲大社庄内教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+# recreate Izumo-taisha Sakunomiya Religious Society (was Q135579328) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Sakunomiya Religious Society"
+LAST	Lja	"出雲大社佐久之宮講社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Izumo-taisha Karatsu Church (was Q135579341) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Karatsu Church"
+LAST	Lja	"出雲大社唐津教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+# recreate Izumo-taisha Takachiho Church (was Q135579343) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Takachiho Church"
+LAST	Lja	"出雲大社高千穂教会"
+LAST	Den	"Sect Shinto shrine church"
+LAST	P31	Q135437254
+
+# recreate Izumo-taisha Malaysia Religious Society (was Q135579345) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Izumo-taisha Malaysia Religious Society"
+LAST	Lja	"出雲大社マレーシア講社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Iyo Shichifukujin Sacred Sites (was Q135579347) — from [[Izumo Taisha Matsuyama Shrine]]
+CREATE
+LAST	Len	"Iyo Shichifukujin Sacred Sites"
+LAST	Lja	"伊予七福神霊場"
+LAST	Den	"Buddhist sacred-site pilgrimage network"
+LAST	P31	Q10565932
+
+# recreate Miyao Katsuyoshi (was Q135579348) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Miyao Katsuyoshi"
+LAST	Lja	"宮王勝良"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Sengetakaaki (was Q135579349) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Sengetakaaki"
+LAST	Lja	"千家尊愛"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Sengetakamochi (was Q135579350) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Sengetakamochi"
+LAST	Lja	"千家尊有"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Miyao Shigemaru (was Q135579351) — from [[Izumo Taishakyo Mission of Hawaii]]
+CREATE
+LAST	Len	"Miyao Shigemaru"
+LAST	Lja	"宮王重丸"
+LAST	Den	"Japanese historical figure"
+LAST	P31	Q5
+
+# recreate Pre-Ainu theory (was Q135579531) — from [[Japanese Indigenous Theory]]
+CREATE
+LAST	Len	"Pre-Ainu theory"
+LAST	Lja	"プレ・アイヌ説"
+LAST	Den	"theory in Japanese prehistory"
+LAST	P31	Q17737
+
+# recreate Morimasa Hachiman Shrine (was Q135579538) — from [[Jinjachō]]
+CREATE
+LAST	Len	"Morimasa Hachiman Shrine"
+LAST	Lja	"森正八幡神社"
+LAST	Den	"Shinto shrine in Japan"
+LAST	P31	Q845945
+LAST	P17	Q17
+
+# recreate Kawa-no-Kami (was Q135579704) — from [[Kawara Shrine (Gekū)]]
+CREATE
+LAST	Len	"Kawa-no-Kami"
+LAST	Lja	"川神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Mori-no-Kami (was Q135579705) — from [[Kawara Shrine (Gekū)]]
+CREATE
+LAST	Len	"Mori-no-Kami"
+LAST	Lja	"木神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Niwa-tsume no Mikoto (was Q135579706) — from [[Takeminakata & Minomikotohikokamiwake Shrine]]
+CREATE
+LAST	Len	"Niwa-tsume no Mikoto"
+LAST	Lja	"庭津女命"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
+
+# recreate Taioshin Sen Chintaku Reifu no Kami (was Q135583892) — from [[Hoshida Myōkengū]]
+CREATE
+LAST	Len	"Taioshin Sen Chintaku Reifu no Kami"
+LAST	Lja	"太上神仙鎮宅霊符神"
+LAST	Den	"kami (Shinto deity)"
+LAST	P31	Q524158
