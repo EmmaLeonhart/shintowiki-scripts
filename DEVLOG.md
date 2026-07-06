@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Deleted-item recreation dataset: enrichment pipeline (174/213 typed)
+
+Worked off the remote handoff (`docs/deleted_items_recreation_handoff_2026-07-06.md`) after
+merging `claude/work-queue-processing-ps5j2l` into main. Extended the enrichment pipeline in
+`recreate-deleted-wikidata/` (all local/read-only; recreation stays human-gated):
+`enrich_country.py` (P17=Japan for physical-place types only — 84 items; kami/human/deities
+skipped), extended `enrich_p31.py` (kofun-group Q11411019, Izumo shrine-church Q135437254,
+bath-additive Q11388990, gongen Q3080343, 霊場 Q10565932, 浴場 Q785952, 王墓 Q126919260,
+遺跡 Q839954 — every QID verified live; 19 Emma-confirmed people by exact ja match, no fuzzy
+surname rule), `enrich_relations.py` (parses infobox Parentage/Father/Mother/Siblings/Children
++ the `{{familytree}}` vertical lineage → P22/P25/P40/P3373 cited to the host article; host QID
+from the article's OWN declared {{wikidata link}}, not a fuzzy search; "Daughter of/Son of" guard
+so a maternal grandfather isn't asserted as a parent), and `dedup_humans.py` (searches Wikidata
+en+ja for existing people — 4/38 flagged). Result: **174/213 typed, 14 humans with cited family
+relations** (incl. the full 神部/Kamibe descent chain), median 59 labels/item. Per-bucket readiness
+in `items/_recreation_readiness.md`. 60 unit tests green. Remaining autonomous: 39 untyped tail
+(P279 class-concepts + drops) + optional P131/coordinates. Recreation go/no-go + min-claim-set +
+the 4 dedup verifications are Emma's (NEEDS-DECISION). Committed+pushed incrementally (Emma: keep
+main continuously updated).
+
 ## 2026-07-06 — Handoff doc for the deleted-item recreation pipeline + queue front reorder
 
 Emma: write a clear handoff and put it at the FRONT of the queue, because a session started on

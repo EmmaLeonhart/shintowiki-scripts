@@ -172,13 +172,21 @@ The ~122 self-deleted (author-request + batch) are **moot — confirmed NOT on t
 (0/122 labeled, 0/15 sampled QIDs referenced on fandom); dropped from scope. Recreation
 surface = the ~213 fandom-matched, langlink-bearing items (203 QID-anchored).
 
-- [ ] **NEEDS-INVESTIGATION (next loop) — vet the ~213 fandom-matched candidates** (per-item
-  data in `shinto_wiki_crossref.md`) and feed the strong ones through #8's human-gated
-  generator, respecting the CLAUDE.md Wikidata rules. 203 are QID-anchored; the ~12
-  label-only matches + the 57 unmatched need a closer look.
+Vetting/enrichment of the ~213 candidates — SUBSTANTIALLY DONE (2026-07-06 session). Built
+the enrich pipeline (`enrich_country.py` P17=Japan, `enrich_p31.py` extended, `enrich_relations.py`
+familytree+infobox, `dedup_humans.py`). State: **174/213 typed** (P31), 84 with P17=Japan,
+38 humans (14 with cited family relations incl. the full Kamibe `{{familytree}}` lineage + Abe
+genealogy; 4 dedup-flagged), median 59 labels each, descriptions on all typed. Full per-bucket
+readiness: `recreate-deleted-wikidata/items/_recreation_readiness.md`. Remaining AUTONOMOUS work:
+- [ ] The **39 untyped** tail: research the individually-doable ones + apply P279 (subclass) to
+  the class-concepts (mirror types, academic fields, rank systems); drop the non-items (era-years,
+  rock type, a dab page). See `_recreation_readiness.md` for the split.
+- [ ] Optional per-item data for the ready set: **P131** (admin territory, from host-page place)
+  and coordinates — authoritative only.
+Recreation itself + the min-claim-set + verifying the 4 dedup-flagged are **NEEDS-DECISION (Emma)**
+→ see "Blockers awaiting Emma" below.
 
 Pinned tail (keep last, always):
-- [ ] Ensure the three autonomous-loop crons (work-loop :03, auto-flush :15, status-report :42) are running; start them if this session hasn't.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
 
 ---
