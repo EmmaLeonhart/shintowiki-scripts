@@ -70,7 +70,7 @@
 {{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=250|frame-height=250|coord={{coord|34|59|56.9|N|138|47|2.6|E}}}}
 |所在地 = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Numazu|Q241037|qid=Q241037}} Ida 1
 |位置   = {{coord|34|59|56.9|N|138|47|2.6|E|region:JP-22_type:landmark}}
-|祭神   = {{ill|Q702140|qid=DELETED_QID|lt=Ōkuninushi-no-Mikoto}}
+|祭神   = {{ill|Q702140|qid=Q702140|lt=Ōkuninushi-no-Mikoto}}
 |社格   = former {{ill|Son-sha|Q134917284|qid=Q134917284}}, {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
 |創建   = 
 |本殿   = 
@@ -91,7 +91,7 @@ Its founding is unknown, but it is an old shrine identified with the Shikinaisha
 In {{ill|1873|Q7757|qid=Q7757}} (Meiji 6), it was listed as a village shrine<ref name="engi"/>.
 
 === Enshrined deity ===
-* {{ill|Q702140|qid=DELETED_QID|lt=Ōkuninushi-no-Mikoto}}
+* {{ill|Q702140|qid=Q702140|lt=Ōkuninushi-no-Mikoto}}
 
 === Notes ===
 {{Reflist}}

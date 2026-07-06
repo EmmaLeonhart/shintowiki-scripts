@@ -63,7 +63,7 @@
 |画像={{画像募集中|cat=名張市}}
 |所在地={{ill|Mie Prefecture|Q128196|qid=Q128196}}{{ill|Nabari, Mie|Q166183|qid=Q166183}} Shimohinachi 2092
 |位置= {{WikidataCoord}}
-|祭神={{ill|Q702140|qid=DELETED_QID|lt=Ōnamuchi-no-Mikoto}}
+|祭神={{ill|Q702140|qid=Q702140|lt=Ōnamuchi-no-Mikoto}}
 |社格 = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, former {{ill|Son-sha|ja|村社|qid=Q134917284}}
 |創建=unknown
 |例祭=November 3
