@@ -61,12 +61,20 @@ category convention (only then a suffix is added) OR human translation — never
 
 ## 5. cdo (Min Dong) transliterator (do last)
 
-cdo = the romanization (Bàng-uâ-cê) of the hanzi the zh label already produces. Approach found +
-started: Wiktionary `|md=` param (神→sìng); no pip lib (`pyfoochow` absent). Partial data in
-`shinto-label-generator/cdo_readings.json` (37 hanzi).
+cdo = the Bàng-uâ-cê romanization of the SAME hanzi the zh generator produces (Emma's directive).
+Infrastructure built (`fetch_cdo_readings.py` RAG tool + `cdo_readings.json`, 96 entries). Key
+findings baked in: Min Dong `|md=` readings live on TRADITIONAL char pages (万→none, 萬→uâng), so
+the table is traditional-keyed and cdo romanizes the zh-hant (traditional) variant; a shinjitai map
+(恵→惠, 曽→曾, 気→氣) covers forms OpenCC leaves alone. The fixed man'yōgana core is 63/65 covered
+(佐, 禰 have no Wiktionary reading — genuine data gaps). Remaining:
 
-- [ ] Finish the hanzi→Min-Dong table (fetch `md=` for the full kanji set the zh generator emits),
-  wire `cdoify()` reading the zh output. Zero cdo labels observed, so last — but it gets done.
+- [ ] Run `python fetch_cdo_readings.py --corpus --apply` (add `--corpus` walking the full shrine zh
+  output) to cover the long tail of real shrine-name kanji — the agentic-RAG expansion. Log any
+  chars with no `md=` reading (don't guess).
+- [ ] Wire a GATED `cdoify(hanzi_str)`: normalise each char via `to_trad`, look up every reading,
+  and emit ONLY when ALL chars are covered (else return None — never a wrong partial label). Then
+  register cdo in `language_registry.py` + dispatch in the zh pipeline. Zero cdo labels exist today,
+  so coverage-first then wire — but it gets done.
 
 ## Pinned tail (keep last, always)
 

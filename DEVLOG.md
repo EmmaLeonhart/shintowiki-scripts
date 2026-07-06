@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — cdo (Min Dong) transliterator: RAG infrastructure + man'yōgana core (queue #5)
+
+Down payment on the last/lowest-priority queue item. Built `fetch_cdo_readings.py` — the
+agentic-RAG builder for the Min Dong (Bàng-uâ-cê) reading table — and grew `cdo_readings.json` to
+96 entries. Key discoveries encoded: (1) Min Dong `|md=` readings live on the TRADITIONAL character
+page (万 has none; 萬→`uâng`), and the zh generator emits simplified, so cdo must romanize the
+zh-hant (traditional) form and the table is traditional-keyed (s2t before lookup); (2) a shinjitai
+hand-map (恵→惠, 曽→曾, 気→氣) covers man'yōgana forms OpenCC s2t leaves alone. The fixed man'yōgana
+inventory (always present in any label) is 63/65 covered — 佐 and 禰 have no Wiktionary `md=`
+reading (genuine data gaps, not guessed). Remaining (queued): `--corpus` RAG walk for the
+real-shrine-name kanji tail, then a gated `cdoify` (emit only when every char is covered) + registry
+wiring. Zero cdo labels exist on any shrine today, so coverage-first is correct.
+
+---
+
 ## 2026-07-06 — Un-synced the 113 resolved deleted-QID-ill pages (queue #4)
 
 The pages pulled into `git_synced/` for the deleted-QID ill repair (the set whose instruction
