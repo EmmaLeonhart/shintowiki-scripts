@@ -10,18 +10,7 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ---
 
-## 1. `Template:Wikidata link` consolidation (Emma issue 1)
-
-Issue 2 (template invisible when QID empty) is FIXED — the interwiki chain now renders outside the
-QID `#if` (miraheze copy; goes live next `sync_miraheze_unique_pages` run). Remaining:
-
-- [ ] **Consolidation isn't running properly.** Multiple `{{translated page}}` / interwiki
-  templates aren't being merged into the single `{{wikidata link}}` (e.g. Category:19th century
-  Kokugaku scholars has 3 redundant `{{translated page}}` → `Pages using duplicate arguments in
-  template calls`; Category:1988 books similar). Find the consolidation op (the 2026-04-29
-  "consolidate interlanguage links into wikidata link" behaviour) and make it actively run / fix it.
-
-## 3. Recreate deleted Wikidata items — continue (Emma is running the CREATEs)
+## 1. Recreate deleted Wikidata items — continue (Emma is running the CREATEs)
 
 Dataset in `recreate-deleted-wikidata/`; readiness `items/_recreation_readiness.md`. Emma creates
 the items via QuickStatements (human-gated, minimal claim set); relinking ills to new QIDs is the
@@ -38,7 +27,7 @@ autonomous follow-up. **Repair is disposable — dumb direct text swaps, no dura
   relink to created/live QID; duplicates → live QID. Un-sync each resolved page.
 - [ ] **Optional per-item enrichment:** P131 (from host-page place) + coordinates — authoritative only.
 
-## 4. `Template:Ill` wrongful-deletion fix (easy)
+## 2. `Template:Ill` wrongful-deletion fix (easy)
 
 The fandom bot recurrently deletes `shinto.fandom.com/wiki/Template:Ill` ("no Shinto equivalent")
 because the check doesn't count a miraheze **redirect** as an equivalent.
@@ -46,13 +35,13 @@ because the check doesn't count a miraheze **redirect** as an equivalent.
 - [ ] **Mitigation (easy):** make `Template:Ill` git-synced on BOTH wikis so the sync restores it.
 - [ ] **Root cause:** make the fandom delete-orphans check follow miraheze redirect targets first.
 
-## 5. Long-tail language transliterators (build task)
+## 3. Long-tail language transliterators (build task)
 
 - [ ] **Thai (`th`)** transliterator — pre-posed vowel signs (33/135 labels). `pa/km/lo/dz/new/mad/shn`
   (≤16 labels) + `cdo` have no converter — only if one arrives. `python
   shinto-label-generator/language_registry.py` lists uncovered languages by count.
 
-## 6. Merged-QID redirect resolution op (LOW — very end; least time-dependent)
+## 4. Merged-QID redirect resolution op
 
 A Wikidata **merge** turns the old item into a *redirect* (NOT "missing"), so nothing
 canonicalizes it — `deleted_qids_in_ill`/`wikidata_lookup` only act on `"missing"` entities.
@@ -61,9 +50,16 @@ canonicalizes it — `deleted_qids_in_ill`/`wikidata_lookup` only act on `"missi
   `wbgetentities`; if the entity is a redirect, rewrite the QID to the target (follow the chain).
   Light op; throttle + 429-bail; cache per run. Durable maintenance.
 
-## Fix the pipeline
+## 5. Fix the cleanup-loop pipeline
 
-As seen here https://github.com/EmmaLeonhart/shintowiki-scripts/actions/workflows/cleanup-loop.yml It appears the entire cleanup look has just been broken for ages, this needs fixing
+The whole cleanup-loop has been failing for ~a week: the **category-orchestrator step times out
+at 160 min** every run (its allpages(ns=14) walk can't finish), so the category deprecation /
+translation / interlang-consolidation never drains. Everything else in the loop passes.
+
+- [ ] Make the category orchestrator finish within the window — make it resumable via a cursor so
+  each run processes a bounded slice and continues next run (never restarts from zero), and/or
+  split the namespace across jobs, and/or raise the 160-min step timeout. Then the deprecation of
+  the 18 tagged duplicate categories (and the interlang consolidation) drains.
 
 ## Pinned tail (keep last, always)
 

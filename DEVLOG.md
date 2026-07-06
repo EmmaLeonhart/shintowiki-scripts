@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — interlang_consolidate merges multiple {{wikidata link}} templates (Emma issue 1)
+
+Fixed the consolidation gap: a page with both a QID `{{wikidata link|Q…}}` and a separate
+empty-QID interwiki `{{wikidata link||lang|title|…}}` (e.g. Category:1988 books) never merged —
+the op only ever touched the first template. Now it unions the QID + every template's pairs (+
+standalone `[[lang:]]` links) into ONE template and drops the rest, and fires even without
+standalone links. `common.py`: switched stdout to `reconfigure()` (re-wrapping the buffer was
+closing it under pytest capture). 4 new tests; shinto_miraheze suite green (64). NOTE: this does
+NOT dedupe redundant `{{translated page}}` attribution templates — separate concern.
+
 ## 2026-07-05 — jawiki-category items + duplicate deprecation (Emma)
 
 Categories with a jawiki category but no Wikidata item (`[[Category:Categories missing wikidata]]`,
