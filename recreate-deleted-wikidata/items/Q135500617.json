@@ -254,6 +254,16 @@
     "p31_label": "human",
     "p31_property": "P31",
     "possible_existing": [],
+    "relations": [
+      {
+        "property": "P3373",
+        "relation": "sibling",
+        "source_page": "Abe no Yasuchika",
+        "target_label_en": "Abe no Yasuchika",
+        "target_label_ja": "安倍泰親",
+        "target_qid": "Q11450335"
+      }
+    ],
     "romaji_reading": "Abe no Masafumi",
     "type_confidence": "medium",
     "type_source": "name-pattern"

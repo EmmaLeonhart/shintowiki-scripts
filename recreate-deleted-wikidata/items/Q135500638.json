@@ -254,6 +254,23 @@
     "p31_label": "human",
     "p31_property": "P31",
     "possible_existing": [],
+    "relations": [
+      {
+        "property": "P22",
+        "relation": "father",
+        "source_page": "Abe no Yasuchika",
+        "target_label_en": "Abe no Yasuchika",
+        "target_label_ja": "安倍泰親",
+        "target_qid": "Q11450335"
+      },
+      {
+        "property": "P21",
+        "relation": "sex or gender",
+        "source_page": "Abe no Yasuchika",
+        "target_label_en": "male",
+        "target_qid": "Q6581097"
+      }
+    ],
     "romaji_reading": "Abe no Yasunari",
     "type_confidence": "medium",
     "type_source": "name-pattern"
