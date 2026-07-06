@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — Backlog resolution analysis doc (all 8 board items)
+
+Emma-requested next-session input: wrote `docs/backlog_resolution_2026-07-05.md`
+— per-item RESOLVED/PARTIAL/NOT-STARTED + what's-left across all 8 `BACKLOG_ITEMS`,
+synthesized from the board, `todo.md`, and today's DEVLOG entries. Conclusion: #1/#2
+resolved; #3/#4/#6/#7 shipped automation whose residual is inherent human review or
+the remote cloud routine (not build tasks); #5 (Japanese category names, phase c/d)
+is the single highest-value autonomous build thread; #8 (recreate deleted WD) is
+gated on per-target research + an Emma minimum-claim-set decision. Removed the
+"Next-session analysis pass" item from queue.md.
+
 ## 2026-07-05 — wiki-cleanup.yml header + stale queue bullet follow-up (#2 loose ends)
 
 Follow-up to the earlier #2-CLOSED entry. The queue.md `#2 audit-legacy-scripts`

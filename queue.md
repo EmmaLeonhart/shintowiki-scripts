@@ -122,22 +122,6 @@ jawiki sitelink → the rest need content before they'd survive re-deletion.
 - [ ] Only after review: feed vetted blocks through the QuickStatements pipeline
   (human-gated; still respect the WD-editing rules in CLAUDE.md).
 
-## Next-session analysis pass (Emma-requested 2026-07-05)
-
-- [ ] **Analyze all 8 backlog-board problems and the degree each was resolved this
-  session**, as input for the next session. Board (`site/generate_pages.py` BACKLOG_ITEMS)
-  + `todo.md` + DEVLOG 2026-07-05 entries are the source. Quick status to verify/expand:
-  #1 retire-terminating-scripts ✅ done; #2 audit-legacy-scripts ✅ closed; #3 ILL-missing-WD
-  = shipped automation, residual is human review; #4 duplicate-QID tail = ~7-page drain;
-  #5 Japanese category names = phase (c) jawiki→enwiki place gazetteer shipped (~90% of the
-  214 歴史/建築物 residual), tail = other suffixes + gazetteer misses; #6 multiple-wikidata-
-  links = shipped, residual human review; #7 duplicated-content/need-translation = remote
-  cloud-queue routine; #8 recreate-deleted-WD = info-gathering generator shipped, actual
-  recreation deferred (see above). Produce a written per-item "resolved / partial / not
-  started + what's left" so the next session can pick the highest-value thread.
-
----
-
 ## Context dump + agentic RAG on deleted Immanuelle-created Wikidata items (next session)
 
 - [ ] **Go over the context dump** committed this session in `context dump/` (a saved
