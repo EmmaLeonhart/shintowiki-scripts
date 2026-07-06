@@ -1,24 +1,29 @@
 # Recreation-candidate P31 (instance of) — from entity name
 
 - Candidates: **213**
-- Assigned a P31: **165**  ·  left for review: **48**
+- Assigned a P31: **174**  ·  left for review: **39**
 
 Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31.py` docstring. Uncertain → null, never guessed.
 
 ## Type distribution
 
-- (none — review): 48
-- Shinto shrine: 42
+- (none — review): 39
+- Shinto shrine: 39
 - human: 38
 - kami: 28
 - festival: 26
 - Buddhist temple: 9
 - kofun: 6
+- gongen: 5
 - bath additive: 4
 - kofun group: 4
 - shrine church: 4
+- sacred site: 3
 - dance: 2
 - book: 2
+- archaeological site: 2
+- public bath: 1
+- imperial mausoleum: 1
 
 ## Per-candidate
 
@@ -65,16 +70,15 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135505974 | Akagi Shrine (Bōjizuka Town) | 赤城神社 (館林市傍示塚町) | Shinto shrine | high |
 | Q135505979 | Akagi Shrine (Kitakatsushika Town Yasaki) | 赤城神社 (渋川市北橘町八崎) | Shinto shrine | high |
 | Q135505981 | Akagi Shrine (Kitakatsushika Town Jonanmu) | 赤城神社 (渋川市北橘町上南室) | Shinto shrine | high |
-| Q135506335 | Kumano Shōjō Gongen | 熊野證誠権現 | Shinto shrine | high |
 | Q135506353 | Nanatsumori Shrine | 七ツ森神社 | Shinto shrine | high |
 | Q135550808 | Chichibu Three Shrines | 秩父三社 | Shinto shrine | high |
 | Q135551149 | Benten-gū | 弁天宮 | Shinto shrine | high |
 | Q135551162 | Akama Shrine |  | Shinto shrine | high |
-| Q135579263 | Five Gongen | 五所権現 | Shinto shrine | high |
-| Q135579265 | Gosha Gongen | 五社権現 | Shinto shrine | high |
 | Q135579328 | Izumo-taisha Sakunomiya Religious Society | 出雲大社佐久之宮講社 | Shinto shrine | high |
 | Q135579345 | Izumo-taisha Malaysia Religious Society | 出雲大社マレーシア講社 | Shinto shrine | high |
 | Q135579538 | Morimasa Hachiman Shrine | 森正八幡神社 | Shinto shrine | high |
+| Q135551133 | Takenami Site |  | archaeological site | high |
+| Q135551138 | Mizumachi Site |  | archaeological site | high |
 | Q135503417 | Bath Roman | バスロマン | bath additive | high |
 | Q135503420 | Young Venus | ヤングビーナス | bath additive | high |
 | Q135503423 | Asahi Shōnō | アサヒ晶脳 | bath additive | high |
@@ -109,6 +113,11 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135551169 | Tokyo Hana Matsuri | 東京花祭り | festival | high |
 | Q135551170 | Miyajima Kanzen-sai | 宮島管絃祭 | festival | high |
 | Q135551185 | Suitengu Dedication Fireworks Festival | 水天宮奉納花火大会 | festival | high |
+| Q135506335 | Kumano Shōjō Gongen | 熊野證誠権現 | gongen | high |
+| Q135550940 | Three Deities of Mount Daisen | 大山三所権現 | gongen | high |
+| Q135551144 | Ishibuto Daigongen | 石鈇大権現 | gongen | high |
+| Q135579263 | Five Gongen | 五所権現 | gongen | high |
+| Q135579265 | Gosha Gongen | 五社権現 | gongen | high |
 | Q135491608 | Nakatomi no Ōshima | 藤原大嶋 | human | medium |
 | Q135491609 | Nakatomi no Ikemori | 中臣池守 | human | medium |
 | Q135491610 | Nakatomi no Momo / Nakatomi Momo-shō | 中臣秡・中臣秡抄 | human | medium |
@@ -147,6 +156,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579350 | Sengetakamochi | 千家尊有 | human | medium |
 | Q135579351 | Miyao Shigemaru | 宮王重丸 | human | high |
 | Q135579352 | Sengemichihiko | 千家達彦 | human | medium |
+| Q135579295 | Iwakia Betsuō Tomb | 磐城別王墓 | imperial mausoleum | medium |
 | Q135330122 | Amanomikemunushi no Kami | Amanomikemunushi no Kami | kami | high |
 | Q135500709 | Ietsumiko no Kami | 家津御子神 | kami | high |
 | Q135500713 | Kumano Kusu no Mi no Mikoto | 熊野久須美命 | kami | high |
@@ -185,6 +195,10 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579136 | Nishinohara Kofun Group | 西ノ原古墳群 | kofun group | high |
 | Q135579220 | Suga-no-Sawa Kofun Cluster | 菅ノ沢古墳群 | kofun group | high |
 | Q135579222 | Imajuku Kofun Group | 今宿古墳群 | kofun group | high |
+| Q135503427 | Mineral spring bathhouse | 鉱泉浴場 | public bath | high |
+| Q135550945 | Kyushu 88 Sacred Sites | 九州八十八箇所霊場 | sacred site | high |
+| Q135550946 | Kyushu 36 Fudō Sacred Sites | 九州三十六不動霊場 | sacred site | high |
+| Q135579347 | Iyo Shichifukujin Sacred Sites | 伊予七福神霊場 | sacred site | high |
 | Q135579324 | Izumo-taisha Misanjin Church | 出雲大社三神教会 | shrine church | high |
 | Q135579327 | Izumo-taisha Shonai Church | 出雲大社庄内教会 | shrine church | high |
 | Q135579341 | Izumo-taisha Karatsu Church | 出雲大社唐津教会 | shrine church | high |
@@ -201,7 +215,6 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135502435 | Ōtsuki Hotel | 大月ホテル |  | none |
 | Q135503346 | Protective Forest for Navigation | 航行目標保安林 |  | none |
 | Q135503410 | herbal baths | 薬湯 |  | none |
-| Q135503427 | Mineral spring bathhouse | 鉱泉浴場 |  | none |
 | Q135503431 | Color Index | カラーカード |  | none |
 | Q135504200 | Futagoyama Park (disambiguation) | 二子山公園 (曖昧さ回避) |  | none |
 | Q135504266 | JR Ise Sangu Line | JR参宮線 |  | none |
@@ -209,17 +222,11 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135506253 | Kamado Town | 釜戸町2510番地の1 |  | none |
 | Q135506282 | Kōyasan Campaign | 高野山攻め |  | none |
 | Q135506332 | Kyoto's Three Kumano Shrines | 京都三熊野 |  | none |
-| Q135550940 | Three Deities of Mount Daisen | 大山三所権現 |  | none |
-| Q135550945 | Kyushu 88 Sacred Sites | 九州八十八箇所霊場 |  | none |
-| Q135550946 | Kyushu 36 Fudō Sacred Sites | 九州三十六不動霊場 |  | none |
 | Q135550949 | Inner Palace | 内裏外郭 |  | none |
 | Q135551115 | Kansei 12 | 寛政12年 |  | none |
 | Q135551117 | Bunka 1 | 文化元年 |  | none |
 | Q135551119 | Wa mirrors | 和鏡 |  | none |
 | Q135551121 | imitation mirrors | Bōseikyō |  | none |
-| Q135551133 | Takenami Site |  |  | none |
-| Q135551138 | Mizumachi Site |  |  | none |
-| Q135551144 | Ishibuto Daigongen | 石鈇大権現 |  | none |
 | Q135551148 | Kōshin-dō | Kōshin-dō |  | none |
 | Q135551150 | rope attachment projections | 縄掛突起 |  | none |
 | Q135551151 | rhyolitic welded tuff | 流紋岩質溶結凝灰岩 |  | none |
@@ -234,6 +241,4 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579157 | 御鑰 | 御鑰 |  | none |
 | Q135579218 | Ne no Kuni | 根之堅州国 |  | none |
 | Q135579243 | calendar makers | 暦師 |  | none |
-| Q135579295 | Iwakia Betsuō Tomb | 磐城別王墓 |  | none |
-| Q135579347 | Iyo Shichifukujin Sacred Sites | 伊予七福神霊場 |  | none |
 | Q135579531 | Pre-Ainu theory | プレ・アイヌ説 |  | none |

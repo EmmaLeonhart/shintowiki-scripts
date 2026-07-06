@@ -7,7 +7,7 @@
     "timestamp": "20250801074443"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "gongen (syncretic Shinto-Buddhist kami)",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -250,12 +250,12 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q3080343",
+    "p31_label": "gongen",
+    "p31_property": "P31",
     "romaji_reading": "Ishibuto Daigongen",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [

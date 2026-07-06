@@ -106,6 +106,23 @@ def classify(en, ja):
     # a 社/宮 rule (it ends 会, but guard the English "Church" too).
     if ja.endswith("教会") or last == "Church":
         return "Q135437254", "shrine church", "Sect Shinto shrine church", "high", "name-suffix"
+    # Researched clusters (Emma 2026-07-06, QIDs verified live). Checked before the
+    # generic shrine/kami rules so their suffixes win.
+    # Gongen (権現) — syncretic kami title/avatar. Q3080343 "gongen (type of kami)".
+    if ja.endswith("権現"):
+        return "Q3080343", "gongen", "gongen (syncretic Shinto-Buddhist kami)", "high", "name-suffix"
+    # Sacred-site pilgrimage network (霊場). Q10565932.
+    if ja.endswith("霊場") or "Sacred Sites" in en:
+        return "Q10565932", "sacred site", "Buddhist sacred-site pilgrimage network", "high", "name-suffix"
+    # Public bathhouse (浴場). Q785952 公衆浴場.
+    if ja.endswith("浴場"):
+        return "Q785952", "public bath", "public bathhouse in Japan", "high", "name-suffix"
+    # Imperial / prince tomb (王墓 / 陵墓). Q126919260.
+    if ja.endswith("王墓") or ja.endswith("陵墓"):
+        return "Q126919260", "imperial mausoleum", "Japanese imperial tomb", "medium", "name-suffix"
+    # Archaeological site (遺跡 / "… Site"). Q839954.
+    if ja.endswith("遺跡") or last == "Site":
+        return "Q839954", "archaeological site", "archaeological site in Japan", "high", "name-suffix"
     # Shinto shrine — check BEFORE bare 神, because 神社/大社/神宮 end in 社/宮.
     if (jl in ("社", "宮") or ja.endswith(("大社", "神宮", "神社"))
             or last in ("Shrine", "Jinja", "Jingū", "Jingu", "Taisha", "Gongen", "Myōjin")

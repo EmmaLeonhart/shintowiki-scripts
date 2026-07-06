@@ -20,6 +20,17 @@ def test_shrine_wins_over_bare_kami_char():
     assert _p31("Ōmiya Isuzu Shrine", "大宮五十鈴神社") == "Q845945"
 
 
+def test_researched_clusters():
+    # Emma 2026-07-06 research: verified class QIDs.
+    assert _p31("Ishibuto Daigongen", "石鈇大権現") == "Q3080343"       # gongen
+    assert _p31("Kyushu 88 Sacred Sites", "九州八十八箇所霊場") == "Q10565932"  # 霊場
+    assert _p31("Mineral spring bathhouse", "鉱泉浴場") == "Q785952"    # public bath
+    assert _p31("Iwakia Betsuō Tomb", "磐城別王墓") == "Q126919260"     # imperial tomb
+    assert _p31("Takenami Site", "") == "Q839954"                      # archaeological site
+    # gongen must not be swallowed by the shrine rule
+    assert ep.classify("Ishibuto Daigongen", "石鈇大権現")[1] == "gongen"
+
+
 def test_bath_additive_products():
     # Emma 2026-07-06 research: 入浴剤 brands → Q11388990 bath additive.
     assert _p31("Bath Roman", "バスロマン") == "Q11388990"

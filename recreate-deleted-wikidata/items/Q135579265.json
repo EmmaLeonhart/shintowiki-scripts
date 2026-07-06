@@ -7,7 +7,7 @@
     "timestamp": "20250802035952"
   },
   "enrichment": {
-    "description_en": "Shinto shrine in Japan",
+    "description_en": "gongen (syncretic Shinto-Buddhist kami)",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -247,11 +247,11 @@
         "source": "translit"
       }
     },
-    "p17": "Q17",
-    "p17_label": "Japan",
-    "p17_property": "P17",
-    "p31": "Q845945",
-    "p31_label": "Shinto shrine",
+    "p17": null,
+    "p17_label": null,
+    "p17_property": null,
+    "p31": "Q3080343",
+    "p31_label": "gongen",
     "p31_property": "P31",
     "romaji_reading": "Gosha Gongen",
     "type_confidence": "high",

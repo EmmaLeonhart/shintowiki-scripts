@@ -1,13 +1,13 @@
 # Recreation-candidate P17 (country) — Japan for place/physical types
 
-- Candidates given P17=Japan (Q17): **87**
+- Candidates given P17=Japan (Q17): **84**
 - Applicable types: Buddhist temple, Shinto shrine, festival, kofun, kofun group
 
 P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); kami/human/book/untyped are skipped (P17 wrong or unknown). See `enrich_country.py`.
 
 ## By type
 
-- Shinto shrine: 42
+- Shinto shrine: 39
 - festival: 26
 - Buddhist temple: 9
 - kofun: 6
@@ -58,13 +58,10 @@ P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); 
 | Q135505974 | Akagi Shrine (Bōjizuka Town) | Shinto shrine | Japan (Q17) |
 | Q135505979 | Akagi Shrine (Kitakatsushika Town Yasaki) | Shinto shrine | Japan (Q17) |
 | Q135505981 | Akagi Shrine (Kitakatsushika Town Jonanmu) | Shinto shrine | Japan (Q17) |
-| Q135506335 | Kumano Shōjō Gongen | Shinto shrine | Japan (Q17) |
 | Q135506353 | Nanatsumori Shrine | Shinto shrine | Japan (Q17) |
 | Q135550808 | Chichibu Three Shrines | Shinto shrine | Japan (Q17) |
 | Q135551149 | Benten-gū | Shinto shrine | Japan (Q17) |
 | Q135551162 | Akama Shrine | Shinto shrine | Japan (Q17) |
-| Q135579263 | Five Gongen | Shinto shrine | Japan (Q17) |
-| Q135579265 | Gosha Gongen | Shinto shrine | Japan (Q17) |
 | Q135579328 | Izumo-taisha Sakunomiya Religious Society | Shinto shrine | Japan (Q17) |
 | Q135579345 | Izumo-taisha Malaysia Religious Society | Shinto shrine | Japan (Q17) |
 | Q135579538 | Morimasa Hachiman Shrine | Shinto shrine | Japan (Q17) |

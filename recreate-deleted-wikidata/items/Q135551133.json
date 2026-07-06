@@ -7,7 +7,7 @@
     "timestamp": "20250801074400"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "archaeological site in Japan",
     "label_count": 49,
     "labels": {
       "ar": {
@@ -210,12 +210,12 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q839954",
+    "p31_label": "archaeological site",
+    "p31_property": "P31",
     "romaji_reading": "Takenami Site",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [
