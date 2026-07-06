@@ -10,15 +10,10 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ---
 
-## 1. Long-tail language transliterators (build task)
+## 1. Long-tail language transliterators (residual)
 
-- [ ] **Thai (`th`)** transliterator — kana→Thai script with pre-posed vowel reordering
-  (เ/แ/โ/ใ/ไ written before the consonant, pronounced after). 33/135 labels. BLOCKED on a
-  *verified* converter: no Thai transliteration lib is installed (pythainlp/tltk/thai_romanization
-  all absent) and hand-rolling kana→Thai orthography can't be verified here — shipping unverifiable
-  labels to Wikidata is worse than not shipping. Needs a deliberate build with a Thai reference.
-  `pa/km/lo/dz/new/mad/shn` (≤16 labels) + `cdo` have no converter either. `python
-  shinto-label-generator/language_registry.py` lists uncovered languages by count.
+- [ ] `pa/km/lo/dz/new/mad/shn` (≤16 labels each) + `cdo` have no script converter — pursue only
+  if one arrives. (`th` Thai SHIPPED 2026-07-06 via wunsen romaji→Thai; `my` Burmese still open.)
 
 ## Pinned tail (keep last, always)
 

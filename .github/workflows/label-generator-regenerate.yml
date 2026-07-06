@@ -39,7 +39,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests hanja opencc-python-reimplemented pykakasi
+        run: pip install requests hanja opencc-python-reimplemented pykakasi wunsen
 
       - name: Run Toki Pona pipeline
         working-directory: shinto-label-generator

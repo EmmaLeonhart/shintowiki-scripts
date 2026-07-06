@@ -727,6 +727,21 @@ def decline_ukrainian(name):
 # Label formatters per language
 # ----------------------------
 
+_THAP_JA = None
+
+
+def thaify(name):
+    """Romanize (kana→romaji) then transliterate to Thai via wunsen's ThapSap('ja'),
+    the Royal-Society-standard Japanese→Thai mapping. Handles the pre-posed vowel signs
+    เ/แ/โ/ใ/ไ (written before the consonant, pronounced after) correctly — the reason a
+    naïve char-map can't do Thai."""
+    global _THAP_JA
+    if _THAP_JA is None:
+        from wunsen import ThapSap
+        _THAP_JA = ThapSap("ja")
+    return _THAP_JA.thap(kana_to_romaji(name))
+
+
 def format_label(lang, name, is_grand=False, p_type="shrine"):
     """Format a shrine/temple name into a target-language label."""
     
@@ -851,6 +866,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "mr":
             if p_type == "temple": return "मंदिर"
             return _MR_TIRTH                                # suffix, Marathi Devanagari name
+        if lang == "th":
+            if p_type == "temple": return "วัด"             # wat = temple
+            return "ศาลเจ้า"                                 # san chao = shrine (prefix)
         return ""
 
     if lang == "tr":
@@ -922,6 +940,11 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if not bn_name:
             return None
         return f"{bn_name} {get_affix()}"
+    if lang == "th":
+        th_name = thaify(name)
+        if not th_name:
+            return None
+        return f"{get_affix()} {th_name}"      # Thai: <type> <name>, e.g. ศาลเจ้า อิเซะ
     return None
 
 # ----------------------------
@@ -932,7 +955,7 @@ ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
              "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr",
              "nn", "ceb", "mai", "as", "ur",
-             "pl", "ro", "fi", "cs", "sl"]
+             "pl", "ro", "fi", "cs", "sl", "th"]
 
 
 def make_sparql(lang_code):

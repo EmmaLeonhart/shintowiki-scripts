@@ -33,6 +33,7 @@ COVERED = {
     "ar": ("generate_multilang_quickstatements.py", "arabic"),
     "arz": ("generate_multilang_quickstatements.py", "arabic"),
     "hi": ("generate_multilang_quickstatements.py", "devanagari"),
+    "th": ("generate_multilang_quickstatements.py", "thai (wunsen romaji→Thai, pre-posed vowels)"),
     "fr": ("generate_multilang_quickstatements.py", "affix"),
     "pt": ("generate_multilang_quickstatements.py", "affix"),
     "vi": ("generate_multilang_quickstatements.py", "affix"),
