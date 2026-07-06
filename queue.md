@@ -26,7 +26,6 @@ autonomous follow-up. **Repair is disposable — dumb direct text swaps, no dura
 - [ ] **Edit the ills on the 144 git-synced pages** (`[[Category:Pages with deleted QID in ill
   template]]`). Per `{{ill|…|qid=DELETED_QID}}`: sections → `[[Page#Section]]`; real entities →
   relink to created/live QID; duplicates → live QID. Un-sync each resolved page.
-- [ ] **Optional per-item enrichment:** P131 (from host-page place) + coordinates — authoritative only.
 
 ## 2. Long-tail language transliterators (build task)
 

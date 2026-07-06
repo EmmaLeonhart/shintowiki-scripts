@@ -58,7 +58,10 @@
 | Q135504307 | 山梨祇園祭 | Yamanashi Gion Festival | Q140446166 |
 | Q135504309 | 細江神社祇園祭 | Hosoe Shrine Gion Festival | Q140446167 |
 | Q135504311 | 南伝馬町天王祭 | Minami Tenma-chō Tennō Festival | Q140446168 |
+| Q135504314 | 大伝馬町天王祭 | Ōtenma-chō Tennō Festival | Q140446400 |
 | Q135504358 | 五城天神社 | Gojō Castle Tenjin Shrine | Q140446026 |
+| Q135504457 | 十二天王 | The Twelve Heavenly Kings | Q140446401 |
+| Q135505918 | 赤城神社 (前橋市荒口町) | Akagi Shrine (Araguchi Town) | Q140446402 |
 | Q135505921 | 赤城神社 (前橋市新井町) | Akagi Shrine (Arai Town) | Q140446027 |
 | Q135505923 | 赤城神社 (前橋市亀泉町) | Akagi Shrine (Kameizumi Town) | Q140446028 |
 | Q135505924 | 赤城神社 (前橋市下小出町) | Akagi Shrine (Shimo Koide Town) | Q140446029 |
