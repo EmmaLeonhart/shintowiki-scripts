@@ -2,3 +2,4 @@
 # When Emma merges a duplicate she found among the created items, add it here; apply_merged_qids.py
 # rewrites the merged QID -> the surviving one across git_synced/ ills, the relations queue, and item JSONs.
 Q140446120	Q11587884
+Q140446115	Q140446113

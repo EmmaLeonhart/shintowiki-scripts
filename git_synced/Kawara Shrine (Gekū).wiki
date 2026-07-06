@@ -5,7 +5,7 @@
 | location = Shimosakura 304, Misato-cho, [[Ise]], {{ill|Mie Prefecture|ace|Prefektur Mie|af|Mie-prefektuur|an|Prefectura de Mie|ar|ميه (محافظة)|ast|Prefeutura de Mie|az|Mie prefekturası|azb|میه اوستانی|ban|Préféktur Mié|be|Міэ|bg|Мие|bn|মিয়ে প্রশাসনিক অঞ্চল|ca|Prefectura de Mie|cdo|Mie-gâing|ce|Ми (префектура)|ceb|Mie-ken|ckb|پارێزگای میێ|cs|Prefektura Mie|cy|Mie (talaith)|da|Mie-præfekturet|de|Präfektur Mie|eo|Gubernio Mie|es|Prefectura de Mie|et|Mie prefektuur|eu|Mie (prefektura)|fa|استان میه|fi|Mien prefektuuri|fr|Préfecture de Mie|frr|Mie (Prefektüür)|ga|Maoracht Mie|gl|Prefectura de Mie|hak|Mie-yen|he|מיאה (מחוז)|hi|मिऐ प्रीफेक्चर|hr|Mie (prefektura)|hu|Mie prefektúra|hy|Միե (պրեֆեկտուրա)|id|Prefektur Mie|ilo|Prepektura ti Mie|it|Prefettura di Mie|ja|三重県|ka|მიეს პრეფექტურა|km|មីអិ(ខេត្ត)|ko|미에현|la|Mieensis|lt|Mijės prefektūra|lv|Mie prefektūra|mk|Мие (префектура)|mn|Миэ муж|mni|ꯃꯤꯏ ꯂꯝꯈꯥꯢ|mr|मिई प्रांत|ms|Wilayah Mie|ne|मिए|nl|Mie (prefectuur)|no|Mie (prefektur)|nov|Mie Prefekture|os|Миэ|pam|Prepektura ning Mie|pl|Prefektura Mie|pnb|ضلع مائی|pt|Mie|ro|Prefectura Mie|ru|Миэ|se|Mie prefektuvra|sh|Prefektura Mie|si|මියේ ප්‍රාන්තය|simple|Mie Prefecture|sk|Mie (prefektúra)|sr|Префектура Мије|su|Préféktur Mie|sv|Mie prefektur|sw|Mkoa wa Mie|tg|Префектураи Мие|th|จังหวัดมิเอะ|tl|Prepektura ng Mie|tr|Mie|tt|Ми (префектура)|uk|Префектура Міє|ur|میہ پریفیکچر|vi|Mie|war|Mie (prefektura)|wuu|三重县|zh|三重县|zh_classical|三重縣|zh_min_nan|Mie-koān|zh_yue|三重縣|qid=Q128196|lt=Mie Prefecture}}, Japan
 | coordinates = {{coord|34|30|43.6|N|136|44|12.7|E|region:JP}}
 | Map = Japan Mie
-| deity = {{ill|Kawa-no-Kami|ja|川神|qid=DELETED_QID}} (River deity) at Kawara Shrine<br/>{{ill|Mori-no-Kami|ja|木神|qid=DELETED_QID}} (Tree deity) at Mori Shrine
+| deity = {{ill|Kawa-no-Kami|ja|川神|qid=DELETED_QID}} (River deity) at Kawara Shrine<br/>{{ill|Mori-no-Kami|ja|木神|qid=Q140446141}} (Tree deity) at Mori Shrine
 | type = Kawara Shrine: {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳|lt=Shikinaisha}} (minor Rank), {{ill|Toyōke Daijingū|ja|豊受大神宮}} auxiliary shrine (*sessha*)<br />Mori Shrine: {{ill|Toyōke Daijingū|ja|豊受大神宮}} subordinate shrine (*massha*)
 | Established = Before {{ill|Enchō|ja|延長|12=simple|13=User:Immanuelle/Enchō era|comment=changed title based on wikidata|qid=Q97379316}} 5 (927 CE)
 | Main Hall = [[Shinmei-zukuri]]
@@ -32,7 +32,7 @@ Although the enshrined deity of the former site of Hinokijiri Shrine in Funae, I
 
 == Mori Shrine ==
 
-Mori Shrine Ranks 6th among the 8 subsidiary shrines of the Outer Shrine. Its enshrined deity is the {{ill|Tree deity|ja|木神|qid=DELETED_QID}}<ref name="ic"/>. This deity is regarded as the spirit of the {{ill|Shinboku|en|Shinboku|qid=Q48743901|lt=sacred tree}} in the forest where the shrine is located<ref name="ic"/><ref name="gk"/>.
+Mori Shrine Ranks 6th among the 8 subsidiary shrines of the Outer Shrine. Its enshrined deity is the {{ill|Tree deity|ja|木神|qid=Q140446141}}<ref name="ic"/>. This deity is regarded as the spirit of the {{ill|Shinboku|en|Shinboku|qid=Q48743901|lt=sacred tree}} in the forest where the shrine is located<ref name="ic"/><ref name="gk"/>.
 
 It is believed that the site of Mori Shrine corresponds to the former location of Shigai Shrine in Misato-cho Shinkai<ref name="uy2">Ujiyamada City Office (1929): vol. 2, p. 912</ref>. Shigai Shrine was later relocated to the same site as Kawarabuchi Shrine<ref name="uy4"/>.
 

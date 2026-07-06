@@ -9,7 +9,7 @@ In the Middle Ages, ''Isurugi Shugyō'' reached its zenith, with {{ill|Isurugi M
 {| class="wikitable"
 ! !!Former Name!!Honji
 |-
-|rowspan=5|{{ill|Five Gongen|ja|五所権現|qid=DELETED_QID}}
+|rowspan=5|{{ill|Five Gongen|ja|五所権現|qid=Q140446113}}
 |{{ill|Ōmiya|en|Ōmiya|qid=Q1902493|lt=Ōmiya}} || {{ill|Ākāśagarbha|en|Ākāśagarbha|qid=Q416174|lt=Kokūzō Bosatsu}}
 |-
 |{{ill|Kakujin|ja|客人}} || {{ill|Ekādaśamukha|en|Ekādaśamukha|qid=Q11404731|lt=Eleven-Faced Kannon}}
@@ -22,7 +22,7 @@ In the Middle Ages, ''Isurugi Shugyō'' reached its zenith, with {{ill|Isurugi M
 |}
 
 == Separation of Shinto and Buddhism and Haibutsu Kishaku ==
-Due to the {{ill|Shinbutsu bunri|ja|神仏分離令|12=simple|13=User:Immanuelle/Separation of Shinto and Buddhism Decree|ja_comment=jawiki redirects to QID FIXED|qid=Q1970535|comment=changed title based on wikidata|qid=Q1970535}} issued during the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration}}, the Shugendō-based {{ill|Isurugi Gongen|ja|石動権現}} was abolished. In the 3rd year of {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} ({{ill|1870|en|1870|qid=Q7741|lt=1870}}), the Shingon temple {{ill|Isurugi Mountain Tenpyō Temple|ja|石動山天平寺}} was forced into abeyance and reorganized as the {{ill|Isurugi Hikojinja|ja|伊須流岐比古神社|12=simple|13=User:Immanuelle/Isurugi Shrine|comment=changed title based on wikidata|qid=Q11381009}} ({{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture}}). Many of the Isurugi shrines nationwide have since become Shinto shrines or Five-Shrine complexes enshrining {{ill|Isurugi Hiko|ja|伊須流岐比古神|qid=DELETED_QID|lt=Isurugi Hiko}} and others as their deities.
+Due to the {{ill|Shinbutsu bunri|ja|神仏分離令|12=simple|13=User:Immanuelle/Separation of Shinto and Buddhism Decree|ja_comment=jawiki redirects to QID FIXED|qid=Q1970535|comment=changed title based on wikidata|qid=Q1970535}} issued during the {{ill|Meiji Restoration|en|Meiji Restoration|qid=Q8707|lt=Meiji Restoration}}, the Shugendō-based {{ill|Isurugi Gongen|ja|石動権現}} was abolished. In the 3rd year of {{ill|Meiji era|en|Meiji era|qid=Q3125096|lt=Meiji era}} ({{ill|1870|en|1870|qid=Q7741|lt=1870}}), the Shingon temple {{ill|Isurugi Mountain Tenpyō Temple|ja|石動山天平寺}} was forced into abeyance and reorganized as the {{ill|Isurugi Hikojinja|ja|伊須流岐比古神社|12=simple|13=User:Immanuelle/Isurugi Shrine|comment=changed title based on wikidata|qid=Q11381009}} ({{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture}}). Many of the Isurugi shrines nationwide have since become Shinto shrines or Five-Shrine complexes enshrining {{ill|Isurugi Hiko|ja|伊須流岐比古神|qid=Q140446114|lt=Isurugi Hiko}} and others as their deities.
 
 == References ==
 {{Reflist}}
