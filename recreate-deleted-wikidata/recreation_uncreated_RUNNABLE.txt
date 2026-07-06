@@ -1,0 +1,23 @@
+# recreate Shimabara Sea (was Q135490377) — from [[April 1 (Lunisolar)]]
+CREATE
+LAST	Len	"Shimabara Sea"
+LAST	Lja	"島原海"
+LAST	P31	Q15324
+
+# recreate Nakatomi Sakado clan (was Q135491611) — from [[Omikiyama no Mikoto]]
+CREATE
+LAST	Len	"Nakatomi Sakado clan"
+LAST	Lja	"中臣酒人宿祢"
+LAST	P31	Q13417114
+
+# recreate Kibi no Anaumi (was Q135500658) — from [[Achi Shrine (Kurashiki)]]
+CREATE
+LAST	Len	"Kibi no Anaumi"
+LAST	Lja	"吉備の穴海"
+LAST	P31	Q15324
+
+# recreate Ōtsuki Hotel (was Q135502435) — from [[Atami Onsen]]
+CREATE
+LAST	Len	"Ōtsuki Hotel"
+LAST	Lja	"大月ホテル"
+LAST	P31	Q27686
