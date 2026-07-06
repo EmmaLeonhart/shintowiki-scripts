@@ -33,13 +33,17 @@ from being re-deleted). No P31/type claims are guessed. Targets with no valid
 sitelink are still emitted but flagged in the companion review, since they are
 the ones most at risk of re-deletion and most need a human's eye.
 
-Outputs (``--apply``): ``recreate_quickstatements.txt`` (the CREATE blocks) and
-``review.md`` (human-readable). Default dry-run prints a summary. ``--run-tag``
-accepted for template consistency (unused — no wiki write).
+Outputs (``--apply``): ``recreate_quickstatements.txt`` (the CREATE blocks),
+``review.md`` (human-readable), and ``targets.json`` (the consolidated dataset —
+one record per target with ALL linking articles, the old QID, every label, and
+the enrichment flags; the recreation pipeline of P31/P279 + more-language labels
++ genealogy relatives + dedup builds on this). Default dry-run prints a summary.
+``--run-tag`` accepted for template consistency (unused — no wiki write).
 """
 
 import argparse
 import io
+import json
 import os
 import re
 import sys
@@ -55,6 +59,7 @@ SOURCE_CATEGORY = "Pages with deleted QID in ill template"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 QS_PATH = os.path.join(SCRIPT_DIR, "recreate_quickstatements.txt")
 REVIEW_PATH = os.path.join(SCRIPT_DIR, "review.md")
+JSON_PATH = os.path.join(SCRIPT_DIR, "targets.json")
 
 _DELETED_ILL_RE = re.compile(r"\{\{\s*ill\s*\|([^{}]*DELETED_QID[^{}]*)\}\}", re.IGNORECASE)
 _LANG_RE = re.compile(r"^[a-z][a-z-]{1,11}$")
@@ -151,6 +156,37 @@ def render_create_block(target: dict, source_page: str,
             and not existing_qid:
         lines.append(f"LAST\tSjawiki\t{_qs_str(ja_title)}")
     return lines
+
+
+def labels_for(target: dict) -> dict:
+    """Consolidated {lang: label} for a target. English label (positional[0])
+    keyed ``en`` when present; each langlink title is the label in that language.
+    Pure — no network. A same-language langlink never overwrites the en label."""
+    labels: dict = {}
+    if target["label"]:
+        labels["en"] = target["label"]
+    for lang, title in target["langlinks"]:
+        labels.setdefault(lang, title)
+    return labels
+
+
+def target_record(target: dict, source_pages: "list[str]",
+                  existing_qid: str = "", ja_article_exists: "bool | None" = None) -> dict:
+    """One consolidated JSON record for a deleted ill target. Pure — no network.
+
+    Carries everything the recreation pipeline (P31/P279, more-language labels,
+    genealogy relatives, dedup) builds on: ALL articles that link the target, the
+    original deleted QID (or None), every label we have, and the enrichment flags.
+    ``existing_wikidata_qid`` set ⇒ probable duplicate (relink, don't recreate)."""
+    return {
+        "deleted_qid": target["deleted_qid"] or None,
+        "labels": labels_for(target),
+        "source_pages": sorted(source_pages),
+        "ja_invalid": target["ja_invalid"],
+        "notes": target["notes"],
+        "existing_wikidata_qid": existing_qid or None,
+        "ja_article_exists": ja_article_exists,
+    }
 
 
 def _get_json(url: str, params: dict, retries: int = 4):
@@ -304,16 +340,23 @@ def main():
     if len(texts) < len(pages):
         complete = False
 
-    # (page, target) pairs, globally deduped by (label, langlinks).
-    seen: set = set()
-    entries: "list[tuple[str, dict]]" = []
+    # Consolidate: one entry per distinct target (label, langlinks, deleted_qid),
+    # collecting ALL articles that link it (not just the first). source_pages is
+    # attached to the target dict so both the JSON and the .txt/.md read it.
+    agg: dict = {}
+    order: list = []
     for p in sorted(pages):
         for t in deleted_targets_for_page(texts.get(p, "")):
             key = (t["label"], tuple(sorted(t["langlinks"])), t["deleted_qid"])
-            if key in seen:
-                continue
-            seen.add(key)
-            entries.append((p, t))
+            if key not in agg:
+                t["source_pages"] = []
+                agg[key] = t
+                order.append(key)
+            if p not in agg[key]["source_pages"]:
+                agg[key]["source_pages"].append(p)
+    entries: "list[tuple[str, dict]]" = [(agg[k]["source_pages"][0], agg[k])
+                                         for k in order]
+    multi = sum(1 for k in order if len(agg[k]["source_pages"]) > 1)
 
     # Enrichment (Wikidata, to the extent possible): which ja articles are
     # already linked to a LIVE item (probable duplicates → don't recreate), and
@@ -335,8 +378,8 @@ def main():
                         and not t["ja_invalid"])
     dup = sum(1 for _, t in entries if _enrich(t)["existing_qid"])
     print(f"Distinct deleted targets: {len(entries)}  |  with original QID "
-          f"(dd=): {with_qid}  |  safe jawiki sitelink: {safe_sitelink}  |  "
-          f"probable duplicates: {dup}")
+          f"(dd=): {with_qid}  |  linked from >1 article: {multi}  |  "
+          f"safe jawiki sitelink: {safe_sitelink}  |  probable duplicates: {dup}")
     print("Sample CREATE:")
     for p, t in entries[:3]:
         e = _enrich(t)
@@ -356,6 +399,15 @@ def main():
         for p, t in entries:
             f.write("\n".join(render_create_block(t, p, **_enrich(t))) + "\n\n")
     print(f"Wrote {QS_PATH} ({len(entries)} CREATE blocks)")
+
+    # Structured JSON — the consolidated dataset the recreation pipeline (P31/P279,
+    # more-language labels, genealogy relatives, dedup) builds on. Keyed per target,
+    # carrying ALL linking articles, the old QID, every label, and enrichment flags.
+    records = [target_record(t, t["source_pages"], **_enrich(t)) for _, t in entries]
+    with open(JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump({"complete": complete, "count": len(records), "targets": records},
+                  f, ensure_ascii=False, indent=2)
+    print(f"Wrote {JSON_PATH} ({len(records)} targets)")
 
     with open(REVIEW_PATH, "w", encoding="utf-8") as f:
         f.write("# Deleted-QID ill targets — recreation review\n\n")
