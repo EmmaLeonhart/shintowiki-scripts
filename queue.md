@@ -80,15 +80,13 @@ Root cause fixed (`b11f8b54`: label-only, no aliases — the pipeline had reused
 labels as aliases, dragging in typos like `Zebshō` + comma-disambiguators). Damage is already live on
 Wikidata:
 
-- [ ] Audit every alias the pipeline ADDED to Wikidata (cross-ref the old `Aen` lines we submitted vs
-  live Wikidata aliases): how many, which are junk (typos like `Zebshō`, comma-disambiguators like
-  `…, Hino, Tokyo`), how many landed. Generate QuickStatements to REMOVE the junk (never a bespoke
-  editor) — at minimum the ~72 comma-disambiguators.
-- [ ] Trace the SOURCE typos: `Zebshō` etc. are real bad labels on OTHER Wikidata items (likely from a
-  cloud agentic session). Find them; they need correcting on Wikidata too.
-- [ ] Emma's structural fix: give cloud agentic sessions a **Japanese-phonology validator** — reject a
-  romaji label that doesn't decompose into valid mora (e.g. `Zeb` fails: `b` can't be a syllable coda,
-  only `n` can). Gate new labels + flag existing bad ones for the cleanup above. 
+- [ ] Audit aliases the pipeline ADDED (old `Aen` vs live aliases); QS to REMOVE junk (~72
+  comma-disambiguators). BLOCKED-ON-EXTERNAL: needs a WDQS scan (429-outaged 2026-07-06).
+- [ ] Trace SOURCE typos (`Zebshō` etc. = bad labels on other items); correct on Wikidata. WDQS-blocked.
+- [x] Japanese-phonology validator BUILT: `modern-quickstatements/romaji_phonology.py`
+  (`is_valid_romaji_mora` / `is_valid_label`; rejects `Zeb`-style coda garbage; 10 tests). Reusable to
+  gate cloud-session labels + flag existing bad ones (the flag-at-scale sweep is the WDQS-blocked item
+  above).
 
 
 ## 9. Audit Japanese shrine names repeated ≥10× (Emma)
