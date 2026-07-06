@@ -84,6 +84,10 @@ def classify(en, ja):
     # Buddhist temple — 寺 / -ji / -dera (checked after shrine so 神社 wins).
     if jl == "寺" or last.endswith(("-ji", "-dera")):
         return "Q5393308", "Buddhist temple", "Buddhist temple in Japan", "high", "name-suffix"
+    # Kofun GROUP / cluster (群) — checked before single kofun; a cluster of mounds
+    # is a distinct type. QID verified live: Japanese kofun groups use Q11411019.
+    if ja.endswith("古墳群") or "Kofun Group" in en or "Kofun Cluster" in en:
+        return "Q11411019", "kofun group", "group of kofun (ancient Japanese burial mounds)", "high", "name-suffix"
     # Kofun (ancient burial mound).
     if jl == "墳" or last == "Kofun":
         return "Q1141225", "kofun", "kofun (ancient Japanese burial mound)", "high", "name-suffix"

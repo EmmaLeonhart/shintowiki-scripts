@@ -1,7 +1,7 @@
 # Recreation-candidate P17 (country) — Japan for place/physical types
 
-- Candidates given P17=Japan (Q17): **83**
-- Applicable types: Buddhist temple, Shinto shrine, festival, kofun
+- Candidates given P17=Japan (Q17): **87**
+- Applicable types: Buddhist temple, Shinto shrine, festival, kofun, kofun group
 
 P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); kami/human/book/untyped are skipped (P17 wrong or unknown). See `enrich_country.py`.
 
@@ -11,6 +11,7 @@ P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); 
 - festival: 26
 - Buddhist temple: 9
 - kofun: 6
+- kofun group: 4
 
 ## Per-candidate
 
@@ -99,3 +100,7 @@ P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); 
 | Q135579132 | Hyōtan-tsuka Kofun (Shizuoka) | kofun | Japan (Q17) |
 | Q135579221 | Suga-no-Sawa Gobyō Kofun | kofun | Japan (Q17) |
 | Q135579270 | Myokenzan Kofun (Muko City) | kofun | Japan (Q17) |
+| Q135579128 | Kamihamada Kofun Group | kofun group | Japan (Q17) |
+| Q135579136 | Nishinohara Kofun Group | kofun group | Japan (Q17) |
+| Q135579220 | Suga-no-Sawa Kofun Cluster | kofun group | Japan (Q17) |
+| Q135579222 | Imajuku Kofun Group | kofun group | Japan (Q17) |

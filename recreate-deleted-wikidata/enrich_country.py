@@ -33,7 +33,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ITEMS_DIR = os.path.join(HERE, "items")
 
 # P31 type-label → country is authoritative (physical/cultural thing IN Japan).
-COUNTRY_TYPES = frozenset({"Shinto shrine", "festival", "Buddhist temple", "kofun"})
+COUNTRY_TYPES = frozenset({"Shinto shrine", "festival", "Buddhist temple", "kofun",
+                           "kofun group"})
 JAPAN_QID = "Q17"
 
 

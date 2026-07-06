@@ -7,7 +7,7 @@
     "timestamp": "20250802035741"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "group of kofun (ancient Japanese burial mounds)",
     "label_count": 2,
     "labels": {
       "en": {
@@ -19,15 +19,15 @@
         "source": "fandom"
       }
     },
-    "p17": null,
-    "p17_label": null,
-    "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p17": "Q17",
+    "p17_label": "Japan",
+    "p17_property": "P17",
+    "p31": "Q11411019",
+    "p31_label": "kofun group",
+    "p31_property": "P31",
     "romaji_reading": null,
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [

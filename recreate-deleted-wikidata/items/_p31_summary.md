@@ -1,19 +1,20 @@
 # Recreation-candidate P31 (instance of) — from entity name
 
 - Candidates: **213**
-- Assigned a P31: **134**  ·  left for review: **79**
+- Assigned a P31: **138**  ·  left for review: **75**
 
 Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31.py` docstring. Uncertain → null, never guessed.
 
 ## Type distribution
 
-- (none — review): 79
+- (none — review): 75
 - Shinto shrine: 42
 - kami: 28
 - festival: 26
 - human: 19
 - Buddhist temple: 9
 - kofun: 6
+- kofun group: 4
 - dance: 2
 - book: 2
 
@@ -155,6 +156,10 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579132 | Hyōtan-tsuka Kofun (Shizuoka) | 瓢箪塚古墳 (静岡市) | kofun | high |
 | Q135579221 | Suga-no-Sawa Gobyō Kofun | 菅ノ沢御廟古墳 | kofun | high |
 | Q135579270 | Myokenzan Kofun (Muko City) | 妙見山古墳 (向日市) | kofun | high |
+| Q135579128 | Kamihamada Kofun Group | 上浜田古墳群 | kofun group | high |
+| Q135579136 | Nishinohara Kofun Group | 西ノ原古墳群 | kofun group | high |
+| Q135579220 | Suga-no-Sawa Kofun Cluster | 菅ノ沢古墳群 | kofun group | high |
+| Q135579222 | Imajuku Kofun Group | 今宿古墳群 | kofun group | high |
 | Q135490377 | Shimabara Sea | 島原海 |  | none |
 | Q135490455 | Shōkyō | 正恭 |  | none |
 | Q135490496 | Chōkui no Sei | 鐘匱の制 |  | none |
@@ -215,15 +220,11 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579071 | health science | 健康学 |  | none |
 | Q135579080 | balneology | 温泉医学 |  | none |
 | Q135579116 | Hozumi-Suzuki Clan Genealogy | 穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜 |  | none |
-| Q135579128 | Kamihamada Kofun Group | 上浜田古墳群 |  | none |
-| Q135579136 | Nishinohara Kofun Group | 西ノ原古墳群 |  | none |
 | Q135579148 | Iga-hiko | 伊賀彦 |  | none |
 | Q135579154 | 御匙 | 御匙 |  | none |
 | Q135579157 | 御鑰 | 御鑰 |  | none |
 | Q135579162 | Nozaki Oki-no-Kami Tsunayoshi | 野崎隠岐守綱吉 |  | none |
 | Q135579218 | Ne no Kuni | 根之堅州国 |  | none |
-| Q135579220 | Suga-no-Sawa Kofun Cluster | 菅ノ沢古墳群 |  | none |
-| Q135579222 | Imajuku Kofun Group | 今宿古墳群 |  | none |
 | Q135579243 | calendar makers | 暦師 |  | none |
 | Q135579295 | Iwakia Betsuō Tomb | 磐城別王墓 |  | none |
 | Q135579324 | Izumo-taisha Misanjin Church | 出雲大社三神教会 |  | none |
