@@ -51,7 +51,7 @@ According to the shrine legend of {{ill|Inaba Shrine|eu|Inaba santutegia|fr|Inab
 * {{Cite book|和書|title={{ill|Kokushi Daijiten|fa|کوکوشی دایجیتن|fr|Kokushi daijiten|id|Kokushi Daijiten|ja|国史大辞典 (昭和時代)|ru|Большой словарь истории Японии|uk|Великий словник історії Японії|zh|國史大辭典|qid=Q11420603|lt=Kokushi Daijiten (Showa era)}}|publisher=[[吉川弘文館]]}}
 ** {{Wikicite|reference={{ill|Masaaki Ueda|de|Ueda Masaaki|ja|上田正昭|zh|Ueda Masaaki|comment=changed title based on wikidata|qid=Q3297094}} “Inishiki Irihiko no Mikoto”|ref={{Harvid|五十瓊敷入彦命（国史）}}}}
 ** {{Wikicite|reference={{ill|Ishii Shigesuke|de|Ishii Shigesuke|ja|石井茂輔|zh|Ishii Shigesuke}} “Udo no Haka”|ref={{Harvid|宇度墓（国史）}}}}
-* {{Cite book|和書|chapter=Inishiki Irihiko no Mikoto (2010)|title={{ill|Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition|de|Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition|ja|日本古代氏族人名辞典 普及版|zh|Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition|qid=DELETED_QID}}|publisher=[[吉川弘文館]]|isbn=9784642014588}}
+* {{Cite book|和書|chapter=Inishiki Irihiko no Mikoto (2010)|title={{ill|Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition|de|Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition|ja|日本古代氏族人名辞典 普及版|zh|Nihon Kodai Shizoku Jinmei Jiten Publishers’ Edition|qid=Q140447378}}|publisher=[[吉川弘文館]]|isbn=9784642014588}}
 
 == See also ==
 * {{ill|Emperor Suinin|en|Emperor Suinin|qid=Q314850|lt=Emperor Suinin}}
