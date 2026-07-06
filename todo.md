@@ -27,8 +27,11 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
   N/A: shikinaisha_lists (frame-built titles) + hand-authored *_translations. See
   DEVLOG 2026-07-05 and queue.md "DONE — QuickStatements provenance comments"._
 - [ ] **Long-tail language expansion:** `python language_registry.py` prints
-  the uncovered languages by label count; th is the biggest (needs a real Thai
-  transliterator — pre-posed vowel signs).
+  the uncovered languages by label count. The 2026-07-06 batch shipped th (Thai,
+  wunsen), the Brahmic set (my/km/lo/dz via Aksharamukha), new/pa/mad, and cdo
+  (Min Dong md= romanization). The remaining uncovered tail is Chinese topolects
+  needing their own romanization tables like cdo did (nan/hak/wuu/yue/lzh) — each
+  a deliberate build; low demand, do only if a real label count justifies it.
 
 ## Repo / script tasks
 
@@ -54,4 +57,3 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 
 - [ ] **Recreate deleted Wikidata items.** Info-gathering generator SHIPPED 2026-07-05: `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (isolated dir, NOT auto-submitted, CI-wired) walks `[[Category:Pages with deleted QID in ill template]]` → 304 distinct deleted **ill targets** → `CREATE` blocks + `review.md`. **Design correction:** the deleted QIDs are the ill *targets*, NOT the pages (which already have their own items), so it does NOT emit `P11250|"shinto:…"` (that would duplicate). Old QIDs kept as `#` provenance comments (36 recovered incl. the QID-in-title data-loss bug). **Remaining (deferred, see `queue.md`):** per-target content research so items survive Wikidata's deletion churn, a minimum-claim-set-per-type decision, and human-gated submission through the QS pipeline. Actual recreation is out of scope until researched.
 
-- [ ] **Audit the 144 git-synced deleted-QID-ill pages** — do this AFTER the regular queue/work-loop cadence is running smoothly (Emma 2026-07-06). All 144 pages in `[[Category:Pages with deleted QID in ill template]]` were pulled into `git_synced/` (see `recreate-deleted-wikidata/pull_ill_pages_to_git_synced.py`). Go page-by-page over their `{{ill|…|qid=DELETED_QID}}` templates: convert sub-topics that are really **sections** → `[[Page#Section]]` links (verify the section exists), keep genuine separate entities for the (human-gated) recreation, relink duplicates to the live QID. **Un-sync each page once resolved** (remove `[[Category:Git synced pages]]` from its local file → next sync drops the on-wiki tag + local copy), so `git_synced/` returns to its normal size rather than permanently carrying these 144.

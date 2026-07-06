@@ -46,6 +46,20 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — Deleted-QID-ill audit COMPLETE — un-synced the last 31 resolved stragglers (todo)
+
+Promoted todo.md's "audit the git-synced deleted-QID-ill pages" (queue was fully blocked). Audited
+the live wiki: `[[Category:Pages with deleted QID in ill template]]` had 65 members, 44 still
+showing `qid=DELETED_QID` ON THE WIKI. Reconciled: ALL 44 are sync-lag — their `git_synced/` local
+files are resolved (0 `DELETED_QID`), the wiki is just stale pending the repo-wins push (the
+git-synced-sync paces via --max-edits over successive runs). Zero pages are genuinely unresolved
+locally. Found 31 resolved pages still carrying `[[Category:Git synced pages]]` +
+`[[Category:Pages with deleted QID in ill template]]` that my earlier b9d5a371 batch missed (they
+weren't in that comment-removal set) — stripped both categories from all 31 (verified 0 had
+`DELETED_QID` first). So every resolved deleted-QID-ill page is now un-synced; the sync drains the
+wiki category to empty. Audit done. (QID resolution itself never machine-guessed — all mappings this
+work came from Emma's exact QIDs / session-established facts.)
+
 ## 2026-07-06 — cdo regression fix: gate non-CJK labels + first-syllable readings
 
 CI regenerated + committed `cdo.txt` and the forbidden-whitespace test went red (788 labels): the
