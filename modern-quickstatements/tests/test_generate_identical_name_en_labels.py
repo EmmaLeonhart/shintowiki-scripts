@@ -23,11 +23,13 @@ def test_lines_dominant_label_only():
     assert lines_for_target("Q1", "三島神社", counters) == ['Q1|Len|"Mishima Shrine"']
 
 
-def test_lines_two_readings_emit_label_and_alias():
+def test_lines_two_readings_emit_label_only():
+    # Emma 2026-07-06 rule: most-common English label only, NO aliases. The
+    # dominant reading ("Suwa Shrine", count 3) is the label; the other reading
+    # is NOT emitted as an alias.
     counters = {"諏訪神社": Counter({"Suwa Shrine": 3, "Suwa Jinja": 1})}
     assert lines_for_target("Q1", "諏訪神社", counters) == [
         'Q1|Len|"Suwa Shrine"',
-        'Q1|Aen|"Suwa Jinja"',
     ]
 
 

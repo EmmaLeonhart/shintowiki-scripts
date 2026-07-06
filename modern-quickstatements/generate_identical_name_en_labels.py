@@ -145,13 +145,13 @@ def lines_for_target(qid, ja, counters):
     chosen = choose_label(dict(counter), qid)
     if chosen is None:
         return []
-    label, alias = chosen
-    if '"' in label or (alias and '"' in alias):
+    # Emma 2026-07-06: use the most-common English label as the decided label and
+    # DO NOT add aliases. Reusing other same-named items' labels as aliases dragged
+    # in their typos (e.g. "Zebshō-ji Temple") and disambiguators ("…, Hino, Tokyo").
+    label, _alias = chosen
+    if '"' in label:
         return []
-    lines = [f'{qid}|Len|"{label}"']
-    if alias:
-        lines.append(f'{qid}|Aen|"{alias}"')
-    return lines
+    return [f'{qid}|Len|"{label}"']
 
 
 def load_targets(worklist=WORKLIST):

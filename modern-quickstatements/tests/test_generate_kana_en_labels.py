@@ -13,11 +13,12 @@ def test_jinja_emits_label_line_only():
     assert lines == ['Q123|Len|"Kasuga Shrine"']
 
 
-def test_taisha_emits_label_and_alias():
+def test_taisha_emits_label_only():
+    # Emma 2026-07-06 rule: most-common English label only, NO aliases (the
+    # "Kasuga Taisha" alias is no longer emitted).
     lines = lines_for_item({"qid": "Q42", "ja": "春日大社", "kana": "かすがたいしゃ"})
     assert lines == [
         'Q42|Len|"Kasuga Grand Shrine"',
-        'Q42|Aen|"Kasuga Taisha"',
     ]
 
 

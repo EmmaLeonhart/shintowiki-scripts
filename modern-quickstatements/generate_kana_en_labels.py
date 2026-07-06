@@ -43,12 +43,10 @@ def lines_for_item(item):
         return []
     qid = item["qid"]
     # Guard against any stray double-quote in a label breaking the QS line.
-    if '"' in result.label or (result.alias and '"' in result.alias):
+    if '"' in result.label:
         return []
-    lines = [f'{qid}|Len|"{result.label}"']
-    if result.alias:
-        lines.append(f'{qid}|Aen|"{result.alias}"')
-    return lines
+    # Emma 2026-07-06: most-common English label only, NO aliases (pipeline-wide rule).
+    return [f'{qid}|Len|"{result.label}"']
 
 
 def load_worklist():
