@@ -20,6 +20,14 @@ def test_shrine_wins_over_bare_kami_char():
     assert _p31("Ōmiya Isuzu Shrine", "大宮五十鈴神社") == "Q845945"
 
 
+def test_izumo_branch_church_is_shrine_church():
+    # Emma 2026-07-06: Izumo-taisha branch churches (教会) → Q135437254 Shrine Church.
+    assert _p31("Izumo-taisha Karatsu Church", "出雲大社唐津教会") == "Q135437254"
+    assert ep.classify("Izumo-taisha Misanjin Church", "出雲大社三神教会")[1] == "shrine church"
+    # ...but a plain 神社 shrine must still be a Shinto shrine, not a church.
+    assert _p31("Ōmiya Isuzu Shrine", "大宮五十鈴神社") == "Q845945"
+
+
 def test_festival():
     assert _p31("Fuyumatsuri", "鞴祭") == "Q132241"
     assert _p31("Gion Festival", "祇園祭") == "Q132241"

@@ -73,6 +73,12 @@ def classify(en, ja):
     # Kami by mikoto marker (命·尊 are always kami).
     if jl in ("命", "尊") or last in ("Mikoto", "Ōkami", "Okami", "Ōmikami", "Omikami"):
         return "Q524158", "kami", "kami (Shinto deity)", "high", "name-suffix"
+    # Sect-Shinto shrine church (教会) — Izumo-taisha branch churches etc. Emma
+    # 2026-07-06: these are P31 Q135437254 "Shrine Church" (verified live: place of
+    # worship for Sect Shinto groups). Checked before shrine so 教会 doesn't fall to
+    # a 社/宮 rule (it ends 会, but guard the English "Church" too).
+    if ja.endswith("教会") or last == "Church":
+        return "Q135437254", "shrine church", "Sect Shinto shrine church", "high", "name-suffix"
     # Shinto shrine — check BEFORE bare 神, because 神社/大社/神宮 end in 社/宮.
     if (jl in ("社", "宮") or ja.endswith(("大社", "神宮", "神社"))
             or last in ("Shrine", "Jinja", "Jingū", "Jingu", "Taisha", "Gongen", "Myōjin")

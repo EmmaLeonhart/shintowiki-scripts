@@ -1,13 +1,13 @@
 # Recreation-candidate P31 (instance of) — from entity name
 
 - Candidates: **213**
-- Assigned a P31: **138**  ·  left for review: **75**
+- Assigned a P31: **142**  ·  left for review: **71**
 
 Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31.py` docstring. Uncertain → null, never guessed.
 
 ## Type distribution
 
-- (none — review): 75
+- (none — review): 71
 - Shinto shrine: 42
 - kami: 28
 - festival: 26
@@ -15,6 +15,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 - Buddhist temple: 9
 - kofun: 6
 - kofun group: 4
+- shrine church: 4
 - dance: 2
 - book: 2
 
@@ -160,6 +161,10 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579136 | Nishinohara Kofun Group | 西ノ原古墳群 | kofun group | high |
 | Q135579220 | Suga-no-Sawa Kofun Cluster | 菅ノ沢古墳群 | kofun group | high |
 | Q135579222 | Imajuku Kofun Group | 今宿古墳群 | kofun group | high |
+| Q135579324 | Izumo-taisha Misanjin Church | 出雲大社三神教会 | shrine church | high |
+| Q135579327 | Izumo-taisha Shonai Church | 出雲大社庄内教会 | shrine church | high |
+| Q135579341 | Izumo-taisha Karatsu Church | 出雲大社唐津教会 | shrine church | high |
+| Q135579343 | Izumo-taisha Takachiho Church | 出雲大社高千穂教会 | shrine church | high |
 | Q135490377 | Shimabara Sea | 島原海 |  | none |
 | Q135490455 | Shōkyō | 正恭 |  | none |
 | Q135490496 | Chōkui no Sei | 鐘匱の制 |  | none |
@@ -227,10 +232,6 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579218 | Ne no Kuni | 根之堅州国 |  | none |
 | Q135579243 | calendar makers | 暦師 |  | none |
 | Q135579295 | Iwakia Betsuō Tomb | 磐城別王墓 |  | none |
-| Q135579324 | Izumo-taisha Misanjin Church | 出雲大社三神教会 |  | none |
-| Q135579327 | Izumo-taisha Shonai Church | 出雲大社庄内教会 |  | none |
-| Q135579341 | Izumo-taisha Karatsu Church | 出雲大社唐津教会 |  | none |
-| Q135579343 | Izumo-taisha Takachiho Church | 出雲大社高千穂教会 |  | none |
 | Q135579347 | Iyo Shichifukujin Sacred Sites | 伊予七福神霊場 |  | none |
 | Q135579348 | Miyao Katsuyoshi | 宮王勝良 |  | none |
 | Q135579351 | Miyao Shigemaru | 宮王重丸 |  | none |

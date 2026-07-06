@@ -7,7 +7,7 @@
     "timestamp": "20250802040336"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "Sect Shinto shrine church",
     "label_count": 2,
     "labels": {
       "en": {
@@ -22,12 +22,12 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q135437254",
+    "p31_label": "shrine church",
+    "p31_property": "P31",
     "romaji_reading": null,
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [
