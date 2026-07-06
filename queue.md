@@ -106,6 +106,8 @@ properties to add, edits, or other changes per item. A genuine per-item review, 
 
 I noticed on this item https://www.wikidata.org/wiki/Q134736475 I noticed the pipeline gave an English language name in the aliases section, as opposed to an English language name in the actual section, as opposed to the regular one. I'm not sure what's going on with it. I'm not sure if there was some kind of an error where it was supposed to be given a different name, but it was given this one. It should probably not have this, and I just did the edit. It probably should not have this. This seems like it's a bit of a weird way of doing it. If our pipeline is accidentally putting English language translations of names into the aliases, that's a bug. 
 
+It might be that there was some kind of a primary name that was attached to it, and this is a secondary one, but I'm not really sure. 
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
