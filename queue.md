@@ -11,10 +11,6 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ---
 
-## Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-07-06)
-
-Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
-
 ## 1. Get the cleanup-loop reliably working (top priority — enables everything else)
 
 DIAGNOSED + FIX SHIPPED (`1fa6c414`): the RED-timeout cause was ns14 ballooning to 28,176 pages
@@ -62,6 +58,16 @@ category convention (only then a suffix is added) OR human translation — never
   NEEDS-DECISION (Emma): is this still a distinct same-source cross-fill, or is it subsumed by the
   BFS/multilang drip (which now generates fr+id fills into the drip, confounding a live-Wikidata
   gap query)? Confirm scope, then build the fill where the others exist.
+
+## 4b. Recreate the ~213 recoverable deleted-Immanuelle Wikidata items ([[Open questions]] Q1)
+
+- [ ] NEEDS-DECISION (Emma): the fandom crossref recovered ~213 deleted items (203 QID-anchored)
+  with per-language content (`recreate-deleted-wikidata/shinto_wiki_crossref.md`). The deleted-QID
+  ILL-target subset was already created this session (Emma ran the QS) + relinked. Still open for the
+  BROADER ~213: (a) recreate them all on Wikidata? (b) minimum viable claim set per type
+  (person/shrine/facility/concept) to survive Wikidata deletion review? Nothing to Wikidata without
+  Emma's go-ahead (CLAUDE.md WD rules). Analysis: `docs/deleted_immanuelle_items_analysis_2026-07-05.md`.
+  If yes, express as QuickStatements only (feed the daily pipeline) — never a bespoke editor.
 
 ## 5. cdo (Min Dong) transliterator (do last)
 
