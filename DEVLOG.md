@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-05 — jawiki-category items + duplicate deprecation (Emma)
+
+Categories with a jawiki category but no Wikidata item (`[[Category:Categories missing wikidata]]`,
+the `{{wikidata link||ja|Category:X}}` pattern). Generated QS; 24 created first pass. Of 30
+failures: 12 had a real jawiki target with no item → re-ran, all 12 created. The other 18 were
+shinto-wiki Japanese-named DUPLICATES of the English categories → tagged into the deprecation
+pipeline (`[[Category:Japanese language category names]]`, git-synced) to be translated+merged by
+the cloud/`move_categories` (drains once the category orchestrator stops timing out). Also fixed
+`Template:Wikidata link` issue 2: interwikis now render when the QID is empty.
+
 ## 2026-07-05 — Post-crash recovery + queue de-stale audit (Emma)
 
 Second Claude Code session crashed mid-task the prior night (re-running the recreation matcher for

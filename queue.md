@@ -10,22 +10,7 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ---
 
-## 1. Resolve the 18 duplicate categories from the failed QS (`errors.txt`)
-
-Of the 30 failed CREATEs: **12 (real jawiki target, no item) were re-run and all created
-successfully** (done). The remaining **18 are shinto-wiki Japanese-named DUPLICATES** — the
-`{{wikidata link||ja|Category:X}}` target X (`20世紀アジアの女性王族`, `19世紀のKokugakuist`, …)
-is not a jawiki page but a *shinto* category duplicating the English-named one. All 30 English
-pages are git-synced in `git_synced/Category%3A*.wiki`.
-
-- [ ] Tag the 18 Japanese-named shinto duplicate categories into the deprecation pipeline
-  (`[[Category:Japanese language category names]]`) so the cloud translates + `move_categories`
-  merges them into the English survivor. (`19世紀のKokugakuist` is a bad-text-replacement dup of
-  `19世紀の国学者` — same treatment; the target is signal, don't delete.) Drains only once the
-  category orchestrator stops timing out — see the end-of-queue "Fix the pipeline" item. The 12
-  already-created pages can be un-synced.
-
-## 2. `Template:Wikidata link` consolidation (Emma issue 1)
+## 1. `Template:Wikidata link` consolidation (Emma issue 1)
 
 Issue 2 (template invisible when QID empty) is FIXED — the interwiki chain now renders outside the
 QID `#if` (miraheze copy; goes live next `sync_miraheze_unique_pages` run). Remaining:
