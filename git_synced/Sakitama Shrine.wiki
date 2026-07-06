@@ -16,12 +16,11 @@
 | website = {{Official website|https://sakitama-jinja.com/}}
 }}
 
-{{nihongo|'''Sakitama Shrine'''|前玉神社}} is a [[shinto shrine]] in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|lt=Engishiki Jinmyōchō|qid=Q11064932}}. It is located in {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|en|Musashi Province|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|lt=Musashi Province|qid=Q907398}}.
+{{nihongo|'''Sakitama Shrine'''|前玉神社}} is a [[shinto shrine]] in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Engishiki Jinmyōchō}}. It is located in {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|qid=Q907398|lt=Musashi Province}}.
 
 {{commons category|Category:Sakitama-jinja}}
-[[ja:前玉神社]]
 
-{{wikidata link|Q11397359|commons|Category:Sakitama-jinja|ja|前玉神社|check_date=2026-05-25}}
+{{wikidata link|Q11397359|commons|Category:Sakitama-jinja|ja|前玉神社|grok=none|check_date=2026-07-06}}
 
 == Japanese content ==
 {{神社
@@ -42,7 +41,7 @@
 {{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=210|coord={{Coord|36|7|23.5|N|139|28|46.7|E}}}}
 }}
 [[File:Sengen-zuka Kofun (Gyoda), zenkei.JPG|thumb|250px|right|{{Center|{{ill|Sengenzuka Kofun|Q11557453|qid=Q11557453}} where Sakitama Shrine is enshrined}}]]
-'''Sakitama Shrine''' (さきたまじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Sakitama, {{ill|Gyōda|Q860659|qid=Q860659}}, {{ill|Saitama Prefecture|Q128186|qid=Q128186}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=shrine rank}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+'''Sakitama Shrine''' (さきたまじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Sakitama, {{ill|Gyōda|Q860659|qid=Q860659}}, {{ill|Saitama Prefecture|Q128186|qid=Q128186}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=shrine rank}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
 
 The shrine name “Sakitama” is said to be the origin of the place name “Saitama”<ref name="由緒書">Shrine history board.</ref>. It stands within the {{ill|Sakitama Kofun Cluster|Q2213580|qid=Q2213580}} in northern Saitama Prefecture, and the shrine itself is on top of {{ill|Sengenzuka Kofun|Q11557453|qid=Q11557453}}.
 
@@ -59,7 +58,7 @@ The founding is unknown. Sakitama Shrine stands within the {{ill|Sakitama Kofun 
 The origin of the shrine name “Sakitama” is also unclear, but because the family register ledger “Yamashiro no Kuni Atago-gun Kumoshimo no Sato Keichō” (in the '{{ill|Shōsōin Documents|Q11545362|qid=Q11545362}}') from {{ill|Jinki (era)|Q1373210|qid=Q1373210}} 3 ({{ill|726|Q23555|qid=Q23555}}) already shows the notation “Musashi no Kuni Sakitama-gun,” this “Sakitama” is thought to have later changed to “Saitama (sakitama/saitama)”<ref name="由緒書"/>.
 
 === Overview history ===
-In the '{{ill|Engishiki|Q1342448|qid=Q1342448}}' '{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}' compiled in Enchō 5 ({{ill|927|Q30470|qid=Q30470}}), it is recorded in {{ill|Saitama district|Q11427160|qid=Q11427160}} of {{ill|Musashi Province|Q907398|qid=Q907398}} as “Sakitama Shrine, two seats,” and both seats are listed as {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}. Both readings “Sakitama” and “Saitama” are annotated.
+In the '{{ill|Engishiki|Q1342448|qid=Q1342448}}' '{{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}}' compiled in Enchō 5 ({{ill|927|Q30470|qid=Q30470}}), it is recorded in {{ill|Saitama district|Q11427160|qid=Q11427160}} of {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|qid=Q907398}} as “Sakitama Shrine, two seats,” and both seats are listed as {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}. Both readings “Sakitama” and “Saitama” are annotated.
 
 Movements in the {{ill|Middle Ages|Q12554|qid=Q12554}} are unknown{{Sfn|前玉神社（平凡社）|2004年}}, but according to shrine tradition, after inviting an Asama shrine from {{ill|Oshi Castle|Q1074393|qid=Q1074393}}, it took the name “Asama Shrine,” and the kofun where it stands was regarded as Mt. Fuji{{Sfn|前玉神社（平凡社）|2004年}}. It is also said that originally the shrine on top of the kofun was called “Upper Shrine” and the one on the middle slope “Lower Shrine,” and in Meiji this was fixed as “Sakitama Shrine” (upper) and “Asama Shrine” (lower){{Sfn|前玉神社（平凡社）|2004年}}.
 
@@ -170,5 +169,6 @@ List of annual festivals held at Sakitama Shrine<ref name="由緒書"/>.
 [[Category:History of Gyoda, Saitama]]
 [[Category:Shikinaisha in Musashi Province]]
 [[Category:Former Gō-sha in Saitama Prefecture]]
+[[Category:Pages with unresolved QID in ill template]]
 
 [[Category:Git synced pages]]
