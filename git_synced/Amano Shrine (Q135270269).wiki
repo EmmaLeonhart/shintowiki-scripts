@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Amano Shrine (Q135270269)
+| native_name = 海神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Amano Shrine (Q135270269)
+| coordinates = {{coord|35.641828|134.687139}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Amano Shrine'''|海神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Amano Shrine (Q135270269)]][[Category:Shikinaisha|Amano Shrine (Q135270269)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135270269|grok=none|check_date=2026-05-28}}
+[[Category:Shikinaisha in Tajima Province]]
+
+[[Category:Git synced pages]]

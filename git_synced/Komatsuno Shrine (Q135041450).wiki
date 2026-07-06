@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Komatsuno Shrine (Q135041450)
+| native_name = 小松神社 (香美市)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Komatsuno Shrine (Q135041450)
+| coordinates = {{coord|33.740415|133.973058}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Komatsuno Shrine'''|小松神社 (香美市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tosa Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Komatsuno Shrine (Q135041450)]][[Category:Shikinaisha|Komatsuno Shrine (Q135041450)]][[Category:Shikinaisha in Tosa Province]]
+
+{{wikidata link|Q135041450|grok=none|check_date=2026-05-31}}
+
+[[Category:Git synced pages]]

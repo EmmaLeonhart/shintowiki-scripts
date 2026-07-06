@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kamo Shrine (Q135194975)
+| native_name = 加茂社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamo Shrine (Q135194975)
+| coordinates = {{coord|36.718644|137.097289}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kamo Shrine'''|加茂社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Etchū Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kamo Shrine (Q135194975)]][[Category:Shikinaisha|Kamo Shrine (Q135194975)]][[Category:Shikinaisha in Etchū Province]]
+
+{{wikidata link|Q135194975|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

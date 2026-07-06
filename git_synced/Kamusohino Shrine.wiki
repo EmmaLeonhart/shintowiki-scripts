@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kamusohino Shrine
+| native_name = 神傍神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamusohino Shrine
+| coordinates = {{coord|36.051784|136.276522}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kamusohino Shrine'''|神傍神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Echizen Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kamusohino Shrine]][[Category:Shikinaisha|Kamusohino Shrine]][[Category:Shikinaisha in Echizen Province]]
+
+{{wikidata link|Q135040210|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Hisono Shrine
+| native_name = 比蘇天神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hisono Shrine
+| coordinates = {{coord|34.92969|137.151038}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Tenjin (kami)|abstract|Q1753428|de|Tenjin|fr|Tenjin|hu|Tendzsin|ja|天満大自在天神|mni|ꯇꯦꯟꯖꯤꯟ (ꯂꯥꯢ)|pl|Tenjin|ru|Тэндзин|simple|Tenjin|sr|Tenđin|te|టెన్జిన్ (కామి)|th|เท็นจิง|tok|jan sewi Tensin|zh|天滿大自在天神|qid=Q1753428|lt=Tenjin}}
+}}
+
+{{nihongo|'''Hisono Shrine'''|比蘇天神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mikawa Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hisono Shrine]][[Category:Shikinaisha|Hisono Shrine]][[Category:Shikinaisha|Hisono Shrine]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135039575|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Mikawa Province]]
+
+[[Category:Git synced pages]]

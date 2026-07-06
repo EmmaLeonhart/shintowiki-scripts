@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Inakino Shrine (Q135270141)
+| native_name = 稲木神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Inakino Shrine (Q135270141)
+| coordinates = {{coord|35.323312|136.880327}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Inakino Shrine'''|稲木神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Inakino Shrine (Q135270141)]][[Category:Shikinaisha|Inakino Shrine (Q135270141)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q11596632|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Owari Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Kataoka Shrine
+| native_name = 片岡神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kataoka Shrine
+| coordinates = {{coord|34.856641|136.449765}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+{{nihongo|'''Kataoka Shrine'''|片岡神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+{{wikidata link|Q135186659|grok=none|check_date=2026-05-30}}
+
+[[Category:Wikidata generated shikinaisha pages|Kataoka Shrine]]
+[[Category:Shikinaisha|Kataoka Shrine]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Ise Province]]
+
+[[Category:Git synced pages]]

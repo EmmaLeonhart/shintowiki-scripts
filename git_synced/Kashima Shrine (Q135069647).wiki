@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Kashima Shrine (Q135069647)
+| native_name = 鹿嶋神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kashima Shrine (Q135069647)
+| coordinates = {{coord|35.443077|136.269992}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Takemikazuchi|qid=Q1502690|lt=Takemikazuchi|de|Takemikazuchi|en|Takemikazuchi|eo|Takemikazuĉi|es|Takemikazuchi|fa|تاکه‌میکازوچی|fr|Takemikazuchi|id|Takemikazuchi|ja|タケミカヅチ|pl|Takemikazuchi|pt|Takemikadzuchi|ru|Такэмикадзути|zh|建御雷|qid=Q1502690}}
+}}
+
+{{nihongo|'''Kashima Shrine'''|鹿嶋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kashima Shrine (Q135069647)]][[Category:Shikinaisha|Kashima Shrine (Q135069647)]][[Category:Shikinaisha|Kashima Shrine (Q135069647)]][[Category:Kashima Shrine (worship)]]
+
+{{wikidata link|Q135069647|grok=none|check_date=2026-05-30}}
+[[Category:Shikinaisha in Ōmi Province]]
+
+[[Category:Git synced pages]]

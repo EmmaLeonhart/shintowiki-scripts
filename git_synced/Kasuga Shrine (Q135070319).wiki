@@ -1,0 +1,24 @@
+{{Infobox religious building
+| name = Kasuga Shrine (Q135070319)
+| native_name = 春日神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kasuga Shrine (Q135070319)
+| coordinates = {{coord|34.280332|134.224047}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kasuga-no-Kami|fr|Kasuga no Kami|ja|春日神|simple|Kasuga-no-Kami|zh|春日神|qid=Q11088805|lt=Kasuga no Kami}}
+}}
+
+{{nihongo|'''Kasuga Shrine'''|春日神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Sanuki Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kasuga Shrine (Q135070319)]][[Category:Shikinaisha|Kasuga Shrine (Q135070319)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135070319|grok=none|check_date=2026-05-30}}
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Sanuki Province]]
+
+[[Category:Git synced pages]]

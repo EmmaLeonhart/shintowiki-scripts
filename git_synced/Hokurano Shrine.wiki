@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Hokurano Shrine
+| native_name = 合祀：春日神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hokurano Shrine
+| coordinates = {{coord|34.450608|135.482758}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kasuga-no-Kami|lt=Kasuga no Kami|fr|Kasuga no Kami|ja|春日神|simple|Kasuga-no-Kami|zh|春日神|qid=Q11088805}}
+}}
+
+{{nihongo|'''Hokurano Shrine'''|合祀：春日神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hokurano Shrine]][[Category:Shikinaisha|Hokurano Shrine]][[Category:Shikinaisha|Hokurano Shrine]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135039177|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Izumi Province]]
+
+[[Category:Git synced pages]]

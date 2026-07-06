@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Izanami Shrine (Q135070084)
+| native_name = 伊邪那美神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Izanami Shrine (Q135070084)
+| coordinates = {{coord|35.373246|133.069981}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Izanami Shrine'''|伊邪那美神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Izanami Shrine (Q135070084)]][[Category:Shikinaisha|Izanami Shrine (Q135070084)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135070084|grok=none|check_date=2026-05-30}}
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Izumo Province]]
+
+[[Category:Git synced pages]]

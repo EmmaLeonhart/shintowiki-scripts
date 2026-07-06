@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Hie Shrine (Q135193786)
+| native_name = 日枝神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hie Shrine (Q135193786)
+| coordinates = {{coord|35.443306|136.03423}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Oyamakui no Kami|qid=Q10935105|lt=Ōyamakui|en|Oyamakui no Kami|ja|大山咋神|simple|Oyamakui no Kami|zh|大山咋神|qid=Q10935105}}
+}}
+
+{{nihongo|'''Hie Shrine'''|日枝神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hie Shrine (Q135193786)]][[Category:Shikinaisha|Hie Shrine (Q135193786)]][[Category:Sannō shrine]]
+
+{{wikidata link|Q135193786|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Ōmi Province]]
+
+[[Category:Git synced pages]]

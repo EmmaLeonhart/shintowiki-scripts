@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kamono Shrine (Q135041305)
+| native_name = 鴨神社 (東みよし町)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamono Shrine (Q135041305)
+| coordinates = {{coord|34.029405|133.937042}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kamono Shrine'''|鴨神社 (東みよし町)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[Category:Wikidata generated shikinaisha pages|Kamono Shrine (Q135041305)]][[Category:Shikinaisha|Kamono Shrine (Q135041305)]][[Category:Shikinaisha in Awa Province (Tokushima)]]
+
+{{wikidata link|Q135041305|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

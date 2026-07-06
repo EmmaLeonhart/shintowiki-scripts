@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Iwano Shrine
+| native_name = 伊和神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Iwano Shrine
+| coordinates = {{coord|35.511921|134.195062}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Iwano Shrine'''|伊和神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Inaba Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Iwano Shrine]][[Category:Shikinaisha|Iwano Shrine]][[Category:Shikinaisha in Inaba Province]]
+
+{{wikidata link|Q135040746|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

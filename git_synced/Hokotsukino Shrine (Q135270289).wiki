@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Hokotsukino Shrine (Q135270289)
+| native_name = 桙衝神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hokotsukino Shrine (Q135270289)
+| coordinates = {{coord|35.607595|138.635773}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hokotsukino Shrine'''|桙衝神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kai Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hokotsukino Shrine (Q135270289)]][[Category:Shikinaisha|Hokotsukino Shrine (Q135270289)]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135270289|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Kai Province]]
+
+[[Category:Git synced pages]]

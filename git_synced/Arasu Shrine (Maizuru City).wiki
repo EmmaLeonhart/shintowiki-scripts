@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Arasu Shrine (Maizuru City)
+| native_name = 阿良須神社（舞鶴市）
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Arasu Shrine (Maizuru City)
+| coordinates = {{coord|35.480436|135.43073}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Arasu Shrine (Maizuru City)'''|阿良須神社（舞鶴市）}} is a [[shinto shrine]] in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|lt=Engishiki Jinmyōchō|qid=Q11064932}}. It is located in {{ill|Tango Province|cs|Tango (provincie)|de|Provinz Tango|en|Tango Province|es|Provincia de Tango|fa|ولایت تانگو|fr|Province de Tango|gl|Provincia de Tango|id|Provinsi Tango|it|Tango (provincia)|ja|丹後国|ko|단고국|lt|Tango žemė|nl|Tango (provincie)|pt|Província de Tango|ru|Танго (провинция)|simple|Tango Province|sk|Tango (provincia)|sr|Провинција Танго|tr|Tango (vilayet)|uk|Провінція Танґо|zh|丹後國|zh_min_nan|Tango-kok|lt=Tango Province|qid=Q1054331}}.
+
+[[Category:Wikidata generated shikinaisha pages|Arasu Shrine (Maizuru City)]][[Category:Shikinaisha|Arasu Shrine (Maizuru City)]][[Category:Shikinaisha in Tango Province]]
+
+{{wikidata link|Q135195231|grok=none|check_date=2026-05-28}}
+
+[[Category:Git synced pages]]

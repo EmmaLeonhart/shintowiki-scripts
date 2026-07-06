@@ -1,0 +1,20 @@
+{{Infobox religious building
+| name = Kumano Shrine (Etchū Province)
+| native_name = 熊野神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kumano Shrine (Etchū Province)
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kumano Gongen|ja|熊野権現|simple|Kumano Gongen|zh|熊野權現|qid=Q11568925|lt=Kumano Gongen}}
+}}
+
+{{nihongo|'''Kumano Shrine (Etchū Province)'''|熊野神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Kumano Shrine (Etchū Province)]][[Category:Shikinaisha|Kumano Shrine (Etchū Province)]]
+{{wikidata link|Q135069977|grok=none|check_date=2026-05-31}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Inenohime Shrine
+| native_name = 稲乃比売神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Inenohime Shrine
+| coordinates = {{coord|36.105847|139.200686}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Inenohime Shrine'''|稲乃比売神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Inenohime Shrine]][[Category:Shikinaisha|Inenohime Shrine]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135069546|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Musashi Province]]
+[[Category:Test cases]]
+
+[[Category:Git synced pages]]

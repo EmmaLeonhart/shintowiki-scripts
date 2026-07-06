@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Koroku Shrine (Q135199312)
+| native_name = 胡禄神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Koroku Shrine (Q135199312)
+| coordinates = {{coord|34.555641|129.472846}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Koroku Shrine'''|胡禄神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tsushima]].
+
+[[Category:Wikidata generated shikinaisha pages|Koroku Shrine (Q135199312)]][[Category:Shikinaisha|Koroku Shrine (Q135199312)]][[Category:Shikinaisha in Tsushima]]
+
+{{wikidata link|Q135199312|grok=none|check_date=2026-05-31}}
+
+[[Category:Git synced pages]]

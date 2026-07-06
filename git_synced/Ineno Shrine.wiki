@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Ineno Shrine
+| native_name = 伊尼神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ineno Shrine
+| coordinates = {{coord|35.149615|135.016541}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ineno Shrine'''|伊尼神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tanba Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Ineno Shrine]][[Category:Shikinaisha|Ineno Shrine]][[Category:Shikinaisha in Tanba Province]]
+
+{{wikidata link|Q135040517|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

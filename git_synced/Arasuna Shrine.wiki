@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Arasuna Shrine
+| native_name = 荒砂神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Arasuna Shrine
+| coordinates = {{coord|35.591128|134.321253}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Arasuna Shrine'''|荒砂神社}} is a [[shinto shrine]] in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|lt=Engishiki Jinmyōchō|qid=Q11064932}}. It is located in {{ill|Inaba Province|cs|Provincie Inaba|de|Provinz Inaba|es|Provincia de Inaba|fa|ولایت اینابا|fr|Province d'Inaba|gl|Provincia de Inaba|id|Provinsi Inaba|it|Inaba (provincia)|ja|因幡国|ko|이나바국|lt|Inabos žemė|nl|Inaba (provincie)|pt|Província de Inaba|ru|Инаба (провинция)|simple|Inaba Province|sk|Inaba (provincia)|sr|Провинција Инаба|th|แคว้นอินาบะ|tr|Inaba (vilayet)|uk|Провінція Інаба|zh|因幡國|zh_min_nan|Inaba-kok|qid=Q1054338|lt=Inaba Province}}.
+
+[[Category:Wikidata generated shikinaisha pages|Arasuna Shrine]][[Category:Shikinaisha|Arasuna Shrine]][[Category:Shikinaisha|Arasuna Shrine]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135195566|grok=none|check_date=2026-05-28}}
+[[Category:Shikinaisha in Inaba Province]]
+
+[[Category:Git synced pages]]

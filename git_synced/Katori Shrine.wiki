@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Katori Shrine
+| native_name = 香取神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Katori Shrine
+| coordinates = {{coord|35.526994|136.156377}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Futsunushi|qid=Q1107286|lt=Futsunushi|en|Futsunushi|fr|Futsunushi|ja|経津主神|mni|ꯐꯨꯠꯁꯨꯅꯨꯁꯤ|pl|Futsunushi|ru|Фуцунуси|zh|經津主神|qid=Q1107286}}
+}}
+
+{{nihongo|'''Katori Shrine'''|香取神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Katori Shrine]][[Category:Shikinaisha|Katori Shrine]][[Category:Shikinaisha|Katori Shrine]][[Category:Shikinaisha in Ōmi Province]]
+
+{{wikidata link|Q135069631|grok=katori_shrine|check_date=2026-05-30}}
+[[Category:Katori shrines]]
+
+[[Category:Git synced pages]]

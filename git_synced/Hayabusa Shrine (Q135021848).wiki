@@ -1,0 +1,59 @@
+{{Expand Japanese|隼神社 (京都市)}}
+
+{{Infobox religious building
+| name = Hayabusa Shrine (Q135021848)
+| native_name = 隼神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hayabusa Shrine (Q135021848)
+| coordinates = {{coord|35.006045|135.744362}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hayabusa Shrine'''|隼神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[the Imperial Palace]].
+
+[[ja:隼神社 (京都市)]]
+
+{{wikidata link|Q135021848|ja|隼神社 (京都市)|grok=none|check_date=2026-05-29}}
+
+== Hayabusa Shrine ==
+{{Infobox religious building| religious_affiliation = [[Shinto]]
+| name = Hayabusa Shrine
+| religious_affiliation = [[Shinto]]
+|image = [[File:Nagi-jinja Hayabusa-jinja.JPG|250px]]<br />Hayabusa Shrine
+| location = 
+| coordinates = 
+| Enshrined Deities = {{ill|Takemikazuchi-no-Mikoto|ja|建甕槌神}}
+| Main Hall = {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}}
+| Alternate name = 
+| festival = November 17
+| Rituals = 
+}}
+'''Hayabusa Shrine''' (隼神社) is located within the Nagi Shrine grounds and is an ancient {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}}.
+[[File:隼神社.jpg|thumb|200px|right|Hayabusa Shrine stone pillar]]
+
+=== Enshrined Deities ===
+; Main deity
+* {{ill|Takemikazuchi-no-Mikoto|ja|建甕槌神}}
+; Additional deity
+* {{ill|Futsunushi|en|Futsunushi|qid=Q1107286|qid=Q1107286|lt=Futsunushi}}
+
+=== History ===
+The exact origins of the shrine are unknown, but it is mentioned in the {{ill|Nihon Sandai Jitsuroku|en|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Nihon Sandai Jitsuroku}} (860–874) as "After-In Hayabusa Shrine," ascending to the Rank of {{ill|Jūshi-i Jō|ja|従四位上|lt=Junior Fourth Rank, Upper Grade}}.<ref>{{Harvid|隼社（平凡社）|1979th year }}</ref> It is listed as a major shrine in the {{ill|Engishiki|en|Engishiki|qid=Q1342448|lt=Engishiki}} (927), where it received offerings during the {{ill|Tsukinami-no-Matsuri|ja|月次祭}} and {{ill|Niiname-no-Matsuri|en|Niiname-no-Matsuri|qid=Q11501518|lt=Niinamesai}}.<ref>{{Harvid|隼社（平凡社）|1979th year }}</ref>
+
+Originally located in the Suzaku-in area, it was later moved to its current location in the Nagi Shrine grounds in 1918.<ref group="note">The shrine explanation panel states 1918, while other sources mention 1920.</ref>
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Hayabusa Shrine (Q135021848)]][[Category:Shikinaisha|Hayabusa Shrine (Q135021848)]][[Category:Shrines receiving Tsukinami-sai and Niiname-sai offerings]]
+[[Category:Shikinaisha in the Imperial Palace]]
+[[Category:Shinto shrines in Kyoto]]
+[[Category:History of Nakagyo-ku, Kyoto]]
+[[Category:Shikinaisha in the Imperial Palace]]
+[[Category:Buildings and structures in Nakagyo-ku, Kyoto]]
+[[Category:壬生 (京都市)]]
+
+[[Category:Git synced pages]]

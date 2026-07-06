@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Kumano Shrine (Q135070024)
+| native_name = 熊野神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kumano Shrine (Q135070024)
+| coordinates = {{coord|35.375213|135.131836}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kumano Gongen|ja|熊野権現|simple|Kumano Gongen|zh|熊野權現|qid=Q11568925|lt=Kumano Gongen}}
+}}
+
+{{nihongo|'''Kumano Shrine'''|熊野神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tango Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kumano Shrine (Q135070024)]][[Category:Shikinaisha|Kumano Shrine (Q135070024)]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135070024|grok=none|check_date=2026-05-31}}
+[[Category:Shikinaisha in Tango Province]]
+
+[[Category:Git synced pages]]

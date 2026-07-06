@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Ikuta Shrine (Q135187152)
+| native_name = 生田神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ikuta Shrine (Q135187152)
+| coordinates = {{coord|35.258035|136.870529}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ikuta Shrine'''|生田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Ikuta Shrine (Q135187152)]][[Category:Shikinaisha|Ikuta Shrine (Q135187152)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135187152|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Owari Province]]
+
+[[Category:Git synced pages]]

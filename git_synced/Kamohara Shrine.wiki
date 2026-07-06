@@ -1,0 +1,30 @@
+{{Expand Japanese|賀茂波爾神社}}
+
+{{Infobox religious building
+| name = Kamohara Shrine
+| native_name = 賀茂波爾神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamohara Shrine
+| coordinates = {{coord|35.043168|135.782807}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kamohara Shrine'''|賀茂波爾神社}} is a [[shinto shrine]] in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|lt=Engishiki Jinmyōchō|qid=Q11064932}}. It is located in {{ill|Yamashiro Province|cs|Provincie Jamaširo|de|Provinz Yamashiro|es|Provincia de Yamashiro|fa|ولایت یاماشیرو|fr|Province de Yamashiro|gl|Provincia de Yamashiro|hak|Yamashiro-koet|id|Provinsi Yamashiro|it|Yamashiro (provincia)|ja|山城国|ko|야마시로국|lt|Jamaširo žemė|ms|Yamashiro Province|nl|Yamashiro (provincie)|pt|Província de Yamashiro|ru|Ямасиро (провинция)|simple|Yamashiro Province|sk|Jamaširo (provincia)|sr|Провинција Јамаширо|tr|Yamashiro (vilayet)|uk|Провінція Ямашіро|wuu|山城国|zh|山城國|zh_min_nan|Yamasiro-kok|zh_yue|山城國|qid=Q749276|lt=Yamashiro Province}}.<ref name=":0" /> It is a candidate shrine (ronsha) for {{ill|Kamonohanino Shrine|qid=Q135038775}}.<ref name=":0" /> With the alternative candidate being {{ill|Hajio Shrine (Otagi district)|qid=Q135068695|lt=Hajio Shrine (Otagi district)}}.<ref name=":0" />
+
+It is a subshrine of {{ill|Shimogamo Shrine|ca|Santuari de Shimogamo|eo|Sanktejo Ŝimogamo|es|Santuario Shimogamo|eu|Shimogamo santutegia|fa|معبد شیموگامو|fi|Shimogamo-jinja|fr|Shimogamo-jinja (Kyoto)|id|Kuil Shimogamo|ja|賀茂御祖神社|ko|가모미오야 신사|la|Templum Simogamo|my|ရှိမိုဂမိုနတ်ကျောင်း|pl|Shimogamo-jinja|pt|Kamomioya-jinja|ru|Симогамо-дзиндзя|simple|Shimogamo Shrine|sl|Svetišče Šimogamo|th|ศาลเจ้าชิโมงาโมะ|tr|Shimogamo Tapınağı|zh|賀茂御祖神社|qid=Q701620|lt=Shimogamo Shrine}} and it has its own subshrine, an Inari Shrine. There is little more information available on it. 
+
+[[ja:賀茂波爾神社]]
+
+{{wikidata link|Q135045395|ja|賀茂波爾神社|grok=none|check_date=2026-05-30}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Kamohara Shrine]][[Category:Shikinaisha|Kamohara Shrine]][[Category:Shikinai Ronsha]]
+[[Category:Shikinai Subshrine]]
+[[Category:Shikinaisha in Yamashiro Province]]
+
+[[Category:Git synced pages]]

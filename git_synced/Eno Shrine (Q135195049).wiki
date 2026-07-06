@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Eno Shrine (Q135195049)
+| native_name = 江野神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Eno Shrine (Q135195049)
+| coordinates = {{coord|37.158382|138.086686}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Eno Shrine'''|江野神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Echigo Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Eno Shrine (Q135195049)]][[Category:Shikinaisha|Eno Shrine (Q135195049)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135195049|grok=none|check_date=2026-05-28}}
+[[Category:Shikinaisha in Echigo Province]]
+
+[[Category:Git synced pages]]

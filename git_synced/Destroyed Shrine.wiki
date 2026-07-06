@@ -1,0 +1,19 @@
+{{Infobox religious building
+| name = Destroyed Shrine
+| native_name = （廃絶）
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Destroyed Shrine
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Destroyed Shrine'''|（廃絶）}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Destroyed Shrine]][[Category:Shikinaisha|Destroyed Shrine]]
+{{wikidata link|Q135070118|grok=none|check_date=2026-05-28}}
+
+[[Category:Git synced pages]]

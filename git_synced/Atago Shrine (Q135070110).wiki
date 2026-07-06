@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Atago Shrine (Q135070110)
+| native_name = 愛宕神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Atago Shrine (Q135070110)
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Atago Gongen|lt=Atago Gongen|en|Atago Gongen|fr|Atago Gongen|it|Atago Gongen|ja|愛宕権現|ko|아타고곤겐|simple|Atago Gongen|zh|愛宕權現|qid=Q1101132}}
+}}
+
+{{nihongo|'''Atago Shrine'''|愛宕神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Atago Shrine (Q135070110)]][[Category:Shikinaisha|Atago Shrine (Q135070110)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135070110|grok=none|check_date=2026-05-28}}
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izumo Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Izumonoinamihi Shrine
+| native_name = 出雲乃伊波比神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Izumonoinamihi Shrine
+| coordinates = {{coord|36.106511|139.317755}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Izumonoinamihi Shrine'''|出雲乃伊波比神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Izumonoinamihi Shrine]][[Category:Shikinaisha|Izumonoinamihi Shrine]][[Category:Shikinaisha|Izumonoinamihi Shrine]][[Category:Shikinaisha in Musashi Province]]
+
+{{wikidata link|Q135069545|grok=none|check_date=2026-05-30}}
+[[Category:Test cases]]
+
+[[Category:Git synced pages]]

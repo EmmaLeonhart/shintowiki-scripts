@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Kanazakura Shrine (Q135193249)
+| native_name = 金桜神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kanazakura Shrine (Q135193249)
+| coordinates = {{coord|35.690385|138.663222}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kanazakura Shrine'''|金桜神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kai Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kanazakura Shrine (Q135193249)]][[Category:Shikinaisha|Kanazakura Shrine (Q135193249)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135193249|grok=none|check_date=2026-05-30}}
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Kai Province]]
+
+[[Category:Git synced pages]]

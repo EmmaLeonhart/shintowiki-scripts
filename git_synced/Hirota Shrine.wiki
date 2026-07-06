@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Hirota Shrine
+| native_name = 廣田神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hirota Shrine
+| coordinates = {{coord|37.381436|136.885109}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hirota Shrine'''|廣田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Noto Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hirota Shrine]][[Category:Shikinaisha|Hirota Shrine]][[Category:Shikinaisha in Noto Province]]
+
+{{wikidata link|Q135194909|grok=hirota_shrine|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

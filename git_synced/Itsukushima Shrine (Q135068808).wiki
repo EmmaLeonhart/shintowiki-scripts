@@ -1,0 +1,24 @@
+{{Infobox religious building
+| name = Itsukushima Shrine (Q135068808)
+| native_name = 厳島神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Itsukushima Shrine (Q135068808)
+| coordinates = {{coord|35.088174|135.761918}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Three Munakata Goddesses|ja|宗像三女神|ko|무나카타 삼여신|simple|Three Munakata goddesses|zh|宗像三女神|qid=Q10948069|lt=Three Goddesses of Munakata}}
+}}
+
+{{nihongo|'''Itsukushima Shrine'''|厳島神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamashiro Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Itsukushima Shrine (Q135068808)]][[Category:Shikinaisha|Itsukushima Shrine (Q135068808)]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135068808|grok=none|check_date=2026-05-29}}
+[[Category:Kanpei-sha]]
+[[Category:Shikinaisha in Yamashiro Province]]
+
+[[Category:Git synced pages]]

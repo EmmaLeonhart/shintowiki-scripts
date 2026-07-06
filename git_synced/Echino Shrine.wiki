@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Echino Shrine
+| native_name = 依遅神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Echino Shrine
+| coordinates = {{coord|35.731947|135.152198}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Echino Shrine'''|依遅神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tango Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Echino Shrine]][[Category:Shikinaisha|Echino Shrine]][[Category:Shikinaisha in Tango Province]]
+
+{{wikidata link|Q135040586|grok=none|check_date=2026-05-28}}
+
+[[Category:Git synced pages]]

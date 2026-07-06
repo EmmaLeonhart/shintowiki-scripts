@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Anashino Shrine (Q135040067)
+| native_name = 阿奈志神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Anashino Shrine (Q135040067)
+| coordinates = {{coord|35.522039|135.774265}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Anashino Shrine'''|阿奈志神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Wakasa Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Anashino Shrine (Q135040067)]][[Category:Shikinaisha|Anashino Shrine (Q135040067)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135040067|grok=none|check_date=2026-05-28}}
+[[Category:Shikinaisha in Wakasa Province]]
+
+[[Category:Git synced pages]]

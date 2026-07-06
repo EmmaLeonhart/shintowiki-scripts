@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kotoimi Shrine (Q135186623)
+| native_name = 事忌神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kotoimi Shrine (Q135186623)
+| coordinates = {{coord|34.778589|136.517014}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kotoimi Shrine'''|事忌神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kotoimi Shrine (Q135186623)]][[Category:Shikinaisha|Kotoimi Shrine (Q135186623)]][[Category:Shikinaisha in Ise Province]]
+
+{{wikidata link|Q135186623|grok=none|check_date=2026-05-31}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Iwai Shrine (Q135194258)
+| native_name = 祝神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Iwai Shrine (Q135194258)
+| coordinates = {{coord|36.563453|138.203402}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Iwai Shrine'''|祝神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Shinano Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Iwai Shrine (Q135194258)]][[Category:Shikinaisha|Iwai Shrine (Q135194258)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135194258|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Shinano Province]]
+
+[[Category:Git synced pages]]

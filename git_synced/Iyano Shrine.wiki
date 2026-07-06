@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Iyano Shrine
+| native_name = 伊也神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Iyano Shrine
+| coordinates = {{coord|35.300682|135.318611}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Iyano Shrine'''|伊也神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tanba Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Iyano Shrine]][[Category:Shikinaisha|Iyano Shrine]][[Category:Shikinaisha in Tanba Province]]
+
+{{wikidata link|Q135040543|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

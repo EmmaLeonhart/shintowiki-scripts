@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kachimino Shrine
+| native_name = 加知彌神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kachimino Shrine
+| coordinates = {{coord|35.478468|134.051881}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kachimino Shrine'''|加知彌神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Inaba Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kachimino Shrine]][[Category:Shikinaisha|Kachimino Shrine]][[Category:Shikinaisha in Inaba Province]]
+
+{{wikidata link|Q135040753|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

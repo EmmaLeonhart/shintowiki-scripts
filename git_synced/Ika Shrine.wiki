@@ -1,0 +1,19 @@
+{{Infobox religious building
+| name = Ika Shrine
+| native_name = 医家神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ika Shrine
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ika Shrine'''|医家神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Ika Shrine]][[Category:Shikinaisha|Ika Shrine]]
+{{wikidata link|Q135070293|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

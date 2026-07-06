@@ -1,0 +1,19 @@
+{{Infobox religious building
+| name = Hosoe Shrine
+| native_name = 細江神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hosoe Shrine
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hosoe Shrine'''|細江神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Hosoe Shrine]][[Category:Shikinaisha|Hosoe Shrine]]
+{{wikidata link|Q135069403|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Hakatano Shrine
+| native_name = 伯太神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hakatano Shrine
+| coordinates = {{coord|34.497035|135.437115}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hakatano Shrine'''|伯太神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hakatano Shrine]][[Category:Shikinaisha|Hakatano Shrine]][[Category:Shikinaisha in Izumi Province]]
+
+{{wikidata link|Q135039172|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

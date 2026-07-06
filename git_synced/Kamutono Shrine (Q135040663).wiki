@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kamutono Shrine (Q135040663)
+| native_name = 神門神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamutono Shrine (Q135040663)
+| coordinates = {{coord|35.460298|134.721365}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kamutono Shrine'''|神門神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kamutono Shrine (Q135040663)]][[Category:Shikinaisha|Kamutono Shrine (Q135040663)]][[Category:Shikinaisha in Tajima Province]]
+
+{{wikidata link|Q135040663|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Kamogami Shrine (Q135070276)
+| native_name = 鴨神社 (東みよし町)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamogami Shrine (Q135070276)
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kamogami Shrine'''|鴨神社 (東みよし町)}} is a [[shinto shrine]] in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|lt=Engishiki Jinmyōchō|qid=Q11064932}}. It is located in {{ill|Awa Province|be|Ава (правінцыя, Сікоку)|cs|Provincie Awa (Tokušima)|de|Provinz Awa (Tokushima)|en|Awa Province (Tokushima)|es|Provincia de Awa (Tokushima)|fa|ولایت آوا|fr|Province d'Awa (Tokushima)|gl|Provincia de Awa, Tokushima|id|Provinsi Awa (Tokushima)|it|Awa (provincia, Tokushima)|ja|阿波国|ko|아와국 (난카이도)|lt|Avos žemė (Tokušima)|nl|Awa (Tokushima)|pt|Província de Awa (Tokushima)|ru|Ава (Сикоку)|simple|Awa Province (Tokushima)|sk|Awa (provincia, Tokušima)|sr|Провинција Ава (Шикоку)|tr|Awa (vilayet, Tokushima)|uk|Провінція Ава (Шікоку)|zh|阿波國|zh_min_nan|Awa-kok (Nankaidô)|lt=Awa Province|qid=Q907457}}.
+
+[[Category:Wikidata generated shikinaisha pages|Kamogami Shrine (Q135070276)]][[Category:Shikinaisha|Kamogami Shrine (Q135070276)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135070276|grok=none|check_date=2026-05-30}}
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+
+[[Category:Git synced pages]]

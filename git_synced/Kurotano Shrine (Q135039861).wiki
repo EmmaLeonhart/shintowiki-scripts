@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Kurotano Shrine (Q135039861)
+| native_name = 黒田神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kurotano Shrine (Q135039861)
+| coordinates = {{coord|35.514226|136.214084}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kurotano Shrine'''|黒田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kurotano Shrine (Q135039861)]][[Category:Shikinaisha|Kurotano Shrine (Q135039861)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135039861|grok=none|check_date=2026-05-31}}
+[[Category:Shikinaisha in Ōmi Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,19 @@
+{{Infobox religious building
+| name = Kamishiro Shrine
+| native_name = 神代神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamishiro Shrine
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kamishiro Shrine'''|神代神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Kamishiro Shrine]][[Category:Shikinaisha|Kamishiro Shrine]]
+{{wikidata link|Q135070132|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Kumano Shrine (Q135195502)
+| native_name = 久麻神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kumano Shrine (Q135195502)
+| coordinates = {{coord|35.552111|134.798713}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kumano Shrine'''|久麻神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kumano Shrine (Q135195502)]][[Category:Shikinaisha|Kumano Shrine (Q135195502)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135195502|grok=none|check_date=2026-05-31}}
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Tajima Province]]
+
+[[Category:Git synced pages]]

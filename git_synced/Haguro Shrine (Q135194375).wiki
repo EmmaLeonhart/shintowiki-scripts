@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Haguro Shrine (Q135194375)
+| native_name = 羽黒神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Haguro Shrine (Q135194375)
+| coordinates = {{coord|38.897888|141.55003}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Haguro Gongen|ja|羽黒権現|qid=Q24898144|lt=Haguro Gongen}}
+}}
+
+{{nihongo|'''Haguro Shrine'''|羽黒神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Haguro Shrine (Q135194375)]][[Category:Shikinaisha|Haguro Shrine (Q135194375)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135194375|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Mutsu Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Katano Shrine (Q135041102)
+| native_name = 加多神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Katano Shrine (Q135041102)
+| coordinates = {{coord|35.329621|132.966488}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Katano Shrine'''|加多神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Katano Shrine (Q135041102)]][[Category:Shikinaisha|Katano Shrine (Q135041102)]][[Category:Shikinaisha|Katano Shrine (Q135041102)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135041102|grok=none|check_date=2026-05-30}}
+[[Category:Shikinaisha in Izumo Province]]
+
+[[Category:Git synced pages]]

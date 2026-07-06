@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kamo Shrine (Q135070168)
+| native_name = 加茂神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamo Shrine (Q135070168)
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kamo-wake-ikazuchi-no-Kami|lt=Kamo Wake-ikazuchi|en|Kamo Wake-ikazuchi|ja|賀茂別雷命|simple|Kamo Wake-ikazuchi|zh|賀茂別雷命|qid=Q11634943}}
+}}
+
+{{nihongo|'''Kamo Shrine'''|加茂神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Kamo Shrine (Q135070168)]][[Category:Shikinaisha|Kamo Shrine (Q135070168)]][[Category:Kamo shrine]]
+
+{{wikidata link|Q135070168|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

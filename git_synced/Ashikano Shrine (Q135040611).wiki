@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Ashikano Shrine (Q135040611)
+| native_name = 足鹿神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ashikano Shrine (Q135040611)
+| coordinates = {{coord|35.232116|134.785057}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ashikano Shrine'''|足鹿神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Ashikano Shrine (Q135040611)]][[Category:Shikinaisha|Ashikano Shrine (Q135040611)]][[Category:Shikinaisha|Ashikano Shrine (Q135040611)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135040611|grok=none|check_date=2026-05-28}}
+[[Category:Shikinaisha in Tajima Province]]
+
+[[Category:Git synced pages]]

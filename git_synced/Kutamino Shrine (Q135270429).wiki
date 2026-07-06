@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Kutamino Shrine (Q135270429)
+| native_name = 久多弥神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kutamino Shrine (Q135270429)
+| coordinates = {{coord|35.408941|133.041811}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kutamino Shrine'''|久多弥神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kutamino Shrine (Q135270429)]][[Category:Shikinaisha|Kutamino Shrine (Q135270429)]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135070092|grok=none|check_date=2026-05-31}}
+[[Category:Shikinaisha in Izumo Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Ahano Shrine
+| native_name = 粟神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ahano Shrine
+| coordinates = {{coord|34.829262|135.816392}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ahano Shrine'''|粟神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamashiro Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Ahano Shrine]][[Category:Shikinaisha|Ahano Shrine]][[Category:Shikinaisha in Yamashiro Province]]
+
+{{wikidata link|Q135038804|grok=none|check_date=2026-05-28}}
+
+[[Category:Git synced pages]]

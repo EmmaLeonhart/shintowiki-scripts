@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Komano Shrine
+| native_name = 許麻神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Komano Shrine
+| coordinates = {{coord|34.626158|135.586008}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Komano Shrine'''|許麻神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Komano Shrine]][[Category:Shikinaisha|Komano Shrine]][[Category:Shikinaisha in Kawachi Province]]
+
+{{wikidata link|Q135039144|grok=none|check_date=2026-05-31}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,19 @@
+{{Infobox religious building
+| name = Ishii Shrine (Q135069999)
+| native_name = 石井神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ishii Shrine (Q135069999)
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ishii Shrine'''|石井神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Ishii Shrine (Q135069999)]][[Category:Shikinaisha|Ishii Shrine (Q135069999)]]
+{{wikidata link|Q135069999|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

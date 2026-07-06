@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kunitsu Shrine
+| native_name = 国神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kunitsu Shrine
+| coordinates = {{coord|34.669612|133.903246}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kunitsu Shrine'''|国神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bizen Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kunitsu Shrine]][[Category:Shikinaisha|Kunitsu Shrine]][[Category:Shikinaisha in Bizen Province]]
+
+{{wikidata link|Q135041210|grok=none|check_date=2026-05-31}}
+
+[[Category:Git synced pages]]

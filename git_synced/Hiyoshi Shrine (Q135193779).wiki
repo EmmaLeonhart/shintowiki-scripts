@@ -1,0 +1,24 @@
+{{Infobox religious building
+| name = Hiyoshi Shrine (Q135193779)
+| native_name = 日吉神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hiyoshi Shrine (Q135193779)
+| coordinates = {{coord|35.43993|136.033158}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Oyamakui no Kami|ja|大山咋神|simple|Oyamakui no Kami|zh|大山咋神|qid=Q10935105|lt=Ōyamakui}}
+}}
+
+{{nihongo|'''Hiyoshi Shrine'''|日吉神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hiyoshi Shrine (Q135193779)]][[Category:Shikinaisha|Hiyoshi Shrine (Q135193779)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135193779|grok=none|check_date=2026-05-29}}
+[[Category:Sannō shrine]]
+[[Category:Shikinaisha in Ōmi Province]]
+
+[[Category:Git synced pages]]

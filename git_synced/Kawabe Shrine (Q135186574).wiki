@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kawabe Shrine (Q135186574)
+| native_name = 川併神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kawabe Shrine (Q135186574)
+| coordinates = {{coord|34.669392|136.467752}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kawabe Shrine'''|川併神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kawabe Shrine (Q135186574)]][[Category:Shikinaisha|Kawabe Shrine (Q135186574)]][[Category:Shikinaisha in Ise Province]]
+
+{{wikidata link|Q135186574|grok=none|check_date=2026-05-31}}
+
+[[Category:Git synced pages]]

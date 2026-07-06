@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Ishigami Shrine (Q135194384)
+| native_name = 石上神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ishigami Shrine (Q135194384)
+| coordinates = {{coord|38.384608|141.176383}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ishigami Shrine'''|石上神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Ishigami Shrine (Q135194384)]][[Category:Shikinaisha|Ishigami Shrine (Q135194384)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135194384|grok=none|check_date=2026-05-29}}
+[[Category:Shikinaisha in Mutsu Province]]
+
+[[Category:Git synced pages]]

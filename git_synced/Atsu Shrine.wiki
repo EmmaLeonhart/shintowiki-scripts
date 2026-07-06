@@ -1,0 +1,19 @@
+{{Infobox religious building
+| name = Atsu Shrine
+| native_name = 阿津神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Atsu Shrine
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Atsu Shrine'''|阿津神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+[[Category:Wikidata generated shikinaisha pages|Atsu Shrine]][[Category:Shikinaisha|Atsu Shrine]]
+{{wikidata link|Q135070314|grok=none|check_date=2026-05-28}}
+
+[[Category:Git synced pages]]

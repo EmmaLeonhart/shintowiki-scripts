@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Kushida Shrine (Q135186410)
+| native_name = 櫛田神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kushida Shrine (Q135186410)
+| coordinates = {{coord|34.549851|136.588784}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kushida Shrine'''|櫛田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kushida Shrine (Q135186410)]][[Category:Shikinaisha|Kushida Shrine (Q135186410)]][[Category:Shikinai Shōsha]]
+
+{{wikidata link|Q135186410|grok=none|check_date=2026-05-31}}
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Ise Province]]
+
+[[Category:Git synced pages]]

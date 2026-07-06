@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kaina Shrine (Q135193244)
+| native_name = 甲斐奈神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kaina Shrine (Q135193244)
+| coordinates = {{coord|35.661166|138.578129}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kaina Shrine'''|甲斐奈神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kai Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kaina Shrine (Q135193244)]][[Category:Shikinaisha|Kaina Shrine (Q135193244)]][[Category:Shikinaisha in Kai Province]]
+
+{{wikidata link|Q135193244|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

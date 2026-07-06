@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Eda Shrine (Q135186746)
+| native_name = 江田神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Eda Shrine (Q135186746)
+| coordinates = {{coord|34.998942|136.588937}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Eda Shrine'''|江田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Eda Shrine (Q135186746)]][[Category:Shikinaisha|Eda Shrine (Q135186746)]][[Category:Shikinaisha in Ise Province]]
+
+{{wikidata link|Q135186746|grok=none|check_date=2026-05-28}}
+
+[[Category:Git synced pages]]

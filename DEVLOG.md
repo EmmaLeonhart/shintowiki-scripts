@@ -46,6 +46,15 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — Property-dump strip: FULL rollout to all 4,608 shikinaisha pages (Emma "barrel now")
+
+Emma "barrel now" → went all-in: pointed `git_sync_strip_property_dumps.py` at the entire
+`[[Category:Wikidata generated shikinaisha pages]]` (4,608) instead of only the tagged subset (added
+a `--category` arg). Dry-run first: 0 gutted, 0 flagged, 62 had no property dump. Applied: 1,728 new
+pages (+1 modified) → git_synced/ (the rest were already present with identical stripped content).
+The repo-wins git-synced-sync pushes them to the wiki 100/run. Every Wikidata-generated shikinaisha
+page now strips to infobox + real article + categories with the property dump gone.
+
 ## 2026-07-06 — Strip Wikidata property dumps from 910 shikinaisha pages → git_synced (Emma, urgent)
 
 Emma: the Wikidata-generated shikinaisha pages carry a raw property dump (a run of `== <property>

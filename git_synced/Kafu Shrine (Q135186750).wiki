@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Kafu Shrine (Q135186750)
+| native_name = 加富神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kafu Shrine (Q135186750)
+| coordinates = {{coord|34.941112|136.542146}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kafu Shrine'''|加富神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kafu Shrine (Q135186750)]][[Category:Shikinaisha|Kafu Shrine (Q135186750)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135186750|grok=none|check_date=2026-05-30}}
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Ise Province]]
+
+[[Category:Git synced pages]]

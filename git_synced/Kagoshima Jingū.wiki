@@ -1,0 +1,373 @@
+'''Kagoshima Shrine''' is a shrine in the [[Engishiki Jinmyōchō]]. It is located in [[Ōsumi Province]].
+
+== Shikinaisha (式内社) ==
+{| class="wikitable sortable"
+! District !! Name !! Funding&nbsp;category !! Rank !! Notes !! Same&nbsp;as !! Co-ords !! Shrine&nbsp;DB
+|-
+| {{ill|Kuwabara district|ja|桑原郡|pl|Powiat Kuwabara|zh|桑原郡|qid=Q11112846}} || {{ill|Kagoshima Jingū|lt=Kagoshima Jingū|en|Kagoshima Shrine|ja|鹿児島神宮|commons|Category:Kagoshima-jingu|fr|Kagoshima-jingū|zh|鹿兒島神宮|qid=Q704695}} || {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei|comment=categorized}} || {{ill|Shikinai Taisha|qid=Q134917288}} || {{ill|Ichinomiya|qid=Q1656379|lt=ichinomiya}} || — || {{coord|31.753712|130.737873|display=inline}} || [https://jmapps.ne.jp/kokugakuin/det.html?data_id=183328 DB]
+|}
+
+{{wikidata link|Q704695|co|commons:Category:Kagoshima-jingu|en|Kagoshima Shrine|fr|Kagoshima-jingū|ja|鹿児島神宮|zh|鹿兒島神宮|en|Kagoshima Jingu|grok=none|check_date=2026-05-30}}
+{{Infobox religious building
+| name = Kagoshima-jingū<br>鹿児島神宮
+| image = Kagoshimajingu Chokushiden.JPG
+| caption = Imperial Messenger's Hall (ICP)
+{{Infobox mapframe|tyep=shape|zoom=14|frame-width=240}}
+| map_type = Japan Kagoshima Prefecture#Japan
+| map_alt = 
+| coordinates = {{Coord|31|45|13.37|N|130|44|16.3|E|region:JP-46}}
+| map_relief  = 1
+| map_size = 
+| map_caption = Kagoshima-jingū
+| religious_affiliation = [[Shinto]]
+| type = [[Hachiman]]
+| deity = [[Hoori]]<br>{{ill|Toyotama-hime|en|Toyotama-hime|qid=Q2329261|qid=Q2329261|lt=Toyotama-hime}}<br>{{ill|Emperor Chūai|ar|الإمبراطور تشواي|arz|الامبراطور تشواى|azb|چوای (ایمپیراتور)|ca|Chūai|cs|Čúai|de|Chūai|es|Chūai Tennō|fa|امپراتور چوآی|fr|Chūai|hr|Chūai|hu|Csúai japán császár|id|Kaisar Chūai|it|Chūai|ja|仲哀天皇|ka|ტიუაი|ko|주아이 천황|nl|Chuai|pl|Chūai|pt|Chuai|ru|Император Тюай|sh|Car Chūai|simple|Emperor Chūai|sl|Cesar Čuaj|sv|Chuai|th|จักรพรรดิชูไอ|tl|Emperador Chūai|tr|Chūai (imparator)|uk|Імператор Тюай|uz|Imperator Chūai|vi|Thiên hoàng Chūai|zh|仲哀天皇|zh_min_nan|Tyûai Thian-hông|zh_yue|仲哀天皇|qid=Q179971|lt=Emperor Chūai}}<br>{{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}<br>{{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}
+| founded_by = 
+| established = 
+| date_destroyed = 
+| location = 2496, Hayato-chō Uchi, Kirishima-shi, Kagoshima-ken 899-5116
+| website = 
+| architecture_style = {{ill|East Asian hip-and-gable roof|en|East Asian hip-and-gable roof|qid=Q855025|lt=''irimoya-zukuri''}}
+| festival = August 15 (lunar)
+| leadership = 
+| footnotes          = {{box|background=white|align=center|wide=yes|border size=3px|border color=pink|text align=center|{{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}}}} }}
+
+{{nihongo|'''Kagoshima Shrine'''|鹿児島神宮|''Kagoshima-jingū''}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in the {{ill|Hayato, Kagoshima|en|Hayato, Kagoshima|qid=Q5686146|lt=Hayatomachi-uchi}} neighborhood of the city of {{ill|Kirishima, Kagoshima|en|Kirishima, Kagoshima|qid=Q858352|lt=Kirishima}}, {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}, {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17|lt=Japan}}.  It is the ''[[ichinomiya]]'' of former  {{ill|Ōsumi Province|en|Ōsumi Province|qid=Q981002|lt=Ōsumi Province}}. The main festival of the shrine are held annually on August 15 by the [[Japanese Lunisolar Calendar|Lunar calendar]].<ref>{{cite book |last1=Shibuya |first1=Nobuhiro |title=Shokoku jinja Ichinomiya Ninomiya San'nomiya |date=2015 |publisher= Yamakawa shuppansha |isbn=978-4634150867 |language=Japanese}}</ref> Historically it was also known by the names {{nihongo| '''Ōsumi Shō-Hachiman-gū''' |大隅正八幡宮||}} and {{nihongo| '''Kokubu Hachiman-gū'''|国分八幡宮||}}. The shrine precincts was designated as a [[:en:Historic Sites of Japan|National Historic Site]] in 1972.<ref name="Bunka1">{{cite web |url=https://bunka.nii.ac.jp/heritages/detail/280010|title= 大隅正八幡宮境内及び社家跡|language=Japanese |publisher=[[Agency for Cultural Affairs]] |access-date=August 20, 2020}}</ref>
+
+== Enshrined ''Kami'' ==
+The ''[[kami]]'' enshrined at Kagoshima-jingū are:<ref name=":3">{{Cite web |title=由緒について - 鹿児島神宮 |url=https://kagoshima-jingu.jp/yuisyo.php |access-date=2022-09-28 |website=kagoshima-jingu.jp}}</ref>
+
+; Main shrine
+* {{nihongo|'''[[Hoori|Hikohohodemi no Mikoto]]'''|天津日高彦火火出見尊|}}, son of [[Ninigi-no-Mikoto]] and [[Konohanasakuya-hime]] 
+* {{nihongo|'''{{ill|Toyotama-hime|en|Toyotama-hime|qid=Q2329261|qid=Q2329261|lt=Toyotama-hime}}'''| 豊玉比売命|}}, wife of Hoori, paternal grandmother of Emperor Jimmu
+
+; Subsidiary shrines
+
+* {{ill|Emperor Chūai|ar|الإمبراطور تشواي|arz|الامبراطور تشواى|azb|چوای (ایمپیراتور)|ca|Chūai|cs|Čúai|de|Chūai|es|Chūai Tennō|fa|امپراتور چوآی|fr|Chūai|hr|Chūai|hu|Csúai japán császár|id|Kaisar Chūai|it|Chūai|ja|仲哀天皇|ka|ტიუაი|ko|주아이 천황|nl|Chuai|pl|Chūai|pt|Chuai|ru|Император Тюай|sh|Car Chūai|simple|Emperor Chūai|sl|Cesar Čuaj|sv|Chuai|th|จักรพรรดิชูไอ|tl|Emperador Chūai|tr|Chūai (imparator)|uk|Імператор Тюай|uz|Imperator Chūai|vi|Thiên hoàng Chūai|zh|仲哀天皇|zh_min_nan|Tyûai Thian-hông|zh_yue|仲哀天皇|qid=Q179971|lt=Emperor Chūai}} (帯中比子尊)
+* {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}} (息長帯比売命) - Wife of Emperor Chūai.
+* {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}} (品陀和気尊)
+* [[Nakatsuhime]] (中比売命) - Wife of Emperor Ōjin.
+
+{| class="wikitable"
+!Deity
+!{{ill|Kagoshima Shrine (Kagoshima City)|ja|鹿児島神社 (鹿児島市)}}
+!{{ill|Kagoshima Jingū|en|Kagoshima Shrine|qid=Q704695|lt=Kagoshima Jingū}}
+!{{ill|Kagoshima Shrine (Tarumizu City)|ja|鹿児島神社 (垂水市)}}
+|-
+|{{ill|Hoori|en|Hoori|qid=Q1051960|lt=Hikohodemi-no-Mikoto}}
+|yes<ref name="Shrine Association2">[http://www.kagojinjacho.or.jp/search/kagoshima/kagoshima/post-246.html Kagoshima Shrine] - Kagoshima Prefecture Shrine Association, accessed January 2, 2012.</ref>
+|yes<ref name=":3" />
+|yes
+|-
+|{{ill|Toyotama-hime|en|Toyotama-hime|qid=Q2329261|lt=Toyotamahime-no-Mikoto}}
+|yes<ref name="Shrine Association2" />
+|yes<ref name=":3" />
+|yes
+|-
+|{{ill|Watatsumi|en|Watatsumi|qid=Q1474187|lt=Watatsumi}}
+|yes<ref name="Shrine Association2" />
+|no
+|no
+|-
+|{{ill|Toyouke-hime|ja|豊受大神|lt=Toyouke Ōmikami|12=simple|13=User:Immanuelle/Toyouke-no-Ōmikami|13=User:Immanuelle/Toyouke-hime|ja_comment=jawiki redirects to トヨウケビメ|comment=changed title based on wikidata|qid=Q2983724}}
+|yes<ref name="Shrine Association2" />
+|no
+|no
+|-
+|{{ill|Emperor Chūai|ar|الإمبراطور تشواي|arz|الامبراطور تشواى|azb|چوای (ایمپیراتور)|ca|Chūai|cs|Čúai|de|Chūai|es|Chūai Tennō|fa|امپراتور چوآی|fr|Chūai|hr|Chūai|hu|Csúai japán császár|id|Kaisar Chūai|it|Chūai|ja|仲哀天皇|ka|ტიუაი|ko|주아이 천황|nl|Chuai|pl|Chūai|pt|Chuai|ru|Император Тюай|sh|Car Chūai|simple|Emperor Chūai|sl|Cesar Čuaj|sv|Chuai|th|จักรพรรดิชูไอ|tl|Emperador Chūai|tr|Chūai (imparator)|uk|Імператор Тюай|uz|Imperator Chūai|vi|Thiên hoàng Chūai|zh|仲哀天皇|zh_min_nan|Tyûai Thian-hông|zh_yue|仲哀天皇|qid=Q179971|lt=Emperor Chūai}}
+|no
+|yes<ref name=":3" />
+|no
+|-
+|{{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Empress Jingū}}
+|no
+|yes<ref name=":3" />
+|no
+|-
+|{{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Emperor Ōjin}}
+|no
+|yes<ref name=":3" />
+|no
+|-
+|[[Nakatsuhime]]
+|no
+|yes<ref name=":3" />
+|no
+|-
+|{{ill|Tamayori-hime (mother of Jimmu)|en|Tamayori-hime (mother of Jimmu)|qid=Q3082751|lt=Tamayoribime-no-Mikoto}}
+|no
+|no
+|yes
+|-
+|{{ill|Sarutahiko Ōkami|en|Sarutahiko Ōkami|qid=Q3090037|lt=Shioshiji-no-Okina, Sarutahiko-no-Mikoto}}
+|no
+|no
+|yes
+|-
+|{{ill|Emperor Tenji|ar|الإمبراطور تينجي|azb|تنجی (ایمپیراتور)|ca|Tenji|ckb|ئیمپراتۆر تێنجی|cs|Tendži|de|Tenji|es|Tenji Tennō|fa|امپراتور تنجی|fi|Tenji|fr|Tenji (empereur)|hak|Tenji Thiên-fòng|he|טנג'י|hu|Tendzsi japán császár|id|Kaisar Tenji|it|Tenji|ja|天智天皇|ka|ტენძი|ko|덴지 천황|nl|Tenji|pl|Tenji|pt|Tenji|ru|Император Тэндзи|sh|Car Tenji|simple|Emperor Tenji|sl|Cesar Tendži|sr|Car Tenji|sv|Tenji|th|จักรพรรดิเท็นจิ|tl|Emperador Tenji|tr|Tenji (imparator)|uk|Імператор Тендзі|uz|Imperator Tenji|vi|Thiên hoàng Tenji|wuu|天智天皇|yo|Emperor Tenji|zh|天智天皇|zh_min_nan|Tenzi Thian-hông|zh_yue|天智天皇|qid=Q314802|lt=Emperor Tenji}}
+|no
+|no
+|yes
+|-
+|Ōmiya-hime
+|no
+|no
+|yes
+|-
+|
+|
+|
+|
+|}
+
+==History==
+According to the shrine's legend, the Kagoshima Jingū during the [[Age of the Gods]], as Takachiho Palace, the residence of [[Hoori|Hikohohodemi no Mikoto]] (彦火火出見尊), the third and youngest son of [[Ninigi-no-Mikoto]] and [[Konohanasakuya-hime]] and ancestor of {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}}. It was moved to its current location in 708, and Setsusha Sekitai-gu (Ishitai Shrine) is currently located on the former site. Takaya-no-yamanoe ''misasagi'', said to be the mausoleum of Hikohohodemi no Mikoto, is located 13 kilometers northwest of the shrine.
+
+It is also said that this former shrine is where the [[Hachiman]] deity appeared in the fifth year of {{ill|Emperor Kinmei|en|Emperor Kinmei|qid=Q329792|lt=Emperor Kinmei}}'s reign (544), which is why the shrine was called the Sho-Hachiman-gū, or "true Hachiman shrine". Per the ''Hachiman Godokun'' (八幡愚童訓), when Ōhirume, the daughter of the great king of {{ill|Chen dynasty|en|Chen dynasty|qid=Q62454|lt=Chen}}, was seven years old, the light of the morning sun pierced her chest, and she became pregnant. The prince was born, and the royal subjects, suspicious of him, put him on an empty ship and set it afloat on the ocean, hoping to claim the area where the ship was located as their territory. The prince landed in Ōsumi and was named "Hachiman" by {{ill|Emperor Keitai|en|Emperor Keitai|qid=Q349277|lt=Emperor Keitai}}, although some other accounts state that the princess was on the ship, and gave birth after his arrived in Ōsumi.<ref>{{Cite web |title=神社啓蒙 7巻目録1巻. [5] - 国立国会図書館デジタルコレクション |url=https://dl.ndl.go.jp/info:ndljp/pid/2556086 |access-date=2022-09-28 |website=dl.ndl.go.jp |language=ja}}</ref> Per the ''[[:en:Konjaku Monogatari|Konjaku Monogatari]]'', Hachiman later relocated to [[:en:Usa, Oita|Usa]] and eventually to [[Iwashimizu Hachimangū|Iwashimizu]]. For centuries there was a rivalry between [[Usa Jingū|Usa Hachimangū]] and Kagoshima Jingū over which one had the legitimate deity, and Usa Hachimangū secretly sent messengers to Kagoshima sent 15 (or even 14) messengers to burn down Kagoshima Jingū. As that happened, the character for "Shō-Hachiman(正八幡)" appeared in the black smoke rising from the burning shrine. These messengers were so frightened that they fled to {{ill|Mizobe, Kagoshima|en|Mizobe, Kagoshima|qid=Q11564513|lt=Mizobe}}, where they were punished by the gods and 13 died one after another. The local people then took pity on those who had died, and built mounds at the places where they had fallen. These mounds are located in the northern part of the Kokubu Plain. The Jusanzukabara (Thirteen Mounds) Historic Site Park derives its name from this legend and is located in the northeastern part of the area, near {{ill|Kagoshima Airport|en|Kagoshima Airport|qid=Q1156310|lt=Kagoshima Airport}}.
+
+The first mention of the shrine in reliable historical records is in the [[Engishiki]], compiled during the reign of {{ill|Emperor Daigo|en|Emperor Daigo|qid=Q329753|lt=Emperor Daigo}}, which lists it as the only ''Shikinai Taisha'' in southern Kyushu (Hyuga, Osumi, and Satsuma). During the {{ill|Kenkyū|en|Kenkyū|qid=Q1193933|lt=Kenkyū}} era (1190 - 1199), the shrine's territory was over 2,500 [[Japanese units of measurement#area|chō]], and it held estates with 1,000 ''{{ill|Koku|en|Koku|qid=Q855048|lt=Koku}}'' until the end of the {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}}.<ref name=":0">{{Cite web |title=鹿児島神宮 {{!}} 鹿児島県神社庁 |url=https://www.kagojinjacho.or.jp/tanbou/28/ |access-date=2022-09-29 |website=www.kagojinjacho.or.jp}}</ref> The shrine was patronized by the {{ill|Shimazu clan|en|Shimazu clan|qid=Q1061406|lt=Shimazu clan}} of {{ill|Satsuma Domain|en|Satsuma Domain|qid=Q676187|lt=Satsuma Domain}} from the {{ill|Sengoku period|ar|فترة سينغوكو|arz|فتره سينجوكو|be|Перыяд Сэнгоку|bg|Сенгоку|bn|সেনগোকু যুগ|bo|སེན་གོའི་དུས་མཚམས་|ca|Període Sengoku|ckb|سەردەمی سێنگۆکو|cs|Období Sengoku|de|Sengoku-Zeit|eo|Epoko Sengoku|es|Período Sengoku|et|Sengoku ajastu|eu|Sengoku aroa|fa|دوره سنگوکو|fi|Sengoku-kausi|fr|Époque Sengoku|ga|Tréimhse Sengoku|glk|سنگؤکۊ زمات|he|תקופת סנגוקו|hu|Hadakozó fejedelemségek kora (Japán)|id|Zaman Sengoku|is|Sengoku-öldin|it|Periodo Sengoku|ja|戦国時代 (日本)|ka|სენგოკუს პერიოდი|kk|Сэнгоку дәуірі|ko|센고쿠 시대|lt|Sengoku laikotarpis|ms|Zaman Sengoku|nl|Sengokuperiode|no|Sengoku-perioden|pl|Sengoku (okres)|pt|Período Sengoku|ro|Perioada Sengoku|ru|Период Сэнгоку|sh|Sengoku razdoblje|simple|Sengoku period|sk|Obdobie Sengoku|sq|Periudha Sengoku|sr|Сенгоку период|sv|Sengoku|th|ยุคเซ็งโงกุ|tl|Panahong Sengoku|tr|Sengoku Dönemi|uk|Період Сенґоку|ur|سینگوکو دور|uz|Sengoku davri|vi|Thời kỳ Chiến Quốc (Nhật Bản)|wuu|战国时代（日本）|zh|战国时代 (日本)|zh_min_nan|Sengoku sî-tāi|zh_yue|戰國時代 (日本)|qid=Q204023|lt=Sengoku period}}. 
+
+In 1871, under the {{ill|Government of Meiji Japan|en|Government of Meiji Japan|qid=Q1322181|lt=Government of Meiji Japan}}'s {{ill|State Shinto|en|State Shinto|qid=Q1197248|lt=State Shinto}} [[Modern system of Ranked Shinto shrines|Ranked Shinto shrines]], the Kagoshima Jingū was initially Ranked as an {{nihongo|National shrine, 2nd Rank|国幣中社|Kokuhei Chūsha}}. It was promoted to a {{nihongo|Imperial shrine, 2nd Rank|官幣中社|Kanpei Chūsha}} in 1874 and to a {{nihongo|Imperial shrine, 1st Rank|官幣大社|Kanpei Taisha}} in 1895. After the war, the shrine became a part of the [[Association of Shinto Shrines]].<ref name="Shiseki">{{cite book |last1=Isomura |first1=Yukio |last2=Sakai |first2=Hideya |title=(国指定史跡事典) National Historic Site Encyclopedia |date=2012 |publisher=学生社 |isbn=4311750404}}{{in lang|ja}}</ref>
+
+[[Archaeological excavation]]s have been carried out since 1994. Within the current precincts a large number of shards of Chinese and Thai ceramics from the 14th to the first half of the 15th century have been found, indicating that the shrine was involved in overseas trade with mainland Asia from the {{ill|Kamakura period|en|Kamakura period|qid=Q236205|lt=Kamakura period}} to the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}}.<ref name="Bunka1"/>
+
+The National Historic Site designation also includes the sites of four houses of the hereditary priesthood of the shrine. Each of these sites was a fortified mansion, with wide and deep moats and earthen ramparts. Ceramic shards from China and Southeast Asia have also been found in each of these locations, which were inhabited continuously from the mid-{{ill|Heian period|ar|فترة هييآن|ast|Periodu Heian|az|Heyan dövrü|bcl|Panahon ni Heian|bg|Хеян|bn|হেইআন যুগ|br|Marevezh Heian|ca|Període Heian|cs|Období Heian|de|Heian-Zeit|el|Περίοδος Χεϊάν|eo|Epoko Heian|es|Período Heian|eu|Heian aroa|fa|دوره هی‌آن|fi|Heian-kausi|fr|Époque de Heian|gl|Período Heian|he|תקופת הייאן|hi|हेआन काल|hr|Heian (razdoblje)|hu|Heian-kor|hy|Հեիան ժամանակաշրջան|id|Zaman Heian|it|Periodo Heian|ja|平安時代|ka|ჰეიანის პერიოდი|ko|헤이안 시대|la|Aevum Heian|lt|Hejano laikotarpis|mn|Хэйан|mr|हियन कालावधी|ms|Zaman Heian|my|ဟဲအိအန်ခေတ်|nl|Heianperiode|nn|Heian|no|Heian-perioden|oc|Epòca d'Heian|pl|Heian|ps|هېيان دوره|pt|Período Heian|ro|Perioada Heian|ru|Период Хэйан|sh|Heianski period|simple|Heian period|sk|Obdobie Heian|sl|Obdobje Heian|sq|Periudha Heian|sr|Хеиан период|sv|Heian|ta|ஹையன் காலகட்டம்|th|ยุคเฮอัง|tl|Panahong Heian|tr|Heian Dönemi|uk|Період Хейан|vi|Thời kỳ Heian|war|Panahon Heian|wuu|平安时代|zh|平安时代|zh_classical|平安朝|zh_min_nan|Heian sî-tāi|zh_yue|平安時代|qid=Q193292|lt=Heian period}} into modern times.<ref name="Bunka1"/>
+
+<gallery>
+Kagoshima-jingu, honden.jpg|Honden (ICP)
+Kagoshima-jingu Auxiliary Auxiliary-Shrine Shisyo-jinja 001.jpg|Shisho Jinja (ICP)
+Kagoshima-jingu Decoration of Shrine Buildings 001.jpg|Decoration on Chokushi-den (ICP)
+</gallery>
+
+===National Important Cultural Properties===
+*{{nihongo|'''Honden'''|本殿|Main Shrine}}, {{nihongo|'''Chokushi-den'''|勅使殿|Imperial Messenger Hall}}, and  {{nihongo|'''Sessha Shisho Jinja Honden'''|摂社四所神社本殿|Sub-shrine Shisho Jinja Main Shrine}}, constructed in 1755 by Shimazu Shigetoshi and completed by Shimazu Shigehide. Designated {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Properties}} in 2022<ref>{{Cite web |last=霧島市 |title=国宝・重要文化財(建造物)の指定について |url=http://www.city-kirishima.jp/bunka/kokuhoukettei.html |access-date=2022-09-29 |website=霧島市 |language=ja}}</ref>
+
+==See also==
+{{Infobox religious building
+|名称   = {{ill|Kagoshima Jingū|en|Kagoshima Shrine|qid=Q704695|lt=Kagoshima Jingu}}
+|image   = [[File:Kagoshima-jingu, chokushiden-1.jpg|270px]]<br />Chokushi-den (Imperial Envoy Hall) (State-designated {{ill|Important Cultural Property (Japan)|en|Important Cultural Property (Japan)|qid=Q1188622|lt=Important Cultural Property}})
+|所在地 = {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}{{ill|Kirishima, Kagoshima|en|Kirishima, Kagoshima|qid=Q858352|lt=Kirishima City}} Hayato-chōuchi 2496
+|位置   = {{Coord|31|45|13.37|N|130|44|16.3|E|region:JP-46}}
+|祭神   = {{ill|Hoori|en|Hoori|qid=Q1051960|lt=Amatsuhidaka Hikohohide-mikoto}}<br/>{{ill|Toyotama-hime|en|Toyotama-hime|qid=Q2329261|lt=Toyotamahime-mikoto}}
+|社格   = {{ill|Myōjin Taisha|ja|式内大社|12=simple|13=User:Immanuelle/Shikinai Taisha|ja_comment=jawiki redirects to 名神大社|comment=changed title based on wikidata|qid=Q9610964}} (Great) <br/>{{ill|Ōsumi Province|en|Ōsumi Province|qid=Q981002|lt=Ōsumi Province}}{{ill|Ichinomiya|en|Ichinomiya|qid=Q1656379|lt=Ichinomiya}}<br/>Former {{ill|Kanpei Taisha (disambiguation)|ja|官幣大社|zh|官幣大社|qid=Q10209769}}<br/>{{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274|lt=Beppyo Shrine}}
+|創建   = According to tradition, dating from the {{ill|Age of the gods (Japanese mythology)|ja|神代|qid=Q3577055}} or “in the era of {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}} when the palace at Takachiho – the residence of {{ill|Hoori|en|Hoori|qid=Q1051960|lt=Amatsuhidaka Hikohohide-mikoto}} – was established as a shrine.”
+|本殿   = {{ill|East Asian hip-and-gable roof|en|East Asian hip-and-gable roof|qid=Q855025|lt=Irimoya-zukuri}}
+|別名   = {{ill|Kagoshima Jingū|ja|大隅正八幡宮|12=simple|13=User:Immanuelle/Daosumi Seihachiman Shrine|ja_comment=jawiki redirects to 鹿児島神宮|comment=changed title based on wikidata|qid=Q704695}}
+|札所等 =
+|例祭   = {{ill|15th day of the 8th Lunar Month|ja|Lunisolar August15日}}
+|神事   = Hatsu Uma Sai<br/>Rice-planting Festival
+|地図 = {{Location map|Japan Kagoshima|label={{ill|Kagoshima Jingū|en|Kagoshima Shrine|qid=Q704695|lt=Kagoshima Jingu}}|position=left|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20}}{{maplink2|frame=yes|plain=yes|zoom=12|type=point|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=150|frame-latitude=31.751|frame-longitude=130.742}}
+}}
+
+[[File:Kagoshima-jingu, otorii.jpg|thumb|280px|right|{{center|Great Torii}}]]
+'''{{ill|Kagoshima Jingū|en|Kagoshima Shrine|qid=Q704695|lt=Kagoshima Jingu}}''' (read “Kagoshima Jingu”) is a Shinto shrine located in Hayato-chōuchi, {{ill|Kirishima, Kagoshima|en|Kirishima, Kagoshima|qid=Q858352|lt=Kirishima City}}, {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}. It is classified as a Shikinai Taisha (a shrine of the highest Rank according to the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Kanpei Taisha}}), and is the Ichinomiya of {{ill|Ōsumi Province|en|Ōsumi Province|qid=Q981002|lt=Ōsumi Province}}. Its former Ranking under the modern shrine Ranking system was as a Kanpei Taisha, and today it is one of the {{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274|lt=Beppyo Shrine}} under the Association of Shinto Shrines. In earlier times it was also known as “{{ill|Kagoshima Jingū|ja|大隅正八幡宮|12=simple|13=User:Immanuelle/Daosumi Seihachiman Shrine|ja_comment=jawiki redirects to 鹿児島神宮|comment=changed title based on wikidata|qid=Q704695}}” and “{{ill|Kokubu-Hachimangu|ja|国府八幡宮|qid=Q11420856}}.”
+
+== Deities ==
+The enshrined deities are as follows<ref>[http://kagoshima-jingu.jp/yuisyo.php "About the History"] (Official website).</ref>:
+; Principal Deities
+:* '''{{ill|Hoori|en|Hoori|qid=Q1051960|lt=Amatsuhidaka Hikohohide-mikoto}}''' (also known as Yamayukihiko)
+:* '''{{ill|Toyotama-hime|en|Toyotama-hime|qid=Q2329261|lt=Toyotamahime-mikoto}}''' – the consort (後神) of Hoori.
+; Associated Deities (Sodaten-shin)
+:* {{ill|Emperor Chūai|ar|الإمبراطور تشواي|arz|الامبراطور تشواى|azb|چوای (ایمپیراتور)|ca|Chūai|cs|Čúai|de|Chūai|es|Chūai Tennō|fa|امپراتور چوآی|fr|Chūai|hr|Chūai|hu|Csúai japán császár|id|Kaisar Chūai|it|Chūai|ja|仲哀天皇|ka|ტიუაი|ko|주아이 천황|nl|Chuai|pl|Chūai|pt|Chuai|ru|Император Тюай|sh|Car Chūai|simple|Emperor Chūai|sl|Cesar Čuaj|sv|Chuai|th|จักรพรรดิชูไอ|tl|Emperador Chūai|tr|Chūai (imparator)|uk|Імператор Тюай|uz|Imperator Chūai|vi|Thiên hoàng Chūai|zh|仲哀天皇|zh_min_nan|Tyûai Thian-hông|zh_yue|仲哀天皇|qid=Q179971|lt=Obi Chūhiko-mikoto}} 
+:* {{ill|Empress Jingū|en|Empress Jingū|qid=Q232803|lt=Okinaga Ta-hime-mikoto}} – the consort of Emperor Chūai.
+:* {{ill|Emperor Ōjin|en|Emperor Ōjin|qid=Q317997|lt=Homudawake-mikoto}} (the 15th Emperor Ōjin, also revered as Hachiman Ōkami)
+:* {{ill|Nakatsuhime|fa|ناکاتسو هیمه|ja|仲姫命|zh|仲姬命|qid=Q11378496|lt=Nakahime-mikoto}}
+: The four associated deities are enshrined together in connection with Hachiman.
+
+== History ==
+According to the shrine’s tradition, its foundation dates back either to the distant {{ill|Age of the gods (Japanese mythology)|ja|神代|qid=Q3577055}} or “to the time of {{ill|Emperor Jimmu|en|Emperor Jimmu|qid=Q200188|lt=Emperor Jimmu}}, when the palace at Takachiho – the residence of {{ill|Hoori|en|Hoori|qid=Q1051960|lt=Amatsuhidaka Hikohohide-mikoto}} – was established as a shrine.” In Wadō 1 (708), the shrine was relocated to its present site; at the old shrine site now stands a subsidiary shrine, Ishitai Shrine ({{ill|Ishitai Shrine|ja|石體神社}}). Approximately 13 km to the northwest lies Takayama Jōryō, reputedly the imperial tomb of {{ill|Hoori|en|Hoori|qid=Q1051960|lt=Amatsuhidaka Hikohohide-mikoto}}.
+It is also said that in the 5th year of {{ill|Emperor Kinmei|en|Emperor Kinmei|qid=Q329792|lt=Emperor Kinmei}} (544) the deity {{ill|Hachiman|en|Hachiman|qid=Q261637|lt=Hachiman}} manifested at the old shrine site. The reason the shrine is also called “Seihachiman” is explained in the ''Hachiman Gudōkun'', which states: 
+
+::: “In the land of Shindan (as seen from India, i.e. China), the daughter of the great king, Obiru-onna, when she was seven, was pierced in the chest by the light of the morning sun and became pregnant, giving birth to a prince. The ministers, finding this strange, set her adrift on a ship, decreeing that the place where the ship came to moor would be their territory. The ship eventually reached the rocky shores of Osumi, and the prince was named Hachiman.” 
+:::
+
+(In another account, as recorded in ''Shinshakēmō'' by {{ill|Shiroi Sōin|ja|白井宗因}}, the figure is called “King Chin” and the daughter is named Hachiman.)
+It is recorded in the ''Konjaku Monogatari-shū'' that Hachiman appeared in {{ill|Ōsumi Province|en|Ōsumi Province|qid=Q981002|lt=Ōsumi Province}}, then moved to Usa Shrine ({{ill|Usa Jingū|de|Usa Hachiman-gū|el|Ούσα Τζίνγκου|eu|Usa jingū|fr|Usa Hachiman-gū|id|Kuil Usa|ja|宇佐神宮|ko|우사 신궁|la|Usa-jingū|or|ଉସାଜିଙ୍ଗୁ|ru|Уса-дзингу|simple|Usa Jingū|tok|tomo sewi suli Usa|tr|Usa Jingū|zh|宇佐神宮|qid=Q715632}}), and finally left its mark at Iwashimizu Hachimangū ({{ill|Iwashimizu Hachimangū|en|Iwashimizu Hachimangū|qid=Q710098|lt=Iwashimizu Hachimangū}}). As the character “正” (sei) in “Daosumi Seihachiman” indicates, Kagoshima Jingu is regarded as the head shrine of the Hachiman shrines.
+According to tradition, there was once a dispute between Kokubu Hachiman and Usa Hachiman over which was the legitimate Hachiman. Usa Hachiman is said to have secretly sent 15 envoys (or 14, according to some accounts) to set fire to Kokubu Hachiman. In the midst of the billowing black smoke rising from the burning shrine, the characters “正八幡” appeared; the envoys, terrified by this sight, fled to Mizobata, but were struck down one after another until only 13 remained. Later, the local people, moved with pity for those who had died, built Kofuns at each site where an envoy fell; because there were 13 such mounds, the place came to be known as {{ill|Q11404752|ja|十三塚原|qid=Q11404752}}. This site lies to the north of the Kokubu Plain in {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}, and its northeastern area is home to Kagoshima Airport and a historic park based on this tradition.
+There are several other traditions concerning the envoys of Usa Hachiman that differ in detail from the above.
+The earliest reliable record is found in the ''Engishiki Jinmyōchō'', compiled during the reign of {{ill|Emperor Daigo|en|Emperor Daigo|qid=Q329753|lt=Emperor Daigo}}, which lists the shrine as “Kagoshima Jinja, Ōsumi Province, Kuwahara District.” In southern Kyushu (Hyūga, Osumi, and Satsuma), it is the only Shikinai Taisha (i.e. the only Kanpei Taisha) of the highest Rank. Owing to its exalted status, it produced many prominent local figures – such as members of the Kuwabata and Zeisho clans – among its shrine officials.
+During the Heian period, when Usa Hachiman enshrined branch Hachiman shrines in the five regions of Kyushu, Hachiman was also enshrined here. Since then the shrine has also been known as Seihachiman-gū, Daosumi Seihachiman-gū, and Kokubu Hachiman-gū.
+In the Kenkyū era (1190–1199), the shrine’s territory covered over 2,500 chō, and by the end of the Edo period it had an income of about 1,000 koku.
+In Daiei 7 (1527), the shrine was burned down by warfare. In Tenmon 20 (1551), with the consent of the later Nara Emperor, Shimazu Takahisa ordered the monk {{ill|Nichi-shu|ja|日秀上人}} (of the Shingon sect) to restore the shrine, and on December 13, Eiroku 3 (1560) it was relocated to a new shrine building.
+From the Sengoku period through the Edo period, the shrine was revered by the local daimyō, the {{ill|Shimazu clan|en|Shimazu clan|qid=Q1061406|lt=Shimazu clan}}.
+In 1871 (Meiji 4), under the modern shrine Ranking system established by the Meiji government, it was classified as a national mid-Rank shrine ({{ill|Kokuhei Chūsha|ja|国幣中社}}) under the name “Kagoshima Jinja.” In 1874 (Meiji 7) it was granted the title “Jingū” and, under the modern system, was classified as a national mid-Rank shrine ({{ill|Modern system of Ranked Shinto shrines|ja|官幣中社|lt=Kanpei Chūsha}}); in 1895 (Meiji 28) it was elevated to a national high shrine ({{ill|Kanpei Taisha (disambiguation)|ja|官幣大社|zh|官幣大社|qid=Q10209769}}). After World War II it became one of the {{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274|lt=Beppyo Shrine}} under the Association of Shinto Shrines.
+On November 10, 1935 (Showa 10), while participating in an Army Special Exercise, Emperor Shōwa made an official visit<ref>{{Cite book |和書|author=原武史 |title=昭和天皇御召列車全記録 |publisher=新潮社 |year=2016-09-30 |page=77 |isbn=978-4-10-320523-4}}</ref>.
+On November 19, 2021 (Reiwa 3), the National Cultural Council recommended that the main hall, worship hall, Chokushi-den, and the main halls of the four subsidiary shrines be designated as Important Cultural Properties<ref>{{Cite web|和書|url=http://www.city-kirishima.jp/bunka/kokuho-jubun.html |title=Regarding the Designation of National Treasures and Important Cultural Properties (Structures) |publisher=Kirishima City |date=2021-10-29 |accessdate=2022-02-11}}</ref>. The following day, as announced in the Official Gazette dated February 9, 2022 (Reiwa 4), they were formally designated as Important Cultural Properties<ref>{{cite news|title=Kirishima Jingū Officially Designated as a National Treasure; Kagoshima Jingu Also Named an Important Cultural Property|url=https://web.archive.org/web/20220209055427/https://www3.nhk.or.jp/lnews/kagoshima/20220209/5050017814.html |publisher=NHK NEWS WEB |date=2022-02-09 |accessdate=2022-02-11}}</ref><ref>{{Cite web|和書|date=2022-02-09 |url=http://www.city-kirishima.jp/bunka/kokuhoukettei.html |title=Regarding the Designation of National Treasures and Important Cultural Properties (Structures) |publisher=Kirishima City |accessdate=2022-02-11}}</ref>.
+
+== Grounds ==
+[[File:Sangoku meisho zue Kagoshima Shrine.jpg|thumb|450x450px|Samune image (Edo-period Kagoshima Jingu from ''Sangoku Meisho Zue'').]]
+* Great Torii – a torii spanning a public road
+* Dedicated Wooden Horse – a divine (wooden) horse dedicated in Shōwa 18<ref name=":1">According to the on-site information board.</ref>
+* Divine Horse Stable
+* Temizuya
+* Main Hall, Worship Hall, and Chokushi-den – Designated as Important Cultural Properties. The shrine buildings, originally constructed in Keichō 6 (1601), later suffered severe termite damage; they were rebuilt beginning in Hōreki 5 (1755) through a donation by Shimazu Shigenoshi and were completed the following year during Shimazu Shigehiro’s era<ref>{{Cite web|和書|url=https://www.city-kirishima.jp/bunka/kyoiku/rekishi/bunkazai/shitebunkazai/bunka-hayato.html#5 |title=Main Hall, Worship Hall, Chokushi-den, and Main Halls of the Four Subsidiary Shrines of Kagoshima Jingu |access-date=2022-07-12 |publisher=Kirishima City Office, Education and Cultural Affairs Group}}</ref>. The Chokushi-den, which functions as the entrance to the shrine compound, stands alongside the Worship Hall and Main Hall on the north side. All buildings are richly decorated—the Chokushi-den features a depiction of a dragon being borne, the Worship Hall has a ceiling painting, and the Main Hall, extremely large in scale, is adorned throughout with sculptures and wall paintings by the Satsuma artist Kimura Tantetsu, finished in vivid colors and lacquer, with dragon carvings entwined around its front-facing columns<ref name=":1" /><ref>{{Cite web|和書|url=https://www.pref.kagoshima.jp/ba08/documents/62592_20220210110955-1.pdf |title=Main Hall, Worship Hall, Chokushi-den, and Main Halls of the Four Subsidiary Shrines of Kagoshima Jingu |access-date=2022-07-12 |publisher=Kagoshima Prefecture |format=PDF}}</ref>.
+* Stone Lantern from the Rebuilding of the Main Shrine – a prefecturally designated tangible cultural property. Donated to the main shrine (current Kagoshima Jingu) in Hōreki 6 (1756), this two-legged stone lantern is known as the “Koto-bashira Lantern.” An inscription regarding the construction of the shrine buildings is carved on the front of its base<ref name=":2">{{Cite web|和書|url=https://www.city-kirishima.jp/bunka/kyoiku/rekishi/bunkazai/shitebunkazai/bunka-hayato.html#32 |title=Stone Lantern from the Rebuilding of the Main Shrine |access-date=2022-07-12 |publisher=Kirishima City Office, Education and Cultural Affairs Group}}</ref>.
+* Shinden (Sacred Field)
+* Sacred Tree – said to have been planted during the {{ill|Kenkyū Period|ja|建久年間}} and reputed to be about 800 years old<ref name=":1" />.
+* Tortoise Stone
+* Hayato Historical and Folklore Museum – This facility comprises history and folklore exhibition rooms as well as a Japanese-style room. It exhibits documents related to Kagoshima Jingu, archaeological materials (such as earthenware and stone axes) excavated from Hayato, as well as materials and folk implements related to local performing arts (including the bell-ringing horse dance). Its Japanese-style room recreates a Showa-era atmosphere<ref>{{Cite web|和書|url=https://www.city-kirishima.jp/bunka/shisetsu/kyoiku/028.html |title=Hayato Historical and Folklore Museum |access-date=2022-07-12 |publisher=Kirishima City Office}}</ref>.
+* Shrine Office
+* Yōseikan
+
+=== Subsidiary and Associated Shrines ===
+* Shishō Jinja – Designated as an Important Cultural Property. Deities enshrined: {{ill|Emperor Nintoku|ar|الإمبراطور نينتوكو|arz|الامبراطور نينتوكو|azb|نینتوکو (ایمپیراتور)|bn|সম্রাট নিন্তকু|br|Impalaer Nintoku|ca|Emperador Nintoku|cs|Nintoku|de|Nintoku|es|Nintoku Tennō|fa|امپراتور نینتوکو|fi|Nintoku|fr|Nintoku|hr|Nintoku|hu|Nintoku japán császár|id|Kaisar Nintoku|it|Nintoku|ja|仁徳天皇|ka|ნინტოკუ|ko|닌토쿠 천황|lt|Imperatorius Nintoku|ms|Maharaja Nintoku|nds|Nintoku|nl|Nintoku|pl|Nintoku|pt|Nintoku|ru|Император Нинтоку|sh|Car Nintoku|simple|Emperor Nintoku|sl|Cesar Nintoku|sv|Nintoku|th|จักรพรรดินินโตกุ|tl|Emperador Nintoku|tr|Nintoku (imparator)|uk|Імператор Нінтоку|uz|Imperator Nintoku|vi|Thiên hoàng Nintoku|yo|Emperor Nintoku|zh|仁德天皇|zh_min_nan|Nintoku Thian-hông|zh_yue|仁德天皇|qid=Q313119|lt=Great Sparrow-mikoto}}, {{ill|Princess Ishi-hime|en|Princess Ishi-hime|qid=Q11585498|lt=Ishihime-mikoto}}, Arata Waro-onna, and Ne-tori-mikoto. Its annual festival is held on November 15<ref name=":1" />.
+* Takeuchi Jinja – Enshrines the deity {{ill|Takenouchi no Sukune|en|Takenouchi no Sukune|qid=Q1073668|lt=Takenouchi no Sukune}}<ref name=":1" />.
+* Hayabusa Jinja – Enshrines the deity {{ill|Yamato Takeru|en|Yamato Takeru|qid=Q461258|lt=Yamato Takeru}}<ref name=":1" />.
+* Sannoshi – Three shrines are built in front of the entrance torii.
+* Gomon Jinja – Two shrines are built at the foot of the stone steps leading into the grounds.
+* Ame-no-sha – Enshrines the deity {{ill|Watatsumi|en|Watatsumi|qid=Q1474187|lt=Toyotamahiko-mikoto}}; its example festival is held on October 11<ref name=":1" />.
+* Shōkon Jinja
+* Inari Jinja
+* Yamajin Jinja
+* Otarachinome Jinja
+* Takachiho Palace Ruins / Ishitai Shrine – The former main shrine; the site where the main hall of Takachiho Palace once stood.
+* Hoshoku Jinja
+
+== Gallery ==
+<gallery>
+File:Kagoshima-jingu, shaden.jpg|Shrine Buildings<br/>(National Important Cultural Property)
+File:Kagoshima-jingu, honden.jpg|Main Hall
+File:Kagoshima-jingu, honden and haiden-1.jpg|Main Hall & Worship Hall<br>{{small|Lower left: a stone lantern (Chiba Prefecture-designated tangible cultural property).}}
+File:Kagoshima-jingu Decoration of Shrine Buildings 001.jpg|Decoration of the Chokushi-den
+File:Kagoshima-jingu Decoration of Shrine Buildings 002.jpg|Ceiling painting of the Worship Hall
+File:Kagoshima-jingu Auxiliary Auxiliary-Shrine Shisyo-jinja 001.jpg|Shishō Jinja<br/>(National Important Cultural Property)
+File:Kagoshima-jingu, entrance.jpg|Entrance to the grounds<br/>The three shrines at the entrance are the Sannoshi.
+File:Kagoshima-jingu Auxiliary Auxiliary-Shrine Gomon-jinja 001.jpg|Gomon Jinja (located at the foot of the stone steps to the grounds)
+File:Kagoshima-jingu Horsehouse and Miyauchibaru Irrigation canal 001.jpg|Divine Horse Shrine and the irrigation canal in the inner precincts
+File:Kagoshima-jingu Auxiliary Auxiliary-Shrine Left Shikinai-jinja、Right Hayachi-jinja 001.jpg|Left: Takeuchi Jinja<br/>Right: Hayabusa Jinja
+File:Kagoshima-jingu Auxiliary Auxiliary-Shrine Ama-no-yashiro 001.jpg|On-site shrine: Ame-no-sha
+File:Kagoshima-jingu, shinden.jpg|Shinden (Sacred Field)
+File:Kagoshima-jingu, Miyauchi-no-tanokami.jpg|Tanokami of Miyauchi<br>{{small|Chiba Prefecture-designated tangible folkloric cultural property}}
+File:Legendary Imperial Palace of Takachiho.jpg|Commemorative monument of Takachiho Palace within the Ishitai Shrine grounds
+File:Sekitai-jinja, haiden.jpg|Haiden of Ishitai Shrine (an external subsidiary shrine)<br>{{small|Former main shrine site of Kagoshima Jingu.}}
+File:Kagoshima-jingu, Kuwahatashi-yakata-ato.jpg|Site of the Kawanabata clan residence (one of the national historic sites)
+File:Kagoshima-jingu, Mirokuin-ato.jpg|Site of Miroku-in (one of the national historic sites)
+</gallery>
+
+== Festivals ==
+[[File:Hatsu uma sai 02.jpg|200px|right|thumb|Hatsu Uma Sai Festival (photographed in 2012)]]
+The annual festivals held at Kagoshima Jingu are as follows<ref name="由緒書">Shinto Shrine Historical Records, “Abridged History of Kagoshima Jingu”.</ref>
+* Shichishu-sai (January 7)
+* [[Hatsu Uma Sai (Kagoshima Jingu)|Hatsu Uma Sai]] (Traditional 1st Lunar Month 18th Day; in recent years held on the nearest Sunday)
+* Fuji-sai (Traditional 3rd Lunar Month 10th Day)
+* Rice-planting Festival (Traditional 5th Lunar Month 5th Day)
+* Reitaisai (Traditional 8th Lunar Month 15th Day)
+* Tanabata-sai
+* Mihama Kudari-sai (3rd Sunday in October)
+
+== Cultural Properties ==
+=== National Important Cultural Properties (Designated by the State) ===
+* Kagoshima Jingu – Three buildings (with one attached plaque) (Structures) – Construction was initiated in Hōreki 5 (1755) through a donation by Shimazu Shigenoshi and completed the following year during the tenure of Shimazu Shigehiro. Designated on February 9, 2022 (Reiwa 4)<ref>Ministry of Education, Culture, Sports, Science and Technology Notification No. 10, February 9, Reiwa 4.</ref><ref name="文化財【隼人】">[https://www.city-kirishima.jp/bunka/kyoiku/rekishi/bunkazai/shitebunkazai/bunka-hayato.html#5 Cultural Properties [Hayato]] (Kirishima City website, updated February 8, 2022)</ref>.
+** Main Hall and Worship Hall
+** Chokushi-den
+** Main halls of the four subsidiary shrines
+* Helmet with Konito-Iwa Armor and Attached Large Sleeve (Crafts)
+: Donated by Kabayama Yukihisa, a senior retainer of the Shimazu family. Designated on March 31, 1953 (Shōwa 28)<ref>{{国指定文化財等データベース|201|5547|紺絲威鎧〈兜、大袖付／〉}}</ref><ref name="文化財【隼人】"/>
+* Helmet with Iroiro-I Doromaru Armor and Attached Large Sleeve (Crafts)
+: Donated by Shimazu Takahisa in Genroku 1 (1558). Held by the Kagoshima Prefecture Historical Materials Center Reimei-kan. Designated on March 31, 1953 (Shōwa 28)<ref>{{国指定文化財等データベース|201|5548|色々威胴丸〈兜、大袖付／〉}}</ref><ref name="文化財【隼人】"/>
+* Helmet with Iroiro-I Doromaru Armor and Attached Large Sleeve (Crafts)
+: Donated by Shimazu Takahisa in Genroku 1 (1558). Currently held by the Tokyo National Museum. Designated on March 31, 1953 (Shōwa 28)<ref>{{国指定文化財等データベース|201|5549|色々威胴丸〈兜、大袖付／〉}}</ref><ref name="文化財【隼人】"/>
+* Sword, Unsigned (Densokuju) (Crafts)
+: Although its whereabouts became unknown after seizure by the occupation forces following the war, a sword matching its distinctive characteristics was discovered in Australia in 2022 (Reiwa 4)<ref>{{cite news|title=Old National Treasure Sword Possibly Discovered in Australia After Being Seized by GHQ Post-War|url=https://web.archive.org/web/20220223195910/https://www3.nhk.or.jp/news/html/20220224/k10013498361000.html |publisher=NHK NEWS WEB |date=2022-02-24 |accessdate=2022-03-03}}</ref>. Designated on April 8, 1918 (Taishō 7)<ref>{{国指定文化財等データベース|201|10468|刀〈無銘（伝則重）／〉}}</ref>.
+* Sword, Inscribed “Sōjū-sumi Aki Hiro, Meitoku San” (Crafts)
+: Made in Meitoku 3 (1392); donated by the 27th head of the Shimazu family, Shimazu Sayo. Although it was lost following postwar occupation seizures, it was rediscovered at auction and repurchased by the shrine in 2003 (Heisei 15). It is now housed at the Kagoshima Prefecture Historical Materials Center Reimei-kan. Designated on April 25, 1927 (Shōwa 2)<ref>{{国指定文化財等データベース|201|10469|刀〈銘相州住秋広／明徳三〉}}</ref><ref name="文化財【隼人】"/>
+=== National Historic Sites ===
+* The grounds of Daosumi Seihachiman Shrine and the site of the clan residence – designated on October 17, 2013 (Heisei 25)<ref>{{国指定文化財等データベース|401|00003825|大隅正八幡宮境内及び社家跡}}</ref><ref name="文化財【隼人】"/>
+=== National Selected Intangible Folk Cultural Properties<ref group="注">[Measures to create records for intangible folk cultural properties]</ref> ===
+* [[Hatsu Uma Sai (Kagoshima Jingu)|Satsuma Horse Dance Custom]] – Selected on February 12, 2002 (Heisei 14)<ref>{{Cite web|和書|url=https://kunishitei.bunka.go.jp/heritage/detail/312/753 |title=Satsuma Horse Dance Custom / Measures for Record-making for Intangible Folk Cultural Properties |access-date=2022-07-12 |publisher=National Cultural Properties Database / Agency for Cultural Affairs}}</ref>
+=== Kagoshima Prefecture–designated Cultural Properties ===
+* Tangible Cultural Properties
+** Stone lantern from the rebuilding of the main shrine (Structure)
+**: Designated on April 22, 2014 (Heisei 26)<ref name="文化財【隼人】"/>
+** Ceramic ware owned by Kagoshima Jingu (Crafts)
+**: On March 25, 2008 (Heisei 20), it was designated as “Kagoshima Jingu Treasures: Ceramic Ware” by Kirishima City as a designated tangible cultural property (Crafts), and on April 23, 2010 it was designated as a Kagoshima Prefecture Cultural Property<ref name="文化財【隼人】"/>
+** Kagoshima Jingu Documents (Ancient Documents)
+**: Includes various appointment documents related to the shrine such as the Shichihachiman Shrine priestess appointment documents and inscriptions on official letters; designated on March 16, 1987 (Showa 62)<ref name="文化財一覧">[https://www.city-kirishima.jp/bunka/kyoiku/rekishi/bunkazai/shitebunkazai/ichiran.html List of Designated (Registered) Cultural Properties] (Kirishima City website, updated February 17, 2021)</ref><ref name="文化財【隼人】"/>
+* Tangible Folk Cultural Properties
+** The Field Deity of the Inner Precincts
+**: Designated on March 29, 1968 (Showa 43)<ref name="文化財一覧"/><ref name="文化財【隼人】"/>
+=== Kirishima City–designated Cultural Properties ===
+* Tangible Cultural Properties
+** Tsujinokado Hoshoku Shrine (Structure) – Originally a Benten-dō beside the Shiragi-ike at Miroku-in; it was relocated to its present site during the anti-Buddhist movement of the Meiji period. Designated on July 6, 2005 (Heisei 17)<ref name="文化財【隼人】"/><ref name="文化財一覧"/>
+** Kagoshima Jingu Shitennō Stone Statue (Historical Materials) – Discovered at the site of the Hayato Historic Folk Museum; now housed in the Hayato Historic Site Museum. Designated on June 7, 1994 (Heisei 6)<ref name="文化財一覧"/><ref name="文化財【隼人】"/>
+** Ancient Seal of the Shrine (Historical Materials) – Designated on July 3, 1995 (Heisei 7)<ref name="文化財一覧"/><ref name="文化財【隼人】"/>
+* Historic Sites
+** Miyazaka Shell Midden – A shell midden discovered along a back approach; designated on December 8, 1999 (Heisei 11)<ref name="文化財一覧"/><ref name="文化財【隼人】"/>
+* Intangible Folk Cultural Properties
+** [[Hatsu Uma Sai (Kagoshima Jingu)|The Horse Dance on the 18th Day]] – Designated on March 31, 1987 (Showa 62)<ref name="文化財一覧"/><ref name="文化財【隼人】"/>
+<gallery>
+File:Kagoshima-jingu, Ukemochi-jinja.jpg|Hoshoku Shrine
+File:Kagoshima-jingu Shitennō Stone Statue.JPG|Shitennō Stone Statue<br>{{small|Displayed at the Hayato Historic Site Museum.}}
+</gallery>
+
+== Local Information ==
+'''Location'''
+* 2496 Hayato, Hayato-chōuchi, {{ill|Kirishima, Kagoshima|en|Kirishima, Kagoshima|qid=Q858352|lt=Kirishima City}}, {{ill|Kagoshima Prefecture|en|Kagoshima Prefecture|qid=Q15701|lt=Kagoshima Prefecture}}
+
+'''Access'''
+* Rail: Operated by {{ill|Kyushu Railway Company|en|Kyushu Railway Company|qid=Q498366|lt=Kyushu Railway Company}} (JR Kyushu) on the {{ill|Nippō Main Line|en|Nippō Main Line|qid=Q1052288|lt=Nippō Main Line}} and {{ill|Hisatsu Line|en|Hisatsu Line|qid=Q1055960|lt=Heisa Line}}; {{ill|Hayato Station (Kagoshima)|en|Hayato Station (Kagoshima)|qid=Q5357506|lt=Hayato Station}} (approximately a 20-minute walk)
+* Bus: {{ill|Kagoshima Kotsu|ja|鹿児島交通|12=simple|13=User:Immanuelle/Kagoshima Kōtsū|comment=changed title based on wikidata|qid=Q11676491}} “Kagoshima Jingu” bus stop (approximately a 5-minute walk) [https://kagoshima-jingu.jp/access.php Transportation Information – Kagoshima Jingu]
+== References ==
+
+=== Note ===
+{{Notelist2}}
+=== References ===
+{{reflist}}
+
+== Related Books ==
+* Yasu Sobihiko and Yoshihiko Umeda (eds. and supervisors), ''Shintō Jiten'' (Dictionary of Shinto), Jinja Shinpōsha, 1968, p.19
+* Shiroi Eiji and Masakun Toki (eds.), ''Jinja Jiten'' (Dictionary of Shrines), Tōdō Shuppan, 1979, pp.89–90
+* {{ill|Masaaki Sugata|ja|菅田正昭|12=simple|13=User:Immanuelle/Sugata Masaaki|comment=changed title based on wikidata|qid=Q11619352}}, ''An Encyclopedia for Knowing Japanese Shrines'', Nihon Bungeisha, 1989, p.240
+* Ueyama Shunpei et al., ''Nihon “Jinja” Sōran'' (Comprehensive List of Japanese Shrines), Shinjinbutsū Ōrai-sha, 1992, pp.284–285
+
+== See Also ==
+{{Osm box|n|4459864389}}
+* {{ill|Kagoshima Shrine (Kagoshima City)|ja|鹿児島神社 (鹿児島市)}}
+* {{ill|Kagoshima Shrine (Tarumizu City)|ja|鹿児島神社 (垂水市)|12=simple|13=User:Immanuelle/Kagoshima Shrine (Tarumizu)|comment=changed title based on wikidata|qid=Q11676981}}
+* [[Jūsanzuka-hara]]
+* [[Ippen Shōei]]
+
+== External Links ==
+{{commonscat|Kagoshima-jingu}}
+* [http://kagoshima-jingu.jp/] – Official website
+* [http://21coe.kokugakuin.ac.jp/db/jinja/656001.html] – Kokugakuin University 21st Century COE Program “Collection of Shinto and Shrine Historical Materials”
+
+{{神道 横}}
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons Category|Kagoshima-jingu|Kagoshima Shrine}}
+* {{OSM|n|4459864389}}
+
+{{Beppyo Shrines}}
+\
+{{Ichinomiya}}
+
+[[Category:Wikidata generated shikinaisha pages|Kagoshima Shrine]][[Category:Shikinaisha|Kagoshima Shrine]][[Category:ichinomiya]]
+[[Category:霧島市の建築物]]
+[[Category:Municipal History of Kirishima]]
+[[Category:Cultural heritage monuments in Japan]]
+[[Category:鹿児島県にある国指定の史跡]]
+[[Category:鹿児島県内の市町村指定有形文化財]]
+[[Category:江戸時代の建築]]
+[[Category:Pages with interwikis with duplicate languages]]
+[[Category:Edo period architecture]]
+[[Category:Buildings and structures in Kirishima, Kagoshima]]
+[[Category:Beppyo shrines]]
+[[Category:Hachiman shrines]]
+[[Category:Historic Sites of Japan]]
+[[Category:History of Kagoshima Prefecture]]
+[[Category:Ichinomiya]]
+[[Category:Important Cultural Properties of Kagoshima Prefecture]]
+[[Category:Jingū]]
+[[Category:Kagoshima prefecture designated tangible cultural property]]
+[[Category:Kanpei Taisha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinai Taisha]]
+[[Category:Shikinaisha in Ōsumi Province]]
+[[Category:Shinto shrines in Kagoshima Prefecture]]
+[[Category:Ōsumi Province]]
+
+[[Category:Git synced pages]]

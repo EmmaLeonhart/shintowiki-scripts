@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Anumi Shrine (Q135198210)
+| native_name = 阿沼美神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Anumi Shrine (Q135198210)
+| coordinates = {{coord|33.888064|132.754353}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Anumi Shrine'''|阿沼美神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Iyo Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Anumi Shrine (Q135198210)]][[Category:Shikinaisha|Anumi Shrine (Q135198210)]][[Category:Shikinaisha in Iyo Province]]
+
+{{wikidata link|Q135198210|grok=none|check_date=2026-05-28}}
+
+[[Category:Git synced pages]]

@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Karasaki Shrine (Q135193743)
+| native_name = 唐崎神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Karasaki Shrine (Q135193743)
+| coordinates = {{coord|35.452168|136.056119}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Karasaki Shrine'''|唐崎神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Karasaki Shrine (Q135193743)]][[Category:Shikinaisha|Karasaki Shrine (Q135193743)]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135193743|grok=none|check_date=2026-05-30}}
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Ōmi Province]]
+
+[[Category:Git synced pages]]

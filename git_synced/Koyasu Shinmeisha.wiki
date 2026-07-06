@@ -1,0 +1,23 @@
+{{Infobox religious building
+| name = Koyasu Shinmeisha
+| native_name = 子安神明社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Koyasu Shinmeisha
+| coordinates = {{coord|35.258962|137.027169}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Koyasu Shinmeisha'''|子安神明社}} is a [[shinto shrine]] in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Engishiki Jinmyōchō}}. It is located in [[Owari Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Koyasu Shinmeisha]][[Category:Shikinaisha|Koyasu Shinmeisha]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135187196|grok=none|check_date=2026-05-31}}
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Owari Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,25 @@
+{{Infobox religious building
+| name = Hachiōji Shrine
+| native_name = 八王子社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hachiōji Shrine
+| coordinates = {{coord|34.689866|138.945212}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Hachiōji Gongen|ja|八王子権現|qid=Q11391615|lt=Hachiōji Gongen}}
+}}
+
+{{nihongo|'''Hachiōji Shrine'''|八王子社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Hachiōji Shrine]][[Category:Shikinaisha|Hachiōji Shrine]][[Category:Shikinai Ronsha]]
+
+{{wikidata link|Q135069438|grok=none|check_date=2026-05-29}}
+[[Category:Hachiōji Shrines]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izu Province]]
+
+[[Category:Git synced pages]]

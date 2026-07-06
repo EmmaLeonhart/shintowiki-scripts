@@ -97,11 +97,11 @@ def _get_json(params: dict, post: bool = False):
     return None
 
 
-def category_members():
+def category_members(category=SOURCE_CATEGORY):
     mem, cont = [], {}
     while True:
         p = {"action": "query", "list": "categorymembers",
-             "cmtitle": "Category:" + SOURCE_CATEGORY, "cmlimit": "500",
+             "cmtitle": "Category:" + category, "cmlimit": "500",
              "cmtype": "page", "format": "json"}
         p.update(cont)
         d = _get_json(p)
@@ -137,12 +137,15 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--apply", action="store_true", help="Write git_synced/ files.")
     ap.add_argument("--max", type=int, default=100000)
+    ap.add_argument("--category", default=SOURCE_CATEGORY,
+                    help="Category to process (default the sync-now trigger; pass "
+                         "'Wikidata generated shikinaisha pages' to do the full set).")
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     os.makedirs(GIT_SYNCED, exist_ok=True)
 
-    titles = category_members()[: args.max]
-    print(f"Pages in [[Category:{SOURCE_CATEGORY}]]: {len(titles)}")
+    titles = category_members(args.category)[: args.max]
+    print(f"Pages in [[Category:{args.category}]]: {len(titles)}")
     contents = fetch_contents(titles)
     print(f"Fetched: {len(contents)}")
 

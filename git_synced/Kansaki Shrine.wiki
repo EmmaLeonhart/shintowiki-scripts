@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Kansaki Shrine
+| native_name = 神前神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kansaki Shrine
+| coordinates = {{coord|35.501816|136.257478}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kansaki Shrine'''|神前神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kansaki Shrine]][[Category:Shikinaisha|Kansaki Shrine]][[Category:Shikinaisha in Ōmi Province]]
+
+{{wikidata link|Q135039831|grok=none|check_date=2026-05-30}}
+
+[[Category:Git synced pages]]

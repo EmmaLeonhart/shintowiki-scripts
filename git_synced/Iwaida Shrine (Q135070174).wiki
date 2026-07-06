@@ -1,0 +1,21 @@
+{{Infobox religious building
+| name = Iwaida Shrine (Q135070174)
+| native_name = 祝田神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Iwaida Shrine (Q135070174)
+| coordinates = {{coord|34.907072|134.575138}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Iwaida Shrine'''|祝田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Harima Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Iwaida Shrine (Q135070174)]][[Category:Shikinaisha|Iwaida Shrine (Q135070174)]][[Category:Shikinaisha|Iwaida Shrine (Q135070174)]][[Category:Shikinaisha in Harima Province]]
+
+{{wikidata link|Q135070174|grok=none|check_date=2026-05-29}}
+
+[[Category:Git synced pages]]

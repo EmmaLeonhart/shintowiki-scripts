@@ -1,0 +1,22 @@
+{{Infobox religious building
+| name = Kawarano Shrine (Q135040525)
+| native_name = 加和良神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kawarano Shrine (Q135040525)
+| coordinates = {{coord|35.209069|135.04759}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Kawarano Shrine'''|加和良神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tanba Province]].
+
+[[Category:Wikidata generated shikinaisha pages|Kawarano Shrine (Q135040525)]][[Category:Shikinaisha|Kawarano Shrine (Q135040525)]][[Category:Shikinaisha|Kawarano Shrine (Q135040525)]][[Category:Kokuhei-sha]]
+
+{{wikidata link|Q135040525|grok=none|check_date=2026-05-31}}
+[[Category:Shikinaisha in Tanba Province]]
+
+[[Category:Git synced pages]]
