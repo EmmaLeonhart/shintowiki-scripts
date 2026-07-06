@@ -1,0 +1,98 @@
+{{Expand Japanese|川田神社 (甲賀市水口町北内貴)}}
+
+{{Infobox religious building
+| name = Kawata Shrine (Koka)
+| native_name = 川田神社 (甲賀市水口町北内貴)
+| image = Kawata-jinja-1.JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kawata Shrine (Koka)
+| coordinates = {{coord|34.960533|136.155698}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ame-no-Yukawata|lt=Ame-no-Yukawata|ja|天湯河板挙|qid=Q52319907}}
+}}
+
+{{nihongo|'''Kawata Shrine (Koka)'''|川田神社 (甲賀市水口町北内貴)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
+==References==
+
+[[Category:Shikinaisha|Kawata Shrine (Koka)]][[Category:Shrine receiving Tsukinami-sai and Niiname-sai offerings]]
+
+[[ja:川田神社 (甲賀市水口町北内貴)]]
+
+{{wikidata link|Q11479035|ja|川田神社 (甲賀市水口町北内貴)|grok=none|check_date=2026-05-31}}
+
+{{translated page|ja|川田神社 (甲賀市水口町北内貴)|version=107300391|comment=Imported full ja history}}== Japanese content ==
+{{Shrine
+|Name       = Kawata Shrine
+|Image      = [[Image:Kawata-jinja-1.JPG|270px]]<br/>Worship hall
+|Location   = {{jalink|Shiga Prefecture|Q131358}}{{jalink|Kōka City|Q847584}}{{jalink|Minakuchi Town|Q3314706}} Kita-Uchiaki 490
+|Coordinates= {{ウィキ座標2段度分秒|34|57|37.7|N|136|09|21.1|E|region:JP-25_type:landmark}}
+|Enshrined Deities = {{jalink|Ametoyukawa Itage|Q52319907|Ametoyukawa-geta-no-Mikoto}}<br />Amakawata-na-no-Mikoto
+|Shrine Rank = {{jalink|Shikinaisha}} ({{jalink|Myōjin Taisha|Q9610964|Myōjin Great Shrine}}) candidate shrine<br />Former {{jalink|Prefectural Shrine}}
+|Founded    = (Traditionally) reign of {{jalink|Emperor Suinin|Q314850}}
+|Main Hall  = {{jalink|Nagare-zukuri|Q210684|Ichiken-sha nagare-zukuri}}
+|Other Names=
+|Pilgrimage Status=
+|Annual Festival = {{jalink|April 25|Q2531}}
+|Rituals    = Ancient-style Yōya Festival (February 20)
+|Map        = {{Location map|Japan Shiga|label=Kawata Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Kawata Shrine''' (かわたじんじゃ) is a {{jalink|Shinto shrine|Q845945}} located in {{jalink|Kōka City|Q847584}}, {{jalink|Shiga Prefecture|Q131358}}.
+
+=== Enshrined Deities ===
+* {{jalink|Ametoyukawa Itage|Q52319907|Ametoyukawa-geta-no-Mikoto}} – ancestral deity of the Tottori no Muraji clan
+* Amakawata-na-no-Mikoto
+〈Associated Deities〉
+* {{jalink|Ame-no-Koyane-no-Mikoto}}
+* {{jalink|Ōnamuchi-no-Mikoto}}
+
+=== Shrine Crest ===
+* Descending wisteria
+
+=== History ===
+It is traditionally said to have been founded during the reign of {{jalink|Emperor Suinin|Q314850}}. It is a {{jalink|candidate shrine|Q135022904}} of a {{jalink|Myōjin Taisha|Q9610964}} listed in the {{jalink|Engishiki Jinmyōchō|Q11064932}}. In {{jalink|Kyōhō|Q1145048}} 11 ({{jalink|1726|Q6936}}), it was granted the divine rank of Senior First Rank ({{jalink|shinkai|Q11591025}}). It served as the {{jalink|sōsha}} of {{jalink|Kurata Estate}}. In {{jalink|Meiji|Q3125096}} 9 ({{jalink|1876|Q7766}}) it was designated a {{jalink|Village Shrine}}, in the same era’s 17th year ({{jalink|1884|Q7819}}) a {{jalink|Township Shrine}}, and in {{jalink|Shōwa|Q327567}} 11 ({{jalink|1936|Q18649}}) it was promoted to a {{jalink|Prefectural Shrine}}.
+
+=== Festivals ===
+* Annual Festival  
+: Held on April 25.
+* Ancient-style Yōya Festival
+
+=== Auxiliary Shrines ===
+* Tenmangū
+
+=== Notes ===
+{{Reflist}}
+
+=== External Links ===
+* [http://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=564 Kawata Shrine] (Shiga Prefecture Association of Shinto Shrines)
+
+{{Shinto horizontal}}
+
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Shinto shrines in Shiga Prefecture]]
+[[Category:Myōjin Taisha]]
+[[Category:近江国の式内社|名かわたしんしや]]
+[[Category:Moto-Ise shrines]]
+[[Category:滋賀県の旧県社]]
+[[Category:甲賀市の歴史]]
+[[Category:Buildings and structures in Koka, Shiga]]
+[[Category:Former Prefectural Shrines in Shiga Prefecture]]
+[[Category:History of Koka, Shiga]]
+[[Category:Myōjin Taisha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Junior Fifth Rank]]
+[[Category:Shikinaisha in Ōmi Province]]
+[[Category:Myōjin Taisha]]
+[[Category:Junior Fifth Rank]]
+[[Category:Shrine receiving Tsukinami-sai and Niiname-sai offerings]]
+[[Category:Kanpei-sha]]
+
+[[Category:Git synced pages]]

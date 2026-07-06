@@ -1,0 +1,65 @@
+{{Expand Japanese|杉原神社}}
+
+{{Infobox religious building
+| name = Sugihara Shrine (Q11521781)
+| native_name = 杉原神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Sugihara Shrine (Q11521781)
+| coordinates = {{coord|36.609444|137.154444}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Sugihara Shrine'''|杉原神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Etchū Province]].
+
+[[ja:杉原神社]]
+
+{{wikidata link|Q11521781|ja|杉原神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{神社
+|名称 = Sugihara Shrine
+|画像={{画像募集中|cat=富山市}}
+|所在地 = {{ill|Toyama Prefecture|Q132929|qid=Q132929}}{{ill|Toyama (city)|Q204266|qid=Q204266}} Yatsuo-chō Kuroda 3928
+|位置 = {{WikidataCoord}}
+|祭神 = Sugiharahiko no Mikoto
+|社格 = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}、former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|創建 =
+|本殿 =
+|別名 =
+|例祭 =
+|神事 =
+|地図 = {{Location map|Japan Toyama|label=杉原神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Sugihara Shrine''' (すぎはらじんじゃ) is a shrine located in Kuroda, Yatsuo-chō, {{ill|Toyama (city)|Q204266|qid=Q204266}}, {{ill|Toyama Prefecture|Q132929|qid=Q132929}}.
+
+=== History ===
+Its founding date is unknown, but it is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} listed in the {{ill|Engishiki|ar|إنجيشيكي (كتاب ياباني)|de|Engishiki|es|Engishiki|fr|Engishiki|he|אנגישיקי|id|Engishiki|it|Engishiki|ja|延喜式|ko|엔기시키|min|Engishiki|mr|इंगिशिकी|nl|Engishiki|pt|Engishiki|ru|Энгисики|simple|Engishiki|tr|Engishiki|uk|Енґісікі|zh|延喜式|qid=Q1342448}}.
+
+=== Cultural properties ===
+* Tangible Cultural Property designated by Toyama Prefecture
+** Wooden seated statue of Sugihara no Kami
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+*[http://www.cty8.com/sugihara/ Official Sugihara Shrine website]
+*[http://www.pref.toyama.jp/sections/1103/reiki_int/reiki_honbun/ai00109411.html List of cultural properties in Toyama Prefecture]
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Sugihara Shrine (Q11521781)]][[Category:Shikinaisha|Sugihara Shrine (Q11521781)]][[Category:Shikinai Shōsha]]
+[[Category:Shikinai Supershrine]]
+[[Category:Shikinaisha in Etchū Province]]
+[[Category:富山市の神社]]
+[[Category:富山県の旧村社]]
+[[Category:Shikinaisha in Etchū Province]]
+
+[[Category:Git synced pages]]

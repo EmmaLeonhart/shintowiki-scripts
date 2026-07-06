@@ -1,0 +1,140 @@
+{{Expand Japanese|賀茂神社 (桐生市)}}
+
+{{Infobox religious building
+| name = Kamo Shrine (Q11634952)
+| native_name = 賀茂神社
+| image = Kamo-jinja (Kiryu), haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Kamo Shrine (Q11634952)
+| coordinates = {{coord|36.371016|139.349156}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kamo-wake-ikazuchi-no-Kami|lt=Kamo Wake-ikazuchi|en|Kamo Wake-ikazuchi|ja|賀茂別雷命|simple|Kamo Wake-ikazuchi|zh|賀茂別雷命|qid=Q11634943}}
+}}
+
+{{nihongo|'''Kamo Shrine'''|賀茂神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kōzuke Province]].
+
+{{commons category|Category:Kamo-jinja (Kiryu)}}
+[[ja:賀茂神社 (桐生市)]]
+
+{{wikidata link|Q11634952|commons|Category:Kamo-jinja (Kiryu)|ja|賀茂神社 (桐生市)|grok=none|check_date=2026-05-30}}
+
+== Japanese content ==
+{{神社
+|名称=Kamo Shrine
+|画像=[[File:Kamo-jinja (Kiryu), haiden.jpg|280px]]<br/>Haiden (worship hall)
+|所在地={{ill|Gunma Prefecture|Q129499|qid=Q129499}}{{ill|Kiryū, Gunma|Q634022|qid=Q634022}}{{ill|Hirosawa-chō|Q11485501|qid=Q11485501}} 6-833
+|位置= {{WikidataCoord}}
+|祭神={{ill|Kamo-wake-ikazuchi-no-Kami|Q11634943|qid=Q11634943|lt=Kamo Wakeikazuchi-no-kami}}
+|社格={{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (small)<br/>former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+|創建=(tradition) in the reign of the 10th emperor {{ill|Emperor Sujin|Q333530|qid=Q333530}}
+|例祭={{ill|October 14|Q2922|qid=Q2922}}
+|本殿={{ill|Nagare-zukuri|Q210684|qid=Q210684}} with copper-sheet roof
+|神事=Otabi ritual
+|地図= {{Location map|Japan Gunma|label=Kamo Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[File:Kamo-jinja (Kiryu), torii.jpg|thumb|250px|right|{{center|Torii}}]]
+'''Kamo Shrine''' (かもじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Hirosawa-chō|Q11485501|qid=Q11485501}}, {{ill|Kiryū, Gunma|Q634022|qid=Q634022}}, {{ill|Gunma Prefecture|Q129499|qid=Q129499}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and under the former {{ill|Q712534|lt=shrine ranking system}} it was a {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+
+=== Enshrined deity ===
+* {{ill|Kamo-wake-ikazuchi-no-Kami|Q11634943|qid=Q11634943|lt=Kamo Wakeikazuchi-no-kami}}
+
+=== History ===
+Tradition says that in the reign of {{ill|Emperor Sujin|Q333530|qid=Q333530}}, {{ill|Prince Toyokiirihiko|Q11633375|qid=Q11633375}} invited a Kamo deity from {{ill|Yamashiro Province|Q749276|qid=Q749276}}{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=200-202}}.
+
+In {{ill|Enryaku|de|Enryaku|es|Enryaku|fa|انریاکو|fr|Ère Enryaku|ia|Enryaku|id|Enryaku|it|Enryaku|ja|延暦|ko|엔랴쿠|pt|Enryaku|ru|Энряку (нэнго)|simple|Enryaku|sr|Енрјаку|tr|Enryaku|uk|Енряку (ненґо)|zh|延曆|zh_yue|延曆|qid=Q1373176}} 15 ({{ill|796|Q33452|qid=Q33452}}), it was listed as a {{ill|UNKNOWN|lt=kansha}} together with {{ill|Miwa Shrine (Kiryu)|Q11608848|qid=Q11608848|lt=Miwa Shrine}} (''{{ill|Nihon Kōki|Q1077029|qid=Q1077029}}''){{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=198-200}}{{Sfn|Kiryu City History Editorial Committee|1958|p=187}}.
+
+In {{ill|Gangyō|Q747451|qid=Q747451}} 4 ({{ill|880|Q23618|qid=Q23618}}), along with Miwa Shrine, {{ill|Kawasukune Shrine|Q84978067|qid=Q84978067|lt=Kohanoyado Hokora Shrine}}, and {{ill|Obori Shrine|Q11463293|qid=Q11463293|lt=Kohori Shrine}}, it was granted Senior Fifth Rank Lower, Merit Grade 12 (''{{ill|Nihon Sandai Jitsuroku|cs|Nihon Sandai Džicuroku|de|Nihon Sandai Jitsuroku|es|Nihon Sandai Jitsuroku|fa|نیهون ساندای جیتسوروکو|ff|Nihon Sandai Jitsuroku|fr|Nihon sandai jitsuroku|it|Nihon Sandai Jitsuroku|ja|日本三代実録|ko|일본삼대실록|pt|Nihon Sandai Jitsuroku|ru|Нихон сандай дзицуроку|simple|Nihon Sandai Jitsuroku|zh|日本三代實錄|zh_classical|日本三代實錄|qid=Q1052981|lt=Sandai Jitsuroku}}''){{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=198-200}}{{Sfn|Kiryu City History Editorial Committee|1958|p=187}}.
+
+In the Engishiki register it appears as Kamo Shrine, small shrine, Yamada District ({{ill|Yamada District, Gunma|Q8047593|qid=Q8047593|lt=Yamada District}}){{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=198-200}}{{Sfn|Kiryu City History Editorial Committee|1958|p=187}}.
+
+In the ''Kozuke no Kuni Jinmyocho'', it appears as "Junior First Rank Kamo Daimyojin"{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=198-200}}.
+
+There is a tradition that when {{ill|Minamoto no Yoshiie|Q32613|qid=Q32613}} departed for the {{ill|Gosannen War|Q1187411|qid=Q1187411}}, he prayed at this shrine and performed {{ill|Kagura|Q1348260|qid=Q1348260}} on his triumphant return{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=198-200,1086-1087}}.
+
+Adjacent Hōraku-ji was formerly this shrine's {{ill|Bettō-ji|ja|別当寺|qid=Q11396755}}; a wooden carved {{ill|kakebotoke|Q108461401|qid=Q108461401}} preserved there (Kiryu City designated important cultural property) is thought to have been this shrine's principal icon from the {{ill|Muromachi period|Q334845|qid=Q334845}}{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=389-390}}<ref>{{Cite web |title=Hōraku-ji principal icon |url=https://www.city.kiryu.lg.jp/kankou/bunkazai/1010700/shishitei/yuukei/1002087.html |website=www.city.kiryu.lg.jp |access-date=2024-08-20}}</ref>.
+
+In Meiji 5 (1872), it was listed as a gōsha{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=198-200}}.
+
+Late in the {{ill|Pacific War|Q184425|qid=Q184425}}, due to intensifying {{ill|Airstrike|Q2380335|qid=Q2380335}}, a cave shelter was dug behind the shrine to protect the {{ill|Shintai|de|Shintai|el|Σίνταϊ|es|Shintai|fa|شین‌تای|fi|Shintai|fr|Shintai|hr|Shintai|id|Shintai|ja|神体|jv|Shintai|ko|신체 (신토)|mk|Шинтаи|pl|Go-shintai|pt|Shintai|ru|Синтай (синтоизм)|simple|Shintai|sr|Шинтаи|tr|Shintai|uk|Сінтай (синто)|zh|神體|qid=Q327532}} and worshipers; on May 24, {{ill|1945|Q5240|qid=Q5240}} (Showa 20), the sacred objects and treasures were transferred there<ref>{{Cite book|和書 |title=Kiryu City History |date=1961-12-25 |year=1961 |publisher=Kiryu City History Publishing Committee |ref=harv |author=Kiryu City History Editorial Committee |doi=10.11501/3024355 |pages=268-270 |volume=Lower volume}}{{要登録}}</ref>.
+
+=== Legends ===
+A tailless {{ill|Japanese rat snake|Q2562020|qid=Q2562020}} is regarded as this shrine's {{ill|Shinshi|Q10444973|qid=Q10444973}}, and killing one is said to bring a curse{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|p=1086}}.
+
+The deity is said to dislike white horses, so parishioners do not keep them. It is said that even passing in front of the shrine while leading a white horse caused curses{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|p=1086}}.
+
+Parishioners are also said to avoid blacksmithing and barrel-making, because the sounds are disliked by the deity{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|p=1086}}.
+
+Parishioners are also said not to grow upland rice ({{ill|Upland rice|Q3434007|qid=Q3434007}}), because either it would not bear grain or misfortune would occur{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=1073-1074}}.
+
+=== Precinct ===
+<gallery>
+File:Kamo-jinja (Kiryu), honden.jpg|Main hall
+File:Kamo-jinja (Kiryu), tourou.jpg|Stone lantern (Kiryu City designated cultural property)
+File:Kamo-jinja (Kiryu), mikoshisha and kaguraden.jpg|Mikoshi storehouse / Kagura hall
+File:Kamo-jinja (Kiryu), momi.jpg|Fir tree (Gunma Prefecture designated natural monument)
+</gallery>
+
+=== Subsidiary shrines ===
+* Shimokamo Shrine
+* Katori Shrine
+* Kashima Shrine
+* Yasaka Shrine
+* Toyoki Shrine
+<gallery>
+File:Kamo-jinja (Kiryu), keidaisha-1.jpg|Kamo-Mioya Shrine
+File:Kamo-jinja (Kiryu), keidaisha-3.jpg|Katori Shrine / Kashima Shrine
+File:Kamo-jinja (Kiryu), keidaisha-2.jpg|Yasaka Shrine
+File:Kamo-jinja (Kiryu), keidaisha-4.jpg|Toyoki Shrine
+</gallery>
+
+=== Cultural properties ===
+=== Gunma Prefecture designated cultural properties ===
+* {{ill|UNKNOWN|lt=Natural monument}}
+** {{ill|Abies firma|Q1718147|qid=Q1718147}} grove of Kamo Shrine - designated March 27, 2008 (Heisei 20)<ref>[https://www.city.kiryu.lg.jp/kankou/bunkazai/1010700/kenshitei/1001960.html Fir grove of Kamo Shrine] (Kiryu City website).</ref>.
+
+=== Kiryu City designated cultural properties ===
+* Important cultural property (tangible cultural property)
+** Stone lantern of Kamo Shrine - made in 1378 (Eiwa 4), {{ill|Nanboku-chō period|Q264012|qid=Q264012|lt=Nanboku-cho period}}. Designated March 14, 1996 (Heisei 8)<ref>[https://www.city.kiryu.lg.jp/kankou/bunkazai/1010700/shishitei/yuukei/1002036.html Stone lantern of Kamo Shrine] (Kiryu City website).</ref>.
+* Intangible folk cultural properties
+** Kamo Shrine Dada Kagura - designated January 21, 1974 (Showa 49)<ref>[https://www.city.kiryu.lg.jp/kankou/bunkazai/1010700/shishitei/mukei/1002098.html Kamo Shrine Dada Kagura] (Kiryu City website).</ref>.
+** Kamo Shrine Otabi ritual - designated April 11, 1991 (Heisei 3)<ref>[https://www.city.kiryu.lg.jp/kankou/bunkazai/1010700/shishitei/mukei/1002097.html Kamo Shrine Otabi ritual] (Kiryu City website).</ref>. Held on the night of Setsubun. A rope boundary is set in the precinct to form an otabi fire ground, brushwood is piled and lit, and parishioners divide into two groups carrying burning bundles and throw sacred fire at each other three times with shouted calls{{Sfn|Kiryu City History Supplementary Volume Editorial Committee|1971|pp=203-204}}.
+
+=== Nearby ===
+
+* {{ill|Hikobe Family Manor|Q11487959|qid=Q11487959}}
+* {{ill|Maehara 20th Gallery and Museum in Kiryu|Q11537352|qid=Q11537352}}
+* {{ill|Kiryu bypass|Q11537263|qid=Q11537263}} ({{ill|Japan National Route 50|Q2912151|qid=Q2912151}} / {{ill|Japan National Route 122|Q6156748|qid=Q6156748}})
+
+=== Notes ===
+{{脚注ヘルプ}}
+{{Reflist|2}}
+
+=== References ===
+* {{Cite book|和書 |title=Kiryu City History |date=1958-8-15 |year=1958 |publisher=Kiryu City History Publishing Committee |ref=harv |author=Kiryu City History Editorial Committee |doi=10.11501/3024325 |volume=Upper volume}}{{要登録}}
+* {{Cite book|和書 |title=Kiryu City History |date=1971-3-1 |year=1971 |publisher=Kiryu City Hall |ref=harv |editor=Kiryu City History Supplementary Volume Editorial Committee |volume=Supplementary volume |doi=10.11501/3021305}}{{要登録}}
+
+=== See also ===
+{{Commonscat|Kamo-jinja (Kiryu)}}
+
+* {{ill|List of Shikinaisha in Kōzuke Province|Q11360308|qid=Q11360308}}
+* {{ill|Iizuka Harutarō|Q85271286|qid=Q85271286}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Kamo Shrine (Kiryu)]][[Category:Shikinaisha|Kamo Shrine (Kiryu)]][[Category:Shikinaisha|Kamo Shrine (Kiryu)]][[Category:Shikinaisha in Kōzuke Province]]
+[[Category:Shinto shrines in Gunma Prefecture]]
+[[Category:桐生市の歴史]]
+[[Category:Buildings and structures in Kiryu]]
+[[Category:Shikinaisha in Kōzuke Province]]
+[[Category:Former Gō-sha in Gunma Prefecture]]
+[[Category:Kamo Shrines]]
+[[Category:Natural Monuments Designated by Gunma Prefecture]]
+[[Category:Municipal Tangible Cultural Properties in Gunma Prefecture]]
+[[Category:Municipal History of Kiryū]]
+
+[[Category:Git synced pages]]

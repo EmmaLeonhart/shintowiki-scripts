@@ -1,0 +1,70 @@
+{{Expand Japanese|和合春日神社}}
+
+{{Infobox religious building
+| name = Wagō Kasuga Shrine
+| native_name = 和合春日神社
+| image = Wagokasuga Shrine.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Wagō Kasuga Shrine
+| coordinates = {{coord|35.10111111111111|137.05277777777778}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ame-no-Koyane|lt=Ame-no-Koyane|en|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508}}
+}}
+
+{{nihongo|'''Wagō Kasuga Shrine'''|和合春日神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
+
+[[ja:和合春日神社]]
+
+{{wikidata link|Q11417191|ja|和合春日神社|grok=none|check_date=2026-05-27}}
+
+== Japanese content ==
+{{出典の明記|date=2017年3月3日 (金) 23:02 (UTC)}}
+{{神社
+|名称   = '''Wagō Kasuga Shrine'''
+|画像   = [[File:Wagokasuga Shrine.jpg|250px]]<br />Worship hall
+|所在地 = {{ill|Aichi Prefecture|Q80434|qid=Q80434}}{{ill|Aichi District|Q552687|qid=Q552687|lt=Aichi District}}{{ill|Tōgō, Aichi|Q265050|qid=Q265050}} Wagō Minami-kayadani 168
+|位置 = {{WikidataCoord}}
+|祭神   = {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}
+|社格   = 
+|創建   = 
+|本殿   = 
+|別名   = 
+|例祭   = 
+|神事   = 
+|地図 = {{Location map|Japan Aichi|label=Wagō<br />Kasuga Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Wagō Kasuga Shrine''' (わごうかすがじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in the Wagō area of {{ill|Tōgō, Aichi|Q265050|qid=Q265050}}, {{ill|Aichi District|Q552687|qid=Q552687|lt=Aichi District}}, {{ill|Aichi Prefecture|Q80434|qid=Q80434}}.
+
+=== Enshrined deities ===
+'''Main deity'''
+*{{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}
+'''Associated deities'''
+*{{ill|Amaterasu|Q455602|qid=Q455602}}
+*{{ill|Ōyamatsumi|lt=Ōyamatsumi|Q386563|qid=Q386563|qid=Q386563|lt=Ōyamatsumi-no-Mikoto}}
+*Kikuri-hime no Mikoto
+*Kagutsuchi no Mikoto
+
+=== Notes ===
+{{脚注ヘルプ}}
+{{Reflist}}
+
+{{神道 横}}
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Wagō Kasuga Shrine]][[Category:Shikinaisha|Wagō Kasuga Shrine]][[Category:Shikinai Ronsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:Kasuga shrines]]
+[[Category:Shinto shrines in Aichi Prefecture]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:東郷町の建築物]]
+[[Category:東郷町の歴史]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,152 @@
+{{Expand Japanese|御井神社 (各務原市)}}
+
+{{Infobox religious building
+| name = Mii Shrine (Q11488771)
+| native_name = 御井神社
+| image = Mii jinja Kakamigahara2008-2.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Mii Shrine (Q11488771)
+| coordinates = {{coord|35.38968|136.837527}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kimata-no-Kami|lt=Ki no mata no kami|ja|木俣神|zh|木俁神|qid=Q11092833}}
+}}
+
+{{nihongo|'''Mii Shrine'''|御井神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
+
+{{commons category|Category:Mii-jinja (Kakamigahara)}}
+[[ja:御井神社 (各務原市)]]
+
+{{wikidata link|Q11488771|commons|Category:Mii-jinja (Kakamigahara)|ja|御井神社 (各務原市)|grok=none|check_date=2026-06-01}}
+
+== Japanese content ==
+{{Shrine
+ | name = Mii Shrine
+ | image = [[File:Mii jinja Kakamigahara2008-2.jpg|250px]]<br />Torii and haiden
+ | location = {{ill|Gifu Prefecture|Q131277|qid=Q131277}}{{ill|Kakamigahara|Q641491|qid=Q641491}} Mii-cho 5-8
+ | deity = {{ill|Kimata-no-Kami|Q11092833|qid=Q11092833|lt=Mii-no-kami}}
+ | coordinates = {{ウィキ座標2段度分秒|35|23|23.35|N|136|50|15.33|E|display=title,inline}}
+ | status = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (small)<br/>{{ill|Kinpei-sha|Q119929592|qid=Q119929592}}
+ | founded = Unknown
+ | annual_festival = Third Saturday/Sunday of October
+ | map = {{Location map|Japan Gifu|lat_deg=35|lat_min=23|lat_sec=23.3|lon_deg=136|lon_min=50|lon_sec=15.3|label=Mii Shrine|position=top|width=210|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=210|coord={{coord|35|23|23.35|N|136|50|15.33|E}}}}
+}}
+
+'''Mii Shrine''' (みいじんじゃ) is a Shinto shrine in {{ill|Kakamigahara|Q641491|qid=Q641491}}, {{ill|Gifu Prefecture|Q131277|qid=Q131277}} (former Kakamigun, Mino Province).
+
+=== Overview ===
+It is listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}. Mii-no-kami is worshiped as a deity of trees, water, and safe childbirth. The area is rich in groundwater, and Kakamigahara's water-source facilities are nearby. Historically, {{ill|Mount Mii|Q11354265|qid=Q11354265}} itself was considered part of the shrine precinct.
+
+Originally the local tutelary shrine of Mii Village (Saraki-mura), it is now regarded as the tutelary shrine of the Inaba area of Kakamigahara. It is one of the city's five {{ill|Kinpei-sha|Q119929592|qid=Q119929592}} shrines.
+
+=== History ===
+The founding date is unknown. Tradition says the original shrine stood on the south slope of Mt. Mii and later moved to the summit. In the Sengoku period, {{ill|Miiyama Castle|Q11354255|qid=Q11354255}} was built on the mountain by Toki-affiliated forces, and the shrine was moved to its current otabisho-area location at the foot of the mountain. A portion of the shrine was also divided and became Tenjin Shrine in Kaminakaya.
+
+Mii Castle fell in 1548 during conflict between the Toki and Saito sides and was abandoned.
+
+The current honden, noritoden, and haiden were completed in 1941.<ref name="mii">Shikinaikinpei Mii Jinja guide booklet.</ref> On December 18, 1952, it was designated a Kinpeisha by the Gifu Prefectural Association of Shinto Shrines.{{sfn|木村|1997|p=73}}
+
+A ritual called ''sakaura shinji'' is held on the first Sunday of April: sake is poured into a bamboo segment with a small hole, sealed with paper, purified, and cast into a pond; if it sinks, the year is expected to be rainy and abundant, and if it floats, drought and poor harvest are expected.
+
+=== Enshrined deities ===
+=== Main deity ===
+* {{ill|Kimata-no-Kami|Q11092833|qid=Q11092833|lt=Mii-no-kami}}
+=== Goshi (merged deities) ===
+* {{ill|Kuni-no-Tokotachi|lt=Kunitokotachi|Q478504|qid=Q478504|qid=Q478504|lt=Kunitokotachi-no-kami}}
+* {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-kami}}
+=== Subsidiary shrines ===
+* Shinmei Shrine ({{ill|Amaterasu|Q455602|qid=Q455602}})
+* Mikuwa Shrine ({{ill|Ukemochi|Q2280323|qid=Q2280323}})
+* Akiba Shrine ({{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Hi-no-Kagutsuchi-no-kami}})
+* Sumiyoshi Shrine ({{ill|Sumiyoshi sanjin|Q1114013|qid=Q1114013}})
+
+=== Other monuments ===
+* {{ill|monument to the loyal dead|Q11274518|qid=Q11274518|lt=Russo-Japanese War memorial}} (1909)
+* Statue of {{ill|Nogi Maresuke|Q468122|qid=Q468122}} (1936)
+* Statue of {{ill|Ninomiya Sontoku|Q968964|qid=Q968964}}
+
+=== Major rituals ===
+* Jan 1: Saitansai / New Year's festival
+* Feb 10: Mikuwa festival
+* Old lunar Feb 14: Akiba festival
+* Third Sunday of Feb: Kinen-sai
+* Mar 15: Sumiyoshi festival
+* First Saturday of Apr: Okunomiya festival and Suijin festival
+* First Sunday of Apr: Chinka-sai
+* Jun 30: Summer purification
+* Oct (second Sunday): Grand festival
+* Nov (fourth Sunday): Niiname-sai
+* Dec 30: Year-end purification
+* Dec 31: Joya festival
+* Monthly: 1st day and 15th day rites
+
+=== Cultural properties ===
+; Kakamigahara City designated cultural properties
+* Komainu of Mii Shrine (one pair)<ref name="city">{{Cite web|ja|date=2024-08-20|url=https://www.city.kakamigahara.lg.jp/kankobunka/bunkazai/1005178.html|title=City designated cultural properties|publisher=Kakamigahara City|accessdate=2013-04-25}}</ref><ref name="mii"/>
+* Archaeological materials excavated from Mii Kofun (3 items)<ref name="city"/><ref name="mii"/>
+
+=== Location ===
+* {{ill|Gifu Prefecture|Q131277|qid=Q131277}}{{ill|Kakamigahara|Q641491|qid=Q641491}}{{ill|Mii-cho|Q131870038|qid=Q131870038|lt=Mii-cho}} 5-8
+
+=== Transport ===
+* Kakamigahara Fureai Bus (Inaba line), get off at "Mii-cho Kominkan-mae," about 3 minutes on foot.
+
+=== Okunomiya ===
+[[File:Mii Shrine at Mount Mii 2010-12-19.jpg|thumb|right|200px|Okunomiya of Mii Shrine near the summit of Mt. Mii]]
+Near the summit of Mt. Mii, where the former shrine once stood. It was divided from Mii Shrine after the fall of Mii Castle (date unknown).
+
+Mt. Mii also has ritual sites associated with iwakura worship and many excavated artifacts, as well as a kofun (Miiyama Kofun).
+
+=== Deity ===
+* Mii-no-kami
+=== Address ===
+* Government land without lot number, Naka, Kakamigahara (near summit of Mt. Mii)
+
+=== Miiike Ryujin Shrine ===
+A separate shrine of Mii Shrine, also called "Mii Shrine Ikenomiya" or "Miiike Ryujin Shrine." Mii Pond at the foot of Mt. Mii is said to have been dug by Mii-no-kami and is an oxbow-lake remnant of the old Kiso River channel.
+
+In 1929, during landfill work around Mii Pond, a worker operating an irrigation pump reportedly entered a trance and moved like a dragon crawling on the ground; after this and related experiences, a small shrine was established by enshrining the spirit of Mii Shrine together with a dragon deity.{{Sfn|前渡歴史保存会|2024|p=39}} The present building was reconstructed in 1976 using part of old materials.
+
+=== Deity ===
+* Dragon deity (Miiike Ryujin / Miike Ryujin)
+
+=== Precinct shrines ===
+* Suijin
+* Kappa shrine
+
+=== Address ===
+* {{ill|Miiyamacho|Q133214736|qid=Q133214736}}, Kakamigahara (about 15 minutes on foot from Mii Shrine)
+
+=== Notes ===
+{{脚注ヘルプ}}
+{{Reflist}}
+
+=== References ===
+* {{Cite book |ja |editor=Maedo History Preservation Society |title=Shrines and Temples: Kakamigahara Inaba District Edition |publisher=Maedo History Preservation Society |date=2024 |ref={{SfnRef|前渡歴史保存会|2024}}}}
+* {{Cite book |ja |editor=Akira Kimura |title=Visits to Major Shrines of Gifu Prefecture |publisher={{ill|Nagara Tenjin Shrine|Q3335060|qid=Q3335060}} |date=1997 |ref={{SfnRef|木村|1997}}}}
+
+=== See also ===
+* {{ill|Tejikaraō Shrine (Kakamigahara)|Q11496922|qid=Q11496922}}
+* {{ill|Murakuni Shrine|Q11523055|qid=Q11523055}}
+* {{ill|Murakuni Masumida Shrine|Q11523053|qid=Q11523053}}
+* {{ill|Kasami Shrine|Q11398477|qid=Q11398477}}
+
+=== External links ===
+* {{Instagram|miijinja|Mii Shrine}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Mii Shrine (Kakamigahara)]][[Category:Shikinaisha|Mii Shrine (Kakamigahara)]][[Category:Shikinai Shōsha]]
+[[Category:Shikinai Supershrine]]
+[[Category:Shikinaisha in Mino Province]]
+[[Category:Shinto shrines in Kakamigahara, Gifu]]
+[[Category:Shikinaisha in Mino Province]]
+[[Category:Municipal Tangible Cultural Properties in Gifu Prefecture]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,223 @@
+{{Expand Japanese|阿彌神社 (阿見町中郷)}}
+
+{{Infobox religious building
+| name = Ami Shrine (Q17191824)
+| native_name = 阿祢神社
+| image = Entrance of Ami-jinja Shrine (Ami town, Ibaraki prefecture).jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ami Shrine (Q17191824)
+| coordinates = {{coord|36.042173|140.212192}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Prince Toyokiirihiko|ja|豊城入彦命|qid=Q11633375|lt=Prince Toyokiirihiko}}
+}}
+
+{{nihongo|'''Ami Shrine'''|阿祢神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Hitachi Province]].
+
+{{commons category|Category:Ami Jinja (Nakagō)}}
+[[ja:阿彌神社 (阿見町中郷)]]
+
+{{wikidata link|Q17191824|commons|Category:Ami Jinja (Nakagō)|ja|阿彌神社 (阿見町中郷)|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Footnote shortage|date=March 2020}}
+{{Shrine
+|Name = Ami Shrine
+|Image = [[File:Main shrine of Ami-jinja Shrine (Nakago, Ami town, Ibaraki prefecture).jpg|270px]]<br />Haiden (worship hall)
+|Location = {{ill|Ibaraki Prefecture|Q83273|qid=Q83273}}{{ill|Inashiki District, Ibaraki|Q1154673|qid=Q1154673}}{{ill|Ami, Ibaraki|Q1203814|qid=Q1203814}} Nakagō 2-chōme 25
+|Coordinates = {{WikidataCoord}}
+|Enshrined deity = {{ill|Prince Toyokiirihiko|ja|豊城入彦命|qid=Q11633375}}
+|Shrine rank = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br />Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}
+|Founded = {{ill|Wadō (era)|Q1373026|qid=Q1373026}} 1st year ({{ill|708|Q23511|qid=Q23511}})
+|Main hall = One-bay {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|Other name = (Kashima) Myōjin
+|Pilgrimage =
+|Annual festival = October 1
+|Rituals =
+|Map = {{Location map|Japan Ibaraki|label=Ami Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[File:Entrance of Ami-jinja Shrine (Ami town, Ibaraki prefecture).jpg|thumb|{{center|Shrine grounds entrance}}]]
+[[File:Torii of Ami-jinja Shrine (nakago,Ami town, Ibaraki prefecture).jpg|thumb|{{center|Torii gate}}]]
+'''Ami Shrine''' (Ami-jinja, also written 阿弥神社) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located at Nakagō 2-chōme 25, {{ill|Ami, Ibaraki|Q1203814|qid=Q1203814}}, {{ill|Inashiki District, Ibaraki|Q1154673|qid=Q1154673}}, {{ill|Ibaraki Prefecture|Q83273|qid=Q83273}}<ref name="住所"/> (formerly Ami Village, {{ill|Shida district|Q11386034|qid=Q11386034}}). In {{ill|Meireki|Q1192766|qid=Q1192766}}-era {{ill|Munafuda|Q8008834|qid=Q8008834}} it was called “Daimyōjin,” and in mid-Edo-period sources it was referred to as “Kashima Myōjin”<ref name="amim"/>. Together with the shrine of the same name located in Takekura, Ami Town ({{ill|Ami Shrine|Q17191825|qid=Q17191825|lt=Ami Shrine}}), it is a candidate shrine ({{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}) for the minor shrine “{{ill|Ami Shrine|Q16276818|qid=Q16276818}}” listed among the two shrines of Shida District, {{ill|Hitachi Province|cs|Provincie Hitači|de|Provinz Hitachi|es|Provincia de Hitachi|fa|ولایت هیتاچی|fr|Province de Hitachi|gl|Provincia de Hitachi|hak|Hitachi-koet|id|Provinsi Hitachi|it|Hitachi (provincia)|ja|常陸国|ko|히타치국|lt|Hitačio žemė|nl|Hitachi (provincie)|pt|Província de Hitachi|ru|Хитати (провинция)|simple|Hitachi Province|sk|Hitači (provincia)|sr|Провинција Хитачи|tr|Hitachi (vilayet)|uk|Провінція Хітаті|zh|常陸國|zh_min_nan|Hitati-kok|zh_yue|常陸國|qid=Q1055353}}, in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}. Under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}, it was ranked as a former village shrine.
+
+=== Enshrined deities ===
+[[File:Inari-jinja Shrine in the Ami-jinja Shrine precincts (Nakago, Ami town, Ibaraki prefecture).jpg|thumb|{{center|Inari Shrine within the precincts}}]]
+; Principal deity
+:{{ill|Prince Toyokiirihiko|ja|豊城入彦命|qid=Q11633375}}
+; Associated deities<ref name="meiji"/>
+:{{ill|Emperor Ōjin|Q317997|qid=Q317997|lt=Emperor Ōjin}}
+:{{ill|Ame-no-Uzume|Q462803|qid=Q462803|lt=Ame-no-Uzume no Mikoto}}
+:{{ill|Kumano Taisha|ja|熊野大社|simple|Kumano Taisha|zh|熊野大社|qid=Q11568887|lt=Kumano Kamurogi Kushimikenu no Mikoto}}
+:{{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728|lt=Uka-no-Mitama no Mikoto}}
+:{{ill|Kumano Gongen|Q11568925|qid=Q11568925|lt=Hayatama no O no Mikoto}}
+:{{ill|Futsunushi|lt=Futsunushi|UNKNOWN|qid=Q1107286|lt=Futsunushi no Kami}}
+:{{ill|Takamimusubi|lt=Takamimusubi|UNKNOWN|qid=Q125400|lt=Takamimusubi no Kami}}
+:{{ill|Kikurihime|Q11619891|qid=Q11619891|lt=Kikurihime no Mikoto}}
+:{{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Kagutsuchi no Mikoto}}
+:{{ill|Izanami|Q682306|qid=Q682306|lt=Izanami no Mikoto}}
+:{{ill|Kumano Gongen|Q11568925|qid=Q11568925|lt=Kotowake no O no Mikoto}}
+:{{ill|Amaterasu|lt=Amaterasu Ōmikami|qid=Q455602}}
+:{{ill|Takemikazuchi|lt=Takemikazuchi|Q1502690|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi no Mikoto}}
+
+The thirteen associated deities were enshrined together during shrine consolidations in the late Meiji period<ref name="合併"/>.
+# December {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} 39 (1906): Four unranked shrines within the village were merged.
+#* Kumano Shrine (Kumano Kamurogi Kushimikenu no Mikoto, Kikurihime no Mikoto, Izanami no Mikoto, Hayatama no O no Mikoto, Kotowake no O no Mikoto)
+#* Katori Shrine (Futsunushi no Kami)
+#* Tenshō Daijingū (Amaterasu Ōmikami)
+#* Kōsanrei Shrine (Takamimusubi no Mikoto)
+# March Meiji 41 (1908): Five unranked shrines in Ōmuro and four in Karasuyama were merged.
+#* Kashima Shrine, Atago Shrine, Yasaka Shrine, Hachiman Shrine, Kumano Shrine
+#* Kashima Shrine, Suzu Shrine, Hachiman Shrine, Inari Shrine
+# April Meiji 41 (1908): One unranked shrine in Mawarido was merged.
+#* Togami Shrine (Futsunushi no Kami)
+
+Togami Shrine continues to exist as an independent shrine (Mawarido, Ami Town). It originally had close ties with the Takekura Ami Shrine.
+
+=== Subsidiary shrines ===
+According to the {{ill|Fuken Gōsha Meiji Jinja Shiryō|Q11486103|qid=Q11486103|lt=Meiji Shrine Records}}, the following seven shrines are listed:
+* Aomasa Shrine (Ame-no-Koyane no Mikoto, {{ill|UNKNOWN|lt=Tajikarao no Mikoto}})
+* Dōso Shrine ({{ill|Kunado-no-Kami|Q2963653|qid=Q2963653|lt=Kunado no Mikoto}})
+* Two Hachiman Shrines (Honda Wake no Mikoto)
+* Inari Shrine (Ukemochi no Mikoto)
+* Hie Shrine ({{ill|Oyamakui no Kami|qid=Q10935105|lt=Ōyamakui no Mikoto}})
+* Suwa Shrine (Futsunushi no Mikoto)
+
+Behind the right side (west side) of the main hall are stone shrines of subsidiary deities, or stone shrines thought to have been relocated due to mergers.
+
+Among the subsidiary shrines, the largest is the Inari Shrine located on the left side (east side).
+
+In addition, on the west side of the precincts, the main hall ({{ill|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545}}) of Kasumigaura Shrine, formerly an on-base shrine of the old {{ill|Kasumigaura Air Group|Q11660814|qid=Q11660814}}, is preserved<ref name="amim"/>. Since it has been abolished, it has never been counted as an official subsidiary shrine, but in terms of building scale it is the largest.
+
+=== Festivals ===
+The annual festival is held on October 1.
+
+In addition to Shinto rituals, a {{ill|Tori-no-Ichi|Q11643942|qid=Q11643942}} market is held in late November.
+
+=== Main hall of Kasumigaura Shrine ===
+The {{ill|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545}} shrine building on the west side of the approach was the main hall of Kasumigaura Shrine, which stood within the grounds of the Kasumigaura Naval Air Corps<ref name="amim"/>.
+
+In {{ill|Taishō era|Q329174|qid=Q329174}} 11 (1922), the Kasumigaura Naval Air Unit was established in Ami Town. At first, due to insufficient technology for aircraft maintenance and operation, fatal training accidents occurred frequently. However, those who died in the line of duty were classified separately from {{ill|UNKNOWN|lt=war dead}} (those killed or deceased due to war) and were not formally enshrined at {{ill|Yasukuni Shrine|abstract|Q242803|ar|ضريح ياسوكوني|arz|ضريح ياس و كونى|az|Yasukuni məbədi|be|Ясукуні|br|Santual Yasukuni|ca|Santuari Yasukuni|cs|Svatyně Jasukuni|cv|Ясукуни храмĕ|da|Yasukuni-helligdommen|de|Yasukuni-Schrein|eo|Yasukuni-sanktejo|es|Santuario Yasukuni|eu|Yasukuni santutegia|fa|معبد یاسوکونی|fi|Yasukuni-jinja|fr|Yasukuni-jinja|he|מקדש יסוקוני|hi|यासुकुनी मंदिर|hr|Yasukuni hram|hu|Jaszukuni-szentély|id|Kuil Yasukuni|it|Santuario Yasukuni|ja|靖国神社|ko|야스쿠니 신사|la|Yasukuni|mn|Ясүкүни сүм|ms|Kuil Yasukuni|my|ယာစုကုနိ ဗိမာန်|nl|Yasukuni-schrijn|no|Yasukuni-helligdommen|pl|Yasukuni-jinja|pt|Santuário Yasukuni|ru|Ясукуни|sh|Hram Jasukuni|simple|Yasukuni Shrine|sk|Jasukuni|sl|Svetišče Jasukuni|sv|Yasukuni Jinja|th|ศาลเจ้ายาซูกูนิ|tr|Yasukuni Tapınağı|uk|Святилище Ясукуні|vi|Đền Yasukuni|wuu|靖國神社|zh|靖国神社|zh_classical|靖國神社|zh_yue|靖國神社|qid=Q242803}}. In Taishō 14 (1925), {{ill|Isoroku Yamamoto|Q152325|qid=Q152325}}, then vice commander and chief instructor of the air unit, proposed the establishment of a shrine to enshrine such aviation casualties. It is regarded as the earliest example of an on-base shrine dedicated to aviation casualties<ref name="坂井"/>. Incidentally, the {{ill|Tsuchiura All Japan Fireworks Competition|Q11423732|qid=Q11423732}} also originated in Taishō 14 (1925), when Akimoto Baifū, the head priest of Shinryū-ji Temple (Bunkyō-chō, {{ill|Tsuchiura|Q653446|qid=Q653446}}), launched fireworks to console the spirits of aviation casualties and to pray for the revival of the {{ill|Shōtengai|Q96288394|qid=Q96288394}} devastated by the {{ill|aftermath of 1923 Great Kantō earthquake|Q3742341|qid=Q3742341}}<ref name="丸山"/>.
+
+On October 23, Taishō 14 (1925), with the chief priest of {{ill|Kanda Shrine|Q717682|qid=Q717682}} presiding, a spirit-inviting ceremony was conducted for 25 {{ill|eirei|Q11617005|qid=Q11617005}} who had perished since the founding of the air unit. In March Taishō 15 (1926), a Shinmei-zukuri shrine building (one tsubo in area) was completed, and on April 30 of the same year, the Kasumigaura Shrine enshrinement ceremony was held. At that time, the shrine grounds included a sacred garden of over 600 tsubo. A record states: “Apart from work requiring specialized skills, all labor was devoted by the unit members, and the expenses of over 1,800 yen were entirely contributed by them” (Origin of the Construction of Kasumigaura Shrine)<ref name="坂井"/>. By the end of the war, 5,573 spirits had been enshrined at Kasumigaura Shrine, and the register of spirits comprised 16 volumes<ref name="平和記念館ブログ"/>.
+
+After Japan’s defeat, the main hall of Kasumigaura Shrine was moved to the precincts of Ami Shrine to avoid disposal. The spirit registers were hidden and dispersed among farming households, and in December {{ill|Shōwa era|Q327567|qid=Q327567}} 30 (1955), a memorial tower for former naval aviation casualties was erected by a commemorative association, and the registers were placed in its base. This {{ill|UNKNOWN|lt=memorial tower}} is located near the Nakagō Nursery School in Ami Town.
+
+At the {{ill|Tsuchiura Naval Air Corps|Q11423751|qid=Q11423751}} (now the {{ill|Japan Ground Self-Defense Force Ordnance School|Q11658530|qid=Q11658530}}), a similar Tsuchiura Air Corps Shrine existed; through the efforts of volunteers, its shrine building was relocated to a private residence, and its large torii gate was moved to Kashima Shrine in Kojirahazama, {{ill|Tsukuba|ar|تسوكوبا|arz|تسوكوبا|azb|تسوکوبا، ایباراکی|be|Цукуба|bg|Цукуба|ca|Tsukuba|ce|Цукуба|ceb|Tsukuba-shi|cs|Cukuba (Ibaraki)|de|Tsukuba (Ibaraki)|eo|Cukuba|es|Tsukuba (Ibaraki)|et|Tsukuba|eu|Tsukuba (Ibaraki)|fa|تسوکوبا|fi|Tsukuba|fr|Tsukuba|ga|Tsukuba|gl|Tsukuba|hy|Ծուկուբա|id|Tsukuba, Ibaraki|it|Tsukuba|ja|つくば市|ko|쓰쿠바시|mg|Tsukuba|mzn|تسوکوبا، ایباراکی|nl|Tsukuba|no|Tsukuba|pl|Tsukuba|pt|Tsukuba|ro|Tsukuba|ru|Цукуба|sh|Tsukuba|simple|Tsukuba|sr|Цукуба|sv|Tsukuba|tg|Тсукуба|th|สึกูบะ|tl|Tsukuba, Ibaraki|tr|Tsukuba|tt|Цукуба|uk|Цукуба (Ібаракі)|ur|تسوکوبا، ایباراکی|uz|Tsukuba|vi|Tsukuba|war|Tsukuba, Ibaraki|zh|筑波市|zh_classical|筑波市|zh_min_nan|Tsukuba-chhī|zh_yue|筑波|qid=Q273863}}, where they still exist<ref name="常陽リビング"/>.
+
+Some on-base shrines that avoided destruction through relocation continued to hold memorial services after the war, but in the case of Kasumigaura Shrine, the {{ill|Shintai|Q327532|qid=Q327532}} (spirit registers) were never returned. As a result, it has formally remained in an abolished state since its relocation, and no {{ill|Shimenawa|Q1887421|qid=Q1887421}} or {{ill|UNKNOWN|lt=sakaki}} are present. Nevertheless, certain preservation efforts have been made, such as maintaining the shrine enclosure and reinforcing the roof with corrugated metal sheets. Because it is a particularly conspicuous building, it may still become an object of worship regardless of whether visitors are aware of its history.
+
+=== History ===
+=== Orthodox tradition ===
+According to shrine tradition, the shrine was founded in {{ill|Wadō (era)|Q1373026|qid=Q1373026}} 1 ({{ill|708|Q23511|qid=Q23511}}).
+
+The shrine tradition consists of the place-name legend of “Ami,” which is also inherited in the current municipal name of Ami Town, and the founding legend of Ami Shrine. This orthodox tradition has been maintained before and after the war and is recorded on precinct information boards as well as in older records such as the {{ill|Fuken Gōsha Meiji Jinja Shiryō|Q11486103|qid=Q11486103|lt=Meiji Shrine Records}}<ref>{{Cite web |title=Meiji Shrine Records: Prefectural and Village Shrines |url=https://dl.ndl.go.jp/pid/1088244/1/616?page=left&keyword=%E9%98%BF%E5%BD%8C%E7%A5%9E%E7%A4%BE |website=dl.ndl.go.jp |access-date=May 15, 2025 |publisher=National Diet Library |year=1912 |editor=Meiji Shrine Records Editorial Office |author=Meiji Shrine Records Editorial Office |language=ja}}</ref>.
+:In the 18th year of {{ill|Emperor Sujin|Q333530|qid=Q333530}}, {{ill|Prince Toyokiirihiko|ja|豊城入彦命|qid=Q11633375}} was appointed to pacify the eastern provinces and once visited this area.
+:Reflecting on the merits of the “two thunder and Futsu deities” (Takemikazuchi no Kami and Futsunushi no Kami), Toyoki Irihiko no Mikoto declared: “When the imperial ancestors governed the realm, Ami Futō truly assisted the heavenly enterprise well. When the two deities completed their work, they returned to heaven—perhaps it was here.” From these words, the area came to be called Ami-gō.
+:In the 1st year of {{ill|Empress Genmei|Q233224|qid=Q233224}}’s {{ill|Wadō (era)|Q1373026|qid=Q1373026}} era (708), based on this tradition, a shrine was built here to enshrine Toyoki Irihiko no Mikoto and was named Ami Shrine.
+
+The term “Futō” in Toyoki Irihiko no Mikoto’s words corresponds to the deity name “Futō Ōkami” found in the Shida District entry of the {{ill|Hitachi no Kuni Fudoki|Q11481687|qid=Q11481687}}. This myth is recorded as an ancient event of “Takakuri.” Although the shrine tradition refers to “two deities,” in the Futō myth the deity who pacified the unruly gods of {{ill|Ashihara no Nakatsukuni|Q1096244|qid=Q1096244|lt=the Central Land of Reed Plains}} and then returned to heaven is only Futō Ōkami.
+
+Ami is an ancient place name traceable to the “Ami Shrine” in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} and the “Ami-gō” in the {{ill|Wamyō Ruijushō|Q2702542|qid=Q2702542}}<ref name="和名抄"/>, but it does not appear in extant manuscripts of the Hitachi Fudoki. Regarding its meaning, the Shinpen Hitachi Kokushi states: “Whether the village name arose from the Ami Shrine, or the shrine was named after the village, the origin of the name is unclear”<ref name="阿彌"/>.
+
+While the Shinpen Hitachi Kokushi assumes that the Shikinaisha Ami Shrine refers to the Takekura Ami Shrine, it notes that the territories of the ancient “Takakuri” and the later “Ami-gō” and “Takakuri-gō” after the Engishiki may have overlapped. From the standpoint of this shrine, one could interpret that the place Toyoki Irihiko no Mikoto visited was then called Takakuri, and the place where he referred to the old Futō myth later became known as Ami-gō. However, the shrine tradition does not assert that this land was the site of Futō Ōkami’s ascent to heaven; it merely conveys that Toyoki Irihiko no Mikoto enshrined here was based on his words suggesting that possibility.
+
+The Meiji Shrine Records add the consideration: “Since Toyoki Irihiko no Mikoto is the progenitor of the Ōami clan, perhaps this shrine was enshrined by his descendants,” linking it to the Ōami clan. This line of thought, focusing on the similarity between “Ami” and “Ōami,” already appears in late Edo-period Hitachi provincial studies.
+
+=== Alternative tradition ===
+The Shikinaisha Survey Report (vol. 11, 1976) records an alternative tradition summarized below<ref name="異伝"/>. From late Edo through Meiji-period gazetteers, shrine records, and current precinct information boards, this alternative tradition is not mentioned; thus, it is an apocryphal account not publicly told before or after the war.
+:In the summer of the 5th year of {{ill|Empress Kōken|Q232955|qid=Q232955}} (691), a light appeared offshore on {{ill|Lake Kasumigaura|Q1077984|qid=Q1077984}}. When fishermen cast their nets, a foreign being appeared amid wind and rain.
+:The being identified itself as “{{ill|Watatsumi|Q1474187|qid=Q1474187|lt=the Sea God}} {{ill|Sukunabikona|ca|Sukunabikona|fr|Sukunabikona|it|Sukuna-hikona|ja|スクナビコナ|ko|스쿠나비코나|mni|ꯁꯨꯀꯨꯅꯕꯤꯀꯣꯅ|pl|Sukunabikona|pt|Sukunahikona|simple|Sukunabikona|sv|Suku-Na-Bikona|zh|少彥名|qid=Q3275687|lt=the Little Deity}},” warned that the evil light of a great poisonous fish in Lake Kasumigaura would cause poor catches and national sorrow, and then sank beneath the waves. The clouds cleared and the waters grew calm.
+:The fishermen built a “Sea Shrine” to enshrine the “Sea God Little Deity” on purified land in the village, but later the shrine name shifted to “Ami Shrine” through phonetic change.
+:In the 2nd year of {{ill|Empress Kōken|Q232955|qid=Q232955}}’s Tenpyō-Shōhō era (750), Toyoki Irihiko no Mikoto was enshrined together by divine revelation.
+
+The Shinpen Hitachi Kokushi notes that Ami was written as “Net” (網) in {{ill|Kanbun Shuin Kaikō|Q11457491|qid=Q11457491|lt=Kanbun imperial grants}} and as “Ami” (安見) in the Genroku village registers, showing historical instances of writing the place name “Ami” as “Net.” However, no water-related beliefs or traces thereof are found at the present shrine. The main hall faces south (toward the Nakagō settlement, not north toward Lake Kasumigaura), and the shrine site is set somewhat back from the lakeside terrace cliff. Nevertheless, within the Nakagō settlement area, it lies to the north, closer to Lake Kasumigaura.
+
+As for the enshrinement of Toyoki Irihiko no Mikoto, if viewed as a transformation from sea or marine deity worship, there are points overlapping with the orthodox tradition. However, regarding the founding narrative, Meiji-period records contain an unnaturally small amount of investigation. It is possible that parts of {{ill|UNKNOWN|lt=oral tradition}} were lost due to Shikinaisha debates, or that traditions and folktales of shrines merged in the late Meiji period became involved.
+
+=== From the medieval period onward ===
+Regardless of the orthodox or alternative tradition, in the early modern period the enshrined deity was Takemikazuchi no Mikoto<ref name="amim"/>.
+* A copy of a ridge plaque from {{ill|Meireki|Q1192766|qid=Q1192766}} 3 (1657) states that the honji was the Eleven-faced Kannon (the honji of Takemikazuchi no Mikoto under the {{ill|UNKNOWN|lt=honji suijaku theory}}).
+* Sources from the Kyōhō–Meiwa period (1716–1771) state that Kashima Myōjin was enshrined.
+
+During the {{ill|UNKNOWN|lt=An’ei}} era (1772–1778), a Shikinaisha dispute arose over the Ami Shrine together with the Takekura Ami Shrine and Kumano Gongen, culminating in an appeal to the temple and shrine magistrate in {{ill|Bunsei|Q1327119|qid=Q1327119}} 12 (1829)<ref name="amim"/>. Today, Nakagō and Takekura are both regarded as candidate sites. Kumano Gongen was influential in the Edo period but declined after the lineage of priests ended and was merged into the Nakagō Ami Shrine. A tongue-shaped terrace to the north of this shrine is called “Tachi-no-Koshi no Gongen-yama”<ref name="昔ばなし"/>, and the place name “Kumano-waki” also remains.
+
+Judgments on the Shikinaisha dispute in pre-Meiji gazetteers are as follows:
+* Hitachi Shiryō Gungōkō identifies it with the Nakagō shrine, treating the Takekura shrine as the “Takakuri Shrine” of the Fudoki.
+* Shinpen Hitachi Kokushi identifies it with the Takekura shrine and contains no description of the Nakagō shrine.
+* {{ill|Jinja Kakuroku|Q11590708|qid=Q11590708}} states that the location is unclear, noting discrepancies between records.
+* Tokusen Jinmyōchō identifies it with the Takekura shrine.
+* Dai Nihon Chimei Jisho identifies it with the Nakagō shrine and strongly refutes the Takekura theory.
+* The Meiji Shrine Records summarize the debate, noting that both earlier and contemporary scholars identified the Nakagō shrine as the Shikinaisha.
+
+Geographically, Ami and Takekura have never overlapped territorially from at least the time of the Wamyō Ruijushō (Ami-gō and Takakuri-gō) until the incorporation of {{ill|Funashima|Q11613763|qid=Q11613763}} into Ami Town in {{ill|Shōwa era|Q327567|qid=Q327567}} 30 (1955). Ami inherited the place name from the Engishiki Jinmyōchō’s “Ami Shrine,” while Takekura inherited the “Takakuri” of the Hitachi Fudoki. Thus, until the mid-Shōwa period, the Takekura shrine bore a place name not used in Ami.
+
+In {{ill|Tenmei|Q1194121|qid=Q1194121}} 1 (1781), in response to the Shikinaisha dispute, the shrine name was changed from “Daimyōjin” to “Ami Shrine.” Around this time, the shrine tradition of enshrining only Toyoki Irihiko no Mikoto appears to have been established<ref name="amim"/>. The Shinpen Hitachi Kokushi adds a skeptical note regarding theories linking the shrine name and village name to Toyoki Irihiko no Mikoto, suggesting they stem from medieval Shinto interpretations rather than ancient tradition.
+
+In {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} 7 (1874), the shrine was ranked as a village shrine under the modern shrine ranking system.
+
+The shrine stands on a plateau between {{ill|Lake Kasumigaura|Q1077984|qid=Q1077984}}, the Seimei River, and tributaries of the Hanamuro River. Located north of the Nakagō settlement and away from former military development zones, it remained amid farmland without major road connections until the late {{ill|Shōwa era|Q327567|qid=Q327567}} period. The surrounding environment changed drastically from the {{ill|Heisei era|Q234510|qid=Q234510}} era onward.
+* In {{ill|Shōwa era|Q327567|qid=Q327567}} 62 (1987), a bypass section connecting the Saigō and Kasumidai intersections of the present {{ill|Ibaraki Prefectural Road Route 203|Q11617610|qid=Q11617610|lt=Ibaraki Prefectural Route 203 Tsuchiura–Ami Line}} was designated and opened by Heisei 2 (1990), making part of the area north of the shrine (behind the main hall) a road zone.
+* In Heisei 2 (1990), the Nakagō land readjustment project began.
+* In Heisei 4 (1992), {{ill|Japan National Route 125|Q6156756|qid=Q6156756}} and the {{ill|Ami Miho bypass|Q11657674|qid=Q11657674}} opened along the front approach.
+* On August 21, Heisei 22 (2010), a town boundary and address reorganization changed the address from “Ōaza Ami (Miyawaki)” to “Nakagō 2-chōme”<ref name="町名変更"/>.
+
+=== Nearby shrines ===
+; Kashima Shrine
+:Ibaraki Prefecture, Inashiki District, Ami Town, Aoyado 882 (formerly Aoyado Village, Shida District)
+:Enshrined deity: Takemikazuchi no O no Mikoto
+:* Date of foundation unknown; former unranked shrine.
+:* Guardian shrine of Aoyado, north of Ami. Located on an island-like terrace along Lake Kasumigaura, with the Aoyado Kofun group from around the 6th century within the precincts.
+:* Also a {{ill|war ruin|Q11495971|qid=Q11495971|lt=war relic}}. As the nearest high ground to the former Tsuchiura Naval Air Corps, air-raid shelters were dug there during the war. However, during an air raid on June 10, {{ill|Shōwa era|Q327567|qid=Q327567}} 20 (1945), the shelter entrance was bombed, burying fleeing airmen and instructors alive, resulting in 281 deaths and 119 injured. Six residents of Aoyado also perished. Today, an explanatory plaque from Ami Town’s “Top 100 Scenic Sites” and a “{{ill|World War II|Q362|qid=Q362}} Bombing Site Memorial Stone” stand within the precincts<ref name="amim"/>.
+
+=== Notes ===
+{{Footnote help}}
+{{Reflist|2|refs=
+<ref name="住所">The address before the town name change was “Ami 2353.”</ref>
+<ref name="amim">Ami Town, “Ami Town Top 100 Scenic Sites.”</ref>
+<ref name="昔ばなし">Ami Town, “Old Tales of Ami” (No. 8).</ref>
+<ref name="合併">Based on descriptions in the Ibaraki Prefecture Shrine Photo Album. For the nine shrines merged in March Meiji 41, the deity names are not listed. The Meiji Shrine Records list the first merger as occurring in Meiji 40.</ref>
+<ref name="丸山">{{Cite journal|Japanese|author=Yasuaki Maruyama |title=Folklore of Requiem Fireworks (Special Issue: Mourning and Remembrance) |journal=Osaka University Journal of Japanese Studies |issn=0286-4207 |publisher=Osaka University Faculty and Graduate School of Letters |year=2016 |month=mar |issue=35 |pages=25–45 |naid=120005741538 |url=https://hdl.handle.net/11094/55502}}</ref>
+<ref name="坂井">{{Cite journal|Japanese|author=Hisayoshi Sakai |title=Founding of On-base Shrines (A Source Study on Records and Narratives of War Experiences) |journal=Bulletin of the National Museum of Japanese History |issn=02867400 |publisher=National Museum of Japanese History |year=2008 |month=dec |volume=147 |pages=315–374 |naid=120005748681 |doi=10.15024/00001638 |url=https://doi.org/10.15024/00001638}} The description of Kasumigaura Shrine relies on this paper.</ref>
+<ref name="平和記念館ブログ">Yokaren Peace Memorial Museum Blog (Director’s Diary), “Monument to Console the War Dead,” August 4, 2017. Viewed March 2020.</ref>
+<ref name="常陽リビング">Jōyō Living, “Ibaraki History Walk.”</ref>
+<ref name="和名抄">In the Wamyō Ruijushō, “Ami” (written with the bow radical) is written as “Ane” (with the altar radical). The Shinpen Hitachi Kokushi notes that this is generally considered a scribal error.</ref>
+<ref name="郡郷考">The shrine of the same name in Izumo Province’s Kamido District referred to by the Gungōkō is the “Ane Shrine.” Depending on whether the Wamyō Ruijushō spelling is treated as an error, it may or may not be considered the same name.</ref>
+<ref name="阿彌">The expression “Ami Futō” can be interpreted either as the affectionate prefix “A-” or, if taken as a place-name legend, as referring to Futō Ōkami of a land called Ami.</ref>
+<ref name="町名変更">Ami Town, “Town Boundary, Name, and Address Reorganization Project,” February 18, 2015. Viewed March 2020.</ref>
+<ref name="meiji">Based on the Meiji Shrine Records.</ref>
+<ref name="異伝">The contents of the Shikinaisha Survey Report rely on “Thinking on the Shrine of the Gods.”</ref>
+}}
+
+=== References ===
+* Materials accessible via the National Diet Library and its Digital Collections.
+: Suzuka Nobutane et al., “Jinja Kakuroku.” Meiji 3 (1870).
+: Nakayama Nobuna and Kurita Hiroshi (eds.), “Shinpen Hitachi Kokushi, vol. 2.” Sekizenkan, Meiji 32–34 (1899–1901).
+: Yoshida Tōgo, “Dai Nihon Chimei Jisho, vol. 2, 2nd ed.” Fuzanbō, October 17, Meiji 40 (1907).
+: Meiji Shrine Records Editorial Office (ed.), “Meiji Shrine Records: Prefectural and Village Shrines (Upper).” Meiji 45 (1912).
+: Ministry of Doctrine (ed.), “Tokusen Jinmyōchō.” Taishō 14 (1925). Isobe Kōyōdō.
+: Ibaraki Shimbun, “Ibaraki Prefecture Shrine Photo Album.” Shōwa 16 (1942).
+* Miyamoto Mototama, “Hitachi Shiryō Gungōkō.” Man’en 1 (1860). Available via the National Institute of Japanese Literature. Viewed March 2020.
+* Ami Town, “History and Culture (Ami Town Top 100 Scenic Sites).” March Heisei 9. Viewed March 2020.
+* “Thinking on the Shrine of the Gods,” “Tour of Shikinaisha along the Southern Shore of Lake Kasumigaura—Hitachi Province Shida District.” Viewed November 9, 2013.
+* Jōyō Living, “Former Tsuchiura Air Corps Shrine – Tsuchiura City,” Ibaraki History Walk, September 18, 2008. Viewed November 9, 2013.
+* Jōyō Living, “Great Torii of the Former Tsuchiura Air Corps Shrine – Tsukuba City,” Ibaraki History Walk, June 13, 2008. Viewed November 9, 2013.
+
+{{Shinto horizontal}}
+{{List of Shinto shrines in Ibaraki Prefecture}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Ami Shrine (Nakagō)]][[Category:Shikinaisha|Ami Shrine (Nakagō)]][[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha in Hitachi Province]]
+[[Category:Shinto shrines in Ibaraki Prefecture]]
+[[Category:Former Gō-sha in Ibaraki Prefecture]]
+[[Category:Shikinaisha in Hitachi Province]]
+[[Category:阿見町の歴史]]
+[[Category:阿見町の建築物]]
+[[Category:Shinto shrines in Ibaraki Prefecture]]
+
+[[Category:Git synced pages]]

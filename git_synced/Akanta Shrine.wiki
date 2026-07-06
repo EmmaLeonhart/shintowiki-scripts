@@ -1,0 +1,77 @@
+{{Expand Japanese|赤田神社 (阿波市)}}
+
+{{Infobox religious building
+| name = Akanta Shrine
+| native_name = 赤田神社
+| image = Akanta Shrine, Awa, Tokushima.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Akanta Shrine
+| coordinates = {{coord|34.108111111111114|134.32313888888888}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Akanta Shrine'''|赤田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:赤田神社 (阿波市)]]
+
+{{wikidata link|Q48758374|ja|赤田神社 (阿波市)|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shrine
+|Name= Akanta Shrine
+|Image= [[File:Akanta Shrine, Awa, Tokushima.jpg|250px]]<br />Haiden (worship hall)
+|Location= {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Awa, Tokushima|Q791587|qid=Q791587}}{{ill|Donari-chō Narito|Q28692160|qid=Q28692160}} Aza Ōba 1450
+|Coordinates= {{WikidataCoord}}
+|Deities= {{ill|Takemikazuchi|qid=Q1502690|lt=Takemikazuchi-no-Mikoto}}<br />{{ill|Futsunushi|lt=Futsunushi-no-Kami|Q1107286|qid=Q1107286|qid=Q1107286|lt=Futsunushi-no-Mikoto}}
+|Shrine rank= {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}・{{ill|UNKNOWN|lt=Former village shrine}}
+|Founded= Unknown
+|Main hall= 
+|Other names= 
+|Annual festival= {{ill|October 18|Q2964|qid=Q2964}}
+|Rituals= 
+|Map= {{Location map|Japan Tokushima|label=Akanta Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Akanta Shrine''' (あかんたじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Awa, Tokushima|Q791587|qid=Q791587}}{{ill|Donari-chō Narito|Q28692160|qid=Q28692160}}. It is one of the {{ill|Shikinai Ronsha|ja|論社|qid=Q135022904}} (candidate shrines) of {{ill|Takefutsu Shrine|Q48758365|qid=Q48758365}}, and is classified as a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} and a former village shrine.
+
+=== History ===
+The year of foundation is unknown. In the '{{ill|Nihon Shoki|Q813935|qid=Q813935}}', there is a passage describing {{ill|Empress Jingū|Q232803|qid=Q232803}} performing divination regarding the outcome of the {{ill|Three Han Campaign|Q11249435|qid=Q11249435}}.
+
+The '{{ill|Jinja Kakuroku|Q11590708|qid=Q11590708}}' records: “The location of Kenfutsu Shrine is uncertain; some say it is in Akanoda Village.” Akanoda Village is the former name of Akata Village, which later became Narito Village (present-day {{ill|Donari-chō Narito|Q28692160|qid=Q28692160}}).
+
+=== Enshrined deities ===
+* {{ill|Takemikazuchi|qid=Q1502690|lt=Takemikazuchi-no-Mikoto}}
+* {{ill|Futsunushi|lt=Futsunushi-no-Kami|Q1107286|qid=Q1107286|qid=Q1107286|lt=Futsunushi-no-Mikoto}}
+
+=== Subsidiary shrines ===
+* Tenman-gū
+* Yamagami-gū
+
+=== Access ===
+* About 10 minutes by car from the “{{ill|Donari interchange|Q10927770|qid=Q10927770}}” on the {{ill|Tokushima Expressway|Q11490216|qid=Q11490216}}.
+
+=== References ===
+* ‘{{ill|Kadokawa Nihon Chimei Daijiten|Q4093011|qid=Q4093011}} 36 Tokushima Prefecture’ ({{ill|1986|Q2430|qid=Q2430}} ISBN 4040013603)
+
+=== Notes ===
+{{Reflist}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Akanta Shrine]][[Category:Shikinaisha|Akanta Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+[[Category:阿波市の歴史]]
+[[Category:阿波市の建築物]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:徳島県の旧村社]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+
+[[Category:Git synced pages]]

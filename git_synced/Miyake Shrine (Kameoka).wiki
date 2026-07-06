@@ -1,0 +1,98 @@
+{{Expand Japanese|三宅神社 (亀岡市)}}
+
+{{Infobox religious building
+| name = Miyake Shrine (Q11355073)
+| native_name = 三宅神社 (亀岡市)
+| image = Miyake-jinja (Kameoka) torii.JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Miyake Shrine (Q11355073)
+| coordinates = {{coord|35.008562|135.589251}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ukanomitama|de|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728|lt=Ukanomitama}}
+}}
+
+{{nihongo|'''Miyake Shrine'''|三宅神社 (亀岡市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tanba Province]].
+
+{{commons category|Category:Miyake-jinja (Kameoka)}}
+
+{{wikidata link|Q11355073|commons|Category:Miyake-jinja (Kameoka)|ja|三宅神社 (亀岡市)|grok=none|check_date=2026-06-02}}
+
+== Japanese content ==
+{{神社
+|名称   = Miyake Shrine
+|画像   = [[File:Miyake-jinja (Kameoka) torii.JPG|250px]]<br />Torii
+|所在地 = {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}{{ill|Kameoka, Kyoto|Q633996|qid=Q633996}}121 Miyake-chō
+|位置   = {{ウィキ座標2段度分秒|35|00|30.74|N|135|35|21.17|E|region:JP-26_type:landmark|display=inline,title|name=Miyake Shrine}}
+|祭神   = {{ill|Ukanomitama|de|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}<br />{{ill|Wakumusubi|lt=Wakumusubi|UNKNOWN|qid=Q10921330|lt=Wakumusubi-no-Mikoto}}<br />{{ill|Ukemochi|Q2280323|qid=Q2280323|lt=Toyoukemochi-no-Mikoto}}
+|神体   = 
+|社格   = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (small)<br />former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|創建   = Unknown
+|本殿   = 
+|別名   = Miyake Inari / Mure Inari / Kusawake Inari
+|札所等 = 
+|例祭   = {{ill|July 15|Q2686|qid=Q2686}}<ref name=chosa>[http://www.geocities.jp/engisiki/tanba/bun/tab380103-01.html Miyake Shrine] (Survey of Engishiki shrines, personal site).</ref>
+|神事   = 
+|地図 = {{Location map|Japan Kyoto|label=Miyake Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Miyake Shrine''' (みやけじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Miyake-chō, {{ill|Kameoka, Kyoto|Q633996|qid=Q633996}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}. Its former rank under the {{ill|Q712534|lt=old shrine ranking}} was {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+
+It is also called "Miyake Inari," and was formerly called "Mure Inari" and "Kusawake Inari."
+
+=== Enshrined deities ===
+* '''{{ill|Ukanomitama|de|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}''' (うかのみたまのみこと)<ref>Deities from precinct information board.</ref>
+* '''{{ill|Wakumusubi|lt=Wakumusubi|UNKNOWN|qid=Q10921330|lt=Wakumusubi-no-Mikoto}}''' (わくむすびのみこと)
+* '''{{ill|Ukemochi|Q2280323|qid=Q2280323|lt=Toyoukemochi-no-Mikoto}}''' (とようけもちのみこと)
+All three are deities related to grain.
+
+=== History ===
+[[File:Miyake-jinja (Kameoka) keidai.JPG|thumb|200px|right|Precinct<br />Honden in center, maiden on left, Toyouke Ōkami on right.]]
+Founding is unknown. It is said to derive from establishment of a {{ill|Miyake|Q11465761|qid=Q11465761}} (imperial direct estate) in this area. Though local relation is unclear, the '{{ill|Nihon Shoki|Q813935|qid=Q813935}}' records that in {{ill|Emperor Ankan|Q241765|qid=Q241765}} 2 ({{ill|535|Q31019|qid=Q31019}}?) a miyake called "Soshiki" was established in Tanba<ref>'Nihon Shoki,' Emperor Ankan year 2, fifth month entry: "... established Soshiki miyake in Tanba Province." ([https://www.seisaku.bz/nihonshoki/shoki_18.html Nihon Shoki Vol.18 Emperor Ankan Chronicle] via full-text search).</ref>. It is also argued that this area was the center where the Kuwata district office stood, based on old reading of district office ({{ill|Gunga (Japan)|Q11643230|qid=Q11643230}}) as "kōri no miyake," the broad flat terrain, and presence of this shrine suggesting miyake existence<ref>From precinct information board.</ref><ref>'Place Names of Kyoto Prefecture,' entries for Miyake village and Miyake Shrine.</ref>. Many kiln remains, thought to have produced pottery for rituals, have been found nearby<ref>[https://tanbarakuichi.sakura.ne.jp/shrine/kameoka/06.html#k059 Miyake Shrine] (Tanba shrines, personal site).</ref>.
+
+In the mid-Heian '{{ill|Engishiki|Q1342448|qid=Q1342448}}' {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Jinmyōchō}}, it is listed as "Miyake Shrine" in {{ill|Kuwada district|Q11537600|qid=Q11537600}}, {{ill|Tanba Province|Q954511|qid=Q954511}}, and ranked as a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}.
+
+It is said to have once held a vast shrine precinct of one chō square, but shrank due to war fires in the Tenshō era and other fires including {{ill|Kanbun (era)|Q1146228|qid=Q1146228}} 3 ({{ill|1663|Q7577|qid=Q7577}}). The current shrine was rebuilt in {{ill|Enpō|Q1145735|qid=Q1145735}} 1 ({{ill|1673|Q7617|qid=Q7617}}), and an outer covering structure was added in {{ill|Genroku|ar|فترة غنروكو|cs|Genroku|de|Genroku|es|Genroku|fa|گنروکو|fr|Ère Genroku|id|Genroku|it|Genroku|ja|元禄|ko|겐로쿠|pt|Genroku|ru|Гэнроку|simple|Genroku|sk|Genroku|sr|Генроку|sv|Genroku|tr|Genroku|zh|元祿|qid=Q1325001}} 11 ({{ill|1698|Q7706|qid=Q7706}}).
+
+In {{ill|Meiji era|Q3125096|qid=Q3125096}} 6 it was ranked {{ill|Son-sha|Q134917284|qid=Q134917284}} under the {{ill|Q712534|lt=modern shrine ranking system}}, and in Meiji 40 became a designated village shrine<ref name=chosa/>.
+
+=== Sessha/Massha ===
+* Toyouke Ōkami
+* Inari-sha
+
+=== Local information ===
+'''Location'''
+* {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}{{ill|Kameoka, Kyoto|Q633996|qid=Q633996}}121 Miyake-chō
+
+'''Access'''
+* Nearest stations: {{ill|Kameoka Station|Q1043696|qid=Q1043696}} or {{ill|Umahori Station|Q1044103|qid=Q1044103}} on {{ill|Sagano Line|Q1073011|qid=Q1073011}} ({{ill|West Japan Railway Company|Q502125|qid=Q502125|lt=JR West}}), about 15 minutes on foot
+
+'''Nearby'''
+* Site of {{ill|Kameyama Castle (Kyoto)|Q1037429|qid=Q1037429|lt=Kameyama Castle}}
+
+=== Notes ===
+{{脚注ヘルプ}}
+{{Reflist|2}}
+
+=== References ===
+{{Commonscat|Miyake-jinja (Kameoka)}}
+* Precinct information board
+* 'Nihon Rekishi Chimei Taikei: Place Names of Kyoto Prefecture' ({{ill|Heibonsha|Q11482108|qid=Q11482108}}), Kameoka City, Miyake Shrine entry
+
+{{神道 横}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Miyake Shrine (Q11355073)]][[Category:Shikinaisha|Miyake Shrine (Q11355073)]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Tanba Province]]
+[[Category:Shinto shrines in Kyoto Prefecture]]
+[[Category:History of Kameoka, Kyoto]]
+[[Category:Shikinaisha in Tanba Province]]
+[[Category:Son-sha in Kyoto Prefecture]]
+[[Category:Buildings and structures in Kameoka, Kyoto]]
+[[Category:Pages with unresolved QID in ill template]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,67 @@
+{{Expand Japanese|三島神社 (下田市)}}
+
+{{Infobox religious building
+| name = Mishima Shrine (Shimoda)
+| native_name = 三島神社 (下田市)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Mishima Shrine (Shimoda)
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Mishima Shrine (Shimoda)'''|三島神社 (下田市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+{{wikidata link|Q134930744|ja|三島神社 (下田市)|grok=none|check_date=2026-06-02}}
+
+== Japanese content ==
+{{Shrine
+|Name = Mishima Shrine
+|Image = {{Image wanted|cat=Shimoda City}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|34|40|35.2|N|138|57|40.8|E}}}}
+|Location = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}} Kakizaki 122
+|Coordinates = {{Wiki coordinates two-stage degrees minutes seconds|34|40|35.2|N|138|57|40.8|E}}
+|Enshrined deity = {{ill|Ōkuninushi|lt=Ōkuninushi-no-Mikoto|qid=Q276944}}
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}
+|Founded = 
+|Main hall = 
+|Alternate name = Kakizaki Shrine
+|Pilgrimage designation = 
+|Annual festival = October 15
+|Rituals = 
+|Map = {{Location map|Japan Shizuoka|label=Mishima Shrine|coordinates=
+{{coord2|34|40|35.2|N|138|57|40.8|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Mishima Shrine''' (みしまじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Kakizaki, {{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="jinjacho">[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401086 Mishima Shrine] - Shizuoka Prefectural Association of Shinto Shrines</ref> Taking its name from the place-name, it is also called '''Kakizaki Shrine''' (かきさきじんじゃ).<ref>For example, the bus stop “Kakizaki Shrine-mae,” etc.</ref>
+
+=== Overview ===
+The shrine is enshrined on the coastal area of the Kakizaki district, east of Shimoda City, opposite Benten Island.
+
+The date of its founding is unknown.
+
+In the past, on the western side of the same Kakizaki district—on the southern end of Nesugata-yama, on the southern mid-slope of Buzan—there stood the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} '''Takehokotsukuwakenomikoto Shrine''' (たけほこつくわけのみことじんじゃ), as well as the ancient shrine '''Buzan Gongen (Takemine Shrine)''', which is identified with the deity “Jushii-jō Tatsufutawake no Myōjin” listed in the '{{ill|Izu Province Shinkaichō|Q17193087|qid=Q17193087}}'. However, after the shrine buildings collapsed due to a violent storm in {{ill|Meiji era|Q3125096|qid=Q3125096}} 17 ({{ill|1884|Q7819|qid=Q7819}}), and were subsequently destroyed by a great fire in {{ill|Taishō era|Q329174|qid=Q329174}} 5 ({{ill|1916|Q2087|qid=Q2087}}), these shrines were merged and enshrined together at Mishima Shrine.<ref name="gen">[https://genbu.net/data/izu/misima7_title.htm Mishima Shrine] - Genmatsuko</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140127-01.html Takehokotsukuwakenomikoto Shrine] - Research on Engishiki Shrines</ref><ref name="city-buzan">[https://www.city.shimoda.shizuoka.jp/category/050201densetsu/111264.html Legend: “En no Gyōja of Mount Buzan”] - Shimoda City</ref>
+
+The Kakizaki area is known as the place where {{ill|Yoshida Shōin|Q559747|qid=Q559747}} attempted to stow away at the end of the Edo period, and statues of Yoshida Shōin have been erected within the shrine grounds and on the opposite Benten Island.<ref>[https://www.surugawan.net/guide/566.html Statue of Yoshida Shōin (Shimoda)] - Izu & Suruga Tourism Guide</ref>
+
+=== Enshrined deity ===
+* {{ill|Ōkuninushi|lt=Ōkuninushi-no-Mikoto|qid=Q276944}}
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401086 Mishima Shrine] - Shizuoka Prefectural Association of Shinto Shrines
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Mishima Shrine (Shimoda)]][[Category:Shikinaisha|Mishima Shrine (Shimoda)]][[Category:Shikinaisha|Mishima Shrine (Shimoda)]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Shinto shrines in Shizuoka Prefecture]]
+[[Category:Buildings and structures in Shimoda]]
+[[Category:History of Shimoda]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Mishima–Ōyamazumi cult]]
+
+[[Category:Git synced pages]]

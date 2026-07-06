@@ -1,0 +1,69 @@
+{{Infobox religious building
+| name = Sengen Shrine (Shimoda)
+| native_name = 浅間神社 (下田市)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Sengen Shrine (Shimoda)
+| coordinates = {{coord|34.68243|138.941017}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Sengen Shrine (Shimoda)'''|浅間神社 (下田市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+[[ja:浅間神社 (下田市)]]
+
+{{wikidata link|Q134930730|ja|浅間神社 (下田市)|check_date=2026-05-25}}
+
+== Japanese content ==
+{{Shrine
+|Name = Sengen Shrine
+|Image = {{Image requested|cat=Shimoda City}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|34|40|56.8|N|138|56|27.5|E}}}}
+|Location = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}} Shikine 1 (former address: Hongo 851-1)
+|Coordinates = {{Wiki coordinates 2-tier degrees minutes seconds|34|40|56.8|N|138|56|27.5|E}}
+|Enshrined deity = {{ill|UNKNOWN|lt=Konohanasakuya-hime}}
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (disputed shrine)
+|Founded = 
+|Main hall = 
+|Other names = Shimoda (Fuji) Sengen Shrine; Hongo (Fuji) Sengen Shrine
+|Pilgrimage sites etc. = 
+|Annual festival = June 1
+|Rituals = 
+|Map = {{Location map|Japan Shizuoka|label=Sengen Shrine|coordinates=
+{{coord2|34|40|56.8|N|138|56|27.5|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Sengen Shrine''' (せんげんじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="jinjacho">[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401057 Sengen Shrine] – Shizuoka Prefecture Association of Shinto Shrines</ref>
+
+Named after its locality, it is also known as '''Shimoda (Fuji) Sengen Shrine''' (しもだ(ふじ)せんげんじんじゃ) and '''Hongo (Fuji) Sengen Shrine''' (ほんごう(ふじ)せんげんじんじゃ), among other names.
+
+=== Overview ===
+The shrine is enshrined at the summit of the mountain called "{{ill|UNKNOWN|lt=Shimoda Fuji}}" (しもだふじ), located very close to the northwest of {{ill|Izukyū Shimoda Station|Q6102244|qid=Q6102244}}. Visitors ascend via the approach (mountain trail) that begins along {{ill|Japan National Route 136|Q11421406|qid=Q11421406}} on the southern side.<ref>[https://izugeo13.sakuraweb.com/S-028-fuji.html Shimoda Fuji] – Izu Geo Heritage</ref><ref name="om">[https://humizuki.com/omaturi_zanmai/sight/jinja/simoda/sengen.htm Sengen Shrine] – Omatsuri Zanmai</ref>
+
+Although the date of its founding is unknown, it is an ancient shrine that is considered to correspond to '''Ohayo-no-Mikoto Shrine''' (おはよのみことじんじゃ), a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}. It is also recorded in the '{{ill|Izu Province Shrine Rank Register|Q17193087|qid=Q17193087}}' as “Junior Fourth Rank, Upper Grade: Ihayo-hime no Myōjin.”<ref name="om"/>
+
+=== Enshrined deity ===
+* {{ill|UNKNOWN|lt=Konohanasakuya-hime}}
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401057 Sengen Shrine] – Shizuoka Prefecture Association of Shinto Shrines
+
+{{Default sort: Sengen Shrine, Shimoda City}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Sengen Shrine (Shimoda)]][[Category:Shikinaisha|Sengen Shrine (Shimoda)]][[Category:Shikinaisha|Sengen Shrine (Shimoda)]][[Category:Shikinaisha in Izu Province]]
+[[Category:Shinto shrines in Shizuoka Prefecture]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Buildings and structures in Shimoda]]
+[[Category:History of Shimoda]]
+[[Category:浅間神社]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Asama shrines]]
+
+[[Category:Git synced pages]]

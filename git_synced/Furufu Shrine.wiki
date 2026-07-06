@@ -1,0 +1,75 @@
+{{Infobox religious building
+| name = Furufu Shrine
+| native_name = 舊府神社
+| image = Huruhu jinja.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Furufu Shrine
+| coordinates = {{coord|34.506608|135.44219}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
+}}
+
+{{nihongo|'''Furufu Shrine'''|舊府神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
+
+{{commons category|Category:Furufu Shrine}}
+[[ja:舊府神社]]
+
+{{wikidata link|Q11613492|commons|Category:Furufu Shrine|ja|舊府神社|grok=none|check_date=2026-05-29}}
+
+== Japanese content ==
+{{Shinto shrine
+|Name=Furufu Shrine
+|Image=[[File:Huruhu jinja.jpg|250px]]
+|Location={{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Izumi, Osaka|Q696412|qid=Q696412}} Oi-chō 198
+|Coordinates={{WikidataCoord}}
+|Deity={{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}}
+|Shrine rank={{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br/>Former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|Founded=
+|Main hall=
+|Other names=
+|Pilgrimage status=
+|Annual festival=
+|Rituals=
+|Map={{Location map|Japan Osaka|label=Hine Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Furufu (Old Furufu) Shrine''' (ふるふじんじゃ) is a Shinto shrine located in {{ill|Osaka Prefecture|Q122723|qid=Q122723}}, {{ill|Izumi, Osaka|Q696412|qid=Q696412}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha}}, and under the {{ill|Q712534|lt=former shrine rank}} it was classified as a village shrine.
+
+=== Enshrined Deity ===
+* {{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}}
+
+=== History ===
+Although it is an ancient shrine listed in the Engishiki, the exact date of its founding and the originally enshrined deity are unknown. The {{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}} records: “On the 7th day of the 5th month of Jōgan 1 (859), mizunoe-inu, the Furufu Deity of Izumi Province was listed among the government shrines. On the 13th day of the 8th month of the same year, hinoe-saru, the unranked Furufu Deity of Izumi Province was granted the Junior Fifth Rank, Lower Grade.”
+
+During the Edo period it was also called “Gozu Tennō Shrine,” and in the 5th year of Meiji (1872) it was ranked as a village shrine. On June 23, Taishō 4 (1915), it was merged into {{ill|Shinodanomori Kuzunoha Inari Shrine|Q11386029|qid=Q11386029}} in Kuzunoha-chō, but the following year it was re-enshrined at its original shrine buildings.
+
+=== Auxiliary Shrines ===
+* Wakamiya Shrine “White Fox Fossil” (enshrined deity: {{ill|Kuzunoha|Q1651785|qid=Q1651785|lt=Princess Kuzunoha}})
+*: It is said to be a stone into which a {{ill|White Tiger (mythology)|Q1072455|qid=Q1072455}} transformed (or hid) in order to escape from a hunter. Originally this stone was located along the {{ill|UNKNOWN|lt=Oguri Kaidō}} ({{ill|Kumano Kaidō|Q11568976|qid=Q11568976}}), but in 1947 (Shōwa 22) it was enshrined at Furufu Shrine.<ref>[http://www.buccyake-kojiki.com/archives/1064898822.html Furufu Shrine, Oi, Izumi City, Osaka Prefecture – Shrines and the Kojiki] Accessed June 3, 2018</ref>
+
+=== Access ===
+* 6-minute walk (about 500 m south) from {{ill|Kita-Shinoda Station|Q856975|qid=Q856975}} on the JR {{ill|Hanwa Line|Q1154800|qid=Q1154800}}
+
+=== Notes ===
+{{Reflist}}
+
+=== External Links ===
+*{{Wayback|url=http://www3.ocn.ne.jp/~tohara/izumi-furufu-11.html |title=Shikinaisha of Izumi / Furufu Shrine (Izumi City) |date=20110426110839}}
+
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Furufu Shrine]][[Category:Shikinaisha|Furufu Shrine]][[Category:Shikinaisha|Furufu Shrine]][[Category:Kanpei-sha]]
+[[Category:Shikinaisha in Izumi Province]]
+[[Category:Shinto shrines in Osaka Prefecture]]
+[[Category:Son-sha in Osaka Prefecture]]
+[[Category:Independent shrines]]
+[[Category:Buildings and structures in Izumi, Osaka]]
+[[Category:History of Izumi, Osaka]]
+
+[[Category:Git synced pages]]

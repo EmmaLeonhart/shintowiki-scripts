@@ -1,0 +1,65 @@
+{{Infobox religious building
+| name = Hayatamawakenomikoto Shrine
+| native_name = 波夜多麻和気命神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Hayatamawakenomikoto Shrine
+| coordinates = {{coord|34.717414|138.910082}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Hayatamawakenomikoto Shrine'''|波夜多麻和気命神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+[[ja:波夜多麻和気命神社]]
+
+{{wikidata link|Q134893135|ja|波夜多麻和気命神社|grok=none|check_date=2026-05-29}}
+
+== Japanese content ==
+{{Shrine
+|Name = Hayatama Wake no Mikoto Shrine
+|Image = {{Image requested|cat=Shimoda City}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=250|frame-height=250|coord={{coord|34|43|2.2|N|138|54|37.8|E}}}}
+|Location = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}} Aitama 8
+|Coordinates = {{Wiki coordinates 2-tier degrees minutes seconds|34|43|2.2|N|138|54|37.8|E}}
+|Enshrined deity = Hayatama Wake no Mikoto
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}; former {{ill|Son-sha|ja|村社|qid=Q134917284}}
+|Founded = 
+|Main hall = 
+|Other names = 
+|Pilgrimage designation = 
+|Annual festival = October 14
+|Rituals = 
+|Map = {{Location map|Japan Shizuoka|label=Hayatama<br />Wake no Mikoto Shrine|coordinates=
+{{coord2|34|43|2.2|N|138|54|37.8|E}}|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Hayatama Wake no Mikoto Shrine''' (はやたまわけのみことじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in Aitama, {{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="jinjacho">[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401098 Hayatama Wake no Mikoto Shrine] - Shizuoka Prefectural Association of Shinto Shrines</ref>
+
+=== Overview ===
+It is situated on the southern foothills of the Aitama area, northwest of Shimoda City, west of {{ill|Inazusa Station|Q6013908|qid=Q6013908}}.
+
+The date of foundation is unknown, but it is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} and an ancient shrine recorded in the ''{{ill|Izunokuni Shinkai-chō|Q17193087|qid=Q17193087}}'' as “Junior Fourth Rank, Upper: Ōoi no Myōjin.”<ref name="gen">[https://genbu.net/data/izu/hayatama_title.htm Hayatama Wake no Mikoto Shrine] - Genmatsuko</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140110-01.html Hayatama Wake no Mikoto Shrine] - Research on Engishiki Shrines</ref>
+
+In the 6th year of {{ill|Meiji era|Q3125096|qid=Q3125096}} ({{ill|1873|Q7757|qid=Q7757}}), it was ranked as a village shrine.<ref name="engi"/>
+
+=== Enshrined deity ===
+* Hayatama Wake no Mikoto
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401098 Hayatama Wake no Mikoto Shrine] - Shizuoka Prefectural Association of Shinto Shrines
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Hayatamawakenomikoto Shrine]][[Category:Shikinaisha|Hayatamawakenomikoto Shrine]][[Category:Shikinaisha|Hayatamawakenomikoto Shrine]][[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:静岡県の旧村社]]
+[[Category:Buildings and structures in Shimoda]]
+[[Category:History of Shimoda]]
+[[Category:Shikinaisha in Izu Province]]
+
+[[Category:Git synced pages]]

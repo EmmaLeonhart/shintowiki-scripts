@@ -1,0 +1,71 @@
+{{Expand Japanese|鮑玉白珠比咩命神社}}
+
+{{Infobox religious building
+| name = Awabitamashiratama-hime-no-Mikoto Shrine
+| native_name = 鮑玉白珠比咩命神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Awabitamashiratama-hime-no-Mikoto Shrine
+| coordinates = {{coord|35.023329|138.875196}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Awabitamashiratama-hime-no-Mikoto Shrine'''|鮑玉白珠比咩命神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+[[ja:鮑玉白珠比咩命神社]]
+
+{{wikidata link|Q134928802|ja|鮑玉白珠比咩命神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shrine
+|Name   = Awabitama Shiratamahime-no-Mikoto Shrine
+|Image = {{Image needed|cat=Numazu City}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=250|coord={{coord|35|1|24.2|N|138|52|30.8|E}}}}
+|Location = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Numazu|Q241037|qid=Q241037}} 342 Nishiura Kishō
+|Coordinates   = {{coord|35|1|24.2|N|138|52|30.8|E|region:JP-22_type:landmark}}
+|Enshrined deity   = Awabitama Shiratamahime-no-Mikoto
+|Shrine rank   = Former {{ill|Son-sha|Q134917284|qid=Q134917284}}, {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}
+|Founded   = 
+|Main hall   = 
+|Alternate name   = 
+|Pilgrimage designation = 
+|Annual festival   = October 14
+|Rituals   = 
+|Map = {{Location map|Japan Shizuoka|label=Awabitama Shiratama<br />Hime-no-Mikoto Shrine|coordinates=
+{{coord2|35|1|24.2|N|138|52|30.8|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Awabitama Shiratamahime-no-Mikoto Shrine''' (あわびたましらたまひめみことじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Nishiura Kishō, {{ill|Numazu|Q241037|qid=Q241037}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref>[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4403266 Awabitama Shiratamahime-no-Mikoto Shrine] - Shizuoka Prefecture Association of Shinto Shrines</ref>
+
+=== Overview ===
+The shrine is situated on elevated ground at Akasaki Cape, where the Kishō seawall extends, to the northwest of the Kishō district of Nishiura.
+
+Although the date of its founding is unknown, it is identified with the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} of the same name, '''Awabitama Shiratamahime-no-Mikoto Shrine''' (あわびたましらたまひめ（の）みことじんじゃ), and is an ancient shrine recorded in the '{{ill|Izu Province Shrine Rank Register|Q17193087|qid=Q17193087}}' as “Junior Fourth Rank, Upper Grade, Miyatama no Myōjin.”<ref name="gen">[https://genbu.net/data/izu/awabi_title.htm Awabitama Shiratamahime-no-Mikoto Shrine] - Genmatsuko</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140224-01.html Awabitama Shiratamahime-no-Mikoto Shrine] - Research on Engishiki Shrines</ref>
+
+In Meiji 40 ({{ill|1907|Q2048|qid=Q2048}}), it was ranked as a village shrine.<ref name="engi"/>
+
+=== Enshrined deity ===
+* Awabitama Shiratamahime-no-Mikoto (あわびたま しらたまひめの みこと)
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4403266 Awabitama Shiratamahime-no-Mikoto Shrine] - Shizuoka Prefecture Association of Shinto Shrines
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Awabitamashiratama-hime-no-Mikoto Shrine]][[Category:Shikinaisha|Awabitamashiratama-hime-no-Mikoto Shrine]][[Category:Shikinaisha|Awabitamashiratama-hime-no-Mikoto Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:静岡県の旧村社]]
+[[Category:沼津市の歴史]]
+[[Category:沼津市の建築物]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:沼津市の画像提供依頼]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Buildings and structures in Numazu]]
+[[Category:History of Numazu]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,97 @@
+{{Expand Japanese|八咫烏神社}}
+
+{{Infobox religious building
+| name = Yatagarasu Shrine
+| native_name = 八咫烏神社
+| image = Yatagarasu-jinja Haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Yatagarasu Shrine
+| coordinates = {{coord|34.503093|135.946328}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kamotaketsunumi no Mikoto|it|Kamotaketsunumi no Mikoto|ja|賀茂建角身命|zh|賀茂建角身命|qid=Q11634939|lt=Kamo Taketsunomi}}
+| established = {'time': '+0705-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
+| website = {{Official website|https://yatagarasujinja.net/}}
+}}
+
+{{nihongo|'''Yatagarasu Shrine'''|八咫烏神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+{{commons category|Category:Yatagarasu-jinja (Uda, Nara)}}
+[[ja:八咫烏神社]]
+
+{{wikidata link|Q11390679|commons|Category:Yatagarasu-jinja (Uda, Nara)|ja|八咫烏神社|grok=none|check_date=2026-05-27}}
+
+== Japanese content ==
+{{otheruses|shrine in Uda, Nara|same-name shrine in Kashihara, Nara|Yatagarasu Shrine (Kashihara)}}
+{{神社
+|名称   = Yatagarasu Shrine
+|画像   = [[画像:Yatagarasu-jinja Haiden.jpg|270px]]<br />Haiden
+|所在地 = {{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Uda, Nara|Q863747|qid=Q863747}}Haibara Takatsuka 42
+|位置   = {{ウィキ座標2段度分秒|34|30|10.8|N|135|56|47.2|E|region:JP-29_type:landmark|display=inline,title|name=Yatagarasu Shrine}}
+|祭神   = {{ill|Kamotaketsunumi no Mikoto|it|Kamotaketsunumi no Mikoto|ja|賀茂建角身命|zh|賀茂建角身命|qid=Q11634939|lt=Taketsunumi-no-Mikoto}}
+|社格   = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (small)<br/>former {{ill|Ken-sha|lt=kensha|qid=Q90139226}}
+|創建   = {{ill|Keiun|Q428753|qid=Q428753}} 2 ({{ill|705|Q23504|qid=Q23504}})
+|本殿   = {{ill|Kasuga-zukuri|es|Kasuga-zukuri|fr|Kasuga-zukuri|ja|春日造|ru|Касуга-дзукури|qid=Q3193781}}
+|別名   = 
+|札所等 = 
+|例祭   = {{ill|November 3|Q2995|qid=Q2995}}
+|神事   = 
+|地図 = {{Location map|Japan Nara|label=Yatagarasu<br />Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[画像:Yatagarasu-jinja Torii.jpg|thumb|250px|Entrance torii]]
+
+'''Yatagarasu Shrine''' (やたがらすじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Uda, Nara|Q863747|qid=Q863747}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=small Shikinaisha}} listed in the '{{ill|UNKNOWN|lt=Engishiki Jinmyōchō}}'. Its former rank was {{ill|Ken-sha|lt=kensha|qid=Q90139226}}.
+
+=== Enshrined deity ===
+It enshrines {{ill|Kamotaketsunumi no Mikoto|it|Kamotaketsunumi no Mikoto|ja|賀茂建角身命|zh|賀茂建角身命|qid=Q11634939|lt=Taketsunumi-no-Mikoto}} ({{ill|Yatagarasu|ar|ياتاغاراسو|bcl|Yatagarasu|br|Yatagarasu|cs|Jatagarasu|de|Yatagarasu|es|Yatagarasu|fa|یاتاگاراسو|fr|Yatagarasu|ja|八咫烏|ko|야타가라스|la|Yatagarasu|no|Yatagarasu|pl|Yatagarasu|ru|Ятагарасу|simple|Yatagarasu|uk|Ятаґарасу|zh|八咫烏|qid=Q745463}}).
+
+=== History ===
+In the '{{ill|Shoku Nihongi|Q611399|qid=Q611399}}', in the reign of {{ill|Emperor Monmu|Q357246|qid=Q357246}}, there is an entry that in {{ill|Keiun|Q428753|qid=Q428753}} 2 ({{ill|705|Q23504|qid=Q23504}}), Yatagarasu-sha was worshiped, and this is taken as the founding of this shrine<ref>Entry for day bōjutsu (9th) in 9th month.</ref>. In documentary terms, it is the first shrine in Japan to worship Yatagarasu as a deity.
+
+Also, according to the 'Shinsen Shōjiroku,' when {{ill|Emperor Jimmu|Q200188|qid=Q200188}} moved east to Yamato, Taketsunumi-no-Mikoto transformed into "Yatagarasu" and guided the stalled imperial party through the mountains of {{ill|Kumano region|Q6443450|qid=Q6443450}} to Yamato, contributing to imperial victory.
+
+Because of this history, it was revered since ancient times as a {{ill|Military god|Q11637440|qid=Q11637440}}, and in the {{ill|Nanboku-chō period|Q264012|qid=Q264012|lt=Nanboku-chō period}}, the shrine is said to have greatly prospered under deep devotion of {{ill|Emperor Go-Daigo|Q313942|qid=Q313942}}<ref>"Brief Origin of Yatagarasu Shrine," Bunsei 13 year of Kanoe-Tora, Ōe no Toshitsune.</ref>.
+
+However, after decline of the {{ill|Southern Court|Q3001082|qid=Q3001082|lt=Southern Court}} and repeated war damage, it fell near abolition until the mid-{{ill|Edo period|Q184963|qid=Q184963}}, and it is said "yatagarasu" became colloquially slurred to "otogorosu"<ref>Hayashi Sōho, 'Washū Kyūseki Yūkō,' Enpō 9.</ref>.
+
+Later, in {{ill|Bunsei|Q1327119|qid=Q1327119}} years of the Edo period, priests of {{ill|Shimogamo Shrine|Q701620|qid=Q701620}} (Shimogamo-sha) in {{ill|Kyōto|Q740246|qid=Q740246}} took notice, and through their efforts and cooperation of local volunteers, revival was achieved. It is said the honden was rebuilt into current {{ill|Kasuga-zukuri|es|Kasuga-zukuri|fr|Kasuga-zukuri|ja|春日造|ru|Касуга-дзукури|qid=Q3193781}} style around this time (the stone small shrine of the former honden still remains beside the honden).
+
+After that, for annual grand festivals, {{ill|UNKNOWN|lt=heihaku envoys}} were sent from Shimogamo-sha and rites held, but because such grand rites with envoys were too heavy a burden for local parishioners then numbering only about nine households, and due guidance from Nara prefectural authorities concerned the shrine might be treated as an outside-precinct massha of Shimogamo-sha, Shimogamo participation was discontinued in early Meiji<ref>"Uda District Historical Materials."</ref>.
+
+Later, in {{ill|Taishō era|Q329174|qid=Q329174}} 3 ({{ill|1917|Q2092|qid=Q2092}}), due to the {{ill|UNKNOWN|lt=Shrine Merger Ordinance}}, nearby guardian shrines came to be worshiped here, causing sudden revival.
+
+In {{ill|Shōwa era|Q327567|qid=Q327567}}, related to {{ill|2600th Anniversary Celebrations of the Japanese Empire|Q5366450|qid=Q5366450}}, it was promoted to kensha, and precinct expansion and improvement were carried out. It has continued to the present.
+
+=== Transportation ===
+* Nearest station: {{ill|Haibara Station|Q5638969|qid=Q5638969}} on {{ill|Kintetsu Railway|Q1531085|qid=Q1531085}} {{ill|Osaka Line|eo|Linio Kintetsu-Ōsaka|fr|Ligne Kintetsu Osaka|it|Linea Kintetsu Ōsaka|ja|近鉄大阪線|ko|긴테쓰 오사카선|nl|Kintetsu Osaka-lijn|zh|大阪線|qid=Q1052545|lt=Osaka Line}}
+* Parking: available
+
+=== Notes ===
+{{Reflist}}
+{{脚注ヘルプ}}
+
+=== See also ===
+* {{ill|Kamigamo Shrine|Q700448|qid=Q700448}}
+
+=== External links ===
+{{commons|Category:Yatagarasu-jinja (Uda, Nara)}}
+*[http://www.yatagarasujinja.net/ Yatagarasu Shrine] (official site)
+{{神道 横}}
+{{shinto-stub}}
+{{Normdaten}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Yatagarasu Shrine]][[Category:Shikinaisha|Yatagarasu Shrine]][[Category:Shikinaisha|Yatagarasu Shrine]][[Category:Shrines receiving Hoe and Quiver]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Shinto shrines in Nara Prefecture]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Former Prefectural Shrines in Nara Prefecture]]
+[[Category:Buildings and structures in Uda, Nara]]
+[[Category:History of Uda, Nara]]
+
+[[Category:Git synced pages]]

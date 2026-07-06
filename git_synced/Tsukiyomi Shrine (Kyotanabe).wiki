@@ -1,0 +1,83 @@
+{{Expand Japanese|月讀神社 (京田辺市)}}
+
+{{Infobox religious building
+| name = Tsukiyomi Shrine (Q54153263)
+| native_name = 月讀神社
+| image = Tsukiyomi Jinja Kyotanabe Haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Tsukiyomi Shrine (Q54153263)
+| coordinates = {{coord|34.836295|135.741075}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Tsukiyomi Shrine'''|月讀神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamashiro Province]].
+
+[[ja:月讀神社 (京田辺市)]]
+
+{{wikidata link|Q54153263|ja|月讀神社 (京田辺市)|check_date=2026-05-27}}
+
+== Japanese content ==
+{{神社
+|名称   = Tsukiyomi Shrine
+|画像   = [[画像:Tsukiyomi Jinja Kyotanabe Haiden.jpg|270px]]<br/>Haiden
+|所在地 = {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}{{ill|Kyōtanabe|Q816728|qid=Q816728}} Ōsumi Ikehira 31
+|位置 = {{WikidataCoord}}
+|祭神   = {{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi|Q595520|qid=Q595520|qid=Q595520|lt=Tsukuyomi-no-Mikoto}}
+|社格   = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}（great）
+|創建   = {{ill|Daidō|Q1373191|qid=Q1373191|lt=Daidō}} 4 ({{ill|809|Q30671|qid=Q30671}})
+|本殿   = {{ill|Kasuga-zukuri|Q3193781|qid=Q3193781}}
+|別名   = 
+|例祭   = {{ill|October 15|Q2919|qid=Q2919}}
+|神事   = 
+|地図 = {{Location map|Japan Kyoto|label=Tsukiyomi Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[ファイル:Tsukiyomi Jinja Kyotanabe Torii.jpg|thumb|250px|{{center|Torii}}]]
+'''Tsukiyomi Shrine''' (つきよみじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Kyōtanabe|Q816728|qid=Q816728}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. It is a {{ill|Shikinai Taisha|Q134917288|qid=Q134917288}} and is known as the birthplace of '''{{ill|Hayato-mai|Q55529681|qid=Q55529681}}'''.
+
+=== History ===
+=== Outline ===
+According to shrine tradition, when the shrine buildings were moved from Heijō-kyō to Heian-kyō in {{ill|809|Q30671|qid=Q30671}} (Daidō 4), divine light was seen on Mt. Ōsumi, and building a shrine at this place marks the founding. During the {{ill|Battle of Toba–Fushimi|Q1193959|qid=Q1193959}}, {{ill|Iwashimizu Hachimangū|Q710098|qid=Q710098}} was temporarily relocated here to avoid warfare, and sacred treasures were placed in Yakushi Hall.
+
+=== Court rank ===
+*{{ill|Ten'an|Q1075611|qid=Q1075611|lt=Ten'an}} 3 ({{ill|859|Q23897|qid=Q23897}}), {{ill|January 27|Q2284|qid=Q2284}}: from Junior Fifth Lower to Senior Fifth Lower (''{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}'') - written as "Kabai Tsukuyomi-no-Kami"
+*{{ill|Gangyō|Q747451|qid=Q747451}} 6 ({{ill|877|Q23905|qid=Q23905}}): Junior First Rank (shrine tradition)
+
+=== Hayato-mai ===
+[[ファイル:Hyatomai Denshouti.jpg|thumb|150px|{{center|Monument of the birthplace of Hayato-mai}}]]
+From a tradition that Ōsumi {{ill|Hayato people|Q1151764|qid=Q1151764}} from southern {{ill|Kyushu|Q13987|qid=Q13987}} migrated to Ōsumi in the {{ill|Nara period|Q189178|qid=Q189178}}, and that these Ōsumi Hayato dedicated and transmitted Hayato-mai here, this shrine is regarded as the birthplace of Hayato-mai. At the eve of the annual festival on {{ill|October 14|Q2922|qid=Q2922}}, Hayato-mai is still dedicated (designated an intangible folk cultural property of Kyōtanabe City<ref>{{Cite web|和書|title="Tsukiyomi Shrine and Hayato-mai"|url=http://www.kyotanabe.jp/html/kanko/i/tsukiyomi.htm|website=Kyōtanabe City|accessdate=2019-09-20|language=ja|last=Kyōtanabe City}}</ref>).
+
+Also, the place name "Ōsumi" where this shrine is located is thought to derive from "{{ill|Ōsumi Province|Q981002|qid=Q981002|lt=Ōsumi}}" in Kyushu<ref>{{Cite web|和書|title=Ōsumi Hayato-mai|url=http://www.kyotanabe.ed.jp/nc24/culture/htdocs/mu6y5636h-117/|website=www.kyotanabe.ed.jp|accessdate=2020-07-03|publisher=Kyōtanabe City Board of Education}}</ref>.
+
+=== Precincts ===
+<gallery>
+ファイル:Tsukiyomi Jinja Kyotanabe Honden.jpg|Honden
+ファイル:Tsukiyomi Jinja Kyotanabe Keidai.jpg|Precincts
+</gallery>
+
+=== Access ===
+*15 minutes on foot from {{ill|Ōsumi Station|Q589844|qid=Q589844}} on the {{ill|UNKNOWN|lt=Gakkentoshi Line}} ({{ill|West Japan Railway Company|Q502125|qid=Q502125}})
+
+===Notes===
+{{Reflist}}
+
+=== External links ===
+*[http://kyotana.be/object/detail/119/ Ōsumi Hayato-mai] - Kyōtanabe Tourism Association
+
+{{神道 横}}
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Tsukiyomi Shrine (Q54153263)]][[Category:Shikinaisha|Tsukiyomi Shrine (Q54153263)]][[Category:Shikinaisha|Tsukiyomi Shrine (Q54153263)]][[Category:Shikinai Taisha]]
+[[Category:Shikinaisha in Yamashiro Province]]
+[[Category:Shinto shrines in Kyoto Prefecture]]
+[[Category:Buildings in Kyotanabe, Kyoto]]
+[[Category:History of Kyotanabe, Kyoto]]
+[[Category:Shikinaisha in Yamashiro Province]]
+
+[[Category:Git synced pages]]

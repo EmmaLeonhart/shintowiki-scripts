@@ -1,0 +1,66 @@
+{{Expand Japanese|三島神社 (南伊豆町妻良)}}
+
+{{Infobox religious building
+| name = Mishima Shrine (Minamiizu)
+| native_name = 三島神社 (南伊豆町妻良)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Mishima Shrine (Minamiizu)
+| coordinates = {{coord|34.658149|138.790386}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Mishima Shrine (Minamiizu)'''|三島神社 (南伊豆町妻良)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+{{wikidata link|Q134926910|ja|三島神社 (南伊豆町妻良)|grok=none|check_date=2026-06-01}}
+
+== Japanese content ==
+{{神社
+|名称   = Mishima Shrine
+|画像 = {{画像募集中|cat=賀茂郡}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=11|frame-align=center|frame-width=250|frame-height=|coord={{coord|34|39|29.1|N|138|47|25.4|E}}}}
+|所在地 = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Kamo District, Shizuoka|Q961511|qid=Q961511}}{{ill|Minamiizu|Q1203741|qid=Q1203741}} Mera 828-1
+|位置   = {{coord|34|39|29.1|N|138|47|25.4|E|region:JP-22_type:landmark}}
+|祭神   = Ōtsuyuki-no-Mikoto
+|社格   = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|創建   = 
+|本殿   = 
+|別名   = 
+|札所等 = 
+|例祭   = November 2
+|神事   = 
+|地図 = {{Location map|Japan Shizuoka|label=Mishima Shrine|coordinates=
+{{coord2|34|39|29.1|N|138|47|25.4|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Mishima Shrine''' (みしまじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Mera, {{ill|Minamiizu|Q1203741|qid=Q1203741}}, {{ill|Kamo District, Shizuoka|Q961511|qid=Q961511}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}<ref>[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401082 三島神社] - 静岡県神社庁</ref>.
+
+=== Overview ===
+It is enshrined on the west side along {{ill|Japan National Route 136|af|Japan Nasionale Roete 136|ja|国道136号|zh_min_nan|Ji̍t-pún Kok-tō 136-hō|qid=Q11421406}}, south of the Mera district in western Minamiizu.
+
+Its founding is unknown, but it is an old shrine identified with the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} '''Ōtsuyuki-no-Mikoto Shrine''' (おおつのゆきのみことじんじゃ), and it is also recorded in the ''{{ill|Izu no Kuni Shinkaichō|Q17193087|qid=Q17193087}}'' as "Junior Fourth Rank Upper, Otsuyukihime no Myōjin"<ref name="gen">[https://genbu.net/data/izu/misima9_title.htm 三島神社] - 玄松子</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140138-01.html 三島神社] - 延喜式神社の調査</ref>.
+
+In {{ill|1873|Q7757|qid=Q7757}} (Meiji 6), it was ranked as a village shrine<ref name="engi"/>.
+
+=== Enshrined deity ===
+* Ōtsuyuki-no-Mikoto (おおつのゆきのみこと)
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401082 三島神社] - 静岡県神社庁
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Mishima Shrine (Minamiizu)]][[Category:Shikinaisha|Mishima Shrine (Minamiizu)]][[Category:Shikinaisha|Mishima Shrine (Minamiizu)]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:静岡県の旧村社]]
+[[Category:History of Minamiizu]]
+[[Category:Buildings in Minamiizu]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Mishima–Ōyamazumi cult]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,104 @@
+{{Expand Japanese|福王子神社}}
+
+{{Infobox religious building
+| name = Fukuōji Shrine
+| native_name = 福王子神社
+| image = 福王子神社-02.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Fukuōji Shrine
+| coordinates = {{coord|35.029028|135.709111}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Empress Dowager Hanshi|lt=Empress Dowager Hanshi|ja|班子女王|zh|班子女王|qid=Q11573356}}
+}}
+
+{{nihongo|'''Fukuōji Shrine'''|福王子神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
+{{commons category|Category:Fukuōji-jinja}}
+[[ja:福王子神社]]
+
+{{wikidata link|Q11594015|commons|Category:Fukuōji-jinja|ja|福王子神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{??
+|??   = Fuku?ji Shrine
+|??   = [[????:?????-01.jpg|270px]]<br />Torii and worship hall
+|??? = {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}{{ill|Kyoto|Q34600|qid=Q34600}}{{ill|Ukyō-ku, Kyoto|Q580186|qid=Q580186}}{{ill|Utano|Q65260610|qid=Q65260610}}{{ill|UNKNOWN|lt=Fuku?ji-ch?}}52
+|??   = {{?????2????|35|01|44.5|N|135|42|32.8|E|region:JP-26_type:landmark|display=inline,title|name=?????}}
+|??   = {{ill|Empress Dowager Hanshi|Q11573356|qid=Q11573356|lt=Empress Hanshi}}
+|??   = former {{ill|Son-sha|Q134917284|qid=Q134917284}}?{{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}
+|??   = Heian period, revived in {{ill|1644|Q6920|qid=Q6920}} ({{ill|Kan'ei|Q1192913|qid=Q1192913}} 21)
+|??   = one-bay {{ill|Kasuga-zukuri|Q3193781|qid=Q3193781}}
+|??   = Fukossan
+|??   = third Sunday of October
+|??   =
+|?? = {{Location map|Japan Kyoto city|label=?????|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
+}}
+'''Fuku?ji Shrine''' (?????????) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Utano|Q65260610|qid=Q65260610}}{{ill|UNKNOWN|lt=Fuku?ji-ch?}}, {{ill|Ukyō-ku, Kyoto|Q580186|qid=Q580186}}, {{ill|Kyoto|Q34600|qid=Q34600}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}.
+
+It enshrines {{ill|Empress Dowager Hanshi|Q11573356|qid=Q11573356|lt=Empress Hanshi}}, consort of {{ill|Emperor Kōkō|Q440518|qid=Q440518}} and mother of {{ill|Emperor Uda|Q349267|qid=Q349267}}. Since Emperor Uda founded {{ill|Ninna-ji|Q1202871|qid=Q1202871}}, this shrine is regarded as the temple's {{ill|Chinjugami|Q97479976|qid=Q97479976}}.
+
+=== History ===
+According to tradition, its predecessor was {{ill|Fukagawa Shrine|Q11560019|qid=Q11560019}}, whose name appears in the {{ill|Engishiki|Q1342448|qid=Q1342448}}, but it burned in the {{ill|Ōnin War|Q385676|qid=Q385676}} (1468). Later, in Kan'ei 21 ({{ill|1644|Q6920|qid=Q6920}}), {{ill|Tokugawa Iemitsu|Q314481|qid=Q314481}} and {{ill|UNKNOWN|lt=Imperial Prince Kakushin}} rebuilt the shrine buildings. Since Empress Hanshi's mausoleum was nearby, they enshrined the empress, and it became Fuku?ji Shrine.
+
+The shrine name is also said to derive from the fact that Empress Hanshi bore many imperial princes and princesses<ref>Kyoto City Tourism and Culture Information System - Fuku?ji Shrine</ref>.
+
+=== Precinct shrine ===
+As a subordinate shrine, F?k?jin Shrine (Matsuo Daimy?jin), enshrining {{ill|UNKNOWN|lt=F?k?jin}}, is said to have been established in the {{ill|Heian period|Q193292|qid=Q193292}} for safe transport. At that time, ice was customarily offered from {{ill|Ice house (building)|Q253893|qid=Q253893}} in {{ill|Rakuhoku|Q11555800|qid=Q11555800}} to the imperial court, and workers sometimes died during transport.
+
+=== Cultural properties ===
+=== Important Cultural Property ===
+[[??:Fukuoji-jinja_20071107_001.jpg|thumb|Main hall (left rear)]]
+[[????:?????-02.jpg|thumb|Worship hall]]
+The Kan'ei revival shrine complex (two buildings and one torii) is designated a national {{ill|Important Cultural Property (Japan)|Q1188622|qid=Q1188622}}. Designated June 2, 1973.
+* Main hall ({{ill|Kasuga-zukuri|Q3193781|qid=Q3193781}}, copper roof). Attached: one munafuda, two stone lanterns.
+* Worship hall ({{ill|East Asian hip-and-gable roof|Q855025|qid=Q855025}}, copper roof)
+* Torii (stone, my?jin torii)
+
+=== Festivals ===
+* New Year's Day festival (January 1)
+* Nanakusa-gayu (January 7)
+* {{ill|Setsubun|Q746798|qid=Q746798}} festival (February 3)
+* {{ill|Ōharae-shiki|Q11261910|qid=Q11261910|lt=summer purification}} (June 30)
+* Autumn grand festival (around October 18)
+* Ohitaki festival (November 18)
+* {{ill|Ōharae-shiki|Q11261910|qid=Q11261910}} (December 31)
+
+=== Access ===
+* {{ill|Kyoto City Bus|Q4858667|qid=Q4858667}}: get off at "Fuku?ji" stop
+* {{ill|Kitano Line|Q10883224|qid=Q10883224}}: about 3 minutes on foot from {{ill|Utano Station|Q11449247|qid=Q11449247}}
+
+=== Notes ===
+{{?????}}
+{{reflist}}
+
+=== External links ===
+* [http://kanko.city.kyoto.lg.jp/detail.php?InforKindCode=1&ManageCode=1000412 Kyoto City Tourism Navi] - Fuku?ji Shrine
+
+{{?? ?}}
+{{shinto-stub}}
+{{Buddhism-stub}}
+{{pref-stub|pref=???}}
+{{Normdaten}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Fukuōji Shrine]][[Category:Shikinaisha|Fukuōji Shrine]][[Category:Shikinai Ronsha]]
+[[Category:宇多野]][[Category:Shinto shrines in Kyoto]]
+[[Category:Chinjusha]]
+[[Category:Shinto shrines in Kyoto]]
+[[Category:Son-sha in Kyoto Prefecture]]
+[[Category:Shikinaisha in Yamashiro Province]]
+[[Category:Shinto shrines of Jinja Honkyō]]
+[[Category:Chinjusha]]
+[[Category:Cultural heritage monuments in Japan]]
+[[Category:Important Cultural Properties in Kyoto City]]
+[[Category:Buildings and structures in Ukyo-ku, Kyoto]]
+[[Category:History of Ukyo-ku, Kyoto]]
+[[Category:Ninna-ji]]
+
+[[Category:Git synced pages]]

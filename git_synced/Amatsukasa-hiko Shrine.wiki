@@ -1,0 +1,67 @@
+{{Infobox religious building
+| name = Amatsukasahiko Shrine (Q107410067)
+| native_name = 天津賀佐彦神社
+| image = 阿波国式内社論社天都賀佐彦神社(美馬町西荒川).jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Amatsukasahiko Shrine (Q107410067)
+| coordinates = {{coord|34.055083333333336|134.03583333333333}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Amatsukasahiko Shrine'''|天津賀佐彦神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:天津賀佐彦神社]]
+
+{{wikidata link|Q107410067|ja|天津賀佐彦神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Confused|Amatsukasa-hiko Shrine}}
+{{Shinto shrine
+|Name= Amatsukasa-hiko Shrine
+|Image= [[File:Awa Province Engishiki-sha Ronsha Amatsukasa-hiko Shrine (Mima Town Nishi-Arakawa).jpg|250px]]
+|Location= {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Mima, Tokushima|Q857828|qid=Q857828}}{{ill|Mimachō|Q11609479|qid=Q11609479}} Nishi-Arakawa 48-1
+|Coordinates = {{WikidataCoord}}
+|Enshrined deity= {{ill|UNKNOWN|lt=Shina-nagato-be-no-Mikoto}}
+|Shrine status= {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (candidate shrine)
+|Founded= Unknown
+|Main hall= 
+|Other name= 
+|Annual festival= {{ill|October 19|Q2961|qid=Q2961}}
+|Rituals= 
+|Map = {{Location map|Japan Tokushima|label=Amatsukasa-hiko<br />Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Amatsukasa-hiko Shrine''' (あまつかさひこじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Mima, Tokushima|Q857828|qid=Q857828}}{{ill|Mimachō|Q11609479|qid=Q11609479}}.
+
+=== History ===
+The year of foundation is unknown. The *{{ill|Awa-shi|Q65291985|qid=Q65291985}}* states: “Amatsukahi-ko Shrine: listed in the *Engishiki*, also considered a minor shrine; located in Arakawa village of Shigekiyo; also called Nishioka-no-miya.”<ref>{{Cite web|Japanese-language book|url=https://www.buccyake-kojiki.com/archives/1070231126.html|title=Amatsukasa-hiko Shrine|publisher=Shrines and the Kojiki|accessdate=2021-05-21}}</ref>
+
+It is one of the candidate shrines (ronsha) for Amatsukasa-biko Shrine, which is an {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}.
+
+=== Enshrined deity ===
+* {{ill|UNKNOWN|lt=Shina-nagato-be-no-Mikoto}}
+
+=== Access ===
+* About 10 minutes by car from “{{ill|Oshima Station|Q7106623|qid=Q7106623}}” on the {{ill|Shikoku Railway Company|Q496531|qid=Q496531|lt=JR}}{{ill|Tokushima Line|Q899310|qid=Q899310}}.
+
+=== Notes ===
+<references />
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Amatsukasahiko Shrine (Q107410067)]][[Category:Shikinaisha|Amatsukasahiko Shrine (Q107410067)]][[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+[[Category:美馬市の建築物]]
+[[Category:美馬市の歴史]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+
+[[Category:Git synced pages]]

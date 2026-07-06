@@ -1,0 +1,71 @@
+{{Expand Japanese|富士浅間神社 (東郷町)}}
+
+{{Infobox religious building
+| name = Fuji Sengen Shrine (Togo Town)
+| native_name = 富士浅間神社
+| image = Asama.JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Fuji Sengen Shrine (Togo Town)
+| coordinates = {{coord|35.0864889|137.0463806}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Konohanasakuya-hime|lt=Konohananosakuya-bime|az|Konohanasakuya|ca|Konohana no Sakuya hime|de|Konohanasakuyahime|en|Konohanasakuya-hime|fa|کونوهاناساکویا-هیمه|fr|Konohana-no-Sakuya|ja|コノハナノサクヤビメ|ko|고노하나노사쿠야비메|mni|ꯀꯣꯅꯣꯍꯅꯁꯀꯨꯌ-ꯍꯤꯃꯦ|pl|Konohanasakuya-hime|ru|Коноханасакуя-химэ|sv|Konohanasakuyahime|th|เซ็นเง็ง|vi|Konohana Sakuya Hime|zh|木花開耶姬|qid=Q1781862}}
+}}
+
+{{nihongo|'''Fuji Sengen Shrine (Togo Town)'''|富士浅間神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
+
+[[ja:富士浅間神社 (東郷町)]]
+
+{{wikidata link|Q11456095|ja|富士浅間神社 (東郷町)|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{??
+|??=Fuji Sengen Shrine
+|??=[[????:Fuji-sengen-jinja_Shrine_Haiden,_Kitsunezuka_Haruki_Togo_Town_2023.jpg|250px|Fuji Sengen Shrine worship hall]]<br />Worship hall
+|???={{ill|Aichi Prefecture|Q80434|qid=Q80434}}{{ill|Aichi District|Q552687|qid=Q552687|lt=Aichi District}}{{ill|Tōgō, Aichi|Q265050|qid=Q265050}} Haruki Aza Kitsunezuka 3801-1
+|??= {{WikidataCoord}}
+|??={{ill|UNKNOWN|lt=Konohanasakuya-hime-no-Mikoto}}
+|??={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} candidate shrine<br />former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|??=unknown
+|??=
+|??=Sengen-sha
+|??=first Sunday of July
+|??=
+|?? = {{Location map|Japan Aichi|label=??<br />????|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Fuji Sengen Shrine''' (??????????) is a shrine in {{ill|Aichi Prefecture|Q80434|qid=Q80434}}{{ill|Aichi District|Q552687|qid=Q552687|lt=Aichi District}}{{ill|Tōgō, Aichi|Q265050|qid=Q265050}}. There is a theory identifying it with "{{ill|UNKNOWN|lt=Ifuno Shrine}}" in Aichi District, Owari Province in the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}'', though many objections exist.
+
+=== Overview ===
+The founding year is unknown. According to the shrine, the enshrined deities are {{ill|UNKNOWN|lt=Konohanasakuya-hime-no-Mikoto}}, {{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}}, {{ill|UNKNOWN|lt=?mononushi-no-Mikoto}}, and {{ill|Emperor Sujin|Q333530|qid=Q333530}}<ref>[http://sengen3801.jp/concept.html Official site]</ref>.
+
+Since the Edo period, the shrine side has claimed that it is Ifuno Shrine listed in the ''Engishiki Jinmy?ch?''. The theory rests on the fact that the local village name until the Edo period was Y?fukuji, considered similar to "Ifu." However, there are many other candidate shrines for Ifuno Shrine and many competing theories. Based on passages in the surviving text of ''{{ill|Owari no Kuni Fudoki|Q135598023|qid=Q135598023}}'', another theory says Ifuno Shrine was likely in Hibe-go (present-day {{ill|Nagoya|Q11751|qid=Q11751}}{{ill|Naka-ku, Nagoya|Q1207921|qid=Q1207921|lt=Naka Ward}}).
+
+=== Subsidiary shrines ===
+There are Kumano-sha, Izu-sha, Hakusan-sha, Hiyoshi-sha, Kashima-sha, Mishima-sha, Hakone-sha, and others, enshrined in a row behind the main hall. In 1991, a Gokoku Shrine worship hall was also newly established.
+
+=== External links ===
+* [http://sengen3801.jp Fuji Sengen Shrine]
+* {{Wayback|url=http://www.geocities.jp/engishiki01/owari/bun/ow100709-01.html |title=Fuji Sengen Shrine |date=20160304141400}}
+=== Notes ===
+{{?????}}
+{{Reflist}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Fuji Sengen Shrine (Togo Town)]][[Category:Shikinaisha|Fuji Sengen Shrine (Togo Town)]][[Category:Shikinai Shōsha]]
+[[Category:東郷町の歴史]][[Category:Shikinaisha in Owari Province]]
+[[Category:Shinto shrines in Aichi Prefecture]]
+[[Category:Asama shrines]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:Shinto shrines in Aichi Prefecture]]
+[[Category:浅間神社]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:Son-sha in Aichi Prefecture]]
+[[Category:東郷町の建築物]]
+
+[[Category:Git synced pages]]

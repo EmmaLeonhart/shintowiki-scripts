@@ -46,6 +46,21 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — Strip Wikidata property dumps from 910 shikinaisha pages → git_synced (Emma, urgent)
+
+Emma: the Wikidata-generated shikinaisha pages carry a raw property dump (a run of `== <property>
+(Pxxx) ==` h2 sections — misleadingly dressed as major sections) ON TOP of the real translated
+article; the dump "just goes away", the infobox + categories stay. She tags pages to fix into
+`[[Category:sync these pages now]]` and wants them as git-synced pages. Built
+`git_sync_strip_property_dumps.py`: pulls that category, surgically strips every `== … (P\d+) ==`
+section + its bullet/blank body (stops at the first non-bullet line, so infobox / `{{wikidata link}}`
+/ interwiki / the real article / all categories are untouched), retags (drop the transient sync-now
+tag, add `[[Category:Git synced pages]]`), writes `git_synced/`. Validated across all 910 (0 gutted;
+a `#REDIRECT` page correctly stays small; Abo Shrine 17KB→7KB, 13 dumps removed). +5 tests. Applied:
+910 pages (904 new + 6 modified) → git_synced/; the repo-wins `sync_git_synced_pages` pushes the
+cleaned versions to the wiki (dropping the property dump + the sync-now category there). Re-runnable
+as Emma tags more into the category.
+
 ## 2026-07-06 — Queue #5: agentic-RAG pipeline for the ENTIRE category-translation residual
 
 Emma 2026-07-06: the category-translation residual is NOT human-only / out of scope — "do agentic RAG

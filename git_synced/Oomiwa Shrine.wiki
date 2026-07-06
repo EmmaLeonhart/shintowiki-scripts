@@ -1,0 +1,86 @@
+{{Expand Japanese|大神神社 (大垣市)}}
+
+{{Infobox religious building
+| name = Oomiwa Shrine
+| native_name = 大神神社 (大垣市)
+| image = 大垣市上石津町宮 大神神社.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Oomiwa Shrine
+| coordinates = {{coord|35.286044|136.467013}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ōmononushi|qid=Q10936701|lt=Ōmononushi|en|Ōmononushi|fr|Ōmononushi|ja|大物主|mni|ꯑꯣꯃꯣꯅꯣꯅꯨꯁꯤ|ru|Омононуси|simple|Ōmononushi|zh|大物主|qid=Q10936701}}
+}}
+
+{{nihongo|'''Oomiwa Shrine'''|大神神社 (大垣市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
+
+{{wikidata link|Q11438336|ja|大神神社 (大垣市)|grok=none|check_date=2026-06-06}}
+
+== Japanese content ==
+{{神社
+ | 名称=Ōmiwa Shrine
+ | 画像=[[File:大垣市上石津町宮 大神神社.jpg|270px]]
+ | 所在地={{ill|Gifu Prefecture|Q131277|qid=Q131277}}{{ill|Ōgaki|Q384926|qid=Q384926}} Kamiishizu-chō Miya, Kaidō 194-1
+ | 位置= {{WikidataCoord}}
+ | 祭神={{ill|Ōmononushi|lt=Ōmononushi|Q10936701|qid=Q10936701|qid=Q10936701|lt=Ōmononushi Kushimikatama-no-Mikoto}}
+ | 創建={{ill|7th century|Q8089|qid=Q8089}}
+ | 社格={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}（small）<br/>former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+ | 例祭={{ill|October 10|Q2921|qid=Q2921}}
+ | 本殿={{ill|Shinmei-zukuri|Q930545|qid=Q930545}}
+ | 地図= {{Location map|Japan Gifu|label=Ōmiwa Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Ōmiwa Shrine''' (おおみわじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Kamiishizu-chō, {{ill|Ōgaki|Q384926|qid=Q384926}}, {{ill|Gifu Prefecture|Q131277|qid=Q131277}}.
+
+It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=shikinaisha}} of Tagi District, {{ill|Mino Province|Q864156|qid=Q864156}}, and its former rank under the {{ill|Q712534|lt=Modern shrine ranking system}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}. It is one of the many {{ill|Ōmiwa Shrine|Q705542|qid=Q705542}} in Japan.
+
+=== Enshrined deities ===
+*{{ill|Ōmononushi|lt=Ōmononushi|Q10936701|qid=Q10936701|qid=Q10936701|lt=Ōmononushi Kushimikatama-no-Mikoto}}
+
+Associated deities
+*{{ill|Emperor Jimmu|Q200188|qid=Q200188|lt=Kamuyamatoiwarehiko-no-Sumeramikoto}}
+*{{ill|Himetataraisuzu-hime|Q5353793|qid=Q5353793|lt=Himetataraisuzuhime-no-Mikoto}}
+
+=== History ===
+*The founding date is unknown. During the reign of {{ill|Empress Jitō|Q232026|qid=Q232026}}, when she reached Yokkaichi District in {{ill|Ise Province|Q864166|qid=Q864166}} on an imperial progress to Ise, Right Minister Miwa no Ason Takachimaro received an oracle from Ōmononushi Kushimikatama-no-Mikoto and founded this shrine on Mt. Tagi in Mino Province. It was originally called Ōmiwa Shrine.
+*In {{ill|1113|Q19531|qid=Q19531}} (Eikyū 1), a nearby shrine was washed to this shrine in a violent storm. The deity of that shrine (Emperor Jinmu and Himetataraisuzuhime-no-Mikoto) was merged here, and the name was changed to Nagarehiko Daimyōjin.
+*In {{ill|1375|Q6277|qid=Q6277}} (Eiwa 7), it was moved to the current site.
+*In {{ill|1869|Q7720|qid=Q7720}} (Meiji 2), it resumed the name Ōmiwa Shrine; in Meiji 6 ({{ill|1873|Q7757|qid=Q7757}}), it became gōsha.
+
+=== Cultural properties ===
+'''Gifu Prefecture designated natural monument'''
+*Shrine grove of Ōmiwa Shrine<ref>{{Cite web|和書|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/tenki/oogakisi/oomiwa.html |title=Shrine grove of Ōmiwa Shrine |publisher=Gifu Prefecture |accessdate=2013-04-25}}</ref>
+
+=== Access ===
+*From {{ill|Sekigahara Station|Q872034|qid=Q872034}} on the {{ill|Tōkaidō Main Line|Q1190152|qid=Q1190152}}, take the {{ill|Meihan Kintetsu Bus|Q11415818|qid=Q11415818}} Sekigahara-Toki line and get off at “Miya.”
+
+=== Nearby facilities ===
+*{{ill|Nishitakagike Jin'ya|Q11630008|qid=Q11630008}}
+
+=== Other ===
+*Shrine tradition gives the founding year as Shuchō 6, but that year does not exist. Since Shuchō 1 is {{ill|686|Q30619|qid=Q30619}}, “Shuchō 6” is estimated around {{ill|691|Q23474|qid=Q23474}}, suggesting a late 7th-century foundation.
+*The current site is in former Ishi District, Mino Province. It moved here in Eiwa 7; before that it is said to have been at a place called Uenoyama.
+
+=== Notes ===
+{{脚注ヘルプ}}
+{{Reflist}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Oomiwa Shrine]][[Category:Shikinaisha|Oomiwa Shrine]][[Category:Miwa shrines]]
+[[Category:Shikinaisha in Mino Province]]
+[[Category:Shinto shrines in Gifu Prefecture]]
+[[Category:Shikinaisha in Mino Province]]
+[[Category:Former Gō-sha in Gifu Prefecture]]
+[[Category:History of Ogaki]]
+[[Category:Miwa shrines]]
+[[Category:Natural Monuments Designated by Gifu Prefecture]]
+[[Category:Buildings and structures in Ogaki]]
+[[Category:Pages with unresolved QID in ill template]]
+
+[[Category:Git synced pages]]

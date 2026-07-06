@@ -1,0 +1,86 @@
+{{Expand Japanese|生駒山口神社}}
+
+{{Infobox religious building
+| name = Ikomayamaguchi Shrine
+| native_name = 生駒山口神社
+| image = 生駒山口神社２.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ikomayamaguchi Shrine
+| coordinates = {{coord|34.645831|135.695673}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ikomayamaguchi Shrine'''|生駒山口神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+[[ja:生駒山口神社]]
+
+{{wikidata link|Q115740129|ja|生駒山口神社|grok=none|check_date=2026-05-29}}
+
+== Japanese content ==
+{{Shrine
+| Name        = Ikoma Yamaguchi Shrine
+| Image       = [[File:Ikoma Yamaguchi Shrine 2.jpg|250px]]<br />Worship hall<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250}}
+| Location    = {{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Ikoma District, Nara|Q971003|qid=Q971003}}{{ill|Heguri, Nara|Q1346790|qid=Q1346790}} Ichihara 5-1
+| ISO         = JP-29
+| Latitude degrees = 34 | Latitude minutes = 38 | Latitude seconds = 44.8
+| Longitude degrees = 135 | Longitude minutes = 41 | Longitude seconds = 44.8
+| Enshrined deities = {{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}}, {{ill|Kushinadahime|qid=Q505469|lt=Kushinadahime-no-Mikoto}}
+| Map         = Japan Nara
+}}
+'''Ikoma Yamaguchi Shrine''' (いこまやまぐちじんじゃ) is a Shinto shrine enshrined in Ichihara, {{ill|Heguri, Nara|Q1346790|qid=Q1346790}}, {{ill|Ikoma District, Nara|Q971003|qid=Q971003}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}}. In the '{{ill|Engishiki|ar|إنجيشيكي (كتاب ياباني)|de|Engishiki|es|Engishiki|fr|Engishiki|he|אנגישיקי|id|Engishiki|it|Engishiki|ja|延喜式|ko|엔기시키|min|Engishiki|mr|इंगिशिकी|nl|Engishiki|pt|Engishiki|ru|Энгисики|simple|Engishiki|tr|Engishiki|uk|Енґісікі|zh|延喜式|qid=Q1342448}}' {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Register of Deities}}, it is listed as an {{ill|Taisha (shrine)|Q11438310|qid=Q11438310}}-ranked {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=shikinaisha}}. Under the {{ill|Q712534|lt=former shrine ranking system}}, it was classified as a {{ill|Son-sha|ja|村社|qid=Q134917284}}.
+[[File:Ikoma Yamaguchi Shrine.jpg|Thumbnail|In front of the worship hall]]
+
+=== Overview ===
+In the 'Engishiki,' it appears as “Ikoma Yamaguchi Shrine,” and it is stipulated that it is to receive {{ill|Hanpei|Q11481885|qid=Q11481885}} offerings at the imperial court’s {{ill|Tsukinami-no-Matsuri|Q11516161|qid=Q11516161}} and {{ill|Niiname-no-Matsuri|Q11501518|qid=Q11501518}}.
+
+The enshrined deities are {{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}} and {{ill|Kushinadahime|qid=Q505469|lt=Kushinadahime-no-Mikoto}}.
+
+However, in the {{ill|Tokusen Jinmyōchō|ja|特選神名牒|qid=Q11571092}}, the enshrined deity is recorded as {{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi-no-Mikoto}}.<ref>{{Cite web |url=https://dl.ndl.go.jp/pid/971155/1/64 |title=Specially Selected Register of Deity Names |access-date=2024-4-8}}</ref>
+
+The subordinate shrine on the right side of the main hall is Ōjinja (enshrined deity: {{ill|Amaterasu|Q455602|qid=Q455602}}).
+
+The subordinate shrines on the left side of the main hall, from right to left, are: Sarutahiko Shrine (enshrined deity: {{ill|UNKNOWN|lt=Sarutahiko-no-Mikoto}}), Hachiman Shrine (enshrined deity: {{ill|Emperor Ōjin|qid=Q317997|lt=Hondawake-no-Mikoto|qid=Q317997}}), Kasuga Shrine (enshrined deity: {{ill|Kasuga-no-Kami|Q11088805|qid=Q11088805}}), Itsukushima Shrine (enshrined deity: {{ill|Ichikishima-hime|fr|Ichikishimahime|ja|イチキシマヒメ|simple|Ichikishima-hime|zh|市寸島比賣命|qid=Q11059454|lt=Ichikishimahime-no-Mikoto}}), Inari Shrine (enshrined deity: {{ill|Inari Ōkami|Q719665|qid=Q719665}}), and Ebisu Shrine (enshrined deity: {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Kami}})<ref>{{Cite book|Japanese book|editor=Heguri Town History Editorial Committee|title=History of Heguri Town|publisher=Heguri Town Office|date=1976-04|ncid=BN04492478|page=639}}</ref>.
+
+Also, to the right as one faces the Itsukushima Shrine, there is a stone engraved with “{{ill|Senior First Rank|fa|شوئیچی|ja|正一位|ko|정1위|zh|正一位|qid=Q11123258}} Hakuichi Daimyōjin (しょういちいはくいちだいみょうじん),” which is enshrined. This stone enshrines the white fox of Inari, an agricultural deity, and is said to also bring blessings for eye diseases.
+
+Before the early modern period, {{ill|Gozu Tennō|Q11570247|qid=Q11570247}} was enshrined here, but due to the {{ill|Haibutsu kishaku|ca|Haibutsu kishaku|de|Haibutsu kishaku|es|Haibutsu kishaku|fa|هایبوتسو کیشاکو|fi|Haibutsu kishaku|fr|Haibutsu kishaku|id|Haibutsu kishaku|it|Haibutsu kishaku|ja|廃仏毀釈|ko|폐불훼석|pl|Haibutsu-kishaku|pt|Haibutsu kishaku|th|ไฮบุตสึคิชากุ|zh|廢佛毀釋|qid=Q702298}}, Susanoo-no-Mikoto was enshrined in place of the strongly Buddhist-associated Gozu Tennō.
+
+The date of founding and origins are not clearly known, but it is popularly also called Taki-no-Miya, and it is said to have originally been located beside a waterfall to the southwest.
+
+It is thought to have been a guardian deity of the Ikoma mountain range and was one of the ten Yamaguchi shrines.
+
+=== Cultural Properties ===
+At Ikoma Yamaguchi Shrine, a ritual called “Ohakitsuki” has continued in which, one week before the autumn grand festival, the male and female deities of the shrine visit the homes of parishioners, and on the eve of the festival, known as the yomimiya,<ref>{{Cite kotobank|word=Yomimiya|accessdate=2022-09-22}}</ref> they return to the shrine. This ritual has been designated as a Nara Prefecture-designated Intangible {{ill|Folk Cultural Property|ja|民俗文化財|qid=Q24895900}}.<ref>{{Cite web|Japanese book|url=https://www1.g-reiki.net/pref.nara/reiki_honbun/k401RG00000907.html |title=Nara Prefecture-Designated Intangible Folk Cultural Properties |access-date=2022-09-19 |publisher=Nara Prefecture}}</ref>
+
+=== Access ===
+About a 10-minute walk from {{ill|Motosanjōguchi Station|eo|Stacio Motosanjōguchi|id|Stasiun Motosanjōguchi|ja|元山上口駅|ko|모토산조구치역|zh|元山上口站|qid=Q6918516|lt=Motoyamaguchi}} on the {{ill|Ikoma Line|Q900218|qid=Q900218}}.
+
+Parking available.
+
+=== Notes ===
+{{Notes help}}
+{{Reflist}}
+
+=== Related Articles ===
+* {{ill|List of Shikinaisha in Yamato Province|abstract|Q11433427|ja|大和国の式内社一覧|qid=Q11433427}}
+* {{ill|List of Nara Prefecture-designated cultural properties|ja|奈良県指定文化財一覧|qid=Q11445166}}
+
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Ikomayamaguchi Shrine]][[Category:Shikinaisha|Ikomayamaguchi Shrine]][[Category:Shikinai Taisha]]
+[[Category:Kanpei-sha]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Shinto shrines in Nara Prefecture]]
+[[Category:Buildings and structures in Heguri, Nara]]
+[[Category:History of Heguri, Nara]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Shikinai Taisha]]
+[[Category:Son-sha in Nara Prefecture]]
+
+[[Category:Git synced pages]]

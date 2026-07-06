@@ -1,0 +1,77 @@
+{{Infobox religious building
+| name = Sanai Shrine
+| native_name = 左内神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Sanai Shrine
+| coordinates = {{coord|35.09444|138.932207}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Sanai Shrine'''|左内神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+[[ja:左内神社]]
+
+{{wikidata link|Q134926924|ja|左内神社|check_date=2026-05-25}}
+
+== Japanese content ==
+{{Shinto shrine
+|Name = Sanai Shrine
+|Image = [[File:Sanai-jinja (Mishima, Shizuoka).JPG|250px]]<br />Torii gate and worship hall<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|35|5|39.7|N|138|55|55.8|E}}}}
+|Location = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Mishima, Shizuoka|Q653478|qid=Q653478}} Nakajima 310-2
+|Coordinates = {{Wiki coordinates DMS|35|5|39.7|N|138|55|55.8|E|region:JP-22_type:landmark}}
+|Map = {{Location map|Japan Shizuoka|label=Sanai Shrine|coordinates=
+{{coord2|35|5|39.7|N|138|55|55.8|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+|Enshrined deity = Ametsuseketachi-no-Mikoto
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}; former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|Founded = 
+|Main hall = 
+|Other names = 
+|Pilgrimage affiliation = 
+|Annual festival = July 17
+|Rituals = 
+}}
+'''Sanai Shrine''' (さないじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Nakajima, {{ill|Mishima, Shizuoka|Q653478|qid=Q653478}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="jinjacho">[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402003 Sanai Shrine] - Shizuoka Prefecture Association of Shinto Shrines</ref>
+
+=== Overview ===
+It is situated in the southwestern part of Mishima City’s Nakajima district, between the {{ill|Gotengawa River|Q18988494|qid=Q18988494}} and the Nakajima Community Center.
+
+It is identified with the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} '''Fuminashi Shrine''' (ふみなしじんじゃ) / '''Chichinashi Shrine''' (ちちなしじんじゃ), or '''Ametsuseketachi-no-Mikoto Shrine''' (あめつせけたちのみことじんじゃ).<ref name="city1">[https://www.city.mishima.shizuoka.jp/ipn030092.html Sanai Shrine] - Mishima City</ref><ref name="city2">[https://www.city.mishima.shizuoka.jp/mishima_info/amenity/rekishi/jinja/jinnja.htm Shrines] - Mishima City</ref>
+
+The date of its founding is unknown, but it is said that, as its name suggests, it once stood on the east side (the left side when viewed from Mishima Taisha) of the old Shimoda Highway, which also served as the approach to {{ill|Mishima Taisha|Q650772|qid=Q650772}}.<ref name="city1"/>
+
+More specifically, it is said to have originally stood to the north of its present location, near the Tenashi (てなし) Jizō in the Naka district. According to one theory, both Tenashi (てなし) and Chichinashi (ちちなし) (→ Fuminashi (ふみなし)) are corruptions of '''tetenashi''' (父梨/父無).<ref name="city1"/>
+
+From there it was relocated south to the area around the present Nakajima Water Purification Plant (there is a stone monument to this effect), but in February of Meiji 19 (1886) it was damaged by a fire that destroyed all of its buildings, resulting in the loss of all treasures and ancient documents.<ref name="city1"/><ref name="city2"/> It was subsequently relocated and rebuilt at its current site in April of Meiji 20 (1887), and was renovated in Shōwa 16 (1941), remaining as it is today.<ref name="city2"/>
+
+=== Enshrined deity ===
+* Ametsuseketachi-no-Mikoto (阿米都瀬気多知命)
+
+=== Notes ===
+{{Reflist}}
+
+=== See also ===
+* {{ill|Unai Shrine|Q134927903|qid=Q134927903}}
+* {{ill|Mishima Taisha|Q650772|qid=Q650772}}
+
+=== External links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402003 Sanai Shrine] - Shizuoka Prefecture Association of Shinto Shrines
+* [https://www.city.mishima.shizuoka.jp/ipn030092.html Sanai Shrine] - Mishima City
+** [https://www.city.mishima.shizuoka.jp/mishima_info/amenity/rekishi/jinja/jinnja.htm Shrines] - Mishima City
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Sanai Shrine]][[Category:Shikinaisha|Sanai Shrine]][[Category:Shikinaisha|Sanai Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:静岡県の旧村社]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Buildings and structures in Mishima, Shizuoka]]
+[[Category:三島市の歴史]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+
+[[Category:Git synced pages]]

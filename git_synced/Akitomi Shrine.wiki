@@ -1,0 +1,74 @@
+{{Infobox religious building
+| name = Akitomi Shrine
+| native_name = 飽富神社
+| image = Akitomijinja.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Akitomi Shrine
+| coordinates = {{coord|35.420924|139.985375}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama|de|Ukanomitama|en|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728}}
+}}
+
+{{nihongo|'''Akitomi Shrine'''|飽富神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kazusa Province]].
+
+[[ja:飽富神社]]
+[[SV:Akitomi-jinja]]
+
+{{wikidata link|Q85884553|ja|飽富神社|sv|Akitomi-jinja|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Citation needed|date=September 2020}}
+{{Shrine
+ | Name=Akitomi Shrine
+ | Image=[[Image:akitomijinja.jpg|250px]]<br />Worship hall<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=250}}
+ | Location={{ill|Chiba Prefecture|Q80011|qid=Q80011}}{{ill|Sodegaura|Q646847|qid=Q646847}} Iitomi 2863
+ | Coordinates={{Wiki coordinates DMS|35|25|15|N|139|59|7|E|display=title,inline}}
+ | Deity={{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728}}
+ | Shrine rank=Former {{ill|UNKNOWN|lt=Prefectural shrine}}, {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
+ | Founded=First year of Emperor Suizei
+ | Main hall=
+ | Annual festival=July 24
+ | Rituals=
+ | Map= {{Location map|Japan Chiba|label=Akitomi Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=20|float=center|caption=}}
+}}
+'''Akitomi Shrine''' (あきとみじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Higashibaba, Iitomi, {{ill|Sodegaura|Q646847|qid=Q646847}}, {{ill|Chiba Prefecture|Q80011|qid=Q80011}}.
+
+===Origin===
+It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} whose name already appears in the “{{ill|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Sandai Jitsuroku}}” and the “{{ill|Engishiki|Q1342448|qid=Q1342448}},” compiled during the {{ill|Heian period|Q193292|qid=Q193292}}, and is an ancient shrine that has existed for more than a thousand years. Its former name was Otomi Shrine, and it is the only Shikinaisha in the Kimitsu region, making it of high historical value.
+
+According to shrine tradition, it was founded in the first year of the reign of the second emperor, {{ill|Emperor Suizei|Q313321|qid=Q313321}}, by the emperor’s elder brother {{ill|Kamuyaimimi|Q11588756|qid=Q11588756}}. The principal enshrined deity is Ukanomitama no Mikoto, that is, a god of agriculture.
+
+The shrine buildings are in the {{ill|Ishi-no-ma-zukuri|Q3155268|qid=Q3155268|lt=Gongen style}}, rebuilt in the 4th year of {{ill|Genroku|ar|فترة غنروكو|cs|Genroku|de|Genroku|es|Genroku|fa|گنروکو|fr|Ère Genroku|id|Genroku|it|Genroku|ja|元禄|ko|겐로쿠|pt|Genroku|ru|Гэнроку|simple|Genroku|sk|Genroku|sr|Генроку|sv|Genroku|tr|Genroku|zh|元祿|qid=Q1325001}} ({{ill|1691|Q7682|qid=Q7682}})<ref>On-site information board</ref>.
+
+===Access===
+From {{ill|Sodegaura Station|Q573413|qid=Q573413}}, take a {{ill|Nitto Kotsu|Q11509502|qid=Q11509502|lt=Nitto Kotsu}} bus bound for Nozomino, Hirakawa Administrative Center, or Tokyo German Village, and get off at “Iitomi.”
+
+=== Notes ===
+{{Footnote help}}
+{{Reflist}}
+
+=== Related items ===
+
+* {{ill|Best 500 attractions in Chiba|Q11496691|qid=Q11496691}}
+{{Shinto-stub}}
+{{Pref-stub|pref=Chiba Prefecture}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Akitomi Shrine]][[Category:Shikinaisha|Akitomi Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Kazusa Province]]
+[[Category:Shinto shrines in Chiba Prefecture]]
+[[Category:袖ケ浦市の歴史]]
+[[Category:袖ケ浦市の建築物]]
+[[Category:Shikinaisha in Kazusa Province]]
+[[Category:Ō clan]]
+[[Category:Top 500 Attractions of Bōsō Peninsula]]
+[[Category:Shinto shrines in Chiba Prefecture]]
+[[Category:Ō clan]]
+[[Category:incorrect template category applied]]
+
+[[Category:Git synced pages]]

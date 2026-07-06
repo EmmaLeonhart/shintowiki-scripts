@@ -1,0 +1,73 @@
+{{Expand Japanese|磯神社}}
+
+{{Infobox religious building
+| name = Iso Shrine
+| native_name = 磯神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Iso Shrine
+| coordinates = {{coord|34.519706|136.701158}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| website = {{Official website|http://kyoka.mie-jinjacho.or.jp/shrine/%E7%A3%AF%E7%A5%9E%E7%A4%BE/}}
+}}
+
+{{nihongo|'''Iso Shrine'''|磯神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+[[ja:磯神社]]
+
+{{wikidata link|Q135039263|ja|磯神社|grok=none|check_date=2026-05-29}}
+
+== Japanese content ==
+{{神社
+| 名称 = Iso Shrine
+| 画像 = {{画像募集中|cat=伊勢市}}
+| 所在地 = {{ill|Mie Prefecture|Q128196|qid=Q128196}}{{ill|Ise, Mie|Q328067|qid=Q328067}} Iso-chō 1069
+| 位置 = {{WikidataCoord}}
+| 祭神 = {{ill|UNKNOWN|lt=Amaterasu}}
+| 神体 = 
+| 社格 =  {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}、former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+| 創建 = 
+| 本殿 = 
+| 別名 = 
+| 札所等 = 
+| 例祭 = April 21
+| 神事 = 
+| 地図 = {{Location map|Japan Mie|label=磯神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Iso Shrine''' (いそじんじゃ) is a shrine enshrined in Iso-chō, {{ill|Ise, Mie|Q328067|qid=Q328067}}, {{ill|Mie Prefecture|Q128196|qid=Q128196}}. It is an {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} and its former rank was {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+
+=== History ===
+In the 25th year of {{ill|Emperor Suinin|Q314850|qid=Q314850}}, while {{ill|Yamatohime-no-mikoto|Q4388732|qid=Q4388732}} was traveling provinces in search of a site for Amaterasu's grand shrine, she stayed at Iso-no-miya; this is said to be the shrine's founding. It is one of the shrines identified with so-called {{ill|Moto-Ise Shrines|Q11387775|qid=Q11387775}}.
+
+=== Enshrined deities ===
+* Main deity: {{ill|UNKNOWN|lt=Amaterasu-sumasu-sumeramikami}}
+* Side halls: {{ill|UNKNOWN|lt=Toyouke-hime-ōkami}}・{{ill|UNKNOWN|lt=Konohanasakuya-hime no Kami}}<ref>{{Cite web|title=Iso Shrine official website|url=https://isojinja.com/|access-date=2025-12-5}}</ref>
+
+=== Subsidiary shrines ===
+* Kiyohama-sha（deity: {{ill|UNKNOWN|lt=Utsushi-kunitama no Kami}}）
+* Hakusan-sha（deity: {{ill|UNKNOWN|lt=Kikuri-hime no Kami}}）
+* Yama-sha（deity: {{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi no Kami}}）<ref>{{Cite web|title=Mie Prefecture Shrine Office: Iso Shrine|url=http://kyoka.mie-jinjacho.or.jp/shrine/%e7%a3%af%e7%a5%9e%e7%a4%be/|access-date=2025-12-5}}</ref>
+=== Annual festival ===
+April 21
+
+=== Related articles ===
+*{{ill|List of Shikinaisha in Ise Province|abstract|Q11378973|ja|伊勢国の式内社一覧|qid=Q11378973}}
+
+=== Notes ===
+{{Reflist|2}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Iso Shrine]][[Category:Shikinaisha|Iso Shrine]][[Category:Shikinaisha|Iso Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Ise Province]]
+[[Category:Shinto shrines in Mie Prefecture]]
+[[Category:Shinto shrines in Ise City]]
+[[Category:Shikinaisha in Ise Province]]
+[[Category:Moto-Ise shrines]]
+[[Category:Former Gō-sha in Mie Prefecture]]
+
+[[Category:Git synced pages]]

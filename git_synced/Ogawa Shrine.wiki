@@ -13,31 +13,7 @@
 | religious_affiliation = [[Shinto]]
 }}
 {{nihongo|'''Ogawa Shrine'''|小川神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Shinano Province]].
-== instance of (P31) ==
-* {{ill|Shikinai Ronsha|lt=Shikinai Ronsha|ja|論社|qid=Q135022904}}
-* {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
-* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}}
-* {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
-* {{ill|Kokuhei-sha|lt=Kokuhei-sha|qid=Q135160342}}
-== part of (P361) ==
-* {{ill|List of Shikinaisha in Shinano Province|ja|信濃国の式内社一覧|qid=Q11386164}}
-** Series ordinal: 23
-** P155: {{ill|Tsumashina Shrine|ja|妻科神社|qid=Q11447213}}
-** P156: {{ill|Moritano Shrine|qid=Q135039929|lt=Moritano Shrine}}
-== located in the administrative territorial entity (P131) ==
-* {{ill|Shinano Province|ckb|پارێزگای شینانۆ|cs|Provincie Šinano|de|Provinz Shinano|eo|Provinco Ŝinano|es|Provincia de Shinano|fa|ولایت شینانو|fr|Province de Shinano|gl|Provincia de Shinano|hak|Shinano-koet|id|Provinsi Shinano|it|Shinano (provincia)|ja|信濃国|knc|Shinano Province|ko|시나노국|lt|Šinano žemė|ms|Wilayah Shinano|nl|Shinano (provincie)|pl|Prowincja Shinano|pt|Província de Shinano|ru|Синано (провинция)|simple|Shinano Province|sk|Šinano (provincia)|sr|Провинција Шинано|th|แคว้นชินาโนะ|tr|Shinano (vilayet)|uk|Провінція Сінано|zh|信濃國|zh_min_nan|Sinano-kok|zh_yue|信濃國|qid=Q289250}}
-* {{ill|Ogawa, Nagano|ceb|Ogawa Mura|de|Ogawa (Nagano)|es|Ogawa (Nagano)|fa|اوگاوا، ناگانو|fi|Ogawa|fr|Ogawa (Nagano)|hy|Օգավա (գյուղ)|it|Ogawa (Nagano)|ja|小川村|ko|오가와촌|my|အိုဂဝရွာ၊ နဂနို|ru|Огава (село)|th|โองาวะ (จังหวัดนางาโนะ)|tl|Ogawa, Nagano|tr|Ogawa, Nagano|uk|Оґава (Наґано)|ur|اوگاوا، ناگانو|uz|Ogava (Nagano)|zh|小川村|qid=Q1348971}}
-== coordinate location (P625) ==
-* {{coord|36.646143|137.927007}}
 <ref>Kokugakuin University Shrine database</ref>
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-* 181991
-** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
-== country (P17) ==
-* {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17|lt=Japan}}
-== said to be the same as (P460) ==
-* {{ill|Wokahano Shrine (Q135039928)|qid=Q135039928|lt=Wokahano Shrine}}
-** P2868: {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
 {{wikidata link|Q135194226|ja|小川神社|grok=none|check_date=2026-06-05}}
 == Japanese content ==
 {{神社
@@ -45,7 +21,7 @@
 |画像= {{画像募集中|cat=上水内郡}}
 |所在地 = {{ill|Nagano Prefecture|Q127877|qid=Q127877}}{{ill|Kamiminochi District, Nagano|ceb|Kamiminochi-gun|de|Kamiminochi-gun|fi|Kami-Minochin piirikunta|fr|District de Kamiminochi|it|Distretto di Kamiminochi|ja|上水内郡|ko|가미미노치군|pl|Powiat Kamiminochi|uk|Повіт Камі-Міноті|zh|上水內郡|qid=Q1155074}}{{ill|Ogawa, Nagano|ceb|Ogawa Mura|de|Ogawa (Nagano)|es|Ogawa (Nagano)|fa|اوگاوا، ناگانو|fi|Ogawa|fr|Ogawa (Nagano)|hy|Օգավա (գյուղ)|it|Ogawa (Nagano)|ja|小川村|ko|오가와촌|my|အိုဂဝရွာ၊ နဂနို|ru|Огава (село)|th|โองาวะ (จังหวัดนางาโนะ)|tl|Ogawa, Nagano|tr|Ogawa, Nagano|uk|Оґава (Наґано)|ur|اوگاوا، ناگانو|uz|Ogava (Nagano)|zh|小川村|qid=Q1348971}} Oneyama 6862
 |位置 = {{WikidataCoord}}
-|祭神   = {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata-no-Mikoto}}, {{ill|Q702140|qid=Q702140|lt=Ōanamuchi-no-Mikoto}}, {{ill|Kotoshironushi-no-Mikoto|fa|کوتوشیرونوشی|fr|Kotoshironushi|it|Kotoshironushi|ja|事代主|ko|고토시로누시|ru|Котосиронуси|simple|Kotoshironushi|th|โคโตชิโรนูชิ|zh|事代主神|qid=Q8009611|lt=Kotoshironushi}}, ({{ill|Emperor Keitai|Q349277|qid=Q349277|lt=Oto no Ōdo no Mikoto}})
+|祭神   = {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata-no-Mikoto}}, {{ill|Q702140|qid=DELETED_QID|lt=Ōanamuchi-no-Mikoto}}, {{ill|Kotoshironushi-no-Mikoto|fa|کوتوشیرونوشی|fr|Kotoshironushi|it|Kotoshironushi|ja|事代主|ko|고토시로누시|ru|Котосиронуси|simple|Kotoshironushi|th|โคโตชิโรนูชิ|zh|事代主神|qid=Q8009611|lt=Kotoshironushi}}, ({{ill|Emperor Keitai|Q349277|qid=Q349277|lt=Oto no Ōdo no Mikoto}})
 |社格   = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}
 |創建   = unknown
 |本殿   = 
@@ -75,5 +51,8 @@ The present main sanctuary was built in October {{ill|1729|Q6952|qid=Q6952}} (Ky
 [[Category:Suwa shrines]]
 [[Category:Shikinai Ronsha]]
 [[Category:Shikinai Shōsha]]
+[[Category:Pages with deleted QID in ill template]]
 [[Category:Shinto shrines in Nagano Prefecture]]
 [[Category:Pages with unresolved QID in ill template]]
+
+[[Category:Git synced pages]]

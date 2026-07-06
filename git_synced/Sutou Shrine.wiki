@@ -1,0 +1,67 @@
+{{Infobox religious building
+| name = Sutou Shrine
+| native_name = 走湯神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Sutou Shrine
+| coordinates = {{coord|34.67606|138.908824}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Sutou Shrine'''|走湯神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+[[ja:走湯神社 (下田市)]]
+
+{{wikidata link|Q134893133|ja|走湯神社 (下田市)|check_date=2026-05-26}}
+
+== Japanese content ==
+{{Shinto shrine
+|Name = Sutō Shrine
+|Image = {{Image requested|cat=Shimoda City}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|34|40|33.6|N|138|54|31.9|E}}}}
+|Location = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}} Ōgamo 495
+|Coordinates = {{Wiki coordinates 2-tier DMS|34|40|33.6|N|138|54|31.9|E}}
+|Enshrined deity = Izunahime-no-Mikoto
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}; former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|Established = 
+|Main hall = 
+|Alternative names = 
+|Pilgrimage designation = 
+|Annual festival = October 15
+|Rituals = 
+|Map = {{Location map|Japan Shizuoka|label=Sutō Shrine|coordinates=
+{{coord2|34|40|33.6|N|138|54|31.9|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Sutō Shrine''' (すとうじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Ōgamo, {{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="jinjacho">[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401055 Sutō Shrine] - Shizuoka Prefecture Association of Shinto Shrines</ref>
+
+=== Overview ===
+It is enshrined at the foot of the mountains in the Ōgamo area, to the north and upstream of the Ōgamo River, which flows through the Kisami district west of Shimoda City.
+
+Although the date of establishment is unknown, the shrine is identified with '''Izunahime-no-Mikoto Shrine''' (いつなひめのみことじんじゃ), a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and is an ancient shrine recorded in the '{{ill|Izu Province Shrine Rank Register|Q17193087|qid=Q17193087}}' as “Junior Fourth Rank, Upper: Itsunahime no Myōjin.”<ref name="gen">[https://genbu.net/data/izu/sutou_title.htm Sutō Shrine] - Genmatsuko</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140112-01.html Sutō Shrine] - Research on Engishiki Shrines</ref>
+
+In {{ill|Meiji era|Q3125096|qid=Q3125096}} 6 ({{ill|1873|Q7757|qid=Q7757}}), it was ranked as a village shrine.<ref name="engi"/>
+
+=== Enshrined Deity ===
+* Izunahime-no-Mikoto
+
+=== Notes ===
+{{Reflist}}
+
+=== External Links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401055 Sutō Shrine] - Shizuoka Prefecture Association of Shinto Shrines
+
+{{Default sort: Sutō Shrine, Shimoda City}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Sutou Shrine]][[Category:Shikinaisha|Sutou Shrine]][[Category:Shikinaisha|Sutou Shrine]][[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:静岡県の旧村社]]
+[[Category:Buildings and structures in Shimoda]]
+[[Category:History of Shimoda]]
+[[Category:Shikinaisha in Izu Province]]
+
+[[Category:Git synced pages]]

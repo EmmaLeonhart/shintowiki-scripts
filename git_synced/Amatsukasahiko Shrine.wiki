@@ -1,0 +1,69 @@
+{{Expand Japanese|天都賀佐比古神社}}
+
+{{Infobox religious building
+| name = Amatsukasahiko Shrine
+| native_name = 天都賀佐比古神社
+| image = 阿波国式内社論社天都賀佐比古神社(美馬町轟).jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Amatsukasahiko Shrine
+| coordinates = {{coord|34.06001|134.080376}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Amatsukasahiko Shrine'''|天都賀佐比古神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:天都賀佐比古神社]]
+
+{{wikidata link|Q107410066|ja|天都賀佐比古神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Source citation needed|date=2026-01}}
+{{Confusion|Amatsu Kasahiko Shrine}}
+{{Shinto shrine
+|Name= Amatsukasa-hiko Shrine
+|Image= [[File:阿波国式内社論社天都賀佐比古神社(美馬町轟).jpg|250px]]<br />Torii gate and worship hall
+|Location= {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Mima, Tokushima|Q857828|qid=Q857828}}{{ill|Mimachō|Q11609479|qid=Q11609479}} Todoroki 32
+|Coordinates= {{WikidataCoord}}
+|Deity= {{ill|UNKNOWN|lt=Shina-nagatsuhiko no Mikoto}}<br />{{ill|Shinatsuhiko|Q1073925|qid=Q1073925|lt=Shina-nagatsuhime no Mikoto}}
+|Shrine rank= Former {{ill|Son-sha|Q134917284|qid=Q134917284}}, {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} candidate shrine
+|Founded= Unknown
+|Main hall= 
+|Other names= 
+|Annual festival= 
+|Rituals= 
+|Map= {{Location map|Japan Tokushima|label=Amatsukasa<br />Hiko Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Amatsukasa-hiko Shrine''' (あまつかさひこじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Mima, Tokushima|Q857828|qid=Q857828}}{{ill|Mimachō|Q11609479|qid=Q11609479}}.
+
+=== History ===
+The year of foundation is unknown, but it is thought to have been founded before the {{ill|6th century|Q8090|qid=Q8090}}. It is said to have enshrined a deity served by the residents and district officials of the Omura-go (gunri) area, which lay along the border of {{ill|Mima District, Tokushima|Q1156496|qid=Q1156496}} in the late {{ill|Kofun period|Q459939|qid=Q459939}}, to pacify wind-related disasters and pray for abundant harvests.
+
+=== Enshrined deities ===
+* {{ill|UNKNOWN|lt=Shina-nagatsuhiko no Mikoto}}
+* {{ill|Shinatsuhiko|Q1073925|qid=Q1073925|lt=Shina-nagatsuhime no Mikoto}}
+
+=== Access ===
+* About a 10-minute drive from “{{ill|Oshima Station|Q7106623|qid=Q7106623}}” on the {{ill|Shikoku Railway Company|Q496531|qid=Q496531|lt=JR}} {{ill|Tokushima Line|Q899310|qid=Q899310}}.
+
+=== Notes ===
+{{Reflist}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Amatsukasahiko Shrine]][[Category:Shikinaisha|Amatsukasahiko Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+[[Category:美馬市の建築物]]
+[[Category:美馬市の歴史]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+
+[[Category:Git synced pages]]

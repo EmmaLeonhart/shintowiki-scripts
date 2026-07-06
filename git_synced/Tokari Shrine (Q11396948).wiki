@@ -1,0 +1,63 @@
+{{Expand Japanese|利雁神社}}
+
+{{Infobox religious building
+| name = Tokari Shrine (Q11396948)
+| native_name = 利雁神社
+| image = Tokarishine.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Tokari Shrine (Q11396948)
+| coordinates = {{coord|34.53102|135.600558}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Tokari Shrine'''|利雁神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
+{{commons category|Category:Tokari Shrine}}
+[[ja:利雁神社]]
+
+{{wikidata link|Q11396948|commons|Category:Tokari Shrine|ja|利雁神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{神社
+ | 名称=Tokari Shrine
+ | 画像= [[File:Tokarishine.jpg|250px]]<br />Torii and worship hall
+ | 所在地={{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Habikino|Q694308|qid=Q694308}} Shakudo<br/> (3-2053 Miya-chō, Tondabayashi, Osaka)
+ | 位置= {{WikidataCoord}}
+ | 祭神={{ill|Ukemochi|Q2280323|qid=Q2280323}}<br/>{{ill|UNKNOWN|lt=Homudawake-no-Mikoto}}<br/>{{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}
+ | 社格={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (minor) / former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+ | 地図= {{Location map|Japan Osaka|label=Tokari Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Tokari Shrine''' (とかりじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Shakudo, {{ill|Habikino|Q694308|qid=Q694308}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was {{ill|Son-sha|Q134917284|qid=Q134917284}}. In the Meiji period it was {{ill|Shrine Consolidation Policy|Q11590700|qid=Q11590700|lt=merged}} into {{ill|Migukurumitama Shrine|Q11608777|qid=Q11608777}} in Miya-chō, {{ill|Tondabayashi|Q490928|qid=Q490928}}, becoming a {{ill|Sessha|Q135009904|qid=Q135009904}} of that shrine, but a shrine of the same name was later rebuilt at the old site in Shakudo.
+
+=== Enshrined deities ===
+It enshrines {{ill|Ukemochi|Q2280323|qid=Q2280323}}, {{ill|Emperor Ōjin|Q317997|qid=Q317997|lt=Homudawake-no-Mikoto}}, and {{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}.
+
+''Dai Nihon Shi Jingi-shi'' and ''Chiri Shiryo'' state that it enshrines the ancestral deity of the Yora clan, descendants of {{ill|Nigihayahi|fr|Nigihayahi|ja|ニギハヤヒ|simple|Nigihayahi|zh|饒速日命|qid=Q10949054|lt=Nigihayahi-no-Mikoto}}. ''Jinja Yōroku'' lists "deity unknown."
+
+=== History ===
+The shrine's founding history is unknown. It originally stood on Mount Tokari in the southwest of Shakudo village and was also called "Ō no Miya." In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} it is listed as a minor shrine. The shrine buildings were lost in warfare in the Tenshō era, and it was relocated in Keichō 17. In {{ill|1872|Q7753|qid=Q7753}} (Meiji 5), it was ranked as a village shrine, but on October 12, Meiji 40, it was merged into Migukurumitama Shrine in Aza Miya, {{ill|Kishi|Q18700084|qid=Q18700084}} (present-day Miya-chō, Tondabayashi).
+
+The time of rebuilding is unknown, but after the merger Tokari Shrine was rebuilt west of Saifuku-ji in Shakudo, Habikino.
+
+=== Notes ===
+{{Reflist}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Tokari Shrine (Q11396948)]][[Category:Shikinaisha|Tokari Shrine (Q11396948)]][[Category:Keidai-sha]]
+[[Category:Shikinaisha in Kawachi Province]]
+[[Category:Shinto shrines in Osaka Prefecture]]
+[[Category:Buildings and structures in Habikino, Osaka]]
+[[Category:History of Habikino, Osaka]]
+[[Category:Shikinaisha in Kawachi Province]]
+[[Category:Son-sha in Osaka Prefecture]]
+[[Category:Setsumatsusha]]
+[[Category:Buildings and structures in Tondabayashi, Osaka]]
+[[Category:History of Tondabayashi, Osaka]]
+
+[[Category:Git synced pages]]

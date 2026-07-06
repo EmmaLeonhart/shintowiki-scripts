@@ -1,0 +1,62 @@
+{{Expand Japanese|宇母理比古神社}}
+
+{{Infobox religious building
+| name = Umorihiko Shrine
+| native_name = 宇母理比古神社
+| image = Umorihiko shrine, Tokushima.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Umorihiko Shrine
+| coordinates = {{coord|33.990087|134.515131}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Umorihiko Shrine'''|宇母理比古神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:宇母理比古神社]]
+
+{{wikidata link|Q11449442|ja|宇母理比古神社|grok=none|check_date=2026-05-27}}
+
+== Japanese content ==
+{{出典の明記| date = 2025年1月}}{{神社
+|名称   = Umorihiko Shrine
+|画像   = [[File:Umorihiko shrine, Tokushima.jpg|250px|Umorihiko Shrine]]
+|所在地 = {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Tokushima (city)|Q207309|qid=Q207309}} Hatta-chō Moritoki 41
+|位置   = {{Coord|33|59|22.8|N|134|30|53.1|E|region:JP-36_type:landmark_scale:25000}}
+|祭神   = Uganomori no Kami
+|社格   = {{ill|Shikinai Shosha|Q134917287|qid=Q134917287}}・former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|創建   = unknown
+|本殿   = 
+|別名   = 
+|札所等 = 
+|例祭   = October 2
+|神事   = 
+|地図 = {{Location map|Japan Tokushima|label=宇母理<br />比古神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Umorihiko Shrine''' (うもりひこじんじゃ) is a shrine located in {{ill|Hata, Tokushima|Q11390732|qid=Q11390732}}, {{ill|Tokushima (city)|Q207309|qid=Q207309}}, {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}.
+
+=== Enshrined deity ===
+* '''Uganomori no Kami''' - also said to be another name for {{ill|UNKNOWN|lt=Ugayafukiaezu no Mikoto}}.
+
+=== History ===
+The founding date is unknown. It is an {{ill|Shikinaisha|lt=Engishiki shrine|qid=Q134917286|lt=Shikinaisha}}. This old shrine was also called "Umori Daimyōjin" and "Moritoki Daimyōjin." Flooding of the nearby {{ill|Hata River|Q11390730|qid=Q11390730|lt=Hatta River}} caused the loss of the shrine buildings and old documents. In 1875 (Meiji 8), it was ranked as a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+
+=== Notes ===
+{{Reflist}}
+
+{{神道 横}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Umorihiko Shrine]][[Category:Shikinaisha|Umorihiko Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima, Tokushima]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:徳島県の旧村社]]
+
+[[Category:Git synced pages]]

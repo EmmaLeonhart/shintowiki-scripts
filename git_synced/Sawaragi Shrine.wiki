@@ -1,0 +1,80 @@
+{{Expand Japanese|佐和良義神社}}
+
+{{Infobox religious building
+| name = Sawaragi Shrine
+| native_name = 佐和良義神社
+| image = Sawaragi 04.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Sawaragi Shrine
+| coordinates = {{coord|34.799772|135.56975}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Kagu-tsuchi|lt=Kagu-tsuchi|az|Kaqutsuçi|de|Kagutsuchi|en|Kagu-tsuchi|es|Kagutsuchi|fa|کاگو-تسوچی|fr|Kagutsuchi|it|Kagutsuchi|ja|カグツチ|mni|ꯀꯒꯨ-ꯁꯨꯆꯤ|pl|Kagutsuchi|ru|Кагуцути|sv|Kagutsuchi|ta|ககுட்சூசி|tr|Kagutsuchi|uk|Кагу-цуті|zh|迦具土|qid=Q1640658}}
+}}
+
+{{nihongo|'''Sawaragi Shrine'''|佐和良義神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
+{{commons category|Category:Sawaragi-jinja}}
+[[ja:佐和良義神社]]
+
+{{wikidata link|Q11383089|commons|Category:Sawaragi-jinja|ja|佐和良義神社|check_date=2026-05-25}}
+
+== Japanese content ==
+{{Shrine
+|Name=Sawaragi Shrine
+|Image=[[File:Sawaragi 01.jpg|250px]]<br />Torii
+|Location={{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Ibaraki, Osaka|Q502403|qid=Q502403}} Misawa-chō 9-27
+|Coordinates= {{WikidataCoord}}
+|Enshrined deity={{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Kagutsuchi-no-Ōkami}}
+|Shrine rank={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}; former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|Founded=
+|Main hall=
+|Annual festival={{ill|October 17|Q2962|qid=Q2962}}
+|Map= {{Location map|Japan Osaka|label=Sawaragi<br />Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
+}}
+'''Sawaragi Shrine''' (さわらぎじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}, and is a Shikinaisha of {{ill|Shimashimo district|Q10976940|qid=Q10976940}}. It is commonly known as “Ōmiya-san.”
+
+===History===
+From ancient times it stood by the embankment of the former Ibaraki River. Although it is listed as an Engishiki inner shrine, the date of its founding is unknown.
+* In {{ill|Meiji era|Q3125096|qid=Q3125096}} 5 ({{ill|1872|Q7753|qid=Q7753}}), it was ranked as a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+* In August of Meiji 40 ({{ill|1907|Q2048|qid=Q2048}}), torrential rains caused the river to breach its banks, washing away the shrine buildings.
+* In {{ill|Taishō era|Q329174|qid=Q329174}} 6 ({{ill|1917|Q2092|qid=Q2092}}), the main hall, worship hall, and equipment storehouse were rebuilt.
+* On May 28, Taishō 5, it was designated a shrine eligible to receive offerings of sacred food and cloth.
+
+===Enshrined deity===
+At present, {{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Kagutsuchi-no-Ōkami}} is enshrined.
+
+“{{ill|Engishiki Jinmyōchō Studies|ja|神名帳考証|qid=Q11588824}}” identifies the deity as Heguri Tsukuno Sukune-no-Mikoto; “{{ill|Jinja Kakuroku|Q11590708|qid=Q11590708}}” suggests Hayara no Omi no Kami; and the “Specially Selected Jinmyōchō” records Kagutsuchi-no-Kami.
+
+Additionally, because a stone lantern from Meiwa 5 ({{ill|1768|Q7675|qid=Q7675}}) standing before the shrine bears the name {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}, Ambo Yukihiko adds Ame-no-Koyane-no-Mikoto to the list of enshrined deities. <ref>Ambo Yukihiko, “Historic Sites and Scenic Places of Mishima District” (1961) (included in Osaka Prefectural Board of Education, ed., “Historic Sites, Scenic Places, and Natural Monuments of Osaka Prefecture,” Mishima District (1974); {{National Bibliography Number|73009804}})</ref> Takahashi Yoshitaka, who also served as a parish representative, surmises that the lantern was dedicated by Yasui Nobukiyo, who married into the Yasui Dōton family from the Takahashi family, and that, as this area was a medieval {{ill|UNKNOWN|lt=Konoe family}} {{ill|Manorialism|Q1550557|qid=Q1550557}}, the inscription was carved out of an awareness that his ancestors were connected to the Fujiwara clan. <ref>Takashima Yoshitaka, “Private Edition: Ibaraki Fudoki” (1987) {{National Bibliography Number|87053324}}</ref>
+
+===Sub-shrines===
+*Hachiman Shrine: Enshrined deity: {{ill|Emperor Ōjin|Q317997|qid=Q317997}}
+It served as the tutelary shrine of a castle and is said to have been transferred from {{ill|Iwashimizu Hachimangū|Q710098|qid=Q710098}}.
+
+<gallery>
+File:Sawaragi 02.jpg|Worship hall
+File:Sawaragi 03.jpg|Main hall
+File:Sawaragi 04.jpg|Hachiman Shrine
+</gallery>
+
+===References===
+{{Footnote help}}
+<references/>
+
+{{Commonscat|Sawaragi-jinja}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Sawaragi Shrine]][[Category:Shikinaisha|Sawaragi Shrine]][[Category:Kanpei-sha]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Shinto shrines in Ibaraki, Osaka]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Son-sha in Osaka Prefecture]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,111 @@
+{{Expand Japanese|高鴨神社}}
+
+{{Infobox religious building
+| name = Takakamo Shrine
+| native_name = 高鴨神社
+| image = Takakamo-jinja, torii.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Takakamo Shrine
+| coordinates = {{coord|34.408181|135.707614}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ajisukitakahikone|lt=Ajisukitakahikone|en|Ajisukitakahikone|es|Ajisukitakahikone|fr|Ajisukitakahikone|hu|Adzsiszukitakahikone|it|Ajisukitakahikone|ja|アヂスキタカヒコネ|mni|ꯑꯖꯤꯁꯨꯀꯤꯇꯀꯍꯤꯀꯣꯅꯦ|ru|Адзи-суки-така-хико-нэ|simple|Ajisukitakahikone|zh|味耜高彥根神|qid=Q506610}}
+| website = {{Official website|https://takakamo.or.jp/}}
+}}
+
+{{nihongo|'''Takakamo Shrine'''|高鴨神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+{{commons category|Category:Takakamo-jinja}}
+[[ja:高鴨神社]]
+
+{{wikidata link|Q11673295|commons|Category:Takakamo-jinja|ja|高鴨神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{神社
+|名称=Takakamo Shrine
+|画像=[[File:Takakamo-jinja, torii.jpg|270px]]<br />Precinct torii (haiden behind)<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=11|frame-align=center|frame-width=270|frame-height=}}
+|所在地={{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Gose, Nara|Q847334|qid=Q847334}}1110 Kamogami
+| 緯度度 = 34 | 緯度分 = 24 | 緯度秒 = 29.5 | N(北緯)及びS(南緯) = N 
+| 経度度 = 135 |経度分 = 42 | 経度秒 = 27.4 | E(東経)及びW(西経) = E
+| 地図国コード = JP
+|祭神={{ill|Ajisukitakahikone|Q506610|qid=Q506610|lt=Ajisukitakahikone-no-Mikoto}}
+|社格={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964|lt=Myojin-tai}} 4 seats)<br/>former {{ill|Ken-sha|lt=prefectural shrine|qid=Q90139226}}
+|本殿=sangen-sha {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|別名=Kami-Kamo-sha
+|例祭={{ill|April 15|Q2497|qid=Q2497}}
+|地図= Japan Nara
+}}
+'''Takakamo Shrine''' (たかかもじんじゃ) is a shrine on the eastern foothills of {{ill|Mount Kongō|Q1348310|qid=Q1348310}} in Kamogami, {{ill|Gose, Nara|Q847334|qid=Q847334}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}). Former rank was prefectural shrine.
+
+It calls itself the head shrine of Kamo shrines nationwide (with names such as Kamo / Gamo / Kamo), including {{ill|Kamo shrines|Q1306606|qid=Q1306606}} in {{ill|Kyoto|Q34600|qid=Q34600}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}} ({{ill|Kamigamo Shrine|Q700448|qid=Q700448|lt=Kamowakeikazuchi Shrine}} and {{ill|Shimogamo Shrine|Q701620|qid=Q701620|lt=Kamomioya Shrine}}). In relation to {{ill|Katsuragi Mitoshi Shrine|Q11620955|qid=Q11620955}} (Naka-Kamo-sha) and {{ill|Kamo Tsuba Shrine|Q11675614|qid=Q11675614}} (Shimo-Kamo-sha), it is called "Kami-Kamo-sha."
+
+From mid-April to early May, over 2,200 pots of more than 500 varieties of {{ill|Primula sieboldii|Q1151677|qid=Q1151677}} bloom.
+
+=== Enshrined deities ===
+The principal {{ill|Saijin|Q11591100|qid=Q11591100}} is {{ill|Ajisukitakahikone|Q506610|qid=Q506610|lt=Ajisukitakahikone-no-Mikoto}} (Kamo no Ōmikami). Associated deities are {{ill|Shitateruhime|Q11307233|qid=Q11307233|lt=Shitateruhime-no-Mikoto}} (daughter of Ōkuninushi), {{ill|Ame no Wakahiko|Q10940674|qid=Q10940674|lt=Amenowakahiko-no-Mikoto}} (husband of Shitateruhime), {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611}}, and {{ill|UNKNOWN|lt=Ajisukihayao-no-Mikoto}} (child of the principal deity).
+
+At the sessha Higashi Shrine are enshrined {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}, {{ill|Amaterasu|Q455602|qid=Q455602|lt=Amaterasu Ōmikami}}, and {{ill|Sumiyoshi sanjin|Q1114013|qid=Q1114013|lt=Sumiyoshi Sanzen Ōkami}}. At the sessha Nishi Shrine are enshrined {{ill|UNKNOWN|lt=Tagirihime-no-Mikoto}}, {{ill|UNKNOWN|lt=Ame-no-Mikatsuhime-no-Mikoto}} (consort of the principal deity), {{ill|UNKNOWN|lt=Shionihiko-no-Mikoto}} (child), and {{ill|UNKNOWN|lt=Takitsuhiko-no-Mikoto}} (child).
+
+It is thought that originally only Ajisukitakahikone and Shitateruhime were enshrined, and later, under influence of mythology, Amenowakahiko (as Shitateruhime's husband) and Tagirihime (as mother) were added. However, there are many differing theories on deities other than the principal one. '{{ill|Tokusen Jinmyōchō|Q11571092|qid=Q11571092}}' gives Ajisukitakahikone and Tagirihime; another theory says deities other than the principal are unknown.
+
+=== Origin ===
+This area is the birthplace of the {{ill|Kamo no Ason clan|Q122979457|qid=Q122979457|lt=Kamo clan}} and this shrine was enshrined as their {{ill|Ujigami|Q767655|qid=Q767655}}. Branches of the clan moved from these hills into the {{ill|Nara Basin|Q10942269|qid=Q10942269}}: a branch that moved to the bank of the {{ill|Katsuragi River|Q11620895|qid=Q11620895}} enshrined {{ill|Kamo Tsuba Shrine|Q11675614|qid=Q11675614}}, and one that moved to Higashi-Mochida enshrined {{ill|Katsuragi Mitoshi Shrine|Q11620955|qid=Q11620955}}. Later, Takakamo Shrine came to be called Kami-Kamo-sha, Mitoshi Shrine Naka-Kamo-sha, and Kamotsuba Shrine Shimo-Kamo-sha.
+
+In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, it is listed as "Takakamo Ajisukitakihikone-no-Mikoto Shrine, four seats," ranked myojin-taisha, and noted as receiving offerings at monthly, aidame, and niiname rites.
+
+=== Facilities ===
+=== Sessha ===
+* Higashi Shrine ({{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}, {{ill|Amaterasu|Q455602|qid=Q455602|lt=Amaterasu Ōmikami}}, {{ill|Sumiyoshi sanjin|Q1114013|qid=Q1114013|lt=Sumiyoshi Sanzen Ōkami}})
+* Nishi Shrine (principal deity {{ill|Three Munakata Goddesses|Q10948069|qid=Q10948069|lt=Tagirihime-no-Mikoto}}, associated deities Ame-no-Mikatsuhime-no-Mikoto, Shionihiko-no-Mikoto, Takitsuhiko-no-Mikoto)
+
+=== Massha ===
+Hachiman Shrine, Hitokotonushi Shrine, Sarutahiko Shrine, Kotohira Shrine, Hijiri Shrine, Inari Shrine, Matsuo Shrine, Hosoi Shrine, Ōyama Shrine, Kasuga Shrine, Ikazuchi Shrine, Ichikishima Shrine, Yasaka Shrine, Nishi-Sami Shrine, Haraedo Shrine, Ushitaki Shrine, Sami Gokoku Shrine
+<gallery>
+File:Takakamo-jinja Higashi-jinja.jpg|Higashi Shrine (prefecture-designated tangible cultural property)
+ファイル:Takakamo-jinja Torii.jpg|Torii
+</gallery>
+
+=== Cultural properties ===
+=== Important Cultural Property (national)===
+* Honden
+
+=== Nara Prefecture designated tangible cultural property ===
+* Honden of sessha Higashi Shrine
+
+=== Nara Prefecture designated natural monument ===
+* Ōkawa cedar
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+{{commons|Category:Takakamo-jinja}}
+* [https://takakamo.or.jp/ Takakamo Shrine] - official site
+* [http://www.city.gose.nara.jp/kankou/0000001387.html Takakamo Shrine] - Gose tourism guide
+* [http://21coe.kokugakuin.ac.jp/db/jinja/kindex2.php?J_ID=22101 Takakamo Ajisukitakihikone-no-Mikoto Shrine, four seats] - Kokugakuin University 21st Century COE "Compilation of Shinto/Shrine Historical Materials"
+
+{{神道 横}}
+{{shinto-stub}}
+{{Normdaten}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Takakamo Shrine]][[Category:Shikinaisha|Takakamo Shrine]][[Category:Shrines receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings]]
+[[Category:Kamo shrine]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Kamo Shrines]]
+[[Category:Shinto shrines in Nara Prefecture]]
+[[Category:Former Prefectural Shrines in Nara Prefecture]]
+[[Category:Myōjin Taisha]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Cultural heritage monuments in Japan]]
+[[Category:Important Cultural Property of Japan in Nara prefecture]]
+[[Category:御所市の歴史]]
+[[Category:Buildings and structures in Gose, Nara]]
+[[Category:Architecture of Muromachi period]]
+[[Category:Kamo no Asomi Clan]]
+
+[[Category:Git synced pages]]

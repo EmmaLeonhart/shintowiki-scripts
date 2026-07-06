@@ -1,0 +1,77 @@
+{{Infobox religious building
+| name = Samakumine Shrine
+| native_name = 佐麻久嶺神社
+| image = Samakumine Jinja Haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Samakumine Shrine
+| coordinates = {{coord|37.035703|140.912733}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Samakumine Shrine'''|佐麻久嶺神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
+
+[[ja:佐麻久嶺神社]]
+
+{{wikidata link|Q63147976|ja|佐麻久嶺神社|check_date=2026-05-25}}
+
+== Japanese content ==
+{{Shrine
+|Name        = Samakumine Shrine
+|Image       = [[File:Samakumine Jinja Haiden.jpg|270px|]]<br/>Worship Hall
+|Location    = {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}{{ill|Iwaki, Fukushima|Q274384|qid=Q274384}}{{ill|Taira Nakayama|Q128846768|qid=Q128846768}} Aza Miyashita 81
+|Coordinates = {{WikidataCoord}}
+|Enshrined deity = {{ill|Isotakeru-no-Mikoto|qid=Q10881556|lt=Isotakeru no Mikoto}}
+|Sacred object =
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (minor)<br/>Former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+|Founded     = First year of {{ill|Keiun|Q428753|qid=Q428753}} ({{ill|704|Q23503|qid=Q23503}})
+|Main hall   = {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|Alternate name =
+|Pilgrimage affiliation =
+|Annual festival = {{ill|May 4|Q2549|qid=Q2549}}
+|Rituals     =
+|Map = {{Location map|Japan Fukushima|label=Samakumine<br />Shrine|position=left|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[File:Samakumine Jinja Torii.jpg|thumb|250px|right|{{center|Torii}}]]
+'''Samakumine Shrine''' (さまくみねじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}, {{ill|Iwaki, Fukushima|Q274384|qid=Q274384}}, {{ill|Taira Nakayama|Q128846768|qid=Q128846768}}. It is listed as a minor shrine in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} and was formerly ranked as a gōsha under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}.
+
+=== History ===
+According to shrine tradition, it was founded in the first year of {{ill|Keiun|Q428753|qid=Q428753}} ({{ill|704|Q23503|qid=Q23503}}).
+
+In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, it is listed as one of seven shrines in {{ill|Mutsu Province|Q907389|qid=Q907389}}, {{ill|Iwaki district|Q11585428|qid=Q11585428|lt=Iwaki District}}, and was classified as a minor shrine. During the {{ill|Edo period|Q184963|qid=Q184963}}, it received patronage from the {{ill|Iwakitaira Domain|Q843782|qid=Q843782}}. When it was destroyed by lightning in the second year of {{ill|Tenna|Q1145289|qid=Q1145289|lt=Tenna}} ({{ill|1682|Q7648|qid=Q7648}}), the shrine buildings were rebuilt the following year by the domain lord {{ill|Naitō Yoshimune|Q8514975|qid=Q8514975|lt=Naitō Yoshiyasu}}, and thereafter successive lords carried out further repairs and renovations.
+
+In the ninth year of {{ill|Meiji era|Q3125096|qid=Q3125096}} ({{ill|1876|Q7766|qid=Q7766}}), it was officially designated as a gōsha.
+
+=== Shrine grounds ===
+<gallery>
+File:Samakumine Jinja Honden.jpg|Main Hall
+File:Samakumine Jinja Kaguraden.jpg|Kagura Hall
+</gallery>
+
+=== Notes ===
+{{Reflist}}
+
+=== See also ===
+* {{ill|List of Shikinaisha in Mutsu Province|Q11658590|qid=Q11658590}}
+
+=== External links ===
+* [http://xn--3iq3y595abz0ateam90u.jp/ Samakumine Shrine] (official website)
+
+{{Shinto footer}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Samakumine Shrine]][[Category:Shikinaisha|Samakumine Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:Shinto shrines in Fukushima Prefecture]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:福島県の旧郷社]]
+[[Category:Buildings and structures in Iwaki, Fukushima]]
+[[Category:History of Iwaki]]
+[[Category:磐城平藩]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,106 @@
+{{Expand Japanese|安福河伯神社}}
+
+{{Infobox religious building
+| name = Afuku Kahaku Shrine
+| native_name = 安福河伯神社
+| image = Haiden of Afuku Kahaku-jinja shrine.JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Afuku Kahaku Shrine
+| coordinates = {{coord|38.076368|140.84286}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Hayakitsuhiko and Hayakitsuhime|fr|Hayakitsuhiko et Hayakitsuhime|ja|ハヤアキツヒコ・ハヤアキツヒメ|ko|하야아키츠히코・하야아키츠히메|simple|Hayaakitsuhiko and Hayaakitsuhime|zh|速秋津日子神與速秋津比賣神|qid=Q11326733|lt=Hayaakitsuhiko and Hayaakitsuhime}}
+| established = {'time': '+0111-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
+}}
+
+{{nihongo|'''Afuku Kahaku Shrine'''|安福河伯神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
+
+{{commons category|Category:Afukukahaku-jinja}}
+[[ja:安福河伯神社]]
+
+{{wikidata link|Q11451153|commons|Category:Afukukahaku-jinja|ja|安福河伯神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shrine
+|Name=Afuku Kahaku Shrine
+|Image=[[File:Haiden of Afuku Kahaku-jinja shrine.JPG|270px|Afuku Kahaku Shrine Haiden]]<br />Haiden
+|Location={{ill|Miyagi Prefecture|Q47896|qid=Q47896}}{{ill|Watari District, Miyagi|Q1131765|qid=Q1131765}}{{ill|Watari, Miyagi|Q1205296|qid=Q1205296}} Okuma Tazawa, Aza Sekishita 220
+|Coordinates={{WikiCoordinates2 degrees minutes seconds|38|4|34.8|N|140|50|33.6|E|region:JP-04_type:landmark}}
+|Enshrined deity={{ill|Hayakitsuhiko and Hayakitsuhime|fr|Hayakitsuhiko et Hayakitsuhime|ja|ハヤアキツヒコ・ハヤアキツヒメ|ko|하야아키츠히코・하야아키츠히메|simple|Hayaakitsuhiko and Hayaakitsuhime|zh|速秋津日子神與速秋津比賣神|qid=Q11326733|lt=Hayakitsuhime-no-Kami}}
+|Shrine rank={{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br />Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}
+|Founded={{ill|Emperor Keikō|Q329723|qid=Q329723}} 41 ({{ill|AD 111|Q30640|qid=Q30640}})
+|Main hall style={{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|Annual festival={{ill|April 8|Q2503|qid=Q2503}}
+|Map= {{Location map|Japan Miyagi|label=Afuku<br />Kahaku Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Afuku Kahaku Shrine''' (あふくかはくじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Watari, Miyagi|Q1205296|qid=Q1205296}}, {{ill|Watari District, Miyagi|Q1131765|qid=Q1131765}}, {{ill|Miyagi Prefecture|Q47896|qid=Q47896}}.
+Under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine rank}}, it was classified as a gōsha. It is one of the four seats of {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engishiki}} for {{ill|Watari District, Miyagi|Q1131765|qid=Q1131765}}.
+
+=== Enshrined deities ===
+* The principal enshrined deity is {{ill|Hayakitsuhiko and Hayakitsuhime|fr|Hayakitsuhiko et Hayakitsuhime|ja|ハヤアキツヒコ・ハヤアキツヒメ|ko|하야아키츠히코・하야아키츠히메|simple|Hayaakitsuhiko and Hayaakitsuhime|zh|速秋津日子神與速秋津比賣神|qid=Q11326733|lt=Hayakitsuhime-no-Kami}}, a god of the Abukuma River, together with {{ill|Futsunushi|lt=Futsunushi-no-Kami|Q1107286|qid=Q1107286}}, {{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037}}, and {{ill|Toshigami|Q3028663|qid=Q3028663|lt=Ōtoshi-no-Kami}}.
+** In addition, {{ill|Mizuhanome|Q8191796|qid=Q8191796}} from Miyahara Suijin Shrine, and {{ill|Ame-no-Minakanushi|Q2842779|qid=Q2842779}}, {{ill|Takamimusubi|lt=Takamimusubi-no-Kami|UNKNOWN|qid=Q125400|lt=Takamimusubi}}, and {{ill|Kamimusubi|lt=Kamimusubi-no-Kami|UNKNOWN|qid=Q3275901|lt=Kamimusubi}} from Morifusa Hayakawa Shrine are also enshrined together.
+
+=== History ===
+According to tradition, the shrine was established on August 6 in the 41st year of {{ill|Emperor Keikō|Q329723|qid=Q329723}} by {{ill|Yamato Takeru|lt=Yamato Takeru|qid=Q461258}}. In the reign of {{ill|Emperor Seiwa|Q349243|qid=Q349243}}, on June 25 of the 4th year of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}}, it was elevated to an official shrine and granted the rank of Junior Fifth Rank, Upper Grade. In ancient times, the entire area of the former Tazawa Village was designated as shrine land, but due to repeated warfare during the {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} era, these lands were abolished.
+
+According to the shrine’s on-site historical account, Afuku Kahaku Shrine was founded for flood control and irrigation of the Abukuma River and for the protection of the northern frontier of the Yamato court. At the time of its founding, it was located east of the present site, near the Abukuma River in Okuma Tazawa Aza Miyahara (below the embankment about 200 meters west of the Jōban Line tracks). It was later relocated to its current site atop Mount Suijō.
+
+The shrine was deeply revered by successive local lords. In the 7th year of {{ill|Keichō|Q1328185|qid=Q1328185}}, {{ill|Date Shigezane|Q1038673|qid=Q1038673}}, the first head of the {{ill|UNKNOWN|lt=Watari Date clan}}, constructed shrine buildings, and later, in the 5th year of {{ill|Kansei|Q1195131|qid=Q1195131}}, a donation of 12 koku and 6 to of rice was made.
+
+=== Precincts ===
+* Shrine buildings (haiden, heiden, and honden)
+** The main hall was built in the 5th year of {{ill|Ansei|Q1327259|qid=Q1327259}} ({{ill|1858|Q7684|qid=Q7684}}) in the late Edo period. Owing to its fine carvings, it has been designated a cultural property of Watari Town.
+<gallery widths="200px" heights="150px">
+File:Torii gate of Afuku Kahaku-jinja shrine.JPG|Torii gate of Afuku Kahaku Shrine
+File:Afuku Kahaku-jinja shrine.JPG|Shrine precincts of Afuku Kahaku Shrine
+File:Precincts of Afuku-Kahaku-jinja shrine.JPG|Shrine buildings of Afuku Kahaku Shrine
+File:Honden of Afuku Kahaku-jinja shrine.JPG|Main hall of Afuku Kahaku Shrine (north side)
+File:Left side of Honden of Afuku Kahaku-jinja shrine.JPG|Main hall of Afuku Kahaku Shrine (south side)
+</gallery>
+* In addition, to the south side of the main hall stands Koyasu Shrine (enshrining {{ill|UNKNOWN|lt=Konohanasakuya-hime-no-Kami}}), and within the precincts there is a mikoshi storehouse.
+<gallery widths="200px" heights="150px">
+File:Koyasu-jinja shrine of Afuku Kahaku-jinja shrine.JPG|Koyasu Shrine
+</gallery>
+
+=== Legends ===
+Long ago, it is said that a god was making ridges ({{ill|Hilling|Q2262727|qid=Q2262727}}) on a western mountain. Because seven ridges were made, the mountain came to be called Nanauneyama (“Seven Ridge Mountain”), and the remaining three handfuls of earth that were thrown aside formed a hill now known as Mount Suijō (“Three-Handful Mountain”), where Afuku Kahaku Shrine is presently located.
+
+There are also legends related to the {{ill|Abukuma River|Q335853|qid=Q335853}}.
+
+* One day, when the mountain god and the river god met, the mountain god said, “I have been building the mountains up to here, and I want to extend them further north,” while the river god said, “I want the river to flow toward the sea from around here.” Since neither would yield, they decided to follow the opinion of whoever could circle a nearby mountain called Miyama ten times the fastest. They began the race together, but as the mountain god entered the seventh lap, he was distracted by azaleas blooming on Miyama, tripped over their roots, and fell. While the mountain god was delayed by the fall, the river god pulled far ahead and won.
+
+Because of this, it is said that from around Afuku Kahaku Shrine, the Abukuma River changes its course eastward and flows toward the Pacific Ocean.
+
+It is also said that the mountain god is {{ill|Ōyamatsumi|lt=Ōyamatsumi-no-Kami|Q386563|qid=Q386563}}, the enshrined deity of {{ill|Sengan Shrine|Q63148000|qid=Q63148000}} (formerly known as Miyama Daigongen), which is located in {{ill|Iwanuma|Q518203|qid=Q518203}} on the opposite bank of Afuku Kahaku Shrine.
+
+=== References ===
+{{No footnotes|date=August 2020|section=1}}
+* “Watari District Shrine Register” (1899, held by Kawaguchi Shrine)
+* “Main Hall of Afuku Kahaku Shrine” (Watari Town Board of Education, March 2000)
+* “Furusato Watari: A Stroll Through History” (Watari Town, March 2009)
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://www.miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310010280 Afuku Kahaku Shrine] (Miyagi Prefecture {{ill|Jinjachō|Q11590703|qid=Q11590703}})
+
+{{Shinto nav}}
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Afuku Kahaku Shrine]][[Category:Shikinaisha|Afuku Kahaku Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:Shinto shrines in Miyagi Prefecture]]
+[[Category:宮城県の旧郷社]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:亘理町の歴史]]
+[[Category:亘理町の建築物]]
+[[Category:Shinto shrines in Miyagi Prefecture]]
+
+[[Category:Git synced pages]]

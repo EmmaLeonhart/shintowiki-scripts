@@ -1,0 +1,65 @@
+{{Expand Japanese|三島神社 (南伊豆町青野)}}
+
+{{Infobox religious building
+| name = Mishima Shrine (Aono, Minamiizu)
+| native_name = 三島神社 (南伊豆町青野)
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Mishima Shrine (Aono, Minamiizu)
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Mishima Shrine (Aono, Minamiizu)'''|三島神社 (南伊豆町青野)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+{{wikidata link|Q134930534|ja|三島神社 (南伊豆町青野)|grok=none|check_date=2026-06-01}}
+
+== Japanese content ==
+{{??
+|??   = Mishima Shrine
+|?? = {{?????|cat=???}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=11|frame-align=center|frame-width=250|frame-height=250|coord={{coord|34|40|48.1|N|138|49|50.9|E}}}}
+|??? = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Kamo District, Shizuoka|Q961511|qid=Q961511}}{{ill|Minamiizu|Q1203741|qid=Q1203741}} Aono 170
+|??   = {{coord|34|40|48.1|N|138|49|50.9|E|region:JP-22_type:landmark}}
+|??   = {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611}}
+|??   = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} candidate shrine
+|??   = 
+|??   = 
+|??   = 
+|??? = 
+|??   = November 2
+|??   = 
+|?? = {{Location map|Japan Shizuoka|label=????|coordinates=
+{{coord2|34|40|48.1|N|138|49|50.9|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Mishima Shrine''' (???????) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Aono, {{ill|Minamiizu|Q1203741|qid=Q1203741}}, {{ill|Kamo District, Shizuoka|Q961511|qid=Q961511}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}<ref>[http://shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401113 Mishima Shrine] - Shizuoka Prefecture Shrine Office</ref>.
+
+=== Overview ===
+It is located on the northern mountain foothills of the Aono district in the upper reaches of the Aono River, in northwestern Minamiizu.
+
+Its founding is unknown, but it is a candidate shrine for the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} "Takeishitsuki-no-Mikoto Shrine" (??????????????), and an ancient shrine also recorded in the ''{{ill|Izu no kuni jinjaich?|Q17193087|qid=Q17193087}}'' as "J?shi-i no J? Takeshi no My?jin"<ref name="gen">[https://genbu.net/data/izu/misima5_title.htm Mishima Shrine] - Genmatsushi</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140123-04.html Mishima Shrine] - Study of Engishiki Shrines</ref>.
+
+=== Enshrined deity ===
+* {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611}}
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401113 Mishima Shrine] - Shizuoka Prefecture Shrine Office
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Mishima Shrine (Aono, Minamiizu)]][[Category:Shikinaisha|Mishima Shrine (Aono, Minamiizu)]][[Category:Shikinaisha|Mishima Shrine (Aono, Minamiizu)]][[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Shinto shrines in Shizuoka Prefecture]]
+[[Category:History of Minamiizu]]
+[[Category:Buildings in Minamiizu]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:Mishima–Ōyamazumi cult]]
+[[Category:賀茂郡の画像提供依頼]]
+[[Category:Shinto shrines in Shizuoka Prefecture]]
+
+[[Category:Git synced pages]]

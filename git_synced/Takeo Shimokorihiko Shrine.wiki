@@ -16,63 +16,6 @@
 
 {{nihongo|'''Takeo Shimokorihiko Shrine'''|健男霜凝日子神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bungo Province]].
 
-== instance of (P31) ==
-
-* {{ill|Shinto shrine|lt=Shinto shrine|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|en|Shinto shrine|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tr|Şinto tapınağı|uk|Святилище (синто)|vi|Thần xã|wuu|神社|zh_yue|神社|zh|神社|qid=Q845945}}
-* {{ill|Shikinaisha|lt=Shikinaisha|en|Shikinaisha|zh|式內社|qid=Q134917286}}
-* {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287|lt=Shikinai Shōsha}}
-* {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
-* {{ill|Kokuhei-sha|qid=Q135160342}}<ref>Kokugakuin University Shrine database</ref>
-
-== part of (P361) ==
-
-* {{ill|List of Shikinaisha in Bungo Province|ja|豊後国の式内社一覧|qid=Q11633695}}
-** Series ordinal: 1
-** P155: {{ill|Toyohimeno- Shrine|qid=Q135041483|lt=Toyohimeno- Shrine}}
-** P156: {{ill|Sasamutano Shrine|qid=Q135041485}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Taketa, Ōita|ar|تاكيتا (أويتا)|azb|تاکه‌تا، اوئیتا|ce|Такета|ceb|Takedamachi|de|Taketa|es|Taketa|fa|تاکه‌تا، اوئیتا|fi|Taketa|fr|Taketa|gl|Taketa|id|Taketa, Ōita|it|Taketa|ja|竹田市|ko|다케타시|mg|Takedamachi|mzn|تاکه‌تا، اوئیتا|nl|Taketa|pl|Taketa|pt|Taketa|ro|Taketa|ru|Такета|sv|Taketa|tg|Такета|tl|Taketa, Ōita|tr|Taketa|tt|Такета|uk|Такета|ur|تاکیتا، اویتا|vi|Taketa, Ōita|war|Taketa, Ōita|zh|竹田市|zh_classical|竹田市|zh_min_nan|Taketa-chhī|zh_yue|竹田|qid=Q850508}}
-* {{ill|Bungo Province|lt=Bungo Province|ar|مقاطعة بونغو|cs|Provincie Bungo|de|Provinz Bungo|en|Bungo Province|es|Provincia de Bungo|fa|ولایت بونگو|fr|Bungo (province)|gl|Provincia de Bungo|he|בונגו (מחוז)|id|Provinsi Bungo|it|Bungo (provincia)|ja|豊後国|ko|분고국|lt|Bungo žemė|nl|Bungo (provincie)|no|Bungo|pt|Província de Bungo|ru|Бунго (провинция)|simple|Bungo Province|sk|Bungo (provincia)|sr|Провинција Бунго|sv|Bungo, Japan|th|แคว้นบุงโงะ|tr|Bungo (vilayet)|uk|Провінція Бунґо|vi|Tỉnh Bungo (Tên cũ)|zh_min_nan|Bungo-kok|zh|豐後國|qid=Q864148}}
-* {{ill|Naoiri District, Ōita|ja|直入郡|zh|直入郡|qid=Q6964536}}
-
-== coordinate location (P625) ==
-
-* {{coord|32.872957|131.356406}}<ref>Kokugakuin University Shrine database</ref>
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 183311
-** P3831: {{ill|Kokugakuin University Shrine database|qid=Q135159299}}
-
-== modern shrine ranking (P13723) ==
-
-* {{ill|Ken-sha|qid=Q90139226|lt=Ken-sha|qid=Q90139226}}
-** End time: {'time': '+1946-02-02T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 11, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985727'}
-** P1534: {{ill|Shinto Directive|ltq=Q3029647|qid=Q3029647}}
-
-== country (P17) ==
-
-* {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17}}
-
-== name in kana (P1814) ==
-
-* たけおしもごおりひこじんじゃ
-
-== Corporate Number (Japan) (P3225) ==
-
-* 4320005005966
-
-== said to be the same as (P460) ==
-
-* {{ill|Takewoshimokorihikono Shrine|qid=Q135041484|lt=Takewoshimokorihikono Shrine}}
-** P2868: {{ill|Shikinai Ronsha|ltq=Q135022904|qid=Q135022904}}
-
-== street address (P6375) ==
-
-* {'text': '大分県竹田市神原1822番地', 'language': 'ja'}
-
 [[ja:健男霜凝日子神社]]
 
 {{wikidata link|Q30935472|ja|健男霜凝日子神社|check_date=2026-05-26}}
@@ -114,7 +57,7 @@ Regarding the former shrine ranking under the {{ill|Modern system of ranked Shin
 The treasures include a {{ill|Mirror|Q35197|qid=Q35197}}, sacred swords, {{ill|biane|Q5358873|qid=Q5358873|lt=votive tablets}}, war banners, and others.
 {{quote|
 Section 2: Shrine Treasures<br>
-The shrine storehouse contains timbers from the {{ill|Hakuchi (era)|de|Hakuchi (Ära)|es|Hakuchi (era)|fa|هاکوچی (دوره)|fr|Ère Hakuchi|hr|Hakuchi (razdoblje)|ia|Hakuchi (era)|id|Hakuchi|ja|白雉|ko|하쿠치|ru|Хакути|sh|Hakuchi (era)|simple|Hakuchi (era)|sr|Хакучи|th|ฮากูจิ (ศักราช)|tr|Hakuchi (dönem)|uk|Хакуті|zh|白雉|zh_yue|白雉|qid=Q540118}} era, two {{ill|Military colours, standards and guidons|Q2912707|qid=Q2912707|lt=war banners}} used by {{ill|Ogata no Saburo Koreyoshi|Q7079849|qid=Q7079849}} in the pursuit of the {{ill|Taira clan|Q568647|Taira clan|qid=Q568647|lt=Taira clan}}, two votive tablets, a mirror by {{ill|Fujiwara no Mitsunaga|Q16767296|qid=Q16767296}}, swords by {{ill|UNKNOWN|lt=Yamato no Kami}} Tadayuki, Rai Yukinaga, Ise {{ill|Muramasa|Q1849828|qid=Q1849828}}, Ryōkai, Amakuni, and over a dozen other unsigned sacred swords, as well as wooden dogs, crocodile figures, and other items.{{efn|Mokuku (wooden dogs) are animals resembling weasels (''[https://webarchives.tnm.jp/imgsearch/show/C0078820 Illustrations of Various Beasts]'', "[https://baike.baidu.com/item/%E6%9C%A8%E7%8B%97 Baidu Encyclopedia]").}}
+The shrine storehouse contains timbers from the {{ill|Hakuchi (era)|de|Hakuchi (Ära)|es|Hakuchi (era)|fa|هاکوچی (دوره)|fr|Ère Hakuchi|hr|Hakuchi (razdoblje)|ia|Hakuchi (era)|id|Hakuchi|ja|白雉|ko|하쿠치|ru|Хакути|sh|Hakuchi (era)|simple|Hakuchi (era)|sr|Хакучи|th|ฮากูจิ (ศักราช)|tr|Hakuchi (dönem)|uk|Хакуті|zh|白雉|zh_yue|白雉|qid=Q540118}} era, two {{ill|Military colours, standards and guidons|Q2912707|qid=Q2912707|lt=war banners}} used by {{ill|Ogata no Saburo Koreyoshi|Q7079849|qid=Q7079849}} in the pursuit of the {{ill|Taira clan|Q568647|Taira clan|qid=DELETED_QID|lt=Taira clan}}, two votive tablets, a mirror by {{ill|Fujiwara no Mitsunaga|Q16767296|qid=Q16767296}}, swords by {{ill|UNKNOWN|lt=Yamato no Kami}} Tadayuki, Rai Yukinaga, Ise {{ill|Muramasa|Q1849828|qid=Q1849828}}, Ryōkai, Amakuni, and over a dozen other unsigned sacred swords, as well as wooden dogs, crocodile figures, and other items.{{efn|Mokuku (wooden dogs) are animals resembling weasels (''[https://webarchives.tnm.jp/imgsearch/show/C0078820 Illustrations of Various Beasts]'', "[https://baike.baidu.com/item/%E6%9C%A8%E7%8B%97 Baidu Encyclopedia]").}}
 |''{{ill|UNKNOWN|lt=Toyokoku Shōshi}}'' (1907){{sfn|大分県|1907}}}}
 
 === Overview of sub-shrines ===
@@ -158,3 +101,6 @@ Behind the shrine there is a cave where the great serpent, believed to be the in
 [[Category:竹田市の画像提供依頼]]
 [[Category:Wikipedia requested photographs in Ōita Prefecture]]
 [[Category:神社の画像提供依頼]]
+[[Category:Pages with deleted QID in ill template]]
+
+[[Category:Git synced pages]]

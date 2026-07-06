@@ -1,0 +1,89 @@
+{{Expand Japanese|朝山神社}}
+
+{{Infobox religious building
+| name = Asayama Shrine
+| native_name = 朝山神社
+| image = Asayamajinjahonden.JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Asayama Shrine
+| coordinates = {{coord|35.319291|132.772816}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Asayama Shrine'''|朝山神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+[[ja:朝山神社]]
+
+{{wikidata link|Q11517384|ja|朝山神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shrine
+|Name = Asayama Shrine
+|Image = [[File:Asayamajinjahonden.JPG|270px|Asayama Shrine main hall]]<br />Main hall
+|Location = {{ill|Shimane Prefecture|Q132751|qid=Q132751}}{{ill|Izumo, Shimane|Q825166|qid=Q825166}} Asayama-chō 1404
+|Coordinates = {{Wikicoordinates 2-stage degrees minutes seconds|35|19|9|N|132|46|21|E|}}
+|Enshrined deity = {{ill|UNKNOWN|lt=Matama Tsuku Tama no Murahime no Mikoto}}
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}<br />Former {{ill|UNKNOWN|lt=Prefectural shrine}}
+|Founded = 
+|Main hall style = {{ill|Taisha-zukuri|Q387874|qid=Q387874}}
+|Alternate name = Kumoi Falls Daimyōjin
+|Annual festival = April 10
+|Rituals = Kamiari Festival
+|Map = {{Location map|Japan Shimane|label=Asayama Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Asayama Shrine''' (Asayama Jinja) is a Shinto shrine located in Asayama-chō, {{ill|Izumo, Shimane|Q825166|qid=Q825166}}, {{ill|Shimane Prefecture|Q132751|qid=Q132751}}.
+
+It is enshrined on a mountain identified with Ubitaki-yama recorded in the ''{{ill|Izumo-no-Kuni Fudoki|Q11395858|qid=Q11395858}}'', and the area surrounding the shrine is designated as “Asayama Forest Park.”
+
+=== Enshrined deities ===
+{{ill|UNKNOWN|lt='''Matama Tsuku Tama no Murahime no Mikoto'''}} (またまつくたまのむらひめのみこと)
+
+{{ill|Kamimusubi|UNKNOWN|Kamimusubi|lt='''Kamimusubi no Mikoto'''}} (かみむすひのみこと)
+
+{{ill|Ōkuninushi|Q276944|qid=Q276944|lt='''Ōnamuchi no Mikoto'''}} (おおなむちのみこと)
+
+In the entry for Asayama-gō of {{ill|Kando district|Q11591020|qid=Q11591020}} in the ''Izumo-no-Kuni Fudoki,'' it is written: “Kamimusubi no Mikoto’s child, Matama Tsuku Tama no Murahime no Mikoto, resides here. At that time, the Great Deity who created the world, Ōanamuchi no Mikoto, took her as his wife and visited her every morning.” In other words, Matama Tsuku Tama no Murahime no Mikoto was the woman whom Ōanamuchi no Mikoto (i.e., Ōkuninushi) courted as his wife.
+
+=== History ===
+In the ''Izumo-no-Kuni Fudoki,'' it is recorded as “Asayama Shrine,” and noted as belonging to the {{ill|Department of Divinities|Q2264720|qid=Q2264720}}. In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, it is written as “Asayama Shrine.”
+
+In the ''Izumo Fudoki Shō'' of Tenna 3 (1683), it is recorded as “Kamia Sayama Ubitaki Daimyōjin,” and in the ''Unyōshi'' of Kyōhō 2 (1717), as “Kumoi Taki Myōjin.”
+
+The mountains of Asayama-gō in Kando District described in the ''Izumo-no-Kuni Fudoki''—namely Ubitaki-yama, Inazumi-yama, Kage-yama, Ina-yama, Hoko-yama, and Kanmuri-yama (commonly called the “Six Sacred Mountains of Asayama”)—are likened in the text to the Great Deity’s clothing, food, dwelling, and weapons. Among these, Ubitaki-yama is described as “the Great Deity’s palace,” with the Great Deity’s clothing, food, and weapons arranged around it. {{ill|Yoshiyuki Takioto|Q17160660|qid=Q17160660}} (''Ancient History of the Japanese Archipelago as Seen through the Fudoki,'' {{ill|Heibonsha|Q11482108|qid=Q11482108}} {{ill|Heibonsha Shinsho|Q11482109|qid=Q11482109}} 883, 2018, pp. 38–42) states that Asayama-gō can be regarded as the living space of the Great Deity—that is, the place where the shrine of the Great Deity who “created the land under heaven” was built—and argues that before {{ill|UNKNOWN|lt=Ōkuninushi}} came to be enshrined at the present site ({{ill|Izumo-taisha|Q696362|qid=Q696362}}), when he was still a deity limited to western Izumo, the center of the sphere of worship may in fact have been Asayama-gō.
+
+=== Subsidiary shrines ===
+* Hoshimiya Shrine (Sumeragi no Mikoto)
+* Funako Shrine ({{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037|lt=Sarutahiko no Mikoto}})
+* Sugio Shrine ({{ill|Toyouke-hime|Q2983724|qid=Q2983724|lt=Toyouke Hime no Mikoto}})
+* Asayama Nineteen Shrines (Yaoyorozu no Kami)
+
+=== Festivals ===
+The annual festival is held on April 29. From the 1st to the 10th day of the 10th month in the lunar calendar, the {{ill|Kannazuki|Q6364021|qid=Q6364021|lt=Kamiari Festival}} is held, and it is said that the gods who gather here depart for Izumo Taisha on the evening of the 10th [http://www2.pref.shimane.jp/kodai/asayamada.html].
+
+=== References ===
+* Kazuhiro Seki, ''An Annotated Study of the “Izumo-no-Kuni Fudoki”'', 2006, {{ill|Akashi Shoten|Q11512528|qid=Q11512528}} ISBN 4-7503-2376-4
+* Eiji Shirai and Masanori Toki (eds.), ''Shrine Dictionary (New Expanded Popular Edition)'', 1997, {{ill|Tōkyōdō Shuppan|Q11524645|qid=Q11524645}} ISBN 4-490-10474-X
+
+=== Notes ===
+{{Reflist}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Asayama Shrine]][[Category:Shikinaisha|Asayama Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izumo Province]]
+[[Category:Shinto shrines in Shimane Prefecture]]
+[[Category:Shikinaisha in Izumo Province]]
+[[Category:Former Prefectural Shrines in Shimane Prefecture]]
+[[Category:Buildings in Izumo]]
+[[Category:History of Izumo, Shimane]]
+[[Category:Buildings and structures in Izumo, Shimane]]
+[[Category:Shinto shrines in Shimane Prefecture]]
+
+[[Category:Git synced pages]]

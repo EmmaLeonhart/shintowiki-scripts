@@ -1,0 +1,68 @@
+{{Expand Japanese|雲甘寺坐楢本神社}}
+
+{{Infobox religious building
+| name = Unkanjiniimasunaramoto Shrine
+| native_name = 雲甘寺坐楢本神社
+| image = Naramoto Jinja (Heguri).JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Unkanjiniimasunaramoto Shrine
+| coordinates = {{coord|34.633654|135.69826}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Unkanjiniimasunaramoto Shrine'''|雲甘寺坐楢本神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+[[ja:雲甘寺坐楢本神社]]
+
+{{wikidata link|Q119929664|ja|雲甘寺坐楢本神社|grok=none|check_date=2026-05-27}}
+
+== Japanese content ==
+{{Shinto shrine
+| Name     = Unkanji-niimasu Naramoto Shrine
+| Image    = [[File:Naramoto Jinja (Heguri).JPG|250px]]<br />Torii<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=250}}
+| Location = {{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Ikoma District, Nara|Q971003|qid=Q971003}}{{ill|Heguri, Nara|Q1346790|qid=Q1346790}} Nashimoto 298
+| ISO      = JP-29
+| Latitude degrees = 34 | Latitude minutes = 37 | Latitude seconds = 56
+| Longitude degrees = 135 | Longitude minutes = 41 | Longitude seconds = 54
+| Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}; former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+| Enshrined deity = {{ill|UNKNOWN|lt=Kikurihime-no-Mikoto}}
+| Map      = Japan Nara
+| Alternate name = Nomata Myōjin
+}}
+'''Unkanji-niimasu Naramoto Shrine''' (うんかんじにいますならもとじんじゃ) is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} located in Nashimoto, {{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Ikoma District, Nara|Q971003|qid=Q971003}}{{ill|Heguri, Nara|Q1346790|qid=Q1346790}}. Under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking}}, it was classified as a {{ill|Son-sha|Q134917284|qid=Q134917284}} and is a {{ill|UNKNOWN|lt=shrine receiving offerings of sacred food and heihaku}}.
+
+=== Overview ===
+In volume five of the {{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981|qid=Q1052981|lt=Sandai Jitsuroku}}, it is recorded: “On the twenty-second day of the tenth month of the third year of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} (abridged), Unkanji, unranked Naramoto Shrine, was granted Junior Fifth Rank, Lower Grade.”
+
+The former shrine site was the {{ill|Chinjusha|Q13479654|qid=Q13479654}} of Unkanji Temple, about 500 {{ill|Metre|Q11573|qid=Q11573}} to the east, but when the temple was abolished in the first year of {{ill|Meiji era|Q3125096|qid=Q3125096}}, it was relocated to its present location.
+
+The {{ill|Saijin|Q11591100|qid=Q11591100}} is {{ill|UNKNOWN|lt=Kikurihime-no-Mikoto}}.
+
+During the {{ill|Edo period|Q184963|qid=Q184963}}, it was called {{ill|Hakusan Gongen|Q11579578|qid=Q11579578}} (thought to be associated with {{ill|Hakusan Faith|Q11579557|qid=Q11579557}}), and in the Meiji period it was known as Nomata Myōjin.
+
+The subsidiary shrine on the left side facing the main hall is the Kasuga Shrine, whose enshrined deity is {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}. Immediately beside it is the Inari Shrine, whose enshrined deity is {{ill|Inari Ōkami|Q719665|qid=Q719665}}.
+
+At the offering hall outside the left fence of the shrine buildings, {{ill|Amaterasu|Q455602|qid=Q455602}} and {{ill|Hitokotonushi|Q10864079|qid=Q10864079|lt=Hitokotonushi}} are enshrined<ref>{{Cite book|Japanese|editor=Heguri Town History Editorial Committee|title=History of Heguri Town|publisher=Heguri Town Office|date=1976-04|ncid=BN04492478|pages=645-647}}</ref>.
+
+A {{ill|UNKNOWN|lt=sacred tree}} is enshrined within the precincts.
+
+=== Notes ===
+{{Footnote help}}
+{{Reflist}}
+
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Unkanji-niimasu Naramoto Shrine]][[Category:Shikinaisha|Unkanji-niimasu Naramoto Shrine]][[Category:Shikinaisha|Unkanji-niimasu Naramoto Shrine]][[Category:Shikinaisha in Yamato Province]]
+[[Category:Shinto shrines in Nara Prefecture]]
+[[Category:Buildings and structures in Heguri, Nara]]
+[[Category:History of Heguri, Nara]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Son-sha in Nara Prefecture]]
+
+[[Category:Git synced pages]]

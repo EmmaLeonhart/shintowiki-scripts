@@ -1,0 +1,69 @@
+{{Expand Japanese|天椅立神社}}
+
+{{Infobox religious building
+| name = Amanohashidate Shrine
+| native_name = 天椅立神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Amanohashidate Shrine
+| coordinates = {{coord|34.039046|133.869575}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Amanohashidate Shrine'''|天椅立神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:天椅立神社]]
+
+{{wikidata link|Q107410068|ja|天椅立神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Source citation|date=2026-01}}
+{{Shinto shrine
+|Name= Amanohashidate Shrine
+|Image= {{Image needed|cat=Miyoshi District}}
+|Location= {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Miyoshi District, Tokushima|Q1156031|qid=Q1156031}}{{ill|Higashimiyoshi|Q1206006|qid=Q1206006}} Hiruma 3265
+|Coordinates= {{WikidataCoord}}
+|Enshrined deities= {{ill|Izanagi|lt=Izanagi-no-Mikoto|qid=Q813858}}<br />{{ill|Izanami|lt=Izanami-no-Mikoto|qid=Q682306}}
+|Shrine rank= Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}, candidate {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
+|Founded= Unknown
+|Main hall= 
+|Other names= 
+|Annual festival= 
+|Rituals= 
+|Map= {{Location map|Japan Tokushima|label=Amanohashidate Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Amanohashidate Shrine''' (あまのはしだてじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Higashimiyoshi|Q1206006|qid=Q1206006}}, {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}.
+
+=== History ===
+The year of foundation is unknown. Until the {{ill|Edo period|Q184963|qid=Q184963}}, it was called Hazu Myōjin. The reason it was called “Hazu Myōjin” is unknown. According to the *Miyoshi District Gazetteer*, the entire area currently known as Miyauchi constituted the shrine precincts, and the place 100 meters south of the shrine was called “Torii,” where the foundation stones of an actual torii gate once existed.
+
+It is one of the candidate shrines (ronsha) for Amanohashidate Shrine, which is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}.
+
+=== Enshrined deities ===
+* {{ill|Izanagi|lt=Izanagi-no-Mikoto|qid=Q813858}}
+* {{ill|Izanami|lt=Izanami-no-Mikoto|qid=Q682306}}
+
+=== Access ===
+* About 10 minutes by car from “{{ill|Tsuji Station|Q577894|qid=Q577894}}” on the {{ill|Shikoku Railway Company|Q496531|qid=Q496531|lt=JR}} {{ill|Tokushima Line|Q899310|qid=Q899310}}.
+
+=== Notes ===
+<references />
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Amanohashidate Shrine]][[Category:Shikinaisha|Amanohashidate Shrine]][[Category:Shikinaisha|Amanohashidate Shrine]][[Category:Shikinai Ronsha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+[[Category:東みよし町の建築物]]
+[[Category:東みよし町の歴史]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:三好郡の画像提供依頼]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+
+[[Category:Git synced pages]]

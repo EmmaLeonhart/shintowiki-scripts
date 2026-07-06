@@ -1,0 +1,109 @@
+{{Expand Japanese|戸神社}}
+
+{{Infobox religious building
+| name = Tono Shrine
+| native_name = 戸神社
+| image = Konojinja935.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Tono Shrine
+| coordinates = {{coord|35.477257|134.710169}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Tono Shrine'''|戸神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
+
+[[ja:戸神社]]
+
+{{wikidata link|Q21655262|ja|戸神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{神社
+|名称   = Tono Shrine
+|画像   = [[File:Konojinja935.jpg|270px]]<br />Haiden and honden
+|所在地 = {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Toyooka, Hyōgo|Q696388|qid=Q696388}}Hidaka-chō Tono 18-1
+|位置 = {{WikidataCoord}}
+|祭神  = {{ill|UNKNOWN|lt=Ōtohime-no-Mikoto}}
+|社格   = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964|lt=major myōjin shrine}})<br />former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|創建   = Unknown
+|本殿   = {{ill|Kasuga-zukuri|Q3193781|qid=Q3193781}} kakibuki
+|例祭   = {{ill|October 21|Q2960|qid=Q2960}}
+|神事   = Niiname festival on {{ill|November 23|Q3021|qid=Q3021}}, commonly called Inoko Festival
+|地図 = {{Location map|Japan Hyogo|label=Kinumaki Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[File:Konojinja940.jpg|thumb|To Shrine torii and shrine name marker]]
+
+'''Tono Shrine''' (とのじんじゃ) is a shrine in {{ill|Toyooka, Hyōgo|Q696388|qid=Q696388}}, {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}), its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was {{ill|Son-sha|Q134917284|qid=Q134917284}}, and it is a designated shrine for offerings of sacred food and silk.
+
+=== Overview ===
+An ancient shrine counted as one of the ten myōjin taisha in Tajima Province. Its enshrined deity Ōtohime-no-Mikoto is also called Okutsu-hime-no-Kami, a deity governing hearths.
+
+=== Enshrined deity ===
+*{{ill|UNKNOWN|lt=Ōtohime-no-Mikoto}}
+
+=== History ===
+"Shoku Nihon Kōki," Jōwa 9, 10th month, day 15 (842)
+
+In Tajima Province, five deities of Keta District and Kinosaki District - Yama deity, Thunder deity, To deity, [木蜀]椒 deity, and Sea deity - were all entered among official shrines.
+
+"Nihon Sandai Jitsuroku," Jōgan 10, 12th month, day 27 (868)
+
+Bestowed ranks: In Tajima Province, Izushi and Awaga deities were given Senior Fifth Rank Lower; Yama, To, Thunder, [木蜀]椒, and Sea deities were given Senior Fifth Rank Upper.
+
+"Engishiki" 3 (Rinji-sai), myōjin festival article [28]
+Awaga Shrine one seat. Yabu Shrine two seats. Izushi Shrine eight seats.
+Yama Shrine one seat. To Shrine one seat. Thunder Shrine one seat.
+[木蜀]椒 Shrine one seat. Sea Shrine one seat.
+All above in Tajima Province.
+
+=== About official shrines of Tajima Province ===
+"Engishiki" 3 (Rinji-sai), myōjin festival article [28]
+
+Myōjin festival, 285 seats. Awaga Shrine one seat. Yabu Shrine two seats. Izushi Shrine eight seats.
+Yama Shrine one seat. To Shrine one seat. Thunder Shrine one seat.
+[木蜀]椒 Shrine one seat. Sea Shrine one seat. All above in Tajima Province.
+
+=== Sessha and massha ===
+Itsukushima Shrine and Nagusa Shrine
+
+=== Festivals ===
+
+=== Local information ===
+; Transportation
+''Bus''
+* From {{ill|Ebara Station|Q871691|qid=Q871691}} (JR West San'in Main Line), take Ina-car bus for Kannabe Kōgen, get off at Ishii, about 20 min, then 1 min on foot
+
+''Car''
+* About 9 minutes / approx. 6 km west on National Route 482 from Nifu intersection on Route 312
+
+=== Notes ===
+{{脚注ヘルプ}}
+=== Annotations ===
+{{Reflist|group="注釈"}}
+
+=== References ===
+{{Reflist|2}}
+
+=== See also ===
+* {{ill|List of Shikinaisha in Tajima Province|Q11381626|qid=Q11381626}}
+
+=== External links ===
+* [http://www.hyogo-jinjacho.com/data/6322255.html Tono Shrine] (Hyogo Prefectural Shrine Association)
+
+{{神道 横}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Tono Shrine]][[Category:Shikinaisha|Tono Shrine]][[Category:Shikinaisha|Tono Shrine]][[Category:Shikinaisha in Tajima Province]]
+[[Category:Shinto shrines in Hyōgo Prefecture]]
+[[Category:Buildings and structures in Toyooka City]]
+[[Category:History of Toyooka]]
+[[Category:Myōjin Taisha]]
+[[Category:Shikinaisha in Tajima Province]]
+[[Category:Son-sha in Hyōgo Prefecture]]
+
+[[Category:Git synced pages]]

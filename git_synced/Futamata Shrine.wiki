@@ -1,0 +1,87 @@
+{{Infobox religious building
+| name = Futamata Shrine
+| native_name = 二俣神社
+| image = Futamata Jinja Iwaki Haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Futamata Shrine
+| coordinates = {{coord|37.105634|140.874302}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Emperor Ōjin|lt=Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|en|Emperor Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|zh|应神天皇|qid=Q317997}}
+| established = {'time': '+0860-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
+}}
+
+{{nihongo|'''Futamata Shrine'''|二俣神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
+
+{{commons category|Category:Futamata-jinja (Iwaki)}}
+[[ja:二俣神社 (いわき市)]]
+
+{{wikidata link|Q63147989|commons|Category:Futamata-jinja (Iwaki)|ja|二俣神社 (いわき市)|grok=none|check_date=2026-05-29}}
+
+== Japanese content ==
+{{Shrine
+|Name = Futamata Shrine
+|Image = [[File:Futamata Jinja Iwaki Haiden.jpg|270px|]]<br/>Haiden (worship hall)
+|Location = {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}{{ill|Iwaki, Fukushima|Q274384|qid=Q274384}}{{ill|Ogawa-machi Shimogawa|Q128847384|qid=Q128847384}} Umenosaku 53-1
+|Coordinates = {{WikidataCoord}}
+|Enshrined deity = {{ill|Emperor Ōjin|Q317997|qid=Q317997|qid=Q317997|lt=Hondawake no Mikoto}}
+|Sacred object = 
+|Shrine rank = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br/>Former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}
+|Founded = First year of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} ({{ill|860|Q24714|qid=Q24714}})
+|Main hall = {{ill|Nagare-zukuri|Q210684|qid=Q210684}} copper-sheet roof
+|Alternate name = Futamata Hachimangū
+|Pilgrimage status = 
+|Annual festival = First Saturday and Sunday of September
+|Rituals = 
+|Map = {{Location map|Japan Fukushima|label=Futamata Shrine|position=left|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[File:Futamata Jinja Iwaki Iriguchi.jpg|thumb|250px|right|{{center|Shrine grounds entrance}}]]
+'''Futamata Shrine''' (ふたまたじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}{{ill|Iwaki, Fukushima|Q274384|qid=Q274384}}{{ill|Ogawa-machi Shimogawa|Q128847384|qid=Q128847384}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=shikinaisha (minor shrine)}}, and under the {{ill|Q712534|lt=former shrine rank system}} it was classified as a gōsha.
+
+=== History ===
+According to shrine tradition, it was established by enshrinement in the first year of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} ({{ill|860|Q24714|qid=Q24714}}). In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, it is listed as one of the seven shrines of {{ill|Iwaki district|Q11585428|qid=Q11585428|lt=Iwaki District}}, ranked as a minor shrine.
+
+In the second year of {{ill|1289|Q5551|qid=Q5551}} ({{ill|1289|Q5551|qid=Q5551}}), {{ill|Ogawa Muneyoshi|Q132431591|qid=Q132431591}} (also known as Ogawa Yoshitsuna), the second son of {{ill|Satake Yoshitane|Q60990135|qid=Q60990135}}, who had advanced into this region, restored the main shrine.
+
+=== From the Edo period onward ===
+It is said that the shrine originally stood at the site of Kawakami Hachimangū, located a little over 1 km northwest of the present location. However, due to frequent flood damage, it was relocated to its current site in the second year of {{ill|Tenna|Q1145289|qid=Q1145289|lt=Tenna}} ({{ill|1682|Q7648|qid=Q7648}}) by {{ill|Iwakitaira Domain|Q843782|qid=Q843782}} lord {{ill|Naitō Yoshimune|Q8514975|qid=Q8514975}}. In the 11th year of {{ill|Genroku|Q1325001|qid=Q1325001}} ({{ill|1698|Q7706|qid=Q7706}}), shrine building repairs were carried out by domain lord {{ill|Naitō Yoshitaka|Q8514986|qid=Q8514986}}, and thereafter repairs continued under the patronage of successive domain lords.
+
+In the fourth year of {{ill|Meiji era|Q3125096|qid=Q3125096}} ({{ill|1871|Q7746|qid=Q7746}}), it was ranked as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}, and in the seventh year of Meiji ({{ill|1874|Q7761|qid=Q7761}}) the present shrine buildings were constructed.
+
+=== Shrine grounds ===
+Within the grounds is the '''Umenosaku tile kiln site''', where tiles were produced for the Natsui Haiji temple ruins (Iwaki City {{ill|Taira Shimogōe|Q128846875|qid=Q128846875}}). The Natsui Haiji temple was located downstream along the Natsui River, and it is thought that the tiles were loaded onto boats and transported down the river.
+
+<gallery>
+File:Futamata Jinja Iwaki Honden.jpg|Main hall
+File:Futamata Jinja Iwaki Kaguraden.jpg|Kagura hall
+</gallery>
+
+=== Access ===
+* {{ill|East Japan Railway Company|Q499071|qid=Q499071}} (JR East) {{ill|Ban'etsu East Line|Q807037|qid=Q807037}} (Yūyū Abukuma Line): 30 minutes on foot from either “{{ill|Akai Station|Q4700176|qid=Q4700176}}” or “{{ill|Ogawagō Station|Q7079855|qid=Q7079855}}” (the shrine is located almost midway between the two stations).
+
+=== Notes ===
+{{Reflist}}
+
+=== Related items ===
+* {{ill|List of Shikinaisha in Mutsu Province|Q11658590|qid=Q11658590}}
+
+=== External links ===
+* [http://engishiki.org/mutu/bun/mut281202-01.html Futamata Shrine]
+
+{{Shinto Navbox}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Futamata Shrine]][[Category:Shikinaisha|Futamata Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:Shinto shrines in Fukushima Prefecture]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:福島県の旧郷社]]
+[[Category:Buildings and structures in Iwaki, Fukushima]]
+[[Category:History of Iwaki]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,71 @@
+{{Infobox religious building
+| name = Amasashinowake Shrine
+| native_name = 天佐自能和氣神社
+| image = Amasashinowake Shrine.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Amasashinowake Shrine
+| coordinates = {{coord|34.096412|134.523677}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Amasashinowake Shrine'''|天佐自能和氣神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:天佐自能和氣神社]]
+
+{{wikidata link|Q11442221|ja|天佐自能和氣神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Citation needed| date = October 2024}}
+{{Shrine
+|Name   = Amasashinowake Shrine
+|Image   = [[File:Amasashinowake Shrine.jpg|250px]]<br />Worship hall
+|Location = {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Tokushima (city)|Q207309|qid=Q207309}} 569-1 Fudōhigashimachi 4-chōme
+|Coordinates   = {{Wiki coordinates 2-stage degrees minutes seconds|34|05|58.5|N|134|31|02.9|E|region:JP-36_type:landmark_scale:25000}}
+|Enshrined deity   = {{ill|Kamimusubi|qid=Q3275901|lt=Kamimusubi no Mikoto}}<br/>{{ill|Takamimusubi|qid=Q125400|lt=Takamimusubi no Mikoto}}<br/>Hikosashikatawake no Mikoto<br/>{{ill|UNKNOWN|lt=Ofuyamato Kuniare-hime no Mikoto}}
+|Shrine rank   = {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}<br/>Former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|Founded   = Unknown
+|Main hall   = 
+|Alternate names   = 
+|Pilgrimage designation   = 
+|Annual festival   = October 17
+|Rituals   = 
+|Map = {{Location map|Japan Tokushima|label=Amasashi-no<br />Wake Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Amasashinowake Shrine''' (あまさしのわけじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Fudōhigashimachi 4-chōme, {{ill|Tokushima (city)|Q207309|qid=Q207309}}, {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}.
+
+=== History ===
+The date of its founding is unknown. It is a {{ill|UNKNOWN|lt=shikinai shrine}} listed in the *{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}*. Originally, it enshrined Hikosashikatawake no Mikoto, a son of {{ill|Emperor Kōrei|Q313041|qid=Q313041}}. Later, his mother, Ofuyamato Kuniare-hime no Mikoto, was {{ill|UNKNOWN|lt=enshrined by invitation}}, and it is said that Kamimusubi no Mikoto and Takamimusubi no Mikoto were subsequently enshrined together. It was formerly a {{ill|UNKNOWN|lt=village shrine}}.
+
+=== Enshrined deities ===
+* {{ill|Kamimusubi|qid=Q3275901|lt=Kamimusubi no Mikoto}}
+* {{ill|Takamimusubi|qid=Q125400|lt=Takamimusubi no Mikoto}}
+* {{ill|UNKNOWN|lt=Hikosashikatawake no Mikoto}}
+* {{ill|UNKNOWN|lt=Ofuyamato Kuniare-hime no Mikoto}}
+
+=== Shrine crest ===
+* Sixteen-petal chrysanthemum
+
+=== Subsidiary shrines ===
+* There are about ten subsidiary shrines, including Wakamiya Shrine, Kotohira Shrine, and Yasaka Shrine.
+
+=== Notes ===
+{{Reflist}}
+
+{{Shinto sidebar}}
+
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Amasashinowake Shrine]][[Category:Shikinaisha|Amasashinowake Shrine]][[Category:Shikinaisha|Amasashinowake Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima, Tokushima]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:徳島県の旧村社]]
+
+[[Category:Git synced pages]]

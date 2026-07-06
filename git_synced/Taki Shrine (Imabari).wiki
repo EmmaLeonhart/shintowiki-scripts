@@ -1,0 +1,69 @@
+{{Expand Japanese|多伎神社}}
+
+{{Infobox religious building
+| name = Taki Shrine (Q11430618)
+| native_name = 多伎神社
+| image = 多伎神社.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Taki Shrine (Q11430618)
+| coordinates = {{coord|34.003529|132.994794}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Taki Shrine'''|多伎神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Iyo Province]].
+
+[[ja:多伎神社]]
+
+{{wikidata link|Q11430618|ja|多伎神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{Citation needed|date=March 2011}}
+{{Shrine
+ | Name=Taki Shrine (Imabari City)
+ | Image=[[File:Taki Shrine.jpg|270px]]<br />Haiden (worship hall)
+ | Location={{ill|Ehime Prefecture|Q123376|qid=Q123376}}{{ill|Imabari, Ehime|Q461020|qid=Q461020}} Furuya Otsu 47
+ | Coordinates= {{WikidataCoord}}
+ | Enshrined deities=Tagitsuhime-no-Mikoto<br />Tagitsuhiko-no-Mikoto<br />Susanoo-no-Mikoto
+ | Shrine rank={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (Myōjin Taisha) · Former {{ill|UNKNOWN|lt=Kensha}}
+ | Established=Unknown
+ | Main hall={{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+ | Annual festival={{ill|May 5|Q2550|qid=Q2550}}
+ | Map= {{Location map|Japan Ehime|label=Taki Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Taki Shrine''' (たきじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Furuya, {{ill|Imabari, Ehime|Q461020|qid=Q461020}}, {{ill|Ehime Prefecture|Q123376|qid=Q123376}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964|lt=Myōjin Taisha}}), and its former shrine rank was {{ill|UNKNOWN|lt=Kensha}}. It is also known as “Taki-no-Miya (Taki Shrine),” and in the Iyo Province Deities Register it is listed as “Senior First Rank: Taki Fudan Daigan Dai Bosatsu.”
+
+The enshrined deities are {{ill|Tagitsuhime|Q10932592|qid=Q10932592|lt=Tagitsuhime-no-Mikoto}}, Tagitsuhiko-no-Mikoto, and {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}.
+
+=== Overview ===
+The date of establishment is unknown. According to shrine tradition, during the reign of Emperor Sujin, Ikatakeo-no-Mikoto, a sixth-generation descendant of {{ill|Nigihayahi|Q10949054|qid=Q10949054|lt=Nigihayahi-no-Mikoto}}, dedicated the shrine name “Taki-no-Miya” and became the first saigū (chief ritual officiant) (according to the shrine notice board).
+
+The shrine buildings stand beside the Taki River, a tributary of the Tonda River, and more than 30 kofun (ancient burial mounds) are clustered in the surrounding area (the prefecturally designated historic site “Taki Shrine Kofun Group”). Near the summit upstream along the Taki River is a sacred rock called Kawakami no Iwao, regarded as the inner sanctuary; it is a {{ill|Iwakura rock|Q11587880|qid=Q11587880}}. It is said to have divine efficacy for rainmaking, and the shrine is thought to have originated in worship centered on this sacred rock.
+
+The earliest documentary reference appears in the {{ill|Nihon Sandai Jitsuroku|qid=Q1052981|lt=Sandai Jitsuroku}} in {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} 2 ({{ill|860|Q24714|qid=Q24714}}), which states: “The deity ‘Taki-no-Kami’ of Iyo Province, Junior Fifth Rank Upper, is granted Junior Fourth Rank Lower.” Thereafter the rank was successively promoted, and in Jōgan 12 ({{ill|870|Q23629|qid=Q23629}}) it was granted Senior Fourth Rank Upper; in the {{ill|Engishiki|Q1342448|qid=Q1342448}} it was listed as a {{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}.
+
+During the Edo period, it served as a prayer shrine of the Imabari Domain, where rainmaking prayers were performed. At the time of such prayers, the domain lord would worship at the shrine; the first half of the seven-day prayer period was conducted at the main hall, and the latter half at Kawakami no Iwao.
+
+=== Notes ===
+{{Reflist}}
+
+{{Shinto navbox}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Taki Shrine (Imabari)]][[Category:Shikinaisha|Taki Shrine (Imabari)]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Iyo Province]]
+[[Category:Shinto shrines in Ehime Prefecture]]
+[[Category:Myōjin Taisha]]
+[[Category:Shikinaisha in Iyo Province]]
+[[Category:Former Prefectural Shrines in Ehime Prefecture]]
+[[Category:Buildings and structures in Imabari, Ehime]]
+[[Category:History of Imabari, Ehime]]
+[[Category:Imabari Domain]]
+
+[[Category:Git synced pages]]

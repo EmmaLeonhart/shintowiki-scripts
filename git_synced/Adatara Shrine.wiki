@@ -1,0 +1,75 @@
+{{Expand Japanese|安達太良神社}}
+
+{{Infobox religious building
+| name = Adatara Shrine
+| native_name = 安達太良神社
+| image = 安達太良神社 - panoramio.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Adatara Shrine
+| coordinates = {{coord|37.521156|140.40435}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Takamimusubi|qid=Q125400|lt=Takamimusubi|de|Takamimusubi|en|Takamimusubi|es|Takami-musubi-no-kami|fa|تاکامیموسوبی|fr|Takamimusubi|id|Takamimusubi|ja|タカミムスヒ|ks|تاکامِمُسُبی|pl|Takamimusubi|ru|Такамимусуби-но ками|zh|高皇產靈尊|qid=Q125400}}
+}}
+
+{{nihongo|'''Adatara Shrine'''|安達太良神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
+
+[[ja:安達太良神社]]
+
+{{wikidata link|Q11451521|ja|安達太良神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shrine
+|Name = Adatara Shrine
+|Image = [[File:安達太良神社 - panoramio.jpg|250px]]<br />Haiden
+|Location = {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}{{ill|Motomiya, Fukushima|Q867106|qid=Q867106}} Motomiya Aza Tatekoshi 232
+|Coordinates = {{WikidataCoord}}
+|Enshrined deities = {{ill|Takamimusubi|qid=Q125400|lt=Takamimusubi-no-Kami}}<br/>{{ill|Kamimusubi|qid=Q3275901|lt=Kamimusubi-no-Kami}}<br/>Iitoyowa-ke-no-Kami<br/>Iitsuhime-no-Kami<br/>Haruhi Onsen-no-Kami<br/>Negi Otoji-no-Kami
+|Shrine rank = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor) candidate shrine<br/>Former {{ill|UNKNOWN|lt=Prefectural Shrine}}
+|Founded = {{ill|Kyūan|Q1193860|qid=Q1193860}} 2 ({{ill|1146|Q19627|qid=Q19627}})
+|Annual festivals = {{ill|May 1|Q2544|qid=Q2544}} (Spring Festival), three days from the fourth Friday of October (Autumn Festival)
+|Map = {{Location map|Japan Fukushima|label=Adatara<br />Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Adatara Shrine''' (あだたらじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Motomiya, Fukushima|Q867106|qid=Q867106}}, {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}. It is a candidate shrine of Iitoyowa-ke Shrine, a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=listed minor shrine}}. Under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking}}, it was classified as a Prefectural Shrine.
+
+=== Overview ===
+The shrine is said to have been founded in {{ill|1146|Q19627|qid=Q19627}} (Kyūan 2) during the {{ill|Heian period|Q193292|qid=Q193292}}. It is believed to have begun when the deities of {{ill|Mount Adatara|Q352675|qid=Q352675}} and Mount Ōnagura were enshrined and established as a satomiya (village shrine). Locals affectionately call it “Myōjin-sama.” As it is regarded as the head shrine of the Adatara Shrines scattered throughout the surrounding area, it is said that the name of the place of enshrinement changed from “Motome Village” to Motomiya Village, becoming the origin of the place name “Motomiya.” It was also once the chief guardian shrine of the former Adachi District; however, in {{ill|1683|Q7651|qid=Q7651|lt=Tenna 3}}, Suzuki Aki-no-Kami, a priest of {{ill|Nihonmatsu Shrine|Q22119901|qid=Q22119901|lt=formerly Nihonmatsu Kumano Shrine}} (the present Nihonmatsu Shrine), argued that “the enshrined deity of Adatara Shrine is the spirit of a person named Adachi Tarō, not the deities of Mount Adatara, and therefore it is not suitable to be the district’s chief guardian shrine.” As a result, the then chief priest, Takahashi Jibu Shōsuke, was dismissed from his position as “Shimenegashira,” the coordinating head of the district’s priests, and Adatara Shrine was stripped of its title as the chief guardian shrine of Adachi District. <ref>“Illustrated History of Motomiya,” Chapter 3, Section 17</ref>
+
+=== Festival Dates ===
+* May 1
+* Three days from the fourth Friday of October
+
+At the Spring Festival on May 1, parishioners of Ukishima Shrine in the Shirazawa area of Motomiya City dedicate “Daidai Kagura.”
+
+During the Autumn Festival in October, three {{ill|Taikodai|Q11444734|qid=Q11444734}} floats traditionally handed down in areas of the former {{ill|Nihonmatsu Domain|Q909007|qid=Q909007|lt=Nihonmatsu Domain territory}} appear and parade through the town ahead of the mikoshi procession.
+
+=== Access ===
+* Nearest station: {{ill|East Japan Railway Company|Q499071|qid=Q499071|lt=JR East}} {{ill|Tōhoku Main Line|Q681190|qid=Q681190}} {{ill|Motomiya Station|Q873962|qid=Q873962|lt=Motomiya Station}} (15 minutes on foot)
+
+=== Notes ===
+{{Footnote help}}
+{{Reflist}}
+
+=== External links ===
+* [http://www.fukushima-jinjacho.or.jp/guidance/detail/04adatara.html Adatara Shrine] (Fukushima Prefecture Association of Shinto Shrines)
+
+{{Shinto}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Adatara Shrine]][[Category:Shikinaisha|Adatara Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:Shinto shrines in Fukushima Prefecture]]
+[[Category:本宮市の歴史]]
+[[Category:福島県の旧県社]]
+[[Category:Shikinaisha in Mutsu Province]]
+[[Category:本宮市の建築物]]
+[[Category:Shinto shrines in Fukushima Prefecture]]
+
+[[Category:Git synced pages]]

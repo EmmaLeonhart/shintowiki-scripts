@@ -1,0 +1,67 @@
+{{Expand Japanese|高橋神社 (三島市)}}
+
+{{Infobox religious building
+| name = Takahashi Shrine
+| native_name = 高橋神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Takahashi Shrine
+| coordinates = {{coord|35.092887|138.915871}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Takahashi Shrine'''|高橋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
+[[ja:高橋神社 (三島市)]]
+
+{{wikidata link|Q134928492|ja|高橋神社 (三島市)|check_date=2026-05-26}}
+
+== Japanese content ==
+{{神社
+|名称   = Takahashi Shrine
+|画像 = {{画像募集中|cat=三島市}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=250|coord={{coord|35|5|34.2|N|138|54|57.2|E}}}}
+|所在地 = {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}{{ill|Mishima, Shizuoka|Q653478|qid=Q653478}} Matsumoto 298
+|位置   = {{coord|35|5|34.2|N|138|54|57.2|E|region:JP-22_type:landmark}}
+|祭神   = {{ill|UNKNOWN|lt=Iwakamutsukari no Mikoto}}
+|社格   = former {{ill|Son-sha|ja|村社|qid=Q134917284}}, {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}
+|創建   = 
+|本殿   = 
+|別名   = 
+|札所等 = 
+|例祭   = October 16
+|神事   = 
+|地図 = {{Location map|Japan Shizuoka|label=Takahashi Shrine|coordinates=
+{{coord2|35|5|34.2|N|138|54|57.2|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+}}
+'''Takahashi Shrine''' (たかはしじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Matsumoto, {{ill|Mishima, Shizuoka|Q653478|qid=Q653478}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}<ref>[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402010 高橋神社] - 静岡県神社庁</ref>.
+
+=== Overview ===
+It is enshrined in the southwestern part of Mishima City, northwest of the Matsumoto district, on the east bank of the Sakaigawa River, adjacent on the north to {{ill|Kuwado Shrine|ja|鍬戸神社|qid=Q134928574}} in the Nagabuse district.
+
+Its founding is unknown, but it is identified with the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} '''Takahashi Shrine''' (たかはしじんじゃ), and it is an old shrine also recorded in the ''{{ill|Izu no Kuni Shinkaichō|Q17193087|qid=Q17193087}}'' as "Junior Fourth Rank Upper, Takahashi no Myōjin"<ref name="gen">[https://genbu.net/data/izu/takahasi_title.htm 高橋神社] - 玄松子</ref><ref name="engi">[http://engishiki.org/izu/bun/iz140205-01.html 高橋神社] - 延喜式神社の調査</ref>.
+
+In {{ill|1873|Q7757|qid=Q7757}} (Meiji 6), it was listed as a village shrine<ref name="engi"/>.
+
+=== Enshrined deity ===
+* {{ill|UNKNOWN|lt=Iwakamutsukari no Mikoto}}
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* [http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402010 高橋神社] - 静岡県神社庁
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Takahashi Shrine]][[Category:Shikinaisha|Takahashi Shrine]][[Category:Shikinaisha|Takahashi Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Izu Province]]
+[[Category:静岡県の旧村社]]
+[[Category:三島市の歴史]]
+[[Category:Buildings and structures in Mishima, Shizuoka]]
+[[Category:Shikinaisha in Izu Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,89 @@
+{{Expand Japanese|売布神社 (松江市)}}
+
+{{Infobox religious building
+| name = Mefu Shrine
+| native_name = 売布神社
+| image = Mefu shrine Matsue.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Mefu Shrine
+| coordinates = {{coord|35.466439|133.058786}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Mefu Shrine'''|売布神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
+[[ja:売布神社 (松江市)]]
+
+{{wikidata link|Q11429659|ja|売布神社 (松江市)|grok=none|check_date=2026-06-01}}
+
+== Japanese content ==
+{{Shinto shrine
+|Name = Mefu Shrine
+|Image = [[Image:Mefu shrine Matsue.jpg|260px|Mefu Shrine worship hall]]<br />Worship hall
+|Location = {{ill|Shimane Prefecture|Q132751|qid=Q132751}}{{ill|Matsue|Q207321|qid=Q207321}} 81 Watami-chō
+|Coordinates = {{WikidataCoord}}
+|Enshrined deity = Hayakitsuhime-no-Kami (Minato-no-Kami / Haraedo-no-Kami)
+|Shrine rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}<br />Former {{ill|UNKNOWN|lt=Prefectural shrine}}
+|Founded = 
+|Main hall = 
+|Alternative names = Hashihime Daimyōjin
+|Pilgrimage affiliation = {{ill|Izumo Shinbutsu Pilgrimage|Q11395860|qid=Q11395860}} No. 6
+|Annual festival = October 10
+|Rituals = Gokyō-sai
+|Map = {{Location map|Japan Shimane|label=Mefu Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Mefu Shrine''' (めふじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Shimane Prefecture|Q132751|qid=Q132751}}, {{ill|Matsue|Q207321|qid=Q207321}}. It is a Shikinaisha, and under the {{ill|Q712534|lt=former shrine ranking system}} it was designated as a prefectural shrine. It is the sixth site of the {{ill|Izumo Shinbutsu Pilgrimage|Q11395860|qid=Q11395860}}.
+
+=== Enshrined deities ===
+The principal deity is {{ill|Hayakitsuhiko and Hayakitsuhime|Q11326733|qid=Q11326733|lt=Hayakitsuhime-no-Kami}}, with {{ill|Isotakeru-no-Mikoto|lt=Isotakeru-no-Kami|Q10881556|qid=Q10881556|qid=Q10881556|lt=Isotakeru-no-Mikoto}} and {{ill|Oyatsuhime and Tsumatsuhime|Q10935047|qid=Q10935047|lt=Ooyatsuhime-no-Mikoto and Tsumatsuhime-no-Mikoto}} enshrined together as associate deities.
+
+=== History ===
+It appears in the '{{ill|Izumo no Kuni Fudoki|Q11395858|qid=Q11395858}}' as “Mefu no Yashiro” (賣布社), and in the '{{ill|Engishiki|Q1342448|qid=Q1342448}}' as “Mefu Jinja” (賣布神社). It is said that the shrine was originally located on the western shore of the Irie of Ōi ({{ill|Lake Shinji|Q1151248|qid=Q1151248}}). Due to tidal currents and changes in topography, it was relocated eastward multiple times, and around the {{ill|13th century|Q7049|qid=Q7049}} it came to be enshrined at its present location. There was also a period when it was known as Shirakata Daimyōjin or Hashihime Daimyōjin.
+
+=== Subsidiary shrines within the precincts ===
+* Wadatatsumi Shrine
+* Kotohira Shrine
+* Funadama Shrine
+* Ebisu Shrine
+* Dōsojin Shrine
+* Shirakata Tojin Arakami
+* Jōkō Shrine
+* Ōmatsu Arakami
+
+=== Festivals ===
+* January 8: Shiokai-sai
+* July 12: Funamiyuki Shinto rite
+* October 9: Takibi Shinto rite
+* October 10: {{ill|Reisai|Q11385469|qid=Q11385469}}, Gokyō-sai (Suzuki Festival)
+
+=== Surroundings ===
+Located in the urban area of Matsue City. The {{ill|Ōhashi River|Q11436587|qid=Q11436587}} flows to the north of the shrine, and the Matsue Shin-Ōhashi Bridge connects it to the northern bank.
+
+=== Access ===
+* Approximately 500 meters northwest from {{ill|Matsue Station|Q1058652|qid=Q1058652}} on {{ill|West Japan Railway Company|Q502125|qid=Q502125}} (JR West).
+
+=== Notes ===
+{{Reflist}}
+
+{{Shinto}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Mefu Shrine]][[Category:Shikinaisha|Mefu Shrine]][[Category:Shikinaisha|Mefu Shrine]][[Category:Shikinaisha in Izumo Province]]
+[[Category:Shinto shrines in Shimane Prefecture]]
+[[Category:松江市の建築物]]
+[[Category:松江市の歴史]]
+[[Category:Shikinaisha in Izumo Province]]
+[[Category:Former Prefectural Shrines in Shimane Prefecture]]
+[[Category:Buildings and structures in Matsue]]
+[[Category:History of Matsue]]
+[[Category:Pages with unresolved QID in ill template]]
+
+[[Category:Git synced pages]]

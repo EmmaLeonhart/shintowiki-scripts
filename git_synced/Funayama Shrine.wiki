@@ -1,0 +1,67 @@
+{{Expand Japanese|船山神社}}
+
+{{Infobox religious building
+| name = Funayama Shrine
+| native_name = 船山神社
+| image = Ob4rjjbj.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Funayama Shrine
+| coordinates = {{coord|34.628445|135.712015}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Funayama Shrine'''|船山神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+[[ja:船山神社]]
+
+{{wikidata link|Q119929665|ja|船山神社|grok=none|check_date=2026-05-29}}
+
+== Japanese content ==
+{{??
+| ??    = Funayama Shrine
+| ??    = [[????:Ob4rjjbj.jpg|250px|]]<br />Torii<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=250}}
+| ???  = {{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Ikoma District, Nara|Q971003|qid=Q971003}}{{ill|Heguri, Nara|Q1346790|qid=Q1346790}} Misato Aza Funayama 475
+| ISO     = JP-29
+| ??? = 34 | ??? = 37 | ??? = 42.4
+| ??? = 135 | ??? = 42 | ??? = 43.3
+| ?? = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}?former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+| ??    = Funayama deity
+| ??    = Japan Nara
+}}
+'''Funayama Shrine''' (????????) is an {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engishiki-listed shrine}} enshrined in Misato, {{ill|Heguri, Nara|Q1346790|qid=Q1346790}}, {{ill|Ikoma District, Nara|Q971003|qid=Q971003}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}}<ref>{{Cite web |title=National Diet Library Digital Collections |url=https://dl.ndl.go.jp/pid/1273537/1/44 |website=dl.ndl.go.jp |access-date=2024-02-05}}</ref>. Its former rank under the modern shrine ranking system was {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+
+=== Overview ===
+The founding and history are unknown, but it is an old shrine listed in the ''{{ill|Engishiki|Q1342448|qid=Q1342448}}''. ''{{ill|Tokusen Jinmyōchō|Q11571092|qid=Q11571092}}'' says the enshrined deity is unknown<ref>{{Cite web |url=https://dl.ndl.go.jp/pid/971155/1/64 |title=Tokusen Jinmeich? |access-date=2024-4-8}}</ref>, while the shrine registry lists it as the Funayama deity<ref>{{Cite web |url=https://meta01.library.pref.nara.jp/opac/repository/repo/69/ |title=Meiji 12 Shrine Register, p.99 |access-date=2024-4-8}}</ref>.
+
+The former shrine stood about 200 meters southwest<ref>The shrine signboard says "southeast 200m," but "southwest 200m" is correct.</ref> of the current location (east of T?k?-ji, now uninhabited, at site no.42 of the Yamato Northern 88 Pilgrimage). Around Taish? 4 it was moved to Kasuga Shrine in former Anmy?ji Village<ref>{{Cite kotobank |word=?? |accessdate=2022-09-26}}</ref>, and that shrine came to be worshipped as Funayama Shrine.
+
+To the right of the main hall is Kasuga-sha (deity: {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}), and to the left is ?miwa-sha (deity: {{ill|Amaterasu|Q455602|qid=Q455602}}<ref>{{Cite book|??|editor=Heguri Town History Editorial Committee|title=Heguri Town History|publisher=Heguri Town Office|date=1976-04|ncid=BN04492478|pages=647-648}}</ref>; another view says Sumiyoshi Daimy?jin).
+
+It is an old shrine preserving {{ill|Iwakura rock|Q11587880|qid=Q11587880}} worship. A prominent yang-stone beside the worship hall was moved from the former site. Some say there was also a yin-stone there<ref>{{Cite kotobank |word=??? |access-date=2022-09-26}}</ref><ref>{{Cite web |url=https://p52de42cb7.hatenablog.com/entry/2022/09/28/144909 |title=Former site of Funayama Shrine |access-date=2024-4-20}}</ref>.
+
+There is also a theory that this stone was intentionally set to face the yin-stone of {{ill|Hegurinoiwatoko Shrine|Q119929663|qid=Q119929663}} across the Heguri Valley.
+
+Near the 8th station area of the Yata Hills behind the shrine are three giant stones and a boat-shaped stone, worshipped as boat stones on which deities descended. These stones are also mentioned in "Jingishi-ry? vol. 8"<ref>{{Cite web|??|title=National Diet Library Digital Collections |url=https://dl.ndl.go.jp/pid/815494/1/14 |website=dl.ndl.go.jp |access-date=2023-06-24}}</ref>, and tradition says that in Meiji 1 the Funakami Shrine once worshipped there was merged into Funayama Shrine.
+
+=== Notes ===
+{{?????}}
+{{Reflist|2}}
+
+=== See also ===
+* {{ill|List of Shikinaisha in Yamato Province|Q11433427|qid=Q11433427}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Funayama Shrine]][[Category:Shikinaisha|Funayama Shrine]][[Category:Shikinaisha|Funayama Shrine]][[Category:Shikinaisha in Yamato Province]]
+[[Category:Son-sha in Nara Prefecture]][[Category:Shinto shrines in Nara Prefecture]]
+[[Category:Shinto shrines in Nara Prefecture]]
+[[Category:Buildings and structures in Heguri, Nara]]
+[[Category:History of Heguri, Nara]]
+[[Category:Shikinaisha in Yamato Province]]
+
+[[Category:Git synced pages]]

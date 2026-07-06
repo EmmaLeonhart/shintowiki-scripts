@@ -1,0 +1,120 @@
+{{Expand Japanese|松阪神社}}
+
+{{Infobox religious building
+| name = Matsusaka Shrine
+| native_name = 松阪神社
+| image = Matsusaka Shrine 1.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Matsusaka Shrine
+| coordinates = {{coord|34.57372222222222|136.52477777777779}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Emperor Ōjin|lt=Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|en|Emperor Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|zh|应神天皇|qid=Q317997}}
+| website = {{Official website|https://matsusakajinjya.com/}}
+}}
+
+{{nihongo|'''Matsusaka Shrine'''|松阪神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
+[[ja:松阪神社]]
+
+{{wikidata link|Q11532402|ja|松阪神社|grok=none|check_date=2026-05-31}}
+
+== Japanese content ==
+{{神社
+|名称    = Matsusaka Shrine
+|画像    = [[ファイル:Matsusaka Shrine 1.jpg|280px]]<br />Haiden
+|所在地  = {{ill|Mie Prefecture|Q128196|qid=Q128196}}{{ill|Matsusaka|Q460829|qid=Q460829}}Tonomachi 1445
+|位置 = {{Coord|34|34|25.4|N|136|31|29.2|E}}
+|祭神    = {{ill|UNKNOWN|lt=Homutawake-no-Mikoto}}<br />{{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama-no-Kami}}
+|神体    = 
+|社格    = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (small) / former {{ill|Gō-sha|ja|郷社|qid=Q134917316}}
+|創建    = 
+|本殿    = {{ill|Shinmei-zukuri|Q930545|qid=Q930545}}
+|別名    = 
+|札所等  = 
+|例祭    = {{ill|October 15|Q2919|qid=Q2919}}
+|神事    = 
+|地図 = {{Location map|Japan Mie|label=Matsusaka Shrine|coordinates=
+{{coord2|34|34|25.4|N|136|31|29.2|E|}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|34|34|25.4|N|136|31|29.2|E}}}}
+}}
+
+'''Matsusaka Shrine''' (まつさかじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Matsusaka|Q460829|qid=Q460829}}, {{ill|Mie Prefecture|Q128196|qid=Q128196}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former modern rank was {{ill|Gō-sha|ja|郷社|qid=Q134917316}}.
+
+=== Enshrined deities ===
+Its principal deities are {{ill|Emperor Ōjin|Q317997|qid=Q317997|lt=Homutawake-no-Mikoto}} ({{ill|Hachiman|Q261637|qid=Q261637}}) and {{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama-no-Kami}} ({{ill|Inari Ōkami|Q719665|qid=Q719665}}). Through shrine mergers in the Meiji period, the following deities are also enshrined.
+
+{{colbegin|2}}
+* {{ill|Amaterasu|Q455602|qid=Q455602|lt=Amateru Omikami}}
+* {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}} / {{ill|Izanami|Q682306|qid=Q682306|lt=Izanami-no-Mikoto}}
+* {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Takesusanoo-no-Mikoto}}
+* {{ill|Tatsuta Taisha|Q246455|qid=Q246455|lt=Ame-no-Mihashira-no-Mikoto / Kuni-no-Mihashira-no-Mikoto}}
+* {{ill|Wakahiru-me|ja|稚日女尊|zh|稚日女尊|qid=Q11596349|lt=Wakahirume-no-Mikoto}}
+* {{ill|Takuhadachiji-hime|Q11110848|qid=Q11110848}}
+* {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke Omikami}}
+* {{ill|Takamimusubi|UNKNOWN|Takamimusubi|lt=Takagi Omikami}}
+* {{ill|Amatsuhikone|fa|آماتسوهیکونه|fr|Amatsuhikone|it|Amatsuhikone|ja|アマツヒコネ|zh|天津日子根命|qid=Q10940228|lt=Amatsuhikone-no-Mikoto}}
+* {{ill|Ikutsuhikone|Q11147583|qid=Q11147583|lt=Ikutsuhikone-no-Mikoto}}
+* {{ill|Kumanokusubi|Q11298796|qid=Q11298796|lt=Kumanokusubi-no-Mikoto}}
+* {{ill|Tagorihime|Q10932870|qid=Q10932870|lt=Takiribime-no-Mikoto}}
+* {{ill|Tagitsuhime|Q10932592|qid=Q10932592|lt=Tagitsuhime-no-Mikoto}}
+* {{ill|Tanabatabime-no-Mikoto|Q48750893|qid=Q48750893|lt=Ame-no-tanabatahime-no-Mikoto}}
+* {{ill|Omoikane|Q586088|qid=Q586088|lt=Omoikane-no-Kami}}
+* {{ill|Ame-no-oshihomimi|Q462555|qid=Q462555|lt=Ame-no-Oshihomimi-no-Mikoto}}
+* {{ill|Ebisu (mythology)|ar|إبيسو (إله)|ca|Ebisu|de|Ebisu|es|Ebisu (mitología)|fa|ابیسو|fi|Ebisu|fr|Ebisu (divinité)|he|אביסו (מיתולוגיה)|id|Ebisu (mitologi)|it|Ebisu (divinità)|ja|えびす|jv|Ebisu (mitologi)|ko|에비스 (신화)|lb|Ebisu (Mythologie)|mni|ꯑꯦꯕꯤꯁꯨ (ꯂꯥꯢ)|nl|Ebisu (god)|pl|Ebisu|ru|Эбису|simple|Ebisu|sv|Ebisu (gud)|th|เอบิซุ (เทพปกรณัม)|tr|Hiru-Ko|uk|Ебісу|vi|Ebisu|zh|惠比寿|qid=Q1129330|lt=Hiruko-no-Mikoto}}
+* {{ill|Ōyamatsumi|Q386563|qid=Q386563|lt=Oyamatsumi-no-Kami}}
+* {{ill|Ichikishima-hime|Q11059454|qid=Q11059454|qid=Q11059454|lt=Ichikishimahime-no-Mikoto}}
+* {{ill|Ame no Hohi|lt=Ame-no-Hohi|Q10940685|qid=Q10940685|qid=Q10940685|lt=Ame-no-Hohi-no-Mikoto}}
+* {{ill|Sukunabikona|ca|Sukunabikona|fr|Sukunabikona|it|Sukuna-hikona|ja|スクナビコナ|ko|스쿠나비코나|mni|ꯁꯨꯀꯨꯅꯕꯤꯀꯣꯅ|pl|Sukunabikona|pt|Sukunahikona|simple|Sukunabikona|sv|Suku-Na-Bikona|zh|少彥名|qid=Q3275687|lt=Sukunahiko-no-Mikoto}}
+* {{ill|Hare of Inaba|Q2330988|qid=Q2330988|lt=Soto-no-Mikoto}}
+* {{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Hiumusubi-no-Kami}}
+* {{ill|UNKNOWN|lt=Kanayamahiko-no-Mikoto}}
+* {{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037|lt=Sarutahiko-no-Mikoto}}
+* {{ill|Emperor Antoku|Q316651|qid=Q316651}}
+* {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944|lt=Okuninushi-no-Mikoto}}
+* {{ill|Kotoshironushi-no-Mikoto|lt=Kotoshironushi|Q8009611|qid=Q8009611|qid=Q8009611|lt=Kotoshironushi-no-Mikoto}}
+* {{ill|Sumiyoshi sanjin|Q1114013|qid=Q1114013|lt=Uwatsutsu-no-o / Nakatsutsu-no-o / Sokotsutsu-no-o}}
+{{colend}}
+
+=== History ===
+It is regarded as a successor shrine of "Oi Shrine" in Iitaka District, Ise Province, listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} (another candidate shrine is {{ill|Kanbe Kotachi Shinmeisha|Q11590193|qid=Q11590193}} in Shimomura-cho, Matsusaka).
+
+Its founding date is unknown, but it has stood on this site since ancient times and was revered by the Iitaka clan, district governors, as their {{ill|Ubusunagami|Q1392097|qid=Q1392097}}.
+
+In {{ill|1588|Q6757|qid=Q6757}} ({{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} 16), {{ill|Gamō Ujisato|Q906580|qid=Q906580}} built {{ill|Matsusaka Castle|Q1010226|qid=Q1010226}} in this shrine forest (Oi no Mori), made the shrine the castle guardian, and enshrined the Hachiman deity together with it. From then through the Edo period it was called "Ojohachiman" (Castle Hachiman). In the first year of {{ill|Keichō|Q1328185|qid=Q1328185}}, when Yoshida Shigekatsu repaired Matsusaka Castle, Ukanomitama-no-Mikoto was additionally enshrined.
+
+In the early Meiji period, it was identified with the Shikinaisha Oi Shrine and renamed from Ojohachiman to Oi Shrine, then ranked as a gosha in July {{ill|Meiji – year 4|Q11512280|qid=Q11512280}}. On {{ill|March 23|Q2445|qid=Q2445}}, {{ill|1908|Q2056|qid=Q2056}} (Meiji 41), deities from 17 nearby shrines (33 deities in total) were merged and it was renamed Matsusaka Shrine.
+
+=== Festivals ===
+In mid-July, this shrine, Hino-cho Yakumo Shrine, and Honmachi Mikuriya Shrine hold a {{ill|Gion Matsuri|Q979873|qid=Q979873}}. Originally this was the festival of Uomachi Uryu Shrine and Nishimachi Yaegaki Shrine, both later merged into this shrine. These shrines were called the "Four Heavenly Kings" as shrines enshrining Matsusaka's {{ill|Gozu Tennō|Q11570247|qid=Q11570247}}.
+
+=== Regular 20-year transfer ===
+A {{ill|Sengū|Q2271023|qid=Q2271023|lt=shikinen senza}} is held every 20 years<ref name="ym1609">{{Cite web|和書|url=http://www.yukanmie.com/news/1544/|title=Final rite "Oshiraishi Arai" held at Matsusaka Shrine; parishioners prepare for once-every-20-years shikinen sengu next month on the 15th|publisher={{ill|Yukan Mie|Q11430176|qid=Q11430176}}|date=2016-09-12|accessdate=2016-10-10|archiveurl=https://web.archive.org/web/20161010144610/http://www.yukanmie.com/news/1544/|archivedate=2016-10-10|url-status=dead|url-status-date=2017-10}}</ref>. In {{ill|2016|Q25245|qid=Q25245}} (Heisei 28), {{ill|Oshiraishimochi|Q17225061|qid=Q17225061|lt=Oshiraishi Arai}} was held on {{ill|September 11|Q2851|qid=Q2851}}, and the transfer took place on {{ill|October 15|Q2919|qid=Q2919}}<ref name="ym1609"/>.
+
+=== Footnotes ===
+{{Reflist}}
+
+=== See also ===
+* {{ill|List of shrines in Mie Prefecture|Q48761540|qid=Q48761540}}
+
+=== External links ===
+* [http://www.matsusakajinjya.com/ Matsusaka Shrine] (official website)
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Matsusaka Shrine]][[Category:Shikinaisha|Matsusaka Shrine]][[Category:Shikinaisha|Matsusaka Shrine]][[Category:Disputed Shikinaisha or Shikigeisha]]
+[[Category:Shikinaisha in Ise Province]]
+[[Category:Shinto shrines in Mie Prefecture]]
+[[Category:Shikinaisha in Ise Province]]
+[[Category:Former Gō-sha in Mie Prefecture]]
+[[Category:History of Matsusaka, Mie]]
+[[Category:2016年竣工の日本の建築物]]
+[[Category:Buildings and structures in Matsusaka, Mie]]
+[[Category:Pages with unresolved QID in ill template]]
+
+[[Category:Git synced pages]]

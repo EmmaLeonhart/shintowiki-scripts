@@ -1,0 +1,112 @@
+{{Expand Japanese|益救神社}}
+
+{{Infobox religious building
+| name = Yaku Shrine
+| native_name = 益救神社
+| image = Yaku Shrine Haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Yaku Shrine
+| coordinates = {{coord|30.427424|130.571711}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Hoori|lt=Hoori|bs|Hoori|en|Hoori|fa|هوری (اسطوره ژاپن)|fr|Hoori|hr|Hoori|it|Hoori|ja|ホオリ|ko|호오리|mni|ꯍꯨꯔꯤ|nl|Ho-ori|no|Hoori|pl|Hoori|pt|Yamasatihiko|ru|Хоори|sh|Hoori|simple|Hoori|sr|Хоори|sv|Hoori|tr|Hoori|uk|Хоорі|vi|Hoori|zh|火折尊|qid=Q1051960}}
+| website = {{Official website|http://www.yakujinja.com/}}
+}}
+
+{{nihongo|'''Yaku Shrine'''|益救神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōsumi Province]].
+
+{{commons category|Category:Yaku-jinja}}
+[[ja:益救神社]]
+
+{{wikidata link|Q11581207|commons|Category:Yaku-jinja|ja|益救神社|grok=none|check_date=2026-05-27}}
+
+== Japanese content ==
+{{Shrine
+|Name = Yaku Shrine
+|Image = [[File:Yaku Shrine Haiden.jpg|270px|Haiden]]<br />Haiden
+|Location = {{ill|Kagoshima Prefecture|Q15701|qid=Q15701}}{{ill|Kumage District, Kagoshima|Q1132154|qid=Q1132154|lt=Kumage District}}{{ill|Yakushima, Kagoshima|Q1350724|qid=Q1350724}} Miyano-ura aza Mizuarai-jiri 277
+|Coordinates = {{Wikicoord2dms|30|25|37.70|N|130|34|18.52|E|region:JP-46_type:landmark|display=inline,title|name=Yaku Shrine}}
+|Deity = {{ill|Hoori|Q1051960|qid=Q1051960|lt=Amatsu-Hikohiko Hohodemi no Mikoto}}
+|Rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (Minor)<br />Former {{ill|UNKNOWN|lt=Prefectural Shrine}}
+|Founded = Unknown
+|Main Hall = Three-bay {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|Other Names = Mitake-gū (Mitsudake-gū)<br />Sukui-gū<br />Ippin Hōju Daigongen
+|Pilgrimage Sites = 
+|Annual Festival = {{ill|April 29|Q2535|qid=Q2535}}
+|Rituals = 
+|Map = {{Location map|Japan Kagoshima|label=Yaku Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[File:Yaku Shrine Torii.jpg|Thumbnail|Torii]]
+[[File:Yaku jinja shrine.jpg|Thumbnail|Main hall]]
+'''Yaku Shrine''' (やくじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Yakushima, Kagoshima|Q1350724|qid=Q1350724}} ({{ill|Yakushima|Q242176|qid=Q242176}}), {{ill|Kumage District, Kagoshima|Q1132154|qid=Q1132154|lt=Kumage District}}, {{ill|Kagoshima Prefecture|Q15701|qid=Q15701}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking system}} it was ranked as a {{ill|UNKNOWN|lt=Prefectural Shrine}}. It is the {{ill|Ichinomiya|Q1656379|qid=Q1656379}} of {{ill|Tane Province|Q1370581|qid=Q1370581}}.
+
+Among the shrines listed in the {{ill|Engishiki|Q1342448|qid=Q1342448}} {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Register of Deities}}, it is the southernmost. Today it is read “Yaku,” but in the past it was read “Masukui” or “Sukui.” Former names include “Sukui-no-miya” and “Ippin Hōju Daigongen.”
+
+=== Enshrined Deities ===
+=== Principal Deity ===
+* Amatsu-Hikohiko Hohodemi no Mikoto (あまつひこひこほほでみのみこと)
+*: Known as “Yamasachihiko” in the {{ill|Umisachi and Yamasachi|Q11468336|qid=Q11468336|lt=Sea and Mountain Luck myth}}.
+
+=== Associated Deities ===
+* {{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi no Mikoto}}
+* {{ill|Konohanasakuya-hime|Q1781862|qid=Q1781862|lt=Konohana-Sakuya-Hime no Mikoto}}
+* {{ill|UNKNOWN|lt=Shiotsuchi no Oji no Mikoto}}
+* {{ill|Watatsumi|abstract|Q1474187|az|Vatatsumi|de|Watatsumi|es|Watatsumi|fa|واتاتسومی|fr|Watatsumi|hu|Vatacumi|ja|ワタツミ|ko|와타쓰미|mni|ꯋꯇꯠꯁꯨꯃꯤ|pl|Watatsumi|ru|Ватацуми|simple|Watatsumi|uk|Вататсумі|zh|綿津見|qid=Q1474187|lt=Toyotama-hiko no Mikoto}}
+* {{ill|Toyotama-hime|lt=Toyotama-hime|Q2329261|qid=Q2329261|qid=Q2329261|lt=Toyotama-hime no Mikoto}}
+* {{ill|Tamayori-hime (mother of Jimmu)|Q3082751|qid=Q3082751|lt=Tamayori-hime no Mikoto}}
+
+It is thought that the shrine originally enshrined the deities of the three central mountains of Yakushima—{{ill|Mount Miyanoura|Q10950373|qid=Q10950373}}, {{ill|Mount Nagata (Japan)|Q11550240|qid=Q11550240}}, and {{ill|Mount Kurio|Q11536028|qid=Q11536028}}—and in the past there were distant worship sites for these three mountains throughout the island. Until the {{ill|Meiji Restoration|Q8707|qid=Q8707}}, there were Yaku Shrines bearing the names of their villages in 18 former villages<ref name="kamigami">Edited by Ken’ichi Tanigawa, *The Gods of Japan – Shrines and Sacred Sites – Vol. 1 Kyushu*, Hakusuisha, April 1984.</ref>, but today only this shrine in Miyano-ura and the Hara Yaku Shrine in the Hara settlement (Yakushima Town, Hara 721-2) remain. In addition, an inner shrine of this shrine stands on the summit of {{ill|Mount Miyanoura|Q10950373|qid=Q10950373}}.
+
+=== History ===
+The circumstances of its founding are unknown.
+
+In the {{ill|Nihon Shoki|Q813935|qid=Q813935}}, an entry dated April 1 of the first year of {{ill|Emperor Jomei|Q329761|qid=Q329761}} ({{ill|629|Q33258|qid=Q33258}}) records that a member of the Tabe clan was dispatched to Yaku (Yakushima). Compared with the entry in the same chronicle dated November 23 of the 8th year of {{ill|Emperor Tenmu|Q335181|qid=Q335181}} ({{ill|AD 679|Q23451|qid=Q23451}}) describing an envoy sent to {{ill|Tanegashima|Q696228|qid=Q696228}}, the fact that an envoy was sent to Yakushima some 50 years earlier is thought to demonstrate the island’s importance as a target along the southern sea routes<ref name="kamigami" />. Furthermore, in the {{ill|Shoku Nihongi|Q611399|qid=Q611399}}, an entry dated February 20 of the 6th year of {{ill|Tenpyō-shōhō|de|Tempyō-Shōhō|es|Tenpyō-shōhō|fa|تنپیو-شوهو|fr|Ère Tenpyō-shōhō|ia|Tenpyo-shoho|id|Tempyō-shōhō|ja|天平勝宝|ko|덴표쇼호|ru|Тэмпё-сёхо|simple|Tenpyō-shōhō|sr|Тенпјо шохо|tr|Tenpyō-shōhō|uk|Тенпьо Сьохо|zh|天平胜宝|zh_yue|天平勝寶|qid=Q1373169}} ({{ill|754|Q23646|qid=Q23646}}) records that in the 7th year of {{ill|Tenpyō|Q1199879|qid=Q1199879}} ({{ill|735|Q23576|qid=Q23576}}), {{ill|UNKNOWN|lt=Takahashi no Muraji Ushikai}} was sent to the southern islands and made to erect markers recording island names, ports, and springs to prepare for the drift landings of {{ill|Japanese missions to Tang China|Q262529|qid=Q262529|lt=envoy ships}}. One view holds that the shrine’s alternative name “Sukui” derives from a mistaken kun-reading of the character 救 (“rescue”) in Yaku (益救)<ref>Hatta Tomonori et al., *Satsugu Nichi Chiri Sanko*, Kagoshima Prefectural Private Education Association, 1898.</ref>, while another theory in the *Survey Report on Shikinaisha* suggests that it derives from a corruption of “Tsukushi,” referring to such markers, i.e., {{ill|miotsukushi|Q11566019|qid=Q11566019}}, and that this term aptly expresses the shrine’s functional origins<ref name="kamigami" />.
+
+From the {{ill|8th century|af|8ste eeu|als|8. Jahrhundert|am|8ኛው ምዕተ ዓመት|an|Sieglo VIII|ar|القرن 8|ary|لقرن 8|arz|القرن 8|ast|Sieglu VIII|av|VIII гӀасру|avk|8-eafa decemda|az|VIII əsr|azb|۸. یوز ایل|ban|Abad ka-8|bar|8. Joarhundad|bat_smg|VIII omžios|be|VIII стагоддзе|be_x_old|VIII стагодзьдзе|bg|8 век|br|VIIIvet kantved|bs|8. vijek|ca|Segle VIII|cdo|8 sié-gī|ce|VIII бӀешо|ckb|سەدەی ٨ەم|cs|8. století|cv|VIII ĕмĕр|cy|8fed ganrif|da|8. århundrede|de|8. Jahrhundert|diq|Seserra 8ine|el|8ος αιώνας|eml|VIII sécol|eo|8-a jarcento|es|Siglo VIII|et|8. sajand|eu|VIII. mendea|ext|Sigru VIII|fa|سده هشتم (میلادی)|fi|700-luku|fiu_vro|8. aastagasada|fo|8. øld|fr|VIIIe siècle|frr|8. juarhunert|fur|Secul VIII|fy|8e iuw|ga|8ú haois|gan|8世紀|gd|8mh Linn|gl|Século VIII|he|המאה ה-8|hi|आठवीं शताब्दी|hr|8. stoljeće|hu|8. század|hy|8-րդ դար|ia|Seculo 8|id|Abad ke-8|io|8ma yarcento|is|8. öldin|it|VIII secolo|ja|8世紀|jv|Abad ping 8|ka|VIII საუკუნე|kk|VIII ғасыр|ko|8세기|ku|Sedsala 8an|kw|8ves kansbledhen|ky|VIII кылым|la|Saeculum 8|lb|8. Joerhonnert|lez|VIII виш йис|lfn|Sentenio 8|li|Achste iew|lij|VIII secolo|lmo|Sécul VIII|lt|VIII amžius|lv|8. gadsimts|map_bms|Abad kaping-8|mhr|VIII курым|mi|Rautau 8|mk|8 век|mr|इ.स.चे ८ वे शतक|ms|Abad ke-8|my|၈ ရာစုနှစ်|myv|VIII пинге|nah|Macuilpohualxihuitl VIII|nap|VIII seculo|nds|8. Johrhunnert|nds_nl|8e eeuw|nl|8e eeuw|nn|700-talet|no|8. århundre|nrm|VIIIe s.|nso|Ngwagakgolo 8|oc|Sègle VIII|pa|8ਵੀਂ ਸਦੀ|pl|VIII wiek|pnb|اٹھويں صدی|pt|Século VIII|qu|8 ñiqin pachakwata|ro|Secolul al VIII-lea|ru|VIII век|rue|VIII. стороча|sah|VIII үйэ|scn|Sèculu VIII|sh|8. vijek|shn|ပီႁူဝ်ပၢၵ်ႇ 8|simple|8th century|sk|8. storočie|sl|8. stoletje|sq|Shekulli VIII|sr|8. век|stq|8. Jierhunnert|su|Abad ka-8|sv|700-talet|sw|Karne ya 8|ta|8-ஆம் நூற்றாண்டு|tg|Садаи VIII|th|คริสต์ศตวรรษที่ 8|tk|8-nji asyr|tl|Ika-8 dantaon|tr|8. yüzyıl|tt|VIII гасыр|uk|VIII століття|ur|آٹھویں صدی|uz|VIII asr|vec|VIII secolo|vi|Thế kỷ 8|wa|8inme sieke|war|Ika-8 nga gatostuig|wuu|8世纪|xmf|VIII ოშწანურა|yi|8טער י"ה|zh|8世纪|zh_min_nan|8 sè-kí|zh_yue|8世紀|qid=Q8086}} to the early {{ill|9th century|Q8083|qid=Q8083}}, when Yakushima and Tanegashima formed {{ill|Tane Province|Q1370581|qid=Q1370581}}, the shrine is said to have been its {{ill|Ichinomiya|Q1656379|qid=Q1656379}}. In the *Engishiki* Jinmyōchō compiled in the 5th year of {{ill|Enchō|Q1327274|qid=Q1327274|lt=Enchō}} ({{ill|927|Q30470|qid=Q30470}}), “Yaku Shrine” is listed under {{ill|Ōsumi Province|Q981002|qid=Q981002}}{{ill|Gomu district|Q11668133|qid=Q11668133}}, which is regarded as its first appearance in historical documents. It was thereby classified as a minor shrine and became the southernmost Shikinaisha.
+
+During the {{ill|Sengoku period|Q204023|qid=Q204023|lt=Sengoku period}}, Yakushima came under the control of the {{ill|Tanegashima clan|Q2975383|qid=Q2975383}}, who favored the {{ill|Hokke-shū|Q44733349|qid=Q44733349}}. As a result, the shrine declined and its location became unknown. Religion on Yakushima had been based on the {{ill|Risshū (Buddhism)|Q1351551|qid=Q1351551}}, but around the first year of {{ill|Bunmei|Q1193544|qid=Q1193544|lt=Bunmei}} ({{ill|1469|Q6566|qid=Q6566}}) it shifted to the Hokke sect<ref name="kamigami" />. In addition, when Mount Yaedake ({{ill|Mount Nagata (Japan)|Q11550240|qid=Q11550240}}) shook and various strange phenomena occurred, a monk named {{ill|UNKNOWN|lt=Nichizō}} visited the island in the 2nd year of {{ill|Chōkyō|Q968843|qid=Q968843}} ({{ill|1488|Q4853|qid=Q4853}}) and climbed the sacred mountains—referring to Miyanoura-dake, Nagata-dake, {{ill|Mount Kurio|Q11536028|qid=Q11536028}}, and {{ill|Mount Kuromi|Q11678042|qid=Q11678042}}—to perform rites to pacify them. This is thought to suggest a conflict between Hokke Buddhism and mountain worship<ref name="kamigami" />.
+
+In the {{ill|Edo period|Q184963|qid=Q184963}}, Yakushima became territory of the {{ill|Satsuma Domain|Q676187|qid=Q676187}}. In the first year of {{ill|Jōkyō|Q1146221|qid=Q1146221}} ({{ill|1684|Q7654|qid=Q7654}}), Satsuma retainer {{ill|UNKNOWN|lt=Machida Magoshichi Tadayuki}} was appointed as magistrate, and upon lamenting the shrine’s ruin, he located its former site and rebuilt the shrine buildings at the present location the following year, Jōkyō 2 ({{ill|1685|Q7660|qid=Q7660}}). By that time, old records had already been lost, and apart from {{ill|Hoori|Q1051960|qid=Q1051960|lt=Hohodemi no Mikoto}}, the identities of the deities were unknown, so Hohodemi no Mikoto, {{ill|Hosuseri|Q10731395|qid=Q10731395|lt=Hohoseri no Mikoto}}, and {{ill|Ebisu (mythology)|Q1129330|qid=Q1129330|lt=Ebisu}} were enshrined as principal deities, with the present associated deities enshrined in a side hall. In the 3rd year of {{ill|Bunkyū|Q730266|qid=Q730266}} ({{ill|1863|Q7701|qid=Q7701}}), the Satsuma Domain again constructed shrine buildings and dedicated 50 {{ill|Koku|Q855048|qid=Q855048|lt=koku}} of shrine lands<ref name="kamigami" />.
+
+In the 4th year of {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} ({{ill|1871|Q7746|qid=Q7746}}), Hohoseri no Mikoto and Ebisu were transferred to other shrines, leaving the present enshrined deities.
+
+During {{ill|World War II|Q362|qid=Q362}}, on July 15 of {{ill|Shōwa era|Q327567|qid=Q327567}} 20 ({{ill|1945|Q5240|qid=Q5240}}), the shrine buildings were destroyed by bombing by the {{ill|United States Armed Forces|Q11211|qid=Q11211}}. To raise funds for reconstruction, part of the precinct land and about 2,000 cedar trees were sold, and the current buildings were erected in Shōwa 29 ({{ill|1954|Q18581|qid=Q18581}}).
+
+=== Shrine Grounds ===
+* Main hall – {{ill|Nagare-zukuri|Q210684|qid=Q210684|lt=Three-bay Nagare-zukuri}}.
+
+=== Mountain Pilgrimage ===
+On Yakushima, during the spring and autumn {{ill|Higan|Q866977|qid=Q866977}}, groups centered on young men from each village climb the sacred mountains and bring back branches of {{ill|Rhododendron subg. Hymenanthes|Q4389817|qid=Q4389817}} as souvenirs.
+
+The mountain climbed differs by village, but in any case reaching the mountainous interior of the island, with elevations exceeding 1,800 m, takes 2–3 days, so representatives would make the ascent. Those who remained behind would climb to the fore-mountain (the mountain viewed from their own village) to welcome the representatives, or gather at distant worship sites called moisho, where they would receive rhododendron branches believed to bear the spirits of the gods and display them in the alcoves of their homes. By the late Shōwa period, however, the practice of bringing back rhododendrons had declined from the standpoint of nature conservation<ref name="kamigami" />.
+
+=== Location ===
+* Miyano-ura aza Mizuarai-jiri 277, {{ill|Yakushima, Kagoshima|Q1350724|qid=Q1350724}}, {{ill|Kumage District, Kagoshima|Q1132154|qid=Q1132154|lt=Kumage District}}, {{ill|Kagoshima Prefecture|Q15701|qid=Q15701}}
+
+=== Notes ===
+{{Help footnotes}}
+{{reflist}}
+
+=== External Links ===
+{{commonscat}}
+* {{official website}}
+
+{{Shinto}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Yaku Shrine]][[Category:Shikinaisha|Yaku Shrine]][[Category:ichinomiya]]
+[[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Ōsumi Province]]
+[[Category:Shinto shrines in Kagoshima Prefecture]]
+[[Category:屋久島町の建築物]]
+[[Category:屋久島町の歴史]]
+[[Category:Shikinaisha in Ōsumi Province]]
+[[Category:Ichinomiya]]
+[[Category:Former Prefectural Shrines in Kagoshima Prefecture]]
+
+[[Category:Git synced pages]]

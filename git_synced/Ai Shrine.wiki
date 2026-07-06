@@ -1,0 +1,90 @@
+{{Infobox religious building
+| name = Ai Shrine
+| native_name = 阿為神社
+| image = Ai-jinja, haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ai Shrine
+| coordinates = {{coord|34.854146|135.563052}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508|lt=Ame-no-Koyane}}
+}}
+
+{{nihongo|'''Ai Shrine'''|阿為神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
+{{commons category|Category:Ai-jinja}}
+[[ja:阿為神社]]
+
+{{wikidata link|Q11657591|commons|Category:Ai-jinja|ja|阿為神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shinto shrine
+|Name=Ai Shrine
+|Image=[[File:Ai-jinja, haiden.jpg|250px|]]<br/>Worship hall
+|Location={{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}{{ill|Ai|ja|安威村|ko|아이촌 (오사카부)|uk|Ай (Осака)|qid=Q11450514|lt=Awi}} 3-chome 17-17
+|Coordinates= {{WikidataCoord}}
+|Deities={{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508|lt=Amenokoyane-no-Mikoto}}<br/>{{ill|Emperor Ōjin|Q317997|qid=Q317997}}<br/>{{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama-no-Kami}}<br/>{{ill|Sugawara no Michizane|Q382005|qid=Q382005}}
+|Shrine rank={{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br/>Former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|Founded=(traditionally) {{ill|Fujiwara no Kamatari|Q433995|qid=Q433995}}
+|Main hall=
+|Festival={{ill|May 3|Q2547|qid=Q2547}}・{{ill|May 4|Q2549|qid=Q2549|lt=4th}}
+|Map= {{Location map|Japan Osaka|label=Ai Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
+}}
+[[File:Ai-jinja, torii.jpg|thumb|220px|right|{{center|Torii}}]]
+'''Ai Shrine''' (あいじんじゃ) is a Shinto shrine located in {{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}{{ill|Ai|ja|安威村|ko|아이촌 (오사카부)|uk|Ай (Осака)|qid=Q11450514|lt=Awi}}.
+It is a Shikinaisha listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, recorded as “{{ill|Settsu Province|ca|Província de Settsu|cs|Provincie Seccu|de|Provinz Settsu|eo|Provinco Seccu|es|Provincia de Settsu|fa|ولایت ستسو|fr|Province de Settsu|gl|Provincia de Settsu|hak|Settsu-koet|id|Provinsi Settsu|it|Settsu (provincia)|ja|摂津国|ko|셋쓰국|lt|Seccu žemė|nl|Settsu (provincie)|pt|Província de Settsu|ru|Сэтцу (провинция)|simple|Settsu Province|sk|Seccu (provincia)|sr|Провинција Сецу|tr|Settsu (vilayet)|uk|Провінція Сеццу|zh|攝津國|zh_min_nan|Settu-kok|zh_yue|攝津國|qid=Q864163}}{{ill|Shimashimo district|ja|島下郡|zh|岛下郡|qid=Q10976940}} Ai Shrine, Kuwabuki.” It is also known as Naemori Shrine.
+
+=== History ===
+According to shrine tradition, it is an ancient shrine said to have been founded by the enshrinement carried out by {{ill|Fujiwara no Kamatari|Q433995|qid=Q433995}}. In the “Settsu Shinbetsu” section of the {{ill|Shinsen Shōjiroku|Q1045362|qid=Q1045362}}, it states: “Nakatomi Aino Muraji, same deity ({{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508|lt=Amenokoyane-no-Mikoto}}), descendant in the twelfth generation of Ōe no Omi,” indicating that the Nakatomi Aino clan enshrined their ancestral deity here.
+
+* {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} 5 ({{ill|1872|ab|1872|af|1872|als|1872|am|1872 እ.ኤ.አ.|an|1872|ar|1872|ary|1872|arz|1872|ast|1872|avk|1872|az|1872|azb|۱۸۷۲ (میلادی)|ba|1872 йыл|ban|1872|bar|1872|bat_smg|1872|bcl|1872|be|1872|be_x_old|1872|bg|1872|bn|১৮৭২|bpy|মারি ১৮৭২|br|1872|bs|1872.|ca|1872|cdo|1872 nièng|ce|1872 шо|ceb|1872|ckb|١٨٧٢|crh|1872|cs|1872|csb|1872|cv|1872|cy|1872|da|1872|de|1872|diq|1872|el|1872|eml|1872|eo|1872|es|1872|et|1872|eu|1872|fa|۱۸۷۲|fi|1872|fiu_vro|1872|fo|1872|fr|1872|frp|1872|frr|1872|fur|1872|fy|1872|ga|1872|gan|1872年|gcr|1872|gd|1872|gl|1872|gv|1872|he|1872|hi|१८७२|hif|1872|hr|1872.|hsb|1872|ht|1872 (almanak gregoryen)|hu|1872|hy|1872|hyw|1872 թուական|ia|1872|id|1872|ilo|1872|io|1872|is|1872|it|1872|ja|1872年|jv|1872|ka|1872|kaa|1872|kk|1872 жыл|kn|೧೮೭೨|ko|1872년|krc|1872 джыл|ku|1872|kv|1872-ӧд во|la|1872|lb|1872|lez|1872 йис|li|1872|lij|1872|lmo|1872|lt|1872 m.|lv|1872. gads|mai|१८७२|map_bms|1872|mdf|1872|mg|1872|mhr|1872|mi|1872|min|1872|mk|1872|mr|इ.स. १८७२|mrj|1872 и|ms|1872|my|၁၈၇၂|myv|1872 ие|mzn|۱۸۷۲|nah|1872|nap|1872|nds|1872|nds_nl|1872|new|ई सं १८७२|nl|1872|nn|1872|no|1872|nrm|1872|nso|1872|oc|1872|olo|1872|or|୧୮୭୨|os|1872-æм аз|pa|1872|pam|1872|pl|1872|pnb|1872|pt|1872|qu|1872|ro|1872|ru|1872 год|rue|1872|sa|१८७२|sah|1872|scn|1872|sd|1872ع|se|1872|sh|1872.|shn|1872|si|1872|simple|1872|sk|1872|sl|1872|smn|1872|sq|1872|sr|1872|stq|1872|su|1872|sv|1872|sw|1872|szl|1872|ta|1872|te|1872|tet|1872|tg|Соли 1872|th|พ.ศ. 2415|tk|1872|tl|1872|tly|1872|tr|1872|tt|1872 ел|udm|1872 ар|uk|1872|ur|1872ء|uz|1872|vec|1872|vi|1872|vls|1872|vo|1872|wa|1872|war|1872|xmf|1872|yi|1872|za|1872 nienz|zea|1872|zh|1872年|zh_classical|一八七二年|zh_min_nan|1872 nî|zh_yue|1872年|qid=Q7753}}): Designated as a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+* Meiji 40 ({{ill|1907|Q2048|qid=Q2048}}), January: Designated as a shrine receiving offerings of sacred food and ritual implements.
+* April 5, Meiji 40: A heihaku shrine was merged into the shrine.
+* Meiji 41 ({{ill|1908|Q2056|qid=Q2056}}): The Shikinaisha '''{{ill|Mitekura Shrine|Q11481884|qid=Q11481884}}''' was merged.
+* Heisei 17 ({{ill|2005|Q2019|qid=Q2019}}): The main hall was newly constructed. As a commemorative event for its completion, a sacred ritual of {{ill|Kemari|Q12224003|qid=Q12224003}}, closely associated with Fujiwara no Kamatari, was dedicated. Since then, the “Kemari Gathering” has been held annually every November.<ref>[https://dainenji.jimdofree.com/%E3%83%96%E3%83%AD%E3%82%B0-1/%E9%98%BF%E7%82%BA%E7%A5%9E%E7%A4%BE/%E9%98%BF%E7%82%BA%E7%A5%9E%E7%A4%BE%E8%B9%B4%E9%9E%A0%E3%81%AE%E4%BC%9A/ Ai Shrine Kemari Gathering] – Jōdo sect {{ill|Dainen-ji Temple|Q11435458|qid=Q11435458|lt=Dainen-ji}} website</ref>.
+
+=== Enshrined deities ===
+Currently
+* {{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508|lt=Amenokoyane-no-Mikoto}}
+* {{ill|Emperor Ōjin|Q317997|qid=Q317997}}
+* {{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama-no-Kami}}
+* {{ill|Sugawara no Michizane|Q382005|qid=Q382005}}
+
+=== Auxiliary shrines ===
+* Wakamiya Hachimangū: {{ill|Emperor Nintoku|Q313119|qid=Q313119}}
+* Akiba Shrine: {{ill|Akiba Gongen|Q2680724|qid=Q2680724|lt=Akiba Daigongen}}
+* Izumo Shrine: {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Hayasusanō-no-Mikoto}}
+* Kashima Shrine: {{ill|Takemikazuchi|lt=Takemikazuchi|Q1502690|qid=Q1502690|qid=Q1502690|lt=Takemikazuchi Ōkami}}
+* Inari Shrine: Relocated from the Inari shrine of Mt. Abuyama
+* Ōtoshi Shrine: {{ill|Toshigami|Q3028663|qid=Q3028663|lt=Ōtoshi Ōkami}}
+* Sugawara Shrine: {{ill|Sugawara no Michizane|Q382005|qid=Q382005}}
+* Ichikishimahime Shrine: {{ill|Ichikishima-hime|Q11059454|qid=Q11059454|qid=Q11059454|lt=Ichikishimahime-no-Mikoto}}
+* Inana Shrine: {{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}
+* Kanayama Shrine (Konpira Shrine): {{ill|Kanayama-hiko and Kanayama-hime|Q4387856|qid=Q4387856|lt=Kanayamahiko-no-Mikoto}}
+
+=== References ===
+* Ibaraki City Board of Education, *Our Town Ibaraki: Shrines and Temples Edition* (1989) {{National Bibliography Number|89049621}}
+* Bō Yukihiko Ten, “Historic Sites and Scenic Places of Mishima District” (1961) (included in Osaka Prefectural Board of Education, *Historic Sites, Scenic Places, and Natural Monuments of Osaka Prefecture*, Mishima District (1974), {{National Bibliography Number|73009804}})
+
+=== Notes ===
+{{Reflist}}
+
+=== External links ===
+* {{Wayback|url=http://www3.ocn.ne.jp/~tohara/hokusetu-ai.html |title=Shikinaisha of Settsu / Ai Shrine |date=20110712231322}} (Tohara’s top page)
+{{Commons|Category:Ai-jinja}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Ai Shrine]][[Category:Shikinaisha|Ai Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Kanpei-sha]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Shinto shrines in Ibaraki, Osaka]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Son-sha in Osaka Prefecture]]
+
+[[Category:Git synced pages]]

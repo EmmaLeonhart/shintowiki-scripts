@@ -1,0 +1,68 @@
+{{Expand Japanese|朝立彦神社}}
+
+{{Infobox religious building
+| name = Asadatehiko Shrine
+| native_name = 朝立彦神社
+| image = Asadatehiko jinja.JPG
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Asadatehiko Shrine
+| coordinates = {{coord|33.955481|134.538575}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Toyotama-hime|qid=Q2329261|lt=Toyotama-hime|de|Toyotama-hime|en|Toyotama-hime|es|Toyotama-hime|fa|تویوتاما-هیمه|fi|Otohime|fr|Otohime|id|Toyotama-hime|ja|トヨタマヒメ|ko|도요타마히메|mni|ꯇꯣꯌꯣꯇꯃ-ꯍꯤꯃꯦ|pl|Toyotama-hime|ru|Тоётама-химэ|simple|Toyotama-hime|sv|Otohime|uk|Тойотама-хіме|vi|Toyotama-hime|zh|豐玉毘賣命|qid=Q2329261}}
+}}
+
+{{nihongo|'''Asadatehiko Shrine'''|朝立彦神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+{{commons category|Category:Asadatehiko-jinja}}
+[[ja:朝立彦神社]]
+
+{{wikidata link|Q11517708|commons|Category:Asadatehiko-jinja|ja|朝立彦神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shrine
+|Name = Asadatehiko Shrine
+|Image = [[File:Asadatehiko jinja.JPG|250px|Asadatehiko Shrine Main Hall]]
+|Location = {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Tokushima (city)|Q207309|qid=Q207309}}{{ill|Iitani-chō|Q11666679|qid=Q11666679}}Kotake 101
+|Coordinates = {{Wikicoord2 deg min sec|33|57|19.91|N|134|32|18.81|E|region:JP-36_type:landmark}}
+|Enshrined deity = {{ill|Toyotama-hime|lt=Toyotama-hime|Q2329261|qid=Q2329261|lt=Toyotamabiko no Mikoto}}
+|Shrine rank = Former {{ill|Son-sha|Q134917284|qid=Q134917284}}<br>{{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}
+|Established = Unknown
+|Main hall = 
+|Other names = 
+|Annual festival = 
+|Rituals = 
+|Map = {{Location map|Japan Tokushima|label=Asadatehiko Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=220}}
+}}
+
+'''Asadatehiko Shrine''' (Asadatehiko-jinja) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}, {{ill|Tokushima (city)|Q207309|qid=Q207309}}, {{ill|Iitani-chō|Q11666679|qid=Q11666679}}.
+
+=== History ===
+[[File:Okameiwa rock Asadatehiko jinja.JPG|thumb|Okame Stone at Okame Pond]]
+It was formerly called Goō Gongen, but in {{ill|Meiji – year 4|Q11512280|qid=Q11512280}} it was renamed Asadatehiko Shrine. In the {{ill|Awa-shi|Q65291985|qid=Q65291985}}, it is written: “It enshrines Watatsumi Toyotamahiko no Mikoto. Located in Iidani Village, it is commonly called Gongen.” In the “Kanpō Revised Shrine Register,” it is recorded as “Iidani Village Goō Daigongen, bettō Iidani Village Daigo-ji.”
+
+It has been revered as a rain-invoking deity of this region. Within the precincts there is a rock cavity a little over two shaku deep called “Okame Pond,” which never dries up throughout the year, and it is said that rain-prayer rituals were performed there. It is located at an elevation of 700 meters on {{ill|Hiraishi Mountain|Q11483443|qid=Q11483443|lt=Hiraishi Mountain}}, and the surrounding area is designated as {{ill|Higashi Sankei Prefectural Natural Park|Q5753973|qid=Q5753973}}.
+
+=== Enshrined deity ===
+* {{ill|Toyotama-hime|lt=Toyotama-hime|Q2329261|qid=Q2329261|lt=Toyotamabiko no Mikoto}}
+
+=== Access ===
+* From in front of {{ill|Shikoku Railway Company|Q496531|qid=Q496531|lt=JR}} {{ill|Tokushima Station|Q860775|qid=Q860775}}, take the {{ill|Tokushima Bus|Q11489648|qid=Q11489648}} Katsura Line and get off at “Nagabashira,” then walk about 60 minutes.
+
+=== External links ===
+* [http://www.awanavi.jp/article/0002035.html Asadatehiko Shrine – Awa Navi]
+{{Shinto}}
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Asadatehiko Shrine]][[Category:Shikinaisha|Asadatehiko Shrine]][[Category:Shikinaisha|Asadatehiko Shrine]][[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima, Tokushima]]
+[[Category:徳島県の旧村社]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+
+[[Category:Git synced pages]]

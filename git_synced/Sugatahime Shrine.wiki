@@ -1,0 +1,79 @@
+{{Expand Japanese|菅田比売神社}}
+
+{{Infobox religious building
+| name = Sugatahime Shrine
+| native_name = 菅田比売神社
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Sugatahime Shrine
+| coordinates = {{coord|34.621662|135.783903}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Sugatahime Shrine'''|菅田比売神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+[[ja:菅田比売神社]]
+
+{{wikidata link|Q134893097|ja|菅田比売神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{神社
+|名称   = Sugatahime Shrine
+| 画像 = {{画像募集中|cat=大和郡山市}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=280|coord={{coord|34|37|17|N|135|47|1|E}}}}
+|所在地 = {{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Yamatokōriyama|Q118213|qid=Q118213}} Hachijō-chō 619
+|緯度度 =  34|緯度分 = 37|緯度秒 = 17
+|経度度 = 135|経度分 = 47|経度秒 = 1
+|ISO   = JP-29
+|祭神   = Izunome-no-Kami (Sugatahime-no-Kami)
+|神体   = 
+|社格   = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}
+|創建   = Unknown
+|例祭   = October 12
+|本殿   = {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|別名   = 
+|札所等 = 
+|神事   = 
+|ラベル位置 = top
+|地図   = Japan Nara
+}}
+
+'''Sugatahime Shrine''' (すがたひめじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} {{ill|Louis de Bourbon, Duke of Montpensier|Q927365|qid=Q927365}} in Tsutsui-chō, {{ill|Yamatokōriyama|Q118213|qid=Q118213}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}} (site of {{ill|Tsutsui Castle|Q11603011|qid=Q11603011}}).
+
+It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} of {{ill|Soejimo district|Q11560415|qid=Q11560415}}, and is thought to form a paired shrine with {{ill|Sugata Shrine (Yamatokōriyama)|Q134888232|qid=Q134888232|lt=Sugata Shrine}}.
+
+Under the system of {{ill|Emperor Daigo|Q329753|qid=Q329753}} and the Engi regulations, it received offerings of hoes and quivers in the {{ill|Kinensai|Q118906710|qid=Q118906710}}<ref>From Shinto ritual materials.</ref>.
+
+It was formerly called “Shinoda-sha (Shinoda-no-miya)” and is said to have stood at Kita-Shinoda, about 500 m north of the current site, on the east side of Tsutsui Elementary School.
+
+=== Overview ===
+In conclusion, the enshrined deity is {{ill|UNKNOWN|lt=Izunome-no-Kami}}<ref>{{Cite web |url=https://meta01.library.pref.nara.jp/opac/repository/repo/65/?lang=0&mode=0&opkey=R166362381017073&idx=41 |title=Soekami District Shrine Register, p.108 |access-date=2024-4-26}}</ref>. However, in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engishiki Jinmeichō}}, it is written as “Sugatahime Shrine, two seats”<ref>{{Cite web |url=https://dl.ndl.go.jp/pid/1273537/1/44 |title=Engishiki Jinmeichō |access-date=2024-4-26}}</ref>. Also, in {{ill|Tokusen Jinmyōchō|Q11571092|qid=Q11571092}} and in Shinto source materials, the deities are listed as Sugatahime-no-Kami and {{ill|Ame-no-Mahitotsu-no-Mikoto|Q10016750|qid=Q10016750|lt=Amekushimahitotsu-no-Mikoto}}<ref>The same deities are listed in ''Study of Shikinaisha, Vol. 2''.</ref>, and in ''Yamato-shi'' as well, Izunome-no-Kami is treated as doubtful. Izunome-no-Kami is the deity born when Izanagi returned from Yomi and performed purification, with “Izu” meaning sacred purification. However, from the shrine name itself, it is clear that Sugatahime-no-Kami was worshiped.
+
+=== Precinct shrines ===
+*Hachiman Shrine (deity: Homuda-wake-no-Mikoto)
+*Kasuga Shrine (Ame-no-Koyane-no-Mikoto)
+*Kōra Shrine (Takeuchi no Sukune)
+*Kamo Shrine (Kotoshironushi-no-Kami)
+*Inari Shrine (Inari Daimyōjin)
+*Jibutsudō Hall (seated Yakushi Nyorai image)<ref>''History of Kōriyama Town''</ref>
+
+=== Notes ===
+<references />
+
+=== Related items ===
+*{{ill|List of Shikinaisha in Yamato Province|abstract|Q11433427|ja|大和国の式内社一覧|qid=Q11433427}}
+*{{ill|Tsutsui Castle|Q11603011|qid=Q11603011}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Sugatahime Shrine]][[Category:Shikinaisha|Sugatahime Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Shinto shrines in Nara Prefecture]]
+[[Category:History of Yamatokoriyama, Nara]]
+[[Category:Buildings and structures in Yamatokoriyama, Nara]]
+[[Category:Shikinaisha in Yamato Province]]
+
+[[Category:Git synced pages]]

@@ -1,0 +1,152 @@
+{{Expand Japanese|開口神社}}
+
+{{Infobox religious building
+| name = Aguchi Shrine
+| native_name = 開口神社
+| image = Aguchi-jinja haiden.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Aguchi Shrine
+| coordinates = {{coord|34.576842|135.474421}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Shiotsuchi-no-Oji|lt=Shiotsuchi|ja|シオツチオジ|zh|鹽土老翁|qid=Q11174872}}
+}}
+
+{{nihongo|'''Aguchi Shrine'''|開口神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
+
+{{commons category|Category:Aguchi-jinja}}
+[[ja:開口神社]]
+
+{{wikidata link|Q11655187|commons|Category:Aguchi-jinja|ja|開口神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shinto shrine
+| Name = Aguchi Shrine
+| Image = [[Image:Aguchi-jinja haiden.jpg|250px]]<br />Worship hall
+| Location = {{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Sakai|Q193428|qid=Q193428}}{{ill|Sakai-ku, Sakai|Q1042008|qid=Q1042008}} 2-1-29 Kaicho-higashi
+| Coordinates = {{ウィキ座標2段度分秒|34|34|36.7|N|135|28|28.5|E|region:JP-27_type:landmark}}
+| Enshrined deities = {{ill|Shiotsuchi-no-Oji|UNKNOWN|ltja=塩土老翁神|qid=Q11174872}}<br/>{{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=素盞嗚神}}<br/>{{ill|Ikukunitama Shrine|Q11574477|qid=Q11574477|lt=生国魂神}}
+| Shrine rank = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br/>Former {{ill|UNKNOWN|lt=Prefectural Shrine}}
+| Other names = Mitsujōzan Nenbutsu-ji<br />{{ill|Ōtera|Q11434514|qid=Q11434514}}
+| Annual festival = Friday to {{ill|Sunday|Q132|qid=Q132}} closest to {{ill|September 12|Q2849|qid=Q2849}} (Hassaku Festival)
+| Map = {{Location map|Japan Osaka|label=Aguchi Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+[[File:Mitsu nasu tomoe (crest of Aguchi Shrine in Sakai City, Osaka Prefecture).png|thumb|160px|The crest of Aguchi Shrine.]]
+
+**Aguchi Shrine** (あぐちじんじゃ) is a Shinto shrine located in {{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Sakai|Q193428|qid=Q193428}}{{ill|Sakai-ku, Sakai|Q1042008|qid=Q1042008}}. It is commonly known as “**Ōtera**” (おおてら) and affectionately called “Ōtera-san” by locals. It is the tutelary shrine of Sakai Minami-gumi (south of {{ill|Oshoji|Q11434534|qid=Q11434534}}). It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and under the former {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} it was classified as a {{ill|UNKNOWN|lt=Prefectural Shrine}}. As Sakai is also the birthplace of {{ill|Yosano Akiko|Q464104|qid=Q464104}}, the shrine offers a special “Akiko Love Poem Omikuji.”<ref>{{Cite web |title=Aguchi Shrine wedding and Shinto ceremony in-depth report! What is its reputation? {{!}} Spicomi |url=https://spicomi.net/media/articles/2906 |website=Spicomi |access-date=2023-11-27}}</ref>
+
+=== History ===
+According to shrine tradition, it is said to have been founded when, on her return from the {{ill|Three Han Campaign|Q11249435|qid=Q11249435}} of {{ill|Empress Jingū|Q232803|qid=Q232803}}, an imperial command was given to enshrine Shiotsuchi-no-Oji at this site.
+
+The shrine is listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as one of the 24 shrines of {{ill|Ōtori district|Q3270651|qid=Q3270651}} in {{ill|Izumi Province|Q1047117|qid=Q1047117}}. In this text, “Aguchi” is read as “Akikuchi,” which later became corrupted into “Aguchi.” The shrine has long had close ties with {{ill|Sumiyoshi Shrine|Q11381857|qid=Q11381857}} ({{ill|Sumiyoshi-taisha|Q705949|qid=Q705949}}) of {{ill|Settsu Province|ca|Província de Settsu|cs|Provincie Seccu|de|Provinz Settsu|eo|Provinco Seccu|es|Provincia de Settsu|fa|ولایت ستسو|fr|Province de Settsu|gl|Provincia de Settsu|hak|Settsu-koet|id|Provinsi Settsu|it|Settsu (provincia)|ja|摂津国|ko|셋쓰국|lt|Seccu žemė|nl|Settsu (provincie)|pt|Província de Settsu|ru|Сэтцу (провинция)|simple|Settsu Province|sk|Seccu (provincia)|sr|Провинција Сецу|tr|Settsu (vilayet)|uk|Провінція Сеццу|zh|攝津國|zh_min_nan|Settu-kok|zh_yue|攝津國|qid=Q864163}}, and records from {{ill|Tenpyō|Q1199879|qid=Q1199879}} 3 ({{ill|731|Q23566|qid=Q23566}}) refer to it as “Akikuchi Minato-hime Shrine.”
+
+In {{ill|Tenpyō|Q1199879|qid=Q1199879}} 16 ({{ill|744|Q23608|qid=Q23608}}), {{ill|Gyōki|Q1136664|qid=Q1136664}} founded the temple **Nenbutsu-ji** on the shrine grounds, enshrining {{ill|Bhaisajyaguru|Q854773|qid=Q854773}} as its principal image. As syncretism between Shinto and Buddhism progressed, the temple became the shrine’s {{ill|Jingū-ji|Q1074971|qid=Q1074971}}. During the {{ill|Heian period|Q193292|qid=Q193292}}, under the influence of {{ill|Kūkai|Q222227|qid=Q222227}}, Nenbutsu-ji became a {{ill|Shingon Buddhism|Q550182|qid=Q550182}} temple. It also had connections with {{ill|Kūya|Q2975265|qid=Q2975265}}, serving as a center for both {{ill|Mikkyō|Q336102|qid=Q336102}} and {{ill|Pure Land Buddhism|Q262244|qid=Q262244}}, and came to be popularly known as “Ōtera,” a name that became firmly established.
+
+In {{ill|Jōhei|Q1324874|qid=Q1324874}} 2 ({{ill|932|Q23656|qid=Q23656}}), the shrine’s {{ill|Shinkai (divine rank)|Q11591025|qid=Q11591025}} was elevated to {{ill|Senior Fifth Rank|Q11123280|qid=Q11123280}}. From ancient through medieval times, the area around the shrine was known as Akikuchi Village. In {{ill|Ten'ei|Q1193915|qid=Q1193915}} 4 ({{ill|1113|Q19531|qid=Q19531}}), the {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=素盞嗚神}} of Haramura and the {{ill|Ikukunitama Shrine|Q11574477|qid=Q11574477|lt=生国魂神}} of Kidomura were {{ill|Co-Enshrinement|Q11412524|qid=Q11412524}}, and the shrine came to be revered as “Akikuchi Three-Village Daimyōjin.”
+
+Both the shrine and Nenbutsu-ji were under the control of the {{ill|Tsumori clan|Q11555993|qid=Q11555993}}, but as Sakai developed into a commercial port and {{ill|Merchant|Q215536|qid=Q215536}} rose in power, they came to be supported by merchant self-governance. During the {{ill|Nanboku-chō period|Q264012|qid=Q264012}}, in {{ill|Kōō|Q1146172|qid=Q1146172}} 1 ({{ill|1389|Q6371|qid=Q6371}}), the wealthy merchant {{ill|gōshō|Q11634379|qid=Q11634379}} donated farmland, after which land donations followed in succession.
+
+In {{ill|Ōei|Q1193078|qid=Q1193078}} 32 ({{ill|1425|Q6283|qid=Q6283}}), the shrine became a {{ill|Kigan-sho|ja|祈願所|qid=Q11588473}} of the {{ill|Imperial Court of Japan|ja|朝廷 (日本)|qid=Q30253177}}, and in Ōei 34 ({{ill|1427|ab|1427|af|1427|als|1427|am|1427 እ.ኤ.አ.|an|1427|ar|1427|ary|1427|arz|1427|ast|1427|avk|1427|az|1427|azb|۱۴۲۷ (میلادی)|be|1427|be_x_old|1427|bg|1427|bn|১৪২৭|bpy|মারি ১৪২৭|br|1427|bs|1427.|ca|1427|cdo|1427 nièng|ceb|1427|ckb|١٤٢٧|crh|1427|cs|1427|csb|1427|cv|1427|cy|1427|da|1427|de|1427|diq|1427|el|1427|eml|1427|eo|1427|es|1427|et|1427|eu|1427|fa|۱۴۲۷ (میلادی)|fi|1427|fo|1427|fr|1427|frr|1427|fy|1427|ga|1427|gan|1427年|gcr|1427|gd|1427|gl|1427|he|1427|hi|१४२७|hr|1427.|ht|1427 (almanak jilyen)|hu|1427|hy|1427|ia|1427|id|1427|ilo|1427|io|1427|is|1427|it|1427|ja|1427年|jv|1427|ka|1427|kaa|1427|kk|1427 жыл|ko|1427년|la|1427|lb|1427|li|1427|lij|1427|lmo|1427|lt|1427 m.|lv|1427. gads|mai|१४२७|map_bms|1427|mdf|1427|mg|1427|mhr|1427|mi|1427|min|1427|mk|1427|mr|इ.स. १४२७|mrj|1427 и|ms|1427|my|၁၄၂၇|mzn|۱۴۲۷|nah|1427|nap|1427|nds|1427|nds_nl|1427|new|सन् १४२७|nl|1427|nn|1427|no|1427|nrm|1427|nso|1427|oc|1427|or|୧୪୨୭|os|1427-æм аз|pl|1427|pnb|1427|pt|1427|qu|1427|ro|1427|ru|1427 год|rue|1427|sa|१४२७|sah|1427|sc|1427|scn|1427|sd|1427ع|se|1427|sh|1427.|shn|1427|simple|1427|sk|1427|sl|1427|smn|1427|sq|1427|sr|1427|stq|1427|su|1427|sv|1427|sw|1427|tg|Соли 1427|th|พ.ศ. 1970|tk|1427|tl|1427|tly|1427|tr|1427|tt|1427 ел|uk|1427|ur|1427ء|uz|1427|vec|1427|vi|1427|vls|1427|war|1427|wuu|1427年|xmf|1427|zh|1427年|zh_min_nan|1427 nî|zh_yue|1427年|qid=Q6305}}) it also became a prayer site of the {{ill|Ashikaga shogunate|Q1154406|qid=Q1154406}}.
+
+In {{ill|Tenbun|ckb|تێنبون|fa|تنبون|fi|Tenbun-kausi|fr|Ère Tenbun|it|Tenbun|ja|天文 (元号)|ko|덴분|pt|Tenbun|ru|Тэмбун|simple|Tenbun|sr|Тенбун|sv|Tenbun|tr|Tenbun|zh|天文 (日本)|qid=Q1192853}} 4 ({{ill|1535|ab|1535|af|1535|als|1535|am|1535 እ.ኤ.አ.|an|1535|ar|1535|ary|1535|arz|1535|ast|1535|avk|1535|ay|1535|az|1535|azb|۱۵۳۵ (میلادی)|bar|1535|bcl|1535|be|1535|be_x_old|1535|bg|1535|bn|১৫৩৫|bpy|মারি ১৫৩৫|br|1535|bs|1535.|ca|1535|cdo|1535 nièng|ce|1535 шо|ceb|1535|ckb|١٥٣٥|crh|1535|cs|1535|cv|1535|cy|1535|da|1535|de|1535|diq|1535|el|1535|eml|1535|eo|1535|es|1535|et|1535|eu|1535|fa|۱۵۳۵ (میلادی)|fi|1535|fo|1535|fr|1535|frr|1535|fur|1535|fy|1535|ga|1535|gan|1535年|gcr|1535|gd|1535|gl|1535|gv|1535|he|1535|hi|१५३५|hr|1535.|ht|1535 (almanak jilyen)|hu|1535|hy|1535|ia|1535|id|1535|ilo|1535|io|1535|is|1535|it|1535|ja|1535年|jv|1535|ka|1535|kaa|1535|kk|1535 жыл|ko|1535년|krc|1535 джыл|la|1535|lb|1535|lfn|1535|lij|1535|lmo|1535|lt|1535 m.|lv|1535. gads|mai|१५३५|map_bms|1535|mdf|1535|mg|1535|mhr|1535|mi|1535|min|1535|mk|1535|mr|इ.स. १५३५|mrj|1535 и|ms|1535|my|၁၅၃၅|nah|1535|nap|1535|nds|1535|new|सन् १५३५|nl|1535|nn|1535|no|1535|nrm|1535|nso|1535|oc|1535|or|୧୫୩୫|os|1535-æм аз|pl|1535|pnb|1535|pt|1535|qu|1535|ro|1535|ru|1535 год|rue|1535|sa|१५३५|sah|1535|scn|1535|sd|1535ع|se|1535|sh|1535.|shn|1535|si|1535|simple|1535|sk|1535|sl|1535|smn|1535|sq|1535|sr|1535|su|1535|sv|1535|sw|1535|ta|1535|tg|Соли 1535|th|พ.ศ. 2078|tk|1535|tl|1535|tly|1535|tr|1535|tt|1535 ел|uk|1535|ur|1535ء|uz|1535|vec|1535|vi|1535|vls|1535|wa|1535|war|1535|wuu|1535年|xmf|1535|yi|1535|zea|1535|zh|1535年|zh_min_nan|1535 nî|zh_yue|1535年|qid=Q6453}}), more than 110 wealthy merchants of Sakai Minami-shō each donated one kanmon of coins for repairs to Nenbutsu-ji’s earthen walls. Among them were famous figures such as tea masters {{ill|Takeno Jō'ō|fa|تاکه‌نو جوئو|fr|Takeno Jōō|it|Takeno Jōō|ja|武野紹鴎|zh|武野紹鷗|qid=Q7678036}} and {{ill|Sen no Rikyū|ar|سين نو ريكيو|az|Sen no Rikyu|ca|Sen no Rikyū|cs|Sen no Rikjú|de|Sen no Rikyū|es|Sen no Rikyū|fa|سن نو ریکیو|fi|Sen no Rikyū|fr|Sen no Rikyū|he|סן נו ריקיו|hu|Szen no Rikjú|id|Sen no Rikyū|it|Sen no Rikyū|ja|千利休|ko|센노 리큐|nl|Sen no Rikyu|pl|Sen no Rikyū|ro|Sen no Rikyu|ru|Сэн-но Рикю|simple|Sen no Rikyu|sl|Sen no Rikyū|sr|Сен но Рикју|sv|Sen no Rikyu|tr|Sen no Rikyū|uk|Сен-но Рікю|vi|Sen no Rikyū|wuu|千利休|zh|千利休|zh_classical|千利休|zh_yue|千利休|qid=Q305477}} (under the name “Sen Yoshiro”), as well as {{ill|UNKNOWN|lt=Uoya Yajirō}}, whose name also appears on stone lanterns at {{ill|Kasuga Shrines|Q10855011|qid=Q10855011}} ({{ill|Kasuga-taisha|ca|Gran santuari de Kasuga|co|Grandi Santuariu Kasuga|cs|Svatyně Kasuga|de|Kasuga-Taisha|es|Kasuga-taisha|eu|Kasuga-taisha|fa|کاسوگا-تایشا|fi|Kasuga-taisha|fr|Kasuga-taisha|he|מקדש קאסוגה|id|Kuil Agung Kasuga|it|Santuario Kasuga|ja|春日大社|ka|კასუგა-ტაისია|ko|가스가타이샤|la|Kasuga-taisha|pl|Kasuga Taisha|pt|Kasuga-taisha|ru|Касуга тайся|sh|Kasuga-taisha|simple|Kasuga Taisha|sl|Svetišče Kasuga|th|ศาลเจ้าคาซูงะ|tok|tomo sewi suli Kasuka|tr|Kasuga-taisha|uk|Касуга тайся|zh|春日大社|qid=Q714559}}) in {{ill|Nara|ja|奈良|zh|奈良|qid=Q11444975}}. From these wealthy merchants, a dozen or so were chosen as warehouse officials and council members who administered Sakai’s autonomous organization and held important roles in Aguchi Shrine’s festivals.
+
+In the {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}, the temple was abolished under the {{ill|Shinbutsu bunri|Q1970535|qid=Q1970535}} policy, but the {{ill|Three-storied pagoda|ja|三重塔|zh|三重塔|qid=Q11357687}} built in {{ill|Kanbun (era)|Q1146228|qid=Q1146228}} 3 ({{ill|1663|Q7577|qid=Q7577}}) was left standing.
+
+In {{ill|1873|Q7757|qid=Q7757}} (Meiji 6), the shrine was ranked as a {{ill|Gō-sha|ja|郷社|qid=Q134917316}}, and in {{ill|1902|Q2043|qid=Q2043}} (Meiji 35) it was promoted to Prefectural Shrine.
+
+On July 10, {{ill|1945|Q5240|qid=Q5240}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 20), during the sixth {{ill|Bombing of Osaka|Q2814395|qid=Q2814395}} (the Sakai air raid), the main hall and pagoda were completely destroyed by fire,<ref>[http://www.aguchi.jp/aguchijinjya3.html Aguchi Shrine: Rituals and History]</ref> though valuable documents escaped damage. The current shrine buildings were reconstructed in {{ill|1961|Q3696|qid=Q3696}} (Shōwa 36). To the south is Shukuin, which serves as a resting place for the portable shrine during the Sumiyoshi Grand Festival.
+
+=== Enshrined Deities ===
+* Principal deities – {{ill|Shiotsuchi-no-Oji|UNKNOWN|ltja=塩土老翁神|qid=Q11174872}}, {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=素盞嗚神}}, {{ill|Ikukunitama Shrine|Q11574477|qid=Q11574477|lt=生国魂神}}
+
+Shiotsuchi-no-Oji is said to embody the combined divine virtues of the {{ill|Sumiyoshi sanjin|Q1114013|qid=Q1114013}} of {{ill|Sumiyoshi-taisha|Q705949|qid=Q705949}}, and the shrine is known as the “inner sanctuary of Sumiyoshi.”
+
+=== Shrine Grounds ===
+* Main hall – Rebuilt in {{ill|1961|Q3696|qid=Q3696}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 36).
+* Worship hall – Rebuilt in 1961 (Shōwa 36).
+* Shrine office
+* Toyotake {{ill|Inari shrine|Q514480|qid=Q514480}}
+* Sanpō {{ill|Kōjin|Q6455190|qid=Q6455190}} Shrine (Kamado Shrine)
+* Shirahige Shrine and Sae Shrine ({{ill|Kōshin|Q3082157|qid=Q3082157}})
+* Hedomatsu Shrine and Matsukaze Shrine
+* {{ill|UNKNOWN|lt=Sugawara Shrine}} and Iwamuro Shrine
+* Yakushi Shrine – Enshrines the {{ill|Bhaisajyaguru|Q854773|qid=Q854773}} that was once the principal image of Nenbutsu-ji.
+* Right auxiliary shrine – {{ill|Kumano shrine|Q3200355|qid=Q3200355}}, {{ill|Itsukushima Shrine|abstract|Q191763|ar|ضريح إيتسوكوشيما|arz|ضريح ايتس و كوشيما|ast|Santuariu Itsukushima|az|İtsukuşima məbədi|ba|Ицукусима ғибәҙәтханаһы|ban|Kuil Itsukushima|bg|Шинтоистко светилище на Ицукушима|ca|Santuari d'Itsukushima|cs|Svatyně Icukušima|de|Itsukushima-Schrein|el|Ιερό της Ιτσουκουσίμα|eo|Sanktejo de Itsukushima|es|Santuario Itsukushima|eu|Itsukushima santutegia|fa|معبد ایتسوکوشیما|fi|Itsukushima-jinja|fr|Itsukushima-jinja|gl|Santuario Itsukushima|he|מקדש השינטו באיצוקושימה|hi|इत्सुकुशीमा मंदिर|hr|Svetište Itsukushima|hu|Icukusimai szentély|hy|Իցուկուսիմա կոթող|id|Kuil Itsukushima|it|Santuario di Itsukushima|ja|厳島神社|jv|Itsukushima Shrine|ka|იცუკუსიმის ტაძარი|ko|이쓰쿠시마 신사|ks|اِژُکُشِما استان|la|Itsukushima Templum|lt|Icukušimos šventykla|lv|Icukušimas templis|mk|Светилиште Ицукушима|ml|ഇത്സുകുഷീമ ക്ഷേത്രം|ms|Kuil Itsukushima|mt|Santwarju ta' Itsukushima|nl|Itsukushima-schrijn|no|Helligdommen Itsukushima|pl|Itsukushima-jinja|pnb|اٹسوکوشیما|pt|Santuário de Itsukushima|ru|Святилище Ицукусима|sh|Svetište Itsukushima|si|ඉත්ස්කුෂිමා විහාරය|simple|Itsukushima Shrine|sk|Icukušima-džindža|sl|Svetišče Icukušima|sq|Tempulli Itsukushima|sr|Svetilište Icukušima|sv|Itsukushima|ta|இட்சுகுசிமா கோயில்|th|ศาลเจ้าอิตสึกูชิมะ|tl|Dambanang Itsukushima|tok|tomo sewi Itukusima|tr|Itsukuşima Tapınağı|uk|Святилище Іцукусіма|uz|Itsukushima ibodatxonasi|vi|Đền Itsukushima|war|Santuwaryo han Itsukushima|wuu|严岛神社|zh|严岛神社|zh_min_nan|Itukusima Sîn-siā|zh_yue|嚴島神社|qid=Q191763}}, Kabuto Shrine, Miyake {{ill|Hachiman shrine|lt=Hachiman Shrine|qid=Q11390939}}, {{ill|UNKNOWN|lt=Kotohira Shrine}}, {{ill|Shinmei shrines|Q11590310|qid=Q11590310}}, {{ill|Toyouke Shrine|Q17315011|qid=Q17315011}}
+* Left auxiliary shrine – Ubumusubi Shrine, Hokushin Shrine, Ōkunitama Shrine, {{ill|UNKNOWN|lt=Ebisu Shrine}}, {{ill|Sukunahikona Shrine|Q11464750|qid=Q11464750}}, Funatama Shrine, Kusumoto Shrine
+* Yōkō Stone
+* Ōgi Mound
+* Hakuichiryū Shrine
+* Kinryū Well – After {{ill|Kaie-ji (Sakai City)|Q97277064|qid=Q97277064}} was relocated to the grounds of {{ill|Nanshū-ji|Q11407716|qid=Q11407716}}, this became the shrine’s well.
+* Monument marking the death of {{ill|Miyoshi Motonaga|Q10865728|qid=Q10865728}} – {{ill|Kenpon-ji Temple|Q11665118|qid=Q11665118}}, where he committed suicide during the {{ill|UNKNOWN|lt=Tenbun Disturbance}}, once stood nearby.
+
+=== Cultural Properties ===
+=== Important Cultural Properties ===
+* Illustrated “Ōtera Engi” in color on paper, 3 scrolls, by {{ill|Tosa Mitsuoki|Q3180225|qid=Q3180225}} (with one author’s catalogue scroll, one lacquered box, and three former roller rods)<ref>The lacquered box and former roller rods were additionally designated in {{ill|2018|Q25291|qid=Q25291}} ({{ill|Heisei era|Q234510|qid=Q234510}} 30).</ref>, deposited at the {{ill|Osaka City Museum of Fine Arts|Q9004920|qid=Q9004920}}.
+* Tantō dagger, signed Yoshimitsu, hira-zukuri, three-ridged mune, itame forging, suguha hamon, length 24.1 cm, by {{ill|Awataguchi Yoshimitsu|Q11604625|qid=Q11604625}}, deposited at {{ill|Osaka Castle Museum|Q96338884|qid=Q96338884}}; shrine tradition says it was donated by {{ill|Ashikaga Yoshitane|Q708527|qid=Q708527}}.<ref>Edited and published by Sakai City Cultural Properties Division, *Cultural Properties of Sakai* (Revised and Expanded Edition), 2009, p.51.</ref>
+* Ink-on-paper imperial autograph waka collection by {{ill|Emperor Fushimi|Q373949|qid=Q373949}}, 30.8 × 551.0 cm, deposited at the Osaka City Museum of Fine Arts – A draft of a waka anthology written when the emperor was around 40 years old. Of its six sections (spring, summer, autumn, winter, love, miscellaneous), only the winter section survives in complete form, making it especially valuable.<ref>*Cultural Properties of Sakai* (Revised and Expanded Edition), 2009, p.58.</ref>
+
+=== Osaka Prefecture–Designated Tangible Cultural Properties ===
+* Aguchi Shrine Documents (20 scrolls, 18 hanging scrolls, 4 books, 1 booklet, 239 sheets), distributed and deposited at the {{ill|Osaka Museum of History|Q11261312|qid=Q11261312}}, {{ill|UNKNOWN|lt=Osaka Castle Tenshukaku}}, and {{ill|Sakai City Museum|Q1448918|qid=Q1448918}} – Ancient documents related to Aguchi Shrine and its temple Nenbutsu-ji from the {{ill|Kamakura period|Q236205|qid=Q236205}} to the {{ill|Edo period|Q184963|qid=Q184963}}, valuable not only for the shrine but also for understanding Sakai’s history.<ref>*Cultural Properties of Sakai* (Revised and Expanded Edition), 2009, p.59.</ref>
+
+=== Sakai City–Designated Tangible Cultural Properties ===
+* Wooden seated statue of Yakushi Nyorai
+
+=== Festivals ===
+* New Year’s Festival – January 1
+* Tondo Festival – January 15
+* Setsubun Festival – Early February
+* Hatsuuma Festival – Late March (Day of the Horse)
+* Satsuki Festival – May 5
+* Great Purification, Chinowa Passing, and Yabusame Ritual – June 30
+* Hassaku Festival (main festival) – Mid-September (features Sakai’s oldest {{ill|Futon Daiko|Q11277203|qid=Q11277203}})
+* Sanpō Kōjin Festival – November 28
+
+=== Access ===
+* {{ill|Hankai Tramway|Q2069534|qid=Q2069534}} {{ill|Hankai Line|Q5648522|qid=Q5648522}} – {{ill|Ōshōji Station|Q11434538|qid=Q11434538}}
+* Hankai Electric Tramway {{ill|Hankai Line|Q5648522|qid=Q5648522}} – {{ill|Shukuin Station|Q11455658|qid=Q11455658}}
+
+=== Nearby Information ===
+* {{ill|Sugawara Shrine|Q11619211|qid=Q11619211}}
+* {{ill|Shukuin Tongū|Q11455657|qid=Q11455657}}
+* Sakai Yamanokuchi Shopping Street
+
+=== Notes ===
+{{Footnote help}}
+{{Reflist|2}}
+
+=== References ===
+* *Visiting Historic Sites of Osaka 2: Medieval Edition* (Number Publishing), Chapter 38: “Aguchi Shrine, Guardian of the Autonomous City of Sakai”
+* Edited and published by {{ill|Sakai City Museum|Q1448918|qid=Q1448918}}, *Aguchi Shrine and Sakai* – {{ill|2012|Q1990|qid=Q1990}} ({{ill|Heisei era|Q234510|qid=Q234510}} 24), February 11
+* Edited and published by Sakai City Museum, *Ōtera-san: Tracing the Forms of Faith* – {{ill|2016|Q25245|qid=Q25245}} (Heisei 28), September 13
+
+=== External Links ===
+{{commons|Category:Aguchi-jinja}}
+* [http://www.aguchi.jp/ Official website of Aguchi Shrine] {{ja icon}}
+* [https://www7b.biglobe.ne.jp/~s_minaga/sos_ootera.htm Izumi Ōdera (Nenbutsu-ji, Dai-Nenbutsu-ji, Aguchi Daimyōjin, Mimura Daimyōjin)] {{ja icon}}
+
+{{Shinto}}
+{{shinto-stub}}
+{{Authority control}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Aguchi Shrine]][[Category:Shikinaisha|Aguchi Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Izumi Province]]
+[[Category:Important Cultural Properties in Sakai City]]
+[[Category:Shinto shrines in Sakai, Osaka]]
+[[Category:Shikinaisha in Izumi Province]]
+[[Category:Former Fu-sha in Osaka]]
+[[Category:History of Sakai-ku, Sakai]]
+[[Category:Buildings and structures in Sakai-ku, Sakai]]
+[[Category:Shinbutsu bunri]]
+[[Category:Empress Jingū]]
+[[Category:Kūkai]]
+[[Category:空也]]
+[[Category:Shinbutsu bunri]]
+[[Category:Kūkai]]
+
+[[Category:Git synced pages]]

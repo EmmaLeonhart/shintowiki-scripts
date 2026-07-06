@@ -1,0 +1,85 @@
+{{Expand Japanese|耳成山口神社}}
+
+{{Infobox religious building
+| name = Miminashi Yamaguchi Shrine
+| native_name = 耳成山口神社
+| image = Miminashi-jinja.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Miminashi Yamaguchi Shrine
+| coordinates = {{coord|34.514859|135.806234}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Takamimusubi|qid=Q125400|lt=Takamimusubi|de|Takamimusubi|en|Takamimusubi|es|Takami-musubi-no-kami|fa|تاکامیموسوبی|fr|Takamimusubi|id|Takamimusubi|ja|タカミムスヒ|ks|تاکامِمُسُبی|pl|Takamimusubi|ru|Такамимусуби-но ками|zh|高皇產靈尊|qid=Q125400}}
+}}
+
+{{nihongo|'''Miminashi Yamaguchi Shrine'''|耳成山口神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
+[[ja:耳成山口神社]]
+
+{{wikidata link|Q11610732|ja|耳成山口神社|grok=none|check_date=2026-06-01}}
+
+== Japanese content ==
+{{神社
+|名称   = Miminashi Yamaguchi Shrine
+|画像   = [[ファイル:Miminashi-jinja.jpg|270px|Honden]]
+|所在地 = {{ill|Nara Prefecture|Q131287|qid=Q131287}}{{ill|Kashihara, Nara|Q496319|qid=Q496319}} Kihara-chō
+|位置 = {{ウィキ座標2段度分秒|34|30|53.3|N|135|48|22.4|E|region:JP-29_type:landmark}}
+|祭神   = {{ill|Takamimusubi|lt=Takamimusubi-no-Kami|UNKNOWN|qid=Q125400|lt=Takamimusubi-no-Kami}}<br/>{{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi-no-Kami}}
+|社格   = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}（great）<br/>former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+|創建   = Unknown
+|本殿   = {{ill|Kasuga-zukuri|Q3193781|qid=Q3193781}}
+|別名   =
+|札所等 = 
+|例祭   = {{ill|October 13|Q2925|qid=Q2925}}
+|神事   = 
+|地図 = {{Location map|Japan Nara|label=Miminashi-yama<br />Yamaguchi Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+
+'''Miminashi Yamaguchi Shrine''' (みみなしやまぐちじんじゃ) is a shrine on {{ill|Mount Miminashi|Q11610730|qid=Q11610730}} (one of the {{ill|Yamato Sanzan|Q1470150|qid=Q1470150}}) in {{ill|Kashihara, Nara|Q496319|qid=Q496319}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}}. Though called a {{ill|Yamaguchi Shrine|Q11467399|qid=Q11467399}}, it is not at the mountain foot but around the eight-tenths point up the mountain. It is one of the six Yamaguchi shrines of {{ill|Yamato Province|Q907495|qid=Q907495}} (Asuka, Ishimura, {{ill|Unebiyamaguchi Shrine|Q11578590|qid=Q11578590|lt=Unebi}}, Osa, Hase, and '''Miminashi''') and was worshiped as the mountain deity of timber-cutting mountains for {{ill|Imperial House of Japan|Q909452|qid=Q909452}} buildings. Also in the precinct are {{ill|Kotohira shrines|Q11646488|qid=Q11646488}}, {{ill|Inari shrine|Q514480|qid=Q514480}}, and {{ill|Hakuryū Daijin|Q123407570|qid=Q123407570}}.
+
+It is said to grant blessings for safe childbirth.
+
+=== History ===
+Its founding is unclear<ref>There is a theory that it was founded by an oracle in the reign of {{ill|Emperor Seimu|Q316672|qid=Q316672}}.</ref>, but old records state that in {{ill|730|Q23563|qid=Q23563}} (Tenpyō 2) in the {{ill|Shōsōin Documents|Q11545362|qid=Q11545362}} {{ill|tax register|Q11545592|qid=Q11545592}}, the shrine received rice from the {{ill|Emperor of Japan|Q208233|qid=Q208233}}, and that in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} it was listed as a {{ill|Taisha (shrine)|Q11438310|qid=Q11438310}} and charged with {{ill|Tsukinami-no-Matsuri|Q11516161|qid=Q11516161}} and {{ill|Niiname-no-Matsuri|Q11501518|qid=Q11501518}} rites. Records also remain that in {{ill|806|Q30021|qid=Q30021}} (Daidō 1) and in {{ill|859|Q23897|qid=Q23897}} (Jōgan 1), imperial envoys conducted {{ill|Rainmaking (ritual)|Q477738|qid=Q477738}} rituals.
+
+In {{ill|1651|Q6956|qid=Q6956}} (Keian 4), villagers of Yamanobō cut and damaged sacred trees, triggering disputes over mountain management and ownership centered on the shrine. In {{ill|1702|Q6819|qid=Q6819}} (Genroku 15), it was settled by identifying “Miminashiyama Tenjin” as the shikinaisha Miminashi Yamaguchi Shrine. After that, Yamanobō villagers transferred the divine spirit to {{ill|UNKNOWN|lt=Yamanobō Yamaguchi Shrine}}<ref>''Great Encyclopedia of Temples and Shrines (Yamato/Kii)'' ({{ill|Heibonsha|Q11482108|qid=Q11482108}})</ref>. During this period, buildings were burned and fell into disrepair, but in August {{ill|1748|Q7600|qid=Q7600}} (Kan'en 1), parishioners of {{ill|Miminashi|Q17175746|qid=Q17175746}} rebuilt the current {{ill|Honden|Q2044994|qid=Q2044994}} and {{ill|Haiden (Shinto)|Q3125745|qid=Q3125745}}, and the shrine came to be worshiped as the {{ill|Ujigami|Q767655|qid=Q767655}} of Ishiharada, Kihara, Kuzumoto, Shinga, Tokiwa, and Yamanobō districts.
+
+=== Enshrined deities ===
+* {{ill|Takamimusubi|lt=Takamimusubi-no-Kami|UNKNOWN|qid=Q125400|lt=Takamimusubi-no-Kami}} (also read Takamimusubi-no-Kami)
+* {{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi-no-Kami}}
+
+=== Other ===
+[[File:Miminashi-sangaku.jpg|thumb|A sangaku dedication]]
+*As a remnant of it once being called “Miminashi-yama,” the {{ill|Torii|Q234731|qid=Q234731}} at the {{ill|Sandō|Q667783|qid=Q667783}} entrance is inscribed “Miminashi-yama.”
+*There is a {{ill|Sangaku|Q2569069|qid=Q2569069}} dedicated in {{ill|1854|Q7670|qid=Q7670}} (Ansei 1) bearing a {{ill|Japanese mathematics|Q1735738|qid=Q1735738}} problem and solution.
+
+=== Notes ===
+<references/>
+
+=== References ===
+*On-site guide board
+*Ono Emio and Shimaoka Hiroshi, ''Photo Collection: Meiji, Taishō, Shōwa Kashihara: Memories of Hometown 65'', section on safe-childbirth amulet (Miminashi Yamaguchi Shrine), {{ill|Kokusho Kankōkai|Q11420946|qid=Q11420946}}, 1979.
+
+=== External links ===
+* [http://www.city.kashihara.nara.jp/kankou/own_kankou/kankou/spot/miminashiyamaguchi.html Kashihara City - Miminashi Yamaguchi Shrine]
+* [http://www.wasan.earth.linkclub.com/nara/miminasi.html Wasa-no-Yakata site (Miminashi Yamaguchi Shrine)]
+
+{{神道 横}}
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Miminashi Yamaguchi Shrine]][[Category:Shikinaisha|Miminashi Yamaguchi Shrine]][[Category:Shikinai Ronsha]]
+[[Category:Shikinai Taisha]]
+[[Category:Shikinaisha in Yamato Province]]
+[[Category:Shinto shrines in Nara Prefecture]]
+[[Category:Buildings and structures in Kashihara, Nara]]
+[[Category:橿原市の歴史]]
+[[Category:Sangaku]]
+[[Category:Pages with unresolved QID in ill template]]
+
+[[Category:Git synced pages]]

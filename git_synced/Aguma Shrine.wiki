@@ -1,0 +1,72 @@
+{{Infobox religious building
+| name = Aguasa Shrine
+| native_name = 阿具麻神社
+| image = Aguma shrine.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Aguasa Shrine
+| coordinates = {{coord|35.295475|136.85548}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Aguasa Shrine'''|阿具麻神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
+
+[[ja:阿具麻神社]]
+
+{{wikidata link|Q85884332|ja|阿具麻神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Source citation|date=September 2019}}
+{{Shrine
+|Name        = Aguma Shrine
+|Image       = [[File:Aguma shrine.jpg|250px]]<br />Torii gate
+|Location    = Sōjin 250, Senju-chō Tenma, Ichinomiya City, Aichi Prefecture, Japan
+|Coordinates = {{WikidataCoord}}
+|Enshrined deity = Aguma Tenjin
+|Sacred object  =
+|Shrine rank    = Listed shrine (Shikinaisha), debated identification<br/>Former village shrine
+|Founded        = Unknown
+|Chief priest   =
+|Main hall      =
+|Other names    = Tenjin<br/>Tenmangū
+|Pilgrimage sites =
+|Annual festival = October 9
+|Rituals        =
+|Map = {{Location map|Japan Aichi|label=Aguma Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+**Aguma Shrine** (あぐまじんじゃ) is a Shinto shrine located at Sōjin, Senju-chō Tenma, Ichinomiya City, Aichi Prefecture, Japan. It is identified with the “Aguma Shrine” of Niwa District in Owari Province listed in the *Engishiki Jinmyōchō*, but this identification is not definitive.
+
+=== History ===
+{{Empty section|date=September 2019}}
+Until the Edo period, it was called **Tenjin** and served as the tutelary shrine of Tenma Village in Niwa District. The early Edo-period document *Kanbun Muramura Oboegaki* records “Tenma Village… Tenjin.”
+
+The “Aguma Shrine” of Niwa District listed in the *Engishiki Jinmyōchō* had an unknown location, but scholars such as Amano Nobukage identified it with this shrine. However, the basis for identifying this shrine as Aguma Shrine is not clear.
+
+=== Subsidiary shrines ===
+* Tenjin Shrine
+* Atago Shrine
+
+=== Enshrined deity ===
+* Aguma Tenjin
+
+=== Notes ===
+{{Reflist}}
+
+{{Pref-stub|pref=Aichi Prefecture}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Aguma Shrine]][[Category:Shikinaisha|Aguma Shrine]][[Category:Shikinaisha|Aguma Shrine]][[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:Shinto shrines in Ichinomiya, Aichi]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:Son-sha in Aichi Prefecture]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:incorrect template category applied]]
+
+[[Category:Git synced pages]]

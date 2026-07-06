@@ -1,0 +1,80 @@
+{{Expand Japanese|葦稲葉神社}}
+
+{{Infobox religious building
+| name = Ashiinaba Shrine
+| native_name = 葦稲葉神社
+| image = Ashiinaba shrine, Tokushima.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Ashiinaba Shrine
+| coordinates = {{coord|34.130276|134.412463}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Ashiinaba Shrine'''|葦稲葉神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:葦稲葉神社]]
+
+{{wikidata link|Q11621139|ja|葦稲葉神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shinto shrine
+|Name = Ashiinaba Shrine
+|Image = [[File:Ashiinaba shrine, Tokushima.jpg|270px|Ashiinaba Shrine]]
+|Location = {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Itano District, Tokushima|Q1156025|qid=Q1156025}}{{ill|Kamiita, Tokushima|Q1350072|qid=Q1350072}} Jintaku Aza Miyanokita 45
+|Coordinates = {{WikidataCoord}}
+|Enshrined deity = Ashiinaba-no-Kami
+|Shrine rank = Shrine listed in the Six National Histories<br/>Former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+|Founded = Date of foundation unknown
+|Main hall = {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|Alternative name = Tonomiya
+|Pilgrimage status = 
+|Annual festival = October 22
+|Rituals = 
+|Map = {{Location map|Japan Tokushima|label=Ashiinaba Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Ashiinaba Shrine''' (あしいなばじんじゃ) is a Shinto shrine located in {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Itano District, Tokushima|Q1156025|qid=Q1156025}}{{ill|Kamiita, Tokushima|Q1350072|qid=Q1350072}}.
+
+=== Enshrined deities ===
+'''Ashiinaba-no-Kami''' ({{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}) is enshrined as the principal deity, with '''Kagaehime-no-Mikoto''' ({{ill|UNKNOWN|lt=Kusanohime-no-Mikoto}}) {{ill|Co-Enshrinement|Q11412524|qid=Q11412524}}.
+
+=== History ===
+Two main halls stand side by side; the western one (on the left when facing them) is Ashiinaba Shrine (the eastern one is the {{ill|Sessha|Q135009904|qid=Q135009904}} Tonomiya Shrine).
+
+Although the date of foundation is unknown, the shrine has been worshipped since ancient times. In the {{ill|Rikkokushi|Q1151168|qid=Q1151168|lt=national histories}}, it is recorded that in the 9th year of {{ill|Jōwa (Heian period)|Q1075605|qid=Q1075605|lt=Jōwa}} ({{ill|842|Q24730|qid=Q24730}}), it was promoted from having no rank to Junior Fifth Rank, Lower Grade<ref>“{{ill|Shoku Nihon Kōki|Q1041301|qid=Q1041301}},” entry for the 2nd day of the 10th month, 9th year of Jōwa.</ref>. It was later promoted to Junior Fifth Rank, Upper Grade, and in the 9th year of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} ({{ill|867|Q30347|qid=Q30347}}) it was further elevated from Junior Fifth Rank, Upper Grade to Senior Fifth Rank, Upper Grade<ref>“{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}},” entry for the 23rd day of the 4th month, 9th year of Jōgan.</ref>. In the 16th year of the same era it was promoted to Junior Fourth Rank, Lower Grade<ref>Same source, entry for the 14th day of the 3rd month, 16th year of Jōgan.</ref>, and in the 3rd year of {{ill|Gangyō|Q747451|qid=Q747451}} ({{ill|879|Q25001|qid=Q25001}}) to Junior Fourth Rank, Upper Grade<ref>Same source, entry for the 23rd day of the 6th month, 3rd year of Gangyō.</ref>. It is thus recognized as a {{ill|Kokushi genzaisha|Q118304363|qid=Q118304363}}.
+
+The jointly enshrined Kagaehime-no-Mikoto is identified with the small shrine “Kagaehime Shrine” listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} for {{ill|Awa Province (Tokushima)|Q907457|qid=Q907457}}{{ill|Itano District, Tokushima|Q1156025|qid=Q1156025}}, and is regarded as a {{ill|Massha|Q135009906|qid=Q135009906}}<ref>There is also a theory that identifies it with a small shrine within the grounds of {{ill|Ōasahiko Shrine|Q723417|qid=Q723417}} in {{ill|Naruto, Tokushima|Q460812|qid=Q460812}}, Ōasa Town.</ref>. The time and circumstances under which it was enshrined together are completely unknown, but in this area stands the low yet beautifully shaped {{ill|Mount Ōyama|Q11434564|qid=Q11434564|lt=Mount Ōyama}}. As the shrine is located almost at the center of the {{ill|Alluvial fan|Q465088|qid=Q465088}} on its southern foothills, it is conjectured that the mountain itself was revered as a deity and that both deities were enshrined as {{ill|Guardian deities|Q131278957|qid=Q131278957}} of the rice fields spreading across the foothills<ref name="調査報告">Akiyama, “Kagaehime Shrine.”</ref>.
+
+According to shrine tradition, in ancient times the shrine was located in a reed field called Ashinohara in Ōyamahata on the mid-slopes of Mount Ōyama<ref>Nearby is {{ill|Taisan-ji (Kamiita)|Q3514063|qid=Q3514063|lt=Ōyama-ji}}, said to have been founded in the {{ill|Heian period|Q193292|qid=Q193292}}.</ref>. Due to flooding it was moved to Miyagadani, and later, after suffering arson, it was relocated to its present site on the southern foothills<ref name="調査報告"/>. However, a {{ill|Dōtaku|Q2312868|qid=Q2312868}} was also excavated near the present site in the 4th year of {{ill|Taishō era|Q329174|qid=Q329174}} ({{ill|1915|Q2084|qid=Q2084}}), suggesting that a large settlement had already developed in this area as early as the {{ill|Yayoi period|Q207858|qid=Q207858}}. Furthermore, numerous {{ill|Kofun|ca|Kofun|cs|Kofun|da|Kofun|de|Kofun|eo|Kofun|es|Kofun|fa|کوفون|fi|Kofun|fr|Kofun|he|קופון (רוגם)|hr|Kofun (grobnica)|it|Kofun|ja|古墳|ko|고훈|my|ခိုဖွန်း|pl|Kofun (kurhan)|pt|Kofun|ru|Кофун (захоронение)|simple|Kofun|th|โคฟุง|tr|Kofun|uk|Кофун|zh|古墳|qid=Q1141225}} are distributed around the foothills of Mount Ōyama, indicating that development progressed from the Yayoi period onward<ref name="調査報告"/>. During the {{ill|Meiji era|lt=Meiji period|qid=Q3125096}}, the shrine’s {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} was that of a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+
+=== Subsidiary and branch shrines ===
+* Tonomiya Shrine – Enshrines {{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}} and stands as a subsidiary shrine of the same scale immediately east of the main shrine’s main hall. The alternative name “Tonomiya” of this shrine refers to this.
+
+In addition, there are several {{ill|Massha|Q135009906|qid=Q135009906}} nearby, including Shingū Shrine, Tsurugi Shrine, and Yamagami Shrine.
+
+=== Notes ===
+{{reflist}}
+
+=== References ===
+*Akiyama Yasushi, “Kagaehime Shrine” (in *Survey Reports on Engishiki Shrines*, Vol. 23, Nankaidō, published by {{ill|UNKNOWN|lt=Kōgakkan University Press}}, 1987)
+
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Ashiinaba Shrine]][[Category:Shikinaisha|Ashiinaba Shrine]][[Category:Shikinai Ronsha]]
+[[Category:Kokuhei-sha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+[[Category:Kokushi genzaisha]]
+[[Category:徳島県の旧村社]]
+[[Category:上板町の建築物]]
+[[Category:上板町の歴史]]
+[[Category:Kokushi genzaisha]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+
+[[Category:Git synced pages]]

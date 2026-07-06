@@ -1,0 +1,72 @@
+{{Expand Japanese|伊笠神社}}
+
+{{Infobox religious building
+| name = Igasa Shrine
+| native_name = 伊笠神社
+| image = Igasa shrine, Tokushima.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Igasa Shrine
+| coordinates = {{coord|34.13666666666666|134.24661111111112}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Igasa Shrine'''|伊笠神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
+[[ja:伊笠神社]]
+
+{{wikidata link|Q48758379|ja|伊笠神社|grok=none|check_date=2026-05-29}}
+
+== Japanese content ==
+{{Shrine
+|Name= Igasa Shrine
+|Image= [[File:Igasa shrine, Tokushima.jpg|250px|Igasa Shrine (Awa City)]]<br />Haiden (worship hall)
+|Location= {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Awa, Tokushima|Q791587|qid=Q791587}}{{ill|Ichiba-chō Inuhaka|Q55523676|qid=Q55523676}} Aza Shirouzu, Igasa-yamaue 194
+|Coordinates= {{WikidataCoord}}
+|Enshrined deity= {{ill|Ame-no-Oshikumone|Q91088537|qid=Q91088537|lt=Ame no Futakami no Mikoto}}
+|Shrine rank= {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}・former {{ill|Son-sha|ja|村社|qid=Q134917284}}
+|Founded= {{ill|1655|Q6975|qid=Q6975}} ({{ill|Jōō (Edo period)|Q1145081|qid=Q1145081}} 3rd year, {{ill|September 13 (Lunisolar)|Q840131|qid=Q840131|lt=September 13}})
+|Main hall=
+|Other name= Igasa Shrine
+|Annual festival= {{ill|October 16|Q2963|qid=Q2963}}
+|Rituals=
+|Map= {{Location map|Japan Tokushima|label=Igasa Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Igasa Shrine''' (いがさじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Tokushima Prefecture|Q160734|qid=Q160734}}{{ill|Awa, Tokushima|Q791587|qid=Q791587}}{{ill|Ichiba-chō Inuhaka|Q55523676|qid=Q55523676}}. It is one of the candidate shrines (ronsha) for {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}・{{ill|Takefutsu Shrine|Q48758365|qid=Q48758365}}.
+
+=== History ===
+It is enshrined on the summit of {{ill|Mount Igasa|Q60997765|qid=Q60997765}}, the highest peak of the former {{ill|Ichiba, Tokushima|Q5986083|qid=Q5986083|lt=Ichiba Town}}.
+
+Founded in {{ill|1655|Q6975|qid=Q6975}} ({{ill|Jōō (Edo period)|Q1145081|qid=Q1145081}} 3rd year, {{ill|September 13 (Lunisolar)|Q840131|qid=Q840131|lt=September 13}}). It was later restored in {{ill|1729|Q6952|qid=Q6952}} ({{ill|Kyōhō|de|Kyōhō|es|Kyōhō|fa|کیوهو|fr|Ère Kyōhō|ja|享保|ko|교호|ru|Кёхо|simple|Kyōhō|sr|Кјохо|sv|Kyōhō|tr|Kyōhō|zh|享保|qid=Q1145048}} 14th year). One theory says that it enshrines a branch of the {{ill|Nitta clan|Q2274150|qid=Q2274150}}.
+
+The enshrined deity, Ame no Futakami no Mikoto, is considered another name for {{ill|Ame-no-Oshikumone|Q91088537|qid=Q91088537|lt=Ame no Murakumo no Mikoto}}, but according to the “Heisei Festival Data” published by {{ill|Association of Shinto Shrines|Q908077|qid=Q908077}}, it is enshrined only at Igasa Shrine.
+
+=== Enshrined deity ===
+* {{ill|Ame-no-Oshikumone|Q91088537|qid=Q91088537|lt=Ame no Futakami no Mikoto}}
+
+=== Access ===
+* From the {{ill|Tokushima Expressway|Q11490216|qid=Q11490216}} “{{ill|Donari interchange|Q10927770|qid=Q10927770}},” via {{ill|Japan National Route 318|Q6157220|qid=Q6157220}} and {{ill|Tokushima Prefectural Road Route 139|Q11490019|qid=Q11490019}}.
+
+=== References ===
+* 『{{ill|Kadokawa Nihon Chimei Daijiten|Q4093011|qid=Q4093011}} 36 Tokushima Prefecture』 ({{ill|1986|Q2430|qid=Q2430}} ISBN 4040013603)
+
+=== Notes ===
+{{Reflist}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Igasa Shrine]][[Category:Shikinaisha|Igasa Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:Shinto shrines in Tokushima Prefecture]]
+[[Category:阿波市の歴史]]
+[[Category:阿波市の建築物]]
+[[Category:Shikinaisha in Awa Province (Tokushima)]]
+[[Category:徳島県の旧村社]]
+
+[[Category:Git synced pages]]

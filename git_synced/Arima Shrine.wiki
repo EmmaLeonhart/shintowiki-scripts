@@ -1,0 +1,160 @@
+{{Expand Japanese|有間神社}}
+
+{{Infobox religious building
+| name = Arima Shrine
+| native_name = 有間神社
+| image = Arimaphoto.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Arima Shrine
+| coordinates = {{coord|34.814182|135.21928}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ame-no-Minakanushi|lt=Ame-no-Minakanushi|en|Ame-no-Minakanushi|es|Ame-no-minaka-nushi-no-kami|fa|آمه-نو-میناکانوشی|fr|Ame-no-Minakanushi|id|Ame-no-Minakanushi|it|Ame-no-Minakanushi|ja|天之御中主神|mni|ꯑꯃꯦ-ꯅꯣ-ꯃꯤꯅꯀꯅꯨꯁꯤ|pl|Amenominakanushi|ru|Амэноминакануси|simple|Ame-no-Minakanushi|uz|Ame-no Minakanusi|zh|天之御中主神|qid=Q2842779}}
+}}
+
+{{nihongo|'''Arima Shrine'''|有間神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
+[[ja:有間神社]]
+
+{{wikidata link|Q11516720|ja|有間神社|grok=none|check_date=2026-05-28}}
+
+== Japanese content ==
+{{Shrine
+|Name = Arima Shrine
+|Image = [[File:Arimaphoto.jpg|270px|Arima Shrine (August 1, 2012)]]<br />Haiden (worship hall)
+|Location = {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Kobe|Q48320|qid=Q48320}}{{ill|Kita-ku, Kobe|Q1078814|qid=Q1078814|lt=Kita Ward}}{{ill|UNKNOWN|lt=Arino-chō}}{{ill|UNKNOWN|lt=Arino}} 4435
+|Coordinates = {{WikidataCoord}}
+|Enshrined Deities = {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Ōkami}}<br/>{{ill|Sukunabikona|Q3275687|qid=Q3275687|lt=Sukunahikona-no-Ōkami}}<br/>{{ill|Ame-no-Minakanushi|Q2842779|qid=Q2842779|lt=Ame-no-Minakanushi-no-Ōkami}}<br/>{{ill|Kotoshironushi-no-Mikoto|lt=Kotoshironushi|Q8009611|qid=Q8009611|qid=Q8009611|lt=Kotoshironushi-no-Ōkami}}
+|Shrine Rank = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}<br/>Former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+|Founded = Unknown
+|Main Hall = {{ill|Nagare-zukuri|Q210684|qid=Q210684|lt=Three-bay nagare-zukuri}}
+|Alternate Names = Sannō-gū<br/>Arima Sōsha<br/>Arima-sha
+|Annual Festival = {{ill|UNKNOWN|lt=Second Monday of October}}
+|Rituals = 
+|Map = {{Location map|Kobe|label=Arima Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
+}}
+'''Arima Shrine''' (ありまじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Arino-chō, Kita Ward, Kobe City, Hyōgo Prefecture. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking}} it was classified as a {{ill|Gō-sha|Q134917316|qid=Q134917316}}. Its shrine crest is the “{{ill|Tomoe|Q1557435|qid=Q1557435|lt=triple tomoe}}.”
+
+=== Enshrined deities ===
+* '''{{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Ōkami}}''' (おおなむちのおおかみ)
+* '''{{ill|Sukunabikona|Q3275687|qid=Q3275687|lt=Sukunahikona-no-Ōkami}}''' (すくなひこなのおおかみ)
+* '''{{ill|Ame-no-Minakanushi|Q2842779|qid=Q2842779|lt=Ame-no-Minakanushi-no-Ōkami}}''' (あめのみなかぬしのおおかみ) – Enshrined in {{ill|969|Q23708|qid=Q23708}} (1st year of {{ill|Anna (era)|Q1373003|qid=Q1373003}}).
+* '''{{ill|Kotoshironushi-no-Mikoto|lt=Kotoshironushi|Q8009611|qid=Q8009611|qid=Q8009611|lt=Kotoshironushi-no-Ōkami}}''' (ことしろぬしのおおかみ) – Enshrined in {{ill|1935|Q18658|qid=Q18658}} (10th year of {{ill|Shōwa era|Q327567|qid=Q327567}}) from {{ill|Miho Shrine|Q3313076|qid=Q3313076}}.
+
+=== Name ===
+The origin of the shrine’s name is unclear, but “Arima” is considered an older spelling of “Arima.” According to the history of Arino Village, “ari” means mountain, and “arima” refers to an open place among mountains. It is also unclear when the place-name “Arima” came to be written as such. Because the shrine was once located in Sannō Valley before its relocation, it is said to have formerly been called '''Sannō-gū'''.
+
+=== History ===
+In ancient times, the shrine was enshrined in Sannō Valley of Narae Village in Yamaguchi Manor (Arima District). The date of foundation is unknown, but according to shrine tradition, the earliest record is that {{ill|Emperor Jomei|Q329761|qid=Q329761}} visited and worshiped here in September {{ill|631|Q31577|qid=Q31577}} (3rd year of Emperor Shōmu) when he traveled to {{ill|Arima Onsen|Q4790673|qid=Q4790673}}. It is believed that the shrine existed even before that.
+
+In {{ill|715|Q23528|qid=Q23528}} (1st year of {{ill|Reiki (era)|Q1373115|qid=Q1373115}}), a massive flood from {{ill|Mount Rokkō|Q462120|qid=Q462120}} caused the {{ill|UNKNOWN|lt=Arima River}} to overflow, washing away the shrine buildings. By divine oracle, the shrine was relocated to Nishio Village in {{ill|Arino|Q18700240|qid=Q18700240|lt=Arino Manor}}. A temporary shrine was established until construction was completed; the place where the sacred object was temporarily enshrined later became {{ill|UNKNOWN|lt=Tao Shrine}}. Additionally, {{ill|UNKNOWN|lt=Okaba Wakamiya Shrine}} was built at the site that served as the temporary resting place (otabisho) during the relocation.
+
+During the {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} era, when the {{ill|Siege of Miki|Q11242477|qid=Q11242477}} occurred, the shrine buildings were damaged by warfare because the shrine priest, of the {{ill|Takeda clan|ar|عشيرة تاكيدا|ca|Clan Takeda|cs|Klan Takeda|de|Takeda (Klan)|eo|Takeda (klano)|es|Clan Takeda|eu|Takeda klana|fa|خاندان تاکدا|fr|Clan Takeda|glk|تاكدا كوگا|hu|Takeda-ház|id|Klan Takeda|it|Clan Takeda|ja|武田氏|ko|다케다씨|mk|Такеда (клан)|nl|Takeda (familie)|no|Takeda-klanen|pl|Takeda (ród)|pt|Clã Takeda|ru|Такэда|sr|Клан Такеда|th|ตระกูลทาเกดะ|tr|Takeda boyu|uk|Рід Такеда|zh|武田氏|qid=Q1210114}}, was related by marriage to the {{ill|Bessho clan|Q2975222|qid=Q2975222}}, lords of {{ill|Miki Castle|Q11242473|qid=Q11242473}}.
+
+In the Edo period, the shrine received donations from the lords of the {{ill|Sanda Domain|Q10863363|qid=Q10863363}} such as {{ill|Kuki Takakuni|Q11370504|qid=Q11370504}}, and later from the {{ill|Okabe Domain|Q10863332|qid=Q10863332}} of {{ill|Musashi Province|Q907398|qid=Q907398|lt=Bushū}}, who became local rulers. Until the {{ill|Shinbutsu bunri|Q1970535|qid=Q1970535|lt=separation of Shinto and Buddhism}}, the adjacent “Sannōzan Jingū-ji” stood nearby, and the shrine was known as Sannō Gongen. The former temple site is now a parking lot, and the statue of {{ill|Acala|Q337624|qid=Q337624}} that stood within the precincts is enshrined as a subsidiary shrine.
+
+As the general guardian shrine of {{ill|Settsu Province|Q864163|qid=Q864163}}’s {{ill|Arima district|Q11516836|qid=Q11516836}}, it attracted widespread devotion. Because the old name Sannō-gū is associated with “ubuno-o” (the umbilical cord), it was worshiped as a deity of safe childbirth. At the otabisho there is a “Koyasu Stone,” where pregnant women prayed for safe delivery, and after childbirth, mother and child were said to purify themselves in the river flowing before the shrine. It is also said that prayers were offered at the shrine for the healthy growth of newborns, and thus the shrine is revered as a guardian of children.
+
+The shrine grove (chinju no mori) covers approximately 28,000 square meters and has been selected as one of the {{ill|Hyōgo’s 100 Selected Forests|Q11276623|qid=Q11276623}}. Of this, about 7,000 square meters of a grove of {{ill|Castanopsis|Q1065400|qid=Q1065400|lt=shii}} trees has been designated both as an environmental green conservation area by Hyōgo Prefecture and as a natural monument by Kobe City.
+
+=== Chronology ===
+* Date unknown – Founded in Narae Village of {{ill|Yamaguchi|Q11466901|qid=Q11466901|lt=Yamaguchi Manor}}.
+* September {{ill|631|Q31577|qid=Q31577}} (3rd year of {{ill|Emperor Jomei|Q329761|qid=Q329761}}) – Imperial visit.
+* October {{ill|647|Q31111|qid=Q31111}} (3rd year of {{ill|Taika (era)|Q1077930|qid=Q1077930}}) – Visit by {{ill|Emperor Kōtoku|Q317980|qid=Q317980}}.
+* {{ill|715|Q23528|qid=Q23528}} (1st year of {{ill|Reiki (era)|Q1373115|qid=Q1373115}}) – Relocated to the current site by divine oracle.
+* {{ill|851|Q29966|qid=Q29966}} (1st year of {{ill|Ninju|Q1373077|qid=Q1373077}}) – Granted Senior Sixth Rank, Upper.
+* April {{ill|852|Q30383|qid=Q30383}} (Ninju 2) – Offerings presented by the imperial court.
+* December {{ill|854|Q24981|qid=Q24981}} (1st year of {{ill|Saikō|Q1324664|qid=Q1324664}}) – Offerings presented by the imperial court.
+* February {{ill|859|Q23897|qid=Q23897}} (1st year of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}}) – Shrine buildings repaired; offerings and a fire-pacifying ritual conducted in April.
+* {{ill|869|Q23917|qid=Q23917}} (Jōgan 11) – Prayers and offerings for the prevention of pirates, storms, floods, and earthquakes.
+* December {{ill|871|Q24754|qid=Q24754}} (Jōgan 13) – Repairs and offerings due to a great epidemic.
+* November {{ill|893|Q24762|qid=Q24762}} (5th year of {{ill|Kanpyō (era)|Q1346292|qid=Q1346292}}) – Granted First Rank.
+* {{ill|927|Q30470|qid=Q30470}} (5th year of {{ill|Enchō|Q1327274|qid=Q1327274|lt=Engi}}) – Listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}.
+* {{ill|969|Q23708|qid=Q23708}} (1st year of {{ill|Anna (era)|Q1373003|qid=Q1373003}}) – Ame-no-Minakanushi-no-Ōkami enshrined.
+* {{ill|1580|ab|1580|af|1580|als|1580|am|1580 እ.ኤ.አ.|an|1580|ar|1580|ary|1580|arz|1580|ast|1580|avk|1580|ay|1580|az|1580|azb|۱۵۸۰ (میلادی)|ban|1580|bar|1580|bcl|1580|be|1580|be_x_old|1580|bg|1580|bn|১৫৮০|bpy|মারি ১৫৮০|br|1580|bs|1580.|ca|1580|cdo|1580 nièng|ceb|1580|ckb|١٥٨٠|crh|1580|cs|1580|cv|1580|cy|1580|da|1580|de|1580|diq|1580|el|1580|eml|1580|eo|1580|es|1580|et|1580|eu|1580|fa|۱۵۸۰ (میلادی)|fi|1580|fo|1580|fr|1580|frr|1580|fur|1580|fy|1580|ga|1580|gan|1580年|gcr|1580|gd|1580|gl|1580|gv|1580|he|1580|hi|१५८०|hr|1580.|hsb|1580|ht|1580 (almanak jilyen)|hu|1580|hy|1580|hyw|1580 թուական|ia|1580|id|1580|ilo|1580|io|1580|is|1580|it|1580|ja|1580年|jv|1580|ka|1580|kaa|1580|kk|1580 жыл|ko|1580년|krc|1580 джыл|la|1580|lb|1580|lij|1580|lmo|1580|lt|1580 m.|lv|1580. gads|mai|१५८०|map_bms|1580|mdf|1580|mg|1580|mhr|1580|mi|1580|min|1580|mk|1580|mr|इ.स. १५८०|mrj|1580 и|ms|1580|my|၁၅၈၀|myv|1580 ие|mzn|۱۵۸۰|nah|1580|nap|1580|nds|1580|new|सन् १५८०|nl|1580|nn|1580|no|1580|nrm|1580|nso|1580|oc|1580|or|୧୫୮୦|os|1580-æм аз|pa|1580|pl|1580|pnb|1580|pt|1580|qu|1580|ro|1580|ru|1580 год|rue|1580|sa|१५८०|sah|1580|sc|1580|scn|1580|sd|1580ع|se|1580|sh|1580.|shn|1580|simple|1580|sk|1580|sl|1580|smn|1580|sq|1580|sr|1580|su|1580|sv|1580|sw|1580|ta|1580|tg|Соли 1580|th|พ.ศ. 2123|tk|1580|tl|1580|tly|1580|tr|1580|tt|1580 ел|uk|1580|ur|1580ء|uz|1580|vec|1580|vi|1580|vls|1580|wa|1580|war|1580|wuu|1580年|xmf|1580|yi|1580|zh|1580年|zh_min_nan|1580 nî|zh_yue|1580年|qid=Q6712}} (8th year of {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}}) – Shrine buildings burned during the {{ill|Siege of Miki|Q11242477|qid=Q11242477}}.
+* {{ill|1622|ab|1622|af|1622|als|1622|am|1622 እ.ኤ.አ.|an|1622|ar|1622|ary|1622|arz|1622|ast|1622|avk|1622|az|1622|azb|۱۶۲۲ (میلادی)|ban|1622|bcl|1622|be|1622|be_x_old|1622|bg|1622|bn|১৬২২|bpy|মারি ১৬২২|br|1622|bs|1622.|ca|1622|cdo|1622 nièng|ce|1622 шо|ceb|1622|ckb|١٦٢٢|crh|1622|cs|1622|cv|1622|cy|1622|da|1622|de|1622|diq|1622|el|1622|eml|1622|eo|1622|es|1622|et|1622|eu|1622|fa|۱۶۲۲ (میلادی)|fi|1622|fo|1622|fr|1622|frp|1622|frr|1622|fur|1622|fy|1622|ga|1622|gan|1622年|gcr|1622|gd|1622|gl|1622|gv|1622|he|1622|hi|१६२२|hr|1622.|ht|1622 (almanak gregoryen)|hu|1622|hy|1622|hyw|1622 թուական|ia|1622|id|1622|ilo|1622|io|1622|is|1622|it|1622|ja|1622年|jv|1622|ka|1622|kaa|1622|kk|1622 жыл|kn|೧೬೨೨|ko|1622년|krc|1622 джыл|ksh|Joohr 1622|la|1622|lb|1622|lez|1622 йис|li|1622|lij|1622|lmo|1622|lt|1622 m.|lv|1622. gads|mai|१६२२|map_bms|1622|mdf|1622|mg|1622|mhr|1622|mi|1622|mk|1622|mn|1622 он|mr|इ.स. १६२२|mrj|1622 и|ms|1622|my|၁၆၂၂|myv|1622 ие|mzn|۱۶۲۲|nah|1622|nap|1622|nds|1622|new|सन् १६२२|nl|1622|nn|1622|no|1622|nrm|1622|nso|1622|oc|1622|olo|1622|or|୧୬୨୨|os|1622-æм аз|pa|1622|pl|1622|pnb|1622|pt|1622|qu|1622|ro|1622|ru|1622 год|rue|1622|sa|१६२२|sah|1622|scn|1622|sd|1622ع|se|1622|sh|1622.|shn|1622|simple|1622|sk|1622|sl|1622|smn|1622|sq|1622|sr|1622|stq|1622|su|1622|sv|1622|sw|1622|szl|1622|ta|1622|tg|Соли 1622|th|พ.ศ. 2165|tk|1622|tl|1622|tly|1622|tr|1622|tt|1622 ел|uk|1622|ur|1622ء|uz|1622|vec|1622|vi|1622|vls|1622|wa|1622|war|1622|wuu|1622年|xmf|1622|yi|1622|zh|1622年|zh_min_nan|1622 nî|zh_yue|1622年|qid=Q6815}} (8th year of {{ill|Genna|de|Genna (Ära)|es|Genna|fa|گننا|fr|Ère Genna|id|Genna|it|Genna|ja|元和 (日本)|ko|겐나|ru|Гэнна|simple|Genna|sr|Гена|sv|Genna|tr|Genna|zh|元和 (日本)|qid=Q635245|lt=Genna}}) – Shrine buildings destroyed by fire.
+* {{ill|1649|ab|1649|af|1649|als|1649|am|1649 እ.ኤ.አ.|an|1649|ar|1649|ary|1649|arz|1649|ast|1649|avk|1649|az|1649|azb|۱۶۴۹ (میلادی)|ban|1649|bcl|1649|be|1649|be_x_old|1649|bg|1649|bn|১৬৪৯|bpy|মারি ১৬৪৯|br|1649|bs|1649.|ca|1649|cdo|1649 nièng|ceb|1649|ckb|١٦٤٩|crh|1649|cs|1649|cv|1649|cy|1649|da|1649|de|1649|diq|1649|el|1649|eml|1649|eo|1649|es|1649|et|1649|eu|1649|fa|۱۶۴۹ (میلادی)|fi|1649|fo|1649|fr|1649|frp|1649|frr|1649|fur|1649|fy|1649|ga|1649|gan|1649年|gcr|1649|gd|1649|gl|1649|gv|1649|he|1649|hi|१६४९|hr|1649.|ht|1649 (almanak gregoryen)|hu|1649|hy|1649|hyw|1649 թուական|ia|1649|id|1649|ilo|1649|io|1649|is|1649|it|1649|ja|1649年|jv|1649|ka|1649|kaa|1649|kk|1649 жыл|kn|೧೬೪೯|ko|1649년|krc|1649 джыл|la|1649|lb|1649|lez|1649 йис|li|1649|lij|1649|lmo|1649|lt|1649 m.|lv|1649. gads|mai|१६४९|map_bms|1649|mdf|1649|mg|1649|mhr|1649|mi|1649|mk|1649|ml|1649|mr|इ.स. १६४९|mrj|1649 и|ms|1649|my|၁၆၄၉|mzn|۱۶۴۹|nah|1649|nap|1649|nds|1649|new|सन् १६४९|nl|1649|nn|1649|no|1649|nrm|1649|nso|1649|oc|1649|olo|1649|or|୧୬୪୯|os|1649-æм аз|pl|1649|pnb|1649|pt|1649|qu|1649|ro|1649|ru|1649 год|rue|1649|sa|१६४९|sah|1649|scn|1649|sd|1649ع|se|1649|sh|1649.|shn|1649|simple|1649|sk|1649|sl|1649|smn|1649|sq|1649|sr|1649|su|1649|sv|1649|sw|1649|szl|1649|ta|1649|tg|Соли 1649|th|พ.ศ. 2192|tk|1649|tl|1649|tly|1649|tr|1649|tt|1649 ел|uk|1649|ur|1649ء|uz|1649|vec|1649|vi|1649|vls|1649|wa|1649|war|1649|wuu|1649年|xmf|1649|yi|1649|zh|1649年|zh_min_nan|1649 nî|zh_yue|1649年|qid=Q6945}} (2nd year of {{ill|Keian|fa|کی‌آن|fr|Ère Keian|ja|慶安|ko|게이안|ru|Кэйан|simple|Keian|sr|Кеиан|sv|Keian|th|เคอัง|tr|Keian|zh|慶安 (日本)|qid=Q1146135}}) – {{ill|Abe Nobumori|ja|安部信盛|ko|안베 노부모리|qid=Q11451596}}, lord of the {{ill|Okabe Domain|Q10863332|qid=Q10863332}} in {{ill|Musashi Province|Q907398|qid=Q907398|lt=Bushū}}, becomes ruler of {{ill|Arino|Q18700240|qid=Q18700240|lt=Arino Manor}}; thereafter the shrine serves as a place of prayer for the domain and receives three koku of brown rice annually.
+* {{ill|1736|ab|1736|af|1736|als|1736|am|1736 እ.ኤ.አ.|an|1736|ar|1736|ary|1736|arz|1736|ast|1736|avk|1736|az|1736|azb|۱۷۳۶ (میلادی)|ba|1736 йыл|ban|1736|bar|1736|bcl|1736|be|1736|be_x_old|1736|bg|1736|bn|১৭৩৬|bo|༡༧༣༦ལོ།|bpy|মারি ১৭৩৬|br|1736|bs|1736.|ca|1736|cdo|1736 nièng|ce|1736 шо|ceb|1736|ckb|١٧٣٦|crh|1736|cs|1736|csb|1736|cv|1736|cy|1736|da|1736|de|1736|diq|1736|el|1736|eml|1736|eo|1736|es|1736|et|1736|eu|1736|fa|۱۷۳۶ (میلادی)|fi|1736|fo|1736|fr|1736|frp|1736|frr|1736|fur|1736|fy|1736|ga|1736|gan|1736年|gcr|1736|gd|1736|gl|1736|gv|1736|he|1736|hi|१७३६|hif|1736|hr|1736.|hsb|1736|ht|1736 (almanak gregoryen)|hu|1736|hy|1736|hyw|1736 թուական|ia|1736|id|1736|ilo|1736|io|1736|is|1736|it|1736|ja|1736年|jv|1736|ka|1736|kaa|1736|kk|1736 жыл|kn|೧೭೩೬|ko|1736년|krc|1736 джыл|la|1736|lb|1736|lez|1736 йис|li|1736|lij|1736|lmo|1736|lt|1736 m.|lv|1736. gads|mai|१७३६|map_bms|1736|mdf|1736|mg|1736|mhr|1736|mi|1736|min|1736|mk|1736|mr|इ.स. १७३६|mrj|1736 и|ms|1736|my|၁၇၃၆|myv|1736 ие|mzn|۱۷۳۶|nah|1736|nap|1736|nds|1736|nds_nl|1736|new|सन् १७३६|nl|1736|nn|1736|no|1736|nrm|1736|nso|1736|oc|1736|olo|1736|or|୧୭୩୬|os|1736-æм аз|pa|1736|pl|1736|pnb|1736|pt|1736|qu|1736|ro|1736|ru|1736 год|rue|1736|sa|१७३६|sah|1736|scn|1736|sd|1736ع|se|1736|sh|1736.|shn|1736|si|1736|simple|1736|sk|1736|sl|1736|smn|1736|sq|1736|sr|1736|su|1736|sv|1736|sw|1736|szl|1736|ta|1736|te|1736|tg|Соли 1736|th|พ.ศ. 2279|tk|1736|tl|1736|tr|1736|tt|1736 ел|uk|1736|ur|1736ء|uz|1736|vec|1736|vi|1736|vls|1736|wa|1736|war|1736|wuu|1736年|xmf|1736|yi|1736|zh|1736年|zh_min_nan|1736 nî|zh_yue|1736年|qid=Q6989}} (1st year of {{ill|Genbun|de|Genbun|fa|گنبون|fr|Ère Genbun|ja|元文|ko|겐분|ru|Гэмбун|simple|Genbun|sr|Генбун|sv|Genbun|tr|Genbun|zh|元文 (日本)|qid=Q1145754}}) – {{ill|Namikawa Seisho|ja|並河誠所|qid=Q6563872}} erects the shrine-name stone “Arima-sha” with permission from {{ill|Jisha-bugyō|fa|جیشا بوگیو|ff|Jisha-bugyō|fr|Jisha-bugyō|it|Jisha-bugyō|ja|寺社奉行|ko|지사부교|pt|Jisha-bugyō|zh|寺社奉行|qid=Q1036279}} {{ill|Ōoka Tadasuke|Q1054143|qid=Q1054143}} (donor: the 9th shogun {{ill|Tokugawa Ieshige|Q323443|qid=Q323443}}).
+* {{ill|1789|Q7772|qid=Q7772}} (1st year of {{ill|Kansei|Q1195131|qid=Q1195131}}) – Shrine buildings destroyed by fire.
+* {{ill|1796|Q7818|qid=Q7818}} (Kansei 8) – Current main hall completed.
+* May {{ill|1849|Q7650|qid=Q7650}} (2nd year of {{ill|Kaei|Q1146125|qid=Q1146125}}) – The imperial court bestows a fan in a willow box, vermilion lanterns with the imperial crest, and one kuroki torii.
+* {{ill|1869|Q7720|qid=Q7720}} (2nd year of {{ill|Meiji era|Q3125096|qid=Q3125096}}) – The shrine temple is abolished due to the {{ill|Shinbutsu bunri|Q1970535|qid=Q1970535|lt=separation of Shinto and Buddhism}}.
+* November {{ill|1872|Q7753|qid=Q7753}} (Meiji 5) – Designated a {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+* {{ill|1935|Q18658|qid=Q18658}} (10th year of {{ill|Shōwa era|Q327567|qid=Q327567}}) – Kotoshironushi-no-Ōkami enshrined from {{ill|Miho Shrine|Q3313076|qid=Q3313076}}.
+* {{ill|1999|Q2091|qid=Q2091}} ({{ill|Heisei era|Q234510|qid=Q234510}} 11) {{ill|February 24|Q2355|qid=Q2355}} – About 7,000 square meters of the shrine grove designated a natural monument of Kobe City.
+* {{ill|2011|Q1994|qid=Q1994}} (Heisei 23) {{ill|June 7|Q2616|qid=Q2616}} – The shrine office is completely destroyed by fire.
+* {{ill|2012|Q1990|qid=Q1990}} (Heisei 24) {{ill|June 24|Q2665|qid=Q2665}} – The shrine office is rebuilt.
+* {{ill|2015|Q2002|qid=Q2002}} (Heisei 27) – Marks the 1,300th anniversary of the relocation.
+
+=== Shrine buildings ===
+=== Main hall and worship hall ===
+The current {{ill|Shinto architecture|Q3080012|qid=Q3080012|lt=honden}} was rebuilt in 1796 and is of the {{ill|Nagare-zukuri|Q210684|qid=Q210684|lt=three-bay nagare-zukuri}} style. Formerly only the main hall and {{ill|Shinto architecture|Q3080012|qid=Q3080012|lt=heiden}} existed, but after World War II a reinforced-concrete {{ill|Shinto architecture|Q3080012|qid=Q3080012|lt=haiden}} was newly constructed.
+
+The kuroki torii standing before the worship hall was originally used for {{ill|Emperor Kōmei|Q299179|qid=Q299179}}’s {{ill|Daijosai|Q11433653|qid=Q11433653}} and was bestowed in {{ill|1849|Q7650|qid=Q7650}}; after it decayed, it was rebuilt in concrete.
+
+=== Subsidiary shrines within the precincts ===
+* Kubomori Shrine ({{ill|Amaterasu|Q455602|qid=Q455602}})
+* Sarutahiko Shrine ({{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037|lt=Sarutahiko Ōkami}}) – Enshrined in 1900
+* Tenjin Shrine ({{ill|Sugawara no Michizane|ar|سوغاوارا نو ميتشيزانه|br|Sugawara no Michizane|ckb|سوگاوارا نۆ میچیزانێ|de|Sugawara no Michizane|es|Sugawara no Michizane|fa|سوگاوارا نو میچی‌زانه|fi|Sugawara no Michizane|fr|Sugawara no Michizane|id|Sugawara no Michizane|it|Sugawara no Michizane|ja|菅原道真|kk|Сугавара но Митидзане|ko|스가와라노 미치자네|la|Sugawara no Michizane|ms|Sugawara no Michizane|nl|Sugawara no Michizane|nn|Sugawara no Michizane|pl|Michizane Sugawara|pt|Sugawara no Michizane|ru|Сугавара-но Митидзанэ|sh|Sugawara no Michizane|sv|Sugawara no Michizane|th|สึกาวาระ โนะ มิจิซาเนะ|tr|Sugawara no Michizane|uk|Суґавара но Мітідзане|zh|菅原道真|zh_classical|菅原道真|zh_min_nan|Sugawara no Mitizane|qid=Q382005}})
+* Hachiman Shrine ({{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997}})
+* Inari Shrine ({{ill|Inari Ōkami|Q719665|qid=Q719665|lt=Inari Daimyōjin}} (Tenkō Iwakō Daimyōjin; Tenjō Seishun Daimyōjin))
+* Bushin Shrine ({{ill|UNKNOWN|lt=Bushin Ōkami}})
+* Okutsu Shrine ({{ill|Kitchen God|Q249178|qid=Q249178|lt=Okutsuhiko-no-Kami and Okutsuhime-no-Kami}})
+* Kuninotokotachi-no-Mikoto Shrine ({{ill|Kuni-no-Tokotachi|Q478504|qid=Q478504}})
+* Kuroo Shrine ({{ill|UNKNOWN|lt=Kuroo Ōkami}}) – Guardian deity
+* {{ill|Acala|Q337624|qid=Q337624}} – Former Buddhist image from the shrine temple
+
+=== Festivals and annual events ===
+* Hatsu-Ebisu (January {{ill|January 9|Q2238|qid=Q2238|lt=9}}–{{ill|January 11|Q2247|qid=Q2247|lt=11}})
+* Yakuyoke Festival (Weekend closest to {{ill|January 18|Q2265|qid=Q2265}}–{{ill|January 19|Q2266|qid=Q2266|lt=19}})
+* Kinensai ({{ill|April 23|Q2527|qid=Q2527}})
+* Summer Purification ({{ill|June 30|Q2657|qid=Q2657}})
+* Annual Festival ({{ill|UNKNOWN|lt=Second Monday of October}})
+* {{ill|Niiname-no-Matsuri|Q11501518|qid=Q11501518}} ({{ill|November 23|Q3021|qid=Q3021}})
+
+=== Cultural properties ===
+=== Natural monument (designated by Kobe City) ===
+* Shrine grove ({{ill|Chinju no Mori|Q11651158|qid=Q11651158}}; approx. 7,000 m²) – Grove of {{ill|Castanopsis|Q1065400|qid=Q1065400|lt=shii}} trees; designated an environmental green conservation area by Hyōgo Prefecture.
+
+=== Access ===
+* 10-minute walk from {{ill|Shintetsu Sanda Line|Q6800409|qid=Q6800409}} {{ill|Okaba Station|Q7081708|qid=Q7081708}}
+
+=== Notes ===
+{{Reflist}}
+
+=== References ===
+* [{{NDLDC|1174068}} Arima District Council, Arima District Gazette, Vol. 1 – Modern Digital Library]
+* [{{NDLDC|1174089}} Arima District Council, Arima District Gazette, Vol. 2 – Modern Digital Library]
+* *History of Arino Village*, Arino Village, 1948
+
+=== See also ===
+* {{ill|Yusen Shrine|Q11563671|qid=Q11563671}}
+* {{ill|Kuchi Shrine|Q11392062|qid=Q11392062}}
+
+=== External links ===
+* [http://arimajinja.com/ Official website of Arima Shrine]
+* [http://www.hyogo-jinjacho.com/data/6301114.html Hyōgo Prefecture Shrine Association – Arima Shrine]
+* [http://www.hyogo-jinjacho.com/data/6301122.html Hyōgo Prefecture Shrine Association – Tao Shrine]
+* [http://www.hyogo-jinjacho.com/data/6301121.html Hyōgo Prefecture Shrine Association – Okaba Wakamiya Shrine]
+
+{{shinto-stub}}{{Shinto sidebar}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Arima Shrine]][[Category:Shikinaisha|Arima Shrine]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Shinto shrines in Kobe]]
+[[Category:Former Gō-sha in Hyōgo Prefecture]]
+[[Category:神戸市北区の歴史]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Buildings and structures in Kita-ku, Kobe]]
+[[Category:江戸時代の建築]]
+[[Category:有野町]]
+[[Category:Pages with 50+ untranslated japanese characters]]
+[[Category:Edo period architecture]]
+
+[[Category:Git synced pages]]

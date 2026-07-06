@@ -1,0 +1,116 @@
+{{Expand Japanese|美多彌神社}}
+
+{{Infobox religious building
+| name = Mitami Shrine
+| native_name = 美多彌神社
+| image = Mitami-jinja2.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Mitami Shrine
+| coordinates = {{coord|34.475155|135.4856}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ame-no-Koyane|lt=Ame-no-Koyane|en|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508}}
+}}
+
+{{nihongo|'''Mitami Shrine'''|美多彌神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
+
+{{commons category|Category:Mitami-jinja}}
+[[EN:Mitami Shrine]]
+[[FR:Mitami-jinja]]
+
+{{wikidata link|Q276831|commons|Category:Mitami-jinja|en|Mitami Shrine|fr|Mitami-jinja|ja|美多彌神社|grok=none|check_date=2026-06-02}}
+
+== Japanese content ==
+{{神社
+ | 名称 = Mitami Shrine
+ | 画像 = [[File:Mitami-jinja2.jpg|270px]]<br />Torii and haiden
+ | 所在地 = {{ill|Osaka Prefecture|Q122723|qid=Q122723}}{{ill|Sakai|Q193428|qid=Q193428}}{{ill|Minami-ku, Sakai|Q1041996|qid=Q1041996|lt=Minami Ward}}Kamotani-dai 1-49-1
+ | 位置 = {{ウィキ座標2段度分秒|34|28|30|N|135|29|08|E|region:JP-27_type:landmark}}
+ | 祭神 = {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}
+ | 社格 = {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (small)<br/>former {{ill|Son-sha|Q134917284|qid=Q134917284}}
+ | 創建 = Unknown
+ | 本殿 = {{ill|East Asian hip-and-gable roof|Q855025|qid=Q855025}}
+ | 例祭 = First Sunday of October
+ | 神事 = {{ill|Yabusame|Q1886157|qid=Q1886157}} festival
+ | 地図 = {{Location map|Japan Osaka|lat_deg=34|lat_min=28|lat_sec=30|lon_deg=135|lon_min=29|lon_sec=8|label=Mitami Shrine|position=top|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20}}
+{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=13|frame-align=center|frame-width=200|coord={{coord|34|28|30|N|135|29|08|E}}}}
+}}
+'''Mitami Shrine''' (みたみじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Minami-ku, Sakai|Q1041996|qid=Q1041996|lt=Minami Ward}}, {{ill|Sakai|Q193428|qid=Q193428}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the former {{ill|Shakaku|Q10444029|qid=Q10444029}} system it was a {{ill|Son-sha|Q134917284|qid=Q134917284}}. The grove of {{ill|Lithocarpus glaber|Q149476|qid=Q149476}} in the precincts is selected as one of the {{ill|Ōsaka Midori no Hyakusen|Q11439936|qid=Q11439936}}.
+
+=== Enshrined deities ===
+* Principal deity - {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}
+* Jointly enshrined deities - {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}, {{ill|Ōmononushi|lt=Ōmononushi|Q10936701|qid=Q10936701}}-no-Mikoto, {{ill|Mikumari|Q11129547|qid=Q11129547|lt=Ame-no-Mikumari-no-Ōkami}}, {{ill|Ichikishima-hime|Q11059454|qid=Q11059454|qid=Q11059454|lt=Ichikishimahime-no-Mikoto}}, {{ill|Emperor Ōjin|Q317997|qid=Q317997|lt=Homuda-wake-no-Mikoto}}, {{ill|Sugawara no Michizane|ar|سوغاوارا نو ميتشيزانه|br|Sugawara no Michizane|ckb|سوگاوارا نۆ میچیزانێ|de|Sugawara no Michizane|es|Sugawara no Michizane|fa|سوگاوارا نو میچی‌زانه|fi|Sugawara no Michizane|fr|Sugawara no Michizane|id|Sugawara no Michizane|it|Sugawara no Michizane|ja|菅原道真|kk|Сугавара но Митидзане|ko|스가와라노 미치자네|la|Sugawara no Michizane|ms|Sugawara no Michizane|nl|Sugawara no Michizane|nn|Sugawara no Michizane|pl|Michizane Sugawara|pt|Sugawara no Michizane|ru|Сугавара-но Митидзанэ|sh|Sugawara no Michizane|sv|Sugawara no Michizane|th|สึกาวาระ โนะ มิจิซาเนะ|tr|Sugawara no Michizane|uk|Суґавара но Мітідзане|zh|菅原道真|zh_classical|菅原道真|zh_min_nan|Sugawara no Mitizane|qid=Q382005}}, {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Ōkami}}, {{ill|Ōkuninushi|Q276944|qid=Q276944}}-no-Mikoto
+
+=== History ===
+The exact founding date is unknown, but the name "Mitami Shrine" appears in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} completed in {{ill|Enchō|Q1327274|qid=Q1327274|lt=Engi}} 5 ({{ill|927|Q30470|qid=Q30470}})<ref name="About Mitami">[https://www.mitami-shrine.com/about/ Mitami Shrine homepage: About Mitami Shrine]</ref>.
+
+The origin of the shrine name is said to come from "Mitami no Atai" recorded in ''Shinsen Shōjiroku'' and the "Kamiwake entry of Izumi Province." It states that the Mitami no Atai clan were descendants of {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}, and that the reading of "mitami" is corrected as "mitami" written 美多彌<ref name="About Mitami"/>.
+
+In the era of {{ill|Emperor Go-Daigo|Q313942|qid=Q313942}} during the {{ill|Nanboku-chō period|Q264012|qid=Q264012}}, the shrine is said to have had an extensive precinct of 30,000 tsubo and magnificent buildings<ref name="About Mitami"/>. It was also revered as a guardian deity by {{ill|Kusunoki Masashige|Q382234|qid=Q382234}}.
+
+In the 1500s, the shrine-temple Tokusen-ji ({{ill|Jingū-ji|Q1074971|qid=Q1074971}}) was built in the precincts, and shrine priests and temple clerics managed shrine affairs. It is also said to have been protected by {{ill|Oda Nobunaga|Q171411|qid=Q171411}}, and thus adopted the Oda clan crest (five-leaf mokkō, {{ill|Mokkō mon|Q11519285|qid=Q11519285}}) as its shrine crest<ref name="Yuisyo">Mitami Shrine history text</ref>. However, in {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} 5 ({{ill|1577|Q6704|qid=Q6704}}), it was burned in war during Nobunaga's attack on Saika in Kii ({{ill|Battle of Kishuu|Q10855721|qid=Q10855721}}), together with nearby {{ill|Hōkō-ji|Q65269233|qid=Q65269233|lt=Hōkō-ji}}.
+
+In {{ill|Bunroku|Q1373039|qid=Q1373039}} 1 ({{ill|1592|Q6769|qid=Q6769}}), the honden was rebuilt by {{ill|UNKNOWN|lt=Wada Dōsan}} of the {{ill|Kusunoki clan|Q11541208|qid=Q11541208}}, and the shrine name was changed to Gozu Tennō-sha<ref name="About Yabusame">[https://www.mitami-shrine.com/yabusame/ Mitami Shrine homepage: About Yabusame]</ref>.
+
+During the {{ill|Meiji era|Q3125096|qid=Q3125096}} separation of Shinto and Buddhism ({{ill|Shinbutsu bunri|Q1970535|qid=Q1970535}}), Tokusen-ji was abolished and the shrine renamed Yasaka Shrine. It was ranked as a {{ill|Son-sha|Q134917284|qid=Q134917284}}. In {{ill|1907|Q2048|qid=Q2048}} (Meiji 40), five nearby village shrines and three unranked shrines were merged, and it was renamed Mitami Shrine as listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}.
+
+On March 29, {{ill|2014|Q1999|qid=Q1999}} ({{ill|Heisei era|Q234510|qid=Q234510}} 26), the {{ill|Yabusame|Q1886157|qid=Q1886157}} rite was revived<ref name="About Yabusame"/>.
+
+The shrine grove covers 8,250 {{ill|Square metre|Q25343|qid=Q25343|lt=m<sup>2</sup>}} and includes evergreen broadleaf trees such as {{ill|Lithocarpus glaber|Q149476|qid=Q149476}}, {{ill|Quercus glauca|Q714124|qid=Q714124}}, {{ill|Cleyera japonica|Q775470|qid=Q775470}}, and camphor. Shiribukagashi in particular rarely forms a forest; because this grove lies near the eastern limit of its distribution, it was designated an Osaka Prefecture {{ill|Natural monument|Q23790|qid=Q23790}} in {{ill|1973|Q2477|qid=Q2477}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 48). The shiribukagashi grove is also selected as one of the {{ill|Ōsaka Midori no Hyakusen|Q11439936|qid=Q11439936}}<ref>{{Cite web|和書|url= http://www.pref.osaka.lg.jp/midorikikaku/toshiryokka/hyakusenn.html|title=100 Green Sites of Osaka|publisher=Osaka Prefecture |accessdate=2016-12-23}}</ref>.
+
+=== Precincts ===
+* Honden - rebuilt in the {{ill|Meiji era|Q3125096|qid=Q3125096}} period.
+* Heiden - rebuilt in {{ill|1972|Q2476|qid=Q2476}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 47).
+* Haiden - rebuilt in 1972 (Shōwa 47).
+* Shrine office
+* Bishūkan
+
+=== Subsidiary shrines ===
+* Kotohira-sha
+* Hakuryū Tennō-sha
+
+=== Cultural properties ===
+=== Osaka Prefecture designated natural monument ===
+* Mitami Shrine {{ill|Lithocarpus glaber|Q149476|qid=Q149476|lt=shiribukagashi}} shrine grove
+
+=== Location ===
+* Kamotani-dai 1-49-1, Minami Ward, Sakai, Osaka Prefecture
+
+=== Access ===
+* {{ill|Semboku Line|Q2758012|qid=Q2758012}} {{ill|Kōmyōike Station|Q6455215|qid=Q6455215}} - 20 minutes on foot
+
+=== Footnotes ===
+{{脚注ヘルプ}}
+=== Notes ===
+{{Notelist2}}
+=== Sources ===
+{{Reflist|2}}
+
+=== Related items ===
+* {{ill|Izumi Wada clan|Q65252203|qid=Q65252203}}
+
+=== External links ===
+{{commons|Category:Mitami-jinja}}
+*[http://mitami-shrine.com/ Mitami Shrine]
+*[https://www.sakai-tcb.or.jp/spot/detail/205 Mitami Shrine - Sakai Tourism Guide]
+
+{{大阪みどりの百選}}
+{{神道 横}}
+{{Shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Mitami Shrine]][[Category:Shikinaisha|Mitami Shrine]][[Category:Shikinaisha|Mitami Shrine]][[Category:Shikinaisha in Izumi Province]]
+[[Category:Shinto shrines in Sakai, Osaka]]
+[[Category:Shikinaisha in Izumi Province]]
+[[Category:Son-sha in Osaka Prefecture]]
+[[Category:堺市南区の歴史]]
+[[Category:堺市南区の建築物]]
+[[Category:泉北ニュータウン]]
+[[Category:Natural Monuments Designated by Osaka Prefecture]]
+[[Category:Pages with unresolved QID in ill template]]
+
+[[Category:Git synced pages]]

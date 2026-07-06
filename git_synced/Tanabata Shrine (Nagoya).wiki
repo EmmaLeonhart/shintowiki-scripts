@@ -1,0 +1,108 @@
+{{Expand Japanese|多奈波太神社}}
+
+{{Infobox religious building
+| name = Tanabata Shrine (Q11430658)
+| native_name = 多奈波太神社
+| image = Tanabata-Jinja.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Tanabata Shrine (Q11430658)
+| coordinates = {{coord|35.193222222222225|136.90569444444444}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+}}
+
+{{nihongo|'''Tanabata Shrine'''|多奈波太神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
+
+{{commons category|Category:Tanabata Jinja}}
+[[ja:多奈波太神社]]
+
+{{wikidata link|Q11430658|commons|Category:Tanabata Jinja|ja|多奈波太神社|check_date=2026-05-26}}
+
+== Japanese content ==
+{{出典の明記|date=2014年8月19日 (火) 16:45 (UTC)}}
+{{神社
+|画像=[[画像:Tanabata-Jinja.jpg|270px|Tanabata Shrine, shrine building (2008)]]<br />Torii and haiden
+|名称=Tanabata Shrine
+|所在地= {{ill|Aichi Prefecture|Q80434|qid=Q80434}}{{ill|Nagoya|Q11751|qid=Q11751}}{{ill|Kita-ku, Nagoya|Q1207964|qid=Q1207964|lt=Kita Ward}}{{ill|Kinjō|Q60997795|qid=Q60997795|lt=Kinjo}} 4-13-16
+|位置= {{WikidataCoord}}
+|祭神= {{ill|UNKNOWN|lt=Ame-no-Tanahata-hime-no-Mikoto}}
+|社格= {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}<br/>former {{ill|Son-sha|Q134917284|qid=Q134917284}}<br/>7th grade
+|創建= Unknown (before the {{ill|17th century|Q7016|qid=Q7016}})
+|本殿= {{ill|Nagare-zukuri|Q210684|qid=Q210684}}
+|別名= Tendō<br/>Tanabata Forest<br/>Hachiman Shrine
+|例祭= August 7
+|地図= {{Location map|Japan Aichi|label=Tanabata<br />Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{Location map|Nagoya|label=Tanabata<br />Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
+}}
+'''Tanabata Shrine''' (たなばたじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Kinjo 4-chōme, {{ill|Kita-ku, Nagoya|Q1207964|qid=Q1207964|lt=Kita Ward}}, {{ill|Nagoya|Q11751|qid=Q11751}}, {{ill|Aichi Prefecture|Q80434|qid=Q80434}}. It is identified with "Tanabata Shrine" of Yamada District, {{ill|Owari Province|Q514506|qid=Q514506}}, in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}.
+
+=== History ===
+Until the {{ill|Edo period|lt=Edo period|qid=Q184963}}, it was called '''Tendō'''. It is said that in the Sengoku period, during a punitive burning by {{ill|Oda Nobunaga|Q171411|qid=Q171411}}, the shrine buildings and transmitted documents were burned, so the founding year is unknown. The early-Edo ''{{ill|Kanbunmuramuraoboegaki|Q137766629|qid=Q137766629}}'' records "Tabata village... Tendō... Bizen exemption." It is also said that when {{ill|Nagoya Castle|Q648629|qid=Q648629}} was built, the shrine was moved to its current site by land substitution. {{ill|Tsuda Masanari|Q22123474|qid=Q22123474}} mentioned a theory that in earlier times it was located in "Ofuke no kaku-nai" (possibly in present {{ill|Meijō Park|Q6810044|qid=Q6810044}}). Around the current shrine is the Tanabatachō archaeological site where {{ill|Yayoi pottery|Q11487461|qid=Q11487461}} has been excavated.
+
+In the {{ill|Edo period|Q184963|qid=Q184963}}, it came under the control of {{ill|Nagoya Tōshō-gū|Q3335117|qid=Q3335117}}, and during the {{ill|Kan'ei|Q1192913|qid=Q1192913}} era new shrine buildings were constructed by the {{ill|Owari Domain|Q1062072|qid=Q1062072}}. On the annual festival day of the old lunar {{ill|July 7 (Lunisolar)|Q839741|qid=Q839741|lt=7th day of the 7th month}}, the domain lord visited and ordinary townspeople were also permitted to worship inside the enclosure; many records survive, including depictions in the {{ill|Owari meisho zue|Q11465290|qid=Q11465290}}.
+
+After it was identified in the Edo period with Yamada District's "Tanabata Shrine" in the Engishiki Jinmyōchō, this became the accepted theory. In the {{ill|Owari Kokunai Jinmyōchō|Q11041830|qid=Q11041830}} it appears as "Junior Third Rank Upper, Keta-hata Tenjin," suggesting the shikinaisha Tanabata Shrine was also called Keta-hata Tenjin. The main reason this shrine was identified as Tanabata Shrine is that it was located in Tabata Village of {{ill|Kasugai district|Q11513576|qid=Q11513576}}, with similar village and shrine names. The {{ill|Chōshūfushi|Q137847623|qid=Q137847623}} identifies Tanabata Shrine with Sansha Myōjin in {{ill|Obata|Q52158082|qid=Q52158082|lt=Obata Village}}, but late-Edo gazetteers including {{ill|Owarishi|Q137855962|qid=Q137855962}} consistently identify this shrine as Tanabata Shrine.
+
+In the {{ill|Meiji era|lt=Meiji period|qid=Q3125096}}, when the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} was implemented, it became a village shrine under the name Hachiman Shrine; in {{ill|Taishō era|Q329174|qid=Q329174}} 11 ({{ill|1922|Q2165|qid=Q2165}}) it became a designated village shrine. During {{ill|World War II|Q362|qid=Q362}}, an {{ill|anti-aircraft gun|Q21156889|qid=Q21156889}} battery was placed on shrine grounds, and much of the shrine forest known as "Tanabata Forest" was cut down. In the {{ill|Bombing of Nagoya|Q2813858|qid=Q2813858}} of May 14, {{ill|1945|Q5240|qid=Q5240}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 20), the same raid that destroyed Nagoya Castle's main keep, the shrine buildings were burned down. The current buildings were rebuilt in {{ill|1964|Q2652|qid=Q2652}} (Shōwa 39).
+
+=== Enshrined deities ===
+* {{ill|Tanabatabime-no-Mikoto|Q48750893|qid=Q48750893|lt=Ame-no-Tanahata-hime-no-Mikoto}} ({{ill|UNKNOWN|lt=Orihime}})
+* {{ill|UNKNOWN|lt=Amaterasu Kōtaijingū}}
+* {{ill|Emperor Ōjin|Q317997|qid=Q317997}}
+* {{ill|Ōyamatsumi|lt=Ōyamatsumi|Q386563|qid=Q386563|qid=Q386563|lt=Ōyamatsumi-no-Mikoto}}
+* {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōanamuji-no-Mikoto}}
+* {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Kami}}
+
+=== Precinct shrines ===
+* Kotohira Shrine
+* Hachiman Shrine
+* Tsushima Shrine
+* Yamagami Shrine
+
+=== Festivals ===
+* Monthly festival: every month on the 7th
+* Jan 1 - New Year Festival
+* Jan 14 - Sagichō Festival
+* Mar 7 - Kinen Festival
+* Jul 7 - Chinowa Festival
+* Aug 7 - Annual Grand Festival
+* Oct 7 - Prayer Festival
+* Dec 7 - Niiname Festival
+* Dec 30 - Great Purification Festival
+
+=== Access ===
+* {{ill|Nagoya Municipal Subway|Q1144874|qid=Q1144874}}{{ill|Meijō Line|Q906775|qid=Q906775|lt=Meijō Line}} - about 10 minutes on foot from Exit 2 of {{ill|Meijō Kōen Station|Q863874|qid=Q863874}}.
+* {{ill|Nagoya Municipal Bus|Q11414982|qid=Q11414982}} - get off at "Jōhokubashi" on Sakae 11 / Sakae 25 routes, about 5 minutes on foot.
+
+=== Footnotes ===
+{{脚注ヘルプ}}
+{{Reflist}}
+
+=== Related items ===
+* {{ill|Qixi Festival|Q13423122|qid=Q13423122}}
+* {{ill|Hoshi Shrine|Q11512981|qid=Q11512981|lt=Hoshi Shrine}} - another shrine deeply connected with Tanabata.
+* {{ill|list of Shinto shrines in Aichi Prefecture|Q30925254|qid=Q30925254}}
+
+=== External links ===
+{{osm box|w|518782291}}
+{{Commonscat}}
+* [http://toppy.net/nagoya/kita4.html Walking Nagoya "Yanagihara / Meijō": The Two Who Could Not Meet on Tanabata]{{Ja icon}}
+
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Tanabata Shrine (Q11430658)]][[Category:Shikinaisha|Tanabata Shrine (Q11430658)]][[Category:Shikinai Shōsha]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:Shinto shrines in Nagoya]]
+[[Category:Shikinaisha in Owari Province]]
+[[Category:Son-sha in Aichi Prefecture]]
+[[Category:History of Kita ward]]
+[[Category:Buildings in Kita ward]]
+[[Category:Tanabata]]
+
+[[Category:Git synced pages]]

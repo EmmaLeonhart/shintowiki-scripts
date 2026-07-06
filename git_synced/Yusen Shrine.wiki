@@ -1,0 +1,105 @@
+{{Expand Japanese|湯泉神社}}
+
+{{Infobox religious building
+| name = Yusen Shrine
+| native_name = 湯泉神社
+| image = Tosen-jinja01s3200.jpg
+| mapframe = yes
+| mapframe-zoom = 15
+| mapframe-wikidata = yes
+| mapframe-point = none
+| map_type = Japan
+| map_caption = Yusen Shrine
+| coordinates = {{coord|34.795131|135.248678}}
+| map_relief = 1
+| religious_affiliation = [[Shinto]]
+| deity = {{ill|Ōkuninushi|lt=Ōkuninushi|ca|Ōkuninushi|en|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}
+| website = {{Official website|https://tousen.or.jp/}}
+}}
+
+{{nihongo|'''Yusen Shrine'''|湯泉神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
+{{commons category|Category:Tosen-jinja}}
+[[ja:湯泉神社]]
+
+{{wikidata link|Q11563671|commons|Category:Tosen-jinja|ja|湯泉神社|grok=none|check_date=2026-05-27}}
+
+== Japanese content ==
+{{Otheruses|shrine in Hyogo Prefecture|other Yusen/Onsen shrines|Onsen Shrine}}
+{{Citation needed|date=November 2019}}
+{{神社
+ | 名称=Yusen Shrine
+ | 画像=[[ファイル:Tosen-jinja01s3200.jpg|250px]]<br />Torii and haiden
+ | 所在地={{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Kobe|Q48320|qid=Q48320}}{{ill|Kita-ku, Kobe|Q1078814|qid=Q1078814|lt=Kita-ku}}{{ill|Arimachō|Q18700495|qid=Q18700495}}1908
+ | 位置 = {{WikidataCoord}}
+ | 祭神={{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Mikoto}}<br />{{ill|Sukunabikona|Q3275687|qid=Q3275687|lt=Sukunahikona-no-Mikoto}}<br />Kumano Kusumi-no-Mikoto
+ | 社格={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} (major)<br />former {{ill|Gō-sha|Q134917316|qid=Q134917316}}
+ | 例祭={{ill|October 3|Q2931|qid=Q2931}}
+ | 地図 = {{Location map|Kobe|label=Yusen Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
+}}
+[[ファイル:Tosen-jinja02s3200.jpg|thumb|250px|Haiden]]
+'''Yusen Shrine''' (とうせんじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Arimachō|Q18700495|qid=Q18700495}}, {{ill|Kita-ku, Kobe|Q1078814|qid=Q1078814|lt=Kita-ku}}, {{ill|Kobe|Q48320|qid=Q48320}}, {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}. It is also read "Onsen Jinja" and may be written {{ill|Onsen Shrines|Q11562963|qid=Q11562963}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha major shrine}}, and its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was {{ill|Modern system of ranked Shinto shrines|Q712534|comment=this used to link to modern system but that one is too overlinked|lt=gōsha|qid=Q134917316}}.
+
+=== History ===
+Based on the tale that {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Mikoto}} and {{ill|Sukunabikona|Q3275687|qid=Q3275687|lt=Sukunahikona-no-Mikoto}} discovered Arima Onsen after seeing three {{ill|Crow|Q388450|qid=Q388450|lt=crows}} soaking in red hot water to heal leg injuries, these two deities are enshrined here, and three birds are carved on the haiden. Together with Kumano Kusumi-no-Mikoto, newly worshiped from the era of restoration of Arima Onsen by priest Ninsei beginning in {{ill|1191|Q19738|qid=Q19738}} ({{ill|Kenkyū|Q1193933|qid=Q1193933}} 2), they are called the "Three Guardian Deities."
+
+Because the '{{ill|Nihon Shoki|Q813935|qid=Q813935}}' records visits by {{ill|Emperor Jomei|Q329761|qid=Q329761}} and {{ill|Emperor Kōtoku|Q317980|qid=Q317980}}, and because it is listed among the 492 major shrines in the early-{{ill|Heian period|Q193292|qid=Q193292}} {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, its high prestige in former times can be seen.
+
+Formerly the shrine buildings (built in the mid-{{ill|Edo period|ar|فترة إيدو|ast|Periodu Edo|az|Edo dövrü|bcl|Panahon nin Edo|be|Перыяд Эда|bg|Едо (период)|bn|এদো যুগ|bo|ཨེ་དོའི་དུས་སྐབས།|br|Marevezh Edo|ca|Període Edo|ckb|سەردەمی ئێدۆ|cs|Období Edo|cv|Эдо тапхăрĕ|da|Edo-perioden|de|Edo-Zeit|eo|Epoko de Edo|es|Período Edo|et|Edo ajastu|eu|Edo aroa|fa|دوره ادو|fi|Edo-kausi|fr|Époque d'Edo|gl|Período Edo|he|תקופת אדו|hi|एदो अवधी|hr|Edo (razdoblje)|hu|Edo-kor|id|Zaman Edo|is|Jedótímabilið|it|Periodo Edo|ja|江戸時代|jv|Jaman Édo|ko|에도 시대|lt|Edo laikotarpis|lv|Edo periods|mk|Едо (период)|mn|Эдогийн эрин|ms|Zaman Edo|nl|Edoperiode|nn|Edotida|oc|Periòde Edo|pl|Edo (okres)|pt|Período Edo|ro|Perioada Edo|ru|Период Эдо|simple|Edo period|sk|Obdobie Edo|sl|Obdobje Edo|sq|Periudha Edo|sr|Едо период|su|Période Edo|sv|Edoperioden|th|ยุคเอโดะ|tl|Panahong Edo|tok|tenpo pi kulupu lawa Eto|tr|Edo Dönemi|uk|Період Едо|ur|ایڈو دور|uz|Edo davri|vi|Thời kỳ Edo|war|Panahon Edo|wuu|江戶時代|zh|江户时代|zh_min_nan|Edo sî-tāi|zh_yue|江戶時代|qid=Q184963}}, {{ill|Kansei|Q1195131|qid=Q1195131}} 10 / {{ill|1798|Q7823|qid=Q7823}}) stood in the precincts of {{ill|Onsen-ji Temple|Q11562943|qid=Q11562943|lt=Onsen-ji}} at the foot of Mt. Atago, but in {{ill|1885|ab|1885|af|1885|als|1885|am|1885 እ.ኤ.አ.|an|1885|ar|1885|ary|1885|arz|1885|ast|1885|avk|1885|az|1885|azb|۱۸۸۵ (میلادی)|ba|1885 йыл|ban|1885|bar|1885|bat_smg|1885|bcl|1885|be|1885|be_x_old|1885|bg|1885|bn|১৮৮৫|bpy|মারি ১৮৮৫|br|1885|bs|1885.|ca|1885|cdo|1885 nièng|ce|1885 шо|ceb|1885|ckb|١٨٨٥|crh|1885|cs|1885|csb|1885|cv|1885|cy|1885|da|1885|de|1885|diq|1885|el|1885|eml|1885|eo|1885|es|1885|et|1885|eu|1885|fa|۱۸۸۵|fi|1885|fiu_vro|1885|fo|1885|fr|1885|frp|1885|frr|1885|fur|1885|fy|1885|ga|1885|gan|1885年|gcr|1885|gd|1885|gl|1885|gn|1885|gv|1885|hak|1885-ngièn|he|1885|hi|१८८५|hif|1885|hr|1885.|hsb|1885|ht|1885 (almanak gregoryen)|hu|1885|hy|1885|hyw|1885 թուական|ia|1885|id|1885|ilo|1885|io|1885|is|1885|it|1885|ja|1885年|jbo|1885moi|jv|1885|ka|1885|kaa|1885|kk|1885 жыл|kn|೧೮೮೫|ko|1885년|krc|1885 джыл|ksh|Joohr 1885|kv|1885-ӧд во|la|1885|lb|1885|lez|1885 йис|li|1885|lij|1885|lmo|1885|lt|1885 m.|lv|1885. gads|mai|१८८५|map_bms|1885|mdf|1885|mg|1885|mhr|1885|mi|1885|min|1885|mk|1885|ml|1885|mr|इ.स. १८८५|mrj|1885 и|ms|1885|my|၁၈၈၅|myv|1885 ие|mzn|۱۸۸۵|nah|1885|nap|1885|nds|1885|nds_nl|1885|new|ई सं १८८५|nl|1885|nn|1885|no|1885|nrm|1885|nso|1885|oc|1885|olo|1885|or|୧୮୮୫|os|1885-æм аз|pa|1885|pap|1885|pl|1885|pnb|1885|pt|1885|qu|1885|ro|1885|ru|1885 год|rue|1885|sa|१८८५|sah|1885|scn|1885|sd|1885ع|se|1885|sh|1885.|shn|1885|simple|1885|sk|1885|sl|1885|smn|1885|sq|1885|sr|1885|stq|1885|su|1885|sv|1885|sw|1885|szl|1885|ta|1885|te|1885|tet|1885|tg|Соли 1885|th|พ.ศ. 2428|tk|1885|tl|1885|tly|1885|tr|1885|tt|1885 ел|udm|1885 ар|ug|1885|uk|1885|ur|1885ء|uz|1885|vec|1885|vep|1885|vi|1885|vls|1885|vo|1885|wa|1885|war|1885|wuu|1885年|xmf|1885|yi|1885|za|1885 nienz|zea|1885|zh|1885年|zh_classical|一八八五年|zh_min_nan|1885 nî|zh_yue|1885年|qid=Q7821}} ({{ill|Meiji era|Q3125096|qid=Q3125096}} 18) they were moved to the current site on the middle slope of Mt. Atago. It was also ranked as {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+
+In front of Onsen-ji main hall there is a {{ill|Torii|ar|توري|az|Torii|bcl|Torii|bg|Тории|ca|Torii|cs|Torii|de|Torii|el|Τορίι|eo|Torijo|es|Torii|et|Torii|eu|Torii|fa|توریئی|fi|Torii|fr|Torii|he|טוריאי|hu|Torii|hy|Տորիի|id|Torii|it|Torii|ja|鳥居|jv|Torii|ko|도리이|lt|Torii|ms|Torii|nl|Torii|no|Torii|oc|Torii|pl|Torii|pt|Torii|ru|Тории|simple|Torii|sl|Tori|sq|Torii|sv|Torii|ta|தொரீ|th|โทริอิ|tr|Torii|uk|Торії|uz|Torii|vi|Torii|wuu|鳥居|zh|鳥居|qid=Q234731}} and stone steps leading to the shrine buildings.
+
+=== Shrine name ===
+Some documents write it as Onsen Shrine, and proposed readings include "tōsen jinja," "tōzen jinja," and "yuno jinja," but today it is generally written "Yusen Shrine" and read "tōsen jinja." In the section for {{ill|Arima district|Q11516836|qid=Q11516836}} of {{ill|Settsu Province|Q864163|qid=Q864163}} in the 'Engishiki' Jinmyōchō, it is listed with {{ill|Arima Shrine|Q11516720|qid=Q11516720}} and {{ill|Kuchi Shrine|Q11392062|qid=Q11392062}} as "Yusen Shrine (yuno jinja)" [http://www.arima-onsen.com/facility_info113.html].
+
+=== Enshrined deities ===
+* Main deities - {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Mikoto}}, {{ill|Sukunabikona|Q3275687|qid=Q3275687|lt=Sukunahikona-no-Mikoto}}, Kumano Kusumi-no-Mikoto (three guardian deities of Arima Onsen)
+
+=== Precinct ===
+* Honden
+* Haiden
+* Amatsu Shrine
+* Kunitsu Shrine
+* {{ill|Kotohira shrines|Q11646488|qid=Q11646488}}
+* Munakata Shrine
+* Koyasu-dō
+* {{ill|UNKNOWN|lt=Myōken-dō}}
+* Shrine office
+
+=== Cultural properties ===
+=== Important Cultural Property ===
+* Silk painting {{ill|Kumano region|Q6443450|qid=Q6443450}} {{ill|Mandala|Q191431|qid=Q191431}}
+
+=== Events ===
+* January 2 - {{ill|Irizome-shiki|Q11388868|qid=Q11388868}}
+* May 5 - Chinka Festival
+* July 3 - Mikoshi procession
+
+=== Transportation ===
+* 10 minutes on foot from {{ill|Arima Onsen Station|Q4790676|qid=Q4790676}} on {{ill|Kobe Electric Railway|Q836658|qid=Q836658}}
+* 10 minutes on foot from Arima-Onsen Station of the {{ill|Rokkō Arima Ropeway|Q7360054|qid=Q7360054}}
+
+=== External links ===
+{{Commons|Category:Tosen-jinja}}
+*[http://www.tousen.or.jp/ Yusen Shrine]
+*[http://arimajinja.com/ Arima Shrine]
+
+{{Arima onsen}}
+{{shinto-stub}}
+
+== Categories ==
+[[Category:Wikidata generated shikinaisha pages|Yusen Shrine]][[Category:Shikinaisha|Yusen Shrine]][[Category:Shikinaisha|Yusen Shrine]][[Category:Kanpei-sha]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Shikinai Taisha]]
+[[Category:Shikinaisha in Settsu Province]]
+[[Category:Former Gō-sha in Hyōgo Prefecture]]
+[[Category:Onsen Shrines]]
+[[Category:Shinto shrines in Kobe]]
+[[Category:神戸市の重要文化財]]
+[[Category:有馬温泉郷]]
+[[Category:神戸市北区の歴史]]
+[[Category:Buildings and structures in Kita-ku, Kobe]]
+[[Category:Important Cultural Properties in Kobe]]
+
+[[Category:Git synced pages]]
