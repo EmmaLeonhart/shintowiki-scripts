@@ -289,6 +289,32 @@ def bengalify(name):
     return "".join(out)
 
 
+DEVANAGARI_TO_GURMUKHI = {}
+for _d in (HINDI_BASE, HINDI_YOON, HINDI_INITIAL):
+    for _v in _d.values():
+        for _ch in _v:
+            DEVANAGARI_TO_GURMUKHI.setdefault(_ch, chr(ord(_ch) + 0x100))
+
+
+def gurmukhify(name):
+    """Romanized Japanese -> Gurmukhi (Punjabi). Gurmukhi shares Devanagari ISCII
+    layout at a fixed +0x100 offset (like Bengali +0x80); inherent vowel is a like
+    Devanagari, so a straight per-char remap of the hindify output. Every char hindify
+    emits has a valid Gurmukhi codepoint (verified)."""
+    deva = hindify(name)
+    if not deva:
+        return None
+    out = []
+    for ch in deva:
+        if ch == " ":
+            out.append(" ")
+        elif ch in DEVANAGARI_TO_GURMUKHI:
+            out.append(DEVANAGARI_TO_GURMUKHI[ch])
+        else:
+            return None
+    return "".join(out)
+
+
 # Marathi (deep tail): same Devanagari script as Hindi, but the existing labels
 # render names with explicit aa-matras (कामिकावा, not कमिकव) + the तीर्थ suffix.
 # So: hindify, then insert a Devanagari aa-matra after each inherent-a consonant
@@ -827,6 +853,8 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         # temple word serves both kinds.
         if lang == "ceb": return "Templong"  # observed: "templong <Name>"
         if lang == "mai": return "महा मंदिर" if is_grand else "मंदिर"  # Devanagari, same word as hi
+        if lang == "new": return "महा मंदिर" if is_grand else "मंदिर"  # Newari (Nepal Bhasa), Devanagari
+        if lang == "pa": return 'ਵੱਡਾ ਮੰਦਿਰ' if is_grand else 'ਮੰਦਿਰ'  # Punjabi, Gurmukhi
         if lang == "as": return _AS_MANDIR
         if lang == "ur": return "مندر"
         if lang == "hu":
@@ -924,6 +952,12 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "mai":
         mai_name = hindify(name)
         return f"{mai_name} {get_affix()}"
+    if lang == "new":
+        new_name = hindify(name)
+        return f"{new_name} {get_affix()}"
+    if lang == "pa":
+        pa_name = gurmukhify(name)
+        return f"{pa_name} {get_affix()}" if pa_name else None
     if lang == "as":
         as_name = assamify(name)
         if not as_name:
@@ -955,7 +989,7 @@ ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
              "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr",
              "nn", "ceb", "mai", "as", "ur",
-             "pl", "ro", "fi", "cs", "sl", "th"]
+             "pl", "ro", "fi", "cs", "sl", "th", "new", "pa"]
 
 
 def make_sparql(lang_code):

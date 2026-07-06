@@ -34,6 +34,8 @@ COVERED = {
     "arz": ("generate_multilang_quickstatements.py", "arabic"),
     "hi": ("generate_multilang_quickstatements.py", "devanagari"),
     "th": ("generate_multilang_quickstatements.py", "thai (wunsen romaji→Thai, pre-posed vowels)"),
+    "new": ("generate_multilang_quickstatements.py", "newari (Devanagari, reuses hindify)"),
+    "pa": ("generate_multilang_quickstatements.py", "punjabi (Gurmukhi, +0x100 offset from Devanagari)"),
     "fr": ("generate_multilang_quickstatements.py", "affix"),
     "pt": ("generate_multilang_quickstatements.py", "affix"),
     "vi": ("generate_multilang_quickstatements.py", "affix"),
