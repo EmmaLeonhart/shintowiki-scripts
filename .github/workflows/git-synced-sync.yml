@@ -38,7 +38,12 @@ jobs:
     env:
       WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
       WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
-      WIKI_EDIT_LIMIT: "100"
+      # Raised 100→500 (2026-07-06) to drain the 4,608-page property-dump strip
+      # backlog in fewer runs. Rate is unchanged — THROTTLE=2.5s in the sync still
+      # holds ~24 edits/min sustained (the server-load constraint); a higher cap
+      # just means a longer run (500×2.5s ≈ 21 min, well under the 60-min timeout),
+      # not a faster edit rate.
+      WIKI_EDIT_LIMIT: "500"
     steps:
       - name: Checkout
         uses: actions/checkout@v5
