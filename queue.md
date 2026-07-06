@@ -187,9 +187,11 @@ readiness: `recreate-deleted-wikidata/items/_recreation_readiness.md`. Remaining
   Kumano, Ōtsuki Hotel, Color Index, Inner Palace, Nakatomi Sakado clan, Kibi no Anaumi,
   Kimi-no-Mori, Shōkyō, Benten Chigo, rope attachment projections, Hozumi-Suzuki Clan Genealogy;
   + verify JR Ise Sangu Line & rhyolitic welded tuff which likely duplicate an existing line/rock
-  item). These have **NO shinto.miraheze.org page** (verified: en/ja mainspace + User: drafts all
-  MISSING; miraheze reachable) — their only content is on shinto.fandom.com. Decide how to pull/fix
-  that content (fandom pull vs. leave) — Emma didn't understand the framing; re-raise concretely.
+  item). NOTE (corrected 2026-07-06): these are **ill-TARGETS** (sub-topics inside `{{ill}}`), so
+  they are redlinks on BOTH wikis — that is EXPECTED, not a fandom/miraheze discrepancy. Their host
+  pages exist on both (verified 27/27 miraheze=fandom=YES) and the langlink content is already in
+  the item JSONs. There is nothing page-wise to pull/fix; recreating them is purely the human-gated
+  Wikidata-item task. Remaining autonomous step: assign each a P31 (a few need per-item research).
 - [ ] **Analyze the `User:Immanuelle/` draft pages** (Emma 2026-07-06): the ills carry
   `13=User:Immanuelle/<name>` draft targets. Enumerate those draft pages on shinto.miraheze.org,
   read them, and try to deal with them (they may hold intended content for the deleted items /
