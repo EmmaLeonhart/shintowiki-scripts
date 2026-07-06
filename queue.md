@@ -72,12 +72,15 @@ Wikidata:
   clusters (disambiguation / data-quality). BLOCKED-ON-EXTERNAL: WDQS 429-outaged 2026-07-06 — retry
   when it recovers.
 
-## 10. Repo-file audit — sweep junk (do LAST today, after the others)
+## 10. Repo-file audit — sweep junk
 
-- [ ] Audit the repo's files and remove crud no longer needed now that its source task is done — e.g.
-  root `2026-01-01.txt` (the durability audit input; durability sweep is finished) and the
-  durability scratch/`_batchN_url.txt` files. Genuine file-by-file pass, delete-don't-archive. This is
-  for TODAY — just at the end, after the other items.
+Done this pass: removed root `2026-01-01.txt` (durability input, sweep finished) + the 15
+`_batchN_url.txt` scratch (unreferenced; statements live in `durability_enrich.txt` + git). Kept
+`query.csv` (used by `language_registry.py`).
+
+- [ ] Confirm-and-remove the 2 remaining ambiguous root files (didn't create them; unreferenced but
+  not obviously mine): `errors.txt` (299 lines of stray garbage) and `temple_query.csv` (stale, no
+  code refs). Emma nod → delete.
 
 ## Pinned tail (keep last, always)
 
