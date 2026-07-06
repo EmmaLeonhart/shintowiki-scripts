@@ -7,7 +7,7 @@
     "timestamp": "20250802040442"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "Japanese historical figure",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -247,12 +247,12 @@
         "source": "translit"
       }
     },
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q5",
+    "p31_label": "human",
+    "p31_property": "P31",
     "romaji_reading": "Sengetakaaki",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "medium",
+    "type_source": "izumo-priest-clan"
   },
   "fandom": {
     "categories": [

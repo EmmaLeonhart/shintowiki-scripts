@@ -37,6 +37,20 @@ KNOWN_CLANS = (
 _CLAN_PAT = re.compile(r"^(?:" + "|".join(re.escape(c) for c in KNOWN_CLANS) + r") no \w", re.I)
 
 
+_PAREN = re.compile(r"\s*[\(（].*?[\)）]\s*$")
+
+
+def _strip_paren(s):
+    """Drop a trailing disambiguator, e.g. 'Akagi Shrine (Niisato Itabashi Town)' →
+    'Akagi Shrine' and '赤城神社 (桐生市…)' → '赤城神社', so the type suffix is exposed."""
+    prev = None
+    s = s or ""
+    while s != prev:
+        prev = s
+        s = _PAREN.sub("", s).strip()
+    return s
+
+
 def _last_word(en):
     words = (en or "").replace("(", " ").replace(")", " ").split()
     return words[-1] if words else ""
@@ -44,10 +58,14 @@ def _last_word(en):
 
 def classify(en, ja):
     """Return (p31_qid, p31_label, description, confidence, source)."""
-    en = en or ""
-    ja = ja or ""
+    en = _strip_paren(en or "")
+    ja = _strip_paren(ja or "")
     jl = ja[-1] if ja else ""
     last = _last_word(en)
+
+    # Izumo high-priest houses (Senge 千家 / Kitajima 北島) — people.
+    if ja.startswith(("千家", "北島")):
+        return "Q5", "human", "Japanese historical figure", "medium", "izumo-priest-clan"
 
     # Festival — 祭 / まつり / Festival / Matsuri.
     if jl == "祭" or ja.endswith(("まつり", "祭り")) or last in ("Festival", "Matsuri"):
@@ -63,6 +81,12 @@ def classify(en, ja):
     # Kami — bare 神 / Kami / Hime / Hiko.
     if jl == "神" or last in ("Kami", "Hime", "Hiko"):
         return "Q524158", "kami", "kami (Shinto deity)", "high", "name-suffix"
+    # Buddhist temple — 寺 / -ji / -dera (checked after shrine so 神社 wins).
+    if jl == "寺" or last.endswith(("-ji", "-dera")):
+        return "Q5393308", "Buddhist temple", "Buddhist temple in Japan", "high", "name-suffix"
+    # Kofun (ancient burial mound).
+    if jl == "墳" or last == "Kofun":
+        return "Q1141225", "kofun", "kofun (ancient Japanese burial mound)", "high", "name-suffix"
     # Dance.
     if jl == "踊" or last in ("Odori", "Dance"):
         return "Q11639", "dance", "Japanese traditional dance", "medium", "name-suffix"

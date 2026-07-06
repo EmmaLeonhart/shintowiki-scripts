@@ -7,7 +7,7 @@
     "timestamp": "20250730031732"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "Shinto shrine in Japan",
     "label_count": 2,
     "labels": {
       "en": {
@@ -19,12 +19,12 @@
         "source": "fandom"
       }
     },
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q845945",
+    "p31_label": "Shinto shrine",
+    "p31_property": "P31",
     "romaji_reading": null,
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [

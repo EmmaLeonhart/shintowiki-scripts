@@ -36,6 +36,24 @@ def test_dance_and_text():
     assert _p31("Chikugo no Kuni Fudoki", "筑後国風土記") == "Q571"
 
 
+def test_paren_disambiguator_stripped_reveals_shrine():
+    assert _p31("Akagi Shrine (Niisato Itabashi Town)", "赤城神社 (桐生市新里町板橋)") == "Q845945"
+    assert _p31("Agata Shrine (Yokkaichi)", "縣神社 (四日市市)") == "Q845945"
+
+
+def test_buddhist_temple():
+    assert _p31("Kisshō-ji (Gifu)", "吉祥寺 (岐阜市)") == "Q5393308"
+    assert _p31("Konomine-dera", "國軸山金峯山寺") == "Q5393308"
+
+
+def test_kofun():
+    assert _p31("Moriyama Hyōtan-yama Kofun", "守山瓢箪山古墳") == "Q1141225"
+
+
+def test_izumo_priest_clan():
+    assert _p31("Sengetakamochi", "千家尊有") == "Q5"
+
+
 def test_uncertain_left_null():
     # Geographic / unknown → no guess.
     assert _p31("Shimabara Sea", "島原海") is None

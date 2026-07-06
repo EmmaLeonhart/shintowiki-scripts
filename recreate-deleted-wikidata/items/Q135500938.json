@@ -7,7 +7,7 @@
     "timestamp": "20250729225158"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "kofun (ancient Japanese burial mound)",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -247,12 +247,12 @@
         "source": "translit"
       }
     },
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q1141225",
+    "p31_label": "kofun",
+    "p31_property": "P31",
     "romaji_reading": "Rokusonōbara Kofun",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "name-suffix"
   },
   "fandom": {
     "categories": [

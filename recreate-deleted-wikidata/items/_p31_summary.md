@@ -1,17 +1,19 @@
 # Recreation-candidate P31 (instance of) — from entity name
 
 - Candidates: **213**
-- Assigned a P31: **91**  ·  left for review: **122**
+- Assigned a P31: **134**  ·  left for review: **79**
 
 Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31.py` docstring. Uncertain → null, never guessed.
 
 ## Type distribution
 
-- (none — review): 122
+- (none — review): 79
+- Shinto shrine: 42
 - kami: 28
 - festival: 26
-- Shinto shrine: 17
-- human: 16
+- human: 19
+- Buddhist temple: 9
+- kofun: 6
 - dance: 2
 - book: 2
 
@@ -19,13 +21,47 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 
 | QID | en | ja | P31 | conf |
 |---|---|---|---|---|
+| Q135503392 | Tōritsu Shōdai-ji | 唐律招提寺 | Buddhist temple | high |
+| Q135504271 | Kisshō-ji (Gifu) | 吉祥寺 (岐阜市) | Buddhist temple | high |
+| Q135504275 | Daikaku-ji (Gifu) | 大覚寺 (岐阜市) | Buddhist temple | high |
+| Q135506290 | Hōrin-ji (Wakayama) | 法輪寺 (和歌山市) | Buddhist temple | high |
+| Q135506292 | Fugen-ji (Hashimoto, Wakayama) | 普賢寺 (橋本市菖蒲谷) | Buddhist temple | high |
+| Q135550941 | 33 Kannon Pilgrimage of Daisen-ji | 大山寺三十三カ所地蔵めぐり | Buddhist temple | high |
+| Q135551146 | Konomine-dera | 國軸山金峯山寺 | Buddhist temple | high |
+| Q135551147 | Jisshōji | 実城寺 | Buddhist temple | high |
+| Q135579307 | Jippāramitsu-ji | 十波羅蜜寺 | Buddhist temple | high |
 | Q135500663 | Ōmiya Isuzu Shrine | 大宮五十鈴神社 | Shinto shrine | high |
 | Q135500665 | Kamimiya Togata Shrine | 上宮外縣神社 | Shinto shrine | high |
 | Q135500695 | Gōkaku Shrine | 合格神社 | Shinto shrine | high |
+| Q135500704 | Agata Shrine (Yokkaichi) | 縣神社 (四日市市) | Shinto shrine | high |
+| Q135500707 | Agata Shrine (Izumo) | 縣神社 (出雲市) | Shinto shrine | high |
 | Q135500718 | Cedar of Agata Shrine | 県神社のスギ | Shinto shrine | high |
 | Q135504173 | Kotsuka Shrine | 古津賀神社 | Shinto shrine | high |
 | Q135504358 | Gojō Castle Tenjin Shrine | 五城天神社 | Shinto shrine | high |
 | Q135504611 | Nagataki Hakusan Shrine | 長滝白山神社 | Shinto shrine | high |
+| Q135505918 | Akagi Shrine (Araguchi Town) | 赤城神社 (前橋市荒口町) | Shinto shrine | high |
+| Q135505921 | Akagi Shrine (Arai Town) | 赤城神社 (前橋市新井町) | Shinto shrine | high |
+| Q135505923 | Akagi Shrine (Kameizumi Town) | 赤城神社 (前橋市亀泉町) | Shinto shrine | high |
+| Q135505924 | Akagi Shrine (Shimo Koide Town) | 赤城神社 (前橋市下小出町) | Shinto shrine | high |
+| Q135505926 | Akagi Shrine (Sekine Town) | 赤城神社 (前橋市関根町) | Shinto shrine | high |
+| Q135505928 | Akagi Shrine (Fujimi Town Urushikubo) | 赤城神社 (前橋市富士見町漆窪) | Shinto shrine | high |
+| Q135505930 | Akagi Shrine (Fujimi Town Yone) | 赤城神社 (前橋市富士見町米野) | Shinto shrine | high |
+| Q135505932 | Akagi Shrine (Fujimi Town Tajima) | 赤城神社 (前橋市富士見町田島) | Shinto shrine | high |
+| Q135505933 | Akagi Shrine (Miyaji Town) | 赤城神社 (前橋市宮地町) | Shinto shrine | high |
+| Q135505937 | Akagi Shrine (Watanuki Town) | 赤城神社 (高崎市綿貫町) | Shinto shrine | high |
+| Q135505939 | Akagi Shrine (Shimotaki Town) | 赤城神社 (高崎市下滝町) | Shinto shrine | high |
+| Q135505941 | Akagi Shrine (Kawauchi 2nd Town) | 赤城神社 (桐生市川内町2) | Shinto shrine | high |
+| Q135505947 | Akagi Shrine (Niisato Itabashi Town) | 赤城神社 (桐生市新里町板橋) | Shinto shrine | high |
+| Q135505949 | Akagi Shrine (Niisato Takei Town) | 赤城神社 (桐生市新里町武井) | Shinto shrine | high |
+| Q135505951 | Akagi Shrine (Kurohone Yagihara Town) | 赤城神社 (桐生市黒保根町八木原) | Shinto shrine | high |
+| Q135505953 | Akagi Shrine (Kurohone Shimo Tazawa Town) | 赤城神社 (桐生市黒保根町下田沢) | Shinto shrine | high |
+| Q135505955 | Akagi Shrine (Miyamae Town) | 赤城神社 (伊勢崎市宮前町) | Shinto shrine | high |
+| Q135505957 | Akagi Shrine (Kunisada Town) | 赤城神社 (伊勢崎市国定町) | Shinto shrine | high |
+| Q135505965 | Akagi Shrine (Sakai Hiratsuka Town) | 赤城神社 (伊勢崎市境平塚) | Shinto shrine | high |
+| Q135505970 | Akagi Shrine (Tone Town Oigami) | 赤城神社 (沼田市利根町老神) | Shinto shrine | high |
+| Q135505974 | Akagi Shrine (Bōjizuka Town) | 赤城神社 (館林市傍示塚町) | Shinto shrine | high |
+| Q135505979 | Akagi Shrine (Kitakatsushika Town Yasaki) | 赤城神社 (渋川市北橘町八崎) | Shinto shrine | high |
+| Q135505981 | Akagi Shrine (Kitakatsushika Town Jonanmu) | 赤城神社 (渋川市北橘町上南室) | Shinto shrine | high |
 | Q135506335 | Kumano Shōjō Gongen | 熊野證誠権現 | Shinto shrine | high |
 | Q135506353 | Nanatsumori Shrine | 七ツ森神社 | Shinto shrine | high |
 | Q135550808 | Chichibu Three Shrines | 秩父三社 | Shinto shrine | high |
@@ -82,6 +118,9 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579240 | Ama Inukai no Muraji | 海犬養連 | human | medium |
 | Q135579241 | Waka Inukai no Muraji | 若犬養連 | human | medium |
 | Q135579242 | Azumi Inukai no Muraji | 阿曇犬養連 | human | medium |
+| Q135579349 | Sengetakaaki | 千家尊愛 | human | medium |
+| Q135579350 | Sengetakamochi | 千家尊有 | human | medium |
+| Q135579352 | Sengemichihiko | 千家達彦 | human | medium |
 | Q135330122 | Amanomikemunushi no Kami | Amanomikemunushi no Kami | kami | high |
 | Q135500709 | Ietsumiko no Kami | 家津御子神 | kami | high |
 | Q135500713 | Kumano Kusu no Mi no Mikoto | 熊野久須美命 | kami | high |
@@ -110,6 +149,12 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579705 | Mori-no-Kami | 木神 | kami | high |
 | Q135579706 | Niwa-tsume no Mikoto | 庭津女命 | kami | high |
 | Q135583892 | Taioshin Sen Chintaku Reifu no Kami | 太上神仙鎮宅霊符神 | kami | high |
+| Q135500938 | Rokusonōbara Kofun | 六孫王原古墳 | kofun | high |
+| Q135579120 | Moriyama Hyōtan-yama Kofun | 守山瓢箪山古墳 | kofun | high |
+| Q135579124 | Hyōtan-tsuka Kofun (Moka) | 瓢箪塚古墳 (真岡市) | kofun | high |
+| Q135579132 | Hyōtan-tsuka Kofun (Shizuoka) | 瓢箪塚古墳 (静岡市) | kofun | high |
+| Q135579221 | Suga-no-Sawa Gobyō Kofun | 菅ノ沢御廟古墳 | kofun | high |
+| Q135579270 | Myokenzan Kofun (Muko City) | 妙見山古墳 (向日市) | kofun | high |
 | Q135490377 | Shimabara Sea | 島原海 |  | none |
 | Q135490455 | Shōkyō | 正恭 |  | none |
 | Q135490496 | Chōkui no Sei | 鐘匱の制 |  | none |
@@ -126,15 +171,11 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135500682 | Adachi Kagemura | 安達景村 |  | none |
 | Q135500687 | Adachi Shigekage | 安達重景 |  | none |
 | Q135500691 | Adachi Tokikage | 安達時景 |  | none |
-| Q135500704 | Agata Shrine (Yokkaichi) | 縣神社 (四日市市) |  | none |
-| Q135500707 | Agata Shrine (Izumo) | 縣神社 (出雲市) |  | none |
 | Q135500720 | Kimi-no-Mori | 季美の森 |  | none |
-| Q135500938 | Rokusonōbara Kofun | 六孫王原古墳 |  | none |
 | Q135501970 | Arakida Moriyoshi | 荒木田守良 |  | none |
 | Q135502402 | Shima no Yu | 島の湯 |  | none |
 | Q135502435 | Ōtsuki Hotel | 大月ホテル |  | none |
 | Q135503346 | Protective Forest for Navigation | 航行目標保安林 |  | none |
-| Q135503392 | Tōritsu Shōdai-ji | 唐律招提寺 |  | none |
 | Q135503410 | herbal baths | 薬湯 |  | none |
 | Q135503417 | Bath Roman | バスロマン |  | none |
 | Q135503420 | Young Venus | ヤングビーナス |  | none |
@@ -144,39 +185,11 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135503431 | Color Index | カラーカード |  | none |
 | Q135504200 | Futagoyama Park (disambiguation) | 二子山公園 (曖昧さ回避) |  | none |
 | Q135504266 | JR Ise Sangu Line | JR参宮線 |  | none |
-| Q135504271 | Kisshō-ji (Gifu) | 吉祥寺 (岐阜市) |  | none |
-| Q135504275 | Daikaku-ji (Gifu) | 大覚寺 (岐阜市) |  | none |
 | Q135504457 | The Twelve Heavenly Kings | 十二天王 |  | none |
-| Q135505918 | Akagi Shrine (Araguchi Town) | 赤城神社 (前橋市荒口町) |  | none |
-| Q135505921 | Akagi Shrine (Arai Town) | 赤城神社 (前橋市新井町) |  | none |
-| Q135505923 | Akagi Shrine (Kameizumi Town) | 赤城神社 (前橋市亀泉町) |  | none |
-| Q135505924 | Akagi Shrine (Shimo Koide Town) | 赤城神社 (前橋市下小出町) |  | none |
-| Q135505926 | Akagi Shrine (Sekine Town) | 赤城神社 (前橋市関根町) |  | none |
-| Q135505928 | Akagi Shrine (Fujimi Town Urushikubo) | 赤城神社 (前橋市富士見町漆窪) |  | none |
-| Q135505930 | Akagi Shrine (Fujimi Town Yone) | 赤城神社 (前橋市富士見町米野) |  | none |
-| Q135505932 | Akagi Shrine (Fujimi Town Tajima) | 赤城神社 (前橋市富士見町田島) |  | none |
-| Q135505933 | Akagi Shrine (Miyaji Town) | 赤城神社 (前橋市宮地町) |  | none |
-| Q135505937 | Akagi Shrine (Watanuki Town) | 赤城神社 (高崎市綿貫町) |  | none |
-| Q135505939 | Akagi Shrine (Shimotaki Town) | 赤城神社 (高崎市下滝町) |  | none |
-| Q135505941 | Akagi Shrine (Kawauchi 2nd Town) | 赤城神社 (桐生市川内町2) |  | none |
-| Q135505947 | Akagi Shrine (Niisato Itabashi Town) | 赤城神社 (桐生市新里町板橋) |  | none |
-| Q135505949 | Akagi Shrine (Niisato Takei Town) | 赤城神社 (桐生市新里町武井) |  | none |
-| Q135505951 | Akagi Shrine (Kurohone Yagihara Town) | 赤城神社 (桐生市黒保根町八木原) |  | none |
-| Q135505953 | Akagi Shrine (Kurohone Shimo Tazawa Town) | 赤城神社 (桐生市黒保根町下田沢) |  | none |
-| Q135505955 | Akagi Shrine (Miyamae Town) | 赤城神社 (伊勢崎市宮前町) |  | none |
-| Q135505957 | Akagi Shrine (Kunisada Town) | 赤城神社 (伊勢崎市国定町) |  | none |
-| Q135505965 | Akagi Shrine (Sakai Hiratsuka Town) | 赤城神社 (伊勢崎市境平塚) |  | none |
-| Q135505970 | Akagi Shrine (Tone Town Oigami) | 赤城神社 (沼田市利根町老神) |  | none |
-| Q135505974 | Akagi Shrine (Bōjizuka Town) | 赤城神社 (館林市傍示塚町) |  | none |
-| Q135505979 | Akagi Shrine (Kitakatsushika Town Yasaki) | 赤城神社 (渋川市北橘町八崎) |  | none |
-| Q135505981 | Akagi Shrine (Kitakatsushika Town Jonanmu) | 赤城神社 (渋川市北橘町上南室) |  | none |
 | Q135506253 | Kamado Town | 釜戸町2510番地の1 |  | none |
 | Q135506282 | Kōyasan Campaign | 高野山攻め |  | none |
-| Q135506290 | Hōrin-ji (Wakayama) | 法輪寺 (和歌山市) |  | none |
-| Q135506292 | Fugen-ji (Hashimoto, Wakayama) | 普賢寺 (橋本市菖蒲谷) |  | none |
 | Q135506332 | Kyoto's Three Kumano Shrines | 京都三熊野 |  | none |
 | Q135550940 | Three Deities of Mount Daisen | 大山三所権現 |  | none |
-| Q135550941 | 33 Kannon Pilgrimage of Daisen-ji | 大山寺三十三カ所地蔵めぐり |  | none |
 | Q135550945 | Kyushu 88 Sacred Sites | 九州八十八箇所霊場 |  | none |
 | Q135550946 | Kyushu 36 Fudō Sacred Sites | 九州三十六不動霊場 |  | none |
 | Q135550949 | Inner Palace | 内裏外郭 |  | none |
@@ -193,8 +206,6 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135551133 | Takenami Site |  |  | none |
 | Q135551138 | Mizumachi Site |  |  | none |
 | Q135551144 | Ishibuto Daigongen | 石鈇大権現 |  | none |
-| Q135551146 | Konomine-dera | 國軸山金峯山寺 |  | none |
-| Q135551147 | Jisshōji | 実城寺 |  | none |
 | Q135551148 | Kōshin-dō | Kōshin-dō |  | none |
 | Q135551150 | rope attachment projections | 縄掛突起 |  | none |
 | Q135551151 | rhyolitic welded tuff | 流紋岩質溶結凝灰岩 |  | none |
@@ -204,10 +215,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579071 | health science | 健康学 |  | none |
 | Q135579080 | balneology | 温泉医学 |  | none |
 | Q135579116 | Hozumi-Suzuki Clan Genealogy | 穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜 |  | none |
-| Q135579120 | Moriyama Hyōtan-yama Kofun | 守山瓢箪山古墳 |  | none |
-| Q135579124 | Hyōtan-tsuka Kofun (Moka) | 瓢箪塚古墳 (真岡市) |  | none |
 | Q135579128 | Kamihamada Kofun Group | 上浜田古墳群 |  | none |
-| Q135579132 | Hyōtan-tsuka Kofun (Shizuoka) | 瓢箪塚古墳 (静岡市) |  | none |
 | Q135579136 | Nishinohara Kofun Group | 西ノ原古墳群 |  | none |
 | Q135579148 | Iga-hiko | 伊賀彦 |  | none |
 | Q135579154 | 御匙 | 御匙 |  | none |
@@ -215,20 +223,14 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579162 | Nozaki Oki-no-Kami Tsunayoshi | 野崎隠岐守綱吉 |  | none |
 | Q135579218 | Ne no Kuni | 根之堅州国 |  | none |
 | Q135579220 | Suga-no-Sawa Kofun Cluster | 菅ノ沢古墳群 |  | none |
-| Q135579221 | Suga-no-Sawa Gobyō Kofun | 菅ノ沢御廟古墳 |  | none |
 | Q135579222 | Imajuku Kofun Group | 今宿古墳群 |  | none |
 | Q135579243 | calendar makers | 暦師 |  | none |
-| Q135579270 | Myokenzan Kofun (Muko City) | 妙見山古墳 (向日市) |  | none |
 | Q135579295 | Iwakia Betsuō Tomb | 磐城別王墓 |  | none |
-| Q135579307 | Jippāramitsu-ji | 十波羅蜜寺 |  | none |
 | Q135579324 | Izumo-taisha Misanjin Church | 出雲大社三神教会 |  | none |
 | Q135579327 | Izumo-taisha Shonai Church | 出雲大社庄内教会 |  | none |
 | Q135579341 | Izumo-taisha Karatsu Church | 出雲大社唐津教会 |  | none |
 | Q135579343 | Izumo-taisha Takachiho Church | 出雲大社高千穂教会 |  | none |
 | Q135579347 | Iyo Shichifukujin Sacred Sites | 伊予七福神霊場 |  | none |
 | Q135579348 | Miyao Katsuyoshi | 宮王勝良 |  | none |
-| Q135579349 | Sengetakaaki | 千家尊愛 |  | none |
-| Q135579350 | Sengetakamochi | 千家尊有 |  | none |
 | Q135579351 | Miyao Shigemaru | 宮王重丸 |  | none |
-| Q135579352 | Sengemichihiko | 千家達彦 |  | none |
 | Q135579531 | Pre-Ainu theory | プレ・アイヌ説 |  | none |
