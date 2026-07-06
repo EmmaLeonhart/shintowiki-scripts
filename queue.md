@@ -64,16 +64,6 @@ it (or de-ill if there's no reasonable match). Best-effort; imperfect beats a de
   (mirror the category_translation one) if the volume returns; a handful get done by hand.
   Retire `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (superseded by this policy).
 
-## 7. Full audit of Emma's items → suggest properties / edits / changes (awaiting her list/image)
-
-Emma 2026-07-06 (end-of-queue = not-immediate, NOT parked): she will provide a set of items (via an
-image / a full list). The task: look over ALL of them individually and give suggestions — Wikidata
-properties to add, edits, or other changes per item. A genuine per-item review, not a skim.
-
-- [ ] When Emma provides the items: review each one and return concrete suggestions (properties/
-  edits/changes). Ask her for the list/image if not yet given.
-
-
 ## 8. Audit pipeline-added aliases + clean up the damage
 
 Root cause fixed (`b11f8b54`: label-only, no aliases — the pipeline had reused other same-named items'
@@ -94,6 +84,13 @@ Wikidata:
 - [ ] SPARQL: Shinto shrines (P31 Q845945) with ja labels; group, find names used ≥10×; audit those
   clusters (disambiguation / data-quality). BLOCKED-ON-EXTERNAL: WDQS 429-outaged 2026-07-06 — retry
   when it recovers.
+
+## 10. Repo-file audit — sweep junk (longer horizon, NOT for today)
+
+- [ ] Audit the repo's files and remove crud no longer needed now that its source task is done — e.g.
+  root `2026-01-01.txt` (the durability audit input; durability sweep is finished) and the
+  durability scratch/`_batchN_url.txt` files. Genuine file-by-file pass, delete-don't-archive. Low
+  priority; do it later, not today.
 
 ## Pinned tail (keep last, always)
 
