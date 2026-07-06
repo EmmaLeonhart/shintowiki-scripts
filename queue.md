@@ -81,6 +81,28 @@ entities and leave a `"redirects"` entity untouched. The stale QID still resolve
   transform, orchestrator saves); throttle + 429-bail; cache QID→target per run. This is *durable*
   maintenance (merges happen forever), unlike the disposable recreation repair.
 
+## 6. Create Wikidata items for jawiki-only categories (Emma — end of queue; auto-open QS on GitHub)
+
+Shintowiki categories that have a jawiki category but NO Wikidata item should get a
+**Wikimedia-category item** created via QuickStatements — the easiest kind: `P31=Q4167836`
+(Wikimedia category) + `Sjawiki` sitelink to the jawiki category + English label + link to our
+shintowiki category (P11250) and fandom category. Reads work from dev (miraheze API reachable
+with the compliant UA), so this is buildable locally.
+
+**Finding (2026-07-05):** the obvious source `[[Category:Emmabot jawiki categories with only
+jawiki category and no wikidata]]` (populated by `shinto_miraheze/enrich_jawiki_categories.py`)
+has only **10 members, mostly generic maintenance junk** (`Categories added by templates`,
+`Template:SKOSlink`, Commons-dup-media, `1940年代設立の日本企業`) — not Shinto content categories.
+So the real target set is either already drained or must be found by a broader query: shintowiki
+categories carrying a `[[ja:Category:…]]` interwiki but no `{{wikidata link}}`. Japanese-named
+cats need an English label (overlaps the category-translation backlog); English-named ones are
+trivial.
+
+- [ ] Determine the real target set (broad query, not just the 10-member tracking cat), then a
+  generator emitting `CREATE` blocks (`P31=Q4167836` + `Sjawiki` + `Len` + P11250/fandom link).
+  **After generation, auto-open the QuickStatements `.txt` on GitHub** (per Emma) so she can run
+  it. Skip the junk maintenance categories.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
