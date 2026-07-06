@@ -2,12 +2,6 @@
 # Labels = en + ja + existing langlinks (no translit expansion); +P31/P279, P17, description, family relations (live-QID targets only), sitelink where safe.
 # Duplicates (relinked to live items) and untyped items are excluded.
 
-# recreate Amanomikemunushi no Kami (was Q135330122) — from [[Amanomikemunushi-no-Kami]]
-CREATE
-LAST	Len	"Amanomikemunushi no Kami"
-LAST	Den	"kami (Shinto deity)"
-LAST	P31	Q524158
-
 # recreate Chōkui no Sei (was Q135490496) — from [[August 5 (Lunisolar)]]
 CREATE
 LAST	Len	"Chōkui no Sei"
@@ -896,12 +890,6 @@ CREATE
 LAST	Len	"Wa mirrors"
 LAST	Lja	"和鏡"
 LAST	Den	"type of Japanese bronze mirror"
-LAST	P279	Q1041984
-
-# recreate imitation mirrors (was Q135551121) — from [[Bōseikyō]]
-CREATE
-LAST	Len	"imitation mirrors"
-LAST	Den	"type of imitation bronze mirror"
 LAST	P279	Q1041984
 
 # recreate Takenami Site (was Q135551133) — from [[Bikuniyama Yokoanabo Cluster]]

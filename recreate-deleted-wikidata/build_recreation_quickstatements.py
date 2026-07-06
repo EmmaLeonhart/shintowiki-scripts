@@ -88,6 +88,7 @@ def block(rec, deleted_qid):
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     blocks, skipped_dup, skipped_untyped, skipped_excl = [], 0, 0, 0
+    skipped_malformed, malformed = 0, []
     for f in sorted(glob.glob(os.path.join(ITEMS, "Q*.json"))):
         rec = json.load(open(f, encoding="utf-8"))
         deleted_qid = os.path.splitext(os.path.basename(f))[0]
@@ -101,6 +102,15 @@ def main():
         if not enr.get("p31"):
             skipped_untyped += 1
             continue
+        # A romaji value in the ja slot means the ILL was authored wrong (romaji where
+        # the Japanese title belongs). Don't recreate a malformed ill — it needs fixing
+        # to point at the actual thing (Emma 2026-07-06). Held out of recreation.
+        ja = ((rec.get("fandom") or {}).get("langlinks") or {}).get("ja")
+        if ja and not _has_cjk(ja):
+            skipped_malformed += 1
+            malformed.append((rec.get("recovered_label") or "", ja,
+                              ((rec.get("fandom") or {}).get("host_pages") or ["?"])[0]))
+            continue
         blocks.append("\n".join(block(rec, deleted_qid)))
 
     with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
@@ -112,7 +122,9 @@ def main():
 
     print(f"Wrote {len(blocks)} CREATE blocks to {os.path.relpath(OUT, HERE)}")
     print(f"  skipped: {skipped_dup} duplicates (relinked), {skipped_untyped} untyped, "
-          f"{skipped_excl} excluded non-items")
+          f"{skipped_excl} excluded non-items, {skipped_malformed} malformed-ill (romaji ja)")
+    for en, ja, host in malformed:
+        print(f"    MALFORMED ILL (fix, don't recreate): {en} — ja='{ja}' on [[{host}]]")
     print("\n=== sample block ===")
     print(blocks[0] if blocks else "(none)")
     return 0
