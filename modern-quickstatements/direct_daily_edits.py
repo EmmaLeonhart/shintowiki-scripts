@@ -60,6 +60,7 @@ ATOMIC_FILES = [
     "kana_redundant_remove.txt",
     "migrate_ritsuryo_funding_remove.txt",
     "migrate_ritsuryo_funding_underspecified_remove.txt",
+    "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
 ]
 
 

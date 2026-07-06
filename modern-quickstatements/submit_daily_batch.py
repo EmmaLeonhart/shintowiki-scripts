@@ -45,6 +45,7 @@ ATOMIC_FILES = [
     "kana_redundant_remove.txt",              # Remove redundant raw katakana (qualifier/top-level) AFTER the カミノヤシロ qualifier is confirmed present
     "migrate_ritsuryo_funding_remove.txt",    # Remove P31 ritsuryō funding values once P13723 is confirmed
     "migrate_ritsuryo_funding_underspecified_remove.txt",  # Remove P31=Kanpei-sha when more specific funding type present
+    "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
 ]
 
 

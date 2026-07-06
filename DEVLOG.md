@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Deferred relations → daily-edit queue + merged-QID replacement (Emma)
+
+Emma ran the 167 recreation QuickStatements (items created; she changed some en labels but kept
+the ja ones). Wired the follow-up: `match_new_qids.py` matches each recreated candidate to its
+new QID by EXACT ja-kanji label + P31 verification (ja only — en changed; verified on a 3-item
+sample: 鐘匱の制→Q140445965, 中臣祓訓解→Q140445966, 中臣池守→Q140445967), records `recreated_qid`,
+relinks the `qid=DELETED_QID` ills on the git_synced pages to the new QIDs, and emits the DEFERRED
+family relations (P22/P25/P40/P3373 whose target relative existed only after creation) into
+`modern-quickstatements/recreation_relations.txt` — the automated daily-edit queue (added to the
+`ATOMIC_FILES` allowlist in both direct_daily_edits.py + submit_daily_batch.py; drift-guard green).
+Re-adding an existing claim is a Wikidata no-op, so nightly regeneration is idempotent. Also added
+`apply_merged_qids.py` + `merged_qids.txt`: when Emma merges a duplicate among the recreated items
+(first: Q140446120 → Q11587884), it rewrites that QID → the surviving one across the git_synced
+ills + the relations queue + item JSONs. A 10 PM cron runs both.
+
 ## 2026-07-06 — Unit tests for the 3 new recreation scripts (work-loop tick)
 
 Filled a test-coverage gap: the session's new scripts (`build_recreation_quickstatements.py`,
