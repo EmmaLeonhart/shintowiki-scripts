@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Unit tests for the 3 new recreation scripts (work-loop tick)
+
+Filled a test-coverage gap: the session's new scripts (`build_recreation_quickstatements.py`,
+`relink_duplicate_ills.py`, `dedup_recreation_candidates.py`) had no unit tests despite the
+repo testing every recreate script. Added `test_build_recreation_quickstatements.py` (qs
+escaping, `_has_cjk`, `_valid_label` romaji-ja rejection, `block()` for human/place/subclass
++ the romaji-ja label guard) and `test_relink_duplicate_ills.py` (`relink_ill` qid-swap +
+dd-drop + param preservation, `title_to_filename` forbidden-char encoding matching the sync).
+73 tests green (was 62). Also started the queued User:Immanuelle/-drafts analysis but the
+enumeration is noisy — a plain `User:Immanuelle/` scan over the git-synced pages returns 2212
+hits (talk sigs, year subpages, all refs), not just the ill draft params; needs a precise
+extraction (only `13=User:Immanuelle/…` inside DELETED_QID ills) and its value is lower now
+that recreation runs off minimal QuickStatements, not draft content.
+
 ## 2026-07-06 — Broad dedup sweep over recreation candidates (181 → 167)
 
 Emma-requested pre-recreation dedup: `dedup_recreation_candidates.py` searches Wikidata by

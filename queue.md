@@ -201,9 +201,12 @@ readiness: `recreate-deleted-wikidata/items/_recreation_readiness.md`. Remaining
   duplicates → relink to the live QID. **Un-sync when resolved**: remove `[[Category:Git synced
   pages]]` from the local file and the next sync drops both the on-wiki tag and the local copy.
 - [ ] **Analyze the `User:Immanuelle/` draft pages** (Emma 2026-07-06): the ills carry
-  `13=User:Immanuelle/<name>` draft targets. Enumerate those draft pages on shinto.miraheze.org,
-  read them, and try to deal with them (they may hold intended content for the deleted items /
-  be promotable / be stale). Feeds the recreation dataset.
+  `13=User:Immanuelle/<name>` draft targets. **NOTE (2026-07-06):** a plain `User:Immanuelle/`
+  scan over the git-synced pages returns **2212** hits (talk-page sigs, year subpages, every ref)
+  — NOT just the ill draft params. Needs a PRECISE extraction: only the `13=User:Immanuelle/…`
+  param INSIDE `{{ill|…|qid=DELETED_QID}}` templates. Lower priority now that recreation runs off
+  minimal QuickStatements (not draft content); pursue if we want to enrich recreated items or
+  resolve the untyped tail from the drafts.
 - [ ] Optional per-item data for the ready set: **P131** (admin territory, from host-page place)
   and coordinates — authoritative only.
 Recreation itself + the min-claim-set + verifying the dedup-flagged are **NEEDS-DECISION (Emma)**
