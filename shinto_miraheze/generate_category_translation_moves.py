@@ -339,6 +339,66 @@ def load_existing_sources() -> set[str]:
     return sources
 
 
+def resolve_all(existing: "set[str] | None" = None):
+    """Run the deterministic resolution over every not-yet-in-CSV Japanese
+    category. Returns ``(new_rows, residual, complete)`` where new_rows is a list
+    of ``(source, dest, reason)`` confidently resolved, residual is the list of
+    category names (no ``Category:`` prefix) with no confident English name, and
+    complete is False if the wiki enumeration was truncated. Shared by main()
+    (writes the CSV/report) and build_category_translation_queue.py (queues the
+    residual for cloud agentic RAG). Network: wiki + Wikidata reads."""
+    if existing is None:
+        existing = load_existing_sources()
+    cats, complete = get_subcats()
+    todo = [c for c in cats if ("Category:" + c) not in existing]
+
+    qids = fetch_category_qids(todo)
+    wd_names = fetch_wd_category_names(list(qids.values()))
+
+    place_stems = []
+    for c in todo:
+        if qids.get(c) in wd_names:
+            continue
+        pp = parse_place_pattern(c)
+        if pp:
+            place_stems.append(pp[0])
+    place_res = fetch_place_resolutions(place_stems) if place_stems else {}
+
+    new_rows: list[tuple[str, str, str]] = []
+    residual: list[str] = []
+    for c in todo:
+        src = "Category:" + c
+        dest = None
+        reason = ""
+        q = qids.get(c)
+        if q and q in wd_names:
+            dest = wd_names[q]
+            reason = f"wikidata {q} enwiki/label category"
+        if dest is None:
+            d = dated_transform(c)
+            if d:
+                dest = d
+                reason = "dated maintenance transform"
+        if dest is None and c in _TEMPLATE_LOOKUP:
+            dest = _TEMPLATE_LOOKUP[c]
+            reason = "template lookup"
+        if dest is None:
+            pp = parse_place_pattern(c)
+            if pp:
+                stem, fmt = pp
+                info = place_res.get(stem)
+                if info:
+                    cand = place_category(fmt, info[0], info[1])
+                    if cand:
+                        dest = cand
+                        reason = f"place gazetteer (jawiki '{stem}' → enwiki)"
+        if dest and dest != src:
+            new_rows.append((src, dest, reason))
+        else:
+            residual.append(c)
+    return new_rows, residual, complete
+
+
 def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -357,71 +417,7 @@ def main():
     existing = load_existing_sources()
     print(f"Existing category_moves.csv sources: {len(existing)}")
 
-    cats, complete = get_subcats()
-    print(f"Live subcats in [[Category:{SOURCE_CATEGORY}]]: {len(cats)}"
-          f"{'' if complete else '  (PARTIAL — enumeration was truncated)'}")
-
-    todo = [c for c in cats if ("Category:" + c) not in existing]
-    print(f"Not yet in CSV: {len(todo)}")
-
-    # Phase 1 data: QIDs then their English category names.
-    qids = fetch_category_qids(todo)
-    print(f"  carry a {{{{wikidata link|Q}}}}: {len(qids)}")
-    wd_names = fetch_wd_category_names(list(qids.values()))
-    print(f"  QIDs resolving to an English Category: {len(wd_names)}")
-
-    # Phase 4 data: place stems for the "<place>の<topic>" cats that phases 1–3
-    # won't resolve (no category-level QID). Resolve them authoritatively via the
-    # jawiki article → enwiki sitelink. Only stems from cats not already
-    # QID-anchored are worth fetching.
-    place_stems = []
-    for c in todo:
-        if qids.get(c) in wd_names:
-            continue  # phase 1 will win
-        pp = parse_place_pattern(c)
-        if pp:
-            place_stems.append(pp[0])
-    place_res = fetch_place_resolutions(place_stems) if place_stems else {}
-    print(f"  place stems to resolve: {len(set(place_stems))}  "
-          f"(jawiki→WD items: {len(place_res)})")
-
-    new_rows: list[tuple[str, str, str]] = []   # (source, dest, reason)
-    residual: list[str] = []
-    for c in todo:
-        src = "Category:" + c
-        dest = None
-        reason = ""
-        # 1. Wikidata-anchored.
-        q = qids.get(c)
-        if q and q in wd_names:
-            dest = wd_names[q]
-            reason = f"wikidata {q} enwiki/label category"
-        # 2. Dated maintenance.
-        if dest is None:
-            d = dated_transform(c)
-            if d:
-                dest = d
-                reason = "dated maintenance transform"
-        # 3. Template lookup.
-        if dest is None and c in _TEMPLATE_LOOKUP:
-            dest = _TEMPLATE_LOOKUP[c]
-            reason = "template lookup"
-        # 4. Place-name gazetteer (authoritative jawiki→enwiki place resolution).
-        if dest is None:
-            pp = parse_place_pattern(c)
-            if pp:
-                stem, fmt = pp
-                info = place_res.get(stem)
-                if info:
-                    cand = place_category(fmt, info[0], info[1])
-                    if cand:
-                        dest = cand
-                        reason = f"place gazetteer (jawiki '{stem}' → enwiki)"
-
-        if dest and dest != src:
-            new_rows.append((src, dest, reason))
-        else:
-            residual.append(c)
+    new_rows, residual, complete = resolve_all(existing)
 
     print(f"\nResolved (new rows): {len(new_rows)}  |  Residual (no confident "
           f"English name): {len(residual)}")

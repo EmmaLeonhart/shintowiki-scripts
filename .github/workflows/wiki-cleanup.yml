@@ -546,11 +546,21 @@ jobs:
           shinto_miraheze/run_step.sh "Deprecated: generate_category_translation_moves" \
             python3 shinto_miraheze/generate_category_translation_moves.py --apply --run-tag "${RUN_TAG}"
 
+      # Queue item 5: fold any cloud-RAG-completed residual translations (the
+      # remote routine filled the TRANSLATED marker in category_translation/*.wiki)
+      # into category_moves.csv BEFORE move_categories consumes it, and delete the
+      # finished work-files. No wiki edits — local files only.
+      - name: "cat-translation: collect RAG answers into category_moves.csv"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
+          python3 shinto_miraheze/collect_category_translations.py --apply || echo "collector non-fatal"
+
       - name: "Commit: category_moves.csv + residual report"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
-          git add shinto_miraheze/category_moves.csv docs/category_translation_residual.md 2>/dev/null || true
+          git add shinto_miraheze/category_moves.csv docs/category_translation_residual.md category_translation/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No category-translation changes to commit."
           else

@@ -24,7 +24,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -36,6 +36,17 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: pip install requests
+
+      # Queue item 5: refresh the category-translation residual work-files so the
+      # remote routine always has fresh Japanese-category-name RAG items. Reads
+      # the wiki + Wikidata (no creds needed), skips categories already queued,
+      # writes category_translation/*.wiki. Non-fatal so a wiki hiccup doesn't
+      # block the queue rebuild.
+      - name: Populate category-translation residual queue
+        run: python3 shinto_miraheze/build_category_translation_queue.py || echo "populate non-fatal"
+
       - name: Build queue
         run: python3 remote_queue.py
 
@@ -43,8 +54,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet remote_queue.json; then
-            echo "remote_queue.json unchanged; nothing to commit."
+          git add category_translation/ 2>/dev/null || true
+          if git diff --quiet remote_queue.json && git diff --cached --quiet; then
+            echo "remote_queue.json + queue files unchanged; nothing to commit."
             exit 0
           fi
           git add remote_queue.json

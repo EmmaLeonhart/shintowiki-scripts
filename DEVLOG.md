@@ -46,6 +46,26 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — Queue #5: agentic-RAG pipeline for the ENTIRE category-translation residual
+
+Emma 2026-07-06: the category-translation residual is NOT human-only / out of scope — "do agentic RAG
+on the entire residual going 100% all in." Built the full cloud pipeline:
+- Refactored `generate_category_translation_moves.py` to expose `resolve_all()` → `(new_rows,
+  residual, complete)`, so the residual is reusable.
+- `build_category_translation_queue.py`: for every residual category, fetches a member sample + the
+  category wikitext and writes a `category_translation/<title>.wiki` work-file with a `SOURCE` marker
+  + empty `TRANSLATED` marker (read-only wiki; skips already-queued).
+- `remote_queue.py`: new `CATEGORY_TRANSLATION_INSTRUCTION` + `_build_section("category_translation")`
+  source, so the cloud remote routine researches each and fills the `TRANSLATED` marker (with clear
+  rules: use Wikidata/interwiki anchor or real enwiki convention, never transliterate blindly; `SKIP`
+  with a reason if genuinely untranslatable).
+- `collect_category_translations.py`: folds finished answers into `category_moves.csv` (validates
+  `Category:` prefix, ≠ source, dedupes) and deletes the finished files; the monthly `move_categories`
+  performs the actual move.
+- CI: collector wired into `wiki-cleanup.yml` before `move_categories`; populator wired into
+  `build-remote-queue.yml` before the queue rebuild (timeout 15m, commits the work-files). +6 tests.
+462 passed. This replaces the wrong "residual is out of scope / human-only" framing.
+
 ## 2026-07-06 — cleanup-loop #1: fixed the ACTUAL current failure — site-build push race
 
 The old-code run (28773280692) finally finished — FAILED at 8h18m, but NOT on the category

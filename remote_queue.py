@@ -145,6 +145,36 @@ NEED_TRANSLATION_INSTRUCTION = (
     "file from the repo, so only drop it when translation is genuinely done."
 )
 
+CATEGORY_TRANSLATION_INSTRUCTION = (
+    "This file is a WORK ITEM for translating a Japanese-named wiki category to "
+    "its canonical English name — the residual that the deterministic resolver "
+    "(generate_category_translation_moves.py) could NOT confidently name, routed "
+    "here for agentic research. The file has a `<!-- SOURCE: Category:... -->` "
+    "marker (the Japanese category), an empty `<!-- TRANSLATED: -->` marker for "
+    "your answer, a sample of the category's members, and the category page's own "
+    "wikitext.\n\n"
+    "Your job: determine the correct English `Category:` title and write it into "
+    "the TRANSLATED marker, e.g. `<!-- TRANSLATED: Category:Shinto shrines in "
+    "Kyoto -->`. RESEARCH it — do not transliterate or guess blindly:\n"
+    "  * Read the member sample to see what the category actually contains.\n"
+    "  * Check the category wikitext for a `{{wikidata link|Q...}}` or an "
+    "interwiki `[[ja:...]]`/`[[Category:ja:...]]` hint — if a Wikidata "
+    "Wikimedia-category item exists, its enwiki category sitelink is authoritative.\n"
+    "  * Otherwise map to the REAL enwiki category-naming convention for that topic "
+    "(e.g. `Xの神社` → `Shinto shrines in X`, `Xの寺院` → `Buddhist temples in X`, "
+    "`Xの重要文化財` → `Important Cultural Properties of X`, `X郡` → the district's "
+    "English article title, `<sect>の寺院` → `<English sect name> temples`). Resolve "
+    "place names authoritatively via the jawiki article's enwiki sitelink, not by "
+    "romanizing.\n"
+    "  * The destination MUST start with `Category:` and differ from the source.\n\n"
+    "When you have written the TRANSLATED marker, you are DONE with this file — a "
+    "deterministic collector (collect_category_translations.py) folds it into "
+    "category_moves.csv and deletes it; the monthly move_categories step performs "
+    "the actual page move. If the category is GENUINELY untranslatable (nonsense, "
+    "no discernible meaning even after research), leave TRANSLATED empty and add a "
+    "line `<!-- SKIP: <short reason> -->` so a human can look — never invent a name."
+)
+
 MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_KANJI_KNOWN_TEMPLATE = (
     "This shrine disambiguation page (tagged [[Category:Shrine "
     "disambiguations]]) doesn't have the auto-generated `== Shrines "
@@ -486,6 +516,11 @@ def build_queue() -> list[dict]:
         )
     )
     items.extend(_build_no_autogen_disambig_items())
+    # Queue item 5: agentic RAG the category-translation residual. Each work-file
+    # is a Japanese category needing an English name (see build_category_
+    # translation_queue.py); the worker fills the TRANSLATED marker and
+    # collect_category_translations.py folds answers into category_moves.csv.
+    items.extend(_build_section("category_translation", CATEGORY_TRANSLATION_INSTRUCTION))
     # Shuffle so the consumer picks pages in random order. With no cursor-based
     # statefulness (work is gated purely on file-presence + category), random
     # order keeps the consumer from repeatedly hitting the same early pages —
