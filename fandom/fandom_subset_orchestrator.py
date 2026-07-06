@@ -14,8 +14,10 @@ For every Fandom page F, compare against the miraheze page S at the
   3. S does NOT exist               → DELETE F.
   4. S exists and is NOT a redirect → SKIP (real equivalent exists;
      content sync is the existing sync scripts' job, not ours).
-  5. S exists and IS a redirect:
-       * F is also a redirect        → DELETE F.
+  5. S exists and IS a redirect (a redirect IS a valid equivalent — it points
+     at a real target on the miraheze side):
+       * F is also a redirect        → SKIP (keep F; the miraheze redirect
+         counts as the equivalent — do NOT orphan-delete it).
        * F is NOT a redirect         → COPY OVER: overwrite F's wikitext
          with S's redirect wikitext, so Fandom becomes the same redirect.
 
@@ -67,7 +69,12 @@ REPO_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(REPO_ROOT / "shinto_miraheze"))
 from wiki_login import login_with_retry  # noqa: E402
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+# Force UTF-8 stdout without re-wrapping the buffer (wrapping closes it under
+# pytest capture). reconfigure() is a no-op where unavailable.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except (AttributeError, ValueError):
+    pass
 
 FANDOM_HOST = "shinto.fandom.com"
 MIRAHEZE_HOST = "shinto.miraheze.org"
@@ -258,9 +265,13 @@ def decide(title, f_is_redirect, s_status, protected, main_page_titles):
         return "delete", "no Shinto equivalent"
     if s_status == "article":
         return "skip", "Shinto equivalent exists (article)"
-    # s_status == "redirect"
+    # s_status == "redirect": miraheze HAS the page — a redirect pointing at a
+    # real target — so it counts as a valid equivalent. Never delete the fandom
+    # page for "no equivalent" just because both sides are redirects (Emma
+    # 2026-07-06: count/follow the miraheze redirect before deleting; this was
+    # wrongly orphaning Template:Ill every few days).
     if f_is_redirect:
-        return "delete", "Shinto is redirect, Fandom is redirect"
+        return "skip", "Shinto redirect is a valid equivalent"
     return "copyover", "Shinto is redirect, Fandom is real content"
 
 
