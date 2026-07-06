@@ -46,6 +46,18 @@ categories gone) to the wiki, then orphan-drop the local copies over the next 1�
 
 ---
 
+## 2026-07-06 — cleanup-loop #1: fixed the ACTUAL current failure — site-build push race
+
+The old-code run (28773280692) finally finished — FAILED at 8h18m, but NOT on the category
+orchestrator (that ran GREEN in 6m11s, validating the wall-clock fix + mwclient cap). The real
+failure was `generate-pages / build` → "Commit updated _site to repo": a single `git push` with no
+retry got `! [rejected] main -> main (fetch first)` because sibling cleanup-loop jobs (state commits,
+syncs) push to main concurrently — the step exit-1'd and reddened the whole run. Fixed
+`generate-pages.yml`: fetch-rebase-retry loop (5 attempts, `-hard` reset + re-apply on _site
+conflict) + non-fatal exit on persistent failure (mirrors `commit_state.sh`'s load-bearing retry;
+_site is cosmetic — Pages deploys from the uploaded artifact, not the repo commit, so a push race
+must never redden the run). YAML + bash syntax validated. Validates green on the next fire.
+
 ## 2026-07-06 — Deleted-QID-ill audit COMPLETE — un-synced the last 31 resolved stragglers (todo)
 
 Promoted todo.md's "audit the git-synced deleted-QID-ill pages" (queue was fully blocked). Audited

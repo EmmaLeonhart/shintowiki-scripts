@@ -93,13 +93,41 @@ jobs:
             git reset HEAD -- . > /dev/null 2>&1 || true
             git checkout -- . || true
             git clean -fd _site/ || true
-            # Pull latest from remote (retry once on failure)
-            git pull --rebase || git pull --rebase
-            # Re-apply our generated files
+            git fetch origin "$GITHUB_REF_NAME" || true
+            git rebase "origin/$GITHUB_REF_NAME" || git rebase --abort || true
+            # Re-apply our generated files and commit
             cp -r /tmp/_site_backup/* _site/
             git add -f _site/
             git commit -m "chore: update _site from pages build [skip ci]"
-            git push
+            # Push with fetch-rebase-retry. Sibling cleanup-loop jobs (state
+            # commits, syncs) push to main concurrently, so a single push races
+            # and gets rejected (! [rejected] main -> main). Without a retry loop
+            # this step reddened the WHOLE cleanup-loop run — the 2026-07-06
+            # failure root cause. Same load-bearing pattern as commit_state.sh.
+            pushed=false
+            for attempt in 1 2 3 4 5; do
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then
+                echo "pushed _site on attempt $attempt"; pushed=true; break
+              fi
+              echo "push rejected (attempt $attempt/5); rebasing on updated remote"
+              git fetch origin "$GITHUB_REF_NAME" || true
+              if ! git rebase "origin/$GITHUB_REF_NAME"; then
+                # _site conflicts with a concurrent change: our freshly-built
+                # copy wins — reset to remote and re-apply.
+                git rebase --abort || true
+                git reset --hard "origin/$GITHUB_REF_NAME"
+                cp -r /tmp/_site_backup/* _site/
+                git add -f _site/
+                git commit -m "chore: update _site from pages build [skip ci]"
+              fi
+              sleep $((attempt * 3))
+            done
+            # _site is cosmetic (Pages deploys from the uploaded artifact, not the
+            # repo commit), so a persistent push race must NOT redden the run —
+            # the next build refreshes it. Mirror commit_state.sh: warn, exit 0.
+            if [ "$pushed" != "true" ]; then
+              echo "WARNING: _site push failed after 5 attempts; next build updates it."
+            fi
           fi
 
       - name: Upload artifact
