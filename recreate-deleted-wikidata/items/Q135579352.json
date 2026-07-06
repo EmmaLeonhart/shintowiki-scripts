@@ -253,6 +253,13 @@
     "p31": "Q5",
     "p31_label": "human",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "description": "(1922-2015)",
+        "label": "Michihiko Senge",
+        "qid": "Q97626080"
+      }
+    ],
     "romaji_reading": "Sengemichihiko",
     "type_confidence": "medium",
     "type_source": "izumo-priest-clan"

@@ -253,6 +253,7 @@
     "p31": "Q5",
     "p31_label": "human",
     "p31_property": "P31",
+    "possible_existing": [],
     "romaji_reading": "Sengetakamochi",
     "type_confidence": "medium",
     "type_source": "izumo-priest-clan"

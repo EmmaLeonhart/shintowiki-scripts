@@ -253,6 +253,13 @@
     "p31": "Q5",
     "p31_label": "human",
     "p31_property": "P31",
+    "possible_existing": [
+      {
+        "description": "飛鳥時代の貴族・漢詩人",
+        "label": "Nakatomi no Ōshima",
+        "qid": "Q45830084"
+      }
+    ],
     "romaji_reading": "Nakatomi no Ōshima",
     "type_confidence": "medium",
     "type_source": "name-pattern"
