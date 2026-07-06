@@ -315,6 +315,20 @@ def gurmukhify(name):
     return "".join(out)
 
 
+_BRAHMI_SCRIPT = {"my": "Burmese", "km": "Khmer", "lo": "Lao", "dz": "Tibetan", "shn": "Shan"}
+
+
+def brahmify(name, lang):
+    """Romanized Japanese -> a Brahmic abugida (Burmese/Khmer/Lao/Tibetan/Shan) via
+    hindify (-> Devanagari) then Aksharamukha's inter-Brahmic conversion, the standard
+    tool for cross-Brahmic transliteration (verifiable, not hand-rolled)."""
+    deva = hindify(name)
+    if not deva:
+        return None
+    from aksharamukha import transliterate
+    return transliterate.process("Devanagari", _BRAHMI_SCRIPT[lang], deva) or None
+
+
 # Marathi (deep tail): same Devanagari script as Hindi, but the existing labels
 # render names with explicit aa-matras (कामिकावा, not कमिकव) + the तीर्थ suffix.
 # So: hindify, then insert a Devanagari aa-matra after each inherent-a consonant
@@ -855,6 +869,11 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "mai": return "महा मंदिर" if is_grand else "मंदिर"  # Devanagari, same word as hi
         if lang == "new": return "महा मंदिर" if is_grand else "मंदिर"  # Newari (Nepal Bhasa), Devanagari
         if lang == "pa": return 'ਵੱਡਾ ਮੰਦਿਰ' if is_grand else 'ਮੰਦਿਰ'  # Punjabi, Gurmukhi
+        if lang == "my": return 'မဟာ မံဒိရ' if is_grand else 'မံဒိရ'  # Burmese, transliterated mandir
+        if lang == "km": return 'មហា មំទិរ' if is_grand else 'មំទិរ'  # Khmer
+        if lang == "lo": return 'ມະຫາ ມັນທິຣະ' if is_grand else 'ມັນທິຣະ'  # Lao
+        if lang == "dz": return 'མཧཱ་མཾདིར' if is_grand else 'མཾདིར'  # Tibetan
+        if lang == "shn": return 'မႁႃ မံၻိရ' if is_grand else 'မံၻိရ'  # Shan
         if lang == "as": return _AS_MANDIR
         if lang == "ur": return "مندر"
         if lang == "hu":
@@ -961,6 +980,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "pa":
         pa_name = gurmukhify(name)
         return f"{pa_name} {get_affix()}" if pa_name else None
+    if lang in _BRAHMI_SCRIPT:
+        b_name = brahmify(name, lang)
+        return f"{b_name} {get_affix()}" if b_name else None
     if lang == "as":
         as_name = assamify(name)
         if not as_name:
@@ -992,7 +1014,7 @@ ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
              "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr",
              "nn", "ceb", "mai", "as", "ur",
-             "pl", "ro", "fi", "cs", "sl", "th", "new", "pa", "mad"]
+             "pl", "ro", "fi", "cs", "sl", "th", "new", "pa", "mad", "my", "km", "lo", "dz", "shn"]
 
 
 def make_sparql(lang_code):

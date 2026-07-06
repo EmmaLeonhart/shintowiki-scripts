@@ -22,15 +22,15 @@ def test_source_langs_not_treated_as_todo():
 
 
 def test_uncovered_language_is_todo():
-    # my (Burmese) still has no generator; th gained one (wunsen romaji→Thai)
-    # 2026-07-06; pl gained one in the 2026-07-04 rung-2 tier.
-    rows = [("de", 267), ("pl", 35), ("th", 33), ("my", 25)]
+    # cdo (Min Dong — mixed Chinese chars + Bàng-uâ-cê romanization, not a plain
+    # transliteration) still has no generator; th/my/pa/new/mad/km/lo/dz/shn all
+    # gained one 2026-07-06 (wunsen for Thai, Aksharamukha for the Brahmic set).
+    rows = [("de", 267), ("my", 25), ("th", 33), ("cdo", 5)]
     covered, todo = r.split_coverage(rows)
     cov_langs = {c["lang"] for c in covered}
     todo_langs = {c["lang"] for c in todo}
-    assert {"de", "pl", "th"} <= cov_langs
-    assert "my" in todo_langs
-    assert "th" not in todo_langs
+    assert {"de", "my", "th"} <= cov_langs
+    assert "cdo" in todo_langs
 
 
 def test_todo_sorted_by_count_desc():

@@ -36,7 +36,7 @@ jobs:
         # hanja + pykakasi: needed since test_shikinaisha_lists.py imports the
         # shikinaisha-list generator, which pulls the Korean pipeline (same
         # dep list as label-generator-regenerate.yml).
-        run: pip install pytest requests mwclient opencc-python-reimplemented hanja pykakasi wunsen
+        run: pip install pytest requests mwclient opencc-python-reimplemented hanja pykakasi wunsen aksharamukha
 
       - name: Run tests
         run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ recreate-deleted-wikidata/tests/ fandom/tests/ -q
