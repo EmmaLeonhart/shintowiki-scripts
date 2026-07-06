@@ -103,8 +103,14 @@ attaches them once the item exists.
 (`Emmabot categories with jawiki` = 0); of all shinto cats with a jawiki category, **214 already
 have items, exactly 10 do not** → those 10 ARE the set (currently mostly maintenance/generic
 cats — `Accessibility templates`, `Template:SKOSlink`, `1940年代設立の日本企業`, …; only 3 are
-english-named). Each member's jawiki cat is currently in its wikitext as `[[ja:カテゴリ:X]]` →
-`Sjawiki = "Category:X"`. Verify each jawiki category truly lacks an item before CREATE (avoid dups).
+english-named). **The real pattern to target (Emma 2026-07-05):** interwikis were migrated INTO the wikidata
+link template with an empty QID slot — `{{wikidata link||ja|カテゴリ:X}}` (empty 1st param = no
+Wikidata item; params: ``||`` QID empty, ``ja`` lang, ``カテゴリ:X`` target). This likely exists
+in MANY places, not just categories — a generic "has an interwiki via `{{wikidata link}}` but no
+QID" signal. Build the generator to scan for `{{wikidata link||<lang>|<target>}}` (empty QID) →
+`Sjawiki = "Category:X"` for the jawiki ones. Verify each target truly lacks an item before
+CREATE (avoid dups). (The older `[[ja:カテゴリ:X]]` raw-interwiki form is the pre-migration one
+that's been broken — don't rely on it.)
 
 - [ ] Build the generator (reconciling with the `{{wikidata link}}` interwiki model, not raw
   `[[ja:…]]`), emit the CREATE blocks, and **auto-open the QuickStatements `.txt` on GitHub**
