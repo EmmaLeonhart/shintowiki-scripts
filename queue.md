@@ -52,24 +52,14 @@ category convention (only then a suffix is added) OR human translation — never
   separate sect→English-name path if wanted). Add a suffix only when the enwiki convention is
   verified; otherwise leave for human translation. Low urgency — phases 1/4 already drain the bulk.
 
-## 4. Un-sync the 144 resolved deleted-QID-ill pages
-
-All 144 pages' `{{ill|…|qid=DELETED_QID}}` are now resolved (created/relinked/de-illed) and the
-instruction comment is removed, but they still carry `[[Category:Git synced pages]]`, so
-`git_synced/` is still 144 pages larger than normal.
-
-- [ ] Remove `[[Category:Git synced pages]]` from each resolved page so the next
-  `sync_git_synced_pages` run pushes the final content to the wiki and drops the local copy.
-  Verify the sync pushes-then-drops (doesn't drop before propagating the relinked content).
-
-## 5. EN/FR/ID label-gap regularization
+## 4. EN/FR/ID label-gap regularization
 
 - [ ] Some shrines have labels in one/two of en/fr/id but not all three (old technical failures).
   NEEDS-DECISION (Emma): is this still a distinct same-source cross-fill, or is it subsumed by the
   BFS/multilang drip (which now generates fr+id fills into the drip, confounding a live-Wikidata
   gap query)? Confirm scope, then build the fill where the others exist.
 
-## 6. cdo (Min Dong) transliterator (do last)
+## 5. cdo (Min Dong) transliterator (do last)
 
 cdo = the romanization (Bàng-uâ-cê) of the hanzi the zh label already produces. Approach found +
 started: Wiktionary `|md=` param (神→sìng); no pip lib (`pyfoochow` absent). Partial data in

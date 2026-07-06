@@ -4,6 +4,21 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Un-synced the 113 resolved deleted-QID-ill pages (queue #4)
+
+The pages pulled into `git_synced/` for the deleted-QID ill repair (the set whose instruction
+comment `b9d5a371` removed — 113 files) are all resolved (verified: 0 remaining `qid=DELETED_QID`).
+Per the removed comment's own designed completion ("Remove this category once the page's ills are
+resolved and the next sync will drop the local copy"), stripped **both** `[[Category:Git synced
+pages]]` (un-sync) and the now-stale `[[Category:Pages with deleted QID in ill template]]`
+tracking category (the `deleted_qids_in_ill` op only ever ADDS that tag — no remover exists — so it
+was a stale broken-marker on resolved pages) from all 113 local `.wiki` files. Only the ill-repair
+subset was touched; Emma's ~209 permanent git-synced pages are untouched. The stateless
+`sync_git_synced_pages` will repo-win on the fresh-commit timestamp → push the clean content (both
+categories gone) to the wiki, then orphan-drop the local copies over the next 1–2 sync cycles.
+
+---
+
 ## 2026-07-06 — Category translation: phase-4 の神社/の寺院 fallback suffixes (queue #3)
 
 Extended `generate_category_translation_moves.py`'s place gazetteer with two verified enwiki
