@@ -33,8 +33,8 @@ autonomous follow-up. **Repair is disposable — dumb direct text swaps, no dura
 The fandom bot recurrently deletes `shinto.fandom.com/wiki/Template:Ill` ("no Shinto equivalent")
 because the check doesn't count a miraheze **redirect** as an equivalent.
 
-- [ ] **Mitigation (easy):** make `Template:Ill` git-synced on BOTH wikis so the sync restores it.
-- [ ] **Root cause:** make the fandom delete-orphans check follow miraheze redirect targets first.
+- [ ] **Root cause:** make the fandom delete-orphans check follow miraheze redirect targets first
+  (mitigation done 2026-07-06 — git-synced in both unique dirs).
 
 ## 3. Long-tail language transliterators (build task)
 
