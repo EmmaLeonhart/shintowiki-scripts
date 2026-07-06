@@ -8,6 +8,7 @@
   },
   "enrichment": {
     "description_en": "kami (Shinto deity)",
+    "excluded_reason": "malformed romaji-ja ill already RESOLVED on the wiki (page left the deleted-QID-ill category); stale in this dataset",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -277,6 +278,6 @@
   "ill_recovered": false,
   "qid": "Q135330122",
   "recovered_label": "Amanomikemunushi no Kami",
-  "recreation_candidate": true,
+  "recreation_candidate": false,
   "self_deleted": false
 }

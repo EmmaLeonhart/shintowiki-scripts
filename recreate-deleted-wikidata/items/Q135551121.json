@@ -25,6 +25,13 @@
     "p31": "Q1041984",
     "p31_label": "imitation bronze mirror",
     "p31_property": "P279",
+    "possible_existing": [
+      {
+        "label": "仿製鏡",
+        "note": "malformed romaji-ja ill fixed on wiki → ja=倣製鏡, relinked to live Q130529515",
+        "qid": "Q130529515"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "high",
     "type_source": "researched"
