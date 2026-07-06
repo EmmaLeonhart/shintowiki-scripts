@@ -177,10 +177,11 @@ the enrich pipeline (`enrich_country.py` P17=Japan, `enrich_p31.py` extended, `e
 familytree+infobox, `dedup_humans.py`). State (2026-07-06 latest): **188/213 typed** (P31; 3 are
 P279 subclasses — wa mirror / imitation mirror / calendar maker), 85 with P17=Japan, 38 humans
 (14 with cited family relations incl. the full Kamibe `{{familytree}}` lineage + Abe genealogy;
-4 dedup-flagged), median 59 labels each, descriptions on all typed. Also flagged: **5 duplicates**
+4 dedup-flagged), median 59 labels each, descriptions on all typed. Also flagged: **7 duplicates**
 of live items (balneology→Q789523, Ne no Kuni→Q7555425, herbal baths→Q16496694, Kōshin-dō→Q124683618,
-Futagoyama Park dab→Q110799681 — relink, don't recreate) and **3 non-items EXCLUDED**
-(recreation_candidate=false: Kamado Town address, Kansei 12 & Bunka 1 era-years). Full per-bucket
+Futagoyama Park dab→Q110799681, Kansei 12→Q6875 [year 1800], Bunka 1→Q6894 [year 1804] — relink,
+don't recreate) and **1 non-item EXCLUDED** (recreation_candidate=false: Kamado Town 2510-1, a
+street address). Full per-bucket
 readiness: `recreate-deleted-wikidata/items/_recreation_readiness.md`. Remaining AUTONOMOUS work:
 - [ ] The **~13 still-untyped real items** (Shimabara Sea, court offices 御匙/御鑰, Kyoto's Three
   Kumano, Ōtsuki Hotel, Color Index, Inner Palace, Nakatomi Sakado clan, Kibi no Anaumi,

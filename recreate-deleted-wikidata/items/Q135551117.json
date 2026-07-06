@@ -8,7 +8,6 @@
   },
   "enrichment": {
     "description_en": null,
-    "excluded_reason": "era-year (maps to the Gregorian year item), not its own item",
     "label_count": 2,
     "labels": {
       "en": {
@@ -26,6 +25,13 @@
     "p31": null,
     "p31_label": null,
     "p31_property": null,
+    "possible_existing": [
+      {
+        "label": "1804 (Bunka 1)",
+        "note": "real Japanese era-year = this Gregorian year — DUPLICATE of the live year item; relink, do not recreate",
+        "qid": "Q6894"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "none",
     "type_source": null
@@ -57,6 +63,6 @@
   "ill_recovered": false,
   "qid": "Q135551117",
   "recovered_label": "Bunka 1",
-  "recreation_candidate": false,
+  "recreation_candidate": true,
   "self_deleted": false
 }
