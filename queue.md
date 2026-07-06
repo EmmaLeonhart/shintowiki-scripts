@@ -4,7 +4,8 @@
 annotate it "DONE" in place. Finished work lives in `DEVLOG.md` + `git log`; standing policy in
 `CLAUDE.md`; pipeline/status detail in `docs/`. If a section has no `[ ]` checkbox, it does not
 belong here. **Nothing here is "parked" or "out of scope" — every item gets done; ordering is
-just priority.**
+just priority.** Keep items TERSE (Emma 2026-07-06) — a checkbox + one or two lines; no essays, no
+"LAST TASK"-style labels (there's always more). Numbers are priority order, not fixed identity.
 
 Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives in
 `remote_queue.json` (claude.ai remote routine) — not duplicated here.
@@ -39,20 +40,6 @@ Once the loop runs: the **18 Japanese-named duplicate categories** tagged this s
 
 - [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
-## 3. Category-name translation — deterministic resolvers (done); residual → agentic RAG (item 6)
-
-`[[Category:Japanese language category names]]` (~1186 subcats). The DETERMINISTIC resolvers are done:
-dated-maintenance transform, phase-1 Wikidata-category-anchored (covers ~all QID'd cats incl. `の神社`
-shrines via authoritative enwiki category sitelink), and phase-4 place gazetteer (`の建築物`/`の歴史`/
-`の神社`/`の寺院`/`の重要文化財`, jawiki→enwiki place + P31 gate). These only handle patterns with an
-authoritative Wikidata anchor or a verified enwiki convention.
-
-- [ ] The remaining residual (`の旧県社`, bare `<place>郡` districts, `の画像提供依頼`, `<sect>の寺院`,
-  etc. — auto-refreshed at `docs/category_translation_residual.md`) is NOT out of scope. It is exactly
-  the agentic-RAG target in **item 5** — every one gets an English name via cloud RAG, not left for a
-  human. (The deterministic resolvers just avoid GUESSING inside a mechanical script; RAG does the
-  research the script can't.)
-
 ## 4. cdo (Min Dong) transliterator — maintenance only
 
 Built + wired (gated `cdoify` in `generate_chinese_quickstatements.py`, registered, emits `cdo.txt`;
@@ -62,21 +49,6 @@ work is coverage growth:
 - [ ] (low, recurring) Rerun `python fetch_cdo_readings.py --corpus --apply` after the zh corpus
   grows, to pick up new shrine-name chars. 690 chars currently have no Wiktionary `md=` reading
   (genuine gaps); gated cdo simply withholds labels containing them. Not a blocker.
-
-## 5. Agentic RAG the ENTIRE category-translation residual — 100% all in
-
-Emma 2026-07-06: the residual is NOT human-only / out of scope — RAG every one. The deterministic
-resolvers (item 3) handle only Wikidata-anchored + verified-convention cases; everything else in
-`docs/category_translation_residual.md` (~425 Japanese-script category names) goes through **agentic
-RAG on the cloud** — the same remote-routine mechanism that translates `need_translation/` prose and
-`duplicated_content/`. Go 100% all in: every residual category gets a canonical English name, none
-left behind.
-
-- [ ] Build a `remote_queue.py` source that emits each residual category as an agentic-RAG item:
-  worker reads the category (its members + jawiki/Wikidata context), determines the canonical English
-  `Category:` name (research, not a mechanical guess — the point of RAG), and appends
-  `source,destination` to `category_moves.csv` (consumed by the existing monthly `move_categories`).
-  Uncapped; the cloud consumer paces itself. Verify a sample of proposed names before wiring to move.
 
 ## 6. POLICY: deleted-QID ills → best EXISTING Wikidata item, never recreate
 
@@ -102,12 +74,11 @@ properties to add, edits, or other changes per item. A genuine per-item review, 
   edits/changes). Ask her for the list/image if not yet given.
 
 
-## 8. LAST TASK — audit all pipeline-added aliases + the damage we may have caused
+## 8. Audit pipeline-added aliases + clean up the damage
 
-Emma 2026-07-06 (explicitly the last scheduled task). Origin: Q134736475 had a typo'd English name
-(`Zebshō-ji Temple`) in its ALIASES. Root cause found + the generator fixed (`b11f8b54`: label-only,
-no aliases — the pipeline reused other same-named items' labels as aliases, dragging in their typos +
-disambiguators). But the **damage is already out on Wikidata** and needs a full accounting:
+Root cause fixed (`b11f8b54`: label-only, no aliases — the pipeline had reused other same-named items'
+labels as aliases, dragging in typos like `Zebshō` + comma-disambiguators). Damage is already live on
+Wikidata:
 
 - [ ] Audit every alias the pipeline ADDED to Wikidata (cross-ref the old `Aen` lines we submitted vs
   live Wikidata aliases): how many, which are junk (typos like `Zebshō`, comma-disambiguators like
@@ -120,12 +91,11 @@ disambiguators). But the **damage is already out on Wikidata** and needs a full 
   only `n` can). Gate new labels + flag existing bad ones for the cleanup above. 
 
 
-## 8.5
+## 9. Audit Japanese shrine names repeated ≥10× (Emma)
 
-Two things:
-1. I think what I would say here is essentially that, for the most part, we want to do a particular audit on Japanese language shrines that have commonly repeated names, let's just say repeated 10 or more times. I want you to do an audit of those things here. 
-
-Also, I think that a lot of your explanations are verbose in a way that actively makes it so the queue is not understandable as a queue. Like mentioning this as being the last task. Mentioning eight as the last task when obviously there's going to be more tasks. 
+- [ ] SPARQL: Shinto shrines (P31 Q845945) with ja labels; group, find names used ≥10×; audit those
+  clusters (disambiguation / data-quality). BLOCKED-ON-EXTERNAL: WDQS 429-outaged 2026-07-06 — retry
+  when it recovers.
 
 ## Pinned tail (keep last, always)
 
