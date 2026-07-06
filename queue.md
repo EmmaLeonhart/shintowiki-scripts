@@ -119,6 +119,14 @@ disambiguators). But the **damage is already out on Wikidata** and needs a full 
   romaji label that doesn't decompose into valid mora (e.g. `Zeb` fails: `b` can't be a syllable coda,
   only `n` can). Gate new labels + flag existing bad ones for the cleanup above. 
 
+
+## 8.5
+
+Two things:
+1. I think what I would say here is essentially that, for the most part, we want to do a particular audit on Japanese language shrines that have commonly repeated names, let's just say repeated 10 or more times. I want you to do an audit of those things here. 
+
+Also, I think that a lot of your explanations are verbose in a way that actively makes it so the queue is not understandable as a queue. Like mentioning this as being the last task. Mentioning eight as the last task when obviously there's going to be more tasks. 
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
