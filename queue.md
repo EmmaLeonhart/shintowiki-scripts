@@ -8,113 +8,73 @@ belong here.
 Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives in
 `remote_queue.json` (claude.ai remote routine) — not duplicated here.
 
-> **De-staled 2026-07-05 (Emma):** the queue had accumulated completed-work narrative
-> (multilingual-label rollout, backlog board, provenance comments, the analysis pass — all
-> shipped, see DEVLOG 2026-07-04..07-06) left in place instead of deleted, and had mis-filed
-> easy autonomous work under "Blockers — parked/awaiting Emma." Those are removed / un-parked
-> below. "Back of the queue" means **easy, do last** — NOT parked or deferred.
-
 ---
 
-## 1. Context-dump audit — DO FIRST (potentially work-losing)
+## 1. Fix the failed jawiki-category QuickStatements (`errors.txt`)
 
-`context dump/` is committed (a deliberate safety net — losing it before we've mined it would be
-real lost work). The goal is to delete it, but only after confirming nothing significant was
-missed. Contents: `deleted.txt` (XTools export of 455 deleted Immanuelle Q-items — list only),
-`chat dump.md` + two `*.html` session dumps (+ their `*_files/`). Prior analysis said the
-actionable content is already extracted into the recreation pipeline (213 fandom-matched items;
-the ~122 self-deleted are moot) — `docs/deleted_immanuelle_items_analysis_2026-07-05.md`.
+Emma ran `modern-quickstatements/jawiki_category_items.txt`; **30 CREATE blocks failed**
+(`errors.txt`, repo root). Cause: the `Sjawiki` target came verbatim from
+`{{wikidata link||ja|Category:X}}` on the shinto category, and on these X is wrong — either
+**garbage** (e.g. `19th-century Kokugaku scholars` → `Category:19世紀のKokugakuist`, should be
+`19世紀の国学者`) or a **real jawiki category that already has a Wikidata item** (sitelink conflict →
+link, don't create). Fix case-by-case:
 
-- [ ] Re-audit every `context dump/` file against the shipped pipeline + docs. Confirm each
-  actionable item is captured somewhere durable. If a genuine item was missed, queue it FIRST.
-  Once clear, `git rm -r "context dump/"` and commit.
+- [ ] For each of the 30: git-sync the shinto category page, correct its
+  `{{wikidata link||ja|Category:X}}` to the RIGHT jawiki category. Then check that jawiki
+  category's Wikidata status — **has an item** → set `{{wikidata link|Qxxx}}` (link to it, drop the
+  failed CREATE); **no item** → keep it for a corrected CREATE (regenerate via
+  `generate_missing_wikidata_categories.py`). Un-sync each page once resolved.
 
-## 2. Recreate deleted Wikidata items — continue (Emma is running the CREATEs)
+## 2. `Template:Wikidata link` consolidation (Emma issue 1)
 
-Dataset + generators live in `recreate-deleted-wikidata/`; readiness in
-`items/_recreation_readiness.md`; handoff `docs/deleted_items_recreation_handoff_2026-07-06.md`.
-Emma is actively creating the items via QuickStatements (human-gated) with a minimal claim set
-(labels + P31/P279 + P17 + description); relinking the ills to the new QIDs as they land is the
-autonomous follow-up. **Repair is disposable — do the dumb direct thing (text swaps), don't build
-durable pipelines for it.**
+Issue 2 (template invisible when QID empty) is FIXED — the interwiki chain now renders outside the
+QID `#if` (miraheze copy; goes live next `sync_miraheze_unique_pages` run). Remaining:
+
+- [ ] **Consolidation isn't running properly.** Multiple `{{translated page}}` / interwiki
+  templates aren't being merged into the single `{{wikidata link}}` (e.g. Category:19th century
+  Kokugaku scholars has 3 redundant `{{translated page}}` → `Pages using duplicate arguments in
+  template calls`; Category:1988 books similar). Find the consolidation op (the 2026-04-29
+  "consolidate interlanguage links into wikidata link" behaviour) and make it actively run / fix it.
+
+## 3. Recreate deleted Wikidata items — continue (Emma is running the CREATEs)
+
+Dataset in `recreate-deleted-wikidata/`; readiness `items/_recreation_readiness.md`. Emma creates
+the items via QuickStatements (human-gated, minimal claim set); relinking ills to new QIDs is the
+autonomous follow-up. **Repair is disposable — dumb direct text swaps, no durable pipelines.**
 
 - [ ] **Finish P31 typing of the 24 still-untyped candidates** (186/210 typed). Type only where a
-  name signal is definitional; verify every new type QID live on Wikidata; NEVER guess. Leave
-  genuinely-ambiguous ones for Emma. Named untyped tail: Shimabara Sea, court offices 御匙/御鑰,
-  Kyoto's Three Kumano, Ōtsuki Hotel, Color Index, Inner Palace, Nakatomi Sakado clan, Kibi no
-  Anaumi, Kimi-no-Mori, Shōkyō, Benten Chigo, rope attachment projections, Hozumi-Suzuki Clan
-  Genealogy (+ verify JR Ise Sangū Line & rhyolitic welded tuff for existing-item duplicates).
+  name signal is definitional; verify each type QID live; NEVER guess; leave ambiguous ones for
+  Emma. Tail: Shimabara Sea, court offices 御匙/御鑰, Kyoto's Three Kumano, Ōtsuki Hotel, Color
+  Index, Inner Palace, Nakatomi Sakado clan, Kibi no Anaumi, Kimi-no-Mori, Shōkyō, Benten Chigo,
+  rope attachment projections, Hozumi-Suzuki Clan Genealogy (+ verify JR Ise Sangū Line & rhyolitic
+  welded tuff for existing-item duplicates).
 - [ ] **Edit the ills on the 144 git-synced pages** (`[[Category:Pages with deleted QID in ill
-  template]]`, pulled into `git_synced/`). Per `{{ill|…|qid=DELETED_QID}}`: sub-topics that are
-  really **sections** → `[[Page#Section]]` (verify the section exists); real entities → relink to
-  the created/live QID; duplicates → relink to the live QID. Un-sync each resolved page (remove
-  `[[Category:Git synced pages]]` → next sync drops the on-wiki tag + local copy).
-- [ ] **Optional per-item enrichment for the ready set:** P131 (admin territory from host-page
-  place) + coordinates — authoritative only.
+  template]]`). Per `{{ill|…|qid=DELETED_QID}}`: sections → `[[Page#Section]]`; real entities →
+  relink to created/live QID; duplicates → live QID. Un-sync each resolved page.
+- [ ] **Optional per-item enrichment:** P131 (from host-page place) + coordinates — authoritative only.
 
-## 3. `Template:Ill` wrongful-deletion fix (easy — was mis-parked)
+## 4. `Template:Ill` wrongful-deletion fix (easy)
 
-The fandom bot recurrently deletes `shinto.fandom.com/wiki/Template:Ill` ("no Shinto equivalent"),
-because the no-equivalent check doesn't count a miraheze **redirect** as an equivalent.
+The fandom bot recurrently deletes `shinto.fandom.com/wiki/Template:Ill` ("no Shinto equivalent")
+because the check doesn't count a miraheze **redirect** as an equivalent.
 
-- [ ] **Mitigation (do this — it's easy):** make `Template:Ill` a git-synced page on BOTH wikis so
-  the equivalence check passes and the sync restores it if deleted.
-- [ ] **Root cause:** make the fandom delete-orphans / cleanup check follow/count miraheze redirect
-  targets before deleting.
+- [ ] **Mitigation (easy):** make `Template:Ill` git-synced on BOTH wikis so the sync restores it.
+- [ ] **Root cause:** make the fandom delete-orphans check follow miraheze redirect targets first.
 
-## 4. Long-tail language transliterators (build task)
+## 5. Long-tail language transliterators (build task)
 
-- [ ] **Thai (`th`)** transliterator — real converter handling pre-posed vowel signs (33/135 labels
-  currently). `pa/km/lo/dz/new/mad/shn` (≤16 labels each) and `cdo` have no script converter and
-  near-zero observed labels — only pursue if a converter arrives. `python
-  shinto-label-generator/language_registry.py` prints uncovered languages by label count.
+- [ ] **Thai (`th`)** transliterator — pre-posed vowel signs (33/135 labels). `pa/km/lo/dz/new/mad/shn`
+  (≤16 labels) + `cdo` have no converter — only if one arrives. `python
+  shinto-label-generator/language_registry.py` lists uncovered languages by count.
 
-## 5. Merged-QID redirect resolution op (LOW — keep at the very end; least time-dependent)
+## 6. Merged-QID redirect resolution op (LOW — very end; least time-dependent)
 
-A Wikidata **merge** turns the old item into a *redirect* to the survivor (NOT deleted/"missing"),
-so nothing canonicalizes it — `deleted_qids_in_ill` / `wikidata_lookup` only act on `"missing"`
-entities and leave a `"redirects"` entity untouched. The stale QID still resolves but never updates.
+A Wikidata **merge** turns the old item into a *redirect* (NOT "missing"), so nothing
+canonicalizes it — `deleted_qids_in_ill`/`wikidata_lookup` only act on `"missing"` entities.
 
-- [ ] **Build an orchestrator op that rewrites merged QIDs on the wiki.** For each
-  `{{ill|…|qid=Q…}}` (and consider `{{wikidata link}}`), query `wbgetentities`; if the entity is a
-  redirect, rewrite the QID to the redirect **target** (follow the chain). Light op (text
-  transform, orchestrator saves); throttle + 429-bail; cache QID→target per run. This is *durable*
-  maintenance (merges happen forever), unlike the disposable recreation repair.
-
-## 6. Create Wikidata items for jawiki-only categories (Emma — END of queue; auto-open QS on GitHub)
-
-**Deferred to end of queue (Emma 2026-07-05):** entangled with the interwiki migration. All
-interwikis were migrated into the `{{wikidata link}}` template, and *anything relying on raw
-interwiki links (`[[ja:カテゴリ:…]]`) has been broken for ages* — so a generator built on reading
-raw interwikis is on shaky ground and must be reconsidered against the current
-`{{wikidata link}}`-based model before building. More pressing items come first.
-
-Goal: shintowiki categories that have a jawiki category but NO Wikidata item get a
-**Wikimedia-category item** via QuickStatements. Per Emma's rule: every item = `CREATE` +
-`P31=Q4167836` (Wikimedia category) + `Sjawiki` (the jawiki category); **english-named** cats
-also get `Len` (English label); **japanese-named / overlapping** cats get NO label and NO wiki
-links — the pipeline connects those (translated name + shinto/fandom) later. Don't emit
-shinto/fandom links in the QS; the existing `enrich_jawiki_categories.py` / P11250 pipeline
-attaches them once the item exists.
-
-**Findings (2026-07-05, reads work from dev via compliant UA):** the source is
-`[[Category:Emmabot jawiki categories with only jawiki category and no wikidata]]`
-(maintained by `shinto_miraheze/enrich_jawiki_categories.py`). The enrich input is fully drained
-(`Emmabot categories with jawiki` = 0); of all shinto cats with a jawiki category, **214 already
-have items, exactly 10 do not** → those 10 ARE the set (currently mostly maintenance/generic
-cats — `Accessibility templates`, `Template:SKOSlink`, `1940年代設立の日本企業`, …; only 3 are
-english-named). **The real pattern to target (Emma 2026-07-05):** interwikis were migrated INTO the wikidata
-link template with an empty QID slot — `{{wikidata link||ja|カテゴリ:X}}` (empty 1st param = no
-Wikidata item; params: ``||`` QID empty, ``ja`` lang, ``カテゴリ:X`` target). This likely exists
-in MANY places, not just categories — a generic "has an interwiki via `{{wikidata link}}` but no
-QID" signal. Build the generator to scan for `{{wikidata link||<lang>|<target>}}` (empty QID) →
-`Sjawiki = "Category:X"` for the jawiki ones. Verify each target truly lacks an item before
-CREATE (avoid dups). (The older `[[ja:カテゴリ:X]]` raw-interwiki form is the pre-migration one
-that's been broken — don't rely on it.)
-
-- [ ] Build the generator (reconciling with the `{{wikidata link}}` interwiki model, not raw
-  `[[ja:…]]`), emit the CREATE blocks, and **auto-open the QuickStatements `.txt` on GitHub**
-  after generation (per Emma) so she can run it (human-gated).
+- [ ] Orchestrator op: for each `{{ill|…|qid=Q…}}` (and `{{wikidata link}}`), query
+  `wbgetentities`; if the entity is a redirect, rewrite the QID to the target (follow the chain).
+  Light op; throttle + 429-bail; cache per run. Durable maintenance.
 
 ## Pinned tail (keep last, always)
 
