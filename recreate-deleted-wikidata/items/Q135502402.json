@@ -7,7 +7,7 @@
     "timestamp": "20250730000203"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "Japanese hot spring (onsen)",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -250,12 +250,12 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q655311",
+    "p31_label": "onsen",
+    "p31_property": "P31",
     "romaji_reading": "Shima no Yu",
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "researched"
   },
   "fandom": {
     "categories": [

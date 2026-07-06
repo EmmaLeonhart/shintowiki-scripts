@@ -1,29 +1,39 @@
 # Recreation-candidate P31 (instance of) — from entity name
 
 - Candidates: **213**
-- Assigned a P31: **174**  ·  left for review: **39**
+- Assigned a P31: **188**  ·  left for review: **25**
 
 Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31.py` docstring. Uncertain → null, never guessed.
 
 ## Type distribution
 
-- (none — review): 39
 - Shinto shrine: 39
 - human: 38
-- kami: 28
-- festival: 26
+- kami: 29
+- festival: 27
+- (none — review): 25
 - Buddhist temple: 9
 - kofun: 6
 - gongen: 5
 - bath additive: 4
 - kofun group: 4
 - shrine church: 4
+- book: 3
 - sacred site: 3
+- institution: 2
 - dance: 2
-- book: 2
 - archaeological site: 2
+- onsen: 1
 - public bath: 1
+- group of deities: 1
+- siege: 1
+- Japanese bronze mirror: 1
+- imitation bronze mirror: 1
+- waterfall: 1
+- academic discipline: 1
+- calendar maker: 1
 - imperial mausoleum: 1
+- theory: 1
 
 ## Per-candidate
 
@@ -38,6 +48,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135551146 | Konomine-dera | 國軸山金峯山寺 | Buddhist temple | high |
 | Q135551147 | Jisshōji | 実城寺 | Buddhist temple | high |
 | Q135579307 | Jippāramitsu-ji | 十波羅蜜寺 | Buddhist temple | high |
+| Q135551119 | Wa mirrors | 和鏡 | Japanese bronze mirror | high |
 | Q135500663 | Ōmiya Isuzu Shrine | 大宮五十鈴神社 | Shinto shrine | high |
 | Q135500665 | Kamimiya Togata Shrine | 上宮外縣神社 | Shinto shrine | high |
 | Q135500695 | Gōkaku Shrine | 合格神社 | Shinto shrine | high |
@@ -77,14 +88,17 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579328 | Izumo-taisha Sakunomiya Religious Society | 出雲大社佐久之宮講社 | Shinto shrine | high |
 | Q135579345 | Izumo-taisha Malaysia Religious Society | 出雲大社マレーシア講社 | Shinto shrine | high |
 | Q135579538 | Morimasa Hachiman Shrine | 森正八幡神社 | Shinto shrine | high |
+| Q135579071 | health science | 健康学 | academic discipline | high |
 | Q135551133 | Takenami Site |  | archaeological site | high |
 | Q135551138 | Mizumachi Site |  | archaeological site | high |
 | Q135503417 | Bath Roman | バスロマン | bath additive | high |
 | Q135503420 | Young Venus | ヤングビーナス | bath additive | high |
 | Q135503423 | Asahi Shōnō | アサヒ晶脳 | bath additive | high |
 | Q135503424 | Bath Melody | バスメロディー | bath additive | high |
+| Q135491602 | Nakatomi Harai Kunkai | 中臣祓訓解 | book | high |
 | Q135550812 | Chikugo no Kuni Fudoki | 筑後国風土記 | book | medium |
 | Q135550950 | Teiō Henki | 帝王編年記 | book | medium |
+| Q135579243 | calendar makers | 暦師 | calendar maker | high |
 | Q135504178 | Wago Nembutsu Odori | 和合の念仏踊 | dance | medium |
 | Q135504180 | Ayato Night Nembutsu and Bon Odori | 綾渡の夜念仏と盆踊 | dance | medium |
 | Q135503326 | Fuyumatsuri | 鞴祭 | festival | high |
@@ -103,6 +117,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135551094 | Inari Festival | 稲荷祭 | festival | high |
 | Q135551153 | Mago Matsuri | 孫見祭 | festival | high |
 | Q135551155 | Hanayome Matsuri | 花嫁まつり | festival | high |
+| Q135551156 | Yubune Matsuri – Hayabusa Procession | 流鏑馬祭・流鏑馬連行 | festival | high |
 | Q135551159 | Yamanari Gion Matsuri | 山梨祇園祭り | festival | high |
 | Q135551160 | Kagoshima Summer Matsuri | かごしま夏祭り | festival | high |
 | Q135551161 | Zuiki-sai | ずいき祭 | festival | high |
@@ -118,6 +133,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135551144 | Ishibuto Daigongen | 石鈇大権現 | gongen | high |
 | Q135579263 | Five Gongen | 五所権現 | gongen | high |
 | Q135579265 | Gosha Gongen | 五社権現 | gongen | high |
+| Q135504457 | The Twelve Heavenly Kings | 十二天王 | group of deities | high |
 | Q135491608 | Nakatomi no Ōshima | 藤原大嶋 | human | medium |
 | Q135491609 | Nakatomi no Ikemori | 中臣池守 | human | medium |
 | Q135491610 | Nakatomi no Momo / Nakatomi Momo-shō | 中臣秡・中臣秡抄 | human | medium |
@@ -156,7 +172,10 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579350 | Sengetakamochi | 千家尊有 | human | medium |
 | Q135579351 | Miyao Shigemaru | 宮王重丸 | human | high |
 | Q135579352 | Sengemichihiko | 千家達彦 | human | medium |
+| Q135551121 | imitation mirrors | Bōseikyō | imitation bronze mirror | high |
 | Q135579295 | Iwakia Betsuō Tomb | 磐城別王墓 | imperial mausoleum | medium |
+| Q135490496 | Chōkui no Sei | 鐘匱の制 | institution | high |
+| Q135500604 | Ritsuryō Forty-Eight Rank System | 冠位四十八階 | institution | high |
 | Q135330122 | Amanomikemunushi no Kami | Amanomikemunushi no Kami | kami | high |
 | Q135500709 | Ietsumiko no Kami | 家津御子神 | kami | high |
 | Q135500713 | Kumano Kusu no Mi no Mikoto | 熊野久須美命 | kami | high |
@@ -171,6 +190,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135550734 | Tatsuta-hime | 竜田姫命 | kami | high |
 | Q135551145 | Kushimikenu-no-mikoto | 櫛御気野命 | kami | high |
 | Q135579030 | Five Deities of Heaven, Earth, and Man | 天地人五行神 | kami | high |
+| Q135579148 | Iga-hiko | 伊賀彦 | kami | high |
 | Q135579244 | Amaterasu Kuniteruhiko Hikari Kushi Tama Hayasui no Mikoto | 天照国照彦火明櫛玉饒早日命 | kami | high |
 | Q135579264 | Isurugi Hiko | 伊須流岐比古神 | kami | high |
 | Q135579269 | Sawaetahara-Rokurohiko-no-Kami | 佐和恵多良六老彦神 | kami | high |
@@ -195,6 +215,7 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579136 | Nishinohara Kofun Group | 西ノ原古墳群 | kofun group | high |
 | Q135579220 | Suga-no-Sawa Kofun Cluster | 菅ノ沢古墳群 | kofun group | high |
 | Q135579222 | Imajuku Kofun Group | 今宿古墳群 | kofun group | high |
+| Q135502402 | Shima no Yu | 島の湯 | onsen | high |
 | Q135503427 | Mineral spring bathhouse | 鉱泉浴場 | public bath | high |
 | Q135550945 | Kyushu 88 Sacred Sites | 九州八十八箇所霊場 | sacred site | high |
 | Q135550946 | Kyushu 36 Fudō Sacred Sites | 九州三十六不動霊場 | sacred site | high |
@@ -203,42 +224,31 @@ Classifier: Japanese name suffix (definitional) + English label; see `enrich_p31
 | Q135579327 | Izumo-taisha Shonai Church | 出雲大社庄内教会 | shrine church | high |
 | Q135579341 | Izumo-taisha Karatsu Church | 出雲大社唐津教会 | shrine church | high |
 | Q135579343 | Izumo-taisha Takachiho Church | 出雲大社高千穂教会 | shrine church | high |
+| Q135506282 | Kōyasan Campaign | 高野山攻め | siege | high |
+| Q135579531 | Pre-Ainu theory | プレ・アイヌ説 | theory | high |
+| Q135578954 | Himuro Falls | 氷室大滝 | waterfall | high |
 | Q135490377 | Shimabara Sea | 島原海 |  | none |
 | Q135490455 | Shōkyō | 正恭 |  | none |
-| Q135490496 | Chōkui no Sei | 鐘匱の制 |  | none |
-| Q135491602 | Nakatomi Harai Kunkai | 中臣祓訓解 |  | none |
 | Q135491611 | Nakatomi Sakado clan | 中臣酒人宿祢 |  | none |
-| Q135500604 | Ritsuryō Forty-Eight Rank System | 冠位四十八階 |  | none |
 | Q135500658 | Kibi no Anaumi | 吉備の穴海 |  | none |
 | Q135500720 | Kimi-no-Mori | 季美の森 |  | none |
-| Q135502402 | Shima no Yu | 島の湯 |  | none |
 | Q135502435 | Ōtsuki Hotel | 大月ホテル |  | none |
 | Q135503346 | Protective Forest for Navigation | 航行目標保安林 |  | none |
 | Q135503410 | herbal baths | 薬湯 |  | none |
 | Q135503431 | Color Index | カラーカード |  | none |
 | Q135504200 | Futagoyama Park (disambiguation) | 二子山公園 (曖昧さ回避) |  | none |
 | Q135504266 | JR Ise Sangu Line | JR参宮線 |  | none |
-| Q135504457 | The Twelve Heavenly Kings | 十二天王 |  | none |
 | Q135506253 | Kamado Town | 釜戸町2510番地の1 |  | none |
-| Q135506282 | Kōyasan Campaign | 高野山攻め |  | none |
 | Q135506332 | Kyoto's Three Kumano Shrines | 京都三熊野 |  | none |
 | Q135550949 | Inner Palace | 内裏外郭 |  | none |
 | Q135551115 | Kansei 12 | 寛政12年 |  | none |
 | Q135551117 | Bunka 1 | 文化元年 |  | none |
-| Q135551119 | Wa mirrors | 和鏡 |  | none |
-| Q135551121 | imitation mirrors | Bōseikyō |  | none |
 | Q135551148 | Kōshin-dō | Kōshin-dō |  | none |
 | Q135551150 | rope attachment projections | 縄掛突起 |  | none |
 | Q135551151 | rhyolitic welded tuff | 流紋岩質溶結凝灰岩 |  | none |
-| Q135551156 | Yubune Matsuri – Hayabusa Procession | 流鏑馬祭・流鏑馬連行 |  | none |
 | Q135551168 | Benten Chigo | 弁天稚児 |  | none |
-| Q135578954 | Himuro Falls | 氷室大滝 |  | none |
-| Q135579071 | health science | 健康学 |  | none |
 | Q135579080 | balneology | 温泉医学 |  | none |
 | Q135579116 | Hozumi-Suzuki Clan Genealogy | 穂積姓鈴木氏 - 紀州德川二七〇年鈴木家系譜 |  | none |
-| Q135579148 | Iga-hiko | 伊賀彦 |  | none |
 | Q135579154 | 御匙 | 御匙 |  | none |
 | Q135579157 | 御鑰 | 御鑰 |  | none |
 | Q135579218 | Ne no Kuni | 根之堅州国 |  | none |
-| Q135579243 | calendar makers | 暦師 |  | none |
-| Q135579531 | Pre-Ainu theory | プレ・アイヌ説 |  | none |

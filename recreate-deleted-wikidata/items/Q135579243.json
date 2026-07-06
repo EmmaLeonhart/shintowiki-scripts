@@ -7,7 +7,7 @@
     "timestamp": "20250802035851"
   },
   "enrichment": {
-    "description_en": null,
+    "description_en": "calendar-maker occupation",
     "label_count": 2,
     "labels": {
       "en": {
@@ -22,12 +22,12 @@
     "p17": null,
     "p17_label": null,
     "p17_property": null,
-    "p31": null,
-    "p31_label": null,
-    "p31_property": null,
+    "p31": "Q12737077",
+    "p31_label": "calendar maker",
+    "p31_property": "P279",
     "romaji_reading": null,
-    "type_confidence": "none",
-    "type_source": null
+    "type_confidence": "high",
+    "type_source": "researched"
   },
   "fandom": {
     "categories": [

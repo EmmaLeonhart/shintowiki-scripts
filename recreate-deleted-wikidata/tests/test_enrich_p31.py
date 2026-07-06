@@ -20,6 +20,22 @@ def test_shrine_wins_over_bare_kami_char():
     assert _p31("Ōmiya Isuzu Shrine", "大宮五十鈴神社") == "Q845945"
 
 
+def test_researched_11_topics():
+    # Emma 2026-07-06 "research the 11 topics" — verified instance QIDs.
+    assert _p31("Himuro Falls", "氷室大滝") == "Q34038"          # waterfall
+    assert _p31("Iga-hiko", "伊賀彦") == "Q524158"               # kami
+    assert _p31("Kōyasan Campaign", "高野山攻め") == "Q188055"    # siege
+    assert _p31("Twelve Heavenly Kings", "十二天王") == "Q111252729"  # group of deities
+    assert _p31("Ritsuryō Forty-Eight Rank System", "冠位四十八階") == "Q178706"  # institution
+
+
+def test_researched_classes_are_p279():
+    # wa mirror / imitation mirror / calendar maker are CLASSES → subclass (P279).
+    assert _p31("Wa mirrors", "和鏡") == "Q1041984"
+    assert "和鏡" in ep.CLASS_JA and "暦師" in ep.CLASS_JA
+    assert "imitation mirrors" in ep.CLASS_EN
+
+
 def test_researched_clusters():
     # Emma 2026-07-06 research: verified class QIDs.
     assert _p31("Ishibuto Daigongen", "石鈇大権現") == "Q3080343"       # gongen

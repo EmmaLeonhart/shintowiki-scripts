@@ -1,6 +1,6 @@
 # Recreation-candidate P17 (country) — Japan for place/physical types
 
-- Candidates given P17=Japan (Q17): **84**
+- Candidates given P17=Japan (Q17): **85**
 - Applicable types: Buddhist temple, Shinto shrine, festival, kofun, kofun group
 
 P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); kami/human/book/untyped are skipped (P17 wrong or unknown). See `enrich_country.py`.
@@ -8,7 +8,7 @@ P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); 
 ## By type
 
 - Shinto shrine: 39
-- festival: 26
+- festival: 27
 - Buddhist temple: 9
 - kofun: 6
 - kofun group: 4
@@ -81,6 +81,7 @@ P17=Japan is authoritative for these Shinto/Japanese place types (not a guess); 
 | Q135551094 | Inari Festival | festival | Japan (Q17) |
 | Q135551153 | Mago Matsuri | festival | Japan (Q17) |
 | Q135551155 | Hanayome Matsuri | festival | Japan (Q17) |
+| Q135551156 | Yubune Matsuri – Hayabusa Procession | festival | Japan (Q17) |
 | Q135551159 | Yamanari Gion Matsuri | festival | Japan (Q17) |
 | Q135551160 | Kagoshima Summer Matsuri | festival | Japan (Q17) |
 | Q135551161 | Zuiki-sai | festival | Japan (Q17) |

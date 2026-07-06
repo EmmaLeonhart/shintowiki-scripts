@@ -73,6 +73,33 @@ CONFIRMED_HUMAN_JA = frozenset({
 # not a bath additive.
 CONFIRMED_BATH_JA = frozenset({"バスロマン", "ヤングビーナス", "アサヒ晶脳", "バスメロディー"})
 
+# Researched one-off classifications (Emma 2026-07-06 "research the 11 topics").
+# ja → (qid, label, description). All QIDs verified live. Instances (P31) unless the
+# ja is in CLASS_JA / the en in CLASS_EN below (those are subclasses → P279).
+OVERRIDES_JA = {
+    "氷室大滝": ("Q34038", "waterfall", "waterfall in Japan"),
+    "伊賀彦": ("Q524158", "kami", "kami (Shinto deity)"),
+    "流鏑馬祭・流鏑馬連行": ("Q132241", "festival", "festival in Japan"),
+    "高野山攻め": ("Q188055", "siege", "siege in Japanese history"),
+    "島の湯": ("Q655311", "onsen", "Japanese hot spring (onsen)"),
+    "中臣祓訓解": ("Q571", "book", "Japanese historical text (commentary)"),
+    "健康学": ("Q11862829", "academic discipline", "academic discipline"),
+    "十二天王": ("Q111252729", "group of deities", "group of Buddhist guardian deities"),
+    "プレ・アイヌ説": ("Q17737", "theory", "theory in Japanese prehistory"),
+    "冠位四十八階": ("Q178706", "institution", "historical Japanese cap-rank institution"),
+    "庚申堂": ("Q5393308", "Buddhist temple", "Kōshin worship hall"),
+    "鐘匱の制": ("Q178706", "institution", "ancient Japanese petition institution"),
+    # classes (P279) — Emma: wa mirror / imitation mirror / calendar maker are classes.
+    "和鏡": ("Q1041984", "Japanese bronze mirror", "type of Japanese bronze mirror"),
+    "暦師": ("Q12737077", "calendar maker", "calendar-maker occupation"),
+}
+OVERRIDES_EN = {
+    "imitation mirrors": ("Q1041984", "imitation bronze mirror", "type of imitation bronze mirror"),
+}
+# These are TYPES/classes → P279 (subclass of), not P31 (instance of).
+CLASS_JA = frozenset({"和鏡", "暦師"})
+CLASS_EN = frozenset({"imitation mirrors"})
+
 
 def classify(en, ja):
     """Return (p31_qid, p31_label, description, confidence, source)."""
@@ -89,6 +116,14 @@ def classify(en, ja):
     # 2026-07-06). Q11388990 = "bath additive" (health/beauty product), verified live.
     if ja in CONFIRMED_BATH_JA:
         return "Q11388990", "bath additive", "Japanese bath additive product (入浴剤)", "high", "emma-research"
+    # Researched one-off items (the 11 topics + class-concepts). Property (P31 vs
+    # P279) is applied in main() from CLASS_JA / CLASS_EN.
+    if ja in OVERRIDES_JA:
+        q, lab, desc = OVERRIDES_JA[ja]
+        return q, lab, desc, "high", "researched"
+    if en in OVERRIDES_EN:
+        q, lab, desc = OVERRIDES_EN[en]
+        return q, lab, desc, "high", "researched"
 
     # Izumo high-priest houses (Senge 千家 / Kitajima 北島) — people.
     if ja.startswith(("千家", "北島")):
@@ -170,7 +205,11 @@ def main():
         enr = rec.setdefault("enrichment", {})
         enr["p31"] = qid
         enr["p31_label"] = lab
-        enr["p31_property"] = "P31" if qid else None
+        # Classes → P279 (subclass of); everything else → P31 (instance of).
+        if qid and (ja in CLASS_JA or en in CLASS_EN):
+            enr["p31_property"] = "P279"
+        else:
+            enr["p31_property"] = "P31" if qid else None
         enr["description_en"] = desc
         enr["type_confidence"] = conf
         enr["type_source"] = src
