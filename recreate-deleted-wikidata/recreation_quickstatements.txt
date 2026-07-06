@@ -992,14 +992,6 @@ LAST	Den	"festival in Japan"
 LAST	P31	Q132241
 LAST	P17	Q17
 
-# recreate Akama Shrine (was Q135551162) — from [[Previous Emperor Festival]]
-CREATE
-LAST	Len	"Akama Shrine"
-LAST	Len	"Akama Shrine"
-LAST	Den	"Shinto shrine in Japan"
-LAST	P31	Q845945
-LAST	P17	Q17
-
 # recreate Tenmon-sai (was Q135551163) — from [[Chigo]]
 CREATE
 LAST	Len	"Tenmon-sai"
