@@ -884,6 +884,9 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
         if lang == "jv":
             if p_type == "temple": return "Wihara"
             return "Kuil"                                   # prefix
+        if lang == "mad":
+            if p_type == "temple": return "Wihara"
+            return "Kuil"                                   # prefix (Madurese, Latin — like jv/id)
         if lang == "he": return "מקדש"                                   # mikdash = temple; fine for both
         if lang == "ms":
             if p_type == "temple": return "Wihara Agung" if is_grand else "Wihara"
@@ -907,7 +910,7 @@ def format_label(lang, name, is_grand=False, p_type="shrine"):
     if lang == "nl":
         if p_type == "temple": return f"{name}-{get_affix()}"
         return f"{name}{get_affix()}" # Ise-shrijn
-    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv", "ms", "br", "ceb", "pl", "ro"]:
+    if lang in ["es", "it", "fr", "pt", "vi", "ca", "gl", "la", "ast", "tl", "war", "min", "eo", "jv", "ms", "br", "ceb", "pl", "ro", "mad"]:
         return f"{get_affix()} {name}"
     if lang in ["sv", "nb", "da", "hu", "nn", "fi"]:
         return f"{name}-{get_affix()}"
@@ -989,7 +992,7 @@ ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "
              "ca", "gl", "sv", "nb", "da", "hu", "la", "ast", "sh", "hr", "el",
              "az", "tl", "war", "min", "eo", "jv", "he", "ms", "br", "mr",
              "nn", "ceb", "mai", "as", "ur",
-             "pl", "ro", "fi", "cs", "sl", "th", "new", "pa"]
+             "pl", "ro", "fi", "cs", "sl", "th", "new", "pa", "mad"]
 
 
 def make_sparql(lang_code):
