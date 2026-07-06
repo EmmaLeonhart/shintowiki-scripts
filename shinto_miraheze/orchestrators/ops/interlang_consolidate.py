@@ -170,8 +170,6 @@ def apply(title: str, text: str):
         return None, None
 
     line_matches = list(INTERLANG_LINE_RE.finditer(text))
-    if not line_matches:
-        return None, None
 
     # For each "line of interlang links", extract individual pairs. Drop
     # any prefix that isn't a Wikipedia language link — sister-project
@@ -197,9 +195,6 @@ def apply(title: str, text: str):
         else:
             replacements.append((lm.start(), lm.end(), ""))
 
-    if not new_pairs:
-        return None, None
-
     # Apply replacements right-to-left so earlier offsets stay valid.
     text_no_il = text
     for start, end, repl in reversed(replacements):
@@ -207,20 +202,44 @@ def apply(title: str, text: str):
     # Collapse runs of blank lines the removals may have created.
     text_no_il = re.sub(r"\n{3,}", "\n\n", text_no_il)
 
-    wd_match = WD_LINK_RE.search(text_no_il)
-    if wd_match:
-        qid, existing_pairs = _parse_wd_params(wd_match.group(1))
-        merged = list(existing_pairs)
+    wd_matches = list(WD_LINK_RE.finditer(text_no_il))
+    # Nothing to consolidate: no new interlang pairs to fold in AND fewer
+    # than two {{wikidata link}} templates to merge.
+    if not new_pairs and len(wd_matches) < 2:
+        return None, None
+
+    if wd_matches:
+        # Merge ALL {{wikidata link}} templates on the page into one: take
+        # the first non-empty QID, union every template's pairs, then add
+        # the new standalone-link pairs. Multiple templates coexist when a
+        # QID-only {{wikidata link|Q…}} and an interwiki-bearing empty-QID
+        # {{wikidata link||lang|title|…}} sit on the same page — they must
+        # be actively consolidated into one (Emma 2026-07-06).
+        qid = ""
+        merged: list[tuple[str, str]] = []
+        for m in wd_matches:
+            q, pairs = _parse_wd_params(m.group(1))
+            if q and not qid:
+                qid = q
+            for pair in pairs:
+                if pair not in merged:
+                    merged.append(pair)
         for pair in new_pairs:
             if pair not in merged:
                 merged.append(pair)
         new_template = _build_wd_template(qid, merged)
-        new_text = text_no_il[:wd_match.start()] + new_template + text_no_il[wd_match.end():]
+        # Replace the first template with the consolidated one and drop the
+        # rest (right-to-left so offsets stay valid).
+        new_text = text_no_il
+        for m in reversed(wd_matches[1:]):
+            new_text = new_text[:m.start()] + new_text[m.end():]
+        first = wd_matches[0]
+        new_text = new_text[:first.start()] + new_template + new_text[first.end():]
+        new_text = re.sub(r"\n{3,}", "\n\n", new_text)
         final_pairs = merged
     else:
         # No existing template — create one with empty QID slot. The
-        # interwikis still render; a later run or manual edit can fill
-        # in the QID.
+        # interwikis still render; a later run or manual edit can fill in the QID.
         new_template = _build_wd_template("", new_pairs)
         new_text = text_no_il.rstrip() + "\n" + new_template + "\n"
         final_pairs = new_pairs

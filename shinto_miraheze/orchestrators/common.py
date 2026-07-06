@@ -50,7 +50,14 @@ import mwclient
 
 from shinto_miraheze.wiki_login import login_with_retry
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+# Force UTF-8 stdout (Windows dev + CI). Use reconfigure() rather than wrapping
+# sys.stdout.buffer in a fresh TextIOWrapper — wrapping closes the underlying
+# buffer on GC, which breaks pytest's output capture. reconfigure() is a no-op
+# where unavailable (e.g. a capture object without the method).
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except (AttributeError, ValueError):
+    pass
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
