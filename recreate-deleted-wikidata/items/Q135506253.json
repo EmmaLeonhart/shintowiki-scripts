@@ -8,7 +8,7 @@
   },
   "enrichment": {
     "description_en": null,
-    "drop_reason": "street address, not an item",
+    "excluded_reason": "street address, not a Wikidata item",
     "label_count": 59,
     "labels": {
       "ar": {
@@ -283,6 +283,6 @@
   "ill_recovered": false,
   "qid": "Q135506253",
   "recovered_label": "Kamado Town",
-  "recreation_candidate": true,
+  "recreation_candidate": false,
   "self_deleted": false
 }

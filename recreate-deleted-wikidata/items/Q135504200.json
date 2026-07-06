@@ -8,7 +8,6 @@
   },
   "enrichment": {
     "description_en": null,
-    "drop_reason": "disambiguation page, not an item",
     "label_count": 2,
     "labels": {
       "en": {
@@ -26,6 +25,13 @@
     "p31": null,
     "p31_label": null,
     "p31_property": null,
+    "possible_existing": [
+      {
+        "label": "二子山公園 (disambiguation)",
+        "note": "real jawiki dab page, already has this live Wikidata item — relink, do not recreate",
+        "qid": "Q110799681"
+      }
+    ],
     "romaji_reading": null,
     "type_confidence": "none",
     "type_source": null

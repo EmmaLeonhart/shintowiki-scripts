@@ -174,16 +174,28 @@ surface = the ~213 fandom-matched, langlink-bearing items (203 QID-anchored).
 
 Vetting/enrichment of the ~213 candidates — SUBSTANTIALLY DONE (2026-07-06 session). Built
 the enrich pipeline (`enrich_country.py` P17=Japan, `enrich_p31.py` extended, `enrich_relations.py`
-familytree+infobox, `dedup_humans.py`). State: **174/213 typed** (P31), 84 with P17=Japan,
-38 humans (14 with cited family relations incl. the full Kamibe `{{familytree}}` lineage + Abe
-genealogy; 4 dedup-flagged), median 59 labels each, descriptions on all typed. Full per-bucket
+familytree+infobox, `dedup_humans.py`). State (2026-07-06 latest): **188/213 typed** (P31; 3 are
+P279 subclasses — wa mirror / imitation mirror / calendar maker), 85 with P17=Japan, 38 humans
+(14 with cited family relations incl. the full Kamibe `{{familytree}}` lineage + Abe genealogy;
+4 dedup-flagged), median 59 labels each, descriptions on all typed. Also flagged: **5 duplicates**
+of live items (balneology→Q789523, Ne no Kuni→Q7555425, herbal baths→Q16496694, Kōshin-dō→Q124683618,
+Futagoyama Park dab→Q110799681 — relink, don't recreate) and **3 non-items EXCLUDED**
+(recreation_candidate=false: Kamado Town address, Kansei 12 & Bunka 1 era-years). Full per-bucket
 readiness: `recreate-deleted-wikidata/items/_recreation_readiness.md`. Remaining AUTONOMOUS work:
-- [ ] The **39 untyped** tail: research the individually-doable ones + apply P279 (subclass) to
-  the class-concepts (mirror types, academic fields, rank systems); drop the non-items (era-years,
-  rock type, a dab page). See `_recreation_readiness.md` for the split.
+- [ ] The **~13 still-untyped real items** (Shimabara Sea, court offices 御匙/御鑰, Kyoto's Three
+  Kumano, Ōtsuki Hotel, Color Index, Inner Palace, Nakatomi Sakado clan, Kibi no Anaumi,
+  Kimi-no-Mori, Shōkyō, Benten Chigo, rope attachment projections, Hozumi-Suzuki Clan Genealogy;
+  + verify JR Ise Sangu Line & rhyolitic welded tuff which likely duplicate an existing line/rock
+  item). These have **NO shinto.miraheze.org page** (verified: en/ja mainspace + User: drafts all
+  MISSING; miraheze reachable) — their only content is on shinto.fandom.com. Decide how to pull/fix
+  that content (fandom pull vs. leave) — Emma didn't understand the framing; re-raise concretely.
+- [ ] **Analyze the `User:Immanuelle/` draft pages** (Emma 2026-07-06): the ills carry
+  `13=User:Immanuelle/<name>` draft targets. Enumerate those draft pages on shinto.miraheze.org,
+  read them, and try to deal with them (they may hold intended content for the deleted items /
+  be promotable / be stale). Feeds the recreation dataset.
 - [ ] Optional per-item data for the ready set: **P131** (admin territory, from host-page place)
   and coordinates — authoritative only.
-Recreation itself + the min-claim-set + verifying the 4 dedup-flagged are **NEEDS-DECISION (Emma)**
+Recreation itself + the min-claim-set + verifying the dedup-flagged are **NEEDS-DECISION (Emma)**
 → see "Blockers awaiting Emma" below.
 
 Pinned tail (keep last, always):

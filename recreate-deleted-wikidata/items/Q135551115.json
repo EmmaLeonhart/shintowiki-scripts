@@ -8,7 +8,7 @@
   },
   "enrichment": {
     "description_en": null,
-    "drop_reason": "a year, not an item",
+    "excluded_reason": "era-year (maps to the Gregorian year item), not its own item",
     "label_count": 2,
     "labels": {
       "en": {
@@ -57,6 +57,6 @@
   "ill_recovered": false,
   "qid": "Q135551115",
   "recovered_label": "Kansei 12",
-  "recreation_candidate": true,
+  "recreation_candidate": false,
   "self_deleted": false
 }
