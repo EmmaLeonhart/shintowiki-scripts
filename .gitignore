@@ -15,3 +15,6 @@ shinto_miraheze/manual_import_local.py
 /Claude Code_files/
 /_session_log_extracted.txt
 /shinto_miraheze/*.out.json
+
+# cdo corpus fetch log (temp)
+shinto-label-generator/cdo_corpus_fetch.log

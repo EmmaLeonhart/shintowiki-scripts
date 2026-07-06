@@ -26,6 +26,7 @@ Gentle on Wiktionary: 0.4s throttle, Miraheze-UA-policy-compliant User-Agent.
 No wiki writes. ``--apply`` writes the JSON; default dry-run reports coverage.
 """
 import argparse
+import glob
 import json
 import os
 import re
@@ -63,6 +64,23 @@ def manyogana_core() -> list[str]:
     always present in any zh (hence cdo) label. Traditional-normalised, deduped."""
     simp = {ch for v in z.KANA_TO_CHINESE.values() for ch in v}
     return sorted({to_trad(c) for c in simp})
+
+
+def corpus_chars() -> list[str]:
+    """Every distinct traditional CJK character that actually appears in the zh
+    generator's TRADITIONAL output (zh-hant/zh-tw/zh-hk QuickStatements). This is
+    the real long tail cdo must cover — the characters in actual shrine names, not
+    just the man'yōgana core. Reading the already-emitted output avoids re-running
+    the generator (and needs no Wikidata query)."""
+    chars: set[str] = set()
+    for name in ("zh-hant.txt", "zh-tw.txt", "zh-hk.txt"):
+        for path in glob.glob(os.path.join(SCRIPT_DIR, "quickstatements", name)):
+            with open(path, encoding="utf-8") as f:
+                for line in f:
+                    for ch in line:
+                        if "一" <= ch <= "鿿":
+                            chars.add(ch)
+    return sorted(chars)
 
 
 def md_reading(ch: str) -> "str | None":
@@ -103,17 +121,24 @@ def main():
     ap.add_argument("--apply", action="store_true", help="Write cdo_readings.json.")
     ap.add_argument("--chars", default="",
                     help="Extra characters to look up (in addition to the core).")
+    ap.add_argument("--corpus", action="store_true",
+                    help="Also cover every distinct traditional char in the zh-hant "
+                         "output (the real shrine-name long tail).")
+    ap.add_argument("--max-fetch", type=int, default=100000,
+                    help="Cap fetches this run (resumable — rerun to continue).")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
     table = load_table()
     want = manyogana_core() + [to_trad(c) for c in args.chars if c.strip()]
+    if args.corpus:
+        want += corpus_chars()
     want = sorted(set(want))
     missing = [c for c in want if c not in table]
     print(f"Table: {len(table)} entries | requested: {len(want)} | to fetch: {len(missing)}")
 
     added = nomd = 0
-    for ch in missing:
+    for i, ch in enumerate(missing[: args.max_fetch]):
         r = md_reading(ch)
         if r:
             table[ch] = r
@@ -122,6 +147,9 @@ def main():
         else:
             nomd += 1
             print(f"  {ch} -> (no md= reading on Wiktionary)")
+        # Periodic checkpoint so a long corpus walk is resumable if interrupted.
+        if args.apply and added and i % 100 == 0:
+            save_table(table)
         time.sleep(THROTTLE)
 
     covered = sum(1 for c in want if c in table)
