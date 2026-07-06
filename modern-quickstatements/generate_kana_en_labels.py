@@ -27,7 +27,7 @@ import json
 import os
 import sys
 
-from kana_english import label_for
+from kana_english import hardcoded_label, label_for
 
 WORKLIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "shrines_missing_en_label.json")
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "kana_en_labels.txt")
@@ -35,6 +35,14 @@ OUTPUT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "kana_en_
 
 def lines_for_item(item):
     """QuickStatements lines for one worklist item, or [] if Stage 1 can't handle it."""
+    # Time-boxed Engishiki name overrides (queue #9): force the standard English
+    # label for glitchy names regardless of kana (they often have a wrong/absent
+    # reading). Fires before the kana gate so no-kana items still get labelled.
+    forced = hardcoded_label(item.get("ja", ""))
+    if forced is not None:
+        if '"' in forced:
+            return []
+        return [f'{item["qid"]}|Len|"{forced}"']
     kana = (item.get("kana") or "").strip()
     if not kana:
         return []

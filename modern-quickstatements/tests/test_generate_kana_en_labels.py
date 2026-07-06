@@ -38,3 +38,18 @@ def test_unhandled_suffix_emits_nothing():
 
 def test_unromanizable_stem_emits_nothing():
     assert lines_for_item({"qid": "Q7", "ja": "漢字神社", "kana": "漢字じんじゃ"}) == []
+
+
+def test_mefu_override_fires_without_kana():
+    # queue #9: 売布神社 -> "Mefu Shrine" even when the item has no kana reading.
+    assert lines_for_item({"qid": "Q11", "ja": "売布神社", "kana": ""}) == [
+        'Q11|Len|"Mefu Shrine"'
+    ]
+
+
+def test_mefu_override_beats_any_kana():
+    # The override is unconditional for the exact ja label — a stray/wrong kana
+    # reading does not change the forced label.
+    assert lines_for_item({"qid": "Q12", "ja": "売布神社", "kana": "うるふじんじゃ"}) == [
+        'Q12|Len|"Mefu Shrine"'
+    ]

@@ -33,6 +33,7 @@ getting a wrong label onto Wikidata.
 """
 
 from dataclasses import dataclass
+from datetime import date, datetime, timezone
 from typing import Optional
 
 
@@ -40,6 +41,33 @@ from typing import Optional
 class LabelResult:
     label: str
     alias: Optional[str] = None
+
+
+# ---- time-boxed Engishiki name overrides (Emma 2026-07-06, queue #9) ----
+#
+# A handful of Engishiki shrine names have a well-known reading glitch: the ja
+# label carries a wrong/absent kana reading, so the deterministic romanizer
+# would produce the wrong stem (or nothing at all). For those exact ja labels we
+# force the correct standard English label regardless of kana. 売布 reads "Mefu"
+# (not "Urifu"/"Baifu"), so every 売布神社 item is "Mefu Shrine".
+#
+# This is a standardisation nudge, NOT a permanent rule — it should only run for
+# three years. After the expiry it no-ops; retire it then (delete the override +
+# its test).
+_HARDCODED_LABELS = {
+    "売布神社": "Mefu Shrine",
+}
+_HARDCODED_EXPIRY = date(2029, 7, 6)
+
+
+def hardcoded_label(ja: str, today: Optional[date] = None) -> Optional[str]:
+    """Return a forced English label for a known glitchy Engishiki name, or None.
+    Time-boxed (see ``_HARDCODED_EXPIRY``); returns None once expired so the
+    override retires on its own. ``today`` is injectable for tests."""
+    today = today or datetime.now(timezone.utc).date()
+    if today >= _HARDCODED_EXPIRY:
+        return None
+    return _HARDCODED_LABELS.get((ja or "").strip())
 
 
 # ---- proper Hepburn (NOT the tokiponizer table, which collapses zu->su) ----
