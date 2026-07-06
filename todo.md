@@ -10,15 +10,6 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 > [`docs/mass-label-expansion-plan.md`](docs/mass-label-expansion-plan.md);
 > the active BFS-driven work is in `queue.md`.
 
-- [ ] **EN/FR/ID gap regularization:** some shrines have labels in one or two
-  of English/French/Indonesian but not all three (old technical failures).
-  Analyze the gaps, then a pipeline to fill missing ones where the others exist.
-  _(2026-07-05 assessment — likely partly superseded: the BFS/multilang pipeline now
-  generates fr + id fills for covered shrines INTO the drip, so a live-Wikidata gap
-  query is confounded — it can't cleanly separate "genuinely unaddressed" from "queued,
-  fills after the 2027 ramp". NEEDS-DECISION from Emma: is this still wanted as a
-  distinct same-source cross-fill, or is it subsumed by the BFS drip? Don't build the
-  fill-pipeline until that's clarified.)_
 - [x] **QuickStatements provenance comments:** annotate output lines with the
   source label they derive from (id-label for most languages, ja kanji for zh,
   reading-vs-hanja for ko). _DONE 2026-07-05 — every transliteration generator emits
@@ -55,5 +46,5 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 
 - [ ] **26 interlanguage-cohort pages with no Wikidata item.** Leftover from the 2026-06-07 interlanguage-resolution op: biographies, sect-specific docs, shinto-coined terms, list/disambiguation pages that have no matching Wikidata item. They either need an article created on Wikidata first (overlaps the deleted-QID recreation item below — and creating WD items is off-limits autonomously) or should simply stay unconnected. Not forced; no autonomous action.
 
-- [ ] **Recreate deleted Wikidata items.** Info-gathering generator SHIPPED 2026-07-05: `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (isolated dir, NOT auto-submitted, CI-wired) walks `[[Category:Pages with deleted QID in ill template]]` → 304 distinct deleted **ill targets** → `CREATE` blocks + `review.md`. **Design correction:** the deleted QIDs are the ill *targets*, NOT the pages (which already have their own items), so it does NOT emit `P11250|"shinto:…"` (that would duplicate). Old QIDs kept as `#` provenance comments (36 recovered incl. the QID-in-title data-loss bug). **Remaining (deferred, see `queue.md`):** per-target content research so items survive Wikidata's deletion churn, a minimum-claim-set-per-type decision, and human-gated submission through the QS pipeline. Actual recreation is out of scope until researched.
+- [x] **Recreate deleted Wikidata items — REFERENCED targets only (DONE 2026-07-06).** The deleted QIDs that were **referenced by `{{ill}}` templates** on wiki pages were recreated this session (Emma ran the QuickStatements) and their links relinked. **The ~213 UNREFERENCED deleted items are NOT to be recreated** (Emma 2026-07-06): they were deleted for a reason, they aren't breaking any links, and restoring them is explicitly unwanted. No open work here.
 

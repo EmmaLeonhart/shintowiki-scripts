@@ -10,9 +10,9 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 == Open questions ==
 
-''(These mirror the "Blockers — parked at queue end" section of <code>queue.md</code>. Answer inline; the agent deletes each once acted on.)''
+''(These mirror actionable blockers in <code>queue.md</code>. Answer inline; the agent deletes each once acted on.)''
 
-* '''1. Recreate the deleted Immanuelle Wikidata items? + minimum claim set per type.''' (agent 2026-07-05) Recovery works — no admin export needed (earlier "blocked" note withdrawn): the fandom crossref recovered '''~213''' deleted items ('''203 QID-anchored''') with per-language content (<code>recreate-deleted-wikidata/shinto_wiki_crossref.md</code>). The '''~122 self-deleted''' items (your own "Author request" + "improperly created" batch) are '''moot — confirmed NOT on the wikis''' (0/122), so they're out of scope; no decision needed on those. '''Decision needed:''' (a) do you want the ~213 recoverable items recreated on Wikidata at all? (b) what minimum viable claim set per target-type (person / shrine / facility / concept) should each carry to survive Wikidata's deletion review? Nothing goes to Wikidata without your go-ahead (CLAUDE.md WD rules). Analysis: <code>docs/deleted_immanuelle_items_analysis_2026-07-05.md</code>. ''(agent note 2026-07-06: the deleted-QID ILL-target subset was created this session — you ran the QuickStatements — and their {{ill}} links relinked; this question remains open for the BROADER ~213 set + the claim-set-adequacy call.)''
+''(No open questions right now. Emma resolved 2026-07-06: the referenced deleted items — the ill targets — were recreated this session; the ~213 UNREFERENCED deleted items are NOT to be recreated — they were deleted for a reason and break no links.)''
 
 == Notes ==
 

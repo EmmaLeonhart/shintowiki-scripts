@@ -39,44 +39,21 @@ Once the loop runs: the **18 Japanese-named duplicate categories** tagged this s
 
 - [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
-## 3. Category-name translation — residual tail (machine-resolvable patterns EXHAUSTED)
+## 3. Category-name translation — deterministic resolvers (done); residual → agentic RAG (item 6)
 
-`[[Category:Japanese language category names]]` (~1186 subcats). Resolved: dated-maintenance
-transform, phase-1 Wikidata-category-anchored (covers ~all QID'd cats incl. `の神社` shrines via
-authoritative enwiki category sitelink), and phase-4 place gazetteer (`の建築物`/`の歴史`/`の神社`/
-`の寺院`/`の重要文化財`, jawiki→enwiki place + P31 gate). All productive patterns with a VERIFIED
-enwiki category convention are now handled. The residual is genuinely human-translation / bespoke
-territory (documented negatives, never machine-guessed):
+`[[Category:Japanese language category names]]` (~1186 subcats). The DETERMINISTIC resolvers are done:
+dated-maintenance transform, phase-1 Wikidata-category-anchored (covers ~all QID'd cats incl. `の神社`
+shrines via authoritative enwiki category sitelink), and phase-4 place gazetteer (`の建築物`/`の歴史`/
+`の神社`/`の寺院`/`の重要文化財`, jawiki→enwiki place + P31 gate). These only handle patterns with an
+authoritative Wikidata anchor or a verified enwiki convention.
 
-- `の旧県社` shrine-rank-by-place — enwiki has no "Former prefectural shrines"/"Kensha" category.
-- bare `<place>郡` districts — 6/9 have no enwiki article (abolished districts); the 3 that resolve
-  (Ibo/Inashiki/Funai District) have NO matching enwiki *category*, and their P31 (district Q1122846)
-  isn't a place-gate class. No category convention → residual.
-- `の画像提供依頼` (image-request maintenance) + `<sect>の寺院` sect-temples — each need a bespoke
-  path (maintenance-cat convention / sect→English name), not a place suffix.
+- [ ] The remaining residual (`の旧県社`, bare `<place>郡` districts, `の画像提供依頼`, `<sect>の寺院`,
+  etc. — auto-refreshed at `docs/category_translation_residual.md`) is NOT out of scope. It is exactly
+  the agentic-RAG target in **item 5** — every one gets an English name via cloud RAG, not left for a
+  human. (The deterministic resolvers just avoid GUESSING inside a mechanical script; RAG does the
+  research the script can't.)
 
-- [ ] (low, human/bespoke only) Anything here advances only via human translation or a purpose-built
-  resolver — do NOT add a place suffix for these (no verified enwiki category convention). Residual
-  auto-refreshes at `docs/category_translation_residual.md` on each CI generator run.
-
-## 4. EN/FR/ID label-gap regularization
-
-- [ ] Some shrines have labels in one/two of en/fr/id but not all three (old technical failures).
-  NEEDS-DECISION (Emma): is this still a distinct same-source cross-fill, or is it subsumed by the
-  BFS/multilang drip (which now generates fr+id fills into the drip, confounding a live-Wikidata
-  gap query)? Confirm scope, then build the fill where the others exist.
-
-## 4b. Recreate the ~213 recoverable deleted-Immanuelle Wikidata items ([[Open questions]] Q1)
-
-- [ ] NEEDS-DECISION (Emma): the fandom crossref recovered ~213 deleted items (203 QID-anchored)
-  with per-language content (`recreate-deleted-wikidata/shinto_wiki_crossref.md`). The deleted-QID
-  ILL-target subset was already created this session (Emma ran the QS) + relinked. Still open for the
-  BROADER ~213: (a) recreate them all on Wikidata? (b) minimum viable claim set per type
-  (person/shrine/facility/concept) to survive Wikidata deletion review? Nothing to Wikidata without
-  Emma's go-ahead (CLAUDE.md WD rules). Analysis: `docs/deleted_immanuelle_items_analysis_2026-07-05.md`.
-  If yes, express as QuickStatements only (feed the daily pipeline) — never a bespoke editor.
-
-## 5. cdo (Min Dong) transliterator — maintenance only
+## 4. cdo (Min Dong) transliterator — maintenance only
 
 Built + wired (gated `cdoify` in `generate_chinese_quickstatements.py`, registered, emits `cdo.txt`;
 `cdo_readings.json` 1502 entries, 1502/2192 corpus-char coverage). No open task — the only ongoing
@@ -85,6 +62,21 @@ work is coverage growth:
 - [ ] (low, recurring) Rerun `python fetch_cdo_readings.py --corpus --apply` after the zh corpus
   grows, to pick up new shrine-name chars. 690 chars currently have no Wiktionary `md=` reading
   (genuine gaps); gated cdo simply withholds labels containing them. Not a blocker.
+
+## 5. Agentic RAG the ENTIRE category-translation residual — 100% all in
+
+Emma 2026-07-06: the residual is NOT human-only / out of scope — RAG every one. The deterministic
+resolvers (item 3) handle only Wikidata-anchored + verified-convention cases; everything else in
+`docs/category_translation_residual.md` (~425 Japanese-script category names) goes through **agentic
+RAG on the cloud** — the same remote-routine mechanism that translates `need_translation/` prose and
+`duplicated_content/`. Go 100% all in: every residual category gets a canonical English name, none
+left behind.
+
+- [ ] Build a `remote_queue.py` source that emits each residual category as an agentic-RAG item:
+  worker reads the category (its members + jawiki/Wikidata context), determines the canonical English
+  `Category:` name (research, not a mechanical guess — the point of RAG), and appends
+  `source,destination` to `category_moves.csv` (consumed by the existing monthly `move_categories`).
+  Uncapped; the cloud consumer paces itself. Verify a sample of proposed names before wiring to move.
 
 ## Pinned tail (keep last, always)
 
