@@ -76,6 +76,10 @@ canonicalizes it — `deleted_qids_in_ill`/`wikidata_lookup` only act on `"missi
   `wbgetentities`; if the entity is a redirect, rewrite the QID to the target (follow the chain).
   Light op; throttle + 429-bail; cache per run. Durable maintenance.
 
+## Fix the pipeline
+
+As seen here https://github.com/EmmaLeonhart/shintowiki-scripts/actions/workflows/cleanup-loop.yml It appears the entire cleanup look has just been broken for ages, this needs fixing
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
