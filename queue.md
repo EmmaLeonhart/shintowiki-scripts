@@ -13,16 +13,20 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ## 1. Get the cleanup-loop reliably working (top priority — enables everything else)
 
-The cleanup-loop is still unreliable: the category-orchestrator step intermittently hits its
-160-min timeout (07-04 failed on it; `63926a81` mwclient-retry-cap helped so 07-05 passed, but
-runs take 8h+ and the 07-06 run ran 3h+). The category orchestrator "has never completed a full
-cycle," so the category ops back-pressure never fully drains. **This gates items 2–5 below** —
-the deprecation moves, interlang consolidation, and merged-QID canonicalization all run inside it.
+DIAGNOSED + FIX SHIPPED (`1fa6c414`): the RED-timeout cause was ns14 ballooning to 28,176 pages
+(mostly enwiki-import date/maintenance cats) × heavy per-page ops → 1000 pages cost 2h40m → blew
+the 160-min category step timeout, killed red. Added a wall-clock self-stop
+(`MAX_RUN_SECONDS=145min`) to `common.run_orchestrator` so every orchestrator stops clean/green
+and resumes from the cursor. Remaining:
 
-- [ ] Make the cleanup-loop green-complete every fire. Diagnose the category-orchestrator
-  overshoot (allpages(ns=14) walk vs the 150-min internal budget / 160-min step timeout — why it
-  doesn't stop-and-commit-state in time), fix so it resumes cleanly next run (it is
-  cursor-resumable) and/or split the namespace across jobs. Verify a real run green-completes.
+- [ ] Confirm on a live fire that the category (and module) orchestrator now green-completes —
+  either exhausts or hits the 145-min cap and exits 0 with committed state. Next scheduled
+  cleanup-loop fire validates (the 07-06 in-progress run is on pre-fix code). If it still reds,
+  investigate the next-slowest step.
+- [ ] THROUGHPUT (separate from reliability, lower priority): a full category cycle still takes
+  ~many fires at ~1000 pages/145min. If draining the category back-pressure (item 2) is too slow,
+  consider not running history_offload/fandom_mirror on the ~3k obvious enwiki-junk cats, or
+  sharding ns14. Do NOT touch unless item 2 proves too slow — no premature optimization.
 
 ## 2. Drain the category-deprecation back-pressure (depends on #1)
 
