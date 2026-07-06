@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-06 — Template:Ill fix + merged-QID op (Emma, queue barrel-through)
+
+**Template:Ill wrongful deletion.** Mitigation: git-synced `Template:Ill` (redirect →
+Template:Interlanguage link) in both `miraheze_unique/` + `fandom_unique/` so the
+independent-pages sync force-presents it (and fandom_unique/ titles are `protected` in the
+orphan-deleter, so it's now skipped). Root cause: `fandom_subset_orchestrator.decide()` now
+returns SKIP (was DELETE) when miraheze is a redirect and fandom is a redirect — a miraheze
+redirect is a valid equivalent. 6 tests; `fandom/tests/` added to CI; stdout `reconfigure()`
+fix. **Merged-QID op** (`merged_qids_in_ill`): rewrites `{{ill|…|qid=<merged>}}` to the
+surviving target when the QID is a Wikidata redirect (deleted_qids_in_ill only catches
+"missing", never merges). Registered in mainspace_orchestrator; 6 tests. **P31 tail**: typed
+Ōtsuki Hotel (hotel), flagged JR Sangū Line as dup of Q872023; 16 ambiguous left for Emma.
+**Thai transliterator**: blocked on a verified converter (no lib installed) — not faked.
+
 ## 2026-07-06 — interlang_consolidate merges multiple {{wikidata link}} templates (Emma issue 1)
 
 Fixed the consolidation gap: a page with both a QID `{{wikidata link|Q…}}` and a separate

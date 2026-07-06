@@ -30,20 +30,15 @@ autonomous follow-up. **Repair is disposable — dumb direct text swaps, no dura
 
 ## 2. Long-tail language transliterators (build task)
 
-- [ ] **Thai (`th`)** transliterator — pre-posed vowel signs (33/135 labels). `pa/km/lo/dz/new/mad/shn`
-  (≤16 labels) + `cdo` have no converter — only if one arrives. `python
+- [ ] **Thai (`th`)** transliterator — kana→Thai script with pre-posed vowel reordering
+  (เ/แ/โ/ใ/ไ written before the consonant, pronounced after). 33/135 labels. BLOCKED on a
+  *verified* converter: no Thai transliteration lib is installed (pythainlp/tltk/thai_romanization
+  all absent) and hand-rolling kana→Thai orthography can't be verified here — shipping unverifiable
+  labels to Wikidata is worse than not shipping. Needs a deliberate build with a Thai reference.
+  `pa/km/lo/dz/new/mad/shn` (≤16 labels) + `cdo` have no converter either. `python
   shinto-label-generator/language_registry.py` lists uncovered languages by count.
 
-## 4. Merged-QID redirect resolution op
-
-A Wikidata **merge** turns the old item into a *redirect* (NOT "missing"), so nothing
-canonicalizes it — `deleted_qids_in_ill`/`wikidata_lookup` only act on `"missing"` entities.
-
-- [ ] Orchestrator op: for each `{{ill|…|qid=Q…}}` (and `{{wikidata link}}`), query
-  `wbgetentities`; if the entity is a redirect, rewrite the QID to the target (follow the chain).
-  Light op; throttle + 429-bail; cache per run. Durable maintenance.
-
-## 5. Fix the cleanup-loop pipeline
+## 3. Fix the cleanup-loop pipeline
 
 The whole cleanup-loop has been failing for ~a week: the **category-orchestrator step times out
 at 160 min** every run (its allpages(ns=14) walk can't finish), so the category deprecation /
