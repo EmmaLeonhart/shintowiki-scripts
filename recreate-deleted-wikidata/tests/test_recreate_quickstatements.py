@@ -74,3 +74,39 @@ def test_render_create_block_invalid_ja_no_sitelink():
     # invalid ja link → NO sitelink line
     assert not any(ln.startswith("LAST\tSjawiki") for ln in lines)
     assert 'LAST\tLja\t"縣神社 (四日市市)"' in lines
+
+
+# ─── step 1: consolidated JSON (all linking articles + labels) ──────────────
+def test_labels_for_consolidates_en_and_langlinks():
+    t = g.parse_deleted_ill("Abe Yasukichi|ja|安倍泰吉|de|Abe Yasukichi|qid=DELETED_QID")
+    labels = g.labels_for(t)
+    assert labels["en"] == "Abe Yasukichi"
+    assert labels["ja"] == "安倍泰吉"
+    assert labels["de"] == "Abe Yasukichi"
+
+
+def test_labels_for_en_lost_keeps_other_languages():
+    # en name destroyed by the QID-in-title bug → no "en", other labels survive.
+    t = g.parse_deleted_ill("Q135491453|de|One Day Spa|ja|ワンデイ・スパ|qid=DELETED_QID")
+    labels = g.labels_for(t)
+    assert "en" not in labels
+    assert labels["de"] == "One Day Spa"
+    assert labels["ja"] == "ワンデイ・スパ"
+
+
+def test_target_record_carries_all_source_pages_and_flags():
+    t = g.parse_deleted_ill("Abe Yasukichi|ja|安倍泰吉|qid=DELETED_QID|dd=Q1")
+    rec = g.target_record(t, ["Page B", "Page A"], existing_qid="Q42",
+                          ja_article_exists=True)
+    assert rec["deleted_qid"] == "Q1"
+    assert rec["source_pages"] == ["Page A", "Page B"]   # sorted, both kept
+    assert rec["labels"]["en"] == "Abe Yasukichi"
+    assert rec["existing_wikidata_qid"] == "Q42"         # probable duplicate → relink
+    assert rec["ja_article_exists"] is True
+
+
+def test_target_record_lost_qid_is_none():
+    t = g.parse_deleted_ill("Abe Arimori|ja|安倍有盛|qid=DELETED_QID")
+    rec = g.target_record(t, ["Abe no Ariyo"])
+    assert rec["deleted_qid"] is None
+    assert rec["existing_wikidata_qid"] is None
