@@ -10,20 +10,20 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ---
 
-## 1. Fix the failed jawiki-category QuickStatements (`errors.txt`)
+## 1. Resolve the 18 duplicate categories from the failed QS (`errors.txt`)
 
-Emma ran `modern-quickstatements/jawiki_category_items.txt`; **30 CREATE blocks failed**
-(`errors.txt`, repo root). Cause: the `Sjawiki` target came verbatim from
-`{{wikidata link||ja|Category:X}}` on the shinto category, and on these X is wrong — either
-**garbage** (e.g. `19th-century Kokugaku scholars` → `Category:19世紀のKokugakuist`, should be
-`19世紀の国学者`) or a **real jawiki category that already has a Wikidata item** (sitelink conflict →
-link, don't create). Fix case-by-case:
+Of the 30 failed CREATEs: **12 (real jawiki target, no item) were re-run and all created
+successfully** (done). The remaining **18 are shinto-wiki Japanese-named DUPLICATES** — the
+`{{wikidata link||ja|Category:X}}` target X (`20世紀アジアの女性王族`, `19世紀のKokugakuist`, …)
+is not a jawiki page but a *shinto* category duplicating the English-named one. All 30 English
+pages are git-synced in `git_synced/Category%3A*.wiki`.
 
-- [ ] For each of the 30: git-sync the shinto category page, correct its
-  `{{wikidata link||ja|Category:X}}` to the RIGHT jawiki category. Then check that jawiki
-  category's Wikidata status — **has an item** → set `{{wikidata link|Qxxx}}` (link to it, drop the
-  failed CREATE); **no item** → keep it for a corrected CREATE (regenerate via
-  `generate_missing_wikidata_categories.py`). Un-sync each page once resolved.
+- [ ] Tag the 18 Japanese-named shinto duplicate categories into the deprecation pipeline
+  (`[[Category:Japanese language category names]]`) so the cloud translates + `move_categories`
+  merges them into the English survivor. (`19世紀のKokugakuist` is a bad-text-replacement dup of
+  `19世紀の国学者` — same treatment; the target is signal, don't delete.) Drains only once the
+  category orchestrator stops timing out — see the end-of-queue "Fix the pipeline" item. The 12
+  already-created pages can be un-synced.
 
 ## 2. `Template:Wikidata link` consolidation (Emma issue 1)
 
