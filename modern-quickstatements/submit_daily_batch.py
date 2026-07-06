@@ -46,6 +46,7 @@ ATOMIC_FILES = [
     "migrate_ritsuryo_funding_remove.txt",    # Remove P31 ritsuryō funding values once P13723 is confirmed
     "migrate_ritsuryo_funding_underspecified_remove.txt",  # Remove P31=Kanpei-sha when more specific funding type present
     "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
+    "durability_backlinks.txt",               # Durability: reciprocal backlinks (father→child etc.) onto other items so 2026-created orphan items become structurally needed (audit of 2026-01-01.txt)
 ]
 
 
