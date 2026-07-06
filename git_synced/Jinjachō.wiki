@@ -126,5 +126,4 @@ Jinjacho-1.jpg|{{ill|Tokyo Jinja Chō|ja|東京都神社庁}} (Photographed on J
 [[Category:Wikidata has short description]]
 [[Category:Pages with deleted QID in ill template]]
 
-<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
 [[Category:Git synced pages]]

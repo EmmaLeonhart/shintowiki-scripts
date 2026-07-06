@@ -103,5 +103,4 @@ Due to traffic restrictions and congestion on the day of the event, it is diffic
 [[Category:Suiten-gū Shrines]]
 [[Category:Independently git synced pages]]
 
-<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
 [[Category:Git synced pages]]

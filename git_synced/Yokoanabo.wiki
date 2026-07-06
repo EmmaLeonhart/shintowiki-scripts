@@ -95,5 +95,4 @@ These tombs are found from Kyushu through San'in, Kinki, Hokuriku, and Tokai, wi
 {{wikidata link|Q11543436|ja|横穴墓|grok=none|check_date=2026-05-27}}
 [[Category:Pages with deleted QID in ill template]]
 
-<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are really sections, recreate real entities by hand, relink duplicates). Remove this category once the page's ills are resolved and the next sync will drop the local copy. -->
 [[Category:Git synced pages]]
