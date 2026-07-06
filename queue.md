@@ -12,8 +12,9 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ## 1. Long-tail language transliterators (residual)
 
-- [ ] `pa/km/lo/dz/new/mad/shn` (≤16 labels each) + `cdo` have no script converter — pursue only
-  if one arrives. (`th` Thai SHIPPED 2026-07-06 via wunsen romaji→Thai; `my` Burmese still open.)
+- [ ]  (Min Dong) — mixed Chinese characters + Bàng-uâ-cê romanization, NOT a plain
+  romaji→script transliteration, so the multilang engine does not fit it. Only remaining
+  uncovered lang. (th/new/pa/mad/my/km/lo/dz/shn all SHIPPED 2026-07-06.)
 
 ## Pinned tail (keep last, always)
 
