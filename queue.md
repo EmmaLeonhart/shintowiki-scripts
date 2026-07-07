@@ -33,14 +33,11 @@ These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+)
 endpoint **`query-main.wikidata.org/sparql` works** — use it (it serves everything except scholarly
 articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them via query-main now.
 
-- [ ] **Alias audit — trace SOURCE typos** (NEEDS-INVESTIGATION: no clean signal yet). Comma cleanup
-  DONE 2026-07-07 (189 removals in `remove_junk_aliases.txt`). The typo-trace via `romaji_phonology`
-  DOESN'T work at scale — checked all 36,580 shrine/temple en labels via query-main, 4,004/1,973
-  "fail" but they're dominated by LEGIT non-Japanese-named shrines (Taiwan/Korea colonial: Zhushan,
-  Alishan, Gwangju…; English: "Olive Shrine", "Mission of Hawaii"). The validator can't tell "Zhushan"
-  (real) from "Zebshō" (typo). Better signal = kana(P1814)-vs-romaji-label mismatch (romanize the kana,
-  compare to the label; a mismatch on a shrine that HAS kana = a real typo) — a separate small build.
-  The validator's built purpose (GATE new cloud-session labels) stands.
+- [ ] **Alias audit — typo candidates FOUND, need per-item review.** Comma cleanup DONE (189 removals
+  in `remove_junk_aliases.txt`). Typo signal SOLVED 2026-07-06: kana(P1814)-vs-romanized-label
+  divergence → **161 candidates** in `docs/kana_label_mismatch_audit_2026-07.md` (real typos like
+  Saruka→Saruga mixed with historical-kana / place-prefix false positives — the WRONG SIDE VARIES, so
+  each needs review/RAG before QS; good remote-queue RAG candidate). Phonology validator = gate only.
 
 ## 11. Bunrei residual (harvest EXHAUSTED 2026-07-06 — 6 sources, ~10,550 cited edges)
 
