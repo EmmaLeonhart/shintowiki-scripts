@@ -50,7 +50,6 @@ OUTPUT = os.path.join(HERE, "reisai.txt")
 P_DAY = "P837"            # day in year for periodic occurrence
 P_ROLE = "P3831"          # object of statement has role
 Q_REISAI = "Q11385469"    # Reisai
-Q_JAWIKI = "Q177837"      # Japanese Wikipedia (reference: stated in)
 
 _DATE_RE = re.compile(r"(\d{1,2})月(\d{1,2})日")
 _REISAI_RE = re.compile(r"\|\s*例祭\s*=\s*([^\n]*)")
@@ -120,10 +119,10 @@ def fetch_batch(titles):
 
 
 def qs_line(shrine_qid, day_qid, title):
-    """P837=day-of-year, P3831=Reisai qualifier, reference stated-in jawiki + import URL."""
+    """P837=day-of-year, P3831=Reisai qualifier, reference = the jawiki import URL
+    (P4656) — self-sufficient, so no separate 'stated in Japanese Wikipedia'."""
     url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
-    return (f'{shrine_qid}|{P_DAY}|{day_qid}|{P_ROLE}|{Q_REISAI}'
-            f'|S248|{Q_JAWIKI}|S4656|"{url}"')
+    return f'{shrine_qid}|{P_DAY}|{day_qid}|{P_ROLE}|{Q_REISAI}|S4656|"{url}"'
 
 
 def main():

@@ -34,7 +34,9 @@ def test_no_field_returns_none():
 
 def test_qs_line_shape():
     line = qs_line("Q999", "Q2519", "諏訪大社")
-    assert line.startswith("Q999|P837|Q2519|P3831|Q11385469|S248|Q177837|S4656|\"https://ja.wikipedia.org/wiki/")
+    # reference is the jawiki import URL only (S4656) — no separate stated-in
+    assert line.startswith("Q999|P837|Q2519|P3831|Q11385469|S4656|\"https://ja.wikipedia.org/wiki/")
+    assert "S248" not in line
 
 
 def test_qs_line_parses_in_pipeline():
