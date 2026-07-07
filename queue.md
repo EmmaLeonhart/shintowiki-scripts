@@ -56,6 +56,13 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
+- [ ] **MediaWiki-namespace offload-banner crud** (Emma 2026-07-07, priority): ns8 interface pages
+  carry offloaded-history comments/banners that override the UI. ns8 is supposed to be excluded
+  from every orchestrator — investigate how the crud got there, find every affected page
+  (read-only scan), and strip via a wiki-cleanup.yml script (no local write creds).
+- [ ] **Bunrei/Reisai automated query monitors** (Emma 2026-07-07): Talk:Q11385469 on Wikidata has
+  a {{Wikidata list}} P837 monitor; build the matching P612/bunrei monitor for Talk:Q195793 and
+  make both actually useful (labels, dates, sort).
 
 ## Pinned tail (keep last, always)
 

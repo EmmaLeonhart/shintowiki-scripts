@@ -4,29 +4,23 @@ This page is the interface between Emma (human) and the bot agents that work on 
 
 == How to use this page ==
 
-* '''Agents:''' read this page at the start of every session AND every hourly work-loop cron tick. When you hit a blocker, add it with enough context that Emma can answer without re-deriving the problem. '''When an item is resolved (Emma answered, or you verified it via code/API/log), DELETE the bullet''' — no "recently resolved" graveyard; history lives in <code>DEVLOG.md</code> + git log.
+* '''Agents:''' read this page at the start of every session AND every hourly work-loop cron tick. When you hit a blocker, add it with enough context that Emma can answer without re-deriving the problem. When an item is resolved (Emma answered, or you verified it via code/API/log), DELETE the bullet silently — no narrative about the removal; history lives in <code>DEVLOG.md</code> + git log.
 * '''Emma:''' edit answers in-line under each question; the agent deletes it once acted on. Free-form context goes under [[#Notes|Notes]].
-* '''This page is wiki-wins.''' The wiki is canonical; Emma's edits here propagate down to the repo. (The 2026-06-07 bot clobber of this page is fixed — <code>fetch-depth:0</code> + most-recent-edit-wins + explicit wiki-wins for this page.)
+* '''This page is wiki-wins.''' The wiki is canonical; Emma's edits here propagate down to the repo.
 
 == Open questions ==
 
-''(These mirror actionable blockers in <code>queue.md</code>. Answer inline; the agent deletes each once acted on.)''
+''(Blockers needing Emma's judgement. None right now.)''
 
-''(All four 2026-07-07 items acted on: onkamui maximalist parser + bunrei research page moved to the end of queue.md per the rule below; romaji-typo provenance trace dropped per Emma's answer. On the history-offload question: verified again 2026-07-07 — NO history offloading is happening and none has happened since 2026-06-01; the op has a code-level CUTOFF_DATE (history_offload.py line 68) that hard-returns on every run past that date, and the FORCE override is set nowhere in any workflow. The throughput bullet's phrasing was stale/misleading — it suggested "skipping" an op that is already inert; apologies for the scare. The 07-05 DEVLOG entry "Miraheze history removal: already stopped" records the same verification.)''
+== Wiki-based queue ==
 
-== Wiki based queue ==
-I added this thing to the page, and the idea here is that it's a bit of a slower process, but there are wiki things that ought to be addressed here. Well, particularly, this is a thing for the other stuff. 
+''Standing work queue, edited primarily by Emma on the wiki. Rules: agents read this section every session and every work-loop tick; each item gets appended to the '''end''' of <code>queue.md</code> (never the front) and worked from there; an item's bullet is deleted from this list when the work is done.''
 
-I already put into the chat the way that I want to change the annual festivals and the large amount of quick statements that I want to execute immediately. Immediately!
-
-But yeah, in the future, I'm going to be editing the queue a bit less because editing this page is often better. At the very least, it gives a bit of an indication here, but to keep in mind, all edits to this page go at the end of the queue, not at the beginning. 
+* Fix the history-offload banner crud in the MediaWiki namespace: pages there carry offloaded-history comments/banners that override interface messages and corrupt the UI. Find every affected ns8 page and strip the crud.
+* Help with the Bunrei and Reisai automated query monitors: [[d:Talk:Q11385469]] has a {{Wikidata list}} SPARQL monitor for P837 shrines; a matching one is wanted for Bunrei at [[d:Talk:Q195793]].
 
 == Notes ==
 
 ''(free-form scratch space for Emma)''
-
-== Sync-policy exception note ==
-
-Conflict resolution for <code>git_synced/</code> is '''most-recent-edit-wins''' (whichever side — wiki top revision vs latest git commit touching the file — was edited more recently wins). This page is edited primarily ON the wiki by Emma. Agents: always pull this page from the wiki at session start; never push a stale repo copy; before editing it repo-side, confirm the wiki hasn't been updated since the last sync.
 
 [[Category:Git synced pages]]
