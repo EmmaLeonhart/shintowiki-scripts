@@ -447,7 +447,7 @@ def main():
     all_lines = read_all_lines()
     if not all_lines:
         print("No QS lines found in any atomic file. Nothing to do.")
-        return
+        return 0  # genuinely-drained backlog is success, not failure
 
     # Randomly select up to MAX_EDITS lines
     selected = random.sample(all_lines, min(MAX_EDITS, len(all_lines)))
@@ -455,7 +455,8 @@ def main():
 
     session, csrf = wd_login()
     if not session:
-        return
+        print("FATAL: login failed — no edits attempted. Failing the run.")
+        return 1  # a broken/invalidated bot token must redden, not exit green
 
     succeeded = 0
     failed = 0
@@ -493,8 +494,16 @@ def main():
 
     print(f"\n=== Results: {succeeded} succeeded, {failed} failed ===")
 
+    # Total failure: attempted edits but NONE landed (the 2026-07-06 outage — an
+    # invalidated bot token failing every save — hid behind a green run for days).
+    # Redden the run so it surfaces instead of silently pretending to edit.
+    if succeeded == 0 and failed > 0:
+        print(f"FATAL: 0/{failed} edits succeeded — failing the run so the outage surfaces.")
+        return 1
+    return 0
+
 
 if __name__ == "__main__":
     # In the main guard, not at import: tests import this module under pytest.
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-    main()
+    sys.exit(main())

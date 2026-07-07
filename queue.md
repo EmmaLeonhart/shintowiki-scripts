@@ -72,15 +72,17 @@ Wikidata:
   clusters (disambiguation / data-quality). BLOCKED-ON-EXTERNAL: WDQS 429-outaged 2026-07-06 — retry
   when it recovers.
 
-## 10. Repo-file audit — sweep junk
+## 10. Reliability: direct_daily_edits must exit non-zero on total failure
 
-Done this pass: removed root `2026-01-01.txt` (durability input, sweep finished) + the 15
-`_batchN_url.txt` scratch (unreferenced; statements live in `durability_enrich.txt` + git). Kept
-`query.csv` (used by `language_registry.py`).
+The 07-06 CI-editing outage went unnoticed because `direct_daily_edits.py` exits 0 even when 0/N
+edits succeed (green run == "editing" was a false equivalence; see DEVLOG 2026-07-07).
 
-- [ ] Confirm-and-remove the 2 remaining ambiguous root files (didn't create them; unreferenced but
-  not obviously mine): `errors.txt` (299 lines of stray garbage) and `temple_query.csv` (stale, no
-  code refs). Emma nod → delete.
+- [ ] Make the script exit non-zero when it attempted edits but 0 succeeded (and/or when login
+  fails), so a total-failure state reddens the run instead of hiding. Add a test.
+
+_(Repo junk sweep DONE: removed `2026-01-01.txt`, 15 `_batchN_url.txt` scratch, and `errors.txt`.
+Kept `query.csv` (used by label gen) and `temple_query.csv` (per-lang temple label data Emma handed
+over — dormant, not junk).)_
 
 ## Pinned tail (keep last, always)
 
