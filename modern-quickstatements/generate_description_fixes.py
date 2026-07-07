@@ -20,14 +20,15 @@ Method (data-driven, never invented):
     prefecture label@X is known, else the generic modal; items whose
     description already equals the target form are skipped (self-draining).
 
-Ordering guarantee: these lines only CHANGE descriptions. Label adds continue
-to come from the shinto-label-generator drip; they fail harmlessly on
-uniqueness collisions until the description here has landed, then succeed —
-so "description first, then label" holds per item without cross-file
-coordination.
+Each output unit is the full PAIR Emma specified — "change description, then
+add label" — as ONE compound line (sub-lines joined by "||", executed
+sequentially by direct_daily_edits; the label half is skipped if the
+description edit fails). The label comes from the shinto-label-generator
+proposal files (id_proposed.txt, uk.txt, …); items with no proposed label
+get a desc-only line, and the label pipelines pick them up later.
 
-Output: description_fixes.txt — `Qxxx|Dxx|"…"` lines (capped at ~100/day in
-direct_daily_edits via FILE_DAILY_CAPS, interspersed with the main drip).
+Output: description_label_pairs.txt — `Qxxx|Dxx|"…"||Qxxx|Lxx|"…"` compound
+lines (capped ~100/day in direct_daily_edits via FILE_DAILY_CAPS).
 """
 import io
 import json
@@ -44,7 +45,8 @@ REPO = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(REPO, "shinto-label-generator"))
 from language_registry import COVERED  # noqa: E402
 
-OUT = os.path.join(HERE, "description_fixes.txt")
+OUT = os.path.join(HERE, "description_label_pairs.txt")
+PROPOSALS_DIR = os.path.join(REPO, "shinto-label-generator", "quickstatements")
 WDQS = "https://query-main.wikidata.org/sparql"
 UA = "shintowiki-descfix/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
 
@@ -57,14 +59,24 @@ PREF_SUPPORT = 5      # min corpus descriptions containing the prefecture label
 GENERIC_SUPPORT = 3   # min corpus frequency for the generic modal form
 
 
-def sparql(query):
+def sparql(query, retries=3):
     url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
     req = urllib.request.Request(url, headers={
         "User-Agent": UA, "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        return json.load(r)["results"]["bindings"]
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                if r.status == 429:
+                    raise SystemExit("429 from WDQS — bailing.")
+                return json.load(r)["results"]["bindings"]
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                raise SystemExit("429 from WDQS — bailing.")
+            if attempt == retries - 1:
+                raise
+            wait = 30 * (attempt + 1)
+            print(f"  {e.code} — retrying in {wait}s", flush=True)
+            time.sleep(wait)
 
 
 def langs_with_targets(cls, extra):
@@ -80,32 +92,65 @@ def langs_with_targets(cls, extra):
 
 
 def corpus_and_targets(cls, extra, lang):
-    """[(qid, desc, has_label, pref_label_or_None)] for every item of cls with desc@lang."""
+    """{qid: (desc, has_label, pref_label_or_None)} for every item of cls with desc@lang.
+
+    Split into cheap queries — the single joined query with OPTIONAL wdt:P131*
+    504'd on the 5k-item languages (2026-07-07):
+      1. items + desc + has-label flag (no prefecture);
+      2. the 47 prefecture labels@lang (for template inference by substring);
+      3. per-item prefecture ONLY for the label-less targets, in VALUES batches.
+    """
     q = f"""
-    SELECT ?item ?d ?hasLabel ?prefLabel WHERE {{
+    SELECT ?item ?d ?hasLabel WHERE {{
       ?item wdt:P31 wd:{cls} . {extra}
       ?item schema:description ?d . FILTER(LANG(?d) = "{lang}")
       BIND(EXISTS {{ ?item rdfs:label ?l . FILTER(LANG(?l) = "{lang}") }} AS ?hasLabel)
-      OPTIONAL {{ ?item wdt:P131* ?pref . ?pref wdt:P31 wd:Q50337 ;
-                  rdfs:label ?prefLabel . FILTER(LANG(?prefLabel) = "{lang}") }}
     }}
     """
     out = {}
     for b in sparql(q):
         qid = b["item"]["value"].rsplit("/", 1)[-1]
-        # one row per item; prefer the row that has a prefecture label
-        pref = b.get("prefLabel", {}).get("value")
-        if qid not in out or (pref and not out[qid][2]):
-            out[qid] = (b["d"]["value"], b["hasLabel"]["value"] == "true", pref)
+        out[qid] = (b["d"]["value"], b["hasLabel"]["value"] == "true", None)
+    time.sleep(1)
+    targets = [q_ for q_, (_, has, _p) in out.items() if not has]
+    for i in range(0, len(targets), 150):
+        batch = " ".join(f"wd:{x}" for x in targets[i:i + 150])
+        pq = f"""
+        SELECT ?item ?prefLabel WHERE {{
+          VALUES ?item {{ {batch} }}
+          ?item wdt:P131* ?pref . ?pref wdt:P31 wd:Q50337 ;
+                rdfs:label ?prefLabel . FILTER(LANG(?prefLabel) = "{lang}")
+        }}
+        """
+        for b in sparql(pq):
+            qid = b["item"]["value"].rsplit("/", 1)[-1]
+            d, has, _ = out[qid]
+            out[qid] = (d, has, b["prefLabel"]["value"])
+        time.sleep(1)
     return out
 
 
-def infer_templates(items):
-    """(pref_template_or_None, generic_or_None) from existing descriptions."""
+def pref_labels(lang):
+    """The 47 prefecture labels in this language (for template inference)."""
+    q = f"""
+    SELECT ?prefLabel WHERE {{
+      ?pref wdt:P31 wd:Q50337 ; rdfs:label ?prefLabel .
+      FILTER(LANG(?prefLabel) = "{lang}")
+    }}
+    """
+    return [b["prefLabel"]["value"] for b in sparql(q)]
+
+
+def infer_templates(items, prefs):
+    """(pref_template_or_None, generic_or_None) from existing descriptions.
+    Prefecture detection by substring against the 47 known pref labels@lang —
+    no per-item P131 needed for the corpus."""
+    prefs = sorted(prefs, key=len, reverse=True)
     pref_forms, generic = Counter(), Counter()
-    for desc, _has, pref in items.values():
-        if pref and pref in desc:
-            pref_forms[desc.replace(pref, "{pref}")] += 1
+    for desc, _has, _pref in items.values():
+        hit = next((p for p in prefs if p and p in desc), None)
+        if hit:
+            pref_forms[desc.replace(hit, "{pref}")] += 1
         else:
             generic[desc] += 1
     pref_t = next((t for t, n in pref_forms.most_common(1) if n >= PREF_SUPPORT), None)
@@ -113,8 +158,26 @@ def infer_templates(items):
     return pref_t, gen
 
 
+def load_label_proposals():
+    """(qid, lang) -> proposed label, from every shinto-label-generator output."""
+    out = {}
+    if not os.path.isdir(PROPOSALS_DIR):
+        return out
+    row = re.compile(r'^(Q\d+)	L([a-z][a-z0-9-]{1,11})	"(.*)"$')
+    for fn in os.listdir(PROPOSALS_DIR):
+        if not fn.endswith(".txt"):
+            continue
+        for ln in open(os.path.join(PROPOSALS_DIR, fn), encoding="utf-8"):
+            m = row.match(ln.rstrip("\r\n"))
+            if m:
+                out.setdefault((m.group(1), m.group(2)), m.group(3))
+    return out
+
+
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+    proposals = load_label_proposals()
+    print(f"{len(proposals)} label proposals loaded from {PROPOSALS_DIR}")
     covered = set(COVERED)
     lines, report = [], []
     for cls, extra in CLASSES:
@@ -125,7 +188,7 @@ def main():
                 continue
             items = corpus_and_targets(cls, extra, lang)
             time.sleep(1)
-            pref_t, gen = infer_templates(items)
+            pref_t, gen = infer_templates(items, pref_labels(lang))
             if not (pref_t or gen):
                 report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
                 continue
@@ -138,7 +201,12 @@ def main():
                     skipped += 1
                     continue
                 esc = new.replace('"', '""')
-                lines.append(f'{qid}|D{lang}|"{esc}"')
+                unit = f'{qid}|D{lang}|"{esc}"'
+                label = proposals.get((qid, lang))
+                if label:
+                    lesc = label.replace('"', '""')
+                    unit += f'||{qid}|L{lang}|"{lesc}"'
+                lines.append(unit)
                 fixed += 1
             report.append(f"{cls} {lang}: targets={counts[lang]} fix-lines={fixed} "
                           f"already-standard={skipped} pref_template={bool(pref_t)}")

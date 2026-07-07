@@ -94,7 +94,7 @@ ATOMIC_FILES = [
     "bunrei_qualifier_repair.txt",           # Self-healing: qualifier-add lines for bare shrine P612 statements missing P1013=Q195793 (the single-statement bunrei model, Emma 2026-07-07); regenerated in CI by generate_bunrei_qualifier_repair.py
     "reisai_qualifier_repair.txt",           # Self-healing: qualifier-add lines for bare shrine P837 statements missing any P3831 role (docs/wikidata_shrine_festival_model.md); regenerated in CI by generate_reisai_qualifier_repair.py
     "label_typo_fixes.txt",                   # Corrected EN labels from the label_typo_review cloud-RAG answers (collector: shinto_miraheze/collect_label_typo_answers.py)
-    "description_fixes.txt",                  # Description-without-label cleanup (Emma 2026-07-07): standardized descriptions replacing stale ones that block label adds; capped ~100/day below; regenerated in CI by generate_description_fixes.py
+    "description_label_pairs.txt",            # Description-without-label cleanup (Emma 2026-07-07): compound desc-then-label pair units (sub-lines joined by ||, executed in order); capped ~100/day below; regenerated in CI by generate_description_fixes.py
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to
@@ -102,7 +102,7 @@ ATOMIC_FILES = [
 # instead of letting it swamp the pool (Emma 2026-07-07: ~100 description
 # fixes/day, randomly interspersed, no separate queue).
 FILE_DAILY_CAPS = {
-    "description_fixes.txt": 100,
+    "description_label_pairs.txt": 100,
 }
 
 
@@ -491,30 +491,44 @@ def main():
     succeeded = 0
     failed = 0
 
+    rate_limited = False
     for i, line in enumerate(selected, 1):
-        parsed = parse_qs_line(line)
-        if not parsed:
-            print(f"[{i}/{len(selected)}] SKIP: Could not parse: {line}")
-            failed += 1
-            continue
-
-        action = "REMOVE" if parsed["is_removal"] else "EDIT"
-        print(f"[{i}/{len(selected)}] {action}: {line}")
-
-        try:
-            success, msg = execute_line(session, csrf, parsed)
-            if success:
-                print(f"  OK: {msg}")
-                succeeded += 1
-            else:
-                print(f"  FAIL: {msg}")
+        # Compound unit: sub-lines joined by "||" execute sequentially and stop
+        # at the first failure — used for description-then-label pairs where
+        # the label add is only valid once the description landed (Emma
+        # 2026-07-07; docs/wikidata_shrine_festival_model.md sibling rule).
+        sublines = [s for s in line.split("||") if s.strip()]
+        for j, sub in enumerate(sublines):
+            parsed = parse_qs_line(sub)
+            if not parsed:
+                print(f"[{i}/{len(selected)}] SKIP: Could not parse: {sub}")
                 failed += 1
-                if "429" in msg:
-                    print("  Rate-limited — stopping further edits")
-                    break
-        except Exception as e:
-            print(f"  ERROR: {e}")
-            failed += 1
+                break
+
+            action = "REMOVE" if parsed["is_removal"] else "EDIT"
+            tag = f" (pair {j+1}/{len(sublines)})" if len(sublines) > 1 else ""
+            print(f"[{i}/{len(selected)}] {action}{tag}: {sub}")
+
+            try:
+                success, msg = execute_line(session, csrf, parsed)
+                if success:
+                    print(f"  OK: {msg}")
+                    succeeded += 1
+                else:
+                    print(f"  FAIL: {msg}")
+                    failed += 1
+                    if "429" in msg:
+                        print("  Rate-limited — stopping further edits")
+                        rate_limited = True
+                    break  # don't run the rest of the pair after a failure
+            except Exception as e:
+                print(f"  ERROR: {e}")
+                failed += 1
+                break
+            if j < len(sublines) - 1:
+                time.sleep(2)  # brief gap between the halves of a pair
+        if rate_limited:
+            break
 
         # Random delay 60-300 seconds between edits
         if i < len(selected):
