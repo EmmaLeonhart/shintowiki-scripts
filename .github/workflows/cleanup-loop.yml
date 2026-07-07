@@ -133,19 +133,27 @@ jobs:
             echo "wikidata-daily-fire=true" >> "$GITHUB_OUTPUT"
             echo "Non-schedule trigger — wikidata-edit jobs will run."
           else
+            # The edit "day" rolls over at 02:00 JST (Emma 2026-07-07), i.e. the
+            # UTC+7-shifted date — matching direct_daily_edits.edit_day(). Both
+            # sides of the comparison are shifted: TODAY from now, LATEST_DATE
+            # from the report's full UTC timestamp (filename: YYYY-MM-DD_HH-MM-SS_UTC).
             LATEST_REPORT=$(ls modern-quickstatements/reports/*.json 2>/dev/null | sort -r | head -1 || true)
+            LATEST_DATE=""
             if [ -n "$LATEST_REPORT" ]; then
-              LATEST_DATE=$(basename "$LATEST_REPORT" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}' || true)
-            else
-              LATEST_DATE=""
+              TS=$(basename "$LATEST_REPORT" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{2}-[0-9]{2}-[0-9]{2}' || true)
+              if [ -n "$TS" ]; then
+                LATEST_DATE=$(date -u -d "${TS:0:10} ${TS:11:2}:${TS:14:2}:${TS:17:2} UTC + 7 hours" +%Y-%m-%d)
+              else
+                LATEST_DATE=$(basename "$LATEST_REPORT" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}' || true)
+              fi
             fi
-            TODAY=$(date -u +%Y-%m-%d)
+            TODAY=$(date -u -d '+7 hours' +%Y-%m-%d)
             if [ "$LATEST_DATE" != "$TODAY" ]; then
               echo "wikidata-daily-fire=true" >> "$GITHUB_OUTPUT"
-              echo "Last submission report: ${LATEST_DATE:-none}; today is $TODAY — wikidata-edit jobs will run."
+              echo "Last submission edit-day: ${LATEST_DATE:-none}; edit-day now is $TODAY (rollover 02:00 JST) — wikidata-edit jobs will run."
             else
               echo "wikidata-daily-fire=false" >> "$GITHUB_OUTPUT"
-              echo "Already submitted today ($LATEST_DATE) — wikidata-edit jobs will skip."
+              echo "Already submitted this edit-day ($LATEST_DATE, rollover 02:00 JST) — wikidata-edit jobs will skip."
             fi
           fi
 
