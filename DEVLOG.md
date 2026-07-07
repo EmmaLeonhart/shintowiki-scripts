@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — Reisai import pipeline + Bunrei multi-source harvest (the day's main data work)
+
+Emma's two priority data contributions today, both via the QS pipeline (own atomic files,
+citations on every statement, idempotent):
+
+**Reisai (例祭, P837).** No Wikidata property/dataset existed; jawiki's `{{神社}}` infobox `例祭=`
+is the source. `generate_reisai_quickstatements.py` walks all ~6,700 jawiki shrine articles, parses
+fixed month/day (skips lunar 旧暦/relative/name-only), maps to the canonical day-of-year item via
+`reisai_day_qids.json` (366 days, canonical = lowest QID, 4/16→Q2519), emits
+`P837 <day> |P3831 Q11385469 (Reisai)| S4656 <jawiki url>` (Emma: the import URL alone is the
+reference — no S248 stated-in). **3,239 statements** in `reisai.txt`; regenerates every CI run via
+`generate-quickstatements.yml`, so new jawiki 例祭 additions flow in automatically.
+
+**Bunrei (分霊, P612 + P1013=Q195793).** No downloadable branch→head dataset exists ANYWHERE
+(4 research agents: gov/academic/LOD/commercial/community/repositories all node-only; the je
+community's own conclusion too). Derivation: each online 総本社 source gives network→head; each
+Wikidata shrine classifies into a network by ja-label suffix; every edge cites its source
+(S854). Multi-source config in `generate_bunrei_quickstatements.py` — each source = own file:
+jinja-kikou 9,971 (22 networks) / animism.world 128 (+Kifune, Toshogu, Osugi, Awashima, Sarutahiko,
+Kotoshironushi) / jisha-toranomaki 40 (+Ebisu→西宮神社) / ikkojin 129 (+Shirahige→白鬚神社,
+Ōtori→大鳥大社) = **~10,268 edges**. Honest caveat in-script: P612 = network HEAD (総本社), not the
+immediate kanjō parent (published nowhere). Hygiene: shrine.s25.xrea.com = exact jinja-kikou
+duplicate (not double-counted); 大歳 skipped (no clean head); Kamo skipped (genuinely two-headed).
+Emma's constraint honored after a misstep: bunrei ONLY — a batch of 9 non-bunrei membership imports
+(二十二社/一宮/pilgrimages etc.) was built then deleted (strict data modeling; not today's scope).
+Niche-source hunt continues until exhaustion.
+
 ## 2026-07-07 — WDQS 429 workaround (split endpoint) + repeated-name shrine audit (#9 done)
 
 `query.wikidata.org` stayed 429-outaged all session, gating the SPARQL audits. Found the fix: the

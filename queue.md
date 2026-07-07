@@ -42,6 +42,14 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
   compare to the label; a mismatch on a shrine that HAS kana = a real typo) — a separate small build.
   The validator's built purpose (GATE new cloud-session labels) stands.
 
+## 11. Bunrei source harvest — continue until exhaustion
+
+- [ ] Keep finding non-Wikipedia 総本社/分霊 sources and wiring each as its own cited file via
+  `generate_bunrei_quickstatements.py` SOURCES config. Done: jinja-kikou (9,971), animism (128),
+  toranomaki (40), ikkojin (129). A niche-tail hunt (nicovideo via archive.org, 神社庁 DBs, official
+  総本社 sites, small networks 三峯/石鎚/出羽三山/護国…) is in flight — wire in what it finds; if it
+  returns empty, that's the exhaustion signal: close this item and move on.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
