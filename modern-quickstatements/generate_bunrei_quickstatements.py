@@ -82,6 +82,24 @@ SOURCES = {
             ("Q11435950", ["大杉神社"]),                           # Osugi -> 大杉神社 (茨城)
             ("Q7007362", ["淡島神社", "淡嶋神社"]),                # Awashima -> 淡嶋神社 (和歌山)
             ("Q3541617", ["猿田彦神社"]),                          # Sarutahiko -> 椿大神社
+            ("Q3313076", ["事代主神社"]),                          # Kotoshironushi -> 美保神社
+        ],
+    },
+    # jisha-toranomaki.com 系列社 table (30 networks) — adds Ebisu.
+    "toranomaki": {
+        "url": "https://jisha-toranomaki.com/jinja-keiretsusha/",
+        "out": "bunrei_toranomaki.txt",
+        "networks": [
+            ("Q705297", ["恵比寿神社", "恵比須神社", "戎神社", "蛭子神社", "えびす神社"]),  # Ebisu -> 西宮神社
+        ],
+    },
+    # ikkojin.jp 系統ランキング (一個人 magazine, Jinja-Honcho survey counts) — adds Shirahige, Otori.
+    "ikkojin": {
+        "url": "https://ikkojin.jp/article/110/",
+        "out": "bunrei_ikkojin.txt",
+        "networks": [
+            ("Q705303", ["白鬚神社", "白髭神社", "白髯神社"]),      # Shirahige -> 白鬚神社 (滋賀 総本社)
+            ("Q705151", ["大鳥神社"]),                             # Otori/Yamato-Takeru -> 大鳥大社
         ],
     },
 }

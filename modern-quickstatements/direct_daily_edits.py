@@ -77,7 +77,9 @@ ATOMIC_FILES = [
     "remove_junk_aliases.txt",                # Alias audit (queue #8): remove 189 comma-disambiguator junk aliases the pipeline dragged onto shrine/temple items (via query-main SPARQL)
     "reisai.txt",                             # Shrine Reisai (例祭) dates imported from jawiki (P837 day-of-year + P3831=Reisai qualifier + jawiki citation); regenerated in CI by generate_reisai_quickstatements.py
     "bunrei.txt",                             # Shrine bunrei lineage: branch->head-shrine P612 + P1013=Q195793 (Bunrei) qualifier, cited to jinja-kikou.net; derived locally by generate_bunrei_quickstatements.py (name-classification into jinja-kikou's network->head mapping)
-    "bunrei_animism.txt",                     # More bunrei: the networks animism.world/総本社まとめ adds beyond jinja-kikou (Kifune/Toshogu/Osugi/Awashima/Sarutahiko), same P612+P1013 model, cited to animism.world
+    "bunrei_animism.txt",                     # More bunrei: the networks animism.world/総本社まとめ adds beyond jinja-kikou (Kifune/Toshogu/Osugi/Awashima/Sarutahiko/Kotoshironushi), same P612+P1013 model, cited to animism.world
+    "bunrei_toranomaki.txt",                  # More bunrei: jisha-toranomaki.com 系列社 table adds Ebisu->西宮神社; same model, cited to jisha-toranomaki
+    "bunrei_ikkojin.txt",                     # More bunrei: ikkojin.jp 系統ランキング adds Shirahige->白鬚神社 + Otori->大鳥大社; same model, cited to ikkojin
 ]
 
 
