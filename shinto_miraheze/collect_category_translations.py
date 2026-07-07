@@ -36,7 +36,11 @@ CSV_PATH = os.path.join(SCRIPT_DIR, "category_moves.csv")
 
 _SOURCE_RE = re.compile(r"<!--\s*SOURCE:\s*(Category:[^>]*?)\s*-->")
 _TRANSLATED_RE = re.compile(r"<!--\s*TRANSLATED:\s*(.*?)\s*-->")
-_SKIP_RE = re.compile(r"<!--\s*SKIP:\s*(.*?)\s*-->")
+# Anchored to line start: the TASK instruction in every work-file quotes a
+# literal '<!-- SKIP: <reason> -->' example MID-LINE; an unanchored match read
+# that example as a real marker and classified all 378 work-files as skipped,
+# masking finished answers (2026-07-07). A real SKIP is a line of its own.
+_SKIP_RE = re.compile(r"^\s*<!--\s*SKIP:\s*(.*?)\s*-->", re.M)
 
 
 def _existing_sources() -> set:

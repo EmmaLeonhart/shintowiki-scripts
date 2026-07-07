@@ -14,18 +14,10 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
 
 ## 1. Category-orchestrator throughput (conditional, low priority)
 
-- [ ] A full ns14 category cycle still takes ~many fires at ~1000 pages/145min. ONLY if #2's drain
+- [ ] A full ns14 category cycle still takes ~many fires at ~1000 pages/145min. ONLY if the
+  Japanese-category translation drain (cloud RAG → `category_moves.csv` → monthly `move_categories`)
   proves too slow: skip history_offload/fandom_mirror on the ~3k enwiki-junk cats, or shard ns14. No
   premature optimization. (Cleanup-loop reliability itself is DONE — run 28802688487 green end-to-end.)
-
-## 2. Drain the category-deprecation back-pressure
-
-Once the loop runs: the **18 Japanese-named duplicate categories** tagged this session into
-`[[Category:Japanese language category names]]` get translated (cloud) + merged by
-`move_categories`; the interlang consolidation (`{{wikidata link}}` merge) and the new
-`merged_qids_in_ill` op sweep the wiki.
-
-- [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
 ## SPARQL-heavy audits
 
@@ -38,6 +30,7 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
   `remote_queue.py`; the cloud worker fills ANSWER (LABEL_TYPO/KANA_ISSUE/PREFIX_OK/OTHER).
   Collector BUILT (`shinto_miraheze/collect_label_typo_answers.py`, 5 tests; LABEL_TYPO →
   `label_typo_fixes.txt` in ATOMIC_FILES) — run it once answers land. Comma cleanup draining (189).
+  2026-07-07 late-morning check: 159 pending, no new cloud answers yet.
 
 ## 11. Bunrei residual (harvest EXHAUSTED 2026-07-06 — 6 sources, ~10,550 cited edges)
 
@@ -50,13 +43,13 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 - [ ] (low) Paper-only: 神社本庁『全国神社祭祀祭礼総合調査』(1995), 岡田荘司『事典 神社の歴史と祭り』—
   authoritative 系統 counts; needs Emma or a library, not scrapeable.
 
-## Session state (2026-07-07): queue DRAINED — everything below is a WAIT, not work
+## Session state (2026-07-07 late morning): contained verification session, hard stop 13:00
 
-All actionable items were completed this session. Remaining items wait on external systems
-(cloud RAG answers, cloud category drain, conditional triggers, paper sources). The 4 local crons
-die with the session; the durable machinery (daily cleanup-loop fire, remote_queue.json cloud
-routine) carries everything forward on its own. Next session: run the autonomous-loop skill to
-restart crons if extensive work resumes.
+Today runs on Emma's five one-shot time-gated crons (11:00/11:30 full pace; 12:00/12:30 wrap-up
+gradient; 13:00 finished) — they replace the usual 3-cron work-loop for today and die with the
+session. Remaining queue items wait on external systems (cloud RAG answers, cloud category drain,
+conditional triggers, paper sources); the not-for-today conditionals are written up on
+[[Open questions]] for Emma.
 
 ## Pinned tail (keep last, always)
 

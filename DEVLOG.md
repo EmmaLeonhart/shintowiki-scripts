@@ -4,6 +4,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — Queue #2 verified drained; collector SKIP-regex bug fixed (2 masked answers recovered)
+
+Contained late-morning session (hard stop 13:00, Emma's five time-gated crons).
+
+**Queue #2 — 18 Japanese-named duplicate categories: VERIFIED, item deleted.** All 18 (tagged
+2026-07-05, commit 4cffe84c) are now empty redirects on the wiki (members=0 for every one);
+spot-checked 4 English targets (20th-century Asian female royalty, 21st-century Japanese women
+(by occupation), 9th-century Japanese physicians, Administrative Agencies in Toyama Prefecture) —
+all exist and hold the content. The drain worked end-to-end.
+
+**collect_category_translations.py bug — every work-file misclassified as skipped.** The TASK
+instruction embedded in each `category_translation/*.wiki` work-file quotes a literal
+`<!-- SKIP: <reason> -->` example mid-line; the unanchored `_SKIP_RE` matched that example, so all
+378 files reported "skipped (human)" and, because the skip check precedes the translated check,
+any cloud-filled answer would never be collected. Two real answers were already masked. Fix:
+anchor `_SKIP_RE` to line start (`re.M`) — a real SKIP is a line of its own; +2 regression tests
+(the old roundtrip test only checked `parse_file`'s translated value, not the skip-first
+classification, which is how this slipped through). 14 tests pass. Applied: 2 rows →
+`category_moves.csv` (大阪市鶴見区の歴史 → History of Tsurumi-ku, Osaka; 式内社関連テンプレート →
+Shikinaisha templates), 2 work-files deleted (`remote_queue.json` drops them on its next CI rebuild).
+
+**Label-typo collector:** run, 159 pending, no new cloud answers yet.
+
 ## 2026-07-07 — Reisai import pipeline + Bunrei multi-source harvest (the day's main data work)
 
 Emma's two priority data contributions today, both via the QS pipeline (own atomic files,

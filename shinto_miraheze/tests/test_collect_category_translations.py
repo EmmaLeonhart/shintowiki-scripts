@@ -62,3 +62,18 @@ def test_roundtrip_worker_answer_parses():
     src, tr, skip = c.parse_file(filled)
     assert src == "Category:X市の神社"
     assert tr == "Category:Shinto shrines in X"
+
+
+def test_fresh_work_file_not_skipped():
+    # Regression (2026-07-07): the TASK instruction quotes a literal
+    # '<!-- SKIP: <reason> -->' example mid-line. It must not read as a real
+    # SKIP marker — it classified every work-file as skipped and masked
+    # finished TRANSLATED answers.
+    src, tr, skip = c.parse_file(b._work_file("X市の神社", ["p"], "wt"))
+    assert skip is None
+    assert tr == ""
+
+
+def test_real_skip_line_still_detected():
+    txt = b._work_file("X市の神社", ["p"], "wt") + "\n<!-- SKIP: nonsense name -->\n"
+    assert c.parse_file(txt)[2] == "nonsense name"
