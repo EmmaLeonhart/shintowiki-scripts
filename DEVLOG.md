@@ -12,8 +12,15 @@ except scholarly articles — so all shrine data). Ran the #9 repeated-name audi
 Japanese labels are each shared by ≥10 Shinto shrines (P31=Q845945), covering 15,023 shrines (~49% of
 all 30,257)** — 八幡神社 ×1006, 諏訪神社 ×1004, 稲荷神社 ×865, 熊野神社 ×658, … These are only
 distinguishable by location, so P131 coverage is the data-quality lever. Report:
-`docs/shrine_repeated_names_audit_2026-07.md`. Updated the queue section + 10pm cron to use query-main;
-the alias audit (#8) is now unblocked too.
+`docs/shrine_repeated_names_audit_2026-07.md`. Updated the queue section + 10pm cron to use query-main.
+
+Then ran the #8 alias audit through query-main: 207 English aliases on shrine/temple items contain a
+comma (the pipeline's junk pattern — other same-named items' disambiguated labels wrongly copied as
+aliases). A place-vs-name filter split them into 189 clear place-disambiguators ("Ōmiwa Shrine,
+Ichinomiya", "(Yamaguchi, Tokorozawa)") and 18 kept two-name aliases ("Ōshima-jinja,
+Okitsushima-jinja"). Wrote the 189 as QS removals (`-Qxxx|Aen|"…"`) to `remove_junk_aliases.txt`,
+registered in `direct_daily_edits.ATOMIC_FILES` — the daily pipeline drains them (no bespoke editor,
+no summaries; 115 tests incl. drift-guard pass). Remaining #8 bit: trace the source romaji typos.
 
 ## 2026-07-07 — Queue honesty pass: cdo done, deleted-QID ills resolved (self-heal op + CI one-off)
 

@@ -33,10 +33,12 @@ These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+)
 endpoint **`query-main.wikidata.org/sparql` works** — use it (it serves everything except scholarly
 articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them via query-main now.
 
-- [ ] **Alias audit + cleanup.** Cross-ref the old `Aen` lines the pipeline submitted vs live
-  Wikidata aliases; generate QS to REMOVE the junk (~72 comma-disambiguators like `…, Hino, Tokyo`).
-  Trace the SOURCE typos (`Zebshō` etc. are bad labels on OTHER items) and correct them. (Root cause
-  already fixed `b11f8b54`; phonology validator already built — `modern-quickstatements/romaji_phonology.py`.)
+- [ ] **Alias audit — trace SOURCE typos.** Comma-disambiguator cleanup DONE 2026-07-07: found 207
+  comma-aliases on shrine/temple items via query-main, wrote 189 removals (`-Qxxx|Aen|"…"`) to
+  `modern-quickstatements/remove_junk_aliases.txt` (kept 18 two-name aliases) — the daily pipeline
+  drains them. REMAINING: trace the SOURCE typos (`Zebshō` etc. are bad LABELS on OTHER items, likely
+  a cloud session) and correct them via QS; the phonology validator (`romaji_phonology.py`) can flag
+  invalid-mora labels at scale via query-main.
 
 ## Pinned tail (keep last, always)
 
