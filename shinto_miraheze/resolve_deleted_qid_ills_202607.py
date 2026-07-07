@@ -85,7 +85,7 @@ def main():
     ap.add_argument("--run-tag", required=True)
     args = ap.parse_args()
 
-    today = datetime.datetime.utcnow().date()
+    today = datetime.datetime.now(datetime.timezone.utc).date()
     if today < RESOLVE_DATE:
         print(f"Before RESOLVE_DATE ({RESOLVE_DATE.isoformat()}); no-op (today {today.isoformat()}).")
         return 0
