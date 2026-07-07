@@ -19,9 +19,8 @@
 {{nihongo|'''Sano Shrine (Nomi)'''|狭野神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kaga Province]].
 
 {{commons category|Category:Sano-jinja (Nomi)}}
-[[ja:狭野神社 (能美市)]]
 
-{{wikidata link|Q11571758|commons|Category:Sano-jinja (Nomi)|ja|狭野神社 (能美市)|check_date=2026-05-25}}
+{{wikidata link|Q11571758|commons|Category:Sano-jinja (Nomi)|ja|狭野神社 (能美市)|grok=none|check_date=2026-07-07}}
 
 == Japanese content ==
 {{出典の明記|date=2015年9月13日 (日) 02:25 (UTC)}}
@@ -31,7 +30,7 @@
 |所在地={{ill|Ishikawa Prefecture|Q131281|qid=Q131281}}{{ill|Nomi, Ishikawa|Q658912|qid=Q658912}} Sano-machi No-88-2
 |位置={{Coord|36|25|43.44|N|136|30|43.74|E|type:landmark_region:JP-17|display=inline,title|name=Sano Shrine}}
 |祭神={{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}} and others
-|社格={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}（small）・former {{ill|Ken-sha|lt=prefectural shrine|qid=Q90139226}}
+|社格={{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}（small）・former {{ill|Ken-sha|qid=Q90139226|lt=prefectural shrine}}
 |創建=Date unknown
 |例祭={{ill|May 1|Q2544|qid=Q2544}}
 |神事=
