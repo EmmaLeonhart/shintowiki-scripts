@@ -51,38 +51,18 @@ it (or de-ill if there's no reasonable match). Best-effort; imperfect beats a de
   (mirror the category_translation one) if the volume returns; a handful get done by hand.
   Retire `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (superseded by this policy).
 
-## 8. Audit pipeline-added aliases + clean up the damage
+## WDQS-gated audits — ONLY the 10pm cron works these
 
-Root cause fixed (`b11f8b54`: label-only, no aliases — the pipeline had reused other same-named items'
-labels as aliases, dragging in typos like `Zebshō` + comma-disambiguators). Damage is already live on
-Wikidata:
+These need a full `query.wikidata.org` SPARQL scan; WDQS has been 429-outaged (2026-07-06+). **The
+regular work-loop SKIPS this whole section** — do NOT attempt these on the hourly loop. A dedicated
+**22:00 local cron** tries them once a night; if WDQS is still down it no-ops and retries tomorrow.
 
-- [ ] Audit aliases the pipeline ADDED (old `Aen` vs live aliases); QS to REMOVE junk (~72
-  comma-disambiguators). BLOCKED-ON-EXTERNAL: needs a WDQS scan (429-outaged 2026-07-06).
-- [ ] Trace SOURCE typos (`Zebshō` etc. = bad labels on other items); correct on Wikidata. WDQS-blocked.
-- [x] Japanese-phonology validator BUILT: `modern-quickstatements/romaji_phonology.py`
-  (`is_valid_romaji_mora` / `is_valid_label`; rejects `Zeb`-style coda garbage; 10 tests). Reusable to
-  gate cloud-session labels + flag existing bad ones (the flag-at-scale sweep is the WDQS-blocked item
-  above).
-
-
-## 9. Audit Japanese shrine names repeated ≥10× (Emma)
-
-- [ ] SPARQL: Shinto shrines (P31 Q845945) with ja labels; group, find names used ≥10×; audit those
-  clusters (disambiguation / data-quality). BLOCKED-ON-EXTERNAL: WDQS 429-outaged 2026-07-06 — retry
-  when it recovers.
-
-## 10. Reliability: direct_daily_edits must exit non-zero on total failure
-
-The 07-06 CI-editing outage went unnoticed because `direct_daily_edits.py` exits 0 even when 0/N
-edits succeed (green run == "editing" was a false equivalence; see DEVLOG 2026-07-07).
-
-- [ ] Make the script exit non-zero when it attempted edits but 0 succeeded (and/or when login
-  fails), so a total-failure state reddens the run instead of hiding. Add a test.
-
-_(Repo junk sweep DONE: removed `2026-01-01.txt`, 15 `_batchN_url.txt` scratch, and `errors.txt`.
-Kept `query.csv` (used by label gen) and `temple_query.csv` (per-lang temple label data Emma handed
-over — dormant, not junk).)_
+- [ ] **Alias audit + cleanup.** Cross-ref the old `Aen` lines the pipeline submitted vs live
+  Wikidata aliases; generate QS to REMOVE the junk (~72 comma-disambiguators like `…, Hino, Tokyo`).
+  Trace the SOURCE typos (`Zebshō` etc. are bad labels on OTHER items) and correct them. (Root cause
+  already fixed `b11f8b54`; phonology validator already built — `modern-quickstatements/romaji_phonology.py`.)
+- [ ] **Repeated-name shrine audit.** Shinto shrines (P31 Q845945) with a ja label used ≥10×; audit
+  those clusters for disambiguation / data-quality.
 
 ## Pinned tail (keep last, always)
 
