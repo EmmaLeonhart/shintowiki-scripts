@@ -24,7 +24,11 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 MAX_LINES_PER_BATCH = 200  # Budget ~200 QuickStatements per day per file
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+# Split endpoint: query.wikidata.org is 429-outaged (2026-07-06+); query-main
+# serves everything except scholarly articles. The outage made every phase
+# rate-limit-skip, which left the migration _remove.txt files empty since
+# they were cleared 2026-04-05 — P31 ranking removals silently stopped.
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 HEADERS = {
