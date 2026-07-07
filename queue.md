@@ -49,13 +49,10 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
-- [ ] **desc-then-label pairs: land the data file.** Machinery SHIPPED (compound || pair units,
-  100/day cap, ordered execution, 2.6M proposals joined); the first full
-  `description_label_pairs.txt` generation is running — commit it with per-language stats when it
-  completes (rerun `generate_description_fixes.py` if the in-flight pre-pair run finishes first).
-- [ ] **Description generators for labeled shrines/temples** (Emma 2026-07-07, CAN WAIT per Emma):
-  items with label-in-X but NO description-in-X get the standardized description (same inferred
-  templates); separate generator, only fires AFTER the label exists.
+- [ ] **Land the two description data files.** Both generators SHIPPED (pairs: compound || units,
+  100/day cap, ordered; adds: 40,794 backlog, uncapped). `description_label_pairs.txt` generation
+  in flight; run `generate_description_adds.py` after it finishes (serialize WDQS load); commit
+  both with per-language stats.
 
 ## Pinned tail (keep last, always)
 
