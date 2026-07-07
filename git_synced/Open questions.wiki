@@ -17,7 +17,6 @@ This page is the interface between Emma (human) and the bot agents that work on 
 ''Standing work queue, edited primarily by Emma on the wiki. Rules: agents read this section every session and every work-loop tick; each item gets appended to the '''end''' of <code>queue.md</code> (never the front) and worked from there; an item's bullet is deleted from this list when the work is done.''
 
 * Fix the history-offload banner crud in the MediaWiki namespace: pages there carry offloaded-history comments/banners that override interface messages and corrupt the UI. Find every affected ns8 page and strip the crud.
-* Help with the Bunrei and Reisai automated query monitors: [[d:Talk:Q11385469]] has a {{Wikidata list}} SPARQL monitor for P837 shrines; a matching one is wanted for Bunrei at [[d:Talk:Q195793]].
 
 == Notes ==
 
