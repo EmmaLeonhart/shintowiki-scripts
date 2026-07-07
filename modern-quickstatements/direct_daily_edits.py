@@ -38,8 +38,16 @@ _CAP_EXCEPTIONS = {
     datetime.date(2026, 7, 6): 500,
     datetime.date(2026, 7, 7): 500,
 }
-MAX_EDITS = _CAP_EXCEPTIONS.get(datetime.datetime.now(datetime.timezone.utc).date(),
-                                _DEFAULT_MAX_EDITS)
+
+
+def edit_day(now=None):
+    """The cap's 'day' rolls over at 02:00 JST (Emma 2026-07-07), not UTC
+    midnight: JST is UTC+9, minus the 2h shift = UTC+7."""
+    now = now or datetime.datetime.now(datetime.timezone.utc)
+    return (now + datetime.timedelta(hours=7)).date()
+
+
+MAX_EDITS = _CAP_EXCEPTIONS.get(edit_day(), _DEFAULT_MAX_EDITS)
 MIN_DELAY = 30
 MAX_DELAY = 90
 
