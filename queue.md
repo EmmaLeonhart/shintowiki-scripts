@@ -50,6 +50,14 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 - [ ] (low) Paper-only: 神社本庁『全国神社祭祀祭礼総合調査』(1995), 岡田荘司『事典 神社の歴史と祭り』—
   authoritative 系統 counts; needs Emma or a library, not scrapeable.
 
+## Session state (2026-07-07): queue DRAINED — everything below is a WAIT, not work
+
+All actionable items were completed this session. Remaining items wait on external systems
+(cloud RAG answers, cloud category drain, conditional triggers, paper sources). The 4 local crons
+die with the session; the durable machinery (daily cleanup-loop fire, remote_queue.json cloud
+routine) carries everything forward on its own. Next session: run the autonomous-loop skill to
+restart crons if extensive work resumes.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
