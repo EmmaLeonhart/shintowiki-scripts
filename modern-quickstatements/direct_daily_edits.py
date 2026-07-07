@@ -92,6 +92,7 @@ ATOMIC_FILES = [
     "bunrei_nicovideo.txt",                   # More bunrei: dic.nicovideo.jp 神社の系列 adds Suitengu->久留米水天宮 + Tsushima->津島神社; cited to nicovideo dic
     "bunrei_onkamui.txt",                     # More bunrei: onkamui Rakuten blog 総本宮・総本社と分霊社 — NAMED branch enumerations (catches branches whose names differ from their network suffix); parse_onkamui_bunrei.py, unique ja-label matches only, same-name/same-deity tail sections excluded; cited to the blog post
     "bunrei_qualifier_repair.txt",           # Self-healing: qualifier-add lines for bare shrine P612 statements missing P1013=Q195793 (the single-statement bunrei model, Emma 2026-07-07); regenerated in CI by generate_bunrei_qualifier_repair.py
+    "reisai_qualifier_repair.txt",           # Self-healing: qualifier-add lines for bare shrine P837 statements missing any P3831 role (docs/wikidata_shrine_festival_model.md); regenerated in CI by generate_reisai_qualifier_repair.py
     "label_typo_fixes.txt",                   # Corrected EN labels from the label_typo_review cloud-RAG answers (collector: shinto_miraheze/collect_label_typo_answers.py)
 ]
 
