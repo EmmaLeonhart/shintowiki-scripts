@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — CI Wikidata editing was silently broken (0/299) — bot password invalidated, fixed
+
+Emma noticed edits weren't happening. Traced it: `direct_daily_edits.py` logged in fine as
+Immanuelle but EVERY edit failed (run 28802688487 = 0 OK / 299 FAIL — "you do not have the
+permissions", "the save has failed"), while the run still exited green (misleading "success" =
+5h of failed attempts). Diagnosis: it WORKED 07-02 (42 OK) → regression; account NOT blocked, has
+`edit` right, browser QuickStatements works via OAuth (tag "OAuth CID: 1776"); auth code unchanged.
+So the break was the bot-password (`BOT_TOKEN`) used by `action=login` — invalidated/grants lost
+between 07-02 and 07-06 (classic bot-password revocation). Emma regenerated `Immanuelle@ImmanuelleMisc`;
+updated the `MW_BOTNAME`/`BOT_TOKEN` GitHub secrets via `gh secret set`; re-triggered
+`direct-daily-edits.yml` → confirmed real edits landing again (Q6585228 claim + Q48755881 label,
+tags=[], ~47s apart). Lesson: the pipeline's green "success" hid a total-failure state — the script
+exits 0 even at 0 successful edits; monitor actual contributions, not just run conclusion.
+
 ## 2026-07-06 — Cleanup-loop fully validated green; durability comprehensive fill (batches 13–15)
 
 Cleanup-loop run 28802688487 (fixes 1fa6c414 category self-stop + 7b0f0379 site-push retry)
