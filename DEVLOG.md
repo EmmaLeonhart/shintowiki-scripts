@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — Queue honesty pass: cdo done, deleted-QID ills resolved (self-heal op + CI one-off)
+
+Emma pushed back on items I'd hand-waved as "externally blocked." Verified reality: only the WDQS
+section is a real 429 block; #1 is a deliberate conditional; #2 is a genuine autonomous-drain wait;
+#4 cdo is DONE (1502 readings, no corpus growth) → removed. #6 deleted-QID ills was actually
+actionable — I'd wrongly deferred it. Of the 5 flagged pages: Bath Additive + Iyo Shrine were STALE
+(tagged but no deleted QID), and 3 were real (Ogawa/Nawino ill Q702140 Ōnamuchi→Q276944 Ōkuninushi;
+Takeo Taira-clan Q568647→Q1079102). Fixes: (1) `deleted_qids_in_ill` op now SELF-HEALS — drops the
+tracking category when a page has no live-deleted QID and no DELETED_QID placeholder (it previously
+only ever ADDED the tag → stale accumulation); 4 tests. (2) `resolve_deleted_qid_ills_202607.py`
+date-gated one-off (RESOLVE_DATE 2026-07-07) wired into `wiki-cleanup.yml` rewrites the 3 ills to
+their researched best-existing QIDs; 5 tests. Both land on the next cleanup-loop fire (creds live in CI).
+
 ## 2026-07-07 — CI Wikidata editing was silently broken (0/299) — bot password invalidated, fixed
 
 Emma noticed edits weren't happening. Traced it: `direct_daily_edits.py` logged in fine as

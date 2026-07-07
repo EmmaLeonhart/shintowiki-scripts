@@ -27,18 +27,6 @@ Once the loop runs: the **18 Japanese-named duplicate categories** tagged this s
 
 - [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
-## 6. Resolve the current deleted-QID ills (RAG → best existing item, never recreate)
-
-Policy (Emma 2026-07-06): a deleted-QID ill gets its `qid=` set to the BEST EXISTING Wikidata item
-(research, not recreate). `deleted_qids_in_ill` op now SELF-HEALS the stale category (fixed
-2026-07-07 + tests) — so Bath Additive + Iyo Shrine (tagged but no deleted QID) auto-clear next sweep.
-The 3 real cases are researched and ready:
-
-- [ ] Apply via CI (wiki creds): **Ogawa Shrine** + **Nawino Shrine** ill `Q702140` (Ōnamuchi-no-Mikoto,
-  DELETED) → **Q276944** (Ōkuninushi); **Takeo Shimokorihiko Shrine** ill Taira-clan (`Q568647` DELETED)
-  → **Q1079102** (Taira clan). Wire a date-gated one-off into `wiki-cleanup.yml` (don't hand to Emma).
-  Retire `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (superseded).
-
 ## WDQS-gated audits — ONLY the 10pm cron works these
 
 These need a full `query.wikidata.org` SPARQL scan; WDQS has been 429-outaged (2026-07-06+). **The

@@ -460,6 +460,12 @@ jobs:
           shinto_miraheze/run_step.sh "Cleanup Loop: remove_wikidata_crud_categories" \
             python3 shinto_miraheze/remove_wikidata_crud_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      - name: "Cleanup: resolve_deleted_qid_ills_202607 (date-gated one-off)"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: resolve_deleted_qid_ills_202607" \
+            python3 shinto_miraheze/resolve_deleted_qid_ills_202607.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
+
       - name: "Cleanup: remove_crud_categories"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
