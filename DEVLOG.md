@@ -4,6 +4,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — Data model fixed & DOCUMENTED: reisai P3831=role-only, festival as P793 qualifier; bunrei single-statement
+
+Emma finalized the model after the morning migration put festival items in P3831 (my design — 89
+statements) and bare P612s surfaced: **P3831 on P837 = ROLE only (Q11385469 Reisai); the festival
+item rides the same statement as a P793 (significant event) QUALIFIER; bunrei = single P612
+statement with P1013=Q195793.** Now written down: `docs/wikidata_shrine_festival_model.md` +
+CLAUDE.md invariants section — read before generating P837/P612/P793 QS.
+
+Fixes shipped: (1) 9 bare P612s → qualifier-add batch (Emma ran) + self-healing
+`generate_bunrei_qualifier_repair.py` in the daily drip; (2) the 88 role-polluted P837 statements
+→ rebuild batch (remove + clean re-add with Reisai role, festival as P793 qualifier, refs
+preserved verbatim incl. the Shirahige book citations) opened for Emma's sequential browser run
+(NOT drip-safe: remove+re-add under random order loses data); 2 statements with role-like
+"biannual event" P3831 left alone as deliberate. Also: `strip_ns8_offload_banners.py` (113
+interface pages carry pre-exclusion-era offload banner comments that corrupt the UI) wired into
+wiki-cleanup.yml and dispatched; Listeria monitor snippets for d:Talk:Q11385469 / d:Talk:Q195793
+handed to Emma (fixed her empty-column syntax: property columns, not SPARQL variables).
+
 ## 2026-07-07 — onkamui maximalist parser SHIPPED (97 cited bunrei edges, 7th source)
 
 Emma's ladder started and ended at the maximalist rung — the whole blog post parses. The post

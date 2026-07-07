@@ -333,6 +333,15 @@ When the user says "a cron job," "a cron," "a CronCreate," "set up a cron," or "
 * **Remote claude.ai routine** (`RemoteTrigger`) = only when the user explicitly says "remote," "on the cloud," "a Claude remote thing," names a cloud model for a recurring job (e.g. "a daily Sonnet run"), or invokes the `/schedule` command. These are for bulk LLM grunge work done by Claude in the cloud (translations, dup-content merges, the remote-queue consumer).
 * Picking the wrong one is a real error. A "cron" request must never be downgraded into a remote routine, and you must not ask the user to choose — infer from their exact words: "cron" → local; "remote/cloud/Sonnet-routine/`/schedule`" → remote.
 
+## Wikidata data model for shrine festivals & bunrei
+
+**The authoritative model is [`docs/wikidata_shrine_festival_model.md`](docs/wikidata_shrine_festival_model.md)**
+(Emma, 2026-07-07). Core invariants: a shrine's annual festival = ONE P837 statement
+(day or unknown-value Q19798648, qualifier P3831 = Q11385469 Reisai — a ROLE, never a
+festival item — plus the festival item as a P793 qualifier); bunrei = ONE P612 statement
+with P1013 = Q195793 in the same statement. Never put a festival item in P3831; never
+emit a bare P612. Read the doc before generating any P837/P612/P793 QuickStatements.
+
 ## Wikidata editing — ONE path only, no edit summaries
 
 **Wikidata is edited by exactly one mechanism: the daily QuickStatements
