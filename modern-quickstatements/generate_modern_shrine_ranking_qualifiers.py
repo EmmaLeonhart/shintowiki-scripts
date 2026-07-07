@@ -743,17 +743,19 @@ def generate_migration(migration):
     ORDER BY ?item
     """
 
-    # Find old statements safe to remove (P13723 already exists for this value)
-    safe_remove_query = f"""
-    SELECT ?item ?value WHERE {{
-      VALUES ?value {{ {values_sparql} }}
-      ?item p:{source_prop} ?stmt .
-      ?stmt ps:{source_prop} ?value .
-      ?item p:P13723 ?s2 .
-      ?s2 ps:P13723 ?value .
-    }}
-    ORDER BY ?item
-    """
+    # Find old statements safe to remove (P13723 already exists for this value).
+    # One cheap truthy query PER VALUE — the original single statement-node join
+    # across all values 504'd on WDQS (4.8k-item migrations), which silently
+    # left the _remove files empty and stalled P31 ranking removals (2026-07-07).
+    def _safe_remove_results():
+        out = []
+        for v in values:
+            q = (f"SELECT ?item ?value WHERE {{ "
+                 f"?item wdt:{source_prop} wd:{v} . ?item wdt:P13723 wd:{v} . "
+                 f"BIND(wd:{v} AS ?value) }}")
+            out.extend(fetch_sparql(q))
+            time.sleep(1)
+        return out
 
     print(f"\n=== Migration: {name} ===")
     print("Fetching total count...")
@@ -832,7 +834,7 @@ def generate_migration(migration):
 
     # Generate REMOVE lines (only for items where P13723 already exists)
     print("Fetching statements safe to remove (P13723 already confirmed)...")
-    safe_results = fetch_sparql(safe_remove_query)
+    safe_results = _safe_remove_results()
     remove_lines = []
     for r in safe_results:
         item_id = qid(r["item"]["value"])

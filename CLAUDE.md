@@ -28,6 +28,25 @@ locally-suboptimal procedure is the one that actually works. The "obvious
 optimization" usually breaks against those constraints. The literal steps exist
 for reasons that aren't always visible from the code. Reproduce them faithfully.
 
+## queue.md conventions (rules live HERE, not in the file header)
+
+queue.md is a queue, not a state snapshot: DELETE items when done (never annotate "DONE" —
+finished work lives in `DEVLOG.md` + git log). Keep items TERSE (checkbox + 1-2 lines). Numbers
+are priority order, not identity. Nothing is "parked" — every item gets done. Bulk LLM-grunge
+(duplicated_content, need_translation, fandom fixup) lives in `remote_queue.json`, not here.
+Items metabolised from the wiki [[Open questions]] Wiki-based queue go at the END.
+
+## `[[Open questions]]` page — structure & rules (rules live HERE, not on the page)
+
+Emma 2026-07-07: the page must stay lean — no "system prompt" prose on the wiki side. All
+conventions live in this file; the page carries only content. Structure: `== Open questions ==`
+(blockers needing Emma's judgement; answer inline; agent deletes each bullet SILENTLY once acted
+on — no removal narrative), `== Wiki-based queue ==` (Emma's standing work queue: agents read it
+every session and every work-loop tick; each item is METABOLISED — appended to the '''end''' of
+`queue.md`, never the front — and its bullet is removed from the page at pickup, not at
+completion), `== Notes ==` (Emma's scratch). The page is wiki-wins: always pull the live wiki
+version before editing repo-side.
+
 ## `[[Open questions]]` page — read at session start, prune as items resolve
 
 `git_synced/Open questions.wiki` (mirrored to the wiki page [[Open questions]] on shinto.miraheze.org, https://shinto.miraheze.org/wiki/Open_questions) is the human↔bot interface for blockers, design questions, and instructions Emma wants the bots to act on. Agents are responsible for keeping it accurate — it is not a write-once seed list.

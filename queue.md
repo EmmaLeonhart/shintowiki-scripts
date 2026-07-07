@@ -1,14 +1,7 @@
 # shintowiki-scripts — Work Queue
 
-**This file is a queue, not a state snapshot.** When an item is done, **DELETE it** — do not
-annotate it "DONE" in place. Finished work lives in `DEVLOG.md` + `git log`; standing policy in
-`CLAUDE.md`; pipeline/status detail in `docs/`. If a section has no `[ ]` checkbox, it does not
-belong here. **Nothing here is "parked" or "out of scope" — every item gets done; ordering is
-just priority.** Keep items TERSE (Emma 2026-07-06) — a checkbox + one or two lines; no essays, no
-"LAST TASK"-style labels (there's always more). Numbers are priority order, not fixed identity.
-
-Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives in
-`remote_queue.json` (claude.ai remote routine) — not duplicated here.
+Conventions live in `CLAUDE.md` (delete items when done — history in `DEVLOG.md`; terse items;
+numbers = priority; bulk LLM-grunge lives in `remote_queue.json`, not here).
 
 ---
 
@@ -56,10 +49,22 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
-- [ ] **MediaWiki-namespace offload-banner crud** (Emma 2026-07-07, priority): ns8 interface pages
-  carry offloaded-history comments/banners that override the UI. ns8 is supposed to be excluded
-  from every orchestrator — investigate how the crud got there, find every affected page
-  (read-only scan), and strip via a wiki-cleanup.yml script (no local write creds).
+- [ ] **P31 ranking removals unstuck** (Emma 2026-07-07): endpoint + 504 fixes landed in
+  `generate_modern_shrine_ranking_qualifiers.py`; verify the rerun populates
+  `migrate_ritsuryo_funding_remove.txt` (~4,846 lines incl. Chiryū Q11584639) and commit.
+- [ ] **Description generators for labeled shrines/temples** (Emma 2026-07-07): for each covered
+  language X, items with label-in-X but NO description-in-X get a standardized description
+  ("Shinto shrine in <country>" per X's pattern; Japan → prefecture-specific). Separate QS
+  creators; only fires AFTER the label exists.
+- [ ] **Description-without-label cleanup + desc-then-label pairs** (Emma 2026-07-07, build
+  LOCALLY now — not cloud): SPARQL every covered language for shrines with description-in-X but
+  no label-in-X (expected almost entirely Ukrainian). For each: change the description first
+  (generic standardized form is fine), THEN add the label — description is the dedup key, a
+  stale one blocks non-unique label adds. No separate queue: intersperse ~100/day randomly
+  through the main daily edit drip. Label-adding QS for such items is prohibited until the
+  description is fixed.
+- [ ] **Dashboard daily-edit counter** (Emma 2026-07-07, LAST — only after everything above):
+  GitHub Pages widget tracking how many daily edits happened today, if feasible.
 
 ## Pinned tail (keep last, always)
 

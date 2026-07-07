@@ -4,6 +4,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — ns8 UI crud GONE (113→0); P31 ranking removals unstuck; eight-things answer posted
+
+**ns8 offload banners: 0 remaining.** The dispatched wiki-cleanup run executed
+`strip_ns8_offload_banners.py` — all 113 interface pages verified clean via API scan. Wiki-queue
+item closed. **P31 ranking removals:** root cause = the `_remove.txt` files were emptied
+2026-04-05 and `generate_modern_shrine_ranking_qualifiers.py` still pointed at the 429-dead
+query.wikidata.org, so every CI run rate-limit-skipped the migration phase; switched to
+query-main, and the huge single safe-remove join (504 on WDQS) replaced with cheap per-value
+truthy queries — ~4,846 pending ritsuryō P31 removals sized and regenerating. **Eight things:**
+Emma asked on [[Open questions]]; answered on-page from
+`docs/backlog_resolution_status_2026-07-05.md` updated to today (1,2 RESOLVED; 3,6,7 automation
+with human-review residual; 4 ≈7-page remnant; 5 automated cloud drain; 8 resolved-by-decision
+07-06). Page de-bloated per Emma (rules moved into CLAUDE.md; metabolise-on-pickup rule
+recorded); queue.md header slimmed likewise. New wiki-queue items metabolised: description
+generators, description-without-label cleanup (desc-then-label, ~100/day interspersed),
+dashboard edit counter (last).
+
 ## 2026-07-07 — Data model fixed & DOCUMENTED: reisai P3831=role-only, festival as P793 qualifier; bunrei single-statement
 
 Emma finalized the model after the morning migration put festival items in P3831 (my design — 89
