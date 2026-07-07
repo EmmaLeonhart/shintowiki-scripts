@@ -82,6 +82,7 @@ ATOMIC_FILES = [
     "bunrei_ikkojin.txt",                     # More bunrei: ikkojin.jp 系統ランキング adds Shirahige->白鬚神社 + Otori->大鳥大社; same model, cited to ikkojin
     "bunrei_shinwa_otaku.txt",                # More bunrei: shinwa-otaku.com's ~57-network list adds the niche tail (Mitsumine/Hisaizu/Shiogama/Watatsumi/Niu/Kamo/Mitoshi/Aoso/...); cited to shinwa-otaku
     "bunrei_nicovideo.txt",                   # More bunrei: dic.nicovideo.jp 神社の系列 adds Suitengu->久留米水天宮 + Tsushima->津島神社; cited to nicovideo dic
+    "label_typo_fixes.txt",                   # Corrected EN labels from the label_typo_review cloud-RAG answers (collector: shinto_miraheze/collect_label_typo_answers.py)
 ]
 
 

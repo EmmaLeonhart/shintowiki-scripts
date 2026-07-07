@@ -36,8 +36,8 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
 - [ ] **Typo review — routed to cloud RAG 2026-07-06.** 161 kana-vs-label candidates are work-files in
   `label_typo_review/` (builder: `shinto_miraheze/build_label_typo_review_queue.py`), emitted by
   `remote_queue.py`; the cloud worker fills ANSWER (LABEL_TYPO/KANA_ISSUE/PREFIX_OK/OTHER).
-  REMAINING: a collector that folds LABEL_TYPO answers into QS `Len` correction lines (mirror
-  `collect_category_translations.py`). Comma cleanup already draining (189 removals).
+  Collector BUILT (`shinto_miraheze/collect_label_typo_answers.py`, 5 tests; LABEL_TYPO →
+  `label_typo_fixes.txt` in ATOMIC_FILES) — run it once answers land. Comma cleanup draining (189).
 
 ## 11. Bunrei residual (harvest EXHAUSTED 2026-07-06 — 6 sources, ~10,550 cited edges)
 
