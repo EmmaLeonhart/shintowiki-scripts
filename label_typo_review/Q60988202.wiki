@@ -1,0 +1,9 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q60988202 -->
+<!-- JA: 釜石製鐡所山神社 | KANA: かまいしせいてつしょさんじんじゃ | EN_LABEL: Nippon Steel Corporation North Nippon Works San Shrine | KANA_ROMANIZED: Kamaishiseitetsushosanjinja -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
+  LABEL_TYPO: <corrected English label>   (the label is misspelled)
+  KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
+  PREFIX_OK: <note>                        (label carries a legit place/disambiguator prefix)
+  OTHER: <explanation>
+When ANSWER is filled this file is done. -->

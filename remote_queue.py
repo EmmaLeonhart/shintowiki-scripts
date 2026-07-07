@@ -175,6 +175,21 @@ CATEGORY_TRANSLATION_INSTRUCTION = (
     "line `<!-- SKIP: <short reason> -->` so a human can look — never invent a name."
 )
 
+LABEL_TYPO_REVIEW_INSTRUCTION = (
+    "This file is a WORK ITEM reviewing a suspected Wikidata romaji typo. The "
+    "shrine's English label letters diverge from its romanized kana reading "
+    "(P1814) — see the `<!-- JA / KANA / EN_LABEL / KANA_ROMANIZED -->` marker. "
+    "The WRONG SIDE VARIES: sometimes the label is misspelled (e.g. Saruka for "
+    "さるが=Saruga), sometimes the P1814 kana is archaic/wrong (historical kana "
+    "ちりふ for Chiryū; a kana missing a syllable), sometimes the label just "
+    "carries a legit place prefix (Kurume Suitengū). RESEARCH the correct reading "
+    "(jawiki article, official shrine site) and fill the `<!-- ANSWER: -->` marker "
+    "with exactly one of `LABEL_TYPO: <corrected label>`, `KANA_ISSUE: <note>`, "
+    "`PREFIX_OK: <note>`, or `OTHER: <explanation>` as the TASK comment in the "
+    "file describes. Do NOT edit Wikidata yourself — a collector turns answers "
+    "into QuickStatements later. When ANSWER is filled you are done with the file."
+)
+
 MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_KANJI_KNOWN_TEMPLATE = (
     "This shrine disambiguation page (tagged [[Category:Shrine "
     "disambiguations]]) doesn't have the auto-generated `== Shrines "
@@ -521,6 +536,10 @@ def build_queue() -> list[dict]:
     # translation_queue.py); the worker fills the TRANSLATED marker and
     # collect_category_translations.py folds answers into category_moves.csv.
     items.extend(_build_section("category_translation", CATEGORY_TRANSLATION_INSTRUCTION))
+    # Queue #8: review the 161 kana-vs-label romaji-typo candidates (see
+    # build_label_typo_review_queue.py + docs/kana_label_mismatch_audit_2026-07.md);
+    # the worker researches which side is wrong and fills the ANSWER marker.
+    items.extend(_build_section("label_typo_review", LABEL_TYPO_REVIEW_INSTRUCTION))
     # Shuffle so the consumer picks pages in random order. With no cursor-based
     # statefulness (work is gated purely on file-presence + category), random
     # order keeps the consumer from repeatedly hitting the same early pages —

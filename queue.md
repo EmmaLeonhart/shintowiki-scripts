@@ -33,11 +33,11 @@ These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+)
 endpoint **`query-main.wikidata.org/sparql` works** — use it (it serves everything except scholarly
 articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them via query-main now.
 
-- [ ] **Alias audit — typo candidates FOUND, need per-item review.** Comma cleanup DONE (189 removals
-  in `remove_junk_aliases.txt`). Typo signal SOLVED 2026-07-06: kana(P1814)-vs-romanized-label
-  divergence → **161 candidates** in `docs/kana_label_mismatch_audit_2026-07.md` (real typos like
-  Saruka→Saruga mixed with historical-kana / place-prefix false positives — the WRONG SIDE VARIES, so
-  each needs review/RAG before QS; good remote-queue RAG candidate). Phonology validator = gate only.
+- [ ] **Typo review — routed to cloud RAG 2026-07-06.** 161 kana-vs-label candidates are work-files in
+  `label_typo_review/` (builder: `shinto_miraheze/build_label_typo_review_queue.py`), emitted by
+  `remote_queue.py`; the cloud worker fills ANSWER (LABEL_TYPO/KANA_ISSUE/PREFIX_OK/OTHER).
+  REMAINING: a collector that folds LABEL_TYPO answers into QS `Len` correction lines (mirror
+  `collect_category_translations.py`). Comma cleanup already draining (189 removals).
 
 ## 11. Bunrei residual (harvest EXHAUSTED 2026-07-06 — 6 sources, ~10,550 cited edges)
 
