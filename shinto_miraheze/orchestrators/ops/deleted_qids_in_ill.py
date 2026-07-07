@@ -117,7 +117,9 @@ def _fix_ill(text: str, deleted: set[str]) -> str:
 def apply(title: str, text: str):
     qids = _extract_qids(text)
     has_wd = _has_wd_param(text)
-    if not qids and not has_wd:
+    has_tag = CATEGORY_TAG in text
+    has_placeholder = "DELETED_QID" in text
+    if not qids and not has_wd and not has_tag:
         return None, None
 
     deleted: set[str] = set()
@@ -125,12 +127,20 @@ def apply(title: str, text: str):
         _check_qids_batch(list(qids))
         deleted = {q for q in qids if _qid_exists.get(q) is False}
 
-    if not deleted and not has_wd:
+    # Self-heal: the op only ever ADDED the tag, so a page whose deleted QID(s)
+    # were later resolved (or recreated) stayed stuck in the category forever.
+    # If a tagged page now has NO live-deleted QID and NO DELETED_QID placeholder,
+    # the tag is stale — drop it so the category reflects reality.
+    stale_tag = has_tag and not deleted and not has_placeholder
+
+    if not deleted and not has_wd and not stale_tag:
         return None, None
 
     new_text = _fix_ill(text, deleted)
     if deleted and CATEGORY_TAG not in new_text:
         new_text = new_text.rstrip() + "\n" + CATEGORY_TAG + "\n"
+    if stale_tag:
+        new_text = re.sub(r"\n*" + re.escape(CATEGORY_TAG) + r"\n*", "\n", new_text)
 
     if new_text == text:
         return None, None
@@ -140,4 +150,6 @@ def apply(title: str, text: str):
         parts.append(f"mark {len(deleted)} deleted QID(s) as DELETED_QID")
     if has_wd:
         parts.append("rename WD= to qid=")
+    if stale_tag:
+        parts.append("remove stale deleted-QID category")
     return new_text, " + ".join(parts) + " in ill templates"

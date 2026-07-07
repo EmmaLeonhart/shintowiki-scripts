@@ -27,29 +27,17 @@ Once the loop runs: the **18 Japanese-named duplicate categories** tagged this s
 
 - [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
-## 4. cdo (Min Dong) transliterator — maintenance only
+## 6. Resolve the current deleted-QID ills (RAG → best existing item, never recreate)
 
-Built + wired (gated `cdoify` in `generate_chinese_quickstatements.py`, registered, emits `cdo.txt`;
-`cdo_readings.json` 1502 entries, 1502/2192 corpus-char coverage). No open task — the only ongoing
-work is coverage growth:
+Policy (Emma 2026-07-06): a deleted-QID ill gets its `qid=` set to the BEST EXISTING Wikidata item
+(research, not recreate). `deleted_qids_in_ill` op now SELF-HEALS the stale category (fixed
+2026-07-07 + tests) — so Bath Additive + Iyo Shrine (tagged but no deleted QID) auto-clear next sweep.
+The 3 real cases are researched and ready:
 
-- [ ] (low, recurring) Rerun `python fetch_cdo_readings.py --corpus --apply` after the zh corpus
-  grows, to pick up new shrine-name chars. 690 chars currently have no Wiktionary `md=` reading
-  (genuine gaps); gated cdo simply withholds labels containing them. Not a blocker.
-
-## 6. POLICY: deleted-QID ills → best EXISTING Wikidata item, never recreate
-
-Emma 2026-07-06: recreation is a losing game — a recreated item (Q140447362 "Tropical decor",
-南国趣味) got re-deleted, breaking its relink. **Do not recreate.** For any `{{ill|…|qid=DELETED_QID}}`
-(or an ill whose QID is later deleted), search Wikidata for the BEST EXISTING item and set `qid=` to
-it (or de-ill if there's no reasonable match). Best-effort; imperfect beats a dead link.
-
-- Tropical decor (the ONLY current case, on Jungle bath) → RAG'd to **Q368949 "exoticism"** and
-  relinked. Done.
-- [ ] If deleted-QID ills accumulate again (the `deleted_qids_in_ill` op re-flags dead QIDs on its
-  sweep), resolve each RAG→existing-item, not by recreation. Only worth a `remote_queue` RAG source
-  (mirror the category_translation one) if the volume returns; a handful get done by hand.
-  Retire `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (superseded by this policy).
+- [ ] Apply via CI (wiki creds): **Ogawa Shrine** + **Nawino Shrine** ill `Q702140` (Ōnamuchi-no-Mikoto,
+  DELETED) → **Q276944** (Ōkuninushi); **Takeo Shimokorihiko Shrine** ill Taira-clan (`Q568647` DELETED)
+  → **Q1079102** (Taira clan). Wire a date-gated one-off into `wiki-cleanup.yml` (don't hand to Emma).
+  Retire `recreate-deleted-wikidata/generate_recreate_quickstatements.py` (superseded).
 
 ## WDQS-gated audits — ONLY the 10pm cron works these
 
