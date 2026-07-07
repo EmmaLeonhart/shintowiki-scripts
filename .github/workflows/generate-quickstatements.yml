@@ -85,6 +85,11 @@ jobs:
           sleep 5
           python generate_kana_qualifier_remove.py
 
+      - name: Generate Reisai (例祭) QS from jawiki (regenerate each run)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_reisai_quickstatements.py
+
       - name: Commit generated files to repo
         run: |
           git config user.name "github-actions[bot]"
