@@ -102,6 +102,37 @@ SOURCES = {
             ("Q705151", ["大鳥神社"]),                             # Otori/Yamato-Takeru -> 大鳥大社
         ],
     },
+    # shinwa-otaku.com 総本社まとめ (~57 head->branch mappings) — the niche-network tail.
+    # Skipped as unresolvable/ambiguous: 雷電 (Itakura head no QID hit), 由加 (two Okayama
+    # candidates), 月讀 / 伊豆山 (ambiguous heads), 鷲->大鳥 (official site makes no claim).
+    "shinwa_otaku": {
+        "url": "https://shinwa-otaku.com/jinja/sohonsha/",
+        "out": "bunrei_shinwa_otaku.txt",
+        "networks": [
+            ("Q11355207", ["三峯神社", "三峰神社"]),               # Mitsumine -> 三峯神社 (秩父)
+            ("Q11443949", ["三吉神社"]),                           # Miyoshi -> 太平山三吉神社 (秋田)
+            ("Q11572627", ["久伊豆神社"]),                         # Hisaizu -> 玉敷神社 (埼玉)
+            ("Q11620955", ["御歳神社", "大歳神社"]),               # Mitoshi/Otoshi -> 葛城御歳神社
+            ("Q11673295", ["鴨神社"]),                             # Kamo(Katsuragi) -> 高鴨神社
+            ("Q11491171", ["綿津見神社", "海神社"]),               # Watatsumi -> 志賀海神社
+            ("Q133753",   ["鹽竈神社", "塩竈神社", "塩釜神社"]),   # Shiogama -> 鹽竈神社 (宮城)
+            ("Q11662833", ["青麻神社", "三光神社"]),               # Aoso/Sanko -> 青麻神社 (仙台)
+            ("Q3317296",  ["宮地嶽神社"]),                         # Miyajidake -> 宮地嶽神社 (福津)
+            ("Q11620885", ["一言主神社"]),                         # Hitokotonushi -> 葛城一言主神社
+            ("Q11575046", ["産泰神社"]),                           # Santai -> 産泰神社 (前橋)
+            ("Q11572731", ["玉祖神社"]),                           # Tamanooya -> 玉祖神社 (防府)
+            ("Q705154",   ["丹生神社"]),                           # Niu -> 丹生都比売神社
+        ],
+    },
+    # dic.nicovideo.jp 神社の系列 (via archive.org; live page 403s bots) — adds Suitengu, Tsushima.
+    "nicovideo": {
+        "url": "https://dic.nicovideo.jp/a/%E7%A5%9E%E7%A4%BE%E3%81%AE%E7%B3%BB%E5%88%97",
+        "out": "bunrei_nicovideo.txt",
+        "networks": [
+            ("Q3200625", ["水天宮"]),                              # Suitengu -> 久留米水天宮
+            ("Q705136",  ["津島神社", "津嶋神社"]),                # Tsushima -> 津島神社 (愛知)
+        ],
+    },
 }
 
 

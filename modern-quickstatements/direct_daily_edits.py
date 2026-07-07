@@ -80,6 +80,8 @@ ATOMIC_FILES = [
     "bunrei_animism.txt",                     # More bunrei: the networks animism.world/総本社まとめ adds beyond jinja-kikou (Kifune/Toshogu/Osugi/Awashima/Sarutahiko/Kotoshironushi), same P612+P1013 model, cited to animism.world
     "bunrei_toranomaki.txt",                  # More bunrei: jisha-toranomaki.com 系列社 table adds Ebisu->西宮神社; same model, cited to jisha-toranomaki
     "bunrei_ikkojin.txt",                     # More bunrei: ikkojin.jp 系統ランキング adds Shirahige->白鬚神社 + Otori->大鳥大社; same model, cited to ikkojin
+    "bunrei_shinwa_otaku.txt",                # More bunrei: shinwa-otaku.com's ~57-network list adds the niche tail (Mitsumine/Hisaizu/Shiogama/Watatsumi/Niu/Kamo/Mitoshi/Aoso/...); cited to shinwa-otaku
+    "bunrei_nicovideo.txt",                   # More bunrei: dic.nicovideo.jp 神社の系列 adds Suitengu->久留米水天宮 + Tsushima->津島神社; cited to nicovideo dic
 ]
 
 
