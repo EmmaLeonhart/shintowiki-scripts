@@ -13,7 +13,7 @@ env:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -100,15 +100,23 @@ jobs:
         continue-on-error: true
         run: python generate_reisai_qualifier_repair.py
 
-      - name: Description fixes (desc-without-label cleanup, self-draining)
+      # The two description generators are SPARQL-heavy (~30-40 min each) and
+      # their data barely drifts daily (both self-drain via skip-if-standard on
+      # regeneration), so they refresh weekly on Sundays — the daily job stays
+      # inside its timeout.
+      - name: Description fixes (desc-without-label pairs, weekly Sunday refresh)
         working-directory: modern-quickstatements
         continue-on-error: true
-        run: python generate_description_fixes.py
+        run: |
+          if [ "$(date -u +%u)" = "7" ]; then python generate_description_fixes.py; \
+          else echo "not Sunday — keeping committed description_label_pairs.txt"; fi
 
-      - name: Description adds (labeled items missing descriptions, self-draining)
+      - name: Description adds (labeled items missing descriptions, weekly Sunday refresh)
         working-directory: modern-quickstatements
         continue-on-error: true
-        run: python generate_description_adds.py
+        run: |
+          if [ "$(date -u +%u)" = "7" ]; then python generate_description_adds.py; \
+          else echo "not Sunday — keeping committed description_adds.txt"; fi
 
       - name: Commit generated files to repo
         run: |
