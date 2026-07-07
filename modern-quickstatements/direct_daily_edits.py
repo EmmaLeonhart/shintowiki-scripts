@@ -95,6 +95,7 @@ ATOMIC_FILES = [
     "reisai_qualifier_repair.txt",           # Self-healing: qualifier-add lines for bare shrine P837 statements missing any P3831 role (docs/wikidata_shrine_festival_model.md); regenerated in CI by generate_reisai_qualifier_repair.py
     "label_typo_fixes.txt",                   # Corrected EN labels from the label_typo_review cloud-RAG answers (collector: shinto_miraheze/collect_label_typo_answers.py)
     "description_label_pairs.txt",            # Description-without-label cleanup (Emma 2026-07-07): compound desc-then-label pair units (sub-lines joined by ||, executed in order); capped ~100/day below; regenerated in CI by generate_description_fixes.py
+    "description_adds.txt",                   # Description MAKER (Emma 2026-07-07): standardized descriptions for items that already have a label in the language but no description; simple adds, uncapped; regenerated in CI by generate_description_adds.py
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to

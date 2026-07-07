@@ -105,6 +105,11 @@ jobs:
         continue-on-error: true
         run: python generate_description_fixes.py
 
+      - name: Description adds (labeled items missing descriptions, self-draining)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_description_adds.py
+
       - name: Commit generated files to repo
         run: |
           git config user.name "github-actions[bot]"
