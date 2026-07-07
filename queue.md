@@ -19,6 +19,17 @@ Bulk LLM-grunge (duplicated_content reorg, need_translation, fandom fixup) lives
   proves too slow: skip history_offload/fandom_mirror on the ~3k enwiki-junk cats, or shard ns14. No
   premature optimization. (Cleanup-loop reliability itself is DONE — run 28802688487 green end-to-end.)
 
+## Statement-vocab label propagation for the 07-06 imports (Emma 2026-07-07)
+
+The reisai (P837) + bunrei (P612) imports systematically use vocabulary whose labels need the
+same multilingual propagation the QS values got (cf. Q134956795, Q55522291). Day-of-year items
+already have ~216 langs (no work). Reisai Q11385469 already flows via misc-terms.
+
+- [ ] Bunrei Q195793: route through the misc-terms transliteration path (explicit extra — BFS
+  never reached it; P31 "religious concept" fails the shinto|matsuri filter).
+- [ ] P612/P837/P1013/P3831: add to `generate_property_translations.py` hand-authored dict,
+  confident languages only (the established rail: omit = "unclear, skip", never guess).
+
 ## SPARQL-heavy audits
 
 These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+), but the SPLIT

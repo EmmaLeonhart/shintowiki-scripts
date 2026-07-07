@@ -26,6 +26,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MISC = os.path.join(HERE, "bfs", "miscellaneous.tsv")
 TEXTS = os.path.join(HERE, "bfs", "texts.tsv")
 
+# Romaji-named Shinto terms the BFS bucket never reached. Bunrei (分霊) is the
+# P1013 qualifier value on every 2026-07-06 P612 bunrei edge, but its P31 is
+# "religious concept", which fails the shinto|matsuri type gate below; it takes
+# the same transliteration path as Reisai (Emma 2026-07-07).
+EXTRA_QIDS = ["Q195793"]
+
 
 def _utf8():
     try:
@@ -59,8 +65,9 @@ def main():
                   if r["qid"] not in text_qids and r["en"] and looks_romaji(r["en"])
                   and re.search(r"shinto|matsuri", r["p31_types"], re.I)]
     qids = [r["qid"] for r in candidates]
-    print(f"{len(candidates)} Japanese-named terms (filtered offline from the tsv). "
-          f"Fetching existing labels for just these...")
+    qids += [q for q in EXTRA_QIDS if q not in set(qids)]
+    print(f"{len(candidates)} Japanese-named terms (filtered offline from the tsv) "
+          f"+ {len(EXTRA_QIDS)} explicit extras. Fetching existing labels for just these...")
     items = fetch_labels(qids)
 
     lines, kept = [], []

@@ -16,7 +16,9 @@ import requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "property_translations.txt")
-SPARQL = "https://query.wikidata.org/sparql"
+# Split endpoint: query.wikidata.org is 429-outaged (2026-07-06+); query-main
+# serves everything except scholarly articles, which is all we need.
+SPARQL = "https://query-main.wikidata.org/sparql"
 UA = {"User-Agent": "ShintoWikiPropTranslate/1.0 (immanuelleleonhart@gmail.com)",
       "Accept": "application/sparql-results+json"}
 
@@ -37,6 +39,34 @@ TRANSLATIONS = {
         "it": "rango di corte giapponese", "ro": "rang la curtea japoneză",
         "ru": "японский придворный ранг", "uk": "японський придворний ранг",
         "pl": "japońska ranga dworska", "cs": "japonská dvorská hodnost",
+    },
+    # The 2026-07-06 reisai (P837) + bunrei (P612) imports use these properties
+    # and qualifiers on every statement; their labels are the statement's UI in
+    # each language (Emma 2026-07-07). zh-variant fills below are copies of the
+    # property's own existing zh-hans/zh-hant forms, not new translations.
+    "P612": {  # mother house — the 総本社 head each bunrei edge points at
+        "pt": "casa-mãe", "gl": "casa nai", "ro": "casă-mamă",
+        "hr": "matična kuća", "sh": "matična kuća", "el": "μητρικός οίκος",
+        "ast": "casa madre",
+    },
+    "P837": {  # day in year for periodic occurrence — the reisai property
+        "hr": "dan u godini",                       # existing sh label
+        "zh-mo": "節日日期", "zh-sg": "节日日期",     # existing zh-hant / zh-hans
+    },
+    "P1013": {  # criterion used — bunrei qualifier (=Q195793)
+        "sh": "korišteni kriterij",                 # existing hr label
+        "zh-cn": "采用标准", "zh-sg": "采用标准",     # existing zh-hans
+        "zh-tw": "採用標準", "zh-mo": "採用標準",     # existing zh-hant/zh-hk
+    },
+    "P3831": {  # object of statement has role — reisai qualifier (=Q11385469)
+        "sh": "uloga objekta",                      # existing hr label
+        "zh-cn": "客体的角色", "zh-sg": "客体的角色",  # existing zh-hans
+        "zh-tw": "客體的角色", "zh-mo": "客體的角色",  # existing zh-hant/zh-hk
+    },
+    "P793": {  # significant event — Emma's 2026-07-07 standard: a shrine whose
+        # annual festival has its OWN item points at it via P793 (cf. Q55522291).
+        # Only 15 covered langs missing, all outside the confident set — nothing
+        # authorable yet; entry kept so future gaps land here.
     },
 }
 
