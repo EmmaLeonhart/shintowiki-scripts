@@ -59,6 +59,33 @@ def fetch_wiki_page(title):
     return data.get("parse", {}).get("wikitext", "")
 
 
+def fetch_wikidata_edits_today(user="Immanuelle", cap=5000):
+    """Count the editing account's Wikidata contributions so far today (UTC).
+
+    Emma 2026-07-07: dashboard tile tracking how many daily edits happened.
+    Live truth straight from Wikidata's usercontribs — covers both the daily
+    drip and manual QuickStatements runs (same account). Capped to avoid
+    unbounded pagination; shows 'cap+' when hit.
+    """
+    from datetime import datetime, timezone
+    day_start = datetime.now(timezone.utc).strftime("%Y-%m-%dT00:00:00Z")
+    total, cont = 0, {}
+    while total < cap:
+        resp = http.get("https://www.wikidata.org/w/api.php", params={
+            "action": "query", "list": "usercontribs", "ucuser": user,
+            "ucend": day_start, "uclimit": "500", "ucprop": "timestamp",
+            "format": "json", **cont,
+        }, headers={"User-Agent": USER_AGENT}, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+        total += len(data.get("query", {}).get("usercontribs", []))
+        if "continue" in data:
+            cont = {"uccontinue": data["continue"]["uccontinue"]}
+        else:
+            return total
+    return f"{cap}+"
+
+
 def fetch_category_count(category):
     """Get the number of pages in a category."""
     resp = http.get(WIKI_API, params={
@@ -287,7 +314,7 @@ def page_html(title, body, active="index"):
 
 # ─── Index page ──────────────────────────────────────────────
 
-def generate_index(stats, qs_count=0, backlog_counts=None):
+def generate_index(stats, qs_count=0, backlog_counts=None, wd_edits_today="?"):
     count = qs_count
     total = stats.get("total_pages", "?")
     edits = stats.get("total_edits", "?")
@@ -359,6 +386,7 @@ def generate_index(stats, qs_count=0, backlog_counts=None):
   <div class="stat-card"><div class="number">{edits:,}</div><div class="label">Total edits</div></div>
   <div class="stat-card"><div class="number">{without}</div><div class="label">Pages still needing a Wikidata QID</div></div>
   <div class="stat-card"><div class="number">{count:,}</div><div class="label">Pending P11250 statements</div></div>
+  <div class="stat-card"><div class="number">{wd_edits_today}</div><div class="label">Wikidata edits today (UTC)</div></div>
 </div>
 
 <h2>Wikidata integration progress</h2>
@@ -905,8 +933,14 @@ def main():
         print(f"      {total} entries")
 
     print("Generating index.html...", flush=True)
+    try:
+        wd_edits_today = fetch_wikidata_edits_today()
+    except Exception as exc:
+        print(f"  edits-today tile unavailable: {exc}")
+        wd_edits_today = "?"
     index_html = generate_index(stats, qs_count=len(qs_lines),
-                                backlog_counts=backlog_counts)
+                                backlog_counts=backlog_counts,
+                                wd_edits_today=wd_edits_today)
     with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
