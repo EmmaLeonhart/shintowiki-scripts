@@ -100,6 +100,11 @@ jobs:
         continue-on-error: true
         run: python generate_reisai_qualifier_repair.py
 
+      - name: Description fixes (desc-without-label cleanup, self-draining)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_description_fixes.py
+
       - name: Commit generated files to repo
         run: |
           git config user.name "github-actions[bot]"

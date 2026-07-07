@@ -94,20 +94,30 @@ ATOMIC_FILES = [
     "bunrei_qualifier_repair.txt",           # Self-healing: qualifier-add lines for bare shrine P612 statements missing P1013=Q195793 (the single-statement bunrei model, Emma 2026-07-07); regenerated in CI by generate_bunrei_qualifier_repair.py
     "reisai_qualifier_repair.txt",           # Self-healing: qualifier-add lines for bare shrine P837 statements missing any P3831 role (docs/wikidata_shrine_festival_model.md); regenerated in CI by generate_reisai_qualifier_repair.py
     "label_typo_fixes.txt",                   # Corrected EN labels from the label_typo_review cloud-RAG answers (collector: shinto_miraheze/collect_label_typo_answers.py)
+    "description_fixes.txt",                  # Description-without-label cleanup (Emma 2026-07-07): standardized descriptions replacing stale ones that block label adds; capped ~100/day below; regenerated in CI by generate_description_fixes.py
 ]
+
+# Files that contribute at most N randomly chosen lines per run — used to
+# intersperse a bounded slice of a large cohort through the day's selection
+# instead of letting it swamp the pool (Emma 2026-07-07: ~100 description
+# fixes/day, randomly interspersed, no separate queue).
+FILE_DAILY_CAPS = {
+    "description_fixes.txt": 100,
+}
 
 
 def read_all_lines():
-    """Read all non-empty lines from all atomic QS files."""
+    """Read all non-empty lines from all atomic QS files (per-file caps apply)."""
     lines = []
     for filepath in ATOMIC_FILES:
         if not os.path.exists(filepath):
             continue
         with open(filepath, "r", encoding="utf-8") as f:
-            for line in f:
-                stripped = line.strip()
-                if stripped:
-                    lines.append(stripped)
+            file_lines = [l.strip() for l in f if l.strip()]
+        cap = FILE_DAILY_CAPS.get(filepath)
+        if cap is not None and len(file_lines) > cap:
+            file_lines = random.sample(file_lines, cap)
+        lines.extend(file_lines)
     return lines
 
 
