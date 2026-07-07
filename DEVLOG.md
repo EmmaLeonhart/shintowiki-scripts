@@ -4,6 +4,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — Import-vocab label propagation; P793→P837 festival migration prepped; ill resolver landed
+
+**Statement-vocab labels (Emma).** The 07-06 reisai/bunrei imports' supporting vocabulary now
+propagates like the rest: Bunrei Q195793 added as an explicit extra in the misc-terms
+transliteration path (64 labels; BFS never reached it — P31 "religious concept" fails the
+shinto|matsuri gate); P612/P837/P1013/P3831 hand-authored fills in
+`generate_property_translations.py` (confident langs + zh-variant copies of existing zh forms);
+P793 registered there documenting Emma's standard (festival with own item → P793). Endpoint moved
+to query-main (WDQS 429 outage). Day-of-year items already at ~216 langs; Reisai already flowed.
+
+**P793 conflation audit + one-swoop migration (Emma ran manually).** SPARQL via query-main: raw
+P793 on Shinto shrines = 149 statements/130 values — two populations: legit building-history
+events (kept) vs **89 distinct shrine→festival pairs** (annual festival stored the wrong way;
+158/163 rows lacked P837). Built Emma's single INTERLEAVED QS batch — per pair, sorted by shrine
+name: the `-P793` removal immediately followed by its `P837|<day>|P3831|<festival item>` add(s)
+(auditable; a partial failure leaves no damage). Day from OUR reisai.txt (67 pairs) else
+unknown-value Q19798648 (22 pairs); 178 lines, opened in her browser (scratchpad
+`p793_batch.txt`); building-history P793s untouched. Emma executing manually via QS.
+
+**Date-gated ill resolver landed.** Today's cleanup-loop fire (run 28846258919; cancelled late,
+but `cleanup/cleanup` succeeded) ran `resolve_deleted_qid_ills_202607 --apply`: 3 edits confirmed
+in the log (Ogawa Shrine + Nawino Shrine Q702140→Q276944, Takeo Shimokorihiko Shrine
+Q568647→Q1079102). Only cancelled job: `direct-daily-edits/edit` (fallback drip; the primary QS
+submission report had already committed — tomorrow's fire redoes the drip).
+
 ## 2026-07-07 — Queue #2 verified drained; collector SKIP-regex bug fixed (2 masked answers recovered)
 
 Contained late-morning session (hard stop 13:00, Emma's five time-gated crons).
