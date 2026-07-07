@@ -466,6 +466,12 @@ jobs:
           shinto_miraheze/run_step.sh "Cleanup Loop: resolve_deleted_qid_ills_202607" \
             python3 shinto_miraheze/resolve_deleted_qid_ills_202607.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
+      - name: "Cleanup: strip_ns8_offload_banners (self-draining UI fix)"
+        if: always() && steps.*.outcome != 'cancelled'
+        run: |
+          shinto_miraheze/run_step.sh "Cleanup Loop: strip_ns8_offload_banners" \
+            python3 shinto_miraheze/strip_ns8_offload_banners.py --apply --max-edits 200 --run-tag "${RUN_TAG}"
+
       - name: "Cleanup: remove_crud_categories"
         if: always() && steps.*.outcome != 'cancelled'
         run: |
