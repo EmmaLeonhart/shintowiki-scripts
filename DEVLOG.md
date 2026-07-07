@@ -4,6 +4,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — onkamui maximalist parser SHIPPED (97 cited bunrei edges, 7th source)
+
+Emma's ladder started and ended at the maximalist rung — the whole blog post parses. The post
+(総本宮・総本社と分霊社, one ~53k-char page) is semi-structured: network heading → 総本宮/総本社 →
+rank-prefixed head names → 分霊社 → rank-grouped `県+市町村：神社名` branch entries.
+`modern-quickstatements/parse_onkamui_bunrei.py`: 42 networks parsed; heads resolve via a
+hand-VERIFIED name→QID table (an earlier from-memory draft was 14/17 WRONG — every entry now
+checked against Wikidata; the in-file comment warns); branch names match Wikidata ja labels
+uniquely, with 「name (place)」 forms and prefecture-filtered disambiguation (P131* pref per
+shrine in the SPARQL). Guards: multi-distinct-head networks skipped (熊野三山, 賀茂両社, 木曽御嶽 —
+branch→which-head undecidable from the page); the post's TAIL sections (磯前神社 onward) are
+同名の神社/同一の神格 lists the author explicitly does NOT claim as bunrei — tainted and excluded
+(a naive parse would have emitted 小國神社→出雲大社-style same-deity falsehoods). Result: **97
+unique edges** (`bunrei_onkamui.txt`, registered in ATOMIC_FILES; 124 tests pass), incl. the
+non-suffix-named branches that were this source's whole point (新舘神社/二俣神社→宇佐, 秋保神社→
+諏訪, 事任八幡宮…). Residual: 90 ambiguous + 261 not-on-Wikidata branch names, per-network stats
+in `onkamui_parse_report.txt`. Also: Emma reports the reisai normalization tail is DONE on the
+Wikidata side (her manual pass after the placeholder batch).
+
 ## 2026-07-07 — P793→P837 migration executed (Emma via QS); mid-course errors and their cleanup; wiki answers actioned
 
 **Migration outcome (all edits Emma-run via QuickStatements browser batches):** the 86-pair main

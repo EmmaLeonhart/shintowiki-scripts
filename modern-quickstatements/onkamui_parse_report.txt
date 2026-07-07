@@ -1,0 +1,42 @@
+神明宮: head=Q687168 branches=43 matched=6 ambiguous=9 not-on-wikidata=28
+廣田神社: head=Q1466105 branches=1 matched=1 ambiguous=0 not-on-wikidata=0
+八幡宮: head=Q715632 branches=109 matched=31 ambiguous=5 not-on-wikidata=73
+MULTI-HEAD network '熊野宮' resolves to ['Q335618', 'Q705035', 'Q710359'] — skipped (branch->which-head is not decidable from the page)
+稲荷神社: head=Q714828 branches=65 matched=18 ambiguous=2 not-on-wikidata=45
+多賀神社: head=Q402091 branches=2 matched=0 ambiguous=2 not-on-wikidata=0
+愛宕神社: head=Q713021 branches=8 matched=1 ambiguous=4 not-on-wikidata=3
+黄金山神社・金山神社など: head=Q704967 branches=2 matched=0 ambiguous=1 not-on-wikidata=1
+龍田神社: head=Q246455 branches=1 matched=0 ambiguous=0 not-on-wikidata=1
+貴船神社、高龗神社、闇龗神社など: head=Q276779 branches=4 matched=0 ambiguous=0 not-on-wikidata=4
+西宮神社: head=Q705297 branches=3 matched=0 ambiguous=1 not-on-wikidata=2
+雷電神社: head=Q11660224 branches=1 matched=0 ambiguous=1 not-on-wikidata=0
+宗像神社・厳島神社など: head=Q704962 branches=11 matched=5 ambiguous=5 not-on-wikidata=1
+住吉神社: head=Q705949 branches=7 matched=2 ambiguous=2 not-on-wikidata=3
+志賀海神社: head=Q11491171 branches=0 matched=0 ambiguous=0 not-on-wikidata=0
+春日神社: head=Q714559 branches=6 matched=1 ambiguous=3 not-on-wikidata=2
+鹿島神社・鹿嶋神社: head=Q706499 branches=17 matched=1 ambiguous=4 not-on-wikidata=12
+香取神社: head=Q372380 branches=0 matched=0 ambiguous=0 not-on-wikidata=0
+鹽竈神社: head=Q133753 branches=4 matched=1 ambiguous=3 not-on-wikidata=0
+白山神社: head=Q704702 branches=18 matched=1 ambiguous=2 not-on-wikidata=15
+UNRESOLVED HEAD — network '鴨神社・賀茂神社・加茂神社': heads=['賀茂別雷神社（上賀茂神社）', '賀茂御祖神社（下鴨神社）']
+氣比神社: head=Q11129346 branches=3 matched=0 ambiguous=3 not-on-wikidata=0
+八坂神社・天王神社・八雲神社など: head=Q692714 branches=16 matched=2 ambiguous=7 not-on-wikidata=7
+大神神社・三輪神社: head=Q705542 branches=7 matched=5 ambiguous=2 not-on-wikidata=0
+大杉神社: head=Q11435950 branches=2 matched=0 ambiguous=2 not-on-wikidata=0
+金刀比羅宮: head=Q94760 branches=5 matched=0 ambiguous=4 not-on-wikidata=1
+氣多神社: head=Q11129340 branches=1 matched=0 ambiguous=0 not-on-wikidata=1
+諏訪神社: head=Q218813 branches=29 matched=6 ambiguous=7 not-on-wikidata=16
+淡嶋神社: head=Q7007362 branches=2 matched=1 ambiguous=1 not-on-wikidata=0
+大山祇神社・三嶋神社: head=Q703904 branches=13 matched=4 ambiguous=1 not-on-wikidata=8
+浅間神社: head=Q653180 branches=21 matched=7 ambiguous=5 not-on-wikidata=9
+日吉神社・日枝神社: head=Q656451 branches=10 matched=1 ambiguous=4 not-on-wikidata=5
+松尾神社: head=Q710302 branches=4 matched=0 ambiguous=3 not-on-wikidata=1
+橿原神社: head=Q710333 branches=1 matched=1 ambiguous=0 not-on-wikidata=0
+天満宮: head=Q662176 branches=28 matched=5 ambiguous=5 not-on-wikidata=18
+東照宮: head=Q696641 branches=5 matched=3 ambiguous=0 not-on-wikidata=2
+十和田神社: head=Q106852429 branches=3 matched=1 ambiguous=0 not-on-wikidata=2
+太平山三吉神社: head=Q11443949 branches=1 matched=0 ambiguous=0 not-on-wikidata=1
+古峯神社: head=Q106697652 branches=1 matched=0 ambiguous=1 not-on-wikidata=0
+三峯神社: head=Q11355207 branches=1 matched=0 ambiguous=1 not-on-wikidata=0
+SAME-NAME/SAME-DEITY section '御嶽神社' — not bunrei, skipped (18 entries incl. any mixed-in 分霊社 lines)
+SAME-NAME/SAME-DEITY section '磯前神社・磯崎神社' — not bunrei, skipped (15 entries incl. any mixed-in 分霊社 lines)
