@@ -33,12 +33,14 @@ These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+)
 endpoint **`query-main.wikidata.org/sparql` works** — use it (it serves everything except scholarly
 articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them via query-main now.
 
-- [ ] **Alias audit — trace SOURCE typos.** Comma-disambiguator cleanup DONE 2026-07-07: found 207
-  comma-aliases on shrine/temple items via query-main, wrote 189 removals (`-Qxxx|Aen|"…"`) to
-  `modern-quickstatements/remove_junk_aliases.txt` (kept 18 two-name aliases) — the daily pipeline
-  drains them. REMAINING: trace the SOURCE typos (`Zebshō` etc. are bad LABELS on OTHER items, likely
-  a cloud session) and correct them via QS; the phonology validator (`romaji_phonology.py`) can flag
-  invalid-mora labels at scale via query-main.
+- [ ] **Alias audit — trace SOURCE typos** (NEEDS-INVESTIGATION: no clean signal yet). Comma cleanup
+  DONE 2026-07-07 (189 removals in `remove_junk_aliases.txt`). The typo-trace via `romaji_phonology`
+  DOESN'T work at scale — checked all 36,580 shrine/temple en labels via query-main, 4,004/1,973
+  "fail" but they're dominated by LEGIT non-Japanese-named shrines (Taiwan/Korea colonial: Zhushan,
+  Alishan, Gwangju…; English: "Olive Shrine", "Mission of Hawaii"). The validator can't tell "Zhushan"
+  (real) from "Zebshō" (typo). Better signal = kana(P1814)-vs-romaji-label mismatch (romanize the kana,
+  compare to the label; a mismatch on a shrine that HAS kana = a real typo) — a separate small build.
+  The validator's built purpose (GATE new cloud-session labels) stands.
 
 ## Pinned tail (keep last, always)
 
