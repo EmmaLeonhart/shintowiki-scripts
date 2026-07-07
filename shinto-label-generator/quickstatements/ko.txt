@@ -65760,8 +65760,8 @@ Q97191344	Lko	"코묘지 사원"
 Q97191546	Lko	"키타노 신사"
 # Source: ID "Wihara Jūnen-ji" (romanization)
 Q97191565	Lko	"주넨지 사원"
-# Source: ID "Wihara Zebshō-ji" (romanization)
-Q97191778	Lko	"제쇼지 사원"
+# Source: ID "Wihara Zenshō-ji" (romanization)
+Q97191778	Lko	"젠쇼지 사원"
 # Source: ID "Wihara Zentsū-ji" (romanization)
 Q97191797	Lko	"젠쓰지 사원"
 # Source: ID "Kuil Tenso" (romanization)
@@ -107272,8 +107272,6 @@ Q140446054	Lko	"법륜사화가산시"
 Q140446055	Lko	"보현사교본시창포곡"
 # Source: JA "秩父三社" (hanja reading)
 Q140446060	Lko	"질부삼사"
-# Source: JA "大山寺三十三カ所地蔵めぐり" (hanja reading)
-Q140446062	Lko	"대산사삼십삼카소지장메구리"
 # Source: JA "國軸山金峯山寺" (hanja reading)
 Q140446078	Lko	"국축산금봉산사"
 # Source: JA "実城寺" (hanja reading)
@@ -107300,12 +107298,18 @@ Q140447358	Lko	"출운대사함관교회"
 Q140447359	Lko	"출운대사토거교회"
 # Source: JA "出雲大社網走教会" (hanja reading)
 Q140447360	Lko	"출운대사망주교회"
+# Source: JA "恩徳寺 (たつの市)" (hanja reading)
+Q140447376	Lko	"은덕사타쓰노시"
 # Source: JA "赤城神社 (桐生市川内町1)" (hanja reading)
 Q140447397	Lko	"적성신사동생시천내정"
 # Source: JA "赤城神社 (桐生市川内町5)" (hanja reading)
 Q140447398	Lko	"적성신사동생시천내정"
 # Source: JA "赤城神社 (高崎市岩鼻町)" (hanja reading)
 Q140447399	Lko	"적성신사고기시암비정"
+# Source: JA "長谷神社" (hanja reading)
+Q140451875	Lko	"장곡신사"
+# Source: JA "長谷神社" (hanja reading)
+Q140451981	Lko	"장곡신사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
