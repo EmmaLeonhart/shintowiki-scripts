@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q128867054 -->
 <!-- JA: 大間々神明宮 | KANA: しんめいぐう | EN_LABEL: Omama-shinmei-gu | KANA_ROMANIZED: Shinmeigu -->
-<!-- ANSWER: -->
+<!-- ANSWER: PREFIX_OK: label carries the Ōmama (大間々) place prefix for disambiguation; P1814 kana しんめいぐう (Shinmeigu) records only the shrine-type portion of the name. The shrine is in Ōmama, Midori, Gunma. Also note: label spells the prefix "Omama" without the macron (should be Ōmama). -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)

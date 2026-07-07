@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135258978 -->
 <!-- JA: 大内神社 | KANA: おおうちじんじゃ | EN_LABEL: Ōuchi Shrine | KANA_ROMANIZED: Ochijinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA_ISSUE: P1814 kana おおうちじんじゃ correctly romanizes to Ōuchijinja, matching the label "Ōuchi Shrine"; the KANA_ROMANIZED field "Ochijinja" was generated incorrectly (dropping おお→Ō). Wikidata currently shows P1814 = おおうちじんじゃ and the label is consistent. No edit needed. -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
