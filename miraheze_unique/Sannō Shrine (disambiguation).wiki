@@ -11,7 +11,7 @@
 **  {{ill|Sannō Shrine|ja|山王神社 (小田原市)|12=simple|13=User:Immanuelle/Sannō Shrine (Odawara City)|comment=changed title based on wikidata|qid=Q134892431}} - Located in {{ill|Odawara|en|Odawara|qid=Q267258|lt=Odawara City}}, Kanagawa Prefecture.
 
 * '''Kyushu and Okinawa Region'''
-**  {{ill|Sannō Shrine|en|Sannō Shrine|qid=Q211522|lt=Sannō Shrine}} - Located in {{ill|Nagasaki|en|Nagasaki|qid=Q38234|lt=Nagasaki City}}, Nagasaki Prefecture.
+**  {{ill|Sannō Shrine|en|Sannō Shrine|qid=Q211522|lt=Sannō Shrine}} - Located in {{ill|Nagasaki|af|Nagasaki|als|Nagasaki|am|ናጋሳኪ|an|Nagasaki|ar|ناغاساكي (مدينة)|arz|ناجاساكى|ast|Nagasaki|az|Naqasaki|azb|ناقاساکی|ban|Nagasaki|bcl|Nagasaki|be|Нагасакі|bg|Нагасаки|bn|নাগাসাকি|br|Nagasaki|bs|Nagasaki|ca|Nagasaki|ce|Нагасаки|ceb|Nagasaki-shi (distrito)|ckb|ناگاساکی|cs|Nagasaki|cv|Нагасаки|cy|Nagasaki|da|Nagasaki|de|Nagasaki|el|Ναγκασάκι|eml|Nagaśàki|eo|Nagasako|es|Nagasaki|et|Nagasaki|eu|Nagasaki|fa|ناگاساکی|fi|Nagasaki|fo|Nagasaki|fr|Nagasaki|frr|Nagasaki|fy|Nagasaki|ga|Nagasaki|gl|Nagasaki|hak|Nagasaki-sṳ|he|נגסאקי|hi|नागासाकी|hr|Nagasaki|hu|Nagaszaki|hy|Նագասակի|ia|Nagasaki|iba|Nagasaki|id|Nagasaki|io|Nagasaki|is|Nagasaki|it|Nagasaki|ja|長崎市|jv|Nagasaki|ka|ნაგასაკი|kaa|Nagasaki|kab|Nagasaki|kk|Нагасаки|ko|나가사키시|ks|ناگاساکی|ku|Nagasaki|ky|Нагасаки|la|Nagasacum|lo|ນາກາຊາກິ|lt|Nagasakis|lv|Nagasaki|mg|Nagasaki|min|Nagasaki|mk|Нагасаки|ml|നാഗസാക്കി|mn|Нагасаки|mr|नागासाकी|ms|Nagasaki|my|နာဂါဆာကီမြို့|mzn|ناگازاکی (شهر)|nds|Nagasaki|nl|Nagasaki (stad)|nn|Nagasaki|no|Nagasaki|oc|Nagasaki|os|Нагасаки|pa|ਨਾਗਾਸਾਕੀ|pl|Nagasaki|pms|Nagasaki|pnb|ناگاساکی|pnt|Ναγκασάκι|pt|Nagasaki|qu|Nagasaki|ro|Nagasaki|ru|Нагасаки|rue|Нагасаки|rw|Nagasaki|sah|Нагасаки|sc|Nagasaki|scn|Nagasaki|sco|Nagasaki|sh|Nagasaki|si|නාගසාකි|simple|Nagasaki|sk|Nagasaki|sl|Nagasaki|sq|Nagasaki|sr|Нагасаки|sv|Nagasaki|sw|Nagasaki|szl|Nagasaki|ta|நாகசாகி|tg|Нагасаки|th|นางาซากิ|tl|Nagasaki|tr|Nagasaki|tt|Nagasaki|tum|Nagasaki|tw|Nagasaki|ug|ناگاساكى|uk|Нагасакі|ur|ناگاساکی|uz|Nagasaki|vi|Nagasaki (thành phố)|war|Nagasaki|wuu|长崎市|yi|נאגאסאקי|zea|Nagasaki|zh|长崎市|zh_classical|長崎市|zh_min_nan|Nagasaki-chhī|zh_yue|長崎市|qid=Q38234|lt=Nagasaki City}}, Nagasaki Prefecture.
 
 {{disambiguation}}
 
@@ -52,7 +52,7 @@
 
 {{translated page|ja|山王神社|version=103399729|comment=Imported full ja history}}
 
-{{wikidata link|Q11470057|ja|山王神社|check_date=2026-05-25}}
+{{wikidata link|Q11470057|ja|山王神社|grok=none|check_date=2026-05-25}}
 [[Category:All disambiguation pages]]
 [[Category:Sannō Ichijitsu Shintō]]
 [[Category:Sannō Shrines]]
@@ -60,3 +60,4 @@
 [[Category:shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
