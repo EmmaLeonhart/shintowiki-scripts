@@ -51,6 +51,18 @@ session. Remaining queue items wait on external systems (cloud RAG answers, clou
 conditional triggers, paper sources); the not-for-today conditionals are written up on
 [[Open questions]] for Emma.
 
+## From [[Open questions]] answers 2026-07-07 (wiki-queue items go at the END, per Emma's rule on that page)
+
+- [ ] **onkamui Rakuten blog maximalist parser** (bunrei #11). Emma's ladder: attempt a
+  well-scoped MAXIMALIST parser of the whole blog (~50 networks, named branch enumerations in
+  hierarchical prose) → if it fails, middle path (parse only named high-value networks) → if that
+  fails, easy path → give up. Each edge cites the blog post (S854), folds into
+  `generate_bunrei_quickstatements.py` multi-source config like the other 6 sources. Not critical
+  but wanted.
+- [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
+  sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
+  Emma picks a direction.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).

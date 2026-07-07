@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bunrei data — where else authoritative 系統 data can come from</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #666; --card: #f6f6f4;
+    --accent: #8a2b2b; --border: #ddd; --good: #1a6b3c; --warn: #9a6700;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181c; --fg: #e8e6e3; --muted: #9a9a9a; --card: #1f2228;
+            --accent: #e08585; --border: #3a3d44; --good: #6fce9a; --warn: #e3b341; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0 auto; max-width: 60rem; padding: 2rem 1.2rem 4rem;
+         font: 16px/1.6 Georgia, "Times New Roman", serif;
+         background: var(--bg); color: var(--fg); }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .3rem; }
+  h2 { font-size: 1.25rem; margin: 2.2rem 0 .6rem; border-bottom: 1px solid var(--border); padding-bottom: .25rem; }
+  h3 { font-size: 1.02rem; margin: 1.4rem 0 .3rem; }
+  .sub { color: var(--muted); margin: 0 0 1.6rem; font-style: italic; }
+  table { border-collapse: collapse; width: 100%; margin: .8rem 0; font-size: .92rem; }
+  .tablewrap { overflow-x: auto; }
+  th, td { text-align: left; padding: .35rem .6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; }
+  code { font-family: Consolas, Menlo, monospace; font-size: .88em; background: var(--card);
+         padding: .08em .3em; border-radius: 3px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+          padding: .9rem 1.1rem; margin: .9rem 0; }
+  .tag { display: inline-block; font: 700 .72rem/1.5 sans-serif; letter-spacing: .04em;
+         text-transform: uppercase; padding: .05em .55em; border-radius: 999px;
+         border: 1px solid var(--border); margin-right: .4em; }
+  .t-high { color: var(--good); border-color: var(--good); }
+  .t-med  { color: var(--warn); border-color: var(--warn); }
+  .t-low  { color: var(--muted); }
+  .verdict { border-left: 4px solid var(--accent); padding-left: 1rem; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .25rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Bunrei 分霊 data: how to get authoritative 系統 coverage without the two paper sources</h1>
+<p class="sub">Written 2026-07-07 at Emma's request, replacing the parked 神社本庁 (1995) / 岡田荘司 book
+route. Everything below is orderable by effort and expected yield; nothing here requires library access.</p>
+
+<h2>Where we stand</h2>
+<div class="tablewrap"><table>
+<tr><th>Source</th><th>Edges</th><th>Networks</th><th>Note</th></tr>
+<tr><td>jinja-kikou.net</td><td>9,971</td><td>22</td><td>the backbone harvest</td></tr>
+<tr><td>animism.world</td><td>128</td><td>+6 (Kifune, Tōshōgū, Ōsugi, Awashima, Sarutahiko, Kotoshironushi)</td><td></td></tr>
+<tr><td>shinwa-otaku</td><td>205</td><td></td><td></td></tr>
+<tr><td>ikkojin</td><td>129</td><td>+2 (Shirahige, Ōtori)</td><td></td></tr>
+<tr><td>nicovideo</td><td>77</td><td></td><td></td></tr>
+<tr><td>jisha-toranomaki</td><td>40</td><td>+1 (Ebisu → 西宮神社)</td><td></td></tr>
+<tr><td><b>Total</b></td><td><b>~10,550</b></td><td></td><td>each edge cited S854; P612 = network head (総本社)</td></tr>
+</table></div>
+<p>Four research agents already established there is <b>no downloadable branch→head dataset anywhere</b>
+(government, academic, LOD, commercial, community). The current derivation classifies shrines into networks
+by ja-label suffix and points P612 at the network head — the <i>immediate</i> kanjō parent is published nowhere
+as a dataset. The remaining ceiling: shrines whose names don't match their network suffix, small networks,
+and per-shrine (not per-network) provenance.</p>
+
+<h2>The avenues, ranked</h2>
+
+<h3>1. jawiki 由緒 prose harvest — 勧請元 statements <span class="tag t-high">high yield</span><span class="tag t-high">offline</span></h3>
+<div class="card">
+<p>Japanese Wikipedia shrine articles routinely state the source shrine in prose:
+「<code>石清水八幡宮から勧請</code>」「<code>伏見稲荷大社より分霊を勧請した</code>」 — in the 由緒/歴史 section or the infobox
+<code>主祭神</code>/<code>創建</code> fields. This is the <b>only</b> avenue that yields the <i>immediate kanjō parent</i>
+rather than the network head — strictly better data than what we have.</p>
+<ul>
+<li><b>Method:</b> offline pass over the jawiki dump (we already walk ~6,700 shrine articles for the reisai
+import — same infrastructure). Regex family: <code>(.{2,20}?(神宮|大社|神社|八幡宮))(から|より)(分霊を)?勧請</code>
+plus 分祀/分社/御分霊 variants. Each hit → <code>branch P612 source | S4656 jawiki-URL</code>.</li>
+<li><b>Expected yield:</b> thousands of candidate statements; precision is high because 勧請 prose almost
+always names a real source shrine. Ambiguity (multiple kanjō over history) survives as multiple cited statements.</li>
+<li><b>Effort:</b> small — one generator in the existing reisai/bunrei pattern; the parser is a regex, not NLP.</li>
+</ul>
+</div>
+
+<h3>2. NDL Digital Collections — pre-war 神社明細帳 &amp; 府県神社誌 <span class="tag t-high">authoritative</span><span class="tag t-med">OCR effort</span></h3>
+<div class="card">
+<p>The National Diet Library has digitized large numbers of pre-war shrine registries
+(神社明細帳, 府県郡誌の神社誌, 神社大観 etc.), public domain and free online — these are the <i>ancestors</i> of the
+1995 神社本庁 survey the paper route wanted. Per-shrine entries record 祭神, 由緒, and 勧請 provenance.</p>
+<ul>
+<li><b>Method:</b> NDL Digital Collections API (<code>iss.ndl.go.jp/api</code> / <code>dl.ndl.go.jp</code>) full-text search
+for 勧請 within digitized shrine registries; NDL's own OCR text layer is searchable for many volumes —
+no OCR work of ours needed for those.</li>
+<li><b>Yield:</b> authoritative period documentation; citable (S248 the digitized volume + S304 page).
+Best used to <i>verify and deepen</i> networks rather than mass-import.</li>
+<li><b>Effort:</b> medium — API harvest is easy; deciding how to model 1900-era data against present shrines is the real work.</li>
+</ul>
+</div>
+
+<h3>3. Prefectural 神社庁 databases <span class="tag t-med">medium yield</span><span class="tag t-med">47 scrapers</span></h3>
+<div class="card">
+<p>Most of the 47 prefectural jinjachō publish per-shrine pages (e.g. Tokyo, Hyōgo, Fukuoka, Saitama)
+with 由緒 text and 祭神 — many state 勧請 provenance. Coverage is official (神社本庁-affiliated shrines,
+~78k) and per-shrine.</p>
+<ul>
+<li><b>Method:</b> per-prefecture scrapers (formats differ wildly — this is the cost). Same 勧請 regex as avenue 1.</li>
+<li><b>Yield:</b> covers small shrines jawiki never will; official provenance.</li>
+<li><b>Effort:</b> large in aggregate; best done opportunistically, top prefectures first.</li>
+</ul>
+</div>
+
+<h3>4. onkamui Rakuten blog <span class="tag t-med">queued — Emma approved the maximalist parser</span></h3>
+<div class="card">
+<p>~50 networks with named branch enumerations in hierarchical prose. Already decided on the wiki
+[[Open questions]] page: attempt a well-scoped maximalist parser → middle path (named networks only)
+→ easy path → give up. Sits in <code>queue.md</code>.</p>
+</div>
+
+<h3>5. Official 総本社 branch registries <span class="tag t-med">per-network</span></h3>
+<div class="card">
+<p>Several head shrines publish their own branch lists: Fushimi Inari's 講務本庁 network, Kotohira-gū's
+崇敬会 lists, Hachimangū Rengō (八幡宮連合), Suwa-taisha's 全国諏訪神社 materials. Highest possible authority
+for their own network; one small scraper each. Good for networks where jinja-kikou coverage looks thin.</p>
+</div>
+
+<h3>6. 宗教年鑑 (Agency for Cultural Affairs, annual, free PDF) <span class="tag t-low">counts only</span></h3>
+<div class="card">
+<p>Authoritative <i>counts</i> per religious corporation/lineage, no per-shrine rows. Replaces exactly the
+"authoritative 系統 counts" role the 1995 survey would have played — useful as a validation yardstick
+(is our Hachiman network plausibly ~10k?) rather than as an edge source.</p>
+</div>
+
+<h3>7. Japan Search LOD / community shrine databases <span class="tag t-low">low marginal yield</span></h3>
+<div class="card">
+<p>Japan Search (<code>jpsearch.go.jp</code>) SPARQL federates GLAM datasets — worth one exploratory query session, but
+the 4-agent sweep suggests shrine lineage isn't in it. Community sites (yaokami.jp, jinjajin.jp, omairi.club,
+goshuin databases) have per-shrine 由緒 text — same harvest as avenue 3 with murkier citability.</p>
+</div>
+
+<h2 class="verdict">Recommendation</h2>
+<p><b>Do avenue 1 (jawiki 勧請 prose harvest) first.</b> It is one generator on infrastructure we already run,
+its citations are the same S4656 jawiki-URL pattern as the reisai import, and it upgrades the whole dataset from
+"network head by suffix" to "actual named kanjō parent" wherever prose exists. Avenue 2 (NDL) is the true
+paper-replacement for authority; avenue 4 (onkamui) is already queued. Avenues 3/5 are opportunistic follow-ups;
+6 is a sanity yardstick; 7 is an afternoon of curiosity at most.</p>
+
+<p class="sub">This page is static (<code>_site/bunrei-research.html</code>) — the site generator does not overwrite it.</p>
+</body>
+</html>

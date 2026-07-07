@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — P793→P837 migration executed (Emma via QS); mid-course errors and their cleanup; wiki answers actioned
+
+**Migration outcome (all edits Emma-run via QuickStatements browser batches):** the 86-pair main
+batch + case-by-case (Heian Jingū day carried; Shirahige book refs P248 Q27014892/P304 43 rebuilt)
++ 5 stragglers all verified against live Wikidata — festival-typed P793 off, P837 statements on.
+Final placeholder pass (Emma's spec): 18 listed shrines that still carry P793 events got the bare
+placeholder `P837|Q19798648 (unknown)|P3831|Q11385469 (Reisai)` — no citation, no festival link —
+for her manual completion.
+
+**Errors made and cleaned up (mine):** (1) unknown-date adds initially omitted the Reisai role —
+a silent design call Emma rejected; (2) misread "solved in five seconds" as permission to look up
+dates from festival items' own P837 and opened that batch (unwanted — spec is reisai.txt date or
+unknown value, no lookups); (3) opened two OVERLAPPING fix batches, whose interaction created
+role-only junk unknown statements on ~7 shrines (removed via a targeted batch + Emma's undos);
+(4) tab churn — repeatedly reopening superseded QS tabs. Lessons: one batch at a time, derive
+every corrective batch from LIVE Wikidata state, never stack amendment batches that assume each
+other's non-execution, and treat silent scope decisions on data shape as Emma's to make.
+
+**[[Open questions]] answers actioned:** typo-provenance trace dropped (not worth effort);
+history-offload alarm answered on-page (verified: code cutoff 2026-06-01, FORCE var set nowhere —
+nothing has offloaded in >1 month); onkamui maximalist parser queued (Emma's ladder: maximalist →
+middle → easy → give up); paper sources DEAD, replaced by `_site/bunrei-research.html` — the
+alternative-avenues research page (jawiki 勧請 prose harvest recommended first, NDL digitized
+pre-war registries as the authority substitute, prefectural jinjachō, official 総本社 registries,
+宗教年鑑 yardstick), opened for Emma in-session. Emma's new page rule recorded: wiki-page queue
+items append to the END of queue.md.
+
 ## 2026-07-07 — Import-vocab label propagation; P793→P837 festival migration prepped; ill resolver landed
 
 **Statement-vocab labels (Emma).** The 07-06 reisai/bunrei imports' supporting vocabulary now
