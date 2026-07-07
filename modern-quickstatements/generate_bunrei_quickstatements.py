@@ -36,38 +36,55 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 WDQS = "https://query-main.wikidata.org/sparql"   # query.wikidata.org is 429-outaged
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
-OUTPUT = os.path.join(HERE, "bunrei.txt")
-
 Q_BUNREI = "Q195793"
-SOURCE_URL = "http://jinja-kikou.net/bunreibunsya.html"
 
-# (head shrine QID, [ja label suffixes]) per network — heads resolved from Wikidata,
-# network->head from jinja-kikou's 分霊分社一覧表. Longest/most-specific suffixes first.
-NETWORKS = [
-    ("Q715632", ["八幡神社", "八幡宮", "八幡社"]),        # Hachiman -> 宇佐神宮
-    ("Q714828", ["稲荷神社", "稲荷社"]),                   # Inari -> 伏見稲荷大社
-    ("Q218813", ["諏訪神社", "諏訪社"]),                   # Suwa -> 諏訪大社
-    ("Q714559", ["春日神社"]),                             # Kasuga -> 春日大社
-    ("Q705949", ["住吉神社"]),                             # Sumiyoshi -> 住吉大社
-    ("Q704702", ["白山神社"]),                             # Hakusan -> 白山比咩神社
-    ("Q656451", ["日枝神社", "日吉神社"]),                 # Hie/Sanno -> 日吉大社
-    ("Q692714", ["八坂神社", "祇園神社"]),                 # Yasaka/Gion -> 八坂神社
-    ("Q94760",  ["金刀比羅神社", "金比羅神社", "琴平神社", "金刀比羅宮"]),  # Konpira -> 金刀比羅宮
-    ("Q500413", ["秋葉神社"]),                             # Akiba -> 秋葉山本宮秋葉神社
-    ("Q372380", ["香取神社"]),                             # Katori -> 香取神宮
-    ("Q706499", ["鹿島神社"]),                             # Kashima -> 鹿島神宮
-    ("Q191763", ["厳島神社", "嚴島神社"]),                 # Itsukushima -> 厳島神社
-    ("Q704962", ["宗像神社"]),                             # Munakata -> 宗像大社
-    ("Q703633", ["氷川神社"]),                             # Hikawa -> 氷川神社 (武蔵一宮)
-    ("Q653180", ["浅間神社"]),                             # Sengen/Asama -> 富士山本宮浅間大社
-    ("Q402091", ["多賀神社"]),                             # Taga -> 多賀大社
-    ("Q710302", ["松尾神社"]),                             # Matsuo -> 松尾大社
-    ("Q482065", ["熱田神社"]),                             # Atsuta -> 熱田神宮
-    ("Q710786", ["天満宮", "天満神社", "天神社", "菅原神社"]),  # Tenjin -> 太宰府天満宮 (conventional 総本社)
-    ("Q705035", ["熊野神社"]),                             # Kumano -> 熊野本宮大社 (primary of the 三山)
-    ("Q713021", ["愛宕神社"]),                             # Atago -> 愛宕神社 (京都)
-]
-HEAD_QIDS = {n[0] for n in NETWORKS}
+# One config per online source. Each source = (network->head suffix map) + its own
+# citation URL + its own output file. Overlapping networks across sources are fine
+# (idempotent); a new source's file only needs to carry the networks IT documents,
+# especially the ones earlier sources missed. (head shrine QID, [ja label suffixes]).
+SOURCES = {
+    # jinja-kikou.net 分霊分社一覧表 — the 22 main networks.
+    "jinja_kikou": {
+        "url": "http://jinja-kikou.net/bunreibunsya.html",
+        "out": "bunrei.txt",
+        "networks": [
+            ("Q715632", ["八幡神社", "八幡宮", "八幡社"]),        # Hachiman -> 宇佐神宮
+            ("Q714828", ["稲荷神社", "稲荷社"]),                   # Inari -> 伏見稲荷大社
+            ("Q218813", ["諏訪神社", "諏訪社"]),                   # Suwa -> 諏訪大社
+            ("Q714559", ["春日神社"]),                             # Kasuga -> 春日大社
+            ("Q705949", ["住吉神社"]),                             # Sumiyoshi -> 住吉大社
+            ("Q704702", ["白山神社"]),                             # Hakusan -> 白山比咩神社
+            ("Q656451", ["日枝神社", "日吉神社"]),                 # Hie/Sanno -> 日吉大社
+            ("Q692714", ["八坂神社", "祇園神社"]),                 # Yasaka/Gion -> 八坂神社
+            ("Q94760",  ["金刀比羅神社", "金比羅神社", "琴平神社", "金刀比羅宮"]),  # Konpira
+            ("Q500413", ["秋葉神社"]),                             # Akiba -> 秋葉山本宮秋葉神社
+            ("Q372380", ["香取神社"]),                             # Katori -> 香取神宮
+            ("Q706499", ["鹿島神社"]),                             # Kashima -> 鹿島神宮
+            ("Q191763", ["厳島神社", "嚴島神社"]),                 # Itsukushima -> 厳島神社
+            ("Q704962", ["宗像神社"]),                             # Munakata -> 宗像大社
+            ("Q703633", ["氷川神社"]),                             # Hikawa -> 氷川神社 (武蔵一宮)
+            ("Q653180", ["浅間神社"]),                             # Sengen/Asama -> 富士山本宮浅間大社
+            ("Q402091", ["多賀神社"]),                             # Taga -> 多賀大社
+            ("Q710302", ["松尾神社"]),                             # Matsuo -> 松尾大社
+            ("Q482065", ["熱田神社"]),                             # Atsuta -> 熱田神宮
+            ("Q710786", ["天満宮", "天満神社", "天神社", "菅原神社"]),  # Tenjin -> 太宰府天満宮
+            ("Q705035", ["熊野神社"]),                             # Kumano -> 熊野本宮大社
+            ("Q713021", ["愛宕神社"]),                             # Atago -> 愛宕神社 (京都)
+        ],
+    },
+    # animism.world 総本社まとめ — the networks jinja-kikou missed.
+    "animism": {
+        "url": "https://animism.world/column/souhonja-matome/",
+        "out": "bunrei_animism.txt",
+        "networks": [
+            ("Q276779", ["貴船神社"]),                             # Kifune -> 貴船神社 (京都)
+            ("Q696641", ["東照宮"]),                               # Toshogu -> 日光東照宮
+            ("Q11435950", ["大杉神社"]),                           # Osugi -> 大杉神社 (茨城)
+            ("Q7007362", ["淡島神社", "淡嶋神社"]),                # Awashima -> 淡嶋神社 (和歌山)
+            ("Q3541617", ["猿田彦神社"]),                          # Sarutahiko -> 椿大神社
+        ],
+    },
+}
 
 
 def all_shrines():
@@ -82,8 +99,8 @@ def all_shrines():
     return [(x["item"]["value"].rsplit("/", 1)[-1], x["ja"]["value"]) for x in rows]
 
 
-def head_for(ja_label):
-    for head_qid, suffixes in NETWORKS:
+def head_for(ja_label, networks):
+    for head_qid, suffixes in networks:
         if any(ja_label.endswith(s) for s in suffixes):
             return head_qid
     return None
@@ -92,18 +109,24 @@ def head_for(ja_label):
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("source", nargs="?", default="jinja_kikou", choices=sorted(SOURCES),
+                    help="Which online source to derive from.")
     ap.add_argument("--stats", action="store_true", help="Print counts, write nothing.")
     args = ap.parse_args()
+
+    cfg = SOURCES[args.source]
+    networks, url, OUTPUT = cfg["networks"], cfg["url"], os.path.join(HERE, cfg["out"])
+    head_qids = {n[0] for n in networks}
 
     shrines = all_shrines()
     lines, per_head = [], {}
     for qid, ja in shrines:
-        if qid in HEAD_QIDS:          # never make a head its own branch
+        if qid in head_qids:          # never make a head its own branch
             continue
-        head = head_for(ja)
+        head = head_for(ja, networks)
         if not head:
             continue
-        lines.append(f'{qid}|P612|{head}|P1013|{Q_BUNREI}|S854|"{SOURCE_URL}"')
+        lines.append(f'{qid}|P612|{head}|P1013|{Q_BUNREI}|S854|"{url}"')
         per_head[head] = per_head.get(head, 0) + 1
 
     print(f"shrines scanned: {len(shrines)} ; bunrei edges: {len(lines)}")
