@@ -42,13 +42,16 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
   compare to the label; a mismatch on a shrine that HAS kana = a real typo) — a separate small build.
   The validator's built purpose (GATE new cloud-session labels) stands.
 
-## 11. Bunrei source harvest — continue until exhaustion
+## 11. Bunrei residual (harvest EXHAUSTED 2026-07-06 — 6 sources, ~10,550 cited edges)
 
-- [ ] Keep finding non-Wikipedia 総本社/分霊 sources and wiring each as its own cited file via
-  `generate_bunrei_quickstatements.py` SOURCES config. Done: jinja-kikou (9,971), animism (128),
-  toranomaki (40), ikkojin (129). A niche-tail hunt (nicovideo via archive.org, 神社庁 DBs, official
-  総本社 sites, small networks 三峯/石鎚/出羽三山/護国…) is in flight — wire in what it finds; if it
-  returns empty, that's the exhaustion signal: close this item and move on.
+Online 総本社 sources are tapped (jinja-kikou 9,971 / animism 128 / toranomaki 40 / ikkojin 129 /
+shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded — officially not bunrei).
+
+- [ ] (low) The one unharvested online source: onkamui Rakuten blog (~50 networks with NAMED branch
+  enumerations, hierarchical prose — would catch branches whose names don't match their network
+  suffix). Heavy parse; do only if the suffix-method coverage proves insufficient.
+- [ ] (low) Paper-only: 神社本庁『全国神社祭祀祭礼総合調査』(1995), 岡田荘司『事典 神社の歴史と祭り』—
+  authoritative 系統 counts; needs Emma or a library, not scrapeable.
 
 ## Pinned tail (keep last, always)
 
