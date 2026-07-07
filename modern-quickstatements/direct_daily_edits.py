@@ -75,6 +75,7 @@ ATOMIC_FILES = [
     "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
     "durability_backlinks.txt",               # Durability reciprocal backlinks for orphaned 2026-created items (audit of 2026-01-01.txt)
     "remove_junk_aliases.txt",                # Alias audit (queue #8): remove 189 comma-disambiguator junk aliases the pipeline dragged onto shrine/temple items (via query-main SPARQL)
+    "reisai.txt",                             # Shrine Reisai (例祭) dates imported from jawiki (P837 day-of-year + P3831=Reisai qualifier + jawiki citation); regenerated in CI by generate_reisai_quickstatements.py
 ]
 
 
