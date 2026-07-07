@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-07-07 09:58:14 UTC",
+  "outcome": "qs_retired",
+  "note": "QuickStatements path retired 2026-07-04 (Emma: no manual batch ever) — direct_daily_edits.py is the only editor",
+  "batches": [
+    {
+      "file": "modern_shrine_ranking_qualifiers.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "p4656_jawiki_references.txt",
+      "lines_available": 3,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "p958_qualifiers.txt",
+      "lines_available": 6,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "remove_shikinai_hiteisha.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "remove_shikinaisha.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "engishiki_add_references.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "p11250_miraheze_links.txt",
+      "lines_available": 5306,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "p6262_fandom_links.txt",
+      "lines_available": 12512,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "en_labels.txt",
+      "lines_available": 137,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "kana_en_labels.txt",
+      "lines_available": 424,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "identical_name_en_labels.txt",
+      "lines_available": 1880,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "temple_en_labels.txt",
+      "lines_available": 359,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "temple_identical_name_en_labels.txt",
+      "lines_available": 9152,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "cjk_ja_backfill.txt",
+      "lines_available": 1,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "en_labels_sonnet.txt",
+      "lines_available": 163,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "label_proposals_drip.txt",
+      "lines_available": 20,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "kana_qualifier_add.txt",
+      "lines_available": 5267,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "kana_redundant_remove.txt",
+      "lines_available": 58,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "migrate_ritsuryo_funding_remove.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "migrate_ritsuryo_funding_underspecified_remove.txt",
+      "lines_available": 0,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "recreation_relations.txt",
+      "lines_available": 9,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    },
+    {
+      "file": "durability_backlinks.txt",
+      "lines_available": 28,
+      "lines_submitted": 0,
+      "success": false,
+      "message": "QS retired — flows via the direct API drip"
+    }
+  ]
+}
