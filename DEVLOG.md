@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — WDQS 429 workaround (split endpoint) + repeated-name shrine audit (#9 done)
+
+`query.wikidata.org` stayed 429-outaged all session, gating the SPARQL audits. Found the fix: the
+graph-split endpoint **`query-main.wikidata.org/sparql` is NOT under the outage** (serves everything
+except scholarly articles — so all shrine data). Ran the #9 repeated-name audit through it: **227
+Japanese labels are each shared by ≥10 Shinto shrines (P31=Q845945), covering 15,023 shrines (~49% of
+all 30,257)** — 八幡神社 ×1006, 諏訪神社 ×1004, 稲荷神社 ×865, 熊野神社 ×658, … These are only
+distinguishable by location, so P131 coverage is the data-quality lever. Report:
+`docs/shrine_repeated_names_audit_2026-07.md`. Updated the queue section + 10pm cron to use query-main;
+the alias audit (#8) is now unblocked too.
+
 ## 2026-07-07 — Queue honesty pass: cdo done, deleted-QID ills resolved (self-heal op + CI one-off)
 
 Emma pushed back on items I'd hand-waved as "externally blocked." Verified reality: only the WDQS

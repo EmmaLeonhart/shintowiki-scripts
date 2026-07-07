@@ -27,18 +27,16 @@ Once the loop runs: the **18 Japanese-named duplicate categories** tagged this s
 
 - [ ] Confirm the 18 tagged dups actually move/merge once the loop is healthy; spot-check a few.
 
-## WDQS-gated audits — ONLY the 10pm cron works these
+## SPARQL-heavy audits
 
-These need a full `query.wikidata.org` SPARQL scan; WDQS has been 429-outaged (2026-07-06+). **The
-regular work-loop SKIPS this whole section** — do NOT attempt these on the hourly loop. A dedicated
-**22:00 local cron** tries them once a night; if WDQS is still down it no-ops and retries tomorrow.
+These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+), but the SPLIT
+endpoint **`query-main.wikidata.org/sparql` works** — use it (it serves everything except scholarly
+articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them via query-main now.
 
 - [ ] **Alias audit + cleanup.** Cross-ref the old `Aen` lines the pipeline submitted vs live
   Wikidata aliases; generate QS to REMOVE the junk (~72 comma-disambiguators like `…, Hino, Tokyo`).
   Trace the SOURCE typos (`Zebshō` etc. are bad labels on OTHER items) and correct them. (Root cause
   already fixed `b11f8b54`; phonology validator already built — `modern-quickstatements/romaji_phonology.py`.)
-- [ ] **Repeated-name shrine audit.** Shinto shrines (P31 Q845945) with a ja label used ≥10×; audit
-  those clusters for disambiguation / data-quality.
 
 ## Pinned tail (keep last, always)
 
