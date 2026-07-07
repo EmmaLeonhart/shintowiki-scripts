@@ -4,6 +4,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-07 — desc-then-label pair system; edits-today dashboard tile; onkamui + wiki-queue items closed
+
+**Description-without-label cleanup (Emma's "actively breaking things" item).** 10,070
+shrine/temple items carry a description in a covered language but no label (id 5,024 / uk 4,592 /
+47-language tail) — the stale description blocks label adds because label+description must be
+unique. Built `generate_description_fixes.py`: standardized descriptions inferred from each
+language's own corpus (modal generic + prefecture template detected by substring against the 47
+pref labels@lang; per-item prefectures fetched only for targets in VALUES batches after the
+joined P131* query 504'd), then joined against the 2.6M label proposals from
+shinto-label-generator (id_proposed.txt, uk.txt, …) to emit COMPOUND PAIR units
+`Q|Dxx|"desc"||Q|Lxx|"label"`. `direct_daily_edits` executes a pair's sub-lines sequentially,
+stopping at first failure (label can never precede its description), with FILE_DAILY_CAPS
+interspersing ≤100 pairs/day through the main drip — no separate queue, per Emma. First full
+data generation in flight. **Dashboard:** edits-today stat card on index.html (live Wikidata
+usercontribs since UTC midnight; 1,839 on test). Queue items for both closed on the wiki page.
+
 ## 2026-07-07 — ns8 UI crud GONE (113→0); P31 ranking removals unstuck; eight-things answer posted
 
 **ns8 offload banners: 0 remaining.** The dispatched wiki-cleanup run executed

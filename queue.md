@@ -49,22 +49,13 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
-- [ ] **P31 ranking removals unstuck** (Emma 2026-07-07): endpoint + 504 fixes landed in
-  `generate_modern_shrine_ranking_qualifiers.py`; verify the rerun populates
-  `migrate_ritsuryo_funding_remove.txt` (~4,846 lines incl. Chiryū Q11584639) and commit.
-- [ ] **Description generators for labeled shrines/temples** (Emma 2026-07-07): for each covered
-  language X, items with label-in-X but NO description-in-X get a standardized description
-  ("Shinto shrine in <country>" per X's pattern; Japan → prefecture-specific). Separate QS
-  creators; only fires AFTER the label exists.
-- [ ] **Description-without-label cleanup + desc-then-label pairs** (Emma 2026-07-07, build
-  LOCALLY now — not cloud): SPARQL every covered language for shrines with description-in-X but
-  no label-in-X (expected almost entirely Ukrainian). For each: change the description first
-  (generic standardized form is fine), THEN add the label — description is the dedup key, a
-  stale one blocks non-unique label adds. No separate queue: intersperse ~100/day randomly
-  through the main daily edit drip. Label-adding QS for such items is prohibited until the
-  description is fixed.
-- [ ] **Dashboard daily-edit counter** (Emma 2026-07-07, LAST — only after everything above):
-  GitHub Pages widget tracking how many daily edits happened today, if feasible.
+- [ ] **desc-then-label pairs: land the data file.** Machinery SHIPPED (compound || pair units,
+  100/day cap, ordered execution, 2.6M proposals joined); the first full
+  `description_label_pairs.txt` generation is running — commit it with per-language stats when it
+  completes (rerun `generate_description_fixes.py` if the in-flight pre-pair run finishes first).
+- [ ] **Description generators for labeled shrines/temples** (Emma 2026-07-07, CAN WAIT per Emma):
+  items with label-in-X but NO description-in-X get the standardized description (same inferred
+  templates); separate generator, only fires AFTER the label exists.
 
 ## Pinned tail (keep last, always)
 
