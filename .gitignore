@@ -18,3 +18,4 @@ shinto_miraheze/manual_import_local.py
 
 # cdo corpus fetch log (temp)
 shinto-label-generator/cdo_corpus_fetch.log
+.gstack/
