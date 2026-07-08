@@ -4,6 +4,14 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — honzon P825 SHIPPED: 760 cited principal-image statements
+
+Temple sibling of the saijin import, same wikilinked-only precision path on {{日本の寺院}} 本尊:
+8,834 articles → 4,998 with linked honzon → 760 new pairs (4,570 already on Wikidata — temples
+were far better covered than shrines). Spot-checks incl. Honnō-ji → daimoku. Registered +
+CI-wired. Both halves of the review's top-value import (shrine 祭神 + temple 本尊) shipped in one
+night: 3,122 new cited P825 statements total.
+
 ## 2026-07-08 — saijin P825 import SHIPPED: 2,362 cited deity statements
 
 The volume jawiki build: 祭神 from {{神社}} as P825, wikilinked-only precision (jawiki's editorial
