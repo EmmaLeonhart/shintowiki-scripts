@@ -84,6 +84,22 @@ def targets_with_pref(cls, extra, lang):
     return out
 
 
+_CLASS_LABELS = {}
+
+
+def class_label(cls, lang):
+    """The class item's own label in this language (cached per class)."""
+    if cls not in _CLASS_LABELS:
+        import urllib.request
+        req = urllib.request.Request(
+            f"https://www.wikidata.org/w/api.php?action=wbgetentities&ids={cls}"
+            f"&props=labels&format=json",
+            headers={"User-Agent": "shintowiki-descfix/1.0 (immanuelleleonhart@gmail.com)"})
+        _CLASS_LABELS[cls] = json.load(urllib.request.urlopen(req))[
+            "entities"][cls].get("labels", {})
+    return _CLASS_LABELS[cls].get(lang, {}).get("value")
+
+
 def existing_pairs(cls, extra, lang):
     """{(label, desc)} already on this class's items in this language — the
     EXTERNAL side of the uniqueness rule (docs/description_enrichment_pipeline.md).
@@ -118,24 +134,28 @@ def main():
             if not (pref_t or gen):
                 report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
                 continue
-            # CLASS-SPECIFICITY guard: a trustworthy template must not also be
-            # a template of the OTHER class — generic mass-imported forms
-            # ("bâtiment de préfecture de X, Japon") are modal for shrines AND
-            # temples and say nothing about either; class-true forms ("kuil
-            # Shinto…") appear in only one corpus (found 2026-07-07: 9.6k junk
-            # fr "building" descriptions nearly shipped).
-            other_cls, other_extra = next((c, e) for c, e in CLASSES if c != cls)
-            other = desc_corpus(other_cls, other_extra, lang)
-            time.sleep(1)
-            o_pref_t, o_gen = infer_templates(other, prefs)
-            if pref_t and pref_t == o_pref_t:
-                report.append(f"{cls} {lang}: pref template {pref_t!r} is class-ambiguous — dropped")
+            # CLASS-SPECIFICITY guard: the template must actually SAY what the
+            # item is — it must share a content word (≥4 chars) with the
+            # class's own Wikidata label in this language ("sanctuaire shinto"
+            # / "kuil Shinto" / "buddhistischer Tempel"). Mass-imported junk
+            # like "bâtiment de préfecture de X, Japon" shares none and is
+            # dropped (2026-07-07/08: two weaker guards let 7-9k junk fr
+            # descriptions through; exact cross-class comparison was not
+            # enough because each class infers DIFFERENT junk strings).
+            cls_label = class_label(cls, lang)
+            def _class_true(t):
+                if not (t and cls_label):
+                    return False
+                words = {w for w in re.split(r"\W+", cls_label.lower()) if len(w) >= 4}
+                return any(w in t.lower() for w in words)
+            if pref_t and not _class_true(pref_t):
+                report.append(f"{cls} {lang}: pref template {pref_t!r} lacks class word ({cls_label!r}) — dropped")
                 pref_t = None
-            if gen and gen == o_gen:
-                report.append(f"{cls} {lang}: generic {gen!r} is class-ambiguous — dropped")
+            if gen and not _class_true(gen):
+                report.append(f"{cls} {lang}: generic {gen!r} lacks class word ({cls_label!r}) — dropped")
                 gen = None
             if not (pref_t or gen):
-                report.append(f"{cls} {lang}: {counts[lang]} targets, no class-specific template — skipped")
+                report.append(f"{cls} {lang}: {counts[lang]} targets, no class-true template — skipped")
                 continue
             targets = targets_with_pref(cls, extra, lang)
             time.sleep(1)
