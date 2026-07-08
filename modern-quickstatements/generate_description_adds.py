@@ -113,9 +113,29 @@ def main():
                 continue
             corpus = desc_corpus(cls, extra, lang)
             time.sleep(1)
-            pref_t, gen = infer_templates(corpus, pref_labels(lang))
+            prefs = pref_labels(lang)
+            pref_t, gen = infer_templates(corpus, prefs)
             if not (pref_t or gen):
                 report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
+                continue
+            # CLASS-SPECIFICITY guard: a trustworthy template must not also be
+            # a template of the OTHER class — generic mass-imported forms
+            # ("bâtiment de préfecture de X, Japon") are modal for shrines AND
+            # temples and say nothing about either; class-true forms ("kuil
+            # Shinto…") appear in only one corpus (found 2026-07-07: 9.6k junk
+            # fr "building" descriptions nearly shipped).
+            other_cls, other_extra = next((c, e) for c, e in CLASSES if c != cls)
+            other = desc_corpus(other_cls, other_extra, lang)
+            time.sleep(1)
+            o_pref_t, o_gen = infer_templates(other, prefs)
+            if pref_t and pref_t == o_pref_t:
+                report.append(f"{cls} {lang}: pref template {pref_t!r} is class-ambiguous — dropped")
+                pref_t = None
+            if gen and gen == o_gen:
+                report.append(f"{cls} {lang}: generic {gen!r} is class-ambiguous — dropped")
+                gen = None
+            if not (pref_t or gen):
+                report.append(f"{cls} {lang}: {counts[lang]} targets, no class-specific template — skipped")
                 continue
             targets = targets_with_pref(cls, extra, lang)
             time.sleep(1)
