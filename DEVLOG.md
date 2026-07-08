@@ -5979,3 +5979,16 @@ CLASSES now carries a per-class mandatory suffix; Q5393308 gets "Temple". Regene
 599 lines (temple collisions rose 67→96 — suffixed labels colliding with existing
 "X Temple" pairs are correctly withheld). Nothing wrong ever reached Wikidata (no QS
 submission since 2026-07-02). Rule recorded in the generator docstring + memory.
+
+## 2026-07-08 — Commons-derived labels ENDED entirely (Emma)
+
+Emma: taking labels from Wikimedia Commons categories is "theoretically good, but in
+practise it's not" — Commons names need aggressive normalization into the house system
+(hyphenated suffixes + class word, per temple_english.py / kana_english.py) and the
+generator wasn't achieving that; the whole thing was adding complications and stress.
+KILLED before anything ever reached Wikidata (no edit run existed in the file's lifetime;
+today's edit-day was already stamped): generator + commons_en_labels.txt deleted,
+ATOMIC_FILES entry removed, generate-quickstatements.yml step removed (that unwiring
+landed in 7876db8e; this commit deletes the files themselves). The kana-based label
+pipelines (which produce house-shape names natively) are unaffected and remain the label
+sources. The other-religions sizing report stays in docs/ (expires per reports rule).
