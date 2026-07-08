@@ -318,8 +318,5 @@ The value you need to assign to the parameter, <code>map</code>, is the area nam
 [[Category:Templates with coordinates fields]]
 [[Category:Templates that add a tracking category|{{PAGENAME}}]]
 [[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
-{{wikidata link||en|Infobox forest/doc|check_date=2026-05-29}}
 </noinclude>
