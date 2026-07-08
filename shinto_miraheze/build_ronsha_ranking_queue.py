@@ -38,7 +38,7 @@ TASK = (
     "each candidate (jawiki, Kokugakuin database, location vs the Engishiki "
     "province/district, name continuity) and decide which single candidate is the "
     "LIKELIEST true shrine. Fill ANSWER with exactly one of:\n"
-    "  LIKELY: <QID of the likeliest candidate>   (the rest get ranked 0)\n"
+    "  LIKELY: <QID of the likeliest candidate>   (only it gets ranked 1; P1352=0 is reserved for legitimate shrines absent from the Kokugakuin database)\n"
     "  UNDECIDABLE: <why no candidate can be preferred>\n"
     "When ANSWER is filled this file is done. -->"
 )

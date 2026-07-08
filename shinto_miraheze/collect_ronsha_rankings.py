@@ -77,8 +77,12 @@ def main():
                 malformed += 1
                 print(f"MALFORMED (LIKELY not among candidates) in {fn}: {payload!r}")
                 continue
-            for c in cands:
-                qs.append(f"{ronsha}|P460|{c}|P1352|{1 if c == pick.group(0) else 0}")
+            # Emma 2026-07-08: P1352=0 means "legitimate shrine present on
+            # Wikipedia but NOT in the Kokugakuin database" — NOT "disproven".
+            # Only the chosen candidate gets a rank; the others keep their
+            # existing/absent ranks (zeroing them would fabricate a claim
+            # about Kokugakuin coverage).
+            qs.append(f"{ronsha}|P460|{pick.group(0)}|P1352|1")
             resolved += 1
             if not args.dry_run:
                 with open(RESOLVED, "a", encoding="utf-8") as f:

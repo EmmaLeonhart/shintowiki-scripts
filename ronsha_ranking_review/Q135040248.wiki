@@ -1,7 +1,7 @@
 <!-- RONSHA: https://www.wikidata.org/wiki/Q135040248 | Hosorokino Shrine |  -->
 <!-- ANSWER: -->
 <!-- TASK: this Shikinai Ronsha (disputed Engishiki shrine identity) has candidate real-world shrines under P460 with NO likelihood ranking. Research each candidate (jawiki, Kokugakuin database, location vs the Engishiki province/district, name continuity) and decide which single candidate is the LIKELIEST true shrine. Fill ANSWER with exactly one of:
-  LIKELY: <QID of the likeliest candidate>   (the rest get ranked 0)
+  LIKELY: <QID of the likeliest candidate>   (only it gets ranked 1; P1352=0 is reserved for legitimate shrines absent from the Kokugakuin database)
   UNDECIDABLE: <why no candidate can be preferred>
 When ANSWER is filled this file is done. -->
 
