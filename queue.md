@@ -59,6 +59,28 @@ conditional triggers, paper sources); the not-for-today conditionals are written
   unique ja → zh(Mandarin) from ja → zh variants from Mandarin → ko from EN → rest from EN.
   Slow by design; each stage a separate, significantly-separated operation.
 
+## From [[Open questions]] wiki-queue 2026-07-08
+
+- [ ] **Deity-name description test (English).** First line of defense against duplicate
+  descriptions: work P825 (dedicated to) deity names into the description so the property is
+  load-bearing ("Shinto shrine dedicated to Hachiman in …"). Emma unsure it helps (same-named
+  shrines often share the deity) — TEST it on English collision data and measure how many
+  collision groups it fully disambiguates; if it works it's a cheap alternative to the cloud
+  pipeline for those groups. Corollary: the deity must have a label in the language before this
+  form is used there.
+- [ ] **Kokugakuin ranking anomalies — agentic review.** Comprehensive pass over the anomalies
+  our catchers flag in Kokugakuin university shrine rankings; agentic RAG/reasoning per anomaly →
+  either normalize the content or declare it intentionally-that-way.
+- [ ] **Triage the Wikidata manual-cleanup pages** (from the page's March/June section):
+  [[d:Wikidata:WikiProject Shinto/ronsha deduplication (all unranked)]],
+  [[d:Wikidata:WikiProject Shinto/shikinaisha without id]],
+  [[d:Wikidata:WikiProject_Shinto/unsourced_rankings]] — Emma calls the first two the most
+  important shikinaisha cleanup right now. Determine per listed issue which our pipelines will
+  auto-resolve and which will not (these are Wikidata pages — assess accordingly), report back.
+- [ ] **jawiki infobox comprehensive review** for Buddhist temples + Shinto shrines + KOFUN:
+  what else is importable to Wikidata (existing properties or creative repurposing, like the
+  reisai P837 import) that's underrepresented.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
