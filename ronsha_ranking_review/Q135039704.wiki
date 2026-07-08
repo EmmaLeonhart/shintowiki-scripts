@@ -1,0 +1,11 @@
+<!-- RONSHA: https://www.wikidata.org/wiki/Q135039704 | Sakuno Shrine |  -->
+<!-- ANSWER: -->
+<!-- TASK: this Shikinai Ronsha (disputed Engishiki shrine identity) has candidate real-world shrines under P460 with NO likelihood ranking. Research each candidate (jawiki, Kokugakuin database, location vs the Engishiki province/district, name continuity) and decide which single candidate is the LIKELIEST true shrine. Fill ANSWER with exactly one of:
+  LIKELY: <QID of the likeliest candidate>   (the rest get ranked 0)
+  UNDECIDABLE: <why no candidate can be preferred>
+When ANSWER is filled this file is done. -->
+
+== Candidates (P460, all unranked) ==
+* [[d:Q135069498]] Saku Shrine — Yamanashi Prefecture — Candidate shrine for Sakuno shrine
+* [[d:Q135069499]] Saku Shrine (Kai Province) — Yamanashi Prefecture — Candidate shrine for Sakuno shrine
+* [[d:Q135270286]] Sakuno Shrine — Yamanashi Prefecture — The 1119th Shrine of the Engishiki Jinmyōchō (Ronsha)

@@ -1,0 +1,11 @@
+<!-- RONSHA: https://www.wikidata.org/wiki/Q135039798 | Kahakareno Shrine |  -->
+<!-- ANSWER: -->
+<!-- TASK: this Shikinai Ronsha (disputed Engishiki shrine identity) has candidate real-world shrines under P460 with NO likelihood ranking. Research each candidate (jawiki, Kokugakuin database, location vs the Engishiki province/district, name continuity) and decide which single candidate is the LIKELIEST true shrine. Fill ANSWER with exactly one of:
+  LIKELY: <QID of the likeliest candidate>   (the rest get ranked 0)
+  UNDECIDABLE: <why no candidate can be preferred>
+When ANSWER is filled this file is done. -->
+
+== Candidates (P460, all unranked) ==
+* [[d:Q11554359]] Aburahi Shrine — Shiga Prefecture — Shinto shrine in Shiga Prefecture, Japan
+* [[d:Q135270298]] Kahakareno Shrine — Shiga Prefecture — The 1250th Shrine of the Engishiki Jinmyōchō (Ronsha)
+* [[d:Q72183108]] Yasaka Shrine — Shiga Prefecture — Shinto shrine in Kōka district, Japan

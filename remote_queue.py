@@ -175,6 +175,20 @@ CATEGORY_TRANSLATION_INSTRUCTION = (
     "line `<!-- SKIP: <short reason> -->` so a human can look — never invent a name."
 )
 
+RONSHA_RANKING_INSTRUCTION = (
+    "This file is a WORK ITEM ranking the candidates of a Shikinai Ronsha (a "
+    "disputed Engishiki shrine identity) on Wikidata. The `<!-- RONSHA: ... -->` "
+    "marker names the item; the `== Candidates ==` list holds its P460 "
+    "said-to-be-the-same-as candidates, currently all unranked. RESEARCH each "
+    "candidate (jawiki article, Kokugakuin database, location vs the Engishiki "
+    "province/district, name continuity) and decide which single candidate is "
+    "the LIKELIEST true shrine. Fill the `<!-- ANSWER: -->` marker with exactly "
+    "one of `LIKELY: <candidate QID>` or `UNDECIDABLE: <why>` as the TASK "
+    "comment describes. Do NOT edit Wikidata yourself - a collector turns "
+    "answers into P1352 qualifier QuickStatements later (1 = likely, 0 = the "
+    "rest). When ANSWER is filled you are done with the file."
+)
+
 LABEL_TYPO_REVIEW_INSTRUCTION = (
     "This file is a WORK ITEM reviewing a suspected Wikidata romaji typo. The "
     "shrine's English label letters diverge from its romanized kana reading "
@@ -540,6 +554,7 @@ def build_queue() -> list[dict]:
     # build_label_typo_review_queue.py + docs/kana_label_mismatch_audit_2026-07.md);
     # the worker researches which side is wrong and fills the ANSWER marker.
     items.extend(_build_section("label_typo_review", LABEL_TYPO_REVIEW_INSTRUCTION))
+    items.extend(_build_section("ronsha_ranking_review", RONSHA_RANKING_INSTRUCTION))
     # Shuffle so the consumer picks pages in random order. With no cursor-based
     # statefulness (work is gated purely on file-presence + category), random
     # order keeps the consumer from repeatedly hitting the same early pages —

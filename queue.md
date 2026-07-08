@@ -49,9 +49,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 - [ ] **Kokugakuin ranking anomalies — agentic review.** Comprehensive pass over the anomalies
   our catchers flag in Kokugakuin university shrine rankings; agentic RAG/reasoning per anomaly →
   either normalize the content or declare it intentionally-that-way.
-- [ ] **Ronsha P1352 ranking judgments → cloud RAG** (from WD-cleanup triage 2026-07-08): the 35
-  all-unranked ronsha dedup candidates need per-candidate likelihood rankings (P1352 qualifiers on
-  P460) — judgment work, not automatable; route via the label_typo_review work-file pattern.
 - [ ] **Kokugakuin P13677 matcher** (from WD-cleanup triage): 94 Shikinaisha lack the Museum entry
   ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
   also unblocks the engishiki-reference generator for the ID-less unsourced rankings.

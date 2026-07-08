@@ -1,0 +1,11 @@
+<!-- RONSHA: https://www.wikidata.org/wiki/Q135040693 | Amano Shrine |  -->
+<!-- ANSWER: -->
+<!-- TASK: this Shikinai Ronsha (disputed Engishiki shrine identity) has candidate real-world shrines under P460 with NO likelihood ranking. Research each candidate (jawiki, Kokugakuin database, location vs the Engishiki province/district, name continuity) and decide which single candidate is the LIKELIEST true shrine. Fill ANSWER with exactly one of:
+  LIKELY: <QID of the likeliest candidate>   (the rest get ranked 0)
+  UNDECIDABLE: <why no candidate can be preferred>
+When ANSWER is filled this file is done. -->
+
+== Candidates (P460, all unranked) ==
+* [[d:Q135070072]] Umigami Shrine — Successor shrine to Amano shrine
+* [[d:Q135270269]] Amano Shrine — Hyōgo Prefecture — The 2154th Shrine of the Engishiki Jinmyōchō (Ronsha)
+* [[d:Q21655263]] Kinumaki Shrine — Hyōgo Prefecture — Shinto shrine in Hyōgo Prefecture, Japan

@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — Ronsha ranking judgments routed to cloud RAG (35 work-files); jawiki quick-wins closed
+
+Emma's "most important shikinaisha cleanup": the 35 all-unranked ronsha dedup candidates now flow
+through the standard cloud loop — `build_ronsha_ranking_queue.py` (one work-file per ronsha with
+candidate context; ANSWER = `LIKELY: <QID>` or `UNDECIDABLE:`), registered in `remote_queue.py`
+(queue rebuilt: 1,625 items), collector `collect_ronsha_rankings.py` (5 tests) emits the binary
+P1352 convention (1=likely, 0=rest) into `ronsha_ranking_qualifiers.txt` (ATOMIC). Also closed
+the two jawiki quick-win builds as low/zero yield (P3225: 2 lines from 8,834 articles; 社格-as-ref:
+all ~106 unsourced modern-rank items lack jawiki sitelinks — shinto-wiki-as-source is Emma's
+modeling call), and the deity-name description test (4% now / 14% ceiling — Emma's doubt correct).
+
 ## 2026-07-08 — description adds LANDED (1,798 class-true lines); jawiki infobox review done
 
 Final adds generation with all three guards (pref-beats-generic, uniqueness, class-true): 1,798
