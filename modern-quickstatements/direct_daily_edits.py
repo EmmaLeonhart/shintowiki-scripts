@@ -100,6 +100,7 @@ ATOMIC_FILES = [
     "ronsha_ranking_qualifiers.txt",         # P1352 likelihood qualifiers (1=likely, 0=rest) on ronsha P460 candidates, from cloud-RAG answers (collector: shinto_miraheze/collect_ronsha_rankings.py)
     "saijin_p825.txt",                       # Enshrined deities (祭神) from the jawiki shrine infobox as P825, wikilinked-only precision path (generate_saijin_quickstatements.py); jawiki-cited
     "honzon_p825.txt",                       # Principal images (本尊) from the jawiki temple infobox as P825, wikilinked-only precision path (generate_honzon_quickstatements.py); jawiki-cited
+    "souken_p571.txt",                       # Founding dates (創建/創建年) from jawiki infoboxes as P571 year-precision; conservative single-clean-year parser (generate_souken_quickstatements.py); jawiki-cited
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to

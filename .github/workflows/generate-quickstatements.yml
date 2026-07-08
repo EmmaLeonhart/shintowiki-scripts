@@ -100,6 +100,11 @@ jobs:
         continue-on-error: true
         run: python generate_honzon_quickstatements.py
 
+      - name: Souken (創建) P571 founding dates from jawiki (regenerate each run)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_souken_quickstatements.py
+
       - name: Bunrei qualifier repair (bare P612 -> +P1013 Bunrei, self-healing)
         working-directory: modern-quickstatements
         continue-on-error: true
