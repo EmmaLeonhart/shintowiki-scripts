@@ -50,9 +50,13 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   (`docs/kokugakuin_anomaly_review_scope_2026-07.md`, scoped 2026-07-08): 7 sequence anomalies
   (RENUMBER→browser batch / INTENTIONAL→log) + ~85 multiple-P13677 rows (P958 answers→drip-safe
   qualifier-adds); clone the ronsha_ranking_review pattern.
-- [ ] **Kokugakuin P13677 matcher** (from WD-cleanup triage): 94 Shikinaisha lack the Museum entry
-  ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
-  also unblocks the engishiki-reference generator for the ID-less unsourced rankings.
+- [ ] **Kokugakuin P13677 matcher — FEASIBLE, mechanics probed 2026-07-08**: the database's
+  detail pages carry the entry's shrine name in the static <title> ("［ID:181165］ 麻績神社"), so
+  an id→name index is harvestable. Known P13677 ids: 5,197 entries sparsely spread over
+  29,949..183,385 — do NOT enumerate the whole range; harvest titles for ids NEAR the known
+  engishiki blocks (or via the site's search), then match the 94 no-ID shikinaisha by name (+
+  province from the parent ronsha), RAG for ambiguous. Polite throttle (~1s); unblocks the
+  engishiki-reference generator for the ID-less unsourced rankings.
 - [ ] **jawiki infobox imports — Emma's modeling calls only** (all mechanical builds SHIPPED
   2026-07-08: saijin 2,362 / honzon 760 / souken 4,118 / kofun 1,036 / P3225 2; 社格-ref
   structurally empty). Waiting on Emma: 伝-dates via P1480 "presumably" (8,837 skipped fields),
