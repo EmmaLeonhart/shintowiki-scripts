@@ -63,12 +63,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, shinto-wiki-as-source for the ~106 unsourced
   modern ranks.
 
-- [ ] **Double-category-qid dab stragglers**: all 8 remaining dab pages have a single LIVE
-  target (verified 2026-07-08, listed on [[Open questions]]) yet the resolver hasn't collapsed
-  them — if they survive the next cleanup fire, fix `resolve_double_category_qids.py`'s dab
-  revisit (4 pages use a collapsed `# #` one-line format it may not parse). Do NOT hand-edit
-  the pages (standing rule).
-
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).

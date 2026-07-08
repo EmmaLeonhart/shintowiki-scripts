@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — dab-straggler root cause fixed: skip branches poisoned the resolver's state
+
+Emma asked to SEE the "human review" items behind backlog #4 — pulling them showed all 8 dab
+pages have a single LIVE target (every competing casing variant already deleted), i.e. no
+decision exists. Root cause of the strand: `resolve_double_category_qids.py`'s skip branches
+(fewer-than-2-links, too-many-links, no-existing-target) added pages to the state file, making
+them permanently invisible even after their situation changed; the collapsed `# #` single-link
+worksheet format hit the <2-links skip. Fix: skip branches no longer record state (only real
+resolutions do), single-link worksheets flow into the single-existing-target redirect branch, the
+8 titles purged from state (86→74). Live dry-run verified: all 8 now resolve to their correct
+redirects; the multi-target drain flow untouched. Lands with the next cleanup fire. Also: #6
+(multiple-wikidata-links) verified drained to 0 members — backlog #4 and #6's "human review"
+residuals are now both actually zero.
+
 ## 2026-07-08 — END-OF-SESSION STATUS REPORT (the 2026-07-07→08 marathon)
 
 The session Emma opened as a "contained warm-up with a 13:00 hard stop" ran ~15 hours on her

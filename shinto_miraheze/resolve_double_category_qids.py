@@ -364,18 +364,23 @@ def main():
             continue
 
         links = LINK_RE.findall(text)
-        if len(links) < 2:
-            print(f"{prefix} SKIP (fewer than 2 links found)")
-            visited_state.add(title)
+        if not links:
+            # nothing to work with — but do NOT state-mark: skip branches
+            # that recorded state made pages permanently invisible even
+            # after their situation changed (the 2026-07-08 8-page strand).
+            print(f"{prefix} SKIP (no links found)")
             skipped += 1
             continue
+        # NOTE: single-link pages are legitimate — the collapsed
+        # "# # [[:Category:X]]" worksheet format (other claimant already
+        # deleted) yields exactly one link and resolves via the
+        # single-existing-target branch below.
         if len(links) > MAX_LINKS_PER_PAGE:
             # Defensive cap. Real dab pages have a handful of links.
             # Anything with hundreds is contamination (an audit report
             # tagged into the cat by mistake) and would eat hours of
             # API time per resolve_final_target call.
             print(f"{prefix} SKIP (too many links: {len(links)}; not a real dab page)")
-            visited_state.add(title)
             skipped += 1
             continue
 
@@ -417,8 +422,7 @@ def main():
             continue
 
         if not existing_targets:
-            print(f"{prefix} SKIP (no listed target exists)")
-            visited_state.add(title)
+            print(f"{prefix} SKIP (no listed target exists — leaving for a later cycle)")
             skipped += 1
             continue
 
