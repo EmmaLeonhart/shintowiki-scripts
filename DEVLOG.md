@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — souken P571 SHIPPED: 4,118 cited founding dates
+
+Conservative single-clean-year parser over both infoboxes: shrines 1,280 + temples 2,838 =
+**4,118 new year-precision P571 statements** (8,837 ambiguous fields skipped by design — 伝
+legendary, 不詳, ranges, era-spans, multi-building; 1,987 items already dated). With this the
+mechanically-safe jawiki import program for shrines/temples is COMPLETE: reisai 3,239 + addresses
++ saijin 2,362 + honzon 760 + souken 4,118 + P3225, all cited to their exact articles. Remaining
+jawiki work: kofun fields (new class) + Emma's modeling calls (伝-dates with P1480, 神体, 山号,
+寺格, 被葬者, 鎮守神, shinto-wiki-as-source).
+
 ## 2026-07-08 — honzon P825 SHIPPED: 760 cited principal-image statements
 
 Temple sibling of the saijin import, same wikilinked-only precision path on {{日本の寺院}} 本尊:
