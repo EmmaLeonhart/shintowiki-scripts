@@ -98,6 +98,7 @@ ATOMIC_FILES = [
     "description_adds.txt",                   # Description MAKER (Emma 2026-07-07): standardized descriptions for items that already have a label in the language but no description; simple adds, uncapped; regenerated in CI by generate_description_adds.py
     "p3225_corporate_numbers.txt",           # Japan Corporate Numbers from the jawiki temple infobox (generate_p3225_quickstatements.py; field ~1%-filled, essentially exhausted at 2 lines 2026-07-08)
     "ronsha_ranking_qualifiers.txt",         # P1352 likelihood qualifiers (1=likely, 0=rest) on ronsha P460 candidates, from cloud-RAG answers (collector: shinto_miraheze/collect_ronsha_rankings.py)
+    "saijin_p825.txt",                       # Enshrined deities (祭神) from the jawiki shrine infobox as P825, wikilinked-only precision path (generate_saijin_quickstatements.py); jawiki-cited
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to
