@@ -96,6 +96,7 @@ ATOMIC_FILES = [
     "label_typo_fixes.txt",                   # Corrected EN labels from the label_typo_review cloud-RAG answers (collector: shinto_miraheze/collect_label_typo_answers.py)
     "description_label_pairs.txt",            # Description-without-label cleanup (Emma 2026-07-07): compound desc-then-label pair units (sub-lines joined by ||, executed in order); capped ~100/day below; regenerated in CI by generate_description_fixes.py
     "description_adds.txt",                   # Description MAKER (Emma 2026-07-07): standardized descriptions for items that already have a label in the language but no description; simple adds, uncapped; regenerated in CI by generate_description_adds.py
+    "p3225_corporate_numbers.txt",           # Japan Corporate Numbers from the jawiki temple infobox (generate_p3225_quickstatements.py; field ~1%-filled, essentially exhausted at 2 lines 2026-07-08)
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to

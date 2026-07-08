@@ -54,10 +54,10 @@ Every candidate below can reuse that exact shape.
 
 ## Build outcomes (2026-07-08, same night)
 
-* **P3225 corporate numbers — built** (`generate_p3225_quickstatements.py`), but the
-  法人番号 field is almost never filled on jawiki (~1% of temple articles in
-  sampling); full-walk yield recorded in the output file. Kept as a standing
-  tool; low volume is the field's reality, not a bug.
+* **P3225 corporate numbers — built and EXHAUSTED:** full walk of 8,834 temple
+  articles yields 2 new lines (8,542 empty fields; 270 numbers already on
+  Wikidata — the corporate registry was bot-imported there directly, so jawiki
+  adds almost nothing). The 2 lines are registered and drip; the tool stands.
 * **社格-as-reference — built (`generate_shakaku_references.py`) and structurally
   EMPTY:** all ~106 unsourced modern-rank statements sit on items with ZERO
   jawiki sitelinks (shinto-wiki-native items), so jawiki can never source them.
