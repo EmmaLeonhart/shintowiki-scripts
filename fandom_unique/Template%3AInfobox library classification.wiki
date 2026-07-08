@@ -1,0 +1,30 @@
+<includeonly>{{Infobox
+| bodyclass = vevent
+| bodystyle = width:{{{width|auto}}};padding-top:0;
+| aboveclass = summary
+| abovestyle = font-size:120%;padding-top:0;padding-bottom:0.4em;border-bottom:1px solid #aaa;
+| above = [[Library catalog]]ing<br/>and [[Library classification|classification]]
+
+| image     = {{#invoke:InfoboxImage|InfoboxImage|image={{{logo|}}}|size={{{imagesize|}}}|alt={{{alt|}}}}} 
+| caption = {{{caption|}}} 
+
+| labelstyle = vertical-align:bottom;padding-left:0.5em;text-align:right;white-space:nowrap;padding-right:0.75em;
+| datastyle = font-size:110%;padding-right:0.45em;
+| label1 = main topic
+| data1 = {{#invoke:Wikidata|getValue|P301|FETCH_WIKIDATA}}
+| label2= [[Bliss classification|Bliss]]
+| data2 = {{{BC|}}}
+| label3= [[Colon classification|Colon]]
+| data3 = {{#invoke:WikidataIB|getValue|P8248|qid={{#invoke:WikidataIB|getQid}}|osd=no|fwd=ALL|{{{CC|}}}}}
+| label4 = [[Dewey Decimal Classification|Dewey Decimal]]
+| data4 = {{#invoke:WikidataIB|getValue|P1036|qid={{#invoke:WikidataIB|getQid}}|osd=no|fwd=ALL|{{{DDC|}}}}}
+| label5 = [[Library of Congress Classification|Library of Congress]]
+| data5 = {{#invoke:WikidataIB|getValue|P1149|qid={{#invoke:WikidataIB|getQid}}|osd=no|fwd=ALL|{{{LCC|}}}}}
+| label6 = [[Universal Decimal Classification|Universal Decimal]]
+| data6 = {{#invoke:WikidataIB|getValue|P1190|qid={{#invoke:WikidataIB|getQid}}|osd=no|fwd=ALL|{{{UDC|}}}}}
+}}</includeonly><noinclude>{{Documentation}}[[Category:Templates with Documentation template]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>
