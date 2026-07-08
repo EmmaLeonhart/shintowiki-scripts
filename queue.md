@@ -52,7 +52,10 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   shrine; deciding which entry is right needs the Kokugakuin page itself, per item). No mechanical
   rule exists. Sequence-gap anomalies: same — history + Kokugakuin-page ordering per item (the
   Q135040778 investigation is the worked example: triplicate import, rank-2 merged into an empty
-  husk Q135193070). Nothing here is batch-fixable; leave for Emma-led sessions.
+  husk Q135193070). Nothing here is batch-fixable — but the investigation is now TOOLED:
+  browse-render the Kokugakuin entry page and read its 現社名など（１..N） ordering, which per
+  Emma IS the ranking ground truth (method + Q135040778 worked example in
+  `docs/kokugakuin_anomaly_review_scope_2026-07.md`). Emma-led, tool-assisted.
 - [ ] **Kokugakuin P13677 matcher — FEASIBLE, mechanics probed 2026-07-08**: the database's
   detail pages carry the entry's shrine name in the static <title> ("［ID:181165］ 麻績神社"), so
   an id→name index is harvestable. Known P13677 ids: 5,197 entries sparsely spread over
@@ -68,10 +71,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] wiki-queue 2026-07-08 (afternoon)
 
-- [ ] **Commons-category English labels** (Emma; cf. Q115566088): shrines/temples with a
-  Wikimedia Commons category (P373/sitelink) but no English label — derive a standardized
-  English label from the Commons category name. Size it, build the generator (non-destructive,
-  uniqueness-checked like everything now).
 - [ ] **Speculative report: extend Commons-label derivation to other religious buildings** —
   Mosques, Churches, Hindu Temples, non-Japanese Buddhist Temples, Synagogues, Gurdwaras.
   Report only, keep speculative; no edits.

@@ -5903,3 +5903,18 @@ Early content workflow: ChatGPT translation of Japanese Wikipedia pages, with `{
 Repository initially created for Wikidata edits. First major project: documenting Beppu shrines and Association of Shrines special-designation shrines.
 
 
+
+## 2026-07-08 — Commons-category English labels SHIPPED (dequeue backfill)
+
+`modern-quickstatements/generate_commons_labels.py`: shrines/temples with a Commons
+sitelink/P373 but no English label get a standardized `Len` derived from the Commons
+category name (Category: prefix, trailing parenthetical, and comma-tail disambiguators
+stripped; Latin-letters plausibility guard). House rules applied: internal + external
+(label, en-desc) uniqueness — colliders withheld for the description-enrichment pipeline.
+323 lines → `commons_en_labels.txt`; registered in ATOMIC_FILES; CI-wired in
+generate-quickstatements.yml. Queue item deleted (was shipped 2026-07-08 pre-compaction,
+never dequeued).
+
+Also this tick: recorded the proven Kokugakuin investigation method (browse-render the
+entry page; 現社名など ordering = ranking ground truth) in the anomaly scope doc + queue —
+converts the parked sequence anomalies from manual-only to tool-assisted per-item work.
