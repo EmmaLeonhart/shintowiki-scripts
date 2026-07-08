@@ -5968,3 +5968,14 @@ Separately: Emma fixed Q135040778 (browser QS). Final live structure: Q135270430
 Q140465982 (resurrected from empty husk) rank 2, Q135195732 rank 3, Q135195733 rank 4,
 Q135070093/Q135070094 rank 0 with the 出雲国の式内社一覧 jawiki list as P4656 qualifier.
 The sequence-gap anomaly for this parent is resolved.
+
+## 2026-07-08 — Commons labels: extension stays (Emma's call), CRITICAL temple-suffix rule applied
+
+Emma's rulings in sequence: (1) the revert was unnecessary — the extension is wired in and
+stays ("leave the file alone... we'll leave it in anyways"); restored a461fb56 state.
+(2) CRITICAL system rule: a Buddhist temple's English label MUST end in " Temple" —
+bare "Engaku-ji" is not a proper temple name ("Eishō-ji Temple" is the established shape).
+CLASSES now carries a per-class mandatory suffix; Q5393308 gets "Temple". Regenerated:
+599 lines (temple collisions rose 67→96 — suffixed labels colliding with existing
+"X Temple" pairs are correctly withheld). Nothing wrong ever reached Wikidata (no QS
+submission since 2026-07-02). Rule recorded in the generator docstring + memory.

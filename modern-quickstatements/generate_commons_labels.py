@@ -4,7 +4,12 @@ generate_commons_labels.py
 ===========================
 Derive standardized ENGLISH labels for shrines/temples that have a Wikimedia
 Commons category but no English label (Emma 2026-07-08; example Q115566088:
-commons sitelink "Category:Engaku-ji (Hashima)" → label "Engaku-ji").
+commons sitelink "Category:Engaku-ji (Hashima)" → label "Engaku-ji Temple").
+
+CRITICAL naming rule (Emma 2026-07-08): a Buddhist temple's English label MUST
+end in " Temple" — a bare "Engaku-ji" is not a proper temple name in this
+system ("Eishō-ji Temple" is the established shape, cf. shinto-label-generator).
+The suffix is appended per-class via CLASSES.
 
 Sources, in priority order: the commonswiki SITELINK title, else P373. The
 label is the category name minus the "Category:" prefix and any trailing
@@ -34,7 +39,17 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WDQS = "https://query-main.wikidata.org/sparql"
 UA = "shintowiki-commonslabels/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
 OUTPUT = os.path.join(HERE, "commons_en_labels.txt")
-CLASSES = [("Q845945", ""), ("Q5393308", "?item wdt:P17 wd:Q17 .")]
+# (class, extra SPARQL clause, mandatory label suffix or None)
+CLASSES = [
+    ("Q845945", "", None),                            # Shinto shrine
+    ("Q5393308", "?item wdt:P17 wd:Q17 .", "Temple"),  # Buddhist temple in Japan
+    # Extension 2026-07-08 (docs/commons_labels_other_religions_report_2026-07.md;
+    # Emma: leaving it in). Churches (Q16970, 18k) stay OUT: their Commons names
+    # are native-language text, not transliteration — that's the one real policy call.
+    ("Q32815", "", None),                             # mosque
+    ("Q34627", "", None),                             # synagogue
+    ("Q842402", "", None),                            # Hindu temple
+]
 
 _PAREN = re.compile(r"\s*\([^)]*\)\s*$")
 _LATIN = re.compile(r"[A-Za-z]")
@@ -105,13 +120,17 @@ def derive(name):
         return None
     if len(name) > 80 or name.lower().startswith(("images of", "photographs of")):
         return None
+    # grouping categories ("Synagogues in Nowy Sącz") and bare street
+    # addresses ("Baumkirchnerring 4") are commons-side organization, not names
+    if re.search(r"\b[a-z]+s (in|of|at) ", name, re.I) or re.search(r"\s\d+$", name):
+        return None
     return name
 
 
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     lines = []
-    for cls, extra in CLASSES:
+    for cls, extra, suffix in CLASSES:
         t = targets(cls, extra)
         time.sleep(1)
         taken = existing_pairs(cls, extra)
@@ -120,6 +139,8 @@ def main():
         implausible = 0
         for qid, (name, desc) in t.items():
             label = derive(name)
+            if label and suffix and not label.lower().endswith(" " + suffix.lower()):
+                label = f"{label} {suffix}"
             if label:
                 proposals[qid] = (label, desc)
             else:
