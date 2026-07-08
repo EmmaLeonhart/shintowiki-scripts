@@ -77,9 +77,10 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] **Kokugakuin P13677 matcher** (from WD-cleanup triage): 94 Shikinaisha lack the Museum entry
   ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
   also unblocks the engishiki-reference generator for the ID-less unsourced rankings.
-- [ ] **jawiki infobox comprehensive review** for Buddhist temples + Shinto shrines + KOFUN:
-  what else is importable to Wikidata (existing properties or creative repurposing, like the
-  reisai P837 import) that's underrepresented.
+- [ ] **jawiki infobox imports — build from the review** (`docs/jawiki_infobox_import_review_2026-07.md`,
+  review DONE 2026-07-08): recommended order = P3225 corporate numbers (temples, trivial) →
+  社格-as-reference for the ~92 unsourced modern ranks → P825 deities/本尊 → P571 founding dates →
+  kofun P1419 shapes + periods. Modeling-call fields (神体/山号/寺格/被葬者/鎮守神) wait on Emma.
 
 ## Pinned tail (keep last, always)
 
