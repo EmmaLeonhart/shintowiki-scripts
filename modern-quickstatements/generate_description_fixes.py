@@ -153,8 +153,14 @@ def infer_templates(items, prefs):
             pref_forms[desc.replace(hit, "{pref}")] += 1
         else:
             generic[desc] += 1
-    pref_t = next((t for t, n in pref_forms.most_common(1) if n >= PREF_SUPPORT), None)
     gen = next((d for d, n in generic.most_common(1) if n >= GENERIC_SUPPORT), None)
+    # The prefecture template must BEAT the generic modal, not just clear an
+    # absolute floor: a handful of polluted legacy descriptions ("kuil Shinto"
+    # stamped on Buddhist temples) collapse into one {pref} form and would
+    # otherwise outrank a clean 23-strong generic (found 2026-07-07).
+    gen_n = generic.most_common(1)[0][1] if gen else 0
+    pref_t = next((t for t, n in pref_forms.most_common(1)
+                   if n >= PREF_SUPPORT and n >= gen_n), None)
     return pref_t, gen
 
 
