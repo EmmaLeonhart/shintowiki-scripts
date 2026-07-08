@@ -4,6 +4,15 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — description enrichment stage 1 LIVE: 236 EN-first work-files in the cloud queue
+
+The cloud half of the description pipeline is running: 236 collision groups (the ja-uncovered
+tranche; 1,030 ja-covered groups correctly deferred to the translation stages) became work-files
+with per-member context (municipality, deities, existing descriptions); remote queue rebuilt to
+**1,861 items** across 8 sections. Collector enforces within-group uniqueness before emitting Den
+lines (3 tests incl. the regression: `\s*` after the answer colon swallowed the next line's QID —
+every fresh file parsed as resolved until caught in the dry run).
+
 ## 2026-07-08 — kofun imports SHIPPED (1,036 lines): the jawiki review is fully built
 
 Last mechanical build from the infobox review: 1,528 kofun articles → **166 shape statements**

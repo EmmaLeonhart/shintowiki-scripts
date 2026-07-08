@@ -1,0 +1,17 @@
+<!-- GROUP: id|Kuil Kawamata | proposed-collides: kuil Shinto di Prefektur Mie, Jepang -->
+<!-- STAGE: EN-first (docs/description_enrichment_pipeline.md) -->
+<!-- ANSWERS:
+Q135186650: 
+Q135186652: 
+Q135186654: 
+Q135186655: 
+Q135186656: 
+-->
+<!-- TASK: every member of this group shares the same label and would get the same standardized description — they need UNIQUE, informative ENGLISH descriptions. Using each member's context below (municipality, deities, and anything you can see on the item), write one short English description per member that (a) says what it is, (b) distinguishes it from every other member, and (c) stays in the normal Wikidata description register (lowercase start, no final period), e.g. 'Shinto shrine in Maebashi, Gunma Prefecture, Japan'. Municipality-level location is usually the cheapest distinguisher; add the deity or a local place-name when members share a municipality. Fill each line of the ANSWERS block after its QID. Leave a line EMPTY if you cannot find anything distinguishing. Do NOT edit Wikidata yourself — a collector turns answers into QuickStatements later. -->
+
+== Members ==
+* [[d:Q135186650]] — en='Kawamata Shrine' | ja='川俣神社' | in Ise Province / Suzuka district | EXISTING en desc: 'Kahamatano Shrine (Ronsha\u202f2)'
+* [[d:Q135186652]] — en='Kawamata Shrine' | ja='川俣神社' | in Ise Province / Suzuka district | EXISTING en desc: 'Kahamatano Shrine (Ronsha\u202f3)'
+* [[d:Q135186654]] — en='Kawamata Shrine' | ja='川俣神社' | in Ise Province / Suzuka district | EXISTING en desc: 'Kahamatano Shrine (Ronsha\u202f4)'
+* [[d:Q135186655]] — en='Kawamata Shrine' | ja='川俣神社' | in Ise Province / Suzuka district | EXISTING en desc: 'Kahamatano Shrine (Ronsha\u202f5)'
+* [[d:Q135186656]] — en='Kawamata Shrine' | ja='川俣神社' | in Ise Province / Suzuka district | EXISTING en desc: 'Kahamatano Shrine (Ronsha\u202f6)'

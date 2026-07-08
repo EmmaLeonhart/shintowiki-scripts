@@ -1,0 +1,9 @@
+<!-- GROUP: id|Kuil Kusaoka | proposed-collides: kuil Shinto di Prefektur Toyama, Jepang -->
+<!-- STAGE: EN-first (docs/description_enrichment_pipeline.md) -->
+<!-- ANSWERS:
+Q135194974: 
+-->
+<!-- TASK: every member of this group shares the same label and would get the same standardized description — they need UNIQUE, informative ENGLISH descriptions. Using each member's context below (municipality, deities, and anything you can see on the item), write one short English description per member that (a) says what it is, (b) distinguishes it from every other member, and (c) stays in the normal Wikidata description register (lowercase start, no final period), e.g. 'Shinto shrine in Maebashi, Gunma Prefecture, Japan'. Municipality-level location is usually the cheapest distinguisher; add the deity or a local place-name when members share a municipality. Fill each line of the ANSWERS block after its QID. Leave a line EMPTY if you cannot find anything distinguishing. Do NOT edit Wikidata yourself — a collector turns answers into QuickStatements later. -->
+
+== Members ==
+* [[d:Q135194974]] — en='Kusaoka\xa0Shrine' | ja='草岡神社' | in Etchū Province / Imizu district | EXISTING en desc: 'Ronsha\xa01 of Kusaoka\xa0Shrine'

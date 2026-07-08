@@ -1,0 +1,11 @@
+<!-- GROUP: id|Kuil Kaizan | proposed-collides: bangunan kuil di Jepang -->
+<!-- STAGE: EN-first (docs/description_enrichment_pipeline.md) -->
+<!-- ANSWERS:
+Q11150615: 
+Q97013988: 
+-->
+<!-- TASK: every member of this group shares the same label and would get the same standardized description — they need UNIQUE, informative ENGLISH descriptions. Using each member's context below (municipality, deities, and anything you can see on the item), write one short English description per member that (a) says what it is, (b) distinguishes it from every other member, and (c) stays in the normal Wikidata description register (lowercase start, no final period), e.g. 'Shinto shrine in Maebashi, Gunma Prefecture, Japan'. Municipality-level location is usually the cheapest distinguisher; add the deity or a local place-name when members share a municipality. Fill each line of the ANSWERS block after its QID. Leave a line EMPTY if you cannot find anything distinguishing. Do NOT edit Wikidata yourself — a collector turns answers into QuickStatements later. -->
+
+== Members ==
+* [[d:Q11150615]] — en='Kaizan Shrine' | ja='海山神社' | in Zhonghe District | EXISTING en desc: 'Former Shinto shrine in Taiwan'
+* [[d:Q97013988]] — en='Kaizan Shrine' | ja='開山神社'

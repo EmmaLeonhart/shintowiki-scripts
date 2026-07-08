@@ -36,7 +36,9 @@ QS_OUT = os.path.join(ROOT, "modern-quickstatements", "description_enrichment_en
 RESOLVED = os.path.join(WORKDIR, "_resolved.log")
 
 BLOCK_RE = re.compile(r"<!--\s*ANSWERS:\s*\n(.*?)-->", re.S)
-LINE_RE = re.compile(r"^(Q\d+):\s*(.*)$", re.M)
+# [ \t]* NOT \s* — \s matches newlines even without DOTALL, which made an
+# empty answer swallow the next line's QID as its "answer" (caught 2026-07-08).
+LINE_RE = re.compile(r"^(Q\d+):[ \t]*(.*)$", re.M)
 
 
 def parse(text):
