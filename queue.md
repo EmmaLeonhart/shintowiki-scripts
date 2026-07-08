@@ -52,11 +52,11 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 - [ ] **Kokugakuin P13677 matcher** (from WD-cleanup triage): 94 Shikinaisha lack the Museum entry
   ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
   also unblocks the engishiki-reference generator for the ID-less unsourced rankings.
-- [ ] **jawiki infobox imports — remaining builds** (`docs/jawiki_infobox_import_review_2026-07.md`;
-  SHIPPED 2026-07-08: saijin 2,362 + honzon 760 + souken P571 4,118; P3225 + 社格-ref closed
-  low/zero-yield): next = kofun P1419 shapes + P571 periods (new class, small vocabularies).
-  Modeling-call fields (伝-dates via P1480 / 神体 / 山号 / 寺格 / 被葬者 / 鎮守神 +
-  shinto-wiki-as-source for rank refs) wait on Emma.
+- [ ] **jawiki infobox imports — Emma's modeling calls only** (all mechanical builds SHIPPED
+  2026-07-08: saijin 2,362 / honzon 760 / souken 4,118 / kofun 1,036 / P3225 2; 社格-ref
+  structurally empty). Waiting on Emma: 伝-dates via P1480 "presumably" (8,837 skipped fields),
+  神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, shinto-wiki-as-source for the ~106 unsourced
+  modern ranks.
 
 ## Pinned tail (keep last, always)
 

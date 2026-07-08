@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — kofun imports SHIPPED (1,036 lines): the jawiki review is fully built
+
+Last mechanical build from the infobox review: 1,528 kofun articles → **166 shape statements**
+(P31 shape-classes — the review's P1419 guess corrected to the live convention; all 10 shape QIDs
+search-verified) + **870 construction periods** (P571 century precision, 3rd–8th-century sanity
+window; 511 ambiguous period fields + 199 multi/no-shape fields skipped). Every mechanically-safe
+item from Emma's jawiki-infobox ask is now shipped: reisai 3,239 / saijin 2,362 / honzon 760 /
+souken 4,118 / kofun 1,036 / P3225 2 — ~11,500 cited statements across two days, all traceable to
+their exact jawiki articles. Remaining jawiki work = Emma's modeling calls only.
+
 ## 2026-07-08 — souken P571 SHIPPED: 4,118 cited founding dates
 
 Conservative single-clean-year parser over both infoboxes: shrines 1,280 + temples 2,838 =
