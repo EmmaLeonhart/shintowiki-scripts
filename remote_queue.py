@@ -175,6 +175,19 @@ CATEGORY_TRANSLATION_INSTRUCTION = (
     "line `<!-- SKIP: <short reason> -->` so a human can look — never invent a name."
 )
 
+DESCRIPTION_ENRICHMENT_INSTRUCTION = (
+    "This file is a WORK ITEM writing UNIQUE English descriptions for a group "
+    "of same-labeled Wikidata shrines whose standardized descriptions would "
+    "collide (label+description pairs must be unique on Wikidata). The "
+    "`== Members ==` list carries each item's context (municipality, deities, "
+    "existing descriptions). Write one short distinguishing English description "
+    "per member into the `<!-- ANSWERS: -->` block after its QID, in the normal "
+    "Wikidata register (lowercase start, no final period); leave a line empty "
+    "if nothing distinguishing exists. Answers must differ from each other "
+    "WITHIN the group. Do NOT edit Wikidata yourself - a collector turns "
+    "answers into QuickStatements later."
+)
+
 RONSHA_RANKING_INSTRUCTION = (
     "This file is a WORK ITEM ranking the candidates of a Shikinai Ronsha (a "
     "disputed Engishiki shrine identity) on Wikidata. The `<!-- RONSHA: ... -->` "
@@ -555,6 +568,7 @@ def build_queue() -> list[dict]:
     # the worker researches which side is wrong and fills the ANSWER marker.
     items.extend(_build_section("label_typo_review", LABEL_TYPO_REVIEW_INSTRUCTION))
     items.extend(_build_section("ronsha_ranking_review", RONSHA_RANKING_INSTRUCTION))
+    items.extend(_build_section("description_enrichment_en", DESCRIPTION_ENRICHMENT_INSTRUCTION))
     # Shuffle so the consumer picks pages in random order. With no cursor-based
     # statefulness (work is gated purely on file-presence + category), random
     # order keeps the consumer from repeatedly hitting the same early pages —
