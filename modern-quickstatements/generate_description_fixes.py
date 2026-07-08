@@ -46,6 +46,7 @@ sys.path.insert(0, os.path.join(REPO, "shinto-label-generator"))
 from language_registry import COVERED  # noqa: E402
 
 OUT = os.path.join(HERE, "description_label_pairs.txt")
+GROUPS = os.path.join(HERE, "description_pair_collision_groups.json")
 PROPOSALS_DIR = os.path.join(REPO, "shinto-label-generator", "quickstatements")
 WDQS = "https://query-main.wikidata.org/sparql"
 UA = "shintowiki-descfix/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
@@ -164,6 +165,20 @@ def infer_templates(items, prefs):
     return pref_t, gen
 
 
+def existing_pairs(cls, extra, lang):
+    """{(label, desc)} already on this class's items in this language — the
+    EXTERNAL side of the uniqueness rule (docs/description_enrichment_pipeline.md).
+    Class-scoped: cross-class collisions are overwhelmingly same-class."""
+    q = f"""
+    SELECT ?l ?d WHERE {{
+      ?item wdt:P31 wd:{cls} . {extra}
+      ?item rdfs:label ?l . FILTER(LANG(?l) = "{lang}")
+      ?item schema:description ?d . FILTER(LANG(?d) = "{lang}")
+    }}
+    """
+    return {(b["l"]["value"], b["d"]["value"]) for b in sparql(q)}
+
+
 def load_label_proposals():
     """(qid, lang) -> proposed label, from every shinto-label-generator output."""
     out = {}
@@ -185,7 +200,7 @@ def main():
     proposals = load_label_proposals()
     print(f"{len(proposals)} label proposals loaded from {PROPOSALS_DIR}")
     covered = set(COVERED)
-    lines, report = [], []
+    lines, report, collisions = [], [], []
     for cls, extra in CLASSES:
         counts = langs_with_targets(cls, extra)
         time.sleep(1)
@@ -198,6 +213,15 @@ def main():
             if not (pref_t or gen):
                 report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
                 continue
+            # Build proposals, then apply the uniqueness rule to the LABEL half
+            # of each pair: the post-edit (label, desc) must be unique both
+            # within our proposals and against existing pairs. Description-only
+            # fixes are always safe (an item without a label forms no pair);
+            # colliding units are emitted desc-only and their label withheld
+            # into the collision groups for the cloud enrichment pipeline.
+            time.sleep(1)
+            taken = existing_pairs(cls, extra, lang)
+            units = []   # (qid, desc_line, label_or_None, new_desc)
             fixed = skipped = 0
             for qid, (desc, has_label, pref) in sorted(items.items()):
                 if has_label:
@@ -207,16 +231,35 @@ def main():
                     skipped += 1
                     continue
                 esc = new.replace('"', '""')
-                unit = f'{qid}|D{lang}|"{esc}"'
-                label = proposals.get((qid, lang))
+                units.append((qid, f'{qid}|D{lang}|"{esc}"',
+                              proposals.get((qid, lang)), new))
+            by_pair = defaultdict(list)
+            for u in units:
+                if u[2]:
+                    by_pair[(u[2], u[3])].append(u[0])
+            withheld = 0
+            for qid, desc_line, label, new in units:
+                unit = desc_line
+                if label:
+                    pair = (label, new)
+                    if len(by_pair[pair]) > 1 or pair in taken:
+                        withheld += 1
+                        collisions.append({"lang": lang, "class": cls, "label": label,
+                                           "proposed": new, "items": by_pair[pair],
+                                           "external": pair in taken})
+                        label = None
                 if label:
                     lesc = label.replace('"', '""')
                     unit += f'||{qid}|L{lang}|"{lesc}"'
                 lines.append(unit)
                 fixed += 1
             report.append(f"{cls} {lang}: targets={counts[lang]} fix-lines={fixed} "
-                          f"already-standard={skipped} pref_template={bool(pref_t)}")
+                          f"already-standard={skipped} label-withheld={withheld} "
+                          f"pref_template={bool(pref_t)}")
     lines = sorted(set(lines))
+    with open(GROUPS, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(collisions, f, ensure_ascii=False, indent=1)
+    print(f"{len(collisions)} withheld-label collision entries -> {GROUPS}")
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
     print(f"{len(lines)} description-fix lines -> {OUT}")
