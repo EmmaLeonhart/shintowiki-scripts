@@ -53,10 +53,10 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
   also unblocks the engishiki-reference generator for the ID-less unsourced rankings.
 - [ ] **jawiki infobox imports — remaining builds** (`docs/jawiki_infobox_import_review_2026-07.md`;
-  P3225 + 社格-ref closed low/zero-yield, P825 shrine deities 2,362 + temple 本尊 760 SHIPPED 2026-07-08):
-  next = P571 founding dates
-  (era parser, all three templates) → kofun P1419 shapes + P571 periods. Modeling-call fields
-  (神体/山号/寺格/被葬者/鎮守神 + shinto-wiki-as-source for rank refs) wait on Emma.
+  SHIPPED 2026-07-08: saijin 2,362 + honzon 760 + souken P571 4,118; P3225 + 社格-ref closed
+  low/zero-yield): next = kofun P1419 shapes + P571 periods (new class, small vocabularies).
+  Modeling-call fields (伝-dates via P1480 / 神体 / 山号 / 寺格 / 被葬者 / 鎮守神 +
+  shinto-wiki-as-source for rank refs) wait on Emma.
 
 ## Pinned tail (keep last, always)
 
