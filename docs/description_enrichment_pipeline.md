@@ -46,6 +46,21 @@ replacing the generic forms. Slow by design, dependent on collisions.
    * Korean ← from English;
    * every other language ← from English.
 
+## Deity-name disambiguation test (2026-07-08) — measured, mostly NOT viable
+
+Emma's hypothesis test: could P825 deity names in descriptions ("Shinto shrine
+dedicated to Hachiman in …") disambiguate collision groups cheaply? English
+measurement: 1,279 (label, prefecture) collision groups / 14,616 shrines.
+Deity sets fully disambiguate **52 groups (4%)** today; the CEILING with full
+P825 coverage is **14%** (73 of the 507 all-deitied groups) — same-named
+shrines overwhelmingly enshrine the same deity, exactly as Emma suspected.
+Verdict: use the deity form opportunistically for the groups it does resolve,
+and as one context signal in the cloud stages, but it cannot replace the
+pipeline. Corollary non-blocking: only 1 colliding item had a deity without an
+English label. Side finding: 6,841 colliding shrines have NO P825 at all —
+independent support for the jawiki 祭神 import
+(`docs/jawiki_infobox_import_review_2026-07.md`).
+
 ## Current implementation state (2026-07-07)
 
 * `ja` and `en` are NOT in the covered-language registry — no generator makes

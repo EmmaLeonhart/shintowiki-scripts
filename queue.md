@@ -46,13 +46,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] wiki-queue 2026-07-08
 
-- [ ] **Deity-name description test (English).** First line of defense against duplicate
-  descriptions: work P825 (dedicated to) deity names into the description so the property is
-  load-bearing ("Shinto shrine dedicated to Hachiman in …"). Emma unsure it helps (same-named
-  shrines often share the deity) — TEST it on English collision data and measure how many
-  collision groups it fully disambiguates; if it works it's a cheap alternative to the cloud
-  pipeline for those groups. Corollary: the deity must have a label in the language before this
-  form is used there.
 - [ ] **Kokugakuin ranking anomalies — agentic review.** Comprehensive pass over the anomalies
   our catchers flag in Kokugakuin university shrine rankings; agentic RAG/reasoning per anomaly →
   either normalize the content or declare it intentionally-that-way.
