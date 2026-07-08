@@ -4,6 +4,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — WD manual-cleanup pages triaged (auto vs not); uniqueness + class-specificity guards
+
+**Triage of Emma's three Wikidata cleanup lists** (wiki-queue item): (1) ronsha dedup all-unranked
+= 35 items — NOT auto-resolvable (P1352 likelihood rankings on P460 are judgment; queued for cloud
+RAG routing); (2) shikinaisha without P13677 = 94 items — not currently automated (queued: a
+Kokugakuin name/province matcher); (3) unsourced P13723 = 167 items — PARTIALLY auto: the
+engishiki-refs generator already drains engishiki/ritsuryō values with P13677 (its file is at 0 =
+in-scope work done); the residual is modern ranks (Son/Ken/Gō-sha ~92) with no jawiki article to
+cite (P4656 generator near-drained at 3 lines), plus engishiki values gated on missing P13677 —
+i.e. list 3's tail is blocked by list 2, then by source availability.
+
+**Description generator guards (evening):** uniqueness rule implemented (internal + external;
+16,395 unique-safe adds vs 3,604 collision groups — id 2,390/fr 1,124, the seed file for the cloud
+enrichment pipeline per `docs/description_enrichment_pipeline.md`); class-specificity guard added
+after the fr corpus modal ("bâtiment de préfecture de X, Japon" — mass-imported junk, modal for
+BOTH classes) nearly shipped 9.6k uninformative descriptions. Emma's staged translation chain +
+deity-name (P825) disambiguation test + Kokugakuin anomaly review + jawiki infobox review all
+metabolised to queue.
+
 ## 2026-07-07 — desc-then-label pair system; edits-today dashboard tile; onkamui + wiki-queue items closed
 
 **Description-without-label cleanup (Emma's "actively breaking things" item).** 10,070

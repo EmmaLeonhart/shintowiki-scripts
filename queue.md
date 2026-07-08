@@ -71,12 +71,12 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] **Kokugakuin ranking anomalies — agentic review.** Comprehensive pass over the anomalies
   our catchers flag in Kokugakuin university shrine rankings; agentic RAG/reasoning per anomaly →
   either normalize the content or declare it intentionally-that-way.
-- [ ] **Triage the Wikidata manual-cleanup pages** (from the page's March/June section):
-  [[d:Wikidata:WikiProject Shinto/ronsha deduplication (all unranked)]],
-  [[d:Wikidata:WikiProject Shinto/shikinaisha without id]],
-  [[d:Wikidata:WikiProject_Shinto/unsourced_rankings]] — Emma calls the first two the most
-  important shikinaisha cleanup right now. Determine per listed issue which our pipelines will
-  auto-resolve and which will not (these are Wikidata pages — assess accordingly), report back.
+- [ ] **Ronsha P1352 ranking judgments → cloud RAG** (from WD-cleanup triage 2026-07-08): the 35
+  all-unranked ronsha dedup candidates need per-candidate likelihood rankings (P1352 qualifiers on
+  P460) — judgment work, not automatable; route via the label_typo_review work-file pattern.
+- [ ] **Kokugakuin P13677 matcher** (from WD-cleanup triage): 94 Shikinaisha lack the Museum entry
+  ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
+  also unblocks the engishiki-reference generator for the ID-less unsourced rankings.
 - [ ] **jawiki infobox comprehensive review** for Buddhist temples + Shinto shrines + KOFUN:
   what else is importable to Wikidata (existing properties or creative repurposing, like the
   reisai P837 import) that's underrepresented.
