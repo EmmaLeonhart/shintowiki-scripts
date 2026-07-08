@@ -25,32 +25,19 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
   `label_typo_fixes.txt` in ATOMIC_FILES) — run it once answers land. Comma cleanup draining (189).
   2026-07-07 late-morning check: 159 pending, no new cloud answers yet.
 
-## 11. Bunrei residual (harvest EXHAUSTED 2026-07-06 — 6 sources, ~10,550 cited edges)
+## 11. Bunrei residual (harvest EXHAUSTED — 7 sources incl. onkamui parser 2026-07-07, ~10,650 cited edges)
 
 Online 総本社 sources are tapped (jinja-kikou 9,971 / animism 128 / toranomaki 40 / ikkojin 129 /
 shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded — officially not bunrei).
 
-- [ ] (low) The one unharvested online source: onkamui Rakuten blog (~50 networks with NAMED branch
-  enumerations, hierarchical prose — would catch branches whose names don't match their network
-  suffix). Heavy parse; do only if the suffix-method coverage proves insufficient.
 - [ ] (low) Paper-only: 神社本庁『全国神社祭祀祭礼総合調査』(1995), 岡田荘司『事典 神社の歴史と祭り』—
   authoritative 系統 counts; needs Emma or a library, not scrapeable.
-
-## Session state (2026-07-07 late morning): contained verification session, hard stop 13:00
-
-Today runs on Emma's five one-shot time-gated crons (11:00/11:30 full pace; 12:00/12:30 wrap-up
-gradient; 13:00 finished) — they replace the usual 3-cron work-loop for today and die with the
-session. Remaining queue items wait on external systems (cloud RAG answers, cloud category drain,
-conditional triggers, paper sources); the not-for-today conditionals are written up on
-[[Open questions]] for Emma.
 
 ## From [[Open questions]] answers 2026-07-07 (wiki-queue items go at the END, per Emma's rule on that page)
 
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
-- [ ] **Retrofit the uniqueness rule into `generate_description_fixes.py`** (the desc-then-label
-  pairs predate the rule; same internal+external check, colliders join the collision groups).
 - [ ] **Description enrichment pipeline — cloud stages** (`docs/description_enrichment_pipeline.md`,
   Emma 2026-07-07): collision groups get informative descriptions from Wikidata item context via
   the remote-queue work-file pattern. Staged: EN-first (when ja absent) → ja from EN → EN from
