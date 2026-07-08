@@ -105,6 +105,11 @@ ATOMIC_FILES = [
 FILE_DAILY_CAPS = {
     "description_label_pairs.txt": 100,
 }
+# Description ADDS are capped until January 2027 so descriptions don't become
+# the dominant edit type while other backlogs drain (Emma 2026-07-07); the cap
+# lifts automatically on 2027-01-01 — a date rule, not a value to revert.
+if edit_day() < datetime.date(2027, 1, 1):
+    FILE_DAILY_CAPS["description_adds.txt"] = 50
 
 
 def read_all_lines():
