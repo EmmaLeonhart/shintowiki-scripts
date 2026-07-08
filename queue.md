@@ -46,9 +46,10 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] wiki-queue 2026-07-08
 
-- [ ] **Kokugakuin ranking anomalies — agentic review.** Comprehensive pass over the anomalies
-  our catchers flag in Kokugakuin university shrine rankings; agentic RAG/reasoning per anomaly →
-  either normalize the content or declare it intentionally-that-way.
+- [ ] **Kokugakuin ranking anomalies — execute the scoped routing**
+  (`docs/kokugakuin_anomaly_review_scope_2026-07.md`, scoped 2026-07-08): 7 sequence anomalies
+  (RENUMBER→browser batch / INTENTIONAL→log) + ~85 multiple-P13677 rows (P958 answers→drip-safe
+  qualifier-adds); clone the ronsha_ranking_review pattern.
 - [ ] **Kokugakuin P13677 matcher** (from WD-cleanup triage): 94 Shikinaisha lack the Museum entry
   ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
   also unblocks the engishiki-reference generator for the ID-less unsourced rankings.
