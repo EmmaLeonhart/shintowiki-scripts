@@ -5918,3 +5918,12 @@ never dequeued).
 Also this tick: recorded the proven Kokugakuin investigation method (browse-render the
 entry page; 現社名など ordering = ranking ground truth) in the anomaly scope doc + queue —
 converts the parked sequence anomalies from manual-only to tool-assisted per-item work.
+
+## 2026-07-08 — Speculative report: Commons-label derivation for other religions (queue item DONE)
+
+`docs/commons_labels_other_religions_report_2026-07.md`. Sized via query-main: mosques 256,
+synagogues 459, Hindu temples 5, churches 18,377, Buddhist-non-Japan 0, gurdwaras 0. Key
+finding: the shrine pipeline's Latin-script≈transliteration assumption breaks for churches
+(Commons names are native German/Polish/etc. text), so churches are a policy decision, not a
+mechanical extension; the mosque+synagogue+Hindu ~720 ARE a clean one-flag extension of
+generate_commons_labels.py. Report only — no generator changes, awaiting Emma's read.

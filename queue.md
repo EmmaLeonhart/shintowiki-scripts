@@ -71,9 +71,10 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] wiki-queue 2026-07-08 (afternoon)
 
-- [ ] **Speculative report: extend Commons-label derivation to other religious buildings** —
-  Mosques, Churches, Hindu Temples, non-Japanese Buddhist Temples, Synagogues, Gurdwaras.
-  Report only, keep speculative; no edits.
+- [ ] **Emma's read on `docs/commons_labels_other_religions_report_2026-07.md`** (speculative
+  report DONE 2026-07-08): mosques 256 + synagogues 459 + Hindu 5 ≈ 720 clean targets (one-flag
+  class extension); churches 18,377 need a policy call (Latin script ≠ transliteration there);
+  Buddhist-non-Japan & gurdwara empty. No edits until she picks.
 
 ## Pinned tail (keep last, always)
 
