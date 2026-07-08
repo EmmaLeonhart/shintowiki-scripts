@@ -63,6 +63,16 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, shinto-wiki-as-source for the ~106 unsourced
   modern ranks.
 
+## From [[Open questions]] wiki-queue 2026-07-08 (afternoon)
+
+- [ ] **Commons-category English labels** (Emma; cf. Q115566088): shrines/temples with a
+  Wikimedia Commons category (P373/sitelink) but no English label — derive a standardized
+  English label from the Commons category name. Size it, build the generator (non-destructive,
+  uniqueness-checked like everything now).
+- [ ] **Speculative report: extend Commons-label derivation to other religious buildings** —
+  Mosques, Churches, Hindu Temples, non-Japanese Buddhist Temples, Synagogues, Gurdwaras.
+  Report only, keep speculative; no edits.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).

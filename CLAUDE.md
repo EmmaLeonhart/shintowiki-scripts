@@ -36,6 +36,12 @@ are priority order, not identity. Nothing is "parked" — every item gets done. 
 (duplicated_content, need_translation, fandom fixup) lives in `remote_queue.json`, not here.
 Items metabolised from the wiki [[Open questions]] Wiki-based queue go at the END.
 
+## Reports expire after a week
+
+Emma 2026-07-08: reports and similar write-ups (on the wiki page, in `_site/`, in `docs/` status
+snapshots) are cleared once they are a week old — they are working artifacts, not archives.
+History lives in DEVLOG.md + git.
+
 ## `[[Open questions]]` page — structure & rules (rules live HERE, not on the page)
 
 Emma 2026-07-07: the page must stay lean — no "system prompt" prose on the wiki side. All

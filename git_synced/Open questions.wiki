@@ -2,36 +2,18 @@ __NOTOC__
 
 == Open questions ==
 
-Claude are the eight things resolved or not? This was a thing that we made in the handoff about a month ago, it feels like. I don't know the degree to which it exists anymore, but please list all of them below this, all of them in a response to this comment, and whether they are resolved or not. [[User:Immanuelle|Immanuelle]] ([[User talk:Immanuelle|talk]]) 20:55, 7 July 2026 (UTC)
+''(Labels-pipeline report, requested 2026-07-08; clears after a week per the reports rule.)''
 
-: The eight things are the backlog-board items (<code>docs/backlog_resolution_status_2026-07-05.md</code>, written 2026-07-05 — two days ago). Status as of 2026-07-07, updated for everything since:
-:# '''retire-terminating-scripts — RESOLVED.''' All four July-gated scripts confirmed inert and deleted; dead launchers removed.
-:# '''audit-legacy-scripts — RESOLVED.''' Keep/fix/retire verdicts in <code>docs/program_audit_2026-06.md</code>; no silently-inert CI steps remain.
-:# '''ill-missing-wikidata — RESOLVED (automation).''' Detection op + <code>fix_ill_destinations.py</code> run in every cleanup fire; the only residual is the deliberately-skipped low-confidence ills, which are per-page human review by design.
-:# '''duplicate-qid-tail — RESOLVED (≈7-page remnant).''' Down from ~621 to ~7 genuinely-different-target dab pages; those are inherent human review, everything else auto-drains.
-:## show me the items I need to make decisions on, do not just say it requires human review and not show them to me
-:## Here they are — and having pulled them, '''none of the 8 actually needs a decision''': every dab page has exactly ONE live target (the competing variant is already deleted), so the resolver's single-existing-target branch should collapse each to a redirect on its own. The 8, with their one live target:
-:##* [[Q10233149]] → Hot springs of Fukushima Prefecture (3 members)
-:##* [[Q10233530]] → Natural Scenic Sites of Fukushima Prefecture (1)
-:##* [[Q10233842]] → Important Cultural Property of Japan in Fukushima prefecture (1)
-:##* [[Q10234023]] → International relations of Baekje (1)
-:##* [[Q18722813]] → Female Imperial Family Members before the Kofun Period (16; lowercase variant deleted)
-:##* [[Q24872720]] → Yame Kofun Group (9; lowercase variant deleted)
-:##* [[Q9572069]] → National historic sites in Hyogo prefecture (5; capital-P variant deleted)
-:##* [[Q9585694]] → Former Unranked Shrines in Chiba Prefecture (2; lowercase variant deleted)
-:## Per the standing rule I have NOT hand-edited these dab pages (they're the do-not-touch Q-titled ones). If they're still here next cycle, the resolver has an edge-case bug (4 of them use a collapsed <code># #</code> one-line format it may not parse) — that becomes a small fix, still not a decision of yours.
-:### Okay so this is very good but honestly I still have basically zero comprehension of what is going on here. Like what decision even is there to make here?
-:### Plain version: there is '''no decision'''. These 8 pages are leftover worksheets from an old cleanup. Back then, two different wiki categories each claimed the same Wikidata item (usually an English name vs a differently-cased duplicate), and the bot made one worksheet per conflict listing both claimants so someone could pick the survivor. Since then, the losing category in every one of these 8 conflicts was deleted by normal cleanup — so each worksheet now lists only a winner. The pages should just become redirects to their surviving category, and the cleanup bot is supposed to do that itself; it hasn't because of a formatting quirk on the worksheets, which is a bot bug (queued to fix), not a choice for you. Once fixed, all 8 vanish on their own and this whole item closes. 
-:# '''japanese-category-names — AUTOMATED, still draining.''' The one item that is not "done", but there is no build work left: deterministic resolvers shipped, the whole residual routes through cloud RAG → <code>category_moves.csv</code> → monthly <code>move_categories</code> (378 work-files pending; the collector bug that silently blocked answers was found and fixed today, 2 answers folded). ~1,186 Japanese-named categories remain in the pipeline's stomach.
-:# '''multiple-wikidata-links — RESOLVED (automation).''' Op + report page run in CI, self-healing; and as of 2026-07-08 the category is at '''0 members''' — the residual has fully drained. Nothing to review.
-:# '''duplicated-content-need-translation — RESOLVED (automation).''' The cloud routine works it (116 dup-content + 363 need-translation pending); manual only for canonical-title/history-merge hard cases and the 9 kokuzō articles.
-:# '''recreate-deleted-wikidata — RESOLVED BY DECISION (2026-07-06).''' The ill-referenced deleted targets were recreated (you ran the QS) and relinked; the ~213 unreferenced deleted items are deliberately NOT recreated per your call. Nothing open.
-: Net: nothing on the board has open build work. #5 is the only one still churning, and it churns autonomously.
+'''How a label gets onto Wikidata today — the whole pipeline:'''
+# '''Sources of English labels''' (all end up as atomic QS files in <code>modern-quickstatements/</code>): the shinto-wiki page names (<code>fetch_en_labels_from_wiki.py</code> — [[QuickStatements/en labels]] wiki page is the hand-curated source); kana-derived romanizations (<code>kana_en_labels</code>, <code>identical_name_en_labels</code>, temple variants); the daily claude.ai Sonnet routine translating batches of shrines/temples picked by <code>select_shrines_to_translate.py</code> (<code>en_labels_sonnet</code>); and RAG-corrected typo fixes (<code>label_typo_fixes</code>, from the 161-item review queue).
+# '''The 70-language machinery''' (<code>shinto-label-generator/</code>, <code>language_registry.py</code> is the single source of truth for which language uses which method): transliteration from the English/romaji form for most languages; Chinese via kana→man'yōgana + OpenCC for the zh family; Korean via koreanize (Japan) / hanja; Indonesian "Kuil X" proposals; Toki Pona; plus specialized generators for kami, Buddhist deities, misc Shinto terms, concepts (hand-authored), properties (hand-authored), court ranks, provinces, texts. Every output line carries a provenance comment. ~2.6M proposed labels currently sit in <code>quickstatements/&lt;lang&gt;.txt</code>.
+# '''The drip:''' <code>select_label_proposals.py</code> feeds 20 proposals per CI run into <code>label_proposals_drip.txt</code>; everything flows to Wikidata through the single daily editor (<code>direct_daily_edits.py</code>, 300/day, random interleave).
+# '''The uniqueness interlock (new this week):''' a label can only land if the label+description pair is unique — stale descriptions block label adds, so the description program runs alongside: desc-then-label pairs (100/day), class-true description adds (50/day until 2027-01), and collision groups routed to cloud enrichment for unique English descriptions (236 work-files live).
+# '''Guards:''' label-generator outputs never overwrite existing labels (non-destructive checks); label-typo review corrects the legacy romaji typos; the edits-today tile on the dashboard counts the account's total daily Wikidata edits.
 
 == Wiki-based queue ==
 
 ''(empty — items are picked up into queue.md and removed from here)''
-
 
 
 == Notes ==
