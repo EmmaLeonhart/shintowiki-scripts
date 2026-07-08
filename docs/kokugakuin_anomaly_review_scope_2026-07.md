@@ -70,3 +70,24 @@ requires per-item investigation, always.
 **Standing verdict: no batch fixes. Looser name-matching heuristics are PROHIBITED here** —
 the 2026-07-08 attempt classified 24-32 items "unambiguous" under substring matching and was
 wrong; nothing was executed.
+
+## The investigation method that works (proven on Q135040778, 2026-07-08)
+
+The Kokugakuin detail pages ARE machine-readable: the gstack `browse` headless
+browser renders the JS body, and `browse text` returns the full 資料詳細 table —
+including the ordered 現社名など（１..N） candidate list, which per Emma IS the
+ranking ground truth. Worked example (the "monster" ronsha):
+
+* entry 182793's ordered candidates: (1) 玉作湯神社相殿, (2) a NAMELESS
+  coordinates-only slot, (3) 本宮神社境外末社日御崎神社, (4) 佐久多神社;
+* current Wikidata ranks 3/4 matched the page exactly; the December 0-re-rank
+  of Tamatsukuriyu contradicted slot 1; the destroyed rank-2 item (empty husk
+  Q135193070) traced to the genuinely NAMELESS slot 2 — the gap is faithful
+  to the source, not an error;
+* add-only rebuild QS handed to Emma (rank+role+source-appropriate citations:
+  S248+S13677 for page-listed candidates, S143+S4656 jawiki list-article for
+  Wikipedia-only rank-0s; Izumo list = 出雲国の式内社一覧).
+
+So every sequence-anomaly investigation is now: render the entry page with
+`browse`, read the 現社名など ordering, diff against the item's ranks + revision
+history, hand Emma add-only QS. Still per-item judgment, but tooled.
