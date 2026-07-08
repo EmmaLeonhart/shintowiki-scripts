@@ -56,13 +56,13 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   browse-render the Kokugakuin entry page and read its 現社名など（１..N） ordering, which per
   Emma IS the ranking ground truth (method + Q135040778 worked example in
   `docs/kokugakuin_anomaly_review_scope_2026-07.md`). Emma-led, tool-assisted.
-- [ ] **Kokugakuin P13677 matcher — FEASIBLE, mechanics probed 2026-07-08**: the database's
-  detail pages carry the entry's shrine name in the static <title> ("［ID:181165］ 麻績神社"), so
-  an id→name index is harvestable. Known P13677 ids: 5,197 entries sparsely spread over
-  29,949..183,385 — do NOT enumerate the whole range; harvest titles for ids NEAR the known
-  engishiki blocks (or via the site's search), then match the 94 no-ID shikinaisha by name (+
-  province from the parent ronsha), RAG for ambiguous. Polite throttle (~1s); unblocks the
-  engishiki-reference generator for the ID-less unsourced rankings.
+- [ ] **Kokugakuin P13677 matcher — BUILT + RAN 2026-07-08, finding needs Emma**:
+  `modern-quickstatements/match_kokugakuin_ids.py` (strict exact-label match, district-blocked
+  scan, 417-title index cached in `kokugakuin_title_index.json`). The no-ID set is down to 18
+  (was 94). ZERO safe auto-adds: every name-matching entry id is ALREADY HELD, usually by several
+  items (candidates carry their entry's id) — the 18 look like surplus/duplicate items from the
+  two-run desync, i.e. merge decisions, not missing ids. Per-item review sheet:
+  `kokugakuin_id_report.txt` (ENTRY-TAKEN rows list current holders). Emma's call: merge vs re-id.
 - [ ] **jawiki infobox imports — Emma's modeling calls only** (all mechanical builds SHIPPED
   2026-07-08: saijin 2,362 / honzon 760 / souken 4,118 / kofun 1,036 / P3225 2; 社格-ref
   structurally empty). Waiting on Emma: 伝-dates via P1480 "presumably" (8,837 skipped fields),

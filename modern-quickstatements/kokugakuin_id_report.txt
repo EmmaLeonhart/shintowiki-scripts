@@ -1,0 +1,18 @@
+Q11521943 | 杉山神社 | 東京都/神奈川県 | NO-ANCHOR
+Q134989551 | 多和神社 | さぬき市 | NO-ANCHOR
+Q135019513 | 御門巫祭神 八座 |  | NO-ANCHOR
+Q135019813 | 生島巫祭神 二座 |  | NO-ANCHOR
+Q135039158 | 大鳥北浜神社 | 和泉国/大鳥郡 | NO-MATCH in scanned range
+Q135040298 | 野蚊神社 | 加賀国/河北郡 | AMBIGUOUS: another target shares this label+district
+Q135040786 | 坐韓国伊大弖神社 | 出雲国/意宇郡 | NO-MATCH in scanned range
+Q135040970 | 天若日子神社 | 出雲国/出雲郡 | NO-MATCH in scanned range
+Q135041051 | 韓國伊太弖奉神社 | 出雲国/出雲郡 | NO-MATCH in scanned range
+Q135041503 | 同佐肆布都神社 | 壱岐島/壱岐郡 | NO-MATCH in scanned range
+Q135041552 | 和多都美神社 | 下県郡/津島 | ENTRY-TAKEN (id 183358 held by Q11559099,Q135041526,Q18457651; id 183377 held by Q11410120,Q134930328,Q135041548,Q135388116,Q138914538)
+Q135068646 | 井上社 |  | NO-ANCHOR
+Q135069927 | 笠野神社 | 加賀国/河北郡 | ENTRY-TAKEN (id 182342 held by Q135040299,Q135069931,Q135069932)
+Q135069928 | 野蚊神社 | 加賀国/河北郡 | AMBIGUOUS: another target shares this label+district
+Q135070107 | 嘉羅久利神社 | 出雲国/意宇郡 | NO-MATCH in scanned range
+Q135070108 | 佐久多神社 | 出雲国/意宇郡 | ENTRY-TAKEN (id 182811 held by Q135040907,Q135070105,Q135070106,Q135195732)
+Q135195597 | 大神山神社 奥宮 | 会見郡/伯耆国/大山町 | NO-MATCH in scanned range
+Q135229657 | 阿波遅神社 |  | NO-ANCHOR

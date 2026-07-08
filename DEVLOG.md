@@ -5927,3 +5927,17 @@ finding: the shrine pipeline's Latin-script≈transliteration assumption breaks 
 (Commons names are native German/Polish/etc. text), so churches are a policy decision, not a
 mechanical extension; the mosque+synagogue+Hindu ~720 ARE a clean one-flag extension of
 generate_commons_labels.py. Report only — no generator changes, awaiting Emma's read.
+
+## 2026-07-08 — Kokugakuin P13677 matcher built + ran; finding: no missing ids, likely duplicate items
+
+`modern-quickstatements/match_kokugakuin_ids.py`: harvests entry names from the database's
+static <title> (real format `<name> ： 資料情報 | …`, not the probed ［ID:n］ shape) into
+`kokugakuin_title_index.json` (417 titles, district-blocked scan ranges from known-id min/max
+±12 — 429 pages total, ~1s throttle), then strict-matches the reference generator's
+skipped_no_p13677 set (now 18 items, was 94). Matching per Emma's ruling: exact ja-label
+equality, id unassigned anywhere, unique candidate; ambiguity → report. RESULT: 0 safe adds —
+every name-matching entry id is already held, usually by several items (candidates carry their
+entry's id; 182793 has 7 holders). The 18 targets are surplus/duplicate items from the two-run
+desync, i.e. merge decisions for Emma, not missing ids. Review sheet with holders:
+`kokugakuin_id_report.txt` (ENTRY-TAKEN/AMBIGUOUS/NO-ANCHOR/NO-MATCH rows). matches.txt left
+empty and NOT registered in ATOMIC_FILES — nothing to drain.
