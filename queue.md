@@ -49,11 +49,15 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
-- [ ] **description_adds.txt: first clean generation.** Pairs file landed clean (committed,
-  drips 100/day). The adds file's first run had the temple-template taint (guard since fixed,
-  commit 628a1963); the tainted file was never committed and is deleted. Sunday's CI refresh
-  (2026-07-12) regenerates it with the fix automatically — or run
-  `generate_description_adds.py` locally sooner and commit; verify temple lines say temple.
+- [ ] **description_adds.txt: land the uniqueness-checked generation** (running; verify temple
+  lines say temple, commit adds + `description_collision_groups.json`).
+- [ ] **Retrofit the uniqueness rule into `generate_description_fixes.py`** (the desc-then-label
+  pairs predate the rule; same internal+external check, colliders join the collision groups).
+- [ ] **Description enrichment pipeline — cloud stages** (`docs/description_enrichment_pipeline.md`,
+  Emma 2026-07-07): collision groups get informative descriptions from Wikidata item context via
+  the remote-queue work-file pattern. Staged: EN-first (when ja absent) → ja from EN → EN from
+  unique ja → zh(Mandarin) from ja → zh variants from Mandarin → ko from EN → rest from EN.
+  Slow by design; each stage a separate, significantly-separated operation.
 
 ## Pinned tail (keep last, always)
 
