@@ -5951,3 +5951,20 @@ Two new derive() guards from junk found in the first regeneration: plural groupi
 ("Synagogues in Nowy Sącz", 278 synagogue commons cats are these) and trailing house numbers
 ("Baumkirchnerring 4"). 323 → 628 Len lines; file already in ATOMIC_FILES + CI-wired, so the
 extension flows into the daily drip automatically.
+
+## 2026-07-08 — Commons other-religions extension REVERTED (report means report); Q135040778 confirmed fixed
+
+Emma: "I'm not sure why it is that your idea of a report is to immediately wire it in?" —
+correct; the instruction was "report only, keep speculative; no edits." Reverted
+generate_commons_labels.py + commons_en_labels.txt to their pre-extension state (Japan-only
+classes, 323 lines). No new-class labels ever reached Wikidata (no QS submission fired between
+extension and revert — last submit 2026-07-02). The deliverable stands:
+`docs/commons_labels_other_religions_report_2026-07.md`. The junk-guard patterns discovered
+during the brief extension (plural grouping categories, trailing house numbers) are recorded
+there and in git history (a461fb56) if an extension is ever actually requested. Queue item
+removed — not parked on Emma; the report is the finished artifact.
+
+Separately: Emma fixed Q135040778 (browser QS). Final live structure: Q135270430 rank 1,
+Q140465982 (resurrected from empty husk) rank 2, Q135195732 rank 3, Q135195733 rank 4,
+Q135070093/Q135070094 rank 0 with the 出雲国の式内社一覧 jawiki list as P4656 qualifier.
+The sequence-gap anomaly for this parent is resolved.

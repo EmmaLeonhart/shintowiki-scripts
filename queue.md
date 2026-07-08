@@ -69,13 +69,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, shinto-wiki-as-source for the ~106 unsourced
   modern ranks.
 
-## From [[Open questions]] wiki-queue 2026-07-08 (afternoon)
-
-- [ ] **Churches-only policy call** (`docs/commons_labels_other_religions_report_2026-07.md`):
-  Q16970 has 18,377 commons-linked items without en labels, but their Commons names are
-  native-language text (Matthäuskirche), not transliteration — Emma decides if that's ok as Len.
-  (Mosques/synagogues/Hindu temples SHIPPED into generate_commons_labels.py 2026-07-08.)
-
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 55ae0bbe — Emma
