@@ -110,11 +110,6 @@ jobs:
         continue-on-error: true
         run: python generate_kofun_quickstatements.py
 
-      - name: Commons-derived English labels (regenerate each run)
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: python generate_commons_labels.py
-
       - name: Bunrei qualifier repair (bare P612 -> +P1013 Bunrei, self-healing)
         working-directory: modern-quickstatements
         continue-on-error: true

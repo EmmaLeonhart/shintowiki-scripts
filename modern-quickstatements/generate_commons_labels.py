@@ -6,10 +6,16 @@ Derive standardized ENGLISH labels for shrines/temples that have a Wikimedia
 Commons category but no English label (Emma 2026-07-08; example Q115566088:
 commons sitelink "Category:Engaku-ji (Hashima)" → label "Engaku-ji Temple").
 
-CRITICAL naming rule (Emma 2026-07-08): a Buddhist temple's English label MUST
-end in " Temple" — a bare "Engaku-ji" is not a proper temple name in this
-system ("Eishō-ji Temple" is the established shape, cf. shinto-label-generator).
-The suffix is appended per-class via CLASSES.
+CRITICAL (Emma 2026-07-08): Commons names are useful raw material but MUST be
+aggressively normalized into the house naming system — they are never taken
+as-is. The house shapes are the ones the kana pipelines produce
+(`temple_english.py`, `kana_english.py`):
+  temples: "<Stem>-<suffix> Temple" (suffix hyphenated: Myorinji → Myorin-ji
+           Temple; suffixes ji/dera/tera/in/an/do/bo, macron variants too)
+  shrines: "<Stem> Shrine" (…jinja drops), "<Stem>-gu Shrine",
+           "<Stem>-sha Shrine", "<Stem> Grand Shrine" (…taisha/…jingu)
+A bare "Engaku-ji" or an unhyphenated "Myorinji Temple" is not a proper name
+in this system. Normalizers are per-class via CLASSES.
 
 Sources, in priority order: the commonswiki SITELINK title, else P373. The
 label is the category name minus the "Category:" prefix and any trailing

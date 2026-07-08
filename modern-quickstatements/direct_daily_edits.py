@@ -102,7 +102,6 @@ ATOMIC_FILES = [
     "honzon_p825.txt",                       # Principal images (本尊) from the jawiki temple infobox as P825, wikilinked-only precision path (generate_honzon_quickstatements.py); jawiki-cited
     "souken_p571.txt",                       # Founding dates (創建/創建年) from jawiki infoboxes as P571 year-precision; conservative single-clean-year parser (generate_souken_quickstatements.py); jawiki-cited
     "kofun_imports.txt",                     # Kofun shapes (P31 shape-classes, the live convention) + construction periods (P571 century precision) from the jawiki kofun infobox (generate_kofun_quickstatements.py); jawiki-cited
-    "commons_en_labels.txt",                 # English labels derived from Wikimedia Commons category names for commons-linked shrines/temples with no en label (generate_commons_labels.py; uniqueness-checked, comma/paren disambiguators stripped)
     "description_enrichment_en.txt",         # Unique English descriptions for collision groups, from cloud-RAG answers (collector: shinto_miraheze/collect_description_enrichment.py; stage 1 of docs/description_enrichment_pipeline.md)
 ]
 
