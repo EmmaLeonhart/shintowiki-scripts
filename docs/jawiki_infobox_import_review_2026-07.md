@@ -52,6 +52,20 @@ Every candidate below can reuse that exact shape.
 | 陵墓 | imperial mausoleum status | P31 addition (Q royal tomb classes) | MEDIUM. |
 | 出土品 | excavated finds | (free text) | SKIP. |
 
+## Build outcomes (2026-07-08, same night)
+
+* **P3225 corporate numbers — built** (`generate_p3225_quickstatements.py`), but the
+  法人番号 field is almost never filled on jawiki (~1% of temple articles in
+  sampling); full-walk yield recorded in the output file. Kept as a standing
+  tool; low volume is the field's reality, not a bug.
+* **社格-as-reference — built (`generate_shakaku_references.py`) and structurally
+  EMPTY:** all ~106 unsourced modern-rank statements sit on items with ZERO
+  jawiki sitelinks (shinto-wiki-native items), so jawiki can never source them.
+  The generator stays as a self-draining tool for future jawiki-linked cases.
+  The actual candidate source for these items' ranks is the shinto wiki page
+  itself (they're P11250-linked) — whether Emma wants her own wiki cited as a
+  Wikidata reference is a modeling call, flagged.
+
 ## Recommended build order
 
 1. **P3225 corporate numbers (temples)** — trivial parser, authoritative ID.
