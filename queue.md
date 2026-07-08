@@ -78,5 +78,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## Pinned tail (keep last, always)
 
-- [ ] Ensure the 3 work-loop crons are running (work-loop :03, auto-flush :15, status-report :42).
+- [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 55ae0bbe — Emma
+  replaced the earlier 3-cron setup when she extended the session 2026-07-08).
 - [ ] Run the status-report action once more independently as an end-of-session summary.
