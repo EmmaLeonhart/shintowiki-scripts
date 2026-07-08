@@ -49,8 +49,6 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
-- [ ] **description_adds.txt: land the uniqueness-checked generation** (running; verify temple
-  lines say temple, commit adds + `description_collision_groups.json`).
 - [ ] **Retrofit the uniqueness rule into `generate_description_fixes.py`** (the desc-then-label
   pairs predate the rule; same internal+external check, colliders join the collision groups).
 - [ ] **Description enrichment pipeline — cloud stages** (`docs/description_enrichment_pipeline.md`,

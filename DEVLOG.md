@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — description adds LANDED (1,798 class-true lines); jawiki infobox review done
+
+Final adds generation with all three guards (pref-beats-generic, uniqueness, class-true): 1,798
+lines (id 905 / nl 154 / fr 127 temple-only / de 127 / tr 119 / tail), 33 junk templates dropped,
+1,266 collision groups to the cloud seed. Class-true = template must contain the class item's own
+label words in that language — three guard iterations were needed (absolute floor → cross-class
+comparison → class-label words); a missing `re` import masked by output piping cost one extra run
+(lesson: don't pipe generator output through tail; the exit code lies). Drips 50/day (auto-uncap
+2027-01-01) alongside the pairs' 100/day. The class-dropped languages' targets (fr shrines etc.)
+are in NEITHER file by design — the cloud pipeline enumerates them from SPARQL when built.
+**jawiki infobox review** (wiki-queue item) delivered: `docs/jawiki_infobox_import_review_2026-07.md`
+— 3 templates field-mapped; build order P3225 corporate numbers → 社格-as-ref for unsourced modern
+ranks → P825 deities/本尊 → P571 → kofun shapes/periods; 5 modeling calls flagged for Emma.
+
 ## 2026-07-08 — WD manual-cleanup pages triaged (auto vs not); uniqueness + class-specificity guards
 
 **Triage of Emma's three Wikidata cleanup lists** (wiki-queue item): (1) ronsha dedup all-unranked
