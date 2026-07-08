@@ -46,10 +46,13 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] wiki-queue 2026-07-08
 
-- [ ] **Kokugakuin ranking anomalies — execute the scoped routing**
-  (`docs/kokugakuin_anomaly_review_scope_2026-07.md`, scoped 2026-07-08): 7 sequence anomalies
-  (RENUMBER→browser batch / INTENTIONAL→log) + ~85 multiple-P13677 rows (P958 answers→drip-safe
-  qualifier-adds); clone the ronsha_ranking_review pattern.
+- [ ] **Kokugakuin ranking anomalies — PARKED per Emma 2026-07-08.** The multiple-P13677 set:
+  Emma ruled ALL ~66 ambiguous; the name-match elimination algorithm was WRONG (item names don't
+  reliably match entry titles — two-run overlaps mean both adjacent IDs can describe the same
+  shrine; deciding which entry is right needs the Kokugakuin page itself, per item). No mechanical
+  rule exists. Sequence-gap anomalies: same — history + Kokugakuin-page ordering per item (the
+  Q135040778 investigation is the worked example: triplicate import, rank-2 merged into an empty
+  husk Q135193070). Nothing here is batch-fixable; leave for Emma-led sessions.
 - [ ] **Kokugakuin P13677 matcher — FEASIBLE, mechanics probed 2026-07-08**: the database's
   detail pages carry the entry's shrine name in the static <title> ("［ID:181165］ 麻績神社"), so
   an id→name index is harvestable. Known P13677 ids: 5,197 entries sparsely spread over
