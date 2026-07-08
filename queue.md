@@ -49,10 +49,11 @@ conditional triggers, paper sources); the not-for-today conditionals are written
 - [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
   sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
   Emma picks a direction.
-- [ ] **Land the two description data files.** Both generators SHIPPED (pairs: compound || units,
-  100/day cap, ordered; adds: 40,794 backlog, uncapped). `description_label_pairs.txt` generation
-  in flight; run `generate_description_adds.py` after it finishes (serialize WDQS load); commit
-  both with per-language stats.
+- [ ] **description_adds.txt: first clean generation.** Pairs file landed clean (committed,
+  drips 100/day). The adds file's first run had the temple-template taint (guard since fixed,
+  commit 628a1963); the tainted file was never committed and is deleted. Sunday's CI refresh
+  (2026-07-12) regenerates it with the fix automatically — or run
+  `generate_description_adds.py` locally sooner and commit; verify temple lines say temple.
 
 ## Pinned tail (keep last, always)
 
