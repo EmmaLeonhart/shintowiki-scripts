@@ -1,2 +1,3 @@
 Q128867054	PREFIX_OK	label carries the Ōmama (大間々) place prefix for disambiguation; P1814 kana しんめいぐう (Shinmeigu) records only the shrine-type portion of the name. The shrine is in Ōmama, Midori, Gunma. Also note: label spells the prefix "Omama" without the macron (should be Ōmama).
 Q135258978	KANA_ISSUE	P1814 kana おおうちじんじゃ correctly romanizes to Ōuchijinja, matching the label "Ōuchi Shrine"; the KANA_ROMANIZED field "Ochijinja" was generated incorrectly (dropping おお→Ō). Wikidata currently shows P1814 = おおうちじんじゃ and the label is consistent. No edit needed.
+Q17220848	LABEL_TYPO	Honoikazuchi Shrine
