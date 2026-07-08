@@ -52,10 +52,11 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 - [ ] **Kokugakuin P13677 matcher** (from WD-cleanup triage): 94 Shikinaisha lack the Museum entry
   ID; propose IDs by name/province match against the Kokugakuin dataset (RAG for ambiguous). This
   also unblocks the engishiki-reference generator for the ID-less unsourced rankings.
-- [ ] **jawiki infobox imports — build from the review** (`docs/jawiki_infobox_import_review_2026-07.md`,
-  review DONE 2026-07-08): recommended order = P3225 corporate numbers (temples, trivial) →
-  社格-as-reference for the ~92 unsourced modern ranks → P825 deities/本尊 → P571 founding dates →
-  kofun P1419 shapes + periods. Modeling-call fields (神体/山号/寺格/被葬者/鎮守神) wait on Emma.
+- [ ] **jawiki infobox imports — remaining builds** (`docs/jawiki_infobox_import_review_2026-07.md`;
+  P3225 + 社格-ref closed low/zero-yield, P825 shrine deities SHIPPED 2,362 lines 2026-07-08):
+  next = 本尊 for temples (same wikilinked-P825 pattern, {{日本の寺院}}) → P571 founding dates
+  (era parser, all three templates) → kofun P1419 shapes + P571 periods. Modeling-call fields
+  (神体/山号/寺格/被葬者/鎮守神 + shinto-wiki-as-source for rank refs) wait on Emma.
 
 ## Pinned tail (keep last, always)
 

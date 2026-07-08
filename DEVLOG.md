@@ -4,6 +4,15 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — saijin P825 import SHIPPED: 2,362 cited deity statements
+
+The volume jawiki build: 祭神 from {{神社}} as P825, wikilinked-only precision (jawiki's editorial
+links resolved via pageprops with redirect-following — zero string matching; 4,359 fields with
+unlinked plain names skipped by design). Full walk: 6,712 articles → 2,526 shrines with linked
+deities → 951/1,095 targets resolve → **2,362 new pairs** (1,883 already on Wikidata skipped).
+Registered + CI-wired (regenerates each run); joins the drip. Also chips directly at the 6,841
+P825-less colliding shrines from the deity-description test.
+
 ## 2026-07-08 — Ronsha ranking judgments routed to cloud RAG (35 work-files); jawiki quick-wins closed
 
 Emma's "most important shikinaisha cleanup": the 35 all-unranked ronsha dedup candidates now flow
