@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-08 — END-OF-SESSION STATUS REPORT (the 2026-07-07→08 marathon)
+
+The session Emma opened as a "contained warm-up with a 13:00 hard stop" ran ~15 hours on her
+extension. Everything below is verified-shipped, in priority order of impact:
+
+**Wikidata data model, set and enforced.** The festival model (P837 + P3831 role-only + festival
+as P793 qualifier) and bunrei model (single P612 + P1013) are documented
+(`docs/wikidata_shrine_festival_model.md`), CLAUDE.md-pinned, and guarded by two self-healing
+daily repairs. The P793→P837 festival migration ran (89 pairs + stragglers + case-by-case, refs
+preserved), with the mid-course modeling errors fixed the same day and the whole state verified
+against live Wikidata repeatedly.
+
+**~11,500 cited jawiki-import statements** across reisai (3,239), saijin (2,362), honzon (760),
+souken (4,118), kofun (1,036), P3225 (2) — every line cites its exact source article; plus
+~10,650 bunrei edges incl. the onkamui maximalist parse (97). All in the 300/day drip.
+
+**The description program end-to-end:** 7,897 desc-then-label pairs (100/day) + 1,798 class-true
+adds (50/day, auto-uncap 2027-01) behind THREE quality guards built after real near-misses;
+collision groups seeded to the cloud (stage 1 EN-first live with 236 work-files; 1,030 ja-covered
+groups await the translation-chain stages). Deity-name disambiguation measured: 4%/14% ceiling —
+Emma's doubt confirmed.
+
+**Cloud RAG queues: 1,861 items / 8 sections** (ronsha rankings NEW, enrichment NEW), draining
+autonomously; collectors verified end-to-end (4 answers folded today incl. the SKIP-regex rescue).
+
+**Pipelines unstuck/fixed:** P31 ranking removals (4,846 lines after 3 months stalled), collector
+SKIP-regex, ns8 UI crud (113→0), CI timeout, WDQS endpoint migrations, edits-today dashboard tile.
+
+**Scoped for fresh execution:** Kokugakuin anomaly routing (designed), P13677 matcher (mechanics
+probed: static-title harvest, sparse-range warning), enrichment stages 2+, bunrei-research
+direction, and Emma's modeling calls (伝-dates, 神体/山号/寺格/被葬者/鎮守神,
+shinto-wiki-as-source). Nothing in the queue lacks a known next step.
+
 ## 2026-07-08 — description enrichment stage 1 LIVE: 236 EN-first work-files in the cloud queue
 
 The cloud half of the description pipeline is running: 236 collision groups (the ja-uncovered
