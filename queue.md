@@ -71,10 +71,10 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] wiki-queue 2026-07-08 (afternoon)
 
-- [ ] **Emma's read on `docs/commons_labels_other_religions_report_2026-07.md`** (speculative
-  report DONE 2026-07-08): mosques 256 + synagogues 459 + Hindu 5 ≈ 720 clean targets (one-flag
-  class extension); churches 18,377 need a policy call (Latin script ≠ transliteration there);
-  Buddhist-non-Japan & gurdwara empty. No edits until she picks.
+- [ ] **Churches-only policy call** (`docs/commons_labels_other_religions_report_2026-07.md`):
+  Q16970 has 18,377 commons-linked items without en labels, but their Commons names are
+  native-language text (Matthäuskirche), not transliteration — Emma decides if that's ok as Len.
+  (Mosques/synagogues/Hindu temples SHIPPED into generate_commons_labels.py 2026-07-08.)
 
 ## Pinned tail (keep last, always)
 

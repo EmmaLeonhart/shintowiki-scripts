@@ -34,7 +34,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WDQS = "https://query-main.wikidata.org/sparql"
 UA = "shintowiki-commonslabels/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
 OUTPUT = os.path.join(HERE, "commons_en_labels.txt")
-CLASSES = [("Q845945", ""), ("Q5393308", "?item wdt:P17 wd:Q17 .")]
+CLASSES = [
+    ("Q845945", ""),                          # Shinto shrine
+    ("Q5393308", "?item wdt:P17 wd:Q17 ."),   # Buddhist temple in Japan
+    # Extension 2026-07-08 (docs/commons_labels_other_religions_report_2026-07.md;
+    # Emma: don't gate the clean classes): mosques, synagogues, Hindu temples —
+    # small sets whose Commons names are established English-register names.
+    # Churches (Q16970, 18k) stay OUT: their Commons names are native-language
+    # text, not transliteration — that's the one real policy call.
+    ("Q32815", ""),                           # mosque
+    ("Q34627", ""),                           # synagogue
+    ("Q842402", ""),                          # Hindu temple
+]
 
 _PAREN = re.compile(r"\s*\([^)]*\)\s*$")
 _LATIN = re.compile(r"[A-Za-z]")
@@ -104,6 +115,10 @@ def derive(name):
     if not name or not _LATIN.search(name):
         return None
     if len(name) > 80 or name.lower().startswith(("images of", "photographs of")):
+        return None
+    # grouping categories ("Synagogues in Nowy Sącz") and bare street
+    # addresses ("Baumkirchnerring 4") are commons-side organization, not names
+    if re.search(r"\b[a-z]+s (in|of|at) ", name, re.I) or re.search(r"\s\d+$", name):
         return None
     return name
 

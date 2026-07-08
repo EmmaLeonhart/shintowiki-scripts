@@ -5941,3 +5941,13 @@ entry's id; 182793 has 7 holders). The 18 targets are surplus/duplicate items fr
 desync, i.e. merge decisions for Emma, not missing ids. Review sheet with holders:
 `kokugakuin_id_report.txt` (ENTRY-TAKEN/AMBIGUOUS/NO-ANCHOR/NO-MATCH rows). matches.txt left
 empty and NOT registered in ATOMIC_FILES — nothing to drain.
+
+## 2026-07-08 — Commons-labels extended to mosques/synagogues/Hindu temples (Emma: don't gate)
+
+Emma pushed back on gating the other-religions extension on her read — the clean classes ship.
+generate_commons_labels.py CLASSES += Q32815 mosque / Q34627 synagogue / Q842402 Hindu temple
+(churches Q16970 stay out — native-language-name policy call, the one genuinely-Emma part).
+Two new derive() guards from junk found in the first regeneration: plural grouping categories
+("Synagogues in Nowy Sącz", 278 synagogue commons cats are these) and trailing house numbers
+("Baumkirchnerring 4"). 323 → 628 Len lines; file already in ATOMIC_FILES + CI-wired, so the
+extension flows into the daily drip automatically.
