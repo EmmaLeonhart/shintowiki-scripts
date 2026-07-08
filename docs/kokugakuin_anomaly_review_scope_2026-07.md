@@ -49,3 +49,24 @@ registered in `remote_queue.py`, collector splits: INTENTIONAL → log;
 RENUMBER → browser batch file for Emma; P958 answers → ATOMIC qualifier-adds.
 Nothing here is buildable-with-confidence at 01:00 — the answer formats above
 are the design; execute fresh.
+
+## Emma's model (2026-07-08, authoritative — supersedes the routing design above)
+
+**Three pathways create duplicate P13677s:** (1) improper merges; (2)/(3) two-run desync — the
+first import ran from Wikipedia's tables, the second from the Kokugakuin database; Wikipedia-only
+entries carry P1352=0, and the runs occasionally desynced while cycling, duplicating IDs. The
+same desync underlies most other duplicate data (addresses included). ~500 original errors are
+already fixed; the 66 remaining are the hard residue, NOT easy cases.
+
+**The only legitimate two-ID case:** an item that is a candidate for two different Engishiki
+entries — common on Tsushima (e.g. Watazumi) and essentially nowhere else.
+
+**Emma's strict "easy case" criterion:** IDs differ by exactly ONE, and exactly one entry title
+is a PERFECT match of the item's Japanese label while the other doesn't match at all (not even
+as a substring). Applied 2026-07-08: only 9/67 pass, and even those need eyes (a non-matching
+title can be a sessha of the host — the criterion cannot see that). IDs more than one apart =
+requires per-item investigation, always.
+
+**Standing verdict: no batch fixes. Looser name-matching heuristics are PROHIBITED here** —
+the 2026-07-08 attempt classified 24-32 items "unambiguous" under substring matching and was
+wrong; nothing was executed.
