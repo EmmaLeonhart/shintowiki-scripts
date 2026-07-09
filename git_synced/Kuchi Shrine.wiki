@@ -16,13 +16,12 @@
 | deity = {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
 }}
 
-{{nihongo|'''Kuchi Shrine'''|公智神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 [[ja:公智神社]]
 
 {{wikidata link|Q11392062|ja|公智神社|grok=none|check_date=2026-05-31}}
 
-== Japanese content ==
 {{??
 |??    = Kuchi Shrine
 |??    = [[File:Kuchi shrine, Nishinomiya.jpg|250px]]<br />Worship hall
@@ -40,24 +39,22 @@
 |?? = {{Location map|Japan Hyogo|label=????|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Kuchi Shrine''' (??????, ???????) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Nishinomiya|Q243853|qid=Q243853}}. It is a {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} listed in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}}, and its former shrine rank was {{ill|Ken-sha|qid=Q90139226|lt=Ken-sha}}.
+{{nihongo|'''Kuchi Shrine'''|公智神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}{{ill|Nishinomiya|Q243853|qid=Q243853}}. It is a {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} listed in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}}, and its former shrine rank was {{ill|Ken-sha|qid=Q90139226|lt=Ken-sha}}. {{nihongo|'''Kuchi Shrine'''|公智神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
 It enshrines {{ill|Kukunochi|Q10749920|qid=Q10749920|lt=Kukunochi-no-Kami}}, {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Takesoku Susanoo-no-Mikoto}}, and {{ill|Kushinadahime|lt=Kushinadahime|Q505469|qid=Q505469|qid=Q505469|lt=Kushinadahime-no-Mikoto}}.
 
-=== History ===
+== History ==
 The founding date is unknown, but tradition says it began when the {{ill|UNKNOWN|lt=Kukuchi clan}}, descendants of {{ill|Ōhiko-no-Mikoto|ja|大彦命|zh|大彦命|qid=Q11435420}}, a prince of {{ill|Emperor Kōgen|Q333572|qid=Q333572}}, worshipped the ancestral deity of trees Kukunochi-no-Kami (Kukunohachi-no-Kami) as their tutelary deity. In the winter of Taika 3, timber from this shrine's area was used for imperial works during Emperor K?toku's visit to Arima, and because of its excellent quality the mountain name "K?chiyama" was bestowed. During the {{ill|Jōgan|Q1075635|qid=Q1075635|lt=J?gan}} era, Takesoku Susanoo-no-Mikoto and Kushinadahime-no-Mikoto were jointly enshrined, and the shrine was called Tenn?-g? and Gion Gozu Tenn?. In April 1929, it was promoted to prefectural shrine.
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== External links ===
+== External links ==
 * [http://kuchijinja.jp/ Kuchi Shrine]?official site?
 
 {{?? ?}}
 
 {{Shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Kuchi Shrine]][[Category:Shikinaisha|Kuchi Shrine]][[Category:Kanpei-sha]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Hyōgo Prefecture]]
@@ -70,4 +67,5 @@ The founding date is unknown, but tradition says it began when the {{ill|UNKNOWN
 [[Category:Buildings and structures in Nishinomiya, Hyogo]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

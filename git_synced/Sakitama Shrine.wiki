@@ -22,7 +22,6 @@
 
 {{wikidata link|Q11397359|commons|Category:Sakitama-jinja|ja|前玉神社|grok=none|check_date=2026-07-06}}
 
-== Japanese content ==
 {{神社
 |名称   = Sakitama Shrine
 |画像   = [[File:Sakitama-jinja, haiden.JPG|250px]]<br />Approach and worship hall
@@ -45,26 +44,26 @@
 
 The shrine name “Sakitama” is said to be the origin of the place name “Saitama”<ref name="由緒書">Shrine history board.</ref>. It stands within the {{ill|Sakitama Kofun Cluster|Q2213580|qid=Q2213580}} in northern Saitama Prefecture, and the shrine itself is on top of {{ill|Sengenzuka Kofun|Q11557453|qid=Q11557453}}.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The enshrined deities are the following two.
 * '''{{ill|UNKNOWN|lt=Sakitamahiko-no-Mikoto}}'''
 * '''{{ill|Sakitamahime-no-Mikoto|Q0|qid=Q0|lt=Sakitamahime-no-Mikoto}}'''
 : In the '{{ill|Kojiki|Q813031|qid=Q813031}},' regarding Sakitamahime-no-Mikoto, it is written that she is a daughter of {{ill|UNKNOWN|lt=Ame-no-Mikushi-no-Kami}} and consort of {{ill|UNKNOWN|lt=Hayamikatake-sawayajinu-mi-no-Kami}}, a descendant of {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōkuninushi-Ōkami}} (there is no description regarding Sakitamahiko-no-Mikoto).
 
-=== History ===
-=== Founding ===
+== History ==
+== Founding ==
 The founding is unknown. Sakitama Shrine stands within the {{ill|Sakitama Kofun Cluster|Q2213580|qid=Q2213580}}, and its main sanctuary also faces the direction of the kofun cluster. The ruling stratum of these kofun is estimated to have been the ancient ritual group of Sakitama Shrine{{Sfn|前玉神社（平凡社）|2004年}}, and one theory infers that worship began in the {{ill|Kofun period|Q459939|qid=Q459939}} as protection of the kofun cluster<ref name="由緒書"/>.
 
 The origin of the shrine name “Sakitama” is also unclear, but because the family register ledger “Yamashiro no Kuni Atago-gun Kumoshimo no Sato Keichō” (in the '{{ill|Shōsōin Documents|Q11545362|qid=Q11545362}}') from {{ill|Jinki (era)|Q1373210|qid=Q1373210}} 3 ({{ill|726|Q23555|qid=Q23555}}) already shows the notation “Musashi no Kuni Sakitama-gun,” this “Sakitama” is thought to have later changed to “Saitama (sakitama/saitama)”<ref name="由緒書"/>.
 
-=== Overview history ===
+== Overview history ==
 In the '{{ill|Engishiki|Q1342448|qid=Q1342448}}' '{{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}}' compiled in Enchō 5 ({{ill|927|Q30470|qid=Q30470}}), it is recorded in {{ill|Saitama district|Q11427160|qid=Q11427160}} of {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|qid=Q907398}} as “Sakitama Shrine, two seats,” and both seats are listed as {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}. Both readings “Sakitama” and “Saitama” are annotated.
 
 Movements in the {{ill|Middle Ages|Q12554|qid=Q12554}} are unknown{{Sfn|前玉神社（平凡社）|2004年}}, but according to shrine tradition, after inviting an Asama shrine from {{ill|Oshi Castle|Q1074393|qid=Q1074393}}, it took the name “Asama Shrine,” and the kofun where it stands was regarded as Mt. Fuji{{Sfn|前玉神社（平凡社）|2004年}}. It is also said that originally the shrine on top of the kofun was called “Upper Shrine” and the one on the middle slope “Lower Shrine,” and in Meiji this was fixed as “Sakitama Shrine” (upper) and “Asama Shrine” (lower){{Sfn|前玉神社（平凡社）|2004年}}.
 
 After the {{ill|Meiji Restoration|Q8707|qid=Q8707}}, it was ranked as {{ill|Gō-sha|Q134917316|qid=Q134917316}} in the modern shrine rank system.
 
-=== Precincts ===
+== Precincts ==
 [[File:Sakitama-jinja, tourou.JPG|thumb|200px|right|{{Center|Man'yō lanterns (both sides of approach)<br />(Gyōda City-designated Cultural Property)}}]]
 [[File:Sakitama-jinja, torii.JPG|thumb|200px|right|{{Center|Stone torii (Gyōda City-designated Cultural Property)}}]]
 [[File:Sakitama-jinja, maki.JPG|thumb|160px|right|{{Center|[[マキ|Maki tree]] (Gyōda City-designated Natural Monument)}}]]
@@ -91,7 +90,7 @@ These lanterns are designated cultural properties of Gyōda City. The “{{ill|K
 
 Also, the stone torii at the precinct entrance was built in November {{ill|1676|Q7628|qid=Q7628}} ({{ill|Enpō|Q1145735|qid=Q1145735}} 4) and is designated a cultural property of Gyōda City. The {{ill|Maki|Q117435|qid=Q117435}} tree standing near the torii is estimated at 600 years old and 16 meters tall, the largest existing maki in Saitama Prefecture, and is designated a natural monument of Gyōda City.
 
-=== Sessha and massha ===
+== Sessha and massha ==
 * Asama Shrine
 ** Deity: {{ill|Zainal Abidin III of Terengganu|Q80497|qid=Q80497|lt=Konohanasakuyahime-no-Mikoto}}
 *: Said to have been invited from {{ill|Oshi Castle|Q1074393|qid=Q1074393}}. Before Meiji, the main shrine on the kofun summit was called “Upper Shrine,” and Asama Shrine on the slope was called “Lower Shrine.”
@@ -104,7 +103,7 @@ File:Sakitama-jinja, Sengen-jinja.JPG|Asama Shrine
 File:Sakitama-jinja, Meiji-jinja.JPG|Meiji Shrine
 </gallery>
 
-=== Festivals ===
+== Festivals ==
 List of annual festivals held at Sakitama Shrine<ref name="由緒書"/>.
 * {{ill|UNKNOWN|lt=New Year Festival}} ({{ill|January 1|Q2150|qid=Q2150}})
 * Selection rite for sacred rice field, opening rite for sacred rice field work (late March)
@@ -122,15 +121,15 @@ List of annual festivals held at Sakitama Shrine<ref name="由緒書"/>.
 * {{ill|Ōharae-shiki|fa|اوهارائه‌شیکی|fr|Ōharae-shiki|ja|大祓|ko|오하라에|simple|Ōharae-shiki|qid=Q11261910}} ({{ill|December 31|ab|Ԥхынҷкәынмза 31|af|31 Desember|als|31. Dezember|alt|Јаҥар айдыҥ 31 кӱни|am|31 December|an|31 d'aviento|ar|31 ديسمبر|ary|31 دجنبر|arz|31 ديسمبر|as|৩১ ডিচেম্বৰ|ast|31 d'avientu|av|31 декабр|avk|31-e ke santoleaksat|az|31 dekabr|azb|۳۱ دسامبر|ba|31 декабрь|ban|31 Désémber|bar|31. Dezemba|bat_smg|Groudė 31|bcl|Desyembre 31|be|31 снежня|be_x_old|31 сьнежня|bg|31 декември|bh|31 दिसंबर|bjn|31 Disimbir|bn|৩১ ডিসেম্বর|bo|ཟླ་༡༢ཚེས་༣༡ཉིན་|bpy|ডিসেম্বর ৩১|br|31 Kerzu|bs|31. decembar|bxr|12 һарын 31|ca|31 de desembre|cbk_zam|31 de Diciembre|cdo|12 nguŏk 31 hô̤|ce|31 декабрь|ceb|Disyembre 31|ckb|٣١ی کانوونی یەکەم|co|31 di dicembre|crh|Dekabr 31|cs|31. prosinec|csb|31 gòdnika|cv|Раштав, 31|cy|31 Rhagfyr|da|31. december|de|31. Dezember|diq|31 Kanun|dv|ޑިސެމްބަރު 31|el|31 Δεκεμβρίου|eml|31 ed disèmber|eo|31-a de decembro|es|31 de diciembre|et|31. detsember|eu|Abenduaren 31|ext|31 diziembri|fa|۳۱ دسامبر|fi|31. joulukuuta|fiu_vro|31. joulukuu päiv|fo|31. desember|fr|31 décembre|frp|31 de dècembro|frr|31. Deetsember|fur|31 di Dicembar|fy|31 desimber|ga|31 Nollaig|gag|31 Kırım ay|gan|12月31號|gd|31 an Dùbhlachd|gl|31 de decembro|gn|31 jasypakõi|gor|31 Desember|gu|ડિસેમ્બર ૩૧|gv|31 Mee ny Nollick|hak|12-ngie̍t 31-ngit|he|31 בדצמבר|hi|३१ दिसम्बर|hif|31 December|hr|31. prosinca|hsb|31. decembra|ht|31 desanm|hu|December 31.|hy|Դեկտեմբերի 31|hyw|31 Դեկտեմբեր|ia|31 de decembre|id|31 Desember|ie|31 decembre|ig|31 Disemba|ilo|Disiembre 31|inh|ОагӀой 31|io|31ma di decembro|is|31. desember|it|31 dicembre|ja|12月31日|jbo|pavrelma'i 31moi|jv|31 Dhésèmber|ka|31 დეკემბერი|kaa|31-dekabr|kab|31 duǧember|kk|31 желтоқсан|km|ថ្ងៃទី៣១ខែធ្នូ|kn|ಡಿಸೆಂಬರ್ ೩೧|ko|12월 31일|ks|دَسَمبَر 31|ksh|31. Dezemmber|ku|31ê kanûna pêşîn|kv|Ӧшым тӧлысь 31-ӧд лун|la|31 Decembris|lb|31. Dezember|li|31 december|lij|31 dexénbre|lmo|31 12|lo|31 ທັນວາ|lt|Gruodžio 31|lv|31. decembris|mai|३१ दिसम्बर|map_bms|31 Desember|mg|31 Desambra|mhr|31 теле|mk|31 декември|ml|ഡിസംബർ 31|mn|12 сарын 31|mr|डिसेंबर ३१|ms|31 Disember|my|၃၁ ဒီဇင်ဘာ|myv|Ацамковонь 31 чи|mzn|۳۱ دسامبر|nah|31 metztli diciembre|nap|31 'e dicembre|nds|31. Dezember|nds_nl|31 december|new|डिसेम्बर ३१|nl|31 december|nn|31. desember|no|31. desember|nrm|31 Dézembre|nso|Manthole 31|oc|31 de decembre|olo|31. talvikuudu|or|୩୧ ଡିସେମ୍ବର|os|31 декабры|pa|31 ਦਸੰਬਰ|pag|Disyembre 31|pam|Disiembri 31|pap|31 di desèmber|pl|31 grudnia|pnb|31 دسمبر|ps|31 ډيسمبر|pt|31 de dezembro|qu|31 ñiqin qhapaq raymi killapi|ro|31 decembrie|rsk|Катеґория:31. децембер|ru|31 декабря|rue|31. децембер|sa|३१ दिसम्बर|sah|Ахсынньы 31|scn|31 di dicèmmiru|sco|31 December|sd|31 ڊسمبر|se|Juovlamánu 31.|sh|31. decembra|shn|တီႇသႅမ်ႇပႃႇ 31|si|දෙසැම්බර් 31|simple|December 31|sk|31. december|sl|31. december|smn|Juovlâmáánu 31.|sn|Zvita 31|sq|31 dhjetor|sr|31. децембар|su|31 Désémber|sv|31 december|sw|31 Desemba|syl|31 ꠒꠤꠡꠦꠝ꠆ꠛꠞ|szl|31 grudńa|ta|திசம்பர் 31|te|డిసెంబర్ 31|tg|31 декабр|th|31 ธันวาคม|tk|31 dekabr|tl|Disyembre 31|tly|31 Dekabr|tr|31 Aralık|ts|N'wendzamhala 31|tt|31 декабрь|udm|31 толсур|ug|31 - دېكابر|uk|31 грудня|ur|31 دسمبر|uz|31-dekabr|vec|31 de disenbre|vi|31 tháng 12|vls|31 december|vo|Dekul 31|wa|31 di decimbe|war|Disyembre 31|wuu|12月31号|xal|Бар сарин 31|xmf|31 ქირსეთუთა|yi|31סטן דעצעמבער|yo|31 December|za|12 nyied 31 hauh|zea|31 december|zgh|31 ⴷⵓⵊⴰⵏⴱⵉⵔ|zh|12月31日|zh_classical|公曆十二月卅一日|zh_min_nan|12 goe̍h 31 ji̍t|zh_yue|12月31號|qid=Q2912}})
 * Sakitama rite (December 31)
 
-=== Cultural properties ===
-=== Gyōda City-designated Cultural Properties ===
+== Cultural properties ==
+== Gyōda City-designated Cultural Properties ==
 * Tangible cultural properties
 ** Stone torii (building) - designated March 25, 1999<ref>[http://www.city.gyoda.lg.jp/41/03/10/bunkazai_itiran/sakitamajinjyanoisitorii.html Stone torii of Sakitama Shrine] (Gyōda City website).</ref>.
 ** Stone lanterns (crafts) - designated March 10, 1967<ref>[http://www.city.gyoda.lg.jp/41/03/10/bunkazai_itiran/isidourou.html Stone lanterns] (Gyōda City website).</ref>.
 * Natural monument
 ** Maki tree - designated January 31, 1964<ref>[http://www.city.gyoda.lg.jp/41/03/10/bunkazai_itiran/maki.html Maki tree] (Gyōda City website).</ref>.
 
-=== Local information ===
+== Local information ==
 ; Location
 * {{ill|Saitama Prefecture|Q128186|qid=Q128186}}{{ill|Gyōda|Q860659|qid=Q860659}} Ōaza Sakitama Aza Miyamae 5450
 ; Access
@@ -141,28 +140,26 @@ List of annual festivals held at Sakitama Shrine<ref name="由緒書"/>.
 ** {{ill|Sakitama Kofun Cluster|Q2213580|qid=Q2213580}}
 ** {{ill|Saitama Prefectural Museum of the Sakitama Ancient Burial Mounds|fr|Musée préfectoral de Saitama des anciens tumuli funéraires de Sakitama|ja|埼玉県立さきたま史跡の博物館|qid=Q5017775}}
 
-=== Footnotes ===
+== Footnotes ==
 {{脚注ヘルプ}}
 {{Reflist}}
 
-=== Bibliography ===
+== Bibliography ==
 * Shrine history board
 * {{Cite book|ja|editor=Meiji Jinja Shiryō Compilation Office|author=|year=1912|chapter=Sakitama Shrine|title={{ill|Fuken Gōsha Meiji Jinja Shiryō|Q11486103|qid=Q11486103}}|publisher=Meiji Jinja Shiryō Compilation Office|isbn=|ref={{SfnRef|明治神社誌料|1912年}}}}
 ** [{{国立国会図書館デジタルコレクション|1088244/495}} 'Meiji Jinja Shiryō Fuken Gōsha (Upper)'] (National Diet Library Digital Collection), frame 495.
 * {{Cite book|ja|editor=|author=|year=2004|chapter=Sakitama Shrine|title={{ill|Japanese Historical Topography Series|Q17213509|qid=Q17213509}} 11 Place Names of Saitama Prefecture|publisher={{ill|Heibonsha|Q11482108|qid=Q11482108}}|isbn=4582910300|ref={{SfnRef|前玉神社（平凡社）|2004年}}}}
 * {{Cite book|ja|editor=Kenichi Tanigawa|editor-link=谷川健一|author=Reiji Harashima|authorlink=原島礼二|year=1984|chapter=Sakitama Shrine|title=Gods of Japan - Shrines and Sacred Sites - 11 Kantō|publisher={{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}}|isbn=4560025118|ref={{SfnRef|前玉神社（神々）|1984年}}}}
 
-=== Related items ===
+== Related items ==
 * {{ill|Sakitama Kofun Cluster|Q2213580|qid=Q2213580}}
 * {{ill|Sengenzuka Kofun|Q11557453|qid=Q11557453}}
 
-=== External links ===
+== External links ==
 {{Commonscat|Sakitama-jinja}}
 * [http://sakitama-jinja.com/index.html Musashi Province Sakitama Shrine] - official site
 
 {{神道 横}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Sakitama Shrine]][[Category:Shikinaisha|Sakitama Shrine]][[Category:Shikinaisha|Sakitama Shrine]][[Category:Shikinaisha in Musashi Province]]
 [[Category:Shinto shrines in Saitama Prefecture]]
 [[Category:行田市の建築物]]
@@ -171,4 +168,5 @@ List of annual festivals held at Sakitama Shrine<ref name="由緒書"/>.
 [[Category:Former Gō-sha in Saitama Prefecture]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

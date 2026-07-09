@@ -16,13 +16,12 @@
 | deity = {{ill|Ōkuninushi|lt=Ōkuninushi|ca|Ōkuninushi|en|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}
 }}
 
-{{nihongo|'''Kawase Shrine'''|河瀬神社 (彦根市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
+
 
 [[ja:河瀬神社 (彦根市)]]
 
 {{wikidata link|Q11554016|ja|河瀬神社 (彦根市)|grok=none|check_date=2026-05-31}}
 
-== Japanese content ==
 {{神社
 |名称= Kawase Shrine
 |画像= [[ファイル:Kawase jinja.JPG|270px|]]
@@ -37,50 +36,48 @@
 |地図= {{Location map|Japan Shiga|label=Kawase Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Kawase Shrine''' (かわせじんじゃ) is a shrine in {{ill|Hikone, Shiga|Q386635|qid=Q386635}}, {{ill|Shiga Prefecture|Q131358|qid=Q131358}}. It is treated as a {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}} for "Kawaketa Shrine" of Kanzaki District, {{ill|Ōmi Province|ca|Província d'Ōmi|ckb|پارێزگای ئۆمی|cs|Provincie Ómi|de|Provinz Ōmi|es|Provincia de Ōmi|fa|ولایت اومی|fi|Ōmin provinssi|fr|Province d'Ōmi|gl|Provincia de Ōmi|hak|Ōmi-koet|id|Provinsi Ōmi|it|Ōmi|ja|近江国|ko|오미국|lt|Omio žemė|nl|Omi (provincie)|pl|Prowincja Ōmi|pt|Província de Ōmi|ru|Оми (провинция)|simple|Ōmi Province|sk|Ómi (provincia)|sr|Провинција Оми|tr|Ōmi (vilayet)|uk|Провінція Омі|vi|Tỉnh Ōmi|zh|近江國|zh_min_nan|Ômi-kok|zh_yue|近江國|qid=Q843882}}, listed in the '{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}' (a candidate {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}})<ref>As candidate shrines for "Kawaketa Shrine," six are known: {{ill|Kawaketamikabe Shrine|Q11553975|qid=Q11553975}} (Kanda-chō, Yōkaichi, now {{ill|Higashiōmi|Q240891|qid=Q240891}}), {{ill|UNKNOWN|lt=Obata Shrine}} (Gokashō Nakamachi, Higashiōmi), {{ill|UNKNOWN|lt=Ōtaki Shrine}} (Kayao-chō, Higashiōmi), {{ill|UNKNOWN|lt=Kawawaki Shrine}} (Nakajuku, {{ill|Aishō, Shiga|Q1346806|qid=Q1346806}}, Aichi District), {{ill|UNKNOWN|lt=Kawaketa Shrine}} (Kōsaki-chō, Hikone), and this shrine in the former Inukami District.</ref>. It was formerly ranked as a {{ill|Gō-sha|Q134917316|qid=Q134917316|lt=gōsha}}.
+{{nihongo|'''Kawase Shrine'''|河瀬神社 (彦根市)}} is a shrine in {{ill|Hikone, Shiga|Q386635|qid=Q386635}}, {{ill|Shiga Prefecture|Q131358|qid=Q131358}}. It is treated as a {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}} for "Kawaketa Shrine" of Kanzaki District, {{ill|Ōmi Province|ca|Província d'Ōmi|ckb|پارێزگای ئۆمی|cs|Provincie Ómi|de|Provinz Ōmi|es|Provincia de Ōmi|fa|ولایت اومی|fi|Ōmin provinssi|fr|Province d'Ōmi|gl|Provincia de Ōmi|hak|Ōmi-koet|id|Provinsi Ōmi|it|Ōmi|ja|近江国|ko|오미국|lt|Omio žemė|nl|Omi (provincie)|pl|Prowincja Ōmi|pt|Província de Ōmi|ru|Оми (провинция)|simple|Ōmi Province|sk|Ómi (provincia)|sr|Провинција Оми|tr|Ōmi (vilayet)|uk|Провінція Омі|vi|Tỉnh Ōmi|zh|近江國|zh_min_nan|Ômi-kok|zh_yue|近江國|qid=Q843882}}, listed in the '{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}' (a candidate {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}})<ref>As candidate shrines for "Kawaketa Shrine," six are known: {{ill|Kawaketamikabe Shrine|Q11553975|qid=Q11553975}} (Kanda-chō, Yōkaichi, now {{ill|Higashiōmi|Q240891|qid=Q240891}}), {{ill|UNKNOWN|lt=Obata Shrine}} (Gokashō Nakamachi, Higashiōmi), {{ill|UNKNOWN|lt=Ōtaki Shrine}} (Kayao-chō, Higashiōmi), {{ill|UNKNOWN|lt=Kawawaki Shrine}} (Nakajuku, {{ill|Aishō, Shiga|Q1346806|qid=Q1346806}}, Aichi District), {{ill|UNKNOWN|lt=Kawaketa Shrine}} (Kōsaki-chō, Hikone), and this shrine in the former Inukami District.</ref>. It was formerly ranked as a {{ill|Gō-sha|Q134917316|qid=Q134917316|lt=gōsha}}. {{nihongo|'''Kawase Shrine'''|河瀬神社 (彦根市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ōmi Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The current {{ill|Saijin|Q11591100|qid=Q11591100}} are three {{ill|Column|Q4817|qid=Q4817}}: {{ill|UNKNOWN|lt=Ōnamuchi-no-Kami}}, {{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997|lt=Hondawake-no-Mikoto}}, and {{ill|Oyamakui no Kami|qid=Q10935105|lt=Ōyamakui-no-Mikoto}}. If this shrine was the Engishiki "Kawaketa Shrine," many theories hold that the original deity was {{ill|UNKNOWN|lt=Ame-no-Yukawaketa-no-Mikoto}}<ref>For example: {{ill|Deguchi Nobutsune|Q108780926|qid=Q108780926}}, '{{ill|Engishiki Jinmyōchō Studies|Q11588824|qid=Q11588824}}'; {{ill|Kurita Hiroshi|Q6536170|qid=Q6536170}}, '{{ill|UNKNOWN|lt=Jingishi-ryō}}'; '{{ill|Tokusen Jinmyōchō|Q11571092|qid=Q11571092}}'; and '{{ill|Dai Nihonshi|Q1156003|qid=Q1156003|lt=Dai Nihon Shi Jingi-shi}}'. '{{ill|Ōmi Yochi Shiryaku|Q85883966|qid=Q85883966}}' identifies this shrine as the Shikinaisha but does not state the enshrined deity, and '{{ill|Jinja Kakuroku|Q11590708|qid=Q11590708}}' says "deity unknown."</ref>.
 
 It has long been worshiped as a deity of commerce. Because "Kawase" can also be read as "exchange," it also attracts worship from people in finance.
 
-=== History ===
+== History ==
 The founding date is unknown, but until the {{ill|Edo period|Q184963|qid=Q184963}} it was called "Kawaketa Shrine," "Keta-no-miya," and "Keta Daimyōjin."<ref name="#1">{{PDFlink|[http://www.city.hikone.shiga.jp/kikakushinkobu/johoseisaku/pdf/20120501KH08.pdf Kōhō Hikone, May 1 2012 issue, p.17, serial feature: My town in the Sengoku era, No.22 - Kawase Castle - flatland fort linked to the Kawase clan]}}</ref> In {{ill|Genki (era)|Q1145064|qid=Q1145064}} 1 ({{ill|1570|Q6659|qid=Q6659}}), the lords of {{ill|UNKNOWN|lt=Kawase-no-shō}}<ref>[http://kids.city.hikone.shiga.jp/carta/card_so.html Hikone City Hall: Learn Hikone history through karuta]</ref>, the Kawase clan, repaired the shrine buildings and donated rice fields. Through the Edo period it was revered by the Ii lords of {{ill|Hikone Domain|Q1062225|qid=Q1062225}}, and at major festivals a {{ill|Bugyō|Q2535820|qid=Q2535820}} was dispatched for ceremonial security<ref>'Shintō Daijiten.'</ref>. According to "Jinja Yūshoki" compiled by Shiga Prefecture's education section, in {{ill|Enpō|Q1145735|qid=Q1145735}} 3 ({{ill|1675|Q7624|qid=Q7624}}), Kawase Iki-no-kami and his grandson Kawase Hayato-no-shō, former local lords of Kawase-no-shō, re-established the shrine by inviting {{ill|Aidono|Q135009883|qid=Q135009883|lt=aiden deities}}<ref>Which deity/deities these aiden referred to is unknown.</ref>.
 
 In the {{ill|Meiji era|Q3125096|qid=Q3125096}} era it was renamed "Kawase Shrine." It was ranked gōsha on January 17, Meiji 5 ({{ill|1872|Q7753|qid=Q7753}}), temporarily demoted to {{ill|Son-sha|ja|村社|qid=Q134917284}} on October 21, Meiji 9, restored to gōsha again on February 1, Meiji 14, and designated as a {{ill|UNKNOWN|lt=shrine receiving offerings of sacred food and cloth}} on April 29, Meiji 41. A 2012 survey by Hikone City's cultural-properties section estimated nearby remains to be those of {{ill|Kawase Castle|Q11554012|qid=Q11554012}}.<ref name="#1"/>
 
-=== Shrine buildings ===
+== Shrine buildings ==
 The {{ill|Honden|Q2044994|qid=Q2044994}} is a {{ill|Nagare-zukuri|fr|Nagare-zukuri|it|Nagare-zukuri|ja|流造|pl|Nagare-zukuri|ru|Нагарэ-дзукури|sv|Nagare-zukuri|zh|流造|qid=Q210684|lt=sangen-sha nagare-zukuri}} structure. It was relocated in {{ill|Genji era|Q1325419|qid=Q1325419}} 1 ({{ill|1864|ab|1864|af|1864|als|1864|am|1864 እ.ኤ.አ.|an|1864|ar|1864|ary|1864|arz|1864|ast|1864|avk|1864|az|1864|azb|۱۸۶۴ (میلادی)|ba|1864 йыл|ban|1864|bar|1864|bat_smg|1864|bcl|1864|be|1864|be_x_old|1864|bg|1864|bn|১৮৬৪|bpy|মারি ১৮৬৪|br|1864|bs|1864.|ca|1864|cdo|1864 nièng|ce|1864 шо|ceb|1864|ckb|١٨٦٤|crh|1864|cs|1864|csb|1864|cv|1864|cy|1864|da|1864|de|1864|diq|1864|el|1864|eml|1864|eo|1864|es|1864|et|1864|eu|1864|fa|۱۸۶۴ (میلادی)|fi|1864|fiu_vro|1864|fo|1864|fr|1864|frp|1864|frr|1864|fur|1864|fy|1864|ga|1864|gan|1864年|gcr|1864|gd|1864|gl|1864|gn|1864|gv|1864|he|1864|hi|१८६४|hif|1864|hr|1864.|hsb|1864|ht|1864 (almanak gregoryen)|hu|1864|hy|1864|hyw|1864 թուական|ia|1864|id|1864|ilo|1864|inh|1864 шу|io|1864|is|1864|it|1864|ja|1864年|jv|1864|ka|1864|kaa|1864|kk|1864 жыл|kn|೧೮೬೪|ko|1864년|krc|1864 джыл|kv|1864-ӧд во|la|1864|lb|1864|lez|1864 йис|li|1864|lij|1864|lmo|1864|lt|1864 m.|lv|1864. gads|mai|१८६४|map_bms|1864|mdf|1864|mg|1864|mhr|1864|mi|1864|min|1864|mk|1864|mn|1864 он|mr|इ.स. १८६४|mrj|1864 и|ms|1864|my|၁၈၆၄|myv|1864 ие|mzn|۱۸۶۴|nah|1864|nap|1864|nds|1864|nds_nl|1864|new|ई सं १८६४|nl|1864|nn|1864|no|1864|nov|1864|nrm|1864|nso|1864|oc|1864|olo|1864|or|୧୮୬୪|os|1864-æм аз|pa|1864|pl|1864|pnb|1864|pt|1864|qu|1864|ro|1864|roa_rup|1864|ru|1864 год|rue|1864|sa|१८६४|sah|1864|scn|1864|sd|1864ع|se|1864|sh|1864.|shn|1864|si|1864|simple|1864|sk|1864|sl|1864|smn|1864|sq|1864|sr|1864|stq|1864|su|1864|sv|1864|sw|1864|szl|1864|ta|1864|te|1864|tg|Соли 1864|th|พ.ศ. 2407|tk|1864|tl|1864|tly|1864|tr|1864|tt|1864 ел|udm|1864 ар|ug|1864 - يىلى|uk|1864|ur|1864ء|uz|1864|vec|1864|vi|1864|vls|1864|vo|1864|wa|1864|war|1864|wuu|1864年|xmf|1864|yi|1864|za|1864 nienz|zea|1864|zh|1864年|zh_min_nan|1864 nî|zh_yue|1864年|qid=Q7704}}) from shrine buildings of {{ill|Kamigamo Shrine|Q700448|qid=Q700448}} in {{ill|Kyoto|Q34600|qid=Q34600}}, {{ill|Kyoto Prefecture|ace|Prefektur Kyoto|af|Kioto-prefektuur|an|Prefectura de Kyoto|ar|كيوتو (محافظة)|ast|Prefeutura de Kyoto|az|Kioto prefekturası|azb|کیوتو اوستانی|ban|Préféktur Kyoto|bat_smg|Kijuota prefektūra|be|Кіёта (прэфектура)|bg|Киото (префектура)|bn|কিয়োতো প্রশাসনিক অঞ্চল|ca|Prefectura de Kyoto|cdo|Gĭng-dŭ-hū|ce|Киото (префектура)|ceb|Kyōto-fu|ckb|پارێزگای کیۆتۆ|cs|Prefektura Kjóto|cy|Kyoto (talaith)|da|Kyoto-præfekturet|de|Präfektur Kyōto|eo|Gubernio Kioto|es|Prefectura de Kioto|et|Kyōto prefektuur|eu|Kyoto (prefektura)|fa|استان کیوتو|fi|Kioton prefektuuri|fr|Préfecture de Kyoto|frr|Kyōto (Prefektüür)|ga|Maoracht Kyoto|gl|Prefectura de Kyoto|hak|Kîn-tû-fú|he|קיוטו (מחוז)|hr|Kyōto (prefektura)|hu|Kiotó prefektúra|hy|Կիոտո (պրեֆեկտուրա)|id|Prefektur Kyoto|ilo|Prepektura ti Kyoto|is|Kyoto-hérað|it|Prefettura di Kyoto|ja|京都府|ka|კიოტოს პრეფექტურა|km|ក្យូតុ(ខេត្ត)|ko|교토부|la|Kyotensis|lt|Kioto prefektūra|lv|Kioto prefektūra|mk|Кјото (префектура)|mni|ꯀ꯭ꯌꯣꯇꯣ ꯂꯝꯈꯥꯢ|mr|क्योतो प्रांत|ms|Wilayah Kyoto|my|ကျိုတိုစီရင်စု|nl|Kyoto (prefectuur)|no|Kyoto (prefektur)|os|Киото (префектурæ)|pam|Prepektura ning Kyoto|pl|Prefektura Kioto|pnb|ضلع کیوٹو|pt|Quioto (prefeitura)|ro|Prefectura Kyoto|ru|Киото (префектура)|sco|Kyoto Prefectur|sd|ڪيوٽو پريفيڪچر|se|Kyōto prefektuvra|sh|Prefektura Kyōto|si|ක්යෝතෝ ප්‍රාන්තය|simple|Kyoto Prefecture|sk|Kjóto (prefektúra)|sl|Prefektura Kjoto|sr|Префектура Кјото|su|Préféktur Kyoto|sv|Kyoto prefektur|sw|Mkoa wa Kyoto|ta|கியோத்தோ நகரிய மாநிலம்|tg|Префектураи Кёто|th|จังหวัดเกียวโต|tl|Prepektura ng Kyoto|tr|Kyoto (prefektörlük)|tt|Киото (префектура)|uk|Префектура Кіото|ur|کیوتو پریفیکچر|uz|Kioto prefekturasi|vec|Prefetura de Kyoto|vi|Kyōto|war|Kyoto (prefektura)|wuu|京都府|zh|京都府|zh_classical|京都府|zh_min_nan|Kiaⁿ-to͘-hú|zh_yue|京都府|qid=Q120730}}. There are also an {{ill|East Asian hip-and-gable roof|Q855025|qid=Q855025}} {{ill|Haiden (Shinto)|Q3125745|qid=Q3125745}} and a {{ill|Kagura-den|es|Kaguraden|fi|Kaguraden|fr|Kagura-den|it|Kagura-den|ja|神楽殿|qid=Q94498}}.
 
 <gallery widths="240px" heights="180px">
 ファイル:Kawase jinja honden enkei.JPG|'''Distant view of honden'''
 ファイル:Kawase jinja honden syoumen.JPG|'''Front of honden'''
 </gallery>
-=== Precinct shrines ===
+== Precinct shrines ==
 Isorowa Shrine, Hachiman Shrine, Wakamatsu Shrine, Hachidai Shrine, Tennei Shrine, Kaminoki Shrine, Tsujinaka Shrine, Tenmangū-sha, Tenman Shrine
 
-=== Precinct ===
+== Precinct ==
 * Monument to Tanemura Genpei (Horsehead commemorative stele)
 
-=== Access ===
+== Access ==
 * From {{ill|Kawase Station|arz|محطة كاواس|eo|Stacio Kawase|fr|Gare de Kawase|it|Stazione di Kawase|ja|河瀬駅|ko|가와세역|my|ခဝဆဲဘူတာ|nl|Station Kawase|ur|کاوارسے اسٹیشن|zh|河瀨車站|qid=Q614782}} on the {{ill|Biwako Line|de|Biwako-Linie|eo|Linio Biwako|es|Línea Biwako|fr|Ligne Biwako|hu|Bivako-vonal|it|Linea Biwako|ja|琵琶湖線|ko|비와코선|nl|JR Biwako-lijn|th|สายบิวาโกะ|vi|Tuyến Biwako|zh|琵琶湖線|qid=Q804135}} ({{ill|Tōkaidō Main Line|de|Tōkaidō-Hauptlinie|eo|Linio Tōkaidō (ĉefa)|fa|خط اصلی توکایدو|fr|Ligne principale Tōkaidō|hu|Tókaidó-vasútvonal|id|Jalur Utama Tōkaidō|it|Linea principale Tōkaidō|ja|東海道本線|ko|도카이도 본선|nl|Tokaido-lijn|no|Tōkaidōlinjen|pt|Linha principal Tōkaidō|ru|Линия Токайдо|su|Jalur Utama Tōkaidō|sv|Tokaidolinjen|th|สายหลักโทไกโด|tl|Pangunahing Linyang Tōkaidō|tr|Tōkaidō Ana Hattı|vi|Tuyến Tōkaidō chính|wuu|东海道本线|zh|東海道本線|zh_yue|東海道本線|qid=Q1190152}}), take the reservation-only Ainori Taxi Kawase to Kawasebabachō Kōminkan stop; 2 minutes on foot.
 * About 12 minutes on foot from Kawase Station.
 
-=== Notes ===
+== Notes ==
 {{Reflist|2}}
 
-=== References ===
+== References ==
 * Shikinaisha Kenkyūkai (ed.), 'Shikinaisha Chōsa Hōkoku Tōsandō 1,' {{ill|UNKNOWN|lt=Kōgakkan University Press}}, 1981
 * Supervised by {{ill|Naokazu Miyaji|ja|宮地直一|qid=Q11453535}} and {{ill|Saeki Ariyoshi|Q11382847|qid=Q11382847}}, 'Shintō Daijiten (compact edition),' {{ill|Rinsen Shoten|ja|臨川書店|qid=Q11612454}}, 1969, ISBN 4-653-01347-0 (first edition by {{ill|Heibonsha|Q11482108|qid=Q11482108}}, 1937)
 
-=== External links ===
+== External links ==
 * [http://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=182 Kawase Shrine (Shiga Prefecture Shrine Office)]
 * [https://yaokami.jp/1250232/ Kawase Shrine (Yaokami)]
 
 {{神道 横}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Kawase Shrine]][[Category:Shikinaisha|Kawase Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Ōmi Province]]
 [[Category:Shinto shrines in Shiga Prefecture]]
@@ -90,4 +87,5 @@ Isorowa Shrine, Hachiman Shrine, Wakamatsu Shrine, Hachidai Shrine, Tennei Shrin
 [[Category:Buildings and structures in Hikone, Shiga]]
 [[Category:Former Gō-sha in Shiga Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

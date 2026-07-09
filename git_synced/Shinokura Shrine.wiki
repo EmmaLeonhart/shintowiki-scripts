@@ -16,13 +16,12 @@
 | deity = {{ill|Ōkuninushi|lt=Ōkuninushi|ca|Ōkuninushi|en|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}
 }}
 
-{{nihongo|'''Shinokura Shrine'''|篠座神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Echizen Province]].
+
 
 [[ja:篠座神社]]
 
 {{wikidata link|Q11603763|ja|篠座神社|check_date=2026-05-25}}
 
-== Japanese content ==
 {{神社
  | 名称=Shinokura Shrine
  | 画像=[[File:shinokurashrinehaidenwinter.jpg|270px|Shinokura Shrine (Ōno City)]]<br />Haiden
@@ -37,35 +36,33 @@
 {{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=200}}
 }}
 
-'''Shinokura Shrine''' (しのくらじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Shinokura, {{ill|Ōno, Fukui|Q385684|qid=Q385684}}, {{ill|Fukui Prefecture|Q133879|qid=Q133879}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} and its former {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} was {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}.
+{{nihongo|'''Shinokura Shrine'''|篠座神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Shinokura, {{ill|Ōno, Fukui|Q385684|qid=Q385684}}, {{ill|Fukui Prefecture|Q133879|qid=Q133879}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} and its former {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} was {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}. {{nihongo|'''Shinokura Shrine'''|篠座神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Echizen Province]].
 
-=== Enshrined deities ===
-=== Main deity ===
+== Enshrined deities ==
+== Main deity ==
 *'''{{ill|UNKNOWN|lt=Ōnamuchi Ōkami}}''' (おおなむちのおおかみ)
 
-=== Associated enshrinements ===
+== Associated enshrinements ==
 *{{ill|Sukunabikona|lt=Sukunahikona-no-Mikoto|qid=Q3275687}} (すくなひこなのみこと)
 *{{ill|Ichikishima-hime|fr|Ichikishimahime|ja|イチキシマヒメ|simple|Ichikishima-hime|zh|市寸島比賣命|qid=Q11059454|lt=Ichikishimahime-no-Mikoto}} (いちきしまひめのみこと)
 *{{ill|Emperor Ōjin|Q317997|qid=Q317997|qid=Q317997|lt=Hondawake-no-Mikoto}} (ほんだわけのみこと)
 *{{ill|UNKNOWN|lt=Konohanasakuyahime-no-Mikoto}} (このはなさくやひめのみこと)
 
-=== History ===
+== History ==
 According to shrine history, in {{ill|UNKNOWN|lt=Yōrō}} 1 ({{ill|717|Q23532|qid=Q23532}}), in March, monk {{ill|Taichō|Q2388439|qid=Q2388439}} set out from Asōzu intending to ascend {{ill|Mount Haku|Q2639098|qid=Q2639098}} and, upon arriving in Ōno, stayed for about ten days at a place south of the shrine where clear spring water flowed from woodland. He reached the summit of Hakusan on {{ill|June 18|Q2670|qid=Q2670}} of the same year, and when he returned to Shinokura in September, he received an oracle: “I am Ōnamuchi-no-Mikoto. This is an excellent woodland-spring place where I always delight my heart and descend to wander.” A shrine was then established, which is taken as the origin of enshrinement. In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, it is listed as one of the nine shrines of {{ill|Ōno District, Fukui|Q8081656|qid=Q8081656|lt=Ōno District}}, {{ill|Echizen Province|ceb|Echizen|cs|Provincie Ečizen|de|Provinz Echizen|es|Provincia de Echizen|fa|ولایت اچیزن|fr|Province d'Echizen|gl|Provincia de Echizen|id|Provinsi Echizen|it|Echizen (provincia)|ja|越前国|ko|에치젠국|lt|Ečidzeno žemė|nl|Echizen (provincie)|pt|Província de Echizen|ru|Этидзэн (провинция)|simple|Echizen Province|sk|Ečizen (provincia)|sr|Провинција Ечизен|tr|Echizen (vilayet)|uk|Провінція Етідзен|zh|越前國|zh_min_nan|Etizen-kok|zh_yue|越前國|qid=Q1047144}}, and ranked as a small shrine.
 
 {{ill|Ifuriyama|Q11666745|qid=Q11666745}}, rising behind the shrine, is also called “Otake-san” and is regarded as an ancient {{ill|Sacred mountains|Q1595289|qid=Q1595289}}. On the {{ill|Chunfen|Q1339268|qid=Q1339268}} and {{ill|Qiufen|Q1200436|qid=Q1200436}}, the sun sets at the summit on the extension line of the torii and shrine building.
 [[ファイル:Higanshinokurashrine.jpg|サムネイル|Sunset over Mt. Iiburi as seen from Shinokura Shrine]]
 
-=== Access ===
+== Access ==
 *15 minutes on foot south from {{ill|Echizen-Ōno Station|Q2815910|qid=Q2815910}} on the {{ill|Etsumi-Hoku Line|Q5357982|qid=Q5357982}} of {{ill|West Japan Railway Company|Q502125|qid=Q502125}}.
 *From Echizen-Ōno Station, get off at the “Shinokura Shrine Sandō-guchi” stop on {{ill|Ōno municipal bus #Blue Bus|Q108060249|qid=Q108060249}}, then immediate walk.
 *From {{ill|Fukui Station (Fukui)|Q867992|qid=Q867992|lt=Fukui Station}} or {{ill|Katsuyama Station|Q11400269|qid=Q11400269}}, take {{ill|Keifuku Bus|Q6383575|qid=Q6383575}} and get off at “Vio,” then 5 minutes on foot east.
 
-=== External links ===
+== External links ==
 *[http://www.shinokura.net/ Shinokura Shrine] (official site)
 
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Shinokura Shrine]][[Category:Shikinaisha|Shinokura Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Echizen Province]]
 [[Category:Shinto shrines in Fukui Prefecture]]
@@ -76,4 +73,5 @@ According to shrine history, in {{ill|UNKNOWN|lt=Yōrō}} 1 ({{ill|717|Q23532|qi
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Former Prefectural Shrines in Fukui Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

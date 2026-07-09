@@ -16,14 +16,13 @@
 | deity = {{ill|Emperor Jimmu|lt=Jimmu|ar|الإمبراطور جينمو|arz|الامبراطور جينمو|as|জিম্মু|az|Cimmu|bcl|Emperador Jimmu|be|Імператар Дзіму|ca|Jinmu|cdo|Sìng-ū Tiĕng-huòng|ckb|ئیمپراتۆر جینمو|cs|Džimmu|de|Jimmu|el|Αυτοκράτορας Τζίμου|en|Emperor Jimmu|eo|Imperiestro Ĵinmu|es|Jinmu Tennō|et|Jimmu|eu|Jimmu enperadorea|fa|امپراتور جینمو|fi|Jinmu|fr|Jinmu|hak|Sṳ̀n-vú Thiên-fòng|he|ג'ימו, קיסר יפן|hi|सम्राट जिममु|hr|Jinmu|hu|Dzsinmu japán császár|id|Jimmu|it|Jinmu|ja|神武天皇|jv|Jimmu Tenno|ka|ძიმუ|ko|진무 천황|kw|Emperour Jimmu|la|Jimmu|lt|Imperatorius Džinmu|lv|Džimmu|mn|Эзэн Хаан Жиммү|mr|जिम्मू|ms|Maharaja Jimmu|my|ဂျင်းမူ ဧကရာဇ်|nl|Jimmu|no|Jimmu|pl|Jimmu|pt|Jimmu|ru|Император Дзимму|sh|Car Jimmu|simple|Emperor Jimmu|sl|Cesar Džinmu|sr|Џинму|sv|Jimmu|th|จักรพรรดิจิมมุ|tl|Emperador Jimmu|tr|Jimmu|uk|Імператор Дзімму|uz|Jimmu|vi|Thiên hoàng Jimmu|war|Emperador Jimmu|wuu|神武天皇|zh_classical|神武天皇|zh_min_nan|Sîn-bú Thian-hông|zh_yue|神武天皇|zh|神武天皇|qid=Q200188}}
 }}
 
-{{nihongo|'''Takabeya Shrine'''|高部屋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
+
 
 {{commons category|Category:Takabeya-jinja}}
 [[ja:高部屋神社]]
 
 {{wikidata link|Q11672973|commons|Category:Takabeya-jinja|ja|高部屋神社|check_date=2026-05-26}}
 
-== Japanese content ==
 {{神社
 |名称   = Takabeya Shrine
 |画像   = [[File:高部屋神社.jpg|250px]]<br />Torii and worship hall
@@ -39,9 +38,9 @@
 |地図 = {{Location map|Japan Kanagawa|label=Takabeya Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Takabeya Shrine''' (たかべやじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Shimokasuya, {{ill|Isehara, Kanagawa|Q734520|qid=Q734520}}, {{ill|Kanagawa Prefecture|Q127513|qid=Q127513}}. It is considered one of the 13 Engishiki shrines (minor shrine) in {{ill|Sagami Province|Q1053732|qid=Q1053732}} listed in the '{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}' of Enchō 5 ({{ill|927|Q30470|qid=Q30470}}){{sfn|新編相模国風土記稿 下糟屋村 八幡宮}}, though as noted below there are also competing claim shrines ({{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}}). Its former shrine rank was Village Shrine.
+{{nihongo|'''Takabeya Shrine'''|高部屋神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Shimokasuya, {{ill|Isehara, Kanagawa|Q734520|qid=Q734520}}, {{ill|Kanagawa Prefecture|Q127513|qid=Q127513}}. It is considered one of the 13 Engishiki shrines (minor shrine) in {{ill|Sagami Province|Q1053732|qid=Q1053732}} listed in the '{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}' of Enchō 5 ({{ill|927|Q30470|qid=Q30470}}){{sfn|新編相模国風土記稿 下糟屋村 八幡宮}}, though as noted below there are also competing claim shrines ({{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}}). Its former shrine rank was Village Shrine. {{nihongo|'''Takabeya Shrine'''|高部屋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]].
 
-=== Overview ===
+== Overview ==
 It was formerly the village shrine of {{ill|Takabeya|Q11672972|qid=Q11672972}} in {{ill|Ōsumi district|Q11432367|qid=Q11432367}} with the same shrine name, and was also revered as the general tutelary shrine of {{ill|UNKNOWN|lt=Kasuya-shō}}<ref group="注">The place name Kasuya of Kasuya-shō still remains, but note that “Kami'''Kasu'''ya” and “Shimo'''Kasu'''ya” are written with different characters.</ref>, including this district.
 
 Its founding date is unknown. It is listed in the '{{ill|UNKNOWN|lt=Engishiki Jinmyōchō}}' as one of 13 seats in Sagami Province and was the general tutelary shrine of 127 villages in Ōsumi District. However, {{ill|Takamori Shrine|Q0|qid=Q0|lt=Takamori Shrine}} in Takamori, Isehara, is also considered one of the claim shrines for the Shikinaisha “Takabeya Shrine.” One reason is that this shrine is said to have been called “Takabeya Shrine” before the Meiji-era {{ill|Shinbutsu bunri|Q1970535|qid=Q1970535}}, and inscriptions reading “Takabeya Shrine” remain on timbers and on the back side of the stone monument beside its {{ill|Torii|Q234731|qid=Q234731}}<ref>[http://w1.oroti.net/~takamori/htdocs/ Sagami no Kuni Takamori Shrine] (official website), history page.</ref>.
@@ -54,27 +53,27 @@ The shrine preserves three old gagaku masks used in rituals from the Kamakura pe
 
 At present it is concurrently administered by {{ill|Isehara Daijingu|Q11378955|qid=Q11378955}}, where one may also receive {{ill|Shuin|Q7504772|qid=Q7504772|lt=seal stamps}}.
 
-=== History ===
+== History ==
 * {{ill|1551|Q6560|qid=Q6560}} (Tenbun 20) - Shrine buildings rebuilt by local {{ill|Jitō|Q1329805|qid=Q1329805}} Watanabe Iwami-no-kami.
 * {{ill|1591|Q6766|qid=Q6766}} (Tenshō 19) - 10-koku red-seal grant donated by Tokugawa Ieyasu.
 * {{ill|1865|Q7708|qid=Q7708}} (Keiō 1) - Shrine buildings restored.
 * {{ill|1923|Q2169|qid=Q2169}} (Taishō 12) - Main sanctuary collapsed in the {{ill|aftermath of 1923 Great Kantō earthquake|Q3742341|qid=Q3742341}}.
 * {{ill|1929|Q18792|qid=Q18792}} (Shōwa 4) - Main sanctuary rebuilt.
 
-=== Rituals ===
+== Rituals ==
 [[File:Takabeya-jinja(Isehara) Kaguraden.jpg|200px|right|thumb|Kagura hall]]
 A ritual called “Shiokumi no Shinji” has been held in September for over 1,000 years since the {{ill|Heian period|Q193292|qid=Q193292}}. The beach sand used in the rite is taken from Terugasaki Coast, where {{ill|Sumiyoshi sanjin|lt=Sumiyoshi Ōkami|qid=Q1114013}} (Ōsumi Daimyōjin) is said to have landed. Until around the early {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} period, the shrine duty group and priest walked the 16 {{ill|Kilometre|Q828224|qid=Q828224|lt=km}} one way to Terugasaki to collect seawater, beach sand, and hondawara seaweed (sargassum). The seawater is used as fire-quelling sacred water; the beach sand is spread on the approach for purification; the hondawara is hung on shimenawa at the worship hall and torii.
 
-=== Precincts ===
+== Precincts ==
 Within the precincts are the main sanctuary, worship hall, {{ill|Kagura-den|Q94498|qid=Q94498}}, purification place, {{ill|UNKNOWN|lt=temizuya}}, {{ill|Bonshō|Q8192099|qid=Q8192099|lt=temple bell}}, playground equipment, and the following precinct shrines.
 
-=== National Registered Tangible Cultural Properties ===
+== National Registered Tangible Cultural Properties ==
 ; Main sanctuary
 : Collapsed in the Great Kantō Earthquake and rebuilt in Shōwa 4. Most major timbers are reused from the pre-collapse main sanctuary rebuilt in {{ill|Shōhō|Q1146192|qid=Q1146192}} 4 (1647). Registered as a National Registered Tangible Cultural Property on February 25, 2016.
 ; Worship hall
 : Rebuilt in Keiō 1 (1865). Like the main sanctuary, registered as a National Registered Tangible Cultural Property on February 25, 2016.
 
-=== Important Cultural Property of Kanagawa Prefecture ===
+== Important Cultural Property of Kanagawa Prefecture ==
 ; Bell tower
 : In {{ill|Shitoku|Q1146202|qid=Q1146202|lt=Shitoku}} 3 (1386) December, Taira Hidenori donated a bronze bell. The bell is designated an Important Cultural Property of Kanagawa Prefecture.
 
@@ -84,7 +83,7 @@ File:Takabeya-jinja(Isehara) Honden.jpg|Main sanctuary
 File:Takabeya-jinja(Isehara) Shourou.jpg|Bell tower
 </gallery>
 
-=== Precinct shrines ===
+== Precinct shrines ==
 * {{ill|Yasaka Shrine (disambiguation)|Q2599651|qid=Q2599651|lt=Yasaka Shrine}}
 * {{ill|Kotohira shrines|ja|金刀比羅神社|simple|Kotohira shrines|qid=Q11646488|lt=Kotohira-gū}}
 * {{ill|UNKNOWN|lt=Inari Shrine}}, {{ill|UNKNOWN|lt=Suijin Shrine}}, {{ill|Kōshin Shrine|ja|庚申社|qid=Q11486003}}, {{ill|Rāgarāja|es|Aizen Myō-ō|fr|Rāgarāja|hu|Rágarádzsa|id|Rāgarāja|it|Aizen Myōō|ja|愛染明王|ko|애염명왕|mad|Rāgarāja|ms|Rāgarāja|pt|Aizen Myōō|ru|Рагараджа|sv|Aizen-Myoo|uk|Раґа-раджа|zh|愛染明王|qid=Q1188900}}
@@ -100,43 +99,41 @@ File:Takabeya-jinja(Isehara) Inarisha.jpg|Inari Shrine
 File:Takabeya-jinja(Isehara) Mizugami.jpg|Water deity
 </gallery>
 
-=== Images of the worship hall ===
+== Images of the worship hall ==
 <gallery widths="200px" heights="150px">
 ファイル:Tesshu takabeya 00.jpg|Under the eaves at the front of the worship hall is a shrine-name plaque “髙部屋神社” written by {{ill|Yamaoka Tesshū|de|Yamaoka Tesshū|es|Yamaoka Tesshū|fa|یامائوکا تشو|fr|Yamaoka Tesshū|id|Yamaoka Tesshū|it|Yamaoka Tesshū|ja|山岡鉄舟|ru|Ямаока Тэссю|vi|Yamaoka Tesshū|zh|山岡鐵舟|qid=Q1158894}}.
 ファイル:Takabeya_honden.jpg|Carving on the worship-hall kōhai
 </gallery>
 
-=== Access ===
+== Access ==
 * About 20 minutes on foot from {{ill|Isehara Station|arz|محطة ايسيهارا|fr|Gare d'Isehara|it|Stazione di Isehara|ja|伊勢原駅|ko|이세하라역|my|အိဆဲဟရဘူတာ|ru|Исэхара (станция)|ur|ایسہارا اسٹیشن|zh|伊勢原站|qid=Q4205219}} on the {{ill|Odakyū Odawara Line|de|Odakyū Odawara-Linie|es|Línea Odakyu Odawara|fa|خط اوداکیو-اوداوارا|fr|Ligne Odakyū Odawara|it|Linea Odakyū Odawara|ja|小田急小田原線|ko|오다큐 오다와라선|nl|Odawara-lijn|ru|Линия Одавара (Одакю)|th|รถไฟฟ้าโอดะกีวสายโอดาวาระ|zh|小田原線|qid=Q135176}}.
 * Bus from the station north exit on {{ill|Kanagawa Chuo Kotsu|ja|神奈川中央交通|ko|가나가와 중앙 교통|qid=Q10854960}}:
 ** {{ill|I76 route|ja|神奈川中央交通伊勢原営業所|qid=Q11588882}} bound for {{ill|Aikō-Ishida Station|arz|محطة ايكو ايشيدا|it|Stazione di Aikō-Ishida|ja|愛甲石田駅|ko|아이코이시다역|my|အအိခိုး − အိရှိဒဘူတာ|ru|Аико-Исида|ur|آئی کو-ایشیڈا اسٹیشن|zh|爱甲石田站|qid=Q1107009}}, get off at “Kasuya-Kamijuku,” 3-minute walk.
 ** {{ill|I74 route|ja|神奈川中央交通伊勢原営業所|qid=Q11588882}} bound for Aiko-Ishida Station, get off at “Awakubo Iriguchi,” 4-minute walk.
 
-=== Footnotes ===
+== Footnotes ==
 {{脚注ヘルプ}}
-=== Notes ===
+== Notes ==
 <references group="注"/>
-=== References ===
+== References ==
 <references />
 
-=== Bibliography ===
+== Bibliography ==
 * {{cite book|ja|title=Dai Nihon Chishi Taikei|volume=Vol.37 {{ill|Shinpen Sagami no Kuni Fudoki-kō|ja|新編相模国風土記稿|qid=Q11503942}} 2, Village Section, Ōsumi District Vol.3|chapter=Kasuya-shō Shimokasuya Village Hachimangū|id={{NDLJP|1179210/192}}|ref={{sfnref|新編相模国風土記稿 下糟屋村 八幡宮}}|publisher=Yūzankaku|date=1932-8}}
 
-=== Related items ===
+== Related items ==
 {{commonscat|Takabeya-jinja}}
 * {{ill|List of Shikinaisha in Sagami Province|Q11582137|qid=Q11582137}}
 * {{ill|Takamori Shrine|Q0|qid=Q0|lt=Takamori Shrine}} (Takamori, Isehara) - one of the claim shrines for the Shikinaisha “Takabeya Shrine.”
 * {{ill|Takabeya|Q11672972|qid=Q11672972}} - a former village; not directly related.
 
-=== External links ===
+== External links ==
 * [http://www.kanagawa-jinja.or.jp/search_dtl.php4?jid=819&cd=1209262&scd=&npg=0 Takabeya Shrine] (Kanagawa Prefecture Shrine Office)
 * [http://takabeyajinja.blog.fc2.com/ Takabeya Shrine Owl Journal] (official parishioner-run blog)
 * [https://sites.google.com/view/koujinkai-kagumi-isehara/ Isehara Kōshinkai] (official site of Takabeya Shrine Mikoshi Preservation Association)
 
 {{Shinto-stub}}
 {{Pref-stub|pref=神奈川県}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Takabeya Shrine]][[Category:Shikinaisha|Takabeya Shrine]][[Category:Hachiman shrines]]
 [[Category:Shinto shrines in Kanagawa Prefecture]]
 [[Category:Municipal History of Isehara]]
@@ -144,4 +141,5 @@ File:Takabeya-jinja(Isehara) Mizugami.jpg|Water deity
 [[Category:Shikinaisha in Sagami Province]]
 [[Category:Son-sha in Kanagawa Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

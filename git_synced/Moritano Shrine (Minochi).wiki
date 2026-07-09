@@ -16,11 +16,10 @@
 | deity = {{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997|lt=Ōjin}}
 }}
 
-{{nihongo|'''Moritano Shrine'''|守田迺神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Shinano Province]].
+
 
 {{wikidata link|Q11450096|ja|守田迺神社|grok=none|check_date=2026-06-02}}
 
-== Japanese content ==
 {{Shinto shrine
 |Name   = Moritano Shrine
 |Image  = [[File:Moritano-jinja Shrine, Takada, Nagano.jpg|270px|Moritano Shrine]]<br />Haiden (worship hall)
@@ -37,11 +36,11 @@
 |Map = {{Location map|Japan Nagano|label=Moritano Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Moritano Shrine''' (もりたのじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} ({{ill|Son-sha|Q134917284|qid=Q134917284}}) located in {{ill|Takada|ja|高田 (長野市)|qid=Q11672003|lt=Takada}}, {{ill|Nagano (city)|Q128849|qid=Q128849}}, {{ill|Nagano Prefecture|Q127877|qid=Q127877}}. It is commonly known as '''Morita Shrine'''.
+{{nihongo|'''Moritano Shrine'''|守田迺神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} ({{ill|Son-sha|Q134917284|qid=Q134917284}}) located in {{ill|Takada|ja|高田 (長野市)|qid=Q11672003|lt=Takada}}, {{ill|Nagano (city)|Q128849|qid=Q128849}}, {{ill|Nagano Prefecture|Q127877|qid=Q127877}}. It is commonly known as '''Morita Shrine'''. {{nihongo|'''Moritano Shrine'''|守田迺神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Shinano Province]].
 
 It is identified with the Morita Shrine listed as a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}.
 
-=== Overview ===
+== Overview ==
 The shrine is located in a {{ill|UNKNOWN|lt=residential area}} in the eastern part of Nagano City, one street removed from the bustle of {{ill|Japan National Route 19|af|Japan Nasionale Roete 19|de|Nationalstraße 19 (Japan)|ja|国道19号|ko|국도 제19호선 (일본)|zh|国道19号 (日本)|zh_min_nan|Ji̍t-pún Kok-tō 19-hō|qid=Q899326}}.
 
 Although the date of foundation is unknown, it was formerly called '''Morita Hachimangū''' and served as the {{ill|Ubusunagami|ja|産土神|ko|산토신|zh|產土神|qid=Q1392097}} (tutelary deity) of the former {{ill|Kita-Takada Village|ja|高田 (長野市)|qid=Q11672003|lt=Kita-Takada Village}}<ref>[http://www.komakichiku.com/siseki/ Our Town’s Historic Sites and Cultural Properties] – Komaki District Residents’自治 Council</ref>. In {{ill|1756|ab|1756|af|1756|als|1756|am|1756 እ.ኤ.አ.|an|1756|ar|1756|ary|1756|arz|1756|ast|1756|avk|1756|az|1756|azb|۱۷۵۶ (میلادی)|ba|1756 йыл|ban|1756|bar|1756|bcl|1756|be|1756|be_x_old|1756|bg|1756|bn|১৭৫৬|bo|༡༧༥༦ལོ།|bpy|মারি ১৭৫৬|br|1756|bs|1756.|ca|1756|cdo|1756 nièng|ce|1756 шо|ceb|1756|ckb|١٧٥٦|co|1756|crh|1756|cs|1756|csb|1756|cv|1756|cy|1756|da|1756|de|1756|diq|1756|el|1756|eml|1756|eo|1756|es|1756|et|1756|eu|1756|fa|۱۷۵۶ (میلادی)|fi|1756|fo|1756|fr|1756|frp|1756|frr|1756|fur|1756|fy|1756|ga|1756|gag|1756|gan|1756年|gcr|1756|gd|1756|gl|1756|gv|1756|hak|1756-ngièn|he|1756|hi|१७५६|hif|1756|hr|1756.|hsb|1756|ht|1756 (almanak gregoryen)|hu|1756|hy|1756|hyw|1756 թուական|ia|1756|id|1756|ilo|1756|io|1756|is|1756|it|1756|ja|1756年|jv|1756|ka|1756|kaa|1756|kk|1756 жыл|kn|೧೭೫೬|ko|1756년|krc|1756 джыл|ksh|Joohr 1756|ku|1756|la|1756|lb|1756|lez|1756 йис|li|1756|lij|1756|lmo|1756|lt|1756 m.|lv|1756. gads|mai|१७५६|map_bms|1756|mdf|1756|mg|1756|mhr|1756|mi|1756|min|1756|mk|1756|mr|इ.स. १७५६|mrj|1756 и|ms|1756|my|၁၇၅၆|myv|1756 ие|mzn|۱۷۵۶|nah|1756|nap|1756|nds|1756|nds_nl|1756|new|सन् १७५६|nl|1756|nn|1756|no|1756|nrm|1756|nso|1756|oc|1756|olo|1756|or|୧୭୫୬|os|1756-æм аз|pa|1756|pam|1756|pl|1756|pnb|1756|pt|1756|qu|1756|ro|1756|ru|1756 год|rue|1756|sa|१७५६|sah|1756|sc|1756|scn|1756|sd|1756ع|se|1756|sh|1756.|shn|1756|simple|1756|sk|1756|sl|1756|smn|1756|sq|1756|sr|1756|stq|1756|su|1756|sv|1756|sw|1756|szl|1756|ta|1756|te|1756|tg|Соли 1756|th|พ.ศ. 2299|tk|1756|tl|1756|tr|1756|tt|1756 ел|ug|1756 - يىلى|uk|1756|ur|1756ء|uz|1756|vec|1756|vi|1756|vls|1756|vo|1756|wa|1756|war|1756|wuu|1756年|xmf|1756|yi|1756|zea|1756|zh|1756年|zh_min_nan|1756 nî|zh_yue|1756年|qid=Q7632}} ({{ill|Hōreki|Q1194397|qid=Q1194397}} 8), it received {{ill|Hanpei|ja|幣帛|qid=Q11481885}} under the name '''Morita Shrine''' from the {{ill|Yoshida family|fr|Clan Yoshida|ja|吉田家|ko|요시다가|simple|Yoshida family|qid=Q11413722}} of {{ill|Kannushi|ca|Kannushi|de|Shinshoku|es|Kannushi|fa|کاننوشی|fi|Kannushi|fr|Kannushi|id|Kannushi|it|Kannushi|ja|神職|jv|Kannushi|ko|신쇼쿠|ms|Kannushi|or|କାନ୍ନୁଶୀ|pl|Kannushi|ru|Каннуси|te|కన్నూషి|th|คันนูชิ|tr|Kannushi|uk|Каннусі|zh|神職 (神道)|qid=Q60523}}. However, during the Shikinaisha naming dispute in {{ill|1839|ab|1839|af|1839|als|1839|am|1839 እ.ኤ.አ.|an|1839|ar|1839|ary|1839|arz|1839|ast|1839|avk|1839|az|1839|azb|۱۸۳۹ (میلادی)|ba|1839 йыл|ban|1839|bar|1839|bat_smg|1839|bcl|1839|be|1839|be_x_old|1839|bg|1839|bn|১৮৩৯|bpy|মারি ১৮৩৯|br|1839|bs|1839.|ca|1839|cdo|1839 nièng|ce|1839 шо|ceb|1839|ckb|١٨٣٩|crh|1839|cs|1839|csb|1839|cv|1839|cy|1839|da|1839|de|1839|diq|1839|el|1839|eml|1839|eo|1839|es|1839|et|1839|eu|1839|fa|۱۸۳۹ (میلادی)|fi|1839|fiu_vro|1839|fo|1839|fr|1839|frp|1839|frr|1839|fur|1839|fy|1839|ga|1839|gan|1839年|gcr|1839|gd|1839|gl|1839|gn|1839|gv|1839|he|1839|hi|१८३९|hif|1839|hr|1839.|hsb|1839|ht|1839 (almanak gregoryen)|hu|1839|hy|1839|hyw|1839 թուական|ia|1839|id|1839|ilo|1839|io|1839|is|1839|it|1839|ja|1839年|jv|1839|ka|1839|kaa|1839|kk|1839 жыл|kn|೧೮೩೯|ko|1839년|krc|1839 джыл|ksh|Joohr 1839|kv|1839-ӧд во|la|1839|lb|1839|lez|1839 йис|li|1839|lij|1839|lmo|1839|lt|1839 m.|lv|1839. gads|mai|१८३९|map_bms|1839|mdf|1839|mg|1839|mhr|1839|mi|1839|min|1839|mk|1839|mr|इ.स. १८३९|mrj|1839 и|ms|1839|my|၁၈၃၉|myv|1839 ие|mzn|۱۸۳۹|nah|1839|nap|1839|nds|1839|new|ई सं १८३९|nl|1839|nn|1839|no|1839|nrm|1839|nso|1839|oc|1839|olo|1839|or|୧୮୩୯|os|1839-æм аз|pa|1839|pl|1839|pnb|1839|pt|1839|qu|1839|ro|1839|ru|1839 год|rue|1839|sa|१८३९|sah|1839|scn|1839|sco|1839|sd|1839ع|se|1839|sh|1839.|shn|1839|simple|1839|sk|1839|sl|1839|smn|1839|sq|1839|sr|1839|stq|1839|su|1839|sv|1839|sw|1839|szl|1839|ta|1839|te|1839|tg|Соли 1839|th|พ.ศ. 2382|tk|1839|tl|1839|tly|1839|tpi|1839|tr|1839|tt|1839 ел|udm|1839 ар|uk|1839|ur|1839ء|uz|1839|vec|1839|vi|1839|vls|1839|vo|1839|wa|1839|war|1839|wuu|1839年|xmf|1839|yi|1839|za|1839 nienz|zea|1839|zh|1839年|zh_classical|一八三九年|zh_min_nan|1839 nî|zh_yue|1839年|qid=Q7616}} ({{ill|Tenpō|Q1369045|qid=Q1369045}} 10), the character “迺 (or 廼)” was added to its name.
@@ -50,7 +49,7 @@ The main hall was formerly the Year Deity Hall of {{ill|Zenkō-ji|Q189640|qid=Q1
 
 Because it was relatively close to {{ill|Tsuruga|Q11676187|qid=Q11676187|lt=Tsuruga Shinchi}} (the former Nagano red-light district) and {{ill|Gondōchō|Q11542303|qid=Q11542303|lt=Gondō Town}}, many of the donors’ names carved on the {{ill|Sacred fences|Q3078312|qid=Q3078312}} fence belong to {{ill|Ryōtei|Q2178435|qid=Q2178435}} restaurants and brothels<ref>[http://weekly-nagano.main.jp/2011/04/069.html No. 069 Moritano Shrine (Part 1) – Names of restaurants and pleasure quarters on the fence] – Weekly Nagano</ref>.
 
-=== History ===
+== History ==
 * {{ill|1459|Q6524|qid=Q6524}} ({{ill|Chōroku|Q1193524|qid=Q1193524}} 3) – Relocated from a nearby site to its present location  
 * {{ill|1699|Q7710|qid=Q7710}} ({{ill|Genroku|Q1325001|qid=Q1325001}} 12) – Following a divine oracle, the sacred object was transferred from the Year Deity Hall of {{ill|Zenkō-ji|Q189640|qid=Q189640}}  
 * {{ill|1756|ab|1756|af|1756|als|1756|am|1756 እ.ኤ.አ.|an|1756|ar|1756|ary|1756|arz|1756|ast|1756|avk|1756|az|1756|azb|۱۷۵۶ (میلادی)|ba|1756 йыл|ban|1756|bar|1756|bcl|1756|be|1756|be_x_old|1756|bg|1756|bn|১৭৫৬|bo|༡༧༥༦ལོ།|bpy|মারি ১৭৫৬|br|1756|bs|1756.|ca|1756|cdo|1756 nièng|ce|1756 шо|ceb|1756|ckb|١٧٥٦|co|1756|crh|1756|cs|1756|csb|1756|cv|1756|cy|1756|da|1756|de|1756|diq|1756|el|1756|eml|1756|eo|1756|es|1756|et|1756|eu|1756|fa|۱۷۵۶ (میلادی)|fi|1756|fo|1756|fr|1756|frp|1756|frr|1756|fur|1756|fy|1756|ga|1756|gag|1756|gan|1756年|gcr|1756|gd|1756|gl|1756|gv|1756|hak|1756-ngièn|he|1756|hi|१७५६|hif|1756|hr|1756.|hsb|1756|ht|1756 (almanak gregoryen)|hu|1756|hy|1756|hyw|1756 թուական|ia|1756|id|1756|ilo|1756|io|1756|is|1756|it|1756|ja|1756年|jv|1756|ka|1756|kaa|1756|kk|1756 жыл|kn|೧೭೫೬|ko|1756년|krc|1756 джыл|ksh|Joohr 1756|ku|1756|la|1756|lb|1756|lez|1756 йис|li|1756|lij|1756|lmo|1756|lt|1756 m.|lv|1756. gads|mai|१७५६|map_bms|1756|mdf|1756|mg|1756|mhr|1756|mi|1756|min|1756|mk|1756|mr|इ.स. १७५६|mrj|1756 и|ms|1756|my|၁၇၅၆|myv|1756 ие|mzn|۱۷۵۶|nah|1756|nap|1756|nds|1756|nds_nl|1756|new|सन् १७५६|nl|1756|nn|1756|no|1756|nrm|1756|nso|1756|oc|1756|olo|1756|or|୧୭୫୬|os|1756-æм аз|pa|1756|pam|1756|pl|1756|pnb|1756|pt|1756|qu|1756|ro|1756|ru|1756 год|rue|1756|sa|१७५६|sah|1756|sc|1756|scn|1756|sd|1756ع|se|1756|sh|1756.|shn|1756|simple|1756|sk|1756|sl|1756|smn|1756|sq|1756|sr|1756|stq|1756|su|1756|sv|1756|sw|1756|szl|1756|ta|1756|te|1756|tg|Соли 1756|th|พ.ศ. 2299|tk|1756|tl|1756|tr|1756|tt|1756 ел|ug|1756 - يىلى|uk|1756|ur|1756ء|uz|1756|vec|1756|vi|1756|vls|1756|vo|1756|wa|1756|war|1756|wuu|1756年|xmf|1756|yi|1756|zea|1756|zh|1756年|zh_min_nan|1756 nî|zh_yue|1756年|qid=Q7632}} ({{ill|Hōreki|Q1194397|qid=Q1194397}} 8) – Received {{ill|Hanpei|ja|幣帛|qid=Q11481885}} from the {{ill|Yoshida family|fr|Clan Yoshida|ja|吉田家|ko|요시다가|simple|Yoshida family|qid=Q11413722}} under the name '''Morita Shrine'''  
@@ -58,7 +57,7 @@ Because it was relatively close to {{ill|Tsuruga|Q11676187|qid=Q11676187|lt=Tsur
 * {{ill|1879|Q7783|qid=Q7783}} ({{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} 12) – The former Year Deity Hall of Zenkō-ji, which had been relocated in the same year to {{ill|Jōyama Park|Q11426101|qid=Q11426101|lt=Joyama}} as {{ill|Takeminakata|es|Takeminakata|hu|Takeminakata|id|Takeminakata|ja|タケミナカタ|mni|ꯇꯀꯦꯃꯤꯅꯀꯇ|pl|Takeminakata|zh|建御名方神|qid=Q9150391|lt=Takeminakata Tomino Mikoto Hikokamiwake Shrine}} (Minochi Taisha), was transferred and rebuilt as this shrine’s main hall  
 * {{ill|1967|Q2648|qid=Q2648}} ({{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}} 42) – The main hall was designated a {{ill|Nagano (city)|Q128849|qid=Q128849}} {{ill|UNKNOWN|lt=designated cultural property}}
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997|lt=Hondawake no Mikoto}} (principal deity)
 * Kotoshironushi
 * Ōusu no Mikoto
@@ -66,7 +65,7 @@ Because it was relatively close to {{ill|Tsuruga|Q11676187|qid=Q11676187|lt=Tsur
 * Takeminakata no Mikoto
 * Susanoo no Mikoto
 
-=== Precincts ===
+== Precincts ==
 * Main hall – {{ill|Nagano (city)|Q128849|qid=Q128849}} {{ill|UNKNOWN|lt=designated cultural property}}<ref>[http://bunkazai-nagano.jp/modules/dbsearch/page1049.html Moritano Shrine Main Hall] – Nagano City Cultural Properties Database</ref>. Former main hall of the Zenkō-ji Year Deity Hall  
 * Worship hall  
 * Norito hall  
@@ -74,19 +73,17 @@ Because it was relatively close to {{ill|Tsuruga|Q11676187|qid=Q11676187|lt=Tsur
 ** Moritano Inari Shrine  
 ** Traffic Safety Guardian Deity  
 
-=== Access ===
+== Access ==
 * From {{ill|East Japan Railway Company|Q499071|qid=Q499071|lt=JR}} / {{ill|Nagano Electric Railway|Q6958437|qid=Q6958437}}{{ill|Nagano Station|Q374916|qid=Q374916}}, take the {{ill|Alpico Kōtsū|Q4735443|qid=Q4735443}} ({{ill|Kawanakajima Bus|Q11477633|qid=Q11477633}}) Route '''45''' and get off at “Morita Shrine-mae”
 
-=== Notes ===
+== Notes ==
 {{Footnote help}}
 {{Reflist}}
-=== References ===
+== References ==
 * *Cultural Series of Shinshū: Temples and Shrines*, 1981, {{ill|Shinano Mainichi Shimbun|Q11386181|qid=Q11386181|lt=Shinano Mainichi Shimbun Company}}
 
-=== Related items ===
+== Related items ==
 * {{ill|Takeminakata|lt=Takeminakata Tomino Mikoto Hikokamiwake Shrine (Nagano City, Hakoshimizu)|Q11387218|qid=Q11387218}} (Minochi Taisha) – Formerly the Zenkō-ji Year Deity Hall; the main hall of this shrine was transferred from that hall
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Moritano Shrine (Minochi)]][[Category:Shikinaisha|Moritano Shrine (Minochi)]][[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Shinano Province]]
@@ -96,4 +93,5 @@ Because it was relatively close to {{ill|Tsuruga|Q11676187|qid=Q11676187|lt=Tsur
 [[Category:Municipal Tangible Cultural Properties in Nagano Prefecture]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -14,14 +14,13 @@
 | established = {'time': '+0724-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
 }}
 
-{{nihongo|'''Imaki-Aosaka-Inami-Ikegami Shrine'''|今城青坂稲実池上神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
+
 
 {{commons category|Category:Imaki-Aosaka-Inami-Ikegami-jinja (Kamikawa, Saitama)}}
 [[ja:今城青坂稲実池上神社 (神川町関口)]]
 
 {{wikidata link|Q72728268|ja|今城青坂稲実池上神社 (神川町関口)|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{Shinto shrine
 |Name        = Imaki Aosaka Inami Ikegami Shrine
 |Image       = [[File:IwakiAosakaInamiIkegami-jinja(Kanna-machi) Haiden.jpg|270px]]<br />Worship hall
@@ -42,9 +41,9 @@
 }}
 [[File:Imakiaoyasakainamiikegami-jinja(Kamikawa) Hengaku.jpg|265px|thumb|{{center|Dedication plaque of the worship hall}}]]
 
-'''Imaki Aosaka Inami Ikegami Shrine''' (いまきあおさかいなみいけがみじんじゃ) is a Shinto shrine located along the {{ill|Kanna River|Q11590491|qid=Q11590491|lt=Kanna River}}, a tributary of the {{ill|Tone River|ar|توني (نهر)|arz|نهر تونى|be|Тонэ|bg|Тоне (река)|ca|Riu Tone|cs|Tone|de|Tone (Fluss)|eo|Tone (rivero)|es|Río Tone|eu|Tone ibaia|fa|تونه‌گاوا|fi|Tonejoki|fr|Tone-gawa|he|טונה (נהר)|hi|टोन नदी|hu|Tone (folyó, Japán)|id|Sungai Tone|it|Tone (fiume)|ja|利根川|ko|도네강|lt|Tonė|nl|Tone (Japanse rivier)|no|Tone (elv)|pl|Tone (rzeka)|pt|Rio Tone|ru|Тоне (река)|simple|Tone River|sv|Tonegawa|th|แม่น้ำโทเนะ|tr|Tone Nehri|uk|Тоне (річка)|vi|Sông Tone (Nhật Bản)|wuu|利根川|zh|利根川|qid=Q177452}}, in Sekiguchi, {{ill|Kamikawa, Saitama|Q1346757|qid=Q1346757}}, {{ill|Kodama District, Saitama|ceb|Kodama-gun|fa|ناحیه کوداما، سایتاما|fr|District de Kodama|id|Distrik Kodama, Saitama|it|Distretto di Kodama|ja|児玉郡|ko|고다마군|pl|Powiat Kodama|ru|Кодама (уезд)|simple|Kodama District, Saitama|th|อำเภอโคดามะ|uk|Повіт Кодама|zh|兒玉郡|qid=Q938038}}, {{ill|Saitama Prefecture|Q128186|qid=Q128186}}. The enshrined deities are Okami no Kami, Toyouke-bime no Mikoto, Mizuhanome no Kami, Haniyasuhime no Mikoto, and Toyoukehime no Mikoto (four deities). {{Citation needed range|It is considered a candidate shrine (ronsha) for the Engishiki-listed “Imaki Aoyasaka Inami Ikegami Shrine” of {{ill|Musashi Province|Q907398|qid=Q907398}} {{ill|Kami district|Q11634927|qid=Q11634927}}, and its former shrine rank was village shrine.|date=February 2025}}
+{{nihongo|'''Imaki-Aosaka-Inami-Ikegami Shrine'''|今城青坂稲実池上神社}} is a Shinto shrine located along the {{ill|Kanna River|Q11590491|qid=Q11590491|lt=Kanna River}}, a tributary of the {{ill|Tone River|ar|توني (نهر)|arz|نهر تونى|be|Тонэ|bg|Тоне (река)|ca|Riu Tone|cs|Tone|de|Tone (Fluss)|eo|Tone (rivero)|es|Río Tone|eu|Tone ibaia|fa|تونه‌گاوا|fi|Tonejoki|fr|Tone-gawa|he|טונה (נהר)|hi|टोन नदी|hu|Tone (folyó, Japán)|id|Sungai Tone|it|Tone (fiume)|ja|利根川|ko|도네강|lt|Tonė|nl|Tone (Japanse rivier)|no|Tone (elv)|pl|Tone (rzeka)|pt|Rio Tone|ru|Тоне (река)|simple|Tone River|sv|Tonegawa|th|แม่น้ำโทเนะ|tr|Tone Nehri|uk|Тоне (річка)|vi|Sông Tone (Nhật Bản)|wuu|利根川|zh|利根川|qid=Q177452}}, in Sekiguchi, {{ill|Kamikawa, Saitama|Q1346757|qid=Q1346757}}, {{ill|Kodama District, Saitama|ceb|Kodama-gun|fa|ناحیه کوداما، سایتاما|fr|District de Kodama|id|Distrik Kodama, Saitama|it|Distretto di Kodama|ja|児玉郡|ko|고다마군|pl|Powiat Kodama|ru|Кодама (уезд)|simple|Kodama District, Saitama|th|อำเภอโคดามะ|uk|Повіт Кодама|zh|兒玉郡|qid=Q938038}}, {{ill|Saitama Prefecture|Q128186|qid=Q128186}}. The enshrined deities are Okami no Kami, Toyouke-bime no Mikoto, Mizuhanome no Kami, Haniyasuhime no Mikoto, and Toyoukehime no Mikoto (four deities). {{Citation needed range|It is considered a candidate shrine (ronsha) for the Engishiki-listed “Imaki Aoyasaka Inami Ikegami Shrine” of {{ill|Musashi Province|Q907398|qid=Q907398}} {{ill|Kami district|Q11634927|qid=Q11634927}}, and its former shrine rank was village shrine.|date=February 2025}} {{nihongo|'''Imaki-Aosaka-Inami-Ikegami Shrine'''|今城青坂稲実池上神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
 
-=== History ===
+== History ==
 In {{ill|Jinki (era)|Q1373210|qid=Q1373210}} Year 1 ({{ill|724|Q23549|qid=Q23549}}),<ref name="郡村誌">“Village Records of Kami District, Musashi Province,” Vol. 2, Sekiguchi Village</ref> the ancestor of the {{ill|Abo clan|Q11450278|qid=Q11450278}} of the {{ill|Tan Party|Q11368483|qid=Q11368483}}, one of the {{ill|Musashi Seven Parties|Q11546323|qid=Q11546323}}, transferred (kanjō) {{ill|Niukawakami Shrine (Q246370)|Q246370|qid=Q246370}} of {{ill|Yamato Province|Q907495|qid=Q907495}}, naming it “Niu Shrine.”<ref name="今城青八坂稲実池上神社御由緒">Shrine noticeboard, “62nd Ise Grand Shrine Shikinen Sengu Commemoration: History of Imaki Aoyasaka Inami Ikegami Shrine”</ref>
 
 In {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} Year 5 ({{ill|1577|Q6704|qid=Q6704}}) March, the Sekiguchi area of Abo Village was separated to form Sekiguchi Village. At that time, this shrine was relocated from behind the Rokusho Shrine (present-day {{ill|Abo Shrine|Q85884328|qid=Q85884328|lt=Abo Shrine}}) to Ikegami in Sekiguchi Village, becoming the guardian shrine of Sekiguchi Village.<ref name="神社明細帳">Saitama Prefecture, “Shrine Register” (compiled by Saitama Prefecture, compiled after 1879)</ref>
@@ -59,13 +58,13 @@ File:IwakiAosakaInamiIkegami-jinja(Kanna-machi) Torii.jpg|Torii gate
 File:IwakiAosakaInamiIkegami-jinja(Kanna-machi) Temizusha.jpg|Purification pavilion
 </gallery>
 
-=== Enshrined deities <ref name="今城青八坂稲実池上神社御由緒" /> ===
+== Enshrined deities <ref name="今城青八坂稲実池上神社御由緒" /> ==
 * {{ill|UNKNOWN|lt=Okami no Kami}} (おかみのかみ)
 * {{ill|Toyouke-hime|abstract|Q2983724|bcl|Toyoukebime|es|Toyouke Ōmikami|fr|Toyouke Ōmikami|ja|トヨウケビメ|kk|Тоёукэ бимэ|ru|Тоёукэ бимэ|simple|Toyōke Ōmikami|sv|Toyouke Ōmikami|tok|jan sewi suli Tojoke|zh|豐宇氣毘賣神|qid=Q2983724|lt=Toyouke-bime no Mikoto}} (とようけびめのみこと)
 * {{ill|Mizuhanome|Q8191796|qid=Q8191796|lt=Mizuhanome no Kami}} (みつはのめのかみ)
 * {{ill|Haniyasu-hiko and Haniyasu-hime|Q9285919|qid=Q9285919|lt=Haniyasuhime no Mikoto}} (はにやすひめのみこと)
 
-=== Auxiliary shrines ===
+== Auxiliary shrines ==
 Stone shrine group of five on the left
 * Kokage Shrine, Atago Shrine, Suwa Shrine, Yasaka Shrine
 
@@ -76,7 +75,7 @@ File:IwakiAosakaInamiIkegami-jinja(Kanna-machi) Sarcophagus1.jpg|Kokage Shrine, 
 File:IwakiAosakaInamiIkegami-jinja(Kanna-machi) Sarcophagus2.jpg|Hōsō Shrine, Inari Shrine, Hachiman Shrine, Tenman Shrine
 </gallery>
 
-=== Events <ref name="今城青八坂稲実池上神社御由緒" /> ===
+== Events <ref name="今城青八坂稲実池上神社御由緒" /> ==
 * New Year Festival (January 2)
 * Spring Festival (March 19)
 * Kokage Festival (April 23)
@@ -84,14 +83,12 @@ File:IwakiAosakaInamiIkegami-jinja(Kanna-machi) Sarcophagus2.jpg|Hōsō Shrine, 
 * Autumn Festival (October 19)
 * Niiname-sai (December 10)
 
-=== Access ===
+== Access ==
 * From JR {{ill|Takasaki Line|Q1346657|qid=Q1346657}} {{ill|Honjō Station (Saitama)|Q844906|qid=Q844906}}, take the Asahi Bus bound for “Kanzen General Branch Office” for 20 minutes. Get off at “Tanjō Station Entrance.” 10 minutes on foot.
 * From JR {{ill|Hachikō Line|Q1372071|qid=Q1372071}} {{ill|Tanshō Station|id|Stasiun Tanshō|ja|丹荘駅|ko|단쇼역|tl|Estasyon ng Tanshō|ur|ٹانشو اسٹیشن|zh|丹莊站|qid=Q845044}}, 11 minutes on foot (850 m)
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Imaki-Aosaka-Inami-Ikegami Shrine (Kamikawa, Saitama)]][[Category:Shikinaisha|Imaki-Aosaka-Inami-Ikegami Shrine (Kamikawa, Saitama)]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Musashi Province]]
 [[Category:Shinto shrines in Saitama Prefecture]]
@@ -101,4 +98,5 @@ File:IwakiAosakaInamiIkegami-jinja(Kanna-machi) Sarcophagus2.jpg|Hōsō Shrine, 
 [[Category:Municipal History of Kamikawa]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

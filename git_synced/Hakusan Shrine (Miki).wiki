@@ -16,13 +16,12 @@
 | deity = {{ill|Izanagi|lt=Izanagi|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|en|Izanagi|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858}}
 }}
 
-{{nihongo|'''Hakusan Shrine'''|白山神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Sanuki Province]].
+
 
 [[ja:白山神社 (三木町)]]
 
 {{wikidata link|Q11579589|ja|白山神社 (三木町)|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{Shinto shrine
 |Name= Shirayama Shrine
 |Image= [[File:Shirayama Shrine.jpg|250px|Shirayama Shrine]]<br />Shimenawa pillar and worship hall
@@ -39,33 +38,31 @@
 |Map= {{Location map|Japan Kagawa|label=Shirayama Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Shirayama Shrine''' (しらやまじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Miki, Kagawa|Q1205980|qid=Q1205980}}, {{ill|Kita District, Kagawa|ca|Districte de Kita (Kagawa)|ceb|Kita-gun (distrito sa Hapon, Kagawa-ken)|es|Distrito de Kita (Kagawa)|fr|District de Kita (Kagawa)|id|Distrik Kita, Kagawa|it|Distretto di Kita (Kagawa)|ja|木田郡|ko|기타군 (가가와현)|pl|Powiat Kita (Kagawa)|pt|Distrito de Kita|uk|Повіт Кіта (Каґава)|zh|木田郡|qid=Q1155929}}, {{ill|Kagawa Prefecture|Q161454|qid=Q161454}}. It is one of the {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}} of Wani-gawa Shrine, a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} of {{ill|Miki district|Q10866143|qid=Q10866143}} in {{ill|Sanuki Province|ceb|Sanuki|cs|Provincie Sanuki|de|Provinz Sanuki|es|Provincia de Sanuki|fa|ولایت سانئوکی|fr|Province de Sanuki|gl|Provincia de Sanuki|id|Provinsi Sanuki|it|Sanuki (provincia)|ja|讃岐国|ko|사누키국|lt|Sanukio žemė|nl|Sanuki (provincie)|no|Sanukiprovinsen|pt|Província de Sanuki|ru|Сануки (провинция)|simple|Sanuki Province|sk|Sanuki (provincia)|sr|Провинција Сануки|tr|Sanuki (vilayet)|uk|Провінція Санукі|zh|讚岐國|zh_min_nan|Sanuki-kok|qid=Q929682}}.
+{{nihongo|'''Hakusan Shrine'''|白山神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Miki, Kagawa|Q1205980|qid=Q1205980}}, {{ill|Kita District, Kagawa|ca|Districte de Kita (Kagawa)|ceb|Kita-gun (distrito sa Hapon, Kagawa-ken)|es|Distrito de Kita (Kagawa)|fr|District de Kita (Kagawa)|id|Distrik Kita, Kagawa|it|Distretto di Kita (Kagawa)|ja|木田郡|ko|기타군 (가가와현)|pl|Powiat Kita (Kagawa)|pt|Distrito de Kita|uk|Повіт Кіта (Каґава)|zh|木田郡|qid=Q1155929}}, {{ill|Kagawa Prefecture|Q161454|qid=Q161454}}. It is one of the {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}} of Wani-gawa Shrine, a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} of {{ill|Miki district|Q10866143|qid=Q10866143}} in {{ill|Sanuki Province|ceb|Sanuki|cs|Provincie Sanuki|de|Provinz Sanuki|es|Provincia de Sanuki|fa|ولایت سانئوکی|fr|Province de Sanuki|gl|Provincia de Sanuki|id|Provinsi Sanuki|it|Sanuki (provincia)|ja|讃岐国|ko|사누키국|lt|Sanukio žemė|nl|Sanuki (provincie)|no|Sanukiprovinsen|pt|Província de Sanuki|ru|Сануки (провинция)|simple|Sanuki Province|sk|Sanuki (provincia)|sr|Провинција Сануки|tr|Sanuki (vilayet)|uk|Провінція Санукі|zh|讚岐國|zh_min_nan|Sanuki-kok|qid=Q929682}}. {{nihongo|'''Hakusan Shrine'''|白山神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Sanuki Province]].
 
 It is situated on the southern foothills of {{ill|UNKNOWN|lt=Mount Shirayama}} (203 m above sea level), also known as {{ill|Seven Sanuki Fujis|ja|讃岐七富士|qid=Q11632541|lt=Miki Fuji / East Sanuki Fuji}}. On the summit of Mount Shirayama are stone shrines dedicated to {{ill|UNKNOWN|lt=Dragon King Shrine}} and {{ill|Ishizuchi Shrine|fr|Ishizuchi-jinja|ja|石鎚神社|qid=Q11587273}}.
 
 The shrine grounds are known as a famous spot for {{ill|Cherry blossom|ace|Sakura|ar|ساكورا|az|Sakura|azb|ساکورا|bcl|Seresa|bn|চেরি ব্লসম|bs|Behar|ca|Sakura|ckb|ساکورا|cv|Сакура|de|Japanische Kirschblüte|dtp|Sakura|el|Σάκουρα|eo|Sakuro|es|Sakura (cerezo)|eu|Sakura|fa|ساکورا|fr|Sakura|gl|Sakura (árbore)|hi|चेरी ब्लॉसम|hr|Trešnjin cvijet|hu|Cseresznyevirág|hy|Սակուրա|id|Sakura|is|Kirsuberjablóm|it|Fiore di ciliegio|ja|サクラ|jv|Sakura|ka|საკურა|kn|ಸಕುರಾ|ko|벚꽃|ks|پرَٛبٕدٔر پھٕلَے|lt|Sakura|min|Sakura|ml|ചെറി ബ്ലോസം|mn|Сакура|ms|Sakura|my|ချယ်ရီပန်း|mzn|ساکورا|nl|Sakura (bloesem)|pa|ਚੈਰੀ ਦਾ ਫੁੱਲ|pl|Sakura|pnb|چیری|ppl|Ne Sakura|pt|Sakura (cerejeira)|pwn|sakudra|ro|Sakura|ru|Сакура|sah|Сакура|sh|Trešnjin cvijet|simple|Cherry blossom|sk|Sakura (Japonsko)|sr|Трешњин цвет|sv|Sakura|th|ซากูระ|tl|Seresang namumulaklak|tr|Kiraz çiçeği|tt|Сакура|ug|نورۇزگۈلى|uk|Слива пильчаста|uz|Gilos gullari|vi|Hoa anh đào|war|Sakura (seresas)|zh|樱花|zh_min_nan|Sa-khú-lah|zh_yue|櫻花|qid=Q871991|lt=sakura}}. In the past, there was a plan under the policy of the mayor of {{ill|Miki, Kagawa|Q1205980|qid=Q1205980}} to plant cherry trees across the entire {{ill|Seven Sanuki Fujis|ja|讃岐七富士|qid=Q11632541|lt=Mount Shirayama}}, but the plan was abandoned.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}
 * {{ill|Izanami|Q682306|qid=Q682306|lt=Iyanami-no-Mikoto}}
 
-=== Overview ===
+== Overview ==
 The date of foundation is unknown. According to one account, in {{ill|Enchō|Q1327274|qid=Q1327274|lt=Engi}} 4 ({{ill|926|ab|926|af|926|als|926|am|926 እ.ኤ.አ.|an|926|ar|926|ary|926|ast|926|avk|926|az|926|azb|۹۲۶ (میلادی)|bar|926|bcl|926|be|926|be_x_old|926|bg|926|bn|৯২৬|bpy|মারি ৯২৬|br|926|bs|926.|ca|926|cdo|926 nièng|ceb|926|ckb|٩٢٦|crh|926|cs|926|csb|926|cv|926|cy|926|da|926|de|926|el|926|eml|926|eo|926|es|926|et|926|eu|926|fa|۹۲۶ (میلادی)|fi|926|fo|926|fr|926|fy|926|ga|926|gan|926年|gd|926|gl|926|he|926|hi|926|hr|926.|ht|926 (almanak jilyen)|hu|926|hy|926|id|926|ilo|926|io|926|is|926|it|926|ja|926年|jv|926|ka|926|kaa|926|kk|926 жыл|ko|926년|la|926|lb|926|lij|926|lmo|926|lt|926 m.|lv|926. gads|map_bms|926|mdf|926|mg|926|mhr|926|mi|926|mk|926|mr|इ.स. ९२६|mrj|926 и|ms|926|mzn|۹۲۶|nah|926|nap|926|nds|926|new|सन् ९२६|nl|926|nn|926|no|926|nrm|926|nso|926|oc|926|or|୯୨୬|os|926-æм аз|pl|926|pnb|926|pt|926|qu|926|ro|926|ru|926 год|rue|926|sa|९२६|scn|926|sd|926ع|se|926|sh|926.|shn|926|si|926|sk|926|sl|926|smn|926|sq|926|sr|926|su|926|sv|926|sw|926|tg|Соли 926|th|พ.ศ. 1469|tk|926|tl|926|tly|926|tr|926|tt|926 ел|uk|926|ur|926ء|uz|926|vec|926|vi|926|war|926|wuu|926年|xmf|926|zh|926年|zh_min_nan|926 nî|zh_yue|926年|qid=Q24369}}), {{ill|UNKNOWN|lt=Myōkai Hōin}} received a divine revelation in a dream and invited {{ill|Hakusan Gongen|ja|白山権現|qid=Q11579578}} to be enshrined here. Another theory attributes the founding to Haruaki (Hakusan Sōjin), a native of {{ill|Koshi Province (Japan)|Q1351611|qid=Q1351611}}.
 
 At the time of its founding, the shrine was located on the mountainside of Mount Shirayama, but it is said to have later been relocated to the foothills.
 
 It was formerly an off-site subordinate shrine of {{ill|Wanikawa Shrine|ja|鰐河神社|qid=Q11674320}}, which is located about 1 km to the south.
 
-=== Access ===
+== Access ==
 * 5-minute walk from {{ill|Shirayama Station|ja|白山駅 (香川県)|ko|시라야마역|zh|白山站 (香川縣)|qid=Q11579619|lt=Shirayama Station}} on the {{ill|Kotoden Nagao Line|fr|Ligne Nagao|ja|高松琴平電気鉄道長尾線|ko|다카마쓰코토히라 전기 철도 나가오선|zh|長尾線|qid=Q5364831|lt=Nagao Line}} of the {{ill|Takamatsu-Kotohira Electric Railroad|Q566998|qid=Q566998}}
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
 {{Shinto sidebar}}
 {{Shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Hakusan Shrine (Q11579589)]][[Category:Shikinaisha|Hakusan Shrine (Q11579589)]][[Category:Shikinaisha|Hakusan Shrine (Q11579589)]][[Category:Massha]]
 [[Category:Shikinaisha in Sanuki Province]]
 [[Category:Shinto shrines in Kagawa Prefecture]]
@@ -74,4 +71,5 @@ It was formerly an off-site subordinate shrine of {{ill|Wanikawa Shrine|ja|鰐�
 [[Category:Hanami spots of Japan]]
 [[Category:Buildings and structures in Miki, Kagawa]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

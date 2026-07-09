@@ -16,13 +16,12 @@
 | deity = {{ill|Umashimaji|lt=Umashimaji|ja|ウマシマジ|zh|宇摩志麻遲命|qid=Q10946169}}
 }}
 
-{{nihongo|'''Yao Shrine'''|八尾神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
 
 [[ja:八尾神社]]
 
 {{wikidata link|Q11390855|ja|八尾神社|grok=none|check_date=2026-05-27}}
 
-== Japanese content ==
 {{神社
  | 名称=Yao Shrine
  | 画像=[[File:Yao Jinja, Yao, Osaka01.JPG|270px]]<br />Haiden
@@ -38,37 +37,37 @@
  | 地図= {{Location map|Japan Osaka|label=Yao Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Yao Shrine''' (やおじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Yao, Osaka|Q490872|qid=Q490872}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is identified with "'''Kurusu Shrine'''" in Wakae District of {{ill|Kawachi Province|be|Каваты (правінцыя)|ca|Província de Kawachi|ckb|پارێزگای کاواچی|cs|Provincie Kawači|de|Provinz Kawachi|es|Provincia de Kawachi|fa|ولایت کاواچی|fr|Province de Kawachi|gl|Provincia de Kawachi|hak|Kawachi-koet|id|Provinsi Kawachi|it|Kawachi (provincia)|ja|河内国|ko|가와치국|lt|Kavačio žemė|nl|Kawachi (provincie)|pt|Província de Kawachi|ru|Кавати (провинция)|simple|Kawachi Province|sk|Kawači (provincia)|sr|Провинција Кавачи|tr|Kawachi (vilayet)|uk|Провінція Каваті|zh|河內國|zh_min_nan|Kawati-kok|zh_yue|河內國|qid=Q1047150}} in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} (a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}), and its rank was former {{ill|Son-sha|Q134917284|qid=Q134917284}}. It is the {{ill|Ujigami|Q767655|qid=Q767655}} of the former villages of Nishi-gō and Kido in Wakae District (now roughly the north side of Honmachi 5-chōme, Honmachi 6-7 chōme, and Higashi-Honmachi 3-chōme in Yao){{efn|The shrine's former address notation was Yao-shi Ōaza Nishi-gō 1064; east of the precincts is the Nishi-gō district community hall.}}.
+{{nihongo|'''Yao Shrine'''|八尾神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Yao, Osaka|Q490872|qid=Q490872}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is identified with "'''Kurusu Shrine'''" in Wakae District of {{ill|Kawachi Province|be|Каваты (правінцыя)|ca|Província de Kawachi|ckb|پارێزگای کاواچی|cs|Provincie Kawači|de|Provinz Kawachi|es|Provincia de Kawachi|fa|ولایت کاواچی|fr|Province de Kawachi|gl|Provincia de Kawachi|hak|Kawachi-koet|id|Provinsi Kawachi|it|Kawachi (provincia)|ja|河内国|ko|가와치국|lt|Kavačio žemė|nl|Kawachi (provincie)|pt|Província de Kawachi|ru|Кавати (провинция)|simple|Kawachi Province|sk|Kawači (provincia)|sr|Провинција Кавачи|tr|Kawachi (vilayet)|uk|Провінція Каваті|zh|河內國|zh_min_nan|Kawati-kok|zh_yue|河內國|qid=Q1047150}} in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} (a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}), and its rank was former {{ill|Son-sha|Q134917284|qid=Q134917284}}. It is the {{ill|Ujigami|Q767655|qid=Q767655}} of the former villages of Nishi-gō and Kido in Wakae District (now roughly the north side of Honmachi 5-chōme, Honmachi 6-7 chōme, and Higashi-Honmachi 3-chōme in Yao){{efn|The shrine's former address notation was Yao-shi Ōaza Nishi-gō 1064; east of the precincts is the Nishi-gō district community hall.}}. {{nihongo|'''Yao Shrine'''|八尾神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
-=== Shrine name ===
+== Shrine name ==
 In the early modern period it was called "{{ill|UNKNOWN|lt=Gozu Tennō-sha}}," but after the {{ill|Meiji Restoration|Q8707|qid=Q8707}} it was renamed "Kurusu Shrine" in accordance with the Engishiki, then renamed again to the present name on April 15, Meiji 41 (1908). "{{ill|栗栖|Q136002285|qid=Q136002285}}" is thought to have been the old name of the surrounding area.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Umashimaji|Q10946169|qid=Q10946169|lt=Umashimaji-no-Mikoto}}
 * {{ill|UNKNOWN|lt=Homuda-wake-no-Mikoto}}
 In the early modern period, as the name Gozu Tennō-sha indicates, {{ill|Gozu Tennō|de|Gozu-Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247}} was worshipped as deity. Since ''{{ill|UNKNOWN|lt=Kawachi-shi}}'' of {{ill|Kyōhō|de|Kyōhō|es|Kyōhō|fa|کیوهو|fr|Ère Kyōhō|ja|享保|ko|교호|ru|Кёхо|simple|Kyōhō|sr|Кјохо|sv|Kyōhō|tr|Kyōhō|zh|享保|qid=Q1145048}} 20 (1735), however, it has been identified with the shikinaisha "Kurusu Shrine." "Kurusu" is considered connected to the ancient {{ill|Clan|Q211503|qid=Q211503}} {{ill|UNKNOWN|lt=Kurusu no Muraji}} who had this area as their {{ill|Korean clans|Q846706|qid=Q846706}}, and thus the deity came to be regarded as their ancestral deity Umashimaji-no-Mikoto, as in ''{{ill|Shinsen Shōjiroku|de|Shinsen Shōjiroku|fr|Shinsen shōjiroku|ja|新撰姓氏録|ko|신찬성씨록|ru|Синсэн сёдзироку|zh|新撰姓氏錄|qid=Q1045362}}'' (Kawachi no Kuni, section of kami-descended clans, Kurusu no Muraji). After Meiji, the deity was formally changed to Umashimaji-no-Mikoto. Homuda-wake-no-Mikoto is the deity of Hachiman Shrine of former Kido village, merged in Meiji 5.
 
-=== History ===
+== History ==
 The shrine site lies along {{ill|Nagase River|Q11653384|qid=Q11653384|lt=Nagase River}} (old {{ill|Yamato River|Q9001527|qid=Q9001527}}), on slightly elevated land where a settlement likely existed from the {{ill|Yayoi period|Q207858|qid=Q207858}}<ref name="report">''Shikinaisha Survey Report''.</ref>. Though founding date is unknown, as the Ato area of Yao had Moriya no Mononobe's villa of Ato (recorded in {{ill|Nihon Shoki|Q813935|qid=Q813935}}, entry for 587), Yao is deeply connected with the {{ill|Mononobe clan|Q1755836|qid=Q1755836}} and related groups; it is considered to have begun when the Kurusu no Muraji, kin of Mononobe and based here, enshrined their ancestral deity, dating back to the {{ill|Kofun period|Q459939|qid=Q459939}}. On April 12 of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} 4 ({{ill|862|Q24993|qid=Q24993}}), it was promoted from Senior Sixth Rank Upper to Junior Fifth Rank Lower, and on Nov 11 that year was made an official shrine (''{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}''). In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engi system}}, it was listed as a government-offering small shrine.
 
 Details after the medieval period are unclear, but the surrounding area was called Yao-no-shō and this shrine is thought to have been revered as its central shrine<ref name="report"/>. In the Nanboku-chō period, monk Kenkō of nearby {{ill|Jōkō-ji (Yao)|Q25248064|qid=Q25248064|lt=Jōkō-ji}} (called "Yao Bettō") joined the Southern Court and held {{ill|Yao Castle|Q11390786|qid=Q11390786}}, but after the Northern Court took the castle following the Battle of Minatogawa, Southern forces attacked in {{ill|Engen|Q1194159|qid=Q1194159}} 2 (1337), bringing war fire. This shrine may then have served as Jōkō-ji's guardian and likely suffered damage as part of the castle complex<ref name="report"/>. Yao-no-shō was again a war zone in the late Muromachi period during internal conflict of the {{ill|Hatakeyama clan|Q662881|qid=Q662881}}, and likely suffered again.
 
 In early modern times it was the ujigami of Nishi-gō village as Gozu Tennō-sha with Tendoku-ji as its {{ill|Jingū-ji|Q1074971|qid=Q1074971}}. Following early Meiji separation orders, Tendoku-ji was abolished and the shrine renamed Kurusu Shrine; in April Meiji 5 (1872) Hachiman Shrine of Kido village was merged, and it became village shrine of both villages. On April 15, Meiji 41, Katsura Shrine (Kaya-buri village) and Yasaka Shrine (Yao Nakano) were merged and the shrine took its current name; after the war, both shrines were restored separately.
 
-=== Shrine buildings ===
+== Shrine buildings ==
 [[File:Yao Jinja, Yao, Osaka04.JPG|thumb|right|200px|From right (north): honden, heiden, haiden]]
 [[File:Yao Jinja, Yao, Osaka03.JPG|thumb|right|200px|Yao Castle site monument (left) and Sugawara Shrine (right)]]
 The {{ill|Honden|Q2044994|qid=Q2044994}} is {{ill|Kasuga-zukuri|es|Kasuga-zukuri|fr|Kasuga-zukuri|ja|春日造|ru|Касуга-дзукури|qid=Q3193781}}, rebuilt in mid-Meiji. The {{ill|Heiden (Shinto)|Q3076699|qid=Q3076699}} is a 1-by-3 bay {{ill|Kirizuma-style|Q13308575|qid=Q13308575}} with gable entrance, built in {{ill|Taishō era|Q329174|qid=Q329174}} 13 (1924), connected to the {{ill|Haiden (Shinto)|Q3125745|qid=Q3125745}}. The haiden is a 5-by-3 bay {{ill|East Asian hip-and-gable roof|Q855025|qid=Q855025}} hira-iri building from {{ill|Tenpō|Q1369045|qid=Q1369045}} 12 (1841). The heiden and haiden are tile-roofed.
 
 There are also a mikoshi storehouse and shrine office.
 
-=== Precincts ===
+== Precincts ==
 There are two precinct shrines: Uguisu Shrine and Sugawara Shrine. On the east side of the honden, beside Sugawara Shrine, stands a stone monument to Yao Castle erected in {{ill|Shōwa era|Q327567|qid=Q327567}} 6 (1931).
 
-=== Access ===
+== Access ==
 * About 5 minutes west from {{ill|Osaka Line|eo|Linio Kintetsu-Ōsaka|fr|Ligne Kintetsu Osaka|it|Linea Kintetsu Ōsaka|ja|近鉄大阪線|ko|긴테쓰 오사카선|nl|Kintetsu Osaka-lijn|zh|大阪線|qid=Q1052545}}{{ill|Kintetsu Yao Station|Q6414378|qid=Q6414378|lt=Yao Station}}
 
-=== Related items ===
+== Related items ==
 * Hatsuhiyama {{ill|Jōkō-ji (Yao)|Q25248064|qid=Q25248064|lt=Jōkō-ji}} (Yao Jizōson)
 * {{ill|UNKNOWN|lt=Yao Tenmangū}}<ref>[http://www.yao-tenmangu.com/ Official]</ref>
 * {{ill|UNKNOWN|lt=Yao Myōhō-ji}}<ref>[https://yaokami.jp/1277253/]</ref>
@@ -77,21 +76,19 @@ There are two precinct shrines: Uguisu Shrine and Sugawara Shrine. On the east s
 * {{ill|Yao|Q11390778|qid=Q11390778}}
 * {{ill|Yahagi Shrine, Yao|Q11583922|qid=Q11583922}}
 
-=== Footnotes ===
+== Footnotes ==
 {{脚注ヘルプ}}
-=== Notes ===
+== Notes ==
 {{Notelist}}
-=== Sources ===
+== Sources ==
 {{Reflist}}
 
-=== References ===
+== References ==
 {{Commons|Category:Yao-jinja}}
 * Shikinaisha Research Society (ed.), ''Shikinaisha Survey Report'', Vol.4 Kawachi Province, {{ill|UNKNOWN|lt=Kogakkan University Press}}, 1979
 
 {{shinto-stub}}
 {{pref-stub|pref=大阪府}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Yao Shrine]][[Category:Shikinaisha|Yao Shrine]][[Category:Shikinaisha|Yao Shrine]][[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Son-sha in Osaka Prefecture]]
@@ -105,4 +102,5 @@ There are two precinct shrines: Uguisu Shrine and Sugawara Shrine. On the east s
 [[Category:Yao (Yao City)]]
 [[Category:Gion shrines]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

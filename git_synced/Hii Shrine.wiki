@@ -15,13 +15,12 @@
 | deity = {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
 }}
 
-{{nihongo|'''Hii Shrine'''|斐伊神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+
 
 [[ja:斐伊神社]]
 
 {{wikidata link|Q11500716|ja|斐伊神社|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{神社
 |名称 = Hii Shrine
 |画像 = {{画像募集中|cat=Unnan}}
@@ -36,27 +35,25 @@
 |地図 = {{Location map|Japan Shimane|label=Hii Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Hii Shrine''' (ひいじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Unnan|Q877935|qid=Q877935}}, {{ill|Shimane Prefecture|Q132751|qid=Q132751}}. It is also called Miyazaki Daimyōjin. The ''{{ill|Izumo-no-Kuni Fudoki|Q11395858|qid=Q11395858}}'' records two shrines called Hi-no-yashiro with officials from the Jingikan present, and these two are thought to have been merged into one by the time of the {{ill|Engishiki|Q1342448|qid=Q1342448}}, becoming today’s Hii Shrine. Hii Shrine and the co-located Hiihayahiko Shrine in the Engishiki are identified with the present shrine.
+{{nihongo|'''Hii Shrine'''|斐伊神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Unnan|Q877935|qid=Q877935}}, {{ill|Shimane Prefecture|Q132751|qid=Q132751}}. It is also called Miyazaki Daimyōjin. The ''{{ill|Izumo-no-Kuni Fudoki|Q11395858|qid=Q11395858}}'' records two shrines called Hi-no-yashiro with officials from the Jingikan present, and these two are thought to have been merged into one by the time of the {{ill|Engishiki|Q1342448|qid=Q1342448}}, becoming today’s Hii Shrine. Hii Shrine and the co-located Hiihayahiko Shrine in the Engishiki are identified with the present shrine. {{nihongo|'''Hii Shrine'''|斐伊神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The enshrined deities are {{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}}, {{ill|Kushinadahime|UNKNOWN|Kushinadahime|lt=Inadahime-no-Mikoto}}, and {{ill|UNKNOWN|lt=Itsu no Ohabari-no-Mikoto}}. In the combined shrine hall (Hiihayahiko Shrine and Hisahaya-hiko Shrine), Hisahaya-hiko-no-Mikoto, {{ill|Mika-haya-hi|Q11574224|qid=Q11574224|lt=Mikasuhino-Mikoto}}, and {{ill|UNKNOWN|lt=Hokaguhibiko-no-Mikoto}} are enshrined.
 
-=== History ===
+== History ==
 The foundation year is unknown. According to old shrine traditions, it is extremely ancient, and {{ill|Hikawa Shrine (Saitama)|Q703633|qid=Q703633}} in {{ill|Saitama Prefecture|Q128186|qid=Q128186}} (former {{ill|Q712534|lt=kanpei taisha}}) is said to have been divided from Hii Shrine in year 5 of {{ill|Emperor Kōshō|Q312841|qid=Q312841}}. However, Hikawa Shrine’s side states that it was divided from Kizuki Taisha ({{ill|Izumo-taisha|Q696362|qid=Q696362}}), located upstream on the Izumo Hika ({{ill|Hii River|Q11500714|qid=Q11500714}}). Although {{ill|Izumo-taisha|Q696362|qid=Q696362}} is not geographically related to the present {{ill|Hii River|Q11500714|qid=Q11500714}}, in ancient times the Hii River flowed directly into the {{ill|Sea of Japan|Q27092|qid=Q27092}} instead of into {{ill|Lake Shinji|Q1151248|qid=Q1151248}}, and Izumo Taisha lay downstream rather than upstream. Hii Shrine has always stood upstream on the Hii River.
 
 Under the Engi system it was ranked as a {{ill|Q712534|lt=kokuhei shōsha}}, and on {{ill|November 10|Q2988|qid=Q2988}} of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} 13 under {{ill|Emperor Seiwa|Q349243|qid=Q349243}}, it was granted divine rank of {{ill|UNKNOWN|lt=Junior Fifth Rank, Upper Grade}}. In {{ill|May|Q119|qid=Q119}} of {{ill|Meiji – year 4|Q11512280|qid=Q11512280}}, it was ranked as {{ill|Gō-sha|ja|郷社|qid=Q134917316}}.
 
-=== Yahonsugi (Eight Cedars) ===
+== Yahonsugi (Eight Cedars) ==
 About 100 meters west of the main shrine is an outlying precinct called Yahonsugi. This place is traditionally said to be where Susanoo-no-Mikoto defeated the {{ill|UNKNOWN|lt=Yamata no Orochi}}. It is also thought to be the site of one of the two shrines before they were merged.
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== External links ===
+== External links ==
 
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Hii Shrine]][[Category:Shikinaisha|Hii Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Izumo Province]]
 [[Category:Shikinaisha in Izumo Province]]
@@ -65,4 +62,5 @@ About 100 meters west of the main shrine is an outlying precinct called Yahonsug
 [[Category:Municipal History of Unnan]]
 [[Category:Buildings and structures in Unnan, Shimane]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

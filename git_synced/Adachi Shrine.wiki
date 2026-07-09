@@ -16,13 +16,12 @@
 | deity = {{ill|Kamiyonanayo|lt=Kamiyonanayo|en|Kamiyonanayo|es|Kamiyonanayo|fr|Kamiyonanayo|hy|Կամիյոնանայո|ja|神世七代|ko|가미노요나나오|mni|ꯀꯃꯤꯌꯣꯅꯅꯌꯣ|pl|Kamiyonanayo|ru|Камиёнанаё|vi|Kamiyo-nanayo|zh|神世七代|qid=Q3275893}}
 }}
 
-{{nihongo|'''Adachi Shrine'''|足立神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
+
 
 [[ja:足立神社 (さいたま市西区)]]
 
 {{wikidata link|Q115739544|ja|足立神社 (さいたま市西区)|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shrine
 |Name   = Adachi Shrine
 |Image  = [[File:Adachi jinja, Nishi-ku, Saitama 2.jpg|250px]]<br />Torii gate and worship hall
@@ -39,29 +38,27 @@
 |Map = {{Location map|Japan Saitama|label=Adachi Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Adachi Shrine''' (あだちじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Nishi-ku, Saitama|Q1075040|qid=Q1075040|lt=Nishi Ward}}, {{ill|Saitama (city)|Q134635|qid=Q134635}}, {{ill|Saitama Prefecture|Q128186|qid=Q128186}}.
+{{nihongo|'''Adachi Shrine'''|足立神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Nishi-ku, Saitama|Q1075040|qid=Q1075040|lt=Nishi Ward}}, {{ill|Saitama (city)|Q134635|qid=Q134635}}, {{ill|Saitama Prefecture|Q128186|qid=Q128186}}. {{nihongo|'''Adachi Shrine'''|足立神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
 
-=== History ===
+== History ==
 It is said to have been founded during the reign of the 7th emperor, {{ill|Emperor Kōrei|Q313041|qid=Q313041}}, and to have originally enshrined {{ill|UNKNOWN|lt=Sarutahiko no Mikoto}}. Later, it is伝ed that when {{ill|Yamato Takeru|Q461258|qid=Q461258|lt=Yamato Takeru no Mikoto}} stopped by during his eastern expedition, he enshrined {{ill|UNKNOWN|lt=Susanoo no Mikoto}}<ref>{{Cite web |title=History of Saitama Prefecture, Vol. 2: Nara and Heian Periods |url=https://dl.ndl.go.jp/pid/1049481/1/323?keyword=%E8%B6%B3%E7%AB%8B%E7%A5%9E%E7%A4%BE |website=dl.ndl.go.jp |access-date=2025-05-14 |publisher=National Diet Library |author=Saitama Prefecture |language=ja |year=1931 |editor=Saitama Prefecture}}</ref>.
 
 This Shikinaisha, “Adachi Shrine,” was originally located in Ueta-go. However, as many years passed, by the {{ill|Edo period|Q184963|qid=Q184963}}, multiple shrines called “Adachi Shrine” came to exist, and it became unclear which was the true Adachi Shrine. Even in the surrounding area alone, Adachi Shrines existed in both the main village of Ueta Village and in Mizuhando Village<ref name="神社">Saitama Prefecture Shrine Association Shrine Survey Group (ed.), *Shrines of Saitama: Kita-Adachi, Kodama, and Minami-Saitama*, Saitama Prefecture Shrine Association, 1998, pp. 200–201.</ref>.
 
 In {{ill|1873|Q7757|qid=Q7757}} ({{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} 6), the “Hikawa Shrine” that stood at the present location of the former Iida Village was designated a “village shrine” under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}. Through the {{ill|Shrine Consolidation Policy|Q11590700|qid=Q11590700}} of {{ill|1907|Q2048|qid=Q2048}} (Meiji 40), 30 shrines within the then {{ill|Uemizu|Q11540641|qid=Q11540641}} were merged into Hikawa Shrine. These included the two Adachi Shrines of the former Ueta Village main settlement and the former Mizuhando Village, and on this occasion the shrine was renamed from “Hikawa Shrine” to “Adachi Shrine”<ref name="神社"></ref>.
 
-=== Access ===
+== Access ==
 *1-minute walk from the Adachi Shrine bus stop on a {{ill|Transit bus|Q1373492|qid=Q1373492}}.
 
-=== Notes ===
+== Notes ==
 {{Footnote help}}
 {{Reflist}}
 
-=== References ===
+== References ==
 *Saitama Prefecture Shrine Association Shrine Survey Group (ed.), *Shrines of Saitama: Kita-Adachi, Kodama, and Minami-Saitama*, Saitama Prefecture Shrine Association, 1998
 
 {{Pref-stub|pref=Saitama Prefecture}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Adachi Shrine]][[Category:Shikinaisha|Adachi Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Musashi Province]]
 [[Category:History of Saitama Nishi ward]]
@@ -74,4 +71,5 @@ In {{ill|1873|Q7757|qid=Q7757}} ({{ill|Meiji era|ar|فترة مييجي|ast|Dóm
 [[Category:Sugawara no Michizane]]
 [[Category:incorrect template category applied]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

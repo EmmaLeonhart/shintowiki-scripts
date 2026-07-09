@@ -16,14 +16,13 @@
 | deity = {{ill|Takemikazuchi|qid=Q1502690|lt=Takemikazuchi|de|Takemikazuchi|en|Takemikazuchi|eo|Takemikazuĉi|es|Takemikazuchi|fa|تاکه‌میکازوچی|fr|Takemikazuchi|id|Takemikazuchi|ja|タケミカヅチ|pl|Takemikazuchi|pt|Takemikadzuchi|ru|Такэмикадзути|zh|建御雷|qid=Q1502690}}
 }}
 
-{{nihongo|'''Ami Shrine'''|阿祢神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Hitachi Province]].
+
 
 {{commons category|Category:Ami Jinja}}
 [[ja:阿彌神社 (阿見町竹来)]]
 
 {{wikidata link|Q17191825|commons|Category:Ami Jinja|ja|阿彌神社 (阿見町竹来)|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shrine
 |Name = Ami Shrine
 |Image = [[File:The front shrine of Ami shrine (Takaku, Ami town, Ibaraki prefecture).jpg|270px]]<br />Worship hall
@@ -40,10 +39,10 @@
 |Map = {{Location map|Japan Ibaraki|label=Ami Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Ami Shrine''' (Ami Jinja, also written 阿弥神社) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located at Takaku 1366, {{ill|Ami, Ibaraki|Q1203814|qid=Q1203814}}, {{ill|Inashiki District, Ibaraki|Q1154673|qid=Q1154673}}, {{ill|Ibaraki Prefecture|Q83273|qid=Q83273}} (formerly Takaku Village, {{ill|Shida district|Q11386034|qid=Q11386034}}). Until the early Meiji period, it was known as “Ninomiya Myōjin (Second Shrine Deity)” as the {{ill|Ichinomiya|ca|Ichinomiya (Xinto)|de|Ichi-no-miya|fr|Ichi-no-miya|id|Ichinomiya|ja|一宮|ko|이치노미야|pt|Ichinomiya (templo)|simple|Ichinomiya|th|อิจิโนมิยะ|uk|Ітіномія (титул)|zh|一宮|qid=Q1656379|lt=Second Shrine}} of the former {{ill|Shida district|Q11386034|qid=Q11386034}}. Together with two deities enshrined in subsidiary sanctuaries, and according to another theory together with Murozaki Shrine (Ōmuro, Ami Town) and Toake Shrine (Hasamado, Ami Town), it was also called the “Takaku Three Shrines.” Along with the shrine of the same name located in Nakagō, Ami Town ({{ill|Ami Shrine (Nakagō)|Q17191824|qid=Q17191824|lt=Ami Shrine}}), it is one of the two shrines (minor shrines) of Shida District, {{ill|Hitachi Province|cs|Provincie Hitači|de|Provinz Hitachi|es|Provincia de Hitachi|fa|ولایت هیتاچی|fr|Province de Hitachi|gl|Provincia de Hitachi|hak|Hitachi-koet|id|Provinsi Hitachi|it|Hitachi (provincia)|ja|常陸国|ko|히타치국|lt|Hitačio žemė|nl|Hitachi (provincie)|pt|Província de Hitachi|ru|Хитати (провинция)|simple|Hitachi Province|sk|Hitači (provincia)|sr|Провинција Хитачи|tr|Hitachi (vilayet)|uk|Провінція Хітаті|zh|常陸國|zh_min_nan|Hitati-kok|zh_yue|常陸國|qid=Q1055353}}, listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as “{{ill|Ami Shrine|Q16276818|qid=Q16276818}},” and is regarded as a {{ill|Shikinai Ronsha|ja|論社|qid=Q135022904}} ({{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}). Under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}, it was ranked as a former prefectural shrine.
+{{nihongo|'''Ami Shrine'''|阿祢神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located at Takaku 1366, {{ill|Ami, Ibaraki|Q1203814|qid=Q1203814}}, {{ill|Inashiki District, Ibaraki|Q1154673|qid=Q1154673}}, {{ill|Ibaraki Prefecture|Q83273|qid=Q83273}} (formerly Takaku Village, {{ill|Shida district|Q11386034|qid=Q11386034}}). Until the early Meiji period, it was known as “Ninomiya Myōjin (Second Shrine Deity)” as the {{ill|Ichinomiya|ca|Ichinomiya (Xinto)|de|Ichi-no-miya|fr|Ichi-no-miya|id|Ichinomiya|ja|一宮|ko|이치노미야|pt|Ichinomiya (templo)|simple|Ichinomiya|th|อิจิโนมิยะ|uk|Ітіномія (титул)|zh|一宮|qid=Q1656379|lt=Second Shrine}} of the former {{ill|Shida district|Q11386034|qid=Q11386034}}. Together with two deities enshrined in subsidiary sanctuaries, and according to another theory together with Murozaki Shrine (Ōmuro, Ami Town) and Toake Shrine (Hasamado, Ami Town), it was also called the “Takaku Three Shrines.” Along with the shrine of the same name located in Nakagō, Ami Town ({{ill|Ami Shrine (Nakagō)|Q17191824|qid=Q17191824|lt=Ami Shrine}}), it is one of the two shrines (minor shrines) of Shida District, {{ill|Hitachi Province|cs|Provincie Hitači|de|Provinz Hitachi|es|Provincia de Hitachi|fa|ولایت هیتاچی|fr|Province de Hitachi|gl|Provincia de Hitachi|hak|Hitachi-koet|id|Provinsi Hitachi|it|Hitachi (provincia)|ja|常陸国|ko|히타치국|lt|Hitačio žemė|nl|Hitachi (provincie)|pt|Província de Hitachi|ru|Хитати (провинция)|simple|Hitachi Province|sk|Hitači (provincia)|sr|Провинција Хитачи|tr|Hitachi (vilayet)|uk|Провінція Хітаті|zh|常陸國|zh_min_nan|Hitati-kok|zh_yue|常陸國|qid=Q1055353}}, listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as “{{ill|Ami Shrine|Q16276818|qid=Q16276818}},” and is regarded as a {{ill|Shikinai Ronsha|ja|論社|qid=Q135022904}} ({{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}). Under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}, it was ranked as a former prefectural shrine. {{nihongo|'''Ami Shrine'''|阿祢神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Hitachi Province]].
 [[File:Torii of Ami Shrine (Takaku, Ami town, Ibaraki prefecture).jpg|thumb|240px|{{center|Torii}}]]
 
-=== Enshrined deities ===
+== Enshrined deities ==
 [[File:Shrine within the Precinct of Ami Shrine (Takaku, Ami town, Ibaraki prefecture).jpg|thumb|160px|{{center|Subsidiary shrine}}]]
 ;Main deity
 :{{ill|Takemikazuchi|lt=Takemikazuchi|Q1502690|qid=Q1502690|lt=Take-Mikazuchi-no-Otoko-no-Mikoto}}
@@ -54,7 +53,7 @@ The {{ill|Shintai|Q327532|qid=Q327532}} (sacred object) is a round mirror<ref na
 
 Based on traditions derived from the Futsu myth, there is also a theory that the main enshrined deity is Futsu Ōkami.
 
-=== Subsidiary shrines ===
+== Subsidiary shrines ==
 According to the {{ill|UNKNOWN|lt=Meiji Shrine Records}}, the following subsidiary shrines are listed:
 *{{ill|Osugi Shrine|Q11435950|qid=Q11435950}} ({{ill|Ōmononushi|qid=Q10936701|lt=Ōmononushi-no-Mikoto}})
 *Musubi Shrine ({{ill|Takamimusubi|lt=Takamimusubi|Q125400|qid=Q125400|lt=Taka-mi-Musubi-no-Kami}}) – listed as “Kōmusubi Shrine” in the Ibaraki Prefecture Shrine Photo Register
@@ -78,7 +77,7 @@ A distinctive feature of the precinct is that seven small paths branch off only 
 
 As for wooden structures, in addition to the main sanctuary and worship hall, there is a {{ill|Kagura-den|Q94498|qid=Q94498}} built in {{ill|Hōreki|de|Hōreki|eo|Horeki-epoko|fa|هوره‌کی|fr|Ère Hōreki|it|Hōreki|ja|宝暦|ko|호레키|ru|Хорэки|simple|Hōreki|sr|Хореки|sv|Hōreki|tr|Hōreki|zh|寶曆 (日本)|qid=Q1194397}} 6 (1756) on the west side of the precinct, and a one-bay {{ill|Nagare-zukuri|Q210684|qid=Q210684}} shrine building on the east side. According to the “Newly Compiled Gazetteer of Scenic Sites,” which states, “The main hall, worship hall, offering hall, Ōsugi hall, kagura hall, and others stand in orderly rows, displaying remarkable splendor,” this shrine building is thought to be the Ōsugi Shrine (Ōsugi Hall). Note that the shrine building of the former Kasumigaura Shrine ({{ill|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545}}) is preserved not here but at the site of Nakagō Ami Shrine.
 
-=== Festivals ===
+== Festivals ==
 Until the Edo period, the festival period was from September 3 to 9 (Newly Compiled Gazetteer of Hitachi Province).
 
 According to prewar records, official and private festivals were held on September 5 ({{ill|Fuken Gōsha Meiji Jinja Shiryō|Q11486103|qid=Q11486103}}) or October 5 (Ibaraki Prefecture Shrine Photo Register), and rituals such as the Opening of the Shrine Doors Festival on January 7, the Flower Pacification Festival in April, and the Rice-Planting Festival in May were also conducted (Newly Compiled Gazetteer of Scenic Sites).
@@ -90,15 +89,15 @@ The current festivals are as follows<ref name="shibu" />:
 *October 5 – {{ill|Reisai|Q11385469|qid=Q11385469}}
 *December 20 – Autumn Festival ({{ill|Niiname-no-Matsuri|Q11501518|qid=Q11501518}})
 
-=== History ===
-=== Founding ===
+== History ==
+== Founding ==
 The founding date is unknown, but:
 *The “Meiji Shrine Records” state: “The founding date is unclear; according to tradition, it was during the {{ill|Wadō (era)|Q1373026|qid=Q1373026}} era of {{ill|Empress Genmei|Q233224|qid=Q233224}} (708–715).”
 *The “Ibaraki Prefecture Shrine Photo Register” lists it as “founding unknown.”
 *The “Newly Compiled Gazetteer of Scenic Sites” states, “It was probably around the Wadō period.”
 *An information board in the precinct titled “Ami Shrine Grove (Takaku)” (Ami Town Board of Education) gives “Year 15 of {{ill|Empress Suiko|Q298057|qid=Q298057}} (607).”
 
-=== Description in the Hitachi Fudoki ===
+== Description in the Hitachi Fudoki ==
 Takaku is an area name descended from “Takaki no Sato” (Village of Takaki) mentioned in the {{ill|Hitachi no Kuni Fudoki|Q11481687|qid=Q11481687}} under the entry for {{ill|Shida district|Q11386034|qid=Q11386034}}. The outline of the ancient account (the Futsu myth) associated with Takaki no Sato is as follows<ref name="普都神話" />:
 :At the dawn of heaven and earth, when plants and trees could speak, a deity named Futsu Ōkami descended from heaven.
 :The great deity traveled through {{ill|Ashihara no Nakatsukuni|Q1096244|qid=Q1096244|lt=the Central Land of Reed Plains}} and pacified the unruly deities of mountains and rivers.
@@ -111,7 +110,7 @@ The Hitachi Fudoki does not explicitly mention the existence of a shrine related
 
 There has been little dispute, from the time of the Newly Compiled Gazetteer of Hitachi Province to the present, regarding identifying Takaku as the descendant place name of “Takaki no Sato”<ref name="豊崎" />. However, the Great Dictionary of Japanese Place Names proposes its own theory rejecting this common view, and in that context identifies the Shikinaisha Ami Shrine with Nakagō Ami Shrine instead<ref name="辞書説" />.
 
-=== Futsu Ōkami ===
+== Futsu Ōkami ==
 Futsu Ōkami is sometimes considered the same deity as Futsunushi-no-Kami due to the similarity in pronunciation.
 *The Newly Compiled Gazetteer of Hitachi Province states that Futsu Ōkami may refer to either Futsunushi Ōkami or the deity Takemikazuchi-no-Mikoto, but it is unclear which, noting that in the {{ill|Kojiki|ace|Kojiki|ar|كوجيكي|az|Kociki|bcl|Kojiki|be|Кодзікі|bg|Коджики|ca|Kojiki|ckb|کۆجیکی|cs|Kodžiki|da|Kojiki|de|Kojiki|eo|Koĝiki|es|Kojiki|et|Kojiki|eu|Kojiki|fa|کوجیکی|fi|Kojiki|fr|Kojiki|gl|Kojiki|he|קוג'יקי|hi|कोजिकी|hr|Kojiki|hu|Kodzsiki|hy|Կոձիկի|id|Kojiki|it|Kojiki|ja|古事記|ka|კოძიკი|kk|Кодзики|kn|ಕೋಜಿಕಿ|ko|고사기|la|Kojiki|lt|Kodžiki|mk|Коџики|ml|കൊജികി|ms|Kojiki|my|ခိုဂျိခိ|nl|Kojiki|no|Kojiki|oc|Kojiki|pl|Kojiki|pt|Kojiki|ro|Kojiki|rsk|Кодїки|ru|Кодзики|sh|Kojiki|simple|Kojiki|sk|Kodžiki|sl|Kodžiki|sr|Коџики|sv|Kojiki|ta|கோஜிகி|th|โคจิกิ|tl|Kojiki|tr|Kojiki|uk|Кодзікі|vi|Cổ sự ký|zh|古事記|zh_classical|古事記|qid=Q813031}}, Takemikazuchi-no-Otoko-no-Kami is also called Takefutsu-no-Kami and Toyofutsu-no-Kami, whereas in the {{ill|Nihon Shoki|Q813935|qid=Q813935|lt=Nihongi}}, Futsunushi-no-Kami and Takemikazuchi-no-Mikoto are treated as separate deities, making it difficult to determine which is meant.
 *The Hyōchū Kofudoki annotates “Futsu Ōkami” as Futsunushi-no-Kami and suggests that both of the two shrines in Shida District listed in the Engishiki Jinmyōchō were likely enshrined based on the Futsu myth.
@@ -126,7 +125,7 @@ All sources agree that it is a shrine that enshrines Futsu Ōkami. The Newly Com
 
 According to the shrine tradition of Murozaki Shrine, in {{ill|Jōgan|Q1075635|qid=Q1075635}} 4 (864)<ref name="室崎" /> or {{ill|Ninna|Q1346317|qid=Q1346317}} 3 (887), Ame-no-Koyane-no-Mikoto, one of the three deities enshrined together at Takaku Ami Shrine, was divided and enshrined at Ōmuro following a {{ill|Oracle|Q217123|qid=Q217123}}. The Ibaraki Prefecture Shrine Photo Register also states that the division of Futsunushi-no-Kami to Toake Shrine in Hasamado occurred at the same time. This division of deities by divine oracle can be seen as a shift from Futsu worship to Kashima worship.
 
-=== Takaku Three Shrines ===
+== Takaku Three Shrines ==
 The Gun-gōkō records under the entry for “Takaki Shrine” that “with three deities enshrined together, it is called the Takaku Three Shrines,” indicating that the name arose from enshrining three deities.
 *The Newly Compiled Gazetteer of Hitachi Province and the Meiji Shrine Records do not mention this name.
 *The Great Dictionary of Japanese Place Names mentions it, citing the Gun-gōkō.
@@ -138,14 +137,14 @@ The Gun-gōkō also notes that when an uncultivated area called “Kaminari” i
 
 The collective concept of the Takaku Three Shrines resembles the “Kashima no Ōkami” (the shrines of Ameno-Ōkami, Sakado Shrine, and Numaō Shrine) mentioned in the entry for {{ill|Kashima District, Ibaraki|ja|鹿島郡 (茨城県)|ko|가시마군 (이바라키현)|pl|Powiat Kashima (Ibaraki)|qid=Q6374307}} in the Hitachi Fudoki<ref name="香島" />. At least after the division by divine oracle, this shrine occupied a position corresponding to “Ameno-Ōkami Shrine” (Kashima Grand Shrine). When connecting this shrine with Murozaki Shrine, the extension leads to the plateau of the Hasamado Castle site, reaching Toake Shrine (which survives today as an independent shrine after being merged into Nakagō Ami Shrine in the Meiji period). These three shrines are arranged in an orderly manner, even in the orientation of their buildings. By the time of the Engishiki Jinmyōchō, the concept of “Kashima no Ōkami” had receded, and from the medieval period onward, the grouping of the {{ill|Tōgoku Sansha|ja|東国三社|qid=Q17222093}} (Kashima Grand Shrine, Katori Grand Shrine, {{ill|Ikisu Shrine|ja|息栖神社|zh|息栖神社|qid=Q11073095}}) became dominant. Shrines that enshrine the ancient three deities of “Kashima no Ōkami” as Kashima deities (rather than as {{ill|Kasuga-no-Kami|Q11088805|qid=Q11088805}}) are rare in Ibaraki Prefecture, remaining only at Takaku Ami Shrine and a few others, such as Kashiwada Shrine (Kashiwada-chō, {{ill|Ushiku, Ibaraki|ar|أوشيكو (إيباراكي)|azb|اوشیکو، ایباراکی|ce|Усику|ceb|Ushiku (lungsod sa Hapon)|de|Ushiku|eo|Uŝiku|es|Ushiku (Ibaraki)|fa|اوشیکو، ایباراکی|fi|Ushiku|fr|Ushiku|gl|Ushiku|id|Ushiku, Ibaraki|it|Ushiku|ja|牛久市|ko|우시쿠시|mg|Ushiku|mzn|اوشیکو، ایباراکی|nl|Ushiku|pl|Ushiku|pt|Ushiku|ro|Ushiku|ru|Усику|sv|Ushiku|tg|Ушику|th|อูชิกุ|tl|Ushiku, Ibaraki|tr|Ushiku|tt|Усику|uk|Усіку|ur|اوکیکو، ایباراکی|uz|Usiku (Ibaraki)|vi|Ushiku, Ibaraki|war|Ushiku, Ibaraki|zh|牛久市|zh_classical|牛久市|zh_min_nan|Usiku-chhī|zh_yue|牛久|qid=Q844133}}), Takahama Shrine (Takahama, {{ill|Ishioka, Ibaraki|ar|إيشيوكا (إيباراكي)|azb|ایشی‌اوکا، ایباراکی|ce|Исиока (гӀала)|ceb|Ishioka (lungsod sa Hapon)|de|Ishioka|eo|Iŝioka|es|Ishioka (Ibaraki)|fa|ایشی‌اوکا، ایباراکی|fi|Ishioka|fr|Ishioka|gl|Ishioka|id|Ishioka, Ibaraki|it|Ishioka|ja|石岡市|ko|이시오카시|mg|Ishioka|mzn|ایشی‌اوکا، ایباراکی|nl|Ishioka|pl|Ishioka|pt|Ishioka|ro|Ishioka|ru|Исиока (город)|sv|Ishioka|tg|Ишиока|tl|Ishioka, Ibaraki|tr|Ishioka|tt|Исиока (шәһәр)|uk|Ісіока|ur|اشیوکا، ایباراکی|uz|Isioka (Ibaraki)|vi|Ishioka, Ibaraki|war|Ishioka, Ibaraki|zh|石岡市|zh_classical|石岡市|zh_min_nan|Isioka-chhī|zh_yue|石岡|qid=Q819658}}), and Momiyama Shrine (Momiyama, {{ill|Hokota, Ibaraki|ar|هوكوتا (إيباراكي)|azb|هوکوتا، ایباراکی|ce|Хокота|ceb|Hokota-shi|de|Hokota|eo|Hokota|es|Hokota (Ibaraki)|fa|هوکوتا، ایباراکی|fi|Hokota|fr|Hokota|gl|Hokota|id|Hokota, Ibaraki|it|Hokota|ja|鉾田市|ko|호코타시|mzn|هوکوتا، ایباراکی|nl|Hokota|pl|Hokota|pt|Hokota|ro|Hokota|ru|Хокота|simple|Hokota, Ibaraki|sv|Hokota|tl|Hokota, Ibaraki|tr|Hokota|tt|Хокота|uk|Хокота|ur|ہوکوٹا، ایباراکی|uz|Hokota (Ibaraki)|vi|Hokota, Ibaraki|war|Hokota, Ibaraki|zh|鉾田市|zh_classical|鉾田市|zh_min_nan|Hokota-chhī|zh_yue|鉾田|qid=Q857297}}).
 
-=== Relationship with Mimura Takaku Shrine ===
+== Relationship with Mimura Takaku Shrine ==
 In the earliest record of the Hitachi Sōsha documents, the “Construction Order Draft for {{ill|Hitachi-no-Kuni Sōshagū|ja|常陸國總社宮|qid=Q11481689}}” dated the 5th month of {{ill|Jishō|fa|جیشو|fr|Ère Jishō|ia|Jisho|id|Jishō|ja|治承|ko|지쇼|ru|Дзисё|simple|Jishō|sr|Џишо|tr|Jishō|zh|治承|zh_yue|治承|qid=Q1194671}} 3 (1179)<ref name="総社文書" />, the name “Mimura Takaku Shrine” appears as the party responsible for constructing one hearth hall (three bays). “Mimura” is generally identified with the ancient name of the area around {{ill|Oda|ja|小田 (つくば市)|qid=Q28686015|lt=Oda}}, {{ill|Tsukuba|ar|تسوكوبا|arz|تسوكوبا|azb|تسوکوبا، ایباراکی|be|Цукуба|bg|Цукуба|ca|Tsukuba|ce|Цукуба|ceb|Tsukuba-shi|cs|Cukuba (Ibaraki)|de|Tsukuba (Ibaraki)|eo|Cukuba|es|Tsukuba (Ibaraki)|et|Tsukuba|eu|Tsukuba (Ibaraki)|fa|تسوکوبا|fi|Tsukuba|fr|Tsukuba|ga|Tsukuba|gl|Tsukuba|hy|Ծուկուբա|id|Tsukuba, Ibaraki|it|Tsukuba|ja|つくば市|ko|쓰쿠바시|mg|Tsukuba|mzn|تسوکوبا، ایباراکی|nl|Tsukuba|no|Tsukuba|pl|Tsukuba|pt|Tsukuba|ro|Tsukuba|ru|Цукуба|sh|Tsukuba|simple|Tsukuba|sr|Цукуба|sv|Tsukuba|tg|Тсукуба|th|สึกูบะ|tl|Tsukuba, Ibaraki|tr|Tsukuba|tt|Цукуба|uk|Цукуба (Ібаракі)|ur|تسوکوبا، ایباراکی|uz|Tsukuba|vi|Tsukuba|war|Tsukuba, Ibaraki|zh|筑波市|zh_classical|筑波市|zh_min_nan|Tsukuba-chhī|zh_yue|筑波|qid=Q273863}}, corresponding to the Three-Village Township of {{ill|Tsukuba District, Ibaraki|Q7850092|qid=Q7850092}} in ancient times. In another Hitachi Sōsha document, a petition by {{ill|Oda clan|Q11463150|qid=Q11463150}} dated the 4th day of the 5th month of {{ill|Bunpō|Q987788|qid=Q987788}} 2 (1318) states, “For the Tsukuba Shrine, Mimura Township allotment, there is absolutely no precedent of construction,” and the name “Mimura Takaku Shrine” disappears.
 
 The shrines listed in the initial construction order—“{{ill|Tsukubasan Shrine|Q11602876|qid=Q11602876|lt=Tsukuba Shrine}}, {{ill|Yoshida Shrine|Q11414032|qid=Q11414032|lt=Yoshida Shrine}}, {{ill|Sato Shrine (Hitachiota)|Q55541642|qid=Q55541642}}, {{ill|Shizu Shrine|ja|静神社|qid=Q11663648}}, {{ill|Inada Shrine|Q11596799|qid=Q11596799}}, {{ill|Okunitama Shrine|Q11433665|qid=Q11433665}}”—refer to main shrines rather than branch shrines, so “Mimura Takaku Shrine” is treated as a major shrine listed alongside representative Shikinaisha of Hitachi Province. However, since the name presupposes the existence of a separate main Takaku Shrine, this shrine alone is thought to have been a branch shrine. No successor shrine exists today for this major shrine, nor are there nearby place names corresponding to “Takaku.” In the {{ill|Kamakura period|Q236205|qid=Q236205}}, Mimura Township had a prominent temple called Mimurayama Seireiin Gokuraku-ji<ref name="極楽寺" />, but today only scant traces remain. It is possible that “Mimura Takaku Shrine” was part of this temple complex.
 
 The Hitachi Sōsha documents indicate that at least during that period there existed a grouping called “Takaku Shrine” or “Takaku Deity.” This can also be interpreted as documentary evidence that a “Takaku Shrine” (rather than Ami Shrine) existed under a name older than “Ninomiya Myōjin.”
 
-=== Early modern period and later ===
+== Early modern period and later ==
 In the early modern period, it was called “Ninomiya Myōjin” as a shrine second in rank only to Tatenui Shrine within Shida District, and became the general shrine for 45 villages in the western half of the district. A petition dated {{ill|Eiwa|Q1145780|qid=Q1145780}} 1 (1375) already states, “Above all, the two shrines of Kihara and Takaku are the foremost general shrines within the estate” (Hyōchū Kofudoki). These two shrines share parallel histories as sacred sites of the Futsu myth, as candidate shrines for the two Shikinaisha of Shida District listed in the Engishiki Jinmyōchō, as the first and second shrines of the district, and as former prefectural shrines under the modern ranking system.
 
 A ridge tag from {{ill|Genroku|ar|فترة غنروكو|cs|Genroku|de|Genroku|es|Genroku|fa|گنروکو|fr|Ère Genroku|id|Genroku|it|Genroku|ja|元禄|ko|겐로쿠|pt|Genroku|ru|Гэнроку|simple|Genroku|sk|Genroku|sr|Генроку|sv|Genroku|tr|Genroku|zh|元祿|qid=Q1325001}} 4 (1691) marking the construction of the main sanctuary still exists. The three-bay nagare-zukuri main sanctuary is the oldest building in Ami Town<ref name="amim" />.
@@ -162,7 +161,7 @@ In Shōwa 57 (1982), the shrine grounds were designated an Ibaraki Prefecture Gr
 
 A giant tree stands behind the main sanctuary. While the grove is well preserved, the bamboo forest behind it is sometimes neglected. The shrine grounds lie on a {{ill|tongue-shaped plateau|Q97216015|qid=Q97216015}} facing Kasumigaura, and all the paths extending from around the shrine buildings descend steeply. The innermost area behind the shrine (aza Hana-no-I<ref name="花ノ井" />) is the site of the medieval Takaku Manor, and to the west is the Middle Jōmon-period Neda Shell Mound (Takaku Shell Mound). The area including Takaku Junior High School to the south contains the Takaku archaeological site.
 
-=== Related shrines ===
+== Related shrines ==
 ;Murozaki Shrine
 :Ibaraki Prefecture, Inashiki District, Ami Town, Akebono (formerly Ōmuro 494, Shida District)
 :Enshrined deity: Ame-no-Koyane-no-Mikoto
@@ -189,7 +188,7 @@ A giant tree stands behind the main sanctuary. While the grove is well preserved
 :*Said to have been founded in {{ill|Ōei|Q1193078|qid=Q1193078}} 2 (1395) as a division from Takaku Ami Shrine. Former name: Kashima Ninomiya Myōjin (Newly Compiled Gazetteer of Hitachi Province). Former village shrine.
 :*Main sanctuary (three-bay nagare-zukuri) built in {{ill|Kyōhō|Q1145048|qid=Q1145048}} 8 (1723); worship hall built in {{ill|Bunsei|Q1327119|qid=Q1327119}} 5 (1822) (designated cultural property of Tsuchiura City).
 
-=== Notes ===
+== Notes ==
 {{Help:Footnotes}}
 {{Reflist|2|refs=
 <ref name="普都神話">The original text in the “Hitachi Fudoki” reads: “'''Takaki no Sato'''. The elders say: At the dawn of heaven and earth, when plants and trees could speak, a deity descended from heaven named '''Futsu Ōkami'''. He traveled through Ashihara no Nakatsukuni and pacified the unruly kinds of mountains and rivers. When the great deity had completed the act of pacification, he intended to return to heaven. Immediately, he removed the staff he carried (commonly called Ikawa no Kawaye), armor, spear, shield, sword, and the jeweled scepter he held, leaving them all in this place. Then he rode a white cloud and ascended back to the blue heavens. The remainder is omitted.” The outline is based on the annotated reading in the Hyōchū Kofudoki.</ref>
@@ -207,7 +206,7 @@ A giant tree stands behind the main sanctuary. While the grove is well preserved
 <ref name="室崎">Regarding the founding of Murozaki Shrine, the Ibaraki Prefecture Shrine Photo Register gives Jōgan 2, while the Inashiki Branch of the Ibaraki Prefecture Association of Shinto Shrines gives Jōgan 4. There is no discrepancy regarding the Ninna date.</ref>
 }}
 
-=== References ===
+== References ==
 *Documents available via the [https://www.ndl.go.jp/ National Diet Library] and the [https://dl.ndl.go.jp/ National Diet Library Digital Collection].
 :Nakayama Nobuna and Kurita Hiroshi (eds.), “Newly Compiled Gazetteer of Hitachi Province, Vol. 2.” Sekizenkansha. Meiji 32–34 (1899–1901).
 :Yoshida Tōgo, “{{ill|Dai Nippon Chimei Jisho|Q17213149|qid=Q17213149}},” Vol. 2, 2nd ed. Fuzanbō. October 17, Meiji 40 (1907).
@@ -221,8 +220,6 @@ A giant tree stands behind the main sanctuary. While the grove is well preserved
 *[http://www.town.ami.lg.jp/ Ami Town], “[http://www.town.ami.lg.jp/category/1-9-3-0-0.html History and Culture (One Hundred Scenic Sites of Ami Town)].” March, Heisei 9 (1997). Accessed March 2020.
 
 {{Shinto Navigation}}{{List of Shrines in Ibaraki Prefecture Navigation}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Ami Shrine]][[Category:Shikinaisha|Ami Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Hitachi Province]]
 [[Category:Shinto shrines in Ibaraki Prefecture]]
@@ -232,4 +229,5 @@ A giant tree stands behind the main sanctuary. While the grove is well preserved
 [[Category:阿見町の建築物]]
 [[Category:Shinto shrines in Ibaraki Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

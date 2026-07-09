@@ -14,13 +14,12 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Yahoko Shrine'''|八桙神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
+
 
 [[ja:八桙神社]]
 
 {{wikidata link|Q48758430|ja|八桙神社|grok=none|check_date=2026-05-27}}
 
-== Japanese content ==
 {{神社
 |名称= Yahoko Shrine
 |画像= {{画像募集中|cat=阿南市}}
@@ -36,45 +35,43 @@
 |地図 = {{Location map|Japan Tokushima|label=Yahoko Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Yahoko Shrine''' (やほこじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} enshrined in {{ill|Nagao-chō|ja|長生町|qid=Q28684548}}, {{ill|Anan, Tokushima|ar|أنان (توكوشيما)|azb|آنان، توکوشیما|ca|Anan (ciutat)|ce|Анан (Токусима)|ceb|Anan (lungsod sa Hapon)|de|Anan|es|Anan (Tokushima)|fa|آنان، توکوشیما|fi|Anan (Tokushima)|fr|Anan (Tokushima)|gl|Anan|hy|Անան (քաղաք)|id|Anan, Tokushima|it|Anan (Tokushima)|ja|阿南市|ko|아난시|mzn|آنان، توکوشیما|nl|Anan (Tokushima)|pl|Anan (miasto)|pt|Anan (Tokushima)|ro|Anan, Tokushima|ru|Анан (город)|sv|Anan, Tokushima|tg|Анан|tl|Anan, Tokushima|tr|Anan, Tokushima|tt|Анан (Токусима)|uk|Анан (Токусіма)|ur|انان، ٹوکو شیما|vi|Anan, Tokushima|war|Anan, Tokushima|zh|阿南市|zh_classical|阿南市|zh_min_nan|Anan-chhī|zh_yue|阿南|qid=Q485583}}, {{ill|Tokushima Prefecture|ace|Prefektur Tokushima|af|Tokushima-prefektuur|an|Prefectura de Tokushima|ar|توكوشيما (محافظة)|az|Tokuşima prefekturası|azb|توکوشیما اوستانی|ban|Préféktur Tokushima|be|Такусіма (прэфектура)|bg|Токушима (префектура)|bn|তোকুশিমা প্রশাসনিক অঞ্চল|ca|Prefectura de Tokushima|cdo|Tokushima-gâing|ce|Токусима (префектура)|ceb|Tokushima-ken|ckb|پارێزگای تۆکوشیما|cs|Prefektura Tokušima|cy|Tokushima (talaith)|da|Tokushima-præfekturet|de|Präfektur Tokushima|eo|Gubernio Tokuŝimo|es|Prefectura de Tokushima|et|Tokushima prefektuur|eu|Tokushima (prefektura)|fa|استان توکوشیما|fi|Tokushiman prefektuuri|fr|Préfecture de Tokushima|frr|Tokushima-ken|ga|Maoracht Tokushima|gl|Prefectura de Tokushima|hak|Tokushima-yen|he|טוקושימה (מחוז)|hr|Tokushima (prefektura)|hu|Tokusima prefektúra|hy|Տոկուսիմա (պրեֆեկտուրա)|id|Prefektur Tokushima|ilo|Prepektura ti Tokushima|it|Prefettura di Tokushima|ja|徳島県|jv|Préfèktur Tokushima|ka|ტოკუსიმის პრეფექტურა|ko|도쿠시마현|lt|Tokušimos prefektūra|lv|Tokusimas prefektūra|mk|Токушима (префектура)|mni|ꯇꯣꯀꯨꯁꯤꯃꯥ ꯂꯝꯈꯥꯢ|mr|तोकुशिमा प्रांत|ms|Wilayah Tokushima|ne|तोकुसिमा|nl|Tokushima (prefectuur)|no|Tokushima (prefektur)|os|Токусимæ (префектурæ)|pl|Prefektura Tokushima|pnb|ضلع ٹوکوشیما|pt|Tokushima|ro|Prefectura Tokushima|ru|Токусима (префектура)|sd|ٽوڪوشيما پريفيڪچر|se|Tokushima prefektuvra|sh|Prefektura Tokushima|simple|Tokushima Prefecture|sk|Tokušima (prefektúra)|sq|Prefektura Tokushima|sr|Префектура Токушима|su|Tokushima Prefecture|sv|Tokushima prefektur|sw|Mkoa wa Tokushima|tg|Префектураи Токушима|th|จังหวัดโทกูชิมะ|tl|Prepektura ng Tokushima|tr|Tokushima (prefektörlük)|tt|Токусима (префектура)|uk|Префектура Токусіма|ur|توکوشیما پریفیکچر|vi|Tokushima|war|Tokushima (prefektura)|wuu|德岛县|zh|德岛县|zh_classical|德島縣|zh_min_nan|Tokusima-koān|zh_yue|德島縣|qid=Q160734}}.
+{{nihongo|'''Yahoko Shrine'''|八桙神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} enshrined in {{ill|Nagao-chō|ja|長生町|qid=Q28684548}}, {{ill|Anan, Tokushima|ar|أنان (توكوشيما)|azb|آنان، توکوشیما|ca|Anan (ciutat)|ce|Анан (Токусима)|ceb|Anan (lungsod sa Hapon)|de|Anan|es|Anan (Tokushima)|fa|آنان، توکوشیما|fi|Anan (Tokushima)|fr|Anan (Tokushima)|gl|Anan|hy|Անան (քաղաք)|id|Anan, Tokushima|it|Anan (Tokushima)|ja|阿南市|ko|아난시|mzn|آنان، توکوشیما|nl|Anan (Tokushima)|pl|Anan (miasto)|pt|Anan (Tokushima)|ro|Anan, Tokushima|ru|Анан (город)|sv|Anan, Tokushima|tg|Анан|tl|Anan, Tokushima|tr|Anan, Tokushima|tt|Анан (Токусима)|uk|Анан (Токусіма)|ur|انان، ٹوکو شیما|vi|Anan, Tokushima|war|Anan, Tokushima|zh|阿南市|zh_classical|阿南市|zh_min_nan|Anan-chhī|zh_yue|阿南|qid=Q485583}}, {{ill|Tokushima Prefecture|ace|Prefektur Tokushima|af|Tokushima-prefektuur|an|Prefectura de Tokushima|ar|توكوشيما (محافظة)|az|Tokuşima prefekturası|azb|توکوشیما اوستانی|ban|Préféktur Tokushima|be|Такусіма (прэфектура)|bg|Токушима (префектура)|bn|তোকুশিমা প্রশাসনিক অঞ্চল|ca|Prefectura de Tokushima|cdo|Tokushima-gâing|ce|Токусима (префектура)|ceb|Tokushima-ken|ckb|پارێزگای تۆکوشیما|cs|Prefektura Tokušima|cy|Tokushima (talaith)|da|Tokushima-præfekturet|de|Präfektur Tokushima|eo|Gubernio Tokuŝimo|es|Prefectura de Tokushima|et|Tokushima prefektuur|eu|Tokushima (prefektura)|fa|استان توکوشیما|fi|Tokushiman prefektuuri|fr|Préfecture de Tokushima|frr|Tokushima-ken|ga|Maoracht Tokushima|gl|Prefectura de Tokushima|hak|Tokushima-yen|he|טוקושימה (מחוז)|hr|Tokushima (prefektura)|hu|Tokusima prefektúra|hy|Տոկուսիմա (պրեֆեկտուրա)|id|Prefektur Tokushima|ilo|Prepektura ti Tokushima|it|Prefettura di Tokushima|ja|徳島県|jv|Préfèktur Tokushima|ka|ტოკუსიმის პრეფექტურა|ko|도쿠시마현|lt|Tokušimos prefektūra|lv|Tokusimas prefektūra|mk|Токушима (префектура)|mni|ꯇꯣꯀꯨꯁꯤꯃꯥ ꯂꯝꯈꯥꯢ|mr|तोकुशिमा प्रांत|ms|Wilayah Tokushima|ne|तोकुसिमा|nl|Tokushima (prefectuur)|no|Tokushima (prefektur)|os|Токусимæ (префектурæ)|pl|Prefektura Tokushima|pnb|ضلع ٹوکوشیما|pt|Tokushima|ro|Prefectura Tokushima|ru|Токусима (префектура)|sd|ٽوڪوشيما پريفيڪچر|se|Tokushima prefektuvra|sh|Prefektura Tokushima|simple|Tokushima Prefecture|sk|Tokušima (prefektúra)|sq|Prefektura Tokushima|sr|Префектура Токушима|su|Tokushima Prefecture|sv|Tokushima prefektur|sw|Mkoa wa Tokushima|tg|Префектураи Токушима|th|จังหวัดโทกูชิมะ|tl|Prepektura ng Tokushima|tr|Tokushima (prefektörlük)|tt|Токусима (префектура)|uk|Префектура Токусіма|ur|توکوشیما پریفیکچر|vi|Tokushima|war|Tokushima (prefektura)|wuu|德岛县|zh|德岛县|zh_classical|德島縣|zh_min_nan|Tokusima-koān|zh_yue|德島縣|qid=Q160734}}. {{nihongo|'''Yahoko Shrine'''|八桙神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Awa Province (Tokushima)]].
 
-=== History ===
+== History ==
 It is said to have been founded in {{ill|753|ab|753|af|753|am|753 እ.ኤ.አ.|an|753|ar|753|ary|753|ast|753|avk|753|az|753|azb|۷۵۳ (میلادی)|bar|753|be|753|be_x_old|753|bg|753|bn|৭৫৩|bpy|মারি ৭৫৩|br|753|bs|753.|ca|753|cdo|753 nièng|ceb|753|ckb|٧٥٣|crh|753|cs|753|cv|753|cy|753|da|753|de|753|el|753|eml|753|eo|753|es|753|et|753|eu|753|fa|۷۵۳ (میلادی)|fi|753|fo|753|fr|753|fy|753|ga|753|gan|753年|gd|753|gl|753|he|753|hi|753|hr|753.|ht|753 (almanak jilyen)|hu|753|hy|753|id|753|io|753|is|753|it|753|ja|753年|jv|753|ka|753|kaa|753|kk|753 жыл|ko|753년|ksh|Joohr 753|la|753|lb|753|lij|753|lmo|753|lt|753 m.|map_bms|753|mdf|753|mg|753|mhr|753|mk|753|mr|इ.स. ७५३|mrj|753 и|ms|753|mzn|۷۵۳|nah|753|nap|753|nds|753|new|सन् ७५३|nl|753|nn|753|no|753|nrm|753|nso|753|oc|753|or|୭୫୩|os|753-æм аз|pl|753|pnb|753|pt|753|qu|753|ro|753|ru|753 год|rue|753|sa|७५३|scn|753|sd|753ع|sh|753.|shn|753|si|753|sk|753|sl|753|smn|753|sq|753|sr|753|su|753|sv|753|sw|753|tg|Соли 753|th|พ.ศ. 1296|tk|753|tl|753|tly|753|tr|753|tt|753 ел|uk|753|ur|753ء|uz|753|vec|753|vi|753|war|753|wuu|753年|xmf|753|zh|753年|zh_min_nan|753 nî|zh_yue|753年|qid=Q23642}} ({{ill|Tenpyō-shōhō|de|Tempyō-Shōhō|es|Tenpyō-shōhō|fa|تنپیو-شوهو|fr|Ère Tenpyō-shōhō|ia|Tenpyo-shoho|id|Tempyō-shōhō|ja|天平勝宝|ko|덴표쇼호|ru|Тэмпё-сёхо|simple|Tenpyō-shōhō|sr|Тенпјо шохо|tr|Tenpyō-shōhō|uk|Тенпьо Сьохо|zh|天平胜宝|zh_yue|天平勝寶|qid=Q1373169}} 5){{要出典|date=2023年8月}}. In {{ill|883|Q30355|qid=Q30355}} ({{ill|Gangyō|Q747451|qid=Q747451}} 7), it received {{ill|Shinkai (divine rank)|Q11591025|qid=Q11591025}} of Junior Fifth Upper. In {{ill|1163|Q19672|qid=Q19672}} ({{ill|Chōkan|Q1193904|qid=Q1193904}} 1), it became an {{ill|Chokugansho|Q22131160|qid=Q22131160}} of {{ill|Emperor Nijō|Q440149|qid=Q440149}}, and a dark-blue-with-gold ''{{ill|Lotus Sutra|Q861212|qid=Q861212}}'' (later a national {{ill|Important Cultural Property (Japan)|de|Wichtiges Kulturgut Japans|es|Bien Cultural Importante de Japón|fi|Japanin tärkeä kulttuuriomaisuus|fr|Bien culturel important|id|Properti Kebudayaan Penting (Jepang)|it|Bene culturale importante (Giappone)|ja|重要文化財|ko|일본의 중요문화재|ro|Patrimoniu cultural important al Japoniei|simple|Important Cultural Properties of Japan|th|ทรัพย์สินทางวัฒนธรรมที่สำคัญ (ญี่ปุ่น)|tr|Önemli Kültürel Varlık (Japonya)|uk|Важливі культурні пам'ятки Японії|zh|重要文化財|qid=Q1188622}}<ref name="読売20220501"/>) was dedicated, along with donation of five {{ill|tan|Q11410513|qid=Q11410513|lt=tan}} of land as {{ill|Jisha-ryō|Q11458058|qid=Q11458058|lt=sacred estate}}. According to ''{{ill|Tosa Nikki|Q844452|qid=Q844452}}'', {{ill|Ki no Tsurayuki|Q468288|qid=Q468288}} prayed there to avoid {{ill|Piracy|Q45393|qid=Q45393}}.
 
 It is an {{ill|UNKNOWN|lt=Engishiki inner shrine}} enshrining {{ill|Ōkuninushi|Q276944|qid=Q276944}}, related to the ''{{ill|Kojiki|Q813031|qid=Q813031}}''. Its standing statue of Ōnamuchi-no-Mikoto and standing male deity statue are designated national Important Cultural Properties. Among them, the shrine-owned paper document ''Nihonke Mandokoro Kudashibumi'' (1163, Important Cultural Property<ref name="読売20220501">"Treasure of the region preserved for posterity / repository completed in Tokushima" {{ill|The Yomiuri Shimbun|Q645218|qid=Q645218}}, morning edition, May 1, 2022 (Tsumugu page)</ref>) is said to be the oldest surviving document in Tokushima Prefecture. On March 27, 2022, a completion ceremony was held for the storage building preserving these cultural properties<ref name="読売20220501"/>.
 
 In {{ill|1991|Q2062|qid=Q2062}} ({{ill|Heisei era|Q234510|qid=Q234510}} 3), the shrine received an imperial visit by {{ill|Naruhito|Q217096|qid=Q217096|lt=Emperor Naruhito}}. The bettō temple {{ill|UNKNOWN|lt=Yahoko-ji}} is also associated.
 
-=== Enshrined deity ===
+== Enshrined deity ==
 * {{ill|Ōkuninushi|lt=Ōnamuchi-no-Mikoto|qid=Q276944}}
 *:plus 34 other deities
 *Regarding the deity, ''Jinmyōchō Kōshō'' and ''Awa-shi'' identify it as '''{{ill|UNKNOWN|lt=Yachihoko-no-Kami}}'''; ''Tokusen Jinmyōchō'' and ''Dai Nihonshi Jingi-shi'' state that Yahoko deity is son or great-grandson of {{ill|Takeminakata|qid=Q9150391|lt=Takeminakata-no-Kami}}<ref>Nobukazu Nobukawa, "Suwa clan genealogy," ''Revised Suwa Genealogy, Main Volume'' (Iida Kōtarō, {{ill|Taishō era|Q329174|qid=Q329174}} 10), p.18</ref><ref name="宝賀寿男『長髄彦の後裔とその奉斎神社』2008年">Hoga Toshio, ''Descendants of Nagasunehiko and Their Worshiped Shrines'', 2008</ref>. In the "Naga clan genealogy" in volume 6 of ''Shokeifu'', '''Yagami-no-Mikoto''' appears as child of Iroto-no-Mikoto (“Iroto” meaning younger sibling), and this is considered to correspond to Yahoko deity, namely {{ill|Yachinomi-no-Mikoto|Q65249081|qid=Q65249081}}<ref name="宝賀寿男『長髄彦の後裔とその奉斎神社』2008年"/>.
 
-=== Precinct shrines ===
+== Precinct shrines ==
 * Okuyama Shrine
 * Tenjin Shrine
 * Yama Shrine
 * Taishōgun Shrine
 
-=== Cultural properties ===
+== Cultural properties ==
 ; Important Cultural Properties (national)
 * Wooden standing statue of Ōnamuchi-no-Mikoto, height 108.8 cm
 * Wooden standing male deity statue, height 81.2 cm
 * Paper manuscript ''Nihonke Mandokoro Kudashibumi'' (1 scroll) (with 8-scroll dark-blue-gold Lotus Sutra)
 
-=== Access ===
+== Access ==
 * About 10 minutes by car from {{ill|Anan Station|Q4751223|qid=Q4751223}} on the {{ill|Mugi Line|Q860478|qid=Q860478}} ({{ill|Shikoku Railway Company|Q496531|qid=Q496531|lt=JR}}).
 
-=== Notes and references ===
+== Notes and references ==
 {{Reflist}}
 * ''{{ill|Kadokawa Nihon Chimei Daijiten|Q4093011|qid=Q4093011}} 36 Tokushima Prefecture'' ({{ill|1986|Q2430|qid=Q2430}} ISBN 4040013603)
 
-=== External links ===
+== External links ==
 * [http://www.city.anan.tokushima.jp/docs/2010120700030/ Yahoko Shrine, Anan City]
 
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Yahoko Shrine]][[Category:Shikinaisha|Yahoko Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Awa Province (Tokushima)]]
 [[Category:Shinto shrines in Tokushima Prefecture]]
@@ -84,4 +81,5 @@ In {{ill|1991|Q2062|qid=Q2062}} ({{ill|Heisei era|Q234510|qid=Q234510}} 3), the 
 [[Category:Former Gō-sha in Tokushima Prefecture]]
 [[Category:Important Cultural Property of Japan in Tokushima prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

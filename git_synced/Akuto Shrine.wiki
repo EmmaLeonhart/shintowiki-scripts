@@ -16,14 +16,13 @@
 | deity = {{ill|Sumiyoshi sanjin|lt=Sumiyoshi sanjin|de|Sumiyoshi Sanjin|en|Sumiyoshi sanjin|it|Sumiyoshi Sanjin|ja|住吉三神|mni|ꯁꯨꯃꯤꯌꯣꯁꯤ ꯁꯟꯖꯤꯟ|my|ဆုမိရောရှိနတ်သုံးပါး|pl|Sumiyoshi Sanjin|simple|Sumiyoshi sanjin|zh|住吉三神|qid=Q1114013}}
 }}
 
-{{nihongo|'''Akuto Shrine'''|阿久刀神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 {{commons category|Category:Akuto-jinja}}
 [[ja:阿久刀神社]]
 
 {{wikidata link|Q11657135|commons|Category:Akuto-jinja|ja|阿久刀神社|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shinto shrine
 |Name = Akuto Shrine
 |Image = [[File:Akuto-jinja shaden.JPG|260px]]<br />Worship hall
@@ -41,16 +40,16 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
 [[File:Akuto-jinja torii.JPG|thumb|200px|right|{{center|Torii}}]]
-'''Akuto Shrine''' (あくとじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|UNKNOWN|lt=Seifukuji-chō}}, {{ill|Takatsuki|ar|تاكاتسوكي (أوساكا)|az|Takatsuki|be|Такацукі|bg|Такацуки|ca|Takatsuki|ce|Такацуки|ceb|Takatsuki (lungsod sa Hapon)|de|Takatsuki|eo|Takatsuki|es|Takatsuki|et|Takatsuki|eu|Takatsuki (Osaka)|fa|تاکاتسوکی|fi|Takatsuki|fr|Takatsuki|ga|Takatsuki|gl|Takatsuki|hu|Takacuki|it|Takatsuki|ja|高槻市|ko|다카쓰키시|mg|Takatsuki|ms|Takatsuki|mzn|تاکاتسوکی، اوساکا|nl|Takatsuki|no|Takatsuki|pl|Takatsuki|pt|Takatsuki|ro|Takatsuki|ru|Такацуки|sh|Takatsuki|simple|Takatsuki, Osaka|sr|Такацуки|sv|Takatsuki|tg|Такатсуки|th|ทากัตสึกิ|tl|Takatsuki|tr|Takatsuki|tt|Такацуки|uk|Такацукі (Осака)|ur|تاکاتسوکی، اوساکا|vi|Takatsuki|war|Takatsuki, Osaka|zh|高槻市|zh_classical|高槻市|zh_min_nan|Takatuki-chhī|zh_yue|高槻|qid=Q335423}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking}} it was classified as a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
+{{nihongo|'''Akuto Shrine'''|阿久刀神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|UNKNOWN|lt=Seifukuji-chō}}, {{ill|Takatsuki|ar|تاكاتسوكي (أوساكا)|az|Takatsuki|be|Такацукі|bg|Такацуки|ca|Takatsuki|ce|Такацуки|ceb|Takatsuki (lungsod sa Hapon)|de|Takatsuki|eo|Takatsuki|es|Takatsuki|et|Takatsuki|eu|Takatsuki (Osaka)|fa|تاکاتسوکی|fi|Takatsuki|fr|Takatsuki|ga|Takatsuki|gl|Takatsuki|hu|Takacuki|it|Takatsuki|ja|高槻市|ko|다카쓰키시|mg|Takatsuki|ms|Takatsuki|mzn|تاکاتسوکی، اوساکا|nl|Takatsuki|no|Takatsuki|pl|Takatsuki|pt|Takatsuki|ro|Takatsuki|ru|Такацуки|sh|Takatsuki|simple|Takatsuki, Osaka|sr|Такацуки|sv|Takatsuki|tg|Такатсуки|th|ทากัตสึกิ|tl|Takatsuki|tr|Takatsuki|tt|Такацуки|uk|Такацукі (Осака)|ur|تاکاتسوکی، اوساکا|vi|Takatsuki|war|Takatsuki, Osaka|zh|高槻市|zh_classical|高槻市|zh_min_nan|Takatuki-chhī|zh_yue|高槻|qid=Q335423}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking}} it was classified as a {{ill|Son-sha|Q134917284|qid=Q134917284}}. {{nihongo|'''Akuto Shrine'''|阿久刀神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
-=== Enshrined deity ===
+== Enshrined deity ==
 * {{ill|Sumiyoshi sanjin|Q1114013|qid=Q1114013|lt=Sumiyoshi Ōkami}}<ref name="由緒書">Shrine origin document.</ref><ref name="説明板">“Akuto Shrine,” Takatsuki City Board of Education, March 2015 (on-site information board).</ref>
 ** A collective term for Sokotsutsu-no-Ōno-Mikoto, Nakatsutsu-no-Ōno-Mikoto, and Uwatsutsu-no-Ōno-Mikoto<ref name="由緒書"/>.
 
 Because it is commonly called “Sumiyoshi-san,” the enshrined deity is listed as the Sumiyoshi deity in the *{{ill|Tokusen Jinmyōchō|ja|特選神名牒|qid=Q11571092}}*<ref name="地名">“Place Names of Osaka Prefecture,” entry for Akuto Shrine.</ref>. However, *Setsuyō Gundan* identifies it as a Suwa deity<ref name="地名"/>, while other theories propose Akutohime (consort of {{ill|Emperor Annei|ar|الإمبراطور أنيي|arz|الامبراطور انيى|azb|آنیی (ایمپیراتور)|bg|Аней|ca|Annei|ckb|ئیمپراتۆر ئانێی|cs|Annei|de|Annei|el|Αυτοκράτορας Ανέι|eo|Annei|es|Annei Tennō|fa|امپراتور آنیی|fi|Annei|fr|Annei|he|אני, קיסר יפן|hr|Annei|hu|Annei japán császár|id|Kaisar Annei|it|Annei|ja|安寧天皇|ka|ანეი|ko|안네이 천황|ms|Maharaja Annei|nl|Annei|pl|Annei|pt|Annei|ru|Император Аннэй|sh|Car Annei|simple|Emperor Annei|sl|Cesar Annej|sr|Анеи|sv|Annei|th|จักรพรรดิอันเน|tl|Emperador Annei|tr|Annei|uk|Імператор Анней|uz|Imperator Annei|vi|Thiên hoàng Annei|zh|安寧天皇|zh_classical|安寧天皇|zh_min_nan|Annei Thian-hông|zh_yue|安寧天皇|qid=Q313345}})<ref name="地名"/>, or a deity named Kudo<ref name="歴史館">{{Cite web|ja|year=2012 |url= http://www.city.takatsuki.osaka.jp/rekishi_kanko/rekishi/rekishikan/daionokuni/1327734538892.html |title=Akuto Shrine |work=Internet History Museum |publisher={{ill|Takatsuki|ar|تاكاتسوكي (أوساكا)|az|Takatsuki|be|Такацукі|bg|Такацуки|ca|Takatsuki|ce|Такацуки|ceb|Takatsuki (lungsod sa Hapon)|de|Takatsuki|eo|Takatsuki|es|Takatsuki|et|Takatsuki|eu|Takatsuki (Osaka)|fa|تاکاتسوکی|fi|Takatsuki|fr|Takatsuki|ga|Takatsuki|gl|Takatsuki|hu|Takacuki|it|Takatsuki|ja|高槻市|ko|다카쓰키시|mg|Takatsuki|ms|Takatsuki|mzn|تاکاتسوکی، اوساکا|nl|Takatsuki|no|Takatsuki|pl|Takatsuki|pt|Takatsuki|ro|Takatsuki|ru|Такацуки|sh|Takatsuki|simple|Takatsuki, Osaka|sr|Такацуки|sv|Takatsuki|tg|Такатсуки|th|ทากัตสึกิ|tl|Takatsuki|tr|Takatsuki|tt|Такацуки|uk|Такацукі (Осака)|ur|تاکاتسوکی، اوساکا|vi|Takatsuki|war|Takatsuki, Osaka|zh|高槻市|zh_classical|高槻市|zh_min_nan|Takatuki-chhī|zh_yue|高槻|qid=Q335423}} |accessdate=2015-08-07}}</ref>.
 
-=== History ===
-=== Founding ===
+== History ==
+== Founding ==
 The founding date is unknown, and several theories have been discussed.
 
 *Shinmyōchō Kōshō* argues a connection with “Akuta,” who is mentioned in the “Tsuki no Muraji” entry of the *{{ill|Shinsen Shōjiroku|Q1045362|qid=Q1045362}}*<ref>“Shinsen Shōjiroku,” Sakyo Shohan, Tsuki no Muraji entry.</ref>, as someone who presented silk to {{ill|Emperor Kenzō|ar|الإمبراطور كينزو|arz|الامبراطور كينزو|azb|کینزو (ایمپیراتور)|bcl|Emperador Kenzō|cs|Kenzó|de|Kenzō|es|Kenzō Tennō|fa|امپراتور کینزو|fr|Kenzō|hr|Kenzō (japanski car)|hu|Kenzó japán császár|id|Kaisar Kenzō|it|Kenzō (imperatore del Giappone)|ja|顕宗天皇|ka|კენძო|ko|겐조 천황|nl|Kenzo (keizer)|pl|Kenzō|pt|Kenzo|ru|Император Кэндзо|sh|Car Kenzō|simple|Emperor Kenzō|sl|Cesar Kenzo|sv|Kenzo (japansk kejsare)|th|จักรพรรดิเค็นโซ|tl|Emperador Kenzō|tr|Kenzō (imparator)|uk|Імператор Кендзо|uz|Imperator Kenzō|vi|Thiên hoàng Kenzō|yo|Emperor Kenzō|zh|顯宗天皇|zh_min_nan|Kenzô Thian-hông|zh_yue|顯宗天皇|qid=Q360966}}<ref name="地名"/>. It further notes that Tsuki no Muraji are recorded as descendants of {{ill|Nuri no Omi|Q119380486|qid=Q119380486}}, identifying him with “Nuri no Mi,” who appears in the *{{ill|Kojiki|ace|Kojiki|ar|كوجيكي|az|Kociki|bcl|Kojiki|be|Кодзікі|bg|Коджики|ca|Kojiki|ckb|کۆجیکی|cs|Kodžiki|da|Kojiki|de|Kojiki|eo|Koĝiki|es|Kojiki|et|Kojiki|eu|Kojiki|fa|کوجیکی|fi|Kojiki|fr|Kojiki|gl|Kojiki|he|קוג'יקי|hi|कोजिकी|hr|Kojiki|hu|Kodzsiki|hy|Կոձիկի|id|Kojiki|it|Kojiki|ja|古事記|ka|კოძიკი|kk|Кодзики|kn|ಕೋಜಿಕಿ|ko|고사기|la|Kojiki|lt|Kodžiki|mk|Коџики|ml|കൊജികി|ms|Kojiki|my|ခိုဂျိခိ|nl|Kojiki|no|Kojiki|oc|Kojiki|pl|Kojiki|pt|Kojiki|ro|Kojiki|rsk|Кодїки|ru|Кодзики|sh|Kojiki|simple|Kojiki|sk|Kodžiki|sl|Kodžiki|sr|Коџики|sv|Kojiki|ta|கோஜிகி|th|โคจิกิ|tl|Kojiki|tr|Kojiki|uk|Кодзікі|vi|Cổ sự ký|zh|古事記|zh_classical|古事記|qid=Q813031}}* as presenting silkworms to the consort of {{ill|Emperor Nintoku|Q313119|qid=Q313119}}. From this, it is inferred that Akuta, an immigrant with sericulture technology, lived in this area and enshrined his clan deity here<ref name="地名"/>.
@@ -59,14 +58,14 @@ Another theory points to the “{{ill|Ato no Muraji|Q17191532|qid=Q17191532|lt=A
 
 It is also said that the name of the {{ill|Akuta River|ja|芥川 (大阪府)|qid=Q11614729}} flowing north of the shrine precincts derives from the shrine’s name<ref name="説明板"/>, changing from “Akutogawa” to “Akutagawa” over time<ref name="歴史館"/><ref>{{Cite book|ja |editor=Haruo Shimomura (ed.) |year=2005 |title=Historical Walk Along the Saigoku Kaidō |publisher=Kansai Historical Walk Association |page=187}}</ref>.
 
-=== Overview ===
+== Overview ==
 The *{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}*, compiled in {{ill|927|Q30470|qid=Q30470}} during the mid-{{ill|Heian period|Q193292|qid=Q193292}}, lists “Akuto Shrine, {{ill|Shimakami district|ja|島上郡|zh|島上郡|qid=Q10965808}}, Settsu Province,” and ranks it as a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}.
 
 Although its subsequent history is unclear, the shrine was burned down during the wars involving the {{ill|Miyoshi clan|Q2975329|qid=Q2975329}} and {{ill|Matsunaga clan|Q11531583|qid=Q11531583}} in the {{ill|Eiroku|Q1143341|qid=Q1143341}} era (1558–1570)<ref name="説明板"/>. The main hall was rebuilt in {{ill|1828|Q7570|qid=Q7570}} (11th year of {{ill|Bunsei|Q1327119|qid=Q1327119}}). During the {{ill|Edo period|Q184963|qid=Q184963}}, it was known as “Sumiyoshi Daimyōjin.”
 
 In {{ill|1872|ab|1872|af|1872|als|1872|am|1872 እ.ኤ.አ.|an|1872|ar|1872|ary|1872|arz|1872|ast|1872|avk|1872|az|1872|azb|۱۸۷۲ (میلادی)|ba|1872 йыл|ban|1872|bar|1872|bat_smg|1872|bcl|1872|be|1872|be_x_old|1872|bg|1872|bn|১৮৭২|bpy|মারি ১৮৭২|br|1872|bs|1872.|ca|1872|cdo|1872 nièng|ce|1872 шо|ceb|1872|ckb|١٨٧٢|crh|1872|cs|1872|csb|1872|cv|1872|cy|1872|da|1872|de|1872|diq|1872|el|1872|eml|1872|eo|1872|es|1872|et|1872|eu|1872|fa|۱۸۷۲|fi|1872|fiu_vro|1872|fo|1872|fr|1872|frp|1872|frr|1872|fur|1872|fy|1872|ga|1872|gan|1872年|gcr|1872|gd|1872|gl|1872|gv|1872|he|1872|hi|१८७२|hif|1872|hr|1872.|hsb|1872|ht|1872 (almanak gregoryen)|hu|1872|hy|1872|hyw|1872 թուական|ia|1872|id|1872|ilo|1872|io|1872|is|1872|it|1872|ja|1872年|jv|1872|ka|1872|kaa|1872|kk|1872 жыл|kn|೧೮೭೨|ko|1872년|krc|1872 джыл|ku|1872|kv|1872-ӧд во|la|1872|lb|1872|lez|1872 йис|li|1872|lij|1872|lmo|1872|lt|1872 m.|lv|1872. gads|mai|१८७२|map_bms|1872|mdf|1872|mg|1872|mhr|1872|mi|1872|min|1872|mk|1872|mr|इ.स. १८७२|mrj|1872 и|ms|1872|my|၁၈၇၂|myv|1872 ие|mzn|۱۸۷۲|nah|1872|nap|1872|nds|1872|nds_nl|1872|new|ई सं १८७२|nl|1872|nn|1872|no|1872|nrm|1872|nso|1872|oc|1872|olo|1872|or|୧୮୭୨|os|1872-æм аз|pa|1872|pam|1872|pl|1872|pnb|1872|pt|1872|qu|1872|ro|1872|ru|1872 год|rue|1872|sa|१८७२|sah|1872|scn|1872|sd|1872ع|se|1872|sh|1872.|shn|1872|si|1872|simple|1872|sk|1872|sl|1872|smn|1872|sq|1872|sr|1872|stq|1872|su|1872|sv|1872|sw|1872|szl|1872|ta|1872|te|1872|tet|1872|tg|Соли 1872|th|พ.ศ. 2415|tk|1872|tl|1872|tly|1872|tr|1872|tt|1872 ел|udm|1872 ар|uk|1872|ur|1872ء|uz|1872|vec|1872|vi|1872|vls|1872|vo|1872|wa|1872|war|1872|xmf|1872|yi|1872|za|1872 nienz|zea|1872|zh|1872年|zh_classical|一八七二年|zh_min_nan|1872 nî|zh_yue|1872年|qid=Q7753}} (5th year of {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}), during shrine land reorganization, nearby Suwa Shrine and Daishōgun Shrine were relocated to become auxiliary shrines within the precincts<ref name="説明板"/>. Under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}, it was designated a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
 
-=== Precincts ===
+== Precincts ==
 The sacred {{ill|Aphananthe aspera|Q4779482|qid=Q4779482}} standing in the precincts is 21.5 meters tall with a trunk circumference of 3.45 meters<ref>{{Cite web|ja|author=Hideki Kikuchi |url= http://www.city.takatsuki.osaka.jp/ikkrwebBrowse/material/files/group/82/hogojumokuichiran1-2.pdf |format=PDF |title=Protected Trees (List of Protected Trees 1) |work=Designation of Protected Areas (2) Protected Trees |publisher={{ill|Takatsuki|ar|تاكاتسوكي (أوساكا)|az|Takatsuki|be|Такацукі|bg|Такацуки|ca|Takatsuki|ce|Такацуки|ceb|Takatsuki (lungsod sa Hapon)|de|Takatsuki|eo|Takatsuki|es|Takatsuki|et|Takatsuki|eu|Takatsuki (Osaka)|fa|تاکاتسوکی|fi|Takatsuki|fr|Takatsuki|ga|Takatsuki|gl|Takatsuki|hu|Takacuki|it|Takatsuki|ja|高槻市|ko|다카쓰키시|mg|Takatsuki|ms|Takatsuki|mzn|تاکاتسوکی، اوساکا|nl|Takatsuki|no|Takatsuki|pl|Takatsuki|pt|Takatsuki|ro|Takatsuki|ru|Такацуки|sh|Takatsuki|simple|Takatsuki, Osaka|sr|Такацуки|sv|Takatsuki|tg|Такатсуки|th|ทากัตสึกิ|tl|Takatsuki|tr|Takatsuki|tt|Такацуки|uk|Такацукі (Осака)|ur|تاکاتسوکی، اوساکا|vi|Takatsuki|war|Takatsuki, Osaka|zh|高槻市|zh_classical|高槻市|zh_min_nan|Takatuki-chhī|zh_yue|高槻|qid=Q335423}} |accessdate=2015-08-08}}</ref>. It was designated a municipal protected tree in {{ill|1990|Q2064|qid=Q2064}} (1st year of {{ill|Heisei era|Q234510|qid=Q234510}})<ref name="歴史館"/>.
 
 <gallery>
@@ -74,7 +73,7 @@ File:Akuto-jinja honden.JPG|Main hall
 File:Akuto-jinja shinboku.JPG|Sacred mukunoki tree
 </gallery>
 
-=== Auxiliary shrines ===
+== Auxiliary shrines ==
 All are within the precincts.
 * Daishōgun Shrine
 * Gosha Shrine
@@ -83,7 +82,7 @@ All are within the precincts.
 * Gosha Shrine
 * Daishōgun Shrine
 
-=== Festivals ===
+== Festivals ==
 * Monthly festival (1st of every month, 10:00 a.m.)<ref>Festival information according to the shrine origin document.</ref>
 * New Year’s festival; Great torii chinowa purification ({{ill|January 1|Q2150|qid=Q2150}}–{{ill|January 3|Q2156|qid=Q2156}})
 * Tondo festival ({{ill|January 15|Q2260|qid=Q2260}})
@@ -93,24 +92,22 @@ All are within the precincts.
 * Autumn festival (October; {{ill|UNKNOWN|lt=Sports Day}})
 * Shichi-Go-San visit; wisdom-ring purification ({{ill|November 15|Q2982|qid=Q2982}})
 
-=== Access ===
+== Access ==
 * From the north exit of {{ill|Takatsuki Station (Osaka)|Q1071995|qid=Q1071995}} on {{ill|West Japan Railway Company|Q502125|qid=Q502125}} (JR West), take the {{ill|Takatsuki City Bus|Q11670759|qid=Q11670759}} bound for Kansai University and get off at “Gunge Hongō” bus stop; 3-minute walk.
 
-=== Notes ===
+== Notes ==
 {{Footnote help}}
 {{Reflist|2}}
 
-=== References ===
+== References ==
 * *Nihon Rekishi Chimei Taikei: Place Names of Osaka Prefecture* ({{ill|Heibonsha|Q11482108|qid=Q11482108}}), Takatsuki City, entry for Akuto Shrine
 
-=== External links ===
+== External links ==
 {{Commonscat|Akuto-jinja}}
 * [http://www.city.takatsuki.osaka.jp/rekishi_kanko/rekishi/rekishikan/daionokuni/1327734538892.html Akuto Shrine] – Takatsuki City Internet History Museum
 * [http://www.jinjacho-osaka.net/osakafunai-no-jinjya/dai2sibu/takatuki-city/m08_16_takatuki_akuto.html Akuto Shrine] – Osaka Prefectural Association of Shinto Shrines
 
 {{Shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Akuto Shrine]][[Category:Shikinaisha|Akuto Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Kanpei-sha]]
 [[Category:Shikinaisha in Settsu Province]]
@@ -125,4 +122,5 @@ All are within the precincts.
 [[Category:Shinto shrines in Osaka Prefecture]]
 [[Category:Ato clan]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

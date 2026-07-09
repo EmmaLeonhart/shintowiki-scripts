@@ -17,14 +17,13 @@
 | established = {'time': '+0649-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
 }}
 
-{{nihongo|'''Isagoda Shrine'''|沙田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Shinano Province]].
+
 
 {{commons category|Category:Isagoda-jinja}}
 [[ja:沙田神社]]
 
 {{wikidata link|Q11553081|commons|Category:Isagoda-jinja|ja|沙田神社|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{Shrine
 |Name   = Isagoda Shrine
 |Image  = [[File:Isagoda-jinja keidai.JPG|270px]]<br />Precincts (shrine buildings and the second Onbashira)
@@ -43,9 +42,9 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
 [[File:Isagoda-jinja ninotorii.JPG|thumb|200px|right|Second torii gate]]
-'''Isagoda Shrine''' (いさごだじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in Sannomiya, {{ill|Shimadachi|ja|島立 (松本市)|qid=Q11477019|lt=Shimadate}}, {{ill|Matsumoto, Nagano|ar|ماتسوموتو (ناغانو)|az|Matsumoto|azb|ماتسوموتو، ناقانو|bg|Мацумото|ca|Matsumoto (ciutat)|ce|Мацумото (гӀала)|ceb|Matsumoto (lungsod sa Hapon)|ckb|ماتسومۆتۆ، ناگانۆ|cs|Macumoto|da|Matsumoto|de|Matsumoto|eo|Macumoto (Nagano)|es|Matsumoto (Nagano)|et|Matsumoto|eu|Matsumoto (Nagano)|fa|ماتسوموتو، ناگانو|fi|Matsumoto (Nagano)|fr|Matsumoto (Nagano)|ga|Matsumoto|gl|Matsumoto|ha|Matsumoto, Nagano|hy|Մացումոտո (քաղաք)|id|Matsumoto, Nagano|it|Matsumoto|ja|松本市|ko|마쓰모토시|mdf|Мацумота (Нагано)|ms|Matsumoto|mzn|ماتسوموتو، ناگانو|nl|Matsumoto|nn|Matsumoto i Nagano|no|Matsumoto (Nagano)|os|Мацумото (сахар)|pl|Matsumoto|pt|Matsumoto (Nagano)|ro|Matsumoto, Nagano|ru|Мацумото (город)|sh|Matsumoto|simple|Matsumoto, Nagano|sl|Macumoto, Nagano|sr|Мацумото|sv|Matsumoto|tg|Матсумото|th|มัตสึโมโตะ|tl|Matsumoto, Nagano|tr|Matsumoto|tt|Мацумото (шәһәр)|uk|Мацумото (Наґано)|ur|ماتسوموتو، ناگانو|vi|Matsumoto|war|Matsumoto, Nagano|zh|松本市|zh_classical|松本市|zh_min_nan|Matumoto-chhī|zh_yue|松本|qid=Q213324}}, {{ill|Nagano Prefecture|Q127877|qid=Q127877}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} and is traditionally regarded as the {{ill|Shinano Province|Q289250|qid=Q289250}} {{ill|Ichinomiya|Q1656379|qid=Q1656379|lt=Sannomiya}}; under the {{ill|Q712534|lt=former ranking system}} it was a {{ill|Gō-sha|Q134917316|qid=Q134917316}}. Its {{ill|UNKNOWN|lt=shrine crest}} is the “three-tiered diamond.”
+{{nihongo|'''Isagoda Shrine'''|沙田神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in Sannomiya, {{ill|Shimadachi|ja|島立 (松本市)|qid=Q11477019|lt=Shimadate}}, {{ill|Matsumoto, Nagano|ar|ماتسوموتو (ناغانو)|az|Matsumoto|azb|ماتسوموتو، ناقانو|bg|Мацумото|ca|Matsumoto (ciutat)|ce|Мацумото (гӀала)|ceb|Matsumoto (lungsod sa Hapon)|ckb|ماتسومۆتۆ، ناگانۆ|cs|Macumoto|da|Matsumoto|de|Matsumoto|eo|Macumoto (Nagano)|es|Matsumoto (Nagano)|et|Matsumoto|eu|Matsumoto (Nagano)|fa|ماتسوموتو، ناگانو|fi|Matsumoto (Nagano)|fr|Matsumoto (Nagano)|ga|Matsumoto|gl|Matsumoto|ha|Matsumoto, Nagano|hy|Մացումոտո (քաղաք)|id|Matsumoto, Nagano|it|Matsumoto|ja|松本市|ko|마쓰모토시|mdf|Мацумота (Нагано)|ms|Matsumoto|mzn|ماتسوموتو، ناگانو|nl|Matsumoto|nn|Matsumoto i Nagano|no|Matsumoto (Nagano)|os|Мацумото (сахар)|pl|Matsumoto|pt|Matsumoto (Nagano)|ro|Matsumoto, Nagano|ru|Мацумото (город)|sh|Matsumoto|simple|Matsumoto, Nagano|sl|Macumoto, Nagano|sr|Мацумото|sv|Matsumoto|tg|Матсумото|th|มัตสึโมโตะ|tl|Matsumoto, Nagano|tr|Matsumoto|tt|Мацумото (шәһәр)|uk|Мацумото (Наґано)|ur|ماتسوموتو، ناگانو|vi|Matsumoto|war|Matsumoto, Nagano|zh|松本市|zh_classical|松本市|zh_min_nan|Matumoto-chhī|zh_yue|松本|qid=Q213324}}, {{ill|Nagano Prefecture|Q127877|qid=Q127877}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} and is traditionally regarded as the {{ill|Shinano Province|Q289250|qid=Q289250}} {{ill|Ichinomiya|Q1656379|qid=Q1656379|lt=Sannomiya}}; under the {{ill|Q712534|lt=former ranking system}} it was a {{ill|Gō-sha|Q134917316|qid=Q134917316}}. Its {{ill|UNKNOWN|lt=shrine crest}} is the “three-tiered diamond.” {{nihongo|'''Isagoda Shrine'''|沙田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Shinano Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The enshrined deities are the following three <ref>The list of enshrined deities is based on the explanatory plaque within the shrine grounds.</ref>.
 * '''{{ill|Hoori|Q1051960|qid=Q1051960|lt=Hikohodemino-mikoto}}''' (ひこほほでみのみこと)
 * '''{{ill|Toyotama-hime|de|Toyotama-hime|es|Toyotama-hime|fa|تویوتاما-هیمه|fi|Otohime|fr|Otohime|id|Toyotama-hime|ja|トヨタマヒメ|ko|도요타마히메|mni|ꯇꯣꯌꯣꯇꯃ-ꯍꯤꯃꯦ|pl|Toyotama-hime|ru|Тоётама-химэ|simple|Toyotama-hime|sv|Otohime|uk|Тойотама-хіме|vi|Toyotama-hime|zh|豐玉毘賣命|qid=Q2329261|lt=Toyotama-hime no Mikoto}}''' (とよたまひめのみこと)
@@ -53,13 +52,13 @@ The enshrined deities are the following three <ref>The list of enshrined deities
 
 These three deities are considered to belong to the {{ill|UNKNOWN|lt=sea-deity line}} and the {{ill|Tenson-zoku|fr|Tenson-zoku|ja|天孫族|ko|천손족|uk|Тенсон Зоку|zh|天孫民族|qid=Q10939350|lt=heavenly-descendant line}}, but this shrine also conducts Suwa-shrine–type rituals that involve erecting Onbashira pillars <ref name="地名"/>. There is also a theory that the enshrined deity is {{ill|Emperor Keikō|Q329723|qid=Q329723}}’s son {{ill|Isakiirihikonomiko|Q18700560|qid=Q18700560|lt=Izasajiri-iri-hiko no Mikoto}} <ref>According to *Higashichikuma-gunshi* (as cited in the Isagoda Shrine entry of *Place Names of Nagano Prefecture*).</ref>.
 
-=== History ===
-=== Founding ===
+== History ==
+== Founding ==
 According to shrine tradition, it was originally enshrined at Sagisawa-dake in {{ill|Chikuma District, Shinano|fa|شهرستان چیکوما، شینانو|ja|筑摩郡|qid=Q5097503}} (present-day Sagisawa, {{ill|Hata, Nagano|Q854697|qid=Q854697|lt=Hata}}, Matsumoto City). On June 28 in the 5th year of {{ill|Taika (era)|de|Taika|es|Taika (era)|fa|تایکا (دوره)|fr|Ère Taika|hr|Taika (razdoblje)|ia|Taika|id|Taika|ja|大化|ka|ტაიკა|ko|다이카|nl|Taikaperiode|pl|Taika|ru|Тайка|sh|Taika (era)|simple|Taika (era)|sr|Таика|th|ไทกะ|tr|Taika|uk|Тайка|zh|大化 (日本)|zh_yue|大化 (年號)|qid=Q1077930}} ({{ill|649|ab|649|af|649|am|649 እ.ኤ.አ.|an|649|ar|649|ary|649|ast|649|avk|649|az|649|azb|۶۴۹ (میلادی)|be|649|be_x_old|649|bg|649|bn|৬৪৯|bpy|মারি ৬৪৯|br|649|bs|649.|ca|649|cdo|649 nièng|ceb|649|ckb|٦٤٩|crh|649|cs|649|cv|649|cy|649|da|649|de|649|el|649|eml|649|eo|649|es|649|et|649|eu|649|fa|۶۴۹ (میلادی)|fi|649|fo|649|fr|649|fy|649|ga|649|gan|649年|gd|649|gl|649|he|649|hi|649|hr|649.|ht|649 (almanak jilyen)|hu|649|hy|649|id|649|io|649|is|649|it|649|ja|649年|jv|649|ka|649|kk|649 жыл|ko|649년|la|649|lb|649|lij|649|lmo|649|lt|649 m.|map_bms|649|mdf|649|mg|649|mhr|649|mk|649|mr|इ.स. ६४९|mrj|649 и|ms|649|mzn|۶۴۹|nah|649|nap|649|nds|649|nds_nl|649|new|सन् ६४९|nl|649|nn|649|no|649|nrm|649|nso|649|oc|649|or|୬୪୯|os|649-æм аз|pl|649|pnb|649|pt|649|qu|649|ro|649|ru|649 год|rue|649|sa|६४९|scn|649|sd|649ع|se|649|sh|649.|shn|649|si|649|sk|649|sl|649|sq|649|sr|649|su|649|sv|649|sw|649|tg|Соли 649|th|พ.ศ. 1192|tk|649|tl|649|tly|649|tr|649|tt|649 ел|uk|649|ur|649ء|uz|649|vec|649|vi|649|war|649|wuu|649年|xmf|649|zh|649年|zh_min_nan|649 nî|zh_yue|649年|qid=Q31117}}), the {{ill|Shinano Province|Q289250|qid=Q289250|lt=Shinano}} {{ill|Kokushi (official)|Q1351234|qid=Q1351234}} first invited the deity and founded the shrine by imperial command <ref name="説明板">Explanatory plaque on the shrine grounds.</ref>. Later, during the {{ill|Daidō|de|Daidō (Ära)|es|Daidō|fa|دایدو (دوره)|fr|Ère Daidō|ia|Daido|id|Daidō|ja|大同 (日本)|ko|다이도 (일본)|ru|Дайдо (нэнго)|simple|Daidō|sr|Даидо|th|ไดโด|tr|Daidō|uk|Дайдо|zh|大同 (日本)|zh_yue|大同 (日本)|qid=Q1373191|lt=Daido}} era ({{ill|806|ab|806|af|806|als|806|am|806 እ.ኤ.አ.|an|806|ar|806|ary|806|ast|806|az|806|azb|۸۰۶ (میلادی)|bar|806|bcl|806|be|806|be_x_old|806|bg|806|bn|৮০৬|bpy|মারি ৮০৬|br|806|bs|806.|ca|806|cdo|806 nièng|ceb|806|ckb|٨٠٦|crh|806|cs|806|csb|806|cv|806|cy|806|da|806|de|806|el|806|eml|806|eo|806|es|806|et|806|eu|806|fa|۸۰۶ (میلادی)|fi|806|fo|806|fr|806|frr|806|fy|806|ga|806|gan|806年|gd|806|gl|806|he|806|hi|806|hr|806.|ht|806 (almanak jilyen)|hu|806|hy|806|id|806|ilo|806|io|806|is|806|it|806|ja|806年|jv|806|ka|806|kaa|806|kk|806 жыл|ko|806년|la|806|lb|806|lij|806|lmo|806|lt|806 m.|lv|806. gads|map_bms|806|mdf|806|mg|806|mhr|806|mk|806|mr|इ.स. ८०६|mrj|806 и|ms|806|mzn|۸۰۶|nah|806|nap|806|nds|806|new|सन् ८०६|nl|806|nn|806|no|806|nrm|806|nso|806|oc|806|or|୮୦୬|os|806-æм аз|pl|806|pt|806|qu|806|ro|806|ru|806 год|rue|806|sa|८०६|scn|806|sd|806ع|se|806|sh|806.|shn|806|si|806|sk|806|sl|806|smn|806|sq|806|sr|806|su|806|sv|806|sw|806|tg|Соли 806|th|พ.ศ. 1349|tk|806|tl|806|tly|806|tr|806|tt|806 ел|uk|806|ur|806ء|uz|806|vec|806|vi|806|vls|806|war|806|wuu|806年|xmf|806|zh|806年|zh_min_nan|806 nî|zh_yue|806年|qid=Q30021}}–{{ill|810|Q23819|qid=Q23819}}), {{ill|Sakanoue no Tamuramaro|Q941979|qid=Q941979}} is said to have built shrine buildings together with the provincial governor, attributing his success in subjugating bandits on {{ill|Mount Ariake|Q11516433|qid=Q11516433|lt=Mount Ariake}} to the divine power of this shrine <ref name="説明板"/><ref group="注">Village records from the Meiji period identify the figure not as Sakanoue no Tamuramaro but as the Chinju-fu shōgun {{ill|Fujiwara no Toshihito|Q3090673|qid=Q3090673|lt=Fujiwara no Ason Toshihito}} (*The Gods of Japan*, Isagoda Shrine entry). </ref>.
 
 From these traditions, the shrine is thought to have begun by venerating the water spirit of the {{ill|Azusa River|Q11538700|qid=Q11538700}} flowing from Hata <ref name="神々">*The Gods of Japan*, Isagoda Shrine entry.</ref>, and an inner shrine of this shrine stands at a site said to be the former location at Sagisawa. The present main shrine stands atop ancient jōri-period remains that drew in water from the Azusa River, suggesting it is an old shrine dating back to the initial development of the area <ref name="神々"/>. Earthenware and stone tools, as well as iron hoes from the Kofun period and sickles from the medieval and early modern periods, have been excavated from the precincts and are regarded as sacred treasures <ref name="地名"/>.
 
-=== Overview ===
+== Overview ==
 According to shrine tradition, in the first year of {{ill|Ninju|Q1373077|qid=Q1373077}} ({{ill|851|ab|851|af|851|als|851|am|851 እ.ኤ.አ.|an|851|ar|851|ary|851|ast|851|avk|851|az|851|azb|۸۵۱ (میلادی)|bcl|851|be|851|be_x_old|851|bg|851|bn|৮৫১|bpy|মারি ৮৫১|br|851|bs|851.|ca|851|cdo|851 nièng|ce|851 шо|ceb|851|ckb|٨٥١|crh|851|cs|851|csb|851|cv|851|cy|851|da|851|de|851|el|851|eml|851|eo|851|es|851|et|851|eu|851|fa|۸۵۱ (میلادی)|fi|851|fo|851|fr|851|fy|851|ga|851|gan|851年|gd|851|gl|851|gv|851|he|851|hi|851|hr|851.|ht|851 (almanak jilyen)|hu|851|hy|851|id|851|ilo|851|io|851|it|851|ja|851年|jv|851|ka|851|kaa|851|kk|851 жыл|ko|851년|la|851|lb|851|lij|851|lmo|851|lt|851 m.|lv|851. gads|map_bms|851|mdf|851|mg|851|mhr|851|mk|851|mr|इ.स. ८५१|mrj|851 и|ms|851|mzn|۸۵۱|nah|851|nap|851|nds|851|new|सन् ८५१|nl|851|nn|851|no|851|nrm|851|nso|851|oc|851|or|୮୫୧|os|851-æм аз|pl|851|pnb|851|pt|851|qu|851|ro|851|ru|851 год|rue|851|sa|८५१|scn|851|sd|851ع|se|851|sh|851.|shn|851|si|851|sk|851|sl|851|smn|851|sq|851|sr|851|su|851|sv|851|sw|851|tg|Соли 851|th|พ.ศ. 1394|tk|851|tl|851|tly|851|tr|851|tt|851 ел|uk|851|ur|851ء|uz|851|vec|851|vi|851|war|851|wuu|851年|xmf|851|zh|851年|zh_min_nan|851 nî|zh_yue|851年|qid=Q29966}}) the shrine was constructed by imperial evaluation, and in the third year of Ninju ({{ill|853|Q30367|qid=Q30367}}) it is said to have received a divine rank with Nijō Dainagon Ariyasu as imperial envoy <ref name="説明板"/>.
 
 In the *{{ill|Engishiki|ar|إنجيشيكي (كتاب ياباني)|de|Engishiki|es|Engishiki|fr|Engishiki|he|אנגישיקי|id|Engishiki|it|Engishiki|ja|延喜式|ko|엔기시키|min|Engishiki|mr|इंगिशिकी|nl|Engishiki|pt|Engishiki|ru|Энгисики|simple|Engishiki|tr|Engishiki|uk|Енґісікі|zh|延喜式|qid=Q1342448}}* {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Register of Deities}}, compiled in the 5th year of {{ill|Enchō|Q1327274|qid=Q1327274|lt=Enchō}} ({{ill|927|Q30470|qid=Q30470}}), “Isagoda Shrine” is listed in {{ill|Chikuma District, Shinano|fa|شهرستان چیکوما، شینانو|ja|筑摩郡|qid=Q5097503}}, {{ill|Shinano Province|Q289250|qid=Q289250}}, and is included among the {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}. There is also a theory that the “Azusa Water Deity” recorded in the *{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}* entry for March 11 of the 9th year of {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} ({{ill|867|ab|867|af|867|am|867 እ.ኤ.አ.|an|867|ar|867|ary|867|ast|867|avk|867|az|867|azb|۸۶۷ (میلادی)|bcl|867|be|867|be_x_old|867|bg|867|bn|৮৬৭|bpy|মারি ৮৬৭|br|867|bs|867.|ca|867|cdo|867 nièng|ceb|867|ckb|٨٦٧|crh|867|cs|867|csb|867|cv|867|cy|867|da|867|de|867|el|867|eml|867|eo|867|es|867|et|867|eu|867|fa|۸۶۷ (میلادی)|fi|867|fo|867|fr|867|frr|867|fy|867|ga|867|gan|867年|gd|867|gl|867|he|867|hi|867|hr|867.|ht|867 (almanak jilyen)|hu|867|hy|867|id|867|ilo|867|io|867|is|867|it|867|ja|867年|jv|867|ka|867|kaa|867|kk|867 жыл|ko|867년|la|867|lb|867|lij|867|lmo|867|lt|867 m.|lv|867. gads|map_bms|867|mdf|867|mg|867|mhr|867|mk|867|mr|इ.स. ८६७|mrj|867 и|ms|867|mzn|۸۶۷|nah|867|nap|867|nds|867|new|सन् ८६७|nl|867|nn|867|no|867|nrm|867|nso|867|oc|867|or|୮୬୭|os|867-æм аз|pl|867|pnb|867|pt|867|qu|867|ro|867|ru|867 год|rue|867|sa|८६७|scn|867|sd|867ع|se|867|sh|867.|shn|867|si|867|sk|867|sl|867|smn|867|sq|867|sr|867|su|867|sv|867|sw|867|tg|Соли 867|th|พ.ศ. 1410|tk|867|tl|867|tly|867|tr|867|tt|867 ел|uk|867|ur|867ء|uz|867|vec|867|vi|867|war|867|wuu|867年|xmf|867|zh|867年|zh_min_nan|867 nî|zh_yue|867年|qid=Q30347}}) refers to this shrine <ref name="地名">*Place Names of Nagano Prefecture*, Isagoda Shrine entry.</ref>.
@@ -70,7 +69,7 @@ The shrine has long been regarded as the Sannomiya of Shinano Province and was h
 
 In the 5th year of {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} ({{ill|1872|Q7753|qid=Q7753}}), under the {{ill|Q712534|lt=Modern shrine ranking system}}, it was ranked as a {{ill|Gō-sha|Q134917316|qid=Q134917316}}, and in Meiji 34 ({{ill|1901|Q2035|qid=Q2035}}) it was promoted to a {{ill|Gō-sha|Q134917316|qid=Q134917316}} <ref name="説明板"/>. In Meiji 40 ({{ill|1907|Q2048|qid=Q2048}}), it was designated a shrine receiving offerings of sacred food and heihaku <ref name="説明板"/>.
 
-=== Precincts ===  
+== Precincts ==
 In addition to the main hall, worship hall, and kagura hall, there is also the Mikoyasu Shrine<ref name="history">{{Cite web|Japanese-language book|url=https://www.city.matsumoto.nagano.jp/uploaded/attachment/20344.pdf|title=(6) Historic Scenery Seen in the Onbashira Festival|publisher=Matsumoto City|accessdate=2022-09-10}}</ref>. The main hall is said to have been constructed in Bunka 5 (1808)<ref name="history" />.  
 <gallery>
 File:Isagoda-jinja honden.JPG|Main hall<br />{{ill|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545}}
@@ -79,25 +78,25 @@ File:Isagoda-jinja karidono.JPG|Temporary hall
 File:Isagoda-jinja ichinotorii.JPG|First torii gate
 </gallery>
 
-=== Subsidiary and Branch Shrines ===  
-=== Inner Shrine ===  
+== Subsidiary and Branch Shrines ==
+== Inner Shrine ==
 The inner shrine is enshrined in Sagisawa, Hata, Matsumoto City. It stands as a stone shrine at a place reached by climbing one of the ravines upstream of the Azusa River. It is said that on Mount Sagisawa there is a huge rock called “Saiden-ishi”<ref name="神々"/>. In the past, the selection for the Onbashira Festival was reportedly carried out on Mount Sagisawa, but today it is conducted in the forests of Hata<ref name="神々"/>.
 
-=== Shrines within the Precincts ===  
+== Shrines within the Precincts ==
 * Koyasu Shrine, etc.  
 <gallery>
 File:Isagoda-jinja keidaisha.JPG|Shrines within the precincts
 </gallery>
 
-=== Festivals ===  
-=== Periodic Festivals ===  
+== Festivals ==
+== Periodic Festivals ==
 * {{ill|Onbashira|es|Onbashira|fr|Onbashira|ja|御柱祭|ru|Омбасира|vi|Onbashira|qid=Q3698846|lt=Shikinen Onbashira Festival}} (once every six years, in the Years of the Rabbit and the Rooster)<ref>Festival details are based on the explanatory signboard within the precincts.</ref>  
 ** Yamadashi Ceremony (Rooster Day in April)  
 ** Hikimawashi (on the day of the annual grand festival)
 
 Held once every six years, in conjunction with the {{ill|Reisai|Q11385469|qid=Q11385469|lt=Grand Annual Festival}} in the Years of the Rabbit and the Rooster. Four sacred pillars are cut from the “O-hayashi” forests formerly owned by the old {{ill|Matsumoto Domain|Q1059941|qid=Q1059941}} in Hata, and are hauled out along {{ill|Japan National Route 158|Q6156830|qid=Q6156830}}. The erection of the pillars is undertaken as follows: the first pillar by Nakamura and Sannomiya villages; the second by Shimadate Town village and Nagata village; the third by Oba village and Koshiba village; and the fourth by Arai village and Horigome village—each handled by villages of the medieval Shimadate-go district. Unlike other Onbashira festivals in the Matsumoto Basin, this festival follows the style of Suwa Taisha, and the oldest example confirmed in historical records dates to Shotoku 3 ({{ill|1713|Q6873|qid=Q6873}}). Since old times it has been said, “To see people, go to Ichinomiya (Suwa Taisha); to see splendor, go to Ninomiya ({{ill|Ono Shrine|Q11464223|qid=Q11464223}}); to see costumes, go to Sannomiya,” and elaborate costumes are prepared for each pillar. It is designated as an {{ill|Folk Cultural Property|ja|民俗文化財|qid=Q24895900}} by Matsumoto City.
 
-=== Annual Festivals ===  
+== Annual Festivals ==
 * New Year’s Day Festival (January 1)  
 * Traffic Safety Prayer Festival (January 3)  
 * Kitchen Deity Festival (January 20)  
@@ -112,36 +111,34 @@ Held once every six years, in conjunction with the {{ill|Reisai|Q11385469|qid=Q1
 * New Grain Prayer Festival (November 23)  
 * Great Purification Festival (December 30)
 
-=== Cultural Properties ===  
-=== Matsumoto City–Designated Important Intangible Folk Cultural Property ===  
+== Cultural Properties ==
+== Matsumoto City–Designated Important Intangible Folk Cultural Property ==
 * Onbashira Festival of Shimadate Isagoda Shrine – Designated June 30, 2000.
 
-=== On-site Information ===  
+== On-site Information ==
 '''Location'''  
 * {{ill|Nagano Prefecture|Q127877|qid=Q127877}}{{ill|Matsumoto, Nagano|ar|ماتسوموتو (ناغانو)|az|Matsumoto|azb|ماتسوموتو، ناقانو|bg|Мацумото|ca|Matsumoto (ciutat)|ce|Мацумото (гӀала)|ceb|Matsumoto (lungsod sa Hapon)|ckb|ماتسومۆتۆ، ناگانۆ|cs|Macumoto|da|Matsumoto|de|Matsumoto|eo|Macumoto (Nagano)|es|Matsumoto (Nagano)|et|Matsumoto|eu|Matsumoto (Nagano)|fa|ماتسوموتو، ناگانو|fi|Matsumoto (Nagano)|fr|Matsumoto (Nagano)|ga|Matsumoto|gl|Matsumoto|ha|Matsumoto, Nagano|hy|Մացումոտո (քաղաք)|id|Matsumoto, Nagano|it|Matsumoto|ja|松本市|ko|마쓰모토시|mdf|Мацумота (Нагано)|ms|Matsumoto|mzn|ماتسوموتو، ناگانو|nl|Matsumoto|nn|Matsumoto i Nagano|no|Matsumoto (Nagano)|os|Мацумото (сахар)|pl|Matsumoto|pt|Matsumoto (Nagano)|ro|Matsumoto, Nagano|ru|Мацумото (город)|sh|Matsumoto|simple|Matsumoto, Nagano|sl|Macumoto, Nagano|sr|Мацумото|sv|Matsumoto|tg|Матсумото|th|มัตสึโมโตะ|tl|Matsumoto, Nagano|tr|Matsumoto|tt|Мацумото (шәһәр)|uk|Мацумото (Наґано)|ur|ماتسوموتو، ناگانو|vi|Matsumoto|war|Matsumoto, Nagano|zh|松本市|zh_classical|松本市|zh_min_nan|Matumoto-chhī|zh_yue|松本|qid=Q213324}} Shimadate Sannomiya 3316
 
 '''Access'''  
 * Railway: {{ill|UNKNOWN|lt=Matsumoto Dentetsu}}{{ill|UNKNOWN|lt=Kamikochi Line}} {{ill|Ōniwa Station|Q11435400|qid=Q11435400}} (about an 8-minute walk)
 
-=== Notes ===  
+== Notes ==
 '''Annotations'''  
 {{reflist|group="注"}}
 
 '''References'''  
 {{reflist}}
 
-=== Bibliography ===  
+== Bibliography ==
 * Precinct explanatory signboard  
 * *Nihon Rekishi Chimei Taikei: Place Names of Nagano Prefecture* ({{ill|Heibonsha|Q11482108|qid=Q11482108}}), entry on Isagoda Shrine, Matsumoto City  
 * Yoshiro Komatsu, “Isagoda Shrine,” in Kenichi Tanigawa (ed.), *Gods of Japan: Shrines and Sacred Places 9 – Mino, Hida, and Shinano* ({{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}}))
 
-=== External Links ===  
+== External Links ==
 {{Commonscat|Isagoda-jinja}}  
 * [http://takara.city.matsumoto.nagano.jp/city/186.html Onbashira Festival of Shimadate Isagoda Shrine] (Matsumoto City Cultural Properties website)
 
 {{Shinto Sidebar}}  
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Isagoda Shrine]][[Category:Shikinaisha|Isagoda Shrine]][[Category:San-no-Miya]]
 [[Category:Shikinaisha in Shinano Province]]
 [[Category:Shikinaisha in Shinano Province]]
@@ -155,4 +152,5 @@ Held once every six years, in conjunction with the {{ill|Reisai|Q11385469|qid=Q1
 [[Category:History of Matsumoto]]
 [[Category:Shinto shrines in Nagano Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

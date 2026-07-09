@@ -15,14 +15,13 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Awa-no-Mikoto Shrine'''|阿波命神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
+
 
 {{commons category|Category:Awanomikoto-jinja}}
 [[ja:阿波命神社]]
 
 {{wikidata link|Q17218974|commons|Category:Awanomikoto-jinja|ja|阿波命神社|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shrine
 |Name = Awanomikoto Shrine
 |Image = [[File:Awanomikoto-jinja keidai.JPG|250px]]<br />Haiden (worship hall)
@@ -41,11 +40,11 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200}}
 }}
 [[File:Awanomikoto-jinja torii.JPG|thumb|250px|right|{{center|Torii gate}}]]
-'''Awanomikoto Shrine''' (あわのみことじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Nagahama, {{ill|Kōzushima, Tokyo|Q1346527|qid=Q1346527}}, {{ill|Tokyo|Q1490|qid=Q1490}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}), and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine rank}}, it was classified as a {{ill|UNKNOWN|lt=Prefectural Shrine}}.
+{{nihongo|'''Awa-no-Mikoto Shrine'''|阿波命神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Nagahama, {{ill|Kōzushima, Tokyo|Q1346527|qid=Q1346527}}, {{ill|Tokyo|Q1490|qid=Q1490}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}), and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine rank}}, it was classified as a {{ill|UNKNOWN|lt=Prefectural Shrine}}. {{nihongo|'''Awa-no-Mikoto Shrine'''|阿波命神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
 
 It is situated in a valley entered from Nagahama in the northern part of {{ill|Kōzu-shima|Q301669|qid=Q301669}}.<ref name="地名"/>
 
-=== Enshrined deity ===
+== Enshrined deity ==
 The shrine enshrines the following single deity:<ref name="地名"/>
 * '''Awanome no Mikoto''' (あわのめのみこと, also written Awanomikoto / Awahime no Mikoto)
 *: Said to be the pioneer deity of Kozushima.<ref name="地名"/> According to the 『{{ill|Shoku Nihon Kōki|Q1041301|qid=Q1041301}}』,<ref group="原" name="承和7年9月"/> she was the principal consort of the Mishima deity (the enshrined deity of {{ill|Mishima Taisha|Q650772|qid=Q650772}}, the {{ill|Izu Province|Q860928|qid=Q860928}} {{ill|Ichinomiya|Q1656379|qid=Q1656379}}).<ref group="注">Regarding the enshrined deity of Mishima Taisha, there are theories identifying it as {{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi no Mikoto}} or {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi no Mikoto}} (both are currently officially recognized). On Kozushima, it is often explained as Kotoshironushi no Mikoto, but in this article the commonly used name “Mishima deity,” based on place-name tradition, is used.</ref> Mononimina no Mikoto (the enshrined deity of {{ill|Monoiminanomikoto Shrine|Q11570647|qid=Q11570647}}) is said to be her {{ill|Mikogami|Q352176|qid=Q352176}}.<ref name="神々">“The Gods of Japan,” entries on Mononimina no Mikoto Shrine and Awanomikoto Shrine.</ref>
@@ -54,10 +53,10 @@ In the 『{{ill|Miyake-ki|ja|三宅記|qid=Q17215100}}』, believed to have been
 
 There is also a tradition that the deity name “Awa” derives from the {{ill|Inbe clan|fa|خاندان اینبه|ja|忌部氏|pl|Inbe (ród)|simple|Inbe clan|th|ตระกูลอิมเบะ|zh|忌部氏|qid=Q8189229}} stopping in this area during their eastward migration from {{ill|Awa Province (Tokushima)|Q907457|qid=Q907457}} to {{ill|Awa Province (Chiba)|ceb|Awa (baranggay)|ckb|پارێزگای ئاوا (چیبا)|cs|Provincie Awa (Čiba)|de|Provinz Awa (Chiba)|es|Provincia de Awa (Chiba)|fa|ولایت آوا (چیبا)|fr|Province d'Awa (Chiba)|gl|Provincia de Awa, Chiba|hak|Awa-koet (Tōkaidō)|id|Provinsi Awa (Chiba)|it|Awa (provincia, Chiba)|ja|安房国|ko|아와국 (도카이도)|lt|Avos žemė (Čiba)|nl|Awa (provincie in Chiba)|pt|Província de Awa (Chiba)|ru|Ава (Канто)|simple|Awa Province (Chiba)|sk|Awa (provincia, Čiba)|sr|Провинција Ава (Хоншу)|tr|Awa (vilayet, Chiba)|uk|Провінція Ава (Канто)|zh|安房國|zh_min_nan|Awa-kok (Tôkaidô)|zh_yue|安房國|qid=Q1053044}} ({{ill|Inbe clan|fa|خاندان اینبه|ja|忌部氏|pl|Inbe (ród)|simple|Inbe clan|th|ตระกูลอิมเบะ|zh|忌部氏|qid=Q8189229}}).<ref name="ガイド">“Touring the Historic Sites of Kozushima and Stories of the Gods,” Awanomikoto Shrine.</ref> {{ill|Hirata Atsutane|Q2572749|qid=Q2572749}} identified Awanome no Mikoto with {{ill|Ama-no-Iwato-wake no Kami|ja|天石門別神|zh|天石門別神|qid=Q10940542}} (daughter of {{ill|Ama-no-Iwato-wake no Kami|ja|天石門別神|zh|天石門別神|qid=Q10940542}}) in the 『{{ill|Koshiden|ja|古史伝|qid=Q11410975}}』 entry on Ikonahime no Mikoto Shrine.<ref name="ガイド"/>
 
-=== History ===
+== History ==
 [[File:Kozushima island.JPG|thumb|280px|right|{{center|Panoramic view of {{ill|Kōzu-shima|Q301669|qid=Q301669}}}}{{small|In the center is {{ill|Mount Tenjō|ceb|Tenjō Zan (bukid sa Hapon, Tōkyō-to)|fa|کوه تنجو|ja|天上山 (東京都)|qid=Q10871808}} (Tokyo), which erupted violently in {{ill|Jōwa (Heian period)|Q1075605|qid=Q1075605|lt=Shōwa}} 5 ({{ill|838|ab|838|af|838|als|838|am|838 እ.ኤ.አ.|an|838|ar|838|ary|838|ast|838|avk|838|az|838|azb|۸۳۸ (میلادی)|bcl|838|be|838|be_x_old|838|bg|838|bn|৮৩৮|bpy|মারি ৮৩৮|br|838|bs|838.|ca|838|cdo|838 nièng|ceb|838|ckb|٨٣٨|crh|838|cs|838|csb|838|cv|838|cy|838|da|838|de|838|el|838|eml|838|eo|838|es|838|et|838|eu|838|fa|۸۳۸ (میلادی)|fi|838|fo|838|fr|838|frr|838|fy|838|ga|838|gan|838年|gd|838|gl|838|he|838|hi|838|hr|838.|ht|838 (almanak jilyen)|hu|838|hy|838|id|838|ilo|838|io|838|it|838|ja|838年|jv|838|ka|838|kaa|838|kk|838 жыл|ko|838년|ks|838|la|838|lb|838|lij|838|lmo|838|lt|838 m.|lv|838. gads|map_bms|838|mdf|838|mg|838|mhr|838|mk|838|mr|इ.स. ८३८|mrj|838 и|ms|838|mzn|۸۳۸|nah|838|nap|838|nds|838|nds_nl|838|new|सन् ८३८|nl|838|nn|838|no|838|nrm|838|nso|838|oc|838|or|୮୩୮|os|838-æм аз|pl|838|pnb|838|pt|838|qu|838|ro|838|ru|838 год|rue|838|sa|८३८|scn|838|sd|838ع|se|838|sh|838.|shn|838|si|838|simple|838|sk|838|sl|838|smn|838|sq|838|sr|838|su|838|sv|838|sw|838|tg|Соли 838|th|พ.ศ. 1381|tk|838|tl|838|tly|838|tr|838|tt|838 ел|uk|838|ur|838ء|uz|838|vec|838|vi|838|vls|838|war|838|wuu|838年|xmf|838|zea|838|zh|838年|zh_min_nan|838 nî|zh_yue|838年|qid=Q23838}}). On the beach below (Nagahama) stands Awanomikoto Shrine, and in the settlement at the far right stands {{ill|Monoiminanomikoto Shrine|Q11570647|qid=Q11570647}}.}}]]
 
-=== Overview ===
+== Overview ==
 The date of establishment is unknown.<ref name="明治">『Meiji Shrine Records』 entry on Awanomikoto Shrine.</ref>
 
 The first appearance in official histories is an entry in the 『{{ill|Shoku Nihon Kōki|Q1041301|qid=Q1041301}}』 for {{ill|Jōwa (Heian period)|Q1075605|qid=Q1075605|lt=Jōwa}} 7 ({{ill|840|ab|840|af|840|als|840|am|840 እ.ኤ.አ.|an|840|ar|840|ary|840|ast|840|avk|840|az|840|azb|۸۴۰ (میلادی)|ban|840|bcl|840|be|840|be_x_old|840|bg|840|bn|৮৪০|bpy|মারি ৮৪০|br|840|bs|840.|ca|840|cdo|840 nièng|ceb|840|ckb|٨٤٠|crh|840|cs|840|csb|840|cv|840|cy|840|da|840|de|840|el|840|eml|840|eo|840|es|840|et|840|eu|840|fa|۸۴۰ (میلادی)|fi|840|fo|840|fr|840|frr|840|fy|840|ga|840|gan|840年|gd|840|gl|840|he|840|hi|840|hr|840.|ht|840 (almanak jilyen)|hu|840|hy|840|id|840|ilo|840|io|840|is|840|it|840|ja|840年|jv|840|ka|840|kaa|840|kk|840 жыл|ko|840년|ksh|Joohr 840|la|840|lb|840|lij|840|lmo|840|lt|840 m.|lv|840. gads|map_bms|840|mdf|840|mg|840|mhr|840|mk|840|mr|इ.स. ८४०|mrj|840 и|ms|840|mzn|۸۴۰|nah|840|nap|840|nds|840|new|सन् ८४०|nl|840|nn|840|no|840|nrm|840|nso|840|oc|840|or|୮୪୦|os|840-æм аз|pl|840|pnb|840|pt|840|qu|840|ro|840|ru|840 год|rue|840|sa|८४०|scn|840|sd|840ع|se|840|sh|840.|shn|840|si|840|sk|840|sl|840|smn|840|sq|840|sr|840|su|840|sv|840|sw|840|tg|Соли 840|th|พ.ศ. 1383|tk|840|tl|840|tly|840|tr|840|tt|840 ел|ug|840|uk|840|ur|840ء|uz|840|vec|840|vi|840|vls|840|war|840|wuu|840年|xmf|840|zh|840年|zh_min_nan|840 nî|zh_yue|840年|qid=Q29936}}).<ref group="原" name="承和7年9月"/> It states that the deity residing on Kamitsushima (Kozushima), Awa no Kami, was the “principal consort of Mishima Taisha,” that Mononimina no Mikoto was her child deity, and that four new shrine buildings were constructed for these deities.<ref name="神々"/> The same article continues with a description of the shrine complex.<ref name="神々"/> It further records that on the night of July 5 in Jōwa 5 ({{ill|838|ab|838|af|838|als|838|am|838 እ.ኤ.አ.|an|838|ar|838|ary|838|ast|838|avk|838|az|838|azb|۸۳۸ (میلادی)|bcl|838|be|838|be_x_old|838|bg|838|bn|৮৩৮|bpy|মারি ৮৩৮|br|838|bs|838.|ca|838|cdo|838 nièng|ceb|838|ckb|٨٣٨|crh|838|cs|838|csb|838|cv|838|cy|838|da|838|de|838|el|838|eml|838|eo|838|es|838|et|838|eu|838|fa|۸۳۸ (میلادی)|fi|838|fo|838|fr|838|frr|838|fy|838|ga|838|gan|838年|gd|838|gl|838|he|838|hi|838|hr|838.|ht|838 (almanak jilyen)|hu|838|hy|838|id|838|ilo|838|io|838|it|838|ja|838年|jv|838|ka|838|kaa|838|kk|838 жыл|ko|838년|ks|838|la|838|lb|838|lij|838|lmo|838|lt|838 m.|lv|838. gads|map_bms|838|mdf|838|mg|838|mhr|838|mk|838|mr|इ.स. ८३८|mrj|838 и|ms|838|mzn|۸۳۸|nah|838|nap|838|nds|838|nds_nl|838|new|सन् ८३८|nl|838|nn|838|no|838|nrm|838|nso|838|oc|838|or|୮୩୮|os|838-æм аз|pl|838|pnb|838|pt|838|qu|838|ro|838|ru|838 год|rue|838|sa|८३८|scn|838|sd|838ع|se|838|sh|838.|shn|838|si|838|simple|838|sk|838|sl|838|smn|838|sq|838|sr|838|su|838|sv|838|sw|838|tg|Соли 838|th|พ.ศ. 1381|tk|838|tl|838|tly|838|tr|838|tt|838 ел|uk|838|ur|838ء|uz|838|vec|838|vi|838|vls|838|war|838|wuu|838年|xmf|838|zea|838|zh|838年|zh_min_nan|838 nî|zh_yue|838年|qid=Q23838}}), a severe volcanic eruption occurred on Kozushima, and divination concluded that it was caused by the anger of the principal consort, Awa no Kami, who had not been granted rank despite the “secondary consort” receiving court rank.<ref name="神々"/> The “secondary consort” is identified as the enshrined deity of {{ill|Ikonahime no Mikoto Shrine|fr|Ikonahime no Mikoto-jinja|ja|伊古奈比咩命神社|qid=Q11379183}} in {{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="神々"/> Earlier, in {{ill|832|Q23900|qid=Q23900}} 9 (832), there is an article stating that both the Mishima deity and Ikonahime no Mikoto were entrusted as Myōjin deities.<ref group="原">『Shaku Nihongi』 vol. 15, 『Nihon Kōki』 entry for May 22, Tenchō 9 (832).</ref><ref name="神々"/><ref group="注" name="名神"/>
@@ -72,7 +71,7 @@ In the early modern period, the shrine was called “Nagahama Myōjin” or “L
 
 On September 1, {{ill|Meiji era|Q3125096|qid=Q3125096}} 21 ({{ill|1888|Q7829|qid=Q7829}}), it was designated a {{ill|UNKNOWN|lt=Prefectural Shrine}} under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}.<ref name="式内社"/>
 
-=== Divine ranks ===
+== Divine ranks ==
 * Records of divine rank bestowals in the Six National Histories
 ** {{ill|Jōwa (Heian period)|Q1075605|qid=Q1075605|lt=Jōwa}} 7 ({{ill|840|ab|840|af|840|als|840|am|840 እ.ኤ.አ.|an|840|ar|840|ary|840|ast|840|avk|840|az|840|azb|۸۴۰ (میلادی)|ban|840|bcl|840|be|840|be_x_old|840|bg|840|bn|৮৪০|bpy|মারি ৮৪০|br|840|bs|840.|ca|840|cdo|840 nièng|ceb|840|ckb|٨٤٠|crh|840|cs|840|csb|840|cv|840|cy|840|da|840|de|840|el|840|eml|840|eo|840|es|840|et|840|eu|840|fa|۸۴۰ (میلادی)|fi|840|fo|840|fr|840|frr|840|fy|840|ga|840|gan|840年|gd|840|gl|840|he|840|hi|840|hr|840.|ht|840 (almanak jilyen)|hu|840|hy|840|id|840|ilo|840|io|840|is|840|it|840|ja|840年|jv|840|ka|840|kaa|840|kk|840 жыл|ko|840년|ksh|Joohr 840|la|840|lb|840|lij|840|lmo|840|lt|840 m.|lv|840. gads|map_bms|840|mdf|840|mg|840|mhr|840|mk|840|mr|इ.स. ८४०|mrj|840 и|ms|840|mzn|۸۴۰|nah|840|nap|840|nds|840|new|सन् ८४०|nl|840|nn|840|no|840|nrm|840|nso|840|oc|840|or|୮୪୦|os|840-æм аз|pl|840|pnb|840|pt|840|qu|840|ro|840|ru|840 год|rue|840|sa|८४०|scn|840|sd|840ع|se|840|sh|840.|shn|840|si|840|sk|840|sl|840|smn|840|sq|840|sr|840|su|840|sv|840|sw|840|tg|Соли 840|th|พ.ศ. 1383|tk|840|tl|840|tly|840|tr|840|tt|840 ел|ug|840|uk|840|ur|840ء|uz|840|vec|840|vi|840|vls|840|war|840|wuu|840年|xmf|840|zh|840年|zh_min_nan|840 nî|zh_yue|840年|qid=Q29936}}), October 14: from no rank to Junior Fifth Rank, Lower Grade (『{{ill|Shoku Nihon Kōki|Q1041301|qid=Q1041301}}』).<ref group="原" name="承和7年"/> — Recorded as “Awa no Kami.”
 ** {{ill|Kashō|Q1373157|qid=Q1373157}} 3 ({{ill|850|Q30364|qid=Q30364}}), October 8: Junior Fifth Rank, Upper Grade (『{{ill|Nihon Montoku Tennō Jitsuroku|cs|Nihon Montoku Tennó Džicuroku|de|Nihon Montoku Tennō Jitsuroku|es|Nihon Montoku Tennō Jitsuroku|ff|Nihon Montoku Tennō Jitsuroku|fr|Nihon Montoku tennō jitsuroku|ja|日本文徳天皇実録|ko|일본문덕천황실록|pt|Nihon Montoku Tennō Jitsuroku|zh|日本文德天皇實錄|qid=Q1052905}}』).<ref group="原" name="嘉祥3年10月"/> — Recorded as “Awa no Kami.”
@@ -82,7 +81,7 @@ On September 1, {{ill|Meiji era|Q3125096|qid=Q3125096}} 21 ({{ill|1888|Q7829|qid
 * After the Six National Histories
 ** First Rank (『Izu Province Shrine Rank Register』) — Recorded as “Consort Shrine.”
 
-=== Shrine grounds ===
+== Shrine grounds ==
 [[File:Awanomikoto-jinja honden.JPG|thumb|200px|right|{{center|Main hall}}]]
 In the 『{{ill|Shoku Nihon Kōki|Q1041301|qid=Q1041301}}』 entry dated September 23, {{ill|Jōwa (Heian period)|Q1075605|qid=Q1075605|lt=Jōwa}} 7 ({{ill|840|ab|840|af|840|als|840|am|840 እ.ኤ.አ.|an|840|ar|840|ary|840|ast|840|avk|840|az|840|azb|۸۴۰ (میلادی)|ban|840|bcl|840|be|840|be_x_old|840|bg|840|bn|৮৪০|bpy|মারি ৮৪০|br|840|bs|840.|ca|840|cdo|840 nièng|ceb|840|ckb|٨٤٠|crh|840|cs|840|csb|840|cv|840|cy|840|da|840|de|840|el|840|eml|840|eo|840|es|840|et|840|eu|840|fa|۸۴۰ (میلادی)|fi|840|fo|840|fr|840|frr|840|fy|840|ga|840|gan|840年|gd|840|gl|840|he|840|hi|840|hr|840.|ht|840 (almanak jilyen)|hu|840|hy|840|id|840|ilo|840|io|840|is|840|it|840|ja|840年|jv|840|ka|840|kaa|840|kk|840 жыл|ko|840년|ksh|Joohr 840|la|840|lb|840|lij|840|lmo|840|lt|840 m.|lv|840. gads|map_bms|840|mdf|840|mg|840|mhr|840|mk|840|mr|इ.स. ८४०|mrj|840 и|ms|840|mzn|۸۴۰|nah|840|nap|840|nds|840|new|सन् ८४०|nl|840|nn|840|no|840|nrm|840|nso|840|oc|840|or|୮୪୦|os|840-æм аз|pl|840|pnb|840|pt|840|qu|840|ro|840|ru|840 год|rue|840|sa|८४०|scn|840|sd|840ع|se|840|sh|840.|shn|840|si|840|sk|840|sl|840|smn|840|sq|840|sr|840|su|840|sv|840|sw|840|tg|Соли 840|th|พ.ศ. 1383|tk|840|tl|840|tly|840|tr|840|tt|840 ел|ug|840|uk|840|ur|840ء|uz|840|vec|840|vi|840|vls|840|war|840|wuu|840年|xmf|840|zh|840年|zh_min_nan|840 nî|zh_yue|840年|qid=Q29936}}),<ref group="原" name="承和7年9月"/> within the report from Izu Province, the following description appears:<ref name="神々"/>
 {{Cquote|At the northeastern corner of the island there is a newly constructed shrine complex. Within it is a mound, about five hundred jō high and eight hundred jō in circumference, shaped like an overturned bowl. On the eastern side is a stepped embankment of four tiers, laid successively with blue, yellow, red, and white sand. Above it stands a pavilion about four jō high. Further south by the sea are two stone chambers, each about ten jō long, four jō wide, and three jō high. Behind them are five-colored ridge stones standing like a folding screen; the rock walls are carved by waves, with mountains, rivers, and flying clouds, their forms subtle and indescribable. In front hang soft patterned curtains, and there is a beautiful beach formed of five-colored sand. To the south is a rocky reef standing like a screen, two-thirds of it entirely golden in color, dazzling beyond description, and so on.|20px||Excerpt from 『Shoku Nihon Kōki』, entry of September 23, Jōwa 7}}
@@ -90,16 +89,16 @@ The “shrine complex” at the beginning of this passage is considered to refer
 
 The shrine buildings collapsed due to torrential rains in {{ill|Shōwa era|Q327567|qid=Q327567}} 63 ({{ill|1988|Q2426|qid=Q2426}}) and were restored and repaired in {{ill|Heisei era|Q234510|qid=Q234510}} 4 ({{ill|1992|Q2060|qid=Q2060}}).<ref name="説明板">Explanatory sign on the shrine grounds.</ref>
 
-=== Former site of the main hall (behind the shrine office) ===
+== Former site of the main hall (behind the shrine office) ==
 <gallery>
 File:Awanomikoto-jinja shamusho.JPG|Shrine office
 </gallery>
 
-=== Cultural properties ===
-=== Tokyo Metropolitan Historic Site ===
+== Cultural properties ==
+== Tokyo Metropolitan Historic Site ==
 * Awanomikoto Shrine Precincts of Kozushima — designated February 22, Shōwa 63.<ref>[“List of Designated Cultural Properties in the Ōshima Area”] (Tokyo Metropolitan Government Bureau of General Affairs website).</ref>
 
-=== On-site information ===
+== On-site information ==
 '''Annual festival'''
 ・“Nagahama Festival” — April 15; postponed to the following day or later in case of rain
 
@@ -110,7 +109,7 @@ File:Awanomikoto-jinja shamusho.JPG|Shrine office
 * {{ill|Monoiminanomikoto Shrine|Q11570647|qid=Q11570647}} — located in the Maehama settlement.
 * {{ill|Monoiminanomikoto Shrine|Q11570647|qid=Q11570647|lt=related site of Mononimina no Mikoto Shrine}} — located in Tako Bay.
 
-=== Notes ===
+== Notes ==
 {{Footnote help}}
 '''Annotations'''
 {{reflist|group="注"}}
@@ -121,7 +120,7 @@ File:Awanomikoto-jinja shamusho.JPG|Shrine office
 '''References'''
 {{reflist|2}}
 
-=== Bibliography ===
+== Bibliography ==
 * Explanatory sign on the shrine grounds
 * Guide by Kozushima Village Hohobo Association and Kozushima Village Chamber of Commerce, “Touring the Historic Sites of Kozushima and Stories of the Gods” (Kozushima Village Chamber of Commerce, 2013), Awanomikoto Shrine entry
 * {{Cite book|Japanese|editor=Meiji Shrine Records Compilation Office|year=1912|chapter=Awanomikoto Shrine|title={{ill|Fuken Gōsha Meiji Jinja Shiryō|Q11486103|qid=Q11486103}}|publisher=Meiji Shrine Records Compilation Office|ref=}}
@@ -131,19 +130,17 @@ File:Awanomikoto-jinja shamusho.JPG|Shrine office
 * 『{{ill|Japanese Historical Topography Series|Q17213509|qid=Q17213509}}: Shizuoka Prefecture』 ({{ill|Heibonsha|Q11482108|qid=Q11482108}})
 * Sakaguchi Kazuo, “Mononimina no Mikoto Shrine and Awanomikoto Shrine,” in {{ill|Ken'ichi Tanigawa|Q2392596|qid=Q2392596}} (ed.), 『Gods of Japan – Shrines and Sacred Places 11: Kantō』 ({{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}}, 1984)
 
-=== Related items ===
+== Related items ==
 * {{ill|Mishima Taisha|Q650772|qid=Q650772}} — {{ill|Izu Province|Q860928|qid=Q860928}} {{ill|Ichinomiya|Q1656379|qid=Q1656379}}; the enshrined deity is the husband of Awanome no Mikoto.
 * {{ill|Ikonahime no Mikoto Shrine|fr|Ikonahime no Mikoto-jinja|ja|伊古奈比咩命神社|qid=Q11379183}} — the enshrined deity is the secondary consort of the Mishima deity.
 
-=== External links ===
+== External links ==
 {{Commonscat|Awanomikoto-jinja}}
 * [Shrines of Kozushima]
 * {{Shinto and Shrine Historical Sources Collection|130101|Awa Shrine}}
 
 {{Shinto navigation}}
 {{Normdaten}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Awa-no-Mikoto Shrine]][[Category:Shikinaisha|Awa-no-Mikoto Shrine]][[Category:Shikinaisha|Awa-no-Mikoto Shrine]][[Category:Shikinaisha in Izu Province]]
 [[Category:Shrines in the Islands of Tokyo Metropolis]]
 [[Category:Architecture of Kōzushima Village]]
@@ -156,4 +153,5 @@ File:Awanomikoto-jinja shamusho.JPG|Shrine office
 [[Category:Myōjin Taisha]]
 [[Category:Designated historic sites of Tokyo]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

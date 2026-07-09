@@ -16,14 +16,12 @@
 | deity = {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
 }}
 
-{{nihongo|'''Mure Shrine'''|牟禮神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 {{commons category|Category:Mure-jinja}}
 
 {{wikidata link|Q11570305|commons|Category:Mure-jinja|ja|牟禮神社|grok=none|check_date=2026-06-03}}
 
-== Japanese content ==
-{{Otheruses|茨木市の牟禮神社|飯綱町の牟禮神社|牟礼神社 (飯綱町)}}
 {{神社
 |名称   = Mure Shrine
 |画像   = [[File:Mure-jinja torii.JPG|250px]]<br/>Torii
@@ -39,13 +37,13 @@
 |地図 = {{Location map|Japan Osaka|label=Mure Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Mure Shrine''' (むれじんじゃ; simplified characters: '''牟礼神社''') is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and under the {{ill|Q712534|lt=former shrine rank}} it was classified as a {{ill|Son-sha|ja|村社|qid=Q134917284}}.
+{{nihongo|'''Mure Shrine'''|牟禮神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and under the {{ill|Q712534|lt=former shrine rank}} it was classified as a {{ill|Son-sha|ja|村社|qid=Q134917284}}. {{nihongo|'''Mure Shrine'''|牟禮神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Takehaya Susanoo no Mikoto}} (たてはやすさのおのみこと)
 * {{ill|UNKNOWN|lt=Ame-no-Koyane no Mikoto}} (あめのこやねのみこと)
 
-=== History ===
+== History ==
 In the mid-{{ill|Heian period|Q193292|qid=Q193292}}, the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}'' lists it as “Mure Shrine, {{ill|Shimashimo district|Q10976940|qid=Q10976940}}, Settsu Province,” and it is ranked as a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}.
 
 In the ''{{ill|Kojiki|Q813031|qid=Q813031}}'', in the section on {{ill|Emperor Suinin|Q314850|qid=Q314850}}, there is the passage “Miko Ōnakatsuhiko no Mikoto is the ancestral deity of Mure no Wake,” leading to a theory that the shrine originally enshrined {{ill|UNKNOWN|lt=Ōnakatsuhiko no Mikoto}} (おおなかつひこのみこと), the ancestor of the Mure clan.<ref>However, the relationship between “Mure no Wake” and this locality is not clear (from the “Mure Village” entry in ''Place Names of Osaka Prefecture'').</ref> Nevertheless, it is said that in order to avoid the temple and shrine burnings carried out by {{ill|Oda Nobunaga|Q171411|qid=Q171411}}, the shrine falsely claimed its enshrined deities were {{ill|Gozu Tennō|Q11570247|qid=Q11570247}} and the {{ill|Kasuga-no-Kami|Q11088805|qid=Q11088805}}, whom Nobunaga revered, and this claim remained thereafter.
@@ -56,36 +54,34 @@ In {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|az
 
 In {{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}} 14 ({{ill|1939|Q18639|qid=Q18639}}), due to river improvement works on the {{ill|Ai River|Q11450512|qid=Q11450512}}, the shrine was relocated to its present site. In Shōwa 15 ({{ill|1940|Q18633|qid=Q18633}}), it received and repurposed the building of the north-facing Hachiman Shrine, a subsidiary shrine of {{ill|Ikukunitama Shrine|Q11574477|qid=Q11574477}}, which had been built in {{ill|Keichō|Q1328185|qid=Q1328185}} 11 ({{ill|1606|Q6747|qid=Q6747}}) by {{ill|Katagiri Katsumoto|Q1882775|qid=Q1882775}}, as its shrine hall. In Shōwa 54 ({{ill|1979|Q2484|qid=Q2484}}), the main hall was restored.
 
-=== Grounds ===
+== Grounds ==
 <gallery widths="200px" heights="150px">
 File:Mure-jinja honden.JPG|Main hall　　
 File:Mure 03.JPG|Worship hall
 </gallery>
 There are no other subsidiary shrines within the grounds.
 
-=== On-site information ===
+== On-site information ==
 ; Address
 * Nakamura-chō 5-7, {{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}
 
 ; Access
 * Nearest station: {{ill|Hankyu|Q473058|qid=Q473058|lt=Hankyu}} {{ill|Hankyu Kyoto Main Line|Q2053737|qid=Q2053737|lt=Kyoto Main Line}} {{ill|Ibaraki-shi Station|Q3969806|qid=Q3969806}} (about a 15-minute walk)
 
-=== Notes ===
+== Notes ==
 {{reflist}}
 
-=== References ===
+== References ==
 * Yukihiko Ambo, “Historic Sites and Scenic Places of Mishima District” (1961), included in Osaka Prefectural Board of Education (ed.), ''Historic Sites, Scenic Places, and Natural Monuments of Osaka Prefecture: Mishima District'' (1974). {{全国書誌番号|73009804}}
 * Ibaraki City Board of Education, ''Our Town Ibaraki: Shrines and Temples'' (1989). {{全国書誌番号|89049621}}
 * Osaka Prefectural Shinto Youth Association (ed.), ''Directory of Shinto Shrines in Osaka Prefecture'' (1971). {{NCID|BA39399841}}
 * ''Japanese Historical Place Names Series: Place Names of Osaka Prefecture'' ({{ill|Heibonsha|ar|هيبونشا|de|Heibonsha|fa|شرکت هیبون|fr|Heibonsha|it|Heibonsha|ja|平凡社|tr|Heibonsha|zh|平凡社|qid=Q11482108}}), Ibaraki City—entries for Nakamura and Mure Village
 
-=== External links ===
+== External links ==
 {{Commonscat|Mure-jinja}}
 * [http://www.jinjacho-osaka.net/osakafunai-no-jinjya/dai2sibu/ibaraki-city/m12_21_ibaragi_mure.html Mure Shrine] (Osaka Prefectural Association of Shinto Shrines)
 
 {{Shinto navigation}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Mure Shrine]][[Category:Shikinaisha|Mure Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Ibaraki, Osaka]]
@@ -93,4 +89,5 @@ There are no other subsidiary shrines within the grounds.
 [[Category:Son-sha in Osaka Prefecture]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

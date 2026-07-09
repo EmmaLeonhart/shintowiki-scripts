@@ -16,14 +16,13 @@
 | deity = {{ill|Ame-no-oshihomimi|lt=Ame no Oshihomimi|de|Amenooshihomimi|en|Ame-no-oshihomimi|fa|آمه-نو-اوشیهومیمی|fr|Ame-no-oshihomimi|it|Ame-no-oshihomimi|ja|アメノオシホミミ|ko|아메노오시호미미|mni|ꯑꯃꯦ-ꯅꯣ-ꯑꯣꯁꯤꯍꯣꯃꯤꯃꯤ|ru|Амэноосихомими но Микото|th|อาเมะ โนะ โอชิโฮมิมิ|uk|Аменоосіхомімі но Мікото|zh|天忍穗耳尊|qid=Q462555}}
 }}
 
-{{nihongo|'''Shibukawa Shrine'''|渋川神社 (八尾市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
 
 {{commons category|Category:Shibukawa-jinja (Yao)}}
 [[ja:渋川神社 (八尾市)]]
 
 {{wikidata link|Q11561593|commons|Category:Shibukawa-jinja (Yao)|ja|渋川神社 (八尾市)|check_date=2026-05-25}}
 
-== Japanese content ==
 {{神社
  | 名称=Shibukawa Shrine
  | 画像=[[File:Shibukawa-jinja (Yao), torii.jpg|250px]]<br />Torii
@@ -37,39 +36,37 @@
  | 地図= {{Location map|Japan Osaka|label=Shibukawa Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Shibukawa Shrine''' (しぶかわじんじゃ) is a shrine in Uematsu-chō, {{ill|Yao, Osaka|ar|ياو (أوساكا)|bcl|Yao, Osaka|be|Яо|bg|Яо|ca|Yao (Osaka)|ce|Яо (Осака)|ceb|Yao-shi|de|Yao (Osaka)|eo|Jao|es|Yao (Osaka)|et|Yao|fa|یائو، اوساکا|fi|Yao|fr|Yao (Osaka)|ga|Yao|gl|Yao|hy|Յաո|id|Yao, Osaka|it|Yao (Osaka)|ja|八尾市|ko|야오시|ms|Yao, Osaka|mzn|یائو، اوساکا|nl|Yao (Osaka)|no|Yao (Osaka)|pl|Yao (miasto)|pt|Yao (Osaka)|ro|Yao (municipiu)|ru|Яо (Япония)|sco|Yao, Osaka|sh|Yao, Osaka|simple|Yao, Osaka|sr|Јао|sv|Yao, Osaka|tg|Яо|th|ยาโอะ|tl|Yao, Osaka|tr|Yao, Osaka|tt|Яо (Осака)|uk|Яо (Осака)|ur|یاو، اوساکا|vi|Yao, Ōsaka|war|Yao, Osaka|zh|八尾市|zh_classical|八尾市|zh_min_nan|Yao-chhī|zh_yue|八尾|qid=Q490872}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} its former rank was {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+{{nihongo|'''Shibukawa Shrine'''|渋川神社 (八尾市)}} is a shrine in Uematsu-chō, {{ill|Yao, Osaka|ar|ياو (أوساكا)|bcl|Yao, Osaka|be|Яо|bg|Яо|ca|Yao (Osaka)|ce|Яо (Осака)|ceb|Yao-shi|de|Yao (Osaka)|eo|Jao|es|Yao (Osaka)|et|Yao|fa|یائو، اوساکا|fi|Yao|fr|Yao (Osaka)|ga|Yao|gl|Yao|hy|Յաո|id|Yao, Osaka|it|Yao (Osaka)|ja|八尾市|ko|야오시|ms|Yao, Osaka|mzn|یائو، اوساکا|nl|Yao (Osaka)|no|Yao (Osaka)|pl|Yao (miasto)|pt|Yao (Osaka)|ro|Yao (municipiu)|ru|Яо (Япония)|sco|Yao, Osaka|sh|Yao, Osaka|simple|Yao, Osaka|sr|Јао|sv|Yao, Osaka|tg|Яо|th|ยาโอะ|tl|Yao, Osaka|tr|Yao, Osaka|tt|Яо (Осака)|uk|Яо (Осака)|ur|یاو، اوساکا|vi|Yao, Ōsaka|war|Yao, Osaka|zh|八尾市|zh_classical|八尾市|zh_min_nan|Yao-chhī|zh_yue|八尾|qid=Q490872}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} its former rank was {{ill|Gō-sha|Q134917316|qid=Q134917316}}. {{nihongo|'''Shibukawa Shrine'''|渋川神社 (八尾市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
-=== History ===
+== History ==
 * Enshrined deities are {{ill|Ame-no-oshihomimi|Q462555|qid=Q462555|lt=Ame-no-Oshihomimi-no-Mikoto}}, {{ill|Nigihayahi|Q10949054|qid=Q10949054|lt=Nigihayahi-no-Mikoto}}, Kunisatsuchi-no-Mikoto, Hidaka Ōkami, and Sugawara Ōkami.
 * The date of foundation is unknown. It is also said to be the site of the Shibukawa residence of {{ill|Mononobe no Moriya|Q2424736|qid=Q2424736}}, whose base was in this area in the Asuka period.
 * Originally it stood at Aza Kawamukai east of the old {{ill|Yamato River|Q9001527|qid=Q9001527}}, but a great flood in Tenbun 3 ({{ill|1533|Q6443|qid=Q6443}}) washed away the entire precinct. At that time, Ukishima Shrine drifted to Nitta Village in Matta District, several kilometers north. Later, in Genki 2 ({{ill|1572|Q6670|qid=Q6670}}), it was rebuilt at the current site, where the otabisho had been.
 * In the precinct stand several large trees, including the Osaka Prefecture natural monument {{ill|Camphora officinarum|Q158722|qid=Q158722}}.
 
-=== Festivals ===
+== Festivals ==
 * Summer festival (July 25-26): commonly called the “reverse festival.” When the shrine was swept away by flood in the past, the sacred object reportedly flowed upstream against the current, giving rise to the name.
 
-=== Cultural properties ===
-=== Osaka Prefecture designated cultural properties ===
+== Cultural properties ==
+== Osaka Prefecture designated cultural properties ==
 [[File:Shibukawa-jinja (Yao), Kusu.jpg|thumb|200px|right|{{center|Camphor tree of Shibukawa Shrine}}]]
 * Natural monument
 ** Camphor tree of Shibukawa Shrine - designated February 20, 1970 (Shōwa 45)<ref>[http://www.pref.osaka.lg.jp/bunkazaihogo/bunkazai/hunai-siteiichiran.html List of cultural properties designated in Osaka Prefecture] from Yao City file on Osaka Prefecture website.</ref>.
 
-=== Access ===
+== Access ==
 * About 5 minutes on foot from {{ill|Yao Station|Q856485|qid=Q856485}} on JR {{ill|Yamatoji Line|Q1151659|qid=Q1151659}}. It is located just south of the station.
 
-=== Notes ===
+== Notes ==
 {{脚注ヘルプ}}
 {{reflist}}
 
-=== Related items ===
+== Related items ==
 * {{ill|Shibugawa Haiji|Q109356865|qid=Q109356865}}
 
-=== External links ===
+== External links ==
 * {{Commonscat-inline|Shibukawa-jinja (Yao)}}
 
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Shibukawa Shrine]][[Category:Shikinaisha|Shibukawa Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
@@ -80,4 +77,5 @@
 [[Category:Mononobe no Moriya]]
 [[Category:龍華]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -18,7 +18,6 @@
 
 {{wikidata link|Q135039430|ja|苗代神社 (朝日町)|grok=none|check_date=2026-06-03}}
 
-== Japanese content ==
 {{神社
 | 名称 = 苗代神社
 | 画像 = {{画像募集中|cat=三重郡}}
@@ -39,27 +38,25 @@
 
 '''苗代神社'''（なわしろじんじゃ）は、{{ill|Mie Prefecture|Q128196|qid=Q128196}}{{ill|Mie District|ceb|Mie-gun|ckb|گەڕەکی میێ|de|Mie-gun|es|Distrito de Mie|fr|District de Mie|id|Distrik Mie, Mie|it|Distretto di Mie|ja|三重郡|ko|미에군|pl|Powiat Mie|uk|Повіт Міє|zh|三重郡|qid=Q1130983}}{{ill|Asahi, Mie|arz|اساهى|ceb|Asahi-chō|ckb|ئاساھی (میێ)|es|Asahi (Mie)|fa|آساهی، میئه|fr|Asahi (Mie)|hy|Ասահի|id|Asahi, Mie|it|Asahi (Mie)|ja|朝日町 (三重県)|ko|아사히정 (미에현)|ms|Asahi, Mie|my|အဆဟိမြို့၊ မိအဲ|pl|Asahi (Mie)|ro|Asahi, Mie|ru|Асахи (Миэ)|sv|Asahi, Mie|th|อาซาฮิ (จังหวัดมิเอะ)|tl|Asahi, Mie|tr|Asahi, Mie|uk|Асахі (Міє)|ur|اساہی، میے|uz|Asahi (Mie)|vi|Asahi, Mie|zh|朝日町 (三重縣)|qid=Q598905|lt=朝日町}}縄生にある{{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}}。{{ill|Ise Province|be|Ісэ (правінцыя)|ckb|پارێزگای ئیسێ|cs|Provincie Ise|de|Provinz Ise|es|Provincia de Ise|eu|Ise probintzia|fa|ولایت ایسه|fi|Isen provinssi|fr|Province d'Ise|gl|Provincia de Ise|hak|Yî-sṳ-koet|id|Provinsi Ise|it|Ise (provincia)|ja|伊勢国|ko|이세국|lt|Isės žemė|nl|Ise (provincie)|pt|Província de Ise|ru|Исэ (провинция)|simple|Ise Province|sk|Ise (provincia)|sr|Провинција Исе|tr|Ise (vilayet)|uk|Провінція Ісе|zh|伊勢國|zh_min_nan|Ise-kok|zh_yue|伊勢國|qid=Q864166}}の{{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}で、旧{{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}}は{{ill|Gō-sha|Q134917316|qid=Q134917316}}。
 
-=== 由緒 ===
+== 由緒 ==
 創祀は、不詳。社伝によると{{ill|Hakuhō|Q11580612|qid=Q11580612}}年間に{{ill|Iga Province|Q1047128|qid=Q1047128}}の{{ill|Aekuni Shrine|ja|敢國神社|zh|敢國神社|qid=Q11499487}}より{{ill|UNKNOWN|lt=少彦名命}}を{{ill|UNKNOWN|lt=勧請}}して祀った。{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=延喜式神明帳}}に{{ill|Asake district|ja|朝明郡|zh|朝明郡|qid=Q11517620}}の一社として記されている。また、その後{{ill|Yamashiro Province|Q749276|qid=Q749276}}の{{ill|Kitano Tenmangū|ca|Kitano Tenmangū|de|Kitano Tenman-gū|el|Ιερό Κιτάνο Τενμάνγκου|es|Kitano Tenman-gū|fa|کیتانو تنمانگو|fi|Kitano Tenman-gū|fr|Kitano Tenman-gū|it|Santuario Kitano|ja|北野天満宮|jv|Kitano Tenmangū|ko|기타노 덴만구|la|Kitano Tenmangū|my|ခိတနိုတန်းမန်းဂူး|ru|Китано-Тэммангу|si|කිතනෝ තෙන්මන්ගූ|simple|Kitano Tenman-gū|sv|Kitano-tenmangū|tr|Kitano Tenman-gū|zh|北野天滿宮|qid=Q662176}}より{{ill|Sugawara no Michizane|Q382005|qid=Q382005}}を勧請して祀った。{{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}2年、{{ill|Emperor Meiji|af|Meiji|ar|الإمبراطور ميجي|arz|الامبراطور ميجى|ast|Meiji Tennō|az|Meyci|ba|Император Мэйдзи|be|Імператар Мэйдзі|bg|Мейджи|bn|সম্রাট মেইজি|ca|Emperador Meiji|cdo|Mìng-dê Tiĕng-huòng|ckb|ئیمپراتۆر مێیجی|cs|Meidži (císař)|da|Meiji-kejseren|de|Meiji|el|Αυτοκράτορας Μέιτζι|eo|Mucuhito|es|Meiji Tennō|et|Keiser Meiji|eu|Meiji enperadorea|fa|امپراتور میجی|fi|Meiji (keisari)|fiu_vro|Mutsuhito|fr|Meiji (empereur)|frr|Keiser Meiji|gl|Emperador Meiji|hak|Mìn-chhṳ thiên-fòng|he|מוצוהיטו|hi|मैजी|hr|Meiji (car)|hu|Meidzsi japán császár|hy|Կայսր Մեյձի|id|Kaisar Meiji|is|Meiji keisari|it|Meiji|ja|明治天皇|jv|Mutsuhito|ka|მუცუჰიტო|kk|Мэйдзи (император)|ko|메이지 천황|la|Mutsuhito|lfn|Imperor Meiji|lt|Imperatorius Meidži|lv|Meidzi|mg|Emperora Meiji|mk|Муцухито|ml|മെജി ചക്രവർത്തി|mn|Эзэн Хаан Мэйжи|mr|मैजी|ms|Maharaja Meiji|mzn|میجی|ne|सम्राट मेइजी|nl|Meiji (keizer)|no|Mutsuhito|pl|Mutsuhito|pms|Matsuhito|pt|Meiji (imperador)|qu|Mutsuhito|ro|Împăratul Meiji|ru|Император Мэйдзи|sh|Mutsuhito, car Meiji|simple|Emperor Meiji|sk|Mucuhito|sq|Perandori Meixhi|sr|Муцухито|sv|Meiji|sw|Mutsuhito|ta|பேரரசர் மெய்சி|th|จักรพรรดิเมจิ|tl|Emperador Meiji|tly|Mutsuhito|tr|Meiji (imparator)|uk|Імператор Мейдзі|ur|شہنشاہ میجی|uz|Imperator Meydzi|vi|Thiên hoàng Minh Trị|war|Emperador Meiji|wuu|明治天皇|xmf|მუცუჰიტო|yo|Emperor Meiji|zh|明治天皇|zh_classical|明治天皇|zh_min_nan|Bêng-tī Thian-hông|zh_yue|明治天皇|qid=Q174231}}の東幸に際し{{ill|UNKNOWN|lt=神饌幣帛料供進社}}の指定を受けた。{{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}}5年、郷社に列格する<ref>{{Cite web|title=県神社庁 苗代神社|url=https://jinja-net.jp/jinja-all/jsearch3all.php?jinjya=2875|access-date=2025-12-18}}</ref>。
 
-=== 祭神 ===
+== 祭神 ==
 *主祭神：少彦名命・菅原道真
 *合祀神：{{ill|UNKNOWN|lt=建速須佐之男命}}・{{ill|UNKNOWN|lt=五男三女神}}・{{ill|UNKNOWN|lt=火之加具土神}}・{{ill|UNKNOWN|lt=宇迦之御魂神}}・{{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997}}・{{ill|UNKNOWN|lt=大宜都比売神}}・{{ill|UNKNOWN|lt=天照大御神}}・{{ill|UNKNOWN|lt=豊宇気毘売神}}<ref>{{Cite web|title=三重県神社庁 苗代神社|url=http://kyoka.mie-jinjacho.or.jp/shrine/%e8%8b%97%e4%bb%a3%e7%a5%9e%e7%a4%be/|access-date=2025-02-18}}</ref>
-=== 祭儀 ===
+== 祭儀 ==
 *秋祭：10月第一土・日曜日（神輿祭りで、巫女舞が奉納される）
 *郷社祭：4月19日
 
-=== 脚注 ===
+== 脚注 ==
 {{脚注ヘルプ}}
 {{Reflist|2}}
 
-=== 関連項目 ===
+== 関連項目 ==
 * {{ill|List of Shikinaisha in Ise Province|abstract|Q11378973|ja|伊勢国の式内社一覧|qid=Q11378973}}
 * {{ill|三重県の神社一覧|ja|三重県の神社一覧|qid=Q48761540}}
 
 {{デフォルトソート:なわしろしんしや}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Nahashirono Shrine]][[Category:Shikinaisha|Nahashirono Shrine]][[Category:Shikinaisha|Nahashirono Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Ise Province]]
@@ -72,4 +69,5 @@
 [[Category:Pages with 150+ untranslated japanese characters]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -16,14 +16,13 @@
 | deity = {{ill|Yamato Takeru|lt=Yamato Takeru|arz|ياماتو تاكيرو|be|Ямата Такэру|de|Yamatotakeru|en|Yamato Takeru|es|Yamato Takeru|fa|یاماتو تاکه‌رو|fr|Yamato Takeru|hu|Jamatotakeru|id|Yamato Takeru|it|Yamato Takeru|ja|ヤマトタケル|ko|야마토타케루|pt|Yamato Takeru|ru|Ямато Такэру|sh|Yamato Takeru|simple|Yamato Takeru|sq|Jamato Takeru|sr|Јамато Такеру|sv|Yamato Takeru|tr|Yamato Takeru|uk|Ямато Такеру|ur|یاماتو تاکیرو|vi|Yamato Takeru|zh_min_nan|Yamato Takeru|zh|日本武尊|qid=Q461258}}
 }}
 
-{{nihongo|'''Tada Shrine (Tabuto Shrine)'''|多太神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 {{commons category|Category:Tabuto-jinja}}
 [[ja:多太神社 (川西市)]]
 
 {{wikidata link|Q48757073|commons|Category:Tabuto-jinja|ja|多太神社 (川西市)|check_date=2026-05-26}}
 
-== Japanese content ==
 {{神社
 |名称=Tada Shrine
 |画像=[[ファイル:Tabuto Jinja Haiden.jpg|270px|]]<br />Haiden
@@ -39,21 +38,21 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
 [[ファイル:Tabuto Jinja Torii.jpg|250px|thumb|{{center|Torii}}]]
-'''Tada Shrine''' (ただじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Hirano, {{ill|Kawanishi, Hyōgo|Q609350|qid=Q609350}}, {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}. It is a {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} of {{ill|Kawabe District, Hyōgo|Q1042053|qid=Q1042053|lt=Kawabe District}}, {{ill|Settsu Province|Q864163|qid=Q864163}}. Its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}. To distinguish it from {{ill|UNKNOWN|lt=Tadain}} (now {{ill|Tada Shrine|Q3513683|qid=Q3513683}}), which became a shrine in {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}, locals call this shrine "Tabuto Jinja."
+{{nihongo|'''Tada Shrine (Tabuto Shrine)'''|多太神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Hirano, {{ill|Kawanishi, Hyōgo|Q609350|qid=Q609350}}, {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}. It is a {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}} of {{ill|Kawabe District, Hyōgo|Q1042053|qid=Q1042053|lt=Kawabe District}}, {{ill|Settsu Province|Q864163|qid=Q864163}}. Its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}. To distinguish it from {{ill|UNKNOWN|lt=Tadain}} (now {{ill|Tada Shrine|Q3513683|qid=Q3513683}}), which became a shrine in {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}, locals call this shrine "Tabuto Jinja." {{nihongo|'''Tada Shrine (Tabuto Shrine)'''|多太神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The following four pillars are enshrined.
 * {{ill|Yamato Takeru|lt=Yamato Takeru|qid=Q461258}}
 * Ōsasagi-no-Mikoto ({{ill|Emperor Nintoku|Q313119|qid=Q313119}})
 * {{ill|Izanagi|lt=Izanagi-no-Mikoto|qid=Q813858}}
 * {{ill|Izanami|lt=Izanami-no-Mikoto|qid=Q682306}}
 
-=== History ===
+== History ==
 The founding era is unknown. According to 'History of Kawanishi City,' this area was formerly called "Kawabe District Ōmiwa-gō," and it is said that a ritual group from {{ill|Yamato Province|Q907495|qid=Q907495}} (the {{ill|UNKNOWN|lt=Miwa clan}}) migrated here and founded the shrine by enshrining their ancestor {{ill|Ōtataneko|Q55536798|qid=Q55536798|lt=Ōtataneko-no-Mikoto}} or {{ill|Ōkuninushi|lt=Ōkuninushi-no-Mikoto|qid=Q276944}}. When the current enshrined deities were adopted is unknown, but tradition says they were invited from the deities of {{ill|Hirano Shrine|Q738971|qid=Q738971}} when {{ill|Minamoto no Mitsunaka|ast|Minamoto no Mitsunaka|es|Minamoto no Mitsunaka|fa|میناموتو نو میتسوناکا|fr|Minamoto no Mitsunaka|it|Minamoto no Mitsunaka|ja|源満仲|ko|미나모토노 미쓰나카|oc|Minamoto no Mitsunaka|pt|Minamoto no Mitsunaka|sv|Minamoto no Mitsunaka|zh|源滿仲|qid=Q2531241}} made {{ill|Tada-no-shō|Q24859505|qid=Q24859505}} his base.
 
 After the {{ill|Minamoto clan|Q599881|qid=Q599881}} made Tada-no-shō their base, the shrine stood in the northeast direction from {{ill|UNKNOWN|lt=Tadain}}, their residence, and was treated as a guardian deity and called "Hirano Myōjin"; it was known by this name through early modern times<ref>Sadatoshi Yoshii, "Shikinaisha Survey Report Vol. 5" (1977) {{全国書誌番号|78005760}}</ref>. In {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} 6 ({{ill|1873|Q7757|qid=Q7757}}), it was ranked {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
 
-=== Precinct ===
+== Precinct ==
 The honden was built in {{ill|Genroku|Q1325001|qid=Q1325001}} 6 ({{ill|1693|Q7689|qid=Q7689}}), but Momoyama-style features can be seen in elements such as rear toad-leg struts and transoms of side lattice panels. Records also state it was rebuilt in {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} 6 ({{ill|1578|Q6707|qid=Q6707}}), so those old materials are believed to have been reused.
 <gallery>
 ファイル:Tabuto Jinja Honden1.jpg|Honden
@@ -62,22 +61,20 @@ The honden was built in {{ill|Genroku|Q1325001|qid=Q1325001}} 6 ({{ill|1693|Q768
 ファイル:多太社社号標石 DRtrcr8V4AANsQY.jpg|Tada-sha shrine name stone marker
 </gallery>
 
-=== Transportation ===
+== Transportation ==
 * 5 minutes on foot from {{ill|Hirano Station (Hyōgo)|Q5769424|qid=Q5769424|lt=Hirano Station}} on the {{ill|Nose Electric Railway|Q3743743|qid=Q3743743}} {{ill|UNKNOWN|lt=Myōken Line}}
 
-=== References ===
+== References ==
 {{脚注ヘルプ}}
 <references/>
 
-=== Bibliography ===
+== Bibliography ==
 * Kawanishi City Board of Education, explanatory signboard at the shrine front
 
-=== External links ===
+== External links ==
 {{Commonscat|Tabuto-jinja}}
 *[http://www.hyogo-jinjacho.com/data/6305034.html Tada Shrine] (Hyogo Prefectural Shrine Association)
 *{{Wayback|url=http://www.geocities.jp/engisiki/settu/bun/st060705-01.html |title=Tada Shrine |date=20070711163744}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Tada Shrine (Tabuto Shrine)]][[Category:Shikinaisha|Tada Shrine (Tabuto Shrine)]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Hyōgo Prefecture]]
@@ -86,4 +83,5 @@ The honden was built in {{ill|Genroku|Q1325001|qid=Q1325001}} 6 ({{ill|1693|Q768
 [[Category:Buildings and structures in Kawanishi, Hyogo]]
 [[Category:川西市の歴史]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

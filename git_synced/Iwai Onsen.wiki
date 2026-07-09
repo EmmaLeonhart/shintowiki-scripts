@@ -20,7 +20,6 @@
 
 {{wikidata link|Q11474068|commons|Category:Iwai Onsen|ja|岩井温泉|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 
 {{Japanese hot springs
 |Name = Iwai Onsen
@@ -61,17 +60,17 @@
 
 It is said to have a history of 1,300 years, and has a unique bathing method called ``Yukamuri.'' </ref>. On March 30, 1973 ({{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}}48), it was designated as {{ill|National Hot Spring Resort Areas|Q11421080|qid=Q11421080}}.
 
-=== Spring quality ===
+== Spring quality ==
 *Old name - Gypsum spring containing gypsum <ref name="ZSPAJ_TT"/> (Gypsum bitter spring <ref name="chimeiH_tori"/>, Bitter mirabilite spring <ref name="S15"/>)
 *New notation - {{ill|Sulfate spring|Q11587674|qid=Q11587674}}<ref name="ZSPAJ_TT"/>
 :(*Refer to {{ill|Hot Spring Types|Q11554939|qid=Q11554939}} for the new and old notation)
 
-=== Hot spring town ===
+== Hot spring town ==
 It is located in an open area where several tributaries join the {{ill|Gamo River|Q21652810|qid=Q21652810|lt=Gamo River}}, and the hot spring town is formed on the left and right sides of a side street that branches off from {{ill|Japan National Route 9|Q1055522|qid=Q1055522}}.
 
 There are 3 accommodation facilities. There is one {{ill|Communal hot springs|Q11392653|qid=Q11392653}}, the town-run Yukamuri Onsen.
 
-=== Short history ===
+== Short history ==
 Iwai Onsen was formerly called ``Gamoyu'' (located along the {{ill|Gamo River|Q21652810|qid=Q21652810|lt=Gamo River}}), ``Ginyu'', and ``Shimane no Oyu''. <ref name="T13"/><ref name="S15"/>
 
 ;The legend of the opening of the hot springs
@@ -90,7 +89,7 @@ Although the area is close to the Sea of Japan, it is a little inland, so the cl
 
 ;Modern times and beyondAt the end of the Meiji period, when the {{ill|San'in Main Line|de|San’in-Hauptlinie|fi|San’in-päälinja|fr|Ligne principale San'in|it|Linea principale San'in|ja|山陰本線|ko|산인 본선|zh|山陰本線|qid=Q1135170|lt=railway}} was established, the number of tourists from the Keihanshin area increased. Because the railway was built along the coast rather than along the old highway route, the nearest station was located a little far away, so the locals built the {{ill|UNKNOWN|lt=Light Railway}} during the Taisho period to transport passengers. However, the ``Zenkoku Onsen Guide'' published in Taisho 13 states that it is only 30 towns (approximately 3 km) from the station and the path is flat, so you can walk while admiring the many famous and historic sites along the way. <ref name="T13"/><ref name="S15"/><ref name="chimeiH_tori"/>
 
-===Togenji Temple===
+==Togenji Temple==
 [[File:Iwai-tougenji-tottori1200.jpg|right|250px|thumb|Togenji]]
 Togenji Temple is located in the center of Iwai Onsen, at the foot of Mt. Atago.
 
@@ -98,10 +97,10 @@ According to Fujiwara Fuyuhisa's {{ill|Onsen Origin Myth|Q11655277|qid=Q11655277
 
 <ref name="chimeiH_tori"/> was rebuilt in {{ill|1686|Q7664|qid=Q7664}} ({{ill|Jōkyō|Q1146221|qid=Q1146221}}3 year) as a branch temple of {{ill|Mani-ji Temple|Q11498610|qid=Q11498610}} in Tottori. The name was changed to ``Iouzan Yugenji,'' and later, the name was changed to ``Togenji,'' because it is located northeast of Inaba and is the source of hot springs.<ref name="inatougenji"/>
 
-===Oyu Shrine===
+==Oyu Shrine==
 Onyu Shrine (Onyujinja<ref name="T13"/>, Miyujinja<ref name="chimeiH_tori"/>, Oyujinja<ref name="S15"/>) is a {{ill|UNKNOWN|lt=shikinaisha}} that is said to have been founded in {{ill|811|Q29946|qid=Q29946}} ({{ill|Kōnin (era)|Q1373070|qid=Q1373070}}2). It currently stands behind the ruins of Iwai Abandoned Temple, with the mountain behind it, but it was once located in the Ohno district to the east <ref name="sanpo_TT"/>. For this reason, even after the relocation, it was sometimes called "Oonomiya" <ref name="sanpo_TT"/>. It was called "Isemiya" during the Edo period, but was renamed to Oyu Shrine in the Meiji period. The Kirin Lion Dance performed at the annual spring festival in March has been preserved as a traditional performing art.
 
-===Yamamuri===
+==Yamamuri==
 ``Yukamuri'' is a unique bathing method handed down in Iwai Onsen <ref name="NBC4"/>. During the hot spring treatment, one puts a tenugui over one's head, taps the hot water with a special ladle, and pours hot water over one's head while reciting the ``Yukamuri Uta'' <ref name="NBC4"/>. {{ill|Tōson Shimazaki|Q1093783|qid=Q1093783}} mentioned Yukamuri Uta in his book ``San'in Souvenirs'' <ref name="BC13"/>.
 
 {{SquoteH}}
@@ -114,36 +113,36 @@ We arrived at Iwai around sunset. Although it wasn't in the mountains as I had e
 
 {{SquoteF}}
 
-===Railway===
+==Railway==
 From 1922 (Taisho 11) to 1943 (Showa 18), the public {{ill|Light railway|Q32680449|qid=Q32680449}} line was in operation, connecting Iwai Onsen and {{ill|San'in Main Line|de|San’in-Hauptlinie|fi|San’in-päälinja|fr|Ligne principale San'in|it|Linea principale San'in|ja|山陰本線|ko|산인 본선|zh|山陰本線|qid=Q1135170}}{{ill|Iwami Station (Tottori)|Q899398|qid=Q899398}}. The railroad ran to the mines south of Hot Springs. <ref name="TT-hyakka"/><ref name="Kadokawa place name_Tottori_Iwai Railway"/>
 
 The area around Iwai Onsen was a key transportation hub during the Edo period, with an inn station that used the hot springs, but when the San'in Main Line was completed at the end of the Meiji period, the line no longer passed through Iwai Onsen, but instead ran north from Iwami towards the sea. The San'in Main Line brought many hot spring visitors from the Sanyo and Keihan areas, but because they passed through Iwai Onsen, it was decided to build a railway in the local village of Iwai to connect Iwai Onsen and Iwami Station. <ref name="TT-hyakka"/><ref name="T13"/><ref name="Kadokawa place name_Tottori_Iwai Railway"/>In {{ill|1922|Q2165|qid=Q2165}} (Taisho 11), a village-run light railway opened, communicating with the Japanese National Railways and transporting hot spring visitors and ore along the Gamo River. In the past, it was crowded with hot spring visitors, but profits deteriorated due to competition with other hot spring resorts in Tottori Prefecture, the Great Iwai Fire of {{ill|1934|Q18714|qid=Q18714}} (1934), and the decline of the mining industry. As the current situation worsened, steel products were also brought under control, and it became impossible to repair the lines, so the line was closed in {{ill|1943|Q18623|qid=Q18623}} (Showa 18). It was never reopened after that and was abandoned. <ref name="TT-hyakka"/><ref name="Kadokawa place name_Tottori_Iwai Railway"/>
 
 For details, see {{ill|Iwai Town Tramway|Q11474073|qid=Q11474073}}.
 
-===Dynamics===
+==Dynamics==
 According to a survey conducted by Tottori Prefecture in {{ill|2017|Q25290|qid=Q25290}} (2017), the number of visitors taking baths per year was approximately 15,000 <ref name="PREF-TT-chousa2017"/>, which is less than half compared to around {{ill|2000|Q1985|qid=Q1985}}.<ref name="PREF-TT-chousa2010,p12"/>. Although the total number of bathing visitors in Tottori Prefecture has decreased by approximately 260,000 people (approximately -20%) in the 10 years since {{ill|2000|Q1985|qid=Q1985}}, the decline has been even greater.<ref name="PREF-TT-chousa2010,p12"/>
 
 The peak number of tourists was during the so-called {{ill|Japanese asset price bubble|Q6500827|qid=Q6500827|lt=bubble period}} from the end of the Showa era to around 1993, when it is estimated that 120,000 tourists visited each year. (This number is estimated using a different method than the survey on the number of bathing customers mentioned above, and cannot be easily compared. group="Note">The number of bathing customers in Tottori Prefecture as a whole in {{ill|2010|Q1995|qid=Q1995}} was approximately 1.15 million, calculated from the bathing tax amount, and based on the same method, {{ill|UNKNOWN|lt=1998}} is approximately 1.55 million people, whereas the value for {{ill|1997|Q2088|qid=Q2088}} is approximately 6 million people using the old calculation method, which is a significant difference.</ref><ref name="PREF-TT-chousa2010,pp13-14"/>.
 
-=== Access ===
+== Access ==
 '''Public transportation'''
 * From {{ill|San'in Main Line|de|San’in-Hauptlinie|fi|San’in-päälinja|fr|Ligne principale San'in|it|Linea principale San'in|ja|山陰本線|ko|산인 본선|zh|山陰本線|qid=Q1135170}}{{ill|Iwami Station (Tottori)|Q899398|qid=Q899398}}, take the {{ill|UNKNOWN|lt=Nikko Bus}} (Iwami/Iwai Line) bound for Hasebashi (route number: 33) or Kabushima (route number: 32/32H) for about 10 minutes. (Also available from {{ill|Tottori Station|Q858295|qid=Q858295}}).
 * Take the Uradome Coast/Tottori Sand Dunes Sightseeing Bonnet Bus from Tottori Station on the San'in Main Line and get off at the last stop (operates on Saturdays, Sundays, and holidays from spring to fall; only one round trip per day).
 '''Automobile'''
 *About 30 minutes east from central Tottori city on {{ill|Japan National Route 9|Q1055522|qid=Q1055522}}.
 
-===Surrounding facilities/sights===
+==Surrounding facilities/sights==
 *Uji Shrine - It was once called Hachimangu Shrine, but was renamed to Uji Shrine at the beginning of the Meiji period. <ref name="chimeiH_tori"/> is said to have been founded by Fujiwara Fuyuhisa.
 *Oyu Shrine - See {{ill|UNKNOWN|lt=#Oyu Shrine}}.
 *Togenji Temple - See {{ill|UNKNOWN|lt=#Togenji}}.
 *Midori Ozaki Museum - {{ill|Midori Osaki|Q11465252|qid=Q11465252}} is a novelist born in 1869 (Meiji 29) in Iwai Onsen.
 *Iwai Abandoned Temple Pagoda Ruins - A historical site from the {{ill|UNKNOWN|lt=Hakuho period}}. The Yakushi Nyorai statue that is said to have once existed here is located at {{ill|Ensan-ji Temple|Q11486594|qid=Q11486594}} in {{ill|Gifu Prefecture|ace|Prefektur Gifu|af|Gifu-prefektuur|an|Prefectura de Gifu|ar|غيفو (محافظة)|arz|جيفو (محافظه)|az|Gifu prefekturası|azb|قیفو اوستانی|ban|Préféktur Gifu|be|Гіфу (прэфектура)|bg|Гифу|bn|গিফু প্রশাসনিক অঞ্চল|ca|Prefectura de Gifu|cdo|Gifu-gâing|ce|Гифу (префектура)|ceb|Gifu-ken|ckb|پارێزگای گیفو|cs|Prefektura Gifu|cy|Gifu (talaith)|da|Gifu-præfekturet|de|Präfektur Gifu|eo|Gubernio Gifu|es|Prefectura de Gifu|et|Gifu prefektuur|eu|Gifu (prefektura)|fa|استان گیفو|fi|Gifun prefektuuri|fr|Préfecture de Gifu|frr|Gifu (Prefektüür)|ga|Maoracht Gifu|gl|Prefectura de Gifu|hak|Gifu-yen|he|גיפו (מחוז)|hr|Gifu (prefektura)|hu|Gifu prefektúra|hy|Գիֆու (պրեֆեկտուրա)|id|Prefektur Gifu|ilo|Prepektura ti Gifu|it|Prefettura di Gifu|ja|岐阜県|jv|Préfèktur Gifu|ka|გიფუს პრეფექტურა|kn|ಗಿಫು (ಪ್ರಾಂತ್ಯ)|ko|기후현|lt|Gifu prefektūra|lv|Gifu prefektūra|mk|Гифу (префектура)|mni|ꯒꯤꯐꯨ ꯂꯝꯈꯥꯢ|mr|गिफू प्रांत|ms|Wilayah Gifu|ne|गिफु|nl|Gifu (prefectuur)|no|Gifu (prefektur)|nov|Gifu Prefekture|os|Гифу (префектурæ)|pam|Prepektura ning Gifu|pl|Prefektura Gifu|pnb|ضلع گیفو|pt|Gifu|ro|Prefectura Gifu|ru|Гифу (префектура)|se|Gifu prefektuvra|sh|Prefektura Gifu|simple|Gifu Prefecture|sk|Gifu (prefektúra)|sr|Префектура Гифу|su|Préféktur Gifu|sv|Gifu prefektur|sw|Mkoa wa Gifu|tg|Префектураи Гифу|th|จังหวัดกิฟุ|tl|Prepektura ng Gifu|tr|Gifu (prefektörlük)|tt|Гифу (префектура)|uk|Префектура Ґіфу|ur|گیفو پریفیکچر|vi|Gifu|war|Gifu (prefektura)|wuu|岐阜县|zh|岐阜县|zh_classical|岐阜縣|zh_min_nan|Gihu-koān|zh_yue|岐阜縣|qid=Q131277}}, and has been designated as a national {{ill|Important Cultural Property (Japan)|Q1188622|qid=Q1188622}}.
 
-===Footnote===
+==Footnote==
 {{Footnote help}}
 
-===References===
+==References==
 *“National Hot Spring Guide”, Hot Spring Research Association, 1924
 *“Hot Spring Guide”, Ministry of Railways, 1940
 *Illustrated Japanese Cultural Geography Series 4 China 1, edited by Yukio Asaka, Shogakukan, 1962
@@ -155,10 +154,10 @@ The peak number of tourists was during the so-called {{ill|Japanese asset price 
 *[https://www.pref.tottori.lg.jp/secure/226510/h22toukei.pdf Tottori Prefecture Culture and Tourism Bureau Tourism Policy Division 2010 Tourist Inflow Dynamics Survey Results]
 *"Tottori Prefecture History Walk", edited by Tottori Prefecture History Walk Study Group, Yamakawa Publishing, 1994, 2003
 
-===Notes===
+==Notes==
 {{Reflist|group="Note"}}
 
-===Source===
+==Source==
 {{Reflist
 |refs=
 
@@ -179,10 +178,10 @@ The peak number of tourists was during the so-called {{ill|Japanese asset price 
 
 }}
 
-=== Related items ===
+== Related items ==
 *{{ill|Tourist spots in Tottori Prefecture|Q11674529|qid=Q11674529}}
 
-=== External link ===
+== External link ==
 {{Wiki portal link|Hot springs|[[Image:Hot springs 001.svg|34px|Portal:Hot springs]]}}
 * {{Wayback|url=http://www13.ocn.ne.jp/~yukamuri/ |title=Yukamuri Onsen |date=20040216171917}} - Town-run public bath
 * [http://www.saninji.jp/126 Sanin Tourism Federation Iwai Onsen]
@@ -190,12 +189,11 @@ The peak number of tourists was during the so-called {{ill|Japanese asset price 
 
 {{Hot springs in Tottori Prefecture}}
 {{Hot spring}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Iwai Onsen]][[Category:Shikinaisha|Iwai Onsen]][[Category:Shikinaisha|Iwai Onsen]][[Category:Shikinaisha in Inaba Province]]
 [[Category:Hot springs of Tottori Prefecture]]
 [[Category:National Recreation Hot Spring Resorts]]
 [[Category:岩美町]]
 [[Category:山陰海岸ジオパーク]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

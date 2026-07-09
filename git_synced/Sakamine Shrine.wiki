@@ -22,13 +22,12 @@
 
 {{wikidata link|Q11395049|ja|冠嶺神社|grok=none|check_date=2026-07-06}}
 
-== Japanese content ==
 
 '''Kanmine Shrine'' (Sakamine Shrine) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}{{ill|Minamisōma|ar|ميناميسوما (فوكوشيما)|azb|مینامی‌سوما، فوکوشیما|ce|Минамисома|ceb|Minami-Sōma|de|Minamisōma|eo|Minamisōma|es|Minamisōma (Fukushima)|et|Minamisōma|fa|مینامیسوما، فوکوشیما|fi|Minami-Sōma|fr|Minamisōma|gl|Minamisōma|id|Minamisōma, Fukushima|it|Minamisōma|ja|南相馬市|ko|미나미소마시|ms|Minamisōma, Fukushima|mzn|مینامی‌سوما، فوکوشیما|nl|Minamisoma|pl|Minami-Sōma|pt|Minamisoma|ro|Minamisōma|ru|Минамисома|simple|Minamisōma|sv|Minamisōma|th|มินามิโซมะ|tl|Minamisōma|tr|Minamisōma|tt|Минамисома|tum|Minamisōma|uk|Мінамі-Сома|uz|Minamisōma (Fukushima)|vi|Minamisōma, Fukushima|war|Minamisōma, Fukushima|zh|南相馬市|zh_classical|南相馬市|zh_min_nan|Minamisôma-chhī|zh_yue|南相馬|qid=Q642094}}.
 
 {{ill|Mutsu Province|Q907389|qid=Q907389}}{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Engishiki}}{{ill|Shikinaisha|qid=Q134917286|lt=Shikiuchi Shrine}} It is one of eight troupes located in {{ill|Namekata district|ja|行方郡 (福島県)|qid=Q11626139|lt=Namegata District}}. Two shrines located in Kamitochikubo, Kashima Ward, and Shindazawa, Haramachi Ward are said to be the main nonsha.
 
-=== Kanmine Shrine (Kamitochikubo, Kashima Ward, Minamisoma City) ===
+== Kanmine Shrine (Kamitochikubo, Kashima Ward, Minamisoma City) ==
 {{Shrine
 |Name=Kanmine Shrine (Kamitochikubo, Kashima Ward)
 |Image=[[File:Haiden of Sakamine-jinja shrine in Kashima ward.JPG|270px]]<br />Haden of worship
@@ -44,20 +43,20 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=220|coord={{coord|37|43|27.7|N|140|52|32.4|E}}}}
 }}
 
-=== Enshrined God ===
+== Enshrined God ==
 * According to the history book in the precincts, {{ill|UNKNOWN|lt=Sukuhikona no Mikoto}} and {{ill|Hoori|abstract|Q1051960|bs|Hoori|fa|هوری (اسطوره ژاپن)|fr|Hoori|hr|Hoori|it|Hoori|ja|ホオリ|ko|호오리|mni|ꯍꯨꯔꯤ|nl|Ho-ori|no|Hoori|pl|Hoori|pt|Yamasatihiko|ru|Хоори|sh|Hoori|simple|Hoori|sr|Хоори|sv|Hoori|tr|Hoori|uk|Хоорі|vi|Hoori|zh|火折尊|qid=Q1051960|lt=Amatsuhiko Hidemi no Mikoto}} are enshrined here.
 ** According to the Shikinai-sha Kensho-kai, the current enshrined deity is {{ill|Ninigi-no-Mikoto|Q1056017|qid=Q1056017|lt=Amatsuhiko Hibunigei no Mikoto}} Amatsuhiko Hidemi no Mikoto.
 ** According to ``Okusōshi'', it is said to enshrine the three shrines of Amatsuhiko Hinaunigei no Mikoto, Amatsuhiko Hikoidemi no Mikoto, and {{ill|Kuraokami|Q644201|qid=Q644201|lt=Hachiryu Daimyojin}}.
 * Both the {{ill|Shintai|Q327532|qid=Q327532|lt=Goshintai}} of {{ill|Ninigi-no-Mikoto|Q1056017|qid=Q1056017|lt=Amatsuhiko Hidemige no Mikoto}} and {{ill|Hoori|abstract|Q1051960|bs|Hoori|fa|هوری (اسطوره ژاپن)|fr|Hoori|hr|Hoori|it|Hoori|ja|ホオリ|ko|호오리|mni|ꯍꯨꯔꯤ|nl|Ho-ori|no|Hoori|pl|Hoori|pt|Yamasatihiko|ru|Хоори|sh|Hoori|simple|Hoori|sr|Хоори|sv|Hoori|tr|Hoori|uk|Хоорі|vi|Hoori|zh|火折尊|qid=Q1051960|lt=Amatsuhiko Hidemi no Mikoto}} are said to be "statues of horsemen."
 
-=== History ===
+== History ==
 According to historical records, during the era of {{ill|Emperor Keikō|Q329723|qid=Q329723}}, {{ill|Yamato Takeru|Q461258|qid=Q461258|lt=Nippon Takeru}} came to Oshu after receiving an imperial order to conquer Toi. At that time, they received a spiritual message from {{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037|lt=Sarutahiko-no-Mikoto}}, the landowner's god, and they solicited the Emperor's grandson (Amatsuhiko-Kainonige-no-Mikoto) and performed rituals for 17 days. The mountain where he camped was surrounded by rivers on all sides, and it is said that Nippon Takeru was able to take advantage of the geographical advantage and defeat the bandits and successfully pacify the area.
 
 Sarutahiko-no-Mikoto, a landowner deity, was also known as Dosojin and Dorikujin. It is said that the mountain where Kanmine Shrine was built was named ``Dorokujinzan'' (currently Dorokujinzan) because it was the mountain where the god Dorikami had miraculous experiences. At the southern foot of Mt. Dorikujinzan, a waterhole called ``Mano Pond'' was established with water from Amano Manai and was used as a wash basin for Kanminejin. The name Mano River is said to have come from this ``Mano Pond.'' Additionally, there is a strange rock called ``Tateishi'' upstream of the Mano River, which is said to be the place where Sarutahiko no Mikoto descended and was enshrined.During the {{ill|Eishō (Heian period)|fa|ایشو (دوره هی‌آن)|fr|Ère Eishō (Heian)|ia|Eisho (prime)|id|Eishō|ja|永承|ko|에이쇼 (헤이안 시대)|ru|Эйдзё|simple|Eishō (Heian period)|sr|Еишо (Хејан период)|tr|Eishō (Heian)|zh|永承|zh_yue|永承|qid=Q1193549}} era, which was the era of {{ill|Emperor Reizei|ar|الإمبراطور رييزي|arz|الامبراطور رييزى|azb|ری‌زی (ایمپیراتور)|ca|Reizei|ckb|ئیمپراتۆر ڕێیزێی|cs|Reizei|de|Reizei|el|Αυτοκράτορας Ρεϊτζέι|es|Reizei Tennō|fa|امپراتور ری‌زی|fr|Reizei (empereur)|id|Reizei|it|Reizei|ja|冷泉天皇|ko|레이제이 천황|nl|Reizei|pl|Reizei|pt|Reizei|ru|Император Рэйдзэй|sh|Car Reizei|sl|Cesar Reizei|sv|Reizi|sw|Reizei wa Japani|th|จักรพรรดิเรเซ|tl|Emperador Reizei|tr|Reizei (imparator)|uk|Імператор Рейдзей|vi|Thiên hoàng Reizei|yo|Emperor Reizei|zh|冷泉天皇|zh_min_nan|Reizei Thian-hông|qid=Q374125}}, a ceremony was held to pray for peace in the land by holding a {{ill|hōren|Q11675302|qid=Q11675302}}. However, during the subsequent 13 years leading up to the {{ill|Kōhei|Q1193572|qid=Q1193572}} year, wars such as {{ill|Former Nine Years' War|Q1187448|qid=Q1187448}} occurred, and the shrine grounds were confiscated and fell into disrepair, with only a small shrine erected. During the reign of {{ill|Emperor Go-Horikawa|Q357221|qid=Q357221}}, a shrine was built in the village at the request of parishioners, and the object of worship was moved from Dorikushinzan to its current enshrined place in {{ill|Kangi|Q1194200|qid=Q1194200}} 2nd year ({{ill|1230|Q5412|qid=Q5412}}) {{ill|April 8|ab|Мшаԥымза 8|af|8 April|als|8. April|alt|Кандык айдыҥ 8 кӱни|am|8 April|an|8 d'abril|ar|8 أبريل|ary|8 أبريل|arz|8 ابريل|as|৮ এপ্ৰিল|ast|8 d'abril|av|8 апрель|az|8 aprel|azb|۸ آوریل|ba|8 апрель|ban|8 April|bat_smg|Balondė 8|bcl|Abril 8|be|8 красавіка|be_x_old|8 красавіка|bg|8 април|bh|8 अप्रैल|bjn|8 April|blk|အေပီ ၈|bn|৮ এপ্রিল|bo|ཟླ་༤ཚེས་༨ཉིན་|bpy|এপ্রিল ৮|br|8 Ebrel|bs|8. april|btm|8 April|bxr|4 һарын 8|ca|8 d'abril|cdo|4 nguŏk 8 hô̤|ce|8 апрель|ceb|Abril 8|ckb|٨ی نیسان|co|8 d'aprile|cs|8. duben|csb|8 łżëkwiata|cv|Ака, 8|cy|8 Ebrill|da|8. april|de|8. April|diq|8 Nisane|dv|އެޕްރީލް 8|el|8 Απριλίου|eml|8 d'avrìl|eo|8-a de aprilo|es|8 de abril|et|8. aprill|eu|Apirilaren 8|ext|8 abril|fa|۸ آوریل|fi|8. huhtikuuta|fiu_vro|8. mahlakuu päiv|fo|8. apríl|fr|8 avril|frp|8 d’avril|frr|8. April|fur|8 di Avrîl|fy|8 april|ga|8 Aibreán|gag|8 Çiçek ay|gan|4月8號|gd|8 an Giblean|gl|8 de abril|gn|8 jasyrundy|gor|8 April|gu|એપ્રિલ ૮|gv|8 Averil|hak|4-ngie̍t 8-ngit|he|8 באפריל|hi|८ अप्रैल|hif|8 April|hr|8. travnja|hsb|8. apryla|ht|8 avril|hu|Április 8.|hy|Ապրիլի 8|hyw|8 Ապրիլ|ia|8 de april|id|8 April|ie|8 april|ig|8 Eprel|ilo|Abril 8|inh|Бекарга 8|io|8ma di aprilo|is|8. apríl|it|8 aprile|ja|4月8日|jbo|vonma'i 8moi|jv|8 April|ka|8 აპრილი|kaa|8-aprel|kab|8 yebrir|kk|8 сәуір|kn|ಏಪ್ರಿಲ್ ೮|ko|4월 8일|koi|Апрель 8’ лун|ks|اَپریل 8|ksh|8. Apprill|ku|8ê nîsanê|kv|Косму тӧлысь 8-ӧд лун|la|8 Aprilis|lb|8. Abrëll|li|8 april|lij|8 arvî|lmo|08 04|ln|Mokɔlɔ 8 sánzá ya mínei|lo|8 ເມສາ|lt|Balandžio 8|lv|8. aprīlis|mai|८ अप्रैल|map_bms|8 April|mg|8 Aprily|mhr|8 вӱдшор|mk|8 април|ml|ഏപ്രിൽ 8|mn|4 сарын 8|mr|एप्रिल ८|ms|8 April|my|၈ ဧပြီ|myv|Чадыковонь 8 чи|mzn|۸ آوریل|nah|8 metztli abril|nap|8 'e abbrile|nds|8. April|nds_nl|8 april|new|अप्रिल ८|nl|8 april|nn|8. april|no|8. april|nrm|8 Avri|nso|Moranang 8|oc|8 d'abril|olo|8. sulakuudu|or|୮ ଅପ୍ରେଲ|os|8 апрелы|pa|8 ਅਪ੍ਰੈਲ|pam|Abril 8|pap|8 di aprel|pl|8 kwietnia|pnb|8 اپریل|pnt|8 Απρίλτ|ps|8 اپرېل|pt|8 de abril|qu|8 ñiqin ayriway killapi|ro|8 aprilie|rsk|8. април|ru|8 апреля|rue|8. апріль|sa|८ अप्रैल|sah|Муус устар 8|scn|8 di aprili|sco|8 Aprile|sd|8 اپريل|se|Cuoŋománu 8.|sh|8. aprila|shn|ဢေႇပရႄႇ 8|si|අප්‍රේල් 8|simple|April 8|sk|8. apríl|sl|8. april|sm|Aperila 8|smn|Cuáŋuimáánu 8.|sn|Kubvumbi 8|sq|8 Prill|sr|8. април|su|8 April|sv|8 april|sw|8 Aprili|szl|8 kwjetńa|ta|ஏப்ரல் 8|te|ఏప్రిల్ 8|tg|8 апрел|th|8 เมษายน|tk|8 aprel|tl|Abril 8|tly|8 Aprel|tr|8 Nisan|tt|8 апрель|udm|8 оштолэзь|ug|8- ئۈمىد|uk|8 квітня|ur|8 اپریل|uz|8-aprel|vec|8 de apriłe|vi|8 tháng 4|vls|8 april|vo|Prilul 8|wa|8 d' avri|war|Abril 8|wuu|4月8号|xal|Мөрн сарин 8|xmf|8 პირელი|yi|8טן אפריל|yo|8 April|za|4 nyied 8 hauh|zea|8 april|zgh|8 ⵉⴱⵔⵉⵔ|zh|4月8日|zh_min_nan|4 goe̍h 8 ji̍t|zh_yue|4月8號|qid=Q2503}}. After that, at the request of the parishioners, {{ill|Kusano Shrine|Q11616108|qid=Q11616108}} ({{ill|UNKNOWN|lt=Watatsumi Shrine}}), {{ill|Kuraokami|Q644201|qid=Q644201|lt=Yamiyoshikami}}, called ``Hachiryu Daimyojin'', was enshrined together as a side shrine. For this reason, the company name was changed to Hachiryu Shrine, and it came to be called ``Hachiryu Daimyojin'' by the people of the county. Since then, it has been dedicated to three deities, and rituals such as riding down the beach have also started to be held.
 
 According to the description, a mikoshi is carried out for the Hamakudari ritual on {{ill|July 7|Q2694|qid=Q2694}}, and is enshrined at Kumaki Akira Shrine in the Kadokawara area at night. It is said that in the morning of the next morning, people descended on the beach in the present-day Minami-ebi area to pray for peace and peace in the world, long life for the military, abundant harvests, and safety for all people.Sukuhikona no Mikoto, one of the current deities enshrined, was discovered according to a Shikinai shrine survey in the county in {{ill|Bunsei|Q1327119|qid=Q1327119}}2 ({{ill|1819|Q6967|qid=Q6967}}). Hachiryu Shrine is thought to be the Ronsha of Kanmine Shrine, and after the name was changed to Kanmine Shrine in 1825 (Bunsei 8), it is thought to have been enshrined together with Kanmine Shrine in Shindazawa, Haramachi Ward.
 
-=== Precincts ===
+== Precincts ==
 * Shrine building (haiden, shrine hall, main hall)
 * In addition, there are stone shrines and precinct shrines located within the precincts.
 * The {{ill|Chinju no Mori|Q11651158|qid=Q11651158}} within the shrine grounds is designated as a natural monument of Minamisoma City as the ``Kanmine Shrine Forest''<ref>{{Cite web|Japanese book|title=Kashima's Cultural Properties|url=http://www.city.minamisoma.lg.jp/bunkazai/bunnkazai/b-kashima/kabun.jsp|work= |publisher=Minamisoma City|date= |accessdate=2012-11-09}}</ref>.
@@ -72,7 +71,7 @@ File:Small shrines of Sakamine-jinja shrine in Kashima ward.JPG|Stone shrine in 
 
 {{-}}
 
-=== Kanmine Shrine (Shindazawa, Haramachi Ward, Minamisoma City) ===
+== Kanmine Shrine (Shindazawa, Haramachi Ward, Minamisoma City) ==
 {{Shrine
 |Name=Kanmine Shrine (Shindazawa, Haramachi Ward)
 |Image=[[File:Haiden of Sakamine-jinja shrine in Haramachi ward.JPG|270px]]<br />House of worship
@@ -88,10 +87,10 @@ File:Small shrines of Sakamine-jinja shrine in Kashima ward.JPG|Stone shrine in 
 {{coord2|37|39|25.7|N|140|54|59.1|E|}}|position=left|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=220|coord={{coord|37|39|25.7|N|140|54|59.1|E}}}}
 }}
 
-=== Enshrined God ===
+== Enshrined God ==
 * {{ill|UNKNOWN|lt=Sukahikona no Mikoto}} is enshrined here.
 
-=== History ===
+== History ==
 Its founding is unknown, but it is said to have declined with the passage of time, and only a small shrine remained. Furthermore, the shrine building was destroyed by a wild fire in ancient times, and after that a shrine was built to enshrine it. {{ill|Hōei|Q1145262|qid=Q1145262}} from {{ill|Shōtoku (era)|Q1193848|qid=Q1193848|lt=Mashinori}} ({{ill|1704|Q6824|qid=Q6824}}-{{ill|1715|Q6884|qid=Q6884}}) When the family of Kudayu Ota, who was a shrine official, died out, Sankaku-in, a Haguro-ha Shugen, performed the rituals in their place. It is said that the number of residents decreased from the {{ill|Tenmei|Q1194121|qid=Q1194121}} era, and by the Bunka era, both the village and the shrine were in ruins. It is said that a local farmer moved the object of worship to a small shrine in a private house, hid it, and for many years it was enshrined by a graduate school of Honzan-ha Shugen Shugen. As time passed and these farmers disappeared, the fact that Kanmine no Kami was once enshrined in a small shrine in the village was forgotten.A man called the Sato clan came from another village and began living in the mansion of a farmer who was worshiping the Kanmine deity. While Mr. Sato was engaged in farming, he repaired and worshiped a small shrine on the mountain of Sakamine. {{ill|Bunka|Q1373146|qid=Q1373146|lt=Culture}}12 ({{ill|1815|Q6948|qid=Q6948}}) Year of the Pig, {{jalink|Soma Nakamura Domain|Q844079|Ao {{ill|Sōma Masutane|Q8514605|qid=Q8514605}}, the lord of the horse clan, ordered the shrine priest and a person named Mitsuna Watabe to investigate and identify eight Shikinai shrines in Namegata district. As a result, {{ill|Taka Shrine (Minamisōma)|Q11430895|qid=Q11430895}}, {{ill|Kashima Miko Shrine|Q11677124|qid=Q11677124}}, {{ill|Mito Shrine|ja|御刀神社|qid=Q11488802}}, {{ill|UNKNOWN|lt=Oshio Shrine}}, {{ill|Takakura Shrine|Q11669904|qid=Q11669904}} and {{ill|UNKNOWN|lt=Hisatsu Shrine}} were identified, but Kanmine Shrine and {{ill|UNKNOWN|lt=Masutamine Shrine}} could not be identified because it was unclear which shrines they were referring to.
 
 {{ill|Bunsei|Q1327119|qid=Q1327119}}2 ({{ill|1819|Q6967|qid=Q6967}}) In the year of the Rabbit, another investigation order is given. The county official heard that there was a small shrine dedicated to the god of Kanmine in the village and investigated, but the villagers, who became suspicious, denied the existence of Kanmine Shrine, and as a result, Kanmine Shrine was even more forgotten from history.In the {{ill|Ansei|Q1327259|qid=Q1327259}} years, thanks to {{ill|Ansei|Q1327259|qid=Q1327259}}, the financial reconstruction of the Soma clan and the reconstruction of devastated farming villages progressed thanks to the ``Kokoku Anminho'', an agricultural reconstruction measure brought to Soma by {{ill|Ninomiya Sontoku|Q968964|qid=Q968964}} and the Ninomiya family. {{ill|Man'en|Q1193862|qid=Q1193862}} In the spring of the first year of the Koshin year ({{ill|1860|ab|1860|af|1860|als|1860|am|1860 እ.ኤ.አ.|an|1860|ar|1860|ary|1860|arz|1860|ast|1860|avk|1860|az|1860|azb|۱۸۶۰ (میلادی)|ba|1860 йыл|ban|1860|bar|1860|bat_smg|1860|bcl|1860|be|1860|be_x_old|1860|bg|1860|bn|১৮৬০|bpy|মারি ১৮৬০|br|1860|bs|1860.|ca|1860|cdo|1860 nièng|ce|1860 шо|ceb|1860|ckb|١٨٦٠|co|1860|crh|1860|cs|1860|csb|1860|cv|1860|cy|1860|da|1860|de|1860|diq|1860|el|1860|eml|1860|eo|1860|es|1860|et|1860|eu|1860|fa|۱۸۶۰|fi|1860|fiu_vro|1860|fo|1860|fr|1860|frp|1860|frr|1860|fur|1860|fy|1860|ga|1860|gan|1860年|gcr|1860|gd|1860|gl|1860|gn|1860|gv|1860|he|1860|hi|१८६०|hif|1860|hr|1860.|hsb|1860|ht|1860 (almanak gregoryen)|hu|1860|hy|1860|hyw|1860 թուական|ia|1860|id|1860|ilo|1860|inh|1860 шу|io|1860|is|1860|it|1860|ja|1860年|jv|1860|ka|1860|kaa|1860|kk|1860 жыл|kn|೧೮೬೦|ko|1860년|krc|1860 джыл|ksh|Joohr 1860|ku|1860|kv|1860-ӧд во|la|1860|lb|1860|lez|1860 йис|li|1860|lij|1860|lmo|1860|lt|1860 m.|lv|1860. gads|mai|१८६०|map_bms|1860|mdf|1860|mg|1860|mhr|1860|mi|1860|min|1860|mk|1860|ml|1860|mn|1860 он|mr|इ.स. १८६०|mrj|1860 и|ms|1860|my|၁၈၆၀|myv|1860 ие|mzn|۱۸۶۰|nah|1860|nap|1860|nds|1860|new|ई सं १८६०|nl|1860|nn|1860|no|1860|nrm|1860|nso|1860|oc|1860|olo|1860|or|୧୮୬୦|os|1860-æм аз|pa|1860|pl|1860|pnb|1860|pt|1860|qu|1860|ro|1860|ru|1860 год|rue|1860|sa|१८६०|sah|1860|sc|1860|scn|1860|sd|1860ع|se|1860|sh|1860.|shn|1860|simple|1860|sk|1860|sl|1860|smn|1860|sq|1860|sr|1860|stq|1860|su|1860|sv|1860|sw|1860|szl|1860|ta|1860|te|1860|tg|Соли 1860|th|พ.ศ. 2403|tk|1860|tl|1860|tly|1860|tr|1860|tt|1860 ел|udm|1860 ар|uk|1860|ur|1860ء|uz|1860|vec|1860|vi|1860|vls|1860|vo|1860|wa|1860|war|1860|wuu|1860年|xmf|1860|yi|1860|za|1860 nienz|zea|1860|zh|1860年|zh_classical|一八六〇年|zh_min_nan|1860 nî|zh_yue|1860年|qid=Q7691}}), the restoration of the shrine shrine of Kanmine Shrine was ordered, and master craftsman Uesugi Shudono, a master craftsman from Aizu, constructed the shrine.
@@ -101,7 +100,7 @@ In addition to the two Kanmine Shrines in Shindazawa, Haramachi Ward, and Kamito
 File:Haiden of Keisoku-jinja shrine at Kashima ward,Minami-soma city.JPG|Haiden of Keisoku-jinja shrine (Kitaebi, Kashima-ku, Minami-soma city)
 </gallery>
 
-=== Precincts ===
+== Precincts ==
 * The shrine building is located on the hill on the west side of {{ill|Jōban Expressway|de|Jōban-Autobahn|es|Autopista Jōban|ja|常磐自動車道|ko|조반 자동차도|nl|Joban-autosnelweg|zh|常磐自動車道|qid=Q1059875}}{{ill|Minamisoma interchange|ja|南相馬インターチェンジ|zh|南相馬IC|qid=Q10908775}}.
 * At the entrance to the shrine is the first torii gate with a plaque reading ``Kanreisha.'' From there, climb up the stone steps for about 200 meters to reach the second torii gate of Kanmine Shrine.
 
@@ -119,19 +118,17 @@ File:Carving of Sakamine-jinja shrine in Haramachi ward.JPG|Carving of the worsh
 File:Honden of Sakamine-jinja shrine in Haramachi ward.JPG|Honden of Sakamine-jinja shrine main hall
 </gallery>
 
-=== Source ===
+== Source ==
 {{Footnote help}}
 {{Reflist}}
 
-=== References ===
+== References ==
 * Oku Soshi (Soma City History 4) Soma City 1969
 * Engishiki Kanmine Shrine abbreviation All parishioners April 1994
 * Kanmine Shrine, one of the eight shrines Haramachi City Board of Education
 
 {{Shinto horizontal}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Sakamine Shrine]][[Category:Shikinaisha|Sakamine Shrine]][[Category:Shikinaisha|Sakamine Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Mutsu Province]]
 [[Category:Shinto shrines in Fukushima Prefecture]]
@@ -141,4 +138,5 @@ File:Honden of Sakamine-jinja shrine in Haramachi ward.JPG|Honden of Sakamine-ji
 [[Category:Buildings and structures in Minamisoma, Fukushima]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

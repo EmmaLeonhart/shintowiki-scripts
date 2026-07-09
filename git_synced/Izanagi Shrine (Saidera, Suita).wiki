@@ -16,14 +16,13 @@
 | deity = {{ill|Izanagi|lt=Izanagi|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|en|Izanagi|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858}}
 }}
 
-{{nihongo|'''Izanagi Shrine'''|伊射奈岐神社 (吹田市佐井寺)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 {{commons category|Category:Izanagi-jinja (Saidera, Suita)}}
 [[ja:伊射奈岐神社 (吹田市佐井寺)]]
 
 {{wikidata link|Q11379322|commons|Category:Izanagi-jinja (Saidera, Suita)|ja|伊射奈岐神社 (吹田市佐井寺)|grok=none|check_date=2026-05-30}}
 
-== Japanese content ==
 {{神社
  | 名称=Izanagi Shrine
  | 画像=[[File:Isana s01.JPG|270px]]<br />Torii
@@ -37,17 +36,17 @@
  | 地図= {{Location map|Japan Osaka|label=Izanagi<br />Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Izanagi Shrine''' (いざなぎじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Suita|Q653510|qid=Q653510}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. In the section for {{ill|Shimashimo district|Q10976940|qid=Q10976940}} of the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, there are two "Izanagi Shrines," and this is considered one of them. The other is said to be the shrine of the same name in Yamadahigashi enshrining {{ill|Izanami|Q682306|qid=Q682306}}.
+{{nihongo|'''Izanagi Shrine'''|伊射奈岐神社 (吹田市佐井寺)}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Suita|Q653510|qid=Q653510}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. In the section for {{ill|Shimashimo district|Q10976940|qid=Q10976940}} of the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, there are two "Izanagi Shrines," and this is considered one of them. The other is said to be the shrine of the same name in Yamadahigashi enshrining {{ill|Izanami|Q682306|qid=Q682306}}. {{nihongo|'''Izanagi Shrine'''|伊射奈岐神社 (吹田市佐井寺)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
-=== Enshrined deities ===
-=== Principal deity ===
+== Enshrined deities ==
+== Principal deity ==
 *{{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}
 
-=== Associated deities ===
+== Associated deities ==
 *{{ill|Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tok|jan sewi Kasiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637|lt=Hachiman Ōkami}}
 *{{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo Ōkami}}
 
-=== History ===
+== History ==
 According to shrine tradition, during the reign of {{ill|Emperor Yūryaku|Q357235|qid=Q357235}}, Okamoto Toyotarihiko, instructed by imperial princess Yamatohime, a {{ill|Saikū|Q150845|qid=Q150845}} of {{ill|Ise Grand Shrine|Q687168|qid=Q687168}}, sought a place to enshrine five pillars of Kōtaijin and enshrined them in nearby Ogawadani. From the {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōgan}} to {{ill|Engi (era)|Q1374325|qid=Q1374325}} era, the other Izanagi Shrine enshrining {{ill|Izanami|Q682306|qid=Q682306}} moved, and to distinguish them this shrine came to be called Oku-no-miya.
 
 <gallery>
@@ -56,22 +55,20 @@ File:Isana s03.JPG|Kuchi-sui Shrine
 File:Isana s04.JPG|Inari Shrine
 </gallery>
 
-=== Cultural property ===
+== Cultural property ==
 * Shrine-name marker stone, mid-Edo period, designated cultural property of Suita City
 
-=== Access ===
+== Access ==
 * 20 minutes on foot from {{ill|Senriyama Station|Q7450929|qid=Q7450929}} on the {{ill|Hankyu Senri Line|Q1044987|qid=Q1044987}}
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== See also ===
+== See also ==
 * {{ill|Izanagi Shrine (Yamadahigashi, Suita)|Q11379324|qid=Q11379324}}
 
 {{神道 横}}
 {{Shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Izanagi Shrine (Saidera, Suita)]][[Category:Shikinaisha|Izanagi Shrine (Saidera, Suita)]][[Category:Shikinaisha|Izanagi Shrine (Saidera, Suita)]][[Category:Shikinai Ronsha]]
 [[Category:Kanpei-sha]]
 [[Category:Shikinaisha in Settsu Province]]
@@ -81,4 +78,5 @@ File:Isana s04.JPG|Inari Shrine
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Former Gō-sha in Osaka Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

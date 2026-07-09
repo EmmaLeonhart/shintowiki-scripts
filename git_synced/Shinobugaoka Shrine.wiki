@@ -16,14 +16,13 @@
 | deity = {{ill|Fujiwara no Kamatari|lt=Fujiwara no Kamatari|az|Fucivara no Kamatari|be|Фудзівара-но Каматары|ca|Nakatomi no Kamatari|de|Fujiwara no Kamatari|en|Fujiwara no Kamatari|es|Fujiwara no Kamatari|fa|فوجیوارا نو کاماتاری|fi|Fujiwara no Kamatari|fr|Fujiwara no Kamatari|hr|Fujiwara no Kamatari|hy|Ֆուձիվարա նո Կամատարի|id|Fujiwara no Kamatari|it|Fujiwara no Kamatari|ja|藤原鎌足|ko|나카토미노 카마타리|nl|Fujiwara no Kamatari|pl|Kamatari Fujiwara|pt|Fujiwara no Kamatari|ru|Фудзивара-но Каматари|sh|Fujiwara no Kamatari|sv|Fujiwara no Kamatari|th|ฟูจิวาระ โนะ คามาตาริ|tr|Fujiwara no Kamatari|uk|Накатомі но Каматарі|vi|Fujiwara no Kamatari|zh_min_nan|Huziwara no Kamatari|zh|藤原鎌足|qid=Q433995}}
 }}
 
-{{nihongo|'''Shinobugaoka Shrine'''|忍陵神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
 
 {{commons category|Category:Shinobugaoka-jinja}}
 [[ja:忍陵神社]]
 
 {{wikidata link|Q11490800|commons|Category:Shinobugaoka-jinja|ja|忍陵神社|check_date=2026-05-25}}
 
-== Japanese content ==
 {{出典の明記|date=2019年12月}}
 {{神社
  | 名称=Shinobugaoka Shrine
@@ -36,14 +35,14 @@
  | 地図= {{Location map|Japan Osaka|label=Shinobugaoka Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Shinobugaoka Shrine''' (しのぶがおかじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Okayama, {{ill|Shijōnawate|Q742160|qid=Q742160}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and its former rank under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} was {{ill|Son-sha|ja|村社|qid=Q134917284}}. The nearby {{ill|Shinobugaoka Station|Q855840|qid=Q855840}} is named after the shrine. It is sometimes read as “Ninryō-jinja.”
+{{nihongo|'''Shinobugaoka Shrine'''|忍陵神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Okayama, {{ill|Shijōnawate|Q742160|qid=Q742160}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and its former rank under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}} was {{ill|Son-sha|ja|村社|qid=Q134917284}}. The nearby {{ill|Shinobugaoka Station|Q855840|qid=Q855840}} is named after the shrine. It is sometimes read as “Ninryō-jinja.” {{nihongo|'''Shinobugaoka Shrine'''|忍陵神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
 It stands on the mound of '''{{ill|Shinobugaoka Kofun|Q11490749|qid=Q11490749}}''', and the site is also said to have held '''Okayama Castle''' in the Sengoku period.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The main deity is {{ill|Fujiwara no Kamatari|Q433995|qid=Q433995}}, with associated deities {{ill|Kumano Okami|Q11568889|qid=Q11568889}}, {{ill|Emperor Ōjin|Q317997|qid=Q317997|qid=Q317997|lt=Hondawake-no-Mikoto}}, {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Umamori Ōkami}}, and {{ill|Daishōgun (directional deity)|Q167008|qid=Q167008|lt=Taishōgun-no-Kami}}.
 
-=== History ===
+== History ==
 Shinobugaoka Shrine was renamed in Meiji 44 after Tsuhoko Shrine merged two nearby shrines. Tsuhoko Shrine’s original deities were {{ill|Fujiwara no Kamatari|Q433995|qid=Q433995}}, {{ill|Emperor Ōjin|qid=Q317997|lt=Hondawake-no-Mikoto|qid=Q317997}}, and {{ill|Kumano Gongen|Q11568925|qid=Q11568925|lt=Kumano Ōkami}}.
 
 The founding date of Tsuhoko Shrine is unknown, but it is seen as originally worshiping the ancestral deity of the local ancient clan {{ill|UNKNOWN|lt=Tsuhoko clan}}, later taking {{ill|Emperor Ōjin|Q317997|qid=Q317997}} as ujigami. Until the Edo period it was called Shingū Daigongen, with a tradition that {{ill|UNKNOWN|lt=En no Gyōja}} founded it in the time of {{ill|Emperor Tenmu|Q335181|qid=Q335181}}. As {{ill|UNKNOWN|lt=Kumano worship}} spread in the Heian period, {{ill|Kumano Gongen|Q11568925|qid=Q11568925|lt=Kumano Ōkami}} was merged in. Its original site was at Akayama in Tsuboi, Okayama village, south of the current site, but in the Edo period it moved to the current site and merged Kamatari-sha (deity: Fujiwara no Kamatari) that had been here. In {{ill|1872|Q7753|qid=Q7753}} (Meiji 5), it was ranked village shrine of former Okayama village. In Meiji 44, it merged the following two shrines.
@@ -51,14 +50,14 @@ The founding date of Tsuhoko Shrine is unknown, but it is seen as originally wor
 *Former Suna village shrine, Umamori Shrine (deity {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Umamori Ōkami}})
 *Former Suna village unranked shrine, Taishōgun-sha (deity {{ill|Daishōgun (directional deity)|Q167008|qid=Q167008|lt=Taishōgun-no-Kami}})
 
-=== Precincts ===
-=== Shinobugaoka Kofun ===
+== Precincts ==
+== Shinobugaoka Kofun ==
 {{main|忍岡古墳}}
 In {{ill|1934|Q18714|qid=Q18714}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 9), the shrine buildings collapsed due to the {{ill|1934 Muroto typhoon|Q4563431|qid=Q4563431}}. During restoration, a {{ill|Vertical Pit-Style Stone Chamber|Q11598499|qid=Q11598499}} of a {{ill|Zenpō-kōen-fun|Q11268718|qid=Q11268718}} was discovered and named “Shinobugaoka Kofun.” On March 31, {{ill|1972|Q2476|qid=Q2476}}, the stone chamber was designated an Osaka Prefecture {{ill|Cultural Property (Japan)|Q858308|qid=Q858308}}.
 
 Shinobugaoka Kofun is a 87 m-long keyhole-shaped tumulus built around the mid-{{ill|4th century|Q8099|qid=Q8099}} in the {{ill|Kofun period|Q459939|qid=Q459939}}.
 
-=== Okayama Castle ===
+== Okayama Castle ==
 Okayama Castle is said to have been built around {{ill|1560|Q6613|qid=Q6613}} ({{ill|Eiroku|Q1143341|qid=Q1143341}} 3), when {{ill|Miyoshi Nagayoshi|Q1064909|qid=Q1064909}} held {{ill|Iimoriyama Castle|Q11666638|qid=Q11666638}} as his main base, as an auxiliary castle using the ridge of Shinobugaoka Kofun northeast of Iimoriyama. In the Eiroku and {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} eras, the then-castle lord {{ill|Yūki clan|Q2975399|qid=Q2975399}} were devoted {{ill|Kirishitan|Q718714|qid=Q718714}}, and it became a Christian center.
 
 In {{ill|1615|Q6784|qid=Q6784}} ({{ill|Keichō|Q1328185|qid=Q1328185}} 20), during the {{ill|Siege of Osaka|Q475780|qid=Q475780|lt=Summer Campaign of Osaka}}, the site was used as a Tokugawa main camp. After victory it came to be called '''Okachiyama''' (“victory mountain”) as an auspicious place, but most remains were destroyed and little can now be seen.
@@ -68,17 +67,15 @@ In {{ill|1615|Q6784|qid=Q6784}} ({{ill|Keichō|Q1328185|qid=Q1328185}} 20), duri
 画像:忍陵神社 02.JPG|Old waka monument of Shinobu no Oka
 </gallery>
 
-=== Access ===
+== Access ==
 *{{ill|West Japan Railway Company|Q502125|qid=Q502125}} ({{ill|Katamachi Line|Q1073379|qid=Q1073379|lt=Gakkentoshi Line}}) "{{ill|Shinobugaoka Station|Q855840|qid=Q855840}}"
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== External links ===
+== External links ==
 {{Commonscat|Shinobugaoka-jinja}}
 *[http://www.jinjacho-osaka.net/osakafunai-no-jinjya/dai3sibu/sijyounawate-city/m30_06_sijyounawate_ninnryou.html Shinobugaoka Shrine] - Osaka Prefectural Shrine Office{{Broken link|date=2022-10}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Shinobugaoka Shrine]][[Category:Shikinaisha|Shinobugaoka Shrine]][[Category:Kanpei-sha]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
@@ -88,4 +85,5 @@ In {{ill|1615|Q6784|qid=Q6784}} ({{ill|Keichō|Q1328185|qid=Q1328185}} 20), duri
 [[Category:History of Shimehara]]
 [[Category:Fujiwara no Kamatari]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -16,14 +16,13 @@
 | deity = {{ill|Yakusanoikazuchi|ja|火雷大神|zh|八雷神|qid=Q10892534|lt=Yakusanoikazuchi}}
 }}
 
-{{nihongo|'''Karai Shrine'''|火雷神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kōzuke Province]].
+
 
 {{commons category|Category:Karai-jinja (Tamamura)}}
 [[ja:火雷神社 (玉村町)]]
 
 {{wikidata link|Q17220848|commons|Category:Karai-jinja (Tamamura)|ja|火雷神社 (玉村町)|grok=none|check_date=2026-05-30}}
 
-== Japanese content ==
 {{Shrine
 | name = Karai Shrine
 | image = [[File:Karai-jinja (Tamamura) haiden-1.JPG|270px]]<br />Haiden
@@ -39,18 +38,18 @@
 }}
 {{座標一覧}}
 [[File:Karai-jinja (Tamamura) torii.JPG|thumb|200px|right|Torii]]
-'''Karai Shrine''' (からいじんじゃ / ほのいかづちじんじゃ) is a Shinto shrine in Tamamura, Sawa District, Gunma. It is a shikinaisha and was regarded as the eighth ichinomiya of Kozuke Province. Former modern rank: gosha.
+{{nihongo|'''Karai Shrine'''|火雷神社}} is a Shinto shrine in Tamamura, Sawa District, Gunma. It is a shikinaisha and was regarded as the eighth ichinomiya of Kozuke Province. Former modern rank: gosha. {{nihongo|'''Karai Shrine'''|火雷神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kōzuke Province]].
 
 Located on the right bank of the Tone River, it is called "Shimonomiya" in contrast to {{ill|Shidori Shrine (Isesaki)|ja|倭文神社 (伊勢崎市)|qid=Q17220856}} on the opposite bank, known as "Kaminomiya."
 
-=== Enshrined deities ===
+== Enshrined deities ==
 ; Main deity
 * {{ill|Yakusanoikazuchi|ja|火雷大神|zh|八雷神|qid=Q10892534|lt=Karai-no-Kami}}
 
 ; Co-enshrined deities
 Includes Ukemochi, Sugawara no Michizane, Kagutsuchi, Omononushi, Takaminakata, Emperor Ojin, Susanoo, Takao-kami, Ukanomitama, Amaterasu, and Sukunahikona, among others.
 
-=== History ===
+== History ==
 Shrine tradition places foundation in the first year of Emperor Sujin. The place-name "Shimonomiya" is said to derive from this shrine. Tradition also says Shimonomiya and Kaminomiya were contiguous land before medieval shifts in the Tone River channel.
 
 The earliest national historical record is a 796 entry in ''Nihon Koki'' listing "Karai deity of Nawa District" as an official shrine alongside Kamo and Miwa shrines in the region. These are thought to reflect invitations of deities from Yamato-related cult centers.
@@ -59,12 +58,12 @@ In the ''Engishiki Jinmyocho,'' "Karai Shrine" is listed for Nawa District, Kozu
 
 In early modern times it was also called "Karai Tenjinsha." In July 1872 it was ranked gosha.
 
-=== Divine rank ===
+== Divine rank ==
 * 796-08-16: entered official shrine register (''Nihon Koki'')
 * 1030: recorded as Sho-nii ("Karai Myojinsha") in Kozuke transfer records
 * Later listed as Ju-ichii in ''Kozuke no Kuni Jinmyocho''
 
-=== Precinct ===
+== Precinct ==
 The honden is a three-bay nagare-zukuri building constructed in 1645 and repeatedly repaired thereafter.
 
 <gallery>
@@ -74,41 +73,39 @@ File:Karai-jinja (Tamamura) kaguraden.JPG|Kaguraden
 File:Karai-jinja (Tamamura) sekishi.JPG|Stone shrine group
 </gallery>
 
-=== Festivals ===
+== Festivals ==
 * Grand festival (April 3)
 * Minor festival (October 17)
 * Special rite "Mugimaki Goshinji" (13 days from late lunar October ox-day midnight to dawn of first horse day of lunar November)
 
 During Mugimaki, secret rites are performed at night without lamps and with low voice norito. Shimenawa are stretched around the shrine and entry is prohibited; parishioners also refrain from loud sounds. The rite prays for harvest and protection from calamity and is designated a town important intangible folk cultural property.
 
-=== Cultural properties ===
-=== Tamamura Town designated important intangible folk cultural property ===
+== Cultural properties ==
+== Tamamura Town designated important intangible folk cultural property ==
 * Mugimaki Goshinji (designated April 27, 2000)
 
-=== Site information ===
+== Site information ==
 * Address: Shimonomiya-ko 524, Tamamura, Sawa District, Gunma
 * Nearby: Torinji (former betto temple), and Shitori Shrine (Kaminomiya) across Tone River
 
-=== Notes ===
+== Notes ==
 {{脚注ヘルプ}}
 {{reflist}}
 
-=== References ===
+== References ==
 * On-site explanatory boards
 * ''Nihon Rekishi Chimei Taikei: Gunma place names''
 * ''Basic Studies on the Medieval Ichinomiya System''
 
-=== See also ===
+== See also ==
 * {{ill|Nawa clan|ja|那波氏|qid=Q11642757}}
 * {{ill|Katsuraki ni Imasu Honoikaduchi Shrine|Q11620954|qid=Q11620954}}
 
-=== External links ===
+== External links ==
 {{Commonscat|Karai-jinja (Tamamura)}}
 * Tamamura town page for Karai Shrine
 
 {{神道 横}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Karai Shrine]][[Category:Shikinaisha|Karai Shrine]][[Category:Shikinaisha|Karai Shrine]][[Category:Shikinaisha in Kōzuke Province]]
 [[Category:Shinto shrines in Gunma Prefecture]]
 [[Category:玉村町の建築物]]
@@ -117,4 +114,5 @@ During Mugimaki, secret rites are performed at night without lamps and with low 
 [[Category:Former Gō-sha in Gunma Prefecture]]
 [[Category:Kōzuke Province]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

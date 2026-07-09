@@ -22,7 +22,6 @@
 
 {{wikidata link|Q17191921|commons|Category:Arata-jinja (Iwade)|ja|荒田神社 (岩出市)|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shrine
 |Name = Arata Shrine
 |Image = [[File:Arata-jinja (Iwade) honden.JPG|280px]]<br />Main hall (designated cultural property of Wakayama Prefecture)
@@ -43,31 +42,31 @@
 [[File:Arata-jinja (Iwade) torii.JPG|thumb|200px|right|{{center|Torii}}]]
 '''Arata Shrine''' (Arata-jinja) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Mori, {{ill|Iwade, Wakayama|Q579623|qid=Q579623}}, {{ill|Wakayama Prefecture|Q131314|qid=Q131314}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine rank}} it was classified as a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The shrine enshrines the following 24 deities<ref>The list of enshrined deities is based on the explanatory sign within the shrine grounds.</ref>.
 * {{ill|Takamimusubi|de|Takamimusubi|es|Takami-musubi-no-kami|fa|تاکامیموسوبی|fr|Takamimusubi|id|Takamimusubi|ja|タカミムスヒ|ks|تاکامِمُسُبی|pl|Takamimusubi|ru|Такамимусуби-но ками|zh|高皇產靈尊|qid=Q125400|lt=Takamimusubi-no-Mikoto}}, {{ill|Katsuragi no Kuni no Miyatsuko|ja|葛城国造|qid=Q11620893|lt=Tsurugine-no-Mikoto}}, {{ill|Seoritsu-hime|ja|瀬織津姫|zh|瀨織津姬神|qid=Q13579836|lt=Ama-no-Somukitsu-Hime-no-Mikoto}}, {{ill|Empress Jingū|ar|الإمبراطورة جينغو|arz|الامبراطوره جينجو|az|Cinqu|bcl|Empress Jingū|ca|Jingu|cs|Džingú|de|Jingū|es|Jingū|eu|Jingū enperatriza|fa|امپراتریس جینگو|fr|Jingū|hr|Jingū (japanska carica)|hu|Dzsingú japán császárnő|id|Permaisuri Jingū|it|Jingū|ja|神功皇后|ka|ძინგუ|ko|진구 황후|nl|Jingu|pl|Jingū|pt|Jingu|ru|Императрица Дзингу|sh|Carica Jingū|si|ජින්ගූ අධිරාජිනිය|simple|Empress Jingū|sl|Cesarica Džingu|sv|Jingu Kogo|te|రాణి జింగూ|th|จักรพรรดินีจิงงู|tl|Emperatris Jingū|tr|Jingū (imparatoriçe)|uk|Імператриця Дзінґу|uz|Imperator Jingū|vi|Thiên hoàng Jingū|zh|神功皇后|zh_min_nan|Sîn-kong Hông-hō͘|zh_yue|神功皇后|qid=Q232803}}, {{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997}}, {{ill|Sugawara no Michizane|ar|سوغاوارا نو ميتشيزانه|br|Sugawara no Michizane|ckb|سوگاوارا نۆ میچیزانێ|de|Sugawara no Michizane|es|Sugawara no Michizane|fa|سوگاوارا نو میچی‌زانه|fi|Sugawara no Michizane|fr|Sugawara no Michizane|id|Sugawara no Michizane|it|Sugawara no Michizane|ja|菅原道真|kk|Сугавара но Митидзане|ko|스가와라노 미치자네|la|Sugawara no Michizane|ms|Sugawara no Michizane|nl|Sugawara no Michizane|nn|Sugawara no Michizane|pl|Michizane Sugawara|pt|Sugawara no Michizane|ru|Сугавара-но Митидзанэ|sh|Sugawara no Michizane|sv|Sugawara no Michizane|th|สึกาวาระ โนะ มิจิซาเนะ|tr|Sugawara no Michizane|uk|Суґавара но Мітідзане|zh|菅原道真|zh_classical|菅原道真|zh_min_nan|Sugawara no Mitizane|qid=Q382005}}, {{ill|Niutsuhime Shrine|Q705154|qid=Q705154|lt=Niutsuhime-no-Mikoto}}, {{ill|Oyamakui no Kami|ja|大山咋神|simple|Oyamakui no Kami|zh|大山咋神|qid=Q10935105|lt=Ōyamakui-no-Mikoto}}, {{ill|Ōyamatsumi|abstract|Q386563|az|Ooyamatsimu|de|Ōyamatsumi|fa|اویاماتسومی|fr|Ōyamatsumi|hr|O-Yama-Tsu-mi|ja|オオヤマツミ|ko|오야마쓰미노카미|mni|ꯑꯣꯌꯃꯠꯁꯨꯃꯤ|ru|Ооямацуми|simple|Ōyamatsumi|sv|Ōyamatsumi|tr|Ōyamatsumi|zh|大山津見|qid=Q386563|lt=Ōyamatsumi-no-Mikoto}}, {{ill|Ame-no-oshihomimi|Q462555|qid=Q462555|lt=Ame-no-Oshihomimi-no-Mikoto}}, {{ill|Ichikishima-hime|qid=Q11059454|lt=Ichikishimahime-no-Mikoto}}, {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}, {{ill|Kagu-tsuchi|Q1640658|qid=Q1640658|lt=Kagutsuchi-no-Mikoto}}, {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōyashima-no-Mikoto}}, {{ill|UNKNOWN|lt=Shirahige Daimyōjin}}, {{ill|Haraedo no Kami|Q11588504|qid=Q11588504|lt=Haraido no Kyūhashira no Kami}}
 
-=== History ===
-=== Overview ===
+== History ==
+== Overview ==
 The ancient origins are unknown. In the mid-{{ill|Heian period|Q193292|qid=Q193292}}, the {{ill|Engishiki|Q1342448|qid=Q1342448}} {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Register of Deities}} lists “Arata Shrine, two seats” in {{ill|Naga District, Wakayama|Q1093809|qid=Q1093809|lt=Naga District}}, {{ill|Kii Province|Q864053|qid=Q864053}}, placing it among the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}. The {{ill|Kii no Kuni Jinmyō-chō|Q17210008|qid=Q17210008}} records it as a local deity with the rank “Junior Fourth Rank, Upper Grade, Arata-no-Kami.”
 
 According to the {{ill|Kii Zoku Fudoki|Q11604964|qid=Q11604964}} (an Edo-period gazetteer of Kii Province), the enshrined deities were {{ill|Takamimusubi|de|Takamimusubi|es|Takami-musubi-no-kami|fa|تاکامیموسوبی|fr|Takamimusubi|id|Takamimusubi|ja|タカミムスヒ|ks|تاکامِمُسُبی|pl|Takamimusubi|ru|Такамимусуби-но ками|zh|高皇產靈尊|qid=Q125400|lt=Takamimusubi-no-Mikoto}}, the ancestor of the Arata no Atae clan, and {{ill|Katsuragi no Kuni no Miyatsuko|ja|葛城国造|qid=Q11620893|lt=Tsurugine-no-Mikoto}}, and later—like {{ill|Hirota Shrine (Osaka City)|Q1466105|qid=Q1466105}} in {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}—{{ill|Seoritsu-hime|ja|瀬織津姫|zh|瀨織津姬神|qid=Q13579836|lt=Ama-no-Somukitsu-Hime-no-Mikoto}}, {{ill|Empress Jingū|ar|الإمبراطورة جينغو|arz|الامبراطوره جينجو|az|Cinqu|bcl|Empress Jingū|ca|Jingu|cs|Džingú|de|Jingū|es|Jingū|eu|Jingū enperatriza|fa|امپراتریس جینگو|fr|Jingū|hr|Jingū (japanska carica)|hu|Dzsingú japán császárnő|id|Permaisuri Jingū|it|Jingū|ja|神功皇后|ka|ძინგუ|ko|진구 황후|nl|Jingu|pl|Jingū|pt|Jingu|ru|Императрица Дзингу|sh|Carica Jingū|si|ජින්ගූ අධිරාජිනිය|simple|Empress Jingū|sl|Cesarica Džingu|sv|Jingu Kogo|te|రాణి జింగూ|th|จักรพรรดินีจิงงู|tl|Emperatris Jingū|tr|Jingū (imparatoriçe)|uk|Імператриця Дзінґу|uz|Imperator Jingū|vi|Thiên hoàng Jingū|zh|神功皇后|zh_min_nan|Sîn-kong Hông-hō͘|zh_yue|神功皇后|qid=Q232803}}, and {{ill|Emperor Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh|应神天皇|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|qid=Q317997}} were added<ref name="place-names"/>. Because this {{ill|UNKNOWN|lt=Ama-no-Somukitsu-Hime-no-Mikoto}} is considered the {{ill|UNKNOWN|lt=Aramitama}} of {{ill|Amaterasu|Q455602|qid=Q455602}}, it is thought that Arata Shrine originated from {{ill|Kōjin|Q6455190|qid=Q6455190|lt=aragami worship}}<ref name="place-names">“Place Names of Wakayama Prefecture,” entry for Arata Shrine.</ref>. The same source states that the shrine was destroyed by warfare during the {{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1145058}} era ({{ill|1573|Q6678|qid=Q6678}}–{{ill|1592|Q6769|qid=Q6769}})<ref name="place-names"/>.
 
 In the {{ill|Meiji era|Q3125096|qid=Q3125096}} period, under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}, it was designated a {{ill|Son-sha|Q134917284|qid=Q134917284}}.
 
-=== Divine rank ===
+== Divine rank ==
 * Junior Fourth Rank, Upper Grade ({{ill|Kii no Kuni Jinmyō-chō|Q17210008|qid=Q17210008}}) — recorded as “Arata-no-Kami.”
 
-=== Shrine grounds ===
+== Shrine grounds ==
 [[File:Arata-jinja (Iwade) keidai.JPG|thumb|200px|right|{{center|Sacred grove and worship hall within the grounds}}]]
 The main hall was rebuilt in the first year of {{ill|Kan'ei|Q1192913|qid=Q1192913}} ({{ill|1624|Q6821|qid=Q6821}}). It is a sangensha {{ill|Nagare-zukuri|Q210684|qid=Q210684}} structure with a {{ill|cypress bark roof|Q90373477|qid=Q90373477}} roof. The entire structure is vermilion-lacquered and adorned with carvings said to have been donated by {{ill|Heinouchi Masanobu|Q11482097|qid=Q11482097|lt=Heiuchi Masanobu}}. This main hall is designated a {{ill|Tangible Cultural Property (Japan)|Q2901860|qid=Q2901860|lt=Prefectural Tangible Cultural Property}} of {{ill|Wakayama Prefecture|Q131314|qid=Q131314}}.
 
-=== Subsidiary and auxiliary shrines ===
+== Subsidiary and auxiliary shrines ==
 * Inari Shrine — enshrined deities: {{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}, {{ill|Ōkuninushi|lt=Ōkuninushi-no-Mikoto|qid=Q276944}}
 * Niu Shrine
 * Yasaka Shrine
 
-=== Festivals ===
+== Festivals ==
 * New Year’s Day Festival (January 1)<ref>Festival information is based on the explanatory leaflet within the shrine grounds.</ref>
 * Spring Festival (February 19)
 * Ohatsuho (June 30)
@@ -81,25 +80,23 @@ The main hall was rebuilt in the first year of {{ill|Kan'ei|Q1192913|qid=Q119291
 
 In addition, there is a special ritual called the New Year Suzu-tamari ritual<ref>[Arata Shrine] (Wakayama Prefecture Shrine Association).</ref>.
 
-=== Cultural properties ===
-=== Wakayama Prefecture–designated Tangible Cultural Properties ===
+== Cultural properties ==
+== Wakayama Prefecture–designated Tangible Cultural Properties ==
 * Main hall (structure) — designated April 11, 1995.
 
-=== Footnotes ===
+== Footnotes ==
 {{Footnote help}}
 {{reflist}}
 
-=== References ===
+== References ==
 * Shrine grounds explanatory sign
 * “{{ill|Japanese Historical Topography Series|Q17213509|qid=Q17213509}}: Wakayama Prefecture” ({{ill|Heibonsha|Q11482108|qid=Q11482108}}), Naga District, Arata Shrine entry
 
-=== External links ===
+== External links ==
 {{Commonscat|Arata-jinja (Iwade)}}
 * [Arata Shrine] — Wakayama Prefecture Shrine Association
 
 {{Shinto navbox}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Arata Shrine]][[Category:Shikinaisha|Arata Shrine]][[Category:Shikinaisha|Arata Shrine]][[Category:Shikinaisha in Kii Province]]
 [[Category:Shinto shrines in Wakayama Prefecture]]
 [[Category:Buildings and structures in Iwade, Wakayama]]
@@ -109,4 +106,5 @@ In addition, there is a special ritual called the New Year Suzu-tamari ritual<re
 [[Category:Shinto shrines in Wakayama Prefecture]]
 [[Category:紀伊国の式内社]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

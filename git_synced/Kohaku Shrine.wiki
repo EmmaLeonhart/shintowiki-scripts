@@ -16,14 +16,13 @@
 | established = {'time': '+0588-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
 }}
 
-{{nihongo|'''Kohaku Shrine'''|虎狛神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
+
 
 {{commons category|Category:Kohaku-jinja}}
 [[ja:虎狛神社 (調布市)]]
 
 {{wikidata link|Q72707416|commons|Category:Kohaku-jinja|ja|虎狛神社 (調布市)|grok=none|check_date=2026-05-31}}
 
-== Japanese content ==
 {{Shrine
 | name = Kohaku Shrine
 | image = [[File:Kohaku-jinja(Chofu).jpg|270px]]<br />Haiden
@@ -37,9 +36,9 @@
 | map = {{Location map|Japan Western Tokyo|label=Kohaku Shrine|position=left|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Kohaku Shrine''' (こはくじんじゃ) is a Shinto shrine near {{ill|Jindai-ji (Tokyo)|Q500736|qid=Q500736}} in Sasu-cho, {{ill|Chōfu|ar|تشوفو (طوكيو)|azb|چوفو، توکیو|bg|Чофу|bn|চোফু, টোকিও|ca|Chōfu|ce|Тёфу|ceb|Chōfu-shi|cs|Čófu|de|Chōfu|el|Τσόφου (Τόκιο)|eo|Ĉofu (urbo)|es|Chōfu (Tokio)|et|Chōfu|eu|Chōfu|fa|چوفو، توکیو|fi|Chōfu|fr|Chōfu|gl|Chōfu, Tokyo|hy|Տյոֆու|id|Chōfu, Tōkyō|it|Chōfu|ja|調布市|ko|조후시|lt|Čiofu|mg|Chōfu|mn|Чоофү|ms|Chofu|mzn|چوفو، توکیو|nl|Chofu|no|Chofu|pl|Chōfu|pt|Chofu|ro|Chōfu|ru|Тёфу|sh|Chōfu|sr|Чофу|su|Chofu, Tokyo|sv|Chofu|tg|Чофу|th|โชฟุ|tl|Chōfu, Tokyo|tr|Chōfu|tt|Тёфу|tum|Chōfu|uk|Тьофу|ur|شؤفو، ٹوکیو|vi|Chōfu, Tokyo|war|Chōfu|zh|調布市|zh_classical|調布市|zh_min_nan|Tyôhu-chhī|zh_yue|調布市|qid=Q210667}}, {{ill|Tokyo|Q1490|qid=Q1490}}. It enshrines Otoshi Mioya no Kami. It is a candidate for the Engishiki shrine "Kohaku Shrine" of Tama District, Musashi Province, and was formerly ranked as a gosha and tutelary shrine of old Sasu Village.
+{{nihongo|'''Kohaku Shrine'''|虎狛神社}} is a Shinto shrine near {{ill|Jindai-ji (Tokyo)|Q500736|qid=Q500736}} in Sasu-cho, {{ill|Chōfu|ar|تشوفو (طوكيو)|azb|چوفو، توکیو|bg|Чофу|bn|চোফু, টোকিও|ca|Chōfu|ce|Тёфу|ceb|Chōfu-shi|cs|Čófu|de|Chōfu|el|Τσόφου (Τόκιο)|eo|Ĉofu (urbo)|es|Chōfu (Tokio)|et|Chōfu|eu|Chōfu|fa|چوفو، توکیو|fi|Chōfu|fr|Chōfu|gl|Chōfu, Tokyo|hy|Տյոֆու|id|Chōfu, Tōkyō|it|Chōfu|ja|調布市|ko|조후시|lt|Čiofu|mg|Chōfu|mn|Чоофү|ms|Chofu|mzn|چوفو، توکیو|nl|Chofu|no|Chofu|pl|Chōfu|pt|Chofu|ro|Chōfu|ru|Тёфу|sh|Chōfu|sr|Чофу|su|Chofu, Tokyo|sv|Chofu|tg|Чофу|th|โชฟุ|tl|Chōfu, Tokyo|tr|Chōfu|tt|Тёфу|tum|Chōfu|uk|Тьофу|ur|شؤفو، ٹوکیو|vi|Chōfu, Tokyo|war|Chōfu|zh|調布市|zh_classical|調布市|zh_min_nan|Tyôhu-chhī|zh_yue|調布市|qid=Q210667}}, {{ill|Tokyo|Q1490|qid=Q1490}}. It enshrines Otoshi Mioya no Kami. It is a candidate for the Engishiki shrine "Kohaku Shrine" of Tama District, Musashi Province, and was formerly ranked as a gosha and tutelary shrine of old Sasu Village. {{nihongo|'''Kohaku Shrine'''|虎狛神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
 
-=== History ===
+== History ==
 According to shrine tradition, the shrine was founded in 588 by enshrining Otoshi Mioya no Kami. {{sfn|新編武蔵風土記稿 佐須村}}
 
 Traditions connected with Jindaiji state that Manko Shonin's grandparents were worshiped here as guardian deities of Jindaiji.<ref name="jindaiji">''Jindaiji Engi''.</ref> The shrine name "Kohaku" is linked to stories about his grandmother "Tora" and grandfather "Ukon" and the old place-name "Komano-no-sato."<ref name="jindaiji"/>
@@ -49,13 +48,13 @@ In later centuries, Gion-ji (Kohakusan Nikko-in), founded by Manko Shonin, serve
 ; Shrine rank
 * {{ill|1873|Q7757|qid=Q7757}} - designated {{ill|Gō-sha|Q134917316|qid=Q134917316}}.<ref name="kitatama">''Kitatama Jinjashi'' (Kitatama Shinto Youth Association Murasaki-kai, 1976).</ref>
 
-=== Enshrined deities ===
+== Enshrined deities ==
 ; Main deity
 * {{ill|Kamuo Ichihime|Q11588867|qid=Q11588867|lt=Otoshi Mioya no Kami}}
 ; Co-enshrined deity
 * {{ill|Ukanomitama|de|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}<ref name="guide">On-site origin guide board (installed January 2015).</ref>
 
-=== Cultural properties ===
+== Cultural properties ==
 ; Chofu City designated tangible cultural properties
 * Honden (designated March 30, 2012)
 : Built in 1683; repaired in 1815. One-bay nagare-zukuri mise-dana style. Original thatched roof replaced with copper sheeting.<ref name="cityprop">Chofu City Board of Education signboard for Kohaku Shrine Honden and three munafuda.</ref>
@@ -75,7 +74,7 @@ File:Kohaku-jinja(Chofu) Temizusha.jpg|Temizuya
 File:Kohaku-jinja(Chofu) Haiden.jpg|Haiden
 </gallery>
 
-=== Outside-precinct shrines ===
+== Outside-precinct shrines ==
 Sasu Shinmeigu and Kashinoki Inari, once merged in 1911, were re-enshrined at their former locations in 1942.<ref name="guide"/>
 
 * Sasu Shinmeigu (next to Gion-ji)
@@ -86,7 +85,7 @@ Sasu Shinmeigu and Kashinoki Inari, once merged in 1911, were re-enshrined at th
 : Deity: {{ill|Ukanomitama|de|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}
 : Festival: Hatsuuma day in February
 
-=== Annual events ===
+== Annual events ==
 * Monthly festival (13th of each month except January and October)
 * New Year's Day festival (January 1)
 * Inari Hatsuuma festival (first horse day of February)
@@ -94,23 +93,21 @@ Sasu Shinmeigu and Kashinoki Inari, once merged in 1911, were re-enshrined at th
 * Shinmeigu grand festival (December 13)
 * Niiname-sai (December 13)
 
-=== Access ===
+== Access ==
 * From JR Mitaka Station, Keio Bus for Chofu Station; get off at "Sasu," about 5 minutes on foot.
 * From Keio Chofu Station, Keio Bus for Mitaka Station; get off at "Sasu," about 5 minutes on foot.
 * Chofu City minibuses also stop at "Kohaku Shrine."
 
-=== Notes ===
+== Notes ==
 {{Reflist|2}}
 
-=== References ===
+== References ==
 * {{cite book|ja|title={{ill|Shinpen Musashi Fudoki-kō|Q11503943|qid=Q11503943}}|volume=Vol. 94, Tama District 6|chapter=Sasu Village: Kohaku Shrine|id={{NDLJP|763989/30}}|publisher=Geographical Bureau, Home Ministry|date=1884-6|ref={{sfnref|新編武蔵風土記稿 佐須村}}}}
 * {{cite book|ja|title={{ill|Edo meisho zue|Q2704637|qid=Q2704637}}|id={{NDLJP|1174144/155}}|publisher=Yuhodo Shoten|editor=Nagatoshi Saito|volume=2|series=Yuhodo Bunko|year=1927|chapter=Vol. 3 Tenki section: Kohaku Shrine|pages=300-301|ref={{sfnref|江戸名所図会|1927}}}}
 * {{Cite web|ja|url=https://www.city.chofu.tokyo.jp/www/contents/1176118969587/index.html|title=Monument of Kohaku Shrine in Sasu Village, Komae-go|website=Chofu City website|accessdate=2021-1-13|date=2004-4-24|ref={{sfnref|調布市ホームページ}}}}
 
-=== See also ===
+== See also ==
 * {{ill|Kohaku Shrine Black Pine|Q24867966|qid=Q24867966}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Kohaku Shrine]][[Category:Shikinaisha|Kohaku Shrine]][[Category:Shikinaisha|Kohaku Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Musashi Province]]
 [[Category:Shinto shrines in Tokyo]]
@@ -120,4 +117,5 @@ Sasu Shinmeigu and Kashinoki Inari, once merged in 1911, were re-enshrined at th
 [[Category:Buildings and structures in Chōfu, Tokyo]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -18,7 +18,7 @@
 | website = {{Official website|https://www.hakozakigu.or.jp/}}
 }}
 
-{{nihongo|'''Hakozaki Shrine'''|筥崎宮}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Chikuzen Province]].
+
 
 {{commons category|Category:Hakozaki-gū}}
 [[AZ:Hakozaki məbədi]]
@@ -33,7 +33,6 @@
 
 {{wikidata link|Q714742|az|Hakozaki məbədi|cy|Creirfa Hakozaki|de|Hakozaki-gū|en|Hakozaki Shrine|eu|Hakozaki santutegia|fr|Hakozaki-gū|ja|筥崎宮|tr|Hakozaki Tapınağı|zh|筥崎宮|grok=Hakozaki_Shrine|check_date=2026-05-29}}
 
-== Japanese content ==
 {{神社
 |名称   = Hakozaki-gū
 |画像   = [[File:Hakozaki-miya090806a.jpg|270px]]<br />Precincts
@@ -50,18 +49,18 @@
 |地図 = {{Location map|Fukuoka city|label=Hakozaki-gū|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Hakozaki-gū''' (はこざきぐう) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Hakozaki|ja|箱崎 (福岡市)|qid=Q11603321|lt=Hakozaki}}, {{ill|Higashi-ku, Fukuoka|ceb|Higashi Ku (subdistrito sa Hapon, Fukuoka-ken)|cs|Higaši-ku (Fukuoka)|es|Higashi-ku (Fukuoka)|fa|هیگاشی-کو، فوکوئوکا|fi|Higashi-ku (Fukuoka)|fr|Higashi-ku (Fukuoka)|id|Higashi-ku, Fukuoka|it|Higashi-ku (Fukuoka)|ja|東区 (福岡市)|ko|히가시구 (후쿠오카시)|pl|Higashi (Fukuoka)|th|เขตฮิงาชิ (ฟูกูโอกะ)|tr|Higashi, Fukuoka|ur|ہیگاشی وارڈ، فوکوکا|vi|Higashi, Fukuoka|zh|東區 (福岡市)|zh_yue|東區 (福岡市)|qid=Q1206659|lt=Higashi Ward}}, {{ill|Fukuoka|Q26600|qid=Q26600}}, {{ill|Fukuoka Prefecture|Q123258|qid=Q123258}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} ({{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}), and an {{ill|Ichinomiya|Q1656379|qid=Q1656379}} of {{ill|Chikuzen Province|Q1047664|qid=Q1047664}}{{Efn|Together with {{ill|Sumiyoshi Shrine (Fukuoka)|Q29682|qid=Q29682|lt=Sumiyoshi Shrine}} in Sumiyoshi, {{ill|Hakata-ku, Fukuoka|ar|هاكاتا-كو|ceb|Hakata Ku|cs|Hakata-ku (Fukuoka)|es|Hakata-ku (Fukuoka)|fa|هاکاتا-کو، فوکوئوکا|fi|Hakata-ku|fr|Hakata-ku|hu|Hakata|id|Hakata-ku, Fukuoka|it|Hakata-ku|ja|博多区|ko|하카타구|pl|Hakata (Fukuoka)|pt|Hakata|th|เขตฮากาตะ|tr|Hakata|ur|ہاکاتا وارڈ، فوکوکا|vi|Hakata, Fukuoka|zh|博多區|zh_yue|博多區|qid=Q1330839}}.}}. Its former {{ill|Q712534|lt=shrine rank}} was {{ill|Q712534|lt=Kanpei Taisha}}, and it is now a {{ill|Beppyo shrine|Q10898274|qid=Q10898274}} under the {{ill|Association of Shinto Shrines|Q908077|qid=Q908077}}.
+{{nihongo|'''Hakozaki Shrine'''|筥崎宮}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Hakozaki|ja|箱崎 (福岡市)|qid=Q11603321|lt=Hakozaki}}, {{ill|Higashi-ku, Fukuoka|ceb|Higashi Ku (subdistrito sa Hapon, Fukuoka-ken)|cs|Higaši-ku (Fukuoka)|es|Higashi-ku (Fukuoka)|fa|هیگاشی-کو، فوکوئوکا|fi|Higashi-ku (Fukuoka)|fr|Higashi-ku (Fukuoka)|id|Higashi-ku, Fukuoka|it|Higashi-ku (Fukuoka)|ja|東区 (福岡市)|ko|히가시구 (후쿠오카시)|pl|Higashi (Fukuoka)|th|เขตฮิงาชิ (ฟูกูโอกะ)|tr|Higashi, Fukuoka|ur|ہیگاشی وارڈ، فوکوکا|vi|Higashi, Fukuoka|zh|東區 (福岡市)|zh_yue|東區 (福岡市)|qid=Q1206659|lt=Higashi Ward}}, {{ill|Fukuoka|Q26600|qid=Q26600}}, {{ill|Fukuoka Prefecture|Q123258|qid=Q123258}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} ({{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}), and an {{ill|Ichinomiya|Q1656379|qid=Q1656379}} of {{ill|Chikuzen Province|Q1047664|qid=Q1047664}}{{Efn|Together with {{ill|Sumiyoshi Shrine (Fukuoka)|Q29682|qid=Q29682|lt=Sumiyoshi Shrine}} in Sumiyoshi, {{ill|Hakata-ku, Fukuoka|ar|هاكاتا-كو|ceb|Hakata Ku|cs|Hakata-ku (Fukuoka)|es|Hakata-ku (Fukuoka)|fa|هاکاتا-کو، فوکوئوکا|fi|Hakata-ku|fr|Hakata-ku|hu|Hakata|id|Hakata-ku, Fukuoka|it|Hakata-ku|ja|博多区|ko|하카타구|pl|Hakata (Fukuoka)|pt|Hakata|th|เขตฮากาตะ|tr|Hakata|ur|ہاکاتا وارڈ، فوکوکا|vi|Hakata, Fukuoka|zh|博多區|zh_yue|博多區|qid=Q1330839}}.}}. Its former {{ill|Q712534|lt=shrine rank}} was {{ill|Q712534|lt=Kanpei Taisha}}, and it is now a {{ill|Beppyo shrine|Q10898274|qid=Q10898274}} under the {{ill|Association of Shinto Shrines|Q908077|qid=Q908077}}. {{nihongo|'''Hakozaki Shrine'''|筥崎宮}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Chikuzen Province]].
 
 It is also called '''Hakozaki Hachimangū''' (はこざきはちまんぐう). Together with {{ill|Usa Jingū|de|Usa Hachiman-gū|el|Ούσα Τζίνγκου|eu|Usa jingū|fr|Usa Hachiman-gū|id|Kuil Usa|ja|宇佐神宮|ko|우사 신궁|la|Usa-jingū|or|ଉସାଜିଙ୍ଗୁ|ru|Уса-дзингу|simple|Usa Jingū|tok|tomo sewi suli Usa|tr|Usa Jingū|zh|宇佐神宮|qid=Q715632}} in {{ill|Usa, Ōita|Q114147|qid=Q114147}}, {{ill|Ōita Prefecture|Q133924|qid=Q133924}}, and {{ill|Iwashimizu Hachimangū|Q710098|qid=Q710098}} in {{ill|Yawata|Q260923|qid=Q260923}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}, it is called one of the '''{{ill|Hachiman|Q261637|qid=Q261637|lt=Three Great Hachiman Shrines}}'''{{Efn|In popular usage, the “Three Great Hachiman” usually means “Usa Jingū and Iwashimizu Hachimangū,” plus either this shrine or {{ill|Tsurugaoka Hachimangū|Q701403|qid=Q701403}}. In late-Edo to Meiji materials, the three examples listed in the Daijō-kan notice dated old-calendar {{ill|April 24 (Lunisolar)|cdo|4 nguŏk 24 hô̤ (nùng-lĭk)|ja|4月24日 (旧暦)|ko|음력 4월 24일|zh|四月廿四|zh_min_nan|4 goe̍h 24 ji̍t (kū-le̍k)|zh_yue|四月廿四|qid=Q839640}}<ref>{{Cite book |ja|author=Tanaka Tsunekiyo |title=Mysterious God: Everything about Hachiman, as told by the chief priest of Iwashimizu Hachimangū |publisher=Shin Jinbutsu Ōraisha |date=2010-03 |isbn=4404038291 |page=198}}</ref><ref>{{Cite web |ja |url=http://www.d1.dion.ne.jp/~s_minaga/s_tatu.htm |title=Shinbutsu Bunri Order |website=Shinbutsu Bunri, or Haibutsu Kishaku |access-date=2015-12-25 |archive-url=https://web.archive.org/web/20081030054401/https://www.d1.dion.ne.jp/~s_minaga/s_tatu.htm |archive-date=2008-10-30}}{{信頼性要検証|date=2024-11}}</ref> and ranked as Kanpei Taisha were “Usa, Iwashimizu, Hakozaki”; however, some recent books present “Usa, Iwashimizu, Tsurugaoka” as representative Hachiman shrines<ref>{{Cite book |ja |title=National Directory of Hachiman Shrines |publisher=Shin Jinbutsu Ōraisha |series=Bessatsu Rekishi Dokuhon 99 Shrine Series 3| date=2004-11 |isbn=4404030991 |page=}}</ref><ref>{{Cite book |ja |author=Shirai Eiji |author2=Toki Masanori |title=Shrine Dictionary |edition=New popular edition |publisher=Tōkyōdō Shuppan |date=1997-09 |isbn=449010474X |page=}}</ref>.}}.
 
-=== Shrine name ===
+== Shrine name ==
 The proper character for “hako” is 「筥」 (a cylindrical container), not 「箱」. However, for place names, station names, etc., {{要出典範囲|the toponym “hakozaki” is written as 「箱崎」 rather than the shrine’s 「筥崎」 out of reverence for the Hakozaki Hachiman deity.|date=2023-03}}
 
 <gallery>
 Japanese Crest mitu Tomoe 1.svg|Hakozaki-gū crest {{ill|Tomoe|Q1557435|qid=Q1557435|lt=(left triple tomoe)}}
 </gallery>
 
-=== Enshrined deities ===
+== Enshrined deities ==
 {{定義リスト2
 | Principal deity |
 * {{ill|Emperor Ōjin|Q317997|qid=Q317997}}
@@ -70,7 +69,7 @@ Japanese Crest mitu Tomoe 1.svg|Hakozaki-gū crest {{ill|Tomoe|Q1557435|qid=Q155
 * {{ill|Tamayori-hime (mother of Jimmu)|Q3082751|qid=Q3082751|lt=Tamayori-hime-no-Mikoto}}
 }}
 
-=== History ===
+== History ==
 [[File:箱崎八幡宮縁起.jpg|thumb|left|350px|Origin account of Hakozaki Hachimangū]]
 
 There are multiple theories regarding its founding<ref name="history">{{Cite web |ja |url=http://www.hakozakigu.or.jp/history/ |title=History of Hakozaki-gū |publisher=Hakozaki-gū |access-date=2017-09-09}}</ref><ref name="tsuchida">{{Cite journal |ja |author=Mitsuyoshi Tsuchida |year=1972 |title=On the architecture of the main sanctuary of Hakozaki Hachimangū |journal=Transactions of the Architectural Institute of Japan |volume=195 |pages=69-74,98 |publisher=Architectural Institute of Japan |crid=1390001205537700736| doi=10.3130/aijsaxx.195.0_69}}</ref>; the official site introduces the theory that it was established in {{ill|Engi (era)|de|Engi (Ära)|fa|انگی (دوره)|fr|Ère Engi|ia|Engi (era)|id|Engi|ja|延喜|ko|엔기|ru|Энги (нэнго)|simple|Engi (era)|sr|Енги (ера)|tr|Engi (dönem)|uk|Енґі (ненґо)|zh|延喜|zh_yue|延喜|qid=Q1374325}} 21<ref name="history" />. On June 21 of Engi 21 ({{ill|921|ab|921|af|921|am|921 እ.ኤ.አ.|an|921|ar|921|ary|921|ast|921|avk|921|az|921|azb|۹۲۱ (میلادی)|bcl|921|be|921|be_x_old|921|bg|921|bn|৯২১|bpy|মারি ৯২১|br|921|bs|921.|ca|921|cdo|921 nièng|ce|921 шо|ceb|921|ckb|٩٢١|crh|921|cs|921|csb|921|cv|921|cy|921|da|921|de|921|el|921|eml|921|eo|921|es|921|et|921|eu|921|fa|۹۲۱ (میلادی)|fi|921|fo|921|fr|921|fy|921|ga|921|gan|921年|gd|921|gl|921|he|921|hi|921|hr|921.|ht|921 (almanak jilyen)|hu|921|hy|921|id|921|ilo|921|io|921|is|921|it|921|ja|921年|jv|921|ka|921|kaa|921|kk|921 жыл|ko|921년|la|921|lb|921|lij|921|lmo|921|lt|921 m.|lv|921. gads|map_bms|921|mdf|921|mg|921|mhr|921|mi|921|mk|921|mr|इ.स. ९२१|mrj|921 и|ms|921|mzn|۹۲۱|nah|921|nap|921|nds|921|new|सन् ९२१|nl|921|nn|921|no|921|nrm|921|nso|921|oc|921|or|୯୨୧|os|921-æм аз|pl|921|pnb|921|pt|921|qu|921|ro|921|ru|921 год|rue|921|sa|९२१|scn|921|sd|921ع|se|921|sh|921.|shn|921|si|921|sk|921|sl|921|smn|921|sq|921|sr|921|su|921|sv|921|sw|921|tg|Соли 921|th|พ.ศ. 1464|tk|921|tl|921|tly|921|tr|921|tt|921 ел|uk|921|ur|921ء|uz|921|vec|921|vi|921|vls|921|war|921|wuu|921年|xmf|921|zh|921年|zh_min_nan|921 nî|zh_yue|921年|qid=Q30102}}), there was an oracle from {{ill|Hachiman|Q261637|qid=Q261637}}, and it began when Ōjin, Jingū, and Tamayori-hime were enshrined by relocating {{ill|UNKNOWN|lt=Daibumiya}} in {{ill|Honami district|Q11597062|qid=Q11597062}}, Chikuzen Province, to land facing the {{ill|Genkai Sea|Q498047|qid=Q498047}}<ref name="history" />. In {{ill|Enchō|Q1327274|qid=Q1327274|lt=Enchō}} 1 ({{ill|923|Q30108|qid=Q30108}}), it was transferred to the current site<ref name="history" />. In the '{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}' it is listed as “Hachiman Daibosatsu Hakozaki-gū, one seat,” and ranked as a {{ill|Myōjin Taisha|fr|Myōjin Taisha|ja|名神大社|simple|Myōjin Taisha|zh|名神大社|qid=Q9610964}}.
@@ -122,7 +121,7 @@ Under the {{ill|Q712534|lt=modern shrine rank system}}, it was ranked as a prefe
 |}
 </div></div>
 
-=== Precincts ===
+== Precincts ==
 The main buildings and facilities in the precincts are as follows.
 * Main sanctuary and worship hall
 ** Important Cultural Property. Founded in June 921 (Engi 21) by Fujiwara no Mazai. Repeatedly destroyed and rebuilt multiple times<ref name="tsuchida" />. It fell into ruin due to warfare in the {{ill|Sengoku period|ar|فترة سينغوكو|arz|فتره سينجوكو|be|Перыяд Сэнгоку|bg|Сенгоку|bn|সেনগোকু যুগ|bo|སེན་གོའི་དུས་མཚམས་|ca|Període Sengoku|ckb|سەردەمی سێنگۆکو|cs|Období Sengoku|de|Sengoku-Zeit|eo|Epoko Sengoku|es|Período Sengoku|et|Sengoku ajastu|eu|Sengoku aroa|fa|دوره سنگوکو|fi|Sengoku-kausi|fr|Époque Sengoku|ga|Tréimhse Sengoku|glk|سنگؤکۊ زمات|he|תקופת סנגוקו|hu|Hadakozó fejedelemségek kora (Japán)|id|Zaman Sengoku|is|Sengoku-öldin|it|Periodo Sengoku|ja|戦国時代 (日本)|ka|სენგოკუს პერიოდი|kk|Сэнгоку дәуірі|ko|센고쿠 시대|lt|Sengoku laikotarpis|ms|Zaman Sengoku|nl|Sengokuperiode|no|Sengoku-perioden|pl|Sengoku (okres)|pt|Período Sengoku|ro|Perioada Sengoku|ru|Период Сэнгоку|sh|Sengoku razdoblje|simple|Sengoku period|sk|Obdobie Sengoku|sq|Periudha Sengoku|sr|Сенгоку период|sv|Sengoku|th|ยุคเซ็งโงกุ|tl|Panahong Sengoku|tr|Sengoku Dönemi|uk|Період Сенґоку|ur|سینگوکو دور|uz|Sengoku davri|vi|Thời kỳ Chiến Quốc (Nhật Bản)|wuu|战国时代（日本）|zh|战国时代 (日本)|zh_min_nan|Sengoku sî-tāi|zh_yue|戰國時代 (日本)|qid=Q204023}}, and was rebuilt in {{ill|Tenbun|ckb|تێنبون|fa|تنبون|fi|Tenbun-kausi|fr|Ère Tenbun|it|Tenbun|ja|天文 (元号)|ko|덴분|pt|Tenbun|ru|Тэмбун|simple|Tenbun|sr|Тенбун|sv|Tenbun|tr|Tenbun|zh|天文 (日本)|qid=Q1192853|lt=Tenbun}} 15 (1546) by Dazai Daini {{ill|Ōuchi Yoshitaka|Q1065163|qid=Q1065163}}<ref name="tsuchida" />. The main sanctuary is 46 tsubo, {{ill|Nagare-zukuri|Q210684|qid=Q210684}} style with {{ill|UNKNOWN|lt=hiwada-buki}} roof, with side carriage porches<ref name="keidai">{{Cite web |ja |url=http://www.hakozakigu.or.jp/keidai/ |title=Guide to the precincts |publisher=Hakozaki-gū |access-date=2017-09-09}}</ref>. The worship hall is {{ill|Kirizuma-style|Q13308575|qid=Q13308575}} with cypress bark roofing<ref name="keidai" />, double {{ill|kōryō|Q124421222|qid=Q124421222}}, and {{ill|kaerumata|Q123117911|qid=Q123117911}}.
@@ -150,7 +149,7 @@ Tall Stone Lantern of Hakozaki Shrine 55 Hakozaki-2-chōme Higashi-ku Fukuoka Ci
 Hakozaki Shrine Hamamiya 55 Hakozaki-2-chōme Higashi-ku Fukuoka City 20221117.jpg|Hamamiya
 </gallery>
 
-=== Major festivals ===
+== Major festivals ==
 * January 3: Tamaseseri (Ball-Grabbing Festival)<ref>{{Cite web |ja |url=http://www.hakozakigu.or.jp/omatsuri/tamatorisai/ |title=Tamaseseri |publisher=Hakozaki-gū |access-date=2017-09-09}}</ref>
 ** Men in {{ill|Fundoshi|Q976963|qid=Q976963|lt=shimekomi}} attire struggle over a wooden sacred jewel (said to grant good fortune) and offer it into the main hall.
 * January 11: Jōtenji Ichizan Hōsaishiki<ref>{{Cite web |ja |url=http://www.hakozakigu.or.jp/omatsuri/jotenjiichizanhousaishiki/ |title=Jōtenji Ichizan Hōsaishiki |publisher=Hakozaki-gū |access-date=2017-09-09}}</ref>
@@ -167,8 +166,8 @@ Hakozaki Shrine Hamamiya 55 Hakozaki-2-chōme Higashi-ku Fukuoka City 20221117.j
 * Day of Tsuchinoe nearest autumn equinox: Autumn Shani-sai (Oshioi-tori)<ref>{{Cite web |ja |url=http://www.hakozakigu.or.jp/omatsuri/shukishanichisai/ |title=Autumn Shani-sai / Oshioi-tori |publisher=Hakozaki-gū |access-date=2017-09-09}}</ref>
 * December 31: Oena Festival (Great Purification, sea-cucumber mochi pounding)<ref>{{Cite web |ja |url=http://www.hakozakigu.or.jp/omatsuri/ |title=Festivals |publisher=Hakozaki-gū |access-date=2017-09-09}}</ref>
 
-=== Cultural properties ===
-=== Important Cultural Properties (national) ===
+== Cultural properties ==
+== Important Cultural Properties (national) ==
 * Main sanctuary - Built in late Muromachi period (1545). Nine-bay nagare-zukuri, cypress bark roof. Designated May 27, 1907.
 * Worship hall - Built around late Muromachi period (1545). Four bays wide, one bay deep, single-story, kirizuma-zukuri, cypress bark roof. Designated May 27, 1907.
 * Rōmon gate - Built in Azuchi–Momoyama period (1573–1614). Three-bay one-door rōmon, irimoya-zukuri, cypress bark roof. Designated April 17, 1902.
@@ -181,7 +180,7 @@ Hakozakigu02.jpg|Stone first torii
 Hakozakigu03.jpg|Plaque on rōmon
 Hakozaki-miya090806b.jpg |Hako-matsu
 </gallery>
-=== Fukuoka Prefecture designated tangible cultural properties ===
+== Fukuoka Prefecture designated tangible cultural properties ==
 * Origin account of Hakozaki Hachimangū, upper/lower 2 scrolls
 * Venerated image of Emperor Kameyama (wood carving) - bronze statue stands in {{ill|Higashi-kōen|Q11526062|qid=Q11526062|lt=Higashi Park}}.
 * Tachi, attributed {{ill|Sanjō Munechika|Q11355828|qid=Q11355828|lt=Munechika}}
@@ -194,10 +193,10 @@ Hakozaki-miya090806b.jpg |Hako-matsu
 * Hakozaki-gū documents
 * Mongol anchor stone
 
-=== Fukuoka Prefecture designated tangible folk cultural properties ===
+== Fukuoka Prefecture designated tangible folk cultural properties ==
 * Prohibition stele of Hakozaki-gū
 * Illustration of Hakozaki-gū autumn festival procession
-=== Fukuoka City designated cultural properties ===
+== Fukuoka City designated cultural properties ==
 * Copy of Goyuza documents
 * Itabi stele with Sanskrit inscription dated Kentoku
 * Sutra tiles excavated from Hakozaki-gū
@@ -208,21 +207,21 @@ Hakozaki-miya090806b.jpg |Hako-matsu
 Nan Huairen cannon01.jpg|Cannon of Nan Huairen
 </gallery>
 
-=== Imperial-plaque postage stamp of Hakozaki-gū ===
+== Imperial-plaque postage stamp of Hakozaki-gū ==
 {{double image aside|right|Tejikoku10sen.JPG|120|Inperf 10sen stamp in 1945.JPG|110|Imperial-plaque stamp (1945)<br/>There were perforated (left) and imperforate (right) versions.}}
 {{main|Tekikoku Kōfuku stamp}}
 As noted above, during the Mongol invasions {{ill|Emperor Kameyama|Q360972|qid=Q360972}} prayed for “submission of enemy countries,” and that plaque hangs on the rōmon. In {{ill|1945|Q5240|qid=Q5240}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 20), late in the {{ill|Greater East Asia War|Q3846875|qid=Q3846875}} ({{ill|World War II|Q362|qid=Q362}}), the {{ill|Ministry of Communications (Japan)|Q11639479|qid=Q11639479}} (now {{ill|Japan Post Service|Q11509260|qid=Q11509260}}) issued a {{ill|Definitive stamp|Q1002873|qid=Q1002873}} using this plaque design to boost morale and pray for victory. Due to material shortages it was printed in black only, and imperforate versions were also made. However, before it reached post offices nationwide, the war ended, and in {{ill|1947|Q5263|qid=Q5263}} (Shōwa 22), the “Ordinance prohibiting use of postage stamps and postcards whose designs relate to militarism, Shinto, etc.” (1947 Teishin Ministry Ordinance No. 24<ref>{{Cite web |ja |url=https://elaws.e-gov.go.jp/document?lawid=322M40001000024 |title=Ordinance prohibiting use of stamps and postcards whose designs relate to militarism, Shinto, etc. |website=e-Gov law search |access-date=2021-04-21}}</ref>; an ordinance on {{ill|UNKNOWN|lt=purged stamps}}) banned it from postal use. Even as of {{ill|2021|Q49628|qid=Q49628}} (Reiwa 3), this stamp can still be exchanged for current stamps/postcards at {{ill|Tokyo Central Post Office|Q5153849|qid=Q5153849}} in {{ill|Chiyoda, Tokyo|Q214051|qid=Q214051}}, {{ill|Tokyo|Q1490|qid=Q1490}}.
 {{See also|Definitive stamps of Japan#Validity of Japanese stamps|Japanese postage stamps#Overview}}
 
-=== In works ===
+== In works ==
 * Noh play '{{ill|UNKNOWN|lt=Karafune}}'
 * Noh play 'Hakozaki'
 
-=== Access ===
-=== Location ===
+== Access ==
+== Location ==
 * {{ill|Fukuoka Prefecture|Q123258|qid=Q123258}}{{ill|Fukuoka|Q26600|qid=Q26600}}{{ill|Higashi-ku, Fukuoka|ceb|Higashi Ku (subdistrito sa Hapon, Fukuoka-ken)|cs|Higaši-ku (Fukuoka)|es|Higashi-ku (Fukuoka)|fa|هیگاشی-کو، فوکوئوکا|fi|Higashi-ku (Fukuoka)|fr|Higashi-ku (Fukuoka)|id|Higashi-ku, Fukuoka|it|Higashi-ku (Fukuoka)|ja|東区 (福岡市)|ko|히가시구 (후쿠오카시)|pl|Higashi (Fukuoka)|th|เขตฮิงาชิ (ฟูกูโอกะ)|tr|Higashi, Fukuoka|ur|ہیگاشی وارڈ، فوکوکا|vi|Higashi, Fukuoka|zh|東區 (福岡市)|zh_yue|東區 (福岡市)|qid=Q1206659|lt=Higashi Ward}}{{ill|Hakozaki|ja|箱崎 (福岡市)|qid=Q11603321|lt=Hakozaki}} 1-22-1<ref name="access">{{Cite web |ja |url=http://www.hakozakigu.or.jp/access/ |title=Access guide |publisher=Hakozaki-gū |access-date=2017-09-09}}</ref>
 
-=== Transportation ===
+== Transportation ==
 {{定義リスト2
 | {{underline|Rail}} |
 * Nearest station: {{ill|Hakozaki Line|Q1073881|qid=Q1073881}} {{ill|Hakozaki-Miyamae Station|Q4357205|qid=Q4357205}} (3-minute walk from Exit 1)<ref name="access" />
@@ -235,25 +234,25 @@ As noted above, during the Mongol invasions {{ill|Emperor Kameyama|Q360972|qid=Q
 * 1.7 km from {{ill|Route 1 Kashi Line|Q3866944|qid=Q3866944}}{{ill|Higashihama Entrance/Exit|Q3866942|qid=Q3866942}}. Parking available<ref name="keidai" />
 }}
 
-=== Footnotes ===
+== Footnotes ==
 {{脚注ヘルプ}}
-=== Notes ===
+== Notes ==
 {{columns-list|2|{{Notelist}}}}
-=== References ===
+== References ==
 {{columns-list|2|{{Reflist}}}}
 
-=== Bibliography ===
+== Bibliography ==
 *{{Cite book|ja |title=筥崎宮誌 |publisher=官幣大社筥崎宮社務所 |year=1928|ref={{sfnRef|筥崎宮誌|1928}}}}
 * {{Cite book |ja |author=Yasutsu Motohiko, Umeda Yoshihiko (eds./supervisors) |title=Shinto Dictionary |publisher=Jinja Shinpōsha |year=1968 |id={{JP番号|68014140}} |pages=46-47}}
 * {{Cite book |ja |editor=Shirai Eiji, Toki Masanori |title=c |publisher={{ill|Tōkyōdō Shuppan|Q11524645|qid=Q11524645}} |date=1979-12 |id={{JP番号|80010321}} |page=275}}
 * {{Cite book |ja |author=Ueyama Shunpei et al. |title=Comprehensive Survey of Japanese “Shrines” |publisher={{ill|Shin Jinbutsu Ōraisha. "Rekishi Dokuhon" Henshūbu|Q11501312|qid=Q11501312}} |date=1992-10 |isbn=4-404-01957-2 |pages=258-259}}
 * {{Cite book |ja |title=Book of Shinto: Esoteric ritual world where the eight million gods gather |publisher={{ill|UNKNOWN|lt=Gakken}} |series=New sight mook |year=1992 |id={{NDLSearch|R100000001-I2611B10195198}} |page=225}}
 
-=== Related items ===
+== Related items ==
 * {{ill|Hakozaki Shrine|Q11603334|qid=Q11603334}}
 * {{ill|Tekikoku Kōfuku stamp|Q133756638|qid=Q133756638}}
 
-=== External links ===
+== External links ==
 {{Commonscat}}
 {{Osm box|r|10406513}}
 * {{Official website|url=https://www.hakozakigu.or.jp/|name=Hakozaki-gū Official Website}}
@@ -262,8 +261,6 @@ As noted above, during the Mongol invasions {{ill|Emperor Kameyama|Q360972|qid=Q
 
 {{神道 横}}
 {{Normdaten}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Hakozaki Shrine]][[Category:Shikinaisha|Hakozaki Shrine]][[Category:Shikinaisha|Hakozaki Shrine]][[Category:Shikinaisha in Chikuzen Province]]
 [[Category:Kanpei Taisha]]
 [[Category:Beppyo shrines]]
@@ -283,4 +280,5 @@ As noted above, during the Mongol invasions {{ill|Emperor Kameyama|Q360972|qid=Q
 [[Category:元寇]]
 [[Category:箱崎 (福岡市)]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

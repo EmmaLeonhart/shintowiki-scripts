@@ -16,7 +16,7 @@
 | deity = {{ill|Ame-no-Tajikarao|lt=Ame-no-Tajikarao|en|Ame-no-Tajikarao|fr|Tajikarao|it|Ame-no-Tajikarao|ja|アメノタヂカラオ|ko|아메노타지카라오|ru|Амэ-но Тадзикарао|simple|Ame-no-Tajikarao|zh|天手力男神|qid=Q849412}}
 }}
 
-{{nihongo|'''Tejikarao Shrine'''|手力雄神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
+
 
 [[EN:Tejikarao Shrine]]
 [[FR:Tejikarao-jinja]]
@@ -24,7 +24,6 @@
 
 {{wikidata link|Q3517214|en|Tejikarao Shrine|fr|Tejikarao-jinja|ja|手力雄神社 (岐阜市)|check_date=2026-05-26}}
 
-== Japanese content ==
 {{神社
 |名称= Tejikarao Shrine
 |画像=[[File:Tejikara-O-jinjya Gifu2008-1.jpg|250px]]<br />Torii and worship hall
@@ -39,11 +38,11 @@
 |地図= {{Location map|Japan Gifu|label=Nakagawa Shrine|position=top|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Tejikarao Shrine''' (てぢからおじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Gifu City, Gifu Prefecture.
+{{nihongo|'''Tejikarao Shrine'''|手力雄神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Gifu City, Gifu Prefecture. {{nihongo|'''Tejikarao Shrine'''|手力雄神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
 
 It is regarded as the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} Hinasumori Shrine of Atsumi District, {{ill|Mino Province|Q864156|qid=Q864156}}, though there is also the view identifying {{ill|Hinamori Shrine|Q11547446|qid=Q11547446}} in the same city.
 
-=== History ===
+== History ==
 According to shrine tradition, it was enshrined in Jōgan 2 ({{ill|860|Q24714|qid=Q24714}})<ref name="gifu">{{Cite web|ja|title=Gifu City Plan for Maintaining and Improving Historical Scenic Character|publisher=Gifu City|url=https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/005/568/keikaku2r40331_s.pdf|accessdate=2023-02-04|page=76}}</ref>.
 
 In {{ill|1600|Q6720|qid=Q6720}} ({{ill|Keichō|Q1328185|qid=Q1328185}} 5), during the {{ill|Battle of Sekigahara|Q234188|qid=Q234188}} (prelude: {{ill|Battle of Komeno|Q11604415|qid=Q11604415}}), fighting in the area burned most of the precincts<ref name="gifu"/>.
@@ -52,17 +51,17 @@ Main sanctuary rebuilt in {{ill|1616|Q6788|qid=Q6788}} (Genna 2), heiden in 1620
 
 In {{ill|1871|Q7746|qid=Q7746}} it became {{ill|UNKNOWN|lt=Gōsha}}. On Oct. 18, {{ill|1952|Q5272|qid=Q5272}}, designated {{ill|Kinpei-sha|Q119929592|qid=Q119929592}} by Gifu Prefecture Shrine Office.
 
-=== Precincts and surroundings ===
+== Precincts and surroundings ==
 * Main sanctuary / heiden / worship hall
 * Shrine office
 * First torii
 * Second torii (stone)
 * Third torii (vermilion)
 
-=== Main rites ===
+== Main rites ==
 Spring grand festival is famous as a “fire festival” where men carry a mikoshi loaded with gunpowder and fireworks through the precincts while showered with sparks. It has over 300 years of history and is designated Important Intangible Folk Cultural Property of Gifu Prefecture<ref name="gifuken bunkazai">{{Cite web|ja|url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/mumin/gifusi/tejikarahimaturi.html |title=Tejikarao Shrine Fire Festival |publisher=Gifu Prefecture |accessdate=2013-04-20}}</ref>.
 
-=== Major annual events ===
+== Major annual events ==
 ; Grand festivals
 * Feb 22: Kinen-sai, Kayuzue rite
 * 2nd Saturday of April: Spring grand festival ({{ill|Tejikara Fire Festival|Q11496921|qid=Q11496921}})
@@ -81,7 +80,7 @@ Spring grand festival is famous as a “fire festival” where men carry a mikos
 * Dec 31: New Year’s Eve festival
 * 1st and 15th monthly: Tsukinami-sai
 
-=== Cultural properties ===
+== Cultural properties ==
 ; Gifu Prefecture designated
 * Tejikarao Shrine Fire Festival (Important Intangible Folk Cultural Property)
 
@@ -89,28 +88,26 @@ Spring grand festival is famous as a “fire festival” where men carry a mikos
 * Wooden monk-form deity statue (sculpture)
 * Sacred sake jar (craft)
 
-=== Access ===
+== Access ==
 * About 5 min south on foot from {{ill|Tejikara Station|id|Stasiun Tejikara|ja|手力駅|jv|Setatsiyun Tejikara|ko|데지카라역|zh|手力站|qid=Q7695230}} (Meitetsu Kakamigahara Line)
 
-=== Bibliography ===
+== Bibliography ==
 * Akira Kimura (ed.), 'Tour of Major Shrines of Gifu Prefecture' (1997)
 * Tejikarao Shrine (ed.), '1150th Anniversary Reconstruction Commemorative Volume' (2011)
 
-=== Footnotes ===
+== Footnotes ==
 {{Reflist|2}}
 
-=== Related items ===
+== Related items ==
 * {{ill|Tejikaraō Shrine (Kakamigahara)|Q11496922|qid=Q11496922}}
 * {{ill|Tejikarao Shrine (Ōgaki)|Q134888254|qid=Q134888254}}
 
-=== External links ===
+== External links ==
 * [https://www.gifu-jinjacho.jp/syosai.php?shrno=951&shrname=%E2%98%85%E6%89%8B%E5%8A%9B%E9%9B%84%E7%A5%9E%E7%A4%BE%E2%98%85 Tejikarao Shrine] - Gifu Prefecture Shrine Office
 
 {{神道 横}}
 {{Normdaten}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Tejikarao Shrine]][[Category:Shikinaisha|Tejikarao Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Mino Province]]
 [[Category:Shinto shrines in Gifu]]
@@ -119,4 +116,5 @@ Spring grand festival is famous as a “fire festival” where men carry a mikos
 [[Category:Prefecturally designated intangible folk cultural property]]
 [[Category:Municipal Tangible Cultural Properties in Gifu Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

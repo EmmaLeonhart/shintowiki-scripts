@@ -16,14 +16,13 @@
 | deity = {{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama|de|Ukanomitama|en|Ukanomitama|eo|Ukanomitama|fr|Uka-no-Mitama|ja|ウカノミタマ|mni|ꯎꯀꯅꯣꯃꯤꯇꯃ|ru|Ука-но митама|simple|Ukanomitama|sv|Ukanomitama|th|อูกาโนมิตามะ|zh|宇迦之御魂神|qid=Q3080728}}
 }}
 
-{{nihongo|'''Ebumi Shrine'''|江文神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamashiro Province]].
+
 
 {{commons category|Category:Ebumi Shrine}}
 [[ja:江文神社]]
 
 {{wikidata link|Q11551131|commons|Category:Ebumi Shrine|ja|江文神社|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shinto shrine
 |Name = Ebumi Shrine
 |Image = [[File:Ebumi Shrine.jpg|Ebumi Shrine|270px]]<br />Worship hall
@@ -40,37 +39,37 @@
 |Map = {{Location map|Japan Kyoto|label=Ebumi Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Ebumi Shrine''' (えぶみじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Ōharanomura-chō, Sakyo Ward, {{ill|Kyoto|Q34600|qid=Q34600}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. An annual grand festival is held every year on {{ill|May 5|Q2550|qid=Q2550}}. The shrine stands beside the mountain pass road leading from {{ill|Ōhara|Q3594017|qid=Q3594017|lt=Ōhara}} to Shizuhara via {{ill|Ebumi Pass|Q11551130|qid=Q11551130}}.
+{{nihongo|'''Ebumi Shrine'''|江文神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Ōharanomura-chō, Sakyo Ward, {{ill|Kyoto|Q34600|qid=Q34600}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. An annual grand festival is held every year on {{ill|May 5|Q2550|qid=Q2550}}. The shrine stands beside the mountain pass road leading from {{ill|Ōhara|Q3594017|qid=Q3594017|lt=Ōhara}} to Shizuhara via {{ill|Ebumi Pass|Q11551130|qid=Q11551130}}. {{nihongo|'''Ebumi Shrine'''|江文神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamashiro Province]].
 
-=== Enshrined deity ===
+== Enshrined deity ==
 * {{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728|qid=Q3080728|lt=Ukanomitama-no-Kami}}
 
-=== History ===
+== History ==
 The date of foundation is unknown. One theory identifies it with “{{ill|UNKNOWN|lt=Itada Shrine}}” of {{ill|Otagi district|ja|愛宕郡|zh|愛宕郡|qid=Q10981345}}, {{ill|Yamashiro Province|cs|Provincie Jamaširo|de|Provinz Yamashiro|es|Provincia de Yamashiro|fa|ولایت یاماشیرو|fr|Province de Yamashiro|gl|Provincia de Yamashiro|hak|Yamashiro-koet|id|Provinsi Yamashiro|it|Yamashiro (provincia)|ja|山城国|ko|야마시로국|lt|Jamaširo žemė|ms|Yamashiro Province|nl|Yamashiro (provincie)|pt|Província de Yamashiro|ru|Ямасиро (провинция)|simple|Yamashiro Province|sk|Jamaširo (provincia)|sr|Провинција Јамаширо|tr|Yamashiro (vilayet)|uk|Провінція Ямашіро|wuu|山城国|zh|山城國|zh_min_nan|Yamasiro-kok|zh_yue|山城國|qid=Q749276}}, listed in the '{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}', making it a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}{{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}}<ref>‘{{ill|Engishiki Jinmyōchō Studies|Q11588824|qid=Q11588824}}’.</ref>, but this view is generally rejected<ref>The prevailing theory assigns it to “Itada Shrine,” a subsidiary shrine within the grounds of {{ill|Sudō Shrine|Q11477104|qid=Q11477104}} in Kamitakano, Sakyo Ward.</ref>.
 
 According to shrine tradition, it was first established as the {{ill|Chinjugami|Q97479976|qid=Q97479976}} of {{ill|Sanzen-in|Q1072538|qid=Q1072538}}, or alternatively was enshrined through the {{ill|UNKNOWN|lt=kanjō}} of {{ill|Ennin|Q732282|qid=Q732282}} (Jikaku Daishi), the {{ill|Zasu|Q11486140|qid=Q11486140}} of {{ill|Enryaku-ji|Q917195|qid=Q917195}}, and thus had close ties to {{ill|Sannō Ichijitsu Shintō|Q4407806|qid=Q4407806}}. Another account holds that the deities once worshiped on the summit of {{ill|UNKNOWN|lt=Mount Ebumi}} (now {{ill|UNKNOWN|lt=Mount Konpira}}) were transferred to a newly built shrine building at the mountain’s foot. The shrine prospered during the medieval period, but is said to have declined due to the impact of {{ill|Oda Nobunaga|Q171411|qid=Q171411}}’s {{ill|Siege of Mount Hiei|Q10748887|qid=Q10748887|lt=campaign against Mount Hiei}}.
 
 It is the {{ill|Ujigami|Q767655|qid=Q767655}} (tutelary shrine) of the eight towns of {{ill|Ōhara|Q3594017|qid=Q3594017|lt=Ōhara}}. Originally, it was a {{ill|Shinbutsu-shūgō|Q2279088|qid=Q2279088}} {{ill|UNKNOWN|lt=jingū-ji}} known as '''Bishamondō Ebumi-dera'''.
 
-=== Subsidiary shrines ===
+== Subsidiary shrines ==
 * Shina-tsuhiko Shrine ({{ill|Shinatsuhiko|Q1073925|qid=Q1073925|lt=Shinatsuhiko-no-Mikoto}} / Hattori deity)
 * Kagutsuchi Shrine ({{ill|UNKNOWN|lt=Kagutsuchi-no-Kami}} / {{ill|Iimichi Shrine|Q11666695|qid=Q11666695|lt=Mount Iidō deity}} / {{ill|Hachiman shrine|fa|معبد هاچیمان|fr|Sanctuaire Hachiman|it|Santuario di Hachiman|ja|八幡宮|simple|Hachiman shrines|vi|Đền thờ thần Hachiman|zh|八幡宮|qid=Q11390939}})
 * Mansan Shrine ({{ill|UNKNOWN|lt=Atago deity}} / {{ill|Goryō|Q3273210|qid=Q3273210|lt=goryō spirits}} / {{ill|Kashima Jingū|Q706499|qid=Q706499|lt=Kashima deity}})
 * Tenmangū Shrine ({{ill|Tenmangū|Q798838|qid=Q798838}} / {{ill|Inari Ōkami|Q719665|qid=Q719665}})
 * (Located outside the precincts, in Ōhara Ōnagase-chō) Umenomiya Shrine
 
-=== Access ===
+== Access ==
 * From the Nomura Wakare {{ill|Bus stop|Q953806|qid=Q953806|lt=bus stop}} on {{ill|Kyoto Bus|Q11374813|qid=Q11374813}}, walk 500 m west.
 * The Kyoto Bus “Ebumi Shrine-mae” bus stop is served by the {{ill|No. 55 route|Q11374815|qid=Q11374815|lt=No. 55 route}} with three round trips per day, as well as the No. 95 route, which runs only once on {{ill|Vernal Equinox Day|Q1049141|qid=Q1049141}}. Because service is limited, visitors using public transportation should also consider the access method above.
 
-=== Notes ===
+== Notes ==
 {{reflist}}
 
-=== References ===
+== References ==
 * “Kyoto–Yamashiro Temple and Shrine Encyclopedia,” {{ill|Heibonsha|Q11482108|qid=Q11482108}}, 1997
 * “Report on the Investigation of Shikinaisha,” Vol. 1, Kyoto and Kinai 1, {{ill|UNKNOWN|lt=Kōgakkan University Press}}, 1979
 
-=== Related items ===
+== Related items ==
 * {{ill|Ōhara Zakone|Q11433198|qid=Q11433198}}
 * {{ill|Thirty Guardian Deities|Q11354495|qid=Q11354495}}
 
@@ -78,8 +77,6 @@ It is the {{ill|Ujigami|Q767655|qid=Q767655}} (tutelary shrine) of the eight tow
 {{shinto-stub}}
 {{Buddhism-stub}}
 {{pref-stub|pref=Kyoto Prefecture}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Ebumi Shrine]][[Category:Shikinaisha|Ebumi Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Yamashiro Province]]
 [[Category:Shinto shrines in Kyoto]]
@@ -92,4 +89,5 @@ It is the {{ill|Ujigami|Q767655|qid=Q767655}} (tutelary shrine) of the eight tow
 [[Category:Ohara (Kyoto)]]
 [[Category:History of Sakyo-ku, Kyoto]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

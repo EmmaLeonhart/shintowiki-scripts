@@ -29,7 +29,6 @@
 
 {{wikidata link|Q701414|commons|Category:Inaba-jinja|th|ศาลเจ้าอินาบะ|en|Inaba Shrine|eu|Inaba santutegia|fr|Inaba-jinja|ja|伊奈波神社|ko|이나바 신사|zh|伊奈波神社|grok=inaba_shrine|check_date=2026-05-29}}
 
-== Japanese content ==
 {{神社
  | 名称=伊奈波神社
  | 画像 =[[File:Inaba-jinja Gifu Japan03-r.jpg|250px]]<br />楼門<br />[[File:Inaba-jinja Gifu Japan05-r.jpg|250px]]<br />神門<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=250}}
@@ -48,19 +47,19 @@
 
 {{ill|2015|Q2002|qid=Q2002}}（{{ill|Heisei era|Q234510|qid=Q234510}}27年）{{ill|April 24|Q2529|qid=Q2529}}、「信長公のおもてなし」が息づく戦国城下町・岐阜 」の構成文化財として{{ill|Japan Heritage|Q18382798|qid=Q18382798}}に認定される<ref>{{Cite web|和書|url=https://japan-heritage.bunka.go.jp/ja/stories/story006/ |title=「信長公のおもてなし」が息づく戦国城下町・岐阜 |publisher=文化庁 |accessdate=2020-09-20 }}</ref>。
 
-=== 祭神 ===
+== 祭神 ==
 {{ill|Emperor Suinin|Q314850|qid=Q314850}}の第一皇子で、この地の開拓神である{{ill|Prince Inishikiirihiko|Q11372194|qid=Q11372194}}（いにしきいりひこのみこと）を主{{ill|Saijin|Q11591100|qid=Q11591100}}とし、妃の{{ill|UNKNOWN|lt=淳熨斗媛命}}（ぬのしひめのみこと）、母の{{ill|Hibasu-hime|Q8375821|qid=Q8375821}}（ひばすひめのみこと）、外祖父の彦多都彦命（ひこたつひこのみこと、{{ill|Inaba Kuni no Miyatsuko|Q85882968|qid=Q85882968}}の祖）、臣下の{{ill|Mononobe no Tokone|ja|物部十千根|qid=Q24885356|lt=物部十千根命}}（もののべのとちねのみこと）を配祀する。これらの神を伊奈波大神と総称する。
 
 社伝によれば、五十瓊敷入彦命は朝廷の命により奥州を平定したが、五十瓊敷入彦命の成功を妬んだ陸奥守豊益の讒言により、朝敵とされて現在の伊奈波神社の地で討たれたという。
 
-=== 歴史 ===
+== 歴史 ==
 社伝によれば、{{ill|Emperor Keikō|Q329723|qid=Q329723}}14年、{{ill|Takenouchi no Sukune|Q1073668|qid=Q1073668}}が{{ill|Mount Kinka (Gifu)|Q6921671|qid=Q6921671|lt=稲葉山}}北西の椿原（現在の{{ill|Gifu Park|Q5359350|qid=Q5359350}}内の丸山）に五十瓊敷入彦命を祀ったのに始まるとされる。{{ill|Jinshin War|Q2378252|qid=Q2378252}}の際に{{ill|Emperor Tenmu|Q335181|qid=Q335181}}が当社に戦勝を祈願したという。
 
 {{ill|Tenbun|Q1192853|qid=Q1192853|lt=天文}}8年（{{ill|1539|Q6479|qid=Q6479}}）、{{ill|Saitō Dōsan|Q1202670|qid=Q1202670}}が稲葉山に{{ill|Gifu Castle|Q1367052|qid=Q1367052|lt=稲葉山城}}を築城するにあたり、現在地に遷座した。この際、その地にあった物部十千根命を祀る物部神社を合祀し、稲葉山城の鎮守とした。以降も、岐阜の総産土神として篤い崇敬を受けた。明治6年に県社に列格し、昭和14年に国幣小社に昇格した。戦後の昭和27年7月1日に岐阜県神社庁より県神社庁長参向神社（{{ill|Kinpei-sha|Q119929592|qid=Q119929592}}）の指定（金3号）を受ける{{sfn|木村|1997|p=9}}。
 
 『{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}』では、美濃国厚見郡の神社として「伊奈波神社」の社名は記されていないが小社として「物部神社」の社名があり、これが当社に合祀された物部神社であるとされる。あるいは、当社自体が式内・物部神社であるとする説もある。『美濃国神名帳』には「正一位 伊奈波大神」「従五位下 物部明神」と記載されている。
 
-=== 施設 ===
+== 施設 ==
 明治24年の{{ill|1891 Mino–Owari earthquake|Q2351002|qid=Q2351002}}により殿宇を悉く焼失したが、翌年本殿を復興。そののち昭和4年から昭和15年にかけて{{ill|Kōzō Nihonmatsu|Q124481696|qid=Q124481696}}の設計により現在の社殿が建造された<ref>伊奈波神社奉賛会『伊奈波神社略史』伊奈波神社1941年。</ref>。
 * 鳥居（一の鳥居、二の鳥居）、遥拝所
 * 神橋
@@ -77,11 +76,11 @@
 * 境外摂社
 ** 丸山神社（丸山）
 
-=== 祭礼 ===
+== 祭礼 ==
 * 2月3日 - 節分祭。9時から20時に節分特別祈祷、18時から節分手筒煙火奉納（約110本の手筒煙火による厄払い）。
 * 4月5日<ref> 「年中行事事典」p56　1958年（昭和33年）5月23日初版発行　{{ill|Nishitsunoi Masayoshi|Q11629502|qid=Q11629502}}編　東京堂出版</ref> - 同市内の{{ill|Kogane Shrine|Q3198277|qid=Q3198277|lt=金神社}}（妃神・淳熨斗媛命を祀る）・{{ill|Kashimori Shrine|Q3193694|qid=Q3193694}}（子神・市隼雄命を祀る）と共同で行われ、{{ill|Gifu Matsuri|Q11471288|qid=Q11471288}}と呼ばれている。
 
-=== 文化財 ===
+== 文化財 ==
 ; 重要文化財（国指定）
 * 太刀 銘景依造<ref name="bunkazaiichiran">{{Cite web|和書|date=2012-04-06 |url=http://www.city.gifu.lg.jp/8875.htm |title=岐阜市内の指定等文化財一覧 |publisher=岐阜市 |accessdate=2013-04-26}}</ref>
 
@@ -90,27 +89,27 @@
 * 木造獅子頭<ref>{{Cite web|和書|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/kougeihin/gifusi/shishigashira.html |title=獅子頭 |publisher=岐阜県 |accessdate=2013-04-26}}</ref>
 * 美濃国第三宮因幡社本縁起<ref>{{Cite web|和書|date= |url=http://www.pref.gifu.lg.jp/kyoiku-bunka-sports/bunka-geijutsu/bunkazai-zuroku/bunkazai-zuroku/syoseki/gifusi/minokoku.html |title=美濃国第三宮因幡社本縁起 |publisher=岐阜県 |accessdate=2013-04-26}}</ref>2巻
 
-=== 岐阜市指定文化財 ===
+== 岐阜市指定文化財 ==
 
 * 稲葉城趾之図
 ; 岐阜市指定有形民俗文化財
 * 山車<ref name="bunkazaiichiran"/>4台
 
-=== 岐阜市指定無形民俗文化財 ===
+== 岐阜市指定無形民俗文化財 ==
 
 * 伊奈波神社祭礼に伴う岐阜まつり行事
 
-=== 御朱印 ===
+== 御朱印 ==
 岐阜市のまちづくり団体{{ill|ひとひとの会|Q85869381|qid=Q85869381}}によって企画され、{{ill|2019|Q25274|qid=Q25274}}（令和元年）11月現在岐阜県内の13箇所<ref name="kinnnogoshuin">{{ill|Kogane Shrine|Q3198277|qid=Q3198277}}、{{ill|玉性院|Q106836627|qid=Q106836627}}、{{ill|UNKNOWN|lt=岐阜信長神社}}、{{ill|Kōbu-ji Temple|Q124496461|qid=Q124496461}}、{{ill|Osshin-ji Temple|Q11369941|qid=Q11369941}}、伊奈波神社、{{ill|Gifu Castle|Q1367052|qid=Q1367052}}、{{ill|Tenryū-ji Temple|Q85879152|qid=Q85879152}}、{{ill|Soukyu-ji Temple|Q11451839|qid=Q11451839}}、{{ill|Gokokushi-ji|Q3109961|qid=Q3109961}}、{{ill|Shincho-ji Temple|Q11583625|qid=Q11583625}}、{{ill|Oniiwa Park|Q11673437|qid=Q11673437}}、{{ill|Gujō Hachiman Castle|Q2969384|qid=Q2969384}}の13箇所</ref>において行われている「金の御朱印」企画に参加しており、毎月最終金曜日限定で通常の御朱印とは異なる金をあしらった御朱印が発行されている<ref name="kinnnogoshuinaug">2019年8月29日付 中日新聞朝刊岐阜県版16面</ref><ref name="kinnnogoshuinnov">2019年11月29日付 中日新聞朝刊岐阜県版19面</ref>。
 
-=== アクセス ===
+== アクセス ==
 ; 公共交通機関（路線バス）
 : JR{{ill|Gifu Station|Q1144885|qid=Q1144885}}または{{ill|Meitetsu Gifu Station|Q1109902|qid=Q1109902}}から{{ill|Gifu Bus|Q5560101|qid=Q5560101|lt=岐阜バス}}｢N80高富｣行他、N系統の行先番号｢N32｣～｢N86｣の岐阜公園・長良橋方面行きおよび「市内ループ左回り」で約10分、『伊奈波通り』下車後徒歩で約7分。
 
 ; その他
 : JR岐阜駅より自転車で約20分。JR岐阜駅にてレンタルサイクルの利用が可能。
 
-=== 参考画像 ===
+== 参考画像 ==
 <gallery>
 ファイル:Inaba-jinja Gifu Japan01-r.jpg|鳥居
 ファイル:伊奈波神社 (岐阜市)-神橋から楼門を望むinabajinja002.jpg|'''神橋から楼門を望む'''
@@ -126,22 +125,22 @@
 ファイル:伊奈波神社 (岐阜市)-松尾神社inabajinja037.jpg|松尾神社
 </gallery>
 
-=== 脚注 ===
+== 脚注 ==
 
 {{Reflist|2}}
 
-=== 関連図書 ===
+== 関連図書 ==
 * 安津素彦・梅田義彦編集兼監修者『神道辞典』{{ill|Jinja Shinpō|Q11590705|qid=Q11590705}}社、1968年、11頁
 * {{ill|Eiji Shirai|Q11579387|qid=Q11579387}}・土岐昌訓編集『神社辞典』{{ill|Tōkyōdō Shuppan|Q11524645|qid=Q11524645}}、1979年、41頁
 
-=== 参考文献 ===
+== 参考文献 ==
 * {{cite book|和書|editor=木村照|title=岐阜県の主要神社巡り|publisher=長良天神社|date=1997年|ref={{sfnref|木村|1997}}}}
 
-=== 関連項目 ===
+== 関連項目 ==
 * {{ill|安宅車|Q11450543|qid=Q11450543}}
 * {{ill|Yahachi Jizo|Q48753225|qid=Q48753225}}
 
-=== 外部リンク ===
+== 外部リンク ==
 {{commonscat|Inaba-jinja}}
 * [http://www.inabasan.com 伊奈波神社]（公式サイト）
 ** {{Instagram|inaba_jinja}}
@@ -149,8 +148,6 @@
 {{神道 横}}
 {{Normdaten}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Inaba Shrine]][[Category:Shikinaisha|Inaba Shrine]][[Category:San-no-Miya]]
 [[Category:Shikinaisha in Mino Province]]
 [[Category:Shinto shrines in Gifu]]
@@ -176,4 +173,5 @@
 [[Category:Need translation]]
 [[Category:Need translation]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

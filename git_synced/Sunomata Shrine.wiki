@@ -15,14 +15,13 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Sunomata Shrine'''|墨俣神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
+
 
 {{commons category|Category:Sunomata-jinja}}
 [[ja:墨俣神社]]
 
 {{wikidata link|Q11429413|commons|Category:Sunomata-jinja|ja|墨俣神社|check_date=2026-05-26}}
 
-== Japanese content ==
 {{神社
  | 名称=Sunomata Shrine
  | 画像=[[File:Sunomata-jinja Ogaki 2025-12 ac (1).jpg|280px]]
@@ -36,23 +35,23 @@
  | 地図= {{Location map|Japan Gifu|label=Sunomata Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Sunomata Shrine''' (すのまたじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Sunomata, Gifu|Q7640962|qid=Q7640962}}, {{ill|Ōgaki|Q384926|qid=Q384926}}, {{ill|Gifu Prefecture|Q131277|qid=Q131277}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha}}. It is north of {{ill|Ogaki Municipal Sunomata Elementary School|Q11433783|qid=Q11433783}}.
+{{nihongo|'''Sunomata Shrine'''|墨俣神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in {{ill|Sunomata, Gifu|Q7640962|qid=Q7640962}}, {{ill|Ōgaki|Q384926|qid=Q384926}}, {{ill|Gifu Prefecture|Q131277|qid=Q131277}}. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha}}. It is north of {{ill|Ogaki Municipal Sunomata Elementary School|Q11433783|qid=Q11433783}}. {{nihongo|'''Sunomata Shrine'''|墨俣神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mino Province]].
 
-=== Enshrined deity ===
+== Enshrined deity ==
 * Sunomata Ōkami<ref name="岐阜県神社庁">[https://www.gifu-jinjacho.jp/syosai.php?shrno=2 Sunomata Shrine] Gifu Prefectural Shrine Association</ref>
 
-=== History ===
-=== Founding ===
+== History ==
+== Founding ==
 Founding period is unknown<ref name="墨俣町1956p414">Sunomata Town History Compilation Committee, 'History of Sunomata Town,' Sunomata Town, 1956, pp.414-416</ref>. In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, the enshrined deity is also "Sunomata Ōkami," but which deity this refers to is unclear. In the 'Mino no Kuni Jinmyōchō,' said to have been compiled in Tenkei/Tentoku years (938-961), it appears as "Junior Fifth Rank Lower, Sunomata Myōjin"<ref name="墨俣町1956p414"/>.
 
 Originally it was south of the Sunomata ferry crossing<ref name="墨俣町1956p414"/>. In Kyōhō 2 (1717), investigation by {{ill|Nangū Taisha|Q704967|qid=Q704967}} identified it with Sunomata Shrine in the Engishiki register<ref name="墨俣町1956p414"/>.
 
-=== Modern and contemporary ===
+== Modern and contemporary ==
 In 1873 (Meiji 6), it was ranked as gōsha under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}<ref name="墨俣町1956p414"/>.
 
 In the {{ill|Meiji era|lt=Meiji period|qid=Q3125096}}, river improvement work on the {{ill|Sai River (Gifu)|Q7399814|qid=Q7399814|lt=Saigawa}} began to reduce flood damage, and in 1935 (Shōwa 10) the shrine moved to its present location<ref name="すのまた旅">[https://gifuogaki.com/sunomata-history/ History] Sunomata Travel</ref>.
 
-=== Precinct ===
+== Precinct ==
 [[File:Sunomata-jinja Ogaki 2025-12 ac (3).jpg|thumb|Base of all-night lantern]]
 * Shrine buildings
 * Akiba Shrine - precinct shrine; history unclear<ref name="墨俣町1956p414"/>.
@@ -64,23 +63,21 @@ In the {{ill|Meiji era|lt=Meiji period|qid=Q3125096}}, river improvement work on
 Sunomata-jinja Ogaki 2025-12 ac (2).jpg|Precinct
 </gallery>
 
-=== Access ===
+== Access ==
 *5 minutes on foot from {{ill|Meihan Kintetsu Bus|Q11415818|qid=Q11415818}} Gikaki Line "Sunomata" stop
 **From {{ill|Ōgaki Station bus terminal|Q11433817|qid=Q11433817}} (south of {{ill|Ōgaki Station|Q871579|qid=Q871579}}), platform 2, bound for "{{ill|Gifu Shotoku Gakuen University|Q5560125|qid=Q5560125}}" / "South Gifu Distribution Center"
 *5 minutes on foot from {{ill|Gifu Bus|Q5560101|qid=Q5560101|lt=Gifu Bus}} Obusa-Sunomata Line "Sunomata" stop
 **From {{ill|JR Gifu Station Bus Terminal|Q11226229|qid=Q11226229}} (north of {{ill|Gifu Station|Q1144885|qid=Q1144885}}), platform 6, bound for "W65 Sunomata"
 **From {{ill|Meitetsu Gifu stop|Q11415771|qid=Q11415771}} (west of {{ill|Meitetsu Gifu Station|Q1109902|qid=Q1109902}}), platform 1, bound for "W65 Sunomata"
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== External links ===
+== External links ==
 {{Commonscat|Sunomata-jinja}}
 * [https://www.gifu-jinjacho.jp/syosai.php?shrno=2 Sunomata Shrine] Gifu Prefectural Shrine Association
 
 {{Shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Sunomata Shrine]][[Category:Shikinaisha|Sunomata Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Mino Province]]
 [[Category:Shinto shrines in Gifu Prefecture]]
@@ -89,4 +86,5 @@ Sunomata-jinja Ogaki 2025-12 ac (2).jpg|Precinct
 [[Category:History of Ogaki]]
 [[Category:Buildings and structures in Ogaki]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

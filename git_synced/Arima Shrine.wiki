@@ -16,13 +16,12 @@
 | deity = {{ill|Ame-no-Minakanushi|lt=Ame-no-Minakanushi|en|Ame-no-Minakanushi|es|Ame-no-minaka-nushi-no-kami|fa|آمه-نو-میناکانوشی|fr|Ame-no-Minakanushi|id|Ame-no-Minakanushi|it|Ame-no-Minakanushi|ja|天之御中主神|mni|ꯑꯃꯦ-ꯅꯣ-ꯃꯤꯅꯀꯅꯨꯁꯤ|pl|Amenominakanushi|ru|Амэноминакануси|simple|Ame-no-Minakanushi|uz|Ame-no Minakanusi|zh|天之御中主神|qid=Q2842779}}
 }}
 
-{{nihongo|'''Arima Shrine'''|有間神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 [[ja:有間神社]]
 
 {{wikidata link|Q11516720|ja|有間神社|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shrine
 |Name = Arima Shrine
 |Image = [[File:Arimaphoto.jpg|270px|Arima Shrine (August 1, 2012)]]<br />Haiden (worship hall)
@@ -38,18 +37,18 @@
 |Map = {{Location map|Kobe|label=Arima Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
-'''Arima Shrine''' (ありまじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Arino-chō, Kita Ward, Kobe City, Hyōgo Prefecture. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking}} it was classified as a {{ill|Gō-sha|Q134917316|qid=Q134917316}}. Its shrine crest is the “{{ill|Tomoe|Q1557435|qid=Q1557435|lt=triple tomoe}}.”
+{{nihongo|'''Arima Shrine'''|有間神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Arino-chō, Kita Ward, Kobe City, Hyōgo Prefecture. It is a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Shikinaisha}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking}} it was classified as a {{ill|Gō-sha|Q134917316|qid=Q134917316}}. Its shrine crest is the “{{ill|Tomoe|Q1557435|qid=Q1557435|lt=triple tomoe}}.” {{nihongo|'''Arima Shrine'''|有間神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * '''{{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Ōkami}}''' (おおなむちのおおかみ)
 * '''{{ill|Sukunabikona|Q3275687|qid=Q3275687|lt=Sukunahikona-no-Ōkami}}''' (すくなひこなのおおかみ)
 * '''{{ill|Ame-no-Minakanushi|Q2842779|qid=Q2842779|lt=Ame-no-Minakanushi-no-Ōkami}}''' (あめのみなかぬしのおおかみ) – Enshrined in {{ill|969|Q23708|qid=Q23708}} (1st year of {{ill|Anna (era)|Q1373003|qid=Q1373003}}).
 * '''{{ill|Kotoshironushi-no-Mikoto|lt=Kotoshironushi|Q8009611|qid=Q8009611|qid=Q8009611|lt=Kotoshironushi-no-Ōkami}}''' (ことしろぬしのおおかみ) – Enshrined in {{ill|1935|Q18658|qid=Q18658}} (10th year of {{ill|Shōwa era|Q327567|qid=Q327567}}) from {{ill|Miho Shrine|Q3313076|qid=Q3313076}}.
 
-=== Name ===
+== Name ==
 The origin of the shrine’s name is unclear, but “Arima” is considered an older spelling of “Arima.” According to the history of Arino Village, “ari” means mountain, and “arima” refers to an open place among mountains. It is also unclear when the place-name “Arima” came to be written as such. Because the shrine was once located in Sannō Valley before its relocation, it is said to have formerly been called '''Sannō-gū'''.
 
-=== History ===
+== History ==
 In ancient times, the shrine was enshrined in Sannō Valley of Narae Village in Yamaguchi Manor (Arima District). The date of foundation is unknown, but according to shrine tradition, the earliest record is that {{ill|Emperor Jomei|Q329761|qid=Q329761}} visited and worshiped here in September {{ill|631|Q31577|qid=Q31577}} (3rd year of Emperor Shōmu) when he traveled to {{ill|Arima Onsen|Q4790673|qid=Q4790673}}. It is believed that the shrine existed even before that.
 
 In {{ill|715|Q23528|qid=Q23528}} (1st year of {{ill|Reiki (era)|Q1373115|qid=Q1373115}}), a massive flood from {{ill|Mount Rokkō|Q462120|qid=Q462120}} caused the {{ill|UNKNOWN|lt=Arima River}} to overflow, washing away the shrine buildings. By divine oracle, the shrine was relocated to Nishio Village in {{ill|Arino|Q18700240|qid=Q18700240|lt=Arino Manor}}. A temporary shrine was established until construction was completed; the place where the sacred object was temporarily enshrined later became {{ill|UNKNOWN|lt=Tao Shrine}}. Additionally, {{ill|UNKNOWN|lt=Okaba Wakamiya Shrine}} was built at the site that served as the temporary resting place (otabisho) during the relocation.
@@ -62,7 +61,7 @@ As the general guardian shrine of {{ill|Settsu Province|Q864163|qid=Q864163}}’
 
 The shrine grove (chinju no mori) covers approximately 28,000 square meters and has been selected as one of the {{ill|Hyōgo’s 100 Selected Forests|Q11276623|qid=Q11276623}}. Of this, about 7,000 square meters of a grove of {{ill|Castanopsis|Q1065400|qid=Q1065400|lt=shii}} trees has been designated both as an environmental green conservation area by Hyōgo Prefecture and as a natural monument by Kobe City.
 
-=== Chronology ===
+== Chronology ==
 * Date unknown – Founded in Narae Village of {{ill|Yamaguchi|Q11466901|qid=Q11466901|lt=Yamaguchi Manor}}.
 * September {{ill|631|Q31577|qid=Q31577}} (3rd year of {{ill|Emperor Jomei|Q329761|qid=Q329761}}) – Imperial visit.
 * October {{ill|647|Q31111|qid=Q31111}} (3rd year of {{ill|Taika (era)|Q1077930|qid=Q1077930}}) – Visit by {{ill|Emperor Kōtoku|Q317980|qid=Q317980}}.
@@ -91,13 +90,13 @@ The shrine grove (chinju no mori) covers approximately 28,000 square meters and 
 * {{ill|2012|Q1990|qid=Q1990}} (Heisei 24) {{ill|June 24|Q2665|qid=Q2665}} – The shrine office is rebuilt.
 * {{ill|2015|Q2002|qid=Q2002}} (Heisei 27) – Marks the 1,300th anniversary of the relocation.
 
-=== Shrine buildings ===
-=== Main hall and worship hall ===
+== Shrine buildings ==
+== Main hall and worship hall ==
 The current {{ill|Shinto architecture|Q3080012|qid=Q3080012|lt=honden}} was rebuilt in 1796 and is of the {{ill|Nagare-zukuri|Q210684|qid=Q210684|lt=three-bay nagare-zukuri}} style. Formerly only the main hall and {{ill|Shinto architecture|Q3080012|qid=Q3080012|lt=heiden}} existed, but after World War II a reinforced-concrete {{ill|Shinto architecture|Q3080012|qid=Q3080012|lt=haiden}} was newly constructed.
 
 The kuroki torii standing before the worship hall was originally used for {{ill|Emperor Kōmei|Q299179|qid=Q299179}}’s {{ill|Daijosai|Q11433653|qid=Q11433653}} and was bestowed in {{ill|1849|Q7650|qid=Q7650}}; after it decayed, it was rebuilt in concrete.
 
-=== Subsidiary shrines within the precincts ===
+== Subsidiary shrines within the precincts ==
 * Kubomori Shrine ({{ill|Amaterasu|Q455602|qid=Q455602}})
 * Sarutahiko Shrine ({{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037|lt=Sarutahiko Ōkami}}) – Enshrined in 1900
 * Tenjin Shrine ({{ill|Sugawara no Michizane|ar|سوغاوارا نو ميتشيزانه|br|Sugawara no Michizane|ckb|سوگاوارا نۆ میچیزانێ|de|Sugawara no Michizane|es|Sugawara no Michizane|fa|سوگاوارا نو میچی‌زانه|fi|Sugawara no Michizane|fr|Sugawara no Michizane|id|Sugawara no Michizane|it|Sugawara no Michizane|ja|菅原道真|kk|Сугавара но Митидзане|ko|스가와라노 미치자네|la|Sugawara no Michizane|ms|Sugawara no Michizane|nl|Sugawara no Michizane|nn|Sugawara no Michizane|pl|Michizane Sugawara|pt|Sugawara no Michizane|ru|Сугавара-но Митидзанэ|sh|Sugawara no Michizane|sv|Sugawara no Michizane|th|สึกาวาระ โนะ มิจิซาเนะ|tr|Sugawara no Michizane|uk|Суґавара но Мітідзане|zh|菅原道真|zh_classical|菅原道真|zh_min_nan|Sugawara no Mitizane|qid=Q382005}})
@@ -109,7 +108,7 @@ The kuroki torii standing before the worship hall was originally used for {{ill|
 * Kuroo Shrine ({{ill|UNKNOWN|lt=Kuroo Ōkami}}) – Guardian deity
 * {{ill|Acala|Q337624|qid=Q337624}} – Former Buddhist image from the shrine temple
 
-=== Festivals and annual events ===
+== Festivals and annual events ==
 * Hatsu-Ebisu (January {{ill|January 9|Q2238|qid=Q2238|lt=9}}–{{ill|January 11|Q2247|qid=Q2247|lt=11}})
 * Yakuyoke Festival (Weekend closest to {{ill|January 18|Q2265|qid=Q2265}}–{{ill|January 19|Q2266|qid=Q2266|lt=19}})
 * Kinensai ({{ill|April 23|Q2527|qid=Q2527}})
@@ -117,34 +116,32 @@ The kuroki torii standing before the worship hall was originally used for {{ill|
 * Annual Festival ({{ill|UNKNOWN|lt=Second Monday of October}})
 * {{ill|Niiname-no-Matsuri|Q11501518|qid=Q11501518}} ({{ill|November 23|Q3021|qid=Q3021}})
 
-=== Cultural properties ===
-=== Natural monument (designated by Kobe City) ===
+== Cultural properties ==
+== Natural monument (designated by Kobe City) ==
 * Shrine grove ({{ill|Chinju no Mori|Q11651158|qid=Q11651158}}; approx. 7,000 m²) – Grove of {{ill|Castanopsis|Q1065400|qid=Q1065400|lt=shii}} trees; designated an environmental green conservation area by Hyōgo Prefecture.
 
-=== Access ===
+== Access ==
 * 10-minute walk from {{ill|Shintetsu Sanda Line|Q6800409|qid=Q6800409}} {{ill|Okaba Station|Q7081708|qid=Q7081708}}
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== References ===
+== References ==
 * [{{NDLDC|1174068}} Arima District Council, Arima District Gazette, Vol. 1 – Modern Digital Library]
 * [{{NDLDC|1174089}} Arima District Council, Arima District Gazette, Vol. 2 – Modern Digital Library]
 * *History of Arino Village*, Arino Village, 1948
 
-=== See also ===
+== See also ==
 * {{ill|Yusen Shrine|Q11563671|qid=Q11563671}}
 * {{ill|Kuchi Shrine|Q11392062|qid=Q11392062}}
 
-=== External links ===
+== External links ==
 * [http://arimajinja.com/ Official website of Arima Shrine]
 * [http://www.hyogo-jinjacho.com/data/6301114.html Hyōgo Prefecture Shrine Association – Arima Shrine]
 * [http://www.hyogo-jinjacho.com/data/6301122.html Hyōgo Prefecture Shrine Association – Tao Shrine]
 * [http://www.hyogo-jinjacho.com/data/6301121.html Hyōgo Prefecture Shrine Association – Okaba Wakamiya Shrine]
 
 {{shinto-stub}}{{Shinto sidebar}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Arima Shrine]][[Category:Shikinaisha|Arima Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Kobe]]
@@ -157,4 +154,5 @@ The kuroki torii standing before the worship hall was originally used for {{ill|
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Edo period architecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

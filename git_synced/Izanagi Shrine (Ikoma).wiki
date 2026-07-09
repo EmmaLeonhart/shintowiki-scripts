@@ -17,14 +17,13 @@
 | established = {'time': '+0746-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
 }}
 
-{{nihongo|'''Izanagi Shrine'''|伊弉諾神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
+
 
 {{commons category|Category:Izanagi-jinja (Ikoma)}}
 [[ja:伊弉諾神社 (生駒市)]]
 
 {{wikidata link|Q11379365|commons|Category:Izanagi-jinja (Ikoma)|ja|伊弉諾神社 (生駒市)|grok=none|check_date=2026-05-30}}
 
-== Japanese content ==
 {{神社
 |名称=Izanagi Shrine
 |画像=[[File:Chokyuji Ikoma Nara Japan17n.jpg|250px]]<br />Precincts
@@ -39,9 +38,9 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200}}
 }}
 [[File:Chokyuji Ikoma Nara Japan02n.jpg|thumb|250px|Izanagi Shrine torii]]
-'''Izanagi Shrine''' (いざなぎじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Ikoma, Nara|ar|إكوما (نارا)|azb|ایکوما، نارا|ca|Ikoma|ce|Икома (гӀала)|ceb|Ikoma (lungsod)|cs|Ikoma (město)|de|Ikoma|eo|Ikoma|es|Ikoma (Nara)|eu|Ikoma (Nara)|fa|ایکوما، نارا|fi|Ikoma|fr|Ikoma|gl|Ikoma|hr|Ikoma, Nara|hy|Իկոմա|id|Ikoma, Nara|it|Ikoma (Nara)|ja|生駒市|ko|이코마시|mzn|ایکوما، نارا|nl|Ikoma (stad)|no|Ikoma|pl|Ikoma|pt|Ikoma|ro|Ikoma|ru|Икома (город)|sh|Ikoma|simple|Ikoma, Nara|sr|Икома|sv|Ikoma|tg|Икома|th|อิโกมะ|tl|Ikoma, Nara|tr|Ikoma|tt|Икома (шәһәр)|uk|Ікома (Нара)|ur|ایکوما، نارا|vi|Ikoma, Nara|war|Ikoma, Nara|zh|生駒市|zh_classical|生駒市|zh_min_nan|Ikoma-chhī|zh_yue|生駒|qid=Q328610}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (great), and its former rank was {{ill|Son-sha|Q134917284|qid=Q134917284}}. It was the former {{ill|Chinjugami|fr|Chinjugami|ja|鎮守神|ko|진수신|zh|鎮守神|qid=Q97479976|lt=guardian shrine}} of {{ill|Chōkyū-ji Temple|de|Chōkyū-ji|gan|長弓寺|ja|長弓寺|qid=Q11652985}} and stands in its former {{ill|keidai|ja|境内|qid=Q11429002}}.
+{{nihongo|'''Izanagi Shrine'''|伊弉諾神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Ikoma, Nara|ar|إكوما (نارا)|azb|ایکوما، نارا|ca|Ikoma|ce|Икома (гӀала)|ceb|Ikoma (lungsod)|cs|Ikoma (město)|de|Ikoma|eo|Ikoma|es|Ikoma (Nara)|eu|Ikoma (Nara)|fa|ایکوما، نارا|fi|Ikoma|fr|Ikoma|gl|Ikoma|hr|Ikoma, Nara|hy|Իկոմա|id|Ikoma, Nara|it|Ikoma (Nara)|ja|生駒市|ko|이코마시|mzn|ایکوما، نارا|nl|Ikoma (stad)|no|Ikoma|pl|Ikoma|pt|Ikoma|ro|Ikoma|ru|Икома (город)|sh|Ikoma|simple|Ikoma, Nara|sr|Икома|sv|Ikoma|tg|Икома|th|อิโกมะ|tl|Ikoma, Nara|tr|Ikoma|tt|Икома (шәһәр)|uk|Ікома (Нара)|ur|ایکوما، نارا|vi|Ikoma, Nara|war|Ikoma, Nara|zh|生駒市|zh_classical|生駒市|zh_min_nan|Ikoma-chhī|zh_yue|生駒|qid=Q328610}}, {{ill|Nara Prefecture|Q131287|qid=Q131287}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (great), and its former rank was {{ill|Son-sha|Q134917284|qid=Q134917284}}. It was the former {{ill|Chinjugami|fr|Chinjugami|ja|鎮守神|ko|진수신|zh|鎮守神|qid=Q97479976|lt=guardian shrine}} of {{ill|Chōkyū-ji Temple|de|Chōkyū-ji|gan|長弓寺|ja|長弓寺|qid=Q11652985}} and stands in its former {{ill|keidai|ja|境内|qid=Q11429002}}. {{nihongo|'''Izanagi Shrine'''|伊弉諾神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamato Province]].
 
-=== History ===
+== History ==
 It is identified with Ishanagi Shrine in Soekami District in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, though there is also a theory that this is {{ill|UNKNOWN|lt=Tomi Shrine}} in the same district. At the founding of {{ill|Chōkyū-ji Temple|de|Chōkyū-ji|gan|長弓寺|ja|長弓寺|qid=Q11652985}} in {{ill|746|ab|746|af|746|als|746|am|746 እ.ኤ.አ.|an|746|ar|746|ary|746|ast|746|az|746|azb|۷۴۶ (میلادی)|bar|746|be|746|be_x_old|746|bg|746|bn|৭৪৬|bpy|মারি ৭৪৬|br|746|bs|746.|ca|746|cdo|746 nièng|ceb|746|ckb|٧٤٦|crh|746|cs|746|cv|746|cy|746|da|746|de|746|el|746|eml|746|eo|746|es|746|et|746|eu|746|fa|۷۴۶ (میلادی)|fi|746|fo|746|fr|746|frr|746|fy|746|ga|746|gan|746年|gd|746|gl|746|he|746|hi|746|hr|746.|ht|746 (almanak jilyen)|hu|746|hy|746|id|746|io|746|is|746|it|746|ja|746年|jv|746|ka|746|kaa|746|kk|746 жыл|ko|746년|la|746|lb|746|lij|746|lmo|746|lt|746 m.|map_bms|746|mdf|746|mg|746|mhr|746|mk|746|mr|इ.स. ७४६|mrj|746 и|ms|746|mzn|۷۴۶|nah|746|nap|746|nds|746|new|सन् ७४६|nl|746|nn|746|no|746|nrm|746|nso|746|oc|746|or|୭୪୬|os|746-æм аз|pl|746|pnb|746|pt|746|qu|746|ro|746|ru|746 год|rue|746|sa|७४६|scn|746|sd|746ع|sh|746.|shn|746|si|746|sk|746|sl|746|smn|746|sq|746|sr|746|su|746|sv|746|sw|746|tg|Соли 746|th|พ.ศ. 1289|tk|746|tl|746|tly|746|tr|746|tt|746 ел|uk|746|ur|746ء|uz|746|vec|746|vi|746|war|746|wuu|746年|xmf|746|zh|746年|zh_min_nan|746 nî|zh_yue|746年|qid=Q23616}} (Tenpyō 18), {{ill|Gozu Tennō|Q11570247|qid=Q11570247}} was enshrined as the main guardian deity and {{ill|UNKNOWN|lt=Hachioji}} as the junior shrine<ref>''Chōkyū-ji Engi''</ref>, and it was founded as Gozu Tennō Shrine.
 
 It is recorded that in {{ill|859|Q23897|qid=Q23897}} ({{ill|Jōgan|Q1075635|qid=Q1075635}} 1), it was promoted from Junior Fifth Lower to {{ill|Junior Fifth Rank|Q11071125|qid=Q11071125}}<ref>''{{ill|Nihon Sandai Jitsuroku|cs|Nihon Sandai Džicuroku|de|Nihon Sandai Jitsuroku|es|Nihon Sandai Jitsuroku|fa|نیهون ساندای جیتسوروکو|ff|Nihon Sandai Jitsuroku|fr|Nihon sandai jitsuroku|it|Nihon Sandai Jitsuroku|ja|日本三代実録|ko|일본삼대실록|pt|Nihon Sandai Jitsuroku|ru|Нихон сандай дзицуроку|simple|Nihon Sandai Jitsuroku|zh|日本三代實錄|zh_classical|日本三代實錄|qid=Q1052981|lt=Sandai Jitsuroku}}'' entry for Jōgan 1, {{ill|January 27 (Lunisolar)|Q839032|qid=Q839032|lt=1st month 27th day}} ({{ill|March 9|Q2401|qid=Q2401}}, 859)</ref>. Until the {{ill|Edo period|Q184963|qid=Q184963}}, the senior monk of the temple served as shrine priest. There is also a record of fire in {{ill|1474|Q6600|qid=Q6600}} ({{ill|Bunmei|Q1193544|qid=Q1193544}} 6)<ref>''Daijōin Jisha Zatsujiki'', Bunmei 6, {{ill|June 2 (Lunisolar)|Q839684|qid=Q839684|lt=6th month 2nd day}} ({{ill|July 24|Q2721|qid=Q2721}}, 1474)</ref>.
@@ -52,10 +51,10 @@ Under the {{ill|Q712534|lt=Modern shrine ranking system}}, it was ranked as a {{
 
 A large {{ill|Torii|Q234731|qid=Q234731}} before the temple’s main gate encompasses the precinct area, and there is a Momoyama-period {{ill|UNKNOWN|lt=stone lantern}} in the grounds.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * Main deities - {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}, {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}, {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944|lt=Ōnamuchi-no-Mikoto}}
 
-=== Precincts ===
+== Precincts ==
 * Honden
 * Haiden (wari-haiden)
 * Maidono
@@ -64,22 +63,20 @@ A large {{ill|Torii|Q234731|qid=Q234731}} before the temple’s main gate encomp
 * {{ill|Zennyo Ryūō|Q5931305|qid=Q5931305}} shrine
 * Shrine office
 
-=== Access ===
+== Access ==
 * From {{ill|Tomio Station|Q7818922|qid=Q7818922}} on the {{ill|Nara Line (Kintetsu)|Q692386|qid=Q692386}}, take a {{ill|Nara Kotsu Bus Lines|Q11445000|qid=Q11445000}} bus (bound for Takayama), get off at “Ikoma Kamimachi,” then 10 minutes on foot
 * From {{ill|Gakuen-mae Station (Nara)|Q5517704|qid=Q5517704|lt=Gakuenmae}} on the Kintetsu Nara Line, take a Nara Kōtsū bus (bound for Gakken Kita-Ikoma Station), get off at “Mayumi 4-chōme,” then 15 minutes on foot
 
-=== References ===
+== References ==
 * Nihon Rekishi Chimei Taikei (online), Shōgakukan (database based on Heibonsha’s ''Nihon Rekishi Chimei Taikei'', 1979-2002)
 <references />
 
-=== Related items ===
+== Related items ==
 * {{ill|Izanagi Shrines|Q11380918|qid=Q11380918}} - Izanagi shrines in various places
 
 {{神道 横}}
 {{Shinto-stub}}
 {{pref-stub|pref=奈良県}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Izanagi Shrine (Ikoma)]][[Category:Shikinaisha|Izanagi Shrine (Ikoma)]][[Category:Shikinai Shōsha]]
 [[Category:Shikinai Taisha]]
 [[Category:Shikinaisha in Yamato Province]]
@@ -92,4 +89,5 @@ A large {{ill|Torii|Q234731|qid=Q234731}} before the temple’s main gate encomp
 [[Category:History of Ikoma City]]
 [[Category:Gion shrines]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

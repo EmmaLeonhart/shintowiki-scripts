@@ -13,14 +13,13 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Hazu Shrine'''|幡頭神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mikawa Province]].
+
 
 {{commons category|Category:Hazu-jinja (Nishio)}}
 [[ja:幡頭神社]]
 
 {{wikidata link|Q60988165|ja|幡頭神社|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{Shinto shrine
 |Name        = Hazu Shrine
 |Image       = [[File:Hazu shrine1.jpg|280px]]<br />Haiden (worship hall)
@@ -38,16 +37,16 @@
 |Map         = {{Location map|Japan Aichi#Japan|label=Hazu Shrine|lat_deg=34|lat_min=46|lat_sec=41.2|lon_deg=137|lon_min=5|lon_sec=14.9|mark=Shinto torii icon vermillion.svg|marksize=20|float=center|border=none|position=top|width=200|caption=}}{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=14|frame-align=center|frame-width=200|coord={{coord|34|46|41.2|N|137|05|14.9|E}}}}
 }}
 [[File:Hazu shrine3.jpg|thumb|220px|right|{{center|Torii}}]]
-'''Hazu Shrine''' (はずじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in Miyazaki, Kira-chō, {{ill|Nishio|Q317844|qid=Q317844}}, {{ill|Aichi Prefecture|Q80434|qid=Q80434}}. It is listed as a {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Shikinaisha}}, and under the {{ill|Q712534|lt=former shrine ranking}} it was classified as a {{ill|UNKNOWN|lt=Prefectural Shrine}}.
+{{nihongo|'''Hazu Shrine'''|幡頭神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in Miyazaki, Kira-chō, {{ill|Nishio|Q317844|qid=Q317844}}, {{ill|Aichi Prefecture|Q80434|qid=Q80434}}. It is listed as a {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Shikinaisha}}, and under the {{ill|Q712534|lt=former shrine ranking}} it was classified as a {{ill|UNKNOWN|lt=Prefectural Shrine}}. {{nihongo|'''Hazu Shrine'''|幡頭神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mikawa Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Takeinadane|Q11486691|qid=Q11486691}}
 * {{ill|Emperor Ōjin|Q317997|qid=Q317997|qid=Q317997|lt=Hondawake no Mikoto}}
 * {{ill|Ōmononushi|lt=Ōmononushi|Q10936701|qid=Q10936701|qid=Q10936701|lt=Ōmononushi no Mikoto}}
 
 The principal deity is {{ill|Takeinadane|Q11486691|qid=Q11486691}}, who is said to have been the {{ill|Owari no Kuni no Miyatsuko|Q11465294|qid=Q11465294}} and, according to tradition, served as “Hatagashira” (banner commander) during {{ill|Yamato Takeru|Q461258|qid=Q461258|lt=Prince Yamato Takeru}}’s eastern expedition. {{ill|Emperor Ōjin|Q317997|qid=Q317997|qid=Q317997|lt=Hondawake no Mikoto}} and {{ill|Ōmononushi|lt=Ōmononushi|Q10936701|qid=Q10936701|qid=Q10936701|lt=Ōmononushi no Mikoto}} are also enshrined together.
 
-=== History ===
+== History ==
 It is traditionally said that the shrine buildings were established in Taihō 2 (702)<ref name="nishio" />. According to legend, the enshrined deity Takeinadane no Mikoto died at sea off Izu while returning from the eastern campaign with Prince Yamato Takeru, and his body drifted ashore at the coast of Miyazaki, where local villagers enshrined him<ref>[https://www.japan-net.ne.jp/~kira-spa/sightseeing_spot/01-10.html Hazu Shrine - Mikawa Bay Quasi-National Park, Kira Miyazaki Coast, Kira Onsen] Retrieved December 5, 2018</ref><ref name="nishio" />.
 
 In the *{{ill|Engishiki|Q1342448|qid=Q1342448}}* {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Register of Deities}}, compiled in {{ill|Enchō|Q1327274|qid=Q1327274|lt=Enchō}} 5 (927), the shrine appears as “Hazu Shrine” in {{ill|Mikawa Province|Q768158|qid=Q768158|lt=Mikawa}} {{ill|Hazu District|Q522936|qid=Q522936}}, and is listed as a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}{{Sfn|Hazu Shrine (Heibonsha)|1981}}. It is also recorded in the *Mikawa Province Register of Deities* as “Senior First Rank Haridai Myōjin, seated in Hazu District”{{Sfn|Hazu Shrine (Heibonsha)|1981}}.
@@ -60,7 +59,7 @@ From September 1, {{ill|2015|ab|2015|af|2015|als|2015|am|2015 እ.ኤ.አ.|an|20
 
 In {{ill|2022|ab|2022|af|2022|als|2022|an|2022|ang|2022|ar|2022|ary|2022|arz|2022|as|২০২২ চন|ast|2022|av|2022 сон|avk|2022|az|2022|azb|۲۰۲۲ (میلادی)|ba|2022 йыл|ban|2022|bar|2022|bat_smg|2022|bcl|2022|be|2022|be_x_old|2022|bg|2022|bh|2022|bjn|2022|blk|၂၀၂၂|bn|২০২২|bo|༢༠༢༢ལོ།|br|2022|bs|2022.|bxr|2022|ca|2022|cdo|2022 nièng|ce|2022 шо|ceb|2022|ckb|٢٠٢٢|co|2022|crh|2022|cs|2022|cv|2022|cy|2022|da|2022|de|2022|diq|2022|dsb|2022|dv|2022|el|2022|eml|2022|eo|2022|es|2022|et|2022|eu|2022|ext|2022|fa|۲۰۲۲|fi|2022|fiu_vro|2022|fo|2022|fr|2022|frp|2022|frr|2022|fur|2022|fy|2022|ga|2022|gag|2022|gan|2022年|gd|2022|gl|2022|gn|2022|gor|2022|gv|2022|ha|2022|hak|2022-ngièn|he|2022|hi|२०२२|hif|2022|hr|2022.|hsb|2022|hu|2022|hy|2022|hyw|2022|ia|2022|iba|2022|id|2022|ilo|2022|inh|2022 шу|io|2022|is|2022|it|2022|ja|2022年|jv|2022|ka|2022|kaa|2022|kab|2022|kcg|2022|kk|2022 жыл|km|ឆ្នាំ ២០២២|ko|2022년|krc|2022 джыл|ks|2022|ku|2022|kv|2022-ӧд во|la|2022|lb|2022|li|2022|lij|2022|lmo|2022|lt|2022 m.|lv|2022. gads|map_bms|2022|mdf|2022|mg|2022|mhr|2022|mi|2022|min|2022|mk|2022|ml|2022|mn|2022 он|mr|इ.स. २०२२|ms|2022|my|၂၀၂၂|myv|2022 ие|mzn|۲۰۲۲|nah|2022|nap|2022|nds|2022|nds_nl|2022|new|सन् २०२२|nl|2022|nn|2022|no|2022|nso|2022|oc|2022|olo|2022|os|2022-æм аз|pa|2022|pap|2022|pl|2022|pnb|2022|pt|2022|qu|2022|ro|2022|roa_tara|2022|ru|2022 год|rue|2022|sah|2022 сыл|sat|᱒᱐᱒᱒|sc|2022|scn|2022|sd|2022ع|se|2022|sh|2022.|shn|2022|si|2022|simple|2022|sk|2022|sl|2022|smn|2022|sn|2022|so|2022|sq|2022|sr|2022|stq|2022|su|2022|sv|2022|sw|2022|szl|2022|ta|2022|te|2022|tg|Соли 2022|th|พ.ศ. 2565|tk|2022|tl|2022|tly|2022|tr|2022|tt|2022 ел|tyv|2022 чыл|udm|2022 ар|ug|2022 - يىلى|uk|2022|ur|2022ء|uz|2022|vec|2022|vi|2022|vls|2022|vo|2022|wa|2022|war|2022|wuu|2022年|xmf|2022|yi|2022|yo|2022|za|2022 nienz|zea|2022|zgh|2022|zh|2022年|zh_classical|二〇二二年|zh_min_nan|2022 nî|zh_yue|2022年|qid=Q49625}} ({{ill|Reiwa era|ar|فترة رييوا|az|Reyva erası|ban|Reiwa|be|Рэйва|bo|རེ་བ|bug|ᨑᨙᨕᨗᨓ|ca|Període Reiwa|cdo|Lêng-huò|cs|Období Reiwa|de|Reiwa-Zeit|eo|Reiva-epoko|es|Era Reiwa|fa|دوره ریوا|fi|Reiwa-kausi|fr|Ère Reiwa|haw|Reiwa Makahiki|he|תקופת ראיווה|hi|रेइवा युग|hu|Reiva-kor|id|Zaman Reiwa|it|Periodo Reiwa|ja|令和|jv|Reiwa|ka|რეივა|ko|레이와 시대|lt|Reiva laikotarpis|mn|Рэйва|ms|Zaman Reiwa|nl|Reiwa|no|Reiwa|oc|Reiwa|pl|Reiwa|pt|Período Reiwa|ro|Perioada Reiwa|ru|Рэйва|simple|Reiwa era|sk|Obdobie Reiwa|sl|Obdobje Reiva|sq|Periudha Reiva|sv|Reiwa|th|ยุคเรวะ|tr|Reiwa Dönemi|uk|Період Рейва|uz|Reiva|vi|Thời kỳ Lệnh Hòa|wuu|令和|zh|令和|zh_classical|令和|zh_min_nan|Lēng-hô|zh_yue|令和|qid=Q62609017|lt=Reiwa}} 4), the main halls of the subordinate Shinmei Shrine and Kumano Shrine were additionally designated as National Important Cultural Properties.
 
-=== Grounds ===
+== Grounds ==
 [[File:Hazu shrine2.jpg|thumb|220px|right|{{center|Main hall (National {{ill|Important Cultural Property (Japan)|Q1188622|qid=Q1188622}})}}{{small|Kumano Shrine and Shinmei Shrine on the left and right.}}]]
 The shrine grounds are situated on a hill overlooking {{ill|Mikawa Bay|ar|خليج ميكاوا|be|Мікава (заліў)|ceb|Mikawa-wan (luuk sa Hapon, lat 34,75, long 137,08)|de|Mikawa-Bucht|eu|Mikawa Badia|fa|خلیج میکاوا|fr|Baie de Mikawa|he|מפרץ מיקאווה|ja|三河湾|ko|미카와만|no|Mikawabukta|pl|Mikawa (zatoka)|pt|Baía de Mikawa|ru|Микава (залив)|th|อ่าวมิกาวะ|tr|Mikawa Körfezi|zh|三河灣|qid=Q1154346}}. The three-bay {{ill|Nagare-zukuri|Q210684|qid=Q210684}} main hall with a cypress bark roof dates from Tenshō 8 (1580). Though small in scale, its decorative motifs employ robust curved lines, and the interior carvings and *kamaboko* (strut) forms are simple in style. The roof is covered with cypress bark, and the deeply curved eaves are a distinctive feature<ref name="nishio">[https://www.city.nishio.aichi.jp/index.cfm/8,14703,91,408,html Cultural Properties of Nishio City: Hazu Shrine Main Hall - Nishio City] Retrieved December 5, 2018</ref>.
 
@@ -70,38 +69,36 @@ File:Hazu-jinja (Nishio), Shinmei-sha.jpg|Shinmei Shrine (National Important Cul
 File:Hazu-jinja (Nishio), Kumano-sha.jpg|Kumano Shrine (National Important Cultural Property)
 </gallery>
 
-=== Cultural properties ===
-=== Important Cultural Properties (National designation) ===
+== Cultural properties ==
+== Important Cultural Properties (National designation) ==
 * Hazu Shrine, 3 structures (buildings) – The main hall was designated on April 30, Taishō 10 (1921)<ref>{{National Cultural Properties Database|102|1278|Hazu Shrine Main Hall}}</ref>, and on September 20, Reiwa 4 (2022), the main halls of the subordinate Kumano Shrine and Shinmei Shrine were additionally designated<ref>Ministry of Education, Culture, Sports, Science and Technology Notification No. 121, September 20, Reiwa 4.</ref>.
 ** Main hall (with 3 attached ridge tags) – constructed in Tenshō 8 (1580).
 ** Subordinate Kumano Shrine main hall (with 4 attached ridge tags) – constructed in Tenshō 8 (1580).
 ** Subordinate Shinmei Shrine main hall (with 4 attached ridge tags) – constructed in Tenshō 8 (1580).
 The subordinate Kumano Shrine main hall and Shinmei Shrine main hall had previously been designated as Tangible Cultural Properties of Aichi Prefecture in Shōwa 32 (1957).
 
-=== Local information ===
+== Local information ==
 '''Address'''
 * 60-1 Maedomeya, Miyazaki, {{ill|Kira, Aichi|fa|کیرا، آیچی|fr|Kira (Japon)|ja|吉良町|ko|기라정|ru|Кира (Япония)|uk|Кіра (Айті)|ur|کیرا، آئیچی|uz|Kira (Aichi)|zh|吉良町|qid=Q1154383}}, {{ill|Nishio|Q317844|qid=Q317844}}, {{ill|Aichi Prefecture|Q80434|qid=Q80434}}
 
 '''Access'''
 * From {{ill|Meitetsu|ckb|مێیتێتسو|de|Meitetsu|es|Meitetsu|fa|میتتسو|fi|Nagoya-rautatiet|fr|Nagoya Railroad|id|Meitetsu|it|Ferrovie Meitetsu|ja|名古屋鉄道|jv|Meitetsu|ko|나고야 철도|nl|Meitetsu|pl|Meitetsu|pt|Meitetsu|ru|Meitetsu|simple|Meitetsu|su|Nagoya Railroad|tr|Meitetsu|ur|میٹیٹسو|zh|名古屋鐵道|qid=Q30850}} (Nagoya Railroad) {{ill|Meitetsu Nishio Line|de|Meitetsu Nishio-Linie|fr|Ligne Meitetsu Nishio|it|Linea Meitetsu Nishio|ja|名鉄西尾線|ko|메이테쓰 니시오선|zh|西尾線|qid=Q6810417}} or {{ill|Meitetsu Gamagōri Line|de|Meitetsu Gamagōri-Linie|fr|Ligne Meitetsu Gamagōri|it|Linea Meitetsu Gamagōri|ja|名鉄蒲郡線|ko|메이테쓰 가마고리선|zh|蒲郡線|qid=Q6810403}} {{ill|Kira Yoshida Station|Q6414740|qid=Q6414740}}, approximately 7 minutes by taxi (car)
 
-=== Notes ===
+== Notes ==
 {{Notes help}}
 {{Reflist}}
 
-=== References ===
+== References ==
 
 * {{Cite book|Japanese|editor=|author=|year=1981|chapter=Hazu Shrine|title={{ill|Japanese Historical Topography Series|Q17213509|qid=Q17213509}} 23: Place Names of Aichi Prefecture|publisher={{ill|Heibonsha|ar|هيبونشا|de|Heibonsha|fa|شرکت هیبون|fr|Heibonsha|it|Heibonsha|ja|平凡社|tr|Heibonsha|zh|平凡社|qid=Q11482108}}|isbn=4582490239|ref={{Harvid|Hazu Shrine (Heibonsha)|1981}}}}
 * {{Cite book|Japanese|author=|editor=Association for the Conservation of Architectural Monuments|title=Report on the Preservation and Restoration Work of the Important Cultural Property Hazu Shrine Main Hall|date=2018-03|publisher=Nishio City Board of Education|isbn=|ref=Report on the Restoration of the Important Cultural Property Hazu Shrine}}
 
-=== External links ===
+== External links ==
 {{commonscat|Hazu-jinja (Nishio)}}
 * [http://nishiokanko.com/list/shop/hazujinjya Hazu Shrine] – Nishio City Tourism Association
 * [https://bunka.nii.ac.jp/heritages/detail/122287 Hazu Shrine Main Hall] – Cultural Heritage Online
 
 {{Shinto footer}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Hazu Shrine]][[Category:Shikinaisha|Hazu Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Mikawa Province]]
 [[Category:Shinto shrines in Aichi Prefecture]]
@@ -112,4 +109,5 @@ The subordinate Kumano Shrine main hall and Shinmei Shrine main hall had previou
 [[Category:Buildings and structures in Nishio]]
 [[Category:西尾市の歴史]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

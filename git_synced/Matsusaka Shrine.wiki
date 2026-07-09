@@ -17,13 +17,12 @@
 | website = {{Official website|https://matsusakajinjya.com/}}
 }}
 
-{{nihongo|'''Matsusaka Shrine'''|松阪神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
+
 
 [[ja:松阪神社]]
 
 {{wikidata link|Q11532402|ja|松阪神社|grok=none|check_date=2026-05-31}}
 
-== Japanese content ==
 {{神社
 |名称    = Matsusaka Shrine
 |画像    = [[ファイル:Matsusaka Shrine 1.jpg|280px]]<br />Haiden
@@ -43,9 +42,9 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|coord={{coord|34|34|25.4|N|136|31|29.2|E}}}}
 }}
 
-'''Matsusaka Shrine''' (まつさかじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Matsusaka|Q460829|qid=Q460829}}, {{ill|Mie Prefecture|Q128196|qid=Q128196}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former modern rank was {{ill|Gō-sha|ja|郷社|qid=Q134917316}}.
+{{nihongo|'''Matsusaka Shrine'''|松阪神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Matsusaka|Q460829|qid=Q460829}}, {{ill|Mie Prefecture|Q128196|qid=Q128196}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former modern rank was {{ill|Gō-sha|ja|郷社|qid=Q134917316}}. {{nihongo|'''Matsusaka Shrine'''|松阪神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 Its principal deities are {{ill|Emperor Ōjin|Q317997|qid=Q317997|lt=Homutawake-no-Mikoto}} ({{ill|Hachiman|Q261637|qid=Q261637}}) and {{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama-no-Kami}} ({{ill|Inari Ōkami|Q719665|qid=Q719665}}). Through shrine mergers in the Meiji period, the following deities are also enshrined.
 
 {{colbegin|2}}
@@ -80,7 +79,7 @@ Its principal deities are {{ill|Emperor Ōjin|Q317997|qid=Q317997|lt=Homutawake-
 * {{ill|Sumiyoshi sanjin|Q1114013|qid=Q1114013|lt=Uwatsutsu-no-o / Nakatsutsu-no-o / Sokotsutsu-no-o}}
 {{colend}}
 
-=== History ===
+== History ==
 It is regarded as a successor shrine of "Oi Shrine" in Iitaka District, Ise Province, listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} (another candidate shrine is {{ill|Kanbe Kotachi Shinmeisha|Q11590193|qid=Q11590193}} in Shimomura-cho, Matsusaka).
 
 Its founding date is unknown, but it has stood on this site since ancient times and was revered by the Iitaka clan, district governors, as their {{ill|Ubusunagami|Q1392097|qid=Q1392097}}.
@@ -89,24 +88,22 @@ In {{ill|1588|Q6757|qid=Q6757}} ({{ill|Tenshō (Momoyama period)|Q1145058|qid=Q1
 
 In the early Meiji period, it was identified with the Shikinaisha Oi Shrine and renamed from Ojohachiman to Oi Shrine, then ranked as a gosha in July {{ill|Meiji – year 4|Q11512280|qid=Q11512280}}. On {{ill|March 23|Q2445|qid=Q2445}}, {{ill|1908|Q2056|qid=Q2056}} (Meiji 41), deities from 17 nearby shrines (33 deities in total) were merged and it was renamed Matsusaka Shrine.
 
-=== Festivals ===
+== Festivals ==
 In mid-July, this shrine, Hino-cho Yakumo Shrine, and Honmachi Mikuriya Shrine hold a {{ill|Gion Matsuri|Q979873|qid=Q979873}}. Originally this was the festival of Uomachi Uryu Shrine and Nishimachi Yaegaki Shrine, both later merged into this shrine. These shrines were called the "Four Heavenly Kings" as shrines enshrining Matsusaka's {{ill|Gozu Tennō|Q11570247|qid=Q11570247}}.
 
-=== Regular 20-year transfer ===
+== Regular 20-year transfer ==
 A {{ill|Sengū|Q2271023|qid=Q2271023|lt=shikinen senza}} is held every 20 years<ref name="ym1609">{{Cite web|和書|url=http://www.yukanmie.com/news/1544/|title=Final rite "Oshiraishi Arai" held at Matsusaka Shrine; parishioners prepare for once-every-20-years shikinen sengu next month on the 15th|publisher={{ill|Yukan Mie|Q11430176|qid=Q11430176}}|date=2016-09-12|accessdate=2016-10-10|archiveurl=https://web.archive.org/web/20161010144610/http://www.yukanmie.com/news/1544/|archivedate=2016-10-10|url-status=dead|url-status-date=2017-10}}</ref>. In {{ill|2016|Q25245|qid=Q25245}} (Heisei 28), {{ill|Oshiraishimochi|Q17225061|qid=Q17225061|lt=Oshiraishi Arai}} was held on {{ill|September 11|Q2851|qid=Q2851}}, and the transfer took place on {{ill|October 15|Q2919|qid=Q2919}}<ref name="ym1609"/>.
 
-=== Footnotes ===
+== Footnotes ==
 {{Reflist}}
 
-=== See also ===
+== See also ==
 * {{ill|List of shrines in Mie Prefecture|Q48761540|qid=Q48761540}}
 
-=== External links ===
+== External links ==
 * [http://www.matsusakajinjya.com/ Matsusaka Shrine] (official website)
 
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Matsusaka Shrine]][[Category:Shikinaisha|Matsusaka Shrine]][[Category:Shikinaisha|Matsusaka Shrine]][[Category:Disputed Shikinaisha or Shikigeisha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Mie Prefecture]]
@@ -117,4 +114,5 @@ A {{ill|Sengū|Q2271023|qid=Q2271023|lt=shikinen senza}} is held every 20 years<
 [[Category:Buildings and structures in Matsusaka, Mie]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

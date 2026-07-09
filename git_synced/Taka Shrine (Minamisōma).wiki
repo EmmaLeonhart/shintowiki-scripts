@@ -16,14 +16,13 @@
 | deity = {{ill|Izanagi|lt=Izanagi|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|en|Izanagi|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858}}
 }}
 
-{{nihongo|'''Taka Shrine'''|多珂神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
+
 
 {{commons category|Category:Taka-jinja}}
 [[ja:多珂神社]]
 
 {{wikidata link|Q11430895|commons|Category:Taka-jinja|ja|多珂神社|check_date=2026-05-26}}
 
-== Japanese content ==
 {{Shrine
 |Name   = Taka Shrine
 |Image   = [[File:Haiden of Taka-jinja shrine in Shinto ritual season 1.JPG|270px]]<br />Worship Hall
@@ -38,16 +37,16 @@
 |Map = {{Location map|Japan Fukushima|label=Taka Shrine|position=left|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Taka Shrine''' (たかじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Haramachi-ku|ja|原町区|qid=Q24892679}}, {{ill|Minamisōma|Q642094|qid=Q642094}}, {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}) {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine rank}} it was designated as a {{ill|UNKNOWN|lt=Prefectural Shrine}}.
+{{nihongo|'''Taka Shrine'''|多珂神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Haramachi-ku|ja|原町区|qid=Q24892679}}, {{ill|Minamisōma|Q642094|qid=Q642094}}, {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} ({{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}) {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine rank}} it was designated as a {{ill|UNKNOWN|lt=Prefectural Shrine}}. {{nihongo|'''Taka Shrine'''|多珂神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Mutsu Province]].
 
-=== Enshrined Deity ===
+== Enshrined Deity ==
 * '''{{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Mikoto}}'''
 *: According to *Ōsōshi*, a local historical record of the Sōma Domain, the shrine enshrines “Taka Ara-Mitama-no-Mikoto,” the {{ill|Mitama|Q495568|qid=Q495568|lt=Ara-mitama}} (rough spirit) of Izanagi-no-Mikoto.
 
 The shintai (sacred object) has been prohibited from being viewed since ancient times and is therefore unknown. There is a theory that it may be a “hawk statue,” but this hawk statue is said to be the result of a mistaken transmission identifying the “White-Token Hawk” mentioned in shrine tradition as the shintai.
 
-=== History ===
-=== Overview ===
+== History ==
+== Overview ==
 Taka Shrine is the foremost of the eight {{ill|UNKNOWN|lt=Engishiki-listed shrines}} in {{ill|Namekata district|Q11626139|qid=Q11626139}}, {{ill|Mutsu Province|Q907389|qid=Q907389}} (Taka Shrine, {{ill|Kashima Miko Shrine|Q11677124|qid=Q11677124}}, {{ill|Mito Shrine|Q11488802|qid=Q11488802}}, {{ill|UNKNOWN|lt=Masutamine Shrine}}, {{ill|UNKNOWN|lt=Himatsuri Shrine}}, {{ill|Takakura Shrine|Q11669904|qid=Q11669904}}, {{ill|Sakamine Shrine|Q11395049|qid=Q11395049}}, {{ill|UNKNOWN|lt=Oshio Shrine}}). Among shrines bearing the name “Taga Shrine,” it is the only one nationwide to have been granted the rank of {{ill|Myōjin Taisha|Q9610964|qid=Q9610964}}, and it is said that Taga Shrines throughout the Tōhoku region originate from this shrine.
 
 Although its exact origins are unknown, tradition holds that the shrine was founded in the 40th year of {{ill|Emperor Keikō|Q329723|qid=Q329723}} by {{ill|Yamato Takeru|lt=Yamato Takeru|qid=Q461258}}, who visited this area during his eastern campaign and enshrined the deity to pray for victory in battle. To the northwest of the current location lies the Furuuchi area, through which the Ōta River flows, and there is said to be a place called “Daimyōjin Kawara.” The ancient shrine site is said to have been on the southern hills of Daimyōjin Kawara. In the 7th year, 2nd month of {{ill|Emperor Chūai|Q179971|qid=Q179971}}, a violent storm washed away and severely damaged the shrine buildings, which drifted to the banks of the nearby Ōta River. In the 9th month of the same year, the shrine was relocated to Ashinodaira (present-day Jō-no-uchi, the current site).
@@ -60,11 +59,11 @@ In Meiji 6 ({{ill|1873|Q7757|qid=Q7757}}), it was designated a village shrine, a
 
 Taka Shrine has long been believed to bestow divine benefits such as longevity, fulfillment of wishes, household safety, safe childbirth, maritime safety, and abundant catches. Because it was originally enshrined to pray for victory in battle, many worshippers in particular visit to pray for certain victory in elections.
 
-=== Court Rank ===
+== Court Rank ==
 * Enryaku 15 ({{ill|796|Q33452|qid=Q33452}}) 10th month, 22nd day: Junior Fifth Rank, Lower Grade (*{{ill|Nihon Kōki|Q1077029|qid=Q1077029}}*) – recorded as “Taga Shrine.”
 
-=== Shrine Grounds ===
-=== Shrine Buildings ===
+== Shrine Grounds ==
+== Shrine Buildings ==
 * Main Hall – Built in one-bay nagare-zukuri style, with side screens and balustrades. Dragon carvings are applied to the side screens.
 <gallery widths="200px" heights="150px">
 File:Honden of Taka-jinja shrine.JPG|Main Hall
@@ -92,11 +91,11 @@ File:Picture of Falcon inside of Haiden of Taka-jinja shrine.JPG|Hawk painting<b
 File:Board of "spiritual protection of the state" at Taka-jinja shrine.JPG|“Protection of the State” votive plaque
 </gallery>
 
-=== Other Structures ===
+== Other Structures ==
 * Stone statues of the Seven Lucky Gods
 * Near the sacred tree behind the main hall, Buddhist statues from the era of syncretism between Shinto and Buddhism are placed.
 
-=== Approach ===
+== Approach ==
 Along the approach is a sacred pond, and on the small central island stand a small shrine of Kogota Yamatsumi Shrine and a stone monument of Konpira Shrine. The first torii gate stands southeast of {{ill|Iwaki-Ōta Station|Q6100384|qid=Q6100384}}, along the tracks of the {{ill|Jōban Line|Q1369263|qid=Q1369263}}.
 <gallery>
 File:Kogota Yamatsumi-jinja shrine and Konpira-jinja shrine in Taka-jinja shrine.JPG|Small shrine of Kogota Yamatsumi Shrine and stone monument of Konpira Shrine
@@ -105,7 +104,7 @@ File:Main approach to Taka-jinja shrine 2.JPG|Entrance to the approach of Taka S
 File:Torii gate of Taka-jinja shrine.JPG|First torii gate
 </gallery>
 
-=== Subsidiary and Branch Shrines ===
+== Subsidiary and Branch Shrines ==
 * Yasaka-Inari Shrine
 *: The shrine building reuses the former main hall of Taka Shrine, and within it are enshrined Yasaka Shrine and Inari Shrine. Yasaka Shrine was formerly called Gozu Tennō Shrine and had been located in the Jō-no-uchi area, the present location. According to *Ōsōshi*, the sacred object of Yasaka Shrine measures 7 sun in length. Inari Shrine was formerly located in the Oinari area southeast of the current site and was later enshrined together with Yasaka Shrine.
 *: On the east side of the shrine building are a sacred cedar tree, Raijin Shrine, and a stone monument of Aomasa Daigongen (Aomasa Shrine).
@@ -123,7 +122,7 @@ File:Statues of Shichifukujin in Taka-jinja shrine.JPG|Stone statues of the Seve
 File:Sanctified tree and Statue of Kannon in Taka-jinja shrine.JPG|Sacred tree and Buddhist statue
 </gallery>
 
-=== Kifune Shrine (Ronsha of Taka Shrine) ===
+== Kifune Shrine (Ronsha of Taka Shrine) ==
 {{Shrine
 |Name   = Kifune Shrine
 |Image   = [[File:Haiden of Kifune-jinja shrine in Odaka ward,Minamisouma city. 01.JPG|270px]]<br />Worship Hall
@@ -140,7 +139,7 @@ File:Sanctified tree and Statue of Kannon in Taka-jinja shrine.JPG|Sacred tree a
 }}
 It is enshrined near Sōma Odaka Shrine in Odaka Ward, Minamisōma City. The enshrined deities are Takaokami-no-Kami and Yamiokami-no-Kami.
 
-=== History ===
+== History ==
 The founding date of Kifune Shrine is unknown, but it is said to have been worshipped since before Genkō 3 (1323). According to *Ōsōshi*, there is a record stating that the box housing the sacred object bears an inscription indicating it was made in the 5th year of Hōen, kinoe-mi year, 8th month. The sacred object is said to be a statue “riding a dragon and wearing white robes.” In Bunji 5, when {{ill|Sōma Moritsune|Q11582495|qid=Q11582495}} took control of Namekata District, he designated Kifune Shrine as the district’s chief shrine and deeply revered it, carrying out embellishments of the shrine buildings. Kifune Shrine was mainly worshipped as a deity of rainmaking and stopping rain, bountiful harvests, success and advancement in life, and martial arts.
 
 According to *Ōsōshi*, Taka Shrine once existed within the precincts of Kibune (Kifune) Shrine in Minami-Odaka Village. It was a shrine building measuring 2 shaku 5 sun in depth. It was a shrine enshrined during the era of Emperor Keikō, with Izanagi-no-Mikoto and Takamimusubi-no-Mikoto as the two main deities, and Koyō Myōjin as an accompanying deity.
@@ -157,37 +156,35 @@ For these reasons, the theory of Takadama Tanba is said to contain many doubtful
 
 At present, the inscription on the stone monument describing the shrine’s origins at the entrance of Kifune Shrine’s approach states that the enshrined deities are Takaokami-no-Kami and Yamiokami-no-Kami, and that Taka Shrine is enshrined together in the same sanctuary.
 
-=== Shrine Grounds ===
+== Shrine Grounds ==
 <gallery>
 File:Precincts of Kifune-jinja,Minamisoma.JPG|Shrine grounds
 File:Haiden of Kifune-jinja after massive earthquake 11 March 2011.JPG|Worship Hall
 File:Honden of Kifune-jinja after massive earthquake 11 March 2011.JPG|Main Hall<br/>Nagare-zukuri style.
 </gallery>
 
-=== Related Sites ===
+== Related Sites ==
 In the Sōma region, there are said to be five Taka Shrines in total, including the two shrines described above.
 <gallery>
 File:Taka-jinja shrine at Suzumigaoka Hachiman-jinja shrine.JPG|Taka Shrine, a precinct shrine within Suzumigaoka Hachiman Shrine in Sōma City
 </gallery>
 
-=== On-site Information ===
+== On-site Information ==
 '''Locations'''
 * Taka Shrine: {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}{{ill|Minamisōma|Q642094|qid=Q642094}}{{ill|Haramachi-ku|ja|原町区|qid=Q24892679}}112 Takajō-no-uchi
 * Kifune Shrine: {{ill|Fukushima Prefecture|Q71707|qid=Q71707}}{{ill|Minamisōma|Q642094|qid=Q642094}}{{ill|Odaka-ku|Q24892654|qid=Q24892654}}2-50 Nakamachi
 
-=== References ===
+== References ==
 * Guide booklet for visiting Taka Shrine (Taka Shrine Office)
 * *Ōsōshi (History of Sōma City, Vol. 4)* (Sōma City, 1969)
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== External Links ===
+== External Links ==
 * [http://21coe.kokugakuin.ac.jp/db/jinja/276003.html Taka Shrine] (Kokugakuin University 21st Century COE Program “Shinto and Shrine Historical Materials Compilation”)
 
 {{Shinto footer}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Taka Shrine (Minamisōma)]][[Category:Shikinaisha|Taka Shrine (Minamisōma)]][[Category:Myōjin Taisha]]
 [[Category:Shikinai Ronsha]]
 [[Category:Shikinaisha in Mutsu Province]]
@@ -198,4 +195,5 @@ File:Taka-jinja shrine at Suzumigaoka Hachiman-jinja shrine.JPG|Taka Shrine, a p
 [[Category:福島県の旧県社]]
 [[Category:Buildings and structures in Minamisoma, Fukushima]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

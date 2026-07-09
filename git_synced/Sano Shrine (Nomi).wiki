@@ -16,13 +16,12 @@
 | deity = {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
 }}
 
-{{nihongo|'''Sano Shrine (Nomi)'''|狭野神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kaga Province]].
+
 
 {{commons category|Category:Sano-jinja (Nomi)}}
 
 {{wikidata link|Q11571758|commons|Category:Sano-jinja (Nomi)|ja|狭野神社 (能美市)|grok=none|check_date=2026-07-07}}
 
-== Japanese content ==
 {{出典の明記|date=2015年9月13日 (日) 02:25 (UTC)}}
 {{神社
 |名称=Sano Shrine
@@ -37,20 +36,20 @@
 |地図= {{Location map|Japan Ishikawa|label=Sano Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Sano Shrine''' (さのじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Sano-machi, {{ill|Nomi, Ishikawa|Q658912|qid=Q658912}}, {{ill|Ishikawa Prefecture|Q131281|qid=Q131281}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was prefectural shrine.
+{{nihongo|'''Sano Shrine (Nomi)'''|狭野神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Sano-machi, {{ill|Nomi, Ishikawa|Q658912|qid=Q658912}}, {{ill|Ishikawa Prefecture|Q131281|qid=Q131281}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was prefectural shrine. {{nihongo|'''Sano Shrine (Nomi)'''|狭野神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kaga Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}
 * {{ill|Emperor Jimmu|ar|الإمبراطور جينمو|arz|الامبراطور جينمو|as|জিম্মু|az|Cimmu|bcl|Emperador Jimmu|be|Імператар Дзіму|ca|Jinmu|cdo|Sìng-ū Tiĕng-huòng|ckb|ئیمپراتۆر جینمو|cs|Džimmu|de|Jimmu|el|Αυτοκράτορας Τζίμου|eo|Imperiestro Jinmu|es|Jinmu Tennō|et|Jimmu|eu|Jimmu enperadorea|fa|امپراتور جینمو|fi|Jinmu|fr|Jinmu|hak|Sṳ̀n-vú Thiên-fòng|he|ג'ימו, קיסר יפן|hi|सम्राट जिममु|hr|Jinmu|hu|Dzsinmu japán császár|id|Jimmu|it|Jinmu|ja|神武天皇|jv|Jimmu Tenno|ka|ძიმუ|ko|진무 천황|kw|Emperour Jimmu|la|Jimmu|lt|Imperatorius Džinmu|lv|Džimmu|mn|Эзэн Хаан Жиммү|mr|जिम्मू|ms|Maharaja Jimmu|my|ဂျင်းမူ ဧကရာဇ်|nl|Jimmu|no|Jimmu|pl|Jimmu|pt|Jimmu|ru|Император Дзимму|sh|Car Jimmu|simple|Emperor Jimmu|sl|Cesar Džinmu|sr|Џинму|sv|Jimmu|th|จักรพรรดิจิมมุ|tl|Emperador Jimmu|tr|Jimmu|uk|Імператор Дзімму|uz|Jimmu|vi|Thiên hoàng Jimmu|war|Emperador Jimmu|wuu|神武天皇|zh|神武天皇|zh_classical|神武天皇|zh_min_nan|Sîn-bú Thian-hông|zh_yue|神武天皇|qid=Q200188|lt=Kamuyamato Iwarehiko-no-Sumeramikoto}}
 * {{ill|Amaterasu|Q455602|qid=Q455602|lt=Amaterasu-Ōmikami}}
 * {{ill|Toyouke-hime|Q2983724|qid=Q2983724|lt=Toyoukehime-no-Kami}}
 
-=== History ===
+== History ==
 From ancient times it was enshrined at Sano with many subsidiary shrines, and from early on had shrine administrators and bettō. It was revered by local people as a famous shrine, and on the enthronement grace occasion of Emperor Montoku on December 8, Kashō 3, it was granted Senior Sixth Rank Upper. Also, Lord Maeda Toshitsune of Kaga Domain especially revered it, visited on April 2, Shōhō 1, prayed for lasting military fortune and peace of the state, and on May 1 of the next year personally served as chief officiant.
 
 In May Meiji 35 it was promoted to prefectural shrine, on December 29 of the same year designated as a shrine receiving official offerings, and in April Meiji 40 the subsidiary Kanda Shrine was merged. In September Taishō 13 the haiden was rebuilt, and in August Shōwa 50 the honden, heiden, and shrine office were rebuilt.
 
-=== Rites ===
+== Rites ==
 * New Year festival ({{ill|January 1|Q2150|qid=Q2150}})
 * Kinen festival ({{ill|February 17|Q2341|qid=Q2341}})
 * Spring grand festival ({{ill|May 1|Q2544|qid=Q2544}})
@@ -60,7 +59,7 @@ In May Meiji 35 it was promoted to prefectural shrine, on December 29 of the sam
 Tsukinami festival is held every month on the 1st and 24th from 10:00 a.m.
 At spring and autumn grand festivals there are mikoshi processions, lion dance, and dancing.
 
-=== Precincts ===
+== Precincts ==
 * Sacred horse statue: stone-made; date and mason unknown, but said to have existed since ancient times.
 * Great chinquapin tree: trunk circumference 21 shaku; splits into four large branches at 5 shaku above ground; said to be over 350 years old.
 * Hyakudo mound: formerly used as the starting point for midnight “Ushi-no-koku” prayers.
@@ -68,12 +67,10 @@ At spring and autumn grand festivals there are mikoshi processions, lion dance, 
 * Miketsuyama (sacred garden): in front of the shrine on left and right, for praying for abundant crops.
 * Kagura-yama (sacred garden): behind the shrine; looking southeast one sees Mt. Hakusan, and looking north one sees the Kofun site Wadayama nearby.
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
 {{Shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Sano Shrine (Nomi)]][[Category:Shikinaisha|Sano Shrine (Nomi)]][[Category:Shikinaisha|Sano Shrine (Nomi)]][[Category:Shikinaisha in Kaga Province]]
 [[Category:Shinto shrines in Ishikawa Prefecture]]
 [[Category:Shikinaisha in Kaga Province]]
@@ -82,4 +79,5 @@ At spring and autumn grand festivals there are mikoshi processions, lion dance, 
 [[Category:能美市の歴史]]
 [[Category:Former Prefectural Shrines in Ishikawa Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -16,7 +16,7 @@
 | deity = {{ill|Emperor Ōjin|lt=Ōjin|ar|الإمبراطور أوجين|arz|الامبراطور اوجين|azb|اوجین (ایمپیراتور)|bn|সম্রাট ওজিন|cs|Ódžin|de|Ōjin|en|Emperor Ōjin|es|Ōjin Tennō|eu|Ōjin enperadorea|fa|امپراتور اوجین|fi|Ōjin|fr|Ōjin|hr|Ōjin|id|Kaisar Ōjin|it|Ōjin|ja|応神天皇|ka|ოძინი|ko|오진 천황|nl|Ojin|pl|Ōjin|pt|Ojin|ru|Император Одзин|sh|Car Ōjin|simple|Emperor Ōjin|sl|Cesar Odžin|sv|Ojin|th|จักรพรรดิโอจิง|tl|Emperador Ōjin|tr|Ōjin (imparator)|uk|Імператор Одзін|uz|Imperator Ōjin|vi|Thiên hoàng Ōjin|yo|Emperor Ōjin|zh_min_nan|Ôzin Thian-hông|zh_yue|應神天皇|zh|应神天皇|qid=Q317997}}
 }}
 
-{{nihongo|'''Gokiso Hachiman-gū'''|御器所八幡宮}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
+
 
 [[EN:Gokiso Hachimangū]]
 [[FR:Gokiso Hachiman-gū]]
@@ -24,7 +24,6 @@
 
 {{wikidata link|Q3109957|en|Gokiso Hachimangū|fr|Gokiso Hachiman-gū|ja|御器所八幡宮|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{神社
 |名称   = Gokiso Hachimangū
 |画像   = [[File:Gokiso-Hachimangu02.jpg|250px]]<br />Torii gate and worship hall
@@ -41,18 +40,18 @@
 {{Location map|Nagoya|label=Gokiso<br />Hachimangū|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Gokiso Hachimangū''' (御器所八幡宮) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} ({{ill|Hachiman shrine|Q11390939|qid=Q11390939}}) located in {{ill|Aichi Prefecture|Q80434|qid=Q80434}} {{ill|Nagoya|Q11751|qid=Q11751}} {{ill|Shōwa-ku|Q1155273|qid=Q1155273}} {{ill|Gokiso|Q50984787|qid=Q50984787}} 4-chōme.
+{{nihongo|'''Gokiso Hachiman-gū'''|御器所八幡宮}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} ({{ill|Hachiman shrine|Q11390939|qid=Q11390939}}) located in {{ill|Aichi Prefecture|Q80434|qid=Q80434}} {{ill|Nagoya|Q11751|qid=Q11751}} {{ill|Shōwa-ku|Q1155273|qid=Q1155273}} {{ill|Gokiso|Q50984787|qid=Q50984787}} 4-chōme. {{nihongo|'''Gokiso Hachiman-gū'''|御器所八幡宮}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
 
 The "Mononobe Shrine" of {{ill|Aichi District|Q552687|qid=Q552687|lt=Aichi District}} in {{ill|Owari Province|Q514506|qid=Q514506}}, as listed in the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}'', has been identified with {{ill|Mononobe Shrine (Higashi-ku, Nagoya)|Q18235752|qid=Q18235752|lt=Mononobe Shrine}} in {{ill|Higashi-ku, Nagoya|Q578824|qid=Q578824|lt=Higashi-ku}} {{ill|Tsutsui|Q62588744|qid=Q62588744|lt=Tsutsui}}, but there is a theory that the listing originally referred to this shrine.
 
-=== History ===
+== History ==
 A {{ill|Munafuda|Q8008834|qid=Q8008834}} from the {{ill|UNKNOWN|lt=Muromachi period}} survives, indicating that the shrine was called '''Hassho Daimyōjin''' during the {{ill|Middle Ages|Q12554|qid=Q12554}}. There is a tradition that the shrine was established as an imperially-designated shrine by {{ill|Emperor Ninmyō|Q349271|qid=Q349271}} to guard the {{ill|Kimon|Q11673539|qid=Q11673539}} (demon gate) of {{ill|Atsuta Shrine|Q482065|qid=Q482065}}. The date of founding is unknown, but {{ill|Jingū-ji Temple (Nagoya)|Q11589474|qid=Q11589474|lt=Iōzan Shingūji}}, which served as the shrine's {{ill|Jingū-ji|Q1074971|qid=Q1074971}} (shrine-temple) until the {{ill|Shinbutsu bunri|Q1970535|qid=Q1970535}} in the Meiji era, is said to have been founded in {{ill|850|Q30364|qid=Q30364}} ({{ill|Kashō|Q1373157|qid=Q1373157}} 3), suggesting that this shrine may have been founded before the {{ill|9th century|Q8083|qid=Q8083}}. The shrine's {{ill|Okumiya|Q11445659|qid=Q11445659}} was formerly located at the summit of {{ill|Hachimanyama Kofun (Nagoya)|Q17218723|qid=Q17218723|lt=Hachimanyama Kofun}} to the northwest, where various {{ill|Shinto ritual|Q11588671|qid=Q11588671}} are said to have been performed. There are a total of eight {{ill|Buddha in art|Q1000809|qid=Q1000809}} estimated to date from the {{ill|UNKNOWN|lt=Kamakura period}}, and one theory holds that the name "Hassho Daimyōjin" derives from having eight {{ill|UNKNOWN|lt=honji butsu}} (original Buddhist counterparts), meaning "Eight-deity Great Bright God."
 
 The oldest ridgepole tag dates from the renovation of Hassho Daimyōjin in {{ill|1441|Q6402|qid=Q6402}} ({{ill|Kakitsu|Q1193238|qid=Q1193238}} 1) by {{ill|Sakuma Mimasaka-no-kami|Q2975349|qid=Q2975349|lt=Sakuma Mimasaka-no-kami}} Iekatsu and others. The Sakuma clan built Gokiso-nishi Castle ({{ill|Biyō Shrine|Q11465530|qid=Q11465530}}) and governed the surrounding area, and records of further construction and maintenance by the Sakuma clan survive from this period onward. It is also said that a ridgepole tag remains in which {{ill|Tokugawa Ieyasu|an|Ieyasu Tokugawa|ar|توكوغاوا إيه-ياسو|arz|توكوجاوا ايه ياسو|ast|Tokugawa Ieyasu|az|Tokuqava İeyasu|ba|Токугава Иэясу|ban|Tokugawa Ieyasu|bcl|Tokugawa Ieyasu|be|Такугава Іэясу|bg|Токугава Иеясу|br|Tokugawa Ieyasu|bs|Tokugava Iejasu|ca|Tokugawa Ieyasu|cdo|Dáik-chiŏng Gă-kŏng|cs|Iejasu Tokugawa|de|Tokugawa Ieyasu|el|Τοκουγκάβα Ιεγιάσου|eo|Tokugawa Ieyasu|es|Tokugawa Ieyasu|et|Tokugawa Ieyasu|eu|Tokugawa Ieyasu|fa|توکوگاوا ایه‌یاسو|fi|Tokugawa Ieyasu|fr|Tokugawa Ieyasu|gl|Tokugawa Ieyasu|gor|Tokugawa Ieyasu|hak|Tokugawa Ieyasu|he|טוקוגאווה איאיאסו|hi|तोकुगावा इयासू|hr|Tokugava Iejasu|hu|Tokugava Iejaszu|hy|Իեյասու Տոկուգավա|id|Tokugawa Ieyasu|is|Tokugawa Ieyasu|it|Tokugawa Ieyasu|ja|徳川家康|jv|Tokugawa Ieyasu|ka|ტოკუგავა იეიასუ|kk|Токугава Иэясу|ko|도쿠가와 이에야스|la|Ieiasus Daifusama|lt|Tokugava Iejasu|lv|Tokugava Iejasu|mg|Tokugawa Ieyasu|mn|Токүгава Иэясү|ms|Tokugawa Ieyasu|nl|Tokugawa Ieyasu|no|Tokugawa Ieyasu|oc|Tokugawa Ieyasu|pl|Ieyasu Tokugawa|pt|Tokugawa Ieyasu|ro|Ieyasu Tokugawa|ru|Токугава Иэясу|sc|Tokugawa Ieyasu|sh|Ieyasu Tokugawa|simple|Tokugawa Ieyasu|sk|Iejasu Tokugawa|sl|Tokugava Iejasu|sq|Tokugava Iejasu|sr|Токугава Ијејасу|sv|Tokugawa Ieyasu|tg|Иеясу Токугава|th|โทกูงาวะ อิเอยาซุ|tl|Tokugawa Ieyasu|tok|jan Tokukawa Ijejasu|tr|Tokugawa Ieyasu|uk|Токуґава Ієясу|ur|توکوگاوا ائیاسو|uz|Tokugava Ieyasu|vi|Tokugawa Ieyasu|war|Tokugawa Ieyasu|wuu|德川家康|zh|德川家康|zh_classical|德川家康|zh_min_nan|Tokugawa Ieyasu|zh_yue|德川家康|zu|Tokugawa Ieyasu|qid=Q171977}} recorded his gratitude for divine protection and his intention to make offerings immediately after the {{ill|Battle of Sekigahara|Q234188|qid=Q234188}}. In {{ill|1659|Q6995|qid=Q6995}} ({{ill|Manji (era)|Q1145295|qid=Q1145295}} 2), the shrine was renamed Gokiso Hachimangū. During the {{ill|Edo period|ar|فترة إيدو|ast|Periodu Edo|az|Edo dövrü|bcl|Panahon nin Edo|be|Перыяд Эда|bg|Едо (период)|bn|এদো যুগ|bo|ཨེ་དོའི་དུས་སྐབས།|br|Marevezh Edo|ca|Període Edo|ckb|سەردەمی ئێدۆ|cs|Období Edo|cv|Эдо тапхăрĕ|da|Edo-perioden|de|Edo-Zeit|eo|Epoko de Edo|es|Período Edo|et|Edo ajastu|eu|Edo aroa|fa|دوره ادو|fi|Edo-kausi|fr|Époque d'Edo|gl|Período Edo|he|תקופת אדו|hi|एदो अवधी|hr|Edo (razdoblje)|hu|Edo-kor|id|Zaman Edo|is|Jedótímabilið|it|Periodo Edo|ja|江戸時代|jv|Jaman Édo|ko|에도 시대|lt|Edo laikotarpis|lv|Edo periods|mk|Едо (период)|mn|Эдогийн эрин|ms|Zaman Edo|nl|Edoperiode|nn|Edotida|oc|Periòde Edo|pl|Edo (okres)|pt|Período Edo|ro|Perioada Edo|ru|Период Эдо|simple|Edo period|sk|Obdobie Edo|sl|Obdobje Edo|sq|Periudha Edo|sr|Едо период|su|Période Edo|sv|Edoperioden|th|ยุคเอโดะ|tl|Panahong Edo|tok|tenpo pi kulupu lawa Eto|tr|Edo Dönemi|uk|Період Едо|ur|ایڈو دور|uz|Edo davri|vi|Thời kỳ Edo|war|Panahon Edo|wuu|江戶時代|zh|江户时代|zh_min_nan|Edo sî-tāi|zh_yue|江戶時代|qid=Q184963}}, the shrine grounds included even more extensive temple precincts and a deep forest, which reportedly served as a landmark along the highway. After the Meiji era, the shrine was completely separated from its temple through {{ill|Haibutsu kishaku|Q702298|qid=Q702298}} (anti-Buddhist movement), and today it is a shrine with precincts of over 1,300 tsubo (approximately 4,300 square meters). In ridgepole tags from before the {{ill|Sengoku period|ar|فترة سينغوكو|arz|فتره سينجوكو|be|Перыяд Сэнгоку|bg|Сенгоку|bn|সেনগোকু যুগ|bo|སེན་གོའི་དུས་མཚམས་|ca|Període Sengoku|ckb|سەردەمی سێنگۆکو|cs|Období Sengoku|de|Sengoku-Zeit|eo|Epoko Sengoku|es|Período Sengoku|et|Sengoku ajastu|eu|Sengoku aroa|fa|دوره سنگوکو|fi|Sengoku-kausi|fr|Époque Sengoku|ga|Tréimhse Sengoku|glk|سنگؤکۊ زمات|he|תקופת סנגוקו|hu|Hadakozó fejedelemségek kora (Japán)|id|Zaman Sengoku|is|Sengoku-öldin|it|Periodo Sengoku|ja|戦国時代 (日本)|ka|სენგოკუს პერიოდი|kk|Сэнгоку дәуірі|ko|센고쿠 시대|lt|Sengoku laikotarpis|ms|Zaman Sengoku|nl|Sengokuperiode|no|Sengoku-perioden|pl|Sengoku (okres)|pt|Período Sengoku|ro|Perioada Sengoku|ru|Период Сэнгоку|sh|Sengoku razdoblje|simple|Sengoku period|sk|Obdobie Sengoku|sq|Periudha Sengoku|sr|Сенгоку период|sv|Sengoku|th|ยุคเซ็งโงกุ|tl|Panahong Sengoku|tr|Sengoku Dönemi|uk|Період Сенґоку|ur|سینگوکو دور|uz|Sengoku davri|vi|Thời kỳ Chiến Quốc (Nhật Bản)|wuu|战国时代（日本）|zh|战国时代 (日本)|zh_min_nan|Sengoku sî-tāi|zh_yue|戰國時代 (日本)|qid=Q204023|lt=Sengoku period}}, the {{ill|Negi|Q11594490|qid=Q11594490}} (chief priest) used the surname {{ill|Fujiwara clan|Q641628|qid=Q641628}}, but from the Edo period onward, the shrine's priests had been styled "Andō Yosandayū" for generations. Since the Andō family became extinct during the {{ill|Meiji era|lt=Meiji period|qid=Q3125096}}, the Hirao family currently serves as the {{ill|Gūji|Q11453500|qid=Q11453500}} (head priest).
 
 The {{ill|Edo period|ar|فترة إيدو|ast|Periodu Edo|az|Edo dövrü|bcl|Panahon nin Edo|be|Перыяд Эда|bg|Едо (период)|bn|এদো যুগ|bo|ཨེ་དོའི་དུས་སྐབས།|br|Marevezh Edo|ca|Període Edo|ckb|سەردەمی ئێدۆ|cs|Období Edo|cv|Эдо тапхăрĕ|da|Edo-perioden|de|Edo-Zeit|eo|Epoko de Edo|es|Período Edo|et|Edo ajastu|eu|Edo aroa|fa|دوره ادو|fi|Edo-kausi|fr|Époque d'Edo|gl|Período Edo|he|תקופת אדו|hi|एदो अवधी|hr|Edo (razdoblje)|hu|Edo-kor|id|Zaman Edo|is|Jedótímabilið|it|Periodo Edo|ja|江戸時代|jv|Jaman Édo|ko|에도 시대|lt|Edo laikotarpis|lv|Edo periods|mk|Едо (период)|mn|Эдогийн эрин|ms|Zaman Edo|nl|Edoperiode|nn|Edotida|oc|Periòde Edo|pl|Edo (okres)|pt|Período Edo|ro|Perioada Edo|ru|Период Эдо|simple|Edo period|sk|Obdobie Edo|sl|Obdobje Edo|sq|Periudha Edo|sr|Едо период|su|Période Edo|sv|Edoperioden|th|ยุคเอโดะ|tl|Panahong Edo|tok|tenpo pi kulupu lawa Eto|tr|Edo Dönemi|uk|Період Едо|ur|ایڈو دور|uz|Edo davri|vi|Thời kỳ Edo|war|Panahon Edo|wuu|江戶時代|zh|江户时代|zh_min_nan|Edo sî-tāi|zh_yue|江戶時代|qid=Q184963|lt=Edo period}} local historian {{ill|Tsuda Masanari|Q22123474|qid=Q22123474}} advocated the theory that this shrine is the "Mononobe Shrine" of Aichi District recorded in the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}''<ref>{{Cite web|url=https://jinja.nagoya/top/syouwaku/gokiso-hatimangu|title=御器所八幡宮|accessdate=2024-11-03|publisher=名古屋神社ガイド|author-オオタマサユキ|date=2019-03-14}}</ref>. The theory locating the {{ill|Aichi District|Q552687|qid=Q552687|lt=Mononobe-gō}} of Aichi District in the Gokiso area is considered well-supported, based on the presence of multiple {{ill|Kofun|ca|Kofun|cs|Kofun|da|Kofun|de|Kofun|eo|Kofun|es|Kofun|fa|کوفون|fi|Kofun|fr|Kofun|he|קופון (רוגם)|hr|Kofun (grobnica)|it|Kofun|ja|古墳|ko|고훈|my|ခိုဖွန်း|pl|Kofun (kurhan)|pt|Kofun|ru|Кофун (захоронение)|simple|Kofun|th|โคฟุง|tr|Kofun|uk|Кофун|zh|古墳|qid=Q1141225}} (burial mounds) and {{ill|former Buddhist temple|Q11486287|qid=Q11486287}} in the Gokiso area, as well as the order of district entries in the ''{{ill|UNKNOWN|lt=Wamyō Ruijushō}}''{{Sfn|名古屋郷土文化会|1986|p=5}}.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Hachiman|Q261637|qid=Q261637|lt=Hachiman Ōkami}} ({{ill|Emperor Ōjin|Q317997|qid=Q317997|lt=Homudawake-no-Mikoto}})
 * {{ill|UNKNOWN|lt=Five Males and Three Females}}
 * {{ill|Ame-no-Koyane|lt=Ame-no-Koyane-no-Mikoto|qid=Q2564508}}
@@ -65,35 +64,33 @@ The {{ill|Edo period|ar|فترة إيدو|ast|Periodu Edo|az|Edo dövrü|bcl|Pan
 * {{ill|Oyamakui no Kami|lt=Ōyamakui|Q10935105|qid=Q10935105|lt=Sannō Ōkami}}
 The deities up to Kikurihime-no-Mikoto are those recorded in the historical texts described below, while the deities from Yatsurugi Ōkami onward are those recorded in the shrine's own written history.
 
-=== Subsidiary shrines ===
+== Subsidiary shrines ==
 * Gokiso Tenmangū
 ** Originally a {{ill|Tenjinsha|Q11443279|qid=Q11443279}} that was located from {{ill|Tenjin-chō|Q30934826|qid=Q30934826|lt=Tenjin-chō}} to {{ill|Kōbai-chō, Nagoya|Q26160583|qid=Q26160583|lt=Kōbai-chō}} and was later merged into this shrine. The former site was reportedly called "Tenjin no Mori" (Tenjin Forest) or "Tenjinyama" (Tenjin Hill). It is said to enshrine {{ill|Sugawara no Michizane|Q382005|qid=Q382005}}, but Tsuda Masao has suggested that it may be an ancient shrine.
 * {{ill|UNKNOWN|lt=Inari shrine}}
 * Hakuryū-sha
 
-=== Access ===
-=== By car ===
+== Access ==
+== By car ==
 * {{ill|Nagoya Municipal Road Horita Takaoka Route|Q11415129|qid=Q11415129}} Head east from the Shirogane 1-chōme intersection, approximately 600m (parking for 4 cars)
 
-=== Public transportation ===
+== Public transportation ==
 * {{ill|Tsurumai Line|Q1043806|qid=Q1043806}} Approximately 700m southwest from the Arahata intersection from {{ill|Arahata Station|Q862961|qid=Q862961}}
 * {{ill|Nagoya Municipal Bus|Q11414982|qid=Q11414982}} Approximately 600m east from the "Tōkō-dōri 3-chōme" bus stop (Kanayama Route 26, Shōwa Circulation Route)
 
-=== Notes ===
+== Notes ==
 {{脚注ヘルプ}}
 {{Reflist}}
 
-=== References ===
+== References ==
 * Shōwa-ku 50th Anniversary Commemorative Project Committee, ed., ''History of Shōwa Ward'', {{ill|1987|Q2429|qid=Q2429}}
 * {{Cite book|和書|editor=名古屋郷土文化会|title=郷土文化|volume=第40巻第3号（通巻145号）|publisher=名古屋郷土文化会|year=1986|date=1986-03-01|language=ja|url=https://dl.ndl.go.jp/ja/pid/6045176/1/5}}
 
-=== External links ===
+== External links ==
 * [https://www.gokiso-jinja.com/ Gokiso Hachimangū]
 
 {{神道 横}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Gokiso Hachimangū]][[Category:Shikinaisha|Gokiso Hachimangū]][[Category:Shikinai Shōsha]]
 [[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Owari Province]]
@@ -105,4 +102,5 @@ The deities up to Kikurihime-no-Mikoto are those recorded in the historical text
 [[Category:Buildings and structures in Showa-ku, Nagoya]]
 [[Category:御器所]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

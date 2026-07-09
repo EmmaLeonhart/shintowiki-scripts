@@ -16,14 +16,13 @@
 | deity = {{ill|Oyamakui no Kami|ja|大山咋神|simple|Oyamakui no Kami|zh|大山咋神|qid=Q10935105|lt=Ōyamakui}}
 }}
 
-{{nihongo|'''Uketa Shrine'''|請田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tanba Province]].
+
 
 {{commons category|Category:Uketa-jinja (Kameoka)}}
 [[ja:請田神社]]
 
 {{wikidata link|Q11631810|commons|Category:Uketa-jinja (Kameoka)|ja|請田神社|grok=none|check_date=2026-05-27}}
 
-== Japanese content ==
 {{出典の明記|date=2026-01}}
 {{神社
 |名称   = Uketa Shrine
@@ -43,15 +42,15 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
 [[File:Hozukyō (Kameoka).JPG|thumb|220px|right|{{center|Entrance to {{ill|Hozu Gorge|Q10887680|qid=Q10887680}}}}{{small|Uketa Shrine stands on the left bank; beyond the {{ill|Sagano Line|Q1073011|qid=Q1073011}} on the right bank is {{ill|Kuwada Shrine|Q11537594|qid=Q11537594|lt=Kuwata Shrine}}.}}]]
-'''Uketa Shrine''' (うけたじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Hozu-chō Tateiwa, {{ill|Kameoka, Kyoto|Q633996|qid=Q633996}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}}.
+{{nihongo|'''Uketa Shrine'''|請田神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} in Hozu-chō Tateiwa, {{ill|Kameoka, Kyoto|Q633996|qid=Q633996}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}}. {{nihongo|'''Uketa Shrine'''|請田神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tanba Province]].
 
 It stands in eastern {{ill|Kameoka, Kyoto|Q633996|qid=Q633996}}, at the entrance to {{ill|Hozu Gorge|Q10887680|qid=Q10887680}}, where the river's name changes from "{{ill|UNKNOWN|lt=Ōi River}}" to "{{ill|UNKNOWN|lt=Hozu River}}." Across the river stands {{ill|Kuwada Shrine|Q11537594|qid=Q11537594|lt=Kuwata Shrine}}. Together with Kuwata Shrine, it is connected with traditions about the excavation of Hozu Gorge.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Oyamakui no Kami|ja|大山咋神|simple|Oyamakui no Kami|zh|大山咋神|qid=Q10935105|lt=Ōyamakui-no-Kami}} (おおやまくいのかみ)
 * {{ill|Ichikishima-hime|Q11059454|qid=Q11059454|qid=Q11059454|lt=Ichikishimahime-no-Mikoto}} (いちきしまひめのみこと) - also called Sayorihime-no-Mikoto.
 
-=== History ===
+== History ==
 Because shrine buildings and documents were destroyed by military fire in the {{ill|Eiroku|Q1143341|qid=Q1143341}} era ({{ill|1558|Q6601|qid=Q6601}}-{{ill|1570|Q6659|qid=Q6659}}), detailed origins are unclear<ref name=setsumei>Explanatory board in the precincts.</ref>. The enshrined deity Ōyamakui-no-Kami is said to be a deity who came from Izumo to develop the Tanba region, then a lake area, and to have begun excavating Hozu Gorge from the site of {{ill|Kuwada Shrine|Q11537594|qid=Q11537594}} opposite Uketa Shrine<ref name=setsumei/>. It is said the shrine name "Uketa" comes from accepting (uketa) this groundbreaking hoe-rite for that development<ref name=setsumei/>. Traditions that the Kameoka Basin was once a lake remain in many nearby places (see "{{ill|Kameoka Basin|Q11181997|qid=Q11181997}}" for details).
 
 Shrine tradition gives its foundation as {{ill|Wadō (era)|Q1373026|qid=Q1373026}} 2 ({{ill|709|Q23514|qid=Q23514}}). Because the shrine site was called "Iwao," it is identified as a {{ill|Shikinai Ronsha|Q135022904|qid=Q135022904}} for the {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} listed in the mid-{{ill|Heian period|Q193292|qid=Q193292}} {{ill|Engishiki|Q1342448|qid=Q1342448}} {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as "Ishio Shrine" in {{ill|Kuwada district|Q11537600|qid=Q11537600}}, {{ill|Tanba Province|cs|Tanba (provincie)|de|Provinz Tamba|es|Provincia de Tanba|fa|ولایت تانبا|fr|Province de Tanba|gl|Provincia de Tanba|id|Provinsi Tamba|it|Tanba (provincia)|ja|丹波国|ko|단바국|lt|Tambos žemė|nl|Tamba (provincie)|pt|Província de Tanba|ru|Тамба (провинция)|simple|Tamba Province|sk|Tanba (provincia)|sr|Провинција Тамба|tr|Tamba (vilayet)|uk|Провінція Тамба|zh|丹波國|zh_min_nan|Tanba-kok|qid=Q954511}}. For unclear reasons, there is also a theory identifying it as Matsuo Shrine, another shikinaisha of Kuwata District<ref>Other candidate shrines for Matsuo Shrine include {{ill|Matsuo Shrine (Kameoka)|Q11529679|qid=Q11529679|lt=Matsuo Shrine}} in Asahi-chō, Kameoka.</ref>.
@@ -60,13 +59,13 @@ After the destruction by fire in the Eiroku era, it was moved to Miyanoue (prese
 
 In the early modern period, Hozu Gorge was called "Uketa Gorge," and with Uketa Shrine, the Kuwata Shrine on the opposite bank was also called "Uketa Shrine" or "Uketa Shrine (floating-field shrine)."
 
-=== Precincts ===
+== Precincts ==
 <gallery>
 File:Uketa-jinja (Kameoka) honden.JPG|Honden
 File:Uketa-jinja (Kameoka) torii.JPG|Torii
 </gallery>
 
-=== Subsidiary shrines ===
+== Subsidiary shrines ==
 '''Precinct sub-shrine'''
 * Inari Shrine - located beside the honden.
 
@@ -75,33 +74,31 @@ File:Uketa-jinja (Kameoka) torii.JPG|Torii
 * {{ill|Tongū|Q11664877|qid=Q11664877}}
 *: Located in the precincts of Hozu Hachimangū (21 Miyanoue, Hozu-chō, Kameoka). Uketa Shrine is said to have been temporarily moved here from the Eiroku era to the Kan'ei era, and after returning, a divided spirit continued to be enshrined here as a tongū ({{ill|Otabisho|Q11489117|qid=Q11489117}}). Its style is one-bay {{ill|Nagare-zukuri|Q210684|qid=Q210684}}. Hachimangū is said to have drifted here from Hosokawa village in Kita-Kuwata District during the Kan'ei era and was rebuilt on the former Uketa Shrine site after Uketa's return<ref name=chimei/>. On the hill to the north remains a bell tower as a relic of Wakōin, the former shrine-temple (now abolished){{ill|Jingū-ji|Q1074971|qid=Q1074971}}. These three structures, Hozu Hachimangū's honden and bell tower and Uketa Shrine's tongū, are designated cultural properties of Kyoto Prefecture<ref name="教育委員会">[http://www.kyoto-be.ne.jp/bunkazai/cms/?page_id=200 Kyoto Prefecture designated/registered cultural properties] (Kyoto Prefectural Board of Education).</ref><ref>[https://www.city.kameoka.kyoto.jp/shakai/bunkazai/hozuhachiman-uketa.html New Kyoto Prefecture cultural-property designation for Kameoka cultural assets] (Kameoka City website).</ref>.
 
-=== Festivals ===
+== Festivals ==
 * Autumn Grand Festival ({{ill|October 21|Q2960|qid=Q2960}})
 *: Also called the "Hozu Fire Festival." It begins with the eve festival; the divine spirit is welcomed from the main sanctuary to the tongū within Hozu Hachimangū.
 
-=== Cultural properties ===
-=== Kyoto Prefecture designated cultural properties ===
+== Cultural properties ==
+== Kyoto Prefecture designated cultural properties ==
 * Tangible cultural property
 ** Uketa Shrine Tongū - designated March 24, 2015 (Heisei 27)<ref name="教育委員会"/>.
 
-=== Footnotes ===
+== Footnotes ==
 {{脚注ヘルプ}}
 {{Reflist|2}}
 
-=== References ===
+== References ==
 {{small| (Sources used in writing this article) }}
 * Explanatory board in the precincts
 * ''Nihon Rekishi Chimei Taikei: Place Names of Kyoto Prefecture'' ({{ill|Heibonsha|Q11482108|qid=Q11482108}}), Kameoka City, Hozu village entry
 * Shikinaisha Research Association (ed.), ''Shikinaisha Survey Report Vol. 18'' (Kōgakkan University Press), Ishio Shrine entry
 
-=== Related literature ===
+== Related literature ==
 {{small| (Related literature not used in writing this article) }}
 {{Commonscat|Uketa-jinja (Kameoka)}}
 * {{Cite book|和書|editor=|author=|year=1923|chapter=[{{NDLDC|976611/53}} Hozu Village Uketa Shrine and Hachimangū]|title=Kyoto Prefectural Survey Committee Report on Historic Sites and Scenic Places, Volume 4|publisher=Kyoto Prefecture|isbn=|ref=}} - Link is to the National Diet Library Digital Collections.
 
 {{神道 横}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Uketa Shrine]][[Category:Shikinaisha|Uketa Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Tanba Province]]
 [[Category:Shinto shrines in Kyoto Prefecture]]
@@ -110,4 +107,5 @@ File:Uketa-jinja (Kameoka) torii.JPG|Torii
 [[Category:丹波湖伝説]]
 [[Category:Buildings and structures in Kameoka, Kyoto]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

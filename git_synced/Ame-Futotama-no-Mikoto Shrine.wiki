@@ -23,7 +23,6 @@
 
 {{wikidata link|Q11442508|commons|Category:Amefutotamanomikoto-jinja|ja|天太玉命神社|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Shrine
 |Name        = Amefutotamanomikoto Shrine
 |Image       = [[File:Amefutotamanomikoto-jinja, haiden.jpg|250px]]<br />Worship hall
@@ -51,7 +50,7 @@
 
 It is known as the clan shrine of the ancient {{ill|Inbe clan|Q8189229|qid=Q8189229}} (Imbe clan).
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The shrine enshrines the following four deities<ref name="説明板">On-site explanatory plaque.</ref>:
 :* '''{{ill|Futodama|Q11059539|qid=Q11059539|lt=Amefutotamanomikoto}}''' (also read Amenofutotamanomikoto)
 :* '''{{ill|Ōmiya-no-Me|Q24865597|qid=Q24865597|lt=Oomiyanome-no-mikoto}}'''
@@ -60,7 +59,7 @@ The shrine enshrines the following four deities<ref name="説明板">On-site exp
 
 In the ''{{ill|Engishiki|Q1342448|qid=Q1342448}}'' {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} (compiled in {{ill|Enchō|Q1327274|qid=Q1327274}} 5 [{{ill|927|Q30470|qid=Q30470}}]), the shrine is listed as having four enshrined deities{{Sfn|Amefutotamanomikoto Shrine (Heibonsha)|1981}}. It appears there as “Tamadamamiko Shrine, four deities,” with one deity identified as Tamadama-no-mikoto, while the identities of the remaining three are unclear{{Sfn|Amefutotamanomikoto Shrine (Kami-gami)|2000}}. The ''Engishiki'' also records four deities in the section on the Myōjin Festival.
 
-=== About the enshrined deities ===
+== About the enshrined deities ==
 The principal deity, {{ill|Futodama|Q11059539|qid=Q11059539|lt=Tamadama-no-mikoto (Futodama)}}, is known as the ancestral deity of the ancient {{ill|Inbe clan|Q8189229|qid=Q8189229}}. According to the ''{{ill|Kojiki|ace|Kojiki|ar|كوجيكي|az|Kociki|bcl|Kojiki|be|Кодзікі|bg|Коджики|ca|Kojiki|ckb|کۆجیکی|cs|Kodžiki|da|Kojiki|de|Kojiki|eo|Koĝiki|es|Kojiki|et|Kojiki|eu|Kojiki|fa|کوجیکی|fi|Kojiki|fr|Kojiki|gl|Kojiki|he|קוג'יקי|hi|कोजिकी|hr|Kojiki|hu|Kodzsiki|hy|Կոձիկի|id|Kojiki|it|Kojiki|ja|古事記|ka|კოძიკი|kk|Кодзики|kn|ಕೋಜಿಕಿ|ko|고사기|la|Kojiki|lt|Kodžiki|mk|Коџики|ml|കൊജികി|ms|Kojiki|my|ခိုဂျိခိ|nl|Kojiki|no|Kojiki|oc|Kojiki|pl|Kojiki|pt|Kojiki|ro|Kojiki|rsk|Кодїки|ru|Кодзики|sh|Kojiki|simple|Kojiki|sk|Kodžiki|sl|Kodžiki|sr|Коџики|sv|Kojiki|ta|கோஜிகி|th|โคจิกิ|tl|Kojiki|tr|Kojiki|uk|Кодзікі|vi|Cổ sự ký|zh|古事記|zh_classical|古事記|qid=Q813031}}'', ''{{ill|Nihon Shoki|Q813935|qid=Q813935}}'', and ''{{ill|Kogo Shūi|Q531555|qid=Q531555}}'', this deity performed sacred rites together with {{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508}} (ancestral deity of the {{ill|Nakatomi clan|Q1198447|qid=Q1198447}}) during the concealment of {{ill|Amaterasu|Q455602|qid=Q455602}} in the {{ill|Amano-Iwato|Q3231835|qid=Q3231835}} cave, and later accompanied {{ill|Ninigi-no-Mikoto|Q1056017|qid=Q1056017}} during the {{ill|Tenson kōrin|Q1084733|qid=Q1084733}} as one of the five accompanying deities{{Sfn|Amefutotamanomikoto Shrine (Kami-gami)|2000}}.  
 
 The Inbe clan, descended from Futodama-no-mikoto, shared responsibility for court rituals with the Nakatomi clan{{Sfn|Inbe clan (ancient clan)|2010}}{{Sfn|Imbe (Ancient Clan Encyclopedia)|2015}}. The shrine listed in the ''Engishiki'' as “Tamadama-no-mikoto Shrine” is therefore thought to have been the clan shrine of the Inbe{{Sfn|Amefutotamanomikoto Shrine (Kami-gami)|2000}}. The surrounding area, bearing the place name “Inbe,” is considered the clan’s original homeland{{Sfn|Amefutotamanomikoto Shrine (Kami-gami)|2000}}. However, the identification of this shrine with the “Tamadama-no-mikoto Shrine” of the ''Engishiki'' dates only from {{ill|Genroku|ar|فترة غنروكو|cs|Genroku|de|Genroku|es|Genroku|fa|گنروکو|fr|Ère Genroku|id|Genroku|it|Genroku|ja|元禄|ko|겐로쿠|pt|Genroku|ru|Гэнроку|simple|Genroku|sk|Genroku|sr|Генроку|sv|Genroku|tr|Genroku|zh|元祿|qid=Q1325001}} 10 ({{ill|1697|Q7702|qid=Q7702}}), when it was proposed by Matsushita Kenrin, and its earlier history remains unclear{{Sfn|Amefutotamanomikoto Shrine (Kami-gami)|2000}}.
@@ -69,7 +68,7 @@ As noted above, the ''Engishiki'' lists four enshrined deities but gives no deta
 
 As described below, a {{ill|Ruijū Sandai Kyaku|Q11665185|qid=Q11665185}} dated {{ill|Jōgan|Q1075635|qid=Q1075635}} 10 ({{ill|868|Q25061|qid=Q25061}}) in the ''{{ill|Ruijū Sandai Kyaku|Q11665185|qid=Q11665185}}'' places the shrine of “Amefutotama-no-kami,” together with the shrines of Usutaki-no-kami and Kayamabime-no-kami, among the descendants of {{ill|Asuka-ni-Imasu Shrine|Q11665959|qid=Q11665959}}.
 
-=== History ===
+== History ==
 ==== Overview ===
 The date of founding is unknown. As noted above, the area is thought to have been the homeland of the Inbe clan, and the shrine is presumed to have been established as their clan shrine.
 
@@ -83,25 +82,25 @@ In the {{ill|Edo period|Q184963|qid=Q184963}}, the shrine was known as “Kasuga
 
 After the {{ill|Meiji Restoration|af|Meiji-restourasie|als|Meiji-Restauration|an|Restauración Meichi|anp|मेइद्ज़ी कृंति|ar|استعراش مييجي|arz|استعادة مييچى|as|মেইজি পুনৰ্গঠন|ast|Restauración Meiji|az|Meyci islahatı|ba|Мэйдзи реставрацияһы|bat_smg|Meidžė Restauracėjė|be|Рэстаўрацыя Мэйдзі|be_x_old|Рэстаўрацыя Мэйдзі|bg|Реставрация Мейджи|bn|মেইজি পুনর্গঠন|br|Adsav Meiji|bs|Revolucija Meiji|bxr|Мэйдзи хубисхал|ca|Restauració Meiji|ce|Мэйдзин реставраци|ckb|چاکسازییەکانی مێیجی|co|Rinnuvamentu Meiji|cs|Reformy Meidži|cy|Adferiad y Meiji|da|Meiji-restaurationen|de|Meiji-Restauration|el|Μεταρρύθμιση Μεϊτζί|eo|Meiĵi-reformo|es|Restauración Meiji|et|Meiji restauratsioon|eu|Meiji berrezartzea|fa|نوسازی میجی|fi|Meiji-restauraatio|fiu_vro|Meiji restaurats'uun|fr|Restauration de Meiji|gan|明治維新|gl|Restauración Meiji|gn|Meiji ñemyatyrõ|he|רסטורציית מייג'י|hi|मेइजी पुनर्स्थापन|hif|Meiji Restoration|hr|Revolucija Meiji|hu|Meidzsi-restauráció|hy|Մեյձիի հեղափոխություն|hyw|Մէյձիի Յեղափոխութիւն|ia|Restauration Meiji|id|Restorasi Meiji|ilo|Restorasion ti Meiji|is|Meiji-endurreisnin|it|Rinnovamento Meiji|ja|明治維新|jv|Restorasi Meiji|ka|მეიძის რესტავრაცია|kk|Мэйдзи жаңғыртуы|ko|메이지 유신|krc|Мэйдзи реставрация|kw|Meiji Restoration|ky|Мэйдзи Реставрациясы|la|Restauratio Meiji|lt|Meidži restauracija|lv|Meidzi restaurācija|ml|മീജി പുനരുദ്ധരിക്കൽ|ms|Pemulihan Meiji|my|မေဂျီခေတ် ပြုပြင်မှုများ|nap|Restaurazzione Meiji|nds|Meiji-Restauratschoon|ne|मेइजी पुनर्स्थापना|new|मेइजी पूनर्स्थापना|nl|Meiji-restauratie|nn|Meijirestaurasjonen|no|Meiji-restaurasjonen|oc|Restauracion Meiji|pa|ਮੇਇਜੀ ਬਹਾਲੀ|pl|Restauracja Meiji|pms|Restaurassion Meiji|pnb|میجی مڑ آنا|pt|Restauração Meiji|ro|Restaurația Meiji|ru|Реставрация Мэйдзи|rue|Реставрація Мейджі|sd|ميجي بحالي|sh|Restauracija Meiji|si|මෙයිජි ප්‍රතිස්ථාපනය|simple|Meiji Restoration|sk|Meidži išin|sl|Obnova Meidži|sq|Restaurimi meixhi|sr|Меиђи обнова|su|Réstorasi Méiji|sv|Meijirestaurationen|sw|Matengenezo ya Meiji|ta|மெய்சி மீள்விப்பு|th|การฟื้นฟูเมจิ|tl|Pagpapanumbalik ng Meiji|tr|Meiji Restorasyonu|tt|Mäyci inqıylabı|uk|Реставрація Мейдзі|ur|بحالی میجی|uz|Meydzi islohoti|vep|Meidzin restavracii|vi|Minh Trị Duy tân|war|Restorasyon Meiji|wuu|明治维新|yi|מיידזשי רעסטאראציע|za|Mingzci veizsaen|zh|明治维新|zh_min_nan|Bêng-tī Î-sin|zh_yue|明治維新|qid=Q8707}}, in {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} 41 ({{ill|1908|Q2056|qid=Q2056}}) October, it was ranked as a {{ill|Son-sha|Q134917284|qid=Q134917284}} under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}{{Sfn|Tamadama-no-mikoto Shrine, four deities (Shikinaisha)|1982}}.
 
-=== Divine ranks ===
+== Divine ranks ==
 * {{ill|Ten'an|Q1075611|qid=Q1075611}} 3 ({{ill|859|Q23897|qid=Q23897}}) {{ill|January 27|Q2284|qid=Q2284}}: promoted from Junior Fifth Rank, Lower Grade to Junior Fifth Rank, Upper Grade (''{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}'') — recorded as “Tamadama-no-mikoto.”
 
-=== Subsidiary shrines ===
+== Subsidiary shrines ==
 * Tamayorihime-no-mikoto Shrine — Deity: {{ill|Tamayori-hime|Q56344982|qid=Q56344982|lt=Tamayorihime-no-mikoto}}<ref name="説明板"/>. Located to the right of the main hall.
 * Kasuga Shrine — Deity: {{ill|Ame-no-Koyane|fr|Ama-no-Koyane-no-mikoto|it|Ame-no-Koyane|ja|天児屋命|mni|ꯑꯃꯦ-ꯅꯣ-ꯀꯣꯌꯅꯦ|pt|Ame-no-Koyane|ru|Амэ-но коянэ-но микото|simple|Ame-no-Koyane|zh|天兒屋命|qid=Q2564508|lt=Ame-no-Koyane-no-mikoto}}<ref name="説明板"/>. Located to the left of the main hall.
 
-=== On-site information ===
+== On-site information ==
 '''Address'''
 * Inbe-chō Aza Ichinomichi 153, Kashihara City, Nara Prefecture
 
 '''Access'''
 * Railway: {{ill|West Japan Railway Company|Q502125|qid=Q502125}} (JR West), {{ill|Sakurai Line|Q865801|qid=Q865801}} (Manyō Mahoroba Line), {{ill|Kanahashi Station|Q5362037|qid=Q5362037}} — about a 13-minute walk
 
-=== Notes ===
+== Notes ==
 {{Footnote help}}
 {{reflist}}
 
-=== References ===
+== References ==
 * On-site explanatory plaque
 * Dictionaries
 ** {{Cite book|ja|year=1981|chapter=Amefutotamanomikoto Shrine|title={{ill|Japanese Historical Topography Series|Q17213509|qid=Q17213509}} 30: Place Names of Nara Prefecture|publisher={{ill|Heibonsha|Q11482108|qid=Q11482108}}|isbn=4582490301|ref={{Harvid|Amefutotamanomikoto Shrine (Heibonsha)|1981}}}}
@@ -113,19 +112,17 @@ After the {{ill|Meiji Restoration|af|Meiji-restourasie|als|Meiji-Restauration|an
 ** {{Cite book|ja|editor=Shikinaisha Research Association|author=Hirai Yoshitomo|year=1982|chapter=Tamadama-no-mikoto Shrine, four deities|title=Shikinaisha Survey Report, Vol. 3|publisher={{ill|Kogakkan University|Q1797584|qid=Q1797584}} Press|ref={{Harvid|Tamadama-no-mikoto Shrine, four deities (Shikinaisha)|1982}}}}
 ** {{Cite book|ja|editor={{ill|Ken'ichi Tanigawa|Q2392596|qid=Q2392596}}|author=Kimura Yoshikazu|year=2000|chapter=Amefutotamanomikoto Shrine|title=Gods of Japan: Shrines and Sacred Places, Vol. 4 Yamato (Reprint)|publisher={{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}}|isbn=978-4560025031|ref={{Harvid|Amefutotamanomikoto Shrine (Kami-gami)|2000}}}}
 
-=== Related items ===
+== Related items ==
 * {{ill|Futodama|Q11059539|qid=Q11059539}}
 * {{ill|Inbe clan|Q8189229|qid=Q8189229}}
 * {{ill|Awa Shrine|Q705547|qid=Q705547}}
 
-=== External links ===
+== External links ==
 {{Commonscat|Amefutotamanomikoto-jinja}}
 * [http://www.narashinsei.com/search/%E3%82%A2%E8%A1%8C/%E5%A4%A9%E5%A4%AA%E7%8E%89%E5%91%BD%E7%A5%9E%E7%A4%BE/ Amefutotamanomikoto Shrine] — Nara Prefecture Association of Shinto Shrines
 * [http://21coe.kokugakuin.ac.jp/db/jinja/kindex2.php?J_ID=22817 Tamadama-no-mikoto Shrine, four deities] — Kokugakuin University 21st Century COE Program “Shinto and Shrine Historical Sources”
 
 {{Shinto}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Ame-Futotama-no-Mikoto Shrine]][[Category:Shikinaisha|Ame-Futotama-no-Mikoto Shrine]][[Category:Myōjin Taisha]]
 [[Category:Kanpei-sha]]
 [[Category:Shikinaisha in Yamato Province]]
@@ -140,4 +137,5 @@ After the {{ill|Meiji Restoration|af|Meiji-restourasie|als|Meiji-Restauration|an
 [[Category:Shinto shrines in Nara Prefecture]]
 [[Category:Inbe clan]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

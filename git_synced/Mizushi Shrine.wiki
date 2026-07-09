@@ -15,13 +15,12 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Mizushi Shrine'''|水主神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamashiro Province]].
+
 
 {{commons category|Category:Mizushi-Jinja, Joyo}}
 
 {{wikidata link|Q54153262|ja|水主神社 (城陽市)|grok=none|check_date=2026-06-02}}
 
-== Japanese content ==
 {{神社
 |名称   = Mizushi Shrine
 |画像   = [[画像:Mizushi Jinja Kyoto.jpg|250px]]<br/>Place of worship (honden in the back)
@@ -37,9 +36,9 @@
 |地図 = {{Location map|Japan Kyoto|label=Mizushi Shrine|position=top|width=180|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=180|frame-height=200}}
 }}
-'''Mizushi Shrine''' (みずしじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} enshrined at Mizushi Miyababa, {{ill|Jōyō, Kyoto|Q817276|qid=Q817276}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. It is a {{ill|Shikinai Taisha|Q134917288|qid=Q134917288}}, and its former rank was prefectural shrine.
+{{nihongo|'''Mizushi Shrine'''|水主神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} enshrined at Mizushi Miyababa, {{ill|Jōyō, Kyoto|Q817276|qid=Q817276}}, {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}. It is a {{ill|Shikinai Taisha|Q134917288|qid=Q134917288}}, and its former rank was prefectural shrine. {{nihongo|'''Mizushi Shrine'''|水主神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Yamashiro Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 According to shrine tradition, the ten deities currently enshrined are as follows:
 *{{ill|Nigihayahi|Q10949054|qid=Q10949054|lt=Amateru-Mi-Tama-no-Kami}}
 *{{ill|UNKNOWN|lt=Ame-no-Kagoyama-no-Mikoto}}
@@ -59,18 +58,18 @@ However, according to the "National Comprehensive Survey of Shrine Rituals and F
 *Konui-no-Mikoto
 According to the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, the entry indicates ten seats at Mizushi Shrine and notes participation of two deities in the {{ill|Ainame Festival|Q11581944|qid=Q11581944}}, showing that there were originally ten deities, two of which were Amateru-Mi-Tama-no-Kami and Yamashiro Okunitama-no-Mikoto.
 
-=== History ===
-=== Foundation ===
+== History ==
+== Foundation ==
 According to shrine tradition, in the reign of Emperor Sujin, Toyosukiiri-hime-no-Mikoto moved {{ill|Amaterasu|Q455602|qid=Q455602}} to Yamato Kasanui no Mura, and Nunakiiri-hime-no-Mikoto was made to enshrine Yamato Okunitama-no-Mikoto in Yamato and Yamashiro Okunitama-no-Mikoto in Yamashiro; this shrine is identified with the Yamashiro enshrinement. Since ''{{ill|Shinsen Shōjiroku|Q1045362|qid=Q1045362}}'' ({{ill|815|Q29917|qid=Q29917}}) states "Yamashiro no kuni shinbetsu, {{ill|UNKNOWN|lt=Mizushi no Atai}}, descendants of Hoakari-no-Mikoto," it is inferred that this shrine originally enshrined the clan ancestor {{ill|Amenohoakari|Q10940411|qid=Q10940411|lt=Ame-no-Hoakari Myojin}} (Amateru-Mi-Tama-no-Kami).
 
-=== Overview ===
+== Overview ==
 In {{ill|858|Q30371|qid=Q30371}} ({{ill|Ten'an|Q1075611|qid=Q1075611|lt=Ten'an}} 2) rain-prayer rites were held, and in {{ill|859|Q23897|qid=Q23897}} ({{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jogan}} 1) prayers for wind and rain were performed. National histories repeatedly record offerings for rain prayer at this shrine, and in the {{ill|Engishiki|Q1342448|qid=Q1342448}} {{ill|Rinji-sai|Q11612499|qid=Q11612499}} it was selected among the eighty-five rain-prayer deities, indicating a strong reputation for efficacy in rain prayer. In the Engishiki Jinmyocho it is ranked as a major shrine.
 
-=== Divine ranks ===
+== Divine ranks ==
 *{{ill|Ten'an|Q1075611|qid=Q1075611|lt=Ten'an}} 3 ({{ill|859|Q23897|qid=Q23897}}) {{ill|January 27|Q2284|qid=Q2284}}, promoted from Junior Fifth Rank Upper to Junior Fourth Rank Lower (''{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}'') - written as "Mizushi no Kami"
 *{{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jogan}} 8 ({{ill|866|Q23872|qid=Q23872}}) {{ill|November 20|Q3024|qid=Q3024}}, promoted from Junior Fourth Rank Lower to Junior Fourth Rank Upper (''Nihon Sandai Jitsuroku'') - written as "Mizushi no Kami"
 
-=== Precincts ===
+== Precincts ==
 The area beyond the worship hall is protected by iron bars; since the main hall and precinct shrines are all inside, visitors cannot approach directly in front of the main hall. The Mizushi Shrine main hall stands in front, with Kabaitsuki Shrine (below) on the left and Koromonui Shrine on the right.
 <gallery>
 ファイル:Mizushi Jinja Kyoto Honden.jpg|Main hall
@@ -78,7 +77,7 @@ The area beyond the worship hall is protected by iron bars; since the main hall 
 ファイル:Koromonui Jinja Mizushi.jpg|Koromonui Shrine
 </gallery>
 
-=== Kabaitsuki Shrine ===
+== Kabaitsuki Shrine ==
 {{神社
 |名称   = Kabaitsuki Shrine
 |画像   = [[画像:Kabaitsuki Jinja Mizushi.jpg|250px]]
@@ -95,25 +94,23 @@ The area beyond the worship hall is protected by iron bars; since the main hall 
 }}
 '''Kabaitsuki Shrine''' (かばいづきじんじゃ) is a precinct shrine of Mizushi Shrine. It is a {{ill|Shikinai Taisha|Q134917288|qid=Q134917288}}.
 
-==== History ====
+=== History ===
 Its founding date is unknown. In the same {{ill|Tsuzuki District, Kyoto|Q1154678|qid=Q1154678}}, there is the shikinaisha {{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi Shrine (Kyotanabe)|Q54153263|qid=Q54153263|qid=Q595520|lt=Tsukuyomi Shrine}}, and a relationship has been pointed out. It is also said that this shrine formerly stood in Osumi together with Tsukuyomi Shrine. However, due to flooding of the {{ill|Kizu River|Q3746236|qid=Q3746236|lt=Kizu River}}, the shrine buildings were washed away, and in {{ill|1672|Q7614|qid=Q7614}} ({{ill|Kanbun (era)|Q1146228|qid=Q1146228}} 12) it was relocated into the precincts of Mizushi Shrine. Afterward it came under shared administration with Mizushi Shrine.
 
-==== Divine rank ====
+=== Divine rank ===
 *{{ill|Ten'an|Q1075611|qid=Q1075611|lt=Ten'an}} 3 ({{ill|859|Q23897|qid=Q23897}}) {{ill|January 27|Q2284|qid=Q2284}}, promoted from Junior Fifth Rank Lower to Junior Fifth Rank Upper (''{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}'') - written as "Kabaitsuki no Kami"
 
-=== Site information ===
+== Site information ==
 '''Location'''
 * {{ill|Kyoto Prefecture|Q120730|qid=Q120730}}{{ill|Jōyō, Kyoto|Q817276|qid=Q817276}}Mizushi Miyababa 1
 
 '''Access'''
 * Nearest station: {{ill|Kintetsu Railway|Q1531085|qid=Q1531085|lt=Kinki Nippon Railway}} {{ill|Kyoto Line (Kintetsu)|eo|Linio Kintetsu-Kyōto|fr|Ligne Kintetsu Kyoto|it|Linea Kintetsu Kyōto|ja|近鉄京都線|ko|긴테쓰 교토선|nl|Kintetsu Kyoto-lijn|wuu|近铁京都线|zh|京都線|zh_classical|近鐵京都線|zh_yue|近鐵京都線|qid=Q1057349|lt=Kyoto Line}} {{ill|Tonoshō Station|Q7821630|qid=Q7821630}}; then 20 minutes on foot westward
 
-=== Footnotes ===
+== Footnotes ==
 {{Reflist}}
 
 {{神道 横}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Mizushi Shrine]][[Category:Shikinaisha|Mizushi Shrine]][[Category:Shikinaisha|Mizushi Shrine]][[Category:Shikinai Taisha]]
 [[Category:Shikinai Supershrine]]
 [[Category:Shikinaisha in Yamashiro Province]]
@@ -124,4 +121,5 @@ Its founding date is unknown. In the same {{ill|Tsuzuki District, Kyoto|Q1154678
 [[Category:Shikinaisha in Yamashiro Province]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

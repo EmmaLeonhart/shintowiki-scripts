@@ -16,13 +16,12 @@
 | deity = {{ill|Ōkuninushi|lt=Ōkuninushi|ca|Ōkuninushi|en|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}
 }}
 
-{{nihongo|'''Ikawadani Sōja'''|伊川谷惣社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Harima Province]].
+
 
 [[ja:伊川谷惣社]]
 
 {{wikidata link|Q11379343|ja|伊川谷惣社|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{Shrine
  | Name=Ikawadani Sōsha
  | Image=[[File:Ikawadani Sōsha.jpg|250px|Ikawadani Sōsha]]<br />Worship hall
@@ -38,16 +37,16 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
 
-'''Ikawadani Sōsha''' (いかわだにそうしゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in Ikawadani-chō Kamiwaki, Nishi Ward, Kobe City, Hyōgo Prefecture. It is considered one of the shrines identified with the Mononobe Shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}. Its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}. It is also called '''Sōsha Shrine'''.
+{{nihongo|'''Ikawadani Sōja'''|伊川谷惣社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in Ikawadani-chō Kamiwaki, Nishi Ward, Kobe City, Hyōgo Prefecture. It is considered one of the shrines identified with the Mononobe Shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}. Its former {{ill|Shakaku|Q10444029|qid=Q10444029}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}. It is also called '''Sōsha Shrine'''. {{nihongo|'''Ikawadani Sōja'''|伊川谷惣社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Harima Province]].
 
-=== History ===
+== History ==
 According to shrine tradition, on her return from the {{ill|Three Han Campaign|Q11249435|qid=Q11249435}}, {{ill|Empress Jingū|Q232803|qid=Q232803}} stopped at this place and enshrined {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Mikoto}}, which is said to mark the founding of the shrine. This account resembles the descriptions in the {{ill|Nihon Shoki|ar|نيهون شوكي|as|নিহন শ্ব'কি|az|Nihon şoki|bcl|Nihon Shoki|bg|Нихоншоки|ca|Nihon Shoki|cs|Nihonšoki|de|Nihonshoki|el|Νιχόν Σόκι|eo|Nihon Ŝoki|es|Nihonshoki|eu|Nihon Shoki|fa|نیهون شوکی|fi|Nihonshoki|fr|Nihon shoki|gl|Nihon Shoki|he|ניהון שוקי|hi|निहोन शोकी|hr|Nihon Shoki|hu|Nihonsoki|id|Nihon Shoki|it|Nihon shoki|ja|日本書紀|jv|Nihon Shoki|ko|일본서기|la|Nihon Shoki|mk|Нихон шоки|ms|Nihon Shoki|my|နိဟွန်းရှောခိ|nl|Nihon Shoki|no|Nihonshoki|oc|Nihon shoki|pl|Nihon-shoki|pt|Nihon Shoki|rsk|Нихон Шоки|ru|Нихон сёки|sco|Nihon Shoki|sh|Nihon Shoki|simple|Nihon Shoki|sl|Nihon Šoki|sq|Nihon Shoki|sr|Нихон шоки|sv|Nihonshoki|ta|நிஹான் ஷோகி|th|นิฮงโชกิ|tl|Nihon Shoki|tr|Nihon Shoki|uk|Ніхон Сьокі|uz|Nihon shoki|vi|Nhật Bản thư kỷ|zh|日本書紀|zh_min_nan|Ji̍t-pún Su-kì|zh_yue|日本書紀|qid=Q813935}} regarding the founding of {{ill|Hirota Shrine (Osaka City)|Q1466105|qid=Q1466105}}, {{ill|Ikuta Shrine|Q710086|qid=Q710086}}, {{ill|Nagata Shrine|Q661395|qid=Q661395}}, and {{ill|Sumiyoshi-taisha|Q705949|qid=Q705949}}, but there is no mention of this shrine in the Nihon Shoki.
 
 It is said that after a period of decline, the shrine was rebuilt in the 3rd year of {{ill|Enkyū|Q1193638|qid=Q1193638}} ({{ill|1071|Q19432|qid=Q19432}}).
 
 Perhaps because it was deeply revered by the local community, the area around the shrine has come to be called “Kijinyama” (Demon God Mountain).
 
-=== Annual Festival ===
+== Annual Festival ==
 Every year, the autumn festival is held on the first Saturday and Sunday of October.
 During the autumn festival, {{ill|Futon Daiko|Q11277203|qid=Q11277203}} and {{ill|Lion dance|Q713866|qid=Q713866}} are dedicated.
 
@@ -55,16 +54,14 @@ During the autumn festival, {{ill|Futon Daiko|Q11277203|qid=Q11277203}} and {{il
 Autumn Festival.JPG|Futon-daiko of the autumn festival
 </gallery>
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== External links ===
+== External links ==
 * [http://www.hyogo-jinjacho.com/data/6301252.html Sōsha - Hyōgo Prefecture Association of Shinto Shrines]
 
 {{Shinto horizontal}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Ikawadani Sōja]][[Category:Shikinaisha|Ikawadani Sōja]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Harima Province]]
 [[Category:Shinto shrines in Kobe]]
@@ -74,4 +71,5 @@ Autumn Festival.JPG|Futon-daiko of the autumn festival
 [[Category:Former Gō-sha in Hyōgo Prefecture]]
 [[Category:伊川谷町]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

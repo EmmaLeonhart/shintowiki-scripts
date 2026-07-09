@@ -23,7 +23,6 @@
 
 {{wikidata link|Q24874608|ja|神須牟地神社|grok=none|check_date=2026-05-30}}
 
-== Japanese content ==
 {{神社
 |名称 = Kamisumuji Shrine
 |画像 = [[File:Kamisumuji-jinja Haiden.jpg|270px|Haiden of Kamisumuji Shrine.]]<br />Haiden
@@ -40,12 +39,12 @@
 }}
 '''Kamisumuji Shrine''' (かみすむぢじんじゃ<ref name="Osaka city">[https://www.city.osaka.lg.jp/kyoiku/page/0000009080.html Osaka City designated cultural properties (FY2004)] ([https://www.city.osaka.lg.jp/ Osaka City]).</ref>) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|UNKNOWN|lt=Nagai Nishi}}, {{ill|Sumiyoshi-ku, Osaka|Q985702|qid=Q985702}}, {{ill|Osaka|Q35765|qid=Q35765}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and its former shrine rank was {{ill|Son-sha|ja|村社|qid=Q134917284}}. It is also called '''Kamisumuji-sha'''<ref name="Osaka city"/>.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|Kamimusubi|es|Kami-musubi-no-kami|fr|Kamimusubi|id|Kamimusubi|it|Kamimusubi|ja|カムムスヒ|mni|ꯀꯃꯤꯃꯨꯁꯨꯕꯤ|pl|Kamimusubi|ru|Камимусуби-но ками|sk|Kamimusubi|sv|Kami-Musubi|zh|神皇產靈尊|qid=Q3275901|lt=Kamimusubi Ōkami}}
 * {{ill|Ame-no-Tajikarao|Q849412|qid=Q849412|lt=Tajikarao-no-Mikoto}}
 * {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}}
 
-=== History ===
+== History ==
 [[File:Kamisumuji-jinja history sign.JPG|thumb|250px|Origin board of the shrine.]]
 The shrine history board states: "An ancient Engishiki-listed shrine called Sannomiya, founded nearly 2,000 years ago."
 
@@ -53,18 +52,18 @@ While {{ill|Sumiyoshi-taisha|Q705949|qid=Q705949}} was called the ichinomiya of 
 
 Priests of Sumiyoshi Taisha often concurrently served here, but after WWII, amid postwar disorder, this shrine faced a crisis of survival. A priest from an old shrine in {{ill|Yao, Osaka|Q490872|qid=Q490872}} accepted this shrine's land without charge and became its first guji{{Sfn|Osakajin|2010|p=39-40}}. The shrine's current origin text was researched and edited by his son, the second guji{{Sfn|Osakajin|2010|p=40}}<ref group="注釈">The current guji is the son of the second guji (grandson of the first); his second son is former {{ill|professional baseball player|Q11336312|qid=Q11336312}} {{ill|Keiji Obiki|Q6383649|qid=Q6383649}}.</ref>.
 
-=== Precinct ===
-=== Main shrine ===
+== Precinct ==
+== Main shrine ==
 Traditionally worshiped as a guardian deity of brewing and medicine, and known for strong divine virtue as a protector of both letters and arms.
 
 The main shrine buildings were destroyed by war in the Keicho era, then rebuilt on August 21, {{ill|Windberg (Freital)|Q6811|qid=Q6811}} ({{ill|Genna|Q635245|qid=Q635245|lt=Genna}} 4) by cooperation of four people including the Toyotomi retainer Tagaya{{Sfn|Osaka Prefectural Shinto Youth Association|1971|p=76}}. In the ninth month of {{ill|1736|Q6989|qid=Q6989}} ({{ill|Genbun|Q1145754|qid=Q1145754}} 1), the Tokugawa shogunate, concerned that this shrine and Tamai Shrine were declining, had two stone markers erected via mountain-merchant Ibei Yamaguchiya (Sugano Hirofusa){{Sfn|Osaka Prefectural Shinto Youth Association|1971|p=76}}.
 
-=== Marker stone ===
+== Marker stone ==
 This is one of marker stones set at 20 shrines that Edo-period Confucian scholar {{ill|Namikawa Seisho|Q6563872|qid=Q6563872}} identified as previously-lost {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} shrines. Shikinaisha are shrines listed in the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}'' (volumes 9 and 10), many of whose locations became unclear with the dissolution of the ancient state system<ref name="Osaka city"/>.
 
 In the Edo period, momentum rose to clarify and honor these shrines. From {{ill|1729|Q6952|qid=Q6952}} to {{ill|1735|Q6984|qid=Q6984}}, Namikawa compiled ''{{ill|Five Kinai Chronicles|Q11372555|qid=Q11372555}}'', identifying all uncertain Shikinaisha in the province with existing shrines. Due to cost, full-scale commemoration was difficult, so marker stones were first erected for 20 shrines in Settsu. This was carried out from {{ill|1736|Q6989|qid=Q6989}} into the following year with support of the Tokugawa shogunate, by Kubo Shigenobu under Namikawa's direction in Akagawa village (present {{ill|Akagawa|Q76140132|qid=Q76140132|lt=Akagawa}}, {{ill|Asahi-ku, Osaka|Q861271|qid=Q861271|lt=Asahi Ward}}). All markers still exist, four within Osaka City. Before Namikawa's identification, this shrine was called by another name, "Sannomiya." Although parts of his textual criticism are now seen as insufficient, these markers are important materials showing development of early-modern empiricism and antiquarianism<ref name="Osaka city"/>.
 
-=== Gallery ===
+== Gallery ==
 <gallery>
 Kamisumuji-jinja East Torii.JPG|{{ill|Torii|Q234731|qid=Q234731}} (east side)
 Kamisumuji-jinja South Torii.JPG|Torii (south side)
@@ -73,26 +72,26 @@ Kamisumuji-jinja Horse Statue.JPG|Dedicated horse statue
 A monument to the loyal dead in Kamisumuji-jinja.JPG|{{ill|monument to the loyal dead|Q11274518|qid=Q11274518}}. Calligraphy by {{ill|UNKNOWN|lt=Army General}} {{ill|Ikutarō Inoue|Q11372988|qid=Q11372988}}.
 </gallery>
 
-=== Subsidiary shrines ===
-=== Outside-precinct branch shrines ===
+== Subsidiary shrines ==
+== Outside-precinct branch shrines ==
 * {{ill|UNKNOWN|lt=Tamai Shrine}} (deities: {{読み仮名|{{ill|Ukanomitama|lt=Ukanomitama|Q3080728|qid=Q3080728|lt=Uganomitama-no-Mikoto}}|ウガノミタマノミコト}}, {{読み仮名|{{ill|UNKNOWN|lt=Kamuwakatama-no-kami}}|カムワカタマノカミ}}, {{読み仮名|{{ill|Ukemochi|Q2280323|qid=Q2280323}}|ホグイノカミ}})
 : An old Engishiki-listed shrine, also revered under the names "Nae-mi Shrine" and "Tanegashi Shrine."
 
-=== Precinct branch shrines ===
+== Precinct branch shrines ==
 * Agricultural Deity Shrine (deity: {{読み仮名|{{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōanamuji-no-Mikoto}}|オオナムチノミコト}}{{Sfn|Osaka Prefectural Shinto Youth Association|1971|p=76}}{{Sfn|History of Sumiyoshi Ward|1996|p=537}})
 : Revered by farmers as a deity of cultivation.
 
-=== Cultural properties ===
+== Cultural properties ==
 ; Osaka City designated cultural properties
 * Kamisumuji-sha name-marker stone
 * Tamai-sha name-marker stone
 
-=== Festivals ===
+== Festivals ==
 * Summer Grand Festival - {{ill|July 21|Q2727|qid=Q2727}}
 * Autumn Grand Festival - {{ill|October 21|Q2960|qid=Q2960}}
 * Monthly Festival - 21st of each month
 
-=== Visitor information ===
+== Visitor information ==
 ;Address
 * {{ill|Osaka|Q35765|qid=Q35765}}{{ill|Sumiyoshi-ku, Osaka|Q985702|qid=Q985702}}{{ill|UNKNOWN|lt=Nagai Nishi}} 2-1-4
 
@@ -105,31 +104,29 @@ A monument to the loyal dead in Kamisumuji-jinja.JPG|{{ill|monument to the loyal
 * {{ill|UNKNOWN|lt=Nagai Ekimae Hondori Shopping Street}}
 * {{ill|Osaka Municipal Dairyo Junior High School|Q11440441|qid=Q11440441}}
 
-=== References ===
+== References ==
 * {{Cite journal|和書|title=Shrines and temples of Sumiyoshi: The shrine that listens well, Kamisumuji Shrine |journal={{ill|Osakajin|Q11440031|qid=Q11440031}} |publisher=Osaka City Urban Engineering Information Center |page=38-40 |date=2010-05-01 |ref={{SfnRef|大阪人|2010}}}}
 * {{Cite |和書|title=Directory of Shrines in Osaka Prefecture |date=1971-01-22 |publisher=Osaka Prefectural Shinto Youth Association |pages=76 |ref={{SfnRef|大阪府神道青年会|1971}}}}
 * {{Cite |和書|title=History of Sumiyoshi Ward |date=1996-03-31 |publisher=70th Anniversary Project Committee, Sumiyoshi Ward |pages=537 |ref={{SfnRef|住吉区史|1996}}}}
 
-=== Notes ===
-=== Explanatory notes ===
+== Notes ==
+== Explanatory notes ==
 {{Reflist|group="注釈"}}
 
-=== Sources ===
+== Sources ==
 {{脚注ヘルプ}}
 {{Reflist}}
 
-=== See also ===
+== See also ==
 * {{ill|UNKNOWN|lt=Nakatomi Sumuji Shrine}}
 * {{ill|UNKNOWN|lt=Sumuji Sone Shrine}}
 
-===External links===
+==External links==
 {{commonscat|Kamisumuji-jinja}}
 *[http://www.kamisumudi-jinjya.or.jp/ Engishiki-listed Kamisumuji Shrine, enshrined at Nagai]
 
 {{shinto-stub}}
 {{神道 横}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Kamisumuji Shrine]][[Category:Shikinaisha|Kamisumuji Shrine]][[Category:Kanpei-sha]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Osaka]]
@@ -139,4 +136,5 @@ A monument to the loyal dead in Kamisumuji-jinja.JPG|{{ill|monument to the loyal
 [[Category:長居]]
 [[Category:Shikinaisha in Settsu Province]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

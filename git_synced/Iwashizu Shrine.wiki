@@ -14,7 +14,7 @@
 | deity = {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
 }}
 
-{{nihongo|'''Iwashizu Shrine'''|伊和志津神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 <ref>Kokugakuin University Shrine database</ref>
 
@@ -23,7 +23,6 @@
 
 {{wikidata link|Q11379248|commons|Category:Iwashizu-jinja|ja|伊和志津神社|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{Shrine
 |Name = Iwashizu Shrine
 |Image = [[File:Iwashizujinjya.JPG|270px]]<br>Main worship hall
@@ -40,25 +39,25 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=13|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
 
-'''Iwashizu Shrine''' (いわしづじんじゃ) is a Shinto shrine located in {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}, {{ill|Takarazuka, Hyōgo|Q823967|qid=Q823967}}, {{ill|Isoji|Q11379317|qid=Q11379317}}. It is a Shikinaisha Grand Shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} (a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=ronsha}}). It is also written as “'''Iwashizu Shrine'''.”
+{{nihongo|'''Iwashizu Shrine'''|伊和志津神社}} is a Shinto shrine located in {{ill|Hyōgo Prefecture|Q130290|qid=Q130290}}, {{ill|Takarazuka, Hyōgo|Q823967|qid=Q823967}}, {{ill|Isoji|Q11379317|qid=Q11379317}}. It is a Shikinaisha Grand Shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} (a {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=ronsha}}). It is also written as “'''Iwashizu Shrine'''.” {{nihongo|'''Iwashizu Shrine'''|伊和志津神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
-=== Enshrined deity ===
+== Enshrined deity ==
 * {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}
 :He is the {{ill|Ubusunagami|Q1392097|qid=Q1392097}} (ujigami) of {{ill|UNKNOWN|lt=Isoji Village}} (いそしむら) in {{ill|Settsu Province|Q864163|qid=Q864163}}, {{ill|Muko district|Q11545988|qid=Q11545988}}. It is believed that the ancestral deity of the Isoji no Omi clan was originally enshrined here.
 
-=== History ===
+== History ==
 Because it was already listed as a grand shrine in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, the shrine must have been founded no later than the 9th century. However, the surrounding area had been a base of the {{ill|UNKNOWN|lt=Isoji}}{{ill|Omi (title)|be|Омі (тытул)|ff|Omi (title)|fr|Omi (titre de noblesse)|it|Omi|ja|臣|pt|Omi (título)|ru|Оми (титул)|simple|Omi (title)|uk|Омі (титул)|uz|Omi|zh|臣 (姓)|qid=Q2574718}} clan since the latter half of the 8th century{{refnest|group=Notes|According to the {{ill|Shinsen Shōjiroku|de|Shinsen Shōjiroku|fr|Shinsen shōjiroku|ja|新撰姓氏録|ko|신찬성씨록|ru|Синсэн сёдзироку|zh|新撰姓氏錄|qid=Q1045362}} and the {{ill|Shoku Nihongi|Q611399|qid=Q611399}}, the lineage runs: {{ill|UNKNOWN|lt=Magotenomichi-ne no Mikoto}} → {{ill|Narahara|de|Narahara|ja|楢原|ko|나라하라|qid=Q92770386}} → {{ill|UNKNOWN|lt=Isoji}} → {{ill|Shigeno clan|ja|滋野氏|qid=Q11564992}}, sharing a common ancestor with the {{ill|Kii no Kuni no Miyatsuko|fr|Kii no Kuni no Miyatsuko|ja|紀伊国造|simple|Kii no Kuni no Miyatsuko|qid=Q11604953}}.}}, and it is possible that the Isoji no Omi founded the shrine during this period. There is also an “Iwashizu Shrine” of the same disputed ranking as a subsidiary shrine of {{ill|Hirota Shrine (Osaka City)|de|Hirota-Schrein|es|Santuario Hirota|eu|Hirota santutegia|fr|Hirota-jinja|id|Kuil Hirota|it|Santuario di Hirota|ja|廣田神社|ru|Хирота-дзиндзя|zh|廣田神社|qid=Q1466105}} ({{ill|Nishinomiya|ar|نيشينومايا (هيوغو)|arz|نيشينومايا, هيوجو|az|Nişinomiya|azb|نیشی‌نومیا، هیوقو|be|Нісіномія|bg|Нишиномия|ca|Nishinomiya|ce|Нисиномия|ceb|Nishinomiya Shi|ckb|نیشینۆمیا|cs|Nišinomija (Hjógo)|de|Nishinomiya|eo|Niŝinomija|es|Nishinomiya|et|Nishinomiya|eu|Nishinomiya (Hyōgo)|fa|نیشی‌نومیا، هیوگو|fi|Nishinomiya|fr|Nishinomiya|ga|Nishinomiya|gl|Nishinomiya|id|Nishinomiya, Hyōgo|it|Nishinomiya|ja|西宮市|ko|니시노미야시|lb|Nishinomiya|lg|Nishinomiya|mdf|Нисиномия|mzn|نیشی‌نومیا، هیوگو|nl|Nishinomiya|no|Nishinomiya|pl|Nishinomiya|pt|Nishinomiya|ro|Nishinomiya|ru|Нисиномия|sco|Nishinomiya|sh|Nishinomija|simple|Nishinomiya, Hyōgo|sr|Нишиномија|sv|Nishinomiya|szl|Nishinomiya|tg|Нишиномия|th|นิชิโนมิยะ|tl|Nishinomiya|tr|Nishinomiya|tt|Нисиномия|tum|Nishinomiya|uk|Нісіномія|ur|نیشیمومیا, ہیوگو|uz|Nishinomiya|vi|Nishinomiya|war|Nishinomiya|zh|西宮市|zh_classical|西宮市|zh_min_nan|Nisinomiya-chhī|zh_yue|西宮|qid=Q243853}}).
 
 During the {{ill|Azuchi–Momoyama period|ar|فترة أزوتشي-موموياما|ast|Periodu Azuchi-Momoyama|be|Перыяд Адзуці-Мамаяма|bg|Адзучи-Момояма|br|Marevezh Azuchi-Momoyama|ca|Període Azuchi-Momoyama|ckb|سەردەمی ئازوچی-مۆمۆیاما|cs|Období Azuči-Momojama|de|Azuchi-Momoyama-Zeit|eo|Azuĉi-Momojama-epoko|es|Período Azuchi-Momoyama|eu|Azuchi-Momoyama aroa|fa|دوره آزوچی-مومویاما|fi|Azuchi-Momoyama-kausi|fr|Époque Azuchi Momoyama|he|תקופת אזוצ'י-מומויאמה|hu|Azucsi–Momojama-kor|id|Zaman Azuchi–Momoyama|it|Periodo Azuchi-Momoyama|ja|安土桃山時代|ka|აძუტი-მომოიამა|ko|아즈치모모야마 시대|lt|Momojama laikotarpis|ms|Zaman Azuchi–Momoyama|nl|Azuchi-Momoyamaperiode|no|Azuchi-Momoyama-perioden|pl|Azuchi-Momoyama|pt|Período Azuchi-Momoyama|ro|Perioada Azuchi-Momoyama|ru|Период Адзути-Момояма|simple|Azuchi–Momoyama period|sk|Obdobie Azuči-Momojama|sr|Азучи-Момојама период|sv|Azuchi|th|ยุคอาซูจิ–โมโมยามะ|tl|Panahong Azuchi–Momoyama|tr|Azuchi-Momoyama Dönemi|uk|Період Адзуті-Момояма|vi|Thời kỳ Azuchi-Momoyama|wuu|安土桃山时代|zh|安土桃山时代|zh_min_nan|Azuti-Momoyama sî-tāi|zh_yue|安土桃山時代|qid=Q319531}}, it is said that {{ill|Katō Kiyomasa|az|Katö Kiyomasa|ban|Kato Kiyomasa|be|Като Кіёмаса|ca|Katō Kiyomasa|cs|Kijomasa Kató|de|Katō Kiyomasa|el|Κατό Κιγιομάσα|es|Katō Kiyomasa|eu|Katō Kiyomasa|fa|کاتو کیوماسا|fi|Katō Kiyomasa|fr|Katō Kiyomasa|id|Katō Kiyomasa|it|Katō Kiyomasa|ja|加藤清正|kk|Като Киемаса|ko|가토 기요마사|mr|केटो कियोमासा|ms|Katō Kiyomasa|nl|Kato Kiyomasa|ru|Като Киёмаса|sr|Като Кијомаса|th|คาโต คิโยมาซะ|tr|Katō Kiyomasa|uk|Като Кійомаса|vi|Katō Kiyomasa|wuu|加藤清正|zh|加藤清正|zh_classical|加藤清正|zh_yue|加藤清正|qid=Q1069843}} kept a tiger that he brought back from Korea during the {{ill|Imjin War|ar|غزو اليابان لكوريا (1592-1598)|az|İmcin müharibəsi|azb|ایمجین ساواشی|be|Імдзінская вайна|ca|Invasions japoneses de Corea (1592-1598)|ckb|داگیرکاری ژاپۆن بۆ سەر کۆریا|cs|Imdžinská válka|de|Imjin-Krieg|el|Ιαπωνικές εισβολές στην Κορέα (1592–98)|es|Invasiones japonesas de Corea (1592-1598)|eu|Koreako japoniar inbasioak (1592-1598)|fa|تهاجم ژاپن به کره (۱۵۹۸–۱۵۹۲)|fi|Japanin hyökkäykset Koreaan (1592–1598)|fr|Guerre d'Imjin|gl|Invasións xaponesas de Corea (1592 - 1598)|he|הפלישות היפניות לקוריאה (1592–1598)|hi|कोरिया पर जापानी आक्रमण (1592-1598)|id|Invasi Korea oleh Jepang (1592–1598)|it|Invasioni giapponesi della Corea (1592-1598)|ja|文禄・慶長の役|kk|Имдин соғысы|ko|임진왜란|ky|Имдин согушу|la|Bellum Coreanum Taicosamense|ml|കൊറിയ കീഴടക്കാനുള്ള ജപ്പാന്റെ ശ്രമങ്ങൾ (1592-98)|ms|Serangan Jepun ke atas Korea (1592–1598)|nl|Japanse invasies van Korea|no|Imjinkrigen|oc|Guèrra d'Imjin|pl|Wojna japońsko-koreańska|ps|پر کوریا د جاپان یرغل (۱۵۹۲-۱۵۹۸ ز کلونه)|pt|Guerra Imjin|ro|Războiul Imjin|ru|Имдинская война|sr|Japanske invazije Koreje (1592–1598)|sv|Japans invasion av Korea (1592-1598)|th|การบุกครองเกาหลีของญี่ปุ่น (ค.ศ. 1592–98)|tr|Japonya'nın Kore'yi istilaları (1592-1598)|uk|Японсько-корейська війна|vi|Chiến tranh Nhật Bản – Triều Tiên (1592–1598)|wuu|太阁征朝|zh|萬曆朝鮮之役|zh_classical|壬辰倭亂|zh_min_nan|Jîm-sîn E Loān|zh_yue|壬辰倭亂|qid=Q576338}} within the shrine grounds.
 <ref>[http://www.city.takarazuka.hyogo.jp/sub_file/..%5Csub_file%5C04030101000000-iwa.html Takarazuka Folktales - Takarazuka City] Accessed February 26, 2019</ref>.
 
-=== Shrine grounds ===
+== Shrine grounds ==
 * Main hall – A one-bay shrine in {{ill|Kasuga-zukuri|Q3193781|qid=Q3193781}} style with {{ill|Wood shingle|Q199388|qid=Q199388}}, believed to date from the mid-{{ill|Edo period|Q184963|qid=Q184963}}.
 * In 1995, as part of a project to straighten {{ill|Hyogo Prefectural Road Route 337|Q11393353|qid=Q11393353|lt=prefectural road}} that bypasses the shrine, the intersecting approach road was converted into a grade-separated crossing, and buildings such as the worship hall were newly constructed.
 * Atago Shrine
 * Takarazuka Suitengū
 
-=== Festivals ===
+== Festivals ==
 * April 23–24 – Spring Festival
 * June 30 – Great Purification
 * July 27–28 – Summer Festival
@@ -66,30 +65,28 @@ During the {{ill|Azuchi–Momoyama period|ar|فترة أزوتشي-مومويا�
 * October 23–24 – Autumn Grand Festival
 * December 15 – Fire Kindling Festival
 
-=== Cultural properties ===
+== Cultural properties ==
 ; Designated cultural properties of Takarazuka City
 * Main hall
 ; Designated preserved forest of Takarazuka City
 * Iwashizu Shrine precincts – approximately 3,000 tsubo
 
-=== Access ===
+== Access ==
 * 6-minute walk from {{ill|Hankyū Imazu Line|Q3832688|qid=Q3832688}} {{ill|Sakasegawa Station|Q7402849|qid=Q7402849}}
 
-=== Footnotes ===
-=== Notes ===
+== Footnotes ==
+== Notes ==
 {{Reflist|group="Notes"}}
 
-=== References ===
+== References ==
 {{Footnote help}}
 {{Reflist}}
 
-=== External links ===
+== External links ==
 * [https://iwashidu-jinja.jp/about Iwashizu Shrine Official]
 * [http://www.y-tohara.com/settuk-iwasizu.html Settsu Shikinaisha: Iwashizu Shrine (Takarazuka City)]
 
 {{Shinto sidebar}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Iwashizu Shrine]][[Category:Shikinaisha|Iwashizu Shrine]][[Category:Shikinai Taisha]]
 [[Category:Shrines receiving Tsukinami-sai and Niiname-sai offerings]]
 [[Category:Kanpei-sha]]
@@ -103,4 +100,5 @@ During the {{ill|Azuchi–Momoyama period|ar|فترة أزوتشي-مومويا�
 [[Category:History of Takarazuka, Hyogo]]
 [[Category:Gion shrines]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

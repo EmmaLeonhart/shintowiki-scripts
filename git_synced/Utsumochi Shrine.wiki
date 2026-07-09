@@ -16,14 +16,13 @@
 | deity = {{ill|Amaterasu|lt=Amaterasu|ar|أماتيراسو|ary|أماطيراسو|az|Amaterasu|bcl|Amaterasu|be_x_old|Аматэрасу|be|Аматэрасу|bew|Amatérasu|bg|Аматерасу|ca|Amaterasu|cs|Amaterasu|da|Amaterasu|de|Amaterasu|el|Αματεράσου|en|Amaterasu|eo|Amaterasu|es|Amaterasu|et|Amaterasu|eu|Amaterasu|fa|آماتراسو|fi|Amaterasu|fr|Amaterasu|gl|Amaterasu|he|אמטראסו|hi|अमातेरसु|hr|Amaterasu|hu|Amateraszu Ómikami|hy|Ամատերասու Օմիկամի|id|Amaterasu|it|Amaterasu|ja|天照大神|jaquote|アマテラス|jv|Amaterasu|ka|ამატერასუ|ko|아마테라스 오미카미|la|Amaterasu|lb|Amaterasu|lt|Amaterasu|lv|Amaterasu|min|Amaterasu|ml|അമതേരസു|mni|ꯑꯃꯇꯦꯔꯁꯨ ꯑꯣꯃꯤꯀꯃꯤ|ms|Amaterasu|nl|Amaterasu|nn|Amaterasu|no|Amaterasu|or|ଆମାତେରାଶୁ|pa|ਆਮਾਤੇਰਸ|pl|Amaterasu|pt|Amaterasu|ro|Amaterasu|ru|Аматэрасу|sco|Amaterasu|sh|Amaterasu|simple|Amaterasu Ōmikami|sk|Amaterasu Ómikami|sl|Amaterasu|sr|Аматерасу|su|Amaterasu|sv|Amaterasu|ta|அமதெரசு|th|อามาเตราซุ|tl|Amaterasu|tr|Amaterasu|uk|Аматерасу|uz|Amaterasu|vi|Amaterasu|wuu|天照大神|zh_min_nan|Amaterasu|zh_yue|天照大神|zh|天照大神|qid=Q455602}}
 }}
 
-{{nihongo|'''Utsumochi Shrine'''|宇都母知神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Sagami Province]].
+
 
 {{commons category|Category:Utsumochi-jinja}}
 [[ja:宇都母知神社]]
 
 {{wikidata link|Q17217329|commons|Category:Utsumochi-jinja|ja|宇都母知神社|grok=none|check_date=2026-05-27}}
 
-== Japanese content ==
 {{Shrine
 |Name = Utsumochi Shrine
 |Image = [[File:Utsumochi-jinjya 1.JPG|270px]]<br />Torii gate and worship hall<br />{{maplink2|frame=yes|plain=yes|type=point|marker=religious-shinto|zoom=12|frame-align=center|frame-width=270}}
@@ -40,14 +39,14 @@
 |Map = Japan Kanagawa#Japan
 }}
 
-'''Utsumochi Shrine''' (うつもちじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Uchimoto, {{ill|Fujisawa, Kanagawa|Q386661|qid=Q386661}}, {{ill|Kanagawa Prefecture|Q127513|qid=Q127513}}. It is regarded as one of the shrines (minor shrine) listed among the thirteen {{ill|List of Shikinaisha in Sagami Province|Q11582137|qid=Q11582137|lt=Engishiki shrines}} of {{ill|Sagami Province|Q1053732|qid=Q1053732}} recorded in the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}'' of {{ill|Enchō|Q1327274|qid=Q1327274|lt=Engi}} 5 ({{ill|927|Q30470|qid=Q30470}}).<ref>{{Cite web|Japanese book|url=https://dl.ndl.go.jp/info:ndljp/pid/1273537/73?tocOpened=1 |title=''Engishiki Vol. 2 (Volumes 8, 9, 10)'', Nihon Koten Zenshū Kankōkai, Showa 4. Frame 73. ({{ill|National Diet Library Digital Collections|Q117959850|qid=Q117959850}}) |publisher= |accessdate=2018-09-03 }}</ref>
+{{nihongo|'''Utsumochi Shrine'''|宇都母知神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in Uchimoto, {{ill|Fujisawa, Kanagawa|Q386661|qid=Q386661}}, {{ill|Kanagawa Prefecture|Q127513|qid=Q127513}}. It is regarded as one of the shrines (minor shrine) listed among the thirteen {{ill|List of Shikinaisha in Sagami Province|Q11582137|qid=Q11582137|lt=Engishiki shrines}} of {{ill|Sagami Province|Q1053732|qid=Q1053732}} recorded in the ''{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}'' of {{ill|Enchō|Q1327274|qid=Q1327274|lt=Engi}} 5 ({{ill|927|Q30470|qid=Q30470}}).<ref>{{Cite web|Japanese book|url=https://dl.ndl.go.jp/info:ndljp/pid/1273537/73?tocOpened=1 |title=''Engishiki Vol. 2 (Volumes 8, 9, 10)'', Nihon Koten Zenshū Kankōkai, Showa 4. Frame 73. ({{ill|National Diet Library Digital Collections|Q117959850|qid=Q117959850}}) |publisher= |accessdate=2018-09-03 }}</ref> {{nihongo|'''Utsumochi Shrine'''|宇都母知神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Sagami Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * {{ill|UNKNOWN|lt=Amaterasu Omikami}}
 * {{ill|Wakumusubi|qid=Q10921330|lt=Wakumusubi-no-Kami}}
 * {{ill|UNKNOWN|lt=Wakahinakabe-no-Mikoto}}
 
-=== Origin and History ===
+== Origin and History ==
 The exact date of the shrine’s founding is unknown, but there is a record that solemn {{ill|UNKNOWN|lt=rituals}} were conducted in the 3rd year of {{ill|Emperor Yūryaku|Q357235|qid=Q357235}} (according to the {{ill|Japanese imperial year|Q1209728|qid=Q1209728|lt=Imperial Year}} 1119<ref>Stone monument within the shrine grounds</ref>{{Refnest|group="Note"|The Utsumochi Shrine page (Kanagawa Prefecture Shrine Office website, viewed September 20, 2017) states {{ill|495|Q30806|qid=Q30806}}.<ref name="kanajin-utsumochi" />}}) (''Nihon Sōkoku {{ill|Fudoki|Q1194534|qid=Q1194534}}''). Although there are no records of relocation, the same fudoki states that the shrine was located in “Utsumochi-go, Takakura District, Sagami Province.”<ref name="kanajin-utsumochi">{{Cite web|Japanese book|author= |url=http://www.kanagawa-jinja.or.jp/search_dtl.php4?jid=573&cd=1206054&scd=&npg=0 |title=Utsumochi Shrine |date=|publisher=Kanagawa Prefecture Shrine Office |accessdate=2017-09-20 }}</ref> In the ''Engishiki Jinmyōchō'', it is recorded as “Utsumochi Shrine, one of the six shrines in {{ill|Kōza District, Kanagawa|Q1202776|qid=Q1202776}} among the thirteen shrines of Sagami Province (shikinaisha).”
 
 In {{ill|Tengyō|Q1327340|qid=Q1327340}} 2 ({{ill|939|Q23422|qid=Q23422}}), the spirit of Wakahinakabe-no-Mikoto was transferred from {{ill|Yamato Province|Q907495|qid=Q907495}}{{ill|Hase|Q11396531|qid=Q11396531|lt=Hase}} and enshrined together in the {{ill|Aidono|Q135009883|qid=Q135009883}}. In {{ill|Shōō (Kamakura period)|Q1327371|qid=Q1327371}} 3 ({{ill|1290|Q5552|qid=Q5552}}), {{ill|Hōjō Sadatoki|Q3136681|qid=Q3136681}}, regent ({{ill|Shikken|Q1045904|qid=Q1045904}}) of the eighth shogun {{ill|Prince Hisaaki|Q715826|qid=Q715826}} of the {{ill|Kamakura shogunate|Q736839|qid=Q736839}}, rebuilt the shrine buildings. Later, in {{ill|Kan'ei|Q1192913|qid=Q1192913}} 4 ({{ill|1627|Q6833|qid=Q6833}}), the local lord {{ill|UNKNOWN|lt=Takagi Mondo Minamoto no Masatsugu}} donated 900 tsubo (about 3,000 {{ill|Square metre|Q25343|qid=Q25343|lt=m<sup>2</sup>}}) of shrine land and rebuilt the main hall. During the {{ill|Edo period|Q184963|qid=Q184963}}, the shrine was also known as “Daijingū” and “Shinmeigū.”
@@ -56,55 +55,53 @@ In {{ill|Meiji era|Q3125096|qid=Q3125096}} 6 ({{ill|1873|Q7757|qid=Q7757}}), it 
 
 The temple bell at the {{ill|Shōrō|de|Shōrō|es|Shōrō|eu|Shōrō|fr|Shōrō|id|Shōrō|it|Shōrō|ja|鐘楼|wuu|钟楼（东亚）|zh|鐘樓 (東亞)|qid=Q1363585}} located just across the road west of the {{ill|keidai|ja|境内|qid=Q11429002}} was offered in the spring of {{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}} 20 ({{ill|1945|Q5240|qid=Q5240}}) for material collection during the {{ill|Pacific War|Q184425|qid=Q184425}}, and was not installed for some time, but was rebuilt in {{ill|1975|Q2479|qid=Q2479}}. The entire shrine grounds were designated as a scenic forest, and on March 15, {{ill|1974|ab|1974|af|1974|als|1974|am|1974 እ.ኤ.አ.|an|1974|ar|1974|ary|1974|arz|1974|ast|1974|av|1974|avk|1974|az|1974|azb|۱۹۷۴ (میلادی)|ba|1974 йыл|ban|1974|bar|1974|bat_smg|1974|bcl|1974|be|1974|be_x_old|1974|bg|1974|bh|1974|bjn|1974|bn|১৯৭৪|bpy|মারি ১৯৭৪|br|1974|bs|1974.|ca|1974|cbk_zam|1974|cdo|1974 nièng|ce|1974 шо|ceb|1974|ckb|١٩٧٤|co|1974|crh|1974|cs|1974|csb|1974|cv|1974|cy|1974|da|1974|de|1974|diq|1974|dsb|1974|el|1974|eml|1974|eo|1974|es|1974|et|1974|eu|1974|fa|۱۹۷۴|fi|1974|fiu_vro|1974|fo|1974|fr|1974|frp|1974|frr|1974|fur|1974|fy|1974|ga|1974|gag|1974|gan|1974年|gcr|1974|gd|1974|gl|1974|gn|1974|gv|1974|ha|1974|hak|1974-ngièn|he|1974|hi|१९७४|hif|1974|hr|1974.|hsb|1974|ht|1974 (almanak gregoryen)|hu|1974|hy|1974|hyw|1974 թուական|ia|1974|id|1974|ilo|1974|io|1974|is|1974|it|1974|ja|1974年|jbo|1974moi|jv|1974|ka|1974|kaa|1974|kbp|1974|kk|1974 жыл|kn|೧೯೭೪|ko|1974년|krc|1974 джыл|ksh|Joohr 1974|ku|1974|kv|1974-ӧд во|kw|1974|la|1974|lb|1974|lez|1974 йис|li|1974|lij|1974|lmo|1974|ln|1974|lt|1974 m.|lv|1974. gads|mai|१९७४|map_bms|1974|mdf|1974|mg|1974|mhr|1974|mi|1974|min|1974|mk|1974|ml|1974|mn|1974 он|mr|इ.स. १९७४|mrj|1974 и|ms|1974|my|၁၉၇၄|myv|1974 ие|mzn|۱۹۷۴|nah|1974|nap|1974|nds|1974|nds_nl|1974|nl|1974|nn|1974|no|1974|nov|1974|nrm|1974|nso|1974|oc|1974|olo|1974|or|୧୯୭୪|os|1974-æм аз|pa|1974|pam|1974|pap|1974|pl|1974|pnb|1974|pt|1974|qu|1974|ro|1974|roa_tara|1974|ru|1974 год|rue|1974|sah|1974 сыл|sc|1974|scn|1974|sd|1974ع|se|1974|sh|1974.|shn|1974|si|1974|simple|1974|sk|1974|sl|1974|smn|1974|so|1974|sq|1974|sr|1974|stq|1974|su|1974|sv|1974|sw|1974|szl|1974|ta|1974|te|1974|tet|1974|tg|Соли 1974|th|พ.ศ. 2517|tk|1974|tl|1974|tly|1974|tpi|1974|tr|1974|tt|1974 ел|ty|1974|udm|1974 ар|ug|1974 - يىلى|uk|1974|ur|1974ء|uz|1974|vec|1974|vi|1974|vls|1974|vo|1974|wa|1974|war|1974|wuu|1974年|xmf|1974|yi|1974|za|1974 nienz|zea|1974|zh|1974年|zh_classical|一九七四年|zh_min_nan|1974 nî|zh_yue|1974年|qid=Q2478}}, it was designated as a {{ill|Nature Conservation Area|ja|自然環境保全地域|zh|自然環境保全地域|qid=Q11612866}}.<ref name="kanajin-utsumochi" /><ref>{{cite web|publisher=Kanagawa Prefecture|url=https://www.pref.kanagawa.jp/docs/t4i/cnt/f10578/p34320.html|title=Designation status of Kanagawa Prefecture Natural Environment Conservation Areas|accessdate=2024-12-05}}</ref>
 
-=== Auxiliary shrines ===
+== Auxiliary shrines ==
 Within the precincts, in addition to the main shrine, there are the following {{ill|UNKNOWN|lt=auxiliary shrines}}:
 * {{ill|Sugawara Shrine (disambiguation)|ja|菅原神社|qid=Q48532247}}
 * {{ill|Inari shrine|Q514480|qid=Q514480}}
 
-=== Festivals ===
+== Festivals ==
 * {{ill|January 1|Q2150|qid=Q2150}} - {{ill|Saitan-sai|ja|歳旦祭|qid=Q11546824}}
 * {{ill|September 15|Q2846|qid=Q2846}} - '''{{ill|Saitan-sai|ja|歳旦祭|qid=Q11546824}}'''
 * The Sunday before {{ill|November 15|Q2982|qid=Q2982}} - {{ill|Shichi-Go-San|ar|شيشي قو سان|ca|Shichi-Go-San|da|Shichi-go-san|de|Shichi-go-san|es|Shichi-Go-San|fa|شیچی-گو-سان|fi|Shichi-go-san|fr|Shichi-go-san|hu|Sicsi-Go-Szan|hy|Սիչի-Գո-Սան|id|Shichi-Go-San|it|Shichi-Go-San|ja|七五三|ko|시치고산|lt|Šičigosan|mn|Шичигосан|ms|Shichi-Go-San|my|ရှိချိဂေါ့ဆန်း|nl|Shichi-Go-San|pl|Shichi-go-san|pt|Shichi-Go-San|ru|Сити-го-сан|simple|Shichi-Go-San|sv|Shichi-go-san|tr|Shichi-Go-San|vi|Shichi-Go-San|zh|七五三|qid=Q1072387}} Festival
 * Last Sunday of November - {{ill|Niiname-no-Matsuri|Q11501518|qid=Q11501518}} ({{ill|Harvest festival|ar|مهرجان الحصاد|cy|Gŵyl gynhaeaf|de|Erntedankfest|eo|Tago de rikolto|es|Fiesta de la cosecha|fi|Sadonkorjuujuhla|fr|Fête de la récolte|hi|फसलों का त्यौहार|hy|Բերքի տոն|ia|Festa del Recolta|id|Perayaan panen|ja|収穫祭|ko|수확제|ms|Pesta menuai|nl|Oogstfeest|nn|Haustfest|pdc|Ernfescht|pl|Dziękczynne Święto Żniw|ru|Праздник урожая|sl|Zahvalna nedelja|sv|Skördefest|ta|அறுவடைத் திருவிழா|zh|丰收节|qid=Q2304773}})
 * {{ill|December 30|ab|Ԥхынҷкәынмза 30|af|30 Desember|als|30. Dezember|alt|Јаҥар айдыҥ 30 кӱни|am|30 December|an|30 d'aviento|ar|30 ديسمبر|ary|30 دجنبر|arz|30 ديسمبر|as|৩০ ডিচেম্বৰ|ast|30 d'avientu|av|30 декабр|avk|30-e ke santoleaksat|az|30 dekabr|azb|۳۰ دسامبر|ba|30 декабрь|ban|30 Désémber|bat_smg|Groudė 30|bcl|Desyembre 30|be|30 снежня|be_x_old|30 сьнежня|bg|30 декември|bh|30 दिसंबर|bjn|30 Disimbir|bn|৩০ ডিসেম্বর|bo|ཟླ་༡༢ཚེས་༣༠ཉིན་|bpy|ডিসেম্বর ৩০|br|30 Kerzu|bs|30. decembar|bxr|12 һарын 30|ca|30 de desembre|cbk_zam|30 de Diciembre|cdo|12 nguŏk 30 hô̤|ce|30 декабрь|ceb|Disyembre 30|ckb|٣٠ی کانوونی یەکەم|co|30 di dicembre|crh|Dekabr 30|cs|30. prosinec|csb|30 gòdnika|cv|Раштав, 30|cy|30 Rhagfyr|da|30. december|de|30. Dezember|diq|30 Kanun|dv|ޑިސެމްބަރު 30|el|30 Δεκεμβρίου|eml|30 ed disèmber|eo|30-a de decembro|es|30 de diciembre|et|30. detsember|eu|Abenduaren 30|ext|30 diziembri|fa|۳۰ دسامبر|fi|30. joulukuuta|fiu_vro|30. joulukuu päiv|fo|30. desember|fr|30 décembre|frp|30 de dècembro|frr|30. Deetsember|fur|30 di Dicembar|fy|30 desimber|ga|30 Nollaig|gag|30 Kırım ay|gan|12月30號|gd|30 an Dùbhlachd|gl|30 de decembro|gn|30 jasypakõi|gor|30 Desember|gu|ડિસેમ્બર ૩૦|gv|30 Mee ny Nollick|hak|12-ngie̍t 30-ngit|he|30 בדצמבר|hi|३० दिसम्बर|hif|30 December|hr|30. prosinca|hsb|30. decembra|ht|30 desanm|hu|December 30.|hy|Դեկտեմբերի 30|hyw|30 Դեկտեմբեր|ia|30 de decembre|id|30 Desember|ie|30 decembre|ig|30 Disemba|ilo|Disiembre 30|inh|ОагӀой 30|io|30ma di decembro|is|30. desember|it|30 dicembre|ja|12月30日|jv|30 Dhésèmber|ka|30 დეკემბერი|kaa|30-dekabr|kab|30 duǧember|kk|30 желтоқсан|kn|ಡಿಸೆಂಬರ್ ೩೦|ko|12월 30일|ks|دَسَمبَر 30|ksh|30. Dezemmber|ku|30ê kanûna pêşîn|kv|Ӧшым тӧлысь 30-ӧд лун|la|30 Decembris|lb|30. Dezember|li|30 december|lij|30 dexénbre|lmo|30 12|lo|30 ທັນວາ|lt|Gruodžio 30|lv|30. decembris|mai|३० दिसम्बर|mg|30 Desambra|mhr|30 теле|mk|30 декември|ml|ഡിസംബർ 30|mn|12 сарын 30|mr|डिसेंबर ३०|ms|30 Disember|my|၃၀ ဒီဇင်ဘာ|myv|Ацамковонь 30 чи|mzn|۳۰ دسامبر|nah|30 metztli diciembre|nap|30 'e dicembre|nds|30. Dezember|nds_nl|30 december|new|डिसेम्बर ३०|nl|30 december|nn|30. desember|no|30. desember|nrm|30 Dézembre|nso|Manthole 30|oc|30 de decembre|olo|30. talvikuudu|or|୩୦ ଡିସେମ୍ବର|os|30 декабры|pa|30 ਦਸੰਬਰ|pag|Disyembre 30|pam|Disiembri 30|pap|30 di desèmber|pl|30 grudnia|pnb|30 دسمبر|ps|30 ډيسمبر|pt|30 de dezembro|qu|30 ñiqin qhapaq raymi killapi|ro|30 decembrie|ru|30 декабря|rue|30. децембер|sa|३० दिसम्बर|sah|Ахсынньы 30|scn|30 di dicèmmiru|sco|30 December|sd|30 ڊسمبر|se|Juovlamánu 30.|sh|30. decembra|shn|တီႇသႅမ်ႇပႃႇ 30|si|දෙසැම්බර් 30|simple|December 30|sk|30. december|sl|30. december|smn|Juovlâmáánu 30.|sn|Zvita 30|sq|30 dhjetor|sr|30. децембар|su|30 Désémber|sv|30 december|sw|30 Desemba|szl|30 grudńa|ta|திசம்பர் 30|te|డిసెంబర్ 30|tg|30 декабр|th|30 ธันวาคม|tk|30 dekabr|tl|Disyembre 30|tly|30 Dekabr|tr|30 Aralık|tt|30 декабрь|udm|30 толсур|ug|30 - دېكابر|uk|30 грудня|ur|30 دسمبر|uz|30-dekabr|vec|30 de disenbre|vi|30 tháng 12|vls|30 december|vo|Dekul 30|wa|30 di decimbe|war|Disyembre 30|wuu|12月30号|xal|Бар сарин 30|xmf|30 ქირსეთუთა|yi|30סטן דעצעמבער|yo|30 December|za|12 nyied 30 hauh|zea|30 december|zh|12月30日|zh_min_nan|12 goe̍h 30 ji̍t|zh_yue|12月30號|qid=Q2901}} - {{ill|Ōharae-shiki|Q11261910|qid=Q11261910}}
 
-=== Reservoir ===
+== Reservoir ==
 At 2009 Ōdaira, Uchimoto, there is a shrine-owned {{ill|irrigation reservoir|Q112083751|qid=Q112083751}} (about 150 m<sup>2</sup>).<ref name="kanajin-utsumochi" />
 
-=== Origin of the Place Name ===
+== Origin of the Place Name ==
 One theory regarding the origin of the local place name (Uchimoto) is that it derived from “Uzumochi” (宇豆毛遅) of Utsumochi Shrine, which became corrupted into “Uchimodori.” In {{ill|archaic language|Q11411592|qid=Q11411592}}, both “utsu” and “mochi” are said to mean “small {{ill|Basin (geomorphology)|Q813672|qid=Q813672}},” and it is believed that the area was first called “Utsumochi” due to its topography, which later changed into “Uchimodori.” Another theory holds that when the swordsmith {{ill|Masamune|Q708935|qid=Q708935|lt=Gorō Masamune}} from {{ill|UNKNOWN|lt=Ebina}} was traveling to {{ill|Kamakura|Q10939227|qid=Q10939227}}, he rested in this area and, dissatisfied with the sword he was about to present, “returned home to reforge it,” which became the origin of the place name.<ref>{{Cite web|Japanese book|url=http://www.city.fujisawa.kanagawa.jp/gosho-c/data15331.shtml |title=History of Goshomi: Origin of Place Names |accessdate=August 29, 2013 |archiveurl=https://web.archive.org/web/20140821214356/http://www.city.fujisawa.kanagawa.jp/gosho-c/data15331.shtml |archivedate=August 21, 2014 }} - {{ill|Fujisawa, Kanagawa|Q386661|qid=Q386661}}</ref><ref>[Story of Uchimoto] (Fujisawa City Machizukuri Association)</ref>
 
-=== Access ===
+== Access ==
 * From the west exit of {{ill|Shōnandai Station|Q1036357|qid=Q1036357}} on the {{ill|Odakyū Enoshima Line|Q1063924|qid=Q1063924}}, {{ill|Sōtetsu Izumino Line|Q846367|qid=Q846367}}, or {{ill|Yokohama Municipal Subway Blue Line|Q841360|qid=Q841360}}:
 ** {{ill|Kanagawa Chuo Kotsu|Q10854960|qid=Q10854960|lt=Kanachu}} Bus ({{ill|Kanagawa Chuo Kotsu Ayase Branch|Q11588892|qid=Q11588892}}): For Ayase Depot via Keio University and Miyahara; get off at “Utsumochi Shrine Entrance,” 3-minute walk.
 ** Kanachu Bus ({{ill|Kanagawa Chuo Kotsu Ayase Branch|Q11588892|qid=Q11588892}}): Twin Liner Express for Keio University; get off at “Keio Junior and Senior High School,” 10-minute walk.
 * From the north exit of {{ill|Tsujidō Station|Q1049779|qid=Q1049779}} on the {{ill|East Japan Railway Company|Q499071|qid=Q499071|lt=JR}} line:
 ** Kanachu Bus ({{ill|Kanagawa Chuo Kotsu Ayase Branch|Q11588892|qid=Q11588892}}): For Keio University; get off at “Keio University,” 15-minute walk.
 
-=== Notes ===
+== Notes ==
 There are often no staff at the {{ill|Shinto shrine|Q845945|qid=Q845945}}, and telephone inquiries may not be possible. If you wish to receive a {{ill|Shuin|Q7504772|qid=Q7504772}}, it is more reliable to visit during festivals or New Year when events are being held.
 
 There are also {{ill|UNKNOWN|lt=toilets}} installed within the shrine grounds.
 
-=== References ===
+== References ==
 {{Reflist|2}}
 
-=== Further Reading ===
+== Further Reading ==
 * Utsumochi Shrine “Shrine Bulletin Board,” Kanagawa Prefecture Shrine Office “Utsumochi Shrine” page, etc.
 
-=== Related Articles ===
+== Related Articles ==
 {{Wikicommons|Category:Utsumochi-jinja}}
 * {{ill|List of Shikinaisha in Sagami Province|Q11582137|qid=Q11582137}}
 * {{ill|Kanagawa Prefecture Shrine Office Designated Shrine|Q11588941|qid=Q11588941}}
 
-=== External Links ===
+== External Links ==
 * https://utsumochi-jinja.com/ Utsumochi Shrine Official Website
 * http://www.kanagawa-jinja.or.jp/search_dtl.php4?jid=573&cd=1206054&scd=&npg=0 Utsumochi Shrine (Kanagawa Prefecture {{ill|Jinjachō|Q11590703|qid=Q11590703}})
 
 {{shinto-stub}}
 {{Shinto}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Utsumochi Shrine]][[Category:Shikinaisha|Utsumochi Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Sagami Province]]
 [[Category:藤沢市の神社]]
@@ -112,4 +109,5 @@ There are also {{ill|UNKNOWN|lt=toilets}} installed within the shrine grounds.
 [[Category:神奈川県の旧郷社]]
 [[Category:Former Gō-sha in Kanagawa Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

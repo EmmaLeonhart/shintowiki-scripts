@@ -26,7 +26,6 @@
 
 {{wikidata link|Q11570699|commons|Category:Mononobe-jinja, Oda|en|Mononobe Shrine|ja|物部神社 (大田市)|zh|物部神社 (大田市)|check_date=2026-05-18}}
 
-== Japanese content ==
 {{神社
 |名称   = 物部神社
 |画像   = [[ファイル:Precincts of Mononobe-jinja.JPG|270px|物部神社 境内]]<br/>境内全景。社殿背後は八百山。
@@ -43,11 +42,11 @@
 |地図   = {{Location map|Japan Shimane|label=物部神社|position=top|width=200|float=center|caption=|mark=Shinto torii icon vermillion.svg|marksize=20}}{{maplink2|frame=yes|plain=yes|zoom=11|type=point|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=140|frame-latitude=35.173|frame-longitude=132.493}}}}
 [[ファイル:Mononobe jinja Nameplate and Curtain.JPG|200px|right|thumb|'''拝殿の扁額と幔幕'''<br />幔幕には神紋「日負鶴」があしらわれている。]]
 '''物部神社'''（もののべじんじゃ）は、{{ill|Shimane Prefecture|Q132751|qid=Q132751}}{{ill|Ōda, Shimane|ar|أودا (شيمانه)|azb|اودا، شیمانه|bg|Ода (Шимане)|ca|Ōda|ce|Ода (гӀала)|ceb|Ōdachō-ōda|de|Ōda|es|Ōda (Shimane)|eu|Ōda (Shimane)|fa|اودا، شیمانه|fi|Ōda|fr|Ōda|gl|Ōda|id|Ōda, Shimane|it|Ōda|ja|大田市|ko|오다시|mg|Ōdachō-ōda|mzn|اودا، شیمانه|nl|Oda (Shimane)|pl|Oda (Japonia)|pt|Ōda|ro|Ōda|ru|Ода (город)|sv|Ōda, Shimane|tg|Ода|tl|Ōda, Shimane|tr|Ōda|tt|Ода (шәһәр)|uk|Ода (Сімане)|ur|اوڈا، شیمانے|vi|Ōda, Shimane|war|Ōda, Shimane|zh|大田市|zh_classical|大田市|zh_min_nan|Ôda-chhī|zh_yue|大田市|qid=Q384796}}にある{{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}}。{{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}、{{ill|Iwami Province|bar|Provinz Iwami|cs|Provincie Iwami|de|Provinz Iwami|es|Provincia de Iwami|fa|ولایت ایوامی|fr|Province d'Iwami|gl|Provincia de Iwami|id|Provinsi Iwami|it|Iwami (provincia)|ja|石見国|ko|이와미국|lt|Ivamio žemė|nl|Iwami (provincie)|pt|Província de Iwami|ru|Ивами (провинция)|simple|Iwami Province|sk|Iwami (provincia)|sr|Провинција Ивами|tr|Iwami (vilayet)|uk|Івамі|wuu|石见国|zh|石見國|zh_min_nan|Iwami-kok|qid=Q1053709}}{{ill|Ichinomiya|Q1656379|qid=Q1656379}}。{{ill|Q712534|lt=旧社格}}は国幣小社で、現在は{{ill|Association of Shinto Shrines|Q908077|qid=Q908077}}の{{ill|Beppyo shrine|ja|別表神社|mr|बेप्प्यो तीर्थ|simple|Beppyo shrine|zh|別表神社|qid=Q10898274}}。
-=== 概要 ===
+== 概要 ==
 宮中でも行われる{{ill|Chinkon-sai|Q11651192|qid=Q11651192}}を行うことで、{{ill|Isonokami Jingū|Q708859|qid=Q708859}}および{{ill|Yahiko Shrine|Q195684|qid=Q195684}}と共に有名である。ただし宮中が行う11月22日でなく、11月24日に行われる。
 
 祭神の宇摩志麻遅命が石見国に鶴に乗って降臨したとも伝えることから、当社の{{ill|UNKNOWN|lt=神紋}}は赤い太陽を背負った鶴の「日負鶴（ひおいづる）」となっている。また、宇摩志麻遅命は{{ill|Imperial Japanese Navy|Q219712|qid=Q219712}}の戦艦「{{ill|石見|Q17193732|qid=Q17193732|lt=石見}}」の守護神とされ、神像が艦内に祀られていた。この神像は後に当社へ奉納されている。
-=== 祭神 ===
+== 祭神 ==
 ; 主祭神
 : {{ill|Umashimaji|Q10946169|qid=Q10946169|lt=宇摩志麻遅命}} - {{ill|Mononobe clan|Q1755836|qid=Q1755836}}初代
 ; 相殿神（右座）
@@ -60,14 +59,14 @@
 : {{ill|Kotoamatsukami|Q776371|qid=Q776371}}と見られる5柱の神
 : {{ill|Hasshinden|Q11391709|qid=Q11391709|lt=鎮魂八神}}
 
-=== 歴史 ===
+== 歴史 ==
 社伝によれば、饒速日命の御子の宇摩志麻遅命は、{{ill|Emperor Jimmu|Q200188|qid=Q200188}}の大和平定を助けた後、一族を率いて{{ill|Mino Province|Q864156|qid=Q864156}}・{{ill|Koshi Province (Japan)|Q1351611|qid=Q1351611}}を平定した後に石見国で歿したという。宇摩志麻遅命は現在の社殿の背後にある八百山に葬られ、{{ill|Emperor Keitai|Q349277|qid=Q349277}}8年（{{ill|514|Q32881|qid=Q32881}}?）、天皇の命によって八百山の南麓に社殿が創建されたと伝えられる。
 
 神階は{{ill|Jōgan|Q1075635|qid=Q1075635|lt=貞観}}11年（{{ill|869|Q23917|qid=Q23917}}）に正五位下に叙され、同17年（{{ill|875|Q23816|qid=Q23816}}）に正五位上に、{{ill|Gangyō|Q747451|qid=Q747451}}元年（{{ill|879|Q25001|qid=Q25001}}）に従4位下に<ref>ここまでの階位は『{{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}』による。</ref>、{{ill|Tengyō|Q1327340|qid=Q1327340}}4年（{{ill|941|Q24255|qid=Q24255}}）に従四位上に<ref>『{{ill|Nihon Kiryaku|Q1053542|qid=Q1053542}}』による。</ref>昇叙した。{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}では小社に列し、石見国一宮として歴代領主の崇敬を受けた。
 
 {{ill|Shake (social class)|Q11588367|qid=Q11588367}}については、{{ill|Emperor Keikō|Q329723|qid=Q329723}}の時代に物部竹子連が{{ill|Iwami Kuni no Miyatsuko|Q60990902|qid=Q60990902}}に任ぜられ、その子孫は川合長田公を名乗り代々祭祀を行っていたというが、{{ill|Bunji (era)|Q1194415|qid=Q1194415}}4年（{{ill|1184|Q19728|qid=Q19728}}）{{ill|Kaneko Ietada|Q11646761|qid=Q11646761}}が{{ill|Ano district|ja|安濃郡 (島根県)|zh|安濃郡 (島根縣)|qid=Q10946986|lt=安濃郡}}の{{ill|Jitō|Q1329805|qid=Q1329805}}として赴いたときに子の道美が取って代わって当社の神主となり、以降{{ill|UNKNOWN|lt=金子氏}}が代々の祭祀を行うようになったという<ref>『日本の神々 神社と聖地 7 山陰』　156頁</ref>。戦前に金子氏は{{ill|Izumo-taisha|Q696362|qid=Q696362}}の{{ill|Izumo clan|Q11395856|qid=Q11395856|lt=千家・北島}}両家や、{{ill|Hinomisaki Shrine|Q1619446|qid=Q1619446}}社家（{{ill|Shimane Prefecture|Q132751|qid=Q132751}}{{ill|Izumo, Shimane|Q825166|qid=Q825166}}大社町）の「小野家」と並び、全国14社家の{{ill|Kazoku|Q241734|qid=Q241734|lt=社家華族}}（{{ill|Baron|Q165503|qid=Q165503}}）の一つに列する{{ill|Kyaku and Shiki|Q11536498|qid=Q11536498}}を有していた。
 
-=== 境内 ===
+== 境内 ==
 <gallery widths="200px">
 ファイル:Mononobe jinja Gate.JPG|'''社名標と鳥居'''
 ファイル:Mononobe jinja Haiden.JPG|'''拝殿''' 昭和13年（1938年）の建立。
@@ -76,8 +75,8 @@
 ファイル:Tomb of God.JPG|'''御神墓''' 八百山の山中にある古墳で宇摩志麻遅命の墓であると伝えられている。
 </gallery>
 
-=== 摂末社 ===
-=== 境内社 ===
+== 摂末社 ==
+== 境内社 ==
 [[ファイル:Ushiro jinja.JPG|200px|right|thumb|後神社]]
 ; 摂社
 :;後神社
@@ -107,7 +106,7 @@
 :; 八重山神社
 :: {{ill|Izanami|Q682306|qid=Q682306|lt=伊邪那美命}}、{{ill|Ōyamatsumi|Q386563|qid=Q386563|lt=大山祇神}}、若布都主神（わかふつぬしのかみ）を祀る。農耕、牛馬の守護神とされる。
 
-=== 境外社 ===
+== 境外社 ==
 ; 摂社
 :; 漢女神社（からめじんじゃ）
 :: {{ill|Takuhadachiji-hime|Q11110848|qid=Q11110848}}、{{ill|Ichikishima-hime|Q11059454|qid=Q11059454|lt=市杵島姫命}}、{{ill|UNKNOWN|lt=抓津姫命}}を祀る。
@@ -130,7 +129,7 @@
 :; 一宮祖霊社
 :: 幽冥主宰大神（かくりよしらすおおかみ）、社家累代の祖霊などを祀る。
 
-=== 祭事 ===
+== 祭事 ==
 日程は特殊神事のある日のみ示す。
 * 1月6日 矢道式
 * 1月7日 若菜御贄神事、斧初式、奉射式
@@ -150,13 +149,13 @@
 * 12月19日 庭火祭
 * 12月31日 大祓式、除夜祭、御柱献供式
 
-=== 文化財 ===
+== 文化財 ==
 島根県の文化財<ref>[http://www.pref.shimane.lg.jp/life/bunka/bunkazai/shimane/ 島根県の文化財]</ref>より。
 
-=== 重要文化財（国指定） ===
+== 重要文化財（国指定） ==
 * 太刀 銘了戒 - {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}}42年（{{ill|1909|Q2057|qid=Q2057}}）指定
 
-=== その他 ===
+== その他 ==
 ; 島根県指定有形文化財
 : 太刀 銘雲生 - {{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}}34年（{{ill|1959|Q5302|qid=Q5302}}）指定
 : 本殿 - 昭和45年（{{ill|1970|Q2474|qid=Q2474}}）指定
@@ -166,31 +165,29 @@
 ; {{ill|Partholon|Q11329825|qid=Q11329825}}像
 : {{ill|Tomohiro Wada|Q11417924|qid=Q11417924}}が当神社と縁があり奉納された。
 
-=== 現地情報 ===
+== 現地情報 ==
 ; 所在地
 : {{ill|Shimane Prefecture|Q132751|qid=Q132751}}{{ill|Ōda, Shimane|ar|أودا (شيمانه)|azb|اودا، شیمانه|bg|Ода (Шимане)|ca|Ōda|ce|Ода (гӀала)|ceb|Ōdachō-ōda|de|Ōda|es|Ōda (Shimane)|eu|Ōda (Shimane)|fa|اودا، شیمانه|fi|Ōda|fr|Ōda|gl|Ōda|id|Ōda, Shimane|it|Ōda|ja|大田市|ko|오다시|mg|Ōdachō-ōda|mzn|اودا، شیمانه|nl|Oda (Shimane)|pl|Oda (Japonia)|pt|Ōda|ro|Ōda|ru|Ода (город)|sv|Ōda, Shimane|tg|Ода|tl|Ōda, Shimane|tr|Ōda|tt|Ода (шәһәр)|uk|Ода (Сімане)|ur|اوڈا، شیمانے|vi|Ōda, Shimane|war|Ōda, Shimane|zh|大田市|zh_classical|大田市|zh_min_nan|Ôda-chhī|zh_yue|大田市|qid=Q384796}}川合町川合1545
 ; 交通アクセス
 : {{ill|West Japan Railway Company|Q502125|qid=Q502125|lt=JR西日本}}{{ill|San'in Main Line|Q1135170|qid=Q1135170}}{{ill|Ōdashi Station|Q5356122|qid=Q5356122}}より、{{ill|Iwami Kotsu|Q11587177|qid=Q11587177}}バス三瓶線にて物部神社前バス停下車、または粕渕線にて川合バス停下車徒歩1分。
 
-=== 脚注 ===
+== 脚注 ==
 
 <references />
 
-=== 参考文献 ===
+== 参考文献 ==
 * {{ill|Ken'ichi Tanigawa|Q2392596|qid=Q2392596}}編 『日本の神々 神社と聖地 7 山陰』（新装復刊、{{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}}、2000年 ISBN 978-4-560-02507-9）
 
-=== 関連項目 ===
+== 関連項目 ==
 * {{ill|Mononobe Shrine (disambiguation)|ja|物部神社|zh|物部神社|qid=Q11570698}} - 他の同名神社
 * {{ill|Mount Sanbe|Q4179256|qid=Q4179256}} - 八百山・物部神社門前からよく見える。　
 * {{ill|Iwami Ginzan Silver Mine|Q174139|qid=Q174139}}
 
-=== 外部リンク ===
+== 外部リンク ==
 {{commonscat|Mononobe-jinja, Oda}}
 * [http://www.mononobe-jinja.jp/ 物部神社]（公式サイト）
 
 {{神道 横}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Mononobe Shrine (Oda)]][[Category:Shikinaisha|Mononobe Shrine (Oda)]][[Category:Mononobe shrine]]
 [[Category:Shikinaisha|Mononobe Shrine (Oda)]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Iwami Province]]
@@ -218,4 +215,5 @@
 [[Category:Need translation]]
 [[Category:Need translation]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

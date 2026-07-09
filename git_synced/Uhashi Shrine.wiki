@@ -13,13 +13,12 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Uhashi Shrine'''|菟橋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kaga Province]].
+
 
 [[ja:菟橋神社]]
 
 {{wikidata link|Q109665899|ja|菟橋神社|grok=none|check_date=2026-05-27}}
 
-== Japanese content ==
 {{Shrine
 |Name = Uhashi Shrine
 |Image = [[File:Uhashi-jina, Komatsu 202308-1.jpg|270px]]<br />Torii
@@ -33,14 +32,14 @@
 |Map = {{Location map|Japan Ishikawa|label=Uhashi Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Uhashi Shrine''' (うはしじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Komatsu, Ishikawa|Q646898|qid=Q646898}}, {{ill|Ishikawa Prefecture|Q131281|qid=Q131281}}. It serves as the chief guardian shrine of {{ill|Kaga Province|Q907469|qid=Q907469}} and is also the {{ill|Ubusunagami|Q1392097|qid=Q1392097}} (tutelary deity) of Komatsu City. It is an ancient shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as “Uhashi Shrine, one of eight shrines in Nomi District, Kaga Province.” The main hall and the portable shrine are designated cultural properties of Komatsu City<ref>{{Cite web|Japanese|url=https://www.city.komatsu.lg.jp/soshiki/kankoubunka/bunka_rekishi/1/2171.html |title=Cultural Properties of Komatsu City | publisher=Komatsu City | accessdate=2021-11-21}}</ref>. Because it enshrines Suwa Ōkami together with Uhashi Ōkami, local people affectionately call it “{{ill|Suwa Shrine|Q2370082|qid=Q2370082|lt=Osuwasan}}.” Within the grounds is the Suwa Hall, the shrine’s assembly hall, which is used as a rest area for worshippers and as a wedding reception venue.
+{{nihongo|'''Uhashi Shrine'''|菟橋神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Komatsu, Ishikawa|Q646898|qid=Q646898}}, {{ill|Ishikawa Prefecture|Q131281|qid=Q131281}}. It serves as the chief guardian shrine of {{ill|Kaga Province|Q907469|qid=Q907469}} and is also the {{ill|Ubusunagami|Q1392097|qid=Q1392097}} (tutelary deity) of Komatsu City. It is an ancient shrine listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as “Uhashi Shrine, one of eight shrines in Nomi District, Kaga Province.” The main hall and the portable shrine are designated cultural properties of Komatsu City<ref>{{Cite web|Japanese|url=https://www.city.komatsu.lg.jp/soshiki/kankoubunka/bunka_rekishi/1/2171.html |title=Cultural Properties of Komatsu City | publisher=Komatsu City | accessdate=2021-11-21}}</ref>. Because it enshrines Suwa Ōkami together with Uhashi Ōkami, local people affectionately call it “{{ill|Suwa Shrine|Q2370082|qid=Q2370082|lt=Osuwasan}}.” Within the grounds is the Suwa Hall, the shrine’s assembly hall, which is used as a rest area for worshippers and as a wedding reception venue. {{nihongo|'''Uhashi Shrine'''|菟橋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kaga Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * Uhashi Ōkami (うはしだいじん) – Originally revered by the inhabitants of Uhashi Village as the local guardian deity. When the {{ill|Kokufu|Q1629088|qid=Q1629088}} of Kaga Province was established here during the {{ill|Heian period|Q193292|qid=Q193292}}, worship spread widely. Later, during the {{ill|Edo period|Q184963|qid=Q184963}}, the deity received patronage from the {{ill|UNKNOWN|lt=Maeda clan}}, and after becoming the protective shrine of both {{ill|Komatsu Castle|Q11461063|qid=Q11461063}} and {{ill|Kanazawa Castle|Q511412|qid=Q511412}}, Uhashi Ōkami also came to be revered as a guardian deity of Kaga Province.
 * {{ill|Takeminakata|qid=Q9150391|lt=Takeminakata-no-Mikoto|qid=Q9150391}}
 * {{ill|UNKNOWN|lt=Yasakatome-no-Mikoto}}
 
-=== History ===
+== History ==
 The shrine is said to have been founded in the first year of {{ill|Keiun|Q428753|qid=Q428753}} ({{ill|704|Q23503|qid=Q23503}}), or possibly earlier<ref name="osuwasan">{{Cite web|Japanese| url=https://www.osuwasan.com/yuisyo30.html |title=History | publisher=Uhashi Shrine| accessdate=2021-11-21}}</ref>.
 
 According to the “{{ill|UNKNOWN|lt=Wamyō Ruijushō}},” Uhashi Village in {{ill|Nomi District, Ishikawa|Q1130973|qid=Q1130973}}, Kaga Province—comprising thirty villages{{efn|Read “Uhashi-gō.” “莵” may also be written as “兎,” “兔,” or “菟,” later becoming “得,” forming Tokuhashi Village.}}—was revered as the chief guardian shrine by provincial governors, military governors, and people of all classes, who prayed for land development and peace. This suggests that the shrine has stood at the region’s center since before the formal establishment of Kaga Province.
@@ -51,15 +50,15 @@ When the provincial capital was placed in {{ill|UNKNOWN|lt=Tokuhashi Village}}, 
 
 Originally located in Ono Village, Tokuhashi Village, Nomi District, the shrine was later moved to Kami-Komatsu Village and then into Komatsu Castle. In 1651, it was relocated to the present site as a perpetual sacred precinct by the Maeda family. At that time, the main hall and other buildings were constructed, and numerous offerings such as portable shrines and sacred treasures were donated.
 
-=== Suwa Ōkami ===
+== Suwa Ōkami ==
 According to shrine tradition, in ancient times {{ill|Ōkuninushi|lt=Ōkuninushi-no-Mikoto|qid=Q276944}} came to the land of Kaga with his second son {{ill|Takeminakata|qid=Q9150391|lt=Takeminakata-no-Mikoto|qid=Q9150391}} to develop the Hokuriku region. They are said to have controlled floods, prevented violent winds, subdued calamities, cultivated the land, and taught agriculture, machinery, and industry. After becoming the guardian deity of Uhashi Village as the spiritual deity of Kaga Province, Takeminakata-no-Mikoto is said to have gone on to the land of {{ill|Shinano Province|Q289250|qid=Q289250}} at {{ill|Suwa Region|Q11631849|qid=Q11631849|lt=Suwa}}. It is also伝えられている that the ancestors of the Ueda family, who served as priests of this shrine, originated from priests of {{ill|Suwa-taisha|Q218813|qid=Q218813}}.
 
-=== Origin of the shrine name ===
+== Origin of the shrine name ==
 The shrine and deity name “Uhashi” derives from Uhashi Village. The {{ill|Kakehashi River|Q11538771|qid=Q11538771}} flowing through the area frequently flooded during the rainy season, causing elevated areas to appear like floating bridges. Ancient texts say this gave rise to the name “Uhashi.”
 
 In the 8th year of {{ill|Meiji era|Q3125096|qid=Q3125096}} ({{ill|1875|Q7764|qid=Q7764}}), the shrine was renamed Komatsu Suwa Shrine, and in the 14th year of Meiji ({{ill|1881|Q7808|qid=Q7808}}) it was ranked as a {{ill|Gō-sha|Q134917316|qid=Q134917316}}. However, in the following year it reverted to its current name. Even today, the strong association with Suwa remains, and locals still call it “Osuwasan.”
 
-=== Auxiliary shrines ===
+== Auxiliary shrines ==
 * Iwa-no-Mitama Shrine (Shinmei Shrine)
 * Kotohira Shrine – Enshrined deity: {{ill|Ōmononushi|qid=Q10936701|lt=Ōmononushi-no-Kami}}
 * Inari Shrine
@@ -68,7 +67,7 @@ In the 8th year of {{ill|Meiji era|Q3125096|qid=Q3125096}} ({{ill|1875|Q7764|qid
 * Tenjin Chigi Shinreisha / Aramitama Shrine
 * Sunadani Hakusan Shrine / Tsue Hakusan Shrine – {{ill|Kikurihime|Q11619891|qid=Q11619891}}, {{ill|Izanagi|Q813858|qid=Q813858|lt=Izanagi-no-Kami}}, {{ill|UNKNOWN|lt=Izanami-no-Kami}}
 
-=== Shrine grounds ===
+== Shrine grounds ==
 ; Bashō’s haiku monument
 : It is recorded in the travel diary of {{ill|UNKNOWN|lt=Kawai Sora}}, who accompanied {{ill|Matsuo Bashō|Q5676|qid=Q5676}} on his journey for ‘{{ill|UNKNOWN|lt=The Narrow Road to the Deep North}},’ that Bashō visited this shrine: “On the 27th day of the seventh month, clear weather; hearing that there was a festival at the local Suwa Shrine, we paid our respects.” A monument bearing the haiku composed on that occasion remains near the entrance: “Shiorashiki / na ya Komatsu fuku / hagi susuki.”
 
@@ -78,14 +77,14 @@ In the 8th year of {{ill|Meiji era|Q3125096|qid=Q3125096}} ({{ill|1875|Q7764|qid
 ; Shōryū no Matsu (Rising Dragon Pine)
 : A straight, towering pine about 28 meters tall and 1 meter in diameter, standing to the right when facing the main hall. It has existed since the Edo period around 250 years ago. The chief priest Ueda says it was likely named because it resembles a dragon ascending to the heavens<ref>{{Cite web|Japanese| url=https://tabi.chunichi.co.jp/odekake/150624ishikawa_komastu.html |title=“Rising Dragon Pine” gaining popularity at Uhashi Shrine in Komatsu | publisher=Chunichi Shimbun | accessdate=2021-11-21}}</ref>. It lies along the Shōryūdō route of a tourism project launched in 2012 to attract foreign visitors, though the name match is coincidental. It is believed to bring protection from misfortune and blessings for romantic relationships; during weddings, couples place their hands on it together to pray for lifelong happiness.
 
-=== Grand festivals ===
-=== Spring Grand Festival ===
+== Grand festivals ==
+== Spring Grand Festival ==
 Known as the “{{ill|Otabi Festival|Q11263112|qid=Q11263112}}.” Said to have begun around {{ill|Kan'ei|Q1192913|qid=Q1192913}} 17 (1640), when Maeda Toshitsune retired to Komatsu Castle, it has a long history. It is famous for its lavish {{ill|UNKNOWN|lt=hikiyama}} floats and charming children’s kabuki performances. Eight preserved floats are displayed in various neighborhoods, and children’s kabuki performed in two of them is known as one of Japan’s three great children’s kabuki traditions<ref>{{Cite web|Japanese| url=http://www.komatsuguide.jp/index.php/otabimatsuri/detail/otabimaturitoha | title=About the Otabi Festival | publish=Komatsu Tourism Network | accessdate=2021-11-21}}</ref><ref>{{Cite web|Japanese|url=https://www.hot-ishikawa.jp/event/4813 | title=Hot Ishikawa Travel Net | publish=Ishikawa Prefecture Tourism Federation | accessdate=2021-11-21}}</ref>. Formerly held from May 13 to 16, it is now centered on a Shinto rite on the second Wednesday of May, followed by festivities on Friday through Sunday.
 
-=== Autumn Grand Festival ===
+== Autumn Grand Festival ==
 Known as the “Suika Festival” (literally “Water and Fire Festival”), commonly referred to as the “Watermelon Festival.” While the name is popularly linked to watermelon stalls once lining the festival, the original meaning is “Water and Fire,” expressing gratitude for their great blessings and praying for protection from floods and fires. Traditional strength contests such as children’s sumo and the Ban-mochi ritual are held. In the Ban-mochi ritual, participants lift an 80-kg rice bale to shoulder height; those who succeed may then attempt to lift a stone weighing around 130 kg. Sacred rites of water and fire are also performed, and sacred water purified by the divine flame is shared with worshippers, who believe that drinking it brings health and safety for the year<ref name="osuwasan"></ref>.
 
-=== Annual rites ===
+== Annual rites ==
 * New Year’s Day Festival (January 1)
 * {{ill|Sagichō Fire Festival|Q9332740|qid=Q9332740}} (January 14)
 * Prayer for Good Harvest Festival (February 17)
@@ -101,7 +100,7 @@ Known as the “Suika Festival” (literally “Water and Fire Festival”), com
 * Soul-Calming Burning Rite (14th of every month) – Ritual burning of items believed to contain spirits, such as dolls, cherished belongings, and old household shrines.
 * Grand Soul-Calming Burning Festival (March 21, September 23)
 
-=== On-site information ===
+== On-site information ==
 '''Address'''
 * Hamadamachi I-233, {{ill|Komatsu, Ishikawa|Q646898|qid=Q646898}}, {{ill|Ishikawa Prefecture|Q131281|qid=Q131281}}
 
@@ -112,22 +111,20 @@ Known as the “Suika Festival” (literally “Water and Fire Festival”), com
 ** {{ill|Ishikawa Prefectural Road Route 25|Q11586190|qid=Q11586190}} / {{ill|Japan National Route 360|Q6157339|qid=Q6157339}} at the Jichōmachi-Nishi intersection
 ** Nearest interchange: {{ill|Hokuriku Expressway|Q1549512|qid=Q1549512}} {{ill|Komatsu interchange|Q10959113|qid=Q10959113|lt=Komatsu IC}}
 
-=== Footnotes ===
-=== Notes ===
+== Footnotes ==
+== Notes ==
 {{notelist}}
-=== References ===
+== References ==
 {{Reflist}}
 
-=== Related articles ===
+== Related articles ==
 * {{ill|Otabi Festival|Q11263112|qid=Q11263112}}
 
-=== External links ===
+== External links ==
 {{commonscat|Uhashi-jinja}}
 * [https://www.osuwasan.com/index.html Osuwasan] (Official shrine website)
 * [https://www.ishikawa-jinjacho.or.jp/shrine/j0501/ Ishikawa Prefecture Association of Shinto Shrines]
 * [https://www.jinjahoncho.or.jp/ Association of Shinto Shrines]
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Uhashi Shrine]][[Category:Shikinaisha|Uhashi Shrine]][[Category:Kokuhei-sha]]
 [[Category:Shikinaisha in Kaga Province]]
 [[Category:Shinto shrines in Ishikawa Prefecture]]
@@ -137,4 +134,5 @@ Known as the “Suika Festival” (literally “Water and Fire Festival”), com
 [[Category:石川県の旧県社]]
 [[Category:Former Prefectural Shrines in Ishikawa Prefecture]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

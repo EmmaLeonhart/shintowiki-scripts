@@ -16,14 +16,13 @@
 | deity = {{ill|Susanoo-no-Mikoto|lt=Susanoo|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|en|Susanoo-no-Mikoto|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh_min_nan|Susanoo|zh|素戔嗚尊|qid=Q272993}}
 }}
 
-{{nihongo|'''Isonokamifutsumitama Shrine'''|石上布都魂神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bizen Province]].
+
 
 {{commons category|Category:Isonokamifutsumitama-jinja}}
 [[ja:石上布都魂神社]]
 
 {{wikidata link|Q11584766|commons|Category:Isonokamifutsumitama-jinja|ja|石上布都魂神社|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{Shrine
 |Name   = Isonokami Futsumitama Shrine
 |Image   = [[Image:Isonokamifutsumitama jinja 01.jpg|270px]]<br/>Haiden (worship hall)
@@ -39,9 +38,9 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230|coord={{coord|34|51|6.3|N|133|58|13|E}}}}
 }}
 [[Image:Isonokamifutsumitama jinja 03.jpg|240px|thumb|Main sanctuary (Okunoin)]]
-'''Isonokami Futsumitama Shrine''' (いそのかみふつみたまじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Akaiwa|Q415372|qid=Q415372}}, {{ill|Okayama Prefecture|Q132936|qid=Q132936}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and the {{ill|Ichinomiya|Q1656379|qid=Q1656379}} of {{ill|Bizen Province|Q1053688|qid=Q1053688}}. Under the {{ill|Q712534|lt=former shrine ranking system}}, it was classified as a {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+{{nihongo|'''Isonokamifutsumitama Shrine'''|石上布都魂神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Akaiwa|Q415372|qid=Q415372}}, {{ill|Okayama Prefecture|Q132936|qid=Q132936}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}, and the {{ill|Ichinomiya|Q1656379|qid=Q1656379}} of {{ill|Bizen Province|Q1053688|qid=Q1053688}}. Under the {{ill|Q712534|lt=former shrine ranking system}}, it was classified as a {{ill|Gō-sha|Q134917316|qid=Q134917316}}. {{nihongo|'''Isonokamifutsumitama Shrine'''|石上布都魂神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bizen Province]].
 
-=== Enshrined deity ===
+== Enshrined deity ==
 At present, one deity is enshrined:
 * {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}
 
@@ -53,7 +52,7 @@ In a source titled “Isonokami Furujingu Ryakushō,” included in *Yamato Shir
 
 In the reign of the seventeenth {{ill|Emperor Nintoku|ar|الإمبراطور نينتوكو|arz|الامبراطور نينتوكو|azb|نینتوکو (ایمپیراتور)|bn|সম্রাট নিন্তকু|br|Impalaer Nintoku|ca|Emperador Nintoku|cs|Nintoku|de|Nintoku|es|Nintoku Tennō|fa|امپراتور نینتوکو|fi|Nintoku|fr|Nintoku|hr|Nintoku|hu|Nintoku japán császár|id|Kaisar Nintoku|it|Nintoku|ja|仁徳天皇|ka|ნინტოკუ|ko|닌토쿠 천황|lt|Imperatorius Nintoku|ms|Maharaja Nintoku|nds|Nintoku|nl|Nintoku|pl|Nintoku|pt|Nintoku|ru|Император Нинтоку|sh|Car Nintoku|simple|Emperor Nintoku|sl|Cesar Nintoku|sv|Nintoku|th|จักรพรรดินินโตกุ|tl|Emperador Nintoku|tr|Nintoku (imparator)|uk|Імператор Нінтоку|uz|Imperator Nintoku|vi|Thiên hoàng Nintoku|yo|Emperor Nintoku|zh|仁德天皇|zh_min_nan|Nintoku Thian-hông|zh_yue|仁德天皇|qid=Q313119}}, an imperial command was given to the {{ill|Ichikawa no Omi|ja|市河氏|qid=Q11480612|lt=Ichikawa no Omi}} to transfer the {{ill|Ame-no-Habakiri|ja|天羽々斬|zh|天羽羽斬|qid=Q10940643|lt=Ama-no-Hahakiri sword}}, which was enshrined at the Kibi Shrine, to the {{ill|Isonokami Jingū|de|Isonokami-jingū|eo|Sanktejo Isonokami|fr|Isonokami-jingū|ja|石上神宮|ko|이소노카미진구 신궁|la|Isonokami Templum|ru|Исоноками-дзингу|uk|Ісонокамі-дзінгу|zh|石上神宮|qid=Q708859|lt=Isonokami Furujingu}}, where it was stored and additionally enshrined, and so on.
 
-=== History ===
+== History ==
 It is said that the enshrinement of the aforementioned {{ill|UNKNOWN|lt=Totsuka no Tsurugi}} marks the founding of this shrine. This sword is said to have been transferred during the reign of {{ill|Emperor Nintoku|ar|الإمبراطور نينتوكو|arz|الامبراطور نينتوكو|azb|نینتوکو (ایمپیراتور)|bn|সম্রাট নিন্তকু|br|Impalaer Nintoku|ca|Emperador Nintoku|cs|Nintoku|de|Nintoku|es|Nintoku Tennō|fa|امپراتور نینتوکو|fi|Nintoku|fr|Nintoku|hr|Nintoku|hu|Nintoku japán császár|id|Kaisar Nintoku|it|Nintoku|ja|仁徳天皇|ka|ნინტოკუ|ko|닌토쿠 천황|lt|Imperatorius Nintoku|ms|Maharaja Nintoku|nds|Nintoku|nl|Nintoku|pl|Nintoku|pt|Nintoku|ru|Император Нинтоку|sh|Car Nintoku|simple|Emperor Nintoku|sl|Cesar Nintoku|sv|Nintoku|th|จักรพรรดินินโตกุ|tl|Emperador Nintoku|tr|Nintoku (imparator)|uk|Імператор Нінтоку|uz|Imperator Nintoku|vi|Thiên hoàng Nintoku|yo|Emperor Nintoku|zh|仁德天皇|zh_min_nan|Nintoku Thian-hông|zh_yue|仁德天皇|qid=Q313119}} to {{ill|Isonokami Jingū|de|Isonokami-jingū|eo|Sanktejo Isonokami|fr|Isonokami-jingū|ja|石上神宮|ko|이소노카미진구 신궁|la|Isonokami Templum|ru|Исоноками-дзингу|uk|Ісонокамі-дзінгу|zh|石上神宮|qid=Q708859}} in Yamato Province, a fact also recorded in that shrine’s traditions.
 
 In the *{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}*, it is listed as a minor shrine, and in the register of the {{ill|Bizen Province|Q1053688|qid=Q1053688}} {{ill|Sōja shrine|Q1107129|qid=Q1107129}}, it is recorded as Futsumitama Shrine of Senior Second Rank, second among 128 shrines. In {{ill|Kanbun (era)|es|Kanbun|fa|کانبون (دوره)|fr|Ère Kanbun|id|Kanbun (era)|ja|寛文|ko|간분|ru|Камбун (нэнго)|simple|Kanbun (era)|sr|Канбун (ера)|sv|Kanbun|tr|Kanbun (dönem)|zh|寬文|qid=Q1146228}} 9 ({{ill|1669|ab|1669|af|1669|als|1669|am|1669 እ.ኤ.አ.|an|1669|ar|1669|ary|1669|arz|1669|ast|1669|avk|1669|az|1669|azb|۱۶۶۹ (میلادی)|ban|1669|bcl|1669|be|1669|be_x_old|1669|bg|1669|bn|১৬৬৯|bpy|মারি ১৬৬৯|br|1669|bs|1669.|ca|1669|cdo|1669 nièng|ce|1669 шо|ceb|1669|ckb|١٦٦٩|crh|1669|cs|1669|cv|1669|cy|1669|da|1669|de|1669|diq|1669|el|1669|eml|1669|eo|1669|es|1669|et|1669|eu|1669|fa|۱۶۶۹ (میلادی)|fi|1669|fo|1669|fr|1669|frp|1669|frr|1669|fur|1669|fy|1669|ga|1669|gan|1669年|gcr|1669|gd|1669|gl|1669|he|1669|hi|१६६९|hif|1669|hr|1669.|hsb|1669|ht|1669 (almanak gregoryen)|hu|1669|hy|1669|hyw|1669 թուական|ia|1669|id|1669|ilo|1669|io|1669|is|1669|it|1669|ja|1669年|jv|1669|ka|1669|kaa|1669|kk|1669 жыл|ko|1669년|krc|1669 джыл|ku|1669|la|1669|lb|1669|lfn|1669|lij|1669|lmo|1669|lt|1669 m.|lv|1669. gads|mai|१६६९|map_bms|1669|mdf|1669|mhr|1669|mi|1669|mk|1669|mr|इ.स. १६६९|mrj|1669 и|ms|1669|my|၁၆၆၉|myv|1669 ие|mzn|۱۶۶۹|nah|1669|nap|1669|nds|1669|nds_nl|1669|new|सन् १६६९|nl|1669|nn|1669|no|1669|nrm|1669|nso|1669|oc|1669|olo|1669|or|୧୬୬୯|os|1669-æм аз|pa|1669|pl|1669|pnb|1669|pt|1669|qu|1669|ro|1669|ru|1669 год|rue|1669|sa|१६६९|sah|1669|sc|1669|scn|1669|sd|1669ع|se|1669|sh|1669.|shn|1669|simple|1669|sk|1669|sl|1669|smn|1669|sq|1669|sr|1669|stq|1669|su|1669|sv|1669|sw|1669|szl|1669|ta|1669|tg|Соли 1669|th|พ.ศ. 2212|tk|1669|tl|1669|tr|1669|tt|1669 ел|uk|1669|ur|1669ء|uz|1669|vec|1669|vi|1669|vls|1669|wa|1669|war|1669|wuu|1669年|xmf|1669|yi|1669|zh|1669年|zh_min_nan|1669 nî|zh_yue|1669年|qid=Q7602}}), {{ill|Ikeda Mitsumasa|Q3148401|qid=Q3148401}}, lord of the {{ill|Okayama Domain|Q903497|qid=Q903497}}, restored a small shrine that had stood on the mountaintop. His successor {{ill|Ikeda Tsunamasa|Q3148404|qid=Q3148404|lt=Tsunamasa}} donated 20 koku of shrine land in {{ill|Enpō|Q1145735|qid=Q1145735}} 2 ({{ill|1674|Q7620|qid=Q7620}}), and in {{ill|Hōei|Q1145262|qid=Q1145262}} 7 ({{ill|1710|Q6861|qid=Q6861}}) constructed the shrine buildings and kagura hall. Thereafter, it continued to receive the reverence of successive lords of the {{ill|Okayama Domain|Q903497|qid=Q903497}}.
@@ -62,36 +61,34 @@ In Meiji 6 ({{ill|1873|Q7757|qid=Q7757}}), it was ranked as a gōsha. It is beli
 
 The mountaintop main sanctuary (Okunoin) was designated an Akaiwa City historic site on February 18, {{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}} 59 ({{ill|1984|Q2432|qid=Q2432}}) (at the time of designation, the former Yoshii Town).
 
-=== Major festivals ===
+== Major festivals ==
 * {{ill|April 15|Q2497|qid=Q2497}} – Prayer Festival
 * {{ill|June 11 (Lunisolar)|Q839755|qid=Q839755|lt=11th day of the 6th lunar month}} – Summer Festival
 * {{ill|October 20|Q2959|qid=Q2959}} and {{ill|October 21|Q2960|qid=Q2960|lt=21st}} – Grand Annual Festival (currently held on the Sunday closest to October 20)
 * {{ill|November 23|Q3021|qid=Q3021}} – New Harvest Thanksgiving Festival
 
-=== Local information ===
+== Local information ==
 ; Address
 * {{ill|Okayama Prefecture|Q132936|qid=Q132936}}{{ill|Akaiwa|Q415372|qid=Q415372}} Isonokami aza Furodani 1448
 
 ; Access
 * About 20 minutes by taxi from {{ill|Kanagawa Station (Okayama)|Q11647060|qid=Q11647060}} ({{ill|West Japan Railway Company|Q502125|qid=Q502125|lt=JR West}} {{ill|Tsuyama Line|Q7850362|qid=Q7850362}})
 
-=== References ===
+== References ==
 * Shinichi Yakushiji, *Ancient Kibi Seen Through Rituals*, Kibito Publishing, 1999
 * *Brief History of Isonokami Futsumitama Shrine*, on-site distributed material
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== Related items ===
+== Related items ==
 {{Commons|Category:Isonokamifutsumitama-jinja}}
 * {{ill|Kibitsuhiko Shrine|Q500763|qid=Q500763}} – the other Ichinomiya of Bizen Province
 
-=== External links ===
+== External links ==
 * [https://www.okayama-jinjacho.or.jp/search/17559/ Isonokami Futsumitama Shrine page on the Okayama Prefecture Association of Shinto Shrines website]
 * [https://www.okayama-kanko.jp/spot/11233 Isonokami Futsumitama Shrine page on the Okayama Tourism Web operated by the Okayama Prefectural Tourism Federation]
 {{Shinto footer}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Isonokami Futsumitama Shrine]][[Category:Shikinaisha|Isonokami Futsumitama Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinai Supershrine]]
 [[Category:Shikinaisha in Bizen Province]]
@@ -103,4 +100,5 @@ The mountaintop main sanctuary (Okunoin) was designated an Akaiwa City historic 
 [[Category:Bizen Province]]
 [[Category:赤磐市の建築物]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

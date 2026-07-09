@@ -16,14 +16,13 @@
 | deity = {{ill|Kuni-no-Tokotachi|lt=Kuni-no-Tokotachi|ca|Kunitokotatchi|en|Kuni-no-Tokotachi|es|Kunitokotachi|fr|Kunitokotachi|ja|国之常立神|mni|ꯀꯨꯅꯤ-ꯅꯣ-ꯇꯣꯀꯣꯇꯆꯤ|ru|Куни-но токотати-но микото|simple|Kuni-no-Tokotachi|th|คูนิ โนะ โทโกตาจิ|uk|Куні но токотаті но камі|zh|國常立尊|qid=Q478504}}
 }}
 
-{{nihongo|'''Unaguhime Shrine'''|宇奈岐日女神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bungo Province]].
+
 
 {{commons category|Category:Unaguhime-jinja}}
 [[ja:宇奈岐日女神社]]
 
 {{wikidata link|Q11449252|commons|Category:Unaguhime-jinja|ja|宇奈岐日女神社|grok=none|check_date=2026-05-27}}
 
-== Japanese content ==
   
 {{Shrine  
 |Name = Unaguhime Shrine  
@@ -43,11 +42,11 @@
 {{List of coordinates}}  
 [[File:Unaguhime-jinja ootorii.JPG|thumb|250px|right|Great torii gate and {{ill|Mount Yufu|Q705288|qid=Q705288}}]]  
 
-'''Unaguhime Shrine''' (also read Unaguhime-jinja / Unakihime / Unagihime) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Yufu|Q990455|qid=Q990455}}, {{ill|Ōita Prefecture|Q133924|qid=Q133924}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking system}}, it was classified as a {{ill|UNKNOWN|lt=Prefectural shrine}}.  
+{{nihongo|'''Unaguhime Shrine'''|宇奈岐日女神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Yufu|Q990455|qid=Q990455}}, {{ill|Ōita Prefecture|Q133924|qid=Q133924}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines|lt=former shrine ranking system}}, it was classified as a {{ill|UNKNOWN|lt=Prefectural shrine}}.   {{nihongo|'''Unaguhime Shrine'''|宇奈岐日女神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Bungo Province]].
 
 It is also called “{{ill|UNKNOWN|lt=Rokushogu}},” and is commonly known as “Yufu Shrine” or “Yufusan Shrine.”  
 
-=== Enshrined Deities ===  
+== Enshrined Deities ==
 The shrine enshrines the following six deities. The alternate name “Rokushogu” derives from worshipping these six deities:  
 
 * {{ill|Kuni-no-Tokotachi|lt=Kunitokotachi-no-Mikoto|Q478504|qid=Q478504|lt=Kuni no Tokotachi no Mikoto}}  
@@ -59,7 +58,7 @@ The shrine enshrines the following six deities. The alternate name “Rokushogu�
 
 ---
 
-=== About Unaguhime ===  
+== About Unaguhime ==
 [[File:Yufuin Basin 11.jpg|thumb|250px|right|{{ill|Yufuin Basin|Q11577584|qid=Q11577584}} (from the summit of {{ill|Mount Yufu|Q705288|qid=Q705288}})<br/>The basin was once a lake, said to have been developed by Unaguhime.]]  
 
 Although the currently enshrined deities are the six listed above, the shrine name recorded in the {{ill|Engishiki|Q1342448|qid=Q1342448}} {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Register of Shrines}} is “Unaguhime Shrine,” and the conferment of divine ranks in the Six National Histories was made to “Unaguhime no Kami (Unagihime no Kami).” Therefore, it is believed that the original deity was '''Unaguhime''' (also read Unagihime or Unakihime).  
@@ -78,29 +77,29 @@ However, cotton was introduced to Japan in the 8th century, and before that, “
 
 ---
 
-=== History ===  
+== History ==
 
-=== Founding ===  
+== Founding ==
 According to shrine tradition, the shrine was founded in the 12th year of the reign of {{ill|Emperor Keikō|Q329723|qid=Q329723}}. The “Shrine Register” records that Emperor Keikō conducted rituals here during his western expedition, and that in the third year of his reign, Hayatsuhime founded the shrine by imperial command.  
 
 The shrine stands at the southwestern foothills of Mount Yufu. Historical sources indicate that it was originally established with Mount Yufu as its sacred object of worship (shintaisan).  
 
 Another theory suggests that the shrine began with worship of eels as spirits based on the lake legend and later merged with the worship of Mount Yufu’s deity.  
 
-=== Overview ===  
+== Overview ==
 The shrine first appears in official history in 849 (Kashō 2), when it was granted the Junior Fifth Rank, Lower Grade, and in 883 (Gangyō 7), it was promoted to Senior Fifth Rank, Lower Grade. These ranks were conferred upon “Unaguhime no Kami.”  
 
 In the mid-Heian period, the {{ill|Engishiki|Q1342448|qid=Q1342448}} {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932|lt=Register of Shrines}} lists “Unaguhime Shrine” in Hayami District, Bungo Province, classifying it as a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}.  
 
 Until the {{ill|Edo period|Q184963|qid=Q184963}}, it was syncretized with {{ill|Bussan-ji Temple|Q11385308|qid=Q11385308}} under the system of {{ill|Shinbutsu-shūgō|Q2279088|qid=Q2279088|lt=Shinto-Buddhist syncretism}}, but following the {{ill|Shinbutsu bunri|Q1970535|qid=Q1970535}}, it assumed its present form. In 1873 (Meiji 6), it was designated a village shrine under the {{ill|Modern system of ranked Shinto shrines|Q712534|Modern system of ranked Shinto shrines}}, and in 1923 (Taishō 12), it was promoted to prefectural shrine status.  
 
-=== Divine Ranks ===  
+== Divine Ranks ==
 * 849 (Kashō 2), 6th month: Junior Fifth Rank, Lower Grade (recorded in the {{ill|Shoku Nihon Kōki|Q1041301|qid=Q1041301}}) – listed as “Unaguhime no Kami.”  
 * September 2, 883 (Gangyō 7): Promoted from Junior Fifth Rank, Upper Grade to Senior Fifth Rank, Lower Grade (recorded in the {{ill|Nihon Sandai Jitsuroku|Q1052981|qid=Q1052981}}) – listed as “Unagihime no Kami.”  
 
 ---
 
-=== Shrine Precincts ===  
+== Shrine Precincts ==
 The precincts exceed 10,000 tsubo and were once surrounded by ancient {{ill|Cryptomeria|Q147388|qid=Q147388}}, but many were destroyed by a {{ill|Typhoon|Q140588|qid=Q140588}} in 1991 (Heisei 3).  
 
 The main hall is a vermilion {{ill|Nagare-zukuri|Q210684|qid=Q210684}} style structure. A large torii gate also stands in central Yufuin.  
@@ -114,7 +113,7 @@ File:Unaguhime-jinja torii.JPG|Torii gate
 
 ---
 
-=== Subsidiary Shrines ===  
+== Subsidiary Shrines ==
 
 '''Within the precincts'''  
 * Tadasu Shrine  
@@ -132,14 +131,14 @@ File:Unaguhime-jinja torii.JPG|Torii gate
 
 ---
 
-=== Cultural Properties ===  
+== Cultural Properties ==
 
-=== National Natural Monument ===  
+== National Natural Monument ==
 * Great Cedar of Ogo Shrine – Located within the grounds of Ogo Shrine. Over 1,000 years old, 38 meters tall. Designated August 9, 1934.  
 
 ---
 
-=== Access Information ===  
+== Access Information ==
 
 '''Address'''  
 * 2220 Kawakami, Yufuin-chō, {{ill|Yufu|Q990455|qid=Q990455}}, {{ill|Ōita Prefecture|Q133924|qid=Q133924}}  
@@ -149,21 +148,19 @@ File:Unaguhime-jinja torii.JPG|Torii gate
 
 ---
 
-=== References ===  
+== References ==
 '''Notes'''  
 {{reflist|group="note"}}  
 
 '''Sources'''  
 {{reflist}}  
 
-=== Related Articles ===  
+== Related Articles ==
 {{Commonscat|Unaguhime-jinja}}  
 * {{ill|Mount Yufu|Q705288|qid=Q705288}}  
 * {{ill|Bussan-ji Temple|Q11385308|qid=Q11385308}} – Former {{ill|Bettō-ji|Q11396755|qid=Q11396755}} of this shrine.  
 
 {{Shinto}}  
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Unaguhime Shrine]][[Category:Shikinaisha|Unaguhime Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Bungo Province]]
 [[Category:Shinto shrines in Ōita Prefecture]]
@@ -172,4 +169,5 @@ File:Unaguhime-jinja torii.JPG|Torii gate
 [[Category:由布市の建築物]]
 [[Category:由布市の歴史]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

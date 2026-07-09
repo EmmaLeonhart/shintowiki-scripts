@@ -21,7 +21,6 @@
 
 {{wikidata link|Q11590647|ja|神田神社 (東白川村)|grok=none|check_date=2026-05-30}}
 
-== Japanese content ==
 {{神社
  | 名称 = Kanda Shrine
  | 画像 = [[File:Kanda jinja Higashishirakawa.jpg|250px]]<br />Torii and haiden
@@ -40,7 +39,7 @@
 
 The annual grand festival in late September includes ritual ceremonies, lion dance, and ceremonial sake distribution. Floats used to be pulled through the village, but this stopped in the 1950s due to depopulation. In {{ill|2008|Q2004|qid=Q2004}}（{{ill|Heisei era|Q234510|qid=Q234510}} 20）, a new float was built and the procession revived.
 
-=== Overview ===
+== Overview ==
 It is said to have been founded in {{ill|Yōrō|Q1373061|qid=Q1373061}} 2 ({{ill|718|Q23534|qid=Q23534}}). In the Engishiki period, "Kanda" is said to have been read as "Kamuda." It declined after the mid-Heian period, but was restored in Kakei 2 ({{ill|1388|Q6365|qid=Q6365}}), and through {{ill|Shinbutsu-shūgō|Q2279088|qid=Q2279088}} was renamed '''Hakusan Myōdaigongen'''.
 
 It declined again in the Muromachi period, but was restored in Eiroku 1 ({{ill|1558|Q6601|qid=Q6601}}). Buildings were rebuilt in Kyōhō 2 ({{ill|1717|Q6895|qid=Q6895}}).
@@ -49,14 +48,14 @@ In Meiji 1 ({{ill|1868|Q7717|qid=Q7717}}), this area underwent thorough {{ill|Ha
 
 On July 1, 1952 (Shōwa 27), it was designated by Gifu Prefectural Shrine Office as a shrine receiving regular offerings (Kinpei-sha designation No. 13){{sfn|木村|1997|p=121}}.
 
-=== Enshrined deities ===
-=== Main deities ===
+== Enshrined deities ==
+== Main deities ==
 *{{ill|Izanagi|abstract|Q813858|ar|إزاناغي|az|İzanaqi|bcl|Izanagi|bn|ইজানাগি|bs|Izanagi|ca|Izanagi|cs|Izanagi a Izanami|da|Izanagi|el|Ιζανάγκι|eo|Izanagi|es|Izanagi|fa|ایزاناگی|fi|Izanaki|fr|Izanagi|he|איזאנגי|hr|Izanagi|hu|Izanagi|id|Izanagi|it|Izanagi|ja|イザナギ|ka|იძანაგი|ko|이자나기|lt|Idzanagis|mk|Изанаги|mni|ꯏꯓꯥꯅꯥꯒꯤ|no|Izanagi|or|ଇଜାନାଗି|pt|Izanagi|ro|Izanagi|rsk|Изанаґи|ru|Идзанаги|simple|Izanagi|sk|Izanagi|sl|Izanagi|sr|Изанаки|sv|Izanagi|ta|இசநாகி|th|อิซานางิ|tl|Izanagi|tr|İzanagi|uk|Ідзанаґі|vi|Izanagi|zh|伊邪那岐|qid=Q813858|lt=Izanagi-no-Mikoto}}
 *{{ill|Izanami|Q682306|qid=Q682306|lt=Izanami-no-Mikoto}}
 *{{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōkuninushi-no-Mikoto}}
 *{{ill|Sukunabikona|ca|Sukunabikona|fr|Sukunabikona|it|Sukuna-hikona|ja|スクナビコナ|ko|스쿠나비코나|mni|ꯁꯨꯀꯨꯅꯕꯤꯀꯣꯅ|pl|Sukunabikona|pt|Sukunahikona|simple|Sukunabikona|sv|Suku-Na-Bikona|zh|少彥名|qid=Q3275687|lt=Sukunahikona-no-Mikoto}}
 *{{ill|Kumano Gongen|Q11568925|qid=Q11568925|lt=Hayatama-no-o-no-Mikoto}} 
-=== Merged enshrined deities ===
+== Merged enshrined deities ==
 *{{ill|Sarutahiko Ōkami|Q3090037|qid=Q3090037|lt=Sarutahiko-no-Mikoto}}
 *{{ill|Ōyamatsumi|lt=Ōyamatsumi|Q386563|qid=Q386563|lt=Ōyamazumi-no-Mikoto}}
 *{{ill|UNKNOWN|lt=Mizuwake-no-Mikoto}}
@@ -67,24 +66,24 @@ On July 1, 1952 (Shōwa 27), it was designated by Gifu Prefectural Shrine Office
 *{{ill|UNKNOWN|lt=Homuda-wake-no-Mikoto}}（{{ill|Hachiman|ar|هاتشيمان|az|Haçiman|ca|Hachiman|de|Hachiman|el|Χατσίμαν|es|Hachiman|eu|Hachiman|fa|هاچیمان|fi|Hachiman|fr|Hachiman|hu|Hacsiman|id|Hachiman|it|Hachiman|ja|八幡神|ko|하치만 신|mni|ꯍꯆꯤꯃꯥꯟ|my|ဟချိမန်း|pl|Hachiman|pt|Hachiman|ru|Хатиман|simple|Hachiman|sl|Hačiman|sv|Hachiman|tok|jan sewi Kasiman|tr|Hachiman|uk|Хачіман|uz|Hachiman|vi|Hachiman|wuu|八幡神|zh|八幡神|qid=Q261637}}）
 *{{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Susanoo-no-Mikoto}}
 
-=== Address ===
+== Address ==
 * Gifu Prefecture, Kamo District, Higashishirakawa Village, Kando 604
 
-=== Transportation ===
+== Transportation ==
 * {{ill|Nohi Noriai Jidosha|Q11566124|qid=Q11566124|lt=Nōhi Bus}} Shirakawa Line, get off at "{{ill|Higashishirakawa Village Office|Q109368715|qid=Q109368715}} Mae".
 ** From {{ill|Shirakawaguchi Station|Q5358687|qid=Q5358687}} on the {{ill|Takayama Main Line|Q1188357|qid=Q1188357}}, bus bound for Daimyōjin.
 
-=== References ===
+== References ==
 * {{Cite book |和書 |editor=Teru Kimura |title=Major Shrine Tour in Gifu Prefecture |publisher={{ill|Nagara Tenjin Shrine|Q3335060|qid=Q3335060}} |date=1997 |ref={{SfnRef|木村|1997}}}}
 
-=== External links ===
+== External links ==
 * [https://yaokami.jp/1212597/ Yaokami]
 
-=== Related items ===
+== Related items ==
 * {{ill|UNKNOWN|lt=Koshihara Shrine}}<ref>[http://www.gifu-jinjacho.jp/syosai.php?shrno=522&shrname=%E2%96%A0%E8%B6%8A%E5%8E%9F%E7%A5%9E%E7%A4%BE%E2%96%A0 Shrine Office]</ref>
 * {{ill|UNKNOWN|lt=Goka Shrine}}
 
-=== Notes ===
+== Notes ==
 {{脚注ヘルプ}}
 {{Reflist}}
 
@@ -92,8 +91,6 @@ On July 1, 1952 (Shōwa 27), it was designated by Gifu Prefectural Shrine Office
 {{pref-stub|pref=岐阜県}}
 {{Buddhism-stub}}
 {{Japanese-history-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Kanda Shrine (Q11590647)]][[Category:Shikinaisha|Kanda Shrine (Q11590647)]][[Category:Hakusan shrine]]
 [[Category:Shikinaisha in Mino Province]]
 [[Category:東白川村の歴史]]
@@ -107,4 +104,5 @@ On July 1, 1952 (Shōwa 27), it was designated by Gifu Prefectural Shrine Office
 [[Category:Kumano shrines]]
 [[Category:Hakusan-jinja]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -16,14 +16,13 @@
 | established = {'time': '+0794-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
 }}
 
-{{nihongo|'''Shikinagayoshi Shrine'''|志紀長吉神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
 
 {{commons category|Category:Shikinagayoshi-jinja}}
 [[ja:志紀長吉神社]]
 
 {{wikidata link|Q106852498|commons|Category:Shikinagayoshi-jinja|ja|志紀長吉神社|check_date=2026-05-25}}
 
-== Japanese content ==
 {{神社
 |名称= Shikinagayoshi Shrine
 |画像 = [[画像:志紀長吉神社 11月.jpg|250px|Shikinagayoshi Shrine]]<br />Torii and haiden
@@ -39,9 +38,9 @@
 |地図 = {{Location map|Japan Osaka|label=Shiki<br />Nagayoshi Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=250}}
 }}
-'''Shikinagayoshi Shrine''' (しきながよしじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Nagayoshi-nagahara|Q88286573|qid=Q88286573}}, {{ill|Hirano-ku, Osaka|Q861256|qid=Q861256}}, {{ill|Osaka|Q35765|qid=Q35765}}. It was formerly a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}. Its former {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}.
+{{nihongo|'''Shikinagayoshi Shrine'''|志紀長吉神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in {{ill|Nagayoshi-nagahara|Q88286573|qid=Q88286573}}, {{ill|Hirano-ku, Osaka|Q861256|qid=Q861256}}, {{ill|Osaka|Q35765|qid=Q35765}}. It was formerly a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}. Its former {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} was {{ill|Gō-sha|Q134917316|qid=Q134917316}}. {{nihongo|'''Shikinagayoshi Shrine'''|志紀長吉神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
-=== History ===
+== History ==
 Founded in {{ill|Enryaku|Q1373176|qid=Q1373176}} 13 ({{ill|794|Q30887|qid=Q30887}}). When they worshiped {{ill|Lycopodium clavatum|Q466426|qid=Q466426|lt=hikagekazura}} growing east of this shrine, {{ill|Emperor Heizei|Q353558|qid=Q353558}} granted the divine title Hikage Daimyōjin and the imperial poem "Kamiyama no hikage no tsura kazatefu toyo no akari no wakete kumanaki." Since then, hikagekazura has been the shrine crest.
 
 It was later designated an {{ill|UNKNOWN|lt=Engishiki inner shrine}}, became a prayer shrine of {{ill|Emperor Go-Suzaku|Q349296|qid=Q349296}} and {{ill|Emperor Go-Reizei|Q356060|qid=Q356060}}, and Amida-ji was founded as its shrine temple.
@@ -56,13 +55,13 @@ In {{ill|1872|Q7753|qid=Q7753}} (Meiji 5), it was ranked {{ill|Gō-sha|Q13491731
 
 The sword dedicated by Sanada Nobushige was confiscated by {{ill|Supreme Commander for the Allied Powers|Q471889|qid=Q471889|lt=GHQ}} after {{ill|Pacific War|ar|حرب المحيط الهادئ|az|İkinci Dünya müharibəsində Sakit okean cəbhəsi|azb|ایکینجی دونیا ساواشیندا بؤیوک اوقیانوس جبهه‌سی|ba|Икенсе донъя һуғышының Тымыҡ океан хәрби хәрәкәттәр театры|ban|Yuda Pasifik|be|Ціхаакіянскі тэатр ваенных дзеянняў Другой сусветнай вайны|bg|Тихоокеански театър (Втора световна война)|bn|প্রশান্ত মহাসাগরীয় যুদ্ধ|br|Brezel ar Meurvor Habask (1937-1945)|bs|Rat na Pacifiku|ca|Guerra del Pacífic|ckb|شەڕی پاسفیک|cs|Druhá světová válka v Tichomoří|da|Stillehavskrigen|de|Pazifikkrieg|el|Πόλεμος του Ειρηνικού|eo|Pacifika Fronto|es|Guerra del Pacífico (1937-1945)|et|Sõda Vaiksel ookeanil|eu|Pazifikoko gerra|fa|جنگ اقیانوس آرام|fi|Tyynenmeren sota toisessa maailmansodassa|fr|Guerre du Pacifique|gn|Paraguasu Py'aguapy Ñorairõ (1937-1945)|ha|Yakin Pacific|he|המערכה באסיה ובאוקיינוס השקט|hi|प्रशांत युद्ध|hr|Rat na Pacifiku|hy|Խաղաղօվկիանոսյան պատերազմ|id|Perang Pasifik|it|Guerra del Pacifico (1941-1945)|ja|太平洋戦争|jv|Perang Pasifik|ka|წყნარი ოკეანის კამპანიები|ko|태평양 전쟁|la|Bellum Pacificum|lb|Pazifikkrich|lfn|Gera de la Pasifica (1937-1945)|lt|Karas Ramiajame vandenyne|lv|Klusā okeāna karš|ml|പസഫിക് യുദ്ധം|ms|Perang Pasifik|ne|प्रशान्त युद्ध|nl|Azië in de Tweede Wereldoorlog|no|Stillehavskrigen|pl|Wojna na Pacyfiku|pnb|بحر الکاہل جنگ|ps|د ارام سمندر جګړه|pt|Guerra do Pacífico|ro|Războiul din Pacific (Al Doilea Război Mondial)|ru|Тихоокеанский театр военных действий Второй мировой войны|sh|Rat na Pacifiku|simple|Pacific War|sk|Vojna v Pacifiku|sl|Vojna za Tihi ocean|sq|Lufta e Paqësorit|sr|Рат на Пацифику|su|Perang Pasifik|sv|Stillahavskriget|ta|பசிபிக் போர்|th|สงครามแปซิฟิก|tl|Digmaang Pasipiko|tr|Pasifik Cephesi (II. Dünya Savaşı)|uk|Тихоокеанський театр воєнних дій Другої світової війни|ur|بحر الکاہل جنگ|uz|Tinch okeanidagi urush|vi|Chiến tranh Thái Bình Dương|wuu|太平洋战争|zh|太平洋战争|zh_min_nan|Thài-pêng-iûⁿ Chiàn-cheng|zh_yue|太平洋戰爭|qid=Q184425}}.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 * Main deities - {{ill|Katsuragi Sotsuhiko|Q11620922|qid=Q11620922|lt=Nagae Sotsuhiko-no-Mikoto}}, {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611}}
 <gallery>
 File:志紀長吉神社 祭神・由緒.jpg|Shikinagayoshi Shrine deities and history
 </gallery>
 
-=== Precinct===
+== Precinct==
 * Honden
 * Haiden
 * {{ill|Kotohira-gū|Q94760|qid=Q94760|lt=Kotohira Shrine}}
@@ -76,28 +75,26 @@ File:志紀長吉神社 稲荷社.jpg|Shikinagayoshi Shrine Inari Shrine
 File:志紀長吉神社 遥拝所.jpg|Shikinagayoshi Shrine distant worship site
 </gallery>
 
-=== Cultural properties ===
-=== Osaka City designated tangible cultural properties ===
+== Cultural properties ==
+== Osaka City designated tangible cultural properties ==
 * Silk painting of {{ill|Kūkai|Q222227|qid=Q222227|lt=Kōbō Daishi}}
 * Silk painting Gozu Tennō mandala
 * 11 documents of Shikinagayoshi Shrine
 
-=== Transportation ===
+== Transportation ==
 * 5 minutes on foot from {{ill|Nagahara Station (Osaka)|Q151508|qid=Q151508|lt=Nagahara Station}} on {{ill|Osaka Metro (company)|Q51211653|qid=Q51211653}} {{ill|Tanimachi Line|Q1142773|qid=Q1142773|lt=Tanimachi Line}}
 
-=== Bibliography ===
+== Bibliography ==
 * Shikinagayoshi Shrine origin record
 
-=== Notes ===
+== Notes ==
 {{Reflist}}
 
-=== External links ===
+== External links ==
 *[https://www.shikinagayoshi-jinjya.org/ Shikinagayoshi Shrine]
 
 {{神道 横}}
 {{shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Shikinagayoshi Shrine]][[Category:Shikinaisha|Shikinagayoshi Shrine]][[Category:Shrines receiving Tsukinami-sai and Niiname-sai offerings]]
 [[Category:Shikinaisha in Kawachi Province]]
 [[Category:Shinto shrines in Osaka]]
@@ -105,4 +102,5 @@ File:志紀長吉神社 遥拝所.jpg|Shikinagayoshi Shrine distant worship site
 [[Category:Buildings and structures in Hirano-ku, Osaka]]
 [[Category:長吉]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

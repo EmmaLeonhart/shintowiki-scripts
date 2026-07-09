@@ -16,11 +16,10 @@
 | deity = {{ill|Tamakushi-hime|ja|玉櫛媛|zh|玉依媛|qid=Q11572681|lt=Tamakushi-hime}}
 }}
 
-{{nihongo|'''Mizokui Shrine'''|溝咋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
+
 
 {{wikidata link|Q11564491|ja|溝咋神社|grok=none|check_date=2026-06-02}}
 
-== Japanese content ==
 {{Shrine
 |Name = Mizokui Shrine
 |Image = [[File:Mizokui-jinja torii.JPG|250px]]<br />First torii gate
@@ -37,9 +36,9 @@
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=230}}
 }}
 {{Coordinate list}}
-'''Mizokui Shrine''' (みぞくいじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Q712534|lt=former shrine ranking}} it was classified as a {{ill|Fu-sha|qid=Q134917326|lt=Fusha}}. It is an independent shrine. Due to damage from the {{ill|UNKNOWN|lt=2018 Northern Osaka Earthquake}}, the protective buildings of the {{ill|UNKNOWN|lt=subsidiary shrines}} were rebuilt in a modern style. The former chief priest’s residence adjacent to the shrine was removed, and the shrine office was also rebuilt. On the 1st and 2nd of each month, amulets are distributed, and thanks to the efforts of the parishioners, the shrine’s rituals continue to be maintained.
+{{nihongo|'''Mizokui Shrine'''|溝咋神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and under the {{ill|Q712534|lt=former shrine ranking}} it was classified as a {{ill|Fu-sha|qid=Q134917326|lt=Fusha}}. It is an independent shrine. Due to damage from the {{ill|UNKNOWN|lt=2018 Northern Osaka Earthquake}}, the protective buildings of the {{ill|UNKNOWN|lt=subsidiary shrines}} were rebuilt in a modern style. The former chief priest’s residence adjacent to the shrine was removed, and the shrine office was also rebuilt. On the 1st and 2nd of each month, amulets are distributed, and thanks to the efforts of the parishioners, the shrine’s rituals continue to be maintained. {{nihongo|'''Mizokui Shrine'''|溝咋神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Settsu Province]].
 
-=== Overview ===
+== Overview ==
 Enshrined deities<div class="NavFrame tright">
  <div class="NavHead" style="padding:1.5px; line-height:1.7; letter-spacing:1px;">Simplified diagram of relationships among the enshrined deities</div>
  <div class="NavContent" style="text-align:left;">
@@ -68,8 +67,8 @@ The current enshrined deities are the following six kami<ref>The list of enshrin
 * {{ill|Susanoo-no-Mikoto|Q272993|qid=Q272993|lt=Hayasusanō-no-Mikoto}} (すさのおのみこと) – Ancestor of Isuzuhime-no-Mikoto
 * {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Ame-no-Koyane-no-Mikoto}} (あめのこやねのみこと) – Ancestor of the {{ill|Fujiwara clan|Q641628|qid=Q641628}}
 
-=== History ===
-=== Foundation ===
+== History ==
+== Foundation ==
 The date of foundation is unknown. According to shrine tradition, it was founded around the reign of the 10th emperor, {{ill|Emperor Sujin|Q333530|qid=Q333530}}<ref name="歴史">[https://web.archive.org/web/20160129181104/http://www.geocities.jp/mizokuijinja/sub2.html History and Sacred Treasures] (official website).</ref>. As noted in the section on enshrined deities, this shrine worships the lineage of {{ill|UNKNOWN|lt=Mishima Mizokui Mimi}}, and its relationship with traditions found in the {{ill|Kojiki|Q813031|qid=Q813031}} and {{ill|Nihon Shoki|Q813935|qid=Q813935}} has been pointed out.
 
 In the Kojiki account of Emperor Jimmu, {{ill|Ōmononushi|lt=Ōmononushi|Q10936701|qid=Q10936701|qid=Q10936701|lt=Ōmononushi-no-Kami}} falls in love with {{ill|UNKNOWN|lt=Seyadatara-hime}} (Tamaki-hime), the daughter of Mishima Mizokui, transforms into a vermilion-painted arrow, and strikes the maiden’s genitals. Though startled, she places the arrow by her bed, whereupon it turns into a handsome man, and from their union is born Futo-tatara Isuzu-ki-hime-no-Mikoto (Himetatara Isuzuhime-no-Mikoto).
@@ -80,7 +79,7 @@ Based on these texts, and noting that within the shrine precincts Kotoshironushi
 
 From the view that “mizo” symbolizes water and “mimi” represents length, another theory holds that this lineage was involved in irrigation related to the {{ill|Ai River|Q11450512|qid=Q11450512}} system<ref name="神々"/>.
 
-=== Historical outline ===
+== Historical outline ==
 According to shrine tradition, the area once contained the {{ill|land|Q11381648|qid=Q11381648}} of {{ill|Prince Abo|Q11657231|qid=Q11657231}}, son of {{ill|Emperor Heizei|Q353558|qid=Q353558}}. During a drought in the {{ill|Tenchō|Q1373138|qid=Q1373138}} era ({{ill|824|Q30353|qid=Q30353}}–{{ill|834|Q30381|qid=Q30381}}), the prince petitioned the court and received a mirror, with which he prayed for rain; heavy rain then fell<ref name="地名">“Osaka Prefecture Place Names,” entry on Mizokui Shrine.</ref>. The sacred treasure known as the “Dawn Sacred Mirror” (a bronze mirror with two deities and two beasts) is said to be that mirror.
 
 In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, compiled in {{ill|Enchō|Q1327274|qid=Q1327274}} 5 ({{ill|927|Q30470|qid=Q30470}}), the shrine is listed as “Mizokui Shrine, Shimashimo District, Settsu Province,” and is thus counted as a {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}.
@@ -93,21 +92,21 @@ In {{ill|1872|Q7753|qid=Q7753}} ({{ill|Meiji era|ar|فترة مييجي|ast|Dóm
 
 In {{ill|1941|Q5231|qid=Q5231}} (Shōwa 16), the shrine was promoted to {{ill|Fu-sha|qid=Q134917326|lt=Fusha}} status.
 
-=== Shrine grounds ===
+== Shrine grounds ==
 <gallery widths="200px" heights="150px">
 File:Mizokui-jinja honden.JPG|Main hall
 File:Mizokui-jinja haiden.JPG|Shrine grounds
 File:Mizokui-jinja entrance.JPG|Entrance to the grounds
 </gallery>
 
-=== Subsidiary shrines ===
+== Subsidiary shrines ==
 [[File:Mizokui 006.JPG|200px|thumb|right|Kotoshironushi Shrine]]
-=== Associated shrines ===
+== Associated shrines ==
 * Kotoshironushi Shrine
 ** Enshrined deities: {{ill|Kotoshironushi-no-Mikoto|qid=Q8009611|lt=Kotoshironushi-no-Mikoto|qid=Q8009611}}, {{ill|UNKNOWN|lt=Kagu-tsuchi-no-Kami}}, {{ill|UNKNOWN|lt=Okutsuhiko-no-Kami}}, {{ill|UNKNOWN|lt=Okutsuhime-no-Kami}}, {{ill|UNKNOWN|lt=Mitsuhanome-no-Kami}}, {{ill|UNKNOWN|lt=Haniyasubiko-no-Kami}}, {{ill|UNKNOWN|lt=Haniyasubime-no-Kami}}
 :: Kotoshironushi-no-Mikoto is the husband deity of Tamaki-hime-no-Mikoto. During the Meiji period, the deities of Megaki Village were merged here.
 
-=== Minor shrines ===
+== Minor shrines ==
 * Amaterasu Ōmikami Shrine – Enshrined deities: {{ill|Amaterasu|lt=Amaterasu Ōmikami|qid=Q455602}}, {{ill|Sarutahiko Ōkami|lt=Sarutahiko-no-Kami|qid=Q3090037}}, {{ill|Emperor Ōjin|Q317997|qid=Q317997}}
 * Uke-mochi Shrine – Enshrined deity: {{ill|Ukemochi|Q2280323|qid=Q2280323}}
 * Tajikarao Shrine – Enshrined deity: {{ill|UNKNOWN|lt=Tajikarao-no-Kami}}
@@ -115,7 +114,7 @@ File:Mizokui-jinja entrance.JPG|Entrance to the grounds
 
 On April 23, 1909 (Meiji 42), the Tenman Shrine of Nikaidō Hoshimi was merged into the Ichikishima Shrine.
 
-=== Festivals ===
+== Festivals ==
 * Monthly Festival (1st of every month)
 * New Year’s Day Festival (January 1)
 * Tondo Festival (January 15)
@@ -131,16 +130,16 @@ On April 23, 1909 (Meiji 42), the Tenman Shrine of Nikaidō Hoshimi was merged i
 
 In the past, based on the episode in the Nihon Shoki (Age of the Gods, upper volume) in which Kotoshironushi-no-Kami visited Mishima Mizokui-hime, a joint procession was held on the same day with Mishima Kamo Shrine, which also enshrines Kotoshironushi-no-Kami<ref>“Osaka Prefecture Place Names,” entry on Mishima Kamo Shrine.</ref>.
 
-=== Sacred treasures ===
+== Sacred treasures ==
 * Dawn Sacred Mirror  
 According to shrine tradition, this mirror was used by Prince Abo during prayers for rain. It is a bronze mirror from China’s Han dynasty, decorated with two deities and two beasts<ref name="歴史"/>.
 
-=== Excavated pottery ===
+== Excavated pottery ==
 In 1939 (Shōwa 14), during river improvement works on the Ai River, large quantities of {{ill|Haji pottery|Q5639938|qid=Q5639938}} and {{ill|Sue pottery|Q7634351|qid=Q7634351}} were excavated from land adjacent to the former Mizokui Upper Shrine, and records show they were kept at Mizokui Shrine<ref name="社史">Ambo Yukihiko, “History of Mizokui Shrine,” Mizokui Shrine Support Association</ref>.
 
 The site of the former Upper Shrine and its surroundings constitute the “'''Mizokui Archaeological Site'''.” In excavations conducted in 1997 (Heisei 9) by the {{ill|public interest incorporated foundation|Q40734470|qid=Q40734470}} {{ill|Buried cultural property center|Q11425913|qid=Q11425913}} (formerly the Osaka Prefectural Cultural Properties Research Center), remains were discovered including {{ill|small-plot paddy fields|Q86743587|qid=Q86743587}} from the {{ill|Kofun period|Q459939|qid=Q459939}}, artifacts from the {{ill|Nara period|af|Nara-tydperk|ar|فترة نارا|bcl|Panahon nin Nara|bg|Нара (период)|bn|নারা যুগ|ca|Període Nara|ckb|سەردەمی نارا|cs|Období Nara|de|Nara-Zeit|el|Περίοδος Νάρα|eo|Epoko de Nara|es|Período Nara|eu|Nara aroa|fa|دوره نارا|fi|Nara-kausi|fr|Époque de Nara|gl|Período Nara|he|תקופת נארה|hr|Nara (razdoblje)|hu|Nara-kor|id|Zaman Nara|it|Periodo Nara|ja|奈良時代|jv|Periodhe Nara|ko|나라 시대|lt|Nara laikotarpis|ml|നാറ കാലഘട്ടം|ms|Zaman Nara|nl|Naraperiode|nn|Naratida|no|Nara-perioden|oc|Periòde de Nara|pl|Nara (okres)|ps|نارا|pt|Período Nara|ro|Perioada Nara|ru|Период Нара|sh|Nara period|simple|Nara period|sk|Obdobie Nara|sl|Obdobje Nara|sr|Нара период|sv|Naraperioden|th|ยุคนาระ|tl|Panahong Nara|tok|tenpo pi kulupu lawa Nala|tr|Nara Dönemi|uk|Період Нара|ur|نارا دور|vi|Thời kỳ Nara|war|Panahon Nara|wuu|奈良时代|zh|奈良時代|zh_min_nan|Nara sî-tāi|zh_yue|奈良時代|qid=Q189178}} and {{ill|Heian period|Q193292|qid=Q193292}}, and square-section structural remains believed to be the former Mizokui Upper Shrine from the latter half of the {{ill|Middle Ages|Q12554|qid=Q12554}}<ref>[https://www.occh.or.jp/?s=data/setumeikai Osaka Prefectural Cultural Properties Center] 1997</ref>.
 
-=== Related sites ===
+== Related sites ==
 [[File:Mizokui 101.JPG|200px|thumb|right|Monument marking the former Mizokui Upper Shrine]]
 * Former site of Mizokui Upper Shrine (Gakuenchō, Ibaraki City, {{ウィキ座標|34|49|02.64|N|135|35|25.28|E|region:JP-27_type:landmark|location|name=Upper Shrine Site (monument)}})
 : The site of the former Upper Shrine, marked by a stone monument. It was erected in April 1965 (Shōwa 40) when Naniwa Commercial High School built an athletic field on the site.
@@ -149,20 +148,20 @@ The site of the former Upper Shrine and its surroundings constitute the “'''Mi
 
 : A shrine in Takatsuki City located across the Ai River. The crest of Mishima Kamo Shrine can be seen on stone lanterns within Mizokui Shrine’s grounds. According to tradition, portable shrine processions from Mishima Kamo Shrine to Mizokui Shrine began in Genroku 10 (1697) and continued until the Meiji period.
 
-=== Visitor information ===
+== Visitor information ==
 ; Address
 * 9-21 Isuzuchō, {{ill|Ibaraki, Osaka|Q502403|qid=Q502403}}, Osaka Prefecture
 
 ; Access
 * From {{ill|Ibaraki Station|Q1072931|qid=Q1072931}} ({{ill|West Japan Railway Company|Q502125|qid=Q502125|lt=JR West}}) East Exit or {{ill|Ibaraki-shi Station|Q3969806|qid=Q3969806}} ({{ill|Hankyu|Q473058|qid=Q473058}}) South Exit, take the {{ill|Kintetsu Bus|Q18636319|qid=Q18636319}} (Route 84 Kuwata–Hirata Loop) and get off at “Kuwata-chō” bus stop; about a 4-minute walk east after disembarking.
 
-=== Notes ===
+== Notes ==
 ; Annotations
 <references group="注釈"/>
 ; References
 {{reflist}}
 
-=== Further reading ===
+== Further reading ==
 * Inoue Masao, *Complete Gazetteer of Osaka Prefecture* (1922) {{National Diet Library Bib ID|73012615}}
 * Ambo Yukihiko, “Historic Sites and Scenic Places of Mishima District” (1961), included in *Historic Sites, Scenic Places, and Natural Monuments of Osaka Prefecture: Mishima District* (1974) {{National Diet Library Bib ID|73009804}}
 * Ambo Yukihiko, “History of Mizokui Shrine,” Mizokui Shrine Support Association (compiled in the Meiji period to elevate the shrine’s rank)
@@ -172,7 +171,7 @@ The site of the former Upper Shrine and its surroundings constitute the “'''Mi
 * *{{ill|Japanese Historical Topography Series|Q17213509|qid=Q17213509}}: Osaka Prefecture* ({{ill|Heibonsha|Q11482108|qid=Q11482108}}), entry on Mizokui Shrine in Ibaraki City
 * Matsushita Akira, “Mizokui Shrine,” in Tanigawa Ken’ichi (ed.), *Gods of Japan – Shrines and Sacred Sites – Vol. 3: Settsu, Kawachi, Izumi, Awaji* ({{ill|Hakusuisha Publishing|Q4346470|qid=Q4346470}}))
 
-=== External links ===
+== External links ==
 {{Commons|Category:Mizokui-Jinja}}
 * {{Wayback|url=http://www.geocities.jp/mizokuijinja/index.html |title=Mizokui Shrine |date=20160129192844}} (official website)
 * [http://www.city.ibaraki.osaka.jp/kurashi/bunka/shiseki/shoukai/1315373034768.html Mizokui Shrine] (Ibaraki City website)
@@ -180,8 +179,6 @@ The site of the former Upper Shrine and its surroundings constitute the “'''Mi
 * [https://www.occh.or.jp/?s=data/setumeikai Osaka Prefectural Cultural Properties Center (Materials/Data – On-site Briefing Materials Page)]
 
 {{Shinto nav}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Mizokui Shrine]][[Category:Shikinaisha|Mizokui Shrine]][[Category:Kanpei-sha]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Ibaraki, Osaka]]
@@ -190,4 +187,5 @@ The site of the former Upper Shrine and its surroundings constitute the “'''Mi
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with unresolved QID in ill template]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

@@ -16,18 +16,17 @@
 | deity = {{ill|Sarutahiko Ōkami|lt=Sarutahiko Ōkami|az|Sarutahiko|en|Sarutahiko Ōkami|fa|ساروتاهیکو اوکامی|fr|Sarutahiko Ōkami|it|Sarutahiko Ōkami|ja|サルタヒコ|ko|사루타히코 오카미|mni|ꯁꯔꯨꯇꯍꯤꯀꯣ ꯑꯣꯀꯃꯤ|pl|Sarutahiko|ru|Сарутахико|simple|Sarutahiko Ōkami|ta|சருதாகிகோ அகாமி|tr|Sarutahiko Ōkami|zh|猿田彥|qid=Q3090037}}
 }}
 
-{{nihongo|'''Aoi Shrine'''|青渭神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
+
 
 {{commons category|Category:Aoi-jinja}}
 [[ja:青渭神社]]
 
 {{wikidata link|Q11662605|commons|Category:Aoi-jinja|ja|青渭神社|grok=none|check_date=2026-05-28}}
 
-== Japanese content ==
 {{Source citation needed|date=July 26, 2015 (Sun) 07:00 (UTC)}}
-'''Aoi Shrine''' (あおいじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in the former {{ill|Tama district|ja|多摩郡|ko|다마군|zh|多摩郡|qid=Q11430789}} of {{ill|Musashi Province|Q907398|qid=Q907398}}, {{ill|Tokyo|Q1490|qid=Q1490}}. It is listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as “Aoi Shrine, Tama District, Musashi Province,” but there are three shrines regarded as candidate sites ({{ill|Shikinai Ronsha|ja|論社|qid=Q135022904}}) of the Engishiki Aoi Shrine: those in {{ill|Higashinaganuma, Inagi City|ja|東長沼|qid=Q30923484}}, {{ill|Jindaiji Motomachi|ja|深大寺元町|qid=Q97172837}}, and {{ill|Sawai|ja|沢井 (青梅市)|qid=Q112152778|lt=Sawai}}.
+{{nihongo|'''Aoi Shrine'''|青渭神社}} is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in the former {{ill|Tama district|ja|多摩郡|ko|다마군|zh|多摩郡|qid=Q11430789}} of {{ill|Musashi Province|Q907398|qid=Q907398}}, {{ill|Tokyo|Q1490|qid=Q1490}}. It is listed in the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}} as “Aoi Shrine, Tama District, Musashi Province,” but there are three shrines regarded as candidate sites ({{ill|Shikinai Ronsha|ja|論社|qid=Q135022904}}) of the Engishiki Aoi Shrine: those in {{ill|Higashinaganuma, Inagi City|ja|東長沼|qid=Q30923484}}, {{ill|Jindaiji Motomachi|ja|深大寺元町|qid=Q97172837}}, and {{ill|Sawai|ja|沢井 (青梅市)|qid=Q112152778|lt=Sawai}}. {{nihongo|'''Aoi Shrine'''|青渭神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
 
-=== Aoi Shrine in Inagi City ===
+== Aoi Shrine in Inagi City ==
 {{Shrine
 |Name   = Aoi Shrine<br />(Inagi City, Tokyo)
 |Image  = [[File:Aoi Shinto Shrine in Inagi in 2009.jpg|250px]]<br />Haiden (April 2009)<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|35|38|33.7|N|139|30|4.2|E}}}}
@@ -55,7 +54,7 @@ The shrine grounds are long and narrow from north to south. Although nearby spec
 At the grand festival, a {{ill|Lion dance|Q713866|qid=Q713866}} known as the “Aoi Shishimai” is dedicated.
 {{clear}}
 
-=== Aoi Shrine in Chōfu City ===
+== Aoi Shrine in Chōfu City ==
 {{Shrine
 |Name = Aoi Shrine<br />(Chōfu City, Tokyo)
 |Image = [[File:Aoi-jinja in Chofu 01 - Jan 1, 2019.jpg|250px]]<br />Haiden (January 2019)<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|35|40|2|N|139|33|10.8|E}}}}
@@ -76,7 +75,7 @@ The enshrined deity, Aoi Ōkami, is identified with {{ill|UNKNOWN|lt=Aonuma Manu
 The {{ill|Shinboku|Q48743901|qid=Q48743901}}, the {{ill|great zelkova of Aoi Shrine|Q24868795|qid=Q24868795}}, is a giant tree recorded in works such as the {{ill|Edo meisho zue|Q2704637|qid=Q2704637}} and is designated a {{ill|Natural monument|Q23790|qid=Q23790}} of the city.
 {{clear}}
 
-=== Aoi Shrine in Ōme City ===
+== Aoi Shrine in Ōme City ==
 {{Shrine
 |Name=Aoi Shrine<br />(Ōme City, Tokyo)
 |Image=[[File:Sougakusan jinja.JPG|250px]]<br />Okumiya at the summit of Mount Sōgaku<br />{{maplink2|frame=yes|plain=yes|type=point|zoom=10|marker=religious-shinto|frame-align=center|frame-width=250|coord={{coord|35|48|32.3|N|139|11|1.6|E}}}}
@@ -97,15 +96,15 @@ The date of establishment is unknown, but according to shrine tradition, in the 
 In the early {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} period, a worship hall was built at the foot of Mount Sōgaku and designated as a distant worship hall{{sfn|Tokyo Association of Shinto Shrines, Ōme City}}. Today, the main shrine at the summit is treated as the inner sanctuary, while the distant worship hall at the mountain’s base serves as the village shrine, where festivals and rites are conducted.
 {{clear}}
 
-=== Notes ===
+== Notes ==
 {{reflist}}
 
-=== References ===
+== References ==
 * {{Cite web|Japanese|url=http://www.tokyo-jinjacho.or.jp/minamitama/inagi/5571/|title=Inagi City – Aoi Shrine|website=Tokyo Association of Shinto Shrines|accessdate=2020-7-8|ref={{sfnref|Tokyo Association of Shinto Shrines, Inagi City}}}}
 * {{Cite web|Japanese|url=http://www.tokyo-jinjacho.or.jp/kitatama/chofu/5532/|title=Chōfu City – Aoi Shrine|website=Tokyo Association of Shinto Shrines|accessdate=2020-7-8|ref={{sfnref|Tokyo Association of Shinto Shrines, Chōfu City}}}}
 * {{Cite web|Japanese|url= http://www.tokyo-jinjacho.or.jp/nishitama/ome/3168/|title=Ōme City – Aoi Shrine [Osōgaku-sama]|website=Tokyo Association of Shinto Shrines|accessdate=2020-7-8|ref={{sfnref|Tokyo Association of Shinto Shrines, Ōme City}}}}
 
-=== Related literature ===
+== Related literature ==
 * {{cite book|Japanese|title={{ill|Shinpen Musashi Fudoki-kō|Q11503943|qid=Q11503943}}|volume=Vol. 94, Tama District No. 6|chapter=Jindaiji Village – Aonami Tenjin Shrine|id={{NDLJP|763989/25}}|publisher=Geographical Bureau, Ministry of Home Affairs|date=1884-6}}
 {{Quotation|“This is said to be the Aoi Shrine listed in the Engishiki.”}}
 * {{cite book|Japanese|title=Newly Compiled Gazetteer of Musashi Province|volume=Vol. 95, Tama District No. 7|chapter=Naganuma Village – Aonuma Shrine|id={{NDLJP|763989/46}}|publisher=Geographical Bureau, Ministry of Home Affairs|date=1884-6}}
@@ -113,13 +112,11 @@ In the early {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi 
 * {{cite book|Japanese|title=Newly Compiled Gazetteer of Musashi Province|volume=Vol. 116, Tama District No. 28|chapter=Sawai Village – Aoi Shrine|id={{NDLJP|763993/101}}|publisher=Geographical Bureau, Ministry of Home Affairs|date=1884-6}}
 {{Quotation|“This shrine is one that is recorded in the Engishiki Jinmyōchō.”}}
 
-=== External links ===
+== External links ==
 [https://aoi-jinja.com/ Aoi Shrine | General Shrine of Jindaiji, Chōfu] – Official website
 
 {{Shinto-stub}}
 {{Pref-stub|pref=Tokyo}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Aoi Shrine]][[Category:Shikinaisha|Aoi Shrine]][[Category:Shikinai Ronsha]]
 [[Category:Shikinaisha in Musashi Province]]
 [[Category:Shinto shrines in Tokyo]]
@@ -137,4 +134,5 @@ In the early {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi 
 [[Category:Buildings and structures in Ōme, Tokyo]]
 [[Category:incorrect template category applied]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

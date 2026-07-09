@@ -17,14 +17,13 @@
 | established = {'time': '+0823-00-00T00:00:00Z', 'timezone': 0, 'before': 0, 'after': 0, 'precision': 9, 'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'}
 }}
 
-{{nihongo|'''Kanko Shrine'''|咸古神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
+
 
 {{commons category|Category:Kanko-jinja}}
 [[ja:咸古神社]]
 
 {{wikidata link|Q11418296|commons|Category:Kanko-jinja|ja|咸古神社|grok=none|check_date=2026-05-30}}
 
-== Japanese content ==
 {{神社
  | 名称 = Kanko Shrine
  | 画像 = [[Image:Kanko-jinja2.jpg|270px|Kanko Shrine]]<br />Haiden
@@ -38,9 +37,9 @@
  | 地図 = {{Location map|Japan Osaka|label=Kanko Shrine|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=11|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''Kanko Shrine''' (こんくじんじゃ; common reading: かんくじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Ryūsen, {{ill|Tondabayashi|Q490928|qid=Q490928}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} and a former {{ill|Son-sha|Q134917284|qid=Q134917284}} under the old shrine-ranking system. It lies north of {{ill|Ryūsen-ji Temple|Q11679279|qid=Q11679279|lt=Ryūsen-ji}} on the mid-slope of {{ill|Mount Dake|Q11477431|qid=Q11477431}} (Ryūsenji-yama), and until the {{ill|Edo period|Q184963|qid=Q184963}} it was Ryūsen-ji's {{ill|Chinjusha|Q13479654|qid=Q13479654}}.
+{{nihongo|'''Kanko Shrine'''|咸古神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Ryūsen, {{ill|Tondabayashi|Q490928|qid=Q490928}}, {{ill|Osaka Prefecture|Q122723|qid=Q122723}}. It is a {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} and a former {{ill|Son-sha|Q134917284|qid=Q134917284}} under the old shrine-ranking system. It lies north of {{ill|Ryūsen-ji Temple|Q11679279|qid=Q11679279|lt=Ryūsen-ji}} on the mid-slope of {{ill|Mount Dake|Q11477431|qid=Q11477431}} (Ryūsenji-yama), and until the {{ill|Edo period|Q184963|qid=Q184963}} it was Ryūsen-ji's {{ill|Chinjusha|Q13479654|qid=Q13479654}}. {{nihongo|'''Kanko Shrine'''|咸古神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kawachi Province]].
 
-=== Enshrined deities ===
+== Enshrined deities ==
 The principal deity is {{ill|Kamuyaimimi|Q11588756|qid=Q11588756}}, with {{ill|Futodama|Q11059539|qid=Q11059539|qid=Q11059539|lt=Ame-no-Futodama-no-Mikoto}} jointly enshrined. Until the Edo period, as Ryūsen-ji's guardian shrine, it enshrined {{ill|Gozu Tennō|Q11570247|qid=Q11570247}}, the local land deity.
 
 As seen in 'Kawachi Meisho Zue,' from the Edo period onward Kanko Shrine came to be identified with Ryūsen-ji's Gozu Tennō shrine. During {{ill|Meiji era|ar|فترة مييجي|ast|Dómina Meiji|az|Meydzi dövrü|azb|مئی‌جی دؤورو|be|Перыяд Мэйдзі|bn|মেইজি যুগ|bo|མེའི་ཇིའི་དུས་དུས་མཚམས།|ca|Era Meiji|cs|Období Meidži|da|Meiji-perioden|de|Meiji-Zeit|el|Μεϊτζί (περίοδος)|es|Era Meiji|et|Meiji periood|eu|Meiji Aroa|fa|دوره میجی|fi|Meiji-kausi|fr|Ère Meiji|gl|Período Meiji|he|תקופת מייג'י|hr|Meiji (razdoblje)|ht|Epòk Meiji|hu|Meidzsi-kor|id|Zaman Meiji|io|Ero Meiji|is|Meiji-tímabilið|it|Periodo Meiji|ja|明治|ka|მეიძის ეპოქა|kbp|Mejii wɛɛ yaa alɩwaatʊ|kk|Мэйдзи дәуірі|ko|메이지 시대|la|Aetas Meiji|lt|Meidži laikotarpis|lv|Meidzi periods|mk|Меиџи (период)|mn|Мэйжийн эрин|ms|Zaman Meiji|nl|Meijiperiode|nn|Meiji|no|Meiji-perioden|pl|Meiji (okres)|pt|Era Meiji|ro|Perioada Meiji|ru|Мэйдзи|simple|Meiji period|sk|Obdobie Meidži|sq|Periudha Meixhi|sr|Меиџи период|sv|Meijiperioden|ta|மெய்சி காலம்|th|ยุคเมจิ|tl|Panahong Meiji|tr|Meiji Dönemi|uk|Період Мейдзі|ur|میجی دور|vi|Thời kỳ Minh Trị|war|Panahon Meiji|wuu|明治|zh|明治|zh_classical|明治|zh_min_nan|Bêng-tī|zh_yue|明治|qid=Q3125096}} {{ill|Shinbutsu bunri|ca|Shinbutsu bunri|de|Shinbutsu-Bunri|es|Shinbutsu bunri|fa|شینبوتسو بونری|fi|Shinbutsu bunri|fr|Shinbutsu bunri|id|Shinbutsu bunri|it|Shinbutsu bunri|ja|神仏分離|ru|Симбуцу бунри|tr|Şinbutsu-bunri|zh|神佛分離|qid=Q1970535}}, it became independent from Ryūsen-ji. In the early-Meiji '{{ill|Tokusen Jinmyōchō|Q11571092|qid=Q11571092}},' because the popularly stated deity and the title Yasaka Daimyōjin were considered unreliable, and because Komuku-no-agata was identified with this area, the deity was changed (citing '{{ill|Shinsen Shōjiroku|de|Shinsen Shōjiroku|fr|Shinsen shōjiroku|ja|新撰姓氏録|ko|신찬성씨록|ru|Синсэн сёдзироку|zh|新撰姓氏錄|qid=Q1045362}}') to Kamuyai-mimi-no-Mikoto, ancestral deity of the Komuku no Agatanushi.
@@ -49,7 +48,7 @@ There are other theories on the deity as well. 'Kyōdoshi no Kenkyū' and 'Kyōd
 
 Ame-no-Futodama-no-Mikoto was the deity of the Engishiki-listed Kankosabi Shrine, merged in {{ill|1909|Q2057|qid=Q2057}} (Meiji 42) from Kanami, Tondabayashi. The deity of Kankosabi Shrine is also disputed: '{{ill|Tokusen Jinmyōchō|Q11571092|qid=Q11571092}}' says Ame-no-Futodama-no-Mikoto, while 'Tondabayashi City History' gives other possibilities including Kamihasabi-no-Mikoto, ancestor deity of Komuku no Agatanushi (Kamuyai-mimi-no-Mikoto), and ancestor of the Sami clan ({{ill|Prince Toyokiirihiko|Q11633375|qid=Q11633375}}).
 
-=== History ===
+== History ==
 According to temple tradition of neighboring {{ill|Ryūsen-ji Temple|Q11679279|qid=Q11679279|lt=Ryūsen-ji}}, an evil dragon once lived in a pond on the slope of {{ill|Mount Dake|Q11477431|qid=Q11477431}} (now the Ryūsen-ji garden pond), harming nearby villagers. In {{ill|Empress Suiko|Q298057|qid=Q298057}} 2 ({{ill|594|Q33625|qid=Q33625}}), {{ill|Soga no Umako|Q1191233|qid=Q1191233}} came by imperial order and performed rites, after which the dragon fled to the heavens; Ryūsen-ji was then founded. Later, the dragon's revenge is said to have dried both the temple pond and foothill water veins.
 
 In {{ill|Kōnin (era)|Q1373070|qid=Q1373070}} 14 ({{ill|823|Q29944|qid=Q29944}}), on January 8, {{ill|Kūkai|Q222227|qid=Q222227}} (Kōbō Daishi) visited, prayed for rain, restored water to the pond, and three small islands appeared. He built small shrines on the islands enshrining {{ill|Kangiten|Q11545315|qid=Q11545315|lt=Shōten}}, {{ill|Benzaiten|lt=Benzaiten|Q818468|qid=Q818468}}, and Shitten, and enshrined {{ill|Gozu Tennō|Q11570247|qid=Q11570247}} as guardian deity. This is said to be the shrine's beginning.
@@ -66,7 +65,7 @@ On December 2, {{ill|1909|Q2057|qid=Q2057}} (Meiji 42), the Engishiki '''Narikos
 
 In August {{ill|1915|Q2084|qid=Q2084}} ({{ill|Taishō era|ar|فترة تايشو|br|Oadvezh Taishō|ca|Període Taishō|cs|Období Taišó|de|Taishō-Zeit|eo|Taiŝo-epoko|es|Era Taishō|et|Taishō ajastu|eu|Taishō aroa|fa|دوره تایشو|fi|Taishō-kausi|fr|Ère Taishō|he|תקופת טאישו|hi|ताइशो युग|hu|Taisó-kor|hy|Տայսյո|id|Zaman Taishō|it|Periodo Taishō|ja|大正|ko|다이쇼 시대|lt|Taišio laikotarpis|lv|Taišo periods|ml|തായ്ഷോ കാലഘട്ടം|ms|Zaman Taishō|nl|Taishoperiode|no|Taishō-perioden|pl|Taishō (okres)|pt|Período Taishō|ro|Perioada Taishō|ru|Тайсё|sh|Taishō period|simple|Taishō era|sr|Таишо период|sv|Taishō|th|ยุคไทโช|tl|Panahong Taishō|tr|Taişo Dönemi|uk|Період Тайсьо|uz|Taishō davri|vi|Thời kỳ Đại Chính|zh|大正|zh_classical|大正 (年號)|zh_min_nan|Tāi-chèng|zh_yue|大正 (日本年號)|qid=Q329174}} 4), it was designated as a shrine receiving state offerings of food and cloth.
 
-=== Account in the Ryūsen-ji engi ===
+== Account in the Ryūsen-ji engi ==
 The origin of the Gozu Tennō shrine is described in "Ryūsen-ji Engi," temple tradition<ref>Summary based on 'Kyōdoshi no Kenkyū.'</ref>.
 
 Kōbō Daishi, passing the foot of Takeyama, asked a village elder for water due to thirst but received only a little. When he asked why, the elder recounted an old legend and said: "Stay here for a while and revive this sacred place; then I too will aid your wish." When Daishi asked who he was, he replied: "I am Gozu Tennō, land deity of this place. I have long awaited your coming," and vanished.
@@ -77,20 +76,18 @@ Suddenly a woodsman appeared and offered three bundles of {{ill|kaya grass|Q1161
 
 Daishi immediately invited that deity and made it the lasting guardian of the area. This is today's Kanko Shrine.
 
-=== Precinct ===
+== Precinct ==
 * Honden
 * Heiden
 * Haiden
 * Shinmon
 
-=== Notes ===
+== Notes ==
 {{脚注ヘルプ}}
 {{reflist}}
 
-=== External links ===
+== External links ==
 {{commons-inline|Category:Kanko-jinja}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Kanko Shrine]][[Category:Shikinaisha|Kanko Shrine]][[Category:Shikinaisha|Kanko Shrine]][[Category:Kanpei-sha]]
 [[Category:Shikinai Supershrine]]
 [[Category:Shikinaisha in Kawachi Province]]
@@ -103,4 +100,5 @@ Daishi immediately invited that deity and made it the lasting guardian of the ar
 [[Category:History of Tondabayashi, Osaka]]
 [[Category:Gion cult]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

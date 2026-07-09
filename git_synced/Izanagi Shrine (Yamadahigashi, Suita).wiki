@@ -23,7 +23,6 @@
 
 {{wikidata link|Q11379324|ja|伊射奈岐神社 (吹田市山田東)|grok=none|check_date=2026-05-30}}
 
-== Japanese content ==
 
 {{Shrine
  | Name=Isanaki Shrine
@@ -41,7 +40,7 @@
 
 In the {{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}, there are two ``Isanagi Shrines'' in the {{ill|Shimashimo district|Q10976940|qid=Q10976940}} section, and one of them is Engi {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikiuchi Shrine}}. The other troupe is said to be {{ill|Izanagi Shrine (Saidera, Suita)|Q11379322|qid=Q11379322|lt=a shrine of the same name}}, which is located in Sai-dera Temple and enshrines {{ill|Izanagi|Q813858|qid=Q813858|lt=Isanagi-no-Mikoto}}. The old {{ill|Shakaku|ja|社格|ko|사격 (신토)|zh|社格|qid=Q10444029}} is {{ill|Gō-sha|Q134917316|qid=Q134917316}}.{{ill|Ban Nobutomo|Q4346747|qid=Q4346747}} Originally only {{ill|Izanami|Q682306|qid=Q682306|lt=Isanami}} was enshrined here, but {{jalink|Jōkan} (Japan)|Q1075635|Jōgan}} to {{ill|Engi (era)|Q1374325|qid=Q1374325}}, it has been proven that the Isanagi god was {{ill|UNKNOWN|lt=solicited}} to our company.
 
-=== History ===
+== History ==
 According to the shrine's biography, in the year 23 of {{ill|Emperor Yūryaku|Q357235|qid=Q357235}}, she was the {{ill|Saikū|Q150845|qid=Q150845}} of {{ill|Ise Grand Shrine|Q687168|qid=Q687168}}. |Q11581017}}・{{ill|Yamatohime-no-mikoto|Q4388732|qid=Q4388732}}'s instruction led Okamoto Toyotahiko to search for a place to enshrine the five {{ill|UNKNOWN|lt=Imperial Gods}}, and it is said that he enshrined them in the nearby Ogawa Valley. At first it was called Himemiya Shrine. In {{ill|Ninju|Q1373077|qid=Q1373077}}2 ({{ill|852|Q30383|qid=Q30383}}), Himemiya was moved to Mt. Takaniwa.
 
 {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jogan}} between the first year ({{ill|859|Q23897|qid=Q23897}}) and the fifteenth year of Jogan ({{ill|873|Q30369|qid=Q30369}}) {{ill|Izanagi Shrine (Saidera, Suita)|Q11379322|qid=Q11379322|lt=Saidera Shrine}} {{ill|Izanami|Q682306|qid=Q682306|lt=Izanami God}} {{ill|UNKNOWN|lt=Solicit}}. In 873, the company name was changed from Himemiya to ``Goshagu''. {{ill|Edo period|Q184963|qid=Q184963}}<ref>``Settsushi''</ref><ref>``Settsu Famous Places Zue''</ref> was commonly called Gosha.The main shrine and worship hall were built in {{ill|Kan'ei|Q1192913|qid=Q1192913}}13 ({{ill|1636|Q6885|qid=Q6885}}). In {{ill|1870|Q7741|qid=Q7741}} ({{ill|Meiji era|Q3125096|qid=Q3125096}}3), the current company name was adopted as the official name <ref>``Osakafu Zenshi''</ref>.
@@ -49,7 +48,7 @@ According to the shrine's biography, in the year 23 of {{ill|Emperor Yūryaku|Q3
 
 Among the descendants of the first Shinto priest, Toyotahiko Okamoto, is {{ill|Eitarō Okamoto|Q27920598|qid=Q27920598}} ({{ill|UNKNOWN|lt=Vice Minister of Agriculture and Commerce}}, Chairman of the Board of Directors of the Norinchukin Bank|Norinchukin Bank|Q2007236|Industrial Union Central Bank}})<ref>{{Cite web|Japanese book|title=Eitaro Okamoto (8th edition) - "Personnel Koshinroku" database |url=https://jahis.law.nagoya-u.ac.jp/who/docs/who8-5202 |website=jahis.law.nagoya-u.ac.jp |access-date=2022-08-10}}</ref>. Served as the Japanese government representative in {{ill|Geneva|Q71|qid=Q71|lt=Geneva}}.
 
-=== Historical evidence ===
+== Historical evidence ==
 {{Original research|section=1|date=April 2020}} 
 * There are two Isanagi Shrines in Suita City ({{ill|Izanagi Shrine (Saidera, Suita)|Q11379322|qid=Q11379322|lt=Saidera Shrine}} and Yamada Higashi Shrine), both of which were founded in {{ill|Emperor Yūryaku|Q357235|qid=Q357235}} in the year 23. The Saidera Shrine's shrine biography states, ``From {{ill|Jōgan|Q1075635|qid=Q1075635|lt=Jōkan}} to {{ill|Engi (era)|Q1374325|qid=Q1374325}} ({{ill|859|Q23897|qid=Q23897}} - In {{ill|922|Q24219|qid=Q24219}}), {{ill|Izanami|Q682306|qid=Q682306|lt=Izana Mikami}} was relocated to the Tohoku region. This was called Himemiya, and the head office was called Okumiya.'' On the other hand, the biography of Yamada Tosha says, ``In the 23rd year of Emperor Yuryaku, Himemiya was founded in Ogawa Valley. Later, Himemiya was relocated to Mt. Takaniwa, and the company name was changed to Goshagu in the 15th year of the Jokan era.''* It is said that both Saidera Shrine and Yamada Higashi Shrine were awarded {{ill|Shinkai (divine rank)|Q11591025|qid=Q11591025}} in the first year of Jogan (859). It is written in ``Records|Q1052981}} that ``he bestowed the rank of Junior Fifth Rank on the god Ishanagi,'' and the place that actually bestowed the divine rank was the {{ill|Izanagi Shrine (Saidera, Suita)|Q11379322|qid=Q11379322|lt=Sai-dera Shrine}} only, but not at Yamada Higashi Shrine. The Edo period Japanese scholar {{ill|Ban Nobutomo|Q4346747|qid=Q4346747}} said, ``Both Isanagi-jin and Izana-mi-jin are the ancestors of the emperor, and since Yamada Higashi-sha did not have the gift that should have been bestowed on the two shrines, Iyanagi-jinja Shrine at Yamada Higashi-sha was solicited from Saidera Shrine during the Jogan to Engi years (859 - 922).''
 * However, the Osaka Prefecture Zenshi states that ``Himenomiya was relocated to Mt. Takaniwa in {{ill|Ninju|Q1373077|qid=Q1373077}} 2nd year (852) before Jogan,'' which suggests that Himemiya existed before Kansho.
@@ -76,11 +75,11 @@ Furthermore, ``Ogawadani,'' where the temporary shrine was located, is thought t
 
 This is probably because ``Karimiya no Tani'' was mistakenly written as ``Kuramiya no Tani,'' and the abbreviation ``Kurutani'' was later rewritten as ``Shakutani.''
 
-=== Enshrined God ===
+== Enshrined God ==
 * Main enshrined deity - {{ill|Izanami|Q682306|qid=Q682306|lt=Izanami no Mikoto}}
 * Aidono-kami - {{ill|Ame-no-Koyane|Q2564508|qid=Q2564508|lt=Amagoyane Mikoto}}, {{ill|Ame-no-Tajikarao|fr|Tajikarao|it|Ame-no-Tajikarao|ja|アメノタヂカラオ|ko|아메노타지카라오|ru|Амэ-но Тадзикарао|simple|Ame-no-Tajikarao|zh|天手力男神|qid=Q849412|lt=Terikio Mikoto}}, {{ill|Ame-no-Oshikumone|Q91088537|qid=Q91088537|lt=Tennin Kumane Mikoto}}, {{ill|Hiruko|Q1067028|qid=Q1067028|lt=Ebisu no Mikoto}}
 
-=== Precincts ===
+== Precincts ==
 * Main shrine (Tangible Cultural Property designated by Osaka Prefecture) - Rebuilt in {{ill|Kan'ei|Q1192913|qid=Q1192913}}13 ({{ill|1636|Q6885|qid=Q6885}}). The Gokensha {{ill|Nagare-zukuri|Q210684|qid=Q210684}} cypress bark roof is rare in Osaka Prefecture.
 * Worship Hall - Rebuilt in 1636. {{ill|1970|Q2474|qid=Q2474}} ({{ill|Shōwa era|ar|فترة شووا|br|Oadvezh Shōwa|ca|Període Shōwa|cs|Období Šówa|de|Shōwa-Zeit|eo|Ŝova-epoko|es|Era Shōwa|eu|Shōwa aroa|fa|دوره شووا|fi|Shōwa-kausi|fr|Ère Shōwa (1926-1989)|he|תקופת שווה|hi|शोवा युग|hu|Sóva-kor|id|Zaman Shōwa|it|Periodo Shōwa|ja|昭和|ka|შოვას პერიოდი|ko|쇼와 시대|lt|Šiova laikotarpis|ms|Zaman Shōwa|nl|Showaperiode|no|Shōwa-perioden|pl|Shōwa|pt|Período Shōwa|ru|Сёва|simple|Shōwa era|sr|Шова период|sv|Shōwa|th|ยุคโชวะ|tl|Panahong Shōwa|tr|Şova Dönemi|uk|Період Сьова|vi|Thời kỳ Chiêu Hòa|zh|昭和|zh_classical|昭和|zh_min_nan|Chiau-hô|zh_yue|昭和|qid=Q327567}}45) Renovated.
 * {{ill|Hachiman shrine|fa|معبد هاچیمان|fr|Sanctuaire Hachiman|it|Santuario di Hachiman|ja|八幡宮|simple|Hachiman shrines|vi|Đền thờ thần Hachiman|zh|八幡宮|qid=Q11390939}} - Deities enshrined: {{ill|UNKNOWN|lt=Hachiman Shrine}}, {{ill|Hachioji Shrine|Q11391618|qid=Q11391618|lt=Hachioji Shrine}}, {{ill|Sugawara no Michizane|ar|سوغاوارا نو ميتشيزانه|br|Sugawara no Michizane|ckb|سوگاوارا نۆ میچیزانێ|de|Sugawara no Michizane|es|Sugawara no Michizane|fa|سوگاوارا نو میچی‌زانه|fi|Sugawara no Michizane|fr|Sugawara no Michizane|id|Sugawara no Michizane|it|Sugawara no Michizane|ja|菅原道真|kk|Сугавара но Митидзане|ko|스가와라노 미치자네|la|Sugawara no Michizane|ms|Sugawara no Michizane|nl|Sugawara no Michizane|nn|Sugawara no Michizane|pl|Michizane Sugawara|pt|Sugawara no Michizane|ru|Сугавара-но Митидзанэ|sh|Sugawara no Michizane|sv|Sugawara no Michizane|th|สึกาวาระ โนะ มิจิซาเนะ|tr|Sugawara no Michizane|uk|Суґавара но Мітідзане|zh|菅原道真|zh_classical|菅原道真|zh_min_nan|Sugawara no Mitizane|qid=Q382005|lt=Tenmangu}}, {{ill|Haraedo no Kami|Q11588504|qid=Q11588504}}. Previously, Hachimangu Shrine, Hachioji Shrine, and Tenmangu Shrine were each worshiped as separate shrines on the left side of the shrine grounds (the parking lot that is currently used as a place to store mikoshi during festivals).
@@ -88,41 +87,39 @@ This is probably because ``Karimiya no Tani'' was mistakenly written as ``Kurami
 * {{ill|Benzaiten|qid=Q818468|lt=Benzaiten}} company
 * {{ill|Inari shrine|fa|معبد ایناری|fr|Sanctuaire Inari|ja|稲荷神社|ko|이나리 신사|simple|Inari shrine|uk|Святилище Інарі|qid=Q514480}} - Enshrined deity: Jumori Daimyojin
 
-=== Cultural assets ===
+== Cultural assets ==
 
-=== Osaka Prefecture designated tangible cultural property ===
+== Osaka Prefecture designated tangible cultural property ==
 * Main shrine (designated on January 14, 2011) <ref>[https://www.pref.osaka.lg.jp/bunkazaihogo/bunkazai/kenzou.html Osaka Prefecture homepage/List of cultural properties designated by the prefecture (buildings)]</ref>
 
-=== Tangible cultural property designated by Suita City ===
+== Tangible cultural property designated by Suita City ==
 * Company name marker stone - Stone monument.
 
-=== Suita City designated intangible folk cultural property ===
+== Suita City designated intangible folk cultural property ==
 * Taiko Mikoshi (Yamada Isanaki Shrine Taiko Mikoshi Preservation Society)
 
-=== Access ===
+== Access ==
 * 20 minutes walk from {{ill|Hankyu Senri Line|Q1044987|qid=Q1044987}}{{ill|Yamada Station (Osaka)|Q3971365|qid=Q3971365|lt=Yamada Station}}
 * {{ill|Hankyu Bus|Q11656745|qid=Q11656745}}3 minute walk from Yamada Miyanomae stop on Suita Line 12, 18, 21
 * Hankyu Bus Suita Line 4, 12, 16, 18, 21 lines 5 minutes walk from Shin-Ogawa stop
 
-=== Footnotes ===
+== Footnotes ==
 {{Footnote help}}
 <references/>
 
-=== References ===
+== References ==
 * Japanese historical place name system (online version) Shogakukan (database based on “Japanese historical place name system” Heibonsha, 1979-2002)
 
-=== Related items ===
+== Related items ==
 {{Commonscat|Izanagi-jinja (Yamadahigashi, Suita)}}
 * {{ill|Izanagi Shrine (Saidera, Suita)|Q11379322|qid=Q11379322}}
 * {{ill|Yamada|ja|山田村 (大阪府三島郡)|ko|야마다촌 (오사카부 미시마군)|qid=Q11470448}}
 
-=== External link ===
+== External link ==
 *[https://www.izanagi-jinja.com/ Izanagi Shrine homepage]
 
 {{Shinto horizontal}}
 {{Shinto-stub}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Izanagi Shrine (Yamadahigashi, Suita)]][[Category:Shikinaisha|Izanagi Shrine (Yamadahigashi, Suita)]][[Category:Shikinaisha|Izanagi Shrine (Yamadahigashi, Suita)]][[Category:Shikinai Ronsha]]
 [[Category:Shikinaisha in Settsu Province]]
 [[Category:Shinto shrines in Osaka Prefecture]]
@@ -133,4 +130,5 @@ This is probably because ``Karimiya no Tani'' was mistakenly written as ``Kurami
 [[Category:大阪府指定有形文化財]]
 [[Category:山田 (吹田市)]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]

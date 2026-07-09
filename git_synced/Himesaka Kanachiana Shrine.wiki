@@ -22,7 +22,6 @@
 
 {{wikidata link|Q107297935|ja|日咩坂鐘乳穴神社|grok=none|check_date=2026-05-29}}
 
-== Japanese content ==
 {{神社
 | 名称    = Himesaka Kanachiana Shrine
 | 画像    = [[File:Himesaka_Kanachiana-jinja,_naihaiden.jpg|280px]]<br />Worship hall
@@ -42,7 +41,7 @@
 }}
 '''Himesaka Kanachiana Shrine'''<ref>{{Cite web|ja|url=https://www.okayama-jinjacho.or.jp/search/18930/|title=日咩坂鐘乳穴神社|website=Okayama Prefecture Shrine Office|accessdate=2021-06-28}}</ref> (ひめさかかなちあなじんじゃ; also 日咩坂鍾乳穴神社{{Sfn|鶴藤鹿忠|2007|p=48-49}}, 比賣坂鍾乳穴神社{{Sfn|加原耕作|1980|p=512-513}}{{Sfn|鶴藤鹿忠|2007|p=48-49}}) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} in Toyonaga Akama, {{ill|Niimi|Q873596|qid=Q873596}}, {{ill|Okayama Prefecture|Q132936|qid=Q132936}}. It has as its {{ill|UNKNOWN|lt=shintai}} the {{ill|Himesakakanachiana Limestone Cave|Q107297830|qid=Q107297830}}, called “Ōhorana (Great Cave)”{{Sfn|鶴藤鹿忠|2007|p=48-49}}.
 
-=== History ===
+== History ==
 
 According to the origin record of {{ill|Sangō-ji|Q42579071|qid=Q42579071}} of the {{ill|Shingon Buddhism|Q550182|qid=Q550182}}, which managed this shrine as its {{ill|Bettō-ji|Q11396755|qid=Q11396755}} until {{ill|Shinbutsu bunri|ca|Shinbutsu bunri|de|Shinbutsu-Bunri|es|Shinbutsu bunri|fa|شینبوتسو بونری|fi|Shinbutsu bunri|fr|Shinbutsu bunri|id|Shinbutsu bunri|it|Shinbutsu bunri|ja|神仏分離|ru|Симбуцу бунри|tr|Şinbutsu-bunri|zh|神佛分離|qid=Q1970535}},{{Sfn|鶴藤鹿忠|2007|p=48-49}} in {{ill|Jinki (era)|Q1373210|qid=Q1373210}} 4 ({{ill|AD 727|Q23557|qid=Q23557}}) {{ill|Gyōki|Q1136664|qid=Q1136664}} visited this place and founded Sangō-ji, and when Kōbō Daishi ({{ill|Kūkai|Q222227|qid=Q222227}}) revived it in {{ill|Daidō|Q1373191|qid=Q1373191|lt=Daidō}} 2 ({{ill|802|Q29992|qid=Q29992}}), he invited {{ill|UNKNOWN|lt=Izanagi}} and {{ill|UNKNOWN|lt=Izanami}} as guardian deities of the temple gate and enshrined them on the summit of Hongū-yama as '''Himesaka Shōnyūana Shrine'''{{Sfn|加原耕作|1980|p=512-513}}.
 
@@ -56,19 +55,19 @@ In the '{{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|
 
 It became a {{ill|Son-sha|ja|村社|qid=Q134917284}} in Meiji 5, then in Meiji 43 ({{ill|1910|Q2075|qid=Q2075}}) merged Hachiman Shrine (village shrine) in Sabu and 32 unranked shrines, built up basic funds and expanded/rebuilt shrine buildings, and in {{ill|Shōwa era|Q327567|qid=Q327567}} 5 ({{ill|1930|Q18787|qid=Q18787}}) was promoted to {{ill|Ken-sha|lt=prefectural shrine|qid=Q90139226}}{{Sfn|加原耕作|1980|p=512-513}}.
 
-=== Enshrined deities ===
+== Enshrined deities ==
 
 As noted above, the shrine originally invited and enshrined {{ill|UNKNOWN|lt=Izanagi}} and {{ill|UNKNOWN|lt=Izanami}}, and this is also confirmed in the 1874 “Shikinaisha 22-sha Meisaichō.” However, a 1952 shrine details document lists principal deity {{ill|Ōkuninushi|Q276944|qid=Q276944|lt=Ōnamuchi-no-Mikoto}} and accompanying deities {{ill|Emperor Ōjin|qid=Q317997|lt=Hondawake-no-Mikoto|qid=Q317997}}, {{ill|Susanoo-no-Mikoto|lt=Susanoo-no-Mikoto|qid=Q272993}}, {{ill|Kibitsuhiko-no-mikoto|Q65318|qid=Q65318}}, {{ill|Futodama|Q11059539|qid=Q11059539|lt=Ōtama-no-Mikoto}}, {{ill|Ukanomitama|qid=Q3080728|lt=Ukanomitama-no-Mikoto}}, {{ill|UNKNOWN|lt=Ukemochi-no-Mikoto}}, {{ill|Amaterasu|Q455602|qid=Q455602|lt=Ōhirume-no-Mikoto}}, {{ill|UNKNOWN|lt=Kushiakaru-tama-no-Mikoto}}, {{ill|UNKNOWN|lt=Toyotama-hiko-no-Mikoto}}, and {{ill|Ninigi-no-Mikoto|lt=Ninigi-no-Mikoto|qid=Q1056017}}; it is considered that deity changes were made during the campaign for promotion to prefectural shrine{{Sfn|加原耕作|1980|p=512-513}}.
 
-=== Rituals ===
+== Rituals ==
 
 The three main festivals are below. Two duty groups that handle annual festival arrangements and offerings are chosen from parishioners on {{ill|March 3|Q2391|qid=Q2391}} (originally old-calendar 3rd month “uma” day). They are called Yuki-duty (spring duty) and Suki-duty (autumn duty){{SFn|加原耕作|1980|p=512-513}}{{SFn|鶴藤鹿忠|2007|p=48-49}}. When assigned duty, each builds a temporary altar in a clean place on their premises and invites Onzaki no Ōkami{{Efn2|Located at the back of the precincts, also called Oku-no-in. Common name: Ozaki Shrine{{Sfn|鶴藤鹿忠|2007|p=48-49}}.}}. In older times, those on duty also avoided roof replacement, attending funerals, and carrying impure things like {{ill|Compost|Q212254|qid=Q212254}}{{SFn|加原耕作|1980|p=512-513}}.
 
-=== Autumn annual festival ===
+== Autumn annual festival ==
 
 The autumn annual festival is held on {{ill|November 11|Q2987|qid=Q2987}} (originally old-calendar September 29). At this time, together with Hachiman Shrine in Shimoazae, {{ill|Maniwa|Q861230|qid=Q861230}}, a mikoshi procession goes to “Aki-no-miya” in Kami-azae, which is thought related to the tradition that Himesaka Kanachiana connects to the “{{ill|Suwa Cave|Q11631895|qid=Q11631895|lt=Suwa Cave}}” in Shimoazae{{SFn|加原耕作|1980|p=512-513}}{{SFn|平凡社|1988}}. In older times, Aguchi Shrine in Aguchi, Maniwa, also joined this procession. On that day both shrines recite {{ill|Norito|Q1760119|qid=Q1760119}} together; after rites end, each returns while touring parishioner villages{{SFn|加原耕作|1980|p=512-513}}.
 
-=== Rice-planting festival ===
+== Rice-planting festival ==
 
 The rice-planting festival has unclear origins but is said to have about 600 years of tradition; on {{ill|November 8|Q2990|qid=Q2990}} of {{ill|Shōwa era|Q327567|qid=Q327567}} 53 ({{ill|1978|Q2483|qid=Q2483}}), it was designated an Important Intangible Folk Cultural Property of Niimi City{{SFn|鶴藤鹿忠|2007|p=48-49}}.
 
@@ -76,13 +75,13 @@ It is held before the worship hall on June 11 (originally old-calendar ninth-mon
 
 First, the Yuki and Suki duty groups each use a {{ill|Lion dance|Q713866|qid=Q713866|lt=lion head}} as an ox to pull a {{ill|Spade|Q216642|qid=Q216642}}, making a seedbed; the {{ill|Kannushi (disambiguation)|Q15888735|qid=Q15888735}} performs a dance and mime-sows seed rice. Next, cedar leaves are used as symbolic flute-like tools for the seedling-taking rite; then puddling is done again with the lions, followed by a rite called “rice planting,” miming transplanting with cedar leaves and throwing those leaves to parishioners waiting in front and back. Parishioners compete to collect them and take them home to place in fields for abundance{{SFn|加原耕作|1980|p=514-515}}.
 
-=== Ohera-yaki offering festival ===
+== Ohera-yaki offering festival ==
 
 The Ohera-yaki offering festival preserves an old ritual form: the Suki duty performs it on old-calendar {{ill|November 11|Q2987|qid=Q2987}} (originally old-calendar frost-month “uma” day), and the following year the Yuki duty performs it on old-calendar January 11 (originally old-calendar first-month “uma” day). Ohera-yaki is a mochi made by kneading {{ill|Rice flour|Q1269205|qid=Q1269205}} with {{ill|Amazake|Q455990|qid=Q455990}}, mixing in split dried persimmons, and baking it on an iron {{ill|Niemodlin dialect|Q164176|qid=Q164176}} (“ohera,” 25 cm long × 15 cm wide) used for ox-plowing. It is prepared the day before the festival and is said to have spiritual efficacy for driving away obstacles and healing illness{{SFn|平凡社|1988}}<ref name="毎日08">{{ill|Mainichi Shimbun|Q1136866|qid=Q1136866}}, Mar. 1, 2008, Okayama p.24, “Mini-news: ‘Ohera-yaki’ prayers for health in Niimi.”</ref>{{SFn|加原耕作|1980|p=514-515}}.
 
 For example, in {{ill|Heisei era|Q234510|qid=Q234510}} 20 ({{ill|2008|Q2004|qid=Q2004}}), when Mainichi covered it, 12 households in the Tochio district prepared Ohera-yaki using 40 kg rice, 25 kg amazake, and 240 dried persimmons. As customary, the mochi was offered at the shrine the next day for purification, then distributed to about 300 parishioner households<ref name="毎日08" />.
 
-=== Precinct images ===
+== Precinct images ==
 
 The main sanctuary was built in Bunka 12 ({{ill|1815|Q6948|qid=Q6948}}), in a style common in the Bitchū area: {{ill|UNKNOWN|lt=irimoya-zukuri}} with {{ill|Karahafu|Q977293|qid=Q977293}} {{ill|kōhai|Q11415970|qid=Q11415970}}, originally {{ill|cypress bark roof|Q90373477|qid=Q90373477}} (recently reroofed with copper plate){{SFn|加原耕作|1980|p=514-515}}. The worship hall was rebuilt in {{ill|1986|Q2430|qid=Q2430}} (Shōwa 61) in reinforced concrete{{SFn|鶴藤鹿忠|2007|p=48-49}}{{Efn2|Before that, the worship hall was a 1909 ({{ill|1909|Q2057|qid=Q2057}}) four-sided eave-draped single-story wood-bark roof structure (later reroofed with tile){{SFn|加原耕作|1980|p=514-515}}.}}. The kagura hall dates to {{ill|Hōei|Q1145262|qid=Q1145262}} 4 ({{ill|1707|Q6841|qid=Q6841}}){{SFn|加原耕作|1980|p=514-515}}{{Efn2|Kagura hall: single-story thatched, frontage 6.5 ken, depth 2.5 ken. There is also a single-story shinsen-den with frontage 2 ken, depth 2 ken, wood-bark roof{{SFn|加原耕作|1980|p=514-515}}.}}.
 
@@ -104,14 +103,14 @@ The Zuishin gate was built in Bunka 14 ({{ill|1817|Q6958|qid=Q6958}}), and the s
 |File:Himesaka Kanachiana-jinja, keidaisha.jpg|Precinct shrine
 }}
 
-=== Footnotes ===
+== Footnotes ==
 {{脚注ヘルプ}}
-=== Notes ===
+== Notes ==
 {{Notelist2}}
-=== References ===
+== References ==
 {{Reflist|2}}
 
-=== Bibliography ===
+== Bibliography ==
 
 * {{Cite book|ja|title=Report on Shikinaisha Survey Vol.22 Sanyōdō|publisher=Kōgakkan University Press|date=1980-2-20|page=509-515|ref={{SfnRef|加原耕作|1980}}|author=Kōsaku Kahara|editor=Shikinaisha Study Group|chapter=17 Himesaka Shōnyūana Shrine}}
 
@@ -119,16 +118,14 @@ The Zuishin gate was built in Bunka 14 ({{ill|1817|Q6958|qid=Q6958}}), and the s
 
 * {{Cite book|ja|title=Place Names of Okayama Prefecture, Nihon Rekishi Chimei Taikei Vol.34|publisher={{ill|Heibonsha|ar|هيبونشا|de|Heibonsha|fa|شرکت هیبون|fr|Heibonsha|it|Heibonsha|ja|平凡社|tr|Heibonsha|zh|平凡社|qid=Q11482108}}|date=1988-4-20|page=937|ref={{SfnRef|平凡社|1988}}|author=Heibonsha}}
 
-=== Related items ===
+== Related items ==
 {{Commonscat}}
 
-=== External links ===
+== External links ==
 *[https://www.okayama-jinjacho.or.jp/search/18930/ 日咩坂鐘乳穴神社] - {{ill|Jinjachō|Q11590703|qid=Q11590703|lt=Okayama Prefecture Shrine Office}}
 
 {{神道 横}}
 {{Normdaten}}
-
-== Categories ==
 [[Category:Wikidata generated shikinaisha pages|Himesaka Kanachiana Shrine]][[Category:Shikinaisha|Himesaka Kanachiana Shrine]][[Category:Shikinai Shōsha]]
 [[Category:Shikinaisha in Bitchū Province]]
 [[Category:Shinto shrines in Okayama Prefecture]]
@@ -138,4 +135,5 @@ The Zuishin gate was built in Bunka 14 ({{ill|1817|Q6958|qid=Q6958}}), and the s
 [[Category:Shikinaisha in Bitchū Province]]
 [[Category:Pages with 50+ untranslated japanese characters]]
 
+[[Category:Formerly autogenerated pages]]
 [[Category:Git synced pages]]
