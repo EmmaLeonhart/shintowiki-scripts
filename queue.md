@@ -94,6 +94,18 @@ Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
 
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
 
+- [ ] **Kokugakuin citation on the `P31 = Q134917286` (Shikinaisha) statements.** Emma: "all P31
+  Shikinaisha (Q134917286) items should get the Kokugakuin university citation thing just like
+  others. This is to go into the edits queue thing." The sibling P31 statements on the same items
+  already carry `P248=Q135159299` + `P13677=<entry id>` (e.g. Q135039995's `P31=Q135038714` and
+  `P31=Q135160342` do; its `P31=Q134917286` has no reference at all). Add-only ⇒ drip-safe ⇒
+  ATOMIC_FILES. Skip items whose `P13677` is not singular — the entry id cannot be attributed.
+- [ ] **`[[Tamatsukuri Shrine (Q134930396)]]` — the property-dump cleanup didn't go far enough.**
+  Emma: "a large amount of the pages that were supposed to be corrected because they were giant
+  property lists but had Japanese language content in them were just kind of not corrected enough.
+  I corrected this one enough, so you can look at the history to see my last two edits that I did
+  that actually changed it to the desired form." Read those two revisions on shinto.miraheze.org,
+  derive the desired form, and check it against `shinto_miraheze/git_sync_strip_property_dumps.py`.
 - [ ] **Shikinaisha lists should exclude Beppyō Shrines, Kokushi Genzaisha, and one more class.**
   Needs agentic RAG. Blocked on a real sub-problem Emma names: *deriving a shrine's historical
   province from its coordinates* (she thought she had a gazetteer, then said she doesn't). The
