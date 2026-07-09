@@ -19,6 +19,7 @@ import shutil
 import time
 import requests
 from datetime import datetime, timezone
+from urllib.parse import unquote
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
@@ -193,7 +194,18 @@ def fetch_sparql(query):
             print(f"FATAL: {r.status_code} after {max_retries} retries — bailing")
             r.raise_for_status()
         r.raise_for_status()
-        return r.json()["results"]["bindings"]
+        # WDQS signals a mid-stream query abort by appending a Java stack trace to
+        # an already-200 response body, so the JSON is truncated. Treat that like a
+        # 500. strict=False because literals legitimately contain raw newlines.
+        try:
+            return json.loads(r.text, strict=False)["results"]["bindings"]
+        except (ValueError, KeyError):
+            if attempt < max_retries:
+                wait = 30 * (2 ** attempt)
+                print(f"SPARQL returned a truncated/aborted body ({len(r.text)} bytes) — retrying in {wait}s (attempt {attempt + 1}/{max_retries})", flush=True)
+                time.sleep(wait)
+                continue
+            raise RuntimeError("SPARQL body truncated (query aborted server-side) after retries")
 
 
 def qid(uri):
@@ -1007,55 +1019,352 @@ def generate_p958_html_section(summary):
   {anomaly_list}"""
 
 
-def fetch_duplicate_items(prop):
-    """Fetch Shikinai Ronsha items with duplicate statements for a property."""
+DUP_PROPS = ["P361", "P1448", "P6375"]
+
+# The Kokugakuin University Digital Museum entry, per P13677's formatter URL.
+KOKUGAKUIN_URL = "https://jmapps.ne.jp/kokugakuin/det.html?data_id={}"
+KOKUGAKUIN_DB = "Q135159299"  # Kokugakuin University Shrine database
+
+# Reference predicates worth rendering. Leaving ?refP unbound makes WDQS walk
+# every reference triple and abort the query mid-stream (it answers 200 with a
+# Java stack trace glued onto truncated JSON), so pin the set explicitly.
+REF_PROPS = ["P248", "P13677", "P4656", "P143", "P854", "P813"]
+
+# Chunk size for VALUES clauses. The whole point of Wikidata is the mass query:
+# materialise the duplicate-item set ONCE, then feed it back as VALUES rather
+# than re-evaluating the GROUP BY/HAVING subquery inside every detail query.
+# Measured on the 104-item P1448 set: VALUES 0.6s vs 46s for the nested form,
+# and the reference walk only completes at all in the VALUES form.
+VALUES_CHUNK = 150
+
+
+def _chunks(seq, n):
+    for i in range(0, len(seq), n):
+        yield seq[i:i + n]
+
+
+def _values(qids):
+    return "VALUES ?item { %s }" % " ".join("wd:" + q for q in qids)
+
+
+def _mass_query(qids, body, variables):
+    """Run `body` once per VALUES chunk and concatenate the bindings."""
+    rows = []
+    for chunk in _chunks(qids, VALUES_CHUNK):
+        query = "SELECT %s WHERE { %s %s }" % (variables, _values(chunk), body)
+        rows.extend(fetch_sparql(query))
+    return rows
+
+
+def _val(row, key):
+    return row[key]["value"] if key in row else None
+
+
+def fetch_duplicate_qids(prop):
+    """QIDs of Shikinai Ronsha items carrying more than one `prop` statement."""
     query = f"""
-    SELECT ?item ?itemLabel (COUNT(?s) AS ?count) WHERE {{
+    SELECT ?item (COUNT(?s) AS ?count) WHERE {{
       ?item wdt:P31 wd:Q135022904 .
       ?item p:{prop} ?s .
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,ja" }}
-    }} GROUP BY ?item ?itemLabel HAVING(COUNT(?s) > 1) ORDER BY DESC(?count)
+    }} GROUP BY ?item HAVING(COUNT(?s) > 1) ORDER BY DESC(?count)
     """
-    try:
-        results = fetch_sparql(query)
-        items = []
-        for row in results:
-            qid = row["item"]["value"].rsplit("/", 1)[-1]
-            label = row.get("itemLabel", {}).get("value", qid)
-            count = int(row["count"]["value"])
-            items.append({"qid": qid, "label": label, "count": count})
-        return items
-    except Exception as e:
-        print(f"  Warning: failed to fetch {prop} duplicates: {e}")
-        return []
+    return [qid(r["item"]["value"]) for r in fetch_sparql(query)]
+
+
+def fetch_labels(qids):
+    """{qid: {"ja": ..., "en": ...}} — one mass query per chunk."""
+    rows = _mass_query(
+        qids,
+        'OPTIONAL { ?item rdfs:label ?ja FILTER(lang(?ja) = "ja") } '
+        'OPTIONAL { ?item rdfs:label ?en FILTER(lang(?en) = "en") }',
+        "?item ?ja ?en",
+    )
+    out = {}
+    for r in rows:
+        out[qid(_val(r, "item"))] = {"ja": _val(r, "ja"), "en": _val(r, "en")}
+    return out
+
+
+def fetch_kokugakuin_entries(qids):
+    """{qid: [(entry_id, section)]} — every P13677 held by the item."""
+    rows = _mass_query(
+        qids,
+        "?item p:P13677 ?s . ?s ps:P13677 ?eid . OPTIONAL { ?s pq:P958 ?section }",
+        "?item ?eid ?section",
+    )
+    out = {}
+    for r in rows:
+        out.setdefault(qid(_val(r, "item")), []).append(
+            (_val(r, "eid"), _val(r, "section"))
+        )
+    for v in out.values():
+        v.sort(key=lambda t: (t[0], t[1] or ""))
+    return out
+
+
+def fetch_statement_refs(qids, prop):
+    """{statement_uri: [{ref_prop: [values]}]} for one property, flattened per statement."""
+    rows = _mass_query(
+        qids,
+        "?item p:%s ?st . ?st prov:wasDerivedFrom ?ref . "
+        "VALUES ?refP { %s } ?ref ?refP ?refV ."
+        % (prop, " ".join("pr:" + p for p in REF_PROPS)),
+        "?st ?refP ?refV",
+    )
+    out = {}
+    for r in rows:
+        st = _val(r, "st")
+        prop_id = _val(r, "refP").rsplit("/", 1)[-1]
+        out.setdefault(st, {}).setdefault(prop_id, []).append(_val(r, "refV"))
+    return out
+
+
+def render_refs(ref_map):
+    """Render one statement's references as small linked badges."""
+    if not ref_map:
+        return '<span class="norefs">no citation</span>'
+    parts = []
+    kokugakuin_ids = ref_map.get("P13677", [])
+    stated_in = [qid(v) for v in ref_map.get("P248", [])]
+    if KOKUGAKUIN_DB in stated_in and kokugakuin_ids:
+        for eid in kokugakuin_ids:
+            parts.append(
+                f'<a class="ref" href="{KOKUGAKUIN_URL.format(eid)}">Kokugakuin #{html_escape(eid)}</a>'
+            )
+    elif kokugakuin_ids:
+        for eid in kokugakuin_ids:
+            parts.append(
+                f'<a class="ref" href="{KOKUGAKUIN_URL.format(eid)}">#{html_escape(eid)}</a>'
+            )
+    for q in stated_in:
+        if q != KOKUGAKUIN_DB:
+            parts.append(f'<a class="ref" href="https://www.wikidata.org/wiki/{q}">stated in {q}</a>')
+    for url in ref_map.get("P4656", []) + ref_map.get("P854", []):
+        label = unquote(url.rsplit("/", 1)[-1] or url)
+        parts.append(f'<a class="ref" href="{html_escape(url)}">{html_escape(label[:60])}</a>')
+    for q in [qid(v) for v in ref_map.get("P143", [])]:
+        parts.append(f'<a class="ref imported" href="https://www.wikidata.org/wiki/{q}">imported from {q}</a>')
+    return " ".join(parts) if parts else '<span class="norefs">no citation</span>'
+
+
+def item_cell(q, labels):
+    lab = labels.get(q, {})
+    ja = lab.get("ja") or ""
+    en = lab.get("en") or ""
+    return (
+        f'<a href="https://www.wikidata.org/wiki/{q}">{q}</a>'
+        f'<div class="jalabel">{html_escape(ja)}</div>'
+        f'<div class="enlabel">{html_escape(en)}</div>'
+    )
+
+
+def kokugakuin_cell(q, entries):
+    rows = entries.get(q, [])
+    if not rows:
+        return '<span class="norefs">none</span>'
+    out = []
+    for eid, section in rows:
+        sec = f' <span class="sec">§{html_escape(section)}</span>' if section and section != "n/a" else ""
+        out.append(f'<div><a href="{KOKUGAKUIN_URL.format(eid)}">{html_escape(eid)}</a>{sec}</div>')
+    return "".join(out)
+
+
+def fetch_p1448_details(qids):
+    rows = _mass_query(
+        qids,
+        "?item p:P1448 ?st . ?st ps:P1448 ?name . "
+        "OPTIONAL { ?st pq:P1814 ?kana } OPTIONAL { ?st pq:P1264 ?period }",
+        "?item ?st ?name ?kana ?period",
+    )
+    out = {}
+    for r in rows:
+        st = _val(r, "st")
+        d = out.setdefault(qid(_val(r, "item")), {}).setdefault(
+            st, {"name": _val(r, "name"), "kana": set(), "period": None}
+        )
+        if _val(r, "kana"):
+            d["kana"].add(_val(r, "kana"))
+        if _val(r, "period"):
+            d["period"] = qid(_val(r, "period"))
+    return out
+
+
+def fetch_p6375_details(qids):
+    rows = _mass_query(
+        qids, "?item p:P6375 ?st . ?st ps:P6375 ?addr .", "?item ?st ?addr"
+    )
+    out = {}
+    for r in rows:
+        out.setdefault(qid(_val(r, "item")), {})[_val(r, "st")] = _val(r, "addr")
+    return out
+
+
+def fetch_p361_details(qids):
+    rows = _mass_query(
+        qids,
+        "?item p:P361 ?st . ?st ps:P361 ?target . "
+        "OPTIONAL { ?st pq:P1545 ?ordinal } "
+        "OPTIONAL { ?st pq:P155 ?follows } OPTIONAL { ?st pq:P156 ?followedBy }",
+        "?item ?st ?target ?ordinal ?follows ?followedBy",
+    )
+    out = {}
+    for r in rows:
+        st = _val(r, "st")
+        d = out.setdefault(qid(_val(r, "item")), {}).setdefault(
+            st, {"target": qid(_val(r, "target")), "ordinal": _val(r, "ordinal"),
+                 "follows": set(), "followedBy": set()}
+        )
+        if _val(r, "follows"):
+            d["follows"].add(qid(_val(r, "follows")))
+        if _val(r, "followedBy"):
+            d["followedBy"].add(qid(_val(r, "followedBy")))
+    return out
+
+
+def qlink(q):
+    return f'<a href="https://www.wikidata.org/wiki/{q}">{q}</a>'
+
+
+def render_p1448_table(qids, labels, details, refs, entries):
+    """Emma 2026-07-09: ja label | the official names | every Kokugakuin entry, clickable."""
+    body = ""
+    for q in qids:
+        sts = details.get(q, {})
+        names = ""
+        for st, d in sorted(sts.items(), key=lambda kv: (kv[1]["name"] or "")):
+            kana = ", ".join(sorted(d["kana"]))
+            kana_html = f' <span class="kana">{html_escape(kana)}</span>' if kana else ""
+            period = f' <span class="sec">{d["period"]}</span>' if d["period"] else ""
+            names += (
+                f'<div class="stmt"><span class="val">{html_escape(d["name"] or "")}</span>'
+                f'{kana_html}{period}<div class="refline">{render_refs(refs.get(st, {}))}</div></div>'
+            )
+        body += (
+            f"<tr><td>{item_cell(q, labels)}</td>"
+            f'<td class="count">{len(sts)}</td>'
+            f"<td>{names}</td>"
+            f"<td>{kokugakuin_cell(q, entries)}</td></tr>\n"
+        )
+    return f"""<table class="dup">
+  <thead><tr><th>Item</th><th>n</th><th>Official names (P1448)</th>
+    <th>Kokugakuin entries (P13677)</th></tr></thead>
+  <tbody>{body}</tbody></table>"""
+
+
+def render_p6375_table(qids, labels, details, refs, entries):
+    """Emma 2026-07-09: every address with all its citations; cited ones are the signal."""
+    body = ""
+    for q in qids:
+        sts = details.get(q, {})
+        addrs = ""
+        for st, addr in sorted(sts.items(), key=lambda kv: kv[1] or ""):
+            ref_map = refs.get(st, {})
+            cls = "stmt cited" if ref_map else "stmt"
+            addrs += (
+                f'<div class="{cls}"><span class="val">{html_escape(addr or "")}</span>'
+                f'<div class="refline">{render_refs(ref_map)}</div></div>'
+            )
+        n_cited = sum(1 for st in sts if refs.get(st))
+        flag = "one cited" if n_cited == 1 else ("none cited" if n_cited == 0 else f"{n_cited} cited")
+        body += (
+            f"<tr><td>{item_cell(q, labels)}</td>"
+            f'<td class="count">{len(sts)}<div class="sec">{flag}</div></td>'
+            f"<td>{addrs}</td>"
+            f"<td>{kokugakuin_cell(q, entries)}</td></tr>\n"
+        )
+    return f"""<table class="dup">
+  <thead><tr><th>Item</th><th>n</th><th>Street addresses (P6375)</th>
+    <th>Kokugakuin entries (P13677)</th></tr></thead>
+  <tbody>{body}</tbody></table>"""
+
+
+def render_p361_table(qids, labels, details, entries):
+    """Ordinal + neighbours per statement, so the conflated ones are visible at a glance."""
+    body = ""
+    for q in qids:
+        sts = details.get(q, {})
+        stmts = ""
+        for st, d in sorted(sts.items(), key=lambda kv: (kv[1]["ordinal"] or "")):
+            nbrs = ""
+            if d["follows"]:
+                nbrs += '<div class="sec">follows ' + ", ".join(qlink(x) for x in sorted(d["follows"])) + "</div>"
+            if d["followedBy"]:
+                nbrs += '<div class="sec">followed by ' + ", ".join(qlink(x) for x in sorted(d["followedBy"])) + "</div>"
+            conflated = len(d["follows"]) > 1 or len(d["followedBy"]) > 1
+            cls = "stmt conflated" if conflated else "stmt"
+            ordinal = d["ordinal"] or "&mdash;"
+            stmts += (
+                f'<div class="{cls}"><span class="val">#{ordinal}</span> in {qlink(d["target"])}{nbrs}</div>'
+            )
+        n_entries = len(entries.get(q, []))
+        body += (
+            f"<tr><td>{item_cell(q, labels)}</td>"
+            f'<td class="count">{len(sts)}<div class="sec">{n_entries} entr{"y" if n_entries == 1 else "ies"}</div></td>'
+            f"<td>{stmts}</td>"
+            f"<td>{kokugakuin_cell(q, entries)}</td></tr>\n"
+        )
+    return f"""<table class="dup">
+  <thead><tr><th>Item</th><th>n</th><th>Part-of statements (P361)</th>
+    <th>Kokugakuin entries (P13677)</th></tr></thead>
+  <tbody>{body}</tbody></table>"""
 
 
 def generate_duplicates_section():
-    """Fetch and render the duplicate properties section."""
+    """Fetch and render the duplicate properties section.
+
+    Rewritten 2026-07-09 (Emma): the old version rendered a bare `<li>QID (n
+    statements)` list, which carried nothing you could act on, and it named
+    Takagi Shrine as the worked example in *hardcoded* HTML — so the example
+    outlived the problem. Everything below is derived from the query.
+    """
     print("\n=== Fetching duplicate property data ===")
 
     dupes = {}
-    for prop in ["P361", "P1448", "P6375"]:
+    for prop in DUP_PROPS:
         print(f"  Querying {prop} duplicates...")
-        dupes[prop] = fetch_duplicate_items(prop)
+        try:
+            dupes[prop] = fetch_duplicate_qids(prop)
+        except Exception as e:
+            print(f"  Warning: failed to fetch {prop} duplicates: {e}")
+            dupes[prop] = []
         print(f"    Found {len(dupes[prop])} items with duplicate {prop}")
-        time.sleep(2)
 
-    def item_list_html(items):
-        if not items:
-            return "<p><em>No duplicates found (or query failed).</em></p>"
-        rows = ""
-        for item in items:
-            rows += (
-                f'<li><a href="https://www.wikidata.org/wiki/{item["qid"]}">'
-                f'{item["qid"]}</a> {html_escape(item["label"])} '
-                f'({item["count"]} statements)</li>\n'
-            )
-        return f'<ul style="font-size: 0.85rem; max-height: 300px; overflow-y: auto;">{rows}</ul>'
+    all_qids = sorted({q for v in dupes.values() for q in v})
+    if not all_qids:
+        return """
+  <h2>Duplicate Properties on Shikinai Ronsha</h2>
+  <p><em>No duplicates found (or the queries failed).</em></p>"""
 
-    p361_list = item_list_html(dupes["P361"])
-    p1448_list = item_list_html(dupes["P1448"])
-    p6375_list = item_list_html(dupes["P6375"])
+    print(f"  Fetching detail for {len(all_qids)} distinct items...")
+    labels = fetch_labels(all_qids)
+    entries = fetch_kokugakuin_entries(all_qids)
+
+    d1448 = fetch_p1448_details(dupes["P1448"]) if dupes["P1448"] else {}
+    r1448 = fetch_statement_refs(dupes["P1448"], "P1448") if dupes["P1448"] else {}
+    d6375 = fetch_p6375_details(dupes["P6375"]) if dupes["P6375"] else {}
+    r6375 = fetch_statement_refs(dupes["P6375"], "P6375") if dupes["P6375"] else {}
+    d361 = fetch_p361_details(dupes["P361"]) if dupes["P361"] else {}
+
+    # Sort P6375 so the ones Emma can decide fastest float up: exactly one of the
+    # competing addresses carries a citation ("if any one of them has a citation,
+    # that's a really good sign").
+    def cited_count(q):
+        return sum(1 for st in d6375.get(q, {}) if r6375.get(st))
+
+    p6375_sorted = sorted(dupes["P6375"], key=lambda q: (cited_count(q) != 1, cited_count(q), q))
+    one_cited = sum(1 for q in dupes["P6375"] if cited_count(q) == 1)
+
+    # P361: the conflated ones (a statement with several follows/followed-by
+    # values) are the ones the migration has to rebuild from the list entries.
+    def conflated(q):
+        return any(len(d["follows"]) > 1 or len(d["followedBy"]) > 1 for d in d361.get(q, {}).values())
+
+    p361_sorted = sorted(dupes["P361"], key=lambda q: (not conflated(q), q))
+    n_conflated = sum(1 for q in dupes["P361"] if conflated(q))
+
+    p1448_sorted = sorted(dupes["P1448"], key=lambda q: (-len(d1448.get(q, {})), q))
+
+    built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     return f"""
   <h2>Duplicate Properties on Shikinai Ronsha</h2>
@@ -1064,43 +1373,46 @@ def generate_duplicates_section():
      ended up with duplicate <code>P361</code>, <code>P1448</code>, and <code>P6375</code>
      statements. The original source had bad data modelling, and correcting it in a way
      that broke provenance made the situation worse.</p>
+  <p class="desc">Counts queried at <strong>{built}</strong>. Nothing drains these
+     automatically, so a count only moves when someone fixes an item by hand &mdash;
+     a number that looks stuck is a backlog, not a stale page.</p>
 
   <div class="category">
     <h3>P361 (part of) &mdash; {len(dupes["P361"])} items with duplicates</h3>
-    <p class="desc">These duplicates are related to ordering in the Engishiki lists.
-      The P361 and P1448 properties on these items tend to be highly property-heavy
-      (many qualifiers and references). We could probably fix the P361 duplicates by
-      walking through the lists again and reconciling.</p>
+    <p class="desc">The ordinals and the follows / followed-by qualifiers are already
+      resolved on the <em>Shikinaisha list entry</em> items; they are not resolved here.
+      Where one Ronsha item absorbed several list entries, their statements collapsed
+      together and the neighbours cross-contaminated &mdash;
+      <strong>{n_conflated}</strong> of these carry a statement with more than one
+      <code>P155</code>/<code>P156</code> value (highlighted). Those are what the
+      migration has to rebuild from the entry items.</p>
     <details>
       <summary>Show all {len(dupes["P361"])} items</summary>
-      {p361_list}
+      {render_p361_table(p361_sorted, labels, d361, entries)}
     </details>
   </div>
 
   <div class="category">
     <h3>P1448 (official name) &mdash; {len(dupes["P1448"])} items with duplicates</h3>
-    <p class="desc">Like P361, these tend to be property-heavy items. The incorrect
-      P1448 statements appear to be directly detectable by checking their source
-      references &mdash; the wrong ones will have mismatched or missing sources.</p>
+    <p class="desc">Each competing official name is shown with its kana
+      (<code>P1814</code>), its period qualifier (<code>P1264</code>) and its
+      references, next to every Kokugakuin Shrine Database entry the item holds.</p>
     <details>
       <summary>Show all {len(dupes["P1448"])} items</summary>
-      {p1448_list}
+      {render_p1448_table(p1448_sorted, labels, d1448, r1448, entries)}
     </details>
   </div>
 
   <div class="category">
     <h3>P6375 (street address) &mdash; {len(dupes["P6375"])} items with duplicates</h3>
-    <p class="desc">These are simpler duplicates compared to P361/P1448. Someone other
-      than the original importer would be best to assess which addresses are correct,
-      as the duplicates may reflect genuinely different locations for merged items.</p>
+    <p class="desc">Every address with all of its citations. A citation is the signal:
+      <strong>{one_cited}</strong> of these have <em>exactly one</em> cited address among
+      the competing values, and are sorted to the top. Cited addresses are outlined.</p>
     <details>
       <summary>Show all {len(dupes["P6375"])} items</summary>
-      {p6375_list}
+      {render_p6375_table(p6375_sorted, labels, d6375, r6375, entries)}
     </details>
-  </div>
-
-  <p class="desc">Example of all three issues on a single item:
-     <a href="https://www.wikidata.org/wiki/Q59282644">Q59282644</a> (Takagi Shrine)</p>"""
+  </div>"""
 
 
 def generate_hiteisha_html_section(stats):
@@ -1314,6 +1626,27 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, 
                      border-left: 4px solid #ff9800; }}
     .qs-box {{ width: 100%; font-family: monospace; font-size: 0.8rem; background: #f5f5f5;
                border: 1px solid #ccc; border-radius: 4px; padding: 0.5rem; resize: vertical; }}
+    /* Duplicate-property review tables (Emma 2026-07-09) */
+    table.dup {{ border-collapse: collapse; width: 100%; font-size: 0.82rem; margin-top: 0.5rem; }}
+    table.dup th {{ background: #e8f4e8; text-align: left; padding: 0.4rem 0.5rem;
+                    border: 1px solid #cfe0cf; position: sticky; top: 0; }}
+    table.dup td {{ border: 1px solid #e0e0e0; padding: 0.4rem 0.5rem; vertical-align: top; }}
+    table.dup td.count {{ text-align: center; white-space: nowrap; font-weight: 600; }}
+    table.dup tbody tr:nth-child(even) {{ background: #fafafa; }}
+    .jalabel {{ font-size: 0.95rem; color: #222; }}
+    .enlabel {{ font-size: 0.8rem; color: #777; }}
+    .stmt {{ padding: 0.25rem 0.4rem; margin: 0.15rem 0; border-left: 3px solid transparent; }}
+    .stmt.cited {{ border-left-color: #4caf50; background: #f3faf3; }}
+    .stmt.conflated {{ border-left-color: #e53935; background: #fdf3f3; }}
+    .stmt .val {{ font-weight: 600; }}
+    .kana {{ color: #6a1b9a; font-size: 0.8rem; }}
+    .sec {{ color: #888; font-size: 0.75rem; }}
+    .refline {{ margin-top: 0.15rem; }}
+    a.ref {{ display: inline-block; font-size: 0.72rem; background: #eef3fb; border: 1px solid #ccd8ea;
+             border-radius: 3px; padding: 0 0.3rem; margin: 0.1rem 0.2rem 0 0; text-decoration: none; }}
+    a.ref.imported {{ background: #fdf6e3; border-color: #e8dcb8; }}
+    .norefs {{ color: #b71c1c; font-size: 0.75rem; font-style: italic; }}
+    details > summary {{ cursor: pointer; }}
   </style>
 </head>
 <body>
