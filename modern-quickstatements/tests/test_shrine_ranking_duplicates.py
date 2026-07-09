@@ -225,3 +225,39 @@ def test_html_escape_applied_to_labels():
     html = g.shrine_cell("Q1", {"Q1": {"ja": "<script>", "en": None}})
     assert "<script>" not in html
     assert "&lt;script&gt;" in html
+
+
+def test_dup_exceptions_hold_out_emmas_reviewed_items():
+    """Emma 2026-07-09: Izawa-no-Miya and Izumo-daijingū have correct addresses."""
+    assert "Q10885171" in g.DUP_EXCEPTIONS["P6375"]
+    assert "Q10896675" in g.DUP_EXCEPTIONS["P6375"]
+    assert "Q11379325" in g.DUP_EXCEPTIONS["P6375"]
+    # every exception carries a stated reason, so it is never a silent drop
+    for prop, items in g.DUP_EXCEPTIONS.items():
+        assert prop in g.DUP_PROPS
+        for q, reason in items.items():
+            assert q.startswith("Q") and reason.strip()
+
+
+def test_script_pair_is_the_same_address_written_twice():
+    """Emma 2026-07-09: two addresses, one Japanese + one romanised => not a conflict."""
+    assert g.is_script_pair(["374 Isobe-chō Kaminogō, Mie-ken", "三重県志摩市磯部町上之郷374"])
+    assert g.is_script_pair(["三重県志摩市磯部町上之郷374", "374 Isobe-chō Kaminogō, Mie-ken"])
+
+
+def test_script_pair_rejects_two_japanese_addresses():
+    """Two genuinely different Japanese addresses are a real conflict."""
+    assert not g.is_script_pair(["埼玉県入間市宮寺", "埼玉県入間郡毛呂山町岩井西5-17-1"])
+
+
+def test_script_pair_rejects_more_than_two():
+    assert not g.is_script_pair(["Kyoto-fu", "京都府亀岡市千歳町出雲無番地", "京都府亀岡市千歳町千歳"])
+
+
+def test_script_pair_macron_romanisation_is_not_cjk():
+    """ō is non-ASCII but not CJK — testing for ASCII would misclassify this."""
+    assert g.is_script_pair(["Izumo-daijingū, Kyōto-fu", "京都府亀岡市"])
+
+
+def test_script_pair_detects_kana_not_just_kanji():
+    assert g.is_script_pair(["Hiragana-ken", "ひらがな県"])

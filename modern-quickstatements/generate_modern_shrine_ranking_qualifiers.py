@@ -15,6 +15,7 @@ import io
 import sys
 import json
 import os
+import re
 import shutil
 import time
 import requests
@@ -1027,6 +1028,43 @@ def generate_p958_html_section(summary):
 
 DUP_PROPS = ["P361", "P1448", "P6375"]
 
+# Hand-maintained exceptions: items whose several values are CORRECT, so they are
+# not duplicates to resolve and must not clutter the review tables. Emma reviews
+# these personally — add a QID here only on her say-so, with her reason.
+DUP_EXCEPTIONS = {
+    "P361": {},
+    "P1448": {},
+    "P6375": {
+        # Emma 2026-07-09: "Izawa-no-Miya and Izumo-daijingū are properly address
+        # ones and they should be somehow personally set up as exceptions."
+        "Q10885171": "Izawa-no-miya — addresses are correct as they stand",
+        "Q10896675": "Izumo-daijingū — addresses are correct as they stand",
+        # Emma 2026-07-09: "Izawa Shrine (Q11379325) is now an exception too"
+        "Q11379325": "Izawa Shrine — addresses are correct as they stand",
+        "Q11457393": "Samugawa Shrine — addresses are correct as they stand",
+        "Q114593121": "Baba Tsutsukowake Shrine — addresses are correct as they stand",
+    },
+}
+
+# Kanji, hiragana, katakana. A romanised address has none of these; a Japanese
+# one has some. Macrons (ō) in the romanisation are non-ASCII but not CJK, so
+# testing for CJK rather than for ASCII is what actually separates the two.
+_CJK = re.compile(r"[぀-ヿ㐀-䶿一-鿿]")
+
+
+def is_script_pair(addresses):
+    """Two addresses, one Japanese and one romanised, are the same address twice.
+
+    Emma 2026-07-09: "if any one of them has only two addresses and one of them
+    is like a regular and one is in Japanese and one is in English, then it is an
+    exception." Derived rather than hand-listed, so it keeps holding as the data
+    changes.
+    """
+    if len(addresses) != 2:
+        return False
+    cjk = [bool(_CJK.search(a or "")) for a in addresses]
+    return sorted(cjk) == [False, True]
+
 # The Kokugakuin University Digital Museum entry, per P13677's formatter URL.
 KOKUGAKUIN_URL = "https://jmapps.ne.jp/kokugakuin/det.html?data_id={}"
 KOKUGAKUIN_DB = "Q135159299"  # Kokugakuin University Shrine database
@@ -1387,14 +1425,19 @@ def generate_duplicates_section():
     print("\n=== Fetching duplicate property data ===")
 
     dupes = {}
+    excluded = {}
     for prop in DUP_PROPS:
         print(f"  Querying {prop} duplicates...")
         try:
-            dupes[prop] = fetch_duplicate_qids(prop)
+            found = fetch_duplicate_qids(prop)
         except Exception as e:
             print(f"  Warning: failed to fetch {prop} duplicates: {e}")
-            dupes[prop] = []
-        print(f"    Found {len(dupes[prop])} items with duplicate {prop}")
+            found = []
+        exceptions = DUP_EXCEPTIONS.get(prop, {})
+        dupes[prop] = [q for q in found if q not in exceptions]
+        excluded[prop] = [q for q in found if q in exceptions]
+        note = f" ({len(excluded[prop])} excepted)" if excluded[prop] else ""
+        print(f"    Found {len(dupes[prop])} items with duplicate {prop}{note}")
 
     all_qids = sorted({q for v in dupes.values() for q in v})
     if not all_qids:
@@ -1408,6 +1451,16 @@ def generate_duplicates_section():
     d1448 = fetch_p1448_details(dupes["P1448"]) if dupes["P1448"] else {}
     r1448 = fetch_statement_refs(dupes["P1448"], "P1448") if dupes["P1448"] else {}
     d6375 = fetch_p6375_details(dupes["P6375"]) if dupes["P6375"] else {}
+
+    # A Japanese address plus its romanisation is one address written twice, not
+    # a conflict — drop those before anything downstream counts or sorts them.
+    script_pairs = [q for q in dupes["P6375"] if is_script_pair(list(d6375.get(q, {}).values()))]
+    if script_pairs:
+        print(f"    {len(script_pairs)} P6375 items are a Japanese/romanised pair — excepted")
+        dupes["P6375"] = [q for q in dupes["P6375"] if q not in set(script_pairs)]
+        for q in script_pairs:
+            d6375.pop(q, None)
+
     r6375 = fetch_statement_refs(dupes["P6375"], "P6375") if dupes["P6375"] else {}
     d361 = fetch_p361_details(dupes["P361"]) if dupes["P361"] else {}
 
@@ -1416,6 +1469,7 @@ def generate_duplicates_section():
     linked = {d["target"] for sts in d361.values() for d in sts.values()}
     linked |= {x for sts in d361.values() for d in sts.values() for x in d["follows"] | d["followedBy"]}
     linked |= {d["period"] for sts in d1448.values() for d in sts.values() if d["period"]}
+    linked |= {q for v in excluded.values() for q in v}  # named in the exceptions box
     labels = fetch_labels(sorted(set(all_qids) | linked))
 
     # Sort P6375 so the ones Emma can decide fastest float up: exactly one of the
@@ -1438,6 +1492,35 @@ def generate_duplicates_section():
     p1448_sorted = sorted(dupes["P1448"], key=lambda q: (-len(d1448.get(q, {})), q))
 
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    # Excepted items are hidden from the tables but named here, so an exception is
+    # a visible decision rather than a silent disappearance.
+    ex_lines = []
+    for prop in DUP_PROPS:
+        for q in excluded[prop]:
+            ex_lines.append(
+                f'<li><code>{prop}</code> &mdash; '
+                f'<a href="https://www.wikidata.org/wiki/{q}">{html_escape(name_of(q, labels))}</a> '
+                f'({q}): {html_escape(DUP_EXCEPTIONS[prop][q])}</li>'
+            )
+    pair_html = ""
+    if script_pairs:
+        links = ", ".join(
+            f'<a href="https://www.wikidata.org/wiki/{q}">{html_escape(name_of(q, labels))}</a>'
+            for q in sorted(script_pairs, key=lambda x: name_of(x, labels))
+        )
+        pair_html = (
+            f'<p class="desc"><strong>{len(script_pairs)}</strong> further <code>P6375</code> items '
+            "hold exactly two addresses, one Japanese and one romanised &mdash; the same address "
+            f"written twice, so they are not conflicts either: {links}.</p>"
+        )
+
+    exceptions_html = (
+        '<div class="category"><h3>Excepted items</h3>'
+        '<p class="desc">Reviewed and confirmed correct as they stand, so they are held '
+        'out of the tables above rather than counted as duplicates.</p>'
+        f'<ul>{"".join(ex_lines)}</ul>{pair_html}</div>'
+    ) if (ex_lines or pair_html) else ""
 
     return f"""
   <h2>Duplicate Properties on Shikinai Ronsha</h2>
@@ -1477,7 +1560,8 @@ def generate_duplicates_section():
       (shaded red, sorted to the top). Those are what the migration has to rebuild from
       the entry items.</p>
     {render_p361_table(p361_sorted, labels, d361, entries)}
-  </div>"""
+  </div>
+  {exceptions_html}"""
 
 
 def generate_hiteisha_html_section(stats):
