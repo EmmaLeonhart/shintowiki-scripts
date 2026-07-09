@@ -69,6 +69,37 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, shinto-wiki-as-source for the ~106 unsourced
   modern ranks.
 
+## From [[Open questions]] wiki-queue 2026-07-09 — "Anomaly corrections" (Emma)
+
+Target page: `shrine-ranking.html` § "Duplicate Properties on Shikinai Ronsha".
+Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
+
+- [ ] **(a) shrine-ranking.html "not updating"** — DIAGNOSED: the page *is* rebuilt daily
+  (origin `f96cd758`, "Last updated 2026-07-09 06:39 UTC"), the counts just barely move because
+  nothing drains them. What made it *look* frozen: the Takagi Shrine (Q59282644) "example of all
+  three issues" line is **hardcoded** in `generate_duplicates_section()` and Q59282644 now has 1×
+  each. Fix: derive the example from the query (or drop it), and surface the build time next to
+  each count so a stale render is obvious.
+- [ ] **(b) P1448 official-name table** (104 items) — replace the bare `<li>QID (n statements)`
+  list with a real table: ja label | each official name (+ its `P1264` period / `P1814` kana /
+  its references) | every `P13677` Kokugakuin entry on the item as a clickable link
+  (`https://jmapps.ne.jp/kokugakuin/det.html?data_id=$1`). Emma: "Every single one of them is
+  probably going to be manually fixable for me if I just have that information."
+- [ ] **(c) P6375 street-address table** (250 items) — show every address with **all** its
+  citations rendered as footnotes / an expanding block. Emma's predictor: "if any one of them has
+  a citation, that's a really good sign" — so sort/flag cited-vs-uncited. Needs the more
+  sophisticated view *before* she can decide.
+- [ ] **(d) P361 part-of migration** (384 items) — on the actual shrine item, remove **every**
+  P361→Shikinaisha-list statement; add ONE derived from the list-entry item, taking `P1545`
+  ordinal + `P155`/`P156` from the entry item's own (already-clean) statement. Two references:
+  `P248=Q135159299` + `P13677=<entry id>` (the form every coordinate already uses), and the
+  jawiki Shikinaisha-list article (`P4656=https://ja.wikipedia.org/wiki/<list>`).
+  **Add-first / remove-later as two separate scripts** (CLAUDE.md). BLOCKER to resolve first:
+  when a Ronsha item carries several `P13677` entry ids (e.g. Q11677110 holds 182062/182063/182065),
+  which entry's ordinal becomes the single new statement? Build the report, then ask.
+- [ ] (e) Street-address citation convention (Emma): for Shikinaisha lists, cite the jawiki
+  Shikinaisha-list article. No immediate citation otherwise; official names mostly already cited.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 55ae0bbe — Emma

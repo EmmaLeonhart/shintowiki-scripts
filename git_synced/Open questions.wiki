@@ -11,6 +11,14 @@ __NOTOC__
 # '''The uniqueness interlock (new this week):''' a label can only land if the label+description pair is unique — stale descriptions block label adds, so the description program runs alongside: desc-then-label pairs (100/day), class-true description adds (50/day until 2027-01), and collision groups routed to cloud enrichment for unique English descriptions (236 work-files live).
 # '''Guards:''' label-generator outputs never overwrite existing labels (non-destructive checks); label-typo review corrects the legacy romaji typos; the edits-today tile on the dashboard counts the account's total daily Wikidata edits.
 
+'''Why <code>shrine-ranking.html</code> looked frozen''' ''(answers the 2026-07-09 anomaly-corrections item; picked up into <code>queue.md</code>)''
+* The page ''is'' rebuilt every day — today's build stamps <code>Last updated: 2026-07-09 06:39 UTC</code>. Nothing is cached and nothing was disabled.
+* The counts barely moved (P361 387→386 in three weeks; P1448 105 and P6375 252 never moved) because '''nothing drains them''' — there is no bot fixing these duplicates, so the number only changes when you fix one by hand.
+* What made it look stale: the ''"Example of all three issues on a single item: Q59282644 (Takagi Shrine)"'' line is '''hardcoded''' in the generator, so it survived you fixing Takagi. Q59282644 now has 1×P361, 1×P1448, 1×P6375.
+* Live as of 2026-07-09 16:30 UTC: '''P361 384, P1448 104, P6375 250'''.
+
+'''Blocker on the P361 migration:''' when a Shikinai Ronsha item carries '''several''' <code>P13677</code> Kokugakuin entry ids (e.g. [[d:Q11677110]] holds 182062, 182063 ''and'' 182065, and its five P361 statements are the collapsed union of three list entries), which entry's <code>P1545</code> ordinal + <code>P155</code>/<code>P156</code> should become the single replacement statement? Options: (i) keep one P361 per entry id, (ii) pick the lowest ordinal, (iii) this set overlaps the parked Kokugakuin multiple-P13677 review and should wait for it. Single-entry items are unambiguous and can be done first either way.
+
 == Wiki-based queue ==
 
 ''(empty — items are picked up into queue.md and removed from here)''
