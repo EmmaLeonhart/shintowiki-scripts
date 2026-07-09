@@ -15,6 +15,19 @@ __NOTOC__
 
 ''(empty — items are picked up into queue.md and removed from here)''
 
+* Anomaly corrections
+** I am finally trying to systematically look over these.
+** So first of all, I don't know why it is that our shrine ranking anomalies https://emmaleonhart.github.io/shintowiki-scripts/shrine-ranking.html This page is consistently not updating, which is really annoying when we're actually trying to fix this stuff! There's some sort of caching or something that's causing a problem. And I think it's possible that you may have disabled it because your earlier system of querying was some weird thing that queried everything individually. 
+** Now for my analysis. I think that the P361 properties for the lists are actually pretty simple and easy to do, because all of the before and after qualifiers and the part-of qualifiers are already more or less resolved. They're resolved only on the Shikin Aisha list items; they're not resolved on these other things. Some of these get conflated because of that, so I just want you to go through all of those ones and remove every single part of the Shikin Aisha list that is on the actual shrine itself. Add in a new one that's just derived from the list item, with the preceding and following taken from the data thing. It is going to give two citations:
+*** to the items like Koku Gakuin ID, which a large amount of things are already cited to
+*** the different form of itIf you don't know it before, look it up, because every single one of those items that has a coordinate has that form, and also you have the Wikipedia ID. You have the Shikin Aisha list Wikipedia article, so this is super easy. You can do it.
+** Honestly, for the official name thing, I want you to do an analysis of the official names. I really just want you to make an actual table on that page, because I'm pretty sure that the table of whatever the Japanese label of it is is the two official names and all of the Koku Gakuin University Shrine Database entries, with clickable links. I think that's just going to solve it for me! Every single one of them is probably going to be manually fixable for me if I just have that information.
+** Street address is much more complicated. But I would say trying 
+** Oh, and for the street address thing, I would, in particular for those ones, I think a predictor that I've actually seen is: if any one of them is cited, if any one of them has a citation, then that's a really good sign. Show all of the addresses with all the citations as references, like footnotes or an expanding thing or whatever.
+** Yeah, so the part of duplicates is mostly just a matter of, honestly, the Shiki Naisha list stuff is pretty easily solved. It's almost all solved. It's just not solved on the shrine items. The official name stuff, I think, is easily solvable moat, but it kind of requires my intuition, and there's only a hundred and five of them. Maybe even less, because this page is stale.
+** Street Address has 252 items, probably less. I'm just going to need the more sophisticated thing showing all their different addresses, the sources, and stuff first, and then I'll be able to try, and then I'll be able to figure it out better.
+** And also Takagi Shrine no longer has any of those issues, so that's just a stale example.
+** And remembering that for the Shikin Aisha lists we cite the Wikipedia article for the Shikin Aisha list. We cite that, although in this case citing the Wikipedia article for the Shikin Aisha list means, like, the Wikipedia, whatever. We cite the Wikipedia article for the Shikin Aisha list for the street addresses. We aren't doing any immediate citation, and I think the official names are mostly going to already have citations.
 
 == Notes ==
 
