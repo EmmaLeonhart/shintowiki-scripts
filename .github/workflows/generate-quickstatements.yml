@@ -66,6 +66,16 @@ jobs:
         continue-on-error: true
         run: python generate_ronsha_ojp_name_removals.py
 
+      - name: Cite Shikinaisha P31 statements to the Kokugakuin database
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_shikinaisha_kokugakuin_refs.py
+
+      - name: Remove uncited Japanese addresses where a cited one exists
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_uncited_address_removals.py
+
       - name: Generate P958 QS
         working-directory: modern-quickstatements
         continue-on-error: true

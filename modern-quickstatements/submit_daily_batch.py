@@ -31,6 +31,8 @@ ATOMIC_FILES = [
     "remove_shikinai_hiteisha.txt",           # Remove P31=Q135026601 (Shikinai Hiteisha)
     "remove_shikinaisha.txt",                 # Remove P31=Q134917286 (Shikinaisha) from Shikinai Ronsha items
     "ronsha_ojp_name_removals.txt",           # Remove Old Japanese (ojp-*) P1448 official names from pure Shikinai Ronsha candidates
+    "shikinaisha_kokugakuin_refs.txt",        # Cite the P31=Q134917286 (Shikinaisha) statements to the Kokugakuin database, like their siblings
+    "uncited_address_removals.txt",           # Remove uncited Japanese P6375 where the same shrine carries a cited Japanese address
     "engishiki_add_references.txt",           # Add Kokugakuin refs to Engishiki/Ritsuryō P13723
     "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
     "p6262_fandom_links.txt",                 # Add P6262 (Fandom article ID) links
