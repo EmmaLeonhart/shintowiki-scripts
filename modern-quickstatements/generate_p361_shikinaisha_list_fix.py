@@ -62,6 +62,7 @@ HEADERS = {
 
 RONSHA = "Q135022904"          # Shikinai Ronsha
 KOKUGAKUIN_DB = "Q135159299"   # Kokugakuin University Shrine database
+ENGISHIKI_JINMYOCHO = "Q11064932"  # a real Shikinaisha list is part of this
 CHUNK = 100
 
 _last = 0.0
@@ -119,7 +120,10 @@ def fetch_duplicate_items():
 
 
 def fetch_targets(items):
-    """{item: [list qids]} — which lists each duplicate item claims to be part of."""
+    """{item: [target qids]} — every P361 target of each duplicate item.
+
+    NOT all of these are Shikinaisha lists — see `filter_shikinaisha_lists`.
+    """
     out = collections.defaultdict(set)
     for chunk in chunks(items, CHUNK):
         for r in sparql(
@@ -128,6 +132,39 @@ def fetch_targets(items):
         ):
             out[qid(r["item"]["value"])].add(qid(r["list"]["value"]))
     return out
+
+
+def filter_shikinaisha_lists(targets):
+    """Keep only targets that are genuinely part of the Engishiki Jinmyōchō.
+
+    THE BUG THIS FIXES (2026-07-09, found via the contested-ordinal review).
+    `P361` on a shrine means far more than "listed in a province's Shikinaisha
+    list". It also means "this subshrine is part of Kamigamo Shrine", "part of the
+    Twenty-Two Shrines ranking", "part of the Ninety-Nine Ōji Shrines of the
+    Kumano Kodō". Of the 249 targets the first version swept up, only **47** were
+    Shikinaisha lists; the other 202 were shrines and classes — Kamigamo Shrine,
+    Shirayama Hime Shrine, Beppyō Shrine (a *type*), Twenty-Two Shrines.
+
+    Rebuilding those from "neighbour witnesses" is meaningless, and the batch's
+    removal lines would have deleted 425 real statements — a subshrine's
+    membership of its parent shrine among them. The batch was never run.
+
+    A real Shikinaisha list is `wdt:P361 wd:Q11064932` (part of the Engishiki
+    Jinmyōchō). Nothing else is in scope.
+    """
+    all_targets = sorted({t for ts in targets.values() for t in ts})
+    keep = set()
+    for chunk in chunks(all_targets, CHUNK):
+        for r in sparql(
+            "SELECT ?l WHERE { %s ?l wdt:P361 wd:%s }"
+            % (values("l", chunk), ENGISHIKI_JINMYOCHO)
+        ):
+            keep.add(qid(r["l"]["value"]))
+    dropped = [t for t in all_targets if t not in keep]
+    filtered = {
+        item: {t for t in ts if t in keep} for item, ts in targets.items()
+    }
+    return {i: ts for i, ts in filtered.items() if ts}, sorted(keep), dropped
 
 
 def fetch_list_statements(lists):
@@ -264,8 +301,14 @@ def main():
     print(f"  {len(items)} items", flush=True)
 
     targets = fetch_targets(items)
-    lists = sorted({L for ls in targets.values() for L in ls})
-    print(f"  across {len(lists)} lists", flush=True)
+    raw = sorted({L for ls in targets.values() for L in ls})
+    targets, lists, dropped = filter_shikinaisha_lists(targets)
+    print(f"  across {len(raw)} P361 targets", flush=True)
+    print(f"  of which {len(lists)} are Shikinaisha lists (part of {ENGISHIKI_JINMYOCHO});", flush=True)
+    print(f"  DROPPED {len(dropped)} non-list targets (shrines, ranking classes) — out of scope", flush=True)
+    for d in dropped[:8]:
+        print(f"    not a list: {d}")
+    print(f"  {len(targets)} items remain in scope", flush=True)
 
     print("Fetching every P361 statement into those lists...", flush=True)
     per_list = fetch_list_statements(lists)

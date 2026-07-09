@@ -74,18 +74,20 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 Target page: `shrine-ranking.html` § "Duplicate Properties on Shikinai Ronsha".
 Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
 
-- [ ] **(d) P361 part-of migration — batch BUILT, needs Emma's word before it runs.**
-  `modern-quickstatements/generate_p361_shikinaisha_list_fix.py` →
-  `modern-quickstatements/_site/p361_shikinaisha_list_fix.txt`. Browser batch only (remove+add is
-  not drip-safe); deliberately not in `ATOMIC_FILES`. **841 removals, 36 adds.** The list's true
-  membership is reconstructed from the neighbour witnesses (a clean statement at ordinal N asserts
-  N-1 = its P155, N+1 = its P156) — unanimous on every list. THE DECISION: on this reading a pure
-  P460 candidate keeps **no** P361 at all (691 of 726 item/list pairs), because list membership
-  belongs to the entry item. The other reading of "add in a new one derived from the list item" —
-  every candidate keeps ONE statement mirroring its entry — gives **301 adds** instead of 36.
-  20× swing, destructive either way. Also unresolved: QuickStatements' `-` on several identical
-  values is undocumented (removes one, or all?); the batch emits one `-` per existing statement so
-  it is correct under either, at the cost of some "not found" lines if `-` already removes all.
+- [ ] **(d) P361 part-of migration — DO NOT RUN. Emma 2026-07-09: "don't remove anything."**
+  `generate_p361_shikinaisha_list_fix.py` → `_site/p361_shikinaisha_list_fix.txt`. Never in
+  `ATOMIC_FILES`, never executed; no Wikidata edit has ever been made from it.
+  **Scope bug found + fixed 2026-07-09** while working item (f): the first version treated every
+  `P361` target as a Shikinaisha list. Of 249 targets only **47** were; the other 202 were shrines
+  and classes (Kamigamo Shrine, Shirayama Hime, Beppyō Shrine, Twenty-Two Shrines, the Ninety-Nine
+  Ōji Shrines). Its removal lines would have deleted **425 real statements**, including subshrines'
+  membership of their parent shrines. Now filtered to `?list wdt:P361 wd:Q11064932` (Emma's own
+  method); the batch falls to 495 removals / 36 adds. Three tests pin the scope.
+  **But looking at Yamashiro shows removal is wrong anyway:** all 17 items it would strip there hold
+  exactly ONE `P361` into Yamashiro with ONE ordinal (Kitano Tenmangū #31, Ujigami #57). They were
+  only ever "duplicates" because the detection counted `P361` statements pointing at *other* targets.
+  The real within-list duplicate set has not been measured. Nothing to remove until it is, and Emma
+  has said remove nothing.
 - [ ] (f) 3 items skipped by the P361 generator on a contested ordinal (Q135288221 in Q11642130;
   Q335618 and Q705035 in Q3200280) — two clean statements disagree about who occupies a position.
   Per-item review.
@@ -133,31 +135,32 @@ cited-vs-uncited signal is exhausted). Of 46 Ronsha items still holding more tha
 
 ## LAST IN THE QUEUE — province exclusion (Emma 2026-07-09: postponed; "may very well be the most complicated task in the entirety of the queue by far")
 
-- [ ] **The "excluded" property goes on the SHRINES, not on the lists.** Emma: *"Shikinaisha lists
-  should not exclude it. They should not exclude the Beppyo shrines. Rather, Beppyo shrines that are
-  not Shikinaisha but are within the province's jurisdiction should have the excluded property on
-  them."* Reason for Beppyo: "it didn't exist yet".
-- [ ] **"Within the province's jurisdiction" = a geographic coordinate query.** Emma: *"a geographic
-  coordinates-based querying system, which I'm pretty sure can exist using STL files, but it's hard.
-  I think it's prohibitively hard, to the point of putting it at the end of the queue."*
-  Point-in-polygon of `P625` against historical province boundaries.
-- [ ] Which Wikidata property expresses "excluded from this list" is **still unanswered** - do not
-  guess. Nothing in the data uses one: zero shrines carry `P1011`; the lists' `P361` statements carry
-  only `P155`/`P156`/`P1545`. Candidates: deprecated-rank `P361` + `P2241` (shrine-side, Wikidata's
-  canonical "this claim is false"); `P1011` excluding; `P3113` does not have part (both list-side,
-  contradicting "on them").
+**The model already exists on the lists. Both of my earlier write-ups were wrong.**
+Emma: *"I didn't ask you to remove anything at all. I asked you to add the EXCLUDED property to the
+list. This is an additive thing based off of a property that is on the Yamato and Yamashiro lists."*
+And: *"here's how you find the lists — they are linked as a part of the Engishiki Jinmyōchō."*
 
-**Investigated 2026-07-09 (Yamashiro Q11467693 / Yamato Q11433427) - facts for whoever picks this up:**
-* Beppyo is **not** a `P31` class - it is a shrine *ranking*: `P13723 = Q10898274`. 350 items;
-  **240 not Shikinaisha**, 236 of those with coordinates. (`P31 = Q10898274` has zero instances.)
-* Kokushi genzaisha **is** a `P31` class (`Q118304363`): 159 items, 157 not Shikinaisha.
-* The lists already contain non-Shikinaisha members. Yamashiro: 146 members, only 88 Shikinaisha
-  (plus 56 Ronsha, a kokushi genzaisha, a Buddhist temple). Yamato: 300 members, 212 Shikinaisha.
-  42 non-Shikinaisha Beppyo shrines already carry `P361` into a Shikinaisha list.
-* **Neither list links to its province.** Their only statement is `P361 -> Q11064932` (Engishiki
-  Jinmyocho) - no `P131`, no `P276`. So "within the province's jurisdiction" is unrepresentable
-  today. The ~60 `<province>の式内社一覧` items could be linked to their province from their own
-  Japanese label with no coordinates at all, which would unblock the rest.
+Looked at `Q11467693` (Yamashiro) and `Q11433427` (Yamato) properly. What is actually there:
+
+* `P3113` **does not have part** → the excluded shrine. **On the LIST**, not on the shrine.
+  (I wrote "the excluded property goes on the SHRINES, not on the lists". That was wrong.)
+* qualified by `P3831` **object of statement has role** → the reason class:
+  `Q10898274` Beppyō Shrine, or `Q118469772` shikigesha (式外社 — Emma's "whatever that other thing").
+* `P1001` **applies to jurisdiction** → the province. Yamashiro→`Q749276`, Yamato→`Q907495`.
+  **All 69 Engishiki lists already carry `P1001`.** (I wrote "neither list links to its province".
+  Also wrong — I checked P131/P276/P17 and never P1001.)
+
+State: 69 lists (`?l wdt:P361 wd:Q11064932`). **50 already carry `P3113`; 287 statements total, but
+only 22 carry the `P3831` role qualifier** — 265 are unqualified.
+
+- [ ] ADD-ONLY. For each list, add `P3113` → shrine, `P3831` → reason class, for shrines in that
+  province's jurisdiction that are Beppyō (`P13723 = Q10898274`, 240 non-Shikinaisha) / kokushi
+  genzaisha (`P31 = Q118304363`, 157 non-Shikinaisha) / shikigesha, and are NOT Shikinaisha.
+  **Remove nothing.**
+- [ ] Open question: backfill the `P3831` role onto the 265 unqualified existing `P3113` statements?
+- [ ] The remaining hard part is only the jurisdiction test — which province a modern shrine sits in.
+  Emma: a coordinate/point-in-polygon problem, *"prohibitively hard"*. The LIST side needs no
+  geometry: `P1001` is already there.
 
 ## Pinned tail (keep last, always)
 
