@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-09 — systematic queue audit; bunrei residual dropped; 伝-date decision
+
+Went through `queue.md` top-to-bottom against the actual code/state rather than trusting the
+summaries, to find stale or already-completed items (Emma's ask). Verdict: the queue is **not**
+littered with done-but-listed items. Almost everything is legitimately live — cloud-drip-pending
+(typo review: 3 of 161 answers landed, ~158 still out; description-enrichment: builder+collector+doc
+all present; category-translation RAG), detection-shipped-residual-is-human-review (ILLs,
+multiple-wikidata-links, duplicate-QIDs — all marked SHIPPED in `todo.md`), or genuinely
+Emma-judgement (Kokugakuin merges, hard-residual addresses, province exclusion). The
+partially-done items carry deliberate "SHIPPED/BUILT" context that is load-bearing for their
+residual, so they were left intact rather than trimmed.
+
+Only two items fully resolved, both by Emma's decision this session (via AskUserQuestion):
+
+* **Bunrei paper-only residual — DROPPED.** The 系統-count residual was down to un-scrapeable
+  paper sources (神社本庁『全国神社祭祀祭礼総合調査』1995; 岡田荘司『事典 神社の歴史と祭り』). All online
+  総本社 sources are exhausted (7 sources, ~10,650 cited edges). Emma: drop from the queue.
+* **Alternative bunrei sources (`_site/bunrei-research.html`) — no direction chosen.** Emma:
+  "none right now." The jawiki 勧請 harvest / NDL registries / prefectural jinjachō directions are
+  not being pursued; the research doc stays as reference. Item removed from the queue.
+
+**伝-date decision (jawiki infobox item, still open in queue):** Emma approved importing the 8,837
+skipped 伝 ("by tradition") founding dates as `P571` qualified by `P1480 = Q18122778` ("presumably").
+`generate_souken_quickstatements.py` already flags this as a future pass in its own docstring. Build
+is scoped (add-only, jawiki-cited, single-Gregorian-year fields carrying 伝 and none of the other
+hard-skip markers → `souken_p571_den.txt`, registered in `direct_daily_edits.ATOMIC_FILES`) but not
+yet shipped — next autonomous step.
+
 ## 2026-07-09 — the three batches shipped today were never going to run
 
 `direct_daily_edits.read_all_lines()` opens each `ATOMIC_FILES` entry **by bare name** from
