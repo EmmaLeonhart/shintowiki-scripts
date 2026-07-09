@@ -14,9 +14,7 @@
 
 {{nihongo|'''Sengen Shrine (Shimoda)'''|浅間神社 (下田市)}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izu Province]].
 
-[[ja:浅間神社 (下田市)]]
-
-{{wikidata link|Q134930730|ja|浅間神社 (下田市)|check_date=2026-05-25}}
+{{wikidata link|Q134930730|ja|浅間神社 (下田市)|grok=none|check_date=2026-07-09}}
 
 == Japanese content ==
 {{Shrine
@@ -36,7 +34,7 @@
 |Map = {{Location map|Japan Shizuoka|label=Sengen Shrine|coordinates=
 {{coord2|34|40|56.8|N|138|56|27.5|E}}|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 }}
-'''Sengen Shrine''' (せんげんじんじゃ) is a {{ill|Shinto shrine|Q845945|qid=Q845945}} located in {{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="jinjacho">[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401057 Sengen Shrine] – Shizuoka Prefecture Association of Shinto Shrines</ref>
+'''Sengen Shrine''' (せんげんじんじゃ) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} located in {{ill|Shimoda, Shizuoka|Q653402|qid=Q653402}}, {{ill|Shizuoka Prefecture|Q131320|qid=Q131320}}.<ref name="jinjacho">[http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4401057 Sengen Shrine] – Shizuoka Prefecture Association of Shinto Shrines</ref>
 
 Named after its locality, it is also known as '''Shimoda (Fuji) Sengen Shrine''' (しもだ(ふじ)せんげんじんじゃ) and '''Hongo (Fuji) Sengen Shrine''' (ほんごう(ふじ)せんげんじんじゃ), among other names.
 
@@ -67,3 +65,4 @@ Although the date of its founding is unknown, it is an ancient shrine that is co
 [[Category:Asama shrines]]
 
 [[Category:Git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
