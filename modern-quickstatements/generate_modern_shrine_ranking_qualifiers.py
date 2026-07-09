@@ -21,7 +21,13 @@ import requests
 from datetime import datetime, timezone
 from urllib.parse import unquote
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+def _ensure_utf8_stdout():
+    """Reconfigure stdout to UTF-8 for Windows runs. Called from main() rather
+    than at import time so the module stays import-safe (a module-level
+    sys.stdout swap breaks pytest's output capture)."""
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 
 MAX_LINES_PER_BATCH = 200  # Budget ~200 QuickStatements per day per file
 
@@ -1024,6 +1030,7 @@ DUP_PROPS = ["P361", "P1448", "P6375"]
 # The Kokugakuin University Digital Museum entry, per P13677's formatter URL.
 KOKUGAKUIN_URL = "https://jmapps.ne.jp/kokugakuin/det.html?data_id={}"
 KOKUGAKUIN_DB = "Q135159299"  # Kokugakuin University Shrine database
+JAWIKI = "Q177837"
 
 # Reference predicates worth rendering. Leaving ?refP unbound makes WDQS walk
 # every reference triple and abort the query mid-stream (it answers 200 with a
@@ -1079,10 +1086,7 @@ def fetch_labels(qids):
         'OPTIONAL { ?item rdfs:label ?en FILTER(lang(?en) = "en") }',
         "?item ?ja ?en",
     )
-    out = {}
-    for r in rows:
-        out[qid(_val(r, "item"))] = {"ja": _val(r, "ja"), "en": _val(r, "en")}
-    return out
+    return {qid(_val(r, "item")): {"ja": _val(r, "ja"), "en": _val(r, "en")} for r in rows}
 
 
 def fetch_kokugakuin_entries(qids):
@@ -1094,77 +1098,133 @@ def fetch_kokugakuin_entries(qids):
     )
     out = {}
     for r in rows:
-        out.setdefault(qid(_val(r, "item")), []).append(
-            (_val(r, "eid"), _val(r, "section"))
-        )
+        out.setdefault(qid(_val(r, "item")), []).append((_val(r, "eid"), _val(r, "section")))
     for v in out.values():
         v.sort(key=lambda t: (t[0], t[1] or ""))
     return out
 
 
 def fetch_statement_refs(qids, prop):
-    """{statement_uri: [{ref_prop: [values]}]} for one property, flattened per statement."""
+    """{statement_uri: [reference_node, ...]}, each node a {ref_prop: [values]}.
+
+    Keyed per `prov:wasDerivedFrom` node, not flattened per statement — one node
+    is one footnote, exactly as a Wikipedia citation is one footnote.
+    """
     rows = _mass_query(
         qids,
         "?item p:%s ?st . ?st prov:wasDerivedFrom ?ref . "
         "VALUES ?refP { %s } ?ref ?refP ?refV ."
         % (prop, " ".join("pr:" + p for p in REF_PROPS)),
-        "?st ?refP ?refV",
+        "?st ?ref ?refP ?refV",
     )
-    out = {}
+    nodes = {}
     for r in rows:
-        st = _val(r, "st")
         prop_id = _val(r, "refP").rsplit("/", 1)[-1]
-        out.setdefault(st, {}).setdefault(prop_id, []).append(_val(r, "refV"))
-    return out
+        nodes.setdefault(_val(r, "st"), {}).setdefault(_val(r, "ref"), {}).setdefault(
+            prop_id, []
+        ).append(_val(r, "refV"))
+    return {st: [node for _, node in sorted(d.items())] for st, d in nodes.items()}
 
 
-def render_refs(ref_map):
-    """Render one statement's references as small linked badges."""
-    if not ref_map:
-        return '<span class="norefs">no citation</span>'
+def format_citation(node):
+    """Render one reference node the way Wikipedia renders a footnote."""
+    eids = node.get("P13677", [])
+    stated = [qid(v) for v in node.get("P248", [])]
+    urls = node.get("P4656", []) + node.get("P854", [])
+    imported = [qid(v) for v in node.get("P143", [])]
+    retrieved = node.get("P813", [])
+
     parts = []
-    kokugakuin_ids = ref_map.get("P13677", [])
-    stated_in = [qid(v) for v in ref_map.get("P248", [])]
-    if KOKUGAKUIN_DB in stated_in and kokugakuin_ids:
-        for eid in kokugakuin_ids:
+    if KOKUGAKUIN_DB in stated:
+        links = ", ".join(
+            f'<a href="{KOKUGAKUIN_URL.format(e)}">entry&nbsp;{html_escape(e)}</a>' for e in eids
+        )
+        cite = "<i>Kokugakuin University Shrine Database</i>"
+        parts.append(f"{cite}, {links}" if links else cite)
+    else:
+        for q in stated:
+            parts.append(f'<a href="https://www.wikidata.org/wiki/{q}">{q}</a>')
+        for e in eids:
             parts.append(
-                f'<a class="ref" href="{KOKUGAKUIN_URL.format(eid)}">Kokugakuin #{html_escape(eid)}</a>'
+                f'<i>Kokugakuin University Shrine Database</i>, '
+                f'<a href="{KOKUGAKUIN_URL.format(e)}">entry&nbsp;{html_escape(e)}</a>'
             )
-    elif kokugakuin_ids:
-        for eid in kokugakuin_ids:
-            parts.append(
-                f'<a class="ref" href="{KOKUGAKUIN_URL.format(eid)}">#{html_escape(eid)}</a>'
-            )
-    for q in stated_in:
-        if q != KOKUGAKUIN_DB:
-            parts.append(f'<a class="ref" href="https://www.wikidata.org/wiki/{q}">stated in {q}</a>')
-    for url in ref_map.get("P4656", []) + ref_map.get("P854", []):
-        label = unquote(url.rsplit("/", 1)[-1] or url)
-        parts.append(f'<a class="ref" href="{html_escape(url)}">{html_escape(label[:60])}</a>')
-    for q in [qid(v) for v in ref_map.get("P143", [])]:
-        parts.append(f'<a class="ref imported" href="https://www.wikidata.org/wiki/{q}">imported from {q}</a>')
-    return " ".join(parts) if parts else '<span class="norefs">no citation</span>'
+    for url in urls:
+        title = unquote(url.rsplit("/", 1)[-1]) or url
+        parts.append(f'&quot;<a href="{html_escape(url)}">{html_escape(title)}</a>&quot;')
+    for q in imported:
+        name = "Japanese Wikipedia" if q == JAWIKI else q
+        parts.append(f'Imported from <a href="https://www.wikidata.org/wiki/{q}">{html_escape(name)}</a>')
+    for t in retrieved:
+        parts.append("Retrieved " + html_escape(t[1:11]))
+    return ". ".join(parts) + "." if parts else "Unattributed reference."
 
 
-def item_cell(q, labels):
+class Footnotes:
+    """Wikipedia-style numbered footnotes: identical citations share a number."""
+
+    def __init__(self, prefix):
+        self.prefix = prefix
+        self.order = []
+        self.index = {}
+
+    def cite(self, nodes):
+        if not nodes:
+            return '<span class="uncited" title="no citation">&mdash;</span>'
+        sups = []
+        for node in nodes:
+            body = format_citation(node)
+            n = self.index.get(body)
+            if n is None:
+                n = len(self.order) + 1
+                self.index[body] = n
+                self.order.append(body)
+            sups.append(
+                f'<sup class="reference"><a href="#{self.prefix}-cite-{n}">[{n}]</a></sup>'
+            )
+        return "".join(sups)
+
+    def render(self):
+        if not self.order:
+            return ""
+        items = "".join(
+            f'<li id="{self.prefix}-cite-{i + 1}"><span class="upref">^</span> {body}</li>'
+            for i, body in enumerate(self.order)
+        )
+        return (
+            f'<div class="reflist"><h4>References</h4>'
+            f'<ol class="references">{items}</ol></div>'
+        )
+
+
+def shrine_cell(q, labels):
+    """English label first — the QID is an identifier, not a name."""
     lab = labels.get(q, {})
-    ja = lab.get("ja") or ""
-    en = lab.get("en") or ""
+    ja, en = lab.get("ja"), lab.get("en")
+    title = en or ja or q
+    ja_line = f'<div class="jalabel">{html_escape(ja)}</div>' if ja and en else ""
     return (
-        f'<a href="https://www.wikidata.org/wiki/{q}">{q}</a>'
-        f'<div class="jalabel">{html_escape(ja)}</div>'
-        f'<div class="enlabel">{html_escape(en)}</div>'
+        f'<a class="shrine" href="https://www.wikidata.org/wiki/{q}">{html_escape(title)}</a>'
+        f'{ja_line}<div class="qid">{q}</div>'
     )
+
+
+def name_of(q, labels):
+    lab = labels.get(q, {})
+    return lab.get("en") or lab.get("ja") or q
+
+
+def entity_link(q, labels):
+    return f'<a href="https://www.wikidata.org/wiki/{q}">{html_escape(name_of(q, labels))}</a>'
 
 
 def kokugakuin_cell(q, entries):
     rows = entries.get(q, [])
     if not rows:
-        return '<span class="norefs">none</span>'
+        return '<span class="uncited">&mdash;</span>'
     out = []
     for eid, section in rows:
-        sec = f' <span class="sec">§{html_escape(section)}</span>' if section and section != "n/a" else ""
+        sec = f'<span class="sec">&nbsp;§{html_escape(section)}</span>' if section and section != "n/a" else ""
         out.append(f'<div><a href="{KOKUGAKUIN_URL.format(eid)}">{html_escape(eid)}</a>{sec}</div>')
     return "".join(out)
 
@@ -1178,9 +1238,8 @@ def fetch_p1448_details(qids):
     )
     out = {}
     for r in rows:
-        st = _val(r, "st")
         d = out.setdefault(qid(_val(r, "item")), {}).setdefault(
-            st, {"name": _val(r, "name"), "kana": set(), "period": None}
+            _val(r, "st"), {"name": _val(r, "name"), "kana": set(), "period": None}
         )
         if _val(r, "kana"):
             d["kana"].add(_val(r, "kana"))
@@ -1190,9 +1249,7 @@ def fetch_p1448_details(qids):
 
 
 def fetch_p6375_details(qids):
-    rows = _mass_query(
-        qids, "?item p:P6375 ?st . ?st ps:P6375 ?addr .", "?item ?st ?addr"
-    )
+    rows = _mass_query(qids, "?item p:P6375 ?st . ?st ps:P6375 ?addr .", "?item ?st ?addr")
     out = {}
     for r in rows:
         out.setdefault(qid(_val(r, "item")), {})[_val(r, "st")] = _val(r, "addr")
@@ -1209,10 +1266,10 @@ def fetch_p361_details(qids):
     )
     out = {}
     for r in rows:
-        st = _val(r, "st")
         d = out.setdefault(qid(_val(r, "item")), {}).setdefault(
-            st, {"target": qid(_val(r, "target")), "ordinal": _val(r, "ordinal"),
-                 "follows": set(), "followedBy": set()}
+            _val(r, "st"),
+            {"target": qid(_val(r, "target")), "ordinal": _val(r, "ordinal"),
+             "follows": set(), "followedBy": set()},
         )
         if _val(r, "follows"):
             d["follows"].add(qid(_val(r, "follows")))
@@ -1221,92 +1278,100 @@ def fetch_p361_details(qids):
     return out
 
 
-def qlink(q):
-    return f'<a href="https://www.wikidata.org/wiki/{q}">{q}</a>'
+def _table(prefix, headers, body_rows, footnotes):
+    cols = "".join(f"<th>{h}</th>" for h in headers)
+    return (
+        f'<div class="tablewrap"><table class="dup" id="{prefix}">'
+        f"<thead><tr>{cols}</tr></thead><tbody>{''.join(body_rows)}</tbody></table></div>"
+        f"{footnotes.render()}"
+    )
 
 
 def render_p1448_table(qids, labels, details, refs, entries):
     """Emma 2026-07-09: ja label | the official names | every Kokugakuin entry, clickable."""
-    body = ""
-    for q in qids:
-        sts = details.get(q, {})
-        names = ""
-        for st, d in sorted(sts.items(), key=lambda kv: (kv[1]["name"] or "")):
+    fn = Footnotes("p1448")
+    width = max((len(details.get(q, {})) for q in qids), default=0)
+    rows = []
+    for i, q in enumerate(qids, 1):
+        sts = sorted(details.get(q, {}).items(), key=lambda kv: (kv[1]["name"] or ""))
+        cells = ""
+        for st, d in sts:
             kana = ", ".join(sorted(d["kana"]))
-            kana_html = f' <span class="kana">{html_escape(kana)}</span>' if kana else ""
-            period = f' <span class="sec">{d["period"]}</span>' if d["period"] else ""
-            names += (
-                f'<div class="stmt"><span class="val">{html_escape(d["name"] or "")}</span>'
-                f'{kana_html}{period}<div class="refline">{render_refs(refs.get(st, {}))}</div></div>'
+            kana_html = f'<div class="kana">{html_escape(kana)}</div>' if kana else ""
+            period = (
+                f'<div class="sec">{html_escape(name_of(d["period"], labels))}</div>'
+                if d["period"] else ""
             )
-        body += (
-            f"<tr><td>{item_cell(q, labels)}</td>"
-            f'<td class="count">{len(sts)}</td>'
-            f"<td>{names}</td>"
-            f"<td>{kokugakuin_cell(q, entries)}</td></tr>\n"
+            cells += (
+                f'<td><span class="val">{html_escape(d["name"] or "")}</span>'
+                f'{fn.cite(refs.get(st, []))}{kana_html}{period}</td>'
+            )
+        cells += "<td class='empty'></td>" * (width - len(sts))
+        rows.append(
+            f'<tr><td class="rownum">{i}</td><td>{shrine_cell(q, labels)}</td>'
+            f'<td class="kentries">{kokugakuin_cell(q, entries)}</td>{cells}</tr>'
         )
-    return f"""<table class="dup">
-  <thead><tr><th>Item</th><th>n</th><th>Official names (P1448)</th>
-    <th>Kokugakuin entries (P13677)</th></tr></thead>
-  <tbody>{body}</tbody></table>"""
+    headers = ["#", "Shrine", "Kokugakuin entries"] + [f"Official name {n}" for n in range(1, width + 1)]
+    return _table("p1448", headers, rows, fn)
 
 
 def render_p6375_table(qids, labels, details, refs, entries):
-    """Emma 2026-07-09: every address with all its citations; cited ones are the signal."""
-    body = ""
-    for q in qids:
-        sts = details.get(q, {})
-        addrs = ""
-        for st, addr in sorted(sts.items(), key=lambda kv: kv[1] or ""):
-            ref_map = refs.get(st, {})
-            cls = "stmt cited" if ref_map else "stmt"
-            addrs += (
-                f'<div class="{cls}"><span class="val">{html_escape(addr or "")}</span>'
-                f'<div class="refline">{render_refs(ref_map)}</div></div>'
-            )
-        n_cited = sum(1 for st in sts if refs.get(st))
-        flag = "one cited" if n_cited == 1 else ("none cited" if n_cited == 0 else f"{n_cited} cited")
-        body += (
-            f"<tr><td>{item_cell(q, labels)}</td>"
-            f'<td class="count">{len(sts)}<div class="sec">{flag}</div></td>'
-            f"<td>{addrs}</td>"
-            f"<td>{kokugakuin_cell(q, entries)}</td></tr>\n"
+    """Emma 2026-07-09: every address in its own column, citations as footnotes."""
+    fn = Footnotes("p6375")
+    width = max((len(details.get(q, {})) for q in qids), default=0)
+    rows = []
+    for i, q in enumerate(qids, 1):
+        sts = sorted(details.get(q, {}).items(), key=lambda kv: kv[1] or "")
+        cells = ""
+        for st, addr in sts:
+            nodes = refs.get(st, [])
+            cls = "cited" if nodes else "uncited-cell"
+            cells += f'<td class="{cls}">{html_escape(addr or "")}{fn.cite(nodes)}</td>'
+        cells += "<td class='empty'></td>" * (width - len(sts))
+        n_cited = sum(1 for st, _ in sts if refs.get(st))
+        rows.append(
+            f'<tr><td class="rownum">{i}</td><td>{shrine_cell(q, labels)}</td>'
+            f'<td class="kentries">{kokugakuin_cell(q, entries)}</td>'
+            f'<td class="count">{n_cited}/{len(sts)}</td>{cells}</tr>'
         )
-    return f"""<table class="dup">
-  <thead><tr><th>Item</th><th>n</th><th>Street addresses (P6375)</th>
-    <th>Kokugakuin entries (P13677)</th></tr></thead>
-  <tbody>{body}</tbody></table>"""
+    headers = ["#", "Shrine", "Kokugakuin entries", "Cited"] + [
+        f"Address {n}" for n in range(1, width + 1)
+    ]
+    return _table("p6375", headers, rows, fn)
 
 
 def render_p361_table(qids, labels, details, entries):
     """Ordinal + neighbours per statement, so the conflated ones are visible at a glance."""
-    body = ""
-    for q in qids:
-        sts = details.get(q, {})
-        stmts = ""
-        for st, d in sorted(sts.items(), key=lambda kv: (kv[1]["ordinal"] or "")):
+    fn = Footnotes("p361")  # P361 statements carry no references today
+    width = max((len(details.get(q, {})) for q in qids), default=0)
+    rows = []
+    for i, q in enumerate(qids, 1):
+        sts = sorted(details.get(q, {}).items(), key=lambda kv: (kv[1]["ordinal"] or ""))
+        lists = sorted({d["target"] for _, d in sts})
+        cells = ""
+        for st, d in sts:
+            conflated = len(d["follows"]) > 1 or len(d["followedBy"]) > 1
             nbrs = ""
             if d["follows"]:
-                nbrs += '<div class="sec">follows ' + ", ".join(qlink(x) for x in sorted(d["follows"])) + "</div>"
+                nbrs += '<div class="sec">after ' + ", ".join(
+                    entity_link(x, labels) for x in sorted(d["follows"])) + "</div>"
             if d["followedBy"]:
-                nbrs += '<div class="sec">followed by ' + ", ".join(qlink(x) for x in sorted(d["followedBy"])) + "</div>"
-            conflated = len(d["follows"]) > 1 or len(d["followedBy"]) > 1
-            cls = "stmt conflated" if conflated else "stmt"
-            ordinal = d["ordinal"] or "&mdash;"
-            stmts += (
-                f'<div class="{cls}"><span class="val">#{ordinal}</span> in {qlink(d["target"])}{nbrs}</div>'
+                nbrs += '<div class="sec">before ' + ", ".join(
+                    entity_link(x, labels) for x in sorted(d["followedBy"])) + "</div>"
+            cells += (
+                f'<td class="{"conflated" if conflated else ""}">'
+                f'<span class="val">#{d["ordinal"] or "&mdash;"}</span>{nbrs}</td>'
             )
-        n_entries = len(entries.get(q, []))
-        body += (
-            f"<tr><td>{item_cell(q, labels)}</td>"
-            f'<td class="count">{len(sts)}<div class="sec">{n_entries} entr{"y" if n_entries == 1 else "ies"}</div></td>'
-            f"<td>{stmts}</td>"
-            f"<td>{kokugakuin_cell(q, entries)}</td></tr>\n"
+        cells += "<td class='empty'></td>" * (width - len(sts))
+        rows.append(
+            f'<tr><td class="rownum">{i}</td><td>{shrine_cell(q, labels)}</td>'
+            f'<td class="kentries">{kokugakuin_cell(q, entries)}</td>'
+            f'<td>{"<br>".join(entity_link(x, labels) for x in lists)}</td>{cells}</tr>'
         )
-    return f"""<table class="dup">
-  <thead><tr><th>Item</th><th>n</th><th>Part-of statements (P361)</th>
-    <th>Kokugakuin entries (P13677)</th></tr></thead>
-  <tbody>{body}</tbody></table>"""
+    headers = ["#", "Shrine", "Kokugakuin entries", "Part of"] + [
+        f"Statement {n}" for n in range(1, width + 1)
+    ]
+    return _table("p361", headers, rows, fn)
 
 
 def generate_duplicates_section():
@@ -1315,7 +1380,9 @@ def generate_duplicates_section():
     Rewritten 2026-07-09 (Emma): the old version rendered a bare `<li>QID (n
     statements)` list, which carried nothing you could act on, and it named
     Takagi Shrine as the worked example in *hardcoded* HTML — so the example
-    outlived the problem. Everything below is derived from the query.
+    outlived the problem. Everything below is derived from the query: one
+    column per competing value, English labels rather than QIDs, and citations
+    as Wikipedia-style numbered footnotes under each table.
     """
     print("\n=== Fetching duplicate property data ===")
 
@@ -1336,7 +1403,6 @@ def generate_duplicates_section():
   <p><em>No duplicates found (or the queries failed).</em></p>"""
 
     print(f"  Fetching detail for {len(all_qids)} distinct items...")
-    labels = fetch_labels(all_qids)
     entries = fetch_kokugakuin_entries(all_qids)
 
     d1448 = fetch_p1448_details(dupes["P1448"]) if dupes["P1448"] else {}
@@ -1345,13 +1411,20 @@ def generate_duplicates_section():
     r6375 = fetch_statement_refs(dupes["P6375"], "P6375") if dupes["P6375"] else {}
     d361 = fetch_p361_details(dupes["P361"]) if dupes["P361"] else {}
 
+    # The P361 cells name the neighbouring list entries and the list itself, so
+    # those need labels too — QIDs are unreadable.
+    linked = {d["target"] for sts in d361.values() for d in sts.values()}
+    linked |= {x for sts in d361.values() for d in sts.values() for x in d["follows"] | d["followedBy"]}
+    linked |= {d["period"] for sts in d1448.values() for d in sts.values() if d["period"]}
+    labels = fetch_labels(sorted(set(all_qids) | linked))
+
     # Sort P6375 so the ones Emma can decide fastest float up: exactly one of the
     # competing addresses carries a citation ("if any one of them has a citation,
     # that's a really good sign").
     def cited_count(q):
         return sum(1 for st in d6375.get(q, {}) if r6375.get(st))
 
-    p6375_sorted = sorted(dupes["P6375"], key=lambda q: (cited_count(q) != 1, cited_count(q), q))
+    p6375_sorted = sorted(dupes["P6375"], key=lambda q: (cited_count(q) != 1, -cited_count(q), q))
     one_cited = sum(1 for q in dupes["P6375"] if cited_count(q) == 1)
 
     # P361: the conflated ones (a statement with several follows/followed-by
@@ -1378,40 +1451,32 @@ def generate_duplicates_section():
      a number that looks stuck is a backlog, not a stale page.</p>
 
   <div class="category">
-    <h3>P361 (part of) &mdash; {len(dupes["P361"])} items with duplicates</h3>
-    <p class="desc">The ordinals and the follows / followed-by qualifiers are already
-      resolved on the <em>Shikinaisha list entry</em> items; they are not resolved here.
-      Where one Ronsha item absorbed several list entries, their statements collapsed
-      together and the neighbours cross-contaminated &mdash;
-      <strong>{n_conflated}</strong> of these carry a statement with more than one
-      <code>P155</code>/<code>P156</code> value (highlighted). Those are what the
-      migration has to rebuild from the entry items.</p>
-    <details>
-      <summary>Show all {len(dupes["P361"])} items</summary>
-      {render_p361_table(p361_sorted, labels, d361, entries)}
-    </details>
+    <h3>P6375 (street address) &mdash; {len(dupes["P6375"])} items with duplicates</h3>
+    <p class="desc">One column per competing address, each with its citations as
+      footnotes. A citation is the signal: <strong>{one_cited}</strong> of these have
+      <em>exactly one</em> cited address among the competing values, and are sorted to
+      the top. Uncited addresses show &ldquo;&mdash;&rdquo;.</p>
+    {render_p6375_table(p6375_sorted, labels, d6375, r6375, entries)}
   </div>
 
   <div class="category">
     <h3>P1448 (official name) &mdash; {len(dupes["P1448"])} items with duplicates</h3>
-    <p class="desc">Each competing official name is shown with its kana
-      (<code>P1814</code>), its period qualifier (<code>P1264</code>) and its
-      references, next to every Kokugakuin Shrine Database entry the item holds.</p>
-    <details>
-      <summary>Show all {len(dupes["P1448"])} items</summary>
-      {render_p1448_table(p1448_sorted, labels, d1448, r1448, entries)}
-    </details>
+    <p class="desc">One column per competing official name, with its kana
+      (<code>P1814</code>), its period qualifier (<code>P1264</code>) and its citations
+      as footnotes, next to every Kokugakuin Shrine Database entry the item holds.</p>
+    {render_p1448_table(p1448_sorted, labels, d1448, r1448, entries)}
   </div>
 
   <div class="category">
-    <h3>P6375 (street address) &mdash; {len(dupes["P6375"])} items with duplicates</h3>
-    <p class="desc">Every address with all of its citations. A citation is the signal:
-      <strong>{one_cited}</strong> of these have <em>exactly one</em> cited address among
-      the competing values, and are sorted to the top. Cited addresses are outlined.</p>
-    <details>
-      <summary>Show all {len(dupes["P6375"])} items</summary>
-      {render_p6375_table(p6375_sorted, labels, d6375, r6375, entries)}
-    </details>
+    <h3>P361 (part of) &mdash; {len(dupes["P361"])} items with duplicates</h3>
+    <p class="desc">The ordinals and the after / before qualifiers are already resolved on
+      the <em>Shikinaisha list entry</em> items; they are not resolved here. Where one
+      Ronsha item absorbed several list entries, their statements collapsed together and
+      the neighbours cross-contaminated &mdash; <strong>{n_conflated}</strong> of these
+      carry a statement with more than one <code>P155</code>/<code>P156</code> value
+      (shaded red, sorted to the top). Those are what the migration has to rebuild from
+      the entry items.</p>
+    {render_p361_table(p361_sorted, labels, d361, entries)}
   </div>"""
 
 
@@ -1627,26 +1692,35 @@ def generate_html(p459_stats, migration_stats, prop_stats, hiteisha_stats=None, 
     .qs-box {{ width: 100%; font-family: monospace; font-size: 0.8rem; background: #f5f5f5;
                border: 1px solid #ccc; border-radius: 4px; padding: 0.5rem; resize: vertical; }}
     /* Duplicate-property review tables (Emma 2026-07-09) */
-    table.dup {{ border-collapse: collapse; width: 100%; font-size: 0.82rem; margin-top: 0.5rem; }}
-    table.dup th {{ background: #e8f4e8; text-align: left; padding: 0.4rem 0.5rem;
-                    border: 1px solid #cfe0cf; position: sticky; top: 0; }}
-    table.dup td {{ border: 1px solid #e0e0e0; padding: 0.4rem 0.5rem; vertical-align: top; }}
-    table.dup td.count {{ text-align: center; white-space: nowrap; font-weight: 600; }}
-    table.dup tbody tr:nth-child(even) {{ background: #fafafa; }}
-    .jalabel {{ font-size: 0.95rem; color: #222; }}
-    .enlabel {{ font-size: 0.8rem; color: #777; }}
-    .stmt {{ padding: 0.25rem 0.4rem; margin: 0.15rem 0; border-left: 3px solid transparent; }}
-    .stmt.cited {{ border-left-color: #4caf50; background: #f3faf3; }}
-    .stmt.conflated {{ border-left-color: #e53935; background: #fdf3f3; }}
-    .stmt .val {{ font-weight: 600; }}
-    .kana {{ color: #6a1b9a; font-size: 0.8rem; }}
-    .sec {{ color: #888; font-size: 0.75rem; }}
-    .refline {{ margin-top: 0.15rem; }}
-    a.ref {{ display: inline-block; font-size: 0.72rem; background: #eef3fb; border: 1px solid #ccd8ea;
-             border-radius: 3px; padding: 0 0.3rem; margin: 0.1rem 0.2rem 0 0; text-decoration: none; }}
-    a.ref.imported {{ background: #fdf6e3; border-color: #e8dcb8; }}
-    .norefs {{ color: #b71c1c; font-size: 0.75rem; font-style: italic; }}
-    details > summary {{ cursor: pointer; }}
+    .category:has(table.dup) {{ width: calc(100vw - 3rem); margin-left: calc(50% - 50vw + 1.5rem); }}
+    .tablewrap {{ overflow-x: auto; border: 2px solid #555; border-radius: 3px; margin: 0.75rem 0; }}
+    table.dup {{ border-collapse: collapse; width: 100%; font-size: 0.85rem; background: #fff; }}
+    table.dup th {{ background: #e8f4e8; text-align: left; padding: 0.45rem 0.6rem; font-weight: 600;
+                    border: 1px solid #555; white-space: nowrap; }}
+    table.dup td {{ border: 1px solid #999; padding: 0.45rem 0.6rem; vertical-align: top; }}
+    table.dup td.rownum {{ color: #999; text-align: right; font-variant-numeric: tabular-nums; }}
+    table.dup td.count {{ text-align: center; white-space: nowrap; font-variant-numeric: tabular-nums; }}
+    table.dup td.empty {{ background: repeating-linear-gradient(45deg, #fafafa, #fafafa 6px, #f0f0f0 6px, #f0f0f0 12px); }}
+    table.dup td.cited {{ background: #f3faf3; }}
+    table.dup td.conflated {{ background: #fdf0f0; }}
+    table.dup td.kentries {{ white-space: nowrap; font-variant-numeric: tabular-nums; }}
+    table.dup tbody tr:hover td {{ background: #fffde7; }}
+    a.shrine {{ font-weight: 600; text-decoration: none; }}
+    .jalabel {{ color: #333; }}
+    .qid {{ font-size: 0.72rem; color: #aaa; font-family: monospace; }}
+    .val {{ font-weight: 600; }}
+    .kana {{ color: #6a1b9a; font-size: 0.78rem; }}
+    .sec {{ color: #777; font-size: 0.78rem; }}
+    .uncited {{ color: #c62828; }}
+    sup.reference {{ font-size: 0.7rem; line-height: 1; }}
+    sup.reference a {{ text-decoration: none; padding: 0 0.05rem; }}
+    .reflist {{ border: 1px solid #999; border-top: none; background: #fbfbfb;
+                padding: 0.5rem 1rem; margin: -0.75rem 0 1rem; }}
+    .reflist h4 {{ margin: 0.25rem 0; font-size: 0.85rem; color: #555; }}
+    ol.references {{ font-size: 0.78rem; margin: 0 0 0 1.2rem; color: #444; }}
+    ol.references li {{ padding: 0.05rem 0; }}
+    ol.references li:target {{ background: #fff3c4; }}
+    .upref {{ color: #888; }}
   </style>
 </head>
 <body>
@@ -1885,6 +1959,7 @@ def generate_daily_operations(p459_stats, prop_stats, migration_stats, p4656_sta
 
 
 def main():
+    _ensure_utf8_stdout()
     rate_limited = False
 
     # Phase 1: P459 qualifiers for existing P13723 statements
