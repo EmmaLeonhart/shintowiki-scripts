@@ -40,6 +40,7 @@ import collections
 import io
 import json
 import os
+import shutil
 import sys
 import time
 import urllib.parse
@@ -140,9 +141,20 @@ def qs_batch_url(lines):
     return QS_URL + urllib.parse.quote("||".join(lines), safe="")
 
 
+def publish_to_site(path):
+    """Mirror the batch into _site/ so the dashboard can link it."""
+    os.makedirs("_site", exist_ok=True)
+    dest = os.path.join("_site", os.path.basename(path))
+    if os.path.abspath(dest) != os.path.abspath(path):
+        shutil.copy(path, dest)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=os.path.join("_site", OUTPUT_FILE))
+    # direct_daily_edits reads ATOMIC_FILES by BARE NAME from this directory and
+    # silently `continue`s past a missing path, so a batch written only under
+    # _site/ never reaches Wikidata. Write where the editor looks; copy to _site.
+    ap.add_argument("--out", default=OUTPUT_FILE)
     ap.add_argument("--print-url", action="store_true",
                     help="print a QuickStatements batch URL for the whole file")
     args = ap.parse_args()
@@ -169,8 +181,10 @@ def main():
             lines.append(qs_removal(qid, addr))
 
     path = args.out
-    os.makedirs(os.path.dirname(path), exist_ok=True)
+    if os.path.dirname(path):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
     io.open(path, "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
+    publish_to_site(path)
 
     print(f"\n  {len(lines)} uncited addresses removed across {len(removals)} items")
     if collisions:

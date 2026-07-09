@@ -86,8 +86,6 @@ Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
   20× swing, destructive either way. Also unresolved: QuickStatements' `-` on several identical
   values is undocumented (removes one, or all?); the batch emits one `-` per existing statement so
   it is correct under either, at the cost of some "not found" lines if `-` already removes all.
-- [ ] (e) Street-address citation convention (Emma): for Shikinaisha lists, cite the jawiki
-  Shikinaisha-list article. No immediate citation otherwise; official names mostly already cited.
 - [ ] (f) 3 items skipped by the P361 generator on a contested ordinal (Q135288221 in Q11642130;
   Q335618 and Q705035 in Q3200280) — two clean statements disagree about who occupies a position.
   Per-item review.
@@ -107,6 +105,24 @@ Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
   are well documented in databases. Agentic RAG to find sources. NB the `Day of Reisai` property
   proposal was **declined** (2025-12-07, no support), so the model stays P837 + P3831=Q11385469 per
   `docs/wikidata_shrine_festival_model.md` — do not resurrect a bespoke property.
+
+## Near the end — hard-residual street-address analysis (Emma 2026-07-09)
+
+Emma: *"addresses seem to be resolved. Put at the end of the queue to do an analysis on the current
+ones that still aren't fixed but they are not easy ones anymore."*
+
+Confirmed by the data: `generate_uncited_address_removals.py` now emits **0 lines** — the
+cited-vs-uncited signal is exhausted. Of the 47 Ronsha items still holding more than one Japanese
+`P6375`:
+
+* **45 have every address uncited** — no citation to choose by, which is precisely why the easy rule
+  skipped them. Needs a different discriminator (jawiki list-article row? Kokugakuin entry address?
+  coordinates vs address consistency?).
+* **2 have every address cited** — a genuine source conflict; two sources disagree.
+* **0 mixed** — the easy case is fully drained.
+
+- [ ] Analyse the 45 all-uncited and the 2 all-cited items and propose a discriminator. Report
+  before editing anything; do not guess a rule and drip it.
 
 ## LAST IN THE QUEUE — province exclusion (Emma 2026-07-09: postponed; "may very well be the most complicated task in the entirety of the queue by far")
 

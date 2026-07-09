@@ -35,6 +35,7 @@ import argparse
 import io
 import json
 import os
+import shutil
 import sys
 import time
 
@@ -110,9 +111,20 @@ def qs_reference(qid, eid):
     return f'{qid}|P31|{SHIKINAISHA}|S248|{KOKUGAKUIN_DB}|S13677|"{eid}"'
 
 
+def publish_to_site(path):
+    """Mirror the batch into _site/ so the dashboard can link it."""
+    os.makedirs("_site", exist_ok=True)
+    dest = os.path.join("_site", os.path.basename(path))
+    if os.path.abspath(dest) != os.path.abspath(path):
+        shutil.copy(path, dest)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=os.path.join("_site", OUTPUT_FILE))
+    # direct_daily_edits reads ATOMIC_FILES by BARE NAME from this directory and
+    # silently `continue`s past a missing path, so a batch written only under
+    # _site/ never reaches Wikidata. Write where the editor looks; copy to _site.
+    ap.add_argument("--out", default=OUTPUT_FILE)
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -132,8 +144,10 @@ def main():
         lines.append(qs_reference(qid, eid))
 
     path = args.out
-    os.makedirs(os.path.dirname(path), exist_ok=True)
+    if os.path.dirname(path):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
     io.open(path, "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
+    publish_to_site(path)
 
     no_id = sparql(build_skip_query(f"FILTER NOT EXISTS {{ ?item wdt:P13677 ?e }}"))
     many = sparql(build_skip_query(
