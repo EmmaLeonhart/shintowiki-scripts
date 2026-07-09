@@ -1,72 +1,11 @@
-<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
-[[Category:Independently git synced pages]]
-<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
 [[Category:Independently git synced pages]]
 
 '''Itsukushima Shrine''' (厳島神社, 嚴島神社, いつくしまじんじゃ) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}}
 named after "Itsukushima" and enshrines {{ill|Ichikishima-hime|ja|市杵島姫神|12=simple|13=User:Immanuelle/Ichikishima-hime||1=Ichikishima-hime|2=fr|3=Ichikishimahime|4=ja|5=イチキシマヒメ|6=zh|7=市寸島比賣命|8=ru|9=Итикишима-химэ|10=de|11=Ichikishima-hime}} as its primary deity.
 
 There are approximately 500 shrines across Japan with this name, with the main shrine being {{ill|Itsukushima Shrine|en|Itsukushima Shrine|qid=Q191763|lt=Itsukushima Shrine|1=Itsukushima Shrine}} in [[Hatsukaichi City]], {{ill|Hiroshima Prefecture|en|Hiroshima Prefecture|qid=Q617375|lt=Hiroshima Prefecture|1=Hiroshima Prefecture}}.
-== Main Shrine ==
-* '''{{ill|Itsukushima Shrine|en|Itsukushima Shrine|qid=Q191763|lt=Itsukushima Shrine|1=Itsukushima Shrine}}''' (Hatsukaichi City, Hiroshima Prefecture)
-
-== Hokkaido Region ==
-* {{ill|Itsukushima shrine (Kushiro)|en|Itsukushima shrine (Kushiro)|qid=Q3155997|lt=Itsukushima Shrine (Kushiro)|1=Itsukushima shrine (Kushiro)}} (Kushiro City, Hokkaido)
-* {{ill|Itsukushima Shrine (Sapporo)|ja|厳島神社 (札幌市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Sapporo)|ja_comment=jawiki link invalid|qid=Q135579273|1=Itsukushima Shrine (Sapporo)}} (Sapporo City, Hokkaido)
-* {{ill|Itsukushima Shrine (Mashike)|ja|厳島神社 (増毛町)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Mashike)|1=Itsukushima Shrine|comment=changed title based on wikidata|qid=Q43594894}} (Mashike Town, Mashike District, Hokkaido)
-* {{ill|Itsukushima Shrine (Rebun)|ja|嚴島神社 (礼文町)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Rebun)|ja_comment=jawiki link invalid|qid=Q135579274|1=Itsukushima Shrine (Rebun)}} (Rebun Town, Rebun District, Hokkaido)
-* {{ill|Itsukushima Shrine (Shimamaki)|ja|嚴島神社 (島牧村)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Shimamaki)|ja_comment=jawiki link invalid|qid=Q135579275|1=Itsukushima Shrine (Shimamaki)}} (Shimamaki Village, Shimamaki District, Hokkaido)
-* {{ill|Itsukushima Shrine (Hakodate)|ja|厳島神社 (函館市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Hakodate)|ja_comment=jawiki link invalid|qid=Q135579276|1=Itsukushima Shrine (Hakodate)}} (Hakodate City, Hokkaido)
-* {{ill|Soya Itsukushima Shrine|ja|宗谷厳島神社|12=simple|13=User:Immanuelle/Soya Itsukushima Shrine|ja_comment=jawiki link invalid|qid=Q135579277|1=Soya Itsukushima Shrine}} (Wakkanai City, Hokkaido)
-* 
-* {{ill|Esashi Itsukushima Shrine|ja|江差厳島神社|12=simple|13=User:Immanuelle/Esashi Itsukushima Shrine|ja_comment=jawiki link invalid|qid=Q135579278|1=Esashi Itsukushima Shrine}} (Esashi Town, Hiyama District, Hokkaido)
-*    
-* {{ill|Eshashi Itsukushima Shrine|ja|枝幸厳島神社|12=simple|13=User:Immanuelle/Eshashi Itsukushima Shrine|ja_comment=jawiki link invalid|qid=Q135579280|1=Eshashi Itsukushima Shrine}} (Eshashi Town, Eshashi District, Hokkai   do)
-* {{ill|Kamoenai Itsukushima Shrine|ja|神恵内厳島神社|12=simple|13=User:Immanuelle/Kamoenai Itsukushima Shrine|ja_comment=jawiki link invalid|qid=Q135579281|1=Kamoenai Itsukushima Shrine}} (Kamoenai Village, Kamoenai District, Hokkaido)
-
-== Tohoku Region ==
-* {{ill|Itsukushima Shrine (Hachinohe)|ja|厳島神社 (八戸市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Hachinohe)|ja_comment=jawiki link invalid|qid=Q135579282|1=Itsukushima Shrine (Hachinohe)}} (Hachinohe City, Aomori Prefecture) - A torii beam swept away during the [[:en:Great East Japan Earthquake|Great East Japan Earthquake]] was found in Oregon, USA, in 2013 and returned in 2015.
-* {{ill|Itsukushima Shrine (Sakata)|ja|厳島神社 (酒田市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Sakata)|ja_comment=jawiki link invalid|qid=Q135579283|1=Itsukushima Shrine (Sakata)}} (Sakata City, Yamagata Prefecture)
-* {{ill|Itsukushima Shrine (Aizuwakamatsu)|ja|厳島神社 (会津若松市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Aizuwakamatsu)}} (Aizuwakamatsu City, Fukushima Prefecture) - Formerly called Munakata Shrine, renamed during the [[:en:Shinbutsu Bunri|Shinbutsu Bunri]] (separation of Buddhism and Shinto) in the Meiji era.
-
-== Kanto Region ==
-* {{ill|Itsukushima Shrine (Hokota)|ja|厳島神社 (鉾田市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Hokota)|1=Itsukushima Shrine|comment=changed title based on wikidata|qid=Q119929521}} (Hokota City, Ibaraki Prefecture)
-* {{ill|Itsukushima Shrine (Ashikaga)|ja|厳島神社 (足利市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Ashikaga)|ja_comment=jawiki link invalid|qid=Q135579284|1=Itsukushima Shrine (Ashikaga)}} (Ashikaga City, Tochigi Prefecture)
-* {{ill|Itsukushima Shrine (Tateyama)|ja|厳島神社 (館山市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Tateyama)|ja_comment=jawiki link invalid|qid=Q135579285|1=Itsukushima Shrine (Tateyama)}} (Tateyama City, Chiba Prefecture)
-* {{ill|Itsukushima Shrine (Shinjuku)|ja|厳嶋神社 (新宿区)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Shinjuku)}} (Shinjuku City, Tokyo)
-* {{ill|Setagaya Hachimangu|ja|世田谷八幡宮|12=simple|13=User:Immanuelle/Setagaya Hachimangu|1=Setagaya Hachimangū|comment=changed title based on wikidata|qid=Q11362061}} (Setagaya City, Tokyo)
-* {{ill|Itsukushima Shrine (Yokohama)|ja|厳島神社 (横浜市中区)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Yokohama)|1=Itsukushima Shrine (Hagoromochō, Yokohama)|comment=changed title based on wikidata|qid=Q11410138}} (Naka Ward, Yokohama City, Kanagawa Prefecture)
-* {{ill|Itsukushima Shrine (Chigasaki)|ja|嚴島神社 (茅ヶ崎市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Chigasaki)|ja_comment=jawiki link invalid|qid=Q135579286|1=Itsukushima Shrine (Chigasaki)}} (Chigasaki City, Kanagawa Prefecture)
-* {{ill|Itsukushima Shrine (Kamakura)|ja|厳島神社 (鎌倉市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Kamakura)|1=Itsukushima Shrine|comment=changed title based on wikidata|qid=Q134927983}} (Kamakura City, Kanagawa Prefecture)
-
-== Chubu Region ==
-* {{ill|Itsukushima Shrine (Numazu)|ja|厳島神社 (沼津市内浦重寺)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Numazu)|ja_comment=jawiki redirects to 淡島神社 (沼津市内浦重寺)|1=Awashima Shrine|comment=changed title based on wikidata|qid=Q119929635}} (Numazu City, Shizuoka Prefecture)
-* {{ill|Itsukushima Shrine (Hamamatsu)|ja|厳島神社 (浜松市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Hamamatsu)|ja_comment=jawiki link invalid|qid=Q135579287|1=Itsukushima Shrine (Hamamatsu)}} (Hamamatsu City, Shizuoka Prefecture)
-* {{ill|Itsukushima Shrine (Gotenba)|ja|厳島神社 (御殿場市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Gotenba)|ja_comment=jawiki link invalid|qid=Q135579288|1=Itsukushima Shrine (Gotenba)}} (Gotenba City, Shizuoka Prefecture)
-* {{ill|Itsukushima Shrine (Kiyosu)|ja|厳島神社 (清須市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Kiyosu)|ja_comment=jawiki link invalid|qid=Q135579289|1=Itsukushima Shrine (Kiyosu)}} (Kiyosu City, Aichi Prefecture)
-* {{ill|Itsukushima Shrine (Hekinan)|ja|厳島神社 (碧南市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Hekinan)|ja_comment=jawiki link invalid|qid=Q135579290|1=Itsukushima Shrine (Hekinan)}} (Hekinan City, Aichi Prefecture)
-* {{ill|Itsukushima Shrine (Toyota)|ja|厳島神社 (豊田市)|12=simple|13=User:Immanuelle/Itsukushima Shrine (Toyota)|ja_comment=jawiki link invalid|qid=Q135579291|1=Itsukushima Shrine (Toyota)}} (Toyota City, Aichi Prefecture)
-
-*
-
-== See   Also ==
-* [[市杵島神社]]
-* [[宗像神社]]
-* [[厳島 (曖昧さ回避)]]
-*
-*
-*
-*
-* {{ill|Ichikishima Shrines|lt=Ichikishima Shrines|lt=Ichikishima Shrine|ja|市杵島神社|12=simple|13=User:Immanuelle/Ichikishima Shrine}}
-* {{ill|Munakata Shrine|ja|宗像神社|12=simple|13=User:Immanuelle/Munakata Shrine|1=Munakata Shrines|comment=changed title based on wikidata|qid=Q11451876}}
-* {{ill|Itsukushima (disambiguation)|en|Itsukushima (disambiguation)|qid=Q5577390|lt=Itsukushima (disambiguation)|1=Itsukushima (disambiguation)}}
 
 {{disambiguation}}
-
-== References ==
-<references />{{disambiguation}}
-
-{{Munakata Faith}}
 
 <!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
