@@ -92,6 +92,18 @@ Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
   Q335618 and Q705035 in Q3200280) — two clean statements disagree about who occupies a position.
   Per-item review.
 
+## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
+
+- [ ] **Shikinaisha lists should exclude Beppyō Shrines, Kokushi Genzaisha, and one more class.**
+  Needs agentic RAG. Blocked on a real sub-problem Emma names: *deriving a shrine's historical
+  province from its coordinates* (she thought she had a gazetteer, then said she doesn't). The
+  exclusion criterion is temporal ("it didn't exist yet"). Route the research to the cloud queue.
+- [ ] **Reisai days beyond jawiki** — per
+  <https://www.wikidata.org/wiki/Wikidata_talk:WikiProject_Shinto#Day_of_Reisai>, many reisai dates
+  are well documented in databases. Agentic RAG to find sources. NB the `Day of Reisai` property
+  proposal was **declined** (2025-12-07, no support), so the model stays P837 + P3831=Q11385469 per
+  `docs/wikidata_shrine_festival_model.md` — do not resurrect a bespoke property.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 55ae0bbe — Emma

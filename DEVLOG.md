@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-09 (later) — Ronsha candidates lose their Old Japanese official names
+
+Emma: *"Instances of Shikinai Ronsha should not even have Old Japanese official names… the old
+Japanese ones are referring to the Engishiki shrine, and Ronshas are not Engishiki shrines…
+These ones should be removed, simple as that!"* She guessed this was a sizable part of the P1448
+bloat; it is nearly all of it — **2,355 `ojp-hani` P1448 statements across 2,243 items**.
+
+`generate_ronsha_ojp_name_removals.py` → `ronsha_ojp_name_removals.txt`, registered in both
+`ATOMIC_FILES` lists and generated in `generate-quickstatements.yml`. Remove-only, so it is
+drip-safe: no paired add means no order in which a removal outruns its replacement.
+
+**The guard is the load-bearing part.** `P31` is not exclusive: 15 items are typed both
+`Q135022904` (Ronsha) and `Q135038714` (Disputed Shikinaisha/Shikigeisha). Those are Engishiki
+*entries* that also carry the Ronsha class and their Old Japanese name is genuine, so the query
+excludes them (`FILTER NOT EXISTS`). Verified against live SPARQL: 0 of the 15 appear in the
+batch. `Q134917286` currently overlaps zero Ronsha, but the guard covers it too rather than
+assume today's count holds.
+
+`direct_daily_edits.execute_removal` matches monolingual text on text *and* language and removes
+exactly ONE claim per line, so the 17 items holding the same Old Japanese name twice get two
+lines each. A surplus line just reports "Claim not found for removal".
+
+The page's P1448 table is re-scoped off the candidates and onto Shikinaisha ∪ DisputedEntry, per
+*"our page that has the official names should be only looking at the non-disputed Shikinaisha or
+the disputed Shikinaisha, but not the candidates"* — with `COUNT(DISTINCT ?s)`, since an item
+typed with two subject classes matches the `VALUES` join twice.
+
+**A stated rationale turned out to be wrong and was corrected rather than kept.** The value screen
+originally rejected both `"` and `|` on the grounds that either breaks QS v1 line parsing. Tested:
+`split_qs_parts` honours quoting, so a `|` inside the quoted value never splits, even with a
+trailing qualifier. Only an embedded `"` is dangerous — it leaves the splitter inside-out and the
+following field is swallowed into the value. The screen now rejects only `"`, and both behaviours
+are pinned by tests instead of by a comment. (Rejecting `|` would have silently under-removed.)
+
+161 tests pass in `modern-quickstatements/`.
+
+---
+
 ## 2026-07-09 — shrine-ranking duplicates: real review tables, exceptions, and the P361 list rebuild
 
 **The page was never stale.** Emma reported `shrine-ranking.html` "consistently not updating."

@@ -61,6 +61,11 @@ jobs:
         continue-on-error: true
         run: python generate_modern_shrine_ranking_qualifiers.py
 
+      - name: Remove Old Japanese official names from Shikinai Ronsha candidates
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_ronsha_ojp_name_removals.py
+
       - name: Generate P958 QS
         working-directory: modern-quickstatements
         continue-on-error: true

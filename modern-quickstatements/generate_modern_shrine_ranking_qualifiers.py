@@ -1105,13 +1105,35 @@ def _val(row, key):
     return row[key]["value"] if key in row else None
 
 
+# Which class each duplicate table is about. Emma 2026-07-09 on the official
+# names: "our page that has the official names should be only looking at the
+# non-disputed Shikinaisha or the disputed Shikinaisha, but not the candidates."
+# A candidate's Old Japanese official name is copied off the Engishiki entry it
+# merely claims to be, so it is not a competing name — it is a name to delete
+# (generate_ronsha_ojp_name_removals.py). Address and part-of duplicates are
+# genuinely the candidates' problem, so those two stay scoped to Ronsha.
+RONSHA = "Q135022904"          # Shikinai Ronsha — the candidate class
+SHIKINAISHA = "Q134917286"     # Shikinaisha — a real Engishiki shrine
+DISPUTED_ENTRY = "Q135038714"  # Disputed Shikinaisha or Shikigeisha — an entry
+
+DUP_SUBJECT = {
+    "P361": [RONSHA],
+    "P1448": [SHIKINAISHA, DISPUTED_ENTRY],
+    "P6375": [RONSHA],
+}
+
+
 def fetch_duplicate_qids(prop):
-    """QIDs of Shikinai Ronsha items carrying more than one `prop` statement."""
+    """QIDs carrying more than one `prop` statement, within that property's subject class."""
+    classes = " ".join("wd:" + c for c in DUP_SUBJECT[prop])
+    # COUNT(DISTINCT ?s): an item typed with two of the subject classes matches
+    # the VALUES join twice, which would otherwise double every statement count.
     query = f"""
-    SELECT ?item (COUNT(?s) AS ?count) WHERE {{
-      ?item wdt:P31 wd:Q135022904 .
+    SELECT ?item (COUNT(DISTINCT ?s) AS ?count) WHERE {{
+      VALUES ?cls {{ {classes} }}
+      ?item wdt:P31 ?cls .
       ?item p:{prop} ?s .
-    }} GROUP BY ?item HAVING(COUNT(?s) > 1) ORDER BY DESC(?count)
+    }} GROUP BY ?item HAVING(COUNT(DISTINCT ?s) > 1) ORDER BY DESC(?count)
     """
     return [qid(r["item"]["value"]) for r in fetch_sparql(query)]
 
