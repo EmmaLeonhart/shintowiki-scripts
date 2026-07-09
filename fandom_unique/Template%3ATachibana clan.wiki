@@ -1,0 +1,18 @@
+{{Navbox
+| name  = Tachibana clan
+| title = [[:en:Tachibana clan (kuge)|Tachibana clan]]
+| listclass = hlist
+| image = [[File:NintokuTomb Aerial photograph 2007.jpg|150px|link=|alt=]]
+ |group1 = Tachibana
+ |list1 =
+* [[:en:Tachibana clan (kuge)|Tachibana clan (kuge)]]
+* [[Umenomiya Taisha]]
+}}<noinclude>
+
+[[en:Template:Tachibana clan]]{{wikidata link|Q125507366|check_date=2026-06-28}}
+[[Category:Shinto cult templates]]
+[[Category:Shinto templates]]
+[[Category:Independently git synced pages]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
+</noinclude>
