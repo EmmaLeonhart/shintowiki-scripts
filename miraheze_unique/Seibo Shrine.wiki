@@ -20,7 +20,7 @@
 [[File:Shoumogu Honden.JPG|thumb|right|250px|Main Hall<br /><small>The sides are shielded from rain and wind; only the roof is exposed.</small>]]
 [[File:Bateiseki (Iki).JPG|thumb|right|250px|Horseshoe Stone<br /><small>Said to bear the hoofprint of Empress Jingū’s horse.</small>]]
 
-'''Shoumogu''' (聖母宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Iki, Nagasaki|en|Iki, Nagasaki|qid=Q861519|lt=Iki City}}, Nagasaki Prefecture, in Katsumoto Town. Listed in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}, it is considered a potential site of the Shikinaisha “Nakatsu Shrine.” However, another shrine currently bearing that name exists separately ({{ill|Nakatsu Shrine (Iki)|ja|中津神社 (壱岐市)}}).
+'''Shoumogu''' (聖母宮) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} located in {{ill|Iki, Nagasaki|en|Iki, Nagasaki|qid=Q861519|lt=Iki City}}, Nagasaki Prefecture, in Katsumoto Town. Listed in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}, it is considered a potential site of the Shikinaisha “Nakatsu Shrine.” However, another shrine currently bearing that name exists separately ({{ill|Nakatsu Shrine (Iki)|ja|中津神社 (壱岐市)}}).
 
 == Enshrined Deities ==
 The shrine honors the following deities:
@@ -31,7 +31,7 @@ The shrine honors the following deities:
 The shrine is associated with Empress Jingū’s {{ill|Three Han Campaign|ja|三韓征伐|12=simple|13=User:Immanuelle/Sankan Seibatsu|comment=changed title based on wikidata|qid=Q11249435}} (conquest of the Three Han States). Known as a deity of victory due to her triumph, she is also venerated as a deity of safe childbirth, as she gave birth to Emperor Ōjin after her victorious return.
 
 == History ==
-In the 9th year of Emperor Chūai’s reign (possibly 200 CE), Empress Jingū constructed a temporary palace ({{ill|kinzai|ca|Cort itinerant|da|Rejsekongedømme|de|Reisekönigtum|es|Corte itinerante|fr|Cour itinérante|it|Corte itinerante|ja|行宮|ko|행궁|nl|Ambulant koningschap|no|Reisekongedømme|pt|Corte itinerante|ru|Кочующий королевский двор|sv|Reisekönigtum|uk|Мандрівний суд|zh|行宫|qid=Q11626047}}) in Iki while awaiting favorable winds for her campaign. The area was named “Kazamoto” (Wind Origin) after the northward winds blew. Upon her victorious return in December of the same year, the area was renamed “Katsumoto” (Victory Origin). According to legend, 101,500 enemy heads were buried here.
+In the 9th year of Emperor Chūai’s reign (possibly 200 CE), Empress Jingū constructed a temporary palace ({{ill|kinzai|ca|Cort itinerant|da|Rejsekongedømme|de|Reisekönigtum|es|Corte itinerante|fr|Cour itinérante|it|Corte itinerante|ja|行宮|ko|행궁|nl|Ambulant koningschap|no|Reisekongedømme|pt|Corte itinerante|ru|Кочующий королевский двор|sv|Reisekönigtum|uk|Мандрівний суд|zh|行宫|qid=Q2141881}}) in Iki while awaiting favorable winds for her campaign. The area was named “Kazamoto” (Wind Origin) after the northward winds blew. Upon her victorious return in December of the same year, the area was renamed “Katsumoto” (Victory Origin). According to legend, 101,500 enemy heads were buried here.
 
 The palace fell into disuse until a miraculous event involving glowing objects from the sea led to the offering of mirrors and the enshrinement of Empress Jingū. In 717 CE (Yōrō 1), the shrine was formally established, and structures were built to pray for national protection. Over time, it gained prominence as one of Iki’s Seven Great Shrines and the second shrine of Iki Province. It also maintained strong connections to {{ill|Kashii-gū|abstract|Q631373|de|Kashii-gū|fr|Kashii-gū|ja|香椎宮|zh|香椎宮|qid=Q631373|lt=Kashii Shrine}} in Fukuoka.
 
@@ -78,15 +78,13 @@ The main gate was donated by {{ill|Katō Kiyomasa|az|Katö Kiyomasa|ban|Kato Kiy
 
 == Shrines with this name ==
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 * {{ill|Shoumogu (Q11611081)|lt=Shoumogu|qid=Q11611081}} — Iki Island
-<!-- END: auto-generated Wikidata shrine list -->
 
 {{translated page|ja|聖母宮|version=89510503|comment=Imported full ja history}}
 
 {{Commons category|Shoumogu}}
 
-{{wikidata link|Q11611081|da|d:Q11611081|co|commons:Category:Shoumogu|ja|聖母宮|check_date=2026-05-25}}
+{{wikidata link|Q11611081|da|d:Q11611081|co|commons:Category:Shoumogu|ja|聖母宮|grok=none|check_date=2026-05-25}}
 
 ==Notes==
 <references group="lower-alpha"/>
@@ -107,3 +105,4 @@ The main gate was donated by {{ill|Katō Kiyomasa|az|Katö Kiyomasa|ban|Kato Kiy
 [[Category:Wikidata has short description]]
 [[Category:Shikinai Ronsha]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
