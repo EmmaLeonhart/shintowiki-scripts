@@ -106,10 +106,18 @@ Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
   I corrected this one enough, so you can look at the history to see my last two edits that I did
   that actually changed it to the desired form." Read those two revisions on shinto.miraheze.org,
   derive the desired form, and check it against `shinto_miraheze/git_sync_strip_property_dumps.py`.
-- [ ] **Shikinaisha lists should exclude Beppyō Shrines, Kokushi Genzaisha, and one more class.**
-  Needs agentic RAG. Blocked on a real sub-problem Emma names: *deriving a shrine's historical
-  province from its coordinates* (she thought she had a gazetteer, then said she doesn't). The
-  exclusion criterion is temporal ("it didn't exist yet"). Route the research to the cloud queue.
+- [ ] **The "excluded" property goes on the SHRINES, not on the lists.** (Corrected by Emma
+  2026-07-09 — my first write-up had this exactly backwards.) Her words: *"Shikinaisha lists should
+  not exclude it. They should not exclude the Beppyō shrines. Rather, Beppyō shrines that are not
+  Shikinaisha but are within the province's jurisdiction should have the excluded property on
+  them."* So: a Beppyō shrine (likewise Kokushi Genzaisha, and one further class) that sits inside
+  a province's jurisdiction but is **not** a Shikinaisha gets a statement recording that it is
+  excluded from that province's Shikinaisha list, with the reason — for Beppyō, "it didn't exist
+  yet". The point is context: where these shrines stand relative to contemporary ones.
+  Sub-problem Emma names as the blocker: *deriving a shrine's historical province from its
+  coordinates* (she thought she had a gazetteer in order.life, then said she doesn't).
+  **Open before building: which Wikidata property expresses "excluded from this list", and what
+  carries the reason.** Do not guess it. Route the research to the cloud queue.
 - [ ] **Reisai days beyond jawiki** — per
   <https://www.wikidata.org/wiki/Wikidata_talk:WikiProject_Shinto#Day_of_Reisai>, many reisai dates
   are well documented in databases. Agentic RAG to find sources. NB the `Day of Reisai` property
