@@ -1339,12 +1339,27 @@ def fetch_p361_details(qids):
 
 
 def _table(prefix, headers, body_rows, footnotes):
+    if not body_rows:
+        return '<p class="desc"><strong>Nothing left here.</strong></p>'
     cols = "".join(f"<th>{h}</th>" for h in headers)
     return (
         f'<div class="tablewrap"><table class="dup" id="{prefix}">'
         f"<thead><tr>{cols}</tr></thead><tbody>{''.join(body_rows)}</tbody></table></div>"
         f"{footnotes.render()}"
     )
+
+
+def still_duplicated(qids, details):
+    """Keep only items whose FETCHED statements actually number more than one.
+
+    The duplicate set comes from a COUNT query, and the per-statement detail comes
+    from a later query. WDQS updates between the two: on 2026-07-09 Emma ran the
+    uncited-address removals in the gap, and 40 items whose count said "2" came
+    back with a single address — the page rendered 40 one-address rows, which
+    means nothing. Membership must be re-derived from the detail we actually have,
+    never from the earlier count.
+    """
+    return [q for q in qids if len(details.get(q, {})) > 1]
 
 
 def render_p1448_table(qids, labels, details, refs, entries):
@@ -1474,6 +1489,14 @@ def generate_duplicates_section():
     r1448 = fetch_statement_refs(dupes["P1448"], "P1448") if dupes["P1448"] else {}
     d6375 = fetch_p6375_details(dupes["P6375"]) if dupes["P6375"] else {}
 
+    # Re-derive membership from the detail we actually fetched. The COUNT query
+    # ran earlier and WDQS moves underneath us as Emma edits.
+    for prop, det in (("P1448", d1448), ("P6375", d6375)):
+        before = len(dupes[prop])
+        dupes[prop] = still_duplicated(dupes[prop], det)
+        if len(dupes[prop]) != before:
+            print(f"    {before - len(dupes[prop])} {prop} items no longer duplicated since the count query")
+
     # A Japanese address plus its romanisation is one address written twice, not
     # a conflict — drop those before anything downstream counts or sorts them.
     script_pairs = [q for q in dupes["P6375"] if is_script_pair(list(d6375.get(q, {}).values()))]
@@ -1485,6 +1508,10 @@ def generate_duplicates_section():
 
     r6375 = fetch_statement_refs(dupes["P6375"], "P6375") if dupes["P6375"] else {}
     d361 = fetch_p361_details(dupes["P361"]) if dupes["P361"] else {}
+    before = len(dupes["P361"])
+    dupes["P361"] = still_duplicated(dupes["P361"], d361)
+    if len(dupes["P361"]) != before:
+        print(f"    {before - len(dupes['P361'])} P361 items no longer duplicated since the count query")
 
     # The P361 cells name the neighbouring list entries and the list itself, so
     # those need labels too — QIDs are unreadable.

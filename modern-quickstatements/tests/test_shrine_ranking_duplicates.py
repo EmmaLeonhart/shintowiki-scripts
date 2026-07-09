@@ -261,3 +261,35 @@ def test_script_pair_macron_romanisation_is_not_cjk():
 
 def test_script_pair_detects_kana_not_just_kanji():
     assert g.is_script_pair(["Hiragana-ken", "ひらがな県"])
+
+
+def test_still_duplicated_drops_items_the_count_query_lied_about():
+    """WDQS moves between the COUNT query and the detail query.
+
+    Emma ran the uncited-address removals in that gap on 2026-07-09 and 40 items
+    whose count said 2 came back with one address. A one-address row in a
+    duplicates table is meaningless.
+    """
+    details = {"Q1": {"st-a": "A", "st-b": "B"}, "Q2": {"st-c": "C"}, "Q3": {}}
+    assert g.still_duplicated(["Q1", "Q2", "Q3"], details) == ["Q1"]
+
+
+def test_still_duplicated_preserves_order():
+    details = {"Q9": {"a": 1, "b": 2}, "Q1": {"c": 1, "d": 2}}
+    assert g.still_duplicated(["Q9", "Q1"], details) == ["Q9", "Q1"]
+
+
+def test_empty_table_says_nothing_left_rather_than_rendering_an_empty_table():
+    """Emma: 'If there's just nothing, then just say there's nothing.'"""
+    html = g.render_p6375_table([], {}, {}, {}, {})
+    assert "Nothing left here" in html
+    assert "<table" not in html
+
+
+def test_p6375_table_never_renders_a_single_address_row():
+    """Guard the exact defect: one address is not a duplicate."""
+    labels = {"Q1": {"en": "One Address Shrine"}}
+    details = {"Q1": {"st-a": "静岡県熱海市網代172"}}
+    kept = g.still_duplicated(["Q1"], details)
+    assert kept == []
+    assert "Nothing left here" in g.render_p6375_table(kept, labels, details, {}, {})

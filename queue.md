@@ -94,35 +94,45 @@ Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
 
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
 
-- [ ] **Kokugakuin citation on the `P31 = Q134917286` (Shikinaisha) statements.** Emma: "all P31
-  Shikinaisha (Q134917286) items should get the Kokugakuin university citation thing just like
-  others. This is to go into the edits queue thing." The sibling P31 statements on the same items
-  already carry `P248=Q135159299` + `P13677=<entry id>` (e.g. Q135039995's `P31=Q135038714` and
-  `P31=Q135160342` do; its `P31=Q134917286` has no reference at all). Add-only ⇒ drip-safe ⇒
-  ATOMIC_FILES. Skip items whose `P13677` is not singular — the entry id cannot be attributed.
 - [ ] **`[[Tamatsukuri Shrine (Q134930396)]]` — the property-dump cleanup didn't go far enough.**
   Emma: "a large amount of the pages that were supposed to be corrected because they were giant
   property lists but had Japanese language content in them were just kind of not corrected enough.
   I corrected this one enough, so you can look at the history to see my last two edits that I did
   that actually changed it to the desired form." Read those two revisions on shinto.miraheze.org,
   derive the desired form, and check it against `shinto_miraheze/git_sync_strip_property_dumps.py`.
-- [ ] **The "excluded" property goes on the SHRINES, not on the lists.** (Corrected by Emma
-  2026-07-09 — my first write-up had this exactly backwards.) Her words: *"Shikinaisha lists should
-  not exclude it. They should not exclude the Beppyō shrines. Rather, Beppyō shrines that are not
-  Shikinaisha but are within the province's jurisdiction should have the excluded property on
-  them."* So: a Beppyō shrine (likewise Kokushi Genzaisha, and one further class) that sits inside
-  a province's jurisdiction but is **not** a Shikinaisha gets a statement recording that it is
-  excluded from that province's Shikinaisha list, with the reason — for Beppyō, "it didn't exist
-  yet". The point is context: where these shrines stand relative to contemporary ones.
-  Sub-problem Emma names as the blocker: *deriving a shrine's historical province from its
-  coordinates* (she thought she had a gazetteer in order.life, then said she doesn't).
-  **Open before building: which Wikidata property expresses "excluded from this list", and what
-  carries the reason.** Do not guess it. Route the research to the cloud queue.
 - [ ] **Reisai days beyond jawiki** — per
   <https://www.wikidata.org/wiki/Wikidata_talk:WikiProject_Shinto#Day_of_Reisai>, many reisai dates
   are well documented in databases. Agentic RAG to find sources. NB the `Day of Reisai` property
   proposal was **declined** (2025-12-07, no support), so the model stays P837 + P3831=Q11385469 per
   `docs/wikidata_shrine_festival_model.md` — do not resurrect a bespoke property.
+
+## LAST IN THE QUEUE — province exclusion (Emma 2026-07-09: postponed; "may very well be the most complicated task in the entirety of the queue by far")
+
+- [ ] **The "excluded" property goes on the SHRINES, not on the lists.** Emma: *"Shikinaisha lists
+  should not exclude it. They should not exclude the Beppyo shrines. Rather, Beppyo shrines that are
+  not Shikinaisha but are within the province's jurisdiction should have the excluded property on
+  them."* Reason for Beppyo: "it didn't exist yet".
+- [ ] **"Within the province's jurisdiction" = a geographic coordinate query.** Emma: *"a geographic
+  coordinates-based querying system, which I'm pretty sure can exist using STL files, but it's hard.
+  I think it's prohibitively hard, to the point of putting it at the end of the queue."*
+  Point-in-polygon of `P625` against historical province boundaries.
+- [ ] Which Wikidata property expresses "excluded from this list" is **still unanswered** - do not
+  guess. Nothing in the data uses one: zero shrines carry `P1011`; the lists' `P361` statements carry
+  only `P155`/`P156`/`P1545`. Candidates: deprecated-rank `P361` + `P2241` (shrine-side, Wikidata's
+  canonical "this claim is false"); `P1011` excluding; `P3113` does not have part (both list-side,
+  contradicting "on them").
+
+**Investigated 2026-07-09 (Yamashiro Q11467693 / Yamato Q11433427) - facts for whoever picks this up:**
+* Beppyo is **not** a `P31` class - it is a shrine *ranking*: `P13723 = Q10898274`. 350 items;
+  **240 not Shikinaisha**, 236 of those with coordinates. (`P31 = Q10898274` has zero instances.)
+* Kokushi genzaisha **is** a `P31` class (`Q118304363`): 159 items, 157 not Shikinaisha.
+* The lists already contain non-Shikinaisha members. Yamashiro: 146 members, only 88 Shikinaisha
+  (plus 56 Ronsha, a kokushi genzaisha, a Buddhist temple). Yamato: 300 members, 212 Shikinaisha.
+  42 non-Shikinaisha Beppyo shrines already carry `P361` into a Shikinaisha list.
+* **Neither list links to its province.** Their only statement is `P361 -> Q11064932` (Engishiki
+  Jinmyocho) - no `P131`, no `P276`. So "within the province's jurisdiction" is unrepresentable
+  today. The ~60 `<province>の式内社一覧` items could be linked to their province from their own
+  Japanese label with no coordinates at all, which would unblock the rest.
 
 ## Pinned tail (keep last, always)
 

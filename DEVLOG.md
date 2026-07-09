@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-09 (later still) — the duplicates page was rendering one-address rows
+
+**A defect I introduced, caught by Emma reading the page.** The duplicate set came from a `COUNT`
+query; the per-statement detail came from a later query. WDQS moves in between. Emma ran the
+uncited-address removal batch in that gap, so 40 items whose count said "2" came back with a single
+address — and the page rendered 40 one-address rows in a *duplicates* table. Her words: *"you're
+actively showing shrines that only have one-sided Japanese address, whereas the entire thing was to
+only show the ones that have multiple addresses. If there's just nothing, then just say there's
+nothing."*
+
+Fixed by re-deriving membership from the detail actually fetched (`still_duplicated`), never from
+the earlier count, for all three tables. An empty table now says "Nothing left here" rather than
+rendering an empty grid. Four regression tests pin it. P6375 falls to 47 genuine duplicates, zero
+single-address rows.
+
+**Shipped:** the Kokugakuin citation on all 2,863 `P31 = Q134917286` statements (2,760 emittable,
+94 with no `P13677` to cite, 9 holding several so the entry id cannot be attributed). Add-only,
+drip-safe, self-healing; 40 random lines verified against the live Wikidata API.
+
+**Postponed by Emma to the end of the queue:** the Beppyō / Kokushi Genzaisha exclusion statements.
+She corrected my write-up twice — the "excluded" property goes on the *shrines*, not on the lists —
+and told me to investigate Yamashiro and Yamato before asking. What that turned up: Beppyō is not a
+`P31` class at all but a *ranking* (`P13723 = Q10898274`, 350 items, 240 not Shikinaisha); kokushi
+genzaisha is a `P31` class (159 items, 157 not Shikinaisha); both lists already carry non-Shikinaisha
+members (Yamashiro 146 members / 88 Shikinaisha); and **neither list links to its province**, so
+"within the province's jurisdiction" is unrepresentable today. Emma: the jurisdiction test is a
+coordinate/point-in-polygon problem, *"prohibitively hard, to the point of putting it at the end of
+the queue."* Which property expresses "excluded" is still unanswered and deliberately not guessed.
+
+**A near-miss worth recording.** I drained the wiki-based queue on the wiki but carried only three
+of five bullets into `queue.md`. The Kokugakuin instruction and the Tamatsukuri cleanup were deleted
+from the page and written nowhere. Recovered from wikitext I still had in context. Metabolise means
+*write it down first, then remove it* — not the other way round.
+
+165 tests pass in `modern-quickstatements/`.
+
 ## 2026-07-09 (later) — Ronsha candidates lose their Old Japanese official names
 
 Emma: *"Instances of Shikinai Ronsha should not even have Old Japanese official names… the old
