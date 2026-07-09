@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-09 — shrine-ranking duplicates: real review tables, exceptions, and the P361 list rebuild
+
+**The page was never stale.** Emma reported `shrine-ranking.html` "consistently not updating."
+It rebuilds daily (origin `f96cd758` stamps `2026-07-09 06:39 UTC`). The counts looked frozen
+(P1448 105 and P6375 252 unmoved since at least 2026-06-18) because **nothing drains them** —
+the number only moves when she fixes an item by hand. What sold the illusion: the "example of
+all three issues: Q59282644 (Takagi Shrine)" line was **hardcoded**, so it outlived the problem
+it illustrated — Takagi now has 1× each. Every count now carries the time it was queried.
+
+**Query shape was the real bug.** The detail queries re-evaluated the `GROUP BY`/`HAVING`
+subquery inside every lookup: 46s for the 104-item P1448 set, and the reference walk never
+completed — WDQS aborts mid-stream and signals it by gluing a Java stack trace onto an
+*already-200* truncated body, so `fetch_sparql` died on `JSONDecodeError`. Materialising the item
+set once and feeding it back as `VALUES` drops the same queries to **0.6s**. `fetch_sparql` now
+detects that truncated-200 abort and retries it like a 500, and parses with `strict=False`
+(address literals legitimately contain raw newlines). Emma called this one before I found it.
+
+**The tables.** One column per competing value (Address 1..4, Official name 1..6, Statement 1..7),
+English labels as names with the QID demoted, citations as Wikipedia-style numbered footnotes
+(604 markers dedupe to 186 numbered references), no `<details>` drop-downs. 196 of the address
+items have exactly one cited address — Emma's own predictor — and sort to the top.
+`refresh_duplicates_section.py` rebuilds just this section, so it can be re-queried as fast as
+she fixes items rather than once a day.
+
+**Exceptions.** Five hand-reviewed items (Izawa-no-Miya, Izumo-daijingū, Izawa Shrine, Samugawa
+Shrine, Baba Tsutsukowake Shrine), plus a derived rule: two addresses, exactly one containing CJK,
+is the same address written twice. Tests target CJK rather than ASCII because the romanisation
+carries macrons. P6375 falls 250 → 198. Excepted items are named on the page, not silently dropped.
+
+**P361 list rebuild — built, not run.** `generate_p361_shikinaisha_list_fix.py`. A clean P361
+statement at ordinal N independently witnesses that N-1 is its `P155` and N+1 its `P156`;
+collecting those witnesses across a list names the occupant of every position — unanimously —
+while the self-claims are exactly the pollution (Mutsu ordinal 25 has five self-claimants, four of
+them `P460` candidates that inherited the entry's statement). Emits a browser-only remove+add
+batch, not in `ATOMIC_FILES`. **841 removals / 36 adds**, because on this reading a pure candidate
+keeps no P361. The competing reading of "add in a new one derived from the list item" gives 301
+adds. Nothing executed: a 20× swing on a destructive batch is Emma's call, and QuickStatements'
+`-` behaviour on several identical values is undocumented.
+
+149 tests pass in `modern-quickstatements/`.
+
+---
+
 ## 2026-07-08 — dab-straggler root cause fixed: skip branches poisoned the resolver's state
 
 Emma asked to SEE the "human review" items behind backlog #4 — pulling them showed all 8 dab

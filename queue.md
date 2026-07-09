@@ -74,31 +74,23 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 Target page: `shrine-ranking.html` § "Duplicate Properties on Shikinai Ronsha".
 Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
 
-- [ ] **(a) shrine-ranking.html "not updating"** — DIAGNOSED: the page *is* rebuilt daily
-  (origin `f96cd758`, "Last updated 2026-07-09 06:39 UTC"), the counts just barely move because
-  nothing drains them. What made it *look* frozen: the Takagi Shrine (Q59282644) "example of all
-  three issues" line is **hardcoded** in `generate_duplicates_section()` and Q59282644 now has 1×
-  each. Fix: derive the example from the query (or drop it), and surface the build time next to
-  each count so a stale render is obvious.
-- [ ] **(b) P1448 official-name table** (104 items) — replace the bare `<li>QID (n statements)`
-  list with a real table: ja label | each official name (+ its `P1264` period / `P1814` kana /
-  its references) | every `P13677` Kokugakuin entry on the item as a clickable link
-  (`https://jmapps.ne.jp/kokugakuin/det.html?data_id=$1`). Emma: "Every single one of them is
-  probably going to be manually fixable for me if I just have that information."
-- [ ] **(c) P6375 street-address table** (250 items) — show every address with **all** its
-  citations rendered as footnotes / an expanding block. Emma's predictor: "if any one of them has
-  a citation, that's a really good sign" — so sort/flag cited-vs-uncited. Needs the more
-  sophisticated view *before* she can decide.
-- [ ] **(d) P361 part-of migration** (384 items) — on the actual shrine item, remove **every**
-  P361→Shikinaisha-list statement; add ONE derived from the list-entry item, taking `P1545`
-  ordinal + `P155`/`P156` from the entry item's own (already-clean) statement. Two references:
-  `P248=Q135159299` + `P13677=<entry id>` (the form every coordinate already uses), and the
-  jawiki Shikinaisha-list article (`P4656=https://ja.wikipedia.org/wiki/<list>`).
-  **Add-first / remove-later as two separate scripts** (CLAUDE.md). BLOCKER to resolve first:
-  when a Ronsha item carries several `P13677` entry ids (e.g. Q11677110 holds 182062/182063/182065),
-  which entry's ordinal becomes the single new statement? Build the report, then ask.
+- [ ] **(d) P361 part-of migration — batch BUILT, needs Emma's word before it runs.**
+  `modern-quickstatements/generate_p361_shikinaisha_list_fix.py` →
+  `modern-quickstatements/_site/p361_shikinaisha_list_fix.txt`. Browser batch only (remove+add is
+  not drip-safe); deliberately not in `ATOMIC_FILES`. **841 removals, 36 adds.** The list's true
+  membership is reconstructed from the neighbour witnesses (a clean statement at ordinal N asserts
+  N-1 = its P155, N+1 = its P156) — unanimous on every list. THE DECISION: on this reading a pure
+  P460 candidate keeps **no** P361 at all (691 of 726 item/list pairs), because list membership
+  belongs to the entry item. The other reading of "add in a new one derived from the list item" —
+  every candidate keeps ONE statement mirroring its entry — gives **301 adds** instead of 36.
+  20× swing, destructive either way. Also unresolved: QuickStatements' `-` on several identical
+  values is undocumented (removes one, or all?); the batch emits one `-` per existing statement so
+  it is correct under either, at the cost of some "not found" lines if `-` already removes all.
 - [ ] (e) Street-address citation convention (Emma): for Shikinaisha lists, cite the jawiki
   Shikinaisha-list article. No immediate citation otherwise; official names mostly already cited.
+- [ ] (f) 3 items skipped by the P361 generator on a contested ordinal (Q135288221 in Q11642130;
+  Q335618 and Q705035 in Q3200280) — two clean statements disagree about who occupies a position.
+  Per-item review.
 
 ## Pinned tail (keep last, always)
 
