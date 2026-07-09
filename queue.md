@@ -106,23 +106,30 @@ Live counts 2026-07-09 16:30 UTC: P361 **384**, P1448 **104**, P6375 **250**.
   proposal was **declined** (2025-12-07, no support), so the model stays P837 + P3831=Q11385469 per
   `docs/wikidata_shrine_festival_model.md` — do not resurrect a bespoke property.
 
-## Near the end — hard-residual street-address analysis (Emma 2026-07-09)
+## LAST — hard-residual street addresses, via the Kokugakuin website links (Emma 2026-07-09)
 
-Emma: *"addresses seem to be resolved. Put at the end of the queue to do an analysis on the current
-ones that still aren't fixed but they are not easy ones anymore."*
+**Ontology, corrected by Emma:** *"you're getting ronsha ontology wrong — a ronsha is specifically
+always only one address."* A Shikinai Ronsha item is ONE candidate shrine, so it has exactly ONE
+address. Several addresses on one Ronsha is simply an error, never a legitimate list of candidates'
+addresses. (My earlier write-up claimed the entry item had absorbed its candidates' addresses. That
+was wrong and is not a model to reason from.)
 
-Confirmed by the data: `generate_uncited_address_removals.py` now emits **0 lines** — the
-cited-vs-uncited signal is exhausted. Of the 47 Ronsha items still holding more than one Japanese
-`P6375`:
+**Method, per Emma:** read the Kokugakuin website links on each item to figure out which address is
+right. Not a mechanical rule.
 
-* **45 have every address uncited** — no citation to choose by, which is precisely why the easy rule
-  skipped them. Needs a different discriminator (jawiki list-article row? Kokugakuin entry address?
-  coordinates vs address consistency?).
-* **2 have every address cited** — a genuine source conflict; two sources disagree.
-* **0 mixed** — the easy case is fully drained.
+State as of 2026-07-09 (`generate_uncited_address_removals.py` now emits 0 lines — the
+cited-vs-uncited signal is exhausted). Of 46 Ronsha items still holding more than one Japanese
+`P6375` (Emma removed one prefix case by hand):
 
-- [ ] Analyse the 45 all-uncited and the 2 all-cited items and propose a discriminator. Report
-  before editing anything; do not guess a rule and drip it.
+* **~44 carry no reference at all** on any address. 3 were coarser-prefix duplicates of each other
+  (Emma removed one); the rest name genuinely different places.
+* **`Q11547364` Hibita Shrine** — a real source conflict: the shrine's own site (hibita.jp) gives
+  `神奈川県伊勢原市三ノ宮1472`; *Kanagawa Prefecture Shrine Records* (Q137052933) p. 352 gives `…1468`.
+* **`Q3530344` Toga Shrine** — both addresses carry only `P143` (imported from jawiki), which is not
+  a source. They are its 里宮 and 奥宮.
+
+- [ ] Per item, open the Kokugakuin entry page (`P13677` → `https://jmapps.ne.jp/kokugakuin/det.html?data_id=$1`)
+  and read the address off it. Report before editing; do not guess a rule and drip it.
 
 ## LAST IN THE QUEUE — province exclusion (Emma 2026-07-09: postponed; "may very well be the most complicated task in the entirety of the queue by far")
 
