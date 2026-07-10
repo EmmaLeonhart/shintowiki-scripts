@@ -4,6 +4,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — the two duplicate ordinals are two different defects, and the sources say so
+
+Yesterday I recorded "two list items name an entry twice" and recommended fixing both by hand,
+without saying what the right value was. Reading the jawiki source articles settles both, and they
+turn out to be different problems.
+
+**Izumo is a spurious statement.** `Template:出雲国意宇郡の式内社一覧` runs 須多神社 (26), 揖夜神社
+(27), **同社坐韓国伊大弖神社** (28), **筑陽神社** (29), 同社坐波夜都武自和気神社 (30). The 同社坐
+entries are 境内社 — shrines standing inside another shrine's grounds. The Kokugakuin ids agree:
+182800, 182801, then 182802 on 筑陽神社. So `Q135040786` belongs at 28 only; its statement at 29 is
+junk, and ordinal 29 currently holds two entries.
+
+**Awa is the piped link Emma described, caught in the act.** `安房国の式内社一覧` entry 3 is
+**天神社**, and its identified shrine is written `[[下立松原神社#白浜町の下立松原神社|下立松原神社]]`.
+The import followed the link rather than the bold entry name, so `Q11361262` 下立松原神社 sits at
+ordinal 3, which is not its slot — it is entry 5, and it is there too. The Kokugakuin ids prove it:
+Awa runs 181733, then 181736 at ordinal 3, 181735 at 4, 181736 again at 5. **181734 is missing** —
+and `Q137041912` 天神社 holds it, a complete entry item with no list membership whatsoever. Its slot
+was taken.
+
+So the add is queued (`Q11450714|P527|Q137041912|P1545|"3"`) and the two removals are hand fixes:
+each deletes one `has part` statement, and QuickStatements cannot target a statement when another
+shares its value — a value-matched removal on Awa is as likely to take the correct ordinal-5
+statement as the junk ordinal-3 one.
+
+**A second guard, because the add lands before the removal.** `contested_entries()` withholds every
+entry sharing an ordinal with a *different* entry: a position holding two entries is not a position.
+It withholds `Q135040787` 筑陽神社 too, which is correct, because the list read alone cannot say so.
+Three entries unplaceable; batch 5,637 → 5,635 lines; eleven tests across both guards.
+
+Nothing was removed. The dangerous half of each fix is written down, not executed. 1106 tests pass.
+
+---
+
 ## 2026-07-10 — the hot spring really is a Shikinaisha; I nearly deleted correct data
 
 Yesterday's tick recommended stripping three statements off `Q11474068` 岩井温泉 — a hot spring in

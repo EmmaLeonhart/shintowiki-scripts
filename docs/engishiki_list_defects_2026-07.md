@@ -3,34 +3,68 @@
 Background: `docs/engishiki_lists_primer.md`. These are the loose threads left by
 `orphan_shikinaisha_2026-07.md`, run down one at a time. Nothing here has been edited on Wikidata.
 
-## 1. Two entries the list names TWICE — and script 1 would have made it worse
+## 1. Two entries the list names TWICE — diagnosed against the source articles
 
 The register lists each shrine once. Two list items name an entry at **two different ordinals**:
 
 | entry | list | ordinals |
 |---|---|---|
-| [Q135040786](https://www.wikidata.org/wiki/Q135040786) 坐韓国伊大弖神社 | Izumo Province | **28 and 29** |
+| [Q135040786](https://www.wikidata.org/wiki/Q135040786) 同社坐韓国伊大弖神社 | Izumo Province | **28 and 29** |
 | [Q11361262](https://www.wikidata.org/wiki/Q11361262) 下立松原神社 | Awa Province | **3 and 5** |
 
-This is the same piped-link import damage that hit the shrine items, surviving on the *list* side —
-so the list, which is supposed to be the source of truth, is itself wrong in these two places.
-Which ordinal is right cannot be read off the list.
-
-**Script 1 was emitting one head line per ordinal.** Two lines, same item, same list, different
+**Script 1 was emitting one head line per ordinal** — two lines, same item, same list, different
 `series ordinal`. QuickStatements matches a statement by its *value*, so both would have found the
-same statement and hung two rival ordinals on it — and both carried the neighbours of whichever
-position `neighbours()` recorded last, so the ordinal-3 line wore ordinal-5's neighbours.
+same statement and hung two rival ordinals on it; both also carried the neighbours of whichever
+position `neighbours()` recorded last, so the ordinal-3 line wore ordinal-5's neighbours. Guarded by
+`ambiguous_entries()`, and nothing is emitted for them.
 
-Fixed: `ambiguous_entries()` excludes them, `generate_list_membership_rebuild.py` emits nothing for
-them and prints them, and six lines left the batch (5,643 → 5,637). Six tests pin it.
+Reading the jawiki source articles says which ordinal is right in each case. They are **two
+different defects**, not one.
 
-**The damage already exists on Wikidata, from the original import, not from us.** `Q11361262`
-carries two `part of` statements to the Awa list, ordinals 3 and 5, *each* with two `follows` and
-two `followed by` values. Our lines carry references; these have none. The batch has never run —
+### Izumo: a spurious extra statement at ordinal 29
+
+`Template:出雲国意宇郡の式内社一覧` runs: 須多神社 (26), 揖夜神社 (27), **同社坐韓国伊大弖神社** (28),
+**筑陽神社** (29), 同社坐波夜都武自和気神社 (30). The 同社坐 entries are 境内社 — shrines standing
+*inside* another shrine's grounds. The Kokugakuin ids agree: 182800 at 26, 182801 at 27, 182802 on
+筑陽神社, 182803 at 30.
+
+So `Q135040786` belongs at **28 only**. Its statement at 29 is spurious, and ordinal 29 currently
+holds two entries — it and `Q135040787` 筑陽神社, which is the right one.
+
+*Fix: delete the list's `has part` → `Q135040786` statement carrying ordinal 29. Nothing else.*
+
+### Awa: a piped link stole entry 3
+
+`安房国の式内社一覧` runs: 安房坐神社 (1), 后神天比理乃咩命神社 (2), **天神社** (3), 莫越山神社 (4),
+**下立松原神社** (5), 高家神社 (6). Entry 3's identified shrine is written as a **piped link** —
+`[[下立松原神社#白浜町の下立松原神社|下立松原神社]]` — and the import followed the link instead of the
+bold entry name. This is precisely the damage Emma described: *"a shrine that was part of another
+shrine ended up getting piped in."*
+
+The Kokugakuin ids prove it. Awa runs 181733 (2), then **181736** at 3, 181735 at 4, **181736**
+again at 5, 181737 at 6. **181734 is missing entirely** — and it is held by
+[Q137041912](https://www.wikidata.org/wiki/Q137041912) **天神社**, a complete entry item
+(`Shikinaisha`, Kokugakuin id 181734) which carries **no list membership at all**. Its slot was taken.
+
+*Fix, in two halves:*
+
+* **The add, queued** in `miscellaneous_edits.txt`: `Q11450714|P527|Q137041912|P1545|"3"`.
+* **The removal, by hand**: delete the list's `has part` → `Q11361262` statement carrying ordinal 3.
+  It cannot be a QuickStatement — two statements share the value `Q11361262`, so a value-matched
+  removal is as likely to take the correct one at ordinal 5.
+
+### A second guard, because the add lands before the removal
+
+Once `天神社` is added, ordinal 3 holds two entries until the hand fix happens. `contested_entries()`
+now withholds every entry sharing an ordinal with a different entry — a position holding two entries
+is not a position. It withholds `Q135040787` 筑陽神社 too, which *is* correct, because the list read
+alone cannot say so. Three entries are currently unplaceable and the batch is 5,635 lines. Eleven
+tests pin both guards.
+
+**The damage already exists on Wikidata, from the original import, not from us.** `Q11361262` carries
+two `part of` statements to the Awa list, ordinals 3 and 5, *each* with two `follows` and two
+`followed by` values. Our lines carry references; these have none. The batch has never run —
 `conflict_gate` has been closed — which is the only reason we did not add to it.
-
-*Recommendation: leave the live statements alone (a value-matched removal is exactly the wrong tool
-here) and fix the two list items by hand, since the list is what is wrong. Two items.*
 
 ## 2. Thirteen named entries with no Kokugakuin id — and four of them never could have one
 

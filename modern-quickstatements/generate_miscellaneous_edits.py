@@ -98,6 +98,17 @@ STATIC_EDITS = [
     # being a class count. Verified 2026-07-10.
     ("Q11420254", "P527", 'Q11474068|P1545|"7"',
      "the Inaba list's entry 7 (岩井温泉) lost its series ordinal"),
+
+    # The Awa register's entry 3 is 天神社. The jawiki list gives its identified shrine as
+    # a PIPED link, [[下立松原神社#白浜町の下立松原神社|下立松原神社]], and the import took the
+    # link instead of the entry name — so `Q11361262` 下立松原神社 sits at ordinal 3, which
+    # is not its slot (it is entry 5, and it is there too). `Q137041912` 天神社 is a complete
+    # entry item — Shikinaisha, Kokugakuin id 181734, the id the sequence skips — with no
+    # list membership at all. This is the ADD half; removing the statement that stole the
+    # slot needs statement-level targeting, which QuickStatements cannot do (two statements
+    # share the value `Q11361262`), so it is a hand fix on the list item.
+    ("Q11450714", "P527", 'Q137041912|P1545|"3"',
+     "the Awa list's entry 3 is 天神社, not 下立松原神社 (a piped link was imported)"),
 ]
 
 # ── 2. wrong addresses on Shikinai Ronsha ───────────────────────────────────

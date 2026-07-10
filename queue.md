@@ -154,10 +154,16 @@ clean them. Emma 2026-07-10: **report only, leave them.**
 
 Three defects run down 2026-07-10 — `docs/engishiki_list_defects_2026-07.md`:
 
-- [ ] **Two list items name an entry TWICE** (Izumo names `Q135040786` at 28 *and* 29; Awa names
-  `Q11361262` at 3 *and* 5). Script 1 was emitting rival ordinals onto one statement — **fixed**,
-  it now refuses them (6 tests, batch 5,643 → 5,637 lines). The bad statements already exist live
-  from the original import. The *list* is what is wrong; fix the two list items by hand.
+- [ ] **Two hand fixes on list items** — each deletes ONE `has part` statement, which QuickStatements
+  cannot target (two statements share the value, so a value-matched removal could take the good one).
+  Diagnosed against the jawiki source articles; the adds are already queued.
+  * **Izumo `Q11395853`**: delete `has part` → `Q135040786` with ordinal **29**. It is entry 28 (a
+    境内社 of 揖夜神社); entry 29 is 筑陽神社. Spurious statement, nothing to add.
+  * **Awa `Q11450714`**: delete `has part` → `Q11361262` with ordinal **3**. Entry 3 is 天神社; a
+    piped link `[[下立松原神社#…|下立松原神社]]` was imported instead. The add of
+    `Q137041912` 天神社 at ordinal 3 is queued in `miscellaneous_edits.txt`.
+  Script 1 emits nothing for the three entries involved until these land (`ambiguous_entries` +
+  `contested_entries`, 11 tests, batch 5,635 lines).
 - **`Q11474068` 岩井温泉 — DONE, and the previous tick's recommendation was WRONG.** The onsen's
   classes are correct: the Inaba list's entry 6 is 二上山, a *mountain*, carrying the same
   `Shikinaisha` + `Shinto shrine` classes. Where the register's shrine is identified with a natural

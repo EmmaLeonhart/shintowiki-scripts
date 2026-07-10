@@ -92,6 +92,40 @@ def test_the_neighbours_of_other_entries_are_unaffected_by_a_duplicate():
     assert nb["Qb"] == ("Qdup", "Qdup")
 
 
+# ─────────────── an ordinal held by two entries is not a position ───────────────
+
+def test_two_entries_at_one_ordinal_are_both_contested():
+    """Live: Izumo puts 同社坐韓国伊大弖神社 and 筑陽神社 both at ordinal 29."""
+    members = [("Qa", "28"), ("Qa", "29"), ("Qb", "29"), ("Qc", "30")]
+    assert rb.contested_entries(members) == {"Qa", "Qb"}
+
+
+def test_the_correct_entry_is_withheld_too():
+    """筑陽神社 really is entry 29 — but the list, read alone, cannot say so."""
+    members = [("Qgood", "3"), ("Qthief", "3")]
+    assert rb.contested_entries(members) == {"Qgood", "Qthief"}
+
+
+def test_one_entry_per_ordinal_is_not_contested():
+    assert rb.contested_entries([("Qa", "1"), ("Qb", "2")]) == set()
+
+
+def test_the_same_entry_twice_at_one_ordinal_is_not_contested():
+    """A duplicated has-part statement is not two entries fighting over a slot."""
+    assert rb.contested_entries([("Qa", "1"), ("Qa", "1")]) == set()
+
+
+def test_unemittable_is_the_union_of_both_defects():
+    members = [("Qdup", "3"), ("Qdup", "5"), ("Qx", "5")]
+    assert rb.ambiguous_entries(members) == {"Qdup"}
+    assert rb.contested_entries(members) == {"Qdup", "Qx"}
+    assert rb.unemittable_entries(members) == {"Qdup", "Qx"}
+
+
+def test_a_clean_list_has_nothing_unemittable():
+    assert rb.unemittable_entries([("Qa", "1"), ("Qb", "2"), ("Qc", "3")]) == set()
+
+
 # ─────────────────────── neighbours derived from the list ───────────────────────
 
 def test_neighbours_come_from_the_lists_own_order():

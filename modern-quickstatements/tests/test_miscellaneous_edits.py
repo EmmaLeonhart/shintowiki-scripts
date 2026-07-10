@@ -98,6 +98,42 @@ def test_the_daily_editor_parses_the_ordinal_line_as_a_qualified_add():
     assert not p["is_removal"]
 
 
+# ─────────────────────── the Awa list's stolen slot ───────────────────────
+
+def _awa():
+    got = [e for e in misc.STATIC_EDITS if e[0] == "Q11450714"]
+    assert len(got) == 1
+    return got[0]
+
+
+def test_the_awa_list_gets_tenjinsha_at_ordinal_three():
+    qid, prop, value, _why = _awa()
+    assert (qid, prop) == ("Q11450714", "P527")
+    assert value == 'Q137041912|P1545|"3"'
+
+
+def test_the_thief_is_not_removed_here():
+    """Two statements share the value Q11361262, so a value-matched removal could take the
+    correct one at ordinal 5. The removal is a hand fix; this file only adds."""
+    lines, _ = misc.build(_ent({}))
+    assert not any("Q11361262" in l for l in lines)
+
+
+def test_the_awa_add_is_an_add():
+    qid, prop, value, _why = _awa()
+    line = misc.qs_line(qid, prop, value)
+    assert not line.startswith("-")
+    misc.assert_removals_enumerated([line])
+
+
+def test_the_daily_editor_parses_the_awa_line():
+    qid, prop, value, _why = _awa()
+    p = dde.parse_qs_line(misc.qs_line(qid, prop, value))
+    assert p["value"]["value"]["id"] == "Q137041912"
+    assert dict(p["qualifiers"])["P1545"]["value"] == "3"
+    assert not p["is_removal"]
+
+
 # ─────────────────────── Kikuna targeting ───────────────────────
 
 def test_restoration_targets_our_item_not_the_husk():

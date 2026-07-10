@@ -151,11 +151,34 @@ def ambiguous_entries(members):
     return {e for e, os in ordinals.items() if len(os) > 1}
 
 
+def contested_entries(members):
+    """Entries sharing an ordinal with a DIFFERENT entry. Never emit a line for these.
+
+    One live case (2026-07-10): the Izumo list puts both `Q135040786` 同社坐韓国伊大弖神社
+    and `Q135040787` 筑陽神社 at ordinal 29. The register says 29 is 筑陽神社; the 韓国伊大弖
+    entry belongs only at 28, where it also sits. So one of the two is wrong, and reading
+    the list cannot say which — a position holding two entries is not a position.
+
+    The Awa list has the mirror case: ordinal 3 will hold both `Q11361262`, which stole the
+    slot, and `Q137041912` 天神社, which the register actually names there, until the bad
+    statement is removed by hand.
+    """
+    by_ordinal = collections.defaultdict(set)
+    for e, o in members:
+        by_ordinal[o].add(e)
+    return {e for es in by_ordinal.values() if len(es) > 1 for e in es}
+
+
+def unemittable_entries(members):
+    """Every entry this list cannot place: named at two ordinals, or sharing one."""
+    return ambiguous_entries(members) | contested_entries(members)
+
+
 def neighbours(members):
     """{entry: (previous_entry, next_entry)} from the list's own ordering.
 
     An entry the list names twice gets the neighbours of its LAST position. That is only
-    safe because `ambiguous_entries()` excludes such entries from emission entirely.
+    safe because `unemittable_entries()` excludes such entries from emission entirely.
     """
     out = {}
     for i, (e, _o) in enumerate(members):
@@ -257,12 +280,12 @@ def main():
     print("{} entry items fetched".format(len(entry_ents)))
 
     lines, skipped_multi_kid, already = [], 0, 0
-    ambiguous = []
+    unplaceable = []
     for l in lists:
         members = members_by_list[l]
         nb = neighbours(members)
-        ambig = ambiguous_entries(members)
-        ambiguous.extend((l, e) for e in sorted(ambig))
+        ambig = unemittable_entries(members)
+        unplaceable.extend((l, e) for e in sorted(ambig))
         sl = (list_ents[l].get("sitelinks") or {}).get("jawiki", {}).get("title")
         list_url = ("https://ja.wikipedia.org/wiki/" +
                     urllib.parse.quote(sl.replace(" ", "_"))) if sl else None
@@ -294,9 +317,9 @@ def main():
     print("\n{} entries already complete".format(already))
     print("{} entries carry several Kokugakuin ids (no database reference emitted)".format(
         skipped_multi_kid))
-    print("{} entries are named at more than one ordinal — NOTHING emitted for them:".format(
-        len(ambiguous)))
-    for l, e in ambiguous:
+    print("{} entries the list cannot place — NOTHING emitted for them:".format(
+        len(unplaceable)))
+    for l, e in unplaceable:
         print("    {} in {}".format(e, l))
     print("{} lines -> {}".format(len(lines), path))
     return 0
