@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — drained two cloud-answered category translations
+
+`collect_category_translations.py --apply` folded two finished RAG answers into
+`category_moves.csv` (consumed monthly by `move_categories`) and deleted their work files:
+提灯 → Chōchin, 東京開成学校 → Tokyo Kaisei School. Both check out — a paper-lantern loanword kept
+romanised, and the standard English name of the historical Tokyo University predecessor. 373
+category work-files remain out for cloud answers; the other three cloud queues (description
+enrichment 235, label-typo 157→ pending, ronsha rankings 35) returned nothing new this tick.
+
+---
+
 ## 2026-07-10 — two more dead batches: the editor could not parse tab-separated QS
 
 Yesterday's dead-batch finding (remove_junk_aliases) was one symptom of a general question I had
