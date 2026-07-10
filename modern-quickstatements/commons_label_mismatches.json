@@ -19,6 +19,24 @@
    "enwiki": "Aichi Gokoku Shrine"
   },
   {
+   "qid": "Q10863796",
+   "commons": "Category:Ichinomiya nukisaki-jinja",
+   "candidate": "Ichinomiya nukisaki Shrine",
+   "enwiki": "Nukisaki Shrine"
+  },
+  {
+   "qid": "Q10877366",
+   "commons": "Category:Niukawakami-jinja Kamisha",
+   "candidate": "Niukawakami-jinja Kami-sha Shrine",
+   "enwiki": "Niukawakami Upper Shrine"
+  },
+  {
+   "qid": "Q10877367",
+   "commons": "Category:Niukawakami-jinja Shimosha",
+   "candidate": "Niukawakami-jinja Shimo-sha Shrine",
+   "enwiki": "Niukawakami Lower Shrine"
+  },
+  {
    "qid": "Q195684",
    "commons": "Category:Iyahiko-jinja",
    "candidate": "Iyahiko Shrine",
@@ -55,6 +73,18 @@
    "enwiki": "Rokusonnō Shrine"
   },
   {
+   "qid": "Q3090870",
+   "commons": "Category:Funabashi-daijingū",
+   "candidate": "Funabashi Daijingu",
+   "enwiki": "Ōhi Shrine"
+  },
+  {
+   "qid": "Q10946254",
+   "commons": "Category:Utsunomiya Futaarayama-jinja",
+   "candidate": "Utsunomiya Futaarayama Shrine",
+   "enwiki": "Utsunomiya Futarayama Shrine"
+  },
+  {
    "qid": "Q888184",
    "commons": "Category:Hinokuma-jingu Kunikakasu-jingu",
    "candidate": "Hinokuma-jingu Kunikakasu Grand Shrine",
@@ -73,28 +103,64 @@
    "enwiki": "Fushimi Sanpō Inari Shrine"
   },
   {
-   "qid": "Q3090870",
-   "commons": "Category:Funabashi-daijingū",
-   "candidate": "Funabashi Daijingu",
-   "enwiki": "Ōhi Shrine"
+   "qid": "Q521319",
+   "commons": "Category:Takekoma-jinja",
+   "candidate": "Takekoma Shrine",
+   "enwiki": "Takekoma Inari Shrine"
   },
   {
-   "qid": "Q10863796",
-   "commons": "Category:Ichinomiya nukisaki-jinja",
-   "candidate": "Ichinomiya nukisaki Shrine",
-   "enwiki": "Nukisaki Shrine"
+   "qid": "Q546197",
+   "commons": "Category:Omiwa-jinja (Ichinomiya)",
+   "candidate": "Omiwa Shrine",
+   "enwiki": "Ōmiwa Shrine, Ichinomiya"
   },
   {
-   "qid": "Q10877366",
-   "commons": "Category:Niukawakami-jinja Kamisha",
-   "candidate": "Niukawakami-jinja Kami-sha Shrine",
-   "enwiki": "Niukawakami Upper Shrine"
+   "qid": "Q704636",
+   "commons": "Category:Naminoue-gū",
+   "candidate": "Naminōe-gu Shrine",
+   "enwiki": "Naminoue Shrine"
   },
   {
-   "qid": "Q10877367",
-   "commons": "Category:Niukawakami-jinja Shimosha",
-   "candidate": "Niukawakami-jinja Shimo-sha Shrine",
-   "enwiki": "Niukawakami Lower Shrine"
+   "qid": "Q704865",
+   "commons": "Category:Hida-ichinomiya Minashi-jinja",
+   "candidate": "Hida-ichinomiya Minashi Shrine",
+   "enwiki": "Minashi Shrine"
+  },
+  {
+   "qid": "Q3342246",
+   "commons": "Category:Niukanshoubu-jinja",
+   "candidate": "Niukanshōbu Shrine",
+   "enwiki": "Niukanshōfu Shrine"
+  },
+  {
+   "qid": "Q3439900",
+   "commons": "Category:Rokusho-jinja (Okazaki)",
+   "candidate": "Rokusho Shrine",
+   "enwiki": "Rokusho Shrine, Okazaki"
+  },
+  {
+   "qid": "Q3473746",
+   "commons": "Category:Saruga shrine",
+   "candidate": "Saruga Shrine",
+   "enwiki": "Saruka Shrine"
+  },
+  {
+   "qid": "Q3571318",
+   "commons": "Category:Yaho Temman-gū",
+   "candidate": "Yaho Temman-gu Shrine",
+   "enwiki": "Yabo Tenmangū"
+  },
+  {
+   "qid": "Q11643733",
+   "commons": "Category:Tsubaki Nakato-jinja",
+   "candidate": "Tsubaki Nakato Shrine",
+   "enwiki": "Tsubaki Shrine"
+  },
+  {
+   "qid": "Q3547609",
+   "commons": "Category:Ubagami Daijin-gū",
+   "candidate": "Ubagami Daijin-gu Shrine",
+   "enwiki": "Ubagami Daijingū"
   },
   {
    "qid": "Q3136198",
@@ -103,22 +169,316 @@
    "enwiki": "Hirasaki Shrine"
   },
   {
-   "qid": "Q10946254",
-   "commons": "Category:Utsunomiya Futaarayama-jinja",
-   "candidate": "Utsunomiya Futaarayama Shrine",
-   "enwiki": "Utsunomiya Futarayama Shrine"
-  },
-  {
    "qid": "Q11395802",
    "commons": "Category:Ideha-jinja",
    "candidate": "Ideha Shrine",
    "enwiki": "Dewa Shrine"
   },
   {
-   "qid": "Q3571318",
-   "commons": "Category:Yaho Temman-gū",
-   "candidate": "Yaho Temman-gu Shrine",
-   "enwiki": "Yabo Tenmangū"
+   "qid": "Q11413133",
+   "commons": "Category:Kishibe-jinja",
+   "candidate": "Kishibe Shrine",
+   "enwiki": "Kishibe Tile Kiln Site"
+  },
+  {
+   "qid": "Q11652880",
+   "commons": "Category:Nagasakiken-Gokoku-jinja",
+   "candidate": "Nagasakiken-Gokoku Shrine",
+   "enwiki": "Nagasaki Gokoku Shrine"
+  },
+  {
+   "qid": "Q20982935",
+   "commons": "Category:Sengen Shrine (Nishi-ku, Nagoya)",
+   "candidate": "Sengen Shrine",
+   "enwiki": "Fuji Sengen Shrine (Nishi-ku, Nagoya)"
+  },
+  {
+   "qid": "Q21449537",
+   "commons": "Category:Kuskus Shrine",
+   "candidate": "Kuskus Shrine",
+   "enwiki": "Gaoshi Shrine"
+  },
+  {
+   "qid": "Q11456842",
+   "commons": "Category:Toyamaken-Gokoku-jinja",
+   "candidate": "Toyamaken-Gokoku Shrine",
+   "enwiki": "Toyama Gokoku Shrine"
+  },
+  {
+   "qid": "Q11483206",
+   "commons": "Category:Heisenji",
+   "candidate": "Heisen-ji Temple",
+   "enwiki": "Heisenji Hakusan Shrine"
+  },
+  {
+   "qid": "Q133857952",
+   "commons": "Category:Tientsin Shrine",
+   "candidate": "Tientsin Shrine",
+   "enwiki": "Tianjin Shrine"
+  },
+  {
+   "qid": "Q11535030",
+   "commons": "Category:Kakimoto-jinja (Akashi)",
+   "candidate": "Kakimoto Shrine",
+   "enwiki": "Kakinomoto Shrine (Akashi)"
+  },
+  {
+   "qid": "Q11572731",
+   "commons": "Category:Tamanooya-jinja",
+   "candidate": "Tamanōya Shrine",
+   "enwiki": "Tamanooya Jinja"
+  },
+  {
+   "qid": "Q1627016",
+   "commons": "Category:Higashi Honganji",
+   "candidate": "Higashi Hongan-ji Temple",
+   "enwiki": "Hongan-ji"
+  },
+  {
+   "qid": "Q1741668",
+   "commons": "Category:Kinpusenji",
+   "candidate": "Kinpusen-ji Temple",
+   "enwiki": "Kimpusen-ji"
+  },
+  {
+   "qid": "Q1760419",
+   "commons": "Category:Risshaku-ji",
+   "candidate": "Risshaku-ji Temple",
+   "enwiki": "Yama-dera"
+  },
+  {
+   "qid": "Q2380134",
+   "commons": "Category:Zenrinji Eikando",
+   "candidate": "Zenrinji Eikan-do Temple",
+   "enwiki": "Eikan-dō Zenrin-ji"
+  },
+  {
+   "qid": "Q3201314",
+   "commons": "Category:Kōshō-ji (Nagoya)",
+   "candidate": "Kōshō-ji Temple",
+   "enwiki": "Kōshō-ji, Nagoya"
+  },
+  {
+   "qid": "Q285602",
+   "commons": "Category:Higashi Hongan-ji Hakodate Betsuin",
+   "candidate": "Higashi Hongan-ji Hakodate Betsu-in Temple",
+   "enwiki": "Ōtani Hongan-ji Hakodate Betsu-in"
+  },
+  {
+   "qid": "Q3192708",
+   "commons": "Category:Jigen-ji Kannon-in",
+   "candidate": "Jigen-ji Kannon-in Temple",
+   "enwiki": "Kannon-in"
+  },
+  {
+   "qid": "Q3197507",
+   "commons": "Category:Kichijoji (Bunkyo, Tokyo)",
+   "candidate": "Kichijo-ji Temple",
+   "enwiki": "Kisshō-ji"
+  },
+  {
+   "qid": "Q3342007",
+   "commons": "Category:Ninja-dera",
+   "candidate": "Ninja-dera Temple",
+   "enwiki": "Myōryū-ji"
+  },
+  {
+   "qid": "Q2963263",
+   "commons": "Category:Senyō-ji (Chuo-ku, Chiba)",
+   "candidate": "Senyō-ji Temple",
+   "enwiki": "Chiba-dera"
+  },
+  {
+   "qid": "Q11370077",
+   "commons": "Category:Joshin-ji (Setagaya)",
+   "candidate": "Joshin-ji Temple",
+   "enwiki": "Kuhonbutsu Jōshin-ji"
+  },
+  {
+   "qid": "Q11378194",
+   "commons": "Category:Sen'yū-ji",
+   "candidate": "Sen'yū-ji Temple",
+   "enwiki": "Senyū-ji (Imabari)"
+  },
+  {
+   "qid": "Q11386255",
+   "commons": "Category:Gyokuzoin (Heguri, Nara)",
+   "candidate": "Gyokuzo-in Temple",
+   "enwiki": "Shigisan Gyokuzōin"
+  },
+  {
+   "qid": "Q11092571",
+   "commons": "Category:Chyogosonshiji",
+   "candidate": "Chyogosonshi-ji Temple",
+   "enwiki": "Chōgosonshi-ji"
+  },
+  {
+   "qid": "Q3518099",
+   "commons": "Category:Tori-Tenjyo-ji",
+   "candidate": "Tori-Tenjyo-ji Temple",
+   "enwiki": "Tenjō-ji"
+  },
+  {
+   "qid": "Q3128068",
+   "commons": "Category:Hase-dera (Atsugi, Kanagawa)",
+   "candidate": "Hase-dera Temple",
+   "enwiki": "Iiyama Kannon"
+  },
+  {
+   "qid": "Q3571897",
+   "commons": "Category:Kongō-ji (Kyoto)",
+   "candidate": "Kongō-ji Temple",
+   "enwiki": "Yasaka Kōshin-dō"
+  },
+  {
+   "qid": "Q3575218",
+   "commons": "Category:Zenkō-ji Anjō-in (Inabadori, Gifu)",
+   "candidate": "Zenkō-ji Anjō-in Temple",
+   "enwiki": "Zenkō-ji (Gifu)"
+  },
+  {
+   "qid": "Q3576268",
+   "commons": "Category:Zuiryō-ji (Gifu)",
+   "candidate": "Zuiryō-ji Temple",
+   "enwiki": "Zuiryū-ji (Gifu)"
+  },
+  {
+   "qid": "Q3594043",
+   "commons": "Category:Onodera",
+   "candidate": "Ono-dera Temple",
+   "enwiki": "Ōno-ji"
+  },
+  {
+   "qid": "Q3482457",
+   "commons": "Category:Shōnen-ji (Takachiho)",
+   "candidate": "Shōnen-ji Temple",
+   "enwiki": "Shonenji Temple, Takachiho"
+  },
+  {
+   "qid": "Q3095172",
+   "commons": "Category:Gankei-ji",
+   "candidate": "Gankei-ji Temple",
+   "enwiki": "Gangyō-ji"
+  },
+  {
+   "qid": "Q1072538",
+   "commons": "Category:Sanzen'in",
+   "candidate": "Sanzen'-in Temple",
+   "enwiki": "Sanzen-in"
+  },
+  {
+   "qid": "Q1072965",
+   "commons": "Category:Hojyuji (Kyoto, Kyoto)",
+   "candidate": "Hojyu-ji Temple",
+   "enwiki": "Hōjūjidono"
+  },
+  {
+   "qid": "Q11641897",
+   "commons": "Category:Daruma-ji (Takasaki)",
+   "candidate": "Daruma-ji Temple",
+   "enwiki": "Shorinzan Daruma Temple"
+  },
+  {
+   "qid": "Q11641901",
+   "commons": "Category:Takkoku-no-iwaya Bishamon-dō",
+   "candidate": "Takkoku-no-iwaya Bishamon-do Temple",
+   "enwiki": "Takkoku-no-Iwaya"
+  },
+  {
+   "qid": "Q3138262",
+   "commons": "Category:Ōfuna Kannon-ji",
+   "candidate": "Ōfuna Kannon-ji Temple",
+   "enwiki": "Ōfuna Kannon"
+  },
+  {
+   "qid": "Q11428052",
+   "commons": "Category:Hōon-in",
+   "candidate": "Hōon-in Temple",
+   "enwiki": "Hōon'in"
+  },
+  {
+   "qid": "Q20983125",
+   "commons": "Category:Shōman-ji (Nagoya)",
+   "candidate": "Shōman-ji Temple",
+   "enwiki": "Shōman-ji, Nagoya"
+  },
+  {
+   "qid": "Q24864158",
+   "commons": "Category:Raizan-Sennyoji",
+   "candidate": "Raizan-Sennyo-ji Temple",
+   "enwiki": "Sennyo-ji"
+  },
+  {
+   "qid": "Q28692387",
+   "commons": "Category:Shōjū-in (Tokoname)",
+   "candidate": "Shōjū-in Temple",
+   "enwiki": "Shōjū-in, Tokoname"
+  },
+  {
+   "qid": "Q11679196",
+   "commons": "Category:Ryūkō-ji (Uwajima)",
+   "candidate": "Ryūkō-ji Temple",
+   "enwiki": "Ryuukou-ji"
+  },
+  {
+   "qid": "Q11474382",
+   "commons": "Category:Iwaya-ji (Kumakōgen)",
+   "candidate": "Iwaya-ji Temple",
+   "enwiki": "Iwaya-ji, Ehime"
+  },
+  {
+   "qid": "Q17218754",
+   "commons": "Category:Yanaka Tenno-ji",
+   "candidate": "Yanaka Tenno-ji Temple",
+   "enwiki": "Tennō-ji (Taitō)"
+  },
+  {
+   "qid": "Q54152981",
+   "commons": "Category:Komyoji Rurikoin",
+   "candidate": "Komyoji Ruriko-in Temple",
+   "enwiki": "Rurikō-in"
+  },
+  {
+   "qid": "Q11529611",
+   "commons": "Category:Matsunoo-dera (Maizuru)",
+   "candidate": "Matsunō-dera Temple",
+   "enwiki": "Matsunoo-dera"
+  },
+  {
+   "qid": "Q11545558",
+   "commons": "Category:Iwama-dera",
+   "candidate": "Iwama-dera Temple",
+   "enwiki": "Shōhō-ji (Ōtsu)"
+  },
+  {
+   "qid": "Q11560913",
+   "commons": "Category:Kiyomizudera (Kato)",
+   "candidate": "Kiyomizu-dera Temple",
+   "enwiki": "Banshū Kiyomizu-dera"
+  },
+  {
+   "qid": "Q11561306",
+   "commons": "Category:Kiyotaki-dera",
+   "candidate": "Kiyotaki-dera Temple",
+   "enwiki": "Kiyotaki-ji (Tsuchiura)"
+  },
+  {
+   "qid": "Q11555353",
+   "commons": "Category:Hōkanji",
+   "candidate": "Hōkan-ji Temple",
+   "enwiki": "Yasaka Pagoda"
+  },
+  {
+   "qid": "Q97206336",
+   "commons": "Category:Nanzō-in (Higashi-Mizumoto, Katsushika)",
+   "candidate": "Nanzō-in Temple",
+   "enwiki": "Tōsen-ji"
+  },
+  {
+   "qid": "Q11630596",
+   "commons": "Category:Kannonji (Higashiyama-ku, Kyoto)",
+   "candidate": "Kannon-ji Temple",
+   "enwiki": "Imakumano Kannon-ji"
   }
  ],
  "rejected": [
@@ -133,14 +493,14 @@
    "enwiki": "Kasugayama Primeval Forest"
   },
   {
-   "qid": "Q5507355",
-   "commons": "Category:Fuji Sengen Shrine (Naka-ku, Nagoya)",
-   "enwiki": "Fuji Sengen Shrine (Naka-ku, Nagoya)"
-  },
-  {
    "qid": "Q6102414",
    "commons": "Category:Izumo Taishakyo Mission of Hawaii",
    "enwiki": "Izumo Taishakyo Mission of Hawaii"
+  },
+  {
+   "qid": "Q10885171",
+   "commons": "Category:Izawa-no-miya",
+   "enwiki": "Izawa-no-miya"
   },
   {
    "qid": "Q717682",
@@ -153,24 +513,9 @@
    "enwiki": "Tsubaki Grand Shrine of America"
   },
   {
-   "qid": "Q6958481",
-   "commons": "Category:Nagao-jinja (Katsuragi, Nara)",
-   "enwiki": "Nagao Shrine"
-  },
-  {
    "qid": "Q7797685",
    "commons": "Category:Imperial Palace Sanctuaries",
    "enwiki": "Three Palace Sanctuaries"
-  },
-  {
-   "qid": "Q2868748",
-   "commons": "Category:Atago-jinja (Minato, Tokyo)",
-   "enwiki": "Atago Shrine (Tokyo)"
-  },
-  {
-   "qid": "Q10885171",
-   "commons": "Category:Izawa-no-miya",
-   "enwiki": "Izawa-no-miya"
   },
   {
    "qid": "Q3571407",
@@ -178,9 +523,94 @@
    "enwiki": "Yamada Tenmangū"
   },
   {
-   "qid": "Q11381867",
-   "commons": "Category:Sumiyoshi-jinja (Otaru, Hokkaido)",
-   "enwiki": "Sumiyoshi Shrine (Hokkaidō)"
+   "qid": "Q3541617",
+   "commons": "Category:Tsubaki Ōkami Yashiro",
+   "enwiki": "Tsubaki Grand Shrine"
+  },
+  {
+   "qid": "Q11434174",
+   "commons": "Category:Odara-Yosemiya site",
+   "enwiki": "Ōdara Yosemiya"
+  },
+  {
+   "qid": "Q11581011",
+   "commons": "Category:Naiku",
+   "enwiki": "Kotai jingu"
+  },
+  {
+   "qid": "Q11633343",
+   "commons": "Category:Geku",
+   "enwiki": "Toyouke Daijingu"
+  },
+  {
+   "qid": "Q3193655",
+   "commons": "Category:Kasadera Kannon",
+   "enwiki": "Kasadera Kannon"
+  },
+  {
+   "qid": "Q2859467",
+   "commons": "Category:Arako Kannon",
+   "enwiki": "Arako Kannon"
+  },
+  {
+   "qid": "Q3547078",
+   "commons": "Category:Tanemakidaishi",
+   "enwiki": "Tōrin-in (Naruto)"
+  },
+  {
+   "qid": "Q3137192",
+   "commons": "Category:Shibamata Taishakuten",
+   "enwiki": "Shibamata Taishakuten"
+  },
+  {
+   "qid": "Q3080596",
+   "commons": "Category:Toyokawa Inari",
+   "enwiki": "Toyokawa Inari"
+  },
+  {
+   "qid": "Q11655359",
+   "commons": "Category:Mama Kannon",
+   "enwiki": "Mama Kannon"
+  },
+  {
+   "qid": "Q1504465",
+   "commons": "Category:Kawasaki Daishi",
+   "enwiki": "Kawasaki Daishi"
+  },
+  {
+   "qid": "Q1621882",
+   "commons": "Category:Sendai Daikannon",
+   "enwiki": "Sendai Daikannon"
+  },
+  {
+   "qid": "Q11489138",
+   "commons": "Category:Ohashi Kannon",
+   "enwiki": "Ohashi Kannon-ji"
+  },
+  {
+   "qid": "Q11571731",
+   "commons": "Category:Sayama Fudoson",
+   "enwiki": "Sayama Fudōson"
+  },
+  {
+   "qid": "Q11590468",
+   "commons": "Category:Shinsenen",
+   "enwiki": "Shinsenen"
+  },
+  {
+   "qid": "Q11563955",
+   "commons": "Category:Todoroki Fudo-son",
+   "enwiki": "Mangan-ji (Setagaya)"
+  },
+  {
+   "qid": "Q11594359",
+   "commons": "Category:Fukuishi Kannon",
+   "enwiki": "Fukuishi Kannon"
+  },
+  {
+   "qid": "Q102769019",
+   "commons": "Category:Gikousan Yanodou",
+   "enwiki": "Gikosan Yanodo Temple"
   }
  ]
 }

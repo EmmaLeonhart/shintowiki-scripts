@@ -57,8 +57,8 @@ def _strip(name: str) -> str:
     """Drop 'Category:', a comma-disambiguator (", Nagasaki"), and bracketed disambiguators."""
     if name.startswith("Category:"):
         name = name[len("Category:"):]
-    name = name.split(",")[0]                 # ", Nagasaki" / ", Akasaka" etc.
-    name = _BRACKETS.sub("", name)
+    name = _BRACKETS.sub("", name)            # brackets first: "(Naka-ku, Nagoya)" has a comma
+    name = name.split(",")[0]                  # then a bare ", Nagasaki" / ", Akasaka"
     return re.sub(r"\s+", " ", name).strip()
 
 

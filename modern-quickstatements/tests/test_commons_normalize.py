@@ -117,6 +117,12 @@ def test_hyphenated_shrine_word_is_handled():
     assert cn.normalize("Kumano-Nachi-shrine") == "Kumano-Nachi Shrine"
 
 
+def test_a_parenthetical_containing_a_comma_is_stripped_before_the_comma_split():
+    # "(Naka-ku, Nagoya)" — the comma is INSIDE the bracket; strip the bracket first
+    assert cn.normalize("Fuji Sengen Shrine (Naka-ku, Nagoya)") == "Fuji Sengen Shrine"
+    assert cn.normalize("Nagao-jinja (Katsurao, Fukushima)") == "Nagao Shrine"
+
+
 def test_daijingu_is_not_split_into_dai_plus_jingu():
     assert cn.normalize("Izumo-daijingū") == "Izumo Daijingu"
 
