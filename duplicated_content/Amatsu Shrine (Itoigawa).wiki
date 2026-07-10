@@ -124,89 +124,89 @@
 [[Category:Kokuhei-sha]]{{translated page|ja|天津神社 (糸魚川市)|version=107331264|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
 {{神社
-|名称   = 天津神社
-|画像   = [[File:Amatsu-jinja (Itoigawa), haiden.jpg|270px]]<br/>拝殿
-|所在地 = {{jalink|新潟県|Q132705}}{{jalink|糸魚川市|Q857208}}一の宮1-3-34
-|位置   = {{ウィキ座標2段度分秒|37|2|24.54|N|137|51|51.21|E|display=ti|region:JP|name=天津神社}}
-|祭神   = {{jalink|ニニギ|Q1056017|天津彦々火瓊々杵尊}}<br/>{{jalink|天児屋根命}}<br/>{{jalink|天太玉命}}
-|社格   = {{jalink|式内社}}（小）{{jalink|論社|Q135022904}}<br/>（称）{{jalink|越後国|Q666514}}{{jalink|一宮|Q1656379}}<br/>旧{{jalink|県社}}
-|創建   = （伝）{{jalink|景行天皇|Q329723}}年間
-|本殿   = {{jalink|入母屋造|Q855025}}銅板葺
-|別名   = 一の宮
-|札所等 = 
-|例祭   = {{jalink|4月10日|Q2502}}・{{jalink|10月24日|Q2955}}
-|神事   = 
-|地図 = {{Location map|Japan Niigata|label=天津神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
+|name              = Amatsu Shrine
+|image             = [[File:Amatsu-jinja (Itoigawa), haiden.jpg|270px]]<br/>Worship hall (haiden)
+|address           = {{jalink|新潟県|Q132705}}{{jalink|糸魚川市|Q857208}} Ichinomiya 1-3-34
+|coordinates       = {{ウィキ座標2段度分秒|37|2|24.54|N|137|51|51.21|E|display=ti|region:JP|name=天津神社}}
+|deity             = {{jalink|ニニギ|Q1056017|天津彦々火瓊々杵尊}}<br/>{{jalink|天児屋根命}}<br/>{{jalink|天太玉命}}
+|shrine-rank       = {{jalink|式内社}} (minor) {{jalink|論社|Q135022904}}<br/>(claimed) {{jalink|越後国|Q666514}} {{jalink|一宮|Q1656379}}<br/>Former {{jalink|県社}}
+|founded           = (traditional) During the reign of {{jalink|景行天皇|Q329723}}
+|main-hall         = {{jalink|入母屋造|Q855025}} with copper-plate roof
+|alternative-name  = Ichinomiya
+|pilgrimage-sites  =
+|annual-festival   = {{jalink|4月10日|Q2502}} / {{jalink|10月24日|Q2955}}
+|ceremonies        =
+|map               = {{Location map|Japan Niigata|label=天津神社|position=bottom|width=200|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
 {{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=200|frame-height=200}}
 }}
-'''天津神社'''（あまつじんじゃ）は、{{jalink|新潟県|Q132705}}{{jalink|糸魚川市|Q857208}}一の宮にある{{jalink|神社|Q845945}}。{{jalink|式内社}}{{jalink|論社|Q135022904}}で、{{jalink|越後国|Q666514}}{{jalink|一宮|Q1656379}}を称する。{{jalink|近代社格制度|Q712534|旧社格}}は{{jalink|県社}}。
+'''Amatsu Shrine''' (あまつじんじゃ) is a {{jalink|神社|Q845945}} located in Ichinomiya, {{jalink|糸魚川市|Q857208}}, {{jalink|新潟県|Q132705}}. It is a {{jalink|式内社}} {{jalink|論社|Q135022904}} and claims the title of {{jalink|一宮|Q1656379}} of {{jalink|越後国|Q666514}}. Its former {{jalink|近代社格制度|Q712534|旧社格}} was {{jalink|県社}}.
 
-== 概要 ==
-{{jalink|景行天皇|Q329723}}の時代の創建と伝えられ、{{jalink|孝徳天皇|Q317980}}の勅願所であったと伝えられている。旧{{jalink|糸魚川町|Q11604888}}のうち、一の宮・押上・寺町・大町・七間町等の{{jalink|産土神|Q1392097}}として崇敬された、{{jalink|慶長|Q1328185}}16年（{{jalink|1611年|Q6768}}）、{{jalink|江戸幕府|Q205662}}から{{jalink|黒印地}}百石を寄進され、翌年朱印地に改められた。{{jalink|大正|Q329174}}7年（{{jalink|1918年|Q2094}}）に郷社に列し、後に県社に昇格した。
+== Overview ==
+It is said to have been founded during the reign of {{jalink|景行天皇|Q329723}}, and is also said to have been a prayer site (chokuganjo) of {{jalink|孝徳天皇|Q317980}}. It was venerated as the {{jalink|産土神|Q1392097}} (tutelary deity) of the Ichinomiya, Oshiage, Teramachi, Ōmachi, and Shichikenmachi districts, among others, of the former {{jalink|糸魚川町|Q11604888}}. In the 16th year of {{jalink|慶長|Q1328185}} ({{jalink|1611年|Q6768}}), the {{jalink|江戸幕府|Q205662}} donated one hundred koku of kuro-indi land, which was converted to vermilion-seal land (shuinchi) the following year. In the 7th year of {{jalink|大正|Q329174}} ({{jalink|1918年|Q2094}}), it was listed as a gōsha (village shrine) and was later elevated to ken-sha (prefectural shrine).
 
-『{{jalink|延喜式神名帳|Q11064932}}』には{{jalink|式内社}}として「{{jalink|越後国|Q666514}}{{jalink|頸城郡|Q11664982}} 大神社」が記載されているが、その{{jalink|論社|Q135022904}}に比定されている。また、{{jalink|境内社}}の奴奈川神社も{{jalink|式内社}}論社である。
+In the ''{{jalink|延喜式神名帳|Q11064932}}'', a {{jalink|式内社}} listed as "{{jalink|越後国|Q666514}} {{jalink|頸城郡|Q11664982}} Great Shrine (Ōjinja)" is identified with this shrine as one of its {{jalink|論社|Q135022904}} (candidate shrines). Additionally, the Nunagawa Shrine within the {{jalink|境内社}} (shrine precincts) is also a shikinaisha ronsha.
 
-== 祭神 ==
-* 中央：{{jalink|ニニギ|Q1056017|天津彦々火瓊々杵尊}}（あまつひこひこほににぎのみこと）
-* 左：{{jalink|天児屋根命}}（あめのこやねのみこと）
-* 右：{{jalink|太玉命}}（ふとだまのみこと）
+== Deities ==
+* Center: {{jalink|ニニギ|Q1056017|天津彦々火瓊々杵尊}} (Amatsuhikohikohononinigi no Mikoto)
+* Left: {{jalink|天児屋根命}} (Amenokoyane no Mikoto)
+* Right: {{jalink|太玉命}} (Futodama no Mikoto)
 
-== 境内 ==
+== Shrine Grounds ==
 <gallery>
-File:Amatsu-jinja (Itoigawa), honden-1.jpg|本殿（右奥）・奴奈川神社（左）
-File:Amatsu-jinja (Itoigawa), honden-2.jpg|本殿（糸魚川市指定文化財）
-File:Amatsu-jinja (Itoigawa), emonjo.jpg|衣紋所
-File:Amatsu-jinja (Itoigawa), torii.jpg|鳥居
+File:Amatsu-jinja (Itoigawa), honden-1.jpg|Main hall (back right) and Nunagawa Shrine (left)
+File:Amatsu-jinja (Itoigawa), honden-2.jpg|Main hall (designated cultural property of Itoigawa City)
+File:Amatsu-jinja (Itoigawa), emonjo.jpg|Emonsho (robing room)
+File:Amatsu-jinja (Itoigawa), torii.jpg|Torii
 </gallery>
 
-== 摂末社 ==
-[[File:Amatsu-jinja (Itoigawa), Nunagawa-jinja.jpg|thumb|220px|right|{{center|奴奈川神社}}]]
-* 奴奈川神社
-*: {{jalink|奴奈川姫命}}を主祭神とし、後に八千矛命（{{jalink|大国主|Q276944}}）が合祀された。この一帯はかつて「沼川郷」と言い、そこに住んでいた奴奈川姫命の元を八千矛命が訪れたという話が{{jalink|日本神話|Q814158}}（{{jalink|大国主の神話|Q11433656}}）にある。伝承では、両神の間の子が{{jalink|建御名方命}}であり、{{jalink|姫川|Q11447417}}を遡って{{jalink|信濃国|Q289250}}に入りそこを開拓したという。
-*: 『{{jalink|延喜式神名帳|Q11064932}}』に{{jalink|頸城郡|Q11664982}}13座の一社として記載されている。「奴奈川神社」という名前の神社は当社の他にも頸城郡内に複数社あり、糸魚川市田伏南村の{{jalink|奴奈川神社}}（旧郷社）、糸魚川市大字能生宮の上の{{jalink|能生白山神社|Q11611996|白山神社}}（旧郷社）も式内・奴奈川神社の論社となっている。
+== Subsidiary Shrines ==
+[[File:Amatsu-jinja (Itoigawa), Nunagawa-jinja.jpg|thumb|220px|right|{{center|Nunagawa Shrine}}]]
+* Nunagawa Shrine
+*: {{jalink|奴奈川姫命}} is enshrined as the principal deity, and {{jalink|大国主|Q276944}} (Yachimata no Mikoto) was later merged into worship. This area was formerly known as "Numakawa-gō," and there is an account in {{jalink|日本神話|Q814158}} ({{jalink|大国主の神話|Q11433656}}) in which Yachimata no Mikoto visited {{jalink|奴奈川姫命}} who lived here. According to tradition, the child born to the two deities was {{jalink|建御名方命}}, who traveled up the {{jalink|姫川|Q11447417}} river into {{jalink|信濃国|Q289250}} and developed the land there.
+*: It is listed as one of the 13 shrines of {{jalink|頸城郡|Q11664982}} in the ''{{jalink|延喜式神名帳|Q11064932}}''. In addition to this shrine, there are multiple shrines named "Nunagawa Shrine" within Kubiki District, including {{jalink|奴奈川神社}} (former gōsha) in Tabuse-Minamimura, Itoigawa City, and {{jalink|能生白山神社|Q11611996|白山神社}} (former gōsha) in Ōaza Nōmiya no Kami, Itoigawa City — both of which are also considered ronsha of the shikinaisha Nunagawa Shrine.
 <gallery>
-File:Amatsu-jinja (Itoigawa), keidaisha.jpg|境内社
+File:Amatsu-jinja (Itoigawa), keidaisha.jpg|Subsidiary shrines (keidaisha)
 </gallery>
 
-== 祭事 ==
-祭事としては舞楽が知られる（{{jalink|天津神社舞楽|Q11442800}}）。俗に「稚児の舞」と呼ばれ、4月の例祭で奉納される。
+== Festivals and Ceremonies ==
+The shrine is known for its bugaku (court music and dance) performances ({{jalink|天津神社舞楽|Q11442800}}), commonly called the "Chigo no Mai" (Children's Dance), which are performed as offerings at the April annual festival.
 
-== 文化財 ==
-=== 重要無形民俗文化財（国指定） ===
-* 糸魚川・能生の舞楽 - 糸魚川の{{jalink|天津神社舞楽|Q11442800}}・能生の{{jalink|白山神社舞楽|Q11579603}}を包括。1980年（昭和55年）1月28日指定<ref>{{国指定文化財等データベース|302|53|糸魚川・能生の舞楽}}<br/>{{国指定文化財等データベース|312|312|天津神社舞楽}}</ref>。
+== Cultural Properties ==
+=== Important Intangible Folk Cultural Property (National Designation) ===
+* Itoigawa and Nō Bugaku — encompasses the {{jalink|天津神社舞楽|Q11442800}} of Itoigawa and the {{jalink|白山神社舞楽|Q11579603}} of Nō. Designated January 28, 1980 (Shōwa 55).<ref>{{国指定文化財等データベース|302|53|糸魚川・能生の舞楽}}<br/>{{国指定文化財等データベース|312|312|天津神社舞楽}}</ref>
 
-=== 新潟県指定文化財 ===
-* 有形文化財
-** 木造奴奈川姫神像（彫刻） - 平安時代後期の作。1954年（昭和29年）2月10日指定<ref name="新潟県指定文化財">{{PDFlink|[https://www.pref.niigata.lg.jp/uploaded/attachment/130374.pdf 新潟県の文化財一覧]}}（新潟県ホームページ）。</ref>。
-** 舞楽面 3面（附 舞楽面2面、稚児舞面3面）（彫刻） - 鎌倉時代後期-室町時代後期の作。1981年（昭和56年）3月27日指定<ref name="新潟県指定文化財"/>。
-** 木造女神坐像 3軀（彫刻） - 平安時代-鎌倉時代の作。1981年（昭和56年）3月27日指定<ref name="新潟県指定文化財"/>。
+=== Niigata Prefecture-Designated Cultural Properties ===
+* Tangible cultural properties
+** Wooden statue of Nunagawa-hime goddess (sculpture) — made in the late Heian period. Designated February 10, 1954 (Shōwa 29).<ref name="新潟県指定文化財">{{PDFlink|[https://www.pref.niigata.lg.jp/uploaded/attachment/130374.pdf 新潟県の文化財一覧]}}（新潟県ホームページ）。</ref>
+** 3 bugaku masks (with 2 additional bugaku masks and 3 chigo-mai masks) (sculpture) — made from the late Kamakura to the late Muromachi period. Designated March 27, 1981 (Shōwa 56).<ref name="新潟県指定文化財"/>
+** 3 wooden seated goddess statues (sculpture) — made from the Heian to the Kamakura period. Designated March 27, 1981 (Shōwa 56).<ref name="新潟県指定文化財"/>
 
-=== 糸魚川市指定文化財 ===
-* 有形文化財
-** 天津神社本殿（建造物） - 1991年（平成3年）3月26日指定<ref name="一覧">{{PDFlink|[指定・登録文化財一覧表]}}（糸魚川市ホームページ）。</ref>。
-** 木造天津社随神像 2軀（彫刻） - 1972年（昭和47年）3月25日指定<ref name="一覧"/>。
-** 木造奴奈川社随神像 2軀（彫刻） - 1972年（昭和47年）3月25日指定<ref name="一覧"/>。
-** 石造如来形坐像（彫刻） - 1980年（昭和55年）4月22日指定<ref name="一覧"/>。
-** 天津社大懸仏 2面（工芸品） - 1973年（昭和48年）3月26日指定<ref name="一覧"/>。
+=== Itoigawa City-Designated Cultural Properties ===
+* Tangible cultural properties
+** Amatsu Shrine main hall (structure) — designated March 26, 1991 (Heisei 3).<ref name="一覧">{{PDFlink|[指定・登録文化財一覧表]}}（糸魚川市ホームページ）。</ref>
+** 2 wooden zuijin (guardian deity) statues of Amatsu Shrine (sculpture) — designated March 25, 1972 (Shōwa 47).<ref name="一覧"/>
+** 2 wooden zuijin statues of Nunagawa Shrine (sculpture) — designated March 25, 1972 (Shōwa 47).<ref name="一覧"/>
+** Stone seated tathagata statue (sculpture) — designated April 22, 1980 (Shōwa 55).<ref name="一覧"/>
+** 2 ōkakebutsu (large hanging ornamental plaques) of Amatsu Shrine (craft work) — designated March 26, 1973 (Shōwa 48).<ref name="一覧"/>
 
-== 現地情報 ==
-'''所在地'''
-* {{jalink|新潟県|Q132705}}{{jalink|糸魚川市|Q857208}}一の宮1-3-34
+== Local Information ==
+'''Address'''
+* 1-3-34 Ichinomiya, {{jalink|糸魚川市|Q857208}}, {{jalink|新潟県|Q132705}}
 
-'''交通アクセス'''
-* 鉄道：{{jalink|西日本旅客鉄道|Q502125}}（JR西日本）・{{jalink|えちごトキめき鉄道|Q11260966}} {{jalink|糸魚川駅|Q871596}}（徒歩約10分）
+'''Access'''
+* By rail: {{jalink|西日本旅客鉄道|Q502125}} (JR West) / {{jalink|えちごトキめき鉄道|Q11260966}}, approximately 10-minute walk from {{jalink|糸魚川駅|Q871596}}
 
-== 脚注 ==
+== Notes ==
 
 {{reflist}}
 
-== 関連項目 ==
-* 越後国一宮を称する他の神社
+== Related Articles ==
+* Other shrines claiming the title of Ichinomiya of Echigo Province
 ** {{jalink|彌彦神社|Q195684}}
 ** {{jalink|居多神社|Q172417}}
 
-== 外部リンク ==
-* {{Wayback|url=http://www.fsinet.or.jp/~amatsu/|title=天津神社|date=20130313040258}} - 公式サイト
+== External Links ==
+* {{Wayback|url=http://www.fsinet.or.jp/~amatsu/|title=Amatsu Shrine|date=20130313040258}} — official website
 
 {{神道 横}}
 
@@ -218,14 +218,6 @@ File:Amatsu-jinja (Itoigawa), keidaisha.jpg|境内社
 [[Category:一宮]]
 [[Category:新潟県の旧県社]]
 [[Category:越後国|社1]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Pages with 250+ untranslated japanese characters]]
-[[Category:Pages with 300+ untranslated japanese characters]]
-[[Category:Pages with 500+ untranslated japanese characters]]
-[[Category:Need translation]]
 [[Category:ichinomiya]]
 [[Category:Shikinaisha]]
 [[Category:Shikinai Shōsha]]
@@ -243,6 +235,4 @@ File:Amatsu-jinja (Itoigawa), keidaisha.jpg|境内社
 [[Category:Junior Fourth Rank]]
 [[Category:Shikinai Shōsha]]
 [[Category:Pages with duplicated content]]
-[[Category:Need translation]]
-[[Category:need translation]]
 [[Category:duplicated content translation]]
