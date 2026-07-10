@@ -41,6 +41,7 @@ GENERATORS = [
     "generate_sango_quickstatements",
     "generate_hisousha_quickstatements",
     "generate_shintai_quickstatements",
+    "generate_list_membership_rebuild",
 ]
 
 

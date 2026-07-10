@@ -140,42 +140,34 @@ auto-adds: every name-matching entry id is already held, usually by several item
 
 - [ ] Emma explains what this task is; then merge vs re-id gets decided.
 
-## Shikinai Ronsha list-membership migration — Emma's wiki-queue item (d), restored
+## Engishiki list membership — the LIST is the source of truth (Emma 2026-07-10)
 
-I deleted this item's real content and replaced it with a "duplicate links" framing that was not
-what Emma asked for. Her original text, restored:
+Emma: *"the actual wikidata items for the list of the shrines contain the entire list in them …
+all of their lists are deduplicated. This happened due to earlier import issues and they were
+fixed in the list items but not the shrines themselves."* The damage came from piped links in the
+jawiki list, where a shrine that was part of another shrine got piped in.
 
-> **(d) part-of migration** — on the actual shrine item, remove **every** part-of→Shikinaisha-list
-> statement; add ONE derived from the **list-entry item**, taking the ordinal + follows/followed-by
-> from the entry item's own (already-clean) statement. Two references: "stated in" the Kokugakuin
-> database + the entry id, and the jawiki Shikinaisha-list article. **Add-first / remove-later as
-> two separate scripts.** BLOCKER to resolve first: when a Ronsha item carries several Kokugakuin
-> entry ids (e.g. Q11677110 holds 182062/182063/182065), which entry's ordinal becomes the single
-> new statement? Build the report, then ask.
+**The algorithm.** An item the list NAMES as a part keeps exactly one clean "part of" statement —
+ordinal and follows/followed-by derived from the list's own ordering, plus two references. An item
+the list does NOT name loses its list link entirely.
 
-Report BUILT: `docs/ronsha_list_membership_2026-07.md`
-(`modern-quickstatements/report_ronsha_list_membership.py`, report-only).
+* items named as parts (the entries) — **2,839**
+* Shikinai Ronsha claiming membership — **2,277**; of those, actually named as a part — **126**
+  (Emma: *"those 126 should be continued in the listing"*)
+* Ronsha claiming membership but NOT named — **~2,151**, all junk
 
-Structure verified: `Futarasan Shrine` (the modern shrine) carries four part-of statements, two
-into the Shimotsuke list — one with ordinal 4 and neighbours, one bare. `Futaarayama Shrine`, its
-entry item, carries exactly one: ordinal 4, with follows/followed-by, and the Kokugakuin id. The
-shrine reaches its entry item through "said to be the same as".
+**Script 1 (adds) BUILT and registered:** `generate_list_membership_rebuild.py` →
+`list_membership_rebuild.txt`, **5,643 lines**, ADD-only, diffed against live state so it shrinks
+as it lands. 26 entries carry several Kokugakuin ids, so no database reference is claimed for them.
 
-Of **2,277** Ronsha with a list membership:
-
-| | |
-|---|---:|
-| unambiguous — one entry item, one clean statement | **1,950** |
-| **ambiguous** — several entry items or several ordinals (the blocker) | **74** |
-| no entry item reachable | **253** |
-
-- [ ] **Emma: the blocker.** Which entry's ordinal wins for the 74? Listed in the report with each
-  shrine's Kokugakuin ids and every candidate entry's ordinal.
-- [ ] Then: script 1 ADDS the single derived statement for the 1,950; script 2 REMOVES the old ones
-  only where SPARQL confirms the add landed. Two scripts, never one.
-- [ ] The 253 with no reachable entry item need a different route.
-- [ ] Items (a) shrine-ranking example, (b) official-name table, (c) address table and (e) address
-  citation convention from the same wiki-queue bullet all SHIPPED 2026-07-09.
+- [ ] **Script 2 (removals)** — strip the list link from the ~2,151 Ronsha the list does not name.
+  Remove-only, SPARQL-gated, UNREGISTERED and manual: QuickStatements removes by *value*, so a
+  value-matched removal on an item that also holds the clean statement would delete both. Only the
+  non-part items are safe to remove this way.
+- [ ] The 150 confirmed Shikinaisha that are **not** named as parts of any list — investigate
+  (Emma: *"there's confirmed shikinaisha i.e. not disputed ones"*).
+- [ ] `report_ronsha_list_membership.py` and `docs/ronsha_list_membership_2026-07.md` hold the
+  per-item detail.
 
 ## LAST — repurposed-item damage, on hold (Emma 2026-07-10)
 
