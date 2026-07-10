@@ -140,31 +140,42 @@ auto-adds: every name-matching entry id is already held, usually by several item
 
 - [ ] Emma explains what this task is; then merge vs re-id gets decided.
 
-## LAST — P361 duplicates on Shikinai Ronsha: Emma to explain, then decide
+## Shikinai Ronsha list-membership migration — Emma's wiki-queue item (d), restored
 
-Emma 2026-07-09, asked about the old "Anomaly corrections" item: *"Honestly, I have no clue what
-you're even talking about right now."* Fair — the old wording was written against a generator that
-has since been deleted. Measured afresh, in plain language:
+I deleted this item's real content and replaced it with a "duplicate links" framing that was not
+what Emma asked for. Her original text, restored:
 
-Some Shikinai Ronsha items say "I am part of the Engishiki list for province X" **more than once**.
-The old count of 384 was wrong: it counted `P361` statements pointing at things that are not lists
-at all (shrines, classes, Beppyō Shrine, the Twenty-Two Shrines). Restricted to real Engishiki
-lists, of **2,277** Ronsha that sit on a list:
+> **(d) part-of migration** — on the actual shrine item, remove **every** part-of→Shikinaisha-list
+> statement; add ONE derived from the **list-entry item**, taking the ordinal + follows/followed-by
+> from the entry item's own (already-clean) statement. Two references: "stated in" the Kokugakuin
+> database + the entry id, and the jawiki Shikinaisha-list article. **Add-first / remove-later as
+> two separate scripts.** BLOCKER to resolve first: when a Ronsha item carries several Kokugakuin
+> entry ids (e.g. Q11677110 holds 182062/182063/182065), which entry's ordinal becomes the single
+> new statement? Build the report, then ask.
 
-* **94** hold two or more `P361` into the *same* list. These are the only true duplicates.
-* **0** are on two different lists. So nothing is cross-listed.
+Report BUILT: `docs/ronsha_list_membership_2026-07.md`
+(`modern-quickstatements/report_ronsha_list_membership.py`, report-only).
 
-The 94 are not one problem either. Two shapes, both seen in the data:
-* **same ordinal twice** — e.g. Futarasan Shrine, position 4 twice: one statement carries
-  `P155/P156` (follows / followed by), the other is bare. The bare one is redundant.
-* **different ordinals** — e.g. Nijugohashira Shrine at positions 75 *and* 79; Sutou Shrine at
-  12, 14, 14. The shrine claims two places in the register. Either the Engishiki really lists it
-  twice, or an import invented a position. Not decidable mechanically.
+Structure verified: `Futarasan Shrine` (the modern shrine) carries four part-of statements, two
+into the Shimotsuke list — one with ordinal 4 and neighbours, one bare. `Futaarayama Shrine`, its
+entry item, carries exactly one: ordinal 4, with follows/followed-by, and the Kokugakuin id. The
+shrine reaches its entry item through "said to be the same as".
 
-Fixing either shape means **removing** a statement, and Emma has said "don't remove anything" about
-this three times. So nothing is emitted.
+Of **2,277** Ronsha with a list membership:
 
-- [ ] Emma decides: leave the 94 alone, or drain the redundant-bare-statement shape (the safe one).
+| | |
+|---|---:|
+| unambiguous — one entry item, one clean statement | **1,950** |
+| **ambiguous** — several entry items or several ordinals (the blocker) | **74** |
+| no entry item reachable | **253** |
+
+- [ ] **Emma: the blocker.** Which entry's ordinal wins for the 74? Listed in the report with each
+  shrine's Kokugakuin ids and every candidate entry's ordinal.
+- [ ] Then: script 1 ADDS the single derived statement for the 1,950; script 2 REMOVES the old ones
+  only where SPARQL confirms the add landed. Two scripts, never one.
+- [ ] The 253 with no reachable entry item need a different route.
+- [ ] Items (a) shrine-ranking example, (b) official-name table, (c) address table and (e) address
+  citation convention from the same wiki-queue bullet all SHIPPED 2026-07-09.
 
 ## LAST — repurposed-item damage, on hold (Emma 2026-07-10)
 
