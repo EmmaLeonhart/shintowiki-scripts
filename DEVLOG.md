@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — two regex bugs in the infobox importers; one had been dropping deities all along
+
+Fixing the field-bleed item surfaced a second, worse bug in the two generators I had just
+called correct.
+
+**Bug 1 — the capture ran to the newline.** `souken`, `kofun` and `p3225` used `([^
+]*)`. An
+article with its whole infobox on one line bled the next parameter into the value:
+`本願寺西山別院` reads `|創建年=平安時代|開基=|中興年=[[1314年|…]]|…`, so its founding was
+imported as **1314** — the 中興 restoration year. Three such lines were withdrawn earlier today,
+and only because the bled text contained `中興`, a marker the parser had just started refusing.
+A bled parameter carrying a bare year would have leaked in silence.
+
+**Bug 2 — the alternation was in the wrong order, and this one lost real data.** `saijin` and
+`honzon` *did* bound the capture at `|`, writing it `((?:[^
+|]|\[\[…\]\]|\{\{…\}\})*)`.
+But regex alternation is ordered: `[^
+|]` consumes `[`, `[`, `天`, `照`… and then halts at the
+pipe **inside** the wikilink. The `\[\[…\]\]` branch never runs. Given
+
+    |祭神 = [[天照大神|天照大御神]]、[[素戔嗚尊]]、[[大国主|大国主命]]
+
+it captured `[[天照大神` — **silently dropping two of the three deities.** Japanese deity and era
+links are piped constantly, so `saijin_p825.txt` (2,362 shipped lines) has been under-reporting
+祭神 wherever the first link was piped. The same for `honzon_p825.txt` (760).
+
+I found it only because a test I wrote for bug 1 (`a pipe inside a wikilink is not a boundary`)
+failed on souken's brand-new pattern, which I had copied from saijin on the assumption that
+saijin was the correct one.
+
+Both fixed by one shared `infobox_fields.FIELD_TAIL` with the bracketed alternatives **first**,
+used by all five generators. Tests assert the shape (no `([^
+]*)`, `[^
+|]` last) and the
+behaviour (a piped wikilink survives, a bare pipe still ends the field) for every generator.
+363 tests pass. The four affected batches are regenerating.
+---
+
 ## 2026-07-10 — a caution gate around a Wikidata editor, and what the evidence actually showed
 
 Emma flagged `ブルーノ・プラス` as a likely conflict and asked for analysis before any policy.

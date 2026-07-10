@@ -73,20 +73,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   proposal was **declined** (2025-12-07, no support), so the model stays P837 + P3831=Q11385469 per
   `docs/wikidata_shrine_festival_model.md` — do not resurrect a bespoke property.
 
-## jawiki infobox field bleed (found 2026-07-10)
-
-`generate_souken_quickstatements.CONFIGS` captures `創建\s*=\s*([^
-]*)`. Articles that put the
-whole infobox on one line therefore bleed the *next* parameter into the field: `本願寺西山別院`
-read `創建=平安時代|開基=|中興年=[[1314年]]` and imported 1314 (a 中興 restoration year) as the
-founding. Three such lines were withdrawn on 2026-07-10 only because the bled text happened to
-contain `中興`, which is now a refused marker.
-
-- [ ] Stop the capture at the next `|` parameter boundary rather than the newline, and check
-  whether `generate_saijin_quickstatements` / `generate_honzon_quickstatements` /
-  `generate_kofun_quickstatements` share the pattern. A one-line infobox whose next parameter
-  carries a bare year and no refused marker still leaks silently.
-
 ## LAST — hard-residual street addresses, via the Kokugakuin website links (Emma 2026-07-09)
 
 **Ontology, corrected by Emma:** *"you're getting ronsha ontology wrong — a ronsha is specifically

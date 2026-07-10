@@ -28,10 +28,13 @@ import io
 import json
 import os
 import re
+
 import sys
 import time
 import urllib.parse
 import urllib.request
+
+from infobox_fields import field_pattern
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
@@ -40,7 +43,13 @@ UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scr
 TEMPLATE = "Template:神社"
 OUTPUT = os.path.join(HERE, "saijin_p825.txt")
 
-_FIELD_RE = re.compile(r"\|\s*祭神\s*=\s*((?:[^\n|]|\[\[[^\]]*\]\]|\{\{[^}]*\}\})*)")
+# Was `((?:[^\n|]|\[\[…)*)`. Regex alternation is ordered, so `[^\n|]` consumed
+# `[[天照大神` character-by-character and then halted at the pipe INSIDE the
+# wikilink — `\[\[…\]\]` never got a chance. Given
+#     |祭神 = [[天照大神|天照大御神]]、[[素戔嗚尊]]、[[大国主|大国主命]]
+# it captured "[[天照大神" and silently dropped two of the three deities.
+# Bracketed alternatives must come first. See infobox_fields.py.
+_FIELD_RE = re.compile(field_pattern("祭神"))
 _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 
 

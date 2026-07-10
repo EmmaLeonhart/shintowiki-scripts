@@ -25,10 +25,13 @@ import io
 import json
 import os
 import re
+
 import sys
 import time
 import urllib.parse
 import urllib.request
+
+from infobox_fields import field_pattern
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
@@ -37,7 +40,8 @@ UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scr
 TEMPLATE = "Template:日本の寺院"
 OUTPUT = os.path.join(HERE, "p3225_corporate_numbers.txt")
 
-_FIELD_RE = re.compile(r"\|\s*法人番号\s*=\s*([^\n]*)")
+# Bleed guard + alternation order, see infobox_fields.py.
+_FIELD_RE = re.compile(field_pattern("法人番号"))
 _NUM_RE = re.compile(r"\b(\d{13})\b")
 
 

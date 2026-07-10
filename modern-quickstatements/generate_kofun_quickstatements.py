@@ -26,10 +26,13 @@ import io
 import json
 import os
 import re
+
 import sys
 import time
 import urllib.parse
 import urllib.request
+
+from infobox_fields import FIELD_TAIL, field_pattern
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
@@ -53,8 +56,11 @@ SHAPE_QIDS = {
     "方墳": "Q11504353",
 }
 _SHAPE_ORDER = sorted(SHAPE_QIDS, key=len, reverse=True)
-_FIELD_SHAPE = re.compile(r"\|\s*形状\s*=\s*([^\n]*)")
-_FIELD_PERIOD = re.compile(r"\|\s*築造(?:時期|年代)\s*=\s*([^\n]*)")
+# See generate_souken_quickstatements._FIELD_TAIL: ending the capture at the
+# newline lets a one-line infobox bleed its next parameter into the value.
+_FIELD_TAIL = FIELD_TAIL   # shared; see infobox_fields.py
+_FIELD_SHAPE = re.compile(r"\|\s*形状\s*=\s*" + _FIELD_TAIL)
+_FIELD_PERIOD = re.compile(r"\|\s*築造(?:時期|年代)\s*=\s*" + _FIELD_TAIL)
 _CENTURY = re.compile(r"(\d{1,2})世紀")
 
 

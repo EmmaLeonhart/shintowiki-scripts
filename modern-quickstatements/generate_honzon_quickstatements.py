@@ -27,10 +27,13 @@ import io
 import json
 import os
 import re
+
 import sys
 import time
 import urllib.parse
 import urllib.request
+
+from infobox_fields import field_pattern
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
@@ -39,7 +42,9 @@ UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scr
 TEMPLATE = "Template:日本の寺院"
 OUTPUT = os.path.join(HERE, "honzon_p825.txt")
 
-_FIELD_RE = re.compile(r"\|\s*本尊\s*=\s*((?:[^\n|]|\[\[[^\]]*\]\]|\{\{[^}]*\}\})*)")
+# Same ordered-alternation defect as 祭神: `[^\n|]` halted at the pipe inside the
+# first piped wikilink, dropping every later 本尊. See infobox_fields.py.
+_FIELD_RE = re.compile(field_pattern("本尊"))
 _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 
 

@@ -27,10 +27,13 @@ import io
 import json
 import os
 import re
+
 import sys
 import time
 import urllib.parse
 import urllib.request
+
+from infobox_fields import FIELD_TAIL, field_pattern
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
@@ -38,9 +41,24 @@ WDQS = "https://query-main.wikidata.org/sparql"
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 OUTPUT = os.path.join(HERE, "souken_p571.txt")
 
+# A field value ends at the next `|` parameter boundary, NOT at the newline.
+# Articles that put the whole infobox on one line otherwise bleed the next
+# parameter into the value. 本願寺西山別院 reads
+#     |創建=平安時代|開基=|中興年=[[1314年|1314年（正和3年）]]|…
+# and `([^\n]*)` swallowed all of it, importing the 中興 *restoration* year 1314 as
+# the temple's founding date. Three such lines were withdrawn on 2026-07-10, and
+# only because the bled text happened to contain a refused marker (中興); a bled
+# parameter carrying a bare year would have leaked silently.
+#
+# A `|` inside [[wikilinks]] or {{templates}} is not a boundary — Japanese era
+# links look like [[大同 (日本)|大同]]. This is exactly the pattern that
+# generate_saijin_quickstatements and generate_honzon_quickstatements have always
+# used; souken, kofun and p3225 were the three that did not.
+_FIELD_TAIL = FIELD_TAIL   # shared; see infobox_fields.py
+
 CONFIGS = [
-    ("Template:神社", r"\|\s*創建\s*=\s*([^\n]*)"),
-    ("Template:日本の寺院", r"\|\s*創建年\s*=\s*([^\n]*)"),
+    ("Template:神社", r"\|\s*創建\s*=\s*" + _FIELD_TAIL),
+    ("Template:日本の寺院", r"\|\s*創建年\s*=\s*" + _FIELD_TAIL),
 ]
 _YEAR_RE = re.compile(r"(\d{3,4})年")
 
