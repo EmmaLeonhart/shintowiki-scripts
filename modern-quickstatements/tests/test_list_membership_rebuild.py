@@ -49,6 +49,49 @@ def test_a_non_numeric_ordinal_sorts_last_without_crashing():
     assert [q for q, _ in rb.list_members(claims)] == ["Qa", "Qb"]
 
 
+# ─────────────────── an entry the list names twice is not emittable ───────────────────
+
+def test_an_entry_named_at_two_ordinals_is_ambiguous():
+    """Live: the Izumo list names Q135040786 at 28 and 29, Awa names Q11361262 at 3 and 5."""
+    members = [("Qa", "1"), ("Qdup", "3"), ("Qb", "4"), ("Qdup", "5")]
+    assert rb.ambiguous_entries(members) == {"Qdup"}
+
+
+def test_an_entry_named_once_is_not_ambiguous():
+    assert rb.ambiguous_entries([("Qa", "1"), ("Qb", "2")]) == set()
+
+
+def test_the_same_entry_at_the_same_ordinal_twice_is_not_ambiguous():
+    """A duplicated has-part statement says one thing twice. Only rival ordinals are fatal."""
+    assert rb.ambiguous_entries([("Qa", "1"), ("Qa", "1")]) == set()
+
+
+def test_an_empty_list_has_no_ambiguity():
+    assert rb.ambiguous_entries([]) == set()
+
+
+def test_contradictory_ordinals_would_land_on_one_statement():
+    """Why this matters: both head lines carry the same value, so QuickStatements finds the
+    SAME statement and hangs two rival ordinals on it."""
+    a = rb.needed_lines("Qdup", "Qlist", "3", "Qp", "Qn", "1", URL, {})[0]
+    b = rb.needed_lines("Qdup", "Qlist", "5", "Qp", "Qn", "1", URL, {})[0]
+    assert a.startswith("Qdup|P361|Qlist") and b.startswith("Qdup|P361|Qlist")
+    assert '|P1545|"3"' in a and '|P1545|"5"' in b
+
+
+def test_neighbours_of_a_duplicated_entry_come_from_its_last_position():
+    """Documented, not desirable — it is why such entries must be excluded, not emitted."""
+    members = [("Qa", "1"), ("Qdup", "3"), ("Qb", "4"), ("Qdup", "5")]
+    assert rb.neighbours(members)["Qdup"] == ("Qb", None)
+
+
+def test_the_neighbours_of_other_entries_are_unaffected_by_a_duplicate():
+    members = [("Qa", "1"), ("Qdup", "3"), ("Qb", "4"), ("Qdup", "5")]
+    nb = rb.neighbours(members)
+    assert nb["Qa"] == (None, "Qdup")
+    assert nb["Qb"] == ("Qdup", "Qdup")
+
+
 # ─────────────────────── neighbours derived from the list ───────────────────────
 
 def test_neighbours_come_from_the_lists_own_order():

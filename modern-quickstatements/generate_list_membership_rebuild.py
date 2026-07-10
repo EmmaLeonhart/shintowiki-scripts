@@ -133,8 +133,30 @@ def _ordinal_key(o):
         return (1, str(o))
 
 
+def ambiguous_entries(members):
+    """Entries the list names at MORE THAN ONE ordinal. Never emit a line for these.
+
+    Two exist live (2026-07-10): the Izumo list names `Q135040786` at 28 and 29, and the
+    Awa list names `Q11361262` at 3 and 5. Both are the original piped-link import damage,
+    surviving on the list side. Without this guard the generator emits one head line per
+    ordinal — two contradictory `series ordinal` values, both landing on the *same*
+    statement (QuickStatements matches a statement by its value), and both carrying the
+    neighbours of whichever position `neighbours()` happened to record last.
+
+    Which ordinal is right cannot be decided from the list: the list is what is wrong.
+    """
+    ordinals = collections.defaultdict(set)
+    for e, o in members:
+        ordinals[e].add(o)
+    return {e for e, os in ordinals.items() if len(os) > 1}
+
+
 def neighbours(members):
-    """{entry: (previous_entry, next_entry)} from the list's own ordering."""
+    """{entry: (previous_entry, next_entry)} from the list's own ordering.
+
+    An entry the list names twice gets the neighbours of its LAST position. That is only
+    safe because `ambiguous_entries()` excludes such entries from emission entirely.
+    """
     out = {}
     for i, (e, _o) in enumerate(members):
         prev = members[i - 1][0] if i > 0 else None
@@ -235,13 +257,18 @@ def main():
     print("{} entry items fetched".format(len(entry_ents)))
 
     lines, skipped_multi_kid, already = [], 0, 0
+    ambiguous = []
     for l in lists:
         members = members_by_list[l]
         nb = neighbours(members)
+        ambig = ambiguous_entries(members)
+        ambiguous.extend((l, e) for e in sorted(ambig))
         sl = (list_ents[l].get("sitelinks") or {}).get("jawiki", {}).get("title")
         list_url = ("https://ja.wikipedia.org/wiki/" +
                     urllib.parse.quote(sl.replace(" ", "_"))) if sl else None
         for e, ordinal in members:
+            if e in ambig:
+                continue
             ent = entry_ents.get(e)
             if not ent:
                 continue
@@ -267,6 +294,10 @@ def main():
     print("\n{} entries already complete".format(already))
     print("{} entries carry several Kokugakuin ids (no database reference emitted)".format(
         skipped_multi_kid))
+    print("{} entries are named at more than one ordinal — NOTHING emitted for them:".format(
+        len(ambiguous)))
+    for l, e in ambiguous:
+        print("    {} in {}".format(e, l))
     print("{} lines -> {}".format(len(lines), path))
     return 0
 

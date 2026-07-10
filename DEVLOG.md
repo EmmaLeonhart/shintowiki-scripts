@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — script 1 was about to hang two rival ordinals on one statement
+
+Running down the loose threads from the orphan report turned up a live corruption bug in a batch
+that is **registered and dripping**. Only the closed `conflict_gate` kept it from landing.
+
+**Two list items name an entry twice.** The Izumo list names `Q135040786` at ordinal 28 *and* 29;
+the Awa list names `Q11361262` at 3 *and* 5 — the same piped-link import damage, surviving on the
+list side, which means the source of truth is itself wrong in two places. `generate_list_membership_
+rebuild.py` was emitting one head line per ordinal. QuickStatements matches a statement by its
+**value**, so both lines find the *same* statement and hang two rival `series ordinal` values on it;
+worse, `neighbours()` keys by entry, so both lines carried whichever position it recorded last — the
+ordinal-3 line wore ordinal-5's neighbours.
+
+`ambiguous_entries()` now excludes any entry a list names at more than one ordinal, the generator
+prints them, and the batch dropped 5,643 → 5,637 lines. Six tests pin it, including one that
+demonstrates *why* it matters (both head lines start `Qdup|P361|Qlist`, so both match one statement)
+and one that documents the last-position neighbour behaviour rather than pretending it is fine.
+
+**The damage is already on Wikidata and is not ours**: `Q11361262` holds two `part of` statements to
+the Awa list, ordinals 3 and 5, each carrying two `follows` and two `followed by` values, and zero
+references — our lines carry references. Recommendation recorded: fix the two *list* items by hand;
+a value-matched removal is exactly the wrong tool here.
+
+**The 13 named entries with no Kokugakuin id resolve cleanly.** Four are not shrines: 八神殿, 座摩神,
+御門巫祭神 八座 and 生島巫祭神 二座 are 宮中神, kami enshrined in the palace itself, named by the
+Imperial Palace list. The Kokugakuin database indexes shrines, so their missing id is correct rather
+than a gap. The other nine are ordinary provincial entries whose id was never matched, and script 1
+already declines to claim a database reference without one.
+
+**`Q11474068` is 岩井温泉 — a hot spring** in Tottori, `instance of` onsen, sulphur spring, Shinto
+shrine *and* Shikinaisha, claiming membership of the Inaba list. Our own bot added the class on
+2025-06-26 from the jawiki spa article; the register shrine at that spa is 御湯神社. Three removals
+recommended via the enumerated-removal path; nothing edited.
+
+`docs/engishiki_list_defects_2026-07.md`. 1092 tests pass.
+
+---
+
 ## 2026-07-10 — script 2: the 2,151 Ronsha the lists never named
 
 `generate_list_membership_removals.py` (REMOVE-ONLY, unregistered, 19 tests) is built. It takes the
