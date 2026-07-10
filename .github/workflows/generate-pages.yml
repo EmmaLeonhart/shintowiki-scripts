@@ -3,14 +3,6 @@ name: Generate GitHub Pages
 on:
   workflow_dispatch:
   workflow_call:
-  # TEMPORARY (2026-07-10): push trigger scoped to the work-loop branch so a
-  # sandbox that cannot reach Cloudflare-fronted Miraheze can still regenerate
-  # _site via CI (where Miraheze is reachable). paths-ignore _site/** so the
-  # job's own _site commit does not re-trigger a loop. Remove after the run.
-  push:
-    branches: [claude/work-loop-queue-processing-as7wm0]
-    paths-ignore:
-      - '_site/**'
   # Standalone daily schedule (re-added 2026-06-08). It was removed in ddddffb6
   # so Pages would only run as the tail of cleanup-loop (to avoid concurrent
   # _site merge conflicts). But cleanup-loop is now ~always cancelled
