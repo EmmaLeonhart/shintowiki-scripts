@@ -65,6 +65,30 @@ def test_duplicates_on_a_named_part_are_still_never_removed():
     assert lines == [] and kept and dupes == 0
 
 
+# ────────── what counts as "named": the ordinal-less has-part hole ──────────
+
+def test_the_protection_query_does_not_require_an_ordinal():
+    """The bug lived in the query, not the logic, so pin the query.
+
+    `Q11474068` 岩井温泉 was named by the Inaba list with a has-part that had lost its
+    series ordinal. Every ordinal-filtered query read it as unnamed. Script 1 may filter on
+    the ordinal — it cannot place an entry without one — but a REMOVAL script must not.
+    """
+    assert "P1545" not in rm.NAMED_PARTS_QUERY
+    assert "ps:P527" in rm.NAMED_PARTS_QUERY
+
+
+def test_the_protection_query_only_looks_at_engishiki_lists():
+    assert rm.JINMYOCHO in rm.NAMED_PARTS_QUERY
+
+
+def test_an_entry_named_without_an_ordinal_is_still_protected():
+    """Given the query above, such an entry reaches parts_of and survives."""
+    lines, kept, _d = rm.removal_lines({("Qordinal_less", "Qlist"): 1},
+                                       {"Qlist": {"Qordinal_less"}})
+    assert lines == [] and kept == [("Qordinal_less", "Qlist")]
+
+
 # ─────────────────────── the guards ───────────────────────
 
 def test_the_named_part_guard_catches_a_line_that_should_not_exist():

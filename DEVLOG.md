@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — the 岩井温泉 hole was also in the removal script's protection query
+
+The onsen taught us that a `has part` statement without a series ordinal is invisible to every
+ordinal-filtered query. `list_members()` reads one, so `Q11474068` looked unnamed for months while
+the Inaba list had been naming it all along.
+
+Script 2 — the one that **deletes** list links from 2,151 Ronsha — built its "this item is named,
+do not touch it" set the same way: `?s ps:P527 ?e . ?s pq:P1545 ?o`. So an item named by an
+ordinal-less has-part would have read as unnamed and had its list link removed.
+
+The asymmetry is the point. Script 1 *must* filter on the ordinal — it cannot place an entry without
+one. Script 2 must not: an ordinal-less has-part still **names** the item, and naming is the entire
+protection. The filter was copied from script 1 where it does not belong.
+
+`NAMED_PARTS_QUERY` now asks for every has-part target whatever its qualifiers, and three tests pin
+it — including one that asserts `P1545` does not appear in the query string, because the bug lived
+in the query rather than in any function the other tests exercise.
+
+**Verified no live Ronsha was exposed**: the single ordinal-less has-part across all 69 lists points
+at a confirmed Shikinaisha (the onsen), not a Ronsha. Regenerating script 2 produces a byte-identical
+2,236 lines. This is a latent-safety fix, not a behaviour change — which is the only reason it was
+safe to make while the batch sits waiting to be run by hand.
+
+1127 tests pass.
+
+---
+
 ## 2026-07-10 — corrected a false claim in the docs; he has stopped destroying things
 
 **The watch.** `ブルーノ・プラス` is at 757 Wikidata edits, 34 more than the last pass, and the

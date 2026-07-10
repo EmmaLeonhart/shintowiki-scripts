@@ -27,6 +27,14 @@ Ronsha claims exactly one list. The script still checks per (item, list) pair ra
 trusting that, because the safety property must hold at the moment it runs, not at the
 moment it was written.
 
+WHAT COUNTS AS "NAMED"
+----------------------
+Any `has part` statement pointing at the item — **with or without a series ordinal**. Script
+1 reads only ordinal-bearing statements, because it cannot place an entry without one. A
+removal script must not copy that filter: an ordinal-less has-part still names the item, and
+naming is the whole protection. `Q11474068` 岩井温泉 spent months looking unnamed to every
+ordinal-filtered query for exactly this reason.
+
 DUPLICATES
 ----------
 94 pairs carry **more than one** `part of` statement to the same list — the original import
@@ -114,11 +122,24 @@ def assert_never_touches_a_named_part(lines, parts_of):
             "refusing to remove a membership the list NAMES: {!r}".format(bad[:3]))
 
 
+# Everything a list names with `has part`, WHATEVER qualifiers the statement carries.
+#
+# Deliberately NOT filtered on `pq:P1545`. Script 1 needs an ordinal to place an entry, so
+# it reads only ordinal-bearing statements. A removal script must not inherit that: an
+# ordinal-less has-part still NAMES the item, and naming is what protects it. `Q11474068`
+# 岩井温泉 was exactly such a statement — entry 7 of the Inaba list whose ordinal had gone
+# missing — and it looked unnamed to every ordinal-filtered query for months.
+#
+# No Ronsha is in that position today (verified 2026-07-10: the single ordinal-less has-part
+# in all 69 lists points at a confirmed Shikinaisha). This query is what keeps it true if one
+# ever is.
+NAMED_PARTS_QUERY = ("SELECT ?l ?e WHERE { ?l wdt:P361 wd:%s . ?l p:P527 ?s . "
+                     "?s ps:P527 ?e }" % JINMYOCHO)
+
+
 def fetch():
     parts_of = collections.defaultdict(set)
-    for r in sparql_csv(
-            "SELECT ?l ?e WHERE { ?l wdt:P361 wd:%s . ?l p:P527 ?s . "
-            "?s ps:P527 ?e . ?s pq:P1545 ?o }" % JINMYOCHO):
+    for r in sparql_csv(NAMED_PARTS_QUERY):
         parts_of[qid(r["l"])].add(qid(r["e"]))
 
     claims = collections.Counter()
