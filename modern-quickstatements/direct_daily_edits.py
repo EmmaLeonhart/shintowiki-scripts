@@ -104,6 +104,7 @@ ATOMIC_FILES = [
     "saijin_p825.txt",                       # Enshrined deities (祭神) from the jawiki shrine infobox as P825, wikilinked-only precision path (generate_saijin_quickstatements.py); jawiki-cited
     "honzon_p825.txt",                       # Principal images (本尊) from the jawiki temple infobox as P825, wikilinked-only precision path (generate_honzon_quickstatements.py); jawiki-cited
     "souken_p571.txt",                       # Founding dates (創建/創建年) from jawiki infoboxes as P571 year-precision; conservative single-clean-year parser (generate_souken_quickstatements.py); jawiki-cited
+    "souken_den_p571.txt",                   # Traditional (伝/社伝/寺伝) founding dates as P571 + P1480=Q18122778 "presumably"; disjoint accept-set from souken_p571 (generate_souken_den_quickstatements.py); jawiki-cited
     "kofun_imports.txt",                     # Kofun shapes (P31 shape-classes, the live convention) + construction periods (P571 century precision) from the jawiki kofun infobox (generate_kofun_quickstatements.py); jawiki-cited
     "description_enrichment_en.txt",         # Unique English descriptions for collision groups, from cloud-RAG answers (collector: shinto_miraheze/collect_description_enrichment.py; stage 1 of docs/description_enrichment_pipeline.md)
 ]
@@ -150,6 +151,24 @@ def parse_qs_value(raw):
         return {"type": "string", "value": raw[1:-1]}
     if raw in ("novalue", "somevalue"):
         return {"type": raw}
+    # QS v1 time: +1580-00-00T00:00:00Z/9  (trailing /N is the precision).
+    # Without this, a time value fell through to {"type": "unknown"} and was POSTed
+    # as a bare JSON *string*, which wbcreateclaim cannot decode for a time
+    # datatype. souken_p571.txt (4,119 lines) and kofun_imports.txt (870) are both
+    # registered in ATOMIC_FILES and are both entirely time-valued, so neither could
+    # ever have landed through this editor — the only path either of them has.
+    # QuickStatements itself always writes the proleptic Gregorian calendar model,
+    # so reproducing QS semantics means Q1985727 here too.
+    m = re.match(r"^([+-]\d{1,16}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)/(\d{1,2})$", raw)
+    if m:
+        return {"type": "time", "value": {
+            "time": m.group(1),
+            "timezone": 0,
+            "before": 0,
+            "after": 0,
+            "precision": int(m.group(2)),
+            "calendarmodel": "http://www.wikidata.org/entity/Q1985727",
+        }}
     return {"type": "unknown", "value": raw}
 
 
@@ -227,12 +246,17 @@ def parse_qs_line(line):
 
 def value_to_api_json(parsed_value):
     """Convert a parsed value to the JSON string expected by wbcreateclaim/wbsetqualifier."""
-    if parsed_value["type"] == "entity":
-        return json.dumps(parsed_value["value"])
-    if parsed_value["type"] == "monolingualtext":
+    if parsed_value["type"] in ("entity", "monolingualtext", "time"):
         return json.dumps(parsed_value["value"])
     if parsed_value["type"] == "string":
         return json.dumps(parsed_value["value"])
+    if parsed_value["type"] == "unknown":
+        # Previously this fell through and POSTed json.dumps(raw) — a bare string
+        # for whatever datatype the property has. Refuse it: an unrecognised value
+        # token means the encoder is missing a case, not that the API should guess.
+        raise ValueError(
+            "unencodable QS value {!r} — parse_qs_value has no case for it".format(
+                parsed_value.get("value")))
     return json.dumps(parsed_value.get("value", ""))
 
 

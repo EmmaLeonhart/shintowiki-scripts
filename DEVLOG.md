@@ -4,6 +4,50 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-09 (later still) — the daily editor could not write a date
+
+Building the 伝-date importer meant registering a third time-valued batch in
+`ATOMIC_FILES`. Before shipping it I checked that the editor could actually execute the
+line shape, rather than assuming it matched `reisai.txt` (it doesn't — reisai's `P837`
+values are day-of-year QIDs, not times).
+
+`parse_qs_value()` had no case for QS v1 time syntax (`+1580-00-00T00:00:00Z/9`). A time
+fell through to `{"type": "unknown"}`, and `value_to_api_json()` returned
+`json.dumps(raw)` — a bare JSON **string**. `wbcreateclaim` cannot decode a string for a
+time datatype.
+
+Exactly two registered files are entirely time-valued: **`souken_p571.txt` (4,119 lines)**
+and **`kofun_imports.txt` (870)**. Neither is in `submit_daily_batch`'s list, so
+`direct_daily_edits` is the only path either of them has. **Neither could ever have
+landed.** Nothing was lost: the last successful direct-daily-edits run (2026-07-02)
+predates both files, so the defect was latent rather than destructive. This is the same
+shape as the `_site/` unreachability bug from earlier today — registered, reachable, and
+still incapable of reaching Wikidata.
+
+Fixed: time values parse to a proper time datavalue (proleptic Gregorian `Q1985727`,
+which is what QuickStatements itself writes), and an unrecognised value token now
+**raises** instead of being POSTed as garbage — the per-line `except Exception` turns it
+into a counted failure rather than a silent malformed edit. Verified by reconstructing the
+old behaviour: it puts `"+1580-00-00T00:00:00Z/9"` on the wire as a string, and the new
+test rejects exactly that. 15 tests.
+
+The 伝-date importer itself (`generate_souken_den_quickstatements.py`) is the complement
+of `generate_souken_quickstatements.py`, not an extension: the sibling skips a field the
+moment it sees 伝, this one requires 伝 and skips everything vague for any other reason
+(不詳 / 頃 / 年間 / 世紀 / 以前 / 以降 / multiple years / no Gregorian year). The two
+accept-sets are disjoint by construction and a test pins it, so no date can be imported
+twice — once as fact, once as presumption. Items already carrying `P571` are skipped: a
+presumed date never competes with a recorded one.
+
+Emma 2026-07-09: *"Yes — P571 + P1480 presumably."* `P1480` ("sourcing circumstances") and
+`Q18122778` ("presumably") were both verified live against the API, not recalled.
+
+Spot-checked against jawiki: `（伝）欽明天皇13年（552年）` → 552 (the regnal year 13 is
+correctly ignored), `伝・天平勝宝8歳（756年）` → 756. 43 tests; 267 pass across
+`modern-quickstatements/`.
+
+---
+
 ## 2026-07-09 (later) — Mifune was three articles, and the P361 "384 duplicates" were 94
 
 **`Mifune Shrine (Taki)` is not "the same article twice".** It is three concatenated articles: one

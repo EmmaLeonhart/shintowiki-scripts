@@ -58,9 +58,11 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   `docs/kokugakuin_anomaly_review_scope_2026-07.md`). Emma-led, tool-assisted.
 - [ ] **jawiki infobox imports — Emma's modeling calls only** (all mechanical builds SHIPPED
   2026-07-08: saijin 2,362 / honzon 760 / souken 4,118 / kofun 1,036 / P3225 2; 社格-ref
-  structurally empty). **伝-dates DECIDED (Emma 2026-07-09): import as `P571` + `P1480` sourcing
-  circumstances = `Q18122778` presumably** (both verified live) — 8,837 skipped fields; build the
-  generator. Still waiting on Emma: 神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, and
+  structurally empty). **伝-dates SHIPPED 2026-07-09** — `generate_souken_den_quickstatements.py`
+  (`P571` + `P1480`=`Q18122778` presumably), registered in `ATOMIC_FILES`, accept-set disjoint from
+  `souken_p571`. Shipping it exposed that `direct_daily_edits` could not encode a time value at all;
+  `souken_p571` (4,119) and `kofun_imports` (870) were both unexecutable. Fixed + 15 tests.
+  Still waiting on Emma: 神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, and
   shinto-wiki-as-source for the ~106 unsourced modern ranks.
 
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
