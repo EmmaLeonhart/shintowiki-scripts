@@ -77,24 +77,35 @@ two `part of` statements to the Awa list, ordinals 3 and 5, *each* with two `fol
 `followed by` values. Our lines carry references; these have none. The batch has never run —
 `conflict_gate` has been closed — which is the only reason we did not add to it.
 
-## 2. Thirteen named entries with no Kokugakuin id — and four of them never could have one
+## 2. Thirteen named entries with no Kokugakuin id — four of them for a reason I got wrong
 
 2,700 of the 2,713 named entries carry a Kokugakuin 式内社 database id. The 13 that do not:
 
-**Four are not shrines at all — they are palace deities**, named by *List of Shikinaisha in the
-Imperial Palace*: `Q11391709` 八神殿 (Hasshinden), `Q10928586` 座摩神, `Q135019513` 御門巫祭神 八座,
-`Q135019813` 生島巫祭神 二座. The register's opening section lists the 宮中神, kami enshrined in the
-palace itself — "eight seats", "two seats". The Kokugakuin database indexes *shrines*, so these have
-no entry to point at. **Their missing id is correct, not a gap.**
+**Four are grouped palace entries**, named by *List of Shikinaisha in the Imperial Palace*:
+`Q11391709` 八神殿 (Hasshinden), `Q10928586` 座摩神, `Q135019513` 御門巫祭神 八座, `Q135019813`
+生島巫祭神 二座. The register's opening section lists the 宮中神, kami enshrined in the palace itself.
+
+> **Correction (2026-07-10, later the same day).** I first wrote that "the Kokugakuin database
+> indexes *shrines*, so these have no entry to point at — their missing id is correct, not a gap."
+> **That is false.** The structural sweep found Kokugakuin ids **180542–180558**, a contiguous run of
+> seventeen, one per palace kami: 神産日神, 高御産日神社, 玉積産日神社, 生産日神社, 足産日神社,
+> 大宮売神社, 御食津神社 (the eight of the 八神殿); 生井神社, 福井神社, 綱長井神社, 波比祇神社,
+> 阿須波神社 (the five 座摩巫祭神); 櫛石窓神, 豊石窓神 (the 御門巫祭神); 生島神, 足島神 (the
+> 生島巫祭神). Emma has **an item for every one of them**, and no list names any of them.
+>
+> So the database does index these kami — one at a time. The four items above lack an id because
+> they are *groupings*, not because the kami are unindexed. The two models coexist: four grouped
+> entries the list names, seventeen individual entries nothing points at. Both say true things.
+> **Emma 2026-07-10: report only.** See `engishiki_list_structure_2026-07.md`.
 
 **Nine are ordinary provincial entries** whose id was simply never matched: `Q116694076` 諸口神社
 (Izu), `Q135039158` 大鳥北浜神社 (Izumi), `Q135040298` 野蚊神社 (Kaga), `Q135040786` 坐韓国伊大弖神社
 and `Q135040970` 天若日子神社 and `Q135041051` 韓國伊太弖奉神社 (Izumo), `Q135041503` 同佐肆布都神社
 (Iki), `Q135041552` 和多都美神社 (Tsushima), `Q135229657` 阿波遅神社 (Harima). All but one are ours,
-created 2025-06.
+created 2025-06. `Q135040786` is the item that means two entries at once — see §1.
 
 *Recommendation: nothing to do. Script 1 already declines to claim a database reference for an entry
-with no id — that path is tested. The four palace kami should never get one.*
+with no id — that path is tested.*
 
 ## 3. `Q11474068` — the hot spring that really is a Shikinaisha
 

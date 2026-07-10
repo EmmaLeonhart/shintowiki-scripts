@@ -69,5 +69,17 @@ Everything the bots have escalated lives here. None of it is urgent; all of it i
 * **22 duplicate `part of` statements** on named parts (`ronsha_list_membership_2026-07.md`). Three
   statements each saying the same true thing. QuickStatements cannot remove one identical twin and
   not the other, so no script can fix it. *Emma: report only.*
-* **13 named entries with no Kokugakuin id**, and `Q11474068` — 岩井温泉, a **hot spring**, carrying
-  the confirmed Shikinaisha class. Unexamined.
+* **Structural defects across the 69 lists** (`engishiki_list_structure_2026-07.md`). The corpus is
+  nearly clean: 1 ordinal held by two entries, 2 entries named at two ordinals, 2 holes, 1 has-part
+  with no ordinal, 22 entry items nothing points at. Of those 22, seventeen are the palace kami the
+  Imperial Palace list names in four *groups* instead. *Emma: report only.*
+* **`Q11395853` Izumo** names one item, `Q135040786`, for two different register entries —
+  同社坐韓国伊**大**弖神社 (28) and 同社坐韓国伊**太**弖神社 (39). Fixing it needs a new item.
+  *Emma: report only.*
+* **`Q11450714` Awa** has entry 3 (天神社) displaced by a piped link. The add is queued; the matching
+  delete is a hand fix, because two statements share the value.
+
+Closed, no longer open: the **13 named entries with no Kokugakuin id** (four are grouped palace
+entries; nine are unmatched ids, which script 1 already handles) and `Q11474068` 岩井温泉 — a hot
+spring that really *is* the register's entry 7, exactly as entry 6 is a mountain. Its list statement
+had merely lost its ordinal; the add is queued.

@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — corrected a false claim in the docs; he has stopped destroying things
+
+**The watch.** `ブルーノ・プラス` is at 757 Wikidata edits, 34 more than the last pass, and the
+archiver captured **nothing new** — 24 damaged items, all already held. His last 60 edits contain
+**zero removals**: 39 Japanese description rewrites, 15 claim additions, two new items, and three
+jawiki sitelinks attached to items *he created himself*, which is the orphaning signature only when
+the item was somebody else's. He has been purely additive since 06:15 today. No venue mentions him,
+his talk page has been quiet since April, no block. The gate holds to 2026-07-17 and slides while he
+edits daily, hard cap 2026-08-08.
+
+**A false claim, removed from the docs.** `engishiki_list_defects_2026-07.md` §2 asserted that the
+four grouped palace entries — 八神殿, 座摩神, 御門巫祭神 八座, 生島巫祭神 二座 — lack a Kokugakuin id
+because *"the database indexes shrines, so these have no entry to point at; their missing id is
+correct, not a gap."* Yesterday's structural sweep disproved it: ids **180542–180558** are a
+contiguous run of seventeen, one per palace kami (神産日神 … 足島神), and an item exists for every
+one. The database indexes these kami perfectly well, one at a time. The four items lack an id because
+they are *groupings*.
+
+The section now carries the correction inline, marked as a correction rather than silently rewritten,
+because the wrong version was committed and someone reading the history should see why it changed.
+Two more stale passages fixed in the same pass: `ronsha_list_membership_2026-07.md` still said the
+removal script was unbuilt and "awaiting Emma's confirmation" (both scripts exist and she confirmed),
+and the primer still listed the hot spring and the 13 ids as "unexamined" (both are closed).
+
+No code changed. 1124 tests pass.
+
+---
+
 ## 2026-07-10 — swept all 69 lists for the shape that caught Awa; the corpus is nearly clean
 
 The Awa defect was found because the Kokugakuin id sequence skipped 181734 while an entry item held

@@ -27,14 +27,19 @@ Emma 2026-07-10 on the cause: *"on the Shinto Shrine wiki on Japanese Wikipedia 
 amount of pipe links in the list where there was a shrine that was part of another shrine, ended
 up getting piped in, resulting in massive duplications that have since been fixed."*
 
-## What remains to decide
+## Decided, and both scripts are built
 
 Removing the list link from 2,151 Ronsha is a **remove-only** operation with nothing to add back.
 That contradicts item (d)'s "add ONE derived from the list-entry item", which assumed the shrine
-should keep a membership. Awaiting Emma's confirmation before any script is built.
+should keep a membership. **Emma confirmed the removal reading** (*"Ronshas should not even have
+list membership"*), and both scripts now exist:
 
-The 126 Ronsha that ARE named as parts keep their membership; their statement should carry the
-ordinal and neighbours the list gives.
+* `generate_list_membership_rebuild.py` — script 1, ADD-only, registered, drips.
+* `generate_list_membership_removals.py` — script 2, REMOVE-only, **unregistered**, run by hand.
+
+The 126 Ronsha that ARE named as parts keep their membership; their statement carries the ordinal
+and neighbours the list gives. See the section at the foot of this file for what script 2 refuses
+to touch.
 ## Result
 
 | | |
