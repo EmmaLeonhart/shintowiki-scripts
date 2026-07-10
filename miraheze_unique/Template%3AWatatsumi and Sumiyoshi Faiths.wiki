@@ -47,10 +47,11 @@
 * {{ill|Tsumori clan|lt=Tsumori family|ja|津守氏|12=simple|13=User:Immanuelle/Tsumori clan|12=simple|13=User:Immanuelle/Tsumori clan}}
 
 }}<noinclude>
-[[en:Template:Watatsumi and Sumiyoshi Faiths]]{{wikidata link|Q125457287|en|Template:Watatsumi and Sumiyoshi Faiths}}
+[[en:Template:Watatsumi and Sumiyoshi Faiths]]{{wikidata link|Q125457287|en|Template:Watatsumi and Sumiyoshi Faiths|fr|Modèle:Palette Foi Watatsumi et Sumiyoshi|simple|Template:Sumiyoshi and Watatsumi Faiths|check_date=2026-07-10}}
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Sumiyoshi shrines]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
