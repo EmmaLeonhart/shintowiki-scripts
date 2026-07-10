@@ -87,6 +87,17 @@ STATIC_EDITS = [
     # drops the two old forms, and only once SPARQL confirms this line landed.
     ("Q11673131", "P6375", 'ja:"〒708-0013 岡山県津山市二宮601"',
      "merges the postcoded and the prefectured address; removals wait on SPARQL"),
+
+    # The Inaba list's `has part` -> 岩井温泉 lost its series ordinal, so the list
+    # appeared to skip from entry 6 to entry 8 and the onsen looked like an orphan
+    # carrying the Shikinaisha class by mistake. It is not a mistake: the register
+    # shrine at that spa is identified WITH the spa, exactly as entry 6 (二上山) is a
+    # mountain. The onsen's own statement already says ordinal 7, following 二上山 and
+    # followed by 日野神社 — the list's side is the only thing missing.
+    # This is the ONLY has-part statement in all 69 lists that lacks an ordinal without
+    # being a class count. Verified 2026-07-10.
+    ("Q11420254", "P527", 'Q11474068|P1545|"7"',
+     "the Inaba list's entry 7 (岩井温泉) lost its series ordinal"),
 ]
 
 # ── 2. wrong addresses on Shikinai Ronsha ───────────────────────────────────

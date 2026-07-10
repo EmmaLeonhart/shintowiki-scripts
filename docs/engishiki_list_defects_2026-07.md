@@ -51,18 +51,45 @@ created 2025-06.
 *Recommendation: nothing to do. Script 1 already declines to claim a database reference for an entry
 with no id — that path is tested. The four palace kami should never get one.*
 
-## 3. `Q11474068` — the Shikinaisha that is a hot spring
+## 3. `Q11474068` — the hot spring that really is a Shikinaisha
+
+**Superseded 2026-07-10. The first version of this section recommended stripping three statements
+off this item. That recommendation was wrong, and acting on it would have destroyed correct data.**
 
 [Q11474068](https://www.wikidata.org/wiki/Q11474068) is **岩井温泉, Iwai Onsen**, a hot spring in
-Iwami, Tottori. Its description says so: 鳥取県岩美町にある温泉. It is `instance of`: **onsen**,
-**sulphur spring**, **Shikinaisha**, and **Shinto shrine**. It also claims to be part of the Inaba
-Province list, which does not name it.
+Iwami, Tottori — `instance of` **onsen**, **sulphur spring**, **Shikinaisha** and **Shinto shrine**.
+It looked like a category error: our own bot added the Shikinaisha class on 2025-06-26, the jawiki
+article is about the spa, and there is a register shrine at that spa (御湯神社, `Q135195567`).
 
-Our own bot added the Shikinaisha class on 2025-06-26. The jawiki article 岩井温泉 is about the spa,
-and there is a register shrine at it (御湯神社); the import attached the shrine's class to the spa.
+It is not an error. Look at the Inaba list around it:
 
-*Recommendation: drop `instance of: Shikinaisha`, `instance of: Shinto shrine`, and the Inaba list
-membership from the onsen. All three are our own errors and none of them is disputable — a hot
-spring is not a shrine. That is three removals, so it needs the enumerated-removal treatment
-`miscellaneous_edits.py` already has for addresses, not a computed removal. Not done: nothing was
-edited this tick.*
+| ordinal | entry | what it is |
+|---:|---|---|
+| 6 | `Q21654507` 二上山 | a **mountain** — `mountain` + `Shikinaisha` + `Shinto shrine` + `Kokuhei-sha` |
+| 7 | `Q11474068` 岩井温泉 | a **hot spring** — `onsen` + `sulphur spring` + `Shikinaisha` + `Shinto shrine` |
+| 8 | `Q135040724` 日野神社 | an ordinary shrine |
+
+Where the register's shrine is identified with a natural feature, the feature carries the shrine's
+classes. The mountain at entry 6 does exactly what the spa at entry 7 does. And 御湯神社 is not the
+same thing: it is a **Ronsha**, a disputed candidate, sitting at ordinal 1.
+
+The onsen's own statement already says it is part of the Inaba list at **ordinal 7**, following
+二上山 and followed by 日野神社 — precisely the slot the list leaves empty when it jumps from 6 to 8.
+
+### The actual defect: one missing ordinal
+
+The **list's** `has part` statement pointing at the onsen carries no `series ordinal`. That single
+omission caused everything above: `list_members()` reads an ordinal-less has-part as a class count,
+so the onsen was never a "named part", so it surfaced in the orphan report, so it looked like a
+mis-tagged spa.
+
+It is the **only** has-part statement across all 69 lists that lacks an ordinal without being a
+class count — 196 of the other 197 carry a quantity qualifier and name a class
+(`Shikinaisha` / `Taisha` / `Shōsha`).
+
+**Fixed as an add**, queued in `miscellaneous_edits.txt`:
+
+    Q11420254|P527|Q11474068|P1545|"7"
+
+Nothing is removed. Once it lands, the onsen becomes a named part and script 1 treats it like any
+other entry.

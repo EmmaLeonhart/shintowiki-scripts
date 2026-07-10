@@ -59,6 +59,45 @@ def test_every_static_edit_records_why_it_is_here():
         assert len(entry) == 4 and entry[3].strip()
 
 
+# ─────────────────────── the Inaba list's missing ordinal ───────────────────────
+
+def _inaba():
+    got = [e for e in misc.STATIC_EDITS if e[0] == "Q11420254"]
+    assert len(got) == 1
+    return got[0]
+
+
+def test_the_inaba_list_gets_its_seventh_ordinal_back():
+    qid, prop, value, _why = _inaba()
+    assert (qid, prop) == ("Q11420254", "P527")
+    assert value == 'Q11474068|P1545|"7"'
+
+
+def test_the_onsen_keeps_its_classes():
+    """岩井温泉 is a hot spring AND the register's entry 7 — as entry 6 is a mountain.
+    Nothing here may strip `instance of` from it."""
+    assert not any(q == "Q11474068" for q, _d, _k, _w in misc.ADDRESS_REMOVALS)
+    lines, _ = misc.build(_ent({}))
+    assert not any(l.startswith("-Q11474068") for l in lines)
+
+
+def test_the_ordinal_add_is_an_add_not_a_removal():
+    qid, prop, value, _why = _inaba()
+    line = misc.qs_line(qid, prop, value)
+    assert not line.startswith("-")
+    misc.assert_removals_enumerated([line])
+
+
+def test_the_daily_editor_parses_the_ordinal_line_as_a_qualified_add():
+    qid, prop, value, _why = _inaba()
+    p = dde.parse_qs_line(misc.qs_line(qid, prop, value))
+    assert p["entity"] == "Q11420254" and p["property"] == "P527"
+    assert p["value"]["value"]["id"] == "Q11474068"
+    quals = dict(p["qualifiers"])
+    assert quals["P1545"]["value"] == "7"
+    assert not p["is_removal"]
+
+
 # ─────────────────────── Kikuna targeting ───────────────────────
 
 def test_restoration_targets_our_item_not_the_husk():

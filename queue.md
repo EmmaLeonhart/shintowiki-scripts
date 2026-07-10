@@ -158,10 +158,12 @@ Three defects run down 2026-07-10 — `docs/engishiki_list_defects_2026-07.md`:
   `Q11361262` at 3 *and* 5). Script 1 was emitting rival ordinals onto one statement — **fixed**,
   it now refuses them (6 tests, batch 5,643 → 5,637 lines). The bad statements already exist live
   from the original import. The *list* is what is wrong; fix the two list items by hand.
-- [ ] **`Q11474068` 岩井温泉 is a hot spring** carrying `instance of: Shinto shrine` +
-  `instance of: Shikinaisha` + Inaba list membership — our own bot, 2025-06-26, from the jawiki
-  spa article (the register shrine there is 御湯神社). Recommend three enumerated removals via
-  `miscellaneous_edits.py`. Not done.
+- **`Q11474068` 岩井温泉 — DONE, and the previous tick's recommendation was WRONG.** The onsen's
+  classes are correct: the Inaba list's entry 6 is 二上山, a *mountain*, carrying the same
+  `Shikinaisha` + `Shinto shrine` classes. Where the register's shrine is identified with a natural
+  feature, the feature carries the classes. The real defect was that the **list's** `has part` →
+  onsen lost its `series ordinal` — the only such statement in all 69 lists. Queued as an ADD:
+  `Q11420254|P527|Q11474068|P1545|"7"`.
 - Resolved, nothing to do: of the 13 named entries lacking a Kokugakuin id, **4 are palace kami**
   (八神殿, 座摩神, and two 座-count entries) which the shrine database cannot index; the other 9
   are ordinary entries whose id was never matched, and script 1 already handles that.

@@ -4,6 +4,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — the hot spring really is a Shikinaisha; I nearly deleted correct data
+
+Yesterday's tick recommended stripping three statements off `Q11474068` 岩井温泉 — a hot spring in
+Tottori carrying `instance of: Shikinaisha` and `instance of: Shinto shrine`, plus a claim to the
+Inaba list. The reasoning was that our own bot added the class in 2025-06 from the jawiki article
+about the *spa*, and that a hot spring is not a shrine. That recommendation was wrong.
+
+Before removing anything I checked what sits next to it in the list. Entry 6 of the Inaba register
+is `Q21654507` 二上山 — a **mountain** — and it carries `mountain` + `Shikinaisha` + `Shinto shrine`
++ `Kokuhei-sha`. Entry 8 is an ordinary shrine. **Where the register's shrine is identified with a
+natural feature, the feature carries the shrine's classes.** The spa at entry 7 is doing exactly
+what the mountain at entry 6 is doing. And 御湯神社, which I had assumed was the "real" shrine the
+class belonged to, is a Ronsha — a disputed candidate — sitting at ordinal 1.
+
+This is the `feedback_wiki_weird_is_signal` case exactly, on Wikidata rather than the wiki: an
+apparent category error that encodes something real. The check that caught it was cheap — look at
+the neighbours before deleting.
+
+**The actual defect is one missing ordinal.** The *list's* `has part` statement pointing at the
+onsen has no `series ordinal`, so the Inaba list appears to jump from entry 6 straight to entry 8.
+`list_members()` reads an ordinal-less has-part as a class count, so the onsen was never a named
+part, so it surfaced in the orphan report, so it looked like a mis-tagged spa. Its own statement has
+said ordinal 7, following 二上山 and followed by 日野神社, the whole time.
+
+It is the **only** has-part statement across all 69 lists lacking an ordinal without being a class
+count: 196 of the other 197 carry a quantity qualifier and name a class. Queued as a single ADD in
+`miscellaneous_edits.txt` — `Q11420254|P527|Q11474068|P1545|"7"` — with four tests, one of which
+pins that nothing may ever strip `instance of` from the onsen.
+
+`docs/engishiki_list_defects_2026-07.md` section 3 is rewritten with the superseded recommendation
+marked as such rather than quietly replaced. 1096 tests pass.
+
+---
+
 ## 2026-07-10 — script 1 was about to hang two rival ordinals on one statement
 
 Running down the loose threads from the orphan report turned up a live corruption bug in a batch
