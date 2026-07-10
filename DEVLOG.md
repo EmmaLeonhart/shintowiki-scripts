@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — the Kokugakuin record has no address, and no 例祭 either
+
+Two queue items rested on a false assumption, and one live fetch settled both.
+
+**The address rule could not work.** Emma's metabolised method was *"check which address is on
+the database page."* The Kokugakuin 式内社データベース record **has no address field at all** — its
+fields are 大分類, 旧郡名, 座数, 官幣・国幣, 社格, 名神大社・大社・小社, 月次祭・新嘗祭の有無,
+神階の変遷, テキスト内容, 現社名など（N）, 緯度経度, リンク, 資料ID. No 所在地, no 住所, no 鎮座地.
+What it does carry is **coordinates**. Emma: *"Use the coordinates instead."*
+
+`resolve_ronsha_addresses.py` (REPORT ONLY — no QuickStatements, no removals) reads them,
+reverse-geocodes with the 国土地理院 service (`LonLatToAddress` → `muniCd` → `muni.js`), and keeps
+the address whose 都道府県 + 市区町村 matches. Of 42 Ronsha with more than one Japanese address, 33
+have exactly one Kokugakuin id: **6 resolved, 27 held.**
+
+**The first live run resolved zero.** The record writes
+`北緯 33 度 36 分 34.56 秒 <br />東経 134 度 22 分 2.05 秒`, and I was running the regex against raw
+HTML, so the `<br />` between 北緯 and 東経 defeated it and all 33 reported "0 coordinate sets".
+Tags are now stripped first, and a test pins that the raw HTML matches nothing while the visible
+text yields the coordinate.
+
+**24 of the 27 holds share one cause**, and it is the interesting one: the Kokugakuin entry lists
+*several* candidate sites (現社名など（１）…（N）), so the entry itself cannot say which shrine this
+Ronsha is. Three more hold because both addresses sit in the same municipality — coordinates
+cannot separate 三ノ宮1472 from 三ノ宮1468.
+
+**Reisai, meanwhile, is not a Kokugakuin problem either.** The record carries no 例祭. And the
+jawiki harvest is already done: `reisai.txt` holds **3,239 pending lines**, waiting only on the
+conflict gate — once they land, `P837` coverage goes from 197 to ~3,400. Emma chose the **47
+prefectural 神社庁 databases** for the remainder, opportunistically, biggest prefectures first.
+
+Also closed: the jawiki-infobox modelling section, now that every field is resolved. Added at
+Emma's request: a standing item to re-examine ブルーノ・プラス's contributions periodically, since
+the archiver runs in CI but nobody reads it unless asked.
+---
+
 ## 2026-07-10 — 神体 shipped; shintowiki is not a source; the jawiki-infobox review is closed
 
 Emma: *"Shintowiki is not a source for them"* — the ~106 unsourced modern shrine ranks stay

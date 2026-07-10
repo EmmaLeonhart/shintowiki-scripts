@@ -53,74 +53,37 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   browse-render the Kokugakuin entry page and read its 現社名など（１..N） ordering, which per
   Emma IS the ranking ground truth (method + Q135040778 worked example in
   `docs/kokugakuin_anomaly_review_scope_2026-07.md`). Emma-led, tool-assisted.
-- [ ] **jawiki infobox imports — Emma's modeling calls only** (all mechanical builds SHIPPED
-  2026-07-08: saijin 2,362 / honzon 760 / souken 4,118 / kofun 1,036 / P3225 2; 社格-ref
-  structurally empty). **伝-dates SHIPPED 2026-07-09** — `generate_souken_den_quickstatements.py`
-  (`P571` + `P1480`=`Q18122778` presumably), registered in `ATOMIC_FILES`, accept-set disjoint from
-  `souken_p571`. Shipping it exposed that `direct_daily_edits` could not encode a time value at all;
-  `souken_p571` (4,119) and `kofun_imports` (870) were both unexecutable. Fixed + 15 tests.
-  **Modeling calls answered 2026-07-10:**
-  * `山号` → **SHIPPED**: `P1448` monolingual ja + `P3831`=`Q11058522` sangō
-    (`generate_sango_quickstatements.py`, registered). Emma: *"Simple thing."*
-  * `寺格` → **SKIP**. Emma: don't repurpose `P13723` ("shrine ranking") for temple ranks.
-  * `鎮守神` → **DELETED**: filled in 0 of 1,000 sampled articles across `{{神社}}` and
-    `{{日本の寺院}}`. Structurally empty, like the 社格-ref field.
-  * `被葬者` → **SHIPPED**: both directions, `<person>|P119|<kofun>` + `<kofun>|P547|<person>`
-    (`generate_hisousha_quickstatements.py`, registered). 73 burials / 146 lines. Only **4** are
-    stated plainly; the other 69 carry `P1480`=`Q18122778` presumably, because 治定 is an Imperial
-    Household Agency *designation* and 推定/伝/一説 are hedges. `[[宮内庁]]` is the attributor, never
-    the occupant; rival candidates refused; targets must be `P31=Q5` (the raw links include a clan,
-    a district and a mountain basin).
-  * `神体` → **SHIPPED**: `P825` + `P3831`=`Q327532` shintai
-    (`generate_shintai_quickstatements.py`, registered). 40 lines. Emma chose `P825` for
-    consistency with the 本尊 import; no item on Wikidata used the shintai role before this.
-  * `社格`-as-source → **DELETED**. Emma 2026-07-10: *"Shintowiki is not a source for them."*
-    The ~106 unsourced modern ranks stay unsourced rather than cite ourselves.
-
-**Every jawiki-infobox modelling call is now answered. This section is closed except for the
-mechanical builds already shipped.**
-
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
 
-- [ ] **Reisai days beyond jawiki** — per
-  <https://www.wikidata.org/wiki/Wikidata_talk:WikiProject_Shinto#Day_of_Reisai>, many reisai dates
-  are well documented in databases. Agentic RAG to find sources. NB the `Day of Reisai` property
-  proposal was **declined** (2025-12-07, no support), so the model stays P837 + P3831=Q11385469 per
-  `docs/wikidata_shrine_festival_model.md` — do not resurrect a bespoke property.
+- [ ] **Reisai days: prefectural 神社庁 databases** (Emma 2026-07-10). The jawiki harvest is DONE —
+  `reisai.txt` holds **3,239 pending lines**, waiting only on `conflict_gate`. Kokugakuin carries no
+  例祭 either (checked: its record has 旧郡名 / 座数 / 官幣・国幣 / 社格 / 神階の変遷 / テキスト内容 /
+  現社名など / 緯度経度, and nothing else). So the remaining ~27,000 shrines need the 47 prefectural
+  jinjachō sites: per-shrine pages with 例祭日, covering the ~78k Jinja-Honchō-affiliated shrines.
+  Formats differ per prefecture → one scraper each, opportunistic, biggest prefectures first.
+  NB the `Day of Reisai` property proposal was **declined** (2025-12-07), so the model stays
+  `P837` + `P3831`=`Q11385469` per `docs/wikidata_shrine_festival_model.md`.
 
-## LAST — hard-residual street addresses, via the Kokugakuin website links (Emma 2026-07-09)
+## LAST — hard-residual street addresses: coordinate method RUN, 27 still held
 
-**Ontology, corrected by Emma:** *"you're getting ronsha ontology wrong — a ronsha is specifically
-always only one address."* A Shikinai Ronsha item is ONE candidate shrine, so it has exactly ONE
-address. Several addresses on one Ronsha is simply an error, never a legitimate list of candidates'
-addresses. (My earlier write-up claimed the entry item had absorbed its candidates' addresses. That
-was wrong and is not a model to reason from.)
+**Emma's original rule could not work.** She said *"check which address is on the database page."*
+The Kokugakuin 式内社データベース record **has no address field** — only 現社名など, 緯度経度 and a
+map link. Emma 2026-07-10: *"Use the coordinates instead."*
 
-**Method, per Emma:** read the Kokugakuin website links on each item to figure out which address is
-right. Not a mechanical rule.
+`modern-quickstatements/resolve_ronsha_addresses.py` (REPORT ONLY; emits nothing, removes nothing)
+reads the record's coordinates, reverse-geocodes them with the 国土地理院 service, and keeps the
+address whose 都道府県 + 市区町村 matches. Report: `docs/ronsha_address_resolution_2026-07.md`.
 
-State as of 2026-07-09 (`generate_uncited_address_removals.py` now emits 0 lines — the
-cited-vs-uncited signal is exhausted). Of 46 Ronsha items still holding more than one Japanese
-`P6375` (Emma removed one prefix case by hand):
+Result: 42 Ronsha have >1 Japanese address; 33 have exactly one Kokugakuin id;
+**6 resolved, 27 held.**
 
-* **~44 carry no reference at all** on any address. 3 were coarser-prefix duplicates of each other
-  (Emma removed one); the rest name genuinely different places.
-* **`Q11547364` Hibita Shrine** — a real source conflict: the shrine's own site (hibita.jp) gives
-  `神奈川県伊勢原市三ノ宮1472`; *Kanagawa Prefecture Shrine Records* (Q137052933) p. 352 gives `…1468`.
-* **`Q3530344` Toga Shrine** — both addresses carry only `P143` (imported from jawiki), which is not
-  a source. They are its 里宮 and 奥宮.
-
-**Emma's method, metabolised from the wiki queue 2026-07-09:**
-
-> *"source conflict is rare and needs reading them. Two uncited Japanese sources is almost
-> certainly from the kokugakuin database. If they have only one database link then check which
-> address is on the database page. Keep the one that is and not the one that isn't. If there's
-> two database links or zero then hold — this is another residual."*
-
-- [ ] Per item, open the Kokugakuin entry page (`P13677` → `https://jmapps.ne.jp/kokugakuin/det.html?data_id=$1`)
-  and read the address off it. Exactly ONE `P13677` → keep the address that matches the database
-  page, drop the other. TWO or ZERO `P13677` → hold, it's a further residual. Report before
-  editing; do not guess a rule and drip it.
+- [ ] Emma: review the **6 resolved** rows, then a script-2 (remove-only, SPARQL-gated) can drop
+  the losing addresses. Nothing is emitted until she does.
+- [ ] **24 of the 27 holds** are because the Kokugakuin entry lists *several* candidate sites
+  (現社名など（１）…（N）), so it cannot say which one this Ronsha is. Consider falling back to the
+  item's own `P625` instead of the entry's coordinates — Emma's call.
+- [ ] The other 3 holds: both addresses sit in the same municipality (Hibita Shrine's …1472 vs
+  …1468), so coordinates cannot separate them.
 
 ## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED; batch BUILT + WIRED TO THE DRIP)
 
@@ -212,8 +175,16 @@ The Kikuna restoration is DONE as a queued batch (`miscellaneous_edits.txt`) —
 - [ ] `Q140476265` — they created 琵琶島神社 and blanked it two minutes later. Now 0 labels,
   0 claims, 0 sitelinks. Junk item; nothing of ours in it.
 
+## LAST — re-examine ブルーノ・プラス's contributions (Emma 2026-07-10)
+
+- [ ] Look over the editor's contributions again. `archive_destroyed_items.py` runs in CI and
+  captures any newly-damaged item automatically, but Emma wants a periodic human-directed pass:
+  re-read `docs/bruno_plus_analysis_2026-07.md`, re-run the archiver and
+  `watch_conflicting_editor.py`, and report what changed — new identity changes, whether they have
+  been blocked, and whether any venue now mentions them.
+
 ## Pinned tail (keep last, always)
 
-- [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 55ae0bbe — Emma
+- [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 892a7dc2 — Emma
   replaced the earlier 3-cron setup when she extended the session 2026-07-08).
 - [ ] Run the status-report action once more independently as an end-of-session summary.
