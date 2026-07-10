@@ -65,15 +65,14 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   * `寺格` → **SKIP**. Emma: don't repurpose `P13723` ("shrine ranking") for temple ranks.
   * `鎮守神` → **DELETED**: filled in 0 of 1,000 sampled articles across `{{神社}}` and
     `{{日本の寺院}}`. Structurally empty, like the 社格-ref field.
-  * `被葬者` → **BOTH DIRECTIONS** (Emma): `P119` place-of-burial on the *person* and `P547`
-    commemorates on the *kofun*, for wikilinked values that resolve to items. 38% filled,
-    63% wikilinked, only in `{{日本の古墳}}`. NOT YET BUILT — next item below.
+  * `被葬者` → **SHIPPED**: both directions, `<person>|P119|<kofun>` + `<kofun>|P547|<person>`
+    (`generate_hisousha_quickstatements.py`, registered). 73 burials / 146 lines. Only **4** are
+    stated plainly; the other 69 carry `P1480`=`Q18122778` presumably, because 治定 is an Imperial
+    Household Agency *designation* and 推定/伝/一説 are hedges. `[[宮内庁]]` is the attributor, never
+    the occupant; rival candidates refused; targets must be `P31=Q5` (the raw links include a clan,
+    a district and a mountain basin).
   * `神体` → still Emma's call (6% filled, 86% wikilinked; no clean property).
 
-- [ ] **Build the 被葬者 importer** per the decision above: `<person>|P119|<kofun>` and
-  `<kofun>|P547|<person>`, wikilinked values only, cited `S4656`. Many values are 伝-attributions
-  (伝〇〇天皇) — apply `P1480`=`Q18122778` presumably, as with the 伝-dates, or refuse them; bring
-  the split to Emma with counts before emitting.
 - [ ] shinto-wiki-as-source for the ~106 unsourced modern ranks — still Emma's call.
 
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)

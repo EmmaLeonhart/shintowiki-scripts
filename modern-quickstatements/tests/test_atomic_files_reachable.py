@@ -39,6 +39,7 @@ GENERATORS = [
     "generate_province_exclusions",
     "generate_miscellaneous_edits",
     "generate_sango_quickstatements",
+    "generate_hisousha_quickstatements",
 ]
 
 

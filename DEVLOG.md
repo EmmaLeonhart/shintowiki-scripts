@@ -4,6 +4,36 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — 被葬者: 1,528 articles, 73 statements, and 69 of them are only *presumably* true
+
+Built on Emma's decision (*"Build it, 伝-marked get P1480"*, *"Both directions, unconditionally"*)
+— but only after measuring it, because the queue's "38% filled, 63% wikilinked" was misleading.
+
+**The wikilink is usually the wrong entity.** 大仙陵古墳 reads `（[[宮内庁]]治定）第16代[[仁徳天皇]]`:
+the Imperial Household Agency is the *attributor*, not the occupant. A naive "wikilinked values
+only" rule would have emitted `宮内庁 | P119 | 大仙陵古墳`. The person is read from outside the
+parenthetical hedge, and the attributor names are excluded outright.
+
+**And the link target is often not a person.** Of 112 distinct targets, 111 resolve to Wikidata
+items but only **68 are `P31 = Q5`**. The rest include `[[紀氏]]` (a clan), `[[都筑郡]]` (a
+district), `[[珠流河国造]]` (an office) and `[[峰山盆地]]` (a mountain basin).
+
+So: 1,528 kofun articles → 303 fill 被葬者 → 130 name a single candidate → **73 emittable**. Of
+those, exactly **four** state the occupant without hedging: Emperor Meiji → Fushimi Momoyama no
+Misasagi, Emperor Taishō → Musashi Imperial Graveyard, Kusunoki Masatsura, and Prince Sawara —
+all modern documented graves rather than archaeology. The other 69 carry `P1480 = Q18122778`
+presumably, the same qualifier the 伝-dates use, for the same reason. **治定 counts as a hedge**:
+an Imperial Household Agency designation is not an excavation result, and asserting it plainly
+would make a claim jawiki does not make.
+
+Rival candidates are refused rather than picked: 河内大塚山古墳 names 雄略天皇 *or* 安閑天皇. So is
+将門塚's `不明（伝・[[平将門]]）`, where the only link sits inside a field that says the occupant is
+unknown.
+
+146 lines (73 × both directions), zero removals, every one parsed through the real daily editor.
+Registered in `ATOMIC_FILES`. 497 tests pass.
+---
+
 ## 2026-07-10 — 山号 shipped; a field that was structurally empty; a citation gap in souken
 
 Emma asked to work the queue with `AskUserQuestion` on the ambiguities. Four of the jawiki
