@@ -52,9 +52,12 @@ import argparse
 
 from generate_souken_quickstatements import (
     CONFIGS,
+    _REBUILD,
+    _VAGUE,
     embedded_titles,
     fetch_batch,
     items_with_p571,
+    strip_citations,
 )
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -70,23 +73,47 @@ _DEN_RE = re.compile(r"伝")
 
 # Everything the sibling skips for a reason OTHER than 伝. A field carrying any of
 # these is not merely presumed — it is vague, and no single year can be asserted.
-_OTHER_SKIP_RE = re.compile(r"不詳|頃|\?|？|紀元前|BC|年間|以前|以降|世紀")
+_OTHER_SKIP_RE = re.compile(_VAGUE)
 
 _YEAR_RE = re.compile(r"(\d{3,4})年")
 
+# Fields routinely pack a founding and a rebuilding into one value, separated by a
+# line break or a punctuation mark:
+#     伝・奈良時代初期<br />再興：平成9年（1997年）
+# The only Gregorian year there belongs to the 再興, and the traditional founding has
+# none at all. Taking "the single year in the field" imported 1997 as 竹林寺's
+# inception. So the year must come from the segment that actually carries the 伝.
+_SEGMENT_RE = re.compile(r"<br\s*/?>|[\n；;、,]")
+
+
+_REBUILD_RE = re.compile(_REBUILD)
+
+
+def _years_in(text):
+    return {y for y in (int(m) for m in _YEAR_RE.findall(text)) if 300 <= y <= 2026}
+
 
 def parse_den_year(field):
-    """The single unambiguous Gregorian year of a *traditional* date, or None."""
-    field = re.sub(r"<!--.*?-->", "", field, flags=re.S)
-    field = re.sub(r"\{\{sfn[^}]*\}\}", "", field, flags=re.I)
+    """The single unambiguous Gregorian year of a *traditional* date, or None.
+
+    The year is read only from the 伝-bearing segment(s). A segment WITHOUT 伝 that
+    still carries a year is fatal unless it is explicitly a rebuilding — otherwise
+    `伝807年、810年` (two rival traditional years) would silently resolve to 807.
+    """
+    field = strip_citations(field)
     if not field.strip():
         return None
     if not _DEN_RE.search(field):
         return None                      # not a traditional date — sibling's job
     if _OTHER_SKIP_RE.search(field):
         return None                      # vague as well as traditional
-    years = {int(y) for y in _YEAR_RE.findall(field)}
-    years = {y for y in years if 300 <= y <= 2026}   # era-year "2年" noise is <300
+
+    years = set()
+    for segment in _SEGMENT_RE.split(field):
+        if _DEN_RE.search(segment):
+            years |= _years_in(segment)
+        elif _years_in(segment) and not _REBUILD_RE.search(segment):
+            return None                  # a rival year we cannot attribute
     if len(years) != 1:
         return None
     return years.pop()

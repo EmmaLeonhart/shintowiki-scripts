@@ -43,7 +43,69 @@ CONFIGS = [
     ("Template:日本の寺院", r"\|\s*創建年\s*=\s*([^\n]*)"),
 ]
 _YEAR_RE = re.compile(r"(\d{3,4})年")
-_SKIP_RE = re.compile(r"伝|不詳|頃|\?|？|紀元前|BC|年間|以前|以降|世紀")
+
+# Vague: the article declines to give a definite year.
+# 不明 was missing until 2026-07-09 — only 不詳 was listed — and 大御食神社's field is
+# literally `不明` followed by a <ref> whose *citation* carries "1921年". Both gaps
+# together produced a confident P571 of 1921 for a shrine whose founding jawiki calls
+# unknown. Neither gap is theoretical.
+_VAGUE = r"不詳|不明|未詳|頃|\?|？|紀元前|BC|年間|以前|以降|世紀"
+
+# A rebuild/relocation year is not a founding year. 竹林寺 (生駒市) reads
+# `伝・奈良時代初期<br />再興：平成9年（1997年）`: the only Gregorian year in the field
+# belongs to the 再興, and the founding has none. Where such a marker is present this
+# script cannot attribute the year, so it declines.
+_REBUILD = r"再興|再建|中興|復興|移転|遷座|再造"
+
+_SKIP_RE = re.compile(r"伝|" + _VAGUE + "|" + _REBUILD)
+
+_CITE_TEMPLATES = {"sfn", "refnest", "efn", "reflist", "citation", "r"}
+
+
+def _strip_matching_templates(text, names):
+    """Remove balanced {{name|...}} templates, so nested braces don't cut short."""
+    out, i, n = [], 0, len(text)
+    while i < n:
+        if text.startswith("{{", i):
+            depth, j = 0, i
+            while j < n:
+                if text.startswith("{{", j):
+                    depth += 1
+                    j += 2
+                elif text.startswith("}}", j):
+                    depth -= 1
+                    j += 2
+                    if depth == 0:
+                        break
+                else:
+                    j += 1
+            if depth != 0:                       # unbalanced — leave it alone
+                out.append(text[i])
+                i += 1
+                continue
+            name = text[i + 2:j - 2].split("|", 1)[0].strip().lower()
+            if name in names or name.startswith("cite"):
+                i = j
+                continue
+            out.append(text[i:j])
+            i = j
+            continue
+        out.append(text[i])
+        i += 1
+    return "".join(out)
+
+
+def strip_citations(field):
+    """Drop comments, <ref>…</ref>, and citation templates.
+
+    A citation's publication year is not the subject's founding year. Before this,
+    only `{{sfn}}` was stripped — and only by a regex that stops at the first `}}`,
+    so a nested `{{Refnest|…{{NDLDC|…}}…}}` survived and leaked its years.
+    """
+    field = re.sub(r"<!--.*?-->", "", field, flags=re.S)
+    field = re.sub(r"<ref[^>]*/\s*>", "", field, flags=re.I)
+    field = re.sub(r"<ref[^>]*>.*?</ref>", "", field, flags=re.S | re.I)
+    return _strip_matching_templates(field, _CITE_TEMPLATES)
 
 
 def _get(params):
@@ -94,8 +156,7 @@ def fetch_batch(titles):
 
 def parse_year(field):
     """The single unambiguous Gregorian year, or None."""
-    field = re.sub(r"<!--.*?-->", "", field, flags=re.S)
-    field = re.sub(r"\{\{sfn[^}]*\}\}", "", field, flags=re.I)
+    field = strip_citations(field)
     if not field.strip() or _SKIP_RE.search(field):
         return None
     years = {int(y) for y in _YEAR_RE.findall(field)}

@@ -101,3 +101,56 @@ def test_qualifier_entities_are_the_verified_ones():
 
 def test_no_line_is_a_removal():
     assert not den.qs_line("Q1", 807, "u").startswith("-")
+
+
+# ------------------------------------------------------------ the two live bugs
+# Both fields below are the real jawiki text, and both produced a confident, wrong
+# P571 on the first full run (639 lines) before these guards existed.
+
+TAKERINJI = "伝・[[奈良時代]]初期<br />再興：[[平成]]9年（[[1997年]]）"
+OMIKE = (
+    "不明<ref name=\"#1\">『上伊那郡史』唐沢貞治郎　1921年　上伊那郡教育会</ref>"
+    "{{Sfn |唐沢貞治郎 |1921 |p=969 }}"
+)
+
+
+def test_restoration_year_is_not_the_founding_year():
+    """竹林寺 (生駒市): the traditional founding is 'early Nara period' — no Gregorian
+    year at all. 1997 belongs to the 再興. It imported 1997 as inception."""
+    assert den.parse_den_year(TAKERINJI) is None
+
+
+def test_a_year_in_the_den_segment_still_survives_a_sibling_rebuild_segment():
+    field = "伝・[[寛弘]]元年（[[1004年]]）<br />再興：[[平成]]9年（[[1997年]]）"
+    assert den.parse_den_year(field) == 1004
+
+
+def test_unknown_founding_with_a_citation_year_is_refused():
+    """大御食神社: the field is literally 不明; 1921 is a citation's publication year."""
+    assert den.parse_den_year(OMIKE) is None
+    assert souken.parse_year(OMIKE) is None
+
+
+def test_fumei_is_vague_not_just_fushou():
+    assert den.parse_den_year("伝 不明") is None
+    assert souken.parse_year("不明（[[1921年]]）") is None
+
+
+def test_reference_publication_years_never_leak():
+    field = '伝[[807年]]<ref name="a">『郡史』1921年</ref>'
+    assert den.parse_den_year(field) == 807
+
+
+def test_nested_refnest_template_is_stripped_whole():
+    """A regex stopping at the first }} left the outer template's years behind."""
+    field = "伝[[807年]]{{Refnest|group=注|『書』{{NDLDC|123}} 1921年}}"
+    assert den.parse_den_year(field) == 807
+
+
+def test_self_closing_ref_is_stripped():
+    assert den.parse_den_year('伝[[807年]]<ref name="a" />') == 807
+
+
+def test_sibling_refuses_rebuild_markers_since_it_cannot_scope_them():
+    """souken has no 伝 anchor to scope by, so it declines rather than guess."""
+    assert souken.parse_year("[[奈良時代]]初期<br />再興：[[平成]]9年（[[1997年]]）") is None
