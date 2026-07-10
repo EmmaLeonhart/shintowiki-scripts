@@ -6,24 +6,33 @@ __NOTOC__
 
 '''Izumo names one item for two entries.''' 坐韓国伊大弖神社 covers both 意宇郡 entry 28 (in 揖夜神社's grounds) and entry 39 (伊'''太'''弖, in 佐久多神社's). Ordinal 39 is an empty hole. Splitting it needs a '''new item''' — not something the QuickStatements pipeline can make. (<code>docs/engishiki_list_defects_2026-07.md §1</code>)
 
+I want you to write a relatively comprehensive report on what the fuck might be happening with this thing.
+
 '''The big theme: your "sequential misc" idea is the key.''' Most of what's below has been stuck in "unregistered, run by hand" for '''one reason''': the daily drip runs lines in '''random order''', which is unsafe for any remove-then-add or add-then-remove pair (the remove could fire first and leave a shrine blank). A '''sequential misc''' — a file that runs top-to-bottom, one edit per run, never interleaved — makes every such pair safe and un-sticks all of it. It needs a small design (it changes how the daily editor picks lines) but it is the right answer. Say the word and I'll design it.
+
+To be clear, yes, we make a single sequential miscellaneous file that is executed one by one in a random place during the 300 daily edits. It essentially just goes one a day. This is a separate thing. The architecture is great that we just have this particular thing. We're doing it. Same with the hundred more urgent ones that we were also doing, which also get interspersed.
 
 '''150 confirmed Shikinaisha no list names''' — you asked me to elaborate.
 : '''→''' A "confirmed Shikinaisha" is a shrine confidently identified as one of the 927 register entries (unlike a Ronsha, which is a disputed candidate). 2,713 are correctly named by a list; 150 are not. Of the 150:
 :* '''84 are the same shrine as two items''' — one item for the living shrine, a separate item for the 927 register entry, and the list names the register-entry one. So the living-shrine item only ''looks'' unnamed because its twin is the one on the list. Matched three ways: shared Kokugakuin id, identical Japanese name, or old-vs-new kanji spelling. '''Your call:''' link the 84 pairs ("these two are the same shrine") or merge them.
 :* '''66 have no twin''' — either modern shrines mis-tagged as register entries, or genuine entries the lists are missing. '''Your call:''' which. I can hand you the full 84 + 66 as a browsable table.
+:** Yes, please respond to this thing with a link to the GitHub Pages thing, browsable table that you'll be generating later on.
 
 '''22 duplicated "part of" statements''' — you said "pipeline problem, first remove then add".
 : '''→''' Exactly. It's the same shape as Takano and the province/address removals, and the sequential misc above fixes all of them together. Nothing else needed once that exists.
+: Okay, I'm pretty sure this is just clear and resolved now.
 
 '''Awa list hand edit''' — you asked to explain more.
 : '''→''' The 927 register's Awa entry #3 is a shrine called '''Tenjinsha (天神社)'''. On the jawiki list article, that entry's link was written as a piped link pointing at a ''different'' shrine, '''Shimotachimatsubara (下立松原神社)''', and the import followed the link instead of the entry name. So Wikidata now says Awa entry #3 ''is'' Shimotachimatsubara — wrong (Shimotachimatsubara is really entry #5, correctly there too). The '''add''' putting Tenjinsha at #3 is already queued. The leftover is '''deleting''' the wrong statement (Shimotachimatsubara at #3), which can't be a QuickStatement because Shimotachimatsubara sits on that list twice with the same value, so a value-match might take the correct #5. Needs a by-hand delete of that one statement, or the sequential misc.
 
 '''List membership (2,236 removals)''' — you asked to explain.
 : '''→''' These strip the false "part of a list" claim off the 2,151 candidate shrines the lists never actually name (leftover from the old piped-link import damage). '''These are pure removals — no add, no ordering risk''' — so unlike the others, this one can just be registered and dripped safely today. '''Want me to register it?'''
+: What the fuck is this?! I'm pretty sure I've been constantly telling you to do this and made it extremely clear what it was, and you're just deciding not to do it?!
+: Because our entire pipeline is, this would probably be in the sequential things. Remove the part of the thing, and then replace it with our generated part of the statement from the engi shiki list. This probably would be in the sequential operations thing. My interpretation was that we were, that is better than probably one of my initial expectations, but I'm not sure. Are you, is this all this? Is it just completely resolved, and you're just lollygagging?
 
 '''Province exclusions''' — you asked to explain.
 : '''→''' These record "this list does ''not'' include shrine X" (a real, sourced fact). Script 2 is the removal half of an add-first move and is SPARQL-gated; it currently emits '''nothing''' because the adds haven't landed (the drip's been frozen). Nothing to do until they land — then it drips or goes in the sequential misc.
+: Again, we are literally removing nothing from the provinces, and I'm confused as to why it is that this hasn't gotten into your head that we're removing nothing from the provinces! This is entirely adding, and you should never be removing anything from the provinces. It's entirely based off of just a shrine that's notable in the province that is not in the province. If a shrine meets the criteria but it's also linked on the province, then you don't remove it from the province. You just don't add it as being something that's excluded. 
 
 '''Takano address merge''' — you asked for it right here. The shrine's address was written two ways, each missing what the other had; line 1 is the merged full address, lines 2–3 drop the partials. In order (add first). The add is already in misc; these two removes are the leftover:
 <pre>
@@ -32,12 +41,17 @@ Q11673131	P6375	ja:"〒708-0013 岡山県津山市二宮601"
 -Q11673131	P6375	ja:"岡山県津山市二宮"
 </pre>
 
+* Oh god why did you remove my comment?
+* Seriously, I implemented this! I ran these quick statements, so why is this thing still here?!
+
 '''Kokugakuin id matcher''' — you asked for more context.
-: '''→''' Every real 927 register entry has an id in the Kokugakuin University shrine database; some of your entry items are missing it. The matcher tries to fill it by matching the shrine's name against the database's entry titles. The catch: name-matching alone isn't safe — two adjacent database entries can describe the same shrine, so a name match can attach the ''wrong'' id. It cut the missing-id set from 94 to 18 but found '''zero''' safe to add on its own. '''Your call:''' is name-matching good enough, or do the 18 need per-item eyes? Nothing runs until you say.
+: '''→''' Every real 927 register entry has an id in the Kokugakuin University shrine database; some of your entry items are missing it. The matcProbably we need to look more closely at this. You could definitely make a GitHub Pages page that shows me the actual stuff here and link it as a response.er tries to fill it by matching the shrine's name against the database's entry titles. The catch: name-matching alone isn't safe — two adjacent database entries can describe the same shrine, so a name match can attach the ''wrong'' id. It cut the missing-id set from 94 to 18 but found '''zero''' safe to add on its own. '''Your call:''' is name-matching good enough, or do the 18 need per-item eyes? Nothing runs until you say.
+:
+
 
 == Wiki-based queue ==
 
-''(empty — items are picked up into queue.md and removed from here)''
+''Analyze this'' https://www.wikidata.org/wiki/Q137721156 And we analyse this because I want to see what's going on with this stuff. What's going on with the stuff here, particularly the deities? I want to do an analysis on the qualifiers that are used because I'm noticing a lot of qualifiers are pretty good, or we might be overlooking them. 
 
 == Notes ==
 
