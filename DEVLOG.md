@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — 神体 shipped; shintowiki is not a source; the jawiki-infobox review is closed
+
+Emma: *"Shintowiki is not a source for them"* — the ~106 unsourced modern shrine ranks stay
+unsourced rather than cite our own wiki. Item deleted, not deferred.
+
+And: *"shintai modelling find a property and it will have the object of statement has role
+shintai."* `Q327532` verified live (*shintai — "objects worshipped at or near Shinto shrines"*).
+**No item on Wikidata used `P3831 = Q327532` before this**, so every statement is a first use.
+No property fits cleanly — the values are mountains, swords and mirrors, and Wikidata has no
+"object of veneration". Emma chose **`P825` + role**, on internal consistency: `generate_honzon`
+already imports 本尊, a temple's principal object of veneration, as bare `P825`. `P527` "has
+part(s)" was rejected — Mt Fuji is not a *part* of Fujisan Hongū Sengen Taisha.
+
+**Three traps, all found by looking at the data.**
+
+* `（[[神体山]]）` is a **class annotation**, not the shintai. 36 of the 45 raw link targets are
+  the word 神体山 (or 磐座, 御霊代). Reading links naively would have emitted
+  `<shrine>|P825|神体山` thirty-six times — the same shape as the `[[宮内庁]]` attributor in 被葬者.
+* A piped link's target is often the containing article: 賀茂別雷神社 writes
+  `[[柊野#名所・旧跡|神山]]`, where 柊野 is a **district**; 春日大社 writes `[[春日山 (奈良県)|御蓋山]]`,
+  where the target is the range and the display is the peak. Emma's rule: refuse a piped link
+  whose display differs from its target, ignoring a disambiguator.
+* **My first fix was itself a bug.** Stripping parentheticals before reading links also ate a
+  link's *disambiguator*, turning `[[弥山 (広島県)|弥山]]` into `[[弥山 |弥山]]` and losing the
+  article title. A test I had just written caught it. The class annotation is removed by name.
+
+Two rows survived all of that and were still wrong. `[[鉾]]` is a jawiki **redirect** to 矛, the
+weapon *class*, so `P825` would have pointed at a type rather than 大神神社 (栃木市)'s halberd; and
+`[[蓑山]]` redirects to 美の山公園, a **park**. A blanket "refuse redirects" rule would have been
+wrong — `富士山 (代表的なトピック)` is also a redirect, to the correct Mount Fuji. So the two are
+named in `REFUSED_TARGETS` with their reasons, the way `ISLAND_EXCEPTIONS` names its two shrines.
+
+6,712 shrine articles → 140 fill 神体 → 42 name a single shintai → **40 lines**. Zero removals;
+every line parsed through the real daily editor.
+
+**The jawiki-infobox modelling review is now closed.** 山号, 寺格, 鎮守神, 被葬者, 神体 and the
+社格-as-source question are all resolved.
+---
+
 ## 2026-07-10 — 被葬者: 1,528 articles, 73 statements, and 69 of them are only *presumably* true
 
 Built on Emma's decision (*"Build it, 伝-marked get P1480"*, *"Both directions, unconditionally"*)

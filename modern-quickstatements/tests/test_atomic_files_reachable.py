@@ -40,6 +40,7 @@ GENERATORS = [
     "generate_miscellaneous_edits",
     "generate_sango_quickstatements",
     "generate_hisousha_quickstatements",
+    "generate_shintai_quickstatements",
 ]
 
 

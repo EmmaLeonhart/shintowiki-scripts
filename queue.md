@@ -71,9 +71,14 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
     Household Agency *designation* and 推定/伝/一説 are hedges. `[[宮内庁]]` is the attributor, never
     the occupant; rival candidates refused; targets must be `P31=Q5` (the raw links include a clan,
     a district and a mountain basin).
-  * `神体` → still Emma's call (6% filled, 86% wikilinked; no clean property).
+  * `神体` → **SHIPPED**: `P825` + `P3831`=`Q327532` shintai
+    (`generate_shintai_quickstatements.py`, registered). 40 lines. Emma chose `P825` for
+    consistency with the 本尊 import; no item on Wikidata used the shintai role before this.
+  * `社格`-as-source → **DELETED**. Emma 2026-07-10: *"Shintowiki is not a source for them."*
+    The ~106 unsourced modern ranks stay unsourced rather than cite ourselves.
 
-- [ ] shinto-wiki-as-source for the ~106 unsourced modern ranks — still Emma's call.
+**Every jawiki-infobox modelling call is now answered. This section is closed except for the
+mechanical builds already shipped.**
 
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
 
