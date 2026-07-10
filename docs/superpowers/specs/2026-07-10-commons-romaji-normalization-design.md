@@ -14,10 +14,13 @@ house convention — the way `temple_english.py` turns a temple into `"<Stem>-<s
 project builds that normalizer for **Commons romaji input**, and — crucially — **proves it against
 enwiki titles before any Wikidata edit is ever proposed.**
 
-Emma's framing (2026-07-10): *"this is just one part of our pipeline that will come immediately
-before the same Japanese label part."* So the normalizer is a **pipeline stage**, sharing suffix and
-macron conventions with the existing kana→label stage. This build is its proving ground; once the
-accuracy is approved it becomes a real label source.
+Emma's framing (2026-07-10): the normalizer is a **midway fallback stage** — it fires only when the
+earlier, higher-confidence stages (kana-derived label, wiki-title lookup) have already failed to
+produce a label. That placement is *why* an imperfect result is acceptable: *"it's wrong but an
+acceptable error as this is midway conditional on other stuff earlier in the pipeline failing."* When
+the alternative is no label at all, a close-but-macron-light label from the Commons reading wins.
+This build is the stage's proving ground; once the accuracy is approved it becomes a real label
+source slotted at that fallback position.
 
 ## Scope
 
@@ -49,16 +52,19 @@ Input is the Commons category name (already Latin script for Japanese subjects, 
      `"<Stem> Shrine"`; `Jingū`/`Jingu` → `"<Stem> Grand Shrine"`; `Taisha` → `"<Stem> Grand Shrine"`;
      `Daijinja` → `"<Stem> Daijinja"`; `-sha` → `"<Stem>-sha Shrine"`; `-gu`/`-gū` →
      `"<Stem>-gu Shrine"`. If the Commons name already ends in ` Shrine`, keep it.
-3. **Macron restoration — best-effort, and deliberately different from the kana stage.** Apply
-   `ou → ō`, `uu → ū`, `oo → ō` (and the long-vowel spellings that actually occur) **to the romaji
-   spelling**. This is a real divergence to call out: the kana stage *collapses* long vowels
-   Kyoto-style (`Senso-ji`, no macron), whereas this Commons stage *restores* them (`Sensō-ji`) —
-   which is what enwiki does too, so it grades better. Where the Commons name gives no signal (a bare
-   `Sensoji` that cannot be *known* to be `Sensō-ji` from romaji alone), output the un-macroned form.
-   **A missed macron is acceptable output — the least-bad kind of romaji error — and is never a
-   defect.** Consequence Emma has accepted: an item caught by the Commons stage gets a macroned label
-   while one caught by the kana stage gets a collapsed one; the two stages' macron styles differ, and
-   that is fine.
+3. **Long vowels — transcribe what the romaji marks, never guess what it doesn't.** Where the
+   Commons romaji *spells a long vowel out*, render the macron: `ou → ō`, `oo → ō`, `uu → ū`. Where
+   it does **not** mark one — a bare `o` — leave it plain. The stage does not *recover* an unmarked
+   long vowel (Emma, 2026-07-10: *"commons stage does not restore long vowels"*). The two canonical
+   cases, which are the load-bearing fixtures:
+
+   | Commons name | output |
+   |---|---|
+   | `Sensouji` | `Sensō-ji Temple` — the `ou` is spelled, so it becomes `ō` |
+   | `Sensoji` | `Senso-ji Temple` — bare `o`, no signal, left plain |
+
+   The second case is a **missed macron, and that is acceptable output** — the least-bad kind of
+   romaji error, never scored against the pipeline.
 4. **Be conservative.** If the name has no recognised shrine/temple suffix, or the stem still
    contains non-Latin script, or it's obviously not a building (a festival, a deity, a sect), return
    `None` — no label rather than a wrong one. This mirrors the existing deterministic generators.
@@ -106,10 +112,12 @@ hers to set once the number exists.
 ## Testing
 
 - `commons_normalize.py` is pure → a thorough unit suite over **real fixtures**:
-  - macron restoration: `Sensou-ji → Sensō-ji`; and a bare `Sensoji → Sensoji` (missed macron is a
-    *pass*, not a fail).
-  - suffix detection: `-ji`/`-dera`/`-in`/`-an`/`-do`/`-bo` → ` Temple`; `Jinja`/`Jingū`/`Taisha` →
-    house shrine form; already-suffixed input kept.
+  - long vowels (the two canonical cases): `Sensouji → Sensō-ji Temple` (spelled `ou` → `ō`) and
+    `Sensoji → Senso-ji Temple` (bare `o` left plain — this is a *pass*, the acceptable missed macron,
+    not a fail).
+  - suffix detection: `-ji`/`-dera`/`-in`/`-an`/`-do`/`-bo` → ` Temple`; `Jinja` → ` Shrine`,
+    `Jingu`/`Jingū`/`Taisha` → ` Grand Shrine`, `-sha`/`-gu` → house shrine form; already-suffixed
+    input kept.
   - disambiguator stripping: `Kasuga-taisha (Nara) → Kasuga-taisha …`.
   - conservatism: non-building junk in the P31 sets (festival, deity, sect, `教会`) → `None`.
 - The grader's bucketing is tested against hand-built `(candidate, enwiki-title)` pairs — one fixture
