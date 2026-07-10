@@ -4,6 +4,41 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — deity research: 祭神→P825 with object-named-as + principal-role qualifiers
+
+`generate_saijin_deity_research.py` — the research companion to the high-precision
+`generate_saijin_quickstatements.py`. It does the deferred deity RESEARCH from
+`docs/jawiki_infobox_import_review_2026-07.md` and emits the FULL P825 model Emma's
+screenshot showed (existing shrine convention): deity item + `P1932` "object named as"
+(the source's exact 祭神 spelling) + `S4656` jawiki ref, plus `P3831` = principal-deity
+role where jawiki marks a 主祭神. Emma 2026-07-10 chose the P3831 model and "research
+unlinked names too".
+
+* **Unlinked-name matching** (the research): plain-text 祭神 names → kami items by EXACT
+  ja label/alias, gated on `wdt:P31/wdt:P279* wd:Q178885` (deity) and UNIQUE match. No
+  fuzzy matching — a mis-split token matches nothing and is dropped, so SPARQL exactness
+  is the safety net. Sample: 31/144 plain names matched, the rest safely skipped.
+* **Two 主祭神 conventions**, both parsed; principal-ness NEVER inferred from list order:
+  label `主祭神：X` (following) and annotation `X（主祭神）` (preceding). The annotation form
+  caught a real false-positive first cut: 高麗神社 writes `高麗王若光…（主祭神）`, and the naive
+  "everything after 主祭神" reading tagged the auxiliary Sarutahiko/Takenouchi as principal
+  and missed the real principal. Fixed and tested; 高麗王若光 (Q8010424) is now the principal.
+* Self-draining: skips (shrine,deity) pairs already on Wikidata; principal lines skip only
+  pairs already `P3831`-qualified. 14 unit tests.
+
+**TWO decisions before this drips — UNREGISTERED for now:**
+1. **Role item.** There is no clean "principal enshrined deity" item. `Q1589492` (ja 主神,
+   its ja description literally lists 主祭神; en label "King of the Gods" — a stretch) is the
+   nearest existing concept and is a single swappable constant. Creating a bespoke item is
+   off-limits autonomously — Emma to confirm/replace `PRINCIPAL_DEITY_ROLE`.
+2. **Registration.** Not in `ATOMIC_FILES` yet; add once the role item is confirmed (the
+   drip is conflict-gated until 2026-07-17 regardless).
+
+Yield is honest: the 神社 infobox mostly does NOT distinguish principal vs auxiliary, so the
+P3831 qualifier applies to a small minority; the bulk value is the P825+P1932 deity import.
+
+---
+
 ## 2026-07-10 — regenerated the GitHub Pages _site via CI (Miraheze is Cloudflare-blocked locally)
 
 Emma asked for the GitHub Pages site to be regenerated. `site/generate_pages.py` needs live

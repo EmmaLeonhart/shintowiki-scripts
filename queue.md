@@ -5,6 +5,20 @@ numbers = priority; bulk LLM-grunge lives in `remote_queue.json`, not here).
 
 ---
 
+## Deity research: 祭神→P825 + qualifiers (BUILT, unregistered — 2 decisions for Emma)
+
+`generate_saijin_deity_research.py` (14 tests) emits the full P825 model — deity + `P1932`
+"object named as" (source's exact 祭神 spelling) + `S4656` jawiki ref, plus `P3831` principal
+role where jawiki marks a 主祭神 (both `主祭神：X` label and `X（主祭神）` annotation forms; the
+annotation form fixed a 高麗神社 false-positive). Unlinked names matched to kami items by exact
+ja-label + deity-class SPARQL, unambiguous only. See DEVLOG 2026-07-10.
+
+- [ ] **Confirm/replace the principal-deity role item.** `PRINCIPAL_DEITY_ROLE = Q1589492`
+  (ja 主神, desc includes 主祭神; en "King of the Gods" — a stretch). No clean item exists;
+  creating one is off-limits autonomously. Emma to confirm or name a better item.
+- [ ] **Register in `ATOMIC_FILES`** once the role item is confirmed (`saijin_deity_research.txt`;
+  drip is conflict-gated until 2026-07-17 regardless).
+
 ## 1. Category-orchestrator throughput (conditional, low priority)
 
 - [ ] A full ns14 category cycle still takes ~many fires at ~1000 pages/145min. ONLY if the
