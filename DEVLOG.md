@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — 山号 shipped; a field that was structurally empty; a citation gap in souken
+
+Emma asked to work the queue with `AskUserQuestion` on the ambiguities. Four of the jawiki
+infobox modelling calls are now answered, and one of them dissolved on inspection.
+
+**`鎮守神` does not exist.** Before asking about it I measured it: filled in **0 of 1,000**
+sampled articles across both `{{神社}}` and `{{日本の寺院}}`. Structurally empty, exactly like the
+社格-ref field. Deleted from the queue rather than put to Emma.
+
+**`山号` shipped.** Filled on **92%** of temple articles — the highest-yield unmapped field.
+Emma: *"official name (P1448) with a qualifier object of statement has role (P3831) sangō
+(Q11058522). Simple thing."* `Q11058522` verified live (*"a part of name of Buddhist temples
+(in Japan)"*); zero items currently carry `P1448` with that role, so every line is new. `P1448`
+is monolingualtext, which is what makes the plain-text values usable — only 7% are wikilinked.
+
+**`寺格` skipped** on Emma's call: `P13723` is labelled and described as *shrine* ranking, and
+repurposing it for Buddhist temple ranks is the conspicuous modelling that draws attention.
+**`被葬者` gets both directions** (`P119` on the person, `P547` on the kofun) — not yet built.
+The bunrei-source research is **parked**.
+
+**Three bugs the 400-article sample exposed**, none of which a shape-only test would catch:
+
+* `泉涌寺`'s field is `東山（とうざん）<br/>泉山（せんざん）` — two different sangō. Stripping the
+  `<br/>` before splitting fused them into **東山泉山**, a name that does not exist. `大乗寺` became
+  **東香山椙樹林金獅峯**. The parser now splits on `<br>` first and refuses a field naming more
+  than one sangō rather than picking one.
+* `瀧泉寺`'s `泰叡山{{Sfnp|…|1927|p=101}}` was refused because only `{{sfn}}` was in the citation
+  set. **That gap is shared with `generate_souken_quickstatements`**, where a `{{Sfnp}}`
+  publication year could leak into a founding date exactly as the `<ref>` years did yesterday.
+  Both now match `sfn*`, `harv*` and `cite*` by prefix.
+* `華厳寺` writes `{{読み仮名|谷汲山|たにぐみさん}}` — the sangō is *inside* the template, so it is
+  unwrapped to its first argument rather than deleted as a citation.
+
+Sample precision before the fixes: 350 clean / 400. Every fixture in `test_sango.py` is real
+text from live jawiki. `souken_p571` and `souken_den_p571` are regenerating with the citation fix.
+
+---
+
 ## 2026-07-10 — the province batch goes to the drip, not the browser
 
 Emma was about to run the 382-line Shikinaisha-list batch by hand and stopped: *"the quick

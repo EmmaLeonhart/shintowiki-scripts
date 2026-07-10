@@ -102,7 +102,12 @@ def _strip_matching_templates(text, names):
                 i += 1
                 continue
             name = text[i + 2:j - 2].split("|", 1)[0].strip().lower()
-            if name in names or name.startswith("cite"):
+            # Prefix matching, not just the literal set: `{{Sfnp}}` / `{{Sfnm}}` /
+            # `{{Harvnb}}` are as much citations as `{{Sfn}}`, and 瀧泉寺's field
+            # `泰叡山{{Sfnp|江戸名所図会|1927|p=101}}` shows they occur in the wild.
+            # A missed citation template leaks its publication year into the value.
+            if (name in names or name.startswith("cite")
+                    or name.startswith("sfn") or name.startswith("harv")):
                 i = j
                 continue
             out.append(text[i:j])

@@ -38,6 +38,7 @@ GENERATORS = [
     "generate_uncited_address_removals",
     "generate_province_exclusions",
     "generate_miscellaneous_edits",
+    "generate_sango_quickstatements",
 ]
 
 

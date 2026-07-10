@@ -35,9 +35,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] answers 2026-07-07 (wiki-queue items go at the END, per Emma's rule on that page)
 
-- [ ] Act on decisions from `_site/bunrei-research.html` (alternative authoritative bunrei
-  sources — jawiki 勧請 prose harvest, NDL digitized pre-war registries, prefectural jinjachō) once
-  Emma picks a direction.
 - [ ] **Description enrichment pipeline — cloud stages** (`docs/description_enrichment_pipeline.md`,
   Emma 2026-07-07): collision groups get informative descriptions from Wikidata item context via
   the remote-queue work-file pattern. Staged: EN-first (when ja absent) → ja from EN → EN from
@@ -62,8 +59,22 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   (`P571` + `P1480`=`Q18122778` presumably), registered in `ATOMIC_FILES`, accept-set disjoint from
   `souken_p571`. Shipping it exposed that `direct_daily_edits` could not encode a time value at all;
   `souken_p571` (4,119) and `kofun_imports` (870) were both unexecutable. Fixed + 15 tests.
-  Still waiting on Emma: 神体 / 山号 / 寺格 / 被葬者 / 鎮守神 mappings, and
-  shinto-wiki-as-source for the ~106 unsourced modern ranks.
+  **Modeling calls answered 2026-07-10:**
+  * `山号` → **SHIPPED**: `P1448` monolingual ja + `P3831`=`Q11058522` sangō
+    (`generate_sango_quickstatements.py`, registered). Emma: *"Simple thing."*
+  * `寺格` → **SKIP**. Emma: don't repurpose `P13723` ("shrine ranking") for temple ranks.
+  * `鎮守神` → **DELETED**: filled in 0 of 1,000 sampled articles across `{{神社}}` and
+    `{{日本の寺院}}`. Structurally empty, like the 社格-ref field.
+  * `被葬者` → **BOTH DIRECTIONS** (Emma): `P119` place-of-burial on the *person* and `P547`
+    commemorates on the *kofun*, for wikilinked values that resolve to items. 38% filled,
+    63% wikilinked, only in `{{日本の古墳}}`. NOT YET BUILT — next item below.
+  * `神体` → still Emma's call (6% filled, 86% wikilinked; no clean property).
+
+- [ ] **Build the 被葬者 importer** per the decision above: `<person>|P119|<kofun>` and
+  `<kofun>|P547|<person>`, wikilinked values only, cited `S4656`. Many values are 伝-attributions
+  (伝〇〇天皇) — apply `P1480`=`Q18122778` presumably, as with the 伝-dates, or refuse them; bring
+  the split to Emma with counts before emitting.
+- [ ] shinto-wiki-as-source for the ~106 unsourced modern ranks — still Emma's call.
 
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
 
