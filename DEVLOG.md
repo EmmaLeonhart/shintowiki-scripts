@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — two more dead batches: the editor could not parse tab-separated QS
+
+Yesterday's dead-batch finding (remove_junk_aliases) was one symptom of a general question I had
+not asked: *can every registered line actually execute?* I ran that audit — parse every line of
+every ATOMIC_FILES entry through `parse_qs_line` and classify what the executor would do with it.
+
+Two files came back entirely dead: `recreation_relations.txt` (family relations P22/P25/P40/P3373
+between recreated deleted items) and `durability_backlinks.txt` (P3373/P40 reciprocal backlinks for
+orphaned 2026-created items). **Both are tab-separated** — the canonical QuickStatements v1 format —
+and `split_qs_parts` only ever split on `|`. So every line parsed to `None` and was silently
+dropped. 36 statements that have never run.
+
+Fixed the parser, not the files: a line with tabs and no pipe is a tab-form line, normalised to
+pipes before parsing. The guard is `"	" in line and "|" not in line`, so a pipe-form line whose
+value happens to contain a tab is never touched (tested). Also made `parse_qs_line` skip `#` comment
+lines explicitly rather than returning None by accident.
+
+The real protection is a new test, `test_every_registered_file_has_an_executable_line`: it fails if
+any registered file's lines are all None or all term-removals — the exact shape that let
+remove_junk_aliases and these two sit dead. That test now passes, which means the audit is complete:
+no registered file is dead today, and one cannot silently become dead again.
+
+`recreation_relations.txt` (8 statements + 1 comment) and `durability_backlinks.txt` (28) will drip
+once the gate opens. 1136 tests pass.
+
+---
+
 ## 2026-07-10 — put the deferred decisions on [[Open questions]], per Emma's wiki-queue note
 
 Emma left a Wiki-based-queue bullet: *"Add all the things that we reported on into the section

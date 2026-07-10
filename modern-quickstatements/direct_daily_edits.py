@@ -203,6 +203,16 @@ def parse_qs_line(line):
     line = line.strip()
     if not line:
         return None
+    if line.startswith("#"):
+        return None
+
+    # QuickStatements v1 is canonically TAB-separated; this codebase mostly emits the
+    # pipe-separated compact form, and some generators (recreate-deleted-wikidata,
+    # durability_backlinks) emit tabs. A line uses one separator or the other, never both,
+    # so a line with tabs and no pipe is a tab-form line — normalise it. Without this,
+    # tab-form lines parsed to None and were silently skipped, so those batches never ran.
+    if "\t" in line and "|" not in line:
+        line = line.replace("\t", "|")
 
     is_removal = line.startswith("-")
     if is_removal:
