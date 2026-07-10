@@ -24,6 +24,7 @@ To be clear, yes, we make a single sequential miscellaneous file that is execute
 
 '''Awa list hand edit''' — you asked to explain more.
 : '''→''' The 927 register's Awa entry #3 is a shrine called '''Tenjinsha (天神社)'''. On the jawiki list article, that entry's link was written as a piped link pointing at a ''different'' shrine, '''Shimotachimatsubara (下立松原神社)''', and the import followed the link instead of the entry name. So Wikidata now says Awa entry #3 ''is'' Shimotachimatsubara — wrong (Shimotachimatsubara is really entry #5, correctly there too). The '''add''' putting Tenjinsha at #3 is already queued. The leftover is '''deleting''' the wrong statement (Shimotachimatsubara at #3), which can't be a QuickStatement because Shimotachimatsubara sits on that list twice with the same value, so a value-match might take the correct #5. Needs a by-hand delete of that one statement, or the sequential misc.
+: oh god fucking link this
 
 '''List membership (2,236 removals)''' — you asked to explain.
 : '''→''' These strip the false "part of a list" claim off the 2,151 candidate shrines the lists never actually name (leftover from the old piped-link import damage). '''These are pure removals — no add, no ordering risk''' — so unlike the others, this one can just be registered and dripped safely today. '''Want me to register it?'''
