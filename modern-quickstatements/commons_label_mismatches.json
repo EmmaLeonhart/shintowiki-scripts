@@ -1,0 +1,186 @@
+{
+ "mismatches": [
+  {
+   "qid": "Q3594054",
+   "commons": "Category:Otasan-jinja",
+   "candidate": "Otasan Shrine",
+   "enwiki": "Ōta Shrine"
+  },
+  {
+   "qid": "Q3936229",
+   "commons": "Category:Taichung Shrine",
+   "candidate": "Taichung Shrine",
+   "enwiki": "Taichu Jinja"
+  },
+  {
+   "qid": "Q4696584",
+   "commons": "Category:Aichiken-Gokoku-jinja",
+   "candidate": "Aichiken-Gokoku Shrine",
+   "enwiki": "Aichi Gokoku Shrine"
+  },
+  {
+   "qid": "Q195684",
+   "commons": "Category:Iyahiko-jinja",
+   "candidate": "Iyahiko Shrine",
+   "enwiki": "Yahiko Shrine"
+  },
+  {
+   "qid": "Q245731",
+   "commons": "Category:Ohyamato-jinja",
+   "candidate": "Ohyamato Shrine",
+   "enwiki": "Ōyamato Shrine"
+  },
+  {
+   "qid": "Q6370171",
+   "commons": "Category:Karenko Shinto Shrine",
+   "candidate": "Karenko Shinto Shrine",
+   "enwiki": "Karenkō Shrine"
+  },
+  {
+   "qid": "Q6936905",
+   "commons": "Category:Taiwan Gokoku Shrine",
+   "candidate": "Taiwan Gokoku Shrine",
+   "enwiki": "Taiwan Martyr Shrine"
+  },
+  {
+   "qid": "Q8010918",
+   "commons": "Category:Koxinga's Shrine",
+   "candidate": "Koxinga's Shrine",
+   "enwiki": "Koxinga Shrine"
+  },
+  {
+   "qid": "Q11392320",
+   "commons": "Category:Rokusonnnou-Jinja",
+   "candidate": "Rokusonnnō Shrine",
+   "enwiki": "Rokusonnō Shrine"
+  },
+  {
+   "qid": "Q888184",
+   "commons": "Category:Hinokuma-jingu Kunikakasu-jingu",
+   "candidate": "Hinokuma-jingu Kunikakasu Grand Shrine",
+   "enwiki": "Hinokuma Shrine"
+  },
+  {
+   "qid": "Q1306606",
+   "commons": "Category:Kamo-jinja",
+   "candidate": "Kamo Shrine",
+   "enwiki": "Kamo shrines"
+  },
+  {
+   "qid": "Q1442645",
+   "commons": "Category:Fushimi Sambo Inari-jinja Shrine",
+   "candidate": "Fushimi Sambo Inari-jinja Shrine",
+   "enwiki": "Fushimi Sanpō Inari Shrine"
+  },
+  {
+   "qid": "Q3090870",
+   "commons": "Category:Funabashi-daijingū",
+   "candidate": "Funabashi Daijingu",
+   "enwiki": "Ōhi Shrine"
+  },
+  {
+   "qid": "Q10863796",
+   "commons": "Category:Ichinomiya nukisaki-jinja",
+   "candidate": "Ichinomiya nukisaki Shrine",
+   "enwiki": "Nukisaki Shrine"
+  },
+  {
+   "qid": "Q10877366",
+   "commons": "Category:Niukawakami-jinja Kamisha",
+   "candidate": "Niukawakami-jinja Kami-sha Shrine",
+   "enwiki": "Niukawakami Upper Shrine"
+  },
+  {
+   "qid": "Q10877367",
+   "commons": "Category:Niukawakami-jinja Shimosha",
+   "candidate": "Niukawakami-jinja Shimo-sha Shrine",
+   "enwiki": "Niukawakami Lower Shrine"
+  },
+  {
+   "qid": "Q3136198",
+   "commons": "Category:Hirakiki-jinja",
+   "candidate": "Hirakiki Shrine",
+   "enwiki": "Hirasaki Shrine"
+  },
+  {
+   "qid": "Q10946254",
+   "commons": "Category:Utsunomiya Futaarayama-jinja",
+   "candidate": "Utsunomiya Futaarayama Shrine",
+   "enwiki": "Utsunomiya Futarayama Shrine"
+  },
+  {
+   "qid": "Q11395802",
+   "commons": "Category:Ideha-jinja",
+   "candidate": "Ideha Shrine",
+   "enwiki": "Dewa Shrine"
+  },
+  {
+   "qid": "Q3571318",
+   "commons": "Category:Yaho Temman-gū",
+   "candidate": "Yaho Temman-gu Shrine",
+   "enwiki": "Yabo Tenmangū"
+  }
+ ],
+ "rejected": [
+  {
+   "qid": "Q3698846",
+   "commons": "Category:Onbashira Festival",
+   "enwiki": "Onbashira"
+  },
+  {
+   "qid": "Q5367406",
+   "commons": "Category:Kasugayama Primeval Forest",
+   "enwiki": "Kasugayama Primeval Forest"
+  },
+  {
+   "qid": "Q5507355",
+   "commons": "Category:Fuji Sengen Shrine (Naka-ku, Nagoya)",
+   "enwiki": "Fuji Sengen Shrine (Naka-ku, Nagoya)"
+  },
+  {
+   "qid": "Q6102414",
+   "commons": "Category:Izumo Taishakyo Mission of Hawaii",
+   "enwiki": "Izumo Taishakyo Mission of Hawaii"
+  },
+  {
+   "qid": "Q717682",
+   "commons": "Category:Kanda-Myojin",
+   "enwiki": "Kanda Shrine"
+  },
+  {
+   "qid": "Q840967",
+   "commons": "Category:Tsubaki Grand Shrine of America",
+   "enwiki": "Tsubaki Grand Shrine of America"
+  },
+  {
+   "qid": "Q6958481",
+   "commons": "Category:Nagao-jinja (Katsuragi, Nara)",
+   "enwiki": "Nagao Shrine"
+  },
+  {
+   "qid": "Q7797685",
+   "commons": "Category:Imperial Palace Sanctuaries",
+   "enwiki": "Three Palace Sanctuaries"
+  },
+  {
+   "qid": "Q2868748",
+   "commons": "Category:Atago-jinja (Minato, Tokyo)",
+   "enwiki": "Atago Shrine (Tokyo)"
+  },
+  {
+   "qid": "Q10885171",
+   "commons": "Category:Izawa-no-miya",
+   "enwiki": "Izawa-no-miya"
+  },
+  {
+   "qid": "Q3571407",
+   "commons": "Category:Yamada Ten'man-gû",
+   "enwiki": "Yamada Tenmangū"
+  },
+  {
+   "qid": "Q11381867",
+   "commons": "Category:Sumiyoshi-jinja (Otaru, Hokkaido)",
+   "enwiki": "Sumiyoshi Shrine (Hokkaidō)"
+  }
+ ]
+}

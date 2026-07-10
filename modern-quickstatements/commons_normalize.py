@@ -40,6 +40,7 @@ _TEMPLE_SUFFIXES = ("dera", "tera", "ji", "in", "an", "do", "bo")
 # Shrine *words* (usually a separate token). Longest first so `daijinja` beats `jinja` and
 # `jingu`/`taisha` beat the short attached `-gu`/`-sha` below.
 _SHRINE_WORDS = (
+    ("daijingu", "Daijingu"),      # 大神宮 — before "jingu" so it isn't split dai+jingu
     ("daijinja", "Daijinja"),
     ("jinja", "Shrine"),
     ("jingu", "Grand Shrine"),
@@ -53,9 +54,10 @@ _LATIN_STEM = re.compile(r"^[A-Za-zŌŪĀĪĒōūāīē'’.\- ]+$")
 
 
 def _strip(name: str) -> str:
-    """Drop a leading 'Category:' and any bracketed disambiguator; collapse whitespace."""
+    """Drop 'Category:', a comma-disambiguator (", Nagasaki"), and bracketed disambiguators."""
     if name.startswith("Category:"):
         name = name[len("Category:"):]
+    name = name.split(",")[0]                 # ", Nagasaki" / ", Akasaka" etc.
     name = _BRACKETS.sub("", name)
     return re.sub(r"\s+", " ", name).strip()
 
@@ -70,12 +72,19 @@ def normalize(commons_name: str) -> Optional[str]:
     if not name:
         return None
 
-    # Already in house form — keep it, only fixing marked long vowels.
-    for suf in (" Temple", " Shrine", " Grand Shrine", " Daijinja"):
-        if name.endswith(suf):
-            return transcribe_long_vowels(name)
-
     low = _macron_free(name).lower()
+
+    # Already carries an English classificatory suffix (any case, hyphen or space) — keep
+    # the reading, canonicalise the suffix. Temples keep their romaji suffix in the stem
+    # ("Kōfuku-ji Temple"); shrines get the house " Shrine"/" Grand Shrine".
+    for token, house in (("grand shrine", "Grand Shrine"), ("shrine", "Shrine"),
+                         ("temple", "Temple")):
+        if low.endswith(token) or low.endswith(token.replace(" ", "-")):
+            cut = len(token)
+            stem = name[: len(name) - cut].rstrip(" -")
+            if not stem:
+                return None
+            return "{} {}".format(transcribe_long_vowels(stem), house)
 
     # Shrine words first (they can contain the short attached suffixes).
     for ending, house in _SHRINE_WORDS:
@@ -83,9 +92,12 @@ def normalize(commons_name: str) -> Optional[str]:
             stem = name[: len(name) - len(ending)].rstrip(" -")
             return _shrine(stem, house)
 
-    # Temple suffixes.
+    # Temple suffixes. Guard the short risky ones: "-in" must not fire on "...jin"
+    # (myojin 明神, tenjin 天神 are shrine words, not 院).
     for ending in _TEMPLE_SUFFIXES:
         if low.endswith(ending):
+            if ending == "in" and low.endswith("jin"):
+                continue
             stem = name[: len(name) - len(ending)].rstrip(" -")
             if not stem:
                 return None

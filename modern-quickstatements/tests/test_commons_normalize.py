@@ -103,6 +103,29 @@ def test_already_english_temple_is_kept():
 
 # ─────────────── disambiguators ───────────────
 
+def test_comma_disambiguator_is_stripped():
+    assert cn.normalize("Suwa-jinja, Nagasaki") == "Suwa Shrine"
+    assert cn.normalize("Category:Kushida-jinja, Fukuoka") == "Kushida Shrine"
+
+
+def test_lowercase_shrine_is_normalized_to_title_case():
+    assert cn.normalize("Yoshida shrine") == "Yoshida Shrine"
+    assert cn.normalize("Category:Uesugi shrine") == "Uesugi Shrine"
+
+
+def test_hyphenated_shrine_word_is_handled():
+    assert cn.normalize("Kumano-Nachi-shrine") == "Kumano-Nachi Shrine"
+
+
+def test_daijingu_is_not_split_into_dai_plus_jingu():
+    assert cn.normalize("Izumo-daijingū") == "Izumo Daijingu"
+
+
+def test_myojin_does_not_become_a_temple():
+    # "Kanda-Myojin" must not match temple "-in" on the "jin"
+    assert cn.normalize("Kanda-Myojin") != "Kanda-Myoj-in Temple"
+
+
 def test_parenthetical_disambiguator_is_stripped():
     assert cn.normalize("Kasuga-taisha (Nara)") == "Kasuga Grand Shrine"
 
