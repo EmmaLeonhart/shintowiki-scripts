@@ -322,3 +322,65 @@ significantly repurposed. However, that one is a bit up for debate."*
   removal on an item they are active on, so it waits.
 
 Nothing in this section is actionable until the gate opens.
+
+---
+
+# Re-examination, 2026-07-10 evening
+
+Emma asked for a periodic pass over their contributions. Re-ran `watch_conflicting_editor.py` and
+`archive_destroyed_items.py`; read every destructive edit and a sample of the constructive ones.
+
+## The volume has jumped sharply
+
+**426 Wikidata edits since 2026-07-08** — 1 on the 8th, 93 on the 9th, **332 today** — across 227
+items, plus 21 new items created. Whatever this is, it is a sustained drive, not a dabble.
+
+## The constructive majority holds, and is competent
+
+Of today's edits, **161 are description rewrites**, and they are good. Sampling ten:
+
+| | before | after |
+|---|---|---|
+| `Q17217165` | 神奈川県横浜市南区にある仏教寺院 | 横浜市南区にある仏教寺院 |
+| `Q29407936` | 大磯町にある寺院 | 神奈川県大磯町にある寺院 |
+| `Q85875757` | 相模原市にある神社 | 神奈川県相模原市中央区にある神社 |
+| `Q11404334` | 神奈川県平塚市にある寺院 | 神奈川県平塚市にある**神社** |
+
+They are applying a real convention — a **designated city** (横浜市, 川崎市) does not take the
+prefecture prefix, an ordinary town does — adding ward-level precision, and in `Q11404334` fixing
+a temple that was actually a shrine. This is somebody who knows the domain.
+
+## A third orphaning: `Q134736575`
+
+`Q134736575` was created by `Higa4` in 2025-06 as **見光寺 in 飯能市, Saitama**. At 06:15 today
+they removed its coordinates, `埼玉県飯能市岩沢1092`, its postcode, its corporate number and the
+English description, attached the **jawiki `見光寺` sitelink**, and re-described it as
+`横浜市保土ケ谷区にある浄土宗の仏教寺院`. Two different temples share the name; the item now means
+the Yokohama one.
+
+Confirmed by SPARQL: **nothing on Wikidata now holds the Hannō 見光寺.** No item carries corporate
+number `7030005014548` or the address `埼玉県飯能市岩沢1092`, and the only item labelled 見光寺 is
+this one, now describing Yokohama. That is the same shape as Kamo Shrine and Chikadono Shrine — a
+name collision resolved by overwriting the item that held the *other* shrine.
+
+Our `en` label `Kenkō-ji Temple` and `id` label `Wihara Kenkō-ji` survive, and unlike Kamo/Chikadono
+they are not *contradictory* — both temples read Kenkō-ji. The item does not assert two identities;
+it simply asserts the wrong one. `Q134736575.json` was already archived pre-damage.
+
+## The other removals are fine
+
+* `Q138497691` — removed a ja **alias** that was a description in the alias field. A real cleanup.
+* `Q17993219` — removed the useless English description `temple in Japan`.
+* `Q115009403`, `Q140469774` — `P131` corrections, one on an item they created themselves.
+* `Q135258523` — removed our `inception: unknown value`. Ours, minor, defensible.
+
+## Standing
+
+No venue mentions them; their jawiki talk page has been quiet since 2026-04-24; no block. The
+gate holds to **2026-07-17** (7-day quiet window) with a hard cap of 2026-08-08 — and it will keep
+sliding while they edit daily, which they now are.
+
+**Assessment unchanged: good-faith, competent, and destructive at the edges.** They are running a
+Kanagawa temple/shrine cleanup and, when a jawiki article's name collides with an existing item
+about a different place, they take the item. Three shrines/temples have been orphaned this way.
+Nothing here reads as an LTA. Policy stands: *document, don't touch; no contact.*

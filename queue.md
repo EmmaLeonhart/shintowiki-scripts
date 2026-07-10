@@ -166,6 +166,11 @@ The Kikuna restoration is DONE as a queued batch (`miscellaneous_edits.txt`) —
   (**Kanagawa**, Yokosuka) on 2026-07-10 02:18 UTC. Its corporate number, postcode, address,
   coordinates and our `P1814` kana are gone from Wikidata entirely; no item holds that shrine.
   Still carries our `id`/`fr` Chikadono labels. Same hold.
+- [ ] `Q134736575` — **third orphaning, found 2026-07-10.** 見光寺 in 飯能市 (Saitama), created by
+  `Higa4` 2025-06, was overwritten as 見光寺 in 横浜市保土ケ谷区: coordinates, address, postcode and
+  corporate number removed, jawiki `見光寺` sitelink attached. SPARQL confirms **nothing on Wikidata
+  holds the Hannō 見光寺 any more**. Our `en`/`id` labels survive and are not contradictory (both
+  temples read Kenkō-ji), so the item asserts one identity — the wrong one. Same hold.
 - [ ] `Q140476265` — they created 琵琶島神社 and blanked it two minutes later. Now 0 labels,
   0 claims, 0 sitelinks. Junk item; nothing of ours in it.
 
