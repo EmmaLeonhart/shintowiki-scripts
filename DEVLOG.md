@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — 22 false founding dates withdrawn from a batch I had just made executable
+
+Regenerating `souken_p571.txt` with the fixed parsers drops it from 4,119 to 4,112 lines:
+**22 withdrawn, 15 newly accepted.** These were not hypothetical. Teaching
+`direct_daily_edits` to encode time values had made all 4,119 executable hours earlier.
+
+What the 22 were:
+
+* `本願寺吉崎別院` — `創建 = [[1746年]]（再興）`. A restoration year, imported as inception.
+* `本願寺西山別院` — **field bleed.** The capture is `創建\s*=\s*([^
+]*)`, and the article
+  puts the whole infobox on one line, so it ran past `創建=平安時代` into `中興年=[[1314年]]`
+  and imported the *restoration* year 1314 as the founding. Same for `本願寺北山別院` (1680).
+* `大領神社` — `不明、[[715年]]（[[霊亀]]元年）説あり`. Unknown, with a *theory* of 715.
+* `徳山神社 (本巣市)` — `[[1986年]]（昭和61年）：移転、合祀日。` A relocation and merger date.
+
+The 15 newly accepted are the mirror image: a `<ref>`'s publication year used to count as a
+second year and disqualify an otherwise clean field. `中島惣社` (`伝・白雉2年（651年）<ref>…2014年…`)
+now yields 651.
+
+**Field bleed is only half-fixed.** These three were caught because the bled text happened to
+contain `中興`, which is now a refused marker. A single-line infobox whose next parameter
+carries a bare year and no marker would still leak. The capture should stop at the next `|`
+parameter boundary, not at the newline. Queued.
+
+The 伝-batch regenerated to 637 lines: `丸子神社 浅間神社` (two shrines on one page — 801 belongs
+to the other one), `人見神社` (`伝・孝徳天皇、天慶3年（940年）` — the 伝 segment names a reign with
+no Gregorian year), and one more withdrawn; `蓮華寺 (岡崎市)` (`728年（伝承）<br />1529年（再建）`)
+correctly yields 728 rather than the rebuild year.
+
+---
+
 ## 2026-07-10 — the lead-less pages go to cloud RAG, and the count was 149 not 151
 
 Emma chose cloud RAG from the Japanese article for the pages the 905-page merge left with
