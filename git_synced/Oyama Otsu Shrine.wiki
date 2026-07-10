@@ -10,12 +10,14 @@
 | coordinates = {{coord|35.135327|136.640749}}
 | map_relief = 1
 | religious_affiliation = [[Shinto]]
+}}
 
+{{神社
 | 名称 = Ozu Shrine
 | 画像 = {{画像募集中|cat=桑名市}}
 | 所在地 = {{ill|Mie Prefecture|Q128196|qid=Q128196}}{{ill|Kuwana, Mie|ar|كوانا (ميه)|azb|کووانا، میه|be|Кувана|ce|Кувана|ceb|Kuwana-shi|ckb|کوانا (میێ)|cs|Kuwana|de|Kuwana|eo|Kuŭana|es|Kuwana (Mie)|et|Kuwana|fa|کووانا، میه|fi|Kuwana|fr|Kuwana|gl|Kuwana|hy|Կուվանա|id|Kuwana, Mie|it|Kuwana|ja|桑名市|ko|구와나시|mg|Kuwana|mzn|کووانا، میه|nl|Kuwana|no|Kuwana|pl|Kuwana|pt|Kuwana|ro|Kuwana|ru|Кувана|sh|Kuvana|simple|Kuwana, Mie|sr|Кувана|sv|Kuwana|tg|Кувана|tl|Kuwana, Mie|tr|Kuwana|tt|Кувана|uk|Кувана (Міє)|ur|کوانا، میہ|vi|Kuwana, Mie|war|Kuwana, Mie|zh|桑名市|zh_classical|桑名市|zh_min_nan|Kuwana-chhī|zh_yue|桑名|qid=Q496472}} Tado-chō Koyama 1915
 | 位置 = {{WikidataCoord}}
-| deity = {{ill|Yamato Takeru|Q461258|qid=Q461258|lt=Yamato Takeru no Mikoto}}
+| 祭神 = {{ill|Abstract factory pattern|Q333348|qid=Q333348|lt=Yamato Takeru no Mikoto}}
 | 神体 = 
 | 社格 =  {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}} / former {{ill|Son-sha|ja|村社|qid=Q134917284}}
 | 創建 = 
@@ -31,10 +33,10 @@
 {{nihongo|'''Oyama Otsu Shrine'''|小山尾津神社}} is a [[shinto shrine]] in Koyama, {{ill|lt=Tado-chō|Tado, Mie|qid=Q7674654}}, {{ill|Kuwana, Mie|ar|كوانا (ميه)|azb|کووانا، میه|be|Кувана|ce|Кувана|ceb|Kuwana-shi|ckb|کوانا (میێ)|cs|Kuwana|de|Kuwana|eo|Kuŭana|es|Kuwana (Mie)|et|Kuwana|fa|کووانا، میه|fi|Kuwana|fr|Kuwana|gl|Kuwana|hy|Կուվանա|id|Kuwana, Mie|it|Kuwana|ja|桑名市|ko|구와나시|mg|Kuwana|mzn|کووانا، میه|nl|Kuwana|no|Kuwana|pl|Kuwana|pt|Kuwana|ro|Kuwana|ru|Кувана|sh|Kuvana|simple|Kuwana, Mie|sr|Кувана|sv|Kuwana|tg|Кувана|tl|Kuwana, Mie|tr|Kuwana|tt|Кувана|uk|Кувана (Міє)|ur|کوانا، میہ|vi|Kuwana, Mie|war|Kuwana, Mie|zh|桑名市|zh_classical|桑名市|zh_min_nan|Kuwana-chhī|zh_yue|桑名|qid=Q496472|lt=Kuwana}}, {{ill|lt=Mie Prefecture|Mie Prefecture|qid=Q128196}}. It is an {{ill|Shikinaisha|lt=Shikinaisha|qid=Q134917286}}, and its former rank was {{ill|Son-sha|ja|村社|qid=Q134917284|lt=Sonsha}}.<ref>Kokugakuin University Shrine database (Q135159299) https://jmapps.ne.jp/kokugakuin/det.html?data_id=181329</ref>
 
 == Origin and history ==
-Ozu Shrine is one of the fifteen shrines of {{ill|lt=Kuwana District|Kuwana District|qid=Q1131489}} in {{ill|lt=Ise Province|Ise Province|qid=Q864166}}. In the first year of {{ill|lt=Ninju|Ninju|qid=Q1373077}} under {{ill|lt=Emperor Montoku|Emperor Montoku|qid=Q357225}}, it was granted Junior Sixth Rank Lower<ref>{{Cite book|和書|title=多度町史|publisher=多度教育委員会|page=54}}</ref>, and was eventually promoted to Junior Fifth Rank Upper<ref>{{Cite web|title=三重県神社庁 尾津神社（小山）|url=http://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%be%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b0%8f%e5%b1%b1%ef%bc%89/|access-date=2025-11-30}}</ref>. In March {{ill|lt=1918|1997|qid=Q2088}} (Taishō 7), Yama Shrine, Sagun Shrine, and Hachiryū Daimyōjin were merged into it<ref>{{Cite web|title=県神社庁|url=https://jinja-net.jp/jinjacho-mie/jsearch3mie.php?jinjya=63095|access-date=2025-11-30}}</ref>.
+Ozu Shrine is one of the fifteen shrines of {{ill|lt=Kuwana District|Kuwana District|qid=Q1131489}} in {{ill|lt=Ise Province|Ise Province|qid=Q864166}}. In the first year of {{ill|lt=Ninju|Ninju|qid=Q1373077}} under {{ill|lt=Emperor Montoku|Emperor Montoku|qid=Q357225}}, it was granted Junior Sixth Rank Lower<ref>{{Cite book|和書|title=多度町史|publisher=多度教育委員会|page=54}}</ref>, and was eventually promoted to Junior Fifth Rank Upper<ref>{{Cite web|title=三重県神社庁 尾津神社（小山）|url=http://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%be%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b0%8f%e5%b1%b1%ef%bc%89/|access-date=2025-11-30}}</ref>. In March {{ill|lt=1918|1918|qid=Q2094}} (Taishō 7), Yama Shrine, Sagun Shrine, and Hachiryū Daimyōjin were merged into it<ref>{{Cite web|title=県神社庁|url=https://jinja-net.jp/jinjacho-mie/jsearch3mie.php?jinjya=63095|access-date=2025-11-30}}</ref>.
 
 == Enshrined deities ==
-* Principal deities: {{ill|lt=Yamato Takeru no Mikoto|Yamato Takeru|qid=Q461258}}, Ashikagamiwake-no-Mikoto
+* Principal deities: {{ill|lt=Yamato Takeru no Mikoto|Abstract factory pattern|qid=Q333348}}, Ashikagamiwake-no-Mikoto
 * Associated deities: {{ill|qid=Q386563|lt=Ōyamatsumi-no-Kami|Ōyamatsumi}}, one unidentified deity
 
 == Annual festival ==
