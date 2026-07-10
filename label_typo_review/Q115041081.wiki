@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q115041081 -->
 <!-- JA: 氷川神社 | KANA: ひかわじんじゃ | EN_LABEL: Takagi Hikawa Shrine | KANA_ROMANIZED: Hikawajinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: PREFIX_OK: "Takagi" is a place-name disambiguator (高木) prepended to the English label to distinguish this Hikawa Shrine from the many others; the kana ひかわじんじゃ correctly reflects the shrine's Japanese name 氷川神社 without the location qualifier -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
