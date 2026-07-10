@@ -384,3 +384,30 @@ sliding while they edit daily, which they now are.
 Kanagawa temple/shrine cleanup and, when a jawiki article's name collides with an existing item
 about a different place, they take the item. Three shrines/temples have been orphaned this way.
 Nothing here reads as an LTA. Policy stands: *document, don't touch; no contact.*
+
+---
+
+# Re-examination, 2026-07-10 (second pass, evening)
+
+Emma asked for another look. Nothing has changed in character; the volume has climbed again.
+
+* **798 edits on record, 407 of them today** — up from ~332 at the last pass. All 407 carry the
+  `wikidata-ui` tag: hand-made in the browser, no automation, no bot flag, no QuickStatements.
+* **The day is overwhelmingly constructive**: 224 description sets, 93 claim additions, 21 sitelink
+  adds, **17 new Yokohama-temple items he created himself**. Only 32 destructive edits.
+* **No new orphanings.** All 28 identity-stripping removals today fall on the four items already
+  recorded — Kamo (`Q123044569`), Chikadono (`Q134886554`), Kenkō-ji/見光寺 (`Q134736575`) and the
+  self-blanked 琵琶島神社 (`Q140476265`). The other four destructive edits are benign: a stray ja
+  alias that was really a description, a `P571` unknown-value, a useless "temple in Japan" English
+  description, and one `P131` correction.
+* **The three real orphanings are stable but unresolved.** SPARQL confirms no item holds the Hannō
+  見光寺 (corp 7030005014548), Chikadono (4030005013222), or Odawara Kamo (1169979912) shrines. The
+  damage is not spreading; it is also not healing.
+* **The archiver captured nothing new** — all 24 damaged items already held, pre-damage revisions
+  intact.
+* **No external attention**: no venue mentions him, no block, talk page quiet since 2026-04-24.
+
+Assessment unchanged: good-faith, competent, manual Kanagawa temple/shrine work, destructive only
+where a jawiki article's name collides with an item about a different place. Nothing reads as an LTA.
+The gate holds to 2026-07-17 and slides while he edits daily. Policy stands: document, don't touch;
+no contact.
