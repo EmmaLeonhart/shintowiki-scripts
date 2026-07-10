@@ -1,0 +1,207 @@
+{
+  "qid": "Q11506735",
+  "archived_at": "2026-07-10T03:25:51Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-03T09:56:28Z",
+  "destructive_edit_count": 2,
+  "properties_removed": [
+    "P4970"
+  ],
+  "terms_removed": [
+    "aliases:ja"
+  ],
+  "pre_damage_revision": {
+    "revid": 2513387158,
+    "timestamp": "2026-07-03T09:54:43Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "日本ハム球団多摩川グランド",
+    "properties": [
+      "P17",
+      "P18",
+      "P131",
+      "P625",
+      "P4970"
+    ],
+    "statement_count": 5,
+    "sitelinks": [
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q11506735",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "日本ハム球団多摩川グランド"
+      }
+    },
+    "descriptions": [],
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "日本ハム多摩川球場"
+        }
+      ]
+    },
+    "claims": {
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "9c949069dca7c352d12db3f3b0b6ca4d9801a48a",
+            "datavalue": {
+              "value": "Tamagawa ground of Nippon ham baseball team.JPG",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11506735$0F013D42-A2FA-4A60-97B9-8DBE9BF78D38",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "11c31a6a38b10c6534bf34ee5b5f77782a79c859",
+            "datavalue": {
+              "value": {
+                "latitude": 35.58741667,
+                "longitude": 139.66463889,
+                "altitude": null,
+                "precision": 0.011046282654345,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q11506735$484F8DEB-6DB5-443F-8987-E3639AF44616",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "9f7a8fc2008c12553a9a86551cac3a7ec8935052",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17990215,
+                "id": "Q17990215"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11506735$85195064-4208-2e73-767f-bc5d26f0dd41",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11506735$e3fdd9cf-4250-28a5-bbf5-b3dca8f5af52",
+          "rank": "normal"
+        }
+      ],
+      "P4970": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P4970",
+            "hash": "899b065053b47813978afea65c21c12452423ec4",
+            "datavalue": {
+              "value": "川崎市多摩川丸子橋硬式野球場",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11506735$09ba0594-45ff-84bc-bca3-fda1720c34f9",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "川崎市多摩川丸子橋硬式野球場",
+        "badges": []
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "qid": "Q140476265",
+  "archived_at": "2026-07-10T03:26:00Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-10T00:35:34Z",
+  "destructive_edit_count": 2,
+  "properties_removed": [],
+  "terms_removed": [
+    "label:ja",
+    "description:ja"
+  ],
+  "pre_damage_revision": {
+    "revid": 2515714306,
+    "timestamp": "2026-07-10T00:33:27Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "琵琶島神社",
+    "properties": [],
+    "statement_count": 0,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q140476265",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "琵琶島神社"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "横浜市金沢区瀬戸の琵琶島にある神社"
+      }
+    },
+    "aliases": [],
+    "claims": [],
+    "sitelinks": []
+  }
+}

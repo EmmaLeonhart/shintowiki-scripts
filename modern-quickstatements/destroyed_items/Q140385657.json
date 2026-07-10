@@ -1,0 +1,130 @@
+{
+  "qid": "Q140385657",
+  "archived_at": "2026-07-10T03:25:59Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-06-30T09:30:29Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P1049"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2512149543,
+    "timestamp": "2026-06-30T09:30:01Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "東光寺 (横浜市南区)",
+    "properties": [
+      "P17",
+      "P31",
+      "P131",
+      "P1049"
+    ],
+    "statement_count": 4,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q140385657",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "東光寺 (横浜市南区)"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "横浜市南区にある高野山真言宗の仏教寺院"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q140385657$86e7dcb5-43d0-7638-9e2c-242db18d8f98",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "ec1b68fdf45726d4c6c97fe7765039a15ae93592",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1153982,
+                "id": "Q1153982"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q140385657$cbbb5992-4b01-7373-c9e2-df4e6786ce5d",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "5b2582231cadfce098d47d340a4a862fcef49882",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 5393308,
+                "id": "Q5393308"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q140385657$a2c0443b-4975-a9c9-86ea-a178ae954064",
+          "rank": "normal"
+        }
+      ],
+      "P1049": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1049",
+            "hash": "d7a44c388280468a936ce2a246336058d6463715",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 3077357,
+                "id": "Q3077357"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q140385657$55c7ca18-453d-f24b-4286-28c680761010",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}

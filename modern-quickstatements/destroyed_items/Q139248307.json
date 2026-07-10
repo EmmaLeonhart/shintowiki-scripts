@@ -1,0 +1,153 @@
+{
+  "qid": "Q139248307",
+  "archived_at": "2026-07-10T03:25:58Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-04-12T03:54:33Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P625"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2480527092,
+    "timestamp": "2026-04-12T03:53:58Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "四万十空港",
+    "properties": [
+      "P17",
+      "P31",
+      "P131",
+      "P206",
+      "P625"
+    ],
+    "statement_count": 5,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q139248307",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "四万十空港"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "かつて高知県中村市（現・四万十市）において、計画された日本の空港"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "79a8de0cf097aba636e01cc80d7d5c428c3aba57",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1248784,
+                "id": "Q1248784"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139248307$3b426df9-49b1-7564-85eb-5355c0d467ed",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139248307$7347926e-4bf5-0fa4-5bbf-de9789535e81",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "4011e4bc2acc83bd770ba802fb96052ca3f36204",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 166946,
+                "id": "Q166946"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139248307$c6177534-4f6c-01de-dfdd-aaa0fd3e181d",
+          "rank": "normal"
+        }
+      ],
+      "P206": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P206",
+            "hash": "93ad1a5d33ccf098f8533e71a3c432520ce587b0",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 124878,
+                "id": "Q124878"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139248307$041b834d-4102-c5a0-e56a-70a182290b07",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "9da65d8cf86e2d0250ee9561c3bcea0a3a2826c4",
+            "datavalue": {
+              "value": {
+                "latitude": 43.38986111111111,
+                "longitude": 141.85897222222223,
+                "altitude": null,
+                "precision": 2.777777777777778e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q139248307$6f3f8d17-4de7-4c4f-805b-486437c813a5",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}

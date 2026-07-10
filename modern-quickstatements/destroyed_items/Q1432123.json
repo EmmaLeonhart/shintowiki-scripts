@@ -1,0 +1,3936 @@
+{
+  "qid": "Q1432123",
+  "archived_at": "2026-07-10T03:26:01Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2023-03-17T07:17:37Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P18"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 1804934852,
+    "timestamp": "2023-01-06T19:12:37Z",
+    "user": "Krdbot",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 16,
+    "en_label": "Nakashibetsu Airport",
+    "ja_label": "中標津空港",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P138",
+      "P238",
+      "P239",
+      "P373",
+      "P521",
+      "P625",
+      "P646",
+      "P931",
+      "P1566",
+      "P2044",
+      "P3749",
+      "P3872",
+      "P5400",
+      "P5817"
+    ],
+    "statement_count": 64,
+    "sitelinks": [
+      "astwiki",
+      "cebwiki",
+      "commonswiki",
+      "dewiki",
+      "enwiki",
+      "eswiki",
+      "fawiki",
+      "idwiki",
+      "jawiki",
+      "kowiki",
+      "mswiki",
+      "tgwiki",
+      "viwiki",
+      "zhwiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q1432123",
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "Nakashibetsu Airport"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "中標津機場"
+      },
+      "vi": {
+        "language": "vi",
+        "value": "Sân bay Nakashibetsu"
+      },
+      "de": {
+        "language": "de",
+        "value": "Flughafen Nakashibetsu"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "中標津空港"
+      },
+      "es": {
+        "language": "es",
+        "value": "Aeropuerto de Nakashibetsu"
+      },
+      "fa": {
+        "language": "fa",
+        "value": "فرودگاه ناکاشیبتسو"
+      },
+      "tg": {
+        "language": "tg",
+        "value": "Фурудгоҳи мудонҷионг ҳоилонг"
+      },
+      "ms": {
+        "language": "ms",
+        "value": "Lapangan Terbang Nakashibetsu"
+      },
+      "id": {
+        "language": "id",
+        "value": "Bandar Udara Nakashibetsu"
+      },
+      "ceb": {
+        "language": "ceb",
+        "value": "Nakashibetsu Airport"
+      },
+      "ko": {
+        "language": "ko",
+        "value": "나카시베쓰 공항"
+      },
+      "cy": {
+        "language": "cy",
+        "value": "Maes Awyr Nakashibetsu"
+      },
+      "ast": {
+        "language": "ast",
+        "value": "Aeropuertu de Nakashibetsu"
+      },
+      "ro": {
+        "language": "ro",
+        "value": "Aeroportul Nakashibetsu"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "aérodrome de Nakashibetsu"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "airport in Japan"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "日本の北海道にある空港"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "aéroport desservant Nakashibetsu, Japan"
+      },
+      "de": {
+        "language": "de",
+        "value": "Flughafen in Japan"
+      },
+      "nl": {
+        "language": "nl",
+        "value": "vliegveld in Japan"
+      },
+      "he": {
+        "language": "he",
+        "value": "שדה תעופה ביפן"
+      },
+      "id": {
+        "language": "id",
+        "value": "bandar udara di Jepang"
+      },
+      "ar": {
+        "language": "ar",
+        "value": "مطار في اليابان"
+      },
+      "ro": {
+        "language": "ro",
+        "value": "aeroport din Japonia"
+      },
+      "pl": {
+        "language": "pl",
+        "value": "port lotniczy w Japonii"
+      },
+      "ga": {
+        "language": "ga",
+        "value": "aerfort sa tSeapáin"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "根室中標津空港"
+        },
+        {
+          "language": "ja",
+          "value": "SHB"
+        },
+        {
+          "language": "ja",
+          "value": "RJCN"
+        },
+        {
+          "language": "ja",
+          "value": "根室中標津空港ビル"
+        },
+        {
+          "language": "ja",
+          "value": "中標津"
+        }
+      ],
+      "es": [
+        {
+          "language": "es",
+          "value": "Aeropuerto Nakashibetsu"
+        }
+      ],
+      "en": [
+        {
+          "language": "en",
+          "value": "SHB"
+        },
+        {
+          "language": "en",
+          "value": "RJCN"
+        },
+        {
+          "language": "en",
+          "value": "中標津"
+        }
+      ],
+      "id": [
+        {
+          "language": "id",
+          "value": "SHB"
+        },
+        {
+          "language": "id",
+          "value": "RJCN"
+        }
+      ],
+      "fr": [
+        {
+          "language": "fr",
+          "value": "中標津"
+        },
+        {
+          "language": "fr",
+          "value": "SHB"
+        },
+        {
+          "language": "fr",
+          "value": "RJCN"
+        },
+        {
+          "language": "fr",
+          "value": "Nakashibetsu Airport"
+        },
+        {
+          "language": "fr",
+          "value": "Nakashibetsu"
+        }
+      ]
+    },
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "79a8de0cf097aba636e01cc80d7d5c428c3aba57",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1248784,
+                "id": "Q1248784"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "q1432123$FCF77B51-CCB7-4570-84FE-EB92750A6FA6",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            },
+            {
+              "hash": "b0a1cee6717ae3623ca2fffa295bbf1c8d4053d2",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "cefe4005f556223f058d94eeb7dca16dd34c0bf4",
+                    "datavalue": {
+                      "value": "https://store.aci.aero/wp-content/uploads/2018/05/2014_Traffic_Report_sample.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "5f1da3d8ecf17d5072538a6f032f54a372a169e2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 94993988,
+                "id": "Q94993988"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$1CCF17FA-3BB3-4D47-AF37-554311A807A8",
+          "rank": "normal"
+        }
+      ],
+      "P238": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P238",
+            "hash": "7dbb3879346b9680f8f85fb768640725bc21445a",
+            "datavalue": {
+              "value": "SHB",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "q1432123$DD3308FC-57AA-4319-B4F6-B5A71CEEFED3",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P239": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P239",
+            "hash": "3fded9073c88d22c729fa6f9630be5b5a9c0b1ad",
+            "datavalue": {
+              "value": "RJCN",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "q1432123$1E4E5887-17E4-453F-9819-7D98421629AC",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "c7bd7658bdf0cc24c90ee0ffba766beac091cb76",
+            "datavalue": {
+              "value": {
+                "latitude": 43.5775,
+                "longitude": 144.96,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "q1432123$B9402705-C074-4A5F-B2AF-6E2F4C7404C3",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "q1432123$0EC9F2A5-25B6-4452-9AD8-459C8D5BA829",
+          "rank": "normal"
+        }
+      ],
+      "P646": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P646",
+            "hash": "f05e9eeb6cd37251edab1a0c1ee1a1b23688e126",
+            "datavalue": {
+              "value": "/m/02pll2c",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$8A37991E-ECF0-47A9-95C4-C6BE07BA577C",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "a94b740202b097dd33355e0e6c00e54b9395e5e0",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 15241312,
+                        "id": "Q15241312"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P577": [
+                  {
+                    "snaktype": "value",
+                    "property": "P577",
+                    "hash": "fde79ecb015112d2f29229ccc1ec514ed3e71fa2",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2013-10-28T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P577"
+              ]
+            }
+          ]
+        }
+      ],
+      "P1566": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1566",
+            "hash": "7d825bc202bac6c8725c6e8399c784a5f3390518",
+            "datavalue": {
+              "value": "6300326",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$33EC7846-17B0-41DF-A2C9-0DB23D2F3763",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "88694a0f4d1486770c269f7db16a1982f74da69d",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "1b3ef912a2bd61e18dd43abd184337eb010b2e96",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 830106,
+                        "id": "Q830106"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248"
+              ]
+            }
+          ]
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "680fa5e0d194e238fcbe6b8431daa9da30b99cb5",
+            "datavalue": {
+              "value": "Nakashibetsu Airport Aerial photograph.1978.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$6657E6F2-E2BA-42A2-A433-4A6D7C91F8DA",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "b8f4c9e5986b0b7d99fa0696d7733296f89791b0",
+            "datavalue": {
+              "value": "Nakashibetsu airport01.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$11402B23-4CDD-4A23-B0B6-909760071A33",
+          "rank": "normal"
+        }
+      ],
+      "P373": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P373",
+            "hash": "2f31633ba9c2bde8167f3a8d470c02196053c3f8",
+            "datavalue": {
+              "value": "Nakashibetsu Airport",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$021B4FA4-009B-400F-8EC9-87F9F5CFC14B",
+          "rank": "normal"
+        }
+      ],
+      "P931": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P931",
+            "hash": "8127e5e1d0673a5bf24fbf595d641aaffdf74d08",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 514324,
+                "id": "Q514324"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$BBD328BD-72F6-4ACF-86EA-B4205D550451",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            },
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        }
+      ],
+      "P138": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P138",
+            "hash": "104212d2a4c5197d11b73b74b600d62091eb5dcb",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 514324,
+                "id": "Q514324"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$CEAFDA69-C87C-4DDD-B9D9-5DC8CEC9D076",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "e8f03fa07e1961af76b351714f78337971f050bf",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 514324,
+                "id": "Q514324"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$07124D11-BEB6-4342-ADDB-B3A5F21ABEFB",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "c55996369f0ee739541041b15c18d363595fcc66",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1037393,
+                "id": "Q1037393"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$F08DB039-D727-478A-8D6B-BC0330B4D5B0",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        }
+      ],
+      "P2044": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2044",
+            "hash": "f4447e482c723b08c6124d8dd676851cea5f949e",
+            "datavalue": {
+              "value": {
+                "amount": "+214",
+                "unit": "http://www.wikidata.org/entity/Q3710"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$CEABACAC-2574-4160-9EFE-386DBF7B08D5",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P5400": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P5400",
+            "hash": "3576b2c279b5cc4e20b1c7ce15693eef354baf23",
+            "datavalue": {
+              "value": "143egS",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$7DECBE16-3D4F-4C83-B406-9EF7001FB445",
+          "rank": "normal"
+        }
+      ],
+      "P3749": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3749",
+            "hash": "939bc447ae3d752a77eef2f73536d86086754c84",
+            "datavalue": {
+              "value": "2287870806757296003",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$65ddac29-439e-ce7e-29e6-69ba6565b85c",
+          "rank": "normal"
+        }
+      ],
+      "P521": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P521",
+            "hash": "af50f352c2b33677f2e6feba2b6e5f867db52f20",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 204853,
+                "id": "Q204853"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P137": [
+              {
+                "snaktype": "value",
+                "property": "P137",
+                "hash": "5353fbda75809db7757f9302ec37b57f287220c3",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 204284,
+                    "id": "Q204284"
+                  },
+                  "type": "wikibase-entityid"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P137"
+          ],
+          "id": "Q1432123$d7149bc2-4332-feb6-da90-376f87c7435e",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P521",
+            "hash": "cb3579244cfb3754e1c83eb713a9f9b11db793ad",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 908296,
+                "id": "Q908296"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P137": [
+              {
+                "snaktype": "value",
+                "property": "P137",
+                "hash": "5353fbda75809db7757f9302ec37b57f287220c3",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 204284,
+                    "id": "Q204284"
+                  },
+                  "type": "wikibase-entityid"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P137"
+          ],
+          "id": "Q1432123$499f8810-4060-56ed-d2cc-46dfd1dba48b",
+          "rank": "normal"
+        }
+      ],
+      "P3872": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "3b668882f89b904354b63fdd74cf4add92e99505",
+            "datavalue": {
+              "value": {
+                "amount": "+214192",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "eeb6f457aae8f95cecb445d13d7699c5890ab41c",
+                "datavalue": {
+                  "value": {
+                    "time": "+2000-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$0DDEFBC0-8CFC-4D5E-8A6B-20F3093617C1",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "b33c39bdbb133b8aa0660c619e69b9c25f556db3",
+            "datavalue": {
+              "value": {
+                "amount": "+227855",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "016a1a6e205a0226d5970575e1d1b7a4cd6ed23c",
+                "datavalue": {
+                  "value": {
+                    "time": "+2001-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$A38FE015-C47B-4156-A3A9-2F5D6AE1005C",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "7683d414898422cf5ffedab46db3c2920c847b66",
+            "datavalue": {
+              "value": {
+                "amount": "+225344",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "4f58ad05753cffe89d89cdb5a4558fa88fd1b3c2",
+                "datavalue": {
+                  "value": {
+                    "time": "+2002-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$20FCCEAD-1F7D-47B0-912E-393D3CF3FD8E",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "0d6542521c99dd099cebb8de607a6d078ba4df00",
+            "datavalue": {
+              "value": {
+                "amount": "+207682",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "056ee6becab0ac8a8ced425f016e0637eb57f3a1",
+                "datavalue": {
+                  "value": {
+                    "time": "+2003-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$94C49D05-CD30-4AA6-832B-0C09DE3AD053",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "0049e3b200022f8afd7a6a5ab6358f00a57d2d9a",
+            "datavalue": {
+              "value": {
+                "amount": "+213273",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "b70477aaf090b46b9ad56abbe700307fb9b253e5",
+                "datavalue": {
+                  "value": {
+                    "time": "+2004-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$46F6664B-E178-43E6-A2EF-8E60A0337888",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "ad7b7401e8481fc2d6a86b1814fd331488922db3",
+            "datavalue": {
+              "value": {
+                "amount": "+223101",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "b2d590169589c914a9cc979977d42279a385a31f",
+                "datavalue": {
+                  "value": {
+                    "time": "+2005-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$A7CBF732-A6A3-4821-901B-757EB96FD87C",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "0840258fc18a8159f8247a3c99f4fe43d6d7af41",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "a9bb1696f60256a5547bae8597638c847c0db0bd",
+                    "datavalue": {
+                      "value": "https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Japan",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "94b2aaf95d5d5729a64d1a19ca333380e43e605e",
+            "datavalue": {
+              "value": {
+                "amount": "+203958",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "60634bc4e9846fc33bc656ddcba7ec09b07bc1b4",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$C1610AF1-0C08-407C-9CB5-AE67F1A5C614",
+          "rank": "preferred",
+          "references": [
+            {
+              "hash": "63e727eab97859a25a5a371a4a0917ee89784370",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "30c4f53f4fb2349324aaad8642fac212026b9d39",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/H30.riyougaikyou1-311.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "e4ba716d8719bbb7a6d9b80c6d4ee098dcbc8fd8",
+            "datavalue": {
+              "value": {
+                "amount": "+13969",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "62174df947d90245389e69288ad438babbd0959b",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$25E0A537-9780-4F37-9414-FC54500AF4BB",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "648a26badd02e9c2563836eab8e5b06cfc1bf9d2",
+            "datavalue": {
+              "value": {
+                "amount": "+14131",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "6a059d1366ebb4bdebebde6f895bbc67947af709",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-02-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$F21E17C7-3DAE-47E6-8C0F-954525BE97BC",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "d64cf2f29470dbe322b991a3022864c7d6a8d6b0",
+            "datavalue": {
+              "value": {
+                "amount": "+13805",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "bd9d42dab1788da4ff7f3576994094563c0d7a58",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-03-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$4278D179-15F1-4F3E-A6A1-CA0ED47C38EA",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "445987b7bfa2c1264b7d8e282fb2bdc2b9862a55",
+            "datavalue": {
+              "value": {
+                "amount": "+12962",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "aa7701c3f6147dde08b978b7d8b423a553b00719",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-04-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$AA079D7B-B05B-499C-AC98-5E31147E580D",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "42710c49b50fb280a1f53731b68a7a4992786fc0",
+            "datavalue": {
+              "value": {
+                "amount": "+16546",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "52ea12d13cd48050ff18dbfb508d8b9e64bc329c",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-05-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$8D152089-E6C9-45BC-994B-791690E7CE2B",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "3698bff8c65be899987908046c0004edf1e4ef99",
+            "datavalue": {
+              "value": {
+                "amount": "+19980",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "8ed762e3365a50eb63e012bc4966eeb8fa752f7f",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-06-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$914F42E4-D8F3-4826-9A57-89058A2E6BA9",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "059bdd0acef4f6e7c2ce09e7aadf89ac72c8ced1",
+            "datavalue": {
+              "value": {
+                "amount": "+21903",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "dcbb0645832605e474fdebc11313f485fa34bd68",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-07-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$08C1CB6A-8803-4BA0-9BD5-FDDB08F424D7",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "f04c25ef10ba67919ba2ca24216d15f901a50a61",
+            "datavalue": {
+              "value": {
+                "amount": "+25707",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "f5308921f16bb26a4e65f7e9f8c7e26a51e41e44",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-08-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$13403639-5014-452E-A0C5-AAE19A2E9977",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "8aa90d8703b207f1ebefa7c89d55f5ad5249f3fd",
+            "datavalue": {
+              "value": {
+                "amount": "+17000",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "be2258c47760bf891e8842a67f9ddaf3ab356504",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-09-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$4B7598A9-294A-4889-A946-C4F4DB2580DA",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "a0b1223e15f5515b00451c512a0acdd2ab21f804",
+            "datavalue": {
+              "value": {
+                "amount": "+18240",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ff7678b95897357ecbc75edebdfb6310ba23f3cf",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-10-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$31276E39-ED78-4256-859E-F0ADC334313A",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "f44e97bb8602907079a8e6a5c921d925f8a3fd7b",
+            "datavalue": {
+              "value": {
+                "amount": "+16094",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "1821903c471e6494a17de1f7c733f61b6ea9a5bd",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-11-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$857CCC87-9983-4D7B-9C86-631B9268014F",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "6f0a64c70eb814f7fac9046a73e14fe501eacf81",
+            "datavalue": {
+              "value": {
+                "amount": "+13621",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "444ea5eb12933d6c89bc21f7d0806216ad3b9572",
+                "datavalue": {
+                  "value": {
+                    "time": "+2018-12-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$6435B1A7-A10A-482E-9BA9-092519AED836",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "03484f6e04ce938872a3a90d15517a1088d5dd6d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "db6047997ec27f9420cf6e12736203b3cc0d3dfd",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/excel/riyougaikyou30.1-31.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "ce169fa42737deb6fefcefd904c7e67bdbf815a5",
+            "datavalue": {
+              "value": {
+                "amount": "+14973",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "f6ad1aa252e67f1773f51f4fb673d98a255cc7d1",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$2AA86B3C-19C5-49D0-AECB-E22A6C0D0684",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "db0f65534652dc72cce8cd91cf29ca00c2b90104",
+            "datavalue": {
+              "value": {
+                "amount": "+14972",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "f989e08ac0bd62769e14d1ed6b4c37c37f180254",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-02-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$3F52FE83-47C9-4CC9-B2F3-EBADA28DBB6F",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "c73f51167bcb0bd5dde8fa490bfdfadb7df8e879",
+            "datavalue": {
+              "value": {
+                "amount": "+14387",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "a16860a67cdbfb44c15ccfc0bbd106b5eee2d1ec",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-03-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$DB64495A-AE0D-4785-8133-E85B6FF69C28",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "eba172767713df075c32d65c21bc94e2330735a6",
+            "datavalue": {
+              "value": {
+                "amount": "+14056",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "040b21740594b65080129e121b78225ab78e0561",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-04-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$54CB2C41-61D4-4E29-B6E7-A9761916043C",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "2a969a2853064895096f0c54965853fa1dda37c2",
+            "datavalue": {
+              "value": {
+                "amount": "+17410",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "8d9fd50f19a682fa9db6a5c5f433e048e0ef030b",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-05-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$C4E2271A-8A55-4562-A849-77D161830102",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "493bfcc0c0f8e5c031a111409e06e717900b1336",
+            "datavalue": {
+              "value": {
+                "amount": "+19557",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "26a9097b7f0040740805f13cd2576edddf31b36d",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-06-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$07741CC9-2058-4800-A3F5-B374D5CFADEF",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "3fa173cb9844c0cfc400c0e093754b7f7a93b1fe",
+            "datavalue": {
+              "value": {
+                "amount": "+22698",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "0387392f61fbd4163613b7772a1a04ba8c3a7a6d",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-07-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$65E63E46-FC69-4726-98B2-C6EBCCBEA161",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "23b4426d3f55c4692dd41d9204bc82a8af4290dd",
+            "datavalue": {
+              "value": {
+                "amount": "+26294",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "81a34c7b4f9078ac06b48d27c67f285c56ceca4c",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-08-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$525636D5-D9F6-4819-87C8-2D68E17435A7",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "35274bd4be27af41908186b0d9ad8fdd9fe8c679",
+            "datavalue": {
+              "value": {
+                "amount": "+21911",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "3d2104a5b3cb2db869eeb94e210ef0742cb523e7",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-09-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$A6A3250C-5635-461C-AD1A-E760C85E13D3",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "653ae00cdbc1c848510ffbc38ec34c140ac7178e",
+            "datavalue": {
+              "value": {
+                "amount": "+19097",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "0a5698edb0349d5fb2a8de140eb8d497195af49b",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-10-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$C999E1F5-6B9E-48C4-8F77-45C68F3EE068",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "615f5ce33d1eafff2ff52def4bbf63c6b6ac01b0",
+            "datavalue": {
+              "value": {
+                "amount": "+15789",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "5d8d7d721efacef903dc0155adcec76911d37282",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-11-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$24AA72DB-3EC8-4BFA-9A7D-0B73D65352F2",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "4b7fbbb2639719a474bf01ac511257ec1064a969",
+            "datavalue": {
+              "value": {
+                "amount": "+13731",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "a9fa7e8581f5990f0e7c46ce0fb01121869d3977",
+                "datavalue": {
+                  "value": {
+                    "time": "+2019-12-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$6782C99A-9FA8-4737-8596-BD647FEF91C9",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "83667fa1b3cba121b37a27a45b2251de72c5d2d8",
+            "datavalue": {
+              "value": {
+                "amount": "+14449",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "35a76f2803c98aac93b1b149b43c3cf4d4149d49",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$FE85FEBF-E6BE-4FF7-A62A-704A4EEA2633",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "9724081ddfcb70685ede147100b666d6774776f1",
+            "datavalue": {
+              "value": {
+                "amount": "+14158",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "6a49326096637e8cbbbeb04aa353a08ee4d4f325",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-02-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$FA3940CB-AAB3-409E-AF35-B27049834DDB",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "1927c9321e286ef57de12ef451ffde2a69595ac7",
+            "datavalue": {
+              "value": {
+                "amount": "+5977",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "3be01358f73055a9f329a6c6f9a38f7e5e1352be",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-03-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$DB736275-849C-4B80-A993-CCE70A5F50B8",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "dd41b26942e4b965d9558b7cf817df74f8a3fa34",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "00e4c8de396edab8f783b0be706f69fbb3c5e36b",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20H31.1-R2.3.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "9193b9d30fd4057c2a0a810a35c5640e1c50dc3d",
+            "datavalue": {
+              "value": {
+                "amount": "+2570",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "70022badf40b498a2dd419dc6fc7ea1c1ba921dc",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-04-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$9B08EB0A-5930-4BCF-BAE6-123BC43435C0",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "61a4a3cd7f2ce7fefc33faa7d792d680166e4b24",
+            "datavalue": {
+              "value": {
+                "amount": "+1290",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "1cb9cb145cce5b912c329249e30e2ea3bcbc5198",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-05-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$35C01301-7B7B-40C3-AF0E-0111E959CC79",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "a35b8d3d40ba696763b7decf29feb9f3a5d12dc7",
+            "datavalue": {
+              "value": {
+                "amount": "+3216",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "34aa7432d7b2b3e53370b19f540eecd1b239a10f",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-06-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$923AF987-0552-4EF3-B03D-C4606916C65E",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "b34b20155f521d1d1804960aaffbfd263f6489a1",
+            "datavalue": {
+              "value": {
+                "amount": "+5271",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ac86f65494e31013bece2cff65d60f6f6f0dfaa3",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-07-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$A105DD8F-D9D3-4A41-B0F1-70A2B27D89CE",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "64d46e05810539d2fd4df2fc6281cfc1c6d95968",
+            "datavalue": {
+              "value": {
+                "amount": "+9481",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "622466c4907606886bd21f4f89fd7e3a21938bae",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-08-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$0FD68EC6-488B-429D-A7F0-25873006D913",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "9e7986611635eb785ec8fbc9dd6a5a376b734995",
+            "datavalue": {
+              "value": {
+                "amount": "+6217",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "d2c0c1e3c560afaf6d97db036f8a1db88335fbc4",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-09-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$C8D4D41E-B8B9-4C31-938B-84D9980210CF",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "71c6d1b2fc65fdbe635a120899fb213d73814569",
+            "datavalue": {
+              "value": {
+                "amount": "+6772",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "fb508c93e54e7fa6981effdede3e824cb17d8c9e",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-10-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$BD44D8FA-D867-4A36-A803-4A7B51C5B3B3",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "fe35eac8f7d7fe7edba7ba3497ba5f54555f6ecc",
+            "datavalue": {
+              "value": {
+                "amount": "+6144",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "b081872b986269a324b3a2c810789fda3d715a08",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-11-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$6871B192-731E-4FDB-865E-C0A5D39EA167",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84eddce752fce1d4d9da567a9e92dd88c92a4d3f",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "424491521c4e99a7e04501a5b0a5159fa67cdb63",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.11.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3872",
+            "hash": "03d7dafb46c3f3eb99740227139a6a0fe22493a1",
+            "datavalue": {
+              "value": {
+                "amount": "+5504",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "a326c39ac19b3d642c74cba6e9f88dbb8266d5a7",
+                "datavalue": {
+                  "value": {
+                    "time": "+2020-12-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q1432123$E13129EE-70DA-4BC3-9AC6-847E0CD29A7B",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "84a39cf2326fc315ef3238a50cb6f7f9ed456074",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "593e969d25ba51f8e8f65c7a13ba35eed7451474",
+                    "datavalue": {
+                      "value": "https://www.cab.mlit.go.jp/tcab/img/statistics/pdf2/riyougaikyo%20R2.1-R2.12.xlsx",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P5817": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P5817",
+            "hash": "3a5c47216c1ed20dc4a40d9bcde91e515d6a6966",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 55654238,
+                "id": "Q55654238"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1432123$4E584DED-3981-4861-8A58-BC2D33578D74",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Nakashibetsu Airport",
+        "badges": []
+      },
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Nemuro Nakashibetsu Airport",
+        "badges": []
+      },
+      "dewiki": {
+        "site": "dewiki",
+        "title": "Flughafen Nakashibetsu",
+        "badges": []
+      },
+      "eswiki": {
+        "site": "eswiki",
+        "title": "Aeropuerto de Nakashibetsu",
+        "badges": []
+      },
+      "jawiki": {
+        "site": "jawiki",
+        "title": "中標津空港",
+        "badges": []
+      },
+      "zhwiki": {
+        "site": "zhwiki",
+        "title": "中標津機場",
+        "badges": []
+      },
+      "fawiki": {
+        "site": "fawiki",
+        "title": "فرودگاه ناکاشیبتسو",
+        "badges": []
+      },
+      "viwiki": {
+        "site": "viwiki",
+        "title": "Sân bay Nakashibetsu",
+        "badges": []
+      },
+      "kowiki": {
+        "site": "kowiki",
+        "title": "나카시베쓰 공항",
+        "badges": []
+      },
+      "idwiki": {
+        "site": "idwiki",
+        "title": "Bandar Udara Nakashibetsu",
+        "badges": []
+      },
+      "astwiki": {
+        "site": "astwiki",
+        "title": "Aeropuertu de Nakashibetsu",
+        "badges": []
+      },
+      "cebwiki": {
+        "site": "cebwiki",
+        "title": "Nakashibetsu Airport",
+        "badges": []
+      },
+      "mswiki": {
+        "site": "mswiki",
+        "title": "Lapangan Terbang Nakashibetsu",
+        "badges": []
+      },
+      "tgwiki": {
+        "site": "tgwiki",
+        "title": "Фурудгоҳи мудонҷионг ҳоилонг",
+        "badges": []
+      }
+    }
+  }
+}

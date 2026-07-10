@@ -1,0 +1,406 @@
+{
+  "qid": "Q1447375",
+  "archived_at": "2026-07-10T03:26:02Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-04-24T06:43:10Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P138"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2484310014,
+    "timestamp": "2026-04-24T06:42:29Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 9,
+    "en_label": "Ryūgasaki Airfield",
+    "ja_label": "龍ヶ崎飛行場",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P138",
+      "P373",
+      "P625",
+      "P646",
+      "P3749"
+    ],
+    "statement_count": 11,
+    "sitelinks": [
+      "commonswiki",
+      "enwiki",
+      "jawiki",
+      "uzwiki",
+      "zhwiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q1447375",
+    "labels": {
+      "zh-hans": {
+        "language": "zh-hans",
+        "value": "龙崎飞行场"
+      },
+      "zh-hant": {
+        "language": "zh-hant",
+        "value": "龍崎飛行場"
+      },
+      "zh-hk": {
+        "language": "zh-hk",
+        "value": "龍崎飛行場"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "龍ヶ崎飛行場"
+      },
+      "en": {
+        "language": "en",
+        "value": "Ryūgasaki Airfield"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "龍崎飛行場"
+      },
+      "frc": {
+        "language": "frc",
+        "value": "champ d'aviation de Ryūgasaki"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "champ d'aviation de Ryūgasaki"
+      },
+      "uz": {
+        "language": "uz",
+        "value": "Ryūgasaki aerodromi"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "airport"
+      },
+      "nl": {
+        "language": "nl",
+        "value": "vliegveld in Japan"
+      },
+      "he": {
+        "language": "he",
+        "value": "שדה תעופה ביפן"
+      },
+      "id": {
+        "language": "id",
+        "value": "bandar udara di Jepang"
+      },
+      "sq": {
+        "language": "sq",
+        "value": "aeroport"
+      },
+      "ar": {
+        "language": "ar",
+        "value": "مطار في اليابان"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "日本の茨城県龍ケ崎市にある飛行場"
+      },
+      "de": {
+        "language": "de",
+        "value": "Flugplatz in Japan"
+      },
+      "uk": {
+        "language": "uk",
+        "value": "аеропорт"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "竜ヶ崎飛行場"
+        }
+      ]
+    },
+    "claims": {
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "fa6a16401fa7823c1ee348fe11ac1a703f547b99",
+            "datavalue": {
+              "value": {
+                "latitude": 35.90638889,
+                "longitude": 140.24222222,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$7B002938-52F6-4EEF-8C8C-39216E16AE0D",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "b5c5dbb98c27c1c906f0bd3c7cbcb8e3c891ee76",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 3631092,
+                "id": "Q3631092"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$0A432E47-FFD0-4BB8-84ED-36B99923BC43",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$34C42C71-FDBD-4C2E-9E65-BA74CFB64B90",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "dde95c0528ddd4246cb52b351081111ec380de94",
+            "datavalue": {
+              "value": "Ryuugasaki.airfield.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$B47938EC-6035-4DE0-B0F1-DA43AB45819A",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "adc0c7910c7df59559b898cd7d3b8c775c84fa30",
+            "datavalue": {
+              "value": "Ryugasaki airfield aerial photograph 2025.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$F29E3728-807B-4D94-921C-F011937E3377",
+          "rank": "normal"
+        }
+      ],
+      "P373": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P373",
+            "hash": "d51aa69fe8baca09bd924ff8c0d6e305a93da4aa",
+            "datavalue": {
+              "value": "Ryūgasaki Airfield",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$DA6D378F-2C5E-494B-B086-DE6FDF8ADC26",
+          "rank": "normal"
+        }
+      ],
+      "P3749": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3749",
+            "hash": "6220249ed13e1da30943d4a0cd90488faf2fc3c0",
+            "datavalue": {
+              "value": "16208829972842245575",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$50b818d2-4ac3-b6da-ece5-1e4d199d1192",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "c6e3292d0472159b212b1a9d615c18374bdd207b",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 83273,
+                "id": "Q83273"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$3a0841be-4d8a-d2ea-1fe3-fbe13b67bc7a",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "20d3073c364c3e63ca1d506adec471166210b14a",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 844138,
+                "id": "Q844138"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$5c72ff01-4ba4-1da9-b540-9528b02a1e24",
+          "rank": "normal"
+        }
+      ],
+      "P138": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P138",
+            "hash": "6ba12dbc332f2375fb2d48bc9692769862abfabe",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 844138,
+                "id": "Q844138"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$aa216829-46f7-9ea4-2e5f-f97092a30fb3",
+          "rank": "normal"
+        }
+      ],
+      "P646": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P646",
+            "hash": "5beaf20a334af5012ed0f6a5e3716f3c2affbecb",
+            "datavalue": {
+              "value": "/m/0cmdff8",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q1447375$9db13a5f-4641-e1d6-e044-a69db205e02f",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "zhwiki": {
+        "site": "zhwiki",
+        "title": "龍崎飛行場",
+        "badges": []
+      },
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Ryūgasaki Airfield",
+        "badges": []
+      },
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Ryūgasaki Airfield",
+        "badges": []
+      },
+      "jawiki": {
+        "site": "jawiki",
+        "title": "竜ヶ崎飛行場",
+        "badges": []
+      },
+      "uzwiki": {
+        "site": "uzwiki",
+        "title": "Ryūgasaki aerodromi",
+        "badges": []
+      }
+    }
+  }
+}

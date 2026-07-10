@@ -1,0 +1,140 @@
+{
+  "qid": "Q140469774",
+  "archived_at": "2026-07-10T03:26:00Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-09T07:08:43Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P131"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2515429908,
+    "timestamp": "2026-07-09T07:08:03Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "横浜御嶽神社",
+    "properties": [
+      "P17",
+      "P31",
+      "P131",
+      "P625"
+    ],
+    "statement_count": 4,
+    "sitelinks": [
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q140469774",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "横浜御嶽神社"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "横浜市栄区上郷町にある神社"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "351aa7d42b49268ed3d099ffbf885714a3f16c92",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1153916,
+                "id": "Q1153916"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q140469774$616a339a-4e16-3916-83c2-4d5a0690c4bb",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "a40ce337ecef84ed248c9b09a07bfa326201fb93",
+            "datavalue": {
+              "value": {
+                "latitude": 35.35380555555555,
+                "longitude": 139.5803611111111,
+                "altitude": null,
+                "precision": 2.777777777777778e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q140469774$77166f16-4168-c353-13a4-ba514667f6ad",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "e5980b8ead95e45f7ede8f03f86e22689f06d9d4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 845945,
+                "id": "Q845945"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q140469774$3e512714-4ba0-1699-5803-8adec718bc97",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q140469774$71a89d93-4ca8-fd75-c5a5-1edcff18c16f",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "横浜御嶽神社",
+        "badges": []
+      }
+    }
+  }
+}

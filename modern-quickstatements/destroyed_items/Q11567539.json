@@ -1,0 +1,445 @@
+{
+  "qid": "Q11567539",
+  "archived_at": "2026-07-10T03:25:54Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-06-30T15:24:51Z",
+  "destructive_edit_count": 2,
+  "properties_removed": [
+    "P31"
+  ],
+  "terms_removed": [
+    "description:en"
+  ],
+  "pre_damage_revision": {
+    "revid": 2374817083,
+    "timestamp": "2025-07-06T19:32:43Z",
+    "user": "Ideophagous",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "無量寺",
+    "properties": [
+      "P31"
+    ],
+    "statement_count": 1,
+    "sitelinks": [
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q11567539",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "無量寺"
+      }
+    },
+    "descriptions": {
+      "es": {
+        "language": "es",
+        "value": "página de desambiguación de Wikimedia"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "page d'homonymie de Wikimédia"
+      },
+      "it": {
+        "language": "it",
+        "value": "pagina di disambiguazione di un progetto Wikimedia"
+      },
+      "de": {
+        "language": "de",
+        "value": "Wikimedia-Begriffsklärungsseite"
+      },
+      "pt": {
+        "language": "pt",
+        "value": "página de desambiguação de um projeto da Wikimedia"
+      },
+      "pt-br": {
+        "language": "pt-br",
+        "value": "página de desambiguação de um projeto da Wikimedia"
+      },
+      "sv": {
+        "language": "sv",
+        "value": "grensida"
+      },
+      "bn": {
+        "language": "bn",
+        "value": "উইকিমিডিয়ার দ্ব্যর্থতা নিরসন পাতা"
+      },
+      "ca": {
+        "language": "ca",
+        "value": "pàgina de desambiguació de Wikimedia"
+      },
+      "ckb": {
+        "language": "ckb",
+        "value": "پەڕەی ڕوونکردنەوەی ویکیمیدیا"
+      },
+      "cs": {
+        "language": "cs",
+        "value": "rozcestník na projektech Wikimedia"
+      },
+      "da": {
+        "language": "da",
+        "value": "Wikimedia-flertydigside"
+      },
+      "el": {
+        "language": "el",
+        "value": "σελίδα αποσαφήνισης εγχειρημάτων Wikimedia"
+      },
+      "en": {
+        "language": "en",
+        "value": "Wikimedia disambiguation page"
+      },
+      "en-ca": {
+        "language": "en-ca",
+        "value": "Wikimedia disambiguation page"
+      },
+      "en-gb": {
+        "language": "en-gb",
+        "value": "Wikimedia disambiguation page"
+      },
+      "eo": {
+        "language": "eo",
+        "value": "apartigilo"
+      },
+      "fa": {
+        "language": "fa",
+        "value": "یک صفحهٔ ابهام‌زدایی در ویکی‌پدیا"
+      },
+      "fi": {
+        "language": "fi",
+        "value": "täsmennyssivu"
+      },
+      "gl": {
+        "language": "gl",
+        "value": "páxina de homónimos de Wikimedia"
+      },
+      "gu": {
+        "language": "gu",
+        "value": "સ્પષ્ટતા પાનું"
+      },
+      "he": {
+        "language": "he",
+        "value": "דף פירושונים"
+      },
+      "hi": {
+        "language": "hi",
+        "value": "बहुविकल्पी पृष्ठ"
+      },
+      "hu": {
+        "language": "hu",
+        "value": "egyértelműsítő lap"
+      },
+      "id": {
+        "language": "id",
+        "value": "Halaman disambiguasi"
+      },
+      "is": {
+        "language": "is",
+        "value": "aðgreiningarsíða á Wikipediu"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "ウィキメディアの曖昧さ回避ページ"
+      },
+      "ka": {
+        "language": "ka",
+        "value": "მრავალმნიშვნელოვანი"
+      },
+      "ko": {
+        "language": "ko",
+        "value": "위키미디어 동음이의어 문서"
+      },
+      "min": {
+        "language": "min",
+        "value": "laman disambiguasi"
+      },
+      "mk": {
+        "language": "mk",
+        "value": "појаснителна страница"
+      },
+      "ms": {
+        "language": "ms",
+        "value": "Laman nyahkekaburan"
+      },
+      "nb": {
+        "language": "nb",
+        "value": "Wikimedia-pekerside"
+      },
+      "nds": {
+        "language": "nds",
+        "value": "Sied för en mehrdüdig Begreep op Wikimedia"
+      },
+      "nl": {
+        "language": "nl",
+        "value": "Wikimedia-doorverwijspagina"
+      },
+      "nn": {
+        "language": "nn",
+        "value": "Wikimedia-fleirtydingsside"
+      },
+      "or": {
+        "language": "or",
+        "value": "ବହୁବିକଳ୍ପ ପୃଷ୍ଠା"
+      },
+      "pl": {
+        "language": "pl",
+        "value": "strona ujednoznaczniająca w projekcie Wikimedia"
+      },
+      "ru": {
+        "language": "ru",
+        "value": "страница значений в проекте Викимедиа"
+      },
+      "sk": {
+        "language": "sk",
+        "value": "rozlišovacia stránka"
+      },
+      "vi": {
+        "language": "vi",
+        "value": "trang định hướng Wikimedia"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "维基媒体消歧义页"
+      },
+      "zh-hans": {
+        "language": "zh-hans",
+        "value": "维基媒体消歧义页"
+      },
+      "zh-hant": {
+        "language": "zh-hant",
+        "value": "維基媒體消歧義頁"
+      },
+      "et": {
+        "language": "et",
+        "value": "Wikimedia täpsustuslehekülg"
+      },
+      "bg": {
+        "language": "bg",
+        "value": "Уикимедия пояснителна страница"
+      },
+      "ar": {
+        "language": "ar",
+        "value": "صفحة توضيح لويكيميديا"
+      },
+      "lv": {
+        "language": "lv",
+        "value": "Wikimedia projekta nozīmju atdalīšanas lapa"
+      },
+      "bs": {
+        "language": "bs",
+        "value": "višeznačna odrednica na Wikimediji"
+      },
+      "gsw": {
+        "language": "gsw",
+        "value": "Wikimedia-Begriffsklärigssite"
+      },
+      "hr": {
+        "language": "hr",
+        "value": "razdvojbena stranica na Wikimediji"
+      },
+      "lb": {
+        "language": "lb",
+        "value": "Wikimedia-Homonymiesäit"
+      },
+      "ro": {
+        "language": "ro",
+        "value": "pagină de dezambiguizare Wikimedia"
+      },
+      "sco": {
+        "language": "sco",
+        "value": "Wikimedia disambiguation page"
+      },
+      "sr": {
+        "language": "sr",
+        "value": "вишезначна одредница на Викимедији"
+      },
+      "tr": {
+        "language": "tr",
+        "value": "Wikimedia anlam ayrımı sayfası"
+      },
+      "hy": {
+        "language": "hy",
+        "value": "Վիքիմեդիայի նախագծի բազմիմաստության փարատման էջ"
+      },
+      "uk": {
+        "language": "uk",
+        "value": "сторінка значень у проєкті Вікімедіа"
+      },
+      "yue": {
+        "language": "yue",
+        "value": "維基媒體搞清楚頁"
+      },
+      "zh-cn": {
+        "language": "zh-cn",
+        "value": "维基媒体消歧义页"
+      },
+      "zh-hk": {
+        "language": "zh-hk",
+        "value": "維基媒體消歧義頁"
+      },
+      "zh-mo": {
+        "language": "zh-mo",
+        "value": "維基媒體消歧義頁"
+      },
+      "zh-my": {
+        "language": "zh-my",
+        "value": "维基媒体消歧义页"
+      },
+      "zh-sg": {
+        "language": "zh-sg",
+        "value": "维基媒体消歧义页"
+      },
+      "zh-tw": {
+        "language": "zh-tw",
+        "value": "維基媒體消歧義頁"
+      },
+      "de-at": {
+        "language": "de-at",
+        "value": "Wikimedia-Begriffsklärungsseite"
+      },
+      "de-ch": {
+        "language": "de-ch",
+        "value": "Wikimedia-Begriffsklärungsseite"
+      },
+      "sl": {
+        "language": "sl",
+        "value": "razločitvena stran Wikimedie"
+      },
+      "eu": {
+        "language": "eu",
+        "value": "Wikimediako argipen orri"
+      },
+      "sq": {
+        "language": "sq",
+        "value": "faqe kthjelluese e Wikimedias"
+      },
+      "fy": {
+        "language": "fy",
+        "value": "Wikimedia-betsjuttingsside"
+      },
+      "tg-latn": {
+        "language": "tg-latn",
+        "value": "sahifai ma'nohoi Vikimedia"
+      },
+      "an": {
+        "language": "an",
+        "value": "pachina de desambigación"
+      },
+      "tg": {
+        "language": "tg",
+        "value": "саҳифаи маъноҳои Викимедиа"
+      },
+      "sw": {
+        "language": "sw",
+        "value": "ukarasa wa maana wa Wikimedia"
+      },
+      "tg-cyrl": {
+        "language": "tg-cyrl",
+        "value": "саҳифаи маъноҳои Викимедиа"
+      },
+      "zea": {
+        "language": "zea",
+        "value": "Wikimedia-deurverwiespagina"
+      },
+      "yo": {
+        "language": "yo",
+        "value": "ojúewé ìṣojútùú Wikimedia"
+      },
+      "li": {
+        "language": "li",
+        "value": "Wikimedia-verdudelikingspazjena"
+      },
+      "be": {
+        "language": "be",
+        "value": "старонка неадназначнасці ў праекце Вікімедыя"
+      },
+      "yi": {
+        "language": "yi",
+        "value": "וויקימעדיע באַדייטן בלאַט"
+      },
+      "as": {
+        "language": "as",
+        "value": "ৱিকিমিডিয়া দ্ব্যৰ্থতা দূৰীকৰণ পৃষ্ঠা"
+      },
+      "kn": {
+        "language": "kn",
+        "value": "ದ್ವಂದ್ವ ನಿವಾರಣೆ"
+      },
+      "ml": {
+        "language": "ml",
+        "value": "വിക്കിപീഡിയ വിവക്ഷ താൾ"
+      },
+      "mr": {
+        "language": "mr",
+        "value": "निःसंदिग्धीकरण पाने"
+      },
+      "pa": {
+        "language": "pa",
+        "value": "ਵਿਕੀਮੀਡੀਆ ਗੁੰਝਲਖੋਲ੍ਹ ਸਫ਼ਾ"
+      },
+      "te": {
+        "language": "te",
+        "value": "వికీమీడియా అయోమయ నివృత్తి పేజీ"
+      },
+      "tt": {
+        "language": "tt",
+        "value": "Мәгънәләр бите Викимедиа проектында"
+      },
+      "tt-cyrl": {
+        "language": "tt-cyrl",
+        "value": "Мәгънәләр бите Викимедиа проектында"
+      },
+      "tt-latn": {
+        "language": "tt-latn",
+        "value": "Mäğnälär bite Wikimedia proyektında"
+      },
+      "ast": {
+        "language": "ast",
+        "value": "páxina de dixebra de Wikimedia"
+      },
+      "la": {
+        "language": "la",
+        "value": "pagina discretiva Vicimediorum"
+      },
+      "ary": {
+        "language": "ary",
+        "value": "صفحة توضيح ديال ويكيميديا"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "0ebb78ffecd3415a2dbc8db900881ff784fead2a",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 4167410,
+                "id": "Q4167410"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11567539$DE7A15C3-3323-425F-95A9-8744DA5B0776",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "無量寺",
+        "badges": []
+      }
+    }
+  }
+}

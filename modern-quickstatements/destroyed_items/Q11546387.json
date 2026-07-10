@@ -1,0 +1,387 @@
+{
+  "qid": "Q11546387",
+  "archived_at": "2026-07-10T03:25:53Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-05T12:28:07Z",
+  "destructive_edit_count": 2,
+  "properties_removed": [
+    "P18",
+    "P18"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 1967096518,
+    "timestamp": "2023-09-03T05:25:31Z",
+    "user": "BotMultichillT",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 2,
+    "en_label": "Musashino Greenpark Stadium",
+    "ja_label": "武蔵野グリーンパーク野球場",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P373",
+      "P576",
+      "P580",
+      "P625",
+      "P641",
+      "P1366",
+      "P1889"
+    ],
+    "statement_count": 12,
+    "sitelinks": [
+      "commonswiki",
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q11546387",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "武蔵野グリーンパーク野球場"
+      },
+      "en": {
+        "language": "en",
+        "value": "Musashino Greenpark Stadium"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "かつて東京都武蔵野市に所在した野球場"
+      },
+      "en": {
+        "language": "en",
+        "value": "Demolished baseball stadium"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "グリーンパークスタジアム"
+        },
+        {
+          "language": "ja",
+          "value": "グリーンパーク野球場"
+        },
+        {
+          "language": "ja",
+          "value": "グリーンパーク球場"
+        },
+        {
+          "language": "ja",
+          "value": "武蔵野球場"
+        },
+        {
+          "language": "ja",
+          "value": "三鷹球場"
+        }
+      ]
+    },
+    "claims": {
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "7eac3d4d3ec26b917ba44aba7d53e3d2d4a1d0d7",
+            "datavalue": {
+              "value": {
+                "latitude": 35.717222,
+                "longitude": 139.564167,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$2EA0519C-8574-4394-B60C-098558BE3989",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$240B5E84-D3D3-494E-AF48-1C909231E212",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "36611106c6988ad27d0a9314e480917dadaa892c",
+            "datavalue": {
+              "value": "グリーンパーク野球場で行われた慶明決勝戦.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$015426BB-6D32-432F-89F4-D7B5C5F961B3",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "19e8aaaaa8cda4f42624a21039dfd222a5d2f090",
+            "datavalue": {
+              "value": "グリーンパーク野球場で行われた東立決勝戦.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$bb40985f-4593-60b3-79ca-24ba2d6e95bf",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "ee5bb845df0611b10d94616f569463b8932f88e8",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 210661,
+                "id": "Q210661"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$79d00bcb-433c-1e35-7449-f7463208c71d",
+          "rank": "normal"
+        }
+      ],
+      "P580": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P580",
+            "hash": "7218adb094b42cf43cb7f5809ed52814a1d18a71",
+            "datavalue": {
+              "value": {
+                "time": "+1951-00-00T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$87867c1a-4a33-d8a4-f00a-12c8ed6e85f3",
+          "rank": "normal"
+        }
+      ],
+      "P576": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P576",
+            "hash": "9c0ead09d9c9e3ea4ea6b7fecb7bf7f78667088c",
+            "datavalue": {
+              "value": {
+                "time": "+1956-00-00T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$4ec695cc-437f-fc2b-d880-6033d8129eaf",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "e40f6ed997dde194bdaecfd098c49089b22a9bbb",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 809889,
+                "id": "Q809889"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$1f14fd5d-489f-57c1-848e-3b7e195e46b7",
+          "rank": "normal"
+        }
+      ],
+      "P641": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P641",
+            "hash": "8682f60c82abf09b2ec316112627a94e908f2ff9",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 5369,
+                "id": "Q5369"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$7e2e95fb-455b-71ab-82f1-9e186d7c8821",
+          "rank": "normal"
+        }
+      ],
+      "P1366": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1366",
+            "hash": "4ff4e3aa6d69c5002f40ce18ecfdf8c91a073ab2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 11546428,
+                "id": "Q11546428"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$a521a2ee-44c8-e026-f482-df86251c0345",
+          "rank": "normal"
+        }
+      ],
+      "P1889": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1889",
+            "hash": "d2088594dd7e1745372c0b85cd1e9072cbecca3a",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 5602959,
+                "id": "Q5602959"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$8c0ff29e-49a4-39cc-1521-6fb0e449c4e0",
+          "rank": "normal"
+        }
+      ],
+      "P373": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P373",
+            "hash": "e1506dd4d26af742bcf7b79ffaa6482ddc6f52a2",
+            "datavalue": {
+              "value": "Musashino Greenpark Stadium",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11546387$9eb9dbf4-73ab-4755-8356-1331b64bd20a",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "武蔵野グリーンパーク野球場",
+        "badges": []
+      },
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Musashino Greenpark Stadium",
+        "badges": []
+      }
+    }
+  }
+}

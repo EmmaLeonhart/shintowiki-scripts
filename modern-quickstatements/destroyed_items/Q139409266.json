@@ -1,0 +1,132 @@
+{
+  "qid": "Q139409266",
+  "archived_at": "2026-07-10T03:25:58Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-04-18T05:45:38Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P625"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2482616923,
+    "timestamp": "2026-04-18T05:45:22Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "小笠原空港",
+    "properties": [
+      "P17",
+      "P131",
+      "P206",
+      "P625"
+    ],
+    "statement_count": 4,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q139409266",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "小笠原空港"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "東京都小笠原村で長年にわたり構想・調査・比較検討が繰り返されてきた空港計画の総称"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "c794575ee1576a280a57a916a06d2690eba904a6",
+            "datavalue": {
+              "value": {
+                "latitude": 27.115861111111112,
+                "longitude": 142.21725,
+                "altitude": null,
+                "precision": 2.777777777777778e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q139409266$2a635c8c-4530-462e-b199-9acfd515adcf",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139409266$67b0ed76-44c3-a7ca-8fc0-6d06c854e4af",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "e67f0c42781eb1db4ff8f9b16af002960f6833f1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1022925,
+                "id": "Q1022925"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139409266$949e65b1-4988-0070-cc2b-6720d78f4741",
+          "rank": "normal"
+        }
+      ],
+      "P206": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P206",
+            "hash": "c58843e42c8a4339c504d91605d923d4030c668d",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 98,
+                "id": "Q98"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139409266$347c21d7-416d-d69d-5f86-42ef280497e1",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}

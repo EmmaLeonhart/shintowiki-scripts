@@ -1,0 +1,248 @@
+{
+  "qid": "Q123044569",
+  "archived_at": "2026-07-10T03:25:55Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-10T01:36:57Z",
+  "destructive_edit_count": 12,
+  "properties_removed": [
+    "P31",
+    "P31",
+    "P17",
+    "P131",
+    "P625",
+    "P825",
+    "P6375",
+    "P10689"
+  ],
+  "terms_removed": [
+    "label:ja",
+    "label:en",
+    "description:ja",
+    "description:en"
+  ],
+  "pre_damage_revision": {
+    "revid": 2449158156,
+    "timestamp": "2025-12-30T16:13:59Z",
+    "user": "Peter James",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 5,
+    "en_label": "Kamo Shrine",
+    "ja_label": "加茂神社",
+    "properties": [
+      "P17",
+      "P31",
+      "P131",
+      "P625",
+      "P825",
+      "P6375",
+      "P10689"
+    ],
+    "statement_count": 8,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q123044569",
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "Kamo Shrine"
+      },
+      "de": {
+        "language": "de",
+        "value": "Kamo Schrein"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "加茂神社"
+      },
+      "id": {
+        "language": "id",
+        "value": "Kuil Kamo"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "sanctuaire de Kamo"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "Shinto shrine in Odawara, Kanagawa, Japan"
+      },
+      "de": {
+        "language": "de",
+        "value": "Shinto-Schrein in Odawara, Kanagawa, Japan"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "小田原市にある神社"
+      },
+      "id": {
+        "language": "id",
+        "value": "kuil Shinto di Prefektur Kanagawa, Jepang"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P10689": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P10689",
+            "hash": "463625b6ad837c42ce4a6b01bf8f6a3629a23de4",
+            "datavalue": {
+              "value": "1169979912",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$C69134A9-A380-4137-BE0C-51F1E63EC48D",
+          "rank": "normal"
+        }
+      ],
+      "P6375": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6375",
+            "hash": "fc5f658045a05b0a0633acdaa58e79d6f96ce6d9",
+            "datavalue": {
+              "value": {
+                "text": "708 Kamonomiya, Odawara, Kanagawa 250-0874, Japan",
+                "language": "en"
+              },
+              "type": "monolingualtext"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$43621B16-E3A1-42BE-ABD3-B67F1600AB41",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "753cbea34b8143d55b551ff8014c35ae53c07df0",
+            "datavalue": {
+              "value": {
+                "latitude": 35.27712826106289,
+                "longitude": 139.17583480745927,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$55EE58FD-49CF-48D8-BC3C-133F0F0D2297",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$9BBAC18F-92A5-4382-8010-D0C0E4DE5C0C",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "e5980b8ead95e45f7ede8f03f86e22689f06d9d4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 845945,
+                "id": "Q845945"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$785C5ABD-AA89-48D8-9CAD-67E986DE6266",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "bbd00e1af585069bfcc55a6f416d462ebeda4432",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 137640533,
+                "id": "Q137640533"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$16EBF16B-1201-422F-B7F5-3F998363E206",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "8b425b259ae1dddb02eae9a64e1e8b1a5a587c88",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 267258,
+                "id": "Q267258"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$86B2390E-3214-40B3-B7AD-AF5C06D6A064",
+          "rank": "normal"
+        }
+      ],
+      "P825": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P825",
+            "hash": "90286ac6e4b0ec7da757065c7e79accc0c3a3012",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 11634943,
+                "id": "Q11634943"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q123044569$9AABE73D-17D7-4275-8459-D72D02E61AD1",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}

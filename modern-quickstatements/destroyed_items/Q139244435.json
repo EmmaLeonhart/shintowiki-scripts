@@ -1,0 +1,140 @@
+{
+  "qid": "Q139244435",
+  "archived_at": "2026-07-10T03:25:57Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-04-12T02:58:43Z",
+  "destructive_edit_count": 3,
+  "properties_removed": [
+    "P931",
+    "P931",
+    "P625"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2480515089,
+    "timestamp": "2026-04-12T02:56:31Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 2,
+    "en_label": "Houei airfield",
+    "ja_label": "豊栄飛行場",
+    "properties": [
+      "P625",
+      "P931"
+    ],
+    "statement_count": 3,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q139244435",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "豊栄飛行場"
+      },
+      "en": {
+        "language": "en",
+        "value": "Houei airfield"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "広島県東広島市豊栄町清武にある飛行場"
+      },
+      "en": {
+        "language": "en",
+        "value": "Airfield located in Kiyotake, Toyosaka-cho, Higashihiroshima City, Hiroshima Prefecture"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P931": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P931",
+            "hash": "dc693a3248a6cdaf2eafc2ccae040e63caa5f709",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 11428082,
+                "id": "Q11428082"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q139244435$ee2af207-499e-c0cb-8541-48bd9b5bed0d",
+          "rank": "preferred"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P931",
+            "hash": "328ae08ebaae9539c1500022fc25e89abb8513f0",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 104224919,
+                "id": "Q104224919"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P625": [
+              {
+                "snaktype": "value",
+                "property": "P625",
+                "hash": "bc5352fe5ad86bf52a133af1c542c07a575df192",
+                "datavalue": {
+                  "value": {
+                    "latitude": 34.624138888888886,
+                    "longitude": 132.79597222222222,
+                    "altitude": null,
+                    "precision": 2.777777777777778e-05,
+                    "globe": "http://www.wikidata.org/entity/Q2"
+                  },
+                  "type": "globecoordinate"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P625"
+          ],
+          "id": "Q139244435$f5957332-48e8-61fb-4a19-bdb1f3a5faef",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "bc5352fe5ad86bf52a133af1c542c07a575df192",
+            "datavalue": {
+              "value": {
+                "latitude": 34.624138888888886,
+                "longitude": 132.79597222222222,
+                "altitude": null,
+                "precision": 2.777777777777778e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q139244435$c54895ee-439c-a413-db51-e1dc6462b1ea",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}

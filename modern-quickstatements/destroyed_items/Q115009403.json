@@ -1,0 +1,621 @@
+{
+  "qid": "Q115009403",
+  "archived_at": "2026-07-10T03:25:51Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-10T01:02:12Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P131"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2477374007,
+    "timestamp": "2026-04-02T08:26:36Z",
+    "user": "Immanuelle",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 5,
+    "en_label": "Tatsumi Shrine",
+    "ja_label": "巽神社",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P138",
+      "P373",
+      "P571",
+      "P625",
+      "P1801",
+      "P3134",
+      "P3225",
+      "P6375",
+      "P13723"
+    ],
+    "statement_count": 13,
+    "sitelinks": [
+      "commonswiki",
+      "dewiki",
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q115009403",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "巽神社"
+      },
+      "en": {
+        "language": "en",
+        "value": "Tatsumi Shrine"
+      },
+      "id": {
+        "language": "id",
+        "value": "Kuil Tatsumi"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "sanctuaire de Tatsumi"
+      },
+      "de": {
+        "language": "de",
+        "value": "Tatsumi-Schrein"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "神奈川県の旧村社"
+      },
+      "id": {
+        "language": "id",
+        "value": "kuil Shinto di Prefektur Kanagawa, Jepang"
+      },
+      "en": {
+        "language": "en",
+        "value": "Shinto shrine in Kanagawa Prefecture, Japan"
+      },
+      "uk": {
+        "language": "uk",
+        "value": "Синтоїстське святилище у префектурі Канаґава, Японія"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "鎌倉巽神社"
+        }
+      ]
+    },
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "e5980b8ead95e45f7ede8f03f86e22689f06d9d4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 845945,
+                "id": "Q845945"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$5f5395cb-0e70-4f66-b507-fbb60c70d090",
+          "rank": "normal"
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "f8d9bc5654325ff3d8cbe137cab5dbb6583f17c0",
+            "datavalue": {
+              "value": "Hall - Tatsumi Jinja Shrine - Kamakura, Kanagawa, Japan - DSC07898.JPG",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$46bf64ba-c87d-4d8c-97a9-1a6906d7d1fd",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "acfe729071b806e2a4c753b6bc3e360fd4eadf3e",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "975898aeeda2edd223e07d661ce69f719e2d3307",
+                    "datavalue": {
+                      "value": "https://ja.wikipedia.org/wiki/%E5%B7%BD%E7%A5%9E%E7%A4%BE_%28%E9%8E%8C%E5%80%89%E5%B8%82%29",
+                      "type": "string"
+                    }
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "70e1cbb701ecc7cd8e5ca8c28eed43ec7fae9380",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2022-11-02T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143",
+                "P4656",
+                "P813"
+              ]
+            }
+          ]
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "b83be1fb9b119d72279d595a002e05855efec954",
+            "datavalue": {
+              "value": {
+                "latitude": 35.32222222222222,
+                "longitude": 139.55027777777778,
+                "altitude": null,
+                "precision": 0.0002777777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$4c1ed24a-4ac6-f673-585c-42ebe54713b6",
+          "rank": "normal"
+        }
+      ],
+      "P373": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P373",
+            "hash": "ecd56522e0f1041b3d7c05cdc7b0629255f3938d",
+            "datavalue": {
+              "value": "Tatsumi-jinja",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$07b92634-4d51-4c33-ca8b-83c4e7d7f73f",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "add1dc112bc412a1b9bedf93a5cc7d552185789f",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 11496826,
+                "id": "Q11496826"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$383075B4-FA00-4D7C-8DB7-7CEBE9593403",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "acfe729071b806e2a4c753b6bc3e360fd4eadf3e",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "975898aeeda2edd223e07d661ce69f719e2d3307",
+                    "datavalue": {
+                      "value": "https://ja.wikipedia.org/wiki/%E5%B7%BD%E7%A5%9E%E7%A4%BE_%28%E9%8E%8C%E5%80%89%E5%B8%82%29",
+                      "type": "string"
+                    }
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "70e1cbb701ecc7cd8e5ca8c28eed43ec7fae9380",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2022-11-02T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143",
+                "P4656",
+                "P813"
+              ]
+            }
+          ]
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$2f1be3dc-4e1c-badf-0afc-d3d4ffdf1348",
+          "rank": "normal"
+        }
+      ],
+      "P3225": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3225",
+            "hash": "1f77a88ca62d03e4ce6072a61e3d1f7f94e1af61",
+            "datavalue": {
+              "value": "8021005001932",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$40d7e361-48f0-be34-7c3b-ecbce687d316",
+          "rank": "normal"
+        }
+      ],
+      "P571": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P571",
+            "hash": "a0082fc077270a9d540590f120572f10744144f4",
+            "datavalue": {
+              "value": {
+                "time": "+0801-00-00T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985786"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$a62cf9e8-44d5-0b96-d31b-70881a1512a8",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P138": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P138",
+            "hash": "b1824d213716d6c7206f11ad9030885eae9edc1a",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 6452640,
+                "id": "Q6452640"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$96318a67-4ef7-5597-b759-219945893203",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P3134": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3134",
+            "hash": "b7641dc4cb3601dbed9431e99e35662b68536d1c",
+            "datavalue": {
+              "value": "10103775",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$bf958742-4e48-0c09-d2ce-bde5540d433c",
+          "rank": "normal"
+        }
+      ],
+      "P1801": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1801",
+            "hash": "c7e4af16ea74db64220aba0161f9949a195f330a",
+            "datavalue": {
+              "value": "Wooden plaque - Tatsumi Jinja Shrine - Kamakura, Kanagawa, Japan - DSC07907.JPG",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$a2d2e259-41eb-6fd3-09dd-44f5c84eef4b",
+          "rank": "normal"
+        }
+      ],
+      "P6375": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6375",
+            "hash": "0aad8586a2ae1b29b050c360b64191fcaaf60603",
+            "datavalue": {
+              "value": {
+                "text": "神奈川県鎌倉市扇ガ谷1-9-7",
+                "language": "ja"
+              },
+              "type": "monolingualtext"
+            }
+          },
+          "type": "statement",
+          "id": "Q115009403$8500F19F-A970-44E1-B1A9-B8DF125A8A14",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P13723": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P13723",
+            "hash": "aec80ba0305784e4b4d90f306d79bf38fc4fcd7b",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 134917284,
+                "id": "Q134917284"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P582": [
+              {
+                "snaktype": "value",
+                "property": "P582",
+                "hash": "8805a4fa20d4145006f5c486ac7a9663e7a88a40",
+                "datavalue": {
+                  "value": {
+                    "time": "+1946-02-02T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 11,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ],
+            "P1534": [
+              {
+                "snaktype": "value",
+                "property": "P1534",
+                "hash": "5531a3501e3c5be7656cb8789c538e2cdf006c54",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 3029647,
+                    "id": "Q3029647"
+                  },
+                  "type": "wikibase-entityid"
+                }
+              }
+            ],
+            "P459": [
+              {
+                "snaktype": "value",
+                "property": "P459",
+                "hash": "a9c789508a61bf4b27a82cd5b05769c2930e8390",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 712534,
+                    "id": "Q712534"
+                  },
+                  "type": "wikibase-entityid"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P582",
+            "P1534",
+            "P459"
+          ],
+          "id": "Q115009403$B6F70F5B-BEEF-44F7-9D50-08CEB79F3A7F",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "319fa66d0bfe10bd83056d42a2976c889becb55e",
+              "snaks": {
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "88238c8d336613c88c7ed08b1c928a5207b48e58",
+                    "datavalue": {
+                      "value": "https://ja.wikipedia.org/wiki/巽神社_(鎌倉市)",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P4656"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "巽神社 (鎌倉市)",
+        "badges": []
+      },
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Tatsumi-jinja",
+        "badges": []
+      },
+      "dewiki": {
+        "site": "dewiki",
+        "title": "Tatsumi-Schrein",
+        "badges": []
+      }
+    }
+  }
+}

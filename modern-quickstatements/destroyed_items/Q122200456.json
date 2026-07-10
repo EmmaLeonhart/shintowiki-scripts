@@ -1,0 +1,65 @@
+{
+  "qid": "Q122200456",
+  "archived_at": "2026-07-10T03:25:55Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2023-09-03T09:46:27Z",
+  "destructive_edit_count": 2,
+  "properties_removed": [],
+  "terms_removed": [
+    "description:ja",
+    "sitelink:commonswiki"
+  ],
+  "pre_damage_revision": {
+    "revid": 1967216227,
+    "timestamp": "2023-09-03T09:46:26Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 4,
+    "en_label": "Ojika Airport",
+    "ja_label": "おじかくうこう",
+    "properties": [],
+    "statement_count": 0,
+    "sitelinks": [
+      "commonswiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q122200456",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "おじかくうこう"
+      },
+      "en": {
+        "language": "en",
+        "value": "Ojika Airport"
+      },
+      "en-gb": {
+        "language": "en-gb",
+        "value": "Ojika Airport"
+      },
+      "en-us": {
+        "language": "en-us",
+        "value": "Ojika Airport"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "小値賀空港"
+      }
+    },
+    "aliases": [],
+    "claims": [],
+    "sitelinks": {
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Ojika Airport",
+        "badges": []
+      }
+    }
+  }
+}

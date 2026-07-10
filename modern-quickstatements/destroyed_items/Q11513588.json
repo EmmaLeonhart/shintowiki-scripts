@@ -1,0 +1,154 @@
+{
+  "qid": "Q11513588",
+  "archived_at": "2026-07-10T03:25:53Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-06-29T10:00:31Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P17"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2511772674,
+    "timestamp": "2026-06-29T10:00:18Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 1,
+    "en_label": null,
+    "ja_label": "春日原球場",
+    "properties": [
+      "P17",
+      "P31",
+      "P625",
+      "P2671"
+    ],
+    "statement_count": 5,
+    "sitelinks": [
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q11513588",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "春日原球場"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "かつて福岡県春日市（開場当時は筑紫郡春日村）に存在した野球場"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P2671": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2671",
+            "hash": "60246c0399dc6ea7c89be1c0c5dae2fdcc1a309b",
+            "datavalue": {
+              "value": "/g/122fjzq1",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11513588$97153726-EA06-44DC-ACC3-EBFCEAFEF81E",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "8c2e8fd474e6104eaef9b83588e70a61fd692de2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 595452,
+                "id": "Q595452"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11513588$CA70D775-DC01-4317-A239-F0A942B579A5",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11513588$6AC98E0B-DD8E-4910-9D4C-63B1DFA886B1",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "68996ed603f313ae8ae98ed5b34a231460c0a548",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 47084,
+                "id": "Q47084"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11513588$c89e4b56-43a1-d0a9-a035-5abd57b02ff7",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "62e120351ee469fd4e19dbb83d5f49b718b49ed4",
+            "datavalue": {
+              "value": {
+                "latitude": 33.53616666666667,
+                "longitude": 130.47313888888888,
+                "altitude": null,
+                "precision": 2.777777777777778e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q11513588$20859ae5-495b-fa11-4d60-bc547ed4a51e",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "春日原球場",
+        "badges": []
+      }
+    }
+  }
+}

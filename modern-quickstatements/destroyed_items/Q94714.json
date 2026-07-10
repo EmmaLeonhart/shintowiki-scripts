@@ -1,0 +1,1201 @@
+{
+  "qid": "Q94714",
+  "archived_at": "2026-07-10T03:26:04Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-05-19T05:21:39Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P18"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2494136182,
+    "timestamp": "2026-05-19T05:19:46Z",
+    "user": "~2026-29878-40",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 19,
+    "en_label": "Mitsukejima",
+    "ja_label": "見附島",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P206",
+      "P373",
+      "P625",
+      "P646",
+      "P793",
+      "P1082",
+      "P1566",
+      "P1705",
+      "P2043",
+      "P2046",
+      "P2049",
+      "P2326",
+      "P3134",
+      "P8592",
+      "P10689"
+    ],
+    "statement_count": 20,
+    "sitelinks": [
+      "bclwiki",
+      "cebwiki",
+      "commonswiki",
+      "dewiki",
+      "enwiki",
+      "eswiki",
+      "frwiki",
+      "jawiki",
+      "kowiki",
+      "ltwiki",
+      "sqwiki",
+      "trwiki",
+      "zhwiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q94714",
+    "labels": {
+      "zh-hans": {
+        "language": "zh-hans",
+        "value": "见付岛"
+      },
+      "zh-hant": {
+        "language": "zh-hant",
+        "value": "見付島"
+      },
+      "zh-hk": {
+        "language": "zh-hk",
+        "value": "見付島"
+      },
+      "zh-cn": {
+        "language": "zh-cn",
+        "value": "见付岛"
+      },
+      "zh-sg": {
+        "language": "zh-sg",
+        "value": "见付岛"
+      },
+      "zh-tw": {
+        "language": "zh-tw",
+        "value": "見付島"
+      },
+      "de": {
+        "language": "de",
+        "value": "Mitsukejima"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "見附島"
+      },
+      "es": {
+        "language": "es",
+        "value": "Mitsukejima"
+      },
+      "lt": {
+        "language": "lt",
+        "value": "Micukedžima"
+      },
+      "en": {
+        "language": "en",
+        "value": "Mitsukejima"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "見付島"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "île Mitsuke"
+      },
+      "sq": {
+        "language": "sq",
+        "value": "Mitsukejima"
+      },
+      "ru": {
+        "language": "ru",
+        "value": "Мицукэдзима"
+      },
+      "tr": {
+        "language": "tr",
+        "value": "Mitsukejima"
+      },
+      "ko": {
+        "language": "ko",
+        "value": "미쓰케지마"
+      },
+      "ceb": {
+        "language": "ceb",
+        "value": "Mitsuke Jima"
+      },
+      "bcl": {
+        "language": "bcl",
+        "value": "Mitsukejima"
+      }
+    },
+    "descriptions": {
+      "nl": {
+        "language": "nl",
+        "value": "eiland van Japan"
+      },
+      "en": {
+        "language": "en",
+        "value": "island"
+      },
+      "id": {
+        "language": "id",
+        "value": "pulau di Jepang"
+      },
+      "ace": {
+        "language": "ace",
+        "value": "pulo di Jeupun"
+      },
+      "sq": {
+        "language": "sq",
+        "value": "ishull"
+      },
+      "de": {
+        "language": "de",
+        "value": "Insel in Japan"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "島嶼"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "île dans la préfecture d'Ishikawa, au Japon"
+      },
+      "bn": {
+        "language": "bn",
+        "value": "জাপানের একটি দ্বীপ"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "石川県珠洲市に位置する島。見た目から「軍艦島」とも呼ばれる。"
+      },
+      "pap": {
+        "language": "pap",
+        "value": "Isla"
+      },
+      "uk": {
+        "language": "uk",
+        "value": "острів"
+      },
+      "es": {
+        "language": "es",
+        "value": "isla de Japón"
+      },
+      "el": {
+        "language": "el",
+        "value": "νησί της Ιαπωνίας"
+      },
+      "bcl": {
+        "language": "bcl",
+        "value": "isla sa Hapon"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "見付島"
+        },
+        {
+          "language": "ja",
+          "value": "軍艦島"
+        }
+      ],
+      "lt": [
+        {
+          "language": "lt",
+          "value": "Mitsukejima"
+        }
+      ],
+      "en": [
+        {
+          "language": "en",
+          "value": "Gunkanjima"
+        },
+        {
+          "language": "en",
+          "value": "Battleship Island"
+        },
+        {
+          "language": "en",
+          "value": "軍艦島"
+        }
+      ],
+      "zh": [
+        {
+          "language": "zh",
+          "value": "軍艦島"
+        },
+        {
+          "language": "zh",
+          "value": "见附岛"
+        },
+        {
+          "language": "zh",
+          "value": "见付岛"
+        }
+      ],
+      "ru": [
+        {
+          "language": "ru",
+          "value": "Мицукедзима"
+        }
+      ],
+      "fr": [
+        {
+          "language": "fr",
+          "value": "île navire de guerre"
+        }
+      ],
+      "bcl": [
+        {
+          "language": "bcl",
+          "value": "isla nin bapor-pangubat"
+        }
+      ]
+    },
+    "claims": {
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "q94714$AFA5A5E3-2E25-412A-B434-CA9F98463E23",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 328,
+                        "id": "Q328"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            },
+            {
+              "hash": "6a1934e3fd8f9e88d83fcffcba06ba939c01d2fb",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "7648f66055f57f6227dd1f872bc4ed26c70da7c6",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1194038,
+                        "id": "Q1194038"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P577": [
+                  {
+                    "snaktype": "value",
+                    "property": "P577",
+                    "hash": "a372c95b03a3464736c5fd1d7ed86176f0c04973",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2018-06-11T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    }
+                  }
+                ],
+                "P2326": [
+                  {
+                    "snaktype": "value",
+                    "property": "P2326",
+                    "hash": "6fc094e34e3a4e36ad525c0901dd8a4006c89f2a",
+                    "datavalue": {
+                      "value": "-236752",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P577",
+                "P2326"
+              ]
+            }
+          ]
+        }
+      ],
+      "P646": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P646",
+            "hash": "561632352cdc6e228c0186049be3f24b7071ee96",
+            "datavalue": {
+              "value": "/m/0d_67b",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$1E0EAB0C-77C6-4312-8639-44F2839E7063",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "a94b740202b097dd33355e0e6c00e54b9395e5e0",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 15241312,
+                        "id": "Q15241312"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P577": [
+                  {
+                    "snaktype": "value",
+                    "property": "P577",
+                    "hash": "fde79ecb015112d2f29229ccc1ec514ed3e71fa2",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2013-10-28T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P577"
+              ]
+            }
+          ]
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "fb95cfb799cca38198ce77e0596dddb6aef12202",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 23442,
+                "id": "Q23442"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$13D924CF-9A7F-4CFC-8278-ACED4DCAD35C",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "6a1934e3fd8f9e88d83fcffcba06ba939c01d2fb",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "7648f66055f57f6227dd1f872bc4ed26c70da7c6",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1194038,
+                        "id": "Q1194038"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P577": [
+                  {
+                    "snaktype": "value",
+                    "property": "P577",
+                    "hash": "a372c95b03a3464736c5fd1d7ed86176f0c04973",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2018-06-11T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    }
+                  }
+                ],
+                "P2326": [
+                  {
+                    "snaktype": "value",
+                    "property": "P2326",
+                    "hash": "6fc094e34e3a4e36ad525c0901dd8a4006c89f2a",
+                    "datavalue": {
+                      "value": "-236752",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P577",
+                "P2326"
+              ]
+            }
+          ]
+        }
+      ],
+      "P206": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P206",
+            "hash": "402cce6f3b079472b8ed1c8c0cfb0e6888725b11",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 49380236,
+                "id": "Q49380236"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$6FBAAB9F-3F23-46A6-9C8D-8C970BC678EB",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "d2fcb754b3ce3b03fb74d1c94413dfa589b1827d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "bcae5c0c763295b5c6ad5bae4c7fa39f336ad813",
+                    "datavalue": {
+                      "value": "https://www.pref.ishikawa.lg.jp/kyoiku/bunkazai/siseki/ken4-2.html",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "12e9a4a9cfc79a9e2582a6f9d7f4d7bee2dacf8b",
+            "datavalue": {
+              "value": "Mitsukejima.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$390346FB-4EFA-48D4-BC01-5888B9EC27C0",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 48183,
+                        "id": "Q48183"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "5401afd174a7223a3b24329d20979534ba9790e9",
+            "datavalue": {
+              "value": "Noto Mitsuke-islands 2026-4.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$94b22fb1-477d-65f1-44cd-93ceaf33fd5f",
+          "rank": "preferred"
+        }
+      ],
+      "P373": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P373",
+            "hash": "37c604c2c9e399ff170fa75f8744ee1b3e10e07d",
+            "datavalue": {
+              "value": "Mitsukejima (Ishikawa)",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$38F6E6C8-BD01-4F8D-A698-2EE4E0D54A31",
+          "rank": "normal"
+        }
+      ],
+      "P2049": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2049",
+            "hash": "c91696e8a42499db1394771ae505f961f74bbdc4",
+            "datavalue": {
+              "value": {
+                "amount": "+0.050",
+                "unit": "http://www.wikidata.org/entity/Q828224"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$48663302-EB4B-4954-84E5-8B43EC6D0878",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 48183,
+                        "id": "Q48183"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P1082": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1082",
+            "hash": "4d4b63c9920b86e39cef8dfc9e9f733c28099393",
+            "datavalue": {
+              "value": {
+                "amount": "+0",
+                "unit": "1"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$F2B94FA4-3637-418A-8326-5D646D0E4DFF",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 48183,
+                        "id": "Q48183"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P2043": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2043",
+            "hash": "c6acfedf76a7da9ea02f052fb7099fcf93be72d6",
+            "datavalue": {
+              "value": {
+                "amount": "+0.150",
+                "unit": "http://www.wikidata.org/entity/Q828224"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$6D5FE9B3-2743-44C1-9CF7-CE5CBA9448D3",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 48183,
+                        "id": "Q48183"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P2046": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2046",
+            "hash": "2fa68c16fd2691ed27693fc296d2cf986e8f8227",
+            "datavalue": {
+              "value": {
+                "amount": "+0.00115",
+                "unit": "http://www.wikidata.org/entity/Q712226"
+              },
+              "type": "quantity"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$D259EF1F-6A29-4A9B-8B83-406C6A6F30D4",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "3e0fa04a6141555d6c8cf3c4de9010625a4d8f91",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "e17507043402fe54ae6c4d65cc51f46cec987de9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 8449,
+                        "id": "Q8449"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P4656": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4656",
+                    "hash": "8252c2ca082a210ddc471399c39322cde1ea3e6d",
+                    "datavalue": {
+                      "value": "https://es.wikipedia.org/w/index.php?title=Mitsukejima&oldid=109922248",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143",
+                "P4656"
+              ]
+            }
+          ]
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "d9211405c8c8a9eb9539155962d6cf93a733e391",
+            "datavalue": {
+              "value": {
+                "latitude": 37.396388888889,
+                "longitude": 137.24722222222,
+                "altitude": null,
+                "precision": 0.00027777777777778,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$BD2CB66F-01AE-457D-81CA-8590BAB9B5CD",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "6a1934e3fd8f9e88d83fcffcba06ba939c01d2fb",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "7648f66055f57f6227dd1f872bc4ed26c70da7c6",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1194038,
+                        "id": "Q1194038"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ],
+                "P577": [
+                  {
+                    "snaktype": "value",
+                    "property": "P577",
+                    "hash": "a372c95b03a3464736c5fd1d7ed86176f0c04973",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2018-06-11T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    }
+                  }
+                ],
+                "P2326": [
+                  {
+                    "snaktype": "value",
+                    "property": "P2326",
+                    "hash": "6fc094e34e3a4e36ad525c0901dd8a4006c89f2a",
+                    "datavalue": {
+                      "value": "-236752",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P577",
+                "P2326"
+              ]
+            }
+          ]
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "1d1c9415c55870ea32db396bfce908b38e4f2bb5",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 846345,
+                "id": "Q846345"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$6c407c60-48b6-7bce-267e-43fbaa10b245",
+          "rank": "normal"
+        }
+      ],
+      "P1705": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1705",
+            "hash": "dc26bb3382f8c331569ef0e14820d3c0b7c5dc4b",
+            "datavalue": {
+              "value": {
+                "text": "見附島",
+                "language": "ja"
+              },
+              "type": "monolingualtext"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P1814": [
+              {
+                "snaktype": "value",
+                "property": "P1814",
+                "hash": "8aeda5c11452054fc6b092bed61b9eaa2a8ac214",
+                "datavalue": {
+                  "value": "みつけじま",
+                  "type": "string"
+                }
+              }
+            ],
+            "P2125": [
+              {
+                "snaktype": "value",
+                "property": "P2125",
+                "hash": "98d4b99998763992443999e6409f20d7e34a2232",
+                "datavalue": {
+                  "value": "Mitsuke-jima",
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P1814",
+            "P2125"
+          ],
+          "id": "Q94714$d62ed782-4e16-bcd8-25c8-7a8908298c72",
+          "rank": "normal"
+        }
+      ],
+      "P10689": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P10689",
+            "hash": "8d96e74eec36dd527a50c0c047324ccb76b8b101",
+            "datavalue": {
+              "value": "131145287",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$1d69b634-4ffc-0c62-376c-63e133096471",
+          "rank": "normal"
+        }
+      ],
+      "P793": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P793",
+            "hash": "69c98d9bde82fa4a3a732d29b3c4492770fe65a3",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 2924824,
+                "id": "Q2924824"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "a42b23eb8f19e4a62c34f2bf672eefa5e93fd40d",
+                "datavalue": {
+                  "value": {
+                    "time": "+2024-01-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 10,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                }
+              }
+            ],
+            "P828": [
+              {
+                "snaktype": "value",
+                "property": "P828",
+                "hash": "8db24821b2cf4d4480b4f0315a32c18de4ec94fb",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 124060919,
+                    "id": "Q124060919"
+                  },
+                  "type": "wikibase-entityid"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585",
+            "P828"
+          ],
+          "id": "Q94714$57dee41a-43fb-a233-b840-2582c95b44ce",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "8fe44b6fbcff40ffc24189f2209706b98a55189d",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "0819225fa035bf125614ab2dbc7c11fbb7ac6059",
+                    "datavalue": {
+                      "value": "https://news.yahoo.co.jp/articles/b1df7ebea92d518e49543228c59994f5f9f1f9c7",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P1566": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1566",
+            "hash": "1d1d1d511d734582c872e84d979ef410b6d638d6",
+            "datavalue": {
+              "value": "1856877",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$BE0B3175-A3DB-4713-B82D-F054D1991A83",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "43a0088c51fd85e5a85d1b46412c3a635e6d4edc",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "d8fbf8671e3c630db61bfac691068cfb6857f243",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 837615,
+                        "id": "Q837615"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P2326": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2326",
+            "hash": "6fc094e34e3a4e36ad525c0901dd8a4006c89f2a",
+            "datavalue": {
+              "value": "-236752",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$4C222605-06B3-4F2D-876C-339FDC384D1A",
+          "rank": "normal"
+        }
+      ],
+      "P8592": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P8592",
+            "hash": "c486faa925f92405f61cc2d68c635b4d4ef42bd9",
+            "datavalue": {
+              "value": "Mitsukejima 2024.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$d7db7d51-4f6f-c287-2392-f9a87c2a1fe6",
+          "rank": "normal"
+        }
+      ],
+      "P3134": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3134",
+            "hash": "00cd55078fcb24cbbbe7a933e52b4b65cf92e4ec",
+            "datavalue": {
+              "value": "1448664",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q94714$79ccea30-49b7-257d-a227-f3975f462da1",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "dewiki": {
+        "site": "dewiki",
+        "title": "Mitsukejima",
+        "badges": []
+      },
+      "jawiki": {
+        "site": "jawiki",
+        "title": "見附島 (石川県)",
+        "badges": []
+      },
+      "eswiki": {
+        "site": "eswiki",
+        "title": "Mitsukejima",
+        "badges": []
+      },
+      "ltwiki": {
+        "site": "ltwiki",
+        "title": "Micukedžima",
+        "badges": []
+      },
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Mitsukejima",
+        "badges": []
+      },
+      "zhwiki": {
+        "site": "zhwiki",
+        "title": "見附島 (石川縣)",
+        "badges": []
+      },
+      "frwiki": {
+        "site": "frwiki",
+        "title": "Mitsuke-jima",
+        "badges": []
+      },
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Mitsukejima (Ishikawa)",
+        "badges": []
+      },
+      "sqwiki": {
+        "site": "sqwiki",
+        "title": "Mitsukejima",
+        "badges": []
+      },
+      "trwiki": {
+        "site": "trwiki",
+        "title": "Mitsukejima",
+        "badges": []
+      },
+      "cebwiki": {
+        "site": "cebwiki",
+        "title": "Mitsuke Jima",
+        "badges": []
+      },
+      "kowiki": {
+        "site": "kowiki",
+        "title": "미쓰케섬",
+        "badges": []
+      },
+      "bclwiki": {
+        "site": "bclwiki",
+        "title": "Mitsukejima",
+        "badges": []
+      }
+    }
+  }
+}

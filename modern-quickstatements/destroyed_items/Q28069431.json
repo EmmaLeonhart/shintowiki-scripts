@@ -1,0 +1,343 @@
+{
+  "qid": "Q28069431",
+  "archived_at": "2026-07-10T03:26:03Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-09T06:25:25Z",
+  "destructive_edit_count": 17,
+  "properties_removed": [
+    "P31",
+    "P18",
+    "P17",
+    "P131",
+    "P825",
+    "P825",
+    "P825",
+    "P825",
+    "P825",
+    "P1329",
+    "P2900",
+    "P856"
+  ],
+  "terms_removed": [
+    "label:en",
+    "label:ja",
+    "description:en",
+    "description:ja",
+    "aliases:ja"
+  ],
+  "pre_damage_revision": {
+    "revid": 2515419122,
+    "timestamp": "2026-07-09T06:20:50Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 4,
+    "en_label": "Kikuna Shrine",
+    "ja_label": "菊名神社",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P825",
+      "P856",
+      "P1329",
+      "P2900"
+    ],
+    "statement_count": 12,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q28069431",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "菊名神社"
+      },
+      "en": {
+        "language": "en",
+        "value": "Kikuna Shrine"
+      },
+      "id": {
+        "language": "id",
+        "value": "Kuil Kikuna"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "sanctuaire de Kikuna"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "横浜市港北区に所在する神社"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "bâtiment de Kohoku-ku, Kanagawa, Japon"
+      },
+      "id": {
+        "language": "id",
+        "value": "kuil Shinto di Prefektur Kanagawa, Jepang"
+      },
+      "uk": {
+        "language": "uk",
+        "value": "синтоїстське святилище в Японії"
+      },
+      "en": {
+        "language": "en",
+        "value": "Shinto shrine in Kohoku-ku, Japan"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "八幡神社"
+        }
+      ]
+    },
+    "claims": {
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$08fe617a-4cda-bd90-e04e-8978ded19baf",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "d7fe7203350b85fba58c5a6d0c0b99513b4f1c35",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1358965,
+                "id": "Q1358965"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$8e424ccd-465f-8c6f-0b75-32afa429c3ef",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "e5980b8ead95e45f7ede8f03f86e22689f06d9d4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 845945,
+                "id": "Q845945"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$f44e0cd3-44cc-4095-2d05-924baaadaa7c",
+          "rank": "normal"
+        }
+      ],
+      "P825": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P825",
+            "hash": "3c2a5df3808e11f94a72e6c657b2ac8c78a34481",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 317997,
+                "id": "Q317997"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$5ffbd81d-4771-7355-8b6a-1378ed17c5c9",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "8abe8c7ab6afa897609589c261188839f4ea1279",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "b55e188722419e3a5f60ef16038c0867ef67569b",
+                    "datavalue": {
+                      "value": "http://www.kanagawa-jinja.or.jp/search_dtl.php4?jid=164&cd=1202069&scd=&npg=1",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P825",
+            "hash": "47361b1a9dac2569c7ee09d53aa71ca6217a3ffe",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 455602,
+                "id": "Q455602"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$8f2e9776-4fbd-c6d5-a603-453f77826986",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P825",
+            "hash": "2101a32c05d26a268ac95cf3080fbd512d715413",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 461258,
+                "id": "Q461258"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$9ac5169e-49a7-482a-ff67-aa3572b52c20",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P825",
+            "hash": "b031297662ad101e34528560c6db1e673112de7a",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1781862,
+                "id": "Q1781862"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$36fdf45e-483c-a7df-79c0-3ca14b32abba",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P825",
+            "hash": "2c153eedc4b29cace98c4561a5217a708c344d99",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1073668,
+                "id": "Q1073668"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$c6d76ad4-46a0-112b-157e-46bdcf8bcb95",
+          "rank": "normal"
+        }
+      ],
+      "P856": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P856",
+            "hash": "1a2d62f9a255036aab0c97318b742e2124d52493",
+            "datavalue": {
+              "value": "http://www.kikunajinja.jp/profile/gamansama.html",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$c7153bb3-44c2-50d9-21c0-d9ab5cfc5a25",
+          "rank": "normal"
+        }
+      ],
+      "P1329": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1329",
+            "hash": "637ae82570dc5e442a60a5f64230c81f9259a7cf",
+            "datavalue": {
+              "value": "+81-45-431-9344",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$cb08f66a-4d8c-0417-5774-0cb153441a66",
+          "rank": "normal"
+        }
+      ],
+      "P2900": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2900",
+            "hash": "0c3b9c7e6f44574c4981c17259fdf8368a9e4b0c",
+            "datavalue": {
+              "value": "+81-45-431-9972",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$52ab557e-40cb-46f0-34ca-e1eefda460bb",
+          "rank": "normal"
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "34c115dfd8ca990c6f6af4e54a344e5be0962663",
+            "datavalue": {
+              "value": "Kikuna Shrine in Yokohama City.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q28069431$9c5098f6-47f9-0e44-a61c-873e9a38c729",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}

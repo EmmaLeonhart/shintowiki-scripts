@@ -1,0 +1,400 @@
+{
+  "qid": "Q134886554",
+  "archived_at": "2026-07-10T03:25:56Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-10T02:18:13Z",
+  "destructive_edit_count": 9,
+  "properties_removed": [
+    "P1814",
+    "P131",
+    "P625",
+    "P1454",
+    "P6375",
+    "P281",
+    "P3225"
+  ],
+  "terms_removed": [
+    "label:en",
+    "description:en"
+  ],
+  "pre_damage_revision": {
+    "revid": 2386624283,
+    "timestamp": "2025-08-01T02:16:46Z",
+    "user": "Immanuelle",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 4,
+    "en_label": "Chikadono Shrine",
+    "ja_label": "近殿神社",
+    "properties": [
+      "P17",
+      "P31",
+      "P131",
+      "P281",
+      "P625",
+      "P1454",
+      "P1814",
+      "P3225",
+      "P6375"
+    ],
+    "statement_count": 9,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q134886554",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "近殿神社"
+      },
+      "en": {
+        "language": "en",
+        "value": "Chikadono Shrine"
+      },
+      "id": {
+        "language": "id",
+        "value": "Kuil Chikadono"
+      },
+      "fr": {
+        "language": "fr",
+        "value": "sanctuaire de Chikadono"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "埼玉県熊谷市下増田にある神社"
+      },
+      "en": {
+        "language": "en",
+        "value": "Shinto shrine in Saitama Prefecture, Japan"
+      },
+      "id": {
+        "language": "id",
+        "value": "kuil Shinto di Prefektur Saitama, Jepang"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P1814": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1814",
+            "hash": "7a84b9d9a23dd514ffe19cd225f6f0738a011082",
+            "datavalue": {
+              "value": "ちかどのじんしゃ",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$FDD41613-2F26-48C7-9494-3B4B7F1A452D",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "72e4d79d44e4b2cc2499c3793848aa5cd81c3278",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5343385e3fc6e488660f9973d1079a8c717d4fe6",
+                    "datavalue": {
+                      "value": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$681091F6-1D46-4F68-B27B-2395A80F9A65",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "45dd10b60e47c6d319b88ee3a796393b21e71e39",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 41106,
+                "id": "Q41106"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$0C9A4EAB-EBD4-4615-B7DB-EF605C583F4B",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "72e4d79d44e4b2cc2499c3793848aa5cd81c3278",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5343385e3fc6e488660f9973d1079a8c717d4fe6",
+                    "datavalue": {
+                      "value": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P6375": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6375",
+            "hash": "1fe5e54593cfe488d455a97487f49bbdd44a4388",
+            "datavalue": {
+              "value": {
+                "text": "埼玉県熊谷市下増田749",
+                "language": "ja"
+              },
+              "type": "monolingualtext"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$C3A9C883-F9E3-4F90-8135-4517F80A64E4",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "72e4d79d44e4b2cc2499c3793848aa5cd81c3278",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5343385e3fc6e488660f9973d1079a8c717d4fe6",
+                    "datavalue": {
+                      "value": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P1454": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1454",
+            "hash": "5d1b32a09e4f9febc82ec357b13b8c0fc077bfe8",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 7311343,
+                "id": "Q7311343"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$23F8839E-FF5B-4DAE-A596-40A11965EA25",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "72e4d79d44e4b2cc2499c3793848aa5cd81c3278",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5343385e3fc6e488660f9973d1079a8c717d4fe6",
+                    "datavalue": {
+                      "value": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "c753251722b03127d82c79cfadd7fd9173743614",
+            "datavalue": {
+              "value": {
+                "latitude": 36.209057,
+                "longitude": 139.336243,
+                "altitude": null,
+                "precision": 1e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$909620E9-7FD1-4BA9-AB8D-71953A92EDE6",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "988dcb1e5f31d823327cd9ba5719b939deae1c5b",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "7604bc986c00df583462679bc41343ef6d0c00b3",
+                    "datavalue": {
+                      "value": "https://geocode.csis.u-tokyo.ac.jp/home/simple-geocoding/",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P3225": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3225",
+            "hash": "7c844e9c970dd0f1edc2be662992e25d76805c00",
+            "datavalue": {
+              "value": "4030005013222",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$E586E9A3-89C5-49F4-B7FA-10A2BAC8B5F5",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "72e4d79d44e4b2cc2499c3793848aa5cd81c3278",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5343385e3fc6e488660f9973d1079a8c717d4fe6",
+                    "datavalue": {
+                      "value": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P281": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P281",
+            "hash": "eece44bd8d94967e558db1b45a8887af9212fc38",
+            "datavalue": {
+              "value": "360-0851",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$0D351A0F-CD58-4E49-8AC9-7CB70E3AFDF0",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "72e4d79d44e4b2cc2499c3793848aa5cd81c3278",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5343385e3fc6e488660f9973d1079a8c717d4fe6",
+                    "datavalue": {
+                      "value": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "e5980b8ead95e45f7ede8f03f86e22689f06d9d4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 845945,
+                "id": "Q845945"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q134886554$B5CC4E2B-27AE-4977-AD25-84794C75B10F",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}

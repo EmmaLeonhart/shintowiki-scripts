@@ -1,0 +1,319 @@
+{
+  "qid": "Q17993219",
+  "archived_at": "2026-07-10T03:26:02Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-10T03:06:22Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [],
+  "terms_removed": [
+    "description:en"
+  ],
+  "pre_damage_revision": {
+    "revid": 2515746507,
+    "timestamp": "2026-07-10T03:06:21Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 2,
+    "en_label": null,
+    "ja_label": "寿徳寺",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P625",
+      "P2671",
+      "P3225",
+      "P6375"
+    ],
+    "statement_count": 8,
+    "sitelinks": [
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q17993219",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "寿徳寺"
+      },
+      "zh": {
+        "language": "zh",
+        "value": "壽德寺 (秦野市)"
+      }
+    },
+    "descriptions": {
+      "en": {
+        "language": "en",
+        "value": "temple in Japan"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "神奈川県秦野市にある寺院"
+      }
+    },
+    "aliases": [],
+    "claims": {
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$0FE1B3EE-EED3-4BA1-A694-C0A58728C5CE",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P3225": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3225",
+            "hash": "0085ade270605ac4efe66490cae579a7cb2064b7",
+            "datavalue": {
+              "value": "6021005004251",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$965AEB8A-347E-4A53-A5FE-D169F2299E7A",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "ec76677139787c4e2e2642bdcea8ad565660258b",
+            "datavalue": {
+              "value": {
+                "latitude": 35.368222222222,
+                "longitude": 139.22844444444,
+                "altitude": null,
+                "precision": 2.7777777777778e-05,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$90ea8486-4c01-d404-208c-42af69d86d6d",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "5b2582231cadfce098d47d340a4a862fcef49882",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 5393308,
+                "id": "Q5393308"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$1760bc01-429c-5a1b-e199-92aeb5906223",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "12e969b53a3c737a87d11cb1b365dee2c96f77f3",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 460806,
+                "id": "Q460806"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$748f3aa3-4ff6-05ad-aa7c-dbc9d70711e5",
+          "rank": "normal"
+        }
+      ],
+      "P2671": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2671",
+            "hash": "a3d88cb90ff4585ab3831d6146b8f2b9aac531da",
+            "datavalue": {
+              "value": "/g/11b60p_9f1",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$8CC9BE53-7971-404A-82BB-BA1E2DB4C11A",
+          "rank": "normal"
+        }
+      ],
+      "P6375": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6375",
+            "hash": "5b92f839e6f23d7419cf8610a70c627d289f850a",
+            "datavalue": {
+              "value": {
+                "text": "神奈川県秦野市大秦町3番12",
+                "language": "ja"
+              },
+              "type": "monolingualtext"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$09AAF391-728E-45C3-A13B-923453599A4E",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "1100971181a56b002c74e3f6c2c872751a59fb28",
+            "datavalue": {
+              "value": "Jutoku-ji Temple in Hadano city.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q17993219$25AD393B-7D95-42AA-ABCF-293A4A9CEB2A",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "寿徳寺 (秦野市)",
+        "badges": []
+      }
+    }
+  }
+}

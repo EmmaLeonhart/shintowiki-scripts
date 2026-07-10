@@ -1,0 +1,630 @@
+{
+  "qid": "Q11508611",
+  "archived_at": "2026-07-10T03:25:52Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-06-01T07:42:45Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P159"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2500542839,
+    "timestamp": "2026-06-01T07:41:37Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 2,
+    "en_label": "Nippon Life Stadium",
+    "ja_label": "日本生命球場",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P127",
+      "P131",
+      "P159",
+      "P167",
+      "P214",
+      "P349",
+      "P373",
+      "P571",
+      "P576",
+      "P1619",
+      "P2671",
+      "P3451",
+      "P3999",
+      "P9721"
+    ],
+    "statement_count": 18,
+    "sitelinks": [
+      "commonswiki",
+      "enwiki",
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q11508611",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "日本生命球場"
+      },
+      "en": {
+        "language": "en",
+        "value": "Nippon Life Stadium"
+      }
+    },
+    "descriptions": {
+      "id": {
+        "language": "id",
+        "value": "perusahaan Jepang"
+      },
+      "ja": {
+        "language": "ja",
+        "value": "かつて大阪市中央区にあった野球場"
+      },
+      "en": {
+        "language": "en",
+        "value": "former baseball stadium in Japan"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "日生球場"
+        },
+        {
+          "language": "ja",
+          "value": "日本生命野球場"
+        }
+      ],
+      "en": [
+        {
+          "language": "en",
+          "value": "Nippon Life Insurance Baseball Stadium"
+        },
+        {
+          "language": "en",
+          "value": "Nissay Stadium"
+        }
+      ]
+    },
+    "claims": {
+      "P373": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P373",
+            "hash": "93904cf5587f9e47605b4f5de4ba615542231d13",
+            "datavalue": {
+              "value": "Nippon Seimei Stadium",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "q11508611$FCF32FAD-7B73-408F-B8C4-7320A5C092CD",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$82F7C4BA-BC6A-4C67-A8F5-4502F6CCC37C",
+          "rank": "normal"
+        }
+      ],
+      "P349": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P349",
+            "hash": "2feb36e8ecd2d7d52ee2967a445486d017cf255d",
+            "datavalue": {
+              "value": "00718595",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$DFBEEB3D-E7F1-4353-A7FF-9DF0368275F3",
+          "rank": "normal"
+        }
+      ],
+      "P214": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P214",
+            "hash": "fa45cdd932a39e5326ad4d6c9cc39932cf13ab13",
+            "datavalue": {
+              "value": "251517629",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$438DEA57-A769-440A-9012-5F5BA7851250",
+          "rank": "normal"
+        }
+      ],
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "326e3d41d1e9c34715e880be6e1c6a1e822e4317",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 4830453,
+                "id": "Q4830453"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$F5467D8B-9112-421E-B1FD-90E422CEFA5E",
+          "rank": "normal"
+        },
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "8c2e8fd474e6104eaef9b83588e70a61fd692de2",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 595452,
+                "id": "Q595452"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$dd757081-4890-eee0-b33c-994fc5716665",
+          "rank": "normal"
+        }
+      ],
+      "P159": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P159",
+            "hash": "48c40d88d876479a46f3746f6ad56772de518e4d",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 876485,
+                "id": "Q876485"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P625": [
+              {
+                "snaktype": "value",
+                "property": "P625",
+                "hash": "b2371fba484878973691ba6482f199325044094f",
+                "datavalue": {
+                  "value": {
+                    "latitude": 34.68027778,
+                    "longitude": 135.53027778,
+                    "altitude": null,
+                    "precision": 1e-05,
+                    "globe": "http://www.wikidata.org/entity/Q2"
+                  },
+                  "type": "globecoordinate"
+                }
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P625"
+          ],
+          "id": "Q11508611$715E5C3D-E712-4E9A-8872-41E33B8EA944",
+          "rank": "normal"
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "4591fb2ca8d84e86c052ea37c480c1ad4ab8e32b",
+            "datavalue": {
+              "value": "Nissay-Stadium.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$69994080-9762-44DE-8533-83861957079B",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P571": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P571",
+            "hash": "3af4635a421883ec15fa722ef913c8956ba3306d",
+            "datavalue": {
+              "value": {
+                "time": "+1959-02-00T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 10,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$C3AF0E80-02E6-4D3C-9C14-5163DB0A50C2",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P2671": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P2671",
+            "hash": "eca7de900a47b1245973d3b008a9076fa9f52dd0",
+            "datavalue": {
+              "value": "/g/121b20hx",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$983AFD89-7761-47A6-A155-914BA149AF17",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "36098d2ae87451cc0756c3cb09cd3a3816e82081",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 60996316,
+                "id": "Q60996316"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$d5f9a714-447c-e83c-d242-b9e48ef8a6b1",
+          "rank": "normal"
+        }
+      ],
+      "P167": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P167",
+            "hash": "29133012d7b1f32bf49f63d537c70e91208fc27d",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 22120656,
+                "id": "Q22120656"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$57497b2f-43c4-5d9b-87fe-45cda5f9e1c5",
+          "rank": "normal"
+        }
+      ],
+      "P3451": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3451",
+            "hash": "c53d4fbe72faf4fe06328eecad9d1b29418ac0e5",
+            "datavalue": {
+              "value": "Nissay-Stadium04.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$b59004eb-4b2f-2ec8-5cf0-26a755c51a17",
+          "rank": "normal"
+        }
+      ],
+      "P9721": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P9721",
+            "hash": "73ad3611a5e8e194c6fe12c386edc30985a1f046",
+            "datavalue": {
+              "value": "Nisei-Stadium iriguchi.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$b8e23f96-4737-959d-49f6-e7220808c281",
+          "rank": "normal"
+        }
+      ],
+      "P1619": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1619",
+            "hash": "c6f8b607e5f3f186ef419b093105e097c6fafde8",
+            "datavalue": {
+              "value": {
+                "time": "+1950-06-30T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 11,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$d22f6665-4ea8-cd1c-b8a5-e63b200fb584",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P3999": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3999",
+            "hash": "8e8dc803f81ad23edd4404e400a46ab64619e2d2",
+            "datavalue": {
+              "value": {
+                "time": "+1997-12-31T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 11,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$a5f50ea1-4944-7e31-d714-3ed96136da20",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P127": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "7dee8db67f888cda53c2304852623016b8ed2f0b",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 519611,
+                "id": "Q519611"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$ca2162a9-46a5-5493-d1a7-57c5ba54e807",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ],
+      "P576": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P576",
+            "hash": "16490e1108e01525d923fe8815001f2852e2ab75",
+            "datavalue": {
+              "value": {
+                "time": "+1998-01-31T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 11,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q11508611$919616c7-491a-5bd0-18cc-cc90de62bb1d",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "a29a646602abf65105ed0f39a44231c962ece9ee",
+              "snaks": {
+                "P143": [
+                  {
+                    "snaktype": "value",
+                    "property": "P143",
+                    "hash": "c6f1777471211df31724ac60175786f3872c83e9",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 177837,
+                        "id": "Q177837"
+                      },
+                      "type": "wikibase-entityid"
+                    }
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P143"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "日本生命球場",
+        "badges": []
+      },
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Nippon Seimei Stadium",
+        "badges": []
+      },
+      "enwiki": {
+        "site": "enwiki",
+        "title": "Nippon Life Stadium",
+        "badges": []
+      }
+    }
+  }
+}
