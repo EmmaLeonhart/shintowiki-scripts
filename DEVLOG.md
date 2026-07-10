@@ -4,6 +4,35 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 (later) — matched every address against every coordinate; the glitch is rare
+
+Emma: *"almost all of them have multiple coordinates, and you're supposed to match between all the
+addresses and all the coordinates … each of the candidate shrines has one of the coordinates, but
+the glitch makes it so that they get coordinates from an adjacent shrine that is not a candidate.
+There should be no matches on the page whatsoever."*
+
+She was right that I was treating multiple coordinates as a blocker when they are the data: an
+entry lists N candidate shrines, `現社名など（１）…（N）`, each with its own 緯度経度. The resolver now
+reverse-geocodes **every** coordinate and tests **every** address against **every** one.
+
+**Her predicted glitch is not the general case.** Municipality matching produced **zero** no-match
+items. Because a municipality is coarse, each address was also geocoded (国土地理院 address search)
+and measured to the nearest coordinate on its entry: median **0.65 km**, minimum **5 m**, 27 of 65
+addresses within 500 m. The coordinates do correspond to the item's own addresses. Only **two**
+items — `Q107410067` (4.3 km, 4.3 km) and `Q43594855` (2.8 km, 10.6 km) — have every address more
+than 2 km from every coordinate.
+
+**What the residual actually is.** Of 33 items with exactly one Kokugakuin id: 10 resolved, 22
+several, 1 error. In **16** of the 22, the item's two addresses match *two different* coordinates
+on the *same* entry — the item carries the addresses of two different candidate shrines. A Ronsha
+is one shrine with one address (Emma, 2026-07-09), so these are **conflations**, not coordinate
+glitches, and the entry cannot say which candidate the item is. The other 6 have both addresses
+inside one municipality (Hibita's 三ノ宮1472 vs 1468).
+
+Ten rows are now safely resolvable — one address sits on a coordinate, the other does not. Still
+report-only: nothing emitted, nothing removed.
+---
+
 ## 2026-07-10 — the Kokugakuin record has no address, and no 例祭 either
 
 Two queue items rested on a false assumption, and one live fetch settled both.

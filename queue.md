@@ -64,26 +64,31 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   NB the `Day of Reisai` property proposal was **declined** (2025-12-07), so the model stays
   `P837` + `P3831`=`Q11385469` per `docs/wikidata_shrine_festival_model.md`.
 
-## LAST — hard-residual street addresses: coordinate method RUN, 27 still held
+## LAST — hard-residual street addresses: cross-product run; the glitch is NOT the general case
 
-**Emma's original rule could not work.** She said *"check which address is on the database page."*
-The Kokugakuin 式内社データベース record **has no address field** — only 現社名など, 緯度経度 and a
-map link. Emma 2026-07-10: *"Use the coordinates instead."*
+`modern-quickstatements/resolve_ronsha_addresses.py` (REPORT ONLY) now matches **every address
+against every coordinate** on the Kokugakuin entry, as Emma asked. Report:
+`docs/ronsha_address_resolution_2026-07.md`.
 
-`modern-quickstatements/resolve_ronsha_addresses.py` (REPORT ONLY; emits nothing, removes nothing)
-reads the record's coordinates, reverse-geocodes them with the 国土地理院 service, and keeps the
-address whose 都道府県 + 市区町村 matches. Report: `docs/ronsha_address_resolution_2026-07.md`.
+**Emma's hypothesis was that the entry's coordinates come from an adjacent, non-candidate shrine,
+so nothing would match. The data says otherwise.** Municipality matching found **zero** no-match
+items. Geocoding each address (国土地理院 address search) and measuring to the nearest coordinate:
+median **0.65 km**, minimum **5 m**, and 27 of 65 addresses within 500 m. Only **2 items**
+(`Q107410067`, `Q43594855`) have every address more than 2 km from every coordinate.
 
-Result: 42 Ronsha have >1 Japanese address; 33 have exactly one Kokugakuin id;
-**6 resolved, 27 held.**
+Of 33 items with exactly one Kokugakuin id: **10 resolved · 22 several · 1 error · 0 no-match.**
 
-- [ ] Emma: review the **6 resolved** rows, then a script-2 (remove-only, SPARQL-gated) can drop
-  the losing addresses. Nothing is emitted until she does.
-- [ ] **24 of the 27 holds** are because the Kokugakuin entry lists *several* candidate sites
-  (現社名など（１）…（N）), so it cannot say which one this Ronsha is. Consider falling back to the
-  item's own `P625` instead of the entry's coordinates — Emma's call.
-- [ ] The other 3 holds: both addresses sit in the same municipality (Hibita Shrine's …1472 vs
-  …1468), so coordinates cannot separate them.
+**What the 22 actually are:** in **16** of them the item's two addresses match *two different*
+coordinates on the *same* entry — the item carries the addresses of two different candidate
+shrines the entry lists. A Ronsha is one shrine with one address (Emma 2026-07-09), so these are
+**conflations**, not coordinate glitches. The other 6 have both addresses in one municipality
+(Hibita's 三ノ宮1472 vs 1468), which coordinates cannot separate.
+
+- [ ] Emma: the 10 **resolved** rows are safe to act on — one address sits at a coordinate, the
+  other does not. A script-2 (remove-only, SPARQL-gated) can drop the losers once she says so.
+- [ ] The 16 **conflations** are the real residual: each needs deciding *which candidate this item
+  is*, which the entry cannot answer. Emma's call.
+- [ ] `Q107410067` and `Q43594855` are the only two that look like the glitch she described.
 
 ## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED; batch BUILT + WIRED TO THE DRIP)
 

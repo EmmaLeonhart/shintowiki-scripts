@@ -38,6 +38,7 @@ own existing addresses is correct — is used; nothing is copied.
     python resolve_ronsha_addresses.py [--out FILE]
 """
 import argparse
+import collections
 import io
 import json
 import os
@@ -119,6 +120,46 @@ def matching_addresses(addresses, prefecture, municipality):
     return [a for a in addresses if address_matches(a, prefecture, municipality)]
 
 
+def match_matrix(addresses, places):
+    """Every address against every coordinate.
+
+    Emma 2026-07-10: *"almost all of them have multiple coordinates, and you're
+    supposed to match between all the addresses and all the coordinates."*
+
+    A Kokugakuin entry lists N candidate shrines, `現社名など（１）…（N）`, each with its
+    own 緯度経度. So several coordinate sets is the normal case, not a blocker.
+
+    `places` is [(prefecture, municipality), …], one per coordinate.
+    Returns [(address_index, place_index), …] for every pair that matches.
+    """
+    hits = []
+    for i, addr in enumerate(addresses):
+        for j, place in enumerate(places):
+            if place and address_matches(addr, place[0], place[1]):
+                hits.append((i, j))
+    return hits
+
+
+def verdict(addresses, places):
+    """(kind, kept, dropped).
+
+    kind is one of:
+      'resolved'  exactly one address matches any coordinate -> keep it
+      'no-match'  NO address matches ANY coordinate. Emma's predicted glitch: the
+                  entry's coordinates were taken from an ADJACENT, non-candidate
+                  shrine, so nothing on the page corresponds to this item at all.
+      'several'   more than one distinct address matches; the entry cannot choose.
+    """
+    hits = match_matrix(addresses, places)
+    matched = sorted({i for i, _ in hits})
+    if not matched:
+        return "no-match", None, []
+    if len(matched) > 1:
+        return "several", None, []
+    keep = addresses[matched[0]]
+    return "resolved", keep, [a for a in addresses if a != keep]
+
+
 def resolve_address(addresses, prefecture, municipality):
     """(kept, dropped) when exactly one matches; (None, []) otherwise."""
     hits = matching_addresses(addresses, prefecture, municipality)
@@ -179,6 +220,34 @@ def kokugakuin_page(data_id):
     return visible_text(r.text)
 
 
+GSI_FORWARD = "https://msearch.gsi.go.jp/address-search/AddressSearch"
+
+
+def haversine_km(lat1, lon1, lat2, lon2):
+    from math import asin, cos, radians, sin, sqrt
+    dlon, dlat = radians(lon2 - lon1), radians(lat2 - lat1)
+    a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
+    return 2 * 6371.0 * asin(sqrt(a))
+
+
+def geocode_address(address):
+    """(lat, lon) of a Japanese address via the 国土地理院 address search, or None."""
+    r = requests.get(GSI_FORWARD, params={"q": address}, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+    hits = r.json()
+    if not hits:
+        return None
+    lon, lat = hits[0]["geometry"]["coordinates"]
+    return (round(lat, 6), round(lon, 6))
+
+
+def nearest_coord_km(address_pt, coords):
+    """Distance from a geocoded address to the closest coordinate on the entry."""
+    if not address_pt or not coords:
+        return None
+    return min(haversine_km(address_pt[0], address_pt[1], c[0], c[1]) for c in coords)
+
+
 def reverse_geocode(lat, lon, table):
     r = requests.get(GSI_REVERSE, params={"lat": lat, "lon": lon},
                      headers=HEADERS, timeout=60)
@@ -193,6 +262,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=DEFAULT_OUT)
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--json", help="also dump the raw match matrix here")
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -204,89 +274,146 @@ def main():
     table = muni_table()
     print("{} GSI municipality codes".format(len(table)))
 
-    rows, held = [], []
+    results = []
     for n, (qid, rec) in enumerate(sorted(single.items())):
         if args.limit and n >= args.limit:
             break
         kid = rec["kokugakuin"][0]
+        addrs = rec["addresses"]
         try:
             coords = parse_coords(kokugakuin_page(kid))
         except Exception as exc:
-            held.append((qid, kid, rec["addresses"], "page fetch failed: %s" % exc))
+            results.append((qid, kid, addrs, [], [], "error", "page fetch failed: %s" % exc, []))
             continue
-        if len(coords) != 1:
-            held.append((qid, kid, rec["addresses"],
-                         "the Kokugakuin entry lists %d candidate sites "
-                         "(現社名など（１）…（%d）), so it cannot say which one this "
-                         "Ronsha is" % (len(coords), len(coords))
-                         if coords else "no coordinates on the record"))
-            time.sleep(0.5)
+        if not coords:
+            results.append((qid, kid, addrs, [], [], "error", "no coordinates on the record", []))
+            time.sleep(0.4)
             continue
-        lat, lon = coords[0]
-        try:
-            place = reverse_geocode(lat, lon, table)
-        except Exception as exc:
-            held.append((qid, kid, rec["addresses"], "reverse geocode failed: %s" % exc))
-            time.sleep(0.5)
-            continue
-        if not place:
-            held.append((qid, kid, rec["addresses"], "coords resolve to no municipality"))
-            time.sleep(0.5)
-            continue
-        pref, muni = place
-        keep, drop = resolve_address(rec["addresses"], pref, muni)
-        if keep is None:
-            n = len(matching_addresses(rec["addresses"], pref, muni))
-            why = ("coords say %s%s — %s" % (
-                pref, muni,
-                "NONE of its addresses is there" if n == 0
-                else "%d of its addresses are both there" % n))
-            held.append((qid, kid, rec["addresses"], why))
-        else:
-            rows.append((qid, kid, lat, lon, pref, muni, keep, drop))
-        time.sleep(0.6)
 
-    write_report(args.out, rows, held, len(items), len(single))
-    print("\nRESOLVED {}   HELD {}   -> {}".format(len(rows), len(held), args.out))
+        # EVERY candidate site on the entry gets reverse-geocoded, not just the first.
+        places = []
+        for lat, lon in coords:
+            try:
+                places.append(reverse_geocode(lat, lon, table))
+            except Exception:
+                places.append(None)
+            time.sleep(0.5)
+
+        kind, keep, drop = verdict(addrs, places)
+
+        # Municipality granularity cannot see a coordinate borrowed from an
+        # adjacent shrine inside the same municipality. So also geocode each
+        # ADDRESS and measure how far it is from the nearest coordinate on the
+        # entry. Emma's hypothesis predicts every distance is large.
+        dists = []
+        for a in addrs:
+            try:
+                dists.append(nearest_coord_km(geocode_address(a), coords))
+            except Exception:
+                dists.append(None)
+            time.sleep(0.4)
+
+        results.append((qid, kid, addrs, coords, places, kind,
+                        keep if keep else drop, dists))
+        time.sleep(0.3)
+
+    if args.json:
+        io.open(args.json, "w", encoding="utf-8", newline="\n").write(json.dumps(
+            [{"qid": q, "kid": k, "addresses": a, "coords": c,
+              "places": [list(p) if p else None for p in pl],
+              "kind": kind, "matrix": match_matrix(a, pl),
+              "km_to_nearest_coord": dd}
+             for q, k, a, c, pl, kind, _v, dd in results], ensure_ascii=False, indent=2))
+    write_report(args.out, results, len(items), len(single))
+    counts = collections.Counter(r[5] for r in results)
+    print("")
+    for k in ("resolved", "no-match", "several", "error"):
+        if counts[k]:
+            print("  {:9} {}".format(k, counts[k]))
+    print("-> {}".format(args.out))
     return 0
 
 
-def write_report(path, rows, held, total, single):
+def write_report(path, results, total, single):
+    resolved = [r for r in results if r[5] == "resolved"]
+    nomatch = [r for r in results if r[5] == "no-match"]
+    several = [r for r in results if r[5] == "several"]
+    errors = [r for r in results if r[5] == "error"]
+
+    def places_str(places):
+        return " ".join("`%s%s`" % (p[0], p[1]) if p else "`?`" for p in places) or "—"
+
+    def addrs_str(addrs, dists=None):
+        if not dists:
+            return " ".join("`%s`" % a for a in addrs)
+        return "<br>".join(
+            "`%s` — %s" % (a, "%.2f km" % d if d is not None else "?")
+            for a, d in zip(addrs, dists))
+
     out = [
         "# Shikinai Ronsha — which address is right?",
         "",
         "Generated by `modern-quickstatements/resolve_ronsha_addresses.py`. **Report only:**",
         "no QuickStatements were emitted and nothing was removed.",
         "",
-        "## Why the original rule could not work",
+        "## Method",
         "",
-        "Emma's rule was *\"check which address is on the database page.\"* The Kokugakuin",
-        "式内社データベース record **has no address field** — its fields are 旧郡名, 座数, 官幣・国幣,",
-        "社格, 神階の変遷, テキスト内容, 現社名など, 緯度経度 and a map link. What it does carry is",
-        "**coordinates**, so (Emma, 2026-07-10) *\"use the coordinates instead\"*: reverse-geocode",
-        "them with the 国土地理院 service and keep the address whose 都道府県 + 市区町村 matches.",
+        "Emma's original rule was *\"check which address is on the database page.\"* The Kokugakuin",
+        "式内社データベース record **has no address field** — only 現社名など（N）, 緯度経度 and a map",
+        "link. Emma 2026-07-10: *\"Use the coordinates instead\"*, and then: *\"almost all of them have",
+        "multiple coordinates, and you're supposed to match between all the addresses and all the",
+        "coordinates.\"*",
         "",
-        "An item resolves only when **exactly one** of its addresses matches. Everything else is held.",
+        "An entry lists N candidate shrines, `現社名など（１）…（N）`, each with its own coordinate. So",
+        "**every** coordinate is reverse-geocoded (国土地理院 `LonLatToAddress` → `muniCd` → `muni.js`)",
+        "and **every** address is tested against **every** coordinate.",
+        "",
+        "* **resolved** — exactly one address matches some coordinate. Keep it, drop the rest.",
+        "* **no-match** — no address matches any coordinate. Emma's predicted glitch: the entry's",
+        "  coordinates belong to an *adjacent, non-candidate* shrine, so nothing on the page",
+        "  corresponds to this item at all.",
+        "* **several** — more than one address matches; the entry cannot choose.",
         "",
         "* Ronsha with more than one Japanese address: **{}**".format(total),
         "* …of which exactly one Kokugakuin id: **{}**".format(single),
-        "* Resolved: **{}**  ·  Held: **{}**".format(len(rows), len(held)),
+        "* resolved **{}** · no-match **{}** · several **{}** · error **{}**".format(
+            len(resolved), len(nomatch), len(several), len(errors)),
         "",
-        "## Resolved — one address matches the coordinates",
+        "## no-match — nothing on the entry corresponds to this item",
         "",
-        "| Item | Kokugakuin | Coordinates | GSI says | KEEP | DROP |",
-        "|---|---|---|---|---|---|",
+        "This is the glitch Emma predicted. The entry's coordinates name places none of the item's",
+        "addresses sit in.",
+        "",
+        "| Item | Kokugakuin | Item's addresses — km to nearest coordinate | Entry's coordinates resolve to |",
+        "|---|---|---|---|",
     ]
-    for qid, kid, lat, lon, pref, muni, keep, drop in rows:
-        out.append("| [{0}](https://www.wikidata.org/wiki/{0}) | [{1}]({2}) | {3}, {4} | {5}{6} | `{7}` | {8} |".format(
-            qid, kid, KOKUGAKUIN.format(kid), lat, lon, pref, muni, keep,
-            " ".join("`%s`" % d for d in drop) or "—"))
-    out += ["", "## Held — needs a human", "",
-            "| Item | Kokugakuin | Addresses | Why |", "|---|---|---|---|"]
-    for qid, kid, addrs, why in held:
+    for qid, kid, addrs, coords, places, _k, _v, d in nomatch:
         out.append("| [{0}](https://www.wikidata.org/wiki/{0}) | [{1}]({2}) | {3} | {4} |".format(
-            qid, kid, KOKUGAKUIN.format(kid),
-            " ".join("`%s`" % a for a in addrs), why))
+            qid, kid, KOKUGAKUIN.format(kid), addrs_str(addrs, d), places_str(places)))
+
+    out += ["", "## resolved — exactly one address matches a coordinate", "",
+            "| Item | Kokugakuin | Entry resolves to | KEEP | DROP |", "|---|---|---|---|---|"]
+    for qid, kid, addrs, coords, places, _k, keep, _d in resolved:
+        drop = [a for a in addrs if a != keep]
+        out.append("| [{0}](https://www.wikidata.org/wiki/{0}) | [{1}]({2}) | {3} | `{4}` | {5} |".format(
+            qid, kid, KOKUGAKUIN.format(kid), places_str(places), keep,
+            " ".join("`%s`" % d for d in drop) or "—"))
+
+    out += ["", "## several — more than one address matches", "",
+            "Each address is shown with its distance to the *nearest* coordinate on the entry",
+            "(address geocoded with the 国土地理院 address search).",
+            "",
+            "| Item | Kokugakuin | Addresses — km to nearest coordinate | Entry resolves to |",
+            "|---|---|---|---|"]
+    for qid, kid, addrs, coords, places, _k, _v, d in several:
+        out.append("| [{0}](https://www.wikidata.org/wiki/{0}) | [{1}]({2}) | {3} | {4} |".format(
+            qid, kid, KOKUGAKUIN.format(kid), addrs_str(addrs, d), places_str(places)))
+
+    if errors:
+        out += ["", "## error", "", "| Item | Kokugakuin | Why |", "|---|---|---|"]
+        for qid, kid, addrs, coords, places, _k, why, _d in errors:
+            out.append("| [{0}](https://www.wikidata.org/wiki/{0}) | [{1}]({2}) | {3} |".format(
+                qid, kid, KOKUGAKUIN.format(kid), why))
     out.append("")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     io.open(path, "w", encoding="utf-8", newline="\n").write("\n".join(out))
