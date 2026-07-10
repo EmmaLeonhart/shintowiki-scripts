@@ -2,7 +2,9 @@ __NOTOC__
 
 == Open questions ==
 
-''A working conversation. Your notes are plain; my replies are marked '''→'''. Items get deleted once settled. (Palace-kami "ignore" and the Izumo split "you're taking it" are removed per your notes.)''
+''A working conversation. Your notes are plain; my replies are marked '''→'''. Items get deleted once settled. These are still open — nothing here is closed.''
+
+'''Izumo names one item for two entries.''' 坐韓国伊大弖神社 covers both 意宇郡 entry 28 (in 揖夜神社's grounds) and entry 39 (伊'''太'''弖, in 佐久多神社's). Ordinal 39 is an empty hole. Splitting it needs a '''new item''' — not something the QuickStatements pipeline can make. (<code>docs/engishiki_list_defects_2026-07.md §1</code>)
 
 '''The big theme: your "sequential misc" idea is the key.''' Most of what's below has been stuck in "unregistered, run by hand" for '''one reason''': the daily drip runs lines in '''random order''', which is unsafe for any remove-then-add or add-then-remove pair (the remove could fire first and leave a shrine blank). A '''sequential misc''' — a file that runs top-to-bottom, one edit per run, never interleaved — makes every such pair safe and un-sticks all of it. It needs a small design (it changes how the daily editor picks lines) but it is the right answer. Say the word and I'll design it.
 
