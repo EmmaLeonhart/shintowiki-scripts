@@ -1,0 +1,658 @@
+{{documentation subpage}}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for clobbered parameters|Module:Check for unknown parameters}}
+
+== Usage ==
+{{Parameter names example
+| name
+| logo
+| logo_size
+| logo_alt
+| logo_caption
+| screenshot
+| screenshot_size
+| screenshot_alt
+| collapsible
+| collapsetext
+| background
+| caption
+| company_type
+| type
+| language
+| language_count
+| language_footnote
+| traded_as
+| founded
+| dissolved
+| predecessor
+| successor
+| headquarters
+| location_city
+| location_country
+| country_of_origin
+| locations
+| area_served
+| owner
+| author
+| founder
+| editor
+| chairman
+| chairperson
+| president
+| CEO
+| MD
+| GM
+| key_people
+| industry
+| products
+| services
+| revenue
+| operating_income
+| international
+| net_income
+| assets
+| equity
+| employees
+| parent
+| divisions
+| subsidiaries
+| url = {{URL|example.com}}
+| ipv6
+| advertising
+| commercial
+| registration
+| num_users
+| launch_date = {{longitem|<nowiki>{{Start date and age</nowiki><br /><nowiki>|df=yes/no|YYYY|MM|DD}}</nowiki>}}
+| current_status
+| native_clients
+| content_license
+| programming_language
+| issn
+| eissn
+| oclc
+| footnotes
+}}
+
+=== Full version ===
+Please remove any unused parameters when copying to an article page.
+
+<syntaxhighlight lang="html" style="overflow: hidden; background: unset;">
+{{Infobox website
+| name = 
+| logo = 
+| logo_size = 
+| logo_alt = 
+| logo_caption = 
+| screenshot = 
+| screenshot_size = 
+| screenshot_alt = 
+| collapsible = 
+| collapsetext = 
+| background = 
+| caption = 
+| company_type = 
+| type = 
+| language = 
+| language_count = 
+| language_footnote = 
+| traded_as = 
+| founded = 
+| dissolved = 
+| predecessor = 
+| successor = 
+| headquarters = 
+| location_city = 
+| location_country = 
+| country_of_origin = 
+| locations = 
+| area_served = 
+| owner = 
+| author = 
+| founder = 
+| editor = 
+| chairman = 
+| chairperson = 
+| president = 
+| CEO = 
+| MD = 
+| GM = 
+| key_people = 
+| industry = 
+| products = 
+| services = 
+| revenue = 
+| operating_income = 
+| international = 
+| net_income = 
+| assets = 
+| equity = 
+| employees = 
+| parent = 
+| divisions = 
+| subsidiaries = 
+| url = 
+| ipv6 = 
+| advertising = 
+| commercial = 
+| registration = 
+| num_users = 
+| launch_date = 
+| current_status = 
+| native_clients = 
+| content_license = 
+| programming_language = 
+| issn = 
+| eissn = 
+| oclc = 
+| footnotes = 
+}}
+</syntaxhighlight>
+{{Clear}}
+
+==Parameters==
+All parameters are optional. Avoid linking to an article more than once within the infobox.
+{{TemplateData header}}
+<templatedata>
+{
+	"description": "An infobox for articles about company",
+	"params": {
+		"logo": {
+			"description": "The website logo",
+			"label": "Logo",
+			"aliases": [
+				"websitelogo"
+			],
+			"type": "wiki-file-name"
+		},
+		"logo_caption": {
+			"description": "Caption for the logo. Most logos need none. But this field can be used to insert mandatory deletion notices.",
+			"label": "Logo's caption",
+			"aliases": [
+				"logocaption"
+			]
+		},
+		"screenshot": {
+			"description": "A screen photo of the homepage; see: [[:File:EnglishWikipediaMainPage3rdAugust2007.PNG|Example 1]].",
+			"label": "Screenshot",
+			"example": "EnglishWikipediaMainPage3rdAugust2007.PNG",
+			"type": "wiki-file-name"
+		},
+		"collapsible": {
+			"description": "Whether the screenshot should be collapsed or visible at page load. (Yes / No). Does nothing for mobile users (see [[phab:T111565]]).",
+			"label": "Is screenshot collapsible?",
+			"example": "yes",
+			"type": "boolean",
+			"default": "No"
+		},
+		"collapsetext": {
+			"description": "Text for the header of the collapsed section, defaults to ''Screenshot''.",
+			"label": "Collapsed screenshot header",
+			"type": "string"
+		},
+		"caption": {
+			"description": "A caption for the screenshot. Should contain the date the screenshot was taken.",
+			"label": "Screenshot's caption",
+			"example": "Screenshot of Wikipedia on 11 September 2014.",
+			"type": "string"
+		},
+		"url": {
+			"description": "The canonical URL of the website's home page meeting [[WP:ELOFFICIAL]]. If the website is primarily accessed through its IP address, the IP address may be listed instead.",
+			"label": "Website",
+			"type": "string",
+			"aliases": [
+				"website",
+				"homepage"
+			]
+		},
+		"commercial": {
+			"description": "Is the site commercially run / owned? (Yes / No)",
+			"label": "Is commercial?",
+			"type": "boolean"
+		},
+		"type": {
+			"description": "The type of website",
+			"label": "Type",
+			"type": "string",
+			"aliases": [
+				"website_type"
+			],
+			"example": "Digital advertising, mobile video advertising"
+		},
+		"registration": {
+			"description": "Is there registration? (None / Optional / Required)",
+			"label": "Registration",
+			"aliases": [
+				"reg"
+			],
+			"type": "string"
+		},
+		"language": {
+			"description": "The language(s) in which the website is available",
+			"label": "Language",
+			"type": "string"
+		},
+		"content_license": {
+			"description": "The license of the content of the site. Use \"Content licence\" for British English spelling.",
+			"label": "Content license",
+			"type": "string"
+		},
+		"content_licence": {
+			"description": "The license of the content of the site. Use \"Content license\" for American English spelling.",
+			"label": "Content licence",
+			"type": "string"
+		},
+		"programming_language": {
+			"description": "The programming language(s) by which the website is developed",
+			"label": "Programming language",
+			"type": "string"
+		},
+		"owner": {
+			"description": "The current owner(s); should be a company name, persons name, alias, etc.",
+			"label": "Owner(s)",
+			"aliases": [
+				"owners"
+			],
+			"type": "string"
+		},
+		"author": {
+			"description": "The person or entity that writes for the website.",
+			"label": "Author(s)",
+			"aliases": [
+				"creator",
+				"authors",
+				"creators"
+			],
+			"type": "string"
+		},
+		"editor": {
+			"description": "The person or entity that serves as the website's editor",
+			"label": "Editor(s)",
+			"aliases": [
+				"editors"
+			],
+			"type": "string"
+		},
+		"launch_date": {
+			"description": "When the website was launched; check the Whois database, if needed",
+			"label": "Launch date",
+			"aliases": [
+				"date_of_launch"
+			],
+			"type": "date"
+		},
+		"revenue": {
+			"description": "The approximate revenue of the site",
+			"label": "Revenue",
+			"aliases": [
+				"rev"
+			],
+			"type": "string"
+		},
+		"issn": {
+			"description": "The website's ISSN, e.g. 1085-6706 (automatically linked to https://www.WorldCat.org)",
+			"label": "ISSN",
+			"aliases": [
+				"ISSN"
+			],
+			"type": "string"
+		},
+		"eissn": {
+			"description": "The website's eISSN, e.g. 1085-6706 (automatically linked to https://www.WorldCat.org)",
+			"label": "eISSN",
+			"aliases": [
+				"eISSN"
+			],
+			"type": "string"
+		},
+		"oclc": {
+			"description": "The website's OCLC number",
+			"label": "OCLC",
+			"type": "string"
+		},
+		"current_status": {
+			"description": "The website's current status",
+			"label": "Current status",
+			"type": "string"
+		},
+		"footnotes": {
+			"description": "Footnotes displayed at the bottom of infobox",
+			"label": "Footnotes",
+			"type": "unbalanced-wikitext"
+		},
+		"name": {
+			"label": "Name",
+			"description": "Title of the website. Sometimes, it is the same as the domain name.",
+			"example": "Ars Technica",
+			"type": "string",
+			"default": "{{PAGENAMEBASE}}",
+			"required": true,
+			"aliases": [
+				"websitename"
+			]
+		},
+		"logo_size": {
+			"label": "Logo size",
+			"description": "Size of the logo. See Wikipedia image tutorial to find out about valid size values. The default is 250px.",
+			"type": "string",
+			"default": "250px"
+		},
+		"logo_alt": {
+			"label": "Logo's alternative text",
+			"description": "Alternative text for the logo. Alternative text is displayed when the logo itself cannot be displayed or when a screen reader reads the article for the blind people.",
+			"type": "string"
+		},
+		"screenshot_size": {
+			"label": "Screenshot's size",
+			"description": "Screenshot size. The default is 300px. Usually, changing the default is unnecessary.",
+			"example": "300px",
+			"type": "string"
+		},
+		"screenshot_alt": {
+			"label": "Screenshot's alternative text",
+			"description": "Alternative text for the screenshot. Alternative text is displayed when the screenshot itself cannot be displayed or when a screen reader reads the article for the blind people.",
+			"type": "string"
+		},
+		"language_count": {
+			"label": "Language count",
+			"description": "The number of languages in which the website is available",
+			"type": "number"
+		},
+		"language_footnote": {
+			"label": "Language footnote",
+			"description": "The footnote text containing citation for the source that says what languages are available",
+			"type": "unbalanced-wikitext"
+		},
+		"company_type": {
+			"label": "Types of business entity",
+			"type": "line"
+		},
+		"traded_as": {
+			"label": "Traded as",
+			"type": "line"
+		},
+		"founded": {
+			"aliases": [
+				"foundation"
+			],
+			"label": "Founded",
+			"type": "date"
+		},
+		"dissolved": {
+			"label": "Dissolved",
+			"type": "date"
+		},
+		"predecessor": {
+			"label": "Predecessor",
+			"type": "string"
+		},
+		"successor": {
+			"label": "Successor",
+			"type": "string"
+		},
+		"country_of_origin": {
+			"label": "Country of origin",
+			"type": "string"
+		},
+		"locations": {
+			"label": "No. of locations",
+			"type": "number"
+		},
+		"area_served": {
+			"label": "Area served",
+			"type": "string"
+		},
+		"founder": {
+			"label": "Founder(s)",
+			"type": "string"
+		},
+		"chairman": {
+			"label": "Chairman",
+			"type": "string"
+		},
+		"chairperson": {
+			"label": "Chairperson ",
+			"type": "string"
+		},
+		"president": {
+			"label": "President",
+			"type": "string"
+		},
+		"CEO": {
+			"label": "CEO",
+			"type": "string"
+		},
+		"MD": {
+			"label": "Managing director",
+			"type": "string"
+		},
+		"GM": {
+			"label": "General manager",
+			"type": "string"
+		},
+		"key_people": {
+			"label": "Key people",
+			"type": "string"
+		},
+		"industry": {
+			"label": "Industry",
+			"type": "string"
+		},
+		"products": {
+			"label": "Products",
+			"type": "string"
+		},
+		"services": {
+			"label": "Services",
+			"type": "string"
+		},
+		"operating_income": {
+			"label": "Operating income",
+			"type": "string"
+		},
+		"net_income": {
+			"label": "Net income",
+			"type": "string"
+		},
+		"assets": {
+			"label": "Total assets",
+			"type": "string"
+		},
+		"equity": {
+			"label": "Total equity",
+			"type": "string"
+		},
+		"employees": {
+			"aliases": [
+				"num_employees"
+			],
+			"label": "Total employees",
+			"type": "string"
+		},
+		"parent": {
+			"label": "Holding company",
+			"type": "string"
+		},
+		"divisions": {
+			"label": "Divisions",
+			"type": "string"
+		},
+		"subsidiaries": {
+			"aliases": [
+				"subsid"
+			],
+			"label": "Subsidiaries",
+			"type": "string"
+		},
+		"ipv6": {
+			"label": "IPv6 support",
+			"type": "string"
+		},
+		"advertising": {
+			"label": "Advertising",
+			"type": "string"
+		},
+		"users": {
+			"aliases": [
+				"num_users"
+			],
+			"label": "Users",
+			"description": "The number of registered users the website has",
+			"type": "number"
+		},
+		"native_clients": {
+			"label": "Native clients",
+			"type": "string"
+		}
+	},
+	"format": "block",
+	"paramOrder": [
+		"name",
+		"logo",
+		"logo_size",
+		"logo_caption",
+		"logo_alt",
+		"screenshot",
+		"screenshot_size",
+		"caption",
+		"screenshot_alt",
+		"collapsible",
+		"collapsetext",
+		"type",
+		"company_type",
+		"language",
+		"language_count",
+		"language_footnote",
+		"traded_as",
+		"founded",
+		"dissolved",
+		"predecessor",
+		"successor",
+		"country_of_origin",
+		"locations",
+		"area_served",
+		"owner",
+		"author",
+		"founder",
+		"editor",
+		"chairman",
+		"chairperson",
+		"president",
+		"CEO",
+		"MD",
+		"GM",
+		"key_people",
+		"industry",
+		"products",
+		"services",
+		"revenue",
+		"operating_income",
+		"net_income",
+		"assets",
+		"equity",
+		"employees",
+		"parent",
+		"divisions",
+		"subsidiaries",
+		"url",
+		"ipv6",
+		"advertising",
+		"commercial",
+		"registration",
+		"users",
+		"launch_date",
+		"current_status",
+		"native_clients",
+		"content_license",
+		"content_licence",
+		"programming_language",
+		"issn",
+		"eissn",
+		"oclc",
+		"footnotes"
+	]
+}
+</templatedata>
+
+== Example ==
+{{Infobox website
+| name = Wikipedia
+| logo = [[File:Wikipedia-v2-logo.svg|150px|frameless|An incomplete sphere made of large, white, jigsaw puzzle pieces. Each puzzle piece contains one glyph from a different writing system, with each glyph written in black.]]<br />[[File:Wikipedia wordmark.svg|200px|The Wikipedia wordmark which displays the name Wikipedia, written in all caps. The{{nbsp}}''W'' and the{{nbsp}}''A'' are the same height and both are taller than the other letters which are also all the same height.]]
+| logo_caption = The [[Wikipedia logo|logo of Wikipedia]], a globe featuring [[glyph]]s from various [[writing system]]s
+| screenshot = Wikipedia Main Page.png{{!}}border
+| screenshot_alt = Main page of the English Wikipedia
+| caption = [[Main Page]] of the English Wikipedia on July 19, 2020
+| collapsible = yes
+| url = {{URL|https://www.wikipedia.org/|wikipedia.org}}
+| commercial = No
+| type = [[Online encyclopedia]]
+| registration = {{nowrap|Optional but required for certain}} tasks, such as editing protected pages, creating pages on the English Wikipedia, and uploading files
+| language = 285 languages
+| num_users = 90.6&nbsp;million{{padlsup|a}}
+| country_of_origin = United States
+| owner = [[Wikimedia Foundation]]
+| author = {{Unbulleted list|[[Jimmy Wales]]|[[Larry Sanger]]<ref name="Sidener">{{Cite news |url=http://www.signonsandiego.com/uniontrib/20041206/news_mz1b6encyclo.html |title=Everyone's Encyclopedia |last=Sidener |first=Jonathan |work=[[The San Diego Union-Tribune]] |date=6 December 2004 |archive-url=https://web.archive.org/web/20160114101809/http://www.sandiegouniontribune.com/uniontrib/20041206/news_mz1b6encyclo.html |archive-date=14 January 2016 |access-date=22 July 2020}}</ref>}}
+| launch_date = {{Start date and age|mf=yes|2001|1|15}}
+| oclc = 52075003
+| current_status = Active
+| programming_language = [[LAMP (software bundle)|LAMP]] platform
+| content_license = {{Nowrap|[[Creative Commons licenses|CC Attribution / Share-Alike]] 3.0}}<br />Most text is also dual-licensed under [[GFDL]]; media licensing varies
+| footnotes = <div class="plainlist" style="border-top:1px solid #aaa;padding-top:0.3em;text-align:left;">
+* {{nowrap |{{sup|a}} Total registration across all editions (July 2020).<ref>[[meta:List of Wikipedias#Grand Total|Grand Total]]. Wikimedia. 22 July 2020. Retrieved 22 July 2020.</ref>}}
+</div>
+}}
+
+<syntaxhighlight lang="html" style="overflow: hidden; background: unset;">
+{{Infobox website
+| name = Wikipedia
+| logo = [[File:Wikipedia-v2-logo.svg|150px|frameless|An incomplete sphere made of large, white, jigsaw puzzle pieces. Each puzzle piece contains one glyph from a different writing system, with each glyph written in black.]]<br />[[File:Wikipedia wordmark.svg|200px|The Wikipedia wordmark which displays the name Wikipedia, written in all caps. The{{nbsp}}''W'' and the{{nbsp}}''A'' are the same height and both are taller than the other letters which are also all the same height.]]
+| logo_caption = The [[Wikipedia logo|logo of Wikipedia]], a globe featuring [[glyph]]s from various [[writing system]]s
+| screenshot = Wikipedia Main Page.png{{!}}border
+| screenshot_alt = Main page of the English Wikipedia
+| caption = [[Main Page]] of the English Wikipedia on July 19, 2020
+| collapsible = yes
+| url = {{URL|https://www.wikipedia.org/|wikipedia.org}}
+| commercial = No
+| type = [[Online encyclopedia]]
+| registration = {{nowrap|Optional but required for certain}} tasks, such as editing protected pages, creating pages on the English Wikipedia, and uploading files
+| language = 285 languages
+| num_users = 90.6&nbsp;million{{padlsup|a}}
+| country_of_origin = United States
+| owner = [[Wikimedia Foundation]]
+| author = {{Unbulleted list|[[Jimmy Wales]]|[[Larry Sanger]]<ref name="Sidener">{{Cite news |url=http://www.signonsandiego.com/uniontrib/20041206/news_mz1b6encyclo.html |title=Everyone's Encyclopedia |last=Sidener |first=Jonathan |work=[[The San Diego Union-Tribune]] |date=6 December 2004 |archive-url=https://web.archive.org/web/20160114101809/http://www.sandiegouniontribune.com/uniontrib/20041206/news_mz1b6encyclo.html |archive-date=14 January 2016 |access-date=22 July 2020}}</ref>}}
+| launch_date = {{Start date and age|mf=yes|2001|1|15}}
+| oclc = 52075003
+| current_status = Active
+| programming_language = [[LAMP (software bundle)|LAMP]] platform
+| content_license = {{Nowrap|[[Creative Commons licenses|CC Attribution / Share-Alike]] 3.0}}<br />Most text is also dual-licensed under [[GFDL]]; media licensing varies
+| footnotes = <div class="plainlist" style="border-top:1px solid #aaa;padding-top:0.3em;text-align:left;">
+* {{nowrap |{{sup|a}} Total registration across all editions (July 2020).<ref>[[meta:List of Wikipedias#Grand Total|Grand Total]]. Wikimedia. 22 July 2020. Retrieved 22 July 2020.</ref>}}
+</div>
+}}
+</syntaxhighlight>
+
+=== References ===
+{{Reflist}}
+{{Clear}}
+
+== Tracking categories ==
+Invalid, and requires correction
+* {{clc|Pages using infobox website with unknown parameters}}
+* {{clc|Pages using infobox website with redundant parameters}}&nbsp;– only one is visible in the infobox output
+
+== See also ==
+* [[Wikipedia:Notability (web)]]
+* [[Wikipedia:WikiProject Websites]]
+
+{{Organization infoboxes}}
+
+<includeonly>{{Sandbox other|
+| 
+}}</includeonly>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Websites templates| ]]
+[[Category:Independently git synced pages]][[Category:Computing infobox templates|Website]]
+[[Category:Independently git synced pages]][[Category:Embeddable templates]]
+[[Category:Independently git synced pages]][[Category:Templates that add a tracking category]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>
