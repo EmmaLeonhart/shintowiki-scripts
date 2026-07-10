@@ -69,13 +69,13 @@ def _rows():
 def test_build_report_buckets_every_gradeable_row():
     r = rep.build_report(_rows())
     # Q1 exact (Sensō-ji Temple vs Sensō-ji); Q2 macron-only (Senso-ji vs Sensō-ji);
-    # Q3 mismatch (Kanda Shrine vs Kanda Myojin — genuinely different reading);
-    # Q4 not gradeable (no enwiki); Q5 gradeable but rejected (Amaterasu → None).
+    # Q3 mismatch (Ideha Shrine vs Dewa Shrine); Q4 not gradeable (no enwiki);
+    # Q5 Amaterasu → "Amaterasu Shrine" now, vs enwiki "Amaterasu" → exact after strip.
     assert r["counts"]["gradeable"] == 4      # Q1,Q2,Q3,Q5 have an enwiki title
-    assert r["buckets"]["exact"] == 1
+    assert r["buckets"]["exact"] == 2
     assert r["buckets"]["macron-only"] == 1
     assert r["buckets"]["mismatch"] == 1
-    assert r["buckets"]["rejected"] == 1
+    assert r["buckets"]["rejected"] == 0
 
 
 def test_build_report_lists_mismatches_in_full():
@@ -130,8 +130,8 @@ def test_a_kanji_commons_name_is_out_of_scope_not_rejected():
 
 def test_headline_accuracy_counts_macron_only_as_a_pass():
     r = rep.build_report(_rows())
-    # (exact + macron-only) / gradeable = 2/4
-    assert abs(r["accuracy"] - 0.5) < 1e-9
+    # (exact + macron-only) / gradeable = (2 + 1)/4
+    assert abs(r["accuracy"] - 0.75) < 1e-9
 
 
 def test_a_hardcoded_override_wins_over_the_normalizer():

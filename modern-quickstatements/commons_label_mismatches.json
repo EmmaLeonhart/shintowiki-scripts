@@ -7,6 +7,12 @@
    "enwiki": "Ōta Shrine"
   },
   {
+   "qid": "Q3698846",
+   "commons": "Category:Onbashira Festival",
+   "candidate": "Onbashira Festival Shrine",
+   "enwiki": "Onbashira"
+  },
+  {
    "qid": "Q3936229",
    "commons": "Category:Taichung Shrine",
    "candidate": "Taichung Shrine",
@@ -49,6 +55,12 @@
    "enwiki": "Ōyamato Shrine"
   },
   {
+   "qid": "Q717682",
+   "commons": "Category:Kanda-Myojin",
+   "candidate": "Kanda-Myojin Shrine",
+   "enwiki": "Kanda Shrine"
+  },
+  {
    "qid": "Q6370171",
    "commons": "Category:Karenko Shinto Shrine",
    "candidate": "Karenko Shinto Shrine",
@@ -59,6 +71,12 @@
    "commons": "Category:Taiwan Gokoku Shrine",
    "candidate": "Taiwan Gokoku Shrine",
    "enwiki": "Taiwan Martyr Shrine"
+  },
+  {
+   "qid": "Q7797685",
+   "commons": "Category:Imperial Palace Sanctuaries",
+   "candidate": "Imperial Palace Sanctuaries Shrine",
+   "enwiki": "Three Palace Sanctuaries"
   },
   {
    "qid": "Q8010918",
@@ -151,10 +169,22 @@
    "enwiki": "Yabo Tenmangū"
   },
   {
+   "qid": "Q3571407",
+   "commons": "Category:Yamada Ten'man-gû",
+   "candidate": "Yamada Ten'man-gu Shrine",
+   "enwiki": "Yamada Tenmangū"
+  },
+  {
    "qid": "Q11643733",
    "commons": "Category:Tsubaki Nakato-jinja",
    "candidate": "Tsubaki Nakato Shrine",
    "enwiki": "Tsubaki Shrine"
+  },
+  {
+   "qid": "Q3541617",
+   "commons": "Category:Tsubaki Ōkami Yashiro",
+   "candidate": "Tsubaki Ōkami Yashiro Shrine",
+   "enwiki": "Tsubaki Grand Shrine"
   },
   {
    "qid": "Q3547609",
@@ -185,6 +215,12 @@
    "commons": "Category:Nagasakiken-Gokoku-jinja",
    "candidate": "Nagasakiken-Gokoku Shrine",
    "enwiki": "Nagasaki Gokoku Shrine"
+  },
+  {
+   "qid": "Q11434174",
+   "commons": "Category:Odara-Yosemiya site",
+   "candidate": "Odara-Yosemiya site Shrine",
+   "enwiki": "Ōdara Yosemiya"
   },
   {
    "qid": "Q20982935",
@@ -227,6 +263,18 @@
    "commons": "Category:Tamanooya-jinja",
    "candidate": "Tamanōya Shrine",
    "enwiki": "Tamanooya Jinja"
+  },
+  {
+   "qid": "Q11581011",
+   "commons": "Category:Naiku",
+   "candidate": "Naiku Shrine",
+   "enwiki": "Kotai jingu"
+  },
+  {
+   "qid": "Q11633343",
+   "commons": "Category:Geku",
+   "candidate": "Geku Shrine",
+   "enwiki": "Toyouke Daijingu"
   },
   {
    "qid": "Q1627016",
@@ -317,6 +365,12 @@
    "commons": "Category:Tori-Tenjyo-ji",
    "candidate": "Tori-Tenjyo-ji Temple",
    "enwiki": "Tenjō-ji"
+  },
+  {
+   "qid": "Q3547078",
+   "commons": "Category:Tanemakidaishi",
+   "candidate": "Tanemakidaishi Shrine",
+   "enwiki": "Tōrin-in (Naruto)"
   },
   {
    "qid": "Q3128068",
@@ -433,6 +487,12 @@
    "enwiki": "Tennō-ji (Taitō)"
   },
   {
+   "qid": "Q11489138",
+   "commons": "Category:Ohashi Kannon",
+   "candidate": "Ohashi Kannon Shrine",
+   "enwiki": "Ohashi Kannon-ji"
+  },
+  {
    "qid": "Q54152981",
    "commons": "Category:Komyoji Rurikoin",
    "candidate": "Komyoji Ruriko-in Temple",
@@ -463,6 +523,12 @@
    "enwiki": "Kiyotaki-ji (Tsuchiura)"
   },
   {
+   "qid": "Q11563955",
+   "commons": "Category:Todoroki Fudo-son",
+   "candidate": "Todoroki Fudo-son Shrine",
+   "enwiki": "Mangan-ji (Setagaya)"
+  },
+  {
    "qid": "Q11555353",
    "commons": "Category:Hōkanji",
    "candidate": "Hōkan-ji Temple",
@@ -481,136 +547,5 @@
    "enwiki": "Imakumano Kannon-ji"
   }
  ],
- "rejected": [
-  {
-   "qid": "Q3698846",
-   "commons": "Category:Onbashira Festival",
-   "enwiki": "Onbashira"
-  },
-  {
-   "qid": "Q5367406",
-   "commons": "Category:Kasugayama Primeval Forest",
-   "enwiki": "Kasugayama Primeval Forest"
-  },
-  {
-   "qid": "Q6102414",
-   "commons": "Category:Izumo Taishakyo Mission of Hawaii",
-   "enwiki": "Izumo Taishakyo Mission of Hawaii"
-  },
-  {
-   "qid": "Q10885171",
-   "commons": "Category:Izawa-no-miya",
-   "enwiki": "Izawa-no-miya"
-  },
-  {
-   "qid": "Q717682",
-   "commons": "Category:Kanda-Myojin",
-   "enwiki": "Kanda Shrine"
-  },
-  {
-   "qid": "Q840967",
-   "commons": "Category:Tsubaki Grand Shrine of America",
-   "enwiki": "Tsubaki Grand Shrine of America"
-  },
-  {
-   "qid": "Q7797685",
-   "commons": "Category:Imperial Palace Sanctuaries",
-   "enwiki": "Three Palace Sanctuaries"
-  },
-  {
-   "qid": "Q3571407",
-   "commons": "Category:Yamada Ten'man-gû",
-   "enwiki": "Yamada Tenmangū"
-  },
-  {
-   "qid": "Q3541617",
-   "commons": "Category:Tsubaki Ōkami Yashiro",
-   "enwiki": "Tsubaki Grand Shrine"
-  },
-  {
-   "qid": "Q11434174",
-   "commons": "Category:Odara-Yosemiya site",
-   "enwiki": "Ōdara Yosemiya"
-  },
-  {
-   "qid": "Q11581011",
-   "commons": "Category:Naiku",
-   "enwiki": "Kotai jingu"
-  },
-  {
-   "qid": "Q11633343",
-   "commons": "Category:Geku",
-   "enwiki": "Toyouke Daijingu"
-  },
-  {
-   "qid": "Q3193655",
-   "commons": "Category:Kasadera Kannon",
-   "enwiki": "Kasadera Kannon"
-  },
-  {
-   "qid": "Q2859467",
-   "commons": "Category:Arako Kannon",
-   "enwiki": "Arako Kannon"
-  },
-  {
-   "qid": "Q3547078",
-   "commons": "Category:Tanemakidaishi",
-   "enwiki": "Tōrin-in (Naruto)"
-  },
-  {
-   "qid": "Q3137192",
-   "commons": "Category:Shibamata Taishakuten",
-   "enwiki": "Shibamata Taishakuten"
-  },
-  {
-   "qid": "Q3080596",
-   "commons": "Category:Toyokawa Inari",
-   "enwiki": "Toyokawa Inari"
-  },
-  {
-   "qid": "Q11655359",
-   "commons": "Category:Mama Kannon",
-   "enwiki": "Mama Kannon"
-  },
-  {
-   "qid": "Q1504465",
-   "commons": "Category:Kawasaki Daishi",
-   "enwiki": "Kawasaki Daishi"
-  },
-  {
-   "qid": "Q1621882",
-   "commons": "Category:Sendai Daikannon",
-   "enwiki": "Sendai Daikannon"
-  },
-  {
-   "qid": "Q11489138",
-   "commons": "Category:Ohashi Kannon",
-   "enwiki": "Ohashi Kannon-ji"
-  },
-  {
-   "qid": "Q11571731",
-   "commons": "Category:Sayama Fudoson",
-   "enwiki": "Sayama Fudōson"
-  },
-  {
-   "qid": "Q11590468",
-   "commons": "Category:Shinsenen",
-   "enwiki": "Shinsenen"
-  },
-  {
-   "qid": "Q11563955",
-   "commons": "Category:Todoroki Fudo-son",
-   "enwiki": "Mangan-ji (Setagaya)"
-  },
-  {
-   "qid": "Q11594359",
-   "commons": "Category:Fukuishi Kannon",
-   "enwiki": "Fukuishi Kannon"
-  },
-  {
-   "qid": "Q102769019",
-   "commons": "Category:Gikousan Yanodou",
-   "enwiki": "Gikosan Yanodo Temple"
-  }
- ]
+ "rejected": []
 }

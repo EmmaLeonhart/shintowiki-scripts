@@ -140,19 +140,36 @@ def test_fullwidth_disambiguator_is_stripped():
     assert cn.normalize("Hikawa-jinja（Ōmiya）") == "Hikawa Shrine"
 
 
-# ─────────────── conservatism: not-in-scope → None ───────────────
+# ─────────────── the default: no suffix → append " Shrine" ───────────────
 
-def test_a_church_returns_none():
-    assert cn.normalize("Matthäuskirche") is None
+def test_a_name_with_no_recognised_suffix_gets_shrine_appended():
+    # Emma 2026-07-10: the established default. Buddhist devotional names ride it too.
+    assert cn.normalize("Arako Kannon") == "Arako Kannon Shrine"
+    assert cn.normalize("Kawasaki Daishi") == "Kawasaki Daishi Shrine"
+    assert cn.normalize("Category:Shibamata Taishakuten") == "Shibamata Taishakuten Shrine"
 
 
-def test_a_deity_name_returns_none():
-    assert cn.normalize("Amaterasu") is None
+def test_the_default_shrine_matches_enwiki_after_the_grader_strips_it():
+    # "Arako Kannon Shrine" vs enwiki "Arako Kannon": grader strips " Shrine" → same reading.
+    import report_commons_label_accuracy as rep
+    assert rep.bucket(cn.normalize("Arako Kannon"), "Arako Kannon") == "exact"
 
+
+def test_circumflex_long_vowel_folds_to_a_macron():
+    assert cn.normalize("Tôfuku-ji") == "Tōfuku-ji Temple"
+    assert cn.normalize("Yamada Ten'man-gû") == "Yamada Ten'man-gu Shrine"
+
+
+# ─────────────── still None: empty / kanji ───────────────
 
 def test_an_empty_name_returns_none():
     assert cn.normalize("") is None
     assert cn.normalize("Category:") is None
+
+
+def test_a_kanji_commons_name_returns_none():
+    # No Latin letters → out of scope for the romaji stage (the kana stage handles it).
+    assert cn.normalize("厳島神社") is None
 
 
 def test_a_bare_suffix_with_no_stem_returns_none():

@@ -66,10 +66,24 @@ def _macron_free(s: str) -> str:
     return s.translate(str.maketrans("āīūēōĀĪŪĒŌ", "aiueoAIUEO"))
 
 
+# Some Commons names use a circumflex for a long vowel (Ten'man-gû, Tôfuku-ji). Fold it to
+# the macron the house style uses (Emma, 2026-07-10).
+_CIRCUMFLEX = str.maketrans("âêîôûÂÊÎÔÛ", "āēīōūĀĒĪŌŪ")
+
+
 def normalize(commons_name: str) -> Optional[str]:
-    """Commons category name → house English label, or None if not confidently in scope."""
-    name = _strip(commons_name or "")
+    """Commons category name → house English label.
+
+    Returns None only for an empty name or one with no Latin letters (a kanji Commons name
+    belongs to the kana stage upstream). Otherwise ALWAYS returns a label: when no shrine/
+    temple suffix is recognised, it appends " Shrine" (Emma, 2026-07-10: "if you cannot find
+    the word shrine or something in it then you just add ' Shrine' at the end of it" — this
+    is how Buddhist devotional names like Kannon/Daishi go through the pipeline too).
+    """
+    name = _circumflex_to_macron(_strip(commons_name or ""))
     if not name:
+        return None
+    if not any("a" <= c.lower() <= "z" for c in name):   # kanji Commons name → kana stage
         return None
 
     low = _macron_free(name).lower()
@@ -111,7 +125,12 @@ def normalize(commons_name: str) -> Optional[str]:
                 return None
             return "{}-{} Shrine".format(transcribe_long_vowels(stem), ending)
 
-    return None
+    # No suffix recognised — the established default is to append " Shrine".
+    return "{} Shrine".format(transcribe_long_vowels(name))
+
+
+def _circumflex_to_macron(s: str) -> str:
+    return s.translate(_CIRCUMFLEX)
 
 
 def _shrine(stem: str, house: str) -> Optional[str]:
