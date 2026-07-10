@@ -4,6 +4,52 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — a caution gate around a Wikidata editor, and what the evidence actually showed
+
+Emma flagged `ブルーノ・プラス` as a likely conflict and asked for analysis before any policy.
+`docs/bruno_plus_analysis_2026-07.md` is the result; `conflict_gate.py` is the policy.
+
+**Her hunch about labels was right, and it mattered.** Of their 197 term edits, **181 are
+Japanese** descriptions and only 16 are English. They are not competing with our English-label
+programme. Had we not checked, the obvious assumption — a high-volume editor overwriting our
+labels — would have been wrong.
+
+**But they are not merely adding better labels.** 38 claim removals across 17 items, and two
+items were destroyed rather than cleaned up. `Q28069431` (Kikuna Shrine) is now 0 claims and 0
+sitelinks, an empty husk still carrying the `fr`/`id` labels we added in 2025; 菊名神社 moved to
+`Q134926804` with only 6 claims, so five `P825` deities, the image, the phone numbers and the
+website did not all survive. `Q123044569` (Kamo Shrine) was **repurposed** — every claim and
+label stripped, then re-created as 大美和神社, a different shrine at different coordinates.
+Both had been edited by Immanuelle.
+
+**161 of their 215 items sit in our executable batches.** Two collisions were live at the moment
+of writing: a Ukrainian description bound for the husk, and a `P571` bound for the repurposed
+item. Either would have looked to them like a bot reverting them.
+
+**Their jawiki talk page is the real evidence**, and Emma cannot read Japanese. It records a 2023
+sockpuppetry question, a warning for renaming without consensus, three copyright warnings on
+uploads, and — April 2026 — an unresolved dispute about **shrine articles** in which they refuse
+correction, dismiss `プロジェクト:神道` as "an exaggeration", and write that shrines without a
+resident priest 「もともと、そんな神社は記事立項してはいけません」 — should never have had
+articles created at all. That is the class of shrine this project exists to document.
+
+**The gate.** Two independent mechanisms in `direct_daily_edits`, the single path to Wikidata:
+a global pause (7 quiet days after their last edit, floor 2026-07-17, cap 2026-08-08) and a
+permanent per-item freshness rule (never edit what another human touched in the last 7 days).
+Three attention signals override the cap — the jawiki 井戸端 gives an **indefinite** hold on mere
+presence of the name (threads there expire at 90 days and get necroed, so a dated pause is the
+wrong shape), while talk-page activity and noticeboard mentions each give 30 days.
+
+Everything fails closed: no state file means "they edited today"; an unreachable 井戸端 means a
+hold; an item whose history will not load is not edited.
+
+Two pre-existing exit-code tests began passing **vacuously** once the gate short-circuited
+`main()` before login. Rather than delete them, they now open the gate at its seam, and a new
+test asserts `main()` never reaches `wd_login()` while the gate is shut.
+
+Read-only throughout. No revert, no restoration, no contact. 329 tests pass.
+---
+
 ## 2026-07-10 — 22 false founding dates withdrawn from a batch I had just made executable
 
 Regenerating `souken_p571.txt` with the fixed parsers drops it from 4,119 to 4,112 lines:

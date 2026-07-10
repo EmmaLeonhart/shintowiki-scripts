@@ -195,7 +195,10 @@
       "Read(//c/tmp/**)",
       "Bash(unzip -o run-log.zip -d run-log/)",
       "Bash(env)",
-      "Bash(node -e \"const fs = require\\('fs'\\); const html = fs.readFileSync\\('_site/wikihistory.html', 'utf8'\\); const scriptStart = html.indexOf\\('<script>'\\); const scriptEnd = html.indexOf\\('</script>'\\); const body = html.slice\\(scriptStart+8, scriptEnd\\); try { new Function\\(body\\); console.log\\('JS parses OK'\\); } catch\\(e\\) { console.log\\('JS ERROR:', e.message\\); }\")"
+      "Bash(node -e \"const fs = require\\('fs'\\); const html = fs.readFileSync\\('_site/wikihistory.html', 'utf8'\\); const scriptStart = html.indexOf\\('<script>'\\); const scriptEnd = html.indexOf\\('</script>'\\); const body = html.slice\\(scriptStart+8, scriptEnd\\); try { new Function\\(body\\); console.log\\('JS parses OK'\\); } catch\\(e\\) { console.log\\('JS ERROR:', e.message\\); }\")",
+      "Bash(python -m pytest tests -q)",
+      "Bash(cp souken_p571.txt /tmp/souken_p571_before.txt)",
+      "Bash(cp souken_p571.txt \"C:/Users/IMMANU~1/AppData/Local/Temp/claude/souken_p571_before.txt\")"
     ],
     "deny": [],
     "ask": []

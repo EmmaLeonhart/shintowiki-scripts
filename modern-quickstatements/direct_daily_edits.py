@@ -19,6 +19,8 @@ import sys
 import time
 import requests
 
+import conflict_gate
+
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
@@ -242,6 +244,56 @@ def parse_qs_line(line):
         "references": references,
         "is_removal": is_removal,
     }
+
+
+def load_conflict_watch():
+    """The three attention signals, from conflict_watch.state.
+
+    Refreshed by `watch_conflicting_editor.py` in CI. If the file is missing or
+    unreadable we do NOT fall through to editing: we assume the watched user edited
+    today, which keeps the drip shut until the watcher runs again. Failing closed is
+    the whole point of a caution gate.
+    """
+    today = datetime.datetime.now(datetime.timezone.utc).date()
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        "conflict_watch.state")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            state = json.load(fh)
+    except Exception as exc:
+        print("conflict_watch.state unreadable ({}) - failing closed".format(exc))
+        return {"last_edit": today, "talk_activity": None,
+                "noticeboard_mention": None, "project_chat_hold": False}
+
+    def as_date(key):
+        raw = state.get(key)
+        return datetime.date.fromisoformat(raw) if raw else None
+
+    return {"last_edit": as_date("last_watched_edit") or today,
+            "talk_activity": as_date("talk_activity"),
+            "noticeboard_mention": as_date("noticeboard_mention"),
+            "project_chat_hold": bool(state.get("project_chat_hold"))}
+
+
+def item_is_editable(qid, today=None):
+    """GATE 2 — per-item freshness. Never edit what someone else just touched.
+
+    Emma: "I want to have the freshness constraint of no editing until something
+    hasn't been edited by other users for a week." Unlike the global pause this is
+    permanent and about nobody in particular: it removes the whole class of edit
+    conflict with any human contributor.
+
+    A lookup failure means we do not know, so we decline — same fail-closed rule.
+    """
+    today = today or datetime.datetime.now(datetime.timezone.utc).date()
+    try:
+        revisions = conflict_gate.fetch_item_revisions(qid)
+    except Exception as exc:
+        return False, "revision lookup failed ({})".format(exc)
+    if conflict_gate.is_item_fresh_enough(revisions, today):
+        return True, None
+    who = conflict_gate.blocking_editor(revisions, today)
+    return False, "{} edited it on {}".format(who[0], who[1]) if who else "recently edited"
 
 
 def value_to_api_json(parsed_value):
@@ -514,6 +566,19 @@ def execute_line(session, csrf, parsed):
 def main():
     print("=== Direct Wikidata API Edits (QS fallback) ===\n")
 
+    # GATE 1 — global pause. See conflict_gate.py and
+    # docs/bruno_plus_analysis_2026-07.md. Emma 2026-07-10, on ブルーノ・プラス:
+    # "This is maximum caution with this person … I think that this person is an LTA."
+    # A paused run is a SKIP, not a failure: nothing was attempted, so nothing broke.
+    today = datetime.datetime.now(datetime.timezone.utc).date()
+    watch = load_conflict_watch()
+    reason = conflict_gate.pause_reason(
+        today, watch["last_edit"], watch["talk_activity"],
+        watch["noticeboard_mention"], watch["project_chat_hold"])
+    if reason:
+        print("SKIPPED: {}".format(reason))
+        return 0
+
     all_lines = read_all_lines()
     if not all_lines:
         print("No QS lines found in any atomic file. Nothing to do.")
@@ -530,6 +595,7 @@ def main():
 
     succeeded = 0
     failed = 0
+    skipped = 0
 
     rate_limited = False
     for i, line in enumerate(selected, 1):
@@ -548,6 +614,14 @@ def main():
             action = "REMOVE" if parsed["is_removal"] else "EDIT"
             tag = f" (pair {j+1}/{len(sublines)})" if len(sublines) > 1 else ""
             print(f"[{i}/{len(selected)}] {action}{tag}: {sub}")
+
+            # GATE 2 — per-item freshness. Counted as neither success nor failure:
+            # declining to edit is the correct outcome, and must not redden the run.
+            ok, why = item_is_editable(parsed["entity"], today)
+            if not ok:
+                print(f"  SKIP: {parsed['entity']} — {why}")
+                skipped += 1
+                break
 
             try:
                 success, msg = execute_line(session, csrf, parsed)

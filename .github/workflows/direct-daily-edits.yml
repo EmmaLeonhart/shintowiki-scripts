@@ -33,6 +33,16 @@ jobs:
           path: modern-quickstatements
         continue-on-error: true
 
+      # Refreshes conflict_watch.state, which direct_daily_edits reads to decide
+      # whether it may run at all. Read-only: it never edits or posts anywhere.
+      # If this step fails the state file is stale or absent, and the editor
+      # fails CLOSED — that is the intended behaviour, so `continue-on-error`.
+      # See docs/bruno_plus_analysis_2026-07.md.
+      - name: Check for on-wiki attention to the watched editor
+        working-directory: modern-quickstatements
+        run: python watch_conflicting_editor.py
+        continue-on-error: true
+
       - name: Execute edits via Wikidata API
         working-directory: modern-quickstatements
         env:
