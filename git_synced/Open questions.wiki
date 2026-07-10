@@ -2,37 +2,36 @@ __NOTOC__
 
 == Open questions ==
 
-''These are the things we reported on over 2026-07-09/10 that are waiting on you. Each links a full write-up in <code>docs/</code>. Strike or answer inline and the bot deletes the bullet once acted on.''
+''A working conversation. Your notes are plain; my replies are marked '''→'''. Items get deleted once settled. (Palace-kami "ignore" and the Izumo split "you're taking it" are removed per your notes.)''
 
-'''Engishiki lists — decisions you deferred ("report only, decide later")'''
-* '''150 confirmed Shikinaisha no list names.''' 84 are the same shrine twice — a living-shrine item and the separate 927-entry item the list already names (matched by shared Kokugakuin id, exact name, or old-vs-new spelling). 66 have no twin at all. Two questions: link/merge the 84 pairs, and are the 66 mis-tagged modern shrines or entries the lists are missing? (<code>docs/orphan_shikinaisha_2026-07.md</code>)
-* * so can you elaborate a bit more on this
-* '''Izumo names one item for two entries.''' 坐韓国伊大弖神社 covers both 意宇郡 entry 28 (in 揖夜神社's grounds) and entry 39 (伊'''太'''弖, in 佐久多神社's). Ordinal 39 is an empty hole. Splitting it needs a '''new item''' — not something the QuickStatements pipeline can make. (<code>docs/engishiki_list_defects_2026-07.md §1</code>)
-* I’ll work on this move to my actiond thing
-* '''The 17 palace kami.''' The Imperial Palace list names four grouped items (八神殿, 座摩神, 御門巫祭神 八座, 生島巫祭神 二座) but you also hold an item for each of the 17 individual deities (Kokugakuin 180542–180558). Both models say true things; which is canonical? (<code>docs/engishiki_list_structure_2026-07.md</code>)
-* ignore this it is unresolved ontology
-* '''22 duplicated "part of" statements''' on named parts (the old import damage; 天王宮… holds three). QuickStatements removes by value, so it cannot delete one identical twin without risking the other. Only a browser remove-and-re-add fixes these. (<code>docs/ronsha_list_membership_2026-07.md</code>)
-* Yeah this is a pipeline problem. We are supposed to first remove and then add
+'''The big theme: your "sequential misc" idea is the key.''' Most of what's below has been stuck in "unregistered, run by hand" for '''one reason''': the daily drip runs lines in '''random order''', which is unsafe for any remove-then-add or add-then-remove pair (the remove could fire first and leave a shrine blank). A '''sequential misc''' — a file that runs top-to-bottom, one edit per run, never interleaved — makes every such pair safe and un-sticks all of it. It needs a small design (it changes how the daily editor picks lines) but it is the right answer. Say the word and I'll design it.
 
-'''Hand edits only you can make (the add half is already queued in the drip)'''
-* '''Awa list:''' delete the "has part → 下立松原神社" statement at ordinal '''3''' on 安房国の式内社一覧. Entry 3 is 天神社; a piped link was imported over it. The add of 天神社 at ordinal 3 is queued. Value-shared with the correct ordinal-5 statement, so the delete cannot be a QuickStatement. (<code>docs/engishiki_list_defects_2026-07.md §1</code>)
-* explain this more
+'''150 confirmed Shikinaisha no list names''' — you asked me to elaborate.
+: '''→''' A "confirmed Shikinaisha" is a shrine confidently identified as one of the 927 register entries (unlike a Ronsha, which is a disputed candidate). 2,713 are correctly named by a list; 150 are not. Of the 150:
+:* '''84 are the same shrine as two items''' — one item for the living shrine, a separate item for the 927 register entry, and the list names the register-entry one. So the living-shrine item only ''looks'' unnamed because its twin is the one on the list. Matched three ways: shared Kokugakuin id, identical Japanese name, or old-vs-new kanji spelling. '''Your call:''' link the 84 pairs ("these two are the same shrine") or merge them.
+:* '''66 have no twin''' — either modern shrines mis-tagged as register entries, or genuine entries the lists are missing. '''Your call:''' which. I can hand you the full 84 + 66 as a browsable table.
 
-'''Batches waiting for you to run them by hand''' (remove-only, unregistered, each gated on its add having already landed)
+'''22 duplicated "part of" statements''' — you said "pipeline problem, first remove then add".
+: '''→''' Exactly. It's the same shape as Takano and the province/address removals, and the sequential misc above fixes all of them together. Nothing else needed once that exists.
 
-So these actually need me or can they just be added to the misc tasks I’m kinda confused and give me the sequential quickstatements opened in browser if you can
+'''Awa list hand edit''' — you asked to explain more.
+: '''→''' The 927 register's Awa entry #3 is a shrine called '''Tenjinsha (天神社)'''. On the jawiki list article, that entry's link was written as a piped link pointing at a ''different'' shrine, '''Shimotachimatsubara (下立松原神社)''', and the import followed the link instead of the entry name. So Wikidata now says Awa entry #3 ''is'' Shimotachimatsubara — wrong (Shimotachimatsubara is really entry #5, correctly there too). The '''add''' putting Tenjinsha at #3 is already queued. The leftover is '''deleting''' the wrong statement (Shimotachimatsubara at #3), which can't be a QuickStatement because Shimotachimatsubara sits on that list twice with the same value, so a value-match might take the correct #5. Needs a by-hand delete of that one statement, or the sequential misc.
 
-hmm I think we need a sequential edits misc thing perhaps repurposing the misc to run sequentially one edit a day or something
-* '''List membership:''' 2,236 removals stripping the list link from the 2,151 Ronsha no list names. (<code>generate_list_membership_removals.py</code>)
-* explain this
-* '''Province exclusions:''' script 2, after the drip works through the two corrections. (<code>generate_province_exclusion_removals.py</code>)
-* explain this
-* '''Takano address merge:''' script 2, once the merged 〒708-0013 address lands. (<code>generate_ronsha_address_merge_removals.py</code>)
-* add to misc with adding new address or even just give me it right here
+'''List membership (2,236 removals)''' — you asked to explain.
+: '''→''' These strip the false "part of a list" claim off the 2,151 candidate shrines the lists never actually name (leftover from the old piped-link import damage). '''These are pure removals — no add, no ordering risk''' — so unlike the others, this one can just be registered and dripped safely today. '''Want me to register it?'''
 
-'''Needs you to explain what it is'''
-* '''Kokugakuin id matcher''' — you asked to explain this task before it is decided. (<code>match_kokugakuin_ids.py</code>, <code>kokugakuin_id_report.txt</code>)
-* give more context
+'''Province exclusions''' — you asked to explain.
+: '''→''' These record "this list does ''not'' include shrine X" (a real, sourced fact). Script 2 is the removal half of an add-first move and is SPARQL-gated; it currently emits '''nothing''' because the adds haven't landed (the drip's been frozen). Nothing to do until they land — then it drips or goes in the sequential misc.
+
+'''Takano address merge''' — you asked for it right here. The shrine's address was written two ways, each missing what the other had; line 1 is the merged full address, lines 2–3 drop the partials. In order (add first). The add is already in misc; these two removes are the leftover:
+<pre>
+Q11673131	P6375	ja:"〒708-0013 岡山県津山市二宮601"
+-Q11673131	P6375	ja:"〒708-0013 津山市二宮601"
+-Q11673131	P6375	ja:"岡山県津山市二宮"
+</pre>
+
+'''Kokugakuin id matcher''' — you asked for more context.
+: '''→''' Every real 927 register entry has an id in the Kokugakuin University shrine database; some of your entry items are missing it. The matcher tries to fill it by matching the shrine's name against the database's entry titles. The catch: name-matching alone isn't safe — two adjacent database entries can describe the same shrine, so a name match can attach the ''wrong'' id. It cut the missing-id set from 94 to 18 but found '''zero''' safe to add on its own. '''Your call:''' is name-matching good enough, or do the 18 need per-item eyes? Nothing runs until you say.
 
 == Wiki-based queue ==
 
