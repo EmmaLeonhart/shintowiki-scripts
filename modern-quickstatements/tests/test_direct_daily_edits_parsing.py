@@ -89,14 +89,18 @@ def test_every_registered_file_has_an_executable_line():
     assert dead == [], "registered but non-executable: {}".format(dead)
 
 
-def test_the_two_tab_files_now_execute():
+def test_the_tab_files_have_no_dead_lines_if_repopulated():
+    """recreation_relations / durability_backlinks are tab-separated, emitted by one-off
+    local generators. Their 36 statements all landed on Wikidata (verified live
+    2026-07-10) so the files are now empty. If a generator ever refills them, every line
+    must still parse — only comment lines may drop out. Empty passes trivially; a future
+    dead line (e.g. a reversion to a form the parser can't read) fails."""
     for f in ("recreation_relations.txt", "durability_backlinks.txt"):
         path = os.path.join(HERE, f)
         if not os.path.exists(path):
             continue
-        lines = [l.strip() for l in open(path, encoding="utf-8") if l.strip()]
-        parsed = [d.parse_qs_line(l) for l in lines]
-        assert any(_executable(p) for p in parsed), f
-        # only comment lines are allowed to drop out
-        for l, p in zip(lines, parsed):
-            assert p is not None or l.startswith("#"), (f, l)
+        for line in open(path, encoding="utf-8"):
+            line = line.strip()
+            if not line:
+                continue
+            assert d.parse_qs_line(line) is not None or line.startswith("#"), (f, line)
