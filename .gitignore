@@ -19,3 +19,8 @@ shinto_miraheze/manual_import_local.py
 # cdo corpus fetch log (temp)
 shinto-label-generator/cdo_corpus_fetch.log
 .gstack/
+
+# Historical province polygons (CODH, CC BY-NC). Cached locally, never committed
+# and never republished — only the derived point-in-polygon fact leaves the box.
+# See docs/province_shapefiles.md.
+modern-quickstatements/.province_cache/

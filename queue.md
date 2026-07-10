@@ -56,13 +56,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   browse-render the Kokugakuin entry page and read its 現社名など（１..N） ordering, which per
   Emma IS the ranking ground truth (method + Q135040778 worked example in
   `docs/kokugakuin_anomaly_review_scope_2026-07.md`). Emma-led, tool-assisted.
-- [ ] **Kokugakuin P13677 matcher — BUILT + RAN 2026-07-08, finding needs Emma**:
-  `modern-quickstatements/match_kokugakuin_ids.py` (strict exact-label match, district-blocked
-  scan, 417-title index cached in `kokugakuin_title_index.json`). The no-ID set is down to 18
-  (was 94). ZERO safe auto-adds: every name-matching entry id is ALREADY HELD, usually by several
-  items (candidates carry their entry's id) — the 18 look like surplus/duplicate items from the
-  two-run desync, i.e. merge decisions, not missing ids. Per-item review sheet:
-  `kokugakuin_id_report.txt` (ENTRY-TAKEN rows list current holders). Emma's call: merge vs re-id.
 - [ ] **jawiki infobox imports — Emma's modeling calls only** (all mechanical builds SHIPPED
   2026-07-08: saijin 2,362 / honzon 760 / souken 4,118 / kofun 1,036 / P3225 2; 社格-ref
   structurally empty). Waiting on Emma: 伝-dates via P1480 "presumably" (8,837 skipped fields),
@@ -112,91 +105,59 @@ cited-vs-uncited signal is exhausted). Of 46 Ronsha items still holding more tha
 * **`Q3530344` Toga Shrine** — both addresses carry only `P143` (imported from jawiki), which is not
   a source. They are its 里宮 and 奥宮.
 
+**Emma's method, metabolised from the wiki queue 2026-07-09:**
+
+> *"source conflict is rare and needs reading them. Two uncited Japanese sources is almost
+> certainly from the kokugakuin database. If they have only one database link then check which
+> address is on the database page. Keep the one that is and not the one that isn't. If there's
+> two database links or zero then hold — this is another residual."*
+
 - [ ] Per item, open the Kokugakuin entry page (`P13677` → `https://jmapps.ne.jp/kokugakuin/det.html?data_id=$1`)
-  and read the address off it. Report before editing; do not guess a rule and drip it.
+  and read the address off it. Exactly ONE `P13677` → keep the address that matches the database
+  page, drop the other. TWO or ZERO `P13677` → hold, it's a further residual. Report before
+  editing; do not guess a rule and drip it.
 
-## LAST IN THE QUEUE — province exclusion
+## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED 2026-07-09; batch BUILT)
 
-> ### !!! STOP GATE !!!
-> **Run an `AskUserQuestion` with Emma BEFORE attempting any part of this task.**
-> Emma 2026-07-09: *"the entire point of asking these questions is it's supposed to stop everything
-> so that you don't do anything destructive."* She asked for this gate twice. An agent walked past
-> it once already, drifted here from an unrelated queue item, and started building a removal batch.
-> **This task ADDS statements. It removes nothing, ever.**
+The gate was run. Emma answered seven `AskUserQuestion` blocks; the shapefile step is solved and
+scripts 1 + 2 are built and tested (30 tests). What remains is Emma running the batch.
 
-**Emma's statement of the task, verbatim (2026-07-09):**
+**Shipped:** `docs/province_shapefiles.md` (CODH 旧国・旧郡境界データセット, CC BY-NC, cached in
+gitignored `.province_cache/`, geometry never committed and never uploaded);
+`modern-quickstatements/province_geometry.py` (85 features → 68 classical provinces: the 1869
+Mutsu/Dewa splits unioned back, Hokkaidō + Ryūkyū dropped, 對馬 aliased);
+`generate_province_exclusions.py` (**ADD-only**, 382 QS lines: 113 new `P3113` exclusions +
+258 `P3831` role backfills); `generate_province_exclusion_removals.py` (**script 2**, SPARQL-gated,
+emits nothing until the matching add lands); `docs/province_exclusion_residual_2026-07.md`.
 
-> *"I'm not trying to get you to remove anything. I'm trying to get you to add links to the Beppyō
-> Shrines and Kokushi Genzaisha, and Shikigeisha that are located within the province. … the idea
-> here is essentially that the excluded thing lists the shrines that would be in that list because
-> they're a Beppyō shrine or whatever, except they didn't exist back then or whatever. … it involves
-> shape files of the provinces and all these things. You need a state file of the province, and then
-> you need to cross-reference the coordinates of all members of these classes with the state file in
-> order to find which ones are within the future jurisdiction of the province."*
+**Model, per Emma:** `LIST|P3113|shrine|P3831|<every class it holds>|P1013|<criterion>`, where the
+criterion is `Q3877969` non-existence for Beppyō-only shrines and `Q110240047` omission for anything
+shikigesha/kokushi-genzaisha (both of which *existed* in 927 by Wikidata's own definitions).
 
-> *"This is such a hard task that I don't realistically feel we could do it today, just to be clear."*
-> *"I put it at the end of the queue"* — and it stays there.
+- [ ] **Emma: run the script-1 browser batch** (one tab, 382 lines, ~28 kB URL):
+  `python generate_province_exclusions.py --open`
+- [ ] **Then run script 2** — it stays a no-op until SPARQL confirms the adds landed:
+  `python generate_province_exclusion_removals.py --print-url` (removes exactly 2 wrong-province
+  statements: Himure Hachimangū off Etchū, Shibi Shrine off Izumi).
+- [ ] The seven no-class exclusions need **no general criterion** — they are four different
+  problems (three are themselves `P31=Shikinaisha`; one is a multi-topic Wikimedia article; one is
+  on the wrong province entirely). Per-item decisions are tabulated in the residual doc.
+- [ ] The 河内 polygon is provably wrong across southern Osaka (it swallows Sumiyoshi Taisha, the
+  *ichinomiya of Settsu*). 21 borderline assignments were emitted anyway on Emma's instruction and
+  are listed in the residual doc so they can be found again.
 
-### The data model — VERIFIED on Yamashiro (Q11467693) and Yamato (Q11433427), 2026-07-09
+## LAST — Kokugakuin P13677 matcher: Emma to explain, then decide
 
-Everything already exists. Nothing here needs inventing.
+Moved to the tail 2026-07-09 at Emma's request: *"I do not understand what you are asking here …
+put [it] at the end of the queue so that I can explain it later on … I don't even understand what
+this actual thing even is."* Not parked — it gets done, once she has explained what she wants.
 
-```
-LIST item (e.g. Q11467693 "List of Shikinaisha in Yamashiro Province")
-  P361  part of              -> Q11064932  Engishiki Jinmyōchō     <-- THIS is how you find the lists
-  P1001 applies to jurisdiction -> Q749276 Yamashiro Province      <-- the province link
-  P3113 does not have part   -> <excluded shrine>                  <-- THE STATEMENT TO ADD
-          P3831 object of statement has role -> Q10898274 Beppyō Shrine
-                                             or Q118469772 shikigesha (式外社)
-```
+`modern-quickstatements/match_kokugakuin_ids.py` (strict exact-label match, district-blocked scan,
+417-title index in `kokugakuin_title_index.json`) cut the no-ID set from 94 to 18. Zero safe
+auto-adds: every name-matching entry id is already held, usually by several items. Review sheet:
+`kokugakuin_id_report.txt`.
 
-* **`P3113` sits on the LIST, not on the shrine.** (Two earlier write-ups had this backwards.)
-* **`P3831`** carries the *reason* the shrine is excluded — its class.
-* **`P1001`** gives the province. **All 69 lists already have it.** (An earlier note claimed "neither
-  list links to its province" — that was wrong; only P131/P276/P17 had been checked.)
-
-### Current state (queried 2026-07-09)
-
-| | |
-|---|---|
-| Engishiki Jinmyōchō lists (`?l wdt:P361 wd:Q11064932`) | **69** |
-| …carrying `P1001` (province) | **69 (all)** |
-| …carrying at least one `P3113` | **50** |
-| Total `P3113` statements on those lists | **287** |
-| …of which carry the `P3831` role qualifier | **only 22** (15 Beppyō, 7 shikigesha) |
-
-### The candidate pool to classify (non-Shikinaisha, with `P625` coordinates)
-
-| Class | QID | How it is typed | Count |
-|---|---|---|---|
-| Beppyō Shrine | `Q10898274` | **`P13723`** (a *ranking*), NOT `P31` | **236** |
-| Kokushi genzaisha | `Q118304363` | `P31` | **62** |
-| Shikigesha (式外社) | `Q118469772` | `P31` | **9** |
-
-Note the trap: `P31 = Q10898274` has **zero** instances. Beppyō is a shrine *ranking* (`P13723`).
-
-### THE HARD PART — and it is genuinely hard
-
-"Within the province's jurisdiction" is a **point-in-polygon test** against **historical province
-(令制国 / kuni) boundaries**, which do not correspond to modern prefectures.
-
-* **All 69 provinces have `P625` — a single centroid POINT.**
-* **ZERO of them have `P3896` (geoshape).** There is no polygon on Wikidata to test against.
-
-So the work is, in order:
-
-1. Obtain historical province boundary polygons (shapefile / GeoJSON). See
-   [`docs/province_shapefiles.md`](docs/province_shapefiles.md).
-2. Map each polygon to its Wikidata province QID (the 69 `P1001` targets).
-3. For each of the ~307 candidate shrines, point-in-polygon its `P625` into a province.
-4. Emit **ADD-only** QuickStatements: `<list>|P3113|<shrine>|P3831|<class QID>`.
-5. Separately consider backfilling `P3831` onto the **265 unqualified** existing `P3113` statements.
-
-### Rules
-
-- [ ] **ADD ONLY.** No `-` lines. Ever. Emma has said "don't remove anything" three times.
-- [ ] Run the `AskUserQuestion` STOP GATE first.
-- [ ] Do not start this because other items look blocked. It is last on purpose.
+- [ ] Emma explains what this task is; then merge vs re-id gets decided.
 
 ## Pinned tail (keep last, always)
 

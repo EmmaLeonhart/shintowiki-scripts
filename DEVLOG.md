@@ -4,6 +4,61 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-09 — the province exclusion task, and the polygon that lies about Sumiyoshi Taisha
+
+The queue pointed at `docs/province_shapefiles.md` for weeks. It had never existed in any commit on
+any branch — the session that was going to write it was killed. So the first real finding was that
+there was no shapefile context to recover, only a promise.
+
+The data exists: CODH's `旧国・旧郡境界データセット` (DOI 10.20676/00000454), 85 per-province GeoJSON
+polygons, CC BY-NC. Emma's call: use it, geometry stays local. The cache is gitignored, nothing is
+republished, and only the derived fact — this coordinate is inside that province — leaves the box.
+
+**The dataset is Bakumatsu–Meiji, not 927.** Mutsu appears split into five provinces and Dewa into
+two, and it carries twelve Hokkaidō/Ryūkyū provinces that have no Engishiki list. Unioning the seven
+back and dropping the twelve yields exactly 68 classical provinces, which is exactly what the 69
+lists cover once Heian-kyō — the capital, not a province — is set aside. `build_province_index()`
+asserts that arithmetic instead of trusting it.
+
+**"Did not exist" was the wrong criterion for 71 of the candidates.** Wikidata defines 式外社 as "a
+shrine that *existed in 927* but was not recorded in the Engishiki" and 国史見在社 as "recorded in the
+Rikkokushi but not the Engishiki". Both were extant. Only a Beppyō-only shrine can be a post-927
+foundation. Emma, shown this: *"only ones that are just beppyo shrines did not exist at the time. If
+something is beppyo and shikigesha it gets criteria of unrecorded."* So `P1013` is `Q3877969`
+non-existence for Beppyō alone and `Q110240047` omission otherwise.
+
+**Two bugs, both caught by looking rather than assuming.**
+
+The three-branch SPARQL `UNION` returns one row per matching class, so the six shrines holding two
+classes were processed twice — 300 rows for 294 shrines, and five duplicated line-pairs.
+
+Then the six shrines already excluded on a *different* province's list than their coordinates
+indicate. Emma's instruction was to remove them from the wrong province and add them to the right
+one. Before writing a single `-` line I probed the polygons against known landmarks, and
+**Sumiyoshi Taisha — the ichinomiya of Settsu — falls inside the 河内 polygon.** Kawachi
+over-extends westward across Sumiyoshi-ku and Suminoe-ku. Osaka Gokoku Shrine's existing Settsu
+statement was therefore *correct* and my polygon was wrong; the instructed removal would have
+deleted the right answer. Shown the probe, Emma cut it to the two unambiguous errors: Himure
+Hachimangū (Ōmi, 21 km from any other province, sitting on the Etchū list) and Shibi Shrine
+(coordinates in Satsuma, sitting on Izumi Province's list ~600 km away).
+
+Those removals ship as **script 2**, per the add-first/remove-later rule: it queries Wikidata and
+emits nothing until the corrected statement has actually landed. Run today it holds both back and
+writes an empty file, which is the correct pre-add state.
+
+The seven `P3113` statements whose shrine holds none of the three classes do **not** want a general
+criterion. They are four different problems: three are themselves `P31 = Shikinaisha`, one is a
+Wikimedia multi-topic article about shrines in two cities, one is described as a Hyōgo shrine while
+sitting on the Musashi list, one is a bare shrine. Tabulated, not edited.
+
+Script 1 emits 382 ADD-only lines (113 new exclusions, 258 role backfills). `assert_add_only()`
+refuses to emit a `-` line from any code path. 30 tests; 209 pass across `modern-quickstatements/`.
+
+Residual, including the 21 borderline assignments Emma chose to emit anyway:
+`docs/province_exclusion_residual_2026-07.md`.
+
+---
+
 ## 2026-07-09 — the three batches shipped today were never going to run
 
 `direct_daily_edits.read_all_lines()` opens each `ATOMIC_FILES` entry **by bare name** from
