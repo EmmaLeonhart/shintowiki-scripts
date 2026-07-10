@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — audited every registered removal batch; one had never run a single line
+
+The 岩井温泉 hole was a gating query that missed a protecting fact, and that class of bug generalises,
+so I audited all 56 registered `ATOMIC_FILES` and every generator that can emit a `-` line.
+
+**7,547 removal lines are registered and dripping** across three healthy batches (ritsuryo funding
+migration, ronsha ojp-name removals, the 17 addresses + Takano merge). I verified the big one the
+slow way: all 4,802 `migrate_ritsuryo_funding_remove` pairs, checked item-by-item in 400-item SPARQL
+chunks, still hold their migrated `shrine ranking` statement — **zero would destroy an unmigrated
+fact.** That batch is safe.
+
+**`remove_junk_aliases.txt` had never run.** 189 removals of comma-disambiguator junk aliases
+(e.g. the alias `Ōmiwa Shrine, Ichinomiya` on `Q546197`), generated in 2026-05. Every line is an
+**alias** removal, and the fallback editor — the one that actually runs, since the QuickStatements
+API is unreliable — returns `"Term removal not supported"` for aliases outright. The file was
+registered *only* with that editor, never the QS path. So its 189 lines were sampled into the
+300/day budget, failed, and were sampled again the next day, forever. queue.md called it "draining";
+it had drained nothing.
+
+**Emma chose to unregister and leave the aliases.** `remove_junk_aliases.txt` deleted, its
+registration removed from `direct_daily_edits.ATOMIC_FILES`; the drift-guard alignment test still
+passes (the file was only ever in the direct list). The junk aliases stay on Wikidata — a known,
+recorded non-fix, not a silent one.
+
+Everything else checked out: the one other file with no repo producer, `ronsha_ranking_qualifiers.txt`,
+is written by `collect_ronsha_rankings.py` once cloud answers land (35 still pending), so its absence
+is expected, not drift.
+
+1127 tests pass.
+
+---
+
 ## 2026-07-10 — the 岩井温泉 hole was also in the removal script's protection query
 
 The onsen taught us that a `has part` statement without a series ordinal is invisible to every

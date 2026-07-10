@@ -84,7 +84,6 @@ ATOMIC_FILES = [
     "migrate_ritsuryo_funding_underspecified_remove.txt",
     "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
     "durability_backlinks.txt",               # Durability reciprocal backlinks for orphaned 2026-created items (audit of 2026-01-01.txt)
-    "remove_junk_aliases.txt",                # Alias audit (queue #8): remove 189 comma-disambiguator junk aliases the pipeline dragged onto shrine/temple items (via query-main SPARQL)
     "ronsha_ojp_name_removals.txt",           # Emma 2026-07-09: a Ronsha is a *candidate*, not an Engishiki shrine, so an Old Japanese (ojp-*) P1448 on one is a name copied off the entry it merely claims to be. Remove-only => drip-safe. Guarded to PURE Ronsha (not also Q134917286/Q135038714).
     "shikinaisha_kokugakuin_refs.txt",        # Emma 2026-07-09: "all P31 Shikinaisha items should get the Kokugakuin university citation thing just like others." Every one of the 2,863 P31=Q134917286 statements was unreferenced while its siblings carried S248=Q135159299 + S13677. Add-only => drip-safe; self-healing (query returns only unreferenced statements).
     "uncited_address_removals.txt",           # Emma 2026-07-09: an uncited Japanese P6375 is import noise when the same shrine also has a cited Japanese address. Remove-only => drip-safe. Refuses any item where an uncited value equals a cited one (QS removes by value, not GUID).

@@ -22,8 +22,13 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
   `label_typo_review/` (builder: `shinto_miraheze/build_label_typo_review_queue.py`), emitted by
   `remote_queue.py`; the cloud worker fills ANSWER (LABEL_TYPO/KANA_ISSUE/PREFIX_OK/OTHER).
   Collector BUILT (`shinto_miraheze/collect_label_typo_answers.py`, 5 tests; LABEL_TYPO →
-  `label_typo_fixes.txt` in ATOMIC_FILES) — run it once answers land. Comma cleanup draining (189).
+  `label_typo_fixes.txt` in ATOMIC_FILES) — run it once answers land.
   2026-07-07 late-morning check: 159 pending, no new cloud answers yet.
+- **Comma-alias cleanup (189) — UNREGISTERED 2026-07-10, aliases left in place per Emma.** The
+  file was registered ONLY with the fallback editor, which refuses alias removals outright
+  (`"Term removal not supported"`), so all 189 lines silently failed and re-sampled every day
+  while burning budget. `remove_junk_aliases.txt` deleted, registration removed. The junk aliases
+  stay on Wikidata. (The earlier "draining" note was false — it never drained a single line.)
 
 ## 11. Bunrei residual (harvest EXHAUSTED — 7 sources incl. onkamui parser 2026-07-07, ~10,650 cited edges)
 
