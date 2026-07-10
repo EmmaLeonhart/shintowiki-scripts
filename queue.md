@@ -107,7 +107,7 @@ cited-vs-uncited signal is exhausted). Of 46 Ronsha items still holding more tha
   page, drop the other. TWO or ZERO `P13677` → hold, it's a further residual. Report before
   editing; do not guess a rule and drip it.
 
-## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED 2026-07-09; batch BUILT)
+## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED; batch BUILT + WIRED TO THE DRIP)
 
 The gate was run. Emma answered seven `AskUserQuestion` blocks; the shapefile step is solved and
 scripts 1 + 2 are built and tested (30 tests). What remains is Emma running the batch.
@@ -124,11 +124,16 @@ emits nothing until the matching add lands); `docs/province_exclusion_residual_2
 criterion is `Q3877969` non-existence for Beppyō-only shrines and `Q110240047` omission for anything
 shikigesha/kokushi-genzaisha (both of which *existed* in 927 by Wikidata's own definitions).
 
-- [ ] **Emma: run the script-1 browser batch** (one tab, 382 lines, ~28 kB URL):
-  `python generate_province_exclusions.py --open`
-- [ ] **Then run script 2** — it stays a no-op until SPARQL confirms the adds landed:
-  `python generate_province_exclusion_removals.py --print-url` (removes exactly 2 wrong-province
-  statements: Himure Hachimangū off Etchū, Shibi Shrine off Izumi).
+**Emma 2026-07-10: not a browser batch any more.** *"I was going to run the Shikinaisha lists right
+now, but … wire them into the atomic statements thing so that they gradually get done over time …
+This editor trumps making slight modelling improvements."* `province_exclusions.txt` (382 lines,
+ADD-only, 0 removals, every line parses with two qualifiers) is registered in `ATOMIC_FILES` and
+drips behind `conflict_gate` like everything else.
+
+- [ ] **Script 2 stays UNREGISTERED and manual.** `generate_province_exclusion_removals.py` is
+  add-first/remove-later: it emits nothing until SPARQL confirms the adds landed. Run it by hand
+  once the drip has worked through the two corrections (Himure Hachimangū off Etchū, Shibi Shrine
+  off Izumi) — never register a removal batch that depends on ordering.
 - [ ] The seven no-class exclusions need **no general criterion** — they are four different
   problems (three are themselves `P31=Shikinaisha`; one is a multi-topic Wikimedia article; one is
   on the wrong province entirely). Per-item decisions are tabulated in the residual doc.

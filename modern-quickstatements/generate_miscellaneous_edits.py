@@ -49,6 +49,7 @@ import argparse
 import io
 import json
 import os
+import shutil
 import sys
 import urllib.parse
 import urllib.request
@@ -157,6 +158,15 @@ def build(kikuna_entity):
 
     assert_no_removals(lines)
     return lines, notes
+
+
+
+def publish_to_site(path):
+    """Mirror the batch into _site/ so the dashboard can link it."""
+    os.makedirs("_site", exist_ok=True)
+    dest = os.path.join("_site", os.path.basename(path))
+    if os.path.abspath(dest) != os.path.abspath(path):
+        shutil.copy(path, dest)
 
 
 def main():

@@ -69,6 +69,7 @@ import collections
 import io
 import json
 import os
+import shutil
 import sys
 import time
 import urllib.parse
@@ -100,6 +101,7 @@ P_CRITERION = "P1013"       # criterion used
 NON_EXISTENCE = "Q3877969"  # "quality or state of not existing"
 OMISSION = "Q110240047"     # "non-inclusion of a … set member … expected"
 
+HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = "province_exclusions.txt"
 
 # Two shrines stand on small islands that the Bakumatsu boundary data simply
@@ -332,6 +334,15 @@ def build(lists, candidates, existing, index):
     return lines, report
 
 
+
+def publish_to_site(path):
+    """Mirror the batch into _site/ so the dashboard can link it."""
+    os.makedirs("_site", exist_ok=True)
+    dest = os.path.join("_site", os.path.basename(path))
+    if os.path.abspath(dest) != os.path.abspath(path):
+        shutil.copy(path, dest)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=OUTPUT_FILE)
@@ -364,7 +375,11 @@ def main():
     print("Locating shrines in provinces...", flush=True)
     lines, report = build(lists, candidates, existing, index)
 
-    path = args.out
+    # Resolve against THIS directory, not the cwd: `direct_daily_edits` reads each
+    # ATOMIC_FILES entry by bare name from modern-quickstatements/ and silently
+    # skips a path that isn't there. A batch written to the wrong cwd is a batch
+    # that never reaches Wikidata (2026-07-09).
+    path = args.out if os.path.dirname(args.out) else os.path.join(HERE, args.out)
     if os.path.dirname(path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
     io.open(path, "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")

@@ -4,6 +4,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — the province batch goes to the drip, not the browser
+
+Emma was about to run the 382-line Shikinaisha-list batch by hand and stopped: *"the quick
+statements that we made and opened up now don't go there … wire them into the atomic statements
+thing so that they gradually get done over time … This editor trumps making slight modelling
+improvements."*
+
+`province_exclusions.txt` is now an `ATOMIC_FILES` entry. It is ADD-only by construction
+(`assert_add_only()` refuses a `-` line from any code path), and a check against the real daily
+editor confirms all 382 lines parse and that both qualifiers — `P3831` role and `P1013` criterion —
+resolve. Nothing else in the pipeline emits two qualifiers on one statement, so that was worth
+verifying rather than assuming.
+
+Its paired **removal** script stays deliberately unregistered. `generate_province_exclusion_removals`
+is add-first/remove-later: it emits nothing until SPARQL confirms the corresponding add has landed.
+Registering it would hand a removal batch to a drip that picks lines at random — exactly the ordering
+hazard the two-script rule exists to prevent.
+
+Registering the batch surfaced that `generate_province_exclusions` wrote its output relative to the
+**cwd**, not to `modern-quickstatements/`. The daily editor opens `ATOMIC_FILES` entries by bare name
+from that directory and silently skips a path that isn't there — the same silent-unreachability bug
+as 2026-07-09. Both it and `generate_miscellaneous_edits` now resolve `--out` against `HERE` and
+mirror to `_site/`, and both are covered by `test_atomic_files_reachable`, which is what caught it.
+
+---
+
 ## 2026-07-10 — 3,604 deities recovered; a miscellaneous queue; four repurposed items, not two
 
 **The alternation fix paid for itself.** Regenerating with the corrected capture:

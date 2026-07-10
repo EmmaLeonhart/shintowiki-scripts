@@ -36,6 +36,8 @@ GENERATORS = [
     "generate_ronsha_ojp_name_removals",
     "generate_shikinaisha_kokugakuin_refs",
     "generate_uncited_address_removals",
+    "generate_province_exclusions",
+    "generate_miscellaneous_edits",
 ]
 
 
