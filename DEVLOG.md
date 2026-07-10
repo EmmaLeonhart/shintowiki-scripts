@@ -4,6 +4,36 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — built the Commons → English-label pipeline (report only): 90.3%
+
+Emma's corrected framing of the retired `generate_commons_labels`: a Commons category name is a
+confirmed *reading*, not a label — normalize it into the house convention, don't copy it. Built the
+normalizer that was always missing, and — the part I'd shortchanged before — proved it before any
+edit.
+
+* `commons_normalize.py` (pure): Commons name → house label. Transcribes marked long vowels
+  (`Sensouji`→`Sensō-ji Temple`), leaves unmarked plain (`Sensoji`→`Senso-ji Temple`); temple
+  `<Stem>-<suffix> Temple`, the four shrine forms; folds circumflex→macron; strips
+  Category:/comma/bracket disambiguators. **Default: when no suffix is recognised it appends
+  " Shrine"** (Emma — Buddhist devotional names like Kannon/Daishi ride the pipeline this way).
+  None only for empty or kanji names (the kana stage handles kanji upstream).
+* `report_commons_label_accuracy.py` (report only, no edits): grades against enwiki on the *reading*
+  — Japanese-vs-English suffix (Grand Shrine ↔ taisha), hyphen/space and macrons are noise; a genuine
+  glitch (Ideha vs Dewa) still fails.
+
+It is a **mid-pipeline fallback**: fires after existing-label + kana derivation, before the
+identical-name and cloud stages. Full run over all 7,997 Japanese shrines+temples with a Commons
+category (937 gradeable): **737 exact + 109 macron-only = 90.3% core-reading accuracy**, 91 mismatch,
+0 rejected. Every gain came from fixing bugs, never loosening the grader: 59.7 → 71.6 → 81.5 → 88.7
+(brackets-before-comma recovered ~60 items) → 90.3 (default-Shrine + circumflex). The 91 mismatches
+are genuine — festivals/forests that got " Shrine", translations, reading glitches.
+
+`docs/commons_label_accuracy_2026-07.md`. Still zero Wikidata edits — the number is Emma's to act on
+(wire the stage into the live label pipeline). ~55 tests for the two modules; 1189 total pass.
+
+---
+
+
 ## 2026-07-10 — verified last tick's newly-live batches, then cleared them as already-done
 
 Last tick's tab-parsing fix turned 36 previously-dead lines live (recreation_relations,
