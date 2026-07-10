@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — script 2: the 2,151 Ronsha the lists never named
+
+`generate_list_membership_removals.py` (REMOVE-ONLY, unregistered, 19 tests) is built. It takes the
+Engishiki list link away from every Shikinai Ronsha the list does not name as a part. Run by hand;
+it wrote 2,236 lines across 2,151 items and submitted nothing.
+
+The whole design turns on one fact about QuickStatements: **it removes by value, not by statement
+id.** `-Q1|P361|Qlist` deletes *a* statement pointing at that list. On an item that held both a
+clean membership and junk pointing at the same list, it could take the clean one. So the script
+decides per (item, list) pair, not per item, and then re-checks the property over the finished lines
+— the guard runs against what was emitted, so it catches a bug in the builder and not just a bug in
+the inputs. Live state happens to be kinder than feared (2,277 claims: 126 named, 2,151 not, no item
+in both, each Ronsha claiming exactly one list), but the script does not rely on that holding.
+
+**94 pairs carry duplicate `part of` statements; only 72 of them are removable.** The other **22 are
+among the 126 the lists DO name** — 30 extra statements, `Q11631810` holding three. Script 1 adds
+the ordinal and neighbours to one of them; script 2 must not touch any of them; and QuickStatements
+cannot express "remove this statement, not its identical twin". The pipeline therefore cannot clean
+them, and the only mechanism that could is a browser remove-and-re-add per item. Emma: **report
+only, leave them.** Three statements saying the same true thing are untidy, not wrong.
+
+Also drained: one more cloud answer on the description-enrichment queue (235 pending), and one on
+the label-typo queue (157 pending).
+
+1085 tests pass.
+
+---
+
 ## 2026-07-10 — the 150 confirmed Shikinaisha no list names: duplicates, mostly
 
 Emma's aside during the list-membership work — *"there's confirmed shikinaisha i.e. not disputed

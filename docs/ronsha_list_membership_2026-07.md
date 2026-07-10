@@ -306,3 +306,47 @@ blocker, listed in full below.
 | [Q135195016](https://www.wikidata.org/wiki/Q135195016) Ichihara Shrine (Shimmei, Namerikawa City) | 182414 | 1 |
 | [Q135195017](https://www.wikidata.org/wiki/Q135195017) Ichihara Shrine (Yanagihara, Namerikawa City) | 182414 | 1 |
 | … | | 66 more |
+
+---
+
+# Script 2 built, 2026-07-10 — and what it refuses to touch
+
+`modern-quickstatements/generate_list_membership_removals.py` (REMOVE-ONLY, **unregistered**,
+19 tests) takes the Engishiki list link away from every Ronsha the list does not name. Run it by
+hand; it writes `list_membership_removals.txt` and submits nothing.
+
+Measured against live Wikidata:
+
+| | |
+|---|---:|
+| Ronsha claiming membership of an Engishiki list | **2,277** |
+| …the list names as a part — kept, script 1's business | **126** |
+| …the list does not name — removed | **2,151** |
+| removal lines emitted (duplicates get one line each) | **2,236** |
+
+Each Ronsha claims exactly one list, and no item is in both the keep and the remove set. That
+matters because **QuickStatements removes by value, not by statement id**: `-Q1|P361|Qlist` deletes
+*a* statement pointing at `Qlist`, and on an item holding both a clean membership and junk pointing
+at the same list, it could take the clean one. The script checks the property per (item, list) pair
+at the moment it runs, and then re-checks it over the finished lines, rather than trusting that
+today's data stays true.
+
+## The 30 statements nothing can clean
+
+**22 of the 126 named parts carry the identical `part of` statement two or three times over** — the
+same import damage, on the items that survived it. `Q11631810` has three; twenty-one others have
+two.
+
+Script 1 adds the ordinal, the neighbours and the references to one of them. Script 2 refuses to
+remove any of them, because a value-matched removal on an item the list names is precisely the
+destructive case. And QuickStatements offers no way to say *"remove this statement and not its
+identical twin"*.
+
+So the pipeline cannot fix these, and the only mechanism that could is a browser remove-and-re-add,
+per item. **Emma 2026-07-10: report only, leave them.** Three statements saying the same true thing
+are untidy, not wrong.
+
+| item | list | statements |
+|---|---|---:|
+| Q11631810 | Q11368560 | 3 |
+| Q135039477 · Q11433065 · Q11556984 · Q17225818 and 17 others | various | 2 |

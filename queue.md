@@ -142,12 +142,15 @@ the list does NOT name loses its list link entirely.
 `list_membership_rebuild.txt`, **5,643 lines**, ADD-only, diffed against live state so it shrinks
 as it lands. 26 entries carry several Kokugakuin ids, so no database reference is claimed for them.
 
-- [ ] **Script 2 (removals)** — strip the list link from the ~2,151 Ronsha the list does not name.
-  Remove-only, SPARQL-gated, UNREGISTERED and manual: QuickStatements removes by *value*, so a
-  value-matched removal on an item that also holds the clean statement would delete both. Only the
-  non-part items are safe to remove this way.
+- [ ] **Script 2 BUILT** (`generate_list_membership_removals.py`, remove-only, 19 tests,
+  **unregistered**): 2,236 lines over the 2,151 Ronsha no list names; 126 named parts untouched.
+  Emma runs it by hand. Regenerating it against live state is idempotent.
 - [ ] `report_ronsha_list_membership.py` and `docs/ronsha_list_membership_2026-07.md` hold the
   per-item detail.
+
+**22 of the 126 named parts carry duplicate `part of` statements** (30 extra; `Q11631810` has 3).
+QuickStatements cannot say "remove this statement, not its identical twin", so neither script can
+clean them. Emma 2026-07-10: **report only, leave them.**
 
 **The 150 confirmed Shikinaisha not named as parts: INVESTIGATED, both decisions deferred**
 (`docs/orphan_shikinaisha_2026-07.md`, `report_orphan_shikinaisha.py`). 84 are modern shrine items
