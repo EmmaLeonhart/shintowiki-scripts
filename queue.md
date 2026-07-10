@@ -23,7 +23,7 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
   `remote_queue.py`; the cloud worker fills ANSWER (LABEL_TYPO/KANA_ISSUE/PREFIX_OK/OTHER).
   Collector BUILT (`shinto_miraheze/collect_label_typo_answers.py`, 5 tests; LABEL_TYPO →
   `label_typo_fixes.txt` in ATOMIC_FILES) — run it once answers land.
-  2026-07-07 late-morning check: 159 pending, no new cloud answers yet.
+  2026-07-10 check: 157 pending, all `ANSWER` still empty — no cloud answers landed yet.
 - **Comma-alias cleanup (189) — UNREGISTERED 2026-07-10, aliases left in place per Emma.** The
   file was registered ONLY with the fallback editor, which refuses alias removals outright
   (`"Term removal not supported"`), so all 189 lines silently failed and re-sampled every day
@@ -228,6 +228,7 @@ The Kikuna restoration is DONE as a queued batch (`miscellaneous_edits.txt`) —
 
 ## Pinned tail (keep last, always)
 
-- [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 892a7dc2 — Emma
-  replaced the earlier 3-cron setup when she extended the session 2026-07-08).
+- [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick — Emma replaced the
+  earlier 3-cron setup 2026-07-08; job ids are session-local and change each session, current
+  session's is aaed7824). SYNC step fast-forwards the branch onto origin/main each tick.
 - [ ] Run the status-report action once more independently as an end-of-session summary.

@@ -34,6 +34,37 @@ are genuine — festivals/forests that got " Shrine", translations, reading glit
 ---
 
 
+## 2026-07-10 — work-loop session restart; ブルーノ・プラス periodic pass (clean)
+
+Restarted the autonomous work-loop for a "barrel through the queue, pull from main" session. Fresh
+session had no crons (they are session-local), so re-created the single :13/:43 work-loop tick Emma
+standardised on (job aaed7824; its SYNC step fast-forwards the branch onto origin/main each tick).
+Synced the branch onto origin/main (`c1bfb43`).
+
+Most of the queue is genuinely blocked and stayed that way this tick: the Wikidata freeze expired
+2026-06-06, but the QS drip is now held by `conflict_gate` until **2026-07-17** (ブルーノ・プラス last
+edited 2026-07-10, so the 7-day quiet window has not elapsed) — so every "run script 2 once the add
+lands" item (province exclusions, ronsha address merge, list-membership removals) is blocked-on-
+external, not stale. The rest is parked-per-Emma (Kokugakuin anomalies, P13677 matcher), report-only,
+wait-for-gate (Reisai), or paper-only (bunrei paper sources).
+
+Two items were actionable and I ran them:
+
+- **Label-typo collector** — 157 work-files in `label_typo_review/`, every `ANSWER` still empty. No
+  cloud answers have landed, so the collector has nothing to fold in. Blocked-on-external. Refreshed
+  the stale "159 pending 2026-07-07" note in queue.md to "157 pending 2026-07-10".
+- **ブルーノ・プラス periodic pass** (the queue's human-directed re-run item) — ran both read-only
+  scripts. `watch_conflicting_editor.py`: all nine venues clean, no noticeboard mention, talk page
+  last touched 2026-04-24, `conflict_watch.state` unchanged (already current). `archive_destroyed_items.py
+  --refresh`: 24 damaged items, the **same set** already held — no newly-damaged item since the last
+  pass; every JSON diff was only the `archived_at` restamp, which I discarded as noise (the pre-damage
+  content is the point and it did not change). Nothing to commit from the pass itself.
+
+CI is green on main (latest `ci.yml` run for `c1bfb43` succeeded). Committed only the queue-accuracy
+edits and this entry.
+
+---
+
 ## 2026-07-10 — verified last tick's newly-live batches, then cleared them as already-done
 
 Last tick's tab-parsing fix turned 36 previously-dead lines live (recreation_relations,
