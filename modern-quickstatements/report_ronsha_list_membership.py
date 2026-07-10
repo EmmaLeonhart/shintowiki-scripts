@@ -5,40 +5,56 @@ REPORT ONLY. Emits nothing, removes nothing.
 
 Her words, verbatim:
 
-    "(d) P361 part-of migration (384 items) — on the actual shrine item, remove
-    **every** P361→Shikinaisha-list statement; add ONE derived from the list-entry
-    item, taking `P1545` ordinal + `P155`/`P156` from the entry item's own
-    (already-clean) statement. Two references: `P248=Q135159299` + `P13677=<entry
-    id>` … and the jawiki Shikinaisha-list article. **Add-first / remove-later as
-    two separate scripts.** BLOCKER to resolve first: when a Ronsha item carries
-    several `P13677` entry ids (e.g. Q11677110 holds 182062/182063/182065), which
-    entry's ordinal becomes the single new statement? Build the report, then ask."
+    "(d) part-of migration — on the actual shrine item, remove **every**
+    part-of→Shikinaisha-list statement; add ONE derived from the list-entry item,
+    taking the ordinal + follows/followed-by from the entry item's own
+    (already-clean) statement. Two references: 'stated in' the Kokugakuin database +
+    the entry id, and the jawiki Shikinaisha-list article. **Add-first /
+    remove-later as two separate scripts.** BLOCKER to resolve first: when a Ronsha
+    item carries several Kokugakuin entry ids (e.g. Q11677110 holds
+    182062/182063/182065), which entry's ordinal becomes the single new statement?
+    Build the report, then ask."
 
-THE STRUCTURE, VERIFIED ON Futarasan
-------------------------------------
-`Q701927` Futarasan Shrine — a modern shrine, a Ronsha (candidate). It carries
-**four** "part of" statements, two of them into the Shimotsuke list: one with
-ordinal 4 and neighbours, one bare. All of them are the junk.
+THE STRUCTURE, VERIFIED ON LIVE DATA
+-----------------------------------
+Emma 2026-07-10: *"the actual wikidata items for the list of the shrines contain the
+entire list in them. They are very elaborate wikidata items, and to my knowledge, all
+of their lists are deduplicated. This happened due to earlier import issues and they
+were fixed in the list items but not the shrines themselves."*
 
-`Q95932360` Futaarayama Shrine — the **entry item** for Kokugakuin id 182030.
-Exactly **one** "part of" statement: the Shimotsuke list, ordinal 4, with
-`follows` and `followed by`. That is the clean source.
+    List of Shikinaisha in Shimotsuke Province
+        has part -> Futaarayama Shrine   ordinal 4        <- the CLEAN, deduplicated list
+        has part -> Murahino Shrine       ordinal 3
+        …14 statements, 14 distinct targets, ZERO duplicates
 
-The shrine reaches its entry item through **"said to be the same as"**.
+    Futaarayama Shrine   (the ENTRY item)
+        part of -> the list, ordinal 4, follows/followed by, Kokugakuin id 182030
+
+    Futarasan Shrine     (the modern shrine, a Ronsha)
+        part of -> the list, ordinal 4, with neighbours     }  four statements,
+        part of -> the list, bare                           }  ALL of them junk
+        part of -> two other things
+
+The duplication came from piped links in the jawiki Shikinaisha list, where a shrine
+that was part of another shrine got piped in. The list items were repaired; the shrine
+items were not.
+
+An entry item is therefore a "said to be the same as" target **that the list itself
+names as a part**. Being said-to-be-the-same-as something is not sufficient: that is
+how Q11677110 appeared to have three candidate ordinals when only two are real.
 
 THE BLOCKER, MEASURED
 ---------------------
-`Q11677110` Kashima Amatarashi Wake Shrine holds Kokugakuin ids 182062, 182063 and
-182065, points at **two** entry items, and carries five "part of" statements into
-one list with ordinals 25, 26 and 28. No rule picks one.
+`Q11677110` Kashima Amatarashi Wake Shrine is said to be the same as two entry items,
+**both genuine parts of the Mutsu list**, at ordinals 25 and 26. Its own five part-of
+statements give 25, 26 and 28 — the 28 is junk. It is a candidate for two different
+Engishiki entries, and no rule picks one.
 
 This script classifies every Ronsha that has a list membership:
 
-  UNAMBIGUOUS  exactly one reachable entry item, and it has exactly one clean
-               list statement -> the replacement statement is fully determined.
-  AMBIGUOUS    several entry items, or several distinct ordinals among them.
-               This is Emma's blocker set.
-  NO-ENTRY     no reachable entry item at all -> nothing to copy from.
+  UNAMBIGUOUS  exactly one entry item, in exactly one list -> fully determined.
+  AMBIGUOUS    several entry items, or entries in several lists. Emma's blocker.
+  NO-ENTRY     no "said to be the same as" target is a part of the list it claims.
 
     python report_ronsha_list_membership.py [--out FILE]
 """
@@ -67,6 +83,7 @@ P_PART_OF = "P361"
 P_ORDINAL = "P1545"
 P_FOLLOWS = "P155"
 P_FOLLOWED_BY = "P156"
+P_HAS_PART = "P527"
 P_SAME_AS = "P460"
 P_KOKUGAKUIN = "P13677"
 
@@ -124,24 +141,53 @@ def label(ent):
     return (lab.get("en") or lab.get("ja") or {}).get("value") or ent.get("id", "?")
 
 
-def classify(shrine_claims, entry_ids, ents, lists):
-    """(kind, detail) for one Ronsha."""
-    entry_statements = {}
-    for e in entry_ids:
-        ent = ents.get(e)
-        if not ent:
+def list_parts(list_claims):
+    """{part_qid: ordinal} from a LIST item's own has-part statements.
+
+    Emma 2026-07-10: *"the actual wikidata items for the list of the shrines contain
+    the entire list in them … all of their lists are deduplicated. This happened due
+    to earlier import issues and they were fixed in the list items but not the
+    shrines themselves."*
+
+    Verified: `List of Shikinaisha in Shimotsuke Province` has 14 has-part
+    statements, 14 distinct targets, zero duplicates. Eleven carry an ordinal; the
+    other three are class counts (Shikinaisha / Taisha / Shōsha) qualified by
+    "quantity" instead. `Futaarayama Shrine`, the entry item, is a part.
+    `Futarasan Shrine`, the modern shrine, is not.
+    """
+    out = {}
+    for st in list_claims.get(P_HAS_PART, []):
+        dv = st["mainsnak"].get("datavalue")
+        if not dv:
             continue
-        sts = list_statements(ent.get("claims", {}), lists)
-        if sts:
-            entry_statements[e] = sts
+        q = st.get("qualifiers", {})
+        ords = [x["datavalue"]["value"] for x in q.get(P_ORDINAL, []) if "datavalue" in x]
+        if not ords:
+            continue                       # a class count, not a list entry
+        out[dv["value"]["id"]] = ords[0]
+    return out
 
-    if not entry_statements:
+
+def classify(shrine_claims, entry_ids, list_parts_by_list, lists):
+    """(kind, {list: [(entry, ordinal), …]}) for one Ronsha.
+
+    An entry item is a "said to be the same as" target that the LIST itself names as
+    a part. Merely being said-to-be-the-same-as something is not enough — that is how
+    Q11677110 appeared to have three candidate ordinals when only two are real.
+    """
+    claimed = {l for l, _o, _n in list_statements(shrine_claims, lists)}
+    found = collections.defaultdict(list)
+    for l in claimed:
+        parts = list_parts_by_list.get(l, {})
+        for e in entry_ids:
+            if e in parts:
+                found[l].append((e, parts[e]))
+
+    if not found:
         return "no-entry", {}
-
-    ordinals = {(l, o) for sts in entry_statements.values() for l, o, _ in sts}
-    if len(entry_statements) == 1 and len(ordinals) == 1:
-        return "unambiguous", entry_statements
-    return "ambiguous", entry_statements
+    if len(found) == 1 and len(next(iter(found.values()))) == 1:
+        return "unambiguous", dict(found)
+    return "ambiguous", dict(found)
 
 
 def main():
@@ -166,6 +212,13 @@ def main():
     print("{} Ronsha carry a membership of an Engishiki list".format(len(shrines)))
 
     ents = entities(shrines)
+    list_ents = entities(lists)
+    ents.update(list_ents)
+    list_parts_by_list = {l: list_parts(list_ents[l].get("claims", {}))
+                          for l in lists if l in list_ents}
+    print("{} list entries across the {} lists".format(
+        sum(len(v) for v in list_parts_by_list.values()), len(lists)))
+
     entry_ids = {e for q in shrines
                  for e in _values(ents[q].get("claims", {}), P_SAME_AS)}
     print("{} distinct 'said to be the same as' targets".format(len(entry_ids)))
@@ -176,7 +229,7 @@ def main():
     for q in shrines:
         claims = ents[q].get("claims", {})
         kind, entry_statements = classify(
-            claims, _values(claims, P_SAME_AS), ents, lists)
+            claims, _values(claims, P_SAME_AS), list_parts_by_list, lists)
         buckets[kind] += 1
         detail[kind].append((q, label(ents[q]),
                              _values(claims, P_KOKUGAKUIN),
@@ -230,12 +283,13 @@ def write_report(path, buckets, detail, ents):
         "| Shrine | Kokugakuin ids | its own part-of statements | entry items and their ordinals |",
         "|---|---|---:|---|",
     ]
-    for q, name, kids, nown, es in sorted(detail["ambiguous"], key=lambda r: -len(r[4])):
+    for q, name, kids, nown, es in sorted(detail["ambiguous"], key=lambda r: -sum(len(v) for v in r[4].values())):
         ent_str = " · ".join(
-            "[{0}](https://www.wikidata.org/wiki/{0}) {1} → {2}".format(
-                e, label(ents.get(e, {"id": e})),
-                ", ".join("ordinal {}".format(o or "—") for _l, o, _n in sts))
-            for e, sts in sorted(es.items()))
+            "{0}: ".format(label(ents.get(l, {"id": l}))) + ", ".join(
+                "[{0}](https://www.wikidata.org/wiki/{0}) {1} @ {2}".format(
+                    e, label(ents.get(e, {"id": e})), o)
+                for e, o in sorted(pairs, key=lambda x: int(x[1])))
+            for l, pairs in sorted(es.items()))
         out.append("| [{0}](https://www.wikidata.org/wiki/{0}) {1} | {2} | {3} | {4} |".format(
             q, name, " ".join(kids) or "—", nown, ent_str))
 
