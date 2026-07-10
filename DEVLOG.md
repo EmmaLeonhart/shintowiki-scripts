@@ -4,6 +4,48 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — the misc queue learns to remove things, one named line at a time
+
+Emma decided the Shikinai Ronsha address residual: *"Add it to the misc to remove them."* But
+`miscellaneous_edits.py` was ADD-only by construction, and the whole point of that invariant was
+that a queue of small hand-picked fixes must never grow the ability to *compute* a deletion.
+
+So the invariant did not go away — it narrowed. `assert_removals_enumerated()` refuses any `-` line
+that is not, verbatim, in `STATIC_REMOVALS`. The enumeration is by whole line, not by item: a typo'd
+address on a listed item is still rejected. Nothing in the file may derive a removal; the 17 are
+literal text in `ADDRESS_REMOVALS`, each with the address it drops, the address it keeps, and why.
+
+Two safety properties on top. **Every drop differs from its keep as a string** — QuickStatements
+removes by value, not GUID, so identical strings would be a coin flip over which statement dies.
+And the generator **re-reads live state** and refuses to emit when the keep has vanished, so a
+shrine can never be stripped of its last address by somebody else having deleted the good one
+first. All 17 keeps and drops were confirmed present at generation time.
+
+The three kinds, all Emma's calls:
+
+* **7** where one address is 6.5–46.4 km from *every* coordinate on the Kokugakuin entry, and the
+  kept one is within a few hundred metres.
+* **7** conflations — the entry describes several candidate shrines, so two shrines' addresses
+  landed on one item — broken by the item's **own** `coordinate location` falling inside one
+  address's municipality and not the other's. Takarazuka not Nishinomiya, Amagasaki not Ikeda,
+  Himeji not Tatsuno, Hashima not Ichinomiya, Kakamigahara not Kōnan, Daigo not Hitachiōta,
+  Shibukawa not Higashiagatsuma.
+* **3** same-place duplicates; keep the form carrying the block number.
+
+**The format-duplicate count is 4, not the 3 Emma saw.** `Q11673131` surfaced only after the
+`〒`postcode-prefix fix, and it is the one case where neither form is a superset of the other —
+`〒708-0013 津山市二宮601` carries the postcode and block number, `岡山県津山市二宮` carries the
+prefecture. Dropping either loses something. Left alone and flagged.
+
+Reported and untouched, in `docs/ronsha_address_resolution_2026-07.md`: 4 items carrying two
+coordinate statements (the own-coordinates rule cannot break the tie), 10 where both addresses
+share a municipality (several are genuinely two places — a mountain 奥宮 and a village 里宮), and
+`Q30929765`, whose Kokugakuin record has no coordinates to check against.
+
+1038 tests pass.
+
+---
+
 ## 2026-07-10 — measured the prefectural-jinjachō avenue before building it, and it is thin
 
 Emma had chosen the 47 prefectural 神社庁 databases as the reisai source beyond jawiki. I measured

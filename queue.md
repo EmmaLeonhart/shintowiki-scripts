@@ -67,31 +67,15 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   NB the `Day of Reisai` property proposal was **declined** (2025-12-07); the model stays
   `P837` + `P3831`=`Q11385469` per `docs/wikidata_shrine_festival_model.md`.
 
-## LAST — hard-residual street addresses: cross-product run; the glitch is NOT the general case
+## Hard-residual street addresses — 17 removals queued; one open question
 
-`modern-quickstatements/resolve_ronsha_addresses.py` (REPORT ONLY) now matches **every address
-against every coordinate** on the Kokugakuin entry, as Emma asked. Report:
-`docs/ronsha_address_resolution_2026-07.md`.
+Decided by Emma 2026-07-10; 17 removals are in `miscellaneous_edits.txt` behind the gate. Report
+(what was removed and what was deliberately left): `docs/ronsha_address_resolution_2026-07.md`.
 
-**Emma's hypothesis was that the entry's coordinates come from an adjacent, non-candidate shrine,
-so nothing would match. The data says otherwise.** Municipality matching found **zero** no-match
-items. Geocoding each address (国土地理院 address search) and measuring to the nearest coordinate:
-median **0.65 km**, minimum **5 m**, and 27 of 65 addresses within 500 m. Only **2 items**
-(`Q107410067`, `Q43594855`) have every address more than 2 km from every coordinate.
-
-Of 33 items with exactly one Kokugakuin id: **10 resolved · 22 several · 1 error · 0 no-match.**
-
-**What the 22 actually are:** in **16** of them the item's two addresses match *two different*
-coordinates on the *same* entry — the item carries the addresses of two different candidate
-shrines the entry lists. A Ronsha is one shrine with one address (Emma 2026-07-09), so these are
-**conflations**, not coordinate glitches. The other 6 have both addresses in one municipality
-(Hibita's 三ノ宮1472 vs 1468), which coordinates cannot separate.
-
-- [ ] Emma: the 10 **resolved** rows are safe to act on — one address sits at a coordinate, the
-  other does not. A script-2 (remove-only, SPARQL-gated) can drop the losers once she says so.
-- [ ] The 16 **conflations** are the real residual: each needs deciding *which candidate this item
-  is*, which the entry cannot answer. Emma's call.
-- [ ] `Q107410067` and `Q43594855` are the only two that look like the glitch she described.
+- [ ] `Q11673131` Takano Shrine — a **fourth** format duplicate, surfaced only after the postcode
+  fix, so not among the 3 Emma deduped. Neither form is a superset: `〒708-0013 津山市二宮601` has
+  the postcode + block, `岡山県津山市二宮` has the prefecture. Needs her call, or a plain edit
+  adding `〒708-0013 岡山県津山市二宮601` (an add, not a removal).
 
 ## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED; batch BUILT + WIRED TO THE DRIP)
 
@@ -120,12 +104,11 @@ drips behind `conflict_gate` like everything else.
   add-first/remove-later: it emits nothing until SPARQL confirms the adds landed. Run it by hand
   once the drip has worked through the two corrections (Himure Hachimangū off Etchū, Shibi Shrine
   off Izumi) — never register a removal batch that depends on ordering.
-- [ ] The seven no-class exclusions need **no general criterion** — they are four different
-  problems (three are themselves `P31=Shikinaisha`; one is a multi-topic Wikimedia article; one is
-  on the wrong province entirely). Per-item decisions are tabulated in the residual doc.
-- [ ] The 河内 polygon is provably wrong across southern Osaka (it swallows Sumiyoshi Taisha, the
-  *ichinomiya of Settsu*). 21 borderline assignments were emitted anyway on Emma's instruction and
-  are listed in the residual doc so they can be found again.
+
+Reported, nothing to do (both tabulated in `docs/province_exclusion_residual_2026-07.md`): the
+seven no-class exclusions are four different problems with no general criterion; the 河内 polygon
+is wrong across southern Osaka (it swallows Sumiyoshi Taisha, *ichinomiya of Settsu*) and its 21
+borderline assignments were emitted anyway on Emma's instruction.
 
 ## LAST — Kokugakuin P13677 matcher: Emma to explain, then decide
 
