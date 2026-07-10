@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — 3,604 deities recovered; a miscellaneous queue; four repurposed items, not two
+
+**The alternation fix paid for itself.** Regenerating with the corrected capture:
+`saijin_p825.txt` **2,363 → 5,964 lines (+3,604 recovered)** — the ordered-alternation bug had
+been silently dropping roughly 60% of enshrined-deity statements wherever the field's first
+wikilink was piped. `honzon_p825.txt` 760 → 986 (+231). `souken_p571` 4,112 → 4,097 (18 more
+false dates withdrawn, 3 recovered); `souken_den_p571` 637 → 635.
+
+**A miscellaneous-edits queue.** Emma asked for one place for "relatively small things that we're
+going to wait on". `generate_miscellaneous_edits.py` → `miscellaneous_edits.txt`, registered in
+`ATOMIC_FILES`, gated like everything else by `conflict_gate`. It currently holds an English label
+fix for `Q138565446` (whose English label was the Commons *category* name,
+"Category:Shinmei-gū (Kanagawa-ku, Yokohama)") and the ten Kikuna Shrine statements.
+
+**Kikuna restores onto OUR item.** Kikuna Shrine has two items: the community one they emptied
+(`Q28069431`) and `Q134926804`, created by our own bot in June 2025 and holding the jawiki
+sitelink. Restoring the husk would recreate a duplicate. Emma: *"they don't have the one that we
+made on their watchlist. It's not going to appear to be a reversion … we kind of got lucky."*
+The batch is diffed against live state, so it shrinks as values land — including if somebody else
+adds them, which Emma prefers.
+
+**The damage is worse than two shrines.** Re-pulled their contributions: 569 edits over 242 items,
+and **four** identity changes, not two. `Q134886554` was a Saitama shrine (Higa4's) that they
+repurposed into a Kanagawa one at 02:18 UTC while this was being written, destroying its corporate
+number, postcode, address, coordinates and our `P1814` kana. `Q140476265` they created and blanked
+two minutes later. **Neither Kamo Shrine (Odawara) nor Chikadono Shrine (Saitama) has an item on
+Wikidata any more.**
+
+**But their description work is good.** 195 of 199 description edits are Japanese, in the standard
+「<prefecture><municipality>にある神社／寺院」 form, and more specific than what they replace. This
+is competent, good-faith content work. The damage is confined to item *identity* — they appear to
+treat QIDs as reusable rows. That combination (benign surface, destructive substructure, in a
+language most patrollers do not read) is exactly what runs for a while and then ends decisively.
+
+Not blocked on either wiki as of 03:00 UTC; last Wikidata edit two minutes before that check.
+382 tests pass.
+
+---
+
 ## 2026-07-10 — two regex bugs in the infobox importers; one had been dropping deities all along
 
 Fixing the field-bleed item surfaced a second, worse bug in the two generators I had just

@@ -142,6 +142,88 @@ Emma's read (*"this person is an LTA … who is going to get a lot of attention 
 is consistent with the evidence. The operative risk is **not** that they out‑edit us; it is
 that scrutiny of them extends to whoever is editing the same items.
 
+## 3.6 Assessment of ALL their edits, not just the two shrines
+
+Emma 2026-07-10: *"We can't just rely solely on the massive edits that they made to two
+shrines."* Re-fetched at 03:10 UTC — **569 Wikidata edits** now (513 four hours earlier), across
+**242 items**. Every edit classified by what it did to its item:
+
+| Character | Items | Read |
+|---|---:|---|
+| terms only (label / description) | 157 | benign, and mostly good — see below |
+| additive (statements only) | 44 | benign: coordinates, admin unit, `P31`, `P17`, `P140` |
+| new item created | 22 | benign, except one (below) |
+| destructive (claims removed, identity kept) | 15 | mixed; mostly stadium/airport cleanups |
+| **identity changed (label removed)** | **4** | **the problem** |
+
+### The description work is good, and that matters
+
+199 description add/set edits: **195 Japanese, 4 English.** Nearly all are the standard Wikidata
+Japanese house form — 「神奈川県小田原市にある神社」 / 「…にある寺院」 (prefecture + municipality +
+type). They are *more* specific than what they replace (Higa4's were 「小田原市にある神社」, no
+prefecture). Only 2 of 199 carry a stray trailing 「。」.
+
+This is competent, conventional, good-faith content work by someone who knows the subject and the
+conventions. It is not the behaviour of a vandal, and it is why a casual reviewer would see a
+productive editor. **The damage is not in the descriptions. It is in item identity.**
+
+### The four identity changes
+
+| Item | Was | Became | Fate of the original subject |
+|---|---|---|---|
+| `Q28069431` | Kikuna Shrine (5 deities, image, website, 2 phones) | an empty husk | Survives on **our** `Q134926804`; content lost, we can restore it |
+| `Q123044569` | Kamo Shrine, Odawara (`P825`, address, coords, `P10689`) | 大美和神社, different coords | **Gone.** No surviving item; none of the eight 加茂神社 items is Odawara |
+| `Q134886554` | Chikadono Shrine, **Saitama** (熊谷市下増田749; corp. no., postcode, our `P1814` kana) | 近殿神社, **Kanagawa** (Yokosuka) | **Gone.** No item holds Chikadono Shrine any more |
+| `Q140476265` | *(they created it)* 琵琶島神社 | blanked two minutes later; now 0 labels, 0 claims | Junk item left behind |
+
+`Q134886554` happened at **02:18 UTC on 2026-07-10**, while this analysis was being written. It
+was created by `Higa4` for a Saitama shrine; they stripped its coordinates, address, postal code,
+corporate number, `P1454`, our `P1814` kana and our English label, then re-pointed it at a
+Kanagawa shrine and attached that jawiki sitelink. It still carries our `id`/`fr` labels
+("Kuil Chikadono", "sanctuaire de Chikadono") describing a shrine it no longer represents.
+
+**The pattern is consistent:** take an existing item whose name resembles the shrine they are
+documenting, strip it, reuse the QID, attach the sitelink. It is not vandalism in intent — it
+looks like someone treating items as reusable rows. But it destroys the original subject, breaks
+every external reference to that QID, and leaves foreign-language labels asserting the old
+identity.
+
+### Properties they removed, across all 569 edits
+
+`P625` ×6 · `P825` ×6 · `P131` ×5 · `P18` ×5 · `P31` ×4 · `P17` ×3 · `P6375` ×2 · `P931` ×2 ·
+and one each of `P3225` (corporate number), `P281` (postcode), `P1454`, **`P1814` (our kana)**,
+`P10689`, `P856`, `P2900`, `P1329`, `P4970`, `P1049`, `P159`, `P138`.
+
+### How likely are they to run into serious trouble?
+
+**Likely, and not for the descriptions.** Against them:
+
+* Item repurposing is a well-known Wikidata red flag and is trivially visible in an item's
+  history. Two shrines' data is simply gone.
+* A prior **sockpuppetry question** (2023, `Prefuture`), a warning for **renaming without
+  consensus** (`ねこざめ`), and **three copyright warnings** on uploads.
+* An April 2026 jawiki dispute about shrine articles in which they refused correction, called
+  invoking `プロジェクト:神道` "an exaggeration", and accused the most prolific shrine editor on
+  ja.wikipedia of `唯我独尊`.
+* Editing volume is climbing steeply (71 April → 103 June → 306+ July), which is what brings
+  patrollers.
+
+In their favour: the overwhelming majority of their edits are unobjectionable, competent, and in
+a language most Wikidata patrollers do not read. That is precisely what lets a destructive pattern
+run for a while — and precisely why, when it is noticed, the response tends to be decisive.
+
+Emma's expectation — *"they get blocked after maybe two weeks, and then we can figure out how to
+deal with the damage"* — is consistent with this evidence. Not blocked on either wiki as of
+2026-07-10 03:00 UTC; last Wikidata edit two minutes before that check.
+
+### Where the repurposed items are linked
+
+Emma asked this specifically. Neither is referenced by **any item's statements** (0 SPARQL hits
+for `?s ?p wd:Q123044569` and `wd:Q28069431`). Each has exactly **one** wikitext backlink:
+`Wikidata:WikiProject Japan/サブプロジェクト/神社/都道府県別/神奈川`. `Q123044569` additionally
+holds `commonswiki`/`jawiki` sitelinks pointing at 大美和神社, and still carries Kamo Shrine's
+`de`/`id`/`fr` labels — two of which are ours.
+
 ## 4. Collision surface with our pipeline
 
 **161 of their 215 items appear in our registered, executable `ATOMIC_FILES` batches.**

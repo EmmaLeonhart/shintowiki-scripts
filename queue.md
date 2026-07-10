@@ -175,20 +175,23 @@ this three times. So nothing is emitted.
 
 - [ ] Emma decides: leave the 94 alone, or drain the redundant-bare-statement shape (the safe one).
 
-## LAST — deferred repairs, blocked on the conflict gate (Emma 2026-07-10)
+## LAST — repurposed-item damage, on hold (Emma 2026-07-10)
 
-Nothing here is actionable until `conflict_gate` opens. See
-`docs/bruno_plus_analysis_2026-07.md`. Emma: *document, don't touch*; *no contact*.
+See `docs/bruno_plus_analysis_2026-07.md`. Emma: *document, don't touch*; *no contact*.
+The Kikuna restoration is DONE as a queued batch (`miscellaneous_edits.txt`) — it targets our own
+`Q134926804`, not the husk, so it cannot read as a reversion.
 
-- [ ] `Q28069431` (Kikuna Shrine) was blanked to a husk: 0 claims, 0 sitelinks, and only the
-  `fr`/`id` labels we added, now describing nothing. 菊名神社 moved to `Q134926804` with just 6
-  claims — the five `P825` deities, `P18`, `P856`, `P1329`/`P2900` did not all survive. Re-add
-  them to `Q134926804`, ADD-only, a week after the watched editor stops.
-- [ ] `Q123044569` (Kamo Shrine, Odawara) was overwritten as 大美和神社 — a different shrine at
-  different coordinates. Kamo Shrine now appears to have no item. Decide whether to create one.
-  Emma: *"that one is a bit up for debate."*
-- [ ] The husk's orphaned `fr`/`id` labels are misleading, but removing them is a removal on an
-  item they are active on. Wait.
+- [ ] `Q123044569` — Kamo Shrine (Odawara) was overwritten as 大美和神社. **No item holds Kamo
+  Shrine any more.** It still carries Kamo's `de`/`id`/`fr` labels (two of them ours), so it
+  asserts two identities at once. Emma: leave them, record only. A replacement item is on hold
+  until we understand what is going on with this person.
+- [ ] `Q134886554` — Chikadono Shrine (**Saitama**, 熊谷市下増田749) was overwritten as 近殿神社
+  (**Kanagawa**, Yokosuka) on 2026-07-10 02:18 UTC. Its corporate number, postcode, address,
+  coordinates and our `P1814` kana are gone from Wikidata entirely; no item holds that shrine.
+  Still carries our `id`/`fr` Chikadono labels. Same hold.
+- [ ] `Q140476265` — they created 琵琶島神社 and blanked it two minutes later. Now 0 labels,
+  0 claims, 0 sitelinks. Junk item; nothing of ours in it.
+
 ## Pinned tail (keep last, always)
 
 - [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick, job 55ae0bbe — Emma

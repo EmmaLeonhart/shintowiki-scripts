@@ -107,6 +107,7 @@ ATOMIC_FILES = [
     "honzon_p825.txt",                       # Principal images (本尊) from the jawiki temple infobox as P825, wikilinked-only precision path (generate_honzon_quickstatements.py); jawiki-cited
     "souken_p571.txt",                       # Founding dates (創建/創建年) from jawiki infoboxes as P571 year-precision; conservative single-clean-year parser (generate_souken_quickstatements.py); jawiki-cited
     "souken_den_p571.txt",                   # Traditional (伝/社伝/寺伝) founding dates as P571 + P1480=Q18122778 "presumably"; disjoint accept-set from souken_p571 (generate_souken_den_quickstatements.py); jawiki-cited
+    "miscellaneous_edits.txt",               # Emma 2026-07-10: the miscellaneous-edits queue — small, safe, non-urgent fixes that wait behind conflict_gate. Currently a Commons-category-name English label on Q138565446, plus the Kikuna Shrine statements ブルーノ・プラス stripped, re-added to OUR item Q134926804 (not the husk). ADD-only; diffed against live state so it shrinks as values land. See docs/bruno_plus_analysis_2026-07.md.
     "kofun_imports.txt",                     # Kofun shapes (P31 shape-classes, the live convention) + construction periods (P571 century precision) from the jawiki kofun infobox (generate_kofun_quickstatements.py); jawiki-cited
     "description_enrichment_en.txt",         # Unique English descriptions for collision groups, from cloud-RAG answers (collector: shinto_miraheze/collect_description_enrichment.py; stage 1 of docs/description_enrichment_pipeline.md)
 ]
