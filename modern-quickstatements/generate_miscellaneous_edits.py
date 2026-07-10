@@ -79,6 +79,14 @@ STATIC_EDITS = [
     # Emma 2026-07-10: "This is a rather conspicuous error."
     ("Q138565446", "Len", '"Shinmei-gū (Kanagawa-ku, Yokohama)"',
      "English label is a Commons category name"),
+
+    # Takano Shrine holds two addresses, neither containing the other:
+    # `〒708-0013 津山市二宮601` has the postcode and block but no prefecture,
+    # `岡山県津山市二宮` has the prefecture and neither. Emma 2026-07-10 chose to
+    # merge. This is the ADD half; `generate_ronsha_address_merge_removals.py`
+    # drops the two old forms, and only once SPARQL confirms this line landed.
+    ("Q11673131", "P6375", 'ja:"〒708-0013 岡山県津山市二宮601"',
+     "merges the postcoded and the prefectured address; removals wait on SPARQL"),
 ]
 
 # ── 2. wrong addresses on Shikinai Ronsha ───────────────────────────────────
