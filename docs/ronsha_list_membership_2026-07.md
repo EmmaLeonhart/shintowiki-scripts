@@ -2,22 +2,39 @@
 
 **Report only.** Nothing emitted, nothing removed.
 
-## The plan, in Emma's words (2026-07-09)
+## The finding that collapses the problem
 
-> on the actual shrine item, remove **every** part-of→Shikinaisha-list statement; add ONE
-> derived from the list-entry item, taking the ordinal + follows/followed-by from the entry
-> item's own (already-clean) statement. … **BLOCKER to resolve first:** when a Ronsha item
-> carries several Kokugakuin entry ids, which entry's ordinal becomes the single new
-> statement? Build the report, then ask.
+Emma 2026-07-10: *"Ronshas should not even have list membership."*
 
-## The structure
+An Engishiki list item names its own members with **has part** statements, each carrying an
+ordinal. Those targets are the **entry items** — instance of *Disputed Shikinaisha or Shikigeisha*
+(806 of the 815 such items are list parts). A **Shikinai Ronsha** is a modern shrine that is merely
+a *candidate* for an entry. It is not a member of the list.
 
-`Futarasan Shrine` (the modern shrine, a Ronsha) carries **four** part-of statements — two
-into the Shimotsuke list, one with ordinal 4 and neighbours and one bare. All junk.
-`Futaarayama Shrine`, its *entry item*, carries exactly **one**: the Shimotsuke list,
-ordinal 4, with follows and followed-by, and the Kokugakuin id 182030. The shrine reaches
-its entry item through **"said to be the same as"**.
+| | |
+|---|---:|
+| items named as parts of an Engishiki list (the entries) | **2,839** |
+| Ronsha claiming membership of a list | **2,277** |
+| …of those, actually named as a part | **126** |
+| **…of those, NOT named as a part — the junk** | **2,151** |
 
+So the sub-classification below (one entry item vs several vs none) is beside the point: the 49
+"ambiguous" and the 266 "no entry" cases are all simply Ronsha that should carry no list
+membership at all. The list items were repaired after the jawiki piped-link import damage; the
+shrine items were not.
+
+Emma 2026-07-10 on the cause: *"on the Shinto Shrine wiki on Japanese Wikipedia there was a large
+amount of pipe links in the list where there was a shrine that was part of another shrine, ended
+up getting piped in, resulting in massive duplications that have since been fixed."*
+
+## What remains to decide
+
+Removing the list link from 2,151 Ronsha is a **remove-only** operation with nothing to add back.
+That contradicts item (d)'s "add ONE derived from the list-entry item", which assumed the shrine
+should keep a membership. Awaiting Emma's confirmation before any script is built.
+
+The 126 Ronsha that ARE named as parts keep their membership; their statement should carry the
+ordinal and neighbours the list gives.
 ## Result
 
 | | |
