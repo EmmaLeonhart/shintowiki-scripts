@@ -42,7 +42,15 @@ coordinate statements (the own-coordinates rule cannot break the tie), 10 where 
 share a municipality (several are genuinely two places — a mountain 奥宮 and a village 里宮), and
 `Q30929765`, whose Kokugakuin record has no coordinates to check against.
 
-1038 tests pass.
+**Takano Shrine got a merge, not a dedupe** (Emma's call, asked and answered). `Q11673131` is the
+one case where neither form contains the other, so `generate_miscellaneous_edits.py` adds the merged
+`〒708-0013 岡山県津山市二宮601` and a separate, unregistered
+`generate_ronsha_address_merge_removals.py` drops the two old forms — but only once a fresh SPARQL
+query sees the merged address live. Two scripts, because the daily batch runs its lines in random
+order and an add plus a remove in one file could fire remove-first, leaving the shrine with no
+address at all. Verified: script 2 currently emits nothing, which is correct until the drip lands.
+
+1052 tests pass.
 
 ---
 

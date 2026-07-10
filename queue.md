@@ -67,15 +67,14 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   NB the `Day of Reisai` property proposal was **declined** (2025-12-07); the model stays
   `P837` + `P3831`=`Q11385469` per `docs/wikidata_shrine_festival_model.md`.
 
-## Hard-residual street addresses — 17 removals queued; one open question
+## Hard-residual street addresses — decided, queued; one manual follow-up
 
-Decided by Emma 2026-07-10; 17 removals are in `miscellaneous_edits.txt` behind the gate. Report
-(what was removed and what was deliberately left): `docs/ronsha_address_resolution_2026-07.md`.
+Decided by Emma 2026-07-10; 17 removals + the Takano merge-add are in `miscellaneous_edits.txt`
+behind the gate. Report: `docs/ronsha_address_resolution_2026-07.md`.
 
-- [ ] `Q11673131` Takano Shrine — a **fourth** format duplicate, surfaced only after the postcode
-  fix, so not among the 3 Emma deduped. Neither form is a superset: `〒708-0013 津山市二宮601` has
-  the postcode + block, `岡山県津山市二宮` has the prefecture. Needs her call, or a plain edit
-  adding `〒708-0013 岡山県津山市二宮601` (an add, not a removal).
+- [ ] `generate_ronsha_address_merge_removals.py` (script 2, **unregistered, manual**) drops
+  Takano Shrine's two old addresses. It emits nothing until SPARQL sees the merged
+  `〒708-0013 岡山県津山市二宮601` live. Run it by hand after the drip has delivered.
 
 ## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED; batch BUILT + WIRED TO THE DRIP)
 
