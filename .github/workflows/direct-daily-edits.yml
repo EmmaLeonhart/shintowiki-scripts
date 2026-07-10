@@ -43,6 +43,16 @@ jobs:
         run: python watch_conflicting_editor.py
         continue-on-error: true
 
+      # Captures the pre-damage state of any item the watched editor has newly
+      # gutted. Read-only; never overwrites an archive already held. Runs even
+      # while the drip is paused — that is exactly when the damage accumulates.
+      # Emma 2026-07-10: "we should be preserving the information on them so they
+      # could potentially be recreated."
+      - name: Archive items damaged by the watched editor
+        working-directory: modern-quickstatements
+        run: python archive_destroyed_items.py
+        continue-on-error: true
+
       - name: Execute edits via Wikidata API
         working-directory: modern-quickstatements
         env:
