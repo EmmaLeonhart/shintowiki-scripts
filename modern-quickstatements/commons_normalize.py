@@ -1,0 +1,108 @@
+"""commons_normalize — a Wikimedia Commons category name → house-style English label.
+
+A **mid-pipeline fallback** stage (Emma, 2026-07-10): it fires only after the earlier,
+higher-confidence stages (an existing English label, then kana derivation) have produced
+nothing. Because everything more reliable has already been tried, an imperfect result here
+is acceptable — the alternative is no label at all.
+
+Scope: Japanese Shinto shrines and Japanese Buddhist temples only. Input is the Commons
+category name, which for these subjects is Latin-script romaji ("Kiyomizu-dera",
+"Meiji Jingu", "Sensouji"). Output is the house-style English label, or None when the name
+is not confidently a shrine/temple (no recognised suffix, or non-Latin residue in the stem).
+
+Long vowels: **transcribe what the romaji marks, never guess what it doesn't.**
+    Sensouji  -> "Sensō-ji Temple"   (the spelled `ou` becomes `ō`)
+    Sensoji   -> "Senso-ji Temple"   (bare `o`, left plain — the acceptable missed macron)
+
+Design/spec: docs/superpowers/specs/2026-07-10-commons-romaji-normalization-design.md
+"""
+import re
+from typing import Optional
+
+# ── long-vowel transcription ────────────────────────────────────────────────
+# Marked long vowels in the romaji spelling → macron. Order matters only in that each is a
+# self-contained 2→1 substitution. This is best-effort: it will occasionally add a macron
+# where the "ou" is really an o+u boundary (Inoue → Inōe). Emma accepts that; the accuracy
+# report measures it before any edit is proposed.
+_LONG_VOWELS = (("ou", "ō"), ("oo", "ō"), ("uu", "ū"))
+
+
+def transcribe_long_vowels(s: str) -> str:
+    for pair, macron in _LONG_VOWELS:
+        s = s.replace(pair, macron)
+    return s
+
+
+# ── suffix conventions (romaji analogues of temple_english / kana_english) ───
+# Temple: "<Stem>-<suffix> Temple".  Longest ending first so `dera`/`tera` beat `ji` etc.
+_TEMPLE_SUFFIXES = ("dera", "tera", "ji", "in", "an", "do", "bo")
+
+# Shrine *words* (usually a separate token). Longest first so `daijinja` beats `jinja` and
+# `jingu`/`taisha` beat the short attached `-gu`/`-sha` below.
+_SHRINE_WORDS = (
+    ("daijinja", "Daijinja"),
+    ("jinja", "Shrine"),
+    ("jingu", "Grand Shrine"),
+    ("taisha", "Grand Shrine"),
+)
+# Shrine *attached* suffixes: "<Stem>-<suffix> Shrine".
+_SHRINE_ATTACHED = ("sha", "gu")
+
+_BRACKETS = re.compile(r"\s*[（(〔][^）)〕]*[）)〕]")
+_LATIN_STEM = re.compile(r"^[A-Za-zŌŪĀĪĒōūāīē'’.\- ]+$")
+
+
+def _strip(name: str) -> str:
+    """Drop a leading 'Category:' and any bracketed disambiguator; collapse whitespace."""
+    if name.startswith("Category:"):
+        name = name[len("Category:"):]
+    name = _BRACKETS.sub("", name)
+    return re.sub(r"\s+", " ", name).strip()
+
+
+def _macron_free(s: str) -> str:
+    return s.translate(str.maketrans("āīūēōĀĪŪĒŌ", "aiueoAIUEO"))
+
+
+def normalize(commons_name: str) -> Optional[str]:
+    """Commons category name → house English label, or None if not confidently in scope."""
+    name = _strip(commons_name or "")
+    if not name:
+        return None
+
+    # Already in house form — keep it, only fixing marked long vowels.
+    for suf in (" Temple", " Shrine", " Grand Shrine", " Daijinja"):
+        if name.endswith(suf):
+            return transcribe_long_vowels(name)
+
+    low = _macron_free(name).lower()
+
+    # Shrine words first (they can contain the short attached suffixes).
+    for ending, house in _SHRINE_WORDS:
+        if low.endswith(ending):
+            stem = name[: len(name) - len(ending)].rstrip(" -")
+            return _shrine(stem, house)
+
+    # Temple suffixes.
+    for ending in _TEMPLE_SUFFIXES:
+        if low.endswith(ending):
+            stem = name[: len(name) - len(ending)].rstrip(" -")
+            if not stem:
+                return None
+            return "{}-{} Temple".format(transcribe_long_vowels(stem), ending)
+
+    # Short attached shrine suffixes.
+    for ending in _SHRINE_ATTACHED:
+        if low.endswith(ending):
+            stem = name[: len(name) - len(ending)].rstrip(" -")
+            if not stem:
+                return None
+            return "{}-{} Shrine".format(transcribe_long_vowels(stem), ending)
+
+    return None
+
+
+def _shrine(stem: str, house: str) -> Optional[str]:
+    if not stem or not _LATIN_STEM.match(stem):
+        return None
+    return "{} {}".format(transcribe_long_vowels(stem), house)
