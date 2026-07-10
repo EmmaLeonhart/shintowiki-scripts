@@ -4,6 +4,29 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — put the deferred decisions on [[Open questions]], per Emma's wiki-queue note
+
+Emma left a Wiki-based-queue bullet: *"Add all the things that we reported on into the section
+above, overwriting the other stuff in that section."* The section above was still the 2026-07-08
+labels-pipeline report (a week old today, so due to clear anyway).
+
+Replaced it with the decisions and actions the last two ticks reported and she has not yet acted on,
+each pointing at its `docs/` write-up: the four Engishiki "report only, decide later" items (the 150
+orphans, the Izumo one-item-two-entries split, the 17 palace kami, the 22 duplicate part-of
+statements); the one Awa hand edit only she can make (delete the piped-in ordinal-3 statement; the
+add is queued); the three remove-only batches waiting to be run by hand (list membership, province
+exclusions, Takano merge); and the Kokugakuin id matcher she asked to have explained.
+
+Edited repo-side in `git_synced/Open questions.wiki` (based on a fresh pull of the live page, so
+Emma's 17:44 UTC edit is preserved) and cleared the metabolised bullet from the Wiki-based queue.
+The page is wiki-wins on most-recent-edit timestamp, so this lands only if the sync fires with the
+repo commit newer than any later wiki edit. Nothing was added to queue.md — the item was picked up
+and completed in the same tick.
+
+No code changed; 1127 tests still pass from the prior tick.
+
+---
+
 ## 2026-07-10 — audited every registered removal batch; one had never run a single line
 
 The 岩井温泉 hole was a gating query that missed a protecting fact, and that class of bug generalises,

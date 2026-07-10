@@ -2,20 +2,24 @@ __NOTOC__
 
 == Open questions ==
 
-''(Labels-pipeline report, requested 2026-07-08; clears after a week per the reports rule.)''
+''These are the things we reported on over 2026-07-09/10 that are waiting on you. Each links a full write-up in <code>docs/</code>. Strike or answer inline and the bot deletes the bullet once acted on.''
 
-'''How a label gets onto Wikidata today — the whole pipeline:'''
-# '''Sources of English labels''' (all end up as atomic QS files in <code>modern-quickstatements/</code>): the shinto-wiki page names (<code>fetch_en_labels_from_wiki.py</code> — [[QuickStatements/en labels]] wiki page is the hand-curated source); kana-derived romanizations (<code>kana_en_labels</code>, <code>identical_name_en_labels</code>, temple variants); the daily claude.ai Sonnet routine translating batches of shrines/temples picked by <code>select_shrines_to_translate.py</code> (<code>en_labels_sonnet</code>); and RAG-corrected typo fixes (<code>label_typo_fixes</code>, from the 161-item review queue).
-# '''The 70-language machinery''' (<code>shinto-label-generator/</code>, <code>language_registry.py</code> is the single source of truth for which language uses which method): transliteration from the English/romaji form for most languages; Chinese via kana→man'yōgana + OpenCC for the zh family; Korean via koreanize (Japan) / hanja; Indonesian "Kuil X" proposals; Toki Pona; plus specialized generators for kami, Buddhist deities, misc Shinto terms, concepts (hand-authored), properties (hand-authored), court ranks, provinces, texts. Every output line carries a provenance comment. ~2.6M proposed labels currently sit in <code>quickstatements/&lt;lang&gt;.txt</code>.
-# '''The drip:''' <code>select_label_proposals.py</code> feeds 20 proposals per CI run into <code>label_proposals_drip.txt</code>; everything flows to Wikidata through the single daily editor (<code>direct_daily_edits.py</code>, 300/day, random interleave).
-# '''The uniqueness interlock (new this week):''' a label can only land if the label+description pair is unique — stale descriptions block label adds, so the description program runs alongside: desc-then-label pairs (100/day), class-true description adds (50/day until 2027-01), and collision groups routed to cloud enrichment for unique English descriptions (236 work-files live).
-# '''Guards:''' label-generator outputs never overwrite existing labels (non-destructive checks); label-typo review corrects the legacy romaji typos; the edits-today tile on the dashboard counts the account's total daily Wikidata edits.
+'''Engishiki lists — decisions you deferred ("report only, decide later")'''
+* '''150 confirmed Shikinaisha no list names.''' 84 are the same shrine twice — a living-shrine item and the separate 927-entry item the list already names (matched by shared Kokugakuin id, exact name, or old-vs-new spelling). 66 have no twin at all. Two questions: link/merge the 84 pairs, and are the 66 mis-tagged modern shrines or entries the lists are missing? (<code>docs/orphan_shikinaisha_2026-07.md</code>)
+* '''Izumo names one item for two entries.''' 坐韓国伊大弖神社 covers both 意宇郡 entry 28 (in 揖夜神社's grounds) and entry 39 (伊'''太'''弖, in 佐久多神社's). Ordinal 39 is an empty hole. Splitting it needs a '''new item''' — not something the QuickStatements pipeline can make. (<code>docs/engishiki_list_defects_2026-07.md §1</code>)
+* '''The 17 palace kami.''' The Imperial Palace list names four grouped items (八神殿, 座摩神, 御門巫祭神 八座, 生島巫祭神 二座) but you also hold an item for each of the 17 individual deities (Kokugakuin 180542–180558). Both models say true things; which is canonical? (<code>docs/engishiki_list_structure_2026-07.md</code>)
+* '''22 duplicated "part of" statements''' on named parts (the old import damage; 天王宮… holds three). QuickStatements removes by value, so it cannot delete one identical twin without risking the other. Only a browser remove-and-re-add fixes these. (<code>docs/ronsha_list_membership_2026-07.md</code>)
 
-'''Why the page wasn't metabolising''' ''(answers the 2026-07-09 bullet; agent, 18:30 UTC)''
-* You were right that it's about push cadence. This page is '''wiki-wins''': <code>sync_git_synced_pages.py</code> sets <code>static_policy="wiki"</code> for it, and conflicts resolve on '''most-recent-edit timestamp'''. So a repo-side deletion only lands if the repo commit is newer than the last wiki edit at the moment the sync fires.
-* What actually happened today: <code>git-synced-sync</code> last ran '''16:45 UTC'''. The metabolise commits landed '''17:55/17:56 UTC'''. You then edited the page at '''18:02''' and '''18:07 UTC'''. So (a) the sync had not fired at all in the 43 minutes since the push, and (b) whenever it next fired, your 18:07 edit would beat the 17:56 commit and it would PULL, restoring the bullets.
-* Two things are therefore true: the commits weren't fast enough after pickup, '''and''' the 15-minute cron is not firing on schedule (runs today: 01:11, 05:08, 08:46, 11:37, 14:17, 16:45 — six, not ~96). GitHub is dropping the schedule.
-* Fix applied now: metabolise, commit, push, and '''dispatch the sync immediately''' rather than waiting for the cron. Doing that every time is the discipline you asked for.
+'''Hand edits only you can make (the add half is already queued in the drip)'''
+* '''Awa list:''' delete the "has part → 下立松原神社" statement at ordinal '''3''' on 安房国の式内社一覧. Entry 3 is 天神社; a piped link was imported over it. The add of 天神社 at ordinal 3 is queued. Value-shared with the correct ordinal-5 statement, so the delete cannot be a QuickStatement. (<code>docs/engishiki_list_defects_2026-07.md §1</code>)
+
+'''Batches waiting for you to run them by hand''' (remove-only, unregistered, each gated on its add having already landed)
+* '''List membership:''' 2,236 removals stripping the list link from the 2,151 Ronsha no list names. (<code>generate_list_membership_removals.py</code>)
+* '''Province exclusions:''' script 2, after the drip works through the two corrections. (<code>generate_province_exclusion_removals.py</code>)
+* '''Takano address merge:''' script 2, once the merged 〒708-0013 address lands. (<code>generate_ronsha_address_merge_removals.py</code>)
+
+'''Needs you to explain what it is'''
+* '''Kokugakuin id matcher''' — you asked to explain this task before it is decided. (<code>match_kokugakuin_ids.py</code>, <code>kokugakuin_id_report.txt</code>)
 
 == Wiki-based queue ==
 
