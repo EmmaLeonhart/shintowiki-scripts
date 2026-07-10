@@ -1,3 +1,4 @@
 Q128867054	PREFIX_OK	label carries the Ōmama (大間々) place prefix for disambiguation; P1814 kana しんめいぐう (Shinmeigu) records only the shrine-type portion of the name. The shrine is in Ōmama, Midori, Gunma. Also note: label spells the prefix "Omama" without the macron (should be Ōmama).
 Q135258978	KANA_ISSUE	P1814 kana おおうちじんじゃ correctly romanizes to Ōuchijinja, matching the label "Ōuchi Shrine"; the KANA_ROMANIZED field "Ochijinja" was generated incorrectly (dropping おお→Ō). Wikidata currently shows P1814 = おおうちじんじゃ and the label is consistent. No edit needed.
 Q17220848	LABEL_TYPO	Honoikazuchi Shrine
+Q115041081	PREFIX_OK	"Takagi" is a place-name disambiguator (高木) prepended to the English label to distinguish this Hikawa Shrine from the many others; the kana ひかわじんじゃ correctly reflects the shrine's Japanese name 氷川神社 without the location qualifier

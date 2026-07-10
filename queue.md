@@ -146,10 +146,17 @@ as it lands. 26 entries carry several Kokugakuin ids, so no database reference i
   Remove-only, SPARQL-gated, UNREGISTERED and manual: QuickStatements removes by *value*, so a
   value-matched removal on an item that also holds the clean statement would delete both. Only the
   non-part items are safe to remove this way.
-- [ ] The 150 confirmed Shikinaisha that are **not** named as parts of any list — investigate
-  (Emma: *"there's confirmed shikinaisha i.e. not disputed ones"*).
 - [ ] `report_ronsha_list_membership.py` and `docs/ronsha_list_membership_2026-07.md` hold the
   per-item detail.
+
+**The 150 confirmed Shikinaisha not named as parts: INVESTIGATED, both decisions deferred**
+(`docs/orphan_shikinaisha_2026-07.md`, `report_orphan_shikinaisha.py`). 84 are modern shrine items
+duplicating a 927 entry item the list already names (47 by shared Kokugakuin id, 29 by exact ja
+label, 8 by normalised label). 66 have no twin. Emma 2026-07-10 answered **report only, decide
+later** to both — what to do about the 84 duplicate pairs, and whether the 66 are mis-tagged
+shrines or entries the lists are missing. Nothing is edited. Two loose threads recorded there:
+13 named entries lack a Kokugakuin id, and `Q11474068` 岩井温泉 is a **hot spring** carrying the
+confirmed Shikinaisha class.
 
 ## LAST — repurposed-item damage, on hold (Emma 2026-07-10)
 

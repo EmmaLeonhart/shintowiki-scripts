@@ -4,6 +4,43 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — the 150 confirmed Shikinaisha no list names: duplicates, mostly
+
+Emma's aside during the list-membership work — *"there's confirmed shikinaisha i.e. not disputed
+ones"* — turned out to name a whole second population. `Shikinaisha` (confirmed) is a different
+class from `Shikinai Ronsha` (disputed): **2,863 items** carry it, **2,713** are named as a part of
+an Engishiki list, and **150 are not**. `report_orphan_shikinaisha.py` (report only, 14 tests) asks
+what those 150 are.
+
+**Eighty-four of them are the same shrine twice.** The Engishiki list names an entry item — the 927
+record — and a *separate* modern shrine item also carries the confirmed class. 47 give themselves
+away by sharing a Kokugakuin entry id with the named entry; 29 by carrying the same Japanese label;
+8 more only after normalising the spelling, because the living shrine keeps the 旧字体 and the entry
+does not: 三國神社 / 三国神社, 彌彦神社 / 弥彦神社, 都留彌神社 / 都留弥神社. That fold — 旧字体 to
+新字体, 之 and ノ to の, ヶ and ケ to が, trailing 社/宮 dropped — is the load-bearing part, and it is
+tested against pairs that must *not* collide as well as pairs that must.
+
+**The remaining 66 have no twin the report can find:** 43 claim a list that never names them back,
+20 claim no list at all, 3 hold their own Kokugakuin id and are still unnamed.
+
+The discriminator is the Kokugakuin id. **2,700 of the 2,713 named entries hold one (99.5%); only
+69 of the 150 (46%) do.** An item the 式内社 database does not know is unlikely to be an Engishiki
+entry record. I first wrote that as "every named entry has one" — the generated table said 2,700 of
+2,713, and the prose was corrected to match the number rather than the other way round. The 13
+named entries *without* an id are a loose thread this report does not cover.
+
+Also loose: `Q11474068` is 岩井温泉, a **hot spring**, carrying `instance of: Shikinaisha` alongside
+`hot spring` and `Shinto shrine`.
+
+**Emma's answer to both questions was report only, decide later** — neither the 84 duplicate pairs
+nor the 66 orphans get an edit. Wikidata is gated behind `conflict_gate` anyway, and the reading
+that would justify 63 or 84 removals is exactly the kind of thing that should not be acted on from
+an inference about a missing identifier. Nothing was emitted; nothing was touched.
+
+1066 tests pass.
+
+---
+
 ## 2026-07-10 — the misc queue learns to remove things, one named line at a time
 
 Emma decided the Shikinai Ronsha address residual: *"Add it to the misc to remove them."* But
