@@ -66,6 +66,8 @@ GSI_MUNI = "https://maps.gsi.go.jp/js/muni.js"
 _COORD = re.compile(
     r"北緯\s*(\d+)\s*度\s*(\d+)\s*分\s*([\d.]+)\s*秒\s*"
     r"東経\s*(\d+)\s*度\s*(\d+)\s*分\s*([\d.]+)\s*秒")
+# Any address that opens with a prefecture name at all.
+_NAMES_A_PREFECTURE = re.compile(r"^.{2,4}?[都道府県]")
 _MUNI_ENTRY = re.compile(r"MUNI_ARRAY\[\s*[\"'](\d+)[\"']\s*\]\s*=\s*'([^']*)'")
 
 
@@ -104,14 +106,40 @@ def parse_coords(page_text):
     return uniq
 
 
+# 〒708-0013 津山市二宮601 — a postcode prefix, and no prefecture at all.
+_POSTCODE = re.compile(r"^\s*〒?\s*\d{3}[-‐−ー]?\d{4}\s*")
+_FULLWIDTH_DIGITS = {ord("０") + i: ord("0") + i for i in range(10)}
+
+
+def normalise_address(address):
+    """Strip a leading 〒postcode and fold fullwidth digits.
+
+    Three of the 67 addresses begin `〒NNN-NNNN`. Because `address_matches` required
+    the string to START with the prefecture, every one of them failed to match and
+    was DROPPED by a `resolved` verdict — including two that were simply the *same
+    place stated more precisely* (`〒950-0075 新潟県新潟市中央区沼垂東１丁目１番１７号`
+    beside `新潟県新潟市中央区沼垂東`). Silently discarding the better address is
+    exactly the failure this whole report exists to prevent.
+    """
+    return _POSTCODE.sub("", (address or "")).translate(_FULLWIDTH_DIGITS).strip()
+
+
 def normalise_municipality(name):
     """`横浜市　西区` -> [`横浜市`, `西区`]; `大紀町` -> [`大紀町`]."""
     return [p for p in re.split(r"[\s　]+", name.strip()) if p]
 
 
 def address_matches(address, prefecture, municipality):
-    """Does this Japanese address sit in that prefecture and municipality?"""
-    if not address.startswith(prefecture):
+    """Does this Japanese address sit in that prefecture and municipality?
+
+    An address that names its prefecture must name the RIGHT one. An address that
+    omits it (`津山市二宮601`, once its postcode is stripped) is judged on the
+    municipality alone.
+    """
+    address = normalise_address(address)
+    if not address:
+        return False
+    if _NAMES_A_PREFECTURE.match(address) and not address.startswith(prefecture):
         return False
     return all(part in address for part in normalise_municipality(municipality))
 
@@ -232,7 +260,8 @@ def haversine_km(lat1, lon1, lat2, lon2):
 
 def geocode_address(address):
     """(lat, lon) of a Japanese address via the 国土地理院 address search, or None."""
-    r = requests.get(GSI_FORWARD, params={"q": address}, headers=HEADERS, timeout=60)
+    r = requests.get(GSI_FORWARD, params={"q": normalise_address(address)},
+                     headers=HEADERS, timeout=60)
     r.raise_for_status()
     hits = r.json()
     if not hits:

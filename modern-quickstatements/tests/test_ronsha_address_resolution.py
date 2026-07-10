@@ -89,6 +89,42 @@ def test_an_ordinance_city_requires_both_city_and_ward():
     assert not rr.address_matches("神奈川県横浜市南区中央1-1", "神奈川県", "横浜市　西区")
 
 
+# ────────── the postcode prefix that silently dropped the better address ──────────
+
+def test_a_postcode_prefix_is_stripped():
+    assert rr.normalise_address("〒708-0013 津山市二宮601") == "津山市二宮601"
+
+
+def test_fullwidth_digits_in_an_address_are_folded():
+    assert rr.normalise_address("〒950-0075 新潟県新潟市中央区沼垂東１丁目１番１７号")         == "新潟県新潟市中央区沼垂東1丁目1番17号"
+
+
+def test_an_address_without_a_prefecture_matches_on_the_municipality():
+    """`〒708-0013 津山市二宮601` names no prefecture. It was DROPPED by a resolved
+    verdict simply for not starting with 岡山県 — while being the same place as the
+    kept address, stated more precisely."""
+    assert rr.address_matches("〒708-0013 津山市二宮601", "岡山県", "津山市")
+
+
+def test_a_postcoded_address_in_an_ordinance_city_matches():
+    assert rr.address_matches(
+        "〒950-0075 新潟県新潟市中央区沼垂東１丁目１番１７号", "新潟県", "新潟市　中央区")
+
+
+def test_a_postcoded_address_in_the_wrong_prefecture_still_fails():
+    """Q124668655's loser really is elsewhere: 岐阜県 vs 愛知県."""
+    assert not rr.address_matches(
+        "〒501-6021 岐阜県各務原市川島笠田町１４６", "愛知県", "江南市")
+
+
+def test_an_address_naming_a_prefecture_must_name_the_right_one():
+    assert not rr.address_matches("神奈川県伊勢原市三ノ宮1472", "三重県", "大紀町")
+
+
+def test_a_prefectureless_address_in_the_wrong_municipality_fails():
+    assert not rr.address_matches("津山市二宮601", "岡山県", "岡山市")
+
+
 # ─────────────────────── resolution ───────────────────────
 
 ADDRS = ["三重県度会郡大紀町滝原872", "神奈川県伊勢原市三ノ宮1472"]

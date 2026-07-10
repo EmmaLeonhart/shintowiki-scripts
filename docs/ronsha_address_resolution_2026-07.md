@@ -23,42 +23,7 @@ and **every** address is tested against **every** coordinate.
 
 * Ronsha with more than one Japanese address: **42**
 * …of which exactly one Kokugakuin id: **33**
-* resolved **10** · no-match **0** · several **22** · error **1**
-
-## Does the entry's coordinate belong to an adjacent, non-candidate shrine?
-
-Emma 2026-07-10: *"each of the candidate shrines has one of the coordinates, but the glitch makes
-it so that they get coordinates from an adjacent shrine that is not a candidate. There should be
-no matches on the page whatsoever."*
-
-**The data does not support that as the general case.** Municipality matching found **zero**
-items where no address matched any coordinate. Because a municipality is coarse, each address was
-then geocoded (国土地理院 address search) and measured against the nearest coordinate on its entry:
-
-| address → nearest coordinate | count |
-|---|---:|
-| < 0.5 km | 27 |
-| 0.5 – 2 km | 17 |
-| 2 – 10 km | 11 |
-| > 10 km | 7 |
-
-Median distance **0.65 km**, minimum **5 m**. Most addresses sit essentially *on* one of the
-entry's coordinates, so the coordinates do correspond to the item's own addresses.
-
-**Only 2 items show the predicted glitch** — every address more than 2 km from every coordinate:
-
-| Item | Kokugakuin | km from each address to the nearest coordinate |
-|---|---|---|
-| [Q107410067](https://www.wikidata.org/wiki/Q107410067) | [183187](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183187) | 4.3 km, 4.3 km |
-| [Q43594855](https://www.wikidata.org/wiki/Q43594855) | [183184](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183184) | 2.8 km, 10.6 km |
-
-**What the other 30 look like instead.** For **16** of the 22 `several` items, the item's two
-addresses match *two different* coordinates on the **same** entry — i.e. the item carries the
-addresses of two different candidate shrines that the entry lists. A Ronsha is one shrine with one
-address (Emma, 2026-07-09), so those items are conflations, not coordinate glitches.
-
-The remaining `several` items have both addresses inside one municipality (e.g. Hibita Shrine's
-三ノ宮1472 vs 三ノ宮1468), which coordinates cannot separate.
+* resolved **7** · no-match **0** · several **25** · error **1**
 
 ## no-match — nothing on the entry corresponds to this item
 
@@ -76,11 +41,8 @@ addresses sit in.
 | [Q11358379](https://www.wikidata.org/wiki/Q11358379) | [183197](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183197) | `徳島県徳島市` | `徳島県徳島市国府町矢野` | `徳島県名西郡神山町神領` |
 | [Q11487151](https://www.wikidata.org/wiki/Q11487151) | [181631](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181631) | `静岡県伊東市` | `静岡県伊東市十足` | `静岡県沼津市西浦江梨329` |
 | [Q11553669](https://www.wikidata.org/wiki/Q11553669) | [181673](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181673) | `山梨県笛吹市` | `山梨県笛吹市一宮町一ノ宮` | `山梨県南都留郡富士河口湖町河口1` |
-| [Q11673131](https://www.wikidata.org/wiki/Q11673131) | [183061](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183061) | `岡山県津山市` `岡山県津山市` | `岡山県津山市二宮` | `〒708-0013 津山市二宮601` |
-| [Q124668655](https://www.wikidata.org/wiki/Q124668655) | [181386](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181386) | `愛知県江南市` `岐阜県各務原市` `岐阜県各務原市` | `愛知県江南市宮田町四ツ谷` | `〒501-6021 岐阜県各務原市川島笠田町１４６` |
 | [Q48758315](https://www.wikidata.org/wiki/Q48758315) | [183214](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183214) | `徳島県阿南市` | `徳島県阿南市羽ノ浦町中庄千田池32` | `徳島県海部郡海陽町大里` |
 | [Q48758398](https://www.wikidata.org/wiki/Q48758398) | [183199](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183199) | `徳島県徳島市` | `徳島県徳島市明神町` | `徳島県名西郡石井町高川原桜間281` |
-| [Q63148121](https://www.wikidata.org/wiki/Q63148121) | [182463](https://jmapps.ne.jp/kokugakuin/det.html?data_id=182463) | `新潟県新潟市　中央区` `新潟県新発田市` `新潟県新発田市` | `新潟県新潟市中央区沼垂東` | `〒950-0075 新潟県新潟市中央区沼垂東１丁目１番１７号` |
 | [Q97311695](https://www.wikidata.org/wiki/Q97311695) | [181751](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181751) | `埼玉県吉川市` `千葉県流山市` | `千葉県流山市三輪野山` | `千葉県松戸市小金原5-28-12` |
 
 ## several — more than one address matches
@@ -100,8 +62,10 @@ Each address is shown with its distance to the *nearest* coordinate on the entry
 | [Q11464224](https://www.wikidata.org/wiki/Q11464224) | [181693](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181693) | `東京都多摩市一の宮一丁目18-8` — 0.03 km<br>`東京都多摩市一ノ宮` — 0.17 km | `東京都多摩市` `東京都府中市` |
 | [Q11474394](https://www.wikidata.org/wiki/Q11474394) | [183013](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183013) | `兵庫県明石市大蔵本町6-10` — 0.04 km<br>`兵庫県明石市材木町8-10` — 0.01 km | `兵庫県明石市` `兵庫県明石市` `兵庫県明石市` |
 | [Q11625297](https://www.wikidata.org/wiki/Q11625297) | [181698](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181698) | `東京都青梅市根ケ布` — 0.42 km<br>`東京都青梅市根ヶ布1-316` — 0.05 km | `東京都調布市` `東京都青梅市` |
+| [Q11673131](https://www.wikidata.org/wiki/Q11673131) | [183061](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183061) | `〒708-0013 津山市二宮601` — 0.11 km<br>`岡山県津山市二宮` — 0.65 km | `岡山県津山市` `岡山県津山市` |
 | [Q11673954](https://www.wikidata.org/wiki/Q11673954) | [183022](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183022) | `兵庫県たつの市揖保町中臣` — 0.66 km<br>`兵庫県姫路市網干区宮内193` — 0.00 km | `兵庫県たつの市` `兵庫県姫路市` `兵庫県姫路市` |
 | [Q124496744](https://www.wikidata.org/wiki/Q124496744) | [181361](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181361) | `岐阜県羽島市桑原町八神4665` — 0.06 km<br>`愛知県一宮市今伊勢町馬寄` — 0.76 km | `愛知県一宮市` `愛知県一宮市` `岐阜県羽島市` |
+| [Q124668655](https://www.wikidata.org/wiki/Q124668655) | [181386](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181386) | `〒501-6021 岐阜県各務原市川島笠田町１４６` — 0.02 km<br>`愛知県江南市宮田町四ツ谷` — 0.12 km | `愛知県江南市` `岐阜県各務原市` `岐阜県各務原市` |
 | [Q135069149](https://www.wikidata.org/wiki/Q135069149) | [180938](https://jmapps.ne.jp/kokugakuin/det.html?data_id=180938) | `大阪府東大阪市御厨` — 0.09 km<br>`大阪府東大阪市長田2-8-18` — 0.05 km | `大阪府東大阪市` `大阪府東大阪市` |
 | [Q3199052](https://www.wikidata.org/wiki/Q3199052) | [181072](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181072) | `兵庫県西宮市甑岩町５-４` — 2.63 km<br>`兵庫県西宮市社家町` — 0.09 km | `兵庫県西宮市` |
 | [Q3530344](https://www.wikidata.org/wiki/Q3530344) | [181482](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181482) | `愛知県豊川市一宮町西垣内2` — 0.05 km<br>`愛知県豊川市上長山町本宮下4` — 3.09 km | `愛知県豊川市` `愛知県豊川市` |
@@ -110,6 +74,7 @@ Each address is shown with its distance to the *nearest* coordinate on the entry
 | [Q48758357](https://www.wikidata.org/wiki/Q48758357) | [183179](https://jmapps.ne.jp/kokugakuin/det.html?data_id=183179) | `徳島県阿波市土成町郡字建布都569` — 0.60 km<br>`徳島県阿波市市場町香美` — 0.83 km | `徳島県阿波市` `徳島県阿波市` |
 | [Q54153265](https://www.wikidata.org/wiki/Q54153265) | [181764](https://jmapps.ne.jp/kokugakuin/det.html?data_id=181764) | `茨城県久慈郡大子町下野宮1626` — 1.12 km<br>`茨城県常陸太田市天神林町` — 0.25 km | `茨城県常陸太田市` `茨城県大子町` `茨城県桜川市` |
 | [Q54153278](https://www.wikidata.org/wiki/Q54153278) | [180813](https://jmapps.ne.jp/kokugakuin/det.html?data_id=180813) | `奈良県磯城郡田原本町保津` — 0.11 km<br>`奈良県磯城郡田原本町大字宮古字補屋60` — 0.56 km | `奈良県田原本町` `奈良県田原本町` |
+| [Q63148121](https://www.wikidata.org/wiki/Q63148121) | [182463](https://jmapps.ne.jp/kokugakuin/det.html?data_id=182463) | `〒950-0075 新潟県新潟市中央区沼垂東１丁目１番１７号` — 0.03 km<br>`新潟県新潟市中央区沼垂東` — 0.13 km | `新潟県新潟市　中央区` `新潟県新発田市` `新潟県新発田市` |
 | [Q65249271](https://www.wikidata.org/wiki/Q65249271) | [182045](https://jmapps.ne.jp/kokugakuin/det.html?data_id=182045) | `宮城県刈田郡蔵王町倉石岳` — 5.35 km<br>`宮城県刈田郡蔵王町宮` — 1.20 km | `宮城県蔵王町` `?` |
 | [Q66085129](https://www.wikidata.org/wiki/Q66085129) | [182020](https://jmapps.ne.jp/kokugakuin/det.html?data_id=182020) | `群馬県吾妻郡東吾妻町箱島` — 2.02 km<br>`群馬県渋川市祖母島499` — 1.38 km | `群馬県東吾妻町` `群馬県渋川市` `群馬県渋川市` `群馬県渋川市` |
 
