@@ -2,18 +2,18 @@
   "p459": {
     "name": "P459 qualifiers (determination method)",
     "description": "Add P459 (determination method) to existing P13723 statements \u2014 value-specific (Engishiki, Ritsury\u014d, modern, etc.)",
-    "total": 16997,
+    "total": 16995,
     "remaining": 0,
-    "completed": 16997,
+    "completed": 16995,
     "output_file": "modern_shrine_ranking_qualifiers.txt",
     "lines": 0
   },
   "p4656": {
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
-    "total": 16997,
+    "total": 16995,
     "remaining": 3,
-    "completed": 16994,
+    "completed": 16992,
     "output_file": "p4656_jawiki_references.txt",
     "lines": 3
   },
@@ -34,12 +34,12 @@
   "engishiki_refs": {
     "name": "Engishiki/Ritsury\u014d references",
     "description": "Add Kokugakuin University sources to Engishiki/Ritsury\u014d P13723 statements",
-    "total": 11922,
-    "remaining": 29,
+    "total": 11920,
+    "remaining": 27,
     "completed": 11893,
     "output_file": "engishiki_add_references.txt",
     "lines": 0,
-    "skipped_no_p13677": 18
+    "skipped_no_p13677": 17
   },
   "migrations": [
     {
@@ -122,13 +122,13 @@
       "description": "Kokuhei-sha, Kanpei-sha, and ritual offering types",
       "source_property": "P31",
       "determined_by": "Q135009120",
-      "total": 4832,
+      "total": 4808,
       "remaining": 0,
-      "completed": 4832,
+      "completed": 4808,
       "add_file": "migrate_ritsuryo_funding_add.txt",
       "remove_file": "migrate_ritsuryo_funding_remove.txt",
       "add_lines": 0,
-      "remove_lines": 4826,
+      "remove_lines": 4802,
       "underspec_file": "migrate_ritsuryo_funding_underspecified_remove.txt",
       "underspec_lines": 6
     }
