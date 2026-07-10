@@ -32,5 +32,6 @@ information on how this person works."*
 | [`Q17993219`](https://www.wikidata.org/wiki/Q17993219) | 寿徳寺 | 8 | — | `description:en` | 2026-07-10 |
 | [`Q135258523`](https://www.wikidata.org/wiki/Q135258523) | Henshō-in Temple | 8 | `P571` | — | 2026-07-10 |
 | [`Q138497691`](https://www.wikidata.org/wiki/Q138497691) | Renjo-in | 11 | — | `aliases:ja` | 2026-07-10 |
+| [`Q134736575`](https://www.wikidata.org/wiki/Q134736575) | Kenkō-ji Temple | 8 | `P625` `P6375` `P281` `P3225` | `description:en` | 2026-07-10 |
 
-23 items archived.
+24 items archived.
