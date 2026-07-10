@@ -4,6 +4,36 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-09 (later) — Mifune was three articles, and the P361 "384 duplicates" were 94
+
+**`Mifune Shrine (Taki)` is not "the same article twice".** It is three concatenated articles: one
+*unprocessed* old-style copy still carrying its `== Japanese content ==` wrapper and a `{{Shrine}}`
+infobox, plus two copies that had already been through the merge. The two merged copies differ by a
+single stray interwiki line — checked with a diff before deleting anything, because they were not
+byte-identical and the byte count alone (10,396 vs 11,001) would have suggested real divergence.
+Rebuilt to the shape of Emma's `Tamatsukuri Shrine` reference edit: 33,147 → 11,591 bytes, one
+`{{Shinto shrine}}` infobox, one lead, one `== Overview ==`. The surviving lead's claim that the
+article also covers Mumino Shrine is correct and stays.
+
+`Oyama Otsu Shrine` (Oyama Otsu + Ozu in one page) was opened in Emma's browser to split by hand.
+
+**The P361 anomaly item was unreadable, so it got measured instead of re-argued.** Emma: *"Honestly,
+I have no clue what you're even talking about right now."* The old 384 counted `P361` statements
+pointing at things that are not Engishiki lists — shrines, classes, the Twenty-Two Shrines.
+Restricted to real lists, of 2,277 Ronsha on a list: **94** hold two or more `P361` into the *same*
+list, and **0** are on two different lists.
+
+The 94 are two different problems. Some repeat the same ordinal (Futarasan Shrine, position 4 twice
+— one statement carrying `P155`/`P156`, one bare); others claim two different positions
+(Nijugohashira at 75 and 79; Sutou at 12, 14, 14). Only the first shape is safely redundant, and
+fixing either means removing a statement, which Emma has forbidden here three times. Nothing emitted;
+the queue item is rewritten in plain language at the tail for her to decide.
+
+Decisions recorded from this session: 伝-dates import as `P571` + `P1480` = `Q18122778` presumably
+(both verified live, not guessed); the 151 lead-less pages go to cloud RAG from their jawiki article.
+
+---
+
 ## 2026-07-09 — the province exclusion task, and the polygon that lies about Sumiyoshi Taisha
 
 The queue pointed at `docs/province_shapefiles.md` for weeks. It had never existed in any commit on
