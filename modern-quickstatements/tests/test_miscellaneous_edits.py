@@ -122,16 +122,130 @@ def test_a_deleted_target_refuses_rather_than_creating():
     assert any("CREATION" in n for n in notes)
 
 
+# ─────────────────────── address removals ───────────────────────
+
+def _addr_claim(text, lang="ja"):
+    return {"mainsnak": {"datavalue": {"type": "monolingualtext",
+                                       "value": {"text": text, "language": lang}}}}
+
+
+def _live(*addresses, qid=None):
+    qid = qid or misc.ADDRESS_REMOVALS[0][0]
+    return {qid: set(addresses)}
+
+
+def test_seventeen_removals_were_decided():
+    assert len(misc.ADDRESS_REMOVALS) == 17
+
+
+def test_no_removal_drops_the_address_it_means_to_keep():
+    for qid, drop, keep, _why in misc.ADDRESS_REMOVALS:
+        assert drop != keep, qid
+
+
+def test_no_two_removals_target_the_same_item():
+    qids = [q for q, _d, _k, _w in misc.ADDRESS_REMOVALS]
+    assert len(qids) == len(set(qids))
+
+
+def test_every_removal_records_why_it_is_here():
+    for entry in misc.ADDRESS_REMOVALS:
+        assert len(entry) == 4 and entry[3].strip()
+
+
+def test_no_address_contains_a_quote_that_would_break_the_line():
+    for _q, drop, keep, _w in misc.ADDRESS_REMOVALS:
+        assert '"' not in drop and '"' not in keep
+
+
+def test_the_removal_line_is_a_monolingual_japanese_value():
+    assert misc.removal_line("Q1", "東京都") == '-Q1|P6375|ja:"東京都"'
+
+
+def _why(skipped, qid):
+    return dict(skipped)[qid]
+
+
+def test_a_removal_is_emitted_when_both_addresses_are_live():
+    qid, drop, keep, _w = misc.ADDRESS_REMOVALS[0]
+    lines, skipped = misc.address_removal_lines(_live(drop, keep))
+    assert lines == [misc.removal_line(qid, drop)]
+    assert qid not in dict(skipped)
+
+
+def test_a_removal_is_skipped_once_it_has_landed():
+    qid, _drop, keep, _w = misc.ADDRESS_REMOVALS[0]
+    lines, skipped = misc.address_removal_lines(_live(keep))
+    assert not lines and _why(skipped, qid) == "already removed"
+
+
+def test_a_removal_is_refused_when_it_would_leave_no_address():
+    """Somebody else deleted the good address; dropping the bad one leaves none."""
+    qid, drop, _keep, _w = misc.ADDRESS_REMOVALS[0]
+    lines, skipped = misc.address_removal_lines(_live(drop))
+    assert not lines
+    assert "refusing to drop the last one" in _why(skipped, qid)
+
+
+def test_a_removal_is_refused_when_the_item_is_gone():
+    lines, skipped = misc.address_removal_lines({})
+    assert not lines and len(skipped) == len(misc.ADDRESS_REMOVALS)
+    assert all(why == "item is gone" for _q, why in skipped)
+
+
+def test_addresses_are_read_off_the_item_in_japanese_only():
+    claims = {"P6375": [_addr_claim("東京都"), _addr_claim("Tokyo", lang="en")]}
+    assert misc.address_values(claims) == {"東京都"}
+
+
+def test_a_novalue_address_does_not_crash_the_reader():
+    claims = {"P6375": [{"mainsnak": {"snaktype": "novalue"}}, _addr_claim("東京都")]}
+    assert misc.address_values(claims) == {"東京都"}
+
+
+def test_build_emits_the_removals_and_they_pass_the_invariant():
+    qid, drop, keep, _w = misc.ADDRESS_REMOVALS[0]
+    lines, _notes = misc.build(_ent({}), _live(drop, keep))
+    assert misc.removal_line(qid, drop) in lines
+
+
+def test_build_without_live_state_emits_no_removal():
+    """Calling build() with no live addresses must never guess."""
+    lines, _ = misc.build(_ent({}))
+    assert not any(l.startswith("-") for l in lines)
+
+
+def test_the_daily_editor_parses_every_removal_line():
+    for qid, drop, _keep, _w in misc.ADDRESS_REMOVALS:
+        p = dde.parse_qs_line(misc.removal_line(qid, drop))
+        assert p["is_removal"] and p["entity"] == qid
+        assert p["property"] == "P6375"
+        assert p["value"]["type"] == "monolingualtext"
+        assert p["value"]["value"] == {"text": drop, "language": "ja"}
+
+
 # ─────────────────────── invariants ───────────────────────
 
-def test_the_queue_never_emits_a_removal():
+def test_the_queue_emits_no_removal_it_was_not_asked_for():
     lines, _ = misc.build(_ent({}))
     assert lines and all(not l.startswith("-") for l in lines)
 
 
-def test_assert_no_removals_rejects_a_dash_line():
-    with pytest.raises(RuntimeError, match="ADD-only"):
-        misc.assert_no_removals(["Q1|P31|Q2", "-Q1|P31|Q3"])
+def test_an_unlisted_removal_is_rejected():
+    with pytest.raises(RuntimeError, match="STATIC_REMOVALS"):
+        misc.assert_removals_enumerated(["Q1|P31|Q2", "-Q1|P31|Q3"])
+
+
+def test_a_listed_removal_is_allowed():
+    qid, drop, _keep, _why = misc.ADDRESS_REMOVALS[0]
+    misc.assert_removals_enumerated([misc.removal_line(qid, drop)])
+
+
+def test_a_listed_removal_of_a_different_address_is_still_rejected():
+    """The enumeration is by line, not by item — one typo must not open the item up."""
+    qid, drop, _keep, _why = misc.ADDRESS_REMOVALS[0]
+    with pytest.raises(RuntimeError, match="STATIC_REMOVALS"):
+        misc.assert_removals_enumerated([misc.removal_line(qid, drop + "1")])
 
 
 def test_the_repurposed_item_is_never_touched():

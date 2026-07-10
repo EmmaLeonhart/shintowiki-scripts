@@ -83,3 +83,68 @@ Each address is shown with its distance to the *nearest* coordinate on the entry
 | Item | Kokugakuin | Why |
 |---|---|---|
 | [Q30929765](https://www.wikidata.org/wiki/Q30929765) | [182900](https://jmapps.ne.jp/kokugakuin/det.html?data_id=182900) | no coordinates on the record |
+
+---
+
+# Decisions (Emma, 2026-07-10) and what was done
+
+Seventeen addresses are queued for removal in
+`modern-quickstatements/miscellaneous_edits.txt`, so they drip out behind
+`conflict_gate` with everything else. Each one names the address it keeps, and the
+generator re-checks live state before emitting: if the address to keep has vanished,
+the removal is refused rather than leaving a shrine with no address at all.
+
+## Removed — 17
+
+**Seven where one address is far from every coordinate on the Kokugakuin entry.**
+Emma: *"resolve them and remove the incorrect address."* Distances 6.5 km to 46.4 km;
+the kept address is within a few hundred metres in every case.
+
+`Q106852693` · `Q11358379` · `Q11487151` · `Q11553669` · `Q48758315` ·
+`Q48758398` · `Q97311695`
+
+**Seven conflations broken by the item's own coordinates.** These entries describe
+more than one candidate shrine, so both shrines' addresses landed on one item. Emma:
+*"Keep the address matching the item's own coordinates."* In each case the item's own
+`coordinate location` falls inside one address's municipality and not the other's.
+
+`Q11379248` Takarazuka not Nishinomiya · `Q11379327` Amagasaki not Ikeda ·
+`Q11673954` Himeji not Tatsuno · `Q124496744` Hashima not Ichinomiya ·
+`Q124668655` Kakamigahara not Kōnan · `Q54153265` Daigo not Hitachiōta ·
+`Q66085129` Shibukawa not Higashiagatsuma
+
+**Three same-place duplicates.** Emma: *"Dedupe the 3."* Each keeps the form carrying
+the block number.
+
+`Q11464224` `一ノ宮` → `一の宮一丁目18-8` · `Q11625297` `根ケ布` → `根ヶ布1-316` ·
+`Q63148121` `沼垂東` → `沼垂東１丁目１番１７号`
+
+## Left alone — 15, and one count correction
+
+**`Q11673131` Takano Shrine — a fourth format duplicate, not deduped.** It surfaced
+only after the `〒`postcode prefix was stripped, so it was not among the three Emma
+saw. It is left alone because neither form is a superset of the other: `〒708-0013
+津山市二宮601` carries the postcode and block number but no prefecture;
+`岡山県津山市二宮` carries the prefecture. Dropping either loses something. **Needs a
+decision, or a rewrite of the survivor to `〒708-0013 岡山県津山市二宮601`, which is not
+a removal and would have to be added as a plain edit.**
+
+**Four items carry two `coordinate location` statements,** so the item's own
+coordinates cannot break the tie — both addresses match one of them.
+
+`Q11397966` Soegawa · `Q11442032` Ōmatonotsunoten · `Q107410059` Haniyamahime ·
+`Q135069149` Nagata
+
+**Ten items where both addresses fall in the same municipality.** The
+own-coordinates rule cannot separate them, and several are genuinely two different
+places (a mountain-top 奥宮 and a village 里宮, or two shrines the Kokugakuin entry
+treats as one). Nothing here is safe to remove by rule.
+
+`Q482065` Atsuta Jingū (**three** addresses; excluded from the pairwise check) ·
+`Q3199052` Koshikiiwa · `Q3530344` Toga · `Q11379343` Ikawadani Sōja ·
+`Q11474394` Iwaya · `Q43594855` Izanami · `Q54153278` Kagamitsukuri Ita ·
+`Q65249271` Kattamine · `Q48758357` Takefutsu Nishinomiya · `Q107410067`
+Amatsukasahiko
+
+**One error.** `Q30929765` — the Kokugakuin record carries no coordinates, so nothing
+can be checked against.
