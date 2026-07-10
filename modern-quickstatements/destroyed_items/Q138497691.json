@@ -1,0 +1,284 @@
+{
+  "qid": "Q138497691",
+  "archived_at": "2026-07-10T05:38:46Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-10T04:54:20Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [],
+  "terms_removed": [
+    "aliases:ja"
+  ],
+  "pre_damage_revision": {
+    "revid": 2515763011,
+    "timestamp": "2026-07-10T04:54:20Z",
+    "user": "ブルーノ・プラス",
+    "authored_by_watched_user": true
+  },
+  "summary": {
+    "labels": 2,
+    "en_label": "Renjo-in",
+    "ja_label": "蓮乗院",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P140",
+      "P281",
+      "P373",
+      "P571",
+      "P3225",
+      "P6375",
+      "P9721"
+    ],
+    "statement_count": 11,
+    "sitelinks": [
+      "commonswiki",
+      "jawiki"
+    ]
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q138497691",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "蓮乗院"
+      },
+      "en": {
+        "language": "en",
+        "value": "Renjo-in"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "神奈川県相模原市緑区にある寺院"
+      }
+    },
+    "aliases": {
+      "ja": [
+        {
+          "language": "ja",
+          "value": "神奈川県相模原市にある寺院"
+        }
+      ]
+    },
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "5b2582231cadfce098d47d340a4a862fcef49882",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 5393308,
+                "id": "Q5393308"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$883b65c0-40db-1e0e-0f72-c09ac7ddd1a8",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$c3ca9e6d-4ed0-bea2-6a25-99888085588c",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "82410c46888fa04edb0d922fad9376016c5962d1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 121021141,
+                "id": "Q121021141"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$a7fb9375-4159-47d6-74fe-0fd7101b7186",
+          "rank": "normal"
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "6e2e0ba5b118ee80d9a9919e304e34c092cf8a45",
+            "datavalue": {
+              "value": "蓮乗院本堂.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$26755521-4caf-cb3a-a7a4-7a165c1ba543",
+          "rank": "normal"
+        }
+      ],
+      "P3225": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P3225",
+            "hash": "879caa5690a5bebcaf9ba4ea453cd9f312c5c48a",
+            "datavalue": {
+              "value": "8021005002781",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$b71a79ac-4cdc-202a-5e30-bd3c9688361f",
+          "rank": "normal"
+        }
+      ],
+      "P373": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P373",
+            "hash": "c9a56c1db6cbe5151ee05505810c24f084bdacd5",
+            "datavalue": {
+              "value": "Renjo-in (Sagamihara)",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$51688c6a-48f7-a96c-3619-d1c013d67fa3",
+          "rank": "normal"
+        }
+      ],
+      "P140": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P140",
+            "hash": "b87ba08c11af720fc9a64feb5f78a1eef14ebd18",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 674374,
+                "id": "Q674374"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$3f95c9c3-4e00-b02a-84ac-09ebcfb5ed49",
+          "rank": "normal"
+        }
+      ],
+      "P6375": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P6375",
+            "hash": "ffdec54eac9c89a92cac3c3d9ac9fbf746de7f44",
+            "datavalue": {
+              "value": {
+                "text": "神奈川県相模原市緑区東橋本3丁目12-3",
+                "language": "ja"
+              },
+              "type": "monolingualtext"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$8668570b-4bf7-960a-6ac4-01b7b633bc93",
+          "rank": "normal"
+        }
+      ],
+      "P281": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P281",
+            "hash": "0ca55c44dbb5ca3799884c2b41f8b2fffbda6f86",
+            "datavalue": {
+              "value": "252-0144",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$cda30ec3-4c1d-b50e-31cb-e321974235b9",
+          "rank": "normal"
+        }
+      ],
+      "P571": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P571",
+            "hash": "0f065955024ebbf861b0dcb085570c053b03cb49",
+            "datavalue": {
+              "value": {
+                "time": "+1534-00-00T00:00:00Z",
+                "timezone": 0,
+                "before": 0,
+                "after": 0,
+                "precision": 9,
+                "calendarmodel": "http://www.wikidata.org/entity/Q1985786"
+              },
+              "type": "time"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$64fce30a-4d1b-020a-0df8-e84ea874451d",
+          "rank": "normal"
+        }
+      ],
+      "P9721": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P9721",
+            "hash": "d878b1878a7417785a3ab0e5cd83200c412495fc",
+            "datavalue": {
+              "value": "蓮乗院山門.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q138497691$daea337e-4963-c373-afbb-6e7153b2ff98",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": {
+      "jawiki": {
+        "site": "jawiki",
+        "title": "蓮乗院 (相模原市)",
+        "badges": []
+      },
+      "commonswiki": {
+        "site": "commonswiki",
+        "title": "Category:Renjo-in (Sagamihara)",
+        "badges": []
+      }
+    }
+  }
+}

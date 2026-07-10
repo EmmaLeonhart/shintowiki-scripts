@@ -1,0 +1,219 @@
+{
+  "qid": "Q135258523",
+  "archived_at": "2026-07-10T05:38:46Z",
+  "damaged_by": "ブルーノ・プラス",
+  "first_destructive_edit": "2026-07-10T04:37:12Z",
+  "destructive_edit_count": 1,
+  "properties_removed": [
+    "P571"
+  ],
+  "terms_removed": [],
+  "pre_damage_revision": {
+    "revid": 2387023103,
+    "timestamp": "2025-08-01T23:53:20Z",
+    "user": "Immanuelle",
+    "authored_by_watched_user": false
+  },
+  "summary": {
+    "labels": 3,
+    "en_label": "Henshō-in Temple",
+    "ja_label": "遍照院",
+    "properties": [
+      "P17",
+      "P18",
+      "P31",
+      "P131",
+      "P140",
+      "P571",
+      "P625",
+      "P1814"
+    ],
+    "statement_count": 8,
+    "sitelinks": []
+  },
+  "entity": {
+    "type": "item",
+    "id": "Q135258523",
+    "labels": {
+      "ja": {
+        "language": "ja",
+        "value": "遍照院"
+      },
+      "en": {
+        "language": "en",
+        "value": "Henshō-in Temple"
+      },
+      "id": {
+        "language": "id",
+        "value": "Wihara Henshō-in"
+      }
+    },
+    "descriptions": {
+      "ja": {
+        "language": "ja",
+        "value": "神奈川県厚木市にある寺院"
+      },
+      "en": {
+        "language": "en",
+        "value": "temple in Atsugi, Kanagawa"
+      }
+    },
+    "aliases": {
+      "en": [
+        {
+          "language": "en",
+          "value": "Henshō-in"
+        }
+      ]
+    },
+    "claims": {
+      "P31": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P31",
+            "hash": "5b2582231cadfce098d47d340a4a862fcef49882",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 5393308,
+                "id": "Q5393308"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q135258523$32fa5702-4e22-66be-43f8-8b9240555948",
+          "rank": "normal"
+        }
+      ],
+      "P17": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P17",
+            "hash": "55178c20e031f1579d34d802f16f6b9951b631e1",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 17,
+                "id": "Q17"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q135258523$b284de9d-43f9-fe04-cf00-b0becd8b49d1",
+          "rank": "normal"
+        }
+      ],
+      "P131": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P131",
+            "hash": "cd4e0d5514b4d892ec0424011e5bff212f29ced0",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 389711,
+                "id": "Q389711"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q135258523$c2bbc101-4f9a-20dd-9e7c-1c2203279c61",
+          "rank": "normal"
+        }
+      ],
+      "P140": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P140",
+            "hash": "842a3f0c2bf2d40438ff9e8aa25be5aeca2ea73b",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 3077357,
+                "id": "Q3077357"
+              },
+              "type": "wikibase-entityid"
+            }
+          },
+          "type": "statement",
+          "id": "Q135258523$93a5ca31-49bc-7d51-5641-84a9bd78e108",
+          "rank": "normal"
+        }
+      ],
+      "P625": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P625",
+            "hash": "8e08593ad31b6ebc7b9416d21c9ddc1d9323763a",
+            "datavalue": {
+              "value": {
+                "latitude": 35.464889,
+                "longitude": 139.354278,
+                "altitude": null,
+                "precision": 1e-06,
+                "globe": "http://www.wikidata.org/entity/Q2"
+              },
+              "type": "globecoordinate"
+            }
+          },
+          "type": "statement",
+          "id": "Q135258523$a277a22f-4cd3-1a94-2ab3-789fdb3a56a5",
+          "rank": "normal"
+        }
+      ],
+      "P18": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P18",
+            "hash": "590b701618a98ac9cac2e5013cdb885e84b4b4a3",
+            "datavalue": {
+              "value": "Hensho-in Temple in Atsugi city.jpg",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q135258523$a69449da-47f6-443b-2f05-7aa218c899a5",
+          "rank": "normal"
+        }
+      ],
+      "P571": [
+        {
+          "mainsnak": {
+            "snaktype": "somevalue",
+            "property": "P571",
+            "hash": "6738a7099bb4f22cc0577088a076bf2faa9b02b6"
+          },
+          "type": "statement",
+          "id": "Q135258523$8f27de7c-4c03-30d0-a76b-780db066dde5",
+          "rank": "normal"
+        }
+      ],
+      "P1814": [
+        {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P1814",
+            "hash": "52248e7a35f35b64bc7c27ef8f4c66ce7dc84a1d",
+            "datavalue": {
+              "value": "へんしょういん",
+              "type": "string"
+            }
+          },
+          "type": "statement",
+          "id": "Q135258523$17f306e0-4a3e-fbb8-8eb2-0501f651cd56",
+          "rank": "normal"
+        }
+      ]
+    },
+    "sitelinks": []
+  }
+}
