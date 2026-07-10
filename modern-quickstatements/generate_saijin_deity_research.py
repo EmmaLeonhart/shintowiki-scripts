@@ -21,13 +21,8 @@ match to kami items … Multi-deity + 主祭神 distinction via qualifier"), and
      role item. Deities that appear only in the general `祭神` list get a bare
      P825 — principal-ness is never inferred from list order.
 
-Emma 2026-07-10 chose the P3831-role model and "research unlinked names too".
-
-ROLE ITEM CAVEAT: there is no clean "principal enshrined deity / 主祭神" item on
-Wikidata. Q1589492 (ja 主神; its ja description literally lists 主祭神) is the
-nearest existing concept, but its en label is "King of the Gods" — a stretch.
-It is a single swappable constant below; UNREGISTERED from the drip until Emma
-confirms the role item (creating a bespoke item is off-limits autonomously).
+Emma 2026-07-10 chose the P3831-role model and "research unlinked names too", and
+supplied the role item Q140493995 (主祭神 / "Primary deity of a Shinto shrine").
 
 Output: saijin_deity_research.txt — atomic cited lines
     <shrine>|P825|<deity>|S4656|"<jawiki url>"                     (general)
@@ -56,10 +51,10 @@ UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scr
 TEMPLATE = "Template:神社"
 OUTPUT = os.path.join(HERE, "saijin_deity_research.txt")
 
-# P3831 role value marking a principal (主祭神) deity. Q1589492 = ja 主神 (its ja
-# description includes 主祭神); en label "King of the Gods". SWAPPABLE — Emma to
-# confirm before this is registered in the drip.
-PRINCIPAL_DEITY_ROLE = "Q1589492"
+# P3831 role value marking a principal (主祭神) deity. Q140493995 = 主祭神 /
+# "Primary deity" ("Primary deity of a Shinto shrine", subclass of Q11591100
+# saijin) — the purpose-built role item Emma supplied 2026-07-10.
+PRINCIPAL_DEITY_ROLE = "Q140493995"
 DEITY_CLASS_ROOT = "Q178885"  # deity — the P31/P279* gate for a safe name match
 
 _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")

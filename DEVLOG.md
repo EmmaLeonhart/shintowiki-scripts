@@ -26,13 +26,12 @@ unlinked names too".
 * Self-draining: skips (shrine,deity) pairs already on Wikidata; principal lines skip only
   pairs already `P3831`-qualified. 14 unit tests.
 
-**TWO decisions before this drips — UNREGISTERED for now:**
-1. **Role item.** There is no clean "principal enshrined deity" item. `Q1589492` (ja 主神,
-   its ja description literally lists 主祭神; en label "King of the Gods" — a stretch) is the
-   nearest existing concept and is a single swappable constant. Creating a bespoke item is
-   off-limits autonomously — Emma to confirm/replace `PRINCIPAL_DEITY_ROLE`.
-2. **Registration.** Not in `ATOMIC_FILES` yet; add once the role item is confirmed (the
-   drip is conflict-gated until 2026-07-17 regardless).
+**Role item + registration RESOLVED.** Emma supplied the purpose-built role item
+`Q140493995` (主祭神 / "Primary deity of a Shinto shrine", subclass of Q11591100 saijin) —
+`PRINCIPAL_DEITY_ROLE` set to it, and `saijin_deity_research.txt` registered in
+`direct_daily_edits.ATOMIC_FILES` (ADD-only, jawiki-cited; drips behind conflict_gate,
+which holds until 2026-07-17). Full corpus run: 6,939 P825 lines over 3,365 shrines, 29
+principal-qualified, 293 unlinked names matched.
 
 Yield is honest: the 神社 infobox mostly does NOT distinguish principal vs auxiliary, so the
 P3831 qualifier applies to a small minority; the bulk value is the P825+P1932 deity import.
