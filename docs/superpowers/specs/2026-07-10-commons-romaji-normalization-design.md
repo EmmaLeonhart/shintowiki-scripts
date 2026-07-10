@@ -22,6 +22,21 @@ the alternative is no label at all, a close-but-macron-light label from the Comm
 This build is the stage's proving ground; once the accuracy is approved it becomes a real label
 source slotted at that fallback position.
 
+## Where it sits in the label pipeline (Emma, 2026-07-10)
+
+Each stage fires only if the earlier ones produced nothing:
+
+1. **Existing English label on Wikidata** — trusted as usually-best (not always right, but the best default).
+2. **Kana derivation** — the deterministic `kana_english` / `temple_english` stage; right on macrons.
+3. **Commons category name** — *this build*. Often right, sometimes wrong on macrons.
+4. **Other Japanese labels** — reuse of an existing same-name shrine's English label (`identical_name_en_labels`).
+5. **Cloud** — the LLM stage, last resort.
+
+So this stage is a mid-pipeline fallback, which is exactly why an imperfect (macron-light) result is
+acceptable: everything more reliable has already been tried. It also inherits the **known-error
+overrides** the kana stage carries — the time-boxed `hardcoded_label` map (e.g. `売布神社 → "Mefu
+Shrine"`) must win here too, so a glitchy name is never re-derived wrong.
+
 ## Scope
 
 **In:** Japanese Shinto shrines (`P31 = Q845945`) and Japanese Buddhist temples
