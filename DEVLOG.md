@@ -4,6 +4,36 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — measured the prefectural-jinjachō avenue before building it, and it is thin
+
+Emma had chosen the 47 prefectural 神社庁 databases as the reisai source beyond jawiki. I measured
+first. `docs/reisai_prefectural_feasibility_2026-07.md` has the numbers; she then chose to **wait
+for the gate and reassess**.
+
+**47 sites are 47 problems.** `jinja-net.jp`, the platform serving Mie, hosts exactly **two**
+prefectures (Mie, Kumamoto); sixteen others 404 there and two 403. Probing the prefectures' own
+domains, `tokyo-jinjacho.or.jp`, `kanagawa-jinjacho.or.jp` and `fukuoka-jinjacho.jp` do not
+resolve at all.
+
+**Mie is the best case and it is thin.** Its record has a `主な祭典` field, free text rather than a
+date: `例祭8月15日　かに祭9月23日　蛭子祭7月20日`. Of 9 records sampled, 5 have the field filled,
+3 contain any month/day, **2 yield a clean 例祭 date** (~22%).
+
+**The blocker is matching, not parsing.** A jinjachō record gives a name and a 鎮座地 and no
+Wikidata id. For Mie: 593 shrine items, but **141 labels are shared** (八幡神社, 神明社 …) and only
+**280** carry an address to disambiguate on. Best case ≈ **60 statements** for one bespoke scraper
+plus a matcher — against the **3,239 lines the jawiki harvest already produced** from a single
+script that is written, tested, and waiting on `conflict_gate`.
+
+Built anyway, because it is the reusable part and costs nothing to keep:
+`jinjacho_reisai.py` parses that field shape — fullwidth digits normalised, the date bound to the
+**例祭** label so a neighbouring かに祭 cannot stand in for it, and month-without-day
+(`例祭１０月、祈年祭２月`) and relative dates (`１０月第２日曜`, `体育の日前日`) refused. 22 tests,
+every fixture a real live value.
+
+Kokugakuin, incidentally, carries no 例祭 either — checked directly.
+---
+
 ## 2026-07-10 (later) — matched every address against every coordinate; the glitch is rare
 
 Emma: *"almost all of them have multiple coordinates, and you're supposed to match between all the

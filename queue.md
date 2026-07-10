@@ -55,13 +55,16 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   `docs/kokugakuin_anomaly_review_scope_2026-07.md`). Emma-led, tool-assisted.
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
 
-- [ ] **Reisai days: prefectural 神社庁 databases** (Emma 2026-07-10). The jawiki harvest is DONE —
-  `reisai.txt` holds **3,239 pending lines**, waiting only on `conflict_gate`. Kokugakuin carries no
-  例祭 either (checked: its record has 旧郡名 / 座数 / 官幣・国幣 / 社格 / 神階の変遷 / テキスト内容 /
-  現社名など / 緯度経度, and nothing else). So the remaining ~27,000 shrines need the 47 prefectural
-  jinjachō sites: per-shrine pages with 例祭日, covering the ~78k Jinja-Honchō-affiliated shrines.
-  Formats differ per prefecture → one scraper each, opportunistic, biggest prefectures first.
-  NB the `Day of Reisai` property proposal was **declined** (2025-12-07), so the model stays
+- [ ] **Reisai: WAIT FOR THE GATE, then reassess** (Emma 2026-07-10, after seeing the numbers).
+  Evidence: `docs/reisai_prefectural_feasibility_2026-07.md`. The jawiki harvest is done —
+  `reisai.txt` holds **3,239 pending `P837` lines**, which will take live coverage from 197 to
+  ~3,400. Only **2 of 47** prefectures (Mie, Kumamoto) are on the shared `jinja-net.jp` platform;
+  Tokyo/Kanagawa/Fukuoka's own domains do not resolve. Mie is the best case and yields ~22%
+  parseable 例祭 dates over ~280 address-bearing items ≈ **60 statements**, needing a bespoke
+  scraper plus a name+address matcher (141 of Mie's 593 shrine labels are shared, so a name alone
+  cannot identify a shrine). Build nothing until the 3,239 have landed and the real gap is
+  measurable. The parser (`modern-quickstatements/jinjacho_reisai.py`, 22 tests) is already built.
+  NB the `Day of Reisai` property proposal was **declined** (2025-12-07); the model stays
   `P837` + `P3831`=`Q11385469` per `docs/wikidata_shrine_festival_model.md`.
 
 ## LAST — hard-residual street addresses: cross-product run; the glitch is NOT the general case
