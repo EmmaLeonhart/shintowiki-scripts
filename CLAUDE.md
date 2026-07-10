@@ -299,6 +299,31 @@ from other workflow jobs were silently rejecting orchestrator state
 commits, and only one ever reached origin over many weeks. Keep
 the retry — do not replace it with a single-shot push.
 
+## Never write anything outside the repo
+
+Emma 2026-07-10: *"What even are these files that you're making and constantly asking for
+permission to make? … they're making it so that the repository is not transparent. I prefer
+that you make stuff in the repository, even if it becomes something that isn't used and then
+later gets deleted, because I don't know what's going on here. You're in auto mode, but you're
+still asking for permission!"*
+
+**Do not put helper scripts, commit messages, or intermediate data in the system temp
+directory** (`AppData\Local\Temp\claude\…`) or anywhere else outside the working tree. Every
+write outside the repo raises a permission prompt in auto mode, and it hides the work from
+Emma. A throwaway file committed and later deleted is strictly better than an invisible one.
+
+The habit came from shell heredocs breaking on quoting. The fix is not a temp file:
+
+* **One heredoc per `Bash` call.** The failures were always two heredocs in one command
+  (a `python - <<'PY'` immediately followed by `git commit -F- <<'MSG'`). Split them.
+* **Commit messages**: `git commit -F-` with that heredoc as the *only* heredoc in the call,
+  or plain `-m` for short ones.
+* **Multi-step edits**: use the `Edit`/`Write` tools directly on repo files, which is what
+  they are for. If a real script is needed, put it in the repo and delete it in the same
+  session if it was throwaway.
+* **Scratch data** (before/after snapshots for a diff): write it into the repo and `git
+  checkout`/`rm` it afterwards, or hold it in the Python process.
+
 ## Gotchas
 
 * **Urgency: corrupted/time-sensitive DATA beats pipeline glitches.** A broken
