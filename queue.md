@@ -154,16 +154,23 @@ clean them. Emma 2026-07-10: **report only, leave them.**
 
 Three defects run down 2026-07-10 — `docs/engishiki_list_defects_2026-07.md`:
 
-- [ ] **Two hand fixes on list items** — each deletes ONE `has part` statement, which QuickStatements
-  cannot target (two statements share the value, so a value-matched removal could take the good one).
-  Diagnosed against the jawiki source articles; the adds are already queued.
-  * **Izumo `Q11395853`**: delete `has part` → `Q135040786` with ordinal **29**. It is entry 28 (a
-    境内社 of 揖夜神社); entry 29 is 筑陽神社. Spurious statement, nothing to add.
-  * **Awa `Q11450714`**: delete `has part` → `Q11361262` with ordinal **3**. Entry 3 is 天神社; a
-    piped link `[[下立松原神社#…|下立松原神社]]` was imported instead. The add of
-    `Q137041912` 天神社 at ordinal 3 is queued in `miscellaneous_edits.txt`.
-  Script 1 emits nothing for the three entries involved until these land (`ambiguous_entries` +
-  `contested_entries`, 11 tests, batch 5,635 lines).
+- [ ] **Awa `Q11450714` — one hand fix.** Delete `has part` → `Q11361262` with ordinal **3**.
+  Entry 3 is 天神社; a piped link `[[下立松原神社#…|下立松原神社]]` was imported instead. The add of
+  `Q137041912` 天神社 at ordinal 3 is queued in `miscellaneous_edits.txt`. QuickStatements cannot do
+  the delete — two statements share the value `Q11361262`, so a value-matched removal could take the
+  correct one at ordinal 5.
+
+**Izumo — report only (Emma 2026-07-10).** `Q135040786` is doing duty for TWO register entries:
+意宇郡 entry 28 is 同社坐韓国伊大弖神社 (in 揖夜神社's grounds) and entry 39 is 同社坐韓国伊**太**弖神社
+(in 佐久多神社's). Its label is the 大 spelling; its own statement describes 39. Ordinal 39 is an
+empty hole and ordinal 29 carries a spurious extra statement. Emma: leave it.
+*Consequence:* `contested_entries()` withholds `Q135040787` 筑陽神社 — a correct entry — from script 1
+for as long as ordinal 29 stays contested. It gets no ordinal, neighbours or references.
+
+**The 17 palace deities — report only (Emma 2026-07-10).** Kokugakuin indexes 神産日神 … 足島神
+individually (ids 180542–180558, a contiguous run) and an item exists for each, but the Imperial
+Palace list names only four grouped items (八神殿, 座摩神, 御門巫祭神 八座, 生島巫祭神 二座). Both
+models say true things; nothing is wrong today. `docs/engishiki_list_structure_2026-07.md`.
 - **`Q11474068` 岩井温泉 — DONE, and the previous tick's recommendation was WRONG.** The onsen's
   classes are correct: the Inaba list's entry 6 is 二上山, a *mountain*, carrying the same
   `Shikinaisha` + `Shinto shrine` classes. Where the register's shrine is identified with a natural

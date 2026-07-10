@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — swept all 69 lists for the shape that caught Awa; the corpus is nearly clean
+
+The Awa defect was found because the Kokugakuin id sequence skipped 181734 while an entry item held
+it and no list named it. That generalises, so `report_list_structure.py` (report only, 18 tests) now
+sweeps every list for five defects: an ordinal held by two entries, an entry named at two ordinals,
+a hole in 1..max, a has-part with no ordinal, and an entry item nothing points at.
+
+Across 69 lists and 2,839 named entries the whole of it is: **1 contested ordinal, 2 entries at two
+ordinals, 2 holes, 1 ordinal-less statement, 22 unlinked entry items.** The list corpus is in far
+better shape than the shrine items ever were.
+
+**Izumo is worse than yesterday's diagnosis, and Emma chose to leave it.** 意宇郡 has *two* 境内社
+entries with near-identical names — 同社坐韓国伊**大**弖神社 inside 揖夜神社 (entry 28) and
+同社坐韓国伊**太**弖神社 inside 佐久多神社 (entry 39). Wikidata has one item for both. `Q135040786` is
+labelled with the 大 spelling, so it is entry 28; but its own statement describes entry 39 — ordinal
+39, following 佐久多神社, followed by 志保美神社 — and ordinal 39 is exactly the hole the sweep found.
+Resolving it needs a new item, which is not a QuickStatement. **Emma: report only.**
+
+Recorded rather than hidden: `contested_entries()` therefore withholds `Q135040787` 筑陽神社, a
+correct entry, from script 1 for as long as ordinal 29 stays contested. That is the price of not
+guessing.
+
+**Seventeen of the 22 unlinked entry items are palace kami.** Kokugakuin ids 180542–180558 form a
+contiguous run — 神産日神, 高御産日神社 … 生島神, 足島神 — and Emma has an item for each. The Imperial
+Palace list, though, names four *grouped* items: 八神殿, 座摩神, 御門巫祭神 八座, 生島巫祭神 二座. This
+also revises last night's claim that those four "correctly" lack a Kokugakuin id: the database does
+index these kami, just one at a time. Both models say true things and nothing is wrong today.
+**Emma: report only.**
+
+`docs/engishiki_list_structure_2026-07.md`. Nothing emitted, nothing removed. 1124 tests pass.
+
+---
+
 ## 2026-07-10 — the two duplicate ordinals are two different defects, and the sources say so
 
 Yesterday I recorded "two list items name an entry twice" and recommended fixing both by hand,

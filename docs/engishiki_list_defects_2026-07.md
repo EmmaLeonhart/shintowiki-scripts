@@ -21,17 +21,28 @@ position `neighbours()` recorded last, so the ordinal-3 line wore ordinal-5's ne
 Reading the jawiki source articles says which ordinal is right in each case. They are **two
 different defects**, not one.
 
-### Izumo: a spurious extra statement at ordinal 29
+### Izumo: one item doing two entries' work — **report only** (Emma, 2026-07-10)
 
 `Template:出雲国意宇郡の式内社一覧` runs: 須多神社 (26), 揖夜神社 (27), **同社坐韓国伊大弖神社** (28),
-**筑陽神社** (29), 同社坐波夜都武自和気神社 (30). The 同社坐 entries are 境内社 — shrines standing
-*inside* another shrine's grounds. The Kokugakuin ids agree: 182800 at 26, 182801 at 27, 182802 on
-筑陽神社, 182803 at 30.
+**筑陽神社** (29), 同社坐波夜都武自和気神社 (30) … 佐久多神社 (38), **同社坐韓国伊太弖神社** (39),
+志保美神社 (40). The 同社坐 entries are 境内社 — shrines standing *inside* another shrine's grounds —
+and 意宇郡 has **two** of them with near-identical names: 伊**大**弖 at 揖夜神社 (28) and 伊**太**弖 at
+佐久多神社 (39).
 
-So `Q135040786` belongs at **28 only**. Its statement at 29 is spurious, and ordinal 29 currently
-holds two entries — it and `Q135040787` 筑陽神社, which is the right one.
+Wikidata has one item for both. `Q135040786` is labelled 坐韓国伊大弖神社 — the 大 spelling, entry 28
+— but **its own `part of` statement describes entry 39**: ordinal 39, following 佐久多神社, followed by
+志保美神社. Meanwhile the list places it at 28 *and* at 29, and **ordinal 39 is an empty hole.**
 
-*Fix: delete the list's `has part` → `Q135040786` statement carrying ordinal 29. Nothing else.*
+So three things are wrong at once: a spurious statement at 29 (which is 筑陽神社, already there), a
+hole at 39, and one item meaning two entries. Resolving it needs a **new item**, which is not a
+QuickStatement.
+
+**Emma 2026-07-10: report only, leave it.**
+
+*Consequence, recorded rather than hidden:* `contested_entries()` withholds every entry sharing an
+ordinal, so `Q135040787` 筑陽神社 — a perfectly correct entry — receives no ordinal, no neighbours
+and no references from script 1 for as long as ordinal 29 stays contested. That is the price of the
+guard, and it is the right price: the alternative is guessing.
 
 ### Awa: a piped link stole entry 3
 
