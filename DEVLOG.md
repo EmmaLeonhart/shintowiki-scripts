@@ -4,6 +4,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — verified last tick's newly-live batches, then cleared them as already-done
+
+Last tick's tab-parsing fix turned 36 previously-dead lines live (recreation_relations,
+durability_backlinks). Before they can drip I owed a check that they are correct — I made them
+executable, so I am responsible for what they do.
+
+All 36 are valid: no missing/deleted targets, no self-loops, and the 19 P734 family-name statements
+each point at a genuine surname item that matches the person's name (中臣池守 → 中臣 Nakatomi, 千家尊愛
+→ 千家 Senge, and so on). And all 36 are **already present on live Wikidata** — added when the
+recreate-deleted pipeline created the items — so the editor would skip every one.
+
+Neither generator runs in CI (one-off local emissions), so these were static, fully-satisfied
+batches reporting "36 lines pending" with nothing to do — the benign version of the dead-batch
+shape. Cleared both to empty (add-only, all verified present, zero data-loss risk), kept them
+registered so a regeneration still flows. Rewrote the file-specific parsing test to a durable form
+(if repopulated, no dead lines; empty passes). Also confirmed the retired QuickStatements API path
+(`submit_daily_batch.py`) only builds a report and exits 1, so last tick's parser fix fully covers
+the one real editor — there is no parallel bug there.
+
+No new cloud answers this tick (category 373, enrichment 235, ronsha rankings 35 pending). 1136
+tests pass.
+
+---
+
 ## 2026-07-10 — drained two cloud-answered category translations
 
 `collect_category_translations.py --apply` folded two finished RAG answers into
