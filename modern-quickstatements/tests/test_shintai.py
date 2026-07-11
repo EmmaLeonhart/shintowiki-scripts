@@ -99,7 +99,7 @@ URL = "https://ja.wikipedia.org/wiki/X"
 
 
 def test_line_shape():
-    assert sh.qs_line("Q1", "Q2", URL) == 'Q1|P825|Q2|P3831|Q327532|S4656|"%s"' % URL
+    assert sh.qs_line("Q1", "Q2", URL) == 'Q1|P825|Q2|P3831|Q327532|S143|Q177837|S4656|"%s"' % URL
 
 
 def test_the_role_qid_is_the_verified_one():
@@ -128,8 +128,9 @@ def test_the_daily_editor_parses_the_line():
     assert p["value"]["value"]["id"] == "Q39231"
     (qprop, qval), = p["qualifiers"]
     assert qprop == "P3831" and qval["value"]["id"] == "Q327532"
-    (rprop, _), = p["references"]
-    assert rprop == "P4656"
+    refs = dict(p["references"])
+    assert refs["P143"]["value"]["id"] == "Q177837"
+    assert "P4656" in refs
     assert not p["is_removal"]
 
 

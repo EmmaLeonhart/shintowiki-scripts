@@ -5,7 +5,7 @@ generate_shintai_quickstatements.py
 Import 神体 (shintai — the object in which a kami is held to reside) from the jawiki
 `{{神社}}` shrine infobox:
 
-    <shrine>|P825|<shintai>|P3831|Q327532|S4656|"<jawiki url>"
+    <shrine>|P825|<shintai>|P3831|Q327532|S143|Q177837|S4656|"<jawiki url>"
 
 Emma 2026-07-10: *"shintai modelling find a property and it will have the object of
 statement has role shintai"*, then, shown the candidates: **`P825` 'dedicated to' +
@@ -140,7 +140,7 @@ def extract_shintai(field):
 
 
 def qs_line(shrine, shintai_qid, url):
-    return '{}|{}|{}|{}|{}|S4656|"{}"'.format(
+    return '{}|{}|{}|{}|{}|S143|Q177837|S4656|"{}"'.format(
         shrine, P_DEDICATED, shintai_qid, P_ROLE, SHINTAI, url)
 
 

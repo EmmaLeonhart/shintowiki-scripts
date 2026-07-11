@@ -79,7 +79,7 @@ def test_twelve_kanji_is_accepted():
 def test_line_shape():
     line = sg.qs_line("Q42", "紫雲山", "https://ja.wikipedia.org/wiki/X")
     assert line == ('Q42|P1448|ja:"紫雲山"|P3831|Q11058522|'
-                    'S4656|"https://ja.wikipedia.org/wiki/X"')
+                    'S143|Q177837|S4656|"https://ja.wikipedia.org/wiki/X"')
 
 
 def test_the_role_qid_is_the_verified_one():
@@ -104,8 +104,9 @@ def test_the_daily_editor_parses_the_line():
     assert p["value"]["value"] == {"text": "紫雲山", "language": "ja"}
     (qprop, qval), = p["qualifiers"]
     assert qprop == "P3831" and qval["value"]["id"] == "Q11058522"
-    (rprop, _rval), = p["references"]
-    assert rprop == "P4656"
+    refs = dict(p["references"])
+    assert refs["P143"]["value"]["id"] == "Q177837"
+    assert "P4656" in refs
     assert not p["is_removal"]
 
 

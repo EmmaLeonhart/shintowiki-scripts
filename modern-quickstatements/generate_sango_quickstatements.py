@@ -10,7 +10,7 @@ Emma 2026-07-10, choosing the model:
     "official name (P1448) with a qualifier object of statement has role (P3831)
     sangō (Q11058522). Simple thing."
 
-    <temple>|P1448|ja:"<sangō>"|P3831|Q11058522|S4656|"<jawiki url>"
+    <temple>|P1448|ja:"<sangō>"|P3831|Q11058522|S143|Q177837|S4656|"<jawiki url>"
 
 `Q11058522` was verified live: *sangō / 山号 — "a part of name of Buddhist temples
 (in Japan)"*. `P1448` is monolingualtext, so the plain-text values fit without the
@@ -130,7 +130,7 @@ def parse_sango(field):
 
 
 def qs_line(qid, sango, url):
-    return '{}|{}|ja:"{}"|{}|{}|S4656|"{}"'.format(
+    return '{}|{}|ja:"{}"|{}|{}|S143|Q177837|S4656|"{}"'.format(
         qid, P_OFFICIAL_NAME, sango, P_ROLE, SANGO, url)
 
 

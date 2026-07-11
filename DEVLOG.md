@@ -4,6 +4,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — finish the S143 citation sweep (shintai + sango; kofun/hisousha excluded)
+
+Completed the jawiki-importer citation sweep, again verifying per property/class first:
+
+* **shintai P825 (shrine): S143 dominant (3,339 vs 1,454) → added.** Same P825 population as deity.
+* **sango P1448 (temple): S143 dominant (11 vs 3) → added.**
+* **kofun: EXCLUDED.** Its convention is the opposite — P31 uses S4656 (40 vs 0) and P571
+  construction uses S4656 (5 vs 0); S143 is *not* used on kofun. Left as-is.
+* **hisousha P119/P547: EXCLUDED.** Zero existing citations of either kind (0/0) — no established
+  pattern to conform to, so no change (adding S143 without precedent would be a guess).
+
+`generate_shintai_quickstatements.py` and `generate_sango_quickstatements.py` now emit
+`…|S143|Q177837|S4656|`; committed outputs transformed (shintai 40 lines, sango 7,709). Docstrings
++ 3 reference-shape assertions in the tests updated to the two-part bundle; 76 tests pass. With
+this, every jawiki importer whose property/class actually uses the imported-from-jawiki marker now
+emits it (deity, saijin-precision, honzon, souken, souken_den, shintai, sango); reisai/kofun/
+hisousha correctly retain their own conventions.
+
 ## 2026-07-11 — extend the S143 citation fix to the founding-date + honzon importers
 
 Continued the property-modelling citation sweep. **Verified per property before touching each**
