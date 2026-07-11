@@ -4,6 +4,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — deity-qualifier analysis (Open questions wiki-queue: Q137721156)
+
+Emma's Wiki-based-queue item: *"Analyze [Q137721156]… particularly the deities… an analysis
+on the qualifiers that are used… we might be overlooking them."* Done —
+`docs/deity_qualifier_analysis_2026-07.md`.
+
+Findings (live query-main, 2026-07-10): Q137721156 (日月神社) uses a **gold-standard model** —
+each `P825` deity carries `P1932` (原文表記 source spelling) + a book reference (神奈川県神社誌
+Q137052933, page 357, NDL persistent ID `P9836`). But across **21,405 Japanese P825 statements**
+only **80 (0.4%)** carry `P1932`, and **77 of those 80** are from this same 神奈川県神社誌 source —
+so the item is one of a tiny high-provenance manual cluster, not the norm. ~50% of P825 have no
+reference; `P3831` principal-deity (主祭神, Q140493995) is essentially unused, and Q137721156 itself
+doesn't mark which of its four deities is principal.
+
+Overlooked qualifiers, ranked: (1) `P3831`=Q140493995 principal deity — the generator
+`generate_saijin_deity_research.py` already emits it; it just needs the drip to run, not new code;
+(2) `P1932` source spelling — same, already generated; (3) prefectural 神社誌 harvest via NDL — a
+real high-quality expansion but a scraping/OCR project, left as a proposal for Emma. No edits made;
+the Q137721156 主祭神 marking is a which-of-the-four judgement call flagged for Emma. The wiki-side
+Open-questions bullet is Emma's to clear (wiki-wins page; no local creds).
+
 ## 2026-07-10 — retire the Takano address merge (done by hand; declutter)
 
 Emma, Open questions: *"Seriously, I implemented this! I ran these quick statements, so why
