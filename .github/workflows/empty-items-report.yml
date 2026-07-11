@@ -35,15 +35,17 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate empty-items report (live Wikidata)
+      - name: Generate empty-items list (fast) + full report (live Wikidata)
         working-directory: modern-quickstatements
-        run: python generate_empty_items_report.py
+        run: |
+          python generate_empty_items_report.py --list
+          python generate_empty_items_report.py
 
       - name: Commit the report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f _site/empty-items.html
+          git add -f _site/empty-items.html _site/empty-items-list.txt
           if git diff --cached --quiet; then
             echo "no change to empty-items.html"
           else

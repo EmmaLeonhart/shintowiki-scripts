@@ -19,6 +19,7 @@ Writes `_site/empty-items.html`. Report only — no Wikidata edits.
     python generate_empty_items_report.py [--limit N]
 """
 import argparse
+import concurrent.futures
 import datetime
 import html
 import io
@@ -26,6 +27,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.parse
 import urllib.request
@@ -39,7 +41,8 @@ UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scr
 SOURCE_PAGE = "User:MisterSynergy/sysop/empty_items"
 WD = "https://www.wikidata.org/wiki/"
 
-THROTTLE = 0.15
+THROTTLE = 0.15     # between the batched label calls (sequential)
+WORKERS = 4         # concurrent per-item fetches — Wikidata 429s at ~12
 
 # Wikidata removal auto-comment: "/* wbremoveclaims-remove:1| */ [[Property:P31]]: [[Q5]]"
 _REMOVED = re.compile(r"wbremoveclaims-remove[^*]*\*/\s*\[\[Property:(P\d+)\]\]:\s*(.*)")
@@ -50,12 +53,20 @@ def api_get(params):
     params = dict(params, format="json")
     req = urllib.request.Request(API + "?" + urllib.parse.urlencode(params),
                                  headers={"User-Agent": UA})
-    for attempt in range(4):
+    for attempt in range(6):
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 return json.load(r)
+        except urllib.error.HTTPError as e:
+            # Wikidata rate-limits; back off and retry rather than lose the run.
+            if e.code == 429 and attempt < 5:
+                time.sleep(3 * (attempt + 1))
+                continue
+            if attempt == 5:
+                raise
+            time.sleep(2)
         except Exception:
-            if attempt == 3:
+            if attempt == 5:
                 raise
             time.sleep(2)
 
@@ -223,21 +234,49 @@ def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--list", action="store_true",
+                    help="write just the QID+label list (instant) and stop")
     args = ap.parse_args()
+
+    if args.list:
+        qids = fetch_item_qids(args.limit)
+        print(f"{len(qids)} empty items", flush=True)
+        labels = fetch_labels(qids)
+        os.makedirs(os.path.join(REPO_ROOT, "_site"), exist_ok=True)
+        out = os.path.join(REPO_ROOT, "_site", "empty-items-list.txt")
+        with io.open(out, "w", encoding="utf-8", newline="\n") as f:
+            f.write(f"# {len(qids)} empty items from User:MisterSynergy/sysop/empty_items\n")
+            f.write("# QID\tlabel (en, else any)\thttps://www.wikidata.org/wiki/QID\n")
+            for q in qids:
+                lab = labels.get(q, {})
+                name = lab.get("en") or (next(iter(lab.values())) if lab else "")
+                f.write(f"{q}\t{name}\t{WD}{q}\n")
+        print(f"-> {out}", flush=True)
+        return 0
 
     qids = fetch_item_qids(args.limit)
     total_all = len(fetch_item_qids()) if args.limit else len(qids)
     print(f"{len(qids)} items to process (list has {total_all})")
     labels = fetch_labels(qids)
-    rows = []
-    for i, q in enumerate(qids, 1):
+
+    # The per-item history + backlinks calls are independent, so run them across a
+    # thread pool instead of ~6,800 sequential round-trips (was ~50 min at one call
+    # at a time; ~12 workers brings it to a few minutes).
+    done = [0]
+    lock = threading.Lock()
+
+    def fetch_item(q):
         editors, edits, removed = fetch_history(q)
         backlinks = fetch_backlinks(q)
-        rows.append({"qid": q, "labels": labels.get(q, {}), "editors": editors,
-                     "edits": edits, "removed": removed, "backlinks": backlinks})
-        if i % 25 == 0:
-            print(f"  {i}/{len(qids)}")
-        time.sleep(THROTTLE)
+        with lock:
+            done[0] += 1
+            if done[0] % 100 == 0:
+                print(f"  {done[0]}/{len(qids)}", flush=True)
+        return {"qid": q, "labels": labels.get(q, {}), "editors": editors,
+                "edits": edits, "removed": removed, "backlinks": backlinks}
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        rows = list(pool.map(fetch_item, qids))
     # Restoration candidates first: the more (property, value) pairs a now-empty
     # item lost, the more there is to recover.
     for r in rows:
