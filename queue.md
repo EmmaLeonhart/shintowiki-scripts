@@ -160,10 +160,14 @@ the list does NOT name loses its list link entirely.
 `list_membership_rebuild.txt`, **5,643 lines**, ADD-only, diffed against live state so it shrinks
 as it lands. 26 entries carry several Kokugakuin ids, so no database reference is claimed for them.
 
-- [ ] **Script 2 BUILT** (`generate_list_membership_removals.py`, remove-only, 22 tests,
-  **unregistered**): 2,236 lines over the 2,151 Ronsha no list names; 126 named parts untouched.
-  Emma runs it by hand. Regenerating it against live state is idempotent. Its protection query
-  counts an item as *named* whether or not the `has part` carries an ordinal — the 岩井温泉 hole.
+**Script 2 (removals) BUILT and now REGISTERED** (Emma, Open questions: *"these are pure
+removals — no add, no ordering risk — so … this one can just be registered and dripped safely
+today"* — she was emphatic it be done): `generate_list_membership_removals.py` →
+`list_membership_removals.txt`, 2,236 lines over 2,151 Ronsha the lists don't name; 126 named
+parts untouched (two asserts + ordinal-agnostic naming, the 岩井温泉 protection). Registered in
+`direct_daily_edits.ATOMIC_FILES`; drips with the daily batch. Idempotent against live state —
+regenerate to shrink it (heavy SPARQL, committed statically like script 1, not in CI).
+
 - [ ] `report_ronsha_list_membership.py` and `docs/ronsha_list_membership_2026-07.md` hold the
   per-item detail.
 

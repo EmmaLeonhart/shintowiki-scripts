@@ -4,6 +4,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — register the list-membership removals (Emma asked, repeatedly)
+
+Emma, Open questions: *"these are pure removals — no add, no ordering risk — so … this one can
+just be registered and dripped safely today"* and, on it still being undone, *"I've been
+constantly telling you to do this … you're just deciding not to do it?!"* Done.
+
+`list_membership_removals.txt` (script 2, 2,236 lines over 2,151 Ronsha the Engishiki lists do
+NOT name — the false part-of claims left by the jawiki piped-link import) is now registered in
+`direct_daily_edits.ATOMIC_FILES`; it drips with the daily batch. Safe to interleave with script
+1's adds because the two operate on **disjoint** item sets — script 2 never emits for a named
+item (`assert_never_touches_a_named_part` + the builder guard + ordinal-agnostic naming, the
+岩井温泉 protection), script 1 only touches named items. Pure removals, no partner statement, so
+no ordering to get wrong. Regenerated fresh against live state (2,277 claims → 126 kept, 2,236
+removed across 2,151 items, 72 with duplicates); idempotent, shrinks as it lands.
+
+Updated the test that pinned the old "deliberately NOT registered" decision to assert the new
+invariant (registered + why it's safe); the two named-part safety guards are untouched. 73 tests
+pass (removals + atomic-alignment + gate). Docstrings/print corrected from "run by hand".
+
 ## 2026-07-10 — deity-qualifier analysis (Open questions wiki-queue: Q137721156)
 
 Emma's Wiki-based-queue item: *"Analyze [Q137721156]… particularly the deities… an analysis

@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """Script 2 of 2 — strip the Engishiki list link from the Ronsha no list names.
 
-REMOVE-ONLY. **Deliberately not registered in `ATOMIC_FILES`.** Run it by hand.
+REMOVE-ONLY. **Registered in `ATOMIC_FILES`** (Emma, Open questions 2026-07:
+*"these are pure removals — no add, no ordering risk — so … this one can just be
+registered and dripped safely today"*). Unlike an add-first/remove-later pair, these
+removals have no partner statement, so the random drip cannot run them out of order.
+It stays safe because it NEVER emits for an item the list names (see the two asserts
+below) and is idempotent against live state, so it shrinks as lines land.
 
 Emma 2026-07-10: *"Ronshas should not even have list membership."* And on the cause:
 *"on the Shinto Shrine wiki on Japanese Wikipedia there was a large amount of pipe links
@@ -172,7 +177,7 @@ def main():
         len(lines), len(items), dupes))
     print("\n{} line(s) -> {}".format(len(lines), path))
     if lines:
-        print("\nNOT registered in ATOMIC_FILES. Submit by hand.")
+        print("\nRegistered in ATOMIC_FILES — drips with the daily batch (pure removals).")
     return 0
 
 

@@ -4,7 +4,7 @@ Emma: *"Ronshas should not even have list membership."* The hazard is that Quick
 removes by value, not by statement id — so a removal aimed at an item's junk membership
 would happily take a clean one instead. Pinned here: the named-part guard (twice, once in
 the builder and once as a check over the finished lines), the duplicate-statement count,
-and the fact that this batch is NOT registered.
+and the fact that this batch IS registered (pure removals, disjoint from script 1's adds).
 """
 import os
 import sys
@@ -140,9 +140,13 @@ def test_the_two_scripts_write_different_files():
 
 # ─────────────────────── wiring ───────────────────────
 
-def test_this_batch_is_deliberately_not_registered():
-    """A registered removal batch would run interleaved with script 1's adds."""
-    assert rm.OUTPUT_FILE not in dde.ATOMIC_FILES
+def test_this_batch_is_registered():
+    """Emma, Open questions 2026-07: *"these are pure removals — no add, no ordering
+    risk — so … this one can just be registered and dripped safely today."* Interleaving
+    with script 1's adds is safe because the two operate on DISJOINT item sets — script 2
+    never emits for an item the list names (the named-part guards above), and script 1
+    only touches items the list names — so no item ever sees both an add and a removal."""
+    assert rm.OUTPUT_FILE in dde.ATOMIC_FILES
 
 
 def test_script_one_is_registered():
