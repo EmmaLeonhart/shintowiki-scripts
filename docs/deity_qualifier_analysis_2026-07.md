@@ -85,6 +85,25 @@ Top `stated in` (`P248`) sources on the referenced deity statements:
    NDL-cited references would be a large, high-quality expansion — but it is a scraping/OCR project
    against page scans, not a mechanical import, so it is a proposal for Emma, not autonomous work.
 
+### The sources exist and are openly viewable — availability checked 2026-07-11
+
+Emma asked (chat) whether the pattern generalises — i.e. whether other prefectures' 神社誌 are
+NDL-digitised. **They are.** An NDL Digital Collections search (`ndlsearch.ndl.go.jp`, keyword
+県神社誌, digital) returns **~17 prefectures whose 神社誌 is marked インターネットで読める
+(full-text internet-viewable)**, not just library-transmission:
+
+> 神奈川 1981 (= Q137052933, the one we already use), 広島 1994, 福井 1994, 宮崎 1988, 滋賀 1987,
+> 兵庫 1984, 熊本 1981, 岡山 1981, 石川 1976, 愛媛 1974, 茨城 1973, 山口 1972, 栃木 1964 — plus
+> 山形/和歌山/三重/山口 shown as "digital available". (Newer compilations — 徳島 2019, 三重稿
+> 2021 — are paper/restricted, as expected for in-copyright works.)
+
+So the **enabler is present**: ~17 prefectures of authoritative, openly-readable shrine records,
+each with a stable NDL persistent ID for `P9836`. The cost is unchanged — extracting 祭神 + the
+原文表記 surface spelling still means reading the page scans per shrine (the Kanagawa 77 were a
+manual import) — but the pattern is no longer Kanagawa-only-by-accident; it is Kanagawa-only
+because nobody has read the other 16 yet. A per-prefecture OCR/reading effort is the scoping
+question for Emma; the sources are not the blocker.
+
 ## Recommendation
 
 * **Nothing to fix in code for (1) and (2)** — the generators already emit `P3831`=主祭神 and
@@ -93,4 +112,7 @@ Top `stated in` (`P248`) sources on the referenced deity statements:
   principal deity/deities is a judgement call (which of the four?) — flagged for Emma, not
   auto-generated.
 * **(3) prefectural 神社誌 harvest** is a real project worth scoping if the deity-provenance quality
-  of the Kanagawa set is what Emma wants everywhere. Left as a proposal.
+  of the Kanagawa set is what Emma wants everywhere. **The sources are confirmed available** (~17
+  prefectures internet-viewable in NDL, 2026-07-11 — see above); the open question is the
+  reading/OCR effort per prefecture, not whether the books can be cited. A proposal for Emma's
+  scoping, not autonomous work.

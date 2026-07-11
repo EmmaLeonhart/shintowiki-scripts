@@ -4,6 +4,23 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — deity object-named-as citation: pattern + NDL 神社誌 availability
+
+Following Emma's questions about the deity *object named as* (原文表記) qualifier and where it's
+cited from. Queried all 145 P825 statements carrying `P1932`: the shrine ones are a **single
+pattern from a single source** — 神奈川県神社誌 (Q137052933), 77 statements, each `P248` (book) +
+`P304` (page) + `P9836` (NDL persistent ID). The rest of the 145 are unrelated global Wikidata
+usage (novels/artworks "dedicated to" people), not shrines. `P143` (imported-from-Wikipedia) does
+not appear on these at all — the book pattern and our jawiki-import pattern are disjoint populations.
+
+Then answered Emma's extensibility question: **are other prefectures' 神社誌 NDL-digitised?** Yes —
+NDL Digital Collections search shows **~17 prefectures with 神社誌 marked インターネットで読める**
+(Kanagawa 1981 + Hiroshima/Hyogo/Kumamoto/Okayama/Ishikawa/Ehime/Ibaraki/Tochigi/Miyazaki/Shiga/
+Fukui/Yamaguchi/… — newer 2019+ ones are paper/restricted). So the high-provenance model is
+extensible; the cost is per-shrine reading of the scans (the Kanagawa 77 were a manual import),
+not source availability. Recorded in `docs/deity_qualifier_analysis_2026-07.md`. Report only; a
+per-prefecture reading/OCR effort is a scoping decision for Emma.
+
 ## 2026-07-11 — Kokugakuin ranking sequence anomalies: all 6 resolved (INTENTIONAL)
 
 Emma's feedback that I'd been treating things as less actionable than they are — correct. The
