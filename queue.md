@@ -2,6 +2,19 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
+
+# before other things
+
+I would like you to do an analysis right now as to why it is that the IP thing may have occurred today rather than at other times. My guess is that something that we did is significantly different. I would like you to do a full-on audit of what may have been different that occurred. I want you to do a full-on audit of what may be different that we could have done yesterday or in the past few days that made it so there were significantly more requests to the wiki. My guess is basically we probably fucked it up that way, and probably we probably did it that way. 
+
+
+And if this thing is the case, or let's say we lose the ability, or something like that, and there's evidence for this, I would say we should have a week-long period of not editing the wiki. This would be a GitHub Action gate thing that essentially just makes it so that the processes don't occur for editing the wiki.
+
+I'm going to say that if by midnight today we don't get any edits, then we'll do this thing now. I believe we can potentially get this to work by CICD, and that is something I would like you to set up. The if statement would be for the day/week period. For the next week, there will be no editing. It'll just bail on the editing, but it's all dependent on a state file that occurs based off of a GitHub Action that runs at, say, 1:00 AM tonight. It checks whether emabot has done any edits in the past 8 hours. If emabot has done it, then it changes the state file to something indicating that emabot has done it, so it continues on. If there are no emabot edits, then the state file is a false thing, and this means that it's gated for this week. 
+
+I am personally going to say that we're going to do this regardless of other stuff. I'm going to say we're going to do that, and we're going to actually set this stuff up regardless of the actual audit results. My take is that it is a somewhat long-term change that has occurred over this. If we are actually running into this problem 
+
+
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
 **Status: ⏸ WAITING** (Miraheze 403, checked 2026-07-11 21:28 UTC) — wiki editing is blocked. The hourly `wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to **`WIKI_GATE: GO`** the moment the login works again.
