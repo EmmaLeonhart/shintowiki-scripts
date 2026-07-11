@@ -242,6 +242,12 @@ The Kikuna restoration is DONE as a queued batch (`miscellaneous_edits.txt`) —
   re-read `docs/bruno_plus_analysis_2026-07.md`, re-run the archiver and
   `watch_conflicting_editor.py`, and report what changed — new identity changes, whether they have
   been blocked, and whether any venue now mentions them.
+  - **Pass 2026-07-11 (read-only): no NEW damage.** 809 edits now (+285 since the analysis), last
+    active 2026-07-10T14:10, nothing on 07-11. Overwhelmingly benign (160 ja descriptions, 68
+    geodata claims, 13 new items incl. the healthy Q138657811 保寿院). The only identity-changes /
+    removals landed on the ALREADY-documented husks (Q134886554 Chikadono, Q134736575 見光寺) — no
+    new orphaned items. NOT blocked; User talk empty (no warnings); no noticeboard action. Caution
+    gate remains appropriate.
 
 ## Pinned tail (keep last, always)
 

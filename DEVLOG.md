@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — ブルーノ・プラス periodic re-examination (read-only): no new damage
+
+Emma's periodic human-directed pass. Read-only against the live Wikidata API (no state
+scripts re-run locally — the archiver + `watch_conflicting_editor` already do that in CI; this
+is the reporting half). Baseline: `docs/bruno_plus_analysis_2026-07.md` (523 edits, compiled
+2026-07-10).
+
+* **Activity:** 809 edits now, +285 since the analysis; last active 2026-07-10T14:10:39Z,
+  nothing on 07-11. Still bursty.
+* **Nature — overwhelmingly benign:** of the 285 new edits, 160 ja `wbsetdescription-set`
+  (Kamakura temple descriptions), 68 geodata `wbsetclaim-create`, 17 sitelinks, 13 new items.
+  Only 2 identity-change signatures and 12 claim-removals.
+* **No NEW damaged items.** Every destructive edit landed on items ALREADY documented as damaged:
+  the 12 removals are on Q134886554 (Chikadono) and Q134736575 (見光寺); the label edits are the
+  known Chikadono removal plus a `wbsetlabel-set` on Q138657811 保寿院, which is a **healthy new
+  item** bruno created (full P31/P625/P131/P825/… claim set), not a repurposing.
+* **Block status:** not blocked. **Venue:** User talk page does not exist (no warnings posted);
+  no noticeboard/AN action; one routine RfD-archive string match (unrelated). The community has
+  not flagged the pattern.
+* **Conclusion:** the caution policy in `conflict_gate.py` remains appropriate; the four
+  documented husks are stable; nothing to archive or act on. Emma's *document, don't touch / no
+  contact* stance stands. First-checked cadence recorded in queue.md.
+
+Diagnostic aside (surfaced for Emma): all four cloud-RAG queues have **zero** landed answers
+(typo 0/157, ronsha-rankings 0/35, descriptions 0/235, categories 0/373); the remote routine has
+only ever delivered a trickle (4+1 historically) and nothing since 2026-07-08 — the ~800-item
+review backlog is bottlenecked on the cloud worker's throughput, not on anything local.
+
 ## 2026-07-10 — province exclusions are ADD-ONLY: delete the removal script
 
 Emma, Open questions, replying directly to the bot's "Script 2 is the removal half of an
