@@ -4,6 +4,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — reorganise the queue into an EXECUTABLE, decision-first structure
+
+Emma: the queue was broken — items had buried questions that just got skipped, so the work-loop
+collapsed into "nothing actionable" over and over (which is exactly what my recent ticks did).
+Rewrote `queue.md`:
+
+- **❓ DECISIONS at the top**, each a self-contained item with its exact AskUserQuestion written
+  out (ready to fire, not fired). Standing rule: EVERY decision also carries a "walk me through it
+  first / let's chat" option, because Emma often doesn't have the context to pick A/B cold — she
+  picks "explain first" and the bot lays it out before deciding. Fire ONE at a time, in order.
+  Never re-skip a decision as "blocked on Emma".
+- Everything else tagged **▶ DO / 🤖 AUTO / ⏸ BLOCKED** with the specific blocker named, so nothing
+  is ambiguous. Cleared out the verbose history (it lives in DEVLOG). Explained the weird ones in
+  plain terms (e.g. "the category thing" = a dormant future speed-up, not a real task now).
+- **Login gate:** `shinto_miraheze/check_wiki_login.py` — the work-loop checks Miraheze is
+  reachable before attempting any wiki item; on the 403 anti-DDoS challenge it defers wiki items
+  (not a failure) and still does Wikidata/read-only work. Verified: correctly reports BLOCKED now.
+
+The 8 open decisions are D1 sequential-misc add-placement · D2 84 twins link/merge · D3 66 orphans
+· D4/D7 the 18 missing Kokugakuin ids · D5 the multi-P13677 P958 calls · D6 Awa delete · D8 empty-
+items restoration slice.
+
 ## 2026-07-11 — empty-items report, done right: Special:Export instead of per-item API
 
 Emma, correcting my first attempt: *"Special:Export is the best… not whatever the fuck you did."*
