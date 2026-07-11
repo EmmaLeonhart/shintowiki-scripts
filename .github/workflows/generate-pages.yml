@@ -69,6 +69,11 @@ jobs:
         run: python generate_shikinaisha_orphan_page.py
         continue-on-error: true
 
+      - name: Generate Kokugakuin missing-id table (from committed report)
+        working-directory: modern-quickstatements
+        run: python generate_kokugakuin_id_page.py
+        continue-on-error: true
+
       - name: Combine sites
         run: |
           # Copy QS dashboard pages into main _site, renaming index to avoid collision

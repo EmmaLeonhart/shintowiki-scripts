@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shikinaisha missing a Kokugakuin id — 18 entries</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 1100px;
+    margin: 0 auto; padding: 1.5rem; color: #222; line-height: 1.5; }
+  h1 { color: #2e7d32; font-size: 1.5rem; }
+  .nav a { color: #2e7d32; }
+  .intro { background: #fff3e0; border-left: 4px solid #ff9800;
+    padding: 0.75rem 1rem; border-radius: 0 4px 4px 0; }
+  ul.legend { list-style: none; padding: 0; font-size: 0.9rem; }
+  ul.legend li { padding: 0.25rem 0; }
+  input#filter { width: 100%; padding: 0.6rem; font-size: 1rem; margin: 1rem 0;
+    border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+  th, td { border: 1px solid #e0e0e0; padding: 0.4rem 0.55rem; text-align: left;
+    vertical-align: top; }
+  th { background: #f1f8e9; position: sticky; top: 0; }
+  .kind { font-size: 0.72rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+    white-space: nowrap; }
+  .kind-ENTRY-TAKEN { background: #ffebee; color: #c62828; }
+  .kind-AMBIGUOUS { background: #fff8e1; color: #ef6c00; }
+  .kind-NO-MATCH { background: #e3f2fd; color: #1565c0; }
+  .kind-NO-ANCHOR { background: #f3e5f5; color: #6a1b9a; }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;
+    color: #999; font-size: 0.8rem; }
+  .table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<p class="nav"><a href="index.html">&larr; shintowiki</a></p>
+<h1>Shikinaisha still missing a Kokugakuin entry id</h1>
+<p class="intro">Every real 927 register entry has an id in the Kokugakuin University
+Digital Museum shrine database (P13677); some entry items are missing it. The strict
+matcher (<code>match_kokugakuin_ids.py</code>) matches a shrine's Japanese name against
+the database's entry titles, but name-matching alone isn't safe — two adjacent entries
+can describe the same shrine — so it cut the missing-id set from 94 to these
+<strong>18</strong> and found <strong>zero</strong> safe to add on its own.
+Your call: is name-matching good enough, or do these need per-item eyes? Nothing runs
+until you say. Report only — no Wikidata edits.</p>
+
+<h3>What the statuses mean</h3>
+<ul class="legend">
+<li><code>NO-ANCHOR</code> (6) — No known Kokugakuin id anywhere in this shrine&#x27;s district, so there is no range to scan — the matcher had no anchor to search from.</li>
+<li><code>NO-MATCH</code> (7) — The district range was scanned but no entry title exactly equals this shrine&#x27;s Japanese name.</li>
+<li><code>AMBIGUOUS</code> (2) — Another target in the same district shares this exact label, so a name match cannot tell them apart (e.g. two 野蚊神社 in 河北郡).</li>
+<li><code>ENTRY-TAKEN</code> (3) — A name-matching entry id exists but is already held by other item(s) — minting it here would duplicate an id. These are the ones needing per-item human eyes.</li>
+</ul>
+
+<input id="filter" type="text" placeholder="Filter by QID, name, district, or status…"
+  oninput="filt()">
+
+<div class="table-wrap"><table>
+<thead><tr><th>item</th><th>ja</th><th>district</th><th>status</th><th>detail</th></tr></thead>
+<tbody>
+<tr data-search="q11521943 杉山神社 東京都/神奈川県 no-anchor"><td><a href="https://www.wikidata.org/wiki/Q11521943" target="_blank">Q11521943</a></td><td lang="ja">杉山神社</td><td lang="ja">東京都/神奈川県</td><td><span class="kind kind-NO-ANCHOR">NO-ANCHOR</span></td><td>NO-ANCHOR</td></tr>
+<tr data-search="q134989551 多和神社 さぬき市 no-anchor"><td><a href="https://www.wikidata.org/wiki/Q134989551" target="_blank">Q134989551</a></td><td lang="ja">多和神社</td><td lang="ja">さぬき市</td><td><span class="kind kind-NO-ANCHOR">NO-ANCHOR</span></td><td>NO-ANCHOR</td></tr>
+<tr data-search="q135019513 御門巫祭神 八座  no-anchor"><td><a href="https://www.wikidata.org/wiki/Q135019513" target="_blank">Q135019513</a></td><td lang="ja">御門巫祭神 八座</td><td lang="ja">&mdash;</td><td><span class="kind kind-NO-ANCHOR">NO-ANCHOR</span></td><td>NO-ANCHOR</td></tr>
+<tr data-search="q135019813 生島巫祭神 二座  no-anchor"><td><a href="https://www.wikidata.org/wiki/Q135019813" target="_blank">Q135019813</a></td><td lang="ja">生島巫祭神 二座</td><td lang="ja">&mdash;</td><td><span class="kind kind-NO-ANCHOR">NO-ANCHOR</span></td><td>NO-ANCHOR</td></tr>
+<tr data-search="q135039158 大鳥北浜神社 和泉国/大鳥郡 no-match in scanned range"><td><a href="https://www.wikidata.org/wiki/Q135039158" target="_blank">Q135039158</a></td><td lang="ja">大鳥北浜神社</td><td lang="ja">和泉国/大鳥郡</td><td><span class="kind kind-NO-MATCH">NO-MATCH</span></td><td>NO-MATCH in scanned range</td></tr>
+<tr data-search="q135040298 野蚊神社 加賀国/河北郡 ambiguous: another target shares this label+district"><td><a href="https://www.wikidata.org/wiki/Q135040298" target="_blank">Q135040298</a></td><td lang="ja">野蚊神社</td><td lang="ja">加賀国/河北郡</td><td><span class="kind kind-AMBIGUOUS">AMBIGUOUS</span></td><td>AMBIGUOUS: another target shares this label+district</td></tr>
+<tr data-search="q135040786 坐韓国伊大弖神社 出雲国/意宇郡 no-match in scanned range"><td><a href="https://www.wikidata.org/wiki/Q135040786" target="_blank">Q135040786</a></td><td lang="ja">坐韓国伊大弖神社</td><td lang="ja">出雲国/意宇郡</td><td><span class="kind kind-NO-MATCH">NO-MATCH</span></td><td>NO-MATCH in scanned range</td></tr>
+<tr data-search="q135040970 天若日子神社 出雲国/出雲郡 no-match in scanned range"><td><a href="https://www.wikidata.org/wiki/Q135040970" target="_blank">Q135040970</a></td><td lang="ja">天若日子神社</td><td lang="ja">出雲国/出雲郡</td><td><span class="kind kind-NO-MATCH">NO-MATCH</span></td><td>NO-MATCH in scanned range</td></tr>
+<tr data-search="q135041051 韓國伊太弖奉神社 出雲国/出雲郡 no-match in scanned range"><td><a href="https://www.wikidata.org/wiki/Q135041051" target="_blank">Q135041051</a></td><td lang="ja">韓國伊太弖奉神社</td><td lang="ja">出雲国/出雲郡</td><td><span class="kind kind-NO-MATCH">NO-MATCH</span></td><td>NO-MATCH in scanned range</td></tr>
+<tr data-search="q135041503 同佐肆布都神社 壱岐島/壱岐郡 no-match in scanned range"><td><a href="https://www.wikidata.org/wiki/Q135041503" target="_blank">Q135041503</a></td><td lang="ja">同佐肆布都神社</td><td lang="ja">壱岐島/壱岐郡</td><td><span class="kind kind-NO-MATCH">NO-MATCH</span></td><td>NO-MATCH in scanned range</td></tr>
+<tr data-search="q135041552 和多都美神社 下県郡/津島 entry-taken (id 183358 held by q11559099,q135041526,q18457651; id 183377 held by q11410120,q134930328,q135041548,q135388116,q138914538)"><td><a href="https://www.wikidata.org/wiki/Q135041552" target="_blank">Q135041552</a></td><td lang="ja">和多都美神社</td><td lang="ja">下県郡/津島</td><td><span class="kind kind-ENTRY-TAKEN">ENTRY-TAKEN</span></td><td>ENTRY-TAKEN &mdash; <a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=183358" target="_blank">id 183358</a> held by <a href="https://www.wikidata.org/wiki/Q11559099" target="_blank">Q11559099</a>, <a href="https://www.wikidata.org/wiki/Q135041526" target="_blank">Q135041526</a>, <a href="https://www.wikidata.org/wiki/Q18457651" target="_blank">Q18457651</a>; <a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=183377" target="_blank">id 183377</a> held by <a href="https://www.wikidata.org/wiki/Q11410120" target="_blank">Q11410120</a>, <a href="https://www.wikidata.org/wiki/Q134930328" target="_blank">Q134930328</a>, <a href="https://www.wikidata.org/wiki/Q135041548" target="_blank">Q135041548</a>, <a href="https://www.wikidata.org/wiki/Q135388116" target="_blank">Q135388116</a>, <a href="https://www.wikidata.org/wiki/Q138914538" target="_blank">Q138914538</a></td></tr>
+<tr data-search="q135068646 井上社  no-anchor"><td><a href="https://www.wikidata.org/wiki/Q135068646" target="_blank">Q135068646</a></td><td lang="ja">井上社</td><td lang="ja">&mdash;</td><td><span class="kind kind-NO-ANCHOR">NO-ANCHOR</span></td><td>NO-ANCHOR</td></tr>
+<tr data-search="q135069927 笠野神社 加賀国/河北郡 entry-taken (id 182342 held by q135040299,q135069931,q135069932)"><td><a href="https://www.wikidata.org/wiki/Q135069927" target="_blank">Q135069927</a></td><td lang="ja">笠野神社</td><td lang="ja">加賀国/河北郡</td><td><span class="kind kind-ENTRY-TAKEN">ENTRY-TAKEN</span></td><td>ENTRY-TAKEN &mdash; <a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=182342" target="_blank">id 182342</a> held by <a href="https://www.wikidata.org/wiki/Q135040299" target="_blank">Q135040299</a>, <a href="https://www.wikidata.org/wiki/Q135069931" target="_blank">Q135069931</a>, <a href="https://www.wikidata.org/wiki/Q135069932" target="_blank">Q135069932</a></td></tr>
+<tr data-search="q135069928 野蚊神社 加賀国/河北郡 ambiguous: another target shares this label+district"><td><a href="https://www.wikidata.org/wiki/Q135069928" target="_blank">Q135069928</a></td><td lang="ja">野蚊神社</td><td lang="ja">加賀国/河北郡</td><td><span class="kind kind-AMBIGUOUS">AMBIGUOUS</span></td><td>AMBIGUOUS: another target shares this label+district</td></tr>
+<tr data-search="q135070107 嘉羅久利神社 出雲国/意宇郡 no-match in scanned range"><td><a href="https://www.wikidata.org/wiki/Q135070107" target="_blank">Q135070107</a></td><td lang="ja">嘉羅久利神社</td><td lang="ja">出雲国/意宇郡</td><td><span class="kind kind-NO-MATCH">NO-MATCH</span></td><td>NO-MATCH in scanned range</td></tr>
+<tr data-search="q135070108 佐久多神社 出雲国/意宇郡 entry-taken (id 182811 held by q135040907,q135070105,q135070106,q135195732)"><td><a href="https://www.wikidata.org/wiki/Q135070108" target="_blank">Q135070108</a></td><td lang="ja">佐久多神社</td><td lang="ja">出雲国/意宇郡</td><td><span class="kind kind-ENTRY-TAKEN">ENTRY-TAKEN</span></td><td>ENTRY-TAKEN &mdash; <a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=182811" target="_blank">id 182811</a> held by <a href="https://www.wikidata.org/wiki/Q135040907" target="_blank">Q135040907</a>, <a href="https://www.wikidata.org/wiki/Q135070105" target="_blank">Q135070105</a>, <a href="https://www.wikidata.org/wiki/Q135070106" target="_blank">Q135070106</a>, <a href="https://www.wikidata.org/wiki/Q135195732" target="_blank">Q135195732</a></td></tr>
+<tr data-search="q135195597 大神山神社 奥宮 会見郡/伯耆国/大山町 no-match in scanned range"><td><a href="https://www.wikidata.org/wiki/Q135195597" target="_blank">Q135195597</a></td><td lang="ja">大神山神社 奥宮</td><td lang="ja">会見郡/伯耆国/大山町</td><td><span class="kind kind-NO-MATCH">NO-MATCH</span></td><td>NO-MATCH in scanned range</td></tr>
+<tr data-search="q135229657 阿波遅神社  no-anchor"><td><a href="https://www.wikidata.org/wiki/Q135229657" target="_blank">Q135229657</a></td><td lang="ja">阿波遅神社</td><td lang="ja">&mdash;</td><td><span class="kind kind-NO-ANCHOR">NO-ANCHOR</span></td><td>NO-ANCHOR</td></tr>
+</tbody></table></div>
+
+<script>
+function filt() {
+  var q = document.getElementById('filter').value.toLowerCase();
+  document.querySelectorAll('tbody tr').forEach(function(tr) {
+    tr.style.display = tr.dataset.search.indexOf(q) > -1 ? '' : 'none';
+  });
+}
+</script>
+<footer>Generated 2026-07-11 03:44 UTC from <code>kokugakuin_id_report.txt</code> by
+<a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a>
+(<code>generate_kokugakuin_id_page.py</code>). Report only; no Wikidata edits.</footer>
+</body>
+</html>
