@@ -274,6 +274,7 @@ def nav_html(active="index"):
         ("shikinaisha-orphans", "shikinaisha-orphans.html", "Shikinaisha ⧉"),
         ("kokugakuin-missing-ids", "kokugakuin-missing-ids.html", "Kokugakuin ids ⧉"),
         ("kokugakuin-multi-p13677", "kokugakuin-multi-p13677.html", "Kokugakuin multi-id ⧉"),
+        ("empty-items", "empty-items.html", "Empty items ⧉"),
         ("shrine-ranking", "shrine-ranking.html", "Shrine Ranking"),
         ("p11250", "p11250.html", "P11250"),
         ("runs", "runs.html", "Run History"),

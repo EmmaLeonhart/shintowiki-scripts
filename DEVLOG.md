@@ -4,6 +4,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — empty-items restoration report (Emma's new ask)
+
+Emma wants to find Wikidata items that were EMPTIED (lost many properties) and could be restored,
+from the maintenance list `User:MisterSynergy/sysop/empty_items` (~3,394 items, 0 sitelinks + 0
+statements). Built `generate_empty_items_report.py` → `_site/empty-items.html`: per item, a link,
+surviving labels across languages, the **properties removed over its history — especially P31**
+(read from the Wikidata edit-summary auto-comments, `wbremoveclaims-remove … [[Property:Pxx]]:
+…`, so no full-content diffing), the list of editors + edit count, and backlinks. Sorted by how
+much was lost so the strongest restoration candidates rise to the top; a "lost" column counts the
+removed (property, value) pairs.
+
+Validated against known-blanked items (Q28069431 Kikuna: 8 removed props incl. P31=Q845945 + 5
+deities; Q134886554 Chikadono: 7) — the removed-P31 extraction works. Heavy (~3,394 items × full
+history + backlinks), so it runs in its own weekly workflow (`empty-items-report.yml`, Tue 04:41,
+120-min timeout) rather than the 30-min generate-pages job; the committed HTML is redeployed by
+generate-pages. Nav link added. Report only — no Wikidata edits; the restoration itself is Emma's
+call per item.
+
 ## 2026-07-11 — religious-building stage 2: design proposal (turn the open question into a decision)
 
 Stage 1 shipped 22,548 English labels; stage 2 (multilang) I'd flagged as a design question rather

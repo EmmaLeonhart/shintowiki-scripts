@@ -1,0 +1,59 @@
+name: Empty-items restoration report
+
+# Rebuilds _site/empty-items.html from User:MisterSynergy/sysop/empty_items —
+# the Wikidata maintenance list of items with 0 sitelinks + 0 statements. Emma
+# 2026-07-11: many were EMPTIED and are candidates for restoration; the report
+# shows, per item, how much was lost (removed properties, especially P31),
+# surviving labels, editors, and backlinks. The source page is periodically
+# edited, so this runs weekly. It is heavy (~3.4k items, full revision history +
+# backlinks each), hence its own workflow with a generous timeout rather than
+# riding the 30-min generate-pages job. The committed HTML is redeployed by the
+# next generate-pages run (Pages uploads the whole _site/).
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 4 * * 2"   # Tuesdays 04:41 UTC (off-peak, off the :00 mark)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: empty-items-report
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Generate empty-items report (live Wikidata)
+        working-directory: modern-quickstatements
+        run: python generate_empty_items_report.py
+
+      - name: Commit the report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f _site/empty-items.html
+          if git diff --cached --quiet; then
+            echo "no change to empty-items.html"
+          else
+            git commit -m "chore: refresh empty-items report [skip ci]"
+            pushed=false
+            for attempt in 1 2 3 4 5; do
+              if git push origin "HEAD:$GITHUB_REF_NAME"; then pushed=true; break; fi
+              git fetch origin "$GITHUB_REF_NAME" || true
+              git rebase "origin/$GITHUB_REF_NAME" || git rebase --abort || true
+              sleep $((attempt * 3))
+            done
+            [ "$pushed" = true ] || echo "WARNING: push failed after 5 attempts; next run refreshes it."
+          fi
