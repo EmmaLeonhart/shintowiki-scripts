@@ -25,8 +25,10 @@ Emma 2026-07-10 chose the P3831-role model and "research unlinked names too", an
 supplied the role item Q140493995 (主祭神 / "Primary deity of a Shinto shrine").
 
 Output: saijin_deity_research.txt — atomic cited lines
-    <shrine>|P825|<deity>|S4656|"<jawiki url>"                     (general)
-    <shrine>|P825|<deity>|P3831|<role>|S4656|"<jawiki url>"        (principal)
+    <shrine>|P825|<deity>|S143|Q177837|S4656|"<jawiki url>"                (general)
+    <shrine>|P825|<deity>|P3831|<role>|S143|Q177837|S4656|"<jawiki url>"  (principal)
+    (S143=Q177837 imported-from-Japanese-Wikipedia + S4656 the page URL — the
+     established corpus reference bundle; see JA_WIKIPEDIA note below.)
 
 Usage:
     python generate_saijin_deity_research.py             # full run
@@ -56,6 +58,12 @@ OUTPUT = os.path.join(HERE, "saijin_deity_research.txt")
 # saijin) — the purpose-built role item Emma supplied 2026-07-10.
 PRINCIPAL_DEITY_ROLE = "Q140493995"
 DEITY_CLASS_ROOT = "Q178885"  # deity — the P31/P279* gate for a safe name match
+# Japanese Wikipedia (P143 = imported from). Verified 2026-07-11 as the DOMINANT
+# reference marker on existing shrine-deity P825 statements — 3,339 carry
+# S143=Q177837 vs only 1,441 with S4656 (the import URL). Our generator emitted
+# only the URL, missing the more common imported-from marker; add it to match the
+# established corpus citation bundle (S143 + S4656).
+JA_WIKIPEDIA = "Q177837"
 
 _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 _LINK_PAIR_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]")
@@ -165,7 +173,8 @@ def qs_line(shrine_qid, deity_qid, principal, named, url):
     """
     role = f"|P3831|{PRINCIPAL_DEITY_ROLE}" if principal else ""
     named_q = f'|P1932|"{named.replace(chr(34), "")}"' if named else ""
-    return f'{shrine_qid}|P825|{deity_qid}{role}{named_q}|S4656|"{url}"'
+    return (f'{shrine_qid}|P825|{deity_qid}{role}{named_q}'
+            f'|S143|{JA_WIKIPEDIA}|S4656|"{url}"')
 
 
 # ─────────────────────────── network ───────────────────────────

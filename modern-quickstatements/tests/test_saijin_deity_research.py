@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from generate_saijin_deity_research import (  # noqa: E402
     link_targets, link_pairs, plain_names, qs_line, build_lines, principal_refs,
-    PRINCIPAL_DEITY_ROLE,
+    PRINCIPAL_DEITY_ROLE, JA_WIKIPEDIA,
 )
 
 
@@ -67,9 +67,9 @@ def test_plain_names_drops_latin_and_short():
 def test_qs_line_general_vs_principal():
     url = "https://ja.wikipedia.org/wiki/X"
     assert qs_line("Q1", "Q2", False, "天照大御神", url) == \
-        f'Q1|P825|Q2|P1932|"天照大御神"|S4656|"{url}"'
+        f'Q1|P825|Q2|P1932|"天照大御神"|S143|{JA_WIKIPEDIA}|S4656|"{url}"'
     assert qs_line("Q1", "Q2", True, "天照皇大御神", url) == \
-        f'Q1|P825|Q2|P3831|{PRINCIPAL_DEITY_ROLE}|P1932|"天照皇大御神"|S4656|"{url}"'
+        f'Q1|P825|Q2|P3831|{PRINCIPAL_DEITY_ROLE}|P1932|"天照皇大御神"|S143|{JA_WIKIPEDIA}|S4656|"{url}"'
 
 
 def _ref(principal, named):
@@ -85,7 +85,7 @@ def test_build_lines_dedupes_and_principal_wins():
     matched = {"天照大御神": "Q2"}
     lines = build_lines(shrine_deities, resolved, matched, have=set(), have_principal=set())
     assert len(lines) == 1
-    assert f'|P825|Q2|P3831|{PRINCIPAL_DEITY_ROLE}|P1932|"天照大御神"|S4656|' in lines[0]
+    assert f'|P825|Q2|P3831|{PRINCIPAL_DEITY_ROLE}|P1932|"天照大御神"|S143|{JA_WIKIPEDIA}|S4656|' in lines[0]
 
 
 def test_build_lines_skips_existing_general_but_adds_principal_qualifier():

@@ -4,6 +4,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — deity importer: cite to the corpus standard (add S143 imported-from-jawiki)
+
+Property-modelling follow-through (Emma's steer). The survey found our jawiki importers under-cite
+vs the corpus. Verified precisely on shrine-deity P825: **S143 (imported from Japanese Wikipedia,
+Q177837) is the DOMINANT reference marker — 3,339 statements carry it vs only 1,441 with S4656**
+(the import URL). `generate_saijin_deity_research.py` emitted only S4656, missing the more common
+imported-from marker.
+
+Fix: `qs_line` now emits `…|S143|Q177837|S4656|"<url>"` — the established two-part bundle. Applied
+the same transform to the 6,939 already-generated lines in `saijin_deity_research.txt` (insert
+`|S143|Q177837` before `|S4656|`; data unchanged, only the reference upgraded — exactly what the
+generator now produces) rather than re-run the heavy SPARQL+jawiki fetch. 14 tests updated to the
+new format and passing. Conservative conformance to the dominant existing pattern, not a novel
+choice; via the QS pipeline (references only strengthen provenance).
+
+Follow-up (next tick): the other jawiki importers flagged by the survey — `generate_souken_*`
+(founding dates), `generate_honzon_*` (principal images), reisai/festival — under-cite the same
+way; give them the same S143 marker.
+
 ## 2026-07-11 — deity object-named-as citation: pattern + NDL 神社誌 availability
 
 Following Emma's questions about the deity *object named as* (原文表記) qualifier and where it's
