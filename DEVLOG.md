@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — religious-building stage 2: design proposal (turn the open question into a decision)
+
+Stage 1 shipped 22,548 English labels; stage 2 (multilang) I'd flagged as a design question rather
+than build blindly. Grounded it in data instead of leaving it hanging: of the 21,945 church+chapel
+candidates without an English label, a large share ALREADY carry a native label — German 6,631
+(30%), Italian 3,188, Polish 2,460, French/Spanish ~900 each. These are real-named Western
+buildings, which confirms the shrine transliteration engine is the wrong tool (phonetic
+transliteration would fabricate names for buildings that have real ones).
+
+`docs/religious_building_multilang_design_2026-07.md`: proposes Option 1 (English-only, stage 1 is
+the deliverable — recommended now) or Option 2 (a genuine generalization — Latin-script cross-fill
+from existing native labels, never transliteration) if Emma wants multilang coverage; Option 3
+(transliterate) rejected. Decision + scope question for Emma. Report only.
+
 ## 2026-07-11 — atomic-data quality audit + silent-fail regression guard
 
 Following the P1932 fix, audited all 56 committed atomic files: (1) no leftover markup in values
