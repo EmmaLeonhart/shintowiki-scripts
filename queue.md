@@ -45,7 +45,9 @@ articles). Heavy, so the 22:00 cron owns them; the hourly loop can also run them
   `remote_queue.py`; the cloud worker fills ANSWER (LABEL_TYPO/KANA_ISSUE/PREFIX_OK/OTHER).
   Collector BUILT (`shinto_miraheze/collect_label_typo_answers.py`, 5 tests; LABEL_TYPO →
   `label_typo_fixes.txt` in ATOMIC_FILES) — run it once answers land.
-  2026-07-10 check: 157 pending, all `ANSWER` still empty — no cloud answers landed yet.
+  2026-07-11: cloud worker delivering a trickle — collected the first landed answer
+  (Q106852466 稲荷森稲荷神社: EN label was mis-read "Tōkamori", corrected to "Inarimori Inari
+  Shrine"). 156 still pending. Re-run the collector each tick a remote-routine commit lands.
 - **Comma-alias cleanup (189) — UNREGISTERED 2026-07-10, aliases left in place per Emma.** The
   file was registered ONLY with the fallback editor, which refuses alias removals outright
   (`"Term removal not supported"`), so all 189 lines silently failed and re-sampled every day

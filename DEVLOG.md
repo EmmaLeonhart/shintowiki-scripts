@@ -4,6 +4,16 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — collect the first label-typo cloud-RAG answer
+
+The remote routine landed a batch (commit 01461823, "address 5 items"); one was a
+`label_typo_review` answer. Ran `collect_label_typo_answers.py`: folded
+`Q106852466|Len|"Inarimori Inari Shrine"` into `label_typo_fixes.txt` (registered ATOMIC file,
+so the daily drip applies it) and removed the work-file. The fix is right — 稲荷森 reads
+いなりもり (Inarimori); the old EN label "Tōkamori Inari Shrine" was a misreading. 156 typo
+candidates still pending the cloud worker. 5 collector tests pass. This is the "run the
+collector once answers land" step; re-run it whenever a remote-routine commit arrives.
+
 ## 2026-07-11 — ブルーノ・プラス periodic re-examination (read-only): no new damage
 
 Emma's periodic human-directed pass. Read-only against the live Wikidata API (no state
