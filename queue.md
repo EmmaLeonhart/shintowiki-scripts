@@ -6,7 +6,16 @@ numbers = priority; bulk LLM-grunge lives in `remote_queue.json`, not here).
 ---
 
 ## 0. Open Questions
- please actually address the stuff in the open questions. It feels like you just kind of dropped the ball on it and decided not to actually do any of the stuff there. That stuff is important. 
+ please actually address the stuff in the open questions. It feels like you just kind of dropped the ball on it and decided not to actually do any of the stuff there. That stuff is important.
+
+- [ ] **Bot 2026-07-11:** the substance WAS done across the session (reports/pages/registrations),
+  but the dropped ball was real — several items said *"respond with a link"* and I posted the links
+  in chat, not onto the page. Fixed: added an inline `✓ (bot)` response with the GitHub Pages link
+  + status to EVERY item in `git_synced/Open questions.wiki` (Izumo, sequential-misc, 84+66, Awa,
+  list-membership, province, Takano, Kokugakuin matcher, Q137721156). The sync pushes it to the
+  wiki (wiki-wins protects any edit Emma made since). What genuinely remains is Emma's per-item
+  CALLS (link-vs-merge the 84, classify the 66, name-match-vs-eyes on the 18/multi-P13677,
+  sequential add-placement) — those are hers, not dropped work.
 
 ## 1. Category-orchestrator throughput (conditional, low priority)
 
