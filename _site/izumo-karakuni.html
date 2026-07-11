@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Izumo 意宇郡 韓国伊太弖 — one item, two register entries</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 900px;
+    margin: 0 auto; padding: 1.5rem; color: #222; line-height: 1.65; }
+  h1 { color: #2e7d32; font-size: 1.5rem; }
+  h2 { color: #2e7d32; border-bottom: 2px solid #c8e6c9; padding-bottom: 0.3rem;
+    margin-top: 2rem; font-size: 1.2rem; }
+  .nav a { color: #2e7d32; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.88rem; margin: 0.5rem 0; }
+  th, td { border: 1px solid #e0e0e0; padding: 0.4rem 0.6rem; vertical-align: top; }
+  th { background: #f1f8e9; }
+  code { font-family: Consolas, Monaco, monospace; background: #f5f5f5;
+    padding: 0.05rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+  pre { background: #263238; color: #eceff1; padding: 0.85rem 1rem; border-radius: 6px;
+    overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+  pre code { background: none; color: inherit; padding: 0; }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .table-wrap { overflow-x: auto; }
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;
+    color: #999; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<p class="nav"><a href="index.html">&larr; shintowiki</a></p>
+<h1>What is happening with Q135040786 (Izumo, 意宇郡) — the two 韓国伊太弖 shrines</h1>
+<p>Emma, Open questions 2026-07: *&quot;I want you to write a relatively comprehensive report on what the fuck might be happening with this thing.&quot;* This is that report. The browsable version is <code>_site/izumo-karakuni.html</code> (&lt;https://emmaleonhart.github.io/shintowiki-scripts/izumo-karakuni.html&gt;). Report only — nothing here has been edited on Wikidata. Prior write-up: <code>engishiki_list_defects_2026-07.md §1</code>.</p>
+<h2>One sentence</h2>
+<p><a href="https://www.wikidata.org/wiki/Q135040786" target="_blank"><code>Q135040786</code></a> 坐韓国伊大弖神社 is a <strong>single item standing in for two different register entries</strong> — 意宇郡 entry 28 (韓国伊<strong>大</strong>弖, a 境内社 in 揖夜神社&#x27;s grounds) and entry 39 (韓国伊<strong>太</strong>弖, a 境内社 in 佐久多神社&#x27;s grounds) — and both the item and the list carry the damage, so untangling it needs a <strong>new item</strong>, which the QuickStatements pipeline cannot mint.</p>
+<h2>The two shrines the register actually distinguishes</h2>
+<p>意宇郡 has two 同社坐 (境内社 — shrines standing *inside* another shrine&#x27;s precinct) whose names differ by a single character:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th style="text-align:left">entry</th>
+<th style="text-align:left">register name</th>
+<th style="text-align:left">大/太</th>
+<th style="text-align:left">host shrine (境内 of)</th>
+<th style="text-align:left">Kokugakuin</th>
+</tr></thead><tbody>
+<tr><td><strong>28</strong></td><td>同社坐韓国伊<strong>大</strong>弖神社</td><td>大</td><td>揖夜神社 (<a href="https://www.wikidata.org/wiki/Q11498399" target="_blank">Q11498399</a>, entry 27)</td><td>—</td></tr>
+<tr><td><strong>39</strong></td><td>同社坐韓国伊<strong>太</strong>弖神社</td><td>太</td><td>佐久多神社 (<a href="https://www.wikidata.org/wiki/Q135040907" target="_blank">Q135040907</a>, entry 38)</td><td>—</td></tr>
+</tbody></table></div>
+<p>They are genuinely two shrines, in two different precincts, eleven entries apart. Wikidata has <strong>one</strong> item for both — <code>Q135040786</code>, labelled with the 大 spelling (entry 28).</p>
+<h2>What the item claims (live, three P361 statements)</h2>
+<p><code>Q135040786</code> carries three <code>part of</code> statements at once:</p>
+<div class="table-wrap"><table>
+<thead><tr>
+<th style="text-align:left">#</th>
+<th style="text-align:left">part of</th>
+<th style="text-align:right">ordinal</th>
+<th style="text-align:left">follows</th>
+<th style="text-align:left">followed by</th>
+<th style="text-align:left">reading</th>
+</tr></thead><tbody>
+<tr><td>1</td><td>list <code>Q11395853</code></td><td><strong>28</strong></td><td>揖夜神社 (27)</td><td>筑陽神社 (29)</td><td><strong>correct for entry 28</strong></td></tr>
+<tr><td>2</td><td>揖夜神社 <code>Q11498399</code></td><td>—</td><td>—</td><td>—</td><td><strong>correct</strong> — the 境内社 host link for entry 28</td></tr>
+<tr><td>3</td><td>list <code>Q11395853</code></td><td><strong>39</strong></td><td>佐久多神社 (38)</td><td>志保美神社 (40)</td><td><strong>describes entry 39</strong> — a different shrine</td></tr>
+</tbody></table></div>
+<p>Statement 3&#x27;s neighbours (follows 佐久多神社, followed by 志保美神社) are exactly entry 39&#x27;s position. So the *39 half* of this item is entry 39&#x27;s membership, grafted onto entry 28&#x27;s item. The host-shrine link it is <strong>missing</strong> is a <code>part of</code> 佐久多神社 — because that half never got its own item.</p>
+<h2>What the list claims (live, has-part side of <code>Q11395853</code>)</h2>
+<p>The list mirrors the mess differently:</p>
+<pre>ord 27  →  揖夜神社           Q11498399
+ord 28  →  坐韓国伊大弖神社    Q135040786   ✓ correct
+ord 29  →  筑陽神社           Q135040787   ✓ correct
+ord 29  →  坐韓国伊大弖神社    Q135040786   ✗ SPURIOUS — same item duplicated onto 29
+ord 38  →  佐久多神社         Q135040907
+ord 39  →  (nothing)                        ✗ EMPTY HOLE — entry 39 belongs here
+ord 40  →  志保美神社         Q135040909</pre>
+<p>The item&#x27;s two list statements say <strong>28 and 39</strong>; the list&#x27;s two say <strong>28 and 29</strong>. They agree on 28 and disagree on the second: the item put its 伊太弖 half at 39 (right), the list put a copy of the same item at 29 (wrong, colliding with 筑陽神社). The 39 slot the item points to does not exist on the list side. This is the fingerprint of the piped-link / merge import damage Emma described — two entries with near-identical names collapsed into one item, and the fix-up landed in two different places on the two sides.</p>
+<h2>A third, separate defect on the same list</h2>
+<p><code>Q11395853</code>&#x27;s <code>has part</code> also lists three <strong>class/rank items</strong> with no ordinal — <code>Q134917286</code> (Shikinaisha, the P31 class itself), <code>Q134917287</code>, <code>Q134917288</code> (rank values). These are not shrines; they are properties of shrines that leaked into the membership list during import. Noted here, not part of the 韓国伊太弖 tangle.</p>
+<h2>Why it cannot be a QuickStatement</h2>
+<p>The right end state is:</p>
+<ol><li>1. <strong>Create a new item</strong> for 同社坐韓国伊太弖神社 (entry 39, 太 spelling), 境内社 of 佐久多神社.</li><li>2. Move statement 3 (list@39, follows 佐久多神社) off <code>Q135040786</code> onto the new item, and add its</li></ol>
+<p>host link <code>part of</code> 佐久多神社.</p>
+<ol><li>3. On the list, replace the spurious ord-29 → <code>Q135040786</code> with ord-39 → new item; leave ord-29 →</li></ol>
+<p>筑陽神社 alone.</p>
+<ol><li>4. <code>Q135040786</code> keeps only statement 1 (list@28) and statement 2 (host 揖夜神社).</li></ol>
+<p>Step 1 mints an entity; steps 2–3 are value-matched removes on statements that share a value (<code>Q135040786</code> appears on the list twice), which QuickStatements cannot target precisely. So the whole thing is <strong>out of the pipeline</strong> until a new item exists — exactly Emma&#x27;s read.</p>
+<h2>Consequence being paid right now</h2>
+<p><code>contested_entries()</code> withholds every entry sharing an ordinal from list-membership script 1. Because ordinal 29 is contested (筑陽神社 and the spurious <code>Q135040786</code> both sit there), <strong><code>Q135040787</code> 筑陽神社 — a perfectly correct entry — gets no ordinal, no neighbours and no references</strong> for as long as ord 29 stays contested. That is the price of not guessing, and it clears the moment the spurious ord-29 statement is removed.</p>
+<p><strong>Emma 2026-07-10: report only, leave it.</strong></p>
+<footer>Generated 2026-07-11 03:51 UTC from <code>docs/izumo_ou_karakuni_2026-07.md</code> by
+<a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a>
+(<code>generate_izumo_karakuni_page.py</code>). Report only; no Wikidata edits.</footer>
+</body>
+</html>
