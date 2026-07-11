@@ -96,6 +96,12 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   measurable. The parser (`modern-quickstatements/jinjacho_reisai.py`, 22 tests) is already built.
   NB the `Day of Reisai` property proposal was **declined** (2025-12-07); the model stays
   `P837` + `P3831`=`Q11385469` per `docs/wikidata_shrine_festival_model.md`.
+  - **Status 2026-07-11 (measured): NOT landed yet, correctly still waiting.** reisai.txt = 3,243
+    pending; live Reisai coverage = **195** shrines (unchanged from the ~197 baseline). Reason: the
+    conflict_gate keeps the WHOLE drip paused (off until 7 days after ブルーノ・プラス goes quiet;
+    hard cap 2026-08-08) and they edit ~daily, so nothing in the atomic pool is draining. The
+    reassessment triggers when the drip resumes (~08-08) and the 3,239 land. Nothing to do until
+    then — this is Emma's deliberate pause, not a stall.
 
 ## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED; batch BUILT + WIRED TO THE DRIP)
 
