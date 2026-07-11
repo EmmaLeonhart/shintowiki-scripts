@@ -16,6 +16,13 @@ numbers = priority; bulk LLM-grunge lives in `remote_queue.json`, not here).
   wiki (wiki-wins protects any edit Emma made since). What genuinely remains is Emma's per-item
   CALLS (link-vs-merge the 84, classify the 66, name-match-vs-eyes on the 18/multi-P13677,
   sequential add-placement) — those are hers, not dropped work.
+- [ ] **BLOCKED getting the responses onto the wiki: Miraheze 403.** `git-synced-sync` has failed
+  every run since ~17:17 UTC 2026-07-11 — mwclient can't even log in (403 "checking your
+  connection" anti-DDoS on `meta=siteinfo|userinfo`). So the Open-questions responses (and ALL
+  wiki editing: cleanup, orchestrators) are stuck in the repo, not on the wiki. NOT fixable from CI
+  (mwclient can't solve a JS challenge; browser UA gets it too). Clears when Miraheze stops
+  challenging the runner IPs, or Emma addresses it wiki-side (allowlist / contact Miraheze).
+  Read-only Wikidata is unaffected. See [[reference_miraheze_antiddos_challenge]].
 
 ## 1. Category-orchestrator throughput (conditional, low priority)
 
