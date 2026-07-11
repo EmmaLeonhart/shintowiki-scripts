@@ -104,8 +104,7 @@ gitignored `.province_cache/`, geometry never committed and never uploaded);
 `modern-quickstatements/province_geometry.py` (85 features → 68 classical provinces: the 1869
 Mutsu/Dewa splits unioned back, Hokkaidō + Ryūkyū dropped, 對馬 aliased);
 `generate_province_exclusions.py` (**ADD-only**, 382 QS lines: 113 new `P3113` exclusions +
-258 `P3831` role backfills); `generate_province_exclusion_removals.py` (**script 2**, SPARQL-gated,
-emits nothing until the matching add lands); `docs/province_exclusion_residual_2026-07.md`.
+258 `P3831` role backfills); `docs/province_exclusion_residual_2026-07.md`.
 
 **Model, per Emma:** `LIST|P3113|shrine|P3831|<every class it holds>|P1013|<criterion>`, where the
 criterion is `Q3877969` non-existence for Beppyō-only shrines and `Q110240047` omission for anything
@@ -117,10 +116,11 @@ This editor trumps making slight modelling improvements."* `province_exclusions.
 ADD-only, 0 removals, every line parses with two qualifiers) is registered in `ATOMIC_FILES` and
 drips behind `conflict_gate` like everything else.
 
-- [ ] **Script 2 stays UNREGISTERED and manual.** `generate_province_exclusion_removals.py` is
-  add-first/remove-later: it emits nothing until SPARQL confirms the adds landed. Run it by hand
-  once the drip has worked through the two corrections (Himure Hachimangū off Etchū, Shibi Shrine
-  off Izumi) — never register a removal batch that depends on ordering.
+**Province work is ADD-ONLY — there is no removal script (Emma 2026-07-10).** She rejected the
+"removal half" outright when it was described to her: *"we are literally removing nothing from the
+provinces … This is entirely adding, and you should never be removing anything from the provinces."*
+`generate_province_exclusion_removals.py` (the two Himure/Shibi wrong-list corrections) was DELETED.
+Wrong pre-existing exclusions are left in place; we only ever ADD.
 
 Reported, nothing to do (both tabulated in `docs/province_exclusion_residual_2026-07.md`): the
 seven no-class exclusions are four different problems with no general criterion; the 河内 polygon

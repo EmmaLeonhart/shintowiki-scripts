@@ -4,6 +4,25 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — province exclusions are ADD-ONLY: delete the removal script
+
+Emma, Open questions, replying directly to the bot's "Script 2 is the removal half of an
+add-first move": *"we are literally removing nothing from the provinces, and I'm confused as
+to why … this hasn't gotten into your head … This is entirely adding, and you should never be
+removing anything from the provinces."* She rejected the removal half outright.
+
+Enacted literally: deleted `generate_province_exclusion_removals.py` and its output file
+`province_exclusion_removals.txt`. It removed two P3113 exclusion statements sitting on the
+wrong province's list (Himure Hachimangū off Etchū, Shibi Shrine off Izumi) — i.e. removing
+statements from a province's list, exactly what Emma forbids. Those two wrong pre-existing
+exclusions are now **left in place**; province work only ever ADDS the correct exclusion.
+
+Updated the references that described a "removal half": the `ATOMIC_FILES` comment on
+`province_exclusions.txt`, the queue's province section, and
+`docs/province_exclusion_residual_2026-07.md`. The add script's test (which asserts "no code
+path can ever produce a removal line") is untouched and still passes — it already encodes the
+add-only invariant. 70 province + atomic-alignment tests pass. No Wikidata edits.
+
 ## 2026-07-10 — register the list-membership removals (Emma asked, repeatedly)
 
 Emma, Open questions: *"these are pure removals — no add, no ordering risk — so … this one can

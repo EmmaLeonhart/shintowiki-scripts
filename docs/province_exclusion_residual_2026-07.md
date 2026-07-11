@@ -1,8 +1,14 @@
 # Province-exclusion residual — what the batch does NOT touch
 
-2026-07-09. Companion to `generate_province_exclusions.py` (script 1, ADD-only) and
-`generate_province_exclusion_removals.py` (script 2, SPARQL-gated). Everything here is
+2026-07-09. Companion to `generate_province_exclusions.py` (ADD-only). Everything here is
 **reported, not edited**.
+
+> **Update 2026-07-10 — province work is ADD-ONLY; there is no removal script.** When the
+> "removal half" was described to her, Emma rejected it outright: *"we are literally removing
+> nothing from the provinces … This is entirely adding, and you should never be removing
+> anything from the provinces."* `generate_province_exclusion_removals.py` was deleted. The two
+> wrong pre-existing exclusions below (Himure on Etchū, Shibi on Izumi) are **left in place** —
+> we only ever add the correct exclusion, never remove the wrong one.
 
 ## 1. The seven no-class exclusions — there is no general criterion
 
@@ -32,8 +38,8 @@ A shrine already excluded on a different province's list than its coordinates in
 
 | Shrine | Coords say | Currently listed on | Verdict |
 |---|---|---|---|
-| `Q11509681` Himure Hachimangū | Ōmi (21 km from any other province) | **Etchū** | **Error.** Script 2 removes it, after the Ōmi add lands. |
-| `Q11605711` Shibi Shrine | Satsuma | **Izumi Province** (~600 km away) | **Error.** Script 2 removes it, after the Satsuma add lands. |
+| `Q11509681` Himure Hachimangū | Ōmi (21 km from any other province) | **Etchū** | **Wrong**, but LEFT IN PLACE — province work never removes (Emma 2026-07-10). We add the correct Ōmi exclusion only. |
+| `Q11605711` Shibi Shrine | Satsuma | **Izumi Province** (~600 km away) | **Wrong**, but LEFT IN PLACE — same. We add the correct Satsuma exclusion only. |
 | `Q11441628` Osaka Gokoku Shrine | Kawachi (1.0 km from boundary) | Settsu | **Polygon is wrong** — see §3. Existing Settsu statement is correct. Untouched. |
 | `Q11451877` Munakata Shrine | Yamashiro (5.4 km) | Imperial Palace / Heian-kyō | Out of scope — Emma: *"Just don't do it. That one is solved."* Untouched. |
 | `Q11513659` Kasuga Shrine (Kitakyushu) | Chikuzen (1.1 km from boundary) | Buzen | Border case; data cannot adjudicate. Untouched. |
@@ -53,8 +59,9 @@ Probing the merged polygons against known landmarks:
 | Mozu tombs (Sakai) | Izumi | 和泉 ✓ |
 
 The 河内 polygon over-extends westward across Sumiyoshi-ku and Suminoe-ku. Any `河内`
-assignment in that corridor is suspect. This is why script 2 does **not** act on
-Osaka Gokoku Shrine.
+assignment in that corridor is suspect. This is why Osaka Gokoku Shrine's existing Settsu
+statement is left untouched — and, since province work never removes anyway, nothing here
+is edited.
 
 ## 4. Twenty-one borderline assignments (emitted anyway, per Emma)
 
