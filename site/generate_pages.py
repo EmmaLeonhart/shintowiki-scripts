@@ -30,7 +30,8 @@ from urllib3.util.retry import Retry
 
 WIKI_URL = "https://shinto.miraheze.org"
 WIKI_API = f"{WIKI_URL}/w/api.php"
-USER_AGENT = "ShintowikiPages/1.0 (User:EmmaBot; shinto.miraheze.org)"
+USER_AGENT = ("ShintowikiPages/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot; "
+              "immanuelleleonhart@gmail.com) shintowiki-scripts")
 # This script lives in site/; the published output dir is _site/ at the repo
 # root (the Pages deploy workflow copies/commits repo-root _site/).
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -316,6 +317,14 @@ def page_html(title, body, active="index"):
 
 # ─── Index page ──────────────────────────────────────────────
 
+def _fmt(v):
+    """Thousands-separated when numeric, else the fallback string ("?").
+
+    Stat fetches degrade to "?" when Miraheze serves its anti-DDoS challenge; a
+    bare {v:,} then raises "Cannot specify ',' with 's'" and aborts the build."""
+    return f"{v:,}" if isinstance(v, int) else str(v)
+
+
 def generate_index(stats, qs_count=0, backlog_counts=None, wd_edits_today="?"):
     count = qs_count
     total = stats.get("total_pages", "?")
@@ -384,8 +393,8 @@ def generate_index(stats, qs_count=0, backlog_counts=None, wd_edits_today="?"):
 
 <h2>Wiki statistics</h2>
 <div class="stats-grid">
-  <div class="stat-card"><div class="number">{total:,}</div><div class="label">Content pages</div></div>
-  <div class="stat-card"><div class="number">{edits:,}</div><div class="label">Total edits</div></div>
+  <div class="stat-card"><div class="number">{_fmt(total)}</div><div class="label">Content pages</div></div>
+  <div class="stat-card"><div class="number">{_fmt(edits)}</div><div class="label">Total edits</div></div>
   <div class="stat-card"><div class="number">{without}</div><div class="label">Pages still needing a Wikidata QID</div></div>
   <div class="stat-card"><div class="number">{count:,}</div><div class="label">Pending P11250 statements</div></div>
   <div class="stat-card"><div class="number">{wd_edits_today}</div><div class="label">Wikidata edits today (UTC)</div></div>
@@ -910,7 +919,17 @@ def main():
     print(f"  Linked to Wikidata: {stats.get('linked_to_wikidata', '?')}")
 
     print("Fetching QuickStatements/P11250...", flush=True)
-    qs_text = fetch_wiki_page("QuickStatements/P11250")
+    # Miraheze periodically serves a "Checking your connection" anti-DDoS
+    # challenge (HTTP 403) to programmatic clients regardless of User-Agent
+    # (build failures 2026-07-11). That must not abort the whole build — the
+    # rest of the site (backlog, the Wikidata-driven data tables, static pages)
+    # doesn't need this fetch. Degrade to an empty P11250 list, like fetch_stats
+    # and the edits-today tile already do for the same reason.
+    try:
+        qs_text = fetch_wiki_page("QuickStatements/P11250")
+    except Exception as exc:
+        print(f"  WARNING: P11250 fetch failed ({exc}); continuing with 0 lines")
+        qs_text = ""
     qs_lines = parse_qs_lines(qs_text)
     print(f"  Found {len(qs_lines)} QuickStatements lines")
 
