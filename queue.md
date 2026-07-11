@@ -2,6 +2,18 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
+## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
+<!-- WIKI_GATE: WAIT -->
+**Status: ⏸ WAITING** — Miraheze wiki editing is blocked (anti-DDoS 403). The hourly
+`wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to
+**`WIKI_GATE: GO`** the moment the login works again.
+
+**Work-loop, every tick:** SYNC (pull remote) first, then read the marker.
+- Marker says **GO** → wiki editing is live: start working through the **❓ DECISIONS** below,
+  one at a time, in order, each with the explain-first option. This is your signal to actually run.
+- Marker says **WAIT** → do only **▶ DO / 🤖 AUTO** items and wait. Do NOT fire the decisions; we're
+  just holding until the gate opens (no more spinning on "nothing actionable").
+
 **How this queue executes (Emma 2026-07-11).** Every item is either executable now or clearly
 blocked — no item just sits with a buried question. Each is tagged:
 
@@ -11,9 +23,9 @@ blocked — no item just sits with a buried question. Each is tagged:
 - **🤖 AUTO** — runs itself (CI / a collector / the drip); no action beyond letting it run.
 - **⏸ BLOCKED** — waiting on a named external thing; skip until that clears.
 
-**Login gate.** Before attempting any *wiki* (shinto.miraheze.org) item, check the login works
-(`shinto_miraheze/check_wiki_login.py`). If it 403s (the anti-DDoS challenge), skip wiki items this
-pass — they are not failures, just deferred. Wikidata / read-only work is unaffected.
+**Login gate.** The 🚦 marker at the very top is the signal — CI keeps it current. When it says GO,
+the decisions run; when WAIT, only DO/AUTO items run. Wikidata / read-only work is unaffected either
+way.
 
 ---
 

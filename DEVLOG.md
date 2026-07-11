@@ -4,6 +4,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — wiki-editing gate: CI writes the GO signal onto the queue
+
+Emma: stop spinning on decisions while Miraheze wiki editing is down; instead have CI signal when
+it's back. Built `wiki-editing-gate.yml` (hourly): runs `check_wiki_login.py` and writes a
+`<!-- WIKI_GATE: GO|WAIT -->` marker + human status line at the very top of `queue.md`, committing
+only when the state flips. The work-loop reads it each tick after SYNC — **GO** → start clearing
+the ❓ DECISIONS one at a time; **WAIT** → do only DO/AUTO items and hold (no more "nothing
+actionable" spinning). No user ping — the marker is the signal. The check runs from the same runner
+IPs Miraheze is 403-challenging, so it (and the git-synced sync that carries the Open-questions
+responses to the wiki) both come alive together the moment the challenge lifts. Marker-flip regex
+tested both directions.
+
 ## 2026-07-11 — reorganise the queue into an EXECUTABLE, decision-first structure
 
 Emma: the queue was broken — items had buried questions that just got skipped, so the work-loop
