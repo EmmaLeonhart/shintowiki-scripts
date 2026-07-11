@@ -107344,6 +107344,10 @@ Q140478751	Lko	"대선사횡빈시"
 Q140478767	Lko	"천덕원횡빈시"
 # Source: JA "福聚寺 (横浜市)" (hanja reading)
 Q140478788	Lko	"복취사횡빈시"
+# Source: JA "海蔵寺" (hanja reading)
+Q140500300	Lko	"해장사"
+# Source: JA "光心寺" (hanja reading)
+Q140500488	Lko	"광심사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
