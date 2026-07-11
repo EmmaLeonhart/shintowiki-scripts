@@ -5,6 +5,9 @@ numbers = priority; bulk LLM-grunge lives in `remote_queue.json`, not here).
 
 ---
 
+## 0. Open Questions
+ please actually address the stuff in the open questions. It feels like you just kind of dropped the ball on it and decided not to actually do any of the stuff there. That stuff is important. 
+
 ## 1. Category-orchestrator throughput (conditional, low priority)
 
 - [ ] A full ns14 category cycle still takes ~many fires at ~1000 pages/145min. ONLY if the
