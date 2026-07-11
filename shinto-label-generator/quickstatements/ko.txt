@@ -37978,7 +37978,7 @@ Q135070091	Lko	"후쿠토미 신사"
 Q135070092	Lko	"쿠타야 신사"
 # Source: ID "Kuil Tamatsukuriyu" (romanization)
 Q135070093	Lko	"타마쓰쿠리유 신사"
-# Source: ID "Kuil Tamatsukuritenmangū" (romanization)
+# Source: ID "Kuil Tamatsukuri Tenmangū" (romanization)
 Q135070094	Lko	"타마쓰쿠리텐만구 신사"
 # Source: ID "Kuil Sai" (romanization)
 Q135070095	Lko	"사이 신사"
@@ -42772,8 +42772,6 @@ Q135177159	Lko	"오모리카모 신사"
 Q135177170	Lko	"묘진호코라 신사"
 # Source: ID "Kuil Tomouchi-sha (Kitano Tenmangu Setsumatsusha)" (romanization)
 Q135178095	Lko	"토모우치샤 신사"
-# Source: ID "Kuil Inoue-sha" (romanization)
-Q135178793	Lko	"이노우에샤 신사"
 # Source: ID "Kuil Kamo Yamaguchi (Sawada)" (romanization)
 Q135179289	Lko	"카모야마구치 신사"
 # Source: ID "Kuil Iwai" (romanization)
@@ -44486,10 +44484,10 @@ Q135195566	Lko	"아라스나 신사"
 Q135195567	Lko	"미유 신사"
 # Source: ID "Kuil Ōgamiyama okumiya" (romanization)
 Q135195597	Lko	"오가미야마오쿠미야 신사"
+# Source: ID "Kuil Sakuta" (romanization)
+Q135195610	Lko	"사쿠타 신사"
 # Source: ID "Kuil Izumo Jisai Keidaisha Tenjinsha" (romanization)
 Q135195620	Lko	"이즈모지사이케이다이샤텐진샤 신사"
-# Source: ID "Kuil Sakuta" (romanization)
-Q135195733	Lko	"사쿠타 신사"
 # Source: ID "Kuil Okūga" (romanization)
 Q135195799	Lko	"오쿠가 신사"
 # Source: ID "Kuil Ushio" (romanization)
@@ -61852,8 +61850,6 @@ Q27955487	Lko	"아쓰기 신사"
 Q28064760	Lko	"스와 신사"
 # Source: ID "Kuil Tao" (romanization)
 Q28068827	Lko	"타오 신사"
-# Source: ID "Kuil Kikuna" (romanization)
-Q28069431	Lko	"키쿠나 신사"
 # Source: ID "Wihara Abe Monju-in" (romanization)
 Q2821462	Lko	"아베몬주인 사원"
 # Source: ID "Wihara Adashino Nenbutsu-ji" (romanization)
@@ -64764,7 +64760,7 @@ Q65498694	Lko	"야나히메 신사"
 Q65516640	Lko	"와시노미야 신사"
 # Source: ID "Wihara Hōrin-ji" (romanization)
 Q655678	Lko	"호린지 사원"
-# Source: ID "Kuil Isobe inamura" (romanization)
+# Source: ID "Kuil Isobe Inamura" (romanization)
 Q65681696	Lko	"이소베이나무라 신사"
 # Source: ID "Kuil Takehime" (romanization)
 Q65734340	Lko	"타케히메 신사"
@@ -90187,7 +90183,7 @@ Q135195387	Lko	"매포신사구사지"
 # Source: JA "三寶社(平内神社)" (hanja reading)
 Q135195553	Lko	"삼보사평내신사"
 # Source: JA "本宮神社境外末社日御崎神社" (hanja reading)
-Q135195732	Lko	"본궁신사경외말사일어기신사"
+Q135195607	Lko	"본궁신사경외말사일어기신사"
 # Source: JA "氷川神社合祀三崎神社" (hanja reading)
 Q135195742	Lko	"빙천신사합사삼기신사"
 # Source: JA "久刀神社 旧社地" (hanja reading)
@@ -106988,8 +106984,8 @@ Q138569873	Lko	"장복사"
 Q138625748	Lko	"수사"
 # Source: JA "玄光庵" (hanja reading)
 Q138641337	Lko	"현광암"
-# Source: JA "龍澤山保寿院" (hanja reading)
-Q138657811	Lko	"용택산보수원"
+# Source: JA "保寿院" (hanja reading)
+Q138657811	Lko	"보수원"
 # Source: JA "福島八幡宮" (hanja reading)
 Q138683940	Lko	"복도팔번궁"
 # Source: JA "西山神社" (hanja reading)
@@ -107306,10 +107302,48 @@ Q140447397	Lko	"적성신사동생시천내정"
 Q140447398	Lko	"적성신사동생시천내정"
 # Source: JA "赤城神社 (高崎市岩鼻町)" (hanja reading)
 Q140447399	Lko	"적성신사고기시암비정"
+# Source: JA "知里付神社" (hanja reading)
+Q140447657	Lko	"지리부신사"
 # Source: JA "長谷神社" (hanja reading)
 Q140451875	Lko	"장곡신사"
 # Source: JA "長谷神社" (hanja reading)
 Q140451981	Lko	"장곡신사"
+# Source: JA "未知の神社" (hanja reading)
+Q140465982	Lko	"미지노신사"
+# Source: JA "八幡社 (横浜市保土ケ谷区)" (hanja reading)
+Q140469757	Lko	"팔번사횡빈시보토케곡구"
+# Source: JA "横浜御嶽神社" (hanja reading)
+Q140469774	Lko	"횡빈어악신사"
+# Source: JA "日吉神社 (横浜市港北区)" (hanja reading)
+Q140473095	Lko	"일길신사횡빈시항북구"
+# Source: JA "杉山神社 (横浜市港北区新羽町)" (hanja reading)
+Q140476123	Lko	"삼산신사횡빈시항북구신우정"
+# Source: JA "月読神社 (川崎市)" (hanja reading)
+Q140476376	Lko	"월독신사천기시"
+# Source: JA "五郎神社 (湯河原町)" (hanja reading)
+Q140477426	Lko	"오랑신사탕하원정"
+# Source: JA "八幡大神 (神奈川県寒川町)" (hanja reading)
+Q140478056	Lko	"팔번대신신내천현한천정"
+# Source: JA "源正寺 (厚木市)" (hanja reading)
+Q140478127	Lko	"원정사후목시"
+# Source: JA "金剛寺 (秦野市)" (hanja reading)
+Q140478406	Lko	"금강사진야시"
+# Source: JA "福寿寺 (三浦市)" (hanja reading)
+Q140478477	Lko	"복수사삼포시"
+# Source: JA "円福寺 (横浜市)" (hanja reading)
+Q140478659	Lko	"엔복사횡빈시"
+# Source: JA "安楽寺 (横浜市)" (hanja reading)
+Q140478668	Lko	"안악사횡빈시"
+# Source: JA "香象院" (hanja reading)
+Q140478676	Lko	"향상원"
+# Source: JA "樹源寺" (hanja reading)
+Q140478711	Lko	"수원사"
+# Source: JA "大仙寺 (横浜市)" (hanja reading)
+Q140478751	Lko	"대선사횡빈시"
+# Source: JA "天徳院 (横浜市)" (hanja reading)
+Q140478767	Lko	"천덕원횡빈시"
+# Source: JA "福聚寺 (横浜市)" (hanja reading)
+Q140478788	Lko	"복취사횡빈시"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
