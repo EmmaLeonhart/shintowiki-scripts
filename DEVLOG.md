@@ -4,6 +4,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — sequential-misc mechanism (the keystone Emma approved)
+
+Emma, Open questions: *"a single sequential miscellaneous file that is executed one by
+one in a random place during the 300 daily edits… We're doing it."* Built the mechanism
+in `direct_daily_edits.py` (the only editor that reaches Wikidata):
+
+* `sequential_misc.txt` runs **one line per day**, strict top-to-bottom, woven at a
+  random position among the day's edits, never interleaved.
+* A cursor (`sequential_misc.state`, committed by `commit_state.sh`) advances **only when
+  today's line reaches its end state** — a successful edit, or a removal whose target is
+  already gone (`execute_removal` returns "Claim not found for removal", which would
+  otherwise stall the cursor forever). It **HOLDS** on any genuine error / rate-limit /
+  freshness skip, so the paired successor never runs before its predecessor lands. That
+  is the out-of-order blanking Emma built this file to prevent.
+* Ships **EMPTY** (comments only) — the mechanism is live but idle. Populating it with the
+  ordered pairs (Takano removes, Awa entry-3 delete, province corrections) is a separate
+  deliberate step, tracked in queue.md with the one open design question (add in both the
+  atomic file and sequential, or move it).
+* `tests/test_sequential_misc.py` — 14 tests (line loading, cursor persistence, advance
+  vs hold, and a day-by-day pair-ordering simulation). All 80 existing daily-editor +
+  atomic-alignment tests still pass. No behaviour change while the file is empty.
+
 ## 2026-07-10 — browsable Shikinaisha-orphan table (Open questions response)
 
 Emma's briefing pick for the day: *browsable tables + reports* she'd asked for on the

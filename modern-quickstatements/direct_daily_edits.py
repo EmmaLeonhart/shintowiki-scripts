@@ -131,6 +131,78 @@ if edit_day() < datetime.date(2027, 1, 1):
     FILE_DAILY_CAPS["description_adds.txt"] = 50
 
 
+# ─────────────────────── sequential-misc file ───────────────────────
+# Emma 2026-07-10 (Open questions): "a single sequential miscellaneous file that
+# is executed one by one in a random place during the 300 daily edits. It
+# essentially just goes one a day." Unlike the atomic files (randomly sampled,
+# order-independent), this file runs exactly ONE line per day, top-to-bottom, at
+# a random position among the day's edits, NEVER interleaved. That is what makes
+# remove-then-add / add-then-remove PAIRS safe under the otherwise-random drip:
+# line N is confirmed landed before line N+1 is ever attempted, so the second
+# half can't fire first and blank a shrine. It is deliberately NOT in
+# ATOMIC_FILES; it has its own cursor. Empty/absent file => no-op.
+#
+# The cursor indexes the file's executable (non-blank, non-comment) lines. For
+# the index to stay stable across runs the file is APPEND-ONLY below the cursor:
+# never insert or reorder an executable line above lines already run. Comments
+# may be added anywhere (they are filtered out before indexing).
+SEQUENTIAL_FILE = "sequential_misc.txt"
+SEQUENTIAL_STATE = "sequential_misc.state"
+
+
+def _seq_path(name):
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), name)
+
+
+def load_sequential_lines(path=None):
+    """Executable (non-blank, non-comment) lines of the sequential-misc file, in order."""
+    path = path or _seq_path(SEQUENTIAL_FILE)
+    if not os.path.exists(path):
+        return []
+    out = []
+    with open(path, encoding="utf-8") as fh:
+        for raw in fh:
+            s = raw.strip()
+            if s and not s.startswith("#"):
+                out.append(s)
+    return out
+
+
+def load_sequential_cursor(path=None):
+    """Index of the next sequential line to run. Missing/corrupt => 0 (fail safe:
+    re-runs from the top rather than skipping ahead past unrun lines)."""
+    path = path or _seq_path(SEQUENTIAL_STATE)
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return int(json.load(fh).get("cursor", 0))
+    except Exception:
+        return 0
+
+
+def save_sequential_cursor(cursor, path=None):
+    path = path or _seq_path(SEQUENTIAL_STATE)
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump({"cursor": cursor}, fh)
+
+
+def next_sequential_line(lines, cursor):
+    """The one line to run today, or (None, None) if the sequence is drained."""
+    if 0 <= cursor < len(lines):
+        return cursor, lines[cursor]
+    return None, None
+
+
+def sequential_should_advance(success, msg):
+    """Advance the cursor past a line only when its intended end state is reached:
+    a successful edit (incl. "already exists"), or a removal whose target claim is
+    already gone. HOLD on any genuine error / rate-limit / parse-fail / gate skip,
+    so a paired successor never runs before its predecessor has actually landed —
+    the out-of-order blanking Emma built this file to prevent."""
+    if success:
+        return True
+    return msg == "Claim not found for removal"
+
+
 def read_all_lines():
     """Read all non-empty lines from all atomic QS files (per-file caps apply)."""
     lines = []
@@ -604,6 +676,20 @@ def main():
     selected = random.sample(all_lines, min(MAX_EDITS, len(all_lines)))
     print(f"Selected {len(selected)} random lines from {len(all_lines)} available\n")
 
+    # Weave in today's single sequential-misc line (one/day, strict order) at a
+    # random position. Empty/absent file or drained cursor => nothing added.
+    seq_lines = load_sequential_lines()
+    seq_cursor = load_sequential_cursor()
+    seq_idx, seq_line = next_sequential_line(seq_lines, seq_cursor)
+    seq_pos = None
+    seq_ran = False
+    seq_advance = False
+    if seq_line is not None:
+        seq_pos = random.randint(0, len(selected))
+        selected.insert(seq_pos, seq_line)
+        print(f"Sequential-misc: line #{seq_idx} woven in at position "
+              f"{seq_pos + 1}/{len(selected)}: {seq_line}\n")
+
     session, csrf = wd_login()
     if not session:
         print("FATAL: login failed — no edits attempted. Failing the run.")
@@ -615,6 +701,12 @@ def main():
 
     rate_limited = False
     for i, line in enumerate(selected, 1):
+        # Is THIS the woven-in sequential-misc line? Its cursor advances only when
+        # its own edit reaches its end state (tracked via seq_ran/seq_advance).
+        is_seq = seq_pos is not None and (i - 1) == seq_pos
+        if is_seq:
+            seq_ran = True
+            seq_advance = False  # default HOLD; set True only on a real end state
         # Compound unit: sub-lines joined by "||" execute sequentially and stop
         # at the first failure — used for description-then-label pairs where
         # the label add is only valid once the description landed (Emma
@@ -650,6 +742,9 @@ def main():
                     if "429" in msg:
                         print("  Rate-limited — stopping further edits")
                         rate_limited = True
+                if is_seq:
+                    seq_advance = sequential_should_advance(success, msg)
+                if not success:
                     break  # don't run the rest of the pair after a failure
             except Exception as e:
                 print(f"  ERROR: {e}")
@@ -667,6 +762,18 @@ def main():
             time.sleep(delay)
 
     print(f"\n=== Results: {succeeded} succeeded, {failed} failed ===")
+
+    # Advance the sequential-misc cursor iff today's sequential line reached its end
+    # state. Held otherwise (error / rate-limit / gate skip / never reached because a
+    # 429 stopped the run first), so the same line retries next run and its ordered
+    # successor never runs ahead of it.
+    if seq_pos is not None:
+        if seq_ran and seq_advance:
+            save_sequential_cursor(seq_cursor + 1)
+            print(f"Sequential-misc: cursor advanced {seq_cursor} -> {seq_cursor + 1}")
+        else:
+            print(f"Sequential-misc: cursor held at {seq_cursor} "
+                  f"(line #{seq_idx} retries next run)")
 
     # Total failure: attempted edits but NONE landed (the 2026-07-06 outage — an
     # invalidated bot token failing every save — hid behind a green run for days).

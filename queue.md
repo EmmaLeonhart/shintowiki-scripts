@@ -12,6 +12,28 @@ numbers = priority; bulk LLM-grunge lives in `remote_queue.json`, not here).
   proves too slow: skip history_offload/fandom_mirror on the ~3k enwiki-junk cats, or shard ns14. No
   premature optimization. (Cleanup-loop reliability itself is DONE — run 28802688487 green end-to-end.)
 
+## 2. Sequential-misc: populate the file (MECHANISM SHIPPED, empty no-op)
+
+The sequential-misc mechanism Emma approved ("We're doing it") is built + tested in
+`direct_daily_edits.py`: one line/day, strict top-to-bottom order, woven at a random
+position, cursor advances only when a line reaches its end state (success, or an
+already-gone removal) and HOLDS on any error — so a paired successor never runs before
+its predecessor lands. `sequential_misc.txt` ships EMPTY (comments only); 14 tests +
+80 existing pass. Next, deliberately (confirm the add-placement question with Emma):
+
+- [ ] **Populate the ordered pairs** into `sequential_misc.txt`, each written first-to-
+  land above its dependent. Real candidates (genuine add↔remove pairs): **Takano** — the
+  merged P6375 add then its two partial removes (Emma pasted the 3 lines in order);
+  **Awa entry-3** — add 天神社(Q137041912)@3 then delete the wrong 下立松原(Q11361262)@3;
+  **province corrections** — Himure off Etchū, Shibi off Izumi (add-first/remove-later).
+  Open design question for Emma: put the ADD in BOTH the atomic file and sequential
+  (idempotent, but double-managed), or MOVE it into sequential only? The whole ordered
+  unit must live in sequential for the guarantee to hold.
+- [ ] NOT sequential: the 2,236 list-membership removals are **pure removals** (no
+  re-add) → register script 2 to the atomic drip. The 22 duplicate `part of` are
+  value-match-ambiguous → report only (Emma). Province exclusions are **add-only** (Emma
+  was emphatic: nothing is ever removed from a province).
+
 ## SPARQL-heavy audits
 
 These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+), but the SPLIT

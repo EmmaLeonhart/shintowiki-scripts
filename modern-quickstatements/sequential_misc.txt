@@ -1,0 +1,31 @@
+# sequential_misc.txt — the sequential miscellaneous edits file
+# =============================================================
+# Emma 2026-07-10 (Open questions): "a single sequential miscellaneous file that
+# is executed one by one in a random place during the 300 daily edits. It
+# essentially just goes one a day."
+#
+# HOW IT RUNS (direct_daily_edits.py):
+#   * Exactly ONE line from this file is executed per daily run, in strict
+#     top-to-bottom order, woven in at a random position among the day's edits.
+#   * A cursor (sequential_misc.state) records the next line. It advances only
+#     when today's line reaches its end state (a successful edit, or a removal
+#     whose target is already gone); it HOLDS on any error / rate-limit / freshness
+#     skip, so the line retries next run.
+#   * Because line N is confirmed landed before line N+1 is ever attempted, this
+#     is the ONE safe home for remove-then-add and add-then-remove PAIRS that the
+#     random atomic drip cannot run safely (the remove could otherwise fire first
+#     and blank a shrine).
+#
+# RULES:
+#   * APPEND ONLY below the cursor. Never insert or reorder an executable line
+#     above lines already run — the cursor is an index into the executable
+#     (non-comment, non-blank) lines and would misalign. Comments/blanks may go
+#     anywhere; they are filtered out before indexing.
+#   * Write a PAIR in the order it must run: the line that must land first ABOVE
+#     the line that depends on it. One edit per line (no "||" compounds here).
+#   * QuickStatements v1 syntax, same as the atomic files. A leading "-" is a
+#     removal.
+#
+# No executable lines yet — the mechanism is live but idle until pairs are added
+# here (list-membership removals, the Takano address removes, the Awa entry-3
+# delete, etc.). Adding those data lines is a separate, deliberate step.
