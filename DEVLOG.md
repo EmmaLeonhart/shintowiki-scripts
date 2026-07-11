@@ -4,6 +4,19 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — Kokugakuin multiple-P13677: browsable review table (for Emma's eyes)
+
+The other half of the Kokugakuin anomaly review (the sequence half was resolved 2026-07-11).
+Emma's standing verdict on the multiple-P13677 set: ALL ambiguous, per-item, no batch fix,
+heuristics prohibited, even the "easy" ones need eyes. So autonomous P958 *edits* are off the
+table — but the *legwork* isn't. Built `generate_multi_p13677_page.py` →
+`_site/kokugakuin-multi-p13677.html`: for each (item, parent) link where the shrine item carries
+two Kokugakuin ids, it shows the parent's own entry and the item's competing entries (id → entry
+name, read live from each Kokugakuin page title), and highlights the item-id whose entry NAME
+matches the parent's — a hint, not an auto-decision. Where none matches cleanly, that IS the
+"needs eyes" case. Report only, no Wikidata edits; nav link added. Confirmed the Kokugakuin pages
+are static HTML (the entry name is in the page `<title>`), so no headless browser is needed.
+
 ## 2026-07-11 — religious-building labels stage 1: run it (22,548 English seeds)
 
 Emma named "the generalization of religious building forms" as an actionable area I'd overlooked.
