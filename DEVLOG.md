@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — Kokugakuin ranking sequence anomalies: all 6 resolved (INTENTIONAL)
+
+Emma's feedback that I'd been treating things as less actionable than they are — correct. The
+"parked" Kokugakuin ranking-anomaly item was explicitly *tool-assisted*, so I did it. Worked all
+6 ranking-sequence anomalies from `p958_manual_review.txt` via the documented method (read the
+Kokugakuin entry page's 現社名など（１..N） ordering vs the Wikidata candidate ranks).
+
+Finding — one structural explanation covers all 6: 現社名など（１） is the shrine's **current
+site (現社地) = the parent/entry item itself**, which isn't stored as a self-referential P527
+candidate, so the *other* 論社 (former sites 旧社地, or a distinct shrine) correctly start at rank
+2. Every "expected [1], got [2]" was a false alarm. Verdicts + per-item table:
+`docs/kokugakuin_ranking_anomaly_verdicts_2026-07.md`. No renumbers, no Wikidata edits.
+
+Also: the Kokugakuin detail pages are **static HTML** — a plain `urllib` fetch of
+`jmapps.ne.jp/kokugakuin/det.html?data_id=<id>` returns the full 現社名など list; the gstack
+headless browser the scope doc assumed is unnecessary. And added the 6 parent QIDs to
+`SEQUENCE_ANOMALIES_CLEARED` in `generate_p958_qualifiers.py` so the catcher stops re-flagging
+them each CI run (explicit per-item allowlist, source-verified — not a loosened heuristic, per
+Emma's standing prohibition). The multiple-P13677 half (~66) remains per-item work.
+
 ## 2026-07-11 — collect the first label-typo cloud-RAG answer
 
 The remote routine landed a batch (commit 01461823, "address 5 items"); one was a

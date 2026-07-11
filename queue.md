@@ -72,16 +72,17 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
 
 ## From [[Open questions]] wiki-queue 2026-07-08
 
-- [ ] **Kokugakuin ranking anomalies — PARKED per Emma 2026-07-08.** The multiple-P13677 set:
-  Emma ruled ALL ~66 ambiguous; the name-match elimination algorithm was WRONG (item names don't
-  reliably match entry titles — two-run overlaps mean both adjacent IDs can describe the same
-  shrine; deciding which entry is right needs the Kokugakuin page itself, per item). No mechanical
-  rule exists. Sequence-gap anomalies: same — history + Kokugakuin-page ordering per item (the
-  Q135040778 investigation is the worked example: triplicate import, rank-2 merged into an empty
-  husk Q135193070). Nothing here is batch-fixable — but the investigation is now TOOLED:
-  browse-render the Kokugakuin entry page and read its 現社名など（１..N） ordering, which per
-  Emma IS the ranking ground truth (method + Q135040778 worked example in
-  `docs/kokugakuin_anomaly_review_scope_2026-07.md`). Emma-led, tool-assisted.
+- [ ] **Kokugakuin ranking anomalies — SEQUENCE half DONE 2026-07-11; multiple-P13677 half
+  remains.** All 6 ranking-sequence anomalies investigated + resolved INTENTIONAL
+  (`docs/kokugakuin_ranking_anomaly_verdicts_2026-07.md`): in every case 現社名など（１） is the
+  shrine's current site (現社地) = the parent itself, so the P527 candidates correctly start at
+  rank 2 — the "expected 1" was a false alarm. Added the 6 to `SEQUENCE_ANOMALIES_CLEARED` in
+  `generate_p958_qualifiers.py` so the catcher stops re-flagging them (explicit per-item
+  allowlist, not a heuristic). NB the Kokugakuin detail pages are **static HTML** — a plain fetch
+  of `jmapps.ne.jp/kokugakuin/det.html?data_id=<id>` yields the full 現社名など list; no browser
+  needed. **Still to do:** the multiple-P13677 set — Emma ruled ALL ~66 ambiguous; per-item only
+  (item names don't reliably match entry titles; two-run overlaps mean adjacent IDs can describe
+  the same shrine), no mechanical rule. Same tooled method (read the entry page per item).
 ## From [[Open questions]] wiki-queue 2026-07-09 (second batch)
 
 - [ ] **Reisai: WAIT FOR THE GATE, then reassess** (Emma 2026-07-10, after seeing the numbers).

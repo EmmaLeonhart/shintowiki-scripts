@@ -37,6 +37,23 @@ OUTPUT_FILE = "p958_qualifiers.txt"
 MANUAL_REVIEW_FILE = "p958_manual_review.txt"
 SUMMARY_FILE = "p958_summary.json"
 
+# Sequence-anomaly parents INVESTIGATED and cleared as INTENTIONAL (2026-07-11),
+# each verified against the Kokugakuin entry page's 現社名など（１..N） ordering
+# (docs/kokugakuin_ranking_anomaly_verdicts_2026-07.md). In every case the
+# candidate ranks start at 2 because 現社名など（１） is the shrine's CURRENT SITE
+# (現社地) — the parent/entry item itself — which is not stored as a self-
+# referential P527 candidate. So the P527 candidates (former sites 旧社地, or a
+# distinct 論社) are correctly ranked 2,3,… and the "expected 1" is a false alarm.
+# This is an EXPLICIT per-item allowlist, not a loosened heuristic (Emma's rule).
+SEQUENCE_ANOMALIES_CLEARED = {
+    "Q11442961",   # 天王宮大歳神社 — (1)天王宮[self] (2)蒲神明宮
+    "Q11659237",   # 雄神神社 — (1)雄神神社[self] (2)元雄神神社
+    "Q135039294",  # 畠田神社 — (1)現社地[self] (2)(3)旧社地
+    "Q135040569",  # 三重神社 — (1)現社地[self] (2)旧社地 (3)大屋神社
+    "Q135041216",  # 百射山神社 — (1)[self] (2)元百射山神社
+    "Q135041251",  # 和理比賣神社 — (1)[self] (2)(3)旧社地
+}
+
 
 class RateLimitError(Exception):
     """Raised when a 429 Too Many Requests response is received."""
@@ -218,7 +235,7 @@ def main():
         non_zero = [r for r in rankings if r != 0]
         expected_non_zero = list(range(1, len(non_zero) + 1))
 
-        if non_zero != expected_non_zero:
+        if non_zero != expected_non_zero and parent_qid not in SEQUENCE_ANOMALIES_CLEARED:
             flagged_sequence.append({
                 "qid": parent_qid,
                 "label": parent_data["label"],
