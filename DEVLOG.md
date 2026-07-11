@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — empty-items report, done right: Special:Export instead of per-item API
+
+Emma, correcting my first attempt: *"Special:Export is the best… not whatever the fuck you did."*
+She was right. My first cut fetched each item's history + backlinks via ~6,800 sequential API
+calls (~50 min, and it 429'd when parallelised). Special:Export returns the full revision history
+of ALL items — with the complete JSON content per revision — in one bulk download.
+
+`analyze_empty_export.py`: parses the Special:Export XML (streaming `iterparse`) and, per item,
+**diffs the PEAK revision (most statements — the item at its fullest) against the CURRENT one** —
+every property/value present then and gone now is the recoverable payload. P31 called out. On her
+26 MB dump: **2,953 items, 285 lost something, 217 lost their P31**, analysed in **0.7 s** (vs 50
+min). `_site/empty-items.html` sorts restoration candidates by how much was lost, most first;
+`_site/empty-items-list.txt` is the plain QID+lost+label list. Opened in her browser.
+
+`--fetch` makes it self-contained for CI: pulls the QIDs off the maintenance page, Special:Exports
+them in 250-item batches (combined into one valid XML by keeping only `<page>` blocks), analyses.
+The weekly `empty-items-report.yml` now runs that (30-min timeout, was 120); the big export XML is
+gitignored. Deleted the superseded `generate_empty_items_report.py`. Report only — restoration is
+Emma's per-item call.
+
 ## 2026-07-11 — empty-items restoration report (Emma's new ask)
 
 Emma wants to find Wikidata items that were EMPTIED (lost many properties) and could be restored,

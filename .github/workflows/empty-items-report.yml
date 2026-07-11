@@ -25,7 +25,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -35,16 +35,16 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate empty-items list (fast) + full report (live Wikidata)
+      - name: Special:Export all empty items + analyse what was removed
         working-directory: modern-quickstatements
-        run: |
-          python generate_empty_items_report.py --list
-          python generate_empty_items_report.py
+        run: python analyze_empty_export.py --fetch
 
       - name: Commit the report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # the export XML is large + regenerable — never commit it
+          rm -f _site/empty-items-export.xml
           git add -f _site/empty-items.html _site/empty-items-list.txt
           if git diff --cached --quiet; then
             echo "no change to empty-items.html"

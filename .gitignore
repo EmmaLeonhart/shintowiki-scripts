@@ -25,3 +25,4 @@ shinto-label-generator/cdo_corpus_fetch.log
 # See docs/province_shapefiles.md.
 modern-quickstatements/.province_cache/
 modern-quickstatements/.saijin_research_run.log
+_site/empty-items-export.xml
