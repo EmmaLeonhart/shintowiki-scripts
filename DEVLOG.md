@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — religious-building labels stage 1: run it (22,548 English seeds)
+
+Emma named "the generalization of religious building forms" as an actionable area I'd overlooked.
+`generate_religious_building_labels.py` (stage 1, built in the work-loop restart) had never run —
+its endpoint was the 429-outaged `query.wikidata.org`. Fixed to `query-main` and ran it.
+
+Result: **22,644 candidates** (18,236 churches, 3,707 chapels, 454 synagogues, 246 mosques, 1
+cathedral) with a Commons category and no English label → **22,548 English labels** written to
+`shinto-label-generator/quickstatements/religious_building_en.txt` (only 2 non-Latin Commons names
+skipped by the Latin-script gate; ~94 produced no clean label). Enacts Emma's policy: *"We always
+copy the commons category name to the English label, assuming the commons category is in Latin
+script … for mosques and churches and synagogues."* Samples: "Church of Saint Leonard", "San
+Giovanni Battista", "Madonna della Neve".
+
+**Drip behaviour (transparent):** `select_label_proposals.py` globs every `quickstatements/*.txt`,
+so this file auto-joins the proposal pool — deliberately SLOW (20/day random across all label
+files, ramping to full ~1yr from setup), self-draining (only still-missing labels), and reviewable
+as it trickles. 7 stage-1 tests pass. Large file, so flagged here for visibility; easy to course-
+correct (remove the file) if the scope isn't wanted.
+
+**Stage 2 (multilang) deferred — a real design question, not blindly built.** The shrine multilang
+engine transliterates a Japanese name into scripts because there's no native English/Arabic/Greek
+name for a Japanese shrine. Churches are different: "Church of Saint Leonard" phonetically
+transliterated into Hindi/Arabic/Greek would usually be WRONG — these buildings have real native
+names. So stage 2 needs Emma's call on which languages/scripts (if any) transliteration suits for
+religious buildings, before building `generate_religious_building_multilang.py`.
+
 ## 2026-07-11 — finish the S143 citation sweep (shintai + sango; kofun/hisousha excluded)
 
 Completed the jawiki-importer citation sweep, again verifying per property/class first:

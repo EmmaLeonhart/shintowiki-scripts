@@ -35,7 +35,9 @@ import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "religious_building_en.txt")
-WDQS = "https://query.wikidata.org/sparql"
+# query.wikidata.org has been 429-outaged since 2026-07-06; the SPLIT endpoint
+# query-main serves everything except scholarly articles (repo policy).
+WDQS = "https://query-main.wikidata.org/sparql"
 UA = "ShintoWikiReligiousBuilding/1.0 (immanuelleleonhart@gmail.com)"
 
 # Building classes to cover — churches/cathedrals/chapels, mosques, synagogues.
