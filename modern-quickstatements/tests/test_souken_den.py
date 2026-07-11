@@ -83,7 +83,7 @@ def test_qs_line_carries_the_presumably_qualifier_and_the_source():
     line = den.qs_line("Q42", 807, "https://ja.wikipedia.org/wiki/X")
     assert line == (
         'Q42|P571|+0807-00-00T00:00:00Z/9|P1480|Q18122778|'
-        'S4656|"https://ja.wikipedia.org/wiki/X"')
+        'S143|Q177837|S4656|"https://ja.wikipedia.org/wiki/X"')
 
 
 def test_year_is_zero_padded_to_four_digits():

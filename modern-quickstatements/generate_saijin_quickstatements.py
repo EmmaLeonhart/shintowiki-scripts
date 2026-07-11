@@ -17,7 +17,7 @@ HIGH-PRECISION design — no name-matching, no guessing:
   * (shrine, deity) pairs already on Wikidata are skipped (SPARQL set).
 
 Output: saijin_p825.txt — atomic cited lines
-    <shrine>|P825|<deity>|S4656|"<jawiki url>"
+    <shrine>|P825|<deity>|S143|Q177837|S4656|"<jawiki url>"
 
 Usage:
     python generate_saijin_quickstatements.py             # full run
@@ -191,7 +191,7 @@ def main():
             if (qid, d) in have:
                 dup += 1
                 continue
-            lines.append(f'{qid}|P825|{d}|S4656|"{url}"')
+            lines.append(f'{qid}|P825|{d}|S143|Q177837|S4656|"{url}"')
     lines = sorted(set(lines))
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))

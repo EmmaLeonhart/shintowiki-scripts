@@ -39,7 +39,7 @@ or compete with a real one.
 Output: `souken_den_p571.txt`, registered in `ATOMIC_FILES` so the daily editor
 actually reads it (a batch written anywhere else is silently never run).
 
-    <item>|P571|+YYYY-00-00T00:00:00Z/9|P1480|Q18122778|S4656|"<jawiki url>"
+    <item>|P571|+YYYY-00-00T00:00:00Z/9|P1480|Q18122778|S143|Q177837|S4656|"<jawiki url>"
 """
 import io
 import os
@@ -120,7 +120,7 @@ def parse_den_year(field):
 
 
 def qs_line(qid, year, url):
-    return '{}|P571|+{:04d}-00-00T00:00:00Z/9|{}|{}|S4656|"{}"'.format(
+    return '{}|P571|+{:04d}-00-00T00:00:00Z/9|{}|{}|S143|Q177837|S4656|"{}"'.format(
         qid, year, P_SOURCING, PRESUMABLY, url)
 
 

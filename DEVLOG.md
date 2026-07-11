@@ -4,6 +4,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — extend the S143 citation fix to the founding-date + honzon importers
+
+Continued the property-modelling citation sweep. **Verified per property before touching each**
+(the pattern is NOT uniform): S143=Q177837 is dominant for founding date P571 (389 vs 17), sango
+P1448 (11 vs 3), and honzon/deity P825 (thousands) — but **festival P837 uses S143=0** (only
+S4656), so reisai/festival is deliberately EXCLUDED.
+
+Added `|S143|Q177837|S4656|` to the four verified-dominant importers and transformed their
+committed outputs (insert before `|S4656|`; data unchanged):
+`generate_souken_quickstatements.py` (P571, 4,102 lines), `generate_souken_den_quickstatements.py`
+(P571+presumably, 635), `generate_honzon_quickstatements.py` (P825, 994),
+`generate_saijin_quickstatements.py` (P825 precision, 5,964). souken/honzon/saijin regenerate in
+CI (which re-produces the same format); souken_den is static. Docstrings + the souken_den test
+updated; 115 tests pass.
+
+Still to sweep (each needs its own per-property S143 verification first): sango (static, P1448
+dominant — verified), shintai (P825), hisousha (P119/P547), kofun (P31/P571). reisai stays as-is.
+
 ## 2026-07-11 — deity importer: cite to the corpus standard (add S143 imported-from-jawiki)
 
 Property-modelling follow-through (Emma's steer). The survey found our jawiki importers under-cite

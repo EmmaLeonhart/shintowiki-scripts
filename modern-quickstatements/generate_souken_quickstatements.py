@@ -20,7 +20,7 @@ unambiguous Gregorian year are imported, at year precision. Skipped by design
     citation-style rules some articles deliberately omit the Western year).
 
 Items already carrying P571 are skipped (SPARQL). Output: souken_p571.txt —
-    <item>|P571|+YYYY-00-00T00:00:00Z/9|S4656|"<jawiki url>"
+    <item>|P571|+YYYY-00-00T00:00:00Z/9|S143|Q177837|S4656|"<jawiki url>"
 """
 import argparse
 import io
@@ -233,7 +233,7 @@ def main():
                     already += 1
                     continue
                 url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
-                lines.append(f'{qid}|P571|+{year:04d}-00-00T00:00:00Z/9|S4656|"{url}"')
+                lines.append(f'{qid}|P571|+{year:04d}-00-00T00:00:00Z/9|S143|Q177837|S4656|"{url}"')
                 clean += 1
             time.sleep(0.3)
         print(f"{template}: {len(titles)} articles, clean-year={clean}, "
