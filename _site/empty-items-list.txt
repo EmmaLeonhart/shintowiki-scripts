@@ -562,6 +562,7 @@ Q63386038	0	Mediterranean continental shelves	https://www.wikidata.org/wiki/Q633
 Q64079608	0	Antarctic continental shelves	https://www.wikidata.org/wiki/Q64079608
 Q65277683	0	ابو القاسم گرگانی	https://www.wikidata.org/wiki/Q65277683
 Q65314237	0	Agency of Statistics (Kosovo)	https://www.wikidata.org/wiki/Q65314237
+Q65338831	0	Cakkavatti Sutra	https://www.wikidata.org/wiki/Q65338831
 Q84205472	0	Quanzhou Municipal People's Government	https://www.wikidata.org/wiki/Q84205472
 Q85135031	0	COAR	https://www.wikidata.org/wiki/Q85135031
 Q89696409	0	Weir, Ermelunden	https://www.wikidata.org/wiki/Q89696409
@@ -679,7 +680,6 @@ Q65303747	0	Inkvis	https://www.wikidata.org/wiki/Q65303747
 Q65303859	0	Kormoraan	https://www.wikidata.org/wiki/Q65303859
 Q65304099	0	Brandstowwe	https://www.wikidata.org/wiki/Q65304099
 Q65304453	0	Suid-Afrikaanse Olimpiese Wenners	https://www.wikidata.org/wiki/Q65304453
-Q65338831	0	Cakkavatti Sutta	https://www.wikidata.org/wiki/Q65338831
 Q65340672	0	Mahāsamaya Sutta	https://www.wikidata.org/wiki/Q65340672
 Q65396098	0	Idioma muisca	https://www.wikidata.org/wiki/Q65396098
 Q65403556	0	خۆکوشتنی بەهاوکاری	https://www.wikidata.org/wiki/Q65403556
@@ -1329,6 +1329,7 @@ Q140380444	0	Plakglass	https://www.wikidata.org/wiki/Q140380444
 Q140406146	0	SmartQuick	https://www.wikidata.org/wiki/Q140406146
 Q140419066	0	Topometria	https://www.wikidata.org/wiki/Q140419066
 Q140420684	0	Category:Control theory	https://www.wikidata.org/wiki/Q140420684
+Q140423945	0	JT Jaguars BC	https://www.wikidata.org/wiki/Q140423945
 Q140433160	0	Gaius Lutatius Cerco	https://www.wikidata.org/wiki/Q140433160
 Q140433976	0	Outer banks, season 5	https://www.wikidata.org/wiki/Q140433976
 Q140439801	0	Flower Wars	https://www.wikidata.org/wiki/Q140439801
@@ -2823,7 +2824,6 @@ Q140416498	0	ゲーム実況/サネスチャンネル	https://www.wikidata.org/w
 Q140421233	0	1978 South Dakota Coyotes football team player roster	https://www.wikidata.org/wiki/Q140421233
 Q140422340	0	Digital Memory Museum of Ouled Naïl Heritage	https://www.wikidata.org/wiki/Q140422340
 Q140423220	0	විශ්‍රාම දෙපාර්තමේන්තුව	https://www.wikidata.org/wiki/Q140423220
-Q140423945	0	JT Jaguars BC	https://www.wikidata.org/wiki/Q140423945
 Q140429856	0	Фюзешабонь	https://www.wikidata.org/wiki/Q140429856
 Q140430861	0	Appeal Against the Russification and Colonization of Lithuania (1904)	https://www.wikidata.org/wiki/Q140430861
 Q140433149	0	پورنو فیلم های سکس بامهارم	https://www.wikidata.org/wiki/Q140433149
