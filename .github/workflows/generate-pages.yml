@@ -64,6 +64,11 @@ jobs:
         working-directory: modern-quickstatements
         run: python generate_run_history.py
 
+      - name: Generate Shikinaisha orphan table (live SPARQL)
+        working-directory: modern-quickstatements
+        run: python generate_shikinaisha_orphan_page.py
+        continue-on-error: true
+
       - name: Combine sites
         run: |
           # Copy QS dashboard pages into main _site, renaming index to avoid collision

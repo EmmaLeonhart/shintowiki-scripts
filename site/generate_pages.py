@@ -270,6 +270,7 @@ def nav_html(active="index"):
         ("index", "index.html", "Overview"),
         ("backlog", "backlog.html", "Backlog"),
         ("self-audit", "self-audit.html", "Self-audit"),
+        ("shikinaisha-orphans", "shikinaisha-orphans.html", "Shikinaisha ⧉"),
         ("shrine-ranking", "shrine-ranking.html", "Shrine Ranking"),
         ("p11250", "p11250.html", "P11250"),
         ("runs", "runs.html", "Run History"),

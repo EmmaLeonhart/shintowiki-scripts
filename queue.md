@@ -12,6 +12,23 @@ numbers = priority; bulk LLM-grunge lives in `remote_queue.json`, not here).
   proves too slow: skip history_offload/fandom_mirror on the ~3k enwiki-junk cats, or shard ns14. No
   premature optimization. (Cleanup-loop reliability itself is DONE — run 28802688487 green end-to-end.)
 
+## 2. Browsable tables + reports (Emma's 2026-07-10 briefing pick)
+
+The GitHub Pages tables/reports Emma asked for as Open-questions replies. Shikinaisha
+84+66 table SHIPPED (`_site/shikinaisha-orphans.html`, generator + CI + nav; see DEVLOG).
+Remaining:
+
+- [ ] **Kokugakuin id matcher table** — browsable page of the 18 entries still missing a
+  P13677 id (from `match_kokugakuin_ids.py` / `kokugakuin_id_report.txt`): show each
+  entry, the name-matched candidate id(s), and why none was auto-safe. Emma: *"make a
+  GitHub Pages page that shows me the actual stuff here."*
+- [ ] **Awa hand-edit page** — Emma: *"oh god fucking link this."* Browsable explainer of
+  the Awa entry-3 defect (天神社 vs the mis-imported 下立松原神社 piped link; the delete QS
+  can't do because 下立松原神社 sits on that list twice). `docs/engishiki_list_defects_2026-07.md §1`.
+- [ ] **Izumo comprehensive report** — Emma: *"write a relatively comprehensive report on
+  what the fuck might be happening with this thing."* `Q135040786` doing duty for two
+  register entries (意宇郡 28 同社坐韓国伊大弖神社 / 39 同社坐韓国伊太弖神社); needs a NEW item to split.
+
 ## SPARQL-heavy audits
 
 These need a full SPARQL scan. `query.wikidata.org` is 429-outaged (2026-07-06+), but the SPLIT
@@ -230,5 +247,5 @@ The Kikuna restoration is DONE as a queued batch (`miscellaneous_edits.txt`) —
 
 - [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick — Emma replaced the
   earlier 3-cron setup 2026-07-08; job ids are session-local and change each session, current
-  session's is aaed7824). SYNC step fast-forwards the branch onto origin/main each tick.
+  session's is 20cd74bb). SYNC step fast-forwards the branch onto origin/main each tick.
 - [ ] Run the status-report action once more independently as an end-of-session summary.

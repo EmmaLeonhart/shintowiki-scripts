@@ -4,6 +4,30 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — browsable Shikinaisha-orphan table (Open questions response)
+
+Emma's briefing pick for the day: *browsable tables + reports* she'd asked for on the
+Open questions page. First deliverable shipped — the **150 confirmed Shikinaisha no
+Engishiki list names** (84 with a twin entry, 66 without), which she asked to receive
+*"with a link to the GitHub Pages thing, browsable table."*
+
+* `modern-quickstatements/generate_shikinaisha_orphan_page.py` — reuses the report's
+  live SPARQL `gather()` (so the page and `docs/orphan_shikinaisha_2026-07.md` never
+  drift), and additionally surfaces the **twin entry QID + match reason** so the 84
+  pairs can be eyeballed side by side (the report only listed the orphan's claims).
+  Filterable single-file HTML → `_site/shikinaisha-orphans.html`.
+* Kokugakuin id links use the real P13677 formatter
+  (`jmapps.ne.jp/kokugakuin/det.html?data_id=`), confirmed against P1630 — not the old
+  21coe URLs.
+* Wired into `generate-pages.yml` (continue-on-error: SPARQL may 429); nav link added
+  in `site/generate_pages.py`. Report only — no Wikidata edits.
+* Live: <https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html>
+
+Still to come under the same focus: Kokugakuin 18-entry matcher table, Awa hand-edit
+page, and the comprehensive Izumo report.
+
+---
+
 ## 2026-07-10 — deity research: 祭神→P825 with object-named-as + principal-role qualifiers
 
 `generate_saijin_deity_research.py` — the research companion to the high-precision
