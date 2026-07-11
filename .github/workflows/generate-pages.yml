@@ -74,6 +74,11 @@ jobs:
         run: python generate_kokugakuin_id_page.py
         continue-on-error: true
 
+      - name: Generate Awa entry-3 explainer (static)
+        working-directory: modern-quickstatements
+        run: python generate_awa_entry3_page.py
+        continue-on-error: true
+
       - name: Combine sites
         run: |
           # Copy QS dashboard pages into main _site, renaming index to avoid collision

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awa Province entry 3 — a piped link stole 天神社</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 960px;
+    margin: 0 auto; padding: 1.5rem; color: #222; line-height: 1.6; }
+  h1 { color: #2e7d32; font-size: 1.5rem; }
+  h2 { color: #2e7d32; border-bottom: 2px solid #c8e6c9; padding-bottom: 0.3rem;
+    margin-top: 2rem; }
+  .nav a { color: #2e7d32; }
+  .intro { background: #fff3e0; border-left: 4px solid #ff9800;
+    padding: 0.75rem 1rem; border-radius: 0 4px 4px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; margin: 1rem 0; }
+  th, td { border: 1px solid #e0e0e0; padding: 0.45rem 0.6rem; text-align: left; }
+  th { background: #f1f8e9; }
+  tr.wrong td { background: #fff8e1; }
+  td.bad { color: #c62828; }
+  td.good { color: #2e7d32; font-weight: 600; }
+  .tag { font-size: 0.75rem; color: #888; }
+  code, pre { font-family: Consolas, Monaco, monospace; }
+  pre { background: #263238; color: #eceff1; padding: 0.85rem 1rem; border-radius: 6px;
+    overflow-x: auto; font-size: 0.85rem; }
+  pre .del { color: #ff8a80; }
+  pre .add { color: #b9f6ca; }
+  .box { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem;
+    margin: 1rem 0; }
+  .box.add { background: #e8f5e9; border-color: #c8e6c9; }
+  .box.del { background: #ffebee; border-color: #ffcdd2; }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0;
+    color: #999; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<p class="nav"><a href="index.html">&larr; shintowiki</a></p>
+<h1>Awa Province, entry 3: a piped link stole 天神社</h1>
+<p class="intro">The 927 register's Awa entry <strong>#3</strong> is a shrine called
+<strong>天神社 (Tenjinsha)</strong>. On the jawiki list article that entry's link was
+written as a <em>piped link</em> pointing at a different shrine —
+<code>[[下立松原神社#白浜町の下立松原神社|下立松原神社]]</code> — and the import followed the
+link instead of the entry name. So Wikidata now says Awa entry #3 <em>is</em>
+Shimotachimatsubara (which is really entry #5, correctly there too). The
+<strong>add</strong> putting Tenjinsha back at #3 is already queued; the leftover is a
+by-hand <strong>delete</strong> of the wrong statement.</p>
+
+<h2>The Awa sequence — Kokugakuin ids prove the swap</h2>
+<p>The ids run contiguously; <strong>181734 is missing entirely</strong> from the list
+and is held by <a href="https://www.wikidata.org/wiki/Q137041912" target="_blank">天神社</a>, a complete entry item that carries
+<strong>no list membership at all</strong>. Its slot was taken by the piped link.</p>
+<table>
+<thead><tr><th>ordinal</th><th>register entry</th><th>Kokugakuin id</th>
+<th>what Wikidata says now</th><th>what it should say</th></tr></thead>
+<tbody>
+<tr><td>1</td><td lang="ja">安房坐神社</td><td>&mdash;</td><td>安房坐神社</td><td>安房坐神社</td></tr>
+<tr><td>2</td><td lang="ja">后神天比理乃咩命神社</td><td><a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=181733" target="_blank">181733</a></td><td>后神天比理乃咩命神社</td><td>后神天比理乃咩命神社</td></tr>
+<tr class="wrong"><td>3</td><td lang="ja">天神社</td><td><a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=181734" target="_blank">181734</a></td><td class="bad"><a href="https://www.wikidata.org/wiki/Q11361262" target="_blank">下立松原神社</a> <span class="tag">(piped-link import)</span></td><td class="good"><a href="https://www.wikidata.org/wiki/Q137041912" target="_blank">天神社</a></td></tr>
+<tr><td>4</td><td lang="ja">莫越山神社</td><td><a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=181735" target="_blank">181735</a></td><td>莫越山神社</td><td>莫越山神社</td></tr>
+<tr><td>5</td><td lang="ja">下立松原神社</td><td><a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=181736" target="_blank">181736</a></td><td><a href="https://www.wikidata.org/wiki/Q11361262" target="_blank">下立松原神社</a></td><td><a href="https://www.wikidata.org/wiki/Q11361262" target="_blank">下立松原神社</a></td></tr>
+<tr><td>6</td><td lang="ja">高家神社</td><td><a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id=181737" target="_blank">181737</a></td><td>高家神社</td><td>高家神社</td></tr>
+</tbody></table>
+
+<h2>The fix, in two halves</h2>
+<div class="box add">
+<p><strong>1. The add — already queued</strong> in <code>miscellaneous_edits.txt</code>,
+behind the drip's conflict gate. It puts 天神社 back at ordinal 3:</p>
+<pre><span class="add">Q11450714	P527	Q137041912	P1545	"3"</span></pre>
+</div>
+<div class="box del">
+<p><strong>2. The delete — by hand.</strong> Remove the list's <code>has part</code> →
+<a href="https://www.wikidata.org/wiki/Q11361262" target="_blank">下立松原神社</a> statement <em>carrying ordinal 3</em> (keep the correct one at
+ordinal 5). <strong>This cannot be a QuickStatement:</strong> two <code>has part</code>
+statements on <a href="https://www.wikidata.org/wiki/Q11450714" target="_blank">Q11450714</a> share the value <a href="https://www.wikidata.org/wiki/Q11361262" target="_blank">Q11361262</a>, so a value-matched removal is
+as likely to take the correct #5 as the wrong #3. It needs a by-hand delete of that one
+specific statement — or the forthcoming sequential-misc mechanism, which runs
+remove-then-add pairs safely.</p>
+<pre><span class="del">- Q11450714  has part  Q11361262  (series ordinal 3)   &larr; delete this one</span>
+  Q11450714  has part  Q11361262  (series ordinal 5)   &larr; keep</pre>
+</div>
+
+<p>Detail: <code>docs/engishiki_list_defects_2026-07.md §1</code>. Report only — the
+delete is not automated; the add sits behind the conflict gate.</p>
+<footer>Generated 2026-07-11 03:47 UTC by
+<a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a>
+(<code>generate_awa_entry3_page.py</code>).</footer>
+</body>
+</html>
