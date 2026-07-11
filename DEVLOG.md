@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — deity object-named-as: drop malformed multi-name P1932 values
+
+Auditing the deity object-named-as (P1932) values Emma reacted to surfaced a real defect: the
+qualifier is taken from a wikilink's piped display text, and a single link whose display lists
+several deities — by `<br>` (`[[住吉三神|表筒男命<br/>中筒男命<br/>底筒男命]]`), by a separator
+(`速玉男命、事解男命`), or with a parenthetical alias (`大巳貴命（大国主命）`) — produced a P1932
+value that is not one verbatim name. 41 such values in `saijin_deity_research.txt`.
+
+Fix: `clean_named()` drops the P1932 qualifier when the display carries `<br>`, a separator, a
+`|`, or a parenthetical — the P825 deity link (jawiki's own identification) is kept, only the
+unreliable spelling goes. Applied in `qs_line`; the 41 committed lines cleaned in place (P825 +
+S143 + S4656 retained). 4 new tests (17 total) pass. This is the kind of thing the object-named-as
+model must guard: one statement, one deity, one name.
+
 ## 2026-07-11 — Kokugakuin multiple-P13677: browsable review table (for Emma's eyes)
 
 The other half of the Kokugakuin anomaly review (the sequence half was resolved 2026-07-11).

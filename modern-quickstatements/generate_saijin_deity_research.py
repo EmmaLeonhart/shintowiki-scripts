@@ -164,6 +164,25 @@ def principal_refs(field_value):
     return links, plain
 
 
+def clean_named(named):
+    """A P1932 'object named as' must be ONE verbatim source spelling of THIS deity.
+
+    A single wikilink whose piped display lists several deities — by `<br>` lines
+    (`[[住吉三神|表筒男命<br/>中筒男命<br/>底筒男命]]`) or by a separator (`速玉男命、事解男命`)
+    — or that carries a parenthetical alias (`大巳貴命（大国主命）`) is not one name, so we
+    drop the qualifier rather than store junk (the P825 deity link itself stays).
+    Caught 2026-07-11: 31 such values. Returns "" to signal 'no P1932'.
+    """
+    if not named:
+        return ""
+    if re.search(r"<br", named, re.I):          # multi-line list of names
+        return ""
+    named = re.sub(r"<[^>]*>", "", named).strip()   # strip any other stray markup
+    if not named or re.search(r"[、,;；／/・|]|（|\(", named):
+        return ""
+    return named
+
+
 def qs_line(shrine_qid, deity_qid, principal, named, url):
     """One QuickStatements line: P825 + optional P3831 role + P1932 name + jawiki ref.
 
@@ -172,6 +191,7 @@ def qs_line(shrine_qid, deity_qid, principal, named, url):
     principal-deity role (P3831).
     """
     role = f"|P3831|{PRINCIPAL_DEITY_ROLE}" if principal else ""
+    named = clean_named(named)
     named_q = f'|P1932|"{named.replace(chr(34), "")}"' if named else ""
     return (f'{shrine_qid}|P825|{deity_qid}{role}{named_q}'
             f'|S143|{JA_WIKIPEDIA}|S4656|"{url}"')

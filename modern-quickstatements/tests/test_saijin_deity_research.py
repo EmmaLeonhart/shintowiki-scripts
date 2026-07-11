@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from generate_saijin_deity_research import (  # noqa: E402
     link_targets, link_pairs, plain_names, qs_line, build_lines, principal_refs,
-    PRINCIPAL_DEITY_ROLE, JA_WIKIPEDIA,
+    PRINCIPAL_DEITY_ROLE, JA_WIKIPEDIA, clean_named,
 )
 
 
@@ -70,6 +70,25 @@ def test_qs_line_general_vs_principal():
         f'Q1|P825|Q2|P1932|"天照大御神"|S143|{JA_WIKIPEDIA}|S4656|"{url}"'
     assert qs_line("Q1", "Q2", True, "天照皇大御神", url) == \
         f'Q1|P825|Q2|P3831|{PRINCIPAL_DEITY_ROLE}|P1932|"天照皇大御神"|S143|{JA_WIKIPEDIA}|S4656|"{url}"'
+
+
+def test_clean_named_keeps_single_verbatim_name():
+    assert clean_named("天照皇大御神") == "天照皇大御神"
+    assert clean_named("素戔嗚尊") == "素戔嗚尊"
+
+
+def test_clean_named_drops_multi_name_and_markup():
+    # a single wikilink whose display lists several deities is not one name
+    assert clean_named("速玉男命、事解男命") == ""
+    assert clean_named("表筒男命<br/>中筒男命<br/>底筒男命") == ""
+    assert clean_named("大巳貴命（大国主命）") == ""
+
+
+def test_a_malformed_named_drops_only_the_qualifier_not_the_deity_link():
+    """The P825 deity link (jawiki's identification) survives; only P1932 goes."""
+    url = "https://ja.wikipedia.org/wiki/X"
+    assert qs_line("Q1", "Q2", False, "速玉男命、事解男命", url) == \
+        f'Q1|P825|Q2|S143|{JA_WIKIPEDIA}|S4656|"{url}"'
 
 
 def _ref(principal, named):
