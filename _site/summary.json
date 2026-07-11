@@ -1,23 +1,23 @@
 {
-  "generated_utc": "2026-07-10T21:32:24.593795+00:00",
+  "generated_utc": "2026-07-11T03:58:28.775712+00:00",
   "stats": {
-    "linked_to_wikidata": 0,
-    "without_wikidata": 0,
-    "japanese_category_names": 0,
-    "autocreated_categories": 0,
-    "untranslated_japanese": 0,
-    "double_category_qids": 8,
-    "duplicated_qid_redirects": 0,
-    "total_pages": 11189,
-    "total_edits": 3810575
+    "linked_to_wikidata": "?",
+    "without_wikidata": "?",
+    "japanese_category_names": "?",
+    "autocreated_categories": "?",
+    "untranslated_japanese": "?",
+    "double_category_qids": "?",
+    "duplicated_qid_redirects": "?",
+    "total_pages": "?",
+    "total_edits": "?"
   },
-  "p11250_pending": 5568,
+  "p11250_pending": 0,
   "backlog_counts": {
-    "3": 1278,
-    "4": 8,
-    "5": 1204,
+    "3": 0,
+    "4": 0,
+    "5": 0,
     "6": 0,
-    "7": 478,
-    "8": 6
+    "7": 0,
+    "8": 0
   }
 }
