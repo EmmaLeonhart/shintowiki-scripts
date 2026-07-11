@@ -30,6 +30,17 @@ UA = {"User-Agent": "ShintoWikiConceptTranslate/1.0 (immanuelleleonhart@gmail.co
 # Hand-authored translations. Only languages I'm confident about per item; a
 # language omitted for an item = "unclear, skip", not a gap to guess.
 TRANSLATIONS = {
+    "Q140493995": {  # primary deity / 主祭神 — the chief enshrined kami of a shrine
+        "de": "Hauptgottheit", "nl": "hoofdgodheid", "sv": "huvudgudom",
+        "da": "hovedguddom", "nb": "hovedguddom", "es": "deidad principal",
+        "ca": "deïtat principal", "gl": "deidade principal", "pt": "divindade principal",
+        "fr": "divinité principale", "it": "divinità principale",
+        "ro": "divinitate principală", "ru": "главное божество",
+        "uk": "головне божество", "bg": "главно божество", "pl": "główne bóstwo",
+        "cs": "hlavní božstvo", "sk": "hlavné božstvo", "sl": "glavno božanstvo",
+        "hr": "glavno božanstvo", "sr": "главно божанство", "eo": "ĉefa diaĵo",
+        "id": "dewa utama", "ms": "dewa utama",
+    },
     "Q3395121": {  # wayside shrine (道端の祠)
         "de": "Wegschrein", "nl": "wegschrijn", "sv": "vägkantshelgedom",
         "es": "santuario junto al camino", "ca": "santuari a la vora del camí",

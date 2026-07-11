@@ -24,3 +24,4 @@ shinto-label-generator/cdo_corpus_fetch.log
 # and never republished — only the derived point-in-polygon fact leaves the box.
 # See docs/province_shapefiles.md.
 modern-quickstatements/.province_cache/
+modern-quickstatements/.saijin_research_run.log
