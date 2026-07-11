@@ -51,6 +51,29 @@ def test_no_atomic_file_entry_is_a_path():
     assert not bad, f"ATOMIC_FILES entries must be bare filenames: {bad}"
 
 
+def test_every_committed_atomic_line_parses():
+    """A line that `parse_qs_line` returns None for is silently skipped by the daily
+    editor — it never reaches Wikidata and never errors. That is exactly how the
+    malformed multi-name P1932 values (caught 2026-07-11) would have hidden. Guard
+    the committed atomic files against any such silent-fail line, honouring the
+    `||` compound-unit split the editor itself uses.
+    """
+    offenders = []
+    for name in direct_daily_edits.ATOMIC_FILES:
+        path = os.path.join(MQ, name)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as fh:
+            for lineno, raw in enumerate(fh, 1):
+                s = raw.strip()
+                if not s or s.startswith("#"):
+                    continue
+                for sub in (p.strip() for p in s.split("||")):
+                    if sub and direct_daily_edits.parse_qs_line(sub) is None:
+                        offenders.append(f"{name}:{lineno} {sub[:60]!r}")
+    assert not offenders, "unparseable (silent-fail) atomic lines:\n" + "\n".join(offenders[:10])
+
+
 @pytest.mark.parametrize("modname", GENERATORS)
 def test_generator_output_is_registered(modname):
     mod = importlib.import_module(modname)

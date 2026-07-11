@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — atomic-data quality audit + silent-fail regression guard
+
+Following the P1932 fix, audited all 56 committed atomic files: (1) no leftover markup in values
+(the one hit was a `#` comment in a non-atomic file), (2) every non-comment line parses cleanly
+through `direct_daily_edits.parse_qs_line` — no silent-fail lines. The data is sound.
+
+Added the missing regression guard: `test_every_committed_atomic_line_parses` in
+`test_atomic_files_reachable.py` — a line `parse_qs_line` returns None for is silently skipped by
+the daily editor (never edits, never errors), which is exactly how a malformed emission hides.
+Now any such line in a committed atomic file fails CI. 39 tests pass.
+
 ## 2026-07-11 — deity object-named-as: drop malformed multi-name P1932 values
 
 Auditing the deity object-named-as (P1932) values Emma reacted to surfaced a real defect: the
