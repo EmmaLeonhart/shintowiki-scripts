@@ -23,8 +23,17 @@ Engishiki list names** (84 with a twin entry, 66 without), which she asked to re
   in `site/generate_pages.py`. Report only — no Wikidata edits.
 * Live: <https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html>
 
-Still to come under the same focus: Kokugakuin 18-entry matcher table, Awa hand-edit
-page, and the comprehensive Izumo report.
+**All four shipped this session** (same nav/style, all report-only, wired into
+`generate-pages.yml`):
+
+1. `shikinaisha-orphans.html` — the 84+66 (live SPARQL; surfaces twin QIDs).
+2. `kokugakuin-missing-ids.html` — the 18 entries no safe P13677 id, with the why
+   per item (7 NO-MATCH, 6 NO-ANCHOR, 3 ENTRY-TAKEN, 2 AMBIGUOUS).
+3. `awa-entry-3.html` — the piped-link theft of 天神社; before/after + two-halves fix.
+4. `izumo-karakuni.html` — the comprehensive Q135040786 report (rendered from
+   `docs/izumo_ou_karakuni_2026-07.md`). Investigation found it worse than the earlier
+   note: one item carries list@28 + host 揖夜神社 + list@39; the list side has a spurious
+   ord-29 dup, an empty ord-39 hole, and three class/rank items wrongly listed as parts.
 
 ---
 
