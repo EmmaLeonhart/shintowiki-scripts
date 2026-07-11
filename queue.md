@@ -94,15 +94,6 @@ shinwa-otaku 205 / nicovideo 77; xrea = jinja-kikou dupe; 護国神社 excluded 
   NB the `Day of Reisai` property proposal was **declined** (2025-12-07); the model stays
   `P837` + `P3831`=`Q11385469` per `docs/wikidata_shrine_festival_model.md`.
 
-## Hard-residual street addresses — decided, queued; one manual follow-up
-
-Decided by Emma 2026-07-10; 17 removals + the Takano merge-add are in `miscellaneous_edits.txt`
-behind the gate. Report: `docs/ronsha_address_resolution_2026-07.md`.
-
-- [ ] `generate_ronsha_address_merge_removals.py` (script 2, **unregistered, manual**) drops
-  Takano Shrine's two old addresses. It emits nothing until SPARQL sees the merged
-  `〒708-0013 岡山県津山市二宮601` live. Run it by hand after the drip has delivered.
-
 ## LAST IN THE QUEUE — province exclusion (STOP GATE PASSED; batch BUILT + WIRED TO THE DRIP)
 
 The gate was run. Emma answered seven `AskUserQuestion` blocks; the shapefile step is solved and

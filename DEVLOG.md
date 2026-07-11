@@ -4,6 +4,22 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-10 — retire the Takano address merge (done by hand; declutter)
+
+Emma, Open questions: *"Seriously, I implemented this! I ran these quick statements, so why
+is this thing still here?!"* Verified against live Wikidata: `Q11673131` (Takano Shrine) now
+carries **only** the merged `〒708-0013 岡山県津山市二宮601`; both old partials are gone. The
+work is complete, so the machinery for it was retired:
+
+* removed the Takano `STATIC_EDITS` add from `generate_miscellaneous_edits.py` (it was emitted
+  unconditionally, so it lingered as a permanent idempotent no-op — exactly what Emma flagged);
+  regenerated `miscellaneous_edits.txt` (only that one line dropped).
+* deleted the single-purpose companion `generate_ronsha_address_merge_removals.py`, its test,
+  and its orphaned empty output file. It was unregistered/manual, so nothing in the drip
+  referenced it.
+* dropped the "Hard-residual street addresses" queue section (the 17 address removals self-heal
+  in the atomic drip; the Takano follow-up is done). 84 misc + atomic-alignment tests pass.
+
 ## 2026-07-10 — sequential-misc mechanism (the keystone Emma approved)
 
 Emma, Open questions: *"a single sequential miscellaneous file that is executed one by

@@ -80,13 +80,11 @@ STATIC_EDITS = [
     ("Q138565446", "Len", '"Shinmei-gū (Kanagawa-ku, Yokohama)"',
      "English label is a Commons category name"),
 
-    # Takano Shrine holds two addresses, neither containing the other:
-    # `〒708-0013 津山市二宮601` has the postcode and block but no prefecture,
-    # `岡山県津山市二宮` has the prefecture and neither. Emma 2026-07-10 chose to
-    # merge. This is the ADD half; `generate_ronsha_address_merge_removals.py`
-    # drops the two old forms, and only once SPARQL confirms this line landed.
-    ("Q11673131", "P6375", 'ja:"〒708-0013 岡山県津山市二宮601"',
-     "merges the postcoded and the prefectured address; removals wait on SPARQL"),
+    # (Takano Shrine's P6375 address merge — Q11673131 — was completed by hand by
+    # Emma 2026-07-10; SPARQL confirms the item now carries only the merged form
+    # `〒708-0013 岡山県津山市二宮601`, both old partials gone. The ADD line and its
+    # companion removal script `generate_ronsha_address_merge_removals.py` were
+    # retired the same day — the work is done, not queued.)
 
     # The Inaba list's `has part` -> 岩井温泉 lost its series ordinal, so the list
     # appeared to skip from entry 6 to entry 8 and the onsen looked like an orphan
