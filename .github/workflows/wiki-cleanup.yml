@@ -87,11 +87,27 @@ jobs:
           esac
           echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
 
+      # Week-long wiki-editing lockout guard (Emma 2026-07-11). When the ~1AM
+      # wiki-editing-lockout.yml check finds no EmmaBot edits in 8h it writes a
+      # 7-day lockout; while it is in force every wiki-editing step below is
+      # skipped so we stop hammering the Miraheze anti-DDoS 403. Expires on its
+      # own date. See docs/wiki_403_audit_2026-07-11.md.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping all wiki-cleanup edits this run."
+          fi
+
       # ════════════════════════════════════════
       #  Bookkeeping: START
       # ════════════════════════════════════════
 
       - name: "Bookkeeping: mark active"
+        if: steps.lockout.outputs.locked != 'true'
         run: |
           python3 shinto_miraheze/update_bot_userpage_status.py \
             --run-tag "${RUN_TAG}" --status active --stage "Bookkeeping: START"
@@ -107,13 +123,13 @@ jobs:
       # for git-synced-sync + fandom-sync. See DEVLOG 2026-05-27.
 
       - name: "Translation: sync_need_translation"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Translation Sync: sync_need_translation" \
             python3 shinto_miraheze/sync_need_translation.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Commit: need_translation/ changes"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           git add -A need_translation/ 2>/dev/null || true
           if git diff --cached --quiet; then
@@ -125,7 +141,7 @@ jobs:
           fi
 
       - name: "Commit state: Translation Sync"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Translation Sync"
 
       # ════════════════════════════════════════
@@ -133,13 +149,13 @@ jobs:
       # ════════════════════════════════════════
 
       - name: "Duplicated content: sync_duplicated_content"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Duplicated Content Sync: sync_duplicated_content" \
             python3 shinto_miraheze/sync_duplicated_content.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Commit: duplicated_content/ changes"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           git add -A duplicated_content/ 2>/dev/null || true
           if git diff --cached --quiet; then
@@ -151,7 +167,7 @@ jobs:
           fi
 
       - name: "Commit state: Duplicated Content Sync"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Duplicated Content Sync"
 
       # ════════════════════════════════════════
@@ -166,74 +182,74 @@ jobs:
 
       # reimport_from_enwiki — 0 imports across 3 runs; input queue drained.
       # - name: "Import: reimport_from_enwiki"
-      #   if: always() && steps.*.outcome != 'cancelled'
+      #   if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
       #   run: |
       #     shinto_miraheze/run_step.sh "Core Loop: reimport_from_enwiki" \
       #       python3 shinto_miraheze/reimport_from_enwiki.py --apply --max-imports 10 --run-tag "${RUN_TAG}"
 
       # overwrite_deleted_enwiki_pages — 0 edits across 3 runs.
       # - name: "Import: overwrite_deleted_enwiki_pages"
-      #   if: always() && steps.*.outcome != 'cancelled'
+      #   if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
       #   run: |
       #     shinto_miraheze/run_step.sh "Core Loop: overwrite_deleted_enwiki_pages" \
       #       python3 shinto_miraheze/overwrite_deleted_enwiki_pages.py --apply --run-tag "${RUN_TAG}"
 
       - name: "Import: create_wanted_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: create_wanted_categories" \
             python3 shinto_miraheze/create_wanted_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: categorize_uncategorized_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: categorize_uncategorized_categories" \
             python3 shinto_miraheze/categorize_uncategorized_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: triage_emmabot_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: triage_emmabot_categories" \
             python3 shinto_miraheze/triage_emmabot_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: triage_emmabot_categories_jawiki"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: triage_emmabot_categories_jawiki" \
             python3 shinto_miraheze/triage_emmabot_categories_jawiki.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: enrich_jawiki_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: enrich_jawiki_categories" \
             python3 shinto_miraheze/enrich_jawiki_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: enrich_enwiki_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: enrich_enwiki_categories" \
             python3 shinto_miraheze/enrich_enwiki_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: triage_emmabot_categories_secondary"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: triage_emmabot_categories_secondary" \
             python3 shinto_miraheze/triage_emmabot_categories_secondary.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: triage_secondary_single_member"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: triage_secondary_single_member" \
             python3 shinto_miraheze/triage_secondary_single_member.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Import: create_shrine_ranking_pages (TEMPORARY)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: create_shrine_ranking_pages" \
             python3 shinto_miraheze/create_shrine_ranking_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Commit state: Import & Categorization"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Import & Categorization"
 
       # ════════════════════════════════════════
@@ -241,7 +257,7 @@ jobs:
       # ════════════════════════════════════════
 
       - name: "Structural: delete_unused_templates"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: delete_unused_templates" \
             python3 shinto_miraheze/delete_unused_templates.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -254,13 +270,13 @@ jobs:
       # notoriously stale, so the per-page recheck is the actual
       # authority.
       - name: "Structural: delete_unused_redirects"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: delete_unused_redirects" \
             python3 shinto_miraheze/delete_unused_redirects.py --apply --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Structural: fix_double_redirects"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: fix_double_redirects" \
             python3 shinto_miraheze/fix_double_redirects.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -274,7 +290,7 @@ jobs:
       # are migrated off the legacy category onto
       # [[Category:Currently double category qids]] for human review.
       - name: "Structural: resolve_double_category_qids"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: resolve_double_category_qids" \
             python3 shinto_miraheze/resolve_double_category_qids.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -290,7 +306,7 @@ jobs:
       # render-duplicate-qids.yml. See git history for the old script.
 
       - name: "Commit state: Structural Fixes"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Structural Fixes"
 
       # ════════════════════════════════════════
@@ -298,13 +314,13 @@ jobs:
       # ════════════════════════════════════════
 
       - name: "Wikidata: clean_p11250_quickstatements (SPARQL bulk)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: clean_p11250_quickstatements" \
             python3 shinto_miraheze/clean_p11250_quickstatements.py --apply --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: fix_merged_qids"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: fix_merged_qids" \
             python3 shinto_miraheze/fix_merged_qids.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
@@ -315,31 +331,31 @@ jobs:
       # AFTER the orchestrators, not here.
 
       - name: "Wikidata: generate_p11250_quickstatements"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: generate_p11250_quickstatements" \
             python3 shinto_miraheze/generate_p11250_quickstatements.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: clean_p6262_quickstatements (SPARQL bulk)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: clean_p6262_quickstatements" \
             python3 shinto_miraheze/clean_p6262_quickstatements.py --apply --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: generate_p6262_quickstatements"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: generate_p6262_quickstatements" \
             python3 shinto_miraheze/generate_p6262_quickstatements.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: generate_en_labels_quickstatements"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: generate_en_labels_quickstatements" \
             python3 shinto_miraheze/generate_en_labels_quickstatements.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: generate_category_label_prefix_fixes"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: generate_category_label_prefix_fixes" \
             python3 shinto_miraheze/generate_category_label_prefix_fixes.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
@@ -348,13 +364,13 @@ jobs:
       # Per-page tagging is strictly the orchestrator's job; keeping a parallel
       # bulk-scan here double-edits and races with the orchestrator.
       # - name: "Wikidata: tag_pages_without_wikidata"
-      #   if: always() && steps.*.outcome != 'cancelled'
+      #   if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
       #   run: |
       #     shinto_miraheze/run_step.sh "Core Loop: tag_pages_without_wikidata" \
       #       python3 shinto_miraheze/tag_pages_without_wikidata.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
       - name: "Wikidata: clean_wikidata_cat_redirects"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: clean_wikidata_cat_redirects" \
             python3 shinto_miraheze/clean_wikidata_cat_redirects.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
@@ -363,7 +379,7 @@ jobs:
       # runs via mainspace-orchestrator now.
 
       - name: "Commit state: Wikidata"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Wikidata"
 
       # ════════════════════════════════════════
@@ -372,13 +388,13 @@ jobs:
 
       # fix_template_noinclude — disabled, one-time fix completed
       # - name: "Final: fix_template_noinclude"
-      #   if: always() && steps.*.outcome != 'cancelled'
+      #   if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
       #   run: |
       #     shinto_miraheze/run_step.sh "Core Loop: fix_template_noinclude" \
       #       python3 shinto_miraheze/fix_template_noinclude.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Final: categorize_uncategorized_pages"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: categorize_uncategorized_pages" \
             python3 shinto_miraheze/categorize_uncategorized_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -393,7 +409,7 @@ jobs:
       # unresolved_ill_qid op self-heals each page out of the category once
       # all its ills carry a qid.
       - name: "Final: fix_ill_destinations"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: fix_ill_destinations" \
             python3 shinto_miraheze/fix_ill_destinations.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
@@ -406,13 +422,13 @@ jobs:
       # — runs via mainspace-orchestrator, no longer a standalone sweep.
 
       - name: "Final: rebucket_300plus_untranslated (TEMPORARY)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Core Loop: rebucket_300plus_untranslated" \
             python3 shinto_miraheze/tag_untranslated_japanese.py --apply --max-edits "$WIKI_EDIT_LIMIT" --category "Pages with 300+ untranslated japanese characters" --run-tag "${RUN_TAG}"
 
       - name: "Commit state: Final Core"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Final Core"
 
       # ════════════════════════════════════════
@@ -420,7 +436,7 @@ jobs:
       # ════════════════════════════════════════
 
       - name: "Cleanup: delete_unused_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: delete_unused_categories" \
             python3 shinto_miraheze/delete_unused_categories.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -432,13 +448,13 @@ jobs:
       # kept in shinto_miraheze/ in case we want to revisit.
 
       - name: "Cleanup: delete_orphaned_talk_pages"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: delete_orphaned_talk_pages" \
             python3 shinto_miraheze/delete_orphaned_talk_pages.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Cleanup: delete_broken_redirects"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: delete_broken_redirects" \
             python3 shinto_miraheze/delete_broken_redirects.py --max-deletes "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -449,31 +465,31 @@ jobs:
       # legacy literal tags; remove_ un-cruds them (from 2026-12-06). Runs BEFORE
       # remove_crud_categories so the crud tag is present when it sweeps.
       - name: "Cleanup: add_wikidata_crud_categories (date-gated)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: add_wikidata_crud_categories" \
             python3 shinto_miraheze/add_wikidata_crud_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Cleanup: remove_wikidata_crud_categories (date-gated)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: remove_wikidata_crud_categories" \
             python3 shinto_miraheze/remove_wikidata_crud_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Cleanup: resolve_deleted_qid_ills_202607 (date-gated one-off)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: resolve_deleted_qid_ills_202607" \
             python3 shinto_miraheze/resolve_deleted_qid_ills_202607.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Cleanup: strip_ns8_offload_banners (self-draining UI fix)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: strip_ns8_offload_banners" \
             python3 shinto_miraheze/strip_ns8_offload_banners.py --apply --max-edits 200 --run-tag "${RUN_TAG}"
 
       - name: "Cleanup: remove_crud_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: remove_crud_categories" \
             python3 shinto_miraheze/remove_crud_categories.py --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -487,7 +503,7 @@ jobs:
       # manual coordination needed. First confirmed clear: Template:Infobox
       # noble on miraheze (2026-05-28).
       - name: "Cleanup: delete_lowercase_template_collisions"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: delete_lowercase_template_collisions" \
             python3 shinto_miraheze/delete_lowercase_template_collisions.py --apply --max-deletes 50 --run-tag "${RUN_TAG}"
@@ -497,7 +513,7 @@ jobs:
       # any incidental delete in the same cycle is reversed before the day
       # ends.
       - name: "Cleanup: undelete_gaiad_date"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Cleanup Loop: undelete_gaiad_date" \
             python3 shinto_miraheze/undelete_gaiad_date.py --apply --run-tag "${RUN_TAG}"
@@ -510,7 +526,7 @@ jobs:
       # the page is live again. See git history for the old script.
 
       - name: "Commit state: Cleanup Loop"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Cleanup Loop"
 
       # ════════════════════════════════════════
@@ -533,7 +549,7 @@ jobs:
       # no longer invoked by CI.
 
       - name: "Deprecated: fix_erroneous_qid_category_links"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: fix_erroneous_qid_category_links" \
@@ -552,7 +568,7 @@ jobs:
       # CSV/residual are the human review surface (committed below); the move
       # itself is the move_categories step that follows.
       - name: "Deprecated: generate_category_translation_moves"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: generate_category_translation_moves" \
@@ -563,13 +579,13 @@ jobs:
       # into category_moves.csv BEFORE move_categories consumes it, and delete the
       # finished work-files. No wiki edits — local files only.
       - name: "cat-translation: collect RAG answers into category_moves.csv"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           python3 shinto_miraheze/collect_category_translations.py --apply || echo "collector non-fatal"
 
       - name: "Commit: category_moves.csv + residual report"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           git add shinto_miraheze/category_moves.csv docs/category_translation_residual.md category_translation/ 2>/dev/null || true
@@ -582,21 +598,21 @@ jobs:
           fi
 
       - name: "Deprecated: move_categories"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: move_categories" \
             python3 shinto_miraheze/move_categories.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
       - name: "Deprecated: create_japanese_category_qid_redirects"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: create_japanese_category_qid_redirects" \
             python3 shinto_miraheze/create_japanese_category_qid_redirects.py
 
       - name: "Commit state: Deprecated"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/commit_state.sh "Deprecated (monthly)"

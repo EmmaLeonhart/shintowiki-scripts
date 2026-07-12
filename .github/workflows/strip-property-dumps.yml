@@ -38,7 +38,21 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Week-long wiki-editing lockout guard (Emma 2026-07-11). This reads
+      # Miraheze property-dump pages; skip while the lockout is in force so we
+      # stop hitting the anti-DDoS 403. See docs/wiki_403_audit_2026-07-11.md.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the property-dump strip this run."
+          fi
+
       - name: Strip property dumps into git_synced/
+        if: steps.lockout.outputs.locked != 'true'
         run: python3 shinto_miraheze/git_sync_strip_property_dumps.py --apply
 
       - name: Commit if changed

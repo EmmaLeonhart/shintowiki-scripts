@@ -1,0 +1,6 @@
+{
+  "locked": false,
+  "locked_until": null,
+  "reason": "initial state — no lockout; the ~1AM wiki-editing-lockout.yml check engages one if EmmaBot has not edited in 8h",
+  "checked": null
+}

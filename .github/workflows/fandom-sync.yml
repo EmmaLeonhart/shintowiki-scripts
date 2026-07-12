@@ -77,6 +77,20 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Week-long wiki-editing lockout guard (Emma 2026-07-11). This sync
+      # reads/writes shinto.miraheze.org (miraheze_unique + the Miraheze→fandom
+      # bootstrap); while the lockout is in force we skip every sync step so we
+      # stop hitting the Miraheze anti-DDoS 403. See docs/wiki_403_audit_2026-07-11.md.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the independent-pages sync this run."
+          fi
+
       - name: Install dependencies
         run: pip install mwclient requests
 
@@ -115,7 +129,7 @@ jobs:
       # miraheze page that still uses the old name. Idempotent — a no-op
       # once the migration is complete.
       - name: "Independent sync: rename_fandom_sync_category (legacy)"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Independent Sync: rename_fandom_sync_category" \
             python3 shinto_miraheze/rename_fandom_sync_category.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -129,13 +143,13 @@ jobs:
       # both miraheze_unique/<name>.wiki and fandom_unique/<name>.wiki.
       # No shintowiki / fandom load — Wikidata-only.
       - name: "Independent sync: refresh shrine disambig Wikidata lists"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Independent Sync: generate_shrine_disambig_lists" \
             python3 shinto_miraheze/generate_shrine_disambig_lists.py --apply --max-edits 200 --run-tag "${RUN_TAG}"
 
       - name: "Independent sync: sync_miraheze_unique_pages"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Independent Sync: sync_miraheze_unique_pages" \
             python3 shinto_miraheze/sync_miraheze_unique_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -146,13 +160,13 @@ jobs:
       # overrides like Portable Infoboxes, HTTPS-shim Wikidata link) are
       # preserved.
       - name: "Independent sync: bootstrap_seed_fandom_unique_from_miraheze"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Independent Sync: bootstrap_seed_fandom_unique" \
             python3 shinto_miraheze/bootstrap_seed_fandom_unique_from_miraheze.py
 
       - name: "Independent sync: sync_fandom_unique_pages"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Independent Sync: sync_fandom_unique_pages" \
             python3 shinto_miraheze/sync_fandom_unique_pages.py --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
@@ -163,7 +177,7 @@ jobs:
       # "you have unstaged changes" — silently dropping the state file
       # commit too. Modeled on the equivalent step in git-synced-sync.yml.
       - name: "Commit: miraheze_unique/ + fandom_unique/ changes"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: |
           git add -A miraheze_unique/ fandom_unique/ 2>/dev/null || true
           if git diff --cached --quiet; then
@@ -175,5 +189,5 @@ jobs:
           fi
 
       - name: "Commit state: Independent Pages Sync"
-        if: always() && steps.*.outcome != 'cancelled'
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
         run: shinto_miraheze/commit_state.sh "Independent Pages Sync"

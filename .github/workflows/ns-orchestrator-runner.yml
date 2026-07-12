@@ -138,7 +138,20 @@ jobs:
           esac
           echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
 
+      # Week-long wiki-editing lockout guard (Emma 2026-07-11). Skip the whole
+      # sweep while the lockout is in force. See docs/wiki_403_audit_2026-07-11.md.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping this orchestrator run."
+          fi
+
       - name: "Run orchestrator"
+        if: steps.lockout.outputs.locked != 'true'
         run: |
           python3 -m "shinto_miraheze.orchestrators.${{ inputs.module_name }}" \
             --apply --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"

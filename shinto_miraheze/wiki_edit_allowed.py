@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+"""Guard: is wiki editing currently allowed, or are we in the week-long lockout?
+
+Every scheduled wiki-WRITING workflow calls this as a bail-early step:
+
+    if python shinto_miraheze/wiki_edit_allowed.py; then
+      ... do the wiki edits ...
+    else
+      echo "wiki editing locked — skipping"
+    fi
+
+Exit 0 = editing allowed (no lockout, or the lockout has expired).
+Exit 1 = LOCKED — the wiki-editing lockout is in force; skip all wiki writes.
+
+The lockout is written by wiki_editing_lockout_check.py (the ~1AM checker) when
+EmmaBot hasn't landed an edit in 8h. It carries a `locked_until` date and
+expires on its own — once today >= locked_until, editing resumes automatically
+(no manual unlock needed). See docs/wiki_403_audit_2026-07-11.md.
+"""
+import datetime
+import io
+import json
+import pathlib
+import sys
+
+STATE_PATH = pathlib.Path(__file__).with_name("wiki_editing_lockout.state")
+
+
+def editing_allowed():
+    """(allowed: bool, detail: str)."""
+    if not STATE_PATH.exists():
+        return True, "no lockout state file — editing allowed"
+    try:
+        state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
+    except Exception as e:
+        # A corrupt state file must not silently hard-lock the wiki forever.
+        return True, f"lockout state unreadable ({e}) — defaulting to allowed"
+    if not state.get("locked"):
+        return True, "editing not locked"
+    locked_until = state.get("locked_until")
+    if not locked_until:
+        return False, "LOCKED (no expiry date recorded)"
+    try:
+        until = datetime.date.fromisoformat(locked_until)
+    except ValueError:
+        return False, f"LOCKED (unparseable locked_until={locked_until!r})"
+    today = datetime.datetime.now(datetime.timezone.utc).date()
+    if today >= until:
+        return True, f"lockout expired ({locked_until}) — editing resumed"
+    return False, f"LOCKED until {locked_until} — {state.get('reason', '')}"
+
+
+def main():
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+    allowed, detail = editing_allowed()
+    print(("ALLOWED — " if allowed else "LOCKED — ") + detail)
+    return 0 if allowed else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

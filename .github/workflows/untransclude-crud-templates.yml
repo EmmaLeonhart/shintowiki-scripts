@@ -67,7 +67,20 @@ jobs:
           RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
           echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
 
+      # Week-long wiki-editing lockout guard (Emma 2026-07-11). Skip while the
+      # lockout is in force. See docs/wiki_403_audit_2026-07-11.md.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping untransclude this run."
+          fi
+
       - name: "Untransclude CRUD templates → Template:Removed template"
+        if: steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Untransclude: untransclude_crud_templates" \
             python3 shinto_miraheze/untransclude_crud_templates.py \
