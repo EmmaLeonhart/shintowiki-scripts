@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q135424927 -->
 <!-- JA: 飯玉神社 | KANA: いいだまじんじゃ | EN_LABEL: īdama Shrine | KANA_ROMANIZED: Iidamajinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: LABEL_TYPO: Iidama Shrine -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)

@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q130436470 -->
 <!-- JA: 東八幡神社 | KANA: ひがしまちまんじんじゃ | EN_LABEL: Higashi Hachiman Shrine | KANA_ROMANIZED: Higashimachimanjinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA_ISSUE: P1814 kana ひがしまちまんじんじゃ is missing は; correct reading is ひがしはちまんじんじゃ (Higashihachimanjinja). English label "Higashi Hachiman Shrine" is correct. -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
