@@ -282,3 +282,111 @@ Traceback (most recent call last):
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json
 
+[2026-07-12 05:41:38 UTC] [ERROR] generate_p11250_quickstatements: Unhandled exception:
+Traceback (most recent call last):
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p11250_quickstatements.py", line 475, in <module>
+    main()
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p11250_quickstatements.py", line 369, in main
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 186, in __init__
+    self.site_init()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 209, in site_init
+    meta = self.get('query', meta='siteinfo|userinfo',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 300, in get
+    return self.api(action, 'GET', *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 358, in api
+    info = self.raw_api(action, http_method, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 569, in raw_api
+    res = self.raw_call('api', data, retry_on_error=retry_on_error,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 506, in raw_call
+    stream.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json
+
+[2026-07-12 05:41:42 UTC] [ERROR] generate_p6262_quickstatements: Unhandled exception:
+Traceback (most recent call last):
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p6262_quickstatements.py", line 431, in <module>
+    main()
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_p6262_quickstatements.py", line 350, in main
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 186, in __init__
+    self.site_init()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 209, in site_init
+    meta = self.get('query', meta='siteinfo|userinfo',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 300, in get
+    return self.api(action, 'GET', *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 358, in api
+    info = self.raw_api(action, http_method, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 569, in raw_api
+    res = self.raw_call('api', data, retry_on_error=retry_on_error,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 506, in raw_call
+    stream.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json
+
+[2026-07-12 05:41:46 UTC] [ERROR] generate_en_labels_quickstatements: Unhandled exception:
+Traceback (most recent call last):
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_en_labels_quickstatements.py", line 436, in <module>
+    main()
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_en_labels_quickstatements.py", line 342, in main
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 186, in __init__
+    self.site_init()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 209, in site_init
+    meta = self.get('query', meta='siteinfo|userinfo',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 300, in get
+    return self.api(action, 'GET', *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 358, in api
+    info = self.raw_api(action, http_method, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 569, in raw_api
+    res = self.raw_call('api', data, retry_on_error=retry_on_error,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 506, in raw_call
+    stream.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json
+
+[2026-07-12 05:41:48 UTC] [ERROR] generate_category_label_prefix_fixes: Unhandled exception:
+Traceback (most recent call last):
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_category_label_prefix_fixes.py", line 300, in <module>
+    main()
+  File "/home/runner/work/shintowiki-scripts/shintowiki-scripts/shinto_miraheze/generate_category_label_prefix_fixes.py", line 239, in main
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 186, in __init__
+    self.site_init()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 209, in site_init
+    meta = self.get('query', meta='siteinfo|userinfo',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 300, in get
+    return self.api(action, 'GET', *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 358, in api
+    info = self.raw_api(action, http_method, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 569, in raw_api
+    res = self.raw_call('api', data, retry_on_error=retry_on_error,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mwclient/client.py", line 506, in raw_call
+    stream.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json
+
