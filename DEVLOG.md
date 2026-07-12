@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-11 — wiki-403 audit + a week-long editing lockout that engages itself
+
+Emma's top-of-queue directive: audit why Miraheze started 403-ing us today, and — regardless of
+the audit — build a CI gate that at ~1AM checks whether EmmaBot edited in the past 8h and, if not,
+locks all wiki editing off for a week.
+
+**Audit** (`docs/wiki_403_audit_2026-07-11.md`). No smoking gun that a change of ours spiked the
+request rate *today*. The block began between 00:11 and 03:44 UTC on 07-11, inside a low-activity
+window — the only wiki run in that gap was a single Independent Pages Sync at 00:59. The big daily
+`cleanup-loop` (05:23) and the slow first empty-items report (19:41) both ran *after* onset — they
+are victims, not causes. A live GET to api.php confirms the block is Miraheze's Cloudflare-style
+managed challenge ("unusual activity … securely checked"), which per prior notes also blocks browser
+clients — most likely Miraheze-side. Two things are still true: our *baseline* volume did creep up
+on 07-06 (git-synced-sync edit ceiling 100→500, new 2h strip-property-dumps), and every wiki
+workflow kept firing into the 403 all day, which prolongs the flag. Both argue for the lockout.
+
+**Lockout.** `wiki-editing-lockout.yml` (cron `47 8 * * *` ≈ 1AM PDT) runs
+`wiki_editing_lockout_check.py`: queries EmmaBot's contributions over the past 8h (anonymous read; a
+403 counts as 0 edits — fail-closed, because if we cannot READ we certainly cannot edit). No edits →
+writes a 7-day lockout to `wiki_editing_lockout.state`; edits → keeps editing live. An in-force
+lockout is left untouched (not re-extended), so it can't self-perpetuate — it expires on its date
+and editing resumes. `wiki_edit_allowed.py` is the guard every leaf wiki-writer calls (exits 1 while
+locked, 0 once expired; a corrupt/missing state file defaults to allowed so a bad file can't hard-
+lock forever). Wired into git-synced-sync, fandom-sync, strip-property-dumps, update-shikinaisha-
+lists, wiki-cleanup, and the mainspace/category/template/misc orchestrators + untransclude — as an
+internal guard step in each reusable/standalone workflow, so it covers both the standalone schedules
+and the cleanup-loop calls in one edit each. Not via edit-limit=0: `common.py` treats `max_edits=0`
+as UNLIMITED (falsy short-circuit), so a zero limit would do the opposite of gating. State file
+starts unlocked so we don't pre-empt Emma's "give it until midnight" condition — the 1AM check
+engages the lockout on its own if no edit landed. Checker + guard tested for lock / auto-expiry /
+no-re-extend; all 11 edited workflows YAML-validated.
+
 ## 2026-07-11 — wiki-editing gate: CI writes the GO signal onto the queue
 
 Emma: stop spinning on decisions while Miraheze wiki editing is down; instead have CI signal when

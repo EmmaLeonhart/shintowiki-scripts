@@ -3,18 +3,6 @@
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
 
-# before other things
-
-I would like you to do an analysis right now as to why it is that the IP thing may have occurred today rather than at other times. My guess is that something that we did is significantly different. I would like you to do a full-on audit of what may have been different that occurred. I want you to do a full-on audit of what may be different that we could have done yesterday or in the past few days that made it so there were significantly more requests to the wiki. My guess is basically we probably fucked it up that way, and probably we probably did it that way. 
-
-
-And if this thing is the case, or let's say we lose the ability, or something like that, and there's evidence for this, I would say we should have a week-long period of not editing the wiki. This would be a GitHub Action gate thing that essentially just makes it so that the processes don't occur for editing the wiki.
-
-I'm going to say that if by midnight today we don't get any edits, then we'll do this thing now. I believe we can potentially get this to work by CICD, and that is something I would like you to set up. The if statement would be for the day/week period. For the next week, there will be no editing. It'll just bail on the editing, but it's all dependent on a state file that occurs based off of a GitHub Action that runs at, say, 1:00 AM tonight. It checks whether emabot has done any edits in the past 8 hours. If emabot has done it, then it changes the state file to something indicating that emabot has done it, so it continues on. If there are no emabot edits, then the state file is a false thing, and this means that it's gated for this week. 
-
-I am personally going to say that we're going to do this regardless of other stuff. I'm going to say we're going to do that, and we're going to actually set this stuff up regardless of the actual audit results. My take is that it is a somewhat long-term change that has occurred over this. If we are actually running into this problem 
-
-
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
 **Status: ⏸ WAITING** (Miraheze 403, checked 2026-07-12 00:14 UTC) — wiki editing is blocked. The hourly `wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to **`WIKI_GATE: GO`** the moment the login works again.
@@ -120,6 +108,14 @@ sorted by how much was lost. https://emmaleonhart.github.io/shintowiki-scripts/e
 - 🤖 **Province exclusions** — `province_exclusions.txt` (382 ADD-only lines) registered, drips.
   Province work is ADD-ONLY, no removals ever. `docs/province_exclusion_residual_2026-07.md`.
 - 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
+- 🤖 **Wiki-editing week-long lockout** (built 2026-07-11, Emma's directive). `wiki-editing-lockout.yml`
+  runs ~1AM PDT: checks whether EmmaBot edited in the past 8h (a 403 counts as 0 edits, fail-closed).
+  No edits → writes a 7-day lockout to `shinto_miraheze/wiki_editing_lockout.state`; every leaf wiki-
+  writer (git-synced-sync, fandom-sync, strip-property-dumps, update-shikinaisha-lists, wiki-cleanup,
+  the orchestrators, untransclude) calls `wiki_edit_allowed.py` and bails while locked. Lockout
+  auto-expires on its date; nothing to do. Audit that motivated it: `docs/wiki_403_audit_2026-07-11.md`
+  (finding: block began in a quiet window, most likely Miraheze-side, but our baseline volume had
+  crept up and we kept hammering the 403 — the lockout stops both).
 
 ---
 
@@ -150,6 +146,7 @@ sorted by how much was lost. https://emmaleonhart.github.io/shintowiki-scripts/e
 
 ## Pinned tail (keep last)
 
-- [ ] Ensure the work-loop cron is running (single recurring :13/:43 tick; job ids are
-  session-local, current session's is 20cd74bb). SYNC fast-forwards onto origin/main each tick.
+- [ ] Ensure the five session-local crons are running (this session: work-loop d6754ae5 :03,
+  auto-flush 3d3cd832 :15, status-report 0df6273e :42, briefing 257eeecc 08:03, debrief ee782e80
+  23:57). SYNC fast-forwards onto origin/main each tick.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
