@@ -5,7 +5,7 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
-**Status: ⏸ WAITING** (Miraheze 403, checked 2026-07-12 09:21 UTC) — wiki editing is blocked. The hourly `wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to **`WIKI_GATE: GO`** the moment the login works again.
+**Status: ⏸ WAITING** (Miraheze 403, checked 2026-07-12 10:50 UTC) — wiki editing is blocked. The hourly `wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to **`WIKI_GATE: GO`** the moment the login works again.
 `wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to
 **`WIKI_GATE: GO`** the moment the login works again.
 
