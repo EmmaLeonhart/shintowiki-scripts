@@ -44,12 +44,10 @@ work-loop fires must include that option alongside the concrete branches. Never 
 "blocked on Emma" and skip it — fire the question (with the chat option) so it can actually move.
 Fire ONE decision at a time, in order, not a batch.
 
-### D1. Sequential-misc: where does a pair's ADD live?
-The one-line-per-day file (`sequential_misc.txt`) is built + tested but empty. To populate a
-remove-then-add pair we need to know where the ADD goes.
-- **ASK:** "For a sequential-misc pair, put the ADD in both the atomic drip and the sequential
-  file, or move it into sequential only?" → *sequential only* (single ordered home) / *both*
-  (redundant, idempotent).
+> **D2–D8 are BLOCKED until the Open questions wiki page works again (Emma 2026-07-13).** They
+> can't be decided blind — Emma reviews them against the wiki page + the browsable tables. Do NOT
+> re-fire them while the wiki is 403'd; the review links (GitHub Pages, which work now) are on each
+> item. D1 is decided below and removed.
 
 ### D2. The 84 duplicate shrine pairs — link or merge?
 84 living-shrine items duplicate their 927-register-entry twin (same Kokugakuin id / name).

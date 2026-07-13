@@ -4,6 +4,17 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-13 — decision backlog: D1 settled, D2–D8 blocked on the wiki
+
+Tried to barrel the ❓ DECISIONS while Emma had ~30 min. Only D1 was decidable blind:
+**sequential-misc pairs put the ADD in the sequential file only** (single ordered home, remove +
+re-add stay adjacent) — recorded, D1 removed from the queue. D2–D8 (84 link-or-merge pairs, 66
+orphans, 18 missing ids, ~66 double-id, Awa entry-3, matcher, empty-items restore) turned out to be
+**impossible to decide blind** — Emma reviews them against the `[[Open questions]]` wiki page, which
+is 403'd. Firing them against the WAIT gate was the wrong call (the gate exists for exactly this);
+backed off and marked D2–D8 blocked-on-wiki in the queue. The browsable review tables are GitHub
+Pages (not the wiki) so they still work — links are on each item for when Emma has them open.
+
 ## 2026-07-11 — wiki-403 audit + a week-long editing lockout that engages itself
 
 Emma's top-of-queue directive: audit why Miraheze started 403-ing us today, and — regardless of
