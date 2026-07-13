@@ -1,6 +1,6 @@
 {
-  "locked": true,
-  "locked_until": "2026-07-19",
-  "reason": "no EmmaBot edits in 8h (403 anti-DDoS challenge — API unreadable (counts as 0 edits)) at 2026-07-12T10:14:36Z — gated for the week",
-  "checked": "2026-07-12T10:14:36Z"
+  "locked": false,
+  "locked_until": null,
+  "reason": "TEMPORARILY unlocked 2026-07-13 to test whether wiki editing works (Emma) — re-lock after the test",
+  "checked": null
 }
