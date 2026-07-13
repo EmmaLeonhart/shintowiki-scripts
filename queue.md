@@ -3,6 +3,10 @@
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
 
+## Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-07-13)
+
+Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
+
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
 **Status: ⏸ WAITING** (Miraheze 403, checked 2026-07-13 07:45 UTC) — wiki editing is blocked. The hourly `wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to **`WIKI_GATE: GO`** the moment the login works again.
