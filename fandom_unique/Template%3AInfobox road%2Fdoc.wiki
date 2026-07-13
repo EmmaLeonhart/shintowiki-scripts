@@ -1640,11 +1640,11 @@ See [[Template:Infobox road/doc/tech|Infobox road/doc/tech]] for details on the 
 
 }}</includeonly>
 <noinclude>
-[[Category:Independently git synced pages]][[Category:Highway infobox templates|*]]
-[[Category:Independently git synced pages]][[Category:Infobox templates using Wikidata]]
-[[Category:Independently git synced pages]][[Category:Templates with coordinates fields]]
-[[Category:Independently git synced pages]][[Category:Templates that add a tracking category|{{PAGENAME}}]]
-[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:Highway infobox templates|*]]
+[[Category:Infobox templates using Wikidata]]
+[[Category:Templates with coordinates fields]]
+[[Category:Templates that add a tracking category|{{PAGENAME}}]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
 </noinclude>
