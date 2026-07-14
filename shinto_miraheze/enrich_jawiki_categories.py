@@ -18,6 +18,13 @@ In all cases, removes [[Category:Emmabot categories with jawiki]].
 Default mode is dry-run. Use --apply to save edits.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -44,7 +51,7 @@ JAWIKI_WIKIDATA_CAT = "Emmabot jawiki categories with wikidata"
 
 JAWIKI_API = "https://ja.wikipedia.org/w/api.php"
 JAWIKI_BATCH_SIZE = 50
-WP_UA = "EmmaBot/1.0 (shinto.miraheze.org)"
+WP_UA = USER_AGENT
 
 SOURCE_CAT_RE = re.compile(
     r"\[\[\s*Category\s*:\s*Emmabot categories with jawiki\s*\]\]\s*\n?",
@@ -135,7 +142,7 @@ def main():
     site = mwclient.Site(
         WIKI_URL,
         path=WIKI_PATH,
-        clients_useragent="EnrichJawikiCats/1.0 (User:EmmaBot; shinto.miraheze.org)",
+        clients_useragent=USER_AGENT,
     )
     login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")

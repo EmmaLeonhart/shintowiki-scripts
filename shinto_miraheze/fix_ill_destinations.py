@@ -45,6 +45,13 @@ Stateless. Bounded by ``--max-edits`` (page saves) and ``MAX_PAGES_PER_RUN``
 (default dry-run), ``--max-edits``, ``--run-tag``.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -64,7 +71,6 @@ USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
 
-USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 
 SOURCE_CATEGORY = "Pages with unresolved QID in ill template"
 

@@ -10,6 +10,13 @@ ones are bare (the pipeline links label + shinto/fandom later). Verifies each ja
 truly lacks a Wikidata item before emitting (avoid duplicates). Read-only; 429-bail.
 Output: jawiki_category_items.txt (human-gated — Emma runs it).
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import os
 import re
@@ -20,7 +27,7 @@ import requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "jawiki_category_items.txt")
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 SHINTO = "https://shinto.miraheze.org/w/api.php"
 JAWIKI = "https://ja.wikipedia.org/w/api.php"
 TRACK = "Category:Categories missing wikidata"

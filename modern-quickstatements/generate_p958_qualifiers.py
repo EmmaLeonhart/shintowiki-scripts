@@ -16,6 +16,13 @@ Ranking numbers that don't follow expected patterns (sequential from 1,
 occasional 0) are also flagged.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import json
 import sys
@@ -27,7 +34,6 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
-USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 HEADERS = {
     "User-Agent": USER_AGENT,
     "Accept": "application/sparql-results+json",

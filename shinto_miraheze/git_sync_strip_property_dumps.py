@@ -24,6 +24,13 @@ Read-only on the wiki. ``--apply`` writes local files; default dry-run reports
 stats + flags any page that would strip suspiciously (safety before touching many
 pages). ``--max`` caps pages this run.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -37,7 +44,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 GIT_SYNCED = os.path.join(REPO_ROOT, "git_synced")
 API = "https://shinto.miraheze.org/w/api.php"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 SOURCE_CATEGORY = "sync these pages now"
 GIT_SYNCED_TAG = "[[Category:Git synced pages]]"
 THROTTLE = 0.3

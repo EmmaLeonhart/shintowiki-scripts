@@ -26,6 +26,13 @@ Read-only: no wiki writes. Run it, eyeball the JSON, then let the
 generator leg consume it.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import json
 import re
@@ -33,7 +40,7 @@ import sys
 
 import requests
 
-UA = {"User-Agent": "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"}
+UA = {"User-Agent": USER_AGENT}
 JA_API = "https://ja.wikipedia.org/w/api.php"
 SPARQL = "https://query.wikidata.org/sparql"
 

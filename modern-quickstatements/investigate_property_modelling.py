@@ -21,6 +21,13 @@ Output per (class, property): statement/item totals, qualifier distribution
 (% of statements), reference rate, reference-property distribution, and the top
 `stated in` (P248) sources — each with resolved English/Japanese labels.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import json
@@ -30,7 +37,7 @@ import time
 import urllib.parse
 import urllib.request
 
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 WDQS = "https://query-main.wikidata.org/sparql"
 WD_API = "https://www.wikidata.org/w/api.php"
 DEFAULT_CLASSES = [("Q845945", "Shinto shrine"), ("Q5393308", "Buddhist temple")]

@@ -18,6 +18,13 @@ of both A and B, and B's content (minus the {{moved from}} template).
 Pages that link to more than one partner are skipped (must be exclusive pairs).
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import os
 import mwclient
 from wiki_login import login_with_retry
@@ -210,7 +217,7 @@ def merge_pair(site, a_title, b_title, token):
 
 def main():
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                         clients_useragent='ShintoWikiBot/1.0 (EmmaBot@shinto.miraheze.org)')
+                         clients_useragent=USER_AGENT)
     login_with_retry(site, USERNAME, PASSWORD)
     print(f'Logged in to {WIKI_URL}\n')
 

@@ -18,6 +18,13 @@ Standard flags: ``--apply`` (default dry-run), ``--max-edits`` (edit cap
 per run, default 100), ``--run-tag``.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -39,7 +46,6 @@ THROTTLE = 2.5
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "strip_translated_char_count_cats.state")
 
-USER_AGENT = "StripTranslatedCharCountCats/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 SOURCE_CATEGORY = "Translated pages"
 

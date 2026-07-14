@@ -13,6 +13,13 @@ are themselves people (P31 = Q5), recording {qid, label, description} into
 it surfaces probable duplicates for Emma's go/no-go per person. Read-only Wikidata
 (throttled, 429-bail); writes only local JSON. Run after enrich_p31.py.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import os
 import sys
@@ -25,7 +32,7 @@ import requests
 HERE = os.path.dirname(os.path.abspath(__file__))
 ITEMS_DIR = os.path.join(HERE, "items")
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 HUMAN_QID = "Q5"
 THROTTLE = 0.25
 

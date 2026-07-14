@@ -11,13 +11,20 @@ pass; they are DEFERRED, not failures). Read-only Wikidata is unaffected either 
 
     python check_wiki_login.py        # prints OK / BLOCKED, sets exit code
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import sys
 import urllib.error
 import urllib.request
 
 API = "https://shinto.miraheze.org/w/api.php?action=query&meta=siteinfo&format=json"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 
 
 def wiki_reachable():

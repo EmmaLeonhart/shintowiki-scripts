@@ -27,6 +27,13 @@ State lives in ``sync_duplicated_content.state`` (JSON). Default mode is
 dry-run; pass ``--apply`` to actually push/pull edits.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import hashlib
 import io
@@ -60,7 +67,6 @@ REPO_ROOT = SCRIPT_DIR.parent
 WIKI_DIR = REPO_ROOT / "duplicated_content"
 STATE_FILE = SCRIPT_DIR / "sync_duplicated_content.state"
 
-USER_AGENT = "DuplicatedContentSyncBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Windows-forbidden chars. '%' is escaped as well so the mapping is reversible.
 _FORBIDDEN = set('<>:"/\\|?*')

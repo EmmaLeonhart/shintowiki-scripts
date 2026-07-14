@@ -23,6 +23,13 @@ Run dry-run first:
     python merge_by_ja_interwiki.py --dry-run
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import os
 import re
 import time
@@ -44,7 +51,7 @@ WD_THROTTLE = 0.5
 
 SOURCE_CAT = "Categories missing Wikidata with Japanese interwikis"
 MULTI_CAT  = "jawiki categories with multiple enwiki"
-WP_UA      = "ShintowikiBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
+WP_UA      = USER_AGENT
 
 JA_LINK_RE  = re.compile(r'\[\[ja:([^\]|]+)', re.IGNORECASE)
 REDIRECT_RE = re.compile(r'#REDIRECT\s*\[\[Category:([^\]]+)\]\]', re.IGNORECASE)
@@ -240,7 +247,7 @@ def main():
     args = parser.parse_args()
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                         clients_useragent="JaInterwikiMergeBot/1.0 (User:EmmaBot; shinto.miraheze.org)")
+                         clients_useragent=USER_AGENT)
     login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 

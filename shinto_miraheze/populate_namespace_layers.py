@@ -20,6 +20,13 @@ once the Data: and Export: namespaces are created on the wiki.
 Default mode is dry-run. Use --apply to actually edit.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import json
@@ -42,7 +49,6 @@ THROTTLE = 2.5
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "populate_namespace_layers.state")
 
-USER_AGENT = "NamespaceLayerBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Matches {{wikidata link|QID}} and captures the QID
 WD_LINK_RE = re.compile(r'\{\{wikidata link\|\s*(Q\d+)\s*(?:\|[^}]*)?\}\}', re.IGNORECASE)

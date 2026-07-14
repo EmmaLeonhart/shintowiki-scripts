@@ -30,6 +30,13 @@ DELETED targets get `target_qid: null` (their item doesn't exist yet — linked 
 co-recreation). Read-only fandom + Wikidata (throttled, 429-bail); writes local JSON
 + `_relations_summary.md`. Run after enrich_p31.py. Recreation stays human-gated.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import os
 import re
@@ -43,7 +50,7 @@ import requests
 HERE = os.path.dirname(os.path.abspath(__file__))
 ITEMS_DIR = os.path.join(HERE, "items")
 FANDOM_API = "https://shinto.fandom.com/api.php"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 HUMAN_QID = "Q5"
 THROTTLE = 0.25
 

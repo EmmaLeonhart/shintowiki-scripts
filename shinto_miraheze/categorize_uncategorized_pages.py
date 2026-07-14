@@ -10,6 +10,13 @@ Processes up to --max-edits pages per run (default 100).
 Default mode is dry-run. Use --apply to actually edit.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -32,7 +39,6 @@ THROTTLE = 2.5
 TARGET_CAT = "Uncategorized pages"
 CAT_TAG = f"[[Category:{TARGET_CAT}]]"
 
-USER_AGENT = "UncategorizedPagesBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 REDIRECT_RE = re.compile(r'^\s*#redirect\b', re.IGNORECASE | re.MULTILINE)
 CATEGORY_RE = re.compile(r'\[\[\s*Category\s*:', re.IGNORECASE)

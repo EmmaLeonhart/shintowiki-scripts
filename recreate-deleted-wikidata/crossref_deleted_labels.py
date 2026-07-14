@@ -35,6 +35,13 @@ writes). Bails on HTTP 429. Pure ill-matching / extraction logic is unit-tested
 (``tests/``). Default is a dry-run summary. ``--run-tag`` accepted for template
 consistency (unused).
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import json
@@ -47,7 +54,6 @@ from collections import Counter
 import requests
 
 FANDOM_API = "https://shinto.fandom.com/api.php"
-USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 READ_THROTTLE = 0.3
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))

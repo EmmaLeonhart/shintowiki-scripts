@@ -32,6 +32,13 @@ The modern (hiragana) top-level reading never matches and is left untouched.
 Output: kana_redundant_remove.txt
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import sys
 import time
@@ -40,7 +47,7 @@ import requests
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 SUFFIX = "カミノヤシロ"
 OJP = "ojp-hani"
 REMOVE_FILE = "kana_redundant_remove.txt"

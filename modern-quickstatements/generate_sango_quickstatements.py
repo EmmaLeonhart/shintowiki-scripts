@@ -43,6 +43,13 @@ Output: `sango_p1448.txt`, registered in `ATOMIC_FILES`.
 
     python generate_sango_quickstatements.py [--out FILE] [--limit N]
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import json
@@ -66,7 +73,7 @@ OUTPUT_FILE = "sango_p1448.txt"
 OUTPUT = os.path.join(HERE, OUTPUT_FILE)
 
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 
 TEMPLATE = "Template:日本の寺院"
 SANGO = "Q11058522"        # sangō — "a part of name of Buddhist temples (in Japan)"

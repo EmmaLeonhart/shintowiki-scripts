@@ -28,6 +28,13 @@ Run dry-run first:
     python resolve_missing_wikidata_categories.py --dry-run
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import os
 import re
 import time
@@ -48,7 +55,7 @@ THROTTLE    = 2.5
 WD_THROTTLE = 0.5   # between Wikipedia API calls
 
 SOURCE_CAT  = "Categories_missing_wikidata"
-WP_UA       = "ShintowikiBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
+WP_UA       = USER_AGENT
 
 REDIRECT_RE   = re.compile(r'#REDIRECT\s*\[\[Category:([^\]]+)\]\]', re.IGNORECASE)
 WIKIDATA_RE   = re.compile(r'\{\{wikidata[_ ]link\|?\s*(Q\d+)', re.IGNORECASE)
@@ -164,7 +171,7 @@ def main():
     args = parser.parse_args()
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                         clients_useragent="MissingWikidataBot/1.0 (User:EmmaBot; shinto.miraheze.org)")
+                         clients_useragent=USER_AGENT)
     login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}\n")
 

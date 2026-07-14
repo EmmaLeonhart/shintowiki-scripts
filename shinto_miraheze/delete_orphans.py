@@ -37,6 +37,13 @@ Invoked from ``.github/workflows/delete-orphans.yml`` on a monthly cron
 2026-06-01.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -53,7 +60,6 @@ WIKI_PATH = "/w/"
 USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
-USER_AGENT = "DeleteOrphansBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Hard exclusions — never delete these no matter what Special:LonelyPages
 # says. Add to this set if specific pages need bulletproof protection

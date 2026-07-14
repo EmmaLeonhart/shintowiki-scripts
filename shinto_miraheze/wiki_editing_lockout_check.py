@@ -26,6 +26,13 @@ workflow calls as a bail-early guard.
     python wiki_editing_lockout_check.py            # dry-run: print verdict, no write
     python wiki_editing_lockout_check.py --apply    # write the state file
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import datetime
 import io
@@ -39,7 +46,7 @@ import urllib.request
 
 STATE_PATH = pathlib.Path(__file__).with_name("wiki_editing_lockout.state")
 API = "https://shinto.miraheze.org/w/api.php"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 LOCKOUT_DAYS = 7
 WINDOW_HOURS = 8
 

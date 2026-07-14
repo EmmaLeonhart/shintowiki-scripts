@@ -12,6 +12,13 @@ stop the broken transclusions.
 Default mode is dry-run. Use --apply to actually edit.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -30,7 +37,6 @@ USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
 
-USER_AGENT = "EmmaBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Pages that no longer exist on enwiki but may have broken transclusions
 # on shintowiki. Overwrite with PLACEHOLDER to stop the errors.

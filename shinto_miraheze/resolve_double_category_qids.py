@@ -33,6 +33,13 @@ did on 2026-04-24 (11+ hours, blocked everything downstream).
 ``THROTTLE_API`` spaces out reads inside ``resolve_final_target``.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import json
@@ -315,7 +322,7 @@ def main():
 
     site = mwclient.Site(
         WIKI_URL, path=WIKI_PATH,
-        clients_useragent="ResolveDoubleCategoryQids/1.2 (User:EmmaBot; shinto.miraheze.org)",
+        clients_useragent=USER_AGENT,
     )
     # Bound individual API calls. Without this, mwclient defaults to no
     # timeout, and a single slow miraheze response can hang the whole

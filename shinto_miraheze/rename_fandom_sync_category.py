@@ -18,6 +18,13 @@ should NOT also be in the original miraheze-only bucket — the
 "independent" bucket takes precedence per the new architecture.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -40,7 +47,6 @@ OLD_CATEGORY = "Fandom sync"
 NEW_CATEGORY = "Independently git synced pages"
 CATEGORY_NAMESPACES = "0|10|14|828"
 
-USER_AGENT = "FandomSyncCategoryRename/1.0 (User:EmmaBot)"
 
 OLD_RE = re.compile(
     r'\[\[\s*Category\s*:\s*Fandom sync\s*\]\]',

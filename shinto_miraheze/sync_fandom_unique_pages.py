@@ -18,6 +18,13 @@ Patterned on ``sync_git_synced_pages.py``. Conflict policy: repo wins
 on simultaneous-change.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import hashlib
 import io
@@ -53,7 +60,6 @@ REPO_ROOT = SCRIPT_DIR.parent
 WIKI_DIR = REPO_ROOT / "fandom_unique"
 STATE_FILE = SCRIPT_DIR / "sync_fandom_unique_pages.state"
 
-USER_AGENT = "FandomUniquePagesBot/1.0 (User:EmmaBot; shinto.fandom.com)"
 
 _FORBIDDEN = set('<>:"/\\|?*')
 

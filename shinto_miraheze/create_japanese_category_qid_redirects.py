@@ -12,6 +12,13 @@ For every category in [[Category:Japanese language category names]] with {{wikid
 This handles race conditions where Japanese categories may not have proper QID redirects yet.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import re, time, io, sys
 import os
 import mwclient
@@ -31,7 +38,7 @@ WD_LINK_RE  = re.compile(r'\{\{wikidata link\|(Q\d+)\}\}', re.IGNORECASE)
 REDIRECT_RE = re.compile(r'^#REDIRECT\s*\[\[(.+?)\]\]', re.IGNORECASE | re.MULTILINE)
 
 site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                     clients_useragent='JapaneseCategoryQidRedirectBot/1.0 (User:EmmaBot; shinto.miraheze.org)')
+                     clients_useragent=USER_AGENT)
 login_with_retry(site, USERNAME, PASSWORD)
 print("Logged in as", USERNAME, flush=True)
 

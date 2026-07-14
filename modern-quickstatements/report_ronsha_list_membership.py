@@ -58,6 +58,13 @@ This script classifies every Ronsha that has a list membership:
 
     python report_ronsha_list_membership.py [--out FILE]
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import collections
 import csv
@@ -73,7 +80,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 DEFAULT_OUT = os.path.join(REPO, "docs", "ronsha_list_membership_2026-07.md")
 
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 WD_API = "https://www.wikidata.org/w/api.php"
 SPARQL = "https://query-main.wikidata.org/sparql"
 

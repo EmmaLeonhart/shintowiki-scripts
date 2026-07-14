@@ -21,6 +21,13 @@ by a piped link.
 
     python report_list_structure.py
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import collections
 import csv
 import io
@@ -32,7 +39,7 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOC = os.path.join(os.path.dirname(HERE), "docs", "engishiki_list_structure_2026-07.md")
 
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 SPARQL = "https://query-main.wikidata.org/sparql"
 
 SHIKINAISHA = "Q134917286"

@@ -19,6 +19,13 @@ from the wiki category and pushes them, treating the repo as the
 source of truth for membership.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import hashlib
 import io
@@ -57,7 +64,6 @@ REPO_ROOT = SCRIPT_DIR.parent
 WIKI_DIR = REPO_ROOT / "miraheze_unique"
 STATE_FILE = SCRIPT_DIR / "sync_miraheze_unique_pages.state"
 
-USER_AGENT = "MirahezeUniquePagesBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 _FORBIDDEN = set('<>:"/\\|?*')
 

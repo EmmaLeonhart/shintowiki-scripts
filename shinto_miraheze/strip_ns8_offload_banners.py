@@ -16,6 +16,13 @@ been inert since the 2026-06-01 cutoff, so there is no reintroduction path.
 
 Usage: strip_ns8_offload_banners.py [--apply] [--max-edits N] [--run-tag TAG]
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -51,8 +58,7 @@ def main():
     args = ap.parse_args()
 
     site = mwclient.Site("shinto.miraheze.org", path="/w/",
-                         clients_useragent="EmmaBot strip_ns8_offload_banners/1.0 "
-                                           "(immanuelleleonhart@gmail.com)")
+                         clients_useragent=USER_AGENT)
     user = os.environ.get("WIKI_USERNAME")
     password = os.environ.get("WIKI_PASSWORD")
     if args.apply:

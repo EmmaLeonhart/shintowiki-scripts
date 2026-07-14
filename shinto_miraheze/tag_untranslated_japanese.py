@@ -26,6 +26,13 @@ tag if present.
 Default mode is dry-run. Use --apply to actually edit.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import datetime
 import io
@@ -57,7 +64,6 @@ THROTTLE = 2.5
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "tag_untranslated_japanese.state")
 
-USER_AGENT = "JapaneseDetectBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Bucketed thresholds for categorization
 THRESHOLDS = [50, 100, 150, 200, 250, 300, 500, 750, 1000, 1500, 2000, 3000, 5000]

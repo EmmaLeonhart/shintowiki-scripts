@@ -23,6 +23,13 @@ Standard flags: ``--apply`` (default dry-run), ``--max-edits``,
 ``--run-tag``.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -44,7 +51,6 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 THROTTLE = 2.5
-USER_AGENT = "SunsetJpCharCountCats/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 CRUD_CAT = "[[Category:crud categories]]"
 

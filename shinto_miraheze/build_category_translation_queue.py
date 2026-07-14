@@ -22,6 +22,13 @@ wikitext (which may hold ``{{wikidata link}}`` / interwiki hints).
 Read-only on the wiki. Writes local files only; ``remote_queue.py`` picks them
 up on its next rebuild. Skips a category whose work-file already exists.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import os
 import sys
@@ -34,7 +41,6 @@ import generate_category_translation_moves as g  # noqa: E402
 
 OUT_DIR = os.path.join(REPO_ROOT, "category_translation")
 WIKI_API = "https://shinto.miraheze.org/w/api.php"
-USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 READ_THROTTLE = 0.25
 
 

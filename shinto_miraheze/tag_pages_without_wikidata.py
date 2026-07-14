@@ -18,6 +18,13 @@ Pages that lack the template are tagged with
 Default mode is dry-run. Use --apply to actually edit.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -42,7 +49,6 @@ STATE_FILE = os.path.join(os.path.dirname(__file__), "tag_pages_without_wikidata
 TARGET_CAT = "Pages without wikidata"
 CAT_TAG = f"[[Category:{TARGET_CAT}]]"
 
-USER_AGENT = "WikidataTagBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 # Matches {{wikidata link|...}} (case-insensitive)
 WD_LINK_RE = re.compile(r'\{\{wikidata link\|', re.IGNORECASE)

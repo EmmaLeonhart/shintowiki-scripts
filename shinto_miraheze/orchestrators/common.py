@@ -40,6 +40,13 @@ consolidation, comment stripping) that should be reflected in
 history_offload's fandom mirror and XML archive snapshots.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import os
 import re
@@ -61,7 +68,6 @@ except (AttributeError, ValueError):
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
 THROTTLE = 2.5
 
 # Hard cap on state-file growth per run. Once this many titles have been

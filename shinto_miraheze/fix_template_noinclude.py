@@ -17,6 +17,13 @@ also tagged with [[Category:Templates fixed with noinclude]].
 Default mode is dry-run. Use --apply to actually edit.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import os
@@ -38,7 +45,6 @@ THROTTLE = 2.5
 
 STATE_FILE = os.path.join(os.path.dirname(__file__), "fix_template_noinclude.state")
 
-USER_AGENT = "NoincludeFixBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
 
 FIXED_CAT = "Templates fixed with noinclude"
 FIXED_CAT_TAG = f"[[Category:{FIXED_CAT}]]"

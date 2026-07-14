@@ -16,6 +16,13 @@ Read-only against the wiki (writes only local files); no wiki credentials needed
 Skips a page whose wikitext already carries the category, and never clobbers an
 existing git_synced/ file.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import io
 import os
 import sys
@@ -27,7 +34,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 GIT_SYNCED = os.path.join(REPO, "git_synced")
 API = "https://shinto.miraheze.org/w/api.php"
-UA = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+UA = USER_AGENT
 CATEGORY = "Pages with deleted QID in ill template"
 TAG = "[[Category:Git synced pages]]"
 # Must match sync_git_synced_pages.title_to_filename so the sync maps file↔title.

@@ -41,6 +41,13 @@ the enrichment flags; the recreation pipeline of P31/P279 + more-language labels
 ``--run-tag`` accepted for template consistency (unused — no wiki write).
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
 import json
@@ -52,7 +59,6 @@ import time
 import requests
 
 WIKI_API = "https://shinto.miraheze.org/w/api.php"
-USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
 READ_THROTTLE = 0.25
 
 SOURCE_CATEGORY = "Pages with deleted QID in ill template"
