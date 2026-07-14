@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-14 — shikinaisha-orphans report: split out the Kokugakuin-id disagreements
+
+Emma, looking at the orphans page: the first ones are '''Kokugakuin-id disagreements''' — jawiki
+and the Kokugakuin database disagree on which modern shrine is the 927 entry — and the page hid
+that by lumping all 84 twins as "link or merge, your call." Rebuilt
+<code>generate_shikinaisha_orphan_page.py</code> to diagnose each of the 149 orphans into three kinds
+instead of two: '''48 living/entry duplicates''' (same name as the named entry → safe to link/merge),
+'''36 Kokugakuin-id disagreements''' (shares an entry's id but the name differs and/or several shrines
+claim the same id — do NOT blind-merge; e.g. 穴切大神社 vs 黒戸奈神社 share id 181659; four shrines
+claim 遠賀神社's id 182141; five claim Watatsumi's 183377), and '''65 no-twin''' (mis-tag or missing).
+The disagreement section surfaces the evidence per row: the shared Kokugakuin id (linked to the DB),
+the differently-named entry the list uses, and every confirmed shrine that claims the id (the size of
+the dispute, with the named entry marked). Report-only, live SPARQL; no Wikidata edits.
+
 ## 2026-07-14 — one canonical bot User-Agent, in one spot; UA bumped to EmmaBot/2.0
 
 Emma: make the bot UA canonical and store it in exactly one place, and change it (new email

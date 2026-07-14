@@ -70,50 +70,117 @@ def build_rows():
         if q in parts:
             for k in ks:
                 ids_of_named[k].append(q)
+    # Every confirmed Shikinaisha carrying each Kokugakuin id (named entries AND
+    # living-shrine items) — so we can spot an id that several shrines claim.
+    holders_of_id = collections.defaultdict(list)
+    for q, ks in kokugakuin.items():
+        if q in confirmed:
+            for k in ks:
+                holders_of_id[k].append(q)
 
     orphans = sorted(confirmed - parts)
     rows = []
     for q in orphans:
         cl = claims.get(q, [])
         tw = twins_of(q, cl, parts_of, ja_label, kokugakuin, ids_of_named)
-        has_twin = bool(tw)
+        mine = ja_label.get(q, "")
+        # A twin found by (normalised) NAME means the two items are the same shrine
+        # under one name — a clean living/entry duplicate.
+        name_twins = {e: r for e, r in tw.items()
+                      if r in ("same ja label", "same normalised ja label")}
+        # A twin found ONLY by shared Kokugakuin id, whose name differs, is the
+        # jawiki<->Kokugakuin-DB *disagreement*: the list names one shrine for that
+        # entry, the DB id is carried by a different-named (or several) shrine(s).
+        id_twins = {e: r for e, r in tw.items() if r == "same Kokugakuin id"}
+        for e in list(id_twins):
+            if mine and normalise(ja_label.get(e, "")) == normalise(mine):
+                name_twins[e] = "same Kokugakuin id + same name"
+                del id_twins[e]
+        # Competing claimants: for each shared id that names an entry, every
+        # confirmed Shikinaisha that also holds it (the "who else claims this" set).
+        claimants = {}
+        for k in kokugakuin.get(q, []):
+            if ids_of_named.get(k) and len(holders_of_id.get(k, [])) > 1:
+                claimants[k] = [(h, h in parts) for h in holders_of_id[k]]
+        if name_twins:
+            diag = "duplicate"
+        elif id_twins:
+            diag = "disputed"
+        elif tw:
+            diag = "duplicate"
+        else:
+            diag = "notwin"
         rows.append({
             "q": q,
-            "ja": ja_label.get(q, ""),
+            "ja": mine,
             "en": en_label.get(q, ""),
             "koku": kokugakuin.get(q, []),
             "claims": [list_label.get(l, l) for l in cl],
             "twins": tw,
-            "bucket": "twin" if has_twin else "orphan",
+            "name_twins": name_twins,
+            "id_twins": id_twins,
+            "claimants": claimants,
+            "diag": diag,
         })
     return rows, ja_label
 
 
+def _koku_link(k):
+    return (f'<a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id={k}" '
+            f'target="_blank">{esc(k)}</a>')
+
+
 def render(rows, ja_label):
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    twins = [r for r in rows if r["bucket"] == "twin"]
-    orphs = [r for r in rows if r["bucket"] == "orphan"]
+    dup = [r for r in rows if r["diag"] == "duplicate"]
+    dis = [r for r in rows if r["diag"] == "disputed"]
+    notwin = [r for r in rows if r["diag"] == "notwin"]
 
-    def row_html(r):
-        koku = ", ".join(
-            f'<a href="https://jmapps.ne.jp/kokugakuin/det.html?data_id={k}" target="_blank">{esc(k)}</a>'
-            for k in r["koku"]) or "—"
-        claims = esc(", ".join(r["claims"])) if r["claims"] else "<em>claims no list</em>"
+    def koku_cell(r):
+        return ", ".join(_koku_link(k) for k in r["koku"]) or "—"
+
+    def claims_cell(r):
+        return esc(", ".join(r["claims"])) if r["claims"] else "<em>claims no list</em>"
+
+    def search_attr(r):
+        return esc(f'{r["q"]} {r["ja"]} {r["en"]} {" ".join(r["claims"])}').lower()
+
+    def dup_row(r):
         twins = "<br>".join(
             f'{wd_link(e, ja_label.get(e) or e)} <span class="reason">({esc(reason)})</span>'
             for e, reason in r["twins"].items()) or "—"
-        cls = "twin" if r["bucket"] == "twin" else "orphan"
-        search = esc(f'{r["q"]} {r["ja"]} {r["en"]} {" ".join(r["claims"])}')
-        return (f'<tr class="{cls}" data-search="{search.lower()}">'
-                f'<td>{wd_link(r["q"])}</td>'
-                f'<td lang="ja">{esc(r["ja"])}</td>'
-                f'<td>{esc(r["en"])}</td>'
-                f'<td>{koku}</td>'
-                f'<td>{claims}</td>'
-                f'<td>{twins}</td></tr>')
+        return (f'<tr class="dup" data-search="{search_attr(r)}">'
+                f'<td>{wd_link(r["q"])}</td><td lang="ja">{esc(r["ja"])}</td>'
+                f'<td>{esc(r["en"])}</td><td>{koku_cell(r)}</td>'
+                f'<td>{claims_cell(r)}</td><td>{twins}</td></tr>')
 
-    twin_rows = "\n".join(row_html(r) for r in twins)
-    orph_rows = "\n".join(row_html(r) for r in orphs)
+    def dis_row(r):
+        # the differently-named entry(ies) the list uses for this id
+        entry = "<br>".join(
+            f'{wd_link(e, ja_label.get(e) or e)}' for e in r["id_twins"]) or "—"
+        # everyone (confirmed) who claims a shared id → the size of the dispute
+        claim_bits = []
+        for k, holders in r["claimants"].items():
+            names = ", ".join(
+                wd_link(h, ja_label.get(h) or h) + (" <span class=\"reason\">‹named entry›</span>" if is_named else "")
+                for h, is_named in holders if h != r["q"])
+            claim_bits.append(f'{_koku_link(k)}: <strong>{len(holders)}</strong> claim it — {names}')
+        claim_html = "<br>".join(claim_bits) or "—"
+        return (f'<tr class="dis" data-search="{search_attr(r)}">'
+                f'<td>{wd_link(r["q"])}</td><td lang="ja">{esc(r["ja"])}</td>'
+                f'<td>{esc(r["en"])}</td><td>{koku_cell(r)}</td>'
+                f'<td>{claims_cell(r)}</td><td>{entry}</td>'
+                f'<td>{claim_html}</td></tr>')
+
+    def notwin_row(r):
+        return (f'<tr class="orphan" data-search="{search_attr(r)}">'
+                f'<td>{wd_link(r["q"])}</td><td lang="ja">{esc(r["ja"])}</td>'
+                f'<td>{esc(r["en"])}</td><td>{koku_cell(r)}</td>'
+                f'<td>{claims_cell(r)}</td></tr>')
+
+    dup_rows = "\n".join(dup_row(r) for r in dup)
+    dis_rows = "\n".join(dis_row(r) for r in dis)
+    notwin_rows = "\n".join(notwin_row(r) for r in notwin)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -134,6 +201,7 @@ def render(rows, ja_label):
   .card {{ background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px;
     padding: 0.75rem 1.25rem; text-align: center; }}
   .card .n {{ font-size: 1.6rem; font-weight: 700; color: #2e7d32; }}
+  .card.warn .n {{ color: #e65100; }}
   .card .l {{ font-size: 0.8rem; color: #555; }}
   input#filter {{ width: 100%; padding: 0.6rem; font-size: 1rem; margin: 1rem 0;
     border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }}
@@ -141,7 +209,8 @@ def render(rows, ja_label):
   th, td {{ border: 1px solid #e0e0e0; padding: 0.4rem 0.55rem; text-align: left;
     vertical-align: top; }}
   th {{ background: #f1f8e9; position: sticky; top: 0; }}
-  tr.twin td:first-child {{ border-left: 3px solid #4caf50; }}
+  tr.dup td:first-child {{ border-left: 3px solid #4caf50; }}
+  tr.dis td:first-child {{ border-left: 3px solid #d32f2f; }}
   tr.orphan td:first-child {{ border-left: 3px solid #ff9800; }}
   .reason {{ color: #888; font-size: 0.78rem; }}
   a {{ color: #1565c0; text-decoration: none; }}
@@ -155,38 +224,54 @@ def render(rows, ja_label):
 <p class="nav"><a href="index.html">&larr; shintowiki</a></p>
 <h1>Confirmed Shikinaisha that no Engishiki list names</h1>
 <p class="intro">A <strong>confirmed Shikinaisha</strong> is a shrine confidently identified as one of
-the 927 register entries (unlike a <em>Ronsha</em>, a disputed candidate).
-{len(rows) + 0} carry the confirmed class yet appear on no list.
-<strong>{len(twins)} have a twin</strong> — a separate item, already named by a list, that
-is the same shrine (matched by shared Kokugakuin id, identical Japanese name, or old-vs-new
-kanji). Your call: <em>link</em> each pair (&ldquo;these two are the same shrine&rdquo;) or
-<em>merge</em> them. <strong>{len(orphs)} have no twin</strong> — either modern shrines
-mis-tagged as register entries, or genuine entries the lists are missing. Your call: which.
-Report only — nothing here is edited on Wikidata.</p>
+the 927 register entries (unlike a <em>Ronsha</em>, a disputed candidate). {len(rows)} carry the
+confirmed class yet appear on no list. They fall into three kinds, diagnosed below:
+<br>&bull; <strong>{len(dup)} living/entry duplicates</strong> — a separate item, already named by a
+list, is the <em>same shrine</em> under the same name (matched by name, or by Kokugakuin id + same
+name). The living item only <em>looks</em> unnamed because the list names its entry twin. → link or merge.
+<br>&bull; <strong style="color:#d32f2f">{len(dis)} Kokugakuin-id disagreements</strong> — the item
+shares a Kokugakuin database id with a <em>differently-named</em> entry, and/or that id is claimed by
+<em>several</em> shrines. This is jawiki and the Kokugakuin database <em>disagreeing on which modern
+shrine is the 927 entry</em> — <strong>do NOT blind-merge these</strong>; they need an identification call.
+<br>&bull; <strong>{len(notwin)} no twin</strong> — no entry shares its id or name: a mis-tagged modern
+shrine, or a genuine entry the lists are missing.
+<br>Report only — nothing here is edited on Wikidata.</p>
 
 <div class="counts">
   <div class="card"><div class="n">{len(rows)}</div><div class="l">total unnamed</div></div>
-  <div class="card"><div class="n">{len(twins)}</div><div class="l">have a twin (link or merge)</div></div>
-  <div class="card"><div class="n">{len(orphs)}</div><div class="l">no twin (mis-tag or missing entry)</div></div>
+  <div class="card"><div class="n">{len(dup)}</div><div class="l">living/entry duplicate (link/merge)</div></div>
+  <div class="card warn"><div class="n">{len(dis)}</div><div class="l">Kokugakuin-id disagreement (identify)</div></div>
+  <div class="card"><div class="n">{len(notwin)}</div><div class="l">no twin (mis-tag or missing)</div></div>
 </div>
 
 <input id="filter" type="text" placeholder="Filter by QID, Japanese/English name, or list…"
   oninput="filt()">
 
-<h2>{len(twins)} with a twin entry — link or merge each pair</h2>
+<h2 style="color:#d32f2f;border-color:#ffcdd2">{len(dis)} Kokugakuin-id disagreements — jawiki vs the Kokugakuin database</h2>
+<p>The list names one shrine as the entry; the same Kokugakuin id is carried by a
+<em>different-named</em> shrine (this item), or by several shrines at once. The last column shows
+everyone who claims each shared id — the size of the dispute. These are identification calls, not
+merges.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>this item (living)</th><th>ja</th><th>en</th><th>Kokugakuin id</th>
+<th>claims list</th><th>list names this entry</th><th>who claims the shared id</th></tr></thead>
+<tbody>
+{dis_rows}
+</tbody></table></div>
+
+<h2>{len(dup)} living/entry duplicates — link or merge each pair</h2>
 <div class="table-wrap"><table>
 <thead><tr><th>item</th><th>ja</th><th>en</th><th>Kokugakuin id</th><th>claims list</th>
 <th>twin (already named)</th></tr></thead>
 <tbody>
-{twin_rows}
+{dup_rows}
 </tbody></table></div>
 
-<h2>{len(orphs)} with no twin — decide: mis-tagged shrine, or entry the list is missing</h2>
+<h2>{len(notwin)} with no twin — mis-tagged shrine, or entry the list is missing</h2>
 <div class="table-wrap"><table>
-<thead><tr><th>item</th><th>ja</th><th>en</th><th>Kokugakuin id</th><th>claims list</th>
-<th>twin</th></tr></thead>
+<thead><tr><th>item</th><th>ja</th><th>en</th><th>Kokugakuin id</th><th>claims list</th></tr></thead>
 <tbody>
-{orph_rows}
+{notwin_rows}
 </tbody></table></div>
 
 <script>
@@ -210,8 +295,10 @@ def main():
     html_out = render(rows, ja_label)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     io.open(OUT, "w", encoding="utf-8", newline="\n").write(html_out)
-    twins = sum(1 for r in rows if r["bucket"] == "twin")
-    print(f"{len(rows)} orphans ({twins} twin / {len(rows)-twins} no-twin) -> {OUT}")
+    import collections
+    c = collections.Counter(r["diag"] for r in rows)
+    print(f"{len(rows)} orphans: {c['duplicate']} duplicate / {c['disputed']} "
+          f"Kokugakuin-id disagreement / {c['notwin']} no-twin -> {OUT}")
     return 0
 
 
