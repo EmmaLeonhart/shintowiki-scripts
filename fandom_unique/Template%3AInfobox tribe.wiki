@@ -1,0 +1,50 @@
+{{Infobox
+| above     = {{{name|}}}{{#if: {{{local name|}}} | <br/>{{{local name}}} }}
+| subheader = {{{type|}}}
+| subheaderstyle = border-top: #aaa 1px solid; border-bottom: #aaa 1px solid; 
+
+| image  = {{#invoke:InfoboxImage|InfoboxImage|image={{{image|}}}|size={{{image_size|}}}|sizedefault=frameless|alt={{{alt|}}}}}
+| caption = {{{caption|}}}
+
+| label2 = Ethnicity
+| data2  = {{{ethnicity|}}}
+
+| label3 = [[Nisba (onomastics)|Nisba]]
+| data3  = {{{nisba|}}}
+
+| label4 = Location
+| data4  = {{{location|}}}
+
+| label5 = [[Varna (Hinduism)|Varna]]
+| data5  = {{{varna|}}}
+
+| label6 = {{#if:{{{descended_label|}}}|{{{descended_label}}}|Descended from}}
+| data6  = {{{descended|}}}
+
+| label7 = Parent tribe
+| data7  = {{{parent_tribe|}}}
+
+| label8 = Population
+| data8  = {{{population|}}}
+
+| label9 = [[Demonym]]
+| data9  = {{{demonym|}}}
+
+| label10 = Branches
+| data10  = {{{branches|}}}
+
+| label11 = Language
+| data11  = {{{language|}}}
+
+| label12 = Religion
+| data12  = {{{religion|}}}
+
+| label13 = Surnames
+| data13  = {{{surnames|}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Infobox tribe]] with unknown parameter "_VALUE_"|ignoreblank=y| name | local name | type | image | image_size | alt | caption | ethnicity| nisba | location | varna | descended_label | descended| parent_tribe| population | demonym | branches | language | religion | surnames }}<noinclude>
+{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>
