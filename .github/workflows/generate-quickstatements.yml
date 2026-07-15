@@ -135,6 +135,11 @@ jobs:
         continue-on-error: true
         run: python generate_reisai_qualifier_repair.py
 
+      - name: Scholar ID (P1960) for Q140568870 — date-gated to 2026-07-29
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_scholar_id.py
+
       # The two description generators are SPARQL-heavy (~30-40 min each) and
       # their data barely drifts daily (both self-drain via skip-if-standard on
       # regeneration), so they refresh weekly on Sundays — the daily job stays
