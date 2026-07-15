@@ -9,9 +9,9 @@ Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_syn
 
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
-**Status: ⏸ WAITING** (Miraheze 403, checked 2026-07-15 06:33 UTC) — wiki editing is blocked. The hourly `wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to **`WIKI_GATE: GO`** the moment the login works again.
-`wiki-editing-gate.yml` CI job runs `check_wiki_login.py` and flips the marker above to
-**`WIKI_GATE: GO`** the moment the login works again.
+**Status: ⏸ WAITING** (weekly edit-test failed, 2026-07-15 08:35 UTC) — wiki editing is locked for the week. The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
+The gate is now a **weekly edit-test** (Emma 2026-07-15): Sundays, CI attempts a real edit — success unlocks
+editing for the week, failure keeps it locked — so we don't hammer the wiki while it's blocked.
 
 **Work-loop, every tick:** SYNC (pull remote) first, then read the marker.
 - Marker says **GO** → wiki editing is live: start working through the **❓ DECISIONS** below,
@@ -110,14 +110,14 @@ sorted by how much was lost. https://emmaleonhart.github.io/shintowiki-scripts/e
 - 🤖 **Province exclusions** — `province_exclusions.txt` (382 ADD-only lines) registered, drips.
   Province work is ADD-ONLY, no removals ever. `docs/province_exclusion_residual_2026-07.md`.
 - 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
-- 🤖 **Wiki-editing week-long lockout** (built 2026-07-11, Emma's directive). `wiki-editing-lockout.yml`
-  runs ~1AM PDT: checks whether EmmaBot edited in the past 8h (a 403 counts as 0 edits, fail-closed).
-  No edits → writes a 7-day lockout to `shinto_miraheze/wiki_editing_lockout.state`; every leaf wiki-
-  writer (git-synced-sync, fandom-sync, strip-property-dumps, update-shikinaisha-lists, wiki-cleanup,
-  the orchestrators, untransclude) calls `wiki_edit_allowed.py` and bails while locked. Lockout
-  auto-expires on its date; nothing to do. Audit that motivated it: `docs/wiki_403_audit_2026-07-11.md`
-  (finding: block began in a quiet window, most likely Miraheze-side, but our baseline volume had
-  crept up and we kept hammering the 403 — the lockout stops both).
+- 🤖 **Weekly wiki edit-test** (Emma 2026-07-15, replaced the hourly gate + daily lockout).
+  `weekly-wiki-edit-test.yml` runs Sundays: CI attempts a REAL edit to `User:EmmaBot/edit-test`. Success
+  → unlocks editing for the week + marker GO; failure → locks for the week (8-day lock, > the 7-day
+  cadence) + marker WAIT — so we never hammer the 403 between tests. Every leaf wiki-writer
+  (git-synced-sync, fandom-sync, strip-property-dumps, update-shikinaisha-lists, wiki-cleanup, the
+  orchestrators, untransclude) calls `wiki_edit_allowed.py` and bails while locked. Nothing to do —
+  the Sunday test is the sole decider. Motivating audit: `docs/wiki_403_audit_2026-07-11.md`; the block
+  is a Cloudflare zone challenge on shinto (aelaki works from the same IP).
 
 ---
 

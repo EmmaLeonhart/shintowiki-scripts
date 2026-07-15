@@ -12,10 +12,10 @@ Every scheduled wiki-WRITING workflow calls this as a bail-early step:
 Exit 0 = editing allowed (no lockout, or the lockout has expired).
 Exit 1 = LOCKED — the wiki-editing lockout is in force; skip all wiki writes.
 
-The lockout is written by wiki_editing_lockout_check.py (the ~1AM checker) when
-EmmaBot hasn't landed an edit in 8h. It carries a `locked_until` date and
-expires on its own — once today >= locked_until, editing resumes automatically
-(no manual unlock needed). See docs/wiki_403_audit_2026-07-11.md.
+The lockout is written by weekly_wiki_edit_test.py (the Sunday edit-test): a failed
+edit locks editing for the week; a successful edit unlocks it. It carries a
+`locked_until` date (8 days on failure, > the 7-day test cadence) so it never
+auto-expires before the next Sunday test. See docs/wiki_403_audit_2026-07-11.md.
 """
 import datetime
 import io

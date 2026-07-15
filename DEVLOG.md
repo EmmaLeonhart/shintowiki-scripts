@@ -4,6 +4,20 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-15 — weekly Sunday edit-test replaces the hourly gate + daily lockout
+
+Emma: rather than probe the wiki hourly/daily while it's blocked, test a REAL edit once a week on
+Sunday — works → editing continues for the week, fails → it stays locked — so we don't hammer the 403.
+Built `weekly_wiki_edit_test.py` + `weekly-wiki-edit-test.yml` (cron `27 9 * * 0`): CI logs in and
+edits `User:EmmaBot/edit-test`; on success it writes an unlocked `wiki_editing_lockout.state` + marker
+GO, on failure a locked state (8-day lock, one day past the 7-day cadence so it never auto-expires
+before the next test) + marker WAIT. The existing `wiki_edit_allowed.py` guard, already wired into
+every leaf wiki-writer, enforces it unchanged. Retired the two workflows this supersedes —
+`wiki-editing-gate.yml` (hourly login check) and `wiki-editing-lockout.yml` (daily 8h-contrib check) —
+and their now-orphaned scripts `check_wiki_login.py` + `wiki_editing_lockout_check.py`. Set the state
+to locked now (wiki still 403) so the schedulers stop hammering immediately; the first Sunday test
+(2026-07-19) re-decides. Simulated pass/fail verified the state + marker both flip correctly.
+
 ## 2026-07-14 — shikinaisha-orphans report: split out the Kokugakuin-id disagreements
 
 Emma, looking at the orphans page: the first ones are '''Kokugakuin-id disagreements''' — jawiki

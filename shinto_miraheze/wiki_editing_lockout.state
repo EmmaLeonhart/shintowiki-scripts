@@ -1,6 +1,6 @@
 {
-  "locked": false,
-  "locked_until": null,
-  "reason": "unlocked 2026-07-14 to resume with the new canonical UA (Emma) — the ~1AM check re-locks if EmmaBot still can't land an edit",
+  "locked": true,
+  "locked_until": "2026-07-23",
+  "reason": "wiki 403 (Cloudflare challenge); switched to the weekly edit-test model 2026-07-15 — the Sunday weekly-wiki-edit-test.yml job re-tests a real edit and unlocks the moment one lands",
   "checked": null
 }
