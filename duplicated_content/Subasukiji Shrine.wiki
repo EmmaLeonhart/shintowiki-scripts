@@ -6,12 +6,12 @@
 |ISO    = JP-18
 |LatitudeDeg = 35 |LatitudeMin = 53 |LatitudeSec = 10.4
 |LongitudeDeg = 136 |LongitudeMin = 20 |LongitudeSec = 43.9
-|Deities = Right Hall: {{ill|Takeminakata|ja|建御名方命|12=simple|13=User:Immanuelle/Takeminakata no Mikoto|qid=Q9150391|comment=changed title based on wikidata|qid=Q9150391}}<br />Main Hall: {{ill|Ukanomitama|ja|倉稻魂命}}<br />Left Hall: {{ill|Ōnotehime|ja|大野手比賣命}}<br />Associated Deities: {{ill|Ōta-no-Mikoto|ja|太田命|lt=Ōta no Mikoto}}, {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}
-|SacredObject = 
+|Deities = Right Hall: {{ill|Takeminakata|ja|建御名方命|12=simple|13=User:Immanuelle/Takeminakata no Mikoto|qid=Q9150391|comment=changed title based on wikidata|qid=Q9150391}}<br />Main Hall: {{ill|Ukanomitama|ja|倉稲魂命}}<br />Left Hall: {{ill|Ōnotehime|ja|大野手比賣命}}<br />Associated Deities: {{ill|Ōta-no-Mikoto|ja|太田命|lt=Ōta no Mikoto}}, {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944}}
+|SacredObject =
 |Rank    = {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}<br />{{ill|Echizen Province|en|Echizen Province|qid=Q1047144|lt=Echizen Province}}<br />{{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}}<br />{{ill|Modern system of ranked Shinto shrines|ja|神饌幣帛料供進社}}
 |consecration_year = Traditionally during the reign of Emperor Buretsu
 |MainHall = {{ill|Miya-zukuri|ja|三間社流造}}
-|Alias   = 
+|Alias   =
 |Festival = June 10
 |LabelPosition = left
 |Map     = Japan Fukui
@@ -19,23 +19,23 @@
 |coordinates = {{Coord|35.88622222222222|N|136.3455277777778}}
 }}
 
-'''Suwaazuki Shrine''' (須波阿湏疑神社) is a Shinto shrine located in [[Ikeda Town, Fukui|Ikeda Town]], {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}}, Japan. 
+'''Suwaazuki Shrine''' (須波阿湏疑神社) is a Shinto shrine located in [[Ikeda Town, Fukui|Ikeda Town]], {{ill|Fukui Prefecture|en|Fukui Prefecture|qid=Q133879|lt=Fukui Prefecture}}, Japan.
 
 The character "湏" (water radical + 頁) is not included in {{ill|JIS X 0208|en|JIS X 0208|qid=Q905260|lt=JIS X 0208}}, so the alternative representation "'''須波阿須疑神社'''" is sometimes used online, though it represents a different character.
 
 == Overview ==
-Suwaazuki Shrine is identified as a candidate for the {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} "Suwaazuki Shrine Sanza (Echizen Province, Imadate District)" listed in the {{ill|Engishiki|ar|إنجيشيكي (كتاب ياباني)|de|Engishiki|es|Engishiki|fr|Engishiki|he|אנגישיקי|id|Engishiki|it|Engishiki|ja|延喜式|ko|엔기시키|min|Engishiki|mr|इंगिशिकी|nl|Engishiki|pt|Engishiki|ru|Энгисики|simple|Engishiki|tr|Engishiki|uk|Енґісікі|zh|延喜式|qid=Q1342448|lt=Engishiki}}. It is classified as a small shrine in the Shikinaisha system and designated a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the modern shrine Ranking system.
+Suwaazuki Shrine is considered the location of the "Suwaazuki Shrine Three Halls" (Sanza) and is identified as a candidate for the {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} "Suwaazuki Shrine Sanza (Echizen Province, Imadate District)" listed in the {{ill|Engishiki|ar|إنجيشيكي (كتاب ياباني)|de|Engishiki|es|Engishiki|fr|Engishiki|he|אנגישיקי|id|Engishiki|it|Engishiki|ja|延喜式|ko|엔기시키|min|Engishiki|mr|इंगिशिकी|nl|Engishiki|pt|Engishiki|ru|Энгисики|simple|Engishiki|tr|Engishiki|uk|Енґісікі|zh|延喜式|qid=Q1342448|lt=Engishiki}}. It is classified as a small shrine in the Shikinaisha system and designated a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} under the modern shrine ranking system.
 
 == Cultural Properties ==
 
 ; Main Hall
-: Built in the {{ill|Miya-zukuri|ja|三間社流造}} style, it measures 4.88 meters in length (桁行) and 3.15 meters in width (梁間). It features a {{ill|cypress bark roof|ja|檜皮葺|12=simple|13=User:Immanuelle/Hiwadabuki|comment=changed title based on wikidata|qid=Q90373477}} roof with a three-bay {{ill|kōhai|ja|向拝|2=ja|3=向拝|4=zh|5=向拜|lt=kōhai|12=simple|13=User:Immanuelle/Mokoshi|13=User:Immanuelle/kōhai (architecture)|comment=changed title based on wikidata|qid=Q11415970}}. Constructed during the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}}, it is the oldest shrine main hall in Fukui Prefecture. Designated as a {{ill|National Treasure (Japan)|ja|旧国宝|12=simple|13=User:Immanuelle/National Treasure of Japan (pre-1950)|ja_comment=jawiki redirects to 国宝|comment=changed title based on wikidata|qid=Q1139795}} under the 1941 National Treasure Preservation Law, it is now an Important Cultural Property under the 1950 Cultural Property Protection Law.<ref>Ministry of Education Notification No. 823, November 6, 1941</ref>
+: Built in the three-bay {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} style, it measures 4.88 meters in length (桁行) and 3.15 meters in width (梁間). It features a {{ill|cypress bark roof|ja|檜皮葺|12=simple|13=User:Immanuelle/Hiwadabuki|comment=changed title based on wikidata|qid=Q90373477}} roof with a three-bay {{ill|kōhai|ja|向拝|2=ja|3=向拝|4=zh|5=向拜|lt=kōhai|12=simple|13=User:Immanuelle/Mokoshi|13=User:Immanuelle/kōhai (architecture)|comment=changed title based on wikidata|qid=Q11415970}}. Constructed during the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}}, it is the oldest shrine main hall in Fukui Prefecture. Designated as a {{ill|National Treasure (Japan)|ja|旧国宝|12=simple|13=User:Immanuelle/National Treasure of Japan (pre-1950)|ja_comment=jawiki redirects to 国宝|comment=changed title based on wikidata|qid=Q1139795}} under the 1941 National Treasure Preservation Law, it is now an Important Cultural Property under the 1950 Cultural Property Protection Law.<ref>Ministry of Education Notification No. 823, November 6, 1941</ref>
 
 ; Worship Hall
-: Built during the early {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}} in 1689 (Genroku 2), it has a gabled roof, originally thatched and now copper-tiled. Measuring 8 by 5.5 bays, it has plain wooden paneling. The hall functioned as a {{ill|Noh|en|Noh|qid=Q226887|lt=Noh}} stage until 1917 (Taishō 5) and is designated as a cultural property by the town.
+: Built during the early {{ill|Edo period|en|Edo period|qid=Q184963|lt=Edo period}} in 1689 (Genroku 2), it has an irimoya (hip-and-gable) roof covered with copper tiles (formerly thatched). Measuring 8 by 5.5 bays, it has plain wooden paneling. The hall functioned as a {{ill|Noh|en|Noh|qid=Q226887|lt=Noh}} stage until 1917 (Taishō 5) and is designated as a cultural property by the town.
 
 ; Gate (Rōmon)
-: A three-bay, one-entrance {{ill|Rōmon|ja|楼門|12=simple|13=User:Immanuelle/Rōmon|comment=changed title based on wikidata|qid=Q97378762}} with a gabled roof and copper tiles, originally thatched. Built in the late Edo period, it features white plastered walls and vermillion-painted wood, reflecting {{ill|Shinbutsu-shūgō|en|Shinbutsu-shūgō|qid=Q2279088|lt=Shinbutsu-shūgō}} practices. It is also designated a cultural property by the town.
+: A three-bay, one-entrance {{ill|Rōmon|ja|楼門|12=simple|13=User:Immanuelle/Rōmon|comment=changed title based on wikidata|qid=Q97378762}} with a hipped roof and copper tiles, originally thatched. Built in the late Edo period, it features white plastered walls and vermillion-painted wood, reflecting {{ill|Shinbutsu-shūgō|en|Shinbutsu-shūgō|qid=Q2279088|lt=Shinbutsu-shūgō}} practices. It is also designated a cultural property by the town.
 
 == Features ==
 
@@ -46,14 +46,15 @@ Suwaazuki Shrine is identified as a candidate for the {{ill|Engishiki Jinmyōch�
 : Although Noh performances are no longer held, an annual "Noh Mask Festival" takes place on February 6, featuring offerings of azuki porridge to visitors.
 
 ; Inari Giant Cedar
-: The sacred tree "Inari Giant Cedar" stands on the hillside behind the main hall. Dedicated to {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} and {{ill|Izanami|ja|伊弉冊尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|comment=changed title based on wikidata|qid=Q682306}}, it is named "Aratama Giant Cedar Daimyōjin." Estimated at 500 years old, it stands 40 meters tall with a trunk circumference of 8.6 meters and a root spread of 11.7 meters. It is a Fukui Prefecture Natural Monument.
+: The sacred tree "Inari Giant Cedar" stands on the hillside behind the main hall. Dedicated to {{ill|Izanagi|ja|伊弉諾尊|12=simple|13=User:Immanuelle/Izanagi|qid=Q813858}} and {{ill|Izanami|ja|伊弉冊尊|12=simple|13=User:Immanuelle/Izanami|qid=Q682306|comment=changed title based on wikidata|qid=Q682306}}, it is named "Aratama Giant Cedar Daimyōjin." Estimated at 500 years old, it stands 40 meters tall with a trunk circumference of 8.6 meters and a root spread of 11.7 meters. It is one of the most notable trees in the Hokuriku region and is a Fukui Prefecture Natural Monument.
 
 == Religious Events ==
 
 ; festival (Ikeda Grand Festival)
 : Held over three days around June 10, this festival has been celebrated since before the Edo period to pray for abundant harvests.
 * June 9: Performance of "Ikeda Oiwake," a Fukui Prefecture Intangible Folk Cultural Property.
-* June 10 (main day): Morning prayer offering and tamagushi ritual; afternoon performances, including "Urayasu no Mai," sumo wrestling, and taiko drumming by groups from Echizen City.
+* June 10 (main day): Morning prayer offering and tamagushi ritual; afternoon performances, including "Urayasu no Mai" (Dance of Peace), sumo wrestling, and taiko drumming by groups from Echizen City.
+* June 10–11: Various performances, including taiko drum performances.
 
 == History ==
 The shrine was traditionally founded during the reign of {{ill|Emperor Buretsu|en|Emperor Buretsu|qid=Q334644|lt=Emperor Buretsu}} with a division of {{ill|Takeminakata|ja|建御名方命|12=simple|13=User:Immanuelle/Takeminakata no Mikoto|qid=Q9150391|comment=changed title based on wikidata|qid=Q9150391}} from {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}} in {{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province}}. Later, it enshrined the local deity "Azuki Kami" (Ōnotehime) and added Ukanomitama (Inari deity) in 716 (Reiki 2, Nara period).
@@ -75,12 +76,12 @@ Address: Fukui Prefecture, Imadate District, Ikeda Town, Inari 13-1
 * By car: About 30 minutes from [[Takefu Interchange]] or [[Sabae Interchange]] on the {{ill|Hokuriku Expressway|en|Hokuriku Expressway|qid=Q1549512|lt=Hokuriku Expressway}}, or 35 minutes from [[Fukui Interchange]].
 
 == Nearby Attractions ==
-* {{ill|Noh Museum|ja|能楽の里歴史館}} - Displays related to Noh culture.
-* {{ill|Ukamaji Shrine|ja|鵜甘神社}} - Known for its traditional dance.
-* {{ill|Horiguchi House|ja|堀口家住宅}} - Edo period structure.
-* {{ill|Kazura bridge at the Iya Valley|ja|かずら橋|12=simple|13=User:Immanuelle/Kazura Bridge|comment=changed title based on wikidata|qid=Q11263836}} - Scenic vine suspension bridge.
-* {{ill|Ikeda Folklore Museum|ja|池田町民俗博物館}}
-* {{ill|Umada Clan Garden|ja|梅田氏庭園}} - Historic garden of the Umada family.
+* {{ill|Nogaku no Sato Historical Museum|ja|能楽の里歴史館}} – Displays traditional Noh masks and costumes.
+* {{ill|Ugami Shrine|ja|鵜甘神社}} – Features a unique tradition of Dengaku dance.
+* {{ill|Horiguchi Family Residence|ja|堀口家住宅}} – Edo-period architecture linked to the shrine.
+* {{ill|Kazura bridge at the Iya Valley|ja|かずら橋|12=simple|13=User:Immanuelle/Kazura Bridge|comment=changed title based on wikidata|qid=Q11263836}} – A scenic vine suspension bridge.
+* {{ill|Ikeda Town Folklore Museum|ja|池田町民俗博物館}} – Exhibits traditional agricultural tools and daily life artifacts.
+* {{ill|Umeda Family Garden|ja|梅田氏庭園}} – Historic garden of the Umeda family.
 * {{ill|Noh Mask Art Museum|ja|能面美術館（福井県）}}
 
 == References ==
@@ -95,91 +96,6 @@ Address: Fukui Prefecture, Imadate District, Ikeda Town, Inari 13-1
 
 {{translated page|ja|須波阿湏疑神社|version=102326784|comment=Imported full ja history}}
 
-==Merged second translation==
-{{Infobox religious building| religious_affiliation = [[Shinto]]
-| name       = Suwaazuki Shrine
-| religious_affiliation = [[Shinto]]
-|image      = [[File:Suwaazuki shrine gate covered snow.jpg|220px]]<br />Torii Gate
-| location   = Inari 13-1, Ikeda Town, Imadate District, Fukui Prefecture, Japan
-| ISO        = JP-18
-| Latitude   = 35.8862
-| Longitude  = 136.3455
-| deity      = Right Hall: {{ill|Takeminakata|ja|建御名方命|12=simple|13=User:Immanuelle/Takeminakata-no-Kami|qid=Q9150391|comment=changed title based on wikidata|qid=Q9150391}}<br />Main Hall: {{ill|Ukanomitama|ja|倉稲魂命|12=simple|13=User:Immanuelle/Uka-no-Mitama-no-Kami|ja_comment=jawiki redirects to ウカノミタマ|comment=changed title based on wikidata|qid=Q3080728}}<br />Left Hall: {{ill|Ōnotehime-no-Kami|ja|大野手比賣命}}<br />Accompanying Deities: {{ill|Ōkuninushi|abstract|Q276944|ca|Ōkuninushi|es|Ōkuninushi|fa|اوکونینوشی|fr|Ōkuninushi|hu|Ókuninusi|id|Ookuninushi|it|Ōkuninushi|ja|大国主|ko|오오쿠니누시|mni|ꯑꯣꯀꯨꯅꯤꯅꯨꯁꯤ|pl|Ōkuninushi|pt|Ookuninushi|ru|Окунинуси|simple|Ōkuninushi|sr|Okuninuši|sv|Ōkuninushi|tr|Ōkuninushi|uk|Окунінуші|vi|Ōkuninushi|zh|大國主|qid=Q276944|lt=Ōnamuchi-no-Kami}}, {{ill|Ōta-no-Mikoto|ja|太田命|lt=Ōta-no-Kami}}
-| Classification = {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/Kensha|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}, {{ill|Echizen Province|en|Echizen Province|qid=Q1047144|lt=Echizen Province}}, {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}}, {{ill|Modern system of ranked Shinto shrines|ja|神饌幣帛料供進社}}
-| Established = Traditionally during the reign of Emperor Buretsu
-| Architecture = Three-bay {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}}
-| Festival    = {{ill|June 10|en|June 10|qid=Q2615|lt=June 10}}
-| Map         = Japan Fukui
-| Label       = left
-}}
-
-'''Suwaazuki Shrine''' (須波阿湏疑神社) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} located in {{ill|Q1206815|ja|池田町|12=simple|13=User:Immanuelle/Ikeda Town (Fukui)|comment=changed title based on wikidata|qid=Q1206815}}, Imadate District, Fukui Prefecture. 
-
-The character "湏" (water radical + 頁) is not included in the {{ill|JIS X 0208|en|JIS X 0208|qid=Q905260|lt=JIS X 0208}} character set, and the shrine is often referred to as "須波阿須疑神社" as a substitute notation online.
-
-== Overview ==
-The shrine is considered the location of the "Suwaazuki Shrine Three Halls" mentioned in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}} as a small-scale {{ill|Engishiki Jinmyōchō|ja|式内社|lt=Shikinaisha}} in {{ill|Echizen Province|en|Echizen Province|qid=Q1047144|lt=Echizen Province}}. It was classified as a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/Kensha|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} in the modern shrine Ranking system.
-
-== Cultural Properties ==
-
-=== Main Hall ===
-The Main Hall is a three-bay {{ill|Nagare-zukuri|en|Nagare-zukuri|qid=Q210684|lt=Nagare-zukuri}} structure, measuring 4.88 meters across the beams and 3.15 meters along the depth. It features a cypress bark roof and a three-bay porch. Built during the {{ill|Muromachi period|en|Muromachi period|qid=Q334845|lt=Muromachi period}}, it is the oldest shrine building in Fukui Prefecture and was designated as a National Treasure under the pre-war {{ill|National Treasures Preservation Law|ja|国宝保存法|12=simple|13=User:Immanuelle/National Treasure Preservation Law|comment=changed title based on wikidata|qid=Q11420716}} in 1941. It has since been reclassified as an Important Cultural Property under the {{ill|Cultural Properties Protection Law|ja|文化財保護法|12=simple|13=User:Immanuelle/Cultural Properties Protection Act|comment=changed title based on wikidata|qid=Q1188502}} in 1950.<ref>Showa 16 (1941), Ministry of Education Notification No. 823</ref>
-
-=== Worship Hall ===
-The current Worship Hall was built in {{ill|1689|en|1689|qid=Q7674|lt=1689}} during the early Edo period. It features an irimoya (hip-and-gable) roof covered with copper sheeting (formerly thatched) and has a unique open layout used for Noh performances. It is designated as a cultural property by the town.
-
-=== Gate (Rōmon) ===
-The gate is a three-bay, single-entry structure with a hipped roof. The design reflects a combination of Shinto and Buddhist architectural styles. Built in the late Edo period, it is also recognized as a cultural property by the town.
-
-== Special Features ==
-
-=== Shrine Treasures ===
-The shrine possesses a Noh mask called "Tenjin," which was donated in {{ill|1571|en|1571|qid=Q6666|lt=1571}}. This mask is classified as an Important Cultural Property.<ref>Showa 24 (1949), Ministry of Education Notification No. 148</ref>
-
-=== Noh Mask Festival ===
-Although Noh performances are no longer held, the shrine organizes an annual "Noh Mask Festival" on {{ill|February 6|en|February 6|qid=Q2320|lt=February 6}}, where visitors are served azuki bean porridge.
-
-=== Great Cedar of Inari ===
-The sacred tree "Great Cedar of Inari" is located on the hillside behind the Main Hall. Estimated to be 500 years old, it is one of the most notable trees in the Hokuriku region and is designated a Natural Monument by Fukui Prefecture.
-
-== Festivals ==
-
-=== Grand Festival (Ikeda Grand Festival) ===
-The Grand Festival is held annually around {{ill|June 10|en|June 10|qid=Q2615|lt=June 10}} over three days. It includes traditional events like the offering of prayers for bountiful harvests.
-* June 9: Prefectural Intangible Folk Cultural Property "Ikeda Oiwake."
-* June 10 (main day): Shinto rituals, including norito recitation and tamagushi offerings.
-* June 10–11: Various performances, including the "Dance of Peace" and taiko drum performances.
-
-== History ==
-The shrine was traditionally founded during the reign of Emperor Buretsu by enshrining a divided spirit of {{ill|Takeminakata|qid=Q9150391|lt=Takeminakata-no-Kami|ja|建御名方命|12=simple|13=User:Immanuelle/Takeminakata|qid=Q9150391}} from the {{ill|Suwa-taisha|en|Suwa-taisha|qid=Q218813|lt=Suwa-taisha}}. In the Nara period, local deity {{ill|Ōnotehime-no-Kami|ja|大野手比売|ja|Ōnotehime-no-Kami|lt=Ōnotehime-no-Kami}} and {{ill|Ukanomitama|ja|倉稲魂命|lt=Uka-no-Mitama-no-Kami}} (an {{ill|Inari Ōkami|en|Inari Ōkami|qid=Q719665|lt=Inari deity}}) were also enshrined.
-
-Despite setbacks during the Sengoku period, including destruction by the {{ill|Ikkō-ikki|en|Ikkō-ikki|qid=Q947533|lt=Ikkō-ikki}}, the shrine was later reconstructed. In 1873, it was designated a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/Kensha|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}} and became a shrine receiving state offerings in 1908.
-
-== location ==
-'''Address:'''
-* Inari 13-1, Ikeda Town, Imadate District, Fukui Prefecture, Japan
-
-'''Transportation:'''
-* By train: Take the JR West Hokuriku Main Line to {{ill|Takefu Station|en|Takefu Station|qid=Q2815926|lt=Takefu Station}}; from there, a bus to "Inari" and a two-minute walk.
-* By car: Accessible from the {{ill|Hokuriku Expressway|en|Hokuriku Expressway|qid=Q1549512|lt=Hokuriku Expressway}} via Takefu or Sabae Interchanges (30 minutes).
-
-== Nearby Attractions ==
-* {{ill|Nogaku no Sato Historical Museum|ja|能楽の里歴史館}} – Displays traditional Noh masks and costumes.
-* {{ill|Ugami Shrine|ja|鵜甘神社}} – Features a unique tradition of Dengaku dance.
-* {{ill|Horiguchi Family Residence|ja|堀口家住宅}} – Edo-period architecture linked to the shrine.
-* {{ill|Kazura bridge at the Iya Valley|ja|かずら橋|12=simple|13=User:Immanuelle/Kazura Bridge|comment=changed title based on wikidata|qid=Q11263836}} – A scenic suspension bridge.
-* {{ill|Ikeda Town Folklore Museum|ja|池田町民俗博物館}} – Exhibits traditional agricultural tools and daily life artifacts.
-* {{ill|Umeda Family Garden|ja|梅田氏庭園}} – Historic garden of the Umeda family.
-
-== References ==
-{{Reflist}}
-
-== External Links ==
-* [http://www.genbu.net/data/etizen/suhaasugi_title.htm Suwaazuki Shrine – Genbushiko's Memories]
-* [http://www.e-ikeda.jp/see/p004020.html Suwaazuki Shrine & Inari Cedar – Ikeda Tourism Information]
-
-{{translated page|ja|須波阿湏疑神社|version=102326784|comment=Imported full ja history}}
-
 {{wikidata link|Q65292740|ja|須波阿湏疑神社|check_date=2026-05-26}}
 [[Category:Buildings and structures in Ikeda Town, Fukui Prefecture]]
 [[Category:Cultural heritage monuments in Japan]]
@@ -188,7 +104,5 @@ Despite setbacks during the Sengoku period, including destruction by the {{ill|I
 [[Category:Important Cultural Properties of Japan]]
 [[Category:Municipal History of Ikeda, Fukui Prefecture]]
 [[Category:Natural Monuments Designated by Fukui Prefecture]]
-[[Category:Pages with duplicated content]]
 [[Category:Shinto shrines in Fukui Prefecture]]
 [[Category:Wikidata has short description]]
-[[Category:Pages with duplicated content]]
