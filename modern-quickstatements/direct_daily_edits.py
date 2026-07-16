@@ -123,7 +123,6 @@ ATOMIC_FILES = [
     "list_membership_removals.txt",          # Script 2 of 2 (Emma, Open questions 2026-07: "these are pure removals — no add, no ordering risk — so this one can just be registered and dripped safely today"): strip the false Engishiki-list membership from the ~2,151 Ronsha the lists do NOT name (piped-link import damage; "Ronshas should not even have list membership"). PURE REMOVE-only, no paired add => drip-safe (2,236 lines over 2,151 items). NEVER touches the 126 the list names: generate_list_membership_removals.py counts any has-part (ordinal or not) as naming and has assert_never_touches_a_named_part; idempotent against live state.
     "kofun_imports.txt",                     # Kofun shapes (P31 shape-classes, the live convention) + construction periods (P571 century precision) from the jawiki kofun infobox (generate_kofun_quickstatements.py); jawiki-cited
     "description_enrichment_en.txt",         # Unique English descriptions for collision groups, from cloud-RAG answers (collector: shinto_miraheze/collect_description_enrichment.py; stage 1 of docs/description_enrichment_pipeline.md)
-    "scholar_id.txt",                        # Emma 2026-07-15: Google Scholar author ID (P1960) kiJ9hGYAAAAJ on her own item Q140568870, DATE-GATED to 2026-07-29 ("schedule this edit to occur in two weeks"). generate_scholar_id.py writes an empty file until the gate date, then the single line; idempotent (execute_line skips already-present claims).
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to
