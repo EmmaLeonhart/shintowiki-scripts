@@ -1,0 +1,76 @@
+name: Ontology Census (monthly)
+
+# Rebuilds the Shinto ontology census page on the 1st of each month.
+#
+# Emma 2026-07-16: "Put it into a report that is an actual github page that runs
+# monthly with cicd on the 1st of the month."
+#
+# Every property, and every property->qualifier PAIR, on instances of kami
+# (Q524158) and Shinto shrine (Q845945). Read-only against Wikidata — this
+# workflow NEVER edits, it only measures.
+#
+# Monthly rather than daily because the shape of the ontology moves on the scale
+# of the drip (months), not the scale of a day. It replaces
+# docs/deity_qualifier_analysis_2026-07.md, a hand-written snapshot that only
+# counted qualifiers on P825 and that nothing regenerated — the exact failure
+# mode this workflow exists to prevent (CLAUDE.md: "Reports expire after a week").
+#
+# Commits with [skip ci] so it doesn't trigger the cleanup pipeline.
+# generate-pages.yml copies modern-quickstatements/_site/ into the published site.
+
+on:
+  schedule:
+    # 1st of the month, 08:41 UTC. Off the :00 mark (herd) and clear of both
+    # monthly-verification-sweep (07:23) and generate-pages (07:23 daily).
+    - cron: "41 8 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ontology-census
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      # WDQS is the flakiest dependency here — it 504s at shrine scale and has
+      # rate-limited to 1 req/min during outages. A failed census must not fail
+      # the pipeline; last month's committed page simply stays up.
+      - name: Build the census page
+        working-directory: modern-quickstatements
+        run: python generate_ontology_census_page.py
+        continue-on-error: true
+
+      - name: Commit the page
+        run: |
+          if git diff --quiet -- modern-quickstatements/_site/ontology-census.html; then
+            echo "No change — WDQS may have failed, or nothing moved this month."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modern-quickstatements/_site/ontology-census.html
+          git commit -m "ontology census: monthly rebuild [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && break
+            echo "push attempt $i failed; retrying"
+            sleep $((i * 5))
+          done

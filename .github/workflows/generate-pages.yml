@@ -95,6 +95,8 @@ jobs:
           cp modern-quickstatements/_site/index.html _site/shrine-ranking.html
           cp modern-quickstatements/_site/daily.html _site/daily.html 2>/dev/null || true
           cp modern-quickstatements/_site/runs.html _site/runs.html 2>/dev/null || true
+          # Ontology census — rebuilt monthly by ontology-census.yml, published here.
+          cp modern-quickstatements/_site/ontology-census.html _site/ontology-census.html 2>/dev/null || true
           # Copy all QS text files and summary
           cp modern-quickstatements/_site/*.txt _site/ 2>/dev/null || true
           cp modern-quickstatements/_site/summary.json _site/quickstatements-summary.json 2>/dev/null || true
