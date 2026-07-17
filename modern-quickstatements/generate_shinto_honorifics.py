@@ -174,6 +174,11 @@ HONORIFIC_FORMS = {
                    "en": ["Myōjin", "Myojin"]},
     "Q140588464": {"ja": ["権現", "ゴンゲン", "ごんげん"],
                    "en": ["Gongen"]},
+    # Emma created this 2026-07-16 after the accuracy audit found 瑜伽大権現 /
+    # 三鬼大権現 / 石鈇大権現 stripping to 瑜伽大 etc. Longest-match means 大権現
+    # now beats 権現, exactly as 大明神 beats 明神.
+    "Q140588804": {"ja": ["大権現", "ダイゴンゲン", "だいごんげん"],
+                   "en": ["Daigongen"]},
     "Q140588465": {"ja": ["大仏", "ダイブツ", "だいぶつ"],
                    "en": ["Daibutsu"]},
     "Q140588570": {"ja": ["姫", "媛", "比売", "毘売", "ヒメ", "ひめ"],
