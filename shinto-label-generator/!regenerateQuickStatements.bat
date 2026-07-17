@@ -75,6 +75,16 @@ if errorlevel 1 (
 )
 echo.
 
+echo [6b/12] Generating Shinto honorific labels...
+%PYTHON% generate_honorific_quickstatements.py
+if errorlevel 1 (
+    echo.
+    echo ERROR: Honorific label pipeline failed.
+    pause
+    exit /b 1
+)
+echo.
+
 echo [7/12] Generating shrine-rank labels...
 %PYTHON% generate_shrine_rank_quickstatements.py
 if errorlevel 1 (
