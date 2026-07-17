@@ -23,13 +23,18 @@ WHAT IT EMITS, per kami whose ja label ends in a known honorific:
     <kami>|P21|Q24238356          # ONLY if the kami has no P21 at all
     <kami>|P569|novalue           # ONLY if the kami has no P569 at all
 
-THE SUFFIX SET IS DATA-DRIVEN, NOT HARDCODED. It is every item with
-P31 = Q137169543 (Shinto honorific), read live, using that item's ja label +
-ja aliases as the suffix forms and its en label + en aliases as the romaji forms.
-So when Emma mints a new honorific item the pipeline picks it up on the next run
-with no code change — that is what "constantly generated and inferred" means.
-(She added -hime and -hiko herself right after the first batch; both are already
-handled by this, automatically.)
+THE SUFFIX SET IS HARDCODED — see HONORIFIC_FORMS below. Emma 2026-07-16:
+
+    "this stuff is supposed to be pretty hard-coded into our code. It's not
+     supposed to be based off of querying anything here."
+    "The alias of the label and the aliases of the honorific do not matter for
+     the programme. Neither does the actual label of the honorific at all.
+     Everything is hard-coded into this logic. There's not any querying of this
+     thing."
+
+The honorific items are NEVER queried — not their labels, not their aliases.
+The QIDs in HONORIFIC_FORMS are used only as P1035 VALUES. A new honorific means
+a new entry in that table, which is a deliberate one-line edit, not a lookup.
 
 ADD-ONLY, so it is drip-safe under random execution order:
   - P21/P569 are emitted only where the property is ABSENT. Amaterasu keeps her
@@ -70,7 +75,6 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 SPARQL = "https://query.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
 
-HONORIFIC_CLASS = "Q137169543"   # Shinto honorific
 KAMI_CLASS = "Q524158"           # kami
 UNKNOWN = "Q24238356"            # "unknown" — entity whose identity is not known
 OUTFILE = os.path.join(_here, "shinto_honorifics.txt")
@@ -120,44 +124,64 @@ def sparql(query):
         return json.loads(r.read().decode("utf-8"))["results"]["bindings"]
 
 
+# ── The honorific forms. HARDCODED, deliberately. ────────────────────────────
+#
+# Emma 2026-07-16: "Just add these as aliases into the actual code. I'm going to
+# add them, but this stuff is supposed to be pretty hard-coded into our code.
+# It's not supposed to be based off of querying anything here. Just to be clear,
+# you're not supposed to query the aliases of the label at all. The aliases of
+# the honorific do not matter for this particular [pipeline]."
+#
+# So: the item's aliases on Wikidata are NOT read. She maintains those for their
+# own sake; this table is the pipeline's own vocabulary. Rendaku is derived below
+# (ヒメ->ビメ, hime->bime, かみ->がみ), so only the UNVOICED forms are listed.
+#
+# The kanji variation is real and cannot be derived — Konohanasakuyahime alone is
+# attested as 姫 (木花開耶姫), 媛 (木花咲耶媛命), 毘売 (木花之佐久夜毘売) and
+# 比売 (神阿多都比売).
+HONORIFIC_FORMS = {
+    "Q140588456": {"ja": ["大御神", "オオミカミ", "おおみかみ"],
+                   "en": ["Ōmikami", "Omikami"]},
+    "Q140588457": {"ja": ["大神", "オオカミ", "おおかみ"],
+                   "en": ["Ōkami", "Okami"]},
+    "Q140588459": {"ja": ["命", "尊", "ミコト", "みこと"],
+                   "en": ["no Mikoto", "Mikoto"]},
+    "Q140588460": {"ja": ["神", "カミ", "かみ"],
+                   "en": ["no Kami", "Kami"]},
+    "Q140588461": {"ja": ["様", "さま", "サマ"],
+                   "en": ["sama"]},
+    "Q140588462": {"ja": ["大明神", "ダイミョウジン", "だいみょうじん"],
+                   "en": ["Daimyōjin", "Daimyojin"]},
+    "Q140588463": {"ja": ["明神", "ミョウジン", "みょうじん"],
+                   "en": ["Myōjin", "Myojin"]},
+    "Q140588464": {"ja": ["権現", "ゴンゲン", "ごんげん"],
+                   "en": ["Gongen"]},
+    "Q140588465": {"ja": ["大仏", "ダイブツ", "だいぶつ"],
+                   "en": ["Daibutsu"]},
+    "Q140588570": {"ja": ["姫", "媛", "比売", "毘売", "ヒメ", "ひめ"],
+                   "en": ["hime"]},
+    "Q140588571": {"ja": ["彦", "日子", "比古", "毘古", "ヒコ", "ひこ"],
+                   "en": ["hiko"]},
+}
+
+
 def load_honorifics():
-    """[(qid, [ja forms...], [romaji forms...])] — live, so new honorifics self-register."""
-    rows = sparql(f"""
-    SELECT ?h ?ja ?jaAlias ?en ?enAlias WHERE {{
-      ?h wdt:P31 wd:{HONORIFIC_CLASS} .
-      OPTIONAL {{ ?h rdfs:label ?ja      FILTER(LANG(?ja) = "ja") }}
-      OPTIONAL {{ ?h skos:altLabel ?jaAlias FILTER(LANG(?jaAlias) = "ja") }}
-      OPTIONAL {{ ?h rdfs:label ?en      FILTER(LANG(?en) = "en") }}
-      OPTIONAL {{ ?h skos:altLabel ?enAlias FILTER(LANG(?enAlias) = "en") }}
-    }}""")
-    acc = {}
-    for r in rows:
-        q = r["h"]["value"].split("/")[-1]
-        ja, en = acc.setdefault(q, (set(), set()))
-        for k in ("ja", "jaAlias"):
-            if k in r:
-                ja.add(r[k]["value"])
-        for k in ("en", "enAlias"):
-            if k in r:
-                en.add(r[k]["value"])
+    """[(qid, [ja forms...], [romaji forms...])] from the hardcoded table.
+
+    No Wikidata query. Rendaku variants are derived, not stored.
+    """
     out = []
-    for q, (ja, en) in acc.items():
-        # Strip the leading particle/hyphen used in the item labels (の命, -hime)
-        ja_forms = {f.lstrip("の-").strip() for f in ja if f.strip(" の-")}
-        en_forms = {f.lstrip("-").strip() for f in en if f.strip(" -")}
-        # Rendaku: the attached form voices its initial consonant. hime -> bime,
-        # hiko -> biko, kami -> gami. Emma listed bime/-bime/" bime" as forms that
-        # must count. Kanji are unaffected (姫 is still 姫, only the reading voices),
-        # so this applies to the romaji and to kana forms.
+    for q, forms in HONORIFIC_FORMS.items():
+        ja_forms = set(forms["ja"])
+        en_forms = set(forms["en"])
         for f in list(en_forms):
-            en_forms |= rendaku_variants(f)
+            en_forms |= rendaku_variants(f)          # hime -> bime
         for f in list(ja_forms):
-            if not re.search(r"[一-龯]", f):     # kana-only forms voice too
-                ja_forms |= {kana_rendaku(f)}
+            if not re.search(r"[一-龯]", f):          # kana voices; kanji does not
+                ja_forms.add(kana_rendaku(f))        # ヒメ -> ビメ
         # longest-first so 大御神 wins over 大神, and 大明神 over 明神
-        if ja_forms:
-            out.append((q, sorted(ja_forms, key=len, reverse=True),
-                        sorted(en_forms, key=len, reverse=True)))
+        out.append((q, sorted(ja_forms, key=len, reverse=True),
+                    sorted(en_forms, key=len, reverse=True)))
     return out
 
 
@@ -286,7 +310,7 @@ def derive_from_english(en_label, en_form_index, all_en_forms):
 
 
 def main():
-    print("loading honorifics (live — new ones self-register)...")
+    print("loading honorifics (HARDCODED — see HONORIFIC_FORMS; the items are never queried)...")
     honorifics = load_honorifics()
     for q, ja, en in honorifics:
         print(f"  {q:12} ja={ja}  romaji={en}")
