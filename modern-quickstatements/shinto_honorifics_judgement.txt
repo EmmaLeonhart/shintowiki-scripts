@@ -3,12 +3,11 @@
 #  The extent that we're not able to is the extent, probably, that I'm going
 #  to be able to make judgement calls."
 #
-# 58 cases.
+# 56 cases.
 
 Q10932592	ja=湍津姫	en=Tagitsuhime	romaji not derivable — en label carries an unseparated suffix
 Q10933447	ja=大事忍男神	en=Oogotooshionokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q10933447	ja=大事忍男神	en=Oogotooshionokami	romaji not derivable — en label carries an unseparated suffix
-Q10935047	ja=大屋津姫命・枛津姫命	en=Oyatsuhime and Tsumatsuhime	COMPOUND — item covers 2+ kami; no single short name
 Q10940674	ja=天稚彦	en=Ame no Wakahiko	romaji not derivable — en label carries an unseparated suffix
 Q10940723	ja=ウワハル・シタハル	en=Uwaharu and Shitaharu	COMPOUND — item covers 2+ kami; no single short name
 Q10948069	ja=宗像三女神	en=Three Goddesses of Munakata	GROUP — 神 is the noun, not a suffix
@@ -23,7 +22,6 @@ Q11307233	ja=下照姫	en=Shitateruhime	romaji not derivable — en label carrie
 Q11318771	ja=ツヌグイ・イクグイ	en=Tsunugui and Ikugui	COMPOUND — item covers 2+ kami; no single short name
 Q11326733	ja=ハヤアキツヒコ・ハヤアキツヒメ	en=Hayaakitsuhiko and Hayaakitsuhime	COMPOUND — item covers 2+ kami; no single short name
 Q11358323	ja=三鬼大権現	en=Sanki Daigongen	romaji not derivable — en label carries an unseparated suffix
-Q11442793	ja=天神・国神	en=Amatsukami and Kunitsukami	COMPOUND — item covers 2+ kami; no single short name
 Q11573853	ja=瑜伽大権現	en=Yuga Daigongen	romaji not derivable — en label carries an unseparated suffix
 Q11574224	ja=甕速日神	en=Mikahayahi-no-Mikoto	ja says 神 (Q140588460); en says a different honorific (Q140588459)
 Q11581794	ja=直毘神	en=Naobinokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
