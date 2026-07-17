@@ -1,39 +1,26 @@
-'''Tenman Tenjingu''' (天満天神宮) is a {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine}} in {{ill|Japan|ab|Иапониа|abstract|Q17|ace|Jeupang|ady|Японие|af|Japan|als|Japan|alt|Јопон|am|ጃፓን|ami|Ripon|an|Chapón|ang|Iapan|anp|जापान|ar|اليابان|arc|ܝܦܢ|ary|الجاپون|arz|اليابان|as|জাপান|ast|Xapón|atj|Japan|av|Япония|avk|Nipona|awa|जापान|ay|Nihun|az|Yaponiya|azb|ژاپون|ba|Япония|ban|Jepang|bar|Japan|bat_smg|Japuonėjė|bbc|Japang|bcl|Hapon|bdr|Gipun|be|Японія|be_x_old|Японія|bew|Jepang|bg|Япония|bh|जापान|bi|Japan|bjn|Japang|blk|ဂျပန်ခမ်းထီ|bm|Japan|bn|জাপান|bo|ཉི་ཧོང་།|bpy|জাপান|br|Japan|bs|Japan|btm|Jepang|bug|ᨍᨛᨄ|bxr|Япон Улас|ca|Japó|cbk_zam|Japón|cdo|Nĭk-buōng|ce|Ипнойчоь|ceb|Hapon|ch|Chapan|chr|ᏣᏩᏂᏏ|chy|Japan|ckb|ژاپۆن|co|Giappone|crh|Japon|cs|Japonsko|csb|Japòńskô|cu|Ꙗпѡнїꙗ|cv|Япони|cy|Japan|da|Japan|dag|Japan|de|Japan|din|Japan|diq|Japonya|dsb|Japańska|dtp|Jepun|dty|जापान|dv|ޖަޕާނު|dz|ཇ་པཱན|ee|Japan|el|Ιαπωνία|eml|Giapòṅ|eo|Japanio|es|Japón|et|Jaapan|eu|Japonia|ext|Japón|fa|ژاپن|ff|Japan|fi|Japani|fiu_vro|Jaapan|fj|Japani|fo|Japan|fr|Japon|frp|Japon|frr|Jaapan|fur|Gjapon|fy|Japan|ga|An tSeapáin|gag|Yaponiya|gan|日本|gcr|Japon|gd|An Iapan|gl|Xapón|glk|ژاپؤن|gn|Hapõ|gom|जपान|gor|Japangi|got|𐌾𐌰𐍀𐌰𐌽|gu|જાપાન|guw|Japan|gv|Yn Çhapaan|ha|Japan|hak|Ngi̍t-pún|haw|Iāpana|he|יפן|hi|जापान|hif|Japan|hr|Japan|hsb|Japanska|ht|Japon|hu|Japán|hy|Ճապոնիա|hyw|Ճափոն|ia|Japon|iba|Jipun|id|Jepang|ie|Japan|ig|Japan|igl|Japan|ik|Nippan|ilo|Hapon|inh|Японехье|io|Japonia|is|Japan|it|Giappone|iu|ᔭᐹᓐ|ja|日本|jam|Japan|jbo|pongu'e|jv|Jepang|ka|იაპონია|kaa|Yaponiya|kab|Yapan|kaj|Ja̱pan|kbd|Япон|kbp|Sapɔŋ|kcg|Ja̱pan|kg|Japan|kge|Jopang|ki|Japan|kk|Жапония|km|ជប៉ុន|kn|ಜಪಾನ್|knc|Japan|ko|일본|koi|Ниппон|krc|Джапония|ks|جاپان|ksh|Japan|ku|Japon|kv|Япония|kw|Nihon|ky|Жапония|la|Iaponia|lad|Japon|lb|Japan|lbe|Япония|lez|Япония|lfn|Nion|lg|Japan|li|Japan|lij|Giappon|lld|Iapan|lmo|Giapon|ln|Zapɔ́|lo|ປະເທດຍີ່ປຸ່ນ|lt|Japonija|ltg|Japoneja|lv|Japāna|mad|Jeppang|mai|जापान|map_bms|Jepang|mdf|Японмастор|mg|Japàna|mhr|Японий|mi|Nipono|min|Japang|mk|Јапонија|ml|ജപ്പാൻ|mn|Япон|mni|ꯖꯄꯥꯟ|mr|जपान|mrj|Япони|ms|Jepun|mt|Ġappun|mwl|Japon|my|ဂျပန်နိုင်ငံ|myv|Япония Мастор|mzn|جاپون|nap|Giappone|nds|Japan|nds_nl|Japan|ne|जापान|new|जापान|nia|Jepang|nl|Japan|nn|Japan|no|Japan|nov|Japan|nqo|ߗ߭ߊߔߐ߲߫|nr|Japane|nrm|Japon|nso|Japane|nv|Binááʼádaałtsʼózí Dineʼé Bikéyah|ny|Japan|oc|Japon|olo|Japounii|om|Jaappaan|or|ଜାପାନ|os|Япон|pa|ਜਪਾਨ|pag|Hapon|pam|Hapon|pap|Hapon|pcd|Japon|pcm|Japan|pdc|Japan|pfl|Japan|pl|Japonia|pms|Giapon|pnb|جاپان|pnt|Ιαπωνία|ps|جاپان|pt|Japão|pwn|Dripun|qu|Hapun|rm|Giapun|rmy|Japan|rn|Yapon|ro|Japonia|roa_rup|Japonia|roa_tara|Giappone|ru|Япония|rue|Японія|rw|Ubuyapani|sa|जपान्|sah|Дьоппуон|sat|ᱡᱟᱯᱟᱱ|sc|Giapone|scn|Giappuni|sco|Japan|sd|جاپان|se|Jáhpan|sg|Zapöo|sh|Japan|shn|မိူင်းၵျႃႇပၢၼ်ႇ|si|ජපානය|simple|Japan|sk|Japonsko|skr|جاپان|sl|Japonska|sm|Iapani|smn|Jaapaan|sn|Japani|so|Jabaan|sq|Japonia|sr|Јапан|srn|Japan|ss|IJapani|st|Japane|stq|Japan|su|Jepang|sv|Japan|sw|Japani|syl|ꠎꠣꠙꠣꠘ|szl|Japůńijo|szy|Zipun|ta|யப்பான்|tay|Gipun|tcy|ಜಪಾನ್|tdd|ᥛᥫᥒᥰ ᥓᥣᥱ ᥙᥣᥢᥱ|te|జపాన్|tet|Japaun|tg|Ҷопон|th|ประเทศญี่ปุ่น|ti|ጃፓን|tig|ጃፓን|tk|Ýaponiýa|tl|Hapon|tly|Japonijə|tn|Japan|to|Siapani|tok|ma Nijon|tpi|Siapan|tr|Japonya|trv|Tanah Tunux|ts|Japani|tt|Япония|tum|Japan|tw|Japan|ty|Tāpōnē|tyv|Япония|udm|Япония|ug|ياپونىيە|uk|Японія|ur|جاپان|uz|Yaponiya|ve|Japan|vec|Japon|vep|Japonii|vi|Nhật Bản|vls|Japan|vo|Yapän|wa|Djapon|war|Hapon|wo|Sapoŋ|wuu|日本|xal|Ниxуудин Нутг|xh|IJapani|xmf|იაპონია|yi|יאפאן|yo|Japan|za|Nyiedbonj|zea|Japan|zgh|ⵏⵉⴱⵓⵏ|zh|日本|zh_classical|日本|zh_min_nan|Ji̍t-pún|zh_yue|日本|zu|IJaphani|qid=Q17|lt=Japan}} ({{ill|Tenmangū|en|Tenmangū|qid=Q798838|lt=Tenmangu}}). There are 11 {{ill|Religious corporation|ja|宗教法人|lt=Religious corporations}} with this name.
+'''Tenman Tenjingu''' (天満天神宮) is a [[Shinto shrine]] in [[Japan]] ([[Tenmangū|Tenmangu]]). There are 11 [[Religious corporation|Religious corporations]] with this name.
 
-* {{ill|Tenman Tenjingu (Ichikawa City)|ja|天満天神宮 (市川市)}} - A shrine located at the site of the former Ōno Castle in Ōnocho, Ichikawa City, Chiba Prefecture, and is an outer shrine of {{ill|Honkō-ji Temple|ja|本光寺 (市川市)|12=simple|13=User:Immanuelle/Honkōji|comment=changed title based on wikidata|qid=Q11519862}}. It is not a religious corporation.
-* {{ill|Tenman Tenjingu (Minobu Town)|ja|天満天神宮 (身延町)}} – Located in Koseki, Minobu Town, Nanko District, Yamanashi Prefecture.
-* {{ill|Tenman Tenjingu (Shimada City)|ja|天満天神宮 (島田市)}} – Located in Itachi, Shimada City, Shizuoka Prefecture.
-* {{ill|Tenman Tenjingu (Nishiizu Town)|ja|天満天神宮 (西伊豆町)}} – Located in Naka, Nishiizu Town, Kamo District, Shizuoka Prefecture.
-* {{ill|Tenman Tenjingu (Ōzu City)|ja|天満天神宮 (大洲市)}} – Located in Narunouko, Ōzu City, Ehime Prefecture.
-* {{ill|Tenman Tenjingu (Odate, Kochi City)|ja|天満天神宮 (高知市尾立)}} – Located in Odate, Kochi City, Kochi Prefecture.
-* {{ill|Tenman Tenjingu (Fukuicho, Kochi City)|ja|天満天神宮 (高知市福井町)}} – Located in Fukuicho, Kochi City, Kochi Prefecture.
-* {{ill|Tenman Tenjingu (Asai, Tosa City)|ja|天満天神宮 (土佐市浅井)}} – Located in Asai, Tosa City, Kochi Prefecture.
-* {{ill|Tenman Tenjingu (Yōishi, Tosa City)|ja|天満天神宮 (土佐市用石)}} – Located in Yōishi, Tosa City, Kochi Prefecture.
-* {{ill|Tenman Tenjingu (Inocho, Edagawa Ikedani)|ja|天満天神宮 (いの町枝川池ノ谷)}} – Located in Ikeno, Edagawa, Inocho, Kochi Prefecture.
-* {{ill|Tenman Tenjingu (Inocho, Edagawa Fujigase)|ja|天満天神宮 (いの町枝川藤ヶ瀬)}} – Located in Fujigase, Edagawa, Inocho, Kochi Prefecture.
-* {{ill|Tenman Tenjingu (Hidaka Village)|ja|天満天神宮 (日高村)}} – Located in Motomura, Hidaka Village, Takaoka District, Kochi Prefecture.
+* [[Tenman Tenjingu (Ichikawa City)]] - A shrine located at the site of the former Ōno Castle in Ōnocho, Ichikawa City, Chiba Prefecture, and is an outer shrine of [[Honkō-ji Temple]]. It is not a religious corporation.
+* [[Tenman Tenjingu (Minobu Town)]] – Located in Koseki, Minobu Town, Nanko District, Yamanashi Prefecture.
+* [[Tenman Tenjingu (Shimada City)]] – Located in Itachi, Shimada City, Shizuoka Prefecture.
+* [[Tenman Tenjingu (Nishiizu Town)]] – Located in Naka, Nishiizu Town, Kamo District, Shizuoka Prefecture.
+* [[Tenman Tenjingu (Ōzu City)]] – Located in Narunouko, Ōzu City, Ehime Prefecture.
+* [[Tenman Tenjingu (Odate, Kochi City)]] – Located in Odate, Kochi City, Kochi Prefecture.
+* [[Tenman Tenjingu (Fukuicho, Kochi City)]] – Located in Fukuicho, Kochi City, Kochi Prefecture.
+* [[Tenman Tenjingu (Asai, Tosa City)]] – Located in Asai, Tosa City, Kochi Prefecture.
+* [[Tenman Tenjingu (Yōishi, Tosa City)]] – Located in Yōishi, Tosa City, Kochi Prefecture.
+* [[Tenman Tenjingu (Inocho, Edagawa Ikedani)]] – Located in Ikeno, Edagawa, Inocho, Kochi Prefecture.
+* [[Tenman Tenjingu (Inocho, Edagawa Fujigase)]] – Located in Fujigase, Edagawa, Inocho, Kochi Prefecture.
+* [[Tenman Tenjingu (Hidaka Village)]] – Located in Motomura, Hidaka Village, Takaoka District, Kochi Prefecture.
 
 == Related Items ==
-* {{ill|Tenmangū|en|Tenmangū|qid=Q798838|lt=Tenmangū}}
-* {{ill|Tenjinsha|ja|天神社 (曖昧さ回避)|lt=Tenjin Shrine (disambiguation)}}
-* {{ill|Q16279400|ja|北野神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Kitano Shrine (disambiguation)|comment=changed title based on wikidata|qid=Q16279400}}
-* {{ill|Kitano Tenjinsha (Tokorozawa)|ja|北野天神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Kitano Tenjinsha|ja_comment=jawiki redirects to 北野天神社|comment=changed title based on wikidata|qid=Q11404275}}
+* [[Tenmangū]]
+* [[Tenjinsha|Tenjin Shrine (disambiguation)]]
+* [[Kitano Shrine (disambiguation)]]
+* [[Kitano Tenjinsha (Tokorozawa)]]
 
 {{disambiguation}}
 
-{{disambiguation}}
-
-== Shrines with this name ==
-
-* {{ill|Tenman-tenjingū (Q21653691)|lt=Tenman-tenjingū|qid=Q21653691}} — Ichikawa
-* {{ill|Tenmantenjingū Shrine (Q134957415)|lt=Tenmantenjingū Shrine|qid=Q134957415}} — Shimada
-* {{ill|天満天神宮 (Q134957888)|lt=天満天神宮|qid=Q134957888}} — Nishiizu
-
-{{translated page|ja|天満天神宮|version=103665817|comment=Imported full ja history}}
-
-{{wikidata link|Q65259223|ja|天満天神宮|check_date=2026-05-26}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:Tenjin (kami)]]
-[[Category:Wikidata has short description]]
-[[Category:Independently git synced pages]]
