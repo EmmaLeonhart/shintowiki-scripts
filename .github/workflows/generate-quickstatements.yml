@@ -29,18 +29,29 @@ jobs:
       - name: Fetch P11250 from wiki
         working-directory: modern-quickstatements
         run: python fetch_p11250_from_wiki.py
+        # Miraheze has anti-DDoS 403'd the runner since ~2026-07-11
+        # (docs/wiki_403_audit_2026-07-11.md). This is a MIRAHEZE fetch; Wikidata
+        # is a different service and must not die with it. Hard-failing here killed
+        # generate-quickstatements, which killed cleanup-loop, which never called
+        # direct-daily-edits — so the Wikidata drip has made no edit since
+        # 2026-07-02. On failure the committed .txt stays as the fallback, exactly
+        # as generate-pages.yml already does for its artifacts.
+        continue-on-error: true
 
       - name: Fetch P6262 from wiki
         working-directory: modern-quickstatements
         run: python fetch_p6262_from_wiki.py
+        continue-on-error: true
 
       - name: Fetch en-labels from wiki
         working-directory: modern-quickstatements
         run: python fetch_en_labels_from_wiki.py
+        continue-on-error: true
 
       - name: Fetch category-label-prefix fixes from wiki
         working-directory: modern-quickstatements
         run: python fetch_category_label_fixes_from_wiki.py
+        continue-on-error: true
 
       - name: Resolve + generate 同上 address fixes
         working-directory: modern-quickstatements
