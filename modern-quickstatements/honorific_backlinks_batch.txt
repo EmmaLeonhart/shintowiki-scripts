@@ -1,0 +1,81 @@
+# Shinto honorific backlinks (P1035 honorific suffix) — annotated 2026-07-17.
+# Each line: <kami>|P1035|<honorific>. Comment shows kami ja (en) -> honorific.
+# QuickStatements ignores # comment lines; the executable lines are unchanged.
+
+# === Ōmikami (Q140588456) — 3 backlink(s) ===
+Q506610|P1035|Q140588456    # 味耜高彦根神 (Ajisukitakahikone) -> Ōmikami
+Q455602|P1035|Q140588456    # 天照大神 (Amaterasu) -> Ōmikami
+Q2983724|P1035|Q140588456    # トヨウケビメ (Toyōke Ōmikami) -> Ōmikami
+
+# === Ōkami (Q140588457) — 3 backlink(s) ===
+Q10881556|P1035|Q140588457    # 五十猛神 (Isotakeru) -> Ōkami
+Q10892534|P1035|Q140588457    # 火雷大神 (Yakusanoikazuchi) -> Ōkami
+Q10936701|P1035|Q140588457    # 大物主神 (Ōmononushi) -> Ōkami
+
+# === no Mikoto (Q140588459) — 3 backlink(s) ===
+Q10016750|P1035|Q140588459    # 天目一箇神 (Ame no Mahitotsu no kami) -> no Mikoto
+Q1051960|P1035|Q140588459    # 彦火火出見尊 (Hoori) -> no Mikoto
+Q1056017|P1035|Q140588459    # 天津彦彦火瓊瓊杵尊 (Ninigi) -> no Mikoto
+
+# === Kami (Q140588460) — 3 backlink(s) ===
+Q10016750|P1035|Q140588460    # 天目一箇神 (Ame no Mahitotsu no kami) -> Kami
+Q10731425|P1035|Q140588460    # 鳥之石楠船神 (Tori no Iwakusufune no Kami) -> Kami
+Q1073925|P1035|Q140588460    # シナツヒコ (Shinatsuhiko) -> Kami
+
+# === sama (Q140588461) — 3 backlink(s) ===
+Q138340350|P1035|Q140588461    # 蛇王権現 () -> sama
+Q3028663|P1035|Q140588461    # 年神 (Toshigami) -> sama
+Q3137449|P1035|Q140588461    # 水神 (Suijin) -> sama
+
+# === Daimyōjin (Q140588462) — 3 backlink(s) ===
+Q11088804|P1035|Q140588462    # 春日権現 (Kasuga Gongen) -> Daimyōjin
+Q112368210|P1035|Q140588462    # 九頭大明神 (Kuzu Daimyōjin) -> Daimyōjin
+Q11666654|P1035|Q140588462    # 飯縄権現 (Izuna Gongen) -> Daimyōjin
+
+# === Myōjin (Q140588463) — 3 backlink(s) ===
+Q11088805|P1035|Q140588463    # 春日神 (Kasuga no Kami) -> Myōjin
+Q11666654|P1035|Q140588463    # 飯縄権現 (Izuna Gongen) -> Myōjin
+Q135431411|P1035|Q140588463    # 駒形大神 (Komagata Ōkami) -> Myōjin
+
+# === Gongen (Q140588464) — 3 backlink(s) ===
+Q10514059|P1035|Q140588464    # 蔵王権現 (Zaō Gongen) -> Gongen
+Q1101132|P1035|Q140588464    # 愛宕権現 (Atago Gongen) -> Gongen
+Q11088804|P1035|Q140588464    # 春日権現 (Kasuga Gongen) -> Gongen
+
+# === Daigongen (Q140588804) — 3 backlink(s) ===
+Q1101132|P1035|Q140588804    # 愛宕権現 (Atago Gongen) -> Daigongen
+Q11358323|P1035|Q140588804    # 三鬼大権現 (Sanki Daigongen) -> Daigongen
+Q11380566|P1035|Q140588804    # 伊豆山権現 (Izusan Gongen) -> Daigongen
+
+# === Bosatsu (Q140588807) — 3 backlink(s) ===
+Q471696|P1035|Q140588807    # 文殊菩薩 (Mañjuśrī) -> Bosatsu
+Q2368271|P1035|Q140588807    # 安立行菩薩 (Supratisthitacaritra) -> Bosatsu
+Q17039583|P1035|Q140588807    # 無尽意菩薩 (Akṣayamati) -> Bosatsu
+
+# === Myōō (Q140588818) — 11 backlink(s) ===
+Q337624|P1035|Q140588818    # 不動明王 (Acala) -> Myōō
+Q532825|P1035|Q140588818    # 降三世明王 (Trailokyavijaya) -> Myōō
+Q667619|P1035|Q140588818    # 烏枢沙摩明王 (Ucchuṣma) -> Myōō
+Q915141|P1035|Q140588818    # 孔雀明王 (Mahāmāyūrī) -> Myōō
+Q1064734|P1035|Q140588818    # 軍荼利明王 (Kuṇḍali) -> Myōō
+Q1188900|P1035|Q140588818    # 愛染明王 (Rāgarāja) -> Myōō
+Q1348317|P1035|Q140588818    # 大威徳明王 (Yamantaka) -> Myōō
+Q9864262|P1035|Q140588818    # 大元帥明王 (Āṭavaka) -> Myōō
+Q11372282|P1035|Q140588818    # 五大明王 (Five Wisdom Kings) -> Myōō
+Q11646516|P1035|Q140588818    # 金剛夜叉明王 (Vajrayakṣa) -> Myōō
+Q17004306|P1035|Q140588818    # 馬頭観音 (Hayagriva) -> Myōō
+
+# === Daibutsu (Q140588465) — 2 backlink(s) ===
+Q11526469|P1035|Q140588465    # 東大寺盧舎那仏像 (Tōdai-ji Daibutsu) -> Daibutsu
+Q12366269|P1035|Q140588465    # 高徳院阿弥陀如来像 (Great Buddha of Kamakura) -> Daibutsu
+
+# === hime (Q140588570) — 3 backlink(s) ===
+Q10891903|P1035|Q140588570    # 八上比売 (Ya kami hime) -> hime
+Q10932592|P1035|Q140588570    # 湍津姫 (Tagitsuhime) -> hime
+Q10932870|P1035|Q140588570    # 田心姫 (Takiribime) -> hime
+
+# === hiko (Q140588571) — 3 backlink(s) ===
+Q1051960|P1035|Q140588571    # 彦火火出見尊 (Hoori) -> hiko
+Q10731395|P1035|Q140588571    # 火闌降命 (Hosuseri) -> hiko
+Q1073925|P1035|Q140588571    # シナツヒコ (Shinatsuhiko) -> hiko
+
