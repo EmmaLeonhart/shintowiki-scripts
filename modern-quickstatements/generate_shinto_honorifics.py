@@ -145,6 +145,15 @@ def load_honorifics():
         # Strip the leading particle/hyphen used in the item labels (の命, -hime)
         ja_forms = {f.lstrip("の-").strip() for f in ja if f.strip(" の-")}
         en_forms = {f.lstrip("-").strip() for f in en if f.strip(" -")}
+        # Rendaku: the attached form voices its initial consonant. hime -> bime,
+        # hiko -> biko, kami -> gami. Emma listed bime/-bime/" bime" as forms that
+        # must count. Kanji are unaffected (姫 is still 姫, only the reading voices),
+        # so this applies to the romaji and to kana forms.
+        for f in list(en_forms):
+            en_forms |= rendaku_variants(f)
+        for f in list(ja_forms):
+            if not re.search(r"[一-龯]", f):     # kana-only forms voice too
+                ja_forms |= {kana_rendaku(f)}
         # longest-first so 大御神 wins over 大神, and 大明神 over 明神
         if ja_forms:
             out.append((q, sorted(ja_forms, key=len, reverse=True),
@@ -196,13 +205,60 @@ def qs_escape(s):
     return s.replace('"', '\\"')
 
 
-# A separator before the romaji honorific is load-bearing. "Sarutahiko Ōkami" has
-# one, so Ōkami is a word and stripping it gives "Sarutahiko". "Sarutahiko" alone
-# merely *ends in* "hiko"; stripping that gives "Saruta", which is exactly the
-# "it reads wrong" failure Emma warned about (2026-07-16). So:
-#   - honorific derivation ALLOWS an unseparated suffix (Konohanasakuyahime -> hime)
-#   - romaji derivation REQUIRES a separator, else we omit rather than invent.
-_SEP = r"[\s\-–—·'’]+"
+# The suffix may be attached with NO separator at all. Emma 2026-07-16, on
+# Konohanasakuyahime (Q1781862):
+#
+#   "So it ends with 'hime' in the english version, that means instant label.
+#    hime stripped is 'Konohanasakuya' which is the short name. '-hime' would
+#    also count, as would ' hime' or ' Hime' or 'bime' or '-bime' or ' bime' or
+#    a variety of other ones"
+#
+# An earlier version REQUIRED a separator, to stop "Sarutahiko" stripping to
+# "Saruta". That was over-cautious and wrong: it dropped Konohanasakuyahime (and
+# 25 others) into the judgement file for no reason. Sarutahiko is simply the odd
+# one out — "Sarutahiko is a special case just ignore him" — and he is in
+# EXCLUDED, which is the right way to handle one exception. The general case
+# strips unseparated and is correct: 天稚彦 / "Ame no Wakahiko" -> 天稚 / "Ame no
+# Waka".
+_SEP = r"[\s\-–—·'’]*"
+
+# Rendaku: the suffix's initial consonant voices when attached. 姫 hime -> bime
+# (コノハナサクヤビメ), 彦 hiko -> biko, 神 kami -> gami (大神 ōkami -> ōgami).
+# Emma listed "bime"/"-bime"/" bime" as forms that must count.
+_RENDAKU = {"h": "b", "k": "g", "s": "z", "t": "d", "f": "b", "ts": "z", "ch": "j", "sh": "j"}
+
+
+def rendaku_variants(form):
+    """{form, voiced form} — the romaji forms a suffix can take when attached."""
+    out = {form}
+    low = form.lower()
+    for src, dst in sorted(_RENDAKU.items(), key=lambda kv: -len(kv[0])):
+        if low.startswith(src):
+            out.add(dst + form[len(src):])
+            break
+    return out
+
+
+# Kana rendaku: the first kana takes dakuten. ひめ -> びめ, ヒメ -> ビメ,
+# かみ -> がみ. Hiragana and katakana both, since aliases use either
+# (コノハナサクヤビメ is katakana).
+_KANA_VOICED = {
+    "は": "ば", "ひ": "び", "ふ": "ぶ", "へ": "べ", "ほ": "ぼ",
+    "か": "が", "き": "ぎ", "く": "ぐ", "け": "げ", "こ": "ご",
+    "さ": "ざ", "し": "じ", "す": "ず", "せ": "ぜ", "そ": "ぞ",
+    "た": "だ", "ち": "ぢ", "つ": "づ", "て": "で", "と": "ど",
+    "ハ": "バ", "ヒ": "ビ", "フ": "ブ", "ヘ": "ベ", "ホ": "ボ",
+    "カ": "ガ", "キ": "ギ", "ク": "グ", "ケ": "ゲ", "コ": "ゴ",
+    "サ": "ザ", "シ": "ジ", "ス": "ズ", "セ": "ゼ", "ソ": "ゾ",
+    "タ": "ダ", "チ": "ヂ", "ツ": "ヅ", "テ": "デ", "ト": "ド",
+}
+
+
+def kana_rendaku(form):
+    """びめ from ひめ — voice the leading kana. Returns form unchanged if not kana."""
+    if form and form[0] in _KANA_VOICED:
+        return _KANA_VOICED[form[0]] + form[1:]
+    return form
 
 
 def derive_from_english(en_label, en_form_index, all_en_forms):
@@ -224,11 +280,8 @@ def derive_from_english(en_label, en_form_index, all_en_forms):
         return None, None
     for ef in all_en_forms:                              # longest romaji form first
         m = re.search(rf"{_SEP}{re.escape(ef)}\s*$", en_label, re.I)
-        if m:
+        if m and m.start() > 0:                          # must leave a name behind
             return en_form_index.get(ef.lower()), en_label[: m.start()].strip(" -·")
-    for ef in all_en_forms:                              # unseparated => honorific only
-        if re.search(rf"{re.escape(ef)}\s*$", en_label, re.I) and len(en_label) > len(ef):
-            return en_form_index.get(ef.lower()), None
     return None, en_label                                # already bare
 
 
@@ -290,10 +343,16 @@ def main():
         if not short_ja:
             continue
 
-        # MULTIPLE honorifics: a kami can carry several, inferred from the ja label,
-        # its ja aliases, AND the English name (Emma 2026-07-16: "You should be able
-        # to programmatically derive the honorifics from the English name when there
-        # is an English name"). Each source contributes its own longest match.
+        # MULTIPLE honorifics, from the ja label + ja ALIASES + the en label. A kami
+        # genuinely carries every honorific its attested names use.
+        #
+        # Emma 2026-07-16 talked herself through this one live: "Konohanasakuyahime
+        # does not have any mikoto ... She only has Hime as an honorific" — then,
+        # seeing her own alias 木花咲耶媛命: "Okay nvm she does". So aliases DO count.
+        # 姫 from the label, 命 from 木花咲耶媛命, 神 from 木華開耶姫神 are all real.
+        #
+        # ja and en are independent sources for the SAME answer, not a conjunction:
+        # "if it's in English, you don't need to do it in Japanese".
         honorific_qids = {hq}
         for alias in k["aliases"]:
             ahq, _ = longest_match(alias)
