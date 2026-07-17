@@ -16,12 +16,25 @@ Emma 2026-07-16:
     "transliteration or transcription (P2440) with the romaji is a qualifier to be
      put on the short name"
 
-WHAT IT EMITS, per kami whose ja label ends in a known honorific:
+STAGE 1 OF TWO. This file emits ONLY the honorific:
 
     <kami>|P1035|<honorific item>
-    <kami>|P1813|ja:"<ja label minus the honorific>"|P2440|"<romaji minus the honorific>"
-    <kami>|P21|Q24238356          # ONLY if the kami has no P21 at all
-    <kami>|P569|novalue           # ONLY if the kami has no P569 at all
+
+The short name, gender and date of birth are STAGE 2
+(generate_shinto_short_names.py), which runs off the P1035 this stage lands.
+Emma 2026-07-16:
+
+    "The way our query system should work, just to be clear, is that we add the
+     honorifics based off of the simple process. Once we have finished, a
+     secondary query thing queries the [kami] that has the honorific suffixes and
+     then adds in the short name, the gender, the date of birth, all that stuff.
+     In this sense, it's a stateful thing where the short name isn't even added
+     until the honorific is known."
+
+That is also the repo's standing shape — CLAUDE.md: "Add-first, remove-later via
+SPARQL (two scripts, never one) ... script 2 only acts on items where a fresh
+SPARQL query *confirms the add already landed*." Stage 2 strips the honorific the
+item actually CARRIES, rather than re-deriving a guess in the same pass.
 
 THE SUFFIX SET IS HARDCODED — see HONORIFIC_FORMS below. Emma 2026-07-16:
 
@@ -359,14 +372,6 @@ def main():
             continue
         matched += 1
 
-        # ONE short name, from the label — Emma: "There's going to be one short
-        # name regardless of how many honorifics there are."
-        # の/ノ is a particle: part of the LABEL, not part of the name, and often
-        # implied (Emma 2026-07-16). Strip it.
-        short_ja = ja_label[: -len(form)].rstrip("のノ乃之・ ")
-        if not short_ja:
-            continue
-
         # MULTIPLE honorifics, from the ja label + ja ALIASES + the en label. A kami
         # genuinely carries every honorific its attested names use.
         #
@@ -382,7 +387,7 @@ def main():
             ahq, _ = longest_match(alias)
             if ahq:
                 honorific_qids.add(ahq)
-        en_hq, romaji = derive_from_english(k["en"], en_form_index, all_en_forms)
+        en_hq, _romaji = derive_from_english(k["en"], en_form_index, all_en_forms)
         if en_hq and en_hq != hq:
             # ja and en name DIFFERENT honorifics (Q11574224: ja 甕速日神 vs en
             # "Mikahayahi-no-Mikoto"). Measured at 18/274. Emma 2026-07-16: "the
@@ -397,22 +402,10 @@ def main():
             if qid not in have_p1035:
                 lines.append(f"{qid}|P1035|{h}")
 
-        # romaji comes from derive_from_english() — English label only, never
-        # transliterated. May legitimately be None (unseparated suffix).
-        if romaji:
-            lines.append(f'{qid}|P1813|ja:"{qs_escape(short_ja)}"|P2440|"{qs_escape(romaji)}"')
-        else:
-            lines.append(f'{qid}|P1813|ja:"{qs_escape(short_ja)}"')
-
-        # ADD-ONLY: never clobber a real gender / date (Emma: "only where absent")
-        if not k["has_p21"]:
-            lines.append(f"{qid}|P21|{UNKNOWN}")
-        if not k["has_p569"]:
-            lines.append(f"{qid}|P569|novalue")
-
-        if not romaji and k["en"]:
-            judgement.append((qid, ja_label, k["en"],
-                              "romaji not derivable — en label carries an unseparated suffix"))
+        # STAGE 1 ENDS HERE. Short name / P21 / P569 are stage 2
+        # (generate_shinto_short_names.py), which reads the P1035 these lines land.
+        # Emma: "it's a stateful thing where the short name isn't even added until
+        # the honorific is known."
 
     with open(OUTFILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
