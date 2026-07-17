@@ -298,6 +298,21 @@ def kana_rendaku(form):
     return form
 
 
+def _strip_particle(s):
+    """Drop a TRAILING romaji particle, mirroring the ja side's のノ乃之 strip.
+
+    The ja short name already drops the particle ("田の神" -> "田"), but the romaji
+    did not, so the same kami came out as "Ta-no". Measured at 51/299 (17%) —
+    the single biggest accuracy defect in the detector:
+        Ta-no-Kami             -> "Ta-no"          -> "Ta"
+        Mikahayahi-no-Mikoto   -> "Mikahayahi-no"  -> "Mikahayahi"
+        Kaya no hime           -> "Kaya no"        -> "Kaya"
+    TRAILING only — "Ame no Waka" and "Ame-no-hi-no-mitama" keep their internal
+    particles, which are part of the name.
+    """
+    return re.sub(r"[-\s·]+no\s*$", "", (s or "").strip(), flags=re.I).strip(" -·")
+
+
 def derive_from_english(en_label, en_form_index, all_en_forms):
     """(honorific_qid | None, romaji | None) from the English label alone.
 
@@ -318,8 +333,8 @@ def derive_from_english(en_label, en_form_index, all_en_forms):
     for ef in all_en_forms:                              # longest romaji form first
         m = re.search(rf"{_SEP}{re.escape(ef)}\s*$", en_label, re.I)
         if m and m.start() > 0:                          # must leave a name behind
-            return en_form_index.get(ef.lower()), en_label[: m.start()].strip(" -·")
-    return None, en_label                                # already bare
+            return en_form_index.get(ef.lower()), _strip_particle(en_label[: m.start()])
+    return None, _strip_particle(en_label)               # already bare
 
 
 def main():
