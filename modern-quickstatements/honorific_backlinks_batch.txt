@@ -79,3 +79,28 @@ Q1051960|P1035|Q140588571    # 彦火火出見尊 (Hoori) -> hiko
 Q10731395|P1035|Q140588571    # 火闌降命 (Hosuseri) -> hiko
 Q1073925|P1035|Q140588571    # シナツヒコ (Shinatsuhiko) -> hiko
 
+
+# === Nyorai / 如来 (Q17052684) — 22 backlink(s). Added 2026-07-17 (Emma). ===
+# Buddhist honorific suffix (Tathāgata), shinbutsu-shūgō. ja label/alias verified to end in 如来.
+Q17193861|P1035|Q17052684    # ヴァイローチャナ (Birushana Buddha)
+Q597586|P1035|Q17052684    # 不空成就如来 (Amoghasiddhi)
+Q1815876|P1035|Q17052684    # 多宝如来 (Prabhutaratna)
+Q239847|P1035|Q17052684    # 大日如来 (Vairocana)
+Q17232542|P1035|Q17052684    # 大通智勝如来 (Daitsuuchishou Nyorai)
+Q65259482|P1035|Q17052684    # 天鼓雷音如来 (Divyadundubhimeghanirghoṣa)
+Q30929208|P1035|Q17052684    # 宝幢如来 (Ratnaketu)
+Q855742|P1035|Q17052684    # 宝生如来 (Ratnasambhava)
+Q193461|P1035|Q17052684    # 弥勒菩薩 (Maitreya)
+Q118189130|P1035|Q17052684    # 法身普賢 (Samantabhadrarāja)
+Q11569196|P1035|Q17052684    # 熾盛光仏頂 (Prajvalosnisa)
+Q11644537|P1035|Q17052684    # 釈迦如来 (Shakyamuni Tathāgata)
+Q65291670|P1035|Q17052684    # 開敷華王如来 (Saṃkusumitarāja)
+Q236242|P1035|Q17052684    # 阿弥陀如来 (Amitābha Buddha)
+Q756612|P1035|Q17052684    # 阿閦如来 (Akshobhya)
+Q265911|P1035|Q17052684    # 五智如来 (Five Tathagatas)  [!] GROUP (Five Tathāgatas)
+Q52083745|P1035|Q17052684    # 於竹大日如来 (Otake Dainichi Nyorai)  [!] folk deification (P31=human) — arguable
+Q18683181|P1035|Q17052684    # 薬師如来 (Buddha of Medicine Bhaishajyaguru)  [!] duplicate of Q854773 薬師如来 on WD
+Q854773|P1035|Q17052684    # 薬師如来 (Bhaiṣajyaguru Buddha)  [!] has dup Q18683181
+Q11628333|P1035|Q17052684    # 西方寺 (Saihō-ji Temple)  [!] TEMPLE (如来 only an alias) — drop in QS if unwanted
+Q9441|P1035|Q17052684    # 釈迦 (The Buddha)  [!] historical Buddha (dup of Q11644537 釈迦如来) — drop if unwanted
+Q108618315|P1035|Q17052684    # 関如来 (Seki Nyorai)  [!] P31=human — arguable, drop if unwanted

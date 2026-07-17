@@ -193,6 +193,13 @@ HONORIFIC_FORMS = {
                    "en": ["Myōō", "Myoo"]},
     "Q140588465": {"ja": ["大仏", "ダイブツ", "だいぶつ"],
                    "en": ["Daibutsu"]},
+    # Emma 2026-07-17: Nyorai / 如来 (Tathāgata). Buddhist honorific suffix on
+    # Buddhas in shinbutsu-shūgō (阿弥陀如来, 薬師如来, 大日如来 …). Uses the general
+    # 如来 concept item Q17052684 as the P1035 VALUE (Emma's choice) — the item
+    # itself is NOT queried, only the QID is used, so no P31 edit to it is needed.
+    # No 大如来 in use, so no longest-match pair.
+    "Q17052684": {"ja": ["如来", "ニョライ", "にょらい"],
+                  "en": ["Nyorai"]},
     "Q140588570": {"ja": ["姫", "媛", "比売", "毘売", "ヒメ", "ひめ"],
                    "en": ["hime"]},
     "Q140588571": {"ja": ["彦", "日子", "比古", "毘古", "ヒコ", "ひこ"],
