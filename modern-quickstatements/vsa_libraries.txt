@@ -1,0 +1,16 @@
+CREATE
+LAST|Len|"Nengo"
+LAST|Den|"Python library for simulating large-scale neural models (Neural Engineering Framework)"
+LAST|P31|Q188860
+LAST|P277|Q28865
+LAST|P856|"https://www.nengo.ai/"
+LAST|P1324|"https://github.com/nengo/nengo"
+CREATE
+LAST|Len|"torchhd"
+LAST|Den|"open-source Python library for hyperdimensional computing and vector symbolic architectures built on PyTorch"
+LAST|P31|Q188860
+LAST|P277|Q28865
+LAST|P1547|Q47509047
+LAST|P2283|Q119039775
+LAST|P2283|Q139039577
+LAST|P1324|"https://github.com/hyperdimensional-computing/torchhd"

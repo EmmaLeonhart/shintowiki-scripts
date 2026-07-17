@@ -1,0 +1,81 @@
+name: Create Items (gated batches)
+
+# Emma 2026-07-16: "this is a real task that I'm actually trying to get the shinto
+# wiki scripts to run a month from now ... like a scheduled edit thing that runs a
+# month from now." And, on being told the drip cannot create items: "Different
+# thing that creates them."
+#
+# So this is a SEPARATE workflow from the drip. It is the ONLY thing in the repo
+# that can create a Wikidata item — everything to date (37 papers, ~104 authors,
+# 15 honorifics) Emma ran by hand, because the QuickStatements toolforge API is
+# permanently dead and direct_daily_edits.py has no wbeditentity/new=item path.
+#
+# Runs daily and is a NO-OP until a batch's own gate opens (vsa_libraries:
+# 2026-08-16). Daily rather than one-shot so a failed run simply retries; the
+# state file makes re-runs harmless.
+#
+# Safety, each earned from a real 2026-07-16 failure:
+#   - check-exists-first: never create a label that already exists with the same
+#     P31 (this is what the 18% duplicate rate was made of)
+#   - idempotent: created QIDs recorded in <batch>.state; a second run creates
+#     nothing
+#   - fails closed: gate error / login failure / an existence check that cannot
+#     answer all abort rather than create
+#
+# --apply is explicit. Without it the script is a dry run.
+
+on:
+  schedule:
+    # 09:37 UTC — off the :00 herd, clear of generate-pages/monthly-sweep (07:23)
+    # and the ontology census (08:41 on the 1st).
+    - cron: "37 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: create-items
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Create items from gated batches
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python create_items.py --batch vsa_libraries.txt --apply
+
+      - name: Commit the state file
+        run: |
+          if git diff --quiet -- modern-quickstatements/*.state; then
+            echo "No state change — gate shut, or nothing new created."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modern-quickstatements/*.state
+          git commit -m "create_items: record created QIDs [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && break
+            echo "push attempt $i failed; retrying"
+            sleep $((i * 5))
+          done
