@@ -149,6 +149,15 @@ LANGS = [
       phonetic. English-gloss labels (no romaji reading) get CJK only, never a
       phonetically-mangled transliteration.</p>"""),
 
+    ("honorific_labels", "Shinto honorifics (all langs)", "神号", "🎌", """\
+      <p>Multi-language labels for <strong>Shinto honorifics</strong>
+      (<code>P31 Q137169543</code>) — the suffixes attached to kami names
+      (大神 Ōkami, 大御神 Ōmikami, の命 no Mikoto, 権現 Gongen, 明神 Myōjin,
+      大明神 Daimyōjin, 大仏 Daibutsu, さま sama, 姫 -hime, 彦 -hiko). Same
+      bare-name transliteration as the kami pipeline via
+      <code>translit_common</code>. Read live from the honorific class, so a new
+      honorific item is picked up with no code change. No <code>mul</code>.</p>"""),
+
     ("shrine_rank_labels", "Shrine ranks (all langs)", "社格", "🏵️", """\
       <p>Labels for the <strong>shrine ranks</strong> (社格) — Kanpei Taisha, Ichinomiya,
       Myōjin Taisha, … (<code>P31 Q10444029</code>). Bare-term transliteration; Korean
