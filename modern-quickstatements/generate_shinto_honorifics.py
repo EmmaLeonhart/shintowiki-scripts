@@ -124,6 +124,11 @@ EXCLUDED = {
     # Emma 2026-07-16: "Sarutahiko is a special case just ignore him... he just
     # has a weird name." (猿田彦 ends in 彦, which is itself an honorific.)
     "Q3090037",    # 猿田彦神 — Sarutahiko
+    # Emma 2026-07-16: "Just omit the 3 group labels." Groups whose trailing 神 is
+    # the plain noun, not a suffix — surfaced by the accuracy audit.
+    "Q11455406",   # 家宅六神 — Katakurokushin (six deities)
+    "Q65249011",   # 八十神 — "Eighty Gods"
+    "Q140446061",  # 大山三所権現 — Three Deities of Mount Daisen
 }
 
 
