@@ -26,6 +26,23 @@
 #   * QuickStatements v1 syntax, same as the atomic files. A leading "-" is a
 #     removal.
 #
-# No executable lines yet — the mechanism is live but idle until pairs are added
-# here (list-membership removals, the Takano address removes, the Awa entry-3
-# delete, etc.). Adding those data lines is a separate, deliberate step.
+# ---------------------------------------------------------------------------
+# Emma's inbound-links fix (2026-07-17). MOVED HERE from the atomic drip.
+#
+# WHY IT MOVED: the atomic drip is `random.sample(all_lines, 300)` over a
+# ~105,000-line pool, so a 2-line file had a ~0.28%/day chance of being drawn —
+# an expected wait of roughly a YEAR. That is fine for a 400-line backlog and
+# useless for a 2-line fix Emma actually wants landed. This channel runs one
+# line/day in strict order, so these land on the next two runs.
+#
+# WHAT THEY DO: her papers already carry P50 -> Q140568964, the PRE-MERGE
+# REDIRECT. WDQS does not traverse a redirect in statement position, so
+# `?w wdt:P50 wd:Q140568870` returns 0 and every notability query (including
+# anything run at RfD) sees an author item with no papers. Verified still 0 on
+# 2026-07-17. These take her from 0 inbound papers to 2.
+#
+# ADD-ONLY, as Emma approved. The stale P50 -> Q140568964 statements are NOT
+# removed here; that pass is now trivially safe to sequence below these two
+# whenever she wants it, since the cursor confirms a line landed before moving on.
+Q140568717|P50|Q140568870|P1545|"1"
+Q140568719|P50|Q140568870|P1545|"1"
