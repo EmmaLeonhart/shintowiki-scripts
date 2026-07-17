@@ -179,6 +179,13 @@ HONORIFIC_FORMS = {
     # now beats 権現, exactly as 大明神 beats 明神.
     "Q140588804": {"ja": ["大権現", "ダイゴンゲン", "だいごんげん"],
                    "en": ["Daigongen"]},
+    # Emma 2026-07-16: "we need bosatsu and daibosatsu too". Buddhist honorifics
+    # on kami (shinbutsu-shugo) — 八幡大菩薩 is the classic. 大菩薩 is its own item,
+    # so longest-match strips it before 菩薩.
+    "Q140588807": {"ja": ["菩薩", "ボサツ", "ぼさつ"],
+                   "en": ["Bosatsu"]},
+    "Q140588808": {"ja": ["大菩薩", "ダイボサツ", "だいぼさつ"],
+                   "en": ["Daibosatsu"]},
     "Q140588465": {"ja": ["大仏", "ダイブツ", "だいぶつ"],
                    "en": ["Daibutsu"]},
     "Q140588570": {"ja": ["姫", "媛", "比売", "毘売", "ヒメ", "ひめ"],
