@@ -27,6 +27,7 @@ import time
 import requests
 
 import conflict_gate
+import sutra_gate
 
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = USER_AGENT
@@ -83,6 +84,7 @@ ATOMIC_FILES = [
     "en_labels_sonnet.txt",
     "category_label_fixes.txt",
     "doujou_address_fixes.txt",
+    "sutra_profile.txt",                      # Emma 2026-07-16: "you should actually run this autonomously... a daily one edit... at a random point in our edit scheme". The Sutra item (Q140570154) + her researcher item (Q140568870) from wikidata-review/sutra-and-profile-quickstatements.txt. Capped to 1 line/day below and gated by sutra_gate.py (2-week settle from 2026-07-30 + her "#if this one is unmolested" existence check on Q140570154). Her ⚠ UNSURE social-media block (LinkedIn/X/GitHub/Substack) is deliberately EXCLUDED — she held it for a strategic descriptor discussion that has not happened.
     "address_citation_backfill.txt",
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",
@@ -131,6 +133,11 @@ ATOMIC_FILES = [
 # fixes/day, randomly interspersed, no separate queue).
 FILE_DAILY_CAPS = {
     "description_label_pairs.txt": 100,
+    # Emma 2026-07-16: "a daily one edit to the entry or one of the quick statements
+    # ... at a random point in our edit scheme". ONE line/day, deliberately: the
+    # Sutra/profile page is built up slowly rather than landing as a single
+    # self-promotional burst (sutra-page-plan.md). Gated by sutra_gate on top.
+    "sutra_profile.txt": 1,
 }
 # Description ADDS are capped until January 2027 so descriptions don't become
 # the dominant edit type while other backlogs drain (Emma 2026-07-07); the cap
@@ -217,6 +224,14 @@ def read_all_lines():
     for filepath in ATOMIC_FILES:
         if not os.path.exists(filepath):
             continue
+        if filepath == "sutra_profile.txt":
+            # Two extra gates: the 2-week settle, and Emma's "#if this one is
+            # unmolested" existence check on the Sutra item. Fails closed.
+            ok, why = sutra_gate.is_open()
+            if not ok:
+                print(f"  sutra_profile.txt SKIPPED — {why}")
+                continue
+            print(f"  sutra_profile.txt {why}")
         with open(filepath, "r", encoding="utf-8") as f:
             file_lines = [l.strip() for l in f if l.strip()]
         cap = FILE_DAILY_CAPS.get(filepath)
