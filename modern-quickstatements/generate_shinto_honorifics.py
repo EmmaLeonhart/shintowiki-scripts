@@ -237,30 +237,24 @@ def main():
                 return hq, form
         return None, None
 
-    # A ja label ending in 神 is not always an honorific: 宗像三女神 is "the three
-    # goddesses of Munakata" — a GROUP, where 神 is the plain noun. Emitting P1035
-    # on those is wrong. Refuse the group/plural shapes and send them to Emma's
-    # review file instead of the drip.
-    GROUP_MARKERS = ("三女神", "二神", "三神", "五神", "七神", "八神", "諸神", "神々")
-    # Some items cover TWO kami in one label (大屋津姫命・枛津姫命 = "Ōyatsuhime and
-    # Tsumatsuhime"; 天神・国津神 = "Amatsukami and Kunitsukami"). Stripping the
-    # trailing honorific off those yields a garbage short name — "大屋津姫命・枛津姫",
-    # "天神・国". There is no single short name to give, so refuse outright.
-    COMPOUND_JA = ("・", "、", "／", "/", "＆", "&")
-    COMPOUND_EN = (" and ", " & ")
+    # NO HARDCODED NAME BLOCKLIST. Emma 2026-07-16: "both of those should not be
+    # instances of kami or subtypes so they should not play a role" / "we're
+    # running into issues with these hard code bans".
+    #
+    # A group or a pair is not a kami, so P31 is the gate — and it is the gate we
+    # already ask Wikidata for. Fixing the data removes the item from scope with no
+    # code change (she proved it: Q11442793 lost its P31, Q10935047 became
+    # P31="duo", and both vanished from this batch on the next run). A hardcoded
+    # label ban is the wrong layer: it would keep banning an item after its data was
+    # corrected, and would ban a legitimate kami that happens to contain ・ or 三神.
+    #
+    # The only structural refusal kept is below: a label that leaves NO short name
+    # after the honorific is stripped. That is arithmetic, not a name list.
 
     lines, matched = [], 0
     judgement = []          # residue: Emma's calls, never auto-emitted
     for qid, k in sorted(kami.items()):
         ja_label = k["ja"]
-        if any(m in ja_label for m in GROUP_MARKERS):
-            judgement.append((qid, ja_label, k["en"], "GROUP — 神 is the noun, not a suffix"))
-            continue
-        if any(c in ja_label for c in COMPOUND_JA) or \
-           any(c in (k["en"] or "").lower() for c in COMPOUND_EN):
-            judgement.append((qid, ja_label, k["en"],
-                              "COMPOUND — item covers 2+ kami; no single short name"))
-            continue
         hq, form = longest_match(ja_label)
         if not hq:
             continue
