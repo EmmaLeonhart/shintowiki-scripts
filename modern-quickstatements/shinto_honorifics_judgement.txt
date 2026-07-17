@@ -1,0 +1,65 @@
+# Honorific inference — cases needing Emma's judgement. NOT auto-emitted.
+# Emma 2026-07-16: "we'll be able to almost get it out of almost all of them.
+#  The extent that we're not able to is the extent, probably, that I'm going
+#  to be able to make judgement calls."
+#
+# 58 cases.
+
+Q10932592	ja=湍津姫	en=Tagitsuhime	romaji not derivable — en label carries an unseparated suffix
+Q10933447	ja=大事忍男神	en=Oogotooshionokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q10933447	ja=大事忍男神	en=Oogotooshionokami	romaji not derivable — en label carries an unseparated suffix
+Q10935047	ja=大屋津姫命・枛津姫命	en=Oyatsuhime and Tsumatsuhime	COMPOUND — item covers 2+ kami; no single short name
+Q10940674	ja=天稚彦	en=Ame no Wakahiko	romaji not derivable — en label carries an unseparated suffix
+Q10940723	ja=ウワハル・シタハル	en=Uwaharu and Shitaharu	COMPOUND — item covers 2+ kami; no single short name
+Q10948069	ja=宗像三女神	en=Three Goddesses of Munakata	GROUP — 神 is the noun, not a suffix
+Q11059454	ja=市杵島姫	en=Ichikishimahime	romaji not derivable — en label carries an unseparated suffix
+Q11073597	ja=オオトノヂ・オオトノベ	en=Ōtonoji and Ōtonobe	COMPOUND — item covers 2+ kami; no single short name
+Q11110848	ja=栲幡千千姫	en=Takuhadachijihime	romaji not derivable — en label carries an unseparated suffix
+Q11120574	ja=椎根津彦	en=Shiinetsuhiko	romaji not derivable — en label carries an unseparated suffix
+Q1114013	ja=住吉三神	en=Sumiyoshi sanjin	GROUP — 神 is the noun, not a suffix
+Q11152535	ja=オモダル・アヤカシコネ	en=Omodaru and Ayakashikone	COMPOUND — item covers 2+ kami; no single short name
+Q11287276	ja=イワサク・ネサク	en=Iwasaku and Nesaku	COMPOUND — item covers 2+ kami; no single short name
+Q11307233	ja=下照姫	en=Shitateruhime	romaji not derivable — en label carries an unseparated suffix
+Q11318771	ja=ツヌグイ・イクグイ	en=Tsunugui and Ikugui	COMPOUND — item covers 2+ kami; no single short name
+Q11326733	ja=ハヤアキツヒコ・ハヤアキツヒメ	en=Hayaakitsuhiko and Hayaakitsuhime	COMPOUND — item covers 2+ kami; no single short name
+Q11358323	ja=三鬼大権現	en=Sanki Daigongen	romaji not derivable — en label carries an unseparated suffix
+Q11442793	ja=天神・国神	en=Amatsukami and Kunitsukami	COMPOUND — item covers 2+ kami; no single short name
+Q11573853	ja=瑜伽大権現	en=Yuga Daigongen	romaji not derivable — en label carries an unseparated suffix
+Q11574224	ja=甕速日神	en=Mikahayahi-no-Mikoto	ja says 神 (Q140588460); en says a different honorific (Q140588459)
+Q11581794	ja=直毘神	en=Naobinokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q11581794	ja=直毘神	en=Naobinokami	romaji not derivable — en label carries an unseparated suffix
+Q11588867	ja=神大市姫	en=Kamuōichihime	romaji not derivable — en label carries an unseparated suffix
+Q11591203	ja=禍津日神	en=Magatsuhinokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q11591203	ja=禍津日神	en=Magatsuhinokami	romaji not derivable — en label carries an unseparated suffix
+Q11619891	ja=菊理媛神	en=Kikurihime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
+Q11619891	ja=菊理媛神	en=Kikurihime	romaji not derivable — en label carries an unseparated suffix
+Q134862171	ja=闇龗神	en=kuraokaminokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q134862171	ja=闇龗神	en=kuraokaminokami	romaji not derivable — en label carries an unseparated suffix
+Q135493035	ja=草奈井比売神	en=Kusanoi-hime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
+Q136731213	ja=速佐須良比売神	en=Hayasasurahime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
+Q136731213	ja=速佐須良比売神	en=Hayasasurahime	romaji not derivable — en label carries an unseparated suffix
+Q140446059	ja=竜田姫命	en=Tatsuta-hime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
+Q140446076	ja=石鈇大権現	en=Ishibuto Daigongen	romaji not derivable — en label carries an unseparated suffix
+Q140446096	ja=天地人五行神	en=Five Deities of Heaven, Earth, and Man	COMPOUND — item covers 2+ kami; no single short name
+Q140446119	ja=三足比咩命	en=Mitarashi-hime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
+Q17193127	ja=伊勢津彦	en=Isetsuhiko	romaji not derivable — en label carries an unseparated suffix
+Q1781862	ja=木花開耶姫	en=Konohanasakuyahime	romaji not derivable — en label carries an unseparated suffix
+Q3082751	ja=玉依姫	en=Tamayorihime	romaji not derivable — en label carries an unseparated suffix
+Q3090037	ja=猿田彦神	en=Sarutahiko Ōkami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q402052	ja=開拓三神	en=Three Pioneer Kami	GROUP — 神 is the noun, not a suffix
+Q4387856	ja=金山彦神	en=Kanayamahiko	ja says 神 (Q140588460); en says a different honorific (Q140588571)
+Q4387856	ja=金山彦神	en=Kanayamahiko	romaji not derivable — en label carries an unseparated suffix
+Q48750893	ja=天棚機姫神	en=Tanabatabime-no-Mikoto	ja says 神 (Q140588460); en says a different honorific (Q140588459)
+Q505469	ja=奇稲田姫	en=Kushinadahime	romaji not derivable — en label carries an unseparated suffix
+Q555212	ja=阿加流比売神	en=Akaruhime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
+Q555212	ja=阿加流比売神	en=Akaruhime	romaji not derivable — en label carries an unseparated suffix
+Q6378698	ja=三穂津姫	en=Mihotsuhime	romaji not derivable — en label carries an unseparated suffix
+Q643763	ja=アシナヅチ・テナヅチ	en=Ashinazuchi and Tenazuchi	COMPOUND — item covers 2+ kami; no single short name
+Q644201	ja=淤加美神	en=Kuraokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q644201	ja=淤加美神	en=Kuraokami	romaji not derivable — en label carries an unseparated suffix
+Q8191715	ja=須勢理姫神	en=Suseri-hime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
+Q86728307	ja=武居大伴主神	en=Takei-Otomo-no-Ookami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q86728307	ja=武居大伴主神	en=Takei-Otomo-no-Ookami	romaji not derivable — en label carries an unseparated suffix
+Q9090923	ja=ウヒヂニ・スヒヂニ	en=Uhijini and Suhijini	COMPOUND — item covers 2+ kami; no single short name
+Q98082969	ja=八女姫神	en=Yametsuhime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
+Q98082969	ja=八女姫神	en=Yametsuhime	romaji not derivable — en label carries an unseparated suffix
