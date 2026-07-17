@@ -107348,6 +107348,16 @@ Q140478788	Lko	"복취사횡빈시"
 Q140500300	Lko	"해장사"
 # Source: JA "光心寺" (hanja reading)
 Q140500488	Lko	"광심사"
+# Source: JA "石像寺" (hanja reading)
+Q140514592	Lko	"석상사"
+# Source: JA "船玉浦神社" (hanja reading)
+Q140518246	Lko	"선옥포신사"
+# Source: JA "阿久比神社" (hanja reading)
+Q140521466	Lko	"아구비신사"
+# Source: JA "正覚寺" (hanja reading)
+Q140531654	Lko	"정각사"
+# Source: JA "松岡寺" (hanja reading)
+Q140575315	Lko	"송강사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
@@ -109058,8 +109068,8 @@ Q54152966	Lko	"서응사"
 Q54152967	Lko	"동향사"
 # Source: JA "三勝寺" (hanja reading)
 Q54152969	Lko	"삼승사"
-# Source: JA "正覚寺 (刈谷市)" (hanja reading)
-Q54152970	Lko	"정각사예곡시"
+# Source: JA "正覚寺" (hanja reading)
+Q54152970	Lko	"정각사"
 # Source: JA "密蔵院" (hanja reading)
 Q54152971	Lko	"밀장원"
 # Source: JA "地蔵院" (hanja reading)
@@ -109616,6 +109626,8 @@ Q69711222	Lko	"장전사"
 Q698078	Lko	"혈팔번궁"
 # Source: JA "防府天満宮" (hanja reading)
 Q704898	Lko	"방부천만궁"
+# Source: JA "汕頭神社" (hanja reading)
+Q70669245	Lko	"산두신사"
 # Source: JA "津島神社" (hanja reading)
 Q71262821	Lko	"진도신사"
 # Source: JA "水谷川忠起" (hanja reading)
