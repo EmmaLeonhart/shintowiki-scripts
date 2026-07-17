@@ -186,6 +186,11 @@ HONORIFIC_FORMS = {
                    "en": ["Bosatsu"]},
     "Q140588808": {"ja": ["大菩薩", "ダイボサツ", "だいぼさつ"],
                    "en": ["Daibosatsu"]},
+    # Emma 2026-07-16. Wisdom King / Vidyaraja — 不動明王 Fudo Myoo is the classic.
+    # No 大明王 in common use, so no pair. Does not collide with 明神 (Myojin):
+    # different final character, and matching is on the ja form.
+    "Q140588818": {"ja": ["明王", "ミョウオウ", "みょうおう"],
+                   "en": ["Myōō", "Myoo"]},
     "Q140588465": {"ja": ["大仏", "ダイブツ", "だいぶつ"],
                    "en": ["Daibutsu"]},
     "Q140588570": {"ja": ["姫", "媛", "比売", "毘売", "ヒメ", "ひめ"],
