@@ -97,10 +97,10 @@ Q11644537|P1035|Q17052684    # 釈迦如来 (Shakyamuni Tathāgata)
 Q65291670|P1035|Q17052684    # 開敷華王如来 (Saṃkusumitarāja)
 Q236242|P1035|Q17052684    # 阿弥陀如来 (Amitābha Buddha)
 Q756612|P1035|Q17052684    # 阿閦如来 (Akshobhya)
-Q265911|P1035|Q17052684    # 五智如来 (Five Tathagatas)  [!] GROUP (Five Tathāgatas)
+# UNDONE+EXEMPTED by Emma 2026-07-17: Q265911|P1035|Q17052684    # 五智如来 (Five Tathagatas)  [!] GROUP (Five Tathāgatas)
 Q52083745|P1035|Q17052684    # 於竹大日如来 (Otake Dainichi Nyorai)  [!] folk deification (P31=human) — arguable
-Q18683181|P1035|Q17052684    # 薬師如来 (Buddha of Medicine Bhaishajyaguru)  [!] duplicate of Q854773 薬師如来 on WD
+# UNDONE+EXEMPTED by Emma 2026-07-17: Q18683181|P1035|Q17052684    # 薬師如来 (Buddha of Medicine Bhaishajyaguru)  [!] duplicate of Q854773 薬師如来 on WD
 Q854773|P1035|Q17052684    # 薬師如来 (Bhaiṣajyaguru Buddha)  [!] has dup Q18683181
-Q11628333|P1035|Q17052684    # 西方寺 (Saihō-ji Temple)  [!] TEMPLE (如来 only an alias) — drop in QS if unwanted
+# UNDONE+EXEMPTED by Emma 2026-07-17: Q11628333|P1035|Q17052684    # 西方寺 (Saihō-ji Temple)  [!] TEMPLE (如来 only an alias) — drop in QS if unwanted
 Q9441|P1035|Q17052684    # 釈迦 (The Buddha)  [!] historical Buddha (dup of Q11644537 釈迦如来) — drop if unwanted
-Q108618315|P1035|Q17052684    # 関如来 (Seki Nyorai)  [!] P31=human — arguable, drop if unwanted
+# UNDONE+EXEMPTED by Emma 2026-07-17: Q108618315|P1035|Q17052684    # 関如来 (Seki Nyorai)  [!] P31=human — arguable, drop if unwanted

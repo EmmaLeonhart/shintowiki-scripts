@@ -129,6 +129,12 @@ EXCLUDED = {
     "Q11455406",   # 家宅六神 — Katakurokushin (six deities)
     "Q65249011",   # 八十神 — "Eighty Gods"
     "Q140446061",  # 大山三所権現 — Three Deities of Mount Daisen
+    # Emma 2026-07-17: undid these 4 Nyorai (如来) P1035 adds in her QS run —
+    # exempt so the gradual pipeline never re-adds them.
+    "Q265911",     # 五智如来 — Five Tathāgatas (group)
+    "Q11628333",   # 西方寺 — Saihō-ji Temple (如来 is only an alias)
+    "Q108618315",  # 関如来 — Seki Nyorai (P31=human)
+    "Q18683181",   # 薬師如来 — Buddha of Medicine (WD duplicate of Q854773)
 }
 
 
