@@ -1,0 +1,1117 @@
+
+==========================================================================
+KAMI (Q524158) — 370 items — PROPERTIES
+==========================================================================
+property                                          items     cov
+--------------------------------------------------------------------------
+instance of (P31)                                   370  100.0%
+Miraheze article ID (P11250)                        205   55.4%
+sex or gender (P21)                                 182   49.2%
+Google Knowledge Graph ID (P2671)                   175   47.3%
+father (P22)                                        147   39.7%
+name in kana (P1814)                                140   37.8%
+child (P40)                                         107   28.9%
+said to be the same as (P460)                        75   20.3%
+spouse (P26)                                         75   20.3%
+image (P18)                                          71   19.2%
+mother (P25)                                         67   18.1%
+worshipped by (P1049)                                62   16.8%
+Commons category (P373)                              57   15.4%
+part of (P361)                                       56   15.1%
+sibling (P3373)                                      53   14.3%
+Freebase ID (P646)                                   50   13.5%
+Pixiv Encyclopedia ID (P11408)                       29    7.8%
+domain of saint or deity (P2925)                     26    7.0%
+Fandom article ID (P6262)                            25    6.8%
+Encyclopædia Britannica Online ID (P1417)            21    5.7%
+Japan Search name ID (P6698)                         20    5.4%
+Namuwiki ID (P8885)                                  18    4.9%
+present in work (P1441)                              18    4.9%
+significant place (P7153)                            16    4.3%
+residence (P551)                                     16    4.3%
+Personality Database profile ID (P10757)             15    4.1%
+relative (P1038)                                     14    3.8%
+has part(s) (P527)                                   13    3.5%
+partner in business or sport (P1327)                 13    3.5%
+honorific suffix (P1035)                             11    3.0%
+different from (P1889)                               10    2.7%
+Library of Congress Authorities ID (P244)             9    2.4%
+occupation (P106)                                     9    2.4%
+Online PWN Encyclopedia ID (P7305)                    8    2.2%
+J9U entity ID (P8189)                                 8    2.2%
+VIAF cluster ID (P214)                                7    1.9%
+native label (P1705)                                  7    1.9%
+participant in (P1344)                                7    1.9%
+manner of death (P1196)                               7    1.9%
+incarnation of (P3701)                                7    1.9%
+family (P53)                                          6    1.6%
+location (P276)                                       6    1.6%
+World History Encyclopedia ID (P9000)                 6    1.6%
+‎Yale LUX ID (P13591)                                 6    1.6%
+depicted by (P1299)                                   6    1.6%
+position held (P39)                                   6    1.6%
+place of burial (P119)                                6    1.6%
+participated in conflict (P607)                       6    1.6%
+name in native language (P1559)                       6    1.6%
+Interlingual Index ID (P5063)                         5    1.4%
+WordNet 3.1 Synset ID (P8814)                         5    1.4%
+NDL Authority ID (P349)                               5    1.4%
+NicoNicoPedia ID (P6900)                              5    1.4%
+killed by (P157)                                      5    1.4%
+country of citizenship (P27)                          5    1.4%
+named after (P138)                                    4    1.1%
+FAST ID (P2163)                                       4    1.1%
+‎Shinmei database ID (P14391)                         4    1.1%
+parent (P8810)                                        4    1.1%
+described by source (P1343)                           3    0.8%
+GND ID (P227)                                         3    0.8%
+CERL Thesaurus ID (P1871)                             3    0.8%
+WorldCat Entities ID (P10832)                         3    0.8%
+country (P17)                                         3    0.8%
+Quora topic ID (P3417)                                3    0.8%
+Lex ID (P8313)                                        3    0.8%
+iconographic symbol (P4185)                           3    0.8%
+‎Genbu.net ID (P13930)                                3    0.8%
+place of birth (P19)                                  3    0.8%
+date of birth (P569)                                  3    0.8%
+‎Encyclopedia of Shinto ID (P13991)                   3    0.8%
+described at URL (P973)                               3    0.8%
+appears in the form of (P4675)                        3    0.8%
+Dharma Drum Institute of Liberal Arts person I        2    0.5%
+time of earliest written record (P1249)               2    0.5%
+ethnic group (P172)                                   2    0.5%
+Larousse ID (P6058)                                   2    0.5%
+De Agostini ID (P6706)                                2    0.5%
+JAANUS ID (P9080)                                     2    0.5%
+armament (P520)                                       2    0.5%
+unmarried partner (P451)                              2    0.5%
+cause of death (P509)                                 2    0.5%
+Gran Enciclopèdia Catalana ID (P12385)                2    0.5%
+official website (P856)                               2    0.5%
+Gran Enciclopèdia Catalana ID (former scheme)         2    0.5%
+IxTheo authority ID (P10553)                          2    0.5%
+museum-digital person/organization ID (P12597)        2    0.5%
+significant event (P793)                              2    0.5%
+date of death (P570)                                  2    0.5%
+languages spoken, written or signed (P1412)           2    0.5%
+has part(s) of the class (P2670)                      2    0.5%
+indigenous to (P2341)                                 2    0.5%
+notable work (P800)                                   2    0.5%
+place of death (P20)                                  2    0.5%
+Art & Architecture Thesaurus ID (P1014)               1    0.3%
+National Library of Latvia ID (P1368)                 1    0.3%
+work location (P937)                                  1    0.3%
+enemy (P7047)                                         1    0.3%
+McClintock and Strong Biblical Cyclopedia ID (        1    0.3%
+facet of (P1269)                                      1    0.3%
+mount (P3091)                                         1    0.3%
+noble title (P97)                                     1    0.3%
+floruit (P1317)                                       1    0.3%
+Encyclopædia Universalis ID (P3219)                   1    0.3%
+Treccani's Enciclopedia Italiana ID (P4223)           1    0.3%
+derivative work (P4969)                               1    0.3%
+Giant Bomb ID (former scheme) (P5247)                 1    0.3%
+Great Russian Encyclopedia portal ID (P11514)         1    0.3%
+Vikidia article ID (P12800)                           1    0.3%
+Bibliothèque nationale de France ID (P268)            1    0.3%
+IdRef ID (P269)                                       1    0.3%
+Rodovid ID (P1185)                                    1    0.3%
+OmegaWiki Defined Meaning (P1245)                     1    0.3%
+nickname (P1449)                                      1    0.3%
+Getty Iconography Authority ID (P5986)                1    0.3%
+Kokugakuin University Digital Museum entry ID         1    0.3%
+Treccani ID (P3365)                                   1    0.3%
+Encyclopedia Mythica ID (P12450)                      1    0.3%
+topic's main category (P910)                          1    0.3%
+subclass of (P279)                                    1    0.3%
+RISM ID (P5504)                                       1    0.3%
+superhuman feature or ability (P2563)                 1    0.3%
+facial hair (P8852)                                   1    0.3%
+DDB person (GND) ID (P13049)                          1    0.3%
+coordinate location (P625)                            1    0.3%
+JTA Sightseeing Database ID (P12907)                  1    0.3%
+creator (P170)                                        1    0.3%
+voice actor (P725)                                    1    0.3%
+possessed by spirit (P4292)                           1    0.3%
+medical condition (P1050)                             1    0.3%
+BabelNet ID (P2581)                                   1    0.3%
+image of grave (P1442)                                1    0.3%
+owner of (P1830)                                      1    0.3%
+member of the crew of (P5096)                         1    0.3%
+shrine ranking (P13723)                               1    0.3%
+applies to jurisdiction (P1001)                       1    0.3%
+military branch (P241)                                1    0.3%
+used by (P1535)                                       1    0.3%
+distribution map (P1846)                              1    0.3%
+given name (P735)                                     1    0.3%
+web feed URL (P1019)                                  1    0.3%
+based on (P144)                                       1    0.3%
+
+==========================================================================
+KAMI (Q524158) — QUALIFIERS, BY THE PROPERTY THEY QUALIFY
+==========================================================================
+
+Miraheze article ID (P11250)  — 312 qualified statements
+    MediaWiki page ID (P9675)                                312
+
+Fandom article ID (P6262)  — 102 qualified statements
+    language of work or name (P407)                           34
+    subject named as (P1810)                                  34
+    MediaWiki page ID (P9675)                                 34
+
+part of (P361)  — 78 qualified statements
+    series ordinal (P1545)                                    27
+    follows (P155)                                            26
+    followed by (P156)                                        25
+
+child (P40)  — 71 qualified statements
+    mother (P25)                                              43
+    father (P22)                                              16
+    sourcing circumstances (P1480)                            12
+
+relative (P1038)  — 48 qualified statements
+    kinship to subject (P1039)                                42
+    family relationship degree (P4500)                         6
+
+position held (P39)  — 40 qualified statements
+    start time (P580)                                          8
+    end time (P582)                                            8
+    replaced by (P1366)                                        8
+    end cause (P1534)                                          8
+    replaces (P1365)                                           6
+    nature of statement (P5102)                                2
+
+Encyclopædia Britannica Online ID (P1417)  — 36 qualified statements
+    subject named as (P1810)                                  36
+
+native label (P1705)  — 35 qualified statements
+    name in kana (P1814)                                      19
+    revised Hepburn romanization (P2125)                      15
+    IPA transcription (P898)                                   1
+
+said to be the same as (P460)  — 23 qualified statements
+    criterion used (P1013)                                    16
+    statement supported by (P3680)                             6
+    Wikimedia import URL (P4656)                               1
+
+partner in business or sport (P1327)  — 17 qualified statements
+    affiliation (P1416)                                       17
+
+image (P18)  — 7 qualified statements
+    media legend (P2096)                                       7
+
+father (P22)  — 7 qualified statements
+    sourcing circumstances (P1480)                             7
+
+NDL Authority ID (P349)  — 6 qualified statements
+    alternative name (P4970)                                   4
+    subject named as (P1810)                                   1
+    name in kana (P1814)                                       1
+
+Treccani's Enciclopedia Italiana ID (P4223)  — 6 qualified statements
+    publication date (P577)                                    2
+    subject named as (P1810)                                   2
+    author name string (P2093)                                 2
+
+has part(s) (P527)  — 5 qualified statements
+    series ordinal (P1545)                                     5
+
+Library of Congress Authorities ID (P244)  — 5 qualified statements
+    subject named as (P1810)                                   3
+    alternative name (P4970)                                   2
+
+name in kana (P1814)  — 5 qualified statements
+    applies to name of subject (P5168)                         3
+    reason for preferred rank (P7452)                          2
+
+name in native language (P1559)  — 5 qualified statements
+    name in kana (P1814)                                       2
+    revised Hepburn romanization (P2125)                       2
+    writing system (P282)                                      1
+
+nickname (P1449)  — 4 qualified statements
+    name in kana (P1814)                                       2
+    revised Hepburn romanization (P2125)                       2
+
+instance of (P31)  — 4 qualified statements
+    applies to work (P10663)                                   2
+    has part(s) of the class (P2670)                           1
+    reason for preferred rank (P7452)                          1
+
+De Agostini ID (P6706)  — 3 qualified statements
+    subject named as (P1810)                                   3
+
+described by source (P1343)  — 3 qualified statements
+    statement is subject of (P805)                             2
+    page(s) (P304)                                             1
+
+J9U entity ID (P8189)  — 2 qualified statements
+    subject named as (monolingual text) (P14457)               2
+
+honorific suffix (P1035)  — 2 qualified statements
+    series ordinal (P1545)                                     2
+
+spouse (P26)  — 2 qualified statements
+    reason for deprecated rank (P2241)                         2
+
+cause of death (P509)  — 2 qualified statements
+    armament (P520)                                            2
+
+shrine ranking (P13723)  — 2 qualified statements
+    determination method or standard (P459)                    2
+
+domain of saint or deity (P2925)  — 1 qualified statements
+    applies to part (P518)                                     1
+
+Kokugakuin University Digital Museum entry ID (P13677)  — 1 qualified statements
+    section (P958)                                             1
+
+Treccani ID (P3365)  — 1 qualified statements
+    subject named as (P1810)                                   1
+
+significant place (P7153)  — 1 qualified statements
+    object of statement has role (P3831)                       1
+
+Encyclopedia Mythica ID (P12450)  — 1 qualified statements
+    subject named as (P1810)                                   1
+
+incarnation of (P3701)  — 1 qualified statements
+    statement supported by (P3680)                             1
+
+parent (P8810)  — 1 qualified statements
+    sourcing circumstances (P1480)                             1
+
+possessed by spirit (P4292)  — 1 qualified statements
+    has characteristic (P1552)                                 1
+
+official website (P856)  — 1 qualified statements
+    language of work or name (P407)                            1
+
+has part(s) of the class (P2670)  — 1 qualified statements
+    quantity (P1114)                                           1
+
+==========================================================================
+SHINTO SHRINE (Q845945) — 30,979 items — PROPERTIES
+==========================================================================
+property                                          items     cov
+--------------------------------------------------------------------------
+instance of (P31)                                30,979  100.0%
+located in the administrative territorial enti   30,023   96.9%
+country (P17)                                    29,968   96.7%
+street address (P6375)                           27,455   88.6%
+Corporate Number (Japan) (P3225)                 23,634   76.3%
+postal code (P281)                               20,733   66.9%
+coordinate location (P625)                       17,045   55.0%
+legal form (P1454)                               16,690   53.9%
+official name (P1448)                            16,379   52.9%
+dedicated to (P825)                              11,802   38.1%
+name in kana (P1814)                              9,302   30.0%
+shrine ranking (P13723)                           8,182   26.4%
+image (P18)                                       6,013   19.4%
+part of (P361)                                    5,560   17.9%
+Kokugakuin University Digital Museum entry ID     5,101   16.5%
+Commons category (P373)                           3,864   12.5%
+Miraheze article ID (P11250)                      3,663   11.8%
+Google Knowledge Graph ID (P2671)                 3,293   10.6%
+said to be the same as (P460)                     2,968    9.6%
+religious order (P611)                            2,876    9.3%
+inception (P571)                                  1,143    3.7%
+official website (P856)                           1,088    3.5%
+Tripadvisor ID (P3134)                            1,003    3.2%
+Japanese court rank (P14005)                        923    3.0%
+architectural style (P149)                          808    2.6%
+described by source (P1343)                         789    2.5%
+OpenCorporates company ID (P1320)                   706    2.3%
+image of entrance (P9721)                           606    2.0%
+VIAF cluster ID (P214)                              497    1.6%
+Fandom article ID (P6262)                           479    1.5%
+NDL Authority ID (P349)                             462    1.5%
+Instagram username (P2003)                          443    1.4%
+has part(s) (P527)                                  407    1.3%
+Facebook username (P2013)                           377    1.2%
+OpenStreetMap way ID (P10689)                       365    1.2%
+Freebase ID (P646)                                  332    1.1%
+location (P276)                                     295    1.0%
+native label (P1705)                                284    0.9%
+heritage designation (P1435)                        255    0.8%
+Japan Search name ID (P6698)                        231    0.7%
+X (Twitter) username (P2002)                        222    0.7%
+located in/on physical feature (P706)               216    0.7%
+day in year for periodic occurrence (P837)          202    0.7%
+has part(s) of the class (P2670)                    199    0.6%
+mother house (P612)                                 193    0.6%
+religion or worldview (P140)                        193    0.6%
+founder (P112)                                      192    0.6%
+adjacent structure or building (P3032)              131    0.4%
+OpenStreetMap node ID (P11693)                      120    0.4%
+located in or next to body of water (P206)          112    0.4%
+Library of Congress Authorities ID (P244)           107    0.3%
+time of earliest written record (P1249)             107    0.3%
+different from (P1889)                               97    0.3%
+YouTube channel ID (P2397)                           95    0.3%
+described at URL (P973)                              92    0.3%
+Google Maps Customer ID (P3749)                      89    0.3%
+YouTube handle (P11245)                              87    0.3%
+official blog URL (P1581)                            80    0.3%
+named after (P138)                                   80    0.3%
+museum-digital place ID (P9957)                      75    0.2%
+Threads username (P11892)                            74    0.2%
+applies to jurisdiction (P1001)                      74    0.2%
+area (P2046)                                         68    0.2%
+phone number (P1329)                                 68    0.2%
+parent organization or unit (P749)                   68    0.2%
+NACSIS-CAT author ID (P271)                          65    0.2%
+CiNii Research ID (P11496)                           64    0.2%
+image of interior (P5775)                            60    0.2%
+Namuwiki ID (P8885)                                  58    0.2%
+topic's main category (P910)                         55    0.2%
+social media followers (P8687)                       53    0.2%
+significant event (P793)                             52    0.2%
+GeoNames ID (P1566)                                  50    0.2%
+nighttime view (P3451)                               50    0.2%
+panoramic view (P4291)                               50    0.2%
+plaque image (P1801)                                 47    0.2%
+owner of (P1830)                                     47    0.2%
+Kulturenvanteri monument ID (P11729)                 44    0.1%
+winter view (P5252)                                  42    0.1%
+location of formation (P740)                         42    0.1%
+view (P8517)                                         40    0.1%
+fax number (P2900)                                   40    0.1%
+BabelNet ID (P2581)                                  40    0.1%
+‎Yale LUX ID (P13591)                                37    0.1%
+Atlas Obscura place ID (P7772)                       37    0.1%
+located on street (P669)                             33    0.1%
+open days (P3025)                                    33    0.1%
+child organization or unit (P355)                    32    0.1%
+dedicated heritage entity (P8786)                    31    0.1%
+revised Hepburn romanization (P2125)                 28    0.1%
+public transport stop (P8453)                        28    0.1%
+follows (P155)                                       25    0.1%
+followed by (P156)                                   25    0.1%
+NicoNicoPedia ID (P6900)                             24    0.1%
+located in protected area (P3018)                    24    0.1%
+Commons Institution page (P1612)                     24    0.1%
+coat of arms image (P94)                             24    0.1%
+World Heritage Site ID (P757)                        23    0.1%
+official shop URL (P10225)                           22    0.1%
+directions (P2795)                                   22    0.1%
+Pixiv Encyclopedia ID (P11408)                       21    0.1%
+connects with (P2789)                                20    0.1%
+depicted by (P1299)                                  20    0.1%
+Japanese Database of National Cultural Propert       20    0.1%
+dissolved, abolished or demolished date (P576)       19    0.1%
+aerial view (P8592)                                  18    0.1%
+owned by (P127)                                      18    0.1%
+ground level 360 degree view URL (P5282)             18    0.1%
+IdRef ID (P269)                                      17    0.1%
+Apple Maps ID (P10046)                               16    0.1%
+architect (P84)                                      16    0.1%
+‎Japan Location Database ID (P14282)                 16    0.1%
+affiliation (P1416)                                  16    0.1%
+Encyclopædia Britannica Online ID (P1417)            15    0.0%
+detail map (P1621)                                   15    0.0%
+contains (P4330)                                     13    0.0%
+maintained by (P126)                                 13    0.0%
+commissioned by (P88)                                12    0.0%
+image of design plans (P3311)                        12    0.0%
+taxon found at location (P6803)                      12    0.0%
+time period (P2348)                                  12    0.0%
+J9U entity ID (P8189)                                10    0.0%
+structure replaced by (P167)                         10    0.0%
+Ameblo username (P3502)                              10    0.0%
+page banner (P948)                                   10    0.0%
+replaced by (P1366)                                  10    0.0%
+nickname (P1449)                                     10    0.0%
+subclass of (P279)                                   10    0.0%
+‎Genbu.net ID (P13930)                               10    0.0%
+geoshape (P3896)                                      9    0.0%
+GeoLOD ID (P12170)                                    9    0.0%
+OpenStreetMap relation ID (P402)                      9    0.0%
+email address (P968)                                  9    0.0%
+structure replaces (P1398)                            9    0.0%
+GND ID (P227)                                         8    0.0%
+web feed URL (P1019)                                  8    0.0%
+locator map image (P242)                              8    0.0%
+Commons gallery (P935)                                8    0.0%
+place name sign (P1766)                               8    0.0%
+GNS Unique Feature ID (P2326)                         7    0.0%
+foods traditionally associated (P868)                 7    0.0%
+HKCAN ID (P5909)                                      7    0.0%
+series ordinal (P1545)                                7    0.0%
+sex or gender (P21)                                   7    0.0%
+date of birth (P569)                                  7    0.0%
+JTA Sightseeing Database ID (P12907)                  6    0.0%
+based on (P144)                                       6    0.0%
+award received (P166)                                 6    0.0%
+present in work (P1441)                               6    0.0%
+start time (P580)                                     6    0.0%
+webcam page URL (P4238)                               6    0.0%
+country of citizenship (P27)                          6    0.0%
+Encyclopedia of Korean Culture ID (P9475)             6    0.0%
+number of viewers/listeners (P5436)                   6    0.0%
+commemorates (P547)                                   5    0.0%
+mountain range (P4552)                                5    0.0%
+date of death (P570)                                  5    0.0%
+family name (P734)                                    5    0.0%
+NCHDB asset ID (P6890)                                5    0.0%
+Instagram location ID (P4173)                         5    0.0%
+replaces (P1365)                                      5    0.0%
+separated from (P807)                                 5    0.0%
+headquarters location (P159)                          5    0.0%
+elevation above sea level (P2044)                     5    0.0%
+fee (P2555)                                           4    0.0%
+made from material (P186)                             4    0.0%
+Grove Art Online ID (P8406)                           4    0.0%
+World History Encyclopedia ID (P9000)                 4    0.0%
+NRHP reference number (P649)                          4    0.0%
+eBird hotspot ID (P5200)                              4    0.0%
+ISIL (P791)                                           4    0.0%
+operator (P137)                                       4    0.0%
+significant person (P3342)                            4    0.0%
+World Heritage criteria (P2614)                       4    0.0%
+named by (P3938)                                      4    0.0%
+languages spoken, written or signed (P1412)           4    0.0%
+has characteristic (P1552)                            3    0.0%
+Wolfram Language entity code (P4839)                  3    0.0%
+category for the view from the item (P8933)           3    0.0%
+ISNI (P213)                                           3    0.0%
+BIBSYS ID (P1015)                                     3    0.0%
+product or material produced (P1056)                  3    0.0%
+patron saint (P417)                                   3    0.0%
+inscription image (P9906)                             3    0.0%
+FAST ID (P2163)                                       3    0.0%
+archINFORM project ID (P5383)                         3    0.0%
+topic has template (P1424)                            3    0.0%
+position held by head of the organization (P23        3    0.0%
+date of incorporation (P10786)                        3    0.0%
+Yelp ID (P3108)                                       3    0.0%
+Cultural Heritage Online (Japan) heritage ID (        3    0.0%
+brand (P1716)                                         3    0.0%
+main subject (P921)                                   3    0.0%
+Foursquare City Guide venue ID (P1968)                3    0.0%
+transliteration or transcription (P2440)              3    0.0%
+Mapy.com ID (P8988)                                   3    0.0%
+Bing entity ID (P9885)                                3    0.0%
+occupation (P106)                                     3    0.0%
+main building contractor (P193)                       3    0.0%
+Mapcarta ID (P12966)                                  3    0.0%
+educated at (P69)                                     3    0.0%
+schematic (P5555)                                     2    0.0%
+Bibliothèque nationale de France ID (P268)            2    0.0%
+Libraries Australia ID (P409)                         2    0.0%
+member of (P463)                                      2    0.0%
+NL CR AUT ID (P691)                                   2    0.0%
+National Library of Israel ID (old) (P949)            2    0.0%
+offers view on (P3173)                                2    0.0%
+given name (P735)                                     2    0.0%
+WikiTree person ID (P2949)                            2    0.0%
+garden (P14610)                                       2    0.0%
+official map URL (P9601)                              2    0.0%
+Great Russian Encyclopedia portal ID (P11514)         2    0.0%
+date of official closure (P3999)                      2    0.0%
+height (P2048)                                        2    0.0%
+Zhihu topic ID (P3553)                                2    0.0%
+Facebook location ID (P1997)                          2    0.0%
+intangible cultural heritage status (P3259)           2    0.0%
+place of birth (P19)                                  2    0.0%
+has facility (P912)                                   2    0.0%
+located in the present-day administrative terr        2    0.0%
+IPA transcription (P898)                              2    0.0%
+state of use (P5817)                                  2    0.0%
+father (P22)                                          2    0.0%
+fabrication method (P2079)                            2    0.0%
+native language (P103)                                2    0.0%
+video (P10)                                           1    0.0%
+Encyclopedia of China (Third Edition) old ID (        1    0.0%
+Encyclopedia of China (Third Edition) ID (2026        1    0.0%
+pronunciation audio (P443)                            1    0.0%
+officially opened by (P542)                           1    0.0%
+National Library of Spain SpMaBN ID (BNE v1.0)        1    0.0%
+has effect (P1542)                                    1    0.0%
+Quora topic ID (P3417)                                1    0.0%
+Canadiana Name Authority ID (P8179)                   1    0.0%
+Carthalia ID (P5652)                                  1    0.0%
+Yandex Maps organization ID (P13096)                  1    0.0%
+notable work (P800)                                   1    0.0%
+pseudonym (P742)                                      1    0.0%
+montage image (P2716)                                 1    0.0%
+related image (P6802)                                 1    0.0%
+Tumblr username (P3943)                               1    0.0%
+event interval (P2257)                                1    0.0%
+rating (P4271)                                        1    0.0%
+taxon especially protected in area (P6569)            1    0.0%
+Emporis building ID (P455)                            1    0.0%
+end time (P582)                                       1    0.0%
+noble title (P97)                                     1    0.0%
+genre (P136)                                          1    0.0%
+has use (P366)                                        1    0.0%
+name in native language (P1559)                       1    0.0%
+category for the interior of the item (P7561)         1    0.0%
+consecrator (P1598)                                   1    0.0%
+distribution format (P437)                            1    0.0%
+participant in (P1344)                                1    0.0%
+temperature (P2076)                                   1    0.0%
+has cause (P828)                                      1    0.0%
+contact page URL (P11266)                             1    0.0%
+MusicBrainz place ID (P1004)                          1    0.0%
+Great Russian Encyclopedia Online ID (2017) (P        1    0.0%
+on focus list of Wikimedia project (P5008)            1    0.0%
+3D model (P4896)                                      1    0.0%
+state of conservation (P5816)                         1    0.0%
+‎Encyclopedia of Shinto ID (P13991)                   1    0.0%
+TikTok username (P7085)                               1    0.0%
+official jobs URL (P10311)                            1    0.0%
+donated by (P1028)                                    1    0.0%
+item operated (P121)                                  1    0.0%
+executive body (P208)                                 1    0.0%
+Encyclopædia Universalis ID (P3219)                   1    0.0%
+Michelin Voyages ID (P4161)                           1    0.0%
+Treccani's Dizionario di Storia ID (P6404)            1    0.0%
+Wikimapia ID (P7678)                                  1    0.0%
+WorldCat Entities ID (P10832)                         1    0.0%
+TikTok location ID (P11559)                           1    0.0%
+language of work or name (P407)                       1    0.0%
+work available at URL (P953)                          1    0.0%
+hashtag (P2572)                                       1    0.0%
+occupant (P466)                                       1    0.0%
+service entry (P729)                                  1    0.0%
+service retirement (P730)                             1    0.0%
+IMDb ID (P345)                                        1    0.0%
+MusicBrainz artist ID (P434)                          1    0.0%
+Discogs artist ID (P1953)                             1    0.0%
+ČSFD person ID (P2605)                                1    0.0%
+VGMdb artist ID (P3435)                               1    0.0%
+MyAnimeList people ID (P4084)                         1    0.0%
+TMDB person ID (P4985)                                1    0.0%
+Film.ru person ID (P10302)                            1    0.0%
+Plex person key (P12854)                              1    0.0%
+species kept (P1990)                                  1    0.0%
+YouTube playlist ID (P4300)                           1    0.0%
+date of official opening (P1619)                      1    0.0%
+Linktree ID (P11079)                                  1    0.0%
+intended public (P2360)                               1    0.0%
+official forum URL (P10027)                           1    0.0%
+feast day (P841)                                      1    0.0%
+website account on (P553)                             1    0.0%
+note.com user ID (P11401)                             1    0.0%
+name (P2561)                                          1    0.0%
+worshipped by (P1049)                                 1    0.0%
+visitor center (P2872)                                1    0.0%
+position held (P39)                                   1    0.0%
+writing language (P6886)                              1    0.0%
+logo image (P154)                                     1    0.0%
+Comprehensive Database of Cultural Heritage in        1    0.0%
+located in time zone (P421)                           1    0.0%
+depicts (P180)                                        1    0.0%
+literal translation (P2441)                           1    0.0%
+Find a Grave cemetery ID (P2025)                      1    0.0%
+Online PWN Encyclopedia ID (P7305)                    1    0.0%
+National Library of Korea ID (P5034)                  1    0.0%
+National Library Board Singapore ID (former sc        1    0.0%
+Singapore Infopedia ID (archived) (P8350)             1    0.0%
+Singapore Infopedia ID (P12534)                       1    0.0%
+organizer (P664)                                      1    0.0%
+place of death (P20)                                  1    0.0%
+child (P40)                                           1    0.0%
+
+==========================================================================
+SHINTO SHRINE (Q845945) — QUALIFIERS, BY THE PROPERTY THEY QUALIFY
+==========================================================================
+
+shrine ranking (P13723)  — 57,135 qualified statements
+    determination method or standard (P459)               39,965
+    end time (P582)                                        7,579
+    end cause (P1534)                                      7,528
+    conferred by (P1027)                                   1,051
+    applies to jurisdiction (P1001)                          643
+    Wikimedia import URL (P4656)                             337
+    start time (P580)                                         13
+    criterion used (P1013)                                    11
+    reason for deprecated rank (P2241)                         4
+    intended subject of deprecated statement (P8327)           4
+
+part of (P361)  — 41,406 qualified statements
+    follows (P155)                                        13,949
+    followed by (P156)                                    13,890
+    series ordinal (P1545)                                13,065
+    object of statement has role (P3831)                     293
+    subject has role (P2868)                                 169
+    dedicated to (P825)                                       21
+    ranking (P1352)                                            8
+    reason for deprecated rank (P2241)                         4
+    intended subject of deprecated statement (P8327)           2
+    applies to jurisdiction (P1001)                            2
+    end time (P582)                                            2
+    applies to part (P518)                                     1
+
+official name (P1448)  — 25,782 qualified statements
+    valid in period (P1264)                               13,121
+    name in kana (P1814)                                  12,606
+    revised Hepburn romanization (P2125)                      37
+    writing system (P282)                                     10
+    start time (P580)                                          3
+    reason for deprecated rank (P2241)                         2
+    intended subject of deprecated statement (P8327)           2
+    end time (P582)                                            1
+
+Kokugakuin University Digital Museum entry ID (P13677)  — 24,789 qualified statements
+    object of statement has role (P3831)                  13,016
+    section (P958)                                        11,759
+    identifier shared with (P4070)                             6
+    described at URL (P973)                                    4
+    reason for deprecated rank (P2241)                         2
+    intended subject of deprecated statement (P8327)           2
+
+said to be the same as (P460)  — 15,242 qualified statements
+    ranking (P1352)                                        6,177
+    object of statement has role (P3831)                   5,155
+    subject has role (P2868)                               3,910
+
+Miraheze article ID (P11250)  — 8,608 qualified statements
+    MediaWiki page ID (P9675)                              8,608
+
+Fandom article ID (P6262)  — 3,360 qualified statements
+    language of work or name (P407)                        1,120
+    subject named as (P1810)                               1,120
+    MediaWiki page ID (P9675)                              1,120
+
+official website (P856)  — 2,424 qualified statements
+    language of work or name (P407)                        2,378
+    reason for deprecated rank (P2241)                        28
+    archive URL (P1065)                                       10
+    title (P1476)                                              4
+    archive date (P2960)                                       2
+    subject named as (P1810)                                   1
+    end cause (P1534)                                          1
+
+described by source (P1343)  — 1,815 qualified statements
+    URL (P2699)                                            1,815
+
+YouTube channel ID (P2397)  — 1,281 qualified statements
+    start time (P580)                                        219
+    point in time (P585)                                     219
+    subject named as (P1810)                                 219
+    number of subscribers (P3744)                            217
+    number of works (P3740)                                  203
+    number of viewers/listeners (P5436)                      203
+    YouTube handle (P11245)                                    1
+
+X (Twitter) username (P2002)  — 1,037 qualified statements
+    start time (P580)                                        353
+    X (Twitter) numeric user ID (P6552)                      352
+    point in time (P585)                                     287
+    number of subscribers (P3744)                             44
+    language of work or name (P407)                            1
+
+native label (P1705)  — 953 qualified statements
+    name in kana (P1814)                                     469
+    revised Hepburn romanization (P2125)                     459
+    McCune–Reischauer romanization (P1942)                     6
+    Revised Romanization (P2001)                               6
+    IPA transcription (P898)                                   5
+    start time (P580)                                          4
+    writing system (P282)                                      3
+    image (P18)                                                1
+
+heritage designation (P1435)  — 776 qualified statements
+    applies to part (P518)                                   342
+    start time (P580)                                        146
+    part of (P361)                                           112
+    official name (P1448)                                    101
+    World Heritage criteria (P2614)                           20
+    subject named as (P1810)                                  17
+    end time (P582)                                           15
+    criterion used (P1013)                                     9
+    subject has role (P2868)                                   6
+    located in the administrative territorial entity (P1       5
+    together with (P1706)                                      1
+    point in time (P585)                                       1
+    approved by (P790)                                         1
+
+social media followers (P8687)  — 744 qualified statements
+    point in time (P585)                                     372
+    X (Twitter) numeric user ID (P6552)                      294
+    YouTube channel ID (P2397)                                78
+
+day in year for periodic occurrence (P837)  — 679 qualified statements
+    object of statement has role (P3831)                     411
+    significant event (P793)                                 267
+    sourcing circumstances (P1480)                             1
+
+has part(s) (P527)  — 625 qualified statements
+    object of statement has role (P3831)                     246
+    ranking (P1352)                                          234
+    series ordinal (P1545)                                    50
+    applies to part (P518)                                    49
+    native label (P1705)                                      12
+    end time (P582)                                           11
+    located in the administrative territorial entity (P1      10
+    start time (P580)                                          6
+    name in kana (P1814)                                       4
+    subject has role (P2868)                                   3
+
+has part(s) of the class (P2670)  — 548 qualified statements
+    quantity (P1114)                                         518
+    subject has role (P2868)                                  12
+    series ordinal (P1545)                                    10
+    contains (P4330)                                           3
+    part of (P361)                                             2
+    statement is subject of (P805)                             2
+    applies to part (P518)                                     1
+
+instance of (P31)  — 440 qualified statements
+    statement is subject of (P805)                           349
+    series ordinal (P1545)                                    65
+    applies to jurisdiction (P1001)                            6
+    applies to part (P518)                                     3
+    has part(s) of the class (P2670)                           3
+    start time (P580)                                          2
+    end time (P582)                                            2
+    reason for deprecated rank (P2241)                         2
+    intended subject of deprecated statement (P8327)           2
+    valid in place (P3005)                                     2
+    object named as (P1932)                                    2
+    part of (P361)                                             1
+    relative to (P2210)                                        1
+
+YouTube handle (P11245)  — 393 qualified statements
+    YouTube channel ID (P2397)                               198
+    point in time (P585)                                     195
+
+mother house (P612)  — 341 qualified statements
+    criterion used (P1013)                                   341
+
+open days (P3025)  — 320 qualified statements
+    opening time (P8626)                                     105
+    closing time (P8627)                                     105
+    open period from (P3027)                                  49
+    open period to (P3028)                                    49
+    last entry (P10818)                                       12
+
+dedicated to (P825)  — 223 qualified statements
+    object named as (P1932)                                  113
+    object of statement has role (P3831)                      36
+    start time (P580)                                         31
+    subject has role (P2868)                                  12
+    end time (P582)                                            9
+    pseudonym (P742)                                           4
+    has effect (P1542)                                         3
+    applies to part (P518)                                     3
+    ranking (P1352)                                            2
+    subject named as (P1810)                                   2
+    represents (P1268)                                         2
+    image (P18)                                                2
+    location (P276)                                            1
+    end cause (P1534)                                          1
+    merged into (P7888)                                        1
+    sourcing circumstances (P1480)                             1
+
+coordinate location (P625)  — 146 qualified statements
+    applies to part (P518)                                   122
+    determination method or standard (P459)                   18
+    start time (P580)                                          4
+    nature of statement (P5102)                                2
+
+official blog URL (P1581)  — 135 qualified statements
+    language of work or name (P407)                          135
+
+inception (P571)  — 119 qualified statements
+    sourcing circumstances (P1480)                            46
+    refine date (P4241)                                       20
+    object named as (P1932)                                   17
+    latest date (P1326)                                       15
+    earliest date (P1319)                                     10
+    statement supported by (P3680)                             4
+    applies to part (P518)                                     4
+    nature of statement (P5102)                                2
+    reason for deprecated rank (P2241)                         1
+
+described at URL (P973)  — 105 qualified statements
+    language of work or name (P407)                           96
+    archive URL (P1065)                                        9
+
+significant event (P793)  — 103 qualified statements
+    point in time (P585)                                      51
+    day in year for periodic occurrence (P837)                15
+    has cause (P828)                                          13
+    applies to part (P518)                                     8
+    start time (P580)                                          6
+    end time (P582)                                            3
+    part of (P361)                                             2
+    commissioned by (P88)                                      1
+    award received (P166)                                      1
+    relative to (P2210)                                        1
+    sourcing circumstances (P1480)                             1
+    subject has role (P2868)                                   1
+
+located in the administrative territorial entity (P131)  — 99 qualified statements
+    end time (P582)                                           47
+    applies to part (P518)                                    19
+    excluding (P1011)                                         12
+    start time (P580)                                         11
+    located in the administrative territorial entity (P1       5
+    next level in hierarchy (P10229)                           3
+    located in the present-day administrative territoria       2
+
+area (P2046)  — 98 qualified statements
+    applies to part (P518)                                    98
+
+transliteration or transcription (P2440)  — 95 qualified statements
+    determination method or standard (P459)                   56
+    reason for deprecated rank (P2241)                        19
+    object of statement has role (P3831)                      12
+    reason for preferred rank (P7452)                          8
+
+name in kana (P1814)  — 85 qualified statements
+    applies to part (P518)                                    47
+    valid in period (P1264)                                   12
+    reason for deprecated rank (P2241)                         7
+    revised Hepburn romanization (P2125)                       7
+    intended subject of deprecated statement (P8327)           4
+    applies to name of subject (P5168)                         3
+    transliteration or transcription (P2440)                   3
+    language of work or name (P407)                            1
+    reason for preferred rank (P7452)                          1
+
+image (P18)  — 68 qualified statements
+    media legend (P2096)                                      44
+    point in time (P585)                                      13
+    aspect ratio (W:H) (P2061)                                 3
+    depicts (P180)                                             3
+    object of statement has role (P3831)                       2
+    depicted by (P1299)                                        2
+    copyright license (P275)                                   1
+
+Encyclopædia Britannica Online ID (P1417)  — 55 qualified statements
+    subject named as (P1810)                                  49
+    author name string (P2093)                                 6
+
+street address (P6375)  — 54 qualified statements
+    applies to part (P518)                                    28
+    reason for preferred rank (P7452)                          8
+    location (P276)                                            6
+    postal code (P281)                                         5
+    object of statement has role (P3831)                       4
+    retrieved (P813)                                           3
+
+architectural style (P149)  — 51 qualified statements
+    applies to part (P518)                                    41
+    end time (P582)                                            6
+    object named as (P1932)                                    4
+
+official shop URL (P10225)  — 48 qualified statements
+    language of work or name (P407)                           48
+
+number of viewers/listeners (P5436)  — 48 qualified statements
+    determination method or standard (P459)                   12
+    point in time (P585)                                      12
+    YouTube channel ID (P2397)                                12
+    YouTube handle (P11245)                                   12
+
+country (P17)  — 37 qualified statements
+    start time (P580)                                         16
+    end time (P582)                                           13
+    applies to part (P518)                                     6
+    end cause (P1534)                                          2
+
+Library of Congress Authorities ID (P244)  — 31 qualified statements
+    subject named as (P1810)                                  25
+    alternative name (P4970)                                   6
+
+different from (P1889)  — 21 qualified statements
+    location (P276)                                           21
+
+connects with (P2789)  — 15 qualified statements
+    via (P2825)                                               14
+    subject named as (P1810)                                   1
+
+Instagram username (P2003)  — 14 qualified statements
+    Instagram numeric ID (P12546)                             14
+
+taxon found at location (P6803)  — 13 qualified statements
+    quantity (P1114)                                          13
+
+Ameblo username (P3502)  — 12 qualified statements
+    language of work or name (P407)                           12
+
+award received (P166)  — 12 qualified statements
+    approved by (P790)                                         9
+    conferred by (P1027)                                       3
+
+CiNii Research ID (P11496)  — 11 qualified statements
+    subject named as (P1810)                                  11
+
+adjacent structure or building (P3032)  — 11 qualified statements
+    direction relative to location (P654)                     10
+    applies to part (P518)                                     1
+
+Corporate Number (Japan) (P3225)  — 11 qualified statements
+    street address (P6375)                                     8
+    subject named as (P1810)                                   2
+    point in time (P585)                                       1
+
+NACSIS-CAT author ID (P271)  — 10 qualified statements
+    subject named as (P1810)                                  10
+
+web feed URL (P1019)  — 10 qualified statements
+    language of work or name (P407)                           10
+
+Great Russian Encyclopedia Online ID (2017) (P2924)  — 10 qualified statements
+    subject named as (P1810)                                   7
+    reason for deprecated rank (P2241)                         3
+
+legal form (P1454)  — 10 qualified statements
+    applies to part (P518)                                     6
+    religion or worldview (P140)                               4
+
+fee (P2555)  — 9 qualified statements
+    applies to part (P518)                                     5
+    applies to people (P6001)                                  4
+
+VIAF cluster ID (P214)  — 8 qualified statements
+    reason for deprecated rank (P2241)                         8
+
+location (P276)  — 7 qualified statements
+    applies to part (P518)                                     5
+    located in the administrative territorial entity (P1       2
+
+postal code (P281)  — 7 qualified statements
+    location (P276)                                            3
+    reason for deprecated rank (P2241)                         2
+    intended subject of deprecated statement (P8327)           2
+
+NL CR AUT ID (P691)  — 6 qualified statements
+    subject named as (P1810)                                   6
+
+detail map (P1621)  — 6 qualified statements
+    point in time (P585)                                       6
+
+webcam page URL (P4238)  — 6 qualified statements
+    language of work or name (P407)                            6
+
+architect (P84)  — 6 qualified statements
+    applies to part (P518)                                     5
+    point in time (P585)                                       1
+
+made from material (P186)  — 6 qualified statements
+    applies to part (P518)                                     5
+    natural product of taxon (P1582)                           1
+
+Encyclopedia of China (Third Edition) ID (2026) (P14541)  — 6 qualified statements
+    subject named as (P1810)                                   3
+    last update (P5017)                                        3
+
+Treccani's Dizionario di Storia ID (P6404)  — 6 qualified statements
+    publication date (P577)                                    3
+    subject named as (P1810)                                   3
+
+public transport stop (P8453)  — 5 qualified statements
+    end time (P582)                                            5
+
+located in/on physical feature (P706)  — 5 qualified statements
+    applies to part (P518)                                     3
+    start time (P580)                                          2
+
+image of entrance (P9721)  — 4 qualified statements
+    media legend (P2096)                                       4
+
+official map URL (P9601)  — 4 qualified statements
+    language of work or name (P407)                            4
+
+on focus list of Wikimedia project (P5008)  — 4 qualified statements
+    point in time (P585)                                       4
+
+location of formation (P740)  — 4 qualified statements
+    sourcing circumstances (P1480)                             4
+
+named after (P138)  — 4 qualified statements
+    applies to name of subject (P5168)                         2
+    named by (P3938)                                           1
+    applies to part (P518)                                     1
+
+pronunciation audio (P443)  — 3 qualified statements
+    language of work or name (P407)                            3
+
+schematic (P5555)  — 3 qualified statements
+    language of work or name (P407)                            3
+
+contact page URL (P11266)  — 3 qualified statements
+    language of work or name (P407)                            3
+
+Zhihu topic ID (P3553)  — 3 qualified statements
+    subject named as (P1810)                                   3
+
+directions (P2795)  — 3 qualified statements
+    described at URL (P973)                                    3
+
+country of citizenship (P27)  — 3 qualified statements
+    end time (P582)                                            3
+
+Facebook username (P2013)  — 3 qualified statements
+    language of work or name (P407)                            3
+
+nickname (P1449)  — 3 qualified statements
+    name in kana (P1814)                                       2
+    revised Hepburn romanization (P2125)                       1
+
+official jobs URL (P10311)  — 2 qualified statements
+    language of work or name (P407)                            2
+
+intangible cultural heritage status (P3259)  — 2 qualified statements
+    start time (P580)                                          2
+
+website account on (P553)  — 2 qualified statements
+    website username or ID (P554)                              2
+
+WikiTree person ID (P2949)  — 2 qualified statements
+    subject named as (P1810)                                   2
+
+owner of (P1830)  — 2 qualified statements
+    start time (P580)                                          1
+    end time (P582)                                            1
+
+revised Hepburn romanization (P2125)  — 2 qualified statements
+    native label (P1705)                                       1
+    format as a regular expression (P1793)                     1
+
+donated by (P1028)  — 1 qualified statements
+    point in time (P585)                                       1
+
+parent organization or unit (P749)  — 1 qualified statements
+    end time (P582)                                            1
+
+owned by (P127)  — 1 qualified statements
+    applies to part (P518)                                     1
+
+Japanese Database of National Cultural Properties ID (P4275)  — 1 qualified statements
+    object of statement has role (P3831)                       1
+
+replaced by (P1366)  — 1 qualified statements
+    point in time (P585)                                       1
+
+note.com user ID (P11401)  — 1 qualified statements
+    language of work or name (P407)                            1
+
+has facility (P912)  — 1 qualified statements
+    maximum capacity (P1083)                                   1
+
+Discogs artist ID (P1953)  — 1 qualified statements
+    subject named as (P1810)                                   1
+
+MusicBrainz artist ID (P434)  — 1 qualified statements
+    subject named as (P1810)                                   1
+
+replaces (P1365)  — 1 qualified statements
+    point in time (P585)                                       1
+
+name (P2561)  — 1 qualified statements
+    reason for deprecated rank (P2241)                         1
+
+located in or next to body of water (P206)  — 1 qualified statements
+    end time (P582)                                            1
+
+founder (P112)  — 1 qualified statements
+    sourcing circumstances (P1480)                             1
+
+date of death (P570)  — 1 qualified statements
+    instance of (P31)                                          1
