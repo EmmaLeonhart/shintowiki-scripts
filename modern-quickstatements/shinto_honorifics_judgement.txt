@@ -3,15 +3,17 @@
 #  The extent that we're not able to is the extent, probably, that I'm going
 #  to be able to make judgement calls."
 #
-# 44 cases.
+# 47 cases.
 
 Q10932592	ja=湍津姫	en=Tagitsuhime	romaji not derivable — en label carries an unseparated suffix
 Q10933447	ja=大事忍男神	en=Oogotooshionokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q10933447	ja=大事忍男神	en=Oogotooshionokami	romaji not derivable — en label carries an unseparated suffix
 Q10940674	ja=天稚彦	en=Ame no Wakahiko	romaji not derivable — en label carries an unseparated suffix
+Q10948069	ja=宗像三女神	en=Three Goddesses of Munakata	EXCLUDED by Emma — complicated ontology
 Q11059454	ja=市杵島姫	en=Ichikishimahime	romaji not derivable — en label carries an unseparated suffix
 Q11110848	ja=栲幡千千姫	en=Takuhadachijihime	romaji not derivable — en label carries an unseparated suffix
 Q11120574	ja=椎根津彦	en=Shiinetsuhiko	romaji not derivable — en label carries an unseparated suffix
+Q1114013	ja=住吉三神	en=Sumiyoshi sanjin	EXCLUDED by Emma — complicated ontology
 Q11307233	ja=下照姫	en=Shitateruhime	romaji not derivable — en label carries an unseparated suffix
 Q11358323	ja=三鬼大権現	en=Sanki Daigongen	romaji not derivable — en label carries an unseparated suffix
 Q11573853	ja=瑜伽大権現	en=Yuga Daigongen	romaji not derivable — en label carries an unseparated suffix
@@ -34,7 +36,8 @@ Q140446119	ja=三足比咩命	en=Mitarashi-hime	ja says 命 (Q140588459); en say
 Q17193127	ja=伊勢津彦	en=Isetsuhiko	romaji not derivable — en label carries an unseparated suffix
 Q1781862	ja=木花開耶姫	en=Konohanasakuyahime	romaji not derivable — en label carries an unseparated suffix
 Q3082751	ja=玉依姫	en=Tamayorihime	romaji not derivable — en label carries an unseparated suffix
-Q3090037	ja=猿田彦神	en=Sarutahiko Ōkami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
+Q3090037	ja=猿田彦神	en=Sarutahiko Ōkami	EXCLUDED by Emma — complicated ontology
+Q402052	ja=開拓三神	en=Three Pioneer Kami	EXCLUDED by Emma — complicated ontology
 Q4387856	ja=金山彦神	en=Kanayamahiko	ja says 神 (Q140588460); en says a different honorific (Q140588571)
 Q4387856	ja=金山彦神	en=Kanayamahiko	romaji not derivable — en label carries an unseparated suffix
 Q48750893	ja=天棚機姫神	en=Tanabatabime-no-Mikoto	ja says 神 (Q140588460); en says a different honorific (Q140588459)

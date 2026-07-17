@@ -76,6 +76,39 @@ UNKNOWN = "Q24238356"            # "unknown" — entity whose identity is not kn
 OUTFILE = os.path.join(_here, "shinto_honorifics.txt")
 REVIEWFILE = os.path.join(_here, "shinto_honorifics_judgement.txt")
 
+# HARDCODED BAN — Emma 2026-07-16, explicitly:
+#
+#   "I'm hardcoding the ban of these 12 because their ontology is complicated and
+#    explicitly I'm more okay with errors occurring in future added things with bad
+#    ontology than these current ones. It's not the job of the script to find
+#    ontology errors it's the job to extend existing patterns"
+#
+# This is a CURATED EXCLUSION LIST, not heuristics. The difference is the whole
+# point: label-pattern guards (・, 三神, "and") were the script trying to DETECT
+# bad ontology, which is not its job and which mis-fires on legitimate names. A
+# fixed list of QIDs is Emma's decision about specific known-complicated items,
+# and it is deliberately allowed to go stale — she would rather a future
+# bad-ontology item slip through than have these twelve touched.
+#
+# Groups (三神 / 五行神) and pairs (・) whose ontology she has not settled:
+EXCLUDED = {
+    "Q10948069",   # 宗像三女神 — Three Goddesses of Munakata
+    "Q1114013",    # 住吉三神 — Sumiyoshi sanjin
+    "Q402052",     # 開拓三神 — Three Pioneer Kami
+    "Q140446096",  # 天地人五行神 — Five Deities of Heaven, Earth, and Man
+    "Q643763",     # アシナヅチ・テナヅチ — Ashinazuchi and Tenazuchi
+    "Q9090923",    # ウヒヂニ・スヒヂニ — Uhijini and Suhijini
+    "Q11073597",   # オオトノヂ・オオトノベ — Ōtonoji and Ōtonobe
+    "Q11152535",   # オモダル・アヤカシコネ — Omodaru and Ayakashikone
+    "Q11287276",   # イワサク・ネサク — Iwasaku and Nesaku
+    "Q11318771",   # ツヌグイ・イクグイ — Tsunugui and Ikugui
+    "Q11326733",   # ハヤアキツヒコ・ハヤアキツヒメ — Hayaakitsuhiko and Hayaakitsuhime
+    "Q10940723",   # ウワハル・シタハル — Uwaharu and Shitaharu
+    # Emma 2026-07-16: "Sarutahiko is a special case just ignore him... he just
+    # has a weird name." (猿田彦 ends in 彦, which is itself an honorific.)
+    "Q3090037",    # 猿田彦神 — Sarutahiko
+}
+
 
 def sparql(query):
     url = SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
@@ -237,23 +270,12 @@ def main():
                 return hq, form
         return None, None
 
-    # NO HARDCODED NAME BLOCKLIST. Emma 2026-07-16: "both of those should not be
-    # instances of kami or subtypes so they should not play a role" / "we're
-    # running into issues with these hard code bans".
-    #
-    # A group or a pair is not a kami, so P31 is the gate — and it is the gate we
-    # already ask Wikidata for. Fixing the data removes the item from scope with no
-    # code change (she proved it: Q11442793 lost its P31, Q10935047 became
-    # P31="duo", and both vanished from this batch on the next run). A hardcoded
-    # label ban is the wrong layer: it would keep banning an item after its data was
-    # corrected, and would ban a legitimate kami that happens to contain ・ or 三神.
-    #
-    # The only structural refusal kept is below: a label that leaves NO short name
-    # after the honorific is stripped. That is arithmetic, not a name list.
-
     lines, matched = [], 0
     judgement = []          # residue: Emma's calls, never auto-emitted
     for qid, k in sorted(kami.items()):
+        if qid in EXCLUDED:
+            judgement.append((qid, k["ja"], k["en"], "EXCLUDED by Emma — complicated ontology"))
+            continue
         ja_label = k["ja"]
         hq, form = longest_match(ja_label)
         if not hq:
