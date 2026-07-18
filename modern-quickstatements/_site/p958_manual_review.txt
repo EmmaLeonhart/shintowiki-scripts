@@ -1,13 +1,3 @@
-=== RANKING SEQUENCE ANOMALIES ===
-These parents have non-sequential rankings:
-
-  Q11442961 (Tennōgū Ōtoshi Shrine): rankings=[2], expected=[1]
-  Q11659237 (Ogami Shrine (Tonami City)): rankings=[2], expected=[1]
-  Q135039294 (Hatada Shrine): rankings=[2, 3], expected=[1, 2]
-  Q135040569 (Miheno Shrine): rankings=[2, 3], expected=[1, 2]
-  Q135041216 (Momoiyamano Shrine): rankings=[2], expected=[1]
-  Q135041251 (Warihimeno Shrine): rankings=[2, 3], expected=[1, 2]
-
 === MULTIPLE P13677 — NEEDS MANUAL REVIEW ===
 These items have multiple P13677 statements.
 Add the correct P958 qualifier manually.
