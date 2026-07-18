@@ -118,14 +118,16 @@ jobs:
           # (P6262, P11250, etc.) never ran. The date-based check below
           # fires whenever the most recent submission report's date is
           # older than today, regardless of which cron fire wins.
-          # ── WIKIDATA EDITING FREEZE — hard pause until 2026-06-06 ──
-          # Two-week halt set 2026-05-23 (after bespoke direct-API editors ran on
-          # Wikidata). While frozen, wikidata-daily-fire is forced false so the
-          # QuickStatements submission — the ONLY thing that edits Wikidata —
-          # never runs, on ANY trigger. Auto-resumes 2026-06-06; to extend the
-          # freeze, push the date out. Principle: being visible on Wikidata is
-          # worse than losing data, so when in doubt this stays off.
-          FREEZE_WIKIDATA_UNTIL="2026-06-06"
+          # ── WIKIDATA EDITING FREEZE — hard pause until FREEZE_WIKIDATA_UNTIL ──
+          # While frozen, wikidata-daily-fire is forced false so the QuickStatements
+          # submission — the ONLY thing that edits Wikidata — never runs, on ANY
+          # trigger. To extend, push the date out. Principle: being visible on
+          # Wikidata is worse than losing data, so when in doubt this stays off.
+          # History: two-week halt set 2026-05-23 (bespoke direct-API editors ran),
+          #   resumed 2026-06-06.
+          # 2026-07-18 (Emma): 24h hold — blocks the next daily run (~05:24 UTC
+          #   2026-07-19); auto-resumes 2026-07-20.
+          FREEZE_WIKIDATA_UNTIL="2026-07-20"
           if [ "$(date -u +%Y-%m-%d)" \< "$FREEZE_WIKIDATA_UNTIL" ]; then
             echo "wikidata-daily-fire=false" >> "$GITHUB_OUTPUT"
             echo "WIKIDATA FREEZE active until $FREEZE_WIKIDATA_UNTIL — NO Wikidata edits."
