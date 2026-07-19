@@ -9,7 +9,7 @@ Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_syn
 
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
-**Status: ⏸ WAITING** (weekly edit-test failed, 2026-07-15 08:35 UTC) — wiki editing is locked for the week. The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
+**Status: ⏸ WAITING** (weekly edit-test failed, 2026-07-19 10:49 UTC) — wiki editing is locked for the week. The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
 The gate is now a **weekly edit-test** (Emma 2026-07-15): Sundays, CI attempts a real edit — success unlocks
 editing for the week, failure keeps it locked — so we don't hammer the wiki while it's blocked.
 
