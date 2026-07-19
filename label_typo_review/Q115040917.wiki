@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q115040917 -->
 <!-- JA: 氷川神社 | KANA: ひかわじんじゃ | EN_LABEL: Oyaguchi Hikawa Shrine | KANA_ROMANIZED: Hikawajinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: PREFIX_OK: English label adds 'Oyaguchi' (大谷口) as a place-name prefix to disambiguate from other Hikawa shrines; P1814 kana ひかわじんじゃ correctly reflects the shrine's own name without the prefix -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
