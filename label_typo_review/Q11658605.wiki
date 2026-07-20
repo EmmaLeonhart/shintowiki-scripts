@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11658605 -->
 <!-- JA: 陸奥総社宮 | KANA: むつそうじゃぐう | EN_LABEL: Mutsu Sōsha-no-miya | KANA_ROMANIZED: Mutsusojagu -->
-<!-- ANSWER: -->
+<!-- ANSWER: LABEL_TYPO: Mutsu Sōja-gū (kana むつそうじゃぐう = Mutsusōjagū; じゃ=ja not sha, ぐう=gū not miya — label "Sōsha-no-miya" has wrong reading of 社 and wrong reading of 宮) -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
