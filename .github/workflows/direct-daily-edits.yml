@@ -33,14 +33,21 @@ jobs:
           path: modern-quickstatements
         continue-on-error: true
 
-      # The "check for on-wiki attention to the watched editor" step was REMOVED
-      # 2026-07-21 (Emma: ブルーノ・プラス "is not the threat that we think he is").
-      # It refreshed conflict_watch.state for a global pause that no longer
-      # exists. watch_conflicting_editor.py is kept on disk but is no longer run.
+      # Refreshes conflict_watch.state, which direct_daily_edits reads to decide
+      # whether it may run at all. Read-only: it never edits or posts anywhere.
+      # If this step fails the state file is stale or absent, and the editor
+      # fails CLOSED — that is the intended behaviour, so `continue-on-error`.
+      # See docs/bruno_plus_analysis_2026-07.md.
+      - name: Check for on-wiki attention to the watched editor
+        working-directory: modern-quickstatements
+        run: python watch_conflicting_editor.py
+        continue-on-error: true
 
-      # Archiving stays: read-only, never overwrites an archive already held, and
-      # cheap. Emma 2026-07-10: "we should be preserving the information on them so
-      # they could potentially be recreated."
+      # Captures the pre-damage state of any item the watched editor has newly
+      # gutted. Read-only; never overwrites an archive already held. Runs even
+      # while the drip is paused — that is exactly when the damage accumulates.
+      # Emma 2026-07-10: "we should be preserving the information on them so they
+      # could potentially be recreated."
       - name: Archive items damaged by the watched editor
         working-directory: modern-quickstatements
         run: python archive_destroyed_items.py

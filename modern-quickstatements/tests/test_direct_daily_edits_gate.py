@@ -1,14 +1,15 @@
-"""The freshness gate as wired into the only editor that reaches Wikidata.
+"""The caution gate as wired into the only editor that reaches Wikidata.
 
-It must FAIL CLOSED: a gate that opens when its inputs are missing is not a gate,
-and a Wikidata API hiccup mid-run is an ordinary failure mode.
-
-The global pause around ブルーノ・プラス was removed 2026-07-21 (Emma's call), so
-its tests are gone. Only the per-item rule is wired in now.
+Both gates must FAIL CLOSED. A caution gate that opens when its inputs are missing
+is not a caution gate — and the failure modes here are ordinary (a watcher step that
+didn't run, a Wikidata API hiccup mid-run).
 """
 import datetime
+import json
 import os
 import sys
+
+import pytest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MQ = os.path.dirname(HERE)
@@ -24,12 +25,66 @@ def test_the_editor_imports_the_gate():
     assert dde.conflict_gate is cg
 
 
-def test_the_global_pause_is_no_longer_wired_in():
-    """Regression guard: the drip must not reacquire a person-specific pause."""
-    assert not hasattr(dde, "load_conflict_watch")
+# ─────────────────────── gate 1: global pause, fail closed ───────────────────────
+
+def test_missing_state_file_assumes_they_edited_today(tmp_path, monkeypatch):
+    """No state -> assume they edited today.
+
+    NOTE (2026-07-21): this no longer keeps the drip shut. Emma moved HARD_RESUME
+    to 2026-07-01, so the edit-rate pause is permanently past and a missing state
+    file no longer fails closed on its own — only a recorded attention signal
+    holds the drip now. Pinned so the change is visible rather than silent.
+    """
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr(dde.os.path, "dirname", lambda _p: str(tmp_path))
+    watch = dde.load_conflict_watch()
+    assert watch["last_edit"] == datetime.datetime.now(datetime.timezone.utc).date()
+    assert cg.should_run(watch["last_edit"], watch["last_edit"])
+    assert watch["project_chat_hold"] is False
 
 
-# ─────────────────── per-item freshness, fail closed ───────────────────
+def test_corrupt_state_file_fails_closed(tmp_path, monkeypatch):
+    (tmp_path / "conflict_watch.state").write_text("{ not json", encoding="utf-8")
+    monkeypatch.setattr(dde.os.path, "dirname", lambda _p: str(tmp_path))
+    watch = dde.load_conflict_watch()
+    assert watch["last_edit"] == datetime.datetime.now(datetime.timezone.utc).date()
+
+
+def test_valid_state_file_is_read(tmp_path, monkeypatch):
+    (tmp_path / "conflict_watch.state").write_text(
+        json.dumps({"last_watched_edit": "2026-07-10",
+                    "talk_activity": "2026-04-24",
+                    "noticeboard_mention": None,
+                    "project_chat_hold": False}),
+        encoding="utf-8")
+    monkeypatch.setattr(dde.os.path, "dirname", lambda _p: str(tmp_path))
+    watch = dde.load_conflict_watch()
+    assert watch["last_edit"] == datetime.date(2026, 7, 10)
+    assert watch["talk_activity"] == datetime.date(2026, 4, 24)
+    assert watch["noticeboard_mention"] is None
+    assert watch["project_chat_hold"] is False
+
+
+def test_project_chat_hold_is_read_and_blocks_indefinitely(tmp_path, monkeypatch):
+    (tmp_path / "conflict_watch.state").write_text(
+        json.dumps({"last_watched_edit": "2023-03-17", "project_chat_hold": True}),
+        encoding="utf-8")
+    monkeypatch.setattr(dde.os.path, "dirname", lambda _p: str(tmp_path))
+    watch = dde.load_conflict_watch()
+    assert watch["project_chat_hold"] is True
+    assert not cg.should_run(datetime.date(2030, 1, 1), watch["last_edit"],
+                             project_chat_hold=True)
+
+
+def test_the_drip_runs_with_the_real_current_state():
+    """Since HARD_RESUME moved to 2026-07-01, the edit-rate pause never binds;
+    only a live attention signal can shut the drip."""
+    assert cg.should_run(TODAY, datetime.date(2026, 7, 10))
+    assert not cg.should_run(TODAY, datetime.date(2026, 7, 10),
+                             noticeboard_mention=datetime.date(2026, 7, 9))
+
+
+# ─────────────────────── gate 2: per-item freshness, fail closed ───────────────────────
 
 def test_item_lookup_failure_declines_the_edit(monkeypatch):
     def boom(_qid, **_kw):
@@ -42,10 +97,10 @@ def test_item_lookup_failure_declines_the_edit(monkeypatch):
 
 def test_item_edited_by_another_user_yesterday_is_declined(monkeypatch):
     monkeypatch.setattr(cg, "fetch_item_revisions",
-                        lambda _q, **_k: [("SomeEditor", datetime.date(2026, 7, 9))])
+                        lambda _q, **_k: [("ブルーノ・プラス", datetime.date(2026, 7, 9))])
     ok, why = dde.item_is_editable("Q123044569", TODAY)
     assert not ok
-    assert "SomeEditor" in why
+    assert "ブルーノ・プラス" in why
 
 
 def test_item_only_we_have_touched_is_editable(monkeypatch):
@@ -60,3 +115,12 @@ def test_item_untouched_for_eight_days_is_editable(monkeypatch):
                         lambda _q, **_k: [("Someone", datetime.date(2026, 7, 2))])
     ok, _ = dde.item_is_editable("Q42", TODAY)
     assert ok
+
+
+def test_the_two_damaged_items_would_be_declined_today(monkeypatch):
+    """Q28069431 and Q123044569 are exactly what the gate exists to protect."""
+    monkeypatch.setattr(cg, "fetch_item_revisions",
+                        lambda _q, **_k: [("ブルーノ・プラス", datetime.date(2026, 7, 10))])
+    for qid in ("Q28069431", "Q123044569"):
+        ok, _ = dde.item_is_editable(qid, TODAY)
+        assert not ok, qid
