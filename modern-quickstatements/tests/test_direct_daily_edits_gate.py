@@ -27,18 +27,14 @@ def test_the_editor_imports_the_gate():
 
 # ─────────────────────── gate 1: global pause, fail closed ───────────────────────
 
-def test_missing_state_file_assumes_they_edited_today(tmp_path, monkeypatch):
-    """No state -> assume they edited today.
-
-    NOTE (2026-07-21): this no longer keeps the drip shut. Emma moved HARD_RESUME
-    to 2026-07-01, so the edit-rate pause is permanently past and a missing state
-    file no longer fails closed on its own — only a recorded attention signal
-    holds the drip now. Pinned so the change is visible rather than silent.
-    """
+def test_missing_state_file_fails_closed(tmp_path, monkeypatch):
+    """No state -> assume they edited today -> drip stays shut."""
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(dde.os.path, "dirname", lambda _p: str(tmp_path))
     watch = dde.load_conflict_watch()
     assert watch["last_edit"] == datetime.datetime.now(datetime.timezone.utc).date()
+    # Since HARD_RESUME moved to 2026-07-01 this no longer shuts the drip on its
+    # own — only a recorded attention signal does.
     assert cg.should_run(watch["last_edit"], watch["last_edit"])
     assert watch["project_chat_hold"] is False
 
@@ -76,9 +72,8 @@ def test_project_chat_hold_is_read_and_blocks_indefinitely(tmp_path, monkeypatch
                              project_chat_hold=True)
 
 
-def test_the_drip_runs_with_the_real_current_state():
-    """Since HARD_RESUME moved to 2026-07-01, the edit-rate pause never binds;
-    only a live attention signal can shut the drip."""
+def test_the_drip_is_paused_with_the_real_current_state():
+    """The cap is past, so only attention pauses us now."""
     assert cg.should_run(TODAY, datetime.date(2026, 7, 10))
     assert not cg.should_run(TODAY, datetime.date(2026, 7, 10),
                              noticeboard_mention=datetime.date(2026, 7, 9))

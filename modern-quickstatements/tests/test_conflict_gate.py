@@ -24,13 +24,29 @@ D = datetime.date
 
 # ─────────────────────── global pause ───────────────────────
 
-def test_hard_cap_opens_the_gate_even_if_they_never_stop():
-    """The load-bearing one: no editor gets a permanent veto.
+def test_one_week_floor_holds_even_if_they_stopped_long_ago():
+    """They last edited in 2023 — the cap (now past) opens the drip regardless."""
+    assert cg.resume_date(D(2023, 3, 17)) == cg.HARD_RESUME
+    assert cg.should_run(D(2026, 7, 10), D(2023, 3, 17))
+    assert cg.should_run(D(2026, 7, 17), D(2023, 3, 17))
 
-    Emma moved HARD_RESUME to 2026-07-01 on 2026-07-21 ("he did one edit …
-    he's not the threat that we think he is"), so the cap is now in the past
-    and the routine edit-rate pause no longer binds at all.
-    """
+
+def test_pause_extends_while_they_keep_editing():
+    """An edit today used to push resume seven days out; the past-dated cap wins."""
+    assert cg.resume_date(D(2026, 7, 20)) == cg.HARD_RESUME
+    assert cg.should_run(D(2026, 7, 26), D(2026, 7, 20))
+    assert cg.should_run(D(2026, 7, 27), D(2026, 7, 20))
+
+
+def test_editing_every_day_keeps_the_drip_off_until_the_cap():
+    """Simulate them editing daily. The cap is past, so the gate stays open."""
+    for day in range(10, 31):                     # 2026-07-10 … 2026-07-30
+        today = D(2026, 7, day)
+        assert cg.should_run(today, today), today
+
+
+def test_hard_cap_opens_the_gate_even_if_they_never_stop():
+    """The load-bearing one: no editor gets a permanent veto."""
     assert cg.resume_date(D(2026, 8, 7)) == cg.HARD_RESUME
     assert cg.resume_date(D(2026, 9, 1)) == cg.HARD_RESUME
     assert cg.should_run(cg.HARD_RESUME, D(2026, 8, 7))
@@ -43,20 +59,21 @@ def test_resume_date_never_exceeds_the_hard_cap():
         assert cg.resume_date(last) <= cg.HARD_RESUME
 
 
-def test_the_edit_rate_pause_no_longer_binds():
-    """With the cap in the past, editing every day does not hold the drip."""
-    for day in range(10, 31):                     # 2026-07-10 … 2026-07-30
-        today = D(2026, 7, day)
-        assert cg.should_run(today, today), today
-
-
 def test_no_edits_at_all_means_just_the_floor():
     assert cg.resume_date(None) == cg.MIN_PAUSE_UNTIL
 
 
-def test_pause_reason_is_none_when_nothing_binds():
+def test_the_drip_is_off_today():
+    """With HARD_RESUME moved to 2026-07-01, the gate is open."""
+    assert cg.should_run(D(2026, 7, 10), D(2026, 7, 10))
+
+
+def test_pause_reason_is_none_exactly_when_running():
     assert cg.pause_reason(D(2026, 8, 8), D(2026, 8, 8)) is None
     assert cg.pause_reason(D(2026, 7, 10), D(2026, 7, 10)) is None
+    # An attention signal still produces a reason.
+    assert cg.WATCHED_USER in cg.pause_reason(
+        D(2026, 7, 10), D(2026, 7, 10), noticeboard_mention=D(2026, 7, 9))
 
 
 # ─────────────────────── per-item freshness ───────────────────────
@@ -114,9 +131,7 @@ def test_blocking_editor_is_none_when_fresh():
 def test_policy_constants_match_emmas_instruction():
     assert cg.QUIET_DAYS == 7
     assert cg.MIN_PAUSE_UNTIL == D(2026, 7, 17)   # a one-week pause from 2026-07-10
-    # Was 2026-08-08 ("a week into August"); Emma moved it to 2026-07-01 on
-    # 2026-07-21 — in the past, so the edit-rate pause no longer binds.
-    assert cg.HARD_RESUME == D(2026, 7, 1)
+    assert cg.HARD_RESUME == D(2026, 7, 1)        # moved back by Emma 2026-07-21
     assert cg.ATTENTION_PAUSE_DAYS == 30          # "a month-long pause"
     assert cg.WATCHED_USER == "ブルーノ・プラス"
 
@@ -146,12 +161,11 @@ def test_attention_overrides_the_hard_cap():
 
 def test_the_real_april_talk_thread_no_longer_binds():
     """Their talk page last saw activity 2026-04-24; 30 days later is 2026-05-24,
-    which is already past. Nothing binds — the routine cap is past too."""
+    which is already past. The routine gate binds instead."""
     assert cg.resume_date(D(2026, 7, 10), talk_activity=D(2026, 4, 24)) == cg.HARD_RESUME
-    assert cg.should_run(D(2026, 7, 21), D(2026, 7, 10), talk_activity=D(2026, 4, 24))
 
 
-def test_old_attention_does_not_extend_a_later_pause():
+def test_old_attention_does_not_extend_a_later_routine_pause():
     """max(), not sum(): attention in April is spent by July."""
     assert cg.resume_date(D(2026, 7, 20), talk_activity=D(2026, 4, 1)) == cg.HARD_RESUME
 
