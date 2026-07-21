@@ -51,8 +51,8 @@ Q11677857	Koganeyama Shrine (Ishinomaki)	parent=Q135040009 (Kesemano Shrine)	ran
 Q11481363	Jogu Shrine	parent=Q135040139 (Ameyahoyorotsu- Shrine)	ranking=1	P13677_count=3	via P460
 Q135194870	Ōanamochi Miyo Shrine	parent=Q135040309 (Kumakafutsuarakashihikono Shrine)	ranking=2	P13677_count=2	via P460
 Q135194870	Ōanamochi Miyo Shrine	parent=Q135040311 (Ohonamochinokamikataishino Shrine)	ranking=2	P13677_count=2	via P460
-Q135195732	Q135195732	parent=Q135040778 (Nimasukarakuniitateno Shrine)	ranking=3	P13677_count=2	via P460
-Q135195732	Q135195732	parent=Q135040907 (Sakutano Shrine)	ranking=1	P13677_count=2	via P460
+Q135195607	Hinomisaki Shrine (branch shrine outside the precincts of Hongū Shrine)	parent=Q135040778 (Nimasukarakuniitateno Shrine)	ranking=3	P13677_count=2	via P460
+Q135195607	Hinomisaki Shrine (branch shrine outside the precincts of Hongū Shrine)	parent=Q135040907 (Sakutano Shrine)	ranking=1	P13677_count=2	via P460
 Q135070147	Hekireki Shrine	parent=Q135041120 (Hiyakurakuno Shrine)	ranking=1	P13677_count=2	via P460
 Q11378828	Iyo Shrine	parent=Q135041429 (Iyono Shrine)	ranking=1	P13677_count=2	via P460
 Q11378828	Iyo Shrine	parent=Q135041437 (Iyotsuhikono- Shrine)	ranking=0	P13677_count=2	via P460
