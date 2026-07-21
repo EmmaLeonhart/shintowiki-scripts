@@ -1,92 +1,33 @@
-"""The caution gate around ブルーノ・プラス (Emma 2026-07-10).
+"""The per-item freshness gate.
 
-Two properties matter most and are pinned hardest:
+The person-specific caution gate around ブルーノ・プラス was removed 2026-07-21
+(Emma: "he's not the threat that we think he is … I thought we did, but we
+didn't"), and its tests went with it. What remains is the general rule: never
+edit an item another human touched inside the quiet window.
 
-  * while the watched editor keeps editing, the pause keeps extending;
-  * but the HARD CAP still opens the drip on 2026-08-08, because otherwise an
-    editor who never stops would hold a permanent veto over our pipeline.
-
-And the per-item gate must never block on OUR own edits, or the drip deadlocks
-itself after its first edit to any item.
+The property pinned hardest: the gate must never block on OUR own edits, or the
+drip deadlocks itself after its first edit to any item.
 """
 import datetime
 import os
 import sys
-
-import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import conflict_gate as cg  # noqa: E402
 
 D = datetime.date
-
-
-# ─────────────────────── global pause ───────────────────────
-
-def test_one_week_floor_holds_even_if_they_stopped_long_ago():
-    """They last edited in 2023 — the drip still waits for the one-week floor."""
-    assert cg.resume_date(D(2023, 3, 17)) == cg.MIN_PAUSE_UNTIL
-    assert not cg.should_run(D(2026, 7, 10), D(2023, 3, 17))
-    assert cg.should_run(D(2026, 7, 17), D(2023, 3, 17))
-
-
-def test_pause_extends_while_they_keep_editing():
-    """An edit today pushes the resume date seven days out."""
-    assert cg.resume_date(D(2026, 7, 20)) == D(2026, 7, 27)
-    assert not cg.should_run(D(2026, 7, 26), D(2026, 7, 20))
-    assert cg.should_run(D(2026, 7, 27), D(2026, 7, 20))
-
-
-def test_editing_every_day_keeps_the_drip_off_until_the_cap():
-    """Simulate them editing daily. The gate stays shut, then opens on the cap."""
-    for day in range(10, 31):                     # 2026-07-10 … 2026-07-30
-        today = D(2026, 7, day)
-        assert not cg.should_run(today, today), today
-
-
-def test_hard_cap_opens_the_gate_even_if_they_never_stop():
-    """The load-bearing one: no editor gets a permanent veto."""
-    assert cg.resume_date(D(2026, 8, 7)) == cg.HARD_RESUME
-    assert cg.resume_date(D(2026, 9, 1)) == cg.HARD_RESUME
-    assert cg.should_run(cg.HARD_RESUME, D(2026, 8, 7))
-    assert cg.should_run(D(2026, 8, 8), D(2026, 8, 8))    # editing that very day
-
-
-def test_resume_date_never_exceeds_the_hard_cap():
-    for offset in range(0, 400, 17):
-        last = D(2026, 7, 10) + datetime.timedelta(days=offset)
-        assert cg.resume_date(last) <= cg.HARD_RESUME
-
-
-def test_no_edits_at_all_means_just_the_floor():
-    assert cg.resume_date(None) == cg.MIN_PAUSE_UNTIL
-
-
-def test_the_drip_is_off_today():
-    """As of the day the policy was set, the gate must be shut."""
-    assert not cg.should_run(D(2026, 7, 10), D(2026, 7, 10))
-
-
-def test_pause_reason_is_none_exactly_when_running():
-    assert cg.pause_reason(D(2026, 8, 8), D(2026, 8, 8)) is None
-    assert cg.pause_reason(D(2026, 7, 10), D(2026, 7, 10)) is not None
-    assert cg.WATCHED_USER in cg.pause_reason(D(2026, 7, 10), D(2026, 7, 10))
+TODAY = D(2026, 7, 10)
 
 
 # ─────────────────────── per-item freshness ───────────────────────
 
-TODAY = D(2026, 7, 10)
-
-
 def test_item_touched_by_another_user_yesterday_is_blocked():
-    revs = [("ブルーノ・プラス", D(2026, 7, 9))]
-    assert not cg.is_item_fresh_enough(revs, TODAY)
+    assert not cg.is_item_fresh_enough([("SomeEditor", D(2026, 7, 9))], TODAY)
 
 
 def test_item_touched_by_another_user_eight_days_ago_is_allowed():
-    revs = [("ブルーノ・プラス", D(2026, 7, 2))]
-    assert cg.is_item_fresh_enough(revs, TODAY)
+    assert cg.is_item_fresh_enough([("SomeEditor", D(2026, 7, 2))], TODAY)
 
 
 def test_our_own_recent_edits_never_block_us():
@@ -128,95 +69,12 @@ def test_blocking_editor_is_none_when_fresh():
 
 def test_policy_constants_match_emmas_instruction():
     assert cg.QUIET_DAYS == 7
-    assert cg.MIN_PAUSE_UNTIL == D(2026, 7, 17)   # a one-week pause from 2026-07-10
-    assert cg.HARD_RESUME == D(2026, 8, 8)        # "a week into August"
-    assert cg.ATTENTION_PAUSE_DAYS == 30          # "a month-long pause"
-    assert cg.WATCHED_USER == "ブルーノ・プラス"
+    assert cg.OUR_ACCOUNTS == {"Immanuelle", "EmmaBot"}
 
 
-# ─────────────────────── attention: the three signals ───────────────────────
-
-def test_talk_page_activity_triggers_a_month_long_pause():
-    """'If there has been any activity within a month on their talk page, then
-    there will be a month of no edits.'"""
-    assert cg.resume_date(D(2026, 7, 10), talk_activity=D(2026, 7, 10)) == D(2026, 8, 9)
-    assert not cg.should_run(D(2026, 8, 8), D(2026, 7, 10), talk_activity=D(2026, 7, 10))
-    assert cg.should_run(D(2026, 8, 9), D(2026, 7, 10), talk_activity=D(2026, 7, 10))
-
-
-def test_noticeboard_mention_triggers_a_month_long_pause():
-    assert cg.resume_date(D(2026, 7, 10), noticeboard_mention=D(2026, 7, 10)) == D(2026, 8, 9)
-
-
-def test_attention_overrides_the_hard_cap():
-    """The cap exists to stop a busy editor vetoing us — not to force us to edit
-    into a live noticeboard thread."""
-    board = D(2026, 8, 1)
-    assert cg.resume_date(D(2026, 8, 1), noticeboard_mention=board) == D(2026, 8, 31)
-    assert cg.resume_date(D(2026, 8, 1), noticeboard_mention=board) > cg.HARD_RESUME
-    assert not cg.should_run(cg.HARD_RESUME, D(2026, 8, 1), noticeboard_mention=board)
-
-
-def test_the_real_april_talk_thread_no_longer_binds():
-    """Their talk page last saw activity 2026-04-24; 30 days later is 2026-05-24,
-    which is already past. The routine gate binds instead."""
-    assert cg.resume_date(D(2026, 7, 10), talk_activity=D(2026, 4, 24)) == D(2026, 7, 17)
-
-
-def test_old_attention_does_not_extend_a_later_routine_pause():
-    """max(), not sum(): attention in April is spent by July."""
-    assert cg.resume_date(D(2026, 7, 20), talk_activity=D(2026, 4, 1)) == D(2026, 7, 27)
-
-
-def test_the_latest_of_the_two_dated_signals_wins():
-    r = cg.resume_date(D(2026, 7, 10), talk_activity=D(2026, 7, 1),
-                       noticeboard_mention=D(2026, 7, 5))
-    assert r == D(2026, 8, 4)
-
-
-def test_no_attention_leaves_the_routine_gate_untouched():
-    assert cg.resume_date(D(2026, 7, 20), None, None) == cg.resume_date(D(2026, 7, 20))
-
-
-def test_attention_pause_applies_even_if_they_have_stopped_editing():
-    """Attention outlives their activity — that is the whole point."""
-    assert not cg.should_run(D(2026, 7, 25), D(2023, 3, 17), talk_activity=D(2026, 7, 20))
-
-
-# ─────────────────────── 井戸端: indefinite hold ───────────────────────
-
-def test_project_chat_presence_holds_indefinitely():
-    """Emma: the Japanese project chat expires threads at 90 days and gets necroed,
-    so presence of the name is a hold with no expiry date at all."""
-    assert cg.resume_date(D(2026, 7, 10), project_chat_hold=True) is None
-    assert not cg.should_run(D(2026, 7, 10), D(2026, 7, 10), project_chat_hold=True)
-
-
-def test_project_chat_hold_beats_every_other_signal():
-    for today in (D(2026, 8, 8), D(2027, 1, 1), D(2030, 1, 1)):
-        assert not cg.should_run(today, D(2023, 3, 17), project_chat_hold=True)
-
-
-def test_project_chat_hold_beats_the_hard_cap():
-    assert not cg.should_run(cg.HARD_RESUME, None, project_chat_hold=True)
-
-
-def test_hold_lifts_when_the_name_leaves_the_page():
-    """No date expires it; the next clean scan does."""
-    assert cg.resume_date(D(2023, 3, 17), project_chat_hold=True) is None
-    assert cg.resume_date(D(2023, 3, 17), project_chat_hold=False) == cg.MIN_PAUSE_UNTIL
-
-
-def test_pause_reason_names_the_project_chat_hold():
-    r = cg.pause_reason(D(2030, 1, 1), D(2023, 3, 17), project_chat_hold=True)
-    assert "HELD INDEFINITELY" in r and "井戸端" in r
-
-
-def test_pause_reason_names_the_noticeboard_when_it_binds():
-    r = cg.pause_reason(D(2026, 8, 8), D(2026, 7, 10), noticeboard_mention=D(2026, 8, 1))
-    assert "administrators' noticeboard" in r
-
-
-def test_pause_reason_names_the_talk_page_when_it_binds():
-    r = cg.pause_reason(D(2026, 8, 8), D(2026, 7, 10), talk_activity=D(2026, 8, 1))
-    assert "talk page" in r
+def test_the_person_specific_gate_is_gone():
+    """Regression guard: the global pause must not creep back in silently."""
+    for removed in ("WATCHED_USER", "MIN_PAUSE_UNTIL", "HARD_RESUME",
+                    "should_run", "pause_reason", "resume_date",
+                    "ATTENTION_PAUSE_DAYS"):
+        assert not hasattr(cg, removed), removed
