@@ -760,6 +760,20 @@ def main():
 
             try:
                 success, msg = execute_line(session, csrf, parsed)
+                # The CSRF token is issued once at login and expires mid-run. Run
+                # 29877450149 (2026-07-21) logged in at 23:33, hit its first
+                # "Invalid CSRF token" at 02:57 — 3h24m in — and then every
+                # remaining edit failed: 99 of that run's 106 failures were this
+                # one cause. Re-login once and retry the line before counting it
+                # as a failure.
+                if not success and "Invalid CSRF token" in msg:
+                    print("  CSRF token expired — re-logging in and retrying")
+                    new_session, new_csrf = wd_login()
+                    if new_session:
+                        session, csrf = new_session, new_csrf
+                        success, msg = execute_line(session, csrf, parsed)
+                    else:
+                        msg = "re-login failed after CSRF expiry"
                 if success:
                     print(f"  OK: {msg}")
                     succeeded += 1
