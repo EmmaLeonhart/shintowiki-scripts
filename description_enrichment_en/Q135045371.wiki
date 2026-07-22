@@ -1,10 +1,10 @@
 <!-- GROUP: id|Kuil Hachiman | proposed-collides: bangunan kuil di Jepang -->
 <!-- STAGE: EN-first (docs/description_enrichment_pipeline.md) -->
 <!-- ANSWERS:
-Q135045371: 
-Q135187123: 
-Q135193644: 
-Q135193846: 
+Q135045371: Shinto shrine in Japan, candidate for Suisaki-no-kami Shrine
+Q135187123: Shinto shrine in Nakashima district, Owari Province, Japan
+Q135193644: Shinto shrine in Azai district, Ōmi Province, Japan
+Q135193846: Shinto shrine in Japan, candidate for Nakagawa Shrine
 -->
 <!-- TASK: every member of this group shares the same label and would get the same standardized description — they need UNIQUE, informative ENGLISH descriptions. Using each member's context below (municipality, deities, and anything you can see on the item), write one short English description per member that (a) says what it is, (b) distinguishes it from every other member, and (c) stays in the normal Wikidata description register (lowercase start, no final period), e.g. 'Shinto shrine in Maebashi, Gunma Prefecture, Japan'. Municipality-level location is usually the cheapest distinguisher; add the deity or a local place-name when members share a municipality. Fill each line of the ANSWERS block after its QID. Leave a line EMPTY if you cannot find anything distinguishing. Do NOT edit Wikidata yourself — a collector turns answers into QuickStatements later. -->
 
