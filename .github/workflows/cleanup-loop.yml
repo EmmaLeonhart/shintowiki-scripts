@@ -439,18 +439,27 @@ jobs:
     uses: ./.github/workflows/render-duplicate-qids.yml
     secrets: inherit
 
-  # Random delay only on cron schedule, not on push.
+  # Random delay only on cron schedule, not on push. Moved to the FRONT of the
+  # pipeline (2026-07-23, Emma): the Wikidata-editing block now runs first, so the
+  # random pre-edit delay gates submit-quickstatements here, right after the QS
+  # files are generated — not after the orchestrator chain.
   random-wait:
-    needs: [window-gate, render-duplicate-qids]
+    needs: [window-gate, generate-quickstatements]
     if: github.event_name == 'schedule'
     uses: ./.github/workflows/random-wait.yml
 
-  # On push: submit immediately after orchestrators
-  # On cron: submit after random wait
-  # Daily-fire gate keeps total wikidata edits/day bounded.
+  # Wikidata-editing block — MOVED TO THE FRONT of the pipeline (2026-07-23, Emma:
+  # "I want the direct daily edits to be the first part of the pipeline, not the
+  # last part"). It now runs right after generate-quickstatements (+ random-wait on
+  # cron), in parallel with the miraheze orchestrator chain, instead of as the ~5h
+  # tail. It only needs the generated QuickStatements .txt files; it does NOT touch
+  # the miraheze wiki, so it no longer depends on cleanup / the syncs / the
+  # orchestrators (those deps were about the miraheze wiki being in its desired
+  # state, which is irrelevant to Wikidata edits). Daily-fire gate keeps total
+  # wikidata edits/day bounded.
   submit-quickstatements:
-    needs: [window-gate, talk-orchestrator, random-wait, cleanup]
-    if: always() && needs.cleanup.result != 'cancelled' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
+    needs: [window-gate, generate-quickstatements, random-wait]
+    if: always() && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/submit-quickstatements.yml
     secrets: inherit
 
@@ -469,11 +478,15 @@ jobs:
     if: always()
     uses: ./.github/workflows/build-run-history.yml
 
-  # Fallback: if QS submission failed, apply edits directly via Wikidata API
-  # This is the absolute last step — random 1-5 min intervals, no rush.
-  # Daily-fire gated so it doesn't kick off on every 6h cron.
+  # Fallback: if QS submission failed, apply edits directly via Wikidata API.
+  # Random 1-5 min intervals (~5h for ~50 edits), no rush. Still the QS-executing
+  # FALLBACK — only fires when submit-quickstatements reports qs-failed — but now at
+  # the FRONT with the rest of the Wikidata block (2026-07-23, Emma): it runs right
+  # after submit-quickstatements instead of after the orchestrators + build-run-history,
+  # so the Wikidata edits are the first thing the pipeline does, not the last.
+  # Daily-fire gated so it doesn't kick off on every cron.
   direct-daily-edits:
-    needs: [window-gate, submit-quickstatements, build-run-history]
+    needs: [window-gate, submit-quickstatements]
     if: always() && needs.submit-quickstatements.outputs.qs-failed == 'true' && needs.window-gate.outputs.wikidata-daily-fire == 'true'
     uses: ./.github/workflows/direct-daily-edits.yml
     secrets: inherit
