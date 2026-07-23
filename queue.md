@@ -146,6 +146,18 @@ sorted by how much was lost. https://emmaleonhart.github.io/shintowiki-scripts/e
 
 ---
 
+## ❓ Court-rank (P14005) people pipeline — decisions pending (Emma 2026-07-23)
+
+New generator `modern-quickstatements/generate_court_rank_quickstatements.py` tags PEOPLE with
+P14005 (Japanese court rank) from the ja.wp [[Category:日本の位階受位者]] recipient tree. Built +
+smoke-tested, add-only, NOT wired into `generate-quickstatements.yml` yet (won't run; Wikidata drip
+paused by conflict_gate until ~2026-08-08 anyway). Blocker: Wikidata has only the 16 BASE rank items;
+27 of 42 ja.wp recipient categories are finer ranks (正四位上/下, 初位, 外位) with no item.
+- **ASK D1 (granular ranks):** *(A) collapse 上/下 to base rank, skip 初位/外位* / *(B) create the ~26
+  missing rank items first* / *(C) base ranks only for now* / *walk me through it*.
+- **ASK D2 (multiple ranks/person):** *every rank held* / *highest only* / *walk me through it*.
+- Once decided: set the branch, drop 无位 unless wanted, wire the step into `generate-quickstatements.yml`.
+
 ## Pinned tail (keep last)
 
 - [ ] Ensure the five session-local crons are running (this session: work-loop d6754ae5 :03,
