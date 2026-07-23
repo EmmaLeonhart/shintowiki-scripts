@@ -34,24 +34,15 @@ Flags
 
 429 from WDQS => bail immediately (repo rule). Read-only against both wikis.
 
-STATUS 2026-07-23 — NOT yet wired into generate-quickstatements.yml (so it never
-runs) pending two Emma decisions, and the whole Wikidata drip is paused by
-conflict_gate until ~2026-08-08 regardless.
-
-Findings from the live smoke test:
-  * Wikidata has only the 16 BASE court-rank items (正一位…正八位 + 无位), all
-    P31 = Q99196082 "court rank in Japan".
-  * The ja.wp recipient tree has 42 subcats; 15 match a base item, but 27 are
-    finer ranks with NO Wikidata item at all — the upper/lower splits (正四位上/下),
-    the 初位 tier (大初位上/下, 少初位上/下) and the 外位 (外従五位上/下).
-  So as-is this covers base-rank people only and skips everyone in a granular rank.
-
-OPEN DECISIONS (Emma):
-  D1. Granular ranks with no item — (A) collapse 上/下 to the base rank item
-      (正四位上受位者 → 正四位), skip 初位/外位 which have no base either; (B) create
-      the ~26 missing rank items first, then map exactly; (C) base ranks only for now.
-  D2. Multiple ranks per person — emit EVERY rank held (default), or --highest-only.
-  Minor: 无位 ("no rank", Q11504610) is currently in the map; likely should be skipped.
+STATUS 2026-07-23 — decisions made; the 26 sub-rank items now exist (created by
+Emma, Q140679480…Q140679509). Rank map is by primary ja label under the court-rank
+class, so all 42 ja.wp per-rank categories now resolve; 无位 is skipped; recursion
+no longer double-tags a coarser parent rank. Every rank a person held is emitted.
+Still NOT wired into generate-quickstatements.yml — waiting on (a) the sub-rank
+parent-link batch (court_rank_subrank_links.txt) being run and its LINK_PROP
+confirmed, then (b) a live rerun of the matched/unmatched check once WDQS has
+indexed the new items. The whole Wikidata drip is paused by conflict_gate until
+~2026-08-08 regardless.
 """
 
 import os
@@ -116,16 +107,27 @@ def _ja_api(params):
     raise RuntimeError("ja.wikipedia API failed after retries")
 
 
+COURT_RANK_CLASS = "Q99196082"  # "court rank in Japan"
+# "no rank" — a member of the class but NOT a rank to tag people with; skip it.
+NO_RANK_QID = "Q11504610"       # 无位
+
+
 def rank_label_to_qid():
-    """{ja label of a court-rank item -> QID}, from items used as P14005 values."""
+    """{primary ja label of a court-rank item -> QID}, for every item under the
+    court-rank class. This is broader than "items used as P14005 values" (which
+    misses ranks not yet used) and now covers the sub-rank items created
+    2026-07-23, so every ja.wp per-rank recipient category resolves. 无位 (no
+    rank) is excluded."""
     rows = _sparql(
-        'SELECT DISTINCT ?item ?lab WHERE { '
-        '?x wdt:P14005 ?item . '
-        '?item rdfs:label ?lab . FILTER(LANG(?lab)="ja") }'
+        'SELECT ?item ?lab WHERE { '
+        '?item (wdt:P31|wdt:P279)/wdt:P279* wd:%s . '
+        '?item rdfs:label ?lab . FILTER(LANG(?lab)="ja") }' % COURT_RANK_CLASS
     )
     m = {}
     for b in rows:
         qid = b["item"]["value"].rsplit("/", 1)[1]
+        if qid == NO_RANK_QID:
+            continue
         m[b["lab"]["value"]] = qid
     return m
 
@@ -155,8 +157,12 @@ def subcategories(cat):
 
 
 def category_pages(cat, seen_cats):
-    """All ns=0 page titles under a category, recursing into subcategories
-    (every descendant of a rank category still holds that rank)."""
+    """All ns=0 page titles under a category, recursing into NON-rank
+    subcategories only. A subcategory that is itself a rank-recipient category
+    (name ends in 受位者) is a DIRECT child of the parent tree and is crawled on
+    its own top-level pass; recursing into it here would tag its people with the
+    coarser parent rank too (e.g. 従八位上受位者's members also getting 従八位).
+    Other subcats (by-era groupings etc.) share this category's rank, so recurse."""
     if cat in seen_cats:
         return []
     seen_cats.add(cat)
@@ -168,7 +174,9 @@ def category_pages(cat, seen_cats):
             if m["ns"] == 0:
                 titles.append(m["title"])
             elif m["ns"] == 14:
-                titles += category_pages(m["title"], seen_cats)
+                name = m["title"].split(":", 1)[1] if ":" in m["title"] else m["title"]
+                if not name.endswith(RANK_SUFFIX):
+                    titles += category_pages(m["title"], seen_cats)
         if "continue" in data:
             cont = data["continue"]
         else:

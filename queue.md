@@ -146,17 +146,20 @@ sorted by how much was lost. https://emmaleonhart.github.io/shintowiki-scripts/e
 
 ---
 
-## ⏸ Court-rank (P14005) people pipeline — waiting on Emma's item QIDs (2026-07-23)
+## ⏭ Court-rank (P14005) people pipeline — sub-rank links + wire-in (2026-07-23)
 
-Tags PEOPLE with P14005 (Japanese court rank) from the ja.wp [[Category:日本の位階受位者]] recipient
-tree. Decisions made: **create the missing rank items** (not collapse), **every rank held** per person.
-- ✅ **CREATE batch ready:** `modern-quickstatements/court_rank_item_creates.txt` (27 items: the 20
-  上/下 splits + 4 初位 + 2 外位 + base 従八位; each P31=Q99196082, ja+en label/desc). Emma runs it in
-  the QuickStatements web tool, then sends the 27 new QIDs back.
-- ⏭ **On receipt of QIDs:** extend `generate_court_rank_quickstatements.py` to map the granular ranks
-  to the new QIDs; dedup parent/child overlap (tag the MOST SPECIFIC rank only when a category nests
-  finer subcats); drop 无位; wire the step into `generate-quickstatements.yml`. Add-only, drips when
-  conflict_gate lifts (~2026-08-08).
+Tags PEOPLE with P14005 (Japanese court rank) from the ja.wp [[Category:日本の位階受位者]] tree.
+Decisions: create missing items (done), every rank held, primary-label rank map, skip 无位, no
+parent-rank double-tag.
+- ✅ 26 sub-rank items created by Emma (Q140679480…Q140679509); base ranks already existed.
+- ⏳ **Sub-rank parent links:** `court_rank_subrank_links.txt` ready (26 lines). Blocked on:
+  **ASK link property** — *P279 subclass-of* (default) / *P361 part-of* — and **外従五位上/下 parent**:
+  *外位 Q11430321* (default, where the alias sits) / *従五位 Q11071125*. Regenerate + Emma runs it.
+- ⏭ **Then:** rerun the people generator's matched/unmatched check once WDQS indexes the new items
+  (all 42 categories should resolve); wire the step into `generate-quickstatements.yml`. Add-only,
+  drips when conflict_gate lifts (~2026-08-08).
+- Note: base-rank items still carry the sub-rank names as skos aliases (e.g. 正四位 has "正四位上/下");
+  optional later cleanup to strip those now that the sub-ranks are their own items.
 
 ## Pinned tail (keep last)
 
