@@ -152,10 +152,11 @@ Tags PEOPLE with P14005 (Japanese court rank) from the ja.wp [[Category:日本�
 Decisions: create missing items (done), every rank held, primary-label rank map, skip 无位, no
 parent-rank double-tag.
 - ✅ 26 sub-rank items created by Emma (Q140679480…Q140679509); base ranks already existed.
-- ⏳ **Sub-rank parent links:** `court_rank_subrank_links.txt` ready — decisions made: **P361 part-of**;
-  **外従五位** base item is CREATED in this same batch (part of 外位 Q11430321) and its 上/下 linked to it
-  via LAST. 24 part-of lines + the 外従五位 create block, one paste. Emma runs it; then I grab the new
-  外従五位 QID (or the primary-label map picks it up once WDQS indexes).
+- ✅ Sub-rank parent links (P361) run; 外従五位 base created = **Q140679675** (part of 外位).
+- ⏳ **Bidirectional category links:** `court_rank_category_links.txt` ready (180 lines). For all 42
+  recipient categories: rank --P1792--> category and category --P301--> rank. 18 categories already had
+  items (link only); the other 24 are CREATEd here (jawiki sitelink + Category: label + P31 Q4167836)
+  then linked. Emma runs it. Add-only.
 - ⏭ **Then:** rerun the people generator's matched/unmatched check once WDQS indexes the new items
   (all 42 categories should resolve); wire the step into `generate-quickstatements.yml`. Add-only,
   drips when conflict_gate lifts (~2026-08-08).
