@@ -122,13 +122,13 @@
       "description": "Kokuhei-sha, Kanpei-sha, and ritual offering types",
       "source_property": "P31",
       "determined_by": "Q135009120",
-      "total": 4784,
+      "total": 4765,
       "remaining": 0,
-      "completed": 4784,
+      "completed": 4765,
       "add_file": "migrate_ritsuryo_funding_add.txt",
       "remove_file": "migrate_ritsuryo_funding_remove.txt",
       "add_lines": 0,
-      "remove_lines": 4778,
+      "remove_lines": 4759,
       "underspec_file": "migrate_ritsuryo_funding_underspecified_remove.txt",
       "underspec_lines": 6
     }
