@@ -170,9 +170,12 @@ parent-rank double-tag.
 ## 🤖 Shrine external-ID entity resolution (Emma 2026-07-24)
 
 Resolve our shrine/deity items to external DBs → add-only external-ID QuickStatements, dripped.
-- 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (26). From genbu.net citations
-  already in our articles (synced *.wiki; live wiki is 403'd) → page QID via P11250. Registered in
-  ATOMIC_FILES; drips. Full-wiki coverage needs exturlusage once the 403 clears.
+- 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (**144**). Two sources: (A) crawl
+  genbu.net's 9 regional indexes (2,295 shrines) → exact ja-label match to a unique Shinto-shrine item;
+  (B) genbu URLs cited in our synced *.wiki → QID via P11250. Registered; drips. Coverage levers to reach
+  "nearly all" (Emma wants more): genbu uses OLD-kanji (kyūjitai 櫻/國/靈/稻) vs our shinjitai labels — a
+  kyūjitai→shinjitai normalize would recover many; + province disambiguation (genbu path province ↔ item
+  province) for ambiguous names. Live-wiki citations still capped by the miraheze 403.
 - 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (77). Scrapes Kokugakuin's
   ~338-kami DB (shortlink ?p= id + kanji name) → exact ja-label match. Registered; drips. 256 kami had
   no exact-label match — a fuzzy/alias pass could recover more later.
