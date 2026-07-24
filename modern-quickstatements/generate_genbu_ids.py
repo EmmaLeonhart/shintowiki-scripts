@@ -41,6 +41,16 @@ GENBU_URL_RE = re.compile(r"https?://(?:www\.)?genbu\.net/(.+?)\.htm", re.I)
 INDEX_LINK_RE = re.compile(r'href="([^"]*data/[^"]+_title)\.htm"[^>]*>([^<]+)<')
 PAREN_RE = re.compile(r"[(（].*?[)）]\s*$")
 
+# genbu.net writes shrine names in kyūjitai (old kanji); our Wikidata labels are
+# shinjitai (modern). Normalise the common old→new forms so the names match.
+KYUJI = dict(zip(
+    "櫻國靈稻眞邊邉齋齊濱澤廣圓榮惠壽禮樂氣學應藝龍縣號舊會觀關峽狹溪劍嚴兒寫從莊增藏傳德拜賣寶豐萬滿與樣來亂覽兩綠圖團斷鐵轉點燈當佛變步藥錄淺淨靜瀨髙鹽惡醫假價擧據驅徑溫穩勸歡樞禰祿",
+    "桜国霊稲真辺辺斎斉浜沢広円栄恵寿礼楽気学応芸竜県号旧会観関峡狭渓剣厳児写従荘増蔵伝徳拝売宝豊万満与様来乱覧両緑図団断鉄転点灯当仏変歩薬録浅浄静瀬高塩悪医仮価挙拠駆径温穏勧歓枢禰禄"))
+
+
+def to_shinjitai(name):
+    return name.translate({ord(k): v for k, v in KYUJI.items()})
+
 
 def _utf8():
     try:
@@ -98,14 +108,20 @@ def genbu_index():
 
 
 def shrine_label_qids(names):
-    """{ja label -> [shrine-item QIDs]} for the names (Shinto-shrine items only)."""
+    """{ja name -> [shrine-item QIDs]} where the name matches a Shinto-shrine item's
+    ja label OR ja alias (skos:altLabel — many items carry the kyūjitai form there)."""
     out, uniq = {}, sorted(set(names))
-    for i in range(0, len(uniq), 120):
-        chunk = uniq[i:i + 120]
+    for i in range(0, len(uniq), 50):
+        chunk = uniq[i:i + 50]
         values = " ".join('"%s"@ja' % n.replace('\\', '\\\\').replace('"', '\\"') for n in chunk)
-        rows = _sparql(
-            "SELECT ?i ?lab WHERE { VALUES ?lab { %s } "
-            "?i rdfs:label ?lab ; wdt:P31/wdt:P279* wd:%s }" % (values, SHRINE_CLASS))
+        try:
+            rows = _sparql(
+                "SELECT ?i ?lab WHERE { VALUES ?lab { %s } "
+                "?i (rdfs:label|skos:altLabel) ?lab ; wdt:P31/wdt:P279* wd:%s }"
+                % (values, SHRINE_CLASS))
+        except Exception as e:
+            print(f"  [chunk {i//50} skipped] {e}", flush=True)
+            continue
         for b in rows:
             out.setdefault(b["lab"]["value"], []).append(b["i"]["value"].rsplit("/", 1)[1])
     return out
@@ -153,18 +169,25 @@ def main():
     have = existing_p13930()
     qid_to_id = {}                       # QID -> genbu id (citations take precedence)
 
-    # A — broad genbu index
+    # A — broad genbu index. Match each name in BOTH its raw (kyūjitai) form and its
+    # shinjitai-normalised form, against shrine labels+aliases.
     names = genbu_index()
     print(f"genbu index: {len(names)} distinct shrine names", flush=True)
-    lab_qids = shrine_label_qids(list(names))
+    all_forms = set()
+    for name in names:
+        all_forms.add(name)
+        all_forms.add(to_shinjitai(name))
+    lab_qids = shrine_label_qids(all_forms)
     a_count = 0
     for name, paths in names.items():
         if len(paths) != 1:
             continue                     # ambiguous on the genbu side
-        qids = lab_qids.get(name, [])
+        qids = set()
+        for form in (name, to_shinjitai(name)):
+            qids.update(lab_qids.get(form, []))
         if len(qids) != 1:
-            continue                     # 0 or >1 shrine items with this label
-        qid_to_id.setdefault(qids[0], next(iter(paths)))
+            continue                     # 0 or >1 distinct shrine items
+        qid_to_id.setdefault(next(iter(qids)), next(iter(paths)))
         a_count += 1
     print(f"broad matched: {a_count}", flush=True)
 
