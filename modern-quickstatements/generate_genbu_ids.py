@@ -52,6 +52,41 @@ def to_shinjitai(name):
     return name.translate({ord(k): v for k, v in KYUJI.items()})
 
 
+_MACRON = str.maketrans("āīūēōĀĪŪĒŌ", "aiueoAIUEO")
+
+
+def strip_macron(s):
+    return s.translate(_MACRON)
+
+
+# genbu old-province path code -> modern prefecture name(s). Used to disambiguate
+# same-named shrines: the genbu path province picks which candidate (identified by
+# its P131* prefecture) is the correct one. Names are matched macron-insensitively
+# against the prefecture item's en label (startswith), so "Hyogo" hits "Hyōgo Prefecture".
+GENBU_PROV_PREF = {
+    "mutu": ["Aomori", "Iwate", "Miyagi", "Fukushima"], "tugaru": ["Aomori"],
+    "sinano": ["Nagano"], "yamato": ["Nara"], "tajima": ["Hyogo"], "oumi": ["Shiga"],
+    "etizen": ["Fukui"], "wakasa": ["Fukui"], "izu": ["Shizuoka"], "suruga": ["Shizuoka"],
+    "toutoumi": ["Shizuoka"], "ecyu": ["Toyama"], "etigo": ["Niigata"], "sado": ["Niigata"],
+    "izumo": ["Shimane"], "iwami": ["Shimane"], "oki": ["Shimane"], "kai": ["Yamanashi"],
+    "awa2": ["Tokushima"], "awa": ["Chiba"], "kazusa": ["Chiba"], "simofusa": ["Chiba", "Ibaraki"],
+    "yamasiro": ["Kyoto"], "tango": ["Kyoto"], "tanba": ["Kyoto", "Hyogo"],
+    "ise": ["Mie"], "iga": ["Mie"], "sima": ["Mie"], "kii": ["Wakayama", "Mie"],
+    "noto": ["Ishikawa"], "kaga": ["Ishikawa"], "musasi": ["Tokyo", "Saitama", "Kanagawa"],
+    "sagami": ["Kanagawa"], "kouzuke": ["Gunma"], "simotuke": ["Tochigi"], "hitati": ["Ibaraki"],
+    "tusima": ["Nagasaki"], "iki": ["Nagasaki"], "hizen": ["Saga", "Nagasaki"],
+    "sanuki": ["Kagawa"], "mino": ["Gifu"], "hida": ["Gifu"], "mikawa": ["Aichi"], "owari": ["Aichi"],
+    "bizen": ["Okayama"], "bicchuu": ["Okayama"], "mimasaka": ["Okayama"],
+    "dewa": ["Yamagata", "Akita"], "iyo": ["Ehime"], "inaba": ["Tottori"], "houki": ["Tottori"],
+    "tosa": ["Kochi"], "suou": ["Yamaguchi"], "nagato": ["Yamaguchi"],
+    "tikuzen": ["Fukuoka"], "tikugo": ["Fukuoka"], "buzen": ["Fukuoka", "Oita"], "bungo": ["Oita"],
+    "bingo": ["Hiroshima"], "aki": ["Hiroshima"], "awaji": ["Hyogo"], "harima": ["Hyogo"],
+    "settu": ["Osaka", "Hyogo"], "kawati": ["Osaka"], "izumi": ["Osaka"],
+    "hyuga": ["Miyazaki"], "higo": ["Kumamoto"], "oosumi": ["Kagoshima"], "satuma": ["Kagoshima"],
+    "ezo": ["Hokkaido"], "ryukyu": ["Okinawa"],
+}
+
+
 def _utf8():
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -164,6 +199,41 @@ def existing_p13930():
     return {b["item"]["value"].rsplit("/", 1)[1] for b in rows}
 
 
+def prefecture_name_qids():
+    """{macron-stripped lowercased prefecture en label -> QID} for Japan prefectures."""
+    rows = _sparql('SELECT ?p ?l WHERE { ?p wdt:P31 wd:Q50337 ; '
+                   'rdfs:label ?l FILTER(LANG(?l)="en") }')
+    return {strip_macron(b["l"]["value"]).lower(): b["p"]["value"].rsplit("/", 1)[1]
+            for b in rows}
+
+
+def names_to_pref_qids(names, pref_map):
+    out = set()
+    for name in names:
+        key = strip_macron(name).lower()
+        for lab, qid in pref_map.items():
+            if lab.startswith(key):
+                out.add(qid)
+    return out
+
+
+def candidate_prefectures(qids):
+    """{shrine QID -> set of prefecture QIDs via P131*}."""
+    out, uniq = {}, sorted(qids)
+    for i in range(0, len(uniq), 80):
+        vals = " ".join("wd:%s" % q for q in uniq[i:i + 80])
+        try:
+            rows = _sparql("SELECT ?item ?p WHERE { VALUES ?item { %s } "
+                           "?item wdt:P131* ?p . ?p wdt:P31 wd:Q50337 }" % vals)
+        except Exception as e:
+            print(f"  [pref chunk {i//80} skipped] {e}", flush=True)
+            continue
+        for b in rows:
+            out.setdefault(b["item"]["value"].rsplit("/", 1)[1], set()).add(
+                b["p"]["value"].rsplit("/", 1)[1])
+    return out
+
+
 def main():
     _utf8()
     have = existing_p13930()
@@ -179,17 +249,40 @@ def main():
         all_forms.add(to_shinjitai(name))
     lab_qids = shrine_label_qids(all_forms)
     a_count = 0
+    ambiguous = {}                       # name -> (qids set, path, genbu province code)
     for name, paths in names.items():
         if len(paths) != 1:
             continue                     # ambiguous on the genbu side
+        path = next(iter(paths))
         qids = set()
         for form in (name, to_shinjitai(name)):
             qids.update(lab_qids.get(form, []))
-        if len(qids) != 1:
-            continue                     # 0 or >1 distinct shrine items
-        qid_to_id.setdefault(next(iter(qids)), next(iter(paths)))
-        a_count += 1
-    print(f"broad matched: {a_count}", flush=True)
+        if len(qids) == 1:
+            qid_to_id.setdefault(next(iter(qids)), path)
+            a_count += 1
+        elif len(qids) > 1:
+            m = re.match(r"data/([^/]+)/", path)
+            if m:
+                ambiguous[name] = (qids, path, m.group(1))
+    print(f"broad matched: {a_count} | name-ambiguous: {len(ambiguous)}", flush=True)
+
+    # province disambiguation — the genbu path province picks the right candidate
+    # among same-named shrines (by each candidate's P131* prefecture).
+    pref_map = prefecture_name_qids()
+    all_cand = set()
+    for qids, _, _ in ambiguous.values():
+        all_cand |= qids
+    cand_pref = candidate_prefectures(all_cand)
+    d_count = 0
+    for name, (qids, path, code) in ambiguous.items():
+        acceptable = names_to_pref_qids(GENBU_PROV_PREF.get(code, []), pref_map)
+        if not acceptable:
+            continue
+        survivors = [q for q in qids if cand_pref.get(q, set()) & acceptable]
+        if len(survivors) == 1:
+            qid_to_id.setdefault(survivors[0], path)
+            d_count += 1
+    print(f"province-disambiguated: {d_count}", flush=True)
 
     # B — citations (win on conflict)
     pages = cited_pages()
