@@ -153,10 +153,14 @@ Decisions: create missing items (done), every rank held, primary-label rank map,
 parent-rank double-tag.
 - ✅ 26 sub-rank items created by Emma (Q140679480…Q140679509); base ranks already existed.
 - ✅ Sub-rank parent links (P361) run; 外従五位 base created = **Q140679675** (part of 外位).
-- ⏳ **Bidirectional category links:** `court_rank_category_links.txt` ready (180 lines). For all 42
-  recipient categories: rank --P1792--> category and category --P301--> rank. 18 categories already had
-  items (link only); the other 24 are CREATEd here (jawiki sitelink + Category: label + P31 Q4167836)
-  then linked. Emma runs it. Add-only.
+- ✅ Bidirectional category links run (`court_rank_category_links.txt`): all 42 recipient categories
+  linked rank<->category (P1792/P301); the 24 missing category items created (Q140685601…).
+- ⏳ **Category English labels:** `court_rank_category_en_labels.txt` (42 lines) — sets
+  Len="Category:Recipients of <en rank>" on every recipient-category item. Add-only. Emma runs it.
+- ⏭ **People pipeline wire-in:** rerun the matched/unmatched check once WDQS indexes the new rank items,
+  then add the `generate_court_rank_quickstatements.py` step to `generate-quickstatements.yml`. NOTE: the
+  Wikidata drip is ACTIVE (conflict_gate cap moved to 2026-07-01; freeze expired 07-20) — it edits on the
+  next daily fire, no August wait.
 - ⏭ **Then:** rerun the people generator's matched/unmatched check once WDQS indexes the new items
   (all 42 categories should resolve); wire the step into `generate-quickstatements.yml`. Add-only,
   drips when conflict_gate lifts (~2026-08-08).

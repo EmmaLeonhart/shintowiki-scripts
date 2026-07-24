@@ -38,11 +38,11 @@ STATUS 2026-07-23 — decisions made; the 26 sub-rank items now exist (created b
 Emma, Q140679480…Q140679509). Rank map is by primary ja label under the court-rank
 class, so all 42 ja.wp per-rank categories now resolve; 无位 is skipped; recursion
 no longer double-tags a coarser parent rank. Every rank a person held is emitted.
-Still NOT wired into generate-quickstatements.yml — waiting on (a) the sub-rank
-parent-link batch (court_rank_subrank_links.txt) being run and its LINK_PROP
-confirmed, then (b) a live rerun of the matched/unmatched check once WDQS has
-indexed the new items. The whole Wikidata drip is paused by conflict_gate until
-~2026-08-08 regardless.
+Still NOT wired into generate-quickstatements.yml — waiting on a live rerun of the
+matched/unmatched check once WDQS has indexed the new items, then adding the step.
+The Wikidata drip is ACTIVE (conflict_gate hard cap was moved to 2026-07-01 and the
+window-gate freeze expired 2026-07-20), so once wired this WILL edit on the next
+daily fire — no August wait.
 """
 
 import os
