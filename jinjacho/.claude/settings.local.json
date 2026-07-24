@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "WebFetch(domain:www.gifu-jinjacho.jp)",
+      "WebFetch(domain:www.shizuoka-jinjacho.or.jp)",
+      "WebSearch",
+      "WebFetch(domain:www.jinjahoncho.or.jp)",
+      "WebFetch(domain:rokumeibunko.com)",
+      "Bash(curl:*)",
+      "WebFetch(domain:www.tokyo-jinjacho.or.jp)",
+      "WebFetch(domain:www.ishikawa-jinjacho.or.jp)",
+      "WebFetch(domain:www.okayama-jinjacho.or.jp)",
+      "Bash(python:*)",
+      "WebFetch(domain:www.jinjacho.jp)",
+      "WebFetch(domain:www.jinja-net.jp)",
+      "Bash(start \"\" \"C:\\\\Users\\\\Immanuelle\\\\Documents\\\\Github\\\\jinjacho\\\\index.html\")",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd verification script and HTML reference page for jinjacho research\n\n- index.html: Interactive reference page with all 48 prefectural jinjacho\n  links, color-coded by verification status, with search/filter\n- verify_templates.py: Script that tests 66 shrine detail URLs against\n  real Wikidata P856 data, checks HTTP status and shrine content keywords\n- verification_results.csv: Results showing 51/66 URLs return shrine\n  content, 9 return valid pages, only 6 failures \\(Cloudflare/403/SSL\\)\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git status:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>愛知県神社庁</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" type="text/css" href="css/import.css" />
+  <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="https://aichi-jinjacho.or.jp/favicon.ico">
+
+  <!-- レスポンシブ対応-->
+  <meta name="viewport" content="width=device-width">
+  <script src="/assets/js/fci.js" type="text/javascript"></script>
+  <script src="/assets/js/search.js?mode=query" type="text/javascript"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+  <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 時間でバナー表示・非表示切り替え
+      document.querySelectorAll(".js-time_limited").forEach(function (element) {
+        var appearTime = new Date(element.getAttribute("data-appear_time").replace(' ', 'T'));
+        var disappearTime = new Date(element.getAttribute("data-disappear_time").replace(' ', 'T'));
+        var currentTime = new Date();
+
+        // 時間範囲内でクラスの追加・削除
+        if (appearTime <= currentTime && currentTime <= disappearTime) {
+          element.classList.add("js-time_limited_fire");
+        } else {
+          element.classList.remove("js-time_limited_fire");
+        }
+      });
+    });
+
+  </script>
+  <style>
+    .js-time_limited {
+      display: none;
+    }
+
+    .js-time_limited_fire {
+      display: block;
+    }
+  </style>
+  <!-- レスポンシブ対応 アコーディオンメニュー-->
+  <link href="css/meanmenu.css" rel="stylesheet">
+  <script src="js/jquery.meanmenu.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      jQuery('nav').meanmenu();
+    });
+  </script>
+  <script src="js/jquery.skippr.min.js" type="text/javascript"></script>
+  <link href="css/jquery.skippr.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    $(function () {
+      $(".theTarget").skippr({
+        transition: 'fade',
+        navType: 'false',
+        arrows: 'false',
+        autoPlay: true,
+        loop: true,
+        autoPlayDuration: 4000
+      });
+
+    });
+
+  </script>
+  <script type="text/javascript">
+    $(function () {
+      $(".theTarget02").skippr({
+        transition: 'fade',
+        navType: 'false',
+        arrows: 'false',
+        autoPlay: true,
+        loop: true,
+        autoPlayDuration: 4000
+      });
+
+    });
+
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHNPJF9W2M"></script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-LHNPJF9W2M'); </script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="headerInner">
+      <div class="headerlogo"><a href="index.html"><img src="img/common/logo.png" alt="愛知県神社庁" /></a></div>
+      <div class="kinga js-time_limited" data-appear_time="2025-12-29 10:00:00"
+        data-disappear_time="2026-01-14 00:00:00"><img src="img/index/kinga2026.png"></div>
+    </div>
+    <div id="mainimg">
+      <div class="img01"></div>
+      <div class="theTarget">
+        <div style="background-image: url(img/index/mainimg01.jpg)"></div>
+        <div style="background-image: url(img/index/mainimg02.jpg)"></div>
+        <div style="background-image: url(img/index/mainimg03.jpg)"></div>
+        <div style="background-image: url(img/index/mainimg04.jpg)"></div>
+        <div style="background-image: url(img/index/mainimg05.jpg)"></div>
+      </div>
+      <!-- theTarget -->
+    </div>
+  </div>
+  <div id="gnavi" class="pcnone">
+    <div id="gnaviInner" class="clearfix">
+      <nav>
+        <ul>
+          <li class="pcnone"><a href="index.html">トップページ</a></li>
+          <li><a href="ofuda.html">お神札をまつろう</a></li>
+          <li><a href="ujigami.html">
+              <ruby>氏神様
+                <rt>うじがみさま</rt>
+              </ruby>
+              をさがそう</a></li>
+          <li><a href="aichi_omaturi.html">愛知のおまつり</a></li>
+          <li><a href="en.html">人の一生と神社の縁</a></li>
+          <li><a href="gyouji.html">日本の行事</a></li>
+          <li><a href="faq.html">神社ってなんだろう（神道・神社Q&amp;A）</a></li>
+          <li class="pcnone"><a href="omaturi_photo.html">郷土のまつり写真コンテスト</a></li>
+          <li class="pcnone"><a href="omaturi_gallery.html">郷土のお祭りの絵展</a></li>
+          <li class="pcnone"><a href="link.html">リンク集</a></li>
+          <!-- <li class="pcnone"><a href="priesthood_only.html">神職専用ログイン</a></li> -->
+        </ul>
+      </nav>
+    </div>
+    <!-- gnaviInner -->
+  </div>
+  <div id="indexcontents">
+    <div class="index01bg">
+      <div class="theTarget02">
+        <div style="background-image: url(img/index/mainimgSP01.png)"></div>
+        <div style="background-image: url(img/index/mainimgSP02.png)"></div>
+        <div style="background-image: url(img/index/mainimgSP03.png)"></div>
+      </div>
+      <!-- theTarget -->
+    </div>
+    <div class="index01" style="">
+      <div class="splogo"><a href="index.html"><img src="img/common/logo.png" alt="愛知県神社庁" /></a>
+      </div>
+      <!-- sp-謹賀新年 -->
+      <div class="kinga pcnone js-time_limited" data-appear_time="2025-12-29 10:00:00"
+        data-disappear_time="2026-01-14 00:00:00"><img src="img/index/kinga2026.png"></div>
+
+      <div class="contentsInner">
+        <div class="bnrbox01"><a href="ofuda.html"><img src="img/index/bnr_index01_01.png" class="spnone" /><img
+              src="img/index/bnr_index01_01SP.png" class="pcnone" /></a></div>
+
+        <div class="bnrbox02"><a href="faq.html"><img src="img/index/bnr_index01_02.png" class="img01" /></a></div>
+
+
+        <div class="bnrbox03 indexform" id="kensaku">
+          <div class="innbox"><img src="img/index/title_index01.png" class="imgtitle" />
+            <div class="bnraera03">
+              <div class="flexarea">
+                <form action="#">
+                  <input type="hidden" name="result_page" value="/search_result.html">
+                  <div>
+                    <!--<input type="text" placeholder="郵便番号">
+                  <br>-->
+                    <input type="text" name="addr" placeholder="住所" data-fci-event="shrine_search">
+                    <br>
+                    <input type="hidden" name="orders" value="addr,kana">
+                    <div class="formbtn01"><a href="#" data-fci-event="shrine_search_submit">検 索</a></div>
+                  </div>
+                  <p style="font-size:0.9em;line-height:1.4;margin-bottom:15px;">
+                    ※市町村合併等により、検索結果に神社が表示されない場合がございます。なお、検索は漢字でご入力ください。</p>
+                </form>
+                <div class="btnarea01">
+                  <div class="mapbtn01"><a href="search_map.html">地図から探す</a></div>
+                  <div class="ujikobtn01"><a href="ujigami.html"><ruby>氏子<rt>うじこ</rt></ruby>と<ruby>氏子<rt>うじこ</rt>
+                      </ruby>地域について</a></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="contentsInner">
+      <div class="indextopics">
+        <div class="border-top"></div>
+        <div class="title"><img src="img/index/title_topics.png" alt="" /></div>
+        <div class="topicsbnr"><a href="https://sengu63.aichi-jinjacho.or.jp/"><img src="img/index/topics_bnr02.png"
+              alt="式年遷宮" /></a>
+        </div>
+
+        <div class="topicsbnr"><a href="./shinsoubochi.html"><img src="img/index/topics_bnr_shinsousai.png"
+              alt="神葬墓地のご案内" /></a>
+        </div>
+
+        <div class="topicsbnr"> <a href="shougatu.html"><img src="img/index/topics_bnr01.png" alt="お正月のお神札について" /></a>
+          <iframe width="90%" height="100%" src="//www.youtube.com/embed/lcP3tbYdBDk?rel=0&autoplay=1&loop=11"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="border-bottom"></div>
+      </div>
+
+      <div class="indexnews">
+        <div class="border-top"></div>
+        <div class="title"><img src="img/index/title_news.png" alt="" /></div>
+        <p class="idexnews-text">
+          令和7年　5月　22日　　<br class="br-pc">
+          <a href="./shinsoubochi.html">「神葬墓地のご案内」ページを公開いたしました</a>
+        </p>
+        <br>
+        <p class="idexnews-text">
+          令和6年　10月　15日　　<br class="br-pc">
+          <a href="./sengu63/index.html">「式年遷宮」ページを公開いたしました</a>
+        </p>
+        <br>
+        <p class="idexnews-text">
+          令和5年　5月　12日　　<br class="br-pc">
+          <a href="#kensaku">「愛知県神社マップ」を公開いたしました</a>
+        </p>
+        <br>
+        <!-- <p class="idexnews-text">
+          令和4年　8月　1日　　<br class="br-pc">
+          ホームページをリニューアルいたしました
+        </p> -->
+        <div class="border-bottom"></div>
+      </div>
+
+    </div>
+    <div class="index02">
+      <div class="contentsInner">
+        <div class="flexarea">
+          <div class="img01"><a href="aichi_omaturi.html"><img src="img/index/img_index02_01.png" alt="" /></a> </div>
+          <div class="img01"><a href="en.html"><img src="img/index/img_index02_02.png" alt="" /></a> </div>
+          <div class="img01"><a href="gyouji.html"><img src="img/index/img_index02_03.png" alt="" /></a> </div>
+          <div class="img01"><a href="faq.html"><img src="img/index/img_index02_04.png" alt="" /></a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="index03">
+      <div class="contentsInner">
+        <div class="flexarea">
+          <div class="imgbox01"><a href="omaturi_photo.html">
+              <div class="stitle">郷土のまつり写真コンテスト</div>
+              <img src="img/index/img_index03_01.png" alt="" /> 過去の入賞作品をご覧いただけます。
+            </a> </div>
+          <div class="imgbox01"><a href="omaturi_gallery.html">
+              <div class="stitle">郷土のお祭の絵展</div>
+              <img src="img/index/img_index03_02.png" alt="" /> 過去の入賞作品をご覧いただけます。
+            </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagetop2"><a href="#header" class="jsmooth"><img src="img/totop.png" alt="このページの先頭へ" width="49"
+        height="49" class="mr20" /></a> </div>
+  <div class="clear"></div>
+  <div id="footer">
+    <div id="footernavi" class="spnone flexarea">
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="ofuda.html">お神札をまつろう</a></li>
+        <li><a href="ujigami.html">
+            <ruby>氏神様
+              <rt>うじがみさま</rt>
+            </ruby>
+            をさがそう</a></li>
+        <li><a href="aichi_omaturi.html">愛知のおまつり</a></li>
+        <li><a href="en.html">人の一生と神社の縁</a></li>
+        <li><a href="gyouji.html">日本の行事</a></li>
+      </ul>
+      <ul>
+        <li><a href="faq.html">神社ってなんだろう（神道・神社Q&amp;A）</a></li>
+        <li><a href="omaturi_photo.html">郷土のまつり写真コンテスト</a></li>
+        <li><a href="omaturi_gallery.html">郷土のお祭りの絵展</a></li>
+        <li><a href="link.html">リンク集</a></li>
+        <!--<!-- <li><a href="priesthood_only.html">神職専用ログイン</a></li> -->
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="copyright">(C)AICHIKENJINJACHO,All Rights Reserved.</div>
+  </div>
+  <!-- footer -->
+</body>
+
+</html>

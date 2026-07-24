@@ -1,0 +1,67 @@
+prefecture,note,status,length,verdict,title,keywords,url
+Gifu,syosai.php?shrno=193,200,5705,OK_SHRINE_CONTENT,(no title),"神社,祭神,由緒,住所",https://www.gifu-jinjacho.jp/syosai.php?shrno=193
+Gifu,syosai.php?shrno=2286,200,5701,OK_SHRINE_CONTENT,(no title),"神社,祭神,由緒,住所",https://www.gifu-jinjacho.jp/syosai.php?shrno=2286
+Gifu,syosai.php?shrno=142,200,5167,OK_SHRINE_CONTENT,(no title),"神社,祭神,由緒,住所",https://www.gifu-jinjacho.jp/syosai.php?shrno=142
+Gifu,syosai.php?shrno=798,200,5255,OK_SHRINE_CONTENT,(no title),"神社,祭神,由緒,住所",https://www.gifu-jinjacho.jp/syosai.php?shrno=798
+Gifu,syosai.php?shrno=1254,200,5684,OK_SHRINE_CONTENT,(no title),"祭神,鎮座,由緒,住所",https://www.gifu-jinjacho.jp/syosai.php?shrno=1254
+Hyogo,data/6301007,200,8896,OK_SHRINE_CONTENT,保久良神社｜兵庫県神社庁　神社検索,"神社,祭神,例祭,主祭神",https://www.hyogo-jinjacho.com/data/6301007.html
+Hyogo,data/6308105,200,8373,OK_SHRINE_CONTENT,芦井神社｜兵庫県神社庁　神社検索,"神社,祭神,例祭,主祭神",https://www.hyogo-jinjacho.com/data/6308105.html
+Hyogo,data/6322009,200,8150,OK_SHRINE_CONTENT,武内兵主神社｜兵庫県神社庁　神社検索,"神社,祭神,例祭,主祭神",https://www.hyogo-jinjacho.com/data/6322009.html
+Hyogo,data/6308071,200,8422,OK_SHRINE_CONTENT,イソ部神社(イソは山篇に石)｜兵庫県神社庁　神社検索,"神社,祭神,例祭,主祭神",https://www.hyogo-jinjacho.com/data/6308071.html
+Shizuoka,id=4413061,200,6259,OK_SHRINE_CONTENT,湊神社 - 静岡県神社庁,"神社,祭神,鎮座,由緒",http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4413061
+Shizuoka,id=4409164,200,5529,OK_SHRINE_CONTENT,若宮正八幡社 - 静岡県神社庁,"神社,鎮座",http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4409164
+Shizuoka,id=4402102,200,5554,OK_SHRINE_CONTENT,奈胡谷神社 - 静岡県神社庁,"神社,鎮座",http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402102
+Shizuoka,id=4402140,200,5520,OK_SHRINE_CONTENT,神明神社 - 静岡県神社庁,"神社,鎮座",http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402140
+Shizuoka,id=4415065,200,5959,OK_SHRINE_CONTENT,神明宮 - 静岡県神社庁,"神社,祭神,鎮座,由緒",http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4415065
+Shizuoka,id=4413004,200,5920,OK_SHRINE_CONTENT,六所神社 - 静岡県神社庁,"神社,祭神,鎮座,由緒",http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4413004
+Aichi,uuid=bb10f2cc,200,7159,OK_SHRINE_CONTENT,氏神様をさがそう | 愛知県神社庁,"神社,祭神,鎮座,住所",https://www.aichi-jinjacho.or.jp/search_detail.html?id=bb10f2cc-3e65-4e3f-aad0-e4259400d028
+Aichi,uuid=de0a002d,200,7159,OK_SHRINE_CONTENT,氏神様をさがそう | 愛知県神社庁,"神社,祭神,鎮座,住所",https://www.aichi-jinjacho.or.jp/search_detail.html?id=de0a002d-afb7-445a-9056-0b307ed4d4a9
+Aichi,uuid=c3f9cf79,200,7159,OK_SHRINE_CONTENT,氏神様をさがそう | 愛知県神社庁,"神社,祭神,鎮座,住所",https://www.aichi-jinjacho.or.jp/search_detail.html?id=c3f9cf79-b0b0-4b51-ba37-2dcd86867ca7
+Aichi,uuid=90cc869d,200,7159,OK_SHRINE_CONTENT,氏神様をさがそう | 愛知県神社庁,"神社,祭神,鎮座,住所",https://www.aichi-jinjacho.or.jp/search_detail.html?id=90cc869d-739e-4208-b108-91f4c98ba3de
+Ishikawa,j1706,403,0,HTTP_403,,,https://www.ishikawa-jinjacho.or.jp/shrine/j1706/
+Ishikawa,j1590,403,0,HTTP_403,,,https://www.ishikawa-jinjacho.or.jp/shrine/j1590/
+Ishikawa,j1730,403,0,HTTP_403,,,https://www.ishikawa-jinjacho.or.jp/shrine/j1730/
+Miyagi,code=310020365,200,19662,OK_SHRINE_CONTENT,宮城県神社庁,"神社,祭神,鎮座,由緒",https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020365
+Miyagi,code=310020456,200,19188,OK_SHRINE_CONTENT,宮城県神社庁,"神社,祭神,鎮座,由緒",https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020456
+Miyagi,code=310020547,200,18792,OK_SHRINE_CONTENT,宮城県神社庁,"神社,祭神,鎮座,由緒",https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020547
+Miyagi,code=310020562,200,19145,OK_SHRINE_CONTENT,宮城県神社庁,"神社,祭神,鎮座,由緒",https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020562
+Saitama,shrine/9107,200,37400,OK_SHRINE_CONTENT,埼玉県護國神社 ｜ 埼玉県の神社,"神社,鎮座,shrine",https://www.saitama-jinjacho.or.jp/shrine/9107/
+Saitama,shrine/9124,200,36691,OK_SHRINE_CONTENT,加茂神社 ｜ 埼玉県の神社,"神社,鎮座,shrine",https://www.saitama-jinjacho.or.jp/shrine/9124/
+Saitama,shrine/10223,200,37350,OK_SHRINE_CONTENT,皇大神社 ｜ 埼玉県の神社,"神社,鎮座,shrine",https://www.saitama-jinjacho.or.jp/shrine/10223/
+Saitama,shrine/9588,200,36691,OK_SHRINE_CONTENT,田中神社 ｜ 埼玉県の神社,"神社,鎮座,shrine",https://www.saitama-jinjacho.or.jp/shrine/9588/
+Okayama,search/18043,200,34352,OK_SHRINE_CONTENT,若宮八幡宮｜岡山県の神社を探す｜岡山県神社庁,"神社,祭神,鎮座,由緒",https://www.okayama-jinjacho.or.jp/search/18043/
+Okayama,search/16627,200,35261,OK_SHRINE_CONTENT,八幡神社｜岡山県の神社を探す｜岡山県神社庁,"神社,祭神,鎮座,由緒",https://www.okayama-jinjacho.or.jp/search/16627/
+Kyoto,shrine/14,200,27527,OK_SHRINE_CONTENT,京都府神社庁|亀岡市の神社紹介,"神社,shrine",https://www.kyoto-jinjacho.or.jp/shrine/14.html
+Osaka,funai_jinja/...,200,3628,OK_SHRINE_CONTENT,大阪府神社庁のホームページ,"神社,鎮座",https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01020kusasajinja.html
+Shiga,oid=630,200,7730,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=630
+Shiga,oid=526,200,7345,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=526
+Mie,Iso Shrine,200,175970,OK_SHRINE_CONTENT,三重県神社庁教化委員会 &raquo; 磯神社,"神社,祭神,鎮座,例祭",http://kyoka.mie-jinjacho.or.jp/shrine/%E7%A3%AF%E7%A5%9E%E7%A4%BE/
+Mie,Isedera Shrine,200,175927,OK_SHRINE_CONTENT,三重県神社庁教化委員会 &raquo; 伊勢寺神社,"神社,祭神,鎮座,例祭",http://kyoka.mie-jinjacho.or.jp/shrine/%E4%BC%8A%E5%8B%A2%E5%AF%BA%E7%A5%9E%E7%A4%BE/
+Mie,Takabuku,200,177116,OK_SHRINE_CONTENT,三重県神社庁教化委員会 &raquo; 高向大社,"神社,祭神,鎮座,御祭神",http://kyoka.mie-jinjacho.or.jp/shrine/%E9%AB%98%E5%90%91%E7%A5%9E%E7%A4%BE/
+Nara (jinja-net),jinjya=5808,200,7097,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",https://jinja-net.jp/jinjacho-nara/jsearch3nara.php?jinjya=5808
+Nara (jinja-net),jinjya=33932,200,6978,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",https://jinja-net.jp/jinjacho-nara/jsearch3nara.php?jinjya=33932
+Nara (jinja-net),jinjya=33741,200,6975,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",https://jinja-net.jp/jinjacho-nara/jsearch3nara.php?jinjya=33741
+Mie (jinja-net),jinjya=63753,200,5900,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",https://jinja-net.jp/jinjacho-mie/jsearch3mie.php?jinjya=63753
+Mie (jinja-net),jinjya=63604,200,5814,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",https://jinja-net.jp/jinjacho-mie/jsearch3mie.php?jinjya=63604
+Shimane (jinja-net),jinjya=29807,200,6864,OK_SHRINE_CONTENT,(no title),"神社,祭神,鎮座,由緒",http://www.jinja-net.jp/jinjacho-shimane/jsearch3shimane.php?jinjya=29807
+Yamaguchi (jinja-net),jinjya=53120,200,2974,OK_SHRINE_CONTENT,(no title),"神社,祭神,住所,御祭神",http://www.jinja-net.jp/jinjacho-yamaguti/jsearch3yamaguti.php?jinjya=53120
+Tokyo,setagaya/5212,200,23620,OK_SHRINE_CONTENT,深沢神社  &#8211;  東京都神社庁,"神社,祭神,由緒,住所",http://www.tokyo-jinjacho.or.jp/setagaya/5212/
+Kagoshima,shrine-search/941,200,15215,OK_SHRINE_CONTENT,照島神社 | 鹿児島県神社庁,"神社,祭神,鎮座,由緒",https://www.kagojinjacho.or.jp/shrine-search/area-kagoshima/%E3%81%84%E3%81%A1%E3%81%8D%E4%B8%B2%E6%9C%A8%E9%87%8E%E5%B8%82/941/
+Akita,tatsujin_etc/...,200,5321,OK_PAGE_LOADED,金峯神社,神社,http://akita-jinjacho.sakura.ne.jp/tatsujin_etc/01_jinja/nikaho/10_kinbou.html
+Wakayama,JinjyaNo=1,200,8042,OK_PAGE_LOADED,(no title),,https://wakayama-jinjacho.or.jp/jdb/sys/user/GetWjtTbl.php?JinjyaNo=1
+Kanagawa,shrine/1-0001,404,0,HTTP_404,,,https://www.kanagawa-jinja.or.jp/shrine/1-0001/
+Tottori,pages/1,200,87135,OK_PAGE_LOADED,鳥取縣神社廳（公式ホームページ）,神社,https://tottori-jinjacho.jp/pages/1/
+Yamanashi,detail/1,200,11762,OK_PAGE_LOADED,神社の詳細｜山梨県神社庁.,神社,https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1
+Yamagata,shrine_detail/1,200,18538,OK_SHRINE_CONTENT,お探しの神社は見つかりませんでした｜山形県神社庁,"神社,祭神,例祭,御祭神",https://yamagata-jinjyacho.or.jp/shrine_detail/1
+Hokkaido,homepage,200,35801,OK_SHRINE_CONTENT,北海道神社庁のホームページ,"神社,祭神,鎮座,例祭",https://hokkaidojinjacho.jp/
+Kagawa,shrine list,200,85880,OK_SHRINE_CONTENT,神社一覧 アーカイブ - 香川県神社庁,"神社,祭神,御祭神,shrine",https://kagawakenjinjacho.or.jp/shrine/
+Ehime,jinja list,200,418305,OK_SHRINE_CONTENT,愛媛県神社庁,"神社,鎮座,由緒",https://ehime-jinjacho.jp/jinja/
+Saga,homepage,200,54983,OK_PAGE_LOADED,ホーム - 佐賀県神社庁,神社,https://saga-jinjacho.jp/
+Tochigi,homepage,0,0,ERROR_URLError,,,https://www.tochigi-jinjacho.or.jp/
+Kumamoto,homepage,200,76252,OK_SHRINE_CONTENT,熊本県神社庁｜氏神様の検索対応｜熊本市中央区,"神社,鎮座,住所",https://kumamotokenjinjacho.jp/
+Fukui,homepage,200,9645,OK_SHRINE_CONTENT,福井県神社庁｜TOP,"神社,shrine",https://www.jinja-fukui.jp/
+Okinawa,homepage,200,10681,OK_PAGE_LOADED,沖縄県神社庁,神社,https://jinjacho.naminouegu.jp/
+Aomori,jinja list,403,0,HTTP_403,,,https://www.aomori-jinjacho.or.jp/jinja/
+Ibaraki,homepage,200,8526,OK_PAGE_LOADED,茨城県神社庁,神社,https://www.ibarakiken-jinjacho.or.jp/
+Hiroshima,homepage,200,15286,OK_PAGE_LOADED,広島県神社庁,神社,https://www.hiroshima-jinjacho.jp/
+Shimane,homepage,200,21729,OK_PAGE_LOADED,島根県神社庁,神社,https://www.shimane-jinjacho.or.jp/
