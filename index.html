@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jinjacho Research - All Prefecture Links</title>
+<style>
+  body { font-family: 'Segoe UI', sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f0; }
+  h1 { color: #8b0000; border-bottom: 3px solid #8b0000; padding-bottom: 10px; }
+  h2 { color: #333; margin-top: 30px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 30px; background: white; }
+  th { background: #8b0000; color: white; padding: 10px; text-align: left; position: sticky; top: 0; }
+  td { padding: 8px 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:hover { background: #fff8dc; }
+  a { color: #0066cc; }
+  a:visited { color: #663399; }
+  .confirmed { background: #e8f5e9; }
+  .inferred { background: #fff3e0; }
+  .no-template { background: #fce4ec; }
+  .unknown { background: #f3e5f5; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; color: white; }
+  .badge-confirmed { background: #4caf50; }
+  .badge-inferred { background: #ff9800; }
+  .badge-none { background: #e91e63; }
+  .badge-unknown { background: #9c27b0; }
+  .search-link { font-weight: bold; }
+  .example-link { font-style: italic; font-size: 0.9em; }
+  .notes { font-size: 0.85em; color: #666; max-width: 300px; }
+  #filter { margin: 10px 0; padding: 8px; font-size: 1em; width: 300px; }
+  .stats { background: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; display: flex; gap: 20px; }
+  .stat-box { text-align: center; }
+  .stat-num { font-size: 2em; font-weight: bold; }
+  details { margin: 10px 0; }
+  summary { cursor: pointer; font-weight: bold; padding: 5px; }
+</style>
+</head>
+<body>
+
+<h1>Prefectural Jinjacho (神社庁) Website Research</h1>
+<p>Generated 2026-02-05. Open each link in a browser to manually verify shrine databases.</p>
+
+<div class="stats">
+  <div class="stat-box"><div class="stat-num" style="color:#4caf50">30</div>Confirmed</div>
+  <div class="stat-box"><div class="stat-num" style="color:#ff9800">4</div>Inferred</div>
+  <div class="stat-box"><div class="stat-num" style="color:#e91e63">10</div>No Template</div>
+  <div class="stat-box"><div class="stat-num" style="color:#9c27b0">4</div>Unknown</div>
+</div>
+
+<input type="text" id="filter" placeholder="Filter by prefecture name..." onkeyup="filterTable()">
+
+<h2>All 48 Prefectural Shrine Associations</h2>
+<p><em>Click "Homepage", "Search Page", or "Example Shrine" links to check each site in your browser.</em></p>
+
+<table id="mainTable">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Prefecture</th>
+  <th>Wikidata</th>
+  <th>Homepage</th>
+  <th>Search / DB Page</th>
+  <th>Example Shrine URL</th>
+  <th>Status</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="confirmed">
+  <td>01</td>
+  <td>Hokkaido<br>北海道神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249444" target="_blank">Q135249444</a></td>
+  <td><a href="https://hokkaidojinjacho.jp/" target="_blank">hokkaidojinjacho.jp</a></td>
+  <td><a href="https://hokkaidojinjacho.jp/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%AE%E7%A5%9E%E7%A4%BE/" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link">hokkaidojinjacho.jp/{slug}/ (name-based)</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">WordPress. Slug is URL-encoded shrine name.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>02</td>
+  <td>Aomori<br>青森県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249383" target="_blank">Q135249383</a></td>
+  <td><a href="http://www.aomori-jinjacho.or.jp/" target="_blank">aomori-jinjacho.or.jp</a></td>
+  <td><a href="http://www.aomori-jinjacho.or.jp/jinja/" target="_blank" class="search-link">神社一覧</a></td>
+  <td class="example-link"><a href="https://www.aomori-jinjacho.or.jp/jinja/Tosei/sub_1a_047.html" target="_blank">Example</a> - /jinja/{area}/sub_{code}.html</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Area segment + code-based filename.</td>
+</tr>
+
+<tr class="no-template">
+  <td>03</td>
+  <td>Iwate<br>岩手県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249735" target="_blank">Q135249735</a></td>
+  <td><a href="https://www.jinjacho.jp/" target="_blank">jinjacho.jp</a></td>
+  <td><a href="https://www.jinjacho.jp/serviceindex1.html" target="_blank" class="search-link">神社検索 (old URL)</a></td>
+  <td class="example-link">No template found yet</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Note: jinjacho.jp domain (no prefix!). Search page may have moved.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>04</td>
+  <td>Miyagi<br>宮城県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249385" target="_blank">Q135249385</a></td>
+  <td><a href="https://miyagi-jinjacho.or.jp/" target="_blank">miyagi-jinjacho.or.jp</a></td>
+  <td><a href="https://miyagi-jinjacho.or.jp/jinja-search/top.php" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link"><a href="https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020365" target="_blank">code=310020365</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">detail.php?code={code} - numeric code</td>
+</tr>
+
+<tr class="confirmed">
+  <td>05</td>
+  <td>Akita<br>秋田県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249386" target="_blank">Q135249386</a></td>
+  <td><a href="https://akita-jinjacho.sakura.ne.jp/" target="_blank">akita-jinjacho.sakura.ne.jp</a></td>
+  <td><a href="https://akita-jinjacho.sakura.ne.jp/shrine_search/" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link">shrine_search/{slug}/ (name-based)</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Hosted on Sakura server. Name-based slug.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>06</td>
+  <td>Yamagata<br>山形県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249748" target="_blank">Q135249748</a></td>
+  <td><a href="https://yamagata-jinjyacho.or.jp/" target="_blank">yamagata-jinjyacho.or.jp</a></td>
+  <td><a href="https://yamagata-jinjyacho.or.jp/shrine_detail/" target="_blank" class="search-link">神社詳細</a></td>
+  <td class="example-link">shrine_detail/{id} - numeric id</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Note: "jinjyacho" spelling (not jinjacho).</td>
+</tr>
+
+<tr class="no-template">
+  <td>07</td>
+  <td>Fukushima<br>福島県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249388" target="_blank">Q135249388</a></td>
+  <td><a href="http://fukushima-jinjacho.or.jp/" target="_blank">fukushima-jinjacho.or.jp</a></td>
+  <td>Interactive search only</td>
+  <td class="example-link">No template - JS-driven search</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Detail URL not exposed publicly.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>08</td>
+  <td>Ibaraki<br>茨城県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135155035" target="_blank">Q135155035</a></td>
+  <td><a href="https://www.ibarakiken-jinjacho.or.jp/" target="_blank">ibarakiken-jinjacho.or.jp</a></td>
+  <td><a href="https://www.ibarakiken-jinjacho.or.jp/ibaraki/" target="_blank" class="search-link">神社一覧</a></td>
+  <td class="example-link">/ibaraki/{region}/jinja/{id}.html</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Note: "ibarakiken" in domain. Region segment varies. Wikidata P856 says ibaraki-jinjacho.jp.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>09</td>
+  <td>Tochigi<br>栃木県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249390" target="_blank">Q135249390</a></td>
+  <td><a href="https://www.tochigi-jinjacho.or.jp/" target="_blank">tochigi-jinjacho.or.jp</a></td>
+  <td><a href="https://www.tochigi-jinjacho.or.jp/" target="_blank" class="search-link">Homepage (WP)</a></td>
+  <td class="example-link">/?p={id} - WordPress post id</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">WordPress. Standard WP post URLs.</td>
+</tr>
+
+<tr class="no-template">
+  <td>10</td>
+  <td>Gunma<br>群馬県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249764" target="_blank">Q135249764</a></td>
+  <td><a href="http://www.gunma-jinjacho.jp/" target="_blank">gunma-jinjacho.jp</a></td>
+  <td><a href="http://www.gunma-jinjacho.jp/jinja/" target="_blank" class="search-link">/jinja/</a></td>
+  <td class="example-link">List page only, no per-shrine detail</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Has /jinja/ page but no individual shrine pages.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>11</td>
+  <td>Saitama<br>埼玉県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q134886272" target="_blank">Q134886272</a></td>
+  <td><a href="https://www.saitama-jinjacho.or.jp/" target="_blank">saitama-jinjacho.or.jp</a></td>
+  <td><a href="https://www.saitama-jinjacho.or.jp/shrine/" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link"><a href="https://www.saitama-jinjacho.or.jp/shrine/9124/" target="_blank">/shrine/9124/</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">/shrine/{id}/ - numeric id</td>
+</tr>
+
+<tr class="no-template">
+  <td>12</td>
+  <td>Chiba<br>千葉県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q134595030" target="_blank">Q134595030</a></td>
+  <td><a href="https://www.jinjacho.or.jp/" target="_blank">jinjacho.or.jp</a></td>
+  <td>Login restricted?</td>
+  <td class="example-link">No public template found</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Note: generic "jinjacho.or.jp" domain! Shrine search may require login.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>13</td>
+  <td>Tokyo<br>東京都神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249781" target="_blank">Q135249781</a></td>
+  <td><a href="http://www.tokyo-jinjacho.or.jp/" target="_blank">tokyo-jinjacho.or.jp</a></td>
+  <td><a href="http://www.tokyo-jinjacho.or.jp/jinja/" target="_blank" class="search-link">神社を探す</a></td>
+  <td class="example-link"><a href="http://www.tokyo-jinjacho.or.jp/setagaya/5212/" target="_blank">/setagaya/5212/</a> - /{ward}/{id}/</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Ward/area segment + numeric id.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>14</td>
+  <td>Kanagawa<br>神奈川県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249395" target="_blank">Q135249395</a></td>
+  <td><a href="https://www.kanagawa-jinja.or.jp/" target="_blank">kanagawa-jinja.or.jp</a></td>
+  <td><a href="https://www.kanagawa-jinja.or.jp/search/" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link">/shrine/{id}/ - numeric id with hyphen suffix</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Note: "kanagawa-jinja" not "kanagawa-jinjacho".</td>
+</tr>
+
+<tr class="no-template">
+  <td>15</td>
+  <td>Niigata<br>新潟県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249396" target="_blank">Q135249396</a></td>
+  <td><a href="https://niigata-jinjacho.jp/" target="_blank">niigata-jinjacho.jp</a></td>
+  <td><a href="https://niigata-jinjacho.jp/shrine_niigata/" target="_blank" class="search-link">神社一覧</a></td>
+  <td class="example-link">List page only</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Only list pages, no individual shrine detail.</td>
+</tr>
+
+<tr class="no-template">
+  <td>16</td>
+  <td>Toyama<br>富山県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249397" target="_blank">Q135249397</a></td>
+  <td><a href="http://toyama-jinjacho.sakura.ne.jp/" target="_blank">toyama-jinjacho.sakura.ne.jp</a></td>
+  <td>News/blog only</td>
+  <td class="example-link">No shrine database</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Sakura server. No shrine DB, just news content.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>17</td>
+  <td>Ishikawa<br>石川県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249398" target="_blank">Q135249398</a></td>
+  <td><a href="https://www.ishikawa-jinjacho.or.jp/" target="_blank">ishikawa-jinjacho.or.jp</a></td>
+  <td><a href="https://www.ishikawa-jinjacho.or.jp/shrine/" target="_blank" class="search-link">神社を検索</a></td>
+  <td class="example-link"><a href="https://www.ishikawa-jinjacho.or.jp/shrine/j1730/" target="_blank">/shrine/j1730/</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">ID format: j0001 (j + 4 digits)</td>
+</tr>
+
+<tr class="confirmed">
+  <td>18</td>
+  <td>Fukui<br>福井県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249399" target="_blank">Q135249399</a></td>
+  <td><a href="http://www.jinja-fukui.jp/" target="_blank">jinja-fukui.jp</a></td>
+  <td><a href="http://www.jinja-fukui.jp/detail/" target="_blank" class="search-link">Detail pages</a></td>
+  <td class="example-link">/detail/index.php?ID={timestamp}</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Note: "jinja-fukui" not "fukui-jinjacho". ID is timestamp-like (YYYYMMDD_HHMMSS).</td>
+</tr>
+
+<tr class="confirmed">
+  <td>19</td>
+  <td>Yamanashi<br>山梨県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249400" target="_blank">Q135249400</a></td>
+  <td><a href="http://www.yamanashi-jinjacho.or.jp/" target="_blank">yamanashi-jinjacho.or.jp</a></td>
+  <td><a href="http://www.yamanashi-jinjacho.or.jp/intro/search/" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link">/intro/search/detail/{id}</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Numeric id.</td>
+</tr>
+
+<tr class="no-template">
+  <td>20</td>
+  <td>Nagano<br>長野県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249402" target="_blank">Q135249402</a></td>
+  <td><a href="http://www.nagano-jinjacho.jp/" target="_blank">nagano-jinjacho.jp</a></td>
+  <td><a href="http://www.nagano-jinjacho.jp/shibu/" target="_blank" class="search-link">支部一覧</a></td>
+  <td class="example-link">Lists by branch (/shibu/*.htm) only</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Organized by branch (shibu), no individual shrine pages.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>21</td>
+  <td>Gifu<br>岐阜県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249403" target="_blank">Q135249403</a></td>
+  <td><a href="https://www.gifu-jinjacho.jp/" target="_blank">gifu-jinjacho.jp</a></td>
+  <td><a href="https://www.gifu-jinjacho.jp/" target="_blank" class="search-link">Homepage (has search)</a></td>
+  <td class="example-link"><a href="https://www.gifu-jinjacho.jp/syosai.php?shrno=2286" target="_blank">syosai.php?shrno=2286</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Old-school PHP. syosai.php?shrno={id}. Optional shrname param. Works with curl!</td>
+</tr>
+
+<tr class="confirmed">
+  <td>22</td>
+  <td>Shizuoka<br>静岡県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q134956727" target="_blank">Q134956727</a></td>
+  <td><a href="http://www.shizuoka-jinjacho.or.jp/" target="_blank">shizuoka-jinjacho.or.jp</a></td>
+  <td><a href="http://www.shizuoka-jinjacho.or.jp/shokai/" target="_blank" class="search-link">神社紹介</a></td>
+  <td class="example-link"><a href="http://www.shizuoka-jinjacho.or.jp/shokai/jinja.php?id=4402102" target="_blank">jinja.php?id=4402102</a></td>
+  <td><span class="badge badge-inferred">inferred</span></td>
+  <td class="notes">Self-signed cert. shokai/jinja.php?id={id}. Site sometimes 502.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>23</td>
+  <td>Aichi<br>愛知県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249824" target="_blank">Q135249824</a></td>
+  <td><a href="https://aichi-jinjacho.or.jp/" target="_blank">aichi-jinjacho.or.jp</a></td>
+  <td><a href="https://www.aichi-jinjacho.or.jp/search.html" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link"><a href="https://www.aichi-jinjacho.or.jp/search_detail.html?id=bb10f2cc-3e65-4e3f-aad0-e4259400d028" target="_blank">search_detail.html?id={uuid}</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">UUID-based id! Unusual.</td>
+</tr>
+
+<tr class="inferred">
+  <td>24</td>
+  <td>Mie<br>三重県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249407" target="_blank">Q135249407</a></td>
+  <td><a href="http://www.amigo.ne.jp/~chitonr2/" target="_blank">amigo.ne.jp/~chitonr2/</a></td>
+  <td><a href="http://kyoka.mie-jinjacho.or.jp/" target="_blank" class="search-link">kyoka.mie-jinjacho.or.jp</a></td>
+  <td class="example-link"><a href="http://kyoka.mie-jinjacho.or.jp/shrine/%E7%A3%AF%E7%A5%9E%E7%A4%BE/" target="_blank">/shrine/{name-slug}/</a></td>
+  <td><span class="badge badge-inferred">inferred</span></td>
+  <td class="notes">Official site is ancient ISP page! Shrine DB on separate kyoka subdomain. Also on jinja-net.jp.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>25</td>
+  <td>Shiga<br>滋賀県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249408" target="_blank">Q135249408</a></td>
+  <td><a href="https://www.shiga-jinjacho.jp/" target="_blank">shiga-jinjacho.jp</a></td>
+  <td><a href="https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/" target="_blank" class="search-link">神社DB (CGI)</a></td>
+  <td class="example-link"><a href="https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=630" target="_blank">oid=630</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Legacy CGI-based DB. Very long URL pattern with oid param.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>26</td>
+  <td>Kyoto<br>京都府神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249828" target="_blank">Q135249828</a></td>
+  <td><a href="http://www.kyoto-jinjacho.or.jp/" target="_blank">kyoto-jinjacho.or.jp</a></td>
+  <td><a href="http://www.kyoto-jinjacho.or.jp/shrine/" target="_blank" class="search-link">神社紹介</a></td>
+  <td class="example-link"><a href="http://www.kyoto-jinjacho.or.jp/shrine/14.html" target="_blank">/shrine/14.html</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">/shrine/{id}.html - numeric id. Sometimes 502.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>27</td>
+  <td>Osaka<br>大阪府神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249833" target="_blank">Q135249833</a></td>
+  <td><a href="https://www.osaka-jinjacho.jp/" target="_blank">osaka-jinjacho.jp</a></td>
+  <td><a href="https://www.osaka-jinjacho.jp/funai_jinja/" target="_blank" class="search-link">府内神社</a></td>
+  <td class="example-link"><a href="https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01020kusasajinja.html" target="_blank">/funai_jinja/{branch}/{city}/{code}{slug}.html</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Complex path: branch/city/code+slug. Old domain was jinjacho-osaka.net.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>28</td>
+  <td>Hyogo<br>兵庫県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249839" target="_blank">Q135249839</a></td>
+  <td><a href="https://www.hyogo-jinjacho.com/" target="_blank">hyogo-jinjacho.com</a></td>
+  <td><a href="https://www.hyogo-jinjacho.com/" target="_blank" class="search-link">Homepage</a></td>
+  <td class="example-link"><a href="https://www.hyogo-jinjacho.com/data/6308105.html" target="_blank">/data/6308105.html</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Shift-JIS! /data/{7-digit-code}.html. Works with curl. Note: .com not .or.jp.</td>
+</tr>
+
+<tr class="inferred">
+  <td>29</td>
+  <td>Nara<br>奈良県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249844" target="_blank">Q135249844</a></td>
+  <td><a href="http://www.naraken-jinjacho.jp/" target="_blank">naraken-jinjacho.jp</a></td>
+  <td><a href="https://jinja-net.jp/jinjacho-nara/kensaku-nara.html" target="_blank" class="search-link">jinja-net.jp (external)</a></td>
+  <td class="example-link"><a href="http://www.jinja-net.jp/jinjacho-nara/jsearch3nara.php?jinjya=5808" target="_blank">jsearch3nara.php?jinjya=5808</a></td>
+  <td><span class="badge badge-inferred">inferred</span></td>
+  <td class="notes">Shrine DB hosted on jinja-net.jp, not on official site.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>30</td>
+  <td>Wakayama<br>和歌山県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249413" target="_blank">Q135249413</a></td>
+  <td><a href="http://www.wakayama-jinjacho.or.jp/" target="_blank">wakayama-jinjacho.or.jp</a></td>
+  <td><a href="https://wakayama-jinjacho.or.jp/jdb/sys/user/" target="_blank" class="search-link">神社DB</a></td>
+  <td class="example-link">GetWjtTbl.php?JinjyaNo={id}</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Numeric JinjyaNo. Unusual CGI path (jdb/sys/user/).</td>
+</tr>
+
+<tr class="confirmed">
+  <td>31</td>
+  <td>Tottori<br>鳥取県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249850" target="_blank">Q135249850</a></td>
+  <td><a href="https://tottori-jinjacho.jp/" target="_blank">tottori-jinjacho.jp</a></td>
+  <td><a href="https://tottori-jinjacho.jp/pages/" target="_blank" class="search-link">Pages</a></td>
+  <td class="example-link">/pages/{id}/</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Uses old kanji 鳥取縣神社廳 in title. Numeric id.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>32</td>
+  <td>Shimane<br>島根県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249855" target="_blank">Q135249855</a></td>
+  <td><a href="http://www.shimane-jinjacho.or.jp/" target="_blank">shimane-jinjacho.or.jp</a></td>
+  <td><a href="http://www.shimane-jinjacho.or.jp/" target="_blank" class="search-link">Homepage</a></td>
+  <td class="example-link">/{area}/{hash}.html</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Area segment + hash-like id. Also on jinja-net.jp.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>33</td>
+  <td>Okayama<br>岡山県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249861" target="_blank">Q135249861</a></td>
+  <td><a href="https://www.okayama-jinjacho.or.jp/" target="_blank">okayama-jinjacho.or.jp</a></td>
+  <td><a href="https://www.okayama-jinjacho.or.jp/search/" target="_blank" class="search-link">地図から神社を探す</a></td>
+  <td class="example-link"><a href="https://www.okayama-jinjacho.or.jp/search/18043/" target="_blank">/search/18043/</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">/search/{id}/ - numeric id. Map-based search.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>34</td>
+  <td>Hiroshima<br>広島県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249866" target="_blank">Q135249866</a></td>
+  <td><a href="http://www.hiroshima-jinjacho.jp/" target="_blank">hiroshima-jinjacho.jp</a></td>
+  <td><a href="http://www.hiroshima-jinjacho.jp/branch/" target="_blank" class="search-link">支部一覧</a></td>
+  <td class="example-link">/branch/{branch}/{slug}.html</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Organized by branch + shrine slug.</td>
+</tr>
+
+<tr class="inferred">
+  <td>35</td>
+  <td>Yamaguchi<br>山口県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249871" target="_blank">Q135249871</a></td>
+  <td><a href="http://www.yamaguchi-jinjacho.or.jp/" target="_blank">yamaguchi-jinjacho.or.jp</a></td>
+  <td><a href="https://www.jinja-net.jp/jinjacho-yamaguti/kensaku-yamaguti.html" target="_blank" class="search-link">jinja-net.jp (external)</a></td>
+  <td class="example-link">jsearch3yamaguti.php?jinjya={id}</td>
+  <td><span class="badge badge-inferred">inferred</span></td>
+  <td class="notes">Official site blocked (403). DB on jinja-net.jp. Note: "yamaguti" romanization.</td>
+</tr>
+
+<tr class="no-template">
+  <td>36</td>
+  <td>Tokushima<br>徳島県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249419" target="_blank">Q135249419</a></td>
+  <td><a href="http://awa-jinjacho.jp/" target="_blank">awa-jinjacho.jp</a></td>
+  <td>Site 502 during checks</td>
+  <td class="example-link">Site unreachable</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Uses "awa" (old province name) not "tokushima". Returned 502.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>37</td>
+  <td>Kagawa<br>香川県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q134988735" target="_blank">Q134988735</a></td>
+  <td><a href="https://kagawakenjinjacho.or.jp/" target="_blank">kagawakenjinjacho.or.jp</a></td>
+  <td><a href="https://kagawakenjinjacho.or.jp/shrine/" target="_blank" class="search-link">神社紹介</a></td>
+  <td class="example-link">/shrine/{name-slug}/</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Note: "kagawaken" (no hyphens). Name-based slug, disambiguation suffix like -4.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>38</td>
+  <td>Ehime<br>愛媛県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249421" target="_blank">Q135249421</a></td>
+  <td><a href="https://ehime-jinjacho.jp/" target="_blank">ehime-jinjacho.jp</a></td>
+  <td><a href="https://ehime-jinjacho.jp/jinja/" target="_blank" class="search-link">神社一覧</a></td>
+  <td class="example-link">/jinja/?p={id} - WordPress post id</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">WordPress post id.</td>
+</tr>
+
+<tr class="no-template">
+  <td>39</td>
+  <td>Kochi<br>高知県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249422" target="_blank">Q135249422</a></td>
+  <td><a href="https://www.kochi-jinjyacho.com/" target="_blank">kochi-jinjyacho.com</a></td>
+  <td><a href="https://www.kochi-jinjyacho.com/" target="_blank" class="search-link">Homepage</a></td>
+  <td class="example-link">List pages only</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Note: "jinjyacho" spelling, .com domain. Only list pages.</td>
+</tr>
+
+<tr class="no-template">
+  <td>40</td>
+  <td>Fukuoka<br>福岡県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249886" target="_blank">Q135249886</a></td>
+  <td><a href="https://fukuoka-jinjacho.or.jp/" target="_blank">fukuoka-jinjacho.or.jp</a></td>
+  <td><a href="https://fukuoka-jinjacho.or.jp/area/" target="_blank" class="search-link">エリア検索</a></td>
+  <td class="example-link">Area lists only, no per-shrine pages</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">Area list pages only.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>41</td>
+  <td>Saga<br>佐賀県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249891" target="_blank">Q135249891</a></td>
+  <td><a href="https://saga-jinjacho.jp/" target="_blank">saga-jinjacho.jp</a></td>
+  <td><a href="https://saga-jinjacho.jp/" target="_blank" class="search-link">Homepage (WP)</a></td>
+  <td class="example-link">/{name-slug}/ - WordPress</td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">WordPress. Name-based slug.</td>
+</tr>
+
+<tr class="no-template">
+  <td>42</td>
+  <td>Nagasaki<br>長崎県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249897" target="_blank">Q135249897</a></td>
+  <td><a href="http://nagasaki-jinjacho.or.jp/" target="_blank">nagasaki-jinjacho.or.jp</a></td>
+  <td><a href="http://nagasaki-jinjacho.or.jp/" target="_blank" class="search-link">Homepage</a></td>
+  <td class="example-link">City list pages only</td>
+  <td><span class="badge badge-none">no-template</span></td>
+  <td class="notes">City/region list pages, no individual shrine pages.</td>
+</tr>
+
+<tr class="unknown">
+  <td>43</td>
+  <td>Kumamoto<br>熊本県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249902" target="_blank">Q135249902</a></td>
+  <td><a href="https://kumamotokenjinjacho.jp/" target="_blank">kumamotokenjinjacho.jp</a></td>
+  <td><a href="https://kumamotokenjinjacho.jp/" target="_blank" class="search-link">Check for search</a></td>
+  <td class="example-link">Not checked yet</td>
+  <td><span class="badge badge-unknown">unknown</span></td>
+  <td class="notes">Website discovered: kumamotokenjinjacho.jp (no P856 on Wikidata!). Has 氏神検索 feature.</td>
+</tr>
+
+<tr class="unknown">
+  <td>44</td>
+  <td>Oita<br>大分県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135249909" target="_blank">Q135249909</a></td>
+  <td>No website on Wikidata</td>
+  <td>Unknown</td>
+  <td class="example-link">Not checked yet</td>
+  <td><span class="badge badge-unknown">unknown</span></td>
+  <td class="notes">No P856 on Wikidata. No official website found via search.</td>
+</tr>
+
+<tr class="unknown">
+  <td>45</td>
+  <td>Miyazaki<br>宮崎県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135250079" target="_blank">Q135250079</a></td>
+  <td>No website on Wikidata</td>
+  <td><a href="https://www.m-shinsei.jp/" target="_blank" class="search-link">宮巡 (unofficial)</a></td>
+  <td class="example-link">No official site; 宮巡 is priest-run alternative</td>
+  <td><span class="badge badge-unknown">unknown</span></td>
+  <td class="notes">No P856. 宮巡 (m-shinsei.jp) covers 649 shrines, made by shrine priests.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>46</td>
+  <td>Kagoshima<br>鹿児島県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135250101" target="_blank">Q135250101</a></td>
+  <td><a href="https://www.kagojinjacho.or.jp/" target="_blank">kagojinjacho.or.jp</a></td>
+  <td><a href="https://www.kagojinjacho.or.jp/shrine-search/" target="_blank" class="search-link">神社検索</a></td>
+  <td class="example-link"><a href="https://www.kagojinjacho.or.jp/shrine-search/area-kagoshima/%E3%81%84%E3%81%A1%E3%81%8D%E4%B8%B2%E6%9C%A8%E9%87%8E%E5%B8%82/941/" target="_blank">/shrine-search/area-{area}/{city}/{id}/</a></td>
+  <td><span class="badge badge-confirmed">confirmed</span></td>
+  <td class="notes">Complex path: area slug + city slug + numeric id.</td>
+</tr>
+
+<tr class="confirmed">
+  <td>47</td>
+  <td>Okinawa<br>沖縄県神社庁</td>
+  <td><a href="https://www.wikidata.org/entity/Q135250116" target="_blank">Q135250116</a></td>
+  <td><a href="https://jinjacho.naminouegu.jp/" target="_blank">jinjacho.naminouegu.jp</a></td>
+  <td><a href="https://jinjacho.naminouegu.jp/" target="_blank" class="search-link">Homepage</a></td>
+  <td class="example-link">/{slug}.html</td>
+  <td><span class="badge badge-inferred">inferred</span></td>
+  <td class="notes">Subdomain of naminouegu.jp (Naminoue Shrine). Shrine list with some external URLs.</td>
+</tr>
+
+</tbody>
+</table>
+
+<h2>External Shrine Search Portals</h2>
+<table>
+<thead><tr><th>Portal</th><th>URL</th><th>Prefectures Covered</th><th>Notes</th></tr></thead>
+<tbody>
+<tr>
+  <td>jinja-net.jp</td>
+  <td><a href="https://www.jinja-net.jp/jinjacho-all/" target="_blank">全国神社検索</a></td>
+  <td>Nara, Yamaguchi, Shimane, Mie, Tochigi, Okayama</td>
+  <td>Pattern: jinjacho-{pref}/jsearch3{pref}.php?jinjya={id}</td>
+</tr>
+<tr>
+  <td>Jinja Honcho (神社本庁)</td>
+  <td><a href="https://www.jinjahoncho.or.jp/jinjahoncho/jinjacho/" target="_blank">神社庁一覧</a></td>
+  <td>All 47 - addresses and phone numbers only</td>
+  <td>No shrine-level data, just jinjacho office info</td>
+</tr>
+<tr>
+  <td>宮巡 (Miyameguri)</td>
+  <td><a href="https://www.m-shinsei.jp/" target="_blank">m-shinsei.jp</a></td>
+  <td>Miyazaki only</td>
+  <td>Unofficial but comprehensive. Run by shrine priests.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Domain Naming Patterns</h2>
+<details open>
+<summary>Observed Patterns</summary>
+<table>
+<thead><tr><th>Pattern</th><th>Count</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td><code>{pref}-jinjacho.or.jp</code></td><td>~20</td><td>tokyo-jinjacho.or.jp, miyagi-jinjacho.or.jp</td></tr>
+<tr><td><code>{pref}-jinjacho.jp</code></td><td>~8</td><td>gifu-jinjacho.jp, nagano-jinjacho.jp, niigata-jinjacho.jp</td></tr>
+<tr><td><code>{pref}-jinjacho.com</code></td><td>1</td><td>hyogo-jinjacho.com</td></tr>
+<tr><td><code>{pref}jinjacho.jp</code> (no hyphen)</td><td>2</td><td>hokkaidojinjacho.jp, kumamotokenjinjacho.jp</td></tr>
+<tr><td><code>{pref}kenjinjacho.or.jp</code></td><td>2</td><td>kagawakenjinjacho.or.jp, ibarakiken-jinjacho.or.jp</td></tr>
+<tr><td>Unusual names</td><td>5</td><td>kanagawa-jinja.or.jp, jinja-fukui.jp, awa-jinjacho.jp, jinjacho.or.jp (Chiba), jinjacho.jp (Iwate)</td></tr>
+<tr><td>Sakura hosting</td><td>2</td><td>akita-jinjacho.sakura.ne.jp, toyama-jinjacho.sakura.ne.jp</td></tr>
+<tr><td>"jinjyacho" spelling</td><td>2</td><td>yamagata-jinjyacho.or.jp, kochi-jinjyacho.com</td></tr>
+<tr><td>No website found</td><td>2</td><td>Oita, Miyazaki</td></tr>
+</tbody>
+</table>
+</details>
+
+<h2>Shrine Detail Page Patterns</h2>
+<details open>
+<summary>Technical URL Patterns</summary>
+<table>
+<thead><tr><th>Pattern Type</th><th>Count</th><th>Prefectures</th></tr></thead>
+<tbody>
+<tr><td>Numeric ID (?id={n} or /{n}/)</td><td>~15</td><td>Gifu, Shizuoka, Miyagi, Saitama, Tokyo, Kanagawa, Okayama, Tottori, Kyoto, Yamanashi, Yamagata, Wakayama, Kagoshima, Hyogo</td></tr>
+<tr><td>WordPress (?p={id})</td><td>3</td><td>Tochigi, Ehime, Saga</td></tr>
+<tr><td>Name-based slug</td><td>5</td><td>Hokkaido, Akita, Kagawa, Mie (kyoka), Okinawa</td></tr>
+<tr><td>UUID</td><td>1</td><td>Aichi</td></tr>
+<tr><td>Branch/area + ID/slug</td><td>5</td><td>Aomori, Ibaraki, Tokyo, Osaka, Hiroshima, Shimane</td></tr>
+<tr><td>CGI/Legacy DB</td><td>2</td><td>Shiga (ycBBS), Fukui (timestamp ID)</td></tr>
+<tr><td>External (jinja-net.jp)</td><td>3</td><td>Nara, Yamaguchi, (Shimane, Mie also)</td></tr>
+</tbody>
+</table>
+</details>
+
+<script>
+function filterTable() {
+  const filter = document.getElementById('filter').value.toLowerCase();
+  const rows = document.querySelectorAll('#mainTable tbody tr');
+  rows.forEach(row => {
+    const text = row.textContent.toLowerCase();
+    row.style.display = text.includes(filter) ? '' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>
