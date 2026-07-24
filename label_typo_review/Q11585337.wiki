@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11585337 -->
 <!-- JA: 石園座多久虫玉神社 | KANA: いそのにますたくむしたまじんじゃ | EN_LABEL: Iwazononiimasu Takumushitama Shrine | KANA_ROMANIZED: Isononimasutakumushitamajinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: LABEL_TYPO: Isononiimasu Takumushitama Shrine -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
