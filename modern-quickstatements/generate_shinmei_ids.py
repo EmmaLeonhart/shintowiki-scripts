@@ -26,6 +26,8 @@ import time
 import html
 import requests
 
+from generate_genbu_ids import to_shinjitai   # kyūjitai -> shinjitai normalizer
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "shinmei_ids.txt")
 INDEX = "https://kojiki.kokugakuin.ac.jp/shinmei/"
@@ -99,13 +101,20 @@ def scrape(urls):
 
 
 def label_to_qids(names):
-    """{ja label -> [QIDs]} for the given names (batched VALUES query)."""
+    """{ja name -> [QIDs]} matching an item's ja label OR ja alias (kami carry many
+    name variants as aliases). Fault-tolerant per chunk."""
     out = {}
     uniq = sorted(set(names))
-    for i in range(0, len(uniq), 100):
-        chunk = uniq[i:i + 100]
+    for i in range(0, len(uniq), 50):
+        chunk = uniq[i:i + 50]
         values = " ".join('"%s"@ja' % n.replace('\\', '\\\\').replace('"', '\\"') for n in chunk)
-        rows = _sparql("SELECT ?i ?lab WHERE { VALUES ?lab { %s } ?i rdfs:label ?lab }" % values)
+        try:
+            rows = _sparql(
+                "SELECT ?i ?lab WHERE { VALUES ?lab { %s } "
+                "?i (rdfs:label|skos:altLabel) ?lab }" % values)
+        except Exception as e:
+            print(f"  [chunk {i//50} skipped] {e}", flush=True)
+            continue
         for b in rows:
             out.setdefault(b["lab"]["value"], []).append(b["i"]["value"].rsplit("/", 1)[1])
     return out
@@ -123,19 +132,25 @@ def main():
     entries = scrape(urls)
     print(f"scraped {len(entries)} (name, id) pairs", flush=True)
 
-    lab_qids = label_to_qids([n for n, _ in entries])
+    all_forms = set()
+    for name, _ in entries:
+        all_forms.add(name)
+        all_forms.add(to_shinjitai(name))
+    lab_qids = label_to_qids(all_forms)
     have = existing_p14391()
 
     lines, ambiguous, nomatch, already = [], 0, 0, 0
     for name, pid in entries:
-        qids = lab_qids.get(name, [])
+        qids = set()
+        for form in (name, to_shinjitai(name)):
+            qids.update(lab_qids.get(form, []))
         if not qids:
             nomatch += 1
             continue
         if len(qids) > 1:
             ambiguous += 1
             continue
-        qid = qids[0]
+        qid = next(iter(qids))
         if qid in have:
             already += 1
             continue
