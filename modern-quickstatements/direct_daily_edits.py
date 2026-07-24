@@ -131,6 +131,7 @@ ATOMIC_FILES = [
     "description_enrichment_en.txt",         # Unique English descriptions for collision groups, from cloud-RAG answers (collector: shinto_miraheze/collect_description_enrichment.py; stage 1 of docs/description_enrichment_pipeline.md)
     "genbu_ids.txt",                         # P13930 Genbu.net ID resolved from genbu.net citations already in our articles -> page's QID via P11250 (generate_genbu_ids.py). ADD-only external id; re-runs are no-ops (execute_line skips existing).
     "shinmei_ids.txt",                       # P14391 Shinmei database ID (Kokugakuin god-name DB) for deities, matched by exact ja label to the scraped kami name+numeric id (generate_shinmei_ids.py). ADD-only external id; single-exact-match only.
+    "jinjacho_p973.txt",                     # P973 (described at URL) to each shrine's prefectural 神社庁 database page, from the subtree-merged jinjacho/shrines_and_websites.csv (no dedicated WD property exists). ADD-only; generate_jinjacho_p973.py.
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to

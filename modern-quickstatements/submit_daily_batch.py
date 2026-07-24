@@ -52,6 +52,7 @@ ATOMIC_FILES = [
     "durability_backlinks.txt",               # Durability: reciprocal backlinks (father→child etc.) onto other items so 2026-created orphan items become structurally needed (audit of 2026-01-01.txt)
     "genbu_ids.txt",                          # P13930 Genbu.net ID from our own genbu.net citations (generate_genbu_ids.py); ADD-only external id
     "shinmei_ids.txt",                        # P14391 Shinmei database ID for deities, exact ja-label match (generate_shinmei_ids.py); ADD-only external id
+    "jinjacho_p973.txt",                      # P973 described-at-URL to each shrine's prefectural 神社庁 page (generate_jinjacho_p973.py); ADD-only
 ]
 
 
