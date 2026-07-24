@@ -129,6 +129,8 @@ ATOMIC_FILES = [
     "list_membership_removals.txt",          # Script 2 of 2 (Emma, Open questions 2026-07: "these are pure removals — no add, no ordering risk — so this one can just be registered and dripped safely today"): strip the false Engishiki-list membership from the ~2,151 Ronsha the lists do NOT name (piped-link import damage; "Ronshas should not even have list membership"). PURE REMOVE-only, no paired add => drip-safe (2,236 lines over 2,151 items). NEVER touches the 126 the list names: generate_list_membership_removals.py counts any has-part (ordinal or not) as naming and has assert_never_touches_a_named_part; idempotent against live state.
     "kofun_imports.txt",                     # Kofun shapes (P31 shape-classes, the live convention) + construction periods (P571 century precision) from the jawiki kofun infobox (generate_kofun_quickstatements.py); jawiki-cited
     "description_enrichment_en.txt",         # Unique English descriptions for collision groups, from cloud-RAG answers (collector: shinto_miraheze/collect_description_enrichment.py; stage 1 of docs/description_enrichment_pipeline.md)
+    "genbu_ids.txt",                         # P13930 Genbu.net ID resolved from genbu.net citations already in our articles -> page's QID via P11250 (generate_genbu_ids.py). ADD-only external id; re-runs are no-ops (execute_line skips existing).
+    "shinmei_ids.txt",                       # P14391 Shinmei database ID (Kokugakuin god-name DB) for deities, matched by exact ja label to the scraped kami name+numeric id (generate_shinmei_ids.py). ADD-only external id; single-exact-match only.
 ]
 
 # Files that contribute at most N randomly chosen lines per run — used to

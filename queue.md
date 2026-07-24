@@ -167,6 +167,19 @@ parent-rank double-tag.
 - Note: base-rank items still carry the sub-rank names as skos aliases (e.g. 正四位 has "正四位上/下");
   optional later cleanup to strip those now that the sub-ranks are their own items.
 
+## 🤖 Shrine external-ID entity resolution (Emma 2026-07-24)
+
+Resolve our shrine/deity items to external DBs → add-only external-ID QuickStatements, dripped.
+- 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (26). From genbu.net citations
+  already in our articles (synced *.wiki; live wiki is 403'd) → page QID via P11250. Registered in
+  ATOMIC_FILES; drips. Full-wiki coverage needs exturlusage once the 403 clears.
+- 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (77). Scrapes Kokugakuin's
+  ~338-kami DB (shortlink ?p= id + kanji name) → exact ja-label match. Registered; drips. 256 kami had
+  no exact-label match — a fuzzy/alias pass could recover more later.
+- ⏳ **Prefectural shrine-association site IDs** — 11:30 cron `e444c62b`: search Emma's PUBLIC repos for
+  that research, `git subtree` the repo into shintowiki-scripts, then same resolution → QuickStatements.
+  (Research may be in a private repo — Emma to check.)
+
 ## Pinned tail (keep last)
 
 - [ ] Ensure the five session-local crons are running (this session: work-loop d6754ae5 :03,
