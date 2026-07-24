@@ -176,9 +176,14 @@ Resolve our shrine/deity items to external DBs → add-only external-ID QuickSta
 - 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (77). Scrapes Kokugakuin's
   ~338-kami DB (shortlink ?p= id + kanji name) → exact ja-label match. Registered; drips. 256 kami had
   no exact-label match — a fuzzy/alias pass could recover more later.
-- ⏳ **Prefectural shrine-association site IDs** — 11:30 cron `e444c62b`: search Emma's PUBLIC repos for
-  that research, `git subtree` the repo into shintowiki-scripts, then same resolution → QuickStatements.
-  (Research may be in a private repo — Emma to check.)
+- ⏸ **Prefectural shrine-association site IDs** — investigated 2026-07-24 (cron `e444c62b`). TWO walls:
+  (1) NO separate public repo to subtree-merge — the only public prefectural material is already in-repo
+  (`jinjacho_reisai.py`, a reisai-date parser, 1 site verified, pending go/no-go; `docs/reisai_prefectural_feasibility_2026-07.md`).
+  The research Emma remembers is her PRIVATE repo. (2) NO Wikidata property exists for prefectural jinjacho
+  databases (searched jinjacho/神社庁/shrine association/prefectural shrine — none), so nothing to emit into.
+  Pragmatic path that needs no new property: **P973 (described at URL)** with the jinjacho URLs already cited
+  in our articles (genbu-style resolver). Surfaced to Emma via AskUserQuestion — awaiting her call
+  (P973 now / propose dedicated properties / provide the private repo). NOTHING merged.
 
 ## Pinned tail (keep last)
 
