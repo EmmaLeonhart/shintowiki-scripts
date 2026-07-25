@@ -7,7 +7,7 @@
 
 | abovestyle = font-size:125%;
 | above =
-    {{#ifeq:{{lc:{{{embed}}}}}|yes||  
+    {{#ifeq:{{lc:{{{embed}}}}}|yes||
     {{#if:{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix|}}}}}}}}} |<div class="honorific-prefix" style="display:inline;font-size: 77%; font-weight: normal;">{{{honorific prefix|{{{honorific_prefix|{{{honorific-prefix}}}}}}}}}</div><br/>}}<includeonly><div style="display:inline;" class="fn">{{{name|{{PAGENAMEBASE}}}}}</div></includeonly>{{#if:{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix|}}}}}}}}} |<br/><div class="honorific-suffix" style="display:inline;font-size: 77%; font-weight: normal;">{{{honorific suffix|{{{honorific_suffix|{{{honorific-suffix}}}}}}}}}</div>}}}}
 
 | image = {{#invoke:InfoboxImage|InfoboxImage |image={{{image|}}} |size={{#ifeq:{{lc:{{{landscape|}}}}}|yes|{{min|300|{{#if:{{#ifexpr:{{{image size|{{{image_size|{{{imagesize|}}}}}}}}}}}|300|{{{image size|{{{image_size|{{{imagesize|}}}}}}}}}}}}}x200px|{{{image size|{{{image_size|{{{imagesize|}}}}}}}}}}}|sizedefault=frameless |upright={{{image_upright|1}}} |alt={{{alt|}}} |title={{{caption|}}} |suppressplaceholder=yes}}
@@ -125,12 +125,11 @@
 {{#if:{{{pronunciation|}}} |[[:en:Category:Biography template using pronunciation|Category:Biography template using pronunciation]]
 }}{{#if:{{{website|{{{homepage|{{{URL|}}}}}}}}}|{{#switch:{{str left|{{{website|{{{homepage|{{{URL|}}}}}}}}}|1}}|<=|[=|#default=}}}}
 }}<noinclude>
-{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+{{Documentation}}[[Category:Templates with Documentation template]]
 
-[[Category:Independently git synced pages]][[Category:Pages using Infobox writer with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Independently git synced pages]][[Category:Biography template using bare URL in website parameter]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:Pages using Infobox writer with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Biography template using bare URL in website parameter]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
 </noinclude>
