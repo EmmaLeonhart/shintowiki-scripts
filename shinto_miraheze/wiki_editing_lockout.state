@@ -1,6 +1,6 @@
 {
   "locked": true,
-  "locked_until": "2026-07-27",
+  "locked_until": "2026-08-03",
   "reason": "weekly edit-test FAILED (HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json) — locked until the next Sunday test",
-  "checked": "2026-07-19T10:49:03Z"
+  "checked": "2026-07-26T10:56:18Z"
 }
