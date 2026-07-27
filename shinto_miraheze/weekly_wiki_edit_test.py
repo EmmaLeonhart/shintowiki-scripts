@@ -65,7 +65,43 @@ def try_edit():
         return False, f"{type(e).__name__}: {e}"
 
 
+def blackout_until():
+    """The date before which we must not touch Miraheze AT ALL, or None.
+
+    Emma 2026-07-27: the 403 has been up since 07-11 and never lifted, and her read
+    is that our continuing to READ through it is likely why — a client that keeps
+    hammering a challenge looks more malicious than one that goes quiet, so the
+    challenge never gets relaxed. The fix is a genuine stretch of silence: every
+    Miraheze-touching job is now gated on the lockout (reads included), and this
+    probe holds off entirely until `blackout_until` passes. Without this the Sunday
+    test would break the silence every 7 days and the streak would never exceed 6.
+
+    Distinct from `locked_until`, which is always ~8 days out and is what gates the
+    other workflows; using that here would suppress the probe forever. `blackout_until`
+    is set once, by hand, and self-drains — once the date passes the normal weekly
+    cadence resumes on its own.
+    """
+    if not STATE.exists():
+        return None
+    try:
+        raw = json.loads(STATE.read_text(encoding="utf-8")).get("blackout_until")
+    except Exception:
+        return None
+    if not raw:
+        return None
+    try:
+        return datetime.date.fromisoformat(raw)
+    except ValueError:
+        return None
+
+
 def write_state(ok, detail, now):
+    # Preserve an in-force blackout across a rewrite — losing it would silently
+    # restart the weekly probing that the blackout exists to stop.
+    carried = {}
+    bo = blackout_until()
+    if bo and now.date() < bo:
+        carried["blackout_until"] = bo.isoformat()
     if ok:
         st = {"locked": False, "locked_until": None,
               "reason": f"weekly edit-test PASSED — {detail}",
@@ -75,6 +111,7 @@ def write_state(ok, detail, now):
         st = {"locked": True, "locked_until": until,
               "reason": f"weekly edit-test FAILED ({detail}) — locked until the next Sunday test",
               "checked": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
+    st.update(carried)
     STATE.write_text(json.dumps(st, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return st
 
@@ -103,6 +140,14 @@ def main():
     args = ap.parse_args()
 
     now = datetime.datetime.now(datetime.timezone.utc)
+
+    # Blackout: make NO request at all, and leave the state exactly as it is.
+    bo = blackout_until()
+    if bo and now.date() < bo and not args.simulate:
+        print(f"BLACKOUT — no Miraheze request until {bo.isoformat()} "
+              f"({(bo - now.date()).days} day(s) left). State left untouched.")
+        return 1
+
     if args.simulate:
         ok, detail = (args.simulate == "pass"), f"simulated {args.simulate}"
     else:

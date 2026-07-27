@@ -25,9 +25,51 @@ dead pipeline — that failure mode is invisible from inside the repo.
 
 **Wiki still 403.** Unrelated to the account switch and unchanged since 2026-07-11: the Miraheze
 Cloudflare challenge is still up. The 2026-07-26 weekly edit-test failed again (403 on
-`action=query`), so `wiki_editing_lockout.state` is `locked` until 2026-08-03 and every
-wiki-writing job is skipping its steps. Verified live from Emma's own IP with the canonical
-`EmmaBot/2.0` UA — still 403, so it is not a CI-runner-IP problem. 16 days with no bot edits.
+`action=query`). Verified live from Emma's own IP with the canonical `EmmaBot/2.0` UA — still 403,
+so it is not a CI-runner-IP problem. 16 days with no bot edits.
+
+---
+
+## 2026-07-27 — FULL Miraheze blackout until 2026-08-09 (reads included)
+
+"Locked" never meant silent. The `wiki_edit_allowed.py` guard was only ever wired into the
+wiki-**writing** workflows, so through the whole 403 a set of read-side jobs kept hitting
+shinto.miraheze.org on their own schedules. Emma's read, and the reason this matters: a client that
+keeps hammering a challenge for two weeks looks more malicious than one that goes quiet, so the
+challenge was never going to be relaxed while we kept reading. She asked for a week or more of
+genuine no-activity.
+
+Audited every workflow for scripts that actually open a connection to Miraheze (`mwclient.Site`,
+`/w/api.php`, `/w/index.php`) rather than merely mentioning it, and gated the gap:
+
+| Workflow | Was hitting Miraheze via | Now |
+|---|---|---|
+| `generate-quickstatements` | 4 × `fetch_*_from_wiki.py` — ~27 min/run, called daily by cleanup-loop; **the largest single source** | fetches gated; all Wikidata/SPARQL generators still run |
+| `generate-pages` | `site/generate_pages.py`, ~3 min/run daily | main-site step gated; QS dashboards still rebuild |
+| `build-remote-queue` | `build_category_translation_queue.py`, 0.25 s throttle | populate step gated; `remote_queue.py` still runs so the cloud routine keeps a fresh queue |
+| `import-templates-to-fandom` | reads source templates from Miraheze daily | gated |
+| `render-duplicate-qids` | all 3 renderers walk the wiki | gated |
+| `fandom-cleanup` | `fandom_subset_orchestrator.py` opens a `miraheze_site` to diff the wikis | orchestrator gated; Commons wanted-files import is Fandom-only, still runs |
+| `delete-orphans` | `delete_orphans.py` — a **deleter** that never had the guard | gated |
+
+`recreate-deleted-crossref` and `label-generator-regenerate` looked implicated but are clean:
+`rag_deleted_logs.py` only carries the wiki URL inside its User-Agent string, `crossref_deleted_labels.py`
+queries Fandom, and the label generator's `docs/generate_pages.py` is a different file that shares a
+basename with `site/generate_pages.py`.
+
+The Sunday edit-test was itself the last hole — at a 7-day cadence the silence streak could never
+exceed 6 days. Added a **`blackout_until`** field to `wiki_editing_lockout.state`, honoured by
+`weekly_wiki_edit_test.py`: while it is in force the probe makes no request at all and leaves the
+state untouched, and `write_state` carries the field across a rewrite so a run can't silently clear
+it. It is deliberately separate from `locked_until` (always ~8 days out, which would have suppressed
+the probe forever) and self-drains — once the date passes, the normal weekly cadence resumes with no
+further intervention.
+
+Set to **2026-08-09**, so the first probe lands on ~13 days of silence. Verified locally:
+`wiki_edit_allowed.py` exits 1 (LOCKED) and `weekly_wiki_edit_test.py` prints `BLACKOUT — no
+Miraheze request until 2026-08-09` and exits without touching the network.
+
+Not done, deliberately: no escalation to Miraheze. Emma's call was blackout-only for now.
 
 ---
 

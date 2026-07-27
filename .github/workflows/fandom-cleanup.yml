@@ -105,8 +105,22 @@ jobs:
             ${MAX_UPLOADS_FLAG} \
             --run-tag "${RUN_TAG}"
 
+      # Lockout guard (Emma 2026-07-27). The subset orchestrator opens a
+      # miraheze_site alongside the fandom one to diff the two wikis, so it reads
+      # Miraheze on every run. The Commons wanted-files import above is
+      # Fandom-only and keeps running.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the fandom subset orchestrator (it reads Miraheze to diff the wikis)."
+          fi
+
       - name: Fandom subset orchestrator (delete / copy-over vs miraheze)
-        if: always()
+        if: always() && steps.lockout.outputs.locked != 'true'
         run: |
           python3 fandom/fandom_subset_orchestrator.py \
             --apply \

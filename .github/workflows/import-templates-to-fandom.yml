@@ -82,7 +82,21 @@ jobs:
           esac
           echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
 
+      # Lockout guard (Emma 2026-07-27). This writes to Fandom but READS the
+      # source templates from Miraheze, so it kept hitting the 403 daily — the
+      # guard was originally only wired into the wiki-WRITING workflows.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the fandom template import (its source templates are read from Miraheze)."
+          fi
+
       - name: Import templates to fandom
+        if: steps.lockout.outputs.locked != 'true'
         run: |
           python3 fandom/import_template_list_to_fandom.py \
             --apply \

@@ -39,12 +39,28 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # Lockout guard (Emma 2026-07-27). The guard was originally only wired into
+      # the wiki-WRITING workflows, so read-only jobs like this one kept hitting
+      # Miraheze all through the 403. "Locked" now means zero traffic, reads
+      # included. Only the wiki-touching step is gated — remote_queue.py below is
+      # repo-local and must keep running so the cloud routine has a fresh queue.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the category-translation populate (the queue rebuild still runs)."
+          fi
+
       # Queue item 5: refresh the category-translation residual work-files so the
       # remote routine always has fresh Japanese-category-name RAG items. Reads
       # the wiki + Wikidata (no creds needed), skips categories already queued,
       # writes category_translation/*.wiki. Non-fatal so a wiki hiccup doesn't
       # block the queue rebuild.
       - name: Populate category-translation residual queue
+        if: steps.lockout.outputs.locked != 'true'
         run: python3 shinto_miraheze/build_category_translation_queue.py || echo "populate non-fatal"
 
       - name: Build queue

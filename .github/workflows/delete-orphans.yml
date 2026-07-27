@@ -92,7 +92,20 @@ jobs:
             echo "MAX_DELETES=${{ github.event.inputs.max_deletes }}" >> "$GITHUB_ENV"
           fi
 
+      # Lockout guard (Emma 2026-07-27). This is a wiki DELETER that somehow never
+      # got the guard — it would have fired straight into the 403 on the 1st.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the monthly orphan deletion."
+          fi
+
       - name: "Delete orphans (Special:LonelyPages)"
+        if: steps.lockout.outputs.locked != 'true'
         run: |
           python3 shinto_miraheze/delete_orphans.py \
             ${APPLY_FLAG} \

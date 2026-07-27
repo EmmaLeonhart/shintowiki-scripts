@@ -26,7 +26,26 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # Lockout guard (Emma 2026-07-27). This workflow is workflow_call-only, so
+      # it never showed up in the "scheduled + unguarded" audit — but cleanup-loop
+      # calls it daily and the four Miraheze fetches below were its single largest
+      # remaining source of traffic to the 403'd wiki (~27 min/run). Emma's read:
+      # continuing to read through the block is likely what kept us looking
+      # persistent, so a locked wiki now means ZERO requests, not just zero writes.
+      # Only the Miraheze fetches are gated — every generator below is Wikidata /
+      # SPARQL and must keep running, since the Wikidata drip is a separate service.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the four Miraheze fetches; committed .txt files stay as the fallback."
+          fi
+
       - name: Fetch P11250 from wiki
+        if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_p11250_from_wiki.py
         # Miraheze has anti-DDoS 403'd the runner since ~2026-07-11
@@ -39,16 +58,19 @@ jobs:
         continue-on-error: true
 
       - name: Fetch P6262 from wiki
+        if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_p6262_from_wiki.py
         continue-on-error: true
 
       - name: Fetch en-labels from wiki
+        if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_en_labels_from_wiki.py
         continue-on-error: true
 
       - name: Fetch category-label-prefix fixes from wiki
+        if: steps.lockout.outputs.locked != 'true'
         working-directory: modern-quickstatements
         run: python fetch_category_label_fixes_from_wiki.py
         continue-on-error: true

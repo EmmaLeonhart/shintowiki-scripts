@@ -9,7 +9,7 @@ Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_syn
 
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
-**Status: ⏸ WAITING** (weekly edit-test failed, 2026-07-26 10:56 UTC) — wiki editing is locked for the week. The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
+**Status: ⏸ WAITING — FULL BLACKOUT until 2026-08-09** (Emma 2026-07-27). Not just "no writes": **no requests to shinto.miraheze.org of any kind, reads included.** The 403 has been up since 2026-07-11 and never lifted; Emma's read is that our continuing to read through the challenge is what kept us looking persistent, so it was never relaxed. Every Miraheze-touching workflow is now gated on `wiki_editing_lockout.state` (the guard had only ever been wired into the *writing* workflows), and `weekly_wiki_edit_test.py` holds its probe until `blackout_until` passes — so the first test after the blackout, Sunday 2026-08-09, lands on ~13 days of genuine silence. It flips this to **`WIKI_GATE: GO`** if the edit lands.
 The gate is now a **weekly edit-test** (Emma 2026-07-15): Sundays, CI attempts a real edit — success unlocks
 editing for the week, failure keeps it locked — so we don't hammer the wiki while it's blocked.
 

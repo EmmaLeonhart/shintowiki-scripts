@@ -41,6 +41,19 @@ jobs:
       - name: Install dependencies
         run: pip install mwclient requests
 
+      # Lockout guard (Emma 2026-07-27). All three renderers walk
+      # shinto.miraheze.org; they are read-mostly, which is exactly why they were
+      # never gated. Under the blackout, reads count.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the duplicate-QID renderers."
+          fi
+
       - name: Configure git and run tag
         run: |
           git config user.name "github-actions[bot]"
@@ -57,6 +70,7 @@ jobs:
           echo "RUN_TAG=[[github:${RUN_PATH}|${CAUSE}]]" >> "$GITHUB_ENV"
 
       - name: "Render: find_duplicate_page_qids"
+        if: steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Render: find_duplicate_page_qids" \
             python3 shinto_miraheze/find_duplicate_page_qids.py --apply --run-tag "${RUN_TAG}"
@@ -65,7 +79,7 @@ jobs:
       # Reads [[Category:Pages with multiple wikidata links]] (populated by the
       # multiple_wikidata_links orchestrator op). Renders even when empty.
       - name: "Render: report_multiple_wikidata_links"
-        if: always()
+        if: always() && steps.lockout.outputs.locked != 'true' 
         run: |
           shinto_miraheze/run_step.sh "Render: report_multiple_wikidata_links" \
             python3 shinto_miraheze/report_multiple_wikidata_links.py --apply --run-tag "${RUN_TAG}"
@@ -74,7 +88,7 @@ jobs:
       # [[Category:Double category qids]] (the ~4 dab pages the auto-resolver
       # leaves for a human). Read-only on content pages.
       - name: "Render: report_double_qid_tail"
-        if: always()
+        if: always() && steps.lockout.outputs.locked != 'true' 
         run: |
           shinto_miraheze/run_step.sh "Render: report_double_qid_tail" \
             python3 shinto_miraheze/report_double_qid_tail.py --apply --run-tag "${RUN_TAG}"

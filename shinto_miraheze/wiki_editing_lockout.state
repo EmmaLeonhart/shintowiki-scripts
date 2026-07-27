@@ -1,6 +1,7 @@
 {
   "locked": true,
-  "locked_until": "2026-08-03",
-  "reason": "weekly edit-test FAILED (HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json) — locked until the next Sunday test",
-  "checked": "2026-07-26T10:56:18Z"
+  "locked_until": "2026-08-10",
+  "blackout_until": "2026-08-09",
+  "reason": "FULL BLACKOUT (Emma 2026-07-27): no requests to shinto.miraheze.org of any kind — reads included — until 2026-08-09. The 403 has been up since 2026-07-11 and never lifted; Emma's read is that continuing to read through the challenge is what kept us looking persistent, so the challenge was never relaxed. Every Miraheze-touching workflow is now gated on this file, and weekly_wiki_edit_test.py holds its probe until blackout_until passes, so the first test after the blackout (Sunday 2026-08-09) lands on ~13 days of true silence.",
+  "checked": "2026-07-27T23:45:00Z"
 }

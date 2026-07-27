@@ -57,7 +57,24 @@ jobs:
           echo "These files are updated by generate-quickstatements on each successful run."
           ls -la modern-quickstatements/_site/ 2>/dev/null || echo "WARNING: no _site/ files in repo either"
 
+      # Lockout guard (Emma 2026-07-27). generate_pages.py is the heaviest
+      # remaining Miraheze reader (~3 min of API calls); the guard was originally
+      # only wired into the wiki-WRITING workflows so it kept running all through
+      # the 403. Only this step is gated — every step below it is Wikidata- or
+      # repo-sourced, and _site/ is committed, so the dashboards still rebuild and
+      # the last good main site stays published.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked — skipping the main-site generation (QS dashboards still rebuild)."
+          fi
+
       - name: Generate main site
+        if: steps.lockout.outputs.locked != 'true'
         run: python3 site/generate_pages.py
 
       - name: Generate run history page
