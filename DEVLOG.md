@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-27 — remote-queue routine re-adopted onto Emma's new Claude account
+
+Emma switched Claude accounts. The claude.ai routine that drains `remote_queue.json` did not come
+with her: `RemoteTrigger list` on the new account returns exactly one trigger (a morning briefing),
+and `RemoteTrigger get trig_013F9aeKeL3hx8zo7weKj3Ed` — the worker documented in
+`docs/remote_queue_pipeline.md` — now 404s. Its last run was 2026-07-27 07:46 UTC (commit
+`eb9dcccf`), so the daily `chore(remote-queue): address 5 items` cadence was about to stop silently.
+
+Recreated as **`trig_015viL16x9ReKsQRmsJEscH7`** ("Drain remote_queue.json (5 random/day)", Sonnet,
+cron `41 7 * * *` UTC — matching the old ~07:46 UTC landing time). The old prompt was not stored
+anywhere in the repo, so it was reconstructed from `docs/remote_queue_pipeline.md` plus the DEVLOG
+entries that quote it: 5 items chosen at RANDOM, no cursor, never touch
+`consume_remote_queue.state`, follow each item's own `instruction` literally, remove the gating
+category only when the item is genuinely finished, touch nothing else, commit
+`chore(remote-queue): address N items via remote routine [skip ci]`.
+
+Docs updated with the new ID and a note that a 404 on the worker means an account switch, not a
+dead pipeline — that failure mode is invisible from inside the repo.
+
+**Wiki still 403.** Unrelated to the account switch and unchanged since 2026-07-11: the Miraheze
+Cloudflare challenge is still up. The 2026-07-26 weekly edit-test failed again (403 on
+`action=query`), so `wiki_editing_lockout.state` is `locked` until 2026-08-03 and every
+wiki-writing job is skipping its steps. Verified live from Emma's own IP with the canonical
+`EmmaBot/2.0` UA — still 403, so it is not a CI-runner-IP problem. 16 days with no bot edits.
+
+---
+
 ## 2026-07-15 — weekly Sunday edit-test replaces the hourly gate + daily lockout
 
 Emma: rather than probe the wiki hourly/daily while it's blocked, test a REAL edit once a week on
