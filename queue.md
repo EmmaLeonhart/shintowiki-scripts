@@ -67,12 +67,22 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
   is capped by the 403 — the genbu crawl itself is unaffected, so further coverage work runs now.
 - 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (**80**, up from 77 via alias
   + kyūjitai matching). 256 kami still have no exact-label match; a fuzzy/alias pass could recover more.
-- ❓ **Prefectural shrine-association IDs** — two walls found 2026-07-24: no public repo to merge (the
-  research is in Emma's PRIVATE repo), and no Wikidata property exists for prefectural jinjacho
-  databases. Pragmatic path needing no new property: **P973 (described at URL)** using jinjacho URLs
-  already cited in our articles — 88 already shipped.
-  - **ASK:** "P973 now / propose dedicated properties / hand me the private repo?" — plus the standing
-    *"walk me through it first"* option.
+- ▶ **Prefectural shrine-association IDs → P973.** Emma decided 2026-07-28: **P973 now** (not a
+  property proposal, not the private repo). No new property needed.
+  - **Correction to the old framing:** there is no "rest of the CSV" to cover.
+    `generate_jinjacho_p973.py` already emits **all 88** rows of
+    `jinjacho/shrines_and_websites.csv` — that CSV is a *sample*, not a backlog, so re-running the
+    generator adds nothing. Coverage grows only by resolving MORE shrine→URL pairs.
+  - **The build (external sites only — no Miraheze, runnable during the blackout):**
+    `jinjacho/verification_results.csv` already verifies **23 prefectures** with working per-shrine
+    detail pages (verdict `OK_SHRINE_CONTENT`, e.g. Gifu `syosai.php?shrno=N`, Aichi
+    `search_detail.html?id={uuid}`, the shared `jinja-net.jp` family), and
+    `template_http_test_results.csv` has the URL template + confidence per association. Steps:
+    (1) per prefecture, enumerate detail pages from its template family (throttled, polite UA);
+    (2) extract shrine name + address from each page; (3) match to our items by exact ja label,
+    gated on the shrine being in that prefecture, single-match-only like the shinmei/genbu resolvers;
+    (4) append `QID|P973|"<url>"` to `jinjacho_p973.txt` (already registered in `ATOMIC_FILES`).
+  - Add-only; the daily editor skips statements that already exist, so re-runs are no-ops.
 
 ## A4. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
 
