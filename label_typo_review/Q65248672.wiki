@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q65248672 -->
 <!-- JA: 伊豫岡八幡神社 | KANA: いよおかはちまんじんじゃ | EN_LABEL: Iyooka Hachiman Shrine | KANA_ROMANIZED: Iyokahachimanjinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA_ISSUE: romanization missing second 'o' in おか (should be "oka" not "ka") -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)

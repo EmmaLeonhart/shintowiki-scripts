@@ -1,6 +1,6 @@
 {{Navbox
 |name = Medieval Shinto
-|title = {{ill|Medieval Shinto|ja|神道の歴史#中世|12=simple|13=User:Immanuelle/Medieval Shinto|12=simple|13=User:Immanuelle/Medieval Shinto|qq=}}
+|title = [[Medieval Shinto]]
 |listclass = hlist hlist-hyphen
 
 |group1 = Worldview
@@ -8,82 +8,76 @@
 |group1 = Philosophy
 |list1 = {{Navbox|child
 |group1 = [[:en:Shinbutsu-shūgō|Shinbutsu-shūgō]]
-|list1 = 
+|list1 =
 * [[:en:Dharmapala|Gohō Zennin]]
 * [[:en:Shinbutsu-shūgō|Shinbutsu-shūgō#神宮寺の建立]]
-* {{ill|Honji Suijaku|ja|本地垂迹説|12=simple|13=User:Immanuelle/Honji Suijaku|12=simple|13=User:Immanuelle/Honji Suijaku|qq=}}
+* [[Honji Suijaku]]
 ** [[:en:Shintōshū|Shintō-shū]]
-* {{ill|Shintō Kanjo|ja|神道灌頂|12=simple|13=User:Immanuelle/Shintō Kanjo|12=simple|13=User:Immanuelle/Shintō Kanjo|qq=}}
+* [[Shintō Kanjo]]
 * [[:en:Goryō|Goryō Faith]]
-* {{ill|Shinkoku Thought|ja|神国思想|12=simple|13=User:Immanuelle/Shinkoku Thought|12=simple|13=User:Immanuelle/Shinkoku Thought|qq=}}
-** {{ill|Jihen|ja|慈遍|12=simple|13=User:Immanuelle/Jihen|12=simple|13=User:Immanuelle/Jihen|qq=}}
+* [[Shinkoku Thought]]
+** [[Jihen]]
 |group2 = Schools
 |list2 =
-* {{ill|Ryōbu Shintō|ja|両部神道|12=simple|13=User:Immanuelle/Ryōbu Shintō|12=simple|13=User:Immanuelle/Ryōbu Shintō|qq=}}
-* {{ill|Ise faith|lt=Ise faith|lt=Ise Shintō|ja|伊勢神道|12=simple|13=User:Immanuelle/Ise Shintō|12=simple|13=User:Immanuelle/Ise Shintō|qq=}}
-** {{ill|Watarai Tsunemasa|ja|度会常昌|12=simple|13=User:Immanuelle/Watarai Tsunemasa|12=simple|13=User:Immanuelle/Watarai Tsunemasa|qq=}}
-** {{ill|Watarai Ieyuki|ja|度会家行|12=simple|13=User:Immanuelle/Watarai Ieyuki|12=simple|13=User:Immanuelle/Watarai Ieyuki|qq=}}
-** {{ill|Yamatohime-no-Mikoto Seiki|ja|倭姫命世記|1=Yamatohime no Mikoto Seiki|12=simple|13=User:Immanuelle/Yamatohime-no-Mikoto Seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki|12=simple|13=User:Immanuelle/Yamatohime-no-Mikoto Seiki|13=User:Immanuelle/Yamatohime no Mikoto Seiki|qq=}}
+* [[Ryōbu Shintō]]
+* [[Ise Shintō|Ise faith]]
+** [[Watarai Tsunemasa]]
+** [[Watarai Ieyuki]]
+** [[Yamatohime no Mikoto Seiki]]
 * [[:en:Sannō Ichijitsu Shintō|Sannō Shintō]]
 * [[:en:Yoshida Shintō|Yoshida Shintō]]
 ** [[:en:Yoshida Kanetomo|Yoshida Kanetomo]]
-** {{ill|Shintō Taii|ja|神道大意|12=simple|13=User:Immanuelle/Shintō Taii|12=simple|13=User:Immanuelle/Shintō Taii|qq=}}
-* {{ill|Miwa School of Shintō|ja|三輪流神道|12=simple|13=User:Immanuelle/Miwa School of Shintō|12=simple|13=User:Immanuelle/Miwa School of Shintō|qq=}}
-* {{ill|Oryū Shintō|ja|御流神道|12=simple|13=User:Immanuelle/Oryū Shintō|12=simple|13=User:Immanuelle/Oryū Shintō|qq=}}
+** [[Shintō Taii]]
+* [[Miwa School of Shintō]]
+* [[Oryū Shintō]]
 }}
 |group2 = Mythology
 |list2 =
-* {{ill|Chūsei Nihonki|ja|中世日本紀|12=simple|13=User:Immanuelle/Chūsei Nihonki|12=simple|13=User:Immanuelle/Chūsei Nihonki|qq=}}
+* [[Chūsei Nihonki]]
 * [[:en:Jinnō Shōtōki|Shin Kōkotōki]]
 ** [[:en:Kitabatake Chikafusa|Kitabatake Chikafusa]]
 
 |group3 = Deities
 |list3 =
 * [[:en:Gozu Tennō|Gozu Tennō]]
-* {{ill|Zaō Gongen|ja|蔵王権現|12=simple|13=User:Immanuelle/Zaō Gongen|12=simple|13=User:Immanuelle/Zaō Gongen|qq=}}
-* {{ill|Kiyotaki Gongen|ja|清瀧権現|12=simple|13=User:Immanuelle/Kiyotaki Gongen|12=simple|13=User:Immanuelle/Kiyotaki Gongen|qq=}}
-* {{ill|Aka-yama Myōjin|ja|赤山明神|12=simple|13=User:Immanuelle/Aka-yama Myōjin|12=simple|13=User:Immanuelle/Aka-yama Myōjin|qq=}}
+* [[Zaō Gongen]]
+* [[Kiyotaki Gongen]]
+* [[Aka-yama Myōjin]]
 * [[:en:Shinra Myōjin|Shinra Myōjin]]
 * [[:en:Matarajin|Matarajin]]
 * [[:en:Ugajin|Uga-no-Kami]]
 * [[:en:Kōjin|Kōjin]]
-* {{ill|Myōken|ja|妙見|12=simple|13=User:Immanuelle/Myōken|12=simple|13=User:Immanuelle/Myōken|qq=}}
-* {{ill|Thirty Guardian Deities|ja|三十番神|1=Thirty Guardian Deities|2=ja|3=三十番神|12=simple|13=User:Immanuelle/Thirty Guardian Deities|12=simple|13=User:Immanuelle/Thirty Guardian Deities|qq=}}
+* [[Myōken]]
+* [[Thirty Guardian Deities]]
 }}
 
 |group3 = Beliefs
 |list3 =
-* {{ill|Hachiman Faith|ja|八幡信仰|12=simple|13=User:Immanuelle/Hachiman Faith|12=simple|13=User:Immanuelle/Hachiman Faith|qq=}}
-* {{ill|Kasuga Faith|ja|春日信仰|12=simple|13=User:Immanuelle/Kasuga Faith|12=simple|13=User:Immanuelle/Kasuga Faith|qq=}}
-** {{ill|Kasuga-no-Kami|lt=Kasuga-no-Kami|lt=Kasuga Gongen|ja|春日権現|12=simple|13=User:Immanuelle/Kasuga Gongen|12=simple|13=User:Immanuelle/Kasuga Gongen|qq=}}
-* {{ill|Sumiyoshi Faith|ja|住吉信仰|12=simple|13=User:Immanuelle/Sumiyoshi Faith|12=simple|13=User:Immanuelle/Sumiyoshi Faith|qq=}}
-* {{ill|Inari Faith|ja|稲荷信仰|12=simple|13=User:Immanuelle/Inari Faith|12=simple|13=User:Immanuelle/Inari Faith|qq=}}
-* {{ill|Miwa Myōjin|ja|三輪明神|12=simple|13=User:Immanuelle/Miwa Myōjin|12=simple|13=User:Immanuelle/Miwa Myōjin|qq=}}
-* {{ill|Sannō Faith|ja|山王信仰|1=Sannō Faith|12=simple|13=User:Immanuelle/Sannō Faith|13=User:Immanuelle/Sannō Faith|12=simple|13=User:Immanuelle/Sannō Faith|13=User:Immanuelle/Sannō Faith|qq=}}
-** {{ill|Sannō Gongen|ja|山王権現|12=simple|13=User:Immanuelle/Sannō Gongen|12=simple|13=User:Immanuelle/Sannō Gongen|qq=}}
-* {{ill|Tenjin Faith|ja|天神信仰|1=Tenjin faith|12=simple|13=User:Immanuelle/Tenjin Faith|13=User:Immanuelle/Tenjin faith|12=simple|13=User:Immanuelle/Tenjin Faith|13=User:Immanuelle/Tenjin faith|qq=}}
-* {{ill|Kumano Faith|ja|熊野信仰|1=Kumano Faith|2=ja|3=熊野信仰|qid=Q135501741}}{{efn|The religion of [[Kumano Shrines]]|1=Kumano shrine|lt=Kumano Three Shrines|lt=Kumano faith|12=simple|13=User:Immanuelle/Kumano Faith|13=User:Immanuelle/Kumano Three Shrines|12=simple|13=User:Immanuelle/Kumano Faith|13=User:Immanuelle/Kumano Three Shrines|qq=}}
-** {{ill|Kumano Gongen|ja|熊野権現|12=simple|13=User:Immanuelle/Kumano Gongen|12=simple|13=User:Immanuelle/Kumano Gongen|qq=}}
-* {{ill|Fujisan Sengen Faith|ja|富士浅間信仰|12=simple|13=User:Immanuelle/Fujisan Sengen Faith|12=simple|13=User:Immanuelle/Fujisan Sengen Faith|qq=}}
+* [[Hachiman Faith]]
+* [[Kasuga Faith]]
+** [[Kasuga Gongen|Kasuga-no-Kami]]
+* [[Sumiyoshi Faith]]
+* [[Inari Faith]]
+* [[Miwa Myōjin]]
+* [[Sannō Faith]]
+** [[Sannō Gongen]]
+* [[Tenjin faith]]
+* [[Kumano Faith]]{{efn|The religion of [[Kumano Shrines]]}}
+** [[Kumano Gongen]]
+* [[Fujisan Sengen Faith]]
 
 |group4 = Iconography
 |list4 =
-* {{ill|Shinzō|ja|神像|12=simple|13=User:Immanuelle/Shinzō|12=simple|13=User:Immanuelle/Shinzō|qq=}}
-* {{ill|Shintō Mandala|ja|神道曼荼羅|12=simple|13=User:Immanuelle/Shintō Mandala|12=simple|13=User:Immanuelle/Shintō Mandala|qq=}}
-* {{ill|Eigyōzu|ja|影向図|12=simple|13=User:Immanuelle/Eigyōzu|12=simple|13=User:Immanuelle/Eigyōzu|qq=}}
+* [[Shinzō]]
+* [[Shintō Mandala]]
+* [[Eigyōzu]]
 
 }}
 <noinclude>
 [[Category:Shinto templates]]
-[[Category:Independently git synced pages]]
 [[Category:Shinto cult templates]]
 
-{{translated page|ja|Template:中世神道|version=100918440|comment=Imported full ja history}}
 [[en:Template:Medieval Shinto]]
 [[Category:Templates]]
-[[Category:Templates fixed with noinclude]]
-</noinclude>
-<noinclude>
-{{wikidata link||en|Template:Medieval Shinto|ja|Template:中世神道}}
 [[Category:Templates fixed with noinclude]]
 </noinclude>
