@@ -26,3 +26,6 @@ shinto-label-generator/cdo_corpus_fetch.log
 modern-quickstatements/.province_cache/
 modern-quickstatements/.saijin_research_run.log
 _site/empty-items-export.xml
+
+# jinjacho crawl progress log (regenerated each run; the data lands in crawled_shrines.csv)
+jinjacho/crawl.log

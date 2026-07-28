@@ -39,4 +39,4 @@ jobs:
         run: pip install pytest requests mwclient opencc-python-reimplemented hanja pykakasi wunsen aksharamukha
 
       - name: Run tests
-        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ recreate-deleted-wikidata/tests/ fandom/tests/ -q
+        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ recreate-deleted-wikidata/tests/ fandom/tests/ jinjacho/tests/ -q
