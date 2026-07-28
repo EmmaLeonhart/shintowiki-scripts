@@ -47,6 +47,36 @@ It reports 42/42, 12,326 people, 12,605 statements. Wiring meant three things, n
 ~106k pool is ~10% of it, the same share as p6262_fandom_links and bunrei. Nothing
 edits before the 2026-08-04 freeze lifts; Emma confirmed the freeze still stands today.
 
+**Jinjacho P973 — the crawl Emma asked for.** The queue item read as "extend the
+generator to cover the rest of the CSV", but `generate_jinjacho_p973.py` already emits
+all 88 rows of `shrines_and_websites.csv`: that file is a hand-built sample, not a
+backlog. Coverage only grows by resolving more shrine→URL pairs, so the work is a
+crawl. Built as `crawl_jinjacho_shrines.py` → `match_jinjacho_shrines.py` → the
+existing generator (which now reads both CSVs), over the integer-enumerable
+`OK_SHRINE_CONTENT` sites: Gifu, Shiga, Saitama. Aichi is UUID-keyed and
+Mie/Osaka/Kagoshima are name-slug paths, so they need an index harvest and a test
+refuses any family without an `{n}` in its URL.
+
+Matching was wrong twice, both times silently, and only hand-checking `P131` on the
+first five matches caught it. Gating on PREFECTURE matched a 天満神社 crawled in 大垣市
+to 天満神社 (高山市), and a 白髭神社 in 大垣市墨俣町 to 白鬚神社 in 各務原市 — distinct
+shrines sharing a name, each the only one of that name in Gifu, so "unique in the
+prefecture" attached the URL to the wrong shrine. Gating moved to the MUNICIPALITY,
+which the crawled address already carries. That exposed the same failure one level
+down: two different 八幡神社 in 大垣市墨俣町 both resolved to Q11391073, since only one
+is on Wikidata. A collision guard now drops every row of any group where two crawled
+shrines claim one item. On the 23-row sample the yield went 5 → 3, and all three were
+verified by hand. Low yield is the intended trade: a missed shrine costs nothing.
+
+Two operational findings. Gifu answers in **~22s per request** (HTTP 200 with correct
+content, and it was fast for the first ~50 — a slow box or a tarpit, not a block),
+which makes its 2,600-id sweep ~17 hours, while Shiga and Saitama answer in ~1s; they
+now run as separate processes so Gifu cannot starve them. That sharing then needed two
+real fixes before it was safe: the cursor file was written whole-dict, so each process
+rolled back its sibling's cursor, and the CSV was written row-by-row, which can
+interleave mid-row between processes. Cursors now merge through `save_cursor()` with an
+atomic replace, and rows are appended in a single write.
+
 **A red test on main, unrelated to any of this.** `50b42c1a7` moved Emma's two
 inbound-link P50 lines into `sequential_misc.txt` but left
 `test_the_shipped_file_has_no_executable_lines_yet` asserting the file is empty, so the
