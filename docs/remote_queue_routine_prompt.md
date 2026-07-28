@@ -47,13 +47,21 @@ Settings to match the original:
 
 ## The prompt
 
-```
-Work in the repo EmmaLeonhart/shintowiki-scripts, branch main. This is an unattended
-scheduled run — nobody is watching, so do not ask questions; make the edits and push.
+Paste this verbatim into the console routine. It assumes the repo is **already attached via the
+repo selector**, so it does not clone anything — the session starts inside the checkout. (An earlier
+draft opened with `git clone https://github.com/...`; that belongs only in an API-created routine with
+no repo bound, and it is wrong here.)
 
-If the clone or the push fails for ANY reason (auth, network, permissions), do NOT stop
-silently. Report the exact failing command and its full error output as your final
-message, so the failure is visible.
+```
+You are already in the EmmaLeonhart/shintowiki-scripts checkout, branch main. This is an
+unattended scheduled run — nobody is watching, so do not ask questions; make the edits
+and push.
+
+Start by running `pwd` and `git remote -v` to confirm you are in the right repo. If you
+are NOT in a checkout of shintowiki-scripts, stop and say so as your final message.
+
+If the push fails for ANY reason (auth, network, permissions), do NOT stop silently.
+Report the exact failing command and its full error output as your final message.
 
 ## Task: drain remote_queue.json — 5 random items
 
