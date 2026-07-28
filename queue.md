@@ -2,191 +2,212 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
-
-## Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-07-13)
-
-Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
-
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
-**Status: ⏸ WAITING — FULL BLACKOUT until 2026-08-09** (Emma 2026-07-27). Not just "no writes": **no requests to shinto.miraheze.org of any kind, reads included.** The 403 has been up since 2026-07-11 and never lifted; Emma's read is that our continuing to read through the challenge is what kept us looking persistent, so it was never relaxed. Every Miraheze-touching workflow is now gated on `wiki_editing_lockout.state` (the guard had only ever been wired into the *writing* workflows), and `weekly_wiki_edit_test.py` holds its probe until `blackout_until` passes — so the first test after the blackout, Sunday 2026-08-09, lands on ~13 days of genuine silence. It flips this to **`WIKI_GATE: GO`** if the edit lands.
-The gate is now a **weekly edit-test** (Emma 2026-07-15): Sundays, CI attempts a real edit — success unlocks
-editing for the week, failure keeps it locked — so we don't hammer the wiki while it's blocked.
+**Status: ⏸ WAITING** (weekly edit-test failed, 2026-07-26 10:56 UTC) — wiki editing is locked.
+The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
+
+> ⛔ **FULL BLACKOUT until 2026-08-09** (Emma 2026-07-27). Not just "no writes": **no requests to
+> shinto.miraheze.org of any kind, reads included.** The 403 has been up since 2026-07-11 and never
+> lifted; Emma's read is that our continuing to read through the challenge is what kept us looking
+> persistent, so it was never relaxed. Every Miraheze-touching workflow is now gated on
+> `wiki_editing_lockout.state`, and `weekly_wiki_edit_test.py` holds its probe until `blackout_until`
+> passes — so the first test after the blackout, Sunday 2026-08-09, lands on ~13 days of true silence.
+
+**THE QUEUE IS SPLIT IN TWO (Emma 2026-07-27).** Read this before picking work:
+
+- **§A — NOT gated on shintowiki.** Wikidata, external DBs, repo/CI work. **Runnable right now,
+  today, regardless of the 403.** The work-loop starts here, every tick, always.
+- **§B — GATED on shintowiki access.** Nothing in §B can start until the marker says **GO**.
+  Do not fire §B decisions, do not "prepare" §B work, do not touch the wiki to check something.
 
 **Work-loop, every tick:** SYNC (pull remote) first, then read the marker.
-- Marker says **GO** → wiki editing is live: start working through the **❓ DECISIONS** below,
-  one at a time, in order, each with the explain-first option. This is your signal to actually run.
-- Marker says **WAIT** → do only **▶ DO / 🤖 AUTO** items and wait. Do NOT fire the decisions; we're
-  just holding until the gate opens (no more spinning on "nothing actionable").
+- Marker **WAIT** → work §A only. §B does not exist for you.
+- Marker **GO** → §A still comes first; then §B unlocks and the decisions fire one at a time.
 
-**How this queue executes (Emma 2026-07-11).** Every item is either executable now or clearly
-blocked — no item just sits with a buried question. Each is tagged:
-
-- **❓ ASK** — needs Emma's decision. The exact AskUserQuestion is written under the item. The
-  work-loop FIRES it (don't silently skip) and then does the chosen branch. Clear these top-down.
-- **▶ DO** — obvious, no question; just execute.
-- **🤖 AUTO** — runs itself (CI / a collector / the drip); no action beyond letting it run.
-- **⏸ BLOCKED** — waiting on a named external thing; skip until that clears.
-
-**Login gate.** The 🚦 marker at the very top is the signal — CI keeps it current. When it says GO,
-the decisions run; when WAIT, only DO/AUTO items run. Wikidata / read-only work is unaffected either
-way.
+**Item tags.** ❓ ASK = needs Emma's decision, the exact AskUserQuestion is written under the item;
+fire it, don't skip it. ▶ DO = just execute. 🤖 AUTO = runs itself. ⏸ PARKED = waiting on a named
+external thing.
 
 ---
 
-## ❓ DECISIONS — fire the AskUserQuestion, then do the branch (clear these first)
+# ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-**Standing rule: EVERY decision below also carries a "walk me through it first / let's chat"
-option.** Emma often doesn't have the context to pick A vs B cold, and that's fine — she picks
-"explain it first", the bot lays out the situation in plain terms in chat (or on the Open questions
-page once the wiki unblocks), they talk it through, THEN decide. So each AskUserQuestion the
-work-loop fires must include that option alongside the concrete branches. Never treat a decision as
-"blocked on Emma" and skip it — fire the question (with the chat option) so it can actually move.
-Fire ONE decision at a time, in order, not a batch.
+## A1. ▶ The cloud routine can't push — it does the work and throws it away
 
-> **D2–D8 are BLOCKED until the Open questions wiki page works again (Emma 2026-07-13).** They
-> can't be decided blind — Emma reviews them against the wiki page + the browsable tables. Do NOT
-> re-fire them while the wiki is 403'd; the review links (GitHub Pages, which work now) are on each
-> item. D1 is decided below and removed.
+**This is the top item.** The claude.ai routine that drains `remote_queue.json` completes its run,
+processes 5 items, commits locally — and then the push 403s, so every run's work is lost when the
+container dies. Three runs on 2026-07-27 (16:33, 16:56, 17:42) all did real work and all lost it.
 
-### D2. The 84 duplicate shrine pairs — link or merge?
+```
+fatal: unable to access 'http://127.0.0.1:41729/git/EmmaLeonhart/shintowiki-scripts.git/':
+The requested URL returned error: 403
+```
+
+Ruled out, with evidence — do not re-investigate these:
+- **Not GitHub app permissions.** `github.com/settings/installations` → Claude → **All repositories**,
+  *"Read and write access to … code"*, installed 8 months ago. Emma also granted fresh permissions on
+  07-27 and the next run still 403'd.
+- **Not the account's GitHub connection.** The clone goes through the same proxy and succeeds.
+- **Not a crash.** Every run shows a green check; the agent finishes normally and reports the failure.
+
+Leading hypothesis: the routine has **no repo bound to it** — it was created through the
+`RemoteTrigger` API (`trig_015viL16x9ReKsQRmsJEscH7`), which exposes no repo field (`git_repo`,
+`repository`, and `session_context.git_repo` were each accepted with HTTP 200 and silently dropped).
+The sandbox proxy allows an anonymous clone of a public repo but refuses a push with no bound repo.
+- **Next step:** recreate the routine through the claude.ai console's **+ New routine** flow, which
+  has a repository picker, and delete the API-created one. Prompt is paste-ready at
+  `docs/remote_queue_routine_prompt.md` (console variant — no `git clone` line; the session starts
+  inside the checkout).
+- Blocks A2 entirely, and it is why `remote_queue.json` (1,997 items) is draining at zero/day.
+
+## A2. 🤖 Cloud-answer collectors — blocked by A1, not by the wiki
+
+Each runs when a remote-routine commit lands. No commits are landing, so these are idle **because of
+A1**, not because of the 403. They resume the moment A1 is fixed.
+- `collect_label_typo_answers.py` — 1 collected 07-11, 156 pending.
+- Description-enrichment, ronsha-ranking, category-translation collectors — same pattern.
+  `docs/description_enrichment_pipeline.md`.
+
+## A3. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
+
+Tags PEOPLE with P14005 from the ja.wp [[Category:日本の位階受位者]] tree. Decisions settled: create
+missing items, every rank held, primary-label rank map, skip 无位, no parent-rank double-tag.
+- ✅ 26 sub-rank items created (Q140679480…Q140679509); base ranks already existed.
+- ✅ Sub-rank parent links (P361) run; 外従五位 base created = **Q140679675** (part of 外位).
+- ✅ Bidirectional category links run: 42 recipient categories linked rank↔category (P1792/P301);
+  24 missing category items created (Q140685601…).
+- ⏳ **Category English labels:** `court_rank_category_en_labels.txt` (42 lines), add-only. Emma runs it.
+- ⏭ **Wire-in:** rerun the generator's matched/unmatched check once WDQS indexes the new rank items
+  (all 42 categories should resolve), then add `generate_court_rank_quickstatements.py` to
+  `generate-quickstatements.yml`. Add-only.
+- Note: base-rank items still carry sub-rank names as skos aliases (正四位 has "正四位上/下"); optional
+  cleanup now that sub-ranks are their own items.
+
+## A4. 🤖 Shrine external-ID entity resolution — Wikidata + external sites
+
+- 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (**1257**, up from 1041 after the
+  kyūjitai + province-disambiguation passes). Registered; drips. Only the *live-wiki citation* source
+  is capped by the 403 — the genbu crawl itself is unaffected, so further coverage work runs now.
+- 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (**80**, up from 77 via alias
+  + kyūjitai matching). 256 kami still have no exact-label match; a fuzzy/alias pass could recover more.
+- ❓ **Prefectural shrine-association IDs** — two walls found 2026-07-24: no public repo to merge (the
+  research is in Emma's PRIVATE repo), and no Wikidata property exists for prefectural jinjacho
+  databases. Pragmatic path needing no new property: **P973 (described at URL)** using jinjacho URLs
+  already cited in our articles — 88 already shipped.
+  - **ASK:** "P973 now / propose dedicated properties / hand me the private repo?" — plus the standing
+    *"walk me through it first"* option.
+
+## A5. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
+
+All registered atomic files are staged-but-not-delivered by design until `conflict_gate` lifts
+(~2026-08-08, or 7 days after ブルーノ・プラス goes quiet). Emma's caution gate, not a stall.
+- **Engishiki list membership** — script 1 adds (`list_membership_rebuild.txt`), script 2 removals
+  (`list_membership_removals.txt`, 2,236 pure removals). The 22 duplicate `part of` are report-only.
+  `docs/ronsha_list_membership_2026-07.md`.
+- **Province exclusions** — `province_exclusions.txt` (382 lines). ADD-ONLY, no removals ever.
+  `docs/province_exclusion_residual_2026-07.md`.
+- **Reisai** — 3,239 P837 lines staged (`reisai.txt`); live coverage still 195. Reassess (Mie
+  prefectural scraper?) once the drip resumes and the real gap is measurable.
+- 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
+
+## A6. ⏸ Parked — external, and not shintowiki either
+
+- **Repurposed-item damage** — Q123044569 (Kamo), Q134886554 (Chikadono), Q134736575 (見光寺),
+  Q140476265 (junk). Emma: *document, don't touch; no contact* until we understand the editor. The
+  Kikuna restoration is already queued to our item Q134926804. `docs/bruno_plus_analysis_2026-07.md`.
+- **Bunrei paper sources** — 神社本庁『全国神社祭祀祭礼総合調査』(1995) etc.; needs a library, not
+  scrapeable. Online 総本社 sources are exhausted (~10,650 cited edges).
+
+---
+
+# ═══════ §B — GATED ON SHINTOWIKI · DO NOT START UNTIL `WIKI_GATE: GO` ═══════
+
+Everything below needs the wiki. While the blackout is on, these are not just blocked — **touching
+them means touching Miraheze, which is the exact thing the blackout exists to prevent.**
+
+## B0. 🤖 The gate itself
+
+- **Weekly wiki edit-test** — `weekly-wiki-edit-test.yml`, Sundays. CI attempts a REAL edit to
+  `User:EmmaBot/edit-test`. Success → unlocks for the week + marker GO; failure → 8-day lock + marker
+  WAIT. Currently held by `blackout_until: 2026-08-09`, so it makes no request at all before then.
+  Nothing to do — the Sunday test is the sole decider.
+  Audit: `docs/wiki_403_audit_2026-07-11.md`. The block is a Cloudflare zone challenge on shinto
+  (aelaki works from the same IP).
+- **All wiki edits are stuck in the repo** — Open-questions responses committed to
+  `git_synced/Open questions.wiki`, plus every cleanup/orchestrator edit. Not fixable from CI.
+  [[reference_miraheze_antiddos_challenge]]
+
+## B1. Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-07-13)
+
+Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki`
+(the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every
+actionable item or Emma disposition not yet handled: decompose it into concrete steps, or act on it now
+and prune the resolved bullet. Then delete THIS block. **Needs the live page → §B.**
+
+## B2–B8. ❓ DECISIONS — fire ONE at a time, in order, once the gate opens
+
+**Standing rule: EVERY decision carries a "walk me through it first / let's chat" option.** Emma often
+doesn't have the context to pick A vs B cold — she picks "explain it first", the bot lays out the
+situation in plain terms, they talk, THEN decide. Never treat a decision as "blocked on Emma" and skip
+it; fire the question with the chat option so it can actually move.
+
+> These can't be decided blind — Emma reviews them against the Open questions page **plus** the
+> browsable tables. The tables are GitHub Pages and work right now, but the review pairs the two, so
+> they wait for the gate (Emma 2026-07-13).
+
+### B2. The 84 duplicate shrine pairs — link or merge?
 84 living-shrine items duplicate their 927-register-entry twin (same Kokugakuin id / name).
 Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html
 - **ASK:** "Link each pair with 'said to be the same as', or merge them?" → *link* (I generate
   QuickStatements, add-only) / *merge* (manual/browser, I hand you the list) / *case-by-case*.
 
-### D3. The 66 orphan Shikinaisha — mis-tagged, or missing entries?
-66 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or
-real entries the lists are missing. Same table as D2.
+### B3. The 66 orphan Shikinaisha — mis-tagged, or missing entries?
+66 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or real
+entries the lists are missing. Same table as B2.
 - **ASK:** "How do I treat the 66?" → *investigate case-by-case* / *treat as mis-tagged* (drop the
   class) / *treat as missing entries* (add to the list).
 
-### D4. The 18 missing Kokugakuin ids — auto-fill or eyes?
+### B4. The 18 missing Kokugakuin ids — auto-fill or eyes?
 18 register entries lack a Kokugakuin database id; the strict matcher found ZERO safe to add (two
-adjacent DB entries can share a name). Table:
-https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-missing-ids.html
+adjacent DB entries can share a name).
+Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-missing-ids.html
 - **ASK:** "Is exact name-matching good enough to auto-fill, or do the 18 need per-item eyes?" →
   *per-item eyes* / *auto-fill the exact matches*.
 
-### D5. The ~66 items with two Kokugakuin ids — how to assign the section?
+### B5. The ~66 items with two Kokugakuin ids — how to assign the section?
 Each is a candidate for two different 927 entries, so its parent-link needs a "which entry" (P958)
-qualifier. Emma earlier ruled all ambiguous. Table (parent entry vs the item's two entries):
-https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-multi-p13677.html
+qualifier. Emma earlier ruled all ambiguous.
+Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-multi-p13677.html
 - **ASK:** "Go through these with me per-item now, or leave them for you to work off the table?" →
   *per-item with you* / *leave for you*.
 
-### D6. The Awa list fix — how to delete the wrong statement?
-Awa entry 3 should be 天神社 (add already queued); the wrong 下立松原 statement must be deleted, but
-it can't be a QuickStatement (下立松原 sits at ordinals 3 AND 5, same value).
+### B6. The Awa list fix — how to delete the wrong statement?
+Awa entry 3 should be 天神社 (add already queued); the wrong 下立松原 statement must be deleted, but it
+can't be a QuickStatement (下立松原 sits at ordinals 3 AND 5, same value).
 https://emmaleonhart.github.io/shintowiki-scripts/awa-entry-3.html
 - **ASK:** "Sequential-misc unit (remove BOTH 下立松原 has-parts, re-add the correct #5), or you
   hand-delete the one statement?" → *sequential unit* (I build it) / *you hand-delete*.
 
-### D7. Kokugakuin P13677 matcher — what did you actually want here?
+### B7. Kokugakuin P13677 matcher — what did you actually want here?
 Emma 2026-07-09: *"I don't even understand what this actual thing even is."* The matcher
-(`match_kokugakuin_ids.py`) cut the missing-id set 94→18 (same set as D4).
-- **ASK:** "This is the same 18 as D4 — is D4 the whole of it, or is there a separate thing you
-  wanted from the matcher?" → *D4 covers it, drop this* / *there's more (you explain)*.
+(`match_kokugakuin_ids.py`) cut the missing-id set 94→18 (same set as B4).
+- **ASK:** "This is the same 18 as B4 — is B4 the whole of it, or is there a separate thing you wanted
+  from the matcher?" → *B4 covers it, drop this* / *there's more (you explain)*.
 
-### D8. Empty-items — which to restore?
-New report (from Special:Export): 285 emptied items, 217 lost their P31 — restoration candidates,
-sorted by how much was lost. https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
-- **ASK:** "Do you want me to generate restore-QuickStatements for a slice of these (e.g. the ones
-  that lost their P31), or is this a browse-and-you-pick report?" → *generate restores for <slice>*
-  / *browse-only for now*.
+### B8. Empty-items — which to restore?
+285 emptied items, 217 lost their P31 — restoration candidates, sorted by how much was lost.
+https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
+- **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
+  this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
 
----
+## B9. ⏸ Category-orchestrator speed-up *("the category thing")*
 
-## ▶ DO / 🤖 AUTO — running, no decision
-
-- 🤖 **Label-typo collector** — re-run `collect_label_typo_answers.py` whenever a remote-routine
-  commit lands (cloud fills answers a trickle at a time; 1 collected 07-11, 156 pending).
-- 🤖 **Description-enrichment + ronsha-ranking + category-translation collectors** — same pattern;
-  run when their cloud answers land. `docs/description_enrichment_pipeline.md`.
-- 🤖 **Engishiki list membership** — script 1 (adds, `list_membership_rebuild.txt`) + script 2
-  (removals, `list_membership_removals.txt`, 2,236 pure removals) both registered; drip when the
-  pause lifts. The 22 duplicate `part of` are report-only (value-match-unfixable). Detail:
-  `docs/ronsha_list_membership_2026-07.md`.
-- 🤖 **Province exclusions** — `province_exclusions.txt` (382 ADD-only lines) registered, drips.
-  Province work is ADD-ONLY, no removals ever. `docs/province_exclusion_residual_2026-07.md`.
-- 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
-- 🤖 **Weekly wiki edit-test** (Emma 2026-07-15, replaced the hourly gate + daily lockout).
-  `weekly-wiki-edit-test.yml` runs Sundays: CI attempts a REAL edit to `User:EmmaBot/edit-test`. Success
-  → unlocks editing for the week + marker GO; failure → locks for the week (8-day lock, > the 7-day
-  cadence) + marker WAIT — so we never hammer the 403 between tests. Every leaf wiki-writer
-  (git-synced-sync, fandom-sync, strip-property-dumps, update-shikinaisha-lists, wiki-cleanup, the
-  orchestrators, untransclude) calls `wiki_edit_allowed.py` and bails while locked. Nothing to do —
-  the Sunday test is the sole decider. Motivating audit: `docs/wiki_403_audit_2026-07-11.md`; the block
-  is a Cloudflare zone challenge on shinto (aelaki works from the same IP).
+A POSSIBLE future optimization to make wiki category-page processing faster (skip some ops on ~3k
+enwiki-junk cats, or shard the namespace). Only worth doing IF the Japanese-category-translation drain
+proves too slow. It isn't a problem now → dormant.
 
 ---
-
-## ⏸ BLOCKED — waiting on a named thing, skip until it clears
-
-- ⏸ **Wiki editing (Miraheze 403).** `git-synced-sync` has failed EVERY run today
-  (03:44–20:25 UTC 2026-07-11, ~17h) — mwclient can't log in through the anti-DDoS challenge. So the
-  Open-questions responses (committed to `git_synced/Open questions.wiki`) and all cleanup/orchestrator
-  edits are stuck in the repo. NOT fixable from CI. Clears when Miraheze stops challenging the runners,
-  or Emma addresses it wiki-side. [[reference_miraheze_antiddos_challenge]]
-- ⏸ **The whole Wikidata drip is paused** by `conflict_gate` until ~2026-08-08 (or 7 days after
-  ブルーノ・プラス goes quiet). So every registered atomic file (citations, list-membership, province,
-  reisai) is staged-but-not-delivered by design. Emma's caution gate; not a stall.
-- ⏸ **Reisai** — 3,239 P837 lines staged (`reisai.txt`); live coverage still 195, unchanged.
-  Reassess (Mie prefectural scraper?) once the drip resumes and the real gap is measurable.
-  `docs/reisai_prefectural_feasibility_2026-07.md`.
-- ⏸ **Repurposed-item damage** — Q123044569 (Kamo), Q134886554 (Chikadono), Q134736575 (見光寺),
-  Q140476265 (junk). Emma: *document, don't touch; no contact* until we understand the editor. The
-  Kikuna restoration is already queued to OUR item Q134926804. `docs/bruno_plus_analysis_2026-07.md`.
-- ⏸ **Bunrei paper sources** — 神社本庁『全国神社祭祀祭礼総合調査』(1995) etc.; needs a library, not
-  scrapeable. Online 総本社 sources are exhausted (~10,650 cited edges).
-- ⏸ **Category-orchestrator speed-up** *(this is "the category thing")* — a POSSIBLE future
-  optimization to make wiki category-page processing faster (skip some ops on ~3k enwiki-junk cats,
-  or shard the namespace). Only worth doing IF the Japanese-category-translation drain proves too
-  slow. It isn't a problem now → nothing to do; dormant.
-
----
-
-## ⏭ Court-rank (P14005) people pipeline — sub-rank links + wire-in (2026-07-23)
-
-Tags PEOPLE with P14005 (Japanese court rank) from the ja.wp [[Category:日本の位階受位者]] tree.
-Decisions: create missing items (done), every rank held, primary-label rank map, skip 无位, no
-parent-rank double-tag.
-- ✅ 26 sub-rank items created by Emma (Q140679480…Q140679509); base ranks already existed.
-- ✅ Sub-rank parent links (P361) run; 外従五位 base created = **Q140679675** (part of 外位).
-- ✅ Bidirectional category links run (`court_rank_category_links.txt`): all 42 recipient categories
-  linked rank<->category (P1792/P301); the 24 missing category items created (Q140685601…).
-- ⏳ **Category English labels:** `court_rank_category_en_labels.txt` (42 lines) — sets
-  Len="Category:Recipients of <en rank>" on every recipient-category item. Add-only. Emma runs it.
-- ⏭ **People pipeline wire-in:** rerun the matched/unmatched check once WDQS indexes the new rank items,
-  then add the `generate_court_rank_quickstatements.py` step to `generate-quickstatements.yml`. NOTE: the
-  Wikidata drip is ACTIVE (conflict_gate cap moved to 2026-07-01; freeze expired 07-20) — it edits on the
-  next daily fire, no August wait.
-- ⏭ **Then:** rerun the people generator's matched/unmatched check once WDQS indexes the new items
-  (all 42 categories should resolve); wire the step into `generate-quickstatements.yml`. Add-only,
-  drips when conflict_gate lifts (~2026-08-08).
-- Note: base-rank items still carry the sub-rank names as skos aliases (e.g. 正四位 has "正四位上/下");
-  optional later cleanup to strip those now that the sub-ranks are their own items.
-
-## 🤖 Shrine external-ID entity resolution (Emma 2026-07-24)
-
-Resolve our shrine/deity items to external DBs → add-only external-ID QuickStatements, dripped.
-- 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (**1257**). Two sources: (A) crawl
-  genbu.net's 9 regional indexes (2,295 shrines) → exact ja-label match to a unique Shinto-shrine item;
-  (B) genbu URLs cited in our synced *.wiki → QID via P11250. Registered; drips. Coverage levers to reach
-  "nearly all" (Emma wants more): genbu uses OLD-kanji (kyūjitai 櫻/國/靈/稻) vs our shinjitai labels — a
-  kyūjitai→shinjitai normalize would recover many; + province disambiguation (genbu path province ↔ item
-  province) for ambiguous names. Live-wiki citations still capped by the miraheze 403.
-- 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (77). Scrapes Kokugakuin's
-  ~338-kami DB (shortlink ?p= id + kanji name) → exact ja-label match. Registered; drips. 256 kami had
-  no exact-label match — a fuzzy/alias pass could recover more later.
-- ⏸ **Prefectural shrine-association site IDs** — investigated 2026-07-24 (cron `e444c62b`). TWO walls:
-  (1) NO separate public repo to subtree-merge — the only public prefectural material is already in-repo
-  (`jinjacho_reisai.py`, a reisai-date parser, 1 site verified, pending go/no-go; `docs/reisai_prefectural_feasibility_2026-07.md`).
-  The research Emma remembers is her PRIVATE repo. (2) NO Wikidata property exists for prefectural jinjacho
-  databases (searched jinjacho/神社庁/shrine association/prefectural shrine — none), so nothing to emit into.
-  Pragmatic path that needs no new property: **P973 (described at URL)** with the jinjacho URLs already cited
-  in our articles (genbu-style resolver). Surfaced to Emma via AskUserQuestion — awaiting her call
-  (P973 now / propose dedicated properties / provide the private repo). NOTHING merged.
 
 ## Pinned tail (keep last)
 
