@@ -73,15 +73,21 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     `generate_jinjacho_p973.py` already emits **all 88** rows of
     `jinjacho/shrines_and_websites.csv` — that CSV is a *sample*, not a backlog, so re-running the
     generator adds nothing. Coverage grows only by resolving MORE shrine→URL pairs.
-  - **The build (external sites only — no Miraheze, runnable during the blackout):**
-    `jinjacho/verification_results.csv` already verifies **23 prefectures** with working per-shrine
-    detail pages (verdict `OK_SHRINE_CONTENT`, e.g. Gifu `syosai.php?shrno=N`, Aichi
-    `search_detail.html?id={uuid}`, the shared `jinja-net.jp` family), and
-    `template_http_test_results.csv` has the URL template + confidence per association. Steps:
-    (1) per prefecture, enumerate detail pages from its template family (throttled, polite UA);
-    (2) extract shrine name + address from each page; (3) match to our items by exact ja label,
-    gated on the shrine being in that prefecture, single-match-only like the shinmei/genbu resolvers;
-    (4) append `QID|P973|"<url>"` to `jinjacho_p973.txt` (already registered in `ATOMIC_FILES`).
+  - ✅ **Pipeline BUILT 2026-07-28** (`f97c85b74`): `jinjacho/crawl_jinjacho_shrines.py` →
+    `crawled_shrines.csv` → `jinjacho/match_jinjacho_shrines.py` → `crawled_shrines_matched.csv` →
+    `generate_jinjacho_p973.py` (now reads that file *and* the original 88-row sample). 16 tests,
+    wired into `ci.yml`. External sites only, so it runs through the blackout.
+  - ⏳ **Crawl in progress** — Gifu (ids 1–2600), Shiga (1–1600), Saitama (9000–10600) at a 1.5s
+    throttle, ~2h. Resumable: `crawl_state.json` holds the per-family cursor and the CSV flushes
+    every 25 records, so just re-run `python crawl_jinjacho_shrines.py --all --max-pages 2600` to
+    continue. **When it finishes:** run `match_jinjacho_shrines.py`, then
+    `generate_jinjacho_p973.py`, and commit all three outputs.
+  - **Precision is deliberately expensive.** The match gate is the MUNICIPALITY from the crawled
+    address, not the prefecture (prefecture-gating produced verified-wrong matches: a 大垣市 天満神社
+    → 天満神社 (高山市)), plus a collision guard dropping any item claimed by two crawled shrines.
+    Expect a low yield; a missed shrine costs nothing, a wrong P973 is a wrong statement.
+  - **Not yet covered:** Aichi (UUID keys) and Mie/Osaka/Kagoshima (name-slug paths) are not
+    id-enumerable — they need an index harvest before they can be added as families.
   - Add-only; the daily editor skips statements that already exist, so re-runs are no-ops.
 
 ## A4. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
