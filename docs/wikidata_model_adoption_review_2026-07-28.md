@@ -75,7 +75,7 @@ one editor's convention.
 | Reisai | P837 + P3831=Q11385469 (+P793) | 247 shrines (0.8%) · 256 stmts | **254 / 256 = 99.2%**; 101 (39%) carry the P793 festival qualifier; 88% referenced |
 | Bunrei | P612 + P1013=Q195793 | 357 shrines (1.2%) · 359 stmts | **350 / 359 = 97.5%**; **9 bare P612 remain** |
 | Engishiki list membership | one P361 + P1545 ordinal | 5,413 shrines · 6,343 stmts | 5,125 (80.8%) carry an ordinal; **647 items still carry more than one P361** |
-| Shikinai Ronsha | P460 + P2868/P3831 roles, Engishiki claims deprecated | 2,323 ronsha, 2,058 with P460 | 1,613 (78%) carry P2868; **14 carry P3831**; **7 items have any deprecated statement** |
+| Shikinai Ronsha | P460 + P2868/P3831 roles | 2,323 ronsha, 2,058 with P460 | 1,613 (78%) carry P2868; 14 carry P3831; 0 typed Shikinaisha. 7 items carry a deprecated statement — see §1, that is correct, not a shortfall |
 | Shintai | P825 + P3831=Q327532 | **6 statements** | 100%, on a population of 6 |
 | Sangō | P1448 + P3831=Q11058522 | 139 stmts (135 on temples) of 8,469 temple P1448 statements = **1.6%** | 100% |
 | Saijin | P825 on shrines | 11,582 shrines (38.3%) · 14,604 stmts | **4,243 (29%) referenced** |
@@ -125,16 +125,38 @@ inherited community data, is 29% referenced.
 
 ## Where it is not the norm, and why
 
-1. **Ronsha deprecation never happened — and currently cannot.** The model says a
-   ronsha's Engishiki claims are deprecated with qualifiers. **7 of 2,323 ronsha
-   have any deprecated statement, and 14 carry the P3831 role.** The cause is
-   structural, not neglect: rank changes cannot be expressed in QuickStatements
-   v1, and `direct_daily_edits.py` has no rank path either, so the only tool that
-   ever did this was `deprecate_engishiki_shrine_properties.py` — a bespoke
-   direct-API editor, which the one-path Wikidata rule (CLAUDE.md) retired. The
-   deprecation half of the ronsha model has no delivery mechanism at all. Either
-   a rank path gets added to the sanctioned editor, or that half of the model is
-   fiction.
+1. **Ronsha deprecation never happened — and on the evidence it should not.**
+   (Corrected 2026-07-28 after Emma pushed back on the first draft, which filed
+   this as an unmet obligation. It is not one.) The claim that a ronsha's
+   Engishiki statements need deprecating comes from the global CLAUDE.md task
+   card, not from this repo's model doc, and the data does not support it:
+
+   * **The dispute is already modelled without touching rank.** **0** of 2,323
+     ronsha are typed Shikinaisha — the P31 layer never asserts "this IS the
+     Engishiki shrine." 2,058 carry P460 (disputed identity) and 1,613 carry the
+     P2868 role on it. The hedge is in the class and the qualifier, which is
+     where it belongs.
+   * **Deprecation is the most conspicuous mechanism available**, and this repo's
+     standing rule is that visibility on Wikidata is a worse outcome than losing
+     data. Flipping 5,362 P13723 statements across 2,300 items to deprecated rank
+     is about as visible as a bot can be. For scale: **61** deprecated statements
+     exist across all 30,274 shrines on Wikidata.
+   * **Emma's own later decisions chose removal, not deprecation** — 2026-07-09:
+     *"on the actual shrine item, remove every part-of→Shikinaisha-list
+     statement"*, *"Ronshas should not even have list membership."* That is
+     `generate_list_membership_removals.py`, and it needs no rank support.
+
+   So 7 is the right order of magnitude, not a shortfall. The real residue is
+   **2,256 ronsha carrying P361 list membership when the lists name only ~126 of
+   them** — a genuine defect with a sanctioned add-first/remove-later fix that
+   never required rank.
+
+   What IS broken is the documentation: the global CLAUDE.md still lists
+   "Shikinai Ronsha Property Deprecation" as ⭐ CURRENT TASK, pointed at
+   `deprecate_engishiki_shrine_properties.py`, a bespoke direct-API editor that
+   does not exist in this repo and whose shape the one-path Wikidata rule
+   retired. Neither QuickStatements v1 nor `direct_daily_edits.py` can set a
+   statement rank, so that card describes a workflow that cannot run.
 2. **The two shapes with no reach are the two the community declined.** *Source
    Shrine* and *Day of Reisai* were both closed **not done**; the P612+P1013 and
    P837+P3831 constructions are the workaround built on generic properties after

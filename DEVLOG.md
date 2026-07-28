@@ -25,11 +25,20 @@ layer (7 properties live from 20 proposals; the Shinto class vocabulary; Louperi
 migrating P31 → P14005 and maintaining P13723 qualifiers), not at the statement-shape
 layer (bunrei 15/15 and P13723 15/15 sampled statements are Immanuelle's; reisai
 reaches 0.8% of shrines, bunrei 1.2%). Two structural findings worth acting on:
-the ronsha deprecation half of the model has **no delivery mechanism** — neither
-QuickStatements v1 nor `direct_daily_edits.py` can set a statement rank, so 7 of
-2,323 ronsha have any deprecated statement; and the two shapes with no external
-reach (P612+P1013, P837+P3831) are exactly the two whose dedicated-property
-proposals were closed *not done*.
+the two shapes with no external reach (P612+P1013, P837+P3831) are exactly the two
+whose dedicated-property proposals were closed *not done*; and the global CLAUDE.md's
+"Shikinai Ronsha Property Deprecation" card is unrunnable — it points at a bespoke
+direct-API script that does not exist here, and neither QuickStatements v1 nor
+`direct_daily_edits.py` can set a statement rank.
+
+The first draft filed the low ronsha deprecation count (7 of 2,323) as an unmet
+obligation. Emma pushed back and was right: 0 ronsha are typed Shikinaisha, 2,058
+carry P460 and 1,613 the P2868 role, so the dispute is already modelled without
+touching rank; deprecation is the most visible mechanism available, against a repo
+rule that ranks visibility worse than data loss (all 30,274 shrines carry 61
+deprecated statements between them); and Emma's own 2026-07-09 ruling chose removal
+over deprecation. The real residue is 2,256 ronsha holding P361 list membership
+where the lists name ~126 — fixable by the existing removal script, no rank needed.
 
 Method note for anyone extending the audit: count one metric per query with
 `COUNT(DISTINCT ?statement)`. OPTIONAL joins multiply rows per reference and
