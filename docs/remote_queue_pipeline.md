@@ -9,14 +9,19 @@
 2. **Queue generator** (`remote_queue.py`, daily via `build-remote-queue.yml`): scans those dirs → `remote_queue.json` = a shuffled list of `{file, category, instruction}`; for `duplicated_content` only files still carrying `[[Category:Pages with duplicated content]]`. Always "what still needs work, in random order."
 3. **The cloud worker** = claude.ai routine **"Drain remote_queue.json (5 random/day)"** (`trig_015viL16x9ReKsQRmsJEscH7`, Sonnet, daily `41 7 * * *` UTC): picks 5 random items, applies each `instruction` (merge duplicated paragraphs / translate Japanese / strip fandom templates), removes the gating category when genuinely done, commits `[skip ci]`. No cursor.
 
-**Account switch, 2026-07-27.** Emma moved to a new Claude account; the routine did NOT
-migrate. The old worker was `trig_013F9aeKeL3hx8zo7weKj3Ed` (last fired 2026-07-27 07:46
-UTC, commit `eb9dcccf`) and now 404s from this account. It was recreated as
-`trig_015viL16x9ReKsQRmsJEscH7` with the prompt reconstructed from this doc + the
-DEVLOG constraints (5 random, no cursor, follow `instruction` literally, remove the
-gating category only when genuinely done, `[skip ci]` commit). If the daily
-`chore(remote-queue)` commits stop again, check the trigger list on the *current*
-account first — a silent account switch looks exactly like a broken pipeline.
+**Account switch, 2026-07-27 — worker currently DOWN.** Emma moved to a new Claude account;
+the routine did NOT migrate. The old worker was `trig_013F9aeKeL3hx8zo7weKj3Ed` (last fired
+2026-07-27 07:46 UTC, commit `eb9dcccf`) and now 404s from this account. If the daily
+`chore(remote-queue)` commits stop again, check the trigger list on the *current* account
+first — a silent account switch looks exactly like a broken pipeline.
+
+Recreating it via the `RemoteTrigger` API **did not work**: `trig_015viL16x9ReKsQRmsJEscH7`
+fires cleanly (`enabled: true`, empty `suspension_reason`/`ended_reason`) but produced no
+commit on either of two runs, and the API exposes no way to bind a repo to a trigger — the
+fields tried were accepted with HTTP 200 and silently dropped. The console is the known-good
+path. **The canonical prompt and step-by-step re-creation instructions now live in
+[`remote_queue_routine_prompt.md`](remote_queue_routine_prompt.md)** so this is a one-paste
+rebuild rather than an archaeology exercise.
 
 **Failure-mode catalogue (all fixed 2026-05-23):**
 - **Wrong concept of "duplicated content."** The instruction said "drop boilerplate / dedupe prose," so it stripped duplicate *infobox parameters* instead of MERGING macro-scale whole-body paragraph duplication (same article copied 2–3×, often under `==Accidentally Overwritten Content==` / `==merged content==`). Fixed: rewrote `DUPLICATED_CONTENT_INSTRUCTION`.
