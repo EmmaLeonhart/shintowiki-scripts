@@ -10,6 +10,15 @@ rebuild the routine from it in one paste.
 **Keep this file in sync.** If the routine's prompt is edited in the console, update this file in the
 same sitting. A drifted copy is worse than none.
 
+**A Claude data export will not recover it — don't try again.** Checked on 2026-07-27 against a full
+export of the old account (`immanuelleleonhart@gmail.com`): the archive contains `users.json`, one
+starter project, `memories.json`, and `conversations.json` (~97 MB, 2000 conversations across two
+batches) and nothing else. Zero hits for `Drain remote_queue`, `5 random`, `gating category`, or
+`duplicated content`. Exports cover conversations, projects, and memories; automations and Claude Code
+cloud sessions are out of scope, so a routine's definition and its daily runs are simply absent. The
+only place the original prompt exists is the console of the account that owns the trigger — which is
+precisely why it is now committed here.
+
 ## How to (re)create the routine
 
 Create it **in the claude.ai console**, not via the `RemoteTrigger` API. Two things were learned the
