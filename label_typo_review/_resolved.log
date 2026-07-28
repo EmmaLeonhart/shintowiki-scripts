@@ -3,3 +3,12 @@ Q135258978	KANA_ISSUE	P1814 kana おおうちじんじゃ correctly romanizes to
 Q17220848	LABEL_TYPO	Honoikazuchi Shrine
 Q115041081	PREFIX_OK	"Takagi" is a place-name disambiguator (高木) prepended to the English label to distinguish this Hikawa Shrine from the many others; the kana ひかわじんじゃ correctly reflects the shrine's Japanese name 氷川神社 without the location qualifier
 Q106852466	LABEL_TYPO	Inarimori Inari Shrine
+Q115040917	PREFIX_OK	English label adds 'Oyaguchi' (大谷口) as a place-name prefix to disambiguate from other Hikawa shrines; P1814 kana ひかわじんじゃ correctly reflects the shrine's own name without the prefix
+Q11548625	PREFIX_OK	Label adds "Mito" (city name of 水戸市) as a geographic disambiguator; the core "Tōshō-gū" correctly matches とうしょうぐう. The P1814 kana covers only the shrine-type name, not the city prefix that appears in the kanji title 水戸東照宮.
+Q11558680	LABEL_TYPO	Unakami-hachimangū
+Q11585337	LABEL_TYPO	Isononiimasu Takumushitama Shrine
+Q11658605	LABEL_TYPO	Mutsu Sōja-gū (kana むつそうじゃぐう = Mutsusōjagū; じゃ=ja not sha, ぐう=gū not miya — label "Sōsha-no-miya" has wrong reading of 社 and wrong reading of 宮)
+Q130436470	KANA_ISSUE	P1814 kana ひがしまちまんじんじゃ is missing は; correct reading is ひがしはちまんじんじゃ (Higashihachimanjinja). English label "Higashi Hachiman Shrine" is correct.
+Q135424927	LABEL_TYPO	Iidama Shrine
+Q65248672	KANA_ISSUE	romanization missing second 'o' in おか (should be "oka" not "ka")
+Q71917331	PREFIX_OK	Label carries place prefix Rokkenchō (六軒町) not reflected in generic kana すわじんじゃ (Suwajinja); kana gives only the shrine name proper, while the English label disambiguates by prepending the neighborhood name

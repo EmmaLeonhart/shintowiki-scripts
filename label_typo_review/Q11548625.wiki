@@ -1,9 +1,0 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q11548625 -->
-<!-- JA: 水戸東照宮 | KANA: とうしょうぐう | EN_LABEL: Mito Tōshō-gū | KANA_ROMANIZED: Toshogu -->
-<!-- ANSWER: PREFIX_OK: Label adds "Mito" (city name of 水戸市) as a geographic disambiguator; the core "Tōshō-gū" correctly matches とうしょうぐう. The P1814 kana covers only the shrine-type name, not the city prefix that appears in the kanji title 水戸東照宮. -->
-<!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
-  LABEL_TYPO: <corrected English label>   (the label is misspelled)
-  KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
-  PREFIX_OK: <note>                        (label carries a legit place/disambiguator prefix)
-  OTHER: <explanation>
-When ANSWER is filled this file is done. -->
