@@ -173,6 +173,16 @@ jobs:
         continue-on-error: true
         run: python generate_scholar_id.py
 
+      # Wired in 2026-07-28: the wire-in condition was "all 42 ja.wp per-rank
+      # categories resolve once WDQS has indexed the 26 sub-rank items", and a
+      # live rerun that day reported "42 rank categories resolved". Add-only,
+      # and existing person->rank pairs are preloaded from WDQS and skipped, so
+      # regeneration shrinks the file as it drains.
+      - name: Court rank (P14005) on people from the ja.wp 位階受位者 tree
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_court_rank_quickstatements.py
+
       # The two description generators are SPARQL-heavy (~30-40 min each) and
       # their data barely drifts daily (both self-drain via skip-if-standard on
       # regeneration), so they refresh weekly on Sundays — the daily job stays

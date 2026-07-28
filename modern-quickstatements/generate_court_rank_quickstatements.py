@@ -34,15 +34,19 @@ Flags
 
 429 from WDQS => bail immediately (repo rule). Read-only against both wikis.
 
-STATUS 2026-07-23 — decisions made; the 26 sub-rank items now exist (created by
-Emma, Q140679480…Q140679509). Rank map is by primary ja label under the court-rank
-class, so all 42 ja.wp per-rank categories now resolve; 无位 is skipped; recursion
-no longer double-tags a coarser parent rank. Every rank a person held is emitted.
-Still NOT wired into generate-quickstatements.yml — waiting on a live rerun of the
-matched/unmatched check once WDQS has indexed the new items, then adding the step.
-The Wikidata drip is ACTIVE (conflict_gate hard cap was moved to 2026-07-01 and the
-window-gate freeze expired 2026-07-20), so once wired this WILL edit on the next
-daily fire — no August wait.
+STATUS 2026-07-28 — WIRED IN. The 26 sub-rank items exist (created by Emma,
+Q140679480…Q140679509) and WDQS has indexed them: the live rerun this day reported
+"42 rank categories resolved", which was the wire-in condition. The rank map is by
+primary ja label under the court-rank class; 无位 is skipped; recursion no longer
+double-tags a coarser parent rank; every rank a person held is emitted. The step now
+runs in generate-quickstatements.yml and court_rank_people.txt is registered in
+direct_daily_edits.ATOMIC_FILES (uncapped — ~10% of the daily draw, the same share
+as its size peers). Current output: 12,326 people -> 12,605 statements.
+
+Nothing edits yet: a week-long Wikidata freeze runs to 2026-08-04
+(FREEZE_WIKIDATA_UNTIL in cleanup-loop.yml's window-gate forces
+wikidata-daily-fire=false), so the first court-rank lines can land no earlier than
+that. Confirmed still in force by Emma on 2026-07-28.
 """
 
 import os
