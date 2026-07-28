@@ -29,11 +29,28 @@ def test_comments_and_blanks_are_filtered(tmp_path):
     assert dde.load_sequential_lines(str(p)) == ["Q1|P2|Q3", "Q4|P5|Q6"]
 
 
-def test_the_shipped_file_has_no_executable_lines_yet():
-    """It ships empty (comments only): the mechanism is live but idle until pairs
-    are deliberately added. If this ever fails, real data was added — intended, but
-    make sure it was on purpose."""
-    assert dde.load_sequential_lines() == []
+def test_the_shipped_file_holds_exactly_the_intended_lines():
+    """The file shipped empty until 2026-07-17, when Emma's inbound-links fix was
+    MOVED here from the atomic drip (commit 50b42c1a7): at ~105k pool lines a 2-line
+    file had a ~0.28%/day draw chance — about a year's expected wait — while this
+    channel lands one line/day in order. The old assertion (`== []`) was the
+    ships-empty tripwire and it fired as designed; it is repointed here rather than
+    deleted, so the file's contents still cannot drift unnoticed.
+
+    Pin the exact lines, in order: the cursor is an index into this list, so an
+    insertion or reorder above the cursor silently misaligns which edit runs next.
+    """
+    assert dde.load_sequential_lines() == [
+        'Q140568717|P50|Q140568870|P1545|"1"',
+        'Q140568719|P50|Q140568870|P1545|"1"',
+    ]
+
+
+def test_every_shipped_sequential_line_parses():
+    """A line parse_qs_line() returns None for is skipped silently — and in THIS
+    channel a skipped line also stalls the cursor behind it."""
+    for line in dde.load_sequential_lines():
+        assert dde.parse_qs_line(line) is not None, line
 
 
 # ─────────────────────── cursor persistence ───────────────────────
