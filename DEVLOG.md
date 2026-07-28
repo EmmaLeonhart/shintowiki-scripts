@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-28 — week-long Wikidata freeze; model-adoption review
+
+**Freeze.** Emma asked for a week-long hiatus on Wikidata edits.
+`FREEZE_WIKIDATA_UNTIL` in `cleanup-loop.yml`'s window-gate moved 2026-07-20 →
+**2026-08-04**, forcing `wikidata-daily-fire=false` on every trigger, so neither
+the QuickStatements submission nor the `direct_daily_edits.py` fallback runs
+2026-07-28 through 2026-08-03. Auto-resumes 2026-08-04. The other Wikidata-writing
+path, `create-items.yml`, is already shut — its only batch's gate
+(`vsa_libraries_gate`) opens 2026-08-16, past the end of the hiatus — so it needed
+no change. `CLAUDE.md`'s freeze note was still recording the expired 2026-06-06
+pause and was rewritten to describe the mechanism plus the current date.
+
+**Review.** `modern-quickstatements/audit_model_adoption.py` (new, read-only —
+SPARQL + read API, safe under the freeze) measures coverage / conformance / reach
+for twelve modelling conventions, plus revision-comment attribution sampling.
+Findings in `docs/wikidata_model_adoption_review_2026-07-28.md`, raw numbers in
+`modern-quickstatements/model_adoption.json`. Headline: adopted at the ontology
+layer (7 properties live from 20 proposals; the Shinto class vocabulary; Louperibot
+migrating P31 → P14005 and maintaining P13723 qualifiers), not at the statement-shape
+layer (bunrei 15/15 and P13723 15/15 sampled statements are Immanuelle's; reisai
+reaches 0.8% of shrines, bunrei 1.2%). Two structural findings worth acting on:
+the ronsha deprecation half of the model has **no delivery mechanism** — neither
+QuickStatements v1 nor `direct_daily_edits.py` can set a statement rank, so 7 of
+2,323 ronsha have any deprecated statement; and the two shapes with no external
+reach (P612+P1013, P837+P3831) are exactly the two whose dedicated-property
+proposals were closed *not done*.
+
+Method note for anyone extending the audit: count one metric per query with
+`COUNT(DISTINCT ?statement)`. OPTIONAL joins multiply rows per reference and
+inflated the first pass (P13723 read 19,939 statements against a true 16,995).
+
+---
+
 ## 2026-07-27 — remote-queue routine re-adopted onto Emma's new Claude account
 
 Emma switched Claude accounts. The claude.ai routine that drains `remote_queue.json` did not come
