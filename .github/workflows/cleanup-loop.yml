@@ -127,7 +127,10 @@ jobs:
           #   resumed 2026-06-06.
           # 2026-07-18 (Emma): 24h hold — blocks the next daily run (~05:24 UTC
           #   2026-07-19); auto-resumes 2026-07-20.
-          FREEZE_WIKIDATA_UNTIL="2026-07-20"
+          # 2026-07-28 (Emma): "a week long hiatus on wikidata edits" — blocks
+          #   every daily QS submission / direct-edit fallback from 2026-07-28
+          #   through 2026-08-03 inclusive; auto-resumes 2026-08-04.
+          FREEZE_WIKIDATA_UNTIL="2026-08-04"
           if [ "$(date -u +%Y-%m-%d)" \< "$FREEZE_WIKIDATA_UNTIL" ]; then
             echo "wikidata-daily-fire=false" >> "$GITHUB_OUTPUT"
             echo "WIKIDATA FREEZE active until $FREEZE_WIKIDATA_UNTIL — NO Wikidata edits."
