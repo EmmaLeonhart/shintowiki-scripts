@@ -29,3 +29,5 @@ _site/empty-items-export.xml
 
 # jinjacho crawl progress log (regenerated each run; the data lands in crawled_shrines.csv)
 jinjacho/crawl.log
+jinjacho/crawl_fast.log
+jinjacho/crawl_gifu.log

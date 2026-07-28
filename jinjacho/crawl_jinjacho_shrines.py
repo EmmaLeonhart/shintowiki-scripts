@@ -41,6 +41,7 @@ import os
 import re
 import csv
 import sys
+import io
 import json
 import time
 import html
@@ -163,6 +164,12 @@ def parse_jinjanet(raw):
 # sweep; ranges were widened past the known-good sample ids from verification_results.
 
 FAMILIES = {
+    # SLOW HOST. Measured 2026-07-28: gifu answers in ~22s per request (HTTP 200 with
+    # correct content — not a block, and it was fast for the first ~50 requests, so it
+    # looks like a server-side tarpit or just a weak box). At ~23.5s/id the full 2,600
+    # sweep is ~17 hours, so run it in its OWN long background job with a page cap and
+    # let the resumable cursor carry it across sessions. Do not put it in the same
+    # serial run as the fast families — it starves them.
     "gifu": {
         "prefecture": "Gifu",
         "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno={n}",
@@ -194,10 +201,21 @@ def load_state():
     return {}
 
 
-def save_state(state):
-    with open(STATE, "w", encoding="utf-8", newline="\n") as fh:
+def save_cursor(key, n):
+    """Persist ONE family's cursor, merging into whatever is on disk.
+
+    Families run as SEPARATE processes (gifu is a ~22s/request host and would
+    otherwise starve the fast ones), and they share this file. Writing the whole
+    in-memory dict would roll back a sibling's cursor to whatever this process read
+    at startup — so re-read, touch only our key, write back.
+    """
+    state = load_state()
+    state[key] = n
+    tmp = STATE + ".%d.tmp" % os.getpid()
+    with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(state, fh, indent=2, sort_keys=True)
         fh.write("\n")
+    os.replace(tmp, STATE)
 
 
 def load_seen():
@@ -211,20 +229,27 @@ def load_seen():
 
 
 def append_rows(rows):
-    new = not os.path.exists(OUT_CSV)
+    """Append in ONE write call.
+
+    Two crawler processes share this file, and a DictWriter emitting row-by-row can
+    interleave with the other process mid-row. Serialising to a string first and
+    issuing a single append keeps every row intact.
+    """
+    header = not os.path.exists(OUT_CSV) or os.path.getsize(OUT_CSV) == 0
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=FIELDS, lineterminator="\n")
+    if header:
+        w.writeheader()
+    for r in rows:
+        w.writerow(r)
     with open(OUT_CSV, "a", encoding="utf-8", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=FIELDS)
-        if new:
-            w.writeheader()
-        for r in rows:
-            w.writerow(r)
+        fh.write(buf.getvalue())
 
 
 def crawl_family(key, max_pages, throttle):
     fam = FAMILIES[key]
-    state = load_state()
     seen = load_seen()
-    n = state.get(key, fam["start"])
+    n = load_state().get(key, fam["start"])
     got, misses, fetched, rows = 0, 0, 0, []
 
     print(f"[{key}] starting at id {n} (stop {fam['stop']}, max {max_pages} pages)",
@@ -264,14 +289,12 @@ def crawl_family(key, max_pages, throttle):
         if len(rows) >= 25:
             append_rows(rows)
             rows = []
-            state[key] = n
-            save_state(state)
+            save_cursor(key, n)
         time.sleep(throttle)
 
     if rows:
         append_rows(rows)
-    state[key] = n
-    save_state(state)
+    save_cursor(key, n)
     why = ("range end" if n > fam["stop"] else
            "miss tolerance" if misses >= MISS_TOLERANCE else "page cap")
     print(f"[{key}] +{got} shrines from {fetched} fetches; stopped at id {n} ({why})",
