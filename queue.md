@@ -33,43 +33,17 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A1. ▶ The cloud routine can't push — it does the work and throws it away
+## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 
-**This is the top item.** The claude.ai routine that drains `remote_queue.json` completes its run,
-processes 5 items, commits locally — and then the push 403s, so every run's work is lost when the
-container dies. Three runs on 2026-07-27 (16:33, 16:56, 17:42) all did real work and all lost it.
+The routine's push was fixed 2026-07-28 (it had no repo bound; `session_context.sources` is the field
+— see `docs/remote_queue_routine_prompt.md`), so answers are landing again and these are no longer
+idle. Ran the same day: 9 label typos, 1 ronsha ranking, 11 descriptions, 12 category moves. All four
+are repo-local — no Miraheze request — so they stay runnable through the blackout.
+- `collect_label_typo_answers.py` — 147 pending.
+- Description-enrichment (224 pending), ronsha-ranking (34 pending), category-translation (361
+  pending) collectors — same pattern. `docs/description_enrichment_pipeline.md`.
 
-```
-fatal: unable to access 'http://127.0.0.1:41729/git/EmmaLeonhart/shintowiki-scripts.git/':
-The requested URL returned error: 403
-```
-
-Ruled out, with evidence — do not re-investigate these:
-- **Not GitHub app permissions.** `github.com/settings/installations` → Claude → **All repositories**,
-  *"Read and write access to … code"*, installed 8 months ago. Emma also granted fresh permissions on
-  07-27 and the next run still 403'd.
-- **Not the account's GitHub connection.** The clone goes through the same proxy and succeeds.
-- **Not a crash.** Every run shows a green check; the agent finishes normally and reports the failure.
-
-Leading hypothesis: the routine has **no repo bound to it** — it was created through the
-`RemoteTrigger` API (`trig_015viL16x9ReKsQRmsJEscH7`), which exposes no repo field (`git_repo`,
-`repository`, and `session_context.git_repo` were each accepted with HTTP 200 and silently dropped).
-The sandbox proxy allows an anonymous clone of a public repo but refuses a push with no bound repo.
-- **Next step:** recreate the routine through the claude.ai console's **+ New routine** flow, which
-  has a repository picker, and delete the API-created one. Prompt is paste-ready at
-  `docs/remote_queue_routine_prompt.md` (console variant — no `git clone` line; the session starts
-  inside the checkout).
-- Blocks A2 entirely, and it is why `remote_queue.json` (1,997 items) is draining at zero/day.
-
-## A2. 🤖 Cloud-answer collectors — blocked by A1, not by the wiki
-
-Each runs when a remote-routine commit lands. No commits are landing, so these are idle **because of
-A1**, not because of the 403. They resume the moment A1 is fixed.
-- `collect_label_typo_answers.py` — 1 collected 07-11, 156 pending.
-- Description-enrichment, ronsha-ranking, category-translation collectors — same pattern.
-  `docs/description_enrichment_pipeline.md`.
-
-## A3. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
+## A2. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
 
 Tags PEOPLE with P14005 from the ja.wp [[Category:日本の位階受位者]] tree. Decisions settled: create
 missing items, every rank held, primary-label rank map, skip 无位, no parent-rank double-tag.
@@ -78,13 +52,15 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
 - ✅ Bidirectional category links run: 42 recipient categories linked rank↔category (P1792/P301);
   24 missing category items created (Q140685601…).
 - ⏳ **Category English labels:** `court_rank_category_en_labels.txt` (42 lines), add-only. Emma runs it.
-- ⏭ **Wire-in:** rerun the generator's matched/unmatched check once WDQS indexes the new rank items
-  (all 42 categories should resolve), then add `generate_court_rank_quickstatements.py` to
-  `generate-quickstatements.yml`. Add-only.
+- ✅ **Wire-in done 2026-07-28** — the live rerun reported all **42 rank categories resolved** (the
+  stated condition), so the generator is a step in `generate-quickstatements.yml` and
+  `court_rank_people.txt` (12,605 lines, 12,326 people) is registered in `ATOMIC_FILES`, uncapped
+  (~10% of the daily draw, same share as its size peers). Lands no earlier than the 2026-08-04 freeze
+  lift.
 - Note: base-rank items still carry sub-rank names as skos aliases (正四位 has "正四位上/下"); optional
   cleanup now that sub-ranks are their own items.
 
-## A4. 🤖 Shrine external-ID entity resolution — Wikidata + external sites
+## A3. 🤖 Shrine external-ID entity resolution — Wikidata + external sites
 
 - 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (**1257**, up from 1041 after the
   kyūjitai + province-disambiguation passes). Registered; drips. Only the *live-wiki citation* source
@@ -98,7 +74,7 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
   - **ASK:** "P973 now / propose dedicated properties / hand me the private repo?" — plus the standing
     *"walk me through it first"* option.
 
-## A5. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
+## A4. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
 
 All registered atomic files are staged-but-not-delivered by design until `conflict_gate` lifts
 (~2026-08-08, or 7 days after ブルーノ・プラス goes quiet). Emma's caution gate, not a stall.
@@ -111,7 +87,7 @@ All registered atomic files are staged-but-not-delivered by design until `confli
   prefectural scraper?) once the drip resumes and the real gap is measurable.
 - 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
 
-## A6. ⏸ Parked — external, and not shintowiki either
+## A5. ⏸ Parked — external, and not shintowiki either
 
 - **Repurposed-item damage** — Q123044569 (Kamo), Q134886554 (Chikadono), Q134736575 (見光寺),
   Q140476265 (junk). Emma: *document, don't touch; no contact* until we understand the editor. The

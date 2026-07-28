@@ -21,20 +21,44 @@ precisely why it is now committed here.
 
 ## How to (re)create the routine
 
-Create it **in the claude.ai console**, not via the `RemoteTrigger` API. Two things were learned the
-hard way on 2026-07-27:
+The API works. **The repo binds through `job_config.ccr.session_context.sources`** — an array of
+`{"git_repository": {"url": "https://github.com/OWNER/REPO"}}`. Set that, plus a real
+`environment_id`, and the routine gets a checkout it can push from.
 
-- The API has **no field for attaching a repo.** `git_repo`, `repository`, and a nested
-  `session_context.git_repo` were all accepted with HTTP 200 and then silently dropped from the stored
-  config. Unknown fields vanish without an error, so an API-created routine has no repo bound to it.
-- `action: "update"` **replaces `job_config` wholesale** rather than merging. Sending a partial
-  `job_config` to tweak one field deletes the `events` block — i.e. the prompt. If you must update via
-  the API, always resend the complete `job_config` including `events`.
+```jsonc
+"session_context": {
+  "model": "claude-sonnet-4-5",
+  "sources": [{"git_repository": {"url": "https://github.com/EmmaLeonhart/shintowiki-scripts"}}],
+  // ...
+}
+```
 
-Two API-created runs (2026-07-27 23:33 and 23:56 UTC) fired cleanly — `enabled: true`, empty
-`suspension_reason` and `ended_reason` — and produced no commit either time. The console path is the
-one known to work: it is how the original `trig_013F9aeKeL3hx8zo7weKj3Ed` was set up, and it ran daily
-for months.
+Fixed 2026-07-28. Corrections to what this file said before, so nobody re-derives them:
+
+- **The earlier claim that "the API has no field for attaching a repo" was wrong.** `git_repo`,
+  `repository`, and `session_context.git_repo` were all tried on 2026-07-27 and silently dropped — but
+  those are simply the wrong names. `sources` is the right one and it persists. The lesson that
+  generalises is the one that misled: **unknown fields vanish with HTTP 200 and no error**, so always
+  re-`get` the trigger after a create/update and confirm the field is actually stored.
+- **`environment_id` matters too.** The broken routine carried `env_011111111111111111111117`, a
+  placeholder that is not a real environment. The live one is discoverable from the `schedule` skill,
+  which lists the account's environments (`env_019bPKmVeahebSCChu7kMpeh`, "Default").
+- **`action: "update"` still replaces `job_config` wholesale** rather than merging. A partial
+  `job_config` deletes the `events` block — i.e. the prompt. Always resend the complete `job_config`
+  including `events`.
+
+Symptom this fixes: the routine did its work, committed locally, then died on
+`fatal: unable to access 'http://127.0.0.1:<port>/git/OWNER/REPO.git/': The requested URL returned
+error: 403`. The sandbox proxy allows an anonymous clone of a public repo but refuses a push when no
+repo is bound to the session. Every run looked green and lost everything it did.
+
+Verified: after the update, a manual `RemoteTrigger run` produced commit `f4a1a494c`
+("chore(remote-queue): address 5 items via remote routine") — the first successful push since the
+account switch on 2026-07-27.
+
+The console's **+ New routine** flow (which has a repository picker) is still a fine way to create
+one; it is how the original `trig_013F9aeKeL3hx8zo7weKj3Ed` was set up, and it ran daily for months.
+It is no longer the *only* way.
 
 Settings to match the original:
 

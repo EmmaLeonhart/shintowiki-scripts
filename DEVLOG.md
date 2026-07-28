@@ -4,6 +4,60 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-07-28 (later) — the remote routine can push again; court-rank wired in
+
+**Local git was broken, and it was not our doing.** The working copy had `.git` with an
+empty object store and an unborn `main`: every tracked file showed as a staged
+addition against no history. Cause: the repo was mid-`robocopy` from another machine.
+`git fetch origin main` refilled the objects, and the worktree turned out to hold
+nothing unique — no untracked files, and every diff was the worktree being *older*
+than origin — so it was stashed (`pre-sync stale worktree snapshot 2026-07-28`) and
+fast-forwarded to `origin/main`. The stash is still there if anything is ever missed.
+Worth knowing for next time: while a copy is in flight, a half-populated tree can look
+exactly like mass deletions, and committing that would be the one irreversible mistake
+available. The work-loop and auto-flush crons were given an explicit check for it.
+
+**The cloud routine's push is fixed — the diagnosis in the queue was right, the
+documented conclusion was wrong.** `queue.md` A1 had it as "no repo bound to the
+routine", which was correct, but `docs/remote_queue_routine_prompt.md` concluded from
+that that the API *cannot* bind a repo and only the console's repo picker can. It can:
+the field is `job_config.ccr.session_context.sources`, an array of
+`{"git_repository": {"url": ...}}`. The 2026-07-27 attempts used `git_repo`,
+`repository`, and `session_context.git_repo` — all wrong names, all silently dropped
+with HTTP 200. `environment_id` was also a placeholder (`env_0111…117`) rather than
+the account's real environment. Both fixed on `trig_015viL16x9ReKsQRmsJEscH7`, and a
+manual run produced **`f4a1a494c`** — 5 items, the first successful push since the
+account switch. The generalisable lesson, now in the doc: unknown fields vanish with a
+200 and no error, so re-`get` a trigger after writing it and confirm the field stored.
+
+**Four collectors drained a backlog that was never about the 403.** They had been idle
+since 07-11 because no routine commit was landing, not because of Miraheze. With the
+push working: 9 label typos → 3 QS lines, 1 ronsha ranking → 1, 11 descriptions → 18,
+12 category moves → `category_moves.csv`. All four are repo-local, so they stay
+runnable through the blackout; the wiki-touching half (`move_categories`) is still
+gated on `wiki_editing_lockout.state`.
+
+**Court-rank (P14005) wired in.** The queue's stated condition was a live rerun showing
+all 42 ja.wp per-rank categories resolving once WDQS indexed Emma's 26 sub-rank items.
+It reports 42/42, 12,326 people, 12,605 statements. Wiring meant three things, not one
+— the workflow step alone would have produced a file nothing reads: the step in
+`generate-quickstatements.yml`, `court_rank_people.txt` registered in
+`direct_daily_edits.ATOMIC_FILES`, and the generated file. Left uncapped on purpose:
+`FILE_DAILY_CAPS` is for files that would swamp the 300/day draw, and 12.6k lines in a
+~106k pool is ~10% of it, the same share as p6262_fandom_links and bunrei. Nothing
+edits before the 2026-08-04 freeze lifts; Emma confirmed the freeze still stands today.
+
+**A red test on main, unrelated to any of this.** `50b42c1a7` moved Emma's two
+inbound-link P50 lines into `sequential_misc.txt` but left
+`test_the_shipped_file_has_no_executable_lines_yet` asserting the file is empty, so the
+pytest job had been failing since. The tripwire did what its docstring promised. It was
+repointed at the exact two lines in order rather than deleted — the cursor is an index
+into that list, so an insertion above it silently misaligns which edit runs next — plus
+a companion test that every shipped line parses, since an unparseable line here stalls
+the cursor behind it instead of merely being skipped. 788 pass.
+
+---
+
 ## 2026-07-28 — week-long Wikidata freeze; model-adoption review
 
 **Freeze.** Emma asked for a week-long hiatus on Wikidata edits.
