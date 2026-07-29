@@ -65,8 +65,19 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
 - 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (**1257**, up from 1041 after the
   kyūjitai + province-disambiguation passes). Registered; drips. Only the *live-wiki citation* source
   is capped by the 403 — the genbu crawl itself is unaffected, so further coverage work runs now.
-- 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (**80**, up from 77 via alias
-  + kyūjitai matching). 256 kami still have no exact-label match; a fuzzy/alias pass could recover more.
+- 🤖 **Shinmei DB (P14391)** — `generate_shinmei_ids.py` → `shinmei_ids.txt` (**77**). Audited
+  2026-07-28 and the count went DOWN on purpose: the matcher had no class gate at all (its sibling
+  `generate_genbu_ids.py` always had one), so three category errors were staged and would have gone
+  out when the freeze lifts — 気比大神→`Q11129346` (the SHRINE 氣比神宮), 筑紫島→`Q13987` (the modern
+  island 九州), 波比岐神→`Q10928586` (座摩神). A deity/non-shrine gate now runs AFTER uniqueness; it
+  rejects, it never disambiguates (applying it during the lookup turned two safely-ambiguous names
+  into confidently wrong ones). Rejections are listed in `_site/shinmei_unmatched.txt`.
+  - ❌ **The fuzzy/alias pass is settled: NOT worth doing — do not re-attempt.** The old note here
+    said "256 kami have no exact-label match"; the real figure is **129** (+19 ambiguous). Suffix
+    variants (strip/append 神/命/尊/大神/之命) over all 129 resolve just 3, and 2 of the 3 are wrong
+    (穴戸神→`Q907382` 長門国, a province; 大土神→`Q11571306` 犯土, a calendrical term). 1-in-3
+    precision on a deity identifier is not a trade worth making. The 129 are obscure Kojiki names
+    with no Wikidata item; the 19 ambiguous ones need Emma to choose.
 - ▶ **Prefectural shrine-association IDs → P973.** Emma decided 2026-07-28: **P973 now** (not a
   property proposal, not the private repo). No new property needed.
   - **Correction to the old framing:** there is no "rest of the CSV" to cover.

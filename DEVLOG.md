@@ -77,6 +77,36 @@ rolled back its sibling's cursor, and the CSV was written row-by-row, which can
 interleave mid-row between processes. Cursors now merge through `save_cursor()` with an
 atomic replace, and rows are appended in a single write.
 
+**Shinmei P14391 — three wrong statements caught before the freeze let them out.**
+The queue asked for a "fuzzy/alias pass" over the kami the resolver misses. Measuring
+first killed the idea and found a worse problem. The stated gap (256 unmatched) was
+really 129 no-match + 19 ambiguous, and suffix variants over all 129 resolve only 3 —
+of which 穴戸神→`Q907382` is the province 長門国 and 大土神→`Q11571306` is the calendrical
+term 犯土, leaving one real kami. 1-in-3 precision on a deity identifier is not a trade
+worth making, so the relaxation was rejected and the docstring now records it as
+measured, so nobody re-derives it.
+
+The probe exposed the actual defect: `generate_shinmei_ids.py` had **no class gate at
+all**, while its sibling `generate_genbu_ids.py` has always gated on
+`P31/P279* Q845945`. Auditing the 80 staged lines found three category errors — the
+god-name entry 気比大神 pointed at `Q11129346`, the SHRINE 氣比神宮; 筑紫島 at `Q13987`,
+the modern island 九州; 波比岐神 at `Q10928586`, 座摩神. All three were staged and would
+have been delivered on the first drip after 2026-08-04.
+
+The fix took two attempts and the first one was worse than the bug. Putting the gate
+inside the label lookup narrowed two names that had been safely skipped as ambiguous
+down to a single WRONG item: 阿須波神 to 座摩神 (a shrine also typed 神) and 天之狭霧神 to
+オオヤマツミ, who is that deity's parent. It preferred the richly-typed item over the
+correct one — converting "skip, a human must choose" into a confident error, which is
+the dangerous direction. Only hand-checking the emitted lines against the source pages
+caught it; the prediction from the audit query had said the gate was clean. So the rule
+is now: uniqueness is settled first on the UNGATED candidates, and the gate only ever
+removes a survivor. That costs ~6 correct alias matches gate-disambiguation would have
+found — per the repo rule, data loss beats a visible wrong statement. A `SHRINE_DENY`
+sits on top because 座摩神 is typed both 神 and 神社. Net: 80 → 77 lines, three removed,
+none added, and the rejections are listed in `_site/shinmei_unmatched.txt` rather than
+merely counted.
+
 **A red test on main, unrelated to any of this.** `50b42c1a7` moved Emma's two
 inbound-link P50 lines into `sequential_misc.txt` but left
 `test_the_shipped_file_has_no_executable_lines_yet` asserting the file is empty, so the
