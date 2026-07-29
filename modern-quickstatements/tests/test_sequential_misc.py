@@ -39,10 +39,15 @@ def test_the_shipped_file_holds_exactly_the_intended_lines():
 
     Pin the exact lines, in order: the cursor is an index into this list, so an
     insertion or reorder above the cursor silently misaligns which edit runs next.
+
+    Line 3 was appended by generate_scholar_id.py on its GATE_DATE (2026-07-29 UTC,
+    commit 3f69905cb) — the two-week-delayed P1960 for Emma's own researcher item. It
+    is BELOW the existing two, which is what the file's append-only rule requires.
     """
     assert dde.load_sequential_lines() == [
         'Q140568717|P50|Q140568870|P1545|"1"',
         'Q140568719|P50|Q140568870|P1545|"1"',
+        'Q140568870|P1960|"kiJ9hGYAAAAJ"',
     ]
 
 
