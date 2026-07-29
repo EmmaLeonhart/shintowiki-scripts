@@ -193,6 +193,58 @@ FAMILIES = {
 }
 
 
+# ─────────────────────── index-harvest families ───────────────────────
+# Not every site can be swept by id. Aichi keys its detail pages by UUID, which is
+# why it sat in the "needs an index harvest" pile — but its search page is backed by
+# a JSON API (found in assets/js/search.js: POST /index.php/search/shrine, and the
+# page itself sends limit:-1), and one query with a prefecture-wide address term
+# returns the WHOLE register in a single response: 3,179 shrines, structured, with
+# name/kana/city/addr and the UUID that builds the detail URL.
+#
+# That is strictly better than scraping — one request instead of thousands, and no
+# HTML parsing to get wrong — so it is the preferred path wherever a site offers it.
+# The endpoint rejects an empty term ("検索キーワードが指定されていない"), hence the
+# "愛知" address query rather than a blank one.
+AICHI_API = "https://www.aichi-jinjacho.or.jp/index.php/search/shrine"
+AICHI_DETAIL = "https://www.aichi-jinjacho.or.jp/search_detail.html?id=%s"
+
+
+def harvest_aichi():
+    """The whole Aichi register in one POST. Returns CSV-shaped rows."""
+    hdr = dict(UA, **{"Content-Type": "application/json",
+                      "Referer": "https://www.aichi-jinjacho.or.jp/search.html"})
+    r = requests.post(AICHI_API, headers=hdr,
+                      data=json.dumps({"addr": "愛知", "limit": -1}), timeout=180)
+    r.raise_for_status()
+    payload = r.json()
+    rows = []
+    for rec in payload.get("list", []):
+        uuid = (rec.get("id") or "").strip()
+        name = (rec.get("name") or "").strip()
+        if not uuid or not name:
+            continue
+        addr = "".join((rec.get("city") or "", rec.get("addr") or "",
+                        rec.get("house_num") or "")).strip()
+        rows.append({"prefecture": "Aichi", "shrine_name": name,
+                     "kana": (rec.get("kana") or "").strip(),
+                     "address": addr, "url": AICHI_DETAIL % uuid})
+    print(f"[aichi] API reports total_rows={payload.get('total_rows')}, "
+          f"{len(rows)} usable rows", flush=True)
+    return rows
+
+
+INDEX_FAMILIES = {"aichi": harvest_aichi}
+
+
+def run_index_family(key):
+    seen = load_seen()
+    rows = [r for r in INDEX_FAMILIES[key]() if r["url"] not in seen]
+    if rows:
+        append_rows(rows)
+    print(f"[{key}] +{len(rows)} new shrines (rest already present)", flush=True)
+    return len(rows)
+
+
 def load_state():
     if os.path.exists(STATE):
         try:
@@ -314,8 +366,16 @@ def main():
                     help="per-family fetch cap for this run (default 200)")
     ap.add_argument("--throttle", type=float, default=THROTTLE,
                     help="seconds between requests (default 1.5; do not lower)")
+    ap.add_argument("--index", action="append", choices=sorted(INDEX_FAMILIES),
+                    help="harvest an index-backed family (one API call, no sweep)")
     ap.add_argument("--list", action="store_true", help="show families and exit")
     args = ap.parse_args()
+
+    if args.index:
+        total = sum(run_index_family(k) for k in args.index)
+        print(f"\ntotal +{total} shrines -> {OUT_CSV}")
+        if not (args.family or args.all):
+            return
 
     if args.list:
         state = load_state()

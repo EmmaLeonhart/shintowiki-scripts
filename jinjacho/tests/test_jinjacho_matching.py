@@ -119,9 +119,38 @@ def test_throttle_and_miss_tolerance_are_present():
 
 
 def test_every_family_is_integer_enumerable():
-    """UUID- and slug-keyed sites (Aichi, Mie, Osaka, Kagoshima) cannot be swept by
-    id and must not be added here without an index harvest."""
+    """UUID- and slug-keyed sites cannot be swept by id and must not be added to
+    FAMILIES; they belong in INDEX_FAMILIES (Aichi now is)."""
     for key, fam in crawl.FAMILIES.items():
         assert "{n}" in fam["url"], key
         assert fam["start"] < fam["stop"], key
         assert callable(fam["parser"]), key
+
+
+# ─────────────────────── index-harvest families ───────────────────────
+
+def test_index_and_sweep_families_are_disjoint():
+    """A site in both would be fetched twice and duplicate its rows."""
+    assert not (set(crawl.FAMILIES) & set(crawl.INDEX_FAMILIES))
+
+
+def test_aichi_detail_url_matches_the_shipped_sample_format():
+    """The URL is the P973 VALUE, so its shape is the whole point: if it does not
+    match what shrines_and_websites.csv already uses, the harvest would emit a second,
+    differently-formatted URL for shrines that already have one."""
+    import csv as _csv
+    sample = os.path.join(JINJACHO, "shrines_and_websites.csv")
+    aichi = [r["website"] for r in _csv.DictReader(open(sample, encoding="utf-8"))
+             if "aichi-jinjacho" in r["website"]]
+    assert aichi, "sample CSV should contain Aichi rows"
+    built = crawl.AICHI_DETAIL % "bb10f2cc-3e65-4e3f-aad0-e4259400d028"
+    assert built == ("https://www.aichi-jinjacho.or.jp/search_detail.html"
+                     "?id=bb10f2cc-3e65-4e3f-aad0-e4259400d028")
+    # every shipped Aichi URL uses the same path + id= parameter
+    for u in aichi:
+        assert "search_detail.html?id=" in u, u
+
+
+def test_index_families_are_callables():
+    for key, fn in crawl.INDEX_FAMILIES.items():
+        assert callable(fn), key
