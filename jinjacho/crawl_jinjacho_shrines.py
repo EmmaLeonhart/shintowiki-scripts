@@ -164,12 +164,14 @@ def parse_jinjanet(raw):
 # sweep; ranges were widened past the known-good sample ids from verification_results.
 
 FAMILIES = {
-    # SLOW HOST. Measured 2026-07-28: gifu answers in ~22s per request (HTTP 200 with
-    # correct content — not a block, and it was fast for the first ~50 requests, so it
-    # looks like a server-side tarpit or just a weak box). At ~23.5s/id the full 2,600
-    # sweep is ~17 hours, so run it in its OWN long background job with a page cap and
-    # let the resumable cursor carry it across sessions. Do not put it in the same
-    # serial run as the fast families — it starves them.
+    # INTERMITTENTLY SLOW HOST — and the earlier note here overstated it. On
+    # 2026-07-28 gifu answered in ~22s per request for a stretch (HTTP 200 with correct
+    # content, so a load spike rather than a block), which this comment recorded as a
+    # fixed ~23.5s/id and a ~17-hour sweep. It is not fixed: later the same evening the
+    # cursor moved 376 -> 1091 in the span that rate predicted ~50, i.e. back to
+    # roughly the ~1s the other families answer in. Treat the slow spell as weather,
+    # not climate. Still worth running in its OWN process: when the spike returns, a
+    # shared serial run would starve shiga and saitama behind it.
     "gifu": {
         "prefecture": "Gifu",
         "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno={n}",
