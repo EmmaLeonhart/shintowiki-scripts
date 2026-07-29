@@ -31,3 +31,6 @@ _site/empty-items-export.xml
 jinjacho/crawl.log
 jinjacho/crawl_fast.log
 jinjacho/crawl_gifu.log
+jinjacho/match_run.log
+# local test residue: direct_daily_edits tests write this cursor (untracked in f2ca841e8)
+modern-quickstatements/sequential_misc.state
