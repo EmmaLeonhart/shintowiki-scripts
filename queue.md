@@ -77,11 +77,14 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     `crawled_shrines.csv` → `jinjacho/match_jinjacho_shrines.py` → `crawled_shrines_matched.csv` →
     `generate_jinjacho_p973.py` (now reads that file *and* the original 88-row sample). 16 tests,
     wired into `ci.yml`. External sites only, so it runs through the blackout.
-  - ⏳ **Crawl in progress** — Gifu (ids 1–2600), Shiga (1–1600), Saitama (9000–10600) at a 1.5s
-    throttle, ~2h. Resumable: `crawl_state.json` holds the per-family cursor and the CSV flushes
-    every 25 records, so just re-run `python crawl_jinjacho_shrines.py --all --max-pages 2600` to
-    continue. **When it finishes:** run `match_jinjacho_shrines.py`, then
-    `generate_jinjacho_p973.py`, and commit all three outputs.
+  - ✅ **Shiga and Saitama are COMPLETE** (2026-07-28): 1,388 + 1,284 records. Both ended on miss
+    tolerance, and that was verified to be the real end of the id space, not a gap — Saitama 404s
+    past 10397, Shiga serves empty pages past 1560.
+  - ⏳ **Gifu still crawling** — cursor in `crawl_state.json`; that host answers in ~20s/request, so
+    its 2,600 ids are ~12h of wall-clock. Resume with
+    `python crawl_jinjacho_shrines.py --family gifu --max-pages 2400`. **After each chunk:** re-run
+    `match_jinjacho_shrines.py` then `generate_jinjacho_p973.py` and commit the three outputs —
+    both are idempotent and simply extend the file.
   - **Precision is deliberately expensive.** The match gate is the MUNICIPALITY from the crawled
     address, not the prefecture (prefecture-gating produced verified-wrong matches: a 大垣市 天満神社
     → 天満神社 (高山市)), plus a collision guard dropping any item claimed by two crawled shrines.
