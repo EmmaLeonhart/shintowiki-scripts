@@ -1,0 +1,112 @@
+<!-- Imported from the English Wikipedia article "Ukikunden" (revision 1366567097, Ukikunden.wiki),
+     which was nominated for deletion under WP:LLMPRV on 2026-07-28.
+     Text is CC BY-SA 4.0; see the attribution line at the foot of this page.
+     NOT yet reviewed for shintowiki house style, template availability, or
+     enwiki-specific links. -->
+{{Short description|Japanese archaeological site}}
+{{Infobox historic site
+|native_name=宇木汲田
+|native_name_lang = ja
+}}
+
+{{ill|Ukikunden|ja|宇木汲田遺跡}} is an archaeological site located near [[Karatsu, Saga|Karatsu]] in [[Kyūshū]], Japan.<ref name=":0">{{Cite web |date=2021-03-09 |title=Uki-Kunden [宇木汲田] Burial Chamber (Dolmen): The Megalithic Portal and Megalith Map |url=https://www.megalithic.co.uk/article.php?sid=43209 |access-date=2023-10-18 |archive-url=https://web.archive.org/web/20210309132806/https://www.megalithic.co.uk/article.php?sid=43209 |archive-date=2021-03-09 }}</ref> It is a transitional [[Jōmon]]-[[Yayoi]] site and one of the few Jōmon sites where grains of rice have been uncovered. As a result, some archaeologists speculate it may have been inhabited by Jōmon people rather than Yayoi people.<ref>{{Cite journal |last=Ikawa-Smith |first=Fumiko |date=1980 |title=Current Issues in Japanese Archaeology |journal=American Scientist |volume=68 |issue=2 |pages=134–145 |jstor=29773725 |bibcode=1980AmSci..68..134I |issn=0003-0996}}</ref> It contains a noble burial site<ref name=":0" /> at which bodies were interred with bronzes in large urns, as is typical for Yayoi burials.<ref>{{Cite book |last=Hall |first=John Whitney |url=https://books.google.com/books?id=A3_6lp8IOK8C&dq=Ukikunden+Site&pg=PA274 |title=The Cambridge History of Japan |date=1988 |publisher=Cambridge University Press |isbn=978-0-521-22352-2 |language=en}}</ref> 63 bronze objects have been found there from the middle Yayoi period,<ref>{{Cite web | url=https://open.library.ubc.ca/media/stream/pdf/831/1.0098402/1 | title=Wealth and power in Yayoi period northern Kyushu | website=open.library.ubc.ca}}</ref> alongside [[jadeite]] [[magatama]].<ref>{{Cite web | url=https://www.jstage.jst.go.jp/article/jmps/112/5/112_170521/_pdf | title=Jadeitite from Itoigawa, Niigata Prefecture, central Japan | archive-url=https://web.archive.org/web/20190504062339/https://www.jstage.jst.go.jp/article/jmps/112/5/112_170521/_pdf | archive-date=2019-05-04}}</ref>
+
+The site features notable evidence of the history of [[agriculture in Japan]],<ref name=":1">{{Cite web | url=https://www.jjarchaeology.jp/contents/pdf/vol006/6-2_109.pdf | title=The spread of rice agriculture during the Yayoi Period: From the Shandong Peninsula to the Japanese Archipelago via the Korean Peninsula | website=www.jjarchaeology.jp}}</ref> and some models use the area as the origin point of Japanese agriculture.<ref>{{Cite journal|title=Bayesian analyses of direct radiocarbon dates reveal geographic variations in the rate of rice farming dispersal in prehistoric Japan|first1=Enrico R.|last1=Crema|first2=Chris J.|last2=Stevens|first3=Shinya|last3=Shoda|journal=Science Advances|date=2022 |volume=8|issue=38|article-number=eadc9171|doi=10.1126/sciadv.adc9171|pmid=36129978|pmc=9491708 |bibcode=2022SciA....8C9171C }}</ref>
+
+== Historical significance ==
+Ukikunden is located in [[Kyushu|Kyūshū]]. It was discovered beneath a paddy field near the [[dolmen]] sites in [[Morita, Aomori|Morita]] and [[Setoguchi]]. An excavation in 1966 uncovered the long capstone of this dolmen along with significant artifacts such as large urns, jewelry, and bronze weapons. This discovery offers insights into the burial practices and material culture of its time.<ref name=":0" />
+{| class="wikitable"
+! colspan="3" |Chronology table<ref name=":2" /><!-- citing this paper but it quotes the following people as its source --><ref>Yanagida Yasuo 柳田康雄. Kyūshū Yayoi bunka no kenkyū 九州弥生文化の研 究. Tōkyō: Gakuseisha, 2002</ref><ref>Kasuga-shi kyōiku iinkai 春日市教育委員会 (ed.). Hakugensha iseki 伯玄社遺 跡. Kasugashi bunkazai chōsa hōkokusho dai sanjūgo shū 春日市文化財調 査報告書; 35. Kasuga: Kasugashi kyōiku iinkai, 2003.</ref>
+|-
+! Chronology
+! Kamekan chronology
+! Yayoi phases
+|-
+| Early Yayoi 2nd 1/2
+| KIa
+| rowspan="2" | I
+|-
+| Early Yayoi end
+| KIb
+|-
+| Middle Yayoi beginning
+| KIc
+| rowspan="2" | II
+|-
+| rowspan="2" | Middle Yayoi 1st 1/2
+| KIIa
+|-
+| KIIb
+| rowspan="3" | III
+|-
+| rowspan="2" | Middle Yayoi 2nd 1/2
+| KIIc
+|-
+| KIIIa
+|-
+| Middle Yayoi 2nd 1/2
+| KIIIb
+| rowspan="2" | IV
+|-
+| Middle Yayoi end
+| KIIIc
+|-
+| Late Yayoi beginning
+| KIVa
+| rowspan="4" | V
+|-
+| rowspan="3" | Late Yayoi 1st 1/2
+| KIVb
+|-
+| KIVc
+|-
+| KIVc
+|}
+
+=== Agricultural insight ===
+The site gives insight into the [[history of rice cultivation]] in Japan, and how cultivated rice breeds changed over time.<ref name=":1" />
+
+Over 600 burnt rice grains were discovered at the site. [[Accelerator mass spectrometry|AMS]] dating attributed the grains to the site's Yusu 1 period at end of the [[9th century BC]], which coincides with the rise of the [[Yayoi culture]].<ref name=":1" /> DNA analyses classified these grains as primarily of the tropical [[Japonica rice|Japonica]] variety. Later, grains from the [[6th century BC]] and [[5th century BC]] found at other sites like [[Arita, Saga|Arita]] and [[Fukuoka]] were identified as temperate Japonica.<ref name=":1" />
+
+Research by Nobuyuki Kamijo indicated that rice grains from the early [[Yayoi period]] at the Ukikunden site were varied in size, tending to be smaller. Later in the early Yayoi period, rice had changed its form, resulting in a more consistent, rounder, and medium-sized grain.<ref name=":1" />
+
+Archaeological evidence from the site has been influential in Japanese archaeology and in understanding the history of agriculture in Japan. It demonstrates how rice strains were selectively bred and improved over time.<ref name=":1" />
+
+=== Burial customs insight ===
+
+The Ukikunden site provides insight into burial customs from the Middle to Late Yayoi period. The tombs at Ukikunden do not always have the same number of burial goods. This difference is seen across various kamekan burial urn phases. Coastal areas near Asia do not always have the most burial items. This is true even for bronze mirrors during the KIIa and KIIb phases.<ref name=":2">{{Cite web | url=https://www.ostasien-verlag.de/zeitschriften/crossroads/cr/pdf/CR_09_2013_045-062_Gilaizeau.pdf | title=Diplomacy from the Grave: Interactions between Western Japan and the East Asian Continent from a Burial Point of View | website=www.ostasien-verlag.de}}</ref>
+
+In Ukikunden, tombs with goods and mirrors are found from KIc to KIIIa phases. There are no goods in the KIIIb phase. The Mikumo-minami-shōji tombs 1 and 2 in [[Itoshima]] have most of the goods. This change shows that influence moved from Karatsu to [toshima].<ref name=":2" />
+
+Leaders in the area did not always share burial items widely. This suggests they did not use goods to gain control over others. This pattern is most clear in the KIc, KIIa, and KIIIc phases. The tombs from KIc and KIIa phases show a clear structure. There is a main burial site with many rich tombs. Only one of these tombs has a mirror. Around this main site, there are smaller sites. Each has only one tomb with goods, but no mirrors.<ref name=":2" />
+
+== Present Site ==
+The excavated capstone has since been relocated to the [[Nabatake Site|Nabatake site]], located at the heart of Karatsu city, which is approximately 7&nbsp;km away from its original location.<ref name=":0" />
+
+== See also ==
+
+* [[Jōmon period|Proto-Jōmon period]]
+* [[Miura Peninsula]]
+* [[Inaridai Sword]]
+* [[Hashihaka Kofun]]
+* [[Makimuku ruins]]
+* [[Inariyama Kofun]]
+* [[Ichinoyama Kofun]]
+* {{ill|Inaridai Kofun Group|ja|稲荷台1号墳}}
+
+==References==
+{{reflist}}
+{{Yamatai}}
+
+[[Category:Yamatai]]
+[[Category:Archaeological sites in Saga Prefecture]]
+[[Category:Jōmon period sites]]
+[[Category:Agriculture in Japan]]
+[[Category:Karatsu, Saga]]
+[[Category:Yayoi period ruins]]
+
+----
+''This page incorporates text from the English Wikipedia article [https://en.wikipedia.org/w/index.php?oldid=1366567097 Ukikunden] (revision 1366567097), available under [https://creativecommons.org/licenses/by-sa/4.0/ CC BY-SA 4.0]. Imported 2026-07-28.''
+
+[[Category:Git synced pages]]
+[[Category:Imported from Wikipedia 2026-07]]

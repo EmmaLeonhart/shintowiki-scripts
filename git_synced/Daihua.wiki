@@ -1,0 +1,47 @@
+<!-- Imported from the English Wikipedia article "Daihua" (revision 1366579187, Daihua.wiki),
+     which was nominated for deletion under WP:LLMPRV on 2026-07-28.
+     Text is CC BY-SA 4.0; see the attribution line at the foot of this page.
+     NOT yet reviewed for shintowiki house style, template availability, or
+     enwiki-specific links. -->
+{{Short description|Extinct relative of comb jellies}}
+{{Speciesbox
+| fossil_range = [[Cambrian Stage 3]], {{fossil range|518|ref=<ref>{{Cite journal|last1=Yang|first1=C.|last2=Li|first2=X.-H.|last3=Zhu|first3=M.|last4=Condon|first4=D. J.|last5=Chen|first5=J.|date=2018|title=Geochronological constraint on the Cambrian Chengjiang biota, South China|journal=Journal of the Geological Society|language=en|volume=175|issue=4|pages=659–666|doi=10.1144/jgs2017-103|bibcode=2018JGSoc.175..659Y |s2cid=135091168 |issn=0016-7649|url=https://nora.nerc.ac.uk/id/eprint/521412/1/2018-JGS-Chuan%20Yang%20et%20al.pdf}}</ref>}}
+| image = Daihua sanqiong YKLP-13401a.png
+| image_caption = Fossil of ''Daihua sanqiong''
+| genus = Daihua
+| parent_authority = Zhao et al., 2019
+| species = sanqiong
+| authority = Zhao et al., 2019
+}}
+
+'''''Daihua sanqiong''''' is a possible ancestor of [[comb jellies]].<ref name="laura-geggel-2019a">{{Cite web |author1=Laura Geggel |date=2019-03-22 |title=520-Million-Year-Old Sea Monster Had 18 Mouth Tentacles |url=https://www.livescience.com/65049-ancient-creature-18-tentacles.html |access-date=2023-06-02 |website=livescience.com |language=en}}</ref> It was a sessile relative to comb jellies.<ref name="bristol-2023a">{{Cite web |last=Bristol |first=University of |title=Half-a-billion-year-old fossil reveals the origins of comb jellies |url=https://phys.org/news/2019-03-half-a-billion-year-old-fossil-reveals-jellies.html |access-date=2023-06-04 |website=phys.org |language=en}}</ref> It had combs with cilia just like modern day comb jellies.<ref name="bristol-2023a" />
+
+It is named after the [[Dai people]]. The name means Dai flower.<ref name="laura-geggel-2019a" />
+
+In 2019, ''Daihua'' and other Cambrian forms were hypothesized to be stem-group [[Ctenophora|ctenophores]]. This leads to the assertion that ctenophores evolved from immotile, suspensivorous forms, a lifestyle similar to that of [[Polyp (zoology)|polyps]].<ref>{{Cite journal |last1=Zhao |first1=Yang |last2=Vinther |first2=Jakob |last3=Parry |first3=Luke A. |last4=Wei |first4=Fan |last5=Green |first5=Emily |last6=Pisani |first6=Davide |last7=Hou |first7=Xianguang |last8=Edgecombe |first8=Gregory D. |last9=Cong |first9=Peiyun |date=2019-04-01 |title=Cambrian Sessile, Suspension Feeding Stem-Group Ctenophores and Evolution of the Comb Jelly Body Plan |journal=Current Biology |language=en |volume=29 |issue=7 |pages=1112–1125.e2 |doi=10.1016/j.cub.2019.02.036 |pmid=30905603 |s2cid=84844387 |issn=0960-9822|doi-access=free |hdl=1983/40a6bcb8-a740-482c-a23c-7d563faea5c5 |hdl-access=free }}</ref> Cladogram after Zhao ''et al.'', 2019:
+{{clade|{{clade sequential|Crown [[Cnidaria]]|''[[Xianguangia]]''|'''''Daihua'''''|''[[Dinomischus]]''|''[[Siphusauctum]]''|''[[Galeactena]]''|Crown [[Ctenophora]]}}}}
+
+==See also==
+
+* ''[[Xianguangia]]''
+* ''[[Dinomischus]]''
+* ''[[Siphusauctum]]''
+
+==References==
+{{reflist}}
+
+{{Taxonbar|from1=Q124512951|from2=Q124513035}}
+
+[[Category:Prehistoric animals]]
+[[Category:Cambrian genera]]
+[[Category:Fossil taxa described in 2019]]
+
+
+{{ctenophore-stub}}
+{{Cambrian-animal-stub}}
+
+----
+''This page incorporates text from the English Wikipedia article [https://en.wikipedia.org/w/index.php?oldid=1366579187 Daihua] (revision 1366579187), available under [https://creativecommons.org/licenses/by-sa/4.0/ CC BY-SA 4.0]. Imported 2026-07-28.''
+
+[[Category:Git synced pages]]
+[[Category:Imported from Wikipedia 2026-07]]
