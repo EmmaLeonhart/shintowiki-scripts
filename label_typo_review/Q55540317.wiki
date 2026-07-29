@@ -1,6 +1,6 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q55540317 -->
 <!-- JA: 大穴持神社 | KANA: おおなむぢじんじゃ | EN_LABEL: Ōmunaji Shrine | KANA_ROMANIZED: Onamujijinja -->
-<!-- ANSWER: -->
+<!-- ANSWER: LABEL_TYPO: Ōnamuji Shrine -->
 <!-- TASK: this shrine's English label letters diverge from its romanized kana (P1814). Research (jawiki article, official site, romanization rules) and decide which side is wrong. Fill ANSWER with exactly one of:
   LABEL_TYPO: <corrected English label>   (the label is misspelled)
   KANA_ISSUE: <note, e.g. historical kana ちりふ=Chiryū>  (label fine, kana archaic/wrong)
