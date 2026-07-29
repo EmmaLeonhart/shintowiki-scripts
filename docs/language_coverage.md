@@ -4,7 +4,16 @@ Live source of truth: `shinto-label-generator/language_registry.py` (run
 `python language_registry.py` to regenerate the numbers below). This doc is the
 human-readable snapshot + the plan for filling the long tail.
 
-As of 2026-06-21: **116 languages** in `query.csv`, **47 covered**, **66 todo** (plus `bn`, a new language not yet in query.csv).
+As of 2026-07-29 (re-measured by running `language_registry.py`): **116 languages**
+in `query.csv`, **54 covered**, **59 todo**. The 2026-06-21 snapshot said 47/66; the
+2026-07-06 batch (th, my/km/lo/dz, new/pa/mad, cdo) is the difference.
+
+**Label count is NOT the build criterion — do not use it as one.** `cdo`, `km`, `new`,
+`pa` and `mad` do not appear in `query.csv` at all: they had **zero** existing labels
+when their generators were built. So "build it if the label count justifies it" would
+have blocked every one of the most recent builds. What actually decides a build is
+whether a reliable transliteration path exists (Aksharamukha, a romanization table),
+plus whether the target convention passes the verification gate below.
 
 **Deep-tail build is effectively complete (stopping point reached 2026-06-21).**
 Of the 66 remaining: all 19 with ≥4 labels fail the verification gate — `pl`/`fi`

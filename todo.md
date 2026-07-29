@@ -17,12 +17,29 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
   did; write_qs 4-tuple + all 8 category generators + multilang wired this day).
   N/A: shikinaisha_lists (frame-built titles) + hand-authored *_translations. See
   DEVLOG 2026-07-05 and queue.md "DONE — QuickStatements provenance comments"._
-- [ ] **Long-tail language expansion:** `python language_registry.py` prints
-  the uncovered languages by label count. The 2026-07-06 batch shipped th (Thai,
-  wunsen), the Brahmic set (my/km/lo/dz via Aksharamukha), new/pa/mad, and cdo
-  (Min Dong md= romanization). The remaining uncovered tail is Chinese topolects
-  needing their own romanization tables like cdo did (nan/hak/wuu/yue/lzh) — each
-  a deliberate build; low demand, do only if a real label count justifies it.
+- [ ] **Long-tail language expansion — hand-building is CLOSED; the tail is an LLM
+  job.** Re-measured 2026-07-29: 116 languages in `query.csv`, **54 covered, 59 todo**
+  (the 2026-07-06 batch — th via wunsen, my/km/lo/dz via Aksharamukha, new/pa/mad, cdo —
+  is what moved it from 47/66).
+
+  This item used to read "Chinese topolects needing their own romanization tables like
+  cdo did (nan/hak/wuu/yue/lzh) — do only if a real label count justifies it". Both
+  halves were wrong, and [`docs/language_coverage.md`](docs/language_coverage.md)
+  already said so:
+  - **The label-count criterion cannot decide anything.** `cdo`, `km`, `new`, `pa` and
+    `mad` are not in `query.csv` at all — they were built at **zero** existing labels.
+    A count threshold would have blocked every recent build.
+  - **These specific languages fail the verification gate**, which is why they were
+    left, not low demand: `nan`/`hak`/`nan-latn-*` re-spell the name phonetically,
+    `yue`/`wuu` mix traditional and simplified zh, `ka` keeps the Japanese suffix.
+    A romanization table does not fix a convention we cannot verify.
+  - `en-gb`/`en-us`/`en-ca` (11/8/7 labels, the largest uncovered counts after `nan`)
+    must NOT be filled: language fallback already covers regional English, so they
+    would be pure duplicates of `en`.
+
+  So there is no hand-build left to do here. The gate-failing languages route to the
+  LLM (the same RAG path the category translations use) or wait for Emma to change
+  scope. Do not open a romanization-table build off the back of a label count.
 
 ## Repo / script tasks
 

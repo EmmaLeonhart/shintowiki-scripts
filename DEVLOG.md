@@ -107,6 +107,26 @@ sits on top because 座摩神 is typed both 神 and 神社. Net: 80 → 77 lines
 none added, and the rejections are listed in `_site/shinmei_unmatched.txt` rather than
 merely counted.
 
+**Long-tail language expansion: closed as a hand-build, and its stated criterion was
+unusable.** With §A otherwise waiting on external clocks, the one genuinely-unblocked
+`todo.md` item was the label-generator tail, which said the remaining Chinese topolects
+(nan/hak/wuu/yue/lzh) each need a romanization table and to build one "only if a real
+label count justifies it". Running `language_registry.py` re-measured coverage at
+**54 covered / 59 todo** of 116 (the doc still said 47/66), and then killed the
+criterion: `cdo`, `km`, `new`, `pa` and `mad` are absent from `query.csv` entirely, so
+they were built at **zero** existing labels. A count threshold would have blocked every
+one of the recent builds.
+
+`docs/language_coverage.md` had already worked out the real reason those languages were
+left, and it is not demand: they fail the verification gate — `nan`/`hak`/`nan-latn-*`
+re-spell the name phonetically, `yue`/`wuu` mix traditional and simplified zh, `ka`
+keeps the Japanese suffix — and its conclusion was that they "should be routed to the
+LLM, not hand-built". So `todo.md` was carrying an instruction its own reference doc
+contradicted. Both reconciled; the doc's stale counts refreshed. Also recorded that
+`en-gb`/`en-us`/`en-ca` (11/8/7 labels, the largest uncovered counts) must not be
+filled at all, since language fallback covers regional English and they would be pure
+duplicates of `en`.
+
 **A red test on main, unrelated to any of this.** `50b42c1a7` moved Emma's two
 inbound-link P50 lines into `sequential_misc.txt` but left
 `test_the_shipped_file_has_no_executable_lines_yet` asserting the file is empty, so the
