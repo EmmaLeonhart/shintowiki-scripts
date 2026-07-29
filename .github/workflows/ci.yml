@@ -11,6 +11,7 @@ on:
       - "modern-quickstatements/**.py"
       - "shinto-label-generator/**.py"
       - "recreate-deleted-wikidata/**.py"
+      - "jinjacho/**.py"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
@@ -18,6 +19,7 @@ on:
       - "modern-quickstatements/**.py"
       - "shinto-label-generator/**.py"
       - "recreate-deleted-wikidata/**.py"
+      - "jinjacho/**.py"
   workflow_dispatch:
 
 jobs:
