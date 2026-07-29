@@ -34,3 +34,4 @@ jinjacho/crawl_gifu.log
 jinjacho/match_run.log
 # local test residue: direct_daily_edits tests write this cursor (untracked in f2ca841e8)
 modern-quickstatements/sequential_misc.state
+modern-quickstatements/shinmei_run.log
