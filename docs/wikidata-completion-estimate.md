@@ -121,6 +121,32 @@ language labels are not merely the theoretically most legible automated-editing 
 are the surface that has **already** drawn a complaint on the one wiki where a block would
 matter. The ontology work has not.
 
+### DECISION 2026-07-29: leave it running, languages included
+
+Superseding the hold above (same day, after further thought). **No change to the pipeline.**
+
+- **Let the language labels drip in.** Not ideal as a long-term scenario, by her own read, but
+  fine to run in the short term.
+- **Ontology continues** — *"just kind of fine to continue letting it go."*
+- She expects to want to change this **maybe a month or 90 days out**, and is deliberately not
+  doing it now. **That is her own estimate, not a deadline, and nothing is scheduled against
+  it.** No cron, no calendar event, no board reminder. Do not re-surface it.
+
+### The real question is programme shutdown, not language trimming
+
+Her explicit reframe, and the better axis: *"it's more in the realm of — are we just going to
+shut down this entire programme at some point."* The how-many-languages framing above was the
+wrong cut.
+
+On that axis there is a structural fact worth holding: **the decision point arrives on its own.**
+The atomic queue drains in ~354 days, and on that day the programme either ends or converts into
+pure language drip, because nothing else remains in it. No date needs to be invented or
+scheduled for the question to present itself.
+
+This also makes the short-term run cheap. At 300/day with the drip capped at 20, output stays
+**~93% ontology for the next ~282 days** no matter what. Composition barely moves until the
+ontology work is nearly finished, so deferring the call costs almost nothing.
+
 ### Cheapest scope cut available, if she wants one later
 
 The reservoir's 85 files are not 85 distinct languages of content. **Nine zh-family variants —
