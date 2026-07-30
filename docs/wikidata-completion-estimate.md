@@ -84,6 +84,54 @@ Not a recommendation — the scope call is Emma's. The arithmetic:
 There is no throughput setting that makes the reservoir finite; the only lever is how many
 languages are in scope.
 
+## Emma's position, 2026-07-29 — held, not decided
+
+She chose **hold and decide after the freeze** (Wikidata unfreezes 2026-08-04; nothing drains
+before then either way). Her stated position, to be read as a live question rather than a
+ruling:
+
+- **The language labels are NOT being dropped.** She wants them to continue as part of the
+  project **to some extent** — *"the degree of it is definitely questionable."* She is
+  questioning them strategically, not rejecting them.
+- **The queued ontology is very useful** and she wants it to run.
+- **"Too hot to run"** is her concern about the language labels specifically — she expects a
+  too-hot-to-run situation with them.
+- **She appreciates the pipeline.** The question is scope, not machinery.
+- Overall read: *"probably going to be able to get away with this, but it's not certain."*
+
+### The two senses of "dominated" — both her statements are correct
+
+She said both *"my edits are still mostly ontology-driven"* and *"what we're doing is dominated
+by the language labels."* These are not in conflict; they use different denominators, and
+keeping them apart is what makes the decision tractable.
+
+| Denominator | Ontology | Language |
+|---|---:|---:|
+| **Daily flow** (300 edits/day, drip capped at 20) | **93.3%** | 6.7% |
+| **Total outstanding** (committed queue + 5.25M reservoir) | 1.6% | **98.4%** |
+
+What is currently *visible on-wiki* is ontology work. What is *committed* is overwhelmingly
+language work. Both readings are live at once.
+
+### Why "too hot" is corroborated, not just an instinct
+
+`wikipedia-ai-cleanup-2026-07/RESEARCH-escalation-base-rate.md` (in the `funding-and-networking`
+parent) names the live Wikidata-side grievance as **the Japanese shrine label disputes**. So the
+language labels are not merely the theoretically most legible automated-editing signature — they
+are the surface that has **already** drawn a complaint on the one wiki where a block would
+matter. The ontology work has not.
+
+### Cheapest scope cut available, if she wants one later
+
+The reservoir's 85 files are not 85 distinct languages of content. **Nine zh-family variants —
+`zh`, `zh-cn`, `zh-hans`, `zh-hant`, `zh-hk`, `zh-mo`, `zh-sg`, `zh-tw`, `gan` — carry an
+identical 106,904 lines each**, ~962,000 lines total, for what is substantially one language's
+content replicated across variant codes. That is simultaneously the largest single block in the
+reservoir and the pattern that reads most like mass-produced filler. Collapsing it to one or two
+variants removes ~18% of the reservoir at close to zero loss of actual language coverage.
+
+Recorded as an option for the post-freeze decision. Not a recommendation and not scheduled.
+
 ## Method
 
 Line counts from `direct_daily_edits.ATOMIC_FILES` (a superset of
