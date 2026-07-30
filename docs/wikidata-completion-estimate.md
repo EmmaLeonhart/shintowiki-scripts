@@ -1,0 +1,93 @@
+# How long until the queued Wikidata edits are all through?
+
+Measured 2026-07-29 at Emma's request: *"we want to do some estimation of our queued-up
+edits and how long it'll take our total queued-up edits to all go through."* Counts are
+read off the working tree, not estimated.
+
+## Throughput
+
+One editing path only: `direct_daily_edits.py`, fired once per UTC day by
+`cleanup-loop.yml`'s window-gate (the QuickStatements API path was retired 2026-07-04).
+
+- **`_DEFAULT_MAX_EDITS = 300`** lines per day, randomly sampled from every atomic file.
+- Per-file daily caps override that for a few sources: `label_proposals_drip.txt` **20/day**,
+  `description_adds.txt` 50, `sutra_profile.txt` 1.
+- **Currently 0/day** — `FREEZE_WIKIDATA_UNTIL = 2026-08-04` forces `wikidata-daily-fire=false`.
+
+## The committed queue: 106,166 lines
+
+58 live atomic files (one listed file, `ronsha_ranking_qualifiers.txt`, does not exist).
+Classified by QuickStatements column 2 — `L*`/`D*`/`A*` = language, `P*` = ontology.
+
+| Bucket | Lines | Share | Days at 300/day |
+|---|---:|---:|---:|
+| **Ontology** (properties, qualifiers, references, removals, external IDs) | 84,631 | 79.7% | 282 |
+| **Language** (labels, descriptions, aliases) | 21,531 | 20.3% | 72 |
+| **Total** | **106,166** | | **354** |
+
+**≈ 354 days — just under a year**, so roughly 2027-07 at the current rate, plus the freeze.
+
+Largest single files: `p6262_fandom_links` 12,423 · `bunrei` 9,971 ·
+`temple_identical_name_en_labels` 8,747 · `description_label_pairs` 7,897 ·
+`sango_p1448` 7,709 · `saijin_deity_research` 6,939 · `saijin_p825` 5,795 ·
+`list_membership_rebuild` 5,635 · `p11250_miraheze_links` 5,346 · `kana_qualifier_add` 4,965.
+
+## The part that does not terminate: 5,250,144 lines
+
+`shinto-label-generator/quickstatements/` holds **85 language files totalling 5.25 million
+lines**, drip-fed into the daily batch 20 at a time by `select_label_proposals.py`. This is a
+reservoir, not a backlog — the committed queue above does not contain it.
+
+- At **20/day: ~262,500 days ≈ 719 years.**
+- At the **full 300/day** budget, with everything else stopped: **~48 years.**
+
+Throughput cannot fix this; only scope can. The driver is item count, not language count —
+each language file covers the whole shrine/temple/deity corpus:
+
+| Language file | Lines | Days at full 300/day |
+|---|---:|---:|
+| `ko` | 110,484 | 368 |
+| `zh` and 8 zh-family variants (`zh-cn`, `zh-hans`, `zh-hant`, `zh-hk`, `zh-mo`, `zh-sg`, `zh-tw`, `gan`) | 106,904 each | 356 each |
+| `dz`, `lo`, `mad`, `mai`, `new`, `shn` | 70,146 each | 234 each |
+| `as`, `km`, `ur`, `ceb` | ~70,144 each | 234 each |
+
+**One additional language costs roughly one year of the entire daily edit budget.** That is
+the number that matters for any scope decision.
+
+## Why this matches Emma's read
+
+Her call, 2026-07-29: restraint on languages, *"let it rip"* on ontology, and she wants the
+Wikidata work to **end on a relatively reasonable timeline.** The measurement supports the cut
+exactly:
+
+- **Ontology terminates.** 84,631 lines, 282 days, then done. Finite by construction — it is
+  bounded by the number of shrines, deities and relationships that exist. Letting it rip costs
+  under a year and buys a finished data model. This includes the items she named as possibly
+  questionable (Motherhouse of Shrines and similar); they are a rounding error against 84k.
+- **Languages do not terminate.** They are 20.3% of the committed queue but 98% of all
+  outstanding work once the reservoir is counted.
+- **Her "too dominated by the languages **in the future**" is precisely right**, and the
+  mechanism is worth stating: the label drip is only 20 of 300 edits/day today — **6.7%**, not
+  dominant. But it is the one source that never drains. When the atomic queue finishes in ~354
+  days, the drip is the **only** thing left, and the edit stream becomes **100% language edits,
+  permanently.** The domination is scheduled, not current.
+
+## What would have to change for a fixed end date
+
+Not a recommendation — the scope call is Emma's. The arithmetic:
+
+- **Ontology only, drip off** → done in **~282 days**, one clean end date.
+- **Ontology + finish the committed language files, drip off** → **~354 days.**
+- **Ontology + N whole extra languages** → add **~234–368 days per language.**
+- **Leave the drip on at 20/day** → no end date exists, by construction.
+
+There is no throughput setting that makes the reservoir finite; the only lever is how many
+languages are in scope.
+
+## Method
+
+Line counts from `direct_daily_edits.ATOMIC_FILES` (a superset of
+`submit_daily_batch.ATOMIC_FILES`), non-empty lines only, classified on the second
+pipe-delimited column. Reservoir counted over `shinto-label-generator/quickstatements/*.txt`.
+No Wikidata or wiki requests were made — the Miraheze blackout runs to 2026-08-09 and the
+Wikidata freeze to 2026-08-04.
