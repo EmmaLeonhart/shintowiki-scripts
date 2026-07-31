@@ -67,7 +67,7 @@
 | label19 =  Length
 | data19 = {{{length|}}}
 
-| label20 =  {{#if:{{{is_ranged|}}}{{{is_artillery|}}}| [[:en:gun barrel|Barrel]]|{{#if:{{{is_bladed|}}}| Blade}}}}&nbsp;length
+| label20 =  {{#if:{{{is_ranged|}}}{{{is_artillery|}}}| [[gun barrel|Barrel]]|{{#if:{{{is_bladed|}}}| Blade}}}}&nbsp;length
 | data20 = {{{part_length|}}}
 
 | label21 =  Width
@@ -97,7 +97,7 @@
 | label29 = {{#if:{{{is_artillery|}}}| [[Shell (projectile)|Shell]]|[[Cartridge (firearms)|Cartridge]]}} weight
 | data29 = {{#if:{{{is_ranged|}}}{{{is_artillery|}}}| {{{cartridge_weight|}}} }}
 
-| label30 = {{#if:{{{is_UK|}}}| [[:en:Caliber|Calibre]] | [[:en:Caliber|Caliber]]}}
+| label30 = {{#if:{{{is_UK|}}}| [[Caliber|Calibre]] | [[Caliber|Caliber]]}}
 | data30 = {{#if:{{{is_ranged|}}}{{{is_artillery|}}}| {{{caliber|}}} }}
 
 | label31 = Barrels
@@ -106,7 +106,7 @@
 | label32 = [[Action (firearms)|Action]]
 | data32 = {{#if:{{{is_ranged|}}}| {{{action|}}} }}
 
-| label33 = [[:en:Breech-loading weapon|Breech]]
+| label33 = [[Breech-loading weapon|Breech]]
 | data33 = {{#if:{{{is_artillery|}}}| {{{breech|}}} }}
 
 | label34 = [[Recoil]]
@@ -139,13 +139,13 @@
 | label43 = Sights
 | data43 = {{#if:{{{is_ranged|}}}{{{is_artillery|}}}| {{{sights|}}} }}
 
-| label44 = [[:en:Blade|Blade]]&nbsp;type
+| label44 = [[Blade|Blade]]&nbsp;type
 | data44 = {{#if:{{{is_bladed|}}}| {{{blade_type|}}} }}
 
-| label45 = [[:en:Hilt|Hilt]]&nbsp;type
+| label45 = [[Hilt|Hilt]]&nbsp;type
 | data45 = {{#if:{{{is_bladed|}}}| {{{hilt_type|}}} }}
 
-| label46 = [[:en:Scabbard|Scabbard]]/[[:en:Scabbard|sheath]]
+| label46 = [[Scabbard|Scabbard]]/[[Scabbard|sheath]]
 | data46 = {{#if:{{{is_bladed|}}}| {{{sheath_type|}}} }}
 
 | label47 = Head&nbsp;type
@@ -242,11 +242,11 @@
 
 }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox weapon]] with unknown parameter
 "_VALUE_"|ignoreblank=y| accuracy | action | alt | altitude | armour | barrels | blade_type | boost | breech | caliber | caption | carriage | cartridge | cartridge_weight | ceiling | clearance | crew | depth | design_date | designer | detonation | developed_from | developed_into | diameter | drive | elevation | engine | engine_power | feed | filling | filling_weight | fuel_capacity | guidance | haft_type | head_type | height | hilt_type | image | image_size | is_artillery | is_bladed | is_explosive | is_missile | is_ranged | is_UK | is_vehicle | launch_platform | length | manufacturer | mass | max_range | name | number | origin | part_length | passengers | payload_capacity | primary_armament | production_date | propellant | pw_ratio | range | rate | recoil | ref | secondary_armament | service | sheath_type | sights | spec_label | speed | steering | suspension | transmission | transport | traverse | type | unit_cost | used_by | variants | vehicle_range | velocity | wars | weight | width | wingspan | yield }}<noinclude>
-{{Documentation}}[[Category:Independently git synced pages]][[Category:Templates with Documentation template]]
+{{Documentation}}[[Category:Templates with Documentation template]]
 
-[[Category:Independently git synced pages]][[Category:Pages using infobox weapon with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:Pages using infobox weapon with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
 </noinclude>
