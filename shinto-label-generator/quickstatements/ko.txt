@@ -106924,6 +106924,8 @@ Q137776199	Lko	"보주원"
 Q137786146	Lko	"성응사"
 # Source: JA "魚町稲荷神社" (hanja reading)
 Q137786333	Lko	"어정도하신사"
+# Source: JA "櫟江神社" (hanja reading)
+Q137787344	Lko	"역강신사"
 # Source: JA "椙本神社" (hanja reading)
 Q137799698	Lko	"창본신사"
 # Source: JA "化生寺" (hanja reading)
@@ -106932,8 +106934,8 @@ Q137846297	Lko	"화생사"
 Q137856383	Lko	"부사천간사"
 # Source: JA "大黒殿" (hanja reading)
 Q137884853	Lko	"대흑전"
-# Source: JA "瑞圓寺" (hanja reading)
-Q137887431	Lko	"서원사"
+# Source: JA "瑞圓寺 (あま市)" (hanja reading)
+Q137887431	Lko	"서원사아마시"
 # Source: JA "山蒼稲荷神社" (hanja reading)
 Q138000439	Lko	"산창도하신사"
 # Source: JA "長光寺" (hanja reading)
@@ -107106,8 +107108,12 @@ Q139865520	Lko	"송호신전천만궁"
 Q139865625	Lko	"뇌신궁"
 # Source: JA "養円寺 (愛知県)" (hanja reading)
 Q139882295	Lko	"양엔사애지현"
+# Source: JA "土江神社" (hanja reading)
+Q139889476	Lko	"토강신사"
 # Source: JA "願正寺" (hanja reading)
 Q139891817	Lko	"원정사"
+# Source: JA "国玉神社・八劔社合殿" (hanja reading)
+Q139923304	Lko	"국옥신사팔검사합전"
 # Source: JA "月見里笠森稲荷神社" (hanja reading)
 Q139927532	Lko	"월견리립삼도하신사"
 # Source: JA "宗忠神社（岡山市）" (hanja reading)
@@ -107308,6 +107314,8 @@ Q140447657	Lko	"지리부신사"
 Q140451875	Lko	"장곡신사"
 # Source: JA "長谷神社" (hanja reading)
 Q140451981	Lko	"장곡신사"
+# Source: JA "日長神社" (hanja reading)
+Q140460242	Lko	"일장신사"
 # Source: JA "未知の神社" (hanja reading)
 Q140465982	Lko	"미지노신사"
 # Source: JA "八幡社 (横浜市保土ケ谷区)" (hanja reading)
@@ -107356,8 +107364,28 @@ Q140518246	Lko	"선옥포신사"
 Q140521466	Lko	"아구비신사"
 # Source: JA "正覚寺" (hanja reading)
 Q140531654	Lko	"정각사"
+# Source: JA "弘誓寺" (hanja reading)
+Q140562468	Lko	"홍서사"
 # Source: JA "松岡寺" (hanja reading)
 Q140575315	Lko	"송강사"
+# Source: JA "常在寺" (hanja reading)
+Q140595058	Lko	"상재사"
+# Source: JA "本應寺" (hanja reading)
+Q140595145	Lko	"본응사"
+# Source: JA "天苗加命" (hanja reading)
+Q140597615	Lko	"천묘가명"
+# Source: JA "寺島家御天神社" (hanja reading)
+Q140605922	Lko	"사도가어천신사"
+# Source: JA "伊良湖神社" (hanja reading)
+Q140605990	Lko	"이량호신사"
+# Source: JA "全性寺" (hanja reading)
+Q140630622	Lko	"전성사"
+# Source: JA "光触寺" (hanja reading)
+Q140657409	Lko	"광촉사"
+# Source: JA "長寿院" (hanja reading)
+Q140673967	Lko	"장수원"
+# Source: JA "唯心寺" (hanja reading)
+Q140753128	Lko	"유심사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
