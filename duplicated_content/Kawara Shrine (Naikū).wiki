@@ -18,77 +18,6 @@
 
 {{nihongo|'''Kawara Shrine'''|川原神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Ise Province]].
 
-== instance of (P31) ==
-
-* {{ill|Setsumatsusha|lt=setsumatsusha|en|Setsumatsusha|es|Setsumatsusha|fr|Setsumatsusha|ja|摂末社|zh|攝末社|qid=Q1071160}}
-* {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}}
-* {{ill|Shikinai Shosha|ja|式内小社|simple|Shikinai Shosha|qid=Q134917287}}
-* {{ill|Sessha|ltq=Q135009904|qid=Q135009904}}
-** P805: {{ill|Kōtai Jingū|lt=Kōtai Jingū|en|Kotai jingu|ja|皇大神宮|zh|皇大神宮|qid=Q11581011}}
-* {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}}
-* {{ill|Kokuhei-sha|qid=Q135160342|lt=Kokuhei-sha}}
-
-* {{ill|Shikinai Subshrine|ltq=Q135100459|qid=Q135100459}}
-
-== part of (P361) ==
-
-* {{ill|125 Shrines of Ise|ltq=Q16482760|qid=Q16482760}}
-* {{ill|List of Shikinaisha in Ise Province|lt=List of Shikinaisha in Ise Province|ja|伊勢国の式内社一覧|qid=Q11378973}}
-** Series ordinal: 40
-** P155: {{ill|Shitomi Shrine|lt=Shitomi Shrine|ja|志等美神社|qid=Q17212285}}
-** P156: {{ill|Yamazue Shrine|ltq=Q17223513|qid=Q17223513}}
-* {{ill|Kōtai Jingū|ltq=Q11581011|qid=Q11581011}}
-** P3831: {{ill|Sessha|lt=Sessha|ja|摂社|qid=Q135009904}}
-
-== located in the administrative territorial entity (P131) ==
-
-* {{ill|Ise, Mie|ltq=Q328067|qid=Q328067}}
-* {{ill|Ise Province|ltq=Q864166|qid=Q864166}}
-* {{ill|Watarai District|lt=Watarai district|ceb|Watarai-gun|ckb|گەڕەکی واتاری|en|Watarai District|es|Distrito de Watarai|fr|District de Watarai|id|Distrik Watarai, Mie|it|Distretto di Watarai|ja|度会郡|ko|와타라이군|pl|Powiat Watarai|uk|Повіт Ватарай|zh|度會郡|qid=Q1131032}}
-
-== coordinate location (P625) ==
-
-* {{coord|34.468539|136.666409}}
-
-== image (P18) ==
-
-* Kawara-jinja (Naiku) 01.jpg
-
-== dedicated to (P825) ==
-
-* {{ill|Tsukuyomi-no-Mikoto|qid=Q595520|lt=Tsukuyomi|ar|تسوكويومي|az|Tsukuyomi|bcl|Tsukuyomi|ca|Tsukuyomi|cs|Cukujomi|da|Tsuki-yomi|de|Tsukuyomi|el|Τσουκουγιόμι|en|Tsukuyomi-no-Mikoto|eo|Cukujomi|es|Tsukuyomi|eu|Tsukuyomi|fa|تسوکویومی|fi|Tsukuyomi|fr|Tsukuyomi|hr|Tsukuyomi|hu|Cukujomi|hy|Ցուկույոմի-նո-Միկոտո|id|Tsukuyomi|it|Tsukuyomi|ja|ツクヨミ|ko|츠쿠요미|mk|Цукујоми|mni|ꯁꯨꯀꯨꯌꯣꯃꯤ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|no|Tsukuyomi|pl|Tsukuyomi|pt|Tsukuyomi|ru|Цукиёми|sh|Tsukuyomi|simple|Tsukuyomi-no-Mikoto|sl|Cukijomi|sr|Цукујоми|su|Tsukuyomi|sv|Tsukuyomi|ta|சுக்குயோமி|th|สึกูโยมิ|tr|Tsukuyomi no Mikoto|uk|Цукуйомі|vi|Tsukuyomi|zh_min_nan|Tukuyomi|zh|月讀|qid=Q595520}}
-
-== Kokugakuin University Digital Museum entry ID (P13677) ==
-
-* 181147
-** P3831: {{ill|Kokugakuin University Shrine database|ltq=Q135159299|qid=Q135159299}}
-
-== architectural style (P149) ==
-
-* {{ill|Shinmei-zukuri|lt=Shinmei-zukuri|en|Shinmei-zukuri|es|Shinmeizukuri|fr|Shinmei-zukuri|ja|神明造|ru|Симмэй-дзукури|tr|Shinmei-zukuri|zh|神明造|qid=Q930545}}
-
-== country (P17) ==
-
-* {{ill|Japan|ltq=Q17|qid=Q17}}
-
-== different from (P1889) ==
-
-* {{ill|Kawara Shrine (Gekū)|ltq=Q17228197|qid=Q17228197}}
-
-== street address (P6375) ==
-
-* {'text': '三重県伊勢市佐八町', 'language': 'ja'}
-
-== parent organization or unit (P749) ==
-
-* {{ill|Kōtai Jingū|lt=Kōtai Jingū|en|Kotai jingu|ja|皇大神宮|zh|皇大神宮|qid=Q11581011}}
-
-[[ja:川原神社 (伊勢市)]]
-
-{{wikidata link|Q17209206|ja|川原神社 (伊勢市)|check_date=2026-05-17}}
-
-==Old translation==
-
 '''Kawara Shrine''' (川原神社, *Kawara Jinja*) is an auxiliary shrine (*sessha*) of the {{ill|Kōtai Jingū|ja|皇大神宮|zh|皇大神宮}} (Inner Shrine) of the [[Ise Grand Shrine]], located in [[Ise]], {{ill|Mie Prefecture|ace|Prefektur Mie|af|Mie-prefektuur|an|Prefectura de Mie|ar|ميه (محافظة)|ast|Prefeutura de Mie|az|Mie prefekturası|azb|میه اوستانی|ban|Préféktur Mié|be|Міэ|bg|Мие|bn|মিয়ে প্রশাসনিক অঞ্চল|ca|Prefectura de Mie|cdo|Mie-gâing|ce|Ми (префектура)|ceb|Mie-ken|ckb|پارێزگای میێ|cs|Prefektura Mie|cy|Mie (talaith)|da|Mie-præfekturet|de|Präfektur Mie|eo|Gubernio Mie|es|Prefectura de Mie|et|Mie prefektuur|eu|Mie (prefektura)|fa|استان میه|fi|Mien prefektuuri|fr|Préfecture de Mie|frr|Mie (Prefektüür)|ga|Maoracht Mie|gl|Prefectura de Mie|hak|Mie-yen|he|מיאה (מחוז)|hi|मिऐ प्रीफेक्चर|hr|Mie (prefektura)|hu|Mie prefektúra|hy|Միե (պրեֆեկտուրա)|id|Prefektur Mie|ilo|Prepektura ti Mie|it|Prefettura di Mie|ja|三重県|ka|მიეს პრეფექტურა|km|មីអិ(ខេត្ត)|ko|미에현|la|Mieensis|lt|Mijės prefektūra|lv|Mie prefektūra|mk|Мие (префектура)|mn|Миэ муж|mni|ꯃꯤꯏ ꯂꯝꯈꯥꯢ|mr|मिई प्रांत|ms|Wilayah Mie|ne|मिए|nl|Mie (prefectuur)|no|Mie (prefektur)|nov|Mie Prefekture|os|Миэ|pam|Prepektura ning Mie|pl|Prefektura Mie|pnb|ضلع مائی|pt|Mie|ro|Prefectura Mie|ru|Миэ|se|Mie prefektuvra|sh|Prefektura Mie|si|මියේ ප්‍රාන්තය|simple|Mie Prefecture|sk|Mie (prefektúra)|sr|Префектура Мије|su|Préféktur Mie|sv|Mie prefektur|sw|Mkoa wa Mie|tg|Префектураи Мие|th|จังหวัดมิเอะ|tl|Prepektura ng Mie|tr|Mie|tt|Ми (префектура)|uk|Префектура Міє|ur|میہ پریفیکچر|vi|Mie|war|Mie (prefektura)|wuu|三重县|zh|三重县|zh_classical|三重縣|zh_min_nan|Mie-koān|zh_yue|三重縣|qid=Q128196|lt=Mie Prefecture}}, Japan.
 
 == Overview ==
@@ -126,6 +55,10 @@ The shrine is located within a grove just off {{ill|Mie Prefectural Road Route 2
 * **By Bus:** Approximately a 12-minute walk (700 m) from the {{ill|Mie Kotsu|en|Mie Kotsu|qid=Q6843516|lt=Mie Kōtsū}} "Sochi" bus stop<ref name="ic3" />. From the bus stop, enter the alley opposite {{ill|Q11379036|ja|伊勢市立佐八小学校|12=simple|13=User:Immanuelle/Ise Municipal Sochi Elementary School|comment=changed title based on wikidata|qid=Q11379036}}, then follow the path along the rice fields to reach the shrine<ref name="ic3" />.
 * **By Train:** About 5.5 km from {{ill|Iseshi Station|en|Iseshi Station|qid=Q6079748|lt=Ise-shi Station}}, served by both {{ill|Central Japan Railway Company|en|Central Japan Railway Company|qid=Q513679|lt=JR Central}} {{ill|Sangū Line|en|Sangū Line|qid=Q872023|lt=Sangū Line}} and {{ill|Kintetsu Railway|af|Kintetsu|ar|كينتيتسو|arz|كينتيتسو|az|Kintetsu Railway|da|Kintetsu Railway|de|Kintetsu|eo|Kintetsu|es|Kintetsu|eu|Kintetsu|fa|راه‌آهن کینتتسو|fi|Kintetsu-rautatiet|fj|Kintetsu|fr|Kintetsu Corporation|fy|Kintetsu Railway|ha|Kintetsu Corporation|hu|Kintetsu Railway|is|Kintetsu Railway|it|Ferrovie Kintetsu|ja|近畿日本鉄道|jv|Kintetsu|ko|긴키 닛폰 철도|mr|किन्तेत्सु रेल्वे|nds|Kintetsu Railway|nl|Kintetsu|nn|Kintetsu Railway|no|Kintetsu Railway|oc|Kintetsu Railway|pl|Kintetsu|ps|کینکی نیپون ریل پټلۍ|pt|Kintetsu Corporation|ro|Kintetsu Railway|sa|किन्तेत्सु|su|Kintetsu|sv|Kintetsu Railway|th|รถไฟคินเท็ตสึ|ti|ኪንተትሱ|tr|Kintetsu Railway|ts|Kintetsu|wuu|近畿日本铁道|zh|近畿日本鐵道|zh_classical|近畿日本鐵道|zh_yue|近畿日本鐵道|qid=Q1531085|lt=Kintetsu}} {{ill|Yamada Line (Kintetsu)|en|Yamada Line (Kintetsu)|qid=Q900630|lt=Yamada Line}}<ref name="sk52" />.
 
+== Identifiers ==
+* **Street address:** 三重県伊勢市佐八町 (Mie Prefecture, Ise City, Sochi-cho)
+* **Kokugakuin University Digital Museum entry ID:** 181147
+
 == References ==
 <references responsive="0"></references>
 
@@ -148,93 +81,16 @@ The shrine is located within a grove just off {{ill|Mie Prefectural Road Route 2
 {{external media|align=|width=230px|religious_affiliation=[[Shinto]]|image1=[http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area05/area05_02.jpg 川原神社]}}
 
 * [http://www.jingukaikan.jp/125mairi/m06/0607.html 川原神社（かわらじんじゃ）] - 一般財団法人伊勢神宮崇敬会
-{{125 Shrines of Ise}}  
+{{125 Shrines of Ise}}
 
-== Japanese content ==
-{{Shrine
-|Name = Kawara Shrine
-|Image = [[File:Kawara-jinja (Naiku) 01.jpg|250px]]
-|Location = {{ill|Mie Prefecture|ace|Prefektur Mie|af|Mie-prefektuur|an|Prefectura de Mie|ar|ميه (محافظة)|ast|Prefeutura de Mie|az|Mie prefekturası|azb|میه اوستانی|ban|Préféktur Mié|be|Міэ|bg|Мие|bn|মিয়ে প্রশাসনিক অঞ্চল|ca|Prefectura de Mie|cdo|Mie-gâing|ce|Ми (префектура)|ceb|Mie-ken|ckb|پارێزگای میێ|cs|Prefektura Mie|cy|Mie (talaith)|da|Mie-præfekturet|de|Präfektur Mie|eo|Gubernio Mie|es|Prefectura de Mie|et|Mie prefektuur|eu|Mie (prefektura)|fa|استان میه|fi|Mien prefektuuri|fr|Préfecture de Mie|frr|Mie (Prefektüür)|ga|Maoracht Mie|gl|Prefectura de Mie|hak|Mie-yen|he|מיאה (מחוז)|hi|मिऐ प्रीफेक्चर|hr|Mie (prefektura)|hu|Mie prefektúra|hy|Միե (պրեֆեկտուրա)|id|Prefektur Mie|ilo|Prepektura ti Mie|it|Prefettura di Mie|ja|三重県|ka|მიეს პრეფექტურა|km|មីអិ(ខេត្ត)|ko|미에현|la|Mieensis|lt|Mijės prefektūra|lv|Mie prefektūra|mk|Мие (префектура)|mn|Миэ муж|mni|ꯃꯤꯏ ꯂꯝꯈꯥꯢ|mr|मिई प्रांत|ms|Wilayah Mie|ne|मिए|nl|Mie (prefectuur)|no|Mie (prefektur)|nov|Mie Prefekture|os|Миэ|pam|Prepektura ning Mie|pl|Prefektura Mie|pnb|ضلع مائی|pt|Mie|ro|Prefectura Mie|ru|Миэ|se|Mie prefektuvra|sh|Prefektura Mie|si|මියේ ප්‍රාන්තය|simple|Mie Prefecture|sk|Mie (prefektúra)|sr|Префектура Мије|su|Préféktur Mie|sv|Mie prefektur|sw|Mkoa wa Mie|tg|Префектураи Мие|th|จังหวัดมิเอะ|tl|Prepektura ng Mie|tr|Mie|tt|Ми (префектура)|uk|Префектура Міє|ur|میہ پریفیکچر|vi|Mie|war|Mie (prefektura)|wuu|三重县|zh|三重县|zh_classical|三重縣|zh_min_nan|Mie-koān|zh_yue|三重縣|qid=Q128196}}{{ill|Ise, Mie|Q328067|qid=Q328067}} Sōchi-chō {{ill|koaza|Q5327509|qid=Q5327509|lt=aza}} Sensui 1559
-|Coordinates = {{WikidataCoord}}
-|Enshrined deity = {{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi|Q595520|qid=Q595520|qid=Q595520|lt=Tsukuyomi no Mikoto no Mitama}}
-|Shrine rank = {{ill|Shikinaisha|fr|Shikinaisha|zh|式內社|qid=Q134917286|lt=Shikinaisha}} (minor)<br />{{ill|Kōtai Jingū|Q11581011|qid=Q11581011}} auxiliary shrine
-|Established = Before the 5th year of {{ill|Enchō|de|Enchō|fa|انچو|fr|Ère Enchō|ia|Encho|id|Enchō|ja|延長 (元号)|ko|엔초|ru|Энтё|simple|Enchō|sr|Енчо|tr|Enchō|uk|Ентьо|zh|延長 (日本)|zh_yue|延長 (年號)|qid=Q1327274|lt=Enchō}} ({{ill|927|ab|927|af|927|am|927 እ.ኤ.አ.|an|927|ar|927|ary|927|ast|927|avk|927|az|927|azb|۹۲۷ (میلادی)|bar|927|bcl|927|be|927|be_x_old|927|bg|927|bn|৯২৭|bpy|মারি ৯২৭|br|927|bs|927.|ca|927|cdo|927 nièng|ceb|927|ckb|٩٢٧|crh|927|cs|927|csb|927|cv|927|cy|927|da|927|de|927|el|927|eml|927|eo|927|es|927|et|927|eu|927|fa|۹۲۷ (میلادی)|fi|927|fo|927|fr|927|fy|927|ga|927|gan|927年|gd|927|gl|927|he|927|hi|927|hr|927.|ht|927 (almanak jilyen)|hu|927|hy|927|id|927|ilo|927|io|927|is|927|it|927|ja|927年|jv|927|ka|927|kaa|927|kk|927 жыл|ko|927년|la|927|lb|927|lij|927|lmo|927|lt|927 m.|lv|927. gads|map_bms|927|mdf|927|mg|927|mhr|927|mi|927|mk|927|mr|इ.स. ९२७|mrj|927 и|ms|927|mzn|۹۲۷|nah|927|nap|927|nds|927|new|सन् ९२७|nl|927|nn|927|no|927|nrm|927|nso|927|oc|927|or|୯୨୭|os|927-æм аз|pl|927|pnb|927|pt|927|qu|927|ro|927|ru|927 год|rue|927|sa|९२७|scn|927|sd|927ع|se|927|sh|927.|shn|927|si|927|sk|927|smn|927|sq|927|sr|927|su|927|sv|927|sw|927|tg|Соли 927|th|พ.ศ. 1470|tk|927|tl|927|tly|927|tr|927|tt|927 ел|uk|927|ur|927ء|uz|927|vec|927|vi|927|war|927|wuu|927年|xmf|927|zh|927年|zh_min_nan|927 nî|zh_yue|927年|qid=Q30470}})
-|Main hall style = {{ill|Shinmei-zukuri|Q930545|qid=Q930545}}
-|Other names =
-|Pilgrimage designation =
-|Annual festival =
-|Rituals = {{ill|Kannamesai Festival|Q11255045|qid=Q11255045}}
-|Map = {{Location map|Japan Mie|label=Kawara Shrine|position=bottom|width=180|mark=Shinto torii icon vermillion.svg|marksize=15|float=center|caption=}}
-{{maplink2|frame=yes|plain=yes|type=point|zoom=12|marker=religious-shinto|frame-align=center|frame-width=180|frame-height=200}}
-}}
-'''Kawara Shrine''' (かわらじんじゃ) is an {{ill|Setsumatsusha|Q1071160|qid=Q1071160|lt=sessha}} of {{ill|Ise Grand Shrine|Q687168|qid=Q687168}}{{ill|Kōtai Jingū|Q11581011|qid=Q11581011}} (Inner Shrine).
+[[ja:川原神社 (伊勢市)]]
 
-=== Overview ===
-It ranks 20th among the 27 auxiliary shrines of the Inner Shrine.<ref>Ujiyamada City Office, ed. (1929): pp. 9–11</ref>
+{{wikidata link|Q17209206|ja|川原神社 (伊勢市)|check_date=2026-05-17}}
 
-It is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945}} designated by {{ill|Yamatohime-no-mikoto|Q4388732|qid=Q4388732}}, and the {{ill|Saijin|Q11591100|qid=Q11591100}} is said to be the {{ill|Guardian deities|ja|守護神|qid=Q131278957}} of the {{ill|Miya River (Mie)|Q6884164|qid=Q6884164}}.<ref name="ic">Ise Bunka-sha, ed. (2008): p. 70</ref><ref name="gk">Gakken Publishing (2013): p. 71</ref>
-
-The shrine is located on the east bank of the Miyagawa River,<ref name="gk"/> at 1559 Sensui, aza Sōchi, Sōchi-chō, {{ill|Ise, Mie|Q328067|qid=Q328067}}, {{ill|Mie Prefecture|ace|Prefektur Mie|af|Mie-prefektuur|an|Prefectura de Mie|ar|ميه (محافظة)|ast|Prefeutura de Mie|az|Mie prefekturası|azb|میه اوستانی|ban|Préféktur Mié|be|Міэ|bg|Мие|bn|মিয়ে প্রশাসনিক অঞ্চল|ca|Prefectura de Mie|cdo|Mie-gâing|ce|Ми (префектура)|ceb|Mie-ken|ckb|پارێزگای میێ|cs|Prefektura Mie|cy|Mie (talaith)|da|Mie-præfekturet|de|Präfektur Mie|eo|Gubernio Mie|es|Prefectura de Mie|et|Mie prefektuur|eu|Mie (prefektura)|fa|استان میه|fi|Mien prefektuuri|fr|Préfecture de Mie|frr|Mie (Prefektüür)|ga|Maoracht Mie|gl|Prefectura de Mie|hak|Mie-yen|he|מיאה (מחוז)|hi|मिऐ प्रीफेक्चर|hr|Mie (prefektura)|hu|Mie prefektúra|hy|Միե (պրեֆեկտուրա)|id|Prefektur Mie|ilo|Prepektura ti Mie|it|Prefettura di Mie|ja|三重県|ka|მიეს პრეფექტურა|km|មីអិ(ខេត្ត)|ko|미에현|la|Mieensis|lt|Mijės prefektūra|lv|Mie prefektūra|mk|Мие (префектура)|mn|Миэ муж|mni|ꯃꯤꯏ ꯂꯝꯈꯥꯢ|mr|मिई प्रांत|ms|Wilayah Mie|ne|मिए|nl|Mie (prefectuur)|no|Mie (prefektur)|nov|Mie Prefekture|os|Миэ|pam|Prepektura ning Mie|pl|Prefektura Mie|pnb|ضلع مائی|pt|Mie|ro|Prefectura Mie|ru|Миэ|se|Mie prefektuvra|sh|Prefektura Mie|si|මියේ ප්‍රාන්තය|simple|Mie Prefecture|sk|Mie (prefektúra)|sr|Префектура Мије|su|Préféktur Mie|sv|Mie prefektur|sw|Mkoa wa Mie|tg|Префектураи Мие|th|จังหวัดมิเอะ|tl|Prepektura ng Mie|tr|Mie|tt|Ми (префектура)|uk|Префектура Міє|ur|میہ پریفیکچر|vi|Mie|war|Mie (prefektura)|wuu|三重县|zh|三重县|zh_classical|三重縣|zh_min_nan|Mie-koān|zh_yue|三重縣|qid=Q128196}}.<ref name="tm">Tatsumi Publishing (2013): p. 76</ref> The place name “Sōchi” means “marshland,” indicating that wetlands from the Miyagawa once existed there.<ref name="gk"/> There are also records stating that rice was offered from Sōchi to the Inner Shrine.<ref name="sk6">Shikinaisha Research Association, ed. (1990): p. 346</ref>
-
-The shrine name appears as “Kawara Shrine” in the *Kōtaijingū Gishikichō*, while other sources list it as “Kawara Shrine” or “Kawara-sha.” Records state that local residents referred to it as “Senzui” (river water, spring water), “Odago,” or “Yagura.”<ref name="sk5">Shikinaisha Research Association, ed. (1990): p. 345</ref>
-
-=== Precincts ===
-The shrine grounds cover an {{ill|Area|Q11500|qid=Q11500}} of 3,219 {{ill|Square metre|Q25343|qid=Q25343|lt=m<sup>2</sup>}}.<ref name="sk7">Shikinaisha Research Association, ed. (1990): p. 347</ref> The {{ill|keidai|Q11429002|qid=Q11429002}} form a tranquil space filled with dappled sunlight, birdsong, and the murmur of the river.<ref name="ic"/> Trees such as {{ill|Chamaecyparis obtusa|Q917187|qid=Q917187}}, {{ill|Camphora officinarum|Q158722|qid=Q158722}}, {{ill|Cyclobalanopsis|Q796117|qid=Q796117}}, {{ill|Machilus thunbergii|Q5792073|qid=Q5792073}}, and {{ill|Ilex latifolia|Q2706373|qid=Q2706373}} grow densely within the grounds.<ref name="sk7"/>
-
-=== Enshrined deity ===
-The enshrined deity is {{ill|Tsukuyomi-no-Mikoto|lt=Tsukuyomi|Q595520|qid=Q595520|qid=Q595520|lt=Tsukuyomi no Mikoto no Mitama}}.<ref name="ic"/> This is the same {{ill|Kami|Q524158|qid=Q524158|lt=kami}} worshipped at the {{ill|UNKNOWN|lt=Tsukiyomi-no-miya}} and {{ill|Tsukiyomi-no-Miya (Gekū)|Q11516023|qid=Q11516023}}, among the 125 shrines of Ise Grand Shrine.<ref name="tm"/> While Tsukuyomi is generally regarded as a {{ill|Moon|Q405|qid=Q405}} deity, the moon and {{ill|Water|Q283|qid=Q283}} are considered closely related, and in the context of Kawara Shrine, Tsukuyomi no Mikoto no Mitama is regarded as a river deity.<ref name="ic"/>
-
-In addition to sharing the same enshrined deity, there is a theory that Sōchi-chō, where Kawara Shrine is located, and Nakamura-chō, where Tsukiyomi Shrine is located, were both deeply connected through the {{ill|Arakida clan|Q11618716|qid=Q11618716}}.<ref name="sk6"/>
-
-=== History ===
-According to tradition, {{ill|Yamatohime-no-mikoto|Q4388732|qid=Q4388732}} was welcomed here by Ōwakako-no-Mikoto and traveled down the Miyagawa River by boat.<ref name="ic"/> Regarding its establishment, based on the definition of auxiliary shrines of Ise Grand Shrine, it is believed to have been founded before the compilation of the *{{ill|Engishiki Jinmyōchō|Q11064932|qid=Q11064932}}*, that is, before the 5th year of {{ill|Enchō|de|Enchō|fa|انچو|fr|Ère Enchō|ia|Encho|id|Enchō|ja|延長 (元号)|ko|엔초|ru|Энтё|simple|Enchō|sr|Енчо|tr|Enchō|uk|Ентьо|zh|延長 (日本)|zh_yue|延長 (年號)|qid=Q1327274|lt=Enchō}} ({{ill|927|ab|927|af|927|am|927 እ.ኤ.አ.|an|927|ar|927|ary|927|ast|927|avk|927|az|927|azb|۹۲۷ (میلادی)|bar|927|bcl|927|be|927|be_x_old|927|bg|927|bn|৯২৭|bpy|মারি ৯২৭|br|927|bs|927.|ca|927|cdo|927 nièng|ceb|927|ckb|٩٢٧|crh|927|cs|927|csb|927|cv|927|cy|927|da|927|de|927|el|927|eml|927|eo|927|es|927|et|927|eu|927|fa|۹۲۷ (میلادی)|fi|927|fo|927|fr|927|fy|927|ga|927|gan|927年|gd|927|gl|927|he|927|hi|927|hr|927.|ht|927 (almanak jilyen)|hu|927|hy|927|id|927|ilo|927|io|927|is|927|it|927|ja|927年|jv|927|ka|927|kaa|927|kk|927 жыл|ko|927년|la|927|lb|927|lij|927|lmo|927|lt|927 m.|lv|927. gads|map_bms|927|mdf|927|mg|927|mhr|927|mi|927|mk|927|mr|इ.स. ९२७|mrj|927 и|ms|927|mzn|۹۲۷|nah|927|nap|927|nds|927|new|सन् ९२७|nl|927|nn|927|no|927|nrm|927|nso|927|oc|927|or|୯୨୭|os|927-æм аз|pl|927|pnb|927|pt|927|qu|927|ro|927|ru|927 год|rue|927|sa|९२७|scn|927|sd|927ع|se|927|sh|927.|shn|927|si|927|sk|927|smn|927|sq|927|sr|927|su|927|sv|927|sw|927|tg|Соли 927|th|พ.ศ. 1470|tk|927|tl|927|tly|927|tr|927|tt|927 ел|uk|927|ur|927ء|uz|927|vec|927|vi|927|war|927|wuu|927年|xmf|927|zh|927年|zh_min_nan|927 nî|zh_yue|927年|qid=Q30470}}).<ref name="ic2">Ise Bunka-sha, ed. (2008): p. 22</ref> According to the *Daijingū-shiki*, it was designated as one of the shrines involved in repairs by the {{ill|Gūji|Q11453500|qid=Q11453500}}, and it received offerings during the Kinensai and Kannamesai festivals.<ref name="sk5"/> However, during the {{ill|Sengoku period|Q204023|qid=Q204023|lt=Sengoku period}}, {{ill|Saitan-sai|Q11546824|qid=Q11546824}} were discontinued,<ref name="tm"/> and the shrine grounds fell into ruin.<ref name="sk5"/> The hereditary priests ({{ill|Gūji|Q11453500|qid=Q11453500|lt=hafuri}}) who had been appointed until then also died out.<ref name="sk6"/>
-
-In the 3rd year of {{ill|Kanbun (era)|Q1146228|qid=Q1146228}} ({{ill|1663|Q7577|qid=Q7577}}), {{ill|Kiyonaga Kawabe|Q92924151|qid=Q92924151|lt=Kawabe Kiyonaga}} restored the shrine at Sōchi.<ref name="sk5"/> On the 9th day of the 9th month (lunar calendar; {{ill|Gregorian calendar|Q12138|qid=Q12138}}: {{ill|October 9|ab|Жьҭаарамза 9|af|9 Oktober|als|9. Oktober|alt|Ӱлӱрген айдыҥ 9 кӱни|am|9 October|an|9 d'octubre|ar|9 أكتوبر|ary|9 أكتوبر|arz|9 اكتوبر|as|৯ অক্টোবৰ|ast|9 d'ochobre|av|9 октябрь|avk|9-e ke saneaksat|az|9 oktyabr|azb|۹ اوْکتوبر|ba|9 октябрь|ban|9 Oktober|bat_smg|Spalė 9|bcl|Oktobre 9|be|9 кастрычніка|be_x_old|9 кастрычніка|bg|9 октомври|bh|9 अक्टूबर|bjn|9 Uktubir|bn|৯ অক্টোবর|bo|ཟླ་༡༠ཚེས་༩ཉིན་|bpy|অক্টোবর ৯|br|9 Here|bs|9. oktobar|bxr|10 һарын 9|ca|9 d'octubre|cdo|10 nguŏk 9 hô̤|ce|9 октябрь|ceb|Oktubre 9|ckb|٩ی تشرینی یەکەم|co|9 uttrovi|cs|9. říjen|csb|9 pazdzérznika|cv|Юпа, 9|cy|9 Hydref|da|9. oktober|de|9. Oktober|diq|9 Tışrino Verên|dv|އޮކްޓޫބަރު 9|el|9 Οκτωβρίου|eml|9 d'utóber|eo|9-a de oktobro|es|9 de octubre|et|9. oktoober|eu|Urriaren 9|ext|9 outubri|fa|۹ اکتبر|fi|9. lokakuuta|fiu_vro|9. rehekuu päiv|fo|9. oktober|fr|9 octobre|frp|9 d’octobro|frr|9. Oktuuber|fur|9 di Otubar|fy|9 oktober|ga|9 Deireadh Fómhair|gag|9 Canavar ay|gan|10月9號|gd|9 an Dàmhair|gl|9 de outubro|gn|9 jasypa|gor|9 Oktober|gu|ઓક્ટોબર ૯|gv|9 Jerrey Fouyir|hak|10-ngie̍t 9-ngit|he|9 באוקטובר|hi|९ अक्टूबर|hif|9 October|hr|9. listopada|hsb|9. oktobra|ht|9 oktòb|hu|Október 9.|hy|Հոկտեմբերի 9|hyw|9 Հոկտեմբեր|ia|9 de octobre|id|9 Oktober|ie|9 octobre|ig|9 Ọktoba|ilo|Oktubre 9|io|9ma di oktobro|is|9. október|it|9 ottobre|ja|10月9日|jv|9 Oktober|ka|9 ოქტომბერი|kaa|9-oktyabr|kab|9 tuber|kk|9 қазан|kn|ಅಕ್ಟೋಬರ್ ೯|ko|10월 9일|krc|9 октябрь|ks|اَکتوٗبَر 9|ksh|9. Oktoober|ku|9ê çiriya pêşîn|kv|Йирым тӧлысь 9-ӧд лун|la|9 Octobris|lb|9. Oktober|li|9 oktober|lij|9 òtôbre|lmo|09 10|lo|9 ຕຸລາ|lt|Spalio 9|lv|9. oktobris|mai|९ अक्टुबर|mg|9 Oktobra|mhr|9 шыжа|mk|9 октомври|ml|ഒക്ടോബർ 9|mn|10 сарын 9|mr|ऑक्टोबर ९|ms|9 Oktober|my|၉ အောက်တိုဘာ|myv|Ожоковонь 9 чи|mzn|۹ اکتبر|nah|9 metztli octubre|nap|9 'e ottovre|nds|9. Oktober|nds_nl|9 oktober|ne|९ अक्टोबर|new|अक्टोबर ९|nl|9 oktober|nn|9. oktober|no|9. oktober|nrm|9 Octobre|nso|Diphalane 9|oc|9 d'octobre|olo|9. ligakuudu|or|୯ ଅକ୍ଟୋବର|pa|9 ਅਕਤੂਬਰ|pag|Oktubre 9|pam|Octubri 9|pap|9 di òktober|pl|9 października|pnb|9 اکتوبر|pnt|9 Τρυγομηνά|ps|9 اکتوبر|pt|9 de outubro|qu|9 ñiqin kantaray killapi|ro|9 octombrie|ru|9 октября|rue|9. октобер|sa|९ अक्तूबर|sah|Алтынньы 9|scn|9 di uttùviru|sco|9 October|sd|9 آڪٽوبر|se|Golggotmánu 9.|sh|9. oktobra|shn|ဢွၵ်ႇထူဝ်ႇပႃႇ 9|si|ඔක්තොම්බර් 9|simple|October 9|sk|9. október|sl|9. oktober|smn|Roovvâdmáánu 9.|sn|Gumiguru 9|sq|9 tetor|sr|9. октобар|stq|9. Oktober|su|9 Oktober|sv|9 oktober|sw|9 Oktoba|szl|9 paźdźerńika|ta|அக்டோபர் 9|te|అక్టోబర్ 9|tg|9 октябр|th|9 ตุลาคม|tk|9 oktýabr|tl|Oktubre 9|tly|9 Oktjabr|tr|9 Ekim|tt|9 октябрь|tyv|9 Он ай|udm|9 коньывуон|uk|9 жовтня|ur|9 اکتوبر|uz|9-oktyabr|vec|9 de otobre|vi|9 tháng 10|vls|9 oktober|vo|Tobul 9|wa|9 d' octôbe|war|Oktubre 9|wuu|10月9号|xal|Хулһан сарин 9|xmf|9 გჷმათუთა|yi|9טן אקטאבער|yo|9 October|za|10 nyied 9 hauh|zea|9 oktober|zh|10月9日|zh_classical|公曆十月九日|zh_min_nan|10 goe̍h 9 ji̍t|zh_yue|10月9號|qid=Q2923}}, 1663), the {{ill|Gūji|Q11453500|qid=Q11453500}} were constructed, and on the 12th day of the 12th month (lunar calendar; Gregorian: {{ill|January 10|Q2243|qid=Q2243}}, {{ill|1664|Q7581|qid=Q7581}}), the deity was ceremonially transferred ({{ill|Sengyo|Q24892914|qid=Q24892914}}).<ref name="sk5"/> At that time, families that had formerly served as hereditary priests were sought out and reinstated.<ref name="sk6"/> During the restoration, local traditions and place names were referenced, but there is also a theory that Takehana Shrine in present-day Takegahana-chō, Ise City, or {{ill|Kawarabuchi Shrine|Q17209232|qid=Q17209232}} in {{ill|Funae|ja|船江 (伊勢市)|qid=Q17213313}} may have been the original site.<ref name="tm"/> Since a subsequent deity transfer on the 29th day of the 3rd month of the 7th year of {{ill|Genroku|Q1325001|qid=Q1325001}} (lunar calendar; Gregorian: {{ill|April 23|Q2527|qid=Q2527}}, {{ill|1694|Q7694|qid=Q7694}}), the shrine site has not moved.<ref name="sk5"/>
-
-The shrine buildings were rebuilt in November {{ill|1908|Q2056|qid=Q2056}} ({{ill|Meiji era|Q3125096|qid=Q3125096}} 41).<ref>Ujiyamada City Office, ed. (1929): p. 11</ref> They were subsequently rebuilt again in May {{ill|1960|Q3754|qid=Q3754}} ({{ill|Shōwa era|Q327567|qid=Q327567}} 35), and repairs were carried out in September {{ill|1983|Q2434|qid=Q2434}} (Shōwa 58).<ref name="sk6"/>
-
-=== Rituals ===
-During the Kinensai, {{ill|Tsukinami-no-Matsuri|ja|月次祭|simple|Tsukinami-no-Matsuri|qid=Q11516161}} (June and December), {{ill|Kannamesai Festival|Q11255045|qid=Q11255045}}, {{ill|Niiname-no-Matsuri|de|Niiname-sai|fr|Niiname-no-Matsuri|id|Niiname-no-Matsuri|ja|新嘗祭|ko|신상제 (11월)|simple|Niiname-no-Matsuri|qid=Q11501518}}, and extraordinary festivals, {{ill|Kannushi|Q60523|qid=Q60523}} present {{ill|Shinsen|Q11591045|qid=Q11591045|lt=shinsen}} and {{ill|Hanpei|Q11481885|qid=Q11481885}} before the shrine. For rites such as the {{ill|Saitan-sai|Q11546824|qid=Q11546824}}, remote worship is performed at the Inner Shrine’s Gojōden Hall.<ref name="sk6"/>
-
-=== Access ===
-The shrine is situated in a forest slightly off {{ill|Mie Prefectural Road Route 22|Q11357908|qid=Q11357908}}.<ref>Shikinaisha Research Association, ed. (1990): pp. 346–347</ref>
-
-* About a 12-minute walk (700 {{ill|Metre|Q11573|qid=Q11573|lt=m}}) from the “Sōchi” {{ill|Bus stop|Q953806|qid=Q953806}} on a {{ill|Mie Kotsu|Q6843516|qid=Q6843516}} {{ill|Transit bus|Q1373492|qid=Q1373492}}.<ref name="ic"/> Enter the alley opposite {{ill|Ise Municipal Sōchi Elementary School|Q11379036|qid=Q11379036}} near the bus stop and follow the rice paddies to reach the precincts.<ref name="ic"/>
-* Approximately 5.5 {{ill|Kilometre|Q828224|qid=Q828224|lt=km}} from {{ill|Iseshi Station|Q6079748|qid=Q6079748}} on the {{ill|Sangū Line|Q872023|qid=Q872023}} of {{ill|Central Japan Railway Company|Q513679|qid=Q513679}} or the {{ill|Yamada Line (Kintetsu)|Q900630|qid=Q900630}} of {{ill|Kintetsu Railway|af|Kintetsu|ar|كينتيتسو|arz|كينتيتسو|az|Kintetsu Railway|da|Kintetsu Railway|de|Kintetsu|eo|Kintetsu|es|Kintetsu|eu|Kintetsu|fa|راه‌آهن کینتتسو|fi|Kintetsu-rautatiet|fj|Kintetsu|fr|Kintetsu Corporation|fy|Kintetsu Railway|ha|Kintetsu Corporation|hu|Kintetsu Railway|is|Kintetsu Railway|it|Ferrovie Kintetsu|ja|近畿日本鉄道|jv|Kintetsu|ko|긴키 닛폰 철도|mr|किन्तेत्सु रेल्वे|nds|Kintetsu Railway|nl|Kintetsu|nn|Kintetsu Railway|no|Kintetsu Railway|oc|Kintetsu Railway|pl|Kintetsu|ps|کینکی نیپون ریل پټلۍ|pt|Kintetsu Corporation|ro|Kintetsu Railway|sa|किन्तेत्सु|su|Kintetsu|sv|Kintetsu Railway|th|รถไฟคินเท็ตสึ|ti|ኪንተትሱ|tr|Kintetsu Railway|ts|Kintetsu|wuu|近畿日本铁道|zh|近畿日本鐵道|zh_classical|近畿日本鐵道|zh_yue|近畿日本鐵道|qid=Q1531085}}.<ref name="sk5"/>
-
-=== Footnotes ===
-{{Footnote help}}
-{{Reflist|2}}
-
-=== References ===
-* {{ill|Ise Bunka-sha|Q11379080|qid=Q11379080}}, ed., *Oise-san 125-sha Meguri*, supplement *Isebito*, Ise Bunka-sha, December 23, 2008, 151 pp. ISBN 978-4-900759-37-4
-* Ujiyamada City Office, ed., *History of Ujiyamada City, Vol. 1*, Ujiyamada City Office, January 20, 1929, 862 pp.
-* {{ill|UNKNOWN|lt=Gakken Publishing}} ed., *Let’s Go to Ise Grand Shrine*, Gakken Mook Shrine Travel Selection vol. 1, supervised by {{ill|Minoru Sonoda|Q11622218|qid=Q11622218}}, Gakken Marketing, July 4, 2013, 82 pp. ISBN 978-4-05-610047-1
-* Shikinaisha Research Association, ed., *Shikinaisha Survey Report, Vol. 6: Tōkaidō 1*, {{ill|Kogakkan University|Q1797584|qid=Q1797584}} Press, February 28, 1990, 690 pp. ISBN 4-87644-080-8
-* *Ise Grand Shrine and Its 125 Shrines Every Japanese Should Know*, Tatsumi Mook, {{ill|Tatsumi Publishing|Q4050754|qid=Q4050754}}, November 1, 2013, 127 pp. ISBN 978-4-7778-1197-7
-
-=== Related articles ===
-* {{ill|List of Shikinaisha in Ise Province|Q11378973|qid=Q11378973}}
-* {{ill|125 Shrines of Ise|Q16482760|qid=Q16482760}}
-* {{ill|Kawara Shrine (Gekū)|Q17228197|qid=Q17228197}} – an auxiliary shrine of {{ill|Toyōke Daijingū|Q11633343|qid=Q11633343}} (Outer Shrine) of Ise Grand Shrine.
-* {{ill|Miyamoto|Q17176570|qid=Q17176570}}
-
-=== External links ===
-{{external media
-| align =
-| width = 230px
-| image1 = [http://www.sengukan.jp/wp-content/themes/sengukan/images/shrine/area05/area05_02.jpg Kawara Shrine]
-}}
-* [http://www.jingukaikan.jp/125mairi/m06/0607.html Kawara Shrine (Kawara Jinja)] – Ise Grand Shrine Worshippers Association
-
-{{Ise Grand Shrine 125 Shrines}}
-{{Shinto sidebar}}
-
-== Categories ==
-[[Category:Wikidata generated shikinaisha pages|Kawara Shrine (Naikū)]][[Category:Shikinaisha|Kawara Shrine (Naikū)]][[Category:Shikinaisha|Kawara Shrine (Naikū)]][[Category:Sessha]]
+[[Category:Wikidata generated shikinaisha pages|Kawara Shrine (Naikū)]]
+[[Category:Shikinaisha|Kawara Shrine (Naikū)]]
+[[Category:Sessha]]
 [[Category:Shikinaisha in Ise Province]]
 [[Category:Shinto shrines in Ise City]]
 [[Category:125 Shrines of Ise]]
-[[Category:Shikinaisha in Ise Province]]
 [[Category:Setsumatsusha]]
-[[Category:Pages with duplicated content]]
