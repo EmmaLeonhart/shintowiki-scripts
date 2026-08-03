@@ -422,14 +422,14 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   only REMOVES, and only acts on items where a fresh SPARQL query *confirms the
   add already landed*. Never add+remove in one action — under the random run
   order the remove could fire before the add, losing data.
-- **WIKIDATA FREEZE until 2026-08-04** (week-long hiatus, Emma 2026-07-28).
+- **WIKIDATA FREEZE until 2026-08-10** (week-long stop, Emma 2026-08-03).
   `cleanup-loop.yml`'s window-gate forces `wikidata-daily-fire=false` while
   `FREEZE_WIKIDATA_UNTIL` is in the future, so the QS submission and its
   `direct_daily_edits.py` fallback never run — on any trigger, including
   `workflow_dispatch`. Do not edit Wikidata (by any means) during a freeze; do
   not shorten one without Emma's say-so. To extend, push the date out in
   `cleanup-loop.yml` and update this line. (Prior freezes: 2026-05-23→06-06
-  two weeks; 2026-07-18→07-20 24h.)
+  two weeks; 2026-07-18→07-20 24h; 2026-07-28→08-04 week.)
 - This rule was added 2026-05-23 after bespoke direct-API editors
   (P459/kana qualifier scripts with descriptive summaries) were built and run;
   they were deleted. Don't reintroduce that shape.
