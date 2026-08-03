@@ -37,31 +37,76 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A0. 🖥️ DESKTOP-GATED (front of queue) — name-in-kana → label pipeline
+## A0. 🖥️ DESKTOP HANDOFF (front of queue · later today 2026-08-03) — name-in-kana → label pipeline
 
-Emma 2026-08-03. **Distinct from the kana-*qualifier* cleanup** (`generate_kana_qualifier_add.py`,
-Engishiki-only, fixing the ~1yr-old error where ancient-Japanese *katakana* readings from the imported
-Engishiki-chapter tables landed in top-level P1814 — wrong; P1814 wants the modern *hiragana* reading.
-That work relocates the old reading onto the ojp-hani P1448 as a カミノヤシロ qualifier and strips it from
-top-level, leaving those items with NO proper modern P1814). THIS item is the *new* work: give shrines a
-correct modern P1814 from their jawiki lead, as a new stage of the **label** pipeline (feeds romaji/label
-gen; may overwrite Indonesian-seed + some queued labels → front of queue). Not gated on Miraheze (jawiki +
-Wikidata + local pipeline); needs a desktop for the all-article download + local pipeline run.
-- Kana is not regex-extractable → Claude reads the jawiki **lead** and returns it.
-- **Desktop phase (local):** target = shrines with a jawiki article but no top-level P1814. Bucket (a)
-  HAS en label → most likely to carry romanization-derived errors (includes already-queued); bucket (b)
-  NO en label but scheduled → download article, extract kana, locally generate BOTH P1814 and the new en
-  label, enqueue both.
-- **CI/CD phase (items with no queued en label):** insert a new label-pipeline step BETWEEN "check
-  P1814" and the same-name/disambig step: save jawiki article → Claude extracts kana → make P1814 →
-  continue normally.
-- Ships as QS (`Qxxx|P1814|"…"|S143|Q177837|S4656|"<jawiki url>"`), drained by the daily submitter;
-  generation is NOT blocked by the 2026-08-10 Wikidata freeze — only submission is.
-- **Gating (Emma 2026-08-03): do NOT over-gate on confidence.** The LLM path is high-quality; the
-  priority is that it *produces* a kana reading (regex fidelity is not the point). The one concrete
-  filter: the **local step should exclude any candidate that is katakana** — P1814 wants the modern
-  *hiragana* reading, and katakana signals the ancient-reading error, not a modern name-in-kana.
-- **Desktop phase expected later today (2026-08-03)** per Emma.
+**What it is.** Give shrines a correct *modern hiragana* P1814 (name in kana), extracted by Opus from the
+jawiki lead, as a new stage of the **label** pipeline. Name-in-kana is in almost every jawiki article but
+is NOT reliably regex-extractable (furigana / bold-reading parsing is fragile) — that fragility is exactly
+why the LLM step earns its place. This feeds romaji/label generation and may overwrite the Indonesian-seed
+labels and some queued labels → that's why it's front of queue. Not gated on Miraheze (jawiki reads +
+Wikidata + local pipeline), so the 403 blackout doesn't touch it; it needs a **desktop** for the
+all-article download + local pipeline run.
+
+**⚠️ Do NOT confuse with the kana-*qualifier* cleanup.** `generate_kana_qualifier_add.py` / `_remove.py`
+is Engishiki-only, undoing the ~1yr-old error where ancient-Japanese *katakana* readings (from the
+Engishiki-chapter tables Emma put on jawiki) landed in top-level P1814 — wrong; P1814 wants modern
+*hiragana*. That cleanup relocates the old reading onto the ojp-hani P1448 as a カミノヤシロ qualifier and
+strips it from top-level, leaving those Engishiki items with NO modern P1814.
+**Collision risk on the shared Engishiki items:** the new writer and the cleanup both touch P1814. Use
+add-first / remove-later (two scripts; the remove only fires after a fresh SPARQL confirms the add landed —
+CLAUDE.md rule), and gate the new writer so it never re-introduces what the cleanup is stripping. Get
+Emma's eyes on this ordering before running the Engishiki subset.
+
+**Target set (SPARQL).** Shinto shrines (`?item wdt:P31 wd:Q845945`) with a jawiki sitelink and NO
+top-level P1814. Reuse the `all_shrines()` SPARQL shape in
+`modern-quickstatements/generate_bunrei_quickstatements.py` (query-main endpoint, UA-compliant). Two
+buckets:
+- **(a) HAS en label** — most likely to carry romanization-derived errors (includes already-queued
+  labels). Highest priority.
+- **(b) NO en label but scheduled** — download the article, extract kana, and locally generate BOTH the
+  P1814 and the new en label; enqueue both.
+
+**Local pipeline (desktop):**
+1. Download the jawiki **lead** for each target (lead is enough — the reading sits in the first sentence).
+2. Opus extracts the kana reading.
+3. **THE gate: exclude any katakana candidate** — P1814 wants modern hiragana; katakana signals the
+   ancient-reading error. Otherwise do NOT over-gate on confidence (Emma): the LLM path is high-quality and
+   *producing* kana is the priority. (If quality holds, the katakana exclusion may be all the gating we need.)
+4. For bucket (b), also generate the en label — reuse `shinto-label-generator/` (`language_registry.py`,
+   `generate_multilang_quickstatements.py`; `modern-quickstatements/kana_english.py` for kana→romaji) and
+   drip via `select_label_proposals.py`.
+5. Enqueue: P1814 line(s) into an atomic `.txt`; new en labels into the label-proposal drip.
+
+**QS output.** `Qxxx|P1814|"<hiragana>"|S143|Q177837|S4656|"<jawiki url>"`, drained by the daily submitter.
+Generation is NOT blocked by the 2026-08-10 Wikidata freeze — only submission is, so staging now is fine.
+
+**CI/CD phase (items with no queued en label).** A new label-pipeline step BETWEEN "check P1814" and the
+same-name/disambig step: save the jawiki article to Claude → extract kana → make P1814 → continue normally.
+Model it on the `remote_queue.py` answer-marker + collector pattern (builder writes a work-file = lead +
+`<!-- ANSWER: -->` marker; the remote routine fills it; a `collect_*` script turns answers into QS) — same
+shape as `collect_label_typo_answers.py` / `collect_category_translations.py`.
+
+## A0b. 🖥️ DESKTOP (later today 2026-08-03) — Beppyo Shrine Opus Pass: mother house (P612)
+
+**What it is.** Mother house (P612) is present in only a *minority* of articles and is essentially NEVER
+cleanly regex-extractable — there's no structured field for it. An LLM pass can find it on *some* articles
+(complicated, but doable). Concrete plan (Emma): download every **Beppyo shrine** (別表神社) Japanese
+and/or English article and run a **local Opus pass** to extract the mother house / 総本社 / 勧請 origin.
+**Large shrines first, then move down** (may extend downward later). This produces the more-specifically-
+sourced, in-depth *individual* P612 lines — the indefinite layer that sits beneath the coarse
+suffix-network heads.
+
+- **Output:** P612 QS lines, one statement per branch, `P1013 = Q195793` in the same statement + a
+  jawiki/enwiki citation. Follow the P612 invariant in `docs/wikidata_shrine_festival_model.md` (ONE P612,
+  criterion-used qualifier, never a bare P612). Drains via the daily submitter (freeze-gated on submission
+  only).
+- **Beppyo set:** SPARQL the 別表神社 membership — **confirm the exact Wikidata QID / route before
+  running; do not guess it.**
+- **Keep the suffix-based generator (`generate_bunrei_quickstatements.py`) but time-box it to ~6 months,
+  then STOP** (Emma). P612 is about *establishing the convention* on Wikidata, not perpetual maintenance;
+  once established it's more likely to be picked up by better-equipped editors, and the individual lines
+  are the indefinite layer.
+- **A more organized extraction technique is a job for Topaz (Emma's other tool), NOT this repo.**
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 
@@ -154,12 +199,9 @@ All registered atomic files are staged-but-not-delivered by design until `confli
   Kikuna restoration is already queued to our item Q134926804. `docs/bruno_plus_analysis_2026-07.md`.
 - **Bunrei paper sources** — 神社本庁『全国神社祭祀祭礼総合調査』(1995) etc.; needs a library, not
   scrapeable. Online 総本社 sources are exhausted (~10,650 cited edges).
-- **Mother house (P612) stays FIXED / time-boxed — Emma 2026-08-03, do NOT make it perpetual.** The
-  point is to *establish the convention* on Wikidata, not maintain it forever. Preference: if the
-  suffix-based (shrine-ending) generator is ever set to run continuously, let it generate ~6 months
-  then STOP. Once the convention is established, better-equipped editors are more likely to pick it up,
-  and the per-branch individual P612 lines are the more in-depth, indefinite layer anyway. (An
-  LLM-jawiki-intake extractor is "not exactly wrong" but is NOT wanted — she wants this fixed.)
+- **Mother house (P612): active work is A0b** (Beppyo Opus Pass, individual lines). Suffix generator
+  stays but time-boxed ~6 months (convention-establishment, not perpetual). Organized extraction →
+  Topaz, not this repo.
 
 ---
 
