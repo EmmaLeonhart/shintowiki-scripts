@@ -56,8 +56,12 @@ Wikidata + local pipeline); needs a desktop for the all-article download + local
   P1814" and the same-name/disambig step: save jawiki article → Claude extracts kana → make P1814 →
   continue normally.
 - Ships as QS (`Qxxx|P1814|"…"|S143|Q177837|S4656|"<jawiki url>"`), drained by the daily submitter;
-  generation is NOT blocked by the 2026-08-10 Wikidata freeze — only submission is. Emit only when
-  confident; a wrong kana is worse than a missing one.
+  generation is NOT blocked by the 2026-08-10 Wikidata freeze — only submission is.
+- **Gating (Emma 2026-08-03): do NOT over-gate on confidence.** The LLM path is high-quality; the
+  priority is that it *produces* a kana reading (regex fidelity is not the point). The one concrete
+  filter: the **local step should exclude any candidate that is katakana** — P1814 wants the modern
+  *hiragana* reading, and katakana signals the ancient-reading error, not a modern name-in-kana.
+- **Desktop phase expected later today (2026-08-03)** per Emma.
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 
@@ -150,11 +154,12 @@ All registered atomic files are staged-but-not-delivered by design until `confli
   Kikuna restoration is already queued to our item Q134926804. `docs/bruno_plus_analysis_2026-07.md`.
 - **Bunrei paper sources** — 神社本庁『全国神社祭祀祭礼総合調査』(1995) etc.; needs a library, not
   scrapeable. Online 総本社 sources are exhausted (~10,650 cited edges).
-- **Active jawiki intake for mother house (P612)** — Emma 2026-08-03: nothing currently pulls NEW
-  edges from jawiki; the ~10,650 were one-time multi-source research, so P612 is self-limited. "That's
-  probably what we should be doing." Candidate: LLM-extract stated 勧請/総本社 origin from jawiki leads.
-  Lower-yield, higher-ambiguity than kana (fact present in only a minority of articles; wrong P612
-  worse than none) → NOT a peer of the kana job; do kana first, treat this as a later add-on.
+- **Mother house (P612) stays FIXED / time-boxed — Emma 2026-08-03, do NOT make it perpetual.** The
+  point is to *establish the convention* on Wikidata, not maintain it forever. Preference: if the
+  suffix-based (shrine-ending) generator is ever set to run continuously, let it generate ~6 months
+  then STOP. Once the convention is established, better-equipped editors are more likely to pick it up,
+  and the per-branch individual P612 lines are the more in-depth, indefinite layer anyway. (An
+  LLM-jawiki-intake extractor is "not exactly wrong" but is NOT wanted — she wants this fixed.)
 
 ---
 
