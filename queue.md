@@ -37,6 +37,28 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
+## A0. 🖥️ DESKTOP-GATED (front of queue) — name-in-kana → label pipeline
+
+Emma 2026-08-03. **Distinct from the kana-*qualifier* cleanup** (`generate_kana_qualifier_add.py`,
+Engishiki-only, fixing the ~1yr-old error where ancient-Japanese *katakana* readings from the imported
+Engishiki-chapter tables landed in top-level P1814 — wrong; P1814 wants the modern *hiragana* reading.
+That work relocates the old reading onto the ojp-hani P1448 as a カミノヤシロ qualifier and strips it from
+top-level, leaving those items with NO proper modern P1814). THIS item is the *new* work: give shrines a
+correct modern P1814 from their jawiki lead, as a new stage of the **label** pipeline (feeds romaji/label
+gen; may overwrite Indonesian-seed + some queued labels → front of queue). Not gated on Miraheze (jawiki +
+Wikidata + local pipeline); needs a desktop for the all-article download + local pipeline run.
+- Kana is not regex-extractable → Claude reads the jawiki **lead** and returns it.
+- **Desktop phase (local):** target = shrines with a jawiki article but no top-level P1814. Bucket (a)
+  HAS en label → most likely to carry romanization-derived errors (includes already-queued); bucket (b)
+  NO en label but scheduled → download article, extract kana, locally generate BOTH P1814 and the new en
+  label, enqueue both.
+- **CI/CD phase (items with no queued en label):** insert a new label-pipeline step BETWEEN "check
+  P1814" and the same-name/disambig step: save jawiki article → Claude extracts kana → make P1814 →
+  continue normally.
+- Ships as QS (`Qxxx|P1814|"…"|S143|Q177837|S4656|"<jawiki url>"`), drained by the daily submitter;
+  generation is NOT blocked by the 2026-08-10 Wikidata freeze — only submission is. Emit only when
+  confident; a wrong kana is worse than a missing one.
+
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 
 The routine's push was fixed 2026-07-28 (it had no repo bound; `session_context.sources` is the field
@@ -128,6 +150,11 @@ All registered atomic files are staged-but-not-delivered by design until `confli
   Kikuna restoration is already queued to our item Q134926804. `docs/bruno_plus_analysis_2026-07.md`.
 - **Bunrei paper sources** — 神社本庁『全国神社祭祀祭礼総合調査』(1995) etc.; needs a library, not
   scrapeable. Online 総本社 sources are exhausted (~10,650 cited edges).
+- **Active jawiki intake for mother house (P612)** — Emma 2026-08-03: nothing currently pulls NEW
+  edges from jawiki; the ~10,650 were one-time multi-source research, so P612 is self-limited. "That's
+  probably what we should be doing." Candidate: LLM-extract stated 勧請/総本社 origin from jawiki leads.
+  Lower-yield, higher-ambiguity than kana (fact present in only a minority of articles; wrong P612
+  worse than none) → NOT a peer of the kana job; do kana first, treat this as a later add-on.
 
 ---
 
