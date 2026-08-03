@@ -88,13 +88,15 @@ shape as `collect_label_typo_answers.py` / `collect_category_translations.py`.
 
 ## A0b. 🖥️ DESKTOP (later today 2026-08-03) — Beppyo Shrine Opus Pass: mother house (P612)
 
-**What it is.** Mother house (P612) is present in only a *minority* of articles and is essentially NEVER
-cleanly regex-extractable — there's no structured field for it. An LLM pass can find it on *some* articles
-(complicated, but doable). Concrete plan (Emma): download every **Beppyo shrine** (別表神社) Japanese
-and/or English article and run a **local Opus pass** to extract the mother house / 総本社 / 勧請 origin.
-**Large shrines first, then move down** (may extend downward later). This produces the more-specifically-
-sourced, in-depth *individual* P612 lines — the indefinite layer that sits beneath the coarse
-suffix-network heads.
+**What it is.** Mother house (P612) is actually **very common in jawiki *prose*** — of the articles Emma
+has read, at least ~a third mention it, often most — but it's essentially NEVER in *structured* data (no
+infobox field), so it's not cleanly regex-extractable. That mismatch (ubiquitous in prose, absent from
+structured data) is the "weirdness," and it's exactly why this is an LLM job. **Emma is very confident an
+LLM can extract it — but it's an *Opus* job specifically** (not a lesser model), and expect the results
+to need some correction. Concrete plan: download every **Beppyo shrine** (別表神社) Japanese and/or English
+article and run a **local Opus pass** to extract the mother house / 総本社 / 勧請 origin. **Large shrines
+first, then move down** (may extend downward later). This produces the more-specifically-sourced, in-depth
+*individual* P612 lines — the accurate, indefinite layer beneath the coarse suffix-network heads.
 
 - **Output:** P612 QS lines, one statement per branch, `P1013 = Q195793` in the same statement + a
   jawiki/enwiki citation. Follow the P612 invariant in `docs/wikidata_shrine_festival_model.md` (ONE P612,
@@ -102,10 +104,12 @@ suffix-network heads.
   only).
 - **Beppyo set:** SPARQL the 別表神社 membership — **confirm the exact Wikidata QID / route before
   running; do not guess it.**
-- **Keep the suffix-based generator (`generate_bunrei_quickstatements.py`) but time-box it to ~6 months,
-  then STOP** (Emma). P612 is about *establishing the convention* on Wikidata, not perpetual maintenance;
-  once established it's more likely to be picked up by better-equipped editors, and the individual lines
-  are the indefinite layer.
+- **Keep the suffix-based (name-based) generator (`generate_bunrei_quickstatements.py`) but time-box it to
+  ~6 months, then STOP** (Emma). Rationale: it's **inaccurate but descriptive** — the suffix→network-head
+  guess is only approximately right, but it's *close enough* that when it sits on an item a while, human
+  editors are likely to notice and fix it. That's the point: it seeds/establishes the convention on
+  Wikidata, and being approximately-right-and-visible is what invites better-equipped editors to correct
+  it. Not perpetual maintenance; the individual Opus-extracted lines (above) are the accurate layer.
 - **A more organized extraction technique is a job for Topaz (Emma's other tool), NOT this repo.**
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
