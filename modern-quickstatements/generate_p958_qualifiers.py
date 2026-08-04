@@ -32,7 +32,7 @@ from datetime import datetime, timezone
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 HEADERS = {
     "User-Agent": USER_AGENT,

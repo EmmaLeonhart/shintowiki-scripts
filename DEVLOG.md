@@ -4,6 +4,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 (later) — endpoint migration batch 1, and a module that runs on import
+
+Five scripts moved from `query.wikidata.org` to `query-main`, each verified live rather than
+assumed: `generate_p958_qualifiers`, `generate_shinmei_ids` and `generate_identical_name_en_labels`
+by calling their own helpers, and `generate_cjk_ja_backfill` / `generate_soja_only` by a bounded
+`LIMIT 1` probe through each module's own endpoint constant and headers. The last two get a probe
+rather than a real run because their actual queries are whole-corpus scans, and firing one purely to
+test a URL is precisely the load pattern we were told to stop. 19 remain, 9 of which sit in
+`shinto_miraheze/` behind an `mwclient` import and cannot be checked until the blackout lifts.
+
+**`generate_soja_only.py` executes on import.** It has no `if __name__ == "__main__"` guard, so the
+verification import ran its migration queries and rewrote `migrate_soja_add.txt` and
+`migrate_soja_remove.txt`. Nothing was lost — both were already zero-length in HEAD, checked with
+`git cat-file -s` rather than eyeballed — but that is luck, not design, and it is the same failure
+shape as the CI bug fixed earlier today: a process rewriting a generated file it had no business
+touching. The fix is to wrap the module body in a `main()`, which is a genuine restructure of a live
+generator and was deliberately not done in passing; it is queued with the evidence, and until then
+the module must be invoked as a subprocess, never imported.
+
+---
+
 ## 2026-08-04 — CI was silently reverting generated files it never generated
 
 `jinjacho_p973.txt` dropped from 1,526 lines to 1,236 in CI's own commit `afeabab9`, while the CSV

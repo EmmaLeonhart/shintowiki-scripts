@@ -48,7 +48,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "shinmei_ids.txt")
 REPORT = os.path.join(HERE, "_site", "shinmei_unmatched.txt")
 INDEX = "https://kojiki.kokugakuin.ac.jp/shinmei/"
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 UA = {"User-Agent": "ShintoWikiShinmei/1.0 (immanuelleleonhart@gmail.com)"}
 SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 

@@ -247,7 +247,19 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     pairs this way (1,526 → 1,236 lines against a 1,441-row CSV). Now backs up only
     `git diff --name-only` + untracked. **If a generated file ever looks smaller than its input
     justifies, suspect this shape before suspecting the generator.**
-  - ▶ **SPARQL endpoint migration — 24 scripts still on `query.wikidata.org`.** The repo is
+  - ⚠️ **`generate_soja_only.py` RUNS ON IMPORT** — no `if __name__ == "__main__"` guard, so simply
+    importing it fires its migration queries and rewrites `migrate_soja_add.txt` /
+    `migrate_soja_remove.txt`. Hit accidentally 2026-08-04 while verifying its endpoint; no damage
+    only because both files were already empty. Wrapping the module body in a `main()` is the fix,
+    but it is a real restructure of a live generator and was NOT done in passing. Until then, do not
+    import this module — invoke it as a subprocess. Worth grepping for siblings with the same shape.
+  - ▶ **SPARQL endpoint migration — 19 scripts left on `query.wikidata.org`** (was 24; 5 migrated
+    2026-08-04, each verified live: `generate_p958_qualifiers`, `generate_shinmei_ids`,
+    `generate_identical_name_en_labels` through their own helpers, `generate_cjk_ja_backfill` and
+    `generate_soja_only` by a bounded probe through their own constant + headers — their real
+    queries are whole-corpus scans and firing one to test a URL is the load pattern we were told to
+    stop). The 9 in `shinto_miraheze/` import `mwclient`, so they cannot even be imported here and
+    must wait for the blackout to lift before a live check is possible. The repo is
     mid-migration to `query-main.wikidata.org` (32 scripts already there). The old endpoint
     threw repeated 503/504 during the 2026-08-03 rematch's 17,549-candidate P131 pass;
     `generate_genbu_ids.py` was moved and verified live, which also fixed

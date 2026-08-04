@@ -51,7 +51,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WORKLIST = os.path.join(HERE, "shrines_missing_en_label.json")
 OUTPUT_FILE = os.path.join(HERE, "identical_name_en_labels.txt")
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = USER_AGENT
 SHINTO_SHRINE = "Q845945"
 BATCH = 150

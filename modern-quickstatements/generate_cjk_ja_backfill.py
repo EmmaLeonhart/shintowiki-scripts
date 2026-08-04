@@ -33,7 +33,7 @@ import requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = os.path.join(HERE, "cjk_ja_backfill.txt")
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = USER_AGENT
 SHINTO_SHRINE = "Q845945"
 TRANSIENT_STATUS = (500, 502, 503, 504)
