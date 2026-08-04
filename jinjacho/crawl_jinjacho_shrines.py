@@ -9,11 +9,21 @@ SAMPLE, not a backlog, so re-running the generator adds nothing. Coverage grows
 only by resolving MORE shrine -> jinjacho-URL pairs, which is what this does.
 
 `jinjacho/verification_results.csv` already verified which prefectural sites serve
-real per-shrine content (verdict OK_SHRINE_CONTENT). Of those, the ones whose detail
-URL is a plain incrementing integer are enumerable without a search form; this script
-walks exactly those. Sites keyed by UUID (Aichi) or by a name-slug path (Mie, Osaka,
-Kagoshima) are NOT enumerable and are deliberately absent — they need an index
-harvest, not an id sweep.
+real per-shrine content (verdict OK_SHRINE_CONTENT). Two shapes of site, two paths:
+
+* FAMILIES — the detail URL is a plain incrementing integer, so the id space is swept
+  directly (gifu, shiga, saitama), bounded by --max-pages and MISS_TOLERANCE.
+* INDEX_FAMILIES — keyed by UUID or name slug, so there is no id to sweep. These were
+  once written off as "not enumerable"; every one of them turned out to publish an
+  index, which is what is harvested instead (checked 2026-08-03):
+    aichi     — the search page's JSON API returns the whole register in ONE POST.
+    mie       — WordPress; its `shrine` post type is a single sitemap file.
+    kagoshima — WordPress; shrines are ordinary posts across 92 monthly sitemaps,
+                filtered by the /shrine-search/ path.
+    osaka     — no robots.txt and no sitemap, but a two-level HTML index: one page
+                lists ~50 municipality pages, each listing its shrines.
+  Aichi aside, the index gives URLs but no fields, so the detail pages are still
+  fetched — throttled, --max-pages-capped, and resumable by URL against the CSV.
 
 Output columns: prefecture, shrine_name, kana, address, url. Matching names to
 Wikidata QIDs is a SEPARATE script (`match_jinjacho_shrines.py`), because a crawl and
@@ -35,6 +45,8 @@ Usage
     python crawl_jinjacho_shrines.py --list
     python crawl_jinjacho_shrines.py --family gifu --max-pages 200
     python crawl_jinjacho_shrines.py --all --max-pages 500
+    python crawl_jinjacho_shrines.py --index mie --max-pages 300
+    python crawl_jinjacho_shrines.py --index osaka --refresh-index --max-pages 300
 """
 
 import os
@@ -233,7 +245,7 @@ def harvest_aichi():
     return rows
 
 
-# ─────────────── sitemap-backed index families (Mie, Kagoshima) ───────────────
+# ─────────── index-backed families needing per-page fetches (Mie, Kagoshima, Osaka) ───────────
 # These two were filed as "name-slug paths, not enumerable" and therefore parked. They
 # are both WordPress, and both publish a sitemap that robots.txt points at and permits
 # (only wp-admin is disallowed) — so the index does exist, it just isn't an integer
@@ -356,14 +368,72 @@ def _collect_kagoshima_urls(throttle):
     return sorted(set(urls))
 
 
-SITEMAP_FAMILIES = {
+# Osaka has no robots.txt and no sitemap, but it does publish a two-level HTML index:
+# funai_jinja/index.html lists ~50 municipality pages (dai<N>shibu/<muni>/<muni>.html),
+# and each of those lists its shrines as numeric-prefixed siblings (01020kusasajinja.html).
+# Directory listings are 403, so the link graph is the only way in — which is fine, it is
+# the site's own navigation.
+OSAKA_INDEX = "https://www.osaka-jinjacho.jp/funai_jinja/index.html"
+_OSAKA_MUNI_RE = re.compile(r'href="(dai\d+shibu/[^"/]+/[^"/]+\.html)"')
+_OSAKA_SHRINE_RE = re.compile(r'href="(\d{4,6}[^"/]*\.html)"')
+
+
+def parse_osaka(raw):
+    """'コード：01020 / 久佐々神社（くささじんじゃ） / 鎮座地 〒563-0341 豊能郡能勢町宿野274-1'.
+
+    Same footer trap as Kagoshima — every page ends with the agency's own address in
+    大阪市中央区 — so the address is taken from the 鎮座地 label, never by a loose search.
+    """
+    t = _text(raw)
+    # Anchored on コード： deliberately. A municipality LISTING page (hirakata.html)
+    # also opens with a shrine name in kana parens, and a looser pattern reads it as
+    # a record — one with no 鎮座地, which is exactly the shape that reaches the
+    # matcher as an unaddressed row. Detail pages are the ones carrying the code.
+    m = re.search(r"コード\s*[：:]\s*\d+\s*\n?\s*([^\n（(]{2,30})\s*[（(]([ぁ-ゖー]{2,})[）)]", t)
+    if not m:
+        return None
+    addr = ""
+    a = re.search(r"鎮座地\s*\n?\s*(?:〒?\s*" + _POSTAL + r")?\s*\n?\s*([^\n]{4,60})", t)
+    if a:
+        addr = a.group(1).strip()
+    return {"shrine_name": m.group(1).strip(), "kana": m.group(2).strip(),
+            "address": addr}
+
+
+def _collect_osaka_urls(throttle):
+    base = "https://www.osaka-jinjacho.jp/funai_jinja/"
+    r = requests.get(OSAKA_INDEX, headers=UA, timeout=TIMEOUT)
+    r.raise_for_status()
+    r.encoding = r.apparent_encoding or r.encoding
+    munis = sorted(set(_OSAKA_MUNI_RE.findall(r.text)))
+    urls = []
+    for rel in munis:
+        time.sleep(throttle)
+        try:
+            p = requests.get(base + rel, headers=UA, timeout=TIMEOUT)
+            p.encoding = p.apparent_encoding or p.encoding
+        except Exception as e:
+            print(f"  [osaka] {type(e).__name__} on {rel}", flush=True)
+            continue
+        if p.status_code != 200:
+            continue
+        prefix = base + rel.rsplit("/", 1)[0] + "/"
+        urls += [prefix + s for s in _OSAKA_SHRINE_RE.findall(p.text)]
+    print(f"[osaka] {len(munis)} municipality pages -> {len(set(urls))} shrine pages",
+          flush=True)
+    return sorted(set(urls))
+
+
+CRAWLED_INDEX_FAMILIES = {
     "mie": {"prefecture": "Mie", "collect": _collect_mie_urls, "parser": parse_mie},
     "kagoshima": {"prefecture": "Kagoshima", "collect": _collect_kagoshima_urls,
                   "parser": parse_kagoshima},
+    "osaka": {"prefecture": "Osaka", "collect": _collect_osaka_urls,
+              "parser": parse_osaka},
 }
 
 
-def harvest_sitemap_family(key, seen, limit, throttle, refresh=False, sink=None):
+def harvest_indexed_family(key, seen, limit, throttle, refresh=False, sink=None):
     """Fetch up to `limit` not-yet-crawled detail pages for a sitemap-backed family.
 
     Rows are handed to `sink` in batches of 25 for the same reason the id sweep
@@ -371,7 +441,7 @@ def harvest_sitemap_family(key, seen, limit, throttle, refresh=False, sink=None)
     fetched. Resume is by URL (already-crawled URLs are skipped), so a flushed
     batch is permanently done.
     """
-    fam = SITEMAP_FAMILIES[key]
+    fam = CRAWLED_INDEX_FAMILIES[key]
     cache = _load_index_cache()
     urls = cache.get(key)
     if refresh or not urls:
@@ -410,11 +480,15 @@ def harvest_sitemap_family(key, seen, limit, throttle, refresh=False, sink=None)
 
 
 def harvest_mie(seen, limit, throttle, refresh=False, sink=None):
-    return harvest_sitemap_family("mie", seen, limit, throttle, refresh, sink)
+    return harvest_indexed_family("mie", seen, limit, throttle, refresh, sink)
 
 
 def harvest_kagoshima(seen, limit, throttle, refresh=False, sink=None):
-    return harvest_sitemap_family("kagoshima", seen, limit, throttle, refresh, sink)
+    return harvest_indexed_family("kagoshima", seen, limit, throttle, refresh, sink)
+
+
+def harvest_osaka(seen, limit, throttle, refresh=False, sink=None):
+    return harvest_indexed_family("osaka", seen, limit, throttle, refresh, sink)
 
 
 def _harvest_aichi_indexed(seen, limit, throttle, refresh=False, sink=None):
@@ -424,7 +498,8 @@ def _harvest_aichi_indexed(seen, limit, throttle, refresh=False, sink=None):
 
 INDEX_FAMILIES = {"aichi": _harvest_aichi_indexed,
                   "mie": harvest_mie,
-                  "kagoshima": harvest_kagoshima}
+                  "kagoshima": harvest_kagoshima,
+                  "osaka": harvest_osaka}
 
 
 def run_index_family(key, limit=200, throttle=THROTTLE, refresh=False):
@@ -589,10 +664,10 @@ def main():
         cache = _load_index_cache()
         seen = load_seen()
         for k in sorted(INDEX_FAMILIES):
-            if k in SITEMAP_FAMILIES:
+            if k in CRAWLED_INDEX_FAMILIES:
                 urls = cache.get(k, [])
                 done = sum(1 for u in urls if u in seen)
-                print(f"{k:10} {SITEMAP_FAMILIES[k]['prefecture']:10} sitemap "
+                print(f"{k:10} {CRAWLED_INDEX_FAMILIES[k]['prefecture']:10} sitemap "
                       f"{done}/{len(urls) or '?'} crawled")
             else:
                 print(f"{k:10} {'Aichi':10} single-request API index")

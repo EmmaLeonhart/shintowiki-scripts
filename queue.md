@@ -175,8 +175,20 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     address, not the prefecture (prefecture-gating produced verified-wrong matches: a 大垣市 天満神社
     → 天満神社 (高山市)), plus a collision guard dropping any item claimed by two crawled shrines.
     Expect a low yield; a missed shrine costs nothing, a wrong P973 is a wrong statement.
-  - **Not yet covered:** Aichi (UUID keys) and Mie/Osaka/Kagoshima (name-slug paths) are not
-    id-enumerable — they need an index harvest before they can be added as families.
+  - ✅ **Aichi is DONE and the "not yet covered" line here was stale** — 3,179 rows are already
+    in `crawled_shrines.csv`, harvested by `harvest_aichi` in a single POST to the site's search
+    API. Only Osaka is still uncovered.
+  - ✅ **Mie + Kagoshima harvested via their sitemaps (2026-08-03).** They were filed as
+    "name-slug paths, not enumerable"; both are WordPress and both publish a sitemap that
+    robots.txt points at and permits. Mie's shrine post type is one file (**822** URLs);
+    Kagoshima's shrines are ordinary posts across 92 monthly sitemaps, filtered by
+    `/shrine-search/`. Run: `python crawl_jinjacho_shrines.py --index mie|kagoshima
+    --max-pages N` — capped, resumable by URL (not cursor), URL list cached in
+    `index_urls.json`. Re-run `match_jinjacho_shrines.py` + `generate_jinjacho_p973.py` after
+    each chunk, same as the id families.
+  - ⏳ **Osaka is the last one** — `www.osaka-jinjacho.jp` is static HTML
+    (`funai_jinja/dai1shibu/nose-cho/01020kusasajinja.html`), no robots.txt and no sitemap, so
+    it needs its section index pages walked rather than a sitemap read. Not started.
   - Add-only; the daily editor skips statements that already exist, so re-runs are no-ops.
 
 ## A4. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)

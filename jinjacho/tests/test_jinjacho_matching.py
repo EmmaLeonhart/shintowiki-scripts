@@ -183,19 +183,40 @@ def test_kagoshima_parser_takes_the_shrine_address_not_the_agency_footer():
     assert "鹿児島市" not in rec["address"]
 
 
+def test_osaka_parser_requires_the_code_marker():
+    """A municipality LISTING page opens with a shrine name in kana parens too, and a
+    looser pattern read it as a record with no 鎮座地. Only detail pages carry コード：."""
+    detail = ("<html><body><p>コード：01020</p><p>久佐々神社（くささじんじゃ）</p>"
+              "<p>鎮座地</p><p>〒563-0341 豊能郡能勢町宿野274-1</p>"
+              "<footer>〒541-0056大阪市中央区久太郎町4丁目渡辺6号</footer></body></html>")
+    rec = crawl.parse_osaka(detail)
+    assert rec["shrine_name"] == "久佐々神社"
+    assert rec["kana"] == "くささじんじゃ"
+    assert rec["address"].startswith("豊能郡能勢町")
+    assert "大阪市" not in rec["address"]
+    listing = "<html><body><p>片埜神社（かたのじんじゃ）</p></body></html>"
+    assert crawl.parse_osaka(listing) is None
+
+
+def test_osaka_muni_address_resolves_past_the_gun(match):
+    """豊能郡能勢町 — the 郡 is a district; P131 points at the 町 inside it."""
+    assert match.municipality("豊能郡能勢町宿野274-1") == "能勢町"
+
+
 def test_new_parsers_reject_a_non_record():
     assert crawl.parse_mie("<html><title>三重県神社庁教化委員会</title></html>") is None
     assert crawl.parse_kagoshima("<html><body>お探しのページはありません</body></html>") is None
+    assert crawl.parse_osaka("<html><body>お探しのページはありません</body></html>") is None
 
 
 def test_sitemap_families_are_registered_as_index_families():
     """A sitemap family left out of INDEX_FAMILIES is unreachable from the CLI;
     one added to FAMILIES instead would be swept by id, which is what it cannot do."""
-    for key in crawl.SITEMAP_FAMILIES:
+    for key in crawl.CRAWLED_INDEX_FAMILIES:
         assert key in crawl.INDEX_FAMILIES, key
         assert key not in crawl.FAMILIES, key
-        assert callable(crawl.SITEMAP_FAMILIES[key]["parser"]), key
-        assert callable(crawl.SITEMAP_FAMILIES[key]["collect"]), key
+        assert callable(crawl.CRAWLED_INDEX_FAMILIES[key]["parser"]), key
+        assert callable(crawl.CRAWLED_INDEX_FAMILIES[key]["collect"]), key
 
 
 def test_sitemap_harvest_is_bounded_and_skips_already_crawled(monkeypatch):
@@ -218,7 +239,7 @@ def test_sitemap_harvest_is_bounded_and_skips_already_crawled(monkeypatch):
     monkeypatch.setattr(crawl.requests, "get", _get)
     monkeypatch.setattr(crawl.time, "sleep", lambda s: None)
     seen = {urls[0], urls[1]}
-    rows = crawl.harvest_sitemap_family("mie", seen, limit=3, throttle=0)
+    rows = crawl.harvest_indexed_family("mie", seen, limit=3, throttle=0)
     assert urls[0] not in fetched and urls[1] not in fetched
     assert len(fetched) == 3
     assert len(rows) == 3
