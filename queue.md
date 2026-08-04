@@ -105,7 +105,23 @@ also applies to the `vsa_libraries.txt` batch, which shared the tool.
 - ✅ **Bucket (b) is FINISHED** — all 54 done locally: 50 P1814 lines + 43 en labels (via
   `kana_english.label_for`). 4 produced no statement: 3 legitimately mixed-script readings and 1
   two-shrine disambiguation page.
-- ⏳ **Bucket (a): 2,582 targets; 251 done locally 2026-08-04**, 33 work-files left in this tranche.
+- ⏳ **Bucket (a): 2,582 targets; 281 done locally 2026-08-04**, **2 work-files left** in this
+  tranche, both on purpose (below). `name_in_kana.txt` is at 343 lines.
+  **The remote routine is not the bottleneck and never was** — every one of the 34 pending
+  work-files still had an EMPTY answer marker, and so did all 222 description / 143 label-typo /
+  34 ronsha / 354 category ones. Answering locally is the road. New tool for it:
+  `shinto_miraheze/apply_local_answers.py --queue <q> --answers <tsv> --apply` fills the markers
+  from a TSV, then the normal `collect_*.py` runs unchanged and applies its own gates. Answers
+  kept in `shinto_miraheze/local_answers/`. It refuses to overwrite a marker the routine already
+  filled.
+- ▶ **The target set leaks non-shrines, unfixed.** Three of the 34 are not shrines: Q7137401
+  水谷川忠起 is a **person** (Meiji priest, 春日大社宮司), Q5367406 春日山原始林 is a forest,
+  Q7797685 宮中三殿 is the palace sanctuaries. The two place-ish ones were answered (P1814 is not
+  shrine-specific and the readings are plainly right); the person was left pending rather than
+  worked around. Worth finding where the P31 filter lets a person through before the next tranche.
+- ⏸ **2 work-files deliberately unanswered:** Q11544511 機殿神社 (joint article for 神服織機殿神社 +
+  神麻続機殿神社; its lead opens with those two names and the pair name carries no reading) and
+  Q7137401 水谷川忠起 (the person above).
   The latest 54 are the whole 神宮125社 slice (A0c's "P1814 pass over the 54" — the real figure was
   55). `lineage/fetch_jingu125_kana.py` → `_jingu125_kana.tsv` → `lineage/stage_jingu125_kana.py
   --apply`. **53 of the 54 already had a work-file waiting for the cloud routine**, which would
@@ -271,15 +287,21 @@ under A00.
 
 ✅ **The P1814 pass is DONE (2026-08-04)** — 54 staged, see A0. Nothing open in A0c.
 
-## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
+## A1. ▶ Cloud-answer collectors — the routine has answered NOTHING since 2026-07-28
 
-The routine's push was fixed 2026-07-28 (it had no repo bound; `session_context.sources` is the field
-— see `docs/remote_queue_routine_prompt.md`), so answers are landing again and these are no longer
-idle. Ran the same day: 9 label typos, 1 ronsha ranking, 11 descriptions, 12 category moves. All four
-are repo-local — no Miraheze request — so they stay runnable through the blackout.
-- `collect_label_typo_answers.py` — 147 pending.
-- Description-enrichment (224 pending), ronsha-ranking (34 pending), category-translation (361
-  pending) collectors — same pattern. `docs/description_enrichment_pipeline.md`.
+All four collectors were run 2026-08-04 and every one returned `resolved=0`: **not a single
+pending work-file has a filled answer marker.** The routine's push was fixed 2026-07-28 and it
+delivered one batch that day (9 label typos, 1 ronsha ranking, 11 descriptions, 12 category
+moves) — and nothing since. Waiting on it is not a plan.
+- `collect_label_typo_answers.py` — 143 pending, 0 answered.
+- Description-enrichment (222), ronsha-ranking (34), category-translation (354) — same, 0 answered.
+  `docs/description_enrichment_pipeline.md`.
+- ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's
+  work-files, answer them here, `apply_local_answers.py --queue <q> --answers <tsv> --apply`, then
+  the collector. All repo-local — no Miraheze request — so it runs through the blackout.
+- ▶ **Separately, find out why the routine stopped.** One batch in a week is a failure, not a rate.
+  `docs/remote_queue_routine_prompt.md`; the last known fix was the missing repo binding
+  (`session_context.sources`).
 
 ## A2. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
 
