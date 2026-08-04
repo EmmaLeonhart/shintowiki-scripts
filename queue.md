@@ -42,7 +42,7 @@ external thing.
 - ✅ **Bucket (b) is FINISHED** — all 54 done locally: 50 P1814 lines + 43 en labels (via
   `kana_english.label_for`). 4 produced no statement: 3 legitimately mixed-script readings and 1
   two-shrine disambiguation page.
-- ⏳ **Bucket (a): 2,582 targets; 66 done locally 2026-08-04**, 177 work-files still unanswered.
+- ⏳ **Bucket (a): 2,582 targets; 136 done locally 2026-08-04**, 107 work-files still unanswered.
   **The cloud routine is one path, not the only one** — these can be extracted locally in batches
   exactly like bucket (b), and waiting on the routine is not a blocker. It addresses only a handful
   of items per run across all 2,252 queue entries, so local batches are the faster road. Rebuild more
