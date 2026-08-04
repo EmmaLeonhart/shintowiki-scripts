@@ -1,0 +1,74 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q251682 -->
+<!-- JA: 祐徳稲荷神社 | EN: Yūtoku Inari Shrine | SITELINKS: 8 -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E7%A5%90%E5%BE%B3%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE -->
+<!-- ANSWER: -->
+<!-- TASK: read the ARTICLE below and identify this shrine's MOTHER HOUSE — the shrine it was branched from (勧請元 / 分霊元 / 総本社 / 本社). This is normally stated in the 由緒 or 歴史 prose, not in the infobox. Fill ANSWER with exactly one of:
+  MOTHER: <Qid> # <shrine name>   the mother house, as a Wikidata Q-id
+  AUTOCHTHONOUS:                  the article says the shrine is of indigenous/local origin (地主神, 国津神 of the place, founded in situ) with no parent shrine — this is a REAL finding, use Q135508874
+  UNCLEAR: <what the article says>  the article does not settle it
+
+Rules:
+  * The mother house is the shrine this one was BRANCHED FROM. Do not confuse it with: a shrine merged INTO this one (合祀), a 摂社/末社 inside this one's grounds, or a shrine this one is the head OF (that is the reverse direction).
+  * 総本社/総本宮 of the network is the right answer when the article says this shrine is a 分社 of it. If the article names a nearer, more specific parent (e.g. branched from a regional shrine which is itself a branch), prefer the NEARER one — the accurate individual layer is the whole point of this pass.
+  * Give a Q-id you have actually verified names that shrine. Do NOT guess a Q-id from a name; if you cannot confirm the item, answer UNCLEAR with the shrine name in the text.
+  * Founding by a person/clan, or 分霊 from a deity rather than a named shrine, is not a mother house — UNCLEAR.
+When ANSWER is filled this file is done. -->
+
+== ARTICLE ==
+祐徳稲荷神社（ゆうとくいなりじんじゃ）は、佐賀県鹿島市にある神社。旧社格は県社で別表神社。別名鎮西日光。楼門は日光東照宮の修復職人達の手による陽明門を模したものである。
+伏見稲荷大社、笠間稲荷神社とともに日本三大稲荷の一つに数えられる。年間300万人の参詣者が訪れる。衣食住、生活全般の守護神として、商売繁盛、家運繁栄などで尊崇されている。
+日本四大稲荷、日本五大稲荷、日本六稲荷、九州三大稲荷に数えられることもある。
+
+
+== 由緒 ==
+鹿島藩初代藩主鍋島直朝が、後陽成天皇の孫・左大臣花山院定好の娘萬子媛（まんこひめ）を継室とし、その萬子媛が朝廷の勅願所であった伏見稲荷より稲荷大神の御分霊を勧請したのに始まる。萬子媛が嫁ぐ際、父から稲荷大神の神鏡を授けられていた。貞享4年（1687年）、石壁山に社殿を建立し、萬子媛自ら奉仕していたが、宝永2年（1705年）、石壁山窟の寿蔵にて、断食して入定を果たした。以降、萬子媛の諡名から「祐徳院」と呼ばれるようになり、祭神の稲荷神とともに萬子媛の霊験により信仰を集めた。
+明治の神仏分離により仏式の行事を廃し、祐徳稲荷神社に改称した。その際、萬子媛が入定した寿蔵は境内社の石壁神社とされ、萬子媛に「萬媛命」の神号が贈られた。
+現在の本殿は、昭和初期に建て直されたものが昭和24年（1949年）5月に焼失したあと、伊勢神宮造営局長の角南隆が設計して昭和32年（1957年）に再建されたもので、3代目である。主要建物は総漆塗りである。
+斎藤茂吉や野口雨情も祐徳稲荷神社を詠った詩を残している。
+
+
+== 境内 ==
+錦波川を境として西側に本殿、神楽殿、楼門がある。楼門から北側には参集殿、更にその北側には日本庭園がある。
+本殿は舞台造りの上に建てられた総漆塗りの建物で、117段の階段の上に位置している。本殿は高所にあるが、有料のエレベーターが設置されている。
+境内入口より北から祐徳バス門前出張所（祐徳神社前バス停）までの間の参道には門前商店街が軒を並べ、その北端には3000台が駐車できる無料駐車場がある。錦波川東の駐車場脇には神社が所蔵する美術工芸品や鎧・刀・鹿島錦など郷土の資料を展示した祐徳博物館が設置されている。
+
+
+== 文化財 ==
+
+
+=== 県指定有形文化財 ===
+命婦社
+刀
+古文書
+
+
+== 交通 ==
+佐賀駅前の佐賀駅バスセンターまたは肥前鹿島駅前より祐徳バス祐徳神社行き乗車（所要時間は佐賀駅バスセンターから約1時間、肥前鹿島駅前から約10分）。特に、年末年始（12月31日の深夜24時1月1日（元日）の午前0時前後より）は百貫橋（杵島郡白石町と鹿島市の境）から初詣客の車で渋滞している事がある。なお、昭和6年（1931年）までは祐徳軌道が門前まで伸びていたが、現ルートでの長崎本線の開通に伴い廃止された。この祐徳軌道のバス事業を受け継いだのが現在の祐徳自動車（祐徳バス）である。
+
+
+== 野球場 ==
+本神社は境内に『祐徳国際グラウンド』という野球場を建設し、1935年に開場して運営していたことがある。このグラウンドは現在の来訪者用駐車場の位置にあり、1950年（昭和25年）4月21日にプロ野球の西日本パイレーツが中日ドラゴンズを帯同してセントラル・リーグの公式戦を開催した（中日が12-1で西日本を下した）。この試合では中日の先発投手杉下茂が6回表に西日本の野本喜一郎から満塁本塁打を放っているが、これはセントラル・リーグ初の“投手が打った満塁本塁打”であった。
+このグラウンドは火災などもあり、1957年までに自然消滅したと言われている。
+
+
+=== プロ野球公式戦開催実績 ===
+2試合を開催。内訳はセ・リーグ1試合、パ・リーグ1試合。
+
+1950年4月21日 西日本パイレーツ 1-12 中日ドラゴンズ
+1952年4月1日 西鉄ライオンズ 5-2 阪急ブレーブス
+
+
+== 脚注 ==
+
+
+== 関連項目 ==
+佐賀県の観光地
+
+
+== 外部リンク ==
+
+祐徳稲荷神社 - 公式サイト
+祐徳神社お火たき（鹿島市） 佐賀の音100選（重） - YouTube（佐賀新聞社提供、2015年11月27日公開）
+祐徳稲荷神社をテーマにしたお酒
+郵送お焚き上げ・人形供養サービス「神社のお焚き上げ」
+「神社のお焚き上げ」公式YouTube

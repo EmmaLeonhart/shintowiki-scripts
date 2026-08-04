@@ -1,0 +1,117 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q712617 -->
+<!-- JA: 赤間神宮 | EN: Akama Jingū | SITELINKS: 10 -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E8%B5%A4%E9%96%93%E7%A5%9E%E5%AE%AE -->
+<!-- ANSWER: -->
+<!-- TASK: read the ARTICLE below and identify this shrine's MOTHER HOUSE — the shrine it was branched from (勧請元 / 分霊元 / 総本社 / 本社). This is normally stated in the 由緒 or 歴史 prose, not in the infobox. Fill ANSWER with exactly one of:
+  MOTHER: <Qid> # <shrine name>   the mother house, as a Wikidata Q-id
+  AUTOCHTHONOUS:                  the article says the shrine is of indigenous/local origin (地主神, 国津神 of the place, founded in situ) with no parent shrine — this is a REAL finding, use Q135508874
+  UNCLEAR: <what the article says>  the article does not settle it
+
+Rules:
+  * The mother house is the shrine this one was BRANCHED FROM. Do not confuse it with: a shrine merged INTO this one (合祀), a 摂社/末社 inside this one's grounds, or a shrine this one is the head OF (that is the reverse direction).
+  * 総本社/総本宮 of the network is the right answer when the article says this shrine is a 分社 of it. If the article names a nearer, more specific parent (e.g. branched from a regional shrine which is itself a branch), prefer the NEARER one — the accurate individual layer is the whole point of this pass.
+  * Give a Q-id you have actually verified names that shrine. Do NOT guess a Q-id from a name; if you cannot confirm the item, answer UNCLEAR with the shrine name in the text.
+  * Founding by a person/clan, or 分霊 from a deity rather than a named shrine, is not a mother house — UNCLEAR.
+When ANSWER is filled this file is done. -->
+
+== ARTICLE ==
+赤間神宮（あかまじんぐう）は、山口県下関市にある神社。旧社格は官幣大社。壇ノ浦の戦いにおいて入水した安徳天皇を祀る。
+江戸時代までは安徳天皇御影堂といい、仏式により祀られていた。平家一門を祀る塚があることでも有名であり、前身の阿弥陀寺は『耳なし芳一』の舞台であったが、廃仏毀釈により神社となり現在に至る。
+
+
+== 歴史 ==
+859年（貞観元年）に阿弥陀寺として開闢。
+1185年（文治元年）の壇ノ浦の戦いで入水した安徳天皇の遺体は現場付近では発見できなかったが、赤間関（下関）に1191年（建久2年）、勅命により御影堂が建立され、建礼門院ゆかりの尼を奉仕させた。以後、勅願寺として崇敬を受ける。
+明治の神仏分離により阿弥陀寺は廃され、神社となって「天皇社」と改称した。また、歴代天皇陵の治定の終了後、安徳天皇陵は多くの伝承地の中からこの安徳天皇社の境内が1889年（明治22年）7月25日、「擬陵」として公式に治定された。天皇社は1875年（明治8年）10月7日、赤間宮に改称し、官幣中社に列格した。
+1940年（昭和15年）8月1日、官幣大社に昇格し、赤間神宮に改称した。
+第二次世界大戦により社殿を焼失し、1965年（昭和40年）4月に新社殿が竣工した。
+1963年（昭和38年）9月には当時の皇太子（明仁親王）が参拝した。
+1975年（昭和50年）、全国平家会が設立される。
+1985年（昭和60年）、源平八百年を期に石川県の輪島市にある平時忠の子孫「時国家」に分霊が親授された。その際に邸内社が建立され「能登安徳天皇社」の称号が授与された。
+2018年（平成30年）11月2日、「赤間神宮水天門及び回廊」が国の登録有形文化財に登録される。
+
+
+== 境内 ==
+安徳天皇阿弥陀寺陵（あみだじのみささぎ）
+日本西門鎮守八幡宮
+大連神社
+紅石稲荷神社
+平家一門の墓（七盛塚） - 壇ノ浦の戦いで敗れた平家一門の合祀墓（供養塔）。以下14名の供養塔が並び、名前に「盛」字の付く者が多いことから「七盛塚」とも称する。
+左近衛少将有盛
+左近衛中将清経
+右近衛中将資盛
+副将能登守教経
+参議修理大夫経盛
+大将中納言知盛
+参議中納言教盛
+伊賀平内左衛門家長
+上総五郎兵衛忠光
+飛騨三郎左衛門景経
+飛騨四郎兵衛景俊
+越中次郎兵衛盛継
+丹後守侍従忠房
+従二位尼時子
+芳一堂 - 『耳なし芳一』を祀り、芳一の木像を安置する。
+水天門 - 神門は竜宮城を模した竜宮造の楼門。「水天」の名称は安徳天皇が水天宮の祭神とされることによる。
+
+
+== 安徳天皇縁起絵図 ==
+赤間神宮に伝わる襖絵。土佐光信筆という。
+
+
+== 平家一門の肖像 ==
+
+
+== 文化財 ==
+重要文化財
+平家物語（長門本）20冊
+赤間神宮文書10巻、1冊
+登録有形文化財
+水天門
+回廊
+
+
+== 画像 ==
+
+
+== 年中行事 ==
+平家雛流し神事（3月上旬）
+先帝祭（5月2日 - 4日） - 安徳天皇の命日に行われる。2日は平家落人の子孫らで組織される全国平家会の参列のもと御陵前での神事を始め、平家一門追悼祭などがある、3日は豪華絢爛な「上臈参拝」その他、下関市内では外八文字道中、唐戸から壇ノ浦付近の海上での「源平船合戦」などが行われる。（詳細は「先帝祭」参照）
+耳なし芳一琵琶供養祭（7月15日）
+うに供養祭（10月中旬）
+秋季例大祭（10月7日）
+しめなわ祭（12月10日）
+
+
+== 交通 ==
+サンデン交通「赤間神宮前」バス停下車
+
+JR下関駅から9分。
+唐戸バス停から2分。
+
+
+== 脚注 ==
+
+
+== 参考文献 ==
+外池昇「天皇陵の誕生」祥伝社（平成24年（2012年））
+
+
+== 関連図書 ==
+安津素彦・梅田義彦編集兼監修者『神道辞典』神社新報社、1968年、2頁
+白井永二・土岐昌訓編集『神社辞典』東京堂出版、1979年、6頁
+上山春平他『日本「神社」総覧』新人物往来社、1992年、244-245頁
+
+
+== 関連項目 ==
+神宮
+奇兵隊
+白石正一郎
+伊藤助太夫
+関門海峡
+日光市平家の里 - 湯西川赤間神宮がある。
+
+
+== 外部リンク ==
+
+赤間神宮（公式サイト）

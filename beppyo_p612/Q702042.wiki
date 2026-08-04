@@ -1,0 +1,120 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q702042 -->
+<!-- JA: 日枝神社 | EN: Hie Shrine | SITELINKS: 14 -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_%28%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29 -->
+<!-- ANSWER: -->
+<!-- TASK: read the ARTICLE below and identify this shrine's MOTHER HOUSE — the shrine it was branched from (勧請元 / 分霊元 / 総本社 / 本社). This is normally stated in the 由緒 or 歴史 prose, not in the infobox. Fill ANSWER with exactly one of:
+  MOTHER: <Qid> # <shrine name>   the mother house, as a Wikidata Q-id
+  AUTOCHTHONOUS:                  the article says the shrine is of indigenous/local origin (地主神, 国津神 of the place, founded in situ) with no parent shrine — this is a REAL finding, use Q135508874
+  UNCLEAR: <what the article says>  the article does not settle it
+
+Rules:
+  * The mother house is the shrine this one was BRANCHED FROM. Do not confuse it with: a shrine merged INTO this one (合祀), a 摂社/末社 inside this one's grounds, or a shrine this one is the head OF (that is the reverse direction).
+  * 総本社/総本宮 of the network is the right answer when the article says this shrine is a 分社 of it. If the article names a nearer, more specific parent (e.g. branched from a regional shrine which is itself a branch), prefer the NEARER one — the accurate individual layer is the whole point of this pass.
+  * Give a Q-id you have actually verified names that shrine. Do NOT guess a Q-id from a name; if you cannot confirm the item, answer UNCLEAR with the shrine name in the text.
+  * Founding by a person/clan, or 分霊 from a deity rather than a named shrine, is not a mother house — UNCLEAR.
+When ANSWER is filled this file is done. -->
+
+== ARTICLE ==
+日枝神社（ひえじんじゃ）は、東京都千代田区永田町二丁目にある、山王信仰の神社。山王さま等とも呼ばれ、江戸三大祭の一つ、山王祭が行われる。旧社格は准勅祭社（東京十社）、官幣大社。
+大山咋神（おおやまくいのかみ）を主祭神とし、相殿に国常立神（くにのとこたちのかみ）、伊弉冉神（いざなみのかみ）、足仲彦尊（たらしなかつひこのみこと）を祀る。
+所在地は正確には千代田区永田町であり、社殿は東向き、表参道（山王坂）も国会議事堂方面の東方へと伸びているが、港区赤坂地区の北東に隣接しており、そちらの南西方面（外堀通り沿い）にも大きな鳥居と裏参道が2つ設けられていること（南方はエスカレーター付きの山王橋）に加え、最寄駅として北西には東京メトロ赤坂見附駅、南西には赤坂駅、南方には溜池山王駅が所在していることや、近隣に赤坂氷川神社が鎮座していることもあって、総じて「赤坂」の印象が強いため、赤坂(の)日枝神社と通称されることが多い。
+
+
+== 歴史 ==
+創建は、鎌倉時代に江戸氏が山王宮を祀ったことを起源とするが、直接的には文明10年（1478年）、太田道灌が江戸城築城にあたり、川越の無量寿寺（現在の喜多院・中院）の鎮守である仙波日枝神社を勧請したことに始まる。徳川家康が江戸に移封されたとき、城内の紅葉山に遷座し、江戸城の鎮守とした。
+慶長9年（1604年）からの徳川秀忠による江戸城改築の際、社地を江戸城外の麹町隼町に遷座し、庶民が参拝できるようになった。社地は家康により5石、元和3年（1617年）に秀忠により100石、そして寛永12年（1635年）に徳川家光からの寄付を加えて600石となった。
+明暦3年（1657年）、明暦の大火により社殿を焼失したため、万治2年（1659年）、将軍徳川家綱が赤坂の溜池を望む松平忠房の邸地を官収して社地に当てる形で、現在地に遷座した。この地は江戸城から見て裏鬼門に位置する。
+1868年（明治元年）11月の東京奠都の際に准勅祭社に指定された。その後1871年（明治3年）に神祇官直下から東京府管轄に移され、1873年（明治5年）の官国幣社の選定時にも漏れ、そのまま東京府の府社となった。1881年（明治14年）に、氷川神社宮司で日枝神社の祠官を兼ねていた平山省斎が、皇城鎮護の神社が府社であっていいはずがないので、官幣大社にしてほしいと願い出た。この時は官幣大社にならなかったが、東京府・内務省の賛成を得て1882年（明治15年）1月9日に官幣中社になった。1912年（大正元年）には官幣大社に昇格した。
+1945年（昭和20年）の東京大空襲で社殿が焼失し、1958年（昭和33年）に再建された。再建事業には皇室から金一封が、本殿遷座祭には幣帛料と神饌料が奉納された。
+
+
+=== 年表 ===
+元和3年（1617年） - 麻生に100石の地を与えられた。
+寛永12年（1635年）6月 - 400石を加え500石を領した。
+万治2年（1659年）4月25日 - 現在地への遷座式。
+文政6年（1823年） - 楼門、回廊などを造営した。
+明治元年（1868年）11月5日 - 官幣使が参拝した。
+8日 - 准勅祭の神社になった。
+明治3年（1871年）6月30日 - 神祇官から東京府に管轄が移った。
+1881年（明治14年）6月 - 平山省斎が官幣大社にしてほしいと内務省に願い出た。
+7月6日 - 東京府が官幣中社昇格を支持する上申を出した。
+11月26日 - 内務省が日枝神社の官幣中社昇格を支持する上申を出した。
+1882年（明治15年）1月9日 - 官幣中社に列した。
+1912年（大正元年） - 官幣大社に昇格した。
+
+
+== 文化財 ==
+
+
+=== 国宝 ===
+太刀 銘則宗
+
+
+=== 重要文化財 ===
+太刀 銘国綱
+太刀 銘定利
+太刀 銘一
+太刀 銘長光
+太刀 銘備州長船住長光
+太刀 銘守家
+太刀 銘高包
+太刀 銘師光
+太刀 銘延房
+太刀 銘重久
+太刀 銘備前国新田荘住親依元徳四年云々
+太刀 銘備州萬壽住右衛門尉吉次作
+太刀 銘豊後国行平作
+薙刀 無銘 伝当麻
+
+
+=== 東京大空襲で焼失した旧国宝 ===
+本殿
+幣殿
+拝殿
+中門
+透塀
+
+
+== 氏子地域 ==
+
+
+== ギャラリー ==
+
+
+== 交通アクセス ==
+東京メトロ千代田線 - 赤坂駅（出口2）から徒歩3分
+東京メトロ南北線・銀座線 - 溜池山王駅（出口7）から徒歩3分
+東京メトロ千代田線 - 国会議事堂前駅（出口5）から徒歩5分。表参道側
+東京メトロ銀座線・丸ノ内線 - 赤坂見附駅（出口11）から徒歩8分
+※本殿、拝殿を囲む内苑は、17時に閉門となる。
+
+
+== 事件 ==
+2008年6月13日、社内で巫女が神職に強姦された（赤坂日枝神社内巫女強姦事件）。神幸祭の慰労会で権禰宜が巫女に約2時間飲酒を強要した挙げ句、その後に社務所地下二階にある男子禁制の女子参篭室（女子更衣室）に侵入して、彼女を脅して強姦した。
+
+
+== 脚注 ==
+
+
+=== 注釈 ===
+
+
+=== 出典 ===
+
+
+== 参考文献 ==
+「東京府社日枝神社ヲ官幣中社ニ列ス」、『公文類聚』第6編（明治15年）59巻1。国立公文書館デジタル・アーカイブにより2012年1月閲覧。
+
+
+== 関連項目 ==
+
+日枝の舞
+日枝神社の巫女リカちゃん
+山王日吉神社境内遺跡
+赤坂日枝神社内巫女強姦事件
+
+
+== 外部リンク ==
+日枝神社 - 公式ホームページ
+日枝神社ー山王祭
+山王祭 祭りのご紹介

@@ -1,0 +1,80 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q3342690 -->
+<!-- JA: 乃木神社 | EN: Nogi Shrine | SITELINKS: 9 -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%B9%83%E6%9C%A8%E7%A5%9E%E7%A4%BE_%28%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%29 -->
+<!-- ANSWER: -->
+<!-- TASK: read the ARTICLE below and identify this shrine's MOTHER HOUSE — the shrine it was branched from (勧請元 / 分霊元 / 総本社 / 本社). This is normally stated in the 由緒 or 歴史 prose, not in the infobox. Fill ANSWER with exactly one of:
+  MOTHER: <Qid> # <shrine name>   the mother house, as a Wikidata Q-id
+  AUTOCHTHONOUS:                  the article says the shrine is of indigenous/local origin (地主神, 国津神 of the place, founded in situ) with no parent shrine — this is a REAL finding, use Q135508874
+  UNCLEAR: <what the article says>  the article does not settle it
+
+Rules:
+  * The mother house is the shrine this one was BRANCHED FROM. Do not confuse it with: a shrine merged INTO this one (合祀), a 摂社/末社 inside this one's grounds, or a shrine this one is the head OF (that is the reverse direction).
+  * 総本社/総本宮 of the network is the right answer when the article says this shrine is a 分社 of it. If the article names a nearer, more specific parent (e.g. branched from a regional shrine which is itself a branch), prefer the NEARER one — the accurate individual layer is the whole point of this pass.
+  * Give a Q-id you have actually verified names that shrine. Do NOT guess a Q-id from a name; if you cannot confirm the item, answer UNCLEAR with the shrine name in the text.
+  * Founding by a person/clan, or 分霊 from a deity rather than a named shrine, is not a mother house — UNCLEAR.
+When ANSWER is filled this file is done. -->
+
+== ARTICLE ==
+乃木神社（のぎじんじゃ）は、東京都港区赤坂にある神社。明治期の軍人・乃木希典（乃木希典命）とその妻・乃木静子（乃木静子命）を祀る。旧社格は府社。現在は神社本庁の別表神社。
+
+
+== 概要 ==
+乃木夫妻が明治天皇大葬の日に自刃した邸宅（乃木公園・旧乃木邸として現存）の隣地に所在。
+梅の花が咲く期間限定で「梅香守」を頒布している。
+
+
+== 歴史 ==
+1912年（明治45年）7月30日に崩御した明治天皇の大喪儀当日である1912年（大正元年）9月13日、乃木希典陸軍大将と妻・静子が天皇に殉じて自刃した。乃木夫妻の忠誠心に感激した国民は次々と乃木邸を訪れ、その数は日増しに増えていった。そして、夫妻の葬儀と同時に、乃木邸近くの、当時「幽霊坂」と呼ばれていた坂の名前も「乃木坂」と改められた。
+1913年（大正2年）、阪谷芳郎東京市長（当時）が中心となって中央乃木会を設立し、乃木邸内の小社に乃木夫妻の霊を祀った。そして1919年（大正8年）には乃木神社創建の許可が下り、1923年（大正12年）11月1日に鎮座祭が行われた。設計は大江新太郎が手がけた。
+1945年（昭和20年）5月の東京大空襲で社殿を焼失したが、戦後全国の崇敬者の篤志により、1962年（昭和37年）9月13日、祭神50年祭に併せて本殿･幣殿・拝殿が復興された。なお、このときの設計は、新太郎の息子・大江宏が手がけた。また、1983年（昭和58年）には宏の長男・大江新と三男・昭によるコンクリート造の宝物殿が建てられた。
+
+
+== 境内社 ==
+正松神社
+乃木が師事した玉木文之進と、その甥の吉田松陰を祀る。1963年（昭和38年）創立。
+赤坂王子稲荷神社
+乃木夫妻が崇敬していた王子稲荷神社を勧請して1962年（昭和37年）に創立。
+
+
+== 周辺施設 ==
+乃木會館（乃木会館）
+神社隣接の、婚礼・宴会等に使用される施設。レストランが併設されている。
+乃木公園・旧乃木邸
+
+神社に隣接する公園で、乃木夫妻が暮らした邸宅だった。乃木の遺言により、邸宅・馬小屋の建物ごと東京市に寄贈。公園として整備され、大正2年（1913年）開設。明治35年（1902年）築の邸宅は現存する数少ない明治期の和洋折衷建築である。
+
+
+== その他 ==
+乃木家の墓所は当社でなく、近くの青山墓地の中にある。例祭日には墓前祭が行われる。
+
+
+== 脚注 ==
+
+
+== 参考文献 ==
+“乃木神社”.   東京都神社庁. 2020年7月4日閲覧。
+
+
+=== 関連出版 ===
+『乃木神社・東郷神社』別冊歴史研究「神社シリーズ」、新人物往来社、1993年
+『かたくなにみやびたるひと 乃木希典』乃木神社総代会 編著、展転社、2018年
+桑原嶽『乃木希典と日露戦争の真実　司馬遼太郎の誤りを正す』PHP新書（新版）、2016年 - 中央乃木会理事
+『乃木希典の世界』桑原嶽・菅原一彪 編、新人物往来社、1992年 - 論集
+
+
+== 関連項目 ==
+乃木神社 - 各地にある乃木神社の一覧
+乃木坂
+東郷神社
+秩父御嶽神社
+塚田清市 - 乃木の遺言執行者で乃木邸を市に遺贈した。
+江藤小三郎 - 思想家、社会運動家。没後の1975年（昭和50年）2月11日（建国記念の日）に、乃木会館において「江藤小三郎之命追悼慰霊祭」が開催された。
+佐倉城址公園 - 1983年（昭和58年）の宝物殿新設に伴い、かつて当地に存在した茶室・三逕亭の移築先。
+乃木坂46 - CDのヒット祈願や成人したメンバーの成人式を毎年行っている。メンバーの書いた絵馬が多く飾られている。ファンの聖地にもなっている。
+
+
+== 外部リンク ==
+
+東京・乃木坂 乃木神社
+乃木會館
+乃木神社骨董蚤の市
