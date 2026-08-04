@@ -33,6 +33,10 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
+## A000.
+
+Provide clear answers to me in chat, or even with an ask-user question about what to do with them for the scheme thing that I added earlier on after a00
+
 ## A00. ▶ The 11 unresolved lineage cases are ANSWERED on the shintowiki 分霊 page
 
 Emma 2026-08-04: **the 11 are solved on the shintowiki page on bunrei.** Read that page and apply
@@ -62,6 +66,8 @@ I need you to explain a lot more about what's actually going on with the Issei o
 ### idk this scheme 2
 
 https://docs.google.com/spreadsheets/d/1O3UBFVWMhe9PFBUCUxJ5iG-BddkS4QMBJvHBaUjDGJc/edit?gid=920559023#gid=920559023 For this one, I likewise have significant confusion, but my significant confusion's a bit different because I'm getting the impression that it's kind of like... I don't know if this is just all the ones with errors in it, or whether this is a specific defined category of just the 11 that needed judgment, plus the Issei ones that needed creation. You weren't really that clear about it and kind of made too many things. You even tried to 444 one. Is this just the case? Am I just seeing this? 
+
+
 
 ## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
 
