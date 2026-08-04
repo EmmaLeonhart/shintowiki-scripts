@@ -4,6 +4,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 — two corrections from Emma, and a new target set
+
+**A 勧請 in transit IS a real bunrei.** I had ruled UNCLEAR on the three shrines founded along
+行教's 859 journey carrying the Hachiman spirit from Usa to Iwashimizu — 亀山八幡宮 (下関), 琴崎八幡宮,
+甲宗八幡神社 — on the reasoning that a deity in transit is not a branch of either endpoint. Emma:
+they are real bunrei. All three now point at 宇佐神宮. Named parents go 39 → 42 of 344 (12.2%).
+
+Worth noting the shape of the error: I was refusing on a *category* of case rather than on the
+evidence in front of me, and 琴崎八幡宮's article says 分霊 outright. Caution applied to a class
+rather than to a claim is just a different way of being wrong.
+
+**Never walk a MediaWiki category recursively unless asked.** Now a standing rule in `CLAUDE.md`.
+Direct members are the set; descending into sub-categories silently changes what the task operates
+on and multiplies API load for a set nobody asked for.
+
+**New target set: 神宮125社**, on Emma's ruling that these are as worth the effort as the Beppyo
+shrines. Measured, direct members only: 99 ns-0 articles besides the list page, 76 with a Wikidata
+item (so 23 without one), 54 of the 76 lacking P1814, and none lacking P361.
+
+The P1814 gap is straightforward A0 work. The P612 question is not, and is held: a 摂社/末社/別宮 of
+the Jingū is a constituent *part*, not a bunrei branch, which is what P361 already records on all 76.
+Applying the Beppyo treatment wholesale would have manufactured a mother-house relationship that the
+model doc does not mean. That one waits for Emma.
+
+---
+
 ## 2026-08-04 — the builders were re-queueing work already done
 
 Reading the next batch of leads, a familiar QID went past: Q164895, which was in the very first

@@ -345,3 +345,6 @@ Q998709	AUTOCHTHONOUS	Q135508874	明治6年、前田利家を祀る尾山神社�
 Q11381863	MOTHER	Q705949	enwiki re-read: enwiki states it outright: "It is a branch shrine of Sumiyoshi-taisha."
 Q500763	MOTHER	Q712824	enwiki re-read: enwiki names it: "Kibitsu Shrine, the parent shrine of the Kibitsuhiko Jinja"; matches 安仁神社's jawiki account of a 分祀 from 吉備津神社
 Q335618	AUTOCHTHONOUS	Q135508874	enwiki re-read: enwiki: the three Kumano Sanzan are the sōhonsha of all Kumano shrines — this is a head, and no source names a parent
+Q11370831	MOTHER	Q715632	CORRECTED 2026-08-04 (Emma): a 勧請 in transit IS a real bunrei — 亀山八幡宮 (下関), from 行教's 859 Usa->Iwashimizu journey
+Q11573763	MOTHER	Q715632	CORRECTED 2026-08-04 (Emma): a 勧請 in transit IS a real bunrei — 琴崎八幡宮, from 行教's 859 Usa->Iwashimizu journey
+Q11577728	MOTHER	Q715632	CORRECTED 2026-08-04 (Emma): a 勧請 in transit IS a real bunrei — 甲宗八幡神社, from 行教's 859 Usa->Iwashimizu journey

@@ -146,8 +146,29 @@ delivers once the freeze lifts (2026-08-10).
   add a third competing tradition (Yasaka's Nunakuma origin) without settling anything.
   **~2% yield. Do not spend another pass on enwiki for this set.** 126 remain UNCLEAR and they are
   genuinely unsettled in both languages, not under-researched.
+- ✅ **CORRECTED 2026-08-04 (Emma): a 勧請 in transit IS a real bunrei.** I had ruled the three
+  shrines founded along 行教's 859 Usa→Iwashimizu journey UNCLEAR — 亀山八幡宮 (下関), 琴崎八幡宮,
+  甲宗八幡神社. Emma: they are real bunrei. All three now point at 宇佐神宮 (Q715632). Named parents
+  go 39 → 42 of 344 (12.2%).
 - ▶ **Remaining:** Emma's review of the 178 autochthonous calls.
 - **A more organized extraction technique is a job for Topaz, NOT this repo.**
+
+## A0c. 🖥️ 神宮125社 — the Ise Jingū constituent shrines (Emma 2026-08-04)
+
+**Emma's scope ruling:** every 別表神社 is notable enough to be worth high effort, and *"all of
+these shrines are that way too"* — <https://ja.wikipedia.org/wiki/Category:神宮125社>.
+
+**Measured 2026-08-04** (direct members only — never recurse a category, see `CLAUDE.md`):
+- 99 ns-0 articles besides the list page; **76 have a Wikidata item**, so **23 articles have none**.
+- **54 of the 76 lack P1814** — direct work for the A0 name-in-kana pipeline, and the obvious first
+  pass. Includes 豊受大神宮, 荒祭宮, 風日祈宮 and 伊勢神宮 itself.
+- **0 lack P361 (part of)** — every one is already linked as a constituent of the Jingū.
+
+**⚠️ P612 is probably the WRONG property here and this needs Emma's word before any is written.**
+A 摂社/末社/別宮 of the Jingū is a *constituent part* of it, not a bunrei branch — the model doc
+defines P612 as the mother house a shrine was branched FROM. P361 already expresses the real
+relationship and is already present on all 76. Only 2 of the 76 carry P612 at all. So the Beppyo
+treatment does **not** transfer wholesale: run the P1814 pass, hold the P612 question.
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 

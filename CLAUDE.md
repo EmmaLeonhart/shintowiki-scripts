@@ -392,6 +392,23 @@ festival item — plus the festival item as a P793 qualifier); bunrei = ONE P612
 with P1013 = Q195793 in the same statement. Never put a festival item in P3831; never
 emit a bare P612. Read the doc before generating any P837/P612/P793 QuickStatements.
 
+## NEVER walk a MediaWiki category recursively unless Emma asked for it
+
+Emma 2026-08-04: *"Any MediaWiki thing where you do recursive category search is almost
+always wrong unless I told you to do recursive category search."*
+
+A category's **direct** members are the set. Sub-categories are a different, usually
+much broader set, and pulling them in silently changes what the task is operating on —
+`Category:神宮125社` is 125 shrines; a recursive walk from a shrine category can drag in
+prefecture trees, era trees and thousands of unrelated pages. It also multiplies the
+request count against the API for a set nobody asked for.
+
+* Use `list=categorymembers` with `cmnamespace=0` and **do not follow `cmnamespace=14`
+  results**. Checking whether sub-categories exist is fine; descending into them is not.
+* If a task genuinely seems to need the sub-tree, ASK. Do not infer it from the task
+  "feeling incomplete".
+* This applies to shinto.miraheze.org and to ja.wikipedia alike.
+
 ## DO NOT HAMMER WIKIDATA — and do not use it as a lookup source
 
 Emma 2026-08-03: *"This wikidata is hard to use, so you don't use wikidata. Wikidata is

@@ -216,3 +216,6 @@ Q998709|P612|Q135508874|P1013|Q195793|S854|"https://ja.wikipedia.org/wiki/%E5%B0
 Q11381863|P612|Q705949|P1013|Q195793|S854|"https://en.wikipedia.org/wiki/Sumiyoshi_Shrine_%28Iki%29"
 Q500763|P612|Q712824|P1013|Q195793|S854|"https://en.wikipedia.org/wiki/Kibitsuhiko_Shrine"
 Q335618|P612|Q135508874|P1013|Q195793|S854|"https://en.wikipedia.org/wiki/Kumano_Hayatama_Taisha"
+Q11370831|P612|Q715632|P1013|Q195793|S854|"https://ja.wikipedia.org/wiki/%E4%BA%80%E5%B1%B1%E5%85%AB%E5%B9%A1%E5%AE%AE_%28%E4%B8%8B%E9%96%A2%E5%B8%82%29"
+Q11573763|P612|Q715632|P1013|Q195793|S854|"https://ja.wikipedia.org/wiki/%E7%90%B4%E5%B4%8E%E5%85%AB%E5%B9%A1%E5%AE%AE"
+Q11577728|P612|Q715632|P1013|Q195793|S854|"https://ja.wikipedia.org/wiki/%E7%94%B2%E5%AE%97%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
