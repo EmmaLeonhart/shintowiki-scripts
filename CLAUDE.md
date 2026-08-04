@@ -392,16 +392,42 @@ festival item — plus the festival item as a P793 qualifier); bunrei = ONE P612
 with P1013 = Q195793 in the same statement. Never put a festival item in P3831; never
 emit a bare P612. Read the doc before generating any P837/P612/P793 QuickStatements.
 
+## NEVER "deliberately hold" anything — do it, or fire an AskUserQuestion
+
+Emma 2026-08-04: *"Don't deliberately hold something. Don't narrate it. Just do it and ask
+me questions if you need to. Keep in mind I never get any questions that are not
+AskUserQuestions."*
+
+**Emma does not see prose questions.** A question written into a report, a commit message,
+a queue item, or a chat paragraph is not a question — it is a thing that never gets
+answered and silently stalls the work. The ONLY channel that reaches her is the
+`AskUserQuestion` tool.
+
+So there are exactly two legal outcomes for anything uncertain:
+
+1. **Do it.** Default. Uncertainty about which of two reasonable options is better is not
+   grounds for stopping — pick, act, and say which you picked.
+2. **Fire an `AskUserQuestion`** with the concrete options. Immediately, in the same turn
+   you discover the need — not in the next report.
+
+Never a third thing: "held pending Emma's word", "waiting on a decision", "flagged for
+review". Those are all just *not doing the work* with better vocabulary.
+
 ## NEVER walk a MediaWiki category recursively unless Emma asked for it
 
 Emma 2026-08-04: *"Any MediaWiki thing where you do recursive category search is almost
 always wrong unless I told you to do recursive category search."*
 
-A category's **direct** members are the set. Sub-categories are a different, usually
-much broader set, and pulling them in silently changes what the task is operating on —
-`Category:神宮125社` is 125 shrines; a recursive walk from a shrine category can drag in
-prefecture trees, era trees and thousands of unrelated pages. It also multiplies the
-request count against the API for a set nobody asked for.
+A category's **direct** members are the set.
+
+**The reason this is not a style preference: MediaWiki categories are not a taxonomy.**
+A subcategory is not reliably a *subset* — it is whatever some editor thought was
+related. Recursing from a shrine category picks up architecture categories, prefecture
+and era trees, festivals, priests, and articles that are not shrines at all, and the
+code cannot detect any of it, because every page it collected was genuinely "in the
+category". The result is a worklist that looks complete, is silently wrong, and costs
+far more API requests than the set anyone asked for. `Category:神宮125社` is 125 shrines;
+a recursive walk from it is not "the 125 shrines, thorough".
 
 * Use `list=categorymembers` with `cmnamespace=0` and **do not follow `cmnamespace=14`
   results**. Checking whether sub-categories exist is fine; descending into them is not.
