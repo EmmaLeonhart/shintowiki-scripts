@@ -72,7 +72,8 @@ def article_exists(titles):
 
 
 def main():
-    title2qid = json.load(open(os.path.join(ROOT, '_title2qid.json'), encoding='utf-8'))
+    title2qid = {t: q for t, q in json.load(open(
+        os.path.join(SCRIPT_DIR, 'subject_qids.json'), encoding='utf-8'))['map'].items() if q}
     rows = [r for r in load_results() if r[1] in ('TRANSFER', 'NETWORK')]
 
     wanted = set()

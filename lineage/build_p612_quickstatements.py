@@ -34,8 +34,11 @@ Targets are resolved to QIDs through **ja.wikipedia**, never Wikidata: one
 batched `prop=pageprops` call per 50 titles gives `wikibase_item` for free
 (CLAUDE.md — Wikidata is a destination, not a lookup source).
 
-Gates: the target must resolve to a QID, must not be the subject itself, and
-must not be Q135508874 unless the class is AUTOCHTHONOUS.
+Gates: the SUBJECT must have its own Wikidata item (`lineage/subject_qids.json`
+— 21 of the 444 are jawiki redirects with no item of their own, and emitting for
+them would write onto whichever shrine the redirect lands on); and the target
+must resolve to a QID, must not be the subject itself, and must not be
+Q135508874 unless the class is AUTOCHTHONOUS.
 
 --supersede replaces the earlier keyword pass's line for a subject this pass
 disagrees with. Emma 2026-08-04 on that earlier pass: it judged from keyword-
@@ -67,7 +70,7 @@ from shinto_miraheze.user_agent import USER_AGENT  # noqa: E402
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 RESULTS = os.path.join(SCRIPT_DIR, 'agent_results.tsv')
-TITLE2QID = os.path.join(ROOT, '_title2qid.json')
+SUBJECTS = os.path.join(SCRIPT_DIR, 'subject_qids.json')
 QS_OUT = os.path.join(ROOT, 'modern-quickstatements', 'beppyo_p612.txt')
 LOG = os.path.join(SCRIPT_DIR, '_p612_resolution.log')
 
@@ -214,7 +217,11 @@ def main():
                     help='drop the earlier pass\'s line where this pass disagrees')
     args = ap.parse_args()
 
-    title2qid = json.load(open(TITLE2QID, encoding='utf-8'))
+    # Each shrine's OWN item. 25 of the 444 titles are jawiki redirects and
+    # the old root _title2qid.json gave them the target article's QID, which
+    # put statements on another shrine's item — see build_subject_map.py.
+    title2qid = {t: q for t, q in
+                 json.load(open(SUBJECTS, encoding='utf-8'))['map'].items() if q}
     rows = list(load_results())
 
     # Every candidate title we might need, resolved in one batched pass.
@@ -242,7 +249,8 @@ def main():
         subject = title2qid.get(title)
         url = 'https://ja.wikipedia.org/wiki/' + urllib.parse.quote(title.replace(' ', '_'))
         if not subject:
-            skipped['no subject QID'] = skipped.get('no subject QID', 0) + 1
+            skipped['subject has no Wikidata item'] = skipped.get(
+                'subject has no Wikidata item', 0) + 1
             log.append(f'-\t{cls}\t{title}\tno subject QID')
             continue
         if cls == 'UNKNOWN':
@@ -289,15 +297,23 @@ def main():
         intended[subject] = (line, target, title)
 
     # This pass owns the P612 lines for its 444 subjects: any line for one of
-    # them that this run does not intend is stale — either the earlier keyword
-    # pass reading the article differently, or an earlier run of this script
-    # before the disambiguation gate existed (佐嘉神社 -> the 松原神社 dab page).
+    # them that is not exactly what this run intends is stale — the earlier
+    # keyword pass reading the article differently, an earlier run of this script
+    # before the disambiguation gate existed (佐嘉神社 -> the 松原神社 dab page), or
+    # a line whose S854 cites a redirect title because the subject map used to
+    # hand redirects another shrine's QID.
     subjects = {q for q in (title2qid.get(t) for t, _, _ in rows) if q}
+    # Keyed by the S854 article URL as well as by subject: a line can cite one of
+    # our 444 articles while sitting on the WRONG item, which is exactly what the
+    # redirect bug produced (馬場都々古別神社's line landed on 都々古別神社's item).
+    by_url = {l[0].split('|S854|')[1]: l[0] for l in intended.values()}
     superseded = [
         l for l in file_lines
-        if '|P612|' in l
-        and l.split('|')[0] in subjects
-        and l.split('|')[2] != (intended.get(l.split('|')[0]) or (None, None, None))[1]
+        if '|P612|' in l and l.strip() and (
+            (l.split('|')[0] in subjects
+             and l.strip() != (intended.get(l.split('|')[0]) or ('', None, None))[0])
+            or ('|S854|' in l and l.split('|S854|')[1] in by_url
+                and l.strip() != by_url[l.split('|S854|')[1]]))
     ]
 
     for subject, (line, target, title) in intended.items():

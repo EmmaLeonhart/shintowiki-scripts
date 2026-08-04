@@ -19,7 +19,7 @@ Q11388585	AUTOCHTHONOUS	Q135508874	光雲神社 ← in-situ founding
 Q11390512	AUTOCHTHONOUS	Q135508874	八代宮 ← in-situ founding
 Q692714	AUTOCHTHONOUS	Q135508874	八坂神社 ← in-situ founding
 Q11391001	TRANSFER	Q701403	八幡朝見神社 ← 鶴岡八幡宮
-Q11643869	AUTOCHTHONOUS	Q135508874	八槻都々古別神社 ← in-situ founding
+Q112152942	AUTOCHTHONOUS	Q135508874	八槻都々古別神社 ← in-situ founding
 Q3571285	TRANSFER	Q11664579	八重垣神社 ← 須我神社
 Q11393652	AUTOCHTHONOUS	Q135508874	兵庫縣姫路護國神社 ← in-situ founding
 Q11433004	AUTOCHTHONOUS	Q135508874	大分縣護國神社 ← in-situ founding
@@ -321,7 +321,7 @@ Q11665771	NETWORK	Q261637	飛幡八幡宮 ← 八幡神
 Q704865	AUTOCHTHONOUS	Q135508874	飛騨一宮水無神社 ← in-situ founding
 Q372380	AUTOCHTHONOUS	Q135508874	香取神宮 ← in-situ founding
 Q631373	AUTOCHTHONOUS	Q135508874	香椎宮 ← in-situ founding
-Q11643869	AUTOCHTHONOUS	Q135508874	馬場都々古別神社 ← in-situ founding
+Q114593121	AUTOCHTHONOUS	Q135508874	馬場都々古別神社 ← in-situ founding
 Q11668370	AUTOCHTHONOUS	Q135508874	駒形神社 ← in-situ founding
 Q3514126	AUTOCHTHONOUS	Q135508874	高千穂神社 ← in-situ founding
 Q11671498	TRANSFER	Q714828	高橋稲荷神社 ← 伏見稲荷大社
@@ -354,10 +354,10 @@ Q11431075	NETWORK	Q11633343	多賀宮 ← 外宮
 Q17222702	AUTOCHTHONOUS	Q135508874	大土御祖神社 ← in-situ founding
 Q17223627	AUTOCHTHONOUS	Q135508874	大山祇神社 (伊勢市) ← in-situ founding
 Q17223392	AUTOCHTHONOUS	Q135508874	大水神社 ← in-situ founding
-Q17227983	AUTOCHTHONOUS	Q135508874	屋乃波比伎神 ← in-situ founding
+-	AUTOCHTHONOUS	屋乃波比伎神	no subject QID
 Q17223513	AUTOCHTHONOUS	Q135508874	山末神社 ← in-situ founding
 Q17209206	AUTOCHTHONOUS	Q135508874	川原神社 (伊勢市) ← in-situ founding
-Q17223392	AUTOCHTHONOUS	Q135508874	川相神社 ← in-situ founding
+-	AUTOCHTHONOUS	川相神社	no subject QID
 Q11486118	AUTOCHTHONOUS	Q135508874	度会国御神社 ← in-situ founding
 Q11486120	AUTOCHTHONOUS	Q135508874	度会大国玉比賣神社 ← in-situ founding
 Q11488906	AUTOCHTHONOUS	Q135508874	御塩殿神社 ← in-situ founding
@@ -365,15 +365,15 @@ Q17230412	AUTOCHTHONOUS	Q135508874	御稲御倉 ← in-situ founding
 Q17214615	AUTOCHTHONOUS	Q135508874	御船神社 (多気町) ← in-situ founding
 Q17211756	AUTOCHTHONOUS	Q135508874	御酒殿神 ← in-situ founding
 Q17211721	AUTOCHTHONOUS	Q135508874	御食神社 (伊勢市) ← in-situ founding
-Q17212285	AUTOCHTHONOUS	Q135508874	大河内神社 ← in-situ founding
+-	AUTOCHTHONOUS	大河内神社	no subject QID
 Q17222697	AUTOCHTHONOUS	Q135508874	大津神社 (伊勢市) ← in-situ founding
-Q17228323	AUTOCHTHONOUS	Q135508874	大間国生神社 ← in-situ founding
+Q135098908	AUTOCHTHONOUS	Q135508874	大間国生神社 ← in-situ founding
 Q17227047	AUTOCHTHONOUS	Q135508874	奈良波良神社 ← in-situ founding
 Q17222830	AUTOCHTHONOUS	Q135508874	子安神社 (伊勢市) ← in-situ founding
-Q17222702	AUTOCHTHONOUS	Q135508874	宇治乃奴鬼神社 ← in-situ founding
+-	AUTOCHTHONOUS	宇治乃奴鬼神社	no subject QID
 Q17194122	AUTOCHTHONOUS	Q135508874	宇治山田神社 ← in-situ founding
 Q17194134	AUTOCHTHONOUS	Q135508874	宇須乃野神社 ← in-situ founding
-Q17227983	AUTOCHTHONOUS	Q135508874	宮比神 ← in-situ founding
+-	AUTOCHTHONOUS	宮比神	no subject QID
 Q17225978	UNKNOWN	-	小俣神社: no origin in the article
 Q17224784	AUTOCHTHONOUS	Q135508874	小社神社 ← in-situ founding
 Q18336610	AUTOCHTHONOUS	Q135508874	江神社 ← in-situ founding
@@ -385,55 +385,55 @@ Q17213398	AUTOCHTHONOUS	Q135508874	清野井庭神社 ← in-situ founding
 Q17225818	AUTOCHTHONOUS	Q135508874	湯田神社 ← in-situ founding
 Q17229063	AUTOCHTHONOUS	Q135508874	滝祭神 ← in-situ founding
 Q11566292	TRANSFER	-	瀧原宮: cannot resolve "磯宮"
-Q11566292	TRANSFER	-	瀧原竝宮: target is the subject itself
-Q17223392	AUTOCHTHONOUS	Q135508874	熊淵神社 ← in-situ founding
+-	TRANSFER	瀧原竝宮	no subject QID
+-	AUTOCHTHONOUS	熊淵神社	no subject QID
 Q17211291	TRANSFER	Q133753	志宝屋神社 ← 鹽竈神社
 Q17212285	AUTOCHTHONOUS	Q135508874	志等美神社 ← in-situ founding
-Q17212285	AUTOCHTHONOUS	Q135508874	打懸神社 ← in-situ founding
+-	AUTOCHTHONOUS	打懸神社	no subject QID
 Q11516023	AUTOCHTHONOUS	Q135508874	月夜見宮 ← in-situ founding
 Q11516220	UNKNOWN	-	月讀宮: no origin in the article
-Q17191186	NETWORK	-	朝熊御前神社: target is the subject itself
+-	NETWORK	朝熊御前神社	no subject QID
 Q17191186	AUTOCHTHONOUS	Q135508874	朝熊神社 (伊勢市) ← in-situ founding
 Q17229533	AUTOCHTHONOUS	Q135508874	朽羅神社 ← in-situ founding
 Q17218865	AUTOCHTHONOUS	Q135508874	棒原神社 ← in-situ founding
 Q11544511	AUTOCHTHONOUS	Q135508874	機殿神社 ← in-situ founding
-Q17228197	AUTOCHTHONOUS	Q135508874	毛理神社 ← in-situ founding
+-	AUTOCHTHONOUS	毛理神社	no subject QID
 Q17226402	TRANSFER	Q11442122	上御井神社 ← 天の真名井
 Q17213708	AUTOCHTHONOUS	Q135508874	下御井神社 ← in-situ founding
 Q17214144	AUTOCHTHONOUS	Q135508874	久具都比賣神社 ← in-situ founding
-Q11379372	AUTOCHTHONOUS	Q135508874	井中神社 ← in-situ founding
+-	AUTOCHTHONOUS	井中神社	no subject QID
 Q687168	TRANSFER	Q11599947	伊勢神宮 ← 笠縫邑
 Q11379372	AUTOCHTHONOUS	Q135508874	伊我理神社 ← in-situ founding
 Q10885171	NETWORK	Q9165	伊雑宮 ← 御魂
-Q17209205	AUTOCHTHONOUS	Q135508874	佐美長御前神社 ← in-situ founding
+-	AUTOCHTHONOUS	佐美長御前神社	no subject QID
 Q17209205	AUTOCHTHONOUS	Q135508874	佐美長神社 ← in-situ founding
 Q11387081	AUTOCHTHONOUS	Q135508874	倭姫宮 ← in-situ founding
 Q17225472	AUTOCHTHONOUS	Q135508874	加努弥神社 ← in-situ founding
-Q17214615	AUTOCHTHONOUS	Q135508874	牟弥乃神社 ← in-situ founding
+-	AUTOCHTHONOUS	牟弥乃神社	no subject QID
 Q17225991	AUTOCHTHONOUS	Q135508874	狭田国生神社 ← in-situ founding
-Q17229120	AUTOCHTHONOUS	Q135508874	田上大水御前神社 ← in-situ founding
+-	AUTOCHTHONOUS	田上大水御前神社	no subject QID
 Q17229120	AUTOCHTHONOUS	Q135508874	田上大水神社 ← in-situ founding
-Q17212120	NETWORK	Q11581011	田乃家御前神社 ← 皇大神宮
+-	NETWORK	田乃家御前神社	no subject QID
 Q17212120	NETWORK	Q455602	田乃家神社 ← 天照大御神
 Q17211882	AUTOCHTHONOUS	Q135508874	由貴御倉 ← in-situ founding
 Q11581011	TRANSFER	Q11599947	皇大神宮 ← 笠縫邑
 Q17228423	AUTOCHTHONOUS	Q135508874	神前神社 (伊勢市) ← in-situ founding
-Q11544511	AUTOCHTHONOUS	Q135508874	神服織機殿神社 ← in-situ founding
-Q11544511	AUTOCHTHONOUS	Q135508874	神麻続機殿神社 ← in-situ founding
+Q135186223	AUTOCHTHONOUS	Q135508874	神服織機殿神社 ← in-situ founding
+-	AUTOCHTHONOUS	神麻続機殿神社	no subject QID
 Q17192448	AUTOCHTHONOUS	Q135508874	粟皇子神社 ← in-situ founding
 Q17227983	AUTOCHTHONOUS	Q135508874	興玉神 ← in-situ founding
 Q17230799	AUTOCHTHONOUS	Q135508874	若宮神社 (大紀町) ← in-situ founding
 Q17228323	AUTOCHTHONOUS	Q135508874	草奈伎神社 ← in-situ founding
-Q17228423	AUTOCHTHONOUS	Q135508874	荒前神社 ← in-situ founding
+-	AUTOCHTHONOUS	荒前神社	no subject QID
 Q2859485	AUTOCHTHONOUS	Q135508874	荒祭宮 ← in-situ founding
-Q17214737	AUTOCHTHONOUS	Q135508874	葦立弖神社 ← in-situ founding
+-	AUTOCHTHONOUS	葦立弖神社	no subject QID
 Q17191305	AUTOCHTHONOUS	Q135508874	葭原神社 ← in-situ founding
-Q17225745	AUTOCHTHONOUS	Q135508874	蚊野御前神社 ← in-situ founding
+-	AUTOCHTHONOUS	蚊野御前神社	no subject QID
 Q17225745	AUTOCHTHONOUS	Q135508874	蚊野神社 ← in-situ founding
-Q17228423	NETWORK	Q7007362	許母利神社 ← inferred head: 淡嶋神社
+-	NETWORK	許母利神社	no subject QID
 Q11633343	TRANSFER	Q11547467	豊受大神宮 ← 比沼麻奈為神社
 Q11635561	AUTOCHTHONOUS	Q135508874	赤崎神社 ← in-situ founding
-Q17194122	AUTOCHTHONOUS	Q135508874	那自賣神社 ← in-situ founding
+-	AUTOCHTHONOUS	那自賣神社	no subject QID
 Q17226516	AUTOCHTHONOUS	Q135508874	鏡宮神社 (伊勢市) ← in-situ founding
 Q28693019	TRANSFER	Q11633343	長由介神社 ← 豊受大神宮
 Q11665463	UNKNOWN	-	風宮: no origin in the article
