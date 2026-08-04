@@ -85,7 +85,7 @@ except Exception:                                     # pragma: no cover
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
 
 KAMI_CLASS = "Q524158"           # kami

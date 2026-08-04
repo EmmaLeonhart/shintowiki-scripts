@@ -255,13 +255,17 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     `resolve_*`/`submit_*`/`select_*` module found this was the ONLY generator missing the guard —
     the other unguarded files are import-only helpers (`kana_english`, `romaji_phonology`,
     `user_agent`, …). `tests/test_no_work_on_import.py` now asserts the guard across all generators.
-  - ▶ **SPARQL endpoint migration — 19 scripts left on `query.wikidata.org`** (was 24; 5 migrated
-    2026-08-04, each verified live: `generate_p958_qualifiers`, `generate_shinmei_ids`,
-    `generate_identical_name_en_labels` through their own helpers, `generate_cjk_ja_backfill` and
-    `generate_soja_only` by a bounded probe through their own constant + headers — their real
-    queries are whole-corpus scans and firing one to test a URL is the load pattern we were told to
-    stop). The 9 in `shinto_miraheze/` import `mwclient`, so they cannot even be imported here and
-    must wait for the blackout to lift before a live check is possible. The repo is
+  - ▶ **SPARQL endpoint migration — 9 left, ALL of them blocked.** `modern-quickstatements/` is
+    DONE (15 migrated 2026-08-04, every one verified with a bounded `LIMIT 1` probe through its own
+    constant). The 9 remaining all sit in `shinto_miraheze/` and import `mwclient`, which is not
+    installed in the dev environment — so they cannot be imported, and a live check is impossible
+    until the blackout lifts. They stay on the old endpoint rather than being changed blind.
+    - **Verify these textually, never by importing.** 84 modules in this repo rebind `sys.stdout` at
+      module scope — that is the documented script-template invariant in `CLAUDE.md`, not a defect,
+      and it exists because these are CLI scripts needing UTF-8 output on Windows. Importing one
+      replaces the caller's stdout and breaks it. Read the constant out of the source instead. (This
+      is distinct from `generate_soja_only.py`, which additionally RAN ITS WORK on import — that was
+      a genuine defect and is fixed.)
     mid-migration to `query-main.wikidata.org` (32 scripts already there). The old endpoint
     threw repeated 503/504 during the 2026-08-03 rematch's 17,549-candidate P131 pass;
     `generate_genbu_ids.py` was moved and verified live, which also fixed

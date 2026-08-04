@@ -27,7 +27,7 @@ import requests
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_API = "https://shinto.miraheze.org/w/api.php"
-SPARQL_URL = "https://query.wikidata.org/sparql"
+SPARQL_URL = "https://query-main.wikidata.org/sparql"
 PAGE_TITLE = "QuickStatements/P11250"
 OUTPUT_FILE = "p11250_miraheze_links.txt"
 QS_LINE_RE = re.compile(r'^(Q\d+)\|P11250\|"shinto:.+"$')

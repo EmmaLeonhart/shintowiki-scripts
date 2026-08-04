@@ -42,7 +42,7 @@ import requests
 
 UA = {"User-Agent": USER_AGENT}
 JA_API = "https://ja.wikipedia.org/w/api.php"
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 
 LIST_ARTICLE = "出雲国の式内社一覧"
 

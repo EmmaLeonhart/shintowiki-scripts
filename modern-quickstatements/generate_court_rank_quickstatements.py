@@ -60,7 +60,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "court_rank_people.txt")
 
 JA_API = "https://ja.wikipedia.org/w/api.php"
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 PARENT_CAT = "Category:日本の位階受位者"
 RANK_SUFFIX = "受位者"
 

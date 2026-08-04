@@ -4,6 +4,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 (batch 2) — endpoint migration finished for modern-quickstatements
+
+Ten more scripts moved to `query-main`, completing that directory: 15 of the original 24. All ten
+verified with a bounded `LIMIT 1` probe through each module's own SPARQL constant. `fetch_p11250_
+from_wiki.py` and `fetch_p6262_from_wiki.py` also hold a `WIKI_API` pointing at shinto.miraheze.org;
+their SPARQL constant was changed but the scripts were never invoked, so the blackout is intact.
+
+**A framing correction from the previous entry.** The first verification pass imported each module,
+and the second import blew up with "I/O operation on closed file" — the module had rebound
+`sys.stdout` at module scope. The reflex was to call it the same defect as `generate_soja_only.py`
+and start fixing files. It is not. **84 modules in this repo do it, and `CLAUDE.md` lists it as a
+script-template invariant** — these are CLI scripts that need UTF-8 output on Windows. Rewriting 84
+files to suit a verification method would have been exactly the "normalize a deliberate convention"
+failure the conventions file warns about.
+
+So the previous entry's "one file, not a pattern" stands for what it actually claimed — running work
+on import — and the stdout rebinding is a separate, intentional thing that only bites a caller who
+imports. The fix was to my approach, not to the repo: read the constant out of the source textually
+and probe with a compliant UA, importing nothing.
+
+Nine remain, all in `shinto_miraheze/`, all behind an `mwclient` import that is absent here. They
+stay on the old endpoint until the blackout lifts and a live check becomes possible.
+
+---
+
 ## 2026-08-04 (later still) — the generator that did its work on import
 
 `generate_soja_only.py` had three module-level side effects, all of which fired on import: it ran

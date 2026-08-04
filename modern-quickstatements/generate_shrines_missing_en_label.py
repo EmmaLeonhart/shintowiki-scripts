@@ -32,7 +32,7 @@ from datetime import datetime, timezone
 
 import requests
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = USER_AGENT
 SHINTO_SHRINE = "Q845945"
 OUTPUT_FILE = "shrines_missing_en_label.json"

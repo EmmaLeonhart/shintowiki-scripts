@@ -57,7 +57,7 @@ except Exception:                                     # pragma: no cover
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 KAMI_CLASS = "Q524158"
 OUTFILE = os.path.join(_here, "kami_parent_qualifiers.txt")
 

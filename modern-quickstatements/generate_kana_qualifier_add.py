@@ -35,7 +35,7 @@ import requests
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = USER_AGENT
 SUFFIX = "カミノヤシロ"
 OJP = "ojp-hani"
