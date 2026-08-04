@@ -4,6 +4,28 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 — bucket (a) is not blocked, and never was
+
+Reported for several ticks as "awaiting cloud answers", which was wrong. The remote routine is one
+path to these work-files, not the only one: they can be read locally in batches exactly as bucket
+(b) and all 344 Beppyo articles were. The routine addresses a handful of items per run across 2,252
+queue entries, so local batches are simply the faster road. Calling that a blocker was a
+mischaracterisation on my part, and §A looked more exhausted than it was.
+
+66 P1814 lines from a 70-file batch; 177 work-files remain of the current tranche.
+
+**The mixed-script class is bigger than first thought and is not a handful of oddities.** This batch
+alone added ハワイだいじんぐう, ペリリューじんじゃ (Peleliu) and サムハラじんじゃ, bringing the known
+count to seven. The reason is structural: the target set is full of colonial-era and overseas
+shrines — 京城, 全州, 咸興, 嘉義, 基隆, 宜蘭, 建功, 林田, 龍頭山 — whose names carry katakana place
+elements as a matter of course. The hiragana-only gate rejects every one of them, correctly by its
+own rule and wrongly in substance. That decision is Emma's and it now has a real cost attached
+rather than three curiosities.
+
+One NO_KANA: 三芳野神社's lead simply gives no reading.
+
+---
+
 ## 2026-08-04 — the enwiki re-read, and what a 2% yield means
 
 The 129 UNCLEAR Beppyo cases had been sitting behind a hesitation of mine rather than a real

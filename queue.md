@@ -42,8 +42,11 @@ external thing.
 - ✅ **Bucket (b) is FINISHED** — all 54 done locally: 50 P1814 lines + 43 en labels (via
   `kana_english.label_for`). 4 produced no statement: 3 legitimately mixed-script readings and 1
   two-shrine disambiguation page.
-- ⏳ **Bucket (a): 2,582 remaining**, 247 work-files queued to the cloud routine; rebuild more with
-  `--limit N` as they drain.
+- ⏳ **Bucket (a): 2,582 targets; 66 done locally 2026-08-04**, 177 work-files still unanswered.
+  **The cloud routine is one path, not the only one** — these can be extracted locally in batches
+  exactly like bucket (b), and waiting on the routine is not a blocker. It addresses only a handful
+  of items per run across all 2,252 queue entries, so local batches are the faster road. Rebuild more
+  work-files with `--limit N` once the current 177 are drained.
 - ✅ **The Engishiki collision does not exist** (checked in the cleanup's own code, not assumed):
   `generate_kana_qualifier_add.py` guards both branches with `is_katakana()`, `_remove.py` emits
   value-matched removals, and this builder only queues items that already have no top-level P1814.
@@ -52,8 +55,9 @@ external thing.
   Q134886554, Q134736575, Q140476265. They reach the target set legitimately — the repurposing
   stripped their P1814 — and writing to one would be editing the husk. A5 says document, don't touch.
 - ❗ **Known gate limitation, not yet decided:** the hiragana-only gate also rejects *legitimately*
-  mixed-script readings — ハワイいしづちじんじゃ (Hawaii), スワトウじんじゃ (Swatow), アラハバキかみ
-  (a katakana deity name). These are logged as KATAKANA and produce nothing. Emma's call whether to
+  mixed-script readings. Now **7 known**: ハワイいしづちじんじゃ, ハワイだいじんぐう, スワトウじんじゃ,
+  ペリリューじんじゃ (Peleliu), サムハラじんじゃ, アラハバキかみ, and counting — the colonial-era and
+  overseas shrines make this a recurring class, not a handful of oddities. These are logged as KATAKANA and produce nothing. Emma's call whether to
   allow katakana that is a loanword/place-name rather than an ancient reading.
 
 **Original brief follows.**
