@@ -392,6 +392,32 @@ festival item — plus the festival item as a P793 qualifier); bunrei = ONE P612
 with P1013 = Q195793 in the same statement. Never put a festival item in P3831; never
 emit a bare P612. Read the doc before generating any P837/P612/P793 QuickStatements.
 
+## DO NOT HAMMER WIKIDATA — and do not use it as a lookup source
+
+Emma 2026-08-03: *"This wikidata is hard to use, so you don't use wikidata. Wikidata is
+something that you use for wikidata purposes — it's something we use for our gradual
+stuff. You don't fucking hammer it."*
+
+**Wikidata is a DESTINATION, not a database to query for working data.** It exists here
+for the gradual QuickStatements drip. It is not the place to look things up.
+
+* **To enumerate a set of shrines, use the Japanese Wikipedia CATEGORY**, via the
+  MediaWiki API (`list=categorymembers`) — one cheap paginated call. Emma 2026-08-03,
+  on the Beppyo pass: *"Are you seriously trying to get the Beppyo shrines from
+  Wikidata? Don't! Get them from the Japanese Wikipedia category for them!"* The QID of
+  each article comes free from the same API (`prop=pageprops` → `wikibase_item`), so a
+  SPARQL round-trip is not needed for that either.
+* **Never issue a large batched SPARQL sweep.** The failure that produced this rule:
+  `match_jinjacho_shrines.py` fired ~365 queries per run — 300 of them P131
+  transitive-closure batches — at 0.5s spacing, three times in one evening, and drew
+  repeated 503/504 which were then blamed on the endpoint. `WDQS_THROTTLE = 2.5` in
+  `generate_genbu_ids.py` is now the floor, with exponential backoff (15/45/135s).
+* **429 → bail immediately** (existing rule). 503/504 → back off hard, do not retry
+  tightly.
+* If a task seems to need a broad Wikidata query, prefer: a jawiki category, a jawiki
+  article's own content, an already-generated local file, or ask Emma. A slow correct
+  source beats a fast one that damages a service we depend on.
+
 ## Wikidata editing — ONE path only, no edit summaries
 
 **Wikidata is edited by exactly one mechanism: the daily QuickStatements

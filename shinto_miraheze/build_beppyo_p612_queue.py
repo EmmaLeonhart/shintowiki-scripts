@@ -11,11 +11,16 @@ carries it. Ubiquitous in prose, absent from the infobox, is precisely the shape
 a regex cannot take and a reader can. Emma is confident an LLM can do it and
 specified an Opus pass, expecting some results to need correction.
 
-THE ROUTE WAS CONFIRMED, NOT GUESSED (Emma's instruction). Beppyo membership is
-NOT modelled with P31: `?i wdt:P31 wd:Q10898274` returns ZERO. It is carried by
-the shrine-ranking property — `?i wdt:P13723 wd:Q10898274` — which returns
-exactly 350, matching the real-world count of 別表神社. 344 have a jawiki
-article; 13 already carry P612 (only 6 of those with the P1013 qualifier).
+MEMBERSHIP COMES FROM THE JAWIKI CATEGORY, NOT FROM WIKIDATA (Emma 2026-08-03:
+"Are you seriously trying to get the Beppyo shrines from Wikidata? Don't! Get
+them from the Japanese Wikipedia category for them!"). `Category:別表神社` lists
+346 ns-0 articles and costs ONE paginated API call. Each article's QID comes back
+from the same API via `prop=pageprops` → `wikibase_item`, so this script issues no
+SPARQL at all — see the "DO NOT HAMMER WIKIDATA" rule in CLAUDE.md.
+
+(The earlier version queried `?i wdt:P13723 wd:Q10898274`. That route is real —
+P31 returns zero, the ranking property returns 350 — but querying Wikidata to
+build a worklist is exactly the habit that rule forbids.)
 
 ORDERING. "Large shrines first, then move down" — ordered by sitelink count,
 which puts Itsukushima, Meiji Jingū, Izumo Taisha, Heian Jingū, Kamigamo at the
@@ -52,30 +57,14 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 OUT_DIR = os.path.join(REPO_ROOT, "beppyo_p612")
 
-SPARQL = "https://query-main.wikidata.org/sparql"
 JA_API = "https://ja.wikipedia.org/w/api.php"
 UA = ("ShintoWikiBeppyo/1.0 "
       "(https://github.com/EmmaLeonhart/shintowiki-scripts; emma@topazcomputing.com)")
-HDR = {"User-Agent": UA, "Accept": "application/sparql-results+json"}
 THROTTLE = 0.4
 BATCH = 1                        # whole-article extracts are 1-per-request (see articles())
 MAX_CHARS = 20000                # per-article cap in the work-file
 
-BEPPYO = "Q10898274"             # 別表神社 — reached via P13723, NOT P31
 AUTOCHTHONOUS = "Q135508874"
-
-TARGET_QUERY = """
-SELECT ?item ?ja ?en ?art (COUNT(?any) AS ?links) WHERE {
-  ?item wdt:P13723 wd:%s .
-  ?art schema:about ?item ; schema:isPartOf <https://ja.wikipedia.org/> .
-  ?any schema:about ?item .
-  OPTIONAL { ?item rdfs:label ?ja . FILTER(LANG(?ja)="ja") }
-  OPTIONAL { ?item rdfs:label ?en . FILTER(LANG(?en)="en") }
-  FILTER NOT EXISTS { ?item wdt:P612 ?m }
-}
-GROUP BY ?item ?ja ?en ?art
-ORDER BY DESC(?links)
-""" % BEPPYO
 
 TASK = (
     "<!-- TASK: read the ARTICLE below and identify this shrine's MOTHER HOUSE — "
@@ -110,34 +99,49 @@ def _utf8():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 
-def sparql(query):
-    for attempt in range(4):
-        time.sleep(0.5)
-        try:
-            r = requests.post(SPARQL, data={"query": query, "format": "json"},
-                              headers=HDR, timeout=180)
-            if r.status_code == 429:
-                raise SystemExit("429 from WDQS — bailing (CLAUDE.md 429 policy).")
-            r.raise_for_status()
-            return r.json()["results"]["bindings"]
-        except SystemExit:
-            raise
-        except Exception as e:
-            print(f"  [WDQS retry {attempt + 1}] {e}", flush=True)
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError("WDQS failed")
+CATEGORY = "Category:別表神社"
+
+
+def _api(params):
+    p = {"action": "query", "format": "json", "formatversion": 2}
+    p.update(params)
+    time.sleep(THROTTLE)
+    r = requests.get(JA_API, params=p, headers={"User-Agent": UA}, timeout=90)
+    r.raise_for_status()
+    return r.json()
+
+
+def category_members():
+    """Every ns-0 article in Category:別表神社. One paginated API call."""
+    titles, cont = [], {}
+    while True:
+        d = _api(dict({"list": "categorymembers", "cmtitle": CATEGORY,
+                       "cmlimit": 500, "cmnamespace": 0}, **cont))
+        titles += [m["title"] for m in d["query"]["categorymembers"]]
+        if "continue" not in d:
+            return titles
+        cont = d["continue"]
 
 
 def targets():
-    """[(qid, ja, en, ja_title, sitelinks)] — Beppyo shrines with no P612, big first."""
+    """[(qid, ja_title, langlinks)] for the category's articles, biggest first.
+
+    The QID arrives with the article listing (pageprops.wikibase_item) and the
+    langlink count stands in for "large shrine" — no Wikidata query is made.
+    """
+    titles = [t for t in category_members() if t != "別表神社"]
     out = []
-    for b in sparql(TARGET_QUERY):
-        qid = b["item"]["value"].rsplit("/", 1)[-1]
-        title = urllib.parse.unquote(
-            b["art"]["value"].rsplit("/", 1)[-1]).replace("_", " ")
-        out.append((qid, b.get("ja", {}).get("value", ""),
-                    b.get("en", {}).get("value", ""), title,
-                    int(b["links"]["value"])))
+    for i in range(0, len(titles), 50):
+        chunk = titles[i:i + 50]
+        d = _api({"titles": "|".join(chunk), "prop": "pageprops|langlinks",
+                  "lllimit": 500})
+        for p in d.get("query", {}).get("pages", []):
+            qid = (p.get("pageprops") or {}).get("wikibase_item")
+            if not qid:
+                continue
+            out.append((qid, p["title"], len(p.get("langlinks", []))))
+        print(f"  ids {min(i + 50, len(titles))}/{len(titles)}", flush=True)
+    out.sort(key=lambda r: -r[2])
     return out
 
 
@@ -199,10 +203,10 @@ def main():
     ap.add_argument("--stats", action="store_true", help="count only, write nothing")
     args = ap.parse_args()
 
-    print(f"querying the {BEPPYO} (別表神社) set via P13723...", flush=True)
+    print(f"listing {CATEGORY} from ja.wikipedia (no Wikidata query)...", flush=True)
     rows = targets()
-    print(f"{len(rows)} Beppyo shrines with a jawiki article and no P612 "
-          f"(largest first: {', '.join(r[1] or r[0] for r in rows[:5])})")
+    print(f"{len(rows)} Beppyo articles with a QID "
+          f"(largest first: {', '.join(r[1] for r in rows[:5])})")
     if args.stats:
         return
 
@@ -213,15 +217,15 @@ def main():
         print("every target already has a work-file")
         return
     print(f"downloading {len(todo)} jawiki articles...", flush=True)
-    text = articles([r[3] for r in todo])
+    text = articles([r[1] for r in todo])
 
     written, missing = 0, []
-    for qid, ja, en, title, links in todo:
+    for qid, title, links in todo:
         body = text.get(title)
         if not body:
             missing.append((qid, title))
             continue
-        write_work_file(qid, ja, en, title, links, body)
+        write_work_file(qid, title, "", title, links, body)
         written += 1
     print(f"\n{written} work-files -> {OUT_DIR}")
     if missing:
