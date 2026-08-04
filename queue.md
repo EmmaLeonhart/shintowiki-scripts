@@ -59,6 +59,10 @@ Wikidata item"). Method: `docs/lineage_full_read_method.md`.
 
 I need you to explain a lot more about what's actually going on with the Issei ones, but my impression is that you should just make items for all of the Issei ones. I presume you did wiki data searches, and wiki data searches for them have found that, in my experience, they don't exist. Just make them. All we need to do is make them with the English name, English language name, the P31 Shinto Shrine Japanese language name, and a connection, and then it'll gradually go through our pipeline as well. 
 
+### idk this scheme 2
+
+https://docs.google.com/spreadsheets/d/1O3UBFVWMhe9PFBUCUxJ5iG-BddkS4QMBJvHBaUjDGJc/edit?gid=920559023#gid=920559023 For this one, I likewise have significant confusion, but my significant confusion's a bit different because I'm getting the impression that it's kind of like... I don't know if this is just all the ones with errors in it, or whether this is a specific defined category of just the 11 that needed judgment, plus the Issei ones that needed creation. You weren't really that clear about it and kind of made too many things. You even tried to 444 one. Is this just the case? Am I just seeing this? 
+
 ## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
 
 **Status.** Builder `shinto_miraheze/build_name_in_kana_queue.py` + collector
