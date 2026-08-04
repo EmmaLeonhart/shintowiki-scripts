@@ -33,6 +33,28 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
+## A00. ▶ The 11 unresolved lineage cases are ANSWERED on the shintowiki 分霊 page
+
+Emma 2026-08-04: **the 11 are solved on the shintowiki page on bunrei.** Read that page and apply
+its answers — do not re-derive them, and do not guess a target for any of them.
+
+⛔ **Gated on the blackout, which is the only reason this is not done yet.** No requests to
+shinto.miraheze.org of any kind until **2026-08-09** (see the gate at the top). First thing after
+it lifts: pull the 分霊 page, then fix the 11.
+
+The 11 (from `lineage/manual_fixes.tsv`; Google Sheet "11 judgement calls"):
+- **5 targets the article names but that would not resolve** — 佐嘉神社←松原神社 (dab),
+  忌部神社←五所神社 (dab), 瀧原宮←磯宮 (no article), 坐摩神社←宮中（神祇官西院）の坐摩神,
+  劔神社←伊部郷座ヶ岳の素盞嗚尊神霊.
+- **6 with no origin in the article** — 小俣神社 (since resolved: ←豊受大神宮), 度津神社, 月讀宮,
+  石園座多久虫玉神社, 風宮, 風日祈宮. The other five are staged as `P612 = Q24238356` (unknown,
+  cited to the jawiki article) per Emma 2026-08-04 — **if the 分霊 page gives a real answer it
+  supersedes that**, via `python lineage/build_p612_quickstatements.py --supersede`.
+
+Everything else is done: 419 statements staged in `modern-quickstatements/beppyo_p612.txt`, and the
+21 shrines with no Wikidata item are Emma's by hand (Google Doc "21 Ise shrines that need a
+Wikidata item"). Method: `docs/lineage_full_read_method.md`.
+
 ## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
 
 **Status.** Builder `shinto_miraheze/build_name_in_kana_queue.py` + collector
