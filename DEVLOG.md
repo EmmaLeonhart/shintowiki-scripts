@@ -16,6 +16,24 @@ itself — the freeze only gates the submitter.
 
 ---
 
+## 2026-08-03 — monthly verification sweep: nothing to verify
+
+The 2026-08-01 sweep task fired against an empty Open list. The 07-04 sweep closed
+every outstanding item, and nothing was added to `docs/deferred_verification.md` in the
+month since — which is itself worth noting: five weeks of shipping produced zero logged
+unverified changes, so either the log is not being fed when things ship unverified, or
+the blackout has simply stopped the wiki-lagging work that generates those entries. The
+second is the likely explanation (§B has been frozen since 07-11), but the first is the
+failure mode to watch for when the gate reopens.
+
+Pruned the Verified section (entries dated 2026-06-05 → 2026-07-04, all past the
+week-expiry rule) and replaced it with a short sweep log, so the file records *that* a
+sweep happened without carrying a month of closed findings. Added a standing note: an
+item added during the blackout whose check needs a wiki read stays Open with its check
+written out — it does not get tested by touching Miraheze.
+
+---
+
 ## 2026-07-28 (later) — the remote routine can push again; court-rank wired in
 
 **Local git was broken, and it was not our doing.** The working copy had `.git` with an
