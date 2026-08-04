@@ -405,6 +405,24 @@ def load_conflict_watch():
             "project_chat_hold": bool(state.get("project_chat_hold"))}
 
 
+# Items ブルーノ・プラス REPURPOSED — queue.md A5, Emma: "document, don't touch;
+# no contact until we understand the editor." Source: docs/bruno_plus_analysis_2026-07.md.
+#
+# This lives at the SUBMITTER, not in each generator, because generators reach
+# these items honestly: the husk now IS the 大美和神社 / 近殿神社 item on Wikidata,
+# so any pipeline resolving a jawiki article to a QID by sitelink lands on it.
+# Found 2026-08-04: ten staged lines across five atomic files targeted husks,
+# including `Q123044569|Len|"Ōmiwa Shrine"` — an edit that would have endorsed
+# the repurposing. Patching five generators would leave the sixth to be written;
+# one refusal on the only road to Wikidata cannot be bypassed.
+REPURPOSED = {
+    "Q123044569",   # was Kamo Shrine (Odawara) -> repurposed into 大美和神社
+    "Q134886554",   # was Chikadono Shrine (Saitama) -> repurposed into 近殿神社
+    "Q134736575",   # 見光寺
+    "Q140476265",   # created then blanked; junk husk
+}
+
+
 def item_is_editable(qid, today=None):
     """GATE 2 — per-item freshness. Never edit what someone else just touched.
 
@@ -415,6 +433,11 @@ def item_is_editable(qid, today=None):
 
     A lookup failure means we do not know, so we decline — same fail-closed rule.
     """
+    # Refused before the revision lookup: these are never editable, whatever
+    # their history says, and asking costs a request for an answer we ignore.
+    if qid in REPURPOSED:
+        return False, "ブルーノ・プラス-repurposed husk — document, don't touch (queue A5)"
+
     today = today or datetime.datetime.now(datetime.timezone.utc).date()
     try:
         revisions = conflict_gate.fetch_item_revisions(qid)

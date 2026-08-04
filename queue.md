@@ -288,6 +288,18 @@ All registered atomic files are staged-but-not-delivered by design until `confli
 
 ## A5. ⏸ Parked — external, and not shintowiki either
 
+- ⛔ **HUSK GUARD (2026-08-04).** Ten staged QuickStatements across five atomic files targeted the
+  ブルーノ・プラス-repurposed items — including `Q123044569|Len|"Ōmiwa Shrine"`, which would have put
+  an English label on the repurposed identity. They arrived honestly: the husk now IS the 大美和神社 /
+  近殿神社 item on Wikidata, so any generator resolving a jawiki article to a QID by sitelink lands on
+  one. Nothing went out only because the freeze was still on. Lines stripped; the durable guard is a
+  refusal in `direct_daily_edits.item_is_editable()` — the single road to Wikidata — not in each
+  generator, because the next generator written would miss it.
+  `tests/test_repurposed_husks_never_edited.py` asserts both the gate and that no atomic file stages
+  a husk edit. **Expect generators to keep re-emitting these lines on each CI regeneration; the gate
+  is what makes that harmless.**
+
+
 - **Repurposed-item damage** — Q123044569 (Kamo), Q134886554 (Chikadono), Q134736575 (見光寺),
   Q140476265 (junk). Emma: *document, don't touch; no contact* until we understand the editor. The
   Kikuna restoration is already queued to our item Q134926804. `docs/bruno_plus_analysis_2026-07.md`.

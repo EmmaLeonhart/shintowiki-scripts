@@ -4,6 +4,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 — ten queued edits to items we were told not to touch
+
+With §A's remaining items all decision- or date-blocked, the tick went to validating the staged
+QuickStatements before the freeze lifts — 277 lines that reach Wikidata on 2026-08-10, where a wrong
+statement is the expensive direction. The beppyo and name-in-kana files came back clean: no
+malformed lines, no self-referential P612, no duplicated subject.
+
+The scan that mattered was the one for the ブルーノ・プラス husks. **Ten staged lines across five
+atomic files targeted them** — `en_labels_sonnet`, `honzon_p825`, `saijin_p825`,
+`saijin_deity_research`, `souken_p571` — including `Q123044569|Len|"Ōmiwa Shrine"`, which would have
+put an English label on the repurposed identity. queue.md A5 says document, don't touch. Nothing had
+gone out only because the freeze was still on.
+
+They arrive honestly, which is the point worth remembering: the husk now IS the 大美和神社 / 近殿神社
+item on Wikidata, so any generator that resolves a jawiki article to a QID by sitelink lands on one.
+Five generators produced these; a sixth will be written eventually. So the guard went into
+`direct_daily_edits.item_is_editable()` — the single road to Wikidata under the one-path rule — as a
+refusal before the revision lookup, rather than into each generator. The staged lines were stripped
+as well, but that half is temporary: CI regenerates those files, the lines will come back, and the
+gate is what makes their return harmless.
+
+The test covers both halves, and includes a check that a normal QID still passes — a gate written
+slightly too broadly would refuse everything and still look like it worked.
+
+---
+
 ## 2026-08-04 (batch 2) — endpoint migration finished for modern-quickstatements
 
 Ten more scripts moved to `query-main`, completing that directory: 15 of the original 24. All ten
