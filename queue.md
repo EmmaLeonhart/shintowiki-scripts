@@ -105,7 +105,16 @@ also applies to the `vsa_libraries.txt` batch, which shared the tool.
 - ✅ **Bucket (b) is FINISHED** — all 54 done locally: 50 P1814 lines + 43 en labels (via
   `kana_english.label_for`). 4 produced no statement: 3 legitimately mixed-script readings and 1
   two-shrine disambiguation page.
-- ⏳ **Bucket (a): 2,582 targets; 197 done locally 2026-08-04**, 34 work-files left in this tranche.
+- ⏳ **Bucket (a): 2,582 targets; 251 done locally 2026-08-04**, 33 work-files left in this tranche.
+  The latest 54 are the whole 神宮125社 slice (A0c's "P1814 pass over the 54" — the real figure was
+  55). `lineage/fetch_jingu125_kana.py` → `_jingu125_kana.tsv` → `lineage/stage_jingu125_kana.py
+  --apply`. **53 of the 54 already had a work-file waiting for the cloud routine**, which would
+  have written a second identical line each; staging locally now retires the work-file and logs it
+  to `_resolved.log`, the same disposal the collector performs. Only 機殿神社 (Q11544511) is left —
+  it is the joint article for 神服織機殿神社 + 神麻続機殿神社 and has no reading of its own.
+  **Anchor the lead match at position 0**: 機殿神社 is a substring of the first name in its own
+  lead, so an unanchored search silently hands the pair-item the wrong shrine's reading
+  (田上大水神社/大水神社 and 河原神社/川原神社 are the same shape).
 - ⚠️ **The builders re-queued finished work, and both are fixed.** Skipping only on work-file
   existence is wrong: the collector DELETES the file when it answers, and the SPARQL/category target
   set cannot see the staged line either, because the freeze holds delivery until 2026-08-10. So a
@@ -260,7 +269,7 @@ carrying a `wikibase_item``. Two of the 23 — 大間国生神社 `Q135098908` a
 sitelink-based lookup can see them. The real figure is 21, and those are the CREATE batch
 under A00.
 
-▶ **Still open here:** the P1814 pass over the 54.
+✅ **The P1814 pass is DONE (2026-08-04)** — 54 staged, see A0. Nothing open in A0c.
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 
