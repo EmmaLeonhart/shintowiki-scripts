@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 (later still) — the generator that did its work on import
+
+`generate_soja_only.py` had three module-level side effects, all of which fired on import: it ran
+its migration queries, it rewrote `migrate_soja_add.txt` / `migrate_soja_remove.txt`, and it rebound
+`sys.stdout`. The endpoint migration tripped over the first two yesterday; the third only surfaced
+when the test written to catch the problem failed with "I/O operation on closed file" — the module
+had replaced pytest's captured stream with a wrapper around a buffer it did not own. A failing test
+that identifies a *second* defect is the good case; the alternative was working around it and
+leaving the side effect in place.
+
+Body wrapped in `main()`, stdout rebinding moved inside it, and the two outputs made `HERE`-relative
+— they were bare filenames, so the files landed wherever cwd happened to be, which is why the
+accidental import wrote them into `modern-quickstatements/` rather than into the repo root. That is
+the CLAUDE.md rule about `__file__`-relative paths, and it had simply never been applied here.
+
+Scope checked rather than assumed: a scan of every `generate_*` / `fetch_*` / `resolve_*` /
+`submit_*` / `select_*` module found this was the **only** generator missing the guard. The other
+unguarded files are import-only helpers (`kana_english`, `romaji_phonology`, `user_agent`,
+`infobox_fields`, …) that define functions and execute nothing, which is correct for what they are.
+So the hazard was one file, not a pattern — worth knowing before writing a sweeping fix.
+
+The guard is now a property rather than a repair: `tests/test_no_work_on_import.py` asserts it
+across all generators, textually rather than by importing them, because importing is precisely the
+dangerous act and an import-based test would run the work it was meant to prevent. It also has a
+non-vacuity check, since a glob that matched nothing would pass silently.
+
+---
+
 ## 2026-08-04 (later) — endpoint migration batch 1, and a module that runs on import
 
 Five scripts moved from `query.wikidata.org` to `query-main`, each verified live rather than
