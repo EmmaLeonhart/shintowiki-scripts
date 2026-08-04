@@ -28,7 +28,11 @@ Class handling (Emma, 2026-08-04, on the two open calls):
     inference, and it is the one place in this script where a value is not read
     off the article.
 
-  UNKNOWN -> no statement. Six articles give no origin at all.
+  UNKNOWN -> Q24238356 (unknown). Emma 2026-08-04: for these the missing origin
+    is not a gap in our reading, it is a fact about the shrine — 度津神社's records
+    burned in a flood of the 羽茂川, and the three Ise ones say 由緒は定かではない
+    in so many words. So the ignorance is recorded positively, cited to the jawiki
+    article that states it, rather than left as an absent property.
 
 Targets are resolved to QIDs through **ja.wikipedia**, never Wikidata: one
 batched `prop=pageprops` call per 50 titles gives `wikibase_item` for free
@@ -76,6 +80,7 @@ LOG = os.path.join(SCRIPT_DIR, '_p612_resolution.log')
 
 BUNREI = 'Q195793'            # criterion used: Bunrei
 AUTOCHTHONOUS = 'Q135508874'  # Autocthonous shrine
+UNKNOWN_ORIGIN = 'Q24238356'  # unknown — the article records that nobody knows
 API = 'https://ja.wikipedia.org/w/api.php'
 THROTTLE = 0.3                # read-only jawiki calls, batched 50 titles each
 DAB = set()                   # titles refused as disambiguation pages, for callers
@@ -254,11 +259,8 @@ def main():
             log.append(f'-\t{cls}\t{title}\tno subject QID')
             continue
         if cls == 'UNKNOWN':
-            skipped['UNKNOWN'] = skipped.get('UNKNOWN', 0) + 1
-            log.append(f'{subject}\t{cls}\t-\t{title}: no origin in the article')
-            continue
-
-        if cls == 'AUTOCHTHONOUS':
+            target, via = UNKNOWN_ORIGIN, 'the article states the origin is unknown'
+        elif cls == 'AUTOCHTHONOUS':
             target, via = AUTOCHTHONOUS, 'in-situ founding'
         else:
             target, via = None, ''

@@ -29,7 +29,12 @@ an Opus sub-agent. Everything else here is plumbing around that one step.
   of the graph: 神託 at the site, a mountain/rock/island/river that *is* the kami,
   a deity enshrining its own spirit, a founding on a grave, 護国神社 招魂, a 総本社
   with no parent.
-* **UNKNOWN** — no origin given anywhere in the article.
+* **UNKNOWN** — no origin given anywhere in the article. These get
+  `P612 = Q24238356` (unknown), cited to the article that says so. Emma
+  2026-08-04: the missing origin is a fact about the shrine, not a gap in our
+  reading — 度津神社's records burned in a flood of the 羽茂川, and the Ise ones
+  say 由緒は定かではない outright — so the ignorance is recorded rather than left
+  as an absent property.
 
 Every non-UNKNOWN verdict carries an exact Japanese sentence from the article.
 The quote is the evidence; a verdict with no sentence behind it is not accepted.

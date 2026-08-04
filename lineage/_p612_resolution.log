@@ -142,7 +142,7 @@ Q11465296	AUTOCHTHONOUS	Q135508874	尾張大国霊神社 ← in-situ founding
 Q11467121	AUTOCHTHONOUS	Q135508874	山口県護国神社 ← in-situ founding
 Q11468583	AUTOCHTHONOUS	Q135508874	山形県護国神社 ← in-situ founding
 Q11469919	AUTOCHTHONOUS	Q135508874	山梨縣護國神社 ← in-situ founding
-Q172382	UNKNOWN	-	度津神社: no origin in the article
+Q172382	UNKNOWN	Q24238356	度津神社 ← the article states the origin is unknown
 Q705281	AUTOCHTHONOUS	Q135508874	廣瀬大社 ← in-situ founding
 Q1466105	AUTOCHTHONOUS	Q135508874	廣田神社 ← in-situ founding
 Q403338	AUTOCHTHONOUS	Q135508874	建部大社 ← in-situ founding
@@ -238,7 +238,7 @@ Q11581351	TRANSFER	Q710098	盛岡八幡宮 ← 石清水八幡宮
 Q705916	AUTOCHTHONOUS	Q135508874	真清田神社 ← in-situ founding
 Q11584639	AUTOCHTHONOUS	Q135508874	知立神社 ← in-situ founding
 Q708859	TRANSFER	Q11453221	石上神宮 ← 宮中
-Q11585337	UNKNOWN	-	石園座多久虫玉神社: no origin in the article
+Q11585337	UNKNOWN	Q24238356	石園座多久虫玉神社 ← the article states the origin is unknown
 Q11586369	AUTOCHTHONOUS	Q135508874	石川護国神社 ← in-situ founding
 Q710098	TRANSFER	Q715632	石清水八幡宮 ← 宇佐神宮
 Q11587273	AUTOCHTHONOUS	Q135508874	石鎚神社 ← in-situ founding
@@ -391,7 +391,7 @@ Q17211291	TRANSFER	Q133753	志宝屋神社 ← 鹽竈神社
 Q17212285	AUTOCHTHONOUS	Q135508874	志等美神社 ← in-situ founding
 -	AUTOCHTHONOUS	打懸神社	no subject QID
 Q11516023	AUTOCHTHONOUS	Q135508874	月夜見宮 ← in-situ founding
-Q11516220	UNKNOWN	-	月讀宮: no origin in the article
+Q11516220	UNKNOWN	Q24238356	月讀宮 ← the article states the origin is unknown
 -	NETWORK	朝熊御前神社	no subject QID
 Q17191186	AUTOCHTHONOUS	Q135508874	朝熊神社 (伊勢市) ← in-situ founding
 Q17229533	AUTOCHTHONOUS	Q135508874	朽羅神社 ← in-situ founding
@@ -436,8 +436,8 @@ Q11635561	AUTOCHTHONOUS	Q135508874	赤崎神社 ← in-situ founding
 -	AUTOCHTHONOUS	那自賣神社	no subject QID
 Q17226516	AUTOCHTHONOUS	Q135508874	鏡宮神社 (伊勢市) ← in-situ founding
 Q28693019	TRANSFER	Q11633343	長由介神社 ← 豊受大神宮
-Q11665463	UNKNOWN	-	風宮: no origin in the article
-Q11665488	UNKNOWN	-	風日祈宮: no origin in the article
+Q11665463	UNKNOWN	Q24238356	風宮 ← the article states the origin is unknown
+Q11665488	UNKNOWN	Q24238356	風日祈宮 ← the article states the origin is unknown
 Q17190840	NETWORK	Q11543776	饗土橋姫神社 ← 橋姫神社
 Q17225931	AUTOCHTHONOUS	Q135508874	高河原神社 ← in-situ founding
 Q17226760	AUTOCHTHONOUS	Q135508874	鴨下神社 ← in-situ founding
