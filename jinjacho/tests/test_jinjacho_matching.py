@@ -154,3 +154,72 @@ def test_aichi_detail_url_matches_the_shipped_sample_format():
 def test_index_families_are_callables():
     for key, fn in crawl.INDEX_FAMILIES.items():
         assert callable(fn), key
+
+
+def test_mie_parser():
+    """Name comes from the title after the »; the site's own （村松町） disambiguator
+    is stripped because Wikidata labels do not carry it — the municipality gate is
+    what disambiguates. Address sits under a 鎮座地 label, postcode on its own line."""
+    html = ("<html><head><title>三重県神社庁教化委員会 &raquo; 宇氣比神社（村松町）</title>"
+            "</head><body><h1>宇氣比神社（村松町） – うけひじんじゃ –</h1>"
+            "<p>鎮座地</p><p>〒514-0005</p><p>伊勢市村松町 3920</p></body></html>")
+    rec = crawl.parse_mie(html)
+    assert rec["shrine_name"] == "宇氣比神社"
+    assert rec["kana"] == "うけひじんじゃ"
+    assert rec["address"].startswith("伊勢市村松町")
+
+
+def test_kagoshima_parser_takes_the_shrine_address_not_the_agency_footer():
+    """Every Kagoshima page's footer carries the AGENCY's address in 鹿児島市. A loose
+    address search would put every shrine in 鹿児島市, so the 鎮座地 label is required."""
+    html = ("<html><head><title>照島神社 | 鹿児島県神社庁</title></head><body>"
+            "<p>神社名：照島神社</p><p>神社名カナ：テルシマジンジャ</p>"
+            "<p>鎮座地：〒896-0032 いちき串木野市西島平町410</p>"
+            "<footer>鹿児島市照国町19-20 TEL：099-223-0061</footer></body></html>")
+    rec = crawl.parse_kagoshima(html)
+    assert rec["shrine_name"] == "照島神社"
+    assert rec["kana"] == "テルシマジンジャ"
+    assert rec["address"].startswith("いちき串木野市")
+    assert "鹿児島市" not in rec["address"]
+
+
+def test_new_parsers_reject_a_non_record():
+    assert crawl.parse_mie("<html><title>三重県神社庁教化委員会</title></html>") is None
+    assert crawl.parse_kagoshima("<html><body>お探しのページはありません</body></html>") is None
+
+
+def test_sitemap_families_are_registered_as_index_families():
+    """A sitemap family left out of INDEX_FAMILIES is unreachable from the CLI;
+    one added to FAMILIES instead would be swept by id, which is what it cannot do."""
+    for key in crawl.SITEMAP_FAMILIES:
+        assert key in crawl.INDEX_FAMILIES, key
+        assert key not in crawl.FAMILIES, key
+        assert callable(crawl.SITEMAP_FAMILIES[key]["parser"]), key
+        assert callable(crawl.SITEMAP_FAMILIES[key]["collect"]), key
+
+
+def test_sitemap_harvest_is_bounded_and_skips_already_crawled(monkeypatch):
+    """The two things that make a resumed harvest safe: it never re-fetches a URL
+    already in the CSV, and it never exceeds the run's page budget."""
+    urls = [f"https://example.test/shrine/{i}/" for i in range(10)]
+    monkeypatch.setattr(crawl, "_load_index_cache", lambda: {"mie": urls})
+    fetched = []
+
+    class _Resp:
+        status_code = 200
+        text = "<title>x &raquo; 例神社</title>鎮座地 伊勢市例町1"
+        apparent_encoding = "utf-8"
+        encoding = "utf-8"
+
+    def _get(url, **kw):
+        fetched.append(url)
+        return _Resp()
+
+    monkeypatch.setattr(crawl.requests, "get", _get)
+    monkeypatch.setattr(crawl.time, "sleep", lambda s: None)
+    seen = {urls[0], urls[1]}
+    rows = crawl.harvest_sitemap_family("mie", seen, limit=3, throttle=0)
+    assert urls[0] not in fetched and urls[1] not in fetched
+    assert len(fetched) == 3
+    assert len(rows) == 3
+    assert all(r["prefecture"] == "Mie" for r in rows)

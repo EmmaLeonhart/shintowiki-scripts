@@ -233,16 +233,215 @@ def harvest_aichi():
     return rows
 
 
-INDEX_FAMILIES = {"aichi": harvest_aichi}
+# ─────────────── sitemap-backed index families (Mie, Kagoshima) ───────────────
+# These two were filed as "name-slug paths, not enumerable" and therefore parked. They
+# are both WordPress, and both publish a sitemap that robots.txt points at and permits
+# (only wp-admin is disallowed) — so the index does exist, it just isn't an integer
+# sequence. Checked 2026-08-03.
+#
+# Unlike Aichi, the sitemap gives URLs but no fields, so each detail page still has to
+# be fetched. That is a REAL crawl and is treated like one: same THROTTLE, and bounded
+# by --max-pages per run. It is resumable for free — a URL already in crawled_shrines.csv
+# is skipped — so repeated capped runs walk the list without a cursor.
+#
+# The URL list itself is cached in index_urls.json: rebuilding Kagoshima's costs 93
+# requests (its shrines are plain `post`s spread over 92 monthly sitemaps), which is not
+# worth re-spending on every resumed chunk. --refresh-index rebuilds it.
+INDEX_CACHE = os.path.join(HERE, "index_urls.json")
+
+MIE_SITEMAP = "https://kyoka.mie-jinjacho.or.jp/wp-sitemap.xml"
+KAGO_SITEMAP = "https://www.kagojinjacho.or.jp/sitemap.xml"
+
+_LOC_RE = re.compile(r"<loc>(.*?)</loc>", re.S)
 
 
-def run_index_family(key):
+def parse_mie(raw):
+    """'三重県神社庁教化委員会 » 宇氣比神社（村松町）' + '– うけひじんじゃ –' + 鎮座地 block.
+
+    The trailing （村松町） on the name is the SITE's own disambiguator for shrines
+    sharing a name within the prefecture. It is stripped: the label lookup is against
+    Wikidata labels, which do not carry it, and disambiguation is the municipality
+    gate's job in match_jinjacho_shrines.py — not the name's.
+    """
+    m = re.search(r"<title>(.*?)</title>", raw, re.S)
+    if not m:
+        return None
+    name = html.unescape(m.group(1)).split("»")[-1].strip()
+    name = re.sub(r"[（(][^）)]*[）)]\s*$", "", name).strip()
+    if not name or "三重県神社庁" in name or len(name) < 2:
+        return None
+    t = _text(raw)
+    kana = ""
+    k = re.search(r"–\s*([ぁ-ゖー]{2,})\s*–", t)
+    if k:
+        kana = k.group(1)
+    addr = ""
+    a = re.search(r"鎮座地\s*\n?\s*(?:〒?\s*" + _POSTAL + r")?\s*\n?\s*([^\n]{4,60})", t)
+    if a:
+        addr = a.group(1).strip()
+    return {"shrine_name": name, "kana": kana, "address": addr}
+
+
+def parse_kagoshima(raw):
+    """Explicitly labelled fields: '神社名：照島神社 / 神社名カナ：テルシマジンジャ /
+    鎮座地：〒896-0032 いちき串木野市西島平町410'.
+
+    The 鎮座地 label is required rather than a generic address search: every page's
+    footer carries the AGENCY's own address (鹿児島市照国町19-20), which a loose
+    match would happily read as the shrine's and put every shrine in 鹿児島市.
+    """
+    t = _text(raw)
+    m = re.search(r"神社名\s*[：:]\s*([^\n]{2,40})", t)
+    if not m:
+        return None
+    name = m.group(1).strip()
+    if not name or name.startswith("カナ"):
+        return None
+    kana = ""
+    k = re.search(r"神社名カナ\s*[：:]\s*([ァ-ヶー]{2,})", t)
+    if k:
+        kana = k.group(1)
+    addr = ""
+    a = re.search(r"鎮座地\s*[：:]\s*(?:〒?\s*" + _POSTAL + r")?\s*([^\n]{4,60})", t)
+    if a:
+        addr = a.group(1).strip()
+    return {"shrine_name": name, "kana": kana, "address": addr}
+
+
+def _sitemap_locs(url):
+    r = requests.get(url, headers=UA, timeout=TIMEOUT)
+    r.raise_for_status()
+    return _LOC_RE.findall(r.text)
+
+
+def _load_index_cache():
+    if os.path.exists(INDEX_CACHE):
+        try:
+            with open(INDEX_CACHE, encoding="utf-8") as fh:
+                return json.load(fh)
+        except Exception:
+            pass
+    return {}
+
+
+def _save_index_cache(key, urls):
+    cache = _load_index_cache()
+    cache[key] = urls
+    tmp = INDEX_CACHE + ".%d.tmp" % os.getpid()
+    with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(cache, fh, ensure_ascii=False, indent=1, sort_keys=True)
+        fh.write("\n")
+    os.replace(tmp, INDEX_CACHE)
+
+
+def _collect_mie_urls(throttle):
+    urls = []
+    for sub in _sitemap_locs(MIE_SITEMAP):
+        if "posts-shrine" not in sub:
+            continue
+        time.sleep(throttle)
+        urls += [u for u in _sitemap_locs(sub) if "/shrine/" in u]
+    return sorted(set(urls))
+
+
+def _collect_kagoshima_urls(throttle):
+    """Kagoshima's shrines are ordinary `post`s, so the shrine pages are mixed in
+    with news items across 90-odd monthly sitemaps; /shrine-search/ is the filter."""
+    urls = []
+    for sub in _sitemap_locs(KAGO_SITEMAP):
+        if "sitemap-pt-post" not in sub:
+            continue
+        time.sleep(throttle)
+        urls += [u for u in _sitemap_locs(sub) if "/shrine-search/" in u]
+    return sorted(set(urls))
+
+
+SITEMAP_FAMILIES = {
+    "mie": {"prefecture": "Mie", "collect": _collect_mie_urls, "parser": parse_mie},
+    "kagoshima": {"prefecture": "Kagoshima", "collect": _collect_kagoshima_urls,
+                  "parser": parse_kagoshima},
+}
+
+
+def harvest_sitemap_family(key, seen, limit, throttle, refresh=False, sink=None):
+    """Fetch up to `limit` not-yet-crawled detail pages for a sitemap-backed family.
+
+    Rows are handed to `sink` in batches of 25 for the same reason the id sweep
+    flushes: a long run that dies at the end must not throw away everything it
+    fetched. Resume is by URL (already-crawled URLs are skipped), so a flushed
+    batch is permanently done.
+    """
+    fam = SITEMAP_FAMILIES[key]
+    cache = _load_index_cache()
+    urls = cache.get(key)
+    if refresh or not urls:
+        print(f"[{key}] building the URL index from the sitemap...", flush=True)
+        urls = fam["collect"](throttle)
+        _save_index_cache(key, urls)
+    todo = [u for u in urls if u not in seen]
+    print(f"[{key}] {len(urls)} indexed, {len(urls) - len(todo)} already crawled, "
+          f"fetching up to {limit} of the remaining {len(todo)}", flush=True)
+    rows, misses = [], 0
+    for u in todo[:limit]:
+        time.sleep(throttle)
+        try:
+            r = requests.get(u, headers=UA, timeout=TIMEOUT)
+        except Exception as e:
+            print(f"  [{key}] {type(e).__name__} on {u[:70]}", flush=True)
+            misses += 1
+            continue
+        if r.status_code != 200:
+            misses += 1
+            continue
+        r.encoding = r.apparent_encoding or r.encoding
+        rec = fam["parser"](r.text)
+        if not rec:
+            misses += 1
+            continue
+        rec.update(prefecture=fam["prefecture"], url=u)
+        rows.append(rec)
+        if sink and len(rows) >= 25:
+            sink(rows)
+            rows = []
+    if misses:
+        print(f"  [{key}] {misses} pages fetched but not parsed as a shrine record "
+              f"(they stay in the index and are retried next run)", flush=True)
+    return rows
+
+
+def harvest_mie(seen, limit, throttle, refresh=False, sink=None):
+    return harvest_sitemap_family("mie", seen, limit, throttle, refresh, sink)
+
+
+def harvest_kagoshima(seen, limit, throttle, refresh=False, sink=None):
+    return harvest_sitemap_family("kagoshima", seen, limit, throttle, refresh, sink)
+
+
+def _harvest_aichi_indexed(seen, limit, throttle, refresh=False, sink=None):
+    """Aichi needs no budget: the whole register arrives in one POST."""
+    return harvest_aichi()
+
+
+INDEX_FAMILIES = {"aichi": _harvest_aichi_indexed,
+                  "mie": harvest_mie,
+                  "kagoshima": harvest_kagoshima}
+
+
+def run_index_family(key, limit=200, throttle=THROTTLE, refresh=False):
     seen = load_seen()
-    rows = [r for r in INDEX_FAMILIES[key]() if r["url"] not in seen]
-    if rows:
-        append_rows(rows)
-    print(f"[{key}] +{len(rows)} new shrines (rest already present)", flush=True)
-    return len(rows)
+    total = 0
+
+    def sink(chunk):
+        nonlocal total
+        fresh = [r for r in chunk if r["url"] not in seen]
+        if fresh:
+            append_rows(fresh)
+            seen.update(r["url"] for r in fresh)
+            total += len(fresh)
+
+    sink(INDEX_FAMILIES[key](seen, limit, throttle, refresh, sink))
+    print(f"[{key}] +{total} new shrines (rest already present)", flush=True)
+    return total
 
 
 def load_state():
@@ -367,12 +566,17 @@ def main():
     ap.add_argument("--throttle", type=float, default=THROTTLE,
                     help="seconds between requests (default 1.5; do not lower)")
     ap.add_argument("--index", action="append", choices=sorted(INDEX_FAMILIES),
-                    help="harvest an index-backed family (one API call, no sweep)")
+                    help="harvest an index-backed family (aichi: one API call; "
+                         "mie/kagoshima: sitemap index + a --max-pages-capped fetch)")
+    ap.add_argument("--refresh-index", action="store_true",
+                    help="rebuild the cached sitemap URL list before harvesting")
     ap.add_argument("--list", action="store_true", help="show families and exit")
     args = ap.parse_args()
 
     if args.index:
-        total = sum(run_index_family(k) for k in args.index)
+        total = sum(run_index_family(k, args.max_pages, max(args.throttle, 0.5),
+                                     args.refresh_index)
+                    for k in args.index)
         print(f"\ntotal +{total} shrines -> {OUT_CSV}")
         if not (args.family or args.all):
             return
@@ -382,6 +586,16 @@ def main():
         for k, f in sorted(FAMILIES.items()):
             print(f"{k:10} {f['prefecture']:10} ids {f['start']}-{f['stop']} "
                   f"next={state.get(k, f['start'])}")
+        cache = _load_index_cache()
+        seen = load_seen()
+        for k in sorted(INDEX_FAMILIES):
+            if k in SITEMAP_FAMILIES:
+                urls = cache.get(k, [])
+                done = sum(1 for u in urls if u in seen)
+                print(f"{k:10} {SITEMAP_FAMILIES[k]['prefecture']:10} sitemap "
+                      f"{done}/{len(urls) or '?'} crawled")
+            else:
+                print(f"{k:10} {'Aichi':10} single-request API index")
         return
 
     keys = sorted(FAMILIES) if args.all else (args.family or [])
