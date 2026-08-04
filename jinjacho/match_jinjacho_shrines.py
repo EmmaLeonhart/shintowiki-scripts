@@ -62,12 +62,65 @@ OUT_CSV = os.path.join(HERE, "crawled_shrines_matched.csv")
 ENTITY = "http://www.wikidata.org/entity/%s"
 
 # 大垣市 / 高山市 / 各務原市 / 安八郡安八町 / 東秩父村 / さいたま市大宮区 ...
-# Take the FIRST 市/区/町/村 token: 郡 is a district, not a municipality, and the
-# 町 inside it is what P131 actually points at. A leading 〒postcode and the
-# prefecture name are stripped first.
-_MUNI_RE = re.compile(r"([^\s0-9\-]{1,8}?[市区町村])")
-_PREF_SUFFIX = re.compile(r"^.{2,4}?[都道府県]")
-_GUN_PREFIX = re.compile(r"^.{1,5}?郡")          # 安八郡安八町 -> 安八町
+#
+# REWRITTEN 2026-08-03 after the Mie yield (17 matched from 300 crawled) was
+# traced here rather than to the data. The previous version used three loose
+# regexes and silently mis-parsed a whole class of ordinary addresses. Measured
+# failures, all real rows in crawled_shrines.csv:
+#
+#   四日市市三滝町1-1       -> '四日市'  a non-greedy token stops at the FIRST 市, and
+#                                      Yokkaichi's name ends in one. Same for
+#                                      廿日市市, 野々市市, 市原市.
+#   鈴鹿市国府町 1609       -> ''       `^.{2,4}?[都道府県]` is not anchored to a real
+#   豊川市国府町的場19      -> ''       prefecture, so it ate '鈴鹿市国府' — any address
+#   藤井寺市道明寺1-16-40   -> ''       through a 国府町 / 道明寺 loses its city.
+#   霧島市国分郡田1730      -> ''       `^.{1,5}?郡` ate '霧島市国分郡' — 国分 is part of
+#                                      the place name, not a district prefix.
+#
+# Every one of these failed CLOSED (no municipality -> row dropped), so they cost
+# coverage rather than producing wrong statements. The rewrite keeps that
+# property: anything unparsed still returns ''.
+#
+# The token rule itself is UNCHANGED — first 市/区/町/村 token — because the
+# alternatives do not work and were tried:
+#
+#   "extend across a doubled mark" turns 近江八幡市市井町 into 近江八幡市市 (the
+#   next unit is 市井町, a locality that starts with 市) and 日野町村井 into 日野町村.
+#   "a 市 anywhere outranks 町/村" turns 寄居町今市 into 寄居町今市 and 七宗町神渕高市場
+#   into 七宗町神渕高市 — 町 municipalities whose sub-locality contains 市.
+#
+# 四日市市三滝町 and 近江八幡市市井町 are the same shape (X市 + 市Y町) and cannot be
+# told apart without knowing which strings are municipality names. So the handful
+# of municipalities whose own name ends in a mark are listed explicitly below.
+# The list is NOT exhaustive, and that is safe: an unlisted one truncates exactly
+# as before and its row is dropped, never mismatched.
+# A spurious entry here fails CLOSED, which is why the list is safe to grow by
+# hand: if a string is not really a municipality, no item's P131 ancestor carries
+# that label, so the row matches nothing instead of matching wrongly.
+_MUNI_OVERRIDES = (
+    "四日市市",       # 三重 — 市 inside the name
+    "廿日市市",       # 広島
+    "野々市市",       # 石川
+    "武蔵村山市",     # 東京 — 村 inside the name
+    "東村山市",       # 東京
+    "十日町市",       # 新潟 — 町 inside the name
+    "大町市",         # 長野
+    "大村市",         # 長崎
+    "田村市",         # 福島
+    "大町町",         # 佐賀 杵島郡
+)
+_PREFECTURES = (
+    "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県",
+    "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県",
+    "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県",
+    "静岡県", "愛知県", "三重県", "滋賀県", "京都府", "大阪府", "兵庫県",
+    "奈良県", "和歌山県", "鳥取県", "島根県", "岡山県", "広島県", "山口県",
+    "徳島県", "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県",
+    "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
+)
+# A district prefix is only a district if a 町/村 follows it — 霧島市国分郡田 does
+# not qualify, 安八郡安八町 does.
+_GUN_PREFIX = re.compile(r"^([^\s0-9\-]{1,5}郡)(?=[^\s0-9\-]{1,8}?[町村])")
 
 
 def _utf8():
@@ -85,12 +138,22 @@ def load_rows():
                 if (r.get("shrine_name") or "").strip() and (r.get("url") or "").strip()]
 
 
+_MUNI_RE = re.compile(r"([^\s0-9\-]{1,8}?[市区町村])")
+
+
 def municipality(address):
     """'岐阜県大垣市墨俣町墨俣264番地' -> '大垣市'. '' when nothing parses."""
     a = (address or "").strip()
     a = re.sub(r"^〒?\s*\d{3}-?\d{4}\s*", "", a)
-    a = _PREF_SUFFIX.sub("", a, count=1)
+    for pref in _PREFECTURES:
+        if a.startswith(pref):
+            a = a[len(pref):]
+            break
     a = _GUN_PREFIX.sub("", a, count=1)
+    a = a.lstrip()
+    for name in _MUNI_OVERRIDES:
+        if a.startswith(name):
+            return name
     m = _MUNI_RE.search(a)
     return m.group(1) if m else ""
 

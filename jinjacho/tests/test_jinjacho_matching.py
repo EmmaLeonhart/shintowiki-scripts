@@ -45,9 +45,55 @@ def match():
     ("岐阜県安八郡安八町西結697番地の2", "安八町"),
     ("滋賀県犬上郡多賀町大字多賀604", "多賀町"),
     ("", ""),
+    # ── the 2026-08-03 rewrite: every case below FAILED before it, and each was
+    # found in real crawled_shrines.csv rows, not invented. All failed closed
+    # (empty or truncated -> row dropped), so they cost coverage silently.
+    # A city whose own name ends in 市: the old non-greedy token stopped at the
+    # first one.
+    ("四日市市三滝町1-1", "四日市市"),
+    ("廿日市市宮島町1-1", "廿日市市"),
+    ("野々市市本町1", "野々市市"),
+    # A place name containing 府/道 — the old prefecture-stripper was not anchored
+    # to a real prefecture and swallowed the city with it.
+    ("鈴鹿市国府町 1609", "鈴鹿市"),
+    ("豊川市国府町的場19", "豊川市"),
+    ("藤井寺市道明寺1-16-40", "藤井寺市"),
+    # A place name containing 郡 that is NOT a district prefix.
+    ("霧島市国分郡田1730", "霧島市"),
+    # Names that START with 市 must not collapse to the bare mark.
+    ("市原市五所1", "市原市"),
+    ("神崎郡市川町屋形1", "市川町"),
+    # Municipality names that CONTAIN a mark before their suffix — these need the
+    # explicit override list; the token rule alone truncates them.
+    ("東村山市諏訪町1", "東村山市"),
+    ("十日町市本町1", "十日町市"),
+    ("大村市玖島1", "大村市"),
+    ("田村市船引町1", "田村市"),
+    # ── the counter-examples that killed the first attempt at a general rule.
+    # 近江八幡市 + 市井町 is the SAME SHAPE as 四日市市 + 三滝町, so "extend across a
+    # doubled mark" turns this into 近江八幡市市. They are not separable by string
+    # rules, which is why the override list exists instead.
+    ("近江八幡市市井町133", "近江八幡市"),
+    ("蒲生郡日野町村井705", "日野町"),
+    # 町 municipalities whose sub-locality contains 市 — "a 市 anywhere outranks
+    # 町/村" swallowed these whole.
+    ("寄居町今市690", "寄居町"),
+    ("加茂郡七宗町神渕高市場9840", "七宗町"),
+    ("神川町八日市527", "神川町"),
+    # Kagoshima/Osaka rows from the new index families.
+    ("いちき串木野市西島平町410", "いちき串木野市"),
+    ("豊能郡能勢町宿野274-1", "能勢町"),
 ])
 def test_municipality(match, address, expected):
     assert match.municipality(address) == expected
+
+
+def test_unparseable_addresses_fail_closed(match):
+    """The gate's safety property: an address it cannot read yields '' and the row
+    is DROPPED, never guessed at. Every bug the rewrite fixed failed this way —
+    costing coverage, not correctness — and that must stay true."""
+    for junk in ["", "   ", "1234", "〒501-6112", "no japanese here", "字下屋敷"]:
+        assert match.municipality(junk) == ""
 
 
 # ─────────────────────── the two precision guards ───────────────────────

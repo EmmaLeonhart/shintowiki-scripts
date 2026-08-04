@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-03 (late) — the Mie yield was a parser bug, and the first fix was worse
+
+Mie matched 17 of 300 crawled shrines while Kagoshima managed 129 and Osaka 97. The suspicion in
+the previous entry — a small-shrine set with no Wikidata items — was wrong. It was
+`municipality()`, and the damage was not Mie-specific.
+
+Three bugs, each found by running the parser over real rows rather than by reading it:
+
+* `_PREF_SUFFIX = ^.{2,4}?[都道府県]` was not anchored to an actual prefecture, so it matched the
+  first 都/道/府/県 character anywhere in the opening — `鈴鹿市国府町` lost `鈴鹿市国府`, leaving
+  nothing parseable. Every address through a 国府町 or a 道明寺 died this way, across prefectures.
+* `_GUN_PREFIX = ^.{1,5}?郡` did the same for districts: `霧島市国分郡田` was read as a district
+  prefix and stripped.
+* the token regex stops at the first 市/区/町/村, so `四日市市` became `四日市` — as do 廿日市市,
+  野々市市, 東村山市, 十日町市.
+
+All three failed CLOSED — an unparsed address drops the row — so they cost coverage rather than
+producing wrong statements. That property is now a test.
+
+**The first fix was worse than the bug and was caught by measuring, not by the tests.** Replacing
+the token rule with "extend across a doubled mark, and 市 outranks 町/村" passed every case I had
+written, then changed 90 rows when run over the corpus — and the new ones were wrong:
+`近江八幡市市井町` became `近江八幡市市` (the next unit is 市井町), `日野町村井` became `日野町村`,
+and 町 municipalities whose sub-locality contains 市 (`寄居町今市`, `七宗町神渕高市場`,
+`神川町八日市`) were swallowed whole. `四日市市` + `三滝町` and `近江八幡市` + `市井町` are the same
+string shape; nothing separates them without knowing which strings are municipality names.
+
+So the token rule stayed, and the ~10 municipalities whose names contain a mark are listed
+explicitly. A wrong entry in that list also fails closed — no item's P131 ancestor would carry the
+label — which is what makes a hand-maintained list acceptable here. The counter-examples are now
+tests, so the next person to reach for a general rule sees why it does not exist.
+
+51 rows corrected. The better design — matching P131 ancestor labels against the address instead of
+parsing it — is written into queue.md A3 unbuilt, with the 区-ambiguity problem that has to be
+solved first stated plainly.
+
+---
+
 ## 2026-08-03 (evening) — A0/A0b built; every jinjachō prefecture now reachable
 
 **A0 name-in-kana.** Builder + collector on the existing work-file/ANSWER-marker pattern rather

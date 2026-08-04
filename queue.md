@@ -213,6 +213,20 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     (`funai_jinja/dai1shibu/nose-cho/01020kusasajinja.html`), no robots.txt and no sitemap, so
     it needs its section index pages walked rather than a sitemap read. Not started.
   - Add-only; the daily editor skips statements that already exist, so re-runs are no-ops.
+  - ✅ **Municipality parser fixed 2026-08-03** — the low Mie yield (17 matched from 300) was a
+    parser defect, not thin data. Three bugs, all failing CLOSED (row dropped, never mismatched):
+    the prefecture-stripper was `^.{2,4}?[都道府県]`, unanchored, so any address through a 国府町 /
+    道明寺 lost its city; the 郡-stripper was `^.{1,5}?郡`, so 霧島市国分郡田 lost its city; and the
+    token rule stops at the first mark, truncating 四日市市 → 四日市. Fixed with the real 47-name
+    prefecture list, a lookahead requiring a 町/村 after 郡, and an explicit override list for the
+    ~10 municipalities whose names contain a mark. 51 rows corrected. See the counter-example tests
+    before touching this: 近江八幡市 + 市井町 is the same string shape as 四日市市 + 三滝町, so no
+    general rule separates them.
+  - ▶ **Better idea, not built: gate on P131 ancestor LABELS instead of parsing the address.** We
+    already fetch every candidate's P131* ancestor ja labels; testing whether any ancestor label
+    ending in 市/町/村 occurs in the crawled address removes address parsing entirely. Caveat that
+    needs solving first: 区 labels are ambiguous across cities (港区 exists in Tokyo, Osaka and
+    Nagoya), so 区 must be excluded or paired with its 市. Do not ship it without that.
   - ▶ **SPARQL endpoint migration — 24 scripts still on `query.wikidata.org`.** The repo is
     mid-migration to `query-main.wikidata.org` (32 scripts already there). The old endpoint
     threw repeated 503/504 during the 2026-08-03 rematch's 17,549-candidate P131 pass;
