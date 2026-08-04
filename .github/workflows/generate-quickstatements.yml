@@ -206,10 +206,29 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cd modern-quickstatements
-          # Save generated files before any git operations
+          # Save ONLY the files THIS RUN actually changed.
+          #
+          # This used to be `cp *.txt`, which backed up every .txt in the
+          # directory — including ones no step here regenerates — and then copied
+          # the whole lot back after `git pull --rebase`, silently reverting
+          # anything anyone else had pushed in between. Observed 2026-08-04:
+          # afeabab9 restored a jinjacho_p973.txt built from a 1,151-row CSV on
+          # top of a pulled 1,441-row CSV, dropping 205 real matched pairs out of
+          # the drip while leaving the repo internally consistent-looking.
+          #
+          # `git diff --name-only` is the honest definition of "what this run
+          # generated": a file untouched by every step above simply is not listed,
+          # so the rebase's version of it survives.
           mkdir -p /tmp/qs_backup
-          cp *.txt /tmp/qs_backup/ 2>/dev/null || true
-          cp -r _site/ /tmp/qs_backup/_site/ 2>/dev/null || true
+          git diff --name-only -- . > /tmp/qs_changed.txt
+          git ls-files --others --exclude-standard -- . >> /tmp/qs_changed.txt
+          sed -n 's|^modern-quickstatements/||p' /tmp/qs_changed.txt | sort -u > /tmp/qs_files.txt
+          echo "this run changed $(wc -l < /tmp/qs_files.txt) file(s):"; cat /tmp/qs_files.txt
+          while IFS= read -r f; do
+            [ -f "$f" ] || continue
+            mkdir -p "/tmp/qs_backup/$(dirname "$f")"
+            cp "$f" "/tmp/qs_backup/$f"
+          done < /tmp/qs_files.txt
           # Stage ALL .txt files (including empty ones that replaced old content)
           git add *.txt 2>/dev/null || true
           git add _site/ 2>/dev/null || true
@@ -220,8 +239,13 @@ jobs:
             git checkout -- . || true
             git clean -fd modern-quickstatements/ || true
             git pull --rebase || true
-            cp /tmp/qs_backup/*.txt modern-quickstatements/ 2>/dev/null || true
-            cp -r /tmp/qs_backup/_site/* modern-quickstatements/_site/ 2>/dev/null || true
+            # Restore ONLY this run's own output. Files the rebase brought in
+            # newer are left exactly as pulled — that is the whole point.
+            while IFS= read -r f; do
+              [ -f "/tmp/qs_backup/$f" ] || continue
+              mkdir -p "modern-quickstatements/$(dirname "$f")"
+              cp "/tmp/qs_backup/$f" "modern-quickstatements/$f"
+            done < /tmp/qs_files.txt
             cd modern-quickstatements
             git add *.txt 2>/dev/null || true
             git add _site/ 2>/dev/null || true

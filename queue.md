@@ -241,6 +241,12 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     ending in 市/町/村 occurs in the crawled address removes address parsing entirely. Caveat that
     needs solving first: 区 labels are ambiguous across cities (港区 exists in Tokyo, Osaka and
     Nagoya), so 区 must be excluded or paired with its 市. Do not ship it without that.
+  - ✅ **CI was reverting generated files it never generated (fixed 2026-08-04).**
+    `generate-quickstatements.yml` backed up `*.txt` wholesale, pulled, then copied the lot back —
+    reverting any file another push had updated meanwhile. `jinjacho_p973.txt` lost 205 matched
+    pairs this way (1,526 → 1,236 lines against a 1,441-row CSV). Now backs up only
+    `git diff --name-only` + untracked. **If a generated file ever looks smaller than its input
+    justifies, suspect this shape before suspecting the generator.**
   - ▶ **SPARQL endpoint migration — 24 scripts still on `query.wikidata.org`.** The repo is
     mid-migration to `query-main.wikidata.org` (32 scripts already there). The old endpoint
     threw repeated 503/504 during the 2026-08-03 rematch's 17,549-candidate P131 pass;

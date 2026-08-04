@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 — CI was silently reverting generated files it never generated
+
+`jinjacho_p973.txt` dropped from 1,526 lines to 1,236 in CI's own commit `afeabab9`, while the CSV
+it derives from still held 1,441 matched rows. The generator is deterministic over two local CSVs
+with no live filtering, so an output that small could only have been built from the *previous*
+1,151-row CSV — the arithmetic is exact: 88 + 1,148 = 1,236.
+
+The cause is in `generate-quickstatements.yml`'s commit step, and it is not specific to this file.
+The step did `cp *.txt /tmp/qs_backup/` — backing up **every** `.txt` in the directory, including
+ones no step in that workflow regenerates — then `git pull --rebase`, then copied the whole backup
+back over the pulled tree. Any file another push had updated in between was reverted to whatever
+the stale checkout held. `jinjacho_p973.txt` is simply the file that happened to get caught; 205
+real matched shrine→URL pairs sat out of the drip as a result, with the repo looking internally
+consistent the whole time.
+
+Fixed by backing up only what the run actually changed: `git diff --name-only` plus untracked files,
+which is the honest definition — a file no step touched is not listed, so the rebase's version of it
+survives. Verified in a scratch git repo: with a.txt and _site/s.txt regenerated and b.txt updated
+"by someone else", the restore kept this run's two files and left b.txt at the pulled content.
+
+Worth recording that the contrast half of that test did NOT reproduce the old bug — the sandbox
+setup made the supposedly-stale file not actually stale. The evidence for the bug is the commit
+itself (a 1,441-row CSV shipping a 1,236-line derived file), not the synthetic demo, and it would
+have been easy to write this entry as though the demo had confirmed it.
+
+---
+
 ## 2026-08-03 (night) — all 344 Beppyo shrines read; we were the Wikidata load
 
 **Two corrections from Emma, both of which I had got wrong in the same direction: treating Wikidata
