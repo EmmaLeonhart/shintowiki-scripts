@@ -10,7 +10,7 @@ Q3201026	AUTOCHTHONOUS	Q135508874	京都霊山護国神社 ← in-situ founding
 Q11376859	TRANSFER	Q692714	今宮戎神社 ← 八坂神社
 Q3155136	AUTOCHTHONOUS	Q135508874	伊佐須美神社 ← in-situ founding
 Q11378990	TRANSFER	Q687168	伊勢山皇大神宮 ← 伊勢神宮
-Q11383096	TRANSFER	-	佐嘉神社: cannot resolve "松原神社"
+Q11383096	TRANSFER	Q135508874	佐嘉神社 ← Emma, 分霊 page
 Q3461072	AUTOCHTHONOUS	Q135508874	佐太神社 ← in-situ founding
 Q11384878	AUTOCHTHONOUS	Q135508874	佐賀縣護國神社 ← in-situ founding
 Q245734	AUTOCHTHONOUS	Q135508874	倭文神社 (湯梨浜町) ← in-situ founding
@@ -40,7 +40,7 @@ Q11418605	AUTOCHTHONOUS	Q135508874	唐沢山神社 ← in-situ founding
 Q11420029	AUTOCHTHONOUS	Q135508874	四柱神社 ← in-situ founding
 Q10925104	AUTOCHTHONOUS	Q135508874	四條畷神社 ← in-situ founding
 Q704890	TRANSFER	Q11675401	土佐神社 ← 鳴無神社
-Q11425667	NETWORK	-	坐摩神社: cannot resolve "宮中（神祇官西院）の坐摩神"
+Q11425667	NETWORK	Q11453221	坐摩神社 ← Emma, 分霊 page
 Q11428033	AUTOCHTHONOUS	Q135508874	報徳二宮神社 (小田原市) ← in-situ founding
 Q116140	AUTOCHTHONOUS	Q135508874	多度大社 ← in-situ founding
 Q3513683	AUTOCHTHONOUS	Q135508874	多田神社 ← in-situ founding
@@ -65,7 +65,7 @@ Q3156511	AUTOCHTHONOUS	Q135508874	出石神社 ← in-situ founding
 Q11395802	AUTOCHTHONOUS	Q135508874	出羽神社 ← in-situ founding
 Q696362	AUTOCHTHONOUS	Q135508874	出雲大社 ← in-situ founding
 Q11395952	NETWORK	Q261637	函館八幡宮 ← 八幡神
-Q11398386	TRANSFER	-	劔神社: cannot resolve "伊部郷座ヶ岳の素盞嗚尊神霊"
+Q11398386	TRANSFER	Q135508874	劔神社 ← Emma, 分霊 page
 Q11401286	TRANSFER	Q11395081	北口本宮冨士浅間神社 ← 冨士御室浅間神社
 Q710826	TRANSFER	Q2264720	北海道神宮 ← 神祇官
 Q11403863	AUTOCHTHONOUS	Q135508874	北畠神社 ← in-situ founding
@@ -142,14 +142,14 @@ Q11465296	AUTOCHTHONOUS	Q135508874	尾張大国霊神社 ← in-situ founding
 Q11467121	AUTOCHTHONOUS	Q135508874	山口県護国神社 ← in-situ founding
 Q11468583	AUTOCHTHONOUS	Q135508874	山形県護国神社 ← in-situ founding
 Q11469919	AUTOCHTHONOUS	Q135508874	山梨縣護國神社 ← in-situ founding
-Q172382	UNKNOWN	Q24238356	度津神社 ← the article states the origin is unknown
+Q172382	UNKNOWN	Q24238356	度津神社 ← Emma, 分霊 page
 Q705281	AUTOCHTHONOUS	Q135508874	廣瀬大社 ← in-situ founding
 Q1466105	AUTOCHTHONOUS	Q135508874	廣田神社 ← in-situ founding
 Q403338	AUTOCHTHONOUS	Q135508874	建部大社 ← in-situ founding
 Q195684	AUTOCHTHONOUS	Q135508874	彌彦神社 ← in-situ founding
 Q11488762	AUTOCHTHONOUS	Q135508874	御上神社 ← in-situ founding
 Q11490717	AUTOCHTHONOUS	Q135508874	忌宮神社 ← in-situ founding
-Q11490722	TRANSFER	-	忌部神社: cannot resolve "五所神社（美馬郡西端山、現・境外摂社御所神社）"
+Q11490722	TRANSFER	-	忌部神社: 分霊 page ruling is PENDING — nothing emitted
 Q11490845	TRANSFER	Q714828	志和稲荷神社 ← 伏見稲荷大社
 Q11491171	AUTOCHTHONOUS	Q135508874	志賀海神社 ← in-situ founding
 Q11493796	AUTOCHTHONOUS	Q135508874	愛媛縣護國神社 ← in-situ founding
@@ -238,7 +238,7 @@ Q11581351	TRANSFER	Q710098	盛岡八幡宮 ← 石清水八幡宮
 Q705916	AUTOCHTHONOUS	Q135508874	真清田神社 ← in-situ founding
 Q11584639	AUTOCHTHONOUS	Q135508874	知立神社 ← in-situ founding
 Q708859	TRANSFER	Q11453221	石上神宮 ← 宮中
-Q11585337	UNKNOWN	Q24238356	石園座多久虫玉神社 ← the article states the origin is unknown
+Q11585337	UNKNOWN	Q24238356	石園座多久虫玉神社 ← Emma, 分霊 page
 Q11586369	AUTOCHTHONOUS	Q135508874	石川護国神社 ← in-situ founding
 Q710098	TRANSFER	Q715632	石清水八幡宮 ← 宇佐神宮
 Q11587273	AUTOCHTHONOUS	Q135508874	石鎚神社 ← in-situ founding
@@ -374,7 +374,7 @@ Q17222830	AUTOCHTHONOUS	Q135508874	子安神社 (伊勢市) ← in-situ founding
 Q17194122	AUTOCHTHONOUS	Q135508874	宇治山田神社 ← in-situ founding
 Q17194134	AUTOCHTHONOUS	Q135508874	宇須乃野神社 ← in-situ founding
 -	AUTOCHTHONOUS	宮比神	no subject QID
-Q17225978	NETWORK	Q11633343	小俣神社 ← 豊受大神宮
+Q17225978	NETWORK	Q11633343	小俣神社 ← Emma, 分霊 page
 Q17224784	AUTOCHTHONOUS	Q135508874	小社神社 ← in-situ founding
 Q18336610	AUTOCHTHONOUS	Q135508874	江神社 ← in-situ founding
 Q17209232	AUTOCHTHONOUS	Q135508874	河原淵神社 ← in-situ founding
@@ -384,14 +384,14 @@ Q17215982	AUTOCHTHONOUS	Q135508874	津長神社 ← in-situ founding
 Q17213398	AUTOCHTHONOUS	Q135508874	清野井庭神社 ← in-situ founding
 Q17225818	AUTOCHTHONOUS	Q135508874	湯田神社 ← in-situ founding
 Q17229063	AUTOCHTHONOUS	Q135508874	滝祭神 ← in-situ founding
-Q11566292	TRANSFER	-	瀧原宮: cannot resolve "磯宮"
+Q11566292	TRANSFER	-	瀧原宮: 分霊 page ruling is PENDING — nothing emitted
 -	TRANSFER	瀧原竝宮	no subject QID
 -	AUTOCHTHONOUS	熊淵神社	no subject QID
 Q17211291	TRANSFER	Q133753	志宝屋神社 ← 鹽竈神社
 Q17212285	AUTOCHTHONOUS	Q135508874	志等美神社 ← in-situ founding
 -	AUTOCHTHONOUS	打懸神社	no subject QID
 Q11516023	AUTOCHTHONOUS	Q135508874	月夜見宮 ← in-situ founding
-Q11516220	UNKNOWN	Q24238356	月讀宮 ← the article states the origin is unknown
+Q11516220	UNKNOWN	Q24238356	月讀宮 ← Emma, 分霊 page
 -	NETWORK	朝熊御前神社	no subject QID
 Q17191186	AUTOCHTHONOUS	Q135508874	朝熊神社 (伊勢市) ← in-situ founding
 Q17229533	AUTOCHTHONOUS	Q135508874	朽羅神社 ← in-situ founding
@@ -436,8 +436,8 @@ Q11635561	AUTOCHTHONOUS	Q135508874	赤崎神社 ← in-situ founding
 -	AUTOCHTHONOUS	那自賣神社	no subject QID
 Q17226516	AUTOCHTHONOUS	Q135508874	鏡宮神社 (伊勢市) ← in-situ founding
 Q28693019	TRANSFER	Q11633343	長由介神社 ← 豊受大神宮
-Q11665463	UNKNOWN	Q24238356	風宮 ← the article states the origin is unknown
-Q11665488	UNKNOWN	Q24238356	風日祈宮 ← the article states the origin is unknown
+Q11665463	UNKNOWN	Q24238356	風宮 ← Emma, 分霊 page
+Q11665488	UNKNOWN	Q24238356	風日祈宮 ← Emma, 分霊 page
 Q17190840	NETWORK	Q11543776	饗土橋姫神社 ← 橋姫神社
 Q17225931	AUTOCHTHONOUS	Q135508874	高河原神社 ← in-situ founding
 Q17226760	AUTOCHTHONOUS	Q135508874	鴨下神社 ← in-situ founding

@@ -97,6 +97,22 @@ MANUAL_LABELS = {
     '瀧原竝宮': 'Takiharanarabi-no-miya',
 }
 
+# Not one of the 神宮125社 and not from the redirect set — 磯宮 has no ja.wikipedia
+# article at all. Emma asked for it directly on the 分霊 page: "make wikidata for
+# 磯宮", because 瀧原宮's origin is 磯宮 and P612 cannot point at a thing that does
+# not exist. It belongs in this batch because it is the same kind of object with
+# the same gate: the proto-Naikū, where Amaterasu was enshrined on the 五十鈴川
+# before the 皇大神宮 was built.
+#
+# It carries no P612 of its own. Chaining it back to 笠縫邑 would be a second
+# inference and the 分霊 page does not make it.
+EXTRA_BLOCKS = [{
+    'title': '磯宮',
+    'en': 'Iso-no-miya',
+    'kana': 'いそのみや',
+    'source': 'Emma, 分霊 page: "make wikidata for 磯宮"',
+}]
+
 
 def resolve_p612(rows, log):
     """title -> P612 QID, or absent when nothing resolves safely."""
@@ -192,6 +208,19 @@ def main():
             lines.append(
                 f'LAST|P612|{targets[title]}|P1013|{BUNREI}|S854|"{url}"')
         blocks.append((title, en_label, lines))
+
+    for extra in EXTRA_BLOCKS:
+        # No P1814 source URL: there is no jawiki article to cite, which is the
+        # whole reason the item has to be made by hand.
+        blocks.append((extra['title'], extra['en'], [
+            'CREATE',
+            f'LAST|Len|"{extra["en"]}"',
+            f'LAST|Lja|"{extra["title"]}"',
+            f'LAST|P31|{SHRINE}',
+            f'LAST|P361|{JINGU}',
+            f'LAST|P1814|"{extra["kana"]}"',
+        ]))
+        log.append(f'{extra["title"]}: extra block — {extra["source"]}')
 
     with open(OUT, 'w', encoding='utf-8') as fh:
         fh.write('# The 21 神宮125社 shrines with no Wikidata item (Emma 2026-08-04:\n'

@@ -191,3 +191,11 @@ LAST|P31|Q845945
 LAST|P361|Q687168
 LAST|P1814|"たきはらならびのみや"|S143|Q177837|S4656|"https://ja.wikipedia.org/wiki/瀧原竝宮"
 LAST|P612|Q11566292|P1013|Q195793|S854|"https://ja.wikipedia.org/wiki/瀧原竝宮"
+
+# 磯宮 — Iso-no-miya
+CREATE
+LAST|Len|"Iso-no-miya"
+LAST|Lja|"磯宮"
+LAST|P31|Q845945
+LAST|P361|Q687168
+LAST|P1814|"いそのみや"

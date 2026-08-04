@@ -20,8 +20,5 @@ CREATE ITEM,"=HYPERLINK(""https://ja.wikipedia.org/wiki/朝熊御前神社"",""�
 CREATE ITEM,"=HYPERLINK(""https://ja.wikipedia.org/wiki/田乃家御前神社"",""田乃家御前神社"")",NO ITEM,NETWORK,,天照大御神（皇大神宮）／大神御滄川神,redirect → 田乃家神社,祭神は御前神。大神御滄川神と同じく農家の守護神である。,,
 CREATE ITEM,"=HYPERLINK(""https://ja.wikipedia.org/wiki/許母利神社"",""許母利神社"")",NO ITEM,NETWORK,,粟嶋神（＝少名毘古那神）,redirect → 神前神社 (伊勢市),少名毘古那神と同じ神とされ、荒ぶる荒前比賣命を抑制するために祀られたと考えられる。,,
 CREATE ITEM,"=HYPERLINK(""https://ja.wikipedia.org/wiki/瀧原竝宮"",""瀧原竝宮"")",NO ITEM,TRANSFER,,瀧原宮,redirect → 瀧原宮,創建当初は瀧原竝宮は瀧原宮に含まれ、804年から927年の間に独立したと考えられている。,,
-PICK TARGET,"=HYPERLINK(""https://ja.wikipedia.org/wiki/坐摩神社"",""坐摩神社"")","=HYPERLINK(""https://www.wikidata.org/wiki/Q11425667"",""Q11425667"")",NETWORK,,宮中（神祇官西院）の坐摩神,cannot resolve: 宮中（神祇官西院）の坐摩神,,,
-PICK TARGET,"=HYPERLINK(""https://ja.wikipedia.org/wiki/佐嘉神社"",""佐嘉神社"")","=HYPERLINK(""https://www.wikidata.org/wiki/Q11383096"",""Q11383096"")",TRANSFER,,松原神社,cannot resolve: 松原神社,,,
-PICK TARGET,"=HYPERLINK(""https://ja.wikipedia.org/wiki/劔神社"",""劔神社"")","=HYPERLINK(""https://www.wikidata.org/wiki/Q11398386"",""Q11398386"")",TRANSFER,,伊部郷座ヶ岳の素盞嗚尊神霊,cannot resolve: 伊部郷座ヶ岳の素盞嗚尊神霊,,,
 PICK TARGET,"=HYPERLINK(""https://ja.wikipedia.org/wiki/忌部神社"",""忌部神社"")","=HYPERLINK(""https://www.wikidata.org/wiki/Q11490722"",""Q11490722"")",TRANSFER,,五所神社（美馬郡西端山、現・境外摂社御所神社）,cannot resolve: 五所神社（美馬郡西端山、現・境外摂社御所神社）,明治18年に眉山中腹の現在地を選定、五所神社を境外摂社とし、明治25年5月15日に現在地に遷座した。,,
 PICK TARGET,"=HYPERLINK(""https://ja.wikipedia.org/wiki/瀧原宮"",""瀧原宮"")","=HYPERLINK(""https://www.wikidata.org/wiki/Q11566292"",""Q11566292"")",TRANSFER,,磯宮,cannot resolve: 磯宮,倭姫命が、宮川下流の磯宮より天照大神を祀る地を探すために上流へ遡ったところ、「大河の瀧原の国」という美しい場所があったので、草木を刈り新宮を建てた。,,

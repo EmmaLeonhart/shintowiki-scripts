@@ -77,6 +77,7 @@ RESULTS = os.path.join(SCRIPT_DIR, 'agent_results.tsv')
 SUBJECTS = os.path.join(SCRIPT_DIR, 'subject_qids.json')
 QS_OUT = os.path.join(ROOT, 'modern-quickstatements', 'beppyo_p612.txt')
 LOG = os.path.join(SCRIPT_DIR, '_p612_resolution.log')
+RULINGS = os.path.join(SCRIPT_DIR, 'bunrei_page_rulings.tsv')
 
 BUNREI = 'Q195793'            # criterion used: Bunrei
 AUTOCHTHONOUS = 'Q135508874'  # Autocthonous shrine
@@ -207,6 +208,32 @@ def resolve_titles(titles):
     return found
 
 
+def page_rulings():
+    """Emma's answers from the shintowiki 分霊 page: title -> QID, or None.
+
+    These are the 11 the article read could not settle, and they OVERRIDE it —
+    they are answers, not more evidence. Where the page says autochthonous and
+    the article named a source (佐嘉神社, 劔神社), the page wins; where it says
+    PENDING the row is suppressed rather than guessed, which is how the 五所神社
+    answer the article gave for 忌部神社 stops being emitted without a
+    replacement being invented.
+    """
+    out = {}
+    if not os.path.exists(RULINGS):
+        return out
+    with open(RULINGS, encoding='utf-8') as fh:
+        for raw in fh:
+            line = raw.rstrip('\n')
+            if not line.strip() or line.lstrip().startswith('#'):
+                continue
+            parts = line.split('\t')
+            if len(parts) < 3:
+                continue
+            title, _qid, value = parts[0].strip(), parts[1].strip(), parts[2].strip()
+            out[title] = None if value == 'PENDING' else value
+    return out
+
+
 def head_for(source):
     """The network head for a NETWORK row whose source names no shrine."""
     for key in sorted(DEITY_HEAD, key=len, reverse=True):
@@ -249,6 +276,9 @@ def main():
     existing = {l.strip() for l in file_lines if l.strip()}
     already = {l.split('|')[0] for l in existing if '|P612|' in l}
 
+    rulings = page_rulings()
+    print(f'{len(rulings)} ruling(s) from the 分霊 page override the article read')
+
     intended, lines, log, skipped = {}, [], [], {}
     for title, cls, source in rows:
         subject = title2qid.get(title)
@@ -258,7 +288,16 @@ def main():
                 'subject has no Wikidata item', 0) + 1
             log.append(f'-\t{cls}\t{title}\tno subject QID')
             continue
-        if cls == 'UNKNOWN':
+        if title in rulings:
+            target = rulings[title]
+            if target is None:
+                skipped['page ruling pending'] = skipped.get(
+                    'page ruling pending', 0) + 1
+                log.append(f'{subject}\t{cls}\t-\t{title}: 分霊 page ruling is '
+                           f'PENDING — nothing emitted')
+                continue
+            via = 'Emma, 分霊 page'
+        elif cls == 'UNKNOWN':
             target, via = UNKNOWN_ORIGIN, 'the article states the origin is unknown'
         elif cls == 'AUTOCHTHONOUS':
             target, via = AUTOCHTHONOUS, 'in-situ founding'

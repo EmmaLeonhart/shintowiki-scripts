@@ -33,34 +33,39 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A00. ▶ The 11 unresolved lineage cases are ANSWERED on the shintowiki 分霊 page
+## A00. ✅ The 11 lineage cases — READ AND APPLIED 2026-08-04, 1 left
 
-Emma 2026-08-04: **the 11 are solved on the shintowiki page on bunrei.** Read that page and apply
-its answers — do not re-derive them, and do not guess a target for any of them.
+Emma saved the shintowiki 分霊 page to the repo (`lineage/bunrei_page_saved_2026-08-04.html`,
+text via `lineage/read_bunrei_page.py`) so the blackout did not have to be waited out. **No
+request was made to shinto.miraheze.org.** Its table "Some difficult bunrei to track" answers all
+11. They are transcribed to `lineage/bunrei_page_rulings.tsv`, which
+`build_p612_quickstatements.py` now applies **before** the article read — they are answers, not
+more evidence, so where the page says autochthonous and the article named a source, the page wins.
 
-⛔ **Gated on the blackout, which is the only reason this is not done yet.** No requests to
-shinto.miraheze.org of any kind until **2026-08-09** (see the gate at the top). First thing after
-it lifts: pull the 分霊 page, then fix the 11.
+- ✅ **3 new statements:** 佐嘉神社 → autochthonous (not 松原神社), 劔神社 → autochthonous (not
+  the 伊部郷 kami), 坐摩神社 → **Q11453221 宮中** (*"it comes from the palace things in list of
+  shikinaisha in the imperial palace"*) — the same target 石上神宮 and 菅生石部神社 already use.
+- ✅ **6 confirmed already correct** — 度津神社, 石園座多久虫玉神社, 月讀宮, 風宮, 風日祈宮 are
+  *"explicitly unknown"*, matching the staged `Q24238356`; 小俣神社 *"we figured this out from
+  deity page"*, matching the staged 豊受大神宮.
+- ✅ **瀧原宮 — "make wikidata for 磯宮"**: 磯宮 is now a CREATE block in `ise_jingu_creates.txt`
+  (22 blocks). It cannot be one QuickStatement — `LAST` only names the item just created and
+  瀧原宮 is an existing item — so `lineage/stage_takihara_p612.py` emits the 瀧原宮 line after the
+  batch runs. Run it right after `create_items.py`; it no-ops until then and is idempotent.
+- ❓ **忌部神社 is the only one left.** The page says *"comes from the main inbe lineage. Not gosho
+  shrine"*. The refusal is applied — 五所神社 is no longer emitted, and the row now stages nothing
+  rather than something wrong. **Which shrine heads the Inbe lineage is Emma's call** and the
+  AskUserQuestion is fired.
 
 **The sheet, since it caused confusion (Emma 2026-08-04).** The Google Sheet has TWO tabs and
-they are not the same thing. `to_fix` = exactly the rows that produced no statement, now **26**:
-21 CREATE ITEM (the Ise ones, done — see above) + **5 PICK TARGET**. `all_444` = every shrine
-read, 444 rows, 418 ok / 26 needs-work — the audit trail, not a worklist. The "11" was 5 PICK
-TARGET + 6 no-origin; the 6 left the sheet when they were staged as `P612 = Q24238356`, which is
-why it reads 26 and not 32. Regenerate both with `python lineage/build_sheets.py`.
+they are not the same thing. `to_fix` = exactly the rows that produced no statement. `all_444` =
+every shrine read, 444 rows — the audit trail, not a worklist. The "11" was 5 PICK TARGET + 6
+no-origin; the 6 left `to_fix` when they were staged as `P612 = Q24238356`, which is why it read
+26 and not 32. Regenerate both with `python lineage/build_sheets.py` — **do that now**, since the
+page rulings have moved 3 more rows out of `to_fix`.
 
-The 11 (from `lineage/manual_fixes.tsv`; Google Sheet "11 judgement calls"):
-- **5 targets the article names but that would not resolve** — 佐嘉神社←松原神社 (dab),
-  忌部神社←五所神社 (dab), 瀧原宮←磯宮 (no article), 坐摩神社←宮中（神祇官西院）の坐摩神,
-  劔神社←伊部郷座ヶ岳の素盞嗚尊神霊.
-- **6 with no origin in the article** — 小俣神社 (since resolved: ←豊受大神宮), 度津神社, 月讀宮,
-  石園座多久虫玉神社, 風宮, 風日祈宮. The other five are staged as `P612 = Q24238356` (unknown,
-  cited to the jawiki article) per Emma 2026-08-04 — **if the 分霊 page gives a real answer it
-  supersedes that**, via `python lineage/build_p612_quickstatements.py --supersede`.
-
-Everything else is done: 419 statements staged in `modern-quickstatements/beppyo_p612.txt`, and the
-21 shrines with no Wikidata item are Emma's by hand (Google Doc "21 Ise shrines that need a
-Wikidata item"). Method: `docs/lineage_full_read_method.md`.
+Everything else is done: 422 statements staged in `modern-quickstatements/beppyo_p612.txt`.
+Method: `docs/lineage_full_read_method.md`.
 
 ### ✅ The 21 Ise items — BUILT 2026-08-04, waiting only on the freeze
 
