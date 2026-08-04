@@ -300,8 +300,11 @@ moves) — and nothing since. Waiting on it is not a plan.
     doubled vowel into a macron *across a morpheme boundary*: 飯玉 いいたま → "ītama", 飯塚 →
     "īzuka", 幣石 へいいし → "Heīshi", 二荒 ふたあら → "Futāra", 堀出 ほりいで → "Horīde". 飯 is
     い plus the next morpheme's い, not a long vowel. **Eleven also came out lowercase-initial**
-    ("ītama Shrine"), which is wrong under any policy. If that romanizer is still in the label
-    pipeline it is still producing these — worth finding before the next label batch.
+    ("ītama Shrine"), which is wrong under any policy.
+  - ✅ **It is NOT the live romanizer — checked, not assumed.** `kana_english.label_for` was run
+    against the whole defect class and returns exactly the corrected forms (Iitama, Iizuka,
+    Heiishi, Futaara, Horiide). The bad labels came from an earlier pass, so the pipeline is not
+    still emitting them and nothing needs fixing there.
   - ❓ **The 82 left are not more of the same.** They split three ways: (1) romanization STYLE
     (Oomi / Ōmi / Omi, Kounomine / Kōnomine) — a policy question for Emma, not a typo; (2) label
     and kana disagree about the READING itself (石上 いしがみ vs Isonokami, 四本木 しほんぎ vs
