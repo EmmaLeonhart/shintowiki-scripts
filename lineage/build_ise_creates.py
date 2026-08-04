@@ -80,6 +80,23 @@ JINGU = 'Q687168'       # 伊勢神宮 / Ise Grand Shrine
 BUNREI = p612.BUNREI    # Q195793, criterion used
 JA_URL = 'https://ja.wikipedia.org/wiki/'
 
+# `kana_english.label_for` declines these three, correctly — it only romanizes a
+# name whose kana reading ends in the kana of a known shrine-type suffix, and
+# none of these do. Emma 2026-08-04 asked for them anyway ("create them, my best
+# labels"), so the labels are written out here rather than by loosening the
+# generator, which would start guessing for every future name it cannot parse.
+#
+#   屋乃波比伎神 / 宮比神  are KAMI names, not 神社 — 宮比神 has no shrine building
+#                        at all. Rendered with the -no-kami the reading gives.
+#   瀧原竝宮              reading is …のみや, not …ぐう, so the 宮 rule refuses it.
+#                        Matches its sibling 瀧原宮, which Wikidata already labels
+#                        "Takihara-no-miya" (Q11566292).
+MANUAL_LABELS = {
+    '屋乃波比伎神': 'Yanohahiki-no-kami',
+    '宮比神': 'Miyabi-no-kami',
+    '瀧原竝宮': 'Takiharanarabi-no-miya',
+}
+
 
 def resolve_p612(rows, log):
     """title -> P612 QID, or absent when nothing resolves safely."""
@@ -146,20 +163,26 @@ def main():
     for r in rows:
         title = r['title']
         kana = (readings.get(title) or {}).get('kana')
-        en = label_for(title, kana) if kana else None
-        if not en:
-            # create_items.py keys its duplicate guard AND its idempotency state
-            # on the English label. Without one the block cannot run safely, so
-            # it is dropped rather than created label-less.
+        auto = label_for(title, kana) if kana else None
+        if auto:
+            en_label = auto.label
+        elif title in MANUAL_LABELS:
+            en_label = MANUAL_LABELS[title]
+            log.append(f'{title}: en label "{en_label}" is hand-written '
+                       f'(label_for declined; kana={kana or "none"})')
+        else:
+            # <batch>.state is keyed on the English label, so a block without one
+            # is not idempotent — it would be re-created on every run.
             skipped.append(title)
             log.append(f'{title}: SKIPPED — no English label '
-                       f'(kana={kana or "none"}; label_for declined)')
+                       f'(kana={kana or "none"}; label_for declined, '
+                       f'no MANUAL_LABELS entry)')
             continue
 
         url = JA_URL + title.replace(' ', '_')
         lines = [
             'CREATE',
-            f'LAST|Len|"{en.label}"',
+            f'LAST|Len|"{en_label}"',
             f'LAST|Lja|"{title}"',
             f'LAST|P31|{SHRINE}',
             f'LAST|P361|{JINGU}',
@@ -168,7 +191,7 @@ def main():
         if title in targets:
             lines.append(
                 f'LAST|P612|{targets[title]}|P1013|{BUNREI}|S854|"{url}"')
-        blocks.append((title, en.label, lines))
+        blocks.append((title, en_label, lines))
 
     with open(OUT, 'w', encoding='utf-8') as fh:
         fh.write('# The 21 神宮125社 shrines with no Wikidata item (Emma 2026-08-04:\n'

@@ -18,18 +18,23 @@ manual web-UI batch Emma won't do), and direct_daily_edits has no
 wbeditentity/new=item path. Every item to date — 37 papers, ~104 authors, the 15
 honorifics — Emma ran by hand.
 
-THREE SAFETY PROPERTIES, each earned from a real failure today:
+TWO SAFETY PROPERTIES:
 
-1. CHECK-EXISTS-FIRST. Never create an item whose exact label already exists as
-   the same P31. This is the lesson of the 18% duplicate rate:
-   build_authors3.py's "else CREATE fresh" minted a second Noah A. Smith beside a
-   64-statement one. A creator that does not look first is a duplicate factory.
-
-2. IDEMPOTENT. Created QIDs are recorded in <batch>.state. A second run creates
+1. IDEMPOTENT. Created QIDs are recorded in <batch>.state. A second run creates
    nothing. Without this, a re-run or a retried CI job silently doubles every item.
 
-3. FAILS CLOSED. Gate errors, login failure, or an existence check that cannot
-   answer all abort. A creator that fails open is worse than one that never runs.
+2. FAILS CLOSED. Gate errors and login failure abort. A creator that fails open
+   is worse than one that never runs.
+
+NO DUPLICATE GUARD. There used to be a check-exists-first pass refusing any label
+that already existed with the same P31, carried over from a paper/author import
+with an 18% duplicate rate. Emma removed it 2026-08-04: "I don't know why this
+duplicate guard should exist. Just none." It was the wrong instrument here — it
+searched ENGLISH labels, which for Japanese shrines are generic transliterations
+(an unrelated 森神社 labelled "Mori Shrine" would have blocked 毛理神社), so it
+refused real work while catching nothing a batch's own generator hadn't already
+checked more precisely on the ja label. Whether a batch's contents are already on
+Wikidata is the generator's question to answer, before the lines are written.
 
 Usage:  python create_items.py --batch vsa_libraries.txt [--apply]
 Default is DRY-RUN. --apply is required to write.
@@ -103,33 +108,6 @@ def block_p31(block):
     return None
 
 
-def existing_same(label, p31, session):
-    """QIDs with this exact label AND this P31 — the duplicate guard.
-
-    RAISES rather than returning empty on an error: an existence check that
-    cannot answer must never read as "safe to create".
-    """
-    r = session.get(WD_API, params={
-        "action": "wbsearchentities", "search": label, "language": "en",
-        "type": "item", "limit": 10, "format": "json"}, timeout=30)
-    r.raise_for_status()
-    out = []
-    for h in r.json().get("search", []):
-        if (h.get("label") or "").strip().lower() != label.strip().lower():
-            continue
-        e = session.get(WD_API, params={
-            "action": "wbgetentities", "ids": h["id"], "props": "claims",
-            "format": "json"}, timeout=30)
-        e.raise_for_status()
-        claims = e.json().get("entities", {}).get(h["id"], {}).get("claims", {})
-        vals = [c["mainsnak"].get("datavalue", {}).get("value", {}).get("id")
-                for c in claims.get("P31", [])]
-        if p31 is None or p31 in vals:
-            out.append((h["id"], h.get("description", "")))
-        time.sleep(0.3)
-    return out
-
-
 def wd_login():
     user, token = os.environ.get("MW_BOTNAME"), os.environ.get("BOT_TOKEN")
     if not (user and token):
@@ -182,20 +160,11 @@ def main():
 
     for block in blocks:
         label = block_label(block)
-        p31 = block_p31(block)
         if not label:
             print("SKIP: block has no LAST|Len label")
             continue
         if label in done:
             print(f"{label}: already created as {done[label]} — idempotent skip")
-            continue
-
-        rivals = existing_same(label, p31, session)
-        if rivals:
-            print(f"{label}: REFUSING — {len(rivals)} existing item(s) with this label + P31:")
-            for qid, desc in rivals:
-                print(f"    {qid}  {desc[:60]}")
-            print("    (check-exists-first: this is how the 18% dup rate happened)")
             continue
 
         if not args.apply:

@@ -33,10 +33,6 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A000.
-
-Provide clear answers to me in chat, or even with an ask-user question about what to do with them for the scheme thing that I added earlier on after a00
-
 ## A00. ▶ The 11 unresolved lineage cases are ANSWERED on the shintowiki 分霊 page
 
 Emma 2026-08-04: **the 11 are solved on the shintowiki page on bunrei.** Read that page and apply
@@ -45,6 +41,13 @@ its answers — do not re-derive them, and do not guess a target for any of them
 ⛔ **Gated on the blackout, which is the only reason this is not done yet.** No requests to
 shinto.miraheze.org of any kind until **2026-08-09** (see the gate at the top). First thing after
 it lifts: pull the 分霊 page, then fix the 11.
+
+**The sheet, since it caused confusion (Emma 2026-08-04).** The Google Sheet has TWO tabs and
+they are not the same thing. `to_fix` = exactly the rows that produced no statement, now **26**:
+21 CREATE ITEM (the Ise ones, done — see above) + **5 PICK TARGET**. `all_444` = every shrine
+read, 444 rows, 418 ok / 26 needs-work — the audit trail, not a worklist. The "11" was 5 PICK
+TARGET + 6 no-origin; the 6 left the sheet when they were staged as `P612 = Q24238356`, which is
+why it reads 26 and not 32. Regenerate both with `python lineage/build_sheets.py`.
 
 The 11 (from `lineage/manual_fixes.tsv`; Google Sheet "11 judgement calls"):
 - **5 targets the article names but that would not resolve** — 佐嘉神社←松原神社 (dab),
@@ -59,13 +62,37 @@ Everything else is done: 419 statements staged in `modern-quickstatements/beppyo
 21 shrines with no Wikidata item are Emma's by hand (Google Doc "21 Ise shrines that need a
 Wikidata item"). Method: `docs/lineage_full_read_method.md`.
 
-### idk this scheme
+### ✅ The 21 Ise items — BUILT 2026-08-04, waiting only on the freeze
 
-I need you to explain a lot more about what's actually going on with the Issei ones, but my impression is that you should just make items for all of the Issei ones. I presume you did wiki data searches, and wiki data searches for them have found that, in my experience, they don't exist. Just make them. All we need to do is make them with the English name, English language name, the P31 Shinto Shrine Japanese language name, and a connection, and then it'll gradually go through our pipeline as well. 
+Emma: *"just make them … the English name, English language name, the P31 Shinto Shrine
+Japanese language name, and a connection."* Done. `modern-quickstatements/ise_jingu_creates.txt`,
+21 CREATE blocks, run via `create_items.py --batch ise_jingu_creates.txt --apply`.
+Generator `lineage/build_ise_creates.py`; readings `lineage/fetch_ise21_readings.py` (21/21 out
+of the parent articles). Gate `ise_jingu_gate.py` = Wikidata freeze (2026-08-10) AND
+conflict_gate, fails closed. 11 tests.
+- They had no item because each is a jawiki **redirect** into a neighbour's article (2 are
+  section redirects) — no article, no sitelink. Not a lookup failure: `build_subject_map.py`
+  also asked for an item whose jawiki sitelink is the redirect title, and one whose ja label
+  is exactly the name. Both empty for all 21.
+- Per block: Lja, Len, `P31=Q845945`, `P361=Q687168` (伊勢神宮 — the connection), `P1814`,
+  and the `P612` with `P1013=Q195793`. **No descriptions** (Emma's standing note) and **no
+  sitelinks** (legal on a redirect title, but the one field that can steal a link from a
+  neighbouring item — left for a deliberate pass).
+- Three labels are hand-written in `MANUAL_LABELS`, Emma's call 2026-08-04: 屋乃波比伎神 →
+  Yanohahiki-no-kami, 宮比神 → Miyabi-no-kami (both kami names, no shrine suffix to
+  romanize; 宮比神 has no shrine building), 瀧原竝宮 → Takiharanarabi-no-miya (reading is
+  …のみや not …ぐう; matches its sibling 瀧原宮 = "Takihara-no-miya").
+- ▶ **Run it after 2026-08-10.** Needs `MW_BOTNAME`/`BOT_TOKEN`; `create-items.yml` is the
+  workflow that has them.
 
-### idk this scheme 2
+### ✅ create_items.py has no duplicate guard (Emma 2026-08-04)
 
-https://docs.google.com/spreadsheets/d/1O3UBFVWMhe9PFBUCUxJ5iG-BddkS4QMBJvHBaUjDGJc/edit?gid=920559023#gid=920559023 For this one, I likewise have significant confusion, but my significant confusion's a bit different because I'm getting the impression that it's kind of like... I don't know if this is just all the ones with errors in it, or whether this is a specific defined category of just the 11 that needed judgment, plus the Issei ones that needed creation. You weren't really that clear about it and kind of made too many things. You even tried to 444 one. Is this just the case? Am I just seeing this? 
+*"I don't know why this duplicate guard should exist. Just none."* Removed. It searched
+ENGLISH labels, which for shrines are generic transliterations — an unrelated 森神社 labelled
+"Mori Shrine" would have blocked 毛理神社 — so it refused real work while catching nothing the
+generator had not already checked more precisely on the ja label. Whether a batch's contents
+already exist is now the generator's question, answered before the lines are written. This
+also applies to the `vsa_libraries.txt` batch, which shared the tool.
 
 
 
@@ -227,7 +254,13 @@ back AUTOCHTHONOUS (倭姫命 enshrining a local 国津神 in place; a river, we
 the kami), which is a statement no constituency relation can express. The 19 that name a parent
 (瀧原宮←磯宮, 豊受大神宮←比沼麻奈為神社, 伊雑宮←皇大神宮) are staged with the rest. See A0b.
 
-▶ **Still open here:** the P1814 pass over the 54, and the 23 articles with no Wikidata item.
+✅ **"23 with no item" was 21, and the correction is instructive.** 23 was `99 − 76 articles
+carrying a `wikibase_item``. Two of the 23 — 大間国生神社 `Q135098908` and 神服織機殿神社
+`Q135186223` — DO have items, found by exact ja label with **no sitelink at all**, so no
+sitelink-based lookup can see them. The real figure is 21, and those are the CREATE batch
+under A00.
+
+▶ **Still open here:** the P1814 pass over the 54.
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 

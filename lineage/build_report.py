@@ -28,6 +28,78 @@ ROOT = os.path.dirname(SCRIPT_DIR)
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 OUT = os.path.join(SCRIPT_DIR, 'report.html')
+CREATES = os.path.join(ROOT, 'modern-quickstatements', 'ise_jingu_creates.txt')
+
+# Emma 2026-08-04 asked for one lineage report instead of three pages, so the
+# hand-written analysis from `no_origin_6.html` lives here now. It is prose, not
+# derivable from any file — a re-read of each shrine across its own article,
+# en.wikipedia, the kami's article and the related shrine, recording what looks
+# like an origin and is not. Deleting it would lose the only reason not to
+# "helpfully" infer these six later.
+NO_ORIGIN_NOTES = {
+    '月讀宮': {
+        'says': '「由緒は定かではないが、…延暦23年（804年）の大神宮儀式帳に「月讀宮一院、'
+                '正殿四区」で…と記されており」— attestation, not origin.',
+        'checked': 'No enwiki. ツクヨミ\'s article lists where the deity is enshrined but '
+                   'gives no enshrinement narrative for any of them.',
+        'not': '月夜見宮\'s origin (高河原, an agricultural kami in place) belongs to THAT '
+               'shrine. A different shrine with a similar name — do not transplant it.',
+    },
+    '風宮': {
+        'says': '「風宮の由緒は定かではないが、997年（長徳3年）の『長徳検録』に外宮所管の…'
+                '風社と記されたとの…引用が最古である。」',
+        'checked': 'No enwiki. シナツヒコ\'s article gives no first-enshrinement site.',
+        'not': 'Its promotion from 末社-rank 風社 to 別宮 in 1293 after the Mongol invasions '
+               'is a rank change on the same site — continuity, not an origin, and not '
+               'enough for autochthonous either.',
+    },
+    '風日祈宮': {
+        'says': '「風日祈宮の由緒は定かではないが、804年（延暦23年）の『皇太神宮儀式帳』の'
+                '「風神社」が初出である。」',
+        'checked': 'No enwiki. Same kami as 風宮, same dead end. 皇大神宮\'s article mentions '
+                   'it only as a location.',
+        'not': 'Same as 風宮 — the 1293 promotion is not an origin. And シナツヒコ = 天御柱命 '
+               'at 龍田大社 is a deity identification, not a transfer from Tatsuta.',
+    },
+    '度津神社': {
+        'says': '「往古の羽茂川洪水により社殿、古文書から別当寺にいたるまでことごとく流失した'
+                'ため、創建の由緒は不詳である。」— the records were physically destroyed by a flood.',
+        'checked': 'enwiki "Watatsu Shrine" adds only a founding attributed to Emperor '
+                   'Chūai and says the history is uncertain.',
+        'not': 'Do NOT give it a 五十猛命 / 伊太祁曽神社 lineage. The article disputes that the '
+               'kami is 五十猛命 at all: the identification is Edo-period (橘三喜, 1678), '
+               '吉田東伍 called it 「附会を免れず」, and the 佐渡志 records '
+               '「又海童神ヲ祭ルトモ云ヘリ」— a competing sea-deity reading. イソタケル\'s own '
+               'article never mentions this shrine, 佐渡, or any 勧請.',
+    },
+    '石園座多久虫玉神社': {
+        'says': '「創建年代は不明であるが、第三代安寧天皇の時代の都である片塩浮穴宮跡の'
+                '伝承地に鎮座している。」',
+        'checked': 'No enwiki. No ja article exists for the kami at all — 建玉依比古命, '
+                   '鴨玉依比古命, 玉依彦, 多久豆玉命 are all redlinks. 長尾神社 only repeats '
+                   'the same dragon legend.',
+        'not': 'Two things that look like origins and are not: the 上賀茂神社摂社土師尾社 / '
+               '日吉大社摂社樹下若宮 line is a deity-identity equation (「…のこととされる」) with '
+               'no direction; and standing on 安寧天皇\'s 片塩浮穴宮跡 is a fact about the SITE, '
+               'not about where the kami came from. The 大神神社-head / 竜王社-body / '
+               '長尾神社-tail dragon story is a landscape myth about three shrines\' relative '
+               'positions.',
+    },
+}
+
+# The sixth. It was in this set until the re-read found its answer somewhere the
+# first pass had no reason to look, which is the whole argument for the re-read.
+RECOVERED = {
+    'title': '小俣神社', 'qid': 'Q17225978', 'target': 'Q11633343', 'target_label': '豊受大神宮',
+    'found': 'The shrine\'s own article says nothing — its 歴史 section only dates it '
+             '(pre-804) and describes the district. The answer is in the KAMI\'s article: '
+             '『御鎮座本紀』 records it as enshrining ウカノミタマ稲女神, who came to Ise '
+             'accompanying トヨウケ大神.',
+    'not': 'Not 丹波. 豊受大神宮\'s article has Toyouke summoned from 丹波国 by oracle; chaining '
+           'that would give 小俣神社 a Tanba origin, but no single source says that about this '
+           'shrine — two inferences stacked. The staged value stops at the deity-home that is '
+           'actually stated.',
+}
 
 
 def tsv(path, ncols):
@@ -39,6 +111,27 @@ def tsv(path, ncols):
             if p and p[0]:
                 rows.append((p + [''] * ncols)[:ncols])
     return rows
+
+
+def read_creates():
+    """The CREATE batch for the 21 itemless shrines, parsed back out of the file
+    it will actually be run from — so the page cannot drift from the batch."""
+    out, cur = [], None
+    for raw in open(CREATES, encoding='utf-8'):
+        line = raw.strip()
+        if line.startswith('# ') and ' — ' in line:
+            cur = {'title': line[2:].split(' — ')[0].strip(),
+                   'en': line.split(' — ', 1)[1].strip(), 'kana': '', 'p612': ''}
+            out.append(cur)
+        elif cur and line.startswith('LAST|P1814|"'):
+            cur['kana'] = line.split('"')[1]
+        elif cur and line.startswith('LAST|P612|'):
+            cur['p612'] = line.split('|')[2]
+    redirects = {r['title']: r['redirect'] for r in
+                 json.load(open(os.path.join(SCRIPT_DIR, '_ise21.json'), encoding='utf-8'))}
+    for c in out:
+        c['redirect'] = redirects.get(c['title'], '')
+    return out
 
 
 def main():
@@ -77,9 +170,15 @@ def main():
             'why': reasons.get(title, ''),
         })
 
+    no_origin = [dict(NO_ORIGIN_NOTES[r['t']], title=r['t'], qid=r['qid'], quote=r['q'])
+                 for r in rows if r['t'] in NO_ORIGIN_NOTES]
+
     data = {
         'rows': rows,
         'collisions': collisions,
+        'creates': read_creates(),
+        'noOrigin': no_origin,
+        'recovered': RECOVERED,
         'generated': '2026-08-04',
         'counts': {
             'total': len(rows),
@@ -267,6 +366,49 @@ footer{color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padd
 </section>
 
 <section>
+  <h2>The 21 with no item at all</h2>
+  <p>Every one is a real 神社 of the 神宮125社 with its own name, its own kami and its own
+  origin account — and on ja.wikipedia every one is a <b>redirect</b> into a neighbouring
+  shrine's article. Two (<span class="jp">大河内神社</span>,
+  <span class="jp">打懸神社</span>) are <b>section</b> redirects, which is the clearest sign
+  they are separate subjects sharing one page for editorial convenience. No article means
+  no sitelink, and a sitelink is how nearly everything here finds a QID.</p>
+  <p class="note">This is not a lookup failure. Wikidata was also asked the two questions a
+  sitelink cannot answer — is there an item whose jawiki sitelink is this redirect title,
+  and is there an item whose ja label is exactly this name — and both came back empty for
+  all 21. That same method is what found <code>Q114593121</code> and three items with no
+  sitelink at all elsewhere in this set.</p>
+  <p>They are now a CREATE batch, <code>modern-quickstatements/ise_jingu_creates.txt</code>,
+  run through <code>create_items.py</code> behind a gate that stays shut until the Wikidata
+  freeze lifts. Each gets the ja name, the English name, <code>P31 = Q845945</code>,
+  <code>P361 = Q687168</code> (伊勢神宮 — what all 99 of these that already have an item
+  carry), the hiragana reading, and the P612 this read produced. No descriptions.</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Shrine</th><th>English name</th><th>Reading</th>
+        <th>jawiki redirect goes to</th><th>P612</th></tr></thead>
+      <tbody id="creates"></tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>The six with no origin at all</h2>
+  <p>Six of the 444 came back with no account of where their kami came from. They were
+  re-read afterwards — the whole local article again, then en.wikipedia, then the
+  <i>kami's</i> own article, then the related shrine the article names. <b>One turned out to
+  have an answer</b> in a place the first pass had no reason to look; the other five are
+  genuine, and four of them say so in the source's own words.</p>
+  <p class="note">A blank here is not like a blank elsewhere: these are shrines whose lineage
+  <i>cannot</i> be inferred from a neighbour without inventing it. So each row below also
+  records what looks like an origin and is not — that column is the point of the section.
+  The five are staged as <code>P612 = Q24238356</code> (unknown value), which says "it has a
+  mother house and we do not know it" rather than leaving the property absent.</p>
+  <div id="recovered" class="group"></div>
+  <div id="noorigin" style="display:flex;flex-direction:column;gap:12px"></div>
+</section>
+
+<section>
   <h2>All 444 rows</h2>
   <p>Every classification with the sentence it rests on. <b>Flagged</b> shows only rows
   that produced no statement — no item of their own, an unresolvable source, or no origin
@@ -336,6 +478,37 @@ document.getElementById('collisions').innerHTML = DATA.collisions.map(g => {
     <h3><span class="mono">${esc(g.shared_qid)}</span> was claimed by ${g.members.length} shrines</h3>
     </div>${members}</div>`;
 }).join('');
+
+document.getElementById('creates').innerHTML = DATA.creates.map(c => {
+  const sec = c.redirect.includes('#');
+  return `<tr>
+    <td><a class="jp" href="https://ja.wikipedia.org/wiki/${encodeURIComponent(c.title)}"
+      >${esc(c.title)}</a></td>
+    <td>${esc(c.en)}</td>
+    <td class="jp">${esc(c.kana)}</td>
+    <td class="jp">${esc(c.redirect)}${sec?' <span class="pill p-redirect">section</span>':''}</td>
+    <td><a class="mono" href="https://www.wikidata.org/wiki/${esc(c.p612)}">${esc(c.p612)}</a></td>
+  </tr>`;
+}).join('');
+
+const r0 = DATA.recovered;
+document.getElementById('recovered').innerHTML = `
+  <div class="head"><h3><span class="jp">${esc(r0.title)}</span> — recovered</h3>
+    <span class="mono">${esc(r0.qid)} → ${esc(r0.target)} <span class="jp">${esc(r0.target_label)}</span></span></div>
+  <div class="member" style="grid-template-columns:1fr"><div>
+    <p style="font-size:14px">${esc(r0.found)}</p>
+    <p class="why" style="margin-top:8px">${esc(r0.not)}</p></div></div>`;
+
+document.getElementById('noorigin').innerHTML = DATA.noOrigin.map(n => `
+  <div class="group">
+    <div class="head"><h3><span class="jp">${esc(n.title)}</span></h3>
+      <span class="mono">${esc(n.qid)} → Q24238356 unknown</span></div>
+    <div class="member" style="grid-template-columns:1fr"><div>
+      <p class="jp" style="font-size:14px">${esc(n.says)}</p>
+      <p class="why" style="margin-top:8px"><b>Also checked.</b> ${esc(n.checked)}</p>
+      <p class="why" style="margin-top:6px;color:var(--bad)"><b>Must not be inferred.</b>
+        ${esc(n.not)}</p></div></div>
+  </div>`).join('');
 
 const tbody = document.getElementById('tbody');
 let filter = 'all', query = '';

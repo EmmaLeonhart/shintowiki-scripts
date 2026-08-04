@@ -14,8 +14,11 @@ gate is the conjunction of BOTH standing holds, and it fails closed on any error
    editor is active is exactly the visibility Emma ranks as worse than data loss.
 
 Note what this gate does NOT do: it does not check whether the items already
-exist. `create_items.py` does that per-block, live, and refuses any label that
-already has an item with the same P31.
+exist. Nothing at run time does — `create_items.py` has no duplicate guard
+(Emma removed it 2026-08-04). That question was answered when the batch was
+generated: `build_subject_map.py` asked ja.wikipedia and Wikidata for an article,
+a jawiki sitelink, and an exact ja label for each of the 21, and all three came
+back empty. Re-running `lineage/build_ise_creates.py` is what re-checks it.
 """
 import datetime
 import os
