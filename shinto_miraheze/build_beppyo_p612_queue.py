@@ -47,6 +47,7 @@ Usage:
 import argparse
 import io
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -93,6 +94,29 @@ TASK = (
     "shrine, is not a mother house — UNCLEAR.\n"
     "When ANSWER is filled this file is done. -->"
 )
+
+
+QS_OUT = os.path.join(REPO_ROOT, "modern-quickstatements", "beppyo_p612.txt")
+RESOLVED_LOG = os.path.join(OUT_DIR, "_resolved.log")
+
+
+def already_handled():
+    """QIDs already staged or answered — same trap as the name-in-kana builder.
+
+    Skipping only on work-file existence is not enough: the collector deletes the
+    file when it answers, and the category listing has no idea the statement is
+    staged, so every rebuild re-queues finished work. Hit on 2026-08-04, when a
+    rebuild recreated 14 files for shrines already collected in the first pass.
+    """
+    done = set()
+    for path, pat in ((QS_OUT, r"^(Q\d+)\|"), (RESOLVED_LOG, r"^(Q\d+)	")):
+        if not os.path.exists(path):
+            continue
+        for line in open(path, encoding="utf-8"):
+            m = re.match(pat, line)
+            if m:
+                done.add(m.group(1))
+    return done
 
 
 def _utf8():
@@ -211,8 +235,12 @@ def main():
         return
 
     os.makedirs(OUT_DIR, exist_ok=True)
+    done = already_handled()
     todo = [r for r in rows
-            if not os.path.exists(os.path.join(OUT_DIR, f"{r[0]}.wiki"))][:args.limit]
+            if r[0] not in done
+            and not os.path.exists(os.path.join(OUT_DIR, f"{r[0]}.wiki"))][:args.limit]
+    if done:
+        print(f"{len(done)} shrines already staged or answered — not re-queued")
     if not todo:
         print("every target already has a work-file")
         return

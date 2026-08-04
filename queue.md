@@ -42,7 +42,14 @@ external thing.
 - ✅ **Bucket (b) is FINISHED** — all 54 done locally: 50 P1814 lines + 43 en labels (via
   `kana_english.label_for`). 4 produced no statement: 3 legitimately mixed-script readings and 1
   two-shrine disambiguation page.
-- ⏳ **Bucket (a): 2,582 targets; 136 done locally 2026-08-04**, 107 work-files still unanswered.
+- ⏳ **Bucket (a): 2,582 targets; 197 done locally 2026-08-04**, 34 work-files left in this tranche.
+- ⚠️ **The builders re-queued finished work, and both are fixed.** Skipping only on work-file
+  existence is wrong: the collector DELETES the file when it answers, and the SPARQL/category target
+  set cannot see the staged line either, because the freeze holds delivery until 2026-08-10. So a
+  rebuild re-created 12 name-in-kana files (and, earlier, 14 Beppyo ones) for work already done —
+  answering them would have written a second identical statement each. Both builders now consult the
+  staged `.txt` + `_resolved.log` via `already_handled()`. **Until the freeze lifts, local staging is
+  the only record of what has been done; do not trust the target query to know.**
   **The cloud routine is one path, not the only one** — these can be extracted locally in batches
   exactly like bucket (b), and waiting on the routine is not a blocker. It addresses only a handful
   of items per run across all 2,252 queue entries, so local batches are the faster road. Rebuild more

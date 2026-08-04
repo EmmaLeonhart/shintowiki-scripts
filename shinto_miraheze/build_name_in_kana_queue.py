@@ -49,6 +49,7 @@ Usage:
 import argparse
 import io
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -105,6 +106,37 @@ REPURPOSED = {
     "Q134736575",   # 見光寺
     "Q140476265",   # created then blanked; junk husk
 }
+
+
+QS_OUT = os.path.join(REPO_ROOT, "modern-quickstatements", "name_in_kana.txt")
+RESOLVED_LOG = os.path.join(OUT_DIR, "_resolved.log")
+
+
+def already_handled():
+    """QIDs already staged or already answered — do NOT queue them again.
+
+    A work-file's absence does not mean the item still needs work: the collector
+    DELETES the file once answered. And the SPARQL target set cannot tell the
+    difference either, because it asks Wikidata "which shrines lack P1814" and the
+    staged lines have not been delivered — the freeze holds them until 2026-08-10.
+    So the naive "skip if the file exists" rule re-queues everything already done.
+
+    Caught 2026-08-04: a rebuild recreated 12 work-files for the first hand-done
+    batch. Answering them would have written a second, identical P1814 line for
+    each. The local staging is the only record of what has been done, so it is
+    what gets consulted.
+    """
+    done = set()
+    if os.path.exists(QS_OUT):
+        for line in open(QS_OUT, encoding="utf-8"):
+            m = re.match(r"^(Q\d+)\|", line)
+            if m:
+                done.add(m.group(1))
+    if os.path.exists(RESOLVED_LOG):
+        for line in open(RESOLVED_LOG, encoding="utf-8"):
+            if line.startswith("Q"):
+                done.add(line.split("\t")[0].strip())
+    return done
 
 
 def _utf8():
@@ -258,8 +290,12 @@ def main():
         return
 
     os.makedirs(OUT_DIR, exist_ok=True)
+    done = already_handled()
     todo = [r for r in pool
-            if not os.path.exists(os.path.join(OUT_DIR, f"{r[0]}.wiki"))][:args.limit]
+            if r[0] not in done
+            and not os.path.exists(os.path.join(OUT_DIR, f"{r[0]}.wiki"))][:args.limit]
+    if done:
+        print(f"{len(done)} targets already staged or answered — not re-queued")
     if not todo:
         print("every target in this bucket already has a work-file")
         return

@@ -4,6 +4,35 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 — the builders were re-queueing work already done
+
+Reading the next batch of leads, a familiar QID went past: Q164895, which was in the very first
+hand-done name-in-kana batch. Twelve of the 107 pending work-files were re-creations of finished
+work, and answering them would have written a second, identical P1814 line for each.
+
+The cause is a rule that looks obviously correct and is not: *skip a target if its work-file
+exists*. The collector DELETES the work-file when it answers, so absence means "done" as often as
+"not started". And the target query cannot break the tie either — it asks Wikidata which shrines
+lack P1814, and the staged statements have not been delivered, because the freeze holds them until
+2026-08-10. Both signals say "still needs work" about work that is finished.
+
+The same defect was in the Beppyo builder; it had already bitten once, on 2026-08-03, when a rebuild
+recreated 14 files for shrines collected in the first pass. I removed those by hand at the time and
+did not ask why they came back. That was the miss: a hand-cleanup of a symptom, a day before the
+same mechanism produced twelve more.
+
+Both builders now consult the staged `.txt` and `_resolved.log` through `already_handled()`. The
+Beppyo builder verifies clean — asked for 3 more files, it writes 0, because everything is done.
+
+The general rule, written into the queue: while the freeze is on, local staging is the only record
+of what has been done, and the target query must not be trusted to know.
+
+61 further P1814 lines this tick; 197 of bucket (a) done, 34 work-files left in the tranche.
+name_in_kana.txt is 259 lines with zero duplicate subjects — which is the check that would have
+caught this had it been run against the wrong input, and did catch it at the source instead.
+
+---
+
 ## 2026-08-04 — bucket (a) is not blocked, and never was
 
 Reported for several ticks as "awaiting cloud answers", which was wrong. The remote routine is one
