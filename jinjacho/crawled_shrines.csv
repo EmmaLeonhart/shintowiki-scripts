@@ -7387,3 +7387,847 @@ Gifu,洲原神社,すはらじんじゃ,岐阜県恵那市長島町正家字大�
 Gifu,子宮神社,こみやじんじゃ,岐阜県恵那市長島町正家字飛ｹ根264番地の1の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1574
 Gifu,神明神社,しんめいじんじゃ,岐阜県恵那市長島町永田字木ﾉ下515.512番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1575
 Gifu,神明神社,しんめいじんじゃ,岐阜県恵那市長島町永田字浮沼47番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1576
+Mie,一之瀬神社,いちのせじんじゃ,三重県度会郡度会町脇出392,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%80%e4%b9%8b%e7%80%ac%e7%a5%9e%e7%a4%be/
+Mie,一宮神社,いっきゅうじんじゃ,名張市夏見字坊垣 3375-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%80%e5%ae%ae%e7%a5%9e%e7%a4%be/
+Mie,一御田神社,いちみたじんじゃ,三重県津市一身田町 679,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%80%e5%be%a1%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,一目連社,いちもくれんしゃ,桑名市長島町源部外面字山ノ割 263-3,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%80%e7%9b%ae%e9%80%a3%e7%a4%be/
+Mie,一色神社,いっしきじんじゃ,伊勢市一色町1612,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%80%e8%89%b2%e7%a5%9e%e7%a4%be/
+Mie,七保神社,ななほじんじゃ,三重県度会郡大紀町野原４８３－２,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%83%e4%bf%9d%e7%a5%9e%e7%a4%be/
+Mie,七栗神社,ななくりじんじゃ,津市庄田町 181,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%83%e6%a0%97%e7%a5%9e%e7%a4%be/
+Mie,三宅神社,みやけじんじゃ,鈴鹿市三宅町 1259,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e5%ae%85%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%89%e5%ae%85%e7%94%ba%ef%bc%89/
+Mie,三宅神社,みやけじんじゃ,鈴鹿市国府町 1609,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e5%ae%85%e7%a5%9e%e7%a4%be%ef%bc%88%e5%9b%bd%e5%ba%9c%e7%94%ba%ef%bc%89/
+Mie,三宮神社,さんのみやじんじゃ,三重県南牟婁郡御浜町大字片川３６０,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e5%ae%ae%e7%a5%9e%e7%a4%be/
+Mie,三木神社,みきじんじゃ,三重県尾鷲市三木浦町４４０,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e6%9c%a8%e7%a5%9e%e7%a4%be/
+Mie,三木里神社,みきさとじんじゃ,三重県尾鷲市三木里町５５８,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e6%9c%a8%e9%87%8c%e7%a5%9e%e7%a4%be/
+Mie,三瀬川八柱神社,みせがわやはしらじんじゃ,が地勢上一般人家に離れていたため自然に参拝者も少なくなっていたところ、昭和２０年８月大東亜戦の終戦以来境内は日増しに荒廃,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e7%80%ac%e5%b7%9d%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be/
+Mie,三瀬谷神社,みせだにじんじゃ,三重県多気郡大台町佐原439,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e7%80%ac%e8%b0%b7%e7%a5%9e%e7%a4%be/
+Mie,三田神社,みたじんじゃ,伊賀市三田 2477,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,三行神社,みゆきじんじゃ,津市河芸町三行 2623,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e8%a1%8c%e7%a5%9e%e7%a4%be/
+Mie,三重縣護國神社,みえけんごこくじんじゃ,三重県津市広明町387,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%89%e9%87%8d%e7%b8%a3%e8%ad%b7%e5%9c%8b%e7%a5%9e%e7%a4%be/
+Mie,上宮神社,じょうぐうじんじゃ,三重県熊野市紀和町揚枝２８１,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%8a%e5%ae%ae%e7%a5%9e%e7%a4%be/
+Mie,上山神社,うえやまじんじゃ,、大字神上字雄賀須賀。）、並びにその境内社の事解男神社、武甕雷神社、天皇神社（祭神 素盞鳴命。）大上宮神社（同、大己貴命,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%8a%e5%b1%b1%e7%a5%9e%e7%a4%be/
+Mie,上社,かみやしろ,伊勢市辻久留 1-13-6,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%8a%e7%a4%be/
+Mie,上野神社,うえのじんじゃ,津市河芸町上野 3163,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%8a%e9%87%8e%e7%a5%9e%e7%a4%be/
+Mie,上長瀬國津神社,かみながせくにつじんじゃ,名張市上長瀬 2284,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%8a%e9%95%b7%e7%80%ac%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be/
+Mie,下外城田神社,しもときだじんじゃ,三重県度会郡玉城町大字小社曽根７９４ー４,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%8b%e5%a4%96%e5%9f%8e%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,世木神社,せぎじんじゃ,伊勢市吹上1-2-6,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%96%e6%9c%a8%e7%a5%9e%e7%a4%be/
+Mie,並大神社,なろうじんじゃ,三重県度会郡大紀町崎２０１２,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%a6%e5%a4%a7%e7%a5%9e%e7%a4%be/
+Mie,中原神社,なかはらじんじゃ,いなべ市北勢町北中津原291-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e5%8e%9f%e7%a5%9e%e7%a4%be%ef%bc%88%e5%8c%97%e5%8b%a2%e7%94%ba%ef%bc%89/
+Mie,中原神社,なかはらじんじゃ,松阪市嬉野津屋城町 1290-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e5%8e%9f%e7%a5%9e%e7%a4%be%ef%bc%88%e5%ac%89%e9%87%8e%e6%b4%a5%e5%b1%8b%e5%9f%8e%e7%94%ba%ef%bc%89/
+Mie,中山神社,なかやまじんじゃ,名張市薦生 214,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e5%b1%b1%e7%a5%9e%e7%a4%be/
+Mie,中嶋神明社,なかじましんめいしゃ,鈴鹿市柳町 1312,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e5%b6%8b%e7%a5%9e%e6%98%8e%e7%a4%be/
+Mie,中川神社,なかがわじんじゃ,度会郡度会町長原田間ゾワ2910-3,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e5%b7%9d%e7%a5%9e%e7%a4%be/
+Mie,中村神社,なかむらじんじゃ,三重県南牟婁郡紀宝町成川６７４,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e6%9d%91%e7%a5%9e%e7%a4%be/
+Mie,中河御厨神明社,なかがわみくりやしんめいしゃ,桑名市大字坂井 636,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e6%b2%b3%e5%be%a1%e5%8e%a8%e7%a5%9e%e6%98%8e%e7%a4%be/
+Mie,中臣神社,なかとみじんじゃ,桑名市本町 46,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e8%87%a3%e7%a5%9e%e7%a4%be/
+Mie,中郷神社,なかさとじんじゃ,松阪市嬉野宮野町 553,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%ad%e9%83%b7%e7%a5%9e%e7%a4%be/
+Mie,丸山神社,まるやまじんじゃ,いなべ市北勢町川原 412,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%b8%e5%b1%b1%e7%a5%9e%e7%a4%be/
+Mie,丸山稲荷神社,まるやまいなりじんじゃ,三重県津市大字岩田字丸山 2,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%b8%e5%b1%b1%e7%a8%b2%e8%8d%b7%e7%a5%9e%e7%a4%be/
+Mie,丹生神社,にゅうじんじゃ,三重県多気郡多気町丹生3999番地,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%b9%e7%94%9f%e7%a5%9e%e7%a4%be/
+Mie,久々志彌神社,くくしみじんじゃ,鈴鹿市下箕田 1-5-56,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b9%85%e3%80%85%e5%bf%97%e5%bd%8c%e7%a5%9e%e7%a4%be/
+Mie,久留真神社,くるまじんじゃ,鈴鹿市白子1-15-15,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b9%85%e7%95%99%e7%9c%9f%e7%a5%9e%e7%a4%be/
+Mie,久間田神社,くまだじんじゃ,四日市市鹿間町 449-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b9%85%e9%96%93%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,九木神社,くきじんじゃ,に遷座した。又、この時、この地の産土神として祀られていた若宮八幡・国柄明神を共に１社に祀られたと伝えられている。古くから,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b9%9d%e6%9c%a8%e7%a5%9e%e7%a4%be/
+Mie,九鬼岩倉神社,くきいわくらじんじゃ,鳥羽市岩倉町 1107-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b9%9d%e9%ac%bc%e5%b2%a9%e5%80%89%e7%a5%9e%e7%a4%be/
+Mie,乳峯神社,ちのみねじんじゃ,三重県松阪市飯高町七日市 560-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b9%b3%e5%b3%af%e7%a5%9e%e7%a4%be/
+Mie,亀山八幡神社,かめやまはちまんじんじゃ,亀山市江ヶ室 2-6-19,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%80%e5%b1%b1%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/
+Mie,亀山神社,かめやまじんじゃ,亀山市西丸町 570-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%80%e5%b1%b1%e7%a5%9e%e7%a4%be/
+Mie,事忌神社,こといみじんじゃ,津市芸濃町林 990,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%8b%e5%bf%8c%e7%a5%9e%e7%a4%be%ef%bc%88%e6%9e%97%ef%bc%89/
+Mie,事忌神社,こといみじんじゃ,津市河芸町高佐 579-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%8b%e5%bf%8c%e7%a5%9e%e7%a4%be%ef%bc%88%e9%ab%98%e4%bd%90%ef%bc%89/
+Mie,二十五柱神社,にじゅうごはしらじんじゃ,松阪市柿木原町52,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%8c%e5%8d%81%e4%ba%94%e6%9f%b1%e7%a5%9e%e7%a4%be/
+Mie,二見神社,ふたみじんじゃ,伊勢市二見町溝口756,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%8c%e8%a6%8b%e7%a5%9e%e7%a4%be/
+Mie,二見興玉神社,ふたみおきたまじんじゃ,伊勢市二見町江575,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%8c%e8%a6%8b%e8%88%88%e7%8e%89%e7%a5%9e%e7%a4%be/
+Gifu,十二社神社,じゅうにしゃじんじゃ,岐阜県恵那市長島町中野字大隈前108番地の2,https://www.gifu-jinjacho.jp/syosai.php?shrno=1577
+Gifu,神明神社,しんめいじんじゃ,岐阜県恵那市長島町中野字神明前1055番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1578
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市長島町久須見字宮裏1603番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1579
+Gifu,武並神社,たけなみじんじゃ,岐阜県恵那市長島町久須見字宮栗408番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1580
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市長島町久須見字深山沢1967番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1581
+Gifu,津島神社,つしまじんじゃ,岐阜県恵那市長島町久須見字天王前1038番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1582
+Gifu,河合神社,かわいじんじゃ,岐阜県恵那市笠置町河合字中切1095番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1583
+Gifu,椿山神社,つばきやまじんじゃ,岐阜県恵那市笠置町姫栗字中切867番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1584
+Gifu,蘇原神社,そはらじんじゃ,岐阜県恵那市笠置町毛呂窪字中田493番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1585
+Gifu,日枝神社,ひえじんじゃ,岐阜県恵那市岩村町飯羽間字下平3229番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1586
+Gifu,秋葉神社,あきばじんじゃ,岐阜県恵那市岩村町飯羽間字上平3596番地の1の2,https://www.gifu-jinjacho.jp/syosai.php?shrno=1587
+Gifu,津島神社,つしまじんじゃ,岐阜県恵那市岩村町飯羽間字西川432番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1588
+Gifu,神明神社,しんめいじんじゃ,岐阜県恵那市岩村町飯羽間字中屋1000番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1589
+Gifu,津島神社,つしまじんじゃ,岐阜県恵那市岩村町飯羽間字平畑2007番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1590
+Gifu,白山神社,はくさんじんじゃ,岐阜県恵那市岩村町飯羽間字寺屋敷2080番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1591
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市岩村町富田字上野山239番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1592
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市岩村町富田字郷中1915番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1593
+Gifu,白山神社,はくさんじんじゃ,岐阜県恵那市岩村町富田字林下383番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1594
+Gifu,長益神社,ながますじんじゃ,岐阜県恵那市岩村町富田字下り松25番地の7,https://www.gifu-jinjacho.jp/syosai.php?shrno=1595
+Gifu,金刀比羅神社,ことひらじんじゃ,岐阜県恵那市岩村町富田字天神下2077番地の2,https://www.gifu-jinjacho.jp/syosai.php?shrno=1596
+Gifu,三森神社,みつもりじんじゃ,岐阜県恵那市岩村町富田字鈴ｹ根6番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1597
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市岩村町字大路18番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1598
+Gifu,岩村神社,いわむらじんじゃ,岐阜県恵那市岩村町字若宮750番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1599
+Gifu,武並神社,たけなみじんじゃ,岐阜県恵那市岩村町字一色2287番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1600
+Gifu,櫻稲荷神社,さくらいなりじんじゃ,岐阜県恵那市岩村町字殿町127番地の9,https://www.gifu-jinjacho.jp/syosai.php?shrno=1601
+Mie,二郷神社,にごうじんじゃ,三重県北牟婁郡紀北町東長島841-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%8c%e9%83%b7%e7%a5%9e%e7%a4%be/
+Mie,五ヶ所神社,ごかしょじんじゃ,の一社は、村上源氏北畠の正統「林民部少輔政利」の高祖の鎮守なり。 天正４年丙子（1576）、当城守愛洲侍従治大夫殿、国司,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%94%e3%83%b6%e6%89%80%e7%a5%9e%e7%a4%be/
+Mie,五箇谷神社,ごかたにじんじゃ,三重県多気郡多気町朝柄3137番地,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%94%e7%ae%87%e8%b0%b7%e7%a5%9e%e7%a4%be/
+Mie,井後神社,いじりじんじゃ,三重郡朝日町大字柿 2567,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%95%e5%be%8c%e7%a5%9e%e7%a4%be/
+Mie,井手神社,いでじんじゃ,三重郡菰野町大字永井 338,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%95%e6%89%8b%e7%a5%9e%e7%a4%be/
+Mie,井田神社,いだじんじゃ,三重県南牟婁郡紀宝町井田９６５,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%ba%95%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,今社,いまのやしろ,伊勢市宮町1-1-8,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bb%8a%e7%a4%be/
+Mie,仙宮神社,せんぐうじんじゃ,三重県度会郡南伊勢町河内７７,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bb%99%e5%ae%ae%e7%a5%9e%e7%a4%be/
+Mie,仲山神社,なかやまじんじゃ,津市美杉町下之川 5293,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bb%b2%e5%b1%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%8b%e4%b9%8b%e5%b7%9d%ef%bc%89/
+Mie,仲山神社,なかやまじんじゃ,津市美杉町八知 2977,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bb%b2%e5%b1%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%85%ab%e7%9f%a5%ef%bc%89/
+Mie,伊佐和神社,いさわじんじゃ,松阪市射和町1073,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e4%bd%90%e5%92%8c%e7%a5%9e%e7%a4%be/
+Mie,伊勢寺神社,いせでらじんじゃ,は往古より現在に至るまで変更がない。明治４１年４月５日より４月１５日までの期間に、当社に伊勢寺の堀坂神社、物部神社（式内,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e5%8b%a2%e5%af%ba%e7%a5%9e%e7%a4%be/
+Mie,伊奈冨神社,いのうじんじゃ,鈴鹿市稲生西2-24-20,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e5%a5%88%e5%86%a8%e7%a5%9e%e7%a4%be/
+Mie,伊奈利社,いなりしゃ,桑名市大字稗田1069,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e5%a5%88%e5%88%a9%e7%a4%be/
+Mie,伊射波神社,いざわじんじゃ,鳥羽市安楽島町1020,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e5%b0%84%e6%b3%a2%e7%a5%9e%e7%a4%be/
+Mie,伊曽島神社,いそじまじんじゃ,桑名市長島町福吉 880,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e6%9b%bd%e5%b3%b6%e7%a5%9e%e7%a4%be/
+Mie,伊蔵神社,いぞうじんじゃ,津市安濃町粟加 1255,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e8%94%b5%e7%a5%9e%e7%a4%be/
+Mie,伊賀東照宮,いがとうしょうぐう,伊賀市老川 1103-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e8%b3%80%e6%9d%b1%e7%85%a7%e5%ae%ae/
+Mie,伊賀留我神社,いかるがじんじゃ,四日市市大字茂福甲 483,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e8%b3%80%e7%95%99%e6%88%91%e7%a5%9e%e7%a4%be-2/
+Mie,伊賀留我神社,いかるがじんじゃ,四日市市大字羽津戊 523,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8a%e8%b3%80%e7%95%99%e6%88%91%e7%a5%9e%e7%a4%be/
+Mie,伎留太神社,きるたじんじゃ,の切畑は『和名抄』の「朝明郡田光郷」に属し、伎留太は切畑に通ずると度会延経の『神名帳考証』や『朝目明賦』等に見える。近江,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bc%8e%e7%95%99%e5%a4%aa%e7%a5%9e%e7%a4%be/
+Mie,住吉神社,すみよしじんじゃ,津市一志町井関 1550,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bd%8f%e5%90%89%e7%a5%9e%e7%a4%be%ef%bc%88%e4%ba%95%e9%96%a2%ef%bc%89/
+Mie,住吉神社,すみよしじんじゃ,鈴鹿市住吉町 14,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bd%8f%e5%90%89%e7%a5%9e%e7%a4%be%ef%bc%88%e4%bd%8f%e5%90%89%e7%94%ba%ef%bc%89/
+Mie,住吉神社,すみよしじんじゃ,四日市市天ヶ須賀 3-1-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bd%8f%e5%90%89%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a4%a9%e3%83%b6%e9%a0%88%e8%b3%80%ef%bc%89/
+Mie,住吉神社,すみよしじんじゃ,桑名市大字桑名 3407,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bd%8f%e5%90%89%e7%a5%9e%e7%a4%be/
+Mie,佐々神社,ささじんじゃ,伊賀市音羽 618,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bd%90%e3%80%85%e7%a5%9e%e7%a4%be/
+Mie,佐登奈加神社,さとなかじんじゃ,伊勢市東大淀町351-6,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bd%90%e7%99%bb%e5%a5%88%e5%8a%a0%e7%a5%9e%e7%a4%be/
+Mie,佐那神社,さなじんじゃ,多気郡多気町仁田 156,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bd%90%e9%82%a3%e7%a5%9e%e7%a4%be/
+Mie,保曽井神社,ほそいじんじゃ,四日市市曽井町 758,https://kyoka.mie-jinjacho.or.jp/shrine/%e4%bf%9d%e6%9b%bd%e4%ba%95%e7%a5%9e%e7%a4%be/
+Mie,入鹿八幡宮,いるかはちまんぐう,三重県熊野市紀和町小栗須６６,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%a5%e9%b9%bf%e5%85%ab%e5%b9%a1%e5%ae%ae/
+Mie,八ッ山神社,やっやまじんじゃ,津市白山町八対野 2470,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e3%83%83%e5%b1%b1%e7%a5%9e%e7%a4%be/
+Mie,八ヶ竃八幡神社,はちかがまはちまんじんじゃ,三重県度会郡南伊勢町大方竃97,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e3%83%b6%e7%ab%88%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/
+Mie,八乳合神社,やちあいじんじゃ,三重県津市片田井戸町 200-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e4%b9%b3%e5%90%88%e7%a5%9e%e7%a4%be/
+Mie,八代神社,やつしろじんじゃ,鳥羽市神島町 1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e4%bb%a3%e7%a5%9e%e7%a4%be/
+Mie,八劔社,やつるぎしゃ,桑名市長島町中川 258,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%8a%94%e7%a4%be%ef%bc%88%e4%b8%ad%e5%b7%9d%ef%bc%89/
+Mie,八劔神社,やつるぎじんじゃ,桑名市長島町小島 191,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%8a%94%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b0%8f%e5%b3%b6%ef%bc%89/
+Mie,八劔神社,やつるぎじんじゃ,桑名市長島町押付 59-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%8a%94%e7%a5%9e%e7%a4%be%ef%bc%88%e6%8a%bc%e4%bb%98%ef%bc%89/
+Mie,八劔神社,やつるぎじんじゃ,桑名市長島町殿名 901,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%8a%94%e7%a5%9e%e7%a4%be%ef%bc%88%e6%ae%bf%e5%90%8d%ef%bc%89/
+Mie,八劔神社,やつるぎじんじゃ,桑名市長島町間々 245,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%8a%94%e7%a5%9e%e7%a4%be%ef%bc%88%e9%96%93%e3%80%85%ef%bc%89/
+Mie,八十積椋神社,やそつみくらじんじゃ,三重郡川越町大字豊田 180,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%8d%81%e7%a9%8d%e6%a4%8b%e7%a5%9e%e7%a4%be/
+Mie,八坂神社,やさかじんじゃ,いなべ市大安町石榑東 286,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%9d%82%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a4%a7%e5%ae%89%e7%94%ba%ef%bc%89/
+Mie,八幡社,はちまんしゃ,桑名市大字五反田 687,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a4%be%ef%bc%88%e4%ba%94%e5%8f%8d%e7%94%b0%ef%bc%89/
+Mie,八幡社,はちまんしゃ,いなべ市員弁町畑新田 593,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a4%be%ef%bc%88%e7%95%91%e6%96%b0%e7%94%b0%ef%bc%89/
+Mie,八幡社,はちまんしゃ,桑名市長島町西外面２８,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a4%be%ef%bc%88%e7%af%89%e6%88%b8%ef%bc%89/
+Mie,八幡社,はちまんしゃ,桑名市大字西別所 1371,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a4%be%ef%bc%88%e8%a5%bf%e5%88%a5%e6%89%80%ef%bc%89/
+Mie,八幡社,はちまんしゃ,桑名市長島町西外面1517,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a4%be%ef%bc%88%e8%a5%bf%e5%a4%96%e9%9d%a2%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,三重県津市一身田豊野 1052,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%80%e8%ba%ab%e7%94%b0%e8%b1%8a%e9%87%8e%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,名張市赤目町丈六 324,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%88%e5%85%ad%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,いなべ市員弁町下笠田 147,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%8b%e7%ac%a0%e7%94%b0%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,四日市市京町 18-28,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e4%ba%ac%e7%94%ba%ef%bc%89/
+Kagoshima,箱崎神社,ハコザキジンジャ,伊佐市菱刈市山790・791,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1009/
+Kagoshima,羽神社,ハジンジャ,伊佐市大口針持1278-3,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1013/
+Kagoshima,八幡神社,ハチマンジンジャ,伊佐市大口大田1548,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1033/
+Kagoshima,八幡神社,ハチマンジンジャ,伊佐市大口山野2671,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1034/
+Kagoshima,聖之宮神社,ヒジリノミヤジンジャ,伊佐市大口目丸739,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1103/
+Kagoshima,姫宮神社,ヒメミヤジンジャ,伊佐市菱刈徳辺1686,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1105/
+Kagoshima,保食神社,ホショクジンジャ,伊佐市大口渕辺字池ノ下334,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1139/
+Kagoshima,舞之宮神社,マイノミヤジンジャ,伊佐市大口目丸330,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1144/
+Kagoshima,松原神社,マツバラジンジャ,伊佐市大口鳥巣699,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1158/
+Kagoshima,松原神社,マツバラジンジャ,伊佐市菱刈市山2500,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1159/
+Kagoshima,南方神社,ミナミカタジンジャ,伊佐市大口曽木1662,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1232/
+Kagoshima,南方神社,ミナミカタジンジャ,伊佐市菱刈荒田3400-イ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1233/
+Kagoshima,南方神社,ミナミカタジンジャ,伊佐市菱刈南浦3516,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1234/
+Kagoshima,南方神社,ミナミカタジンジャ,伊佐市菱刈前目4443,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1235/
+Kagoshima,南方神社,ミナミカタジンジャ,伊佐市菱刈田中616,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1236/
+Kagoshima,八坂神社,ヤサカジンジャ,伊佐市大口上町25-15,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1279/
+Kagoshima,湯之尾神社,ユノオジンジャ,伊佐市菱刈川北2461・2462,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1323/
+Kagoshima,山之神水天神社,ヤマノカミスイテンジンジャ,伊佐市大口原田951,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1333/
+Kagoshima,若宮神社,ワカミヤジンジャ,伊佐市菱刈川北2956,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/1370/
+Kagoshima,荒瀬神社,アラセジンジャ,伊佐市大口曽木907,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/282/
+Kagoshima,稲荷神社,イナリジンジャ,伊佐市大口宮人832,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/386/
+Kagoshima,稲荷神社,イナリジンジャ,伊佐市大口大島1092-ロ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/387/
+Kagoshima,稲荷神社,イナリジンジャ,伊佐市菱刈前目4856-ロ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/388/
+Kagoshima,岩清水神社,イワシミズジンジャ,伊佐市大口小川内117・118・119,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/413/
+Kagoshima,保食神社,ウケモチジンジャ,伊佐市大口山野5170,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/419/
+Mie,八幡神社,はちまんじんじゃ,三重県尾鷲市北浦町１６０２,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%8c%97%e6%b5%a6%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,三重郡川越町大字北福崎 160,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%8c%97%e7%a6%8f%e5%b4%8e%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,三重県度会郡南伊勢町礫浦１６１,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%8d%97%e4%bc%8a%e5%8b%a2%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,三重県尾鷲市名柄町２９０,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%90%8d%e6%9f%84%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,鈴鹿市地子町 454,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%9c%b0%e5%ad%90%e7%94%ba-%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,いなべ市大安町南金井482-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a4%a7%e5%ae%89%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,津市美杉町奥津 1238,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a5%a5%e6%b4%a5%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,は現社地より北西７００メートル余の青木山山麓にあったとされるが信長伊賀攻めの天正伊賀の乱（１５９１）で戦火に遭い、社殿悉,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%ae%88%e7%94%b0%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,四日市市平津町 1001,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b9%b3%e6%b4%a5%e7%94%ba%ef%bc%89/
+Mie,八幡神社,やはたじんじゃ,三重県南牟婁郡御浜町大字上市木２２９４,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%be%a1%e6%b5%9c%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,名張市赤目町星川 485,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e6%98%9f%e5%b7%9d%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,員弁郡東員町大字八幡新田 260,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e6%9d%b1%e5%93%a1%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,鳥羽市桃取町 273-3,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e6%a1%83%e5%8f%96%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,鈴鹿市磯山 2-16-10,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e7%a3%af%e5%b1%b1%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,鈴鹿市竹野2-15-43,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e7%ab%b9%e9%87%8e%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,鳥羽市答志町216,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e7%ad%94%e5%bf%97%e7%94%ba%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,鈴鹿市算所 3-21-40,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e7%ae%97%e6%89%80%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,いなべ市藤原町上之山田 766,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e8%97%a4%e5%8e%9f%e7%94%ba%e4%b8%8a%e4%b9%8b%e5%b1%b1%e7%94%b0%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,いなべ市藤原町山口192,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e8%97%a4%e5%8e%9f%e7%94%ba%e5%b1%b1%e5%8f%a3%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,いなべ市藤原町西野尻 56,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e8%97%a4%e5%8e%9f%e7%94%ba%e8%a5%bf%e9%87%8e%e5%b0%bb%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,三重県尾鷲市大字行野浦１８７－９,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%ef%bc%88%e8%a1%8c%e9%87%8e%e6%b5%a6%ef%bc%89/
+Mie,八幡神社,はちまんじんじゃ,鳥羽市船津町 996,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be-2/
+Mie,八幡神社,はちまんじんじゃ,三重郡川越町大字高松1011,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be-3/
+Mie,八幡神社,はちまんじんじゃ,四日市市八幡町 11-5,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be-6/
+Mie,八柱神社,やはしらじんじゃ,三重県津市一身田豊野 1277,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%80%e8%ba%ab%e7%94%b0%e8%b1%8a%e9%87%8e%ef%bc%89/
+Kagoshima,国玉神社,クニタマジンジャ,伊佐市大口大田160-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/592/
+Kagoshima,熊野神社,クマノジンジャ,伊佐市大口里665,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/612/
+Kagoshima,熊野神社,クマノジンジャ,伊佐市大口原田57,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/613/
+Kagoshima,熊野神社,クマノジンジャ,伊佐市大口山野5140,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/614/
+Kagoshima,熊野神社,クマノジンジャ,伊佐市大口白木14-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/615/
+Kagoshima,白木神社,シラキジンジャ,伊佐市大口白木813,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/716/
+Kagoshima,水天神社,スイテンジンジャ,伊佐市菱刈下手1887,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/729/
+Kagoshima,菅原神社,スガワラジンジャ,伊佐市大口篠原806-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/763/
+Kagoshima,菅原神社,スガワラジンジャ,伊佐市大口青木1139,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/764/
+Kagoshima,菅原神社,スガワラジンジャ,伊佐市大口山野4378,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/765/
+Kagoshima,菅原神社,スガワラジンジャ,伊佐市菱刈重留415,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/766/
+Kagoshima,菅原神社,スガワラジンジャ,伊佐市菱刈前目2174,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/767/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市大口里1805,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/816/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市大口篠原2025・2026,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/817/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市大口青木1991,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/818/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市大口牛尾1644・1645・1646,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/819/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市大口小木原541-3,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/820/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市大口田代1318,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/821/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市大口下殿１・2,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/822/
+Kagoshima,諏訪神社,スワジンジャ,伊佐市菱刈花北386,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/823/
+Kagoshima,大王神社,ダイオウジンジャ,伊佐市大口宮人1618,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/839/
+Kagoshima,瀧之神社,タキノジンジャ,伊佐市大口曽木4006-2,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/877/
+Kagoshima,忠元神社,タダモトジンジャ,伊佐市大口原田1081,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/884/
+Kagoshima,飛諏訪神社,トビスワジンジャ,伊佐市大口木ノ氏1213,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/957/
+Kagoshima,西原神社,ニシハラジンジャ,伊佐市大口青木3024,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e4%bc%8a%e4%bd%90%e5%b8%82/988/
+Mie,八柱神社,やはしらじんじゃ,三重県度会郡南伊勢町古和浦1145-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%8f%a4%e5%92%8c%e6%b5%a6%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,三重県度会郡大紀町大内山1138,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a4%a7%e5%86%85%e5%b1%b1%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,伊賀市奥鹿野 1104,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a5%a5%e9%b9%bf%e9%87%8e%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,志摩市浜島町迫子 212,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e6%b5%9c%e5%b3%b6%e7%94%ba%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,三重県度会郡南伊勢町田曽浦４７２０－１,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e7%94%b0%e6%9b%bd%e6%b5%a6%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,伊賀市福川字小切 264-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e7%a6%8f%e5%b7%9d%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,三重県伊勢市粟野町1245,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e7%b2%9f%e9%87%8e%e7%94%ba%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,度会郡南伊勢町道方336・大江1476,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be%ef%bc%88%e9%81%93%e6%96%b9%ef%bc%89/
+Mie,八柱神社,やはしらじんじゃ,三重県松阪市飯高町田引716,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be-3/
+Mie,八柱神社,やはしらじんじゃ,三重県度会郡南伊勢町東宮487,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e6%9f%b1%e7%a5%9e%e7%a4%be/
+Mie,八玉神社,やたまじんじゃ,伊勢市有滝町2253,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e7%8e%89%e7%a5%9e%e7%a4%be/
+Mie,八重垣神社,やえがきじんじゃ,の十宮町一帯は鈴鹿川沿岸にあり、中世文書に富官とあり、古くより開けた地域である。一説には古代豪族大鹿氏の拠点に近く穀倉地,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%87%8d%e5%9e%a3%e7%a5%9e%e7%a4%be%ef%bc%88%e5%8d%81%e5%ae%ae%e7%94%ba%ef%bc%89/
+Mie,八重垣神社,やえがきじんじゃ,北牟婁郡紀北町中里412,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%87%8d%e5%9e%a3%e7%a5%9e%e7%a4%be%ef%bc%88%e7%b4%80%e5%8c%97%e7%94%ba%ef%bc%89/
+Mie,八重垣神社,やえがきじんじゃ,桑名市大字大福 262,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%87%8d%e5%9e%a3%e7%a5%9e%e7%a4%be/
+Mie,八阪神社,やさかじんじゃ,三重郡菰野町大字竹成1918,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%98%aa%e7%a5%9e%e7%a4%be%ef%bc%88%e8%8f%b0%e9%87%8e%e7%94%ba%ef%bc%89/
+Mie,八阪神社,やさかじんじゃ,四日市市赤堀 2-9-8,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%98%aa%e7%a5%9e%e7%a4%be%ef%bc%88%e8%b5%a4%e5%a0%80%ef%bc%89/
+Mie,八雲神社,やくもじんじゃ,津市河芸町一色 409,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%80%e8%89%b2%ef%bc%89/
+Mie,八雲神社,やくもじんじゃ,津市河芸町中別保 1874,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%ad%e5%88%a5%e4%bf%9d%ef%bc%89/
+Mie,八雲神社,やくもじんじゃ,志摩市志摩町和具２９９１－１,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e5%92%8c%e5%85%b7%e7%94%ba%ef%bc%89/
+Mie,八雲神社,やぐもじんじゃ,三重県津市白塚町 4558,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e7%99%bd%e5%a1%9a%e7%94%ba%ef%bc%89/
+Mie,八雲神社,やくもじんじゃ,松阪市笠松町 250・250-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e7%ac%a0%e6%9d%be%e7%94%ba%ef%bc%89/
+Mie,八雲神社,やくもじんじゃ,松阪市西肥留町 171,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e8%a5%bf%e8%82%a5%e7%95%99%e7%94%ba%ef%bc%89/
+Mie,八雲神社,やぐもじんじゃ,津市河芸町赤部 198,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e8%b5%a4%e9%83%a8%ef%bc%89/
+Mie,八雲神社,やくもじんじゃ,へ分祀した。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%88%e9%80%9a%e7%a7%b0-%e8%a5%bf%e9%87%8e%e3%80%85%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be%ef%bc%89/
+Mie,八雲神社,やくもじんじゃ,志摩市志摩町片田２３９２,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%85%ab%e9%9b%b2%e7%a5%9e%e7%a4%be-2/
+Kagoshima,八幡神社,ハチマンジンジャ,姶良市加治木町木田618,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1035/
+Kagoshima,八幡神社,ハチマンジンジャ,姶良市鍋倉1129-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1036/
+Kagoshima,端山神社,ハヤマジンジャ,姶良市加治木町本町399,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1059/
+Kagoshima,早馬神社,ハヤマジンジャ,姶良市豊留220-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1060/
+Kagoshima,日枝神社,ヒエジンジャ,姶良市加治木町日木山357,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1091/
+Kagoshima,日枝神社,ヒエジンジャ,姶良市大山90-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1092/
+Kagoshima,兵主神社,ヒョウズジンジャ,姶良市脇元1818,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1106/
+Kagoshima,御門神社,ミカドジンジャ,姶良市西餅田4023,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1164/
+Kagoshima,南方神社,ミナミカタジンジャ,姶良市西餅田2255,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1239/
+Kagoshima,森木田神社,モリキダジンジャ,姶良市蒲生町下久徳551-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1260/
+Kagoshima,八坂神社,ヤサカジンジャ,姶良市加治木町港町68,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1282/
+Kagoshima,米山神社,ヨネヤマジンジャ,姶良市鍋倉553,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1312/
+Kagoshima,若宮神社,ワカミヤジンジャ,姶良市北山837-イ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1355/
+Kagoshima,若宮神社,ワカミヤジンジャ,姶良市三拾町1896,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/1356/
+Kagoshima,愛宕神社,アタゴジンジャ,姶良市加治木町反土2749,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/263/
+Kagoshima,愛宕神社,アタゴジンジャ,姶良市脇元296,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/264/
+Kagoshima,天之御中主神社,アメノミナカヌシジンジャ,姶良市脇元2029,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/281/
+Kagoshima,阿良波須神社,アラハスジンジャ,姶良市蒲生町白男1309-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/284/
+Kagoshima,飯留神社,イイドメジンジャ,姶良市蒲生町漆317-ハ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/299/
+Kagoshima,伊勢神社,イセジンジャ,姶良市加治木町木田2950,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/339/
+Kagoshima,市速神社,イチハヤジンジャ,姶良市加治木町朝日町185,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/352/
+Kagoshima,稲留神社,イナドメジンジャ,姶良市平松1360-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/368/
+Kagoshima,稲荷神社,イナリジンジャ,姶良市鍋倉776,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/393/
+Kagoshima,稲荷神社,イナリジンジャ,姶良市増田590,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/394/
+Kagoshima,稲荷神社,イナリジンジャ,姶良市平松2134-イ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/395/
+Mie,内城田神社,うちきだじんじゃ,度会郡度会町棚橋1689,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%86%85%e5%9f%8e%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,内母神社,ないもじんじゃ,桑名市多度町香取２２１６−２,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%86%85%e6%af%8d%e7%a5%9e%e7%a4%be/
+Mie,出雲神社,いずもじんじゃ,桑名市長島町西外面字上北島 423,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%87%ba%e9%9b%b2%e7%a5%9e%e7%a4%be/
+Mie,刑部神社,おさかべじんじゃ,四日市市東坂部町 518,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%88%91%e9%83%a8%e7%a5%9e%e7%a4%be/
+Mie,前田神社,まえだじんじゃ,に復すこととなった。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%89%8d%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,加世智神社,かせちじんじゃ,は往古より明治４１年まで、飯南郡港村大字石津字門之前であり、昔より主に漁民を中心として信仰が篤かった。明治４１年１０月２,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e4%b8%96%e6%99%ba%e7%a5%9e%e7%a4%be/
+Mie,加佐登神社,かさどじんじゃ,鈴鹿市加佐登町 2010,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e4%bd%90%e7%99%bb%e7%a5%9e%e7%a4%be/
+Mie,加和良神社,かわらじんじゃ,鈴鹿市稲生塩屋 2-22-22,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e5%92%8c%e8%89%af%e7%a5%9e%e7%a4%be/
+Mie,加富神社,かふじんじゃ,四日市市山田町 2187,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e5%af%8c%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b1%b1%e7%94%b0%e7%94%ba%ef%bc%89/
+Mie,加富神社,かふじんじゃ,四日市市波木町 821,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e5%af%8c%e7%a5%9e%e7%a4%be/
+Mie,加良比乃神社,からひのじんじゃ,三重県津市藤方字森目 335,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e8%89%af%e6%af%94%e4%b9%83%e7%a5%9e%e7%a4%be/
+Mie,加茂神社,かもじんじゃ,鳥羽市松尾町 753,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e8%8c%82%e7%a5%9e%e7%a4%be/
+Mie,加須夜神社,かすやじんじゃ,伊勢市柏町1607-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8a%a0%e9%a0%88%e5%a4%9c%e7%a5%9e%e7%a4%be/
+Mie,勝手神社,かってじんじゃ,伊賀市山畑 481,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8b%9d%e6%89%8b%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b1%b1%e7%95%91%ef%bc%89/
+Mie,勝手神社,かってじんじゃ,名張市赤目町柏原 464,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8b%9d%e6%89%8b%e7%a5%9e%e7%a4%be%ef%bc%88%e8%b5%a4%e7%9b%ae%e7%94%ba%ef%bc%89/
+Mie,勝手神社,かってじんじゃ,名張市黒田 1176,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8b%9d%e6%89%8b%e7%a5%9e%e7%a4%be%ef%bc%88%e9%bb%92%e7%94%b0%ef%bc%89/
+Mie,勝速日神社,かつはやひじんじゃ,鈴鹿市白子本町 10-15,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8b%9d%e9%80%9f%e6%97%a5%e7%a5%9e%e7%a4%be/
+Mie,北桑名総社北桑名神社,,桑名市大字堤原 72,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8c%97%e6%a1%91%e5%90%8d%e7%b7%8f%e7%a4%be%e5%8c%97%e6%a1%91%e5%90%8d%e7%a5%9e%e7%a4%be/
+Mie,北畠神社,きたばたけじんじゃ,津市美杉町上多気 1148,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8c%97%e7%95%a0%e7%a5%9e%e7%a4%be%ef%bc%88%e7%be%8e%e6%9d%89%e7%94%ba%ef%bc%89/
+Mie,北畠神社,きたばたけじんじゃ,三重県多気郡大台町上三瀬664,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8c%97%e7%95%a0%e7%a5%9e%e7%a4%be/
+Mie,千尋江神社,ちひろえじんじゃ,三重県多気郡多気町下出江 110番地,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8d%83%e5%b0%8b%e6%b1%9f%e7%a5%9e%e7%a4%be/
+Mie,千引神社,ちびきじんじゃ,三重県度会郡玉城町大字久保１９７,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8d%83%e5%bc%95%e7%a5%9e%e7%a4%be/
+Mie,千王神社,せんのうじんじゃ,三重県津市栗真町屋町 946,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8d%83%e7%8e%8b%e7%a5%9e%e7%a4%be/
+Mie,千種神社,ちくさじんじゃ,三重郡菰野町大字千草 2851,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8d%83%e7%a8%ae%e7%a5%9e%e7%a4%be/
+Mie,南宮大神社,なんぐうおおじんじゃ,亀山市太森町 1308-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8d%97%e5%ae%ae%e5%a4%a7%e7%a5%9e%e7%a4%be/
+Kagoshima,岩剱神社,イワツルギジンジャ,姶良市平松5230,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/414/
+Kagoshima,梅北神社,ウメキタジンジャ,姶良市北山4315,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/424/
+Kagoshima,枝宮神社,エダミヤジンジャ,姶良市蒲生町米丸1617,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/428/
+Kagoshima,恵美須神社,エビスジンジャ,姶良市蒲生町上久徳2655,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/433/
+Kagoshima,老神神社,オイカミジンジャ,姶良市中津野817,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/437/
+Kagoshima,大井上神社,オオイガミジンジャ,姶良市加治木町小山田1136,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/441/
+Kagoshima,大山祇神社,オオヤマヅミジンジャ,姶良市加治木町反土1679,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/476/
+Kagoshima,大山祇神社,オオヤマヅミジンジャ,姶良市蒲生町西浦700-イ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/477/
+Kagoshima,大山祇神社,オオヤマヅミジンジャ,姶良市蒲生町西浦4208,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/478/
+Kagoshima,大山祇神社,オオヤマヅミジンジャ,姶良市蒲生町久末1280,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/479/
+Kagoshima,大山祇神社,オオヤマヅミジンジャ,姶良市蒲生町白男4122-12,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/480/
+Kagoshima,興玉神社,オキタマジンジャ,姶良市船津1558,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/486/
+Kagoshima,加治木護國神社,カジキゴコクジンジャ,姶良市加治木町仮屋町213,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/501/
+Kagoshima,春日神社,カスガジンジャ,姶良市加治木町木田4675・4676,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/513/
+Kagoshima,蒲生八幡神社,カモウハチマンジンジャ,姶良市蒲生町上久徳2259-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/526/
+Kagoshima,貴船神社,キブネジンジャ,姶良市下名2726,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/544/
+Kagoshima,霧島神社,キリシマジンジャ,姶良市蒲生町上久徳2627,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/561/
+Kagoshima,楠田神社,クスダジンジャ,姶良市蒲生町北153,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/579/
+Kagoshima,隈媛神社,クマヒメジンジャ,姶良市加治木町木田4282,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/629/
+Kagoshima,黒島神社,クロシマジンジャ,姶良市上名585,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/632/
+Kagoshima,精矛神社,クワシホコジンジャ,姶良市加治木町日木山311,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/634/
+Kagoshima,小烏神社,コガラスジンジャ,姶良市加治木町反土3096,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/646/
+Kagoshima,小烏神社,コガラスジンジャ,姶良市東餅田560-2,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/647/
+Kagoshima,五社神社,ゴシャジンジャ,姶良市西餅田1304,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/654/
+Kagoshima,狹霧神社,サギリジンジャ,姶良市平松5668,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/677/
+Mie,南御見束神社,みなみごみづかじんじゃ,四日市市楠町南五味塚 896,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8d%97%e5%be%a1%e8%a6%8b%e6%9d%9f%e7%a5%9e%e7%a4%be/
+Mie,原地神社,はらちじんじゃ,に復した。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8e%9f%e5%9c%b0%e7%a5%9e%e7%a4%be/
+Mie,原神社,はらじんじゃ,も移り変わっている。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8e%9f%e7%a5%9e%e7%a4%be/
+Mie,友生神社,とものじんじゃ,に八幡神と共に奉斎したのが創祀と伝える。以来、近郷の産土神として崇敬された。明治４１年には大字上友生・元友生・中友生・下,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8f%8b%e7%94%9f%e7%a5%9e%e7%a4%be/
+Mie,古濱神社,ふるはまじんじゃ,桑名市多度町御衣野 2024,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8f%a4%e6%bf%b1%e7%a5%9e%e7%a4%be/
+Mie,古野八幡社,このはちまんしゃ,より山奥に青池神社があり、次のような神話が伝えられ、現在でも祭典が行われている。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8f%a4%e9%87%8e%e5%85%ab%e5%b9%a1%e7%a4%be/
+Mie,吉田神社,よしだじんじゃ,四日市市八王子町370,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%90%89%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,名居神社,ないじんじゃ,名張市下比奈知 2092,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%90%8d%e5%b1%85%e7%a5%9e%e7%a4%be/
+Mie,和田神社,わだじんじゃ,亀山市和田町 1168,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%92%8c%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,四郷神社,しごうじんじゃ,伊勢市楠部町1005-3,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9b%9b%e9%83%b7%e7%a5%9e%e7%a4%be/
+Mie,国府神社,こうじんじゃ,志摩市阿児町国府３００７,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9b%bd%e5%ba%9c%e7%a5%9e%e7%a4%be/
+Mie,国津神社,くにつじんじゃ,名張市青蓮寺 948,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9b%bd%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e9%9d%92%e8%93%ae%e5%af%ba%ef%bc%89/
+Mie,國津神社,くにつじんじゃ,名張市上比奈知 81,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%8a%e6%af%94%e5%a5%88%e7%9f%a5%ef%bc%89/
+Mie,國津神社,くにつじんじゃ,津市美杉町太郎生 2140,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a4%aa%e9%83%8e%e7%94%9f%ef%bc%89/
+Mie,國津神社,くにつじんじゃ,名張市奈垣 2042,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a5%88%e5%9e%a3%ef%bc%89/
+Mie,國津神社,くにつじんじゃ,名張市布生 1120,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b8%83%e7%94%9f%ef%bc%89/
+Mie,國津神社,くにつじんじゃ,は伊勢神宮の神領であった六箇山一帯にあり、いつしか大己貴神を祀る国津神社として名居神社より各村に分祀された一例であろう。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e6%bb%9d%e4%b9%8b%e5%8e%9f%ef%bc%89/
+Mie,國津神社,くにつじんじゃ,名張市長瀬 1454,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e9%95%b7%e7%80%ac%ef%bc%89/
+Mie,國魂神社,くにたまじんじゃ,三重県津市西古河町 23-16,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e9%ad%82%e7%a5%9e%e7%a4%be/
+Mie,土宮神社,つちのみやじんじゃ,鳥羽市小浜町 33,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%9f%e5%ae%ae%e7%a5%9e%e7%a4%be/
+Mie,土師神社,はぜじんじゃ,鈴鹿市土師町 558,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%9f%e5%b8%ab%e7%a5%9e%e7%a4%be/
+Mie,圡生神社,はぼうじんじゃ,いなべ市大安町梅戸2344,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%a1%e7%94%9f%e7%a5%9e%e7%a4%be/
+Mie,地蔵神社,じぞうじんじゃ,桑名市大字地蔵 234-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%b0%e8%94%b5%e7%a5%9e%e7%a4%be/
+Mie,坂本神社,さかもとじんじゃ,である大津市坂本町に因み坂本神社と改称して現在に至るという。品陀和氣命の勧請については由緒不詳である。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9d%82%e6%9c%ac%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%80%e5%bf%97%e7%94%ba%ef%bc%89/
+Mie,坂本神社,さかもとじんじゃ,に復し、今日に至っている。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9d%82%e6%9c%ac%e7%a5%9e%e7%a4%be%ef%bc%88%e6%98%8e%e5%92%8c%e7%94%ba%ef%bc%89/
+Kagoshima,城野神社,ジョウノジンジャ,姶良市木津志3031,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/713/
+Kagoshima,白濱神社,シラハマジンジャ,姶良市脇元2218,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/720/
+Kagoshima,菅原神社,スガワラジンジャ,姶良市加治木町朝日町8,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/771/
+Kagoshima,菅原神社,スガワラジンジャ,姶良市蒲生町上久徳2518,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/772/
+Kagoshima,住吉神社,スミヨシジンジャ,姶良市住吉259-イ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/789/
+Kagoshima,諏訪神社,スワジンジャ,姶良市加治木町諏訪町108,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/825/
+Kagoshima,大王神社,ダイオウジンジャ,姶良市寺師182,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/840/
+Kagoshima,平神社,タイラジンジャ,姶良市加治木町日木山1905,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/842/
+Kagoshima,鎮守神社,チンジュジンジャ,姶良市加治木町西別府2394,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/922/
+Kagoshima,鎮守神社,チンジュジンジャ,姶良市加治木町辺川1440,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e5%a7%b6%e8%89%af%e5%b8%82/923/
+Kagoshima,箱崎八幡神社,ハコザキハチマンジンジャ,姶良郡湧水町川西621,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/1011/
+Kagoshima,八幡神社,ハチマンジンジャ,姶良郡湧水町鶴丸604,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/1037/
+Kagoshima,端山神社,ハヤマジンジャ,姶良郡湧水町幸田878,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/1061/
+Kagoshima,日枝神社,ヒエジンジャ,姶良郡湧水町般若寺77,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/1093/
+Kagoshima,南方神社,ミナミカタジンジャ,姶良郡湧水町川西1025,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/1240/
+Kagoshima,愛宕神社,アタゴジンジャ,姶良郡湧水町中津川鶴迫1266-2,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/265/
+Kagoshima,大神神社,オオカミジンジャ,姶良郡湧水町北方1993,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/443/
+Kagoshima,勝栗神社,カチグリジンジャ,姶良郡湧水町米永441,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/516/
+Kagoshima,清瀧神社,キヨタキジンジャ,姶良郡湧水町中津川1148,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/545/
+Kagoshima,霧島神社,キリシマジンジャ,姶良郡湧水町川西2554-8,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/562/
+Kagoshima,熊野神社,クマノジンジャ,姶良郡湧水町川添1299-イ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/618/
+Kagoshima,菅原神社,スガワラジンジャ,姶良郡湧水町鶴丸710-11,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/773/
+Kagoshima,諏訪神社,スワジンジャ,姶良郡湧水町木場2835,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e6%b9%a7%e6%b0%b4%e7%94%ba/826/
+Kagoshima,八幡神社,ハチマンジンジャ,霧島市牧園町万膳806,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1038/
+Kagoshima,早鈴神社,ハヤスズジンジャ,霧島市隼人町小浜630,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1054/
+Mie,坂社,さかのやしろ,三重県伊勢市八日市場町１２－１０,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9d%82%e7%a4%be/
+Mie,城南干拓神社,じょうなんかんたくじんじゃ,桑名市大字立田町 203-4,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9f%8e%e5%8d%97%e5%b9%b2%e6%8b%93%e7%a5%9e%e7%a4%be/
+Mie,城南神社,じょうなんじんじゃ,桑名市大字安永 816-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9f%8e%e5%8d%97%e7%a5%9e%e7%a4%be/
+Mie,城田神社,きだじんじゃ,三重県伊勢市上地町 1832-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9f%8e%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,堅神神社,かたかみじんじゃ,三重県鳥羽市堅神町787,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a0%85%e7%a5%9e%e7%a5%9e%e7%a4%be/
+Mie,塩釜神社,しおがまじんじゃ,三重県津市雲出伊倉津町 993,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a1%a9%e9%87%9c%e7%a5%9e%e7%a4%be/
+Mie,外城田神社,ときだじんじゃ,多気郡多気町笠木 775-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%96%e5%9f%8e%e7%94%b0%e7%a5%9e%e7%a4%be/
+Mie,多喜諏訪神社,たきすわじんじゃ,いなべ市北勢町向平 408-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9a%e5%96%9c%e8%ab%8f%e8%a8%aa%e7%a5%9e%e7%a4%be/
+Mie,多奈閇神社,たなべじんじゃ,いなべ市北勢町田辺 398,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9a%e5%a5%88%e9%96%87%e7%a5%9e%e7%a4%be%ef%bc%88%e5%8c%97%e5%8b%a2%e7%94%ba%ef%bc%89/
+Mie,多奈閇神社,たなべじんじゃ,員弁郡東員町大字中上２０００,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9a%e5%a5%88%e9%96%87%e7%a5%9e%e7%a4%be%ef%bc%88%e6%9d%b1%e5%93%a1%e7%94%ba%ef%bc%89/
+Mie,多度大社,たどたいしゃ,桑名市多度町多度1681,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9a%e5%ba%a6%e5%a4%a7%e7%a4%be/
+Mie,多度神社,たどじんじゃ,四日市市三ツ谷町 7-5,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9a%e5%ba%a6%e7%a5%9e%e7%a4%be/
+Mie,多比鹿神社,たびかじんじゃ,三重郡菰野町大字田光 2063,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9a%e6%af%94%e9%b9%bf%e7%a5%9e%e7%a4%be/
+Mie,多爲神社,たゐじんじゃ,三重県津市大里睦合町 1525,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9a%e7%88%b2%e7%a5%9e%e7%a4%be/
+Mie,夜夫多神社,やぶたじんじゃ,鈴鹿市甲斐町1184,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%9c%e5%a4%ab%e5%a4%9a%e7%a5%9e%e7%a4%be/
+Mie,大三神社,おおみつじんじゃ,津市白山町二本木 1081,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e4%b8%89%e7%a5%9e%e7%a4%be/
+Mie,大乃己所神社,おおのこそじんじゃ,三重県津市一身田大古曽 1739,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e4%b9%83%e5%b7%b1%e6%89%80%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%80%e8%ba%ab%e7%94%b0%e5%a4%a7%e5%8f%a4%e6%9b%bd%ef%bc%89/
+Mie,大乃己所神社,おおのこそじんじゃ,三重県津市一身田中野 694,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e4%b9%83%e5%b7%b1%e6%89%80%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%ad%e9%87%8e%ef%bc%89/
+Mie,大井田御厨神明神社,おおいだみくりしんめいじんじゃ,いなべ市大安町大井田1169,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e4%ba%95%e7%94%b0%e5%be%a1%e5%8e%a8%e7%a5%9e%e6%98%8e%e7%a5%9e%e7%a4%be/
+Mie,大井神社,おおいじんじゃ,津市一志町大仰 2109,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e4%ba%95%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%80%e5%bf%97%e7%94%ba%ef%bc%89/
+Mie,大井神社,おおいじんじゃ,鈴鹿市山辺町 232,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e4%ba%95%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b1%b1%e8%be%ba%e7%94%ba%ef%bc%89/
+Mie,大口神社,おおくちじんじゃ,伊勢市竹ヶ鼻町53-2-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%8f%a3%e7%a5%9e%e7%a4%be/
+Mie,大国玉神社,おおくにたまじんじゃ,の六根村は、古くより神宮へ若菜を供する所と伝えられ、『神鳳鈔』に見える若菜御薗（御厨）の地に比定されており、古い時代より,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%9c%8b%e7%8e%89%e7%a5%9e%e7%a4%be/
+Mie,大宮神明社,おおみやしんめいしゃ,四日市市日永 1-12-8,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%ae%ae%e7%a5%9e%e6%98%8e%e7%a4%be/
+Mie,大山祇神社,おおやまつみじんじゃ,鳥羽市鳥羽 3-4-15,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%b1%b1%e7%a5%87%e7%a5%9e%e7%a4%be/
+Osaka,泉井上神社,いずみいのうえじんじゃ,和泉市府中町6-2-38,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10025izumiinouejinja.html
+Osaka,聖神社,ひじりじんじゃ,和泉市王子町919,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10030hijirijinja.html
+Osaka,春日神社,かすがじんじゃ,和泉市三林町591,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10031kasugajinja.html
+Osaka,男乃宇刀神社,おのうとじんじゃ,和泉市仏並町1740,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10032onoutojinja.html
+Osaka,八阪神社,やさかじんじゃ,和泉市幸2-14-16,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10034yasakajinja.html
+Osaka,春日神社,かすがじんじゃ,和泉市春木町615,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10037kasugajinja.html
+Osaka,信太森神社,しのだのもりじんじゃ,和泉市葛の葉町1-11-47,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10038shinodanomorijinja.html
+Osaka,伯太神社,はかたじんじゃ,和泉市伯太町5-22-3,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10039hakatajinja.html
+Osaka,郷荘神社,ごうしょうじんじゃ,和泉市阪本町512,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10040goshojinja.html
+Osaka,八坂神社,やさかじんじゃ,和泉市父鬼町280,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/10041yasakajinja.html
+Osaka,大津神社,おおつじんじゃ,泉大津市若宮町4-12,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumiotsu-city/10026otsujinja.html
+Osaka,泉穴師神社,いずみあなしじんじゃ,泉大津市豊中町1-1-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumiotsu-city/10027izumianashijinja.html
+Osaka,助松神社,すけまつじんじゃ,泉大津市助松町1-3-19,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumiotsu-city/10035sukematsujinja.html
+Osaka,曽禰神社,そねじんじゃ,泉大津市曽根町1-4-12,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumiotsu-city/10036sonejinja.html
+Osaka,萩原神社,はぎわらじんじゃ,堺市東区日置荘原寺町75-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10001hagiwarajinja.html
+Osaka,大鳥神社,おおとりじんじゃ,堺市西区鳳北町1-1-2,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10002otorijinja.html
+Osaka,方違神社,ほうちがいじんじゃ,堺市堺区北三国ヶ丘町2-2-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10003hochigaijinja.html
+Osaka,開口神社,あぐちじんじゃ,堺市堺区甲斐町東2-1-29,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10004aguchijinja.html
+Osaka,菅原神社,すがはらじんじゃ,堺市堺区戎之町東2-1-38,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10005sugaharajinja.html
+Osaka,百舌鳥八幡宮,もずはちまんぐう,堺市北区百舌鳥赤畑町5-706,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10006mozuhachimangu.html
+Osaka,多治速比売神社,たじはやひめじんじゃ,堺市南区宮山台2-3-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10007tajihayahimejinja.html
+Osaka,櫻井神社,さくらいじんじゃ,堺市南区片蔵645,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10008sakuraijinja.html
+Osaka,陶荒田神社,すえあらたじんじゃ,堺市中区上之1215,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10009suearatajinja.html
+Osaka,野々宮神社,ののみやじんじゃ,堺市中区深井清水町3839,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10010nonomiyajinja.html
+Osaka,石津太神社,いわつたじんじゃ,堺市西区浜寺石津町中4-12-7,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10011iwatsutajinja.html
+Kagoshima,祓戸神社,ハラエドジンジャ,霧島市国分府中町14-17,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1063/
+Kagoshima,日枝神社,ヒエジンジャ,霧島市国分台明寺1103,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1089/
+Kagoshima,日枝神社,ヒエジンジャ,霧島市隼人町嘉例川1268,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1090/
+Kagoshima,日吉山王神社,ヒヨシサンノウジンジャ,霧島市隼人町西光寺1365,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1107/
+Kagoshima,蛭兒神社,ヒルコジンジャ,霧島市隼人町内2563,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1119/
+Kagoshima,太玉神社,フトダマジンジャ,霧島市福山町福山3587,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1128/
+Kagoshima,水神社,ミズジンジャ,霧島市隼人町西光寺3438,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1171/
+Kagoshima,南方神社,ミナミカタジンジャ,霧島市国分清水1-28-12,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1237/
+Kagoshima,南方神社,ミナミカタジンジャ,霧島市福山町福地946-ロ,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1238/
+Kagoshima,宮浦宮,ミヤウラグウ,霧島市福山町福山2437,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1247/
+Kagoshima,宮毘神社,ミヤビジンジャ,霧島市国分上之段2329,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1252/
+Kagoshima,牟禮神社,ムレジンジャ,霧島市福山町福山5822-2,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1257/
+Kagoshima,八坂神社,ヤサカジンジャ,霧島市国分中央3-23-3-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1280/
+Kagoshima,八坂神社,ヤサカジンジャ,霧島市福山町福山2611,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1281/
+Kagoshima,安良神社,ヤスラジンジャ,霧島市横川町上ノ164,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1292/
+Kagoshima,若尊神社,ワカミコジンジャ,霧島市国分敷根2575,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1318/
+Kagoshima,和気神社,ワケジンジャ,霧島市牧園町宿窪田3986,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1350/
+Kagoshima,若宮神社,ワカミヤジンジャ,霧島市国分中央1-10-16,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/1371/
+Kagoshima,青木神社,アオキジンジャ,霧島市隼人町小田2708,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/250/
+Kagoshima,芦江神社,アシエジンジャ,霧島市隼人町松永2984,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/256/
+Kagoshima,天御中主神社,アメノミナカヌシジンジャ,霧島市国分清水3-4-17-17,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/280/
+Kagoshima,飯冨神社,イイトミジンジャ,霧島市国分上之段91-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/293/
+Kagoshima,飯富神社,イイトミジンジャ,霧島市霧島大窪1362,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/294/
+Kagoshima,飯冨神社,イイトミジンジャ,霧島市隼人町東郷389,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/295/
+Kagoshima,飯冨神社,イイトミジンジャ,霧島市福山町佳例川2137,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/296/
+Mie,大市神社,おおいちじんじゃ,津市安濃町妙法寺 824,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%b8%82%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a6%99%e6%b3%95%e5%af%ba%ef%bc%89/
+Mie,大市神社,おおいちじんじゃ,より乾(北西)の方角に1里(約４キロ)余りの場所に大市村があり、その河岸に延喜式内の大市神社があった。洪水の時にこの社が,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%b8%82%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b2%a9%e7%94%b0%ef%bc%89/
+Mie,大庭神社,おおばじんじゃ,多気郡明和町大字佐田 611,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%ba%ad%e7%a5%9e%e7%a4%be/
+Mie,大御寶神社,おおみたからじんじゃ,鈴鹿市小田町 554,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e5%be%a1%e5%af%b6%e7%a5%9e%e7%a4%be/
+Mie,大木神社,おおきじんじゃ,員弁郡東員町大字大木 785,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%9c%a8%e7%a5%9e%e7%a4%be%ef%bc%88%e6%9d%b1%e5%93%a1%e7%94%ba%ef%bc%89/
+Mie,大木神社,おおきじんじゃ,鈴鹿市石薬師町2139,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%9c%a8%e7%a5%9e%e7%a4%be%ef%bc%88%e7%9f%b3%e8%96%ac%e5%b8%ab%e7%94%ba%ef%bc%89/
+Mie,大杉社,おおすぎしゃ,桑名市多度町美鹿 544,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%9d%89%e7%a4%be/
+Mie,大杉神社,おおすぎじんじゃ,いなべ市藤原町下相場 722,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%9d%89%e7%a5%9e%e7%a4%be/
+Mie,大村神社,おおむらじんじゃ,伊賀市阿保 1555,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%9d%91%e7%a5%9e%e7%a4%be/
+Mie,大森神社,おおもりじんじゃ,熊野市育生町尾川 644,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%a3%ae%e7%a5%9e%e7%a4%be/
+Mie,大河内神社,おかわちじんじゃ,松阪市桂瀬町１６９－１,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%b2%b3%e5%86%85%e7%a5%9e%e7%a4%be/
+Mie,大滝神社,おおたきじんじゃ,三重県度会郡大紀町滝原１８８９－２,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e6%bb%9d%e7%a5%9e%e7%a4%be/
+Mie,大白神社,おおじろじんじゃ,三重県北牟婁郡紀北町大白107-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e7%99%bd%e7%a5%9e%e7%a4%be/
+Mie,大皇神社,だいこうじんじゃ,三重県度会郡大紀町崎１４３,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e7%9a%87%e7%a5%9e%e7%a4%be/
+Mie,大石神社,おいしじんじゃ,松阪市小片野町２３８６－４,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e7%9f%b3%e7%a5%9e%e7%a4%be/
+Mie,大神社,おおみわのやしろ,いなべ市大安町片樋1433,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e7%a5%9e%e7%a4%be/
+Mie,大西神社,おおにしじんじゃ,いなべ市北勢町阿下喜276,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e8%a5%bf%e7%a5%9e%e7%a4%be/
+Mie,大谷神社,おおたにじんじゃ,いなべ市員弁町大泉 1202,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e8%b0%b7%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a4%a7%e6%b3%89%ef%bc%89/
+Mie,大谷神社,おおたにじんじゃ,いなべ市員弁町東一色1565,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e8%b0%b7%e7%a5%9e%e7%a4%be%ef%bc%88%e6%9d%b1%e4%b8%80%e8%89%b2%ef%bc%89/
+Mie,大賀神社,おおかじんじゃ,度会郡南伊勢町相賀浦848,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e8%b3%80%e7%a5%9e%e7%a4%be/
+Mie,大馬神社,おおまじんじゃ,熊野市井戸町 4333,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e9%a6%ac%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a5%a5%e5%ae%ae%ef%bc%89/
+Mie,大鹿三宅神社,おおかみやけじんじゃ,についても、大鹿氏と神宮との関係及びその活動範囲を国分から山辺、神戸に及ぶ地域としており、当社も大鹿氏との関係に於いて奉,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a7%e9%b9%bf%e4%b8%89%e5%ae%85%e7%a5%9e%e7%a4%be/
+Mie,天之眞名井神社,あめのまないじんじゃ,志摩市大王町名田 266,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e4%b9%8b%e7%9c%9e%e5%90%8d%e4%ba%95%e7%a5%9e%e7%a4%be/
+Mie,天武天皇社,てんむてんのうしゃ,桑名市東鍋屋町 89,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e6%ad%a6%e5%a4%a9%e7%9a%87%e7%a4%be/
+Mie,天満神社,てんまんじんじゃ,に再び天満神社として奉斎し現在に至っている。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e6%ba%80%e7%a5%9e%e7%a4%be-2/
+Osaka,踞尾八幡神社,つくのはちまんじんじゃ,堺市西区津久野町3-20-25,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10012tsukuohachimanjinja.html
+Osaka,華表神社,かひょうじんじゃ,堺市北区宮本町57,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10013kahyojinja.html
+Osaka,月洲神社,つきすじんじゃ,堺市堺区南島町2-125-2,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10014tsukisujinja.html
+Osaka,船待神社,ふなまちじんじゃ,堺市堺区西湊町1-2-18,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10015funamachijinja.html
+Osaka,金岡神社,かなおかじんじゃ,堺市北区金岡町2866,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10016kanaokajinja.html
+Osaka,蜂田神社,はちたじんじゃ,堺市中区八田寺町524,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10017hachitajinja.html
+Osaka,美多彌神社,みたみじんじゃ,堺市南区鴨谷台1-49-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10018mitamijinja.html
+Osaka,高須神社,たかすじんじゃ,堺市堺区北半町東3-5,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10019takasujinja.html
+Osaka,日部神社,くさべじんじゃ,堺市西区草部262,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10020kusabejinja.html
+Osaka,田守神社,たもりじんじゃ,堺市堺区松屋町3-3-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10021tamorijinja.html
+Osaka,石津神社,いしづじんじゃ,堺市堺区石津町1-15-21,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10022ishidujinja.html
+Osaka,神明神社,しんめいじんじゃ,堺市堺区栄橋町2-1-22,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10023shinmeijinja.html
+Osaka,菱木神社,ひじきじんじゃ,堺市西区菱木4-3250-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10024hijikijinja.html
+Osaka,菅生神社,すごうじんじゃ,堺市美原区菅生178-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10042sugojinja.html
+Osaka,丹比神社,たんぴじんじゃ,堺市美原区多治井157-1,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10043tanpijinja.html
+Osaka,廣國神社,ひろくにじんじゃ,堺市美原区大保248,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/10044hirokunijinja.html
+Osaka,忠岡神社,ただおかじんじゃ,泉北郡忠岡町忠岡中1-26-3,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/tadaoka-cho/10029tadaokajinja.html
+Osaka,高石神社,たかいしじんじゃ,高石市高師浜4-1-19,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/takaishi-city/10028takaishijinja.html
+Osaka,等乃伎神社,とのぎじんじゃ,高石市取石2-14-48,https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/takaishi-city/10033tonogijinja.html
+Osaka,建水分神社,たけみくまりじんじゃ,南河内郡千早赤阪村水分357,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/chihayaakasaka-mura/11005takemikumarijinja.html
+Osaka,千早神社,ちはやじんじゃ,南河内郡千早赤阪村千早城山1228,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/chihayaakasaka-mura/11024chihayajinja.html
+Osaka,不本見神社,ふもとみじんじゃ,南河内郡千早赤阪村東阪1129,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/chihayaakasaka-mura/11027fumotomijinja.html
+Osaka,中津神社,なかつじんじゃ,南河内郡千早赤阪村中津原691,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/chihayaakasaka-mura/11051nakatsujinja.html
+Osaka,金峰神社,きんぷじんじゃ,南河内郡千早赤阪村吉年159,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/chihayaakasaka-mura/11053kinpujinja.html
+Osaka,小吹八坂神社,こぶきやさかじんじゃ,南河内郡千早赤阪村小吹1136-2,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/chihayaakasaka-mura/11060kobukiyasakajinja.html
+Mie,天満神社,てんまんじんじゃ,伊賀市高尾 4514,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e6%ba%80%e7%a5%9e%e7%a4%be/
+Mie,天玉神社,あまたまじんじゃ,松阪市嬉野黒野町 1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e7%8e%89%e7%a5%9e%e7%a4%be/
+Mie,天白神社,てんぱくじんじゃ,松阪市曽原町 890,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e7%99%bd%e7%a5%9e%e7%a4%be/
+Mie,天皇八幡社,てんのうはちまんしゃ,桑名市大字芳ヶ崎 1014,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e7%9a%87%e5%85%ab%e5%b9%a1%e7%a4%be/
+Mie,天眞名井神社,あめのまないじんじゃ,志摩市志摩町和具 4310,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e7%9c%9e%e5%90%8d%e4%ba%95%e7%a5%9e%e7%a4%be/
+Mie,天神社,てんじんじゃ,桑名市長島町西外面 303,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%a9%e7%a5%9e%e7%a4%be%ef%bc%88%e8%a5%bf%e5%a4%96%e9%9d%a2%ef%bc%89/
+Mie,太神社,おおのじんじゃ,四日市市大鐘町 1556-4,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a4%aa%e7%a5%9e%e7%a4%be/
+Mie,奈々美神社,ななみじんじゃ,も初めは現在の村里中の位置より二百米ほど離れた所であり、永保２年（１０８２）の大洪水により現在の社地に遷されたと伝えられ,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a5%88%e3%80%85%e7%be%8e%e7%a5%9e%e7%a4%be/
+Mie,奥山愛宕神社,おくやまあたごじんじゃ,伊賀市勝地 1855,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%a5%a5%e5%b1%b1%e6%84%9b%e5%ae%95%e7%a5%9e%e7%a4%be/
+Mie,子良新田神明社,こらしんでんしんめいしゃ,いなべ市員弁町岡丁田字岡山 1979,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ad%90%e8%89%af%e6%96%b0%e7%94%b0%e7%a5%9e%e6%98%8e%e7%a4%be/
+Mie,宇気比神社,うきひじんじゃ,三重県津市小舟 502,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%97%e6%af%94%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b0%8f%e8%88%9f%ef%bc%89/
+Mie,宇気比神社,うけひじんじゃ,松阪市肥留町 107,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%97%e6%af%94%e7%a5%9e%e7%a4%be/
+Mie,宇氣比社,うけひしゃ,鈴鹿市肥田町 306,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a4%be/
+Mie,宇氣比神社,うけひじんじゃ,三重県津市一身田豊野 2101-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be%ef%bc%88%e4%b8%80%e8%ba%ab%e7%94%b0%e8%b1%8a%e9%87%8e%ef%bc%89/
+Mie,宇氣比神社,うきひじんじゃ,松阪市嬉野上小川町 1724,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be%ef%bc%88%e5%b0%8f%e5%b7%9d%e7%94%ba%ef%bc%89/
+Mie,宇氣比神社,うきひじんじゃ,津市河芸町浜田 1322,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be%ef%bc%88%e6%b2%b3%e8%8a%b8%e7%94%ba%ef%bc%89/
+Mie,宇氣比神社,うけひじんじゃ,志摩市磯部町坂崎４６０－２,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be%ef%bc%88%e7%a3%af%e9%83%a8%e7%94%ba%ef%bc%89/
+Mie,宇氣比神社,うきひじんじゃ,津市白山町福田山 807,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be%ef%bc%88%e7%a6%8f%e7%94%b0%e5%b1%b1%ef%bc%89/
+Mie,宇氣比神社,うけひじんじゃ,志摩市阿児町立神 2100-3,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be%ef%bc%88%e9%98%bf%e5%85%90%e7%94%ba%ef%bc%89/
+Mie,宇氣比神社,うけひじんじゃ,志摩市浜島町浜島 681,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be-4/
+Mie,宇氣比神社,うけひじんじゃ,伊勢市村松町 3920,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b0%a3%e6%af%94%e7%a5%9e%e7%a4%be/
+Mie,宇治神社,うじじんじゃ,伊勢市宇治今在家町172,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b2%bb%e7%a5%9e%e7%a4%be/
+Mie,宇流冨志祢神社,うるふしねじんじゃ,名張市平尾 3319,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e6%b5%81%e5%86%a8%e5%bf%97%e7%a5%a2%e7%a5%9e%e7%a4%be/
+Mie,宇爾櫻神社,うにさくらじんじゃ,多気郡明和町大字有爾中679,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e7%88%be%e6%ab%bb%e7%a5%9e%e7%a4%be/
+Mie,宇田神社,うだじんじゃ,三重県南牟婁郡紀宝町高岡876-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e7%94%b0%e7%a5%9e%e7%a4%be/
+Osaka,道明寺天満宮,どうみょうじてんまんぐう,藤井寺市道明寺1-16-40,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11001domyojitenmangu.html
+Osaka,辛國神社,からくにじんじゃ,藤井寺市藤井寺1-19-14,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11008karakunijinja.html
+Osaka,伴林氏神社,ともばやしのうじのじんじゃ,藤井寺市林3-6-30,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11016tomobayashinoujinojinja.html
+Osaka,黒田神社,くろだじんじゃ,藤井寺市北條町1-23,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11028kurodajinja.html
+Osaka,産土神社,うぶすなじんじゃ,藤井寺市小山4-7-9,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11031ubusunajinja.html
+Osaka,澤田八幡神社,さわだはちまんじんじゃ,藤井寺市沢田4-2-3,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11044sawadahachimanjinja.html
+Osaka,土師里八幡神社,はじのさとはちまんじんじゃ,藤井寺市道明寺1-8-4,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11045hajinosatohachimanjinja.html
+Osaka,古室八幡神社,こむろはちまんじんじゃ,藤井寺市古室2-1-15,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11046komurohachimanjinja.html
+Osaka,國府八幡神社,こうはちまんじんじゃ,藤井寺市国府1-4-56,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11047kohachimanjinja.html
+Osaka,志貴縣主神社,しきあがたぬしじんじゃ,藤井寺市惣社1-6-23,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11048shikiagatanushijinja.html
+Osaka,大山咋神社,おおやまぐいじんじゃ,藤井寺市船橋町8-30,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11049oyamaguijinja.html
+Osaka,志疑神社,しぎじんじゃ,藤井寺市大井3-9-16,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11050shigijinja.html
+Osaka,野中神社,のなかじんじゃ,藤井寺市野中2-1,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11052nonakajinja.html
+Osaka,津堂八幡神社,つどうはちまんじんじゃ,藤井寺市津堂41,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/fujiidera-city/11056tsudohachimanjinja.html
+Osaka,誉田八幡宮,こんだはちまんぐう,羽曳野市誉田3-2-8,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11002kondahachimangu.html
+Osaka,大津神社,おおつじんじゃ,羽曳野市高鷲8-1-2,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11006otsujinja.html
+Osaka,日吉神社,ひよしじんじゃ,羽曳野市西浦5-376,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11020hiyoshijinja.html
+Osaka,杜本神社,もりもとじんじゃ,羽曳野市駒ヶ谷64,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11021morimotojinja.html
+Osaka,白鳥神社,しらとりじんじゃ,羽曳野市古市1-1-18,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11029shiratorijinja.html
+Osaka,壺井八幡宮,つぼいはちまんぐう,羽曳野市壺井605-2,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11032tsuboihachimangu.html
+Osaka,野々上八幡神社,ののうえはちまんじんじゃ,羽曳野市野々上5-9-27,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11038nonouehachimanjinja.html
+Osaka,飛鳥戸神社,あすかべじんじゃ,羽曳野市飛鳥1023,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11055asukabejinja.html
+Osaka,蔵之内日吉神社,くらのうちひよしじんじゃ,羽曳野市蔵之内180,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/habikino-city/11057kuranouchihiyoshijinja.html
+Osaka,壹須何神社,いちすかじんじゃ,南河内郡河南町一須賀628,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kanan-cho/11019ichisukajinja.html
+Osaka,磐船大神社,いわふねだいじんじゃ,南河内郡河南町平石484,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kanan-cho/11042iwafunedaijinja.html
+Kagoshima,飯留神社,イイドメジンジャ,霧島市溝辺町有川113-4,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/298/
+Kagoshima,伊邪那岐神社,イザナギジンジャ,霧島市牧園町下中津川427,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/306/
+Kagoshima,醫師神社,イシジンジャ,霧島市国分敷根1576,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/310/
+Kagoshima,伊勢神社,イセジンジャ,霧島市国分中央2-6-17,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/337/
+Kagoshima,伊勢神社,イセジンジャ,霧島市福山町佳例川4238,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/338/
+Kagoshima,稲富神社,イナトミジンジャ,霧島市国分川内611,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/363/
+Kagoshima,稲荷神社,イナリジンジャ,霧島市国分姫城2783,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/389/
+Kagoshima,稲荷神社,イナリジンジャ,霧島市隼人町住吉1881,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/390/
+Kagoshima,稲荷神社,イナリジンジャ,霧島市福山町福沢152,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/391/
+Kagoshima,稲荷神社,イナリジンジャ,霧島市溝辺町竹子1095,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/392/
+Kagoshima,入水神社,イリミズジンジャ,霧島市霧島永水4222,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/412/
+Kagoshima,枝宮神社,エダミヤジンジャ,霧島市国分野口東935,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/427/
+Kagoshima,大穴持神社,オオナムヂジンジャ,霧島市国分広瀬3-1089,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/453/
+Kagoshima,大山祇神社,オオヤマヅミジンジャ,霧島市国分川原2661,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/472/
+Kagoshima,大山祇神社,オオヤマツミジンジャ,霧島市国分川内2624,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/473/
+Kagoshima,大山祇神社,オオヤマヅミジンジャ,霧島市国分川内3637,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/474/
+Kagoshima,大山祇神社,オオヤマツミジンジャ,霧島市国分下井3756-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/475/
+Kagoshima,乙宮神社,オトミヤジンジャ,霧島市国分下井725,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/490/
+Kagoshima,鑰島神社,カギシマジンジャ,霧島市隼人町真孝2030,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/493/
+Kagoshima,鹿児島神宮,カゴシマジングウ,霧島市隼人町内2496-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/495/
+Kagoshima,竃門神社,カマドジンジャ,霧島市福山町福山1586,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/521/
+Kagoshima,韓国宇豆峯神社,カラクニウヅミネジンジャ,霧島市国分上井898,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/528/
+Kagoshima,伽藍神社,ガランジンジャ,霧島市隼人町真孝1384-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/529/
+Kagoshima,北山神社,キタヤマジンジャ,霧島市国分新町309,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/540/
+Kagoshima,霧島神宮,キリシマジングウ,霧島市霧島町田口2608-5,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/546/
+Mie,宇賀多神社,うがたじんじゃ,志摩市阿児町鵜方１５５０,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e8%b3%80%e5%a4%9a%e7%a5%9e%e7%a4%be/
+Mie,宇賀神社,うがじんじゃ,桑名市多度町柚井 1564,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e8%b3%80%e7%a5%9e%e7%a4%be%ef%bc%88%e6%9f%9a%e4%ba%95%ef%bc%89/
+Mie,宇賀神社,うがじんじゃ,桑名市大字蓮花寺 363,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%87%e8%b3%80%e7%a5%9e%e7%a4%be%ef%bc%88%e8%93%ae%e8%8a%b1%e5%af%ba%ef%bc%89/
+Mie,安乗神社,あのりじんじゃ,志摩市阿児町安乗 844,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%89%e4%b9%97%e7%a5%9e%e7%a4%be/
+Mie,安西神社,あんさいじんじゃ,津市芸濃町萩野 512,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%89%e8%a5%bf%e7%a5%9e%e7%a4%be/
+Mie,官舎神社,かんしゃじんじゃ,伊勢市小俣町本町1446,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%98%e8%88%8e%e7%a5%9e%e7%a4%be/
+Mie,定神社,さだじんじゃ,多気郡大台町檜原字向假屋608-2,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%9a%e7%a5%9e%e7%a4%be/
+Mie,室子神社,むろこじんじゃ,三重県熊野市二木島町６７,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%a4%e5%8f%a4%e7%a5%9e%e7%a4%be/
+Mie,宮本神社,みやもとじんじゃ,伊勢市佐八町767,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%ae%e6%9c%ac%e7%a5%9e%e7%a4%be/
+Mie,家城神社,いえきじんじゃ,津市白山町南家城 414,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%ae%b6%e5%9f%8e%e7%a5%9e%e7%a4%be/
+Mie,寿栄神社,ひさかじんじゃ,名張市丸之内 54-5,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%af%bf%e6%a0%84%e7%a5%9e%e7%a4%be/
+Mie,射山神社,いやまじんじゃ,津市榊原町 5073,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%84%e5%b1%b1%e7%a5%9e%e7%a4%be/
+Mie,射手神社,いてじんじゃ,伊賀市長田 2691-1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%84%e6%89%8b%e7%a5%9e%e7%a4%be/
+Mie,小丹神社,おにのじんじゃ,であります。 １、氏子並びに崇敬者 上浜町、江戸橋町、栄町４丁目旧余慶町一円、栄町１丁目旧茶屋町一円、桜橋２丁目、仝３丁,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e4%b8%b9%e7%a5%9e%e7%a4%be/
+Mie,小原神明社,こはらしんめいしゃ,いなべ市北勢町小原一色 54,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%8e%9f%e7%a5%9e%e6%98%8e%e7%a4%be/
+Mie,小向神社,おぶけじんじゃ,三重郡朝日町大字小向1573-3,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%90%91%e7%a5%9e%e7%a4%be/
+Mie,小和泉神社,こいずみじんじゃ,に再度奉斎された。同26年4月宗教法人として届け出、現在に至っている。,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%92%8c%e6%b3%89%e7%a5%9e%e7%a4%be/
+Mie,小宮神社,おみやじんじゃ,伊賀市服部町 1158,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%ae%ae%e7%a5%9e%e7%a4%be/
+Mie,小山神社,おやまじんじゃ,桑名市多度町小山 1197,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%b1%b1%e7%a5%9e%e7%a4%be/
+Mie,小川内神社,おがわうちじんじゃ,でいつの頃か現在地に遷座されたもののようである。もと南垣内の宮の内に鎮座の産土神を御靈大明神を称えており鳥居にその扁額を,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%b7%9d%e5%86%85%e7%a5%9e%e7%a4%be/
+Mie,小川神社,おがわじんじゃ,松阪市嬉野中川町 674,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%b7%9d%e7%a5%9e%e7%a4%be%ef%bc%88%e5%ac%89%e9%87%8e%e4%b8%ad%e5%b7%9d%e7%94%ba%ef%bc%89/
+Mie,小川神社,おがわじんじゃ,は現在地の北方約５００米の所と伝え、明治４０年、４２年の２回にわたり村内の神社を合祀、同４２年に 村社に列し、４４年に現,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%b7%9d%e7%a5%9e%e7%a4%be%ef%bc%88%e8%8b%a5%e6%9d%be%e4%b8%ad%ef%bc%89/
+Mie,小川郷神社,おがわごうじんじゃ,度会郡度会町中之郷1022,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e5%b7%9d%e9%83%b7%e7%a5%9e%e7%a4%be/
+Mie,小杉神社,こすぎじんじゃ,四日市市小杉町 975,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e6%9d%89%e7%a5%9e%e7%a4%be/
+Mie,小松神社,こまつじんじゃ,四日市市北小松町 1,https://kyoka.mie-jinjacho.or.jp/shrine/%e5%b0%8f%e6%9d%be%e7%a5%9e%e7%a4%be/
+Osaka,鴨習太神社,かもならいたじんじゃ,南河内郡河南町神山595,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kanan-cho/11043kamonaraitajinja.html
+Osaka,高向神社,たこうじんじゃ,河内長野市高向291,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11010takojinja.html
+Osaka,西代神社,にしんだいじんじゃ,河内長野市西代町16-5,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11012nishindaijinja.html
+Osaka,菅原神社,すがはらじんじゃ,河内長野市市町469,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11013sugaharajinja.html
+Osaka,長野神社,ながのじんじゃ,河内長野市長野町8-19,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11014naganojinja.html
+Osaka,住吉神社,すみよしじんじゃ,河内長野市小山田町453,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11015sumiyoshijinja.html
+Osaka,烏帽子形八幡神社,えぼしがたはちまんじんじゃ,河内長野市喜多町305,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11017eboshigatahachimanjinja.html
+Osaka,川上神社,かわかみじんじゃ,河内長野市鳩原789-1,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11023kawakamijinja.html
+Osaka,加賀田神社,かがたじんじゃ,河内長野市加賀田135,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11026kagatajinja.html
+Osaka,赤阪上之山神社,あかさかかみのやまじんじゃ,河内長野市美加の台1-25-2,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11030akasakakaminoyamajinja.html
+Osaka,八幡神社,はちまんじんじゃ,河内長野市天見2211,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11033hachimanjinja.html
+Osaka,蟹井神社,かにいじんじゃ,河内長野市天見428,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11034kaniijinja.html
+Osaka,天神社,てんじんじゃ,河内長野市滝畑731,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/11037tenjinja.html
+Osaka,狭山神社,さやまじんじゃ,大阪狭山市半田1-223,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/osakasayama-city/11009sayamajinja.html
+Osaka,三都神社,さんとじんじゃ,大阪狭山市今熊5-647,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/osakasayama-city/11025santojinja.html
+Osaka,龍神社,りゅうじんじゃ,大阪狭山市大字岩室2439-1,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/osakasayama-city/11058ryujinja.html
+Osaka,科長神社,しながじんじゃ,南河内郡太子町山田3778,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/taishi-cho/11011shinagajinja.html
+Osaka,春日神社,かすがじんじゃ,南河内郡太子町春日1642,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/taishi-cho/11041kasugajinja.html
+Osaka,美具久留御魂神社,みぐくるみたまじんじゃ,富田林市宮町3-2053,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11003migukurumitamajinja.html
+Osaka,錦織神社,にしこおりじんじゃ,富田林市宮甲田町9-46,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11007nishikorijinja.html
+Osaka,咸古神社,こんくじんじゃ,富田林市龍泉886,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11036konkujinja.html
+Osaka,春日神社,かすがじんじゃ,富田林市彼方329,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11039kasugajinja.html
+Osaka,佐備神社,さびじんじゃ,富田林市佐備467,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11040sabijinja.html
+Osaka,板茂神社,いたもじんじゃ,富田林市西板持町8-7-39,https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/tondabayashi-city/11054itamojinja.html
+Osaka,波太神社,はたじんじゃ,阪南市石田167,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12044hatajinja.html
+Gifu,漆原神社,うるしはらじんじゃ,岐阜県恵那市上矢作町漆原字本郷304番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1602
+Gifu,熊野神社,くまのじんじゃ,岐阜県恵那市上矢作町下字宮本467番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1603
+Gifu,神明神社,しんめいじんじゃ,岐阜県恵那市上矢作町字田中3431番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1604
+Gifu,津島神社,つしまじんじゃ,岐阜県恵那市上矢作町（横道）字古瀬1664番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1605
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市上矢作町（達原）字奥達原1193番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1606
+Gifu,早房八幡神社,はやふさはちまんじんじゃ,岐阜県恵那市上矢作町字下足沢851番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1607
+Gifu,石亀神社,いしかめじんじゃ,岐阜県恵那市上矢作町（小笹原）字ﾔｹﾞ353番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1608
+Gifu,八王子神社,はちおうじじんじゃ,岐阜県恵那市上矢作町字岩名沢2046番地の2,https://www.gifu-jinjacho.jp/syosai.php?shrno=1609
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市上矢作町字山ｸﾞﾛ570番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1610
+Gifu,愛宕神社,あたごじんじゃ,岐阜県恵那市上矢作町字西洞3238番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1611
+Gifu,大船神社,おおふねじんじゃ,岐阜県恵那市上矢作町字高井戸3107番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1612
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市上矢作町字城山1901番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1613
+Gifu,熊野神社,くまのじんじゃ,岐阜県恵那市上矢作町字紺屋井戸2359番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1614
+Gifu,八幡神社,はちまんじんじゃ,岐阜県恵那市山岡町久保原114番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1615
+Gifu,日吉神社,ひよしじんじゃ,岐阜県恵那市山岡町久保原1094番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1616
+Gifu,熱田神社,あつたじんじゃ,岐阜県恵那市山岡町久保原942番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1617
+Gifu,神明神社,しんめいじんじゃ,岐阜県恵那市山岡町久保原1445番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1618
+Gifu,五社神社,ごしゃじんじゃ,岐阜県恵那市山岡町馬場山田2517.2518番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1619
+Gifu,火禦神社,ひふせじんじゃ,岐阜県恵那市山岡町馬場山田3502番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1620
+Gifu,春日神社,かすがじんじゃ,岐阜県恵那市山岡町馬場山田1556番地の1,https://www.gifu-jinjacho.jp/syosai.php?shrno=1621
+Gifu,手向神社,とうげじんじゃ,岐阜県恵那市山岡町上手向274.275番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1622
+Gifu,貴布禰神社,きふねじんじゃ,岐阜県恵那市山岡町上手向2512.2513番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1623
+Gifu,子守神社,こもりじんじゃ,岐阜県恵那市山岡町上手向1505番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1624
+Gifu,白山比ﾛ羊神社,しらやまひめじんじゃ,岐阜県恵那市山岡町下手向1065番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1625
+Gifu,神明神社,しんめいじんじゃ,岐阜県恵那市山岡町上手向910.911番地,https://www.gifu-jinjacho.jp/syosai.php?shrno=1626
+Kagoshima,霧島神社,キリシマジンジャ,霧島市隼人町西光寺526,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/560/
+Kagoshima,金峯神社,キンポウジンジャ,霧島市溝辺町崎森2518,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/573/
+Kagoshima,久満崎神社,クマサキジンジャ,霧島市国分上小川1686,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/593/
+Kagoshima,熊野神社,クマノジンジャ,霧島市国分郡田1730,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/616/
+Kagoshima,熊野神社,クマノジンジャ,霧島市隼人町真孝794,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/617/
+Kagoshima,小烏神社,コガラスジンジャ,霧島市国分松木1295,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/645/
+Kagoshima,前玉神社,サキタマジンジャ,霧島市溝辺町三縄204,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/675/
+Kagoshima,菅原神社,スガワラジンジャ,霧島市隼人町松永3283,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/768/
+Kagoshima,菅原神社,スガワラジンジャ,霧島市隼人町姫城2420,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/769/
+Kagoshima,菅原神社,スガワラジンジャ,霧島市福山町福山1297,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/770/
+Kagoshima,高座神社,タカクラジンジャ,霧島市国分川原108,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/850/
+Kagoshima,高塚神社,タカツカジンジャ,霧島市国分川内3339-1,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/868/
+Kagoshima,鷹屋神社,タカヤジンジャ,霧島市溝辺町麓4260,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/873/
+Kagoshima,竪神社,タテガミジンジャ,霧島市牧園町持松16,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/887/
+Kagoshima,剱神社,ツルギジンジャ,霧島市国分敷根99,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/937/
+Kagoshima,天子神社,テンシジンジャ,霧島市霧島田口834,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/944/
+Kagoshima,止上神社,トガミジンジャ,霧島市国分重久1896,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/946/
+Kagoshima,長野神社,ナガノジンジャ,霧島市国分湊13,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/973/
+Kagoshima,中山神社,ナカヤマジンジャ,霧島市隼人町野久美田344,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/975/
+Kagoshima,七社神社,ナナヤシロジンジャ,霧島市霧島永水3206,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/981/
+Kagoshima,七社神社,ナナヤシロジンジャ,霧島市霧島川北134-2,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/982/
+Kagoshima,日秀神社,ニッシュウジンジャ,霧島市隼人町朝日21,https://www.kagojinjacho.or.jp/shrine-search/area-airaisa/%e9%9c%a7%e5%b3%b6%e5%b8%82/990/
+Kagoshima,白山神社,ハクサンジンジャ,薩摩郡さつま町求名11708,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1001/
+Kagoshima,八幡神社,ハチマンジンジャ,薩摩郡さつま町虎居7827,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1025/
+Kagoshima,八幡神社,ハチマンジンジャ,薩摩郡さつま町湯田901,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1026/
+Osaka,加茂神社,かもじんじゃ,阪南市箱作1655,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12054kamojinja.html
+Osaka,稲荷神社,いなりじんじゃ,阪南市箱作2511,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12055inarijinja.html
+Osaka,菅原神社,すがはらじんじゃ,阪南市箱作169,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12060sugaharajinja.html
+Osaka,鳥取神社,とっとりじんじゃ,阪南市石田164,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12061tottorijinja.html
+Osaka,尾崎神社,おざきじんじゃ,阪南市尾崎町2-8-3,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12062ozakijinja.html
+Osaka,指出森神社,さしでもりじんじゃ,阪南市貝掛1462,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12063sashidemorijinja.html
+Osaka,北野神社,きたのじんじゃ,阪南市新町250,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12064kitanojinja.html
+Osaka,揖取神社,かじとりじんじゃ,阪南市鳥取706,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/hannan-city/12065kajitorijinja.html
+Osaka,春日神社,かすがじんじゃ,泉佐野市春日町4-12,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12029kasugajinja.html
+Osaka,日根神社,ひねじんじゃ,泉佐野市日根野631,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12030hinejinja.html
+Osaka,加支多神社,かしたじんじゃ,泉佐野市鶴原1834-2,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12031kashitajinja.html
+Osaka,奈加美神社,なかみじんじゃ,泉佐野市中庄834,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12033nakamijinja.html
+Osaka,蟻通神社,ありとおしじんじゃ,泉佐野市長滝814,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12034aritooshijinja.html
+Osaka,火走神社,ひばしりじんじゃ,泉佐野市大木1534,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12036hibashirijinja.html
+Osaka,意賀美神社,おがみじんじゃ,泉佐野市上之郷45,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12037ogamijinja.html
+Osaka,八幡神社,やはたじんじゃ,泉佐野市南中安松292,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12038yahatajinja.html
+Osaka,春日神社,かすがじんじゃ,泉佐野市土丸59,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12039kasugajinja.html
+Osaka,船岡神社,ふなおかじんじゃ,泉佐野市南中岡本276,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12040funaokajinja.html
+Osaka,住吉神社,すみよしじんじゃ,泉佐野市下瓦屋2-1-8,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12042sumiyoshijinja.html
+Osaka,若宮神社,わかみやじんじゃ,泉佐野市南中樫井627,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12043wakamiyajinja.html
+Osaka,日枝神社,ひえじんじゃ,泉佐野市南中樫井440,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/izumisano-city/12058hiejinja.html
+Osaka,感田神社,かんだじんじゃ,貝塚市中町10-1,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kaiduka-city/12004kandajinja.html
+Osaka,阿理莫神社,ありまかじんじゃ,貝塚市久保165,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kaiduka-city/12006arimakajinja.html
+Osaka,南近義神社,みなみこぎじんじゃ,貝塚市王子1195,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kaiduka-city/12010minamikogijinja.html
+Osaka,西葛城神社,にしかつらぎじんじゃ,貝塚市木積2273,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kaiduka-city/12015nishikatsuragijinja.html
+Osaka,道陸神社,どうろくじんじゃ,貝塚市木積3758,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kaiduka-city/12016dorokujinja.html
+Osaka,稲荷神社,いなりじんじゃ,貝塚市森524,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kaiduka-city/12017inarijinja.html
+Osaka,岸城神社,きしきじんじゃ,岸和田市岸城町11-30,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12001kishikijinja.html
+Osaka,岸和田天神宮,きしわだてんじんぐう,岸和田市別所町1-13-15,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12002kishiwadatenjingu.html
+Osaka,弥栄神社,やえいじんじゃ,岸和田市八幡町13-25,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12003yaeijinja.html
+Osaka,夜疑神社,やぎじんじゃ,岸和田市中井町2-7-1,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12005yagijinja.html
+Osaka,菅原神社,すがはらじんじゃ,岸和田市岡山町395,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12007sugaharajinja.html
+Osaka,兵主神社,ひょうずじんじゃ,岸和田市西之内町1-1,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12008hyozujinja.html
+Osaka,土生神社,はぶじんじゃ,岸和田市土生町7-8-15,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12009habujinja.html
+Osaka,積川神社,つがわじんじゃ,岸和田市積川町350,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12011tsugawajinja.html
+Osaka,山直神社,やまだいじんじゃ,岸和田市内畑町3619,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12012yamadaijinja.html
+Osaka,矢代寸神社,やしろぎじんじゃ,岸和田市八田町357,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12013yashirogijinja.html
+Osaka,菅原神社,すがはらじんじゃ,岸和田市稲葉町2600,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12014sugaharajinja.html
+Osaka,意賀美神社,おがみじんじゃ,岸和田市土生滝町17,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12018ogamijinja.html
+Osaka,菅原神社,すがはらじんじゃ,岸和田市尾生町3-29-8,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12019sugaharajinja.html
+Osaka,菅原神社,すがはらじんじゃ,岸和田市田治米町680,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12020sugaharajinja.html
+Osaka,菅原神社,すがはらじんじゃ,岸和田市三田町1699,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12021sugaharajinja.html
+Osaka,東葛城神社,ひがしかつらぎじんじゃ,岸和田市河合町1893,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12022higashikatsuragijinja.html
+Osaka,中村神社,なかむらじんじゃ,岸和田市山直中町502,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12023nakamurajinja.html
+Osaka,楠本神社,くすもとじんじゃ,岸和田市包近町1448,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12024kusumotojinja.html
+Osaka,大沢神社,おおさわじんじゃ,岸和田市大沢町439,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12025osawajinja.html
+Osaka,波多神社,はたじんじゃ,岸和田市畑町428,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12026hatajinja.html
+Osaka,淡路神社,あわじじんじゃ,岸和田市摩湯町576,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12027awajijinja.html
+Osaka,菅原神社,すがはらじんじゃ,岸和田市今木町454,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kishiwada-city/12028sugaharajinja.html
+Osaka,大森神社,おおもりじんじゃ,泉南郡熊取町大宮1-11-18,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/kumatori-cho/12032omorijinja.html
+Osaka,産土神社,うぶすなじんじゃ,泉南郡岬町多奈川谷川1462,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/misaki-cho/12049ubusunajinja.html
+Osaka,船守神社,ふなもりじんじゃ,泉南郡岬町淡輪4442,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/misaki-cho/12052funamorijinja.html
+Osaka,国玉神社,くにたまじんじゃ,泉南郡岬町深日921,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/misaki-cho/12053kunitamajinja.html
+Osaka,住吉神社,すみよしじんじゃ,泉南郡岬町多奈川小島740,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/misaki-cho/12057sumiyoshijinja.html
+Osaka,男神社,おのじんじゃ,泉南市男里3-16-1,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12045onojinja.html
+Osaka,里外神社,りげじんじゃ,泉南市岡田3-25-1,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12046rigejinja.html
+Osaka,茅渟神社,ちぬじんじゃ,泉南市樽井5-11-9,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12047chinujinja.html
+Osaka,種河神社,たねかわじんじゃ,泉南市新家1087,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12048tanekawajinja.html
+Osaka,稲荷神社,いなりじんじゃ,泉南市信達市場1471,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12050inarijinja.html
+Osaka,信達神社,しんだちじんじゃ,泉南市信達金熊寺795,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12051shindachijinja.html
+Osaka,一岡神社,いちおかじんじゃ,泉南市信達大苗代373,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12056ichiokajinja.html
+Osaka,鹿島神社,かしまじんじゃ,泉南市鳴滝2-1-1,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/sennan-city/12059kashimajinja.html
+Osaka,春日神社,かすがじんじゃ,泉南郡田尻町吉見952,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/tajiri-cho/12035kasugajinja.html
+Osaka,嘉祥神社,かしょうじんじゃ,泉南郡田尻町嘉祥寺761,https://www.osaka-jinjacho.jp/funai_jinja/dai12shibu/tajiri-cho/12041kashojinja.html
+Osaka,呉服神社,くれはじんじゃ,池田市室町7-4,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01004kurehajinja.html
+Osaka,住吉神社,すみよしじんじゃ,池田市住吉2-3-18,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01005sumiyoshijinja.html
+Osaka,八坂神社,やさかじんじゃ,池田市神田4-7-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01006yasakajinja.html
+Osaka,天満宮,てんまんぐう,池田市畑3-15-8,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01019tenmangu.html
+Osaka,十二神社,じゅうにじんじゃ,池田市豊島南1-2-9,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/ikeda-city/01028junijinja.html
+Osaka,爲那都比古神社,いなつひこじんじゃ,箕面市石丸2-10-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01008inatsuhikojinja.html
+Osaka,阿比太神社,あびたじんじゃ,箕面市桜ヶ丘1-8-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01015abitajinja.html
+Osaka,天児屋根命神社,あめのこやねのみことじんじゃ,箕面市瀬川1-22-20,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01017amenokoyanenomikotojinja.html
+Osaka,八幡大神宮,はちまんだいじんぐう,箕面市牧落2-12-27,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01022hachimandaijingu.html
+Osaka,八幡太神社,はちまんたじんじゃ,箕面市新稲3-6-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01027hachimantajinja.html
+Osaka,龍王神社,りゅうおうじんじゃ,箕面市如意谷4-1-22,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01029ryuojinja.html
+Osaka,止々呂美神社,とどろみじんじゃ,箕面市大字止々呂美909,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01032todoromijinja.html
+Osaka,春日神社,かすがじんじゃ,箕面市小野原西5-3-11,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01033kasugajinja.html
+Osaka,素盞鳴尊神社,すさのおのみことじんじゃ,箕面市大字粟生間谷2912,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01034susanoonomikotojinja.html
+Osaka,春日神社,かすがじんじゃ,箕面市粟生新家2-1-5,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01035kasugajinja.html
+Osaka,五字神社,ごじじんじゃ,箕面市粟生外院5-4-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/minoh-city/01036gojijinja.html
+Osaka,野間神社,のまじんじゃ,豊能郡能勢町地黄399,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01009nomajinja.html
+Osaka,岐尼神社,きねじんじゃ,豊能郡能勢町森上103-3,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01010kinejinja.html
+Osaka,山辺神社,やまべじんじゃ,豊能郡能勢町山辺1618-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01012yamabejinja.html
+Osaka,歌垣神社,うたがきじんじゃ,豊能郡能勢町倉垣1764,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01014utagakijinja.html
+Osaka,久佐々神社,くささじんじゃ,豊能郡能勢町宿野274-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01020kusasajinja.html
+Osaka,原林神社,はらばやしじんじゃ,豊能郡能勢町下田尻162,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01024harabayashijinja.html
+Osaka,倉垣天満宮,くらかきてんまんぐう,豊能郡能勢町倉垣989,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01025kurakakitenmangu.html
+Osaka,高皇産霊神社,たかみむすびじんじゃ,豊能郡能勢町天王214-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/nose-cho/01026takamimusubijinja.html
+Osaka,服部天神宮,はっとりてんじんぐう,豊中市服部元町1－2－17,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01001hattoritenjingu.html
+Osaka,庄内神社,しょうないじんじゃ,豊中市庄内幸町5-22-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01002shonaijinja.html
+Osaka,稲荷神社,いなりじんじゃ,豊中市本町7-3-7,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01003inarijinja.html
+Osaka,椋橋総社,くらはしそうしゃ,豊中市庄本町1－2－4,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01007kurahashisosha.html
+Osaka,八坂神社,やさかじんじゃ,豊中市熊野町3-10-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01013yasakajinja.html
+Osaka,春日神社,かすがじんじゃ,豊中市利倉1-3-14,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01016kasugajinja.html
+Osaka,天神社,てんじんじゃ,豊中市上新田1－17-1,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01018tenjinja.html
+Osaka,住吉神社,すみよしじんじゃ,豊中市服部南町2-3-31,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/01023sumiyoshijinja.html
+Osaka,走落神社,はしりおちじんじゃ,豊能郡豊能町木代1556,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyono-cho/01011hashiriochijinja.html
+Osaka,太歳神社,おおとしじんじゃ,豊能郡豊能町牧西口1-34,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyono-cho/01030otoshijinja.html
+Osaka,大歳神社,おおとしじんじゃ,豊能郡豊能町寺田上東谷15,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyono-cho/01031otoshijinja.html
+Osaka,八幡神社,はちまんじんじゃ,豊能郡豊能町吉川936,https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyono-cho/01038hachimanjinja.html
+Kagoshima,日枝神社,ヒエジンジャ,薩摩郡さつま町虎居2836,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1083/
+Kagoshima,日枝神社,ヒエジンジャ,薩摩郡さつま町田原710,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1084/
+Kagoshima,比叡神社,ヒエジンジャ,薩摩郡さつま町求名5796・5797,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1085/
+Kagoshima,古紫尾神社,フルシビジンジャ,薩摩郡さつま町柏原3903,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1133/
+Kagoshima,保食神社,ホショクジンジャ,薩摩郡さつま町船木835-3,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1138/
+Kagoshima,松尾神社,マツオジンジャ,薩摩郡さつま町宮之城屋地1998,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1154/
+Kagoshima,御年神社,ミトシジンジャ,薩摩郡さつま町船木729,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1174/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町柊野580,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1211/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町平川1989,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1212/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町船木2850,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1213/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町宮之城屋地999,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1214/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町二渡4755,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1215/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町広瀬5706,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1216/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町永野5399,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1217/
+Kagoshima,南方神社,ミナミカタジンジャ,薩摩郡さつま町鶴田2928,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1219/
+Kagoshima,八坂神社,ヤサカジンジャ,薩摩郡さつま町宮之城屋地1047,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1274/
+Kagoshima,山神社,ヤマジンジャ,薩摩郡さつま町平川3141-乙,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/1302/
+Kagoshima,明良神社,アキラジンジャ,薩摩郡さつま町広瀬5289,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/253/
+Kagoshima,阿字賀神社,アジカジンジャ,薩摩郡さつま町広瀬740,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/257/
+Kagoshima,飯富神社,イイトミジンジャ,薩摩郡さつま町久富木5847,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/291/
+Kagoshima,飯富神社,イイトミジンジャ,薩摩郡さつま町山崎1063-1,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/292/
+Kagoshima,稲富神社,イナトミジンジャ,薩摩郡さつま町久富木1791,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/361/
+Kagoshima,稲富神社,イナトミジンジャ,薩摩郡さつま町求名2681,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/362/
+Kagoshima,稲留神社,イナトメジンジャ,薩摩郡さつま町神子381,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/367/
+Kagoshima,保食神社,ウケモチジンジャ,薩摩郡さつま町山崎3485,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/417/
+Osaka,茨木神社,いばらきじんじゃ,茨木市元町4-3,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02012ibarakijinja.html
+Osaka,磯良神社,いそらじんじゃ,茨木市三島丘1-4-29,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02013isorajinja.html
+Osaka,井於神社,いのへのじんじゃ,茨木市蔵垣内3-5-15,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02015iojinja.html
+Osaka,郡神社,こおりじんじゃ,茨木市郡3-21-48,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02016korijinja.html
+Osaka,天満宮,てんまんぐう,茨木市田中町7-37,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02019tenmangu.html
+Osaka,佐奈部神社,さなべじんじゃ,茨木市稲葉町16-26,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02020sanabejinja.html
+Osaka,春日神社,かすがじんじゃ,茨木市庄1-10-6,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02021kasugajinja.html
+Osaka,牟礼神社,むれじんじゃ,茨木市中村町5-7,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02023murejinja.html
+Osaka,春日丘八幡宮,かすがおかはちまんぐう,茨木市南春日丘4-1-44,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02028kasugaokahachimangu.html
+Osaka,春日神社,かすがじんじゃ,茨木市中穂積2-16-11,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02029kasugajinja.html
+Osaka,春日神社,かすがじんじゃ,茨木市下穂積3-13-13,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02030kasugajinja.html
+Osaka,春日神社,かすがじんじゃ,茨木市天王1-1-22,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02031kasugajinja.html
+Osaka,太田神社,おおだじんじゃ,茨木市太田3-15-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02032ohdajinja.html
+Osaka,新屋坐天照御魂神社,にいやにますあまてるみたまじんじゃ,茨木市西河原3-1-2,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02033niiyanimasuamaterumitamajinja.html
+Osaka,八幡太神宮,はちまんだいじんぐう,茨木市総持寺1-16-45,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02034hachimandaijingu.html
+Osaka,須賀神社,すがじんじゃ,茨木市鮎川2-6-45,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02035sugajinja.html
+Osaka,佐和良義神社,さわらぎじんじゃ,茨木市三沢町9-27,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02037sawaragijinja.html
+Osaka,道祖神社,どうそじんじゃ,茨木市高浜町1-48,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02038dosojinja.html
+Osaka,素盞嗚尊神社,すさのおのみことじんじゃ,茨木市沢良宜西1-16-31,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02039susanoonomikotojinja.html
+Osaka,皇大神社,こうたいじんじゃ,茨木市沢良宜東町1-14,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02040kotaijinja.html
+Osaka,春日神社,かすがじんじゃ,茨木市西穂積町4-3,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02041kasugajinja.html
+Osaka,八阪神社,やさかじんじゃ,茨木市東太田2-18-4,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02042yasakajinja.html
+Osaka,春日神社,かすがじんじゃ,茨木市豊川1-23-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02043kasugajinja.html
+Osaka,須久久神社,すくくじんじゃ,茨木市宿久庄4-22-33,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02044sukukujinja.html
+Osaka,新屋坐天照御魂神社,にいやにますあまてるみたまじんじゃ,茨木市宿久庄5-17-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02045niiyanimasuamaterumitamajinja.html
+Kagoshima,大石神社,オオイシジンジャ,薩摩郡さつま町中津川2234,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/442/
+Kagoshima,大年神社,オオトシジンジャ,薩摩郡さつま町船木4120,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/449/
+Kagoshima,大山祇神社,オオヤマズメジンジャ,薩摩郡さつま町久富木847-1,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/458/
+Kagoshima,大山祇神社,オオヤマズメジンジャ,薩摩郡さつま町白男川3324,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/459/
+Kagoshima,大山祇神社,オオヤマズメジンジャ,薩摩郡さつま町白男川5301,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/460/
+Kagoshima,川原神社,カワハラジンジャ,薩摩郡さつま町湯田126,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/535/
+Kagoshima,貴船神社,キブネジンジャ,薩摩郡さつま町平川1785-1,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/542/
+Kagoshima,霧島神社,キリシマジンジャ,薩摩郡さつま町旭町18-17,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/552/
+Kagoshima,霧島神社,キリシマジンジャ,薩摩郡さつま町田原1167,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/553/
+Kagoshima,霧島神社,キリシマジンジャ,薩摩郡さつま町広瀬2720-乙,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/554/
+Kagoshima,霧島神社,キリシマジンジャ,薩摩郡さつま町田原2038-乙2,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/555/
+Kagoshima,楠木神社,クスノキジンジャ,薩摩郡さつま町宮之城屋地1030,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/580/
+Kagoshima,熊野神社,クマノジンジャ,薩摩郡さつま町宮之城屋地2637,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/608/
+Kagoshima,現王神社,ゲンオウジンジャ,薩摩郡さつま町泊野553,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/635/
+Kagoshima,紫尾神社,シビジンジャ,薩摩郡さつま町白男川1521,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/694/
+Kagoshima,紫尾神社,シビジンジャ,薩摩郡さつま町紫尾2164,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/695/
+Kagoshima,上宮神社,ジョウグウジンジャ,薩摩郡さつま町平川3386,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/711/
+Kagoshima,白鳥神社,シラトリジンジャ,薩摩郡さつま町中津川6557,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/717/
+Kagoshima,水天神社,スイテンジンジャ,薩摩郡さつま町轟町9-1,https://www.kagojinjacho.or.jp/shrine-search/area-hokusatsu/%e3%81%95%e3%81%a4%e3%81%be%e7%94%ba/727/
+Osaka,八阪神社,やさかじんじゃ,茨木市宿久庄1-9-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02046yasakajinja.html
+Osaka,春日神社,かすがじんじゃ,茨木市清水2-10-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02047kasugajinja.html
+Osaka,藤代神社,ふじしろじんじゃ,茨木市粟生岩阪680,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02048fujishirojinja.html
+Osaka,道祖神社,どうそじんじゃ,茨木市豊川1-29-5,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02049dosojinja.html
+Osaka,稲荷神社,いなりじんじゃ,茨木市粟生岩阪667,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02050inarijinja.html
+Osaka,女九神社,めくじんじゃ,茨木市東太田3-5-32,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02054mekujinja.html
+Osaka,素盞鳴尊神社,すさのおのみことじんじゃ,茨木市稲葉町16-26,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02055susanoonomikotojinja.html
+Osaka,稲荷神社,いなりじんじゃ,茨木市大字水尾3-3-9,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02056inarijinja.html
+Osaka,猿田彦神社,さるたひこじんじゃ,茨木市大字水尾746,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02057sarutahikojinja.html
+Osaka,春日神社,かすがじんじゃ,茨木市春日5-6-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02063kasugajinja.html
+Osaka,皇大神宮,こうたいじんぐう,茨木市大字車作619-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02064kotaijingu.html
+Osaka,大歳神社,おおとしじんじゃ,茨木市大字大岩173,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02066otoshijinja.html
+Osaka,素盞嗚尊神社,すさのおのみことじんじゃ,茨木市大字泉原1228,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02067susanoonomikotojinja.html
+Osaka,諏訪神社,すわじんじゃ,茨木市大字泉原123-2,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02068suwajinja.html
+Osaka,天満宮,てんまんぐう,茨木市大字上音羽628,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02069tenmangu.html
+Osaka,素盞嗚尊神社,すさのおのみことじんじゃ,茨木市大字下音羽499,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02070susanoonomikotojinja.html
+Osaka,八幡大神宮,はちまんだいじんぐう,茨木市大字銭原1023,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02071hachimandaijingu.html
+Osaka,飯原神社,いいはらじんじゃ,茨木市大字安元251,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02072iiharajinja.html
+Osaka,八幡神社,はちまんじんじゃ,茨木市大字大岩674,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02073hachimanjinja.html
+Osaka,諏訪神社,すわじんじゃ,茨木市大字生保138-53,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02074suwajinja.html
+Osaka,素盞嗚尊神社,すさのおのみことじんじゃ,茨木市大字清阪205-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02075susanoonomikotojinja.html
+Osaka,八所神社,はっしょじんじゃ,茨木市大字忍頂寺305,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02076hasshojinja.html
+Osaka,天満宮,てんまんぐう,茨木市大字千提寺334,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/ibaraki-city/02077tenmangu.html
+Osaka,藤森神社,ふじのもりじんじゃ,摂津市鳥飼西2-1-1,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/settsu-city/02014fujinomorijinja.html
+Osaka,味舌天満宮,ましたてんまんぐう,摂津市三島3-9-3,https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/settsu-city/02017mashitatenmangu.html
