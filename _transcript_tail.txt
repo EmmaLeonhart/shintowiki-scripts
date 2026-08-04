@@ -1,0 +1,106 @@
+
+===== [2386] ASSISTANT =====
+Files are down. Launching the Opus sub-agents now — one 分霊-only task, full articles.
+
+===== [2413] ASSISTANT =====
+Groups 1 and 2 are back — 20 articles, all NONE. Launching the remaining five groups.
+
+===== [2445] ASSISTANT =====
+Regex is gone — the Opus sub-agents are what's running now, each reading full articles with a 分霊-only prompt that defines it as *the source of the shrine's kami*, and explicitly rules out 摂社/末社/所管社/別宮 subordination.
+
+Progress: **30 of 99 articles read in full so far.** 29 NONE, 1 hit — 長由介神社, where the article says 長由介神 may be a 分霊 of 豊受大神, doubly hedged (『大宮町史』 gives 祭神不明, then raises it as a 可能性). The agent flagged it as 説 rather than reporting it as fact, which is the behaviour I wanted.
+
+Seven groups still running. I'll report the full result when they're all back — including whether the 外宮 丹波 transfer is stated as a shrine or only as a place, which is the one that decides whether 外宮 itself gets a line.
+
+===== [2455] ASSISTANT =====
+80 of 99 read; groups 9 and 10 still out. Meanwhile, addressing your Beppyo doubt directly — the 34 shrines where my reason was the generic "no origin in the article" are exactly the ones I never actually read. Re-doing those the same way.
+
+===== [2473] ASSISTANT =====
+All 99 Ise articles are read. And you're right that grep can't find this — which is why the sub-agents read each article in full rather than matching words.
+
+**神宮125社 result — 99 articles, full reads:**
+
+| shrine | source | kind |
+|---|---|---|
+| **志宝屋神社** | 鹽竈神社 (宮城県塩竈市) | the only named **shrine**; 伝承 |
+| 豊受大神宮 (外宮) | 丹波国 | a **place**, not a shrine — CERTAIN |
+| 皇大神宮 (内宮) | 宮中 → 笠縫邑 | a **place**, 説 |
+| 長由介神社 | 豊受大神 | a **deity**, not a shrine; 説 |
+| all other 95 | — | none |
+
+The agents also caught things a grep never would: 河原淵神社 *denying* a 宇佐 origin, 饗土橋姫神社 being founded "in imitation of" Kyoto's 橋姫明神 rather than by 分霊, and 高河原神社 sharing 月夜見尊御魂 and sitting inside 月夜見宮's precinct with no transfer stated.
+
+**On the Beppyo 344 — I have to correct something I implied earlier.** It wasn't only the 34 that were under-read. My whole Beppyo pass judged from *keyword-extracted sentences*, not full articles. The 34 are just where the extractor returned nothing and I had no text at all. So the honest position is that all 344 need the same agentic full-read treatment.
+
+Starting with the 34, then the rest:
+
+===== [2488] ASSISTANT =====
+Four agents running on the 34. While they work, fetching the full text of all 344 Beppyo articles so the whole set gets the same treatment rather than just the ones my extractor happened to miss.
+
+===== [2512] ASSISTANT =====
+The agents are reading full articles and finding the origin narratives — but reporting NONE because I told them to require an explicit transfer from a *named shrine*. Your expectation is that it's almost always there. That gap is definitional, and it's yours to settle.
+
+===== [2518] ASSISTANT =====
+"All of these" — that changes the shape completely, and explains why you expect it almost everywhere. Re-running all 444 articles with a prompt that captures all three: explicit transfer, network/deity lineage, and in-situ origin.
+
+===== [2525] USER =====
+[Image: original 1284x2778, displayed at 924x2000. Multiply coordinates by 1.39 to map to original image.]
+
+===== [2535] ASSISTANT =====
+That's how it reaches you — useful to see. And noted: autochthonous is the important category, not the leftover.
+
+Launching the full re-run with all three categories. Wave 1 — 120 Beppyo articles across 10 Opus agents.
+
+===== [2555] ASSISTANT =====
+Right — the chains terminate in autochthonous nodes; that's the root of the whole lineage graph, which is why every shrine wants a value rather than a blank. Continuing the wave.
+
+===== [2571] ASSISTANT =====
+10 agents now running over the first 120 Beppyo articles, each reading full text and classifying into TRANSFER / NETWORK / AUTOCHTHONOUS / UNKNOWN.
+
+Where this stands:
+
+**Done, full-read by Opus:**
+- **神宮125社 — all 99 articles.** Under the strict rule: one named-shrine transfer (志宝屋神社 ← 鹽竈神社), 外宮 ← 丹波国 (place), 内宮 ← 宮中/笠縫邑 (place). Those will be re-run under the new three-category rule, where most will land as AUTOCHTHONOUS — 倭姫命 establishing them in place with local 国津神 is exactly a root node.
+- **34 Beppyo articles** — the ones my earlier keyword pass never actually read. Result: one new find, **水無瀬神宮 ← 隠岐** (後鳥羽上皇's 神霊 brought from Oki, CERTAIN), and the rest are roots: 護国神社 by 招魂, 須佐神社 where 須佐之男 enshrined his own spirit, 湯殿山 as the mountain itself, 香椎宮 on 仲哀天皇's death-site, 結城神社 on a grave.
+
+**Running:** 120 Beppyo articles.
+**Queued after:** the remaining 225 Beppyo, then all 99 Ise re-run under the three-category rule.
+
+I'll report the wave-1 table when the agents land, then keep the waves going until all 444 are classified.
+
+===== [2578] ASSISTANT =====
+W1-2 landed: **12 of 12 classified** — 5 TRANSFER, 1 NETWORK, 5 AUTOCHTHONOUS, 0 UNKNOWN. My earlier keyword pass had marked several of these UNCLEAR (井草八幡宮, 今宮戎神社, 亀山八幡宮下関). The method change is doing exactly what you said it would.
+
+Building the name→QID map now so agent output can become QuickStatements.
+
+===== [2590] ASSISTANT =====
+W1-4 back: 12/12 classified again — 3 TRANSFER, 9 AUTOCHTHONOUS, zero UNKNOWN. Recording results as they arrive so nothing is lost.
+
+===== [2614] ASSISTANT =====
+**48 of 120 in wave 1 recorded. Zero UNKNOWN so far** — the origin really is in the articles, as you said.
+
+The shape emerging: **69% AUTOCHTHONOUS, 27% TRANSFER, 4% NETWORK.** The autochthonous ones are exactly the root types you'd expect — 神体山 (多度山, 大山, 大神岳), a river deified (大井神社 = 大井川 itself), a kami descending at the site (大國魂, 大洗磯前), a person enshrined at their grave or birthplace (多田, 唐沢山, 報徳二宮, 四條畷), and 招魂 for the 護国神社.
+
+The agents are also flagging judgement calls rather than burying them — 大山祇神社 has a 伊予国風土記 Baekje-origin variant against its 総本社/神体山 tradition; 土佐神社's own 社伝 says 鳴無神社 but the scholarly layer in the same article argues the underlying 土左大神 was the local 都佐国造 deity.
+
+Six agents still running on the rest of wave 1. Once all 345 Beppyo and 99 Ise are through, I'll convert TRANSFER → P612 to the named shrine, AUTOCHTHONOUS → Q135508874, and bring you the NETWORK cases, which are the ones where a head shrine gets inferred rather than stated.
+
+===== [2649] ASSISTANT =====
+**Wave 1 complete: 120 shrines, every one classified, zero UNKNOWN.**
+
+| class | count | share |
+|---|---|---|
+| AUTOCHTHONOUS | 86 | 72% |
+| TRANSFER | 25 | 21% |
+| NETWORK | 9 | 8% |
+
+You were right on both counts. The lineage **is** in the articles — 120 for 120 — and it's essentially never findable by keyword. And the roots dominate: 72% are origin nodes.
+
+The autochthonous types the agents found are exactly the categories you'd want as graph roots: a mountain that *is* the kami (三輪山, 大山, 富士山, 太平山, 多度山), a river deified (大井神社 = 大井川), a deity designating its own site by 託宣 (住吉大社, 大神神社, 伊和神社), an island or rock (厳島, 沖ノ島, 天岩戸), a person enshrined where they died or were born (乃木, 多田, 宇美八幡宮, 伊奈波), and 招魂 for the 護国神社.
+
+Two things worth your eye now rather than later:
+
+- **宇佐神宮 → 大分八幡宮 is confirmed by its own 託宣集** — but the same article carries a competing autochthonous strand (御許山's three megaliths as 比売大神's descent site, the 571 鍛冶翁 oracle at 菱形池) plus rival 元宮 claims from 金富神社 and 薦神社. The head of 44,000 Hachiman shrines is genuinely contested.
+- **The NETWORK class is where a head gets inferred** — 千栗八幡宮 and 吉備津彦神社 name their 本宮 explicitly, but 函館八幡宮 and 住吉神社 (小樽) just say "八幡神"/"住吉神" with no source shrine. Those two groups probably shouldn't be treated the same way.
+
+225 Beppyo articles left, then the 99 Ise re-run. Continuing the waves.
