@@ -4,6 +4,18 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-03 — Wikidata freeze extended a week (→ 2026-08-10)
+
+Emma: "Week long wikidata editing stop." The prior week-long hiatus
+(`FREEZE_WIKIDATA_UNTIL = 2026-08-04`, set 2026-07-28) was due to auto-resume
+tomorrow. Pushed the date to `2026-08-10` in `cleanup-loop.yml`'s window-gate, so
+`wikidata-daily-fire` stays forced false through 2026-08-09 inclusive on every
+trigger (schedule and `workflow_dispatch` alike). Kept the CLAUDE.md freeze line
+and `docs/wikidata-completion-estimate.md` in sync. No edits to the QS queue
+itself — the freeze only gates the submitter.
+
+---
+
 ## 2026-07-28 (later) — the remote routine can push again; court-rank wired in
 
 **Local git was broken, and it was not our doing.** The working copy had `.git` with an

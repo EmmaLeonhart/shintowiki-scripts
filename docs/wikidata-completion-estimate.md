@@ -12,7 +12,7 @@ One editing path only: `direct_daily_edits.py`, fired once per UTC day by
 - **`_DEFAULT_MAX_EDITS = 300`** lines per day, randomly sampled from every atomic file.
 - Per-file daily caps override that for a few sources: `label_proposals_drip.txt` **20/day**,
   `description_adds.txt` 50, `sutra_profile.txt` 1.
-- **Currently 0/day** — `FREEZE_WIKIDATA_UNTIL = 2026-08-04` forces `wikidata-daily-fire=false`.
+- **Currently 0/day** — `FREEZE_WIKIDATA_UNTIL = 2026-08-10` forces `wikidata-daily-fire=false`.
 
 ## The committed queue: 106,166 lines
 
