@@ -1,0 +1,14 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11388642 -->
+<!-- JA: 児ノ口社 | EN_LABEL: Chigonokuchi-sha | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%85%90%E3%83%8E%E5%8F%A3%E7%A4%BE -->
+<!-- ANSWER: -->
+<!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
+  KANA: <hiragana>        the shrine's own reading, hiragana only
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       the lead carries no reading for THIS shrine
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. A KATAKANA answer is recorded and NOT written to Wikidata — P1814 wants modern hiragana, and a katakana reading is the signature of the ancient-reading error a separate cleanup is undoing.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+児ノ口社（ちごのくちしゃ）は、愛知県豊田市にある神社。旧社格は無格社。
+別の表記として「児ノ口神社」「児口神社」とも。
