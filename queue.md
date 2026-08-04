@@ -293,7 +293,21 @@ All four collectors were run 2026-08-04 and every one returned `resolved=0`: **n
 pending work-file has a filled answer marker.** The routine's push was fixed 2026-07-28 and it
 delivered one batch that day (9 label typos, 1 ronsha ranking, 11 descriptions, 12 category
 moves) — and nothing since. Waiting on it is not a plan.
-- `collect_label_typo_answers.py` — 143 pending, 0 answered.
+- ✅ `collect_label_typo_answers.py` — **61 of the 143 answered locally 2026-08-04**; 37 became
+  `Len` lines in `label_typo_fixes.txt` (45 total), 24 were PREFIX_OK / KANA_ISSUE with no edit.
+  **82 left.** Answers + reasoning: `shinto_miraheze/local_answers/label_typo_2026-08-04.tsv`.
+  - **The dominant defect is one machine error, not 143 separate ones.** A romanizer collapsed a
+    doubled vowel into a macron *across a morpheme boundary*: 飯玉 いいたま → "ītama", 飯塚 →
+    "īzuka", 幣石 へいいし → "Heīshi", 二荒 ふたあら → "Futāra", 堀出 ほりいで → "Horīde". 飯 is
+    い plus the next morpheme's い, not a long vowel. **Eleven also came out lowercase-initial**
+    ("ītama Shrine"), which is wrong under any policy. If that romanizer is still in the label
+    pipeline it is still producing these — worth finding before the next label batch.
+  - ❓ **The 82 left are not more of the same.** They split three ways: (1) romanization STYLE
+    (Oomi / Ōmi / Omi, Kounomine / Kōnomine) — a policy question for Emma, not a typo; (2) label
+    and kana disagree about the READING itself (石上 いしがみ vs Isonokami, 四本木 しほんぎ vs
+    Yomotogi, 鵜鳥 うねどり vs Unotori) — either side could be right and only the individual shrine
+    decides; (3) descriptive labels that may be deliberate (合氣神社 "Iwama Dōjō", 海底神社
+    "Underwater Shrine", 合祀：大津神社 "Co-Enshrinement of Hyōzu Shrine") — weird is usually signal.
 - Description-enrichment (222), ronsha-ranking (34), category-translation (354) — same, 0 answered.
   `docs/description_enrichment_pipeline.md`.
 - ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's

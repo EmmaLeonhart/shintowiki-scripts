@@ -16,3 +16,64 @@ Q55540317	LABEL_TYPO	Ōnamuji Shrine
 Q106852475	LABEL_TYPO	Ichōgaoka Hachiman Shrine
 Q109062189	PREFIX_OK	Label includes location disambiguation (Sano + Kanegasaku Matsudo) not present in the short kana reading
 Q11643225	LABEL_TYPO	Kōnoura Shrine
+Q103914709	KANA_ISSUE	P1814 まがただいじんじゃ has lost the こ of 駒形 こまがた; the label Komagata is correct
+Q111076400	PREFIX_OK	那須 prefix; the kana records only 温泉神社 ゆぜんじんじゃ
+Q11404780	LABEL_TYPO	Jūsanki Shrine
+Q11473513	LABEL_TYPO	Okada-gū
+Q11475213	LABEL_TYPO	Iwanesawa Sanzan Shrine
+Q11486674	LABEL_TYPO	Takemikumari Shrine
+Q115034565	PREFIX_OK	西阿須磨 place prefix; kana is the bare 氷川神社 name
+Q115038589	PREFIX_OK	大谷場 place prefix; kana is the bare 氷川神社 name
+Q115040730	PREFIX_OK	大戸 place prefix; kana is the bare 氷川神社 name
+Q115098098	PREFIX_OK	御蔵 place prefix; kana is the bare 神明神社 name
+Q115117373	LABEL_TYPO	Iizuka Hikawa Shrine
+Q115194219	PREFIX_OK	土屋 place prefix; kana is the bare 氷川神社 name
+Q115194250	PREFIX_OK	小村田 place prefix; kana is the bare 氷川神社 name
+Q11539560	LABEL_TYPO	Morishima Itsukushima Sengen Shrine
+Q11549616	PREFIX_OK	豊玉 place prefix; kana is the bare 氷川神社 name
+Q11557476	PREFIX_OK	一宮 prefix; kana is the bare 浅間神社 name
+Q11584639	KANA_ISSUE	P1814 ちりふ is the historical reading of 知立; the modern reading and the label are Chiryū
+Q11597092	LABEL_TYPO	Hozumi Aso Shrine
+Q116157250	PREFIX_OK	中洲 prefix is in the ja label; the kana records only 國廣
+Q11668667	KANA_ISSUE	P1814 たかゆきおんざき does not read 高之御前; the label Taka-no-Gozen is the sound of the name
+Q116829251	PREFIX_OK	都路 place prefix; kana is the bare 神明社 name
+Q118959173	LABEL_TYPO	Nishi-Komatsugawa Suwa Shrine
+Q121626916	PREFIX_OK	大野原 prefix is in the ja label; the kana records only 八幡神社
+Q122314387	LABEL_TYPO	Kitaichi Ebisu Shrine
+Q124804728	LABEL_TYPO	Tomorogi Shrine
+Q130581082	PREFIX_OK	戸ケ崎 prefix is in the ja label; the kana records only 香取
+Q131129374	PREFIX_OK	label carries the (Ōzakura, Sakura) disambiguator
+Q134149661	LABEL_TYPO	Nishi-Asakusa Hachiman Shrine
+Q134886342	LABEL_TYPO	Mishima Atago Shrine
+Q134887266	LABEL_TYPO	Iizuka Shrine
+Q134887393	LABEL_TYPO	Iitama Shrine
+Q134957836	LABEL_TYPO	Iimori Sengen Shrine
+Q135040450	LABEL_TYPO	Mishima Isobe Shrine
+Q135040487	LABEL_TYPO	Oshiki Shrine
+Q135260026	LABEL_TYPO	Futaara Shrine
+Q135260131	LABEL_TYPO	Heiishi Shrine
+Q135260631	LABEL_TYPO	Iiari Shrine
+Q135424956	LABEL_TYPO	Iitama Shrine
+Q135425181	LABEL_TYPO	Iidama Shrine
+Q135425225	LABEL_TYPO	Iidama Shrine
+Q135425226	LABEL_TYPO	Iitama Shrine
+Q135425329	LABEL_TYPO	Iidama Shrine
+Q135425370	LABEL_TYPO	Iitama Shrine
+Q135425461	LABEL_TYPO	Iidama Shrine
+Q135425879	LABEL_TYPO	Iidama Shrine
+Q135425941	LABEL_TYPO	Iidama Shrine
+Q135433892	LABEL_TYPO	Iidome Shrine
+Q135434253	LABEL_TYPO	Mori Inazuma Shrine
+Q135461607	LABEL_TYPO	Yasuzuka Shrine
+Q135462723	KANA_ISSUE	P1814 しんんめいぐう has a doubled ん; should be しんめいぐう. Label Shinmei-gū is correct
+Q17210061	PREFIX_OK	江古田 prefix; kana is the bare 浅間神社 name
+Q22117916	LABEL_TYPO	Inakuma Shrine
+Q24862031	LABEL_TYPO	Yagoshi-hachimangū
+Q24864032	LABEL_TYPO	Horiide Shrine
+Q3200625	PREFIX_OK	久留米 place prefix; kana is the bare 水天宮 name
+Q54153286	LABEL_TYPO	Maeno Tenmansha
+Q56195170	PREFIX_OK	秋山 place prefix; kana is the bare 春日神社 name
+Q65292740	LABEL_TYPO	Suwaazuki Shrine
+Q97175484	PREFIX_OK	江東 place prefix; kana is the bare 天祖神社 name
+Q97218279	PREFIX_OK	塚崎 place prefix; kana is the bare 神明社 name
+Q97310706	PREFIX_OK	江古田 place prefix; kana is the bare 氷川神社 name
