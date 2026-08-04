@@ -13,3 +13,6 @@ Q135424927	LABEL_TYPO	Iidama Shrine
 Q65248672	KANA_ISSUE	romanization missing second 'o' in おか (should be "oka" not "ka")
 Q71917331	PREFIX_OK	Label carries place prefix Rokkenchō (六軒町) not reflected in generic kana すわじんじゃ (Suwajinja); kana gives only the shrine name proper, while the English label disambiguates by prepending the neighborhood name
 Q55540317	LABEL_TYPO	Ōnamuji Shrine
+Q106852475	LABEL_TYPO	Ichōgaoka Hachiman Shrine
+Q109062189	PREFIX_OK	Label includes location disambiguation (Sano + Kanegasaku Matsudo) not present in the short kana reading
+Q11643225	LABEL_TYPO	Kōnoura Shrine
