@@ -22,6 +22,20 @@ distinctive label suffix are included; two-/three-headed networks are handled wi
 the conventional 総本社. Run LOCALLY; writes bunrei.txt into this directory (an
 atomic file the daily direct_daily_edits pipeline drains). QS skips existing.
 
+TIME-BOXED — STOPS 2027-02-01 (Emma 2026-08-03, queue A0b). This generator is
+"inaccurate but descriptive": the suffix -> network-head guess is only
+approximately right, and that is the point — being approximately-right and
+VISIBLE on Wikidata seeds the convention and invites better-equipped human
+editors to correct it. It is not meant to be perpetual maintenance. The accurate
+layer is the per-shrine Opus pass (`shinto_miraheze/build_beppyo_p612_queue.py`),
+which reads each article and names the actual 勧請元.
+
+The stop is a DATE GATE, not a future commit-then-revert (CLAUDE.md: express the
+exception as a rule). After SUNSET the script exits before querying and before
+opening the output file — deliberately, because main() opens it with "w", so a
+post-sunset run that produced no lines would TRUNCATE bunrei.txt and destroy
+whatever the daily drip has not yet delivered.
+
 Usage: python generate_bunrei_quickstatements.py [--stats]
 """
 
@@ -33,11 +47,20 @@ if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
+import datetime
 import io
 import json
 import os
 import sys
 import urllib.parse
+
+# Emma 2026-08-03: "keep the suffix-based generator but time-box it to ~6 months,
+# then STOP." Six months from that instruction.
+SUNSET = datetime.date(2027, 2, 1)
+
+
+def sunset_reached(today=None):
+    return (today or datetime.date.today()) >= SUNSET
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -169,6 +192,15 @@ def main():
                     help="Which online source to derive from.")
     ap.add_argument("--stats", action="store_true", help="Print counts, write nothing.")
     args = ap.parse_args()
+
+    # Before the SPARQL and before the output file is opened: main() writes with
+    # "w", so returning later would truncate bunrei.txt and lose staged lines the
+    # drip has not delivered yet.
+    if sunset_reached():
+        print(f"time-boxed: this suffix-based generator stopped on {SUNSET} "
+              f"(queue A0b). The per-shrine Opus pass is the accurate layer. "
+              f"Existing output left untouched; nothing regenerated.")
+        return
 
     cfg = SOURCES[args.source]
     networks, url, OUTPUT = cfg["networks"], cfg["url"], os.path.join(HERE, cfg["out"])

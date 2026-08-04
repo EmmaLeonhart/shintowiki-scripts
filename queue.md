@@ -105,31 +105,30 @@ Model it on the `remote_queue.py` answer-marker + collector pattern (builder wri
 `<!-- ANSWER: -->` marker; the remote routine fills it; a `collect_*` script turns answers into QS) — same
 shape as `collect_label_typo_answers.py` / `collect_category_translations.py`.
 
-## A0b. 🖥️ DESKTOP (later today 2026-08-03) — Beppyo Shrine Opus Pass: mother house (P612)
+## A0b. ✅ Beppyo mother house (P612) — ALL 344 READ 2026-08-03; suffix generator time-boxed
 
-**What it is.** Mother house (P612) is actually **very common in jawiki *prose*** — of the articles Emma
-has read, at least ~a third mention it, often most — but it's essentially NEVER in *structured* data (no
-infobox field), so it's not cleanly regex-extractable. That mismatch (ubiquitous in prose, absent from
-structured data) is the "weirdness," and it's exactly why this is an LLM job. **Emma is very confident an
-LLM can extract it — but it's an *Opus* job specifically** (not a lesser model), and expect the results
-to need some correction. Concrete plan: download every **Beppyo shrine** (別表神社) Japanese and/or English
-article and run a **local Opus pass** to extract the mother house / 総本社 / 勧請 origin. **Large shrines
-first, then move down** (may extend downward later). This produces the more-specifically-sourced, in-depth
-*individual* P612 lines — the accurate, indefinite layer beneath the coarse suffix-network heads.
+**Done.** Every shrine in `Category:別表神社` was read, not a sample: **215 P612 statements**
+(37 named mother houses, 178 autochthonous `Q135508874`) and **129 UNCLEAR that produce nothing**.
+Staged in `modern-quickstatements/beppyo_p612.txt`, registered in `ATOMIC_FILES`; the daily submitter
+delivers once the freeze lifts (2026-08-10).
 
-- **Output:** P612 QS lines, one statement per branch, `P1013 = Q195793` in the same statement + a
-  jawiki/enwiki citation. Follow the P612 invariant in `docs/wikidata_shrine_festival_model.md` (ONE P612,
-  criterion-used qualifier, never a bare P612). Drains via the daily submitter (freeze-gated on submission
-  only).
-- **Beppyo set:** SPARQL the 別表神社 membership — **confirm the exact Wikidata QID / route before
-  running; do not guess it.**
-- **Keep the suffix-based (name-based) generator (`generate_bunrei_quickstatements.py`) but time-box it to
-  ~6 months, then STOP** (Emma). Rationale: it's **inaccurate but descriptive** — the suffix→network-head
-  guess is only approximately right, but it's *close enough* that when it sits on an item a while, human
-  editors are likely to notice and fix it. That's the point: it seeds/establishes the convention on
-  Wikidata, and being approximately-right-and-visible is what invites better-equipped editors to correct
-  it. Not perpetual maintenance; the individual Opus-extracted lines (above) are the accurate layer.
-- **A more organized extraction technique is a job for Topaz (Emma's other tool), NOT this repo.**
+- **Membership comes from the jawiki CATEGORY, never Wikidata** (Emma 2026-08-03). One paginated
+  `list=categorymembers` call; each QID from `pageprops.wikibase_item` in the same request. The
+  builder issues zero SPARQL — see the "DO NOT HAMMER WIKIDATA" rule in `CLAUDE.md`.
+- Two findings worth Emma's eye: 石清水八幡宮 → **宇佐神宮** (its own lead says so), and 宇佐神宮 →
+  **大分八幡宮**, which its own 託宣集 calls 我本宮 — the head of ~44,000 Hachiman shrines naming a
+  parent.
+- The 178 autochthonous calls are the ones most likely to need correction; 護国神社 rest on
+  三重県護国神社's own "靖国神社とは本社分社の関係にはない".
+- ✅ **Suffix generator time-boxed** — `generate_bunrei_quickstatements.py` now stops on
+  **2027-02-01** via a date gate (a rule, not a future commit-then-revert). It exits *before* the
+  SPARQL and *before* opening the output, because `main()` writes with `"w"` and a post-sunset run
+  would otherwise truncate `bunrei.txt` and destroy statements the drip had not yet delivered.
+  4 tests, including one that the gate is not wired backwards.
+- ▶ **Remaining:** re-read the 129 UNCLEAR against enwiki or a second source; and Emma's review of
+  the autochthonous calls. **Not** a job for more jawiki re-reads — the articles genuinely do not
+  settle those.
+- **A more organized extraction technique is a job for Topaz, NOT this repo.**
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 

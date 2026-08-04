@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-03 (night) — all 344 Beppyo shrines read; we were the Wikidata load
+
+**Two corrections from Emma, both of which I had got wrong in the same direction: treating Wikidata
+as a database to query.**
+
+First, the rate limiting. `match_jinjacho_shrines.py` imports `generate_genbu_ids._sparql` and fires
+**~365 queries per run** — 65 label batches plus 300 P131 *transitive-closure* batches over 60 items
+each — at 0.5s spacing. It ran three times in one evening. The repeated 503/504 that I recorded as
+"the old endpoint being flaky" were substantially our own traffic. Throttle is now 2.5s, the figure
+this repo already applies to Miraheze, and the retry backoff went 5/10/15s → 15/45/135s, since a
+linear retry into a struggling service adds load at the worst moment.
+
+Second, the source. The Beppyo worklist was built with `?i wdt:P13723 wd:Q10898274`. Emma: *"Are you
+seriously trying to get the Beppyo shrines from Wikidata? Don't! Get them from the Japanese
+Wikipedia category."* `Category:別表神社` gives 346 ns-0 articles in one paginated call, and each
+QID comes back from the same request via `pageprops.wikibase_item` — so the builder now issues zero
+SPARQL, and the mother-house QIDs were resolved the same way. Both lessons are now a standing
+CLAUDE.md section: **Wikidata is a destination, not a lookup source.**
+
+**The pass itself: all 344 articles read, not a sample.** 215 statements, 129 UNCLEAR that produce
+nothing. 37 named mother houses; 178 autochthonous. Two results stand out — 石清水八幡宮's own lead
+says it was 勧請'd from 宇佐神宮, and 宇佐神宮's own 託宣集 names 大分八幡宮 as 我本宮, so the head
+of ~44,000 Hachiman shrines has a parent. The case I deliberately refused: three shrines claim
+行教's Usa→Iwashimizu journey as their origin, and a 勧請 *in transit* is not a branch of either end.
+
+**The suffix generator is time-boxed to 2027-02-01.** The gate exits before the SPARQL and before
+the output is opened — `main()` writes with `"w"`, so a post-sunset run that produced no lines would
+truncate `bunrei.txt` and destroy whatever the drip had not yet delivered. That is the kind of
+"stop" that quietly loses data, so it has a test, as does the gate being wired backwards.
+
+---
+
 ## 2026-08-03 (late, correction) — the parser bug was real; it was not Mie's problem
 
 The rematch settles it, and the entry below is wrong where it says the Mie yield "was" the parser.
