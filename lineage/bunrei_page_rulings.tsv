@@ -21,4 +21,4 @@
 風日祈宮	Q11665488	Q24238356	I think this is explicitly unknown
 小俣神社	Q17225978	Q11633343	We figured this out from deity page
 瀧原宮	Q11566292	PENDING	make wikidata for 磯宮 — the item does not exist yet; it is in ise_jingu_creates.txt, and lineage/stage_takihara_p612.py emits this line once the batch has run
-忌部神社	Q11490722	PENDING	comes from the main inbe lineage. Not gosho shrine — the refusal of 五所神社 is applied (nothing is emitted); which shrine heads the Inbe lineage is Emma's call
+忌部神社	Q11490722	Q705547	comes from the main inbe lineage. Not gosho shrine — Emma named the head 2026-08-04: Q705547 安房神社

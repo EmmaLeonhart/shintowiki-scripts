@@ -33,7 +33,7 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A00. ✅ The 11 lineage cases — READ AND APPLIED 2026-08-04, 1 left
+## A00. ✅ The 11 lineage cases — ALL ANSWERED AND APPLIED 2026-08-04
 
 Emma saved the shintowiki 分霊 page to the repo (`lineage/bunrei_page_saved_2026-08-04.html`,
 text via `lineage/read_bunrei_page.py`) so the blackout did not have to be waited out. **No
@@ -52,20 +52,24 @@ more evidence, so where the page says autochthonous and the article named a sour
   (22 blocks). It cannot be one QuickStatement — `LAST` only names the item just created and
   瀧原宮 is an existing item — so `lineage/stage_takihara_p612.py` emits the 瀧原宮 line after the
   batch runs. Run it right after `create_items.py`; it no-ops until then and is idempotent.
-- ❓ **忌部神社 is the only one left.** The page says *"comes from the main inbe lineage. Not gosho
-  shrine"*. The refusal is applied — 五所神社 is no longer emitted, and the row now stages nothing
-  rather than something wrong. **Which shrine heads the Inbe lineage is Emma's call** and the
-  AskUserQuestion is fired.
+- ✅ **忌部神社 → Q705547 安房神社.** The page said *"comes from the main inbe lineage. Not gosho
+  shrine"*, which refuses 五所神社 without naming a replacement; Emma named the head 2026-08-04.
+  Note the direction: 安房神社 (Tateyama, Chiba) is the head even though the 阿波忌部 migrated
+  *from* Awa/Tokushima, where this 忌部神社 stands. Do not "correct" it to the older province.
 
 **The sheet, since it caused confusion (Emma 2026-08-04).** The Google Sheet has TWO tabs and
 they are not the same thing. `to_fix` = exactly the rows that produced no statement. `all_444` =
 every shrine read, 444 rows — the audit trail, not a worklist. The "11" was 5 PICK TARGET + 6
 no-origin; the 6 left `to_fix` when they were staged as `P612 = Q24238356`, which is why it read
-26 and not 32. Regenerate both with `python lineage/build_sheets.py` — **do that now**, since the
-page rulings have moved 3 more rows out of `to_fix`.
+26 and not 32. Regenerated after the rulings: **`to_fix` is now 22 rows and every one of them is a
+CREATE ITEM** — no judgement calls remain in it. `python lineage/build_sheets.py` rebuilds both.
 
-Everything else is done: 422 statements staged in `modern-quickstatements/beppyo_p612.txt`.
+**423 statements** staged in `modern-quickstatements/beppyo_p612.txt`.
 Method: `docs/lineage_full_read_method.md`.
+
+▶ **The whole of A00 now reduces to two runs, in this order, after the freeze lifts 2026-08-10:**
+1. `python modern-quickstatements/create_items.py --batch ise_jingu_creates.txt --apply`
+2. `python lineage/stage_takihara_p612.py --apply`
 
 ### ✅ The 21 Ise items — BUILT 2026-08-04, waiting only on the freeze
 
