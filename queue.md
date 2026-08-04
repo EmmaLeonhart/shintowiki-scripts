@@ -190,6 +190,13 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     (`funai_jinja/dai1shibu/nose-cho/01020kusasajinja.html`), no robots.txt and no sitemap, so
     it needs its section index pages walked rather than a sitemap read. Not started.
   - Add-only; the daily editor skips statements that already exist, so re-runs are no-ops.
+  - ▶ **SPARQL endpoint migration — 24 scripts still on `query.wikidata.org`.** The repo is
+    mid-migration to `query-main.wikidata.org` (32 scripts already there). The old endpoint
+    threw repeated 503/504 during the 2026-08-03 rematch's 17,549-candidate P131 pass;
+    `generate_genbu_ids.py` was moved and verified live, which also fixed
+    `match_jinjacho_shrines.py` (it imports that module's `_sparql`). The remaining 24 are a
+    mechanical one-line change each, but each needs a live run to confirm — do them in
+    batches, not as one blind sweep. `grep -rln "https://query\.wikidata\.org/sparql"`.
 
 ## A4. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
 

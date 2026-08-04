@@ -29,7 +29,12 @@ import requests
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
 OUT = os.path.join(HERE, "genbu_ids.txt")
-SPARQL = "https://query.wikidata.org/sparql"
+# query-main, not query.wikidata.org. The 2026-08-03 jinjacho rematch — which
+# imports this module's _sparql — hit repeated 503/504 from the old endpoint on
+# its 17,549-candidate P131 batch and only finished on retries. query-main is the
+# main-graph split endpoint the newer scripts here already use. 24 other scripts
+# in this repo are still on the old one; see queue.md A3.
+SPARQL = "https://query-main.wikidata.org/sparql"
 GENBU = "https://www.genbu.net"
 SHRINE_CLASS = "Q845945"                 # Shinto shrine
 REGIONS = ["tohoku", "kanto", "kousinetu", "hokuriku", "tokai", "kansai",
