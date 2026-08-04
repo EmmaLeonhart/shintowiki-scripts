@@ -125,9 +125,17 @@ delivers once the freeze lifts (2026-08-10).
   SPARQL and *before* opening the output, because `main()` writes with `"w"` and a post-sunset run
   would otherwise truncate `bunrei.txt` and destroy statements the drip had not yet delivered.
   4 tests, including one that the gate is not wired backwards.
-- ▶ **Remaining:** re-read the 129 UNCLEAR against enwiki or a second source; and Emma's review of
-  the autochthonous calls. **Not** a job for more jawiki re-reads — the articles genuinely do not
-  settle those.
+- ✅ **enwiki re-read DONE 2026-08-04 — and it is close to exhausted.** Of the 129 UNCLEAR, only
+  **81 have an enwiki article at all**, median 2,115 chars with 30 of them stubs. Scanning those 81
+  for mother-house language found 12 candidates, and reading all 12 yielded **3 statements**:
+  Q11381863 → 住吉大社 ("It is a branch shrine of Sumiyoshi-taisha"), Q500763 → 吉備津神社 (enwiki
+  calls it "the parent shrine", matching 安仁神社's jawiki account), and Q335618 Kumano Hayatama →
+  autochthonous (it is one of the three Kumano Sanzan heads). The other 9 were regex false
+  positives — clan cadet branches, lists of a shrine's OWN outward branches — or claims that merely
+  add a third competing tradition (Yasaka's Nunakuma origin) without settling anything.
+  **~2% yield. Do not spend another pass on enwiki for this set.** 126 remain UNCLEAR and they are
+  genuinely unsettled in both languages, not under-researched.
+- ▶ **Remaining:** Emma's review of the 178 autochthonous calls.
 - **A more organized extraction technique is a job for Topaz, NOT this repo.**
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands

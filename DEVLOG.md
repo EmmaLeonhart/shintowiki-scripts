@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 — the enwiki re-read, and what a 2% yield means
+
+The 129 UNCLEAR Beppyo cases had been sitting behind a hesitation of mine rather than a real
+blocker, which is not a reason to defer anything. So: re-read against enwiki.
+
+The shape of the answer was set before any judgement was needed. Only **81 of the 129 have an
+enwiki article at all**, median 2,115 characters, 30 of them stubs. A keyword scan of those 81 for
+mother-house language flagged 12, and reading all 12 produced **three** statements:
+
+* Q11381863 Sumiyoshi Shrine (Iki) → 住吉大社 — "It is a branch shrine of Sumiyoshi-taisha."
+* Q500763 Kibitsuhiko → 吉備津神社 — enwiki calls it "the parent shrine", which independently matches
+  安仁神社's jawiki account of a 分祀 from 吉備津神社. Two sources agreeing is what made this one safe.
+* Q335618 Kumano Hayatama Taisha → autochthonous — it is one of the three Kumano Sanzan *heads*.
+
+The other nine are worth recording because they show what the scan actually catches: cadet branches
+of a *clan* (Kitabatake, Minamoto), a shrine's own list of outward branch shrines (Hotaka), and
+claims that add a third competing tradition without settling it — enwiki says Yasaka's Gozu Tennō
+came from Nunakuma Shrine via kanjō, which is a fine scholarly claim and simply a third option
+alongside the two 社伝 jawiki already gave.
+
+**Roughly a 2% yield, and that is the finding.** The remaining 126 are not under-researched; they
+are unsettled in both languages. The queue now says not to spend another pass on enwiki for this
+set, which is more useful than leaving an open-ended "re-read against a second source" that would
+invite someone to repeat this at full cost.
+
+---
+
 ## 2026-08-04 — ten queued edits to items we were told not to touch
 
 With §A's remaining items all decision- or date-blocked, the tick went to validating the staged

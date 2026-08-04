@@ -1,0 +1,433 @@
+{
+ "Q692714": {
+  "title": "Yasaka Shrine",
+  "chars": 3418,
+  "hits": [
+   "kanjo"
+  ]
+ },
+ "Q700448": {
+  "title": "Kamigamo Shrine",
+  "chars": 3083,
+  "hits": []
+ },
+ "Q701620": {
+  "title": "Shimogamo Shrine",
+  "chars": 6296,
+  "hits": []
+ },
+ "Q703633": {
+  "title": "Hikawa Shrine (Saitama)",
+  "chars": 5071,
+  "hits": []
+ },
+ "Q705949": {
+  "title": "Sumiyoshi-taisha",
+  "chars": 5319,
+  "hits": []
+ },
+ "Q10855289": {
+  "title": "Koma Shrine",
+  "chars": 4138,
+  "hits": []
+ },
+ "Q10863796": {
+  "title": "Nukisaki Shrine",
+  "chars": 3810,
+  "hits": []
+ },
+ "Q10877366": {
+  "title": "Niukawakami Upper Shrine",
+  "chars": 1209,
+  "hits": []
+ },
+ "Q10877367": {
+  "title": "Niukawakami Lower Shrine",
+  "chars": 1209,
+  "hits": []
+ },
+ "Q10946254": {
+  "title": "Utsunomiya Futarayama Shrine",
+  "chars": 3882,
+  "hits": [
+   "branch of",
+   "bunrei"
+  ]
+ },
+ "Q11259219": {
+  "title": "Enoshima Shrine",
+  "chars": 513,
+  "hits": []
+ },
+ "Q11358960": {
+  "title": "Kamikawa Shrine",
+  "chars": 532,
+  "hits": []
+ },
+ "Q11364246": {
+  "title": "Nakayama Shrine",
+  "chars": 1935,
+  "hits": []
+ },
+ "Q11370831": {
+  "title": "Kameyama Hachimangū",
+  "chars": 492,
+  "hits": []
+ },
+ "Q11376859": {
+  "title": "Imamiya Ebisu Shrine",
+  "chars": 510,
+  "hits": []
+ },
+ "Q11379271": {
+  "title": "Itakiso shrine",
+  "chars": 2519,
+  "hits": []
+ },
+ "Q11381863": {
+  "title": "Sumiyoshi Shrine (Iki)",
+  "chars": 757,
+  "hits": [
+   "branch shrine"
+  ]
+ },
+ "Q11381867": {
+  "title": "Sumiyoshi Shrine (Hokkaidō)",
+  "chars": 479,
+  "hits": []
+ },
+ "Q11395802": {
+  "title": "Dewa Shrine",
+  "chars": 890,
+  "hits": []
+ },
+ "Q11395952": {
+  "title": "Hakodate Hachimangū",
+  "chars": 703,
+  "hits": []
+ },
+ "Q11403863": {
+  "title": "Kitabatake Shrine",
+  "chars": 3991,
+  "hits": [
+   "branch of"
+  ]
+ },
+ "Q11405620": {
+  "title": "Chiriku Hachimangu",
+  "chars": 3114,
+  "hits": []
+ },
+ "Q11450252": {
+  "title": "Ani Shrine",
+  "chars": 1224,
+  "hits": []
+ },
+ "Q11456842": {
+  "title": "Toyama Gokoku Shrine",
+  "chars": 3140,
+  "hits": []
+ },
+ "Q11458557": {
+  "title": "Imizu Shrine",
+  "chars": 3113,
+  "hits": []
+ },
+ "Q11488762": {
+  "title": "Mikami Shrine",
+  "chars": 2676,
+  "hits": []
+ },
+ "Q11490717": {
+  "title": "Iminomiya Shrine",
+  "chars": 1146,
+  "hits": []
+ },
+ "Q11490722": {
+  "title": "Inbe Shrine",
+  "chars": 3410,
+  "hits": []
+ },
+ "Q11503757": {
+  "title": "Nitta Shrine (Satsumasendai City)",
+  "chars": 1359,
+  "hits": []
+ },
+ "Q11543697": {
+  "title": "Tarumaezan Shrine",
+  "chars": 386,
+  "hits": []
+ },
+ "Q11549109": {
+  "title": "Mizuwakasu Shrine",
+  "chars": 1644,
+  "hits": []
+ },
+ "Q11549607": {
+  "title": "Hikawa Shrine (Kawagoe)",
+  "chars": 2532,
+  "hits": []
+ },
+ "Q11559098": {
+  "title": "Watatsumi Shrine (Kobe)",
+  "chars": 1701,
+  "hits": []
+ },
+ "Q11559099": {
+  "title": "Kaijin Shrine",
+  "chars": 6867,
+  "hits": []
+ },
+ "Q11563607": {
+  "title": "Yudonosan Shrine",
+  "chars": 1051,
+  "hits": []
+ },
+ "Q11574513": {
+  "title": "Ikushimatarushima Shrine",
+  "chars": 758,
+  "hits": []
+ },
+ "Q11576656": {
+  "title": "Tashima Shrine",
+  "chars": 2429,
+  "hits": []
+ },
+ "Q11592011": {
+  "title": "Fukuyama Hachimangū",
+  "chars": 359,
+  "hits": []
+ },
+ "Q11597109": {
+  "title": "Hotaka Shrine",
+  "chars": 6066,
+  "hits": [
+   "branch shrine"
+  ]
+ },
+ "Q11602876": {
+  "title": "Tsukubasan Shrine",
+  "chars": 1622,
+  "hits": []
+ },
+ "Q11606619": {
+  "title": "Yūki Shrine",
+  "chars": 2234,
+  "hits": []
+ },
+ "Q11616255": {
+  "title": "Wakamiya Hachiman Shrine",
+  "chars": 843,
+  "hits": []
+ },
+ "Q11639721": {
+  "title": "Hayatani Shrine",
+  "chars": 1222,
+  "hits": []
+ },
+ "Q11647032": {
+  "title": "Kinbō Shrine",
+  "chars": 1652,
+  "hits": []
+ },
+ "Q11647043": {
+  "title": "Kanegasaki-gū",
+  "chars": 1197,
+  "hits": []
+ },
+ "Q11659204": {
+  "title": "Oyama Shrine (Tateyama)",
+  "chars": 10718,
+  "hits": []
+ },
+ "Q11660718": {
+  "title": "Ryōzen Shrine",
+  "chars": 676,
+  "hits": []
+ },
+ "Q11664502": {
+  "title": "Susa Shrine",
+  "chars": 1749,
+  "hits": []
+ },
+ "Q11668370": {
+  "title": "Komagata Shrine",
+  "chars": 2607,
+  "hits": []
+ },
+ "Q11671792": {
+  "title": "Kōzu-gū",
+  "chars": 1615,
+  "hits": []
+ },
+ "Q172382": {
+  "title": "Watatsu Shrine",
+  "chars": 2115,
+  "hits": [
+   "branch shrine"
+  ]
+ },
+ "Q288312": {
+  "title": "Kumano Shrine (Yamagata)",
+  "chars": 1547,
+  "hits": [
+   "branch of"
+  ]
+ },
+ "Q3156511": {
+  "title": "Izushi Shrine",
+  "chars": 3589,
+  "hits": []
+ },
+ "Q3313076": {
+  "title": "Miho Shrine",
+  "chars": 494,
+  "hits": []
+ },
+ "Q335618": {
+  "title": "Kumano Hayatama Taisha",
+  "chars": 1054,
+  "hits": [
+   "head shrine",
+   "sōhonsha"
+  ]
+ },
+ "Q3473746": {
+  "title": "Saruka Shrine",
+  "chars": 626,
+  "hits": []
+ },
+ "Q3791906": {
+  "title": "Takase Shrine",
+  "chars": 2842,
+  "hits": []
+ },
+ "Q403338": {
+  "title": "Takebe taisha",
+  "chars": 3084,
+  "hits": [
+   "bunrei"
+  ]
+ },
+ "Q4696584": {
+  "title": "Aichi Gokoku Shrine",
+  "chars": 269,
+  "hits": []
+ },
+ "Q48744": {
+  "title": "Samukawa Shrine",
+  "chars": 5028,
+  "hits": []
+ },
+ "Q500763": {
+  "title": "Kibitsuhiko Shrine",
+  "chars": 4541,
+  "hits": [
+   "branch shrine"
+  ]
+ },
+ "Q564302": {
+  "title": "Tamasaki Shrine",
+  "chars": 3172,
+  "hits": []
+ },
+ "Q631373": {
+  "title": "Kashii-gū",
+  "chars": 182,
+  "hits": []
+ },
+ "Q650772": {
+  "title": "Mishima Taisha",
+  "chars": 5751,
+  "hits": []
+ },
+ "Q656451": {
+  "title": "Hiyoshi Taisha",
+  "chars": 5070,
+  "hits": [
+   "head shrine"
+  ]
+ },
+ "Q701414": {
+  "title": "Inaba Shrine",
+  "chars": 1361,
+  "hits": []
+ },
+ "Q704636": {
+  "title": "Naminoue Shrine",
+  "chars": 3948,
+  "hits": []
+ },
+ "Q704695": {
+  "title": "Kagoshima Shrine",
+  "chars": 5147,
+  "hits": []
+ },
+ "Q704865": {
+  "title": "Minashi Shrine",
+  "chars": 2875,
+  "hits": []
+ },
+ "Q704876": {
+  "title": "Kasama Inari Shrine",
+  "chars": 1214,
+  "hits": []
+ },
+ "Q705121": {
+  "title": "Minase Shrine",
+  "chars": 2501,
+  "hits": []
+ },
+ "Q705310": {
+  "title": "Hakone Shrine",
+  "chars": 2089,
+  "hits": []
+ },
+ "Q710086": {
+  "title": "Ikuta Shrine",
+  "chars": 1599,
+  "hits": []
+ },
+ "Q710826": {
+  "title": "Hokkaidō Shrine",
+  "chars": 2337,
+  "hits": []
+ },
+ "Q712617": {
+  "title": "Akama Shrine",
+  "chars": 3029,
+  "hits": []
+ },
+ "Q714559": {
+  "title": "Kasuga-taisha",
+  "chars": 8040,
+  "hits": []
+ },
+ "Q714742": {
+  "title": "Hakozaki Shrine",
+  "chars": 3045,
+  "hits": []
+ },
+ "Q723417": {
+  "title": "Ōasahiko Shrine",
+  "chars": 4391,
+  "hits": []
+ },
+ "Q84008": {
+  "title": "Hiroshima Gokoku Shrine",
+  "chars": 1003,
+  "hits": []
+ },
+ "Q84028": {
+  "title": "Suwa Shrine (Nagasaki)",
+  "chars": 7634,
+  "hits": [
+   "head shrine"
+  ]
+ },
+ "Q924940": {
+  "title": "Umi Hachiman-gū",
+  "chars": 905,
+  "hits": []
+ }
+}
