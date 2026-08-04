@@ -55,6 +55,10 @@ Everything else is done: 419 statements staged in `modern-quickstatements/beppyo
 21 shrines with no Wikidata item are Emma's by hand (Google Doc "21 Ise shrines that need a
 Wikidata item"). Method: `docs/lineage_full_read_method.md`.
 
+### idk this scheme
+
+I need you to explain a lot more about what's actually going on with the Issei ones, but my impression is that you should just make items for all of the Issei ones. I presume you did wiki data searches, and wiki data searches for them have found that, in my experience, they don't exist. Just make them. All we need to do is make them with the English name, English language name, the P31 Shinto Shrine Japanese language name, and a connection, and then it'll gradually go through our pipeline as well. 
+
 ## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
 
 **Status.** Builder `shinto_miraheze/build_name_in_kana_queue.py` + collector
