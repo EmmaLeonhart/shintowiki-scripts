@@ -62,6 +62,7 @@ WD_API = "https://www.wikidata.org/w/api.php"
 # batch file -> gate module name. A batch with no gate never runs.
 GATES = {
     "vsa_libraries.txt": "vsa_libraries_gate",
+    "ise_jingu_creates.txt": "ise_jingu_gate",
 }
 
 

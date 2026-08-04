@@ -41,4 +41,6 @@ jobs:
         run: pip install pytest requests mwclient opencc-python-reimplemented hanja pykakasi wunsen aksharamukha
 
       - name: Run tests
-        run: python -m pytest shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ recreate-deleted-wikidata/tests/ fandom/tests/ jinjacho/tests/ -q
+        # The root tests/ dir was missing from this list, so its 9 tests
+        # (test_remote_queue_missing_lead.py) had never run in CI.
+        run: python -m pytest tests/ shinto_miraheze/tests/ modern-quickstatements/tests/ shinto-label-generator/tests/ recreate-deleted-wikidata/tests/ fandom/tests/ jinjacho/tests/ -q
