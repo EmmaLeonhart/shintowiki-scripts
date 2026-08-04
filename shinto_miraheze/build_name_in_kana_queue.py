@@ -129,7 +129,29 @@ def targets():
 
 
 def engishiki_cleanup_qids():
-    """QIDs the kana-qualifier cleanup also touches — HELD, not queued here.
+    """QIDs the kana-qualifier cleanup also touches. Reported, and held ONLY
+    under --hold-engishiki.
+
+    RESOLVED 2026-08-03 (Emma: "probably gating the writer per item?"). The
+    collision this guarded against cannot occur, verified in the cleanup's own
+    code rather than assumed:
+
+      * generate_kana_qualifier_add.py guards BOTH its branches with
+        `is_katakana(...)` and skips anything else, so a modern hiragana
+        top-level P1814 can never be seeded into a カミノヤシロ qualifier.
+      * generate_kana_qualifier_remove.py emits VALUE-MATCHED removals
+        (`-Q135070210|P1814|"アスキ-"`), so it deletes that katakana string, not
+        "the item's P1814". A hiragana value is not a target.
+      * this builder's own target query requires NOT EXISTS P1814, so an item is
+        queued only once it has no top-level reading at all — which for an
+        Engishiki item means the cleanup's removal has already landed, and that
+        removal is itself held until every ojp-hani name on the item carries its
+        qualifier.
+
+    The three together ARE the per-item gate: the two pipelines write disjoint
+    values and neither can consume the other's. So the set is no longer withheld
+    wholesale — that would have left 601 shrines permanently without a modern
+    reading, which is the gap A0 exists to close.
 
     The cleanup (generate_kana_qualifier_add.py / _remove.py) works on items
     carrying an ojp-hani P1448 official name: it moves the ancient katakana
@@ -194,18 +216,23 @@ def main():
     ap.add_argument("--bucket", choices=["a", "b"],
                     help="a = has an en label (priority); b = no en label")
     ap.add_argument("--stats", action="store_true", help="count only, write nothing")
+    ap.add_argument("--hold-engishiki", action="store_true",
+                    help="withhold the ojp-hani P1448 items (see engishiki_cleanup_qids; "
+                         "not needed — the two pipelines write disjoint values)")
     args = ap.parse_args()
 
     print("querying Wikidata for shrines with a jawiki article and no P1814...",
           flush=True)
     rows = targets()
-    skip = engishiki_cleanup_qids()
-    kept = [r for r in rows if r[0] not in skip]
+    engishiki = engishiki_cleanup_qids()
+    kept = [r for r in rows if not (args.hold_engishiki and r[0] in engishiki)]
+    overlap = sum(1 for r in rows if r[0] in engishiki)
     a = [r for r in kept if r[2]]
     b = [r for r in kept if not r[2]]
-    print(f"{len(rows)} targets; {len(rows) - len(kept)} HELD as Engishiki "
-          f"kana-qualifier items (ordering needs Emma — see the module docstring); "
-          f"bucket a (has en label) {len(a)}, bucket b {len(b)}")
+    print(f"{len(rows)} targets; {overlap} also carry an ojp-hani P1448 "
+          + ("(HELD by --hold-engishiki)" if args.hold_engishiki
+             else "(queued — the two pipelines write disjoint values)")
+          + f"; bucket a (has en label) {len(a)}, bucket b {len(b)}")
 
     pool = a if args.bucket == "a" else b if args.bucket == "b" else a + b
     if args.stats:
