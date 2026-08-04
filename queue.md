@@ -33,7 +33,30 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A0. 🖥️ DESKTOP HANDOFF (front of queue · later today 2026-08-03) — name-in-kana → label pipeline
+## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
+
+**Status.** Builder `shinto_miraheze/build_name_in_kana_queue.py` + collector
+`collect_name_in_kana.py`, on the same work-file/ANSWER-marker pattern as the other cloud queues;
+`name_in_kana.txt` registered in `direct_daily_edits.ATOMIC_FILES`; the queue is registered in
+`remote_queue.py` so the routine fills answers unattended.
+- ✅ **Bucket (b) is FINISHED** — all 54 done locally: 50 P1814 lines + 43 en labels (via
+  `kana_english.label_for`). 4 produced no statement: 3 legitimately mixed-script readings and 1
+  two-shrine disambiguation page.
+- ⏳ **Bucket (a): 2,582 remaining**, 247 work-files queued to the cloud routine; rebuild more with
+  `--limit N` as they drain.
+- ✅ **The Engishiki collision does not exist** (checked in the cleanup's own code, not assumed):
+  `generate_kana_qualifier_add.py` guards both branches with `is_katakana()`, `_remove.py` emits
+  value-matched removals, and this builder only queues items that already have no top-level P1814.
+  The 601 are queued normally; `--hold-engishiki` restores the old blanket hold.
+- ⛔ **4 ブルーノ・プラス husks are hard-excluded** (`REPURPOSED` in the builder): Q123044569,
+  Q134886554, Q134736575, Q140476265. They reach the target set legitimately — the repurposing
+  stripped their P1814 — and writing to one would be editing the husk. A5 says document, don't touch.
+- ❗ **Known gate limitation, not yet decided:** the hiragana-only gate also rejects *legitimately*
+  mixed-script readings — ハワイいしづちじんじゃ (Hawaii), スワトウじんじゃ (Swatow), アラハバキかみ
+  (a katakana deity name). These are logged as KATAKANA and produce nothing. Emma's call whether to
+  allow katakana that is a loanword/place-name rather than an ancient reading.
+
+**Original brief follows.**
 
 **What it is.** Give shrines a correct *modern hiragana* P1814 (name in kana), extracted by Opus from the
 jawiki lead, as a new stage of the **label** pipeline. Name-in-kana is in almost every jawiki article but

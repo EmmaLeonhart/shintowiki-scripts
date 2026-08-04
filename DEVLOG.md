@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-03 (evening) — A0/A0b built; every jinjachō prefecture now reachable
+
+**A0 name-in-kana.** Builder + collector on the existing work-file/ANSWER-marker pattern rather
+than a new mechanism. 2,636 targets (shrine, jawiki sitelink, no top-level P1814). Bucket (b) — the
+54 with no en label — is finished: 50 P1814 lines and 43 en labels from `kana_english.label_for`.
+Bucket (a) is 2,582, with 247 work-files handed to the cloud routine.
+
+Two guards were got wrong first and corrected. The Engishiki exclusion originally scraped QIDs out
+of `generate_kana_qualifier_remove.py`, which contains none — it picks targets by query — so it
+would have excluded incidental constants (Q195793, Q845945) while looking like it worked. Rewritten
+as SPARQL over ojp-hani P1448, then dropped entirely: reading the cleanup's code shows both its
+branches guard on `is_katakana()` and its removals are value-matched, so a hiragana P1814 is
+invisible to it. Holding all 601 would have left those shrines permanently without a modern reading,
+which is the gap A0 exists to close.
+
+Separately, two ブルーノ・プラス husks (Q123044569, Q134886554) turned up *inside* bucket (b) — they
+qualify precisely because the repurposing stripped their P1814. All four husks are now a hard
+`REPURPOSED` exclusion in the builder. Worth remembering: "document, don't touch" items do not
+announce themselves; they satisfy the same queries as healthy ones.
+
+**Known limitation, left as Emma's call:** the hiragana-only gate also rejects legitimately
+mixed-script readings — ハワイいしづちじんじゃ, スワトウじんじゃ, アラハバキかみ. The gate exists to
+catch ancient katakana readings; a loanword or a katakana deity name is a different thing wearing
+the same script.
+
+**A0b Beppyo mother house.** The membership route is not the obvious one: `P31 = Q10898274` returns
+zero; it is `P13723 = Q10898274`, exactly 350. 331 lack P612; ordered by sitelink count for
+"large shrines first". 14 judged, 9 statements (8 autochthonous, 1 Tsurugaoka → Iwashimizu), 5
+UNCLEAR left as no-statement.
+
+A silent API behaviour cost the first batch: `prop=extracts` lowers `exlimit` to 1 for whole-article
+extracts, so a multi-title request returns the first article and an empty string for the rest —
+identical in shape to "article missing". Twelve empty results before the warning field was read.
+
+**jinjachō.** Aichi was already complete and the queue's "not yet covered" line was a year-stale.
+Mie and Kagoshima publish sitemaps their robots.txt permits; Osaka publishes a two-level HTML index.
+All three are now index families, and every enumerable prefecture is reachable. The rematch over
+8,232 records lifted P973 pairs 891 → 1,151. `generate_genbu_ids.py` moved to `query-main` after the
+old endpoint threw repeated 503/504 during that pass; 24 scripts are still on the old one, queued
+under A3 rather than swept blind.
+
+---
+
 ## 2026-08-03 — Wikidata freeze extended a week (→ 2026-08-10)
 
 Emma: "Week long wikidata editing stop." The prior week-long hiatus

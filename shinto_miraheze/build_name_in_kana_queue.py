@@ -93,6 +93,20 @@ TASK = (
 
 
 
+# Items ブルーノ・プラス REPURPOSED — Emma's standing rule (queue.md A5) is
+# "document, don't touch; no contact until we understand the editor". They reach
+# this queue legitimately: each is a shrine with a jawiki sitelink and no P1814,
+# because the repurposing stripped what was there. Writing a reading to one would
+# be editing the husk and would look like a response to that editor.
+# Source: docs/bruno_plus_analysis_2026-07.md §3.2 and its damage table.
+REPURPOSED = {
+    "Q123044569",   # was Kamo Shrine (Odawara) -> repurposed into 大美和神社
+    "Q134886554",   # was Chikadono Shrine (Saitama) -> repurposed into 近殿神社
+    "Q134736575",   # 見光寺
+    "Q140476265",   # created then blanked; junk husk
+}
+
+
 def _utf8():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -225,6 +239,11 @@ def main():
           flush=True)
     rows = targets()
     engishiki = engishiki_cleanup_qids()
+    repurposed = [r for r in rows if r[0] in REPURPOSED]
+    rows = [r for r in rows if r[0] not in REPURPOSED]
+    if repurposed:
+        print(f"excluded {len(repurposed)} ブルーノ・プラス-repurposed husks "
+              f"({', '.join(r[0] for r in repurposed)}) — document, don't touch")
     kept = [r for r in rows if not (args.hold_engishiki and r[0] in engishiki)]
     overlap = sum(1 for r in rows if r[0] in engishiki)
     a = [r for r in kept if r[2]]
