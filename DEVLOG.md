@@ -4,7 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
-## 2026-08-03 (late) — the Mie yield was a parser bug, and the first fix was worse
+## 2026-08-03 (late, correction) — the parser bug was real; it was not Mie's problem
+
+The rematch settles it, and the entry below is wrong where it says the Mie yield "was" the parser.
+Total matches went 1,151 → **1,441**, but the gain is Kagoshima (129 → 283) and Osaka (97 → 213).
+**Mie went 17 → 16.**
+
+What Mie actually is: 300 crawled rows, 202 of which match a shrine name somewhere on Wikidata, and
+**171 of those match only same-named shrines in other prefectures** — 三宅神社 resolving to 亀岡市,
+一色神社 to 掛川市, 三宮神社 to 神戸. Mie's own shrines largely have no Wikidata item. The "thin
+data" guess recorded two entries ago was right, and the parser diagnosis that replaced it was wrong
+for this prefecture. The gate is doing its job: refusing to hang a Mie URL on a Kyoto shrine.
+
+The general lesson is the same one as the failed rewrite: a plausible mechanism that explains a
+symptom is not the cause until the fix moves the number it was supposed to move. The parser fix was
+worth making on its own evidence — 51 corrected rows, 290 more matches — but it was credited for
+something it did not do.
+
+**A separate defect surfaced while measuring.** 180 of the 2,832 candidate items for Mie names (6%)
+have no P131 ancestor ending in 市/区/町/村 — no administrative parent at all. Those can never pass
+the municipality gate however well the address parses, because there is nothing on the item to
+compare with. Recorded in queue.md A3 with the two options (prefecture-level fallback restricted to
+that subset, or treat it as P131 backfill); deliberately not acted on, because weakening the gate is
+exactly the change that produced wrong matches the first time.
+
+---
+
+## 2026-08-03 (late) — the municipality parser bug, and a first fix that was worse
 
 Mie matched 17 of 300 crawled shrines while Kagoshima managed 129 and Osaka 97. The suspicion in
 the previous entry — a small-shrine set with no Wikidata items — was wrong. It was

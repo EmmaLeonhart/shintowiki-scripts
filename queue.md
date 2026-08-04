@@ -213,8 +213,23 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     (`funai_jinja/dai1shibu/nose-cho/01020kusasajinja.html`), no robots.txt and no sitemap, so
     it needs its section index pages walked rather than a sitemap read. Not started.
   - Add-only; the daily editor skips statements that already exist, so re-runs are no-ops.
-  - ✅ **Municipality parser fixed 2026-08-03** — the low Mie yield (17 matched from 300) was a
-    parser defect, not thin data. Three bugs, all failing CLOSED (row dropped, never mismatched):
+  - ⚠️ **Mie's low yield is NOT the parser — corrected 2026-08-03 after measuring.** The parser fix
+    below was real and lifted the total 1,151 → **1,441**, but almost all of that went to Kagoshima
+    (129 → 283) and Osaka (97 → 213). **Mie went 17 → 16.** The actual cause: of its 300 rows, 202
+    match a shrine name, but **171 of those match only same-named shrines in other prefectures**
+    (三宅神社 → 亀岡市, 一色神社 → 掛川市, 三宮神社 → 神戸). Mie's own shrines mostly have no
+    Wikidata item, so the earlier "thin data" guess was right and the parser diagnosis was wrong
+    for this prefecture. Nothing to fix here — the gate is correctly refusing to attach Mie URLs to
+    Kyoto and Shizuoka shrines. Crawling Mie's remaining 522 pages will add little; deprioritise it.
+  - ▶ **Separate, real defect found while measuring: candidate items with NO P131.** 180 of the
+    2,832 candidate items for Mie names (6%) have no P131 ancestor ending in 市/区/町/村 — e.g.
+    Q135039445, Q135186750. These can never pass the municipality gate no matter how good the
+    address parsing is, because there is nothing on the item to compare against. Worth measuring
+    across all prefectures and deciding: either accept a prefecture-level match for items with no
+    P131 at all (weaker gate, only for that subset), or leave them and treat it as a P131 backfill
+    task. Do not weaken the gate for items that DO have P131.
+  - ✅ **Municipality parser fixed 2026-08-03** — three bugs, all failing CLOSED (row dropped,
+    never mismatched):
     the prefecture-stripper was `^.{2,4}?[都道府県]`, unanchored, so any address through a 国府町 /
     道明寺 lost its city; the 郡-stripper was `^.{1,5}?郡`, so 霧島市国分郡田 lost its city; and the
     token rule stops at the first mark, truncating 四日市市 → 四日市. Fixed with the real 47-name
