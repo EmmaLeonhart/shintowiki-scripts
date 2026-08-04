@@ -116,12 +116,31 @@ Model it on the `remote_queue.py` answer-marker + collector pattern (builder wri
 `<!-- ANSWER: -->` marker; the remote routine fills it; a `collect_*` script turns answers into QS) — same
 shape as `collect_label_typo_answers.py` / `collect_category_translations.py`.
 
-## A0b. ✅ Beppyo mother house (P612) — ALL 344 READ 2026-08-03; suffix generator time-boxed
+## A0b. ✅ Mother house (P612) — ALL 444 READ IN FULL 2026-08-04 (345 Beppyo + 99 Ise)
 
-**Done.** Every shrine in `Category:別表神社` was read, not a sample: **215 P612 statements**
-(37 named mother houses, 178 autochthonous `Q135508874`) and **129 UNCLEAR that produce nothing**.
-Staged in `modern-quickstatements/beppyo_p612.txt`, registered in `ATOMIC_FILES`; the daily submitter
-delivers once the freeze lifts (2026-08-10).
+**Done, and the 2026-08-03 keyword pass is superseded.** That pass judged from keyword-extracted
+sentences, not full articles, which is why it produced 129 UNCLEAR. Emma called it: *"all 344 need
+the same agentic full-read treatment."* Every one of the 444 articles has now been read in full by
+an Opus agent and classified TRANSFER / NETWORK / AUTOCHTHONOUS / UNKNOWN —
+**327 AUTOCHTHONOUS (74%), 78 TRANSFER, 33 NETWORK, 6 UNKNOWN.** Only six articles give no origin
+at all; the lineage really is in the prose and essentially never findable by keyword.
+
+**408 items staged** in `modern-quickstatements/beppyo_p612.txt` (one P612 line each, no subject
+with two targets); the daily submitter delivers once the freeze lifts (2026-08-10).
+Data: `lineage/agent_results.tsv`. Generator: `lineage/build_p612_quickstatements.py`
+(`--supersede` drops an earlier line where the full read disagrees — 21 did, all still un-dripped
+because the freeze has been on since before the file existed). Waves are restartable via
+`lineage/wave.py`, which plans from what is missing rather than from session context.
+
+Emma's two class rulings, 2026-08-04:
+- **NETWORK → emit the inferred network head**, including where the article names only a deity
+  (函館八幡宮 "八幡神" → 宇佐神宮, 笠間稲荷 勧請元不詳 → 伏見稲荷大社). `DEITY_HEAD` in the
+  generator is the one place a value is not read off the article.
+- **A non-shrine source still gets P612** — a palace, a place, a tomb (皇大神宮←笠縫邑,
+  白峯神宮←白峯陵, 石上神宮←宮中). The edge is real; recording it beats losing it.
+- Gates that stop a bad value: disambiguation-page targets are refused (京都の諏訪神社 resolves to
+  the generic 諏訪神社 list), as are self-references (瀧原宮/瀧原竝宮 share one article and one QID).
+  14 rows produce nothing and say why in `lineage/_p612_resolution.log`.
 
 - **Membership comes from the jawiki CATEGORY, never Wikidata** (Emma 2026-08-03). One paginated
   `list=categorymembers` call; each QID from `pageprops.wikibase_item` in the same request. The
@@ -150,7 +169,7 @@ delivers once the freeze lifts (2026-08-10).
   shrines founded along 行教's 859 Usa→Iwashimizu journey UNCLEAR — 亀山八幡宮 (下関), 琴崎八幡宮,
   甲宗八幡神社. Emma: they are real bunrei. All three now point at 宇佐神宮 (Q715632). Named parents
   go 39 → 42 of 344 (12.2%).
-- ▶ **Remaining:** Emma's review of the 178 autochthonous calls.
+- ▶ **Remaining:** Emma's review of the 327 autochthonous calls.
 - **A more organized extraction technique is a job for Topaz, NOT this repo.**
 
 ## A0c. 🖥️ 神宮125社 — the Ise Jingū constituent shrines (Emma 2026-08-04)
@@ -164,11 +183,15 @@ these shrines are that way too"* — <https://ja.wikipedia.org/wiki/Category:神
   pass. Includes 豊受大神宮, 荒祭宮, 風日祈宮 and 伊勢神宮 itself.
 - **0 lack P361 (part of)** — every one is already linked as a constituent of the Jingū.
 
-**⚠️ P612 is probably the WRONG property here and this needs Emma's word before any is written.**
-A 摂社/末社/別宮 of the Jingū is a *constituent part* of it, not a bunrei branch — the model doc
-defines P612 as the mother house a shrine was branched FROM. P361 already expresses the real
-relationship and is already present on all 76. Only 2 of the 76 carry P612 at all. So the Beppyo
-treatment does **not** transfer wholesale: run the P1814 pass, hold the P612 question.
+**✅ P612 question SETTLED 2026-08-04 — Emma: keep all 99.** The worry was that a 摂社/末社/別宮 is
+a *constituent* (P361, already on all 76) rather than a branch. It is answered by how the read was
+done: the agents were told explicitly that subordination is not lineage, so P612 here carries the
+kami's origin and P361 carries membership — different claims, and they coexist. 80 of the 99 came
+back AUTOCHTHONOUS (倭姫命 enshrining a local 国津神 in place; a river, well or stone that is itself
+the kami), which is a statement no constituency relation can express. The 19 that name a parent
+(瀧原宮←磯宮, 豊受大神宮←比沼麻奈為神社, 伊雑宮←皇大神宮) are staged with the rest. See A0b.
+
+▶ **Still open here:** the P1814 pass over the 54, and the 23 articles with no Wikidata item.
 
 ## A1. 🤖 Cloud-answer collectors — live again, run them when a routine commit lands
 

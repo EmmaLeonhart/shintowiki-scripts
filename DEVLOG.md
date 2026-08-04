@@ -4,6 +4,54 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-04 — all 444 shrines read in full; the keyword pass is superseded
+
+**What was wrong.** The 2026-08-03 Beppyo pass judged each shrine from keyword-extracted
+sentences rather than the article, and reported 129 of 344 UNCLEAR. Emma's read was that the
+origin is in almost every article and that a keyword can't find it. Both were right: read in
+full, **444 of 444 articles yield a classification and only 6 give no origin at all.**
+
+**The pass.** 38 Opus sub-agents over four waves, each reading whole articles — 345 別表神社 and
+the 99 神宮125社. Result: **327 AUTOCHTHONOUS (74%), 78 TRANSFER, 33 NETWORK, 6 UNKNOWN.** The
+root share held at 72–74% across every wave. The agents caught things no regex would: 河原淵神社
+*denying* a 宇佐 origin, 饗土橋姫神社 founded "in imitation of" Kyoto's 橋姫明神 rather than by
+分霊, 潮江天満宮 predating 北野天満宮 on Michizane's own relics, and 宇佐神宮's own 託宣集 naming
+大分八幡宮 as its 本宮 while the same article carries a competing autochthonous strand.
+
+**Restartability was the actual lesson.** A machine restart mid-pass lost the in-flight agent
+output because the only record of what had been read was the session. `lineage/wave.py` now plans
+each wave from what is *missing* from `lineage/agent_results.tsv` and records agent output back
+into it, so a restart costs one wave.
+
+**Staged.** `lineage/build_p612_quickstatements.py` writes 408 items' worth of
+`P612 + P1013=Q195793` into `modern-quickstatements/beppyo_p612.txt` — one line per subject, no
+subject carrying two targets. Targets resolve through ja.wikipedia `pageprops`, never Wikidata.
+Disambiguation-page targets are refused: 鎮西大社諏訪神社's "京都の諏訪神社" resolved to the generic
+諏訪神社 list, which as a P612 value is worse than none.
+
+21 lines from the earlier pass disagreed with the full read — 18 of them said autochthonous where
+the article names a parent (熱田神宮←伊勢神宮, 深志神社←北野天満宮, 尾山神社←卯辰八幡社). They are
+dropped rather than left to land as a contradictory second value. That is safe *only* because the
+Wikidata freeze has forced `wikidata-daily-fire` false since before the file existed, so no line
+in it has run; the `--supersede` flag documents that precondition.
+
+**Does the thing a shrine came from exist on Wikidata?** Emma's question, and the answer is most
+of the time: of the **111 shrines with a lineage, 104 (93.7%) name a source that has a Wikidata
+item.** None name something that has a jawiki article but no item — the gap is smaller than
+expected. What is left is 3 sources with no article at all (坐摩神社's 宮中神祇官西院の坐摩神,
+劔神社's 伊部郷座ヶ岳の素盞嗚尊神霊, 瀧原宮's 磯宮) and 4 ambiguous ones (a disambiguation page, or
+a shared jawiki article that makes source and subject the same QID — 瀧原宮/瀧原竝宮). All seven are
+recorded verbatim in `lineage/_source_coverage.tsv` with the agent's quoted sentence, so the edge
+can be folded in later without re-reading anything. `lineage/source_coverage.py` regenerates it.
+
+**Emma's three rulings this session.** NETWORK emits the inferred network head even where the
+article names only a deity (函館八幡宮 "八幡神" → 宇佐神宮). A non-shrine source still gets P612
+(皇大神宮←笠縫邑, 白峯神宮←白峯陵). And the Ise P612 hold in queue item A0c is lifted — all 99 stay,
+because the agents were instructed that subordination is not lineage, so P612 (origin) and the
+existing P361 (membership) are different claims.
+
+---
+
 ## 2026-08-04 — two corrections from Emma, and a new target set
 
 **A 勧請 in transit IS a real bunrei.** I had ruled UNCLEAR on the three shrines founded along
