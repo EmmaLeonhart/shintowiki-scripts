@@ -99,9 +99,20 @@ def _utf8():
         pass
 
 
+# WDQS throttle. Was 0.5s, which is far too fast for what this module actually
+# issues: match_jinjacho_shrines.py imports _sparql and, on a 9,000-row crawl,
+# fires ~365 queries per run — 65 label batches plus 300 P131 TRANSITIVE-CLOSURE
+# batches, each over 60 items. At 0.5s that is ~2 expensive queries/second held
+# for minutes, and three runs on 2026-08-03 drew repeated 503/504 that were
+# initially blamed on the endpoint rather than on us. 2.5s matches the THROTTLE
+# this repo already applies to Miraheze; a full matcher run costs ~15 minutes of
+# sleep, which is the correct price for a job that runs occasionally.
+WDQS_THROTTLE = 2.5
+
+
 def _sparql(query):
     for attempt in range(4):
-        time.sleep(0.5)
+        time.sleep(WDQS_THROTTLE)
         try:
             r = requests.post(SPARQL, data={"query": query, "format": "json"},
                               headers=SPARQL_HDR, timeout=180)
@@ -112,8 +123,11 @@ def _sparql(query):
         except SystemExit:
             raise
         except Exception as e:
+            # Exponential, not linear: a 503/504 means the endpoint is already
+            # struggling, and 5/10/15s retries add load at exactly the wrong
+            # moment. 15/45/135s backs off properly.
             print(f"  [WDQS retry {attempt+1}] {e}", flush=True)
-            time.sleep(5 * (attempt + 1))
+            time.sleep(15 * (3 ** attempt))
     raise RuntimeError("WDQS failed")
 
 
