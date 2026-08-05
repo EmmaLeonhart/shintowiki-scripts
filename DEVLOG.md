@@ -8536,3 +8536,35 @@ Fixed in build_description_enrichment_queue.py and remote_queue.py, and
 rewritten across all 221 pending work-files. The rewrite touches the TASK
 comment only: each file's pre-TASK region (which holds the ANSWERS block) was
 asserted byte-identical before writing.
+
+## 2026-08-05 — the husk re-emission got a sweep instead of a habit
+
+A5 predicted generators would keep re-emitting QuickStatements aimed at the
+ブルーノ・プラス husks, "and the gate is what makes that harmless". It happened
+on schedule: the CI regeneration 2dfb736f re-added 6 lines (honzon_p825 x1,
+saijin_p825 x3, souken_p571 x2), which turned
+test_repurposed_husks_never_edited red on main. Not caused by this session's
+work — the files were untouched by it.
+
+Stripping those by hand after every regeneration is a habit, not a fix, so the
+sweep is now modern-quickstatements/strip_husk_lines.py, running as the last
+step before the commit in generate-quickstatements.yml. One chokepoint rather
+than a filter in twenty generators, which is the same argument A5 used to put
+the refusal in item_is_editable() instead of per-generator.
+
+It imports REPURPOSED from direct_daily_edits rather than keeping a second copy,
+so the sweep and the refusal cannot drift apart on what counts as a husk. The
+step is deliberately not continue-on-error: if it cannot run, the lines stay
+staged and the test stays red, which is the failure being visible rather than
+swallowed.
+
+9 tests, mostly pinning what must NOT be deleted. The dangerous direction here
+is over-eagerness, because these files are large and machine-generated and a
+wrongly-removed line would go unnoticed: a husk QID as a statement VALUE
+(Q42|P612|<husk>) edits another item and stays, Q1234560 must not match husk
+Q123456, and a removal line's leading dash is the command rather than part of
+the QID.
+
+Local test state: 1,097 pass. The 3 remaining failures are ModuleNotFoundError
+for mwclient in the dev environment, which CI installs; the same gap hides 15
+more suites behind opencc/mwclient imports. Not verified green in CI yet.

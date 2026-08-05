@@ -217,6 +217,18 @@ jobs:
           if [ "$(date -u +%u)" = "7" ]; then python generate_description_adds.py; \
           else echo "not Sunday — keeping committed description_adds.txt"; fi
 
+      # MUST be the last step before the commit. The husks are items ブルーノ・プラス
+      # repurposed (queue.md A5); each one now IS the shrine item a sitelink lookup
+      # resolves to, so generators re-emit lines targeting them on every run — A5
+      # says to expect exactly that. Stripping here keeps the staged files clean at
+      # one chokepoint instead of filtering in twenty generators. The submitter's
+      # item_is_editable() refusal is still the load-bearing gate; this is what
+      # keeps tests/test_repurposed_husks_never_edited.py green.
+      # NOT continue-on-error: if this cannot run, husk lines stay staged.
+      - name: Strip QuickStatements targeting repurposed husks
+        working-directory: modern-quickstatements
+        run: python strip_husk_lines.py --apply
+
       - name: Commit generated files to repo
         run: |
           git config user.name "github-actions[bot]"

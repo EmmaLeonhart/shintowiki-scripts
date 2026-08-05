@@ -594,6 +594,19 @@ All registered atomic files are staged-but-not-delivered by design until `confli
   `tests/test_repurposed_husks_never_edited.py` asserts both the gate and that no atomic file stages
   a husk edit. **Expect generators to keep re-emitting these lines on each CI regeneration; the gate
   is what makes that harmless.**
+  - ✅ **The re-emission is now swept automatically (2026-08-05).** It happened exactly as predicted:
+    CI regeneration `2dfb736f` re-added **6** husk lines (honzon_p825 ×1, saijin_p825 ×3,
+    souken_p571 ×2) and turned that test red on `main`. Stripping by hand every regeneration is the
+    wrong shape, so `modern-quickstatements/strip_husk_lines.py` now runs as the last step before
+    the commit in `generate-quickstatements.yml`. **One chokepoint, not a filter in twenty
+    generators** — the same reasoning A5 used to put the refusal in `item_is_editable()`.
+  - It imports `REPURPOSED` from `direct_daily_edits` rather than copying it, so the sweep and the
+    refusal can never disagree about what a husk is. Deliberately **not** `continue-on-error`: if
+    the step cannot run, the lines stay staged and the test stays red, which is the visible failure.
+  - 9 tests, and most of them pin what it must **not** delete — a husk QID appearing as a *value*
+    (`Q42|P612|<husk>`) is a statement about another item, `Q1234560` must not match husk `Q123456`,
+    and a `-Qxxx` removal line's dash is the command rather than part of the QID. An over-eager
+    strip would quietly delete real staged work in files too large for anyone to notice.
 
 
 - **Repurposed-item damage** — Q123044569 (Kamo), Q134886554 (Chikadono), Q134736575 (見光寺),
