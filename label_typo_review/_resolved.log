@@ -77,3 +77,70 @@ Q65292740	LABEL_TYPO	Suwaazuki Shrine
 Q97175484	PREFIX_OK	江東 place prefix; kana is the bare 天祖神社 name
 Q97218279	PREFIX_OK	塚崎 place prefix; kana is the bare 神明社 name
 Q97310706	PREFIX_OK	江古田 place prefix; kana is the bare 氷川神社 name
+Q105710159	OTHER	label correct and already macronned — Etchū Gokoku Hachimangū. The comparison column simply cannot write macrons
+Q106968548	OTHER	label correct — Kumano Okuteru Shrine. Only word spacing differs from the comparison column
+Q107410070	OTHER	label correct — Hitachi-no-Kuni Izumo-taisha. Only the hyphenation differs
+Q11427180	OTHER	label correct. ほりのうち is hori-no-uchi (堀・ノ・内); the comparison column wrongly reduced it to "Horinochi"
+Q11430652	LABEL_TYPO	Ōnimasumishiritsuhiko Shrine
+Q11433429	LABEL_TYPO	Yamato-Ōkunitama Shrine
+Q11436783	LABEL_TYPO	Ōminakami Shrine
+Q11442508	OTHER	label correct — Ame-Futotama-no-Mikoto Shrine. Only the hyphenation differs from the run-together comparison
+Q11450246	LABEL_TYPO	Yasui Kompira-gū
+Q11451841	LABEL_TYPO	Sōsayakujin-hachiman Shrine
+Q11481110	OTHER	label correct. もろおか is Moro-oka (師・岡); the comparison column collapsed the oo to "Moroka"
+Q11572840	OTHER	label correct. たまのおんたけ is Tamano + Ontake; the comparison column ran the two words together and lost an o
+Q11573796	OTHER	label correct. ことうら is koto-ura (琴・浦); the comparison column wrongly reduced it to "Kotora"
+Q11574829	LABEL_TYPO	Ōshiko Shrine
+Q11575107	OTHER	label correct. たのうら is ta-no-ura (田・ノ・浦); the comparison column wrongly reduced it to "Tanora"
+Q11578102	OTHER	label correct. おのうと is o-no-u-to (男・乃・宇・刀), four morphemes — not a long o. The comparison column wrongly reduced it to "Onoto"
+Q11589590	LABEL_TYPO	Kōnomine Shrine
+Q11611081	LABEL_TYPO	Shōmogū
+Q11617049	LABEL_TYPO	Mōke Shrine
+Q126285710	LABEL_TYPO	Kōtari Shrine
+Q134602865	LABEL_TYPO	Hinoōshi Shrine
+Q134893150	LABEL_TYPO	Ōtsu Suwa Shrine
+Q134988809	OTHER	label correct and already macronned — おおうち is Ōuchi; the comparison column reduced it to "Ochi"
+Q135185681	OTHER	合祀：大津神社 "Co-Enshrinement of Hyōzu Shrine" — the ja label itself encodes the 合祀; left deliberately (Emma 2026-08-04)
+Q135462874	LABEL_TYPO	Ōyamazumi Shrine
+Q135462993	LABEL_TYPO	Ōyamazumi Shrine
+Q17194122	LABEL_TYPO	Ujiyōda Shrine
+Q17228074	OTHER	海底神社 is labelled "Underwater Shrine" — descriptive, left deliberately (Emma 2026-08-04)
+Q19841356	LABEL_TYPO	Hōsono Shrine
+Q2827917	OTHER	合氣神社 is labelled "Iwama Dōjō" — descriptive, left deliberately (Emma 2026-08-04)
+Q48758315	OTHER	label correct. はのうら is ha-no-ura (羽・浦); the comparison column wrongly reduced it to "Hanora"
+Q56061879	LABEL_TYPO	Ōishi Shrine
+Q60988202	OTHER	釜石製鐡所山神社 carries the works' full English name — descriptive, left deliberately (Emma 2026-08-04)
+Q66085127	OTHER	label correct and already macronned — Kamo-Ōkami-miko-kami-nushi-tama Shrine
+Q84929833	LABEL_TYPO	Ōtadaneko Shrine
+Q11084040	OTHER	新竹神社 in Taiwan; Hsinchu is the city's English name, not a romanization of しんちく
+Q11393653	OTHER	兵庫縣神戸護國神社 — "Hyogo Kobe" is the established English form of both place names; the macron rule romanizes readings, it does not rename cities
+Q11400330	LABEL_TYPO	Katsute Shrine
+Q11438318	OTHER	the lead gives three readings（たけおかみ / おおけおかみ / おおおかみ）; the label Takeokami uses the first, the P1814 the third
+Q11447985	LABEL_TYPO	Haraumi Shrine
+Q11457393	LABEL_TYPO	Samukawa Shrine
+Q11499585	OTHER	the lead reads 敬満神社（けいまんじんじゃ/きょうまんじんじゃ）— both attested; the label uses the first, the P1814 the second. Nothing is wrong
+Q11555416	KANA_ISSUE	the article reads ほほかべじんじゃ, not the P1814's ほうかべ. Label Hohokabe Shrine is correct
+Q11556513	OTHER	the lead reads 洲崎神社（すさきじんじゃ/すのさきじんじゃ）— both attested; the label uses the second, the P1814 the first
+Q11565717	LABEL_TYPO	Ushioe Tenmangū
+Q11565730	LABEL_TYPO	Shionome Tenman Shrine
+Q11583957	LABEL_TYPO	Yakiri Shrine
+Q11584226	LABEL_TYPO	Yadomi-daijingū
+Q11633342	LABEL_TYPO	Toyuke Daijinja
+Q11676455	LABEL_TYPO	Shiogama Shrine
+Q118358805	OTHER	斉斉哈爾神社 in Manchuria; Qiqihar is the city's English name, not a romanization of チチハル
+Q124392557	OTHER	香港神社; Hong Kong is the place's English name, not a romanization of ほんこん
+Q17216962	OTHER	the lead reads 志賀理和氣神社（しがりわけ/しかりわけ）— both attested; the label uses the first
+Q21449537	OTHER	高士神社 in Taiwan; Gaoshi is the place's English name. The P1814 クスクス is the indigenous Kuskus, which is a third name again
+Q22118539	OTHER	the lead reads 貴布禰神社（きふねじんじゃ・きぶねじんじゃ）— both attested; the label Kibune uses the second
+Q22118972	KANA_ISSUE	the article reads よもとぎいなりじんじゃ, not the P1814's しほんぎ. Label Yomotogi Inari Shrine is correct
+Q22119431	LABEL_TYPO	Tsukudanimasu Hitokotoneko Shrine
+Q30925653	LABEL_TYPO	Ōasayama Shrine
+Q3335115	KANA_ISSUE	the article reads なごやじんじゃ, not the P1814's なごの. Label Nagoya Shrine is correct
+Q3473746	LABEL_TYPO	Saruga Shrine
+Q43594603	OTHER	label correct. やまとおんち is Yamato + Onchi; the comparison column ran them together and lost an o
+Q48763725	LABEL_TYPO	Mizushi Shrine
+Q54153251	LABEL_TYPO	Ichibara Inari Shrine
+Q55532964	KANA_ISSUE	the article reads うのとりじんじゃ, not the P1814's うねどり. Label Unotori Shrine is correct
+Q85884515	OTHER	label correct — Susanoo no mikoto Shrine. Only word spacing differs from the comparison column
+Q97310667	LABEL_TYPO	Yamatochō Hachiman Shrine
+Q97754579	LABEL_TYPO	Kifune Shinmeisha

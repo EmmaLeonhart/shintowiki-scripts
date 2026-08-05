@@ -306,9 +306,17 @@ All four collectors were run 2026-08-04 and every one returned `resolved=0`: **n
 pending work-file has a filled answer marker.** The routine's push was fixed 2026-07-28 and it
 delivered one batch that day (9 label typos, 1 ronsha ranking, 11 descriptions, 12 category
 moves) — and nothing since. Waiting on it is not a plan.
-- ✅ `collect_label_typo_answers.py` — **61 of the 143 answered locally 2026-08-04**; 37 became
-  `Len` lines in `label_typo_fixes.txt` (45 total), 24 were PREFIX_OK / KANA_ISSUE with no edit.
-  **82 left.** Answers + reasoning: `shinto_miraheze/local_answers/label_typo_2026-08-04.tsv`.
+- ✅ `collect_label_typo_answers.py` — **128 of the 143 answered locally 2026-08-04**; 71 became
+  `Len` lines in `label_typo_fixes.txt` (79 total). **15 left**, all of them items with no jawiki
+  article (below). Answers + reasoning in `shinto_miraheze/local_answers/label_typo_2026-08-04*.tsv`.
+- 📐 **STANDING RULE, Emma 2026-08-04: MACRONS.** A long vowel is written Ōmi, Kōnomine — not
+  Oomi/Omi. **The macron rule and the morpheme rule are the same rule seen twice:** a macron marks
+  one long vowel, so two identical vowels meeting across a morpheme boundary are not it. 飯玉
+  いいたま is Iitama; 男乃宇刀 お・の・う・と is Onouto; but 神峯 こうのみね is Kōnomine.
+  It does NOT rename places that have an established English form — Kobe stays Kobe, the same way
+  ちりふ stays Chiryū. ⚠️ **The queue's own `KANA_ROMANIZED` column does not know the morpheme
+  rule** — it collapses every o+u, reporting Kotoura as "Kotora" and Horinouchi as "Horinochi",
+  and then flags the correct label as divergent. 13 items were "wrong" only in that column.
   - **The dominant defect is one machine error, not 143 separate ones.** A romanizer collapsed a
     doubled vowel into a macron *across a morpheme boundary*: 飯玉 いいたま → "ītama", 飯塚 →
     "īzuka", 幣石 へいいし → "Heīshi", 二荒 ふたあら → "Futāra", 堀出 ほりいで → "Horīde". 飯 is
@@ -318,12 +326,28 @@ moves) — and nothing since. Waiting on it is not a plan.
     against the whole defect class and returns exactly the corrected forms (Iitama, Iizuka,
     Heiishi, Futaara, Horiide). The bad labels came from an earlier pass, so the pipeline is not
     still emitting them and nothing needs fixing there.
-  - ❓ **The 82 left are not more of the same.** They split three ways: (1) romanization STYLE
-    (Oomi / Ōmi / Omi, Kounomine / Kōnomine) — a policy question for Emma, not a typo; (2) label
-    and kana disagree about the READING itself (石上 いしがみ vs Isonokami, 四本木 しほんぎ vs
-    Yomotogi, 鵜鳥 うねどり vs Unotori) — either side could be right and only the individual shrine
-    decides; (3) descriptive labels that may be deliberate (合氣神社 "Iwama Dōjō", 海底神社
-    "Underwater Shrine", 合祀：大津神社 "Co-Enshrinement of Hyōzu Shrine") — weird is usually signal.
+  - ✅ **The reading clashes were researched per-item, and they did NOT all fall the same way** —
+    which is the case against ever having applied a blanket rule to them. `fetch_label_typo_
+    evidence.py` pulls each shrine's own jawiki lead via its item's sitelink (never by guessing a
+    title — 八幡神社 names hundreds). Three outcomes: the lead backs the KANA and the label is
+    wrong (孕 はらうみ, 潮江 うしおえ, 鹽竈 しおがま); the lead backs the LABEL and the **P1814** is
+    wrong (那古野 なごや not なごの, 鵜鳥 うのとり not うねどり, 四本木 よもとぎ not しほんぎ,
+    波々伯部 ほほかべ not ほうかべ) — **4 items where "trust the kana" would have damaged a correct
+    label**; or the lead gives BOTH readings and the label uses one, so nothing was wrong at all
+    (敬満 けいまん/きょうまん, 洲崎 すさき/すのさき, 貴布禰 きふね/きぶね, 志賀理和気, 大祁於賀美).
+  - ✅ **Descriptive labels left alone** per Emma 2026-08-04 (合氣神社 "Iwama Dōjō", 海底神社
+    "Underwater Shrine", 釜石製鐡所山神社, 合祀：大津神社) — logged so they stop being re-queued.
+  - ▶ **The 15 left all have NO jawiki article**, so no lead can settle them and the method above
+    does not reach them: 4 bare 八幡神社 (やはた vs やわた), 2 二荒山神社 (Futarasan vs ふたあらやま),
+    石上神社 (いしがみ vs Isonokami), 秋葉神社 (あきは vs Akiba), 石井神社 (いわい vs Ishii),
+    荒神社 (かわう vs "Kuwau"), 豊栄稲荷 (ほうえい vs Toyosaka), 長間 (ながんま vs Nagamma),
+    櫟谷七野, 天照皇大神社, 和物所稲荷. These need a different source — the shrine's own site, a
+    prefectural 神社誌, or Emma. Several are the same question repeated (八幡 やはた/やわた), so a
+    single ruling on the reading would clear most of them.
+  - ❓ **One place-name call for Emma:** 兵庫縣神戸護國神社 is labelled "Hyogo Kobe Gokoku Shrine".
+    Left unmacronned on the ground that the macron rule romanizes readings and does not rename
+    cities with established English spellings. If she wants "Hyōgo Kōbe", this is the item to say
+    so on, and it would apply to every place-name prefix in the corpus.
 - Description-enrichment (222), ronsha-ranking (34), category-translation (354) — same, 0 answered.
   `docs/description_enrichment_pipeline.md`.
 - ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's

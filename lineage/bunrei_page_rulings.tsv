@@ -21,10 +21,12 @@
 風日祈宮	Q11665488	Q24238356	I think this is explicitly unknown
 小俣神社	Q17225978	Q11633343	We figured this out from deity page
 瀧原宮	Q11566292	PENDING	make wikidata for 磯宮 — the item does not exist yet; it is in ise_jingu_creates.txt, and lineage/stage_takihara_p612.py emits this line once the batch has run
-# 忌部神社 — Emma first named Q705547 安房神社 as the head, then corrected to Q11490722
-# 2026-08-04 after the direction was pointed out: the 阿波忌部 went FROM Awa/Tokushima,
-# where this shrine stands, TO Chiba, so 安房神社 is the offshoot and this is the head.
-# Q11490722 is the SUBJECT of this row, so it cannot be its own P612 value — a shrine
-# that heads its lineage has no mother house. Q135508874 (autochthonous) is the marker
-# this data already uses for exactly that, and is what a root gets.
-忌部神社	Q11490722	Q135508874	comes from the main inbe lineage. Not gosho shrine — and the head IS this shrine (Emma, Q11490722), so it is a root
+# 忌部神社 — settled 2026-08-04 after three passes, worth recording so it is not reopened.
+# The 分霊 page says "comes from the main inbe lineage. Not gosho shrine", refusing 五所神社
+# without naming a replacement. Emma named Q705547 安房神社, then Q11490722 (this row's own
+# subject) when the migration direction was raised, then settled on 天太玉命神社: the shrine
+# of 天太玉命, ancestral kami of the 忌部氏, which is ALREADY the P612 of 安房神社 from the
+# article read. So the two Inbe shrines are siblings under one ancestor rather than one of
+# them being the other's parent — which is what "the main inbe lineage" describes, and it
+# does not require deciding whether Awa or Chiba came first.
+忌部神社	Q11490722	Q11442508	comes from the main inbe lineage. Not gosho shrine — Emma 2026-08-04: 天太玉命神社, the same ancestor 安房神社 points at

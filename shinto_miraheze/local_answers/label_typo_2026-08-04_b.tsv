@@ -1,0 +1,70 @@
+# label_typo_review batch 2, 2026-08-04. Emma's ruling: MACRONS (Ōmi, Kōnomine).
+#
+# Applied with:
+#   python shinto_miraheze/apply_local_answers.py --queue label_typo \
+#       --answers local_answers/label_typo_2026-08-04_b.tsv --apply
+#   python shinto_miraheze/collect_label_typo_answers.py
+#
+# THE MACRON RULE AND THE MORPHEME RULE ARE THE SAME RULE, seen twice. A macron
+# marks a LONG VOWEL. Two identical vowels that meet across a morpheme boundary
+# are not one long vowel, they are two vowels — so 飯玉 いいたま is Iitama (batch 1)
+# and 男乃宇刀 お・の・う・と is Onouto, while 神峯 こうのみね is Kōnomine because
+# こう really is one long o.
+#
+# That distinction has a consequence worth stating plainly: for a dozen of these,
+# THE LABEL WAS ALREADY RIGHT and the queue's own KANA_ROMANIZED column is the
+# wrong side. It collapses every o+u it sees, so it reports Kotoura as "Kotora"
+# and Horinouchi as "Horinochi" and then flags the correct label as divergent.
+# Those are answered OTHER, not LABEL_TYPO — there is nothing to fix on Wikidata.
+#
+# Only cases where the label and the kana AGREE ON THE READING are answered here.
+# Where they disagree about the reading itself (潮江 うしおえ vs Shioe, 豊栄 ほうえい
+# vs Toyosaka, 敬満 きょうまん vs Keiman) the macron rule cannot settle it, and
+# Emma's ruling on those is to research each — they stay pending.
+#
+# ─── LABEL_TYPO: long vowel, written the house way ───
+Q11430652	LABEL_TYPO: Ōnimasumishiritsuhiko Shrine
+Q11436783	LABEL_TYPO: Ōminakami Shrine
+Q11574829	LABEL_TYPO: Ōshiko Shrine
+Q11589590	LABEL_TYPO: Kōnomine Shrine
+Q11611081	LABEL_TYPO: Shōmogū
+Q11617049	LABEL_TYPO: Mōke Shrine
+Q126285710	LABEL_TYPO: Kōtari Shrine
+Q134893150	LABEL_TYPO: Ōtsu Suwa Shrine
+Q56061879	LABEL_TYPO: Ōishi Shrine
+Q19841356	LABEL_TYPO: Hōsono Shrine
+Q11451841	LABEL_TYPO: Sōsayakujin-hachiman Shrine
+Q11433429	LABEL_TYPO: Yamato-Ōkunitama Shrine
+Q135462874	LABEL_TYPO: Ōyamazumi Shrine
+Q135462993	LABEL_TYPO: Ōyamazumi Shrine
+Q11450246	LABEL_TYPO: Yasui Kompira-gū
+#
+# ─── LABEL_TYPO: the macron was in the wrong place, or a letter was lost ───
+# ひのおうし is hi-no-ōshi, so the macron belongs on the third syllable, not the second.
+Q134602865	LABEL_TYPO: Hinoōshi Shrine
+# うじようだ is uji-yōda; the label had dropped the "iy" entirely.
+Q17194122	LABEL_TYPO: Ujiyōda Shrine
+# おおただねこ: long o at the front, and the label had "tata" for ただ.
+Q84929833	LABEL_TYPO: Ōtadaneko Shrine
+#
+# ─── OTHER: the LABEL is correct; KANA_ROMANIZED collapsed a morpheme boundary ───
+Q11578102	OTHER: label correct. おのうと is o-no-u-to (男・乃・宇・刀), four morphemes — not a long o. The comparison column wrongly reduced it to "Onoto"
+Q11573796	OTHER: label correct. ことうら is koto-ura (琴・浦); the comparison column wrongly reduced it to "Kotora"
+Q11575107	OTHER: label correct. たのうら is ta-no-ura (田・ノ・浦); the comparison column wrongly reduced it to "Tanora"
+Q48758315	OTHER: label correct. はのうら is ha-no-ura (羽・浦); the comparison column wrongly reduced it to "Hanora"
+Q11427180	OTHER: label correct. ほりのうち is hori-no-uchi (堀・ノ・内); the comparison column wrongly reduced it to "Horinochi"
+Q11572840	OTHER: label correct. たまのおんたけ is Tamano + Ontake; the comparison column ran the two words together and lost an o
+Q105710159	OTHER: label correct and already macronned — Etchū Gokoku Hachimangū. The comparison column simply cannot write macrons
+Q66085127	OTHER: label correct and already macronned — Kamo-Ōkami-miko-kami-nushi-tama Shrine
+Q134988809	OTHER: label correct and already macronned — おおうち is Ōuchi; the comparison column reduced it to "Ochi"
+Q11442508	OTHER: label correct — Ame-Futotama-no-Mikoto Shrine. Only the hyphenation differs from the run-together comparison
+Q107410070	OTHER: label correct — Hitachi-no-Kuni Izumo-taisha. Only the hyphenation differs
+Q11481110	OTHER: label correct. もろおか is Moro-oka (師・岡); the comparison column collapsed the oo to "Moroka"
+Q106968548	OTHER: label correct — Kumano Okuteru Shrine. Only word spacing differs from the comparison column
+#
+# ─── OTHER: descriptive labels, left alone per Emma 2026-08-04 ───
+# "Leave them — assume deliberate." Recorded so they stop being re-queued as typos.
+Q2827917	OTHER: 合氣神社 is labelled "Iwama Dōjō" — descriptive, left deliberately (Emma 2026-08-04)
+Q17228074	OTHER: 海底神社 is labelled "Underwater Shrine" — descriptive, left deliberately (Emma 2026-08-04)
+Q60988202	OTHER: 釜石製鐡所山神社 carries the works' full English name — descriptive, left deliberately (Emma 2026-08-04)
+Q135185681	OTHER: 合祀：大津神社 "Co-Enshrinement of Hyōzu Shrine" — the ja label itself encodes the 合祀; left deliberately (Emma 2026-08-04)

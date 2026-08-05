@@ -1,0 +1,67 @@
+# label_typo_review batch 3, 2026-08-04 — the READING clashes, researched.
+#
+# Emma 2026-08-04: "research each, then decide." The research is each shrine's OWN
+# ja.wikipedia lead, reached through its Wikidata item's jawiki sitelink rather
+# than by guessing a title from the ja label (八幡神社 and 秋葉神社 name hundreds of
+# shrines each). Evidence: shinto_miraheze/local_answers/_label_typo_evidence.tsv,
+# gathered by fetch_label_typo_evidence.py.
+#
+# It settled far more than expected, and NOT all in the same direction — which is
+# the argument against having applied any blanket rule:
+#   * the lead backs the KANA and the label is wrong (孕 はらうみ, 潮江 うしおえ,
+#     鹽竈 しおがま, 水主 みずし, 市原 いちばら);
+#   * the lead backs the LABEL and the P1814 is wrong (那古野 なごや not なごの,
+#     鵜鳥 うのとり not うねどり, 四本木 よもとぎ not しほんぎ, 波々伯部 ほほかべ not
+#     ほうかべ) — four items where "trust the kana" would have DAMAGED a correct label;
+#   * the lead gives BOTH readings and the label uses one of them, so nothing is
+#     wrong at all (敬満 けいまん/きょうまん, 洲崎 すさき/すのさき, 貴布禰 きふね/きぶね,
+#     志賀理和気 しがりわけ/しかりわけ, 大祁於賀美 three readings).
+#
+# ─── LABEL_TYPO: the lead backs the kana ───
+Q11447985	LABEL_TYPO: Haraumi Shrine
+Q11457393	LABEL_TYPO: Samukawa Shrine
+Q11565717	LABEL_TYPO: Ushioe Tenmangū
+Q11565730	LABEL_TYPO: Shionome Tenman Shrine
+Q11584226	LABEL_TYPO: Yadomi-daijingū
+Q11676455	LABEL_TYPO: Shiogama Shrine
+Q30925653	LABEL_TYPO: Ōasayama Shrine
+Q48763725	LABEL_TYPO: Mizushi Shrine
+Q54153251	LABEL_TYPO: Ichibara Inari Shrine
+Q11633342	LABEL_TYPO: Toyuke Daijinja
+Q3473746	LABEL_TYPO: Saruga Shrine
+Q11583957	LABEL_TYPO: Yakiri Shrine
+Q11400330	LABEL_TYPO: Katsute Shrine
+Q97754579	LABEL_TYPO: Kifune Shinmeisha
+Q97310667	LABEL_TYPO: Yamatochō Hachiman Shrine
+# The lead reads つくだにますひとことねこ. The label was "hikida Shrine" — lowercase and
+# not a reading of these kanji at all — and the P1814 has lost the leading つ.
+Q22119431	LABEL_TYPO: Tsukudanimasu Hitokotoneko Shrine
+#
+# ─── KANA_ISSUE: the lead backs the label; P1814 is the broken side ───
+Q3335115	KANA_ISSUE: the article reads なごやじんじゃ, not the P1814's なごの. Label Nagoya Shrine is correct
+Q55532964	KANA_ISSUE: the article reads うのとりじんじゃ, not the P1814's うねどり. Label Unotori Shrine is correct
+Q22118972	KANA_ISSUE: the article reads よもとぎいなりじんじゃ, not the P1814's しほんぎ. Label Yomotogi Inari Shrine is correct
+Q11555416	KANA_ISSUE: the article reads ほほかべじんじゃ, not the P1814's ほうかべ. Label Hohokabe Shrine is correct
+#
+# ─── OTHER: the article gives BOTH readings, and the label uses one of them ───
+Q11499585	OTHER: the lead reads 敬満神社（けいまんじんじゃ/きょうまんじんじゃ）— both attested; the label uses the first, the P1814 the second. Nothing is wrong
+Q11556513	OTHER: the lead reads 洲崎神社（すさきじんじゃ/すのさきじんじゃ）— both attested; the label uses the second, the P1814 the first
+Q22118539	OTHER: the lead reads 貴布禰神社（きふねじんじゃ・きぶねじんじゃ）— both attested; the label Kibune uses the second
+Q17216962	OTHER: the lead reads 志賀理和氣神社（しがりわけ/しかりわけ）— both attested; the label uses the first
+Q11438318	OTHER: the lead gives three readings（たけおかみ / おおけおかみ / おおおかみ）; the label Takeokami uses the first, the P1814 the third
+#
+# ─── OTHER: the label is a legitimate exonym, not a romanization ───
+Q11084040	OTHER: 新竹神社 in Taiwan; Hsinchu is the city's English name, not a romanization of しんちく
+Q118358805	OTHER: 斉斉哈爾神社 in Manchuria; Qiqihar is the city's English name, not a romanization of チチハル
+Q21449537	OTHER: 高士神社 in Taiwan; Gaoshi is the place's English name. The P1814 クスクス is the indigenous Kuskus, which is a third name again
+Q124392557	OTHER: 香港神社; Hong Kong is the place's English name, not a romanization of ほんこん
+#
+# ─── OTHER: label already correct under the macron + morpheme rules ───
+Q43594603	OTHER: label correct. やまとおんち is Yamato + Onchi; the comparison column ran them together and lost an o
+Q85884515	OTHER: label correct — Susanoo no mikoto Shrine. Only word spacing differs from the comparison column
+#
+# ─── OTHER: established English place names, which the macron rule does not override ───
+# Flagged for Emma rather than silently macronned: Kobe and Hyogo are the city's and
+# prefecture's own English spellings, the same way Chiryū is kept over ちりふ. If she
+# wants Hyōgo Kōbe, this is the item to say so on.
+Q11393653	OTHER: 兵庫縣神戸護國神社 — "Hyogo Kobe" is the established English form of both place names; the macron rule romanizes readings, it does not rename cities
