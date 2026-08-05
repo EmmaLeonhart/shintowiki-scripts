@@ -14,7 +14,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from collect_name_in_kana import (  # noqa: E402
-    HIRAGANA_ONLY, clean_kana, parse_answer,
+    HIRAGANA_ONLY, acceptable_reading, clean_kana, parse_answer,
 )
 
 
@@ -51,9 +51,39 @@ def test_hiragana_passes():
 
 
 def test_katakana_is_rejected():
-    """P1814 wants modern hiragana; katakana is the ancient-reading error."""
+    """P1814 wants modern hiragana; all-katakana is the ancient-reading error."""
     assert not HIRAGANA_ONLY.match("ミシマタイシャ")
-    assert not HIRAGANA_ONLY.match("みしまタイシャ")   # even mixed
+
+
+def test_all_katakana_is_still_refused_by_the_real_gate():
+    """The error class the gate exists for: アスキ-, ツキタノ-, カミノヤシロ are
+    all-katakana, and a shrine reading cannot legitimately be — the name ends in
+    神社/神宮/宮, which read as hiragana."""
+    for bad in ("ミシマタイシャ", "アスキ", "カミノヤシロ", "ツキタノ"):
+        assert not acceptable_reading(bad), bad
+
+
+def test_mixed_katakana_is_accepted():
+    """RELAXED 2026-08-05 on Emma's ruling — these are the real overseas and
+    colonial-era shrines, previously rejected wholesale and producing nothing.
+
+    Safe because the cleanup this gate was guarding against only touches items
+    with an ojp-hani P1448 + カミノヤシロ qualifier and emits value-matched
+    removals; an overseas shrine has neither, so there is nothing to collide."""
+    for ok in ("ハワイだいじんぐう", "ハワイいしづちじんじゃ", "スワトウじんじゃ",
+               "ペリリューじんじゃ", "サムハラじんじゃ", "アラハバキかみ"):
+        assert acceptable_reading(ok), ok
+
+
+def test_pure_hiragana_is_still_accepted():
+    assert acceptable_reading("みしまたいしゃ")
+    assert acceptable_reading("おーやま")
+
+
+def test_non_kana_is_refused_by_the_real_gate():
+    """Relaxing to allow katakana must not open the door to kanji or latin."""
+    for bad in ("三嶋大社", "Mishima Taisha", "みしま大社", "ハワイ大神宮", ""):
+        assert not acceptable_reading(bad), bad
 
 
 def test_kanji_and_latin_are_rejected():

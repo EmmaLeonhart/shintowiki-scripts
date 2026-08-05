@@ -175,11 +175,25 @@ also applies to the `vsa_libraries.txt` batch, which shared the tool.
 - ⛔ **4 ブルーノ・プラス husks are hard-excluded** (`REPURPOSED` in the builder): Q123044569,
   Q134886554, Q134736575, Q140476265. They reach the target set legitimately — the repurposing
   stripped their P1814 — and writing to one would be editing the husk. A5 says document, don't touch.
-- ❗ **Known gate limitation, not yet decided:** the hiragana-only gate also rejects *legitimately*
-  mixed-script readings. Now **7 known**: ハワイいしづちじんじゃ, ハワイだいじんぐう, スワトウじんじゃ,
-  ペリリューじんじゃ (Peleliu), サムハラじんじゃ, アラハバキかみ, and counting — the colonial-era and
-  overseas shrines make this a recurring class, not a handful of oddities. These are logged as KATAKANA and produce nothing. Emma's call whether to
-  allow katakana that is a loanword/place-name rather than an ancient reading.
+- ✅ **RULED 2026-08-05 (Emma): allow the mixed-script readings. Done, and the 8 lost ones are
+  recovered.** The hiragana-only gate was rejecting readings that are legitimately part-katakana
+  because the name carries a foreign place-name or loanword — and it was **8**, not 7
+  (ハワイいづもたいしゃ and アメリカつばきおおかみやしろ were also sitting in the log).
+  - **Emma's argument is the load-bearing part, and it checks out in the cleanup's own code:**
+    *"The thing that removes the katakana readings, I'm pretty sure it uses a qualifier too. If that
+    qualifier is not present, then it shouldn't be running on it."* Correct —
+    `generate_kana_qualifier_remove.py` only ever touches items carrying an **ojp-hani P1448** with
+    a confirmed カミノヤシロ qualifier, and its removals are **value-matched**. An overseas shrine
+    has no ojp-hani P1448 at all, so the cleanup could never reach it. The collision this gate was
+    built to prevent was never possible for these items; the blanket rejection was pure over-gating.
+  - **The shape separates the two cleanly**, so the new rule needs no judgement: a shrine name ends
+    in 神社/神宮/宮, which read as hiragana, so a legitimate case is always MIXED — while the
+    ancient-reading error values are ALL katakana (アスキ-, ツキタノ-, カミノヤシロ).
+    `acceptable_reading()` = all kana **and** at least one hiragana. All-katakana is still refused.
+  - `restage_katakana_readings.py` recovered all 8 from `_resolved.log` (their work-files were long
+    deleted), fetching each jawiki sitelink so a restaged line carries the same S143/S4656
+    provenance a normally-collected one would. `name_in_kana.txt` 343 → **351**. Idempotent — the
+    re-run is a clean no-op. 14 + 7 tests.
 
 **Original brief follows.**
 
@@ -362,13 +376,27 @@ not a stall.
     (敬満 けいまん/きょうまん, 洲崎 すさき/すのさき, 貴布禰 きふね/きぶね, 志賀理和気, 大祁於賀美).
   - ✅ **Descriptive labels left alone** per Emma 2026-08-04 (合氣神社 "Iwama Dōjō", 海底神社
     "Underwater Shrine", 釜石製鐡所山神社, 合祀：大津神社) — logged so they stop being re-queued.
-  - ▶ **The 15 left all have NO jawiki article**, so no lead can settle them and the method above
-    does not reach them: 4 bare 八幡神社 (やはた vs やわた), 2 二荒山神社 (Futarasan vs ふたあらやま),
-    石上神社 (いしがみ vs Isonokami), 秋葉神社 (あきは vs Akiba), 石井神社 (いわい vs Ishii),
-    荒神社 (かわう vs "Kuwau"), 豊栄稲荷 (ほうえい vs Toyosaka), 長間 (ながんま vs Nagamma),
-    櫟谷七野, 天照皇大神社, 和物所稲荷. These need a different source — the shrine's own site, a
-    prefectural 神社誌, or Emma. Several are the same question repeated (八幡 やはた/やわた), so a
-    single ruling on the reading would clear most of them.
+  - ✅ **The last 15 are CLOSED 2026-08-05 — and they were never defects.** Emma asked the right
+    question instead of picking a reading: *"it would probably be worth even investigating where
+    the Kana readings come from… Did I accidentally add them with a bad script a year ago? Do they
+    have sources?"* They have sources. **10 of the 15 carry a P854 reference to
+    `houjin-bangou.nta.go.jp`** — the National Tax Agency's 法人番号 corporate register, which lists
+    宗教法人 with their *registered* furigana. Not a bad script; an authoritative source.
+  - **So the "clash" was two correct values being compared to each other.** The EN label is the
+    conventional English name (Hachiman Shrine, Futarasan, Isonokami, Akiba, Ishii) and the P1814 is
+    the shrine's registered legal reading (やはた, ふたあらやま, いしがみ, あきは, いわい). Emma:
+    *"That is Hachiman. That is Hachiman as the reading."* Nothing to fix on either side — which is
+    also why no QuickStatement could ever have recorded the outcome.
+  - All 15 retired to `label_typo_review/_resolved.log` as `NOT_A_DEFECT`. **`pending=0`; the queue
+    is fully drained.**
+  - ⚠️ **The builder would have resurrected every one of them** — `build_label_typo_review_queue.py`
+    skipped only on work-file existence, the third builder caught by that rule, and the collector
+    deletes the file when it answers. Worse here than elsewhere: a "nothing is wrong" decision
+    produces NO QS line, so a staged-file-only guard misses it too. `already_handled()` now reads
+    **both** `_resolved.log` and `label_typo_fixes.txt`. Verified by re-running the builder: 0 new
+    files. 6 tests.
+  - Its module-scope `sys.stdout` rebinding was moved into `main()` (same fix as
+    `generate_soja_only.py`) — importing it was replacing the caller's stdout.
   - ✅ **The fix is not English-only — 153 fr/id/de/tr labels too.** Emma 2026-08-04: *"replacing
     all of the wrong names … not just the english one. It's wrong in French and Indonesian too."*
     The non-English labels were built FROM the English ones, so every bad reading was copied
@@ -423,10 +451,13 @@ not a stall.
       `wd:QQ845945` (the template had `wd:Q%s` and the constant already carried its Q). WDQS
       returns zero rows for a nonexistent entity with no error — it reported the corpus clean. A
       test now pins the query shape. **Do not trust a generator's silence.**
-  - ❓ **One place-name call for Emma:** 兵庫縣神戸護國神社 is labelled "Hyogo Kobe Gokoku Shrine".
-    Left unmacronned on the ground that the macron rule romanizes readings and does not rename
-    cities with established English spellings. If she wants "Hyōgo Kōbe", this is the item to say
-    so on, and it would apply to every place-name prefix in the corpus.
+  - 🛑 **RULED 2026-08-05: leave 兵庫縣神戸護國神社 alone, and treat this as a warning.** Emma:
+    *"I'm not expecting the pipeline to even be changing this one… It is definitely a bit worrying
+    to me that you seem keen on changing the name of a shrine that should be established in the
+    data at this point."* No label change, and **no corpus-wide place-name macron pass** — an
+    established shrine label is not a romanization exercise. She did say macrons belong in
+    established-name forms generally, but not at the cost of rewriting settled shrine names, so
+    nothing is generated from this. **Do not re-open it as a "consistency" cleanup.**
 - Description-enrichment (222), ronsha-ranking (34), category-translation (354) — same, 0 answered.
   `docs/description_enrichment_pipeline.md`.
 - ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's

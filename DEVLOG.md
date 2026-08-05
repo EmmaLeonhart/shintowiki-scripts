@@ -8568,3 +8568,53 @@ the QID.
 Local test state: 1,097 pass. The 3 remaining failures are ModuleNotFoundError
 for mwclient in the dev environment, which CI installs; the same gap hides 15
 more suites behind opencc/mwclient imports. Not verified green in CI yet.
+
+## 2026-08-05 — three rulings from Emma, and the one that inverted a whole queue
+
+**Katakana gate: relaxed.** The hiragana-only gate for P1814 was also rejecting
+readings that are legitimately part-katakana because the shrine's name carries a
+foreign place-name or loanword. Emma allowed them, and her reason was the
+substantive part: the cleanup this gate was guarding against keys off a
+qualifier, so it should not be constraining items that lack it. Checked in
+generate_kana_qualifier_remove.py rather than taken on trust — it only touches
+items with an ojp-hani P1448 carrying a confirmed カミノヤシロ qualifier, and its
+removals are value-matched. An overseas shrine has no ojp-hani P1448, so the
+collision could never have happened. The blanket rejection was over-gating.
+
+The shape separates the two without judgement: a shrine name ends in 神社/神宮/宮,
+which read as hiragana, so a legitimate mixed reading always contains hiragana,
+while the ancient-reading error values are all-katakana. acceptable_reading() is
+"all kana and at least one hiragana". All-katakana still refused.
+
+It was 8 lost readings, not the 7 the queue tracked. restage_katakana_readings.py
+recovers them from _resolved.log — their work-files were deleted long ago — and
+fetches each jawiki sitelink so the restaged lines carry the same S143/S4656
+provenance a normally-collected one would. name_in_kana.txt 343 -> 351.
+
+**The 15 stuck label typos: not defects at all.** Emma declined to rule on the
+reading and asked where the kana came from — whether a bad script had added them
+and whether they had sources. They have sources. 10 of the 15 carry a P854
+reference to houjin-bangou.nta.go.jp, the National Tax Agency's corporate
+register, which lists religious corporations with their registered furigana.
+
+So the "clash" was two correct values being compared: the EN label is the
+conventional English name (Hachiman, Futarasan, Isonokami) and the P1814 is the
+registered legal reading (やはた, ふたあらやま, いしがみ). Nothing was wrong on
+either side, which is also why no QuickStatement could record the outcome. All
+15 retired as NOT_A_DEFECT; pending is now 0.
+
+That last point had teeth. build_label_typo_review_queue.py skipped only on
+work-file existence — the third builder caught by that — and here a
+"nothing is wrong" decision produces no QS line, so a staged-file-only guard
+would have missed it too and resurrected all 15 on the next run. already_handled()
+now reads both _resolved.log and label_typo_fixes.txt; verified by re-running the
+builder for 0 new files. Its module-scope sys.stdout rebinding also moved into
+main(), same fix as generate_soja_only.py.
+
+**Place-name macrons: no.** Emma declined the corpus-wide pass and flagged the
+ask itself — that being keen to change an established shrine's name is the
+worrying part. 兵庫縣神戸護國神社 keeps "Hyogo Kobe Gokoku Shrine". Nothing
+generated. Recorded in the queue as not to be re-opened as a consistency cleanup.
+
+Local suite: 1,113 pass. mwclient/opencc remain absent in the dev env, hiding
+some suites that CI runs.

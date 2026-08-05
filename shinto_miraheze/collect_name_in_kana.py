@@ -56,6 +56,39 @@ ARTICLE_RE = re.compile(r"<!--\s*ARTICLE:\s*(\S+)\s*-->")
 # ぁ-ゖ hiragana, ー the long-vowel mark, ゝゞ the iteration marks.
 HIRAGANA_ONLY = re.compile(r"^[ぁ-ゖーゝゞ]+$")
 
+# Any kana, and "does it contain hiragana at all". Together these express the
+# real gate — see acceptable_reading().
+KANA_ONLY = re.compile(r"^[ぁ-ゖァ-ヺーゝゞヽヾ]+$")
+HAS_HIRAGANA = re.compile(r"[ぁ-ゖ]")
+
+
+def acceptable_reading(kana):
+    """True if this may be written to P1814.
+
+    RELAXED 2026-08-05 on Emma's ruling. The gate used to demand pure hiragana,
+    which also rejected readings that are legitimately part-katakana because the
+    name contains a foreign place-name or loanword — ハワイだいじんぐう,
+    ペリリューじんじゃ (Peleliu), スワトウじんじゃ, サムハラじんじゃ,
+    アラハバキかみ. The colonial-era and overseas shrines make that a growing
+    class, not a handful of oddities, and every one of them produced nothing.
+
+    WHY RELAXING IS SAFE, which is Emma's own argument and was checked in the
+    cleanup's code rather than assumed: the katakana this gate exists to keep out
+    is the ancient-reading error, and the cleanup undoing it
+    (`generate_kana_qualifier_remove.py`) only ever touches items carrying an
+    **ojp-hani P1448** official name with a confirmed カミノヤシロ qualifier, and
+    emits VALUE-MATCHED removals. An overseas shrine has no ojp-hani P1448 at
+    all, so the cleanup cannot reach it and there is nothing to collide with.
+
+    The shape separates the two cleanly. A legitimate case is always MIXED,
+    because a shrine name ends in 神社/神宮/宮 and those read as hiragana. The
+    error values are ALL katakana (アスキ-, ツキタノ-, カミノヤシロ). So: all
+    kana, and at least one hiragana character.
+    """
+    if not kana or not KANA_ONLY.match(kana):
+        return False
+    return bool(HAS_HIRAGANA.search(kana))
+
 
 def parse_answer(text):
     """(kind, payload) from a work-file body, or None while ANSWER is empty."""
@@ -109,9 +142,11 @@ def main():
 
         if kind == "KANA":
             kana = clean_kana(payload)
-            if not HIRAGANA_ONLY.match(kana or ""):
+            if not acceptable_reading(kana):
                 rejected += 1
-                resolved.append(f"{qid}\tREJECTED_NOT_HIRAGANA\t{payload}")
+                why = ("ALL_KATAKANA" if KANA_ONLY.match(kana or "")
+                       else "NOT_KANA")
+                resolved.append(f"{qid}\tREJECTED_{why}\t{payload}")
                 done_files.append(path)
                 continue
             line = f'{qid}|P1814|"{kana}"'
