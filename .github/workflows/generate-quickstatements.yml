@@ -133,6 +133,14 @@ jobs:
           sleep 5
           python generate_kana_qualifier_remove.py
 
+      # Must run AFTER label_typo_fixes.txt is up to date — it reads that file to
+      # learn which English name changed, then rewrites the fr/id/de/tr labels
+      # built on the old one. Self-healing: it skips any item whose en label has
+      # already been corrected on Wikidata, since the old name is then unknown.
+      - name: Propagate corrected EN labels into the other languages
+        continue-on-error: true
+        run: python shinto_miraheze/generate_multilingual_label_fixes.py
+
       - name: Generate Reisai (例祭) QS from jawiki (regenerate each run)
         working-directory: modern-quickstatements
         continue-on-error: true

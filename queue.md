@@ -344,6 +344,33 @@ moves) — and nothing since. Waiting on it is not a plan.
     櫟谷七野, 天照皇大神社, 和物所稲荷. These need a different source — the shrine's own site, a
     prefectural 神社誌, or Emma. Several are the same question repeated (八幡 やはた/やわた), so a
     single ruling on the reading would clear most of them.
+  - ✅ **The fix is not English-only — 153 fr/id/de/tr labels too.** Emma 2026-08-04: *"replacing
+    all of the wrong names … not just the english one. It's wrong in French and Indonesian too."*
+    The non-English labels were built FROM the English ones, so every bad reading was copied
+    outward — 寒川神社 carried "sanctuaire de Samugawa" and "Kuil Samugawa" beside the en label.
+    **75 of the 79 corrected items had a foreign twin.** `generate_multilingual_label_fixes.py` →
+    `multilingual_label_fixes.txt`, registered in `ATOMIC_FILES`, wired into
+    `generate-quickstatements.yml` after the label step, 15 tests.
+    - It rewrites only the NAME inside each foreign label, keeping that language's own phrasing,
+      and it skips any label that does not carry the old name (a translated one has nothing wrong).
+    - ⚠️ **French elision is the part that bites.** Four real bugs in the first run: Ō was not in
+      the vowel set so `d’Oominakami` became `de Ōminakami`; Y was in it so `de Yagiri` became
+      `d’Yakiri`; the article was rewritten whenever anything changed rather than only when the
+      name's vowel class flips; and a generic suffix punctuated differently either side
+      (`Okagagū` vs `Okada-gū`) dropped the gū entirely. All four have tests.
+  - ✅ **"hikida" was NOT garbage — it is signal, exactly as `CLAUDE.md` warns.** The item's own ja
+    aliases include **疋田神社**, read ひきだ, so Hikida is a genuine alternative name for
+    調田坐一事尼古神社; it was only ever wrong as the *primary* label. Emma: *"Hikida capitalized
+    should be an alias and the one in the different languages should be like that."* Added as an
+    alias in en/fr/id. **This is a hand-kept list, not a rule** — aliasing every replaced label
+    would preserve the misreadings too (Samugawa for 寒川 is simply wrong).
+  - ✅ **`sequential_misc.txt` finally has the pair it was built for.** The same item's P1814 is
+    also a wrong name: くだにますひとことねこ is the jawiki reading minus its first character. Correct
+    value ADDED + truncated one REMOVED, on the same property — which the random atomic drip cannot
+    do safely, since the removal could fire first and leave the shrine with no reading. The Open
+    questions note said the mechanism was built but *"population is the open bit"*; this is the
+    first genuine remove-then-add pair to turn up. Its other P1814, ツキタノ-, is left alone — that
+    is the kana-qualifier cleanup's territory and two passes on one property is how values get lost.
   - ❓ **One place-name call for Emma:** 兵庫縣神戸護國神社 is labelled "Hyogo Kobe Gokoku Shrine".
     Left unmacronned on the ground that the macron rule romanizes readings and does not rename
     cities with established English spellings. If she wants "Hyōgo Kōbe", this is the item to say

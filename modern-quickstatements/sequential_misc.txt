@@ -47,3 +47,21 @@
 Q140568717|P50|Q140568870|P1545|"1"
 Q140568719|P50|Q140568870|P1545|"1"
 Q140568870|P1960|"kiJ9hGYAAAAJ"
+
+# ── 調田坐一事尼古神社 (Q22119431): the P1814 is a wrong name too ──────────────
+# Emma 2026-08-04: "replacing all of the wrong names on 'hikida Shrine' not just
+# the english one". The labels are handled in multilingual_label_fixes.txt, but
+# the kana is wrong as well: the item carries くだにますひとことねこじんじゃ, which is
+# the jawiki lead's つくだにますひとことねこじんじゃ with its first character missing.
+#
+# This is an ADD-then-REMOVE pair on the SAME property, so it cannot go in the
+# atomic drip — under the random run order the removal could fire first and leave
+# the shrine with no modern reading at all. This file is the one place where line
+# N is confirmed landed before N+1 is attempted, which is what makes it safe.
+#
+# The item's OTHER P1814, ツキタノ- , is deliberately left alone: it is the ancient
+# Engishiki katakana reading (plus a trailing-hyphen artifact), and relocating
+# those onto an ojp-hani P1448 qualifier is the kana-qualifier cleanup's job, not
+# this one. Two passes touching the same property is how values get lost.
+Q22119431|P1814|"つくだにますひとことねこじんじゃ"|S143|Q177837|S4656|"https://ja.wikipedia.org/wiki/%E8%AA%BF%E7%94%B0%E5%9D%90%E4%B8%80%E4%BA%8B%E5%B0%BC%E5%8F%A4%E7%A5%9E%E7%A4%BE"
+-Q22119431|P1814|"くだにますひとことねこじんじゃ"

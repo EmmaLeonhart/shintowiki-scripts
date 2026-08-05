@@ -43,12 +43,37 @@ def test_the_shipped_file_holds_exactly_the_intended_lines():
     Line 3 was appended by generate_scholar_id.py on its GATE_DATE (2026-07-29 UTC,
     commit 3f69905cb) — the two-week-delayed P1960 for Emma's own researcher item. It
     is BELOW the existing two, which is what the file's append-only rule requires.
+
+    Lines 4-5 (2026-08-04) are the first pair this file was actually built for. The
+    Open-questions note that created the channel said the mechanism existed but
+    "population is the open bit" — no clean remove-then-add pair had turned up. This
+    is one: 調田坐一事尼古神社's P1814 is the jawiki reading with its first character
+    missing (くだにます… for つくだにます…), so the correct value has to be ADDED and the
+    truncated one REMOVED, on the same property. In the random atomic drip the
+    removal could fire first and leave the shrine with no modern reading at all;
+    here line N is confirmed landed before N+1 is attempted.
     """
     assert dde.load_sequential_lines() == [
         'Q140568717|P50|Q140568870|P1545|"1"',
         'Q140568719|P50|Q140568870|P1545|"1"',
         'Q140568870|P1960|"kiJ9hGYAAAAJ"',
+        'Q22119431|P1814|"つくだにますひとことねこじんじゃ"|S143|Q177837|S4656|'
+        '"https://ja.wikipedia.org/wiki/%E8%AA%BF%E7%94%B0%E5%9D%90%E4%B8%80%E4%BA%8B'
+        '%E5%B0%BC%E5%8F%A4%E7%A5%9E%E7%A4%BE"',
+        '-Q22119431|P1814|"くだにますひとことねこじんじゃ"',
     ]
+
+
+def test_the_add_precedes_its_removal():
+    """The whole reason the pair is in this file. If the removal ever sorts above
+    its add, the cursor would run it first and blank the shrine's only correct
+    reading — the exact failure the sequential channel exists to prevent."""
+    lines = dde.load_sequential_lines()
+    add = next(i for i, l in enumerate(lines)
+               if l.startswith('Q22119431|P1814|'))
+    rm = next(i for i, l in enumerate(lines)
+              if l.startswith('-Q22119431|P1814|'))
+    assert add < rm
 
 
 def test_every_shipped_sequential_line_parses():
