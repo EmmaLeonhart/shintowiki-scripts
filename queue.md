@@ -127,14 +127,27 @@ also applies to the `vsa_libraries.txt` batch, which shared the tool.
   from a TSV, then the normal `collect_*.py` runs unchanged and applies its own gates. Answers
   kept in `shinto_miraheze/local_answers/`. It refuses to overwrite a marker the routine already
   filled.
-- ▶ **The target set leaks non-shrines, unfixed.** Three of the 34 are not shrines: Q7137401
-  水谷川忠起 is a **person** (Meiji priest, 春日大社宮司), Q5367406 春日山原始林 is a forest,
-  Q7797685 宮中三殿 is the palace sanctuaries. The two place-ish ones were answered (P1814 is not
-  shrine-specific and the readings are plainly right); the person was left pending rather than
-  worked around. Worth finding where the P31 filter lets a person through before the next tranche.
-- ⏸ **2 work-files deliberately unanswered:** Q11544511 機殿神社 (joint article for 神服織機殿神社 +
-  神麻続機殿神社; its lead opens with those two names and the pair name carries no reading) and
-  Q7137401 水谷川忠起 (the person above).
+- ✅ **The non-shrine leak is FIXED 2026-08-05 — and our P31 filter was never the cause.**
+  Measured, not assumed: all three items genuinely carry `P31 = Q845945` on Wikidata alongside
+  their real class. Q7137401 水谷川忠起 is `P31 = Q5` (human) **AND** `P31 = Q845945`. It is an
+  upstream data defect, so no tightening of the shrine query can exclude them — the only handle is
+  the OTHER class the item carries.
+  - A survey of the whole target set found **135 distinct co-classes over 2,684 (item,class)
+    pairs**, almost all legitimate shrine subtypes (Shikinaisha 442, Kokuhei-sha 440, Shikinai
+    Ronsha 226, Hachiman 170). The non-shrine tail is **8 items**: the person, 4 disambiguation
+    pages (浮島神社, 天山神社, 八海神社, 海神社 — each names several shrines, so a reading attaches
+    to none), 2 festivals (御柱祭, 住吉の御田植), a book (住吉大社神代記), and an organization
+    (鹿児島県神社庁). `NOT_A_SHRINE` in the builder excludes them and **prints each drop** — a
+    silent one would read as the query merely missing them.
+  - **The rule is "is it a nameable place", NOT "is it a shrine"** — Emma's ruling that the
+    place-ish ones stay in. A forest, a mountain, a sea cave, a kofun and a building complex all
+    have real readings, and `_resolved.log` already carries 東京十社 → とうきょうじっしゃ, so
+    groups-of-shrines are settled as answerable too. A literal "must be a shrine" gate would have
+    thrown all of that away. 8 tests pin both halves.
+  - Q7137401's work-file is retired and logged `NOT_A_SHRINE` in `_resolved.log`.
+- ⏸ **1 work-file deliberately unanswered:** Q11544511 機殿神社 (joint article for 神服織機殿神社 +
+  神麻続機殿神社; its lead opens with those two names and the pair name carries no reading).
+  Q7137401 水谷川忠起 is no longer among them — it is excluded at the source now, see above.
   The latest 54 are the whole 神宮125社 slice (A0c's "P1814 pass over the 54" — the real figure was
   55). `lineage/fetch_jingu125_kana.py` → `_jingu125_kana.tsv` → `lineage/stage_jingu125_kana.py
   --apply`. **53 of the 54 already had a work-file waiting for the cloud routine**, which would

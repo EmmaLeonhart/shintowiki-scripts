@@ -8483,3 +8483,31 @@ ATOMIC_FILES entry removed, generate-quickstatements.yml step removed (that unwi
 landed in 7876db8e; this commit deletes the files themselves). The kana-based label
 pipelines (which produce house-shape names natively) are unaffected and remain the label
 sources. The other-religions sizing report stays in docs/ (expires per reports rule).
+
+## 2026-08-05 — name-in-kana target set: the non-shrine leak was upstream, not ours
+
+Queue A0 carried "the target set leaks non-shrines — worth finding where the P31
+filter lets a person through". It doesn't. Measured with a direct
+`wbgetentities` call on the three named items: every one genuinely carries
+`P31 = Q845945` on Wikidata alongside its real class, and Q7137401 水谷川忠起 is
+simultaneously `P31 = Q5` (human) and a Shinto shrine. No tightening of the
+shrine query can exclude them, because by the query's terms they ARE shrines.
+The only available handle is the other class the item carries.
+
+Surveyed the whole target set for co-classes: 135 distinct, 2,684 (item,class)
+pairs, overwhelmingly legitimate shrine subtypes (Shikinaisha 442, Kokuhei-sha
+440, Hachiman 170). The non-shrine tail is 8 items — the person, 4
+disambiguation pages, 2 festivals, a book, an organization.
+
+The gate is "is this a nameable place", not "is this a shrine", and that
+distinction is load-bearing. Emma's ruling in A0 was that the place-ish items
+stay in because P1814 is not shrine-specific; `_resolved.log` already carries
+東京十社 → とうきょうじっしゃ. A literal is-it-a-shrine test would have dropped a
+forest, a mountain, a sea cave, a kofun, a building complex and the
+groups-of-shrines that are already answered and staged.
+
+`NOT_A_SHRINE` + `not_a_shrine_reason()` in `build_name_in_kana_queue.py`, kept
+pure so it tests without WDQS; the query now returns co-classes via
+GROUP_CONCAT. Drops are printed, never silent. 8 tests pin both the exclusions
+and the deliberate non-exclusions. Q7137401's work-file retired to
+`_resolved.log` as NOT_A_SHRINE.

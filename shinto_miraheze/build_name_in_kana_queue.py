@@ -69,13 +69,15 @@ THROTTLE = 0.4
 BATCH = 20                       # titles per ja.wikipedia extracts call
 
 TARGET_QUERY = """
-SELECT ?item ?ja ?en ?art WHERE {
+SELECT ?item ?ja ?en ?art (GROUP_CONCAT(DISTINCT ?cls; separator=",") AS ?classes) WHERE {
   ?item wdt:P31 wd:Q845945 .
   ?art schema:about ?item ; schema:isPartOf <https://ja.wikipedia.org/> .
   FILTER NOT EXISTS { ?item wdt:P1814 ?k }
+  OPTIONAL { ?item wdt:P31 ?cls }
   OPTIONAL { ?item rdfs:label ?ja . FILTER(LANG(?ja)="ja") }
   OPTIONAL { ?item rdfs:label ?en . FILTER(LANG(?en)="en") }
 }
+GROUP BY ?item ?ja ?en ?art
 """
 
 TASK = (
@@ -106,6 +108,46 @@ REPURPOSED = {
     "Q134736575",   # 見光寺
     "Q140476265",   # created then blanked; junk husk
 }
+
+
+# ---------------------------------------------------------------------------
+# Items that are NOT shrines but reach the target set anyway.
+#
+# MEASURED 2026-08-05, and the finding inverts the original suspicion: our P31
+# filter is NOT leaky. Every one of these items genuinely carries
+# `P31 = Q845945` on Wikidata, asserted alongside its real class — Q7137401
+# 水谷川忠起 is `P31 = Q5` (human) AND `P31 = Q845945`. The defect is upstream
+# data, so no tightening of the shrine query can exclude them; the only handle
+# is the OTHER class the item carries.
+#
+# A survey of the whole target set found 135 distinct co-classes and 2,684
+# (item, class) pairs. The overwhelming majority are legitimate shrine subtypes
+# (Shikinaisha 442, Kokuhei-sha 440, Hachiman shrine 170, …). The exclusions
+# below are the tail where the item is definitionally not a nameable shrine, so
+# a P1814 shrine-reading attaches to the wrong kind of thing entirely.
+#
+# DELIBERATELY NOT EXCLUDED — Emma's ruling in queue.md A0: "the two place-ish
+# ones were answered (P1814 is not shrine-specific and the readings are plainly
+# right)". So a forest (Q5367406 春日山原始林), a mountain, a sea cave, a
+# building complex (Q7797685 宮中三殿) and a kofun all stay in: they are named
+# places whose reading is a real fact. Only non-places are dropped.
+NOT_A_SHRINE = {
+    "Q5":         "human",                     # Q7137401 水谷川忠起, a Meiji 春日大社宮司
+    "Q4167410":   "Wikimedia disambiguation page",  # names several shrines, not one
+    "Q7725634":   "literary work",             # Q11381815 住吉大社神代記, a book
+    "Q11487032":  "shikinen-sai (a festival)", # Q3698846 御柱祭
+    "Q11489226":  "otaue matsuri (a festival)",  # Q11381803 住吉の御田植
+    "Q11590703":  "Jinja-cho (an organization)",  # Q135250101 鹿児島県神社庁
+}
+
+
+def not_a_shrine_reason(classes):
+    """Reason this item is not a shrine, or None. Pure — `classes` is an iterable
+    of P31 QIDs. Kept separate from the query so it is testable without WDQS."""
+    for qid in classes:
+        if qid in NOT_A_SHRINE:
+            return f"{qid} ({NOT_A_SHRINE[qid]})"
+    return None
 
 
 QS_OUT = os.path.join(REPO_ROOT, "modern-quickstatements", "name_in_kana.txt")
@@ -162,14 +204,29 @@ def sparql(query):
 
 
 def targets():
-    """[(qid, ja_label, en_label, ja_title)] — shrines with a jawiki article, no P1814."""
-    out = []
+    """[(qid, ja_label, en_label, ja_title)] — shrines with a jawiki article, no P1814.
+
+    Items co-classed as a non-shrine (see NOT_A_SHRINE) are dropped here and
+    reported, not silently: they are a Wikidata data defect we route around, and
+    a silent drop would look like the query simply missing them.
+    """
+    out, dropped = [], []
     for b in sparql(TARGET_QUERY):
         qid = b["item"]["value"].rsplit("/", 1)[-1]
+        classes = [u.rsplit("/", 1)[-1]
+                   for u in b.get("classes", {}).get("value", "").split(",") if u]
+        reason = not_a_shrine_reason(classes)
+        if reason:
+            dropped.append((qid, b.get("ja", {}).get("value", ""), reason))
+            continue
         art = b["art"]["value"]
         title = urllib.parse.unquote(art.rsplit("/", 1)[-1]).replace("_", " ")
         out.append((qid, b.get("ja", {}).get("value", ""),
                     b.get("en", {}).get("value", ""), title))
+    if dropped:
+        print(f"  excluded {len(dropped)} non-shrine item(s) co-classed as such:")
+        for qid, ja, reason in sorted(dropped):
+            print(f"    {qid:<12} {ja:<20} {reason}")
     out.sort(key=lambda r: int(r[0][1:]))
     return out
 
