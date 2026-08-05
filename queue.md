@@ -672,7 +672,7 @@ proves too slow. It isn't a problem now → dormant.
 
 ## Pinned tail (keep last)
 
-- [ ] Ensure the five session-local crons are running (this session: work-loop d6754ae5 :03,
-  auto-flush 3d3cd832 :15, status-report 0df6273e :42, briefing 257eeecc 08:03, debrief ee782e80
-  23:57). SYNC fast-forwards onto origin/main each tick.
+- [ ] Ensure the five session-local crons are running (this session 2026-08-05: work-loop bd4cf062
+  :03, auto-flush 73fd217e :15, status-report c6048135 :42, briefing acf528e2 08:03, debrief
+  4c5db204 23:57). SYNC fast-forwards onto origin/main each tick.
 - [ ] Run the status-report action once more independently as an end-of-session summary.
