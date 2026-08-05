@@ -141,6 +141,14 @@ jobs:
         continue-on-error: true
         run: python shinto_miraheze/generate_multilingual_label_fixes.py
 
+      # A rule, not a queue: French elision needs no per-item judgement, so it
+      # generates its QuickStatements directly. One WDQS query, filtered
+      # server-side. Regenerated each run so a "de Ōmi…" introduced by any future
+      # label pass is caught on the next fire.
+      - name: Generate French elision fixes (sanctuaire de X -> d’X)
+        continue-on-error: true
+        run: python shinto_miraheze/generate_french_elision_fixes.py
+
       - name: Generate Reisai (例祭) QS from jawiki (regenerate each run)
         working-directory: modern-quickstatements
         continue-on-error: true

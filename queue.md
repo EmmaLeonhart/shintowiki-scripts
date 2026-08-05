@@ -371,6 +371,33 @@ moves) — and nothing since. Waiting on it is not a plan.
     questions note said the mechanism was built but *"population is the open bit"*; this is the
     first genuine remove-then-add pair to turn up. Its other P1814, ツキタノ-, is left alone — that
     is the kana-qualifier cleanup's territory and two passes on one property is how values get lost.
+  - ✅ **French elision is now a RULE with its own generator, not a queue.** Emma 2026-08-04:
+    *"de Ō should be corrected to d'Ō across them with an additional pipeline thing that makes the
+    quickstatements instantly if it is something that was universal."*
+    `generate_french_elision_fixes.py` → `french_elision_fixes.txt`, registered, in CI, 12 tests.
+    **Measured before writing anything** (23,892 fr-labelled shrine items):
+
+    | pattern | count |
+    |---|---|
+    | `de` + true vowel (incl. Ō Ū) | **0** |
+    | `d’` + true vowel | 4,675 |
+    | `d’` + consonant | 0 |
+    | `de` + H | **25** |
+    | `d’` + H | 3,645 |
+
+    So **the "de Ō" case does not exist in the corpus** — real vowels are already 100% elided, and
+    there are no reverse errors. The only live class is **H**, where the corpus itself has ruled
+    3,645 to 25: "sanctuaire d’Hachiman" and "sanctuaire de Hachiman" both exist for the same name.
+    Those 25 (21 of them 白山神社) are what is staged. The generator stays general, so the first
+    "de Ōmi…" a future label pass introduces is caught on the next fire.
+    - ⚠️ **The measurement is the point, not decoration.** Elision before a true vowel is
+      obligatory French and needs no judgement — but H is exactly where French grammar does *not*
+      decide (mute h elides, aspirated h does not, and Japanese h- is neither by definition).
+      Applying strict grammar would have "corrected" 3,645 correct labels into wrong ones.
+    - ⚠️ **A broken query and a clean corpus look identical.** The first version asked for
+      `wd:QQ845945` (the template had `wd:Q%s` and the constant already carried its Q). WDQS
+      returns zero rows for a nonexistent entity with no error — it reported the corpus clean. A
+      test now pins the query shape. **Do not trust a generator's silence.**
   - ❓ **One place-name call for Emma:** 兵庫縣神戸護國神社 is labelled "Hyogo Kobe Gokoku Shrine".
     Left unmacronned on the ground that the macron rule romanizes readings and does not rename
     cities with established English spellings. If she wants "Hyōgo Kōbe", this is the item to say
