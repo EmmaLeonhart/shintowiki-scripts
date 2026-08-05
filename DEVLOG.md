@@ -8511,3 +8511,28 @@ pure so it tests without WDQS; the query now returns co-classes via
 GROUP_CONCAT. Drops are printed, never silent. 8 tests pin both the exclusions
 and the deliberate non-exclusions. Q7137401's work-file retired to
 `_resolved.log` as NOT_A_SHRINE.
+
+## 2026-08-05 — the remote routine is a trickle, not a stall; and a prompt that argued with itself
+
+The queue said the cloud routine "has answered NOTHING since 2026-07-28". Stale:
+it fired today (988c2e5c, 5 items). Re-ran all five collectors — 2 collectable,
+3 still at resolved=0. Staged Q135289475's description and the 奥六郡 category
+move. The old conclusion survives on new grounds: ~5 items/day against 2,252
+entries is ~15 months, so local batches stay the road.
+
+Checking that one answer turned up a real defect. The work-file TASK said
+descriptions take a "lowercase start", while its own worked example read
+"Shinto shrine in Maebashi, Gunma Prefecture, Japan" — capital S. The routine
+followed the example, so the answer was fine, but a future answerer following
+the sentence would not be.
+
+Settled by measuring instead of reasoning: of ~14,300 English descriptions on
+Shinto shrine items, 11,487 begin "Shinto" and exactly 1 begins "shinto".
+The instruction was wrong, not the answer. This is the same shape as the French
+elision finding — a plausible style rule, applied blind, would have moved
+thousands of correct values to the wrong side.
+
+Fixed in build_description_enrichment_queue.py and remote_queue.py, and
+rewritten across all 221 pending work-files. The rewrite touches the TASK
+comment only: each file's pre-TASK region (which holds the ANSWERS block) was
+asserted byte-identical before writing.

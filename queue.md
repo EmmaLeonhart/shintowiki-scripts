@@ -313,12 +313,24 @@ under A00.
 
 ✅ **The P1814 pass is DONE (2026-08-04)** — 54 staged, see A0. Nothing open in A0c.
 
-## A1. ▶ Cloud-answer collectors — the routine has answered NOTHING since 2026-07-28
+## A1. ▶ Cloud-answer collectors — the routine is ALIVE but delivers ~5 items/day
 
-All four collectors were run 2026-08-04 and every one returned `resolved=0`: **not a single
-pending work-file has a filled answer marker.** The routine's push was fixed 2026-07-28 and it
-delivered one batch that day (9 label typos, 1 ronsha ranking, 11 descriptions, 12 category
-moves) — and nothing since. Waiting on it is not a plan.
+**Corrected 2026-08-05: "answered NOTHING since 2026-07-28" was stale.** The routine fired again
+today (`988c2e5c`, 5 items) and all five collectors were re-run: **2 were collectable** —
+`Q135289475|Den|"Shinto shrine in Ika district, Ōmi Province, Japan"` staged in
+`description_enrichment_en.txt` (22 lines), and `Category:奥六郡 → Category:Okurokugōri` appended to
+`category_moves.csv`. The other three returned `resolved=0`.
+**The conclusion the old wording reached is still right, for a different reason:** ~5 items/day
+against 2,252 queue entries is ~15 months. Local batches remain the road; the routine is a trickle,
+not a stall.
+- ✅ **A prompt bug found while checking that answer, and it contradicted itself.** The TASK text
+  said descriptions take a "lowercase start" while its own worked example read "**S**hinto shrine
+  in Maebashi…". Settled by measuring the corpus rather than picking a rule: of 14,300 en
+  descriptions on shrine items, **11,487 begin "Shinto" against 1 beginning "shinto"**. The
+  routine's capitalized answer was correct and the instruction was wrong — following it literally
+  would have produced the 1-in-11,488 form. Fixed in `build_description_enrichment_queue.py`,
+  `remote_queue.py`, and rewritten in all 221 pending work-files (TASK comment only; each file's
+  ANSWERS block was asserted byte-identical before the write).
 - ✅ `collect_label_typo_answers.py` — **128 of the 143 answered locally 2026-08-04**; 71 became
   `Len` lines in `label_typo_fixes.txt` (79 total). **15 left**, all of them items with no jawiki
   article (below). Answers + reasoning in `shinto_miraheze/local_answers/label_typo_2026-08-04*.tsv`.
