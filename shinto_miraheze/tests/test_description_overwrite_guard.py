@@ -49,14 +49,37 @@ def test_absent_description_may_be_written():
     assert needs_a_description("   ")
 
 
-def test_boilerplate_may_be_replaced():
-    """Not merely allowed — required. The prefecture-level form is what collides,
-    so replacing it with a municipality-level one is the pipeline's whole job."""
+def test_only_the_exact_generic_may_be_replaced():
+    assert needs_a_description("Shinto shrine in Japan")
+    assert needs_a_description("  shinto shrine in japan  ")
+
+
+def test_a_located_description_may_NOT_be_replaced():
+    """Emma 2026-08-05: "We were never supposed to enrich English descriptions
+    that aren't equal to Shinto shrine in Japan."
+
+    The first version of this gate allowed every `Shinto shrine in X`, treating
+    a prefecture-level description as a placeholder worth improving. Wrong:
+    naming the prefecture IS the information, put there deliberately, and this
+    pipeline does not get to overrule it. 11,369 shrine items carry one of these
+    forms, so the earlier rule put all of them in reach."""
     for d in ("Shinto shrine in Saikai, Japan",
               "Shinto shrine in Shizuoka Prefecture, Japan",
+              "Shinto shrine in Tokyo, Japan",
               "Former Shinto shrine in Taiwan",
               "shinto shrine in Kyoto, Japan"):
-        assert needs_a_description(d), d
+        assert not needs_a_description(d), d
+
+
+def test_the_exact_generic_does_not_actually_occur():
+    """Measured 2026-08-05: ZERO of the 14,300 English descriptions on Shinto
+    shrine items are exactly 'Shinto shrine in Japan'. The exact-match arm is
+    therefore dead in the current corpus, and the rule reduces to "only items
+    with no description at all". Kept because the arm is what Emma's wording
+    licenses, not because it fires — if it silently started matching, that
+    would be a corpus change worth noticing, not a licence to rewrite."""
+    assert needs_a_description("Shinto shrine in Japan")
+    assert not needs_a_description("Shinto shrine in Japan, Kansai")
 
 
 def test_hand_written_annotations_are_protected():
@@ -65,19 +88,24 @@ def test_hand_written_annotations_are_protected():
 
 
 def test_a_description_merely_containing_the_phrase_is_still_protected():
-    """The match is anchored. 'Ronsha 2 of the Shinto shrine in X' mentions the
-    boilerplate but is not it, and an unanchored search would clobber it."""
+    """Exact match, not substring. 'Ronsha 2 of the Shinto shrine in Kuwana'
+    mentions the generic form but is not it."""
     assert not needs_a_description("Ronsha 2 of the Shinto shrine in Kuwana")
+    assert not needs_a_description("Shinto shrine in Japan; Ronsha 2")
 
 
 def test_collector_finds_protected_members_in_a_work_file():
+    """Both members are protected under Emma's rule — the annotation obviously,
+    and the located description because it names Kuwana. Only the member with no
+    description at all stays answerable."""
     body = (
-        "<!-- ANSWERS:\nQ1: \nQ2: \n-->\n\n== Members ==\n"
+        "<!-- ANSWERS:\nQ1: \nQ2: \nQ3: \n-->\n\n== Members ==\n"
         "* [[d:Q1]] — en='A Shrine' | ja='あ' | EXISTING en desc: 'Ronsha 3 of Yaahino Shrine'\n"
         "* [[d:Q2]] — en='B Shrine' | ja='い' | EXISTING en desc: 'Shinto shrine in Kuwana, Japan'\n"
+        "* [[d:Q3]] — en='C Shrine' | ja='う'\n"
     )
     prot = protected_members(body)
-    assert set(prot) == {"Q1"}
+    assert set(prot) == {"Q1", "Q2"}
     assert prot["Q1"] == "Ronsha 3 of Yaahino Shrine"
 
 

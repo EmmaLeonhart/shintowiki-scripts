@@ -56,23 +56,36 @@ JA_COVERAGE_MAX = 0.10   # stage-1 rule: ja descriptions (nearly) absent
 # recoverable from a location. This is the failure CLAUDE.md names directly:
 # an unfamiliar pattern on this data is signal, not corruption.
 #
-# 111 of the 281 queued members carry one, so the largest bucket in this queue
-# was work that must NOT be done.
-BOILERPLATE_DESC = re.compile(r"^(former\s+)?shinto\s+shrine\s+in\s+.+$", re.I)
+# TIGHTENED 2026-08-05 on Emma's correction: "We were never supposed to enrich
+# English descriptions that aren't equal to Shinto shrine in Japan."
+#
+# The first version of this gate matched any `Shinto shrine in X`, on the
+# reasoning that a prefecture-level description is a placeholder worth improving.
+# That was wrong. 'Shinto shrine in Shizuoka Prefecture, Japan' is not a
+# placeholder — it states the prefecture, which is real information somebody put
+# there. Rewriting it to a municipality is churn on this pipeline's authority,
+# not enrichment.
+#
+# MEASURED, and the result decides the rule's practical meaning: of 14,300
+# English descriptions on Shinto shrine items, **ZERO** are exactly
+# "Shinto shrine in Japan". 11,369 are some other `Shinto shrine in X` and 2,931
+# are something else entirely. So the exact-match arm below is dead in the
+# current corpus by design, and the rule reduces to: this pipeline may only give
+# a description to an item that HAS none.
+GENERIC_DESC = "shinto shrine in japan"
 
 
 def needs_a_description(existing):
     """True if this pipeline may write a description for the item.
 
-    Absent -> yes, that is the whole point. Present and boilerplate -> yes;
-    replacing 'Shinto shrine in Shizuoka Prefecture, Japan' with a
-    municipality-level one is exactly the improvement asked for, and the
-    prefecture-level form is what collides in the first place. Present and
-    anything else -> NO.
+    Absent -> yes; nothing is destroyed by filling an empty field. Exactly the
+    generic "Shinto shrine in Japan" -> yes, it carries no information. Anything
+    else -> NO, including every `Shinto shrine in <somewhere>` form: naming the
+    prefecture IS the information, and this pipeline does not get to overrule it.
     """
     if not existing or not existing.strip():
         return True
-    return bool(BOILERPLATE_DESC.match(existing.strip()))
+    return existing.strip().lower() == GENERIC_DESC
 
 
 MAX_FILES = 400          # first tranche — the cloud routine paces itself anyway

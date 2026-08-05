@@ -478,13 +478,22 @@ not a stall.
   - **Two independent gates, because they fail differently.** `needs_a_description()` in the
     builder stops the ask being made; `protected_members()` in the collector stops an answer
     already sitting in a work-file from being emitted, reading the recorded description out of the
-    work-file so it needs no network. Boilerplate is still replaceable — the prefecture-level form
-    is what collides, so improving it is the pipeline's actual job. 7 tests.
-  - **The queue was 61% work that must not be done: 221 → 86 work-files.** 183 protected members
-    found; 135 files deleted outright (every member protected), 13 had the ask removed while
-    keeping the member as context, since a new description still has to differ from it.
-  - ▶ **The 86 that remain are the real queue** — items with no description, or with replaceable
-    boilerplate. 48 are genuine multi-member collision groups.
+    work-file so it needs no network. 9 tests.
+  - 🛑 **SCOPE CORRECTED by Emma 2026-08-05:** *"We were never supposed to enrich English
+    descriptions that aren't equal to Shinto shrine in Japan."* My first gate allowed any
+    `Shinto shrine in X`, treating a prefecture-level description as a placeholder worth
+    improving. Wrong — naming the prefecture IS the information, and this pipeline does not get
+    to overrule it. **That version put 11,369 items in reach.**
+  - **Measured, and it decides what the rule means in practice: ZERO of the 14,300 English
+    descriptions on shrine items are exactly "Shinto shrine in Japan"** (11,369 are some other
+    `Shinto shrine in X`, 2,931 something else). So the exact-match arm is dead in the current
+    corpus and the rule reduces to: **this pipeline may only give a description to an item that
+    has none.** The arm stays because it is what the wording licenses; a test pins that a
+    near-miss like `Shinto shrine in Japan, Kansai` does not match it.
+  - **The queue was 67% work that must not be done: 221 → 73 work-files.** 216 protected members
+    across the two passes; 148 files deleted outright (every member protected), 24 had the ask
+    removed while keeping the member as context, since a new description still has to differ.
+  - ▶ **The 73 that remain are the real queue** — every one an item with no English description.
 - Ronsha-ranking (34), category-translation (353) — 0 answered.
   `docs/description_enrichment_pipeline.md`.
   - ⚠️ **Ronsha ranking is NOT mechanical** — each work-file asks which of several candidates is

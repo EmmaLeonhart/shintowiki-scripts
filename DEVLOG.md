@@ -8672,3 +8672,41 @@ work-file asks which of several candidates is the likeliest true Engishiki
 shrine, which needs per-candidate research, not a batch answer.
 
 7 new tests; 1,120 pass locally.
+
+## 2026-08-05 — description enrichment, scope corrected by Emma
+
+Emma: "We were never supposed to enrich English descriptions that aren't equal
+to Shinto shrine in Japan."
+
+The gate I added earlier today allowed any `Shinto shrine in X`, on the
+reasoning that a prefecture-level description is a placeholder worth improving
+to municipality level. That was wrong, and wrong in the same direction as the
+bug it was fixing: 'Shinto shrine in Shizuoka Prefecture, Japan' states the
+prefecture, which is real information somebody put there deliberately. Replacing
+it is churn on this pipeline's authority, not enrichment. My version put 11,369
+items in reach.
+
+Measured what the rule means in practice, and the answer is sharper than
+expected: of ~14,300 English descriptions on Shinto shrine items, ZERO are
+exactly "Shinto shrine in Japan". 11,369 are some other `Shinto shrine in X`,
+2,931 are something else. So the exact-match arm never fires in the current
+corpus and the rule reduces to: this pipeline may only give a description to an
+item that has none. The arm stays anyway, because it is what Emma's wording
+licenses, with a test pinning that a near-miss like "Shinto shrine in Japan,
+Kansai" does not match it.
+
+Re-audited under the tighter rule: 33 further protected members, 13 more
+work-files deleted, 11 more edited. Cumulative for the day, 221 -> 73 files —
+67% of that queue was work that had to not be done. Every one of the 73 left is
+an item with no English description.
+
+Re-checked the 7 staged lines against live Wikidata: all 7 target items with no
+description, so all 7 stand.
+
+One test flipped: test_boilerplate_may_be_replaced asserted that located
+descriptions were replaceable, which is exactly what Emma corrected, so it is
+now test_a_located_description_may_NOT_be_replaced. A fixture in the collector
+test used a located description as its not-protected example and had to change
+for the same reason. Both are spec changes, not accommodations to failing code.
+
+1,122 pass locally.
