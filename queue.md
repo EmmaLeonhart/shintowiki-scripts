@@ -52,10 +52,14 @@ more evidence, so where the page says autochthonous and the article named a sour
   (22 blocks). It cannot be one QuickStatement — `LAST` only names the item just created and
   瀧原宮 is an existing item — so `lineage/stage_takihara_p612.py` emits the 瀧原宮 line after the
   batch runs. Run it right after `create_items.py`; it no-ops until then and is idempotent.
-- ✅ **忌部神社 → Q705547 安房神社.** The page said *"comes from the main inbe lineage. Not gosho
-  shrine"*, which refuses 五所神社 without naming a replacement; Emma named the head 2026-08-04.
-  Note the direction: 安房神社 (Tateyama, Chiba) is the head even though the 阿波忌部 migrated
-  *from* Awa/Tokushima, where this 忌部神社 stands. Do not "correct" it to the older province.
+- ✅ **忌部神社 is itself the head → `Q135508874` autochthonous.** The page said *"comes from the
+  main inbe lineage. Not gosho shrine"*, refusing 五所神社 without naming a replacement. Emma first
+  gave Q705547 安房神社, then corrected to **Q11490722** once the direction was raised: the 阿波忌部
+  went *from* Awa/Tokushima, where this shrine stands, *to* Chiba — so 安房神社 is the offshoot and
+  this is the head. Q11490722 is the row's own subject, and a shrine that heads its lineage has no
+  mother house, so it takes the root marker. The 安房神社 line was dropped by `--supersede`;
+  nothing had gone out, the freeze held it. (Unrelated and still correct: 安房神社's *own* P612 →
+  天太玉命神社 Q11442508, from the article read.)
 
 **The sheet, since it caused confusion (Emma 2026-08-04).** The Google Sheet has TWO tabs and
 they are not the same thing. `to_fix` = exactly the rows that produced no statement. `all_444` =
