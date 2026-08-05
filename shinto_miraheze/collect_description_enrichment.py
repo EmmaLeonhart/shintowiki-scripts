@@ -30,6 +30,9 @@ import re
 import sys
 from collections import Counter
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_description_enrichment_queue import needs_a_description  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORKDIR = os.path.join(ROOT, "description_enrichment_en")
 QS_OUT = os.path.join(ROOT, "modern-quickstatements", "description_enrichment_en.txt")
@@ -39,6 +42,23 @@ BLOCK_RE = re.compile(r"<!--\s*ANSWERS:\s*\n(.*?)-->", re.S)
 # [ \t]* NOT \s* — \s matches newlines even without DOTALL, which made an
 # empty answer swallow the next line's QID as its "answer" (caught 2026-07-08).
 LINE_RE = re.compile(r"^(Q\d+):[ \t]*(.*)$", re.M)
+
+# Second gate, independent of the builder's. `Den` OVERWRITES, and 15 of the
+# first 22 staged lines would have replaced a hand-written Engishiki annotation
+# ('Ronsha 3 of Yaahino Shrine') with location boilerplate. The builder now
+# refuses to ask for those, but work-files already on disk still carry the old
+# ask, and an answer filled by the cloud routine arrives here regardless.
+#
+# No network needed: the builder records each member's existing description in
+# the Members section, so the work-file itself says what would be destroyed.
+MEMBER_DESC_RE = re.compile(
+    r"^\* \[\[d:(Q\d+)\]\].*?EXISTING en desc: '(.*?)'", re.M)
+
+
+def protected_members(text):
+    """{qid: existing description} for members this pipeline must not overwrite."""
+    return {q: d for q, d in MEMBER_DESC_RE.findall(text)
+            if not needs_a_description(d)}
 
 
 def parse(text):
@@ -59,7 +79,7 @@ def main():
     if not os.path.isdir(WORKDIR):
         print("no description_enrichment_en/ dir; nothing to collect")
         return
-    pending = resolved = rejected = 0
+    pending = resolved = rejected = blocked = 0
     qs = []
     for fn in sorted(os.listdir(WORKDIR)):
         if not fn.endswith(".wiki"):
@@ -69,6 +89,18 @@ def main():
         if not filled:
             pending += 1
             continue
+        body = open(path, encoding="utf-8").read()
+        protected = protected_members(body)
+        clobber = {q: protected[q] for q in filled if q in protected}
+        if clobber:
+            for q, existing in sorted(clobber.items()):
+                print(f"REFUSE {fn} {q}: would overwrite a hand-written "
+                      f"description {existing!r} with {filled[q]!r}")
+                blocked += 1
+            filled = {q: a for q, a in filled.items() if q not in clobber}
+            if not filled:
+                continue
+
         dupes = {a for a, n in Counter(filled.values()).items() if n > 1}
         if dupes:
             rejected += 1
@@ -86,6 +118,7 @@ def main():
         with open(QS_OUT, "a", encoding="utf-8", newline="\n") as f:
             f.write("\n".join(qs) + "\n")
     print(f"pending={pending} resolved={resolved} rejected-dup={rejected} "
+          f"blocked-would-overwrite={blocked} "
           f"qs-lines={len(qs)}{' [DRY]' if args.dry_run else ''}")
 
 

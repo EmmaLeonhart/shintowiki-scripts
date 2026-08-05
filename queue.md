@@ -330,10 +330,10 @@ under A00.
 ## A1. ▶ Cloud-answer collectors — the routine is ALIVE but delivers ~5 items/day
 
 **Corrected 2026-08-05: "answered NOTHING since 2026-07-28" was stale.** The routine fired again
-today (`988c2e5c`, 5 items) and all five collectors were re-run: **2 were collectable** —
-`Q135289475|Den|"Shinto shrine in Ika district, Ōmi Province, Japan"` staged in
-`description_enrichment_en.txt` (22 lines), and `Category:奥六郡 → Category:Okurokugōri` appended to
-`category_moves.csv`. The other three returned `resolved=0`.
+today (`988c2e5c`, 5 items) and all five collectors were re-run: 2 were collectable —
+`Category:奥六郡 → Category:Okurokugōri` (good), and a description for Q135289475 which
+**turned out to be destructive and has since been withdrawn** (see the overwrite guard below).
+The other three returned `resolved=0`.
 **The conclusion the old wording reached is still right, for a different reason:** ~5 items/day
 against 2,252 queue entries is ~15 months. Local batches remain the road; the routine is a trickle,
 not a stall.
@@ -458,12 +458,42 @@ not a stall.
     established shrine label is not a romanization exercise. She did say macrons belong in
     established-name forms generally, but not at the cost of rewriting settled shrine names, so
     nothing is generated from this. **Do not re-open it as a "consistency" cleanup.**
-- Description-enrichment (222), ronsha-ranking (34), category-translation (354) — same, 0 answered.
+- 🛑 **DESCRIPTION ENRICHMENT WAS DESTROYING DATA — caught 2026-08-05, nothing delivered.**
+  `Den` **overwrites**; it does not add. **15 of the 22 staged lines would have replaced a
+  hand-written Engishiki annotation with location boilerplate:**
+
+  | existing (Emma's) | staged replacement |
+  |---|---|
+  | `The 1111th Shrine of the Engishiki Jinmyōchō (Ronsha)` | `Shinto shrine in Kōfu, Yamanashi Prefecture, Japan` |
+  | `Ronsha 3 of Yaahino Shrine` | `Shinto shrine in Azai district, Ōmi Province, Japan` |
+  | `A candidate shrine for Nakagawa Shrine` | `Shinto shrine in Japan, candidate for Nakagawa Shrine` |
+
+  The left column records the shrine's position in the 927 register, **which** disputed entry it
+  is a candidate for, and **which numbered** Ronsha it is. The right column records where it is.
+  Nothing recovers the former from the latter. Only the Wikidata freeze stopped it going out.
+  - **This is the exact failure `CLAUDE.md` names** — an unfamiliar pattern in this data is signal,
+    not corruption — and the queue walked into it because the builder *displayed* each existing
+    description as context and then asked for a replacement anyway.
+  - **The 15 lines are stripped**; the 7 that target items with no description are kept.
+  - **Two independent gates, because they fail differently.** `needs_a_description()` in the
+    builder stops the ask being made; `protected_members()` in the collector stops an answer
+    already sitting in a work-file from being emitted, reading the recorded description out of the
+    work-file so it needs no network. Boilerplate is still replaceable — the prefecture-level form
+    is what collides, so improving it is the pipeline's actual job. 7 tests.
+  - **The queue was 61% work that must not be done: 221 → 86 work-files.** 183 protected members
+    found; 135 files deleted outright (every member protected), 13 had the ask removed while
+    keeping the member as context, since a new description still has to differ from it.
+  - ▶ **The 86 that remain are the real queue** — items with no description, or with replaceable
+    boilerplate. 48 are genuine multi-member collision groups.
+- Ronsha-ranking (34), category-translation (353) — 0 answered.
   `docs/description_enrichment_pipeline.md`.
+  - ⚠️ **Ronsha ranking is NOT mechanical** — each work-file asks which of several candidates is
+    the likeliest true Engishiki shrine, needing per-candidate jawiki/Kokugakuin research. Do not
+    batch-answer it the way name-in-kana was batched.
 - ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's
   work-files, answer them here, `apply_local_answers.py --queue <q> --answers <tsv> --apply`, then
   the collector. All repo-local — no Miraheze request — so it runs through the blackout.
-- ▶ **Separately, find out why the routine stopped.** One batch in a week is a failure, not a rate.
+- ▶ **Separately, find out why the routine is so slow.** ~5 items/day is a trickle, not a stall.
   `docs/remote_queue_routine_prompt.md`; the last known fix was the missing repo binding
   (`session_context.sources`).
 

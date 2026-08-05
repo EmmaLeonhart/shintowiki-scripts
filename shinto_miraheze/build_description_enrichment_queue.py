@@ -23,18 +23,58 @@ ANSWERS block the worker fills with one unique English description per line.
 import io
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
 import urllib.request
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SEED = os.path.join(ROOT, "modern-quickstatements", "description_collision_groups.json")
 OUTDIR = os.path.join(ROOT, "description_enrichment_en")
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "shintowiki-descenrich/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
 JA_COVERAGE_MAX = 0.10   # stage-1 rule: ja descriptions (nearly) absent
+
+# A description this pipeline is allowed to replace. Anything else is Emma's own
+# writing and must be left alone.
+#
+# WHY THIS EXISTS (found 2026-08-05, before anything was delivered). The Den
+# command SETS a description, overwriting whatever is there. 15 of the 22 lines
+# staged in description_enrichment_en.txt would have replaced a hand-written
+# annotation with location boilerplate:
+#
+#   'The 1111th Shrine of the Engishiki Jinmyōchō (Ronsha)'
+#       -> 'Shinto shrine in Kōfu, Yamanashi Prefecture, Japan'
+#   'Ronsha 3 of Yaahino Shrine'
+#       -> 'Shinto shrine in Azai district, Ōmi Province, Japan'
+#   'A candidate shrine for Nakagawa Shrine'
+#       -> 'Shinto shrine in Japan, candidate for Nakagawa Shrine'
+#
+# Those encode the shrine's position in the 927 register and WHICH disputed entry
+# it is a candidate for, and which numbered Ronsha it is. None of that is
+# recoverable from a location. This is the failure CLAUDE.md names directly:
+# an unfamiliar pattern on this data is signal, not corruption.
+#
+# 111 of the 281 queued members carry one, so the largest bucket in this queue
+# was work that must NOT be done.
+BOILERPLATE_DESC = re.compile(r"^(former\s+)?shinto\s+shrine\s+in\s+.+$", re.I)
+
+
+def needs_a_description(existing):
+    """True if this pipeline may write a description for the item.
+
+    Absent -> yes, that is the whole point. Present and boilerplate -> yes;
+    replacing 'Shinto shrine in Shizuoka Prefecture, Japan' with a
+    municipality-level one is exactly the improvement asked for, and the
+    prefecture-level form is what collides in the first place. Present and
+    anything else -> NO.
+    """
+    if not existing or not existing.strip():
+        return True
+    return bool(BOILERPLATE_DESC.match(existing.strip()))
+
+
 MAX_FILES = 400          # first tranche — the cloud routine paces itself anyway
 
 TASK = (
@@ -80,6 +120,10 @@ def fetch_items(qids):
 
 
 def main():
+    # Inside main(): rebinding at module scope replaces the caller's stdout,
+    # and collect_description_enrichment.py imports needs_a_description from
+    # here. Same fix as generate_soja_only.py / build_label_typo_review_queue.py.
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     groups = json.load(open(SEED, encoding="utf-8"))
     # merge per-language duplicates of the same member-set
     merged = {}
@@ -106,7 +150,7 @@ def main():
         L = e.get("labels", {})
         return (L.get(lang, {}) or L.get("ja", {})).get("value", q)
 
-    written = skipped_ja = 0
+    written = skipped_ja = skipped_protected = 0
     for key, g in sorted(merged.items(), key=lambda kv: -len(kv[0])):
         if written >= MAX_FILES:
             break
@@ -116,6 +160,17 @@ def main():
         if members and ja_covered / len(members) > JA_COVERAGE_MAX:
             skipped_ja += 1
             continue
+        # Members whose existing description is Emma's own writing are shown as
+        # context but never asked for — see needs_a_description(). A group with
+        # nothing left to ask is not written at all.
+        askable = [q for q in members
+                   if needs_a_description(items.get(q, {})
+                                          .get("descriptions", {})
+                                          .get("en", {}).get("value", ""))]
+        if not askable:
+            skipped_protected += 1
+            continue
+
         gid = members[0]
         path = os.path.join(OUTDIR, f"{gid}.wiki")
         if os.path.exists(path):
@@ -125,15 +180,15 @@ def main():
             "<!-- STAGE: EN-first (docs/description_enrichment_pipeline.md) -->",
             "<!-- ANSWERS:",
         ]
-        for q in members:
+        for q in askable:
             lines.append(f"{q}: ")
         lines.append("-->")
         lines.append(TASK)
         lines.append("")
         lines.append("== Members ==")
-        for q in members:
-            e = items.get(q, {})
-            en = e.get("labels", {}).get("en", {}).get("value", "")
+        for q in members:      # context lists EVERY member, askable or not —
+            e = items.get(q, {})   # the protected ones are what a new description
+            en = e.get("labels", {}).get("en", {}).get("value", "")   # must differ from
             ja = e.get("labels", {}).get("ja", {}).get("value", "")
             en_d = e.get("descriptions", {}).get("en", {}).get("value", "")
             munis = [lab(c["mainsnak"]["datavalue"]["value"]["id"])
@@ -154,7 +209,9 @@ def main():
             f.write("\n".join(lines) + "\n")
         written += 1
     print(f"{written} stage-1 work-files -> {OUTDIR} "
-          f"(groups deferred to later stages for ja coverage: {skipped_ja})")
+          f"(groups deferred to later stages for ja coverage: {skipped_ja}; "
+          f"groups skipped because every member already has a hand-written "
+          f"description: {skipped_protected})")
 
 
 if __name__ == "__main__":

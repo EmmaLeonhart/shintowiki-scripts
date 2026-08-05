@@ -8618,3 +8618,57 @@ generated. Recorded in the queue as not to be re-opened as a consistency cleanup
 
 Local suite: 1,113 pass. mwclient/opencc remain absent in the dev env, hiding
 some suites that CI runs.
+
+## 2026-08-05 — the description queue was mostly work that had to not be done
+
+Went to drain the description-enrichment queue and measured it first. 221 groups,
+281 members, and 173 of the groups had a single member — which for a queue whose
+premise is "these items would get identical descriptions, disambiguate them" is
+not a collision at all. Looking at why turned up something worse.
+
+`Den` SETS a description. It does not add. 15 of the 22 lines already staged in
+description_enrichment_en.txt would have overwritten a hand-written annotation
+with location boilerplate:
+
+  'The 1111th Shrine of the Engishiki Jinmyōchō (Ronsha)'
+      -> 'Shinto shrine in Kōfu, Yamanashi Prefecture, Japan'
+  'Ronsha 3 of Yaahino Shrine'
+      -> 'Shinto shrine in Azai district, Ōmi Province, Japan'
+  'A candidate shrine for Nakagawa Shrine'
+      -> 'Shinto shrine in Japan, candidate for Nakagawa Shrine'
+
+The left side says where the shrine sits in the 927 register, which disputed
+entry it is a candidate for, and which numbered Ronsha it is. The right side says
+where it is. Nothing recovers the first from the second. This is the failure
+CLAUDE.md names directly — an unfamiliar pattern in this data is signal — and one
+of these was collected and staged by me earlier today and reported as progress.
+Nothing was delivered only because the Wikidata freeze is still on.
+
+The builder walked into it by displaying each member's existing description as
+context and then asking for a replacement regardless.
+
+Fixed with two gates that fail differently. needs_a_description() in the builder
+stops the ask being made. protected_members() in the collector stops an answer
+already sitting in a work-file from being emitted, and needs no network because
+the builder records the existing description in the work-file itself. Boilerplate
+stays replaceable: the prefecture-level form is what collides, so improving it to
+municipality level is the pipeline's actual job.
+
+Stripped the 15 staged lines, kept the 7 that target items with no description.
+Repaired the queued work-files: 183 protected members found, 135 files deleted
+outright because every member was protected, 13 had the ask removed while keeping
+the member as context — a new description still has to differ from it. The queue
+is 221 -> 86, so 61% of it was work that had to not be done. The 86 left are
+items with no description or replaceable boilerplate, 48 of them genuine
+multi-member collision groups.
+
+Also moved build_description_enrichment_queue.py's module-scope sys.stdout
+rebinding into main() (the collector imports from it now), and corrected the
+stale "find out why the routine stopped" sub-bullet flagged in the last status
+report — it is a ~5/day trickle, not a stall.
+
+Noted for whoever drains ronsha-ranking next: it is not mechanical. Each
+work-file asks which of several candidates is the likeliest true Engishiki
+shrine, which needs per-candidate research, not a batch answer.
+
+7 new tests; 1,120 pass locally.
