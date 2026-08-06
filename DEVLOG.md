@@ -8710,3 +8710,45 @@ test used a located description as its not-protected example and had to change
 for the same reason. Both are spec changes, not accommodations to failing code.
 
 1,122 pass locally.
+
+## 2026-08-05 — asked the label pipelines the same question, and they pass
+
+`L<lang>` SETS a label exactly the way `Den` sets a description, so after the
+description pipeline turned out to be overwriting hand-written Engishiki
+annotations, the ~12,150 staged label lines had to be checked rather than
+assumed. I had flagged this twice in status reports without doing it.
+
+Result: no label pipeline overwrites hand-written content.
+
+A 240-line stratified sample across the six bulk generators came back 239 ADD,
+1 NO-OP, 0 OVERWRITE — they target items with no label in the language, and
+generate_shrines_missing_en_label.py has an explicit FILTER NOT EXISTS. Zero
+overwrites in 240 bounds the rate at about 1.2% at 95% confidence. That is
+evidence, not proof, which is why the audit is a script rather than a one-off.
+
+Every overwrite in the corpus traces to a file whose purpose is correction, and
+each already had its evidence: label_typo_fixes (79, researched per item against
+each shrine's own jawiki lead), french_elision_fixes (25, the measured
+3,645-to-25 corpus ruling), multilingual_label_fixes (Ootsu->Ōtsu,
+ītama->Iitama, Heīshi->Heiishi — Emma's macron ruling propagated outward).
+
+The part worth keeping: two files appeared to contradict each other.
+category_label_fixes ADDS a `Category:` prefix to 42 labels and
+miscellaneous_edits REMOVES one. Both are correct. The 42 are genuine
+P31=Q4167836 Wikimedia categories whose ja labels already carry the prefix and
+whose sitelinks are jawiki Category: pages. Q138565446 is a shrine — its jawiki
+sitelink is the mainspace article 神明宮 (横浜市神奈川区) — that picked up the
+prefix from its Commons category sitelink. Reasoning from the filenames would
+have "fixed" one of them into a bug.
+
+audit_label_overwrites.py is the durable artifact: run before a drip resumes or
+when a new label generator lands. It needs live Wikidata so it cannot be a CI
+test; 12 tests cover the offline half, including that a `-Qxxx` REMOVAL is never
+read as an add — for a tool whose job is reporting what would be destroyed,
+inverting that is the worst available bug.
+
+Left unfixed and noted: Q125302213's English label is 6世紀日本の政治家, Japanese
+text. The staged fix prefixes it to Category:6世紀日本の政治家, correct as far as
+it goes but still untranslated. Not damage — it was already Japanese.
+
+1,134 pass locally.

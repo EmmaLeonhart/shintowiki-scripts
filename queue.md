@@ -494,6 +494,32 @@ not a stall.
     across the two passes; 148 files deleted outright (every member protected), 24 had the ask
     removed while keeping the member as context, since a new description still has to differ.
   - ▶ **The 73 that remain are the real queue** — every one an item with no English description.
+- ✅ **The same question asked of the LABEL pipelines 2026-08-05 — and the answer is clean.**
+  `L<lang>` SETS a label exactly the way `Den` sets a description, so the ~12,150 staged label
+  lines were audited rather than reasoned about. **No label pipeline overwrites hand-written
+  content.**
+  - A 240-line stratified sample across the six bulk generators (`temple_identical_name_en_labels`,
+    `identical_name_en_labels`, `kana_en_labels`, `temple_en_labels`, `en_labels_sonnet`,
+    `en_labels`): **239 ADD, 1 NO-OP, 0 OVERWRITE** — they target items with no label in that
+    language. Zero overwrites in 240 bounds the rate at roughly 1.2% at 95%; it is evidence, not
+    proof, and the audit script re-runs on demand.
+  - Every overwrite in the corpus comes from a file whose *purpose* is correction, and each was
+    already evidenced: `label_typo_fixes` (79, researched per item), `french_elision_fixes` (25,
+    the measured 3,645-to-25 corpus ruling), `multilingual_label_fixes` (Ootsu→Ōtsu, ītama→Iitama
+    — Emma's macron ruling propagated outward).
+  - ⚠️ **Two that look contradictory and are both right** — which is why this was audited instead
+    of reasoned about from filenames. `category_label_fixes` ADDS a `Category:` prefix to 42 items;
+    `miscellaneous_edits` REMOVES one from Q138565446. The 42 are genuine `P31=Q4167836` Wikimedia
+    categories whose **ja labels already carry the prefix** and whose sitelinks are jawiki
+    `Category:` pages. Q138565446 is a **shrine** — jawiki sitelink `神明宮 (横浜市神奈川区)`, a
+    mainspace article — that picked the prefix up from its *Commons* category sitelink.
+  - `modern-quickstatements/audit_label_overwrites.py` is the durable artifact — run it before a
+    drip resumes or when a new label generator is added. It cannot be a CI test (needs live
+    Wikidata); 12 tests cover its parsing and classification, including that a `-Qxxx` REMOVAL is
+    never read as an add.
+  - ▶ **One real oddity, unfixed and minor:** Q125302213's *English* label is `6世紀日本の政治家`,
+    Japanese text. The staged fix prefixes it to `Category:6世紀日本の政治家` — correct as far as it
+    goes, but it stays untranslated. Not damage; the label was already Japanese.
 - Ronsha-ranking (34), category-translation (353) — 0 answered.
   `docs/description_enrichment_pipeline.md`.
   - ⚠️ **Ronsha ranking is NOT mechanical** — each work-file asks which of several candidates is
