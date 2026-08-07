@@ -172,6 +172,26 @@ Local full rebuild: `!regenerateQuickStatements.bat`.
   the process (a small generic orchestrator for single-edit scripts)
   rather than hand-wiring each one.
 
+## ⛔ EDITING HOLD — no shintowiki edits until the enwiki mentions clear (Emma, 2026-08-06)
+
+**Emma's decision:** shintowiki does **no editing** until "Immanuelle" is no longer
+mentioned on <https://en.wikipedia.org/wiki/Wikipedia:AI_noticeboard> or
+<https://en.wikipedia.org/wiki/Wikipedia_talk:WikiProject_Japan>.
+
+- It is a **condition, not a date.** Enforced by the `editing_hold` object in
+  `shinto_miraheze/wiki_editing_lockout.state`, which outranks `locked_until` and
+  `blackout_until` and **cannot be cleared by the weekly edit-test** (a passing probe
+  used to rewrite the state to `locked: false`, which would have reopened editing on
+  2026-08-09/10 while the condition still held).
+- **Do not attach a date to it, do not shorten it, and do not lift it because a date
+  passed.** Lifting = a human deleting the object once the condition actually holds.
+- **Check it, don't remember it:** `python shinto_miraheze/check_enwiki_mentions.py
+  [--record]` (enwiki reads only; exit 0 = condition met). 2026-08-06: 7 + 2 mentions,
+  not met.
+- Full rationale: `docs/editing_hold_2026-08-06.md`.
+- The **Miraheze blackout** (Emma 2026-07-27, no requests of any kind to
+  shinto.miraheze.org, reads included) is a **separate** rule and still applies.
+
 ## Pinned operational notes (moved out of queue.md 2026-05-30)
 
 * **`[[Category:Need translation]]` removal is destructive — and so are the

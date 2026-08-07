@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-06 — editing hold: no shintowiki edits until the enwiki mentions clear
+
+Emma's decision, recorded in the funding-and-networking queue the same day: **shintowiki
+does no editing until "Immanuelle" is no longer mentioned on
+[[Wikipedia:AI noticeboard]] or [[Wikipedia talk:WikiProject Japan]]** — *"probably gonna
+disappear pretty quickly but not 100% sure."*
+
+That is a condition, and every gate this repo had was a date. Both were about to expire:
+`blackout_until` 2026-08-09, `locked_until` 2026-08-10. Worse, the first thing to run after
+the blackout drains is the Sunday edit-test, and **a passing probe rewrites the state to
+`locked: false`** — so within days editing would have reopened on its own, the 32 pages
+staged in `git_synced/` would have created, and nothing in the machinery would ever have
+looked at Emma's condition. Setting a far-off date would only have moved the same silent
+expiry.
+
+So: a new `editing_hold` object in `wiki_editing_lockout.state` that outranks both dates.
+`wiki_edit_allowed.py` returns LOCKED whenever it is set, which covers all 18 workflows
+that call the guard; `weekly_wiki_edit_test.py` refuses to probe while it stands (the probe
+is itself an edit) and carries the hold across any state rewrite. Nothing dated and no
+script can clear it — a human deletes the object. Tests in
+`shinto_miraheze/tests/test_editing_hold.py` pin both bypass routes.
+
+`shinto_miraheze/check_enwiki_mentions.py` is how the condition gets evaluated rather than
+remembered: counts `Immanuelle` in the raw wikitext of both pages, `--record` stamps the
+result into the hold, exit 0 = met. enwiki reads only; a failed fetch counts as not-met,
+because an unreadable page is not evidence of absence. First run: **7 mentions on the AI
+noticeboard, 2 on WikiProject Japan talk — not met.**
+
+The Miraheze blackout is untouched and still stands on its own terms. Full write-up:
+`docs/editing_hold_2026-08-06.md`. Unrelated pre-existing local state: three
+`test_interlang_consolidate.py` tests fail and five test modules cannot collect without
+`mwclient`, which the local toolchain has been missing since the machine move; CI installs
+it, so this is a dev-box gap.
+
+---
+
 ## 2026-08-04 — all 444 shrines read in full; the keyword pass is superseded
 
 **What was wrong.** The 2026-08-03 Beppyo pass judged each shrine from keyword-extracted
