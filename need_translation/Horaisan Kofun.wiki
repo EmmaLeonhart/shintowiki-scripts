@@ -1,147 +1,134 @@
-{{Infobox ancient site|image=File:Horaisan Kofun (Ota), funkyu.jpg|location={{ill|Den-en-chōfu|fa|دن-ئن-چوفو|fi|Den’enchōfu|fr|Den-en-chōfu|ja|田園調布|ko|덴엔초후|nl|Den-en-chōfu|ru|Дэнъэнтёфу|zh|田園調布|qid=Q2613265}}|coordinates={{Coord|35.593153|N|139.663358}}|architectural_styles={{ill|Zenpō-kōen-fun|qid=Q11268718|2=ja|3=前方後円墳|4=ko|5=전방후원분|6=zh|7=前方後圓墳}}|part_of={{ill|Ebaradai kofun-gun|ja|荏原台古墳群|qid=Q11618305}}}}
+{{Infobox ancient site|image=File:Horaisan Kofun (Ota), funkyu.jpg|location={{ill|Den-en-chōfu|fa|دن-ئن-چوفو|fi|Den'enchōfu|fr|Den-en-chōfu|ja|田園調布|ko|덴엔초후|nl|Den-en-chōfu|ru|Дэнъэнтёфу|zh|田園調布|qid=Q2613265}}|coordinates={{Coord|35.593153|N|139.663358}}|architectural_styles={{ill|Zenpō-kōen-fun|qid=Q11268718|2=ja|3=前方後円墳|4=ko|5=전방후원분|6=zh|7=前方後圓墳}}|part_of={{ill|Ebaradai kofun-gun|ja|荏原台古墳群|qid=Q11618305}}}}
 
 {{translated page|ja|宝萊山古墳|version=99994994|comment=Imported full ja history}}
 
 {{Commons category|Horaisan Kofun (Ota)}}
 {{wikidata link|Q11452676|ja|宝萊山古墳|grok=none|check_date=2026-05-29}}
-==Japanese content==
 
-{{Otheruses||奈良県奈良市にある古墳（伝垂仁天皇陵）|宝来山古墳}}
-{{日本の古墳
-|名称 = 宝萊山古墳
-|画像 = [[File:Horaisan Kofun (Ota), funkyu.jpg|280px]]<br>墳丘（右手前に前方部、左奥に後円部）
-|別名 = 西岡第37号古墳<ref name="展示説明"/>/蓬萊塚<ref name="展示説明"/>/将軍塚<ref name="展示説明"/>/松平氏邸前方後円墳{{Sfn|宝来山古墳（古墳）|1989}}
-|所属 = [[荏原台古墳群]]
-|所在地 = [[東京都]][[大田区]][[田園調布]]4丁目4-1<br>（[[多摩川台公園]]内）
-|緯度度 = 35|緯度分 = 35|緯度秒 = 35.35
-|経度度 =139|経度分 = 39|経度秒 = 48.09
+{{Otheruses||For the tomb mound in Nara City, Nara Prefecture (attributed to Emperor Suinin)|Horai-san Kofun}}
+
+{{Infobox Japanese tomb mound
+|name = Horaisan Kofun
+|image = [[File:Horaisan Kofun (Ota), funkyu.jpg|280px]]<br>The tumulus (front section at right front, rear circular section at left rear)
+|other names = Nishioka No. 37 Tomb Mound<ref name="Display explanation"/>/Horaizuka<ref name="Display explanation"/>/Shōgun-zuka<ref name="Display explanation"/>/Matsudaira Estate Keyhole-shaped Tomb Mound{{Sfn|Horai-yama Kofun (Tomb Mound)|1989}}
+|belongs to = [[Ebaradai Tomb Mound Cluster]]
+|location = 4-4-1 {{ill|Den-en-chōfu|fa|دن-ئن-چوفو|fi|Den'enchōfu|fr|Den-en-chōfu|ja|田園調布|ko|덴엔초후|nl|Den-en-chōfu|ru|Дэнъэнтёфу|zh|田園調布|qid=Q2613265}}, [[Ota, Tokyo|Ota Ward]], [[Tokyo]]<br>(within {{ill|Tamagawadai Park|ja|多摩川台公園}})
+|latitude_degrees = 35|latitude_minutes = 35|latitude_seconds = 35.35
+|longitude_degrees =139|longitude_minutes = 39|longitude_seconds = 48.09
 |ISO = JP-13
-|形状 = [[前方後円墳]]
-|規模 = 墳丘長97.5m<br>高さ11m（後円部）
-|築造時期 = [[4世紀]]末
-|埋葬施設 = 後円部：[[粘土槨]]<br>（前方部にも存在推定）
-|被葬者 = 
-|出土品 = 副葬品多数
-|史跡 = 東京都指定史跡「宝萊山古墳」
-|特記事項 = 
-|地図 = Japan Tokyo
-|ラベル = 宝萊山古墳
-|アイコン = 前方後円墳-南東
-|ラベル位置 = top
+|shape = {{ill|Zenpō-kōen-fun|qid=Q11268718|2=ja|3=前方後円墳|4=ko|5=전방후원분|6=zh|7=前方後圓墳}} (keyhole-shaped tomb)
+|scale = Tumulus length 97.5m<br>Height 11m (rear circular section)
+|construction period = Late [[4th century]]
+|burial facility = Rear circular section: {{ill|Clay vault|ja|粘土槨}}<br>(also presumed to exist in front section)
+|buried person =
+|excavated items = Numerous grave goods
+|historic site = Tokyo Metropolitan Designated Historic Site "Horaisan Kofun"
+|special notes =
+|map = Japan Tokyo
+|label = Horaisan Kofun
+|icon = Keyhole-shaped tomb - Southeast
+|label position = top
 }}
-{{panoViewer|Ota Horaisan Kofun, Top 360-degree.jpg|墳頂周辺の全天球画像（カメラの位置はくびれ部付近）}}
+{{panoViewer|Ota Horaisan Kofun, Top 360-degree.jpg|360-degree panoramic image around the tomb summit (camera position is near the narrowed section)}}
 
-'''宝萊山古墳'''（ほうらいさんこふん/ほうらいざんこふん{{Sfn|宝来山古墳（古墳）|1989}}、宝来山古墳{{Sfn|宝来山古墳（古墳）|1989}}）は、[[東京都]][[大田区]][[田園調布]]にある[[古墳]]。形状は[[前方後円墳]]。[[荏原台古墳群]]（荏原古墳群）を構成する古墳の1つ。東京都指定史跡に指定されている。
+'''Horaisan Kofun''' (also '''Horai-yama Kofun''' or '''Horai-zan Kofun'''{{Sfn|Horai-yama Kofun (Tomb Mound)|1989}}) is an ancient [[tomb mound]] located in {{ill|Den-en-chōfu|fa|دن-ئن-چوفو|fi|Den'enchōfu|fr|Den-en-chōfu|ja|田園調布|ko|덴엔초후|nl|Den-en-chōfu|ru|Дэнъэнтёфу|zh|田園調布|qid=Q2613265}}, [[Ota, Tokyo|Ota Ward]], [[Tokyo]]. Its shape is that of a {{ill|Zenpō-kōen-fun|qid=Q11268718|2=ja|3=前方後円墳|4=ko|5=전방후원분|6=zh|7=前方後圓墳}} (keyhole-shaped tomb). It is one of the tomb mounds constituting the {{ill|Ebaradai kofun-gun|ja|荏原台古墳群|qid=Q11618305}} (Ebara Tomb Mound Cluster). It is designated as a Tokyo Metropolitan Historic Site.
 
-== 概要 ==
-東京都南部、[[武蔵野台地]]南西部の[[多摩川]]左岸の台地縁辺部に築造された大型前方後円墳である。台地上では[[荏原台古墳群]]（荏原古墳群）の営造が認められており、本古墳は[[亀甲山古墳]]（国の[[史跡]]）とともに荏原台古墳群を代表する。古墳名の「宝萊」は古くから見られる名称になる<ref group="注">「宝萊」の古墳名に関して、古くは1906年（明治39年）測量の陸地測量部地図「溝口」に字名として「寶来」があるのが最初とされる。1992年の東京都の文化財目録では「宝来山古墳」と記載されていたが、1996年の東京都指定旧跡から東京都指定史跡への種別変更に伴い「宝萊山古墳」と変更された。</ref>。これまでに[[1934年]]（[[昭和]]9年）に土取りで後円部の3分の2が失われ、その際に埋葬施設が露出して副葬品が出土している{{Sfn|宝萊山古墳（平凡社）|2002}}<ref name="東京都"/>。その他の墳丘残存部は良好に遺存しており<ref name="東京都"/>、[[1995年]]（[[平成]]7年）には確認調査が実施されている<ref name="説明板 東京都"/><ref name="説明板 大田区"/>。
+== Overview ==
+Located in southern Tokyo, this is a large keyhole-shaped tomb mound constructed on the edge of a terrace on the left bank of the {{ill|Tama River|ja|多摩川}} in the southwestern part of the {{ill|Musashino Plateau|ja|武蔵野台地}}. The {{ill|Ebaradai kofun-gun|ja|荏原台古墳群|qid=Q11618305}} (Ebara Tomb Mound Cluster) was built on this plateau, and this tomb mound, together with {{ill|Kamezukayama Kofun|ja|亀甲山古墳}} (a national [[historic site]]), represents the Ebaradai Tomb Mound Cluster. The tomb name "Horai" is a name that has been used since ancient times<ref group="note">Regarding the tomb name "Horai," the earliest usage is said to be the place name "Horai" on the 1906 (Meiji 39) Land Survey Department map "Mizokuchi." In the 1992 Tokyo Metropolitan cultural properties catalog, it was listed as "Horai-yama Kofun," but with the change from Tokyo Metropolitan Designated Historic Relic to Tokyo Metropolitan Designated Historic Site in 1996, it was changed to "Horaisan Kofun."</ref>. In [[1934]] (Showa 9), two-thirds of the rear circular section was lost due to soil extraction, at which time the burial facility was exposed and grave goods were excavated{{Sfn|Horaisan Kofun (Heibonsha)|2002}}<ref name="Tokyo Metro"/>. The remaining parts of the tumulus are well preserved<ref name="Tokyo Metro"/>, and a confirmation survey was conducted in [[1995]] (Heisei 7)<ref name="Explanation board Tokyo"/><ref name="Explanation board Ota"/>.
 
-墳形は前方部がバチ形に広がる前方後円形で<ref name="説明板 東京都"/><ref name="説明板 大田区"/>、前方部を南東方に向けて亀甲山古墳と向き合う{{Sfn|宝萊山古墳（平凡社）|2002}}<ref name="説明板 東京都"/>。墳丘は後円部が3段築成、前方部が2段築成<ref name="説明板 東京都"/><ref name="説明板 大田区"/>。墳丘外表で[[葺石]]・[[埴輪]]は認められていないほか{{Sfn|宝来山古墳（古墳）|1989}}、墳丘周囲には1段のテラスが巡らされる<ref name="説明板 東京都"/><ref name="説明板 大田区"/>。埋葬施設は後円部墳頂下3メートルにおける[[粘土槨]]で、発見の際に副葬品多数が出土している<ref name="東京都"/>。また前方部においても別の埋葬施設の存在が推測される（未調査のため詳細は不明）<ref name="説明板 東京都"/><ref name="説明板 大田区"/>。築造時期は[[古墳時代]]中期の[[4世紀]]末葉頃<ref name="展示説明"/>（または古墳時代前期の4世紀前半頃<ref name="東京都"/>）と推定され、亀甲山古墳に先立つ築造に位置づけられるほか<ref name="展示説明"/>、多摩川下流域では最初の首長墓に位置づけられる<ref name="東京都"/>。
+The tumulus shape is a keyhole shape with the front section spreading outward in a fan shape<ref name="Explanation board Tokyo"/><ref name="Explanation board Ota"/>, with the front section oriented to the southeast to face {{ill|Kamezukayama Kofun|ja|亀甲山古墳}}{{Sfn|Horaisan Kofun (Heibonsha)|2002}}<ref name="Explanation board Tokyo"/>. The tumulus has three tiers in the rear circular section and two tiers in the front section<ref name="Explanation board Tokyo"/><ref name="Explanation board Ota"/>. {{ill|Fukiishi|ja|葺石}} (stone paving) and {{ill|haniwa|ja|埴輪}} have not been identified on the exterior surface of the tumulus{{Sfn|Horai-yama Kofun (Tomb Mound)|1989}}, and a single-tier terrace surrounds the tumulus<ref name="Explanation board Tokyo"/><ref name="Explanation board Ota"/>. The burial facility is a {{ill|clay vault|ja|粘土槨}} located 3 meters below the summit of the rear circular section, and numerous grave goods were excavated when it was discovered<ref name="Tokyo Metro"/>. The existence of another burial facility in the front section is also presumed (details unknown as it has not been investigated)<ref name="Explanation board Tokyo"/><ref name="Explanation board Ota"/>. The construction period is estimated to be the late [[4th century]]<ref name="Display explanation"/> (or early 4th century in the early Kofun period<ref name="Tokyo Metro"/>) in the middle Kofun period, predating the construction of {{ill|Kamezukayama Kofun|ja|亀甲山古墳}}<ref name="Display explanation"/>, and it is positioned as the first chieftain's tomb in the lower {{ill|Tama River|ja|多摩川}} basin<ref name="Tokyo Metro"/>.
 
-古墳域は[[1955年]]（昭和30年）に東京都指定旧跡に指定されたのち、[[1996年]]（平成8年）に東京都指定史跡に指定された<ref name="東京都"/>。現在の一帯は[[多摩川台公園]]として史跡整備がなされている。
+The tomb mound area was designated as a Tokyo Metropolitan Designated Historic Relic in [[1955]] (Showa 30), and was redesignated as a Tokyo Metropolitan Designated Historic Site in [[1996]] (Heisei 8)<ref name="Tokyo Metro"/>. The surrounding area is currently maintained as a historic site within {{ill|Tamagawadai Park|ja|多摩川台公園}}.
 
-== 遺跡歴 ==
-* [[1934年]]（[[昭和]]9年）、宅地造成工事で土取り。埋葬施設の発見および副葬品の出土<ref>[http://www.city.ota.tokyo.jp/shisetsu/rekishi/minemachi_denenchoufu/houraiyama_kofun.html 宝来山古墳]（大田区ホームページ）。</ref>。
-* [[1955年]]（昭和30年）3月28日、東京都指定旧跡に指定<ref name="東京都"/>。
-* [[1995年]]（[[平成]]7年）、公園整備に伴う確認調査<ref name="説明板 東京都">史跡説明板（東京都教育委員会、1998年設置）。</ref>。
-* [[1996年]]（平成8年）3月18日、東京都指定史跡に種別変更<ref name="東京都"/>。
+== Site History ==
+* [[1934]] (Showa 9): Soil extraction during residential land development. Discovery of burial facility and excavation of grave goods<ref>[http://www.city.ota.tokyo.jp/shisetsu/rekishi/minemachi_denenchoufu/houraiyama_kofun.html Horai-yama Kofun] (Ota Ward website).</ref>.
+* [[1955]] (Showa 30) March 28: Designated as Tokyo Metropolitan Designated Historic Relic<ref name="Tokyo Metro"/>.
+* [[1995]] (Heisei 7): Confirmation survey accompanying park development<ref name="Explanation board Tokyo">Historic site explanation board (Tokyo Metropolitan Board of Education, installed 1998).</ref>.
+* [[1996]] (Heisei 8) March 18: Type changed to Tokyo Metropolitan Designated Historic Site<ref name="Tokyo Metro"/>.
 
-== 墳丘 ==
-墳丘の規模は次の通り<ref name="東京都"/>。
-* 墳丘長：97.5メートル
-* 後円部 - 3段築成。3分の2は削平で欠失。
-** 直径：52メートル
-** 高さ：11メートル
-* 前方部 - 2段築成。
-** 幅：37メートル
-** 高さ：8メートル
+== Tumulus ==
+The dimensions of the tumulus are as follows<ref name="Tokyo Metro"/>:
+* Tumulus length: 97.5 meters
+* Rear circular section - Three-tier construction. Two-thirds lost due to leveling.
+** Diameter: 52 meters
+** Height: 11 meters
+* Front section - Two-tier construction.
+** Width: 37 meters
+** Height: 8 meters
 <gallery>
-File:Horaisan Kofun (Ota), kouenbu.jpg|くびれ部から後円部を望む
-File:Horaisan Kofun (Ota), zenpoubu.jpg|くびれ部から前方部を望む
+File:Horaisan Kofun (Ota), kouenbu.jpg|View of rear circular section from narrowed section
+File:Horaisan Kofun (Ota), zenpoubu.jpg|View of front section from narrowed section
 </gallery>
 
-== 出土品 ==
-[[ファイル:宝萊山古墳 出土品.JPG|thumb|250px|right|{{center|出土品}}{{small|大田区立郷土博物館展示。}}]]
-埋葬施設から出土した副葬品は次の通り<ref name="展示説明">大田区立多摩川台公園古墳展示室 展示説明（2017年11月時点）。</ref>。
-* 仿製四獣鏡 1
-* 紡錘車形碧玉製品 1
-* 勾玉 4
-* 管玉 67
-* 丸玉 173
-* 小玉 391
-* 大刀 10
-* 槍（形鉄器） 2
-* 刀子 1
-現在、これらの出土品は[[慶應義塾大学]]および大田区立郷土博物館（大田区南馬込5丁目）で保管されるほか、レプリカが大田区立多摩川台公園古墳展示室で展示されている<ref name="説明板 大田区"/>。
+== Excavated Items ==
+[[File:宝萊山古墳 出土品.JPG|thumb|250px|right|{{center|Excavated items}}{{small|Displayed at Ota Ward Folk Museum.}}]]
+The grave goods excavated from the burial facility are as follows<ref name="Display explanation">Display explanation at Ota Ward Tamagawadai Park Tomb Mound Exhibition Room (as of November 2017).</ref>:
+* Imitation Four-Beast Mirror: 1
+* Spindle whorl-shaped jasper artifact: 1
+* Magatama (curved jewels): 4
+* Kudatama (tubular beads): 67
+* Marutama (round beads): 173
+* Kodama (small beads): 391
+* Large swords: 10
+* Spears (spear-shaped iron implements): 2
+* Small knives: 1
+These excavated items are currently stored at [[Keio University]] and the Ota Ward Folk Museum (5-chome Minami-Magome, Ota Ward), and replicas are displayed at the Ota Ward Tamagawadai Park Tomb Mound Exhibition Room<ref name="Explanation board Ota"/>.
 
-== 文化財 ==
-=== 東京都指定文化財 ===
-* 史跡
-** 宝萊山古墳 - 1926年（大正15年）4月に標識、1952年（昭和27年）4月1日に史跡指定、1955年（昭和30年）3月28日に旧跡指定、1996年（平成8年）3月18日に種別変更<ref name="東京都">[http://bunkazai.metro.tokyo.jp/jp/search_detail.html?page=1&id=536 宝萊山古墳]（東京都教育庁地域教育支援部「東京都文化財情報データベース」）。</ref>。
+== Cultural Properties ==
+=== Tokyo Metropolitan Designated Cultural Properties ===
+* Historic Site
+** Horaisan Kofun - Marker installed April 1926 (Taisho 15), designated as historic site April 1, 1952 (Showa 27), designated as historic relic March 28, 1955 (Showa 30), type changed March 18, 1996 (Heisei 8)<ref name="Tokyo Metro">[http://bunkazai.metro.tokyo.jp/jp/search_detail.html?page=1&id=536 Horaisan Kofun] (Tokyo Metropolitan Board of Education Regional Education Support Division "Tokyo Metropolitan Cultural Properties Information Database").</ref>.
 
-== 現地情報 ==
-'''所在地'''
-* [[東京都]][[大田区]][[田園調布]]4丁目4番1号（[[多摩川台公園]]内）
+== Site Information ==
+'''Location'''
+* 4-4-1 {{ill|Den-en-chōfu|fa|دن-ئن-چوفو|fi|Den'enchōfu|fr|Den-en-chōfu|ja|田園調布|ko|덴엔초후|nl|Den-en-chōfu|ru|Дэнъэnтёфу|zh|田園調布|qid=Q2613265}}, [[Ota, Tokyo|Ota Ward]], [[Tokyo]] (within {{ill|Tamagawadai Park|ja|多摩川台公園}})
 
-'''域内への立ち入り'''
-* 古墳域の周囲は柵で囲まれているが昼間の立ち入りは可能で、夜間のみ施錠され立ち入りが制限される。
+'''Entry to the site'''
+* The tomb mound area is surrounded by a fence but entry is possible during the day; it is locked only at night, restricting entry.
 
-'''交通アクセス'''
-* [[東急電鉄]][[東急東横線|東横線]]・[[東急目黒線|目黒線]]・[[東急多摩川線]] [[多摩川駅]]（徒歩約15分）<ref name="東京都"/>
+'''Transportation Access'''
+* {{ill|Tokyu Corporation|ja|東急電鉄}} {{ill|Toyoko Line|ja|東急東横線}}・{{ill|Meguro Line|ja|東急目黒線}}・{{ill|Tamagawa Line|ja|東急多摩川線}} {{ill|Tamagawa Station|ja|多摩川駅}} (approximately 15-minute walk)<ref name="Tokyo Metro"/>
 
-'''関連施設'''
-* [[慶應義塾大学]] - 宝萊山古墳出土品原品を保管<ref name="説明板 大田区"/>。
-* 大田区立郷土博物館（大田区南馬込5丁目） - 宝萊山古墳出土品原品を保管<ref name="説明板 大田区">史跡説明板（大田区設置）。</ref>。
-* 大田区立多摩川台公園古墳展示室（大田区田園調布1丁目） - 多摩川台公園の古墳のガイダンス施設。宝萊山古墳出土品レプリカを展示<ref name="説明板 大田区"/>。
+'''Related Facilities'''
+* [[Keio University]] - Stores original excavated items from Horaisan Kofun<ref name="Explanation board Ota"/>.
+* Ota Ward Folk Museum (5-chome Minami-Magome, Ota Ward) - Stores original excavated items from Horaisan Kofun<ref name="Explanation board Ota">Historic site explanation board (installed by Ota Ward).</ref>.
+* Ota Ward Tamagawadai Park Tomb Mound Exhibition Room (1-chome Den-en-chofu, Ota Ward) - Guidance facility for tomb mounds in Tamagawadai Park. Displays replicas of excavated items from Horaisan Kofun<ref name="Explanation board Ota"/>.
 
-'''周辺'''
-* [[荏原台古墳群]]
-** [[亀甲山古墳]] - 国の史跡。
-** 多摩川台古墳群 - 東京都指定史跡。亀甲山古墳・宝萊山古墳の間に営造された後期古墳群。
+'''Vicinity'''
+* {{ill|Ebaradai kofun-gun|ja|荏原台古墳群|qid=Q11618305}}
+** {{ill|Kamezukayama Kofun|ja|亀甲山古墳}} - National historic site.
+** Tamagawadai Tomb Mound Cluster - Tokyo Metropolitan Designated Historic Site. A late-period tomb mound cluster constructed between {{ill|Kamezukayama Kofun|ja|亀甲山古墳}} and Horaisan Kofun.
 
-== 脚注 ==
-{{脚注ヘルプ}}
-'''注釈'''
-{{reflist|group="注"}}
+== Notes ==
+{{Notes help}}
+'''Notes'''
+{{reflist|group="note"}}
 
-'''出典'''
+'''Citations'''
 {{reflist}}
 
-== 参考文献 ==
-{{small|（記事執筆に使用した文献）}}
-* 史跡説明板（東京都教育委員会、1998年設置）
-* 史跡説明板（大田区設置）
-* 大田区立多摩川台公園古墳展示室 展示説明
-* {{Cite book|和書|editor=|author=大塚初重|authorlink=大塚初重|year=1989|chapter=宝来山古墳|title=[[日本古墳大辞典]]|publisher=[[東京堂出版]]|isbn=4490102607|ref={{Harvid|宝来山古墳（古墳）|1989}}}}
-* {{Cite book|和書|editor=|author=|year=2002|chapter=宝萊山古墳|title=[[日本歴史地名大系]] 13 東京都の地名|publisher=平凡社|isbn=4582490131|ref={{Harvid|宝萊山古墳（平凡社）|2002}}}}
+== References ==
+{{small|(Literature used in writing this article)}}
+* Historic site explanation board (Tokyo Metropolitan Board of Education, installed 1998)
+* Historic site explanation board (installed by Ota Ward)
+* Ota Ward Tamagawadai Park Tomb Mound Exhibition Room display explanation
+* {{Cite book|Japanese|editor=|author=Otsuka Hatsushige|authorlink=Otsuka Hatsushige|year=1989|chapter=Horai-yama Kofun|title=[[Great Dictionary of Japanese Tomb Mounds]]|publisher=[[Tokyodo Shuppan]]|isbn=4490102607|ref={{Harvid|Horai-yama Kofun (Tomb Mound)|1989}}}}
+* {{Cite book|Japanese|editor=|author=|year=2002|chapter=Horaisan Kofun|title=[[Japanese Historical Place Names System]] 13 Place Names of Tokyo|publisher=Heibonsha|isbn=4582490131|ref={{Harvid|Horaisan Kofun (Heibonsha)|2002}}}}
 
-== 関連文献 ==
-{{small|（記事執筆に使用していない関連文献）}}
-* {{Cite book|和書|editor=|author=|year=1998|chapter=|title=東京都指定史跡宝萊山古墳 -大田区立多摩川台公園拡張部公園整備に伴う範囲確認調査報告書-|publisher=東京都指定史跡宝萊山古墳調査会|isbn=|ref=}}
+== Related Literature ==
+{{small|(Related literature not used in writing this article)}}
+* {{Cite book|Japanese|editor=|author=|year=1998|chapter=|title=Tokyo Metropolitan Designated Historic Site Horaisan Kofun - Survey Report on Scope Confirmation Accompanying Park Development of Ota Ward Tamagawadai Park Expansion Area -|publisher=Tokyo Metropolitan Designated Historic Site Horaisan Kofun Survey Association|isbn=|ref=}}
 
-== 外部リンク ==
-{{Commonscat|Horaisan Kofun (Ota)|宝萊山古墳}}
-* [http://bunkazai.metro.tokyo.jp/jp/search_detail.html?page=1&id=536 宝萊山古墳] - 東京都教育庁地域教育支援部「東京都文化財情報データベース」
-* [http://www.city.ota.tokyo.jp/shisetsu/rekishi/minemachi_denenchoufu/houraiyama_kofun.html 宝来山古墳] - 大田区ホームページ
+== External Links ==
+{{Commonscat|Horaisan Kofun (Ota)|Horaisan Kofun}}
+* [http://bunkazai.metro.tokyo.jp/jp/search_detail.html?page=1&id=536 Horaisan Kofun] - Tokyo Metropolitan Board of Education Regional Education Support Division "Tokyo Metropolitan Cultural Properties Information Database"
+* [http://www.city.ota.tokyo.jp/shisetsu/rekishi/minemachi_denenchoufu/houraiyama_kofun.html Horai-yama Kofun] - Ota Ward website
 
-{{デフォルトソート:ほうらいさんこふん}}
-[[Category:Tier 0 Categories]][[Category:need translation]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Pages with 250+ untranslated japanese characters]]
-[[Category:Pages with 300+ untranslated japanese characters]]
-[[Category:Pages with 500+ untranslated japanese characters]]
+{{DEFAULTSORT:Horaisan Kofun}}
+[[Category:Tier 0 Categories]]
 [[Category:Den-en-chōfu]]
 [[Category:Designated historic sites of Tokyo]]
 [[Category:History of Ota, Tokyo]]
 [[Category:Kofun of Tokyo]]
 [[Category:Wikidata no short description]]
 [[Category:Zenpō-kōen-fun]]
-[[Category:need translation]]
-[[Category:東京都の古墳]]
-[[Category:大田区の歴史]]
-[[Category:前方後円墳]]
-[[Category:東京都指定史跡]]
-[[Category:田園調布]]
