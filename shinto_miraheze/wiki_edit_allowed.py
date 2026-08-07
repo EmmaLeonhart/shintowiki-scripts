@@ -16,12 +16,6 @@ The lockout is written by weekly_wiki_edit_test.py (the Sunday edit-test): a fai
 edit locks editing for the week; a successful edit unlocks it. It carries a
 `locked_until` date (8 days on failure, > the 7-day test cadence) so it never
 auto-expires before the next Sunday test. See docs/wiki_403_audit_2026-07-11.md.
-
-Separately, the state file may carry an `editing_hold` object. That is a HOLD set
-by Emma, not by the weekly test: editing stays off until a stated CONDITION is met,
-with no date attached. It outranks everything else here — no expiry can lift it and
-the weekly edit-test cannot clear it. It is lifted by a human deleting the field
-once the condition holds. See docs/editing_hold_2026-08-06.md.
 """
 import datetime
 import io
@@ -41,12 +35,6 @@ def editing_allowed():
     except Exception as e:
         # A corrupt state file must not silently hard-lock the wiki forever.
         return True, f"lockout state unreadable ({e}) — defaulting to allowed"
-    hold = state.get("editing_hold") or {}
-    if hold.get("hold"):
-        # Condition-gated, dateless, and above the weekly test. Only a human
-        # removing the field lifts it.
-        return False, ("HELD — " + (hold.get("release_condition") or "no condition recorded")
-                       + f" (set {hold.get('set')} by {hold.get('set_by', 'unknown')})")
     if not state.get("locked"):
         return True, "editing not locked"
     locked_until = state.get("locked_until")

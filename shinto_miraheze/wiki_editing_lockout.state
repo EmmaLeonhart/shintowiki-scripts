@@ -2,15 +2,6 @@
   "locked": true,
   "locked_until": "2026-08-10",
   "blackout_until": "2026-08-09",
-  "reason": "FULL BLACKOUT (Emma 2026-07-27): no requests to shinto.miraheze.org of any kind - reads included - until 2026-08-09. The 403 has been up since 2026-07-11 and never lifted; Emma's read is that continuing to read through the challenge is what kept us looking persistent, so the challenge was never relaxed. Every Miraheze-touching workflow is now gated on this file, and weekly_wiki_edit_test.py holds its probe until blackout_until passes, so the first test after the blackout (Sunday 2026-08-09) lands on ~13 days of true silence.",
-  "checked": "2026-07-27T23:45:00Z",
-  "editing_hold": {
-    "hold": true,
-    "set": "2026-08-06",
-    "set_by": "Emma",
-    "release_condition": "no shintowiki editing until 'Immanuelle' is no longer mentioned on https://en.wikipedia.org/wiki/Wikipedia:AI_noticeboard or https://en.wikipedia.org/wiki/Wikipedia_talk:WikiProject_Japan",
-    "note": "A CONDITION, not a date - it outranks locked_until and blackout_until, and the weekly edit-test cannot clear it. Lift it by deleting this object once the condition holds; check with shinto_miraheze/check_enwiki_mentions.py. Emma's read on 2026-08-06: the mentions will 'probably disappear pretty quickly but not 100% sure'.",
-    "last_checked": "2026-08-06",
-    "last_checked_result": "Wikipedia:AI noticeboard: 7 mention(s); Wikipedia talk:WikiProject Japan: 2 mention(s) - condition NOT met"
-  }
+  "reason": "FULL BLACKOUT (Emma 2026-07-27): no requests to shinto.miraheze.org of any kind — reads included — until 2026-08-09. The 403 has been up since 2026-07-11 and never lifted; Emma's read is that continuing to read through the challenge is what kept us looking persistent, so the challenge was never relaxed. Every Miraheze-touching workflow is now gated on this file, and weekly_wiki_edit_test.py holds its probe until blackout_until passes, so the first test after the blackout (Sunday 2026-08-09) lands on ~13 days of true silence.",
+  "checked": "2026-07-27T23:45:00Z"
 }

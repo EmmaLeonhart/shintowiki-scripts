@@ -1,0 +1,59 @@
+name: Enwiki Mention Check
+
+# Daily record of the gate that holds Wikidata editing (Emma, 2026-08-06): no Wikidata
+# edits while "Immanuelle" is named on [[Wikipedia:AI noticeboard]] or
+# [[Wikipedia talk:WikiProject Japan]]. Her clarification the same day: "the freeze
+# thing there is a wikidata thing, based on the enwiki thing, shintowiki if it still
+# runs is not an issue" — so this gates the QuickStatements pipeline, not the wiki bot.
+#
+# This job only RECORDS. The gate that actually stops the edits is evaluated live in
+# cleanup-loop.yml's window-gate, so a failed run here cannot let editing through.
+# Two enwiki reads a day; nothing on shinto.miraheze.org, which is under its own
+# separate blackout rule.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:40 UTC daily — after the ~02:23 UTC cleanup-loop fire, so the recorded
+    # result reflects the same day the gate was evaluated on.
+    - cron: "40 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: enwiki-mention-check
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Check the enwiki pages
+        id: check
+        run: |
+          if python3 shinto_miraheze/check_enwiki_mentions.py --record; then
+            echo "::notice title=Enwiki mention gate::CLEAR — no mentions remain; the enwiki condition no longer blocks Wikidata editing."
+          else
+            echo "::notice title=Enwiki mention gate::Mentions remain — Wikidata editing stays frozen."
+          fi
+
+      - name: Commit the recorded state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shinto_miraheze/enwiki_mention_gate.state
+          if git diff --cached --quiet; then
+            echo "No change in the gate state."
+          else
+            git commit -m "chore(enwiki-gate): record mention check [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" || echo "WARNING: failed to push the gate state."
+          fi

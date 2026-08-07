@@ -4,39 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
-## 2026-08-06 — editing hold: no shintowiki edits until the enwiki mentions clear
+## 2026-08-06 — the enwiki-mention gate lands on Wikidata, not on shintowiki
 
-Emma's decision, recorded in the funding-and-networking queue the same day: **shintowiki
-does no editing until "Immanuelle" is no longer mentioned on
-[[Wikipedia:AI noticeboard]] or [[Wikipedia talk:WikiProject Japan]]** — *"probably gonna
-disappear pretty quickly but not 100% sure."*
+Emma's decision: no editing while "Immanuelle" is named on [[Wikipedia:AI noticeboard]]
+or [[Wikipedia talk:WikiProject Japan]] — *"probably gonna disappear pretty quickly but
+not 100% sure."*
 
-That is a condition, and every gate this repo had was a date. Both were about to expire:
-`blackout_until` 2026-08-09, `locked_until` 2026-08-10. Worse, the first thing to run after
-the blackout drains is the Sunday edit-test, and **a passing probe rewrites the state to
-`locked: false`** — so within days editing would have reopened on its own, the 32 pages
-staged in `git_synced/` would have created, and nothing in the machinery would ever have
-looked at Emma's condition. Setting a far-off date would only have moved the same silent
-expiry.
+Her first phrasing named **shintowiki**, and it was built that way: an `editing_hold` in
+`wiki_editing_lockout.state` that outranked both date gates, barred the weekly edit-test,
+and survived a state rewrite. Asked which side she meant, she corrected it: *"uhh the
+freeze thing there is a wikidata thing, based on the enwiki thing, shintowiki if it still
+runs is not an issue."* So that commit was reverted in full — the wiki bot's lockout is
+back to exactly what it was — and the gate was rebuilt on the Wikidata side. That
+direction also matches the threat model already on record: the risk is someone finding the
+AI editing on Wikidata, and the enwiki mentions are the signal that someone is looking.
 
-So: a new `editing_hold` object in `wiki_editing_lockout.state` that outranks both dates.
-`wiki_edit_allowed.py` returns LOCKED whenever it is set, which covers all 18 workflows
-that call the guard; `weekly_wiki_edit_test.py` refuses to probe while it stands (the probe
-is itself an edit) and carries the hold across any state rewrite. Nothing dated and no
-script can clear it — a human deletes the object. Tests in
-`shinto_miraheze/tests/test_editing_hold.py` pin both bypass routes.
+What now exists:
 
-`shinto_miraheze/check_enwiki_mentions.py` is how the condition gets evaluated rather than
-remembered: counts `Immanuelle` in the raw wikitext of both pages, `--record` stamps the
-result into the hold, exit 0 = met. enwiki reads only; a failed fetch counts as not-met,
-because an unreadable page is not evidence of absence. First run: **7 mentions on the AI
-noticeboard, 2 on WikiProject Japan talk — not met.**
+- `shinto_miraheze/check_enwiki_mentions.py` — counts `Immanuelle` in the raw wikitext of
+  both pages. Exit 0 = clear; exit 1 = mentions remain **or the check failed**, because an
+  unreadable page is not evidence of absence.
+- `cleanup-loop.yml`'s window-gate runs it live and forces `wikidata-daily-fire=false` when
+  it is closed, ahead of the `FREEZE_WIKIDATA_UNTIL` date check. The QS submission and its
+  `direct_daily_edits.py` fallback are the only things that edit Wikidata and both hang off
+  that output, so a closed gate stops all of it on every trigger.
+- `enwiki-mention-check.yml` — daily at 06:40 UTC, `--record` into
+  `enwiki_mention_gate.state`, committed. It only records; the live check is what stops the
+  edits, so a failed run here cannot let editing through.
+- `tests/test_enwiki_mention_gate.py` pins the fail-closed behaviour and the watched pages.
 
-The Miraheze blackout is untouched and still stands on its own terms. Full write-up:
-`docs/editing_hold_2026-08-06.md`. Unrelated pre-existing local state: three
-`test_interlang_consolidate.py` tests fail and five test modules cannot collect without
-`mwclient`, which the local toolchain has been missing since the machine move; CI installs
-it, so this is a dev-box gap.
+No date is attached to any of it: the gate opens by itself when the threads archive off.
+First check: **7 mentions on the AI noticeboard, 2 on WikiProject Japan talk — closed.**
+`FREEZE_WIKIDATA_UNTIL = 2026-08-10` and the Miraheze blackout are untouched and still
+apply on their own terms. Write-up: `docs/enwiki_mention_gate_2026-08-06.md`.
 
 ---
 

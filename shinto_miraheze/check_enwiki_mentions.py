@@ -1,23 +1,28 @@
 #!/usr/bin/env python3
-"""Is the 2026-08-06 editing hold's release condition met yet?
+"""Wikidata gate: is "Immanuelle" still named on the two enwiki pages?
 
-Emma, 2026-08-06: shintowiki does no editing until "Immanuelle" is no longer
-mentioned on [[Wikipedia:AI noticeboard]] or [[Wikipedia talk:WikiProject Japan]].
-Her read was that the mentions would probably archive off fairly quickly, but she
-was not certain — so the hold is condition-gated, not dated, and this script is how
-the condition gets evaluated instead of remembered.
+Emma, 2026-08-06: the Wikidata editing freeze is gated on the **enwiki** situation —
+no Wikidata editing while "Immanuelle" is mentioned on [[Wikipedia:AI noticeboard]] or
+[[Wikipedia talk:WikiProject Japan]]. Her clarification the same day, on which side the
+gate belongs: *"the freeze thing there is a wikidata thing, based on the enwiki thing,
+shintowiki if it still runs is not an issue."* So this gates the QuickStatements
+pipeline, NOT shinto.miraheze.org editing. Her read on how long: the mentions will
+*"probably disappear pretty quickly but not 100% sure"* — which is why the gate is a
+condition and not a date.
 
-Reads enwiki only. It touches NOTHING on shinto.miraheze.org — the Miraheze blackout
-(blackout_until in wiki_editing_lockout.state) is a separate rule and still applies.
+`cleanup-loop.yml`'s window-gate runs this live: a non-zero exit forces
+`wikidata-daily-fire=false`, so the QS submission and its `direct_daily_edits.py`
+fallback never run. `enwiki-mention-check.yml` runs it daily with `--record` so the
+state file carries a visible history rather than a memory of the last check.
+
+Reads en.wikipedia.org only. It touches NOTHING on shinto.miraheze.org — the Miraheze
+blackout is a separate rule with its own state file.
 
     python check_enwiki_mentions.py            # report
-    python check_enwiki_mentions.py --record   # also stamp the result into the state file
+    python check_enwiki_mentions.py --record   # also write enwiki_mention_gate.state
 
-Exit 0 = condition MET (no mentions; the hold can be lifted by a human).
-Exit 1 = condition NOT met (mentions remain, or the check failed).
-
-Lifting the hold is a human act: delete the `editing_hold` object from
-shinto_miraheze/wiki_editing_lockout.state. This script never lifts it.
+Exit 0 = clear (no mentions) — Wikidata editing may proceed as far as this gate cares.
+Exit 1 = mentions remain, or the check failed — Wikidata editing stays frozen.
 """
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
@@ -35,7 +40,7 @@ import pathlib
 import urllib.parse
 import urllib.request
 
-STATE = pathlib.Path(_uar) / "shinto_miraheze" / "wiki_editing_lockout.state"
+STATE = pathlib.Path(_uar) / "shinto_miraheze" / "enwiki_mention_gate.state"
 NEEDLE = "Immanuelle"
 PAGES = [
     "Wikipedia:AI noticeboard",
@@ -44,7 +49,7 @@ PAGES = [
 
 
 def count_mentions(title):
-    """(count, error). Raw wikitext, so archived/removed threads stop counting."""
+    """(count, error). Raw wikitext, so an archived thread stops counting."""
     url = ("https://en.wikipedia.org/w/index.php?action=raw&title="
            + urllib.parse.quote(title))
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -55,49 +60,68 @@ def count_mentions(title):
     return text.count(NEEDLE), None
 
 
-def main():
-    _usys.stdout = io.TextIOWrapper(_usys.stdout.buffer, encoding="utf-8")
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--record", action="store_true",
-                    help="write the result into editing_hold.last_checked* in the state file")
-    args = ap.parse_args()
-
-    total, failed, parts = 0, False, []
+def evaluate():
+    """(clear: bool, per_page: dict, failed: bool)."""
+    per_page, total, failed = {}, 0, False
     for title in PAGES:
         n, err = count_mentions(title)
         if err is not None:
             failed = True
-            parts.append(f"{title}: CHECK FAILED ({err})")
-            print(f"{title}: CHECK FAILED — {err}")
+            per_page[title] = f"CHECK FAILED: {err}"
             continue
+        per_page[title] = n
         total += n
-        parts.append(f"{title}: {n} mention(s)")
-        print(f"{title}: {n} mention(s) of {NEEDLE!r}")
+    # A page that could not be read is not evidence of absence. Fail closed.
+    return (not failed and total == 0), per_page, failed
+
+
+def main():
+    _usys.stdout = io.TextIOWrapper(_usys.stdout.buffer, encoding="utf-8")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--record", action="store_true",
+                    help="write the result to shinto_miraheze/enwiki_mention_gate.state")
+    args = ap.parse_args()
+
+    clear, per_page, failed = evaluate()
+    for title, val in per_page.items():
+        print(f"{title}: {val}" if isinstance(val, str)
+              else f"{title}: {val} mention(s) of {NEEDLE!r}")
 
     if failed:
-        # A failed fetch is not evidence of absence. Treat it as not-met.
-        print("CONDITION NOT MET — a page could not be read; not treating that as absence.")
-        met = False
+        print("GATE CLOSED — a page could not be read; an unreadable page is not absence.")
+    elif clear:
+        print("GATE OPEN — no mentions remain; the enwiki condition no longer blocks "
+              "Wikidata editing.")
     else:
-        met = total == 0
-        print("CONDITION MET — no mentions remain; a human may delete `editing_hold` "
-              "from wiki_editing_lockout.state." if met else
-              f"CONDITION NOT MET — {total} mention(s) remain; the editing hold stands.")
+        print("GATE CLOSED — mentions remain; NO Wikidata editing.")
 
-    if args.record and STATE.exists():
-        state = json.loads(STATE.read_text(encoding="utf-8"))
-        hold = state.get("editing_hold")
-        if hold:
-            hold["last_checked"] = datetime.date.today().isoformat()
-            hold["last_checked_result"] = "; ".join(parts) + (
-                " - condition MET" if met else " - condition NOT met")
-            STATE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n",
-                             encoding="utf-8")
-            print(f"recorded into {STATE.name}")
-        else:
-            print("no editing_hold in the state file — nothing to record")
+    if args.record:
+        prior = {}
+        if STATE.exists():
+            try:
+                prior = json.loads(STATE.read_text(encoding="utf-8"))
+            except Exception:
+                prior = {}
+        now = datetime.datetime.now(datetime.timezone.utc)
+        state = {
+            "gate": "enwiki mentions of Immanuelle (Emma 2026-08-06)",
+            "blocks": "Wikidata editing (QuickStatements submission + direct-edit fallback)",
+            "condition": ("clear when 'Immanuelle' appears on neither "
+                          "[[Wikipedia:AI noticeboard]] nor "
+                          "[[Wikipedia talk:WikiProject Japan]]"),
+            "clear": clear,
+            "pages": per_page,
+            "checked": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "first_checked": prior.get("first_checked") or now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "note": ("shinto.miraheze.org editing is NOT gated on this — Emma 2026-08-06: "
+                     "'the freeze thing there is a wikidata thing, based on the enwiki thing, "
+                     "shintowiki if it still runs is not an issue'."),
+        }
+        STATE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n",
+                         encoding="utf-8")
+        print(f"recorded into {STATE.name}")
 
-    return 0 if met else 1
+    return 0 if clear else 1
 
 
 if __name__ == "__main__":

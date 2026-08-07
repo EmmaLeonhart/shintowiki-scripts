@@ -133,8 +133,20 @@ jobs:
           # 2026-08-03 (Emma): "Week long wikidata editing stop" — blocks
           #   every daily QS submission / direct-edit fallback from 2026-08-03
           #   through 2026-08-09 inclusive; auto-resumes 2026-08-10.
+          # ── ENWIKI-MENTION GATE (Emma 2026-08-06) — a CONDITION, not a date ──
+          # No Wikidata editing while "Immanuelle" is named on [[Wikipedia:AI noticeboard]]
+          # or [[Wikipedia talk:WikiProject Japan]]. Emma: "the freeze thing there is a
+          # wikidata thing, based on the enwiki thing, shintowiki if it still runs is not
+          # an issue" — so this gates the QS pipeline only, and shinto.miraheze.org editing
+          # is deliberately NOT gated on it. Checked live (two enwiki reads); a failed read
+          # counts as still-mentioned, because an unreadable page is not absence. It opens
+          # by itself when the threads archive off — no date to push out, nothing to
+          # remember. Daily record: enwiki-mention-check.yml → enwiki_mention_gate.state.
           FREEZE_WIKIDATA_UNTIL="2026-08-10"
-          if [ "$(date -u +%Y-%m-%d)" \< "$FREEZE_WIKIDATA_UNTIL" ]; then
+          if ! python3 shinto_miraheze/check_enwiki_mentions.py; then
+            echo "wikidata-daily-fire=false" >> "$GITHUB_OUTPUT"
+            echo "ENWIKI-MENTION GATE closed (Emma 2026-08-06) — NO Wikidata edits."
+          elif [ "$(date -u +%Y-%m-%d)" \< "$FREEZE_WIKIDATA_UNTIL" ]; then
             echo "wikidata-daily-fire=false" >> "$GITHUB_OUTPUT"
             echo "WIKIDATA FREEZE active until $FREEZE_WIKIDATA_UNTIL — NO Wikidata edits."
           elif [ "${{ github.event_name }}" != "schedule" ]; then

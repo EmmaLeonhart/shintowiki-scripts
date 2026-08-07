@@ -172,26 +172,6 @@ Local full rebuild: `!regenerateQuickStatements.bat`.
   the process (a small generic orchestrator for single-edit scripts)
   rather than hand-wiring each one.
 
-## ⛔ EDITING HOLD — no shintowiki edits until the enwiki mentions clear (Emma, 2026-08-06)
-
-**Emma's decision:** shintowiki does **no editing** until "Immanuelle" is no longer
-mentioned on <https://en.wikipedia.org/wiki/Wikipedia:AI_noticeboard> or
-<https://en.wikipedia.org/wiki/Wikipedia_talk:WikiProject_Japan>.
-
-- It is a **condition, not a date.** Enforced by the `editing_hold` object in
-  `shinto_miraheze/wiki_editing_lockout.state`, which outranks `locked_until` and
-  `blackout_until` and **cannot be cleared by the weekly edit-test** (a passing probe
-  used to rewrite the state to `locked: false`, which would have reopened editing on
-  2026-08-09/10 while the condition still held).
-- **Do not attach a date to it, do not shorten it, and do not lift it because a date
-  passed.** Lifting = a human deleting the object once the condition actually holds.
-- **Check it, don't remember it:** `python shinto_miraheze/check_enwiki_mentions.py
-  [--record]` (enwiki reads only; exit 0 = condition met). 2026-08-06: 7 + 2 mentions,
-  not met.
-- Full rationale: `docs/editing_hold_2026-08-06.md`.
-- The **Miraheze blackout** (Emma 2026-07-27, no requests of any kind to
-  shinto.miraheze.org, reads included) is a **separate** rule and still applies.
-
 ## Pinned operational notes (moved out of queue.md 2026-05-30)
 
 * **`[[Category:Need translation]]` removal is destructive — and so are the
@@ -511,6 +491,17 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   only REMOVES, and only acts on items where a fresh SPARQL query *confirms the
   add already landed*. Never add+remove in one action — under the random run
   order the remove could fire before the add, losing data.
+- **⛔ ENWIKI-MENTION GATE — no Wikidata editing while "Immanuelle" is named on
+  [[Wikipedia:AI noticeboard]] or [[Wikipedia talk:WikiProject Japan]]** (Emma,
+  2026-08-06). A **condition, not a date**: `cleanup-loop.yml`'s window-gate runs
+  `shinto_miraheze/check_enwiki_mentions.py` live and forces `wikidata-daily-fire=false`
+  while it is closed; `enwiki-mention-check.yml` records the result daily into
+  `enwiki_mention_gate.state`. It **fails closed** (an unreadable page is not absence)
+  and **opens by itself** when the threads archive off — do not attach a date to it and
+  do not route around it. **This gates Wikidata only** — Emma, same day: *"the freeze
+  thing there is a wikidata thing, based on the enwiki thing, shintowiki if it still runs
+  is not an issue."* A shintowiki-side hold was built first and reverted; do not re-add
+  it. Rationale: `docs/enwiki_mention_gate_2026-08-06.md`.
 - **WIKIDATA FREEZE until 2026-08-10** (week-long stop, Emma 2026-08-03).
   `cleanup-loop.yml`'s window-gate forces `wikidata-daily-fire=false` while
   `FREEZE_WIKIDATA_UNTIL` is in the future, so the QS submission and its

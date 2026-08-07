@@ -95,24 +95,6 @@ def blackout_until():
         return None
 
 
-def editing_hold():
-    """The `editing_hold` object if a hold is in force, else None.
-
-    Emma 2026-08-06: shintowiki does NO editing until she is no longer mentioned on
-    [[Wikipedia:AI noticeboard]] or [[Wikipedia talk:WikiProject Japan]]. That is a
-    CONDITION, not a date, so it cannot be expressed as `locked_until` and must not
-    be clearable by this probe — a passing edit-test would otherwise write
-    `locked: false` and reopen everything while the condition still holds.
-    """
-    if not STATE.exists():
-        return None
-    try:
-        hold = json.loads(STATE.read_text(encoding="utf-8")).get("editing_hold") or {}
-    except Exception:
-        return None
-    return hold if hold.get("hold") else None
-
-
 def write_state(ok, detail, now):
     # Preserve an in-force blackout across a rewrite — losing it would silently
     # restart the weekly probing that the blackout exists to stop.
@@ -120,10 +102,6 @@ def write_state(ok, detail, now):
     bo = blackout_until()
     if bo and now.date() < bo:
         carried["blackout_until"] = bo.isoformat()
-    # Same for the hold: a rewrite must never drop it.
-    hold = editing_hold()
-    if hold:
-        carried["editing_hold"] = hold
     if ok:
         st = {"locked": False, "locked_until": None,
               "reason": f"weekly edit-test PASSED — {detail}",
@@ -162,14 +140,6 @@ def main():
     args = ap.parse_args()
 
     now = datetime.datetime.now(datetime.timezone.utc)
-
-    # Editing hold (Emma 2026-08-06): the probe IS an edit, so it is barred too.
-    # Make no request and leave the state exactly as it is.
-    hold = editing_hold()
-    if hold and not args.simulate:
-        print("HELD — no edit-test while the editing hold stands: "
-              + (hold.get("release_condition") or "no condition recorded"))
-        return 1
 
     # Blackout: make NO request at all, and leave the state exactly as it is.
     bo = blackout_until()
