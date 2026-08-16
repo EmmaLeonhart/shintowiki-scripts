@@ -66,7 +66,35 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # ⛔ THE WIKIDATA FREEZE NOW COVERS ITEM CREATION. Added 2026-08-16, Emma's call.
+      #
+      # It did not before, and that was a real hole rather than an oversight in theory:
+      # this workflow is the ONLY thing in the repo that can create a Wikidata item, it
+      # ran on its own daily schedule, and it never consulted wikidata-daily-fire. On
+      # 2026-08-16 the vsa_libraries gate opened and it was hours from creating two items
+      # straight through the enwiki-mention freeze Emma set on 2026-08-06. Pushing that
+      # one gate's date closed that one instance; this closes the class, so no future
+      # batch registered in create_items.py GATES can slip through the same way.
+      #
+      # Fails CLOSED. check_enwiki_mentions.py treats an unreadable page as still-mentioned,
+      # and a non-zero exit here lands in the same branch as a closed gate.
+      - name: Wikidata freeze guard
+        id: freeze
+        run: |
+          FREEZE_WIKIDATA_UNTIL="2026-08-10"
+          if ! python3 shinto_miraheze/check_enwiki_mentions.py; then
+            echo "open=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wikidata freeze::ENWIKI-MENTION GATE closed — no item creation."
+          elif [ "$(date -u +%Y-%m-%d)" \< "$FREEZE_WIKIDATA_UNTIL" ]; then
+            echo "open=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wikidata freeze::FREEZE active until $FREEZE_WIKIDATA_UNTIL — no item creation."
+          else
+            echo "open=true" >> "$GITHUB_OUTPUT"
+            echo "Wikidata freeze open — batch gates still apply on top."
+          fi
+
       - name: Create items from gated batches
+        if: steps.freeze.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:
           MW_BOTNAME: ${{ secrets.MW_BOTNAME }}

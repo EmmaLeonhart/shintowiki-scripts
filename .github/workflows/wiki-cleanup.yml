@@ -621,8 +621,17 @@ jobs:
       #  Bookkeeping: END
       # ════════════════════════════════════════
 
+      # The lockout check here is load-bearing, added 2026-08-16 (Emma authorised).
+      # Its counterpart "Bookkeeping: mark active" has been lockout-guarded all along;
+      # this one was not, so a locked-out run skipped every editing step, announced
+      # "skipping all wiki-cleanup edits this run", then came here, called the Miraheze
+      # API anyway, took the same 403 unguarded and exited 1. That asymmetry is why
+      # shinto-cleanup-loop reported FAILURE every single day for weeks while the wiki
+      # was blocking us — a run that correctly decided to do nothing still went red.
+      # A locked-out run should be a clean no-op; a red X every day trains everyone to
+      # ignore the result, so a genuinely new failure would go unnoticed.
       - name: "Bookkeeping: mark inactive"
-        if: always()
+        if: always() && steps.lockout.outputs.locked != 'true'
         run: |
           python3 shinto_miraheze/update_bot_userpage_status.py \
             --run-tag "${RUN_TAG}" --status inactive --stage "Complete"

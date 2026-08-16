@@ -277,12 +277,33 @@ def main():
                 continue
 
             if num_p13677 > 1:
+                # A candidate shrine carries ONE P13677 per parent entry it is listed
+                # under, so the count is arity, not ambiguity: the child's ID whose value
+                # equals THIS parent's ID is the one this parent's ranking belongs to.
+                # Verified 2026-08-16 on Q98082987 (2 IDs / 2 parents), Q135186711 (2/2)
+                # and Q135190252 (3 IDs / 3 parents) — one unique match every time.
+                # Emma authorised applying it 2026-08-16.
+                parent_val = parent_p13677.get(parent_qid)
+                matches = [v for v in p13677_values if v == parent_val]
+                if len(matches) == 1:
+                    quickstatements.append(
+                        f'{child_qid}|P13677|"{matches[0]}"|P958|"{ranking}"'
+                    )
+                    print(
+                        f"  {child_qid} ({child['label']}) ← P958=\"{ranking}\" on "
+                        f"P13677=\"{matches[0]}\" [multi-ID, matched to parent {parent_qid}]"
+                    )
+                    continue
+                # Anything that does NOT resolve to exactly one match still goes to a
+                # human. That is the safety net, not a formality: with no parent value or
+                # an ambiguous one there is no way to know which ID the ranking belongs to.
                 manual_review.append(
                     f"{child_qid}\t{child['label']}\t"
                     f"parent={parent_qid} ({parent_data['label']})\t"
                     f"ranking={ranking}\t"
                     f"P13677_count={num_p13677}\t"
-                    f"via {child['prop']}"
+                    f"via {child['prop']}\t"
+                    f"parent_id={parent_val or 'MISSING'}\tmatches={len(matches)}"
                 )
                 continue
 
