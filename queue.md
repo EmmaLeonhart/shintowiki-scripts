@@ -4,7 +4,7 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: WAIT -->
-**Status: ⏸ WAITING** (weekly edit-test failed, 2026-08-09 10:01 UTC) — wiki editing is locked for the week. The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
+**Status: ⏸ WAITING** (weekly edit-test failed, 2026-08-16 09:47 UTC) — wiki editing is locked for the week. The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
 The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
 
 > ⛔ **FULL BLACKOUT until 2026-08-09** (Emma 2026-07-27). Not just "no writes": **no requests to
