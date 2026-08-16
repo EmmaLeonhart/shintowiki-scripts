@@ -36,8 +36,21 @@ Fails CLOSED: any error -> gate shut. The global conflict_gate still applies.
 """
 import datetime
 
-# Emma said this 2026-07-16, "a month from now".
-START_DATE = datetime.date(2026, 8, 16)
+# Emma said this 2026-07-16, "a month from now" -> 2026-08-16.
+#
+# PUSHED OUT ANOTHER MONTH, 2026-08-16, by Emma: "Stop it until a month from now."
+#
+# Why she was asked: this gate was hours from opening (the workflow fires 09:37 UTC)
+# and create-items.yml does NOT consult wikidata-daily-fire, so the enwiki-mention
+# freeze of 2026-08-06 does not cover item creation at all. Her freeze says no
+# Wikidata editing while "Immanuelle" is named on the AI noticeboard, and this
+# path would have created two items straight through it.
+#
+# NOTE THE HOLE IS STILL OPEN. Moving this date stops THIS batch only. Any future
+# gated batch registered in create_items.py GATES has the same bypass, because the
+# workflow has no freeze check of its own. Emma chose the narrow fix when asked;
+# widening it to a wikidata-daily-fire guard on create-items.yml is a separate call.
+START_DATE = datetime.date(2026, 9, 16)
 
 
 def is_open(today=None):
