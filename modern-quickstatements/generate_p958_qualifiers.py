@@ -121,6 +121,28 @@ def extract_qid(uri):
     return uri.rsplit("/", 1)[-1]
 
 
+def resolve_multi_p13677(p13677_values, parent_value):
+    """Which of a child's several Kokugakuin IDs belongs to THIS parent?
+
+    A 論社 candidate is listed under every parent entry it is a candidate for and
+    carries one P13677 per parent entry, so the count is arity rather than ambiguity:
+    the ID whose value equals the parent's own ID is the one this parent's ranking
+    belongs to.
+
+    Returns the single matching value, or None when it cannot be settled — no parent
+    value, no match, or (defensively) more than one identical match. None means the
+    item goes to a human, which is the safe direction: guessing would attach a section
+    number to the wrong identifier.
+
+    Verified against live Wikidata 2026-08-16 on Q98082987 (2 IDs / 2 parents),
+    Q135186711 (2 / 2) and Q135190252 (3 / 3) — one unique match every time.
+    """
+    if not parent_value:
+        return None
+    matches = [v for v in p13677_values if v == parent_value]
+    return matches[0] if len(matches) == 1 else None
+
+
 def analyze_p13677(entity):
     """Analyze P13677 claims on an entity.
 
@@ -284,14 +306,14 @@ def main():
                 # and Q135190252 (3 IDs / 3 parents) — one unique match every time.
                 # Emma authorised applying it 2026-08-16.
                 parent_val = parent_p13677.get(parent_qid)
-                matches = [v for v in p13677_values if v == parent_val]
-                if len(matches) == 1:
+                matched = resolve_multi_p13677(p13677_values, parent_val)
+                if matched is not None:
                     quickstatements.append(
-                        f'{child_qid}|P13677|"{matches[0]}"|P958|"{ranking}"'
+                        f'{child_qid}|P13677|"{matched}"|P958|"{ranking}"'
                     )
                     print(
                         f"  {child_qid} ({child['label']}) ← P958=\"{ranking}\" on "
-                        f"P13677=\"{matches[0]}\" [multi-ID, matched to parent {parent_qid}]"
+                        f"P13677=\"{matched}\" [multi-ID, matched to parent {parent_qid}]"
                     )
                     continue
                 # Anything that does NOT resolve to exactly one match still goes to a
@@ -303,7 +325,7 @@ def main():
                     f"ranking={ranking}\t"
                     f"P13677_count={num_p13677}\t"
                     f"via {child['prop']}\t"
-                    f"parent_id={parent_val or 'MISSING'}\tmatches={len(matches)}"
+                    f"parent_id={parent_val or 'MISSING'}\tno unique match"
                 )
                 continue
 
