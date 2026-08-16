@@ -24,11 +24,20 @@ name: Create Items (gated batches)
 #
 # --apply is explicit. Without it the script is a dry run.
 
+# ⛔ SCHEDULE DISABLED 2026-08-16, Emma: "I think we'd be practically just completely
+# disabling the things, but we'd be incorporating it into the quick statements."
+#
+# The creations this workflow does (Nengo, torchhd) are being folded into the
+# hand-run QuickStatements batch instead, so the automated path is not needed. It
+# also had a real defect: it never consulted wikidata-daily-fire, so the
+# enwiki-mention freeze of 2026-08-06 did not cover item creation at all, and this
+# workflow was hours from creating two items straight through that freeze.
+#
+# workflow_dispatch is kept so the machinery still exists and can be run
+# deliberately. Nothing fires on a timer any more. vsa_libraries_gate's START_DATE
+# was also pushed to 2026-09-16 in the same change, so even a manual dispatch is
+# shut until then.
 on:
-  schedule:
-    # 09:37 UTC — off the :00 herd, clear of generate-pages/monthly-sweep (07:23)
-    # and the ontology census (08:41 on the 1st).
-    - cron: "37 9 * * *"
   workflow_dispatch:
 
 permissions:
