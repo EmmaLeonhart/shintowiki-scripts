@@ -301,11 +301,9 @@ The following parameters can aid in automatic installation:
 
 }}</includeonly>
 <noinclude>
-[[Category:Independently git synced pages]][[Category:Wikipedia scripts|*]]
-[[Category:Independently git synced pages]][[Category:User namespace templates]]
-[[Category:Independently git synced pages]][[Category:Wikipedia user script templates]]
-[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]]{{wikidata link||en|Infobox Wikipedia user script/doc|check_date=2026-05-25}}
+[[Category:Wikipedia scripts|*]]
+[[Category:User namespace templates]]
+[[Category:Wikipedia user script templates]]
+[[Category:Infobox templates]]
 [[Category:Templates not transcluded in mainspace]]
 </noinclude>
