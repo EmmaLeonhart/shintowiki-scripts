@@ -21,12 +21,13 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "reisai_qualifier_repair.txt")
 # query-main split endpoint: query.wikidata.org is 429-outaged (2026-07-06+)
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = "shintowiki-reisai/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
+UA = f"shintowiki-reisai/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 
 QUERY = """
 SELECT ?shrine ?day WHERE {

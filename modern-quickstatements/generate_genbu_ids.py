@@ -25,6 +25,7 @@ import sys
 import time
 import urllib.parse
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -39,7 +40,7 @@ GENBU = "https://www.genbu.net"
 SHRINE_CLASS = "Q845945"                 # Shinto shrine
 REGIONS = ["tohoku", "kanto", "kousinetu", "hokuriku", "tokai", "kansai",
            "cyugoku", "sikoku", "kyusyu", "hokkaido", "okinawa"]
-UA = {"User-Agent": "ShintoWikiGenbu/1.0 (immanuelleleonhart@gmail.com)"}
+UA = {"User-Agent": "ShintoWikiGenbu/1.0 ({contact('wikidata')})"}
 SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 
 GENBU_URL_RE = re.compile(r"https?://(?:www\.)?genbu\.net/(.+?)\.htm", re.I)

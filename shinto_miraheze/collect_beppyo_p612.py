@@ -34,6 +34,7 @@ import io
 import os
 import re
 import sys
+from shinto_miraheze.ua_contact import contact
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -83,7 +84,7 @@ def verify_shrines(qids):
     uniq = sorted(qids)
     hdr = {"User-Agent": "ShintoWikiBeppyo/1.0 "
                          "(https://github.com/EmmaLeonhart/shintowiki-scripts; "
-                         "emma@topazcomputing.com)",
+                         f"{contact('miraheze')})",
            "Accept": "application/sparql-results+json"}
     for i in range(0, len(uniq), 50):
         vals = " ".join("wd:%s" % q for q in uniq[i:i + 50])

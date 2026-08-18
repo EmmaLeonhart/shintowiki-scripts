@@ -25,12 +25,13 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+from shinto_miraheze.ua_contact import contact
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTDIR = os.path.join(ROOT, "ronsha_ranking_review")
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = "shintowiki-ronsha/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
+UA = f"shintowiki-ronsha/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 
 TASK = (
     "<!-- TASK: this Shikinai Ronsha (disputed Engishiki shrine identity) has "

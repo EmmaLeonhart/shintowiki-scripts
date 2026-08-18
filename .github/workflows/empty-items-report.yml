@@ -22,6 +22,10 @@ concurrency:
   group: empty-items-report
   cancel-in-progress: true
 
+env:
+  MIRAHEZE_UA_CONTACT: ${{ secrets.MIRAHEZE_UA_CONTACT }}
+  WIKIDATA_UA_CONTACT: ${{ secrets.WIKIDATA_UA_CONTACT }}
+
 jobs:
   build:
     runs-on: ubuntu-latest

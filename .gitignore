@@ -39,3 +39,6 @@ modern-quickstatements/shinmei_run.log
 # transient crawl/run logs (jinjacho background chunks)
 jinjacho/*_chunk.log
 jinjacho/match_run*.log
+
+# UA contact addresses — the real values are repo secrets (MIRAHEZE_UA_CONTACT / WIKIDATA_UA_CONTACT)
+shinto_miraheze/.ua_contacts.json

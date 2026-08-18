@@ -30,6 +30,7 @@ import time
 
 import mwclient
 from wiki_login import login_with_retry
+from shinto_miraheze.ua_contact import contact
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
@@ -37,7 +38,7 @@ USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
 UA = ("ShintoWikiBot/1.0 (https://github.com/EmmaLeonhart/shintowiki-scripts; "
-      "immanuelleleonhart@gmail.com)")
+      f"{contact('wikidata')})")
 
 RESOLVE_DATE = datetime.date(2026, 7, 7)
 

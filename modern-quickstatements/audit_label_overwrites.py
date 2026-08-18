@@ -53,10 +53,11 @@ import sys
 import time
 
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 UA = ("ShintoWikiLabels/1.0 "
-      "(https://github.com/EmmaLeonhart/shintowiki-scripts; emma@topazcomputing.com)")
+      f"(https://github.com/EmmaLeonhart/shintowiki-scripts; {contact('miraheze')})")
 API = "https://www.wikidata.org/w/api.php"
 
 # `-Qxxx|Len|…` is a label REMOVAL; the dash is the command. Matched so a

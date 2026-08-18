@@ -13,13 +13,14 @@ import sys
 import io
 import time
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "property_translations.txt")
 # Split endpoint: query.wikidata.org is 429-outaged (2026-07-06+); query-main
 # serves everything except scholarly articles, which is all we need.
 SPARQL = "https://query-main.wikidata.org/sparql"
-UA = {"User-Agent": "ShintoWikiPropTranslate/1.0 (immanuelleleonhart@gmail.com)",
+UA = {"User-Agent": "ShintoWikiPropTranslate/1.0 ({contact('wikidata')})",
       "Accept": "application/sparql-results+json"}
 
 TRANSLATIONS = {

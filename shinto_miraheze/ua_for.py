@@ -7,7 +7,7 @@ exactly the leak Emma ruled out on 2026-08-18:
 
     "if you use the wrong one on either one of the bots, it'll basically be complete operational
      risk. We have strictly segregated user agents for the two of them. Wikidata cannot associate
-     contact@emmaleonhart.com with me."
+     the wiki-side contact address with me."
 
 So dual-site call sites resolve the UA from the URL **at request time**, which removes the class
 of bug where a human (or a sweep) has to remember which endpoint a given line was talking to.

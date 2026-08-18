@@ -27,6 +27,7 @@ from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+from shinto_miraheze.ua_contact import contact
 from generate_description_fixes import (  # noqa: E402
     CLASSES, sparql, pref_labels, infer_templates)
 
@@ -95,7 +96,7 @@ def class_label(cls, lang):
         req = urllib.request.Request(
             f"https://www.wikidata.org/w/api.php?action=wbgetentities&ids={cls}"
             f"&props=labels&format=json",
-            headers={"User-Agent": "shintowiki-descfix/1.0 (immanuelleleonhart@gmail.com)"})
+            headers={"User-Agent": "shintowiki-descfix/1.0 ({contact('wikidata')})"})
         _CLASS_LABELS[cls] = json.load(urllib.request.urlopen(req))[
             "entities"][cls].get("labels", {})
     return _CLASS_LABELS[cls].get(lang, {}).get("value")

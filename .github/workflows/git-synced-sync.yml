@@ -29,6 +29,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  MIRAHEZE_UA_CONTACT: ${{ secrets.MIRAHEZE_UA_CONTACT }}
+  WIKIDATA_UA_CONTACT: ${{ secrets.WIKIDATA_UA_CONTACT }}
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:

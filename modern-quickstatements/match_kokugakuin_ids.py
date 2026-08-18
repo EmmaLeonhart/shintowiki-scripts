@@ -32,10 +32,11 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = "shintowiki-scripts/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
+UA = f"shintowiki-scripts/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 DET = "https://jmapps.ne.jp/kokugakuin/det.html?data_id={}"
 INDEX = os.path.join(HERE, "kokugakuin_title_index.json")
 OUTPUT = os.path.join(HERE, "kokugakuin_id_matches.txt")

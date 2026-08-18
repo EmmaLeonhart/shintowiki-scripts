@@ -24,11 +24,12 @@ import requests
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from language_registry import COVERED           # noqa: E402
 from translit_common import looks_romaji         # noqa: E402
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SPARQL = "https://query.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
-UA = {"User-Agent": "ShintoWikiBFS-buddhist/1.0 (immanuelleleonhart@gmail.com)",
+UA = {"User-Agent": "ShintoWikiBFS-buddhist/1.0 ({contact('wikidata')})",
       "Accept": "application/sparql-results+json"}
 CLASS = "Q65122124"
 PROBES = ["en", "de", "fr", "es", "ru", "hi", "zh", "ko"]

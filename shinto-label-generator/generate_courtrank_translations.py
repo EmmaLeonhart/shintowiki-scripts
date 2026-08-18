@@ -17,11 +17,12 @@ import sys
 import io
 import time
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "courtrank_translations.txt")
 SPARQL = "https://query.wikidata.org/sparql"
-UA = {"User-Agent": "ShintoWikiCourtrank/1.0 (immanuelleleonhart@gmail.com)",
+UA = {"User-Agent": "ShintoWikiCourtrank/1.0 ({contact('wikidata')})",
       "Accept": "application/sparql-results+json"}
 
 ORDINAL = {"first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5,

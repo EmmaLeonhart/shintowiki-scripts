@@ -55,6 +55,7 @@ import sys
 import time
 import argparse
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "court_rank_people.txt")
@@ -64,7 +65,7 @@ SPARQL = "https://query-main.wikidata.org/sparql"
 PARENT_CAT = "Category:日本の位階受位者"
 RANK_SUFFIX = "受位者"
 
-UA = {"User-Agent": "ShintoWikiCourtRankPeople/1.0 (immanuelleleonhart@gmail.com)"}
+UA = {"User-Agent": "ShintoWikiCourtRankPeople/1.0 ({contact('wikidata')})"}
 SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 
 

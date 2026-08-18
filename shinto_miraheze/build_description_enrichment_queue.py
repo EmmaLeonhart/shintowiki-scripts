@@ -28,12 +28,13 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+from shinto_miraheze.ua_contact import contact
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SEED = os.path.join(ROOT, "modern-quickstatements", "description_collision_groups.json")
 OUTDIR = os.path.join(ROOT, "description_enrichment_en")
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = "shintowiki-descenrich/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
+UA = f"shintowiki-descenrich/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 JA_COVERAGE_MAX = 0.10   # stage-1 rule: ja descriptions (nearly) absent
 
 # A description this pipeline is allowed to replace. Anything else is Emma's own

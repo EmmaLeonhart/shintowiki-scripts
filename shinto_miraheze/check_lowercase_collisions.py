@@ -22,11 +22,12 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shinto_miraheze.sync_revision_aware import LOWERCASE_COLLISION_TITLES
+from shinto_miraheze.ua_contact import contact
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 UA = ("ShintoWikiBot/1.0 (https://github.com/EmmaLeonhart/shintowiki-scripts; "
-      "immanuelleleonhart@gmail.com)")
+      f"{contact('wikidata')})")
 
 WIKIS = {
     "miraheze": "https://shinto.miraheze.org/w/api.php",

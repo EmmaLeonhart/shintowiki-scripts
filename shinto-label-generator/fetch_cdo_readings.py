@@ -40,9 +40,10 @@ from opencc import OpenCC
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
 import generate_chinese_quickstatements as z  # noqa: E402
+from shinto_miraheze.ua_contact import contact
 
 TABLE_PATH = os.path.join(SCRIPT_DIR, "cdo_readings.json")
-USER_AGENT = "ShintoWikiBot/1.0 (immanuelleleonhart@gmail.com) cdo-readings"
+USER_AGENT = "ShintoWikiBot/1.0 ({contact('wikidata')}) cdo-readings"
 THROTTLE = 0.4
 
 _s2t = OpenCC("s2t")

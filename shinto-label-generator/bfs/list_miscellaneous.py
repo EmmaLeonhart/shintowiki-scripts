@@ -19,6 +19,7 @@ import sys
 import io
 import time
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS = os.path.join(HERE, "levels")
@@ -27,7 +28,7 @@ OUT = os.path.join(HERE, "miscellaneous.tsv")
 
 SPARQL = "https://query.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
-UA = {"User-Agent": "ShintoWikiBFS-misc/1.0 (immanuelleleonhart@gmail.com)",
+UA = {"User-Agent": "ShintoWikiBFS-misc/1.0 ({contact('wikidata')})",
       "Accept": "application/sparql-results+json"}
 CHUNK = 250
 

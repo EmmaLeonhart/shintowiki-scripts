@@ -23,11 +23,12 @@ import requests
 
 import generate_court_rank_quickstatements as g
 from generate_court_rank_category_links import NEW_RANK_QIDS
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "court_rank_category_en_labels.txt")
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = {"User-Agent": "ShintoWikiCourtRank/1.0 (immanuelleleonhart@gmail.com)"}
+UA = {"User-Agent": "ShintoWikiCourtRank/1.0 ({contact('wikidata')})"}
 
 
 def _wb(ids_or_titles, by="ids"):

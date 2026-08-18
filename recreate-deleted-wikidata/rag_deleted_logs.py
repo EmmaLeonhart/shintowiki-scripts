@@ -28,6 +28,7 @@ import time
 import urllib.request
 import urllib.parse
 import urllib.error
+from shinto_miraheze.ua_contact import contact
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -39,7 +40,7 @@ OUT_MD = os.path.join(HERE, "deleted_log_rag.md")
 OUT_JSON = os.path.join(HERE, "deleted_log_rag.json")
 
 UA = ("EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle; "
-      "immanuelleleonhart@gmail.com) rag_deleted_logs")
+      f"{contact('wikidata')}) rag_deleted_logs")
 READ_THROTTLE = 0.3
 
 

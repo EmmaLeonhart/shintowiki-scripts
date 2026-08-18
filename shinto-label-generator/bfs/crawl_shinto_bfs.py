@@ -33,6 +33,7 @@ import json
 import time
 import argparse
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS_DIR = os.path.join(HERE, "levels")
@@ -41,7 +42,7 @@ STATE_PATH = os.path.join(HERE, "state.json")
 
 API = "https://www.wikidata.org/w/api.php"
 ENTITYDATA = "https://www.wikidata.org/wiki/Special:EntityData/{}.json"
-UA = {"User-Agent": "ShintoWikiBFS/1.0 (immanuelleleonhart@gmail.com; shinto label corpus)"}
+UA = {"User-Agent": "ShintoWikiBFS/1.0 ({contact('wikidata')}; shinto label corpus)"}
 THROTTLE = 0.3            # seconds between network calls (read-only politeness)
 QID_RE = re.compile(r"^Q\d+$")
 SEED_LINE_RE = re.compile(r"\((Q\d+)\)")

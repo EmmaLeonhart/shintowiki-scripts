@@ -78,6 +78,7 @@ import datetime
 import re
 import time
 import urllib.parse
+from shinto_miraheze.ua_contact import contact
 
 import requests
 
@@ -97,8 +98,8 @@ _PROBE_THROTTLE = 0.3
 # live by then). The switchover is automatic so we don't have to remember
 # to swap it back manually.
 _UA_OWNER_NAME = "Emma Leonhart"
-_UA_CONTACT_INITIAL = "emmaleonhart999@gmail.com"
-_UA_CONTACT_AFTER = "contact@emmaleonhart.com"
+_UA_CONTACT_INITIAL = f"{contact('miraheze')}"
+_UA_CONTACT_AFTER = f"{contact('miraheze')}"
 _UA_SWITCHOVER_DATE = datetime.date(2026, 6, 2)  # 2026-05-26 + 7 days
 
 

@@ -60,6 +60,7 @@ import html
 import argparse
 
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_CSV = os.path.join(HERE, "crawled_shrines.csv")
@@ -70,7 +71,7 @@ MISS_TOLERANCE = 60          # consecutive dead ids before a family gives up
 TIMEOUT = 30
 UA = {"User-Agent": "ShintoWikiJinjacho/1.0 "
                     "(https://github.com/EmmaLeonhart/shintowiki-scripts; "
-                    "immanuelleleonhart@gmail.com)"}
+                    f"{contact('wikidata')})"}
 
 FIELDS = ["prefecture", "shrine_name", "kana", "address", "url"]
 

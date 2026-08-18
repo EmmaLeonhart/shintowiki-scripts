@@ -810,7 +810,7 @@ the dispute, with the named entry marked). Report-only, live SPARQL; no Wikidata
 ## 2026-07-14 — one canonical bot User-Agent, in one spot; UA bumped to EmmaBot/2.0
 
 Emma: make the bot UA canonical and store it in exactly one place, and change it (new email
-emmaleonhart999@gmail.com). Diagnosis first — the bot works on **aelaki**.miraheze.org but not
+<MIRAHEZE_UA_CONTACT>). Diagnosis first — the bot works on **aelaki**.miraheze.org but not
 **shinto**: probing both from the same IP shows shinto returns `cf-mitigated: challenge` on api.php,
 article pages, and root, for every UA (our bot UA, a real browser, curl, wget) while aelaki returns
 200. It's a Cloudflare managed-challenge posture on the shinto zone, not a UA or IP issue — the only
@@ -819,7 +819,7 @@ policy then blocks. So no UA threads both layers today; the real fix is Miraheze
 challenge. Emma still wanted the UA changed (canonical), betting ~50% it helps.
 
 Done: new `shinto_miraheze/user_agent.py` holds the ONE canonical value
-`EmmaBot/2.0 (https://shinto.miraheze.org/wiki/User:EmmaBot; emmaleonhart999@gmail.com)`. Replaced
+`EmmaBot/2.0 (https://shinto.miraheze.org/wiki/User:EmmaBot; <MIRAHEZE_UA_CONTACT>)`. Replaced
 all 118 hardcoded UA literals (the main string ×65 + ~20 per-op bot names + the `WP_UA`
 Wikipedia-read UAs + `recreate-deleted-wikidata/`) with a run-context-independent bootstrap import
 (walks up to the repo root, imports `shinto_miraheze.user_agent.USER_AGENT`) — works whether a script
@@ -7023,8 +7023,8 @@ the first visit and zero on every subsequent visit. Throttled at 0.3 s
 per probe.
 
 User-agent has a built-in owner-contact rotation: Mozilla-prefixed with
-`owner=Emma Leonhart <emmaleonhart999@gmail.com>` until 2026-06-02, then
-auto-switches to `contact@emmaleonhart.com` (the custom-domain address Emma
+`owner=Emma Leonhart <<MIRAHEZE_UA_CONTACT>>` until 2026-06-02, then
+auto-switches to `<MIRAHEZE_UA_CONTACT>` (the custom-domain address Emma
 expects to be live by then). The switchover is unconditional — no flag, no
 deploy step — so we don't have to remember to swap it back manually.
 

@@ -19,12 +19,13 @@ import io
 import json
 import time
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "concept_translations.txt")
 STATE = os.path.join(HERE, "concept_translations.state")
 SPARQL = "https://query.wikidata.org/sparql"
-UA = {"User-Agent": "ShintoWikiConceptTranslate/1.0 (immanuelleleonhart@gmail.com)",
+UA = {"User-Agent": "ShintoWikiConceptTranslate/1.0 ({contact('wikidata')})",
       "Accept": "application/sparql-results+json"}
 
 # Hand-authored translations. Only languages I'm confident about per item; a

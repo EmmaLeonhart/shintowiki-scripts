@@ -55,6 +55,7 @@ import time
 import urllib.parse
 
 import requests
+from shinto_miraheze.ua_contact import contact
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -63,7 +64,7 @@ OUT_DIR = os.path.join(REPO_ROOT, "name_in_kana")
 SPARQL = "https://query-main.wikidata.org/sparql"
 JA_API = "https://ja.wikipedia.org/w/api.php"
 UA = ("ShintoWikiLabels/1.0 "
-      "(https://github.com/EmmaLeonhart/shintowiki-scripts; emma@topazcomputing.com)")
+      f"(https://github.com/EmmaLeonhart/shintowiki-scripts; {contact('miraheze')})")
 HDR = {"User-Agent": UA, "Accept": "application/sparql-results+json"}
 THROTTLE = 0.4
 BATCH = 20                       # titles per ja.wikipedia extracts call

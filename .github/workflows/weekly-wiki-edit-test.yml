@@ -22,6 +22,10 @@ concurrency:
   group: weekly-wiki-edit-test
   cancel-in-progress: false
 
+env:
+  MIRAHEZE_UA_CONTACT: ${{ secrets.MIRAHEZE_UA_CONTACT }}
+  WIKIDATA_UA_CONTACT: ${{ secrets.WIKIDATA_UA_CONTACT }}
+
 jobs:
   edit-test:
     runs-on: ubuntu-latest

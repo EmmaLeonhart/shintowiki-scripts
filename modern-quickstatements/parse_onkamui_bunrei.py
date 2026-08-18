@@ -37,13 +37,14 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "bunrei_onkamui.txt")
 REPORT = os.path.join(HERE, "onkamui_parse_report.txt")
 URL = "https://plaza.rakuten.co.jp/onkamui/diary/202409290000/"
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = "shintowiki-bunrei/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
+UA = f"shintowiki-bunrei/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 Q_BUNREI = "Q195793"
 
 PREFS = [

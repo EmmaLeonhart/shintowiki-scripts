@@ -27,12 +27,13 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from language_registry import COVERED  # noqa: E402
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS = os.path.join(HERE, "levels")
 SPARQL = "https://query.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
-UA = {"User-Agent": "ShintoWikiBFS-props/1.0 (immanuelleleonhart@gmail.com)",
+UA = {"User-Agent": "ShintoWikiBFS-props/1.0 ({contact('wikidata')})",
       "Accept": "application/sparql-results+json"}
 
 # Properties the roadmap (docs/mass-label-expansion-plan.md) + the Engishiki

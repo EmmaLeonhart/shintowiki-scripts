@@ -2,7 +2,7 @@
 
 Emma, 2026-08-18: *"if you use the wrong one on either one of the bots, it'll basically be complete
 operational risk. We have strictly segregated user agents for the two of them. Wikidata cannot
-associate contact@emmaleonhart.com with me."*
+associate the wiki-side contact address with me."*
 
 So this is not a formatting test. It asserts that:
 
@@ -61,10 +61,18 @@ def test_each_agent_carries_a_contact_address():
         assert re.search(r"[\w.+-]+@[\w-]+\.[\w.]+", ua), f"{name} UA has no contact address: {ua!r}"
 
 
-def test_expected_contact_address_on_each_side():
-    # Pinned deliberately: these two addresses are the decision, and a silent swap is the failure.
-    assert "contact@emmaleonhart.com" in USER_AGENT
-    assert "immanuelleleonhart@gmail.com" in WIKIDATA_USER_AGENT
+def test_each_side_uses_its_OWN_secret_not_the_other_one():
+    """The addresses are secrets, so assert they came from the right one — never their literals.
+
+    Pinning the literal strings here would put both addresses back in the repo, which is the exact
+    thing making them secrets was for.
+    """
+    from shinto_miraheze.ua_contact import contact
+
+    mh, wd = contact("miraheze"), contact("wikidata")
+    assert mh != wd, "both User-Agents resolved to the SAME contact address"
+    assert mh in USER_AGENT and wd not in USER_AGENT
+    assert wd in WIKIDATA_USER_AGENT and mh not in WIKIDATA_USER_AGENT
 
 
 # --- ua_for(): the runtime resolver used by scripts that talk to both sites -----------------

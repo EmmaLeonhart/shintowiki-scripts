@@ -46,10 +46,11 @@ QS_OUT = os.path.join(REPO_ROOT, "modern-quickstatements", "name_in_kana.txt")
 JAWIKI_ITEM = "Q177837"
 
 UA = ("ShintoWikiLabels/1.0 "
-      "(https://github.com/EmmaLeonhart/shintowiki-scripts; emma@topazcomputing.com)")
+      f"(https://github.com/EmmaLeonhart/shintowiki-scripts; {contact('miraheze')})")
 
 sys.path.insert(0, HERE)
 from collect_name_in_kana import acceptable_reading, clean_kana  # noqa: E402
+from shinto_miraheze.ua_contact import contact
 
 
 def katakana_entries(text):

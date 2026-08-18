@@ -22,13 +22,14 @@ import json
 import time
 import glob
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS_DIR = os.path.join(HERE, "levels")
 OUT_JSON = os.path.join(HERE, "layer_analysis.json")
 
 SPARQL = "https://query.wikidata.org/sparql"
-UA = {"User-Agent": "ShintoWikiBFS-analyze/1.0 (immanuelleleonhart@gmail.com)",
+UA = {"User-Agent": "ShintoWikiBFS-analyze/1.0 ({contact('wikidata')})",
       "Accept": "application/sparql-results+json"}
 CHUNK = 250
 THROTTLE = 0.4

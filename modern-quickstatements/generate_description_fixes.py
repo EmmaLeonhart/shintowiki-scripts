@@ -44,12 +44,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(REPO, "shinto-label-generator"))
 from language_registry import COVERED  # noqa: E402
+from shinto_miraheze.ua_contact import contact
 
 OUT = os.path.join(HERE, "description_label_pairs.txt")
 GROUPS = os.path.join(HERE, "description_pair_collision_groups.json")
 PROPOSALS_DIR = os.path.join(REPO, "shinto-label-generator", "quickstatements")
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = "shintowiki-descfix/1.0 (https://shinto.miraheze.org; immanuelleleonhart@gmail.com)"
+UA = f"shintowiki-descfix/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 
 # (class QID, extra pattern) — same classes the label pipelines cover
 CLASSES = [

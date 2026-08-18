@@ -53,6 +53,7 @@ import time
 import urllib.parse
 
 import requests
+from shinto_miraheze.ua_contact import contact
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -60,7 +61,7 @@ OUT_DIR = os.path.join(REPO_ROOT, "beppyo_p612")
 
 JA_API = "https://ja.wikipedia.org/w/api.php"
 UA = ("ShintoWikiBeppyo/1.0 "
-      "(https://github.com/EmmaLeonhart/shintowiki-scripts; emma@topazcomputing.com)")
+      f"(https://github.com/EmmaLeonhart/shintowiki-scripts; {contact('miraheze')})")
 THROTTLE = 0.4
 BATCH = 1                        # whole-article extracts are 1-per-request (see articles())
 MAX_CHARS = 20000                # per-article cap in the work-file

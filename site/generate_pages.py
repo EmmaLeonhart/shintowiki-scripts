@@ -27,11 +27,12 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from shinto_miraheze.ua_contact import contact
 
 WIKI_URL = "https://shinto.miraheze.org"
 WIKI_API = f"{WIKI_URL}/w/api.php"
 USER_AGENT = ("ShintowikiPages/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot; "
-              "immanuelleleonhart@gmail.com) shintowiki-scripts")
+              f"{contact('wikidata')}) shintowiki-scripts")
 # This script lives in site/; the published output dir is _site/ at the repo
 # root (the Pages deploy workflow copies/commits repo-root _site/).
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

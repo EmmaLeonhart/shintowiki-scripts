@@ -26,6 +26,7 @@ import time
 
 import mwclient
 from wiki_login import login_with_retry
+from shinto_miraheze.ua_contact import contact
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -35,7 +36,7 @@ USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
 UA = ("ShintoWikiBot/1.0 (https://github.com/EmmaLeonhart/shintowiki-scripts; "
-      "immanuelleleonhart@gmail.com)")
+      f"{contact('wikidata')})")
 
 ADD_DATE = datetime.date(2026, 6, 6)  # ~1 week after the 2026-05-30 template change
 CRUD_TAG = "[[Category:Crud categories]]"

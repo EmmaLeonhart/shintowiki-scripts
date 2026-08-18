@@ -43,13 +43,14 @@ import html
 import requests
 
 from generate_genbu_ids import to_shinjitai   # kyūjitai -> shinjitai normalizer
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "shinmei_ids.txt")
 REPORT = os.path.join(HERE, "_site", "shinmei_unmatched.txt")
 INDEX = "https://kojiki.kokugakuin.ac.jp/shinmei/"
 SPARQL = "https://query-main.wikidata.org/sparql"
-UA = {"User-Agent": "ShintoWikiShinmei/1.0 (immanuelleleonhart@gmail.com)"}
+UA = {"User-Agent": "ShintoWikiShinmei/1.0 ({contact('wikidata')})"}
 SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 
 SLUG_RE = re.compile(r'href="(https://kojiki\.kokugakuin\.ac\.jp/shinmei/([^"/]+)/)"')
