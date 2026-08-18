@@ -46,7 +46,6 @@
 # whenever she wants it, since the cursor confirms a line landed before moving on.
 Q140568717|P50|Q140568870|P1545|"1"
 Q140568719|P50|Q140568870|P1545|"1"
-Q140568870|P1960|"kiJ9hGYAAAAJ"
 
 # ── 調田坐一事尼古神社 (Q22119431): the P1814 is a wrong name too ──────────────
 # Emma 2026-08-04: "replacing all of the wrong names on 'hikida Shrine' not just
