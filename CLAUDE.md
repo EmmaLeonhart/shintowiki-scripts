@@ -520,6 +520,11 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   - **By hand**, in the `funding-and-networking` repo: `!quickstatements_now.bat` refuses
     to open QuickStatements while locked, and `wikidata-review/RUN/RUNSHEET.md` carries the
     banner. The hand-run paste batches are a write path like any other.
+  - **In the `geni` repo**, which has a **separate** Wikidata editor on a **different bot
+    account** (`scripts/wikidata-edit-run.py`, `wikidata-edits.yml`, `START_DATE: 2026-09-01`
+    — inside this lockout). Its `scripts/wikidata_lockout.py` reads **this** state file over
+    HTTPS, since this repo is public; the date is not copied there. Worth remembering when you
+    think a Wikidata gate is finished: the shintowiki bots are not the whole write surface.
   - **To lift or extend: edit that ONE state file.** Do not lift a lockout by editing a
     workflow, a script, or the `.bat` — that is precisely the failure this replaced.
 - **Why it is a state file and not a date in the YAML.** It used to be

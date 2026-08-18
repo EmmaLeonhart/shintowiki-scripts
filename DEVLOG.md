@@ -21,6 +21,7 @@ shinto.miraheze. Two wikis, two independent lockouts, same shape.
 | `create_items.py` (the only thing that can CREATE an item) | GATE 0 in `main()` + `create-items.yml` freeze guard |
 | `substitute_source_shrine_proposal.py` (one-shot talk-page edit) | GATE 0 in `main()` + guard step in its workflow |
 | hand-run QuickStatements batches (`funding-and-networking`) | `!quickstatements_now.bat` refuses to open; banner on `RUNSHEET.md` |
+| `geni`'s own editor, a different bot account | `scripts/wikidata_lockout.py` reads this state file over HTTPS + guard step in `wikidata-edits.yml` |
 
 Those three scripts are the only files in the repo holding `MW_BOTNAME`/`BOT_TOKEN`
 (verified by grep, not by memory). They gate **in code**, so a local run is covered too —
@@ -32,6 +33,12 @@ CI-only gating would have left the manual path open.
 consulted `wikidata-daily-fire` at all, and on 2026-08-16 it was hours from creating two
 items straight through the enwiki-mention freeze. Both hardcoded dates are now gone; every
 gate reads the one state file. To extend or lift, edit that file — not a workflow.
+
+**Amendment, same day:** the first pass called it four paths. A wider sweep found a fifth
+— the `geni` repo runs its own Wikidata editor on its own bot-password secrets, and its
+workflow's `START_DATE` is 2026-09-01, *inside* the lockout. It is gated now, reading this
+state file over HTTPS rather than copying the date. The lesson is the same one this change
+is about: the shintowiki bots are not the whole Wikidata write surface.
 
 `substitute-source-shrine-proposal.yml` is worth calling out: it runs its own daily cron
 through September and would have fired its one-shot edit on **2026-09-04**, inside the
