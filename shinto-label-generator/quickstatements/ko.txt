@@ -71956,8 +71956,8 @@ Q132396302	Lko	"서광사"
 Q132745984	Lko	"질부신사"
 # Source: JA "円教坊" (hanja reading)
 Q133214734	Lko	"엔교방"
-# Source: JA "成就院 (熊谷市)" (hanja reading)
-Q133241058	Lko	"성취원웅곡시"
+# Source: JA "成就院" (hanja reading)
+Q133241058	Lko	"성취원"
 # Source: JA "大福寺" (hanja reading)
 Q133325283	Lko	"대복사"
 # Source: JA "飯縄大権現" (hanja reading)
@@ -89780,6 +89780,8 @@ Q135156174	Lko	"압조오소신사"
 Q135179307	Lko	"향일신사상전"
 # Source: JA "伊多太神社旧跡地" (hanja reading)
 Q135179857	Lko	"이다태신사구적지"
+# Source: JA "貴船神社 旧社地" (hanja reading)
+Q135179865	Lko	"귀선신사구사지"
 # Source: JA "式内真幡寸神社の跡" (hanja reading)
 Q135179886	Lko	"식내진번촌신사노적"
 # Source: JA "生駒山口神社 旧社地" (hanja reading)
@@ -107380,12 +107382,32 @@ Q140605922	Lko	"사도가어천신사"
 Q140605990	Lko	"이량호신사"
 # Source: JA "全性寺" (hanja reading)
 Q140630622	Lko	"전성사"
+# Source: JA "芋堀藤五郎神社" (hanja reading)
+Q140656129	Lko	"우굴등오랑신사"
 # Source: JA "光触寺" (hanja reading)
 Q140657409	Lko	"광촉사"
 # Source: JA "長寿院" (hanja reading)
 Q140673967	Lko	"장수원"
 # Source: JA "唯心寺" (hanja reading)
 Q140753128	Lko	"유심사"
+# Source: JA "不動院" (hanja reading)
+Q140797145	Lko	"불동원"
+# Source: JA "正覚院" (hanja reading)
+Q140797627	Lko	"정각원"
+# Source: JA "小浜神社 (雲仙市)" (hanja reading)
+Q140802548	Lko	"소빈신사운선시"
+# Source: JA "真覚寺" (hanja reading)
+Q140834308	Lko	"진각사"
+# Source: JA "称念寺" (hanja reading)
+Q140834320	Lko	"칭념사"
+# Source: JA "高稲荷神社" (hanja reading)
+Q140914979	Lko	"고도하신사"
+# Source: JA "室根神社" (hanja reading)
+Q140934715	Lko	"실근신사"
+# Source: JA "石神井神社" (hanja reading)
+Q140962719	Lko	"석신정신사"
+# Source: JA "塚田池尾神社" (hanja reading)
+Q141108288	Lko	"총전지미신사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
