@@ -1,15 +1,15 @@
 
 '''Ubusuna Shrine''' (産土神社, Ubusuna Jinja).
 
-* {{ill|Ubusuna Shrine (Konohana, Osaka)|ja|産土神社 (大阪市此花区)|12=simple|13=User:Immanuelle/Ubusuna Shrine (Konohana, Osaka)|qq=}} - Located in [[Konohana Ward]], [[:en:Osaka City|Osaka City]], {{ill|Osaka Prefecture|en|Osaka Prefecture|qid=Q122723|lt=Osaka Prefecture}}. [[Modern system of Ranked Shinto shrines|Former shrine Rank]]: Village shrine.
-* {{ill|Ubusuna Shrine (Taisho, Osaka)|ja|産土神社 (大阪市大正区)|12=simple|13=User:Immanuelle/Ubusuna Shrine (Taisho, Osaka)|qq=}} - Located in [[Taisho Ward]], Osaka City, Osaka Prefecture. Former shrine Rank: Village shrine.
-* {{ill|Ubusuna Shrine (Hirano, Osaka)|ja|産土神社 (大阪市平野区)|12=simple|13=User:Immanuelle/Ubusuna Shrine (Hirano, Osaka)|ja_comment=jawiki link invalid}} - Located in [[Nagayoshi Deto]], [[Hirano Ward]], Osaka City. Managed by [[Shiki Nagayoshi Shrines]]<ref>[http://www.shikinagayoshi-jinjya.org/kenmusya.html Shiki Nagayoshi Shrine], [http://www.jalan.net/travel-journal/000047446/], [http://mawarisute.blog.fc2.com/blog-entry-182.html]</ref>.
-* {{ill|Ubusuna Shrine (Higashi-Osaka)|ja|産土神社 (東大阪市)|12=simple|13=User:Immanuelle/Ubusuna Shrine (Higashi-Osaka)|ja_comment=jawiki link invalid}} - Located in [[Higashi-Osaka City]], Osaka Prefecture.
-* {{ill|Ubusuna Shrine (Misaki)|ja|産土神社 (岬町)|12=simple|13=User:Immanuelle/Ubusuna Shrine (Misaki)|ja_comment=jawiki link invalid}} - Located in [[Misaki Town]], [[:en:Sennan District|Sennan District]], Osaka Prefecture. Former shrine Rank: Village shrine.
+* [[Ubusuna Shrine (Konohana, Osaka)]] - Located in [[Konohana Ward]], [[:en:Osaka City|Osaka City]], [[Osaka Prefecture]]. [[Modern system of Ranked Shinto shrines|Former shrine Rank]]: Village shrine.
+* [[Ubusuna Shrine (Taisho, Osaka)]] - Located in [[Taisho Ward]], Osaka City, Osaka Prefecture. Former shrine Rank: Village shrine.
+* [[Ubusuna Shrine (Hirano, Osaka)]] - Located in [[Nagayoshi Deto]], [[Hirano Ward]], Osaka City. Managed by [[Shiki Nagayoshi Shrines]]<ref>[http://www.shikinagayoshi-jinjya.org/kenmusya.html Shiki Nagayoshi Shrine], [http://www.jalan.net/travel-journal/000047446/], [http://mawarisute.blog.fc2.com/blog-entry-182.html]</ref>.
+* [[Ubusuna Shrine (Higashi-Osaka)]] - Located in [[Higashi-Osaka City]], Osaka Prefecture.
+* [[Ubusuna Shrine (Misaki)]] - Located in [[Misaki Town]], [[:en:Sennan District|Sennan District]], Osaka Prefecture. Former shrine Rank: Village shrine.
 
-* {{ill|Kokawa Ubusuna Shrine|ja|粉河産土神社|12=simple|13=User:Immanuelle/Kokawa Ubusuna Shrine|qq=}} - Located in [[:en:Kokawa|Kokawa]], [[Kinokawa City]], {{ill|Wakayama Prefecture|en|Wakayama Prefecture|qid=Q131314|lt=Wakayama Prefecture}}. A subordinate and tutelary shrine of [[Kokawa-dera]].<ref>[http://www.wakayama-jinjacho.or.jp/jdb/sys/user/GetWjtTbl.php?JinjyaNo=3010 Kokawa Ubusuna Shrine]</ref>
+* [[Kokawa Ubusuna Shrine]] - Located in [[:en:Kokawa|Kokawa]], [[Kinokawa City]], [[Wakayama Prefecture]]. A subordinate and tutelary shrine of [[Kokawa-dera]].<ref>[http://www.wakayama-jinjacho.or.jp/jdb/sys/user/GetWjtTbl.php?JinjyaNo=3010 Kokawa Ubusuna Shrine]</ref>
 
-* {{ill|Ubusuna Hachiman Shrine|ja|産土八幡神社|12=simple|13=User:Immanuelle/Ubusuna Hachiman Shrine|qq=}}
+* [[Ubusuna Hachiman Shrine]]
 
 == Related Articles ==
 * [[Special:Prefixindex/産土|List of articles beginning with "産土"]]
@@ -25,15 +25,11 @@
 
 == Shrines with this name ==
 
-* {{ill|Ubusuna Shrine (Q128866971)|lt=Ubusuna Shrine|qid=Q128866971}} — Taishō-ku
-* {{ill|産土神社 (Q135425420)|lt=産土神社|qid=Q135425420}} — Numata
+* [[Ubusuna Shrine|Ubusuna Shrine (Q128866971)]] — Taishō-ku
+* [[産土神社]] (Q135425420) — Numata
 
-{{translated page|ja|産土神社|version=83460658|comment=Imported full ja history}}
-
-{{wikidata link|Q11574976|ja|産土神社|check_date=2026-05-12}}
 [[Category:All disambiguation pages]]
 [[Category:Kofun disambiguations]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
 [[Category:Wikidata has short description]]
-[[Category:Independently git synced pages]]
