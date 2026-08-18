@@ -64,7 +64,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import collections
 import csv
@@ -80,7 +80,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 DEFAULT_OUT = os.path.join(REPO, "docs", "ronsha_list_membership_2026-07.md")
 
-UA = USER_AGENT
+UA = WIKIDATA_USER_AGENT
 WD_API = "https://www.wikidata.org/w/api.php"
 SPARQL = "https://query-main.wikidata.org/sparql"
 

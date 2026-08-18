@@ -47,7 +47,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 from shinto_miraheze.wikidata_edit_allowed import editing_allowed as wikidata_editing_allowed
 import argparse
 import datetime
@@ -60,7 +60,7 @@ import requests
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = USER_AGENT
+UA = WIKIDATA_USER_AGENT
 
 FIRE_DATE = datetime.date(2026, 9, 4)  # 80 days after 2026-06-16
 

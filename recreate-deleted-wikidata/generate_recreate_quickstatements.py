@@ -47,6 +47,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
@@ -200,7 +201,7 @@ def _get_json(url: str, params: dict, retries: int = 4):
     for attempt in range(retries):
         try:
             resp = requests.get(url, params=params,
-                                headers={"User-Agent": USER_AGENT}, timeout=60)
+                                headers={"User-Agent": ua_for(url)}, timeout=60)
             if resp.status_code >= 500:
                 last = f"HTTP {resp.status_code}"
                 time.sleep(2 * (attempt + 1))

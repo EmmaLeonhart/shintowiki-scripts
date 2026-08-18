@@ -69,7 +69,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
-from shinto_miraheze.user_agent import USER_AGENT  # noqa: E402
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E402
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
@@ -181,7 +181,7 @@ def resolve_titles(titles):
         }
         req = urllib.request.Request(
             API + '?' + urllib.parse.urlencode(params),
-            headers={'User-Agent': USER_AGENT})
+            headers={'User-Agent': WIKIDATA_USER_AGENT})
         with urllib.request.urlopen(req, timeout=60) as resp:
             data = json.load(resp)
         norm = {}

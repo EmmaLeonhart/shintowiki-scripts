@@ -49,7 +49,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import io
 import json
@@ -73,7 +73,7 @@ OUTPUT_FILE = "sango_p1448.txt"
 OUTPUT = os.path.join(HERE, OUTPUT_FILE)
 
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = USER_AGENT
+UA = WIKIDATA_USER_AGENT
 
 TEMPLATE = "Template:日本の寺院"
 SANGO = "Q11058522"        # sangō — "a part of name of Buddhist temples (in Japan)"

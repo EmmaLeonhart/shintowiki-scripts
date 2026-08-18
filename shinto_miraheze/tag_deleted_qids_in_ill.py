@@ -21,6 +21,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
@@ -92,7 +93,7 @@ def check_qid_exists(qid):
             "ids": qid,
             "props": "info",
             "format": "json",
-        }, headers={"User-Agent": USER_AGENT}, timeout=30)
+        }, headers={"User-Agent": ua_for(WD_API)}, timeout=30)
         resp.raise_for_status()
         data = resp.json()
         entities = data.get("entities", {})
@@ -123,7 +124,7 @@ def check_qids_batch(qids):
                 "ids": "|".join(batch),
                 "props": "info",
                 "format": "json",
-            }, headers={"User-Agent": USER_AGENT}, timeout=30)
+            }, headers={"User-Agent": ua_for(WD_API)}, timeout=30)
             resp.raise_for_status()
             entities = resp.json().get("entities", {})
             for qid in batch:
@@ -205,7 +206,7 @@ def main():
     args = parser.parse_args()
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH,
-                         clients_useragent=USER_AGENT)
+                         clients_useragent=ua_for(WIKI_URL))
     login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 

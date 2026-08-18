@@ -30,6 +30,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 
 import argparse
@@ -52,7 +53,7 @@ def count_mentions(title):
     """(count, error). Raw wikitext, so an archived thread stops counting."""
     url = ("https://en.wikipedia.org/w/index.php?action=raw&title="
            + urllib.parse.quote(title))
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    req = urllib.request.Request(url, headers={"User-Agent": ua_for(url)})
     try:
         text = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
     except Exception as e:

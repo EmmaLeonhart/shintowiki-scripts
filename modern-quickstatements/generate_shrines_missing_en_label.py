@@ -23,7 +23,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import io
 import json
 import sys
@@ -33,7 +33,7 @@ from datetime import datetime, timezone
 import requests
 
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
-UA = USER_AGENT
+UA = WIKIDATA_USER_AGENT
 SHINTO_SHRINE = "Q845945"
 OUTPUT_FILE = "shrines_missing_en_label.json"
 

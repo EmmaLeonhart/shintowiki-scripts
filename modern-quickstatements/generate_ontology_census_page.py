@@ -40,9 +40,9 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
 if _root not in sys.path:
     sys.path.insert(0, _root)
 try:
-    from shinto_miraheze.user_agent import USER_AGENT
+    from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 except Exception:                                     # pragma: no cover
-    USER_AGENT = "shintowiki-scripts/1.0 (https://emmaleonhart.com)"
+    WIKIDATA_USER_AGENT = "shintowiki-scripts/1.0 (https://emmaleonhart.com)"
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -56,7 +56,7 @@ _LBL = {}
 
 def sparql(q, timeout=300):
     url = SPARQL + "?" + urllib.parse.urlencode({"query": q, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT,
+    req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT,
                                                "Accept": "application/sparql-results+json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         if r.status == 429:                 # repo policy: bail, never retry
@@ -71,7 +71,7 @@ def labels(pids):
         url = API + "?" + urllib.parse.urlencode({
             "action": "wbgetentities", "ids": "|".join(todo[i:i + 50]),
             "props": "labels", "languages": "en", "format": "json"})
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT})
         with urllib.request.urlopen(req, timeout=60) as r:
             d = json.loads(r.read().decode("utf-8"))
         for pid, e in d.get("entities", {}).items():

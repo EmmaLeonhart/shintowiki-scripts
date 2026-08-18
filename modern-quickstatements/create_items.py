@@ -58,7 +58,7 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
     _root = os.path.dirname(_root)
 if _root not in sys.path:
     sys.path.insert(0, _root)
-from shinto_miraheze.user_agent import USER_AGENT  # noqa: E402
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E402
 from shinto_miraheze.wikidata_edit_allowed import editing_allowed as wikidata_editing_allowed  # noqa: E402
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
@@ -114,7 +114,7 @@ def wd_login():
     if not (user and token):
         raise SystemExit("MW_BOTNAME / BOT_TOKEN not set — refusing to run")
     s = requests.Session()
-    s.headers.update({"User-Agent": USER_AGENT})
+    s.headers.update({"User-Agent": WIKIDATA_USER_AGENT})
     lt = s.get(WD_API, params={"action": "query", "meta": "tokens",
                                "type": "login", "format": "json"}, timeout=30
                ).json()["query"]["tokens"]["logintoken"]
@@ -168,7 +168,7 @@ def main():
 
     session, csrf = (wd_login() if args.apply else (requests.Session(), None))
     if not args.apply:
-        session.headers.update({"User-Agent": USER_AGENT})
+        session.headers.update({"User-Agent": WIKIDATA_USER_AGENT})
 
     for block in blocks:
         label = block_label(block)

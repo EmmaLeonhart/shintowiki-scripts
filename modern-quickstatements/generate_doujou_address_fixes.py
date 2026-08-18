@@ -36,7 +36,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import io
 import json
 import sys
@@ -47,7 +47,7 @@ import requests
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-UA = {"User-Agent": USER_AGENT}
+UA = {"User-Agent": WIKIDATA_USER_AGENT}
 WD_API = "https://www.wikidata.org/w/api.php"
 INPUT_FILE = "doujou_resolution.json"
 OUTPUT_FILE = "doujou_address_fixes.txt"

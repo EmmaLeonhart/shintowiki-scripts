@@ -43,9 +43,9 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
 if _root not in sys.path:
     sys.path.insert(0, _root)
 try:
-    from shinto_miraheze.user_agent import USER_AGENT
+    from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 except Exception:                                    # pragma: no cover
-    USER_AGENT = "shintowiki-scripts/1.0 (https://emmaleonhart.com)"
+    WIKIDATA_USER_AGENT = "shintowiki-scripts/1.0 (https://emmaleonhart.com)"
 
 # Emma said this 2026-07-16, "two weeks from now".
 START_DATE = datetime.date(2026, 7, 30)
@@ -68,7 +68,7 @@ def _exists_and_unmolested(qid=WATCHED_ITEM):
         "action": "wbgetentities", "ids": qid, "redirects": "no",
         "props": "info", "format": "json",
     })
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT})
     with urllib.request.urlopen(req, timeout=30) as r:
         d = json.loads(r.read().decode("utf-8"))
     if "error" in d:

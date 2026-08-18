@@ -47,6 +47,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import datetime
@@ -165,7 +166,7 @@ SELECT ?item ?label WHERE {{
             SPARQL_ENDPOINT,
             data={"query": query, "format": "json"},
             headers={
-                "User-Agent": USER_AGENT,
+                "User-Agent": ua_for(SPARQL_ENDPOINT),
                 "Accept": "application/sparql-results+json",
             },
             timeout=180,
@@ -345,7 +346,7 @@ def main():
     print(f"\nComputed:")
     print(f"  Need en-label QS line:       {len(new_qs)}")
 
-    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=ua_for(WIKI_URL))
     site.connection.timeout = 120
     login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")

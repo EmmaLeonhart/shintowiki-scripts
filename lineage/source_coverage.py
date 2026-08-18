@@ -34,7 +34,7 @@ from lineage.build_p612_quickstatements import (  # noqa: E402
 import urllib.parse                              # noqa: E402
 import urllib.request                            # noqa: E402
 import time                                      # noqa: E402
-from shinto_miraheze.user_agent import USER_AGENT  # noqa: E402
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E402
 
 # build_p612_quickstatements already wraps stdout as utf-8 on import; wrapping
 # it a second time closes the buffer out from under the first wrapper.
@@ -51,7 +51,7 @@ def article_exists(titles):
                   'redirects': '1', 'titles': '|'.join(batch)}
         req = urllib.request.Request(
             API + '?' + urllib.parse.urlencode(params),
-            headers={'User-Agent': USER_AGENT})
+            headers={'User-Agent': WIKIDATA_USER_AGENT})
         with urllib.request.urlopen(req, timeout=60) as resp:
             data = json.load(resp)
         norm = {}

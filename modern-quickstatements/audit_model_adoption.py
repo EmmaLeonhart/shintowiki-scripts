@@ -38,7 +38,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 import argparse
 import io
@@ -63,7 +63,7 @@ TEMPLE = "Q5393308"      # Buddhist temple (Japan)
 def wdqs(query, timeout=180):
     data = urllib.parse.urlencode({"query": query, "format": "json"}).encode()
     req = urllib.request.Request(WDQS, data=data, headers={
-        "User-Agent": USER_AGENT, "Accept": "application/sparql-results+json",
+        "User-Agent": WIKIDATA_USER_AGENT, "Accept": "application/sparql-results+json",
         "Content-Type": "application/x-www-form-urlencoded"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -252,7 +252,7 @@ def revision_users(qid, prop, cap=500):
         "action": "query", "prop": "revisions", "titles": qid,
         "rvprop": "user|comment", "rvlimit": cap, "rvdir": "newer",
         "format": "json", "formatversion": "2"})
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             d = json.load(r)

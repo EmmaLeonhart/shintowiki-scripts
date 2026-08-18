@@ -51,9 +51,9 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
 if _root not in sys.path:
     sys.path.insert(0, _root)
 try:
-    from shinto_miraheze.user_agent import USER_AGENT
+    from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 except Exception:                                     # pragma: no cover
-    USER_AGENT = "shintowiki-scripts/1.0 (https://emmaleonhart.com)"
+    WIKIDATA_USER_AGENT = "shintowiki-scripts/1.0 (https://emmaleonhart.com)"
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -64,7 +64,7 @@ OUTFILE = os.path.join(_here, "kami_parent_qualifiers.txt")
 
 def sparql(query):
     url = SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT,
+    req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT,
                                                "Accept": "application/sparql-results+json"})
     with urllib.request.urlopen(req, timeout=120) as r:
         if r.status == 429:                     # repo policy: bail, never retry

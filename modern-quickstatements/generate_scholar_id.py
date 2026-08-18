@@ -34,7 +34,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import datetime
 import io
@@ -49,7 +49,7 @@ SEQUENTIAL_FILE = "sequential_misc.txt"
 SEQUENTIAL = os.path.join(HERE, SEQUENTIAL_FILE)
 
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = USER_AGENT
+UA = WIKIDATA_USER_AGENT
 
 # Two weeks from the 2026-07-15 request. A date rule, not a value to revert
 # later (Emma's standing preference — express the exception as a rule).

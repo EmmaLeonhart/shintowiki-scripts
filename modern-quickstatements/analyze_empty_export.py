@@ -20,7 +20,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import datetime
 import glob
 import html
@@ -40,7 +40,7 @@ OUT = os.path.join(REPO_ROOT, "_site", "empty-items.html")
 WD = "https://www.wikidata.org/wiki/"
 API = "https://www.wikidata.org/w/api.php"
 EXPORT = "https://www.wikidata.org/w/index.php?title=Special:Export&action=submit"
-UA = USER_AGENT
+UA = WIKIDATA_USER_AGENT
 SOURCE_PAGE = "User:MisterSynergy/sysop/empty_items"
 
 

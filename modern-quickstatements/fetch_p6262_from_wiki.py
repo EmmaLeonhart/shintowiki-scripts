@@ -15,6 +15,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import io
 import re
@@ -46,7 +47,7 @@ def fetch_redirect_qids(qids):
                     "props": "info",
                     "format": "json",
                 },
-                headers={"User-Agent": USER_AGENT},
+                headers={"User-Agent": ua_for("https://www.wikidata.org/w/api.php")},
                 timeout=30,
             )
             resp.raise_for_status()
@@ -70,7 +71,7 @@ def fetch_existing_p6262_qids():
         resp = requests.get(
             SPARQL_URL,
             params={"query": query, "format": "json"},
-            headers={"User-Agent": USER_AGENT},
+            headers={"User-Agent": ua_for(SPARQL_URL)},
             timeout=60,
         )
         if resp.status_code == 429:
@@ -100,7 +101,7 @@ def main():
             "prop": "wikitext",
             "format": "json",
         },
-        headers={"User-Agent": USER_AGENT},
+        headers={"User-Agent": ua_for(WIKI_API)},
         timeout=30,
     )
     if resp.status_code == 429:

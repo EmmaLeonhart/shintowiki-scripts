@@ -25,6 +25,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
 import io
@@ -85,7 +86,7 @@ def sparql_query(query):
     resp = _http.get(
         SPARQL_ENDPOINT,
         params={"query": query, "format": "json"},
-        headers={"User-Agent": USER_AGENT, "Accept": "application/sparql-results+json"},
+        headers={"User-Agent": ua_for(SPARQL_ENDPOINT), "Accept": "application/sparql-results+json"},
         timeout=120,
     )
     if resp.status_code == 429:
@@ -150,7 +151,7 @@ def main():
         )
         return
 
-    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
+    site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=ua_for(WIKI_URL))
     login_with_retry(site, USERNAME, PASSWORD)
     print(f"Logged in as {USERNAME}")
 

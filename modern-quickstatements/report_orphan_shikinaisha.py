@@ -38,7 +38,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import collections
 import csv
 import io
@@ -51,7 +51,7 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOC = os.path.join(os.path.dirname(HERE), "docs", "orphan_shikinaisha_2026-07.md")
 
-UA = USER_AGENT
+UA = WIKIDATA_USER_AGENT
 SPARQL = "https://query-main.wikidata.org/sparql"
 
 SHIKINAISHA = "Q134917286"      # confirmed
