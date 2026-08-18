@@ -502,14 +502,34 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   thing there is a wikidata thing, based on the enwiki thing, shintowiki if it still runs
   is not an issue."* A shintowiki-side hold was built first and reverted; do not re-add
   it. Rationale: `docs/enwiki_mention_gate_2026-08-06.md`.
-- **WIKIDATA FREEZE until 2026-08-10** (week-long stop, Emma 2026-08-03).
-  `cleanup-loop.yml`'s window-gate forces `wikidata-daily-fire=false` while
-  `FREEZE_WIKIDATA_UNTIL` is in the future, so the QS submission and its
-  `direct_daily_edits.py` fallback never run — on any trigger, including
-  `workflow_dispatch`. Do not edit Wikidata (by any means) during a freeze; do
-  not shorten one without Emma's say-so. To extend, push the date out in
-  `cleanup-loop.yml` and update this line. (Prior freezes: 2026-05-23→06-06
-  two weeks; 2026-07-18→07-20 24h; 2026-07-28→08-04 week.)
+- **⛔ WIKIDATA LOCKOUT until 2026-09-18 — a month, Emma 2026-08-18:** *"I want a gate
+  to be set up that there will be no wikidata editing for a month."* **One state file
+  governs every Wikidata write path**, and that is the whole point of it:
+  `shinto_miraheze/wikidata_editing_lockout.state` (`locked`, `locked_until`, `reason`),
+  read by `shinto_miraheze/wikidata_edit_allowed.py` — exit 0 allowed, exit 1 locked,
+  the Wikidata sibling of `wiki_edit_allowed.py` (which gates shinto.miraheze; two wikis,
+  two independent lockouts). What checks it:
+  - **In code**, in all three scripts that hold `MW_BOTNAME`/`BOT_TOKEN` —
+    `direct_daily_edits.py`, `create_items.py`, `substitute_source_shrine_proposal.py` —
+    as the first thing in `main()`, so a **local or manual** run is covered, not just CI.
+    A locked run prints `SKIPPED:` and exits 0: nothing was attempted, so nothing broke.
+  - **In CI**, in `cleanup-loop.yml` (window-gate → `wikidata-daily-fire=false`),
+    `create-items.yml`, `direct-daily-edits.yml`, `substitute-source-shrine-proposal.yml`.
+    Note `substitute-source-shrine-proposal.yml` has its own September cron and would
+    otherwise have fired its one-shot talk-page edit on 2026-09-04, inside the lockout.
+  - **By hand**, in the `funding-and-networking` repo: `!quickstatements_now.bat` refuses
+    to open QuickStatements while locked, and `wikidata-review/RUN/RUNSHEET.md` carries the
+    banner. The hand-run paste batches are a write path like any other.
+  - **To lift or extend: edit that ONE state file.** Do not lift a lockout by editing a
+    workflow, a script, or the `.bat` — that is precisely the failure this replaced.
+- **Why it is a state file and not a date in the YAML.** It used to be
+  `FREEZE_WIKIDATA_UNTIL="…"` pasted into `cleanup-loop.yml` *and* `create-items.yml`. A
+  freeze duplicated per-workflow is a freeze one workflow can miss — and one did:
+  `create-items.yml`, the only thing in the repo that can create an item, never consulted
+  `wikidata-daily-fire` and on 2026-08-16 was hours from creating two items straight through
+  the 2026-08-06 enwiki-mention freeze. Those hardcoded dates are gone; do not reintroduce one.
+  Do not shorten a lockout without Emma's say-so. (Prior freezes: 2026-05-23→06-06 two weeks;
+  2026-07-18→07-20 24h; 2026-07-28→08-04 week; 2026-08-03→08-10 week.)
 - This rule was added 2026-05-23 after bespoke direct-API editors
   (P459/kana qualifier scripts with descriptive summaries) were built and run;
   they were deleted. Don't reintroduce that shape.

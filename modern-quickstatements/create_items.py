@@ -59,6 +59,7 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
 if _root not in sys.path:
     sys.path.insert(0, _root)
 from shinto_miraheze.user_agent import USER_AGENT  # noqa: E402
+from shinto_miraheze.wikidata_edit_allowed import editing_allowed as wikidata_editing_allowed  # noqa: E402
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -132,6 +133,17 @@ def main():
     ap.add_argument("--batch", required=True)
     ap.add_argument("--apply", action="store_true", help="actually write (default: dry run)")
     args = ap.parse_args()
+
+    # GATE 0 - THE WIKIDATA LOCKOUT. Emma, 2026-08-18: "I want a gate to be set up
+    # that there will be no wikidata editing for a month." Single source of truth:
+    # shinto_miraheze/wikidata_editing_lockout.state. It is checked here, in code,
+    # rather than only in the workflow, so a local or manual run is covered too. A
+    # locked run is a SKIP, not a failure: nothing was attempted, so nothing broke.
+    wd_ok, wd_why = wikidata_editing_allowed()
+    if not wd_ok:
+        print("SKIPPED: wikidata lockout - {}".format(wd_why))
+        return 0
+
 
     path = os.path.join(_here, args.batch)
     state_path = os.path.splitext(path)[0] + ".state"

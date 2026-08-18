@@ -53,7 +53,24 @@ jobs:
         run: python archive_destroyed_items.py
         continue-on-error: true
 
+      # ⛔ WIKIDATA LOCKOUT GUARD. Single source of truth:
+      # shinto_miraheze/wikidata_editing_lockout.state (Emma 2026-08-18 — no Wikidata
+      # editing for a month, through 2026-09-17). No date is duplicated here; the guard
+      # exits 1 while locked. The script below ALSO checks it in code, so this step is
+      # belt-and-braces — it just stops the run before it even logs in, and makes the
+      # skip visible in the run log rather than buried in the script's stdout.
+      - name: Wikidata lockout guard
+        id: wikidata_lockout
+        run: |
+          if python3 shinto_miraheze/wikidata_edit_allowed.py; then
+            echo "open=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "open=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wikidata lockout::LOCKED — skipping all Wikidata writes."
+          fi
+
       - name: Execute edits via Wikidata API
+        if: steps.wikidata_lockout.outputs.open == 'true'
         working-directory: modern-quickstatements
         env:
           MW_BOTNAME: ${{ secrets.MW_BOTNAME }}

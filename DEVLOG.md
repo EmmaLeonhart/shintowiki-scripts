@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-18 — a month-long Wikidata lockout, and one state file instead of pasted dates
+
+Emma: *"I want a gate to be set up that there will be no wikidata editing for a month."*
+Locked through **2026-09-17**; auto-resumes **2026-09-18**.
+
+The gate is `shinto_miraheze/wikidata_editing_lockout.state` + `wikidata_edit_allowed.py`
+(exit 0 allowed / exit 1 locked), modelled on the existing `wiki_edit_allowed.py` that gates
+shinto.miraheze. Two wikis, two independent lockouts, same shape.
+
+**What the gate covers** — the whole write surface, which is four paths, not one:
+
+| path | how it is gated |
+|---|---|
+| `direct_daily_edits.py` (the daily drip — the primary Wikidata editor) | GATE 0 in `main()` + guard step in `direct-daily-edits.yml` + `cleanup-loop.yml` window-gate |
+| `create_items.py` (the only thing that can CREATE an item) | GATE 0 in `main()` + `create-items.yml` freeze guard |
+| `substitute_source_shrine_proposal.py` (one-shot talk-page edit) | GATE 0 in `main()` + guard step in its workflow |
+| hand-run QuickStatements batches (`funding-and-networking`) | `!quickstatements_now.bat` refuses to open; banner on `RUNSHEET.md` |
+
+Those three scripts are the only files in the repo holding `MW_BOTNAME`/`BOT_TOKEN`
+(verified by grep, not by memory). They gate **in code**, so a local run is covered too —
+CI-only gating would have left the manual path open.
+
+**The real change is that the date stopped being duplicated.** The old freeze was
+`FREEZE_WIKIDATA_UNTIL="2026-08-10"` pasted into `cleanup-loop.yml` and again into
+`create-items.yml`. That is how a freeze gets missed, and it was: `create-items.yml` never
+consulted `wikidata-daily-fire` at all, and on 2026-08-16 it was hours from creating two
+items straight through the enwiki-mention freeze. Both hardcoded dates are now gone; every
+gate reads the one state file. To extend or lift, edit that file — not a workflow.
+
+`substitute-source-shrine-proposal.yml` is worth calling out: it runs its own daily cron
+through September and would have fired its one-shot edit on **2026-09-04**, inside the
+lockout. Nothing in the QS pipeline would have stopped it.
+
+Verified by running all three scripts and the `.bat`: each bails with `SKIPPED: wikidata
+lockout — LOCKED until 2026-09-18`, exit 0 (a skip, not a failure). The four touched
+workflows parse as valid YAML. **CI was not run** — nothing here is CI-verified.
+
+---
+
 ## 2026-08-06 — the enwiki-mention gate lands on Wikidata, not on shintowiki
 
 Emma's decision: no editing while "Immanuelle" is named on [[Wikipedia:AI noticeboard]]

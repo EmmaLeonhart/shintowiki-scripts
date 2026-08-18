@@ -1,0 +1,7 @@
+{
+  "locked": true,
+  "locked_until": "2026-09-18",
+  "reason": "Emma, 2026-08-18: no Wikidata editing for a month. Covers EVERY write path — the daily direct-API drip, item creation, the one-shot property-proposal talk edit, and the hand-run QuickStatements batches. Unlock by setting locked=false (or letting the date pass), not by editing individual workflows.",
+  "set": "2026-08-18",
+  "set_by": "Emma"
+}

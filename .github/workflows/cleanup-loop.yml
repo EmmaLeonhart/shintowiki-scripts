@@ -118,7 +118,7 @@ jobs:
           # (P6262, P11250, etc.) never ran. The date-based check below
           # fires whenever the most recent submission report's date is
           # older than today, regardless of which cron fire wins.
-          # ── WIKIDATA EDITING FREEZE — hard pause until FREEZE_WIKIDATA_UNTIL ──
+          # ── WIKIDATA EDITING LOCKOUT — hard pause, state-file driven (see below) ──
           # While frozen, wikidata-daily-fire is forced false so the QuickStatements
           # submission — the ONLY thing that edits Wikidata — never runs, on ANY
           # trigger. To extend, push the date out. Principle: being visible on
@@ -133,6 +133,19 @@ jobs:
           # 2026-08-03 (Emma): "Week long wikidata editing stop" — blocks
           #   every daily QS submission / direct-edit fallback from 2026-08-03
           #   through 2026-08-09 inclusive; auto-resumes 2026-08-10.
+          # 2026-08-18 (Emma): "I want a gate to be set up that there will be no
+          #   wikidata editing for a month." Blocks every Wikidata write through
+          #   2026-09-17 inclusive; auto-resumes 2026-09-18.
+          #
+          # ⚠ THE DATE NO LONGER LIVES IN THIS FILE. It was a FREEZE_WIKIDATA_UNTIL
+          # string duplicated here and in create-items.yml, and that duplication is
+          # exactly how create-items.yml came within hours of creating two items
+          # straight through the 2026-08-06 enwiki-mention freeze — a freeze copied
+          # per-workflow is a freeze one workflow can miss. Single source of truth is
+          # now shinto_miraheze/wikidata_editing_lockout.state, read by
+          # shinto_miraheze/wikidata_edit_allowed.py (exit 1 = locked), which the three
+          # credentialed writers ALSO call in code so a local run is covered too.
+          # To extend or lift the lockout, edit that ONE state file.
           # ── ENWIKI-MENTION GATE (Emma 2026-08-06) — a CONDITION, not a date ──
           # No Wikidata editing while "Immanuelle" is named on [[Wikipedia:AI noticeboard]]
           # or [[Wikipedia talk:WikiProject Japan]]. Emma: "the freeze thing there is a
@@ -142,13 +155,12 @@ jobs:
           # counts as still-mentioned, because an unreadable page is not absence. It opens
           # by itself when the threads archive off — no date to push out, nothing to
           # remember. Daily record: enwiki-mention-check.yml → enwiki_mention_gate.state.
-          FREEZE_WIKIDATA_UNTIL="2026-08-10"
           if ! python3 shinto_miraheze/check_enwiki_mentions.py; then
             echo "wikidata-daily-fire=false" >> "$GITHUB_OUTPUT"
             echo "ENWIKI-MENTION GATE closed (Emma 2026-08-06) — NO Wikidata edits."
-          elif [ "$(date -u +%Y-%m-%d)" \< "$FREEZE_WIKIDATA_UNTIL" ]; then
+          elif ! python3 shinto_miraheze/wikidata_edit_allowed.py; then
             echo "wikidata-daily-fire=false" >> "$GITHUB_OUTPUT"
-            echo "WIKIDATA FREEZE active until $FREEZE_WIKIDATA_UNTIL — NO Wikidata edits."
+            echo "WIKIDATA LOCKOUT in force (wikidata_editing_lockout.state) — NO Wikidata edits."
           elif [ "${{ github.event_name }}" != "schedule" ]; then
             echo "wikidata-daily-fire=true" >> "$GITHUB_OUTPUT"
             echo "Non-schedule trigger — wikidata-edit jobs will run."
