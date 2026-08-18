@@ -23,8 +23,8 @@ on:
   workflow_dispatch:
 
 env:
-  MIRAHEZE_UA_CONTACT: ${{ secrets.MIRAHEZE_UA_CONTACT }}
-  WIKIDATA_UA_CONTACT: ${{ secrets.WIKIDATA_UA_CONTACT }}
+  MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}
+  WIKIDATA_EMAIL: ${{ secrets.WIKIDATA_EMAIL }}
 
 jobs:
   pytest:

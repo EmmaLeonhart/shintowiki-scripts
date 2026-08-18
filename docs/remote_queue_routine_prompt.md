@@ -11,7 +11,7 @@ rebuild the routine from it in one paste.
 same sitting. A drifted copy is worse than none.
 
 **A Claude data export will not recover it — don't try again.** Checked on 2026-07-27 against a full
-export of the old account (`<WIKIDATA_UA_CONTACT>`): the archive contains `users.json`, one
+export of the old account (`<WIKIDATA_EMAIL>`): the archive contains `users.json`, one
 starter project, `memories.json`, and `conversations.json` (~97 MB, 2000 conversations across two
 batches) and nothing else. Zero hits for `Drain remote_queue`, `5 random`, `gating category`, or
 `duplicated content`. Exports cover conversations, projects, and memories; automations and Claude Code

@@ -1,6 +1,6 @@
 """Contact addresses for the bot User-Agents — kept OUT of the source.
 
-The addresses are repo secrets (`MIRAHEZE_UA_CONTACT`, `WIKIDATA_UA_CONTACT`) so the repo cannot be
+The addresses are repo secrets (`MIRAHEZE_EMAIL`, `WIKIDATA_EMAIL`) so the repo cannot be
 mined for them. Workflows pass them through as env vars; locally they come from
 `shinto_miraheze/.ua_contacts.json`, which is gitignored.
 
@@ -16,7 +16,7 @@ _LOCAL = pathlib.Path(__file__).with_name(".ua_contacts.json")
 
 def contact(kind: str) -> str:
     """kind is 'miraheze' or 'wikidata'."""
-    env = {"miraheze": "MIRAHEZE_UA_CONTACT", "wikidata": "WIKIDATA_UA_CONTACT"}[kind]
+    env = {"miraheze": "MIRAHEZE_EMAIL", "wikidata": "WIKIDATA_EMAIL"}[kind]
     val = os.environ.get(env, "").strip()
     if val:
         return val

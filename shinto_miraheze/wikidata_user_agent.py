@@ -9,7 +9,7 @@ address from there, and no `github.com/EmmaLeonhart/...` source link, which is t
 Wikidata the association. Do not merge the constants or add a shared fallback.
 `tests/test_user_agent_segregation.py` enforces it both ways.
 
-The contact address is the `WIKIDATA_UA_CONTACT` repo secret, not a literal here — see ua_contact.py.
+The contact address is the `WIKIDATA_EMAIL` repo secret, not a literal here — see ua_contact.py.
 
 Scripts import it via the usual run-context-independent bootstrap:
 

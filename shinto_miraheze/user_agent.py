@@ -7,7 +7,7 @@ Emma, 2026-08-18: the two identities are strictly segregated, and using the wron
 is an operational risk. Do not merge the constants, import one from the other, or add a shared
 fallback. `tests/test_user_agent_segregation.py` enforces both directions.
 
-The contact address is the `MIRAHEZE_UA_CONTACT` repo secret, not a literal here — see ua_contact.py.
+The contact address is the `MIRAHEZE_EMAIL` repo secret, not a literal here — see ua_contact.py.
 
 The farm allowlists bots BY User-Agent, so changing this string can un-allowlist it. Tell them first.
 Scripts import it via the usual run-context-independent bootstrap:
