@@ -742,13 +742,6 @@ them means touching Miraheze, which is the exact thing the blackout exists to pr
   `git_synced/Open questions.wiki`, plus every cleanup/orchestrator edit. Not fixable from CI.
   [[reference_miraheze_antiddos_challenge]]
 
-## B1. Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-07-13)
-
-Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki`
-(the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every
-actionable item or Emma disposition not yet handled: decompose it into concrete steps, or act on it now
-and prune the resolved bullet. Then delete THIS block. **Needs the live page → §B.**
-
 ## B2–B8. ❓ DECISIONS — fire ONE at a time, in order, once the gate opens
 
 **Standing rule: EVERY decision carries a "walk me through it first / let's chat" option.** Emma often
@@ -764,8 +757,24 @@ it; fire the question with the chat option so it can actually move.
 
 Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html
 
-**There is nothing here to decide, because the "duplicate" class never established identity.**
-Emma, 2026-08-19, on being asked to pick link/merge/case-by-case:
+**Emma settled this in JULY and the answer never reached the queue.** From [[Open questions]] on the
+wiki, unhandled because B1 (the sweep that reads that page) was itself gated behind the 39-day wiki
+blackout:
+
+    "I am pretty sure right now that, for literally all of them, it's a matter of Japanese Wikipedia
+     and the Kokugakuin database disagreeing with each other, and you're insisting that we should
+     merge them. This actually is a thing that was done by the original import bot ages ago, and it
+     was the source of a massive amount of problems!... If any of these ones are not a disputed
+     shikinai-sha, then it's different, and I'm going to manually go through them to ensure that there
+     aren't any. I am pretty strongly convinced that this thing here that you're talking about is just
+     a non-issue."
+
+So merging is not merely undecided — she has already seen it do damage once, via the original import
+bot, and said so. **This is the standing ruling; treat it as decided.** She reserves the manual pass
+over any that are not disputed shikinaisha.
+
+**And it is not decidable on the evidence either, because the "duplicate" class never established
+identity.** Emma again, 2026-08-19, on being asked to pick link/merge/case-by-case:
 
     "I'm extremely confused. What are you even doing here? What are you doing with duplicate labels?
      What is the point of this? There's plenty of shrines with duplicate labels."
@@ -834,6 +843,78 @@ Emma 2026-07-09: *"I don't even understand what this actual thing even is."* The
 https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
 - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
   this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
+
+## B1a. Izumo 坐韓国伊大弖神社 — Emma asked for the SOURCES to be read, not just the report
+
+From [[Open questions]]. The bot produced https://emmaleonhart.github.io/shintowiki-scripts/izumo-karakuni.html
+and Emma replied: *"I am genuinely not sure. And it is best to look over the source page
+https://ja.wikipedia.org/wiki/出雲国の式内社一覧 and the kokugakuin shrine database things here."*
+
+That is a concrete instruction that was never carried out — the report reasoned from Wikidata alone.
+The item Q135040786 carries three part-of statements at once (list@28 correct, host 揖夜神社, and
+list@39 which is a different shrine, 伊太弖 at 佐久多神社); ordinal 39 is an empty hole; splitting
+needs a NEW item, which QuickStatements cannot make.
+
+- [ ] Read the jawiki 出雲国の式内社一覧 page and the Kokugakuin DB entries for 意宇郡 28 and 39, and
+  extend the report with what the SOURCES say — not with what the Wikidata graph implies.
+- Report-only, as she ruled. No writes; item creation is out of the pipeline anyway and Wikidata is
+  locked to 2026-09-18.
+
+## B1b. The 22 duplicated "part of" statements — Emma stopped short of calling it resolved
+
+Her exact hedge on [[Open questions]]: *"I am not sure what is going on here. But I think it is
+resolved. Not being as strong as claiming it 'is' resolved."*
+
+**Counted 2026-08-19. It is NOT resolved, and the plain count is misleading — it must be split by
+ordinal.** 116 item/list pairs now carry more than one `part of` statement into the same Jinmyōchō
+list. Reporting that as "116 duplicates" would repeat the exact error B2 was just withdrawn for, so:
+
+| class | count | what it is |
+|---|---|---|
+| **same ordinal repeated** | **14** | the real defect — a genuinely duplicated statement |
+| **distinct ordinals** | **48** | **LEGITIMATE — do not touch.** One shrine covering two register entries: this is the 坐韓国伊大弖神社 shape from B1a, not a bug |
+| **one side has no ordinal** | **54** | an unqualified `part of` sitting beside a properly-ordinal one — the piped-link import leftover shape |
+
+Worst examples are badly tangled, not simply doubled: `Q110915859 → Q11380552` holds ordinals
+`20, 34, 16, 20, 34, 5, 14` — seven statements, two of them repeated.
+
+- [ ] **The 14 true duplicates** — a remove-one-of-each-pair fix. Remove-only per pair, but which of
+  two identical statements gets removed is not expressible in QuickStatements by value, so this is
+  the sequential-misc mechanism's job (built, tested, ships empty). BLOCKED-ON-EXTERNAL: Wikidata
+  lockout to 2026-09-18.
+- [ ] **The 54 missing-ordinal** — NEEDS-INVESTIGATION before any removal. An unqualified statement
+  may be the leftover to strip, or may be the only record that the shrine belongs to the list at all.
+  Deciding by shape rather than by reading them is how the last two classes went wrong.
+- [ ] **The 48 distinct-ordinal — leave alone.** Record them so a later pass does not "clean" them.
+- [ ] Correct the wiki bullet: it says 22 and Emma hedged that it might be resolved. It is 14 + 54,
+  and the 22 never described these three classes separately.
+
+## B1c. Restore the wiki-based queue — the blackout was the cause, and it is over
+
+Emma: *"The wiki-based queue stopped being used — why? Start it again... I want us to do the entire
+wiki-based queue again,"* then *"Yeah, the wiki-based queue is going to have to be restored, although
+I'm not 100% sure."* The bot's own diagnosis was that the broken sync (the Cloudflare 403) killed it.
+
+**That cause is gone** — `WIKI_GATE: GO` since 2026-08-19T01:54, reads and writes both work.
+
+- [ ] NEEDS-DECISION, hers, and softened by her own "not 100% sure": restoring it means the wiki
+  becomes a live work surface again alongside `queue.md`. Do not restore unilaterally — the whole
+  hub just collapsed five queues into one for exactly this reason, and adding a second surface back
+  cuts against that.
+
+## B1d. Swept and closed on 2026-08-19 — no action, recorded so they are not re-raised
+
+- **Sequential misc** — settled. Emma: *"I can confirm that I'm perfectly fine with this thing"*;
+  design question answered *"sequential only"*. Built, 14 tests, ships empty.
+- **Province exclusions** — settled as ADD-ONLY, standing rule. *"you should never be removing
+  anything from the provinces."* The removal generator was deleted outright.
+- **Takano address merge** — Emma: *"I can confirm this is good. (resolved — safe to delete on the
+  next pass.)"* Verified gone from Q11673131. **Her explicit permission to prune it from the page.**
+- **Reports on the page** — Emma: *"Went great."*
+- **Un-parking the parked items** — Emma: *"We will do this when needed."* Not now, by her words.
+- **Queue bloat on the wiki** — Emma: *"Not sure about this one."* No disposition; left alone.
+- **"Edits being rejected"** — self-closing, as she said: *"this one is kind of tautological because
+  in the event that this does get resolved, it's not going to be here anymore."* It is resolved.
 
 ## B9. ⏸ Category-orchestrator speed-up *("the category thing")*
 
