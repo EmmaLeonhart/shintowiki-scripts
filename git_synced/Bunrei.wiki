@@ -1,0 +1,61 @@
+{{short description|Division of Shinto kami spirit}}
+{{Nihongo|'''Bunrei''' or '''wakemitama'''|分霊}} is a [[Shinto]] technical term that indicates both the process of dividing a Shinto ''[[kami]]'' to be re-enshrined somewhere else (such as a house's ''[[kamidana]]''), and the spirit itself produced by the division.<ref>{{cite book |last1=Smyers |first1=Karen Ann |title=The Fox and the Jewel: Shared and Private Meanings in Contemporary Japanese Inari Worship |date=1999 |publisher=University of Hawaii Press |location=Honolulu |isbn=9780824820589}}</ref> Shrines conduct ''bunrei'' to distribute them to "child" shrines elsewhere.<ref>{{cite web |title=「分霊」の意味や使い方 わかりやすく解説 Weblio辞書 |url=https://www.weblio.jp/content/%E5%88%86%E9%9C%8A |website=www.weblio.jp|lang=ja}}</ref> The spirit of ''kami'' does not decrease through this act, and a ''bunrei'' functions the same way as the original spirit.<ref>{{cite web |title=これで納得！ 同じ名前の神社がたくさんある理由 ～同じ名前の神様がたくさんいるの？～ – 早稲田神社 |url=https://wasedajinja.jp/2018/02/10/post-379/ |website=wasedajinja.jp|lang=ja}}</ref> The reason for conducting ''bunrei'' is often to make a ''kami'' more accessible to worshipers far from the main shrine.
+For details, see the article about the similar term [[Kanjō]].
+
+== Some difficult bunrei to track ==
+{| class="wikitable"
+|SHRINE
+|ITEM
+|
+|-
+|佐嘉神社
+|Q11383096
+|autocthonous
+|-
+|忌部神社
+|Q11490722
+|comes from the main inbe lineage. Not gosho shrine
+|-
+|瀧原宮
+|Q11566292
+|make wikidata for 磯宮
+|-
+|坐摩神社
+|Q11425667
+|Yeah it comes from the palace things in list of shikinaisha in the imperial palace lol
+|-
+|劔神社
+|Q11398386
+|autocthonous
+|-
+|度津神社
+|Q172382
+|I think this is explicitly unknown
+|-
+|石園座多久虫玉神社
+|Q11585337
+|I think this is explicitly unknown
+|-
+|小俣神社
+|Q17225978
+|We figured this out from deity page
+|-
+|月讀宮
+|Q11516220
+|I think this is explicitly unknown
+|-
+|風宮
+|Q11665463
+|I think this is explicitly unknown
+|-
+|風日祈宮
+|Q11665488
+|I think this is explicitly unknown
+|}
+
+==References==
+{{Reflist}}
+{{Shinto-stub}}{{wikidata link|Q195793|en|Bunrei|es|Bunrei|fi|Bunrei|fr|Bunrei|id|Bunrei|ja|分霊|zh|分靈|simple|Bunrei|grok=none|check_date=2026-05-28}}
+[[Category:Shinto]]
+[[Category:Taoism]]
+[[Category:Git synced pages]]

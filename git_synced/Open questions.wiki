@@ -24,17 +24,14 @@ __NOTOC__
 :* '''66 have no twin''' — either modern shrines mis-tagged as register entries, or genuine entries the lists are missing. '''Your call:''' which.
 :** '''Emma:''' Yes, please respond with a link to the GitHub Pages browsable table. Request still wanted.
 : '''✓ 2026-07-11 (bot):''' Browsable table built — https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html . The 84 twins each show the paired entry QID + the match reason (link-or-merge each pair); the 66 no-twin are separated (mis-tagged shrine, or entry the list is missing). Filterable. '''Still open for Emma:''' link-vs-merge on the 84, and classify the 66.
+:* I am pretty sure right now that, for literally all of them, it's a matter of Japanese Wikipedia and the Kokugakuin database disagreeing with each other, and you're insisting that we should merge them. This actually is a thing that was done by the original import bot ages ago, and it was the source of a massive amount of problems! It was the source of a massive amount of problems. If any of these ones are not a disputed shikinai-sha, then it's different, and I'm going to manually go through them to ensure that there aren't any. I am pretty strongly convinced that this thing here that you're talking about is just a non-issue.
+:* Asking console to change the page to resolve this issue
 
 '''22 duplicated "part of" statements''' — you said "pipeline problem, first remove then add".
 : '''→''' Exactly. Same shape as Takano and the province/address removals; the sequential misc above fixes all of them together. Nothing else needed once that exists.
-:* '''Emma:''' Okay, I'm pretty sure this is just clear and resolved now.
-:* '''Emma:''' Confirmed this is resolved it seems. Honestly not 100% sure — I think it is, but the necessary information to be sure is on github.
+:* '''Emma:''' I am not sure what is going on here. But I think it is resolved. Not being as strong as claiming it "is" resolved
 
-'''Awa list hand edit''' — you asked to explain more.
-: '''→''' The 927 register's Awa entry #3 is a shrine called '''Tenjinsha (天神社)'''. On the jawiki list article, that entry's link was a piped link pointing at a ''different'' shrine, '''Shimotachimatsubara (下立松原神社)''', and the import followed the link instead of the entry name. So Wikidata now says Awa entry #3 ''is'' Shimotachimatsubara — wrong (Shimotachimatsubara is really entry #5, correctly there too). The '''add''' putting Tenjinsha at #3 is already queued. The leftover is '''deleting''' the wrong statement (Shimotachimatsubara at #3), which can't be a QuickStatement because Shimotachimatsubara sits on that list twice with the same value, so a value-match might take the correct #5. Needs a by-hand delete of that one statement, or the sequential misc.
-: oh god fucking link this
-: '''✓ 2026-07-11 (bot):''' https://emmaleonhart.github.io/shintowiki-scripts/awa-entry-3.html — the piped-link theft of 天神社 (Q137041912, Kokugakuin 181734), before/after sequence, and the two-halves fix. The delete genuinely can't be a QuickStatement (下立松原 sits on the list at ordinals 3 AND 5, same value) and sequential-misc doesn't fix a value-match ambiguity either — so it needs a by-hand statement-level delete, or removing BOTH 下立松原 has-parts then re-adding the correct one at ord 5.
-:* '''Emma:''' I cannot comprehend this without links (link above).
+:*
 
 '''List membership (2,236 removals)''' — you asked to explain.
 : '''→''' These strip the false "part of a list" claim off the 2,151 candidate shrines the lists never actually name (leftover from the old piped-link import damage). '''Pure removals — no add, no ordering risk''' — so unlike the others this one can just be registered and dripped.
@@ -66,12 +63,17 @@ Q11673131	P6375	ja:"〒708-0013 岡山県津山市二宮601"
 
 * '''Edits being rejected — what's going on?''' We likely had far too many edits in a short burst and hit issues; might be some weird bot-account configuration too.
 : '''✓ 2026-07-14 (bot):''' Diagnosed. It is NOT our request rate, our IP, or our User-Agent. shinto.miraheze.org sits behind a '''Cloudflare managed challenge''' (`cf-mitigated: challenge`) on the ''whole zone'' — api.php, article pages, and the site root all return 403 for every client (our bot UA, a real browser, curl, wget). '''aelaki.miraheze.org returns 200 for the identical request from the same IP and UA''', so it's specific to the shinto zone. A headless bot can't solve a JS challenge, and the only UAs Cloudflare lets through (bare python-requests/urllib) are exactly the ones Miraheze's own UA policy then blocks — so no UA threads it. Fix is Miraheze-side (relax the challenge / Under Attack Mode on shinto), or it lifts on its own. Detail: <code>docs/wiki_403_audit_2026-07-11.md</code>. (Bot UA was still bumped to the new canonical EmmaBot/2.0 per your request, in case it helps once the zone calms.)
+: This one is kind of tautological because in the event that this does get resolved, it's not going to be here anymore.
 * ''Analyze this'' https://www.wikidata.org/wiki/Q137721156 — what's going on with the deities? I want an analysis on the qualifiers used, because a lot are pretty good, or we might be overlooking them.
 : '''✓ 2026-07-11 (bot):''' Done — <code>docs/deity_qualifier_analysis_2026-07.md</code>. Q137721156 (日月神社) uses a gold-standard model: each 祭神 (P825) carries P1932 "object named as" (原文表記, the source's exact spelling) + a book reference (神奈川県神社誌, page 357, NDL persistent id). But it's rare — only 80 of 21,405 Japanese P825 statements carry P1932, and 77 are from that same book; P143 "imported from Japanese Wikipedia" is the DOMINANT reference marker (3,339 vs 1,441 with the URL) yet our importer was missing it. Acted: (1) added S143=Q177837 to the deity importer + all jawiki importers where it's the corpus standard; (2) the P3831=主祭神 principal-deity role is essentially unused — the generator emits it, just needs the drip; (3) prefectural 神社誌 are ~17 NDL-viewable, so the book-citation model is extensible. Also fixed 41 malformed multi-name P1932 values.
 * '''The wiki-based queue stopped being used — why? Start it again.''' As best I can tell the broken sync (the 403 above) was the cause. I want us to do the entire wiki-based queue again.
+** Yeah, the wiki-based queue is going to have to be restored, although I'm not 100% sure.
 * '''Give me the reports here, on the page — not just in the repo.''' I need, described '''here''': the property-modelling proposal, the property-modelling report, and the religion / religious-building naming report. It seems like you just gave up on this page.
+** Went great
 * '''The queue on the wiki is very bloated''' and contains a lot of stuff I genuinely have no clue about.
+** Not sure about this one
 * '''Un-park the parked items.''' For stuff that's weirdly treated in the queue — "permanently parked" or similar — all of it needs to come '''back into Open questions''' so I can actually discuss it with you, give my analysis, and respond. Address the stuff on this page and add these things in.
+** Yeah that is good. We will do this when needed
 
 == Notes ==
 
