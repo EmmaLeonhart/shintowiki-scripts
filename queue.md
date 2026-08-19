@@ -864,8 +864,11 @@ Kokugakuin page **181621** carries three shrines, and that is what surfaced the 
 | [Q134925373](https://www.wikidata.org/wiki/Q134925373) | `0` | `n/a` — **wrong** | remove + add |
 | [Q135039671](https://www.wikidata.org/wiki/Q135039671) | `n/a` | `n/a` | correct, nothing emitted |
 
-Batch as it stands (3 lines, paste-ready — QuickStatements is a separate channel from the scripts
-under `wikidata_editing_lockout.state`, so the 2026-09-18 lockout does not gate it):
+Batch as it stands (3 lines, built and ready — **but GATED, correcting what this item first said**).
+`wikidata_editing_lockout.state` names the scope itself: *"Covers EVERY write path — the daily
+direct-API drip, item creation, the one-shot property-proposal talk edit, **and the hand-run
+QuickStatements batches**."* Emma's *"quickstatements are separate"* was about pacing, not about the
+lockout. So this batch waits for **2026-09-18** like everything else:
 
 ```
 Q111776816|P13677|"181621"|P958|"1"
@@ -873,7 +876,10 @@ Q111776816|P13677|"181621"|P958|"1"
 Q134925373|P13677|"181621"|P958|"0"
 ```
 
-- [ ] **Emma pastes the batch** — BLOCKED-ON-USER-ACTION. Her account, her paste, no date on it.
+- [ ] **Emma pastes the batch** — BLOCKED-ON-EXTERNAL until **2026-09-18** (`wikidata_editing_lockout.state`,
+  which covers hand-run QuickStatements by its own wording), then BLOCKED-ON-USER-ACTION: her account,
+  her paste, no date on it. Unblock signal is the lockout date passing, not a session deciding the
+  batch is small enough to be an exception.
 - [ ] **Widen the sweep beyond page 181621.** Three errors on the one page Emma happened to open is
   not evidence that page is special. The generalisable check is: any Kokugakuin id whose holders'
   sections collide where they should not, or are missing where a P1352 ranking exists to supply them.

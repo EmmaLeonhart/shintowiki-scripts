@@ -18,9 +18,13 @@ A correction is two QS lines, because that is the only way QS expresses it:
     -QID|P13677|"id"|P958|"old"     remove the wrong qualifier
      QID|P13677|"id"|P958|"new"     add the right one
 
-REPORT + GENERATE ONLY. This writes a text file. It makes no edits: the batch is pasted
-into QuickStatements by hand, which is a separate channel from the scripts governed by
-`wikidata_editing_lockout.state` (Emma: "quickstatements are separate").
+REPORT + GENERATE ONLY. This writes a text file and makes no edits.
+
+Generating is NOT clearance to submit. `wikidata_editing_lockout.state` runs to 2026-09-18
+and covers "EVERY write path... and the hand-run QuickStatements batches" in its own
+words, so this output waits with everything else. (Emma's "quickstatements are separate"
+was about pacing, not about the lockout -- an earlier version of this docstring cited it
+the wrong way round and declared the batch ungated.)
 
 The live state is read first, so a value that is already correct emits NOTHING rather
 than a no-op remove/add pair -- Q135039671 below is exactly that case, and re-issuing it
