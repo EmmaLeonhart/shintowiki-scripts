@@ -7,12 +7,21 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 **Status: 🟢 GO** (weekly edit-test passed, 2026-08-19 01:54 UTC) — wiki editing is live for the week; work-loop, start clearing the ❓ DECISIONS.
 The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
 
-> ⛔ **FULL BLACKOUT until 2026-08-09** (Emma 2026-07-27). Not just "no writes": **no requests to
-> shinto.miraheze.org of any kind, reads included.** The 403 has been up since 2026-07-11 and never
-> lifted; Emma's read is that our continuing to read through the challenge is what kept us looking
-> persistent, so it was never relaxed. Every Miraheze-touching workflow is now gated on
-> `wiki_editing_lockout.state`, and `weekly_wiki_edit_test.py` holds its probe until `blackout_until`
-> passes — so the first test after the blackout, Sunday 2026-08-09, lands on ~13 days of true silence.
+> ✅ **THE BLACKOUT IS OVER — ended 2026-08-19T01:54 UTC, and this paragraph is the record, not the
+> rule.** Emma's 2026-07-27 full blackout (no requests to shinto.miraheze.org of any kind, reads
+> included) ran its course; the 403 that had been up since 07-11 was a Cloudflare bot challenge, and
+> it ended when she sent the farm the bot's User-Agent and they allowlisted it. The weekly edit-test
+> then passed and landed a real edit on `[[User:EmmaBot/edit-test]]`.
+>
+> **Read `shinto_miraheze/wiki_editing_lockout.state`, not this prose.** It is `locked: false`. This
+> paragraph said "until 2026-08-09" for ten days after that date passed, while the marker above it
+> said GO — a work-loop reading top-to-bottom would have stopped on a blackout that had already
+> ended. Retired 2026-08-19.
+>
+> **⚠ The OTHER two gates are still closed and are NOT this one:** Wikidata editing is locked until
+> **2026-09-18** (`wikidata_editing_lockout.state`, Emma 2026-08-18), and the enwiki-mention
+> condition is still unmet (7 mentions on the AI noticeboard, 2 on WikiProject Japan). Wiki work is
+> live; Wikidata writes are not.
 
 **THE QUEUE IS SPLIT IN TWO (Emma 2026-07-27).** Read this before picking work:
 
