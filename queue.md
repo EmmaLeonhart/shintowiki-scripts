@@ -765,9 +765,16 @@ Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.htm
 - **ASK:** "Link each pair with 'said to be the same as', or merge them?" → *link* (I generate
   QuickStatements, add-only) / *merge* (manual/browser, I hand you the list) / *case-by-case*.
 
-**The "84" is stale and the evidence behind it was wrong — corrected 2026-08-19.** Live counts are
-48 duplicates / 36 Kokugakuin-id disagreements / 65 no-twin. Of the 48, 11 were matched by Kokugakuin
-id and ~40 by ja label.
+**The "84" is stale and the evidence behind it was wrong — corrected 2026-08-19.** Regenerated with
+the fixed matcher: **149 orphans = 48 duplicate / 0 Kokugakuin-id disagreement / 101 no-twin.**
+
+The "36 Kokugakuin-id disagreements" class has collapsed to **zero** — every one of them was an
+artifact of matching on the bare id, and all 36 moved into no-twin (65 → 101). B3's 66 orphans are
+now 101; its framing needs the same re-read before it is decided.
+
+The 48 duplicates are unchanged in count but now rest on **names alone**: 39 exact ja label, 11 only
+after folding spelling variants (旧字体 → 新字体, 之/ノ → の, ヶ/ケ → が, trailing 神社/大社/神宮/社/宮
+stripped). Nothing in the duplicate class rests on the Kokugakuin id any more.
 
 **All 11 of the id-matched pairs are gone.** They rested on P13677 alone, which is not an identity:
 one Kokugakuin page carries many entries, so items are unique by the **combination of P13677 and its
