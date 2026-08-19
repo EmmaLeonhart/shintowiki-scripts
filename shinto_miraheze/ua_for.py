@@ -24,6 +24,18 @@ _WIKIDATA_HOSTS = ("wikidata.org", "query.wikidata.org", "quickstatements.toolfo
 # Wiki-side hosts: Miraheze and Fandom share one identity, by Emma's instruction.
 _WIKI_HOSTS = ("miraheze.org", "fandom.com", "wikia.com", "wikia.org")
 
+# Third-party SOURCE databases consulted only in service of Wikidata work -- the Kokugakuin shrine
+# databases behind P13677. They are not Wikimedia and are deliberately listed separately rather than
+# folded into _WIKIDATA_HOSTS, which would misstate what they are.
+#
+# They take the WIKIDATA identity, and the reasoning is worth stating because the alternative is what
+# was actually there. A script reading jmapps to verify a P13677 value is doing Wikidata work; giving
+# it the Miraheze identity puts the wiki-side persona on a lookup performed for the Wikidata account.
+# generate_multi_p13677_page.py did exactly that, with a spoofed "Mozilla/5.0 (compatible; EmmaBot/1.0;
+# +https://shinto.miraheze.org/...)" string. Sending NO contact address instead is not an improvement:
+# it is worse citizenship and still leaves the calling script unidentifiable.
+_WIKIDATA_SOURCE_HOSTS = ("jmapps.ne.jp", "kokugakuin.ac.jp")
+
 
 def ua_for(url_or_host: str) -> str:
     """-> the correct User-Agent for this URL or bare hostname. Raises on anything unrecognised."""
@@ -36,6 +48,8 @@ def ua_for(url_or_host: str) -> str:
         return WIKIDATA_USER_AGENT
     if any(host == h or host.endswith("." + h) for h in _WIKI_HOSTS):
         return USER_AGENT
+    if any(host == h or host.endswith("." + h) for h in _WIKIDATA_SOURCE_HOSTS):
+        return WIKIDATA_USER_AGENT
     raise ValueError(
         f"ua_for(): no User-Agent is defined for host {host!r}. Add it to the right list in "
         "shinto_miraheze/ua_for.py — deliberately refusing to guess, because guessing is how one "

@@ -30,7 +30,20 @@ NAME = "deleted_qids_in_ill"
 NAMESPACES = (0,)
 
 _WD_API = "https://www.wikidata.org/w/api.php"
-_USER_AGENT = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+# Was a module-level hardcoded "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) ..."
+# literal shadowing the canonical constant. Two problems: it pinned a version that is now three
+# releases stale, and every request in this file goes to _WD_API (www.wikidata.org),
+# so the wiki-side persona was being sent to Wikidata on every run.
+from shinto_miraheze.ua_for import ua_for
+
+_USER_AGENT = ua_for(_WD_API)
 
 CATEGORY_TAG = "[[Category:Pages with deleted QID in ill template]]"
 

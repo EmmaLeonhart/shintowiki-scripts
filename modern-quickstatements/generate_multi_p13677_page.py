@@ -32,10 +32,16 @@ REPO_ROOT = os.path.dirname(HERE)
 REVIEW = os.path.join(HERE, "p958_manual_review.txt")
 OUT = os.path.join(REPO_ROOT, "_site", "kokugakuin-multi-p13677.html")
 
+from shinto_miraheze.ua_for import ua_for
+
 WD_API = "https://www.wikidata.org/w/api.php"
-UAW = "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) shintowiki-scripts"
-UAK = "Mozilla/5.0 (compatible; EmmaBot/1.0; +https://shinto.miraheze.org/wiki/User:EmmaBot)"
+# Both of these were hardcoded and both were wrong. UAW sent the MIRAHEZE persona
+# ("EmmaBot ... shinto.miraheze.org/wiki/User:EmmaBot") to www.wikidata.org on line ~75, and UAK sent
+# a spoofed "Mozilla/5.0 (compatible; ...)" advertising the same Miraheze user to the Kokugakuin
+# database. Resolve from the URL instead, so neither can drift from the constants again.
 DET = "https://jmapps.ne.jp/kokugakuin/det.html?data_id="
+UAW = ua_for(WD_API)
+UAK = ua_for(DET)
 WD = "https://www.wikidata.org/wiki/"
 
 # The parent label can itself contain parentheses ("Watatsumi Shrine (Engishiki)"),

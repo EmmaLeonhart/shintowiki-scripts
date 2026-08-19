@@ -47,10 +47,12 @@ SRC_EXPORT_URL = f"https://{SRC_HOST}/w/index.php"
 DST_HOST = "shinto.fandom.com"
 DST_API_URL = f"https://{DST_HOST}/api.php"
 INTERWIKI_PREFIX = "shintowiki"
-USER_AGENT = (
-    "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) "
-    "import_template_list_to_fandom (shintowiki-scripts)"
-)
+# Was a module-level hardcoded "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) ..."
+# literal shadowing the canonical constant. Two problems: it pinned a version that is now three
+# releases stale, and this file is wiki-side only, so the persona was RIGHT and only the
+# version was wrong -- which is the quiet half of the same bug: a stale literal drifts
+# silently while the canonical constant moves.
+from shinto_miraheze.user_agent import USER_AGENT
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # fandom action=import hard cap
 
 # Input list lives next to this script (fandom/); resolve relative to __file__

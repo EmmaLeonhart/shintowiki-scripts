@@ -80,10 +80,18 @@ STATE_FILE = os.path.join(SCRIPT_DIR, "generate_shrine_disambig_lists.state")
 ERROR_LOG = os.path.join(SCRIPT_DIR, "generate_shrine_disambig_lists.errors")
 
 THROTTLE = 2.5  # seconds between SPARQL queries
-USER_AGENT = (
-    "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) "
-    "shintowiki-scripts/generate_shrine_disambig_lists"
-)
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+# Was a module-level hardcoded "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) ..."
+# literal shadowing the canonical constant. Two problems: it pinned a version that is now three
+# releases stale, and the only endpoint this file talks to is query.wikidata.org, so it was
+# sending the WIKI-SIDE persona to Wikidata -- the linkage the two agents exist to prevent.
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT as USER_AGENT
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
 # Marker for the auto-generated section. Used both to find the block

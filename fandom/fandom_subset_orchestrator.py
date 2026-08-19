@@ -114,10 +114,19 @@ ERRORS_FILE = SCRIPT_DIR / "fandom_subset_orchestrator.errors"
 # [[Open questions]].
 PERMISSION_DENIED_CODES = {"permissiondenied", "cantdelete", "protectedpage"}
 
-USER_AGENT = (
-    "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) "
-    "fandom-subset-orchestrator (shintowiki-scripts)"
-)
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+# Was a module-level hardcoded "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) ..."
+# literal shadowing the canonical constant. Two problems: it pinned a version that is now three
+# releases stale, and this file is wiki-side only, so the persona was RIGHT and only the
+# version was wrong -- which is the quiet half of the same bug: a stale literal drifts
+# silently while the canonical constant moves.
+from shinto_miraheze.user_agent import USER_AGENT
 
 _FORBIDDEN = set('<>:"/\\|?*')
 

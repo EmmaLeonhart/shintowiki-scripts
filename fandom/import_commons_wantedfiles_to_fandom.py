@@ -75,10 +75,13 @@ COMMONS_HOST = "commons.wikimedia.org"
 COMMONS_API_URL = f"https://{COMMONS_HOST}/w/api.php"
 FANDOM_API_URL = f"https://{DST_HOST}/api.php"
 
-USER_AGENT = (
-    "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) "
-    "import_commons_wantedfiles_to_fandom (shintowiki-scripts)"
-)
+# This file is the one that genuinely talks to BOTH sides, so it cannot have a single UA at all.
+# It read commons.wikimedia.org and wrote shinto.fandom.com through ONE hardcoded
+# "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot)" literal -- so every Commons read
+# carried the wiki-side persona onto a Wikimedia project. Resolve per URL instead; ua_for() already
+# routes Wikimedia projects to the Wikidata identity for exactly this reason.
+from shinto_miraheze.ua_for import ua_for
+from shinto_miraheze.user_agent import USER_AGENT
 
 
 def load_env(path: str = ".env") -> None:
@@ -164,7 +167,7 @@ def commons_imageinfo(filename: str) -> dict | None:
     resp = requests.get(
         COMMONS_API_URL,
         params=params,
-        headers={"User-Agent": USER_AGENT},
+        headers={"User-Agent": ua_for(COMMONS_API_URL)},
         timeout=120,
     )
     resp.raise_for_status()
@@ -196,9 +199,11 @@ def commons_imageinfo(filename: str) -> dict | None:
 
 
 def download_file(url: str) -> bytes:
+    # The URL is whatever Commons handed back -- upload.wikimedia.org -- so it is a Wikimedia
+    # request and must not carry the wiki-side persona.
     resp = requests.get(
         url,
-        headers={"User-Agent": USER_AGENT},
+        headers={"User-Agent": ua_for(url)},
         timeout=300,
         stream=True,
     )

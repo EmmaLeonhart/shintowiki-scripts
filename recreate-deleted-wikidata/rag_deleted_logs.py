@@ -39,8 +39,14 @@ RECREATE_TXT = os.path.join(HERE, "recreate_quickstatements.txt")
 OUT_MD = os.path.join(HERE, "deleted_log_rag.md")
 OUT_JSON = os.path.join(HERE, "deleted_log_rag.json")
 
-UA = ("EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle; "
-      f"{contact('wikidata')}) rag_deleted_logs")
+# Was: "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle; <wikidata contact>)".
+# That single header named the wiki-side bot, linked shinto.miraheze.org, AND named User:Immanuelle
+# -- and every request here goes to www.wikidata.org. It is the exact linkage the two agents exist to
+# keep apart, and it had already been half-fixed (the email was pulled from contact('wikidata')) while
+# the persona-mixing prefix was left in place. Use the constant; never rebuild a UA by hand here.
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
+UA = WIKIDATA_USER_AGENT
 READ_THROTTLE = 0.3
 
 

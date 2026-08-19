@@ -53,10 +53,12 @@ FANDOM_HOST = "shinto.fandom.com"
 FANDOM_API = f"https://{FANDOM_HOST}/api.php"
 INTERWIKI_PREFIX = "shintowiki"
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # fandom hard cap
-USER_AGENT = (
-    "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) "
-    "fandom-mirror (shintowiki-scripts)"
-)
+# Was a module-level hardcoded "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot) ..."
+# literal shadowing the canonical constant. Two problems: it pinned a version that is now three
+# releases stale, and this file is wiki-side only, so the persona was RIGHT and only the
+# version was wrong -- which is the quiet half of the same bug: a stale literal drifts
+# silently while the canonical constant moves.
+from shinto_miraheze.user_agent import USER_AGENT
 
 # Cached across calls within a single run.
 _fandom_site: mwclient.Site | None = None
