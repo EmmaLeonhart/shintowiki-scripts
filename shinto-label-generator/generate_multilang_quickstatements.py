@@ -27,6 +27,7 @@ import csv
 import unicodedata
 import requests
 from tokiponizer import kana_to_romaji, tokenize_romaji
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 def _ensure_utf8_stdout():
     """Windows UTF-8 console fix. Called from main() rather than at import time so
@@ -1066,6 +1067,7 @@ def run_sparql(query, label):
     last_err = None
     for attempt in range(3):
         try:
+            wd_pace(SPARQL_INTERVAL)
             r = requests.get(
                 SPARQL_ENDPOINT,
                 params={"query": query, "format": "json"},

@@ -68,6 +68,7 @@ import json
 import os
 import shutil
 import sys
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 import urllib.parse
 import urllib.request
 
@@ -211,6 +212,7 @@ def _api(params):
     params = dict(params, format="json")
     req = urllib.request.Request(WD_API + "?" + urllib.parse.urlencode(params),
                                  headers={"User-Agent": UA})
+    wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.load(r)
 

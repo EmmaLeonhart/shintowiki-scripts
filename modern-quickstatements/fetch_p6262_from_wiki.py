@@ -22,6 +22,7 @@ import re
 import sys
 import time
 import requests
+from shinto_miraheze.wd_pace import wd_pace
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -39,6 +40,7 @@ def fetch_redirect_qids(qids):
     for i in range(0, len(qid_list), 50):
         batch = qid_list[i : i + 50]
         try:
+            wd_pace()          # one Wikidata request per call site, paced
             resp = requests.get(
                 "https://www.wikidata.org/w/api.php",
                 params={
@@ -68,6 +70,7 @@ def fetch_existing_p6262_qids():
     """
     query = "SELECT ?item WHERE { ?item wdt:P6262 ?val . }"
     try:
+        wd_pace()          # one Wikidata request per call site, paced
         resp = requests.get(
             SPARQL_URL,
             params={"query": query, "format": "json"},
@@ -93,6 +96,7 @@ def fetch_existing_p6262_qids():
 
 def main():
     print(f"Fetching [[{PAGE_TITLE}]] from shintowiki...")
+    wd_pace()          # one Wikidata request per call site, paced
     resp = requests.get(
         WIKI_API,
         params={

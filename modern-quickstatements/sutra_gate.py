@@ -35,6 +35,7 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+from shinto_miraheze.wd_pace import wd_pace
 
 _here = os.path.dirname(os.path.abspath(__file__))
 _root = _here
@@ -69,6 +70,7 @@ def _exists_and_unmolested(qid=WATCHED_ITEM):
         "props": "info", "format": "json",
     })
     req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT})
+    wd_pace()
     with urllib.request.urlopen(req, timeout=30) as r:
         d = json.loads(r.read().decode("utf-8"))
     if "error" in d:

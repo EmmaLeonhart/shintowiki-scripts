@@ -13,6 +13,7 @@ import csv
 import re
 import requests
 import pykakasi
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 # Initialize pykakasi (v2.3.0 API)
 kks = pykakasi.kakasi()
@@ -46,6 +47,7 @@ def fetch_candidates():
     results = []
     print("Querying Wikidata for Japanese-only Shrines...")
     try:
+        wd_pace(SPARQL_INTERVAL)
         r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_SHRINES, "format": "json"}, headers={"User-Agent": "Japanese-Tokiponizer/1.0"}, timeout=300)
         r.raise_for_status()
         bindings = r.json()["results"]["bindings"]
@@ -56,6 +58,7 @@ def fetch_candidates():
 
     print("Querying Wikidata for Japanese-only Temples...")
     try:
+        wd_pace(SPARQL_INTERVAL)
         r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_TEMPLES, "format": "json"}, headers={"User-Agent": "Japanese-Tokiponizer/1.0"}, timeout=300)
         r.raise_for_status()
         bindings = r.json()["results"]["bindings"]

@@ -56,6 +56,7 @@ import os
 import sys
 
 import requests
+from shinto_miraheze.wd_pace import wd_pace
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -110,6 +111,7 @@ def fetch_page_text(session):
     s = session or requests.Session()
     if session is None:
         s.headers.update({"User-Agent": UA})
+    wd_pace()
     r = s.get(WD_API, params={
         "action": "query", "prop": "revisions", "rvprop": "content",
         "rvslots": "main", "titles": PAGE_TITLE, "format": "json", "formatversion": "2",

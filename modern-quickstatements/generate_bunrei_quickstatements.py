@@ -62,6 +62,7 @@ SUNSET = datetime.date(2027, 2, 1)
 def sunset_reached(today=None):
     return (today or datetime.date.today()) >= SUNSET
 import urllib.request
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WDQS = "https://query-main.wikidata.org/sparql"   # query.wikidata.org is 429-outaged
@@ -173,6 +174,7 @@ def all_shrines():
     url = WDQS + "?" + urllib.parse.urlencode({"query": qy, "format": "json"})
     req = urllib.request.Request(url, headers={"User-Agent": UA,
                                                "Accept": "application/sparql-results+json"})
+    wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=180) as r:
         rows = json.load(r)["results"]["bindings"]
     return [(x["item"]["value"].rsplit("/", 1)[-1], x["ja"]["value"]) for x in rows]

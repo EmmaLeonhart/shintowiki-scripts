@@ -35,6 +35,7 @@ import os
 import re
 import sys
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -90,6 +91,7 @@ def verify_shrines(qids):
         vals = " ".join("wd:%s" % q for q in uniq[i:i + 50])
         query = ("SELECT ?item WHERE { VALUES ?item { %s } "
                  "?item wdt:P31/wdt:P279* wd:Q845945 }" % vals)
+        wd_pace(SPARQL_INTERVAL)
         r = requests.post("https://query-main.wikidata.org/sparql",
                           data={"query": query, "format": "json"},
                           headers=hdr, timeout=120)

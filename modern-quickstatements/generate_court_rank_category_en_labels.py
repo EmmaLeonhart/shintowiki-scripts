@@ -24,6 +24,7 @@ import requests
 import generate_court_rank_quickstatements as g
 from generate_court_rank_category_links import NEW_RANK_QIDS
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wd_pace import wd_pace
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "court_rank_category_en_labels.txt")
@@ -43,6 +44,7 @@ def _wb(ids_or_titles, by="ids"):
         else:
             params["sites"] = "jawiki"
             params["titles"] = "|".join(batch)
+        wd_pace()
         r = requests.get(WD_API, params=params, headers=UA, timeout=60)
         r.raise_for_status()
         out.update(r.json().get("entities", {}))

@@ -47,6 +47,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOC = os.path.join(os.path.dirname(HERE), "docs", "orphan_shikinaisha_2026-07.md")
@@ -66,6 +67,7 @@ def sparql_csv(query):
     r = urllib.request.Request(
         SPARQL + "?" + urllib.parse.urlencode({"query": query}),
         headers={"User-Agent": UA, "Accept": "text/csv"})
+    wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(r, timeout=300) as resp:
         return list(csv.DictReader(io.StringIO(resp.read().decode("utf-8"))))
 

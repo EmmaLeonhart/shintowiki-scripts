@@ -17,6 +17,7 @@ import hanja
 from koreanizer import koreanize
 from fetch_shrines_tokiponize import process_label
 from generate_multilang_quickstatements import EXCLUDE_QIDS
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 # Windows UTF-8 console fix (guard against double-wrapping from imports)
 if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
@@ -74,6 +75,7 @@ KOREAN_SUFFIX = {
 def run_sparql(query, label):
     """Run a SPARQL query and return results."""
     print(f"Querying Wikidata: {label}...")
+    wd_pace(SPARQL_INTERVAL)
     r = requests.get(
         SPARQL_ENDPOINT,
         params={"query": query, "format": "json"},

@@ -43,6 +43,7 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+from shinto_miraheze.wd_pace import wd_pace
 
 _here = os.path.dirname(os.path.abspath(__file__))
 _root = _here
@@ -66,6 +67,7 @@ def sparql(query):
     url = SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
     req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT,
                                                "Accept": "application/sparql-results+json"})
+    wd_pace()          # one Wikidata request per call site, paced
     with urllib.request.urlopen(req, timeout=120) as r:
         if r.status == 429:                     # repo policy: bail, never retry
             raise SystemExit("429 from WDQS — bailing, no retries (CLAUDE.md)")

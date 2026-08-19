@@ -39,6 +39,7 @@ import re
 import sys
 
 import requests
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 UA = {"User-Agent": WIKIDATA_USER_AGENT}
 JA_API = "https://ja.wikipedia.org/w/api.php"
@@ -96,6 +97,7 @@ def label_matches_names(label: str, names: list) -> bool:
 
 
 def fetch_wikitext(title: str) -> str:
+    wd_pace(SPARQL_INTERVAL)
     r = requests.get(JA_API, params={
         "action": "query", "titles": title, "prop": "revisions",
         "rvprop": "content", "rvslots": "main",
@@ -180,6 +182,7 @@ def main():
 
     # Wikidata items with the bug
     q = 'SELECT ?item ?jaLabel WHERE { ?item wdt:P6375 "同上"@ja . ?item rdfs:label ?jaLabel . FILTER(LANG(?jaLabel)="ja") }'
+    wd_pace(SPARQL_INTERVAL)
     r = requests.post(SPARQL, data={"query": q, "format": "json"}, headers=UA, timeout=120)
     r.raise_for_status()
     items = {b["item"]["value"].rsplit("/", 1)[-1]: b["jaLabel"]["value"]

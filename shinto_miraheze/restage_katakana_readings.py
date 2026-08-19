@@ -51,6 +51,7 @@ UA = ("ShintoWikiLabels/1.0 "
 sys.path.insert(0, HERE)
 from collect_name_in_kana import acceptable_reading, clean_kana  # noqa: E402
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 
 def katakana_entries(text):
@@ -75,6 +76,7 @@ def already_staged(path):
 
 def sitelinks(qids):
     """{qid: jawiki article URL}. One request; missing sitelink -> absent."""
+    wd_pace(SPARQL_INTERVAL)
     r = requests.get("https://www.wikidata.org/w/api.php", params={
         "action": "wbgetentities", "ids": "|".join(qids),
         "props": "sitelinks", "sitefilter": "jawiki", "format": "json",

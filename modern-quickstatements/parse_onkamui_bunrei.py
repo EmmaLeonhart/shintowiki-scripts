@@ -38,6 +38,7 @@ import sys
 import urllib.parse
 import urllib.request
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "bunrei_onkamui.txt")
@@ -130,6 +131,7 @@ def fetch(url=URL, cache=None):
     if cache and os.path.exists(cache):
         return open(cache, encoding="utf-8", errors="replace").read()
     req = urllib.request.Request(url, headers={"User-Agent": UA})
+    wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=120) as r:
         if r.status == 429:
             raise SystemExit("429 from rakuten — bailing.")
@@ -216,6 +218,7 @@ def all_shrines():
     url = WDQS + "?" + urllib.parse.urlencode({"query": qy, "format": "json"})
     req = urllib.request.Request(url, headers={
         "User-Agent": UA, "Accept": "application/sparql-results+json"})
+    wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=300) as r:
         if r.status == 429:
             raise SystemExit("429 from WDQS — bailing.")

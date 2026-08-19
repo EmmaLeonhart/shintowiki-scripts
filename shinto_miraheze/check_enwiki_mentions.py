@@ -40,6 +40,7 @@ import json
 import pathlib
 import urllib.parse
 import urllib.request
+from shinto_miraheze.wd_pace import wd_pace
 
 STATE = pathlib.Path(_uar) / "shinto_miraheze" / "enwiki_mention_gate.state"
 NEEDLE = "Immanuelle"
@@ -55,6 +56,7 @@ def count_mentions(title):
            + urllib.parse.quote(title))
     req = urllib.request.Request(url, headers={"User-Agent": ua_for(url)})
     try:
+        wd_pace()
         text = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
     except Exception as e:
         return None, f"{type(e).__name__}: {e}"

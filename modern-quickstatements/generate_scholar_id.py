@@ -43,6 +43,7 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+from shinto_miraheze.wd_pace import wd_pace
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SEQUENTIAL_FILE = "sequential_misc.txt"
@@ -65,6 +66,7 @@ def _api(params):
     params = dict(params, format="json")
     req = urllib.request.Request(WD_API + "?" + urllib.parse.urlencode(params),
                                  headers={"User-Agent": UA})
+    wd_pace()
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.load(r)
 

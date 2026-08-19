@@ -15,6 +15,7 @@ import io
 import requests
 from tokiponizer import tokiponize
 from generate_multilang_quickstatements import extract_name_from_en
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 
 def _ensure_utf8_stdout():
@@ -50,6 +51,7 @@ ORDER BY ?srcLabel
 def fetch_shrines():
     """Fetch target shrine/temple items with Indonesian labels from Wikidata."""
     print("Querying Wikidata SPARQL for Shinto shrines + Japan Buddhist temples with id/ru/uk/lt labels...")
+    wd_pace(SPARQL_INTERVAL)
     r = requests.get(
         SPARQL_ENDPOINT,
         params={"query": SPARQL_QUERY, "format": "json"},

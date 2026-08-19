@@ -40,6 +40,7 @@ import datetime
 import json
 import urllib.parse
 import urllib.request
+from shinto_miraheze.wd_pace import wd_pace
 
 WATCHED_USER = "ブルーノ・プラス"
 
@@ -190,6 +191,7 @@ def _api(params):
     params = dict(params, format="json")
     url = WD_API + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
+    wd_pace()
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.load(r)
 

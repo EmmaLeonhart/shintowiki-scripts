@@ -16,6 +16,7 @@ import json
 import re
 import requests
 from opencc import OpenCC
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 
 def _ensure_utf8_stdout():
@@ -254,6 +255,7 @@ def japanese_to_chinese(ja_label):
 def fetch_shrines():
     """Fetch shrines with Japanese labels but no Chinese labels."""
     print("Querying Wikidata for shrines without Chinese labels...")
+    wd_pace(SPARQL_INTERVAL)
     r = requests.get(
         SPARQL_ENDPOINT,
         params={"query": SPARQL_QUERY, "format": "json"},
