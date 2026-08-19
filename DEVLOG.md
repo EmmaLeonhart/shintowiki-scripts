@@ -8834,3 +8834,29 @@ text. The staged fix prefixes it to Category:6世紀日本の政治家, correct 
 it goes but still untranslated. Not damage — it was already Japanese.
 
 1,134 pass locally.
+
+## 2026-08-19 — the sources finally read, and the page cut by 44%
+
+**Izumo (B1a) — done, and the old report was wrong.** Emma asked in July for the jawiki list page and
+the Kokugakuin database to be read rather than the Wikidata graph alone; the report's Kokugakuin
+column was literally blank. Reading them: 意宇郡 has **three** 同社坐韓国伊[大太]弖神社 entries (19,
+28, 39), not two. Entry 19 already has its own item (Q135040778, id 182793) and was absent from the
+report entirely, so "one item standing in for two entries" was one entry short. Ordinals verified by
+counting the template independently — 48, matching its own 48座 header. Two further source facts the
+graph does not carry: jawiki's identified modern shrine for entry 28 is spelled 韓国伊**太**弖神社,
+so 大/太 does not separate the entries the way the report assumed; and the Kokugakuin ids run in step
+with the ordinals but skip 28 and 39, which points at them being **sections** of the host's page —
+exactly what P958 expresses. Source snapshotted under `docs/sources/`.
+
+**The 18 missing-id shrines are not 18 problems.** Five are the same Izumo cluster. 佐久多神社 is two
+items for one shrine (Q135040907 with id 182811, Q135070108 with none) — the 論社 split jawiki records.
+
+**UA segregation — ten scripts bypassed the constants**, six of them sending the wiki-side persona to
+a Wikimedia host, including one header naming EmmaBot, shinto.miraheze.org and User:Immanuelle at
+once on every www.wikidata.org request. All fixed; `tests/test_no_hardcoded_user_agents.py` bans the
+pattern rather than the instances. 1493 tests pass.
+
+**[[Open questions]] trimmed 14,622 → 8,228 chars.** Eight settled items deleted rather than archived;
+three real questions kept and answered with named examples; three of Emma's own calls left to her.
+Her standing note kept verbatim. The 39-day blackout was what let it rot — the sweep that reads the
+page was itself gated behind the wiki.

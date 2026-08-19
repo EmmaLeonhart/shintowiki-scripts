@@ -832,33 +832,26 @@ https://emmaleonhart.github.io/shintowiki-scripts/awa-entry-3.html
 - **ASK:** "Sequential-misc unit (remove BOTH 下立松原 has-parts, re-add the correct #5), or you
   hand-delete the one statement?" → *sequential unit* (I build it) / *you hand-delete*.
 
-### B7. Kokugakuin P13677 matcher — what did you actually want here?
-Emma 2026-07-09: *"I don't even understand what this actual thing even is."* The matcher
-(`match_kokugakuin_ids.py`) cut the missing-id set 94→18 (same set as B4).
-- **ASK:** "This is the same 18 as B4 — is B4 the whole of it, or is there a separate thing you wanted
-  from the matcher?" → *B4 covers it, drop this* / *there's more (you explain)*.
+### B7. Kokugakuin P13677 matcher — examples DELIVERED 2026-08-19, one question left
+Emma 2026-07: *"I don't even understand what this actual thing even is"* and *"I genuinely do not
+have any idea what shrines this is referring to."* Both were asks for the shrines to be NAMED, not
+linked. All 18 are now written out on [[Open questions]] itself.
+
+**The finding that reframes it: five of the 18 are one cluster, not five cases.** 坐韓国伊大弖神社,
+嘉羅久利神社, 佐久多神社 (意宇郡) and 韓國伊太弖奉神社, 天若日子神社 (出雲郡) are the Izumo knot.
+佐久多神社 is two items for one shrine — Q135040907 holds id 182811, Q135070108 holds none — which is
+the 佐久多/嘉羅久利 論社 split jawiki records. The two 野蚊神社 rows are likewise two distinct items
+of the same name in one district, which is why the matcher refused to pick.
+
+- [ ] **ASK on the board:** pull the Izumo five out and work them with the Izumo item, leaving 13
+  genuinely separate no-anchor/no-match cases? Asked on the page 2026-08-19; awaiting her reply, not
+  blocking on it.
 
 ### B8. Empty-items — which to restore?
 285 emptied items, 217 lost their P31 — restoration candidates, sorted by how much was lost.
 https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
 - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
   this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
-
-## B1a. Izumo 坐韓国伊大弖神社 — Emma asked for the SOURCES to be read, not just the report
-
-From [[Open questions]]. The bot produced https://emmaleonhart.github.io/shintowiki-scripts/izumo-karakuni.html
-and Emma replied: *"I am genuinely not sure. And it is best to look over the source page
-https://ja.wikipedia.org/wiki/出雲国の式内社一覧 and the kokugakuin shrine database things here."*
-
-That is a concrete instruction that was never carried out — the report reasoned from Wikidata alone.
-The item Q135040786 carries three part-of statements at once (list@28 correct, host 揖夜神社, and
-list@39 which is a different shrine, 伊太弖 at 佐久多神社); ordinal 39 is an empty hole; splitting
-needs a NEW item, which QuickStatements cannot make.
-
-- [ ] Read the jawiki 出雲国の式内社一覧 page and the Kokugakuin DB entries for 意宇郡 28 and 39, and
-  extend the report with what the SOURCES say — not with what the Wikidata graph implies.
-- Report-only, as she ruled. No writes; item creation is out of the pipeline anyway and Wikidata is
-  locked to 2026-09-18.
 
 ## B1b. The 22 duplicated "part of" statements — Emma stopped short of calling it resolved
 
