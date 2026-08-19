@@ -52,11 +52,23 @@ def test_the_shipped_file_holds_exactly_the_intended_lines():
     truncated one REMOVED, on the same property. In the random atomic drip the
     removal could fire first and leave the shrine with no modern reading at all;
     here line N is confirmed landed before N+1 is attempted.
+
+    Line 3 (the P1960 scholar ID) was REMOVED from the file by the generator on 2026-08-18
+    (bot commit 631f4c8c) because the statement had landed — verified 2026-08-19 against the live
+    API: Q140568870 carries exactly one P1960, value "kiJ9hGYAAAAJ". So the drop is the channel
+    working, not drift, and the expectation is updated rather than the file restored.
+
+    ⚠ THE HAZARD THIS LEAVES IS REAL AND IS NOT FIXED HERE. This file is documented append-only and
+    its cursor is a POSITIONAL INDEX, so deleting a line shifts everything below it up by one. It
+    was harmless this time only because the add/remove pair below moved together, preserving their
+    order. A deletion above a live cursor would misalign which edit runs next — and for this pair
+    specifically, running the removal before its add strips the shrine's only modern reading. If
+    the generator is going to delete completed lines, the cursor has to be keyed to line content
+    rather than to an index.
     """
     assert dde.load_sequential_lines() == [
         'Q140568717|P50|Q140568870|P1545|"1"',
         'Q140568719|P50|Q140568870|P1545|"1"',
-        'Q140568870|P1960|"kiJ9hGYAAAAJ"',
         'Q22119431|P1814|"つくだにますひとことねこじんじゃ"|S143|Q177837|S4656|'
         '"https://ja.wikipedia.org/wiki/%E8%AA%BF%E7%94%B0%E5%9D%90%E4%B8%80%E4%BA%8B'
         '%E5%B0%BC%E5%8F%A4%E7%A5%9E%E7%A4%BE"',
