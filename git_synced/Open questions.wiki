@@ -29,6 +29,7 @@ __NOTOC__
 :* jawiki's identified modern shrine for entry '''28''' is spelled 韓国伊'''太'''弖神社 — 太, not 大. The old report leaned on 大/太 as the thing separating the two entries. The register names differ that way; the modern identifications do not.
 :* The Kokugakuin ids run in step with the ordinals but '''skip 28 and 39''': 18→182792, 19→182793, 20→182794; 27→182801, 29→182802; 38→182811, 40→182812. Entry 19 got a page of its own; 28 and 39 did not.
 : '''→ The reading to test:''' entries 28 and 39 are '''sections''' on their host shrine's Kokugakuin page (182801 and 182811) rather than pages of their own — which is exactly what the section qualifier P958 exists to express.
+: '''✓ 2026-08-19 (bot), the same check widened:''' page 181621 is not unusual. Across all '''900''' Kokugakuin ids held by more than one item, '''281''' look wrong — '''197''' of them with 181621's exact shape (a holder carrying no section while its siblings do), 66 with no sections at all, 18 where every holder is <code>0</code>/<code>n/a</code>. '''Nothing collides''': nowhere do two items claim the same (id, real section), so the problem is under-specification rather than a fight over an entry. Browsable: https://emmaleonhart.github.io/shintowiki-scripts/p958-candidates.html
 : '''ASK:''' does that match what you see in the database — 28 and 39 as sections of the host's page? If so the fix is a P958 qualifier, not a hunt for missing ids, and it changes item 3 below as well.
 
 === 2. The duplicated "part of" statements — ANSWERED 2026-08-19 ===

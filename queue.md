@@ -961,12 +961,29 @@ Q134925373|P13677|"181621"|P958|"0"
   which covers hand-run QuickStatements by its own wording), then BLOCKED-ON-USER-ACTION: her account,
   her paste, no date on it. Unblock signal is the lockout date passing, not a session deciding the
   batch is small enough to be an exception.
-- [ ] **Widen the sweep beyond page 181621.** Three errors on the one page Emma happened to open is
-  not evidence that page is special. The generalisable check is: any Kokugakuin id whose holders'
-  sections collide where they should not, or are missing where a P1352 ranking exists to supply them.
-  `CORRECTIONS` in the generator is a hand-entered list on purpose — every entry so far comes from
-  someone reading the Kokugakuin page — so widening means producing a *candidates* report for review,
-  not auto-filling the list from an inference.
+**Widened 2026-08-19 — page 181621 is NOT special.** `modern-quickstatements/generate_p958_candidates_page.py`
+  checks every Kokugakuin id held by more than one item. Of **900** such ids, 619 are fine and **281
+  are candidates**:
+
+  | count | shape |
+  |---|---|
+  | **0** | **collisions** — nowhere do two items claim the same (id, real section) |
+  | **197** | a holder has NO section while its siblings do — **181621's exact shape** |
+  | **66** | no holder on the page has any section |
+  | **18** | every holder carries `0` or `n/a`, so none is distinguished |
+
+  The **zero is the load-bearing result**: the failure mode is under-specification, not two shrines
+  fighting over one entry. And the error Emma found on the one page she opened recurs on **197** pages.
+
+  Report: `_site/p958-candidates.html` (281 cards, each linking the Kokugakuin page and every holder),
+  data: `modern-quickstatements/p958_candidates_audit.json`. Report-only by design — the correct
+  section can only be read off the Kokugakuin page, which is how 181621's values were established, so
+  this narrows WHERE to look and never guesses WHAT the value is.
+
+- [ ] **Read the candidates and produce corrections** — NEEDS-INVESTIGATION: each page must be read
+  on the Kokugakuin site to learn its true sections. 281 pages is too many to hand Emma raw; the next
+  step is to sample the 197 and see whether the missing section is derivable from the parent list's
+  P1352 ranking, which would turn most of them mechanical. Not gated on anything.
 
 ---
 

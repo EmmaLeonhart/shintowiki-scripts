@@ -1,0 +1,6573 @@
+{
+ "MISSING-SOME": [
+  {
+   "kokugakuin_id": "180600",
+   "holders": [
+    {
+     "item": "Q135038770",
+     "ja": "伴氏神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135178095",
+     "ja": "伴氏社（北野天満宮末社）",
+     "section": "2"
+    },
+    {
+     "item": "Q17994598",
+     "ja": "住吉大伴神社",
+     "section": "1"
+    },
+    {
+     "item": "Q662176",
+     "ja": "北野天満宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180650",
+   "holders": [
+    {
+     "item": "Q135038806",
+     "ja": "酒屋神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135038807",
+     "ja": "神南備神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180655",
+   "holders": [
+    {
+     "item": "Q135038810",
+     "ja": "和伎坐天乃夫支賣神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135038811",
+     "ja": "綺原坐健伊那大比賣神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180657",
+   "holders": [
+    {
+     "item": "Q11473738",
+     "ja": "岡田鴨神社",
+     "section": null
+    },
+    {
+     "item": "Q135038812",
+     "ja": "相楽神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180738",
+   "holders": [
+    {
+     "item": "Q135038961",
+     "ja": "為志神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270117",
+     "ja": "為志神社",
+     "section": null
+    },
+    {
+     "item": "Q135270925",
+     "ja": "葛木坐火雷神社合祀",
+     "section": "0"
+    },
+    {
+     "item": "Q38276022",
+     "ja": "為志神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180851",
+   "holders": [
+    {
+     "item": "Q11610732",
+     "ja": "耳成山口神社",
+     "section": null
+    },
+    {
+     "item": "Q135039027",
+     "ja": "目原坐高御魂神社 二座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069124",
+     "ja": "天満神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135069127",
+     "ja": "山之坊山口神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180853",
+   "holders": [
+    {
+     "item": "Q135039029",
+     "ja": "畝尾坐健土安神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069130",
+     "ja": "春日神社",
+     "section": "3"
+    },
+    {
+     "item": "Q30931377",
+     "ja": "畝尾坐健土安神社",
+     "section": "1"
+    },
+    {
+     "item": "Q98082987",
+     "ja": "天香山神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180859",
+   "holders": [
+    {
+     "item": "Q135039033",
+     "ja": "天香山坐櫛真命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069135",
+     "ja": "国常立神社",
+     "section": "2"
+    },
+    {
+     "item": "Q98082987",
+     "ja": "天香山神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180875",
+   "holders": [
+    {
+     "item": "Q135039047",
+     "ja": "出雲建雄神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069143",
+     "ja": "葛神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135270415",
+     "ja": "出雲建雄神社",
+     "section": "1"
+    },
+    {
+     "item": "Q708859",
+     "ja": "石上神宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180885",
+   "holders": [
+    {
+     "item": "Q11396948",
+     "ja": "利雁神社",
+     "section": "2"
+    },
+    {
+     "item": "Q11608777",
+     "ja": "美具久留御魂神社",
+     "section": null
+    },
+    {
+     "item": "Q135039108",
+     "ja": "利雁神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180946",
+   "holders": [
+    {
+     "item": "Q11479957",
+     "ja": "巽神社 (大阪市)",
+     "section": null
+    },
+    {
+     "item": "Q135185614",
+     "ja": "横野神社跡",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180950",
+   "holders": [
+    {
+     "item": "Q135039145",
+     "ja": "都留弥神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135185616",
+     "ja": "都留弥神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180975",
+   "holders": [
+    {
+     "item": "Q11586779",
+     "ja": "石津太神社",
+     "section": null
+    },
+    {
+     "item": "Q11586788",
+     "ja": "石津神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135039162",
+     "ja": "石津太社神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181001",
+   "holders": [
+    {
+     "item": "Q17221560",
+     "ja": "矢代寸神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q97276772",
+     "ja": "山直神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181011",
+   "holders": [
+    {
+     "item": "Q11611103",
+     "ja": "聖神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q11613492",
+     "ja": "舊府神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181022",
+   "holders": [
+    {
+     "item": "Q11432381",
+     "ja": "大依羅神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q705949",
+     "ja": "住吉大社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181024",
+   "holders": [
+    {
+     "item": "Q135039197",
+     "ja": "草津大歳神社",
+     "section": null
+    },
+    {
+     "item": "Q135039198",
+     "ja": "中臣須牟地神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q705949",
+     "ja": "住吉大社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181052",
+   "holders": [
+    {
+     "item": "Q11355295",
+     "ja": "三島鴨神社",
+     "section": "1"
+    },
+    {
+     "item": "Q11675604",
+     "ja": "鴨神社 (高槻市)",
+     "section": "0"
+    },
+    {
+     "item": "Q135039216",
+     "ja": "三島鴨神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270126",
+     "ja": "三島鴨神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181053",
+   "holders": [
+    {
+     "item": "Q11379322",
+     "ja": "伊射奈岐神社 (吹田市佐井寺)",
+     "section": "2"
+    },
+    {
+     "item": "Q11379324",
+     "ja": "伊射奈岐神社 (吹田市山田東)",
+     "section": "1"
+    },
+    {
+     "item": "Q135039217",
+     "ja": "伊射奈岐神社 二座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270126",
+     "ja": "三島鴨神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181063",
+   "holders": [
+    {
+     "item": "Q11379327",
+     "ja": "伊居太神社",
+     "section": null
+    },
+    {
+     "item": "Q11379329",
+     "ja": "伊居太神社 (池田市)",
+     "section": "1"
+    },
+    {
+     "item": "Q135039219",
+     "ja": "伊居太神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270127",
+     "ja": "伊居太神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181064",
+   "holders": [
+    {
+     "item": "Q135270127",
+     "ja": "伊居太神社",
+     "section": null
+    },
+    {
+     "item": "Q48757073",
+     "ja": "多太神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181069",
+   "holders": [
+    {
+     "item": "Q11379248",
+     "ja": "伊和志津神社",
+     "section": null
+    },
+    {
+     "item": "Q135039221",
+     "ja": "伊和志豆神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135185797",
+     "ja": "伊和志豆神社",
+     "section": "1"
+    },
+    {
+     "item": "Q1466105",
+     "ja": "廣田神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181070",
+   "holders": [
+    {
+     "item": "Q11472009",
+     "ja": "岡太神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135039222",
+     "ja": "岡太神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135206858",
+     "ja": "岡太神社",
+     "section": null
+    },
+    {
+     "item": "Q135222033",
+     "ja": "岡田神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135270129",
+     "ja": "岡太神社",
+     "section": null
+    },
+    {
+     "item": "Q1466105",
+     "ja": "廣田神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181071",
+   "holders": [
+    {
+     "item": "Q11553387",
+     "ja": "河内国魂神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270129",
+     "ja": "岡太神社",
+     "section": null
+    },
+    {
+     "item": "Q1466105",
+     "ja": "廣田神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181072",
+   "holders": [
+    {
+     "item": "Q135039223",
+     "ja": "大国主西神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q3199052",
+     "ja": "越木岩神社",
+     "section": "0"
+    },
+    {
+     "item": "Q705297",
+     "ja": "西宮神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181129",
+   "holders": [
+    {
+     "item": "Q135039265",
+     "ja": "大国玉比売神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135186086",
+     "ja": "堅田神社",
+     "section": "1"
+    },
+    {
+     "item": "Q17194122",
+     "ja": "宇治山田神社",
+     "section": "2"
+    },
+    {
+     "item": "Q17228121",
+     "ja": "堅田神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181140",
+   "holders": [
+    {
+     "item": "Q135039267",
+     "ja": "神前神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069191",
+     "ja": "松下神社",
+     "section": "0"
+    },
+    {
+     "item": "Q17228423",
+     "ja": "神前神社",
+     "section": null
+    },
+    {
+     "item": "Q17228423",
+     "ja": "神前神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181142",
+   "holders": [
+    {
+     "item": "Q135039268",
+     "ja": "榎村神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069192",
+     "ja": "荻原神社",
+     "section": "1"
+    },
+    {
+     "item": "Q17228121",
+     "ja": "堅田神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181151",
+   "holders": [
+    {
+     "item": "Q135186136",
+     "ja": "河原神社",
+     "section": null
+    },
+    {
+     "item": "Q135186137",
+     "ja": "（合祀）大口神社（論社を合祀）",
+     "section": null
+    },
+    {
+     "item": "Q135186139",
+     "ja": "檜尻社（河原淵神社に比定）",
+     "section": null
+    },
+    {
+     "item": "Q17228197",
+     "ja": "河原神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181156",
+   "holders": [
+    {
+     "item": "Q135039270",
+     "ja": "雷電神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069194",
+     "ja": "雷電神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135069196",
+     "ja": "高向大社",
+     "section": "3"
+    },
+    {
+     "item": "Q135186161",
+     "ja": "神村神社（旧跡）",
+     "section": "4"
+    },
+    {
+     "item": "Q135186162",
+     "ja": "離宮院跡",
+     "section": "5"
+    },
+    {
+     "item": "Q135186163",
+     "ja": "雷社",
+     "section": "6"
+    },
+    {
+     "item": "Q17225818",
+     "ja": "湯田神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181172",
+   "holders": [
+    {
+     "item": "Q135039282",
+     "ja": "守山神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135186212",
+     "ja": "佐那神社（合祀）",
+     "section": "1"
+    },
+    {
+     "item": "Q135186213",
+     "ja": "守山神社 旧社地",
+     "section": "2"
+    },
+    {
+     "item": "Q135186214",
+     "ja": "畠田神社（合祀）",
+     "section": "3"
+    },
+    {
+     "item": "Q135186215",
+     "ja": "御山御前神社",
+     "section": "4"
+    },
+    {
+     "item": "Q17226795",
+     "ja": "佐那神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181182",
+   "holders": [
+    {
+     "item": "Q134928742",
+     "ja": "二十五柱神社",
+     "section": null
+    },
+    {
+     "item": "Q135039292",
+     "ja": "流田神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069198",
+     "ja": "清水神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135186305",
+     "ja": "二十五柱神社（合祀）",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181185",
+   "holders": [
+    {
+     "item": "Q135039295",
+     "ja": "石田神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069200",
+     "ja": "新垣神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135069202",
+     "ja": "畠田神社",
+     "section": null
+    },
+    {
+     "item": "Q135186316",
+     "ja": "石田神社 旧社地",
+     "section": "1"
+    },
+    {
+     "item": "Q135186317",
+     "ja": "畠田神社（合祀）",
+     "section": "2"
+    },
+    {
+     "item": "Q135186318",
+     "ja": "神垣神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181186",
+   "holders": [
+    {
+     "item": "Q134928742",
+     "ja": "二十五柱神社",
+     "section": null
+    },
+    {
+     "item": "Q135039296",
+     "ja": "火地神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069203",
+     "ja": "天香山神社",
+     "section": null
+    },
+    {
+     "item": "Q135186319",
+     "ja": "火地神社（多気郡岩内村）",
+     "section": "1"
+    },
+    {
+     "item": "Q135186320",
+     "ja": "竹神社（合祀）",
+     "section": "2"
+    },
+    {
+     "item": "Q135186321",
+     "ja": "多気郡保津村鎮座説",
+     "section": "3"
+    },
+    {
+     "item": "Q135186322",
+     "ja": "多気郡保津田村鎮座説",
+     "section": "4"
+    },
+    {
+     "item": "Q135186323",
+     "ja": "宇気比神社（乙部村）",
+     "section": "5"
+    },
+    {
+     "item": "Q135186324",
+     "ja": "二十五柱神社（合祀）",
+     "section": "6"
+    },
+    {
+     "item": "Q135186325",
+     "ja": "八柱神社（油夫）",
+     "section": "7"
+    },
+    {
+     "item": "Q135186326",
+     "ja": "佐那神社（合祀）",
+     "section": "8"
+    },
+    {
+     "item": "Q135186327",
+     "ja": "有爾岡村鎮座説",
+     "section": "9"
+    },
+    {
+     "item": "Q135186328",
+     "ja": "有爾村鎮座説",
+     "section": "10"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181187",
+   "holders": [
+    {
+     "item": "Q135039297",
+     "ja": "合祀：畠田神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135186331",
+     "ja": "合祀：畠田神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181212",
+   "holders": [
+    {
+     "item": "Q11532402",
+     "ja": "松阪神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135186429",
+     "ja": "松阪神社",
+     "section": null
+    },
+    {
+     "item": "Q135186430",
+     "ja": "神戸神舘神明神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181234",
+   "holders": [
+    {
+     "item": "Q135039341",
+     "ja": "比佐豆知神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069216",
+     "ja": "比佐豆知神社",
+     "section": null
+    },
+    {
+     "item": "Q135069219",
+     "ja": "比佐豆知神社",
+     "section": null
+    },
+    {
+     "item": "Q135186613",
+     "ja": "比佐豆知菅原神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135186614",
+     "ja": "比佐豆知神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181241",
+   "holders": [
+    {
+     "item": "Q135039348",
+     "ja": "事忌神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069225",
+     "ja": "事忌神社",
+     "section": null
+    },
+    {
+     "item": "Q135069226",
+     "ja": "事忌神社",
+     "section": null
+    },
+    {
+     "item": "Q135186622",
+     "ja": "事忌神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135186623",
+     "ja": "事忌神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181254",
+   "holders": [
+    {
+     "item": "Q11612066",
+     "ja": "能褒野神社",
+     "section": null
+    },
+    {
+     "item": "Q135039362",
+     "ja": "志婆加支神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069230",
+     "ja": "明神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135069232",
+     "ja": "亀山神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135186658",
+     "ja": "能褒野神社に合祀",
+     "section": "2"
+    },
+    {
+     "item": "Q135186659",
+     "ja": "片岡神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181259",
+   "holders": [
+    {
+     "item": "Q132658851",
+     "ja": "関神社",
+     "section": null
+    },
+    {
+     "item": "Q135039365",
+     "ja": "大井神社 二座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069234",
+     "ja": "大井神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135186667",
+     "ja": "大井神社古社地",
+     "section": "1"
+    },
+    {
+     "item": "Q135186668",
+     "ja": "（論社Aを合祀する）関神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135186675",
+     "ja": "江神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181260",
+   "holders": [
+    {
+     "item": "Q135039366",
+     "ja": "三宅神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069237",
+     "ja": "三宅神社",
+     "section": null
+    },
+    {
+     "item": "Q135186680",
+     "ja": "三宅神社",
+     "section": "1"
+    },
+    {
+     "item": "Q22120521",
+     "ja": "三宅神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181261",
+   "holders": [
+    {
+     "item": "Q135039367",
+     "ja": "江神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069238",
+     "ja": "江神社",
+     "section": null
+    },
+    {
+     "item": "Q135186675",
+     "ja": "江神社",
+     "section": null
+    },
+    {
+     "item": "Q135186687",
+     "ja": "三宅神社に合祀",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181266",
+   "holders": [
+    {
+     "item": "Q135186708",
+     "ja": "片山神社",
+     "section": null
+    },
+    {
+     "item": "Q135186709",
+     "ja": "関神社に合祀",
+     "section": null
+    },
+    {
+     "item": "Q43594929",
+     "ja": "片山神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181268",
+   "holders": [
+    {
+     "item": "Q135039374",
+     "ja": "高市神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135186710",
+     "ja": "神舘飯野高市神社",
+     "section": null
+    },
+    {
+     "item": "Q135186711",
+     "ja": "飯野神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181278",
+   "holders": [
+    {
+     "item": "Q135039382",
+     "ja": "飯野神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135186710",
+     "ja": "神舘飯野高市神社",
+     "section": null
+    },
+    {
+     "item": "Q135186711",
+     "ja": "飯野神社",
+     "section": null
+    },
+    {
+     "item": "Q135186724",
+     "ja": "飯野神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181287",
+   "holders": [
+    {
+     "item": "Q135039393",
+     "ja": "大鹿三宅神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069242",
+     "ja": "神館飯野高市神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135069244",
+     "ja": "大鹿三宅神社",
+     "section": "2"
+    },
+    {
+     "item": "Q22120521",
+     "ja": "三宅神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181356",
+   "holders": [
+    {
+     "item": "Q11556984",
+     "ja": "浅井神社 (一宮市)",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135039477",
+     "ja": "浅井神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181414",
+   "holders": [
+    {
+     "item": "Q11569577",
+     "ja": "片山八幡社",
+     "section": "1"
+    },
+    {
+     "item": "Q135039520",
+     "ja": "片山神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069344",
+     "ja": "天神社",
+     "section": null
+    },
+    {
+     "item": "Q135069345",
+     "ja": "白山社",
+     "section": "0"
+    },
+    {
+     "item": "Q135187224",
+     "ja": "天神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181430",
+   "holders": [
+    {
+     "item": "Q135039533",
+     "ja": "金神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069364",
+     "ja": "金神社旧跡",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181457",
+   "holders": [
+    {
+     "item": "Q11549548",
+     "ja": "氷上姉子神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135190176",
+     "ja": "参道(氷上姉子神社元宮)",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181485",
+   "holders": [
+    {
+     "item": "Q11586490",
+     "ja": "石巻神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135190221",
+     "ja": "石巻神社下社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181505",
+   "holders": [
+    {
+     "item": "Q135039595",
+     "ja": "高根神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135190250",
+     "ja": "高根神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135190252",
+     "ja": "六所神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181506",
+   "holders": [
+    {
+     "item": "Q135039596",
+     "ja": "六所神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135190252",
+     "ja": "六所神社",
+     "section": null
+    },
+    {
+     "item": "Q135190254",
+     "ja": "堀谷六所神社(寄宮(摂社))",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181507",
+   "holders": [
+    {
+     "item": "Q135039597",
+     "ja": "若倭神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069404",
+     "ja": "若倭神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135069405",
+     "ja": "若倭神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135190252",
+     "ja": "六所神社",
+     "section": null
+    },
+    {
+     "item": "Q135190257",
+     "ja": "春日神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181532",
+   "holders": [
+    {
+     "item": "Q135039617",
+     "ja": "山名神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069406",
+     "ja": "山名神社",
+     "section": null
+    },
+    {
+     "item": "Q135069407",
+     "ja": "山名神社",
+     "section": null
+    },
+    {
+     "item": "Q135192646",
+     "ja": "山名神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135192649",
+     "ja": "山名神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181570",
+   "holders": [
+    {
+     "item": "Q134930157",
+     "ja": "波布比咩命神社",
+     "section": "1"
+    },
+    {
+     "item": "Q134930633",
+     "ja": "波布比咩命神社 (下田市)",
+     "section": null
+    },
+    {
+     "item": "Q135039636",
+     "ja": "波布比売命神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181571",
+   "holders": [
+    {
+     "item": "Q134930558",
+     "ja": "后神社 (三宅村)",
+     "section": "1"
+    },
+    {
+     "item": "Q135039637",
+     "ja": "伊賀牟比売命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q30925511",
+     "ja": "浅間神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181573",
+   "holders": [
+    {
+     "item": "Q110915859",
+     "ja": "御笏神社",
+     "section": null
+    },
+    {
+     "item": "Q134893135",
+     "ja": "波夜多麻和気命神社",
+     "section": null
+    },
+    {
+     "item": "Q134930603",
+     "ja": "両神社 (下田市)",
+     "section": null
+    },
+    {
+     "item": "Q135039638",
+     "ja": "佐伎多麻比咩命神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181576",
+   "holders": [
+    {
+     "item": "Q134927474",
+     "ja": "八幡神社 (下田市吉佐美)",
+     "section": null
+    },
+    {
+     "item": "Q134930667",
+     "ja": "大三王子神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135039639",
+     "ja": "多祁美加々命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135192730",
+     "ja": "若宮？",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181579",
+   "holders": [
+    {
+     "item": "Q11390944",
+     "ja": "八幡宮来宮神社",
+     "section": null
+    },
+    {
+     "item": "Q11585503",
+     "ja": "石室神社",
+     "section": null
+    },
+    {
+     "item": "Q135039641",
+     "ja": "伊波例命神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181582",
+   "holders": [
+    {
+     "item": "Q134893133",
+     "ja": "走湯神社",
+     "section": null
+    },
+    {
+     "item": "Q135039642",
+     "ja": "波夜志命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135192774",
+     "ja": "波夜志命神社 旧社地",
+     "section": "2"
+    },
+    {
+     "item": "Q135288594",
+     "ja": "走湯神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181584",
+   "holders": [
+    {
+     "item": "Q110915859",
+     "ja": "御笏神社",
+     "section": null
+    },
+    {
+     "item": "Q134930291",
+     "ja": "片菅神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135039644",
+     "ja": "片菅命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069434",
+     "ja": "若宮神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135192779",
+     "ja": "勝組神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181586",
+   "holders": [
+    {
+     "item": "Q134930277",
+     "ja": "二宮神社 (三宅村)",
+     "section": null
+    },
+    {
+     "item": "Q134930516",
+     "ja": "嶽比良神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135039645",
+     "ja": "夜須命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135192783",
+     "ja": "二宮神社(坪田)",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181588",
+   "holders": [
+    {
+     "item": "Q110915859",
+     "ja": "御笏神社",
+     "section": null
+    },
+    {
+     "item": "Q134927474",
+     "ja": "八幡神社 (下田市吉佐美)",
+     "section": null
+    },
+    {
+     "item": "Q134930277",
+     "ja": "二宮神社 (三宅村)",
+     "section": null
+    },
+    {
+     "item": "Q135039648",
+     "ja": "加弥命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135192783",
+     "ja": "二宮神社(坪田)",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181591",
+   "holders": [
+    {
+     "item": "Q131925936",
+     "ja": "見高神社",
+     "section": "0"
+    },
+    {
+     "item": "Q134926963",
+     "ja": "姫宮神社 (南伊豆町)",
+     "section": null
+    },
+    {
+     "item": "Q134930534",
+     "ja": "三島神社 (南伊豆町青野)",
+     "section": "0"
+    },
+    {
+     "item": "Q135039651",
+     "ja": "多祁伊志豆伎命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069440",
+     "ja": "竹麻神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135270279",
+     "ja": "多祁伊志豆伎命神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135288649",
+     "ja": "",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181593",
+   "holders": [
+    {
+     "item": "Q11660082",
+     "ja": "雲見浅間神社",
+     "section": "1"
+    },
+    {
+     "item": "Q134930277",
+     "ja": "二宮神社 (三宅村)",
+     "section": null
+    },
+    {
+     "item": "Q135039653",
+     "ja": "伊波乃比咩命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135192783",
+     "ja": "二宮神社(坪田)",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181596",
+   "holders": [
+    {
+     "item": "Q11390944",
+     "ja": "八幡宮来宮神社",
+     "section": null
+    },
+    {
+     "item": "Q134930206",
+     "ja": "八幡神社 (南伊豆町子浦)",
+     "section": "3"
+    },
+    {
+     "item": "Q135039655",
+     "ja": "伊波久良和気命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135192837",
+     "ja": "熊野神社(南伊豆町岩殿)",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181602",
+   "holders": [
+    {
+     "item": "Q110915859",
+     "ja": "御笏神社",
+     "section": null
+    },
+    {
+     "item": "Q134930551",
+     "ja": "南子神社",
+     "section": null
+    },
+    {
+     "item": "Q135039658",
+     "ja": "南子神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069443",
+     "ja": "南子神社",
+     "section": null
+    },
+    {
+     "item": "Q135069448",
+     "ja": "南子宮",
+     "section": "4"
+    },
+    {
+     "item": "Q135192866",
+     "ja": "南子神社(神子島)",
+     "section": "1"
+    },
+    {
+     "item": "Q135192867",
+     "ja": "南子神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181604",
+   "holders": [
+    {
+     "item": "Q134927903",
+     "ja": "右内神社",
+     "section": null
+    },
+    {
+     "item": "Q135039660",
+     "ja": "伊波弖別命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069451",
+     "ja": "諏訪神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181605",
+   "holders": [
+    {
+     "item": "Q134928894",
+     "ja": "王子神社 (南伊豆町)",
+     "section": "1"
+    },
+    {
+     "item": "Q134930603",
+     "ja": "両神社 (下田市)",
+     "section": null
+    },
+    {
+     "item": "Q134930713",
+     "ja": "三島神社 (南伊豆町入間)",
+     "section": "0"
+    },
+    {
+     "item": "Q135039661",
+     "ja": "穂都佐和気命神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181606",
+   "holders": [
+    {
+     "item": "Q134926910",
+     "ja": "三島神社 (南伊豆町妻良)",
+     "section": null
+    },
+    {
+     "item": "Q134930633",
+     "ja": "波布比咩命神社 (下田市)",
+     "section": null
+    },
+    {
+     "item": "Q135039662",
+     "ja": "大津往命神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181610",
+   "holders": [
+    {
+     "item": "Q134925870",
+     "ja": "月間神社",
+     "section": "1"
+    },
+    {
+     "item": "Q134927474",
+     "ja": "八幡神社 (下田市吉佐美)",
+     "section": null
+    },
+    {
+     "item": "Q134930669",
+     "ja": "若宮神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135039666",
+     "ja": "竹麻神社 三座",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181613",
+   "holders": [
+    {
+     "item": "Q134926924",
+     "ja": "左内神社",
+     "section": null
+    },
+    {
+     "item": "Q134930737",
+     "ja": "満宮神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135039668",
+     "ja": "文梨神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069458",
+     "ja": "神明神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181621",
+   "holders": [
+    {
+     "item": "Q111776816",
+     "ja": "広瀬神社",
+     "section": null
+    },
+    {
+     "item": "Q134925373",
+     "ja": "広瀬神社 (三島市)",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135039671",
+     "ja": "広瀬神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181628",
+   "holders": [
+    {
+     "item": "Q135039674",
+     "ja": "火牟須比命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069463",
+     "ja": "本宮神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135192964",
+     "ja": "摂社 雷電社",
+     "section": "2"
+    },
+    {
+     "item": "Q30925511",
+     "ja": "浅間神社",
+     "section": null
+    },
+    {
+     "item": "Q611460",
+     "ja": "伊豆山神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181633",
+   "holders": [
+    {
+     "item": "Q134926924",
+     "ja": "左内神社",
+     "section": null
+    },
+    {
+     "item": "Q134927903",
+     "ja": "右内神社",
+     "section": null
+    },
+    {
+     "item": "Q134928007",
+     "ja": "天地神社",
+     "section": null
+    },
+    {
+     "item": "Q134930691",
+     "ja": "気多神社 (沼津市)",
+     "section": null
+    },
+    {
+     "item": "Q135039676",
+     "ja": "阿米都瀬気多知命神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181641",
+   "holders": [
+    {
+     "item": "Q119929618",
+     "ja": "伊那下神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135193001",
+     "ja": "舟寄神社",
+     "section": null
+    },
+    {
+     "item": "Q135288774",
+     "ja": "伊那下神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181660",
+   "holders": [
+    {
+     "item": "Q11647310",
+     "ja": "金櫻神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135039689",
+     "ja": "金桜神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069491",
+     "ja": "金桜神社",
+     "section": null
+    },
+    {
+     "item": "Q135193246",
+     "ja": "金櫻神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135193248",
+     "ja": "金桜神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135193249",
+     "ja": "金桜神社",
+     "section": "4"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181670",
+   "holders": [
+    {
+     "item": "Q135039704",
+     "ja": "佐久神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069498",
+     "ja": "佐久神社",
+     "section": null
+    },
+    {
+     "item": "Q135069499",
+     "ja": "佐久神社",
+     "section": null
+    },
+    {
+     "item": "Q135270286",
+     "ja": "佐久神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181675",
+   "holders": [
+    {
+     "item": "Q135039710",
+     "ja": "桙衝神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069502",
+     "ja": "杵衝神社",
+     "section": null
+    },
+    {
+     "item": "Q135069503",
+     "ja": "杵衝神社",
+     "section": null
+    },
+    {
+     "item": "Q135270289",
+     "ja": "桙衝神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181679",
+   "holders": [
+    {
+     "item": "Q11672973",
+     "ja": "高部屋神社",
+     "section": null
+    },
+    {
+     "item": "Q135039720",
+     "ja": "高部屋神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069505",
+     "ja": "高森神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181680",
+   "holders": [
+    {
+     "item": "Q11547364",
+     "ja": "比々多神社",
+     "section": null
+    },
+    {
+     "item": "Q11547364",
+     "ja": "比々多神社",
+     "section": null
+    },
+    {
+     "item": "Q11547458",
+     "ja": "比比多神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135039721",
+     "ja": "比比多神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181695",
+   "holders": [
+    {
+     "item": "Q11442032",
+     "ja": "大麻止乃豆乃天神社",
+     "section": "1"
+    },
+    {
+     "item": "Q11442850",
+     "ja": "天満社",
+     "section": null
+    },
+    {
+     "item": "Q11442850",
+     "ja": "天満社",
+     "section": null
+    },
+    {
+     "item": "Q135039728",
+     "ja": "大麻止乃豆乃天神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135193300",
+     "ja": "天神社(府中市宮町か)",
+     "section": "5"
+    },
+    {
+     "item": "Q611678",
+     "ja": "大國魂神社",
+     "section": "4"
+    },
+    {
+     "item": "Q6587276",
+     "ja": "武蔵御嶽神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181703",
+   "holders": [
+    {
+     "item": "Q11549599",
+     "ja": "氷川女体神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135039733",
+     "ja": "多気比売神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q65734340",
+     "ja": "多気比売神社",
+     "section": null
+    },
+    {
+     "item": "Q65734340",
+     "ja": "多気比売神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181707",
+   "holders": [
+    {
+     "item": "Q11404276",
+     "ja": "北野天神社",
+     "section": null
+    },
+    {
+     "item": "Q135039738",
+     "ja": "出雲伊波比神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069537",
+     "ja": "氷川神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135193332",
+     "ja": "物部天神社・國渭地祇神社・天満天神(北野天神社)か？",
+     "section": "3"
+    },
+    {
+     "item": "Q30933323",
+     "ja": "出雲伊波比神社",
+     "section": "2"
+    },
+    {
+     "item": "Q70280025",
+     "ja": "出雲祝神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181714",
+   "holders": [
+    {
+     "item": "Q135039740",
+     "ja": "宮目神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069539",
+     "ja": "宮目神社",
+     "section": null
+    },
+    {
+     "item": "Q135069544",
+     "ja": "神明神社",
+     "section": null
+    },
+    {
+     "item": "Q135270292",
+     "ja": "宮目神社",
+     "section": null
+    },
+    {
+     "item": "Q67752315",
+     "ja": "姫宮神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181722",
+   "holders": [
+    {
+     "item": "Q135193369",
+     "ja": "長幡部神社 旧社地",
+     "section": null
+    },
+    {
+     "item": "Q135193370",
+     "ja": "長幡部神社 旧社地",
+     "section": null
+    },
+    {
+     "item": "Q72727981",
+     "ja": "長幡部神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181727",
+   "holders": [
+    {
+     "item": "Q11540486",
+     "ja": "椋神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135039749",
+     "ja": "椋神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069571",
+     "ja": "椋神社",
+     "section": null
+    },
+    {
+     "item": "Q135193390",
+     "ja": "中蒔田椋神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135193391",
+     "ja": "上蒔田椋神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135193392",
+     "ja": "野巻椋神社",
+     "section": "4"
+    },
+    {
+     "item": "Q135193393",
+     "ja": "皆野椋神社",
+     "section": "5"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181730",
+   "holders": [
+    {
+     "item": "Q135193398",
+     "ja": "(現社地)伊古乃速御玉比売神社",
+     "section": null
+    },
+    {
+     "item": "Q135193399",
+     "ja": "伊古乃速御玉比売神社 旧社地",
+     "section": null
+    },
+    {
+     "item": "Q67200466",
+     "ja": "伊古乃速御玉比売神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181751",
+   "holders": [
+    {
+     "item": "Q11617027",
+     "ja": "茂侶神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135039758",
+     "ja": "茂侶神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135193423",
+     "ja": "三輪野江神社",
+     "section": "1"
+    },
+    {
+     "item": "Q97311695",
+     "ja": "茂侶神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181767",
+   "holders": [
+    {
+     "item": "Q11432217",
+     "ja": "大井神社",
+     "section": null
+    },
+    {
+     "item": "Q135039764",
+     "ja": "大井神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q66564749",
+     "ja": "大井神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181775",
+   "holders": [
+    {
+     "item": "Q135039768",
+     "ja": "佐志能神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069601",
+     "ja": "佐志能神社",
+     "section": null
+    },
+    {
+     "item": "Q135193460",
+     "ja": "佐志能神社(石岡市柿岡)",
+     "section": "2"
+    },
+    {
+     "item": "Q135193461",
+     "ja": "佐志能神社(石岡市)",
+     "section": "3"
+    },
+    {
+     "item": "Q28684144",
+     "ja": "佐志能神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181801",
+   "holders": [
+    {
+     "item": "Q11554359",
+     "ja": "油日神社",
+     "section": null
+    },
+    {
+     "item": "Q135039798",
+     "ja": "川枯神社 二座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270298",
+     "ja": "川枯神社 二座",
+     "section": null
+    },
+    {
+     "item": "Q72183108",
+     "ja": "八坂神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181815",
+   "holders": [
+    {
+     "item": "Q107020402",
+     "ja": "苗村神社西本殿",
+     "section": "2"
+    },
+    {
+     "item": "Q11616123",
+     "ja": "苗村神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135193523",
+     "ja": "長寸神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135193605",
+     "ja": "長寸神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181826",
+   "holders": [
+    {
+     "item": "Q11505112",
+     "ja": "日向大神宮",
+     "section": null
+    },
+    {
+     "item": "Q135405803",
+     "ja": "日向神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181837",
+   "holders": [
+    {
+     "item": "Q135039824",
+     "ja": "小江神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069635",
+     "ja": "小江神社",
+     "section": null
+    },
+    {
+     "item": "Q135069641",
+     "ja": "小江神社",
+     "section": null
+    },
+    {
+     "item": "Q135193639",
+     "ja": "小江神社（尾上）",
+     "section": "1"
+    },
+    {
+     "item": "Q135193640",
+     "ja": "小江神社（東尾上）",
+     "section": "2"
+    },
+    {
+     "item": "Q135193641",
+     "ja": "小江神社（海老江）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181848",
+   "holders": [
+    {
+     "item": "Q135098105",
+     "ja": "乃弥神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135289475",
+     "ja": "乃弥神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181957",
+   "holders": [
+    {
+     "item": "Q11364249",
+     "ja": "中山神社",
+     "section": null
+    },
+    {
+     "item": "Q11631934",
+     "ja": "諏訪神社 (美濃加茂市)",
+     "section": null
+    },
+    {
+     "item": "Q135039907",
+     "ja": "中山神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181977",
+   "holders": [
+    {
+     "item": "Q135039917",
+     "ja": "布制神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069768",
+     "ja": "布制神社",
+     "section": null
+    },
+    {
+     "item": "Q135194136",
+     "ja": "布制神社（長野市篠ノ井石川）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194138",
+     "ja": "布制神社（長野市篠ノ井山布施）",
+     "section": "3"
+    },
+    {
+     "item": "Q85880047",
+     "ja": "布制神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181981",
+   "holders": [
+    {
+     "item": "Q11653682",
+     "ja": "長谷寺",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194158",
+     "ja": "長谷神社上社",
+     "section": null
+    },
+    {
+     "item": "Q135194159",
+     "ja": "長谷神社下社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181982",
+   "holders": [
+    {
+     "item": "Q135039920",
+     "ja": "日置神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069771",
+     "ja": "日置神社",
+     "section": null
+    },
+    {
+     "item": "Q135069775",
+     "ja": "日置神社",
+     "section": null
+    },
+    {
+     "item": "Q135194168",
+     "ja": "日置神社（東筑摩郡）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194175",
+     "ja": "日置神社（長野市）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181983",
+   "holders": [
+    {
+     "item": "Q135039921",
+     "ja": "清水神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069778",
+     "ja": "清水神社",
+     "section": null
+    },
+    {
+     "item": "Q135069788",
+     "ja": "清水神社",
+     "section": null
+    },
+    {
+     "item": "Q135194181",
+     "ja": "清水神社（長野市真島町）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194182",
+     "ja": "清水神社（長野市信更町田野口）",
+     "section": "2"
+    },
+    {
+     "item": "Q135194183",
+     "ja": "清水神社（長野市信更町三水氷山）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181991",
+   "holders": [
+    {
+     "item": "Q135039928",
+     "ja": "小川神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069803",
+     "ja": "小川神社",
+     "section": null
+    },
+    {
+     "item": "Q135069806",
+     "ja": "小川神社",
+     "section": null
+    },
+    {
+     "item": "Q135069809",
+     "ja": "小川八幡宮",
+     "section": "3"
+    },
+    {
+     "item": "Q135194225",
+     "ja": "小川神社（小川村大字小根山）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194226",
+     "ja": "小川神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181992",
+   "holders": [
+    {
+     "item": "Q11450096",
+     "ja": "守田迺神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135039929",
+     "ja": "守田神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069811",
+     "ja": "守田神社",
+     "section": null
+    },
+    {
+     "item": "Q135069815",
+     "ja": "守田神社",
+     "section": null
+    },
+    {
+     "item": "Q135194228",
+     "ja": "守田神社（長野市七二会）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194230",
+     "ja": "守田神社（長野市大字穂保）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181993",
+   "holders": [
+    {
+     "item": "Q135039930",
+     "ja": "粟野神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069817",
+     "ja": "粟野神社",
+     "section": null
+    },
+    {
+     "item": "Q135069821",
+     "ja": "粟野神社",
+     "section": null
+    },
+    {
+     "item": "Q135194232",
+     "ja": "粟野神社（長野市豊野）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194233",
+     "ja": "粟野神社（長野市上野）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181995",
+   "holders": [
+    {
+     "item": "Q11581101",
+     "ja": "皇足穂吉田大御神宮",
+     "section": "0"
+    },
+    {
+     "item": "Q135039931",
+     "ja": "白玉足穂命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069827",
+     "ja": "皇足穂命神社諏訪社合殿",
+     "section": "3"
+    },
+    {
+     "item": "Q135194234",
+     "ja": "白玉足穂命神社 奥宮",
+     "section": null
+    },
+    {
+     "item": "Q135194236",
+     "ja": "皇足穂命神社諏訪社合殿",
+     "section": "2"
+    },
+    {
+     "item": "Q17238950",
+     "ja": "飯縄神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182018",
+   "holders": [
+    {
+     "item": "Q135039963",
+     "ja": "伊加保神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270416",
+     "ja": "伊加保神社",
+     "section": null
+    },
+    {
+     "item": "Q17220841",
+     "ja": "伊香保神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q21655265",
+     "ja": "三宮神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182032",
+   "holders": [
+    {
+     "item": "Q11618763",
+     "ja": "荒橿神社",
+     "section": null
+    },
+    {
+     "item": "Q135039974",
+     "ja": "荒樫神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182038",
+   "holders": [
+    {
+     "item": "Q112152942",
+     "ja": "八槻都々古別神社",
+     "section": null
+    },
+    {
+     "item": "Q114593121",
+     "ja": "馬場都々古別神社",
+     "section": null
+    },
+    {
+     "item": "Q11643869",
+     "ja": "都都古別神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182062",
+   "holders": [
+    {
+     "item": "Q11677110",
+     "ja": "鹿島天足和気神社",
+     "section": null
+    },
+    {
+     "item": "Q135039994",
+     "ja": "鹿島伊都乃比気神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069866",
+     "ja": "月山神社に",
+     "section": "0"
+    },
+    {
+     "item": "Q135194327",
+     "ja": "鹿島社（宮城県亘理郡亘理町吉田字作）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182063",
+   "holders": [
+    {
+     "item": "Q11677110",
+     "ja": "鹿島天足和気神社",
+     "section": null
+    },
+    {
+     "item": "Q11677158",
+     "ja": "鹿島緒名太神社",
+     "section": null
+    },
+    {
+     "item": "Q135039995",
+     "ja": "鹿島緒名太神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182080",
+   "holders": [
+    {
+     "item": "Q11660144",
+     "ja": "零羊崎神社 (石巻市湊)",
+     "section": null
+    },
+    {
+     "item": "Q11660145",
+     "ja": "零羊崎神社",
+     "section": null
+    },
+    {
+     "item": "Q135040001",
+     "ja": "零羊埼神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182089",
+   "holders": [
+    {
+     "item": "Q11677857",
+     "ja": "黄金山神社",
+     "section": null
+    },
+    {
+     "item": "Q135040009",
+     "ja": "計仙麻神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194372",
+     "ja": "五十鈴神社境内龍神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135194373",
+     "ja": "朝日山計仙麻神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135194375",
+     "ja": "羽黒神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135194377",
+     "ja": "計仙麻大嶋神社",
+     "section": "5"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182105",
+   "holders": [
+    {
+     "item": "Q135040023",
+     "ja": "志波姫神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069878",
+     "ja": "志波姫神社",
+     "section": null
+    },
+    {
+     "item": "Q135069881",
+     "ja": "志波姫神社",
+     "section": null
+    },
+    {
+     "item": "Q135194410",
+     "ja": "志波姫神社（大崎市）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194411",
+     "ja": "志波姫神社（栗原市高清水五輪）",
+     "section": "2"
+    },
+    {
+     "item": "Q135194412",
+     "ja": "志波姫神社（栗原市志波姫）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182122",
+   "holders": [
+    {
+     "item": "Q11677855",
+     "ja": "黄金山神社",
+     "section": null
+    },
+    {
+     "item": "Q11677857",
+     "ja": "黄金山神社",
+     "section": null
+    },
+    {
+     "item": "Q135040041",
+     "ja": "黄金山神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182141",
+   "holders": [
+    {
+     "item": "Q135040054",
+     "ja": "遠賀神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069891",
+     "ja": "遠賀神社",
+     "section": null
+    },
+    {
+     "item": "Q135069893",
+     "ja": "遠賀神社",
+     "section": null
+    },
+    {
+     "item": "Q135194466",
+     "ja": "遠賀神社（鶴岡市井岡）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194467",
+     "ja": "遠賀神社（鶴岡市遠賀原）",
+     "section": "2"
+    },
+    {
+     "item": "Q135194469",
+     "ja": "遠賀神社（鶴岡市外内島）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182210",
+   "holders": [
+    {
+     "item": "Q11434131",
+     "ja": "大塩八幡宮",
+     "section": null
+    },
+    {
+     "item": "Q135040130",
+     "ja": "高岡神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069898",
+     "ja": "高岡神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135069899",
+     "ja": "白山神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135194516",
+     "ja": "大塩八幡宮境内摂社高岡神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182214",
+   "holders": [
+    {
+     "item": "Q135040137",
+     "ja": "織田神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069901",
+     "ja": "織田神社",
+     "section": null
+    },
+    {
+     "item": "Q135194517",
+     "ja": "剱神社境内末社織田神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135194519",
+     "ja": "野坂神社合祀織田神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182216",
+   "holders": [
+    {
+     "item": "Q11434131",
+     "ja": "大塩八幡宮",
+     "section": null
+    },
+    {
+     "item": "Q11481363",
+     "ja": "常宮神社",
+     "section": null
+    },
+    {
+     "item": "Q135040139",
+     "ja": "天八百万比咩神社 （天八百萬比咩神社）",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194521",
+     "ja": "大塩八幡宮境内摂社天八百萬姫神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182220",
+   "holders": [
+    {
+     "item": "Q11434131",
+     "ja": "大塩八幡宮",
+     "section": null
+    },
+    {
+     "item": "Q11481363",
+     "ja": "常宮神社",
+     "section": null
+    },
+    {
+     "item": "Q135040140",
+     "ja": "天国津彦神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194522",
+     "ja": "常宮神社境内末社天國津彦神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135194523",
+     "ja": "大塩八幡宮境内末社天國津彦神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182221",
+   "holders": [
+    {
+     "item": "Q11434131",
+     "ja": "大塩八幡宮",
+     "section": null
+    },
+    {
+     "item": "Q11481363",
+     "ja": "常宮神社",
+     "section": null
+    },
+    {
+     "item": "Q135040141",
+     "ja": "天国津比咩神社 （天國津比咩神社）",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194524",
+     "ja": "常宮神社境内末社天國津姫神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135194525",
+     "ja": "大塩八幡宮境内末社天國津比咩神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182292",
+   "holders": [
+    {
+     "item": "Q135040248",
+     "ja": "保曽呂伎神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069920",
+     "ja": "春日神社",
+     "section": null
+    },
+    {
+     "item": "Q135069921",
+     "ja": "春日神社",
+     "section": null
+    },
+    {
+     "item": "Q135270265",
+     "ja": "保曽呂伎神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182327",
+   "holders": [
+    {
+     "item": "Q135040283",
+     "ja": "楢本神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069922",
+     "ja": "楢本神社",
+     "section": null
+    },
+    {
+     "item": "Q135069924",
+     "ja": "楢本神社",
+     "section": null
+    },
+    {
+     "item": "Q135194803",
+     "ja": "楢本神社（白山市宮丸町）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194804",
+     "ja": "楢本神社（白山市下柏野町）",
+     "section": "2"
+    },
+    {
+     "item": "Q135194805",
+     "ja": "楢本神社（白山市上柏野町）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182342",
+   "holders": [
+    {
+     "item": "Q135040299",
+     "ja": "笠野神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069931",
+     "ja": "笠野神社",
+     "section": null
+    },
+    {
+     "item": "Q135069932",
+     "ja": "笠野神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182348",
+   "holders": [
+    {
+     "item": "Q135040303",
+     "ja": "瀬戸比古神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069933",
+     "ja": "瀬戸比古神社",
+     "section": null
+    },
+    {
+     "item": "Q135069935",
+     "ja": "瀬戸比古神社",
+     "section": null
+    },
+    {
+     "item": "Q135194856",
+     "ja": "瀬戸比古神社（鹿島郡）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194857",
+     "ja": "瀬戸比古神社（羽咋郡）",
+     "section": "2"
+    },
+    {
+     "item": "Q135194858",
+     "ja": "瀬戸菅原神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182350",
+   "holders": [
+    {
+     "item": "Q135040305",
+     "ja": "椎葉円比咩神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069936",
+     "ja": "椎葉円比咩神社",
+     "section": null
+    },
+    {
+     "item": "Q135069938",
+     "ja": "椎葉円比咩神社",
+     "section": null
+    },
+    {
+     "item": "Q135194861",
+     "ja": "椎葉圓比咩神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135194862",
+     "ja": "椎葉円比咩神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182352",
+   "holders": [
+    {
+     "item": "Q135040307",
+     "ja": "諸岡比古神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069939",
+     "ja": "諸岡比古神社",
+     "section": null
+    },
+    {
+     "item": "Q135069945",
+     "ja": "諸岡比古神社",
+     "section": null
+    },
+    {
+     "item": "Q135194863",
+     "ja": "諸岡比古神社（志賀町二所宮）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194864",
+     "ja": "若宮神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135194865",
+     "ja": "諸岡比古神社（志賀町東小室）",
+     "section": "3"
+    },
+    {
+     "item": "Q135194866",
+     "ja": "諸岡比古神社（輪島市）",
+     "section": "4"
+    },
+    {
+     "item": "Q135194867",
+     "ja": "櫛比神社",
+     "section": "5"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182354",
+   "holders": [
+    {
+     "item": "Q135040309",
+     "ja": "久麻加夫都阿良加志比古神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194869",
+     "ja": "久麻加夫都阿良加志比古神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135194870",
+     "ja": "大穴持美代神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182356",
+   "holders": [
+    {
+     "item": "Q135040311",
+     "ja": "大穴持像石神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194870",
+     "ja": "大穴持美代神社",
+     "section": null
+    },
+    {
+     "item": "Q135194877",
+     "ja": "（有力）大名持像石神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135194879",
+     "ja": "八千鉾神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182370",
+   "holders": [
+    {
+     "item": "Q135040324",
+     "ja": "久志伊奈太伎比咩神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069955",
+     "ja": "久志伊奈太伎比咩神社",
+     "section": null
+    },
+    {
+     "item": "Q135069962",
+     "ja": "久志伊奈太伎比咩神社",
+     "section": null
+    },
+    {
+     "item": "Q135194900",
+     "ja": "久志伊奈太伎比咩神社（国分町）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194901",
+     "ja": "久志伊奈太伎比咩神社（飯川町）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182372",
+   "holders": [
+    {
+     "item": "Q135040326",
+     "ja": "御門主比古神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069964",
+     "ja": "御門主比古神社",
+     "section": null
+    },
+    {
+     "item": "Q135069967",
+     "ja": "御門主比古神社",
+     "section": null
+    },
+    {
+     "item": "Q135194902",
+     "ja": "御門主比古神社（羽咋市）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194903",
+     "ja": "御門主比古神社（七尾市）",
+     "section": "2"
+    },
+    {
+     "item": "Q135194904",
+     "ja": "御門主比古神社（鳳珠郡）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182383",
+   "holders": [
+    {
+     "item": "Q11664846",
+     "ja": "須須神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194934",
+     "ja": "須須神社高座宮",
+     "section": null
+    },
+    {
+     "item": "Q135194935",
+     "ja": "須須神社金分宮",
+     "section": null
+    },
+    {
+     "item": "Q135194936",
+     "ja": "須須神社 奥宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182388",
+   "holders": [
+    {
+     "item": "Q135040352",
+     "ja": "林神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069969",
+     "ja": "林神社",
+     "section": null
+    },
+    {
+     "item": "Q135194942",
+     "ja": "林神社（砺波市林）",
+     "section": "1"
+    },
+    {
+     "item": "Q22120029",
+     "ja": "林神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182392",
+   "holders": [
+    {
+     "item": "Q115187945",
+     "ja": "浅井神社",
+     "section": null
+    },
+    {
+     "item": "Q134925834",
+     "ja": "浅井神社 (高岡市福岡町赤丸)",
+     "section": null
+    },
+    {
+     "item": "Q135040356",
+     "ja": "浅井神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194957",
+     "ja": "淺井神社（高岡市福岡町）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194958",
+     "ja": "淺井神社（高岡市石堤）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182394",
+   "holders": [
+    {
+     "item": "Q135040358",
+     "ja": "道神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069970",
+     "ja": "道神社",
+     "section": null
+    },
+    {
+     "item": "Q135069971",
+     "ja": "道神社",
+     "section": null
+    },
+    {
+     "item": "Q135194963",
+     "ja": "道神社（射水市）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194964",
+     "ja": "道神社（高岡市）",
+     "section": "2"
+    },
+    {
+     "item": "Q135194965",
+     "ja": "道神社（氷見市）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182399",
+   "holders": [
+    {
+     "item": "Q135040370",
+     "ja": "速川神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069973",
+     "ja": "速川神社",
+     "section": null
+    },
+    {
+     "item": "Q135069974",
+     "ja": "速川神社",
+     "section": null
+    },
+    {
+     "item": "Q135069975",
+     "ja": "早川八幡社",
+     "section": "3"
+    },
+    {
+     "item": "Q135194969",
+     "ja": "速川神社（氷見市）",
+     "section": "1"
+    },
+    {
+     "item": "Q135194970",
+     "ja": "速川神社（高岡市）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182409",
+   "holders": [
+    {
+     "item": "Q135040382",
+     "ja": "熊野神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069976",
+     "ja": "熊野神社",
+     "section": null
+    },
+    {
+     "item": "Q135069978",
+     "ja": "熊野神社",
+     "section": null
+    },
+    {
+     "item": "Q135194998",
+     "ja": "熊野神社（富山市宮保）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195000",
+     "ja": "熊野神社（婦中町友坂）",
+     "section": "2"
+    },
+    {
+     "item": "Q135195001",
+     "ja": "熊野神社（婦中町中名）",
+     "section": "3"
+    },
+    {
+     "item": "Q135195002",
+     "ja": "熊野神社（婦中町熊野道）",
+     "section": "4"
+    },
+    {
+     "item": "Q135195006",
+     "ja": "高岡関野神社",
+     "section": "5"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182416",
+   "holders": [
+    {
+     "item": "Q135040394",
+     "ja": "日置神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069979",
+     "ja": "日置神社",
+     "section": null
+    },
+    {
+     "item": "Q135069980",
+     "ja": "日置神社",
+     "section": null
+    },
+    {
+     "item": "Q135195018",
+     "ja": "日置神社（立山町日中）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195019",
+     "ja": "日置神社（立山町利田）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182419",
+   "holders": [
+    {
+     "item": "Q11611996",
+     "ja": "能生白山神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135040414",
+     "ja": "奴奈川神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069982",
+     "ja": "奴奈川神社",
+     "section": null
+    },
+    {
+     "item": "Q135069983",
+     "ja": "奴奈川神社",
+     "section": null
+    },
+    {
+     "item": "Q135195027",
+     "ja": "天津神社境内奴奈川神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135195029",
+     "ja": "奴奈川神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182420",
+   "holders": [
+    {
+     "item": "Q135040416",
+     "ja": "大神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069984",
+     "ja": "大神社",
+     "section": null
+    },
+    {
+     "item": "Q135069985",
+     "ja": "大野神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135069986",
+     "ja": "藤崎神社",
+     "section": "4"
+    },
+    {
+     "item": "Q135069989",
+     "ja": "関山神社",
+     "section": "6"
+    },
+    {
+     "item": "Q135195031",
+     "ja": "大神社（糸魚川市）",
+     "section": "2"
+    },
+    {
+     "item": "Q135195034",
+     "ja": "大神社",
+     "section": "5"
+    },
+    {
+     "item": "Q172253",
+     "ja": "天津神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182432",
+   "holders": [
+    {
+     "item": "Q135040438",
+     "ja": "三宅神社 二座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069990",
+     "ja": "三宅神社",
+     "section": null
+    },
+    {
+     "item": "Q135069992",
+     "ja": "三宅神社",
+     "section": null
+    },
+    {
+     "item": "Q135195056",
+     "ja": "宮家神社（妙見町）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195057",
+     "ja": "宮家神社（中潟町）",
+     "section": "2"
+    },
+    {
+     "item": "Q135195058",
+     "ja": "宮家神社（六日市町）",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182433",
+   "holders": [
+    {
+     "item": "Q135040440",
+     "ja": "桐原石部神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069994",
+     "ja": "桐原石部神社",
+     "section": null
+    },
+    {
+     "item": "Q135069995",
+     "ja": "桐原石部神社",
+     "section": null
+    },
+    {
+     "item": "Q135195059",
+     "ja": "桐原石部神社（上桐）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195060",
+     "ja": "桐原石部神社（寺泊）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182441",
+   "holders": [
+    {
+     "item": "Q124496790",
+     "ja": "三島神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135195083",
+     "ja": "（現社地）三島神社",
+     "section": null
+    },
+    {
+     "item": "Q135195085",
+     "ja": "三島神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182442",
+   "holders": [
+    {
+     "item": "Q123118312",
+     "ja": "石井神社 (出雲崎町)",
+     "section": "2"
+    },
+    {
+     "item": "Q135040453",
+     "ja": "石井神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070001",
+     "ja": "石井神社",
+     "section": null
+    },
+    {
+     "item": "Q135195086",
+     "ja": "石井神社（柏崎市西山町）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195088",
+     "ja": "石井神社（長岡市）",
+     "section": "3"
+    },
+    {
+     "item": "Q135195089",
+     "ja": "石井神社（柏崎市大字北条）",
+     "section": "4"
+    },
+    {
+     "item": "Q135195090",
+     "ja": "石井神社（柏崎市西本町）",
+     "section": "5"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182447",
+   "holders": [
+    {
+     "item": "Q11478109",
+     "ja": "川合神社 (長岡市)",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135195104",
+     "ja": "川合神社",
+     "section": null
+    },
+    {
+     "item": "Q135195105",
+     "ja": "明口神社",
+     "section": null
+    },
+    {
+     "item": "Q135195106",
+     "ja": "諏訪神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182489",
+   "holders": [
+    {
+     "item": "Q11493857",
+     "ja": "愛宕神社",
+     "section": null
+    },
+    {
+     "item": "Q135040494",
+     "ja": "阿多古神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q713021",
+     "ja": "愛宕神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182492",
+   "holders": [
+    {
+     "item": "Q11529679",
+     "ja": "松尾神社",
+     "section": null
+    },
+    {
+     "item": "Q11631810",
+     "ja": "請田神社",
+     "section": null
+    },
+    {
+     "item": "Q135040497",
+     "ja": "松尾神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182557",
+   "holders": [
+    {
+     "item": "Q135040554",
+     "ja": "阿良須神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070020",
+     "ja": "阿良須神社",
+     "section": null
+    },
+    {
+     "item": "Q135070021",
+     "ja": "阿良須神社",
+     "section": null
+    },
+    {
+     "item": "Q135195230",
+     "ja": "阿良須神社（福知山市）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195231",
+     "ja": "阿良須神社（舞鶴市）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182596",
+   "holders": [
+    {
+     "item": "Q135040587",
+     "ja": "大野神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070035",
+     "ja": "大野神社",
+     "section": null
+    },
+    {
+     "item": "Q135070036",
+     "ja": "大野神社",
+     "section": null
+    },
+    {
+     "item": "Q135195295",
+     "ja": "大野神社（丹後町）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195296",
+     "ja": "大野神社（大宮町）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182605",
+   "holders": [
+    {
+     "item": "Q135040596",
+     "ja": "意布伎神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070042",
+     "ja": "伊吹神社",
+     "section": null
+    },
+    {
+     "item": "Q135070043",
+     "ja": "意布伎神社",
+     "section": null
+    },
+    {
+     "item": "Q135195307",
+     "ja": "意布伎神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135195308",
+     "ja": "伊吹神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182630",
+   "holders": [
+    {
+     "item": "Q135040617",
+     "ja": "楯縫神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070052",
+     "ja": "楯縫神社",
+     "section": null
+    },
+    {
+     "item": "Q135070053",
+     "ja": "楯縫神社",
+     "section": null
+    },
+    {
+     "item": "Q135195341",
+     "ja": "楯縫神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135195342",
+     "ja": "楯縫神社（齋神社摂社）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182654",
+   "holders": [
+    {
+     "item": "Q135040638",
+     "ja": "日出神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070061",
+     "ja": "日出神社",
+     "section": null
+    },
+    {
+     "item": "Q135070062",
+     "ja": "日出神社",
+     "section": null
+    },
+    {
+     "item": "Q135195362",
+     "ja": "日出神社（但東町畑山）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195363",
+     "ja": "日出神社（但東町南尾）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182659",
+   "holders": [
+    {
+     "item": "Q135040644",
+     "ja": "大生部兵主神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070063",
+     "ja": "大生部兵主神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135070064",
+     "ja": "大生部兵主神社",
+     "section": null
+    },
+    {
+     "item": "Q135070065",
+     "ja": "伊福部神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135070066",
+     "ja": "穴見郷戸主大生部兵主神社",
+     "section": "4"
+    },
+    {
+     "item": "Q135195377",
+     "ja": "大生部兵主神社（但東町）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182660",
+   "holders": [
+    {
+     "item": "Q135040645",
+     "ja": "阿牟加神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070067",
+     "ja": "安牟加神社",
+     "section": null
+    },
+    {
+     "item": "Q135070068",
+     "ja": "安牟加神社",
+     "section": null
+    },
+    {
+     "item": "Q135195380",
+     "ja": "安牟加神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135195381",
+     "ja": "阿牟加神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182663",
+   "holders": [
+    {
+     "item": "Q135040647",
+     "ja": "小坂神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070070",
+     "ja": "小坂神社",
+     "section": null
+    },
+    {
+     "item": "Q135070071",
+     "ja": "小坂神社",
+     "section": null
+    },
+    {
+     "item": "Q135195384",
+     "ja": "小坂神社（出石町三木）",
+     "section": "1"
+    },
+    {
+     "item": "Q135195385",
+     "ja": "小坂神社（出石町森井）",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182704",
+   "holders": [
+    {
+     "item": "Q135040693",
+     "ja": "海神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070072",
+     "ja": "海神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270269",
+     "ja": "海神社",
+     "section": null
+    },
+    {
+     "item": "Q21655263",
+     "ja": "絹巻神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182707",
+   "holders": [
+    {
+     "item": "Q135040696",
+     "ja": "伊伎佐神社 三座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070073",
+     "ja": "伊伎佐神社",
+     "section": null
+    },
+    {
+     "item": "Q135070074",
+     "ja": "平内神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182791",
+   "holders": [
+    {
+     "item": "Q11490726",
+     "ja": "忌部神社 (松江市)",
+     "section": null
+    },
+    {
+     "item": "Q135040777",
+     "ja": "久多弥神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070092",
+     "ja": "久多弥神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182793",
+   "holders": [
+    {
+     "item": "Q135040778",
+     "ja": "坐韓国伊太弖神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070093",
+     "ja": "玉作湯神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135070094",
+     "ja": "玉造天満宮",
+     "section": "0"
+    },
+    {
+     "item": "Q135195607",
+     "ja": "本宮神社境外末社日御崎神社",
+     "section": null
+    },
+    {
+     "item": "Q135195610",
+     "ja": "佐久多神社",
+     "section": "4"
+    },
+    {
+     "item": "Q135270430",
+     "ja": "坐韓国伊太弖神社",
+     "section": "0"
+    },
+    {
+     "item": "Q140465982",
+     "ja": "未知の神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182804",
+   "holders": [
+    {
+     "item": "Q135040901",
+     "ja": "山狭神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070102",
+     "ja": "山狭神社",
+     "section": null
+    },
+    {
+     "item": "Q135070103",
+     "ja": "山狭神社",
+     "section": null
+    },
+    {
+     "item": "Q135270431",
+     "ja": "山狭神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182811",
+   "holders": [
+    {
+     "item": "Q135040907",
+     "ja": "佐久多神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070105",
+     "ja": "佐久多神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135070106",
+     "ja": "嘉羅久利神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135195607",
+     "ja": "本宮神社境外末社日御崎神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182820",
+   "holders": [
+    {
+     "item": "Q135040917",
+     "ja": "久米神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070111",
+     "ja": "久米神社 奥宮",
+     "section": null
+    },
+    {
+     "item": "Q135070112",
+     "ja": "熊野神社（里宮）",
+     "section": null
+    },
+    {
+     "item": "Q135070113",
+     "ja": "久米神社 [跡]",
+     "section": null
+    },
+    {
+     "item": "Q135270433",
+     "ja": "久米神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182895",
+   "holders": [
+    {
+     "item": "Q135041043",
+     "ja": "出雲神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070129",
+     "ja": "諏訪神社",
+     "section": null
+    },
+    {
+     "item": "Q135070130",
+     "ja": "長浜神社",
+     "section": null
+    },
+    {
+     "item": "Q135070131",
+     "ja": "素盞社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182918",
+   "holders": [
+    {
+     "item": "Q135041070",
+     "ja": "坐和加須西利比売神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270434",
+     "ja": "坐和加須西利比売神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182959",
+   "holders": [
+    {
+     "item": "Q134892535",
+     "ja": "苅田神社",
+     "section": null
+    },
+    {
+     "item": "Q135041107",
+     "ja": "苅田神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070140",
+     "ja": "南八幡宮",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182963",
+   "holders": [
+    {
+     "item": "Q135041112",
+     "ja": "迩弊姫神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070141",
+     "ja": "迩幣姫神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070142",
+     "ja": "迩幣姫神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270435",
+     "ja": "迩弊姫神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182964",
+   "holders": [
+    {
+     "item": "Q135041114",
+     "ja": "佐比売山神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070143",
+     "ja": "佐比売山神社",
+     "section": null
+    },
+    {
+     "item": "Q135070143",
+     "ja": "佐比売山神社",
+     "section": null
+    },
+    {
+     "item": "Q135070144",
+     "ja": "佐比売山神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182969",
+   "holders": [
+    {
+     "item": "Q135041119",
+     "ja": "山辺八代姫命神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070145",
+     "ja": "山辺八代姫命神社",
+     "section": null
+    },
+    {
+     "item": "Q135070146",
+     "ja": "山辺八代姫命神社",
+     "section": null
+    },
+    {
+     "item": "Q135197709",
+     "ja": "山邊八代姫命神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135197711",
+     "ja": "山邊八代姫命神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182970",
+   "holders": [
+    {
+     "item": "Q135041120",
+     "ja": "霹靂神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070147",
+     "ja": "霹靂神社",
+     "section": null
+    },
+    {
+     "item": "Q135070147",
+     "ja": "霹靂神社",
+     "section": null
+    },
+    {
+     "item": "Q135070148",
+     "ja": "神楽岡八幡宮",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182981",
+   "holders": [
+    {
+     "item": "Q135041130",
+     "ja": "大歳神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070154",
+     "ja": "大年神社",
+     "section": null
+    },
+    {
+     "item": "Q135197720",
+     "ja": "都野津大年神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135197721",
+     "ja": "大年神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135197723",
+     "ja": "大年神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135197724",
+     "ja": "大歳神社",
+     "section": "4"
+    },
+    {
+     "item": "Q135197725",
+     "ja": "大歳神社",
+     "section": "5"
+    },
+    {
+     "item": "Q135197727",
+     "ja": "大歳神社",
+     "section": "6"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182986",
+   "holders": [
+    {
+     "item": "Q135041136",
+     "ja": "大原神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070166",
+     "ja": "大原神社",
+     "section": null
+    },
+    {
+     "item": "Q135070167",
+     "ja": "大原神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135070168",
+     "ja": "加茂神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135070169",
+     "ja": "大原神社",
+     "section": "4"
+    },
+    {
+     "item": "Q135197736",
+     "ja": "大原神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135197737",
+     "ja": "大原神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183048",
+   "holders": [
+    {
+     "item": "Q11381861",
+     "ja": "住吉神社",
+     "section": null
+    },
+    {
+     "item": "Q135041175",
+     "ja": "坂合神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070182",
+     "ja": "佐保神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135070184",
+     "ja": "佐保神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135197821",
+     "ja": "住吉神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183088",
+   "holders": [
+    {
+     "item": "Q135041219",
+     "ja": "古郡神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070195",
+     "ja": "古郡神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135070196",
+     "ja": "池田神社",
+     "section": null
+    },
+    {
+     "item": "Q135197931",
+     "ja": "（合祀）池田神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183089",
+   "holders": [
+    {
+     "item": "Q11608173",
+     "ja": "總社",
+     "section": null
+    },
+    {
+     "item": "Q135041221",
+     "ja": "野俣神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070197",
+     "ja": "大和神社",
+     "section": null
+    },
+    {
+     "item": "Q135197933",
+     "ja": "（総社宮境内）",
+     "section": "1"
+    },
+    {
+     "item": "Q135197934",
+     "ja": "（合祀）大和神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183110",
+   "holders": [
+    {
+     "item": "Q135041246",
+     "ja": "多理比理神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070216",
+     "ja": "八幡神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135197968",
+     "ja": "吉備津神社境内",
+     "section": "1"
+    },
+    {
+     "item": "Q135197969",
+     "ja": "多理比理神社 旧社地",
+     "section": "2"
+    },
+    {
+     "item": "Q6404042",
+     "ja": "吉備津神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183118",
+   "holders": [
+    {
+     "item": "Q135041252",
+     "ja": "知波夜比古神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070221",
+     "ja": "知波夜比古神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135070222",
+     "ja": "知波夜比古神社",
+     "section": null
+    },
+    {
+     "item": "Q135197992",
+     "ja": "備後國二之宮 知波夜比古(ちはやひこ)神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183160",
+   "holders": [
+    {
+     "item": "Q135041281",
+     "ja": "海神社 三座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070247",
+     "ja": "潮崎本之宮神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135198053",
+     "ja": "大斎原・海神社",
+     "section": "2"
+    },
+    {
+     "item": "Q705035",
+     "ja": "熊野本宮大社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183161",
+   "holders": [
+    {
+     "item": "Q11398393",
+     "ja": "力侍神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135041283",
+     "ja": "天手力男神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198054",
+     "ja": "大斎原・御戸開神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135198056",
+     "ja": "速玉大社・鍵宮",
+     "section": "3"
+    },
+    {
+     "item": "Q335618",
+     "ja": "熊野速玉大社",
+     "section": null
+    },
+    {
+     "item": "Q705035",
+     "ja": "熊野本宮大社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183169",
+   "holders": [
+    {
+     "item": "Q135041292",
+     "ja": "岸河神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070257",
+     "ja": "岸河神社",
+     "section": null
+    },
+    {
+     "item": "Q135070258",
+     "ja": "山王神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183177",
+   "holders": [
+    {
+     "item": "Q135041302",
+     "ja": "宇志比古神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198080",
+     "ja": "宇志比古神社",
+     "section": "2"
+    },
+    {
+     "item": "Q48758332",
+     "ja": "宇志比古神社",
+     "section": "1"
+    },
+    {
+     "item": "Q723417",
+     "ja": "大麻比古神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183188",
+   "holders": [
+    {
+     "item": "Q135041314",
+     "ja": "八十子神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070282",
+     "ja": "蜂須神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070283",
+     "ja": "正八幡宮",
+     "section": null
+    },
+    {
+     "item": "Q135270351",
+     "ja": "八十子神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183191",
+   "holders": [
+    {
+     "item": "Q135041319",
+     "ja": "倭大国玉神大国敷神社 二座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070293",
+     "ja": "医家神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135270439",
+     "ja": "倭大国玉神大国敷神社 二座",
+     "section": null
+    },
+    {
+     "item": "Q43594549",
+     "ja": "倭大国魂神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183195",
+   "holders": [
+    {
+     "item": "Q135041333",
+     "ja": "天水沼間比古神天水塞比売神社 二座",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070295",
+     "ja": "敷島神社",
+     "section": null
+    },
+    {
+     "item": "Q135070296",
+     "ja": "杉尾神社",
+     "section": null
+    },
+    {
+     "item": "Q135070297",
+     "ja": "美奴間神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183265",
+   "holders": [
+    {
+     "item": "Q11378828",
+     "ja": "伊予神社",
+     "section": null
+    },
+    {
+     "item": "Q135041429",
+     "ja": "伊予神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070339",
+     "ja": "伊予豆比古命神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183268",
+   "holders": [
+    {
+     "item": "Q11378828",
+     "ja": "伊予神社",
+     "section": null
+    },
+    {
+     "item": "Q11380620",
+     "ja": "伊豫豆比古命神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135041437",
+     "ja": "伊予豆比子命神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183297",
+   "holders": [
+    {
+     "item": "Q11597744",
+     "ja": "竈門神社",
+     "section": null
+    },
+    {
+     "item": "Q135198251",
+     "ja": "竈門神社中宮跡",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198253",
+     "ja": "竈門神社下宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183314",
+   "holders": [
+    {
+     "item": "Q11566947",
+     "ja": "火男火売神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198290",
+     "ja": "火男火売神社上宮",
+     "section": null
+    },
+    {
+     "item": "Q135198292",
+     "ja": "火男火売神社中宮（御嶽権現）",
+     "section": null
+    },
+    {
+     "item": "Q135198293",
+     "ja": "火男火売神社下宮（鶴見権現）",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183346",
+   "holders": [
+    {
+     "item": "Q11442606",
+     "ja": "天手長男神社",
+     "section": null
+    },
+    {
+     "item": "Q11613437",
+     "ja": "興神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135041506",
+     "ja": "天手長男神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183347",
+   "holders": [
+    {
+     "item": "Q11442606",
+     "ja": "天手長男神社",
+     "section": null
+    },
+    {
+     "item": "Q135041507",
+     "ja": "天手長比売神社社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198629",
+     "ja": "天手長比売神社跡",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183349",
+   "holders": [
+    {
+     "item": "Q135041511",
+     "ja": "国津神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198631",
+     "ja": "国津神社",
+     "section": null
+    },
+    {
+     "item": "Q135198632",
+     "ja": "津の宮神社",
+     "section": "2"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183357",
+   "holders": [
+    {
+     "item": "Q11442606",
+     "ja": "天手長男神社",
+     "section": null
+    },
+    {
+     "item": "Q135041523",
+     "ja": "物部布都神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198631",
+     "ja": "国津神社",
+     "section": null
+    },
+    {
+     "item": "Q135198643",
+     "ja": "物部布都神社跡",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183358",
+   "holders": [
+    {
+     "item": "Q11559099",
+     "ja": "海神神社",
+     "section": null
+    },
+    {
+     "item": "Q135041526",
+     "ja": "和多都美神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q18457651",
+     "ja": "和多都美神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183368",
+   "holders": [
+    {
+     "item": "Q11559099",
+     "ja": "海神神社",
+     "section": null
+    },
+    {
+     "item": "Q134930537",
+     "ja": "和多都美御子神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135041536",
+     "ja": "和多都美御子神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070367",
+     "ja": "胡禄神社",
+     "section": "3"
+    },
+    {
+     "item": "Q18457651",
+     "ja": "和多都美神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183369",
+   "holders": [
+    {
+     "item": "Q11559099",
+     "ja": "海神神社",
+     "section": null
+    },
+    {
+     "item": "Q135041537",
+     "ja": "胡禄神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135199312",
+     "ja": "胡禄神社",
+     "section": "1"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183370",
+   "holders": [
+    {
+     "item": "Q11559099",
+     "ja": "海神神社",
+     "section": null
+    },
+    {
+     "item": "Q135041538",
+     "ja": "胡禄御子神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135199365",
+     "ja": "胡禄御子神社",
+     "section": "1"
+    },
+    {
+     "item": "Q135199395",
+     "ja": "胡禄神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135199422",
+     "ja": "能理刀神社",
+     "section": "3"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183372",
+   "holders": [
+    {
+     "item": "Q135041542",
+     "ja": "大島神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135199570",
+     "ja": "大島神社",
+     "section": "2"
+    },
+    {
+     "item": "Q135199579",
+     "ja": "元嶋神社",
+     "section": "3"
+    },
+    {
+     "item": "Q135199590",
+     "ja": "島大國魂神社",
+     "section": "4"
+    },
+    {
+     "item": "Q18457651",
+     "ja": "和多都美神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183373",
+   "holders": [
+    {
+     "item": "Q135041543",
+     "ja": "波良波神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135199653",
+     "ja": "濱殿神社",
+     "section": "2"
+    },
+    {
+     "item": "Q18457651",
+     "ja": "和多都美神社",
+     "section": null
+    }
+   ]
+  }
+ ],
+ "ALL-UNSET": [
+  {
+   "kokugakuin_id": "180969",
+   "holders": [
+    {
+     "item": "Q135206679",
+     "ja": "大鳥北浜神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q705151",
+     "ja": "大鳥大社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181428",
+   "holders": [
+    {
+     "item": "Q135039531",
+     "ja": "小口神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069358",
+     "ja": "山口八幡社",
+     "section": "0"
+    },
+    {
+     "item": "Q135069360",
+     "ja": "白山社",
+     "section": "0"
+    },
+    {
+     "item": "Q135069361",
+     "ja": "八幡社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181450",
+   "holders": [
+    {
+     "item": "Q11456095",
+     "ja": "富士浅間神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135039555",
+     "ja": "伊副神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135069391",
+     "ja": "伊勝八幡宮",
+     "section": "0"
+    },
+    {
+     "item": "Q135069394",
+     "ja": "熊野社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181794",
+   "holders": [
+    {
+     "item": "Q11382603",
+     "ja": "佐久奈度神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135193493",
+     "ja": "佐久奈度神社 旧社地",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181971",
+   "holders": [
+    {
+     "item": "Q135194093",
+     "ja": "諏訪大社下社春宮",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194094",
+     "ja": "諏訪大社下社秋宮",
+     "section": "n/a"
+    },
+    {
+     "item": "Q218813",
+     "ja": "諏訪大社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182138",
+   "holders": [
+    {
+     "item": "Q11173679",
+     "ja": "鳥海山大物忌神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194452",
+     "ja": "鳥海山大物忌神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194453",
+     "ja": "鳥海山大物忌神社吹浦口之宮",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135194454",
+     "ja": "鳥海山大物忌神社蕨岡口之宮",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182562",
+   "holders": [
+    {
+     "item": "Q135195243",
+     "ja": "籠神社 奥宮",
+     "section": "n/a"
+    },
+    {
+     "item": "Q705126",
+     "ja": "籠神社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182828",
+   "holders": [
+    {
+     "item": "Q135040926",
+     "ja": "横田神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070115",
+     "ja": "横田神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135070116",
+     "ja": "横田神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182839",
+   "holders": [
+    {
+     "item": "Q135040934",
+     "ja": "御井神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070118",
+     "ja": "（廃絶）",
+     "section": "0"
+    },
+    {
+     "item": "Q135070119",
+     "ja": "秋鹿神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182841",
+   "holders": [
+    {
+     "item": "Q135040936",
+     "ja": "垂水神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070120",
+     "ja": "垂水社",
+     "section": "0"
+    },
+    {
+     "item": "Q135070121",
+     "ja": "国司神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182842",
+   "holders": [
+    {
+     "item": "Q135040937",
+     "ja": "恵曇神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070122",
+     "ja": "恵曇神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135070123",
+     "ja": "恵曇神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182846",
+   "holders": [
+    {
+     "item": "Q11385133",
+     "ja": "佐香神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135040941",
+     "ja": "佐香神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070124",
+     "ja": "鞆前神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182853",
+   "holders": [
+    {
+     "item": "Q135040949",
+     "ja": "水神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070125",
+     "ja": "水神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135070126",
+     "ja": "三社神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182894",
+   "holders": [
+    {
+     "item": "Q135041040",
+     "ja": "意保美神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070127",
+     "ja": "意保美神社",
+     "section": "0"
+    },
+    {
+     "item": "Q135070128",
+     "ja": "垂水神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182900",
+   "holders": [
+    {
+     "item": "Q135041049",
+     "ja": "神代神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135070132",
+     "ja": "神代神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q30929765",
+     "ja": "万九千神社",
+     "section": "0"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183237",
+   "holders": [
+    {
+     "item": "Q135041394",
+     "ja": "高屋神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198168",
+     "ja": "高屋神社（本宮）",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198170",
+     "ja": "高屋神社（中宮）",
+     "section": "n/a"
+    },
+    {
+     "item": "Q135198171",
+     "ja": "高屋神社（下宮）",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183290",
+   "holders": [
+    {
+     "item": "Q66111211",
+     "ja": "沖津宮",
+     "section": "n/a"
+    },
+    {
+     "item": "Q66111213",
+     "ja": "中津宮",
+     "section": "n/a"
+    },
+    {
+     "item": "Q66111215",
+     "ja": "辺津宮",
+     "section": "n/a"
+    },
+    {
+     "item": "Q704962",
+     "ja": "宗像大社",
+     "section": "n/a"
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183320",
+   "holders": [
+    {
+     "item": "Q135198303",
+     "ja": "阿蘇山上神社",
+     "section": "n/a"
+    },
+    {
+     "item": "Q715639",
+     "ja": "阿蘇神社",
+     "section": "n/a"
+    }
+   ]
+  }
+ ],
+ "MISSING-ALL": [
+  {
+   "kokugakuin_id": "180695",
+   "holders": [
+    {
+     "item": "Q119929663",
+     "ja": "平群石床神社",
+     "section": null
+    },
+    {
+     "item": "Q135184983",
+     "ja": "平群石床神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180724",
+   "holders": [
+    {
+     "item": "Q135185020",
+     "ja": "片岡神社元宮",
+     "section": null
+    },
+    {
+     "item": "Q43594918",
+     "ja": "片岡神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180928",
+   "holders": [
+    {
+     "item": "Q135099507",
+     "ja": "久須須美神社",
+     "section": null
+    },
+    {
+     "item": "Q135185533",
+     "ja": "久須須美神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180937",
+   "holders": [
+    {
+     "item": "Q135098886",
+     "ja": "長柄神社",
+     "section": null
+    },
+    {
+     "item": "Q135185575",
+     "ja": "長柄神社跡地碑",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180959",
+   "holders": [
+    {
+     "item": "Q11631426",
+     "ja": "誉田八幡宮",
+     "section": null
+    },
+    {
+     "item": "Q135185626",
+     "ja": "誉田八幡宮 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180966",
+   "holders": [
+    {
+     "item": "Q11465762",
+     "ja": "屯倉神社",
+     "section": null
+    },
+    {
+     "item": "Q135185635",
+     "ja": "屯倉神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180974",
+   "holders": [
+    {
+     "item": "Q135039161",
+     "ja": "陶荒田神社",
+     "section": null
+    },
+    {
+     "item": "Q135206688",
+     "ja": "旧鎮座地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180995",
+   "holders": [
+    {
+     "item": "Q135185681",
+     "ja": "合祀：大津神社",
+     "section": null
+    },
+    {
+     "item": "Q85593661",
+     "ja": "兵主神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "180996",
+   "holders": [
+    {
+     "item": "Q135039173",
+     "ja": "合祀：大津神社",
+     "section": null
+    },
+    {
+     "item": "Q135185681",
+     "ja": "合祀：大津神社",
+     "section": null
+    },
+    {
+     "item": "Q135185682",
+     "ja": "粟神社跡地",
+     "section": null
+    },
+    {
+     "item": "Q85593661",
+     "ja": "兵主神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181012",
+   "holders": [
+    {
+     "item": "Q135039188",
+     "ja": "男神社",
+     "section": null
+    },
+    {
+     "item": "Q135206791",
+     "ja": "男神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181023",
+   "holders": [
+    {
+     "item": "Q135039197",
+     "ja": "草津大歳神社",
+     "section": null
+    },
+    {
+     "item": "Q705949",
+     "ja": "住吉大社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181029",
+   "holders": [
+    {
+     "item": "Q117848511",
+     "ja": "赤留比売命神社",
+     "section": null
+    },
+    {
+     "item": "Q135185705",
+     "ja": "赤留比売命神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181030",
+   "holders": [
+    {
+     "item": "Q117848511",
+     "ja": "赤留比売命神社",
+     "section": null
+    },
+    {
+     "item": "Q135098895",
+     "ja": "天水分豊浦命神社",
+     "section": null
+    },
+    {
+     "item": "Q135206799",
+     "ja": "天水分豊浦命神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181050",
+   "holders": [
+    {
+     "item": "Q135098903",
+     "ja": "幣久良神社",
+     "section": null
+    },
+    {
+     "item": "Q135206826",
+     "ja": "幣久良神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181143",
+   "holders": [
+    {
+     "item": "Q11486118",
+     "ja": "度会国御神社",
+     "section": null
+    },
+    {
+     "item": "Q135186128",
+     "ja": "度会国御神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181161",
+   "holders": [
+    {
+     "item": "Q11544726",
+     "ja": "櫛田神社 (松阪市)",
+     "section": null
+    },
+    {
+     "item": "Q135186175",
+     "ja": "櫛田神社 (松阪市) 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181163",
+   "holders": [
+    {
+     "item": "Q135039274",
+     "ja": "竹神社",
+     "section": null
+    },
+    {
+     "item": "Q135186179",
+     "ja": "竹神社 旧社地",
+     "section": null
+    },
+    {
+     "item": "Q135186180",
+     "ja": "竹神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181166",
+   "holders": [
+    {
+     "item": "Q135098916",
+     "ja": "服部伊刀麻神社",
+     "section": null
+    },
+    {
+     "item": "Q135186191",
+     "ja": "服部伊刀麻神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181184",
+   "holders": [
+    {
+     "item": "Q135098926",
+     "ja": "流田上神社 （流田上社神社）",
+     "section": null
+    },
+    {
+     "item": "Q135186310",
+     "ja": "流田上神社 （流田上社神社）",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181191",
+   "holders": [
+    {
+     "item": "Q135039301",
+     "ja": "伊佐和神社",
+     "section": null
+    },
+    {
+     "item": "Q135186341",
+     "ja": "伊佐和神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181200",
+   "holders": [
+    {
+     "item": "Q135039309",
+     "ja": "合祀：畠田神社",
+     "section": null
+    },
+    {
+     "item": "Q135186407",
+     "ja": "合祀：畠田神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181203",
+   "holders": [
+    {
+     "item": "Q135039310",
+     "ja": "豊原神社",
+     "section": null
+    },
+    {
+     "item": "Q135186416",
+     "ja": "豊原神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181209",
+   "holders": [
+    {
+     "item": "Q135039315",
+     "ja": "大神社",
+     "section": null
+    },
+    {
+     "item": "Q135186425",
+     "ja": "大神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181280",
+   "holders": [
+    {
+     "item": "Q135039385",
+     "ja": "高岡神社",
+     "section": null
+    },
+    {
+     "item": "Q135186728",
+     "ja": "高岡神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181382",
+   "holders": [
+    {
+     "item": "Q11603933",
+     "ja": "籠守勝手神社",
+     "section": null
+    },
+    {
+     "item": "Q135187134",
+     "ja": "天神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181451",
+   "holders": [
+    {
+     "item": "Q11495515",
+     "ja": "成海神社",
+     "section": null
+    },
+    {
+     "item": "Q135190167",
+     "ja": "成海神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181482",
+   "holders": [
+    {
+     "item": "Q135190217",
+     "ja": "砥鹿神社 奥宮",
+     "section": null
+    },
+    {
+     "item": "Q3530344",
+     "ja": "砥鹿神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181580",
+   "holders": [
+    {
+     "item": "Q134893133",
+     "ja": "走湯神社",
+     "section": null
+    },
+    {
+     "item": "Q135288594",
+     "ja": "走湯神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181706",
+   "holders": [
+    {
+     "item": "Q135039737",
+     "ja": "伊波比神社",
+     "section": null
+    },
+    {
+     "item": "Q135193327",
+     "ja": "伊波比神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181715",
+   "holders": [
+    {
+     "item": "Q135193348",
+     "ja": "小被神社 旧社地",
+     "section": null
+    },
+    {
+     "item": "Q66105394",
+     "ja": "小被神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181728",
+   "holders": [
+    {
+     "item": "Q11647974",
+     "ja": "金鑚神社",
+     "section": null
+    },
+    {
+     "item": "Q135193395",
+     "ja": "金鑚神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181736",
+   "holders": [
+    {
+     "item": "Q11361262",
+     "ja": "下立松原神社",
+     "section": null
+    },
+    {
+     "item": "Q135193410",
+     "ja": "白浜町の下立松原神社",
+     "section": null
+    },
+    {
+     "item": "Q135193411",
+     "ja": "千倉町の下立松原神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181833",
+   "holders": [
+    {
+     "item": "Q11469988",
+     "ja": "山津照神社",
+     "section": null
+    },
+    {
+     "item": "Q135193631",
+     "ja": "山津照神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181856",
+   "holders": [
+    {
+     "item": "Q135039836",
+     "ja": "売比多神社",
+     "section": null
+    },
+    {
+     "item": "Q135193669",
+     "ja": "売比多神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181875",
+   "holders": [
+    {
+     "item": "Q135098983",
+     "ja": "石作神社",
+     "section": null
+    },
+    {
+     "item": "Q135193705",
+     "ja": "石作神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181907",
+   "holders": [
+    {
+     "item": "Q135039883",
+     "ja": "大前神社",
+     "section": null
+    },
+    {
+     "item": "Q135193774",
+     "ja": "大前神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181946",
+   "holders": [
+    {
+     "item": "Q11523053",
+     "ja": "村国真墨田神社",
+     "section": null
+    },
+    {
+     "item": "Q135193944",
+     "ja": "村国真墨田神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181948",
+   "holders": [
+    {
+     "item": "Q11488771",
+     "ja": "御井神社",
+     "section": null
+    },
+    {
+     "item": "Q135193949",
+     "ja": "御井神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181960",
+   "holders": [
+    {
+     "item": "Q11492453",
+     "ja": "恵那神社",
+     "section": null
+    },
+    {
+     "item": "Q135193982",
+     "ja": "恵那神社 奥宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181974",
+   "holders": [
+    {
+     "item": "Q135194114",
+     "ja": "阿禮神社 奥宮",
+     "section": null
+    },
+    {
+     "item": "Q62056170",
+     "ja": "阿禮神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "181975",
+   "holders": [
+    {
+     "item": "Q11597109",
+     "ja": "穂高神社",
+     "section": null
+    },
+    {
+     "item": "Q135194118",
+     "ja": "穂高神社 奥宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182009",
+   "holders": [
+    {
+     "item": "Q135039944",
+     "ja": "山家神社",
+     "section": null
+    },
+    {
+     "item": "Q135194261",
+     "ja": "山家神社 奥宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182100",
+   "holders": [
+    {
+     "item": "Q11677124",
+     "ja": "鹿島御子神社",
+     "section": null
+    },
+    {
+     "item": "Q135194402",
+     "ja": "鹿嶋御子神社古社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182112",
+   "holders": [
+    {
+     "item": "Q11668370",
+     "ja": "駒形神社",
+     "section": null
+    },
+    {
+     "item": "Q135194429",
+     "ja": "駒形神社 奥宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182117",
+   "holders": [
+    {
+     "item": "Q135040039",
+     "ja": "於呂閉志神社",
+     "section": null
+    },
+    {
+     "item": "Q135194431",
+     "ja": "於呂閉志神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182144",
+   "holders": [
+    {
+     "item": "Q11428793",
+     "ja": "塩湯彦神社",
+     "section": null
+    },
+    {
+     "item": "Q135194471",
+     "ja": "塩湯彦神社 奥宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182161",
+   "holders": [
+    {
+     "item": "Q135040071",
+     "ja": "苅田比売神社",
+     "section": null
+    },
+    {
+     "item": "Q135194485",
+     "ja": "苅田比売神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182202",
+   "holders": [
+    {
+     "item": "Q135040120",
+     "ja": "合祀：利椋八幡神社",
+     "section": null
+    },
+    {
+     "item": "Q135194508",
+     "ja": "合祀：利椋八幡神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182321",
+   "holders": [
+    {
+     "item": "Q135194773",
+     "ja": "白山比咩神社 奥宮",
+     "section": null
+    },
+    {
+     "item": "Q704702",
+     "ja": "白山比咩神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182429",
+   "holders": [
+    {
+     "item": "Q135040434",
+     "ja": "青海神社",
+     "section": null
+    },
+    {
+     "item": "Q135195053",
+     "ja": "青海神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182519",
+   "holders": [
+    {
+     "item": "Q135040514",
+     "ja": "狭宮神社",
+     "section": null
+    },
+    {
+     "item": "Q135195195",
+     "ja": "狭宮神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182520",
+   "holders": [
+    {
+     "item": "Q135040515",
+     "ja": "苅野神社",
+     "section": null
+    },
+    {
+     "item": "Q135195197",
+     "ja": "苅野神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182531",
+   "holders": [
+    {
+     "item": "Q135040524",
+     "ja": "蘆井神社",
+     "section": null
+    },
+    {
+     "item": "Q135195208",
+     "ja": "蘆井神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "182668",
+   "holders": [
+    {
+     "item": "Q135040651",
+     "ja": "売布神社",
+     "section": null
+    },
+    {
+     "item": "Q135195387",
+     "ja": "売布神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183058",
+   "holders": [
+    {
+     "item": "Q135041185",
+     "ja": "久刀神社",
+     "section": null
+    },
+    {
+     "item": "Q135197849",
+     "ja": "久刀神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183060",
+   "holders": [
+    {
+     "item": "Q135041188",
+     "ja": "長田神社",
+     "section": null
+    },
+    {
+     "item": "Q135197864",
+     "ja": "長田神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183069",
+   "holders": [
+    {
+     "item": "Q11584766",
+     "ja": "石上布都魂神社",
+     "section": null
+    },
+    {
+     "item": "Q135197886",
+     "ja": "石上布都魂神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183070",
+   "holders": [
+    {
+     "item": "Q135041199",
+     "ja": "布勢神社",
+     "section": null
+    },
+    {
+     "item": "Q135197890",
+     "ja": "布勢神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183071",
+   "holders": [
+    {
+     "item": "Q135041202",
+     "ja": "神根神社",
+     "section": null
+    },
+    {
+     "item": "Q135197892",
+     "ja": "神根神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183076",
+   "holders": [
+    {
+     "item": "Q135041208",
+     "ja": "伊勢神社",
+     "section": null
+    },
+    {
+     "item": "Q135197907",
+     "ja": "内宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183080",
+   "holders": [
+    {
+     "item": "Q135197913",
+     "ja": "尾治針名真若比咩神社 旧社地",
+     "section": null
+    },
+    {
+     "item": "Q17228003",
+     "ja": "尾治針名真若比咩神社",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183109",
+   "holders": [
+    {
+     "item": "Q135041245",
+     "ja": "彦佐須岐神社",
+     "section": null
+    },
+    {
+     "item": "Q135197967",
+     "ja": "彦佐須岐神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183115",
+   "holders": [
+    {
+     "item": "Q135041250",
+     "ja": "多加意加美神社",
+     "section": null
+    },
+    {
+     "item": "Q135197983",
+     "ja": "多加意加美神社 旧社地",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183232",
+   "holders": [
+    {
+     "item": "Q135041389",
+     "ja": "宇閉神社",
+     "section": null
+    },
+    {
+     "item": "Q135070326",
+     "ja": "宇閉神社本宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183298",
+   "holders": [
+    {
+     "item": "Q135041470",
+     "ja": "麻氐良布神社",
+     "section": null
+    },
+    {
+     "item": "Q135198256",
+     "ja": "麻氐良布神社 奥宮",
+     "section": null
+    }
+   ]
+  },
+  {
+   "kokugakuin_id": "183317",
+   "holders": [
+    {
+     "item": "Q11490808",
+     "ja": "志々伎神社",
+     "section": null
+    },
+    {
+     "item": "Q135198295",
+     "ja": "志々伎神社沖都宮",
+     "section": null
+    },
+    {
+     "item": "Q135198296",
+     "ja": "志々伎神社邊都宮",
+     "section": null
+    }
+   ]
+  }
+ ]
+}

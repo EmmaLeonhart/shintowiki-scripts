@@ -8918,3 +8918,29 @@ That matters beyond the audit: the 47 legitimate pairs existed only as a number 
 careless cleanup away from destruction.
 
 Read-only throughout; Wikidata locked to 2026-09-18.
+
+## 2026-08-19 (later still) — page 181621 was not special: 197 pages share its exact defect
+
+The queue said it plainly: *three errors on the one page Emma happened to open is not evidence that
+page is special.* Widened the (P13677 + P958) check across every Kokugakuin id held by more than one
+item — `modern-quickstatements/generate_p958_candidates_page.py`.
+
+**900** such ids. 619 fine. **281 candidates:**
+
+| count | shape |
+|---|---|
+| **0** | collisions — nowhere do two items claim the same (id, real section) |
+| **197** | a holder has NO section while its siblings do — 181621's exact shape |
+| **66** | no holder on the page has any section |
+| **18** | every holder carries `0` or `n/a`, so none is distinguished |
+
+**The zero matters as much as the rest.** The failure mode is under-specification, not two shrines
+fighting over one entry — which is also why the earlier duplicate-hunting framings kept finding
+nothing real. And the error Emma spotted on one page recurs on 197.
+
+Report-only by design, and that is not caution for its own sake: the correct section can only be read
+off the Kokugakuin page, which is exactly how 181621's 1 / 0 / n/a were established. The tool narrows
+WHERE to look and never guesses WHAT the value is. `_site/p958-candidates.html` carries 281 cards,
+each linking the Kokugakuin page and every holder; the data is in `p958_candidates_audit.json`.
+
+Read-only; Wikidata locked to 2026-09-18. 1496 tests pass.
