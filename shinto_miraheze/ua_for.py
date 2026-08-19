@@ -13,8 +13,14 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 # Wikidata-side hosts: the wiki itself, the query service, QuickStatements, and the REST/OAuth
 # endpoints that carry the same identity.
+# Wikimedia projects other than Wikidata (en/ja Wikipedia, Commons, Wikisource...) are read by the
+# gate checks and the label pipelines. They carry the SAME identity as Wikidata: they are the same
+# account's footprint on the same federation, and sending the wiki-side agent to a Wikimedia project
+# would put the two personas on one platform.
+# Added 2026-08-19 after ua_for's fail-closed rule broke check_enwiki_mentions.py — see the test.
 _WIKIDATA_HOSTS = ("wikidata.org", "query.wikidata.org", "quickstatements.toolforge.org",
-                   "wikidata-todo.toolforge.org")
+                   "wikidata-todo.toolforge.org",
+                   "wikipedia.org", "wikimedia.org", "wikisource.org", "wiktionary.org")
 # Wiki-side hosts: Miraheze and Fandom share one identity, by Emma's instruction.
 _WIKI_HOSTS = ("miraheze.org", "fandom.com", "wikia.com", "wikia.org")
 

@@ -128,4 +128,21 @@ def main():
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    # Exit codes are LOAD-BEARING and the caller distinguishes all three:
+    #   0 = gate CLEAR   1 = gate CLOSED (mentions remain)   2 = the check itself FAILED
+    #
+    # Before 2026-08-19 an exception also exited 1, so a crash was indistinguishable from a
+    # normal closed gate. That happened for real: a fail-closed User-Agent router had no entry
+    # for en.wikipedia.org, this script raised, and the workflow printed "Mentions remain —
+    # Wikidata editing stays frozen" and reported success. The gate is designed to OPEN BY
+    # ITSELF when the threads archive off; a crash that reads as "still closed" means it can
+    # never open, and nothing says so. Fail loudly instead.
+    try:
+        raise SystemExit(main())
+    except SystemExit:
+        raise
+    except Exception:
+        import traceback
+        traceback.print_exc()
+        print("CHECK FAILED — this is NOT 'the gate is closed'. The gate state was not updated.")
+        raise SystemExit(2)

@@ -43,7 +43,18 @@ jobs:
       - name: Check the enwiki pages
         id: check
         run: |
-          if python3 shinto_miraheze/check_enwiki_mentions.py --record; then
+          set +e
+          python3 shinto_miraheze/check_enwiki_mentions.py --record
+          rc=$?
+          set -e
+          # 2 (or anything unexpected) means the CHECK failed, not that the gate is closed.
+          # Treating a crash as "mentions remain" once froze this gate silently — it is designed
+          # to open by itself, so a permanent crash means it never opens and nobody is told.
+          if [ "$rc" -gt 1 ]; then
+            echo "::error title=Enwiki mention gate::The check FAILED (exit $rc). The gate state was NOT updated and is now stale."
+            exit "$rc"
+          fi
+          if [ "$rc" -eq 0 ]; then
             echo "::notice title=Enwiki mention gate::CLEAR — no mentions remain; the enwiki condition no longer blocks Wikidata editing."
           else
             echo "::notice title=Enwiki mention gate::Mentions remain — Wikidata editing stays frozen."

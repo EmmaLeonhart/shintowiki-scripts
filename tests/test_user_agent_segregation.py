@@ -87,3 +87,15 @@ def test_no_wikidata_only_script_imports_the_other_agent():
     assert not offenders, (
         "these Wikidata-only scripts import the Miraheze/Fandom User-Agent: " + ", ".join(sorted(offenders))
     )
+
+
+def test_wikimedia_projects_route_to_the_wikidata_agent():
+    """en/ja Wikipedia, Commons and friends carry the same identity as Wikidata.
+
+    Regression test for 2026-08-19: ua_for() fails closed on unknown hosts, and en.wikipedia.org was
+    in neither list, so check_enwiki_mentions.py raised on every run. Its workflow reported that as
+    "mentions remain" and the gate — which is designed to open by itself — silently froze.
+    """
+    for url in ("https://en.wikipedia.org/w/api.php", "https://ja.wikipedia.org/w/api.php",
+                "https://commons.wikimedia.org/w/api.php", "https://en.wiktionary.org/w/api.php"):
+        assert ua_for(url) == WIKIDATA_USER_AGENT, url
