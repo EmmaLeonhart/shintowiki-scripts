@@ -94,7 +94,8 @@ def build_rows():
         tw = twins_of(q, cl, parts_of, ja_label, kok_keys, ids_of_named)
         mine = ja_label.get(q, "")
         # A twin found by (normalised) NAME means the two items are the same shrine
-        # under one name — a clean living/entry duplicate.
+        # under one name. NOT proof: names repeat heavily across shrines, so this is a
+        # collision to check, not a duplicate. (Emma, 2026-08-19 — B2 withdrawn on it.)
         name_twins = {e: r for e, r in tw.items()
                       if r in ("same ja label", "same normalised ja label")}
         # A twin found ONLY by shared Kokugakuin id, whose name differs, is the
@@ -242,9 +243,10 @@ def render(rows, ja_label):
 <p class="intro">A <strong>confirmed Shikinaisha</strong> is a shrine confidently identified as one of
 the 927 register entries (unlike a <em>Ronsha</em>, a disputed candidate). {len(rows)} carry the
 confirmed class yet appear on no list. They fall into three kinds, diagnosed below:
-<br>&bull; <strong>{len(dup)} living/entry duplicates</strong> — a separate item, already named by a
-list, is the <em>same shrine</em> under the same name (matched by name, or by Kokugakuin id + same
-name). The living item only <em>looks</em> unnamed because the list names its entry twin. → link or merge.
+<br>&bull; <strong>{len(dup)} name collisions</strong> — a separate item, already named by a
+list, carries the <em>same ja name</em>. That is a collision, <strong>not</strong> a proof of identity:
+shrine names repeat heavily (杉山神社 alone accounts for several of these), so a shared name inside one
+list does not make two items the same shrine. → a lead to check, not a link/merge queue.
 <br>&bull; <strong style="color:#d32f2f">{len(dis)} Kokugakuin-id disagreements</strong> — the item
 shares a Kokugakuin database id with a <em>differently-named</em> entry, and/or that id is claimed by
 <em>several</em> shrines. This is jawiki and the Kokugakuin database <em>disagreeing on which modern
@@ -255,7 +257,7 @@ shrine, or a genuine entry the lists are missing.
 
 <div class="counts">
   <div class="card"><div class="n">{len(rows)}</div><div class="l">total unnamed</div></div>
-  <div class="card"><div class="n">{len(dup)}</div><div class="l">living/entry duplicate (link/merge)</div></div>
+  <div class="card"><div class="n">{len(dup)}</div><div class="l">name collision (a lead, not a duplicate)</div></div>
   <div class="card warn"><div class="n">{len(dis)}</div><div class="l">Kokugakuin-id disagreement (identify)</div></div>
   <div class="card"><div class="n">{len(notwin)}</div><div class="l">no twin (mis-tag or missing)</div></div>
 </div>
@@ -275,7 +277,10 @@ merges.</p>
 {dis_rows}
 </tbody></table></div>
 
-<h2>{len(dup)} living/entry duplicates — link or merge each pair</h2>
+<h2>{len(dup)} name collisions — same ja name as a listed entry</h2>
+<p class="intro">Withdrawn as a link/merge decision on 2026-08-19. Emma: <em>"there's plenty of shrines
+with duplicate labels."</em> Nothing below is established as the same shrine; the only evidence that
+could establish it is the (P13677 + section P958) composite, which currently matches none of them.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>item</th><th>ja</th><th>en</th><th>Kokugakuin id</th><th>claims list</th>
 <th>twin (already named)</th></tr></thead>
@@ -313,7 +318,7 @@ def main():
     io.open(OUT, "w", encoding="utf-8", newline="\n").write(html_out)
     import collections
     c = collections.Counter(r["diag"] for r in rows)
-    print(f"{len(rows)} orphans: {c['duplicate']} duplicate / {c['disputed']} "
+    print(f"{len(rows)} orphans: {c['duplicate']} name collision / {c['disputed']} "
           f"Kokugakuin-id disagreement / {c['notwin']} no-twin -> {OUT}")
     return 0
 

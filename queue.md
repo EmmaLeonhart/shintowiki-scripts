@@ -789,9 +789,10 @@ items tagged as Shikinaisha yet named as a part of no Jinmyōchō list? Anything
 it needs evidence that establishes identity — the (P13677 + P958) composite is the only one available
 so far, and it currently matches nothing. NEEDS-INVESTIGATION, this repo's job, no gate on it.
 
-**Housekeeping owed:** the generator still labels the class "duplicate" in the HTML and in its stdout
-summary. Rename it to what it is (a name collision) so the next reader is not told the same wrong
-thing the queue was telling.
+**Housekeeping done 2026-08-19:** the generator called the class "living/entry duplicates &mdash; the
+same shrine under the same name &rarr; link or merge". It now calls them **name collisions**, says
+plainly that a shared name is not proof of identity, and carries the withdrawal note on the section
+itself. Headline reads `149 orphans: 48 name collision / 0 Kokugakuin-id disagreement / 101 no-twin`.
 
 ### B3. The orphan Shikinaisha — mis-tagged, or missing entries? **Re-read before deciding.**
 Was 66; now **101** after 36 members arrived from B2's id-disagreement class, which turned out not to
