@@ -9,7 +9,17 @@
 2. **Queue generator** (`remote_queue.py`, daily via `build-remote-queue.yml`): scans those dirs → `remote_queue.json` = a shuffled list of `{file, category, instruction}`; for `duplicated_content` only files still carrying `[[Category:Pages with duplicated content]]`. Always "what still needs work, in random order."
 3. **The cloud worker** = claude.ai routine **"Drain remote_queue.json (5 random/day)"** (`trig_015viL16x9ReKsQRmsJEscH7`, Sonnet, daily `41 7 * * *` UTC): picks 5 random items, applies each `instruction` (merge duplicated paragraphs / translate Japanese / strip fandom templates), removes the gating category when genuinely done, commits `[skip ci]`. No cursor.
 
-**Account switch, 2026-07-27 — worker currently DOWN.** Emma moved to a new Claude account;
+**✅ THE WORKER IS RUNNING. Verified 2026-08-19 against the commit log — the "currently DOWN"
+paragraph below is STALE and is kept only as the record of a scare.** `chore(remote-queue)` commits
+land daily at ~07:46 UTC with no missed day: 139 drains since 2026-05-13, and **27 of them since the
+2026-07-27 account switch that this section says took the worker offline**, including 08-19 itself.
+Whatever the state of the old trigger, a routine is bound to this repo and draining 3–5 items a day.
+
+**Do not act on the paragraph below without checking `git log --grep='remote-queue'` first.** It cost
+a real belief: the pipeline was carried as "she has not managed to get it to work" for weeks after it
+had resumed, and a queue item was written to restart something that was already running.
+
+**(Historical, 2026-07-27) Account switch — worker was believed DOWN.** Emma moved to a new Claude account;
 the routine did NOT migrate. The old worker was `trig_013F9aeKeL3hx8zo7weKj3Ed` (last fired
 2026-07-27 07:46 UTC, commit `eb9dcccf`) and now 404s from this account. If the daily
 `chore(remote-queue)` commits stop again, check the trigger list on the *current* account
