@@ -57,7 +57,10 @@ def test_ua_for_routes_wiki_and_fandom_hosts_to_the_wiki_agent():
 
 
 def test_ua_for_refuses_unknown_hosts_rather_than_guessing():
-    for bad in ("https://example.com/api.php", "https://en.wikipedia.org/w/api.php", ""):
+    # NB: en.wikipedia.org used to be listed here as an unknown host. It is a KNOWN host as of
+    # 2026-08-19 — it routes to the Wikidata agent — and leaving it here made this test assert the
+    # exact bug that silently froze the enwiki gate. Use hosts that genuinely have no identity.
+    for bad in ("https://example.com/api.php", "https://news.ycombinator.com/", ""):
         try:
             ua_for(bad)
         except ValueError:
