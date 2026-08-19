@@ -28,9 +28,23 @@ __NOTOC__
 : Two things the sources say that Wikidata does not:
 :* jawiki's identified modern shrine for entry '''28''' is spelled 韓国伊'''太'''弖神社 — 太, not 大. The old report leaned on 大/太 as the thing separating the two entries. The register names differ that way; the modern identifications do not.
 :* The Kokugakuin ids run in step with the ordinals but '''skip 28 and 39''': 18→182792, 19→182793, 20→182794; 27→182801, 29→182802; 38→182811, 40→182812. Entry 19 got a page of its own; 28 and 39 did not.
-: '''→ The reading to test:''' entries 28 and 39 are '''sections''' on their host shrine's Kokugakuin page (182801 and 182811) rather than pages of their own — which is exactly what the section qualifier P958 exists to express.
-: '''✓ 2026-08-19 (bot), the same check widened:''' page 181621 is not unusual. Across all '''900''' Kokugakuin ids held by more than one item, '''281''' look wrong — '''197''' of them with 181621's exact shape (a holder carrying no section while its siblings do), 66 with no sections at all, 18 where every holder is <code>0</code>/<code>n/a</code>. '''Nothing collides''': nowhere do two items claim the same (id, real section), so the problem is under-specification rather than a fight over an entry. Browsable: https://emmaleonhart.github.io/shintowiki-scripts/p958-candidates.html
-: '''ASK:''' does that match what you see in the database — 28 and 39 as sections of the host's page? If so the fix is a P958 qualifier, not a hunt for missing ids, and it changes item 3 below as well.
+: '''→ 2026-08-19, checked against the database — and my guess was WRONG.''' I had proposed that entries 28 and 39 live as ''sections'' of their host shrine's Kokugakuin page. They do not.
+:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182793 182793] is a page for '''同社坐韓国伊太弖神社''' in its own right — so a 同社坐 entry '''does''' get its own page when it has one.
+:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182801 182801] (揖夜神社, entry 27) and [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182811 182811] (佐久多神社, entry 38) contain '''no 同社坐 mention at all'''.
+: So entries '''28 and 39 are simply absent from the database'''. Their ids do not exist — there is nothing to qualify, and no section to add. The missing-id set for them is real.
+
+'''What P958 actually is''' — established the same day, and it changes item 3 more than it changes this one:
+
+: '''One Kokugakuin page = one 927 register entry.''' The page lists that entry's 論社 as numbered blocks — <code>現社名など（１）（２）（３）…</code> — and '''P958 is which numbered candidate the item is'''. Examples with many:
+:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181186 181186] 火地神社 — 10 candidates; §1 is 火地神社（多気郡岩内村）, matching the page's （１）.
+:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181177 181177] 相鹿木大御神社 — 9.
+:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181688 181688] 石楠尾神社 — 7.
+: That is why <code>0</code> and <code>n/a</code> carry no uniqueness: they mean “not one of the numbered candidates”.
+
+'''The under-specification, measured.''' Across all '''900''' Kokugakuin ids held by more than one item: 619 fine, '''281 wrong'''. '''197''' have a holder with no section while its siblings have one (page 181621's shape — so that page was not unusual), 66 have no sections at all, 18 are all <code>0</code>/<code>n/a</code>. '''Nothing collides''': nowhere do two items claim the same (id, real section), so the fault is always a missing value, never a contested one. Browsable: https://emmaleonhart.github.io/shintowiki-scripts/p958-candidates.html
+
+: '''Open, and it is a METHOD question not a shrine question:''' 321 items are missing a section. Only 57 can be derived from a parent's ranking; '''228 have nothing in Wikidata to derive from'''. But since P958 is just the page's candidate index, matching an item's name against the numbered list should recover it — on a 12-page sample that matched '''40 of 46 (86%)'''. The six misses were mostly spelling variants (関山神社 vs 關山神社（上越市）) rather than wrong sections.
+: '''ASK:''' run that match across all 228 and hand you the confident ones separately from the judgement calls?
 
 === 2. The duplicated "part of" statements — ANSWERED 2026-08-19 ===
 
