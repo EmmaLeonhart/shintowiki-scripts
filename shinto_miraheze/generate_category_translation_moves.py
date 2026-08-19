@@ -89,11 +89,15 @@ def _get_json(url: str, params: dict, retries: int = 4):
     """GET returning parsed JSON, with bounded retries on transient 5xx /
     non-JSON bodies (Miraheze 502s are common). Raises on persistent failure
     so the caller can decide; returns None only if every attempt failed."""
+    # Resolve the User-Agent OUTSIDE the retry loop: ua_for() fails closed on an unrouted host,
+    # which is permanent, and inside the loop that error was retried four times and then swallowed
+    # into a "[warn] request failed" — a config bug indistinguishable from a flaky Miraheze 502.
+    agent = ua_for(url)
     last = None
     for attempt in range(retries):
         try:
             resp = requests.get(url, params=params,
-                                headers={"User-Agent": ua_for(url)}, timeout=60)
+                                headers={"User-Agent": agent}, timeout=60)
             if resp.status_code >= 500:
                 last = f"HTTP {resp.status_code}"
                 time.sleep(2 * (attempt + 1))

@@ -197,11 +197,17 @@ def target_record(target: dict, source_pages: "list[str]",
 
 
 def _get_json(url: str, params: dict, retries: int = 4):
+    # Resolve the User-Agent OUTSIDE the retry loop. ua_for() fails closed on a host it has no
+    # identity for, which is a permanent configuration error — inside the loop it was retried four
+    # times with backoff and then swallowed into a "[warn] request failed" and a None return, i.e.
+    # a config bug wearing a transient-network costume. Same shape that silently froze the enwiki
+    # gate on 2026-08-19. Let it raise here, before any attempt.
+    agent = ua_for(url)
     last = None
     for attempt in range(retries):
         try:
             resp = requests.get(url, params=params,
-                                headers={"User-Agent": ua_for(url)}, timeout=60)
+                                headers={"User-Agent": agent}, timeout=60)
             if resp.status_code >= 500:
                 last = f"HTTP {resp.status_code}"
                 time.sleep(2 * (attempt + 1))
