@@ -1,0 +1,526 @@
+[
+ {
+  "item": "Q107306769",
+  "list": "Q11368516",
+  "ords": [
+   "44"
+  ],
+  "list_says": [
+   "44"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q107664337",
+  "list": "Q11368516",
+  "ords": [
+   "47"
+  ],
+  "list_says": [
+   "47"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q10896675",
+  "list": "Q11368560",
+  "ords": [
+   "1"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q111776816",
+  "list": "Q11380552",
+  "ords": [
+   "53"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q112923996",
+  "list": "Q11636502",
+  "ords": [
+   "30"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q112953068",
+  "list": "Q11668489",
+  "ords": [
+   "21"
+  ],
+  "list_says": [
+   "21"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q11366320",
+  "list": "Q11546334",
+  "ords": [
+   "20"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11371267",
+  "list": "Q11636380",
+  "ords": [
+   "8"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11383014",
+  "list": "Q11658590",
+  "ords": [
+   "10"
+  ],
+  "list_says": [
+   "10"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q11393842",
+  "list": "Q11465292",
+  "ords": [
+   "81"
+  ],
+  "list_says": [
+   "81"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q11396254",
+  "list": "Q11658590",
+  "ords": [
+   "8"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11398386",
+  "list": "Q11636413",
+  "ords": [
+   "3"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11430895",
+  "list": "Q11658590",
+  "ords": [
+   "65"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11432381",
+  "list": "Q11498550",
+  "ords": [
+   "11",
+   "2"
+  ],
+  "list_says": [
+   "2"
+  ],
+  "class": "ordinalled side not confirmed by the list"
+ },
+ {
+  "item": "Q11435394",
+  "list": "Q11582137",
+  "ords": [
+   "8"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11470997",
+  "list": "Q11587179",
+  "ords": [
+   "25"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11479036",
+  "list": "Q11638477",
+  "ords": [
+   "19"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11487792",
+  "list": "Q11553385",
+  "ords": [
+   "64"
+  ],
+  "list_says": [
+   "64"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q11493857",
+  "list": "Q11368560",
+  "ords": [
+   "8"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11513674",
+  "list": "Q11498550",
+  "ords": [
+   "25"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11523055",
+  "list": "Q11609223",
+  "ords": [
+   "22"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11529679",
+  "list": "Q11368560",
+  "ords": [
+   "11"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11541065",
+  "list": "Q11380552",
+  "ords": [
+   "57"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11546041",
+  "list": "Q11386164",
+  "ords": [
+   "19"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11547445",
+  "list": "Q11498550",
+  "ords": [
+   "17"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11587896",
+  "list": "Q11658590",
+  "ords": [
+   "86"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11607305",
+  "list": "Q11467693",
+  "ords": [
+   "8"
+  ],
+  "list_says": [
+   "8"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q11611996",
+  "list": "Q11636502",
+  "ords": [
+   "1"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11616630",
+  "list": "Q11616621",
+  "ords": [
+   "2"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11635467",
+  "list": "Q11360308",
+  "ords": [
+   "7"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11660144",
+  "list": "Q11658590",
+  "ords": [
+   "43"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q11664487",
+  "list": "Q11498550",
+  "ords": [
+   "25"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q116968871",
+  "list": "Q11380552",
+  "ords": [
+   "51"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q123118271",
+  "list": "Q11458212",
+  "ords": [
+   "5"
+  ],
+  "list_says": [
+   "5"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q128867071",
+  "list": "Q11380552",
+  "ords": [
+   "43"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q134925870",
+  "list": "Q11380552",
+  "ords": [
+   "42"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q134926910",
+  "list": "Q11380552",
+  "ords": [
+   "38"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q134927876",
+  "list": "Q11380552",
+  "ords": [
+   "43"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q134930157",
+  "list": "Q11380552",
+  "ords": [
+   "2"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q134930537",
+  "list": "Q11458212",
+  "ords": [
+   "11"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q134930669",
+  "list": "Q11380552",
+  "ords": [
+   "42"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q135215048",
+  "list": "Q11381626",
+  "ords": [
+   "81"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q135288221",
+  "list": "Q11642130",
+  "ords": [
+   "26"
+  ],
+  "list_says": [
+   "26"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ },
+ {
+  "item": "Q17225931",
+  "list": "Q11378973",
+  "ords": [
+   "30"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q17226968",
+  "list": "Q11546334",
+  "ords": [
+   "20"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q17228423",
+  "list": "Q11378973",
+  "ords": [
+   "33"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q17988632",
+  "list": "Q11378973",
+  "ords": [
+   "98",
+   "94"
+  ],
+  "list_says": [
+   "98"
+  ],
+  "class": "ordinalled side not confirmed by the list"
+ },
+ {
+  "item": "Q17994300",
+  "list": "Q11546334",
+  "ords": [
+   "3"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q18337536",
+  "list": "Q11668489",
+  "ords": [
+   "17"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q18457651",
+  "list": "Q11458212",
+  "ords": [
+   "15",
+   "1",
+   "16",
+   "11"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q22120773",
+  "list": "Q11658590",
+  "ords": [
+   "18"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q3541617",
+  "list": "Q11378973",
+  "ords": [],
+  "list_says": [
+   "150"
+  ],
+  "class": "LIST names an ordinal WE DO NOT HAVE"
+ },
+ {
+  "item": "Q63148121",
+  "list": "Q11636502",
+  "ords": [
+   "45"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q65734340",
+  "list": "Q11546334",
+  "ords": [
+   "15"
+  ],
+  "list_says": [],
+  "class": "LIST NAMES IT NOWHERE"
+ },
+ {
+  "item": "Q85878507",
+  "list": "Q11386164",
+  "ords": [
+   "29"
+  ],
+  "list_says": [
+   "29"
+  ],
+  "class": "ordinalled side MATCHES the list -> blank is a duplicate"
+ }
+]

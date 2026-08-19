@@ -31,16 +31,33 @@ __NOTOC__
 : '''→ The reading to test:''' entries 28 and 39 are '''sections''' on their host shrine's Kokugakuin page (182801 and 182811) rather than pages of their own — which is exactly what the section qualifier P958 exists to express.
 : '''ASK:''' does that match what you see in the database — 28 and 39 as sections of the host's page? If so the fix is a P958 qualifier, not a hunt for missing ids, and it changes item 3 below as well.
 
-=== 2. The duplicated "part of" statements — not resolved, and the plain count misleads ===
+=== 2. The duplicated "part of" statements — ANSWERED 2026-08-19 ===
 
-''Your note was: "I am not sure what is going on here. But I think it is resolved. Not being as strong as claiming it 'is' resolved." You were right to hedge.''
+''Your note was: "I am not sure what is going on here. But I think it is resolved. Not being as strong as claiming it 'is' resolved." You were right to hedge — it is not resolved, and the shape is not what the old "22 duplicates" line said.''
 
-: '''✓ 2026-08-19 (bot):''' Counted. 116 item/list pairs carry more than one <code>part of</code> into the same 神名帳 list. Calling that "116 duplicates" would repeat a mistake withdrawn elsewhere this week, so split by ordinal:
+: '''✓ 2026-08-19 (bot):''' 116 item/list pairs carry more than one <code>part of</code> into the same 神名帳 list. Split by ordinal:
 :* '''14''' — the same ordinal repeated. The real defect.
-:* '''48''' — '''distinct ordinals. LEGITIMATE, do not touch.''' One shrine covering two register entries: this is the 坐韓国伊大弖神社 shape from item 1, not a bug.
-:* '''54''' — one side has no ordinal at all, sitting beside a properly-ordinalled one. The old piped-link import leftover shape.
-: The worst is tangled rather than doubled: [[d:Q110915859|Q110915859]] holds ordinals 20, 34, 16, 20, 34, 5, 14 into a single list.
-: '''ASK:''' the 54 with no ordinal — is an unqualified <code>part of</code> always the leftover to strip, or is it sometimes the only record that the shrine belongs to the list at all? Deciding that by shape rather than by reading them is how the other two classes went wrong.
+:* '''47''' — '''distinct ordinals. LEGITIMATE, do not touch.''' One shrine covering two register entries — the 坐韓国伊大弖神社 shape from item 1.
+:* '''55''' — one side carries no ordinal.
+: Worst is tangled rather than doubled: [[d:Q110915859|Q110915859]] holds ordinals 20, 34, 16, 20, 34, 5, 14 into one list.
+
+'''The question was whether an unqualified <code>part of</code> is always the leftover to strip. Checked against the list side — and the answer is NO.'''
+
+{| class="wikitable"
+! of the 55 !! what the list itself says !! what that means
+|-
+| '''42''' || the list names this item '''nowhere''' || removing the blank fixes nothing — it just deletes one of two claims the list never confirmed either way
+|-
+| '''10''' || names it at exactly the ordinal we already carry || '''the blank really is a leftover''' — safe to strip
+|-
+| '''2''' || does not confirm the ordinalled side || unresolved
+|-
+| '''1''' || names an ordinal the item '''does not carry''' || a different repair entirely — an add, not a removal
+|}
+
+: So a blanket "strip the unqualified ones" would have been wrong for '''45 of 55'''. Only the 10 are safe on this evidence. Full per-item data, all three classes, is committed at <code>modern-quickstatements/p361_multi_part_of_audit.json</code> so the 47 legitimate ones are recorded and a later pass cannot "clean" them.
+: '''ASK:''' the '''42''' where the list names the shrine nowhere are the same shape as the orphan problem in item 3 — an item claiming a membership the list does not reciprocate. Should they be worked as part of that, rather than as a duplicate-statement cleanup?
+: ''Nothing edited — Wikidata is locked until 2026-09-18.''
 
 === 3. Kokugakuin id matcher — the 18, named. And five of them are item 1. ===
 

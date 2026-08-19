@@ -1,0 +1,1466 @@
+{
+ "true_duplicate": [
+  {
+   "item": "Q110915859",
+   "ja": "御笏神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "34",
+    "20",
+    "14",
+    "5",
+    "34",
+    "20",
+    "16"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11390944",
+   "ja": "八幡宮来宮神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "28",
+    "11",
+    "28"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11442850",
+   "ja": "天満社",
+   "list": "Q11546334",
+   "list_en": "List of Shikinaisha in Musashi Province",
+   "ordinals": [
+    "7",
+    "7"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11481363",
+   "ja": "常宮神社",
+   "list": "Q11636413",
+   "list_en": "List of Shikinaisha in Echizen Province",
+   "ordinals": [
+    "34",
+    "33",
+    "29",
+    "29"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11490723",
+   "ja": "忌部神社",
+   "list": "Q11657514",
+   "list_en": "List of Shikinaisha in Awa Province (Tokushima)",
+   "ordinals": [
+    "18",
+    "19",
+    "18"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11512854",
+   "ja": "星宮社",
+   "list": "Q11465292",
+   "list_en": "List of Shikinaisha in Owari Province",
+   "ordinals": [
+    "103",
+    "103",
+    "104"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11631810",
+   "ja": "請田神社",
+   "list": "Q11368560",
+   "list_en": "List of Shikinaisha in Tanba Province",
+   "ordinals": [
+    "11",
+    "11",
+    "14"
+   ],
+   "list_says": [
+    "14"
+   ]
+  },
+  {
+   "item": "Q11677110",
+   "ja": "鹿島天足和気神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "25",
+    "26",
+    "28",
+    "25",
+    "26"
+   ],
+   "list_says": [
+    "28"
+   ]
+  },
+  {
+   "item": "Q11677158",
+   "ja": "鹿島緒名太神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "26",
+    "25",
+    "26",
+    "25"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q134893133",
+   "ja": "走湯神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "14",
+    "12",
+    "14"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q134926924",
+   "ja": "左内神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "65",
+    "45",
+    "65",
+    "45"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q134927474",
+   "ja": "八幡神社 (下田市吉佐美)",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "42",
+    "42",
+    "8",
+    "20"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135040786",
+   "ja": "坐韓国伊大弖神社",
+   "list": "Q11395853",
+   "list_en": "List of Shikinaisha in Izumo Province",
+   "ordinals": [
+    "39",
+    "39",
+    "28",
+    "28"
+   ],
+   "list_says": [
+    "28",
+    "29"
+   ]
+  },
+  {
+   "item": "Q30925511",
+   "ja": "浅間神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "3",
+    "60",
+    "3"
+   ],
+   "list_says": []
+  }
+ ],
+ "distinct_ordinals_LEGITIMATE": [
+  {
+   "item": "Q11361262",
+   "ja": "下立松原神社",
+   "list": "Q11450714",
+   "list_en": "List of Shikinaisha in Awa Province (Chiba)",
+   "ordinals": [
+    "3",
+    "5"
+   ],
+   "list_says": [
+    "5"
+   ]
+  },
+  {
+   "item": "Q11378828",
+   "ja": "伊予神社",
+   "list": "Q11378813",
+   "list_en": "List of Shikinaisha in Iyo Province",
+   "ordinals": [
+    "24",
+    "21"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11379322",
+   "ja": "伊射奈岐神社 (吹田市佐井寺)",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    "32",
+    "33"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11379324",
+   "ja": "伊射奈岐神社 (吹田市山田東)",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    "32",
+    "33"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11404276",
+   "ja": "北野天神社",
+   "list": "Q11546334",
+   "list_en": "List of Shikinaisha in Musashi Province",
+   "ordinals": [
+    "19",
+    "22"
+   ],
+   "list_says": [
+    "22"
+   ]
+  },
+  {
+   "item": "Q11433065",
+   "ja": "大前神社",
+   "list": "Q11361380",
+   "list_en": "List of Shikinaisha in Shimotsuke Province",
+   "ordinals": [
+    "5",
+    "6"
+   ],
+   "list_says": [
+    "5"
+   ]
+  },
+  {
+   "item": "Q11434131",
+   "ja": "大塩八幡宮",
+   "list": "Q11636413",
+   "list_en": "List of Shikinaisha in Echizen Province",
+   "ordinals": [
+    "34",
+    "29",
+    "33",
+    "23"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11438782",
+   "ja": "大虫神社 (与謝野町)",
+   "list": "Q11368516",
+   "list_en": "List of Shikinaisha in Tango Province",
+   "ordinals": [
+    "30",
+    "18"
+   ],
+   "list_says": [
+    "30"
+   ]
+  },
+  {
+   "item": "Q11442606",
+   "ja": "天手長男神社",
+   "list": "Q11429584",
+   "list_en": "List of Shikinaisha in Iki Island",
+   "ordinals": [
+    "14",
+    "13",
+    "24"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11556984",
+   "ja": "浅井神社 (一宮市)",
+   "list": "Q11465292",
+   "list_en": "List of Shikinaisha in Owari Province",
+   "ordinals": [
+    "15",
+    "14"
+   ],
+   "list_says": [
+    "15"
+   ]
+  },
+  {
+   "item": "Q11559099",
+   "ja": "海神神社",
+   "list": "Q11458212",
+   "list_en": "List of Shikinaisha in Tsushima",
+   "ordinals": [
+    "11",
+    "12",
+    "13",
+    "1"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q11597229",
+   "ja": "穴師坐兵主神社",
+   "list": "Q11433427",
+   "list_en": "List of Shikinaisha in Yamato Province",
+   "ordinals": [
+    "120",
+    "138"
+   ],
+   "list_says": [
+    "120"
+   ]
+  },
+  {
+   "item": "Q11608777",
+   "ja": "美具久留御魂神社",
+   "list": "Q11553385",
+   "list_en": "List of Shikinaisha in Kawachi Province",
+   "ordinals": [
+    "10",
+    "5"
+   ],
+   "list_says": [
+    "5"
+   ]
+  },
+  {
+   "item": "Q11665959",
+   "ja": "飛鳥坐神社",
+   "list": "Q11433427",
+   "list_en": "List of Shikinaisha in Yamato Province",
+   "ordinals": [
+    "160",
+    "158"
+   ],
+   "list_says": [
+    "158"
+   ]
+  },
+  {
+   "item": "Q11677857",
+   "ja": "黄金山神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "85",
+    "52"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q134893135",
+   "ja": "波夜多麻和気命神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "10",
+    "5"
+   ],
+   "list_says": [
+    "10"
+   ]
+  },
+  {
+   "item": "Q134926963",
+   "ja": "姫宮神社 (南伊豆町)",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "23",
+    "31"
+   ],
+   "list_says": [
+    "31"
+   ]
+  },
+  {
+   "item": "Q134927903",
+   "ja": "右内神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "36",
+    "65"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q134928742",
+   "ja": "二十五柱神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "79",
+    "75"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q134930603",
+   "ja": "両神社 (下田市)",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "5",
+    "37"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q134930633",
+   "ja": "波布比咩命神社 (下田市)",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "38",
+    "2"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135039294",
+   "ja": "畠田神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "65",
+    "76"
+   ],
+   "list_says": [
+    "76"
+   ]
+  },
+  {
+   "item": "Q135039477",
+   "ja": "浅井神社",
+   "list": "Q11465292",
+   "list_en": "List of Shikinaisha in Owari Province",
+   "ordinals": [
+    "28",
+    "15"
+   ],
+   "list_says": [
+    "28"
+   ]
+  },
+  {
+   "item": "Q135186675",
+   "ja": "江神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "152",
+    "154"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135186710",
+   "ja": "神舘飯野高市神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "161",
+    "171"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135186711",
+   "ja": "飯野神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "161",
+    "171"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135190252",
+   "ja": "六所神社",
+   "list": "Q11642130",
+   "list_en": "List of Shikinaisha in Tōtōmi Province",
+   "ordinals": [
+    "20",
+    "21",
+    "19"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135192783",
+   "ja": "二宮神社(坪田)",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "25",
+    "20",
+    "18"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135194870",
+   "ja": "大穴持美代神社",
+   "list": "Q11612019",
+   "list_en": "List of Shikinaisha in Noto Province",
+   "ordinals": [
+    "12",
+    "14"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135195607",
+   "ja": "本宮神社境外末社日御崎神社",
+   "list": "Q11395853",
+   "list_en": "List of Shikinaisha in Izumo Province",
+   "ordinals": [
+    "38",
+    "19"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q135198631",
+   "ja": "国津神社",
+   "list": "Q11429584",
+   "list_en": "List of Shikinaisha in Iki Island",
+   "ordinals": [
+    "24",
+    "16"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q1466105",
+   "ja": "廣田神社",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    "48",
+    "47",
+    "50",
+    "49"
+   ],
+   "list_says": [
+    "47"
+   ]
+  },
+  {
+   "item": "Q17225818",
+   "ja": "湯田神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "49",
+    "18"
+   ],
+   "list_says": [
+    "18"
+   ]
+  },
+  {
+   "item": "Q17226307",
+   "ja": "高積神社",
+   "list": "Q11604948",
+   "list_en": "List of Shikinaisha in Kii Province",
+   "ordinals": [
+    "9",
+    "18"
+   ],
+   "list_says": [
+    "18"
+   ]
+  },
+  {
+   "item": "Q17226544",
+   "ja": "中臣印達神社",
+   "list": "Q11498723",
+   "list_en": "List of Shikinaisha in Harima Province",
+   "ordinals": [
+    "16",
+    "15"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q17226795",
+   "ja": "佐那神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "53",
+    "65"
+   ],
+   "list_says": [
+    "53"
+   ]
+  },
+  {
+   "item": "Q17228121",
+   "ja": "堅田神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "35",
+    "22"
+   ],
+   "list_says": []
+  },
+  {
+   "item": "Q20043641",
+   "ja": "鹿島天足別神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "16",
+    "17"
+   ],
+   "list_says": [
+    "17"
+   ]
+  },
+  {
+   "item": "Q246455",
+   "ja": "龍田大社",
+   "list": "Q11433427",
+   "list_en": "List of Shikinaisha in Yamato Province",
+   "ordinals": [
+    "33",
+    "34"
+   ],
+   "list_says": [
+    "33"
+   ]
+  },
+  {
+   "item": "Q3461072",
+   "ja": "佐太神社",
+   "list": "Q11395853",
+   "list_en": "List of Shikinaisha in Izumo Province",
+   "ordinals": [
+    "63",
+    "64"
+   ],
+   "list_says": [
+    "63"
+   ]
+  },
+  {
+   "item": "Q482065",
+   "ja": "熱田神宮",
+   "list": "Q11465292",
+   "list_en": "List of Shikinaisha in Owari Province",
+   "ordinals": [
+    "106",
+    "103",
+    "114",
+    "105",
+    "104"
+   ],
+   "list_says": [
+    "105"
+   ]
+  },
+  {
+   "item": "Q705035",
+   "ja": "熊野本宮大社",
+   "list": "Q11604948",
+   "list_en": "List of Shikinaisha in Kii Province",
+   "ordinals": [
+    "26",
+    "27",
+    "28"
+   ],
+   "list_says": [
+    "26"
+   ]
+  },
+  {
+   "item": "Q705949",
+   "ja": "住吉大社",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    "1",
+    "3"
+   ],
+   "list_says": [
+    "1"
+   ]
+  },
+  {
+   "item": "Q708859",
+   "ja": "石上神宮",
+   "list": "Q11433427",
+   "list_en": "List of Shikinaisha in Yamato Province",
+   "ordinals": [
+    "216",
+    "207"
+   ],
+   "list_says": [
+    "207"
+   ]
+  },
+  {
+   "item": "Q723417",
+   "ja": "大麻比古神社",
+   "list": "Q11657514",
+   "list_en": "List of Shikinaisha in Awa Province (Tokushima)",
+   "ordinals": [
+    "1",
+    "3"
+   ],
+   "list_says": [
+    "1"
+   ]
+  },
+  {
+   "item": "Q72727981",
+   "ja": "長幡部神社",
+   "list": "Q11546334",
+   "list_en": "List of Shikinaisha in Musashi Province",
+   "ordinals": [
+    "37",
+    "34",
+    "35",
+    "36"
+   ],
+   "list_says": [
+    "34"
+   ]
+  },
+  {
+   "item": "Q98082987",
+   "ja": "天香山神社",
+   "list": "Q11433427",
+   "list_en": "List of Shikinaisha in Yamato Province",
+   "ordinals": [
+    "200",
+    "194"
+   ],
+   "list_says": []
+  }
+ ],
+ "blank_ordinal_side": [
+  {
+   "item": "Q107306769",
+   "ja": "網野神社",
+   "list": "Q11368516",
+   "list_en": "List of Shikinaisha in Tango Province",
+   "ordinals": [
+    "44",
+    null
+   ],
+   "list_says": [
+    "44"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q107664337",
+   "ja": "竹野神社",
+   "list": "Q11368516",
+   "list_en": "List of Shikinaisha in Tango Province",
+   "ordinals": [
+    "47",
+    null
+   ],
+   "list_says": [
+    "47"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q10896675",
+   "ja": "出雲大神宮",
+   "list": "Q11368560",
+   "list_en": "List of Shikinaisha in Tanba Province",
+   "ordinals": [
+    null,
+    "1"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q111776816",
+   "ja": "広瀬神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "53",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q112923996",
+   "ja": "青海神社",
+   "list": "Q11636502",
+   "list_en": "List of Shikinaisha in Echigo Province",
+   "ordinals": [
+    null,
+    "30"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q112953068",
+   "ja": "丸子神社 浅間神社",
+   "list": "Q11668489",
+   "list_en": "List of Shikinaisha in Suruga Province",
+   "ordinals": [
+    "21",
+    null
+   ],
+   "list_says": [
+    "21"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q11366320",
+   "ja": "中氷川神社",
+   "list": "Q11546334",
+   "list_en": "List of Shikinaisha in Musashi Province",
+   "ordinals": [
+    "20",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11371267",
+   "ja": "二上射水神社",
+   "list": "Q11636380",
+   "list_en": "List of Shikinaisha in Etchū Province",
+   "ordinals": [
+    "8",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11383014",
+   "ja": "佐倍乃神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "10",
+    null
+   ],
+   "list_says": [
+    "10"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q11393842",
+   "ja": "内々神社",
+   "list": "Q11465292",
+   "list_en": "List of Shikinaisha in Owari Province",
+   "ordinals": [
+    null,
+    "81"
+   ],
+   "list_says": [
+    "81"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q11396254",
+   "ja": "刈田嶺神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "8",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11398386",
+   "ja": "劔神社",
+   "list": "Q11636413",
+   "list_en": "List of Shikinaisha in Echizen Province",
+   "ordinals": [
+    null,
+    "3"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11430895",
+   "ja": "多珂神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "65",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11432381",
+   "ja": "大依羅神社",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    null,
+    "11",
+    "2"
+   ],
+   "list_says": [
+    "2"
+   ],
+   "verdict": "ordinalled side unconfirmed"
+  },
+  {
+   "item": "Q11435394",
+   "ja": "大庭神社",
+   "list": "Q11582137",
+   "list_en": "List of Shikinaisha in Sagami Province",
+   "ordinals": [
+    "8",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11470997",
+   "ja": "山辺神宮",
+   "list": "Q11587179",
+   "list_en": "List of Shikinaisha in Iwami Province",
+   "ordinals": [
+    null,
+    "25"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11479036",
+   "ja": "川田神社 (甲賀市土山町頓宮)",
+   "list": "Q11638477",
+   "list_en": "List of Shikinaisha in Ōmi Province",
+   "ordinals": [
+    "19",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11487792",
+   "ja": "彌刀神社",
+   "list": "Q11553385",
+   "list_en": "List of Shikinaisha in Kawachi Province",
+   "ordinals": [
+    null,
+    "64"
+   ],
+   "list_says": [
+    "64"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q11493857",
+   "ja": "愛宕神社",
+   "list": "Q11368560",
+   "list_en": "List of Shikinaisha in Tanba Province",
+   "ordinals": [
+    "8",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11513674",
+   "ja": "春日神社",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    "25",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11523055",
+   "ja": "村国神社",
+   "list": "Q11609223",
+   "list_en": "List of Shikinaisha in Mino Province",
+   "ordinals": [
+    "22",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11529679",
+   "ja": "松尾神社",
+   "list": "Q11368560",
+   "list_en": "List of Shikinaisha in Tanba Province",
+   "ordinals": [
+    "11",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11541065",
+   "ja": "楊原神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "57",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11546041",
+   "ja": "武水別神社",
+   "list": "Q11386164",
+   "list_en": "List of Shikinaisha in Shinano Province",
+   "ordinals": [
+    null,
+    "19"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11547445",
+   "ja": "比売許曽神社",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    "17",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11587896",
+   "ja": "磐椅神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "86",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11607305",
+   "ja": "綾戸国中神社",
+   "list": "Q11467693",
+   "list_en": "List of Shikinaisha in Yamashiro Province",
+   "ordinals": [
+    null,
+    "8"
+   ],
+   "list_says": [
+    "8"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q11611996",
+   "ja": "能生白山神社",
+   "list": "Q11636502",
+   "list_en": "List of Shikinaisha in Echigo Province",
+   "ordinals": [
+    null,
+    "1"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11616630",
+   "ja": "若狭彦神社",
+   "list": "Q11616621",
+   "list_en": "List of Shikinaisha in Wakasa Province",
+   "ordinals": [
+    "2",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11635467",
+   "ja": "赤城神社",
+   "list": "Q11360308",
+   "list_en": "List of Shikinaisha in Kōzuke Province",
+   "ordinals": [
+    "7",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11660144",
+   "ja": "零羊崎神社 (石巻市湊)",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "43",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q11664487",
+   "ja": "須久久神社",
+   "list": "Q11498550",
+   "list_en": "List of Shikinaisha in Settsu Province",
+   "ordinals": [
+    "25",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q116968871",
+   "ja": "守山八幡宮",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "51",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q123118271",
+   "ja": "天神多久頭魂神社",
+   "list": "Q11458212",
+   "list_en": "List of Shikinaisha in Tsushima",
+   "ordinals": [
+    "5",
+    null
+   ],
+   "list_says": [
+    "5"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q128867071",
+   "ja": "加畑賀茂神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "43",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q134925870",
+   "ja": "月間神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "42",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q134926910",
+   "ja": "三島神社 (南伊豆町妻良)",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    null,
+    "38"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q134927876",
+   "ja": "三島神社 (南伊豆町二條)",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "43",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q134930157",
+   "ja": "波布比咩命神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    null,
+    "2"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q134930537",
+   "ja": "和多都美御子神社",
+   "list": "Q11458212",
+   "list_en": "List of Shikinaisha in Tsushima",
+   "ordinals": [
+    "11",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q134930669",
+   "ja": "若宮神社",
+   "list": "Q11380552",
+   "list_en": "List of Shikinaisha in Izu Province",
+   "ordinals": [
+    "42",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q135215048",
+   "ja": "兵主神社",
+   "list": "Q11381626",
+   "list_en": "List of Shikinaisha in Tajima Province",
+   "ordinals": [
+    "81",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q135288221",
+   "ja": "大歳神社",
+   "list": "Q11642130",
+   "list_en": "List of Shikinaisha in Tōtōmi Province",
+   "ordinals": [
+    null,
+    "26"
+   ],
+   "list_says": [
+    "26"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  },
+  {
+   "item": "Q17225931",
+   "ja": "高河原神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "30",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q17226968",
+   "ja": "中氷川神社",
+   "list": "Q11546334",
+   "list_en": "List of Shikinaisha in Musashi Province",
+   "ordinals": [
+    "20",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q17228423",
+   "ja": "神前神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    "33",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q17988632",
+   "ja": "飯野高宮神山神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    null,
+    "98",
+    "94"
+   ],
+   "list_says": [
+    "98"
+   ],
+   "verdict": "ordinalled side unconfirmed"
+  },
+  {
+   "item": "Q17994300",
+   "ja": "杉山神社",
+   "list": "Q11546334",
+   "list_en": "List of Shikinaisha in Musashi Province",
+   "ordinals": [
+    null,
+    "3"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q18337536",
+   "ja": "豊積神社",
+   "list": "Q11668489",
+   "list_en": "List of Shikinaisha in Suruga Province",
+   "ordinals": [
+    "17",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q18457651",
+   "ja": "和多都美神社",
+   "list": "Q11458212",
+   "list_en": "List of Shikinaisha in Tsushima",
+   "ordinals": [
+    "15",
+    "1",
+    "16",
+    "11",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q22120773",
+   "ja": "行神社",
+   "list": "Q11658590",
+   "list_en": "List of Shikinaisha in Mutsu Province",
+   "ordinals": [
+    "18",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q3541617",
+   "ja": "椿大神社",
+   "list": "Q11378973",
+   "list_en": "List of Shikinaisha in Ise Province",
+   "ordinals": [
+    null,
+    null
+   ],
+   "list_says": [
+    "150"
+   ],
+   "verdict": "list names an ordinal the item does not carry -- different repair"
+  },
+  {
+   "item": "Q63148121",
+   "ja": "白山神社",
+   "list": "Q11636502",
+   "list_en": "List of Shikinaisha in Echigo Province",
+   "ordinals": [
+    "45",
+    null
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q65734340",
+   "ja": "多気比売神社",
+   "list": "Q11546334",
+   "list_en": "List of Shikinaisha in Musashi Province",
+   "ordinals": [
+    null,
+    "15"
+   ],
+   "list_says": [],
+   "verdict": "list names this item nowhere -- removing the blank fixes nothing"
+  },
+  {
+   "item": "Q85878507",
+   "ja": "墨坂神社",
+   "list": "Q11386164",
+   "list_en": "List of Shikinaisha in Shinano Province",
+   "ordinals": [
+    "29",
+    null
+   ],
+   "list_says": [
+    "29"
+   ],
+   "verdict": "ordinalled side confirmed by the list -- blank IS a leftover"
+  }
+ ]
+}

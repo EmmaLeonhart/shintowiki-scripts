@@ -853,34 +853,41 @@ https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
 - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
   this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
 
-## B1b. The 22 duplicated "part of" statements — Emma stopped short of calling it resolved
+## B1b. Duplicated "part of" statements — ANSWERED and RECORDED 2026-08-19; one gated remainder
 
-Her exact hedge on [[Open questions]]: *"I am not sure what is going on here. But I think it is
-resolved. Not being as strong as claiming it 'is' resolved."*
+Emma hedged that it might be resolved. It is not, and the answer to the actual question ("is an
+unqualified `part of` always the leftover to strip?") is **no**.
 
-**Counted 2026-08-19. It is NOT resolved, and the plain count is misleading — it must be split by
-ordinal.** 116 item/list pairs now carry more than one `part of` statement into the same Jinmyōchō
-list. Reporting that as "116 duplicates" would repeat the exact error B2 was just withdrawn for, so:
+**116 item/list pairs carry more than one `part of` into the same Jinmyōchō list.** Corrected counts
+— an earlier pass in this session said 14/48/54, which was off by one in two classes:
 
-| class | count | what it is |
+| class | count | disposition |
 |---|---|---|
-| **same ordinal repeated** | **14** | the real defect — a genuinely duplicated statement |
-| **distinct ordinals** | **48** | **LEGITIMATE — do not touch.** One shrine covering two register entries: this is the 坐韓国伊大弖神社 shape from B1a, not a bug |
-| **one side has no ordinal** | **54** | an unqualified `part of` sitting beside a properly-ordinal one — the piped-link import leftover shape |
+| same ordinal repeated | **14** | the real defect |
+| distinct ordinals | **47** | **LEGITIMATE, do not touch** — the 坐韓国伊大弖神社 shape |
+| one side has no ordinal | **55** | not one thing — see below |
 
-Worst examples are badly tangled, not simply doubled: `Q110915859 → Q11380552` holds ordinals
-`20, 34, 16, 20, 34, 5, 14` — seven statements, two of them repeated.
+Checking the 55 against the **list side** is what settled it:
 
-- [ ] **The 14 true duplicates** — a remove-one-of-each-pair fix. Remove-only per pair, but which of
-  two identical statements gets removed is not expressible in QuickStatements by value, so this is
-  the sequential-misc mechanism's job (built, tested, ships empty). BLOCKED-ON-EXTERNAL: Wikidata
-  lockout to 2026-09-18.
-- [ ] **The 54 missing-ordinal** — NEEDS-INVESTIGATION before any removal. An unqualified statement
-  may be the leftover to strip, or may be the only record that the shrine belongs to the list at all.
-  Deciding by shape rather than by reading them is how the last two classes went wrong.
-- [ ] **The 48 distinct-ordinal — leave alone.** Record them so a later pass does not "clean" them.
-- [ ] Correct the wiki bullet: it says 22 and Emma hedged that it might be resolved. It is 14 + 54,
-  and the 22 never described these three classes separately.
+| of the 55 | the list says | meaning |
+|---|---|---|
+| **42** | names the item **nowhere** | removing the blank fixes nothing; it deletes one of two claims the list never confirmed |
+| **10** | names it at the ordinal we already carry | **the blank really is a leftover** — safe |
+| **2** | does not confirm the ordinalled side | unresolved |
+| **1** | names an ordinal the item does not carry | a different repair — an **add**, not a removal |
+
+**A blanket "strip the unqualified ones" would have been wrong for 45 of 55.** That is the same
+over-matching error B2 was withdrawn for, caught before it produced a batch this time.
+
+All three classes are committed per-item at `modern-quickstatements/p361_multi_part_of_audit.json`,
+which is what makes the 47 legitimate ones durable — they were only in queue prose before, one
+careless "cleanup" away from being destroyed.
+
+- [ ] **The 14 true duplicates + the 10 confirmed leftovers** — BLOCKED-ON-EXTERNAL: Wikidata lockout
+  to **2026-09-18**. Which of two identical statements gets removed is not expressible in
+  QuickStatements by value, so this is the sequential-misc mechanism's job (built, tested, empty).
+- The **42** are the orphan shape, not a duplicate-statement problem — asked on the board whether to
+  fold them into the Kokugakuin/orphan work rather than treat them here.
 
 ## B1c. Restore the wiki-based queue — the blackout was the cause, and it is over
 

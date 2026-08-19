@@ -8894,3 +8894,27 @@ flagged rather than churned.
 original banned literals *naming* a known bot, which is why it caught 10 files and missed 48. It now
 bans any module-level agent built from a literal, whatever it calls itself, plus unexpanded
 `{contact(...)}`. 1495 tests pass.
+
+## 2026-08-19 (later still) — the unqualified "part of" statements are not leftovers
+
+Emma's question on [[Open questions]] was whether an unqualified `part of` is always the import
+leftover to strip. Checked all 116 multi-statement pairs against the **list side**, which is the
+evidence nobody had consulted:
+
+- **14** repeat the same ordinal — the real defect.
+- **47** carry distinct ordinals — LEGITIMATE, one shrine covering two register entries.
+- **55** have a blank-ordinal side, and they are not one thing:
+  **42** the list names nowhere (removing the blank fixes nothing), **10** the list confirms at the
+  ordinal we already hold (a genuine leftover), **2** unconfirmed, **1** where the list names an
+  ordinal the item lacks — an ADD, not a removal.
+
+**A blanket strip would have been wrong for 45 of 55.** Same over-matching shape B2 was withdrawn
+for, caught this time before it produced a batch.
+
+Counts corrected from an earlier pass this session that said 14/48/54 — off by one in two classes.
+
+All three classes are now committed per-item at `modern-quickstatements/p361_multi_part_of_audit.json`.
+That matters beyond the audit: the 47 legitimate pairs existed only as a number in queue prose, one
+careless cleanup away from destruction.
+
+Read-only throughout; Wikidata locked to 2026-09-18.
