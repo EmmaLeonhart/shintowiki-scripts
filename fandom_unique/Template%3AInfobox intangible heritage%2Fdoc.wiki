@@ -1,0 +1,147 @@
+{{Documentation subpage}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+This template is used for UNESCO intangible heritage sites.
+
+== Usage ==
+<syntaxhighlight lang="wikitext">
+{{Infobox intangible heritage
+|Name         = 
+|Image        = 
+|imagesize    = 
+|alt          = 
+|Caption      = 
+|Country      = 
+|ID           = 
+|Region       = 
+|Year         = 
+|Session      = 
+|List         = 
+|Below        = 
+|Note         = 
+}}
+</syntaxhighlight>
+
+== Example ==
+For example, the text to the left produces the infobox to the right ([[:en:Radif (music)|Radif (music)]]):
+{{Infobox intangible heritage
+| Image       = 
+| Caption     =
+| ICH         = The Radif of Iranian music
+| State Party = Iran
+| ID          = 00279
+| Region      = APA
+| Year        = 2009
+| Session     = 4th
+| List        = Representative
+| Below       =
+| Note        =
+}}
+<syntaxhighlight lang="wikitext">{{Infobox intangible heritage
+| Image       = 
+| Caption     =
+| ICH         = The Radif of Iranian music
+| State Party = Iran
+| ID          = 00279
+| Region      = APA
+| Year        = 2009
+| Session     = 4th
+| List        = Representative
+| Below       =
+| Note        =
+}}</syntaxhighlight>
+
+*Image: Image related to list item
+*Caption: Image caption
+*ICH: Subject title
+*State Party: Country which applied for the subject to be added the list
+*ID: ######.
+*Region: AFR, AST, APA, ENA, or LAC
+*Year: Year the subject was added to the list
+*Session: Session that year
+*List: Representative, Need of Urgent Safeguarding, or Good Safeguarding Practices
+*Below: For an extra image
+*Note: An extra note, or image caption
+
+== TemplateData ==
+<templatedata>
+{
+	"params": {
+		"child": {
+			"aliases": [
+				"embed"
+			]
+		},
+		"infoboxwidth": {},
+		"Name": {
+			"aliases": [
+				"ICH"
+			]
+		},
+		"Image": {},
+		"imagesize": {},
+		"alt": {},
+		"Caption": {
+			"aliases": [
+				"imagecaption"
+			]
+		},
+		"State Party": {},
+		"Country": {},
+		"Countries": {},
+		"State Parties": {},
+		"Domains": {},
+		"Criteria": {},
+		"Link": {},
+		"ID": {},
+		"Region": {},
+		"Coordinates": {},
+		"Year": {},
+		"Extension": {},
+		"List": {},
+		"Session": {},
+		"Below": {},
+		"Note": {}
+	},
+	"paramOrder": [
+		"child",
+		"infoboxwidth",
+		"Name",
+		"Image",
+		"imagesize",
+		"alt",
+		"Caption",
+		"State Party",
+		"State Parties",
+		"Country",
+		"Countries",
+		"Domains",
+		"Criteria",
+		"Link",
+		"ID",
+		"Region",
+		"Coordinates",
+		"Year",
+		"Extension",
+		"List",
+		"Session",
+		"Below",
+		"Note"
+	],
+	"format": "block"
+}
+</templatedata>
+
+== See also ==
+{{UNESCO templates}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Masterpieces of the Oral and Intangible Heritage of Humanity templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

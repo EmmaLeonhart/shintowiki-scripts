@@ -1,0 +1,40 @@
+<!--I am adding this comment because I am now syncing these pages with git. The syncing reason is relatively straightforward: Most of them have vague references to shrines that may or may not even exist. I  want to do a series of SPARQL queries on wikidata that generate actual lists of these shrines that eventually sync to new information being added to wikidata.-->
+[[Category:Independently git synced pages]]
+
+'''Kamo Shrine''' (鴨神社) is a [[Shinto shrine]] name shared by several shrines in Japan.
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Kamo Shrine (Q106852684)|lt=Kamo Shrine|qid=Q106852684}} — Higashimiyoshi
+* {{ill|Kamo Shrine (Q11675602)|lt=Kamo Shrine|qid=Q11675602}} — Settsu Province
+* {{ill|Kamo Shrine (Q134989361)|lt=Kamo Shrine|qid=Q134989361}} — Sakaide
+* {{ill|Kamo Shrine (Q135039165)|lt=Kamo Shrine|qid=Q135039165}} — Izumi Province
+* {{ill|Kamo Shrine (Q135195211)|lt=Kamo Shrine|qid=Q135195211}} — Hikami district
+* {{ill|Kamo Shrine (Ise) (Q11675601)|lt=Kamo Shrine (Ise)|qid=Q11675601}}
+* {{ill|Kamo Shrine (Tamaki) (Q17226771)|lt=Kamo Shrine (Tamaki)|qid=Q17226771}} — Tamaki
+* {{ill|Kamogami Shrine (Q135070272)|lt=Kamogami Shrine|qid=Q135070272}} — Awa Province
+* {{ill|Kamono Shrine (Q135039432)|lt=Kamono Shrine|qid=Q135039432}} — Inabe district
+* {{ill|Kamono Shrine (Q135041197)|lt=Kamono Shrine|qid=Q135041197}} — Bizen Province
+* {{ill|Kamono Shrine (Q135041213)|lt=Kamono Shrine|qid=Q135041213}} — Bizen Province
+* {{ill|Kamono Shrine (Q135041214)|lt=Kamono Shrine|qid=Q135041214}} — Bizen Province
+* {{ill|Kamono Shrine (Q135098878)|lt=Kamono Shrine|qid=Q135098878}} — Takayasu district
+* {{ill|鴨神社 (Q134988777)|lt=鴨神社|qid=Q134988777}} — Sakaide
+* {{ill|鴨神社 (Q137682633)|lt=鴨神社|qid=Q137682633}} — Inabe
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{wikidata link|Q17226771|ja|鴨神社 (玉城町)}}
+[[Category:125 Shrines of Ise]]
+[[Category:Kamo Shrines]]
+[[Category:Kokuhei-sha]]
+[[Category:Setsumatsusha]]
+[[Category:Shikinaisha in Ise Province]]
+[[Category:Shinto_shrines_in_Mie_Prefecture]]
+[[Category:Shrine disambiguations]]
+[[Category:Tamaki,_Mie]]
+[[Category:Wikidata has short description]]
+[[Category:Shikinai Shōsha]]
+[[Category:Translated pages]]
+[[Category:Translated]]

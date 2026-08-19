@@ -1,0 +1,32 @@
+<!-- shrine-disambig-page: refresh wikidata list -->
+
+'''Isobe Shrine''' (石部神社, ''Isobe Jinja'').
+
+* {{ill|Isobe Shrine (Komatsu City)|lt=Isobe Shrine (Komatsu City)|lt=Isobe Shrine (Komatsu)|ja|石部神社 (小松市)|12=simple|13=User:Immanuelle/Isobe Shrine (Komatsu)|qq=}} ({{ill|Komatsu, Ishikawa|en|Komatsu, Ishikawa|qid=Q646898|lt=Komatsu|1=Komatsu, Ishikawa}}, {{ill|Ishikawa Prefecture|en|Ishikawa Prefecture|qid=Q131281|lt=Ishikawa Prefecture|1=Ishikawa Prefecture}}) - A Shikinaisha (Minor Shrine) listed in the {{ill|Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|12=simple|13=User:Immanuelle/Engishiki|13=User:Immanuelle/Engishiki Jinmyōchō|qq=}}. Former shrine Rank under the {{ill|Modern system of ranked Shinto shrines|en|Modern system of ranked Shinto shrines|comment=this used to link to modern system but that one is too overlinked|lt=Modern system of Ranked Shinto shrines|1=Modern system of ranked Shinto shrines}}: Gōsha (Village Shrine).
+* {{ill|Isobe Shrine (Toyooka)|ja|石部神社 (豊岡市)|12=simple|13=User:Immanuelle/Isobe Shrine (Toyooka)|qq=}} ({{ill|Toyooka, Hyōgo|en|Toyooka, Hyōgo|qid=Q696388|lt=Toyooka|1=Toyooka, Hyōgo}}, {{ill|Hyōgo Prefecture|en|Hyōgo Prefecture|qid=Q130290|lt=Hyōgo Prefecture|1=Hyōgo Prefecture}}) - A Shikinaisha (Minor Shrine). Former shrine Rank: Gōsha (Village Shrine).
+
+{{disambiguation}}
+
+<!-- BEGIN: auto-generated Wikidata shrine list -->
+== Shrines with this name ==
+
+* {{ill|Asakonoisobeno Shrine (Q135040605)|lt=Asakonoisobeno Shrine|qid=Q135040605}} — Asago district
+* {{ill|Isobe Shrine (Q11587231)|lt=Isobe Shrine|qid=Q11587231}} — Komatsu
+* {{ill|Isobe Shrine (Q11587232)|lt=Isobe Shrine|qid=Q11587232}} — Izushi district
+* {{ill|Isoheno Shrine (Q135039404)|lt=Isoheno Shrine|qid=Q135039404}} — Asake district
+* {{ill|Isoheno Shrine (Q135039803)|lt=Isoheno Shrine|qid=Q135039803}} — Ōmi Province
+* {{ill|Isoheno Shrine (Q135039812)|lt=Isoheno Shrine|qid=Q135039812}} — Echi district
+* {{ill|Isoheno Shrine (Q135040158)|lt=Isoheno Shrine|qid=Q135040158}} — Imadate district
+* {{ill|Isoheno Shrine (Q135041174)|lt=Isoheno Shrine|qid=Q135041174}} — Kamo district
+* {{ill|Tokano- Shrine (Q135040606)|lt=Tokano- Shrine|qid=Q135040606}} — Asago district
+* {{ill|石部神社 (Q134955799)|lt=石部神社|qid=Q134955799}} — Suruga-ku
+<!-- END: auto-generated Wikidata shrine list -->
+
+{{translated page|ja|石部神社|version=39192406|comment=Imported full ja history}}
+
+{{wikidata link|Q11587230|ja|石部神社}}
+[[Category:All disambiguation pages]]
+[[Category:Shrine disambiguations]]
+[[Category:shrine disambiguations]]
+[[Category:Wikidata has short description]]
+[[Category:Independently git synced pages]]

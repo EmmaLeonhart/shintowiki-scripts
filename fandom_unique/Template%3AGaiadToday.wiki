@@ -1,0 +1,9 @@
+{{#invoke:GaiadDate|today
+ | anchor   = {{{anchor|12-21}}}
+ | months   = {{{months|Capricorn,Aquarius,Pisces,Aries,Taurus,Gemini,Cancer,Leo,Virgo,Libra,Scorpio,Sagittarius,Ophiuchus}}}
+ | weekdays = {{{weekdays|Sun,Mon,Tue,Wed,Thu,Fri,Sat}}}
+}}
+<noinclude>[[Category:Independently git synced pages]]
+[[Category:git synced templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>

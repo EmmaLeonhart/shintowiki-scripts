@@ -1,0 +1,621 @@
+{{Documentation subpage}}
+
+{{High-use| 3375 }}
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Location map|Module:Coordinates|Module:Check for unknown parameters|Module:Wikidata}}
+{{Uses Wikidata|P18}}
+
+This template is flexible enough to be used to provide a box containing an information summary for many historical and cultural locations, even though it was originally created for use with articles about ancient sites, excavations and constructions.
+
+== Usage ==
+To use this template, simply copy the text from the box below, paste it at the top of your article, then complete any of the parameters which apply to the archaeological site which you are describing. Only a value for the "'''name'''" parameter is required; all others are optional.
+
+Use as few or many of the following fields as you wish. Fields for which no information is provided will not be displayed in your infobox. The more fields for which you add information, the longer will be your infobox. Infoboxes which include data for a large number of fields can interfere with other elements of your article.
+
+{{Parameter names example | name | native_name | native_name_lang | alternate_name | image | image_size | alt | caption | map_type=Earth | map_caption | altitude_m=10 | coordinates={{coord|0|0|type:landmark|display=inline}} | location | region | type | part_of | length | width | area | volume | diameter | circumference | height | builder | material | built | abandoned | epochs | cultures | dependency_of | occupants | event | discovered | excavations | archaeologists | condition | ownership | management | public_access | other_designation | website | architectural_styles | architectural_details | notes}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox ancient site
+| name           = 
+| native_name    = 
+| native_name_lang =
+| alternate_name = 
+| image          = 
+| image_size     = 
+| alt            = 
+| caption        = 
+| map            = 
+| map_type       = 
+| map_alt        = 
+| map_caption    = 
+| map_size       = 
+| mapframe       = 
+| altitude_m     = 
+| altitude_ref   = 
+| relief         = 1
+| coordinates    = 
+| gbgridref      = 
+| map_dot_label  = 
+| marksize       = 
+| location       = 
+| region         = 
+| type           = 
+| part_of        = 
+| length         = 
+| width          = 
+| area           = 
+| volume         = 
+| diameter       = 
+| circumference  = 
+| height         = 
+| builder        = 
+| material       = 
+| built          = 
+| abandoned      = 
+| epochs         = 
+| cultures       = 
+| dependency_of  = 
+| occupants      = 
+| event          = 
+| discovered     = 
+| excavations    = 
+| archaeologists = 
+| condition      = 
+| ownership      = 
+| management     = 
+| public_access  = 
+| other_designation =
+| website        = 
+| architectural_styles =
+| architectural_details =
+| notes          = 
+}}
+</syntaxhighlight>
+; Designations
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+| designation1            =
+| designation1_offname    =
+| designation1_type       =
+| designation1_criteria   =
+| designation1_date       =
+| delisted1_date          =
+| designation1_partof     =
+| designation1_number     =
+| designation1_free1name  =
+| designation1_free1value =
+| designation1_free2name  =
+| designation1_free2value =
+| designation1_free3name  =
+| designation1_free3value =
+| designation2            =
+| designation2_offname    =
+| designation2_type       =
+| designation2_criteria   =
+| designation2_date       =
+| delisted2_date          =
+| designation2_partof     =
+| designation2_number     =
+| designation2_free1name  =
+| designation2_free1value =
+| designation2_free2name  =
+| designation2_free2value =
+| designation2_free3name  =
+| designation2_free3value =
+</syntaxhighlight>
+
+;Identifiers
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+| nhle =
+| hillfort =
+| megaj =
+| hes =
+</syntaxhighlight>
+
+===Parameters===
+Many of the titles displayed are broadly inclusive, and the descriptions below are suggestions. If you cannot find a description which exactly matches the information you wish to present, find the closest match. Again, only the "name" parameter is required.
+
+::::'''General information regarding the site or structure'''
+* '''name =''' Name of the archaeological site or feature as spelled in English references ''(required)''
+* '''native_name =''' Name in the local language or spelling (this displays below title if present). In some cases it is useful to mention two native names. For example, some ancient Greek cities in Turkey also have a name in Turkish beside their Greek and Latin (English) name. Both names can be mentioned in this entry if they are separated with the <code><nowiki><br></nowiki></code> tag to insert a line break. For example, in the case of [[Miletus]] <code><nowiki>Μίλητος<br>Milet</nowiki></code> is used.
+* '''alternate_name =''' Other name(s) by which the site is known. Most often this entry is used best for alternative names of the site in English. The transliteration of a foreign-language name into English often produces multiple English names with slightly different spellings. Displays as '''Alternative name''' for [[MOS:COMMONALITY|Engvar reasons]].
+* '''image =''' Filename of image showing the site
+* '''imagealttext =''' [[Wikipedia:Alternative text for images|Alternative text]] describing the image
+* '''caption =''' Text for a caption beneath image
+* '''map_type =''' Name of the map as displayed in [[Template:Location map/List]], without the words "Location map"
+* '''map_alt =''' [[Wikipedia:Alternative text for images|Alternative text]] describing the map
+* '''map_caption =''' A caption for the map, if this entry is removed a default caption "Shown in (map name)" will be given in case the map_type entry is filled
+* '''map_size =''' Width of map displayed. Leave empty or remove to get the default size of 220 pixels. In some cases this default does not work well for maps which are very wide, such as the map of Turkey. In that case the map size can be increased to 270. This does not increase the standard width of the whole infobox as long as an image is used in the infobox.
+* '''relief =''' Any non-blank value (<code>yes</code>, <code>1</code>, etc.) will cause the template to display a [[relief mapping (computer graphics)|relief map]] image, where available. Defaults to enabled. For additional information, see [[Template:Location map#Relief parameter]].
+* '''coordinates =''' {{tlx|coord}}
+* '''location =''' Area where the site is located, generally in the form of: town, province/state, possibly the administrative region and ending with the country. For example: [[Montalto di Castro]], [[Province of Viterbo]], [[Lazio]], [[Italy]] for the article of [[Vulci]].
+* '''region =''' Use to specify the geographical region of the site, either ancient, modern or both. For example, the [[Yucatán Peninsula]], [[Attica]] or [[Mesopotamia]]. Do not mention administrative divisions such as provinces here, those should be put in the ''location'' entry.
+* '''type =''' Site type ([[tomb]], [[fortification]], [[Military camp|encampment]], [[temple]], [[tumulus]], [[Human settlement|settlement]], etc.)
+* '''part_of =''' Name of main site, if part of larger site or complex
+* '''length =''' Length of site in meters/kilometers, converted to imperial units with [[Template:Convert]], for example <nowiki>{{convert|50|m|abbr=on}}</nowiki>
+* '''width =''' Width of site in meters/kilometers, converted to imperial units with [[Template:Convert]], for example <nowiki>{{convert|1|km|abbr=on}}</nowiki>
+* '''area =''' Area covered by the site or structure in [[hectare]] (or in square kilometers if exceeding 1&nbsp;km{{sup|2}}), converted to imperial [[acre]]s (or square miles) with [[Template:Convert]], for example <nowiki>{{convert|5|ha|abbr=on}}</nowiki>
+* '''volume =''' 
+* '''diameter =''' Diameter of a circular structure such as a barrow.
+* '''circumference ='''
+* '''height =''' Greatest height of preserved remains in meters, converted to imperial units with [[Template:Convert]]<br />&nbsp;
+
+:::'''History of the site or structure'''
+* '''builder =''' If known, name of person or people who built the site
+* '''material =''' Significant construction materials (stone, plaster, concrete, brick, wood)
+* '''built =''' Year of construction: c. (circa) or period if year unknown (the label for this field appears as "'''Founded'''")
+* '''abandoned =''' Year went out of use or destroyed: c. (circa) or period if year unknown
+* '''epochs =''' Period(s) during which the site was in use (e.g., Bronze Age II&ndash;Iron Age I)
+* '''cultures =''' Cultures which evidence has shown to have occupied the site. This can be an [[archaeological culture]] but also a culture in the sense of a people. Mention the archaeological culture in the form of a noun minus the word "culture" and mention a people in the form of an adjective. For example, a wikilink to <nowiki>[[Vinča culture]]</nowiki> becomes <nowiki>[[Vinča culture|Vinča]]</nowiki>; <nowiki>[[Celts]]</nowiki> becomes <nowiki>[[Celts|Celtic]]</nowiki>. See [[Vinča-Belo Brdo]] for an example.
+* '''dependency_of =''' If a satellite dependency (e.g., outlying village, quarry, etc.), specify the controlling nearby city or site
+* '''occupants =''' Significant historical figures occupying or associated with the site
+* '''event =''' Significant historical event(s) associated with the site<br />&nbsp;
+
+:::'''Other information and notes about the site or structure'''
+* '''excavations =''' Years for major excavation work
+* '''archaeologists =''' Superintending archeologist(s)
+* '''condition =''' Present condition of the remains (no extant remains, restored, ruined, etc.)
+* '''ownership =''' Is the site on private or public property
+* '''management =''' Pertinent info about the management of the site (private manager, admission fee, etc.)
+* '''public_access =''' Is the site open to public visits (Yes, No, Limited)
+* '''website =''' Use only if the site has an official web presence. Use {{Tl|URL}} or simply <nowiki>[http://www.very-long-url-here.com Link description]</nowiki> if the link is too long
+* '''notes =''' any additional necessary explanatory notes
+
+:::'''Designations'''
+Up to 2 designations are allowed. Normally designations are listed in decreasing scope (i.e. an international designation first, followed by a national one, etc.). Each designation is represented by a colored bar, controlled by the {{tl|Designation}} template. Though the Designation template is used in the background here, it can be used as a stand-alone template to create tables, lists, and even other infoboxes. For more information see [[Template:Designation/doc]].
+
+To display a designation, there are several templates. While no parameters are necessary, it is recommended that at least the designation date and reference number (if applicable) are known before adding the designation. For each designation (1-2) the following parameters may be used:
+
+''designation1'' – Input the callname of the designation here. For a list of supported callnames, see [[Template:Designation/doc#Supported designations]].
+::'''Example format –''' <code>|&nbsp;designation1 = World Heritage Site</code>
+''designation1_offname'' – The official name of the historic site, as listed in the register. If the official name is the same as the common name at the top of the infobox, this field is not necessary. If more than one name is included on the register, include all of them.
+::'''Example format –''' <code>|&nbsp;designation1_offname = Obélisque antique</code>
+''designation1_type'' – Some registers have certain types of designations (i.e. "Natural" and "Cultural", "Grade I" and "Grade II", etc.). If the type is closely associated with the designation, input that type here.
+::'''Example format –''' <code>|&nbsp;designation1_type = Cultural</code>
+''designation1_criteria'' – Some registers require sites to meet specific criteria (normally one or more items in a list) for inclusion. If the criteria is known, input it here.
+::'''Example format –''' <code>|&nbsp;designation1_criteria = ii, iv</code>
+''designation1_date'' – Date when the site received this designation. Normally this parameter needs a reference (make sure it is properly formatted).
+::'''Example format –''' <code>|&nbsp;designation1_date = <nowiki>March 4, 1972<ref>{{cite web|...}}</ref></nowiki></code>
+''delisted1_date'' – If a site has been removed from a designation's list, this is the date of delisting. Setting a value to this parameter causes the designation's color bar to turn grey and adds the word "Former" to the beginning. This parameter also needs a reference.
+::'''Example format –''' <code>|&nbsp;delisted1_date = <nowiki>March 5, 1972<ref>{{cite web|...}}</ref></nowiki></code>
+''designation1_partof'' – Some designations are part of larger designations (i.e. an individually designated building inside a designated district or an individually designated district in a designated city). For example, [[Ellis Island]] is a part of the [[Statue of Liberty National Monument]]; both are listed as [[New York City Landmark]]s. If the larger designation is listed on the same register, include the name of the larger designation here. If a Wikipedia article exists about that designation, link to it.
+::'''Example format –''' <code>|&nbsp;designation1_partof = <nowiki>[[Statue of Liberty National Monument]]</nowiki></code>
+''designation1_number'' – Most registers include unique reference numbers for each site so that they can be searched for more easily than by name (There may be two Jones Houses on the register, but they have unique reference numbers). Include this reference number here.
+::'''Example format –''' <code>|&nbsp;designation1_number = 70010045</code>
+
+For designation 2, these same parameters are used, only "designation1" in all the parameters is replaced by "designation2", "designation3", etc.
+
+:::'''Custom designation parameters'''
+Besides all of these hard-coded parameters there is also the possibility of adding up to 3 custom parameters for each designation. These can be used for information specific to that single register (such as "Region" for World Heritage Sites or "Multiple Property Submission" to the U.S. National Register of Historic Places). If there is anything extra needed to fully identify the designated site, include it here.
+''designation1_free1name'' – The name (bolded part) of the 1st custom parameter you would like to identify.
+::'''Example format –''' <code>|&nbsp;designation1_free1name = Region</code>
+''designation1_free1value'' – The value to which you want to set the custom parameter.
+::'''Example format –''' <code>|&nbsp;<nowiki>designation1_free1value = [[World Heritage Sites in Europe|Europe and North America]]</nowiki></code>
+
+Up to three custom parameters can be named and defined for each parameter (<code>|&nbsp;designation1_free2name =</code>, <code>|&nbsp;designation1_free2value =</code>, etc.).
+
+{{Para|other_designation}} may be used for designations not covered by the above.
+
+:::'''Identifiers'''
+These parameters are for adding numbers or labels that uniquely identify the site in a database (e.g. national registers, widely used catalogues and gazetteer). Where available they will automatically generate a link to the site's entry in that database. The following databases are currently supported:
+
+* '''nhle =''' number of the site in the [[National Heritage List for England]] (NHLE Code), e.g. 1018385
+* '''hillfort =''' number of the site in the ''[[Atlas of Hillforts of Britain and Ireland]]'', e.g. 0425, do '''not''' include the country code (EN, WA, SC, NI, IR).
+* '''megaj =''' [[Middle Eastern Geodatabase for Antiquities (MEGA)]] Jordan Number
+* '''hes = ''' number of the site in the [[Historic Environment Scotland]] database, e.g. SM90209
+
+====Mapframe maps====
+{{Infobox mapframe/doc/parameters
+  | onByDefault = yes, unless any of these are present: {{para|map}}, {{para|map_type}}
+  | mapframe-type = landmark
+}}
+
+=== Policy ===
+* Per [[Wikipedia:Manual of Style/Icons#Flags]] flag icons should not be used in this template.
+* Per [[Wikipedia:Manual of Style/Icons#Appropriate use]], do not add language icon templates to native names of ancient sites, because it may break the template. Do use them after URLs which lead to a website in a foreign language.
+
+==Examples==
+
+===Structure===
+{{Infobox ancient site
+| name = Palace of Potytles
+| native_name =
+| alternate_name = Potytleon
+| image = Example svg.svg
+| imagealttext = Looking down onto tumbled, colorful ashlars
+| caption = House of Potytles excavation (fictional)
+| map_type =
+| map_alt =
+| map_size =
+| location = Izmir (Smyrna)
+| region =
+| type = Dwelling
+| part_of = Acropolis
+| length =
+| width =
+| area = {{convert|2.05|km2|abbr=on}}
+| height =
+| builder = Hyxixus
+| material = Stone
+| built = c. 480 BCE
+| abandoned = c. 430 BCE
+| epochs = Bronze II–Hellenistic
+| cultures =
+| dependency_of =
+| occupants = Potytles, [[Cimon]]
+| event =
+| excavations =
+| archaeologists =
+| condition = Partial restoration
+| ownership = Public
+| management = Private concessionaire, entry fee
+| public_access = No
+| website =
+| notes = Active excavation
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox ancient site
+| name = Palace of Potytles
+| native_name =
+| alternate_name = Potytleon
+| image = Example svg.svg
+| imagealttext = Looking down onto tumbled, colorful ashlars
+| caption = House of Potytles excavation (fictional)
+| map_type =
+| map_alt =
+| map_size =
+| location = Izmir (Smyrna)
+| region =
+| type = Dwelling
+| part_of = Acropolis
+| length =
+| width =
+| area = {{convert|2.05|km2|abbr=on}}
+| height =
+| builder = Hyxixus
+| material = Stone
+| built = c. 480 BCE
+| abandoned = c. 430 BCE
+| epochs = Bronze II–Hellenistic
+| cultures =
+| dependency_of =
+| occupants = Potytles, [[Cimon]]
+| event =
+| excavations =
+| archaeologists =
+| condition = Partial restoration
+| ownership =
+| management = Private concessionaire, entry fee
+| public_access = No
+| website =
+| notes = Active excavation
+}}
+</syntaxhighlight>
+{{clear}}
+
+===Larger site===
+{{Infobox_ancient_site
+| name = Ras Ibn Hani
+| native_name = رأس ابن هاني
+| native_name_lang = ar
+| alternate_name = Betyllion
+| image = RasIbnHani,tomb1.jpg
+| imagealttext = A corridor built of ashlars leads to a ruined archway
+| caption = A tomb at Ras Ibn Hani
+| map_type = Syria
+| map_alt = Located on the Mediterranean coast of Syria
+| coordinates = {{coord|35|35|6|N|35|44|45.6|E|display=inline}}
+| location = [[Latakia]], [[Syria]]
+| region =
+| type = Settlement
+| part_of =
+| length =
+| width =
+| area = {{convert|2|ha|abbr=on}}
+| height =
+| builder =
+| material =
+| built =
+| abandoned =
+| epochs = Late Bronze–Early Byzantine
+| cultures = Canaanite, Hellenistic, Roman
+| dependency_of = [[Ugarit]]
+| occupants =
+| event =
+| excavations =
+| archaeologists =
+| condition =
+| ownership = Mixed public and private
+| public_access = Partial
+| website =
+| notes = Now is the site of [[Cote d'Azur, Syria|Cote d'Azur]]
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox_ancient_site
+| name = Ras Ibn Hani
+| native_name = رأس ابن هاني
+| native_name_lang = ar
+| image = RasIbnHani,tomb1.jpg
+| imagealttext = A corridor built of ashlars leads to a ruined archway
+| caption = A tomb at Ras Ibn Hani
+| map_type = Syria
+| map_alt = Located on the Mediterranean coast of Syria
+
+| coordinates = {{coord|35|35|6|N|35|44|45.6|E|display=inline}}
+| location = [[Latakia]], [[Syria]]
+| region =
+| type = Settlement
+| part_of =
+| length =
+| width =
+| area = {{convert|2|ha|abbr=on}}
+| height =
+| builder =
+| material = 
+| built =
+| abandoned =
+| epochs = Late Bronze–Early Byzantine
+| cultures = Canaanite, Hellenistic, Roman
+| dependency_of = [[Ugarit]]
+| occupants =
+| event =
+| excavations =
+| archaeologists =
+| condition =
+| ownership = Mixed public and private
+| public_access = Partial
+| website =
+| notes = Now is the site of [[Cote d'Azur, Syria|Cote d'Azur]]
+}}
+</syntaxhighlight>
+{{clear}}
+
+==Template data==
+
+<templatedata>
+{
+	"params": {
+		"embed": {
+			"description": "Set to \"yes\" if this infobox is embedded within another one",
+			"type": "string",
+			"suggestedvalues": [
+				"no",
+				"yes"
+			]
+		},
+		"name": {},
+		"native_name": {},
+		"native_name_lang": {},
+		"qid": {},
+		"suppressfields": {},
+		"fetchwikidata": {},
+		"image": {},
+		"image_size": {},
+		"imagewidth": {},
+		"image_upright": {},
+		"alt": {},
+		"imagealttext": {},
+		"caption": {},
+		"map": {},
+		"map_size": {},
+		"mapwidth": {},
+		"map_alt": {},
+		"map_type": {},
+		"map_caption": {},
+		"relief": {},
+		"coordinates": {},
+		"map_overlay": {},
+		"marksize": {},
+		"map dot label": {},
+		"map_dot_label": {},
+		"map_label_position": {},
+		"other_name": {
+			"aliases": [
+				"alternate_name"
+			],
+			"type": "string"
+		},
+		"location": {},
+		"region": {},
+		"gbgridref": {},
+		"altitude_m": {},
+		"altitude_ref": {},
+		"grid_name": {},
+		"grid_position": {},
+		"type": {},
+		"part_of": {},
+		"length": {},
+		"width": {},
+		"area": {},
+		"volume": {},
+		"diameter": {},
+		"circumference": {},
+		"height": {},
+		"builder": {},
+		"material": {},
+		"built": {},
+		"abandoned": {},
+		"epochs": {},
+		"cultures": {},
+		"occupants": {},
+		"event": {},
+		"dependency_of": {},
+		"excavations": {},
+		"archaeologists": {},
+		"condition": {},
+		"owner": {
+			"aliases": [
+				"ownership"
+			],
+			"type": "string"
+		},
+		"public_access": {},
+		"website": {},
+		"notes": {},
+		"discovered": {},
+		"management": {},
+		"architectural_styles": {},
+		"architectural_details": {},
+		"designation1": {},
+		"designation1_offname": {},
+		"designation1_type": {},
+		"designation1_criteria": {},
+		"designation1_date": {},
+		"delisted1_date": {},
+		"designation1_partof": {},
+		"designation1_number": {},
+		"designation1_free1value": {},
+		"designation2_free1value": {},
+		"designation1_free3value": {},
+		"designation2": {},
+		"designation2_offname": {},
+		"designation2_type": {},
+		"designation2_criteria": {},
+		"designation2_date": {},
+		"designation2_partof": {},
+		"designation2_number": {},
+		"designation2_free2value": {},
+		"designation2_free3value": {},
+		"designation1_free1name": {},
+		"designation1_free2name": {},
+		"designation1_free2value": {},
+		"designation1_free3name": {},
+		"delisted2_date": {},
+		"designation2_free1name": {},
+		"designation2_free2name": {},
+		"designation2_free3name": {},
+		"other_designation": {},
+		"nhle": {},
+		"hillfort": {},
+		"megaj": {},
+		"hes": {},
+		"embedded": {}
+	},
+	"description": "Display an infobox containing a summary of an historical or cultural location, ancient site or excavation.",
+	"paramOrder": [
+		"name",
+		"native_name",
+		"native_name_lang",
+		"other_name",
+		"embed",
+		"image",
+		"imagealttext",
+		"image_size",
+		"imagewidth",
+		"image_upright",
+		"caption",
+		"alt",
+		"map",
+		"map_type",
+		"map_alt",
+		"map_caption",
+		"map_size",
+		"mapwidth",
+		"relief",
+		"coordinates",
+		"map_overlay",
+		"marksize",
+		"map dot label",
+		"map_dot_label",
+		"map_label_position",
+		"location",
+		"region",
+		"gbgridref",
+		"altitude_m",
+		"altitude_ref",
+		"grid_name",
+		"grid_position",
+		"type",
+		"part_of",
+		"length",
+		"width",
+		"area",
+		"volume",
+		"diameter",
+		"circumference",
+		"height",
+		"builder",
+		"material",
+		"built",
+		"abandoned",
+		"epochs",
+		"cultures",
+		"dependency_of",
+		"occupants",
+		"event",
+		"discovered",
+		"excavations",
+		"archaeologists",
+		"condition",
+		"owner",
+		"management",
+		"public_access",
+		"website",
+		"notes",
+		"architectural_styles",
+		"architectural_details",
+		"designation1",
+		"designation1_offname",
+		"designation1_type",
+		"designation1_criteria",
+		"designation1_date",
+		"delisted1_date",
+		"designation1_partof",
+		"designation1_number",
+		"designation1_free1name",
+		"designation1_free1value",
+		"designation1_free2name",
+		"designation1_free2value",
+		"designation1_free3name",
+		"designation1_free3value",
+		"designation2",
+		"designation2_offname",
+		"designation2_type",
+		"designation2_criteria",
+		"designation2_date",
+		"delisted2_date",
+		"designation2_partof",
+		"designation2_number",
+		"designation2_free1name",
+		"designation2_free1value",
+		"designation2_free2name",
+		"designation2_free2value",
+		"designation2_free3name",
+		"designation2_free3value",
+		"other_designation",
+		"nhle",
+		"hillfort",
+		"megaj",
+		"hes",
+		"qid",
+		"fetchwikidata",
+		"embedded",
+		"suppressfields"
+	],
+	"format": "block"
+}
+</templatedata>
+
+==Microformat==
+{{UF-hcard-geo}}
+
+== Tracking category ==
+* {{clc|Pages using infobox ancient site with unknown parameters}}
+
+==See also==
+[[Template:Infobox historic site]]
+
+<includeonly>{{sandbox other||
+
+}}</includeonly>
+<noinclude>
+[[Category:Arts and culture infobox templates|Ancient site]]
+[[Category:Place infobox templates|Ancient site]]
+[[Category:History and events infobox templates|Ancient site]]
+[[Category:Embeddable templates]]
+[[Category:Templates with coordinates fields]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+{{wikidata link||en|Infobox ancient site/doc|check_date=2026-05-25}}
+[[Category:Templates not transcluded in mainspace]]
+</noinclude>

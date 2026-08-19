@@ -1,0 +1,273 @@
+{{Documentation subpage}}
+
+{{Lua|Module:Infobox|Module:InfoboxImage|Module:Check for unknown parameters}}
+{{tl|Infobox artifact}} may be used to summarize information about an artifact.
+== Usage ==
+{{Parameter names example|_template=| alt | alt2 | box_width | caption | civilisation | civilization | classification | coordinates | created | culture | depth | discovered | discovered_by | discovered_coords | discovered_date | discovered_place | height | id | image | image_caption | image_size | image2 | image2_size | image2_caption | language | location | long | map | material | name | native_artifact_name | native_name | native_name_lang | period | period1 | place | registration | rune_id | rune_master | rune_style | rune_text_english | rune_text_native | size | symbols | type | website | weight | width | writing }}
+
+<syntaxhighlight lang="wikitext">
+{{Infobox artifact
+
+| name              = 
+| native_name       = 
+| native_name_lang  = 
+| image             = 
+| image_size        = 
+| alt               = 
+| image_caption     = 
+| image2            = 
+| image2_size       = 
+| alt2              = 
+| image2_caption    = 
+| type              = 
+| material          = 
+| size              = 
+| height            = 
+| width             = 
+| weight            = 
+| long              = 
+| writing           = 
+| symbols           = 
+| created           = 
+| discovered        = 
+| discovered_place  = 
+| discovered_coords = 
+| discovered_date   = 
+| discovered_by     = 
+| location          = 
+| classification    = 
+| culture           = 
+| id                = 
+| map               = 
+| website           = 
+}}</syntaxhighlight>
+
+;Optional parameters:
+* ''place'' may supplement ''created'' to separate date from location found/created.
+* ''period'' may be added to describe the era or culture (such as "Greco-Roman").
+* ''registration'' distinguishes the unique database or full catalogue number from a collection ID or historic/commonly used ID.
+* ''height'', ''width'', ''depth'' and ''weight'' are alternatives to using the generic ''size''. If several dimensions are needed it is recommended to use ''size'', to avoid creating an overly complex infobox, by separating dimensions with {{tag|br|o}}, e.g. <code><nowiki>size = height:6cm<br>width:2cm<br>thickness:0.4cm</nowiki></code>.
+
+===English variation===
+"artifact" is a US spelling. The UK spelling is "artefact" and {{tl|Infobox artefact}} may be used as a valid alternative.
+
+== Examples ==
+===Statue===
+{|style="width:100%;border:solid silver thin;background:white;font-size:90%;"
+|-
+|{{Infobox artifact
+|name          = Las Limas Monument 1
+|image         = Señor de las limas 2.jpg
+|image_caption = At highest resolution, the shallow incisions on the shoulders, legs, and face can be clearly seen
+|material      = [[Greenstone (archaeology)|Greenstone]]
+|height        = {{convert|55|cm|in|abbr=on}}
+|created       = [[Mesoamerican chronology#Preclassic Era|Middle Formative Period]] (1000 [[:en:BCE|BCE]] – 600 [[:en:BCE|BCE]])
+|discovered_date  = 1965 
+|discovered_place = near [[Jesús Carranza, Veracruz|Jesús Carranza]], [[Veracruz]], [[:en:Mexico|Mexico]]
+|location      = [[Xalapa Museum of Anthropology]], [[Veracruz]]
+|culture       = [[Olmecs|Olmec]]
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto; margin:3em 0 0; padding-right:0">{{Infobox artifact
+|name          = Las Limas Monument 1
+|image         = Señor de las limas 2.jpg
+|image_caption = At highest resolution, the shallow incisons on the shoulders, legs, and face can be clearly seen
+|material      = [[Greenstone (archaeology)|Greenstone]]
+|height        = {{convert|55|cm|in|abbr=on}}
+|created       = [[Mesoamerican chronology#Preclassic Era|Middle Formative Period]] (1000 [[:en:BCE|BCE]] – 600 [[:en:BCE|BCE]])
+|discovered_date  = 1965 
+|discovered_place = near [[Jesús Carranza, Veracruz|Jesús Carranza]], [[Veracruz]], [[:en:Mexico|Mexico]]
+|location      = [[Xalapa Museum of Anthropology]], [[Veracruz]]
+|culture       = [[Olmecs|Olmec]]
+}}</syntaxhighlight>
+|}
+
+===Mosaic===
+{|style="width:100%;border:solid silver thin;background:white;font-size:90%;"
+|-
+|{{Infobox artifact
+|name = The Hinton St Mary Mosaic
+|image = [[File:Mosaic2_-_plw.jpg|220px]]
+|material = ceramic
+|created = 4thC&nbsp;(early)
+|period = [[Romano-British]]
+|place = Hinton St Mary, villa
+|location = G49/wall, [[:en:British Museum|British Museum]], London
+|registration = [http://www.britishmuseum.org/research/search_the_collection_database/search_object_details.aspx?objectid=808670&partid=1 965,0409.1]
+}}
+<syntaxhighlight lang="wikitext" style="overflow:auto; margin:3em 0 0; padding-right:0;">
+{{Infobox artifact
+|name = The Hinton St Mary Mosaic
+|image = [[File:Mosaic2_-_plw.jpg|220px]]
+|material = ceramic
+|created = 4thC&nbsp;(early)
+|period = [[Romano-British]]
+|place = Hinton St Mary, villa
+|location = G49/wall, [[:en:British Museum|British Museum]], London
+|registration = [http://www.britishmuseum.org/research/search_the_collection_database/search_object_details.aspx?objectid=808670&partid=1 965,0409.1]
+}}
+</syntaxhighlight>
+|}
+
+==Tracking category==
+*{{clc|Pages using infobox artifact with unknown parameters}}
+
+<includeonly>{{Sandbox other||
+
+}}</includeonly>
+<templatedata>
+{
+	"params": {
+		"name": {
+			"description": "The name given to the artifact. Defaults to article title. Multiple names can be separated by <br>.",
+			"type": "string"
+		},
+		"native_name": {
+			"type": "string"
+		},
+		"native_name_lang": {
+			"type": "string"
+		},
+		"image": {
+			"description": "A picture of the artifact. Size can vary and needs to be specified.",
+			"type": "wiki-file-name"
+		},
+		"image_size": {
+			"type": "string"
+		},
+		"alt": {
+			"type": "string"
+		},
+		"image_caption": {
+			"description": "Description or notes for the first image.",
+			"type": "string"
+		},
+		"image2": {
+			"description": "An optional second picture of the artifact. Size can vary and needs to be specified.",
+			"type": "string"
+		},
+		"image2_size": {
+			"type": "string"
+		},
+		"alt2": {
+			"type": "string"
+		},
+		"image2_caption": {
+			"description": "Description or notes for the second image.",
+			"type": "string"
+		},
+		"type": {
+			"description": "The class of which the object is an instance",
+			"type": "string"
+		},
+		"material": {
+			"description": "The substance the artifact is made of.",
+			"type": "string",
+			"example": "Clay"
+		},
+		"size": {
+			"description": "Size of the artifact, if known.",
+			"type": "string"
+		},
+		"height": {
+			"type": "string",
+			"example": "{{convert|15|cm|abbr=on}}"
+		},
+		"width": {
+			"type": "string",
+			"example": "{{convert|15|cm|abbr=on}}"
+		},
+		"weight": {
+			"type": "string",
+			"example": "{{convert|15|kg|abbr=on}}"
+		},
+		"long": {
+			"type": "content",
+			"example": "{{convert|15|cm|abbr=on}}"
+		},
+		"writing": {
+			"description": "Language and-or script of contingent inscriptions on the artifact, if known.",
+			"type": "string"
+		},
+		"symbols": {
+			"type": "string"
+		},
+		"created": {
+			"description": "Date and location that the artifact was made, if known.",
+			"type": "string"
+		},
+		"discovered": {
+			"description": "Deprecated; use the following, separate, parameters",
+			"type": "string"
+		},
+		"discovered_place": {
+			"description": "Place of (re)discovery of the artifact, if known.",
+			"type": "string"
+		},
+		"discovered_coords": {
+			"description": "Coordinates of (re)discovery of the artifact, if known.",
+			"type": "string"
+		},
+		"discovered_date": {
+			"description": "Date of (re)discovery of the artifact, if known.",
+			"type": "content"
+		},
+		"discovered_by": {
+			"description": "Person who (re)discovered the artifact, if known.",
+			"type": "string"
+		},
+		"location": {
+			"description": "Where the artifact has ended up now.",
+			"type": "string"
+		},
+		"classification": {
+			"type": "string"
+		},
+		"culture": {
+			"type": "string"
+		},
+		"id": {
+			"description": "Identification code (numbers or letters) for the artifact, if known.",
+			"type": "string"
+		},
+		"map": {
+			"description": "A map of the location of the artefact",
+			"type": "string"
+		},
+		"website": {
+			"description": "Web address",
+			"type": "url"
+		},
+		"box_width": {},
+		"native_artifact_name": {},
+		"caption": {},
+		"caption2": {},
+		"depth": {},
+		"period": {},
+		"place": {},
+		"coordinates": {},
+		"registration": {},
+		"language": {},
+		"period1": {},
+		"civilization": {},
+		"civilisation": {},
+		"rune_id": {},
+		"rune_style": {},
+		"rune_master": {},
+		"rune_text_native": {},
+		"rune_text_english": {}
+	},
+	"format": "block",
+	"description": "This template may be used to summarize information about an artifact."
+}
+</templatedata>
+<noinclude>
+[[Category:Arts and culture infobox templates|Artifact]]
+[[Category:History and events infobox templates|Artifact]]
+[[Category:Templates with coordinates fields]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+{{wikidata link||en|Infobox artifact/doc|check_date=2026-05-26}}
+[[Category:Templates not transcluded in mainspace]]
+</noinclude>

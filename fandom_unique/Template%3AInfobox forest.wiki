@@ -1,0 +1,137 @@
+{{#invoke:infobox|infoboxTemplate
+|autoheaders = y
+|bodyclass   = vcard
+|bodystyle   = width:{{{box_width|296px}}}; line-height:1.5em
+|child       = {{{child|}}}
+
+|headerstyle = background:#d0f0c0;text-align:center;
+
+|aboveclass  = fn org
+|abovestyle  = background:#d0f0c0
+|above       = {{if empty|{{{name|}}}|<includeonly>{{PAGENAMEBASE}}</includeonly>}}{{#if:{{{native_lang|}}}{{{native_name|}}}
+                  | <span style="font-weight:lighter; font-size:90%"><br />{{#if:{{{native_lang|}}}
+                    | {{langx|{{{native_lang|}}}|{{{native_name|}}}}}
+                    | {{{native_name|}}} }}</span>}}{{#if:{{{native_lang2|}}}{{{native_name2|}}}
+                  | <span style="font-weight:lighter; font-size:90%"><br />{{#if:{{{native_lang2|}}}
+                    | {{langx|{{{native_lang2|}}}|{{{native_name2|}}}}}
+                    | {{{native_name2|}}} }}</span>}}{{#if:{{{native_lang3|}}}{{{native_name3|}}}
+                  | <span style="font-weight:lighter; font-size:90%"><br />{{#if:{{{native_lang3|}}}
+                    | {{langx|{{{native_lang3|}}}|{{{native_name3|}}}}}
+                    | {{{native_name3|}}} }}</span>}}
+
+|image        = {{#invoke:InfoboxImage|InfoboxImage|image={{{photo|}}}|size={{{photo_width|}}}|sizedefault=272px|maxsize=288px|alt={{{image_alt|{{{photo_alt|}}}}}}}}
+|caption      = {{{photo_caption|}}}
+
+|header1 = Map
+
+| {{#if:{{{photo|}}}|data2|image2}} = {{#if:{{{map|}}}
+   |{{Location map|{{{map}}}
+     | border = infobox | float = center
+     | width = {{{map_width|}}}
+     | default_width  = 272
+     | max_width = 288
+     | relief = {{{relief|}}}
+     | label = {{if empty|{{{label|}}}|{{{name|}}} }}
+     | position = {{#if:{{{label_position|}}}{{{label|}}} | {{{label_position|}}} | none}} 
+     | caption = {{{map_caption|}}}
+     | alt = {{if empty|{{{map_alt|}}}|Map showing the location of {{if empty|{{{name|}}}|{{PAGENAMEBASE}}}} }}
+     | mark = {{{mark|}}}
+     | marksize = {{{marker_width|{{{marker_size|}}}}}}
+     | coordinates = {{if empty|{{{coordinates|}}}|{{{coords|}}}}} }}
+  |{{#invoke:InfoboxImage|InfoboxImage|image={{{map_image|}}}|size={{{map_size|{{{map_width|}}}}}}|sizedefault=272px|maxsize=288px|alt={{{map_alt|}}}}}{{#if:{{{map_image|}}}|{{#if:{{{map_caption|}}}|<div>{{{map_caption}}}</div>}}}}
+  }}
+
+|header3 = Geography
+
+|label4  = Location
+|data4   = {{#if:{{{location|}}}
+            | {{{location|}}}
+            | {{#if:{{{county|}}}|{{{county}}} }}{{#if:{{{region|}}}|{{#if:{{{county|}}}|,{{sp}}}}{{{region}}}}}{{#if:{{{country|}}}|{{#if:{{{county|}}}{{{region|}}}|,{{sp}}}}{{{country}}} }} }}
+
+|label5  = [[Ordnance Survey National Grid|OS grid]]
+|data5   = {{#if:{{{grid_ref_UK|}}}|{{gbm4ibx|{{{grid_ref_UK|}}}}} }}
+
+|label6  = [[Irish grid reference system|OSI/OSNI grid]]
+|data6   = {{#if:{{{grid_ref_Ireland|}}}|{{iem4ibx|{{{grid_ref_Ireland|}}}}} }}
+
+|label7  = Coordinates
+|data7   = {{#ifeq:{{{display|}}}|none
+            |
+            |{{#if:{{{coordinates|}}}{{{coords|}}}|{{#invoke:Coordinates|coordinsert|{{if empty|{{{coordinates|}}}{{{coords|}}}}}|type:forest}}{{{coords_ref|}}} }} 
+           }}
+
+|label8  = Elevation
+|data8   = {{{elevation|}}}
+
+|label9  = Area{{#if:{{{date_max_area|}}}|<br />&nbsp;&nbsp;&ndash;&nbsp;<span style="font-weight:normal;">maximum</span>}}
+|data9   = {{{area|}}}{{#if:{{{max_area|}}}|<br /><span style="font-size:92%;">{{{max_area}}}{{#if:{{{date_max_area|}}}|{{sp}}in {{{date_max_area}}}}}</span> }}
+
+|header10 = Administration
+
+|label11  = Status
+|data11  = {{{status|}}}
+
+|label12  = Established
+|data12   = {{{established|}}}
+
+|label13 = Visitation
+|data13   = {{{visitation|}}}{{#if:{{{visitation_year|}}} | {{sp}}{{{visitation_year|}}} }}
+
+|label14  = Events 
+|data14   = {{{events|}}}
+
+|label15  = {{#if:{{{administrator|}}}|Administered&nbsp;by
+            | {{#if:{{{authority|}}}|Governing&nbsp;body
+            | {{#if:{{{governing_body|}}}|Governing&nbsp;body
+            | {{#if:{{{manager|}}}|Managed&nbsp;by
+            | {{#if:{{{operator|}}}|Operated&nbsp;by
+            | {{#if:{{{owner|}}}|Owned&nbsp;by}}}}}}}}}}}}
+|data15   = {{if empty|{{{administrator|}}}|{{{authority|}}}|{{{governing_body|}}}|{{{manager|}}}|{{{operator|}}}|{{{owner|}}} }}
+
+|label16  = Website
+|data16   = {{#if:{{{website|}}}|{{URL|{{{website}}}}}}}
+
+|header17 = Ecology
+
+|label18  = Ecosystem(s)
+|data18   = {{{ecosystem|}}}
+
+|label19  = [[List of terrestrial ecoregions (WWF)|WWF Classification]]
+|data19   = {{{classification_WWF|}}}
+
+|label20 = [[List of ecoregions in the United States (EPA)|EPA Classification]]
+|data20   = {{{classification_EPA|}}}
+
+|label21 = [[List of ecoregions in North America (CEC)|CEC Classification]]
+|data21   = {{{classification_CEC|}}}
+
+|label22  = Disturbance
+|data22   = {{{disturbance|}}}
+
+|label23  = Forest&nbsp;cover
+|data23   = {{{forest_cover|}}}
+
+|label24  = Dominant tree species
+|data24   = {{{species|}}}
+
+|label25  = Indicator plants
+|data25   = {{{indicator_plants|}}}
+
+|label26  = Lesser flora
+|data26   = {{{lesser_flora|}}}
+
+|label27  = Fauna
+|data27   = {{{fauna|}}}
+
+|data28   = {{if empty|{{{embedded|}}}|{{{embed|}}} }}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox forest]] with unknown parameter "_VALUE_"|ignoreblank=y| administrator | area | authority | box_width | child | classification_CEC | classification_EPA | classification_WWF | coordinates | coords | coords_ref | country | county | date_max_area | display | disturbance | ecosystem | elevation | embed | embedded | established | events | fauna | forest_cover | governing_body | grid_ref_Ireland | grid_ref_UK | image_alt | indicator_plants | label | label_position | lesser_flora | location | manager | map | map_alt | map_caption | map_image | map_size | map_width | mark | marker_width | max_area | name | native_lang | native_lang2 | native_lang3 | native_name | native_name2 | native_name3 | operator | owner | photo | photo_alt | photo_caption | photo_width | region | relief | species | status | visitation | visitation_year | website
+}}<noinclude>
+{{documentation}}
+
+[[Category:Pages using infobox forest with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+</noinclude>
