@@ -760,39 +760,43 @@ it; fire the question with the chat option so it can actually move.
 > browsable tables. The tables are GitHub Pages and work right now, but the review pairs the two, so
 > they wait for the gate (Emma 2026-07-13).
 
-### B2. The duplicate shrine pairs — link or merge? **STILL OPEN. Not decided.**
+### B2. ~~The duplicate shrine pairs — link or merge?~~ **WITHDRAWN 2026-08-19. Not a decision.**
+
 Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html
-- **ASK:** "Link each pair with 'said to be the same as', or merge them?" → *link* (I generate
-  QuickStatements, add-only) / *merge* (manual/browser, I hand you the list) / *case-by-case*.
 
-**The "84" is stale and the evidence behind it was wrong — corrected 2026-08-19.** Regenerated with
-the fixed matcher: **149 orphans = 48 duplicate / 0 Kokugakuin-id disagreement / 101 no-twin.**
+**There is nothing here to decide, because the "duplicate" class never established identity.**
+Emma, 2026-08-19, on being asked to pick link/merge/case-by-case:
 
-The "36 Kokugakuin-id disagreements" class has collapsed to **zero** — every one of them was an
-artifact of matching on the bare id, and all 36 moved into no-twin (65 → 101). B3's 66 orphans are
-now 101; its framing needs the same re-read before it is decided.
+    "I'm extremely confused. What are you even doing here? What are you doing with duplicate labels?
+     What is the point of this? There's plenty of shrines with duplicate labels."
 
-The 48 duplicates are unchanged in count but now rest on **names alone**: 39 exact ja label, 11 only
-after folding spelling variants (旧字体 → 新字体, 之/ノ → の, ヶ/ケ → が, trailing 神社/大社/神宮/社/宮
-stripped). Nothing in the duplicate class rests on the Kokugakuin id any more.
+She is right, and it kills both halves of the class:
 
-**All 11 of the id-matched pairs are gone.** They rested on P13677 alone, which is not an identity:
-one Kokugakuin page carries many entries, so items are unique by the **combination of P13677 and its
-section qualifier P958** — and neither `0` nor `n/a` is uniqueness-protected (Emma, 2026-08-19).
-Checked against the live API: 7 pairs had DIFFERENT sections, 3 involved section `0`, 1 shared
-(id, `n/a`). **None is an established duplicate.**
+- **The Kokugakuin-id half was artifact.** It matched on bare P13677 while ignoring the P958 section.
+  Identity is the *combination*, and neither section `0` nor `n/a` is uniqueness-protected. Fixed at
+  source; the 36 "id disagreements" went to **zero** and none of the 11 id-matched pairs was real.
+- **The name half is not evidence either.** It matched equal ja labels among entries of a list the
+  item already claims. That is narrower than "duplicate labels anywhere in Wikidata" — but not narrow
+  enough: **杉山神社 alone accounts for 4 of the 48**, and that name is multiplied all over the
+  Musashi region. Same-name-in-the-same-list is not the same shrine.
 
-Fixed at the source, not just in the numbers: `report_orphan_shikinaisha.gather()` read `wdt:P13677`
-— the truthy value, no qualifiers — so the report could not see sections at all. It now reads the
-statement + `pq:P958` and keys twins on `dup_key()`, which returns None for `0`, `n/a` and a missing
-section. Side-effect worth having: the same look is what surfaced the three real data errors now
-sitting in **B10**.
+**Corrected state: 149 orphans, and NONE is provably a duplicate of a listed entry.** The 48 are a
+list of name collisions; the report's own headline calls them duplicates, which overstates what it
+knows. Do not re-raise link/merge on this basis.
 
-So what remains under B2 is the **~40 ja-label pairs**, which this correction does not touch. Re-read
-the regenerated table before deciding.
+**What is actually unanswered** — and it is a data question, not a decision for Emma: why are 149
+items tagged as Shikinaisha yet named as a part of no Jinmyōchō list? Anything that claims to answer
+it needs evidence that establishes identity — the (P13677 + P958) composite is the only one available
+so far, and it currently matches nothing. NEEDS-INVESTIGATION, this repo's job, no gate on it.
 
-### B3. The 66 orphan Shikinaisha — mis-tagged, or missing entries?
-66 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or real
+**Housekeeping owed:** the generator still labels the class "duplicate" in the HTML and in its stdout
+summary. Rename it to what it is (a name collision) so the next reader is not told the same wrong
+thing the queue was telling.
+
+### B3. The orphan Shikinaisha — mis-tagged, or missing entries? **Re-read before deciding.**
+Was 66; now **101** after 36 members arrived from B2's id-disagreement class, which turned out not to
+exist. With B2 withdrawn the honest count is closer to all **149** orphans, since the 48 "duplicates"
+are only name collisions. 101 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or real
 entries the lists are missing. Same table as B2.
 - **ASK:** "How do I treat the 66?" → *investigate case-by-case* / *treat as mis-tagged* (drop the
   class) / *treat as missing entries* (add to the list).
