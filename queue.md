@@ -980,10 +980,31 @@ Q134925373|P13677|"181621"|P958|"0"
   section can only be read off the Kokugakuin page, which is how 181621's values were established, so
   this narrows WHERE to look and never guesses WHAT the value is.
 
-- [ ] **Read the candidates and produce corrections** — NEEDS-INVESTIGATION: each page must be read
-  on the Kokugakuin site to learn its true sections. 281 pages is too many to hand Emma raw; the next
-  step is to sample the 197 and see whether the missing section is derivable from the parent list's
-  P1352 ranking, which would turn most of them mechanical. Not gated on anything.
+**Derivability tested 2026-08-19 — and my own guess was wrong.** I had written that deriving the
+  missing section from the parent's P1352 ranking "would turn most of them mechanical". It does not.
+  Of the **321** items missing a section across the 197 pages:
+
+  | count | share | disposition |
+  |---|---|---|
+  | **57** | 18% | exactly one parent ranking → **mechanically derivable** |
+  | **36** | 11% | **conflicting** rankings from different parents → manual |
+  | **228** | 71% | **no ranking anywhere** → must be read off the Kokugakuin page |
+
+  Data: `modern-quickstatements/p958_derivability.json`.
+
+  **Two things that bite whoever does this next:**
+  - P1352 is a *quantity*, so SPARQL returns `2.0` / `1.0` / `0.0` while P958 values are the strings
+    `"2"` / `"1"` / `"0"` / `"n/a"`. A derivation that does not format the float will write `2.0`.
+  - A derived `0` is legitimate but distinguishes nothing — section 0 carries no uniqueness — so
+    those add a value without resolving the ambiguity they appear to fix.
+
+- [ ] **The 57 derivable ones** — NEEDS-INVESTIGATION, one specific question: `generate_p958_qualifiers.py`
+  already derives P958 from P1352 and is add-only, so these 57 are exactly what it produces. Find out
+  whether it has simply not been re-run since these items appeared, rather than building a second
+  generator beside it. If it has been run, find out why it skipped them.
+- **The 228 with no ranking** — OUT-OF-SCOPE for automation, permanently: the value only exists on the
+  Kokugakuin page. This is a reading job, and 228 pages is a real size — it belongs to Emma or to a
+  deliberate reading sprint, not to a work-loop tick.
 
 ---
 

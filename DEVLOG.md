@@ -8944,3 +8944,22 @@ WHERE to look and never guesses WHAT the value is. `_site/p958-candidates.html` 
 each linking the Kokugakuin page and every holder; the data is in `p958_candidates_audit.json`.
 
 Read-only; Wikidata locked to 2026-09-18. 1496 tests pass.
+
+## 2026-08-19 — testing my own guess about the 197: it was wrong
+
+I had queued the next step as "sample the 197 to see whether the missing section is derivable from
+the parent list's P1352 ranking, which would make most of them mechanical." Tested it. It does not.
+
+Of **321** items missing a section across the 197 pages: **57 (18%)** have exactly one parent ranking
+and are mechanically derivable, **36 (11%)** have conflicting rankings from different parents, and
+**228 (71%)** have no ranking anywhere and can only be resolved by reading the Kokugakuin page.
+
+So the manual majority is the story, not the mechanical minority. Recording that rather than quietly
+dropping the prediction: a guess written into a queue becomes a plan if nobody checks it.
+
+Two traps for whoever picks this up: P1352 is a quantity, so it arrives as `2.0` where P958 wants
+`"2"`; and a derived `0` is legitimate but distinguishes nothing, since section 0 carries no
+uniqueness — it adds a value without resolving the ambiguity it appears to fix.
+
+The 57 are exactly what the existing add-only `generate_p958_qualifiers.py` produces, so the next
+question is whether that has simply not been re-run — not whether to build a second generator.
