@@ -205,21 +205,47 @@ def load_sequential_lines(path=None):
     return out
 
 
-def load_sequential_cursor(path=None):
+def load_sequential_cursor(path=None, lines=None):
     """Index of the next sequential line to run. Missing/corrupt => 0 (fail safe:
-    re-runs from the top rather than skipping ahead past unrun lines)."""
+    re-runs from the top rather than skipping ahead past unrun lines).
+
+    SELF-HEALS AGAINST LINE REMOVAL (2026-08-19). A bare index is only valid while the file is
+    strictly append-only, and it is not: the generators delete lines whose statement has landed
+    (bot commit 631f4c8c dropped the P1960 line on 08-18). Every deletion above the cursor shifts
+    the remainder up by one, so the index then points at the WRONG line — and for an add/remove
+    pair that can mean running the removal before its add, which strips the item of the value the
+    add was going to give it. That is the exact failure this channel exists to prevent.
+
+    So the state also records the TEXT of the line the cursor points at, and on load:
+      * text still present  -> resume at ITS current index, whatever it shifted to;
+      * text gone           -> it completed and was removed, so the stored index now points at its
+                               successor (everything below shifted up by one) — keep it;
+      * no text recorded    -> old state file, behave exactly as before.
+    """
     path = path or _seq_path(SEQUENTIAL_STATE)
     try:
         with open(path, encoding="utf-8") as fh:
-            return int(json.load(fh).get("cursor", 0))
+            state = json.load(fh)
+        cursor = int(state.get("cursor", 0))
     except Exception:
         return 0
+    marker = state.get("next_line")
+    if marker and lines:
+        try:
+            return lines.index(marker)
+        except ValueError:
+            pass          # completed and removed; the shift makes `cursor` the successor
+    return cursor
 
 
-def save_sequential_cursor(cursor, path=None):
+def save_sequential_cursor(cursor, path=None, lines=None):
+    """Record the cursor, plus the text of the line it points at so it can self-heal."""
     path = path or _seq_path(SEQUENTIAL_STATE)
+    state = {"cursor": cursor}
+    if lines and 0 <= cursor < len(lines):
+        state["next_line"] = lines[cursor]
     with open(path, "w", encoding="utf-8") as fh:
-        json.dump({"cursor": cursor}, fh)
+        json.dump(state, fh)
 
 
 def next_sequential_line(lines, cursor):
@@ -758,7 +784,7 @@ def main():
     # Weave in today's single sequential-misc line (one/day, strict order) at a
     # random position. Empty/absent file or drained cursor => nothing added.
     seq_lines = load_sequential_lines()
-    seq_cursor = load_sequential_cursor()
+    seq_cursor = load_sequential_cursor(lines=seq_lines)
     seq_idx, seq_line = next_sequential_line(seq_lines, seq_cursor)
     seq_pos = None
     seq_ran = False
@@ -862,7 +888,7 @@ def main():
     # successor never runs ahead of it.
     if seq_pos is not None:
         if seq_ran and seq_advance:
-            save_sequential_cursor(seq_cursor + 1)
+            save_sequential_cursor(seq_cursor + 1, lines=seq_lines)
             print(f"Sequential-misc: cursor advanced {seq_cursor} -> {seq_cursor + 1}")
         else:
             print(f"Sequential-misc: cursor held at {seq_cursor} "

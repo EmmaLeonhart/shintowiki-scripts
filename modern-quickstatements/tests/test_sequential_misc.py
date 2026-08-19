@@ -183,3 +183,47 @@ def test_pair_never_runs_out_of_order():
     # Day 3: now, and only now, line 1 (the add) is reachable.
     idx, line = dde.next_sequential_line(lines, cursor)
     assert (idx, line) == (1, "Q1|P2|Q4")
+
+
+def test_cursor_survives_a_line_being_deleted_above_it(tmp_path):
+    """The hazard that produced this fix: a generator deletes a completed line.
+
+    On 2026-08-18 bot commit 631f4c8c removed the P1960 line from sequential_misc.txt because the
+    statement had landed. The file is documented append-only and the cursor was a bare index, so
+    every line below shifted up by one and the index silently pointed at the wrong one. For the
+    add/remove pair that lives in this file, that can mean running the removal first and leaving
+    the shrine with no modern reading at all.
+    """
+    before = ["ADD-A", "DONE-B", "ADD-C", "-REMOVE-C"]
+    state = tmp_path / "seq.state"
+
+    # Cursor sits on ADD-C, the add half of the pair.
+    dde.save_sequential_cursor(2, str(state), lines=before)
+    assert dde.load_sequential_cursor(str(state), lines=before) == 2
+
+    # The generator deletes DONE-B. Everything below shifts up: ADD-C is now index 1.
+    after = ["ADD-A", "ADD-C", "-REMOVE-C"]
+    healed = dde.load_sequential_cursor(str(state), lines=after)
+    assert healed == 1, "cursor should follow the line, not the index"
+    assert dde.next_sequential_line(after, healed)[1] == "ADD-C", (
+        "without healing this would run -REMOVE-C before its add"
+    )
+
+
+def test_cursor_holds_when_its_own_line_is_the_one_removed(tmp_path):
+    """If the pointed-at line completed and was deleted, the index already names its successor."""
+    before = ["ADD-A", "DONE-B", "ADD-C"]
+    state = tmp_path / "seq.state"
+    dde.save_sequential_cursor(1, str(state), lines=before)      # pointing at DONE-B
+    after = ["ADD-A", "ADD-C"]                                    # DONE-B removed
+    assert dde.load_sequential_cursor(str(state), lines=after) == 1
+    assert dde.next_sequential_line(after, 1)[1] == "ADD-C"
+
+
+def test_old_state_files_without_the_marker_still_work(tmp_path):
+    """Backward compatibility: a state file written before 2026-08-19 has no next_line."""
+    import json
+    state = tmp_path / "seq.state"
+    state.write_text(json.dumps({"cursor": 3}), encoding="utf-8")
+    assert dde.load_sequential_cursor(str(state)) == 3
+    assert dde.load_sequential_cursor(str(state), lines=["a", "b", "c", "d"]) == 3
