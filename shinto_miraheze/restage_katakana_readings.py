@@ -38,6 +38,7 @@ import sys
 import urllib.parse
 
 import requests
+from shinto_miraheze.ua_contact import contact
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(HERE)
@@ -50,7 +51,6 @@ UA = ("ShintoWikiLabels/1.0 "
 
 sys.path.insert(0, HERE)
 from collect_name_in_kana import acceptable_reading, clean_kana  # noqa: E402
-from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 
