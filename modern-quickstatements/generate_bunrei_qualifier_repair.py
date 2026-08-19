@@ -23,11 +23,21 @@ import urllib.request
 from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.ua_for import ua_for
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "bunrei_qualifier_repair.txt")
 # query-main split endpoint: query.wikidata.org is 429-outaged (2026-07-06+)
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = f"shintowiki-bunrei/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
+# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-bunrei/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 
 QUERY = """
 SELECT ?shrine ?head WHERE {
@@ -42,7 +52,7 @@ def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     url = WDQS + "?" + urllib.parse.urlencode({"query": QUERY, "format": "json"})
     req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
+        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
     wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=180) as r:
         if r.status == 429:

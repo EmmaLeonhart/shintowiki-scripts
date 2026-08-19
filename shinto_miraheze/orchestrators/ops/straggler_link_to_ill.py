@@ -81,6 +81,8 @@ import time
 
 import requests
 
+from shinto_miraheze.ua_for import ua_for
+
 from ..common import REDIRECT_RE
 
 NAME = "straggler_link_to_ill"
@@ -102,7 +104,8 @@ MAX_CONVERSIONS_PER_PAGE = 5
 
 _WD_API = "https://www.wikidata.org/w/api.php"
 _MIRAHEZE_API = "https://shinto.miraheze.org/w/api.php"
-_USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
+# _USER_AGENT removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: _USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
 _HTTP_TIMEOUT = 15
 _API_THROTTLE = 0.3
 
@@ -163,7 +166,7 @@ def _get(url: str, params: dict) -> "dict | None":
         time.sleep(_API_THROTTLE)
         resp = requests.get(
             url, params=params,
-            headers={"User-Agent": _USER_AGENT},
+            headers={"User-Agent": ua_for(url)},
             timeout=_HTTP_TIMEOUT,
         )
     except Exception:

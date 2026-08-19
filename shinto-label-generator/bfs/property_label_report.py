@@ -29,11 +29,20 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from language_registry import COVERED  # noqa: E402
 from shinto_miraheze.ua_contact import contact
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS = os.path.join(HERE, "levels")
 SPARQL = "https://query.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
-UA = {"User-Agent": "ShintoWikiBFS-props/1.0 ({contact('wikidata')})",
+UA = {"User-Agent": WIKIDATA_USER_AGENT,
       "Accept": "application/sparql-results+json"}
 
 # Properties the roadmap (docs/mass-label-expansion-plan.md) + the Engishiki

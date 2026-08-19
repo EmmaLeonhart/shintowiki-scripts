@@ -19,6 +19,15 @@ from fetch_shrines_tokiponize import process_label
 from generate_multilang_quickstatements import EXCLUDE_QIDS
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
 # Windows UTF-8 console fix (guard against double-wrapping from imports)
 if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -79,7 +88,7 @@ def run_sparql(query, label):
     r = requests.get(
         SPARQL_ENDPOINT,
         params={"query": query, "format": "json"},
-        headers={"User-Agent": "Japanese-Tokiponizer/1.0 (Korean label pipeline)"},
+        headers={"User-Agent": WIKIDATA_USER_AGENT},
         timeout=300,
     )
     r.raise_for_status()

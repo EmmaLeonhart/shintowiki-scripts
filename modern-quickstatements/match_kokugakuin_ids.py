@@ -34,9 +34,19 @@ import urllib.parse
 import urllib.request
 from shinto_miraheze.ua_contact import contact
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.ua_for import ua_for
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = f"shintowiki-scripts/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
+# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-scripts/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 DET = "https://jmapps.ne.jp/kokugakuin/det.html?data_id={}"
 INDEX = os.path.join(HERE, "kokugakuin_title_index.json")
 OUTPUT = os.path.join(HERE, "kokugakuin_id_matches.txt")
@@ -56,7 +66,7 @@ _DISTRICT_SUFFIX = ("郡", "国", "島")
 def sparql(query):
     url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
     req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
+        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
     with urllib.request.urlopen(req, timeout=300) as r:
         if r.status == 429:
             raise SystemExit("429 from WDQS — bailing.")
@@ -107,7 +117,7 @@ def harvest(ids, index):
         key = str(i)
         if key in index:
             continue
-        req = urllib.request.Request(DET.format(i), headers={"User-Agent": UA})
+        req = urllib.request.Request(DET.format(i), headers={"User-Agent": ua_for(DET.format(i))})
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 html = r.read(4096).decode("utf-8", "replace")

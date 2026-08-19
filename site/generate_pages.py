@@ -29,10 +29,20 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from shinto_miraheze.ua_contact import contact
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.ua_for import ua_for
+
 WIKI_URL = "https://shinto.miraheze.org"
 WIKI_API = f"{WIKI_URL}/w/api.php"
-USER_AGENT = ("ShintowikiPages/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot; "
-              f"{contact('wikidata')}) shintowiki-scripts")
+# USER_AGENT removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: USER_AGENT = ("ShintowikiPages/1.0 (https://shinto.miraheze.org/wiki/User:EmmaBot; "
+   
 # This script lives in site/; the published output dir is _site/ at the repo
 # root (the Pages deploy workflow copies/commits repo-root _site/).
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -55,7 +65,7 @@ def fetch_wiki_page(title):
     resp = http.get(WIKI_API, params={
         "action": "parse", "page": title, "prop": "wikitext",
         "format": "json", "formatversion": "2",
-    }, headers={"User-Agent": USER_AGENT}, timeout=30)
+    }, headers={"User-Agent": ua_for(WIKI_API)}, timeout=30)
     resp.raise_for_status()
     data = resp.json()
     return data.get("parse", {}).get("wikitext", "")
@@ -77,7 +87,7 @@ def fetch_wikidata_edits_today(user="Immanuelle", cap=5000):
             "action": "query", "list": "usercontribs", "ucuser": user,
             "ucend": day_start, "uclimit": "500", "ucprop": "timestamp",
             "format": "json", **cont,
-        }, headers={"User-Agent": USER_AGENT}, timeout=30)
+        }, headers={"User-Agent": ua_for(WIKI_API)}, timeout=30)
         resp.raise_for_status()
         data = resp.json()
         total += len(data.get("query", {}).get("usercontribs", []))
@@ -94,7 +104,7 @@ def fetch_category_count(category):
         "action": "query", "prop": "categoryinfo",
         "titles": f"Category:{category}",
         "format": "json", "formatversion": "2",
-    }, headers={"User-Agent": USER_AGENT}, timeout=30)
+    }, headers={"User-Agent": ua_for("https://www.wikidata.org/w/api.php")}, timeout=30)
     resp.raise_for_status()
     pages = resp.json().get("query", {}).get("pages", [])
     if pages:
@@ -114,7 +124,7 @@ def fetch_category_members(category, cmtype="page", cap=5000):
     }
     while True:
         resp = http.get(WIKI_API, params=params,
-                        headers={"User-Agent": USER_AGENT}, timeout=30)
+                        headers={"User-Agent": ua_for(WIKI_API)}, timeout=30)
         resp.raise_for_status()
         data = resp.json()
         members.extend(data.get("query", {}).get("categorymembers", []))
@@ -150,7 +160,7 @@ def fetch_stats():
         resp = http.get(WIKI_API, params={
             "action": "query", "meta": "siteinfo", "siprop": "statistics",
             "format": "json", "formatversion": "2",
-        }, headers={"User-Agent": USER_AGENT}, timeout=30)
+        }, headers={"User-Agent": ua_for(WIKI_API)}, timeout=30)
         resp.raise_for_status()
         si = resp.json().get("query", {}).get("statistics", {})
         stats["total_pages"] = si.get("articles", "?")
@@ -798,7 +808,7 @@ def _resolution_pages_with_qids():
     cont = {}
     while True:
         p = dict(params); p.update(cont)
-        r = http.get(WIKI_API, params=p, headers={"User-Agent": USER_AGENT}, timeout=60)
+        r = http.get(WIKI_API, params=p, headers={"User-Agent": ua_for(WIKI_API)}, timeout=60)
         r.raise_for_status()
         data = r.json()
         for pg in data.get("query", {}).get("pages", []):
@@ -826,7 +836,7 @@ def _wd_labels(qids):
                 "action": "wbgetentities", "ids": "|".join(batch),
                 "props": "labels|descriptions", "languages": "en|ja",
                 "format": "json",
-            }, headers={"User-Agent": USER_AGENT}, timeout=30)
+            }, headers={"User-Agent": ua_for(_WD_ENTITY_API)}, timeout=30)
             r.raise_for_status()
             ents = r.json().get("entities", {})
             for q in batch:

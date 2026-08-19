@@ -33,13 +33,16 @@ import unicodedata
 import urllib.parse
 import urllib.request
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "religious_building_en.txt")
 # query.wikidata.org has been 429-outaged since 2026-07-06; the SPLIT endpoint
 # query-main serves everything except scholarly articles (repo policy).
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = f"ShintoWikiReligiousBuilding/1.0 ({contact('wikidata')})"
+# hand-built literal, not the canonical agent
+# was: UA = f"ShintoWikiReligiousBuilding/1.0 ({contact('wikidata')})"
+UA = WIKIDATA_USER_AGENT
 
 # Building classes to cover — churches/cathedrals/chapels, mosques, synagogues.
 # Deliberately NOT Shinto shrine (Q845945) or Buddhist temple (Q5393308): those

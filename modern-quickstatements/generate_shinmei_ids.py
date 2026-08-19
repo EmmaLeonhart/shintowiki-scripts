@@ -45,12 +45,21 @@ import requests
 from generate_genbu_ids import to_shinjitai   # kyūjitai -> shinjitai normalizer
 from shinto_miraheze.ua_contact import contact
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "shinmei_ids.txt")
 REPORT = os.path.join(HERE, "_site", "shinmei_unmatched.txt")
 INDEX = "https://kojiki.kokugakuin.ac.jp/shinmei/"
 SPARQL = "https://query-main.wikidata.org/sparql"
-UA = {"User-Agent": "ShintoWikiShinmei/1.0 ({contact('wikidata')})"}
+UA = {"User-Agent": WIKIDATA_USER_AGENT}
 SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 
 SLUG_RE = re.compile(r'href="(https://kojiki\.kokugakuin\.ac\.jp/shinmei/([^"/]+)/)"')

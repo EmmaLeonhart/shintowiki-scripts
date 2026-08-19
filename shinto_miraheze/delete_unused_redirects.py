@@ -46,6 +46,8 @@ import mwclient
 
 from wiki_login import login_with_retry
 
+from shinto_miraheze.user_agent import USER_AGENT
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
@@ -54,9 +56,7 @@ USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
 READ_THROTTLE = 0.3
-USER_AGENT = (
-    "UnusedRedirectDeleteBot/1.0 (User:EmmaBot; shinto.miraheze.org)"
-)
+USER_AGENT = USER_AGENT
 
 # MediaWiki querypage name. Must match the value the `qppage` API param
 # accepts, which is the Special: alias in its exact casing — verified via

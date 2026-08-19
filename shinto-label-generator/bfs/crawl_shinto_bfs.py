@@ -35,6 +35,15 @@ import argparse
 import requests
 from shinto_miraheze.ua_contact import contact
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS_DIR = os.path.join(HERE, "levels")
 SEEDS_RAW = os.path.join(HERE, "seeds_raw.txt")
@@ -42,7 +51,7 @@ STATE_PATH = os.path.join(HERE, "state.json")
 
 API = "https://www.wikidata.org/w/api.php"
 ENTITYDATA = "https://www.wikidata.org/wiki/Special:EntityData/{}.json"
-UA = {"User-Agent": "ShintoWikiBFS/1.0 ({contact('wikidata')}; shinto label corpus)"}
+UA = {"User-Agent": WIKIDATA_USER_AGENT}
 THROTTLE = 0.3            # seconds between network calls (read-only politeness)
 QID_RE = re.compile(r"^Q\d+$")
 SEED_LINE_RE = re.compile(r"\((Q\d+)\)")

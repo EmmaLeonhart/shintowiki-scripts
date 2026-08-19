@@ -1,17 +1,14 @@
 """No script may build a User-Agent by hand. The two identities must never meet in one string.
 
-Emma, on the segregation: "This particular thing is extremely important... if you use the wrong one
-on either one of the bots, it'll basically be complete operational risk... Wikidata cannot associate
-contact@emmaleonhart.com with me."
+The two agents are separate by design and must never be built by hand. Which agent a request
+carries is decided by its destination, and nothing else.
 
 The constants and ua_for() enforce that -- but only for code that USES them. Three scripts had
 hand-built UA strings that bypassed the whole mechanism, found 2026-08-19:
 
-  * recreate-deleted-wikidata/rag_deleted_logs.py sent
-        "EmmaBot/1.0 (https://shinto.miraheze.org/wiki/User:Immanuelle; <wikidata contact>)"
-    to www.wikidata.org -- the wiki-side bot name, the Miraheze URL and User:Immanuelle in ONE
-    header. It had even been half-fixed: the email came from contact('wikidata') while the
-    persona-mixing prefix stayed. A partial fix reads as a fixed file.
+  * recreate-deleted-wikidata/rag_deleted_logs.py built one header that mixed identifiers from
+    both sides and sent it to www.wikidata.org. It had even been half-fixed -- the contact came
+    from the right place while the rest of the string did not. A partial fix reads as a fixed file.
   * modern-quickstatements/generate_multi_p13677_page.py sent the Miraheze persona to the Wikidata
     API, and a spoofed "Mozilla/5.0 (compatible; EmmaBot/1.0; +https://shinto.miraheze.org/...)"
     to the Kokugakuin database.
@@ -75,3 +72,63 @@ def test_ua_for_still_fails_closed_on_an_unknown_host():
         except ValueError:
             continue
         raise AssertionError(f"ua_for({host!r}) returned a UA instead of refusing")
+
+
+def test_no_module_level_user_agent_built_from_a_literal():
+    """Stronger than the persona check: ban ANY hand-built agent, whatever it is named.
+
+    The persona test above only fires on a literal naming EmmaBot / ImmanuelleBot / Mozilla.
+    That was too narrow, and it hid the real scale of the problem: an audit on 2026-08-19 found
+    roughly thirty distinct bot names in circulation -- ShintoWikiBot, ShintoOrchestrator,
+    ShintoWikiLabels, ShintoWikiBeppyo, ShrineRankingPageBot, ShikinaishaListBot, ShintowikiPages,
+    shintowiki-bunrei, shintowiki-descfix, and more -- across 58 files. None of them tripped a
+    name-based check, and none of them matched the one agent string the wiki farm allowlists, so
+    the requests carrying them could not succeed no matter what else was fixed.
+
+    Fourteen of those literals also contained an unexpanded "{contact(...)}" -- a plain string
+    where an f-string was meant -- so the agent went out carrying no contact address at all, just
+    the source text of the interpolation.
+
+    The rule this encodes: the agent is chosen by DESTINATION and comes from a constant or from
+    ua_for(url). A module-level assignment to a UA-ish name whose value is a literal product token
+    is banned outright, regardless of what it calls itself.
+    """
+    import ast
+
+    UA_NAMES = {"USER_AGENT", "_USER_AGENT", "UA", "_UA", "UAW", "UAK", "WP_UA"}
+    TOKEN = re.compile(r"[A-Za-z][A-Za-z0-9_.-]*/[0-9][0-9.]*")
+    offenders = []
+    for rel, full in _python_files():
+        with open(full, encoding="utf-8", errors="replace") as fh:
+            src = fh.read()
+        try:
+            tree = ast.parse(src)
+        except SyntaxError:
+            continue
+        for node in tree.body:
+            if not isinstance(node, ast.Assign) or len(node.targets) != 1:
+                continue
+            tgt = node.targets[0]
+            if not isinstance(tgt, ast.Name) or tgt.id not in UA_NAMES:
+                continue
+            seg = ast.get_source_segment(src, node) or ""
+            if TOKEN.search(seg):
+                offenders.append(f"{rel}:{node.lineno}: {tgt.id} = {' '.join(seg.split())[:70]}")
+    assert not offenders, (
+        "module-level User-Agent built from a literal -- use USER_AGENT / WIKIDATA_USER_AGENT, "
+        "or ua_for(url) at the request site:\n  " + "\n  ".join(offenders))
+
+
+def test_no_unexpanded_contact_interpolation_anywhere():
+    """A plain string containing "{contact(" ships the braces verbatim as the contact address."""
+    offenders = []
+    for rel, full in _python_files():
+        with open(full, encoding="utf-8", errors="replace") as fh:
+            for n, line in enumerate(fh, 1):
+                if line.lstrip().startswith("#"):
+                    continue
+                for m in re.finditer(r'(?<![fF])"([^"\n]*\{contact\([^"\n]*)"', line):
+                    offenders.append(f"{rel}:{n}: {m.group(0)[:70]}")
+    assert not offenders, (
+        "unexpanded {contact(...)} in a plain string -- it is shipped literally, so the agent "
+        "carries no contact at all. Use an f-string:\n  " + "\n  ".join(offenders))

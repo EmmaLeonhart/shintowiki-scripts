@@ -29,6 +29,15 @@ import requests
 from tokiponizer import kana_to_romaji, tokenize_romaji
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
 def _ensure_utf8_stdout():
     """Windows UTF-8 console fix. Called from main() rather than at import time so
     the module stays import-safe (a module-level sys.stdout swap breaks pytest)."""
@@ -1071,7 +1080,7 @@ def run_sparql(query, label):
             r = requests.get(
                 SPARQL_ENDPOINT,
                 params={"query": query, "format": "json"},
-                headers={"User-Agent": "Japanese-Tokiponizer/1.0 (multilang label pipeline)"},
+                headers={"User-Agent": WIKIDATA_USER_AGENT},
                 timeout=300,
             )
             r.raise_for_status()

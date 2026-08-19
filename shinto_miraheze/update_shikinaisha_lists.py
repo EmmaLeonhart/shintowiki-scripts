@@ -27,6 +27,7 @@ import os, re, time, argparse, requests, sys, io
 from html import escape
 
 import json
+from shinto_miraheze.ua_for import ua_for
 # Anchored next to this module (not CWD) so CI can commit/restore it: the
 # 2026-07-04 full-sweep dispatch hit the 170-min job timeout at province ~N,
 # and with runner-local progress the next run would restart at page 1 and
@@ -62,7 +63,12 @@ USER = os.getenv("WIKI_USERNAME") or ""
 PASS = os.getenv("WIKI_PASSWORD") or ""
 
 S = requests.Session()
-S.headers["User-Agent"] = "ShikinaishaListBot/0.8 (address col; EmmaBot; shinto.miraheze.org)"
+# One requests.Session serves BOTH shinto.miraheze.org and www.wikidata.org here (see the
+# S.get(WD_API, ...) below), under a single session-level agent that named EmmaBot and the
+# Miraheze URL -- so every Wikidata call on this session carried the wiki-side persona.
+# The session default is the wiki agent, since almost every call is WIKI_API; the one
+# Wikidata call overrides it per request.
+S.headers["User-Agent"] = ua_for(WIKI_API)
 
 # ────────────────────────────────────────────────────────
 #  MediaWiki helpers
@@ -273,7 +279,9 @@ def _wd_get(params: dict) -> dict:
     for attempt in range(max_retries):
         time_module.sleep(0.5)
         try:
-            resp = S.get(WD_API, params=params, timeout=30)
+            # per-request override -- this is the Wikidata call on a wiki-side session
+            resp = S.get(WD_API, params=params, timeout=30,
+                         headers={"User-Agent": ua_for(WD_API)})
             if resp.status_code == 429 or resp.status_code >= 500:
                 wait = int(resp.headers.get("Retry-After", 0) or 0) or 15 * (attempt + 1)
                 print(f"  [RETRY] Wikidata HTTP {resp.status_code}, waiting {wait}s...", flush=True)

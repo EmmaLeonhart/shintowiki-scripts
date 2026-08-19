@@ -40,12 +40,22 @@ import urllib.request
 from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.ua_for import ua_for
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "bunrei_onkamui.txt")
 REPORT = os.path.join(HERE, "onkamui_parse_report.txt")
 URL = "https://plaza.rakuten.co.jp/onkamui/diary/202409290000/"
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = f"shintowiki-bunrei/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
+# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-bunrei/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 Q_BUNREI = "Q195793"
 
 PREFS = [
@@ -130,7 +140,7 @@ def head_qid(name):
 def fetch(url=URL, cache=None):
     if cache and os.path.exists(cache):
         return open(cache, encoding="utf-8", errors="replace").read()
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    req = urllib.request.Request(url, headers={"User-Agent": ua_for(url)})
     wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=120) as r:
         if r.status == 429:
@@ -217,7 +227,7 @@ def all_shrines():
           'rdfs:label ?prefLabel . FILTER(LANG(?prefLabel)="ja") } }')
     url = WDQS + "?" + urllib.parse.urlencode({"query": qy, "format": "json"})
     req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
+        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
     wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=300) as r:
         if r.status == 429:

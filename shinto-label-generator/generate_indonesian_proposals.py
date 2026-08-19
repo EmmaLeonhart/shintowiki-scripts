@@ -15,6 +15,15 @@ import requests
 import pykakasi
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
 # Initialize pykakasi (v2.3.0 API)
 kks = pykakasi.kakasi()
 
@@ -48,7 +57,7 @@ def fetch_candidates():
     print("Querying Wikidata for Japanese-only Shrines...")
     try:
         wd_pace(SPARQL_INTERVAL)
-        r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_SHRINES, "format": "json"}, headers={"User-Agent": "Japanese-Tokiponizer/1.0"}, timeout=300)
+        r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_SHRINES, "format": "json"}, headers={"User-Agent": WIKIDATA_USER_AGENT}, timeout=300)
         r.raise_for_status()
         bindings = r.json()["results"]["bindings"]
         for b in bindings:
@@ -59,7 +68,7 @@ def fetch_candidates():
     print("Querying Wikidata for Japanese-only Temples...")
     try:
         wd_pace(SPARQL_INTERVAL)
-        r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_TEMPLES, "format": "json"}, headers={"User-Agent": "Japanese-Tokiponizer/1.0"}, timeout=300)
+        r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_TEMPLES, "format": "json"}, headers={"User-Agent": WIKIDATA_USER_AGENT}, timeout=300)
         r.raise_for_status()
         bindings = r.json()["results"]["bindings"]
         for b in bindings:

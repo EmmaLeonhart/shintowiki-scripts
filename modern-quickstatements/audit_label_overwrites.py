@@ -54,10 +54,13 @@ import time
 
 import requests
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-UA = ("ShintoWikiLabels/1.0 "
-      f"(https://github.com/EmmaLeonhart/shintowiki-scripts; {contact('miraheze')})")
+# Was building the agent from the wiki-side contact rather than the Wikidata one, on a
+# Wikidata request. The two agents are separate by design; resolve, never hand-build.
+# was: a hand-built agent using the wiki-side contact
+UA = WIKIDATA_USER_AGENT
 API = "https://www.wikidata.org/w/api.php"
 
 # `-Qxxx|Len|…` is a label REMOVAL; the dash is the command. Matched so a

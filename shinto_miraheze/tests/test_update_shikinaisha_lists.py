@@ -64,7 +64,16 @@ class _FakeResp:
 def test_prefetch_batches_and_skips_cached(monkeypatch):
     calls = []
 
-    def fake_get(url, params=None, timeout=None):
+    def fake_get(url, params=None, timeout=None, headers=None):
+        # The Wikidata call rides a session whose DEFAULT agent is the wiki-side one, so it
+        # must override the header per request. Assert that here rather than merely tolerating
+        # the kwarg: before 2026-08-19 this call went out under
+        # "ShikinaishaListBot/0.8 (address col; EmmaBot; shinto.miraheze.org)" -- the wiki-side
+        # persona, on www.wikidata.org.
+        assert headers and "User-Agent" in headers, "the Wikidata call must set its own agent"
+        ua = headers["User-Agent"]
+        assert "miraheze" not in ua and "EmmaBot" not in ua, f"wiki-side persona sent to Wikidata: {ua}"
+        assert "Immanuelle" in ua, f"expected the Wikidata agent, got: {ua}"
         ids = params["ids"].split("|")
         calls.append(ids)
         return _FakeResp({"entities": {q: {"claims": {}, "labels": {}, "sitelinks": {}}

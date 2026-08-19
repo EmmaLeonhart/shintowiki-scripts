@@ -61,6 +61,7 @@ import argparse
 
 import requests
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.user_agent import USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_CSV = os.path.join(HERE, "crawled_shrines.csv")
@@ -69,9 +70,12 @@ STATE = os.path.join(HERE, "crawl_state.json")
 THROTTLE = 1.5
 MISS_TOLERANCE = 60          # consecutive dead ids before a family gives up
 TIMEOUT = 30
-UA = {"User-Agent": "ShintoWikiJinjacho/1.0 "
-                    "(https://github.com/EmmaLeonhart/shintowiki-scripts; "
-                    f"{contact('wikidata')})"}
+# Was a hand-built agent naming a bot that nothing else recognises. These are third-party
+# prefectural directories -- roughly one domain per prefecture -- so routing them through the
+# fail-closed ua_for() would mean enumerating every one and breaking on the next one added.
+# The constant is used directly instead: what this crawl feeds is wiki content, so it carries
+# the wiki agent.
+UA = {"User-Agent": USER_AGENT}
 
 FIELDS = ["prefecture", "shrine_name", "kana", "address", "url"]
 

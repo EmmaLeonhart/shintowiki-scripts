@@ -30,11 +30,14 @@ import urllib.parse
 import urllib.request
 from shinto_miraheze.ua_contact import contact
 
+from shinto_miraheze.ua_for import ua_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SEED = os.path.join(ROOT, "modern-quickstatements", "description_collision_groups.json")
 OUTDIR = os.path.join(ROOT, "description_enrichment_en")
 WD_API = "https://www.wikidata.org/w/api.php"
-UA = f"shintowiki-descenrich/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
+# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-descenrich/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 JA_COVERAGE_MAX = 0.10   # stage-1 rule: ja descriptions (nearly) absent
 
 # A description this pipeline is allowed to replace. Anything else is Emma's own
@@ -113,7 +116,7 @@ def _get(ids):
     url = WD_API + "?" + urllib.parse.urlencode({
         "action": "wbgetentities", "ids": "|".join(ids),
         "props": "labels|descriptions|claims", "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    req = urllib.request.Request(url, headers={"User-Agent": ua_for(url)})
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=60) as r:

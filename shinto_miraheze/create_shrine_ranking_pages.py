@@ -87,7 +87,8 @@ def query_wikidata_p301(cat_qid):
       SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,ja". }}
     }}
     """
-    headers = {"Accept": "application/json", "User-Agent": "ShrineRankingPageBot/1.0"}
+    # was "ShrineRankingPageBot/1.0" -- no contact address at all, on query.wikidata.org.
+    headers = {"Accept": "application/json", "User-Agent": ua_for(url)}
     try:
         resp = requests.get(url, params={"query": query, "format": "json"},
                             headers=headers, timeout=30)

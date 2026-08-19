@@ -28,9 +28,18 @@ from koreanizer import koreanize
 from tokiponizer import tokiponize, tokenize_romaji, kana_to_romaji, katakana_to_hiragana
 import hanja
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+
 SPARQL = "https://query.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
-UA = {"User-Agent": "Japanese-Tokiponizer/1.0 (bare-name label pipeline)"}
+UA = {"User-Agent": WIKIDATA_USER_AGENT}
 
 ZH_CODES = ["zh", "zh-hant", "zh-tw", "zh-hk", "zh-hans", "zh-cn", "zh-sg", "gan", "zh-mo"]
 

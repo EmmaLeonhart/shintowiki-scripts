@@ -26,8 +26,8 @@ from shinto_miraheze.ua_contact import contact
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-UA = ("ShintoWikiBot/1.0 (https://github.com/EmmaLeonhart/shintowiki-scripts; "
-      f"{contact('wikidata')})")
+# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: UA = ("ShintoWikiBot/1.0 (https://github.com/EmmaLeonhart/shintowiki-scripts; "
 
 WIKIS = {
     "miraheze": "https://shinto.miraheze.org/w/api.php",

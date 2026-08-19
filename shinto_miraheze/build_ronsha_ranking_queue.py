@@ -28,11 +28,14 @@ import urllib.request
 from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
+from shinto_miraheze.ua_for import ua_for
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTDIR = os.path.join(ROOT, "ronsha_ranking_review")
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = f"shintowiki-ronsha/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
+# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-ronsha/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 
 TASK = (
     "<!-- TASK: this Shikinai Ronsha (disputed Engishiki shrine identity) has "
@@ -49,7 +52,7 @@ TASK = (
 def sparql(query):
     url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
     req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
+        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
     wd_pace(SPARQL_INTERVAL)
     with urllib.request.urlopen(req, timeout=180) as r:
         if r.status == 429:

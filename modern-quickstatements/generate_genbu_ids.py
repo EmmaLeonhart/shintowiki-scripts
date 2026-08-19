@@ -26,6 +26,7 @@ import time
 import urllib.parse
 import requests
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -40,7 +41,9 @@ GENBU = "https://www.genbu.net"
 SHRINE_CLASS = "Q845945"                 # Shinto shrine
 REGIONS = ["tohoku", "kanto", "kousinetu", "hokuriku", "tokai", "kansai",
            "cyugoku", "sikoku", "kyusyu", "hokkaido", "okinawa"]
-UA = {"User-Agent": "ShintoWikiGenbu/1.0 ({contact('wikidata')})"}
+# shipped the literal text {contact('wikidata')}: an unexpanded plain string, so the UA carried NO contact at all
+# was: UA = {"User-Agent": "ShintoWikiGenbu/1.0 ({contact('wikidata')})"}
+UA = {"User-Agent": WIKIDATA_USER_AGENT}
 SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 
 GENBU_URL_RE = re.compile(r"https?://(?:www\.)?genbu\.net/(.+?)\.htm", re.I)

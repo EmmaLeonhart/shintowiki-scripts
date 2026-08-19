@@ -8860,3 +8860,37 @@ pattern rather than the instances. 1493 tests pass.
 three real questions kept and answered with named examples; three of Emma's own calls left to her.
 Her standing note kept verbatim. The 39-day blackout was what let it rot — the sweep that reads the
 page was itself gated behind the wiki.
+
+## 2026-08-19 (later) — the wiki agent was never standardised, and that is why edits kept failing
+
+Emma's hypothesis, and it was right: *"There might have been some Shinto wiki edits that were not
+properly done if the user agent was not standard across all of the edits."*
+
+**~30 distinct bot names were in circulation across 58 files.** The wiki farm allowlists ONE exact
+string. Every script running under `ShintoWikiBot/1.0`, `ShintoOrchestrator/1.0`, `ShintoWikiLabels`,
+`ShintoWikiBeppyo`, `ShrineRankingPageBot`, `ShikinaishaListBot`, `ShintowikiPages`,
+`DeleteLowercaseTemplateCollisionsBot`, `shintowiki-bunrei/descfix/reisai/ronsha/descenrich` … could
+not be served regardless of the allowlist, because none of them is the allowlisted string.
+
+Three further defects surfaced in the same audit:
+
+- **Wrong-side contact on Wikidata requests** — 6 files built the agent from the wiki-side contact
+  and sent it to `www.wikidata.org` / `query-main`. One built it inline inside the request dict,
+  which is how it evaded a module-level scan.
+- **14 agents carrying no contact at all** — a plain string containing `{contact('wikidata')}`, so
+  the braces shipped verbatim as source text.
+- **A silent fail-OPEN** — 4 files wrapped the agent import in `try/except` whose handler assigned a
+  non-canonical hand-built agent, marked `pragma: no cover`. In a fail-closed design, an import
+  hiccup would have quietly swapped the agent with nothing logged and nothing tested.
+
+Also: one `requests.Session` served both wikis under a single session-level agent, and one
+`mwclient.Site()` set none at all (mwclient's default library string).
+
+**Now: 4 literals remain, none of them a wiki agent** — a browser string in an HTTP test harness, and
+grokipedia's deliberately-structured agent (third-party, has its own switchover mechanism). Both
+flagged rather than churned.
+
+`tests/test_no_hardcoded_user_agents.py` now has four tests, and the second one is the lesson: the
+original banned literals *naming* a known bot, which is why it caught 10 files and missed 48. It now
+bans any module-level agent built from a literal, whatever it calls itself, plus unexpanded
+`{contact(...)}`. 1495 tests pass.

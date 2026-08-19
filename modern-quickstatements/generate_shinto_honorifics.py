@@ -78,10 +78,12 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
     _root = os.path.dirname(_root)
 if _root not in sys.path:
     sys.path.insert(0, _root)
-try:
-    from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
-except Exception:                                     # pragma: no cover
-    WIKIDATA_USER_AGENT = "shintowiki-scripts/1.0 (https://emmaleonhart.com)"
+# Imported unconditionally on purpose. This used to sit in a try/except whose handler was
+#         WIKIDATA_USER_AGENT = <a non-canonical hand-built agent>
+# marked `pragma: no cover`. That is a silent fail-OPEN in a system whose whole design is
+# fail-closed: any import hiccup would quietly put the wrong domain on Wikidata
+# requests, untested and invisible. An unimportable agent must stop the run instead.
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 

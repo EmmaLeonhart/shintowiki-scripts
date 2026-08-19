@@ -73,15 +73,15 @@ import time
 import mwclient
 from wiki_login import login_with_retry
 
+from shinto_miraheze.user_agent import USER_AGENT
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 THROTTLE = 2.5
 READ_THROTTLE = 0.3
-USER_AGENT = (
-    "UntranscludeCrudTemplates/1.0 (User:EmmaBot; shinto.miraheze.org)"
-)
+USER_AGENT = USER_AGENT
 
 SOURCE_CATEGORY = "Crud templates"
 REMOVED_TEMPLATE_TITLE = "Template:Removed template"

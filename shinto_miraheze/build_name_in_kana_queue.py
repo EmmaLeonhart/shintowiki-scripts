@@ -56,6 +56,7 @@ import urllib.parse
 
 import requests
 from shinto_miraheze.ua_contact import contact
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -63,8 +64,10 @@ OUT_DIR = os.path.join(REPO_ROOT, "name_in_kana")
 
 SPARQL = "https://query-main.wikidata.org/sparql"
 JA_API = "https://ja.wikipedia.org/w/api.php"
-UA = ("ShintoWikiLabels/1.0 "
-      f"(https://github.com/EmmaLeonhart/shintowiki-scripts; {contact('miraheze')})")
+# Was building the agent from the wiki-side contact rather than the Wikidata one, on a
+# Wikidata request. The two agents are separate by design; resolve, never hand-build.
+# was: a hand-built agent using the wiki-side contact
+UA = WIKIDATA_USER_AGENT
 HDR = {"User-Agent": UA, "Accept": "application/sparql-results+json"}
 THROTTLE = 0.4
 BATCH = 20                       # titles per ja.wikipedia extracts call

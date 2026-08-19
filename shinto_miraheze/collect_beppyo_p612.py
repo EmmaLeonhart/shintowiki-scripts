@@ -36,6 +36,7 @@ import re
 import sys
 from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -83,9 +84,10 @@ def verify_shrines(qids):
     import requests
     ok = set()
     uniq = sorted(qids)
-    hdr = {"User-Agent": "ShintoWikiBeppyo/1.0 "
-                         "(https://github.com/EmmaLeonhart/shintowiki-scripts; "
-                         f"{contact('miraheze')})",
+    # Was building the agent inline from the wiki-side contact on a Wikidata request.
+    # Inline construction is also how it evaded the module-level audit -- the shape to
+    # watch for, not just the value.
+    hdr = {"User-Agent": WIKIDATA_USER_AGENT,
            "Accept": "application/sparql-results+json"}
     for i in range(0, len(uniq), 50):
         vals = " ".join("wd:%s" % q for q in uniq[i:i + 50])

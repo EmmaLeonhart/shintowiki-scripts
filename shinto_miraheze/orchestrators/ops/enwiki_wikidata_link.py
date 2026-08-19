@@ -42,6 +42,8 @@ import re
 
 import requests
 
+from shinto_miraheze.ua_for import ua_for
+
 from ..common import REDIRECT_RE
 
 NAME = "enwiki_wikidata_link"
@@ -58,7 +60,8 @@ _NOINCLUDE_BLOCK_RE = re.compile(
 )
 
 _ENWIKI_API = "https://en.wikipedia.org/w/api.php"
-_USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
+# _USER_AGENT removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: _USER_AGENT = "ShintoOrchestrator/1.0 (User:EmmaBot; shinto.miraheze.org)"
 _HTTP_TIMEOUT = 10
 
 
@@ -119,7 +122,7 @@ def _check_enwiki_template(template_name: str) -> tuple[bool, str | None]:
                 "ppprop": "wikibase_item",
                 "format": "json",
             },
-            headers={"User-Agent": _USER_AGENT},
+            headers={"User-Agent": ua_for(_ENWIKI_API)},
             timeout=_HTTP_TIMEOUT,
         )
         resp.raise_for_status()

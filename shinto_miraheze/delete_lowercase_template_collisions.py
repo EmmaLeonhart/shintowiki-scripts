@@ -46,6 +46,7 @@ import time
 import mwclient
 
 from wiki_login import login_with_retry
+from shinto_miraheze.user_agent import USER_AGENT
 
 # Match `#REDIRECT [[Target]]` (or `#redirect`, `#Redirect`, optional
 # leading `:` interwiki marker, optional `|display text` after the
@@ -100,13 +101,15 @@ WIKIS = {
     "miraheze": {
         "url": "shinto.miraheze.org",
         "path": "/w/",
-        "ua": "DeleteLowercaseTemplateCollisionsBot/1.0 (User:EmmaBot; shinto.miraheze.org)",
+        # was a per-script agent that nothing recognises -- and the wiki farm allowlists
+        # one exact string, so a bespoke name cannot be served no matter what else is right.
+        "ua": USER_AGENT,
         "user_env": "WIKI_USERNAME", "pass_env": "WIKI_PASSWORD", "user_default": "EmmaBot",
     },
     "fandom": {
         "url": "shinto.fandom.com",
         "path": "/",
-        "ua": "DeleteLowercaseTemplateCollisionsBot/1.0 (User:EmmaBot; shinto.fandom.com)",
+        "ua": USER_AGENT,   # fandom shares the wiki-side agent
         "user_env": "FANDOM_USERNAME", "pass_env": "FANDOM_PASSWORD", "user_default": "",
     },
 }

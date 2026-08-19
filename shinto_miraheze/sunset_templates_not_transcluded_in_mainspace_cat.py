@@ -30,14 +30,13 @@ import sys
 import mwclient
 from wiki_login import login_with_retry
 
+from shinto_miraheze.user_agent import USER_AGENT
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
-USER_AGENT = (
-    "SunsetTemplatesNotTranscludedInMainspaceCat/1.0 "
-    "(User:EmmaBot; shinto.miraheze.org)"
-)
+USER_AGENT = USER_AGENT
 
 TARGET_CATEGORY = "Category:Templates not transcluded in mainspace"
 CRUD_CAT = "[[Category:crud categories]]"

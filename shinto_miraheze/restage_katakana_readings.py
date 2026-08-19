@@ -46,8 +46,11 @@ LOG = os.path.join(REPO_ROOT, "name_in_kana", "_resolved.log")
 QS_OUT = os.path.join(REPO_ROOT, "modern-quickstatements", "name_in_kana.txt")
 JAWIKI_ITEM = "Q177837"
 
-UA = ("ShintoWikiLabels/1.0 "
-      f"(https://github.com/EmmaLeonhart/shintowiki-scripts; {contact('miraheze')})")
+# Was building the agent from the wiki-side contact rather than the Wikidata one, on a
+# Wikidata request. The two agents are separate by design; resolve, never hand-build.
+# was: a hand-built agent using the wiki-side contact
+from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+UA = WIKIDATA_USER_AGENT
 
 sys.path.insert(0, HERE)
 from collect_name_in_kana import acceptable_reading, clean_kana  # noqa: E402

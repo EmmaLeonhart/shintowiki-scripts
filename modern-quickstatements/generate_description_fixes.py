@@ -46,11 +46,21 @@ sys.path.insert(0, os.path.join(REPO, "shinto-label-generator"))
 from language_registry import COVERED  # noqa: E402
 from shinto_miraheze.ua_contact import contact
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+from shinto_miraheze.ua_for import ua_for
+
 OUT = os.path.join(HERE, "description_label_pairs.txt")
 GROUPS = os.path.join(HERE, "description_pair_collision_groups.json")
 PROPOSALS_DIR = os.path.join(REPO, "shinto-label-generator", "quickstatements")
 WDQS = "https://query-main.wikidata.org/sparql"
-UA = f"shintowiki-descfix/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
+# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-descfix/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 
 # (class QID, extra pattern) — same classes the label pipelines cover
 CLASSES = [
@@ -64,7 +74,7 @@ GENERIC_SUPPORT = 3   # min corpus frequency for the generic modal form
 def sparql(query, retries=3):
     url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
     req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
+        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=300) as r:

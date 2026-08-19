@@ -37,13 +37,12 @@ import sys
 
 import requests
 
+from shinto_miraheze.user_agent import USER_AGENT
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_API = "https://shinto.miraheze.org/w/api.php"
-USER_AGENT = (
-    "DiagnosePageChurn/1.0 (User:EmmaBot; shinto.miraheze.org; "
-    "read-only diagnostic)"
-)
+USER_AGENT = USER_AGENT
 HTTP_TIMEOUT = 30
 CATEGORY = "Git synced pages"
 SAMPLE_SIZE = 20

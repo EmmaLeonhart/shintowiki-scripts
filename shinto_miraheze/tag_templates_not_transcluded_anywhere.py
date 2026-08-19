@@ -35,14 +35,14 @@ import time
 import mwclient
 from wiki_login import login_with_retry
 
+from shinto_miraheze.user_agent import USER_AGENT
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WIKI_URL = "shinto.miraheze.org"
 WIKI_PATH = "/w/"
 THROTTLE = 2.5
-USER_AGENT = (
-    "TemplatesNotTranscludedAnywhere/1.0 (User:EmmaBot; shinto.miraheze.org)"
-)
+USER_AGENT = USER_AGENT
 
 SOURCE_CATEGORY = "Templates not transcluded in mainspace"
 NEW_CATEGORY = "Templates not transcluded in mainspace or categoryspace"
