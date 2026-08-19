@@ -1,16 +1,15 @@
-"""THE canonical User-Agent for MIRAHEZE + FANDOM. Wikidata has its own — never share them.
+"""Canonical User-Agent for MIRAHEZE + FANDOM requests.
 
-    shinto_miraheze/user_agent.py           USER_AGENT          -> shinto.miraheze.org + fandom
-    shinto_miraheze/wikidata_user_agent.py  WIKIDATA_USER_AGENT -> wikidata.org / WDQS / QuickStatements
+One definition, imported everywhere; it used to be copy-pasted into ~86 places with drifting values.
+Separate from the Wikidata constant in `wikidata_user_agent.py` by design — never shared, never
+merged. `tests/test_user_agent_segregation.py` enforces that.
 
-Emma, 2026-08-18: the two identities are strictly segregated, and using the wrong one on either bot
-is an operational risk. Do not merge the constants, import one from the other, or add a shared
-fallback. `tests/test_user_agent_segregation.py` enforces both directions.
+The contact address is the `MIRAHEZE_EMAIL` repo secret, resolved at runtime; see ua_contact.py.
 
-The contact address is the `MIRAHEZE_EMAIL` repo secret, not a literal here — see ua_contact.py.
+The farm allowlists bots by User-Agent, so changing this string can un-allowlist the bot. Tell them
+before changing it. And keep it truthful — no browser impersonation on any path that touches the wiki.
 
-The farm allowlists bots BY User-Agent, so changing this string can un-allowlist it. Tell them first.
-Scripts import it via the usual run-context-independent bootstrap:
+Bootstrap, as elsewhere in this repo:
 
     import os, sys
     _r = os.path.dirname(os.path.abspath(__file__))

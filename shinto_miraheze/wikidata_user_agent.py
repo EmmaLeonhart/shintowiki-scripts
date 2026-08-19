@@ -1,17 +1,11 @@
-"""THE canonical User-Agent for WIKIDATA. Miraheze/Fandom has its own — never share them.
+"""Canonical User-Agent for Wikidata requests.
 
-    shinto_miraheze/user_agent.py           USER_AGENT          -> shinto.miraheze.org + fandom
-    shinto_miraheze/wikidata_user_agent.py  WIKIDATA_USER_AGENT -> wikidata.org / WDQS / QuickStatements
+Separate from the Miraheze/Fandom constant in `user_agent.py` by design — the two are never shared,
+never merged, and neither imports the other. `tests/test_user_agent_segregation.py` enforces that.
 
-Emma, 2026-08-18: strictly segregated identities; the wrong one on either bot is an operational
-risk. This string carries the Immanuelle identity and nothing from the wiki side — no contact
-address from there, and no `github.com/EmmaLeonhart/...` source link, which is the easy way to hand
-Wikidata the association. Do not merge the constants or add a shared fallback.
-`tests/test_user_agent_segregation.py` enforces it both ways.
+The contact address is the `WIKIDATA_EMAIL` repo secret, resolved at runtime; see ua_contact.py.
 
-The contact address is the `WIKIDATA_EMAIL` repo secret, not a literal here — see ua_contact.py.
-
-Scripts import it via the usual run-context-independent bootstrap:
+Bootstrap, as elsewhere in this repo:
 
     import os, sys
     _r = os.path.dirname(os.path.abspath(__file__))

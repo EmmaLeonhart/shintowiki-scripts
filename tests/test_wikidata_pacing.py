@@ -1,18 +1,11 @@
-"""Every script that talks to Wikidata must pace itself. This is the test that keeps it true.
+"""Every script that requests a Wikidata endpoint must pace itself.
 
-Emma asked on 2026-08-04 whether the scripts rate-limit Wikidata at all. The answer on 2026-08-18
-was "108 call sites do, four didn't" — and the four were only found by grepping, two weeks after she
-asked. The fix is not the four files; it is that nothing was checking.
+Pacing was a convention spread across 100+ files, which meant a script could skip it and only a grep
+would ever find out. This test is what makes it a rule instead: it walks the tree and fails on any
+script that hits a Wikidata endpoint with neither `wd_pace()` nor its own `time.sleep`.
 
-Why it is worth a test rather than a note: the standing risk is Wikidata **scrutiny** (her 07-30
-estimate, 20% chance of a block being "a relatively significant step back"), and an unpaced loop is
-exactly the shape that stands out in someone else's log. This is the same failure mode as the User-
-Agent sprawl — a policy that lives as a convention in 100+ files drifts silently until something
-notices from the outside.
-
-A file passes if it either calls `wd_pace()` (the shared limiter) or carries its own `time.sleep`.
-Existing per-call sleeps are grandfathered deliberately: the point is that a request loop is paced,
-not that every script is converted.
+Existing per-call sleeps are grandfathered on purpose — the requirement is that request loops are
+paced, not that every script converts to the shared helper.
 """
 import os
 import re

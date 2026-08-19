@@ -1,18 +1,12 @@
 """One place that decides how fast we may talk to Wikidata.
 
-Emma asked on 2026-08-04 whether the scripts rate-limit Wikidata at all, and the honest answer,
-measured on 2026-08-18, was "mostly": 108 call sites carried their own `time.sleep`, with values
-scattered from 0.2s to 10s, and a handful had nothing. Scattered per-call constants are how the
-handful happens — nobody can see the policy, so nobody notices a script that skips it.
+Pacing used to live as a per-call `time.sleep` in 100+ scripts, with values from 0.2s to 10s and a
+number of call sites carrying none at all. Scattered constants are how a gap happens — nobody can
+see the policy, so nobody notices a script that skips it.
 
-So the policy lives here, and the reason it matters is not politeness: the standing concern is
-Wikidata **scrutiny** (Emma, 2026-07-30 — "20% chance… operational security issue"), and scrutiny
-follows a visible pattern rather than raw volume. A steady, paced reader looks like every other
-tool; an unpaced loop is the thing that stands out in a log.
-
-`READ_INTERVAL` is the interval between successive read requests from one process. 0.3s matches what
-the majority of existing call sites already used, and is well inside what the API tolerates for
-authenticated reads — this is about looking ordinary, not about staying under a limit.
+`READ_INTERVAL` paces the API. `SPARQL_INTERVAL` paces the query service and is deliberately much
+larger: this repo's floor for WDQS is 2.5s, set after an unpaced run fired ~365 queries and drew
+repeated 503/504. Do not pace a SPARQL caller at READ_INTERVAL.
 """
 import time
 

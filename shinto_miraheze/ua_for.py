@@ -1,19 +1,10 @@
 """Pick the right User-Agent for a URL — for scripts that talk to BOTH sites.
 
-Most scripts talk to one site and should import that site's constant directly. Some genuinely
-talk to both in one run (read a page from the wiki, look the item up on Wikidata). Those cannot
-use a single module-level constant without sending one site's identity to the other, which is
-exactly the leak Emma ruled out on 2026-08-18:
+Most scripts talk to one site and import that site's constant directly. Some read a page from the
+wiki and look the item up on Wikidata in the same run; those resolve the UA from the URL at request
+time, so no call site depends on remembering which endpoint a given line was talking to.
 
-    "if you use the wrong one on either one of the bots, it'll basically be complete operational
-     risk. We have strictly segregated user agents for the two of them. Wikidata cannot associate
-     the wiki-side contact address with me."
-
-So dual-site call sites resolve the UA from the URL **at request time**, which removes the class
-of bug where a human (or a sweep) has to remember which endpoint a given line was talking to.
-
-Fails CLOSED: an unrecognised host raises rather than falling back to a default. A default is how
-the wrong identity reaches a host nobody thought about — a redirect, a new endpoint, a copied line.
+Fails CLOSED: an unrecognised host raises rather than falling back to a default.
 """
 from urllib.parse import urlparse
 
