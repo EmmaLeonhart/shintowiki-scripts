@@ -8963,3 +8963,21 @@ uniqueness — it adds a value without resolving the ambiguity it appears to fix
 
 The 57 are exactly what the existing add-only `generate_p958_qualifiers.py` produces, so the next
 question is whether that has simply not been re-run — not whether to build a second generator.
+
+## 2026-08-19 — queue hygiene: three finished sections deleted
+
+`queue.md` was **1,016 lines carrying 7 open items**. The repo's own convention is that finished work
+is DELETED from the queue, never left with a ✅ — and the hub had exactly this disease at 769 lines
+before it was cut. Deleted, all with zero open items and a completion marker in their own headers:
+
+- **A00** — the 11 lineage cases, all answered and applied 2026-08-04.
+- **A0b** — mother house (P612), all 444 read in full 2026-08-04 (345 Beppyō + 99 Ise).
+- **A0c** — 神宮125社, the Ise Jingū constituent shrines. Its own closing line was "Nothing open in
+  A0c" and it sat in the queue for fifteen days after that.
+
+The record of what they concluded lives here and in the git history; a queue that carries its own
+completed work stops being a queue and becomes a status page nobody trusts.
+
+Deliberately NOT deleted: A1, A2, A3, A4, A5 and B0 show zero `- [ ]` boxes but use other markers
+(▶ alive, ⏭ next, ⏸ parked) and describe live or parked work, not finished work. Deleting on the
+box-count alone would have destroyed five live sections.
