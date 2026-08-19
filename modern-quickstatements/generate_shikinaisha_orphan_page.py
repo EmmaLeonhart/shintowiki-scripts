@@ -19,7 +19,7 @@ import io
 import os
 import sys
 
-from report_orphan_shikinaisha import gather, normalise
+from report_orphan_shikinaisha import gather, normalise, dup_key
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(HERE)
@@ -28,17 +28,24 @@ OUT = os.path.join(REPO_ROOT, "_site", "shikinaisha-orphans.html")
 WD = "https://www.wikidata.org/wiki/"
 
 
-def twins_of(q, claimed_lists, parts_of, ja_label, kokugakuin, ids_of_named):
+def twins_of(q, claimed_lists, parts_of, ja_label, kok_keys, ids_of_named):
     """The named entry QIDs this orphan is a twin of, with the match reason.
 
     Mirrors report_orphan_shikinaisha.classify but RETURNS the matching entries
-    rather than a one-line label, so the page can link the pair."""
+    rather than a one-line label, so the page can link the pair.
+
+    Matches on the COMPOSITE key (P13677 + section P958) -- see dup_key. It used to
+    match on the bare id, which is not an identity: one Kokugakuin page carries many
+    entries, and section 0 is exempt from uniqueness entirely."""
     out = {}  # qid -> reason
-    # Kokugakuin-id twins: any named entry sharing one of this item's ids.
-    for k in kokugakuin.get(q, []):
-        for e in ids_of_named.get(k, []):
+    # Kokugakuin twins: a named entry sharing an (id, section) key that can prove identity.
+    for kk in kok_keys.get(q, ()):
+        dk = dup_key(*kk)
+        if not dk:
+            continue
+        for e in ids_of_named.get(dk, []):
             if e != q:
-                out.setdefault(e, "same Kokugakuin id")
+                out.setdefault(e, "same Kokugakuin id + section")
     # Label twins: named entries in a list this item claims, same (normalised) ja.
     mine = ja_label.get(q)
     twins = [e for l in claimed_lists for e in parts_of.get(l, ()) if e != q]
@@ -63,26 +70,28 @@ def wd_link(q, label=None):
 def build_rows():
     import collections
     (parts, confirmed, claims, kokugakuin, ja_label, en_label,
-     list_label, parts_of, dup_ids) = gather()
+     list_label, parts_of, dup_ids, kok_keys) = gather()
 
     ids_of_named = collections.defaultdict(list)
-    for q, ks in kokugakuin.items():
+    for q, keys in kok_keys.items():
         if q in parts:
-            for k in ks:
-                ids_of_named[k].append(q)
+            for kk in keys:
+                dk = dup_key(*kk)
+                if dk:
+                    ids_of_named[dk].append(q)
     # Every confirmed Shikinaisha carrying each Kokugakuin id (named entries AND
     # living-shrine items) — so we can spot an id that several shrines claim.
     holders_of_id = collections.defaultdict(list)
-    for q, ks in kokugakuin.items():
+    for q, keys in kok_keys.items():
         if q in confirmed:
-            for k in ks:
-                holders_of_id[k].append(q)
+            for k, sec in keys:
+                holders_of_id[k].append((q, sec))
 
     orphans = sorted(confirmed - parts)
     rows = []
     for q in orphans:
         cl = claims.get(q, [])
-        tw = twins_of(q, cl, parts_of, ja_label, kokugakuin, ids_of_named)
+        tw = twins_of(q, cl, parts_of, ja_label, kok_keys, ids_of_named)
         mine = ja_label.get(q, "")
         # A twin found by (normalised) NAME means the two items are the same shrine
         # under one name — a clean living/entry duplicate.
@@ -91,17 +100,22 @@ def build_rows():
         # A twin found ONLY by shared Kokugakuin id, whose name differs, is the
         # jawiki<->Kokugakuin-DB *disagreement*: the list names one shrine for that
         # entry, the DB id is carried by a different-named (or several) shrine(s).
-        id_twins = {e: r for e, r in tw.items() if r == "same Kokugakuin id"}
+        id_twins = {e: r for e, r in tw.items() if r == "same Kokugakuin id + section"}
         for e in list(id_twins):
             if mine and normalise(ja_label.get(e, "")) == normalise(mine):
-                name_twins[e] = "same Kokugakuin id + same name"
+                name_twins[e] = "same Kokugakuin id + section + same name"
                 del id_twins[e]
         # Competing claimants: for each shared id that names an entry, every
         # confirmed Shikinaisha that also holds it (the "who else claims this" set).
+        # This one IS legitimately id-level: "how many shrines point at this Kokugakuin
+        # page" is a question about the page, not about an entry on it. The section is
+        # carried through so a shared page with DIFFERENT sections is visibly not a
+        # conflict -- which, per the 2026-08-19 check, is what most of them are.
         claimants = {}
         for k in kokugakuin.get(q, []):
-            if ids_of_named.get(k) and len(holders_of_id.get(k, [])) > 1:
-                claimants[k] = [(h, h in parts) for h in holders_of_id[k]]
+            holders = holders_of_id.get(k, [])
+            if len(holders) > 1:
+                claimants[k] = [(h, h in parts, sec) for h, sec in holders]
         if name_twins:
             diag = "duplicate"
         elif id_twins:
@@ -162,8 +176,10 @@ def render(rows, ja_label):
         claim_bits = []
         for k, holders in r["claimants"].items():
             names = ", ".join(
-                wd_link(h, ja_label.get(h) or h) + (" <span class=\"reason\">‹named entry›</span>" if is_named else "")
-                for h, is_named in holders if h != r["q"])
+                wd_link(h, ja_label.get(h) or h)
+                + f' <span class="reason">§{esc(sec or "no section")}</span>'
+                + (" <span class=\"reason\">‹named entry›</span>" if is_named else "")
+                for h, is_named, sec in holders if h != r["q"])
             claim_bits.append(f'{_koku_link(k)}: <strong>{len(holders)}</strong> claim it — {names}')
         claim_html = "<br>".join(claim_bits) or "—"
         return (f'<tr class="dis" data-search="{search_attr(r)}">'

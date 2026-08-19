@@ -760,11 +760,29 @@ it; fire the question with the chat option so it can actually move.
 > browsable tables. The tables are GitHub Pages and work right now, but the review pairs the two, so
 > they wait for the gate (Emma 2026-07-13).
 
-### B2. The 84 duplicate shrine pairs — link or merge?
-84 living-shrine items duplicate their 927-register-entry twin (same Kokugakuin id / name).
+### B2. The duplicate shrine pairs — link or merge? **STILL OPEN. Not decided.**
 Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html
 - **ASK:** "Link each pair with 'said to be the same as', or merge them?" → *link* (I generate
   QuickStatements, add-only) / *merge* (manual/browser, I hand you the list) / *case-by-case*.
+
+**The "84" is stale and the evidence behind it was wrong — corrected 2026-08-19.** Live counts are
+48 duplicates / 36 Kokugakuin-id disagreements / 65 no-twin. Of the 48, 11 were matched by Kokugakuin
+id and ~40 by ja label.
+
+**All 11 of the id-matched pairs are gone.** They rested on P13677 alone, which is not an identity:
+one Kokugakuin page carries many entries, so items are unique by the **combination of P13677 and its
+section qualifier P958** — and neither `0` nor `n/a` is uniqueness-protected (Emma, 2026-08-19).
+Checked against the live API: 7 pairs had DIFFERENT sections, 3 involved section `0`, 1 shared
+(id, `n/a`). **None is an established duplicate.**
+
+Fixed at the source, not just in the numbers: `report_orphan_shikinaisha.gather()` read `wdt:P13677`
+— the truthy value, no qualifiers — so the report could not see sections at all. It now reads the
+statement + `pq:P958` and keys twins on `dup_key()`, which returns None for `0`, `n/a` and a missing
+section. Side-effect worth having: the same look is what surfaced the three real data errors now
+sitting in **B10**.
+
+So what remains under B2 is the **~40 ja-label pairs**, which this correction does not touch. Re-read
+the regenerated table before deciding.
 
 ### B3. The 66 orphan Shikinaisha — mis-tagged, or missing entries?
 66 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or real
@@ -810,6 +828,46 @@ https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
 A POSSIBLE future optimization to make wiki category-page processing faster (skip some ops on ~3k
 enwiki-junk cats, or shard the namespace). Only worth doing IF the Japanese-category-translation drain
 proves too slow. It isn't a problem now → dormant.
+
+## B10. Individual QuickStatements to CORRECT wrong/missing P958 sections
+
+Emma, 2026-08-19, last item by her sequencing: *"There were actually significant errors here that we
+caught, but you caught them in such a bizarre way. We should have individual quick statements here
+that set these things... specifically, put it at the end of the queue of the shinto wiki. We have to
+set up individual quick statements to change these things so that they get corrected."*
+
+**Why the existing generator cannot do it.** `generate_p958_qualifiers.py` is ADD-only — it derives
+the section from the parent list's P1352 ranking and adds it where absent. QuickStatements has no
+"overwrite a qualifier" verb, so a statement whose P958 is present but WRONG is invisible to it
+forever. A correction is necessarily two lines: remove the old qualifier, add the right one.
+
+**Built 2026-08-19:** `modern-quickstatements/generate_p958_corrections.py` → `p958_corrections.txt`.
+It reads live state first, so an already-correct item emits nothing rather than a churn pair.
+
+Kokugakuin page **181621** carries three shrines, and that is what surfaced the errors:
+
+| item | should be | live state | action |
+|---|---|---|---|
+| [Q111776816](https://www.wikidata.org/wiki/Q111776816) | `1` | **no P958 at all** | add |
+| [Q134925373](https://www.wikidata.org/wiki/Q134925373) | `0` | `n/a` — **wrong** | remove + add |
+| [Q135039671](https://www.wikidata.org/wiki/Q135039671) | `n/a` | `n/a` | correct, nothing emitted |
+
+Batch as it stands (3 lines, paste-ready — QuickStatements is a separate channel from the scripts
+under `wikidata_editing_lockout.state`, so the 2026-09-18 lockout does not gate it):
+
+```
+Q111776816|P13677|"181621"|P958|"1"
+-Q134925373|P13677|"181621"|P958|"n/a"
+Q134925373|P13677|"181621"|P958|"0"
+```
+
+- [ ] **Emma pastes the batch** — BLOCKED-ON-USER-ACTION. Her account, her paste, no date on it.
+- [ ] **Widen the sweep beyond page 181621.** Three errors on the one page Emma happened to open is
+  not evidence that page is special. The generalisable check is: any Kokugakuin id whose holders'
+  sections collide where they should not, or are missing where a P1352 ranking exists to supply them.
+  `CORRECTIONS` in the generator is a hand-entered list on purpose — every entry so far comes from
+  someone reading the Kokugakuin page — so widening means producing a *candidates* report for review,
+  not auto-filling the list from an inference.
 
 ---
 

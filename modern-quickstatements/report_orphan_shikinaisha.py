@@ -84,6 +84,29 @@ def normalise(name):
     return re.sub(r"(神社|大社|神宮|社|宮)$", "", name)
 
 
+# Section values that carry NO uniqueness guarantee. Emma, 2026-08-19: zero, because
+# "if their qualifier is zero... they do not even need to be unique"; and "n/a", stated
+# flatly -- **"n/a" is not uniqueness protected**. An earlier version of this helper
+# returned ("id", "n/a") as a real key on the reasoning that n/a is what the data says.
+# That was wrong, and it mattered: it left exactly one of the 11 candidate pairs looking
+# like a duplicate (Q134925373/Q135039671), on the strength of both sides being n/a.
+# With n/a excluded, **none of the 11 is an established duplicate.**
+SECTIONS_NOT_UNIQUE = {"0", "n/a"}
+
+
+def dup_key(k, sec):
+    """The composite key (P13677 + section P958), or None when it cannot prove identity.
+
+    Returns None whenever the section cannot establish identity:
+      * section "0"   -- uniqueness does not apply to these by design;
+      * section "n/a" -- likewise not uniqueness-protected (Emma, 2026-08-19);
+      * no section at all -- the statement carries no qualifier, so nothing is established.
+    """
+    if sec is None or sec in SECTIONS_NOT_UNIQUE:
+        return None
+    return (k, sec)
+
+
 def classify(q, claimed_lists, parts_of, ja_label, kokugakuin, dup_ids):
     """Why is this confirmed Shikinaisha not named as a part? Most specific first."""
     if q in dup_ids:
@@ -118,10 +141,27 @@ def gather():
             "?l wdt:P361 wd:%s }" % (SHIKINAISHA, JINMYOCHO)):
         claims[qid(r["i"])].append(qid(r["l"]))
 
+    # P13677 alone is NOT an identity. Emma, 2026-08-19: a Kokugakuin page id covers
+    # MANY entries, so an item is identified by the COMBINATION of the id and its
+    # section qualifier P958 -- "except if their qualifier is zero, at which point they
+    # do not even need to be unique".
+    #
+    # This query used to read `wdt:P13677`, the truthy value with no qualifiers, so the
+    # report could not see sections at all and matched twins on a non-key. Checked
+    # against the live API on 2026-08-19, of the 11 pairs it called "same Kokugakuin
+    # id": 7 had DIFFERENT sections, 3 involved section 0, and 1 shared (id, section)
+    # -- with both sides 'n/a'. None was an established duplicate.
+    #
+    # `kokugakuin` (id-only) is kept for the callers that only need "does this item
+    # hold an id at all"; `kok_keys` carries the real composite key.
     kokugakuin = collections.defaultdict(list)
+    kok_keys = collections.defaultdict(set)
     for r in sparql_csv(
-            "SELECT ?i ?k WHERE { ?i wdt:P31 wd:%s . ?i wdt:P13677 ?k }" % SHIKINAISHA):
-        kokugakuin[qid(r["i"])].append(r["k"])
+            "SELECT ?i ?k ?sec WHERE { ?i wdt:P31 wd:%s . ?i p:P13677 ?st . "
+            "?st ps:P13677 ?k . OPTIONAL { ?st pq:P958 ?sec } }" % SHIKINAISHA):
+        q, k, sec = qid(r["i"]), r["k"], (r.get("sec") or "").strip()
+        kokugakuin[q].append(k)
+        kok_keys[q].add((k, sec or None))
 
     ja_label = {qid(r["i"]): r["l"] for r in sparql_csv(
         "SELECT ?i ?l WHERE { ?i wdt:P31 wd:%s . ?i rdfs:label ?l "
@@ -135,22 +175,27 @@ def gather():
         "SELECT ?l ?n WHERE { ?l wdt:P361 wd:%s . ?l rdfs:label ?n "
         'FILTER(lang(?n)="en") }' % JINMYOCHO)}
 
+    # Keyed on the COMPOSITE key, and only on keys that can establish identity at all
+    # (see dup_key: section 0 and a missing section both mean "proves nothing").
     ids_of_named = collections.defaultdict(list)
-    for q, ks in kokugakuin.items():
+    for q, keys in kok_keys.items():
         if q in parts:
-            for k in ks:
-                ids_of_named[k].append(q)
+            for kk in keys:
+                dk = dup_key(*kk)
+                if dk:
+                    ids_of_named[dk].append(q)
     dup_ids = {q for q in confirmed - parts
-               if any(k in ids_of_named for k in kokugakuin.get(q, []))}
+               if any(dup_key(*kk) in ids_of_named
+                      for kk in kok_keys.get(q, ()) if dup_key(*kk))}
 
     return (parts, confirmed, claims, kokugakuin, ja_label, en_label,
-            list_label, parts_of, dup_ids)
+            list_label, parts_of, dup_ids, kok_keys)
 
 
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     (parts, confirmed, claims, kokugakuin, ja_label, en_label,
-     list_label, parts_of, dup_ids) = gather()
+     list_label, parts_of, dup_ids, kok_keys) = gather()
 
     orphans = sorted(confirmed - parts)
     rows = []
