@@ -78,15 +78,19 @@ external thing.
     groups-of-shrines are settled as answerable too. A literal "must be a shrine" gate would have
     thrown all of that away. 8 tests pin both halves.
   - Q7137401's work-file is retired and logged `NOT_A_SHRINE` in `_resolved.log`.
-- ⏸ **1 work-file deliberately unanswered:** Q11544511 機殿神社 (joint article for 神服織機殿神社 +
-  神麻続機殿神社; its lead opens with those two names and the pair name carries no reading).
-  Q7137401 水谷川忠起 is no longer among them — it is excluded at the source now, see above.
-  The latest 54 are the whole 神宮125社 slice (A0c's "P1814 pass over the 54" — the real figure was
-  55). `lineage/fetch_jingu125_kana.py` → `_jingu125_kana.tsv` → `lineage/stage_jingu125_kana.py
-  --apply`. **53 of the 54 already had a work-file waiting for the cloud routine**, which would
-  have written a second identical line each; staging locally now retires the work-file and logs it
-  to `_resolved.log`, the same disposal the collector performs. Only 機殿神社 (Q11544511) is left —
-  it is the joint article for 神服織機殿神社 + 神麻続機殿神社 and has no reading of its own.
+- ✅ **機殿神社 (Q11544511) ANSWERED 2026-08-19 — it was never hard, and "deliberately unanswered"
+  was the wrong call.** Emma: *"You have to come up with a reading... this is a pair of Shinto
+  shrines... just get the reading of the combined ones from the readings on the items of the two of
+  them. I feel like you're significantly overcomplicating this."* She is right. The jawiki lead gives
+  both readings outright — 神服織機殿神社（かんはとりはたどのじんじゃ）and
+  神麻続機殿神社（かんおみはたどのじんじゃ）— so the shared tail is unambiguous, and the article
+  states the collective name itself: *両社を合わせて両機殿（機殿神社）と呼ぶ*.
+  **P1814 = はたどのじんじゃ**, staged in `name_in_kana.txt` sourced to the jawiki article.
+  The pipeline now has **zero** unanswered work-files.
+  - **Not staged:** Q135186223. It carries the label 神服織機殿神社 but its description reads
+    "Hatorinomatokata Shrine (Ronsha 1)", so it looks like a 論社 entry item rather than the modern
+    shrine, and putting a shrine reading on a register-entry item is the kind of wrong-target edit
+    this session has spent the day undoing. NEEDS-INVESTIGATION: confirm which it is before staging.
   **Anchor the lead match at position 0**: 機殿神社 is a substring of the first name in its own
   lead, so an unanchored search silently hands the pair-item the wrong shrine's reading
   (田上大水神社/大水神社 and 河原神社/川原神社 are the same shape).
@@ -555,9 +559,41 @@ All registered atomic files are staged-but-not-delivered by design until `confli
     strip would quietly delete real staged work in files too large for anyone to notice.
 
 
-- **Repurposed-item damage** — Q123044569 (Kamo), Q134886554 (Chikadono), Q134736575 (見光寺),
-  Q140476265 (junk). Emma: *document, don't touch; no contact* until we understand the editor. The
-  Kikuna restoration is already queued to our item Q134926804. `docs/bruno_plus_analysis_2026-07.md`.
+## A5b. Repurposed-item damage — Emma's THREE per-item rulings, promoted out of the doc
+
+**Corrected 2026-08-19.** The queue carried this as one line saying *"document, don't touch; no
+contact"*. That was a flattening of Emma's actual position, and she called it: *"That was not
+actually my ruling. That was your bad summary of my ruling... I'm pretty sure I gave individual
+rulings on how to deal with every single one of them."* She did — they were in
+`docs/bruno_plus_analysis_2026-07.md` §6, which is not where work lives. Promoted here:
+
+Her words: *"we might want to, at some point, a week after they have stopped editing … re-add the
+properties to fix that one. We might want to create a new item for the shrine that they
+significantly repurposed. However, that one is a bit up for debate."*
+
+1. **菊名神社 → `Q134926804`, ADD-only restoration.** Re-add the five `P825` deities, `P18`, `P856`,
+   `P1329`/`P2900`, `P625`. *Sourced, not restored blindly.*
+2. **Kamo Shrine (Odawara) — does it need a NEW item?** `Q123044569` no longer represents it.
+   **She flagged this as debatable and it is still hers to settle.**
+3. **`Q28069431` husk — the orphaned `fr`/`id` labels.** A removal on an item they are active on,
+   so it waits on their activity, not on a date.
+
+**Editor status, measured 2026-08-19** (`watch_conflicting_editor.py`, read-only): **still active —
+last edit 2026-08-17**. Every venue clean; no noticeboard mention anywhere; talk page untouched since
+2026-04-24. That satisfies her §5.1 exit condition (*"regular, going into August, and they don't have
+any talk page activity or mentions"* = assimilated, not a threat), and the watcher reports the drip
+gate OPEN.
+
+**So the trigger for 1 and 3 is NOT met, and the reason is worth stating precisely:** both were
+conditioned on *"a week after they have stopped editing"*, and they have not stopped. An open drip
+gate is not the same signal — it says our pipeline is safe to run, not that their edits are finished.
+Conflating the two would restore statements onto items someone is still working on.
+
+- [ ] **Kamo Shrine (Odawara): new item, or not?** — NEEDS-DECISION, Emma's, explicitly flagged
+  debatable by her. Independent of the editor's activity, so it is askable now.
+- **1 and 3** — BLOCKED-ON-EXTERNAL: the watcher showing a stopped editor plus seven clear days.
+  Unblock signal is `conflict_watch.state`, not a calendar date. Also under the Wikidata lockout to
+  2026-09-18 regardless.
 - **Bunrei paper sources** — 神社本庁『全国神社祭祀祭礼総合調査』(1995) etc.; needs a library, not
   scrapeable. Online 総本社 sources are exhausted (~10,650 cited edges).
 - **Mother house (P612): active work is A0b** (Beppyo Opus Pass, individual lines). Suffix generator

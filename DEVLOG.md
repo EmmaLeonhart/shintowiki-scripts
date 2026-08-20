@@ -8981,3 +8981,33 @@ completed work stops being a queue and becomes a status page nobody trusts.
 Deliberately NOT deleted: A1, A2, A3, A4, A5 and B0 show zero `- [ ]` boxes but use other markers
 (▶ alive, ⏭ next, ⏸ parked) and describe live or parked work, not finished work. Deleting on the
 box-count alone would have destroyed five live sections.
+
+## 2026-08-19 — two parked items unparked, and one bad summary corrected
+
+Emma, on "parked": *"Anything 'parked' should be addressed with an AskUserQuestion now."* Four went
+to her. Two needed real work.
+
+**機殿神社 (Q11544511) — the last unanswered work-file, and it was never hard.** I had it as
+"deliberately unanswered" because the pair name carries no reading of its own. Emma: *"You have to
+come up with a reading... just get the reading of the combined ones from the readings on the items of
+the two of them. I feel like you're significantly overcomplicating this."* Correct, and it took one
+API call: the jawiki lead states both readings — かんはとりはたどのじんじゃ and かんおみはたどのじん
+じゃ — so the shared tail is unambiguous, and the article names the collective form itself (両社を合
+わせて両機殿（機殿神社）と呼ぶ). **P1814 = はたどのじんじゃ**, staged and sourced. Zero unanswered
+work-files remain.
+
+**The repurposed items — my one-line summary was wrong.** The queue said *"document, don't touch; no
+contact."* Emma: *"That was not actually my ruling. That was your bad summary of my ruling."* She had
+given three specific per-item rulings, and they were sitting in `docs/bruno_plus_analysis_2026-07.md`
+§6 rather than in the queue — which is exactly why a session reading only the queue never acted on
+them. Promoted to A5b.
+
+**Editor status, since it gates two of the three:** still active, last edit 2026-08-17. All venues
+clean, no noticeboard mention, talk quiet since 2026-04-24 — her §5.1 exit condition is met and the
+drip gate is open. But the restorations were conditioned on *a week after they stop editing*, and
+they have not stopped. An open drip gate says our pipeline is safe to run; it does not say their
+edits are finished. Treating those as one signal would restore statements onto items someone is
+still working on.
+
+A rule this session keeps re-learning: a ruling recorded in a doc instead of the queue is a ruling
+that will be ignored, and then summarised wrongly by whoever writes the queue line.
