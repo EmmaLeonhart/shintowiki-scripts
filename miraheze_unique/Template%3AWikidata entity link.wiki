@@ -8,5 +8,7 @@
   | <small>(no entity)</small>
   }}
 }}</includeonly><noinclude>{{Documentation}}
-[[Category:Templates missing wikidata]][[Category:Independently git synced pages]]
+[[Category:Independently git synced pages]]
+{{wikidata link|Q17280715|abstract|Template:Q|ab|Ашаблон:Авикидыррақәа рҭыԥ ахь азхьарԥш|ar|قالب:وصلة ويكي بيانات|ary|موضيل:ليان د ويكيداطا|arz|قالب:وصلة ويكي بيانات|ast|Plantía:Enllaz entidaes Wikidata|as|সাঁচ:Wikidata entity link|azb|شابلون:Wikidata entity link|az|Şablon:WD item|ban|Mal:Wikidata entity link|ba|Ҡалып:WD item|be|Шаблон:Wikidata entity link|bg|Шаблон:Q|bh|टेम्पलेट:Wikidata entity link|bn|টেমপ্লেট:উইকিউপাত্ত সত্তার সংযোগ|br|Patrom:Liamm Wikidata|bs|Šablon:Wikidata entity link|ca|Plantilla:Q|cdo|模板:Wikidata entity link|ckb|داڕێژە:Wikidata entity link|check_date=2026-08-20}}
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
