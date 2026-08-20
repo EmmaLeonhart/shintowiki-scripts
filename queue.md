@@ -589,13 +589,16 @@ conditioned on *"a week after they have stopped editing"*, and they have not sto
 gate is not the same signal — it says our pipeline is safe to run, not that their edits are finished.
 Conflating the two would restore statements onto items someone is still working on.
 
-- [ ] **Kamo Shrine (Odawara): new item, or not?** — NEEDS-DECISION, Emma's, explicitly flagged
-  debatable by her. Independent of the editor's activity, so it is askable now.
+- **✅ DECIDED by Emma 2026-08-19 — no longer a question.** Her words: *"Look I don't know what's
+  going on with the editor we create new otems for the ones lost due to their messing with them."*
+  So: **create new items for every shrine whose item was lost to the repurposing.** That settles the
+  Kamo Shrine (Odawara) question she had previously flagged debatable, and generalises it to the
+  others. Her sequencing, same message: *"This goes at the end of the queue to do any tooling or
+  research on because you're doing the bunrei book shit."* → see **A5c**, last.
 - **1 and 3** — BLOCKED-ON-EXTERNAL: the watcher showing a stopped editor plus seven clear days.
   Unblock signal is `conflict_watch.state`, not a calendar date. Also under the Wikidata lockout to
   2026-09-18 regardless.
-- **Bunrei paper sources** — 神社本庁『全国神社祭祀祭礼総合調査』(1995) etc.; needs a library, not
-  scrapeable. Online 総本社 sources are exhausted (~10,650 cited edges).
+
 - **Mother house (P612): active work is A0b** (Beppyo Opus Pass, individual lines). Suffix generator
   stays but time-boxed ~6 months (convention-establishment, not perpetual). Organized extraction →
   Topaz, not this repo.
@@ -884,6 +887,33 @@ Q134925373|P13677|"181621"|P958|"0"
   deliberate reading sprint, not to a work-loop tick.
 
 ---
+
+## A5c. Create new items for the shrines lost to the repurposing — LAST, by Emma's sequencing
+
+**Emma's decision, 2026-08-19:** *"we create new otems for the ones lost due to their messing with
+them."* This replaces the old "is it debatable?" framing entirely — it is decided, and it covers
+every shrine whose item was taken over, not only Kamo.
+
+**Her placement, verbatim:** *"This goes at the end of the queue to do any tooling or research on
+because you're doing the bunrei book shit."* So no tooling and no research on this until the bunrei
+attempt is finished or dropped.
+
+Known losses, from `docs/bruno_plus_analysis_2026-07.md` §4:
+
+| shrine | old item | what it is now |
+|---|---|---|
+| Kamo Shrine, Odawara | `Q123044569` | 大美和神社, different coords. No surviving item; none of the eight 加茂神社 items is Odawara |
+| Chikadono Shrine, Kumagaya (熊谷市下増田749) | `Q134886554` | 近殿神社 in Kanagawa (Yokosuka). No item holds Chikadono any more |
+| 見光寺, Hanno, Saitama | `Q134736575` | re-pointed to a different temple; the item asserts the wrong one |
+
+- [ ] Build the CREATE batch — one new item per lost shrine, from the pre-damage archives
+  (`Q134736575.json` was archived pre-damage; check what else was). Creations are a different
+  QuickStatements shape from statements and Emma has previously turned creations OFF, so confirm the
+  create-mode before generating.
+- BLOCKED-ON-EXTERNAL for execution: Wikidata lockout to **2026-09-18**. Building the batch is not
+  blocked; only submitting it is.
+- **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
+  which is additive and independent of whatever the other editor is doing.
 
 ## Pinned tail (keep last)
 

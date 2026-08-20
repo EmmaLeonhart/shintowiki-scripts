@@ -9011,3 +9011,38 @@ still working on.
 
 A rule this session keeps re-learning: a ruling recorded in a doc instead of the queue is a ruling
 that will be ignored, and then summarised wrongly by whoever writes the queue line.
+
+## 2026-08-19 — bunrei paper sources: attempted, walled, DROPPED
+
+Emma: *"Attempt it with browser usage and if you can't successfully do that in the next 6 hours then
+give up."* Attempted. It failed, and the wall is real rather than a matter of not looking hard enough,
+so it is dropped now rather than burning the remaining hours on motion.
+
+**What the source actually is.** 神社本庁's 全国神社祭祀祭礼総合調査 (1995) is a three-volume set,
+found via the NDL search API — 事業報告書, **全国神社祭神一覧**, and **平成「祭」データ**. The third is
+a **CD-ROM**, not a book, and it is the one that would have mattered: a machine-readable national
+shrine dataset.
+
+**The walls, each checked rather than assumed:**
+- **Not digitised.** NDL search returns all three volumes; **none** has an NDL Digital Collections
+  link. There is no full-text or 送信サービス copy to read. The identifiers are NACSIS (`BA63923694`,
+  `BA63923978`, `BA63924187`) — university library holdings, i.e. a physical visit.
+- **No public database exists.** 神社本庁 publishes no online database from the survey. Prefectural
+  shrine associations have their own sites in inconsistent formats, which is not this data.
+- **Kokugakuin's digital museum does not hold it.** Its database list has no 祭神 database derived
+  from the survey; what it has that we already use is the 延喜式内社データベース.
+- **And the jmapps pages we DO read carry no origin text.** Checked 8 pages directly for 勧請 / 分霊 /
+  総本社 / 分祀 / 由緒 / 略縁起 — **zero hits on any of them**. Those pages are register entries, 論社
+  identifications and coordinates. The 略縁起 mentioned in the NIHU resource guide belongs to a
+  different Kokugakuin database, not the one behind P13677.
+
+**So the ~10,650 cited 分霊 edges already extracted from online sources are the whole of what is
+reachable without a library visit.** That is not a failure of effort; the data is on a 1995 CD-ROM
+and in print.
+
+Honest note, since Emma named this failure mode explicitly (*"failure to do it because you decided to
+do some random shit instead of this task"*): that is **not** what happened here. The attempt ran to a
+definite negative result in one sitting.
+
+Item deleted from `queue.md`. Her standing rule for it: *"aug 20 or later we just drop it in the event
+the cron job didn't fire."* It did not need to come to that.
