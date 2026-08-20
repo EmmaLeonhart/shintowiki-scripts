@@ -129,6 +129,18 @@ __NOTOC__
 * '''This page's bloat.''' You said ''"not sure about this one."'' It is now roughly half its former length — say whether that is the right direction, or too far.
 * '''Un-parking the parked items.''' You said ''"we will do this when needed"'' — left alone until you say otherwise.
 
+== Wiki-based queue ==
+
+''Restored 2026-08-19 on Emma's instruction. It was a section of this page, and the trim earlier the same day removed it along with its items — every one of which was settled (the 403, the Q137721156 deity analysis, the reports-on-the-page request, the page's own bloat, and un-parking). Removing the settled items was right; removing the '''surface''' was not, so it is back and empty.''
+
+'''What this is for:''' anything Emma wants done on the wiki side, written here rather than in the repo's <code>queue.md</code>. It survived the 39-day blackout only because the page did; what actually killed it was the 403 breaking the sync, and that is over — this page has round-tripped several times today.
+
+'''How it works:''' add a bullet. The sync runs every 15 minutes and carries it into the repo, where the work loop reads it. Answers come back as nested <code>→</code> / <code>✓</code> replies under the item, and settled items are deleted rather than archived.
+
+* ''(empty — add items here)''
+
+'''On parked items, since that was one of the requests this section originally carried:''' Emma, 2026-08-19: ''"Anything 'parked' should be addressed with an AskUserQuestion now."'' Four were, that day — 機殿神社's reading, the repurposed-item rulings, the bunrei paper sources, and the category speed-up. Parking is no longer a disposition; anything that cannot proceed is either given a named blocker in <code>queue.md</code> or put to her directly.
+
 == Notes ==
 
 ''(free-form scratch space for Emma.)''

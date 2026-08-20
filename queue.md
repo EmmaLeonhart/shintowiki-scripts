@@ -771,27 +771,23 @@ careless "cleanup" away from being destroyed.
   different name. Folded into the Kokugakuin/orphan work rather than kept as a duplicate-statement
   class, so the same shrines are not walked twice.
 
-## B1c. Restore the wiki-based queue — the blackout was the cause, and it is over
+## B1c. ✅ Wiki-based queue — RESTORED 2026-08-19. Nothing open.
 
-Emma: *"The wiki-based queue stopped being used — why? Start it again... I want us to do the entire
-wiki-based queue again,"* then *"Yeah, the wiki-based queue is going to have to be restored, although
-I'm not 100% sure."* The bot's own diagnosis was that the broken sync (the Cloudflare 403) killed it.
+Emma decided *restore it* when asked directly, settling her July *"not 100% sure"*.
 
-**That cause is gone** — `WIKI_GATE: GO` since 2026-08-19T01:54, reads and writes both work.
+**What it actually was, and why the rebuild was small:** the "wiki-based queue" was never a separate
+page — it was a **section of [[Open questions]]**, and this session's own 44% trim deleted it earlier
+the same day. Every item it held was genuinely settled (the 403, the Q137721156 deity analysis, the
+reports-on-the-page request, the page's bloat, un-parking), so deleting the *items* was right.
+Deleting the **surface** was not: it removed the place Emma writes wiki-side work.
 
-- **✅ DECIDED by Emma 2026-08-19: RESTORE IT.** Asked directly and she chose restore, so the
-  "not 100% sure" from July is settled. The wiki becomes a live work surface again alongside
-  `queue.md`.
-- [ ] **Rebuild the wiki-based queue on shinto.miraheze.org.** The 403 that killed it is over
-  (`WIKI_GATE: GO` since 2026-08-19T01:54, and both reads and writes are confirmed working — the
-  [[Open questions]] sync has run several times today). Not blocked on anything.
-  - The mechanism already exists: `git_synced/` + `sync_git_synced_pages.py` + the Git Synced Sync
-    workflow, which is what carries [[Open questions]] both ways. The queue page should use that same
-    pipeline rather than a second one — the hub's standing rule is one pipeline, and a bespoke
-    publisher is the defect it was written against.
-  - **Open sub-question to settle while building, not to park:** whether the wiki page mirrors
-    `queue.md` wholesale or carries only the §B wiki-side items. Mirroring 923 lines onto a wiki page
-    would be unreadable; carrying §B is what she used it for before.
+Restored as an empty section carrying only what it is for and how it round-trips. No second pipeline
+was built — it rides the existing `[[Category:Git synced pages]]` sync, which is the hub's standing
+rule and which has round-tripped this page several times today.
+
+**The mirror-or-§B question is moot** and is deleted rather than left open: since it is a section of
+a page Emma writes in, it mirrors nothing. Copying 942 lines of `queue.md` onto a wiki page was never
+what she used it for.
 
 ## B1d. Swept and closed on 2026-08-19 — no action, recorded so they are not re-raised
 

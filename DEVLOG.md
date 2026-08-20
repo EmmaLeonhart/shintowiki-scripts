@@ -9046,3 +9046,21 @@ definite negative result in one sitting.
 
 Item deleted from `queue.md`. Her standing rule for it: *"aug 20 or later we just drop it in the event
 the cron job didn't fire."* It did not need to come to that.
+
+## 2026-08-19 — the wiki-based queue was a section of [[Open questions]], and this session had deleted it
+
+Emma chose *restore it*. Finding out what "it" was turned out to be the whole job: the wiki-based
+queue was never a separate page — it was a **section of [[Open questions]]**, and the 44% trim
+earlier the same day removed it.
+
+Every item in it was genuinely settled, so deleting the *items* was correct. Deleting the **surface**
+was not. That is a distinction worth keeping: a trim that removes resolved content is doing its job;
+a trim that removes the place content arrives has quietly closed a channel. The items were the
+symptom of the section being useful, not the reason it existed.
+
+Restored empty, carrying only what it is for and how it round-trips. No second pipeline — it rides
+the existing `[[Category:Git synced pages]]` sync, which is the hub's standing rule and which has
+carried this page several times today.
+
+The "mirror everything or just §B?" question I had queued is moot and was deleted rather than left
+open: it is a section of a page Emma writes in, so it mirrors nothing.
