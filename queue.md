@@ -458,9 +458,20 @@ the bug is reintroduced. Full CI suite: **1506 passed**.
   order**: 54,149 insertions against 54,149 deletions, `set(old) == set(new)`, `old != new`. So every
   regeneration commits ~100k lines of churn that means nothing. Worth fixing on its own, and it is
   also **why the death was invisible** — when the real diff is always six figures of noise, nobody
-  reads it, and the day it drops to one line that reads as calm rather than alarming. Sort the
-  output before writing. The regenerated files were **reverted, not committed** here: CI owns them,
-  and committing 100k lines of reordering would have fought it.
+  reads it, and the day it drops to one line that reads as calm rather than alarming.
+  - **Cause, traced:** the output order is the SPARQL row order. `generate_indonesian_proposals.py`
+    has **no `ORDER BY` at all** and the writer preserves binding order, so WDQS hands back an
+    arbitrary permutation each run.
+  - ⚠️ **Do NOT "sort the output lines" — that was my first instinct and it is wrong.** These files
+    interleave a `# Source: …` comment with the statement line it describes; a line sort divorces
+    every comment from its statement. Sort the **records** by QID before emitting (or add `ORDER BY`
+    to the query) so each comment travels with its line.
+  - Checked before proposing any reordering at all: **no `CREATE` and no `LAST`** in either file, so
+    statement order carries no QuickStatements semantics. If a future generator emits those, this
+    stops being safe.
+  - The regenerated files were **reverted, not committed** here: CI owns them, and committing 100k
+    lines of reordering would have fought it. Whoever fixes the generator should let CI produce the
+    one-time reorder rather than committing it by hand.
 
 ## A2. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
 
