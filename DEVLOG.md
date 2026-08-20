@@ -4,6 +4,93 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-20 — the endpoint migration was 21 files, not 9, and both its blockers had expired
+
+Work-loop tick, §A. Two items closed; in both, the thing that was wrong was the queue's own
+account of the item rather than the code.
+
+### A3 — SPARQL endpoint migration, finished
+
+The queue held this as *"9 left, ALL of them blocked"* on two blockers. Neither survived contact:
+
+- **`mwclient` is installed** — 0.11.0. The note said it was not, which was the stated reason the
+  modules could not be imported.
+- **The Miraheze blackout ended 2026-08-19**, and it never governed this anyway. A Wikidata query
+  endpoint has nothing to do with wiki access; the two were unrelated systems joined only in prose.
+
+The count was also short, and the way it was short is the useful part. Nine was a correct count of
+`shinto_miraheze/` — the directory someone grepped. There were **12 more in
+`shinto-label-generator/`**, which is live: `label-generator-regenerate.yml` runs five of them on a
+schedule, every step `continue-on-error: true`. An old-endpoint 503 there fails the step silently
+and the workflow still reports green, so the miscount landed in the one place least able to
+complain about it.
+
+**21 migrated, 21 probed, 0 failures.** Each verified with a bounded `LIMIT 1` probe through its own
+constant read **textually** out of the source — never by importing, per the standing rule: 84
+modules here rebind `sys.stdout` at module scope, so importing one breaks the caller's output.
+
+One thing the migration silently rested on, now pinned instead of assumed: `ua_for()` **fails
+closed** on an unrecognised host, and `query-main.wikidata.org` is a *different host* from
+`query.wikidata.org`. It happens to route correctly through the `.wikidata.org` suffix match. Had it
+not, every migrated script would have raised at once, and the migration itself would have been the
+cause.
+
+`tests/test_sparql_endpoint_migration.py` walks the tree for the retired URL. Its second test
+asserts the walk actually reaches **both** migrated directories, so it cannot pass vacuously — which
+is the specific way a hand count went wrong here once already. The only surviving reference to the
+old URL is `tests/test_user_agent_segregation.py`, where it is a routing assertion, not a call.
+
+### A0 — Q135186223 resolved, and a duplicate-staging hazard closed
+
+The item was filed as *"not staged … NEEDS-INVESTIGATION: might be a register-entry item"*. Both
+halves were wrong.
+
+It **was** staged, at line 299 of `name_in_kana.txt`. And `(Ronsha 1)` in its description is a
+**role**, not an item type — the register entry is a different QID:
+
+| | Q135098921 — the entry | Q135186223 — candidate 1 |
+|---|---|---|
+| coordinates | — | `P625` |
+| website | — | `P856` jingukaikan 125-shrine page |
+| municipalities | — | `P131` ×2 |
+| structure | `P2670` two seats, `P460` → three candidates ranked `P1352` 1/2/3 | one of those three |
+
+Its siblings are equally physical (Q135186224 a co-enshrinement, Q135186227 a former site). The
+`P1814` the item already carried is a **qualifier** on `P1448` — the ancient reading of the historical
+name, `P1264` Heian period — so top-level `P1814` was empty and this is an add, not a contest with
+the kana-qualifier cleanup. The reference URL resolves: `神服織機殿神社` is a redirect to `機殿神社`,
+the article the lead was read from.
+
+**Separately — the collector could stage a duplicate, and one case was live.** `already_handled()`
+closed this from the *builder's* end on 2026-08-04. The collector had no guard at all and appends to
+the staged file unconditionally, so the same hazard survived from the other end: a line staged **by
+hand** leaves its work-file behind in `name_in_kana/`, and whoever fills that ANSWER marker next
+gets a second identical `P1814` statement.
+
+The live case was **Q11544511** (機殿神社), hand-staged 2026-08-19, work-file never retired. So the
+queue's *"the pipeline now has **zero** unanswered work-files"* was false — it had one, sitting with
+an empty marker, which is exactly why nothing noticed it.
+
+`already_staged()` runs **before the answer is parsed**, deliberately: these have empty markers, so
+an answer-first order counts them pending forever and never retires them. It is keyed on the staged
+file alone, since the question is narrowly *does a statement already exist to be duplicated* —
+`_resolved.log`'s REJECTED_/NOT_A_SHRINE outcomes are the builder's business.
+
+Result: `pending=0 resolved=1 qs-lines=0 already-staged=1`, work-file retired to `_resolved.log`,
+`name_in_kana.txt` **unchanged at 352 lines**. Five tests, most of them pinning what it must *not*
+match — a QID appearing as a statement *value*, a `Q1234560`/`Q123456` prefix, a `-Qxxx` removal.
+
+Full CI suite: **1504 passed**.
+
+### Loop ownership
+
+This repo now carries the live work loop (:03 work-loop, :15 auto-flush, :42 status-report). The
+central-command hub's loop is **stopped** by Emma's instruction this day — *"once the queue is
+finished here stop the work loop of this repo and do the work loop of the shintowiki."* Her two
+hub meeting gates (briefing 08:03, debrief 23:57) are separate from the work loop and stay up.
+
+---
+
 ## 2026-08-18 — a month-long Wikidata lockout, and one state file instead of pasted dates
 
 Emma: *"I want a gate to be set up that there will be no wikidata editing for a month."*
