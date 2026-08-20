@@ -34,6 +34,23 @@ The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this t
 - Marker **WAIT** → work §A only. §B does not exist for you.
 - Marker **GO** → §A still comes first; then §B unlocks and the decisions fire one at a time.
 
+**⏳ TIME-GATED WORK DOES NOT LIVE IN THIS FILE (Emma, 2026-08-20).** If the only thing standing
+between an item and being done is a DATE, it goes in `scheduled/scheduled_items.json`, not here
+wearing a PARKED label. Her words: *"waiting means you write a script that injects it by a json into
+the queue or open questions at a certain date … because it being visible in the queue as 'parked'
+adds clutter, and other time gated stuff also goes into this, github actions injects on that day
+into open questions and the queue."*
+- `scheduled/inject_due_items.py` runs daily from `inject-scheduled-items.yml` and appends the item
+  to `queue.md` and/or `[[Open questions]]` on its due date — the first day anyone could act on it.
+- Idempotent via an `<!-- scheduled:<id> -->` marker in the target, **not** the json's `injected`
+  flag: the json is a tracked file someone can revert or merge-resolve, and the guard has to live in
+  the file it protects.
+- **Only for DATE gates.** A gate on a *signal* — a watcher going quiet, an external condition
+  clearing — is not this, and dating it would misrepresent Emma's condition as a calendar wait. Those
+  stay here with a named blocker. `_not_moved` in the json records which ones and why.
+- Currently held: the `continue-on-error` decision (2026-09-21) and two Wikidata-lockout items
+  (2026-09-18).
+
 **Item tags.** ❓ ASK = needs Emma's decision, the exact AskUserQuestion is written under the item;
 fire it, don't skip it. ▶ DO = just execute. 🤖 AUTO = runs itself. ⏸ PARKED = waiting on a named
 external thing.
@@ -448,11 +465,10 @@ pipelines locally: all clear imports, four exit 0, and they regenerated **12 qui
 `tests/test_sys_path_bootstrap_ordering.py` pins the order, and was checked to actually FAIL when
 the bug is reintroduced. Full CI suite: **1506 passed**.
 
-- [ ] **`continue-on-error: true` on all five steps** — NEEDS-DECISION, Emma's, and stated once
-  rather than pushed. Removing it makes the next breakage visible immediately instead of after two
-  days; leaving it means the next one hides the same way. This repo is **public**, so its Actions
-  minutes are free and a failing run costs nothing but the notification. Not changed unilaterally —
-  five steps going red is a visible change to her repo.
+- **`continue-on-error: true` on all five steps** — deferred by Emma to **2026-09-21** and
+  deliberately **not** left sitting here. It is in `scheduled/scheduled_items.json` and will be
+  injected into this queue and `[[Open questions]]` on that date. Her words: *"it being visible in
+  the queue as 'parked' adds clutter."*
 - [ ] **The generators emit nondeterministically** — NEEDS-INVESTIGATION, this repo's job, no gate.
   The local rerun produced `tok.txt` and `id_proposed.txt` with **identical content in a different
   order**: 54,149 insertions against 54,149 deletions, `set(old) == set(new)`, `old != new`. So every
@@ -865,9 +881,11 @@ All three classes are committed per-item at `modern-quickstatements/p361_multi_p
 which is what makes the 47 legitimate ones durable — they were only in queue prose before, one
 careless "cleanup" away from being destroyed.
 
-- [ ] **The 14 true duplicates + the 10 confirmed leftovers** — BLOCKED-ON-EXTERNAL: Wikidata lockout
-  to **2026-09-18**. Which of two identical statements gets removed is not expressible in
-  QuickStatements by value, so this is the sequential-misc mechanism's job (built, tested, empty).
+- **The 14 true duplicates + the 10 confirmed leftovers** — moved to
+  `scheduled/scheduled_items.json`, due **2026-09-18**. Which of two identical statements gets
+  removed is not expressible in QuickStatements by value, so this is the sequential-misc mechanism's
+  job (built, tested, empty). The per-item evidence stays committed at
+  `p361_multi_part_of_audit.json`; only the waiting moved.
 - **✅ The 42 — DECIDED by Emma 2026-08-19: work them with the orphan set.** They are an item
   asserting a list membership the list does not reciprocate, which is the orphan defect wearing a
   different name. Folded into the Kokugakuin/orphan work rather than kept as a duplicate-statement
@@ -946,10 +964,11 @@ Q111776816|P13677|"181621"|P958|"1"
 Q134925373|P13677|"181621"|P958|"0"
 ```
 
-- [ ] **Emma pastes the batch** — BLOCKED-ON-EXTERNAL until **2026-09-18** (`wikidata_editing_lockout.state`,
-  which covers hand-run QuickStatements by its own wording), then BLOCKED-ON-USER-ACTION: her account,
-  her paste, no date on it. Unblock signal is the lockout date passing, not a session deciding the
-  batch is small enough to be an exception.
+- **Emma pastes the batch** — moved to `scheduled/scheduled_items.json`, due **2026-09-18** when
+  the Wikidata lockout lifts. It is not listed here as a parked item on purpose (Emma, 2026-08-20);
+  the injector puts it in this queue and on `[[Open questions]]` on the day it becomes pasteable.
+  The unblock signal is still the state file, not a session deciding the batch is a small enough
+  exception.
 **Widened 2026-08-19 — page 181621 is NOT special.** `modern-quickstatements/generate_p958_candidates_page.py`
   checks every Kokugakuin id held by more than one item. Of **900** such ids, 619 are fine and **281
   are candidates**:

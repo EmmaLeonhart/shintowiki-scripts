@@ -1,0 +1,71 @@
+name: Inject scheduled items
+
+# Emma, 2026-08-20: deferred work must not sit in queue.md wearing a PARKED label --
+# "it being visible in the queue as 'parked' adds clutter, and other time gated stuff also
+# goes into this, github actions injects on that day into open questions and the queue".
+#
+# So scheduled/scheduled_items.json holds the item, and this fires daily; on an item's due
+# date it appends the item to queue.md and/or git_synced/Open questions.wiki and commits.
+# On every other day it is a no-op that prints what is still pending.
+#
+# This repo is PUBLIC, so Actions minutes are free -- the no-CI-on-private-repos ruling
+# (Emma, 2026-07-31) does not apply here.
+#
+# NOTE the absence of continue-on-error. That is deliberate, and it is the direct lesson of
+# the day this file was written: label-generator-regenerate.yml reported success for two
+# days while all five of its steps died on their first line, because every step carried it.
+# If this injector breaks, the run goes red and the item does not silently miss its date.
+on:
+  schedule:
+    - cron: "17 7 * * *"   # daily, 07:17 UTC -- off the hour so it does not pile onto :00
+  workflow_dispatch:
+    inputs:
+      today:
+        description: "Treat this ISO date as today (backfill / testing). Blank = real date."
+        required: false
+      dry_run:
+        description: "Report only, write nothing"
+        type: boolean
+        default: false
+
+concurrency:
+  group: inject-scheduled-items
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  inject:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Inject anything due
+        run: |
+          python scheduled/inject_due_items.py \
+            ${{ inputs.today && format('--today {0}', inputs.today) || '' }} \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Commit injected items
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add queue.md "git_synced/Open questions.wiki" scheduled/scheduled_items.json
+          if git diff --cached --quiet; then
+            echo "Nothing due today."
+          else
+            git commit -m "chore(scheduled): inject items whose date has arrived [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break || { echo "push rejected, rebasing (try $i)"; git pull --rebase --autostash || true; }
+              sleep 5
+            done
+          fi
