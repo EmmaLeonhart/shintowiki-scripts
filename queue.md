@@ -766,8 +766,10 @@ careless "cleanup" away from being destroyed.
 - [ ] **The 14 true duplicates + the 10 confirmed leftovers** — BLOCKED-ON-EXTERNAL: Wikidata lockout
   to **2026-09-18**. Which of two identical statements gets removed is not expressible in
   QuickStatements by value, so this is the sequential-misc mechanism's job (built, tested, empty).
-- The **42** are the orphan shape, not a duplicate-statement problem — asked on the board whether to
-  fold them into the Kokugakuin/orphan work rather than treat them here.
+- **✅ The 42 — DECIDED by Emma 2026-08-19: work them with the orphan set.** They are an item
+  asserting a list membership the list does not reciprocate, which is the orphan defect wearing a
+  different name. Folded into the Kokugakuin/orphan work rather than kept as a duplicate-statement
+  class, so the same shrines are not walked twice.
 
 ## B1c. Restore the wiki-based queue — the blackout was the cause, and it is over
 
@@ -777,10 +779,19 @@ I'm not 100% sure."* The bot's own diagnosis was that the broken sync (the Cloud
 
 **That cause is gone** — `WIKI_GATE: GO` since 2026-08-19T01:54, reads and writes both work.
 
-- [ ] NEEDS-DECISION, hers, and softened by her own "not 100% sure": restoring it means the wiki
-  becomes a live work surface again alongside `queue.md`. Do not restore unilaterally — the whole
-  hub just collapsed five queues into one for exactly this reason, and adding a second surface back
-  cuts against that.
+- **✅ DECIDED by Emma 2026-08-19: RESTORE IT.** Asked directly and she chose restore, so the
+  "not 100% sure" from July is settled. The wiki becomes a live work surface again alongside
+  `queue.md`.
+- [ ] **Rebuild the wiki-based queue on shinto.miraheze.org.** The 403 that killed it is over
+  (`WIKI_GATE: GO` since 2026-08-19T01:54, and both reads and writes are confirmed working — the
+  [[Open questions]] sync has run several times today). Not blocked on anything.
+  - The mechanism already exists: `git_synced/` + `sync_git_synced_pages.py` + the Git Synced Sync
+    workflow, which is what carries [[Open questions]] both ways. The queue page should use that same
+    pipeline rather than a second one — the hub's standing rule is one pipeline, and a bespoke
+    publisher is the defect it was written against.
+  - **Open sub-question to settle while building, not to park:** whether the wiki page mirrors
+    `queue.md` wholesale or carries only the §B wiki-side items. Mirroring 923 lines onto a wiki page
+    would be unreadable; carrying §B is what she used it for before.
 
 ## B1d. Swept and closed on 2026-08-19 — no action, recorded so they are not re-raised
 
@@ -877,6 +888,14 @@ Q134925373|P13677|"181621"|P958|"0"
     `"2"` / `"1"` / `"0"` / `"n/a"`. A derivation that does not format the float will write `2.0`.
   - A derived `0` is legitimate but distinguishes nothing — section 0 carries no uniqueness — so
     those add a value without resolving the ambiguity they appear to fix.
+
+**✅ The reading queue is BUILT (2026-08-19)** — Emma chose the shape: *"One HTML page, all 228,
+work at your own rate."* `modern-quickstatements/generate_p958_reading_queue.py` →
+`_site/p958-reading-queue.html`: **226 shrines across 140 Kokugakuin pages**, one card per page
+showing *every* holder so the taken sections are visible while choosing, a box per missing section,
+and the QuickStatements building live at the bottom with a copy button. (228 boxes, 226 shrines —
+two items sit on two pages each.) Nothing tracks progress and nothing chases; submission waits on
+the lockout to 2026-09-18.
 
 - [ ] **The 57 derivable ones** — NEEDS-INVESTIGATION, one specific question: `generate_p958_qualifiers.py`
   already derives P958 from P1352 and is add-only, so these 57 are exactly what it produces. Find out
