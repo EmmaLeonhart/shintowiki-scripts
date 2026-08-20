@@ -92,7 +92,7 @@ if _uar not in _usys.path:
 # releases stale, and the only endpoint this file talks to is query.wikidata.org, so it was
 # sending the WIKI-SIDE persona to Wikidata -- the linkage the two agents exist to prevent.
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT as USER_AGENT
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 
 # Marker for the auto-generated section. Used both to find the block
 # on re-runs (so we can replace it) and to detect that we already

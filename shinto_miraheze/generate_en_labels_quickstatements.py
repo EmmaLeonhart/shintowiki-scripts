@@ -86,7 +86,7 @@ QS_LINE_RE = re.compile(r'^(Q\d+)\|Len\|"(.+)"$')
 # Same blocklist as P11250 / P6262 — mainspace + Category: only.
 SKIP_PREFIXES = ("Template:",)
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 QID_RE = re.compile(r"^Q\d+$")
 
 # Retry transient errors — but 429 is deliberately NOT in the list; a

@@ -78,7 +78,7 @@ STATE_FILE = os.path.join(SCRIPT_DIR, "orchestrators", "duplicate_qids.state")
 
 QS_LINE_RE = re.compile(r'^(Q\d+)\|Len\|"(.+)"$')
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 QID_RE = re.compile(r"^Q\d+$")
 
 _retry_strategy = Retry(

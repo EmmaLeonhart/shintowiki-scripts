@@ -109,6 +109,35 @@ def clean_kana(value):
     return v
 
 
+def already_staged(qs_out=None):
+    """QIDs that already have a P1814 line in the staged file.
+
+    The builder has had `already_handled()` since 2026-08-04; the collector had
+    nothing, and it appends to the staged file unconditionally. That is the same
+    duplicate-statement hazard from the other end: a line staged BY HAND leaves
+    the work-file sitting in the queue directory, and whoever fills its ANSWER
+    marker next — the remote routine, or a local batch — gets a second, identical
+    P1814 statement appended for that item.
+
+    Found 2026-08-20 with exactly one live instance: Q11544511 (機殿神社) was
+    hand-staged on 2026-08-19 and its work-file never retired, so it still read
+    as pending with an empty marker.
+
+    Keyed on the staged file only, deliberately. `_resolved.log` also records
+    REJECTED_/NOT_A_SHRINE outcomes, and those are the builder's business to not
+    re-queue; here the question is narrower — does a statement for this item
+    already exist to be duplicated.
+    """
+    done = set()
+    path = qs_out or QS_OUT
+    if os.path.exists(path):
+        for line in io.open(path, encoding="utf-8"):
+            m = re.match(r"^(Q\d+)\|", line)
+            if m:
+                done.add(m.group(1))
+    return done
+
+
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     ap = argparse.ArgumentParser(description=__doc__)
@@ -122,13 +151,23 @@ def main():
     from kana_english import label_for            # noqa: E402  (path set above)
 
     qs_lines, label_lines, resolved, done_files = [], [], [], []
-    pending = rejected = 0
+    pending = rejected = skipped = 0
+    staged = already_staged()
     for name in sorted(os.listdir(WORKDIR)):
         qm = QID_RE.match(name)
         if not qm:
             continue
         qid = qm.group(1)
         path = os.path.join(WORKDIR, name)
+        if qid in staged:
+            # Checked before the answer is read on purpose: the stale work-files
+            # this catches have an EMPTY marker, so an answer-first order would
+            # count them pending forever and never retire them.
+            skipped += 1
+            resolved.append(f"{qid}	ALREADY_STAGED	P1814 line already in "
+                            f"{os.path.basename(QS_OUT)}")
+            done_files.append(path)
+            continue
         body = open(path, encoding="utf-8").read()
         ans = parse_answer(body)
         if ans is None:
@@ -166,7 +205,7 @@ def main():
 
     print(f"pending={pending} resolved={len(resolved)} "
           f"qs-lines={len(qs_lines)} label-lines={len(label_lines)} "
-          f"rejected-not-hiragana={rejected}"
+          f"rejected-not-hiragana={rejected} already-staged={skipped}"
           + (" [DRY]" if args.dry_run else ""))
     for r in resolved[:10]:
         print("   " + r.replace("\t", "\t"))

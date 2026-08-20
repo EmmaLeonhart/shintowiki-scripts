@@ -40,7 +40,7 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS = os.path.join(HERE, "levels")
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
 UA = {"User-Agent": WIKIDATA_USER_AGENT,
       "Accept": "application/sparql-results+json"}

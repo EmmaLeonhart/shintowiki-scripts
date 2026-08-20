@@ -87,10 +87,37 @@ external thing.
   states the collective name itself: *両社を合わせて両機殿（機殿神社）と呼ぶ*.
   **P1814 = はたどのじんじゃ**, staged in `name_in_kana.txt` sourced to the jawiki article.
   The pipeline now has **zero** unanswered work-files.
-  - **Not staged:** Q135186223. It carries the label 神服織機殿神社 but its description reads
-    "Hatorinomatokata Shrine (Ronsha 1)", so it looks like a 論社 entry item rather than the modern
-    shrine, and putting a shrine reading on a register-entry item is the kind of wrong-target edit
-    this session has spent the day undoing. NEEDS-INVESTIGATION: confirm which it is before staging.
+  - ✅ **Q135186223 RESOLVED 2026-08-20 — it IS the modern shrine, and it was already staged.**
+    Two things were wrong in the note this replaces. It said the item was "not staged"; it is, at
+    line 299 of `name_in_kana.txt`, with かんはとりはたどのじんじゃ. And it read "(Ronsha 1)" in the
+    description as evidence of a register-entry item. That is a **role**, not an item type, and the
+    two are separate QIDs:
+    - The register entry is **Q135098921** 服部麻刀方神社 二座 — no coordinates, no website, no
+      sitelink, `P2670` two seats, and `P460` out to its three 論社 candidates ranked `P1352` 1/2/3.
+    - **Q135186223 is candidate 1**, and carries what only a physical place carries: `P625`
+      coordinates, `P856` the jingukaikan 125-shrine page, `P131` two municipalities, a
+      `shinto:` wiki page. Its siblings are equally physical — Q135186224 a co-enshrinement,
+      Q135186227 a former site. The reading belongs on it.
+    - The `P1814` it already held is a **qualifier** on `P1448` (ハトリノマトカタ, `P1264` = Heian
+      period) — the ancient reading of the historical name. Top-level `P1814` was and is empty, so
+      this is an add, not a contest with the kana-qualifier cleanup.
+    - Its reference URL resolves: `神服織機殿神社` is a **redirect** to `機殿神社`, the article the
+      lead was read from.
+  - ⚠️ **The collector could stage a DUPLICATE, and did have one live case — fixed 2026-08-20.**
+    `already_handled()` fixed this from the BUILDER's end on 2026-08-04. The collector had no such
+    guard at all and appends to `name_in_kana.txt` unconditionally, so the same hazard survived from
+    the other end: a line staged BY HAND leaves the work-file sitting in `name_in_kana/`, and
+    whoever fills its ANSWER marker next gets a second identical `P1814` statement.
+    - The live case was **Q11544511** (機殿神社), hand-staged 2026-08-19, work-file never retired —
+      so "the pipeline now has **zero** unanswered work-files" was not true; it had one, sitting with
+      an empty marker, which is precisely why nothing noticed.
+    - `already_staged()` in `collect_name_in_kana.py`, checked **before the answer is parsed** —
+      an answer-first order counts these pending forever and never retires them. Keyed on the staged
+      file only, since the question is narrowly "does a statement already exist to be duplicated".
+    - Run: `pending=0 resolved=1 qs-lines=0 already-staged=1`; work-file retired to `_resolved.log`
+      as `ALREADY_STAGED`, `name_in_kana.txt` **unchanged at 352 lines**. 5 tests, and most pin what
+      it must NOT match — a QID as a statement *value*, a `Q1234560`/`Q123456` prefix, a `-Qxxx`
+      removal line.
   **Anchor the lead match at position 0**: 機殿神社 is a substring of the first name in its own
   lead, so an unanchored search silently hands the pair-item the wrong shrine's reading
   (田上大水神社/大水神社 and 河原神社/川原神社 are the same shape).
@@ -501,23 +528,38 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     `resolve_*`/`submit_*`/`select_*` module found this was the ONLY generator missing the guard —
     the other unguarded files are import-only helpers (`kana_english`, `romaji_phonology`,
     `user_agent`, …). `tests/test_no_work_on_import.py` now asserts the guard across all generators.
-  - ▶ **SPARQL endpoint migration — 9 left, ALL of them blocked.** `modern-quickstatements/` is
-    DONE (15 migrated 2026-08-04, every one verified with a bounded `LIMIT 1` probe through its own
-    constant). The 9 remaining all sit in `shinto_miraheze/` and import `mwclient`, which is not
-    installed in the dev environment — so they cannot be imported, and a live check is impossible
-    until the blackout lifts. They stay on the old endpoint rather than being changed blind.
+  - ✅ **SPARQL endpoint migration — FINISHED 2026-08-20. It was 21 files, not 9, and neither
+    stated blocker was real.** `modern-quickstatements/` was done 2026-08-04 (15 files); the rest
+    went today, each verified with a bounded `LIMIT 1` probe through its own constant read
+    **textually** from the source, never by importing. **21 migrated, 21 probed, 0 failures.**
+    - **Both halves of the blocker had stopped being true, and one never applied.** `mwclient` **is**
+      installed (0.11.0). The Miraheze blackout ended 2026-08-19. And a Wikidata endpoint change
+      never depended on the wiki blackout in the first place — the two were unrelated systems joined
+      only in the prose.
+    - **The count was an undercount from a hand grep of one directory.** 9 in `shinto_miraheze/`
+      was right as far as it went; there were **12 more in `shinto-label-generator/`**, which is
+      live — its own `label-generator-regenerate.yml` runs five of them on a schedule, each step
+      `continue-on-error: true`, so an old-endpoint 503 fails silently and the workflow still goes
+      green. That is the worst place for the miscount to have landed.
+    - **The migration silently depended on an untested assumption:** `ua_for()` fails CLOSED on an
+      unrecognised host, and `query-main.wikidata.org` is a *different host* from
+      `query.wikidata.org`. It routes correctly (`.wikidata.org` suffix match) — now pinned by a
+      test instead of assumed, since a raise there would have taken down every migrated script.
+    - `tests/test_sparql_endpoint_migration.py` makes the hand count impossible to repeat: it walks
+      the tree for the retired URL, and a second test asserts the walk actually reaches **both**
+      migrated directories, so it cannot pass vacuously. Full CI suite: **1504 passed**.
     - **Verify these textually, never by importing.** 84 modules in this repo rebind `sys.stdout` at
       module scope — that is the documented script-template invariant in `CLAUDE.md`, not a defect,
       and it exists because these are CLI scripts needing UTF-8 output on Windows. Importing one
       replaces the caller's stdout and breaks it. Read the constant out of the source instead. (This
       is distinct from `generate_soja_only.py`, which additionally RAN ITS WORK on import — that was
       a genuine defect and is fixed.)
-    mid-migration to `query-main.wikidata.org` (32 scripts already there). The old endpoint
-    threw repeated 503/504 during the 2026-08-03 rematch's 17,549-candidate P131 pass;
+    **Why the move happened at all** (kept — it is the reason, not a status): the old endpoint
+    threw repeated 503/504 during the 2026-08-03 rematch's 17,549-candidate P131 pass.
     `generate_genbu_ids.py` was moved and verified live, which also fixed
-    `match_jinjacho_shrines.py` (it imports that module's `_sparql`). The remaining 24 are a
-    mechanical one-line change each, but each needs a live run to confirm — do them in
-    batches, not as one blind sweep. `grep -rln "https://query\.wikidata\.org/sparql"`.
+    `match_jinjacho_shrines.py` (it imports that module's `_sparql`). The `grep -rln` that tracked
+    the remainder now returns only `tests/test_user_agent_segregation.py`, where the old URL is a
+    routing assertion rather than a call.
 
 ## A4. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
 

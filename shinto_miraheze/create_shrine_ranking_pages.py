@@ -80,7 +80,7 @@ WIKIDATA_LINK_RE = re.compile(r'\{\{wikidata link\|([Qq]\d+)\}\}')
 
 def query_wikidata_p301(cat_qid):
     """Query Wikidata for P301 (category's main topic) of a category QID."""
-    url = "https://query.wikidata.org/sparql"
+    url = "https://query-main.wikidata.org/sparql"
     query = f"""
     SELECT ?mainTopic ?mainTopicLabel WHERE {{
       wd:{cat_qid} wdt:P301 ?mainTopic .

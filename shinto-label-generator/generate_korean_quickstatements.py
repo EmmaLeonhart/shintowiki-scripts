@@ -34,7 +34,7 @@ if hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper
 elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 
 # Query 1: Japan shrines with Indonesian labels (for koreanize path)
 SPARQL_ID = """

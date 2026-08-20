@@ -70,7 +70,7 @@ Each line below adds a <code>P11250</code> claim linking a Wikidata item to its 
 
 QS_PAGE_FOOTER = "</pre>"
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 # Prefix the P11250 value must start with for us to count it as "the
 # same shintowiki page" — the QS page only ever generates lines with
 # this prefix, so any other value on the same QID is from a different

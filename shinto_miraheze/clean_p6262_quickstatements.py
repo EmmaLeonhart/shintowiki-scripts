@@ -65,7 +65,7 @@ Each line below adds a <code>P6262</code> claim linking a Wikidata item to its c
 
 QS_PAGE_FOOTER = "</pre>"
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 # Prefix the P6262 value must start with for us to count it as "the
 # same shinto.fandom.com page" — the QS page only ever generates lines
 # with this prefix, and any other value on the same QID belongs to a

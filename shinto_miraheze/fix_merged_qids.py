@@ -61,7 +61,7 @@ THROTTLE = 2.5
 
 QS_PAGE_TITLE = "QuickStatements/P11250"
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 
 QS_LINE_RE = re.compile(r'^\s*(Q\d+)\s*\|\s*P\d+\s*\|\s*"shinto:(.+?)"\s*$')
 QID_RE = re.compile(r'^Q\d+$')

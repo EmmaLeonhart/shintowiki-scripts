@@ -35,7 +35,7 @@ LEVELS = os.path.join(HERE, "levels")
 CORE = ("level_00.tsv", "level_01.tsv", "level_02.tsv")
 OUT = os.path.join(HERE, "miscellaneous.tsv")
 
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
 UA = {"User-Agent": WIKIDATA_USER_AGENT,
       "Accept": "application/sparql-results+json"}

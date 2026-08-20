@@ -27,7 +27,7 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 # Initialize pykakasi (v2.3.0 API)
 kks = pykakasi.kakasi()
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 
 SPARQL_SHRINES = """
 SELECT DISTINCT ?item ?jaLabel ?enLabel ?kanaName ?kanaReading WHERE {

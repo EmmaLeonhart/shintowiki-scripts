@@ -46,7 +46,7 @@ def _ensure_utf8_stdout():
     elif hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
         sys.stdout.reconfigure(encoding='utf-8')
 
-SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
+SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 
 # ----------------------------
 # Cyrillic maps (Polivanov system)

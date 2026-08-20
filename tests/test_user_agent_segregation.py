@@ -46,6 +46,12 @@ def test_the_wikidata_agent_carries_no_source_url():
 
 def test_ua_for_routes_wikidata_hosts_to_the_wikidata_agent():
     for url in ("https://www.wikidata.org/w/api.php", "https://query.wikidata.org/sparql",
+                # query-main is the endpoint the tree migrated onto (2026-08-04 for
+                # modern-quickstatements, 2026-08-20 for the remaining 21). It is a
+                # DIFFERENT host from query.wikidata.org, and ua_for() fails CLOSED on
+                # an unrecognised one — so the migration silently depended on
+                # ".wikidata.org" suffix-matching it. Pinned rather than assumed.
+                "https://query-main.wikidata.org/sparql",
                 "https://quickstatements.toolforge.org/api.php", "www.wikidata.org"):
         assert ua_for(url) == WIKIDATA_USER_AGENT, url
 

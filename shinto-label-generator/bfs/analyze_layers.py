@@ -37,7 +37,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS_DIR = os.path.join(HERE, "levels")
 OUT_JSON = os.path.join(HERE, "layer_analysis.json")
 
-SPARQL = "https://query.wikidata.org/sparql"
+SPARQL = "https://query-main.wikidata.org/sparql"
 UA = {"User-Agent": WIKIDATA_USER_AGENT,
       "Accept": "application/sparql-results+json"}
 CHUNK = 250
