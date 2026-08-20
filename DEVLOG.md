@@ -4,6 +4,94 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-20 (later) — a green CI hiding five dead pipelines, and deferral stops meaning "parked"
+
+### Five scheduled pipelines had been dead for two days behind a passing workflow
+
+Found while verifying that the endpoint migration had broken nothing. It had not — the
+breakage was a day older, and worse than an endpoint would have been.
+
+`label-generator-regenerate.yml` reported **success** on 08-19 and 08-20 while all five of
+its pipeline steps died on their first line with
+`ModuleNotFoundError: No module named 'shinto_miraheze'`.
+
+**An ordering bug, which is exactly why nothing caught it.** Every affected file had *both*
+the `shinto_miraheze` import and the repo-root `sys.path` bootstrap that makes it
+importable — in the wrong order. A grep for either half looked healthy.
+
+| date | commit | what it did |
+|---|---|---|
+| 08-18 | `6ae18be7` Pace every Wikidata request site | added `from shinto_miraheze.wd_pace import …` near the top of ~23 files |
+| 08-19 | `8ac7d8a2` Standardise the wiki agent | added the bootstrap **below** the import from the day before |
+
+**23 files**, not the five in the workflow — 8 in `modern-quickstatements/`, 14 in
+`shinto-label-generator/`, 1 in `site/`, all raising from any working directory.
+
+**What bought it two days of silence: `continue-on-error: true` on every step.** The steps
+failed, the workflow went green, and the only traces were job time falling **12m24s → ~55s**
+and the commit diff shrinking to a one-line date stamp in `docs/index.html`. That last one is
+the trap — a tiny diff reads as *"nothing needed regenerating"*, the most reassuring outcome
+on offer.
+
+Verified by running the five locally: all clear imports, four exit 0, and they regenerated 12
+quickstatements files. So they had genuinely been producing nothing.
+`tests/test_sys_path_bootstrap_ordering.py` pins the order and was checked to actually FAIL
+when the bug is reintroduced. Confirmed on GitHub afterwards: the next run took **>10
+minutes** instead of 55 seconds.
+
+**The regenerated artifacts were deliberately not committed.** The rerun produced *identical
+content in a different order* — 54,149 insertions against 54,149 deletions, same set,
+different sequence — because `generate_indonesian_proposals.py` has no `ORDER BY` and the
+writer preserves SPARQL binding order. CI owns those files. Worth noting that this churn is
+*also* why the death was invisible: when the real diff is always six figures of noise, nobody
+reads it, and the day it drops to one line, that reads as calm.
+
+⚠️ And a correction to my own first instinct, recorded because the next tick would have
+executed it: **"sort the output lines" is wrong.** These files interleave a `# Source:`
+comment with the statement it describes, so a line sort divorces every comment from its
+statement. Sort the *records* by QID instead.
+
+### Deferral stops meaning "parked in the queue"
+
+Asked to decide the `continue-on-error` question, Emma declined to decide it now and
+specified a mechanism instead:
+
+> *"it waits until September 1, and waiting means you write a script that injects it by a
+> json into the queue or open questions at a certain date and the date is Sept 21, so write
+> that thing, because it being visible in the queue as 'parked' adds clutter, and other time
+> gated stuff also goes into this, github actions injects on that day into open questions and
+> the queue"*
+
+Two dates in one sentence. The later, more specific clause — *"the date is Sept 21"* — is
+taken as the spec; September 1 is recorded on the item rather than dropped.
+
+Built: `scheduled/scheduled_items.json` + `scheduled/inject_due_items.py` +
+`inject-scheduled-items.yml` (daily). Three items left `queue.md` for the store — the
+`continue-on-error` decision (09-21) and two Wikidata-lockout items (09-18).
+
+**Idempotence is keyed on an `<!-- scheduled:<id> -->` marker in the target, not the json's
+`injected` flag.** The json is a tracked file someone can revert or merge-resolve, and each of
+those would re-fire an item whose guard lived only there — which does not error, it silently
+duplicates a block of prose inside the file Emma reads to decide what to work on.
+
+**Only DATE gates go in.** A gate on a *signal* stays in `queue.md` with a named blocker,
+because dating it would misrepresent her condition as a calendar wait. `_not_moved` in the
+json records which: A5b's 1 and 3 wait on the editor stopping, and A5c is date-gated only for
+submission while building the batch is not blocked at all.
+
+The workflow carries **no** `continue-on-error`, which is the same day's lesson applied.
+
+Two defects the tests caught and that were fixed rather than worked around: `load(path=STORE)`
+bound its default at import time, so it kept reading the original file after `STORE` was
+repointed while `main()` wrote to the new one — that split sent a test run's output into the
+real `Open questions` page. The fixture now redirects every target, not just the one under
+assertion.
+
+Full CI suite: **1521 passed**. The injector workflow was dispatched dry against 2026-09-21
+and came back green with 5 injections identified and nothing written.
+
+---
+
 ## 2026-08-20 — the endpoint migration was 21 files, not 9, and both its blockers had expired
 
 Work-loop tick, §A. Two items closed; in both, the thing that was wrong was the queue's own
