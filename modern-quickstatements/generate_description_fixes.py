@@ -44,14 +44,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(REPO, "shinto-label-generator"))
 from language_registry import COVERED  # noqa: E402
-from shinto_miraheze.ua_contact import contact
-
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+
+from shinto_miraheze.ua_contact import contact
 
 from shinto_miraheze.ua_for import ua_for
 

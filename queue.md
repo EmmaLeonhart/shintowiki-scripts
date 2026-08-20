@@ -413,6 +413,55 @@ not a stall.
   `docs/remote_queue_routine_prompt.md`; the last known fix was the missing repo binding
   (`session_context.sources`).
 
+## A1b. ✅ Five scheduled pipelines were dead for two days and CI reported success — FIXED 2026-08-20
+
+Found while checking that the endpoint migration had not broken anything; it had not, and this was
+already broken a day earlier. `label-generator-regenerate.yml` ran green on 08-19 and 08-20 while
+**all five of its pipeline steps died on their first line.**
+
+    ModuleNotFoundError: No module named 'shinto_miraheze'
+
+**It is an ordering bug, which is why nothing caught it.** Every affected file had BOTH the
+`shinto_miraheze` import and the repo-root `sys.path` bootstrap that makes it importable — in the
+wrong order — so a grep for either half looked healthy. From the history:
+
+| date | commit | what it did |
+|---|---|---|
+| 08-18 | `6ae18be7` Pace every Wikidata request site | added `from shinto_miraheze.wd_pace import …` near the top of ~23 files |
+| 08-19 | `8ac7d8a2` Standardise the wiki agent | added the bootstrap **below** the import from the day before |
+
+**23 files**, not the five in the workflow — 8 in `modern-quickstatements/`, 14 in
+`shinto-label-generator/`, 1 in `site/`. All raised from **any** working directory; reproduced from
+the repo root and from the workflow's own `working-directory`.
+
+**⚠️ The reason two days passed: `continue-on-error: true` on every step.** The steps failed, the
+workflow reported **success**, and the only visible traces were the job time falling **12m24s →
+~55s** and the commit diff shrinking to a one-line date stamp in `docs/index.html`. That last one is
+the trap — a tiny diff reads as *"nothing needed regenerating"*, the most benign-looking outcome
+available. This is the same shape A5 already ruled on for `strip_husk_lines.py`: *"deliberately not
+`continue-on-error`: if the step cannot run, the lines stay staged and the test stays red, which is
+the visible failure."* That reasoning was never applied here.
+
+Fixed by moving the bootstrap above the first import in all 23. Verified by running the five
+pipelines locally: all clear imports, four exit 0, and they regenerated **12 quickstatements files**
+— so the pipelines had genuinely been producing nothing.
+`tests/test_sys_path_bootstrap_ordering.py` pins the order, and was checked to actually FAIL when
+the bug is reintroduced. Full CI suite: **1506 passed**.
+
+- [ ] **`continue-on-error: true` on all five steps** — NEEDS-DECISION, Emma's, and stated once
+  rather than pushed. Removing it makes the next breakage visible immediately instead of after two
+  days; leaving it means the next one hides the same way. This repo is **public**, so its Actions
+  minutes are free and a failing run costs nothing but the notification. Not changed unilaterally —
+  five steps going red is a visible change to her repo.
+- [ ] **The generators emit nondeterministically** — NEEDS-INVESTIGATION, this repo's job, no gate.
+  The local rerun produced `tok.txt` and `id_proposed.txt` with **identical content in a different
+  order**: 54,149 insertions against 54,149 deletions, `set(old) == set(new)`, `old != new`. So every
+  regeneration commits ~100k lines of churn that means nothing. Worth fixing on its own, and it is
+  also **why the death was invisible** — when the real diff is always six figures of noise, nobody
+  reads it, and the day it drops to one line that reads as calm rather than alarming. Sort the
+  output before writing. The regenerated files were **reverted, not committed** here: CI owns them,
+  and committing 100k lines of reordering would have fought it.
+
 ## A2. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
 
 Tags PEOPLE with P14005 from the ja.wp [[Category:日本の位階受位者]] tree. Decisions settled: create

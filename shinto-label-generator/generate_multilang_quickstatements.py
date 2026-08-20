@@ -27,14 +27,14 @@ import csv
 import unicodedata
 import requests
 from tokiponizer import kana_to_romaji, tokenize_romaji
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
-
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+
+from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 

@@ -40,14 +40,14 @@ from opencc import OpenCC
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)
 import generate_chinese_quickstatements as z  # noqa: E402
-from shinto_miraheze.ua_contact import contact
-
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+
+from shinto_miraheze.ua_contact import contact
 
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
