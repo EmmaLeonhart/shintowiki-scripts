@@ -391,7 +391,48 @@ not a stall.
   - **The queue was 67% work that must not be done: 221 → 73 work-files.** 216 protected members
     across the two passes; 148 files deleted outright (every member protected), 24 had the ask
     removed while keeping the member as context, since a new description still has to differ.
-  - ▶ **The 73 that remain are the real queue** — every one an item with no English description.
+  - ⚠️ **"The 73 that remain are the real queue" is WRONG for 51 of them — measured 2026-08-21.**
+    They are 73 files holding **63** unanswered QIDs, and the premise printed in every work-file
+    is *"every member of this group shares the same label and would get the same standardized
+    description — they need UNIQUE, informative ENGLISH descriptions."*
+
+    | group size | files | |
+    |---|---|---|
+    | **1** | **51** | **no other member. Nothing shares the label, nothing needs distinguishing — the stated reason for the work does not apply** |
+    | 2 | 9 | a real collision |
+    | 3 | 3 | a real collision |
+
+    So **12 files** carry the disambiguation work this pipeline was built for. The other 51 are
+    ordinary items that merely lack an English description, presented under a justification that
+    is not true of them.
+  - **The groups are keyed on the INDONESIAN label, which is why they look arbitrary.** Emma,
+    2026-08-21, on Q135503340: *"idk what this is and where it came from… I lean towards it being
+    a shrine that exists but has no context and is someone else's problem."* She is right, and the
+    grouping is why it reached her: Q135413481 (神殿, the imperial palace sanctuary) and Q135503340
+    (神殿神社, a shrine) both romanise to `Kuil Shinden`, so the generator called them a collision.
+    They are not the same kind of thing. Same shape for Q135195021 — her words, *"is just a ronsha?
+    like looks really normal"* — whose single-member group collides only with a *proposed*
+    Indonesian description for a different Oyama Shrine in Ishikawa. The famous 雄山神社
+    (Q11659204) is not in the batch at all.
+  - **Only 2 of the 63 have nothing distinguishing whatsoever** (no location, coordinates, deity,
+    sitelink or list): Q97013988 and Q135503340. The other 61 carry real register context — 58 in a
+    Jinmyōchō list, 60 with an ancient P131, 34 with coordinates. One bad member does not condemn
+    the set.
+  - **Q135503340's provenance, since it was asked:** Emma created it herself 2025-07-30, *"Created
+    item for red-link present on 阿沼美神社, Anumi Shrine"*. One claim, `P31 = Q845945`. Nothing to
+    describe beyond "Shinto shrine", which is the generic string the pipeline is not allowed to write.
+  - **Evidence + review page, both committed:** `shinto_miraheze/fetch_description_evidence.py`
+    (read-only, `wbgetentities` in batches of 50 — two requests for 63 items, not a SPARQL sweep) →
+    `description_enrichment_en/_evidence.json`; `site/generate_description_review.py` →
+    `_site/description-review.html`, one card per item with what/where/siblings and both candidate
+    description strings.
+  - ❓ **The shape question is OPEN and is Emma's** — asked 2026-08-21, she is reading the items.
+    The pipeline's own worked example is `Shinto shrine in Maebashi, Gunma Prefecture, Japan`, a
+    MODERN municipality, and these items' `P131` is ancient (Ōmi Province, Azai district), so that
+    example cannot be produced from their data. Their already-described siblings use the register
+    position — `Ronsha 2 of Itateno Shrine`, `The 1115th Shrine of the Engishiki Jinmyōchō (Ronsha)`
+    — 11 of 13. But none of the 63 carries the `P1352` ranking that form is built from. **Nothing
+    is written until she answers.**
 - ✅ **The same question asked of the LABEL pipelines 2026-08-05 — and the answer is clean.**
   `L<lang>` SETS a label exactly the way `Den` sets a description, so the ~12,150 staged label
   lines were audited rather than reasoned about. **No label pipeline overwrites hand-written
