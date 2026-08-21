@@ -1,0 +1,5 @@
+<includeonly>{{#invoke:Coordinates|coord}}</includeonly><noinclude>
+{{Documentation}}
+<!-- Add categories to the /doc subpage, interwikis to Wikidata, not here -->
+[[Category:Independently git synced pages]]
+</noinclude>
