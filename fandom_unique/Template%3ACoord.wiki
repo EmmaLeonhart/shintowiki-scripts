@@ -1,8 +1,6 @@
 <includeonly>{{#invoke:Coordinates|coord}}</includeonly><noinclude>
 {{Documentation}}
 
-{{wikidata link|Q6294369|en|Coord}}
 [[Category:Japanese titled templates]]
 [[Category:Incorrect template category applied]]
-[[Category:Independently git synced pages]]
 </noinclude>
