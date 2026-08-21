@@ -17,8 +17,6 @@
 {{#ifeq:{{{grok|}}}|none||{{#if:{{{grok|}}}|[[got:{{{grok}}}]]}}}}{{#ifeq:{{NAMESPACE}}||{{#ifeq:{{{grok|}}}|none||{{#if:{{{grok|}}}||}}}}}}
 </includeonly>
 <noinclude>
-[[Category:Pages without wikidata legacy legacy]]
-[[Category:Categories missing wikidata]]
 [[Category:Pages without Grokipedia links]]
 [[Category:Pages with Grokipedia links]]
 [[Category:Pages to be checked for Grokipedia]]
