@@ -1,5 +1,52 @@
 # Description enrichment pipeline — collision groups & the translation chain
 
+> # ⭐ SUPERSEDED IN PART — Emma's ruling, 2026-08-21. Read this block first.
+>
+> **Descriptions are minor, programmatic, and disposable.** Her words:
+> *"the thing about descriptions is that they are all kinda bullshit. Just a grammatically right
+> fill in the blanks statement in each language."* And: *"descriptions are kinda bullshit and can
+> just be treated as minor things to be programmatically generated and if one does not work then
+> try another programmatically generated one."*
+>
+> **What this retires:** the collision-group design below, insofar as it routes descriptions
+> through per-item CLOUD research to write "informative, distinguishing" text. That is the path
+> that produced the 63 description work-files, and on 2026-08-21 Emma looked at them and said
+> *"is just a random ronsha and nothing is wrong with it"* / *"Are we just discussing indonesian
+> descriptions? Nothing serious?"*. **Do not spend per-item research on a description.** The
+> uniqueness mechanics documented below are still correct and still load-bearing; it is the
+> *response* to a collision that changes — iterate the generator, do not research the item.
+>
+> ## THE ALGORITHM — per item, per language, in this order
+>
+> | # | condition (in this language) | action |
+> |---|---|---|
+> | **1** | **no label, HAS a description** | **REMOVE the description** |
+> | **2** | no label, no description | ADD a label |
+> | **3** | HAS a label, no description | ADD a programmatically generated fill-in-the-blanks description — ideally `Shinto shrine in <location>` |
+> | **4** | the description is REJECTED | try again with an **iteration on the algorithm** — a different generated form, never hand research |
+>
+> **Applies identically across all languages.**
+>
+> ## Why step 1 is the "extremely important caveat", in her words
+>
+> *"The problem with it is that many items can have the same label and empty descriptions, and many
+> items can have the same description and an empty label, but once the two of them are both filled
+> then it rejects edits to one to avoid duplication. Since labels are overwhelmingly more important
+> than descriptions, it follows that any description on an item without a label is actively
+> harmful."*
+>
+> The constraint is on the **(label, description) pair**. Either field alone may repeat freely. So a
+> description sitting on an item that has **no label** is not neutral — it is a **claim staked on
+> one half of a pair**, and it is the half that matters least. When the label finally arrives, the
+> completed pair can collide with an existing item and the *label* edit is what gets rejected.
+>
+> **A description with no label costs a label. That is the entire argument, and it is why removal
+> comes first rather than last.**
+>
+> Order matters for the same reason: 1 clears the obstruction, 2 supplies the thing that actually
+> matters, 3 only then decorates, and 4 keeps 3 cheap.
+
+
 Emma's design, 2026-07-07 (recorded verbatim in intent; treat as authoritative
 alongside `docs/wikidata_shrine_festival_model.md`).
 
