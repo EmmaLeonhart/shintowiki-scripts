@@ -18,6 +18,10 @@
     ],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": null,
+    "_list": null,
+    "_kokugakuin": null,
     "work_file": "Q11150615.wiki",
     "context_line": "en='Kaizan Shrine' | ja='開山神社'"
   },
@@ -45,6 +49,13 @@
     "sitelinks": {
       "jawiki": "國柱命神社"
     },
+    "_coords": [
+      34.735352,
+      138.777763
+    ],
+    "_p1448": "国柱命神社",
+    "_list": "List of Shikinaisha in Izu Province",
+    "_kokugakuin": "181649",
     "work_file": "Q134893137.wiki",
     "context_line": "en='Kunihashiramikoto Shrine' | ja='國柱命神社' | in Izu Province / Naka district"
   },
@@ -73,6 +84,10 @@
     "sitelinks": {
       "commonswiki": "Category:Naratsuhiko Shrine"
     },
+    "_coords": null,
+    "_p1448": "奈良豆比古神社",
+    "_list": "List of Shikinaisha in Yamato Province",
+    "_kokugakuin": "180668",
     "work_file": "Q135038836.wiki",
     "context_line": "en='Naratsuhiko Shrine' | ja='奈良豆比古神社' | in Yamato Province / Soekami district"
   },
@@ -98,6 +113,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      34.537181,
+      135.734396
+    ],
+    "_p1448": "穂雷命神社",
+    "_list": "List of Shikinaisha in Yamato Province",
+    "_kokugakuin": "180708",
     "work_file": "Q135038947.wiki",
     "context_line": "en='Honoikatsuchino Shrine' | ja='穂雷神社' | in Yamato Province / Hirose district"
   },
@@ -123,6 +145,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      34.599148,
+      135.634734
+    ],
+    "_p1448": "若倭姫命神社",
+    "_list": "List of Shikinaisha in Kawachi Province",
+    "_kokugakuin": "180899",
     "work_file": "Q135039118.wiki",
     "context_line": "en='Wakayamatohimeno- Shrine' | ja='若倭姫命神社' | in Kawachi Province / Ōgata district"
   },
@@ -148,6 +177,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      34.343942,
+      135.244884
+    ],
+    "_p1448": "波太神社",
+    "_list": "List of Shikinaisha in Izumi Province",
+    "_kokugakuin": "181017",
     "work_file": "Q135039193.wiki",
     "context_line": "en='Hatano Shrine' | ja='波太神社' | in Izumi Province / Hine district"
   },
@@ -176,6 +212,10 @@
     "sitelinks": {
       "commonswiki": "Category:Mishimakamono Shrine"
     },
+    "_coords": null,
+    "_p1448": "三島鴨神社",
+    "_list": "List of Shikinaisha in Settsu Province",
+    "_kokugakuin": "181052",
     "work_file": "Q135039216.wiki",
     "context_line": "en='Mishimakamono Shrine' | ja='三島鴨神社' | in Settsu Province / Shimashimo district"
   },
@@ -203,6 +243,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      34.691263,
+      136.150832
+    ],
+    "_p1448": "比地神社",
+    "_list": "List of Shikinaisha in Iga Province",
+    "_kokugakuin": "181097",
     "work_file": "Q135039250.wiki",
     "context_line": "en='Hichino Shrine' | ja='（参）神戸神社' | in Iga Province / Iga district"
   },
@@ -228,6 +275,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      34.824142,
+      136.579754
+    ],
+    "_p1448": "比佐豆知神社",
+    "_list": "List of Shikinaisha in Ise Province",
+    "_kokugakuin": "181244",
     "work_file": "Q135039352.wiki",
     "context_line": "en='Hisatsuchino Shrine' | ja='比佐豆知神社' | in Ise Province / Anki district"
   },
@@ -253,6 +307,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      34.854455,
+      136.605218
+    ],
+    "_p1448": "貴志神社",
+    "_list": "List of Shikinaisha in Ise Province",
+    "_kokugakuin": "181270",
     "work_file": "Q135039376.wiki",
     "context_line": "en='Kishino Shrine' | ja='貴志神社' | in Ise Province / Kawawa district"
   },
@@ -278,6 +339,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      34.985005,
+      136.563865
+    ],
+    "_p1448": "神前神社",
+    "_list": "List of Shikinaisha in Ise Province",
+    "_kokugakuin": "181290",
     "work_file": "Q135039396.wiki",
     "context_line": "en='Kamusakino Shrine' | ja='神前神社' | in Ise Province / Mie district"
   },
@@ -304,6 +372,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "長谷神社",
+    "_list": "List of Shikinaisha in Ise Province",
+    "_kokugakuin": "181316",
     "work_file": "Q135039431.wiki",
     "context_line": "en='Haseno Shrine' | ja='長谷神社' | in Ise Province / Asake district"
   },
@@ -329,6 +401,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.136304,
+      136.504847
+    ],
+    "_p1448": "賀毛神社",
+    "_list": "List of Shikinaisha in Ise Province",
+    "_kokugakuin": "181325",
     "work_file": "Q135039440.wiki",
     "context_line": "en='Kamono Shrine' | ja='賀毛神社' | in Ise Province / Inabe district"
   },
@@ -353,6 +432,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.355933,
+      136.927028
+    ],
+    "_p1448": "託美神社",
+    "_list": "List of Shikinaisha in Owari Province",
+    "_kokugakuin": "181404",
     "work_file": "Q135039508.wiki",
     "context_line": "en='Takumino Shrine' | ja='託美神社' | in Owari Province / Niwa district"
   },
@@ -378,6 +464,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.455938,
+      136.200102
+    ],
+    "_p1448": "片山神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181841",
     "work_file": "Q135039520.wiki",
     "context_line": "en='Katayamano Shrine' | ja='片山神社' | in Ōmi Province / Azai district"
   },
@@ -405,6 +498,10 @@
     "sitelinks": {
       "commonswiki": "Category:Homino Shrine"
     },
+    "_coords": null,
+    "_p1448": "穂見神社",
+    "_list": "List of Shikinaisha in Kai Province",
+    "_kokugakuin": "181666",
     "work_file": "Q135039702.wiki",
     "context_line": "en='Homino Shrine' | ja='穂見神社' | in Kai Province"
   },
@@ -431,6 +528,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "佐久神社",
+    "_list": "List of Shikinaisha in Kai Province",
+    "_kokugakuin": "181670",
     "work_file": "Q135039704.wiki",
     "context_line": "en='Sakuno Shrine' | ja='佐久神社' | in Kai Province / Yatsushiro district"
   },
@@ -456,6 +557,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.035459,
+      136.018611
+    ],
+    "_p1448": "高野神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181792",
     "work_file": "Q135039794.wiki",
     "context_line": "en='Takanono Shrine' | ja='高野神社' | in Ōmi Province / Kurita district"
   },
@@ -481,6 +589,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.182777,
+      136.216577
+    ],
+    "_p1448": "石部神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181823",
     "work_file": "Q135039812.wiki",
     "context_line": "en='Isoheno Shrine' | ja='石部神社' | in Ōmi Province / Echi district"
   },
@@ -506,6 +621,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.290007,
+      136.280058
+    ],
+    "_p1448": "山田神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181829",
     "work_file": "Q135039818.wiki",
     "context_line": "en='Yamatano Shrine' | ja='山田神社' | in Ōmi Province / Sakata district"
   },
@@ -535,6 +657,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "熊野神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181896",
     "work_file": "Q135039874.wiki",
     "context_line": "en='Kumano Shrine' | ja='熊野神社' | in Ōmi Province / Takashima district | deities: Kumano Gongen"
   },
@@ -561,6 +687,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "小野神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181899",
     "work_file": "Q135039876.wiki",
     "context_line": "en='Wonono Shrine' | ja='小野神社' | in Ōmi Province / Takashima district"
   },
@@ -591,6 +721,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "麻知神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181900",
     "work_file": "Q135039877.wiki",
     "context_line": "en='Hie Shrine' | ja='日枝神社' | in Ōmi Province / Takashima district | deities: Ōyamakui"
   },
@@ -617,6 +751,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "大田神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181902",
     "work_file": "Q135039879.wiki",
     "context_line": "en='Ohotano Shrine' | ja='大田神社' | in Ōmi Province / Takashima district"
   },
@@ -642,6 +780,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.481164,
+      136.049405
+    ],
+    "_p1448": "坂本神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181908",
     "work_file": "Q135039884.wiki",
     "context_line": "en='Sakamoto Shrine' | ja='坂本神社' | in Ōmi Province / Takashima district"
   },
@@ -668,6 +813,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "大水別神社",
+    "_list": "List of Shikinaisha in Ōmi Province",
+    "_kokugakuin": "181914",
     "work_file": "Q135039888.wiki",
     "context_line": "en='Ohomitsuwakeno Shrine' | ja='日枝神社・大水別神社' | in Ōmi Province / Takashima district"
   },
@@ -694,6 +843,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "守田神社",
+    "_list": "List of Shikinaisha in Shinano Province",
+    "_kokugakuin": "181992",
     "work_file": "Q135039929.wiki",
     "context_line": "en='Moritano Shrine' | ja='守田神社' | in Shinano Province / Minochi district"
   },
@@ -722,6 +875,10 @@
     "sitelinks": {
       "commonswiki": "Category:Ikahono Shrine"
     },
+    "_coords": null,
+    "_p1448": "伊加保神社",
+    "_list": "List of Shikinaisha in Kōzuke Province",
+    "_kokugakuin": "182018",
     "work_file": "Q135039963.wiki",
     "context_line": "en='Ikahono Shrine' | ja='伊加保神社' | in Kōzuke Province / Gunma district"
   },
@@ -750,6 +907,10 @@
     "sitelinks": {
       "commonswiki": "Category:Arakashi Shrine"
     },
+    "_coords": null,
+    "_p1448": "荒樫神社",
+    "_list": "List of Shikinaisha in Shimotsuke Province",
+    "_kokugakuin": "182032",
     "work_file": "Q135039974.wiki",
     "context_line": "en='Arakashi Shrine' | ja='荒樫神社' | in Shimotsuke Province / Haga district"
   },
@@ -778,6 +939,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      37.012797,
+      140.907479
+    ],
+    "_p1448": "鹿島神社",
+    "_list": "List of Shikinaisha in Mutsu Province",
+    "_kokugakuin": "182077",
     "work_file": "Q135040000.wiki",
     "context_line": "en='Kashima Shrine' | ja='鹿島神社' | in Mutsu Province / Iwaki district | deities: Takemikazuchi"
   },
@@ -804,6 +972,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "雄鋭神社",
+    "_list": "List of Shikinaisha in Mutsu Province",
+    "_kokugakuin": "182106",
     "work_file": "Q135040024.wiki",
     "context_line": "en='Wotono Shrine' | ja='雄鋭神社' | in Mutsu Province / Kurihara district"
   },
@@ -832,6 +1004,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.609736,
+      135.961139
+    ],
+    "_p1448": "和爾部神社",
+    "_list": "List of Shikinaisha in Wakasa Province",
+    "_kokugakuin": "182175",
     "work_file": "Q135040087.wiki",
     "context_line": "en='Hiyoshi Shrine' | ja='日吉神社' | in Wakasa Province / Mikata district | deities: Ōyamakui"
   },
@@ -857,6 +1036,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.676115,
+      136.092128
+    ],
+    "_p1448": "田結神社",
+    "_list": "List of Shikinaisha in Echizen Province",
+    "_kokugakuin": "182192",
     "work_file": "Q135040105.wiki",
     "context_line": "en='Tayuhino Shrine' | ja='田結神社' | in Echizen Province / Tsuruga district"
   },
@@ -882,6 +1068,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.762158,
+      136.190789
+    ],
+    "_p1448": "鹿蒜神社",
+    "_list": "List of Shikinaisha in Echizen Province",
+    "_kokugakuin": "182209",
     "work_file": "Q135040128.wiki",
     "context_line": "en='Kahiruno Shrine' | ja='鹿蒜神社' | in Echizen Province / Tsuruga district"
   },
@@ -909,6 +1102,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "織田神社",
+    "_list": "List of Shikinaisha in Echizen Province",
+    "_kokugakuin": "182214",
     "work_file": "Q135040137.wiki",
     "context_line": "en='Oritano Shrine' | ja='織田神社' | in Echizen Province / Tsuruga district"
   },
@@ -935,6 +1132,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.979438,
+      136.16159
+    ],
+    "_p1448": "石田神社",
+    "_list": "List of Shikinaisha in Echizen Province",
+    "_kokugakuin": "182215",
     "work_file": "Q135040138.wiki",
     "context_line": "en='Ihatano Shrine' | ja='（参）石田神社' | in Echizen Province / Tsuruga district"
   },
@@ -960,6 +1164,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      36.098168,
+      136.313427
+    ],
+    "_p1448": "推前神社",
+    "_list": "List of Shikinaisha in Echizen Province",
+    "_kokugakuin": "182252",
     "work_file": "Q135040203.wiki",
     "context_line": "en='Shihisakino Shrine' | ja='推前神社' | in Echizen Province / Asuwa district"
   },
@@ -985,6 +1196,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      36.175146,
+      136.27964
+    ],
+    "_p1448": "横山神社",
+    "_list": "List of Shikinaisha in Echizen Province",
+    "_kokugakuin": "182293",
     "work_file": "Q135040249.wiki",
     "context_line": "en='Yokoyamano Shrine' | ja='横山神社' | in Echizen Province / Sakai district"
   },
@@ -1014,6 +1232,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "三輪神社",
+    "_list": "List of Shikinaisha in Kaga Province",
+    "_kokugakuin": "182333",
     "work_file": "Q135040290.wiki",
     "context_line": "en='Miwa Shrine' | ja='三輪神社' | in Kaga Province / Kahoku district | deities: Ōmononushi"
   },
@@ -1040,6 +1262,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "長岡神社",
+    "_list": "List of Shikinaisha in Etchū Province",
+    "_kokugakuin": "182387",
     "work_file": "Q135040340.wiki",
     "context_line": "en='Nakawokano Shrine' | ja='長岡神社' | in Etchū Province / Tonami district"
   },
@@ -1066,6 +1292,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "日置神社",
+    "_list": "List of Shikinaisha in Etchū Province",
+    "_kokugakuin": "182416",
     "work_file": "Q135040394.wiki",
     "context_line": "en='Hiokino Shrine' | ja='日置神社' | in Etchū Province / Niikawa district"
   },
@@ -1089,6 +1319,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": null,
+    "_list": null,
+    "_kokugakuin": null,
     "work_file": "Q135040405.wiki",
     "context_line": "en='Usaka Shrine' | ja='鵜坂神社' | in Etchū Province"
   },
@@ -1115,6 +1349,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      37.964117,
+      138.431911
+    ],
+    "_p1448": "物部神社",
+    "_list": "List of Shikinaisha in Sado Province",
+    "_kokugakuin": "182476",
     "work_file": "Q135040484.wiki",
     "context_line": "en='Mononoheno Shrine' | ja='物部神社' | in Sado Province / Sawata district"
   },
@@ -1140,6 +1381,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.008843,
+      135.557013
+    ],
+    "_p1448": "走田神社",
+    "_list": "List of Shikinaisha in Tanba Province",
+    "_kokugakuin": "182491",
     "work_file": "Q135040496.wiki",
     "context_line": "en='Hashiritano Shrine' | ja='走田神社' | in Tamba Province / Kuwada district"
   },
@@ -1171,6 +1419,10 @@
     "sitelinks": {
       "commonswiki": "Category:Matsuo Shrine"
     },
+    "_coords": null,
+    "_p1448": "松尾神社",
+    "_list": "List of Shikinaisha in Tanba Province",
+    "_kokugakuin": "182492",
     "work_file": "Q135040497.wiki",
     "context_line": "en='Matsuo Shrine' | ja='松尾神社' | in Tamba Province / Kuwada district | deities: Ōyamakui"
   },
@@ -1200,6 +1452,10 @@
       "commonswiki": "Category:Date Shrines",
       "jawiki": "伊達神社 (亀岡市)"
     },
+    "_coords": null,
+    "_p1448": "伊達神社",
+    "_list": "List of Shikinaisha in Tanba Province",
+    "_kokugakuin": "182493",
     "work_file": "Q135040498.wiki",
     "context_line": "en='Date Shrine' | ja='伊達神社' | in Tamba Province / Kuwada district"
   },
@@ -1225,6 +1481,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.641732,
+      135.073663
+    ],
+    "_p1448": "矢田神社",
+    "_list": "List of Shikinaisha in Tango Province",
+    "_kokugakuin": "182588",
     "work_file": "Q135040580.wiki",
     "context_line": "en='Yatano Shrine' | ja='矢田神社' | in Tango Province / Naka district"
   },
@@ -1250,6 +1513,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.366578,
+      134.707867
+    ],
+    "_p1448": "男坂神社",
+    "_list": "List of Shikinaisha in Tajima Province",
+    "_kokugakuin": "182632",
     "work_file": "Q135040619.wiki",
     "context_line": "en='Wosakano Shrine' | ja='男坂神社' | in Tajima Province / Yabu district"
   },
@@ -1275,6 +1545,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.349042,
+      134.84604
+    ],
+    "_p1448": "手谷神社",
+    "_list": "List of Shikinaisha in Tajima Province",
+    "_kokugakuin": "182635",
     "work_file": "Q135040622.wiki",
     "context_line": "en='Tetanino Shrine' | ja='手谷神社' | in Tajima Province / Yabu district"
   },
@@ -1300,6 +1577,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.482182,
+      134.792951
+    ],
+    "_p1448": "御井神社",
+    "_list": "List of Shikinaisha in Tajima Province",
+    "_kokugakuin": "182675",
     "work_file": "Q135040660.wiki",
     "context_line": "en='Miwino Shrine' | ja='御井神社' | in Tajima Province / Keta district"
   },
@@ -1327,6 +1611,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.3991905,
+      132.7156544
+    ],
+    "_p1448": null,
+    "_list": "List of Shikinaisha in Izumo Province, Asukino Shrine",
+    "_kokugakuin": null,
     "work_file": "Q135040970.wiki",
     "context_line": "en='Amewakahikono Shrine' | ja='天若日子神社' | in Izumo Province / Izumo district"
   },
@@ -1352,6 +1643,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "伊佐賀神社",
+    "_list": "List of Shikinaisha in Izumo Province",
+    "_kokugakuin": "182902",
     "work_file": "Q135041052.wiki",
     "context_line": "en='Isakano Shrine' | ja='伊保神社' | in Izumo Province / Izumo district"
   },
@@ -1378,6 +1673,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "宇志比古神社",
+    "_list": "List of Shikinaisha in Awa Province (Tokushima)",
+    "_kokugakuin": "183177",
     "work_file": "Q135041302.wiki",
     "context_line": "en='Ushihiko Shrine' | ja='宇志比古神社' | in Awa Province / Itano district"
   },
@@ -1404,6 +1703,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "天石門別豊玉比売神社",
+    "_list": "List of Shikinaisha in Awa Province (Tokushima)",
+    "_kokugakuin": "183198",
     "work_file": "Q135041351.wiki",
     "context_line": "en='Ama-no-iwato-wake-toyotamahimeno Shrine' | ja='天石門別豊玉比売神社' | in Awa Province / Nakata district"
   },
@@ -1430,6 +1733,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "布勢神社",
+    "_list": "List of Shikinaisha in Sanuki Province",
+    "_kokugakuin": "183222",
     "work_file": "Q135041383.wiki",
     "context_line": "en='Fuseno Shrine' | ja='布勢神社' | in Sanuki Province / Samukawa district"
   },
@@ -1453,6 +1760,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": null,
+    "_list": null,
+    "_kokugakuin": null,
     "work_file": "Q135041467.wiki",
     "context_line": "en='Sekiryuu Shrine' | ja='堰留神社' | in Tosa Province"
   },
@@ -1477,6 +1788,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": "和多都美神社",
+    "_list": "List of Shikinaisha in Tsushima",
+    "_kokugakuin": null,
     "work_file": "Q135041552.wiki",
     "context_line": "en='Watatsumino Shrine' | ja='和多都美神社' | in Tsushima / Shimoagata district"
   },
@@ -1496,6 +1811,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.971111111111114,
+      136.1825
+    ],
+    "_p1448": null,
+    "_list": null,
+    "_kokugakuin": null,
     "work_file": "Q135187198.wiki",
     "context_line": "en='Shinmei Shrine' | ja='神明社'"
   },
@@ -1521,6 +1843,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      36.612669,
+      137.94906
+    ],
+    "_p1448": "小川神社",
+    "_list": "List of Shikinaisha in Shinano Province",
+    "_kokugakuin": "181991",
     "work_file": "Q135194225.wiki",
     "context_line": "en='Ogawa Shrine' | ja='小川神社（小川村大字小根山）' | in Shinano Province / Minochi district"
   },
@@ -1547,6 +1876,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.957841,
+      136.055652
+    ],
+    "_p1448": "織田神社",
+    "_list": "List of Shikinaisha in Echizen Province, Tsurugi Shrine",
+    "_kokugakuin": "182214",
     "work_file": "Q135194517.wiki",
     "context_line": "en='Oda Shrine (within Tsurugi Shrine grounds)' | ja='剱神社境内末社織田神社' | in Echizen Province / Tsuruga district"
   },
@@ -1572,6 +1908,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      35.918728,
+      136.237193
+    ],
+    "_p1448": "岡本神社",
+    "_list": "List of Shikinaisha in Echizen Province",
+    "_kokugakuin": "182239",
     "work_file": "Q135194637.wiki",
     "context_line": "en='Okafuto Shrine' | ja='岡太神社' | in Echizen Province / Imadate district"
   },
@@ -1597,6 +1940,13 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": [
+      36.583251,
+      137.392602
+    ],
+    "_p1448": "布勢神社",
+    "_list": "List of Shikinaisha in Etchū Province",
+    "_kokugakuin": "182417",
     "work_file": "Q135195021.wiki",
     "context_line": "en='Oyama Shrine' | ja='雄山神社（合祀）' | in Etchū Province / Niikawa district"
   },
@@ -1615,6 +1965,10 @@
     "P571_founded": [],
     "P576_dissolved": [],
     "sitelinks": {},
+    "_coords": null,
+    "_p1448": null,
+    "_list": null,
+    "_kokugakuin": null,
     "work_file": "Q135413481.wiki",
     "context_line": "en='Shinden Shrine' | ja='神殿神社'"
   }

@@ -100,7 +100,11 @@ def _values(entity, prop):
         if snak.get("snaktype") != "value":
             continue
         v = snak["datavalue"]["value"]
-        out.append(v.get("id") if isinstance(v, dict) and "id" in v else v)
+        if isinstance(v, dict):
+            # entity ref -> id; monolingual text (P1448) -> text; anything else stays raw
+            out.append(v.get("id") or v.get("text") or v)
+        else:
+            out.append(v)
     return out
 
 
@@ -123,7 +127,23 @@ def summarise(qid, entity, label_cache):
         "P576_dissolved": [v.get("time") if isinstance(v, dict) else v
                            for v in _values(entity, "P576")],
         "sitelinks": {k: v["title"] for k, v in entity.get("sitelinks", {}).items()},
+        # The four fields the review page needs to answer "what is this, and where".
+        # Coordinates matter most: half of these carry real ones, so "where" has a concrete
+        # answer for them rather than only an ancient district name.
+        "_coords": _coords(entity),
+        "_p1448": (_values(entity, "P1448") or [None])[0] if _values(entity, "P1448") else None,
+        "_list": ", ".join(lbl(q) for q in _values(entity, "P361")) or None,
+        "_kokugakuin": (_values(entity, "P13677") or [None])[0],
     }
+
+
+def _coords(entity):
+    for claim in entity.get("claims", {}).get("P625", []):
+        snak = claim["mainsnak"]
+        if snak.get("snaktype") == "value":
+            v = snak["datavalue"]["value"]
+            return [v["latitude"], v["longitude"]]
+    return None
 
 
 def main(argv=None):
@@ -148,7 +168,7 @@ def main(argv=None):
     # deities rather than as Q-numbers. Same batching, same pacing.
     refs = set()
     for e in ents.values():
-        for prop in ("P31", "P131", "P17", "P825"):
+        for prop in ("P31", "P131", "P17", "P825", "P361"):
             refs.update(v for v in _values(e, prop) if isinstance(v, str) and v.startswith("Q"))
     refs -= set(qids)
     labels = {}
