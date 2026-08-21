@@ -431,8 +431,26 @@ not a stall.
     MODERN municipality, and these items' `P131` is ancient (Ōmi Province, Azai district), so that
     example cannot be produced from their data. Their already-described siblings use the register
     position — `Ronsha 2 of Itateno Shrine`, `The 1115th Shrine of the Engishiki Jinmyōchō (Ronsha)`
-    — 11 of 13. But none of the 63 carries the `P1352` ranking that form is built from. **Nothing
-    is written until she answers.**
+    — 11 of 13.
+  - ⚠️ **CORRECTED 2026-08-21, and Emma caught it.** I wrote that none of the 63 carries the
+    ranking the register form is built from, and named `P1352`. Both halves were wrong. Her
+    question was simply *"what do you mean no standard number?"*
+    - The number is the **`P958` qualifier on `P13677`** (the Kokugakuin section), not `P1352`.
+      Q135186223's description *"(Ronsha 1)"* is built from `P958: "1"`.
+    - **56 of 63 do carry `P958`** — so "none of them" was false. But **52 of those are `n/a`**,
+      and only **4** hold a real number (two `1`, two `2`). So the *conclusion* stood by accident:
+      `Ronsha N of X` is derivable for 4 items, not 0 and not 56. This is the same fact B10 already
+      recorded — `n/a` and `0` distinguish nothing.
+    - **The genuinely useful part I had missed: 58 of 63 carry `P1545`**, the ordinal in the
+      Jinmyōchō list (Q135194637 is #52). That is what the sibling form *"The 1115th Shrine of the
+      Engishiki Jinmyōchō (Ronsha)"* is built from — so **that** register description IS derivable
+      for 58 of 63.
+  - **Emma's read of the batch, 2026-08-21, after opening the items:** *"is just a random ronsha and
+    nothing is wrong with it"* · *"Are we just discussing indonesian descriptions? Nothing serious?"*
+    Correct on both. Nothing here is a defect; it is cosmetic metadata work on ordinary register
+    items, surfaced under an Indonesian-label collision that is not real for 51 of them.
+    **Not to be re-raised at her.** Whoever picks this up decides between the P1545 register form
+    (58 derivable) and leaving them undescribed, and does it without another round of questions.
 - ✅ **The same question asked of the LABEL pipelines 2026-08-05 — and the answer is clean.**
   `L<lang>` SETS a label exactly the way `Den` sets a description, so the ~12,150 staged label
   lines were audited rather than reasoned about. **No label pipeline overwrites hand-written
