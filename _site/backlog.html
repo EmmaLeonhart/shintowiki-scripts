@@ -118,17 +118,17 @@ li { margin: 0.25rem 0; }
   <a class="feature-card" href="backlog-ill-missing-wikidata.html">
     <h3>3. ILLs without WD= / "Unknown" targets</h3>
     <p>Interlanguage-link templates whose Wikidata target is unset or literally "Unknown". The <code>unresolved_ill_qid</code> orchestrator op tags these pages as it sweeps mainspace, so the list grows over successive cleanup cycles. Fill via fix_ill_destinations.py per context — don't blind-overwrite.</p>
-    <p class="timestamp"><strong>0</strong> detected</p>
+    <p class="timestamp"><strong>1328</strong> detected</p>
   </a>
   <a class="feature-card" href="backlog-duplicate-qid-tail.html">
     <h3>4. Duplicate QID disambiguation pages (tail)</h3>
     <p>Q-named category pages sharing a QID across 2+ categories. The ~621 historical figure long drained; resolve_double_category_qids.py auto-handles same-target cases. What remains is the genuinely-different-target review tail.</p>
-    <p class="timestamp"><strong>0</strong> detected</p>
+    <p class="timestamp"><strong>8</strong> detected</p>
   </a>
   <a class="feature-card" href="backlog-japanese-category-names.html">
     <h3>5. Japanese-language category names → English</h3>
     <p>THE real remaining backlog: category pages whose titles are in Japanese script, to be translated/transliterated to canonical English titles. A mix of dated maintenance cats and content cats. See the scripting-plans doc.</p>
-    <p class="timestamp"><strong>0</strong> detected</p>
+    <p class="timestamp"><strong>1204</strong> detected</p>
   </a>
   <a class="feature-card" href="backlog-multiple-wikidata-links.html">
     <h3>6. Multiple {{wikidata link}} on one page</h3>
@@ -138,17 +138,17 @@ li { margin: 0.25rem 0; }
   <a class="feature-card" href="backlog-duplicated-content-need-translation.html">
     <h3>7. Duplicated content + remaining need-translation pages</h3>
     <p>Whole-body duplication to merge, plus pages still tagged for translation. Mostly worked by the cloud-queue routine; manual review only for the hard cases (canonical-title choice, history merge, the large kokuzō articles).</p>
-    <p class="timestamp"><strong>0</strong> detected</p>
+    <p class="timestamp"><strong>453</strong> detected</p>
   </a>
   <a class="feature-card" href="backlog-recreate-deleted-wikidata.html">
     <h3>8. Recreate deleted Wikidata items</h3>
     <p>ILL-target Wikidata items that another editor deleted. To be recreated via the QuickStatements pipeline (respecting the freeze to 2026-06-06) with a minimum claim set that won't be re-deleted.</p>
-    <p class="timestamp"><strong>0</strong> detected</p>
+    <p class="timestamp"><strong>6</strong> detected</p>
   </a>
 </div>
 
 <footer>
-  Generated 2026-07-27 10:52 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
+  Generated 2026-08-21 08:02 UTC by <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a> pipeline.
   Bot account: <a href="https://shinto.miraheze.org/wiki/User:EmmaBot">User:EmmaBot</a>.
 </footer>
 </body>
