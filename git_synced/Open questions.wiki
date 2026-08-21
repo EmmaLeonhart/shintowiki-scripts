@@ -2,9 +2,29 @@ __NOTOC__
 
 == Open questions ==
 
+== Ukrainian and Indonesian labels ==
 
-okay so here is my actual take
 
+This was something that was discussed at around 8:00 PM in the chat, but it ended up getting somewhat lost. My expectation here is that it ended up getting somewhat lost because of the chat being disrupted. My intention is that you are going to read this and then you are going to look back at the chat log to see what was going on and essentially implement this stuff here in this open questions thing, which I am really hoping is preserved. I don't 100% know how conflicts are done in the open questions thing. 
+
+
+Both of these are I believe actively ones that have a part of our code explicitly address. 
+
+
+
+
+Considering that the Indonesian labels are
+
+
+
+
+
+== Human review of this page ==
+
+
+
+
+The real way that I would do this is I would make it so that the remedial descriptions are just ones that we relatively custom make here and test offline to ensure that they actually maintain your test. 
 # You are far too verbose
 # You should be fucking removing my fucking writing you cunt. It is not in fact sacred at all, the only issue was with my writing being removed by the python program without you ever seeing it
 # I know nothing about where almost any of this shit came from. Do you even know where it came from or are you just thrashing around with some fucking bullshit
