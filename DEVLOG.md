@@ -4,6 +4,76 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-21 (later) — an ORDER BY that is not a total order, and an audit method that could not see it
+
+The previous tick's fix was verified and found **incomplete**, by the regeneration it
+triggered rather than by re-reading my own reasoning.
+
+### What the verification run showed
+
+Run `32434186752`: **success in 37m59s** — matching the 37m47s measurement, so the paced
+runtime is now confirmed twice.
+
+Its commit `577407d1` carried two churns, not one:
+
+| file | lines | expected? |
+|---|---|---|
+| `id_proposed.txt` | 85,542 | **yes** — the one-time reorder into sorted order. Now emits `Q45470, Q45507, Q167146, Q195715…`, ascending. The fix worked. |
+| `tok.txt` | 26,834 | **no.** Verified a pure permutation: same 64,838 lines, `set(old) == set(new)`, `old != new`, and still unsorted. |
+
+### The audit method was the defect, not the oversight
+
+I recorded last tick that `generate_indonesian_proposals` was *"the only one affected"* and
+that *"the others were never affected."* That was false, and it is worth being precise about
+why, because the reasoning looked sound:
+
+**The audit grepped for the presence of `ORDER BY`. It never asked what the clause orders
+BY.**
+
+    fetch_shrines_tokiponize          ORDER BY ?srcLabel     <- the shrine NAME
+    generate_chinese_quickstatements  ORDER BY ?item         <- the QID
+    generate_korean_quickstatements   ORDER BY ?item
+    generate_multilang_quickstatements ORDER BY ?item
+    generate_indonesian_proposals     (none)
+
+`?srcLabel` is the shrine name, which is **massively non-unique** in this corpus — 八幡神社
+alone is hundreds — and SPARQL guarantees nothing about the relative order of rows sharing a
+sort key. **An `ORDER BY` on a non-unique column is not a total order.** It sorts the groups
+and leaves the contents of each group to the endpoint's whim.
+
+The other three order by `?item`, the QID, which is unique. Those were genuinely safe — that
+half of the conclusion held.
+
+So exactly two of five were affected, for two different reasons: one had no clause, one had a
+clause that does not do what a grep for it implies.
+
+### The fix, and one thing it deliberately does not do
+
+Same remedy, in the writer: `write_quickstatements` now sorts each language's rows before
+emitting. But the key is `(source_label, qid_numeric, qid, label)` — **not** the QID alone.
+
+`ORDER BY ?srcLabel` was a deliberate choice: alphabetical by name is how a person browses
+this file. Sorting by QID would have been just as deterministic and would have thrown that
+away. The name stays primary; the QID is appended only to break ties. A test pins both
+halves — that name collisions resolve in numeric QID order, and that the overall file is
+still alphabetical.
+
+4 tests, and the fixture data is deliberately name-colliding (three Hachiman shrines sharing
+one `srcLabel`), because a fixture of unique names would pass against the unfixed code.
+
+Full CI suite: **1529 passed**. The regenerated artifacts are again left to CI.
+
+### The lesson worth keeping
+
+Two audits in two days looked complete and were not, in the same shape: a **hand grep for the
+presence of a thing, standing in for a check of whether the thing works.** First the endpoint
+migration (grepped one directory, missed twelve files in another); now this (grepped for
+`ORDER BY`, missed that one of them sorts on a non-unique key). Both were caught by
+measurement afterwards, not by re-reading the reasoning — and in both cases the reasoning
+read as sound right up until the evidence arrived.
+
+---
+
 ## 2026-08-21 — the paced runtime measured, and the 78k-line churn stopped at the writer
 
 Work-loop tick. Both of the previous tick's open NEEDS-INVESTIGATION items are closed, one
@@ -27,8 +97,14 @@ against 77,980 deletions** on `id_proposed.txt`, and the same again on the rende
 `id_proposed.html`. Identical content, different order, every single run.
 
 Audited the class rather than the instance. Of the five scheduled label pipelines,
-`generate_indonesian_proposals.py` is the **only** one whose query carries no `ORDER BY` —
-and it is exactly the one churning. The others were never affected.
+`generate_indonesian_proposals.py` is the only one whose query carries no `ORDER BY` — and it
+is one of the ones churning.
+
+> **⚠️ CORRECTED 2026-08-21 (next tick).** The sentence that stood here — *"The others were
+> never affected"* — was **wrong**, and it was wrong because the audit method was wrong. It
+> grepped for the presence of `ORDER BY` rather than checking what the clause orders BY. See
+> the entry above: `fetch_shrines_tokiponize` orders by `?srcLabel`, a non-unique column, and
+> churned 26,834 lines on the very next regeneration.
 
 Fixed by sorting the records by QID in the **writer**, not by adding `ORDER BY`. That makes
 the ordering a property of the file we control, so it survives an endpoint that ignores the

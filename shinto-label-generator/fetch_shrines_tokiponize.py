@@ -174,6 +174,28 @@ def write_quickstatements(rows, outdir="quickstatements"):
 
     written = {}
     for lang, lang_rows in sorted(by_lang.items()):
+        # Total order, and the tie-break is the whole point.
+        #
+        # The query says `ORDER BY ?srcLabel`, which looks like it already settles this and
+        # is why a grep-for-ORDER-BY audit cleared this file on 2026-08-20. It does not:
+        # ?srcLabel is the shrine NAME, which is massively non-unique here (八幡神社 alone is
+        # hundreds), and SPARQL guarantees nothing about the relative order of rows sharing a
+        # sort key. So every run returned a different permutation within each name group, and
+        # tok.txt committed 26,834 lines of pure reordering per regeneration -- verified as a
+        # permutation: same line count, `set(old) == set(new)`, `old != new`.
+        #
+        # Sorting by srcLabel FIRST preserves what the query was reaching for -- alphabetical
+        # by name, which is how a human browses this file -- and appends the QID only to break
+        # ties, so the result is deterministic without discarding the intended order.
+        #
+        # Sorted here rather than in the query so the guarantee is a property of the writer.
+        # It cannot be done by sorting the FILE: each statement is preceded by its own
+        # `# Source:` comment line, and a line sort separates the two.
+        lang_rows = sorted(lang_rows, key=lambda r: (
+            r.get("source_label", ""),
+            int(r["qid"][1:]) if r["qid"][1:].isdigit() else 0,
+            r["qid"],
+            r.get("toki_pona_label", "")))
         filepath = os.path.join(outdir, f"{lang}.txt")
         with open(filepath, "w", encoding="utf-8", newline="\n") as f:
             for row in lang_rows:
