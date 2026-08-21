@@ -17,8 +17,19 @@ Method (data-driven, never invented):
     when ≥ PREF_SUPPORT existing descriptions contain the item's own
     prefecture label — i.e. we reuse the community's own standard form.
   * a target item (desc@X, no label@X) gets the prefecture form when its
-    prefecture label@X is known, else the generic modal; items whose
-    description already equals the target form are skipped (self-draining).
+    prefecture label@X is known, else the generic modal.
+  * if the description ALREADY equals the target form, the description edit is
+    unneeded but the LABEL is not — the item still has no label, which is why it
+    is a target. Such items emit a LABEL-ONLY line.
+
+    ⚠ Fixed 2026-08-21. That branch used to `continue`, dropping the label with
+    the unneeded description edit, and it had silently stranded every Indonesian
+    target: Emma's own 2025 bot pass had already standardized those descriptions
+    to "kuil Shinto di Prefektur {pref}, Jepang", so `new == desc` held for all
+    5,024 of them and they were counted "already-standard" and skipped on every
+    run since. Ukrainian was never standardized, which is why uk produced 3,513
+    pairs and id produced nothing. The report now separates `no-template`,
+    `already-standard` and `label-only` so this cannot hide in one counter again.
 
 Each output unit is the full PAIR Emma specified — "change description, then
 add label" — as ONE compound line (sub-lines joined by "||", executed
@@ -28,7 +39,10 @@ proposal files (id_proposed.txt, uk.txt, …); items with no proposed label
 get a desc-only line, and the label pipelines pick them up later.
 
 Output: description_label_pairs.txt — `Qxxx|Dxx|"…"||Qxxx|Lxx|"…"` compound
-lines (capped ~100/day in direct_daily_edits via FILE_DAILY_CAPS).
+lines, plus bare `Qxxx|Lxx|"…"` label-only lines where the description is
+already correct (capped ~100/day in direct_daily_edits via FILE_DAILY_CAPS).
+Every label, in either shape, goes through the same (label, description)
+uniqueness check — a label-only line forms a pair the moment it lands.
 """
 import io
 import json
@@ -233,13 +247,33 @@ def main():
             time.sleep(1)
             taken = existing_pairs(cls, extra, lang)
             units = []   # (qid, desc_line, label_or_None, new_desc)
-            fixed = skipped = 0
+            fixed = skipped = already_standard = label_only = 0
             for qid, (desc, has_label, pref) in sorted(items.items()):
                 if has_label:
                     continue
                 new = (pref_t.replace("{pref}", pref) if (pref_t and pref) else gen)
-                if not new or new == desc:
+                if not new:
                     skipped += 1
+                    continue
+                if new == desc:
+                    # The description is ALREADY the standardized form -- but the item
+                    # still has no label, which is the entire reason it is a target here.
+                    #
+                    # This branch used to `continue`, which dropped the LABEL along with
+                    # the unneeded description edit. Found 2026-08-21: it had silently
+                    # stranded every Indonesian target. Emma's own 2025 bot pass had
+                    # already standardized those descriptions to "kuil Shinto di Prefektur
+                    # {pref}, Jepang" -- so `new == desc` for all 5,024 of them, and they
+                    # were counted as "already-standard" and skipped on every run since.
+                    # Ukrainian was never standardized, which is why uk got its 3,513
+                    # pairs and id got nothing at all.
+                    #
+                    # A desc-only "fix" is what is unneeded; the label is not. Emit a
+                    # LABEL-ONLY unit, and let it through the identical uniqueness check
+                    # below -- once the label lands it forms a (label, description) pair
+                    # like any other, so it must be checked like any other.
+                    already_standard += 1
+                    units.append((qid, None, proposals.get((qid, lang)), desc))
                     continue
                 esc = new.replace('"', '""')
                 units.append((qid, f'{qid}|D{lang}|"{esc}"',
@@ -259,13 +293,23 @@ def main():
                                            "proposed": new, "items": by_pair[pair],
                                            "external": pair in taken})
                         label = None
+                parts = []
+                if desc_line:
+                    parts.append(desc_line)
                 if label:
                     lesc = label.replace('"', '""')
-                    unit += f'||{qid}|L{lang}|"{lesc}"'
-                lines.append(unit)
+                    parts.append(f'{qid}|L{lang}|"{lesc}"')
+                if not parts:
+                    # Description already standard AND the label withheld as colliding:
+                    # genuinely nothing to do for this item on this pass.
+                    continue
+                lines.append("||".join(parts))
                 fixed += 1
+                if not desc_line:
+                    label_only += 1
             report.append(f"{cls} {lang}: targets={counts[lang]} fix-lines={fixed} "
-                          f"already-standard={skipped} label-withheld={withheld} "
+                          f"(label-only={label_only}) no-template={skipped} "
+                          f"already-standard={already_standard} label-withheld={withheld} "
                           f"pref_template={bool(pref_t)}")
     lines = sorted(set(lines))
     with open(GROUPS, "w", encoding="utf-8", newline="\n") as f:

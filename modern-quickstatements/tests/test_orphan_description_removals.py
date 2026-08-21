@@ -106,8 +106,22 @@ def test_file_is_sorted_so_regeneration_does_not_churn():
     assert lines == sorted(lines, key=key)
 
 
-def test_registered_as_an_atomic_file():
-    """An unregistered file is staged work that never reaches Wikidata -- the exact silent
-    orphaning the ATOMIC_FILES superset comment already warns about."""
+def test_deliberately_NOT_registered_as_an_atomic_file():
+    """The removal path must never run alongside the pair pipeline.
+
+    Registered on 2026-08-21 and unregistered the same day. `generate_description_fixes.py`
+    already solves this exact problem from Emma's 2026-07-07 spec -- same ~10k items, "almost
+    all id + uk", same reasoning -- by fixing the description to the standardized form and
+    adding the label as ONE compound unit. 3,511 items appeared in both files: one setting a
+    description, the other clearing it, both dripping randomly.
+
+    Both routes end with the label present, which is the thing that matters; the pair also
+    leaves a correct description and costs fewer edits. So the pair wins, and the real defect
+    was never a missing removal path -- it was a `continue` in the fixer that dropped the
+    label whenever the description happened to be correct already.
+
+    The audit tool stays: it measured the 10,250 orphans independently and can regenerate the
+    removal lines in one command if Emma ever wants the literal removal instead."""
     src = io.open(os.path.join(HERE, "direct_daily_edits.py"), encoding="utf-8").read()
-    assert '"orphan_description_removals.txt"' in src
+    assert '"orphan_description_removals.txt"' not in src, (
+        "re-registering this would fight description_label_pairs.txt on 3,511 items")
