@@ -1,0 +1,1621 @@
+[
+  {
+    "qid": "Q97013988",
+    "en_label": "Kaizan Shrine",
+    "ja_label": "開山神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine"
+    ],
+    "P131_in": [],
+    "P17_country": [
+      "Taiwan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [
+      "+1897-00-00T00:00:00Z"
+    ],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q11150615.wiki",
+    "context_line": "en='Kaizan Shrine' | ja='開山神社'"
+  },
+  {
+    "qid": "Q134893137",
+    "en_label": "Kunihashiramikoto Shrine",
+    "ja_label": "國柱命神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine",
+      "Shikinaisha",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Izu Province",
+      "Naka district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "jawiki": "國柱命神社"
+    },
+    "work_file": "Q134893137.wiki",
+    "context_line": "en='Kunihashiramikoto Shrine' | ja='國柱命神社' | in Izu Province / Naka district"
+  },
+  {
+    "qid": "Q135038836",
+    "en_label": "Naratsuhiko Shrine",
+    "ja_label": "奈良豆比古神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Shrine receiving Hoe and Quiver"
+    ],
+    "P131_in": [
+      "Yamato Province",
+      "Soekami district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "commonswiki": "Category:Naratsuhiko Shrine"
+    },
+    "work_file": "Q135038836.wiki",
+    "context_line": "en='Naratsuhiko Shrine' | ja='奈良豆比古神社' | in Yamato Province / Soekami district"
+  },
+  {
+    "qid": "Q135038947",
+    "en_label": "Honoikatsuchino Shrine",
+    "ja_label": "穂雷神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kanpei-sha"
+    ],
+    "P131_in": [
+      "Yamato Province",
+      "Hirose district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135038947.wiki",
+    "context_line": "en='Honoikatsuchino Shrine' | ja='穂雷神社' | in Yamato Province / Hirose district"
+  },
+  {
+    "qid": "Q135039118",
+    "en_label": "Wakayamatohimeno- Shrine",
+    "ja_label": "若倭姫命神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Shrine receiving Hoe offering"
+    ],
+    "P131_in": [
+      "Kawachi Province",
+      "Ōgata district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039118.wiki",
+    "context_line": "en='Wakayamatohimeno- Shrine' | ja='若倭姫命神社' | in Kawachi Province / Ōgata district"
+  },
+  {
+    "qid": "Q135039193",
+    "en_label": "Hatano Shrine",
+    "ja_label": "波太神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kanpei-sha"
+    ],
+    "P131_in": [
+      "Izumi Province",
+      "Hine district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039193.wiki",
+    "context_line": "en='Hatano Shrine' | ja='波太神社' | in Izumi Province / Hine district"
+  },
+  {
+    "qid": "Q135039216",
+    "en_label": "Mishimakamono Shrine",
+    "ja_label": "三島鴨神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kanpei-sha"
+    ],
+    "P131_in": [
+      "Settsu Province",
+      "Shimashimo district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "commonswiki": "Category:Mishimakamono Shrine"
+    },
+    "work_file": "Q135039216.wiki",
+    "context_line": "en='Mishimakamono Shrine' | ja='三島鴨神社' | in Settsu Province / Shimashimo district"
+  },
+  {
+    "qid": "Q135039250",
+    "en_label": "Hichino Shrine",
+    "ja_label": "（参）神戸神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Shikinai Successor",
+      "gōshi",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Iga Province",
+      "Iga district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039250.wiki",
+    "context_line": "en='Hichino Shrine' | ja='（参）神戸神社' | in Iga Province / Iga district"
+  },
+  {
+    "qid": "Q135039352",
+    "en_label": "Hisatsuchino Shrine",
+    "ja_label": "比佐豆知神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ise Province",
+      "Anki district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039352.wiki",
+    "context_line": "en='Hisatsuchino Shrine' | ja='比佐豆知神社' | in Ise Province / Anki district"
+  },
+  {
+    "qid": "Q135039376",
+    "en_label": "Kishino Shrine",
+    "ja_label": "貴志神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ise Province",
+      "Kawawa district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039376.wiki",
+    "context_line": "en='Kishino Shrine' | ja='貴志神社' | in Ise Province / Kawawa district"
+  },
+  {
+    "qid": "Q135039396",
+    "en_label": "Kamusakino Shrine",
+    "ja_label": "神前神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ise Province",
+      "Mie district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039396.wiki",
+    "context_line": "en='Kamusakino Shrine' | ja='神前神社' | in Ise Province / Mie district"
+  },
+  {
+    "qid": "Q135039431",
+    "en_label": "Haseno Shrine",
+    "ja_label": "長谷神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Disputed Shikinaisha or Shikigeisha"
+    ],
+    "P131_in": [
+      "Ise Province",
+      "Asake district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039431.wiki",
+    "context_line": "en='Haseno Shrine' | ja='長谷神社' | in Ise Province / Asake district"
+  },
+  {
+    "qid": "Q135039440",
+    "en_label": "Kamono Shrine",
+    "ja_label": "賀毛神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ise Province",
+      "Inabe district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039440.wiki",
+    "context_line": "en='Kamono Shrine' | ja='賀毛神社' | in Ise Province / Inabe district"
+  },
+  {
+    "qid": "Q135039508",
+    "en_label": "Takumino Shrine",
+    "ja_label": "託美神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine"
+    ],
+    "P131_in": [
+      "Owari Province",
+      "Niwa district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039508.wiki",
+    "context_line": "en='Takumino Shrine' | ja='託美神社' | in Owari Province / Niwa district"
+  },
+  {
+    "qid": "Q135039827",
+    "en_label": "Katayamano Shrine",
+    "ja_label": "片山神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Azai district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039520.wiki",
+    "context_line": "en='Katayamano Shrine' | ja='片山神社' | in Ōmi Province / Azai district"
+  },
+  {
+    "qid": "Q135039702",
+    "en_label": "Homino Shrine",
+    "ja_label": "穂見神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Kai Province"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "commonswiki": "Category:Homino Shrine"
+    },
+    "work_file": "Q135039702.wiki",
+    "context_line": "en='Homino Shrine' | ja='穂見神社' | in Kai Province"
+  },
+  {
+    "qid": "Q135039704",
+    "en_label": "Sakuno Shrine",
+    "ja_label": "佐久神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Kai Province",
+      "Yatsushiro district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039704.wiki",
+    "context_line": "en='Sakuno Shrine' | ja='佐久神社' | in Kai Province / Yatsushiro district"
+  },
+  {
+    "qid": "Q135039794",
+    "en_label": "Takanono Shrine",
+    "ja_label": "高野神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Kurita district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039794.wiki",
+    "context_line": "en='Takanono Shrine' | ja='高野神社' | in Ōmi Province / Kurita district"
+  },
+  {
+    "qid": "Q135039812",
+    "en_label": "Isoheno Shrine",
+    "ja_label": "石部神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Echi district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039812.wiki",
+    "context_line": "en='Isoheno Shrine' | ja='石部神社' | in Ōmi Province / Echi district"
+  },
+  {
+    "qid": "Q135039818",
+    "en_label": "Yamatano Shrine",
+    "ja_label": "山田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Sakata district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039818.wiki",
+    "context_line": "en='Yamatano Shrine' | ja='山田神社' | in Ōmi Province / Sakata district"
+  },
+  {
+    "qid": "Q135039874",
+    "en_label": "Kumano Shrine",
+    "ja_label": "熊野神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Kumano shrine"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Takashima district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [
+      "Kumano Gongen"
+    ],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039874.wiki",
+    "context_line": "en='Kumano Shrine' | ja='熊野神社' | in Ōmi Province / Takashima district | deities: Kumano Gongen"
+  },
+  {
+    "qid": "Q135039876",
+    "en_label": "Wonono Shrine",
+    "ja_label": "小野神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Disputed Shikinaisha or Shikigeisha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Takashima district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039876.wiki",
+    "context_line": "en='Wonono Shrine' | ja='小野神社' | in Ōmi Province / Takashima district"
+  },
+  {
+    "qid": "Q135039877",
+    "en_label": "Hie Shrine",
+    "ja_label": "日枝神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "gōshi",
+      "Kokuhei-sha",
+      "Disputed Shikinaisha or Shikigeisha",
+      "Sannō shrine"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Takashima district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [
+      "Ōyamakui"
+    ],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039877.wiki",
+    "context_line": "en='Hie Shrine' | ja='日枝神社' | in Ōmi Province / Takashima district | deities: Ōyamakui"
+  },
+  {
+    "qid": "Q135039879",
+    "en_label": "Ohotano Shrine",
+    "ja_label": "大田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Disputed Shikinaisha or Shikigeisha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Takashima district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039879.wiki",
+    "context_line": "en='Ohotano Shrine' | ja='大田神社' | in Ōmi Province / Takashima district"
+  },
+  {
+    "qid": "Q135039884",
+    "en_label": "Sakamoto Shrine",
+    "ja_label": "坂本神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Takashima district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039884.wiki",
+    "context_line": "en='Sakamoto Shrine' | ja='坂本神社' | in Ōmi Province / Takashima district"
+  },
+  {
+    "qid": "Q135039888",
+    "en_label": "Ohomitsuwakeno Shrine",
+    "ja_label": "日枝神社・大水別神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Disputed Shikinaisha or Shikigeisha"
+    ],
+    "P131_in": [
+      "Ōmi Province",
+      "Takashima district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039888.wiki",
+    "context_line": "en='Ohomitsuwakeno Shrine' | ja='日枝神社・大水別神社' | in Ōmi Province / Takashima district"
+  },
+  {
+    "qid": "Q135039929",
+    "en_label": "Moritano Shrine",
+    "ja_label": "守田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Shinano Province",
+      "Minochi district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135039929.wiki",
+    "context_line": "en='Moritano Shrine' | ja='守田神社' | in Shinano Province / Minochi district"
+  },
+  {
+    "qid": "Q135039963",
+    "en_label": "Ikahono Shrine",
+    "ja_label": "伊加保神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Kōzuke Province",
+      "Gunma district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "commonswiki": "Category:Ikahono Shrine"
+    },
+    "work_file": "Q135039963.wiki",
+    "context_line": "en='Ikahono Shrine' | ja='伊加保神社' | in Kōzuke Province / Gunma district"
+  },
+  {
+    "qid": "Q135039974",
+    "en_label": "Arakashi Shrine",
+    "ja_label": "荒樫神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Shimotsuke Province",
+      "Haga district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "commonswiki": "Category:Arakashi Shrine"
+    },
+    "work_file": "Q135039974.wiki",
+    "context_line": "en='Arakashi Shrine' | ja='荒樫神社' | in Shimotsuke Province / Haga district"
+  },
+  {
+    "qid": "Q135040000",
+    "en_label": "Kashima Shrine",
+    "ja_label": "鹿島神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Kashima Shrine (worship)"
+    ],
+    "P131_in": [
+      "Mutsu Province",
+      "Iwaki district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [
+      "Takemikazuchi"
+    ],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040000.wiki",
+    "context_line": "en='Kashima Shrine' | ja='鹿島神社' | in Mutsu Province / Iwaki district | deities: Takemikazuchi"
+  },
+  {
+    "qid": "Q135040024",
+    "en_label": "Wotono Shrine",
+    "ja_label": "雄鋭神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Disputed Shikinaisha or Shikigeisha"
+    ],
+    "P131_in": [
+      "Mutsu Province",
+      "Kurihara district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040024.wiki",
+    "context_line": "en='Wotono Shrine' | ja='雄鋭神社' | in Mutsu Province / Kurihara district"
+  },
+  {
+    "qid": "Q135040087",
+    "en_label": "Hiyoshi Shrine",
+    "ja_label": "日吉神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Sannō shrine"
+    ],
+    "P131_in": [
+      "Wakasa Province",
+      "Mikata district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [
+      "Ōyamakui"
+    ],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040087.wiki",
+    "context_line": "en='Hiyoshi Shrine' | ja='日吉神社' | in Wakasa Province / Mikata district | deities: Ōyamakui"
+  },
+  {
+    "qid": "Q135040105",
+    "en_label": "Tayuhino Shrine",
+    "ja_label": "田結神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Tsuruga district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040105.wiki",
+    "context_line": "en='Tayuhino Shrine' | ja='田結神社' | in Echizen Province / Tsuruga district"
+  },
+  {
+    "qid": "Q135040128",
+    "en_label": "Kahiruno Shrine",
+    "ja_label": "鹿蒜神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Tsuruga district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040128.wiki",
+    "context_line": "en='Kahiruno Shrine' | ja='鹿蒜神社' | in Echizen Province / Tsuruga district"
+  },
+  {
+    "qid": "Q135040137",
+    "en_label": "Oritano Shrine",
+    "ja_label": "織田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "massha",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Tsuruga district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040137.wiki",
+    "context_line": "en='Oritano Shrine' | ja='織田神社' | in Echizen Province / Tsuruga district"
+  },
+  {
+    "qid": "Q135040138",
+    "en_label": "Ihatano Shrine",
+    "ja_label": "（参）石田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Shikinai Successor",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Tsuruga district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040138.wiki",
+    "context_line": "en='Ihatano Shrine' | ja='（参）石田神社' | in Echizen Province / Tsuruga district"
+  },
+  {
+    "qid": "Q135040203",
+    "en_label": "Shihisakino Shrine",
+    "ja_label": "推前神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Asuwa district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040203.wiki",
+    "context_line": "en='Shihisakino Shrine' | ja='推前神社' | in Echizen Province / Asuwa district"
+  },
+  {
+    "qid": "Q135040249",
+    "en_label": "Yokoyamano Shrine",
+    "ja_label": "横山神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Sakai district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040249.wiki",
+    "context_line": "en='Yokoyamano Shrine' | ja='横山神社' | in Echizen Province / Sakai district"
+  },
+  {
+    "qid": "Q135040290",
+    "en_label": "Miwa Shrine",
+    "ja_label": "三輪神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Miwa shrines"
+    ],
+    "P131_in": [
+      "Kaga Province",
+      "Kahoku district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [
+      "Ōmononushi"
+    ],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040290.wiki",
+    "context_line": "en='Miwa Shrine' | ja='三輪神社' | in Kaga Province / Kahoku district | deities: Ōmononushi"
+  },
+  {
+    "qid": "Q135040340",
+    "en_label": "Nakawokano Shrine",
+    "ja_label": "長岡神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Disputed Shikinaisha or Shikigeisha"
+    ],
+    "P131_in": [
+      "Etchū Province",
+      "Tonami district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040340.wiki",
+    "context_line": "en='Nakawokano Shrine' | ja='長岡神社' | in Etchū Province / Tonami district"
+  },
+  {
+    "qid": "Q135040394",
+    "en_label": "Hiokino Shrine",
+    "ja_label": "日置神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Etchū Province",
+      "Niikawa district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040394.wiki",
+    "context_line": "en='Hiokino Shrine' | ja='日置神社' | in Etchū Province / Niikawa district"
+  },
+  {
+    "qid": "Q135040406",
+    "en_label": "Usaka Shrine",
+    "ja_label": "鵜坂神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "kokushi genzaisha",
+      "Shinto shrine"
+    ],
+    "P131_in": [
+      "Etchū Province"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040405.wiki",
+    "context_line": "en='Usaka Shrine' | ja='鵜坂神社' | in Etchū Province"
+  },
+  {
+    "qid": "Q135040484",
+    "en_label": "Mononoheno Shrine",
+    "ja_label": "物部神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Sado Province",
+      "Sawata district",
+      "Sado"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040484.wiki",
+    "context_line": "en='Mononoheno Shrine' | ja='物部神社' | in Sado Province / Sawata district"
+  },
+  {
+    "qid": "Q135040496",
+    "en_label": "Hashiritano Shrine",
+    "ja_label": "走田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Tamba Province",
+      "Kuwada district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040496.wiki",
+    "context_line": "en='Hashiritano Shrine' | ja='走田神社' | in Tamba Province / Kuwada district"
+  },
+  {
+    "qid": "Q135040497",
+    "en_label": "Matsuo Shrine",
+    "ja_label": "松尾神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Matsuo shrine"
+    ],
+    "P131_in": [
+      "Tamba Province",
+      "Kuwada district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [
+      "Ōyamakui"
+    ],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "commonswiki": "Category:Matsuo Shrine"
+    },
+    "work_file": "Q135040497.wiki",
+    "context_line": "en='Matsuo Shrine' | ja='松尾神社' | in Tamba Province / Kuwada district | deities: Ōyamakui"
+  },
+  {
+    "qid": "Q135040498",
+    "en_label": "Date Shrine",
+    "ja_label": "伊達神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Tamba Province",
+      "Kuwada district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {
+      "commonswiki": "Category:Date Shrines",
+      "jawiki": "伊達神社 (亀岡市)"
+    },
+    "work_file": "Q135040498.wiki",
+    "context_line": "en='Date Shrine' | ja='伊達神社' | in Tamba Province / Kuwada district"
+  },
+  {
+    "qid": "Q135040580",
+    "en_label": "Yatano Shrine",
+    "ja_label": "矢田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Tango Province",
+      "Naka district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040580.wiki",
+    "context_line": "en='Yatano Shrine' | ja='矢田神社' | in Tango Province / Naka district"
+  },
+  {
+    "qid": "Q135040619",
+    "en_label": "Wosakano Shrine",
+    "ja_label": "男坂神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Tajima Province",
+      "Yabu district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040619.wiki",
+    "context_line": "en='Wosakano Shrine' | ja='男坂神社' | in Tajima Province / Yabu district"
+  },
+  {
+    "qid": "Q135040622",
+    "en_label": "Tetanino Shrine",
+    "ja_label": "手谷神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Tajima Province",
+      "Yabu district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040622.wiki",
+    "context_line": "en='Tetanino Shrine' | ja='手谷神社' | in Tajima Province / Yabu district"
+  },
+  {
+    "qid": "Q135040660",
+    "en_label": "Miwino Shrine",
+    "ja_label": "御井神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Tajima Province",
+      "Keta district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040660.wiki",
+    "context_line": "en='Miwino Shrine' | ja='御井神社' | in Tajima Province / Keta district"
+  },
+  {
+    "qid": "Q135040970",
+    "en_label": "Amewakahikono Shrine",
+    "ja_label": "天若日子神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "gōshi",
+      "keigai-sessha",
+      "Shikinai Subshrine"
+    ],
+    "P131_in": [
+      "Izumo Province",
+      "Izumo district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135040970.wiki",
+    "context_line": "en='Amewakahikono Shrine' | ja='天若日子神社' | in Izumo Province / Izumo district"
+  },
+  {
+    "qid": "Q135041052",
+    "en_label": "Isakano Shrine",
+    "ja_label": "伊保神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Izumo Province",
+      "Izumo district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135041052.wiki",
+    "context_line": "en='Isakano Shrine' | ja='伊保神社' | in Izumo Province / Izumo district"
+  },
+  {
+    "qid": "Q135041302",
+    "en_label": "Ushihiko Shrine",
+    "ja_label": "宇志比古神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Awa Province",
+      "Itano district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135041302.wiki",
+    "context_line": "en='Ushihiko Shrine' | ja='宇志比古神社' | in Awa Province / Itano district"
+  },
+  {
+    "qid": "Q135041351",
+    "en_label": "Ama-no-iwato-wake-toyotamahimeno Shrine",
+    "ja_label": "天石門別豊玉比売神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Awa Province",
+      "Nakata district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135041351.wiki",
+    "context_line": "en='Ama-no-iwato-wake-toyotamahimeno Shrine' | ja='天石門別豊玉比売神社' | in Awa Province / Nakata district"
+  },
+  {
+    "qid": "Q135041383",
+    "en_label": "Fuseno Shrine",
+    "ja_label": "布勢神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Disputed Shikinaisha or Shikigeisha",
+      "Shikinaisha",
+      "Shinto shrine",
+      "Kokuhei-sha"
+    ],
+    "P131_in": [
+      "Sanuki Province",
+      "Samukawa district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135041383.wiki",
+    "context_line": "en='Fuseno Shrine' | ja='布勢神社' | in Sanuki Province / Samukawa district"
+  },
+  {
+    "qid": "Q135041468",
+    "en_label": "Sekiryuu Shrine",
+    "ja_label": "堰留神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "kokushi genzaisha",
+      "Shinto shrine"
+    ],
+    "P131_in": [
+      "Tosa Province"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135041467.wiki",
+    "context_line": "en='Sekiryuu Shrine' | ja='堰留神社' | in Tosa Province"
+  },
+  {
+    "qid": "Q135041552",
+    "en_label": "Watatsumino Shrine",
+    "ja_label": "和多都美神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shikinaisha",
+      "Shinto shrine"
+    ],
+    "P131_in": [
+      "Tsushima",
+      "Shimoagata district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135041552.wiki",
+    "context_line": "en='Watatsumino Shrine' | ja='和多都美神社' | in Tsushima / Shimoagata district"
+  },
+  {
+    "qid": "Q135404675",
+    "en_label": "Shinmei Shrine",
+    "ja_label": "神明社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine",
+      "Shikinai Supershrine"
+    ],
+    "P131_in": [],
+    "P17_country": [],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135187198.wiki",
+    "context_line": "en='Shinmei Shrine' | ja='神明社'"
+  },
+  {
+    "qid": "Q135194225",
+    "en_label": "Ogawa Shrine",
+    "ja_label": "小川神社（小川村大字小根山）",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Shikinaisha"
+    ],
+    "P131_in": [
+      "Shinano Province",
+      "Minochi district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135194225.wiki",
+    "context_line": "en='Ogawa Shrine' | ja='小川神社（小川村大字小根山）' | in Shinano Province / Minochi district"
+  },
+  {
+    "qid": "Q135194517",
+    "en_label": "Oda Shrine (within Tsurugi Shrine grounds)",
+    "ja_label": "剱神社境内末社織田神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine",
+      "massha",
+      "Kokuhei-sha",
+      "Shikinaisha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Tsuruga district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135194517.wiki",
+    "context_line": "en='Oda Shrine (within Tsurugi Shrine grounds)' | ja='剱神社境内末社織田神社' | in Echizen Province / Tsuruga district"
+  },
+  {
+    "qid": "Q135194637",
+    "en_label": "Okafuto Shrine",
+    "ja_label": "岡太神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Shikinaisha"
+    ],
+    "P131_in": [
+      "Echizen Province",
+      "Imadate district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135194637.wiki",
+    "context_line": "en='Okafuto Shrine' | ja='岡太神社' | in Echizen Province / Imadate district"
+  },
+  {
+    "qid": "Q135195021",
+    "en_label": "Oyama Shrine",
+    "ja_label": "雄山神社（合祀）",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine",
+      "Kokuhei-sha",
+      "Shikinaisha"
+    ],
+    "P131_in": [
+      "Etchū Province",
+      "Niikawa district"
+    ],
+    "P17_country": [
+      "Japan"
+    ],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135195021.wiki",
+    "context_line": "en='Oyama Shrine' | ja='雄山神社（合祀）' | in Etchū Province / Niikawa district"
+  },
+  {
+    "qid": "Q135503340",
+    "en_label": "Shinden Shrine",
+    "ja_label": "神殿神社",
+    "en_desc": null,
+    "other_desc": {},
+    "P31_class": [
+      "Shinto shrine"
+    ],
+    "P131_in": [],
+    "P17_country": [],
+    "P825_deity": [],
+    "P571_founded": [],
+    "P576_dissolved": [],
+    "sitelinks": {},
+    "work_file": "Q135413481.wiki",
+    "context_line": "en='Shinden Shrine' | ja='神殿神社'"
+  }
+]
