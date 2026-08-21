@@ -129,6 +129,26 @@ def main():
         except Exception as e:
             print(f"Error processing {qid}: {e}")
 
+    # Deterministic order, keyed on the QID.
+    #
+    # Without this the output order is the SPARQL row order, and this is the one label
+    # generator whose query carries NO `ORDER BY` -- so WDQS returns an arbitrary
+    # permutation each run and every CI regeneration commits the whole file as changed.
+    # Measured 2026-08-20: 77,980 insertions against 77,980 deletions, identical content,
+    # `set(old) == set(new)` and `old != new`, on id_proposed.txt AND its rendered
+    # id_proposed.html.
+    #
+    # That churn is not just noise -- it is camouflage. When a regeneration diff is always
+    # six figures, nobody reads it, and the two days these pipelines were dead the diff
+    # dropped to a one-line date stamp, which read as "nothing needed regenerating".
+    #
+    # Sorted here rather than in the query on purpose: this makes the ordering a property
+    # of the writer, so it survives an endpoint that ignores ORDER BY and a future edit to
+    # the query. Sorting the FILE afterwards would not work -- each statement is preceded
+    # by its own `# Source:` comment line, and a line sort divorces the two.
+    proposals.sort(key=lambda p: (int(p["qid"][1:]) if p["qid"][1:].isdigit() else 0,
+                                  p["qid"]))
+
     # Write CSV
     with open("proposed_indonesian_labels.csv", "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["qid", "ja_label", "en_label", "romaji", "type", "proposed_label"])

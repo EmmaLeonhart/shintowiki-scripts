@@ -4,6 +4,63 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-21 — the paced runtime measured, and the 78k-line churn stopped at the writer
+
+Work-loop tick. Both of the previous tick's open NEEDS-INVESTIGATION items are closed, one
+by measurement and one by a fix.
+
+### The paced label-generator run fits, with 22 minutes to spare
+
+Run `32420854143` **completed success in 37m47s**, all five pipelines green, against a
+`timeout-minutes: 60`. That settles the question raised when the fix went in.
+
+Worth stating why the old number was not the right baseline: the historical **12m24s** was
+measured *before* the 08-18 pacing commit, and `wd_pace` had never actually executed until
+this run, because the scripts died on import first. So the honest comparison is not
+"12m → 38m, something is wrong" but "the pacing has now run for the first time, and this is
+what it costs."
+
+### The churn was real, recurring, and is fixed at the writer
+
+The pull at the top of this tick carried a fresh CI regeneration: **77,980 insertions
+against 77,980 deletions** on `id_proposed.txt`, and the same again on the rendered
+`id_proposed.html`. Identical content, different order, every single run.
+
+Audited the class rather than the instance. Of the five scheduled label pipelines,
+`generate_indonesian_proposals.py` is the **only** one whose query carries no `ORDER BY` —
+and it is exactly the one churning. The others were never affected.
+
+Fixed by sorting the records by QID in the **writer**, not by adding `ORDER BY`. That makes
+the ordering a property of the file we control, so it survives an endpoint that ignores the
+clause and any future edit to the query.
+
+⚠️ And it could not have been done as a file-level sort, which was my first instinct a tick
+ago and was wrong: each statement is preceded by its own `# Source:` comment line, so a line
+sort divorces every comment from its statement. `test_every_statement_keeps_its_own_source_comment`
+pins that.
+
+Proved rather than assumed — the generator was run three times over three different input
+orders and the output was byte-identical, sorted **numerically** so Q999 precedes Q1000.
+4 tests. The real `quickstatements/` output was restored afterwards; CI owns those files and
+will commit the one-time reorder itself.
+
+One test wrote itself into a corner and is worth remembering: `test_the_query_still_has_no_order_by`
+grepped the whole source, which matched the sort's own rationale comment explaining *why*
+there is no `ORDER BY`. A test that fails on its own documentation. It now filters comment
+lines.
+
+### Queue hygiene
+
+`A1b` is **deleted**, not annotated — 59 lines. The section was entirely finished work: the
+ordering bug fixed, the nondeterminism fixed, and the `continue-on-error` decision moved to
+`scheduled/scheduled_items.json` for 2026-09-21. This is the convention the previous status
+report flagged as being honoured in the breach (*"DELETE items when done, never annotate
+'DONE'"*); the rest of the accumulated ✅ prose in §A is still there and is a live cleanup.
+
+Full CI suite: **1525 passed**.
+
+---
+
 ## 2026-08-20 (later) — a green CI hiding five dead pipelines, and deferral stops meaning "parked"
 
 ### Five scheduled pipelines had been dead for two days behind a passing workflow
