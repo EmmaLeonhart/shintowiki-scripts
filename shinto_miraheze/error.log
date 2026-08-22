@@ -498,3 +498,4 @@ Traceback (most recent call last):
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://shinto.miraheze.org/w/api.php?meta=siteinfo%7Cuserinfo%7Cuserinfo&siprop=general%7Cnamespaces&uiprop=groups%7Crights%7Cblockinfo%7Chasmsg&continue=&action=query&format=json
 
+[2026-08-22 03:40:17 UTC] [ERROR] generate_p11250_quickstatements: SPARQL query failed: Expecting value: line 27955 column 17 (char 687372)
