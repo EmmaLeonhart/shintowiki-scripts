@@ -91,8 +91,8 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
   skipped **355 already staged or answered**, so the guard against re-queueing an answered item holds.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
   builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. 355 done,
-  60 pending → **~2,200 still unqueued**. Keep rebuilding in tranches with
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **415 done,
+  0 pending → ~2,200 still unqueued.** Keep rebuilding in tranches with
   `build_name_in_kana_queue.py --limit N`, answer locally in batches
   (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
   delivers ~5/day, so local batches are the road.
