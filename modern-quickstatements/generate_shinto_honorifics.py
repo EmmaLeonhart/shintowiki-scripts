@@ -83,6 +83,13 @@ if _root not in sys.path:
 # marked `pragma: no cover`. That is a silent fail-OPEN in a system whose whole design is
 # fail-closed: any import hiccup would quietly put the wrong domain on Wikidata
 # requests, untested and invisible. An unimportable agent must stop the run instead.
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")

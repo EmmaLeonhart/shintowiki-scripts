@@ -11,6 +11,13 @@ State file: geojson_orchestrator.state.
 
 import argparse
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 from shinto_miraheze.orchestrators import common
 from shinto_miraheze.orchestrators.ops import (
     canonicalize_template_case,

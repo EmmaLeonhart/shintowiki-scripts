@@ -191,15 +191,23 @@ jobs:
             fi
           fi
 
+  # `secrets: inherit` is load-bearing on BOTH of these, not decoration. A called
+  # workflow gets NONE of the caller's secrets unless it is passed them, so
+  # `${{ secrets.MIRAHEZE_EMAIL }}` in the callee's own `env:` block resolves to
+  # the empty string — and since 2026-08-18 the UA builder refuses to construct a
+  # User-Agent with no contact address. These were the only two of the ~20 calls
+  # in this file missing the line; both died on every run from 2026-08-19.
   generate-quickstatements:
     needs: window-gate
     uses: ./.github/workflows/generate-quickstatements.yml
+    secrets: inherit
 
   # Build pages right after SPARQL generation (runs in parallel with cleanup)
   generate-pages:
     needs: [window-gate, generate-quickstatements]
     if: always()
     uses: ./.github/workflows/generate-pages.yml
+    secrets: inherit
 
   # cleanup depends on BOTH sync jobs (git-synced-sync, fandom-sync) so
   # the wiki begins each cycle in the repo's desired state BEFORE any
@@ -479,6 +487,7 @@ jobs:
     needs: [window-gate, generate-quickstatements]
     if: github.event_name == 'schedule'
     uses: ./.github/workflows/random-wait.yml
+    secrets: inherit
 
   # Wikidata-editing block — MOVED TO THE FRONT of the pipeline (2026-07-23, Emma:
   # "I want the direct daily edits to be the first part of the pipeline, not the
@@ -509,6 +518,7 @@ jobs:
     needs: [window-gate, submit-quickstatements]
     if: always()
     uses: ./.github/workflows/build-run-history.yml
+    secrets: inherit
 
   # Fallback: if QS submission failed, apply edits directly via Wikidata API.
   # Random 1-5 min intervals (~5h for ~50 edits), no rush. Still the QS-executing

@@ -34,6 +34,13 @@ from lineage.build_p612_quickstatements import (  # noqa: E402
 import urllib.parse                              # noqa: E402
 import urllib.request                            # noqa: E402
 import time                                      # noqa: E402
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E402
 
 # build_p612_quickstatements already wraps stdout as utf-8 on import; wrapping

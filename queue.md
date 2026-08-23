@@ -59,6 +59,25 @@ external thing.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
+## A-CI. ▶ Confirm the cleanup-loop is green again, and that Sunday regenerates the pairs file
+
+The daily loop failed **every run 2026-08-19 → 2026-08-22** — `secrets: inherit` missing on two
+reusable-workflow calls, plus 69 files importing `shinto_miraheze.*` with no sys.path bootstrap.
+Both fixed 2026-08-22 (DEVLOG); two structural tests now pin them. Two things still to check, and
+neither is done by reading the diff:
+
+- ▶ **The next scheduled `cleanup-loop` run (≈03:10 UTC) should have zero failed jobs.**
+  `gh run list --workflow=cleanup-loop.yml --limit 1` then `gh run view <id> --json jobs`. Four
+  jobs were red — `generate-quickstatements`, `generate-pages`, `cleanup`,
+  `untransclude-crud-templates` — and `submit-quickstatements` was **skipped** because its
+  dependency had failed, so a green `submit` step is the real signal, not a green top line.
+- ▶ **`description_label_pairs.txt` must regenerate on a SUNDAY run.** It is a `date -u +%u = 7`
+  step inside `generate-quickstatements.yml`, so it has not run since **2026-08-02**. The file
+  still holds **5 `Did` lines against 3,514 `Duk`** — the exact shape the 08-21 label-only fix
+  addresses. After the first surviving Sunday run, `Did` should be in the thousands. If it is
+  not, the fix did not take and the branch to re-read is the `new == desc` arm.
+  ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
+
 ## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
 
 **Status.** Builder `shinto_miraheze/build_name_in_kana_queue.py` + collector

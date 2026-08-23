@@ -58,6 +58,13 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
     _root = os.path.dirname(_root)
 if _root not in sys.path:
     sys.path.insert(0, _root)
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E402
 from shinto_miraheze.wikidata_edit_allowed import editing_allowed as wikidata_editing_allowed  # noqa: E402
 

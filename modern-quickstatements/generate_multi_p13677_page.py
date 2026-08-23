@@ -32,6 +32,13 @@ REPO_ROOT = os.path.dirname(HERE)
 REVIEW = os.path.join(HERE, "p958_manual_review.txt")
 OUT = os.path.join(REPO_ROOT, "_site", "kokugakuin-multi-p13677.html")
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 from shinto_miraheze.ua_for import ua_for
 
 WD_API = "https://www.wikidata.org/w/api.php"

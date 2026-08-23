@@ -35,6 +35,13 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 from shinto_miraheze.wd_pace import wd_pace
 
 _here = os.path.dirname(os.path.abspath(__file__))

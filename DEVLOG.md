@@ -4,6 +4,130 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-22 — four days of red CI nobody was reading, and a gate that crashed into the right answer
+
+The daily `cleanup-loop` has failed on **every run since 2026-08-19** — four consecutive
+days, four red jobs per run. I found it by asking why `description_label_pairs.txt` had
+not been regenerated since 2026-08-02, not by looking at CI.
+
+### Two defects, one cause: the 2026-08-18/19 User-Agent standardisation
+
+Both were introduced by the work that made the UA contact addresses repo secrets
+(`b3dc4b79`, `a50d8d31`) and rolled the shared UA modules across ~58 files (`8ac7d8a2`).
+Neither is visible from reading any single file.
+
+**1. `secrets: inherit` missing on two of ~20 reusable-workflow calls.**
+
+GitHub gives a called workflow **none** of the caller's secrets unless it is passed them.
+The callee's own `env: MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}` then resolves to the
+empty string — no warning, no error at the call. Since 2026-08-18 the UA builder refuses to
+build a User-Agent with no contact address, so from the next run onward every generator in
+`generate-quickstatements` and `generate-pages` died on
+
+    RuntimeError: MIRAHEZE_EMAIL is not set.
+
+`submit-quickstatements` was skipped every day because its dependency had failed. The two
+offending calls were the only two in `cleanup-loop.yml` without the line; a sweep found two
+more latent (`random-wait`, `build-run-history`). All four fixed.
+
+**2. 69 files import `shinto_miraheze.*` with no sys.path bootstrap.**
+
+`python3 shinto_miraheze/foo.py` puts the **script's** directory on `sys.path[0]` — never the
+repo root, never the cwd. So a package-absolute import from a file that is not itself at the
+repo root cannot resolve. `8ac7d8a2` added `from shinto_miraheze.user_agent import USER_AGENT`
+to these files and the repo-root bootstrap to 152 others, but not to these.
+
+17 of the 69 are invoked as a script path by a workflow and had been dying daily:
+`untransclude_crud_templates`, `delete_unused_redirects`, `add_wikidata_crud_categories`,
+`remove_wikidata_crud_categories`, `delete_lowercase_template_collisions`,
+`resolve_deleted_qid_ills_202607`, `create_items`, `generate_description_adds`, and more. The
+other 52 are local tools — including the name-in-kana and description batch tools A0/A1 point
+the next session at, which would have crashed on the first command.
+
+### The one worth stating separately: the Wikidata lockout gate was crashing
+
+`wikidata_edit_allowed.py` is read by four workflows as `exit 1 = LOCKED`. Crashing on import
+is also exit 1. So for four days the gate was not evaluating anything and was returning
+**the same answer as the real lockout it was supposed to be reporting** — correct by
+coincidence, since the lockout genuinely holds to 2026-09-18. Had the lockout been open, the
+crash would have kept Wikidata editing off with no trace of why. It fails closed, which is the
+safe direction, and that is exactly what made it silent.
+
+### What the existing test could not see, twice
+
+`tests/test_sys_path_bootstrap_ordering.py` was written four days ago for the *ordering* half
+of this same defect. It contained:
+
+    if boot is None:
+        continue                     # relies on being importable another way
+
+A file with the import and no bootstrap at all was waved through. For 69 files that comment
+was not true. The exemption is removed: carry the bootstrap, or sit in a directory that
+contains the package — only the repo root does.
+
+Removing it surfaced a second weakness in the same test: `IMPORT` was a line regex, so the
+usage examples in three modules' **docstrings** —
+
+    from shinto_miraheze.wikidata_edit_allowed import editing_allowed
+
+— read as imports occurring before the bootstrap. That test now parses with `ast` and counts
+only real import nodes.
+
+### Committed
+
+- `secrets: inherit` on four calls in `cleanup-loop.yml`, with the reason in a comment.
+- The canonical bootstrap in 69 files; `shinto_miraheze/tests/test_update_shikinaisha_lists.py`
+  converted from its own equivalent hand-rolled version so there is one form in the tree.
+- `tests/test_reusable_workflow_secrets.py` — new, pins that a callee reading `secrets.*` is
+  passed them.
+- `tests/test_sys_path_bootstrap_ordering.py` — exemption removed, ast-based, scope widened to
+  the test directories it had been skipping.
+
+Both new assertions were checked against the real defect by reintroducing it and watching them
+fail, then restoring. Full suite **1539 passed**.
+
+**Nothing delivered to Wikidata.** The lockout holds to 2026-09-18, and now the gate that says
+so is actually running.
+
+---
+
+## 2026-08-21 (later, second) — a second description pipeline for a problem that already had one
+
+Not written at the time (`96e3cb6b` landed without a devlog entry); recorded here.
+
+`generate_description_fixes.py` has handled the orphan-description problem since Emma's
+2026-07-07 spec — same ~10k items, same id + uk skew, same reasoning that the
+label-and-description pair is the unique key. Its remedy is a compound unit: set the
+description to the standardised form, then add the label, capped at 100/day. I did not look
+for it before building `orphan_description_removals.txt`, and registered the second pipeline
+alongside the first. **3,511 items appeared in both files** — one setting a description, the
+other clearing it, both dripping in random order. Unregistered, staged file deleted, a test
+inverted to pin that it stays unregistered.
+
+**The real bug was four lines away from the thing I built:**
+
+    new = pref_template or generic
+    if not new or new == desc:
+        skipped += 1
+        continue          # <- dropped the LABEL too
+
+An item whose description was already the standardised form was skipped entirely, label
+included — even though having no label is the only reason it is a target. Emma's own 2025 bot
+pass had standardised every Indonesian description to `kuil Shinto di Prefektur {pref},
+Jepang`, so `new == desc` held for all **5,024** of them, every weekly run since. Ukrainian was
+never standardised, which is exactly why uk produced 3,513 pairs and id produced zero.
+
+Fixed: that case now emits a **label-only** line through the identical uniqueness check, and
+the report separates no-template / already-standard / label-only so it cannot hide in one
+counter again.
+
+⏳ **The output file has NOT been regenerated yet** — `description_label_pairs.txt` still dates
+from 2026-08-02 and still holds 5 `Did` lines against 3,514 `Duk`. The weekly regeneration is a
+Sunday step inside `generate-quickstatements.yml`, which is the workflow the entry above
+records as broken since 08-19. It regenerates on the first Sunday run that survives.
+
+---
+
 ## 2026-08-21 (later) — an ORDER BY that is not a total order, and an audit method that could not see it
 
 The previous tick's fix was verified and found **incomplete**, by the regeneration it
