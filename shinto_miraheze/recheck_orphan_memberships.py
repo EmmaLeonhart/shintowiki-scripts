@@ -117,11 +117,91 @@ def rendered(title, cache):
     return text
 
 
+REMOVALS = os.path.join(ROOT, "modern-quickstatements", "list_membership_removals.txt")
+
+
+def staged_removal_pairs():
+    """(item, list) pairs staged in list_membership_removals.txt."""
+    import re
+    pairs = []
+    for line in io.open(REMOVALS, encoding="utf-8"):
+        m = re.match(r"-(Q\d+)\|P361\|(Q\d+)\s*$", line.strip())
+        if m:
+            pairs.append({"item": m.group(1), "list": m.group(2), "ja": None})
+    return pairs
+
+
+def check(pairs, label):
+    """Shared: does each list's REGISTER name the item?"""
+    print(f"{len(pairs)} pairs — {label}")
+    meta = entities(sorted({e["item"] for e in pairs} | {e["list"] for e in pairs}))
+    cache, named, unnamed, unresolved = {}, [], [], []
+    for e in pairs:
+        item, lst = e["item"], e["list"]
+        list_title = meta.get(lst, {}).get("jawiki")
+        if not list_title:
+            unresolved.append((item, lst, "list has no jawiki sitelink"))
+            continue
+        text = rendered(list_title, cache)
+        if not text:
+            unresolved.append((item, lst, "could not fetch/expand the list"))
+            continue
+        needles = [n for n in (meta.get(item, {}).get("jawiki"),
+                               meta.get(item, {}).get("ja"), e.get("ja")) if n]
+        hit = next((n for n in needles if n in text), None)
+        kind = how_named(text, hit) if hit else None
+        (named if hit else unnamed).append(
+            (item, meta.get(item, {}).get("ja") or e.get("ja"), lst, list_title, hit, kind))
+    return named, unnamed, unresolved
+
+
+def how_named(text, needle):
+    """PRIMARY or RONSHA — and the difference decides whether a removal is right.
+
+    Emma's rationale for the removal drip is "Ronshas should not even have list
+    membership", so a shrine appearing in the register as a （論） candidate SHOULD lose
+    its P361. A shrine appearing as the entry's plain modern identification should not.
+    Reporting "the register names it" without splitting these two would be an alarm
+    about nothing for the （論） rows.
+
+    The register rows read `|（論）[[X]]||...` for a candidate and `|[[X]]||...` for the
+    identification, so the marker is what sits immediately before the link.
+    """
+    import re
+    for m in re.finditer(re.escape(needle), text):
+        before = text[max(0, m.start() - 40):m.start()]
+        if "（論）" not in before:
+            return "PRIMARY"
+    return "RONSHA"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="check only the first N pairs")
+    ap.add_argument("--removals", action="store_true",
+                    help="check every pair staged in list_membership_removals.txt "
+                         "instead of the audit's flagged 42")
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
+    if args.removals:
+        pairs = staged_removal_pairs()
+        if args.limit:
+            pairs = pairs[:args.limit]
+        named, unnamed, unresolved = check(pairs, "staged P361 removals")
+        primary = [n for n in named if n[5] == "PRIMARY"]
+        ronsha = [n for n in named if n[5] == "RONSHA"]
+        for item, ja, lst, title, hit, kind in primary[:30]:
+            print(f"PRIMARY  {item} {ja}  in {title}  (matched {hit!r})")
+        print("\n--- summary ---")
+        print(f"names it as the PRIMARY identification : {len(primary)}"
+              "   <- removal would strip a real membership")
+        print(f"names it only as a （論） RONSHA        : {len(ronsha)}"
+              "   <- removal matches the stated intent")
+        print(f"does not name it at all               : {len(unnamed)}"
+              "   <- removal matches the stated intent")
+        print(f"unresolved                            : {len(unresolved)}")
+        return
 
     audit = json.load(open(AUDIT, encoding="utf-8"))
     flagged = [e for e in audit["blank_ordinal_side"] if not e.get("list_says")]

@@ -4,6 +4,69 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (sixth) — 773 staged removals would strip a membership the register names
+
+Following the 41-of-42 correction to its own doorstep. The audit's wrong verdicts came from
+consulting Wikidata's copy of each register instead of the register. The obvious next question
+is whether anything ACTS on that copy. It does.
+
+`modern-quickstatements/list_membership_removals.txt` — 2,236 lines, **registered in
+`direct_daily_edits.ATOMIC_FILES`**, dripping as soon as the Wikidata lockout lifts. Emma
+authorised it on a specific basis (Open questions, 2026-07): *"these are pure removals — no add,
+no ordering risk — so this one can just be registered and dripped safely today"*, stripping false
+Engishiki-list membership from ~2,151 **ronsha**, because *"Ronshas should not even have list
+membership."*
+
+### The rationale does not describe about a third of the file
+
+Every staged pair re-measured against the jawiki register:
+
+| what the register says about the item | pairs |
+|---|---|
+| names it as the entry's **PRIMARY** modern identification | **773** |
+| names it only as a （論） ronsha | 473 |
+| does not name it at all | 990 |
+
+1,463 of 2,236 match the stated intent. 773 do not.
+
+### The guard exists, is well written, and reads the wrong source
+
+`assert_never_touches_a_named_part` refuses to remove a membership "the list NAMES", and its own
+comment shows care — it deliberately does **not** filter on `pq:P1545`, because an ordinal-less
+has-part still names the item, having been burned once by `Q11474068` 岩井温泉 whose ordinal had
+gone missing.
+
+But "names" resolves to the list *item's* `P527` on Wikidata, which is a partial transcription of
+the register. `Q11368560` (Tanba) carries **72 `P527` values and `Q10896675` 出雲大神宮 is not among
+them** — so the guard permits the removal, while the register lists 出雲大神宮 as the plain
+identification for its entry. It is the **丹波国一宮**.
+
+Same root cause as the 41-of-42 verdicts, one layer further in: the transcription is being treated
+as the source.
+
+### And the removals are value-matched
+
+`-Q|P361|Q` removes **every** P361 statement carrying that value, ordinal-bearing ones included. 22
+of the 47 pairs the audit itself classes `distinct_ordinals_LEGITIMATE` — do-not-touch, one shrine
+covering two register entries — are staged here. A removal takes out both memberships.
+
+### What was NOT done, deliberately
+
+The file was **not** regenerated, **not** hand-pruned, and **not** unregistered. Nothing delivers
+before **2026-09-18**, so there is time to fix the cause rather than the symptom, and unregistering
+a pipeline Emma explicitly approved is not a 05:30 decision to take alone.
+
+What is recorded instead: point the guard at the register, and confirm the 773 per item first. The
+PRIMARY/（論） split is a heuristic — `（論）` within 40 characters before the link — and a title match
+could in principle hit a same-named shrine elsewhere in the same province. **The direction is
+measured; the individual rows are not**, and the difference matters before anything acts on them.
+
+`recheck_orphan_memberships.py --removals` re-runs the whole measurement.
+
+**Nothing delivered.** The Wikidata lockout holds to 2026-09-18.
+
+---
+
 ## 2026-08-23 (fifth) — the "42 orphan memberships" were never orphans: 41 of 42 verdicts wrong
 
 `A-OQ` said to work 42 shrines whose register list *"names this item nowhere"*, taken from

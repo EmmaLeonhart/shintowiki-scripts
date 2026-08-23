@@ -2,6 +2,26 @@ __NOTOC__
 
 == Open questions ==
 
+=== 773 of the staged list-membership removals would strip a real membership ===
+
+You approved this drip in July: ''"these are pure removals — no add, no ordering risk — so this one can just be registered and dripped safely today"'', to take the Engishiki-list membership off the ~2,151 '''ronsha''', since ''"Ronshas should not even have list membership"''.
+
+That describes most of the file but not about a third of it. Measured against the registers themselves:
+
+{| class="wikitable"
+! what the register says !! pairs !! removal correct?
+|-
+| names it as the entry's '''primary''' modern shrine || '''773''' || '''no — strips a real membership'''
+|-
+| names it only as a （論） ronsha || 473 || yes
+|-
+| does not name it at all || 990 || yes
+|}
+
+The guard that was supposed to prevent this is real, and it reads the wrong source: it checks the list '''item's''' <code>has part</code> on Wikidata, which is a partial transcription of the register. [[d:Q11368560|Q11368560]] (Tanba) has 72 of them and [[d:Q10896675|Q10896675]] '''出雲大神宮''' is not among them — so the guard allows the removal, while the register lists it as the plain identification for its entry. It is the '''丹波国一宮'''.
+
+: '''→''' Nothing has gone out and nothing can: your Wikidata lockout runs to 2026-09-18. The fix is to point the guard at the register instead of at Wikidata's copy of it, and to confirm the 773 individually first — the primary-vs-（論） split is a heuristic, not a per-item check. Both are in <code>queue.md</code>; re-runnable with <code>shinto_miraheze/recheck_orphan_memberships.py --removals</code>.
+
 === Was the wiki agent standardised? — you asked this 08-19 and never got the answer here ===
 
 Your hypothesis: ''"There might have been some Shinto wiki edits that were not properly done if the user agent was not standard across all of the edits."'' You were right, and it was worse than one script.

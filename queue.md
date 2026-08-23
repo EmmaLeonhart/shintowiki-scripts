@@ -64,6 +64,43 @@ taxonomy above, or goes to her directly.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
+## A-RM. ⚠ 773 staged P361 removals target memberships the REGISTER names — measured 2026-08-23
+
+`modern-quickstatements/list_membership_removals.txt` is **registered in
+`direct_daily_edits.ATOMIC_FILES`** and drips once the Wikidata lockout lifts. Emma authorised it
+(Open questions, 2026-07): *"these are pure removals — no add, no ordering risk — so this one can
+just be registered and dripped safely today"*, to strip false Engishiki-list membership from
+~2,151 **Ronsha**, because *"Ronshas should not even have list membership"*.
+
+**The rationale does not describe about a third of the file.** Re-measured every staged pair against
+the jawiki register itself (`shinto_miraheze/recheck_orphan_memberships.py --removals`):
+
+| what the register says about the item | pairs | is the removal right? |
+|---|---|---|
+| names it as the entry's **PRIMARY** modern identification | **773** | **no — strips a real membership** |
+| names it only as a （論） **ronsha** | 473 | yes, matches the stated intent |
+| does not name it at all | 990 | yes, matches the stated intent |
+
+**The guard is real and it is anchored on the wrong source.** `assert_never_touches_a_named_part`
+refuses to remove a membership "the list NAMES" — but "names" means the list *item's* `P527` on
+Wikidata, which is a partial transcription of the register. `Q11368560` (Tanba) carries 72 `P527`
+values and **`Q10896675` 出雲大神宮 is not one of them**, so the guard permits the removal, while the
+register lists it as the plain identification for its entry — and it is the **丹波国一宮**.
+
+⚠ **`-Q|P361|Q` is value-matched, so it removes EVERY P361 statement with that value** — including
+the ordinal-bearing one. For the 22 `distinct_ordinals_LEGITIMATE` pairs also staged here, that
+takes out both register memberships of a shrine that legitimately covers two entries.
+
+- ▶ **Fix the guard to read the REGISTER, not `P527`.** That is the root cause and it is the same
+  root cause as the audit's 41-of-42 wrong verdicts. Do not "fix" it by hand-pruning the file.
+- ▶ **The 773 need per-item confirmation before anything acts on them.** The PRIMARY/（論） split is a
+  heuristic — `（論）` within 40 characters before the link — and a title match could in principle
+  hit a same-named shrine elsewhere in the province. The direction is measured; the individual rows
+  are not.
+- **BLOCKED-ON-EXTERNAL for consequences only:** nothing delivers before the lockout lifts
+  **2026-09-18**, which is a real external date already on record, not a target. There is time to do
+  this properly; there is not time to leave it unrecorded.
+
 ## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
 
 Emma, on the page, about exactly this shape: *"OH MY GOD IS THIS DONE OR NOT YOU CUNT"*. Neither of
