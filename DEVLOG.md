@@ -4,6 +4,76 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (eighth) — RETRACTION: both list-membership findings were wrong, one premise
+
+Emma, on the 773 finding: *"Bruh look over the chatlogs pretty sure this is intended behaviour."*
+It is. Two findings from today are retracted, and they share a single mistaken premise.
+
+### What I claimed
+
+1. *"41 of the 42 'orphan membership' verdicts are wrong — the register names these shrines."*
+2. *"773 of 2,236 staged P361 removals would strip a real membership, and the guard reads a partial
+   transcription."*
+
+### The premise, and why it is false
+
+Both rest on: **the register names this shrine, therefore the shrine belongs to the list.** In this
+data model it does not. Found in the chatlogs, in her own 2026-07-09 decision on `[[Open questions]]`,
+which had already settled it:
+
+> *"Does a pure candidate keep any `P361`? Reading A (what the script does now): no — **list
+> membership belongs to the entry item**, so the candidate loses it."*
+
+Worked through the exact item I used as my headline counter-example:
+
+| item | what it is | how it relates |
+|---|---|---|
+| `Q135040491` 出雲神社 | the Engishiki **entry** | `P361 → Q11368560`, `P1545: 1`, `P155`, `P156` — the membership |
+| `Q10896675` 出雲大神宮 | the **modern shrine** | `P460 →` the entry, plus **two bare `P361`** — the import damage |
+
+So stripping 出雲大神宮's `P361` is exactly what the drip is for. Being an entry's modern
+identification is expressed as `P460` from the shrine to the entry, never as `P361` into the list.
+Checked five more of the "41" — `Q11366320`, `Q112923996`, `Q111776816`, `Q11396254`, `Q17225931` —
+all five are modern shrines with `P460` to a `Q135…` entry item and a bare-plus-ordinal `P361` pair.
+The pattern is uniform.
+
+### The specific thing I got backwards
+
+I wrote that `P527` on the list item is "a partial transcription of the register" and that the guard
+`assert_never_touches_a_named_part` therefore reads the wrong source. **`P527` is the right source.**
+Its members are the entry items; a modern shrine is correctly absent from it. The guard was doing its
+job and I called it broken.
+
+Also wrong: I described the 2,151 as though they had been selected by a test of what the register
+says. They were selected **as ronsha**, so they are ronsha by construction.
+
+### Why I did not catch it
+
+I checked the register — the source of truth about the 927 register — and never checked the *item*.
+One `wbgetentities` call on `Q10896675` would have shown `P460` pointing at an entry item and ended
+it in a minute. I went to an external source to test a claim about internal data modelling.
+
+Worth noting what did not save me: both findings were measured carefully, at scale, reproducibly, and
+written up with caveats about heuristics. None of that touches a wrong premise. The 41-of-42 number
+was correct as an answer to "does the register name this shrine"; that was simply not the question.
+
+### What changed
+
+- `A-RM` deleted from `queue.md`; the 42-orphan finding replaced by this retraction.
+- Both sections removed from `[[Open questions]]` — leaving a wrong claim on her page is worse than
+  the original error.
+- `recheck_orphan_memberships.py` **deleted**. It answered a question that is not the question, and
+  keeping it invites the same inference again.
+- The rule is now in `CLAUDE.md`, with the check that settles it: **before calling any `P361` removal
+  wrong, look for `P460` on the item.**
+
+The 08-19 finding it grew out of stands: the ordinal-39 statement on `Q135040786` is a real
+observation about two **entry** items, not about a modern shrine, and is unaffected.
+
+**Nothing delivered, and nothing was going to be** — the drip was correct throughout.
+
+---
+
 ## 2026-08-23 (seventh) — the kana guesser was a coin flip, so it is gone and the guess moved paths
 
 Emma decided kana-from-jawiki via AskUserQuestion: the full build, guessing included. She was

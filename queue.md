@@ -98,43 +98,6 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
   delivers ~5/day, so local batches are the road.
   ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
 
-## A-RM. ⚠ 773 staged P361 removals target memberships the REGISTER names — measured 2026-08-23
-
-`modern-quickstatements/list_membership_removals.txt` is **registered in
-`direct_daily_edits.ATOMIC_FILES`** and drips once the Wikidata lockout lifts. Emma authorised it
-(Open questions, 2026-07): *"these are pure removals — no add, no ordering risk — so this one can
-just be registered and dripped safely today"*, to strip false Engishiki-list membership from
-~2,151 **Ronsha**, because *"Ronshas should not even have list membership"*.
-
-**The rationale does not describe about a third of the file.** Re-measured every staged pair against
-the jawiki register itself (`shinto_miraheze/recheck_orphan_memberships.py --removals`):
-
-| what the register says about the item | pairs | is the removal right? |
-|---|---|---|
-| names it as the entry's **PRIMARY** modern identification | **773** | **no — strips a real membership** |
-| names it only as a （論） **ronsha** | 473 | yes, matches the stated intent |
-| does not name it at all | 990 | yes, matches the stated intent |
-
-**The guard is real and it is anchored on the wrong source.** `assert_never_touches_a_named_part`
-refuses to remove a membership "the list NAMES" — but "names" means the list *item's* `P527` on
-Wikidata, which is a partial transcription of the register. `Q11368560` (Tanba) carries 72 `P527`
-values and **`Q10896675` 出雲大神宮 is not one of them**, so the guard permits the removal, while the
-register lists it as the plain identification for its entry — and it is the **丹波国一宮**.
-
-⚠ **`-Q|P361|Q` is value-matched, so it removes EVERY P361 statement with that value** — including
-the ordinal-bearing one. For the 22 `distinct_ordinals_LEGITIMATE` pairs also staged here, that
-takes out both register memberships of a shrine that legitimately covers two entries.
-
-- ▶ **Fix the guard to read the REGISTER, not `P527`.** That is the root cause and it is the same
-  root cause as the audit's 41-of-42 wrong verdicts. Do not "fix" it by hand-pruning the file.
-- ▶ **The 773 need per-item confirmation before anything acts on them.** The PRIMARY/（論） split is a
-  heuristic — `（論）` within 40 characters before the link — and a title match could in principle
-  hit a same-named shrine elsewhere in the province. The direction is measured; the individual rows
-  are not.
-- **BLOCKED-ON-EXTERNAL for consequences only:** nothing delivers before the lockout lifts
-  **2026-09-18**, which is a real external date already on record, not a target. There is time to do
-  this properly; there is not time to leave it unrecorded.
-
 ## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
 
 Emma, on the page, about exactly this shape: *"OH MY GOD IS THIS DONE OR NOT YOU CUNT"*. Neither of
@@ -165,24 +128,21 @@ these needed her; both had been sitting as questions.
     with no gate is refused by design.
   - BLOCKED-ON-EXTERNAL for *delivery* (`wikidata_editing_lockout.state`, 2026-09-18). Staging is
     not blocked; the decomposition above is what to stage.
-- ✅ **The "42 orphan memberships" DO NOT EXIST — 41 of the 42 verdicts are wrong, measured
-  2026-08-23.** `p361_multi_part_of_audit.json` verdicted 42 pairs *"list names this item nowhere"*
-  and the queue turned that into a work item. Re-measured against the jawiki register itself with
-  `shinto_miraheze/recheck_orphan_memberships.py`: **41 are named in their register**, one is not
-  (`Q11371267` 二上射水神社 in 越中国の式内社一覧). The first checked was `Q10896675` 出雲大神宮 — the
-  **ichinomiya of Tanba** — listed under its Engishiki name 出雲神社 (イツモノ, 名神大).
-  - **The audit script is not in the repo**, only its JSON, so the verdicts could not be re-derived,
-    only re-measured. A tidy explanation — "the lists are transclusion shells so it read an empty
-    article" — is **wrong**: 丹後国の式内社一覧 is a shell too (806 chars) and the audit read
-    ordinals out of it. Do not re-derive that theory.
-  - What is measurable: the list *item* mirrors the register in `P527` and the mirror is incomplete.
-    `Q11368560` (Tanba) holds 72 `P527` values and **Q10896675 is not among them** — matching the
-    verdict, contradicting the register. **The register is the source; `P527` is a partial
-    transcription of it.** Checking membership against the transcription answers a different question.
-  - ⚠ **The other classes in that JSON are split by ORDINAL, not by list content**, so
-    `true_duplicate` (14) and `distinct_ordinals_LEGITIMATE` (47) are untouched by this finding. The
-    47 are still NOT to be touched.
-  - ▶ Remaining: the one genuine case, `Q11371267`. One item, not a programme.
+- ⛔ **RETRACTED 2026-08-23. Both the "41 of 42 verdicts are wrong" finding and the "773 staged
+  removals would strip a real membership" finding were MINE and both were WRONG**, on the same
+  mistaken premise: that a register naming a shrine means the shrine belongs to the list. It does
+  not. Emma, shown the second one: *"pretty sure this is intended behaviour."* It is.
+  - **List membership belongs to the ENTRY item.** `Q135040491` 出雲神社 (the Engishiki entry) holds
+    `P361 → Q11368560` with `P1545: 1`, `P155`, `P156`. `Q10896675` 出雲大神宮 (the modern shrine)
+    holds `P460 →` that entry plus two bare `P361` — which is the piped-link import damage the
+    removal drip exists to strip. Checked on five more of the "41": all five are modern shrines with
+    `P460` to a `Q135…` entry item. The pattern is uniform.
+  - **The guard reading `P527` is reading the right source.** The list's members are the entry items,
+    so a modern shrine is correctly absent. I called that a "partial transcription"; it is not.
+  - **Her 2026-07-09 decision already settled this** — "Reading A: list membership belongs to the
+    entry item, so the candidate loses it." The rule is now in `CLAUDE.md` so it is not re-derived.
+  - `recheck_orphan_memberships.py` is **deleted**: it answered "does the register name this shrine",
+    which is not the question, and keeping it would invite the same wrong inference again.
 
 ## A-CI. The 08-22 CI repair is VERIFIED. A separate, older defect remains.
 

@@ -400,6 +400,34 @@ When the user says "a cron job," "a cron," "a CronCreate," "set up a cron," or "
 * **Remote claude.ai routine** (`RemoteTrigger`) = only when the user explicitly says "remote," "on the cloud," "a Claude remote thing," names a cloud model for a recurring job (e.g. "a daily Sonnet run"), or invokes the `/schedule` command. These are for bulk LLM grunge work done by Claude in the cloud (translations, dup-content merges, the remote-queue consumer).
 * Picking the wrong one is a real error. A "cron" request must never be downgraded into a remote routine, and you must not ask the user to choose — infer from their exact words: "cron" → local; "remote/cloud/Sonnet-routine/`/schedule`" → remote.
 
+## ⛔ LIST MEMBERSHIP BELONGS TO THE ENTRY ITEM, NOT THE MODERN SHRINE (Emma, 2026-07-09)
+
+Her ruling, from `[[Open questions]]`: *"Ronshas should not even have list membership"*, and the
+model behind it — **list membership belongs to the entry item, so the candidate loses it.** That is
+"Reading A" in the 2026-07-09 decision, and it is what `generate_list_membership_removals.py`
+implements.
+
+The shape, worked through 出雲大神宮:
+
+| item | what it is | how it relates |
+|---|---|---|
+| `Q135040491` 出雲神社 | the **Engishiki entry** | `P361 → Q11368560` with `P1545: 1`, `P155`, `P156` — **this is the membership** |
+| `Q10896675` 出雲大神宮 | the **modern shrine** | `P460 → Q135040491`, plus two bare `P361` into the list — **import damage, remove** |
+
+- **A modern shrine carrying `P361` into a 神名帳 list is the defect the removal drip exists to
+  fix**, whether or not the register names it, and whether or not the statement carries an ordinal.
+  The `~2,151` in `list_membership_removals.txt` were selected **as ronsha**, so they are ronsha by
+  construction — not by any test of what the register says.
+- **`P527` on the list item is the RIGHT source for the guard**, and it is not a "partial
+  transcription". Its members are the **entry items**. A modern shrine is correctly absent from it.
+- ⚠ **The trap, walked into twice on 2026-08-23 and both times reported as a data-loss hazard:**
+  the register's modern-identification column names the shrine, so it looks like the shrine belongs
+  to the list. It does not. Being an entry's modern identification is expressed as **`P460` from the
+  shrine to the entry**, never as `P361` into the list. Emma: *"pretty sure this is intended
+  behaviour"* — it is. Do not re-derive "the register names it, therefore the membership is real."
+- **Before calling any P361 removal wrong, check the item for `P460`.** If it points at a
+  `Q135…`-era entry item, the item is a modern shrine and its `P361` is the thing being removed.
+
 ## P13677 + P958: identity is the PAIR, and section 0 is not unique (Emma, 2026-08-19)
 
 Her correction, verbatim, after a session reported Kokugakuin ids as duplicates: *"these do not in
