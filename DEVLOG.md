@@ -4,6 +4,66 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (fifth) — the "42 orphan memberships" were never orphans: 41 of 42 verdicts wrong
+
+`A-OQ` said to work 42 shrines whose register list *"names this item nowhere"*, taken from
+`p361_multi_part_of_audit.json`. Before working them I checked the first one, and it ended
+the item.
+
+**`Q10896675` 出雲大神宮 is the ichinomiya of Tanba.** It is in `丹波国の式内社一覧` under its
+Engishiki name 出雲神社 (イツモノ, 名神大), with the entry linking straight to the modern article.
+A shrine of that standing being absent from its own province's register is not a plausible
+data state, which is what made it worth checking rather than working.
+
+Re-measured all 42 against the registers: **41 are named. One is not** — `Q11371267`
+二上射水神社 in `越中国の式内社一覧`. So the work item was a programme built on a number that
+was wrong by 41/42.
+
+### The explanation I reached first was wrong, and it was tidy
+
+The register lists are transclusion shells — `丹波国の式内社一覧` is 1,471 characters of
+`{{丹波国桑田郡の式内社一覧}}` and friends, every shrine name inside the per-district templates.
+So: the audit read the shell, saw nothing, concluded nothing was named. Clean story.
+
+It does not survive one check. `丹後国の式内社一覧` is a shell too — **806 characters** — and the
+audit read ordinals out of it perfectly well (`list_says: ["44"]`). Shells are not the
+discriminator. Recorded here specifically so the theory is not re-derived by the next person
+who notices the transclusions.
+
+### What is actually measurable
+
+The audit script **was never committed** — only its JSON output — so the verdicts cannot be
+re-derived at all, only re-measured against reality. What can be shown is what it agreed with:
+
+- `Q11368560` (Tanba's list item) carries **72 `P527` values, and `Q10896675` is not among
+  them** — matching the audit's verdict exactly.
+- The register names it.
+
+So whatever the method was, it consulted **Wikidata's copy of the register** and not the
+register. `P527` on a list item is a partial transcription; membership in the transcription is
+a different question from membership in the register, and only one of them is the one being
+asked.
+
+### What changed
+
+- `shinto_miraheze/recheck_orphan_memberships.py` — committed, read-only, jawiki-only,
+  throttled, batched `wbgetentities` in 50s rather than one call per item. It expands
+  transclusions before searching, and matches on the item's jawiki sitelink title first and its
+  ja label second. **The durable artifact is that it is re-runnable**, which is the one thing
+  the original audit was not.
+- `A-OQ`'s 42-item programme is closed and replaced by the single real case.
+- The other classes in that JSON are split by **ordinal**, not by list content, so
+  `true_duplicate` (14) and `distinct_ordinals_LEGITIMATE` (47) are untouched by this. The 47
+  remain do-not-touch.
+
+Third premise-correction of the session, and the same shape each time: the queue's own account
+of an item was the defect, and re-reading the queue would never have surfaced it. The SPARQL
+endpoint count, entry 39, and now this.
+
+**Nothing delivered.** The Wikidata lockout holds to 2026-09-18.
+
+---
+
 ## 2026-08-23 (fourth) — the CI repair is verified, and the Sunday overrun is older than my fix
 
 Run `32615320387` finished. It answers `A-CI` and corrects something I asserted in the 05:10

@@ -43,11 +43,15 @@ And its identity is entry '''28''', not 39 — its ancient-name statement reads 
 : '''→''' So it is create-then-'''move''', not just create: the ordinal-39 statement has to come off [[d:Q135040786|Q135040786]] once the new item holds it, and per the standing rule that is two scripts with a SPARQL check between, never one. The new item will also share both labels with [[d:Q135040778|Q135040778]] — the two entries genuinely have the same name — so it needs a distinguishing description written at creation.
 : Staged in <code>queue.md</code>. Nothing goes out until your lockout lifts 2026-09-18.
 
-=== The 42 that no list confirms ===
+=== The "42 that no list confirms" — 41 of them do ===
 
-Of the 55 shrines carrying an unqualified <code>part of</code>, '''42''' are ones the register list names '''nowhere''' — so there is no leftover to strip, the membership itself is unconfirmed. Data: [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/p361_multi_part_of_audit.json p361_multi_part_of_audit.json].
+I told you yesterday these were 42 shrines whose register list names them nowhere, and moved them to <code>queue.md</code> as work. Re-measured against the registers themselves: '''41 of the 42 are named'''. Only [[d:Q11371267|Q11371267]] 二上射水神社 is genuinely absent from [[:ja:越中国の式内社一覧|越中国の式内社一覧]].
 
-: '''→''' Treating these as an orphan-membership problem rather than a duplicate-statement one. Moved to <code>queue.md</code>; no longer a question for you.
+The first one I checked was [[d:Q10896675|Q10896675]] '''出雲大神宮''' — the '''ichinomiya of Tanba''' — sitting in [[:ja:丹波国の式内社一覧|丹波国の式内社一覧]] under its Engishiki name 出雲神社 (イツモノ, 名神大). Not a borderline case.
+
+: '''→''' The audit's verdicts agree with '''Wikidata's copy''' of each register (<code>P527</code> on the list item) and disagree with the register. [[d:Q11368560|Q11368560]] carries 72 <code>P527</code> values and 出雲大神宮 is not one of them. The register is the source; <code>P527</code> is a partial transcription of it.
+: The audit script was never committed — only its output — so this could not be re-derived, only re-measured. The re-check is now a committed script, <code>shinto_miraheze/recheck_orphan_memberships.py</code>, so the next person gets to re-run it instead of trusting a number.
+: Nothing to work here beyond the single real case.
 
 === 御笏神社 — yes, it is staged ===
 

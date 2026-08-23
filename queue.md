@@ -94,11 +94,24 @@ these needed her; both had been sitting as questions.
     with no gate is refused by design.
   - BLOCKED-ON-EXTERNAL for *delivery* (`wikidata_editing_lockout.state`, 2026-09-18). Staging is
     not blocked; the decomposition above is what to stage.
-- ▶ **The 42 unqualified `part of` statements the list names nowhere.** Not a duplicate-statement
-  cleanup: there is no leftover to strip, the membership itself is unconfirmed. Work them as the
-  orphan-membership problem instead. Per-item data already committed at
-  `modern-quickstatements/p361_multi_part_of_audit.json` (`blank_ordinal_side`, 55 entries, of which
-  42 have `list_says: []`). The 47 `distinct_ordinals_LEGITIMATE` are NOT to be touched.
+- ✅ **The "42 orphan memberships" DO NOT EXIST — 41 of the 42 verdicts are wrong, measured
+  2026-08-23.** `p361_multi_part_of_audit.json` verdicted 42 pairs *"list names this item nowhere"*
+  and the queue turned that into a work item. Re-measured against the jawiki register itself with
+  `shinto_miraheze/recheck_orphan_memberships.py`: **41 are named in their register**, one is not
+  (`Q11371267` 二上射水神社 in 越中国の式内社一覧). The first checked was `Q10896675` 出雲大神宮 — the
+  **ichinomiya of Tanba** — listed under its Engishiki name 出雲神社 (イツモノ, 名神大).
+  - **The audit script is not in the repo**, only its JSON, so the verdicts could not be re-derived,
+    only re-measured. A tidy explanation — "the lists are transclusion shells so it read an empty
+    article" — is **wrong**: 丹後国の式内社一覧 is a shell too (806 chars) and the audit read
+    ordinals out of it. Do not re-derive that theory.
+  - What is measurable: the list *item* mirrors the register in `P527` and the mirror is incomplete.
+    `Q11368560` (Tanba) holds 72 `P527` values and **Q10896675 is not among them** — matching the
+    verdict, contradicting the register. **The register is the source; `P527` is a partial
+    transcription of it.** Checking membership against the transcription answers a different question.
+  - ⚠ **The other classes in that JSON are split by ORDINAL, not by list content**, so
+    `true_duplicate` (14) and `distinct_ordinals_LEGITIMATE` (47) are untouched by this finding. The
+    47 are still NOT to be touched.
+  - ▶ Remaining: the one genuine case, `Q11371267`. One item, not a programme.
 
 ## A-CI. The 08-22 CI repair is VERIFIED. A separate, older defect remains.
 
