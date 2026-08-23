@@ -86,10 +86,15 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 - ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
   true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
   one because nothing downstream can distinguish it.
-- ▶ **The remaining work is coverage, and it is the bulk of the programme.** Bucket (a) is 2,582
-  targets; **354 are resolved and 0 work-files are pending**, so ~2,200 have never been queued.
-  Rebuild in tranches with `build_name_in_kana_queue.py --limit N`, then answer locally in batches
-  (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23) and collect. The remote routine
+- ✅ **First tranche built 2026-08-23: 60 work-files**, and all 60 carry the new `GUESS:` option and
+  the three irregular-reading examples — checked across every file, not spot-checked. The builder
+  skipped **355 already staged or answered**, so the guard against re-queueing an answered item holds.
+- ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
+  builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. 355 done,
+  60 pending → **~2,200 still unqueued**. Keep rebuilding in tranches with
+  `build_name_in_kana_queue.py --limit N`, answer locally in batches
+  (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
   delivers ~5/day, so local batches are the road.
   ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
 

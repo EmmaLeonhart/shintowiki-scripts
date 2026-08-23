@@ -1,0 +1,17 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11379324 -->
+<!-- JA: 伊射奈岐神社 (吹田市山田東) | EN_LABEL: Izanagi Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%BC%8A%E5%B0%84%E5%A5%88%E5%B2%90%E7%A5%9E%E7%A4%BE_%28%E5%90%B9%E7%94%B0%E5%B8%82%E5%B1%B1%E7%94%B0%E6%9D%B1%29 -->
+<!-- ANSWER: -->
+<!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading
+  GUESS: <hiragana>       the lead states no reading; this is derived (below)
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and none can be derived either
+GUESS is what to give when the lead carries no reading (Emma, 2026-08-23: guess where no kana can be found). Derive it from what you can actually see — the reading of the place-name the shrine is named for, the readings other shrines of the same name carry, the reading given in the article's infobox, categories or first sentence of a section. Shrine names take irregular local readings, so do NOT transliterate character-by-character: 江島 is えのしま not えじま, 三吉 is みよし not さんきち, 一宮 can be いっく. If you cannot do better than a character-by-character guess, answer NO_KANA — a wrong reading is worse than none, and GUESS answers carry no source on Wikidata precisely because the article does not back them.
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. A KATAKANA answer is recorded and NOT written to Wikidata — P1814 wants modern hiragana, and a katakana reading is the signature of the ancient-reading error a separate cleanup is undoing.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+伊射奈岐神社（いざなぎじんじゃ）は、大阪府吹田市山田東にある神社。
+延喜式神名帳の島下郡の条に「伊射奈岐神社」が二座あり、その一座とされる延喜式内社である。なお、もう一座は佐井寺に位置し伊射奈岐命を祀る同名の神社だといわれる。旧社格は郷社。
+伴信友は、元々は当地に伊射奈美神のみが祀られていたが、貞観から延喜に伊射奈岐神が当社に勧請されたものと考証している。
