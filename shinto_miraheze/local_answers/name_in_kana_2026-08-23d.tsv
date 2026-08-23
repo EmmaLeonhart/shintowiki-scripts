@@ -1,0 +1,25 @@
+# name_in_kana batch 4 — the four that had been recycling every tranche, plus two
+# ordinary ones. These four now have work-files because the builder was changed to
+# write one when the article yields no lead, instead of skipping "so a later run
+# retries them" — which was a permanent loop, not a retry.
+#
+# All four are GUESS: there is no article text to source a reading from, and there
+# never will be. Each derivation is named.
+#
+# 八幡社 — the plain reading of 八幡社 is はちまんしゃ. All three are Okazaki sub-shrines
+# distinguished only by their 字 address, which does not enter the shrine's name.
+Q11391058	GUESS: はちまんしゃ
+Q11391059	GUESS: はちまんしゃ
+Q11391060	GUESS: はちまんしゃ
+# 刈田嶺神社 — かったみねじんじゃ, taken from its two siblings Q11396254 and Q11396255,
+# both of which state that reading in their own leads and were answered KANA from them
+# earlier today. Same shrine name, same Katta district of Miyagi.
+Q11396252	GUESS: かったみねじんじゃ
+Q11464226	KANA: おのじんじゃ
+Q11464751	KANA: すくなひこなじんじゃ
+# 尾崎神社: item label 尾崎神社, lead spells it 尾﨑神社 (variant kanji 﨑/崎), same shrine
+Q11465245	KANA: おざきじんじゃ
+Q11465305	KANA: おわりべじんじゃ
+# 尾張神社 is おばり here, not おわり — the lead states it
+Q11465315	KANA: おばりじんじゃ
+Q11465530	KANA: びようじんじゃ

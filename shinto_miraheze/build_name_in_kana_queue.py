@@ -91,6 +91,19 @@ SELECT ?item ?ja ?en ?art (GROUP_CONCAT(DISTINCT ?cls; separator=",") AS ?classe
 GROUP BY ?item ?ja ?en ?art
 """
 
+# Written into the LEAD section when the article yields no extract at all. Says what
+# happened and what is still available to derive from, so the answer is a considered
+# GUESS or NO_KANA rather than a shrug at an empty section.
+NO_LEAD = (
+    "(NO LEAD AVAILABLE — the jawiki article is a redirect, a disambiguation page, or "
+    "empty, so there is no first sentence to read a reading out of. This will never "
+    "change on its own.\n"
+    "Answer GUESS if you can derive the reading — from the shrine's own name, from the "
+    "place it is named for, or from other shrines carrying the same name, several of "
+    "which are already answered in this queue. Answer NO_KANA only if you genuinely "
+    "cannot.)"
+)
+
 TASK = (
     "<!-- TASK: read the LEAD above and give this shrine's reading as MODERN "
     "HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:\n"
@@ -385,14 +398,31 @@ def main():
     for qid, ja, en, title in todo:
         lead = text.get(title)
         if not lead:
+            # NO LEAD IS NOT A REASON TO SKIP — it is the GUESS case.
+            #
+            # This used to `continue` with no file written, on the reasoning that "a
+            # later run retries them". Measured 2026-08-23: it is not a retry, it is a
+            # permanent loop. These items sort to the front of the target set, so every
+            # tranche re-fetches and re-skips exactly the same ones — three consecutive
+            # tranches named an identical four (Q11391058/59/60 八幡社, Q11396252
+            # 刈田嶺神社) — and they can never acquire a lead, because the article is a
+            # redirect, a disambiguation page, or empty.
+            #
+            # They are answerable. 刈田嶺神社 is かったみねじんじゃ, which two sibling items
+            # answered from their own leads the same day. Emma's 2026-08-23 decision is
+            # to guess where no kana can be found, and this is that case exactly; the
+            # no-file rule was what put it out of reach.
             noext.append((qid, title))
+            write_work_file(qid, ja, en, title, NO_LEAD)
+            written += 1
             continue
         write_work_file(qid, ja, en, title, lead)
         written += 1
     print(f"\n{written} work-files -> {OUT_DIR}")
     if noext:
-        print(f"{len(noext)} had no lead extract (redirect//disambig/empty) — skipped, "
-              f"no file written so a later run retries them:")
+        print(f"{len(noext)} had NO lead extract (redirect / disambig / empty) — a "
+              f"work-file was still written, with the lead marked unavailable, so the "
+              f"GUESS path can answer them instead of them recycling every run:")
         for qid, title in noext[:8]:
             print(f"  {qid}  {title}")
 

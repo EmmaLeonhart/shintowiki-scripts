@@ -88,26 +88,23 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
   one because nothing downstream can distinguish it.
 - ✅ **Three tranches built and drained 2026-08-23 — 252 answered, 0 rejected, 0 pending.**
   60 + 96 + 96. Answers in `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c}.tsv`.
-- ⚠ **The same 4 items are skipped by EVERY tranche and will be forever.** `Q11391058`,
-  `Q11391059`, `Q11391060` (八幡社, three Okazaki sub-shrines) and `Q11396252` (刈田嶺神社
-  (七ヶ宿町)) have no lead extract — redirect / disambig / empty — so the builder writes no file
-  "so a later run retries them". They sort to the front of the target set, so each tranche re-fetches
-  and re-skips the same four. **They are answerable**: 八幡社 is はちまんしゃ and 刈田嶺神社 is
-  かったみねじんじゃ, which two sibling items answered from their own leads this session
-  (`Q11396254`, `Q11396255`). This is precisely Emma's "guess where no kana can be found", and the
-  builder's no-file rule is what keeps it out of reach. ▶ Make the builder write a work-file with an
-  empty LEAD marked as unavailable so the `GUESS` path can take them.
-- ✅ **The `GUESS` path fired for the first time, and the source rule holds on real data.**
-  `Q11391067` 坂本神社八幡宮 — the jawiki article is titled and led as 八幡神社（はちまんじんじゃ）, so
-  the lead states a reading for a *different name form*, not for this one. Derived from components
-  that are regular here (坂本 さかもと + 神社 じんじゃ + 八幡宮 はちまんぐう) and staged as
-  `Q11391067|P1814|"さかもとじんじゃはちまんぐう"` with **no `S143`/`S4656`**, beside KANA lines that do
-  carry it. **1 GUESS in 156 answers** — the leads almost always state the reading outright.
+- ✅ **The permanent skip loop is CLOSED 2026-08-23.** `Q11391058`, `Q11391059`, `Q11391060`
+  (three Okazaki 八幡社) and `Q11396252` (刈田嶺神社 (七ヶ宿町)) were re-fetched and re-skipped by
+  every tranche — three in a row printed an identical four — because the builder wrote no file
+  "so a later run retries them". Their articles are redirects/disambig/empty, so the extract never
+  arrives; it was a loop, not a retry.
+  - The builder now writes a work-file with the LEAD replaced by `NO_LEAD`, which states that the
+    extract will never come and names what is left to derive from. All four answered as `GUESS`:
+    八幡社 → はちまんしゃ; 刈田嶺神社 → かったみねじんじゃ, taken from siblings `Q11396254` /
+    `Q11396255`, which state it in their own leads and were answered from them the same day.
+  - **Verified by re-running the builder**: 613 targets excluded as already answered and the four
+    are gone from the front of the set. `test_name_in_kana_no_lead.py` (5 tests) pins both the
+    behaviour and the prompt, including that the old `continue` cannot come back.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
   builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **606
-  resolved, 0 pending → ~2,027 still unqueued** (`_resolved.log`: 590 KANA · 8 KATAKANA · 4 NO_KANA
-  · 2 GUESS · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 602 lines). Keep rebuilding in
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **616
+  resolved, 0 pending → ~2,017 still unqueued** (`_resolved.log`: 596 KANA · 8 KATAKANA · 6 GUESS
+  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 612 lines). Keep rebuilding in
   tranches with
   `build_name_in_kana_queue.py --limit N`, answer locally in batches
   (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
