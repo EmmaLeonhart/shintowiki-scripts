@@ -107408,6 +107408,10 @@ Q140934715	Lko	"실근신사"
 Q140962719	Lko	"석신정신사"
 # Source: JA "塚田池尾神社" (hanja reading)
 Q141108288	Lko	"총전지미신사"
+# Source: JA "海椙神社" (hanja reading)
+Q141143028	Lko	"해창신사"
+# Source: JA "春日神社" (hanja reading)
+Q141147558	Lko	"춘일신사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
