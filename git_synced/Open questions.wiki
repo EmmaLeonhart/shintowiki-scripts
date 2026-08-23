@@ -43,9 +43,13 @@ And its identity is entry '''28''', not 39 — its ancient-name statement reads 
 : '''→''' So it is create-then-'''move''', not just create: the ordinal-39 statement has to come off [[d:Q135040786|Q135040786]] once the new item holds it, and per the standing rule that is two scripts with a SPARQL check between, never one. The new item will also share both labels with [[d:Q135040778|Q135040778]] — the two entries genuinely have the same name — so it needs a distinguishing description written at creation.
 : Staged in <code>queue.md</code>. Nothing goes out until your lockout lifts 2026-09-18.
 
-=== 御笏神社 — yes, it is staged ===
+=== 御笏神社 — yes, it is staged, and I described it wrongly ===
 
-You asked whether [[d:Q110915859|Q110915859]] (御笏神社) is actually being cleaned up. It is: '''3''' removal lines in [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/list_membership_removals.txt list_membership_removals.txt], against [[d:Q11380552|Q11380552]] (List of Shikinaisha in Izu Province). It holds ordinals 34, 20, 14, 5, 34, 20, 16 into that one list — 34 and 20 are the repeats. Undelivered only because of the lockout.
+You asked whether [[d:Q110915859|Q110915859]] (御笏神社) is actually being cleaned up. It is: '''3''' removal lines in [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/list_membership_removals.txt list_membership_removals.txt], against [[d:Q11380552|Q11380552]] (List of Shikinaisha in Izu Province). Undelivered only because of the lockout.
+
+I first said the point was that it carries repeated ordinals and the repeats are the defect. That is the same wrong model I retracted today. It is a '''modern shrine''' — it holds '''six''' <code>said to be the same as</code> statements pointing at six different Engishiki entry items, so it is a candidate for six entries — and by your 2026-07-09 rule the list membership belongs to those entry items, not to it. Its <code>part of</code> statements are the damage whether or not any of them repeat, and whether or not they carry ordinals. All three do carry ordinals, which under the old framing would have made them look legitimate.
+
+: '''→''' Removal is correct. Nothing about it depends on the repeats.
 
 == Wiki-based queue ==
 

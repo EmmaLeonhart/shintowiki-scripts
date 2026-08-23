@@ -4,6 +4,43 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (ninth) — the retracted model had left a third instance on Emma's page
+
+First tick after the retraction. Checked whether the wrong premise had been written anywhere else
+before moving on, and it had — the 御笏神社 answer on `[[Open questions]]`.
+
+I had told her the point about `Q110915859` was that it carries repeated ordinals into
+`Q11380552` — *"34 and 20 are the repeats"* — which frames the fix as de-duplication. That is the
+model retracted an hour earlier, dressed differently.
+
+What the item actually is, from `wbgetentities` rather than from the 08-19 audit JSON:
+
+- `P31` includes `Q845945`, so it is a **modern shrine**.
+- It holds **six** `P460` statements — `Q135039638`, `Q135039642`, `Q135039644`, `Q134930277`,
+  `Q135039648`, `Q135039658` — so it is a ronsha candidate for **six** register entries.
+- All **three** of its `P361` into the list carry ordinals.
+
+Two things follow. The removals are correct, and correct for a reason that has nothing to do with
+repeats: membership belongs to those six entry items, not to the shrine. And **every one of its
+three statements is ordinal-bearing**, which under the retracted framing is exactly what
+"legitimate" looked like — the shape I had been using to argue statements should be kept.
+
+Also a stale number worth naming: I reported seven ordinals from
+`p361_multi_part_of_audit.json`; live, the item has three `P361` statements. The audit is
+2026-08-19 and the item has moved since. A number read out of a committed JSON is a claim about
+that JSON, not about Wikidata.
+
+The page section is rewritten to say so plainly, including that I described it wrongly the first
+time. Leaving a correct conclusion propped on a wrong explanation would have preserved the model
+that produced two retracted findings.
+
+Nothing else on the page repeats it: the wiki-agent, Ukrainian/Indonesian and Izumo entry-39
+sections are about user agents, a skip branch, and two **entry** items respectively.
+
+**Nothing delivered.** The lockout holds to 2026-09-18.
+
+---
+
 ## 2026-08-23 (eighth) — RETRACTION: both list-membership findings were wrong, one premise
 
 Emma, on the 773 finding: *"Bruh look over the chatlogs pretty sure this is intended behaviour."*
