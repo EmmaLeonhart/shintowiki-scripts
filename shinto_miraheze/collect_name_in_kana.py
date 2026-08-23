@@ -96,7 +96,7 @@ def parse_answer(text):
     if not m or not m.group(1).strip():
         return None
     ans = m.group(1).strip()
-    km = re.match(r"(KANA|KATAKANA|NO_KANA)\s*:\s*(.*)", ans, re.S)
+    km = re.match(r"(KANA|GUESS|KATAKANA|NO_KANA)\s*:\s*(.*)", ans, re.S)
     if not km:
         return ("MALFORMED", ans)
     return (km.group(1), km.group(2).strip())
@@ -179,7 +179,7 @@ def main():
         art = ARTICLE_RE.search(body)
         url = art.group(1) if art else ""
 
-        if kind == "KANA":
+        if kind in ("KANA", "GUESS"):
             kana = clean_kana(payload)
             if not acceptable_reading(kana):
                 rejected += 1
@@ -189,7 +189,15 @@ def main():
                 done_files.append(path)
                 continue
             line = f'{qid}|P1814|"{kana}"'
-            if url:
+            # THE REFERENCE IS THE DIFFERENCE BETWEEN THE TWO KINDS, and it is the
+            # whole reason GUESS is a separate answer rather than a flavour of KANA.
+            # S143/S4656 says "the Japanese Wikipedia article states this". For a
+            # KANA answer that is true — the reading was read out of the lead. For a
+            # GUESS it is not: the article gave no reading, which is why a guess was
+            # asked for. Attaching the reference anyway would put a false claim of
+            # provenance on Wikidata, and a sourced-looking wrong reading is worse
+            # than an unsourced one because nothing downstream can tell it apart.
+            if url and kind == "KANA":
                 line += f'|S143|{JAWIKI_ITEM}|S4656|"{url}"'
             qs_lines.append(line)
             if bucket == "b" and ja:
@@ -198,7 +206,7 @@ def main():
                     label_lines.append(f'{qid}|Len|"{built.label}"')
                     if built.alias:
                         label_lines.append(f'{qid}|Aen|"{built.alias}"')
-            resolved.append(f"{qid}\tKANA\t{kana}")
+            resolved.append(f"{qid}\t{kind}\t{kana}")
         else:
             resolved.append(f"{qid}\t{kind}\t{payload[:120]}")
         done_files.append(path)

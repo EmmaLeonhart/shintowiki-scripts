@@ -64,6 +64,35 @@ taxonomy above, or goes to her directly.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
+## A-KANA. ▶ kana-from-jawiki, FULL BUILD — Emma's call 2026-08-23; guessing is wired, draining is not
+
+Her decision via AskUserQuestion: the full version, not the bounded one — pull the kana from the
+jawiki article, feed the naming pipeline, **and guess where no kana can be found**. She was shown
+her own 2026-08-18 objection (it extends the programme's runtime, against the finite ending) and
+chose the full build anyway.
+
+**⛔ pykakasi is OUT and that is settled.** A mechanical guesser was built and measured against the
+342 readings already extracted from articles: **47.7% exact, 52.3% wrong, 0% close** — the failures
+were different words, not spelling slips (江島 えのしま→えじま, 三吉 みよし→さんきち, 一宮 いっく→
+いちのみや). Emma: *"Pykakasi is horrible don't use it lol"* / *"This is a settled issue."* Deleted.
+Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stays gone.
+
+- ✅ **`GUESS:` is now an answer kind** on the same work-file/ANSWER path that produced the 342
+  correct readings. `collect_name_in_kana.py` accepts it and puts it through the identical hiragana
+  gate. The builder's TASK asks for a derived reading — from the place-name it is named for, from
+  other shrines of the same name, from the infobox — and names the three measured failure modes so
+  the same error class does not come back. `NO_KANA` remains the right answer when nothing can be
+  derived: a wrong reading is worse than none.
+- ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
+  true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
+  one because nothing downstream can distinguish it.
+- ▶ **The remaining work is coverage, and it is the bulk of the programme.** Bucket (a) is 2,582
+  targets; **354 are resolved and 0 work-files are pending**, so ~2,200 have never been queued.
+  Rebuild in tranches with `build_name_in_kana_queue.py --limit N`, then answer locally in batches
+  (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23) and collect. The remote routine
+  delivers ~5/day, so local batches are the road.
+  ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
+
 ## A-RM. ⚠ 773 staged P361 removals target memberships the REGISTER names — measured 2026-08-23
 
 `modern-quickstatements/list_membership_removals.txt` is **registered in

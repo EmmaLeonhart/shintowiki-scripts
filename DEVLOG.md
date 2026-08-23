@@ -4,6 +4,62 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (seventh) — the kana guesser was a coin flip, so it is gone and the guess moved paths
+
+Emma decided kana-from-jawiki via AskUserQuestion: the full build, guessing included. She was
+shown her own 2026-08-18 objection — it extends the programme's runtime, against the finite
+ending — and chose the full build anyway.
+
+### The mechanical guesser, and the number that killed it
+
+Built on a suffix table plus pykakasi for the stem, because pykakasi alone reads 三芳野神社 as
+みよしのがみしゃ — it segments 野神 / 社 and mangles the suffix every shrine name has, while
+reading the stem 三芳野 → みよしの correctly.
+
+Measured against the **342 readings already extracted from articles**, which is real ground truth
+rather than a chosen sample:
+
+    exact   163   47.7%
+    close     0    0.0%
+    wrong   179   52.3%
+
+**`close` being zero is the finding.** The failures are not long-vowel or small-kana slips, they
+are different words — 江島 えのしま guessed えじま, 三吉 みよし guessed さんきち, 一宮 いっく guessed
+いちのみや, 三峯 みつみね guessed みぶ. That is the irregular-reading class which is the entire
+reason shrine-name readings are hard. Of the 179 misses, 29 were refused outright and 90 had the
+suffix right and the stem wrong.
+
+Emma, on being shown it: *"Pykakasi is horrible don't use it lol"* and *"This is a settled
+issue."* Deleted, and a test asserts the file stays gone so a later session does not reopen it.
+
+### Where the guess went instead
+
+Onto the mechanism that produced the 342 correct readings in the first place: the
+work-file/ANSWER-marker path. `GUESS:` is now an answer kind alongside `KANA`, `KATAKANA` and
+`NO_KANA`, through the identical hiragana gate. The builder's TASK asks for a *derived* reading —
+the place-name the shrine is named for, readings other shrines of the same name carry, the
+infobox — and names the three measured failure modes explicitly, so the same error class is
+argued against in the prompt rather than discovered again later. `NO_KANA` stays the right answer
+when nothing can be derived.
+
+### The one property that makes it safe
+
+**A `GUESS` carries no source.** `S143`/`S4656` asserts *"the Japanese Wikipedia article states
+this"* — true of a `KANA` answer, false of a guess, since the article giving no reading is why a
+guess was asked for. Attaching it anyway would put a false claim of provenance on Wikidata, and a
+sourced-looking wrong reading is worse than an unsourced one because nothing downstream can tell
+them apart. One line in the collector, and it is the line the whole change rests on.
+
+### What is left
+
+Coverage, and it is most of the programme: bucket (a) is 2,582 targets with **354 resolved and 0
+work-files pending**, so ~2,200 have never been queued. Rebuild in tranches and answer locally —
+the remote routine delivers ~5/day.
+
+**Nothing delivered.** The Wikidata lockout holds to 2026-09-18. Full suite 1565 passed.
+
+---
+
 ## 2026-08-23 (sixth) — 773 staged removals would strip a membership the register names
 
 Following the 41-of-42 correction to its own doorstep. The audit's wrong verdicts came from
