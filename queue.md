@@ -52,12 +52,34 @@ into open questions and the queue."*
   (2026-09-18).
 
 **Item tags.** ❓ ASK = needs Emma's decision, the exact AskUserQuestion is written under the item;
-fire it, don't skip it. ▶ DO = just execute. 🤖 AUTO = runs itself. ⏸ PARKED = waiting on a named
-external thing.
+fire it, don't skip it. ▶ DO = just execute. 🤖 AUTO = runs itself.
+
+**⏸ PARKED IS GONE — Emma, 2026-08-19: *"Anything 'parked' should be addressed with an
+AskUserQuestion now."*** The tag was retired then and the last two uses were cleared 2026-08-23 (A5
+was finished work mislabelled; B9 is a real condition, so it is OUT-OF-SCOPE with the condition
+named). Parking is not a disposition. Anything that cannot proceed gets a named blocker from the
+taxonomy above, or goes to her directly.
 
 ---
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
+
+## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
+
+Emma, on the page, about exactly this shape: *"OH MY GOD IS THIS DONE OR NOT YOU CUNT"*. Neither of
+these needed her; both had been sitting as questions.
+
+- ▶ **意宇郡 entry 39, 同社坐韓国伊太弖神社, needs an item.** Her instruction, verbatim: *"IF THERE IS
+  NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT."* Entries 19 and 28 have items
+  (`Q135040778`, `Q135040786`); 39 does not, and **nothing is staged for it** — grepped every atomic
+  file, not assumed. Host precinct 佐久多神社. Stage the creation now via `create_items.py`'s batch
+  format; it lands the day the lockout lifts. BLOCKED-ON-EXTERNAL for *delivery* only
+  (`wikidata_editing_lockout.state`, 2026-09-18) — staging is not blocked, so do that now.
+- ▶ **The 42 unqualified `part of` statements the list names nowhere.** Not a duplicate-statement
+  cleanup: there is no leftover to strip, the membership itself is unconfirmed. Work them as the
+  orphan-membership problem instead. Per-item data already committed at
+  `modern-quickstatements/p361_multi_part_of_audit.json` (`blank_ordinal_side`, 55 entries, of which
+  42 have `list_says: []`). The 47 `distinct_ordinals_LEGITIMATE` are NOT to be touched.
 
 ## A-CI. ▶ Confirm the cleanup-loop is green again, and that Sunday regenerates the pairs file
 
@@ -699,7 +721,7 @@ All registered atomic files are staged-but-not-delivered by design until `confli
   prefectural scraper?) once the drip resumes and the real gap is measurable.
 - 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
 
-## A5. ⏸ Parked — external, and not shintowiki either
+## A5. ✅ Husk guard — DONE and self-sweeping; kept because CI keeps re-emitting the lines
 
 - ⛔ **HUSK GUARD (2026-08-04).** Ten staged QuickStatements across five atomic files targeted the
   ブルーノ・プラス-repurposed items — including `Q123044569|Len|"Ōmiwa Shrine"`, which would have put
@@ -972,7 +994,7 @@ what she used it for.
 - **"Edits being rejected"** — self-closing, as she said: *"this one is kind of tautological because
   in the event that this does get resolved, it's not going to be here anymore."* It is resolved.
 
-## B9. ⏸ Category-orchestrator speed-up *("the category thing")*
+## B9. OUT-OF-SCOPE until the category drain is measured too slow — speed-up *("the category thing")*
 
 A POSSIBLE future optimization to make wiki category-page processing faster (skip some ops on ~3k
 enwiki-junk cats, or shard the namespace). Only worth doing IF the Japanese-category-translation drain

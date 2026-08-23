@@ -2,200 +2,51 @@ __NOTOC__
 
 == Open questions ==
 
-== Ukrainian and Indonesian labels ==
+=== Ukrainian and Indonesian labels ===
 
+'''Found it. One bug, and it explains why uk and id behaved opposite ways.'''
 
-This was something that was discussed at around 8:00 PM in the chat, but it ended up getting somewhat lost. My expectation here is that it ended up getting somewhat lost because of the chat being disrupted. My intention is that you are going to read this and then you are going to look back at the chat log to see what was going on and essentially implement this stuff here in this open questions thing, which I am really hoping is preserved. I don't 100% know how conflicts are done in the open questions thing. 
+Where it came from: <code>generate_description_fixes.py</code>, which has handled this since your 2026-07-07 spec — set the standardised description, then add the label, as one unit, 100/day, into [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt].
 
+It had this:
 
-Both of these are I believe actively ones that have a part of our code explicitly address. 
+<pre>
+new = pref_template or generic
+if not new or new == desc:
+    skipped += 1
+    continue          # <- dropped the LABEL too
+</pre>
 
+An item whose description was '''already''' the standard string got skipped entirely, label included — even though missing a label is the only reason it is a target. Your own 2025 bot pass had already standardised every Indonesian description to <code>kuil Shinto di Prefektur {pref}, Jepang</code>, so that branch caught all '''5,024''' of them on every weekly run. Ukrainian was never standardised, so uk sailed past it.
 
+That is the whole asymmetry. The file today: '''3,514 uk''' against '''5 id'''.
 
+: '''✓''' Fixed 2026-08-21 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]) — that case now emits a '''label-only''' line through the same uniqueness check. Not yet visible: the file only regenerates on a '''Sunday''' CI run, and CI was broken 08-19 → 08-22 (fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/3b0f44c8 3b0f44c8]). First Sunday run that survives, id should go from 5 to thousands. If it does not, the branch to re-read is that one.
 
-Considering that the Indonesian labels are
+=== Izumo — entry 39 has no item ===
 
+You said: ''"IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT."''
 
+意宇郡 entry '''39''', 同社坐韓国伊太弖神社, host precinct [[:ja:佐久多神社|佐久多神社]] — the other two entries have items ([[d:Q135040778|Q135040778]] entry 19, [[d:Q135040786|Q135040786]] entry 28); this one does not.
 
+: '''→''' Nothing is staged for it — checked, not assumed. Item creation is gated by your Wikidata lockout to 2026-09-18, so it goes into <code>queue.md</code> to be staged now and created the day the lockout lifts. Not parked, not waiting on you.
 
+=== The 42 that no list confirms ===
 
-== Human review of this page ==
+Of the 55 shrines carrying an unqualified <code>part of</code>, '''42''' are ones the register list names '''nowhere''' — so there is no leftover to strip, the membership itself is unconfirmed. Data: [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/p361_multi_part_of_audit.json p361_multi_part_of_audit.json].
 
+: '''→''' Treating these as an orphan-membership problem rather than a duplicate-statement one. Moved to <code>queue.md</code>; no longer a question for you.
 
+=== 御笏神社 — yes, it is staged ===
 
-
-The real way that I would do this is I would make it so that the remedial descriptions are just ones that we relatively custom make here and test offline to ensure that they actually maintain your test. 
-# You are far too verbose
-# You should be fucking removing my fucking writing you cunt. It is not in fact sacred at all, the only issue was with my writing being removed by the python program without you ever seeing it
-# I know nothing about where almost any of this shit came from. Do you even know where it came from or are you just thrashing around with some fucking bullshit
-# You seem like a lot of this shit is crud that is resolved and you are just kinda thrashing atoun with it pretending that it is not and it is getting on my fuking nerves
-# There are far too many prompts and shit aimed at you in this page. YOU CAN FUCKING USE YOUR OWN PROMPTS IN CLAUDE.MD and elsewhere no need to prompt yourself in the page that exists solely to communicate with me
-
-
-
-''A working conversation. Emma's notes are plain; bot replies are marked '''→''' / '''✓'''. Items are DELETED once settled — nothing here is closed.''
-
-''''''Trimmed 2026-08-19.''''' The wiki was unreachable for 39 days (a Cloudflare zone challenge on the shinto zone, not our traffic) and this page went stale on both sides. The block ended 2026-08-19T01:54. Eight settled items have been '''deleted''' rather than archived; three real questions and three of Emma's own calls remain. Nothing of Emma's was overwritten — her wording is kept wherever an item survived.
-
-* YOU FUCKIING BASTARD YPU FUCKING CUT YOU FUCKING BASTARD YOU FUCKING CUTN YOU CUTN WHy THE FUCK ARE YOU NOT DELETING STUFF I WRITE YOU BASTARD
-
-'''Emma's standing note on this page (2026-07):''' A lot of the edits here had problems because the bot's description of the issue is not very good — often it doesn't actually understand the issue and makes assumptions about what would be "most readable," which causes problems. (Example: ages ago the bot created Wikidata items and randomly decided to add descriptions when I never asked — that broke the deduplication process and I had to go through a complicated cleanup off very vague "there are duplicates" feedback.) Most of these issues are probably similar: the bot's analysis is bad because it lacks the contextual knowledge, while mine makes it relatively trivially easy. So: give me the concrete examples/links, don't over-summarise, and don't assume.
-
-* You fucking cunt actually fix the fucking stuff here and this is bloat on the page too you cunt claude.md is where this shit belongs not on this goddamn page it should be minimalistic and aimed at me not you you cunt
-
-=== 1. Izumo — the 韓国伊太弖 knot. There are THREE, not two. ===
-
-''You asked for the sources to be read, not just the graph: "it is best to look over the source page [[:ja:出雲国の式内社一覧|出雲国の式内社一覧]] and the kokugakuin shrine database things here." Done 2026-08-19. The earlier report reasoned from Wikidata alone — its Kokugakuin column was literally blank — and it was wrong.''
-
-'''意宇郡 has three 同社坐韓国伊[大太]弖神社 entries, in three different precincts:'''
-
-{| class="wikitable"
-! entry !! register name !! host precinct !! Wikidata !! Kokugakuin id
-|-
-| '''19''' || 同社坐韓国伊'''太'''弖神社 || 玉作湯神社 || [[d:Q135040778|Q135040778]] || 182793
-|-
-| '''28''' || 同社坐韓国伊'''大'''弖神社 || 揖夜神社 || [[d:Q135040786|Q135040786]] || ''none''
-|-
-| '''39''' || 同社坐韓国伊'''太'''弖神社 || 佐久多神社 || IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT || ''none''
-|}
-
-: '''✓ 2026-08-19 (bot):''' Entry '''19''' was missing from the old report entirely, and it already has its own item. So "one item standing in for two entries" was one entry short. Ordinals verified by counting the template independently — 48 entries, matching its own header (意宇郡 48座) — not taken on trust from the graph.
-: Two things the sources say that Wikidata does not:
-:* jawiki's identified modern shrine for entry '''28''' is spelled 韓国伊'''太'''弖神社 — 太, not 大. The old report leaned on 大/太 as the thing separating the two entries. The register names differ that way; the modern identifications do not.
-:* The Kokugakuin ids run in step with the ordinals but '''skip 28 and 39''': 18→182792, 19→182793, 20→182794; 27→182801, 29→182802; 38→182811, 40→182812. Entry 19 got a page of its own; 28 and 39 did not.
-:** What the fuck is entry 19? I cannot read opaque numbers fucking link it you cunt
-:** Is this section even coherent and useul?
-: '''→ 2026-08-19, checked against the database — and my guess was WRONG.''' I had proposed that entries 28 and 39 live as ''sections'' of their host shrine's Kokugakuin page. They do not.
-:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182793 182793] is a page for '''同社坐韓国伊太弖神社''' in its own right — so a 同社坐 entry '''does''' get its own page when it has one.
-:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182801 182801] (揖夜神社, entry 27) and [https://jmapps.ne.jp/kokugakuin/det.html?data_id=182811 182811] (佐久多神社, entry 38) contain '''no 同社坐 mention at all'''.
-: So entries '''28 and 39 are simply absent from the database'''. Their ids do not exist — there is nothing to qualify, and no section to add. The missing-id set for them is real.
-:* OH MY FUCKING GOD IS THIS OUTDATED
-
-'''What P958 actually is''' — established the same day, and it changes item 3 more than it changes this one:
-
-: '''One Kokugakuin page = one 927 register entry.''' The page lists that entry's 論社 as numbered blocks — <code>現社名など（１）（２）（３）…</code> — and '''P958 is which numbered candidate the item is'''. Examples with many:
-:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181186 181186] 火地神社 — 10 candidates; §1 is 火地神社（多気郡岩内村）, matching the page's （１）.
-:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181177 181177] 相鹿木大御神社 — 9.
-:* [https://jmapps.ne.jp/kokugakuin/det.html?data_id=181688 181688] 石楠尾神社 — 7.
-: That is why <code>0</code> and <code>n/a</code> carry no uniqueness: they mean “not one of the numbered candidates”.
-
-'''The under-specification, measured.''' Across all '''900''' Kokugakuin ids held by more than one item: 619 fine, '''281 wrong'''. '''197''' have a holder with no section while its siblings have one (page 181621's shape — so that page was not unusual), 66 have no sections at all, 18 are all <code>0</code>/<code>n/a</code>. '''Nothing collides''': nowhere do two items claim the same (id, real section), so the fault is always a missing value, never a contested one. Browsable: https://emmaleonhart.github.io/shintowiki-scripts/p958-candidates.html
-
-: '''Open, and it is a METHOD question not a shrine question:''' 321 items are missing a section. Only 57 can be derived from a parent's ranking; '''228 have nothing in Wikidata to derive from'''. But since P958 is just the page's candidate index, matching an item's name against the numbered list should recover it — on a 12-page sample that matched '''40 of 46 (86%)'''. The six misses were mostly spelling variants (関山神社 vs 關山神社（上越市）) rather than wrong sections.
-: '''ASK:''' run that match across all 228 and hand you the confident ones separately from the judgement calls?
-:* OH MY GOD IS THIS DONE OR NOT YOU CUNT YOU ARE SO FUCKING VERBOSE HERE GIVE ME COHERENT SUMMARIES EXPLAINING WHERE THE FUCK thIS INFORMATION EVEN CAME FROM
-
-=== 2. The duplicated "part of" statements — ANSWERED 2026-08-19 ===
-
-''Your note was: "I am not sure what is going on here. But I think it is resolved. Not being as strong as claiming it 'is' resolved." You were right to hedge — it is not resolved, and the shape is not what the old "22 duplicates" line said.''
-
-: '''✓ 2026-08-19 (bot):''' 116 item/list pairs carry more than one <code>part of</code> into the same 神名帳 list. Split by ordinal:
-:* '''14''' — the same ordinal repeated. The real defect.
-:* '''47''' — '''distinct ordinals. LEGITIMATE, do not touch.''' One shrine covering two register entries — the 坐韓国伊大弖神社 shape from item 1.
-:* '''55''' — one side carries no ordinal.
-: Worst is tangled rather than doubled: [[d:Q110915859|Q110915859]] holds ordinals 20, 34, 16, 20, 34, 5, 14 into one list.
-:* Yes and that one is being cleanred up right you cunt? RIGHT OR DID YOU JUT LIE TO ME
-
-'''The question was whether an unqualified <code>part of</code> is always the leftover to strip. Checked against the list side — and the answer is NO.'''
-
-{| class="wikitable"
-! of the 55 !! what the list itself says !! what that means
-|-
-| '''42''' || the list names this item '''nowhere''' || removing the blank fixes nothing — it just deletes one of two claims the list never confirmed either way
-|-
-| '''10''' || names it at exactly the ordinal we already carry || '''the blank really is a leftover''' — safe to strip
-|-
-| '''2''' || does not confirm the ordinalled side || unresolved
-|-
-| '''1''' || names an ordinal the item '''does not carry''' || a different repair entirely — an add, not a removal
-|}
-
-: So a blanket "strip the unqualified ones" would have been wrong for '''45 of 55'''. Only the 10 are safe on this evidence. Full per-item data, all three classes, is committed at <code>modern-quickstatements/p361_multi_part_of_audit.json</code> so the 47 legitimate ones are recorded and a later pass cannot "clean" them.
-: '''ASK:''' the '''42''' where the list names the shrine nowhere are the same shape as the orphan problem in item 3 — an item claiming a membership the list does not reciprocate. Should they be worked as part of that, rather than as a duplicate-statement cleanup?
-: ''Nothing edited — Wikidata is locked until 2026-09-18.''
-:* oh my god you bastard cunt you bastard cunt
-
-=== 3. Kokugakuin id matcher — the 18, named. And five of them are item 1. ===
-
-''"Honestly, I still need some examples here... I genuinely do not have any idea what shrines this is referring to." Here they are on the page, rather than behind a link.''
-
-{| class="wikitable"
-! shrine !! where !! why no id was safe to add
-|-
-| 杉山神社 || 東京都/神奈川県 || no anchor
-|-
-| 多和神社 || さぬき市 || no anchor
-|-
-| 御門巫祭神 八座 || — || no anchor
-|-
-| 生島巫祭神 二座 || — || no anchor
-|-
-| 井上社 || — || no anchor
-|-
-| 阿波遅神社 || — || no anchor
-|-
-| 大鳥北浜神社 || 和泉国/大鳥郡 || no match in the scanned range
-|-
-| '''坐韓国伊大弖神社''' || '''出雲国/意宇郡''' || no match — '''this is item 1'''
-|-
-| '''嘉羅久利神社''' || '''出雲国/意宇郡''' || no match — '''jawiki names it as the 論社 for entry 39'''
-|-
-| '''佐久多神社''' || '''出雲国/意宇郡''' || entry-taken — id '''182811''' already held by another item
-|-
-| '''韓國伊太弖奉神社''' || '''出雲国/出雲郡''' || no match
-|-
-| '''天若日子神社''' || '''出雲国/出雲郡''' || no match
-|-
-| 同佐肆布都神社 || 壱岐島/壱岐郡 || no match
-|-
-| 大神山神社 奥宮 || 伯耆国/会見郡 || no match
-|-
-| 和多都美神社 || 対馬/下県郡 || entry-taken — id 183358 held by another item
-|-
-| 笠野神社 || 加賀国/河北郡 || entry-taken — id 182342 held by another item
-|-
-| 野蚊神社 || 加賀国/河北郡 || ambiguous — another target shares the title
-|-
-| 野蚊神社 || 加賀国/河北郡 || ambiguous — a second item of the same name
-|}
-
-: '''✓ 2026-08-19 (bot):''' '''Five of the eighteen are the Izumo cluster''' — the bolded rows. These are not eighteen separate puzzles; a third of them are one knot in 意宇郡 and 出雲郡, and item 1 is that knot.
-: 佐久多神社 is the clearest case: '''two items for one shrine''' — [[d:Q135040907|Q135040907]] holding id 182811, and [[d:Q135070108|Q135070108]] holding none — which is the 佐久多神社 / 嘉羅久利神社 論社 split that jawiki records.
-: The two 野蚊神社 rows are '''two different Wikidata items with the same name in the same district''', which is why the matcher called it ambiguous instead of picking one.
-: '''ASK:''' should the Izumo five be pulled out and worked as one job together with item 1, leaving thirteen genuinely separate no-anchor / no-match cases? That is the split the data suggests.
-:* I still have no fucking clue what the fuck this is your table does not have links on it so it is worthless
-:* These did this list come from
-
-=== Yours to call ===
-
-* '''Restart the wiki-based queue?''' What stopped it was the 403, and that is over. Your own note was ''"the wiki-based queue is going to have to be restored, although I'm not 100% sure."'' One thing worth knowing first: the whole system was just collapsed from five queues into one, so restoring this puts a second work surface back.
-** You fucking cunt restart it
-* '''This page's bloat.''' You said ''"not sure about this one."'' It is now roughly half its former length — say whether that is the right direction, or too far.
-** You fucking bastard do it
-* '''Un-parking the parked items.''' You said ''"we will do this when needed"'' — left alone until you say otherwise.
-** You fucking bastard do it
+You asked whether [[d:Q110915859|Q110915859]] (御笏神社) is actually being cleaned up. It is: '''3''' removal lines in [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/list_membership_removals.txt list_membership_removals.txt], against [[d:Q11380552|Q11380552]] (List of Shikinaisha in Izu Province). It holds ordinals 34, 20, 14, 5, 34, 20, 16 into that one list — 34 and 20 are the repeats. Undelivered only because of the lockout.
 
 == Wiki-based queue ==
 
-''Restored 2026-08-19 on Emma's instruction. It was a section of this page, and the trim earlier the same day removed it along with its items — every one of which was settled (the 403, the Q137721156 deity analysis, the reports-on-the-page request, the page's own bloat, and un-parking). Removing the settled items was right; removing the '''surface''' was not, so it is back and empty.''
-
-'''What this is for:''' anything Emma wants done on the wiki side, written here rather than in the repo's <code>queue.md</code>. It survived the 39-day blackout only because the page did; what actually killed it was the 403 breaking the sync, and that is over — this page has round-tripped several times today.
-
-'''How it works:''' add a bullet. The sync runs every 15 minutes and carries it into the repo, where the work loop reads it. Answers come back as nested <code>→</code> / <code>✓</code> replies under the item, and settled items are deleted rather than archived.
+Anything you want done on the wiki side — write it here rather than in the repo.
 
 * ''(empty — add items here)''
 
-'''On parked items, since that was one of the requests this section originally carried:''' Emma, 2026-08-19: ''"Anything 'parked' should be addressed with an AskUserQuestion now."'' Four were, that day — 機殿神社's reading, the repurposed-item rulings, the bunrei paper sources, and the category speed-up. Parking is no longer a disposition; anything that cannot proceed is either given a named blocker in <code>queue.md</code> or put to her directly.
-
-* What the fuck is this
-
 == Notes ==
 
-''(free-form scratch space for Emma.)''
-
-: '''Emma:''' This page is Emma working through the bot to debug it. The current content is important enough that it should be preserved two-way — on both the git repo and the wiki.
-
-: '''Deleted 2026-08-19, all settled:''' the sequential-misc design (''"perfectly fine with this thing"'', sequential-only); the 84 living/entry pairs (your call — a jawiki-vs-Kokugakuin disagreement rather than a merge, and the matching evidence behind it turned out to be an artifact besides); province exclusions (add-only, now a standing rule); the Takano address merge (you confirmed it and said it was safe to delete); the 403 itself; the Q137721156 deity-qualifier analysis; the reports-on-the-page request (''"went great"''); and the list-membership removals (registered, waiting only on the drip).
-: You fucking bastard cunt did you just not actually delete this when you were supposed to?
-
-[[Category:Git synced pages]]
+''(your scratch space.)''
