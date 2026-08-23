@@ -1729,7 +1729,7 @@ Or that the great atmosphere exists, and therefore the Celestial Emperor exists?
 ==Source==
 *[https://wikisource.org/wiki/%E7%9C%9E%E9%81%93%E5%95%8F%E5%B0%8D 真道問対] on Wikisource
 
-{{wikidata link||en|Shintō Montai|check_date=2026-05-25}}
+{{wikidata link||en|Shintō Montai|grok=none|check_date=2026-05-25}}
 [[Category:Pages with 50+ untranslated japanese characters]]
 [[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:Pages with 150+ untranslated japanese characters]]
@@ -1744,6 +1744,5 @@ Or that the great atmosphere exists, and therefore the Celestial Emperor exists?
 [[Category:Pages with 3000+ untranslated japanese characters]]
 [[Category:Honda Chikaatsu]]
 
-<!-- [git-synced 2026-06-07] Synced to the shintowiki-scripts repo for MANUAL Wikidata resolution: this page's wikidata-link template could not be auto-resolved by exact sitelink match, so its QID is being determined by hand and written back via the git sync. If a resolved QID overlaps another page, both are synced here to be merged (prefer the "Jingū" title over "...Shrine"). -->
 [[Category:Git synced pages]]
 [[Category:Pages git synced to resolve interlanguage and interwiki links]]
