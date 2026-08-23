@@ -86,13 +86,23 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 - ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
   true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
   one because nothing downstream can distinguish it.
-- ✅ **First tranche built 2026-08-23: 60 work-files**, and all 60 carry the new `GUESS:` option and
-  the three irregular-reading examples — checked across every file, not spot-checked. The builder
-  skipped **355 already staged or answered**, so the guard against re-queueing an answered item holds.
+- ✅ **Two tranches built and drained 2026-08-23 — 156 answered, 0 rejected, 0 pending.** Batch 1:
+  60 requested, 60 built, all carrying the new `GUESS:` option and the three irregular-reading
+  examples (checked across every file). Batch 2: 100 requested, **96 built** — 4 skipped with no
+  lead extract (redirect / disambig / empty) and deliberately no file written, so a later run
+  retries them. Answers in `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b}.tsv`.
+- ✅ **The `GUESS` path fired for the first time, and the source rule holds on real data.**
+  `Q11391067` 坂本神社八幡宮 — the jawiki article is titled and led as 八幡神社（はちまんじんじゃ）, so
+  the lead states a reading for a *different name form*, not for this one. Derived from components
+  that are regular here (坂本 さかもと + 神社 じんじゃ + 八幡宮 はちまんぐう) and staged as
+  `Q11391067|P1814|"さかもとじんじゃはちまんぐう"` with **no `S143`/`S4656`**, beside KANA lines that do
+  carry it. **1 GUESS in 156 answers** — the leads almost always state the reading outright.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
   builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **415 done,
-  0 pending → ~2,200 still unqueued.** Keep rebuilding in tranches with
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **510
+  resolved, 0 pending → ~2,120 still unqueued** (`_resolved.log`: 497 KANA · 8 KATAKANA · 2 NO_KANA
+  · 1 GUESS · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 508 lines). Keep rebuilding in
+  tranches with
   `build_name_in_kana_queue.py --limit N`, answer locally in batches
   (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
   delivers ~5/day, so local batches are the road.

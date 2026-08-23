@@ -1,0 +1,113 @@
+# name_in_kana batch 2, answered locally 2026-08-23 from the LEAD in each work-file.
+# Same rules as batch 1: first reading where the lead offers variants; 旧字体 /
+# alternate-kanji parentheticals are spelling variants, not readings; a second
+# parenthetical that is a PLACE name is not the shrine.
+#
+# ONE GUESS in this batch, and it is the first time that path has fired on real
+# data — Q11391067, see the note there.
+Q11382602	KANA: さくたじんじゃ
+Q11383230	KANA: さひめやまじんじゃ
+Q11387216	KANA: たけみなかたとみのみことひこかみわけじんじゃ
+Q11390855	KANA: やおじんじゃ
+# 坂本神社八幡宮: the item is 坂本神社八幡宮 but the jawiki article is titled and led as
+# 八幡神社（はちまんじんじゃ）, so the lead states a reading for a DIFFERENT name form and
+# not for this one. Derived from the components, each of which is regular here:
+# 坂本 さかもと + 神社 じんじゃ + 八幡宮 はちまんぐう. GUESS, so it carries no source.
+Q11391067	GUESS: さかもとじんじゃはちまんぐう
+Q11391073	KANA: はちまんじんじゃ
+Q11392351	KANA: ろくしょじんじゃ
+Q11393842	KANA: うつつじんじゃ
+Q11395685	KANA: いずみじんじゃ
+Q11395802	KANA: いではじんじゃ
+Q11396254	KANA: かったみねじんじゃ
+Q11396255	KANA: かったみねじんじゃ
+# 利雁神社: lead spells it 利鴈神社 (variant kanji 鴈/雁), same shrine, reading stated
+Q11396948	KANA: とかりじんじゃ
+Q11397359	KANA: さきたまじんじゃ
+Q11397865	KANA: さきとりじんじゃ
+Q11398386	KANA: つるぎじんじゃ
+Q11398387	KANA: つるぎじんじゃ
+Q11398887	KANA: かもじんじゃ
+# 加賀神社 (松江市) is かか, the Ishikawa one below is かが — different readings, same kanji
+Q11399719	KANA: かかじんじゃ
+Q11399720	KANA: かがじんじゃ
+Q11401286	KANA: きたぐちほんぐうふじせんげんじんじゃ
+Q11403068	KANA: ほっかいどうごこくじんじゃ
+Q11404272	KANA: きたのてんまんぐう
+Q11404278	KANA: きたのてんじんじゃ
+Q11404351	KANA: ほくもんじんじゃ
+Q11404773	KANA: じゅうさんじんじゃ
+Q11404814	KANA: じゅうにしゃじんじゃ
+Q11404815	KANA: じゅうにじんじゃ
+Q11405009	KANA: とおやまじんじゃ
+Q11405077	KANA: とおかえびすじんじゃ
+Q11405256	KANA: ちよほいなりじんじゃ
+Q11405387	KANA: ちかつしゃ
+Q11405388	KANA: ちかつじんじゃ
+Q11405390	KANA: ちかつじんじゃ
+Q11406714	KANA: ちばけんごこくじんじゃ
+Q11407720	KANA: なんぐうおたびじんじゃ
+Q11407881	KANA: みなみかたじんじゃ
+Q11407882	KANA: みなみかたじんじゃ
+Q11407883	KANA: みなみかたじんじゃ
+Q11408227	KANA: なんこじんじゃ
+Q11408599	KANA: なんぶじんじゃ
+Q11409089	KANA: いきしろじんじゃ
+Q11410120	KANA: いづはらはちまんぐうじんじゃ
+Q11410134	KANA: いつくしまじんじゃ
+Q11410135	KANA: いつくしまじんじゃ
+Q11410138	KANA: いつくしまじんじゃ
+Q11410141	KANA: いつくしまじんじゃ
+Q11410989	KANA: こじろういなりじんじゃ
+Q11411527	KANA: ふるまちあたごじんじゃ
+Q11412213	KANA: かのうじんじゃ
+Q11414032	KANA: よしだじんじゃ
+Q11414206	KANA: きっしょういんてんまんぐう
+Q11414781	KANA: なとりくまのさんしゃ
+Q11416775	KANA: くれはじんじゃ
+Q11417035	KANA: あじふじんじゃ
+Q11417045	KANA: あじまじんじゃ
+# 和田乃神社: ひなたわだ is the PLACE 日向和田, not the shrine
+Q11417905	KANA: わだのじんじゃ
+Q11418419	KANA: しながわじんじゃ
+Q11418537	KANA: からさきじんじゃ
+Q11419882	KANA: ししょじんじゃ
+Q11420029	KANA: よはしらじんじゃ
+Q11420142	KANA: しかんじますみよしじんじゃ
+Q11420410	KANA: くになかじんじゃ
+# 園韓神社: そのからかみのやしろ / そのからかみしゃ — first taken
+Q11422896	KANA: そのからかみのやしろ
+Q11423045	KANA: とさいなりじんじゃ
+Q11423307	KANA: つちやじんじゃ
+Q11424842	KANA: さかしたじんじゃ
+Q11425350	KANA: さかもとじんじゃ
+# 坐摩神社: いかすり / ざま — first taken
+Q11425667	KANA: いかすりじんじゃ
+Q11425668	KANA: ざまじんじゃ
+Q11425841	KANA: すいようじんじゃ
+Q11426034	KANA: じょうなんぐう
+Q11426120	KANA: きやまじんじゃ
+# 埴生神社 (中間市): はにゅう・はぶ — first taken
+Q11426348	KANA: はにゅうじんじゃ
+Q11427145	KANA: さいたまけんごこくじんじゃ
+Q11427801	KANA: ほりこしじんじゃ
+Q11428033	KANA: ほうとくにのみやじんじゃ
+Q11428852	KANA: しおがまじんじゃ
+Q11428858	KANA: しおがまじんじゃ
+Q11428859	KANA: しおがまじんじゃ
+Q11430618	KANA: たきじんじゃ
+Q11430889	KANA: たじはやひめじんじゃ
+Q11430893	KANA: たいじんじゃ
+Q11431091	KANA: たがじんじゃ
+Q11431094	KANA: たがじんじゃ
+Q11431887	KANA: おおくさはちまんぐう
+Q11432181	KANA: おおいどみずじんじゃ
+Q11432213	KANA: おおいじんじゃ
+Q11432214	KANA: おおいじんじゃ
+Q11432215	KANA: おおいじんじゃ
+Q11432217	KANA: おおいじんじゃ
+Q11433058	KANA: おおさきえびすじんじゃ
+Q11433137	KANA: おおはらおおみやじんじゃ
+Q11433243	KANA: おおともいなり
+Q11433513	KANA: おおわだすみよしじんじゃ
+Q11433665	KANA: おおくにたまじんじゃ
