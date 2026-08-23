@@ -516,6 +516,24 @@ not a stall.
 - ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's
   work-files, answer them here, `apply_local_answers.py --queue <q> --answers <tsv> --apply`, then
   the collector. All repo-local — no Miraheze request — so it runs through the blackout.
+  - ✅ **That road was BLOCKED for the two biggest queues until 2026-08-23, and silently.**
+    `apply_local_answers.py` offered six `--queue` choices while implementing one shape (key = QID,
+    file = `<key>.wiki`, marker = `ANSWER:`). `category_translation` is keyed by category TITLE with
+    a `TRANSLATED:` marker — every row was dropped by a `^Q\d+$` filter that ran *before* any
+    counter, so a real batch printed four zeros, the same output as a correct run on an empty batch.
+    `description_enrichment` uses an `ANSWERS:` **block** (`ANSWER:` does not match `ANSWERS:`) and
+    its files are named after the group's FIRST member while the answerable members are the others
+    inside the block. Fixed per-queue; 15 tests; end-to-end round-trip verified on a real file
+    (apply → collector reports Finished → reverted). Its module-scope `sys.stdout` rebinding also
+    moved into `main()` — third instance of that bug here.
+  - ▶ **Next rung, and it needs ONE decision made once, not per item:** the enwiki category-naming
+    convention to translate into. Worked example: `Category:いなべの Municipal History` is a damaged
+    `いなべ市の歴史` (jawiki `Q18716435`, real) — the `市の歴史` → ` Municipal History` replacement
+    that CLAUDE.md's "signal, not corruption" rule describes. Q18716435 has **no enwiki sitelink and
+    no en label**, so there is nothing canonical to copy and the convention has to be chosen:
+    `Category:History of Inabe` vs `Category:History of Inabe, Mie` (enwiki disambiguates city
+    categories where the article does). Settle it once, then batch. Do not answer them one at a time
+    with different conventions.
 - ▶ **Separately, find out why the routine is so slow.** ~5 items/day is a trickle, not a stall.
   `docs/remote_queue_routine_prompt.md`; the last known fix was the missing repo binding
   (`session_context.sources`).

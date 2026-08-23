@@ -4,6 +4,82 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (later) — the tool the queue names as "the road" did nothing for its two biggest queues
+
+queue.md A1 says the way to drain a work-queue is
+`apply_local_answers.py --queue <q> --answers <tsv> --apply`, then the collector. Ran it
+against `category_translation` to start on the 338 pending files. It wrote nothing, and
+said so in a way that reads like success.
+
+### One shape implemented, six advertised
+
+The script offered six `--queue` choices and implemented exactly one: key is a QID, file
+is `<key>.wiki`, marker is `<!-- ANSWER: -->`. Two of the six are not that shape.
+
+| queue | key | file | marker |
+|---|---|---|---|
+| name_in_kana · beppyo_p612 · label_typo · ronsha_ranking | `Qxxx` | `<key>.wiki` | `ANSWER:` |
+| **description_enrichment** | member `Qxxx` | the file whose ANSWERS block holds it | `ANSWERS:` block line |
+| **category_translation** | `Category:…` title | `<title, ':'→%3A>.wiki` | `TRANSLATED:` |
+
+`description_enrichment` fails twice over: `ANSWER:` does not match `ANSWERS:`, and its
+work-files are named after the group's **first** member while the answerable members are
+the *other* QIDs inside the block — so `<key>.wiki` finds the wrong file, or none.
+
+### The failure mode is the part worth keeping
+
+`load_answers` filtered on `^Q\d+$` **before incrementing any counter**. A category batch
+therefore printed:
+
+    would write 0 answer(s) into category_translation/ (0 work-file(s) already gone,
+    0 already answered, 0 with no marker)
+
+Four zeros — byte-identical to a correct run on an empty batch. There was no line that
+could have told you the rows had been thrown away. Rows are now rejected loudly, with line
+number and reason, and the summary carries a `N row(s) rejected` field.
+
+Same family as the two failures this week: a green workflow over five dead pipelines, and
+a lockout gate whose crash produced the same exit code as the answer it was supposed to
+give. Three different mechanisms, one shape — **the failure and the success print the
+same thing.**
+
+### Also fixed
+
+- **Spacing.** Splicing around the regex groups emitted `<!-- ANSWER:  value-->`, because
+  `\s*` after the colon is greedy and `(\s*-->)` then matched no space. Every collector
+  strips around the value so it parsed, but a hand-answered file did not look like a
+  routine-answered one. `fill()` normalises it, and a test pins that the collector's own
+  regex parses what this script writes.
+- **Module-scope `sys.stdout` rebinding moved into `main()`** — importing the module
+  replaced the caller's stdout, which breaks pytest capture outright. **Third instance** of
+  this bug in the repo, after `generate_soja_only.py` and `build_label_typo_review_queue.py`.
+
+15 tests, including that `ANSWER` must not match `ANSWERS`, that a block line for `Q9701`
+must not match the `Q97013988` line (an off-by-prefix write would put one member's
+description on another), and that this script and the builder agree on the filename rule —
+pinned against the builder itself, not a copy of its output. Full suite **1554 passed**.
+
+Verified end to end on a real file: applied, the collector reported it Finished, then
+reverted. The answer was not kept — see below.
+
+### The next rung needs one decision, not 338
+
+`Category:いなべの Municipal History` is a damaged `いなべ市の歴史` — the
+`市の歴史` → ` Municipal History` replacement that CLAUDE.md's *"almost every weird thing
+is signal, not corruption"* rule describes, and the jawiki category is real (`Q18716435`).
+But that item has **no enwiki sitelink and no en label**, so there is nothing canonical to
+copy: the English form has to be *chosen*, `Category:History of Inabe` against
+`Category:History of Inabe, Mie`. That is a convention to settle once and then batch, not
+to decide 338 times, so the translation was reverted rather than committed on one item's
+worth of confidence.
+
+### A-CI unchanged
+
+`cleanup-loop` last ran 2026-08-22T03:10:48Z, failure. It has not fired since; still
+BLOCKED-ON-EXTERNAL on the next scheduled run.
+
+---
+
 ## 2026-08-23 — the collectors had answers waiting behind a "0 answered" line three weeks old
 
 A0/A1 recorded *"Ronsha-ranking (34), category-translation (353) — 0 answered"* and treated the
