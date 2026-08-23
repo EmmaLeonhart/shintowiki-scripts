@@ -100,23 +100,58 @@ these needed her; both had been sitting as questions.
   `modern-quickstatements/p361_multi_part_of_audit.json` (`blank_ordinal_side`, 55 entries, of which
   42 have `list_says: []`). The 47 `distinct_ordinals_LEGITIMATE` are NOT to be touched.
 
-## A-CI. ▶ Confirm the cleanup-loop is green again, and that Sunday regenerates the pairs file
+## A-CI. The 08-22 CI repair is VERIFIED. A separate, older defect remains.
 
-The daily loop failed **every run 2026-08-19 → 2026-08-22** — `secrets: inherit` missing on two
-reusable-workflow calls, plus 69 files importing `shinto_miraheze.*` with no sys.path bootstrap.
-Both fixed 2026-08-22 (DEVLOG); two structural tests now pin them. Two things still to check, and
-neither is done by reading the diff:
+Run `32615320387` (2026-08-23) settles the first half and rediagnoses the second.
 
-- ▶ **The next scheduled `cleanup-loop` run (≈03:10 UTC) should have zero failed jobs.**
-  `gh run list --workflow=cleanup-loop.yml --limit 1` then `gh run view <id> --json jobs`. Four
-  jobs were red — `generate-quickstatements`, `generate-pages`, `cleanup`,
-  `untransclude-crud-templates` — and `submit-quickstatements` was **skipped** because its
-  dependency had failed, so a green `submit` step is the real signal, not a green top line.
-- ▶ **`description_label_pairs.txt` must regenerate on a SUNDAY run.** It is a `date -u +%u = 7`
-  step inside `generate-quickstatements.yml`, so it has not run since **2026-08-02**. The file
-  still holds **5 `Did` lines against 3,514 `Duk`** — the exact shape the 08-21 label-only fix
-  addresses. After the first surviving Sunday run, `Did` should be in the thousands. If it is
-  not, the fix did not take and the branch to re-read is the `new == desc` arm.
+**✅ Both 08-22 defects are fixed, measured on the run rather than on the diff.** All four jobs
+that were red on 08-19 → 08-22 came back green or better:
+
+| job | 08-22 | 08-23 |
+|---|---|---|
+| `generate-pages / build` | failure (`MIRAHEZE_EMAIL is not set`) | **success** |
+| `generate-pages / deploy` | skipped | **success** |
+| `cleanup / cleanup` | failure (`ModuleNotFoundError`) | **success** |
+| `untransclude-crud-templates` | failure (`ModuleNotFoundError`) | **success** |
+| `generate-quickstatements / generate` | failure in ~90s | **cancelled at the 75m cap** |
+
+Every other job in the run is green. `secrets: inherit` and the 69 unbootstrapped imports are
+done; nothing further to check there.
+
+## A-CI2. ▶ The SUNDAY path does not fit in `generate-quickstatements`' timeout — and did not before this week
+
+⚠ **I got this wrong in the 05:10 status report** and am correcting it rather than leaving it: I
+guessed the 08-22 bootstrap fix had doubled the runtime by reviving 17 dead scripts. It had not.
+The pattern is Sunday-only and it predates the fix:
+
+- **2026-08-16 (Sunday) — cancelled.** Before the bootstrap bug even existed (`8ac7d8a2`, 08-19).
+- **2026-08-23 (Sunday) — cancelled.**
+- **08-17 (Mon), 08-18 (Tue) — success, 31m28s and 31m50s.**
+
+So the Sunday-gated steps are the overrun, and the header comment above them says they were gated
+*"so the daily job stays inside its timeout"* — which worked for the daily path and quietly failed
+for the weekly one. My fix did make it worse (`generate_description_adds.py` is Sunday-gated, was
+one of the 17, and now actually runs) but it is not the cause.
+
+Where the budget went on 08-23, from the log's own timestamps — ~55 minutes in four steps:
+
+    1060s  select_label_proposals    2,642,704 label proposals loaded
+     867s  description fixes         1,267 collision groups
+     723s  fetch [[QuickStatements/P11250]] from shintowiki
+     655s  P459 qualifiers, phase 1
+
+**The generators FINISHED.** It was cancelled inside the *commit* step, with the modified files
+already listed — so a full Sunday regeneration was computed and then thrown away. That is why
+`description_label_pairs.txt` has not moved since **2026-08-02** across three Sundays, and why it
+still holds **5 `Did` against 3,514 `Duk`**.
+
+- ✅ `timeout-minutes: 75` → **150**, with the measurement recorded in the workflow.
+- ▶ **Still to verify on the next Sunday run:** `submit-quickstatements` non-skipped, and `Did` in
+  the thousands. If `Did` does not move, the label-only fix did not take and the branch to re-read
+  is the `new == desc` arm of `generate_description_fixes.py`.
+- ▶ **If it overruns again, split rather than raise.** The Sunday-only steps belong in their own
+  weekly workflow — the repo already does this with `weekly-wiki-edit-test.yml` — instead of
+  riding the daily job's budget. Raising the cap is the small fix, not the right shape.
   ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
 
 ## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining

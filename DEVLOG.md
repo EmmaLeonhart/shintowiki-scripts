@@ -4,6 +4,70 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (fourth) — the CI repair is verified, and the Sunday overrun is older than my fix
+
+Run `32615320387` finished. It answers `A-CI` and corrects something I asserted in the 05:10
+status report.
+
+### The 08-22 repair is verified
+
+All four jobs that were red every run from 08-19 to 08-22 came back green, and every other job in
+the run is green:
+
+| job | 08-22 | 08-23 |
+|---|---|---|
+| `generate-pages / build` | failure, `MIRAHEZE_EMAIL is not set` | success |
+| `generate-pages / deploy` | skipped | success |
+| `cleanup / cleanup` | failure, `ModuleNotFoundError` | success |
+| `untransclude-crud-templates` | failure, `ModuleNotFoundError` | success |
+
+`secrets: inherit` and the 69 unbootstrapped imports are settled.
+
+### The correction
+
+In the 05:10 report I wrote that `generate-quickstatements` had roughly doubled and that the likely
+cause was my own bootstrap fix reviving 17 scripts that had been dying in milliseconds. That was a
+hypothesis from two data points and it is wrong.
+
+**The overrun is Sunday-only and predates the fix.** `2026-08-16` was a Sunday and it was
+**cancelled** — three days before the bootstrap bug was introduced (`8ac7d8a2`, 08-19). Monday 08-17
+and Tuesday 08-18 both finished in ~31m30s. So the daily path fits and the weekly path does not.
+
+The steps are Sunday-gated, and the comment above them says why: *"they refresh weekly on Sundays —
+the daily job stays inside its timeout."* That reasoning held for the daily path and quietly failed
+for the weekly one. My fix did make it worse — `generate_description_adds.py` is Sunday-gated and was
+one of the 17 — but it is not the cause, and saying so would have been convenient rather than true.
+
+### Where the 75 minutes went, from the log's timestamps
+
+    1060s  select_label_proposals    2,642,704 label proposals loaded
+     867s  description fixes         1,267 collision groups
+     723s  fetch [[QuickStatements/P11250]] from shintowiki
+     655s  P459 qualifiers, phase 1
+
+~55 minutes in four steps. **The generators finished.** The cancellation landed inside the *commit*
+step, with the modified files already enumerated and
+`description_pair_collision_groups.json` being removed — so a complete Sunday regeneration was
+computed and then discarded for want of the last minute of a 75-minute budget.
+
+That is the mechanism behind a fact recorded three times this week without an explanation:
+`description_label_pairs.txt` last moved on **2026-08-02**, and three Sundays have passed.
+
+### Fixed, and the better fix named rather than taken
+
+`timeout-minutes: 75` → **150**, with the measurement in the workflow so the next person does not
+re-derive it. Raising a cap is the small fix. The right shape is to split the Sunday-only steps into
+their own weekly workflow — the repo already does exactly that with `weekly-wiki-edit-test.yml` —
+rather than have a weekly job ride a daily job's budget. Recorded in `A-CI2` as the move if it
+overruns again, not done speculatively today.
+
+Also today: the weekly wiki edit-test re-ran and passed (`82940c3e`), so the wiki gate stays open on
+a fresh measurement rather than on a four-day-old one.
+
+**Nothing delivered.** The Wikidata lockout holds to 2026-09-18.
+
+---
+
 ## 2026-08-23 (later still) — entry 39 is not missing, and the table that said so was the problem
 
 The un-synced page was restored and the repair verified against the live wiki rather than assumed:

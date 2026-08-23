@@ -15,7 +15,23 @@ env:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    # 75 -> 150, measured 2026-08-23. The SUNDAY path does not fit in 75 minutes and
+    # has not for at least two weeks: 2026-08-16 (Sunday) cancelled, 2026-08-23
+    # (Sunday) cancelled, while 08-17 (Mon) and 08-18 (Tue) both finished in ~31m30s.
+    # The Sunday-only steps below are gated precisely so "the daily job stays inside
+    # its timeout" — that worked for the daily path and quietly failed for the weekly
+    # one.
+    #
+    # Where the 75 minutes went on the 08-23 run, from the log's own timestamps:
+    #   1060s  select_label_proposals   (2,642,704 label proposals loaded)
+    #    867s  description fixes        (1,267 collision groups)
+    #    723s  fetch [[QuickStatements/P11250]] from shintowiki
+    #    655s  P459 qualifiers, phase 1
+    # ~55 minutes in four steps, and it was cancelled *in the commit step* with the
+    # generators already finished — so the work was done and then discarded, which is
+    # why description_label_pairs.txt has not moved since 2026-08-02 despite three
+    # Sundays passing.
+    timeout-minutes: 150
     steps:
       - name: Checkout
         uses: actions/checkout@v5
