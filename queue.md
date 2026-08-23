@@ -496,11 +496,23 @@ not a stall.
   - ▶ **One real oddity, unfixed and minor:** Q125302213's *English* label is `6世紀日本の政治家`,
     Japanese text. The staged fix prefixes it to `Category:6世紀日本の政治家` — correct as far as it
     goes, but it stays untranslated. Not damage; the label was already Japanese.
-- Ronsha-ranking (34), category-translation (353) — 0 answered.
-  `docs/description_enrichment_pipeline.md`.
+- **All five collectors drained 2026-08-23** — the "0 answered" line above was three weeks stale.
+  `docs/description_enrichment_pipeline.md`. Counts after the run:
+  name-in-kana **0** · beppyo-P612 **0** · description-enrichment **69** · ronsha-ranking **32** ·
+  category-translation **338**. Collected: **4** descriptions, **1** ronsha ranking, **15** category
+  translations. Nothing delivered — the Wikidata lockout holds to 2026-09-18; this is staging only.
+  - The four descriptions were live-checked against `wbgetentities` before applying, not trusted
+    from the work-file snapshot: all four had **no en description**, so the pipeline's one licensed
+    action (describe an item that has none) genuinely applied. A collected description was withdrawn
+    as destructive once before; the snapshot in a work-file is not evidence about the item today.
   - ⚠️ **Ronsha ranking is NOT mechanical** — each work-file asks which of several candidates is
     the likeliest true Engishiki shrine, needing per-candidate jawiki/Kokugakuin research. Do not
     batch-answer it the way name-in-kana was batched.
+  - **Q135040248 stays undecidable, and its stated blocker is a dead end** — the routine said it
+    needed "Wikidata access to check P131". Checked: P131 is **identical** across all three
+    candidates and the Engishiki item (Q1047144 + Q7402764), as are P31 and P17; none has
+    coordinates or a jawiki sitelink, so the usual research path does not exist for them. Do not
+    retry the P131 route. Reasoning in `ronsha_ranking_review/_undecidable.log`.
 - ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's
   work-files, answer them here, `apply_local_answers.py --queue <q> --answers <tsv> --apply`, then
   the collector. All repo-local — no Miraheze request — so it runs through the blackout.

@@ -4,6 +4,68 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 — the collectors had answers waiting behind a "0 answered" line three weeks old
+
+A0/A1 recorded *"Ronsha-ranking (34), category-translation (353) — 0 answered"* and treated the
+cloud routine as a trickle not worth checking. Running all five collectors found **20 answers
+sitting uncollected**, so the line was stale rather than accurate.
+
+| queue | pending after | collected |
+|---|---|---|
+| name-in-kana | 0 | 0 |
+| beppyo-P612 | 0 | 0 |
+| description-enrichment | 69 | **4** |
+| ronsha-ranking | 32 | **1** (+1 undecidable) |
+| category-translation | 338 | **15** |
+
+The precondition was this session's own earlier fix: every one of these collectors is in the set of
+69 files that raised `ModuleNotFoundError` when run by path. They were checked to import before use.
+
+### The descriptions were verified live, not from the work-file
+
+The work-file carries a snapshot of the item, and `protected_members()` reads that snapshot. A
+description collected through this pipeline once turned out to be destructive and had to be
+withdrawn, so the snapshot is not evidence about the item today. One `wbgetentities` call for the
+four QIDs (read-only, one request — not a SPARQL sweep) confirmed all four have **no en
+description**, which is the pipeline's one licensed action:
+
+    Q135039303  Unino Shrine      -> Shinto shrine in Taki, Mie Prefecture, Japan
+    Q135041491  Hyōzu Shrine      -> Shinto shrine in Iki, Nagasaki Prefecture, Japan
+    Q135041550  Sumiyoshi Shrine  -> Shinto shrine in Tsushima, Nagasaki Prefecture, Japan
+    Q135404283  Yasaka Shrine     -> Shinto shrine enshrining Gozu Tennō and Susanoo
+
+All four are single-member groups — the 51 the 08-21 audit flagged as not needing disambiguation.
+That is an argument about whether to keep *generating* the queue, not a reason to discard four
+correct answers already written.
+
+### One undecidable, and its stated blocker is a dead end
+
+Q135040248 came back UNDECIDABLE with the reason *"without Wikidata access to check P131 (location)
+properties, cannot determine which Q-number corresponds to the Sawa location."*
+
+Checked rather than accepted. **P131 is identical across all three candidates and the Engishiki item
+itself** — `Q1047144` + `Q7402764` on Q135069920, Q135069921, Q135270265 and Q135040248 alike — as
+are P31 and P17. Neither Kasuga item has coordinates, and **none of the candidates has a jawiki
+sitelink**, so the per-candidate jawiki/Kokugakuin research the queue calls for has no source to
+work from. Wikidata access would not have decided it; the route is closed, and that is now recorded
+in `_undecidable.log` so it is not retried.
+
+The only asymmetries are cosmetic: Q135069921's en label is `Kasuga- Shrine`, a typo, and
+Q135270265 already carries the Engishiki name 保曽呂伎神社 and has coordinates. A name match plus one
+unverifiable web claim is not a ronsha ranking. It stays undecidable.
+
+**Nothing delivered.** The Wikidata lockout holds to 2026-09-18; all of this is staging.
+
+### Still unverified: the 08-22 CI repair
+
+The scheduled `cleanup-loop` has not fired since 2026-08-22T03:10 UTC. `A-CI` stays open —
+BLOCKED-ON-EXTERNAL on the next scheduled run (≈03:10 UTC), with a green `submit-quickstatements`
+as the real signal rather than a green top line. `label-generator-regenerate.yml` ran clean on the
+push (12m27s, success), but its five pipelines were fixed by the **08-20** ordering commit, not by
+this one — the two file sets do not overlap, so that run is not evidence either way.
+
+---
+
 ## 2026-08-22 — four days of red CI nobody was reading, and a gate that crashed into the right answer
 
 The daily `cleanup-loop` has failed on **every run since 2026-08-19** — four consecutive

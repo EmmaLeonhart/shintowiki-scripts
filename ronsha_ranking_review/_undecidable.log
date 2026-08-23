@@ -1,0 +1,11 @@
+Q135040248 Both Q135069920 and Q135069921 are Kasuga Shrines in Fukui with nearly identical Japanese names (春日神社). Web research indicates a Kasuga Shrine in Sawa, Awara City was originally the Hosorokino Shrine, but without Wikidata access to check P131 (location) properties, cannot determine which Q-number corresponds to the Sawa location.
+Q135040248 [checked 2026-08-23] The stated blocker is a DEAD END, measured not assumed: P131 is
+  IDENTICAL across all three candidates and the Engishiki item itself -- Q1047144 + Q7402764 on
+  Q135069920, Q135069921, Q135270265 and Q135040248 alike. Wikidata access would not have decided
+  it; do not retry that route. Nothing else separates the two Kasuga items either: same P31 set,
+  same P17, no coordinates on either, and NO jawiki sitelink on any candidate, so the usual
+  per-candidate jawiki/Kokugakuin research path does not exist for them. The only asymmetries are
+  cosmetic (Q135069921's en label is "Kasuga- Shrine", a typo) and one candidate, Q135270265,
+  already carries the Engishiki name 保曽呂伎神社 and has coordinates. A name match plus one
+  unverifiable web claim is not enough to rank a ronsha, and queue.md A1 says this pipeline is not
+  to be answered mechanically. Stays undecidable until someone has a real source.
