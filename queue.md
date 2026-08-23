@@ -4,7 +4,7 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: GO -->
-**Status: 🟢 GO** (weekly edit-test passed, 2026-08-19 01:54 UTC) — wiki editing is live for the week; work-loop, start clearing the ❓ DECISIONS.
+**Status: 🟢 GO** (weekly edit-test passed, 2026-08-23 09:48 UTC) — wiki editing is live for the week; work-loop, start clearing the ❓ DECISIONS.
 The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.
 
 > ✅ **THE BLACKOUT IS OVER — ended 2026-08-19T01:54 UTC, and this paragraph is the record, not the
