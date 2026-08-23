@@ -1,0 +1,63 @@
+__NOTOC__
+
+== Open questions ==
+
+=== Was the wiki agent standardised? — you asked this 08-19 and never got the answer here ===
+
+Your hypothesis: ''"There might have been some Shinto wiki edits that were not properly done if the user agent was not standard across all of the edits."'' You were right, and it was worse than one script.
+
+'''~30 distinct bot names across 58 files.''' The farm allowlists '''one exact string''', so everything running as <code>ShintoWikiBot/1.0</code>, <code>ShintoOrchestrator/1.0</code>, <code>ShintoWikiLabels</code>, <code>ShrineRankingPageBot</code>, <code>ShikinaishaListBot</code> and the rest could not be served no matter what the allowlist said. Three more found in the same pass: 6 files sent the '''wiki-side''' contact to <code>www.wikidata.org</code>; 14 shipped <code>{contact('wikidata')}</code> as literal text, braces and all; 4 wrapped the agent import in a <code>try/except</code> that '''failed open''' to a hand-built string, marked no-cover.
+
+: '''✓''' All fixed 2026-08-19 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/8ac7d8a2 8ac7d8a2]). <code>tests/test_no_hardcoded_user_agents.py</code> bans the pattern rather than the instances — the first version banned literals ''naming'' a known bot, which is why it caught 10 files and missed 48.
+: '''This answer has existed in DEVLOG.md since 08-19 and was never put here.''' That is the actual complaint you raised on 08-23, and it is a fair one: answered in the log I write, absent from the page you read.
+
+=== Ukrainian and Indonesian labels ===
+
+'''Found it. One bug, and it explains why uk and id behaved opposite ways.'''
+
+Where it came from: <code>generate_description_fixes.py</code>, which has handled this since your 2026-07-07 spec — set the standardised description, then add the label, as one unit, 100/day, into [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt].
+
+It had this:
+
+<pre>
+new = pref_template or generic
+if not new or new == desc:
+    skipped += 1
+    continue          # <- dropped the LABEL too
+</pre>
+
+An item whose description was '''already''' the standard string got skipped entirely, label included — even though missing a label is the only reason it is a target. Your own 2025 bot pass had already standardised every Indonesian description to <code>kuil Shinto di Prefektur {pref}, Jepang</code>, so that branch caught all '''5,024''' of them on every weekly run. Ukrainian was never standardised, so uk sailed past it.
+
+That is the whole asymmetry. The file today: '''3,514 uk''' against '''5 id'''.
+
+: '''✓''' Fixed 2026-08-21 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]) — that case now emits a '''label-only''' line through the same uniqueness check. Not yet visible: the file only regenerates on a '''Sunday''' CI run, and CI was broken 08-19 → 08-22 (fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/3b0f44c8 3b0f44c8]). First Sunday run that survives, id should go from 5 to thousands. If it does not, the branch to re-read is that one.
+
+=== Izumo — entry 39 has no item ===
+
+You said: ''"IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT."''
+
+意宇郡 entry '''39''', 同社坐韓国伊太弖神社, host precinct [[:ja:佐久多神社|佐久多神社]] — the other two entries have items ([[d:Q135040778|Q135040778]] entry 19, [[d:Q135040786|Q135040786]] entry 28); this one does not.
+
+: '''→''' Nothing is staged for it — checked, not assumed. Item creation is gated by your Wikidata lockout to 2026-09-18, so it goes into <code>queue.md</code> to be staged now and created the day the lockout lifts. Not parked, not waiting on you.
+
+=== The 42 that no list confirms ===
+
+Of the 55 shrines carrying an unqualified <code>part of</code>, '''42''' are ones the register list names '''nowhere''' — so there is no leftover to strip, the membership itself is unconfirmed. Data: [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/p361_multi_part_of_audit.json p361_multi_part_of_audit.json].
+
+: '''→''' Treating these as an orphan-membership problem rather than a duplicate-statement one. Moved to <code>queue.md</code>; no longer a question for you.
+
+=== 御笏神社 — yes, it is staged ===
+
+You asked whether [[d:Q110915859|Q110915859]] (御笏神社) is actually being cleaned up. It is: '''3''' removal lines in [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/list_membership_removals.txt list_membership_removals.txt], against [[d:Q11380552|Q11380552]] (List of Shikinaisha in Izu Province). It holds ordinals 34, 20, 14, 5, 34, 20, 16 into that one list — 34 and 20 are the repeats. Undelivered only because of the lockout.
+
+== Wiki-based queue ==
+
+Anything you want done on the wiki side — write it here rather than in the repo.
+
+* ''(empty — add items here)''
+
+== Notes ==
+
+''(your scratch space.)''
+
+[[Category:Git synced pages]]

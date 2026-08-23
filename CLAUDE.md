@@ -53,6 +53,23 @@ every session and every work-loop tick; each item is METABOLISED — appended to
 completion), `== Notes ==` (Emma's scratch). The page is wiki-wins: always pull the live wiki
 version before editing repo-side.
 
+## ⛔ NEVER drop `[[Category:Git synced pages]]` when editing a `git_synced/` file
+
+That trailing category is the sync's **membership test**, not decoration. Remove it and
+`sync_git_synced_pages.py` behaves exactly as written: it pushes your text to the wiki with the
+summary *"removed from Git synced pages category"*, then `local_path.unlink()`s the file. Both
+halves are correct — the page leaves the sync set because you told it to.
+
+Happened 2026-08-23 to `git_synced/Open questions.wiki`. A session rewrote the page wholesale to trim
+it — which Emma had asked for three times — and did not carry the last line across. The CI sync
+pushed the categoryless text at 04:03:59Z and deleted the local file nine seconds later. Nothing was
+lost (the wiki kept the content, git kept everything) but the page silently left the sync set and the
+only symptom was the file vanishing on the next `git pull`.
+
+**When rewriting any `git_synced/` file, diff the old and new tails before committing.**
+`shinto_miraheze/tests/test_open_questions_stays_synced.py` pins it for the one file in that
+directory that is hand-edited; the other ~2,850 are written by the sync itself.
+
 ## `[[Open questions]]` page — read at session start, prune as items resolve
 
 `git_synced/Open questions.wiki` (mirrored to the wiki page [[Open questions]] on shinto.miraheze.org, https://shinto.miraheze.org/wiki/Open_questions) is the human↔bot interface for blockers, design questions, and instructions Emma wants the bots to act on. Agents are responsible for keeping it accurate — it is not a write-once seed list.
