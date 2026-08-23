@@ -383,6 +383,24 @@ When the user says "a cron job," "a cron," "a CronCreate," "set up a cron," or "
 * **Remote claude.ai routine** (`RemoteTrigger`) = only when the user explicitly says "remote," "on the cloud," "a Claude remote thing," names a cloud model for a recurring job (e.g. "a daily Sonnet run"), or invokes the `/schedule` command. These are for bulk LLM grunge work done by Claude in the cloud (translations, dup-content merges, the remote-queue consumer).
 * Picking the wrong one is a real error. A "cron" request must never be downgraded into a remote routine, and you must not ask the user to choose — infer from their exact words: "cron" → local; "remote/cloud/Sonnet-routine/`/schedule`" → remote.
 
+## P13677 + P958: identity is the PAIR, and section 0 is not unique (Emma, 2026-08-19)
+
+Her correction, verbatim, after a session reported Kokugakuin ids as duplicates: *"these do not in
+fact match — you are not looking at the section qualifiers. They are meant to be unique by the
+combination of Kokugakuin University Digital Museum entry ID (P13677) and its qualifier section
+(P958)… because each ID is supposed to have many different entries, because there are multiple things
+on each page, and they're supposed to be unique by their qualifier — except if their qualifier is
+zero, at which point they do not even need to be unique."*
+
+- **One Kokugakuin page = one 927 register entry**, and the page lists that entry's 論社 as numbered
+  blocks (`現社名など（１）（２）（３）…`). **P958 is which numbered candidate the item is.**
+- **A shared P13677 is NOT a duplicate.** Many items legitimately share an id and are separated by
+  P958. Any check that reports duplicates on the id alone is reporting normal data as a defect.
+- **`0` and `n/a` carry no uniqueness** — they mean "not one of the numbered candidates", so two
+  items may hold the same id with section `0` and neither is wrong.
+- This was recorded only in `queue.md` prose until 2026-08-23. It is a data-model rule, so it lives
+  here.
+
 ## Wikidata data model for shrine festivals & bunrei
 
 **The authoritative model is [`docs/wikidata_shrine_festival_model.md`](docs/wikidata_shrine_festival_model.md)**

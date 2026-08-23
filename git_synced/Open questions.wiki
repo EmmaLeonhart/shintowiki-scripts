@@ -2,6 +2,15 @@ __NOTOC__
 
 == Open questions ==
 
+=== Was the wiki agent standardised? — you asked this 08-19 and never got the answer here ===
+
+Your hypothesis: ''"There might have been some Shinto wiki edits that were not properly done if the user agent was not standard across all of the edits."'' You were right, and it was worse than one script.
+
+'''~30 distinct bot names across 58 files.''' The farm allowlists '''one exact string''', so everything running as <code>ShintoWikiBot/1.0</code>, <code>ShintoOrchestrator/1.0</code>, <code>ShintoWikiLabels</code>, <code>ShrineRankingPageBot</code>, <code>ShikinaishaListBot</code> and the rest could not be served no matter what the allowlist said. Three more found in the same pass: 6 files sent the '''wiki-side''' contact to <code>www.wikidata.org</code>; 14 shipped <code>{contact('wikidata')}</code> as literal text, braces and all; 4 wrapped the agent import in a <code>try/except</code> that '''failed open''' to a hand-built string, marked no-cover.
+
+: '''✓''' All fixed 2026-08-19 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/8ac7d8a2 8ac7d8a2]). <code>tests/test_no_hardcoded_user_agents.py</code> bans the pattern rather than the instances — the first version banned literals ''naming'' a known bot, which is why it caught 10 files and missed 48.
+: '''This answer has existed in DEVLOG.md since 08-19 and was never put here.''' That is the actual complaint you raised on 08-23, and it is a fair one: answered in the log I write, absent from the page you read.
+
 === Ukrainian and Indonesian labels ===
 
 '''Found it. One bug, and it explains why uk and id behaved opposite ways.'''
