@@ -86,8 +86,10 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 - ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
   true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
   one because nothing downstream can distinguish it.
-- ✅ **Three tranches built and drained 2026-08-23 — 252 answered, 0 rejected, 0 pending.**
-  60 + 96 + 96. Answers in `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c}.tsv`.
+- ✅ **Five tranches built and drained 2026-08-23 — 362 answered, 0 rejected, 0 pending.**
+  60 + 96 + 96 + 10 + 100. Answers in
+  `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e}.tsv`. The last tranche built a
+  clean 100 with **zero skips**, which is the loop fix holding.
 - ✅ **The permanent skip loop is CLOSED 2026-08-23.** `Q11391058`, `Q11391059`, `Q11391060`
   (three Okazaki 八幡社) and `Q11396252` (刈田嶺神社 (七ヶ宿町)) were re-fetched and re-skipped by
   every tranche — three in a row printed an identical four — because the builder wrote no file
@@ -102,9 +104,9 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
     behaviour and the prompt, including that the old `continue` cannot come back.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
   builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **616
-  resolved, 0 pending → ~2,017 still unqueued** (`_resolved.log`: 596 KANA · 8 KATAKANA · 6 GUESS
-  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 612 lines). Keep rebuilding in
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **716
+  resolved, 0 pending → ~1,917 still unqueued** (`_resolved.log`: 696 KANA · 8 KATAKANA · 6 GUESS
+  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 712 lines). Keep rebuilding in
   tranches with
   `build_name_in_kana_queue.py --limit N`, answer locally in batches
   (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
