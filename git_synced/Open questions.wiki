@@ -32,13 +32,16 @@ That is the whole asymmetry. The file today: '''3,514 uk''' against '''5 id'''.
 
 : '''✓''' Fixed 2026-08-21 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]) — that case now emits a '''label-only''' line through the same uniqueness check. Not yet visible: the file only regenerates on a '''Sunday''' CI run, and CI was broken 08-19 → 08-22 (fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/3b0f44c8 3b0f44c8]). First Sunday run that survives, id should go from 5 to thousands. If it does not, the branch to re-read is that one.
 
-=== Izumo — entry 39 has no item ===
+=== Izumo — entry 39 is not missing, it is riding on entry 28's item ===
 
-You said: ''"IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT."''
+You said: ''"IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT."'' Still the right call, but the table you were reading understated it — I checked the live items, not the table.
 
-意宇郡 entry '''39''', 同社坐韓国伊太弖神社, host precinct [[:ja:佐久多神社|佐久多神社]] — the other two entries have items ([[d:Q135040778|Q135040778]] entry 19, [[d:Q135040786|Q135040786]] entry 28); this one does not.
+'''[[d:Q135040786|Q135040786]] already carries entry 39.''' Its <code>part of</code> into [[d:Q11395853|Q11395853]] holds '''two''' statements: ordinal '''28''' and ordinal '''39'''. One item doing duty for two register entries.
 
-: '''→''' Nothing is staged for it — checked, not assumed. Item creation is gated by your Wikidata lockout to 2026-09-18, so it goes into <code>queue.md</code> to be staged now and created the day the lockout lifts. Not parked, not waiting on you.
+And its identity is entry '''28''', not 39 — its ancient-name statement reads 同社坐韓国伊'''大'''弖神社, the 大 spelling. Entry 39 is 伊'''太'''弖, which matches [[d:Q135040778|Q135040778]] (entry 19).
+
+: '''→''' So it is create-then-'''move''', not just create: the ordinal-39 statement has to come off [[d:Q135040786|Q135040786]] once the new item holds it, and per the standing rule that is two scripts with a SPARQL check between, never one. The new item will also share both labels with [[d:Q135040778|Q135040778]] — the two entries genuinely have the same name — so it needs a distinguishing description written at creation.
+: Staged in <code>queue.md</code>. Nothing goes out until your lockout lifts 2026-09-18.
 
 === The 42 that no list confirms ===
 

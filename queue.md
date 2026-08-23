@@ -69,12 +69,31 @@ taxonomy above, or goes to her directly.
 Emma, on the page, about exactly this shape: *"OH MY GOD IS THIS DONE OR NOT YOU CUNT"*. Neither of
 these needed her; both had been sitting as questions.
 
-- ▶ **意宇郡 entry 39, 同社坐韓国伊太弖神社, needs an item.** Her instruction, verbatim: *"IF THERE IS
-  NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT."* Entries 19 and 28 have items
-  (`Q135040778`, `Q135040786`); 39 does not, and **nothing is staged for it** — grepped every atomic
-  file, not assumed. Host precinct 佐久多神社. Stage the creation now via `create_items.py`'s batch
-  format; it lands the day the lockout lifts. BLOCKED-ON-EXTERNAL for *delivery* only
-  (`wikidata_editing_lockout.state`, 2026-09-18) — staging is not blocked, so do that now.
+- ▶ **意宇郡 entry 39, 同社坐韓国伊太弖神社 — and "it has no item" is NOT the right description of the
+  problem.** Her instruction stands: *"IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU
+  IDIOT."* But read against the live items rather than the table, 2026-08-23:
+  - **`Q135040786` already carries entry 39's ordinal.** Its P361 into `Q11395853` holds *two*
+    statements — `P1545 "28"` (`P155 Q11498399`, `P156 Q135040787`) **and** `P1545 "39"`
+    (`P155 Q135040907`, `P156 Q135040909`). One item standing in for two register entries, which is
+    the exact shape item 1 on `[[Open questions]]` described.
+  - **Its identity is entry 28, not 39.** Its `P1448` ojp-hani is 同社坐韓国伊**大**弖神社 — the 大
+    spelling, which is entry 28's register name. Entry 39's is 伊**太**弖, matching `Q135040778`
+    (entry 19). So the ordinal-39 statement is a stand-in on an item that is something else.
+  - **This is the `distinct_ordinals_LEGITIMATE` class** in `p361_multi_part_of_audit.json` — 47
+    items the audit marks DO NOT TOUCH, precisely because distinct ordinals are one shrine covering
+    two entries rather than a duplicate. So "create the item" is really **create, then MOVE one P361
+    statement**, and that is an add-then-remove: script 1 creates and adds; script 2 removes the
+    ordinal-39 statement from `Q135040786` only after a fresh SPARQL confirms the new item carries
+    it. Never one script (CLAUDE.md).
+  - ⚠ **The new item collides on both labels with `Q135040778`** — same ja 坐韓国伊太弖神社, same en
+    Nimasukarakuniitateno Shrine, because the two register entries genuinely share a name. It needs a
+    distinguishing description at creation, not afterwards.
+  - ⚠ **`create_items.py` cannot express the P361 statement**: `load_blocks` takes bare
+    `LAST|P|value` lines and there is no qualifier support, so `P1545`/`P155`/`P156` must follow as
+    ordinary QuickStatements once the QID exists. Also needs a new entry in its `GATES` map — a batch
+    with no gate is refused by design.
+  - BLOCKED-ON-EXTERNAL for *delivery* (`wikidata_editing_lockout.state`, 2026-09-18). Staging is
+    not blocked; the decomposition above is what to stage.
 - ▶ **The 42 unqualified `part of` statements the list names nowhere.** Not a duplicate-statement
   cleanup: there is no leftover to strip, the membership itself is unconfirmed. Work them as the
   orphan-membership problem instead. Per-item data already committed at

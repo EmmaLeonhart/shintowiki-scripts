@@ -4,6 +4,61 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-23 (later still) — entry 39 is not missing, and the table that said so was the problem
+
+The un-synced page was restored and the repair verified against the live wiki rather than assumed:
+the sync pushed at **04:48:40Z** with the summary *"re-add to category, page exists but was not in
+[[Category:Git synced pages]]"*, and the page's category list now reads
+`['Category:Git synced pages']`. It works because the sync has been **stateless since 2026-05-30** —
+no `.state` file on disk, checked — so `base_sha` is `None` and a restored file takes the push branch
+rather than the delete branch.
+
+### Then the top queue item turned out to rest on a wrong premise
+
+`A-OQ` said 意宇郡 entry 39 (同社坐韓国伊太弖神社) has no item and nothing staged, so create one. The
+first half is not right, and it changes the work.
+
+**`Q135040786` already carries entry 39.** Its `P361` into `Q11395853` holds two statements:
+
+    P1545 "28"   P155 Q11498399     P156 Q135040787
+    P1545 "39"   P155 Q135040907    P156 Q135040909
+
+One item standing in for two register entries — the exact shape item 1 on `[[Open questions]]`
+described, found by reading the item rather than the table summarising it.
+
+**Its identity is entry 28.** Its `P1448` ojp-hani is 同社坐韓国伊**大**弖神社, the 大 spelling, which
+is entry 28's register name. Entry 39 is 伊**太**弖 and matches `Q135040778` (entry 19). So the
+ordinal-39 statement is a stand-in on an item that is something else.
+
+### What that makes the actual task
+
+Not "create an item". **Create, then move a statement** — which lands on two standing rules:
+
+- The statement sits in the `distinct_ordinals_LEGITIMATE` class of
+  `p361_multi_part_of_audit.json`, 47 items the audit marks **do not touch**, precisely because
+  distinct ordinals mean one shrine covering two entries rather than a duplicate. Moving it has to
+  be deliberate, not a cleanup.
+- Moving it is add-then-remove, so **two scripts** with a fresh SPARQL confirmation between: script 1
+  creates and adds, script 2 removes from `Q135040786` only once the new item demonstrably holds the
+  ordinal. Under the random run order a single script could remove before the add lands.
+
+Two more things the queue item did not know, either of which would have stopped an execution attempt:
+
+- **The new item collides on both labels with `Q135040778`** — same ja 坐韓国伊太弖神社, same en
+  Nimasukarakuniitateno Shrine, because the two register entries genuinely share a name. It needs a
+  distinguishing description written at creation, not bolted on afterwards.
+- **`create_items.py` cannot express the P361 statement.** `load_blocks` reads bare `LAST|P|value`
+  lines with no qualifier support, so `P1545`/`P155`/`P156` must follow as ordinary QuickStatements
+  once the QID exists. It also refuses any batch absent from its `GATES` map, by design.
+
+Nothing staged this tick, and that is the outcome rather than a shortfall: staging a CREATE batch
+against the original premise would have produced a second item for a register entry that already has
+a carrier, with colliding labels, and no way to express the one statement that matters.
+
+**Nothing delivered.** The Wikidata lockout holds to 2026-09-18.
+
+---
+
 ## 2026-08-23 (later) — the tool the queue names as "the road" did nothing for its two biggest queues
 
 queue.md A1 says the way to drain a work-queue is
