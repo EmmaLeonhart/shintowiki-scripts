@@ -10,6 +10,7 @@ Your hypothesis: ''"There might have been some Shinto wiki edits that were not p
 
 : '''✓''' All fixed 2026-08-19 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/8ac7d8a2 8ac7d8a2]). <code>tests/test_no_hardcoded_user_agents.py</code> bans the pattern rather than the instances — the first version banned literals ''naming'' a known bot, which is why it caught 10 files and missed 48.
 : '''This answer has existed in DEVLOG.md since 08-19 and was never put here.''' That is the actual complaint you raised on 08-23, and it is a fair one: answered in the log I write, absent from the page you read.
+: Please remove this from the open questions now that it is resolved. We are not supposed to be having such specific internals here as it is slightly sensitive information to our operations
 
 === Ukrainian and Indonesian labels ===
 
@@ -31,6 +32,7 @@ An item whose description was '''already''' the standard string got skipped enti
 That is the whole asymmetry. The file today: '''3,514 uk''' against '''5 id'''.
 
 : '''✓''' Fixed 2026-08-21 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]) — that case now emits a '''label-only''' line through the same uniqueness check. Not yet visible: the file only regenerates on a '''Sunday''' CI run, and CI was broken 08-19 → 08-22 (fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/3b0f44c8 3b0f44c8]). First Sunday run that survives, id should go from 5 to thousands. If it does not, the branch to re-read is that one.
+:* Uhh the pairs thing was actually somewhat made obsolete by the content I added to open questions a few revisions ago here https://shinto.miraheze.org/wiki/Open_questions?oldid=3832161
 
 === Izumo — entry 39 is not missing, it is riding on entry 28's item ===
 
@@ -42,6 +44,16 @@ And its identity is entry '''28''', not 39 — its ancient-name statement reads 
 
 : '''→''' So it is create-then-'''move''', not just create: the ordinal-39 statement has to come off [[d:Q135040786|Q135040786]] once the new item holds it, and per the standing rule that is two scripts with a SPARQL check between, never one. The new item will also share both labels with [[d:Q135040778|Q135040778]] — the two entries genuinely have the same name — so it needs a distinguishing description written at creation.
 : Staged in <code>queue.md</code>. Nothing goes out until your lockout lifts 2026-09-18.
+:* You are being very overly verbose in explaining this and it is significantly weaker. There is a missing shrine item that needs to be created but we are unsure as to what is even on it. I think this is the actual situation
+
+==== Explanation ====
+I did find the cause. For some reason I did a merge here
+
+  https://www.wikidata.org/w/index.php?title=Q135040908&action=history so a new item needs to be created. idk what is
+
+  going on with it, I think this is an example of an erroneous merge, but the numbers are a bit strange on it.
+
+  something happened but it is not clear what happened
 
 === 御笏神社 — yes, it is staged, and I described it wrongly ===
 
@@ -50,6 +62,9 @@ You asked whether [[d:Q110915859|Q110915859]] (御笏神社) is actually being c
 I first said the point was that it carries repeated ordinals and the repeats are the defect. That is the same wrong model I retracted today. It is a '''modern shrine''' — it holds '''six''' <code>said to be the same as</code> statements pointing at six different Engishiki entry items, so it is a candidate for six entries — and by your 2026-07-09 rule the list membership belongs to those entry items, not to it. Its <code>part of</code> statements are the damage whether or not any of them repeat, and whether or not they carry ordinals. All three do carry ordinals, which under the old framing would have made them look legitimate.
 
 : '''→''' Removal is correct. Nothing about it depends on the repeats.
+: Yeah this is one of the "super repeaters" which exists because of the fact that on the original jawiki article that the import came from, there were a bunch of sessha that were piped links going to the same shrine. The shrine is not even rightfully on the [[:da:Q11380552|List of Shikinaisha in Izu Province (Q11380552)]] since it is not a shikinaisha only its setsumatsusha are
+: This is to say it is not even a candidate shrine 
+:* Oh nvm looking closer it is a candidate shrine for a lot of them at least superficially but it looks like a supershrine pattern
 
 == Wiki-based queue ==
 
