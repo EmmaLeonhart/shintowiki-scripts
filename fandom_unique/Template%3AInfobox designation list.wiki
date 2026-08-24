@@ -1,0 +1,124 @@
+{{Infobox
+| child     = {{{embed|{{{child|}}}}}}
+| decat     = yes
+
+| above     = {{#ifeq:{{{embed|{{{child|}}}}}}|yes||Designations}}
+
+| rowclass1 = mergedrow
+|   header1 = {{#if:{{{designation1|}}}|{{Infobox designation list/entry
+ | designation = {{{designation1|}}}
+ | offname     = {{{designation1_offname|}}}
+ | type        = {{{designation1_type|}}}
+ | criteria    = {{{designation1_criteria|}}}
+ | feature     = {{{designation1_feature|}}}
+ | date        = {{{designation1_date|}}}
+ | delisted    = {{{delisted1_date|}}}
+ | partof      = {{{designation1_partof|}}}
+ | number      = {{{designation1_number|}}}
+ | free1name   = {{{designation1_free1name|}}}
+ | free1value  = {{{designation1_free1value|}}}
+ | free2name   = {{{designation1_free2name|}}}
+ | free2value  = {{{designation1_free2value|}}}
+ | free3name   = {{{designation1_free3name|}}}
+ | free3value  = {{{designation1_free3value|}}}
+ }}}}
+| rowclass2 = mergedtoprow
+|   header2 = {{#if:{{{designation2|}}}|{{Infobox designation list/entry
+ | designation = {{{designation2|}}}
+ | offname     = {{{designation2_offname|}}}
+ | type        = {{{designation2_type|}}}
+ | criteria    = {{{designation2_criteria|}}}
+ | feature     = {{{designation2_feature|}}}
+ | date        = {{{designation2_date|}}}
+ | delisted    = {{{delisted2_date|}}}
+ | partof      = {{{designation2_partof|}}}
+ | number      = {{{designation2_number|}}}
+ | free1name   = {{{designation2_free1name|}}}
+ | free1value  = {{{designation2_free1value|}}}
+ | free2name   = {{{designation2_free2name|}}}
+ | free2value  = {{{designation2_free2value|}}}
+ | free3name   = {{{designation2_free3name|}}}
+ | free3value  = {{{designation2_free3value|}}}
+ }}}}
+| rowclass3 = mergedtoprow
+|   header3 = {{#if:{{{designation3|}}}|{{Infobox designation list/entry
+ | designation = {{{designation3|}}}
+ | offname     = {{{designation3_offname|}}}
+ | type        = {{{designation3_type|}}}
+ | criteria    = {{{designation3_criteria|}}}
+ | feature     = {{{designation3_feature|}}}
+ | date        = {{{designation3_date|}}}
+ | delisted    = {{{delisted3_date|}}}
+ | partof      = {{{designation3_partof|}}}
+ | number      = {{{designation3_number|}}}
+ | free1name   = {{{designation3_free1name|}}}
+ | free1value  = {{{designation3_free1value|}}}
+ | free2name   = {{{designation3_free2name|}}}
+ | free2value  = {{{designation3_free2value|}}}
+ | free3name   = {{{designation3_free3name|}}}
+ | free3value  = {{{designation3_free3value|}}}
+ }}}}
+| rowclass4 = mergedtoprow
+|   header4 = {{#if:{{{designation4|}}}|{{Infobox designation list/entry
+ | designation = {{{designation4|}}}
+ | offname     = {{{designation4_offname|}}}
+ | type        = {{{designation4_type|}}}
+ | criteria    = {{{designation4_criteria|}}}
+ | feature     = {{{designation4_feature|}}}
+ | date        = {{{designation4_date|}}}
+ | delisted    = {{{delisted4_date|}}}
+ | partof      = {{{designation4_partof|}}}
+ | number      = {{{designation4_number|}}}
+ | free1name   = {{{designation4_free1name|}}}
+ | free1value  = {{{designation4_free1value|}}}
+ | free2name   = {{{designation4_free2name|}}}
+ | free2value  = {{{designation4_free2value|}}}
+ | free3name   = {{{designation4_free3name|}}}
+ | free3value  = {{{designation4_free3value|}}}
+ }}}}
+| rowclass5 = mergedtoprow
+|   header5 = {{#if:{{{designation5|}}}|{{Infobox designation list/entry
+ | designation = {{{designation5|}}}
+ | offname     = {{{designation5_offname|}}}
+ | type        = {{{designation5_type|}}}
+ | criteria    = {{{designation5_criteria|}}}
+ | feature     = {{{designation5_feature|}}}
+ | date        = {{{designation5_date|}}}
+ | delisted    = {{{delisted5_date|}}}
+ | partof      = {{{designation5_partof|}}}
+ | number      = {{{designation5_number|}}}
+ | free1name   = {{{designation5_free1name|}}}
+ | free1value  = {{{designation5_free1value|}}}
+ | free2name   = {{{designation5_free2name|}}}
+ | free2value  = {{{designation5_free2value|}}}
+ | free3name   = {{{designation5_free3name|}}}
+ | free3value  = {{{designation5_free3value|}}}
+ }}}}
+| rowclass6 = mergedtoprow
+|   header6 = {{#if:{{{designation6|}}}|{{Infobox designation list/entry
+ | designation = {{{designation6|}}}
+ | offname     = {{{designation6_offname|}}}
+ | type        = {{{designation6_type|}}}
+ | criteria    = {{{designation6_criteria|}}}
+ | feature     = {{{designation6_feature|}}}
+ | date        = {{{designation6_date|}}}
+ | delisted    = {{{delisted6_date|}}}
+ | partof      = {{{designation6_partof|}}}
+ | number      = {{{designation6_number|}}}
+ | free1name   = {{{designation6_free1name|}}}
+ | free1value  = {{{designation6_free1value|}}}
+ | free2name   = {{{designation6_free2name|}}}
+ | free2value  = {{{designation6_free2value|}}}
+ | free3name   = {{{designation6_free3name|}}}
+ | free3value  = {{{designation6_free3value|}}}
+ }}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox designation list]] with unknown parameter "_VALUE_"|ignoreblank=y| child | delisted1_date | delisted2_date | delisted3_date | delisted4_date | delisted5_date | delisted6_date | designation1 | designation1_criteria | designation1_date | designation1_feature | designation1_number | designation1_offname | designation1_partof | designation1_type | designation2 | designation2_criteria | designation2_date | designation2_feature | designation2_number | designation2_offname | designation2_partof | designation2_type | designation3 | designation3_criteria | designation3_date | designation3_feature | designation3_number | designation3_offname | designation3_partof | designation3_type | designation4 | designation4_criteria | designation4_date | designation4_feature | designation4_number | designation4_offname | designation4_partof | designation4_type | designation5 | designation5_criteria | designation5_date | designation5_feature | designation5_number | designation5_offname | designation5_partof | designation5_type | designation6 | designation6_criteria | designation6_date | designation6_feature | designation6_number | designation6_offname | designation6_partof | designation6_type | designation1_free1name | designation1_free1value | designation1_free2name | designation1_free2value | designation1_free3name | designation1_free3value | designation2_free1name | designation2_free1value | designation2_free2name | designation2_free2value | designation2_free3name | designation2_free3value | designation3_free1name | designation3_free1value | designation3_free2name | designation3_free2value | designation3_free3name | designation3_free3value | designation4_free1name | designation4_free1value | designation4_free2name | designation4_free2value | designation4_free3name | designation4_free3value | designation5_free1name | designation5_free1value | designation5_free2name | designation5_free2value | designation5_free3name | designation5_free3value | designation6_free1name | designation6_free1value | designation6_free2name | designation6_free2value | designation6_free3name | designation6_free3value | embed }}<noinclude>
+{{Documentation}}[[Category:Templates with Documentation template]]
+
+[[Category:Pages using infobox designation list with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+{{wikidata link|Q12981320|ar|قالب:Designation list|arz|قالب:Designation list|as|সাঁচ:Infobox designation list|azb|شابلون:Infobox designation list|az|Şablon:Nişanlama siyahısı|ban|Mal:Infobox designation list|bcl|Plantilya:Infobox designation list|bh|टेम्पलेट:Infobox designation list|bn|টেমপ্লেট:তথ্যছক নিয়োগ তালিকা|bs|Šablon:Infobox designation list|bxr|Загбар:Инфобокс designation list|cy|Nodyn:Infobox designation list|dtp|Templat:Infobox designation list|el|Πρότυπο:Infobox designation list|en|Template:Infobox designation list|fa|الگو:Infobox designation list|gor|Templat:Designation list|gu|ઢાંચો:Infobox designation list|hi|साँचा:Infobox designation list|hr|Predložak:Infobox designation list|check_date=2026-05-28}}
+[[Category:Templates transcluded in mainspace]]
+</noinclude>
