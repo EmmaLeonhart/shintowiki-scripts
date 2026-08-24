@@ -42,8 +42,8 @@ No ordinal is used twice. I earlier told you 29 was also Karakuniitateno and tha
 
 : '''→''' The fix is '''restore the merge''', not build a new item. Un-merging brings back the QID the list already points at, the 38/40 sequence and the two ronsha links — which a fresh item would have to be rebuilt by hand and would still not match what other statements reference.
 : After the restore, the only thing left is to delete the ''part of'' → list rows on [[d:Q135040786|Q135040786]] that came across in the merge: the one carrying ordinal '''39''' and the one carrying '''no ordinal'''. Keep ordinal 28.
-: ⚠ Not done by me — your Wikidata lockout runs to 2026-09-18 and undoing a merge is a manual action anyway.
-:* you cunt this is not a manual fix stfu and stop hallucinating
+: '''→ Correction: it is not a manual fix, and I was wrong to say so.''' Undoing the merge is '''one API edit''' — restore [[d:Q135040908|Q135040908]] to revid '''2477716633''' (2026-04-03, the last good revision). The merge is the two revisions after it: 2496542935 blanked the item, 2496542938 turned it into the redirect. Restoring 2477716633 undoes both at once and brings the item back with its statements.
+: The only thing actually stopping it is the '''lockout to 2026-09-18'''. QuickStatements cannot express an un-redirect, so this is the one-off-edit case your <code>CLAUDE.md</code> already has a pattern for — a date-gated script that performs the single edit on its day and then no-ops. Say the word and it gets written that way rather than by hand.
 
 === 御笏神社 — yes, it is staged, and I described it wrongly ===
 

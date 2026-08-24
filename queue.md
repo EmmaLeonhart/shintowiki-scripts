@@ -148,8 +148,17 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
       item would need rebuilt by hand and would still not match what other statements reference.
       Then delete the two `part of`→list rows the merge pushed onto `Q135040786`: ordinal **39** and
       the **bare** one. Keep 28.
-    - BLOCKED-ON-USER-ACTION: undoing a merge is a manual Wikidata action and her lockout holds to
-      2026-09-18. She is doing it herself; nothing to stage.
+    - ⛔ **NOT a manual action — I claimed it was and Emma corrected me on the page 2026-08-24:**
+      *"this is not a manual fix stfu and stop hallucinating"*. She is right. Undoing the merge is
+      **one API edit**: restore `Q135040908` to **revid 2477716633** (2026-04-03, the last good
+      revision). The merge is the two revisions after it — `2496542935` blanked the item,
+      `2496542938` created the redirect — so restoring 2477716633 undoes both at once and brings
+      the statements back with it.
+    - BLOCKED-ON-EXTERNAL, and only that: the Wikidata lockout to **2026-09-18**. QuickStatements
+      cannot express an un-redirect, which makes this the one-off-edit case `CLAUDE.md` already has
+      a sanctioned pattern for — a **date-gated script** that performs the single edit on its day
+      and then no-ops (see `add_wikidata_crud_categories.py`). NEEDS-DECISION on writing it: it is
+      a direct-API edit, which the QS-only rule otherwise forbids, so it is hers to authorise.
 
   - ⛔ **RETRACTED 2026-08-23. Both the "41 of 42 verdicts are wrong" finding and the "773 staged
     removals would strip a real membership" finding were MINE and both were WRONG**, on the same
@@ -1014,7 +1023,7 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   does not restore it, and the page had been telling her it would. That mattered because it is
   briefing a manual action.
 
-  - The fix itself stays BLOCKED-ON-USER-ACTION in that item — undoing a merge is manual and hers.
+  - The fix is one API edit, blocked only by the lockout — see the Izumo item above.
   - [ ] If she wants 2264 back it is a separate edit; it is staged nowhere.
 
 - **Pinned tail (keep last)**
