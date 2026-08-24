@@ -1,0 +1,128 @@
+# name_in_kana batch 10, answered locally 2026-08-24 from the LEAD in each work-file.
+#
+# The detector flagged ONE and it is a TRUE positive of a new sub-shape: a PAIRED
+# shrine whose lead gives each half's reading separately but never the combined string.
+# See Q11633774.
+Q11631429	KANA: ほんだはちまんじんじゃ
+Q11631781	KANA: つきじんじゃ
+Q11631837	KANA: すわはちまんじんじゃ
+Q11631884	KANA: すわみょうじん
+Q11631918	KANA: すわじんじゃ
+Q11631919	KANA: すわじんじゃ
+Q11631921	KANA: すわじんじゃ
+Q11631922	KANA: すわじんじゃ
+Q11631923	KANA: すわじんじゃ
+Q11631924	KANA: すわじんじゃ
+Q11631925	KANA: すわじんじゃ
+Q11631926	KANA: すわじんじゃ
+Q11631927	KANA: すわじんじゃ
+Q11631928	KANA: すわじんじゃ
+Q11631929	KANA: すわじんじゃ
+Q11631934	KANA: すわじんじゃ
+Q11632019	KANA: いさはやじんじゃ
+Q11632526	KANA: ごおうじんじゃ
+Q11633272	KANA: とよなかいなりじんじゃ
+Q11633323	KANA: とよはらきたじまじんじゃ
+Q11633365	KANA: ほうこくじんじゃ
+# 豐榮神社 is the lead's variant spelling of 豊栄神社
+Q11633768	KANA: とよさかじんじゃ
+# MISMATCH, true. The item is the PAIR 豊榮神社・野田神社; the lead gives each half's
+# reading — 豊榮神社（とよさかじんじゃ）と野田神社（のだじんじゃ）— but never the combined
+# string, so no article states the value being written. Composed with the interpunct
+# dropped per the TASK rule, and GUESS so it carries no source.
+# (Contrast Q11643733 below, whose lead DOES state the combined form: that one is KANA.)
+Q11633774	GUESS: とよさかじんじゃのだじんじゃ
+Q11633966	KANA: とよたまひめじんじゃ
+Q11634187	KANA: とよふくあそじんじゃ
+Q11634479	KANA: かいずかとうじんじゃ
+Q11634807	KANA: きふねじんじゃ
+Q11634809	KANA: きふねじんじゃ
+# 貴船神社 (真鶴) is きぶね, the others きふね — each lead states its own
+Q11634812	KANA: きぶねじんじゃ
+Q11634813	KANA: きふねじんじゃ
+Q11634814	KANA: きふねじんじゃ
+Q11634883	KANA: かたじんじゃ
+Q11634945	KANA: かもじんじゃ
+Q11634946	KANA: かもじんじゃ
+Q11634949	KANA: かもじんじゃ
+Q11634951	KANA: かもじんじゃ
+# 売太神社 is a spelling variant
+Q11635096	KANA: めたじんじゃ
+# lead writes あかさか かみのやまじんじゃ with a space
+Q11635398	KANA: あかさかかみのやまじんじゃ
+Q11635468	KANA: あかぎじんじゃ
+Q11635469	KANA: あかぎじんじゃ
+Q11635472	KANA: あかぎじんじゃ
+Q11636076	KANA: はしりみずじんじゃ
+# 走落神社: はしりおち / はせおち — first taken
+Q11636084	KANA: はしりおちじんじゃ
+Q11636841	KANA: あすけはちまんぐう
+Q11637049	KANA: あすわじんじゃ
+Q11637069	KANA: あしたかじんじゃ
+Q11637185	KANA: さだじんじゃ
+# 古神道本宮・ is a prefix the lead adds, not part of the item's name
+Q11637232	KANA: みそぎじんじゃ
+Q11637305	KANA: くるまざきじんじゃ
+Q11637306	KANA: くるまざきじんじゃ
+Q11637611	KANA: かるべじんじゃ
+# lead writes ちこうづ かしまじんじゃ with a space
+Q11638545	KANA: ちこうづかしまじんじゃ
+# 近露王子 — a Kumano 王子 旧址, a nameable place
+Q11639127	KANA: ちかつゆおうじ
+Q11639672	KANA: はやかわじんじゃ
+Q11639721	KANA: はやたにじんじゃ
+Q11641865	KANA: とうふうじんじゃ
+Q11642381	KANA: とみさきじんじゃ
+Q11642696	KANA: かえりぐまはちまんじんじゃ
+Q11642701	KANA: ににぎじんじゃ
+Q11642702	KANA: にほひめじんじゃ
+# 那賣佐神社 is a spelling variant
+Q11642725	KANA: なめさじんじゃ
+Q11642751	KANA: なびしんぐうじんじゃ
+Q11643228	KANA: こおりじんじゃ
+Q11643470	KANA: つくぶすまじんじゃ
+# the combined reading IS stated here, unlike Q11633774 above; interpunct dropped
+Q11643733	KANA: つばきじんじゃなかとじんじゃ
+Q11644289	KANA: さかつらいそさきじんじゃ
+# 酒折宮: さかおりみや / さかおりのみや — first taken
+Q11644327	KANA: さかおりみや
+Q11644372	KANA: さかみじんじゃ
+Q11644849	KANA: じゅうぞうじんじゃ
+Q11644899	KANA: ののみやじんじゃ
+Q11644900	KANA: ののみやじんじゃ
+# しょうばた is the PLACE 小畑
+Q11644955	KANA: のかみはちまんぐう
+Q11645668	KANA: のむらじんじゃ
+Q11645989	KANA: のだえびすじんじゃ
+Q11646128	KANA: のみじんじゃ
+Q11646130	KANA: のみじんじゃ
+Q11646131	KANA: のがてんじんじゃ
+# かんのみや is the PLACE 神宮
+Q11646210	KANA: のまじんじゃ
+# interpunct dropped
+Q11646483	KANA: ことひらおおとりじんじゃ
+Q11646484	KANA: ことひらぐうまつやまぶんしゃ
+Q11646487	KANA: ことひらじんじゃ
+Q11646489	KANA: ことひらじんじゃ
+Q11646490	KANA: ことひらじんじゃ
+# 金刀比羅神社 (根室): ことひら / こんぴら — first taken
+Q11646492	KANA: ことひらじんじゃ
+Q11646557	KANA: きんけんぐう
+Q11647008	KANA: かなやまじんじゃ
+Q11647027	KANA: かなおかじんじゃ
+Q11647032	KANA: きんぼうじんじゃ
+Q11647033	KANA: きんぽうじんじゃ
+Q11647035	KANA: きんぽうじんじゃ
+Q11647043	KANA: かねがさきぐう
+Q11647310	KANA: かなざくらじんじゃ
+Q11647322	KANA: きんぐう
+Q11647335	KANA: こんぴらじんじゃ
+Q11647513	KANA: かなざわじんじゃ
+# 金生山神社: かなぶ / かなぶさん — first taken
+Q11647650	KANA: かなぶじんじゃ
+# lead writes こんせい じんじゃ with a space
+Q11647794	KANA: こんせいじんじゃ
+# 金鑽神社 is a spelling variant
+Q11647974	KANA: かなさなじんじゃ
+Q11647977	KANA: きんちょうじんじゃ
+Q11648178	KANA: はりつなじんじゃ
