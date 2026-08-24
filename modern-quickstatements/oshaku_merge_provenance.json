@@ -1,0 +1,46 @@
+{
+  "qid": "Q110915859",
+  "revisions": 254,
+  "merges": [
+    {
+      "source": "Q135192793",
+      "timestamp": "2025-12-01T03:08:23Z",
+      "user": "Immanuelle",
+      "source_labels": {
+        "ja": "御笏神社",
+        "en": "Oshaku Shrine",
+        "id": "Kuil Oshaku",
+        "fr": "sanctuaire d'Oshaku"
+      },
+      "gained": [
+        "P1448 -> 加弥命神社  [P1264=Q193292]",
+        "P31 -> Q135018062  [P1545=1047]",
+        "P361 -> Q11380552  [P1545=20, P155=Q135039647, P156=Q135039649]",
+        "P460 -> Q135039648  [P2868=Q135022904]",
+        "P625 -> {\"altitude\": null, \"globe\": \"http://www.wikidata.org/entity/Q2\", \"latitude\": 34.119902, \"longitude\": 139.522285, \"precision\": 0.0001}"
+      ],
+      "lost": [],
+      "before_count": 43,
+      "after_count": 48
+    },
+    {
+      "source": "Q135192871",
+      "timestamp": "2025-12-01T03:13:41Z",
+      "user": "Immanuelle",
+      "source_labels": {
+        "ja": "御笏神社(境内社)",
+        "en": "Oshaku Shrine (sessha)",
+        "id": "Kuil Oshaku (sessha)",
+        "fr": "sanctuaire d'Oshaku (sessha)"
+      },
+      "gained": [
+        "P31 -> Q135018062  [P1545=1061]",
+        "P361 -> Q11380552  [P1545=34, P155=Q135039656, P156=Q135039659]",
+        "P460 -> Q135039658  [P2868=Q135022904]"
+      ],
+      "lost": [],
+      "before_count": 48,
+      "after_count": 51
+    }
+  ]
+}

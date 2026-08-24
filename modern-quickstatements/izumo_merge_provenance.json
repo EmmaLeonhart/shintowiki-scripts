@@ -1,0 +1,27 @@
+{
+  "qid": "Q135040786",
+  "revisions": 67,
+  "merges": [
+    {
+      "source": "Q135040908",
+      "timestamp": "2026-05-23T21:28:33Z",
+      "user": "Immanuelle",
+      "source_labels": {
+        "ja": "坐韓国伊太弖神社",
+        "en": "Karakuniitateno Shrine",
+        "id": "Kuil Karakuniitateno",
+        "fr": "sanctuaire de Karakuniitateno"
+      },
+      "gained": [
+        "P31 -> Q135038714",
+        "P361 -> Q11395853  [P1545=39, P155=Q135040907, P156=Q135040909]",
+        "P460 -> Q135070107",
+        "P460 -> Q135070108",
+        "P6375 -> 同上"
+      ],
+      "lost": [],
+      "before_count": 12,
+      "after_count": 17
+    }
+  ]
+}

@@ -4,6 +4,52 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 — a merge destroys its own evidence, so read the revisions either side of it
+
+Emma asked twice on `[[Open questions]]` why she had merged something into 御笏神社 and what the
+redirect resolution cost — the second time as *"Oh my god please investigate why the shrine was
+removed and what was going on with it"*. The first ask had been sitting a tick.
+
+**Why it needed a tool rather than a look.** A merge blanks its source before turning it into a
+redirect, so reading `Q135192793` today shows an empty item, and the target just quietly has more
+statements than it used to. The only durable record is the pair of revisions either side of the
+merge edit. `modern-quickstatements/audit_merge_provenance.py` walks a target's history, finds every
+`wbmergeitems-from`, and diffs the statements across it. It keys statements on
+property|value|qualifiers and deliberately NOT on the GUID, because a merge rewrites GUIDs and
+keying on them would report every statement as new.
+
+**御笏神社 `Q110915859`.** Both merges only added — 43 → 48 → 51, zero lost — so nothing was
+destroyed, which was her actual worry. And neither source was a duplicate of the shrine: each was
+the shrine *as the candidate for one specific entry*. `Q135192793` brought list ordinal **20**,
+`Q135192871` — the sessha item — brought ordinal **34**.
+
+So the merges are a symptom of the import, not the cause of the supershrine. **The cause is one
+statement**: a single `P361 → Q11380552` carrying five `P1545` values at once (5, 14, 16, 20, 34)
+with five `P155` and five `P156` piled in. Her piped-link collapse, made concrete. The merges then
+added well-formed statements for ordinals 20 and 34 that this one already contained, which is why
+those two look duplicated.
+
+**Her "its name in Kana is weird and idk if our scripts just crapped out on it".** They did not.
+The item holds five `P1814`: おしゃくじんじゃ, correct, plus サキタマヒメノ-, ハヤシノ-, カタスカノ-,
+カミノ- — the readings of four *entry* names, truncated with a trailing hyphen. `Q135040908` had
+`P1814 → -カラクニイタテノ`, hyphen on the front. The shrine absorbed the entries' names, so it
+absorbed their readings. Queued as `A-SUPER` to measure how far the shape goes; nothing staged.
+
+**Izumo, same tool, and it corrected this page's own briefing.** `Q135040908`'s merge added 5
+statements and removed none. But the national ordinal **2264** was NOT on the item at merge time —
+the `P1545` qualifier was removed 2025-12-21 and the "2264th Shrine" English description
+2026-01-10, five months earlier. The page had been telling Emma that un-merging would bring 2264
+back. It will not, and that sentence was briefing a manual action she is doing by hand.
+
+**Also this tick:** the wiki round-trip resolved in the WIKI's favour, not the repo's. Her edits
+were newer, so the sync brought back her version and my page edits from the previous tick were
+gone — the user-agent section she had asked to remove was still there, now asked a second time in
+bold. That is wiki-wins working as designed, not a sync fault, but the previous flush described the
+round-trip as clean when what came back was her copy. Re-applied: section deleted, the four-step
+description answer restated against `docs/description_label_policy.md`.
+
+---
+
 ## 2026-08-24 (later) — the scheduled-item injector fired for the first time, and it worked
 
 `67a9fc99 chore: schedule weekly Open-questions sweep into queue.md` arrived overnight from

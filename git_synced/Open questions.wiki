@@ -2,43 +2,27 @@ __NOTOC__
 
 == Open questions ==
 
-=== Was the wiki agent standardised? — you asked this 08-19 and never got the answer here ===
-
-Your hypothesis: ''"There might have been some Shinto wiki edits that were not properly done if the user agent was not standard across all of the edits."'' You were right, and it was worse than one script.
-
-'''~30 distinct bot names across 58 files.''' The farm allowlists '''one exact string''', so everything running as <code>ShintoWikiBot/1.0</code>, <code>ShintoOrchestrator/1.0</code>, <code>ShintoWikiLabels</code>, <code>ShrineRankingPageBot</code>, <code>ShikinaishaListBot</code> and the rest could not be served no matter what the allowlist said. Three more found in the same pass: 6 files sent the '''wiki-side''' contact to <code>www.wikidata.org</code>; 14 shipped <code>{contact('wikidata')}</code> as literal text, braces and all; 4 wrapped the agent import in a <code>try/except</code> that '''failed open''' to a hand-built string, marked no-cover.
-
-: '''✓''' All fixed 2026-08-19 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/8ac7d8a2 8ac7d8a2]). <code>tests/test_no_hardcoded_user_agents.py</code> bans the pattern rather than the instances — the first version banned literals ''naming'' a known bot, which is why it caught 10 files and missed 48.
-: '''This answer has existed in DEVLOG.md since 08-19 and was never put here.''' That is the actual complaint you raised on 08-23, and it is a fair one: answered in the log I write, absent from the page you read.
-:* '''Please remove this from the open questions now that it is resolved. We are not supposed to be having such specific internals here as it is slightly sensitive information to our operations'''
-
 === Ukrainian and Indonesian labels ===
 
-'''Found it. One bug, and it explains why uk and id behaved opposite ways.'''
+You are right that the pairs framing was superseded. Your four-step path — remove an orphan description, add the label, add a programmatic description, iterate if rejected — is now written down as [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/docs/description_label_policy.md docs/description_label_policy.md], quoted from what you said, with <code>CLAUDE.md</code> pointing at it. It had only ever existed in a chat message, which is why the answer here was still describing the old mechanism.
 
-Where it came from: <code>generate_description_fixes.py</code>, which has handled this since your 2026-07-07 spec — set the standardised description, then add the label, as one unit, 100/day, into [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt].
+Measured, descriptions sitting on items with no label in that language: '''id 5,024''', '''uk 4,591''', nl 168, everything else small ([https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/orphan_descriptions_audit.json orphan_descriptions_audit.json]).
 
-It had this:
-
-<pre>
-new = pref_template or generic
-if not new or new == desc:
-    skipped += 1
-    continue          # <- dropped the LABEL too
-</pre>
-
-An item whose description was '''already''' the standard string got skipped entirely, label included — even though missing a label is the only reason it is a target. Your own 2025 bot pass had already standardised every Indonesian description to <code>kuil Shinto di Prefektur {pref}, Jepang</code>, so that branch caught all '''5,024''' of them on every weekly run. Ukrainian was never standardised, so uk sailed past it.
-
-That is the whole asymmetry. The file today: '''3,514 uk''' against '''5 id'''.
-
-: '''✓''' Fixed 2026-08-21 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]) — that case now emits a '''label-only''' line through the same uniqueness check. Not yet visible: the file only regenerates on a '''Sunday''' CI run, and CI was broken 08-19 → 08-22 (fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/3b0f44c8 3b0f44c8]). First Sunday run that survives, id should go from 5 to thousands. If it does not, the branch to re-read is that one.
-:* Uhh the pairs thing was actually somewhat made obsolete by the content I added to open questions a few revisions ago here https://shinto.miraheze.org/wiki/Open_questions?oldid=3832161
+: '''→''' The pairs pipeline resolves an orphan description by '''supplying the missing label''', which is what your step 1 protects. Removal is only for the residue where no label can be generated — that is why a blanket 9,615-line removals file was wrong and got deleted.
+: '''→''' id is the skipped-branch bug, fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]; not visible yet because [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt] still dates from 08-02 and regenerates on a Sunday run.
+: ⚠ '''Step 4 is not built and I am not faking it.''' Iterating on a rejected description needs the rejection readable back, and QuickStatements failures are not read per line.
 
 === Izumo entry 39 — CAUSE FOUND: an erroneous merge, and the fix is to undo it ===
 
 You found it: [https://www.wikidata.org/w/index.php?title=Q135040908&action=history Q135040908] was merged into [[d:Q135040786|Q135040786]] on '''2026-05-23T21:28:33Z'''. That is the whole cause, and it means '''no new item needs creating''' — the entry-39 item already existed and is recoverable.
 
-'''What Q135040908 was''', from its own history: created 2025-06-24 as the entry-39 shell, ja label 坐韓国伊'''太'''弖神社 with alias 同社坐韓国伊太弖神社 — the 太 spelling, which is entry 39's register name. It carried ''followed by'' → [[d:Q135040909|Q135040909]] (entry 40), ''follows'' → [[d:Q135040907|Q135040907]] (entry 38), ''part of'' the list at ordinal '''39''', the national Engishiki ordinal '''2264''', and both ronsha candidates ([[d:Q135070107|Q135070107]], [[d:Q135070108|Q135070108]]).
+'''What Q135040908 was''', now read off the merge itself rather than from its history summary ([https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/audit_merge_provenance.py audit_merge_provenance.py]). The merge '''added 5 statements and removed none''' (12 → 17):
+
+* ''part of'' → [[d:Q11395853|Q11395853]] at ordinal '''39''', ''follows'' [[d:Q135040907|Q135040907]] (38), ''followed by'' [[d:Q135040909|Q135040909]] (40)
+* ''said to be the same as'' → [[d:Q135070107|Q135070107]] and [[d:Q135070108|Q135070108]] — the two ronsha
+* ''instance of'' → [[d:Q135038714|Q135038714]], and street address 同上
+
+⚠ '''Correction to what this page told you before: un-merging will NOT bring back the 2264 ordinal.''' It was not on the item at merge time — the qualifier ''series ordinal'' 2264 was removed on '''2025-12-21''', and the English description "The 2264th Shrine of the Engishiki Jinmyōchō" on '''2026-01-10''', both five months before the merge. Restoring it is a separate edit if you want it. The label 坐韓国伊'''太'''弖神社 and <code>P13723</code> → [[d:Q134917287|Q134917287]] (qualified ''determination method'' → [[d:Q138640329|Q138640329]]) do come back.
 
 '''Current live state of the list''' — everything else is correct, there is exactly one wrong cell:
 
@@ -56,7 +40,7 @@ You found it: [https://www.wikidata.org/w/index.php?title=Q135040908&action=hist
 
 No ordinal is used twice. I earlier told you 29 was also Karakuniitateno and that 39 was empty — both were my own misreadings of the same query, and neither is true of the live data.
 
-: '''→''' The fix is '''restore the merge''', not build a new item. Un-merging brings back the QID the list already points at, the 38/40 sequence, the 2264 ordinal and the two ronsha links — all of which a fresh item would have to be rebuilt by hand and would still not match what other statements reference.
+: '''→''' The fix is '''restore the merge''', not build a new item. Un-merging brings back the QID the list already points at, the 38/40 sequence and the two ronsha links — which a fresh item would have to be rebuilt by hand and would still not match what other statements reference.
 : After the restore, the only thing left is to delete the ''part of'' → list rows on [[d:Q135040786|Q135040786]] that came across in the merge: the one carrying ordinal '''39''' and the one carrying '''no ordinal'''. Keep ordinal 28.
 : ⚠ Not done by me — your Wikidata lockout runs to 2026-09-18 and undoing a merge is a manual action anyway.
 
@@ -78,9 +62,17 @@ This shrine is the only one that it is truly a candidate for
 :*Its name in Kana is weird and idk if our scripts just crapped out on it or something
 
 
-Please investigate the shrine and what links to it in order to see if any errors may have been introduced by the redirect being resolved and why I originally merged it. The fact they were merged is nontrivial as to why I did it and what information may have been lost.
+'''Both merges investigated''' — [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/audit_merge_provenance.py audit_merge_provenance.py], which diffs the item either side of each merge edit (a merge blanks its source before redirecting it, so the source itself no longer shows anything).
 
-* Oh my god please investigate why the shrine was removed and what was going on with it
+'''Nothing was lost.''' Both merges only added: 43 statements → 48 → 51, zero removed. And neither source was a duplicate of the shrine — each was '''the shrine as the candidate for one specific entry''':
+
+* [[d:Q135192793|Q135192793]] 御笏神社, 2025-12-01 03:08 — brought ''part of'' the list at ordinal '''20''', ''said to be the same as'' [[d:Q135039648|Q135039648]], official name 加弥命神社, and the coordinates.
+* [[d:Q135192871|Q135192871]] 御笏神社(境内社), five minutes later — the '''sessha''' item; brought ordinal '''34''' and ''said to be the same as'' [[d:Q135039658|Q135039658]].
+
+'''So the merges are not the cause of the supershrine — they are a symptom of the same import.''' The real damage predates them and is still sitting there: '''one single''' ''part of'' → [[d:Q11380552|Q11380552]] statement carrying '''five''' ordinals at once (5, 14, 16, 20, 34) with five ''follows'' and five ''followed by'' qualifiers piled into it. That is the piped-link collapse you described. The merges then added properly-formed statements for ordinals 20 and 34, which that one statement already contained — so those two are duplicated, and ''official name'' 加弥命神社 is duplicated for the same reason.
+
+: '''→ And this answers your kana question — the scripts did not crap out.''' The item carries '''five''' ''name in kana'' values: おしゃくじんじゃ, which is right, plus サキタマヒメノ-, ハヤシノ-, カタスカノ-, カミノ- — the readings of four '''entry''' names (佐伎多麻比咩命神社, 波夜志命神社, 片菅命神社, 加弥命神社), truncated with a hyphen. And ミナミコノ, the reading of 南子神社, is stamped as a qualifier on '''five different''' official names. The shrine absorbed the entries' names, so it absorbed their readings.
+: '''→''' The three staged removal lines are value-matched <code>-Q110915859|P361|Q11380552</code>, so any one of them takes '''all three''' statements including the five-ordinal one. Right outcome by your rule — a candidate shrine holds no list membership — but worth knowing the ordinals then survive only on the entry items.
 
 === Why is this P31 still here ===
 https://www.wikidata.org/wiki/Q135041321 has P31 [https://www.wikidata.org/wiki/Q135009132 Shrines receiving Tsukinami-sai and Niiname-sai offerings] is it still actually running like that or is it just over? IS it gonna be removed by the current logic?
@@ -94,7 +86,7 @@ https://www.wikidata.org/wiki/Q135041321 has P31 [https://www.wikidata.org/wiki/
 
 Anything you want done on the wiki side — write it here rather than in the repo.
 
-* ''Investigate Izumo entry 39 to see what is going on with it as per open questions''
+* ''(empty — add items here)''
 
 == Notes ==
 

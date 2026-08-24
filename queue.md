@@ -1306,39 +1306,52 @@ Known losses, from `docs/bruno_plus_analysis_2026-07.md` §4:
 - **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
   which is additive and independent of whatever the other editor is doing.
 
-## A-MERGE. ▶ What the 御笏神社 merges cost — Emma's ask, metabolised off `[[Open questions]]` 2026-08-24
+## A-SUPER. ▶ The 御笏神社 supershrine: the collapsed statement, not the merges — found 2026-08-24
 
-Her words on the page: *"Please investigate the shrine and what links to it in order to see if any
-errors may have been introduced by the redirect being resolved and why I originally merged it. The
-fact they were merged is nontrivial as to why I did it and what information may have been lost."*
+`A-MERGE` is answered and its finding is on `[[Open questions]]`. What it turned up is bigger than
+the question that started it, so it stays queued as this.
 
-Read-only forensics, so the Wikidata lockout does not block it. **It is about 御笏神社, not Izumo** —
-checked rather than assumed, because the paragraph sits under the 御笏 section while the only merge
-under discussion elsewhere was the Izumo one. `Q110915859` has 254 revisions and two of its own
-merges.
+`modern-quickstatements/audit_merge_provenance.py` diffs an item either side of each
+`wbmergeitems-from` edit, which is the only way to see what a merge moved — a merge blanks its
+source before redirecting, so the source itself shows nothing afterwards.
 
-**Established 2026-08-24, from the revision histories:**
+**Settled for `Q110915859`:** both merges only ADDED (43 → 48 → 51, zero lost), and neither source
+was a duplicate — `Q135192793` was the shrine as candidate for list ordinal **20**, `Q135192871` the
+**sessha** as candidate for ordinal **34**. So the merges are a symptom of the same import, not the
+cause of the supershrine.
 
-- `Q135192793` → merged into `Q110915859` at **2025-12-01T03:08:22Z**. It was a plain **duplicate**
-  of the same shrine — fr *sanctuaire d'Oshaku*, id *Kuil Oshaku*.
-- `Q135192871` → merged in five minutes later, **2025-12-01T03:13:40Z**. It was the **sessha**
-  item — fr *sanctuaire d'Oshaku (sessha)*, id *Kuil Oshaku (sessha)*.
-- One unrelated redirect resolution touched it: KrBot, 2025-07-05, `P156` `Q135098978` → `Q134926154`.
+**The actual damage, and it predates both merges:** ONE `P361 → Q11380552` statement carrying
+**five** `P1545` values at once (5, 14, 16, 20, 34) with five `P155` and five `P156` piled into it.
+Emma's piped-link collapse, made concrete.
 
-**The lead this gives, not yet confirmed:** merging the *sessha* item into the *shrine* item is a
-mechanism that would move the sessha's candidacies onto the shrine — which is the shape Emma
-describes on the page, six `said to be the same as` on an item she says is truly a candidate for
-only **佐伎多麻比咩命神社**, the rest being goshi merged into it. If that is where the six came from,
-the merge is the cause and the `part of` removals are treating a symptom.
+- [ ] **Is the five-ordinals-in-one-statement shape systemic?** Measure how many items carry a
+  `P361` with more than one `P1545` qualifier. That is the supershrine signature and nothing looks
+  for it today. Measure before staging anything.
+- [ ] **The truncated kana is the same import.** `Q110915859` holds five `P1814`: おしゃくじんじゃ
+  (right) plus サキタマヒメノ-, ハヤシノ-, カタスカノ-, カミノ- — four ENTRY readings cut off with a
+  hyphen. `Q135040908` had `P1814 → -カラクニイタテノ`, hyphen on the front. Same defect, both ends.
+  Count how many `P1814` values begin or end with a hyphen; they are all wrong and none are staged.
+- [ ] `P1448` on the same item carries ミナミコノ (the reading of 南子神社) as a `P1814` qualifier on
+  **five different** official names. Same cause, same measurement.
+- NEEDS-INVESTIGATION until measured; nothing is staged and nothing should be. The removals already
+  in `list_membership_removals.txt` are value-matched, so they take the collapsed statement anyway.
 
-- [ ] Fetch each source item's **pre-merge** revision (before the `Clearing item` edit — 2025-08-01
-  for both) and list exactly which statements crossed over. The post-merge revision is already
-  emptied, so reading it shows nothing.
-- [ ] Diff `Q110915859`'s statements across 2025-12-01T03:08 and 03:13 to attribute each of the six
-  `P460`s to a source.
-- [ ] Sweep what still points at the two redirects; a merge repoints incoming references silently,
-  so damage lands on the *referring* items.
-- [ ] Do not hammer Wikidata: a handful of revision fetches, no SPARQL sweep.
+## A-IZUMO2. ▶ Metabolised off the wiki-based queue 2026-08-24
+
+Emma's item, verbatim: *"Investigate Izumo entry 39 to see what is going on with it as per open
+questions"*.
+
+Run against `Q135040786` this tick. The merge added 5 statements and removed none: `P361` at ordinal
+**39** with the 38/40 sequence, both ronsha `P460`s, `P31 → Q135038714`, and `P6375 → 同上`.
+
+**Two claims this page had been making at her are now corrected on it.** The national ordinal
+**2264** was NOT on the item at merge time — the `P1545` qualifier went on **2025-12-21** and the
+"2264th Shrine" English description on **2026-01-10**, five months before the merge. So un-merging
+does not restore it, and the page had been telling her it would. That mattered because it is
+briefing a manual action.
+
+- The fix itself stays BLOCKED-ON-USER-ACTION in `A-OQ` — undoing a merge is manual and hers.
+- [ ] If she wants 2264 back it is a separate edit; it is staged nowhere.
 
 ## Pinned tail (keep last)
 
