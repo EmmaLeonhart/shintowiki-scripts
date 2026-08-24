@@ -38,7 +38,7 @@ Live record of the pair-by-pair decisions. Method and population:
 | 神明宮 / Shinmei-gū | `しんめいぐう`; `しんんめいぐう` is a typo, rule applied universally |
 | 諏訪社 / Suwa Shrine | `すわしゃ`; correct by default, she will say if she disagrees after seeing the outlier |
 
-## 天神社 / Tenjin-sha — DO NOT majority-fill. Investigated, hypothesis disproved.
+## 天神社 / Tenjin-sha — RESOLVED by jawiki, after two wrong theories (mine and hers)
 
 Her hypothesis: *"I think Tenjinja is an erroneous one that came from a typo in one of my scripts
 that applied the label."* **The revision history says otherwise.**
@@ -132,3 +132,40 @@ lockout lifts on 2026-09-18 in any case.
 `てんじんじゃ` is **44 of 47** NTA-sourced; `てんじんしゃ` is **11 of 19**. Both readings are legally
 attested, which is exactly why the 2025-06-02 batch alternates between them minutes apart. The pair
 must not be majority-filled — confirmed twice now, by two different methods.
+
+
+## 天神社, finished — and it took an outside source, not more Wikidata
+
+Emma: *"do a bit more research on Tenjinja vs Tenjinsha in ones without kana to make a decision on
+which way to go. Like more research not just wikidata surveying lol."* She was right that surveying
+our own data could not settle it. **jawiki's article on 天神社 states the answer in its first
+sentence:**
+
+> 天神社（**てんじんしゃ**）は、「天神社」の社名を持つ神社。読みには「**てんじんしゃ**」、
+> 「**あまつかむやしろ**」などがある。
+
+**てんじんしゃ, with あまつかむやしろ as a documented alternative. てんじんじゃ is not listed at all.**
+
+**Three theories died getting here, in order:**
+
+1. *Hers:* てんじんじゃ came from a typo in one of her own scripts. **No** — the revision history
+   shows both readings set by both editors in the same batches minutes apart, which is per-item work.
+2. *Mine:* the typo was in the ENGLISH, since "Tenjin-sha" on all 232 came from one QuickStatements
+   batch (`#temporary_batch_1753098414048`, 2025-07-21). **Also no** — that bulk label matches
+   jawiki exactly. It was right by default; it is only wrong on the items registered as じゃ.
+3. *Hers, second:* trust the English where it reads Tenjin-sha and generate kana from it. Circular
+   as stated — the label was never per-item — but it lands on the right answer anyway, because the
+   label happens to agree with jawiki.
+
+**The settled picture:**
+
+| group | count | disposition |
+|---|---|---|
+| no reading, label `Tenjin-sha` | 167 | fill with **てんじんしゃ** — jawiki-backed, matches the label |
+| reading てんじんじゃ, NTA-sourced | 43 | **preserve the reading**, fix the ENGLISH to `Tenjinja` |
+| reading てんじんじゃ, unsourced | 3 | no citation — fixable to てんじんしゃ under the uncited rule |
+| reading てんじんしゃ | 19 | correct already, nothing to do |
+| あまつかむやしろ | 1 | **legitimate** — jawiki lists it. I had been treating it as noise. |
+
+- ▶ Her instruction stands: **fix the English from the kana** where a reading exists.
+- ⚠ Nothing staged. Wikidata lockout to 2026-09-18.
