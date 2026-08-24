@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 (later, fifth) — the routine rewinds itself 153 commits, every run, on purpose
+
+Emma asked for a cloud run to test this morning's schedule change. It failed the same way, which is
+the useful outcome: **the schedule was never the cause and my fix was aimed at the wrong thing.**
+
+**What the log shows.** The sandbox starts the run on a **detached HEAD at the correct current tip**.
+But the local `main` BRANCH REF in that checkout is stale — pinned at `cb1b22b7`, *2026-08-20 07:26*,
+**153 commits behind**. The routine sees "HEAD detached", helpfully runs `git checkout main`, and
+rewinds itself four days. It prints `Warning: you are leaving 50 commits behind` and carries on. It
+then commits on that ancient base, so the push is a genuine non-fast-forward, and `git pull --rebase`
+rescues it by force-updating the stale ref and replaying its one commit.
+
+`cb1b22b7` appears as the sandbox's `origin/main` in **both** of today's runs, seven hours apart. It
+is a stale ref in the environment, not a race with anything.
+
+**So the July "403 = permissions" reading was wrong twice over.** The first line of that error is
+`RPC failed; HTTP 403`; the second is `! [rejected] main -> main (non-fast-forward)`. Nobody read
+the second line, and a plan to recreate the routine in the console was built on the first.
+
+**Fixed in the routine's prompt, not in the repo:** do not `git checkout main`; stay on the detached
+HEAD and `git push origin HEAD:main`. Rebase onto `origin/main` only if that is rejected, which now
+means an actual concurrent push rather than a four-day-old base.
+
+**A near-miss worth recording about the API.** A `POST` with `{"job_config": {"ccr": {...}}}` replaces
+`ccr` **wholesale**. The first update carried only `environment_id` and `events`, and the response
+came back with `session_context` stripped of its `sources`, `model` and `effort_level` — i.e. the
+routine briefly had **no repository bound**, which is precisely the broken state July had
+hypothesised and never actually observed. Caught it in the response and restored all three. Send the
+full `ccr` on every update.
+
+**The schedule move to 21:00Z stays**, on its own merit — Emma's ordering is Wikidata first (it is
+UTC-gated and stateful), then the wiki queue, then the Claude queue in the quiet hours before the
+next cron. It is just not what was breaking the push.
+
+---
+
 ## 2026-08-24 (later, fourth) — the routine never broke; it was scheduled into the storm
 
 Emma's design, and it is a scheduling problem not an auth one: the Wikidata work is UTC-gated and
