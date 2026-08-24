@@ -297,3 +297,43 @@ Immanuelle. Whether a script did it is not established: that particular edit car
 apart (02:36 and 02:37), which *suggests* one bad session, but a `usercontribs` check meant to
 confirm it returned nothing because I passed the time bounds backwards for the direction. **Not
 verified, not disproved, and not chased further.**
+
+
+## ⭐ A sic reading does NOT propagate into other languages — Emma, 2026-08-24
+
+> *"is legally the case though but my decision is that the english label is corrected"*
+
+The registry binds the **Japanese reading**. It does not bind an English label, so there is nothing
+to preserve there and no reason to export a registry's typo into a language it has no standing in.
+
+**The rule, for the 378 items that have an NTA-sourced reading and no English label yet:**
+
+- **`P1814` keeps the registered value verbatim**, typo and all, because it is the legal form.
+- **The English label is generated from the CORRECTED reading.**
+
+Worked example, [`Q135461183`](https://www.wikidata.org/wiki/Q135461183) 堀出神社 — she spotted the
+typo herself:
+
+| field | value |
+|---|---|
+| `P1814` | ほりいで**じんじじゃ** — doubled じ, NTA-sourced, **kept** |
+| en label | built from ほりいで**じんじゃ** → **"Horiide Shrine"**, not "Horiidejinjija" |
+
+This closes the cascade properly. `Q97162781` showed a bad reading silently producing three bad
+language labels; this says the boundary is the Japanese field, and a defect that is *legally
+required* to stay in one field does not get to travel.
+
+## 細川神社 — the error is jawiki's, and she was right that it is not hers
+
+[`Q11605965`](https://www.wikidata.org/wiki/Q11605965), reading `ほそかわんじゃ`. Emma: *"I take
+jawiki as wrong here but not due to me."* Confirmed by fetching the article — jawiki's own lead is:
+
+> 細川神社（**ほそかわんじゃ**）は、大阪府池田市吉田町に鎮座する神社。
+
+So our value is a faithful copy of jawiki's mistake, which is the pipeline working exactly as
+designed and inheriting a bad source. **Change the reading to ほそかわじんじゃ**; the English label
+"Hosokawa Shrine" is already correct and needs nothing.
+
+⚠ Worth noting for the name-in-kana programme generally: the jawiki lead is the *source* for that
+whole pipeline, so a typo there enters as a well-formed, apparently-sourced answer. `S143`/`S4656`
+would cite jawiki for it accurately. There is no defence against this except someone noticing.
