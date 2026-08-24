@@ -188,50 +188,36 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   Every other job in the run is green. `secrets: inherit` and the 69 unbootstrapped imports are
   done; nothing further to check there.
 
-- **▶ The SUNDAY path does not fit in `generate-quickstatements`' timeout — and did not before this week**
+- **✅ The Sunday story was WRONG on every count — measured by a forced run 2026-08-24**
 
-  ⚠ **I got this wrong in the 05:10 status report** and am correcting it rather than leaving it: I
-  guessed the 08-22 bootstrap fix had doubled the runtime by reviving 17 dead scripts. It had not.
-  The pattern is Sunday-only and it predates the fix:
+  Emma: *"can you test the goddamn crons… I don't know why there's anything Sunday-blocking it,
+  because the actual Mirahaze wiki is up."* Both instincts right. Tested with a new `force_weekly`
+  dispatch input rather than waiting for a Sunday.
 
-  - **2026-08-16 (Sunday) — cancelled.** Before the bootstrap bug even existed (`8ac7d8a2`, 08-19).
-  - **2026-08-23 (Sunday) — cancelled.**
-  - **08-17 (Mon), 08-18 (Tue) — success, 31m28s and 31m50s.**
+  **Run `32765835777`: the full path INCLUDING both weekly steps finished in 41.8 minutes** against
+  a 150-minute limit. There is no Sunday overrun.
 
-  So the Sunday-gated steps are the overrun, and the header comment above them says they were gated
-  *"so the daily job stays inside its timeout"* — which worked for the daily path and quietly failed
-  for the weekly one. My fix did make it worse (`generate_description_adds.py` is Sunday-gated, was
-  one of the 17, and now actually runs) but it is not the cause.
+  Three claims we had written down, each wrong, each built on the last:
+  - *"The Sunday path does not fit in 75 minutes."* Both Sunday runs died at 75m14s, but the whole
+    path takes ~42 including them.
+  - *"The 150 was live for 08-23 and it still cancelled."* Mine, and false: the raise landed
+    2026-08-23T10:15Z, **seven hours after** that run started. I compared a local timestamp
+    (`03:15-07:00`) against a UTC one.
+  - *"They are SPARQL-heavy, ~30-40 min each."* Forced, they took **80s and 161s**.
 
-  Where the budget went on 08-23, from the log's own timestamps — ~55 minutes in four steps:
+  **The real cause of the stale file, and it is a different fault entirely:** both generators
+  **bail on HTTP 429 from WDQS**, and `continue-on-error: true` then reports the step **green**. The
+  job succeeds, the file silently does not regenerate. `description_label_pairs.txt` has not moved
+  since 2026-08-02 with three Sundays in between and nothing ever looking wrong.
 
-      1060s  select_label_proposals    2,642,704 label proposals loaded
-       867s  description fixes         1,267 collision groups
-       723s  fetch [[QuickStatements/P11250]] from shintowiki
-       655s  P459 qualifiers, phase 1
+  The bail is correct — 429 means stop, per standing policy. What was wrong is that a bail and a
+  refresh were indistinguishable from outside. Both steps now emit a `::warning` annotation naming
+  the file that was not regenerated; `continue-on-error` stays, because a rate-limited weekly
+  refresh must not fail the daily job.
 
-  **The generators FINISHED.** It was cancelled inside the *commit* step, with the modified files
-  already listed — so a full Sunday regeneration was computed and then thrown away. That is why
-  `description_label_pairs.txt` has not moved since **2026-08-02** across three Sundays, and why it
-  still holds **5 `Did` against 3,514 `Duk`**.
-
-  - ✅ `timeout-minutes: 75` → **150**, with the measurement recorded in the workflow.
-  - ▶ **Still to verify on the next Sunday run:** `submit-quickstatements` non-skipped, and `Did` in
-    the thousands. If `Did` does not move, the label-only fix did not take and the branch to re-read
-    is the `new == desc` arm of `generate_description_fixes.py`.
-  - ⚠ **BLOCKED-ON-EXTERNAL and the wait is a WEEK, not a night — corrected 2026-08-24.** The run
-    this was written against, `32615320387`, fired on **Sunday 2026-08-23** and was cancelled at the
-    cap. It is now Monday, so tonight's run and the five after it take the `else` branch — *"not
-    Sunday — keeping committed description_label_pairs.txt"* — and exercise none of this. **The next
-    Sunday run is 2026-08-30.**
-    - So a green nightly run in the meantime proves the timeout raise for the *daily* path only, which
-      was never the failing one. Do not read it as verification of this item.
-    - Stated as a fact about the cron, not as a due date: `date -u +%u = 7` is in
-      `generate-quickstatements.yml`, and 2026-08-30 is simply when that next evaluates true.
-  - ▶ **If it overruns again, split rather than raise.** The Sunday-only steps belong in their own
-    weekly workflow — the repo already does this with `weekly-wiki-edit-test.yml` — instead of
-    riding the daily job's budget. Raising the cap is the small fix, not the right shape.
-    ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
+  - ▶ The refresh still has not happened — the forced run was itself rate-limited, partly by the
+    three SPARQL audits run earlier the same day. Re-dispatch `generate-quickstatements` with
+    `force_weekly=true` when WDQS is not being leaned on, and the id count should move off 5.
 
 - **🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining**
 

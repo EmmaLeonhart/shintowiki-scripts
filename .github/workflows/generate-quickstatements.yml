@@ -20,35 +20,27 @@ env:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    # 75 -> 150, measured 2026-08-23. The SUNDAY path does not fit in 75 minutes and
-    # has not for at least two weeks: 2026-08-16 (Sunday) cancelled, 2026-08-23
-    # (Sunday) cancelled, while 08-17 (Mon) and 08-18 (Tue) both finished in ~31m30s.
-    # The Sunday-only steps below are gated precisely so "the daily job stays inside
-    # its timeout" — that worked for the daily path and quietly failed for the weekly
-    # one.
+    # timeout-minutes 150. Kept, but NOT for the reason it was raised.
     #
-    # Where the 75 minutes went on the 08-23 run, from the log's own timestamps:
-    #   1060s  select_label_proposals   (2,642,704 label proposals loaded)
-    #    867s  description fixes        (1,267 collision groups)
-    #    723s  fetch [[QuickStatements/P11250]] from shintowiki
-    #    655s  P459 qualifiers, phase 1
-    # ~55 minutes in four steps, and it was cancelled *in the commit step* with the
-    # generators already finished — so the work was done and then discarded, which is
-    # why description_label_pairs.txt has not moved since 2026-08-02 despite three
-    # Sundays passing.
+    # ⚠ THE WHOLE TIMEOUT STORY WAS WRONG, and a forced run on 2026-08-24 disproved it:
+    # the full path INCLUDING both weekly steps finished in 41.8 minutes. There is no
+    # Sunday overrun to accommodate.
     #
-    # ⚠ CORRECTED 2026-08-24: BOTH Sunday cancellations ran under the OLD 75-minute
-    # timeout, so the 150 has never actually been exercised. The raise landed at
-    # 2026-08-23T10:15Z (commit 5fb14fc0, whose local timestamp 03:15-07:00 reads like
-    # 03:15Z and is not) — seven hours AFTER that Sunday's run started at 03:26Z. A
-    # local timestamp compared against a UTC one is how "the fix is live" got asserted
-    # about a run that predated it.
+    # What actually happened, corrected in order:
+    #   * Both Sunday cancellations (08-16, 08-23) died at 75m14s under the OLD 75.
+    #     I claimed the raise to 150 was live for the second one; it landed at
+    #     2026-08-23T10:15Z, seven hours after that run began, and I had compared a
+    #     local timestamp (03:15-07:00) against a UTC one.
+    #   * The weekly generators are not "~30-40 min each". Forced, they took 80s and 161s.
+    #   * They have never been running out of time. They BAIL ON HTTP 429 from WDQS and
+    #     `continue-on-error: true` reports the step GREEN, so the job succeeds while the
+    #     file silently does not regenerate. That is why description_label_pairs.txt has
+    #     not moved since 2026-08-02 with three Sundays in between and nothing ever
+    #     looking wrong.
     #
-    # And nothing about this path depends on the day of the week or on shinto.miraheze
-    # being reachable: both weekly steps are Wikidata SPARQL generators. The gate exists
-    # only to keep the DAILY job inside its timeout by concentrating ~60-80 minutes of
-    # SPARQL onto one day — which is precisely what blew the 75. `force_weekly` makes
-    # that path runnable on any day so it can be measured instead of waited for.
+    # So the Sunday cancellations and the stale file were two unrelated faults that
+    # looked like one story. The timeout stays at 150 because the earlier 75 genuinely
+    # was too tight for the whole job on a bad day — not because this path needs it.
     timeout-minutes: 150
     steps:
       - name: Checkout
@@ -235,16 +227,29 @@ jobs:
         continue-on-error: true
         run: python generate_court_rank_quickstatements.py
 
-      # The two description generators are SPARQL-heavy (~30-40 min each) and
-      # their data barely drifts daily (both self-drain via skip-if-standard on
-      # regeneration), so they refresh weekly on Sundays — the daily job stays
-      # inside its timeout.
+      # ⚠ MEASURED 2026-08-24 by a forced run, and the premise below was wrong twice.
+      # They are NOT "~30-40 min each": forced, they took 80s and 161s. And they have
+      # not been running out of time — they BAIL ON HTTP 429 from WDQS, and
+      # `continue-on-error: true` then reports the step GREEN. So the job succeeds, the
+      # file silently does not regenerate, and description_label_pairs.txt has not moved
+      # since 2026-08-02 while three Sundays passed and nothing ever looked wrong.
+      #
+      # The bail is correct — 429 means back off, and the standing policy is to stop
+      # rather than retry. What was wrong is that a bail and a refresh looked identical
+      # from outside. The `|| echo ::warning` makes a skipped refresh an annotation on
+      # the run instead of nothing at all. continue-on-error stays: a rate-limited
+      # weekly refresh must not fail the daily job.
+      #
+      # Original rationale, kept because the weekly cadence itself is still deliberate:
+      # both generators self-drain via skip-if-standard on regeneration, so their data
+      # barely drifts day to day.
       - name: Description fixes (desc-without-label pairs, weekly Sunday refresh)
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
           if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
-            python generate_description_fixes.py; \
+            python generate_description_fixes.py \
+              || echo "::warning title=Weekly refresh did not run::generate_description_fixes.py bailed (usually HTTP 429 from WDQS). description_label_pairs.txt was NOT regenerated."; \
           else echo "not Sunday and not forced — keeping description_label_pairs.txt"; fi
 
       - name: Description adds (labeled items missing descriptions, weekly Sunday refresh)
@@ -252,7 +257,8 @@ jobs:
         continue-on-error: true
         run: |
           if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
-            python generate_description_adds.py; \
+            python generate_description_adds.py \
+              || echo "::warning title=Weekly refresh did not run::generate_description_adds.py bailed (usually HTTP 429 from WDQS). description_adds.txt was NOT regenerated."; \
           else echo "not Sunday and not forced — keeping description_adds.txt"; fi
 
       # MUST be the last step before the commit. The husks are items ブルーノ・プラス
