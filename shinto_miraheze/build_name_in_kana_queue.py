@@ -334,13 +334,26 @@ def leads(titles):
     return out
 
 
-def lead_subject(lead):
-    """The name the lead is actually ABOUT — the text before its first parenthesis.
+_KANA = re.compile(r"[ぁ-ゖァ-ヺー]")
+_GLOSS = re.compile(r"[（(]([^）)]*)[）)]")
 
-    Japanese leads open `NAME（よみ）は、…`, so the subject is everything up to the
-    first full-width or half-width open paren, or up to は if there is no paren.
+
+def lead_subject(lead):
+    """The name the lead is actually ABOUT.
+
+    Japanese leads open `NAME（よみ）は、…`, so the subject is the text before the
+    READING parenthetical — which is not always the first parenthetical.
+
+    `舊府神社` is led as `舊府（旧府）神社（ふるふじんじゃ）は、…`: the first paren is a
+    kanji gloss sitting INSIDE the name, and stopping at it yields `舊府`, which then
+    looks like a mismatch against `舊府神社`. That was a false positive on the first
+    live tranche, and a warning that cries wolf is worse than no warning.
+
+    So: drop parentheticals whose content carries no kana — those are spelling glosses,
+    not readings — then stop at the first one that remains.
     """
     head = (lead or "").strip().split("\n", 1)[0]
+    head = _GLOSS.sub(lambda m: "" if not _KANA.search(m.group(1)) else m.group(0), head)
     for stop in ("（", "("):
         if stop in head:
             return head.split(stop, 1)[0].strip()

@@ -61,6 +61,22 @@ def test_lookalikes_are_not_flagged(ja, lead, why):
     assert subject_mismatch(ja, lead) is None, why
 
 
+def test_a_kanji_gloss_inside_the_name_is_not_the_reading_paren():
+    """舊府神社 is led as 舊府（旧府）神社（ふるふじんじゃ）. Stopping at the FIRST paren gives
+    舊府, which reads as a mismatch against 舊府神社 — a false positive on the detector's
+    first live tranche. A parenthetical with no kana in it is a spelling gloss sitting
+    inside the name, not the reading."""
+    lead = "舊府（旧府）神社（ふるふじんじゃ）は、大阪府和泉市にある神社。"
+    assert lead_subject(lead) == "舊府神社"
+    assert subject_mismatch("舊府神社", lead) is None
+
+
+def test_a_paren_that_does_carry_kana_is_still_the_reading():
+    lead = "花窟神社（花の窟神社、はなのいわやじんじゃ）は三重県熊野市有馬町に所在する神社。"
+    assert lead_subject(lead) == "花窟神社"
+    assert subject_mismatch("花窟神社", lead) is None
+
+
 def test_lead_subject_stops_at_the_first_paren():
     assert lead_subject("氷川神社（ひかわじんじゃ）は、東京都…") == "氷川神社"
     assert lead_subject("氷川神社(ひかわ)は…") == "氷川神社"
