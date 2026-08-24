@@ -113,9 +113,16 @@ Nothing had been delivered — the lockout blocks every write path and the newes
 
 - ⚠ **No algorithmic search, no text comparison, no heuristic on the reading. She did not ask for
   any, and one caused this.**
-- NEEDS-DECISION before rebuilding: whether the answering step is the cloud routine only (her spec)
-  or whether local batch answering via `apply_local_answers.py` is allowed at all — that path was
-  session-added, not hers.
+- **`apply_local_answers.py` is DELETED** (and its test). Added 2026-08-04 by a session because the
+  cloud routine "answers a handful of items per run", it let a session fill the ANSWER markers
+  locally instead. Emma, 2026-08-24: *"the cloud working is fundamental to this… If I wanted the
+  best answers, I would ask you locally, but I don't want the best answers. I want answers that will
+  occur when the session doesn't run."* Answer quality was never the point; running unattended is.
+  It produced 994 kana rows (deleted with the rest) and **175 label-typo rows that are still in the
+  repo** — `local_answers/label_typo_*.tsv`, not yet removed because she ordered the kana data out,
+  not those.
+- ▶ **The routine being slow is a thing to FIX, not to route around.** ~5 items/day against thousands
+  is the real defect and it is still undiagnosed (`A1`).
 - ⚠ Not restarted. Nothing rebuilds until she says so.
 
 ## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
