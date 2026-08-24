@@ -334,130 +334,16 @@ def leads(titles):
     return out
 
 
-_KANA = re.compile(r"[ぁ-ゖァ-ヺー]")
-_GLOSS = re.compile(r"[（(]([^）)]*)[）)]")
-
-
-def lead_subject(lead):
-    """The name the lead is actually ABOUT.
-
-    Japanese leads open `NAME（よみ）は、…`, so the subject is the text before the
-    READING parenthetical — which is not always the first parenthetical.
-
-    `舊府神社` is led as `舊府（旧府）神社（ふるふじんじゃ）は、…`: the first paren is a
-    kanji gloss sitting INSIDE the name, and stopping at it yields `舊府`, which then
-    looks like a mismatch against `舊府神社`. That was a false positive on the first
-    live tranche, and a warning that cries wolf is worse than no warning.
-
-    So: drop parentheticals whose content carries no kana — those are spelling glosses,
-    not readings — then stop at the first one that remains.
-    """
-    head = (lead or "").strip().split("\n", 1)[0]
-    head = _GLOSS.sub(lambda m: "" if not _KANA.search(m.group(1)) else m.group(0), head)
-    for stop in ("（", "("):
-        if stop in head:
-            return head.split(stop, 1)[0].strip()
-    if "は" in head:
-        return head.split("は", 1)[0].strip()
-    return head.strip()
-
-
-# Variant character forms folded to the form in ordinary modern use, so two spellings of
-# one name compare equal.
-#
-# This is NOT a special mechanism and it is not only 旧字体. Japanese shrine names are
-# routinely written with variant characters — kyūjitai (縣/県), itaiji (﨑/崎), and plain
-# alternates (鴈/雁) — and all of them are the same situation: one name, two spellings. The
-# earlier version of this table was called KYUJITAI, contained itaiji anyway, and folded
-# 淵 to 渕, which is backwards — 淵 is the ordinary form and 渕 the variant.
-#
-# Deliberately not a general Unicode table. A broad fold would start collapsing characters
-# that distinguish real shrines from each other, and this is only ever used to compare an
-# item's label against its own article's lead.
-VARIANT_KANJI = {
-    # kyūjitai → shinjitai
-    "縣": "県", "國": "国", "榮": "栄", "舊": "旧", "齋": "斎", "藝": "芸",
-    "澤": "沢", "濱": "浜", "邊": "辺", "邉": "辺", "會": "会", "學": "学",
-    "廣": "広", "圓": "円", "惠": "恵", "德": "徳", "樂": "楽", "豐": "豊",
-    "眞": "真", "淺": "浅", "賣": "売", "巖": "巌", "鐵": "鉄", "靈": "霊",
-    "觀": "観", "應": "応", "醫": "医", "亞": "亜", "壽": "寿", "驛": "駅",
-    "齒": "歯", "龍": "竜", "萬": "万", "禪": "禅",
-    # itaiji / alternates → the ordinary form. The first two are the pairs this check was
-    # already tolerating by edit distance; folding them makes that exact instead of lucky.
-    "﨑": "崎", "鴈": "雁", "渕": "淵", "槇": "槙",
-}
-
-
-def fold_variants(text):
-    """Fold variant character forms so two spellings of one name compare equal."""
-    return "".join(VARIANT_KANJI.get(ch, ch) for ch in text)
-
-
-def subject_mismatch(ja, lead):
-    """The lead is about a DIFFERENT name from the item's — the dangerous case.
-
-    Found 2026-08-24 across three items in one tranche. The article is titled and led
-    as a bare 氷川神社 while the item is 千住氷川神社 or 南沢氷川神社; worse, Q11556511
-    洲崎濱宮神明神社's lead is about 海山道神社 entirely.
-
-    It matters more than a missing reading. The lead states one cleanly, in the usual
-    parenthetical, so an answer taken from it looks well-sourced — and the collector
-    then attaches S143/S4656, asserting that the Japanese Wikipedia article backs a
-    reading of a name the article never mentions. A wrong unsourced reading is
-    recoverable; a wrong SOURCED one is what "visibility is worse than data loss" is
-    about.
-
-    Two things are NOT mismatches, and a first cut got both wrong:
-
-    * **Variant kanji.** 利雁神社 is led as 利鴈神社 and 尾崎神社 as 尾﨑神社 — the same
-      shrine, one character written differently. Same length, one character apart.
-    * **A lead whose subject is longer prose containing the name**, e.g.
-      本項目で扱う滋賀県高島市の熊野神社. The item's name is in there.
-
-    And one thing IS a mismatch that plain containment misses: the lead's subject being
-    a strict *substring* of the item's name. That is exactly 千住氷川神社 led as a bare
-    氷川神社 — the article covers the generic name and the item is a specific shrine, so
-    its reading is not the one stated.
-
-    Both of those are the SAME situation — one name, two spellings — and so is
-    香川縣護國神社 led as 香川県護国神社, which differs in two positions rather than one.
-    Variant forms are folded (see VARIANT_KANJI) so that comparison is exact and the number
-    of differing positions stops mattering. The one-character tolerance is kept only as a
-    backstop for variants not in the table; it is a heuristic, and hitting its edge says
-    nothing about the names.
-    """
-    subject = lead_subject(lead)
-    if not subject or not ja:
-        return None
-    bare = ja.split("(", 1)[0].split("（", 1)[0].strip()
-    bare, subject_cmp = fold_variants(bare), fold_variants(subject)
-    if bare == subject_cmp or bare in subject_cmp:
-        return None
-    if len(bare) == len(subject_cmp) and sum(
-            a != b for a, b in zip(bare, subject_cmp)) <= 1:
-        return None                      # variant kanji
-    return subject
-
-
-MISMATCH = (
-    "<!-- ⚠ THE LEAD IS ABOUT A DIFFERENT NAME: this item is {ja!r} but the lead below "
-    "opens on {subject!r}. Do NOT copy the lead's reading as KANA — it would be sourced "
-    "to an article that does not name this shrine. Either derive this item's own reading "
-    "and answer GUESS, or answer NO_KANA. -->"
-)
 
 
 def write_work_file(qid, ja, en, title, lead):
     bucket = "a" if en else "b"
     path = os.path.join(OUT_DIR, f"{qid}.wiki")
     art = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
-    subject = subject_mismatch(ja, lead)
-    warn = (MISMATCH.format(ja=ja, subject=subject) + "\n") if subject else ""
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(f"<!-- ITEM: https://www.wikidata.org/wiki/{qid} -->\n"
                 f"<!-- JA: {ja} | EN_LABEL: {en or '(none)'} | BUCKET: {bucket} -->\n"
                 f"<!-- ARTICLE: {art} -->\n"
-                f"{warn}"
                 f"<!-- ANSWER: -->\n"
                 f"{TASK}\n\n== LEAD ==\n{lead.strip()}\n")
 

@@ -79,106 +79,44 @@ order. **Emma's call: leave them.** They are untidy, not wrong.
   is finding a known and decided thing, not a new defect.
 - The audit script stays so the number is re-measurable without another investigation.
 
-## A-KANA. ▶ kana-from-jawiki, FULL BUILD — Emma's call 2026-08-23; guessing is wired, draining is not
+## A-KANA. ▶ RESET 2026-08-24 on Emma's instruction — everything the programme produced is deleted
 
-Her decision via AskUserQuestion: the full version, not the bounded one — pull the kana from the
-jawiki article, feed the naming pipeline, **and guess where no kana can be found**. She was shown
-her own 2026-08-18 objection (it extends the programme's runtime, against the finite ending) and
-chose the full build anyway.
+I built a comparison layer she never asked for: `subject_mismatch()` compared each item's ja label
+against the first noun of its jawiki lead and declared the article "about a different shrine". The
+sitelink already answers that question, and jawiki's convention is to title a disambiguated article
+`氷川神社 (足立区千住)` while the lead opens on the bare `氷川神社`. The check read that convention
+as a different shrine. Five of its six flags were wrong.
 
-**⛔ pykakasi is OUT and that is settled.** A mechanical guesser was built and measured against the
-342 readings already extracted from articles: **47.7% exact, 52.3% wrong, 0% close** — the failures
-were different words, not spelling slips (江島 えのしま→えじま, 三吉 みよし→さんきち, 一宮 いっく→
-いちのみや). Emma: *"Pykakasi is horrible don't use it lol"* / *"This is a settled issue."* Deleted.
-Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stays gone.
+Her instruction, verbatim: *"Whatever data comes from it at all needs to be ripped out immediately,
+and I'm totally fine with collateral damage… This includes and is not limited to, say, resetting all
+of the proposed labels to a month ago."*
 
-- ✅ **`GUESS:` is now an answer kind** on the same work-file/ANSWER path that produced the 342
-  correct readings. `collect_name_in_kana.py` accepts it and puts it through the identical hiragana
-  gate. The builder's TASK asks for a derived reading — from the place-name it is named for, from
-  other shrines of the same name, from the infobox — and names the three measured failure modes so
-  the same error class does not come back. `NO_KANA` remains the right answer when nothing can be
-  derived: a wrong reading is worse than none.
-- ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
-  true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
-  one because nothing downstream can distinguish it.
-- ✅ **Eleven tranches built and drained — 962 answered, 0 rejected, 0 pending.**
-  Answers in `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e,f,g}.tsv` and
-  `…_2026-08-24{,b,c,d}.tsv`.
-- **A third `GUESS` sub-shape: a PAIRED shrine whose lead gives each half separately.**
-  `Q11633774` 豊榮神社・野田神社 — the lead reads 豊榮神社（とよさかじんじゃ）と野田神社（のだじんじゃ）,
-  so both halves are sourced but the **combined string is not**. Staged as `GUESS`, no source.
-  The contrast is in the same batch and is worth keeping: `Q11643733` 都波岐神社・奈加等神社's lead
-  states the combined つばきじんじゃ・なかとじんじゃ outright, so that one is `KANA` **with**
-  `S143`/`S4656`. Two paired shrines, two different answers, decided by whether any article states
-  the value being written.
-- ✅ **The "lead names a different shrine" case is now DETECTED BY THE BUILDER, not by
-  whoever happens to notice.** `subject_mismatch()` compares the item's ja label to the name the
-  lead actually opens on and writes a warning above the ANSWER marker telling the answerer not to
-  copy the reading. **It caught 2 real cases on its first live tranche** — `Q11595844`
-  秋葉神社・三座宮稲荷神社 (lead is about 秋葉神社 and 三座稲荷) and `Q11596881` 柳原稲荷神社 (lead is a
-  bare 稲荷神社). Neither is visible from the answer format.
-  - Tuned against 11 real cases from this session, because a first cut got two wrong in each
-    direction: it passed 千住氷川神社 (the lead's name is a *substring* of the item's, which plain
-    containment reads as a match) and flagged 利雁/利鴈 and 尾崎/尾﨑, which are one shrine with a
-    variant kanji.
-  - ✅ **One false positive on the SECOND tranche, fixed the same tick.** `Q11613492` 舊府神社 is
-    led as 舊府**（旧府）**神社（ふるふじんじゃ） — the first parenthetical is a kanji gloss *inside*
-    the name, so stopping at it yielded 舊府. `lead_subject()` now drops parentheticals carrying no
-    kana. **A warning that cries wolf is worse than no warning**, so this mattered more than the
-    miss rate.
-  - ✅ **A second false positive on the ELEVENTH tranche — and my write-up of it was wrong.**
-    `Q11667575` 香川**縣**護**國**神社 led as 香川**県**護**国**神社. I called this "a mechanism the
-    check had not met". It is not: it is the **same** variant-character case as 利雁/利鴈 and
-    尾崎/尾﨑, occurring twice in one name instead of once. Those two were passing only because
-    they differ in one position and the tolerance stopped at one — which is luck, not knowledge.
-    The differing-position count was arbitrary and says nothing about the names.
-    `fold_variants()` now folds variant forms (kyūjitai, itaiji, alternates alike) so the
-    comparison is exact, with the known pairs in the table; the one-character tolerance stays
-    only as a backstop for unlisted variants. **The first version also folded 淵 to 渕 —
-    backwards, 淵 is the ordinary form — inside a table called `KYUJITAI` that contained itaiji
-    anyway.** 24 tests.
-  - ⚠ **This is the highest-severity error the pipeline can make**, which is why it gets a builder
-    check rather than a note: the lead states a reading cleanly, so a `KANA` answer looks
-    well-sourced and the collector attaches `S143`/`S4656` — asserting jawiki backs a reading of a
-    name the article never mentions.
-- **`GUESS` has two shapes, and the second is the common one.** 11 guesses in 562 answers:
-  - **No lead at all** (redirect / disambig / empty) — the case the builder now writes a work-file
-    for. 6 so far.
-  - **The lead names a DIFFERENT shrine.** The article is titled and led as a bare 氷川神社 while the
-    item is 千住氷川神社 or 南沢氷川神社; or, worst, `Q11556511` 洲崎濱宮神明神社 whose lead is about
-    海山道神社 entirely. Taking the lead's reading here yields a **sourced** answer about the wrong
-    name — which is more dangerous than no answer, because `S143`/`S4656` would assert the article
-    backs it. 5 so far, and this shape is invisible unless the item label is compared to the lead.
-- **The target set is not purely shrines, and that is correct.** Emma's 2026-08-05 rule is *"is it a
-  nameable place"*, not *"is it a shrine"*, and it has now admitted: a sea cave (`Q11488835`
-  御厨人窟), two Kumano 王子 sites one of which no longer exists (`Q11480731`, `Q11483087`), a
-  Kōyasan Shingon temple (`Q11545320` 歓喜院) and a park (`Q11548302` 水分れ公園). All have real
-  readings in their own leads. **What DOES get excluded is a different class** — people,
-  disambiguation pages, festivals, texts and organisations — and two of those reached the set anyway
-  and were answered `NO_KANA` (`Q11435648` a Muromachi text, `Q11443187` a religious organisation).
-- ✅ **The permanent skip loop is CLOSED 2026-08-23.** `Q11391058`, `Q11391059`, `Q11391060`
-  (three Okazaki 八幡社) and `Q11396252` (刈田嶺神社 (七ヶ宿町)) were re-fetched and re-skipped by
-  every tranche — three in a row printed an identical four — because the builder wrote no file
-  "so a later run retries them". Their articles are redirects/disambig/empty, so the extract never
-  arrives; it was a loop, not a retry.
-  - The builder now writes a work-file with the LEAD replaced by `NO_LEAD`, which states that the
-    extract will never come and names what is left to derive from. All four answered as `GUESS`:
-    八幡社 → はちまんしゃ; 刈田嶺神社 → かったみねじんじゃ, taken from siblings `Q11396254` /
-    `Q11396255`, which state it in their own leads and were answered from them the same day.
-  - **Verified by re-running the builder**: 613 targets excluded as already answered and the four
-    are gone from the front of the set. `test_name_in_kana_no_lead.py` (5 tests) pins both the
-    behaviour and the prompt, including that the old `continue` cannot come back.
-- ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
-  builder itself: **2,634 targets** (bucket a 2,576, bucket b 58), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **1,316
-  resolved, 0 pending → ~1,318 still unqueued** (`name_in_kana/_resolved.log`: 1,282 KANA · 18 GUESS
-  · 8 KATAKANA · 6 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 1,310 lines).
-  Just past half. Keep rebuilding in tranches with `build_name_in_kana_queue.py --limit N`, answer
-  locally in batches (`apply_local_answers.py --queue name_in_kana --answers
-  local_answers/<file>.tsv --apply` — the path is resolved relative to `shinto_miraheze/`, not the
-  repo root), then `collect_name_in_kana.py`. The remote routine delivers ~5/day, so local batches
-  are the road.
-  ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
+**Deleted**, not trimmed:
+- `modern-quickstatements/name_in_kana.txt` — 1,310 staged rows, gone. Its `ATOMIC_FILES` entry
+  stays; the submitter skips a missing file.
+- `name_in_kana/_resolved.log` (1,316) and every remaining work-file.
+- All 11 `shinto_miraheze/local_answers/name_in_kana_*.tsv`.
+- `modern-quickstatements/kana_en_labels.txt` reset to its 2026-07-25 state (401 → 404 lines).
+- `subject_mismatch`, `lead_subject`, `fold_variants`, `VARIANT_KANJI`, `MISMATCH` and their test
+  file, removed from the builder.
+
+Nothing had been delivered — the lockout blocks every write path and the newest submission report is
+2026-07-28 — so this was staged text only.
+
+**Her spec, which is what the pipeline is supposed to be and nothing more:**
+
+1. A script saves the lead section of the article into a file.
+2. The automated cloud-Claude routine reads it and writes the kana reading into another file.
+3. Cloud-Claude commits and pushes.
+4. GitHub Actions deletes the saved lead from the repo.
+5. The kana lands in the output file and the pipeline eventually applies it.
+
+- ⚠ **No algorithmic search, no text comparison, no heuristic on the reading. She did not ask for
+  any, and one caused this.**
+- NEEDS-DECISION before rebuilding: whether the answering step is the cloud routine only (her spec)
+  or whether local batch answering via `apply_local_answers.py` is allowed at all — that path was
+  session-added, not hers.
+- ⚠ Not restarted. Nothing rebuilds until she says so.
 
 ## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
 
