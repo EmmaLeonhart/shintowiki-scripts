@@ -1,0 +1,161 @@
+{{main other|{{#if:{{Has short description}} | |{{#invoke:Type in location|main|UNESCO World Heritage Site|{{{location|}}}}}}}}}{{#if:{{{child|}}}{{{Child|}}}|<templatestyles src="Infobox/mobileviewfix.css"/>}}
+{{Infobox
+| child    = {{lc:{{if empty|{{{child|}}}|{{{Child|}}}}}}}
+| decat    = yes
+|bodyclass = vcard
+
+|titleclass = category
+|titlestyle = font-size:125%;
+|title = <includeonly>{{#if:{{{child|}}}{{{Child|}}}||{{if empty|{{{WHS|}}}|{{{Name|}}}|{{PAGENAMEBASE}}}}}}</includeonly>
+
+|aboveclass = fn org
+|abovestyle = padding:0.2em;background:#87CEEB; color:inherit;font-size:100%;
+|above = <includeonly>[[UNESCO World Heritage Site]]</includeonly>
+
+|imagestyle = border-top:1px #aaa solid;padding-top:0.4em;
+|image = {{#invoke:InfoboxImage|InfoboxImage|image={{if empty|{{{Image|}}}|{{{image|}}}}}|size={{{image_size|}}}|upright={{if empty|{{{image_upright|}}}|1}}|alt={{{alt|}}}}}
+
+|caption = {{#if:{{{caption|}}}{{{Caption|}}}{{{imagecaption|}}} |{{if empty|{{{caption|}}}|{{{Caption|}}}|{{{imagecaption|}}}}}}}
+
+|image2 = {{#if:{{{map|}}} | {{location map|{{{map|}}}
+             | border = infobox | float = center
+             | width          = {{if empty|{{{map_size|}}}|{{{mapsize|}}}|{{{map_width|}}} }}
+             | default_width  = 220
+             | max_width      = 250
+             | relief         = {{{relief|}}}
+             | label          = {{if empty|{{{label|}}}|{{{name|}}} }}
+             | position       = {{if empty|{{{label_position|}}}|none}}   
+             | caption        = {{{map_caption|}}}
+             | alt            = {{if empty|{{{map_alt|}}}|Map showing the location of {{{name|}}} }}
+             | mark           = {{{mark|}}}
+             | marksize       = {{if empty|{{{mark_width|}}}|{{{mark_size|}}}}}
+             | coordinates    = {{if empty|{{{coordinates|}}}|{{{coords|}}}}} }}
+           | {{#invoke:InfoboxImage|InfoboxImage|image={{if empty|{{{map_image|}}}|{{{image_map|}}}}}|size={{if empty|{{{map_size|}}}|{{{mapsize|}}}|{{{map_width|}}} }}|maxsize=256px|alt={{{map_alt|}}}}}
+           }}
+|caption2 = {{#if:{{{map|}}} || {{{map_caption|}}} }}
+
+|image3   = {{#ifeq:{{yesno-no|{{{hide_interactive_map|}}}|}}|yes||{{#invoke:Infobox mapframe
+  | autoWithCaption
+  | onByDefault = {{#if:{{{map|}}}{{{map_image|}}}{{{child|}}}{{{Child|}}}|no|yes}}
+  | mapframe-caption = Interactive map of {{if empty|{{{WHS|}}}|{{{Name|}}}|{{PAGENAMEBASE}}}}
+}}}}
+
+|rowclass1 = <includeonly>{{#if:{{{child|}}}{{{Child|}}}|mergedrow|}}</includeonly>
+|header1 = <includeonly>{{#if:{{{child|}}}{{{Child|}}}|{{#invoke:Designation|divbox|WHS}}|}}</includeonly>
+
+|labelstyle = padding-right:0.3em;
+
+|rowclass2 = mergedrow
+|label2 = Official&nbsp;name
+|data2 = {{if empty|{{{Official_name|}}}|{{{official_name|}}}}}
+
+|rowclass3 = mergedrow
+|label3 = [[World Heritage Sites by country|Location]]
+|data3 = {{if empty|{{{Location|}}}|{{{location|}}}}}
+
+|rowclass4 = mergedrow
+|label4 = Part of
+|data4 = {{if empty|{{{Part_of|}}}|{{{part_of|}}}}}
+
+|rowclass5 = mergedrow
+|label5 = Includes
+|data5 = {{if empty|{{{Includes|}}}|{{{includes|}}}}}
+
+|rowclass6 = mergedrow
+|label6 = [[World Heritage Site#Selection criteria|Criteria]]
+|class6 = category
+|data6 = {{#if: {{{Type|}}} |{{{Type}}}:&nbsp;| }}{{if empty|{{{Criteria|}}}|{{{criteria|}}}}}
+
+|rowclass8 = mergedrow
+|label8 = Reference
+|data8 = {{#if:{{{ID|}}} |{{#if:{{{Link|}}} |[{{{Link}}} {{{ID}}}] |[https://whc.unesco.org/en/list/{{{ID}}} {{{ID}}}] }} }}
+
+|rowclass10 = mergedrow
+|label10 = <span style="font-size:85%;font-weight:normal;">[https://whc.unesco.org/en/list/?search=&search_by_country=&type=&media=&region=&order=region UNESCO region]</span>
+
+|rowclass14 = mergedrow
+|label14 = Inscription
+|data14 = {{if first display both|{{if empty|{{{Year|}}}|{{{year|}}}}}| ({{#if:{{{Session|}}}
+               | {{{Session}}}
+               | {{#ifexpr:{{if empty|{{{Year|}}}|{{{year|}}}}}>1976
+                  | {{#ifexpr:{{if empty|{{{Year|}}}|{{{year|}}}}}>2020
+                  | {{#ifexpr:{{if empty|{{{Year|}}}|{{{year|}}}}}>2022
+                     | {{ordinal|{{#expr:{{if empty|{{{Year|}}}|{{{year|}}}}}-1978}}}}
+                     | {{ordinal|{{#expr:{{if empty|{{{Year|}}}|{{{year|}}}}}-1977}}}}}}
+                     | {{ordinal|{{#expr:{{if empty|{{{Year|}}}|{{{year|}}}}}-1976}}}}}}
+                  | Unknown}} }} [[World Heritage Committee|Session]])}}
+
+|rowclass16 = mergedrow
+|label16 = Extensions
+|data16 = {{if empty|{{{Extension|}}}|{{{extension|}}}}}
+
+|rowclass18 = mergedrow
+|label18 = [[List of World Heritage in Danger|Endangered]]
+|data18 = {{if empty|{{{Danger|}}}|{{{danger|}}}}}
+
+|rowclass22 = mergedrow
+|label22 = Area
+|class22 = category
+|data22 = {{if empty|{{{Area|}}}|{{{area|}}}}}
+
+|rowclass24 = mergedrow
+|label24 = Buffer&nbsp;zone
+|class24 = category
+|data24 = {{if empty|{{{Buffer_zone|}}}|{{{buffer_zone|}}}}}
+
+|label26 = Website
+|class26 = category
+|data26 = {{if empty|{{{Website|}}}|{{{website|}}}}}
+
+|label27 = [[Geographic coordinate system|Coordinates]]
+|data27 = {{if empty|{{{coordinates|}}}|{{{Coordinates|}}}}}
+
+| data28 = {{if empty|{{{embedded|}}}|{{{Embedded|}}}}}
+
+| label29     = Public transit access
+| data29     = {{{publictransit|}}}
+
+|data30 = {{#if:{{both|{{if empty|{{{locmapin|}}}|{{{Locmapin|}}}}}|{{if empty|{{{coordinates|}}}|{{{Coordinates|}}}}}}}
+              | {{Location map
+                 |{{if empty|{{{locmapin|}}}|{{{Locmapin|}}}|Earth}}
+                 |coordinates={{if empty|{{{coordinates|}}}|{{{Coordinates|}}}}}
+                 |float=center|relief={{{relief}}}|width={{{map_width|}}}|default_width=250|border=infobox
+                 |caption=<div style="line-height:1.2em;">{{#if:{{{map_caption|}}}
+                            |{{{map_caption}}}
+                            |Location of {{if empty|{{{name|}}}|{{PAGENAMEBASE}}}} {{#ifeq:{{if empty|{{{locmapin|}}}|{{{Locmapin|}}}|Earth}}|Earth |on Earth. |in {{#invoke:Location map|data|{{if empty|{{{locmapin|}}}|{{{Locmapin|}}}|Earth}}|name}}}}}}</div>
+             | label          = {{#ifeq: {{lc: {{{pushpin_label_position|}}} }} | none | | {{if empty|{{{label|}}}|{{{name|}}}|{{PAGENAMEBASE}} }} }}
+             }}}}
+
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox UNESCO World Heritage Site]] with unknown parameter "_VALUE_"|ignoreblank=y|mapframe_args=y| alt | area | Area | buffer_zone | Buffer_zone | Caption | caption | Child | child | coordinates | Coordinates | coords | criteria | Criteria | danger | Danger | Embedded | embedded | extension | Extension | ID | image | Image | image_map | image_size | image_upright | imagecaption | includes | Includes | label | label_position | Link | location | Location | Locmapin | locmapin | map | map_alt | map_caption | map_image | map_size | map_width | mapsize | mark | mark_size | mark_width | name | Name | official_name | Official_name | part_of | Part_of | publictransit | relief | Session | Type | website | Website | WHS | year | Year | hide_interactive_map }}{{#invoke:Check for conflicting parameters|check
+| template = [[Template:Infobox UNESCO World Heritage Site]]
+| cat = {{main other|Category:Pages using infobox UNESCO World Heritage Site with conflicting parameters}}
+| child; Child 
+| Image; image 
+| caption; Caption; imagecaption 
+| map_size; mapsize; map_width 
+| label; name 
+| map_alt; name 
+| mark_width; mark_size 
+| coordinates; coords 
+| map_image; image_map 
+| Official_name; official_name 
+| Location; location 
+| Part_of; part_of 
+| Includes; includes 
+| Criteria; criteria 
+| Year; year 
+| Extension; extension 
+| Danger; danger 
+| Area; area 
+| Buffer_zone; buffer_zone 
+| Website; website 
+| coordinates; Coordinates 
+| embedded; Embedded 
+| locmapin; Locmapin 
+}}<noinclude>{{documentation}}
+[[Category:Independently git synced pages]][[Category:Pages using infobox UNESCO World Heritage Site with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]]{{wikidata link|Q5896997|af|Sjabloon:Inligtingskas Wêrelderfenisgebied|als|Vorlage:Infobox Welterbe|am|መለጠፊያ:ዩኔስኮ ዓለም አቀፍ ቅርስ|ar|قالب:صندوق معلومات موقع تراث عالمي|arz|قالب:ص.م موقع تراث عالمي|ast|Plantía:Ficha de Patrimoniu de la Humanidá|as|সাঁচ:Infobox World Heritage Site|azb|شابلون:Infobox World Heritage Site|az|Şablon:Ümumdünya irsi obyekti|ban|Mal:Infobox UNESCO World Heritage Site|bar|Vorlog:Infobox Welterbe|ba|Ҡалып:Infobox World Heritage Site|bcl|Plantilya:Infobox UNESCO World Heritage Site|be|Шаблон:Аб’ект Сусветнай спадчыны|bg|Шаблон:Световно културно и природно наследство|bh|टेम्पलेट:Infobox UNESCO World Heritage Site|bjn|Citakan:Infobox World Heritage Site|blk|တမ်းပလေက်:Infobox UNESCO World Heritage Site|bn|টেমপ্লেট:তথ্যছক বিশ্ব ঐতিহ্যবাহী স্থান|bs|Šablon:Infokutija Svjetska baština|check_date=2026-05-25}}
+[[Category:Templates transcluded in mainspace]]
+</noinclude>

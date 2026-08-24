@@ -1,0 +1,1068 @@
+{{Documentation subpage}}
+{{high-use}}
+{{Removed template}}
+
+==Usage==
+A weapon infobox may be used to summarize information about a particular weapon or weapon system (such as a firearm, a sword, a grenade, an artillery piece, a torpedo, or a tank); cartridges and artillery shells should use {{Tlx|Infobox firearm cartridge}} instead.  The infobox should be added using the {{Tlx|Infobox weapon}} template, as shown below.
+
+{{Parameter names example
+| name               
+| image              
+| image_size          
+| alt                 
+| caption             
+| type                
+| origin             
+|
+| is_ranged          
+| is_bladed           
+| is_explosive        
+| is_artillery        
+| is_vehicle          
+| is_missile          
+| is_UK               
+|
+| service            
+| used_by             
+| wars                
+|
+| designer            
+| design_date         
+| manufacturer        
+| developed_from     
+| developed_into     
+| unit_cost           
+| production_date     
+| number              
+| variants            
+|
+| spec_label          
+| mass                
+| length              
+| part_length         
+| width               
+| height              
+| diameter            
+| crew                
+| passengers          
+| 
+| cartridge           
+| cartridge_weight    
+| caliber             
+| barrels             
+| action             
+| rate                
+| velocity            
+| range               
+| max_range           
+| feed                
+| sights              
+|
+| breech              
+| recoil              
+| carriage            
+| elevation           
+| traverse            
+| 
+| blade_type          
+| hilt_type           
+| sheath_type         
+| head_type           
+| haft_type           
+| 
+| filling             
+| filling_weight      
+| detonation          
+| yield               
+|
+| armour              
+| primary_armament    
+| secondary_armament  
+| engine              
+| engine_power        
+| pw_ratio            
+| payload_capacity    
+| drive               
+| transmission        
+| suspension          
+| clearance           
+| fuel_capacity       
+| vehicle_range       
+| speed               
+| guidance            
+| steering            
+|
+| wingspan            
+| propellant          
+| ceiling             
+| altitude            
+| boost               
+| depth               
+| accuracy            
+| launch_platform     
+| transport           
+|
+| ref                 
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow: hidden; background: unset;">
+{{Infobox weapon
+| name               = 
+| image              = 
+| image_size         = 
+| alt                = 
+| caption            = 
+| type               = 
+| origin             =
+
+| is_ranged          = 
+| is_bladed          = 
+| is_explosive       = 
+| is_artillery       = 
+| is_vehicle         = 
+| is_missile         = 
+| is_UK              = 
+
+| service            = 
+| used_by            = 
+| wars               = 
+
+| designer           = 
+| design_date        = 
+| manufacturer       = 
+| developed_from     =
+| developed_into     =
+| unit_cost          = 
+| production_date    = 
+| number             = 
+| variants           = 
+
+| spec_label         = 
+| mass               = 
+| length             = 
+| part_length        = 
+| width              = 
+| height             = 
+| diameter           = 
+| crew               = 
+| passengers         = 
+ 
+| cartridge          = 
+| cartridge_weight   = 
+| caliber            = 
+| barrels            = 
+| action             =
+| rate               = 
+| velocity           = 
+| range              = 
+| max_range          = 
+| feed               = 
+| sights             = 
+
+| breech             = 
+| recoil             = 
+| carriage           = 
+| elevation          = 
+| traverse           = 
+ 
+| blade_type         = 
+| hilt_type          = 
+| sheath_type        = 
+| head_type          = 
+| haft_type          = 
+ 
+| filling            = 
+| filling_weight     = 
+| detonation         = 
+| yield              = 
+
+| armour             = 
+| primary_armament   = 
+| secondary_armament = 
+| engine             = 
+| engine_power       = 
+| pw_ratio           = 
+| payload_capacity   = 
+| drive              = 
+| transmission       = 
+| suspension         = 
+| clearance          = 
+| fuel_capacity      = 
+| vehicle_range      = 
+| speed              = 
+| guidance           = 
+| steering           = 
+
+| wingspan           = 
+| propellant         = 
+| ceiling            = 
+| altitude           = 
+| boost              = 
+| depth              = 
+| accuracy           = 
+| launch_platform    = 
+| transport          = 
+
+| ref                = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+'''Note''': When using parameters, avoid the ambiguous abbreviation "N/A", and instead use "unknown" or "none". All subjective or qualitative judgements and numerical quantities or statistics must be cited to a reliable source (see [[WP:MILMOS#CITE]]).
+
+The infobox is intended as a quick reference.  Don't add non-data items, like question marks, “none”, “see text” or links to article sections (the article's table of contents already does this).  Only add “unknown” to assert that an information point is unknowable, not as a placeholder to show that it is missing from the article.  Choose a representative model and indicate what it is with the <code>spec_label</code> parameter, instead of listing multiple data items in one field. 
+
+The template can also be used for general categories of weapons, such as [[tank]] and [[Katyusha rocket launcher]], by including only some general characteristics.
+
+== Example ==
+
+{{Infobox weapon
+| name               = Rifle, Caliber .30, M1
+| image              = File:M1-Garand-Rifle.jpg
+| image_size         = 300
+| caption            = An M1 Garand with [[Clip (firearms)#En bloc|en bloc clips]]
+| type               = [[Semi-automatic rifle]]
+| origin             = [[:en:United States|United States]]
+
+| is_ranged          = yes
+
+| service            = 1936–present (U.S. military training and parades)
+| used_by            = ''See ''{{section link|M1 Garand rifle|Users|nopage=yes}}
+| wars               = {{plainlist|
+*[[:en:Pacific War|Pacific War]]
+*[[:en:Korean War|Korean War]]
+*[[:en:Arab–Israeli conflict|Arab–Israeli conflict]]
+*[[:en:First Indochina War|First Indochina War]]
+*[[Suez Crisis]]
+*[[:en:Vietnam War|Vietnam War]]
+*[[:en:Cambodian Civil War|Cambodian Civil War]]
+*[[The Troubles]]
+*Other conflicts}}
+
+| designer           = [[John Garand]]
+| design_date        = 1932
+| manufacturer       = {{plainlist|
+*[[Springfield Armory]]
+*[[Winchester Repeating Arms Company|Winchester]]
+*[[H&R Firearms|Harrington & Richardson]]
+*[[International Harvester]]
+*[[:en:Beretta|Beretta]]
+*[[:en:Breda Meccanica Bresciana|Breda]]<ref>[http://www.smallarmsreview.com/pdf/Berettatypee.pdf Small Arms Review article on Italian-made Garands]</ref>
+*[[Springfield Armory, Inc.]] (civilian)}}
+| unit_cost          =
+| production_date    = 1936–1957
+| number             = Approx. 6.0 million<ref>{{cite web|url=http://www.scott-duff.com/WhoHowManyWhen.htm|title=Who Made M1 Garands? How Many Were Made? When Were They Made?|author=Scott Duff|publisher=|access-date=2007-05-18}} Excerpted from ''The M1 Garand: Owner's Guide'' copyright 1994 by Scott A. Duff.</ref>
+| variants           = M1C, M1D
+
+| spec_label         =
+| mass               = {{cvt|9.5|to|11.6|lb|kg}}
+| length             = {{cvt|43.5|in|mm}}
+| part_length        = {{cvt|24|in|mm}}
+ 
+| cartridge          = {{plainlist|
+*[[:en:.30-06 Springfield|.30-06 Springfield]]
+*[[:en:7.62×51mm NATO|7.62×51mm NATO]] (U.S. Navy and some commercial versions)}}
+| action             = [[Gas-operated reloading|Gas-operated]], [[rotating bolt]]
+| velocity           = {{cvt|2800|ft/s|m/s}}
+| range              = {{cvt|440|yd|m}}<ref>{{cite web|url=http://www.biggerhammer.net/manuals/tm9100522212/M1GARA.PDF|format=pdf|title=U.S. Department of the Army Technical Manual No. 9-1005-222-12|publisher=Re-published by www.biggerhammer.net|date=17 March 1969|access-date=2007-05-18}}</ref>
+| feed               = 8-round [[Clip (firearms)#En bloc|en bloc clip]], internal [[Magazine (firearms)|magazine]]
+| sights             = [[Iron sights]]: Aperture rear, barleycorn-type front
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto">
+
+{{Infobox weapon
+| name               = Rifle, Caliber .30, M1
+| image              = File:M1-Garand-Rifle.jpg
+| image_size         = 300
+| alt                = 
+| caption            = An M1 Garand with [[Clip (firearms)#En bloc|en bloc clips]]
+| type               = [[Semi-automatic rifle]]
+| origin             = [[:en:United States|United States]]
+
+| is_ranged          = yes
+| is_bladed          = 
+| is_explosive       = 
+| is_artillery       = 
+| is_vehicle         = 
+| is_missile         = 
+| is_UK              = 
+
+| service            = 1936–present (U.S. military training and parades)
+| used_by            = ''See ''{{section link|M1 Garand rifle|Users|nopage=yes}}
+| wars               = {{plainlist|
+*[[:en:Pacific War|Pacific War]]
+*[[:en:Korean War|Korean War]]
+*[[:en:Arab–Israeli conflict|Arab–Israeli conflict]]
+*[[:en:First Indochina War|First Indochina War]]
+*[[Suez Crisis]]
+*[[:en:Vietnam War|Vietnam War]]
+*[[:en:Cambodian Civil War|Cambodian Civil War]]
+*[[The Troubles]]
+*Other conflicts}}
+
+| designer           = [[John Garand]]
+| design_date        = 1932
+| manufacturer       = {{plainlist|
+*[[Springfield Armory]]
+*[[Winchester Repeating Arms Company|Winchester]]
+*[[H&R Firearms|Harrington & Richardson]]
+*[[International Harvester]]
+*[[:en:Beretta|Beretta]]
+*[[:en:Breda Meccanica Bresciana|Breda]]<ref>[http://www.smallarmsreview.com/pdf/Berettatypee.pdf Small Arms Review article on Italian-made Garands]</ref>
+*[[Springfield Armory, Inc.]] (civilian)}}
+| developed_from     = 
+| developed_into     =
+| unit_cost          = 
+| production_date    = 1936–1957
+| number             =  Approx. 6.0 million<ref>{{cite web|url=http://www.scott-duff.com/WhoHowManyWhen.htm|title=Who Made M1 Garands? How Many Were Made? When Were They Made?|author=Scott Duff|publisher=|access-date=2007-05-18}} Excerpted from ''The M1 Garand: Owner's Guide'' copyright 1994 by Scott A. Duff.</ref>
+| variants           = M1C, M1D
+
+| spec_label         = 
+| mass               = {{cvt|9.5|to|11.6|lb|kg}}
+| length             = {{cvt|43.5|in|mm}}
+| part_length        = {{cvt|24|in|mm}}
+| width              = 
+| height             = 
+| diameter           = 
+| crew               = 
+| passengers         = 
+ 
+| cartridge          = {{plainlist|
+*[[:en:.30-06 Springfield|.30-06 Springfield]]
+*[[:en:7.62×51mm NATO|7.62×51mm NATO]] (U.S. Navy and some commercial versions)}}
+| cartridge_weight   = 
+| caliber            = 
+| barrels            = 
+| action             = [[Gas-operated reloading|Gas-operated]], [[rotating bolt]]
+| rate               = 
+| velocity           = {{cvt|2800|ft/s|m/s}}
+| range              = {{cvt|440|yd|m}}<ref>{{cite web|url=http://www.biggerhammer.net/manuals/tm9100522212/M1GARA.PDF|format=pdf|title=U.S. Department of the Army Technical Manual No. 9-1005-222-12|publisher=Re-published by www.biggerhammer.net|date=17 March 1969|access-date=2007-05-18}}</ref>
+| max_range          = 
+| feed               = 8-round [[Clip (firearms)#En bloc|en bloc clip]], internal [[Magazine (firearms)|magazine]]
+| sights             = [[Iron sights]]: Aperture rear, barleycorn-type front
+
+| ref                = 
+}}
+</syntaxhighlight>
+{{clear}}
+
+== Parameter names and description ==
+General parameters:
+* '''name''' – the formal name of the weapon.
+* '''image''' – ''optional'' – an image of the weapon.  The image must be given in the form File:Example.jpg in particular, the ''thumb'' attribute must '''not''' be selected.
+* '''image_size''' – the size (in pixels) the image should be. Only ''required'' if the image is not a sensible size without being changed, but normally set anyway. Typically set to 300.
+* '''alt''' – ''optional'' – a description of the image that replaces the image if it fails to load.
+* '''caption''' – ''optional'' – the text to be placed below the image.
+* '''type''' – ''optional'' – the type of weapon (e.g. "[[service rifle]]", "dress sword", and so forth).
+* '''origin''' – ''optional'' – the country or place where the weapon originated or was first manufactured.  Flag icons should not be used in this field, per [[:en:MOS:INFOBOXFLAG|MOS:INFOBOXFLAG]] and [[WP:MILMOS#FLAGS]].
+
+Type selection parameters (these parameters control whether—and how—particular specification fields will be displayed; multiple ones may be enabled where appropriate):
+* '''is_ranged''' – "''yes''" if the weapon is a ranged weapon, such as a firearm or bow; '''must''' be left blank otherwise.
+* '''is_bladed''' – "''yes''" if the weapon is a bladed, pointed, or blunt hand-held weapon, such as a sword, mace, or polearm; '''must''' be left blank otherwise.
+* '''is_explosive''' – "''yes''" if the weapon is an explosive device, such as a grenade or bomb; '''must''' be left blank otherwise.
+* '''is_artillery''' – "''yes''" if the weapon is a type of artillery, such as a cannon or mortar; '''must''' be left blank otherwise.
+* '''is_vehicle''' – "''yes''" if the weapon is a self-propelled vehicle, such as a tank; '''must''' be left blank otherwise.
+* '''is_missile''' – "''yes''" if the weapon is a self-propelled missile or torpedo; '''must''' be left blank otherwise.
+* '''is_UK''' – "''yes''" if the field labels should use British/Commonwealth English (''calibre, armour''); '''must''' be left blank otherwise.
+
+Service history parameters:
+* '''service''' – ''optional'' – the period (usually given in years) when the weapon was in service.
+* '''used_by''' – ''optional'' – the countries, armed forces, or other groups using the weapon; this may be omitted for weapons employed only in their country of origin.
+* '''wars''' – ''optional'' – any wars during which the weapon saw service.
+
+Production history parameters:
+* '''designer''' – ''optional'' – the person or group responsible for designing the weapon.
+* '''design_date''' – ''optional'' – the date (usually given as a year) when the weapon was designed.
+* '''manufacturer''' – ''optional'' – the manufacturer of the weapon.
+* '''developed_from''' – ''optional'' – if a produced weapon formed the basis for this weapon.
+* '''developed_into''' – ''optional'' – for derivative weapons based on this weapon, that are not variants.
+* '''unit_cost''' – ''optional'' – the unit cost of the weapon; this should only be indicated for weapons currently being produced.
+* '''production_date''' – ''optional'' – the period (usually given in years) when the weapon was produced.
+* '''number''' – ''optional'' – the number of weapons of this type that were manufactured.
+* '''variants''' – ''optional'' – any variant models of the weapon.
+
+General specification parameters:
+* '''spec_label''' – ''optional'' – a label for the specifications, to be used when data for a particular variant is indicated; should be left blank otherwise.
+* '''mass''' – ''optional'' – the mass of the weapon.  For firearms, separate loaded and unloaded masses may be indicated.
+* '''length''' – ''optional'' – the total length of the weapon.
+* '''part_length''' – ''optional'' – a secondary length measurement.  For firearms, this should be the barrel length; for bladed weapons, the length of the blade or head.
+* '''width''' – ''optional'' – the total width of the weapon, where applicable; this is intended for use with larger weapons, such as artillery or vehicles.
+* '''height''' – ''optional'' – the total height of the weapon, where applicable; this is intended for use with larger weapons, such as artillery or vehicles.
+* '''diameter''' – ''optional'' – the diameter of the weapon, where applicable; this is intended for use with explosives and missiles.
+* '''crew''' – ''optional'' – for crewed weapons, the number of people required.
+* '''passengers''' – ''optional'' – for vehicles, the number of passengers carried.
+
+Ranged weapon specification parameters (most only available if '''is_ranged''' is set to "''yes''"; some are also activated when '''is_explosive''' or '''is_artillery''' is set to "''yes''"):
+* '''cartridge''' – ''optional'' – for firearms or artillery, the type(s) of cartridge or shell used.
+* '''cartridge_weight''' – ''optional'' – for firearms or artillery, the mass of the cartridge or shell used.
+* '''caliber''' – ''optional'' – for non-cartridge firearms or artillery, the caliber or interior diameter of the barrel; for cartridge-loaded firearms, caliber is indicated by the cartridge.
+* '''barrels''' – ''optional'' – for firearms or artillery, the number of distinct barrels; this may be omitted if the weapon is single-barreled.
+* '''action''' – ''optional'' – for firearms, the type of action (e.g. "flintlock").
+* '''rate''' – ''optional'' – the rate of fire.  For automatic firearms and auto-loading artillery, this is usually the cyclic rate.  For other ranged weapons, an effective rate can be indicated if reputable sources for one are available.
+* '''velocity''' – ''optional'' – for firearms or artillery, the muzzle velocity of the fired projectile.
+* '''range''' – ''optional'' – the effective range of the weapon.
+* '''max_range''' – ''optional'' – the maximum range of the weapon; for firearms this should be the maximum sight setting if used.
+* '''feed''' – ''optional'' – for firearms, the feed system or magazine used.
+* '''sights''' – ''optional'' – for firearms or artillery, the type of sights used.
+
+Artillery specification parameters (only available if '''is_artillery''' is set to "''yes''"):
+* '''breech''' – ''optional'' – for artillery, the type of breech mechanism.
+* '''recoil''' – ''optional'' – for artillery, the recoil system used.
+* '''carriage''' – ''optional'' – for artillery, the type of carriage used.
+* '''elevation''' – ''optional'' – for artillery, the vertical range of possible firing angles.
+* '''traverse''' – ''optional'' – for artillery, the horizontal range of possible firing angles.
+
+Bladed weapon specification parameters (only available if '''is_bladed''' is set to "''yes''"):
+* '''blade_type''' – ''optional'' – for bladed weapons (e.g. swords), a description of the blade.
+* '''hilt_type''' – ''optional'' – for bladed weapons (e.g. swords), a description of the hilt.
+* '''sheath_type''' – ''optional'' – for bladed weapons (e.g. swords), a description of the scabbard or sheath, if any.
+* '''head_type''' – ''optional'' – for blunt or striking weapons (e.g. axes, polearms, or maces), a description of the head.
+* '''haft_type''' – ''optional'' – for blunt or striking weapons (e.g. axes, polearms, or maces), a description of the haft.
+
+Explosive weapon specification parameters (only available if '''is_explosive''' or '''is_missile''' is set to "''yes''"):
+* '''filling''' – ''optional'' – the explosive filling material or warhead.
+* '''filling_weight''' – ''optional'' – the mass of the explosive material or warhead.
+* '''detonation''' – ''optional'' – the detonation trigger type (e.g. "timer", "pressure", "motion sensor").
+* '''yield''' – ''optional'' – for larger explosives, the yield (in tons of [[trinitrotoluene|TNT]]) of the device.
+
+Vehicle/missile specification parameters (most only available if '''is_vehicle''' is set to "''yes''"; some are also activated if '''is_missile''' is set to "''yes''"):
+* '''armour''' – ''optional'' – the [[vehicle armour|armour plating]] of the vehicle; different armour thickness at different points may be indicated if needed.
+* '''primary_armament''' – ''optional'' – the primary weapon mounted on the vehicle, if any.
+* '''secondary_armament''' – ''optional'' – the secondary weapon mounted on the vehicle, if any.
+* '''engine''' – ''optional'' – the type of engine used by the vehicle or missile.
+* '''engine_power''' – ''optional'' – the power output of the engine, usually in hp or kW.
+* '''pw_ratio''' – ''optional'' – the power-to-weight ratio, usually in hp/tonne.
+* '''transmission''' – ''optional'' – the type of transmission used by the vehicle.
+* '''payload_capacity''' – ''optional'' – the overall payload capacity weight of the vehicle.
+* '''propellant''' – ''optional'' – for missiles, the propellant used.
+* '''fuel_capacity''' – ''optional'' – the fuel capacity of the vehicle.
+* '''drive''' – ''optional'' – the drivetrain wheel or track configuration (e.g. [[:en:4×4|4×4]], [[6×4 (drivetrain)|6×4]], [[continuous track|tracked]])
+* '''transmission''' – ''optional'' – the transmission of the vehicle.
+* '''suspension''' – ''optional'' – the suspension of the vehicle.
+* '''clearance''' – ''optional'' – the ground clearance of the vehicle.
+* '''wingspan''' – ''optional'' – for missiles, the wingspan.
+* '''vehicle_range''' – ''optional'' – the operational range of the vehicle or missile.
+* '''ceiling''' – ''optional'' – for missiles, the flight ceiling.
+* '''altitude''' – ''optional'' – for missiles, the normal flight altitude.
+* '''depth''' – ''optional'' – for underwater weapons such as torpedoes, the maximum operating depth.
+* '''boost''' – ''optional'' – for missiles, the maximum boost time.
+* '''speed''' – ''optional'' – the maximum speed of the vehicle or missile; this is usually the road speed, but other values may be indicated if appropriate.
+* '''guidance''' – ''optional'' – the guidance system used by the missile (or the vehicle, if uncrewed).
+* '''steering''' – ''optional'' – the steering system used by the missile or vehicle.
+* '''accuracy''' – ''optional'' – for missiles, the guidance accuracy.
+* '''launch_platform''' – ''optional'' – for missiles, the launch platform.
+* '''transport''' – ''optional'' – for missiles, the transportation vehicle or method, if different from the launch platform.
+{{#ifeq:{{{noheader|}}}|yes||
+
+==Maintenance categories==
+* {{clc|Pages using infobox weapon with unknown parameters}}
+
+== Microformat ==
+{{UF-hprod}}
+}}
+
+== Template Data ==
+{{collapse top|[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>{
+	"description": "An infobox for weapon.",
+	"format": "{{_\n| __________________ = _\n}}\n",
+	"params": {
+		"name": {
+			"label": "Name",
+			"description": "The formal name of the weapon.",
+			"type": "string",
+			"required": true
+		},
+		"image": {
+			"label": "Image",
+			"description": "An image of the weapon. The image must be given in the form Example.jpg; in particular, the thumb attribute must not be selected.",
+			"type": "wiki-file-name",
+			"required": false
+		},
+		"caption": {
+			"label": "Caption",
+			"description": "The text to be placed below the image.",
+			"type": "string",
+			"required": false
+		},
+		"origin": {
+			"label": "Origin",
+			"description": "The country or place where the weapon originated or was first manufactured. Flag icons should be avoided in this field, per WP:MOSFLAG and WP:MILMOS#FLAGS.",
+			"type": "string",
+			"required": false
+		},
+		"type": {
+			"label": "Type",
+			"description": "The type of weapon.",
+			"type": "string",
+			"required": false
+		},
+		"is_ranged": {
+			"label": "Is ranged",
+			"description": "Yes if the weapon is a ranged weapon, such as a firearm or bow; must be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"is_bladed": {
+			"label": "Is bladed",
+			"description": "Yes if the weapon is a bladed, pointed, or blunt hand-held weapon, such as a sword, mace, or polearm; must be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"is_explosive": {
+			"label": "Is explosive",
+			"description": "Yes if the weapon is an explosive device, such as a grenade or bomb; must be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"is_artillery": {
+			"label": "Is artillery",
+			"description": "Yes if the weapon is a type of artillery, such as a cannon or mortar; must be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"is_vehicle": {
+			"label": "Is vehicle",
+			"description": "Yes if the weapon is a self-propelled vehicle, such as a tank; must be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"is_missile": {
+			"label": "Is missile",
+			"description": "Yes if the weapon is a self-propelled missile or torpedo; must be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"is_UK": {
+			"label": "Is UK",
+			"description": "Yes if the field labels should use British/Commonwealth English (calibre, armour); must be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"service": {
+			"label": "Service",
+			"description": "The period (usually given in years) when the weapon was in service.",
+			"type": "line",
+			"required": false
+		},
+		"used_by": {
+			"label": "Used by",
+			"description": "The countries, armed forces, or other groups using the weapon; this may be omitted for weapons employed only in their country of origin.",
+			"type": "line",
+			"required": false
+		},
+		"wars": {
+			"label": "Wars",
+			"description": "Any wars during which the weapon saw service.",
+			"type": "line",
+			"required": false
+		},
+		"designer": {
+			"label": "Designer",
+			"description": "The person or group responsible for designing the weapon.",
+			"type": "string",
+			"required": false
+		},
+		"design_date": {
+			"label": "Design date",
+			"description": "The date (usually given as a year) when the weapon was designed.",
+			"type": "string",
+			"required": false
+		},
+		"manufacturer": {
+			"label": "Manufacturer",
+			"description": "The manufacturer of the weapon.",
+			"type": "string",
+			"required": false
+		},
+		"developed_from": {
+			"label": "Developed from",
+			"description": "If a produced weapon formed the basis for this weapon.",
+			"type": "string",
+			"required": false
+		},
+		"developed_into": {
+			"label": "Developed into",
+			"description": "For derivative weapons based on this weapon, that are not variants.",
+			"type": "string",
+			"required": false
+        },
+		"unit_cost": {
+			"label": "Unit cost",
+			"description": "The unit cost of the weapon; this should only be indicated for weapons currently being produced.",
+			"type": "string",
+			"required": false
+		},
+		"production_date": {
+			"label": "Production date",
+			"description": "The period (usually given in years) when the weapon was produced.",
+			"type": "string",
+			"required": false
+		},
+		"number": {
+			"label": "Number",
+			"description": "The number of weapons of this type that were manufactured.",
+			"type": "number",
+			"required": false
+		},
+		"variants": {
+			"label": "Variants",
+			"description": "Any variant models of the weapon.",
+			"type": "line",
+			"required": false
+		},
+		"spec_label": {
+			"label": "Special label",
+			"description": "A label for the specifications, to be used when data for a particular variant is indicated; should be left blank otherwise.",
+			"type": "string",
+			"required": false
+		},
+		"weight": {
+			"label": "Weight",
+			"description": "The weight of the weapon. For firearms, separate loaded and unloaded weights may be indicated.",
+			"type": "number",
+			"required": false
+		},
+		"length": {
+			"label": "Length",
+			"description": "The total length of the weapon.",
+			"type": "number",
+			"required": false
+		},
+		"part_length": {
+			"label": "Part length",
+			"description": "A secondary length measurement. For firearms, this should be the barrel length; for bladed weapons, the length of the blade or head.",
+			"type": "number",
+			"required": false
+		},
+		"width": {
+			"label": "Width",
+			"description": "The total width of the weapon, where applicable; this is intended for use with larger weapons, such as artillery or vehicles.",
+			"type": "number",
+			"required": false
+		},
+		"height": {
+			"label": "Height",
+			"description": "The total height of the weapon, where applicable; this is intended for use with larger weapons, such as artillery or vehicles.",
+			"type": "number",
+			"required": false
+		},
+		"diameter": {
+			"label": "Diameter",
+			"description": "The diameter of the weapon, where applicable; this is intended for use with explosives and missiles.",
+			"type": "number",
+			"required": false
+		},
+		"wingspan": {
+			"label": "Wingspan",
+			"description": "For missiles, the wingspan.",
+			"type": "string",
+			"required": false
+		},
+		"crew": {
+			"label": "Crew",
+			"description": "For crewed weapons, the number of people required.",
+			"type": "number",
+			"required": false
+		},
+		"passengers": {
+			"label": "Passengers",
+			"description": "For vehicles, the number of passengers carried.",
+			"type": "number",
+			"required": false
+		},
+		"cartridge": {
+			"label": "Cartridge",
+			"description": "For firearms or artillery, the type(s) of cartridge or shell used.",
+			"type": "string",
+			"required": false
+		},
+		"cartridge_weight": {
+			"label": "Cartridge weight",
+			"description": "For firearms or artillery, the weight of the cartridge or shell used.",
+			"type": "number",
+			"required": false
+		},
+		"caliber": {
+			"label": "Caliber",
+			"description": "For non-cartridge firearms or artillery, the caliber or interior diameter of the barrel; for cartridge-loaded firearms, caliber is indicated by the cartridge.",
+			"type": "number",
+			"required": false
+		},
+		"barrels": {
+			"label": "Barrels",
+			"description": "For firearms or artillery, the number of distinct barrels; this may be omitted if the weapon is single-barreled.",
+			"type": "number",
+			"required": false
+		},
+		"action": {
+			"label": "Action",
+			"description": "For firearms, the type of action (e.g. flintlock).",
+			"type": "string",
+			"required": false
+		},
+		"rate": {
+			"label": "Rate",
+			"description": "The rate of fire. For automatic firearms and auto-loading artillery, this is usually the cyclic rate. For other ranged weapons, an effective rate can be indicated if reputable sources for one are available.",
+			"type": "string",
+			"required": false
+		},
+		"velocity": {
+			"label": "Velocity",
+			"description": "For firearms or artillery, the muzzle velocity of the fired projectile.",
+			"type": "number",
+			"required": false
+		},
+		"range": {
+			"label": "Range",
+			"description": "The effective range of the weapon.",
+			"type": "number",
+			"required": false
+		},
+		"feed": {
+			"label": "Feed",
+			"description": "For firearms, the feed system or magazine used.",
+			"type": "string",
+			"required": false
+		},
+		"sights": {
+			"label": "Sights",
+			"description": "For firearms or artillery, the type of sights used.",
+			"type": "string",
+			"required": false
+		},
+		"breech": {
+			"label": "Breech",
+			"description": "For artillery, the type of breech mechanism.",
+			"type": "string",
+			"required": false
+		},
+		"recoil": {
+			"label": "Recoil",
+			"description": "For artillery, the recoil system used.",
+			"type": "string",
+			"required": false
+		},
+		"carriage": {
+			"label": "Carriage",
+			"description": "For artillery, the type of carriage used.",
+			"type": "string",
+			"required": false
+		},
+		"elevation": {
+			"label": "Elevation",
+			"description": "For artillery, the vertical range of possible firing angles.",
+			"type": "string",
+			"required": false
+		},
+		"traverse": {
+			"label": "Traverse",
+			"description": "For artillery, the horizontal range of possible firing angles.",
+			"type": "string",
+			"required": false
+		},
+		"blade_type": {
+			"label": "Blade type",
+			"description": "For bladed weapons (e.g. swords), a description of the blade.",
+			"type": "string",
+			"required": false
+		},
+		"hilt_type": {
+			"label": "Hilt type",
+			"description": "For bladed weapons (e.g. swords), a description of the hilt.",
+			"type": "string",
+			"required": false
+		},
+		"sheath_type": {
+			"label": "Sheath type",
+			"description": "For bladed weapons (e.g. swords), a description of the scabbard or sheath, if any.",
+			"type": "string",
+			"required": false
+		},
+		"head_type": {
+			"label": "Head type",
+			"description": "For blunt or striking weapons (e.g. axes, polearms, or maces), a description of the head.",
+			"type": "string",
+			"required": false
+		},
+		"haft_type": {
+			"label": "Haft type",
+			"description": "For blunt or striking weapons (e.g. axes, polearms, or maces), a description of the haft.",
+			"type": "string",
+			"required": false
+		},
+		"filling": {
+			"label": "Filling",
+			"description": "The explosive filling material or warhead.",
+			"type": "string",
+			"required": false
+		},
+		"filling_weight": {
+			"label": "filling_weight",
+			"description": "The weight of the explosive material or warhead.",
+			"type": "number",
+			"required": false
+		},
+		"detonation": {
+			"label": "Detonation",
+			"description": "the detonation trigger type (e.g. timer, pressure, motion sensor).",
+			"type": "string",
+			"required": false
+		},
+		"yield": {
+			"label": "Yield",
+			"description": "For larger explosives, the yield (in tons of TNT) of the device.",
+			"type": "string",
+			"required": false
+		},
+		"armour": {
+			"label": "Armour",
+			"description": "The armour plating of the vehicle; different armour thickness at different points may be indicated if needed.",
+			"type": "string",
+			"required": false
+		},
+		"primary_armament": {
+			"label": "Primary armament",
+			"description": "The primary weapon mounted on the vehicle, if any.",
+			"type": "string",
+			"required": false
+		},
+		"secondary_armament": {
+			"label": "Secondary armament",
+			"description": "The secondary weapon mounted on the vehicle, if any.",
+			"type": "string",
+			"required": false
+		},
+		"engine": {
+			"label": "Engine",
+			"description": "The type of engine used by the vehicle or missile.",
+			"type": "string",
+			"required": false
+		},
+		"engine_power": {
+			"label": "Engine power",
+			"description": "The power output of the engine, usually in hp or kW.",
+			"type": "number",
+			"required": false
+		},
+		"pw_ratio": {
+			"label": "Pw ratio",
+			"description": "The power-to-weight ratio, usually in hp/tonne.",
+			"type": "number",
+			"required": false
+		},
+		"transmission": {
+			"label": "Transmission",
+			"description": "The type of transmission used by the vehicle.",
+			"type": "string",
+			"required": false
+		},
+		"payload_capacity": {
+			"label": "Payload capacity",
+			"description": "The overall payload capacity weight of the vehicle.",
+			"type": "string",
+			"required": false
+		},
+		"propellant": {
+			"label": "Propellant",
+			"description": "For missiles, the propellant used.",
+			"type": "string",
+			"required": false
+		},
+		"fuel_capacity": {
+			"label": "Fuel capacity",
+			"description": "The fuel capacity of the vehicle.",
+			"type": "number",
+			"required": false
+		},
+		"suspension": {
+			"label": "Suspension",
+			"description": "The suspension of the vehicle.",
+			"type": "string",
+			"required": false
+		},
+		"clearance": {
+			"label": "Clearance",
+			"description": "The ground clearance of the vehicle.",
+			"type": "string",
+			"required": false
+		},
+		"vehicle_range": {
+			"label": "Vehicle range",
+			"description": "The operational range of the vehicle or missile.",
+			"type": "string",
+			"required": false
+		},
+		"ceiling": {
+			"label": "Ceiling",
+			"description": "For missiles, the flight ceiling.",
+			"type": "string",
+			"required": false
+		},
+		"altitude": {
+			"label": "Altitude",
+			"description": "For missiles, the normal flight altitude.",
+			"type": "string",
+			"required": false
+		},
+		"depth": {
+			"label": "Depth",
+			"description": "For underwater weapons such as torpedoes, the maximum operating depth.",
+			"type": "string",
+			"required": false
+		},
+		"boost": {
+			"label": "Boost",
+			"description": "For missiles, the maximum boost time.",
+			"type": "string",
+			"required": false
+		},
+		"speed": {
+			"label": "Maximum speed",
+			"description": "The maximum speed of the vehicle or missile; this is usually the road speed, but other values may be indicated if appropriate.",
+			"type": "number",
+			"required": false
+		},
+		"guidance": {
+			"label": "Guidance",
+			"description": "The guidance system used by the missile (or the vehicle, if uncrewed).",
+			"type": "string",
+			"required": false
+		},
+		"steering": {
+			"label": "Steering",
+			"description": "The steering system used by the missile or vehicle.",
+			"type": "string",
+			"required": false
+		},
+		"accuracy": {
+			"label": "Accuracy",
+			"description": "For missiles, the guidance accuracy.",
+			"type": "string",
+			"required": false
+		},
+		"launch_platform": {
+			"label": "Launch platform",
+			"description": "For missiles, the launch platform.",
+			"type": "string",
+			"required": false
+		},
+		"transport": {
+			"label": "Transport",
+			"description": "For missiles, the transportation vehicle or method, if different from the launch platform.",
+			"type": "string",
+			"required": false
+		},
+		"max_range": {
+			"label": "Max range",
+			"description": "The maximum range of the weapon; for firearms this should be the maximum sight setting if used.",
+			"type": "number"
+		}
+	},
+	"paramOrder": [
+		"name",
+		"image",
+		"caption",
+		"origin",
+		"type",
+		"is_ranged",
+		"is_bladed",
+		"is_explosive",
+		"is_artillery",
+		"is_vehicle",
+		"is_missile",
+		"is_UK",
+		"service",
+		"used_by",
+		"wars",
+		"designer",
+		"design_date",
+		"manufacturer",
+    	"developed_from",
+		"developed_into",
+		"unit_cost",
+		"production_date",
+		"number",
+		"variants",
+		"spec_label",
+		"weight",
+		"length",
+		"part_length",
+		"width",
+		"height",
+		"diameter",
+		"wingspan",
+		"crew",
+		"passengers",
+		"cartridge",
+		"cartridge_weight",
+		"caliber",
+		"barrels",
+		"action",
+		"rate",
+		"velocity",
+		"range",
+		"max_range",
+		"feed",
+		"sights",
+		"breech",
+		"recoil",
+		"carriage",
+		"elevation",
+		"traverse",
+		"blade_type",
+		"hilt_type",
+		"sheath_type",
+		"head_type",
+		"haft_type",
+		"filling",
+		"filling_weight",
+		"detonation",
+		"yield",
+		"armour",
+		"primary_armament",
+		"secondary_armament",
+		"engine",
+		"engine_power",
+		"pw_ratio",
+		"transmission",
+		"payload_capacity",
+		"propellant",
+		"fuel_capacity",
+		"suspension",
+		"clearance",
+		"vehicle_range",
+		"ceiling",
+		"altitude",
+		"depth",
+		"boost",
+		"speed",
+		"guidance",
+		"steering",
+		"accuracy",
+		"launch_platform",
+		"transport"
+	]
+}</templatedata>
+{{cob}}
+
+==References==
+{{Reflist}}
+
+==See also==
+{{Spaceflight infoboxes}}
+
+<includeonly>{{Sandbox other||
+
+[[:en:Category:Rocketry templates|Weapon]]
+
+}}</includeonly><noinclude>
+[[Category:Independently git synced pages]][[Category:WikiProject Military history template instructions|Weapon Infobox]]
+
+[[Category:Independently git synced pages]][[Category:Weapon infobox templates| ]]
+[[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>

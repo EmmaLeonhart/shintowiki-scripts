@@ -1,0 +1,466 @@
+{{Documentation subpage}}
+
+{{High-use| 43,000 }}
+{{Auto italic title}}
+{{Tracks Wikidata|P18|cat=No local image but image on Wikidata}}
+{{Uses Wikidata|P136|P577|P212|P856|P1036|P1104|P1149}}
+{{Lua|Module:Infobox|Module:Infobox/utilities|Module:InfoboxImage|Module:Check for unknown parameters|Module:Lang|Module:Wikidata|noprotcat=yes}}
+{{Uses TemplateStyles|Template:Infobox book/styles.css}}
+
+This template is used to present a consistently formatted table for use in articles about [[:en:Book|Book]]s.
+
+== Usage ==
+{{Generic template demo |_template={{BASEPAGENAME}}{{\sandbox}} |_display=italics |italic title=no
+|name |image=Example-serious.jpg |alt |caption |author |audio_read_by |title_orig='''title_orig''' |orig_lang_code=ia |title_working='''title_working''' |translator |illustrator |cover_artist |country |language |series |release_number |subject |genre |set_in |published |publisher |publisher2 |pub_date |english_pub_date |media_type |pages |awards |isbn=123456789X |oclc |dewey |congress |preceded_by='''preceded_by''' |followed_by='''followed_by''' |native_wikisource=Wikisource:About |wikisource=Wikisource:About |notes
+}}
+
+<syntaxhighlight lang="wikitext" style="overflow:auto;">
+{{Infobox book
+| italic title      = 
+| name              = 
+| image             = 
+| image_size        = 
+| border            = 
+| alt               = 
+| caption           = 
+| author            = 
+| audio_read_by     = 
+| title_orig        = 
+| orig_lang_code    = 
+| title_working     = 
+| translator        = 
+| illustrator       = 
+| cover_artist      = 
+| country           = 
+| language          = 
+| series            = 
+| release_number    = 
+| subject           = 
+| genre             = 
+| set_in            = 
+| publisher         = 
+| publisher2        = 
+| pub_date          = 
+| english_pub_date  = 
+| published         = 
+| media_type        = 
+| pages             = 
+| awards            = 
+| isbn              = 
+| isbn_note         = 
+| oclc              = 
+| dewey             = 
+| congress          = 
+| preceded_by       = 
+| followed_by       = 
+| native_wikisource = 
+| wikisource        = 
+| notes             = 
+| exclude_cover     = 
+| website           = 
+| module            = 
+}}</syntaxhighlight>
+
+== Parameters ==
+''Please see [[Wikipedia:WikiProject Books|WikiProject Books]] and/or [[Wikipedia:WikiProject Novels|WikiProject Novels]] for standards on presenting names and other data.''
+* Parameters can be safely left blank. Note that you may include an image with no caption, but a caption will not be shown if there is no image.
+* [[Help:Link#Wikilinks|Wikilinks]] can be used in any of the infobox fields.
+
+; name: Book name or {{ill|title|ar|عنوان (نشر)|bg|Заглавие|da|Titel (værk)|de|Buchtitel|el|Τίτλος (εκδόσεις)|en|Title (publishing)|fa|عنوان (نشر)|fr|Titre (désignation)|fy|Titel (namme)|he|כותרת (כתיבה)|id|Judul|it|Titolo (editoria)|kaj|Du̱ccu̱ ba̱ryyat|ko|제목|mr|शीर्षक|nl|Boektitel|pl|Tytuł (literaturoznawstwo)|ru|Заглавие|sd|عنوان|su|Judul|sv|Titel (rubrik)|zh|标题|zh_yue|標題|zu|Isihlokosiqu|lt=title|qid=Q783521}}. If parameter is left blank, ''name'' will be inherited from the [[Wikipedia:Article titles|Wikipedia page]] where this infobox is invoked.
+; image: Image (prefer 1st edition where permitted), use bare filename: <code><nowiki>Example.jpg</nowiki></code><br />For a title page from a [[:Commons:|Commons]] PDF, specify the page and width in [[WP:EIS|the syntax]]: <code><nowiki>[[File:Lissagaray - Histoire de la Commune de 1871, MS.djvu|page=9|220px]]</nowiki></code>
+; image_size: Uses image size set by user (default 220px). Use a number to override image size. However, this is discouraged per [[WP:THUMBSIZE]].
+; border: Inserting <code>yes</code> here will result in a 1px grey border around the image, useful for instances where the image and the background will blend together (such as a book cover with a white background). If no border is necessary, this parameter should not be used. Note: does not apply if {{para|image}} uses the full image syntax (e.g. <code><nowiki>[[File:Example.jpg]]</nowiki></code>); in this case add the border in {{para|image}} (e.g. <code><nowiki>[[File:Example.jpg|border=yes]]</nowiki></code>)
+; caption: Image caption (should describe the edition used)
+; alt: Image alternate text
+; editor/editors: Editor(s) '''only when they are the primary contributor''', e.g. dictionaries, encyclopedias, anthologies
+; author/authors: Author(s)
+; audio_read_by: For [[:en:Audiobook|Audiobook]]s
+; title_orig: Original title, if not in English; recommended if using {{para|native_external_url}} or {{para|native_wikisource}}, unless {{para|name}} (or the article's title if {{para|name}} is not used) is the original non-English title
+; orig_lang_code: [[:en:ISO 639|ISO 639 code]] of original language, required if using {{para|title_orig}}, {{para|native_wikisource}} or {{para|native_external_url}}
+; working_title: {{ill|working title|bg|Работно заглавие|bn|কাজের শিরোনাম|de|Arbeitstitel|en|Working title|es|Título provisional|fa|عنوان کاری|fi|Työnimi|fy|Wurktitel|id|Judul kerja|it|Titolo di lavorazione|ja|ワーキングタイトル|ko|가제목|ms|Tajuk kerja|nl|Werktitel|pt|Título de produção|ro|Titlu provizoriu|ru|Рабочее название|sv|Arbetsnamn|th|ชื่อชั่วคราว|tr|Geçici ad|zh|暂定名称|lt=working title|qid=Q1170216}}, when different from published title
+; translator: Translator(s), if original not in English
+; illustrator: Illustrator (where used throughout and a major feature)
+; cover_artist: Cover artist, if any
+; country: Country of original publication
+; language: Language of original book. Do not link unless it is an unusual language.
+; series: Series (if any)
+; release_number: The "release number" of a book within the "series" (also would be called a "volume") – n.b. only relevant for an article where "series" is populated
+; subject/subjects: (for non-fiction) A word or phrase that captures the essence of the topic of the work. ''See [[:en:Index term|Index term]] and [[:en:Library classification|Library classification]]''. Should not generally be combined with genre/genres (i.&nbsp;e., ''cooking'' as the subject or ''cookbook'' as the genre, but not both).
+; genre/genres: ''See [[:en:literary genre|literary genre]]''. Use {{tl|hlist}} for sorting multiple entries. Should not generally be combined with subject/subjects (i.&nbsp;e., ''cooking'' as the subject or ''cookbook'' as the genre, but not both). Should be both specific (e.&nbsp;g., ''memoir'' rather than ''nonfiction'') and reliably sourced.
+; set_in: can be both time and place as {{ill|setting|af|Agtergrond (narratief)|am|መቼት|ca|Ambientació|de|Schauplatz|en|Setting (narrative)|es|Ambientación|fa|صحنه (روایت‌شناسی)|he|רקע|hi|अभिविन्यास (कहानी)|io|Encenigo|is|Sögusvið|it|Ambientazione|ja|設定 (物語)|ko|설정|ms|Latar|nl|Setting|pl|Świat przedstawiony|ps|ترتیب ( په داستان کي )|pt|Ambientação|ru|Сеттинг|simple|Setting (fiction)|tr|Zaman ve mekân|uk|Сетинг|ur|ارضیہ|zh|設定 (敘事學)|zh_yue|背景設定|lt=setting|qid=Q617332}}. No need to create long lists. Use approximate dates/places if it is not clearly specified in the text.
+; publisher: Publisher of primary publication (prefer 1st edition); also {{para|publisher2}} for additional publishers.
+; pub_date: Date published (1st edition)
+; english_pub_date: Date first published in English if 1st edition is in another language.
+; published: Alternate parameter, using the following composite format: year (publisher) (language, when originally written in a foreign language); use {{tl|plainlist}} when there is more than one notable edition
+:Note: {{para|published}} is acceptable, but no longer preferred to {{para|publisher}} and {{para|pub_date}}, which have been restored to common usage. No consensus has yet been reached regarding the migration of infoboxes to a common format, and none should be "fixed" one way or the other ''en masse'' until such consensus is reached.
+; media_type: Print / Digital (then binding types etc., if relevant)
+; pages: Pages (prefer 1st edition, specify edition as needed)
+; award/awards: Awards(s) the book has won
+; isbn: (prefer ISBN of 1st edition). Format: "1-234-56789-0" (10-digit) or "978-1-234-56789-0" (13-digit). If the book has a [[:en:ISBN|standard book number]] (9&nbsp;digits) add a "0" to the beginning of the number. Do not change a 10-digit to a 13-digit ISBN by prefixing a "978" by hand, because the last digit is a calculated check digit, which will be wrong. Similarly, do not remove "978-" from a 13-digit ISBN to make a 10-digit ISBN. If the book was published before the use of ISBN, do not include this parameter. If the 13-digit number you have does not start with "978", "979-10", or "979-11", then it is not an ISBN and should not be used in this parameter. Change spaces in the ISBN to hyphens. The rules for hyphenating an ISBN are complex (currently 29 pages). Do not add spaces or hyphens to an unformatted ISBN which are likely to be wrong if you are guessing. However the "978" prefix of a 13-digit ISBN is always separated by a hyphen and the check digit{{spnd}}the last character{{spnd}}is always separated by a hyphen. The last character of a 10-character ISBN may be an "X". In such case, use the uppercase "X" character, not any alternate character. Do not put "ISBN" in front of the number. ISBNs are checked for validity; articles with invalid ISBNs are placed in [[:Category:Pages with ISBN errors]] and display a red error message.
+; isbn_note: May be used to add a note following the ISBN.
+; oclc: [[:en:OCLC|OCLC]] number (prefer 1st edition), use when book has no ISBN
+; dewey: [[:en:Dewey Decimal Classification|Dewey Decimal Classification]]
+; congress: [[:en:Library of Congress Classification|Library of Congress Classification]] ('''not''' to be confused with [[:en:Library of Congress Control Number|Library of Congress Control Number]])
+; preceded_by: Title of prior book {{em|in series}}; will be italicised by template code (do not use to connect separate books chronologically)
+; preceded_by_quotation_marks: Title of prior work {{em|in series}} if a [[Wikipedia:Manual of Style/Text formatting#When not to use italics|minor work]]; will be surrounded with quotation marks by template code (do not use to connect separate books chronologically)
+; followed_by: Title of subsequent book {{em|in a series or a sequel}}; will be italicised by template code (do not use to connect separate books chronologically)
+; followed_by_quotation_marks: Title of subsequent work {{em|in a series or a sequel}} if a [[Wikipedia:Manual of Style/Text formatting#When not to use italics|minor work]]; will be surrounded with quotation marks by template code (do not use to connect separate books chronologically)
+; native_wikisource: Page name of original text at a foreign language [[:en:Wikisource|Wikisource]] (if applicable); use {{para|orig_lang_code}} to specify which Wikisource. Tracked in [[:Category:Articles that link to foreign-language Wikisources]]
+; native_external_url: [[:en:URL|URL]] to a site hosting the original text when in a foreign language, and in the public domain but not yet on Wikisource. Non-commercial, open and accessible sites should be used in preference, sites which rip the text from other sites should be avoided, and illegal content is never to be linked to
+; native_external_host: The name of the website linked to by {{para|native_external_url}}, e.g. [[:en:Project Gutenberg|Project Gutenberg]], [[:en:Internet Archive|Internet Archive]]. Should be wikilinked if possible
+; wikisource: Title of work if in the public domain and hosted at English [[:Wikisource:]]. Tracked in [[:Category:Articles that link to Wikisource]]
+; external_url: [[:en:URL|URL]] to a site hosting the text in English (whether the original or a translation), when in the public domain but not yet on Wikisource. Non-commercial, open and accessible sites should be used in preference, sites which rip the text from other sites should be avoided, and illegal content is never to be linked to
+; external_host: The name of the website linked to by {{para|external_url}}, e.g. [[:en:Project Gutenberg|Project Gutenberg]], [[:en:Internet Archive|Internet Archive]]. Should be wikilinked if possible
+; exclude_cover: This template will place articles with this infobox where no image has been specified into the category [[:Category:Books with missing cover|Books with missing cover]]; where this is not desired, e.g because the cover is shown elsewhere in the article, this parameter should be set to {{para|exclude_cover|yes}}.
+; website: for the publisher's or author's website about the book.
+; module: for embedding other infoboxes into this one (see [[WP:IEmbed]]).
+
+== Example ==
+
+{{Infobox book{{\sandbox}}
+| italic title   = no 
+| name           = Anne of Green Gables
+| image          = Lucy Maud Montgomery, Anne of Green Gables, 1908, title page.jpg
+| caption        = Title page of the first edition
+| alt            = Title page
+| author         = [[Lucy Maud Montgomery]]
+| title_orig     = 
+| working_title  = 
+| translator     = 
+| illustrator    = M. A. and W. A. J. Claus
+| cover_artist   = 
+| country        = United States
+| language       = English
+| series         = 
+| release_number = 
+| subject        = 
+| genre          = [[Children's literature|Children's novel]]
+| publisher      = [[L. C. Page & Co.]]
+| pub_date       = 1908
+| pages          = 429 ''(first edition)''
+| awards         = 
+| isbn           = 
+| oclc           = 367111
+| congress       = PR6025.O45 A53
+| preceded_by    = 
+| followed_by    = [[:en:Anne of Avonlea|Anne of Avonlea]]
+| wikisource     = Anne of Green Gables
+}}
+<syntaxhighlight lang="wikitext" style="margin:3.0em 0 0;padding-right:0;overflow:auto;">
+{{Infobox book
+| name           = Anne of Green Gables
+| image          = Lucy Maud Montgomery, Anne of Green Gables, 1908, title page.jpg
+| caption        = Title page of the first edition
+| alt            = Title page
+| author         = [[Lucy Maud Montgomery]]
+| title_orig     = 
+| working_title = 
+| translator     = 
+| illustrator    = M. A. and W. A. J. Claus
+| cover_artist   = 
+| country        = United States
+| language       = English
+| series         = 
+| release_number = 
+| subject        = 
+| genre          = [[Children's literature|Children's novel]]
+| publisher      = [[L. C. Page & Co.]]
+| pub_date       = 1908
+| pages          = 429 ''(first edition)''
+| awards         = 
+| isbn           = 
+| oclc           = 367111
+| congress       = PR6025.O45 A53
+| preceded_by    = 
+| followed_by    = [[:en:Anne of Avonlea|Anne of Avonlea]]
+| wikisource     = Anne of Green Gables
+}}
+</syntaxhighlight>
+{{clear}}
+
+== TemplateData ==
+{{Collapse top|[[Wikipedia:TemplateData|TemplateData]] documentation used by [[Wikipedia:VisualEditor|VisualEditor]] and other tools}}
+{{TemplateData header|noheader=1}}
+<templatedata>
+{
+	"description": "Consistently-formatted table for presenting information about books",
+	"format": "{{_\n| _________________ = _\n}}\n",
+	"params": {
+		"name": {
+			"label": "Name",
+			"type": "string",
+			"required": false,
+			"description": "Book title",
+			"default": "Pagename"
+		},
+		"image": {
+			"label": "Image",
+			"type": "wiki-file-name",
+			"required": false,
+			"description": "Image (prefer 1st edition where permitted). Use bare filename.",
+			"suggested": true
+		},
+		"author": {
+			"label": "Author",
+			"type": "string",
+			"required": false,
+			"description": "Author(s) of the book (should be link to their respective article if there is one).",
+			"suggested": true,
+			"aliases": [
+				"authors"
+			]
+		},
+		"language": {
+			"label": "Language",
+			"type": "string",
+			"required": false,
+			"description": "Language of (original) book. Full language name (not a language code).",
+			"example": "English"
+		},
+		"country": {
+			"label": "Country",
+			"type": "string",
+			"required": false,
+			"description": "Country of (original) publication."
+		},
+		"genre": {
+			"label": "Genre(s)",
+			"type": "string",
+			"required": false,
+			"description": "The book's genre",
+			"example": "Science fiction",
+			"aliases": [
+				"genres"
+			]
+		},
+		"published": {
+			"label": "Published",
+			"type": "string",
+			"required": false,
+			"description": "Using the following format: year (publisher) (language, when originally written in a foreign language)"
+		},
+		"publisher": {
+			"label": "Publisher",
+			"type": "string",
+			"required": false,
+			"description": "Name of publisher."
+		},
+		"isbn": {
+			"label": "ISBN",
+			"type": "string",
+			"description": "Format: \"ISBN 1-234-56789-0\" (prefer 1st edition)",
+			"aliases": [
+				"ISBN"
+			],
+			"suggested": true,
+			"example": "\"1-234-56789-0\" (if 10-digit) or \"978-1-234-56789-0\" (if 13-digit)"
+		},
+		"exclude_cover": {
+			"type": "string",
+			"description": "\"yes\" if no image is present and adding this article to \"Category:Books with missing cover\" is not desired",
+			"label": "exclude cover?",
+			"example": "yes"
+		},
+		"series": {
+			"label": "Series",
+			"description": "Series the book is part of",
+			"example": "{{ill|Federalist Papers|ar|أوراق الفدرالية|bg|Федералистът|ca|El Federalista|ckb|کۆمەڵە وتاری فێدڕالیست|cs|Listy federalistů|de|Federalist Papers|en|The Federalist Papers|es|The Federalist Papers|fa|مقاله‌های فدرالیست|fi|Federalistikirjoitukset|fr|Les Papiers fédéralistes|he|כתבי הפדרליסט|id|The Federalist Papers|is|Greinar bandalagsmanna|it|Il Federalista|ja|ザ・フェデラリスト|kk|Федералист жазбалары|ko|연방주의자 논집|la|The Federalist|new|फेदेरलिस्त पेपर्स|nl|Federalist Papers|no|Federalist Papers|pl|Federalista|pt|O Federalista|ro|Federalist Papers|ru|Федералист|simple|Federalist Papers|sk|Listy federalistov|sl|Federalistični spisi|sr|Списи федералиста|sv|Federalist Papers|tr|Federalist Yazılar|uk|Федераліст|zh|联邦党人文集|lt=Federalist Papers|qid=Q858036}}",
+			"type": "string"
+		},
+		"image_size": {
+			"label": "Image size",
+			"example": "200 px",
+			"type": "string"
+		},
+		"caption": {
+			"label": "Image caption",
+			"description": "a caption for the image used",
+			"type": "content",
+			"aliases": [
+				"image_caption"
+			]
+		},
+		"media_type": {
+			"label": "Type of media",
+			"example": "[[:en:newspaper|newspaper]]",
+			"type": "string"
+		},
+		"pub_date": {
+			"label": "Date of publication",
+			"description": "Date the book or work was published",
+			"example": "December 21, 1787",
+			"type": "date",
+			"suggested": true
+		},
+		"preceded_by": {
+			"label": "Preceded by",
+			"description": "The previous installment in the series/from the author",
+			"example": "{{ill|Federalist No. 4|de|Federalist-Artikel Nr. 4|en|Federalist No. 4|lt=Federalist No. 4|qid=Q5440612}}",
+			"type": "string"
+		},
+		"followed_by": {
+			"label": "Followed by",
+			"description": "The next installment in the series/from the author",
+			"example": "[[Federalist No. 6]]",
+			"type": "string"
+		},
+		"italic title": {
+			"label": "Italicize title?",
+			"description": "If set to \"no\", the title is never italicized. If set to \"force\", the title is always italicized. If not specified, the title should usually be italicized automatically.",
+			"example": "no",
+			"type": "string",
+			"suggestedvalues": [
+				"no",
+				"force"
+			]
+		},
+		"editor": {
+			"aliases": [
+				"editors"
+			],
+			"label": "Editor(s)",
+			"description": "Editor or editors of the book. Use this template if they are a PRIMARY contributor (eg for dictionaries or encyclopedias).",
+			"example": "John Doe",
+			"type": "content"
+		},
+		"audio_read_by": {
+			"label": "Audio read by",
+			"description": "The person who read the audio, if this is an audiobook.",
+			"example": "Jane Smith",
+			"type": "content"
+		},
+		"title_orig": {
+			"label": "Original title",
+			"description": "The original title of the book, if it was not in English.",
+			"example": "Exemple d'une Livre",
+			"type": "content"
+		},
+		"title_working": {
+			"label": "Working title",
+			"description": "The working title of the book, if this was different from the title the book was ultimately published as.",
+			"example": "Example Working Book Title",
+			"type": "content"
+		},
+		"translator": {
+			"aliases": [
+				"translators"
+			],
+			"label": "Translator(s)",
+			"description": "The person or people who translated the book to English, if it was not originally in English.",
+			"example": "Joe Bloggs",
+			"type": "content"
+		},
+		"illustrator": {
+			"aliases": [
+				"illustrators"
+			],
+			"label": "Illustrator(s)",
+			"description": "The person or people who illustrated this book, if applicable.",
+			"example": "John Doe",
+			"type": "content"
+		},
+		"cover_artist": {
+			"label": "Cover artist",
+			"description": "The person who made the cover art, if applicable.",
+			"example": "Jane Smith",
+			"type": "content"
+		},
+		"release_number": {
+			"label": "Release number",
+			"description": "Ordinal index of the book, if it was released within a series",
+			"type": "string"
+		},
+		"subject": {
+			"aliases": [
+				"subjects"
+			],
+			"label": "Subjects",
+			"description": "Topics discussed by the book. For non-fiction books only.",
+			"example": "chemistry",
+			"type": "content"
+		},
+		"set_in": {
+			"label": "Set in",
+			"description": "The time and/or place where the book is set in, if it's a work of fiction",
+			"example": "21st-century Earth",
+			"type": "content"
+		},
+		"publisher2": {
+			"label": "Second publisher",
+			"description": "An additional publisher that published this book (not the primary publisher).",
+			"example": "Penguin Random House",
+			"type": "content"
+		},
+		"release_date": {},
+		"english_pub_date": {},
+		"english_release_date": {},
+		"pages": {},
+		"awards": {},
+		"award": {},
+		"isbn_note": {
+			"aliases": [
+				"ISBN_note"
+			]
+		},
+		"dewey": {},
+		"congress": {},
+		"last": {},
+		"first": {},
+		"oclc": {},
+		"alt": {},
+		"border": {},
+		"orig_lang_code": {},
+		"preceded_by_quotation_marks": {},
+		"followed_by_quotation_marks": {},
+		"native_wikisource": {},
+		"native_external_url": {},
+		"native_external_host": {},
+		"wikisource": {},
+		"external_url": {},
+		"external_host": {},
+		"website": {},
+		"homepage": {},
+		"URL": {},
+		"notes": {},
+		"note": {},
+		"nocat_wdimage": {},
+		"module": {}
+	}
+}
+</templatedata>
+{{Collapse bottom}}
+
+== Translated books ==
+About how to handle translated books, see the [[Template talk:Infobox book/Archive 4#Translated books case study|Translated books case study]].
+
+== COinS ==
+{{UF-COinS}}
+
+== Tracking categories ==
+* {{clc|Articles that link to Wikisource}}
+* {{clc|Articles that link to foreign-language Wikisources}}
+* {{clc|Books with missing cover}}{{spnd}}instances without images
+* {{clc|Pages using infobox book with unknown parameters}}
+* {{clc|No local image but image on Wikidata}} – Used by [[Template:Wikidata image]] to track articles where an infobox has no image but [[:en:Wikidata|Wikidata]] has an image name. To exclude articles from this category, add an image or {{para|nocat_wdimage|yes}} to the infobox.
+
+== See also ==
+* {{tl|Infobox book series}}
+* {{tl|Infobox novella}}
+* {{tl|Infobox short story}}
+* [[Wikipedia:WikiProject Novels/InfoboxCode]]
+* [[Wikipedia:WikiProject Novels/ArticleTemplate#Pattern template]]
+
+<includeonly>{{basepage subpage|
+}}</includeonly>
+<noinclude>
+[[Category:Book infobox templates| ]]
+[[Category:WikiProject Books| {{PAGENAME}}]]
+[[Category:WikiProject Novels| {{PAGENAME}}]]
+[[Category:Infobox templates using Wikidata]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
+[[Category:Templates not transcluded in mainspace]]
+</noinclude>
