@@ -86,10 +86,17 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 - ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
   true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
   one because nothing downstream can distinguish it.
-- ✅ **Six tranches built and drained 2026-08-23 — 462 answered, 0 rejected, 0 pending.**
-  60 + 96 + 96 + 10 + 100 + 100. Answers in
-  `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e,f}.tsv`. The last two each built a
-  clean 100 with **zero skips**, which is the loop fix holding.
+- ✅ **Seven tranches built and drained — 562 answered, 0 rejected, 0 pending.**
+  60 + 96 + 96 + 10 + 100 + 100 + 100. Answers in
+  `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e,f,g}.tsv`.
+- **`GUESS` has two shapes, and the second is the common one.** 11 guesses in 562 answers:
+  - **No lead at all** (redirect / disambig / empty) — the case the builder now writes a work-file
+    for. 6 so far.
+  - **The lead names a DIFFERENT shrine.** The article is titled and led as a bare 氷川神社 while the
+    item is 千住氷川神社 or 南沢氷川神社; or, worst, `Q11556511` 洲崎濱宮神明神社 whose lead is about
+    海山道神社 entirely. Taking the lead's reading here yields a **sourced** answer about the wrong
+    name — which is more dangerous than no answer, because `S143`/`S4656` would assert the article
+    backs it. 5 so far, and this shape is invisible unless the item label is compared to the lead.
 - **The target set is not purely shrines, and that is correct.** Emma's 2026-08-05 rule is *"is it a
   nameable place"*, not *"is it a shrine"*, and it has now admitted: a sea cave (`Q11488835`
   御厨人窟), two Kumano 王子 sites one of which no longer exists (`Q11480731`, `Q11483087`), a
@@ -111,9 +118,9 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
     behaviour and the prompt, including that the old `continue` cannot come back.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
   builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **816
-  resolved, 0 pending → ~1,817 still unqueued** (`_resolved.log`: 796 KANA · 8 KATAKANA · 6 GUESS
-  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 812 lines). Keep rebuilding in
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **916
+  resolved, 0 pending → ~1,717 still unqueued** (`_resolved.log`: 891 KANA · 11 GUESS · 8 KATAKANA
+  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 912 lines). Keep rebuilding in
   tranches with
   `build_name_in_kana_queue.py --limit N`, answer locally in batches
   (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
@@ -215,6 +222,15 @@ still holds **5 `Did` against 3,514 `Duk`**.
 - ▶ **Still to verify on the next Sunday run:** `submit-quickstatements` non-skipped, and `Did` in
   the thousands. If `Did` does not move, the label-only fix did not take and the branch to re-read
   is the `new == desc` arm of `generate_description_fixes.py`.
+- ⚠ **BLOCKED-ON-EXTERNAL and the wait is a WEEK, not a night — corrected 2026-08-24.** The run
+  this was written against, `32615320387`, fired on **Sunday 2026-08-23** and was cancelled at the
+  cap. It is now Monday, so tonight's run and the five after it take the `else` branch — *"not
+  Sunday — keeping committed description_label_pairs.txt"* — and exercise none of this. **The next
+  Sunday run is 2026-08-30.**
+  - So a green nightly run in the meantime proves the timeout raise for the *daily* path only, which
+    was never the failing one. Do not read it as verification of this item.
+  - Stated as a fact about the cron, not as a due date: `date -u +%u = 7` is in
+    `generate-quickstatements.yml`, and 2026-08-30 is simply when that next evaluates true.
 - ▶ **If it overruns again, split rather than raise.** The Sunday-only steps belong in their own
   weekly workflow — the repo already does this with `weekly-wiki-edit-test.yml` — instead of
   riding the daily job's budget. Raising the cap is the small fix, not the right shape.

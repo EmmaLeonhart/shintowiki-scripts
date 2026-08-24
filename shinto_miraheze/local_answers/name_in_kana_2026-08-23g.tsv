@@ -1,0 +1,126 @@
+# name_in_kana batch 7, answered locally 2026-08-24 from the LEAD in each work-file.
+#
+# FIVE GUESSES in this batch, the most so far, and they are two distinct shapes:
+#   (a) the lead names a DIFFERENT shrine from the item — a bare 氷川神社 where the item
+#       is 千住氷川神社, etc. Taking the lead's reading would be a sourced answer about
+#       the wrong name. Same shape as Q11391067 in batch 2.
+#   (b) no lead at all (redirect / disambig / empty) — the case the builder now writes a
+#       work-file for instead of skipping.
+Q11549610	KANA: ひかわじんじゃ
+Q11549614	KANA: ひかわじんじゃ
+Q11549615	KANA: ひかわじんじゃ
+# 千住氷川神社: the lead is titled and led as a bare 氷川神社（ひかわじんじゃ）, so it states a
+# reading for a different name form. 千住 is せんじゅ, the Adachi district the shrine is named for.
+Q11549618	GUESS: せんじゅひかわじんじゃ
+Q11549620	KANA: ひかわくわじんじゃ
+Q11549978	KANA: えいのおじんじゃ
+Q11550013	KANA: ながやまじんじゃ
+Q11550316	KANA: えいふくいなりじんじゃ
+Q11550353	KANA: ながやてんまんぐう
+Q11550715	KANA: こうげんじんじゃ
+Q11552241	KANA: いけぶくろみたけじんじゃ
+Q11552243	KANA: いけぶくろひかわじんじゃ
+Q11552847	KANA: おきなわけんごこくじんじゃ
+Q11553074	KANA: ささきじんじゃ
+Q11553443	KANA: こうちじんじゃ
+# NO LEAD. 河原 is かわら; an Okazaki 河原神社. No article text exists or will.
+Q11553643	GUESS: かわらじんじゃ
+Q11553669	KANA: かわぐちあさまじんじゃ
+Q11553804	KANA: こぼれいなりじんじゃ
+Q11554016	KANA: かわせじんじゃ
+Q11554418	KANA: ちすいじんじゃ
+Q11554446	KANA: ぬなくまじんじゃ
+Q11554710	KANA: いずみいのうえじんじゃ
+Q11554908	KANA: いずみあなしじんじゃ
+Q11555441	KANA: なきりじんじゃ
+Q11555561	KANA: ははきじんじゃ
+Q11556090	KANA: つしまじんじゃ
+Q11556091	KANA: つしまじんじゃ
+Q11556457	KANA: つのうじんじゃ
+# 洲崎濱宮神明神社: the lead is about 海山道神社（みやまどじんじゃ）, a different shrine
+# entirely. Derived: 洲崎 すさき (as in Q11556515 洲崎神社 すさきじんじゃ, same batch) +
+# 濱宮 はまみや + 神明神社 しんめいじんじゃ.
+Q11556511	GUESS: すさきはまみやしんめいじんじゃ
+Q11556515	KANA: すさきじんじゃ
+Q11556984	KANA: あざいじんじゃ
+# 南沢氷川神社: lead is a bare 氷川神社（ひかわじんじゃ）. 南沢 is みなみさわ, the Higashikurume
+# district the shrine is named for.
+Q11557473	GUESS: みなみさわひかわじんじゃ
+Q11558393	KANA: なみわけじんじゃ
+Q11558471	KANA: なにわじんじゃ
+Q11558527	KANA: うきしまじんじゃ
+Q11558784	KANA: かいなんじんじゃ
+Q11559097	KANA: かいじんじゃ
+# あぜつ / 応護島 are places, not the shrine
+Q11559106	KANA: かいどうじんじゃ
+Q11559651	KANA: すずみがおかはちまんじんじゃ
+Q11559710	KANA: よどがわてんじんしゃ
+Q11559768	KANA: あわしまじんじゃ
+Q11559774	KANA: たんすいじんじゃ
+Q11560040	KANA: ふかしじんじゃ
+Q11560278	KANA: ふかみじんじゃ
+Q11560360	KANA: ふちじんじゃ
+Q11561593	KANA: しぶかわじんじゃ
+# 温泉神社 is おんせん in Beppu and うんぜん in Unzen — same kanji, both stated
+Q11562964	KANA: おんせんじんじゃ
+Q11562965	KANA: うんぜんじんじゃ
+Q11563474	KANA: ゆぜんじんじゃ
+Q11563607	KANA: ゆどのさんじんじゃ
+Q11563610	KANA: ゆどのさんじんじゃ
+Q11563671	KANA: とうせんじんじゃ
+Q11563773	KANA: ゆじんじゃ
+Q11563793	KANA: ゆたにじんじゃ
+Q11563977	KANA: げんくろういなりじんじゃ
+Q11564971	KANA: しがけんごこくじんじゃ
+# 滝山東照宮: lead writes たきさん とうしょうぐう with a space; spaces are dropped
+Q11565118	KANA: たきさんとうしょうぐう
+Q11565821	KANA: ほうこじんじゃ
+Q11566667	KANA: せとじんじゃ
+# 火男火賣神社 is a spelling variant
+Q11566947	KANA: ほのおほのめじんじゃ
+Q11567184	KANA: いなつひこじんじゃ
+Q11567983	KANA: くまもとだいじんぐう
+Q11568337	KANA: くまもとけんごこくじんじゃ
+# 熊野三所大神社: 大神社（おおみわやしろ）is an ALTERNATIVE NAME, not a second reading of this one
+Q11568870	KANA: くまのさんしょおおみわしゃ
+Q11568939	KANA: くまのしゃ
+Q11568947	KANA: くまのじんじゃ
+Q11568948	KANA: くまのじんじゃ
+Q11568950	KANA: くまのじんじゃ
+Q11568953	KANA: くまのじんじゃ
+Q11568957	KANA: くまのじんじゃ
+Q11568961	KANA: くまのじんじゃ
+Q11568962	KANA: くまのじんじゃ
+Q11568963	KANA: くまのじんじゃ
+Q11568983	KANA: くまのなちじんじゃ
+Q11569065	KANA: あつひたかひこじんじゃ
+# NO LEAD. 熱田 is あつた, as in 熱田神宮 あつたじんぐう answered in batch 1. Okazaki 熱田神社.
+Q11569120	GUESS: あつたじんじゃ
+Q11570214	KANA: うしまどじんじゃ
+Q11570699	KANA: もののべじんじゃ
+Q11571214	KANA: いぬやまじんじゃ
+Q11571758	KANA: さのじんじゃ
+Q11572141	KANA: さるたひこじんじゃ
+Q11572510	KANA: たまやまじんじゃ
+Q11572627	KANA: たましきじんじゃ
+Q11572730	KANA: たまのおやじんじゃ
+Q11572767	KANA: たまきじんじゃ
+Q11572792	KANA: たまもろじんじゃ
+# 王勢籠神社: lead writes おせろう じんじゃ with a space
+Q11572925	KANA: おせろうじんじゃ
+Q11572950	KANA: おうぎじんじゃ
+Q11573002	KANA: おうじじんじゃ
+Q11573003	KANA: おうじじんじゃ
+Q11573004	KANA: おうじじんじゃ
+# 琴似神社: lead writes ことに じんじゃ with a space
+Q11573744	KANA: ことにじんじゃ
+Q11573775	KANA: ことひらじんじゃ
+Q11574473	KANA: いくしなじんじゃ
+# 新字体 生国魂神社 is a spelling variant
+Q11574477	KANA: いくくにたまじんじゃ
+Q11574513	KANA: いくしまたるしまじんじゃ
+Q11574575	KANA: いくねじんじゃ
+Q11574576	KANA: いくねじんじゃ
+# 生長の家宇治別格本山 — a religious facility centred on 宝蔵神社, a nameable place
+Q11574891	KANA: せいちょうのいえうじべっかくほんざん
+Q11574978	KANA: うぶすなじんじゃ
