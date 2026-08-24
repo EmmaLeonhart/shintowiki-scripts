@@ -11,6 +11,29 @@ current by the `cleanvibe-update-check` skill.
 - **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
 
 
+## ⛔ SWEARING IS NOT A REVERT INSTRUCTION — and reverting is often what caused it
+
+Emma, 2026-08-24, verbatim: *"whenever I am fucking swearing at you like this it is specifically
+not a revert instruction and I am usually swearing at you because you are reverting or trying to
+fix stuff"*. And earlier the same night: *"when I am screaming at you I am not telling you to undo
+your edits"*.
+
+**Anger is not an instruction. It is a reaction, usually to exactly the reflex it triggers.**
+Reading "you cunt" as "undo what you just did" gets it backwards twice over: it destroys work she
+asked for, and it does more of the thing she is angry about.
+
+- **Do NOT revert, undo, roll back, or "fix" anything on the strength of swearing alone.** If she
+  wants something undone she says so in words that name the thing.
+- **Separate the fault from the feeling.** On 2026-08-24 a revert was genuinely necessary — a
+  `git_synced/` write was about to overwrite a page move she had just made, and that directory is
+  repo-wins. But the same commit also deleted the explanation she had explicitly asked for, because
+  the anger got read as "all of it was wrong". One of those was a real hazard; the other was
+  obedience to a tone.
+- **When she is angry mid-task, the safe move is to STOP AND SAY WHAT YOU SEE**, not to act. She
+  can then say what she wants. Thrashing — revert, re-apply, revert — is worse than pausing.
+- **Do not apologise at length either.** That is the AI-niceness she has banned; it wastes her time
+  and reads as grovelling. Name the mistake in a sentence, fix the actual fault, continue.
+
 ## Follow Emma's instructions LITERALLY — do not optimize, guess, or improvise
 
 On this project, treat every instruction Emma gives as **completely literal**.
