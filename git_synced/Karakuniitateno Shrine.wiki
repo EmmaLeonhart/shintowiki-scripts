@@ -1,6 +1,6 @@
 {{Infobox religious building
 | name = Karakuniitateno Shrine
-| native_name = 坐韓国伊大弖神社
+| native_name = 韓国伊太弖神社
 | mapframe = yes
 | mapframe-zoom = 15
 | mapframe-wikidata = yes
@@ -11,7 +11,63 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Karakuniitateno Shrine'''|坐韓国伊大弖神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumo Province]].
+{{nihongo|'''Karakuniitateno Shrine'''|韓国伊太弖神社|Karakuni-itate-no-jinja}} is not one shrine. The ''[[Engishiki Jinmyōchō]]'' lists '''five''' shrines of this name in [[Izumo Province]] alone, each standing in the precinct of a different parent shrine. This page explains which is which, because they are easy to mistake for duplicates of one another — and at least once, they were.
+
+== Why there are five ==
+
+The register writes these entries with the prefix '''坐''' (''ni-masu'', "situated in"). An entry beginning 坐 is a shrine standing inside the grounds of the shrine listed '''immediately before it'''. The parent is not repeated in the name, so the entry reads as a bare 韓国伊太弖神社 and its identity comes entirely from its position in the list.
+
+That is the whole reason five entries share a name: they are five separate shrines of 韓国伊太弖, each in someone else's precinct.
+
+{| class="wikitable"
+! ordinal !! the entry before it !! so this entry is !! item
+|-
+| 19 || [[d:Q11572397|玉作湯神社]] || 坐韓国伊太弖神社, in '''Tamatsukuriyu''' grounds || [[d:Q135040778|Q135040778]]
+|-
+| '''28''' || [[d:Q11498399|揖夜神社]] || 坐韓国伊'''大'''弖神社, in '''Iya''' grounds || [[d:Q135040786|Q135040786]]
+|-
+| '''39''' || [[d:Q135040907|佐久多神社]] || 坐韓国伊太弖神社, in '''Sakuta''' grounds || was [[d:Q135040908|Q135040908]]
+|-
+| 92 || [[d:Q135040959|阿須伎神社]] || 神韓国伊太弖神社, in '''Asuki''' grounds || [[d:Q135040960|Q135040960]]
+|-
+| 125 || [[d:Q135041043|出雲神社]] || 韓国伊太弖神社, standalone || [[d:Q135041044|Q135041044]]
+|}
+
+The 大 / 太 spelling difference at ordinal 28 is '''not''' what distinguishes it. Register transcriptions vary on that character. The precinct is what distinguishes them.
+
+== The merge, and why entries 28 and 39 look alike ==
+
+On '''2026-05-23''', [[d:Q135040908|Q135040908]] — the entry-39 shrine, in Sakuta's grounds — was merged into [[d:Q135040786|Q135040786]], the entry-28 shrine in Iya's grounds. They are two different shrines and the merge conflated them.
+
+It was a reasonable mistake to make. '''Both entries had been given the same two candidate shrines''':
+
+* [[d:Q135070107|Q135070107]] 嘉羅久利神社
+* [[d:Q135070108|Q135070108]] 佐久多神社
+
+Two register entries with identical candidate sets read as one entry recorded twice. But 嘉羅久利 (''Karakuri'') is the modern form of 韓国 (''Karakuni''), and that shrine stands in '''Sakuta''' grounds — so those candidates belong to entry '''39''', not to the Iya one. The candidate assignment was wrong before the merge, and it is what made the two entries look identical.
+
+The merge has '''not''' been undone, deliberately: restoring the item would restore the wrong candidate set with it, so the candidates are the thing to fix first.
+
+== What is still tangled ==
+
+* '''There are two 嘉羅久利神社 items.''' [[d:Q135070106|Q135070106]] points at entry 38, [[d:Q135070107|Q135070107]] at entry 28. One shrine, two items, two different entries.
+* '''佐久多神社 exists as both an entry and a candidate.''' [[d:Q135040907|Q135040907]] is entry 38 itself; [[d:Q135070108|Q135070108]] is a candidate that also holds ''part of'' the list at ordinal '''39''' — which a candidate should not hold at all.
+* '''Entry 38 carries two ''followed by'' values at once''', [[d:Q135040786|Q135040786]] and [[d:Q135040909|Q135040909]], piled into a single statement.
+* '''The list's ordinal 39 points at [[d:Q135040786|Q135040786]]''' by following the redirect left behind by the merge.
+
+== Pages on this wiki ==
+
+Each entry has its own page, and one of them is currently mislinked:
+
+* [[Karakuniitateno Shrine (Q135040908)]] — entry '''39''', Sakuta's precinct. ⚠ Its {{tl|wikidata link}} now resolves to '''Q135040786''' because of the merge, so it and this page point at the same item while describing different shrines.
+* [[Karakuniitateno Shrine (Q135040960)]] — entry 92, 神韓国伊太弖神社, Asuki's precinct.
+* [[Karakuniitateno Shrine (Q135041044)]] — entry 125, standalone.
+
+Not the same shrine, despite similar names: [[Karakuniitatematsuruno Shrine]] (韓國伊太弖奉神社), [[Karakuni Shrine (Q135040666)]] (韓國神社), [[Karakunino- Shrine]] (韓国宇豆峯神社).
+
+== See also ==
+
+* [[List of Shikinaisha in Izumo Province]]
 
 [[Category:Wikidata generated shikinaisha pages|Karakuniitateno Shrine]][[Category:Shikinaisha|Karakuniitateno Shrine]][[Category:Shikinai Shōsha]]
 
