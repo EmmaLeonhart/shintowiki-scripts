@@ -70,6 +70,27 @@ only symptom was the file vanishing on the next `git pull`.
 `shinto_miraheze/tests/test_open_questions_stays_synced.py` pins it for the one file in that
 directory that is hand-edited; the other ~2,850 are written by the sync itself.
 
+## ⛔ PRUNE THE PAGE EVERY TICK — answering is only half the job (Emma, 2026-08-24)
+
+Her words, left on the page itself after a session spent adding to it: *"My god the state of the
+page is horrifying why the fuck are yo not cleaning it up"*.
+
+**Answering an item does not finish it. DELETING it finishes it.** A session that answers well and
+prunes nothing leaves the page worse each tick, because every answer is one more block of text
+between her and the thing she actually wants to write.
+
+What went wrong on 2026-08-24, so it is not repeated: five long sections were added over an evening
+— uk/id labels, Izumo 28 vs 39, 御笏神社, a P31 question, a kana report — every one of them answered
+and settled, none of them removed. The page reached ~130 lines of finished conversation. The
+substance belonged in the repo (`docs/`, `DEVLOG.md`, `queue.md`), and a one-line pointer belonged
+on the page, if anything at all.
+
+- **The page is a control surface, not a record.** Findings go in the repo. The page carries what is
+  OPEN.
+- **An answered item is deleted in the same commit that answers it.** Not next tick.
+- **A section that exists only to say "this was settled" is crud.** Delete it; git has the history.
+- **Length is the signal.** If the page is longer than a screen, prune before writing anything new.
+
 ## `[[Open questions]]` page — read at session start, prune as items resolve
 
 `git_synced/Open questions.wiki` (mirrored to the wiki page [[Open questions]] on shinto.miraheze.org, https://shinto.miraheze.org/wiki/Open_questions) is the human↔bot interface for blockers, design questions, and instructions Emma wants the bots to act on. Agents are responsible for keeping it accurate — it is not a write-once seed list.
