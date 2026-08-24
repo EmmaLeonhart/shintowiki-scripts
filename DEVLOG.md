@@ -34,6 +34,18 @@ routine briefly had **no repository bound**, which is precisely the broken state
 hypothesised and never actually observed. Caught it in the response and restored all three. Send the
 full `ccr` on every update.
 
+**✅ VERIFIED on a second run** (`cse_018Yc3LDsygSnfYb4JuhQak8` → `310083f7`). It committed on
+`[detached HEAD f694495]` — no `git checkout main`, no rewind — and `310083f7`'s parent is
+`96763a9a`, the actual tip at the time. It did hit one push rejection, and that one was **real**: I
+pushed `96763a9a` while the run was in flight. It fetched, rebased onto it, pushed. That is the
+designed path, and the distinction now means something — a rejection is evidence of a concurrent
+push rather than the routine's own stale base.
+
+Also worth noting: this run's five random picks included a **`category_translation`** item, which it
+answered (`Category:岡山県内の市町村指定有形文化財` → *Category:Municipal Tangible Cultural Properties in
+Okayama Prefecture*). The answer-marker queues do get served by the routine; they are simply a small
+share of 1,599 items.
+
 **The schedule move to 21:00Z stays**, on its own merit — Emma's ordering is Wikidata first (it is
 UTC-gated and stateful), then the wiki queue, then the Claude queue in the quiet hours before the
 next cron. It is just not what was breaking the push.
