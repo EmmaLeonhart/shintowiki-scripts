@@ -126,13 +126,17 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
     the name, so stopping at it yielded 舊府. `lead_subject()` now drops parentheticals carrying no
     kana. **A warning that cries wolf is worse than no warning**, so this mattered more than the
     miss rate.
-  - ✅ **A second false positive on the ELEVENTH tranche, fixed the same tick, same reason.**
-    `Q11667575` 香川**縣**護**國**神社 is led as 香川**県**護**国**神社 — 旧字体 against 新字体, the
-    same shrine. Two characters apart, so the one-character variant-kanji tolerance could not reach
-    it, and widening that tolerance to two would start passing names that genuinely differ twice.
-    `shinjitai()` folds the old forms before comparing, which is exact rather than approximate, and
-    is a comparison aid only — nothing is rewritten and the item's label is untouched. 21 tests,
-    including three that pin the fold cannot make two real shrines compare equal.
+  - ✅ **A second false positive on the ELEVENTH tranche — and my write-up of it was wrong.**
+    `Q11667575` 香川**縣**護**國**神社 led as 香川**県**護**国**神社. I called this "a mechanism the
+    check had not met". It is not: it is the **same** variant-character case as 利雁/利鴈 and
+    尾崎/尾﨑, occurring twice in one name instead of once. Those two were passing only because
+    they differ in one position and the tolerance stopped at one — which is luck, not knowledge.
+    The differing-position count was arbitrary and says nothing about the names.
+    `fold_variants()` now folds variant forms (kyūjitai, itaiji, alternates alike) so the
+    comparison is exact, with the known pairs in the table; the one-character tolerance stays
+    only as a backstop for unlisted variants. **The first version also folded 淵 to 渕 —
+    backwards, 淵 is the ordinary form — inside a table called `KYUJITAI` that contained itaiji
+    anyway.** 24 tests.
   - ⚠ **This is the highest-severity error the pipeline can make**, which is why it gets a builder
     check rather than a note: the lead states a reading cleanly, so a `KANA` answer looks
     well-sourced and the collector attaches `S143`/`S4656` — asserting jawiki backs a reading of a

@@ -13,23 +13,28 @@ disambiguation page (`Q11666695` 飯道神社, whose lead only points at the Kō
 and was answered `NO_KANA`, since disambiguation pages are the excluded class rather than a
 nameable place.
 
-**The subject-mismatch detector fired once, and it was wrong — by a mechanism it had not seen.**
-`Q11667575` 香川**縣**護**國**神社 is led as 香川**県**護**国**神社: 旧字体 against 新字体, one shrine.
-The existing tolerance passes names that are the same length and differ in **one** character, which
-covers 利雁/利鴈 and 尾崎/尾﨑. This differs in **two**, so it was flagged.
+**The subject-mismatch detector fired once and was wrong — and the entry I first wrote about it
+was also wrong.** Emma read it back and asked what it was.
 
-The tempting fix — widen the tolerance to two characters — is the wrong one, because two genuinely
-different characters is how two different shrines look. Folding 旧字体 to 新字体 before comparing is
-exact instead of approximate, so `shinjitai()` does that against a deliberately small table of forms
-that actually occur in shrine and place names. It is a comparison aid only: nothing is rewritten and
-the item's own label is untouched. Three of the new tests exist specifically to pin that the fold
-cannot make two real shrines compare equal.
+`Q11667575` 香川**縣**護**國**神社 is led as 香川**県**護**国**神社. I described this as "a mechanism
+the check had not met". It is nothing of the kind. It is the **same variant-character situation** as
+利雁/利鴈 and 尾崎/尾﨑, which the check already tolerated — one name, two spellings — occurring twice
+in one name instead of once. Those two were passing only because they differ in one position and the
+tolerance happened to stop at one. That threshold was arbitrary; hitting its edge is a fact about my
+rule, not about Japanese orthography, and writing it up as a discovery dressed up an artifact as an
+insight.
 
-This is the second false positive fixed on the tick it appeared, for the reason already recorded
-the first time: **a warning that cries wolf is worse than no warning.** The check's whole value is
-that an answerer trusts it, and the error it guards is the pipeline's most expensive one — a lead
-that states a reading cleanly for a *different* name, which the collector would then source with
-`S143`/`S4656`.
+The fold is still the right fix, for a reason I stated badly: it makes the comparison exact where
+counting positions is a guess. So `fold_variants()` now covers kyūjitai, itaiji and plain alternates
+alike, **including 鴈→雁 and 﨑→崎**, so the two cases that were passing by luck are decided by the
+table. The one-character tolerance stays only as a backstop for variants not listed.
+
+**Two real defects came out of re-reading it**, both mine, both shipped:
+
+* The table folded **淵 → 渕**, which is backwards. 淵 is the ordinary form and 渕 the variant, so
+  the fold pushed the standard spelling toward the rare one.
+* It was called `KYUJITAI` while containing itaiji (渕, 槇), which is what let the wrong-direction
+  entry look at home in it. Renamed `VARIANT_KANJI`, which is what it always was.
 
 **One usage detail worth writing down**, having cost two failed invocations: `apply_local_answers.py`
 resolves `--answers` relative to `shinto_miraheze/`, not the repo root, and the flag is `--answers`

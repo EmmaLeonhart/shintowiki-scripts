@@ -362,23 +362,35 @@ def lead_subject(lead):
     return head.strip()
 
 
-# 旧字体 → 新字体, restricted to forms that actually turn up in shrine and place names.
-# This is a comparison aid only: it is never written anywhere, and the item's own label is
-# left exactly as it is. Deliberately not a general Unicode table — a broad mapping would
-# start collapsing characters that distinguish real shrines from each other.
-KYUJITAI = {
+# Variant character forms folded to the form in ordinary modern use, so two spellings of
+# one name compare equal.
+#
+# This is NOT a special mechanism and it is not only 旧字体. Japanese shrine names are
+# routinely written with variant characters — kyūjitai (縣/県), itaiji (﨑/崎), and plain
+# alternates (鴈/雁) — and all of them are the same situation: one name, two spellings. The
+# earlier version of this table was called KYUJITAI, contained itaiji anyway, and folded
+# 淵 to 渕, which is backwards — 淵 is the ordinary form and 渕 the variant.
+#
+# Deliberately not a general Unicode table. A broad fold would start collapsing characters
+# that distinguish real shrines from each other, and this is only ever used to compare an
+# item's label against its own article's lead.
+VARIANT_KANJI = {
+    # kyūjitai → shinjitai
     "縣": "県", "國": "国", "榮": "栄", "舊": "旧", "齋": "斎", "藝": "芸",
     "澤": "沢", "濱": "浜", "邊": "辺", "邉": "辺", "會": "会", "學": "学",
     "廣": "広", "圓": "円", "惠": "恵", "德": "徳", "樂": "楽", "豐": "豊",
     "眞": "真", "淺": "浅", "賣": "売", "巖": "巌", "鐵": "鉄", "靈": "霊",
     "觀": "観", "應": "応", "醫": "医", "亞": "亜", "壽": "寿", "驛": "駅",
-    "齒": "歯", "龍": "竜", "萬": "万", "淵": "渕", "槇": "槙", "禪": "禅",
+    "齒": "歯", "龍": "竜", "萬": "万", "禪": "禅",
+    # itaiji / alternates → the ordinary form. The first two are the pairs this check was
+    # already tolerating by edit distance; folding them makes that exact instead of lucky.
+    "﨑": "崎", "鴈": "雁", "渕": "淵", "槇": "槙",
 }
 
 
-def shinjitai(text):
-    """Fold 旧字体 to 新字体 so two spellings of one name compare equal."""
-    return "".join(KYUJITAI.get(ch, ch) for ch in text)
+def fold_variants(text):
+    """Fold variant character forms so two spellings of one name compare equal."""
+    return "".join(VARIANT_KANJI.get(ch, ch) for ch in text)
 
 
 def subject_mismatch(ja, lead):
@@ -407,17 +419,18 @@ def subject_mismatch(ja, lead):
     氷川神社 — the article covers the generic name and the item is a specific shrine, so
     its reading is not the one stated.
 
-    A third non-mismatch, found 2026-08-24 on the eleventh tranche: **旧字体 vs 新字体**.
-    The item is 香川縣護國神社 and the lead opens 香川県護国神社 — two characters apart, so
-    the one-character variant-kanji tolerance above does not catch it, and widening that
-    tolerance to two would start passing genuinely different names. Old and new character
-    forms are normalised instead, which is exact rather than approximate.
+    Both of those are the SAME situation — one name, two spellings — and so is
+    香川縣護國神社 led as 香川県護国神社, which differs in two positions rather than one.
+    Variant forms are folded (see VARIANT_KANJI) so that comparison is exact and the number
+    of differing positions stops mattering. The one-character tolerance is kept only as a
+    backstop for variants not in the table; it is a heuristic, and hitting its edge says
+    nothing about the names.
     """
     subject = lead_subject(lead)
     if not subject or not ja:
         return None
     bare = ja.split("(", 1)[0].split("（", 1)[0].strip()
-    bare, subject_cmp = shinjitai(bare), shinjitai(subject)
+    bare, subject_cmp = fold_variants(bare), fold_variants(subject)
     if bare == subject_cmp or bare in subject_cmp:
         return None
     if len(bare) == len(subject_cmp) and sum(

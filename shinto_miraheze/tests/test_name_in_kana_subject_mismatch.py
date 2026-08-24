@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pytest  # noqa: E402
 
 from build_name_in_kana_queue import (  # noqa: E402
-    MISMATCH, lead_subject, shinjitai, subject_mismatch, write_work_file,
+    MISMATCH, fold_variants, lead_subject, subject_mismatch, write_work_file,
 )
 
 
@@ -117,32 +117,42 @@ def test_the_warning_text_names_both_names():
     assert "千住氷川神社" in out and "氷川神社" in out
 
 
-def test_kyujitai_and_shinjitai_are_the_same_name():
+def test_two_variant_characters_in_one_name_is_still_one_name():
     """香川縣護國神社 led as 香川県護国神社, found on the eleventh live tranche.
 
-    Two characters apart (縣/県 and 國/国), so the one-character variant-kanji tolerance
-    does not reach it. Widening that tolerance to two would be the wrong fix — it would
-    start passing names that genuinely differ in two places — so the old and new character
-    forms are folded instead, which is exact.
+    This is NOT a new kind of case. It is the same variant-character situation as 利雁/利鴈
+    and 尾崎/尾﨑 above, occurring twice in one name instead of once. The check happened to
+    tolerate those two by counting differing positions and stopping at one, so hitting two
+    looked like something new. It was not; the threshold was arbitrary.
     """
     lead = "香川県護国神社（かがわけんごこくじんじゃ）は、香川県善通寺市に鎮座する神社（護国神社）。"
     assert lead_subject(lead) == "香川県護国神社"
     assert subject_mismatch("香川縣護國神社", lead) is None
 
 
-def test_shinjitai_folds_only_what_it_claims_to():
-    assert shinjitai("香川縣護國神社") == "香川県護国神社"
-    assert shinjitai("長崎縣護國神社") == "長崎県護国神社"
-    assert shinjitai("豐榮神社") == "豊栄神社"
-    assert shinjitai("三芳野神社") == "三芳野神社"      # untouched
-    assert shinjitai("") == ""
+def test_the_pairs_that_used_to_pass_by_edit_distance_now_fold_exactly():
+    """利雁/利鴈 and 尾崎/尾﨑 were passing because they differ in one position, which is luck
+    rather than knowledge. They are in the table now, so the fold decides them."""
+    assert fold_variants("利鴈神社") == fold_variants("利雁神社")
+    assert fold_variants("尾﨑神社") == fold_variants("尾崎神社")
+
+
+def test_the_fold_goes_toward_the_ordinary_form():
+    assert fold_variants("香川縣護國神社") == "香川県護国神社"
+    assert fold_variants("豐榮神社") == "豊栄神社"
+    # 淵 is the ordinary form and 渕 the variant. The first version of this table had the
+    # pair the other way round, folding the ordinary form into the variant.
+    assert fold_variants("渕神社") == "淵神社"
+    assert fold_variants("淵神社") == "淵神社"
+    assert fold_variants("三芳野神社") == "三芳野神社"
+    assert fold_variants("") == ""
 
 
 def test_folding_does_not_start_passing_genuinely_different_names():
     """The fold must not become a way for two real shrines to compare equal.
 
-    These are the cases the detector exists for; none of them involve 旧字体, so the fold
-    is a no-op on them and they must still be flagged.
+    These are the cases the detector exists for; none involve variant forms, so the fold is
+    a no-op on them and they must still be flagged.
     """
     assert subject_mismatch(
         "千住氷川神社", "氷川神社（ひかわじんじゃ）は、東京都足立区千住4丁目にある神社。") is not None
