@@ -627,10 +627,32 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   list of name collisions; the report's own headline calls them duplicates, which overstates what it
   knows. Do not re-raise link/merge on this basis.
 
-  **What is actually unanswered** — and it is a data question, not a decision for Emma: why are 149
-  items tagged as Shikinaisha yet named as a part of no Jinmyōchō list? Anything that claims to answer
-  it needs evidence that establishes identity — the (P13677 + P958) composite is the only one available
-  so far, and it currently matches nothing. NEEDS-INVESTIGATION, this repo's job, no gate on it.
+  **✅ ANSWERED 2026-08-24 — and there was no defect. They are the 宮中神, the palace shrines.**
+
+  The question was: why are items tagged Shikinaisha named as a part of no Jinmyōchō list? Measured
+  live, **it is 23 items, not 149** — the older figure counted something else or predates the list
+  rebuilds.
+
+  They are not listless. They are `part of` the palace groupings, which the Engishiki Jinmyōchō lists
+  BEFORE it reaches the provinces:
+
+  | part of | n |
+  |---|---|
+  | **八神殿** — the Eight Deities Hall (神産日, 高御産日, 玉積産日, 生産日, 足産日 …) | 8 |
+  | **座摩神** — the 座摩巫祭神五座 (生井, 福井, 綱長井, 波比祇 …) | 5 |
+  | **御門巫祭神 八座** | 2 |
+  | **生島巫祭神 二座** | 2 |
+  | modern shrines carrying `P460` — relocated or merged sites, correctly listless | 4 |
+  | no `P361` at all | 2 |
+
+  So the orphan query only catches them because those palace groupings are not themselves
+  `part of` the Jinmyōchō item, while the province lists are. **The register's own structure, not
+  damage** — nothing to merge, nothing to link, and the class dissolves the same way the
+  "duplicates" did.
+
+  - [ ] Optional and cosmetic: making 八神殿 / 座摩神 / 御門巫祭神 / 生島巫祭神 `part of` the Jinmyōchō
+    would empty this report to the 2 genuinely bare items. Only worth it if the report is meant to be
+    a zero-inbox; it is a Wikidata edit, so it waits for 2026-09-18 either way.
 
   **Housekeeping done 2026-08-19:** the generator called the class "living/entry duplicates &mdash; the
   same shrine under the same name &rarr; link or merge". It now calls them **name collisions**, says
