@@ -51,9 +51,9 @@ jobs:
 
           today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
           block = (
-              f"## Weekly sweep: analyse [[Open questions]] into queue.md "
-              f"({MARKER} {today})\n\n"
-              "Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. "
+              f"- **Weekly sweep: analyse [[Open questions]] into queue.md "
+              f"({MARKER} {today})**\n"
+              "  Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. "
               "Read `git_synced/Open questions.wiki` (the wiki version is "
               "authoritative — pull/confirm the live page, don't clobber Emma's "
               "edits). For every actionable item or Emma disposition not yet "
@@ -62,11 +62,13 @@ jobs:
               "page. Then delete THIS block.\n\n"
           )
 
-          # Insert as the first work item: before the first '## ' heading,
-          # after the queue.md preamble.
+          # Insert as the first work item: before the first '- **' bullet, after the
+          # queue.md preamble. Queue items are bullets, never headings -- Emma,
+          # 2026-08-24: letters, numbers and headings make the queue behave like a
+          # permanent artefact with a defined order, so deleting one leaves a gap.
           lines = text.splitlines(keepends=True)
           insert_at = next((i for i, ln in enumerate(lines)
-                            if ln.startswith("## ")), len(lines))
+                            if ln.startswith("- **")), len(lines))
           new_text = "".join(lines[:insert_at]) + block + "".join(lines[insert_at:])
           q.write_text(new_text, encoding="utf-8")
           print(f"Prepended weekly Open-questions sweep task dated {today}.")

@@ -207,6 +207,28 @@ Local full rebuild: `!regenerateQuickStatements.bat`.
   `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`.
 * **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
 
+## ⛔ AN ENGLISH LABEL MEANS THE ITEM IS DONE — no kana reading (Emma, 2026-08-24)
+
+> *"Once something has an English label, it's graduated past the point that we care about its KANA
+> reading. It is done. There's no KANA reading because the English label IS the KANA reading!"*
+>
+> *"Do not try to reason about what the KANA reading would be on something with an English label."*
+
+The English label is the romanisation, so it already carries the reading — **"Senju Hikawa Shrine"
+IS せんじゅひかわじんじゃ.** If a kana value is ever wanted on such an item it is **derived
+mechanically** from the English label plus the shrine suffix taken from the Japanese. It is never
+read out of the article and never reasoned about.
+
+**This inverted the whole name-in-kana programme.** `build_name_in_kana_queue.py` had two buckets and
+called the en-labelled one *"Priority"*, on the theory that those were the most likely to carry
+romanization-derived errors. So it aimed **2,576 of its 2,634 targets — 97.8%** — at items that were
+already finished. The target query now excludes anything with an English label, leaving **58**.
+
+**Queue items are BULLETS. No letters, no numbers, no headings** (same day). Identifiers make the
+queue behave like a permanent artefact with a fixed order, so deleting one leaves a visible gap and
+the queue stops being a queue. `weekly-open-questions-sweep.yml` writes a bullet and anchors on the
+first bullet for the same reason.
+
 ## ⭐ THIS PROJECT IS DELIBERATELY SLOW. Do not optimise it. (Emma, 2026-08-24)
 
 > *"We're not trying to be fast with this project. You should just fucking keep it in mind. We're

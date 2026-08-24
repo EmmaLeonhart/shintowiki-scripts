@@ -30,10 +30,28 @@ touch the same property on the same items, so:
 Emma's instruction on gating: do NOT over-gate on confidence — producing kana is
 the priority and the LLM path is high-quality. The katakana exclusion is the gate.
 
-Target set (SPARQL, query-main): ?item wdt:P31 wd:Q845945, has a jawiki sitelink,
-and has NO top-level P1814. Two buckets, recorded on each work-file:
-  (a) HAS an en label — most likely to carry romanization-derived errors. Priority.
-  (b) NO en label — the collector's companion step also generates the en label.
+⛔ AN ITEM WITH AN ENGLISH LABEL IS DONE. It gets no kana reading and must never enter
+this queue. Emma, 2026-08-24:
+
+    "Once something is an English label, in my eyes, it doesn't need a KANA label...
+     Realistically, once something has an English label, it's graduated past the point
+     that we care about its KANA reading. It is done. There's no KANA reading because
+     the English label IS the KANA reading!"
+
+    "Do not try to reason about what the KANA reading would be on something with an
+     English label."
+
+The en label is the romanisation, so it already carries the reading — 'Senju Hikawa Shrine'
+IS せんじゅひかわじんじゃ. If a kana value is ever wanted for such an item it is DERIVED from
+the English label plus the shrine suffix taken from the Japanese, mechanically. It is never
+reasoned out of the article.
+
+This inverts what the builder used to do. It had two buckets and called the en-labelled one
+"Priority", on the theory that those were most likely to carry romanization-derived errors —
+so it aimed 2,576 of its 2,634 targets, 97.8%, at items that were already finished.
+
+Target set (SPARQL, query-main): ?item wdt:P31 wd:Q845945, has a jawiki sitelink, has NO
+top-level P1814, and has NO English label. That last clause is the rule above.
 
 Output: one work-file per item in `name_in_kana/`, carrying the jawiki lead and an
 `<!-- ANSWER: -->` marker, exactly like category_translation/ and
@@ -84,6 +102,9 @@ SELECT ?item ?ja ?en ?art (GROUP_CONCAT(DISTINCT ?cls; separator=",") AS ?classe
   ?item wdt:P31 wd:Q845945 .
   ?art schema:about ?item ; schema:isPartOf <https://ja.wikipedia.org/> .
   FILTER NOT EXISTS { ?item wdt:P1814 ?k }
+  # Emma, 2026-08-24: an item with an English label is DONE and gets no kana reading.
+  # This filter is the whole rule, and it removes 2,576 of the old 2,634 targets.
+  FILTER NOT EXISTS { ?item rdfs:label ?enx . FILTER(LANG(?enx)="en") }
   OPTIONAL { ?item wdt:P31 ?cls }
   OPTIONAL { ?item rdfs:label ?ja . FILTER(LANG(?ja)="ja") }
   OPTIONAL { ?item rdfs:label ?en . FILTER(LANG(?en)="en") }
