@@ -334,14 +334,78 @@ def leads(titles):
     return out
 
 
+def lead_subject(lead):
+    """The name the lead is actually ABOUT — the text before its first parenthesis.
+
+    Japanese leads open `NAME（よみ）は、…`, so the subject is everything up to the
+    first full-width or half-width open paren, or up to は if there is no paren.
+    """
+    head = (lead or "").strip().split("\n", 1)[0]
+    for stop in ("（", "("):
+        if stop in head:
+            return head.split(stop, 1)[0].strip()
+    if "は" in head:
+        return head.split("は", 1)[0].strip()
+    return head.strip()
+
+
+def subject_mismatch(ja, lead):
+    """The lead is about a DIFFERENT name from the item's — the dangerous case.
+
+    Found 2026-08-24 across three items in one tranche. The article is titled and led
+    as a bare 氷川神社 while the item is 千住氷川神社 or 南沢氷川神社; worse, Q11556511
+    洲崎濱宮神明神社's lead is about 海山道神社 entirely.
+
+    It matters more than a missing reading. The lead states one cleanly, in the usual
+    parenthetical, so an answer taken from it looks well-sourced — and the collector
+    then attaches S143/S4656, asserting that the Japanese Wikipedia article backs a
+    reading of a name the article never mentions. A wrong unsourced reading is
+    recoverable; a wrong SOURCED one is what "visibility is worse than data loss" is
+    about.
+
+    Two things are NOT mismatches, and a first cut got both wrong:
+
+    * **Variant kanji.** 利雁神社 is led as 利鴈神社 and 尾崎神社 as 尾﨑神社 — the same
+      shrine, one character written differently. Same length, one character apart.
+    * **A lead whose subject is longer prose containing the name**, e.g.
+      本項目で扱う滋賀県高島市の熊野神社. The item's name is in there.
+
+    And one thing IS a mismatch that plain containment misses: the lead's subject being
+    a strict *substring* of the item's name. That is exactly 千住氷川神社 led as a bare
+    氷川神社 — the article covers the generic name and the item is a specific shrine, so
+    its reading is not the one stated.
+    """
+    subject = lead_subject(lead)
+    if not subject or not ja:
+        return None
+    bare = ja.split("(", 1)[0].split("（", 1)[0].strip()
+    if bare == subject or bare in subject:
+        return None
+    if len(bare) == len(subject) and sum(
+            a != b for a, b in zip(bare, subject)) <= 1:
+        return None                      # variant kanji
+    return subject
+
+
+MISMATCH = (
+    "<!-- ⚠ THE LEAD IS ABOUT A DIFFERENT NAME: this item is {ja!r} but the lead below "
+    "opens on {subject!r}. Do NOT copy the lead's reading as KANA — it would be sourced "
+    "to an article that does not name this shrine. Either derive this item's own reading "
+    "and answer GUESS, or answer NO_KANA. -->"
+)
+
+
 def write_work_file(qid, ja, en, title, lead):
     bucket = "a" if en else "b"
     path = os.path.join(OUT_DIR, f"{qid}.wiki")
     art = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
+    subject = subject_mismatch(ja, lead)
+    warn = (MISMATCH.format(ja=ja, subject=subject) + "\n") if subject else ""
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(f"<!-- ITEM: https://www.wikidata.org/wiki/{qid} -->\n"
                 f"<!-- JA: {ja} | EN_LABEL: {en or '(none)'} | BUCKET: {bucket} -->\n"
                 f"<!-- ARTICLE: {art} -->\n"
+                f"{warn}"
                 f"<!-- ANSWER: -->\n"
                 f"{TASK}\n\n== LEAD ==\n{lead.strip()}\n")
 

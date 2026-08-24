@@ -86,9 +86,24 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 - ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
   true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
   one because nothing downstream can distinguish it.
-- ✅ **Seven tranches built and drained — 562 answered, 0 rejected, 0 pending.**
-  60 + 96 + 96 + 10 + 100 + 100 + 100. Answers in
-  `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e,f,g}.tsv`.
+- ✅ **Eight tranches built and drained — 662 answered, 0 rejected, 0 pending.**
+  60 + 96 + 96 + 10 + 100 + 100 + 100 + 100. Answers in
+  `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e,f,g}.tsv` and
+  `…_2026-08-24.tsv`.
+- ✅ **The "lead names a different shrine" case is now DETECTED BY THE BUILDER, not by
+  whoever happens to notice.** `subject_mismatch()` compares the item's ja label to the name the
+  lead actually opens on and writes a warning above the ANSWER marker telling the answerer not to
+  copy the reading. **It caught 2 real cases on its first live tranche** — `Q11595844`
+  秋葉神社・三座宮稲荷神社 (lead is about 秋葉神社 and 三座稲荷) and `Q11596881` 柳原稲荷神社 (lead is a
+  bare 稲荷神社). Neither is visible from the answer format.
+  - Tuned against 11 real cases from this session, because a first cut got two wrong in each
+    direction: it passed 千住氷川神社 (the lead's name is a *substring* of the item's, which plain
+    containment reads as a match) and flagged 利雁/利鴈 and 尾崎/尾﨑, which are one shrine with a
+    variant kanji. 16 tests, every case taken from a real work-file.
+  - ⚠ **This is the highest-severity error the pipeline can make**, which is why it gets a builder
+    check rather than a note: the lead states a reading cleanly, so a `KANA` answer looks
+    well-sourced and the collector attaches `S143`/`S4656` — asserting jawiki backs a reading of a
+    name the article never mentions.
 - **`GUESS` has two shapes, and the second is the common one.** 11 guesses in 562 answers:
   - **No lead at all** (redirect / disambig / empty) — the case the builder now writes a work-file
     for. 6 so far.
@@ -118,9 +133,9 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
     behaviour and the prompt, including that the old `continue` cannot come back.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
   builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **916
-  resolved, 0 pending → ~1,717 still unqueued** (`_resolved.log`: 891 KANA · 11 GUESS · 8 KATAKANA
-  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 912 lines). Keep rebuilding in
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **1,016
+  resolved, 0 pending → ~1,617 still unqueued** (`_resolved.log`: 987 KANA · 14 GUESS · 8 KATAKANA
+  · 5 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 1,011 lines). Keep rebuilding in
   tranches with
   `build_name_in_kana_queue.py --limit N`, answer locally in batches
   (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
