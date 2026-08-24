@@ -65,41 +65,19 @@ taxonomy above, or goes to her directly.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A-DUP. ▶ MEASURED 2026-08-24: 917 items, 988 duplicated `P13723` statements — and no safe QS fix
+## A-DUP. ✅ CLOSED 2026-08-24 by Emma: leave them. Measurement kept, nothing staged.
 
-Emma asked why `Q135041321` still has `P31 → Q135009132`. Answering that turned up something she
-did not ask about: its migrated `P13723` statements are written twice. Now measured rather than
-guessed, by `modern-quickstatements/audit_duplicate_rankings.py` — ONE aggregate SPARQL query, not
-a sweep, because statement multiplicity on Wikidata has no cheaper source.
+Measured: **988 duplicate `P13723` groups across 917 items**, out of 16,995 statements on 8,188
+items — 11%, every group exactly ×2, byte-identical down to the `P13677`/`P248` reference.
+`modern-quickstatements/audit_duplicate_rankings.py` + `duplicate_rankings.json`.
 
-**The numbers** (`duplicate_rankings.json`):
+Raised because dedup cannot be expressed as a QuickStatement — a removal is value-matched, so it
+takes both copies, and the re-add is a separate script that can fire first under the random run
+order. **Emma's call: leave them.** They are untidy, not wrong.
 
-- `P13723` overall: **16,995 statements across 8,188 items**.
-- **988 duplicate groups across 917 items** — 11% of the population.
-- **Every group is exactly ×2.** No item has three copies.
-- By ranking value: `Q135160342` 706 · `Q135160338` 200 · `Q135009132` 40 · `Q135009152` 21 ·
-  `Q135009205` 9 · `Q135009157` 9 · `Q135009221` 2 · `Q134917284` 1.
-
-**The copies are byte-identical** — same value, same `P459 → Q135009120` qualifier, same single
-reference (`P13677` + `P248 → Q135159299`). Checked on `Q135039025` and `Q135041321`.
-
-**Cause not established, and the decision does not depend on it.** Two theories are already dead:
-it is not the generator's "additional reference groups become separate lines" branch, because the
-references are identical; and it is not two source claims per item, because
-`migrate_ritsuryo_funding_remove.txt` holds `P31` only and lists each of these items once. A
-double-submitted batch fits the evidence but is not proven.
-
-**⛔ The reason this stops here: it cannot be expressed as a QuickStatement.** A removal line is
-VALUE-MATCHED, so `-Q…|P13723|Q…` takes *both* copies; re-adding one afterwards is a second script
-that could fire before the removal under the random run order and lose the statement outright. The
-add-first/remove-later rule exists precisely because that ordering is not controllable, and dedup
-needs remove-first, which inverts it. Per `CLAUDE.md` — *"If something genuinely cannot be
-expressed as a QuickStatement, STOP and raise it with Emma"* — raised via AskUserQuestion.
-
-- **Nothing is staged and nothing should be** until she answers.
-- Worth stating plainly: the duplicates are untidy, not wrong. No fact is lost or misstated by
-  them, so "leave them" costs nothing but tidiness, while a 917-item remove-then-re-add costs real
-  data if the race lands badly.
+- **Do not re-open this and do not stage a dedup.** If a later tick rediscovers the duplication, it
+  is finding a known and decided thing, not a new defect.
+- The audit script stays so the number is re-measurable without another investigation.
 
 ## A-KANA. ▶ kana-from-jawiki, FULL BUILD — Emma's call 2026-08-23; guessing is wired, draining is not
 
