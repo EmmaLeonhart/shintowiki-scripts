@@ -65,20 +65,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
   # ═══════ that section — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-- **✅ CLOSED 2026-08-24 by Emma: leave them. Measurement kept, nothing staged.**
-
-  Measured: **988 duplicate `P13723` groups across 917 items**, out of 16,995 statements on 8,188
-  items — 11%, every group exactly ×2, byte-identical down to the `P13677`/`P248` reference.
-  `modern-quickstatements/audit_duplicate_rankings.py` + `duplicate_rankings.json`.
-
-  Raised because dedup cannot be expressed as a QuickStatement — a removal is value-matched, so it
-  takes both copies, and the re-add is a separate script that can fire first under the random run
-  order. **Emma's call: leave them.** They are untidy, not wrong.
-
-  - **Do not re-open this and do not stage a dedup.** If a later tick rediscovers the duplication, it
-    is finding a known and decided thing, not a new defect.
-  - The audit script stays so the number is re-measurable without another investigation.
-
 - **▶ Kana supply REBUILT 2026-08-24 on Emma's instruction — 58 work-files, and the queue rebuilt to match**
 
   She chose "build all 58", which under the English-label rule is the entire remaining population.
@@ -187,40 +173,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
   Every other job in the run is green. `secrets: inherit` and the 69 unbootstrapped imports are
   done; nothing further to check there.
-
-- **✅ The Sunday story was WRONG on every count — measured by a forced run 2026-08-24**
-
-  Emma: *"can you test the goddamn crons… I don't know why there's anything Sunday-blocking it,
-  because the actual Mirahaze wiki is up."* Both instincts right. Tested with a new `force_weekly`
-  dispatch input rather than waiting for a Sunday.
-
-  **Run `32765835777`: the full path INCLUDING both weekly steps finished in 41.8 minutes** against
-  a 150-minute limit. There is no Sunday overrun.
-
-  Three claims we had written down, each wrong, each built on the last:
-  - *"The Sunday path does not fit in 75 minutes."* Both Sunday runs died at 75m14s, but the whole
-    path takes ~42 including them.
-  - *"The 150 was live for 08-23 and it still cancelled."* Mine, and false: the raise landed
-    2026-08-23T10:15Z, **seven hours after** that run started. I compared a local timestamp
-    (`03:15-07:00`) against a UTC one.
-  - *"They are SPARQL-heavy, ~30-40 min each."* Forced, they took **80s and 161s**.
-
-  **The real cause of the stale file, and it is a different fault entirely:** both generators
-  **bail on HTTP 429 from WDQS**, and `continue-on-error: true` then reports the step **green**. The
-  job succeeds, the file silently does not regenerate. `description_label_pairs.txt` has not moved
-  since 2026-08-02 with three Sundays in between and nothing ever looking wrong.
-
-  The bail is correct — 429 means stop, per standing policy. What was wrong is that a bail and a
-  refresh were indistinguishable from outside. Both steps now emit a `::warning` annotation naming
-  the file that was not regenerated; `continue-on-error` stays, because a rate-limited weekly
-  refresh must not fail the daily job.
-
-  - ▶ **Re-dispatched 21:04:59Z as run `32777524826`**, after ~84 minutes with no SPARQL from this
-    session — the first forced run was itself rate-limited, partly by three audits I had run
-    earlier the same day. Commits at the end, so ~21:47Z.
-    - The check is whether `description_label_pairs.txt` moves off **5** `Did` lines against 3,514
-      `Duk`. If it does not, look for the new `::warning title=Weekly refresh did not run`
-      annotation on the run — that now says so explicitly instead of passing silently.
 
 - **🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining**
 
@@ -561,33 +513,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     prefectural scraper?) once the drip resumes and the real gap is measurable.
   - 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
 
-- **✅ Husk guard — DONE and self-sweeping; kept because CI keeps re-emitting the lines**
-
-  - ⛔ **HUSK GUARD (2026-08-04).** Ten staged QuickStatements across five atomic files targeted the
-    ブルーノ・プラス-repurposed items — including `Q123044569|Len|"Ōmiwa Shrine"`, which would have put
-    an English label on the repurposed identity. They arrived honestly: the husk now IS the 大美和神社 /
-    近殿神社 item on Wikidata, so any generator resolving a jawiki article to a QID by sitelink lands on
-    one. Nothing went out only because the freeze was still on. Lines stripped; the durable guard is a
-    refusal in `direct_daily_edits.item_is_editable()` — the single road to Wikidata — not in each
-    generator, because the next generator written would miss it.
-    `tests/test_repurposed_husks_never_edited.py` asserts both the gate and that no atomic file stages
-    a husk edit. **Expect generators to keep re-emitting these lines on each CI regeneration; the gate
-    is what makes that harmless.**
-    - ✅ **The re-emission is now swept automatically (2026-08-05).** It happened exactly as predicted:
-      CI regeneration `2dfb736f` re-added **6** husk lines (honzon_p825 ×1, saijin_p825 ×3,
-      souken_p571 ×2) and turned that test red on `main`. Stripping by hand every regeneration is the
-      wrong shape, so `modern-quickstatements/strip_husk_lines.py` now runs as the last step before
-      the commit in `generate-quickstatements.yml`. **One chokepoint, not a filter in twenty
-      generators** — the same reasoning A5 used to put the refusal in `item_is_editable()`.
-    - It imports `REPURPOSED` from `direct_daily_edits` rather than copying it, so the sweep and the
-      refusal can never disagree about what a husk is. Deliberately **not** `continue-on-error`: if
-      the step cannot run, the lines stay staged and the test stays red, which is the visible failure.
-    - 9 tests, and most of them pin what it must **not** delete — a husk QID appearing as a *value*
-      (`Q42|P612|<husk>`) is a statement about another item, `Q1234560` must not match husk `Q123456`,
-      and a `-Qxxx` removal line's dash is the command rather than part of the QID. An over-eager
-      strip would quietly delete real staged work in files too large for anyone to notice.
-
-
 - **Repurposed-item damage — Emma's THREE per-item rulings, promoted out of the doc**
 
   **Corrected 2026-08-19.** The queue carried this as one line saying *"document, don't touch; no
@@ -802,38 +727,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     different name. Folded into the Kokugakuin/orphan work rather than kept as a duplicate-statement
     class, so the same shrines are not walked twice.
 
-- **✅ Wiki-based queue — RESTORED 2026-08-19. Nothing open.**
-
-  Emma decided *restore it* when asked directly, settling her July *"not 100% sure"*.
-
-  **What it actually was, and why the rebuild was small:** the "wiki-based queue" was never a separate
-  page — it was a **section of [[Open questions]]**, and this session's own 44% trim deleted it earlier
-  the same day. Every item it held was genuinely settled (the 403, the Q137721156 deity analysis, the
-  reports-on-the-page request, the page's bloat, un-parking), so deleting the *items* was right.
-  Deleting the **surface** was not: it removed the place Emma writes wiki-side work.
-
-  Restored as an empty section carrying only what it is for and how it round-trips. No second pipeline
-  was built — it rides the existing `[[Category:Git synced pages]]` sync, which is the hub's standing
-  rule and which has round-tripped this page several times today.
-
-  **The mirror-or-that section question is moot** and is deleted rather than left open: since it is a section of
-  a page Emma writes in, it mirrors nothing. Copying 942 lines of `queue.md` onto a wiki page was never
-  what she used it for.
-
-- **Swept and closed on 2026-08-19 — no action, recorded so they are not re-raised**
-
-  - **Sequential misc** — settled. Emma: *"I can confirm that I'm perfectly fine with this thing"*;
-    design question answered *"sequential only"*. Built, 14 tests, ships empty.
-  - **Province exclusions** — settled as ADD-ONLY, standing rule. *"you should never be removing
-    anything from the provinces."* The removal generator was deleted outright.
-  - **Takano address merge** — Emma: *"I can confirm this is good. (resolved — safe to delete on the
-    next pass.)"* Verified gone from Q11673131. **Her explicit permission to prune it from the page.**
-  - **Reports on the page** — Emma: *"Went great."*
-  - **Un-parking the parked items** — Emma: *"We will do this when needed."* Not now, by her words.
-  - **Queue bloat on the wiki** — Emma: *"Not sure about this one."* No disposition; left alone.
-  - **"Edits being rejected"** — self-closing, as she said: *"this one is kind of tautological because
-    in the event that this does get resolved, it's not going to be here anymore."* It is resolved.
-
 - **OUT-OF-SCOPE until the category drain is measured too slow — speed-up *("the category thing")***
 
   A POSSIBLE future optimization to make wiki category-page processing faster (skip some ops on ~3k
@@ -994,23 +887,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   Wikidata; it returned 504. All three are now scoped to `wdt:P31 wd:Q845945` and the script backs
   off 15/45/135s on 503/504 rather than retrying tightly.
 
-- **▶ Metabolised off the wiki-based queue 2026-08-24**
-
-  Emma's item, verbatim: *"Investigate Izumo entry 39 to see what is going on with it as per open
-  questions"*.
-
-  Run against `Q135040786` this tick. The merge added 5 statements and removed none: `P361` at ordinal
-  **39** with the 38/40 sequence, both ronsha `P460`s, `P31 → Q135038714`, and `P6375 → 同上`.
-
-  **Two claims this page had been making at her are now corrected on it.** The national ordinal
-  **2264** was NOT on the item at merge time — the `P1545` qualifier went on **2025-12-21** and the
-  "2264th Shrine" English description on **2026-01-10**, five months before the merge. So un-merging
-  does not restore it, and the page had been telling her it would. That mattered because it is
-  briefing a manual action.
-
-  - The fix is one API edit, blocked only by the lockout — see the Izumo item above.
-  - [ ] If she wants 2264 back it is a separate edit; it is staged nowhere.
-
 - **▶ Kana from the English label, by name-mate majority — Emma's method, 2026-08-24. REPORTED, not built.**
 
   Her refinement of the English-label rule. The rule itself is unchanged — an English label ends an
@@ -1040,50 +916,41 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     香取神社/Katori ×77, 白山神社/Hakusan ×59.
   - ⚠ Nothing staged, no generator written. This is the report she asked for, not a pipeline.
 
-- **▶ Kana review page — metabolised off the wiki-based queue 2026-08-24**
+- **✅ ANSWERED 2026-08-24: yes, the katakana ARE removed properly. The pipeline is fully wired.**
 
-  Her item, verbatim: *"MAke the requested github pages page. In fact do so and then run it and once
-  you confirm it is up use command line to force open it in my browser."* Prompted by
-  *"you made weird ass unreadable github json"* — `en_label_without_kana.json` is a machine artefact
-  and she has to read it to rule on the pairs.
+  Emma asked because she was *"not 100% sure the degree it is happening correctly"*, and 590 kana
+  values rest on the answer. Investigated read-only.
 
-  - ✅ `modern-quickstatements/generate_kana_review_page.py` → `_site/kana-review.html`, wired into
-    `generate-pages.yml` (build step + the copy into the published site). 51 disagreeing pairs with
-    their FULL vote, 160 unanimous ones, and the NTA-registry warning at the top.
-  - The full vote is the point: a bare "4 distinct readings" count hides whether it is one dominant
-    reading with a two-item typo tail or a real 47/19 split. Those need opposite decisions.
-  - ✅ **Live and confirmed**: https://emmaleonhart.github.io/shintowiki-scripts/kana-review.html
-    — HTTP 200, 41KB, 211 rows, deployed by run `32783052603`. Fetched and checked for the real
-    title and the NTA warning before opening it, rather than assuming the deploy meant the page.
-    Force-opened from the command line.
+  **It works, and live data proves it.** Sampled five items from `kana_qualifier_add.txt` and checked
+  their current state: on all five the katakana has been moved onto the ojp-hani `P1448` official
+  name as a `P1814` qualifier, and the top-level `P1814` is either gone or replaced with a proper
+  modern reading.
 
-- **▶ INVESTIGATE: are the katakana readings actually being removed by the pipeline? — Emma, 2026-08-24**
+  | item | ojp-hani name | its qualifier | top-level now |
+  |---|---|---|---|
+  | `Q104061132` | 神谷神社 | カムタニノ | gone |
+  | `Q100464312` | 仲神社 | ナカノ | gone |
+  | `Q100551246` | 多久神社 | タクノ | gone |
+  | `Q10896675` | 出雲神社 | イツモノ | いずもだいじんぐう |
+  | `Q10877366` | 丹生川上神社 | ニフノカハカミノ | にうかわかみじんじゃかみしゃ |
 
-  Her instruction, verbatim: *"Anything that's in the katakana should be removed by our pipeline.
-  I'm not sure if it's doing that and you should probably investigate that afterwards. Add it into
-  the queue that you're gonna do an investigation on whether the katakana are actually removed
-  properly as part of our pipeline."*
+  **Every part of the chain is connected**, contrary to my first pass — I grepped for the wrong
+  filename and briefly concluded the removals were unregistered. They are not:
+  - `generate_kana_qualifier_remove.py` runs in `generate-quickstatements.yml` every build.
+  - It writes **`kana_redundant_remove.txt`** (not `kana_qualifier_remove.txt`), which exists at 252
+    lines and was regenerated by today's runs.
+  - That file **is** registered in `ATOMIC_FILES` in both `direct_daily_edits.py` and
+    `submit_daily_batch.py`.
+  - Its design is careful: a removal is only emitted where a fresh SPARQL query confirms the
+    カミノヤシロ qualifier already landed, and the top-level removal is held until *every* ojp-hani
+    name on the item carries one — so a multi-name shrine cannot be stranded by random run order.
 
-  This is load-bearing for every kana ruling she gave today. The standing disposition for a katakana
-  reading is **preserve it, the pipeline will relocate it onto the ojp-hani official name and then
-  supply the proper reading**. If that is not actually happening, then "preserve" means "leave broken
-  data in place indefinitely" and several rulings would need revisiting.
+  **The one thing actually stopping it is delivery.** 252 removals are staged and 4,965 adds, but the
+  newest submission report is **2026-07-28** — nothing has reached Wikidata since, because of the
+  lockout to 2026-09-18. So the pipeline is not broken, it is dammed.
 
-  She has already said she is *"not 100% sure the degree it is happening correctly"*.
-
-  - **The population is 590** — `P1814` values on shrines carrying the truncation signature (leading
-    or trailing hyphen, or ending in ノ). Measured 2026-08-24.
-  - [ ] What `generate_kana_qualifier_add.py` / `generate_kana_qualifier_remove.py` actually do, and
-    whether the remove half has ever run. `kana_qualifier_add.txt` exists in
-    `modern-quickstatements/`; check whether a REMOVE file exists at all.
-  - [ ] Whether any katakana reading has in fact been relocated — pick items known to be in the add
-    file and check their live state for an ojp-hani `P1448` plus the absence of the top-level
-    katakana `P1814`.
-  - [ ] The remove half is SPARQL-gated on the add having landed. With the Wikidata lockout running
-    to 2026-09-18, nothing has been delivered since 2026-07-28 — so the honest answer may be "it
-    cannot have run", which is still the answer.
-  - ⚠ Do not "fix" the katakana while this is open. Removing them early loses the reading before it
-    reaches the official name, which is the whole reason she wants them left alone.
+  - ▶ Consequence for her rulings: "preserve the katakana, the pipeline will handle it" is sound. It
+    will resume on its own when the lockout lifts; no intervention is needed and none should be made.
 
 - **Pinned tail (keep last)**
 
