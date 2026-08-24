@@ -80,6 +80,28 @@ https://www.wikidata.org/wiki/Q135041321 has P31 [https://www.wikidata.org/wiki/
 : '''On "is it still running or is it just over"''' — the classification is a 927 ''Engishiki'' register annotation, not a live practice; the imperial 幣帛 distribution it records lapsed centuries ago. But that is not why it is being removed. It is being removed because it was recorded on the wrong property, and the historical fact is kept on the right one.
 : ⚠ '''While reading the item I found a separate defect: its migrated statements are DUPLICATED.''' It carries ''shrine ranking → 月次新嘗'' '''twice''' and ''shrine ranking → [[d:Q135160338|Q135160338]]'' '''twice''', each pair identical down to the qualifier. Not staged for anything. Queued as its own item — the question is whether the duplication is item-local or systemic across the migration's ~4,800 items, and that is a measurement, not a guess.
 
+=== Kana for shrines that already have an English label — the report you asked for ===
+
+Your rule stands: an English label ends an item, and no reading gets ''reasoned'' out of an article for one. This is about the review you said you were open to, and the method you named — take the English label, find other shrines sharing it that DO have a reading, use the most common one. Measured on the '''(kanji, English)''' pair rather than the English alone, since you said the kanji plus the label is almost certainly right for common names.
+
+'''The population''' ([https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/report_en_label_without_kana.py report_en_label_without_kana.py] → [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/en_label_without_kana.json en_label_without_kana.json]):
+
+* '''16,692''' shrines have an English label and '''no''' name in kana, across '''10,682''' distinct (kanji, English) pairs.
+* '''9,743''' of them sit on a pair where at least two name-mates already carry a reading — so a majority could fill them.
+* '''6,949''' have no name-mate to learn from at all. Those are the rare tail.
+
+'''Your instinct about repetition holds, and the "conflicts" are mostly not conflicts.''' The pairs where readings disagree are one dominant reading plus a very short tail:
+
+* 諏訪神社 / Suwa Shrine — すわじんじゃ '''×260''', then すわじん'''し'''ゃ ×11, ツノサリ- ×1, イハテワケノ- ×1
+* 八幡神社 / Hachiman Shrine — はちまんじんじゃ '''×244''', then はちまんじんしゃ ×4, やはたじんじゃ ×2, はちまん ×1, ヒハメノ- ×1
+* 春日神社 / Kasuga Shrine — かすがじんじゃ '''×68''', then -トヨタマヒメノ ×1, ヲサタ- ×1, ウネヒノ- ×1
+
+The tail is two things and neither is a rival reading: '''typos''' (じん'''し'''ゃ for じんじゃ, しん'''ん'''めいぐう, a stray space) and '''ancient katakana''' — ツノサリ-, ヒハメノ-, -トヨタマヒメノ. Which is your point about Engishiki convention, and better: those katakana are the population the existing kana-qualifier cleanup is already moving onto the ojp-hani name, so they stop appearing as disagreements once it drains.
+
+: '''→''' Nothing built and nothing staged — this is the report, not a pipeline. What it needs from you before anything runs is the '''threshold''': how many agreeing name-mates make a reading safe to copy, and whether a lone dissenter is simply ignored.
+: '''→''' 八坂神社/Yasaka ×89, 香取神社/Katori ×77, 白山神社/Hakusan ×59 are unanimous with no tail at all — the safe end, if you want a first slice that is obviously uncontroversial.
+: '''→''' The 6,949 with no name-mate are where I would bring you individual pairs rather than guess.
+
 == Wiki-based queue ==
 
 Anything you want done on the wiki side — write it here rather than in the repo.

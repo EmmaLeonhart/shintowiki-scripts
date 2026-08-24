@@ -1010,6 +1010,35 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   - The fix is one API edit, blocked only by the lockout — see the Izumo item above.
   - [ ] If she wants 2264 back it is a separate edit; it is staged nowhere.
 
+- **▶ Kana from the English label, by name-mate majority — Emma's method, 2026-08-24. REPORTED, not built.**
+
+  Her refinement of the English-label rule. The rule itself is unchanged — an English label ends an
+  item and no reading is *reasoned* out of an article for one — but she is open to reviewing that
+  population, and named the method: *"takes the English-language label, compares it with other
+  things that have the same English-language label and have a name in kana, finds the most common
+  name in kana, and then applies that one."* Rationale: *"highly repeated names are going to be ones
+  that don't carry errors."* And the unit is the **(kanji, English) pair**, not the English alone —
+  *"the kanji plus the English language label is almost certainly going to be the case for very
+  common names."*
+
+  `report_en_label_without_kana.py` + `en_label_without_kana.json`:
+  - **16,692** shrines have an English label and no kana, across **10,682** (kanji, English) pairs.
+  - **9,743** sit on a pair with ≥2 name-mates already carrying a reading.
+  - **6,949** have no name-mate at all — the rare tail she offered to answer pair-by-pair.
+
+  **Her Engishiki caveat is confirmed by the data and is stronger than stated.** Disagreeing pairs
+  are one dominant reading plus a short tail, and the tail is never a rival reading: it is *typos*
+  (すわじんしゃ ×11 against すわじんじゃ ×260; しんんめいぐう; a stray space) or *ancient katakana*
+  (ツノサリ-, ヒハメノ-, -トヨタマヒメノ). Those katakana are the population the existing
+  kana-qualifier cleanup already relocates onto the ojp-hani `P1448`, so they stop reading as
+  conflicts once it drains.
+
+  - NEEDS-DECISION before anything is built: the **threshold** — how many agreeing name-mates make a
+    reading safe to copy, and whether a single dissenter is simply ignored. Asked on the page.
+  - Unanimous with no tail at all, if a safe first slice is wanted: 八坂神社/Yasaka ×89,
+    香取神社/Katori ×77, 白山神社/Hakusan ×59.
+  - ⚠ Nothing staged, no generator written. This is the report she asked for, not a pipeline.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the five session-local crons are running (this session 2026-08-05: work-loop bd4cf062
