@@ -25,6 +25,7 @@ import sys
 from datetime import datetime, timezone
 
 ATOMIC_FILES = [
+    "tenjinsha_en_labels.txt",                # 天神社 English labels derived from the item's OWN reading — Emma 2026-08-24: てんじんしゃ -> "Tenjin-sha", てんじんじゃ -> "Tenjin Shrine". A deliberate special case: kana_english.label_for matches the longest kanji suffix first, so on 天神社 it strips 神社 and yields the stem てん ("Ten Shrine"), when the real split is 天神 + 社 — jawiki gives the reading as てんじん-しゃ. Both readings are heavily NTA-registry-sourced (44/47 and 11/19), so neither is wrong and the label follows whichever the item carries. Adds NO kana: the ~167 天神社 with no reading get nothing. Generator modern-quickstatements/generate_tenjinsha_en_labels.py, re-runs each build so a corrected reading legitimately moves the label. LABEL-only.
     "modern_shrine_ranking_qualifiers.txt",   # Phase 1: add P459 to existing P13723
     "p4656_jawiki_references.txt",            # Add P4656 ja.wiki references to modern P13723
     "p958_qualifiers.txt",                    # Add P958 section qualifiers to P13677

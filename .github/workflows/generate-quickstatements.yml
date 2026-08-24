@@ -149,6 +149,14 @@ jobs:
         continue-on-error: true
         run: python select_label_proposals.py
 
+      # 天神社 English labels from each item's own reading — a deliberate special case;
+      # see the ATOMIC_FILES note in direct_daily_edits.py for why it is not a fix to
+      # kana_english.label_for. Re-runs every build so a corrected reading moves the label.
+      - name: Generate 天神社 English labels from their readings
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_tenjinsha_en_labels.py
+
       - name: Generate kana-qualifier ADD QuickStatements (カミノヤシロ)
         working-directory: modern-quickstatements
         continue-on-error: true
