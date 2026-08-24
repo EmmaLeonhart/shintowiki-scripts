@@ -231,3 +231,41 @@ because every katakana ruling today rests on it.
 - **Old Japanese katakana readings** (`ツノサリ-`, `-トヨタマヒメノ`) → preserve for the pipeline.
 - **A modern reading merely typed in katakana** (`カスガジンジャ`, `Q135935015`) → *"this one in
   katakana is just an error"*. Not the pipeline's; fix it.
+
+
+## A wrong reading takes every non-Japanese label with it — `Q97162781`, 2026-08-24
+
+Emma, looking at it: *"all non-Japanese names are wrong"*, then *"name in Kana is wrong too for
+that one"*. Both true, and the second causes the first.
+
+[`Q97162781`](https://www.wikidata.org/wiki/Q97162781) is **若林八幡宮**, which reads
+**わかばやしはちまんぐう**. What it actually carries:
+
+| lang | value | |
+|---|---|---|
+| ja | 若林八幡宮 | ✅ the only correct field |
+| `P1814` | ほむたわけのみこと | ❌ the enshrined deity, not the shrine |
+| en | Homutawakenomikoto | ❌ romanised from the bad reading |
+| fr | sanctuaire d'Homutawakenomikoto | ❌ |
+| id | Kuil Homutawakenomikoto | ❌ |
+
+**The cascade is the point.** The reading is the root, and every other language was generated from
+it, so one bad `P1814` produced three bad labels. **Fixing the reading alone leaves the item wrong
+in three languages** — the labels have to be regenerated from the corrected reading. Any repair pass
+that touches `P1814` has to say what happens to the derived labels.
+
+It also earns its fix cleanly: that reading carries **no references at all**, so the uncited rule
+applies without touching the NTA question.
+
+### The deity signature is nearly useless as a selector — 2 of its 3 hits are correct
+
+Searching for readings ending in のみこと / のかみ / ノカミ found **3** items, and **two are right**:
+
+- `Q17211756` 御酒殿**神** → みさかどのの**かみ** — the shrine is literally named 〜神
+- `Q6543779` 四至**神** → ミヤノメグリノ**カミ** — same
+- `Q97162781` 若林八幡**宮** → ほむたわけのみこと — **the only real defect**
+
+A deity-shaped reading is only suspicious when the item's own name does **not** end in 神. Third
+selector today to report correct data as broken by not knowing the domain — after the shrine-word
+list that did not know やしろ, and the mismatch detector that did not know jawiki's disambiguation
+convention.
