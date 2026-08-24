@@ -337,3 +337,41 @@ designed and inheriting a bad source. **Change the reading to ほそかわじん
 ⚠ Worth noting for the name-in-kana programme generally: the jawiki lead is the *source* for that
 whole pipeline, so a typo there enters as a well-formed, apparently-sourced answer. `S143`/`S4656`
 would cite jawiki for it accurately. There is no defence against this except someone noticing.
+
+
+## ⭐⭐ WHERE THIS LANDED — Emma, 2026-08-24, closing the session
+
+> *"I am not actually telling you to do any kind of corrections, any kind of systematic
+> corrections, except for the fact that the one that's extremely common, JINSHA, should be treated
+> as just Shrine."*
+
+**Read that as the governing instruction: NO correction pass is authorised.** Everything above is a
+record of what is true and what she has ruled — it is not a work order. Nothing is staged, no
+generator has been written, and none should be without her saying so.
+
+**1. The omissions are legally binding too.** *"a lot of the ones without shrine in them also have
+legally binding things. So I think this is basically all the case."* Confirmed by the data — all six
+genuine omissions (`はちまん`, `おおやまずみ`, `きさき`, `かつらぎいなり`, `ちかつ`, `かしま`) are
+NTA-sourced. So the omission bucket is not a separate class of error after all; it falls under the
+same preserve-the-registered-form rule as everything else.
+
+**2. `じんしゃ` is just "shrine".** Her one named exception. `社` legitimately reads `しゃ`, so
+`じんしゃ` is not a misspelling of `じんじゃ` — it is a reading of the same word, and it should be
+understood as "shrine" wherever it appears. ⚠ **She did not say to rewrite them**, and given the
+sentence it sits in, this reads as how to *interpret* the value rather than a licence to normalise
+588+ statements. Not acted on.
+
+**3. No spaces in kana names. Ever.** Said twice, emphatically. Not a judgement about which reading
+is right — a kana reading of a shrine name does not contain a space. The five known:
+`イハタノ イシタ` on `Q135068851` / `Q135068853` / `Q135270104`, `ヲチカハノ オチカハ`
+(`Q135038757`), `アナフキノ フエフキ` (`Q135038817`).
+
+**4. The generation method is settled.** *"the way that we properly generate the KANA... was the way
+that we properly generate the KANA from the name pairs of English and Japanese."* The
+**(kanji, English) pair** with a name-mate majority is the method. 16,692 items lack a reading;
+9,743 sit on a pair with agreeing name-mates.
+
+**5. `天神社` is NOT decided.** *"the Tenjinsha vs Tenjinja is not 100% decided."* Left open
+deliberately. What is established: jawiki gives てんじんしゃ and does not list てんじんじゃ; both
+readings are heavily NTA-sourced (44/47 and 11/19); the uniform English label came from one
+QuickStatements batch and carries no per-item information. **Do not fill the 167 blanks on that pair.**
