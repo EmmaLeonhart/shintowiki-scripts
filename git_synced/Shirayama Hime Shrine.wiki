@@ -13,11 +13,11 @@
 | coordinates = {{coord|36.434886|136.635835}}
 | map_relief = 1
 | religious_affiliation = [[Shinto]]
-| deity = {{ill|Kikurihime|lt=Kikurihime|en|Kikurihime|ja|菊理媛神|mni|ꯀꯨꯀꯨꯔꯤꯍꯤꯃꯦ|zh|菊理媛命|qid=Q11619891}}
+| deity = {{ill|Kikurihime|it|Kukurihime|ja|菊理媛神|mni|ꯀꯨꯀꯨꯔꯤꯍꯤꯃꯦ|zh|菊理媛命|qid=Q11619891|lt=Kikurihime}}
 | website = {{Official website|http://www.shirayama.or.jp}}
 }}
 
-{{nihongo|'''Shirayama Hime Shrine'''|白山比咩神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Kaga Province]].
+{{nihongo|'''Shirayama Hime Shrine'''|白山比咩神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Engishiki Jinmyōchō}}. It is located in {{ill|Kaga Province|cs|Provincie Kaga|de|Provinz Kaga|eo|Provinco Kaga|es|Provincia de Kaga|fa|ولایت کاگا|fi|Kagan provinssi|fr|Province de Kaga|gl|Provincia de Kaga|id|Provinsi Kaga|it|Kaga (provincia)|ja|加賀国|ko|가가국|lt|Kagos provincija|nl|Kaga (provincie)|pt|Província de Kaga|ru|Кага (провинция)|simple|Kaga Province|sk|Kaga (provincia)|sr|Провинција Кага|tr|Kaga (vilayet)|uk|Провінція Каґа|zh|加賀國|zh_min_nan|Kaga-kok|zh_yue|加賀國|qid=Q907469|lt=Kaga Province}}.
 
 ==References==
 
@@ -26,10 +26,9 @@
 {{commons category|Shirayamahime-jinja}}
 [[EN:Shirayama Hime Shrine]]
 [[FR:Shirayama Hime-jinja]]
-[[ja:白山比咩神社]]
 [[ZH:白山比咩神社]]
 
-{{wikidata link|Q704702|co|commons:Category:Shirayamahime-jinja|en|Shirayama Hime Shrine|fr|Shirayama Hime-jinja|ja|白山比咩神社|zh|白山比咩神社|abstract|Q704702|check_date=2026-05-25}}
+{{wikidata link|Q704702|abstract|Q704702|en|Shirayama Hime Shrine|fr|Shirayama Hime-jinja|ja|白山比咩神社|zh|白山比咩神社|grok=shirayama_hime_shrine|check_date=2026-08-24}}
 
 {{translated page|ja|白山比咩神社|version=107482066|comment=Imported full ja history}}== Japanese content ==
 {{otheruses|Shirayamahime Shrine in Hakusan City, Ishikawa Prefecture|Other Shirayamahime Shrines|Shirayamahime Shrine (disambiguation)}}

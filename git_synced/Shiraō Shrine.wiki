@@ -11,10 +11,11 @@
 
 {{translated page|ja|白皇神社|version=41195344|comment=Imported full ja history}}
 
-{{wikidata link|Q11580106|ja|白皇神社|check_date=2026-05-25}}
+{{wikidata link|Q11580106|ja|白皇神社|grok=none|check_date=2026-05-25}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:git synced pages]]
 [[Category:git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
