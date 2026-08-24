@@ -199,3 +199,35 @@ reading does not end in any shrine-word reading. **9 are NTA-sourced.**
   of the name at all.
 - NEEDS-DECISION on the wrong-value ones — `スサノオ` on 一之宮神社 is a deity in a reading field,
   which is a different defect worth its own look.
+
+
+## Spaces, shrine words, and katakana — Emma, 2026-08-24 (closing the collision)
+
+> *"you need a gazillion different shrine words there but really anything with us there shouldn't be
+> a space in it. Anything that's in the katakana should be removed by our pipeline."*
+
+**Spaces: there is no case where a reading contains one.** Not a judgement about which reading is
+right — a kana reading of a shrine name simply has no space in it. So the earlier collision between
+"correct the spaced ones" and "preserve the katakana ones" was not a collision at all: **remove the
+space, and the value still goes to the pipeline as katakana.** Both rules apply to the same item and
+they do not conflict.
+
+Five items carry one, three of them the same value: `イハタノ イシタ` on three separate 石田神社
+(`Q135068851`, `Q135068853`, `Q135270104`), plus `ヲチカハノ オチカハ` (`Q135038757`) and
+`アナフキノ フエフキ` (`Q135038817`). She had seen "only two such ones" — that is 3 distinct patterns.
+
+**Shrine words: my selector was far too narrow, and it produced false positives on correct data.**
+It knew じんじゃ / じんしゃ / じんぐう / たいしゃ / ぐう / しゃ / みや and nothing else, so it
+flagged six items whose readings end in **やしろ** — which IS 社 — including **出雲大社 →
+いずもおおやしろ**, which is simply correct. Any future selector needs the full set: やしろ, みや,
+ぐう, じんぐう, たいしゃ, おおやしろ, かみのやしろ, the historical じんじや / しや forms, and the
+katakana equivalents.
+
+**Katakana: preserve, and the pipeline is supposed to remove them over time** — *"they need to be
+removed by the right part of the timeline"*. Whether it actually does is now its own queue item,
+because every katakana ruling today rests on it.
+
+⚠ **This splits the katakana rule in two, and both halves are hers:**
+- **Old Japanese katakana readings** (`ツノサリ-`, `-トヨタマヒメノ`) → preserve for the pipeline.
+- **A modern reading merely typed in katakana** (`カスガジンジャ`, `Q135935015`) → *"this one in
+  katakana is just an error"*. Not the pipeline's; fix it.

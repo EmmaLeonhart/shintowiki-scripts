@@ -1057,6 +1057,34 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     title and the NTA warning before opening it, rather than assuming the deploy meant the page.
     Force-opened from the command line.
 
+- **▶ INVESTIGATE: are the katakana readings actually being removed by the pipeline? — Emma, 2026-08-24**
+
+  Her instruction, verbatim: *"Anything that's in the katakana should be removed by our pipeline.
+  I'm not sure if it's doing that and you should probably investigate that afterwards. Add it into
+  the queue that you're gonna do an investigation on whether the katakana are actually removed
+  properly as part of our pipeline."*
+
+  This is load-bearing for every kana ruling she gave today. The standing disposition for a katakana
+  reading is **preserve it, the pipeline will relocate it onto the ojp-hani official name and then
+  supply the proper reading**. If that is not actually happening, then "preserve" means "leave broken
+  data in place indefinitely" and several rulings would need revisiting.
+
+  She has already said she is *"not 100% sure the degree it is happening correctly"*.
+
+  - **The population is 590** — `P1814` values on shrines carrying the truncation signature (leading
+    or trailing hyphen, or ending in ノ). Measured 2026-08-24.
+  - [ ] What `generate_kana_qualifier_add.py` / `generate_kana_qualifier_remove.py` actually do, and
+    whether the remove half has ever run. `kana_qualifier_add.txt` exists in
+    `modern-quickstatements/`; check whether a REMOVE file exists at all.
+  - [ ] Whether any katakana reading has in fact been relocated — pick items known to be in the add
+    file and check their live state for an ojp-hani `P1448` plus the absence of the top-level
+    katakana `P1814`.
+  - [ ] The remove half is SPARQL-gated on the add having landed. With the Wikidata lockout running
+    to 2026-09-18, nothing has been delivered since 2026-07-28 — so the honest answer may be "it
+    cannot have run", which is still the answer.
+  - ⚠ Do not "fix" the katakana while this is open. Removing them early loses the reading before it
+    reaches the official name, which is the whole reason she wants them left alone.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the five session-local crons are running (this session 2026-08-05: work-loop bd4cf062
