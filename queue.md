@@ -2,9 +2,6 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
-## Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-08-24)
-
-Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
 
 ## 🚦 Wiki-editing gate — WORK-LOOP READS THIS FIRST
 <!-- WIKI_GATE: GO -->

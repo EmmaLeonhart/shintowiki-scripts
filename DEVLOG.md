@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 (later) — the scheduled-item injector fired for the first time, and it worked
+
+`67a9fc99 chore: schedule weekly Open-questions sweep into queue.md` arrived overnight from
+`weekly-open-questions-sweep.yml`. That is the mechanism Emma specified on 2026-08-20 in place of
+items sitting in the queue wearing a PARKED label — *"waiting means you write a script that injects
+it by a json into the queue or open questions at a certain date"* — and this is the first injection
+it has made. It landed as an ordinary top-of-queue block with its own `<!-- weekly-oq-sweep -->`
+marker, was worked as the tick's top item, and deleted on completion like any other queue entry.
+
+Worth recording that it works, because a scheduler nobody has seen fire is indistinguishable from
+one that is broken.
+
+### The sweep itself: two sections pruned, two kept
+
+Emma's rule for `[[Open questions]]` is that settled items are **deleted**, and leaving settled crud
+there is the thing she has been angriest about — *"it is totally fine to destroy my content."*
+
+**Pruned:**
+- *Was the wiki agent standardised?* — answered in full, ~30 bot names across 58 files, fixed
+  2026-08-19. Closed, and permanently in DEVLOG.
+- *御笏神社* — answered, including the correction that my first framing of it was the retracted
+  list-membership model. Closed.
+
+**Kept:**
+- *Ukrainian and Indonesian labels* — the fix is in, but the file only regenerates on a Sunday CI
+  run and the next is 2026-08-30. Genuinely still open, so it stays.
+- *Izumo entry 39* — live. Emma has done one of the three edits; the merge is still in place.
+
+**Nothing delivered.** The Wikidata lockout holds to 2026-09-18.
+
+---
+
 ## 2026-08-24 — Izumo entry 39: an erroneous merge, and two wrong readings of mine on the way there
 
 Emma found the cause by opening the item history: `Q135040908` was merged into `Q135040786` on
