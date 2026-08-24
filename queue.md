@@ -86,10 +86,17 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 - ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
   true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
   one because nothing downstream can distinguish it.
-- ✅ **Five tranches built and drained 2026-08-23 — 362 answered, 0 rejected, 0 pending.**
-  60 + 96 + 96 + 10 + 100. Answers in
-  `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e}.tsv`. The last tranche built a
+- ✅ **Six tranches built and drained 2026-08-23 — 462 answered, 0 rejected, 0 pending.**
+  60 + 96 + 96 + 10 + 100 + 100. Answers in
+  `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e,f}.tsv`. The last two each built a
   clean 100 with **zero skips**, which is the loop fix holding.
+- **The target set is not purely shrines, and that is correct.** Emma's 2026-08-05 rule is *"is it a
+  nameable place"*, not *"is it a shrine"*, and it has now admitted: a sea cave (`Q11488835`
+  御厨人窟), two Kumano 王子 sites one of which no longer exists (`Q11480731`, `Q11483087`), a
+  Kōyasan Shingon temple (`Q11545320` 歓喜院) and a park (`Q11548302` 水分れ公園). All have real
+  readings in their own leads. **What DOES get excluded is a different class** — people,
+  disambiguation pages, festivals, texts and organisations — and two of those reached the set anyway
+  and were answered `NO_KANA` (`Q11435648` a Muromachi text, `Q11443187` a religious organisation).
 - ✅ **The permanent skip loop is CLOSED 2026-08-23.** `Q11391058`, `Q11391059`, `Q11391060`
   (three Okazaki 八幡社) and `Q11396252` (刈田嶺神社 (七ヶ宿町)) were re-fetched and re-skipped by
   every tranche — three in a row printed an identical four — because the builder wrote no file
@@ -104,9 +111,9 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
     behaviour and the prompt, including that the old `continue` cannot come back.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
   builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **716
-  resolved, 0 pending → ~1,917 still unqueued** (`_resolved.log`: 696 KANA · 8 KATAKANA · 6 GUESS
-  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 712 lines). Keep rebuilding in
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **816
+  resolved, 0 pending → ~1,817 still unqueued** (`_resolved.log`: 796 KANA · 8 KATAKANA · 6 GUESS
+  · 4 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 812 lines). Keep rebuilding in
   tranches with
   `build_name_in_kana_queue.py --limit N`, answer locally in batches
   (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
