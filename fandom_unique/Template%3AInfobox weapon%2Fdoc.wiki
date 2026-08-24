@@ -1059,11 +1059,9 @@ Vehicle/missile specification parameters (most only available if '''is_vehicle''
 [[:en:Category:Rocketry templates|Weapon]]
 
 }}</includeonly><noinclude>
-[[Category:Independently git synced pages]][[Category:WikiProject Military history template instructions|Weapon Infobox]]
-
-[[Category:Independently git synced pages]][[Category:Weapon infobox templates| ]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:WikiProject Military history template instructions|Weapon Infobox]]
+[[Category:Weapon infobox templates| ]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
 </noinclude>
