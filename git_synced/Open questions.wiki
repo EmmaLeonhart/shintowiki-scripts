@@ -46,14 +46,8 @@ And its identity is entry '''28''', not 39 — its ancient-name statement reads 
 : Staged in <code>queue.md</code>. Nothing goes out until your lockout lifts 2026-09-18.
 :* You are being very overly verbose in explaining this and it is significantly weaker. There is a missing shrine item that needs to be created but we are unsure as to what is even on it. I think this is the actual situation
 
-==== Explanation ====
-I did find the cause. For some reason I did a merge here
-
-  https://www.wikidata.org/w/index.php?title=Q135040908&action=history so a new item needs to be created. idk what is
-
-  going on with it, I think this is an example of an erroneous merge, but the numbers are a bit strange on it.
-
-  something happened but it is not clear what happened
+Please investigate the shrine and what links to it in order to see if any errors may have been introduced by the redirect being resolved and why I originally merged it. The fact they were merged is nontrivial as to why I did it and what information may have been lost.
+Why did I merge it?
 
 === 御笏神社 — yes, it is staged, and I described it wrongly ===
 
@@ -65,6 +59,15 @@ I first said the point was that it carries repeated ordinals and the repeats are
 : Yeah this is one of the "super repeaters" which exists because of the fact that on the original jawiki article that the import came from, there were a bunch of sessha that were piped links going to the same shrine. The shrine is not even rightfully on the [[:da:Q11380552|List of Shikinaisha in Izu Province (Q11380552)]] since it is not a shikinaisha only its setsumatsusha are
 : This is to say it is not even a candidate shrine 
 :* Oh nvm looking closer it is a candidate shrine for a lot of them at least superficially but it looks like a supershrine pattern
+:* Looking at the jawiki page it is pretty clear. It is a candidate shrine itself, but it is a goshi candidate for 4 others
+:* '''佐伎多麻比咩命神社'''
+This shrine is the only one that it is truly a candidate for
+:*The rest of the shrines it is supposedly a candidate for are actually ones that have goshi merged into it. A completely solved data representation problem.
+:*As it is simply a candidate shrine, it shold not have the part of list of shikinaisha anyways so the editor should eventually remove it
+:*Its name in Kana is weird and idk if our scripts just crapped out on it or something
+
+
+Please investigate the shrine and what links to it in order to see if any errors may have been introduced by the redirect being resolved and why I originally merged it. The fact they were merged is nontrivial as to why I did it and what information may have been lost.
 
 == Wiki-based queue ==
 
@@ -77,3 +80,4 @@ Anything you want done on the wiki side — write it here rather than in the rep
 ''(your scratch space.)''
 
 [[Category:Git synced pages]]
+<references />
