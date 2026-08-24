@@ -77,51 +77,64 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   seen none of them. Dispatched the rebuild by hand: the queue now holds **58** kana items out of
   1,657. Anything that adds work-files must rebuild the queue or wait a day for it.
 
-- **▶ RESET 2026-08-24 on Emma's instruction — everything the programme produced is deleted**
+- **The 08-22 CI repair is VERIFIED. A separate, older defect remains.**
 
-  I built a comparison layer she never asked for: `subject_mismatch()` compared each item's ja label
-  against the first noun of its jawiki lead and declared the article "about a different shrine". The
-  sitelink already answers that question, and jawiki's convention is to title a disambiguated article
-  `氷川神社 (足立区千住)` while the lead opens on the bare `氷川神社`. The check read that convention
-  as a different shrine. Five of its six flags were wrong.
+  Run `32615320387` (2026-08-23) settles the first half and rediagnoses the second.
 
-  Her instruction, verbatim: *"Whatever data comes from it at all needs to be ripped out immediately,
-  and I'm totally fine with collateral damage… This includes and is not limited to, say, resetting all
-  of the proposed labels to a month ago."*
+  **✅ Both 08-22 defects are fixed, measured on the run rather than on the diff.** All four jobs
+  that were red on 08-19 → 08-22 came back green or better:
 
-  **Deleted**, not trimmed:
-  - `modern-quickstatements/name_in_kana.txt` — 1,310 staged rows, gone. Its `ATOMIC_FILES` entry
-    stays; the submitter skips a missing file.
-  - `name_in_kana/_resolved.log` (1,316) and every remaining work-file.
-  - All 11 `shinto_miraheze/local_answers/name_in_kana_*.tsv`.
-  - `modern-quickstatements/kana_en_labels.txt` reset to its 2026-07-25 state (401 → 404 lines).
-  - `subject_mismatch`, `lead_subject`, `fold_variants`, `VARIANT_KANJI`, `MISMATCH` and their test
-    file, removed from the builder.
+  | job | 08-22 | 08-23 |
+  |---|---|---|
+  | `generate-pages / build` | failure (`MIRAHEZE_EMAIL is not set`) | **success** |
+  | `generate-pages / deploy` | skipped | **success** |
+  | `cleanup / cleanup` | failure (`ModuleNotFoundError`) | **success** |
+  | `untransclude-crud-templates` | failure (`ModuleNotFoundError`) | **success** |
+  | `generate-quickstatements / generate` | failure in ~90s | **cancelled at the 75m cap** |
 
-  Nothing had been delivered — the lockout blocks every write path and the newest submission report is
-  2026-07-28 — so this was staged text only.
+  Every other job in the run is green. `secrets: inherit` and the 69 unbootstrapped imports are
+  done; nothing further to check there.
 
-  **Her spec, which is what the pipeline is supposed to be and nothing more:**
+- **Cloud-answer collectors — the routine's pace is intended. Do not optimise it.**
 
-  1. A script saves the lead section of the article into a file.
-  2. The automated cloud-Claude routine reads it and writes the kana reading into another file.
-  3. Cloud-Claude commits and pushes.
-  4. GitHub Actions deletes the saved lead from the repo.
-  5. The kana lands in the output file and the pipeline eventually applies it.
+  Emma, 2026-08-24: *"We're not trying to be fast with this project. This project is supposed to be
+  slow."* ~5 items/day is the design; the routine's job is to run unattended forever and still move
+  data. **The queue must keep work in it** — pending items are the only way to see the routine
+  working, so draining one destroys the test surface.
 
-  - ⚠ **No algorithmic search, no text comparison, no heuristic on the reading. She did not ask for
-    any, and one caused this.**
-  - **`apply_local_answers.py` is DELETED** (and its test). Added 2026-08-04 by a session because the
-    cloud routine "answers a handful of items per run", it let a session fill the ANSWER markers
-    locally instead. Emma, 2026-08-24: *"the cloud working is fundamental to this… If I wanted the
-    best answers, I would ask you locally, but I don't want the best answers. I want answers that will
-    occur when the session doesn't run."* Answer quality was never the point; running unattended is.
-    It produced 994 kana rows (deleted with the rest) and **175 label-typo rows that are still in the
-    repo** — `local_answers/label_typo_*.tsv`, not yet removed because she ordered the kana data out,
-    not those.
-  - ⭐ **SLOW IS THE DESIGN. ~5 items/day is intended behaviour, not a defect** (Emma, 2026-08-24).
-    Do not diagnose it, do not speed it up, do not route around it. See that item.
-  - ⚠ Not restarted. Nothing rebuilds until she says so.
+  ⚠ **She never complained about slowness.** This item began 2026-07-27 as a real bug — the routine
+  did its work and lost it to a 403 on push. Sessions mutated that into "it is slow, find out why",
+  which is nobody's complaint but ours. The full rule now lives in `CLAUDE.md`; it does not need
+  restating here.
+
+- **🤖 The gate itself**
+
+  - **Weekly wiki edit-test** — `weekly-wiki-edit-test.yml`, Sundays. CI attempts a REAL edit to
+    `User:EmmaBot/edit-test`. Success → unlocks for the week + marker GO; failure → 8-day lock + marker
+    WAIT. Currently held by `blackout_until: 2026-08-09`, so it makes no request at all before then.
+    Nothing to do — the Sunday test is the sole decider.
+    Audit: `docs/wiki_403_audit_2026-07-11.md`. The block is a Cloudflare zone challenge on shinto
+    (aelaki works from the same IP).
+  - **All wiki edits are stuck in the repo** — Open-questions responses committed to
+    `git_synced/Open questions.wiki`, plus every cleanup/orchestrator edit. Not fixable from CI.
+    [[reference_miraheze_antiddos_challenge]]
+
+- **OUT-OF-SCOPE until the category drain is measured too slow — speed-up *("the category thing")***
+
+  A POSSIBLE future optimization to make wiki category-page processing faster (skip some ops on ~3k
+  enwiki-junk cats, or shard the namespace). Only worth doing IF the Japanese-category-translation drain
+  proves too slow. It isn't a problem now → dormant.
+
+
+## ⛔ AFTER WIKIDATA RETURNS — 2026-09-18. Nothing here is actionable before then.
+
+Emma, 2026-08-24: *"just move all of the wikidata stuff to a section in the end of the queue of
+stuff to do only after wikidata returns and do not add anything there unless I explicitly say so,
+and the queue we can actually act on"*.
+
+**DO NOT ADD TO THIS SECTION** unless she says so explicitly. Everything above it is work that can
+be done now — the shinto.miraheze wiki gate is open, CI runs, and generation, measurement and
+investigation are all unblocked. Only *delivery to Wikidata* is held.
 
 - **▶ Izumo 28 vs 39 — the ACTUAL difference, investigated 2026-08-24 after Emma said I never had**
 
@@ -155,24 +168,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
       rule a candidate should not hold at all.
     - **Entry 38's `P361` carries two `P156` values at once** (`Q135040786`, `Q135040909`) — the
       same piled-qualifier shape measured on 御笏, and one of the 23.
-
-- **The 08-22 CI repair is VERIFIED. A separate, older defect remains.**
-
-  Run `32615320387` (2026-08-23) settles the first half and rediagnoses the second.
-
-  **✅ Both 08-22 defects are fixed, measured on the run rather than on the diff.** All four jobs
-  that were red on 08-19 → 08-22 came back green or better:
-
-  | job | 08-22 | 08-23 |
-  |---|---|---|
-  | `generate-pages / build` | failure (`MIRAHEZE_EMAIL is not set`) | **success** |
-  | `generate-pages / deploy` | skipped | **success** |
-  | `cleanup / cleanup` | failure (`ModuleNotFoundError`) | **success** |
-  | `untransclude-crud-templates` | failure (`ModuleNotFoundError`) | **success** |
-  | `generate-quickstatements / generate` | failure in ~90s | **cancelled at the 75m cap** |
-
-  Every other job in the run is green. `secrets: inherit` and the 69 unbootstrapped imports are
-  done; nothing further to check there.
 
 - **🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining**
 
@@ -339,18 +334,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   Model it on the `remote_queue.py` answer-marker + collector pattern (builder writes a work-file = lead +
   `<!-- ANSWER: -->` marker; the remote routine fills it; a `collect_*` script turns answers into QS) — same
   shape as `collect_label_typo_answers.py` / `collect_category_translations.py`.
-
-- **Cloud-answer collectors — the routine's pace is intended. Do not optimise it.**
-
-  Emma, 2026-08-24: *"We're not trying to be fast with this project. This project is supposed to be
-  slow."* ~5 items/day is the design; the routine's job is to run unattended forever and still move
-  data. **The queue must keep work in it** — pending items are the only way to see the routine
-  working, so draining one destroys the test surface.
-
-  ⚠ **She never complained about slowness.** This item began 2026-07-27 as a real bug — the routine
-  did its work and lost it to a 403 on push. Sessions mutated that into "it is slow, find out why",
-  which is nobody's complaint but ours. The full rule now lives in `CLAUDE.md`; it does not need
-  restating here.
 
 - **⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now**
 
@@ -564,18 +547,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   Everything below needs the wiki. While the blackout is on, these are not just blocked — **touching
   them means touching Miraheze, which is the exact thing the blackout exists to prevent.**
 
-- **🤖 The gate itself**
-
-  - **Weekly wiki edit-test** — `weekly-wiki-edit-test.yml`, Sundays. CI attempts a REAL edit to
-    `User:EmmaBot/edit-test`. Success → unlocks for the week + marker GO; failure → 8-day lock + marker
-    WAIT. Currently held by `blackout_until: 2026-08-09`, so it makes no request at all before then.
-    Nothing to do — the Sunday test is the sole decider.
-    Audit: `docs/wiki_403_audit_2026-07-11.md`. The block is a Cloudflare zone challenge on shinto
-    (aelaki works from the same IP).
-  - **All wiki edits are stuck in the repo** — Open-questions responses committed to
-    `git_synced/Open questions.wiki`, plus every cleanup/orchestrator edit. Not fixable from CI.
-    [[reference_miraheze_antiddos_challenge]]
-
 - **❓ DECISIONS — fire ONE at a time, in order, once the gate opens**
 
   **Standing rule: EVERY decision carries a "walk me through it first / let's chat" option.** Emma often
@@ -748,12 +719,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     asserting a list membership the list does not reciprocate, which is the orphan defect wearing a
     different name. Folded into the Kokugakuin/orphan work rather than kept as a duplicate-statement
     class, so the same shrines are not walked twice.
-
-- **OUT-OF-SCOPE until the category drain is measured too slow — speed-up *("the category thing")***
-
-  A POSSIBLE future optimization to make wiki category-page processing faster (skip some ops on ~3k
-  enwiki-junk cats, or shard the namespace). Only worth doing IF the Japanese-category-translation drain
-  proves too slow. It isn't a problem now → dormant.
 
 - **Individual QuickStatements to CORRECT wrong/missing P958 sections**
 
@@ -937,42 +902,6 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   - Unanimous with no tail at all, if a safe first slice is wanted: 八坂神社/Yasaka ×89,
     香取神社/Katori ×77, 白山神社/Hakusan ×59.
   - ⚠ Nothing staged, no generator written. This is the report she asked for, not a pipeline.
-
-- **✅ ANSWERED 2026-08-24: yes, the katakana ARE removed properly. The pipeline is fully wired.**
-
-  Emma asked because she was *"not 100% sure the degree it is happening correctly"*, and 590 kana
-  values rest on the answer. Investigated read-only.
-
-  **It works, and live data proves it.** Sampled five items from `kana_qualifier_add.txt` and checked
-  their current state: on all five the katakana has been moved onto the ojp-hani `P1448` official
-  name as a `P1814` qualifier, and the top-level `P1814` is either gone or replaced with a proper
-  modern reading.
-
-  | item | ojp-hani name | its qualifier | top-level now |
-  |---|---|---|---|
-  | `Q104061132` | 神谷神社 | カムタニノ | gone |
-  | `Q100464312` | 仲神社 | ナカノ | gone |
-  | `Q100551246` | 多久神社 | タクノ | gone |
-  | `Q10896675` | 出雲神社 | イツモノ | いずもだいじんぐう |
-  | `Q10877366` | 丹生川上神社 | ニフノカハカミノ | にうかわかみじんじゃかみしゃ |
-
-  **Every part of the chain is connected**, contrary to my first pass — I grepped for the wrong
-  filename and briefly concluded the removals were unregistered. They are not:
-  - `generate_kana_qualifier_remove.py` runs in `generate-quickstatements.yml` every build.
-  - It writes **`kana_redundant_remove.txt`** (not `kana_qualifier_remove.txt`), which exists at 252
-    lines and was regenerated by today's runs.
-  - That file **is** registered in `ATOMIC_FILES` in both `direct_daily_edits.py` and
-    `submit_daily_batch.py`.
-  - Its design is careful: a removal is only emitted where a fresh SPARQL query confirms the
-    カミノヤシロ qualifier already landed, and the top-level removal is held until *every* ojp-hani
-    name on the item carries one — so a multi-name shrine cannot be stranded by random run order.
-
-  **The one thing actually stopping it is delivery.** 252 removals are staged and 4,965 adds, but the
-  newest submission report is **2026-07-28** — nothing has reached Wikidata since, because of the
-  lockout to 2026-09-18. So the pipeline is not broken, it is dammed.
-
-  - ▶ Consequence for her rulings: "preserve the katakana, the pipeline will handle it" is sound. It
-    will resume on its own when the lockout lifts; no intervention is needed and none should be made.
 
 - **Pinned tail (keep last)**
 
