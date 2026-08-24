@@ -207,6 +207,41 @@ Local full rebuild: `!regenerateQuickStatements.bat`.
   `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`.
 * **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
 
+## ⭐ THIS PROJECT IS DELIBERATELY SLOW. Do not optimise it. (Emma, 2026-08-24)
+
+> *"We're not trying to be fast with this project. You should just fucking keep it in mind. We're
+> not trying to be fast with this project. This project is supposed to be slow."*
+
+The cloud-Claude answering routine delivers roughly **5 items per day** against queues of thousands.
+**That is intended behaviour, not a defect.** Its purpose is to run unattended, indefinitely, with
+nobody watching, and still move the data — *"it could theoretically be running basically forever and
+would not be getting any attention for running forever"* — so that eventually Wikidata just
+consistently has kana for everything. The value is that it exists and keeps going. The rate is not a
+number to improve.
+
+**⛔ A QUEUE MUST KEEP WORK IN IT.** The pending items are the only way to observe whether the
+routine works at all. A session that drains a queue to "finish" it has destroyed the test surface
+and left the routine nothing to chew on — which is worse than the queue being long.
+
+**What sessions keep doing wrong, twice in one day on 2026-08-24:**
+
+- `apply_local_answers.py` (added 2026-08-04, **deleted 2026-08-24**) let a session fill the ANSWER
+  markers locally because the routine "answers a handful of items per run… so working a queue
+  locally in batches is usually faster". It answered **994** kana items. Emma: *"If I wanted the
+  best answers, I would ask you locally, but I don't want the best answers. I want answers that will
+  occur when the session doesn't run."* Answer quality was never what she is buying.
+- Three separate notes in `queue.md` called ~5/day *"a trickle"*, *"the real defect"*, and something
+  to *"find out why"*. All three were wrong and are corrected.
+
+**So:** never measure the routine against a session on throughput; never build a faster path around
+a slow one; never call the rate a stall, a trickle or a bottleneck; never drain a queue to empty. If
+the routine is slow, that is it working. Check only that it is still alive and still landing
+answers, and then leave it alone.
+
+**This generalises past the routine.** When something here is slow — the QuickStatements drip, the
+orchestrator budgets, the multi-cycle pacing in the section below — slowness is usually load-bearing
+and deliberate. Reach for the reason before reaching for a speed-up.
+
 ## Editing pace philosophy
 
 Bot edits must satisfy three constraints **simultaneously**:

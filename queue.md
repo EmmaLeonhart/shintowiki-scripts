@@ -121,8 +121,8 @@ Nothing had been delivered — the lockout blocks every write path and the newes
   It produced 994 kana rows (deleted with the rest) and **175 label-typo rows that are still in the
   repo** — `local_answers/label_typo_*.tsv`, not yet removed because she ordered the kana data out,
   not those.
-- ▶ **The routine being slow is a thing to FIX, not to route around.** ~5 items/day against thousands
-  is the real defect and it is still undiagnosed (`A1`).
+- ⭐ **SLOW IS THE DESIGN. ~5 items/day is intended behaviour, not a defect** (Emma, 2026-08-24).
+  Do not diagnose it, do not speed it up, do not route around it. See `A1`.
 - ⚠ Not restarted. Nothing rebuilds until she says so.
 
 ## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
@@ -396,299 +396,32 @@ Model it on the `remote_queue.py` answer-marker + collector pattern (builder wri
 `<!-- ANSWER: -->` marker; the remote routine fills it; a `collect_*` script turns answers into QS) — same
 shape as `collect_label_typo_answers.py` / `collect_category_translations.py`.
 
-## A1. ▶ Cloud-answer collectors — the routine is ALIVE but delivers ~5 items/day
+## A1. ⭐ Cloud-answer collectors — SLOW IS THE POINT. Do not optimise this.
 
-**Corrected 2026-08-05: "answered NOTHING since 2026-07-28" was stale.** The routine fired again
-today (`988c2e5c`, 5 items) and all five collectors were re-run: 2 were collectable —
-`Category:奥六郡 → Category:Okurokugōri` (good), and a description for Q135289475 which
-**turned out to be destructive and has since been withdrawn** (see the overwrite guard below).
-The other three returned `resolved=0`.
-**The conclusion the old wording reached is still right, for a different reason:** ~5 items/day
-against 2,252 queue entries is ~15 months. Local batches remain the road; the routine is a trickle,
-not a stall.
-- ✅ **A prompt bug found while checking that answer, and it contradicted itself.** The TASK text
-  said descriptions take a "lowercase start" while its own worked example read "**S**hinto shrine
-  in Maebashi…". Settled by measuring the corpus rather than picking a rule: of 14,300 en
-  descriptions on shrine items, **11,487 begin "Shinto" against 1 beginning "shinto"**. The
-  routine's capitalized answer was correct and the instruction was wrong — following it literally
-  would have produced the 1-in-11,488 form. Fixed in `build_description_enrichment_queue.py`,
-  `remote_queue.py`, and rewritten in all 221 pending work-files (TASK comment only; each file's
-  ANSWERS block was asserted byte-identical before the write).
-- ✅ `collect_label_typo_answers.py` — **128 of the 143 answered locally 2026-08-04**; 71 became
-  `Len` lines in `label_typo_fixes.txt` (79 total). **15 left**, all of them items with no jawiki
-  article (below). Answers + reasoning in `shinto_miraheze/local_answers/label_typo_2026-08-04*.tsv`.
-- 📐 **STANDING RULE, Emma 2026-08-04: MACRONS.** A long vowel is written Ōmi, Kōnomine — not
-  Oomi/Omi. **The macron rule and the morpheme rule are the same rule seen twice:** a macron marks
-  one long vowel, so two identical vowels meeting across a morpheme boundary are not it. 飯玉
-  いいたま is Iitama; 男乃宇刀 お・の・う・と is Onouto; but 神峯 こうのみね is Kōnomine.
-  It does NOT rename places that have an established English form — Kobe stays Kobe, the same way
-  ちりふ stays Chiryū. ⚠️ **The queue's own `KANA_ROMANIZED` column does not know the morpheme
-  rule** — it collapses every o+u, reporting Kotoura as "Kotora" and Horinouchi as "Horinochi",
-  and then flags the correct label as divergent. 13 items were "wrong" only in that column.
-  - **The dominant defect is one machine error, not 143 separate ones.** A romanizer collapsed a
-    doubled vowel into a macron *across a morpheme boundary*: 飯玉 いいたま → "ītama", 飯塚 →
-    "īzuka", 幣石 へいいし → "Heīshi", 二荒 ふたあら → "Futāra", 堀出 ほりいで → "Horīde". 飯 is
-    い plus the next morpheme's い, not a long vowel. **Eleven also came out lowercase-initial**
-    ("ītama Shrine"), which is wrong under any policy.
-  - ✅ **It is NOT the live romanizer — checked, not assumed.** `kana_english.label_for` was run
-    against the whole defect class and returns exactly the corrected forms (Iitama, Iizuka,
-    Heiishi, Futaara, Horiide). The bad labels came from an earlier pass, so the pipeline is not
-    still emitting them and nothing needs fixing there.
-  - ✅ **The reading clashes were researched per-item, and they did NOT all fall the same way** —
-    which is the case against ever having applied a blanket rule to them. `fetch_label_typo_
-    evidence.py` pulls each shrine's own jawiki lead via its item's sitelink (never by guessing a
-    title — 八幡神社 names hundreds). Three outcomes: the lead backs the KANA and the label is
-    wrong (孕 はらうみ, 潮江 うしおえ, 鹽竈 しおがま); the lead backs the LABEL and the **P1814** is
-    wrong (那古野 なごや not なごの, 鵜鳥 うのとり not うねどり, 四本木 よもとぎ not しほんぎ,
-    波々伯部 ほほかべ not ほうかべ) — **4 items where "trust the kana" would have damaged a correct
-    label**; or the lead gives BOTH readings and the label uses one, so nothing was wrong at all
-    (敬満 けいまん/きょうまん, 洲崎 すさき/すのさき, 貴布禰 きふね/きぶね, 志賀理和気, 大祁於賀美).
-  - ✅ **Descriptive labels left alone** per Emma 2026-08-04 (合氣神社 "Iwama Dōjō", 海底神社
-    "Underwater Shrine", 釜石製鐡所山神社, 合祀：大津神社) — logged so they stop being re-queued.
-  - ✅ **The last 15 are CLOSED 2026-08-05 — and they were never defects.** Emma asked the right
-    question instead of picking a reading: *"it would probably be worth even investigating where
-    the Kana readings come from… Did I accidentally add them with a bad script a year ago? Do they
-    have sources?"* They have sources. **10 of the 15 carry a P854 reference to
-    `houjin-bangou.nta.go.jp`** — the National Tax Agency's 法人番号 corporate register, which lists
-    宗教法人 with their *registered* furigana. Not a bad script; an authoritative source.
-  - **So the "clash" was two correct values being compared to each other.** The EN label is the
-    conventional English name (Hachiman Shrine, Futarasan, Isonokami, Akiba, Ishii) and the P1814 is
-    the shrine's registered legal reading (やはた, ふたあらやま, いしがみ, あきは, いわい). Emma:
-    *"That is Hachiman. That is Hachiman as the reading."* Nothing to fix on either side — which is
-    also why no QuickStatement could ever have recorded the outcome.
-  - All 15 retired to `label_typo_review/_resolved.log` as `NOT_A_DEFECT`. **`pending=0`; the queue
-    is fully drained.**
-  - ⚠️ **The builder would have resurrected every one of them** — `build_label_typo_review_queue.py`
-    skipped only on work-file existence, the third builder caught by that rule, and the collector
-    deletes the file when it answers. Worse here than elsewhere: a "nothing is wrong" decision
-    produces NO QS line, so a staged-file-only guard misses it too. `already_handled()` now reads
-    **both** `_resolved.log` and `label_typo_fixes.txt`. Verified by re-running the builder: 0 new
-    files. 6 tests.
-  - Its module-scope `sys.stdout` rebinding was moved into `main()` (same fix as
-    `generate_soja_only.py`) — importing it was replacing the caller's stdout.
-  - ✅ **The fix is not English-only — 153 fr/id/de/tr labels too.** Emma 2026-08-04: *"replacing
-    all of the wrong names … not just the english one. It's wrong in French and Indonesian too."*
-    The non-English labels were built FROM the English ones, so every bad reading was copied
-    outward — 寒川神社 carried "sanctuaire de Samugawa" and "Kuil Samugawa" beside the en label.
-    **75 of the 79 corrected items had a foreign twin.** `generate_multilingual_label_fixes.py` →
-    `multilingual_label_fixes.txt`, registered in `ATOMIC_FILES`, wired into
-    `generate-quickstatements.yml` after the label step, 15 tests.
-    - It rewrites only the NAME inside each foreign label, keeping that language's own phrasing,
-      and it skips any label that does not carry the old name (a translated one has nothing wrong).
-    - ⚠️ **French elision is the part that bites.** Four real bugs in the first run: Ō was not in
-      the vowel set so `d’Oominakami` became `de Ōminakami`; Y was in it so `de Yagiri` became
-      `d’Yakiri`; the article was rewritten whenever anything changed rather than only when the
-      name's vowel class flips; and a generic suffix punctuated differently either side
-      (`Okagagū` vs `Okada-gū`) dropped the gū entirely. All four have tests.
-  - ✅ **"hikida" was NOT garbage — it is signal, exactly as `CLAUDE.md` warns.** The item's own ja
-    aliases include **疋田神社**, read ひきだ, so Hikida is a genuine alternative name for
-    調田坐一事尼古神社; it was only ever wrong as the *primary* label. Emma: *"Hikida capitalized
-    should be an alias and the one in the different languages should be like that."* Added as an
-    alias in en/fr/id. **This is a hand-kept list, not a rule** — aliasing every replaced label
-    would preserve the misreadings too (Samugawa for 寒川 is simply wrong).
-  - ✅ **`sequential_misc.txt` finally has the pair it was built for.** The same item's P1814 is
-    also a wrong name: くだにますひとことねこ is the jawiki reading minus its first character. Correct
-    value ADDED + truncated one REMOVED, on the same property — which the random atomic drip cannot
-    do safely, since the removal could fire first and leave the shrine with no reading. The Open
-    questions note said the mechanism was built but *"population is the open bit"*; this is the
-    first genuine remove-then-add pair to turn up. Its other P1814, ツキタノ-, is left alone — that
-    is the kana-qualifier cleanup's territory and two passes on one property is how values get lost.
-  - ✅ **French elision is now a RULE with its own generator, not a queue.** Emma 2026-08-04:
-    *"de Ō should be corrected to d'Ō across them with an additional pipeline thing that makes the
-    quickstatements instantly if it is something that was universal."*
-    `generate_french_elision_fixes.py` → `french_elision_fixes.txt`, registered, in CI, 12 tests.
-    **Measured before writing anything** (23,892 fr-labelled shrine items):
+Emma, 2026-08-24, after a session deleted the routine's whole work supply by answering it locally:
 
-    | pattern | count |
-    |---|---|
-    | `de` + true vowel (incl. Ō Ū) | **0** |
-    | `d’` + true vowel | 4,675 |
-    | `d’` + consonant | 0 |
-    | `de` + H | **25** |
-    | `d’` + H | 3,645 |
+> *"The Claude routine being slow is intended behaviour… We're not trying to be fast with this
+> project. This project is supposed to be slow."*
 
-    So **the "de Ō" case does not exist in the corpus** — real vowels are already 100% elided, and
-    there are no reverse errors. The only live class is **H**, where the corpus itself has ruled
-    3,645 to 25: "sanctuaire d’Hachiman" and "sanctuaire de Hachiman" both exist for the same name.
-    Those 25 (21 of them 白山神社) are what is staged. The generator stays general, so the first
-    "de Ōmi…" a future label pass introduces is caught on the next fire.
-    - ⚠️ **The measurement is the point, not decoration.** Elision before a true vowel is
-      obligatory French and needs no judgement — but H is exactly where French grammar does *not*
-      decide (mute h elides, aspirated h does not, and Japanese h- is neither by definition).
-      Applying strict grammar would have "corrected" 3,645 correct labels into wrong ones.
-    - ⚠️ **A broken query and a clean corpus look identical.** The first version asked for
-      `wd:QQ845945` (the template had `wd:Q%s` and the constant already carried its Q). WDQS
-      returns zero rows for a nonexistent entity with no error — it reported the corpus clean. A
-      test now pins the query shape. **Do not trust a generator's silence.**
-  - 🛑 **RULED 2026-08-05: leave 兵庫縣神戸護國神社 alone, and treat this as a warning.** Emma:
-    *"I'm not expecting the pipeline to even be changing this one… It is definitely a bit worrying
-    to me that you seem keen on changing the name of a shrine that should be established in the
-    data at this point."* No label change, and **no corpus-wide place-name macron pass** — an
-    established shrine label is not a romanization exercise. She did say macrons belong in
-    established-name forms generally, but not at the cost of rewriting settled shrine names, so
-    nothing is generated from this. **Do not re-open it as a "consistency" cleanup.**
-- 🛑 **DESCRIPTION ENRICHMENT WAS DESTROYING DATA — caught 2026-08-05, nothing delivered.**
-  `Den` **overwrites**; it does not add. **15 of the 22 staged lines would have replaced a
-  hand-written Engishiki annotation with location boilerplate:**
+> *"The entire fucking point of the Claude routine is that it could theoretically be running
+> basically forever and would not be getting any attention for running forever. At the same time,
+> it does actually do real progress on the readings and may very well be a thing that actually makes
+> it so that, in the future, once all our labelling stuff is finished, wikidata just consistently
+> has Kana for everything."*
 
-  | existing (Emma's) | staged replacement |
-  |---|---|
-  | `The 1111th Shrine of the Engishiki Jinmyōchō (Ronsha)` | `Shinto shrine in Kōfu, Yamanashi Prefecture, Japan` |
-  | `Ronsha 3 of Yaahino Shrine` | `Shinto shrine in Azai district, Ōmi Province, Japan` |
-  | `A candidate shrine for Nakagawa Shrine` | `Shinto shrine in Japan, candidate for Nakagawa Shrine` |
+**What the routine is for:** running unattended, indefinitely, with nobody watching, and still moving
+the data. Its value is that it *exists and keeps going*, not its rate. ~5 items/day against thousands
+is fine. Fifteen months is fine.
 
-  The left column records the shrine's position in the 927 register, **which** disputed entry it
-  is a candidate for, and **which numbered** Ronsha it is. The right column records where it is.
-  Nothing recovers the former from the latter. Only the Wikidata freeze stopped it going out.
-  - **This is the exact failure `CLAUDE.md` names** — an unfamiliar pattern in this data is signal,
-    not corruption — and the queue walked into it because the builder *displayed* each existing
-    description as context and then asked for a replacement anyway.
-  - **The 15 lines are stripped**; the 7 that target items with no description are kept.
-  - **Two independent gates, because they fail differently.** `needs_a_description()` in the
-    builder stops the ask being made; `protected_members()` in the collector stops an answer
-    already sitting in a work-file from being emitted, reading the recorded description out of the
-    work-file so it needs no network. 9 tests.
-  - 🛑 **SCOPE CORRECTED by Emma 2026-08-05:** *"We were never supposed to enrich English
-    descriptions that aren't equal to Shinto shrine in Japan."* My first gate allowed any
-    `Shinto shrine in X`, treating a prefecture-level description as a placeholder worth
-    improving. Wrong — naming the prefecture IS the information, and this pipeline does not get
-    to overrule it. **That version put 11,369 items in reach.**
-  - **Measured, and it decides what the rule means in practice: ZERO of the 14,300 English
-    descriptions on shrine items are exactly "Shinto shrine in Japan"** (11,369 are some other
-    `Shinto shrine in X`, 2,931 something else). So the exact-match arm is dead in the current
-    corpus and the rule reduces to: **this pipeline may only give a description to an item that
-    has none.** The arm stays because it is what the wording licenses; a test pins that a
-    near-miss like `Shinto shrine in Japan, Kansai` does not match it.
-  - **The queue was 67% work that must not be done: 221 → 73 work-files.** 216 protected members
-    across the two passes; 148 files deleted outright (every member protected), 24 had the ask
-    removed while keeping the member as context, since a new description still has to differ.
-  - ⚠️ **"The 73 that remain are the real queue" is WRONG for 51 of them — measured 2026-08-21.**
-    They are 73 files holding **63** unanswered QIDs, and the premise printed in every work-file
-    is *"every member of this group shares the same label and would get the same standardized
-    description — they need UNIQUE, informative ENGLISH descriptions."*
+**⛔ The queue must KEEP work in it.** Her larger concern about the local bypass was not the answers
+it produced — it was that draining the queue destroys the only way to find out whether the routine
+works at all. The pending items are the test surface. A session that burns through them leaves
+nothing for the routine to chew on and no way to observe it.
 
-    | group size | files | |
-    |---|---|---|
-    | **1** | **51** | **no other member. Nothing shares the label, nothing needs distinguishing — the stated reason for the work does not apply** |
-    | 2 | 9 | a real collision |
-    | 3 | 3 | a real collision |
-
-    So **12 files** carry the disambiguation work this pipeline was built for. The other 51 are
-    ordinary items that merely lack an English description, presented under a justification that
-    is not true of them.
-  - **The groups are keyed on the INDONESIAN label, which is why they look arbitrary.** Emma,
-    2026-08-21, on Q135503340: *"idk what this is and where it came from… I lean towards it being
-    a shrine that exists but has no context and is someone else's problem."* She is right, and the
-    grouping is why it reached her: Q135413481 (神殿, the imperial palace sanctuary) and Q135503340
-    (神殿神社, a shrine) both romanise to `Kuil Shinden`, so the generator called them a collision.
-    They are not the same kind of thing. Same shape for Q135195021 — her words, *"is just a ronsha?
-    like looks really normal"* — whose single-member group collides only with a *proposed*
-    Indonesian description for a different Oyama Shrine in Ishikawa. The famous 雄山神社
-    (Q11659204) is not in the batch at all.
-  - **Only 2 of the 63 have nothing distinguishing whatsoever** (no location, coordinates, deity,
-    sitelink or list): Q97013988 and Q135503340. The other 61 carry real register context — 58 in a
-    Jinmyōchō list, 60 with an ancient P131, 34 with coordinates. One bad member does not condemn
-    the set.
-  - **Q135503340's provenance, since it was asked:** Emma created it herself 2025-07-30, *"Created
-    item for red-link present on 阿沼美神社, Anumi Shrine"*. One claim, `P31 = Q845945`. Nothing to
-    describe beyond "Shinto shrine", which is the generic string the pipeline is not allowed to write.
-  - **Evidence + review page, both committed:** `shinto_miraheze/fetch_description_evidence.py`
-    (read-only, `wbgetentities` in batches of 50 — two requests for 63 items, not a SPARQL sweep) →
-    `description_enrichment_en/_evidence.json`; `site/generate_description_review.py` →
-    `_site/description-review.html`, one card per item with what/where/siblings and both candidate
-    description strings.
-  - ❓ **The shape question is OPEN and is Emma's** — asked 2026-08-21, she is reading the items.
-    The pipeline's own worked example is `Shinto shrine in Maebashi, Gunma Prefecture, Japan`, a
-    MODERN municipality, and these items' `P131` is ancient (Ōmi Province, Azai district), so that
-    example cannot be produced from their data. Their already-described siblings use the register
-    position — `Ronsha 2 of Itateno Shrine`, `The 1115th Shrine of the Engishiki Jinmyōchō (Ronsha)`
-    — 11 of 13.
-  - ⚠️ **CORRECTED 2026-08-21, and Emma caught it.** I wrote that none of the 63 carries the
-    ranking the register form is built from, and named `P1352`. Both halves were wrong. Her
-    question was simply *"what do you mean no standard number?"*
-    - The number is the **`P958` qualifier on `P13677`** (the Kokugakuin section), not `P1352`.
-      Q135186223's description *"(Ronsha 1)"* is built from `P958: "1"`.
-    - **56 of 63 do carry `P958`** — so "none of them" was false. But **52 of those are `n/a`**,
-      and only **4** hold a real number (two `1`, two `2`). So the *conclusion* stood by accident:
-      `Ronsha N of X` is derivable for 4 items, not 0 and not 56. This is the same fact B10 already
-      recorded — `n/a` and `0` distinguish nothing.
-    - **The genuinely useful part I had missed: 58 of 63 carry `P1545`**, the ordinal in the
-      Jinmyōchō list (Q135194637 is #52). That is what the sibling form *"The 1115th Shrine of the
-      Engishiki Jinmyōchō (Ronsha)"* is built from — so **that** register description IS derivable
-      for 58 of 63.
-  - **Emma's read of the batch, 2026-08-21, after opening the items:** *"is just a random ronsha and
-    nothing is wrong with it"* · *"Are we just discussing indonesian descriptions? Nothing serious?"*
-    Correct on both. Nothing here is a defect; it is cosmetic metadata work on ordinary register
-    items, surfaced under an Indonesian-label collision that is not real for 51 of them.
-    **Not to be re-raised at her.** Whoever picks this up decides between the P1545 register form
-    (58 derivable) and leaving them undescribed, and does it without another round of questions.
-- ✅ **The same question asked of the LABEL pipelines 2026-08-05 — and the answer is clean.**
-  `L<lang>` SETS a label exactly the way `Den` sets a description, so the ~12,150 staged label
-  lines were audited rather than reasoned about. **No label pipeline overwrites hand-written
-  content.**
-  - A 240-line stratified sample across the six bulk generators (`temple_identical_name_en_labels`,
-    `identical_name_en_labels`, `kana_en_labels`, `temple_en_labels`, `en_labels_sonnet`,
-    `en_labels`): **239 ADD, 1 NO-OP, 0 OVERWRITE** — they target items with no label in that
-    language. Zero overwrites in 240 bounds the rate at roughly 1.2% at 95%; it is evidence, not
-    proof, and the audit script re-runs on demand.
-  - Every overwrite in the corpus comes from a file whose *purpose* is correction, and each was
-    already evidenced: `label_typo_fixes` (79, researched per item), `french_elision_fixes` (25,
-    the measured 3,645-to-25 corpus ruling), `multilingual_label_fixes` (Ootsu→Ōtsu, ītama→Iitama
-    — Emma's macron ruling propagated outward).
-  - ⚠️ **Two that look contradictory and are both right** — which is why this was audited instead
-    of reasoned about from filenames. `category_label_fixes` ADDS a `Category:` prefix to 42 items;
-    `miscellaneous_edits` REMOVES one from Q138565446. The 42 are genuine `P31=Q4167836` Wikimedia
-    categories whose **ja labels already carry the prefix** and whose sitelinks are jawiki
-    `Category:` pages. Q138565446 is a **shrine** — jawiki sitelink `神明宮 (横浜市神奈川区)`, a
-    mainspace article — that picked the prefix up from its *Commons* category sitelink.
-  - `modern-quickstatements/audit_label_overwrites.py` is the durable artifact — run it before a
-    drip resumes or when a new label generator is added. It cannot be a CI test (needs live
-    Wikidata); 12 tests cover its parsing and classification, including that a `-Qxxx` REMOVAL is
-    never read as an add.
-  - ▶ **One real oddity, unfixed and minor:** Q125302213's *English* label is `6世紀日本の政治家`,
-    Japanese text. The staged fix prefixes it to `Category:6世紀日本の政治家` — correct as far as it
-    goes, but it stays untranslated. Not damage; the label was already Japanese.
-- **All five collectors drained 2026-08-23** — the "0 answered" line above was three weeks stale.
-  `docs/description_enrichment_pipeline.md`. Counts after the run:
-  name-in-kana **0** · beppyo-P612 **0** · description-enrichment **69** · ronsha-ranking **32** ·
-  category-translation **338**. Collected: **4** descriptions, **1** ronsha ranking, **15** category
-  translations. Nothing delivered — the Wikidata lockout holds to 2026-09-18; this is staging only.
-  - The four descriptions were live-checked against `wbgetentities` before applying, not trusted
-    from the work-file snapshot: all four had **no en description**, so the pipeline's one licensed
-    action (describe an item that has none) genuinely applied. A collected description was withdrawn
-    as destructive once before; the snapshot in a work-file is not evidence about the item today.
-  - ⚠️ **Ronsha ranking is NOT mechanical** — each work-file asks which of several candidates is
-    the likeliest true Engishiki shrine, needing per-candidate jawiki/Kokugakuin research. Do not
-    batch-answer it the way name-in-kana was batched.
-  - **Q135040248 stays undecidable, and its stated blocker is a dead end** — the routine said it
-    needed "Wikidata access to check P131". Checked: P131 is **identical** across all three
-    candidates and the Engishiki item (Q1047144 + Q7402764), as are P31 and P17; none has
-    coordinates or a jawiki sitelink, so the usual research path does not exist for them. Do not
-    retry the P131 route. Reasoning in `ronsha_ranking_review/_undecidable.log`.
-- ▶ **Do these locally, in batches, the way name-in-kana was done** (A0): dump each queue's
-  work-files, answer them here, `apply_local_answers.py --queue <q> --answers <tsv> --apply`, then
-  the collector. All repo-local — no Miraheze request — so it runs through the blackout.
-  - ✅ **That road was BLOCKED for the two biggest queues until 2026-08-23, and silently.**
-    `apply_local_answers.py` offered six `--queue` choices while implementing one shape (key = QID,
-    file = `<key>.wiki`, marker = `ANSWER:`). `category_translation` is keyed by category TITLE with
-    a `TRANSLATED:` marker — every row was dropped by a `^Q\d+$` filter that ran *before* any
-    counter, so a real batch printed four zeros, the same output as a correct run on an empty batch.
-    `description_enrichment` uses an `ANSWERS:` **block** (`ANSWER:` does not match `ANSWERS:`) and
-    its files are named after the group's FIRST member while the answerable members are the others
-    inside the block. Fixed per-queue; 15 tests; end-to-end round-trip verified on a real file
-    (apply → collector reports Finished → reverted). Its module-scope `sys.stdout` rebinding also
-    moved into `main()` — third instance of that bug here.
-  - ▶ **Next rung, and it needs ONE decision made once, not per item:** the enwiki category-naming
-    convention to translate into. Worked example: `Category:いなべの Municipal History` is a damaged
-    `いなべ市の歴史` (jawiki `Q18716435`, real) — the `市の歴史` → ` Municipal History` replacement
-    that CLAUDE.md's "signal, not corruption" rule describes. Q18716435 has **no enwiki sitelink and
-    no en label**, so there is nothing canonical to copy and the convention has to be chosen:
-    `Category:History of Inabe` vs `Category:History of Inabe, Mie` (enwiki disambiguates city
-    categories where the article does). Settle it once, then batch. Do not answer them one at a time
-    with different conventions.
-- ▶ **Separately, find out why the routine is so slow.** ~5 items/day is a trickle, not a stall.
-  `docs/remote_queue_routine_prompt.md`; the last known fix was the missing repo binding
-  (`session_context.sources`).
+- **Do NOT:** measure the routine against a session on throughput · call ~5/day a trickle, a stall or
+  a bottleneck · "find out why it is slow" · build a faster path · drain a queue to finish it.
+- **DO:** check that it is still alive and still landing answers, and leave it alone.
+- The three prior notes in this file calling the rate a defect were wrong and are corrected here.
 
 ## A2. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
 
