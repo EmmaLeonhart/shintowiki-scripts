@@ -446,6 +446,17 @@ zero, at which point they do not even need to be unique."*
 - This was recorded only in `queue.md` prose until 2026-08-23. It is a data-model rule, so it lives
   here.
 
+## Descriptions and labels — the four-step path
+
+**The authoritative spec is [`docs/description_label_policy.md`](docs/description_label_policy.md)**
+(Emma, 2026-08-21, all languages). Core rule: Wikidata's uniqueness constraint is on the
+**(label, description) PAIR**, so a description on an item with no label in that language is
+**actively harmful** — it costs a label. Order: remove orphan description → add label → add a
+programmatic fill-in-the-blanks description → iterate if rejected. The doc also records why a
+blanket removals file is the wrong shape (the existing `generate_description_fixes.py` resolves
+most orphans by supplying the missing label; removal is only for the residue). Read it before
+generating any label or description QuickStatements.
+
 ## Wikidata data model for shrine festivals & bunrei
 
 **The authoritative model is [`docs/wikidata_shrine_festival_model.md`](docs/wikidata_shrine_festival_model.md)**

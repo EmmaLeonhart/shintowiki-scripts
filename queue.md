@@ -1306,6 +1306,40 @@ Known losses, from `docs/bruno_plus_analysis_2026-07.md` §4:
 - **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
   which is additive and independent of whatever the other editor is doing.
 
+## A-MERGE. ▶ What the 御笏神社 merges cost — Emma's ask, metabolised off `[[Open questions]]` 2026-08-24
+
+Her words on the page: *"Please investigate the shrine and what links to it in order to see if any
+errors may have been introduced by the redirect being resolved and why I originally merged it. The
+fact they were merged is nontrivial as to why I did it and what information may have been lost."*
+
+Read-only forensics, so the Wikidata lockout does not block it. **It is about 御笏神社, not Izumo** —
+checked rather than assumed, because the paragraph sits under the 御笏 section while the only merge
+under discussion elsewhere was the Izumo one. `Q110915859` has 254 revisions and two of its own
+merges.
+
+**Established 2026-08-24, from the revision histories:**
+
+- `Q135192793` → merged into `Q110915859` at **2025-12-01T03:08:22Z**. It was a plain **duplicate**
+  of the same shrine — fr *sanctuaire d'Oshaku*, id *Kuil Oshaku*.
+- `Q135192871` → merged in five minutes later, **2025-12-01T03:13:40Z**. It was the **sessha**
+  item — fr *sanctuaire d'Oshaku (sessha)*, id *Kuil Oshaku (sessha)*.
+- One unrelated redirect resolution touched it: KrBot, 2025-07-05, `P156` `Q135098978` → `Q134926154`.
+
+**The lead this gives, not yet confirmed:** merging the *sessha* item into the *shrine* item is a
+mechanism that would move the sessha's candidacies onto the shrine — which is the shape Emma
+describes on the page, six `said to be the same as` on an item she says is truly a candidate for
+only **佐伎多麻比咩命神社**, the rest being goshi merged into it. If that is where the six came from,
+the merge is the cause and the `part of` removals are treating a symptom.
+
+- [ ] Fetch each source item's **pre-merge** revision (before the `Clearing item` edit — 2025-08-01
+  for both) and list exactly which statements crossed over. The post-merge revision is already
+  emptied, so reading it shows nothing.
+- [ ] Diff `Q110915859`'s statements across 2025-12-01T03:08 and 03:13 to attribute each of the six
+  `P460`s to a source.
+- [ ] Sweep what still points at the two redirects; a merge repoints incoming references silently,
+  so damage lands on the *referring* items.
+- [ ] Do not hammer Wikidata: a handful of revision fetches, no SPARQL sweep.
+
 ## Pinned tail (keep last)
 
 - [ ] Ensure the five session-local crons are running (this session 2026-08-05: work-loop bd4cf062
