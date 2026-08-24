@@ -12,38 +12,35 @@ Measured, descriptions sitting on items with no label in that language: '''id 5,
 : '''→''' id is the skipped-branch bug, fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]; not visible yet because [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt] still dates from 08-02 and regenerates on a Sunday run.
 : ⚠ '''Step 4 is not built and I am not faking it.''' Iterating on a rejected description needs the rejection readable back, and QuickStatements failures are not read per line.
 
-=== Izumo entry 39 — CAUSE FOUND: an erroneous merge, and the fix is to undo it ===
+=== Izumo 28 vs 39 — they are TWO DIFFERENT SHRINES, in two different precincts ===
 
-You found it: [https://www.wikidata.org/w/index.php?title=Q135040908&action=history Q135040908] was merged into [[d:Q135040786|Q135040786]] on '''2026-05-23T21:28:33Z'''. That is the whole cause, and it means '''no new item needs creating''' — the entry-39 item already existed and is recoverable.
+You asked what the actual difference between these two is, and I had never answered that — I stopped at "there was a merge". Here it is.
 
-'''What Q135040908 was''', now read off the merge itself rather than from its history summary ([https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/audit_merge_provenance.py audit_merge_provenance.py]). The merge '''added 5 statements and removed none''' (12 → 17):
-
-* ''part of'' → [[d:Q11395853|Q11395853]] at ordinal '''39''', ''follows'' [[d:Q135040907|Q135040907]] (38), ''followed by'' [[d:Q135040909|Q135040909]] (40)
-* ''said to be the same as'' → [[d:Q135070107|Q135070107]] and [[d:Q135070108|Q135070108]] — the two ronsha
-* ''instance of'' → [[d:Q135038714|Q135038714]], and street address 同上
-
-⚠ '''Correction to what this page told you before: un-merging will NOT bring back the 2264 ordinal.''' It was not on the item at merge time — the qualifier ''series ordinal'' 2264 was removed on '''2025-12-21''', and the English description "The 2264th Shrine of the Engishiki Jinmyōchō" on '''2026-01-10''', both five months before the merge. Restoring it is a separate edit if you want it. The label 坐韓国伊'''太'''弖神社 and <code>P13723</code> → [[d:Q134917287|Q134917287]] (qualified ''determination method'' → [[d:Q138640329|Q138640329]]) do come back.
-
-'''Current live state of the list''' — everything else is correct, there is exactly one wrong cell:
+'''The Izumo register lists FIVE 韓国伊太弖 shrines, and the entry BEFORE each one names the precinct it stands in.''' That is what the 坐 ("situated in") prefix means: a sub-shrine is listed immediately after its parent.
 
 {| class="wikitable"
-! ordinal !! points at !! correct?
+! ordinal !! the entry before it !! so the entry is
 |-
-| 28 || [[d:Q135040786|Q135040786]] 坐韓国伊大弖神社 || yes, its own entry
+| 19 || 18 [[d:Q11572397|玉作湯神社]] || 坐韓国伊太弖神社 in '''玉作湯''' grounds ([[d:Q135040778|Q135040778]])
 |-
-| 29 || [[d:Q135040787|Q135040787]] 筑陽神社 || yes
+| '''28''' || 27 [[d:Q11498399|揖夜神社]] || 坐韓国伊'''大'''弖神社 in '''揖夜''' grounds ([[d:Q135040786|Q135040786]])
 |-
-| '''39''' || [[d:Q135040786|Q135040786]] || '''no''' — follows the redirect from the merged item
+| '''39''' || 38 [[d:Q135040907|佐久多神社]] || 坐韓国伊太弖神社 in '''佐久多''' grounds (was [[d:Q135040908|Q135040908]])
 |-
-| 40 || [[d:Q135040909|Q135040909]] 志保美神社 || yes
+| 92 || 91 [[d:Q135040959|阿須伎神社]] || 神韓国伊太弖神社 in '''阿須伎''' grounds
+|-
+| 125 || 124 [[d:Q135041043|出雲神社]] || 韓国伊太弖神社, standalone
 |}
 
-No ordinal is used twice. I earlier told you 29 was also Karakuniitateno and that 39 was empty — both were my own misreadings of the same query, and neither is true of the live data.
+'''So 28 and 39 are two physically different shrines that happen to share a name.''' The 大/太 spelling is not what separates them — the precinct is. And [[d:Q135040786|Q135040786]] already carries a bare ''part of'' → [[d:Q11498399|揖夜神社]], which is exactly that precinct relationship and is correct; entry 39 would want the same pointing at 佐久多神社.
 
-: '''→''' The fix is '''restore the merge''', not build a new item. Un-merging brings back the QID the list already points at, the 38/40 sequence and the two ronsha links — which a fresh item would have to be rebuilt by hand and would still not match what other statements reference.
-: After the restore, the only thing left is to delete the ''part of'' → list rows on [[d:Q135040786|Q135040786]] that came across in the merge: the one carrying ordinal '''39''' and the one carrying '''no ordinal'''. Keep ordinal 28.
-: '''→ Correction: it is not a manual fix, and I was wrong to say so.''' Undoing the merge is '''one API edit''' — restore [[d:Q135040908|Q135040908]] to revid '''2477716633''' (2026-04-03, the last good revision). The merge is the two revisions after it: 2496542935 blanked the item, 2496542938 turned it into the redirect. Restoring 2477716633 undoes both at once and brings the item back with its statements.
-: The only thing actually stopping it is the '''lockout to 2026-09-18'''. QuickStatements cannot express an un-redirect, so this is the one-off-edit case your <code>CLAUDE.md</code> already has a pattern for — a date-gated script that performs the single edit on its day and then no-ops. Say the word and it gets written that way rather than by hand.
+'''Why the merge looked reasonable''' — both entries were given the '''same two candidates''': [[d:Q135070107|Q135070107]] 嘉羅久利神社 and [[d:Q135070108|Q135070108]] 佐久多神社. Two entries with identical candidate sets read as duplicates. But 嘉羅久利 (からくり) is the modern form of 韓国 (からくに), and it sits in '''佐久多''' grounds — so those candidates belong to entry '''39''', not to the 揖夜 one.
+
+: '''→ Not recommending an un-merge.''' You said it adds complication and I agree now that I have looked: the candidate assignment is wrong independently of the merge, so restoring the item would restore a wrong candidate set too.
+: '''→ The knot underneath, which is there either way:'''
+:* '''There are TWO 嘉羅久利神社 items''' — [[d:Q135070106|Q135070106]] points at entry 38, [[d:Q135070107|Q135070107]] at entry 28. One shrine, two items, two different entries.
+:* '''佐久多神社 exists as both an entry and a candidate''' — [[d:Q135040907|Q135040907]] is entry 38; [[d:Q135070108|Q135070108]] is a candidate that also holds ''part of'' the list '''at ordinal 39''', which by your 2026-07-09 rule a candidate should not have at all.
+:* Entry 38's own ''part of'' carries '''two''' ''followed by'' values at once ([[d:Q135040786|Q135040786]] and [[d:Q135040909|Q135040909]]) — the same piled-qualifier shape as 御笏.
 
 === 御笏神社 — yes, it is staged, and I described it wrongly ===
 

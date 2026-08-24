@@ -125,56 +125,38 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     Do not diagnose it, do not speed it up, do not route around it. See that item.
   - ⚠ Not restarted. Nothing rebuilds until she says so.
 
-- **▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs**
+- **▶ Izumo 28 vs 39 — the ACTUAL difference, investigated 2026-08-24 after Emma said I never had**
 
-  Emma, on the page, about exactly this shape: *"OH MY GOD IS THIS DONE OR NOT YOU CUNT"*. Neither of
-  these needed her; both had been sitting as questions.
+  Her words: *"You haven't really done much analysis on the two items here. You have just been
+  telling me to undo the merge, and I don't think I even want to undo the merge… What I'm trying to
+  investigate is essentially: what is the actual difference between these two shrines?"* Fair — I
+  stopped at "there was a merge" and treated the cause as found.
 
-  - ✅ **CAUSE FOUND 2026-08-24 by Emma: an erroneous merge. No new item is needed — undo it.**
-    `Q135040908` was merged into `Q135040786` at **2026-05-23T21:28:33Z**
-    (`wbmergeitems-to` + `wbcreateredirect` in its history). `Q135040908` *was* the entry-39 item:
-    created 2025-06-24, ja 坐韓国伊**太**弖神社 (the 太 spelling = entry 39's register name), with
-    `P155`→`Q135040907` (38), `P156`→`Q135040909` (40), `P361`→list at ordinal **39**, national
-    ordinal **2264**, and both ronsha `P460`→`Q135070107`/`Q135070108`.
-    - **The list has exactly one wrong cell**, measured live: 28→`Q135040786` ✅, 29→`Q135040787`
-      筑陽神社 ✅, **39→`Q135040786`** ❌ (follows the redirect), 40→`Q135040909` ✅. **No ordinal is
-      used twice.**
-    - ⛔ **Two of my own readings were wrong and are corrected here, not left in chat.** I told her
-      (a) the 大/太 spelling separates entries 28 and 39 — the 08-19 devlog had already retired that,
-      because entry 28's *modern shrine* is spelled 太; and (b) ordinal 29 also held `Q135040786`
-      while 39 was empty — a parse error on my own query. Neither is true of the live data.
-    - ▶ **Restore the merge rather than create an item.** Un-merging returns the QID the list already
-      points at, plus the 38/40 sequence, the 2264 ordinal and the ronsha links — all of which a fresh
-      item would need rebuilt by hand and would still not match what other statements reference.
-      Then delete the two `part of`→list rows the merge pushed onto `Q135040786`: ordinal **39** and
-      the **bare** one. Keep 28.
-    - ⛔ **NOT a manual action — I claimed it was and Emma corrected me on the page 2026-08-24:**
-      *"this is not a manual fix stfu and stop hallucinating"*. She is right. Undoing the merge is
-      **one API edit**: restore `Q135040908` to **revid 2477716633** (2026-04-03, the last good
-      revision). The merge is the two revisions after it — `2496542935` blanked the item,
-      `2496542938` created the redirect — so restoring 2477716633 undoes both at once and brings
-      the statements back with it.
-    - BLOCKED-ON-EXTERNAL, and only that: the Wikidata lockout to **2026-09-18**. QuickStatements
-      cannot express an un-redirect, which makes this the one-off-edit case `CLAUDE.md` already has
-      a sanctioned pattern for — a **date-gated script** that performs the single edit on its day
-      and then no-ops (see `add_wikidata_crud_categories.py`). NEEDS-DECISION on writing it: it is
-      a direct-API edit, which the QS-only rule otherwise forbids, so it is hers to authorise.
+  **They are two physically different shrines sharing a name.** The Izumo register lists FIVE
+  韓国伊太弖 shrines, and the entry immediately BEFORE each names the precinct it stands in — that is
+  what the 坐 ("situated in") prefix means. Ordinal 19 follows 玉作湯神社; **28 follows 揖夜神社**;
+  **39 follows 佐久多神社**; 92 follows 阿須伎神社; 125 is standalone after 出雲神社.
 
-  - ⛔ **RETRACTED 2026-08-23. Both the "41 of 42 verdicts are wrong" finding and the "773 staged
-    removals would strip a real membership" finding were MINE and both were WRONG**, on the same
-    mistaken premise: that a register naming a shrine means the shrine belongs to the list. It does
-    not. Emma, shown the second one: *"pretty sure this is intended behaviour."* It is.
-    - **List membership belongs to the ENTRY item.** `Q135040491` 出雲神社 (the Engishiki entry) holds
-      `P361 → Q11368560` with `P1545: 1`, `P155`, `P156`. `Q10896675` 出雲大神宮 (the modern shrine)
-      holds `P460 →` that entry plus two bare `P361` — which is the piped-link import damage the
-      removal drip exists to strip. Checked on five more of the "41": all five are modern shrines with
-      `P460` to a `Q135…` entry item. The pattern is uniform.
-    - **The guard reading `P527` is reading the right source.** The list's members are the entry items,
-      so a modern shrine is correctly absent. I called that a "partial transcription"; it is not.
-    - **Her 2026-07-09 decision already settled this** — "Reading A: list membership belongs to the
-      entry item, so the candidate loses it." The rule is now in `CLAUDE.md` so it is not re-derived.
-    - `recheck_orphan_memberships.py` is **deleted**: it answered "does the register name this shrine",
-      which is not the question, and keeping it would invite the same wrong inference again.
+  So the 大/太 spelling never separated them — the precinct does. `Q135040786` already carries a bare
+  `P361 → Q11498399` (揖夜神社), which IS that precinct relationship and is correct; entry 39 would
+  want the equivalent pointing at 佐久多神社.
+
+  **Why the merge looked reasonable:** both entries were given the *same two candidates*,
+  `Q135070107` 嘉羅久利神社 and `Q135070108` 佐久多神社. Two entries with identical candidate sets read
+  as duplicates. But 嘉羅久利 (からくり) is the modern form of 韓国 (からくに) and stands in **佐久多**
+  grounds — so those candidates belong to entry **39**, not to the 揖夜 one.
+
+  - ⛔ **NOT un-merging. Emma's call, and the investigation supports it:** the candidate assignment
+    is wrong independently of the merge, so restoring the item would restore a wrong candidate set
+    with it.
+  - **The knot underneath, present either way** — NEEDS-DECISION on all three, nothing staged:
+    - **Two 嘉羅久利神社 items.** `Q135070106` points at entry 38, `Q135070107` at entry 28. One
+      shrine, two items, two different entries.
+    - **佐久多神社 is both an entry and a candidate.** `Q135040907` is entry 38; `Q135070108` is a
+      candidate that also holds `P361` into the list **at ordinal 39** — which by the 2026-07-09
+      rule a candidate should not hold at all.
+    - **Entry 38's `P361` carries two `P156` values at once** (`Q135040786`, `Q135040909`) — the
+      same piled-qualifier shape measured on 御笏, and one of the 23.
 
 - **The 08-22 CI repair is VERIFIED. A separate, older defect remains.**
 

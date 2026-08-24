@@ -1,0 +1,15 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q140469774 -->
+<!-- JA: 横浜御嶽神社 | EN_LABEL: (none) | BUCKET: b -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%A8%AA%E6%B5%9C%E5%BE%A1%E5%B6%BD%E7%A5%9E%E7%A4%BE -->
+<!-- ANSWER: -->
+<!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading
+  GUESS: <hiragana>       the lead states no reading; this is derived (below)
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and none can be derived either
+GUESS is what to give when the lead carries no reading (Emma, 2026-08-23: guess where no kana can be found). Derive it from what you can actually see — the reading of the place-name the shrine is named for, the readings other shrines of the same name carry, the reading given in the article's infobox, categories or first sentence of a section. Shrine names take irregular local readings, so do NOT transliterate character-by-character: 江島 is えのしま not えじま, 三吉 is みよし not さんきち, 一宮 can be いっく. If you cannot do better than a character-by-character guess, answer NO_KANA — a wrong reading is worse than none, and GUESS answers carry no source on Wikidata precisely because the article does not back them.
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. A KATAKANA answer is recorded and NOT written to Wikidata — P1814 wants modern hiragana, and a katakana reading is the signature of the ancient-reading error a separate cleanup is undoing.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+横浜御嶽神社（よこはまおんたけじんじゃ）は、神奈川県横浜市栄区上郷町にある神社。
