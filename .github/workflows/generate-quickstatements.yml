@@ -2,6 +2,11 @@ name: Generate QuickStatements
 
 on:
   workflow_dispatch:
+    inputs:
+      force_weekly:
+        description: "Run the weekly (Sunday-gated) description generators regardless of the day"
+        type: boolean
+        default: false
   workflow_call:
 
 permissions:
@@ -31,6 +36,19 @@ jobs:
     # generators already finished — so the work was done and then discarded, which is
     # why description_label_pairs.txt has not moved since 2026-08-02 despite three
     # Sundays passing.
+    #
+    # ⚠ CORRECTED 2026-08-24: BOTH Sunday cancellations ran under the OLD 75-minute
+    # timeout, so the 150 has never actually been exercised. The raise landed at
+    # 2026-08-23T10:15Z (commit 5fb14fc0, whose local timestamp 03:15-07:00 reads like
+    # 03:15Z and is not) — seven hours AFTER that Sunday's run started at 03:26Z. A
+    # local timestamp compared against a UTC one is how "the fix is live" got asserted
+    # about a run that predated it.
+    #
+    # And nothing about this path depends on the day of the week or on shinto.miraheze
+    # being reachable: both weekly steps are Wikidata SPARQL generators. The gate exists
+    # only to keep the DAILY job inside its timeout by concentrating ~60-80 minutes of
+    # SPARQL onto one day — which is precisely what blew the 75. `force_weekly` makes
+    # that path runnable on any day so it can be measured instead of waited for.
     timeout-minutes: 150
     steps:
       - name: Checkout
@@ -225,15 +243,17 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
-          if [ "$(date -u +%u)" = "7" ]; then python generate_description_fixes.py; \
-          else echo "not Sunday — keeping committed description_label_pairs.txt"; fi
+          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
+            python generate_description_fixes.py; \
+          else echo "not Sunday and not forced — keeping description_label_pairs.txt"; fi
 
       - name: Description adds (labeled items missing descriptions, weekly Sunday refresh)
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
-          if [ "$(date -u +%u)" = "7" ]; then python generate_description_adds.py; \
-          else echo "not Sunday — keeping committed description_adds.txt"; fi
+          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
+            python generate_description_adds.py; \
+          else echo "not Sunday and not forced — keeping description_adds.txt"; fi
 
       # MUST be the last step before the commit. The husks are items ブルーノ・プラス
       # repurposed (queue.md A5); each one now IS the shrine item a sitelink lookup
