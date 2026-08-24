@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pytest  # noqa: E402
 
 from build_name_in_kana_queue import (  # noqa: E402
-    MISMATCH, lead_subject, subject_mismatch, write_work_file,
+    MISMATCH, lead_subject, shinjitai, subject_mismatch, write_work_file,
 )
 
 
@@ -115,3 +115,37 @@ def test_an_ordinary_work_file_carries_no_warning(tmp_path, monkeypatch):
 def test_the_warning_text_names_both_names():
     out = MISMATCH.format(ja="千住氷川神社", subject="氷川神社")
     assert "千住氷川神社" in out and "氷川神社" in out
+
+
+def test_kyujitai_and_shinjitai_are_the_same_name():
+    """香川縣護國神社 led as 香川県護国神社, found on the eleventh live tranche.
+
+    Two characters apart (縣/県 and 國/国), so the one-character variant-kanji tolerance
+    does not reach it. Widening that tolerance to two would be the wrong fix — it would
+    start passing names that genuinely differ in two places — so the old and new character
+    forms are folded instead, which is exact.
+    """
+    lead = "香川県護国神社（かがわけんごこくじんじゃ）は、香川県善通寺市に鎮座する神社（護国神社）。"
+    assert lead_subject(lead) == "香川県護国神社"
+    assert subject_mismatch("香川縣護國神社", lead) is None
+
+
+def test_shinjitai_folds_only_what_it_claims_to():
+    assert shinjitai("香川縣護國神社") == "香川県護国神社"
+    assert shinjitai("長崎縣護國神社") == "長崎県護国神社"
+    assert shinjitai("豐榮神社") == "豊栄神社"
+    assert shinjitai("三芳野神社") == "三芳野神社"      # untouched
+    assert shinjitai("") == ""
+
+
+def test_folding_does_not_start_passing_genuinely_different_names():
+    """The fold must not become a way for two real shrines to compare equal.
+
+    These are the cases the detector exists for; none of them involve 旧字体, so the fold
+    is a no-op on them and they must still be flagged.
+    """
+    assert subject_mismatch(
+        "千住氷川神社", "氷川神社（ひかわじんじゃ）は、東京都足立区千住4丁目にある神社。") is not None
+    assert subject_mismatch(
+        "洲崎濱宮神明神社",
+        "海山道神社（みやまどじんじゃ）は三重県四日市市海山道町にある神社である。") is not None

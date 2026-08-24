@@ -362,6 +362,25 @@ def lead_subject(lead):
     return head.strip()
 
 
+# 旧字体 → 新字体, restricted to forms that actually turn up in shrine and place names.
+# This is a comparison aid only: it is never written anywhere, and the item's own label is
+# left exactly as it is. Deliberately not a general Unicode table — a broad mapping would
+# start collapsing characters that distinguish real shrines from each other.
+KYUJITAI = {
+    "縣": "県", "國": "国", "榮": "栄", "舊": "旧", "齋": "斎", "藝": "芸",
+    "澤": "沢", "濱": "浜", "邊": "辺", "邉": "辺", "會": "会", "學": "学",
+    "廣": "広", "圓": "円", "惠": "恵", "德": "徳", "樂": "楽", "豐": "豊",
+    "眞": "真", "淺": "浅", "賣": "売", "巖": "巌", "鐵": "鉄", "靈": "霊",
+    "觀": "観", "應": "応", "醫": "医", "亞": "亜", "壽": "寿", "驛": "駅",
+    "齒": "歯", "龍": "竜", "萬": "万", "淵": "渕", "槇": "槙", "禪": "禅",
+}
+
+
+def shinjitai(text):
+    """Fold 旧字体 to 新字体 so two spellings of one name compare equal."""
+    return "".join(KYUJITAI.get(ch, ch) for ch in text)
+
+
 def subject_mismatch(ja, lead):
     """The lead is about a DIFFERENT name from the item's — the dangerous case.
 
@@ -387,15 +406,22 @@ def subject_mismatch(ja, lead):
     a strict *substring* of the item's name. That is exactly 千住氷川神社 led as a bare
     氷川神社 — the article covers the generic name and the item is a specific shrine, so
     its reading is not the one stated.
+
+    A third non-mismatch, found 2026-08-24 on the eleventh tranche: **旧字体 vs 新字体**.
+    The item is 香川縣護國神社 and the lead opens 香川県護国神社 — two characters apart, so
+    the one-character variant-kanji tolerance above does not catch it, and widening that
+    tolerance to two would start passing genuinely different names. Old and new character
+    forms are normalised instead, which is exact rather than approximate.
     """
     subject = lead_subject(lead)
     if not subject or not ja:
         return None
     bare = ja.split("(", 1)[0].split("（", 1)[0].strip()
-    if bare == subject or bare in subject:
+    bare, subject_cmp = shinjitai(bare), shinjitai(subject)
+    if bare == subject_cmp or bare in subject_cmp:
         return None
-    if len(bare) == len(subject) and sum(
-            a != b for a, b in zip(bare, subject)) <= 1:
+    if len(bare) == len(subject_cmp) and sum(
+            a != b for a, b in zip(bare, subject_cmp)) <= 1:
         return None                      # variant kanji
     return subject
 

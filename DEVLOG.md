@@ -4,6 +4,41 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 (later, third) — a hundred more kana, and a false positive with a new mechanism
+
+Eleventh `A-KANA` tranche: 100 built, 100 answered, 0 rejected, 99 QS lines. Coverage **1,216 →
+1,316** of 2,634, so the programme is just past half. Three had no lead extract (the Okazaki
+須佐之男神社 trio) and took the `GUESS` path the builder now writes files for; one was a
+disambiguation page (`Q11666695` 飯道神社, whose lead only points at the Kōka and Konan articles)
+and was answered `NO_KANA`, since disambiguation pages are the excluded class rather than a
+nameable place.
+
+**The subject-mismatch detector fired once, and it was wrong — by a mechanism it had not seen.**
+`Q11667575` 香川**縣**護**國**神社 is led as 香川**県**護**国**神社: 旧字体 against 新字体, one shrine.
+The existing tolerance passes names that are the same length and differ in **one** character, which
+covers 利雁/利鴈 and 尾崎/尾﨑. This differs in **two**, so it was flagged.
+
+The tempting fix — widen the tolerance to two characters — is the wrong one, because two genuinely
+different characters is how two different shrines look. Folding 旧字体 to 新字体 before comparing is
+exact instead of approximate, so `shinjitai()` does that against a deliberately small table of forms
+that actually occur in shrine and place names. It is a comparison aid only: nothing is rewritten and
+the item's own label is untouched. Three of the new tests exist specifically to pin that the fold
+cannot make two real shrines compare equal.
+
+This is the second false positive fixed on the tick it appeared, for the reason already recorded
+the first time: **a warning that cries wolf is worse than no warning.** The check's whole value is
+that an answerer trusts it, and the error it guards is the pipeline's most expensive one — a lead
+that states a reading cleanly for a *different* name, which the collector would then source with
+`S143`/`S4656`.
+
+**One usage detail worth writing down**, having cost two failed invocations: `apply_local_answers.py`
+resolves `--answers` relative to `shinto_miraheze/`, not the repo root, and the flag is `--answers`
+rather than `--file`. Recorded in the queue item so the next tranche does not rediscover it.
+
+295 tests pass.
+
+---
+
 ## 2026-08-24 (later) — 917 items duplicated, and the fix is the one thing the pipeline cannot express
 
 `A-DUP` measured. `Q135041321` was not noise: **988 duplicate `P13723` groups across 917 items**,

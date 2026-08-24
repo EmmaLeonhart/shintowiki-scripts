@@ -101,9 +101,9 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 - ✅ **A `GUESS` carries NO source.** `S143`/`S4656` asserts *"the jawiki article states this"*,
   true of `KANA` and false of a guess. A sourced-looking wrong reading is worse than an unsourced
   one because nothing downstream can distinguish it.
-- ✅ **Ten tranches built and drained — 862 answered, 0 rejected, 0 pending.**
+- ✅ **Eleven tranches built and drained — 962 answered, 0 rejected, 0 pending.**
   Answers in `shinto_miraheze/local_answers/name_in_kana_2026-08-23{,b,c,d,e,f,g}.tsv` and
-  `…_2026-08-24{,b,c}.tsv`.
+  `…_2026-08-24{,b,c,d}.tsv`.
 - **A third `GUESS` sub-shape: a PAIRED shrine whose lead gives each half separately.**
   `Q11633774` 豊榮神社・野田神社 — the lead reads 豊榮神社（とよさかじんじゃ）と野田神社（のだじんじゃ）,
   so both halves are sourced but the **combined string is not**. Staged as `GUESS`, no source.
@@ -125,7 +125,14 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
     led as 舊府**（旧府）**神社（ふるふじんじゃ） — the first parenthetical is a kanji gloss *inside*
     the name, so stopping at it yielded 舊府. `lead_subject()` now drops parentheticals carrying no
     kana. **A warning that cries wolf is worse than no warning**, so this mattered more than the
-    miss rate. 18 tests, every case taken from a real work-file.
+    miss rate.
+  - ✅ **A second false positive on the ELEVENTH tranche, fixed the same tick, same reason.**
+    `Q11667575` 香川**縣**護**國**神社 is led as 香川**県**護**国**神社 — 旧字体 against 新字体, the
+    same shrine. Two characters apart, so the one-character variant-kanji tolerance could not reach
+    it, and widening that tolerance to two would start passing names that genuinely differ twice.
+    `shinjitai()` folds the old forms before comparing, which is exact rather than approximate, and
+    is a comparison aid only — nothing is rewritten and the item's label is untouched. 21 tests,
+    including three that pin the fold cannot make two real shrines compare equal.
   - ⚠ **This is the highest-severity error the pipeline can make**, which is why it gets a builder
     check rather than a note: the lead states a reading cleanly, so a `KANA` answer looks
     well-sourced and the collector attaches `S143`/`S4656` — asserting jawiki backs a reading of a
@@ -158,14 +165,15 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
     are gone from the front of the set. `test_name_in_kana_no_lead.py` (5 tests) pins both the
     behaviour and the prompt, including that the old `continue` cannot come back.
 - ▶ **The remaining work is coverage, and it is the bulk of the programme.** Real counts from the
-  builder itself: **2,633 targets** (bucket a 2,576, bucket b 57), of which 601 also carry an
-  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **1,216
-  resolved, 0 pending → ~1,417 still unqueued** (`_resolved.log`: 1,186 KANA · 15 GUESS · 8 KATAKANA
-  · 5 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 1,211 lines). Keep rebuilding in
-  tranches with
-  `build_name_in_kana_queue.py --limit N`, answer locally in batches
-  (`apply_local_answers.py --queue name_in_kana`, fixed 2026-08-23), then collect. The remote routine
-  delivers ~5/day, so local batches are the road.
+  builder itself: **2,634 targets** (bucket a 2,576, bucket b 58), of which 601 also carry an
+  ojp-hani P1448 and are queued anyway because the two pipelines write disjoint values. **1,316
+  resolved, 0 pending → ~1,318 still unqueued** (`name_in_kana/_resolved.log`: 1,282 KANA · 18 GUESS
+  · 8 KATAKANA · 6 NO_KANA · 1 NOT_A_SHRINE · 1 ALREADY_STAGED; `name_in_kana.txt` 1,310 lines).
+  Just past half. Keep rebuilding in tranches with `build_name_in_kana_queue.py --limit N`, answer
+  locally in batches (`apply_local_answers.py --queue name_in_kana --answers
+  local_answers/<file>.tsv --apply` — the path is resolved relative to `shinto_miraheze/`, not the
+  repo root), then `collect_name_in_kana.py`. The remote routine delivers ~5/day, so local batches
+  are the road.
   ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
 
 ## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
