@@ -215,9 +215,12 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   the file that was not regenerated; `continue-on-error` stays, because a rate-limited weekly
   refresh must not fail the daily job.
 
-  - ▶ The refresh still has not happened — the forced run was itself rate-limited, partly by the
-    three SPARQL audits run earlier the same day. Re-dispatch `generate-quickstatements` with
-    `force_weekly=true` when WDQS is not being leaned on, and the id count should move off 5.
+  - ▶ **Re-dispatched 21:04:59Z as run `32777524826`**, after ~84 minutes with no SPARQL from this
+    session — the first forced run was itself rate-limited, partly by three audits I had run
+    earlier the same day. Commits at the end, so ~21:47Z.
+    - The check is whether `description_label_pairs.txt` moves off **5** `Did` lines against 3,514
+      `Duk`. If it does not, look for the new `::warning title=Weekly refresh did not run`
+      annotation on the run — that now says so explicitly instead of passing silently.
 
 - **🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining**
 
