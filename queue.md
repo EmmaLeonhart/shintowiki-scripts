@@ -65,6 +65,31 @@ taxonomy above, or goes to her directly.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
+## A-DUP. ▶ Are the migrated `P13723` ranking statements DUPLICATED at scale? — found 2026-08-24
+
+Emma asked on `[[Open questions]]` why `Q135041321` still has `P31 → Q135009132` (月次新嘗). Answered:
+it is the remove half of the ritsuryo-funding migration, it is staged, and it is safe because the
+item already carries the migrated `P13723 → Q135009132` form.
+
+**But reading the item turned up something she did not ask about.** Its migrated statements are
+duplicated:
+
+    P13723 -> Q135009132   qualified P459 -> Q135009120     (twice)
+    P13723 -> Q135160338   qualified P459 -> Q135009120     (twice)
+
+Identical down to the qualifier, and nothing is staged to clean them.
+
+- ▶ **Measure before deciding anything.** The migration covered ~4,802 pairs and the remove file
+  alone lists 3,952 `Q135160342` + 390 `Q135160338` + 192 `Q135009132` + smaller classes. If the
+  add half double-wrote, this is systemic; if it is one item, it is nothing. One SPARQL count of
+  items holding the same `(P13723 value, P459 qualifier)` more than once settles it.
+- ⚠ **Do NOT stage removals off this finding until it is measured.** A value-matched `-` line takes
+  *every* matching statement, so a naive dedup would delete both copies and leave the item with
+  nothing — the same shape as the `P361` hazard, and the 2026-07-10 audit exists because that class
+  of bug has bitten here before.
+- BLOCKED-ON-EXTERNAL for delivery only: the Wikidata lockout holds to 2026-09-18. Measuring and
+  staging are not blocked.
+
 ## A-KANA. ▶ kana-from-jawiki, FULL BUILD — Emma's call 2026-08-23; guessing is wired, draining is not
 
 Her decision via AskUserQuestion: the full version, not the bounded one — pull the kana from the
