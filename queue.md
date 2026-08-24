@@ -1052,8 +1052,10 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     their FULL vote, 160 unanimous ones, and the NTA-registry warning at the top.
   - The full vote is the point: a bare "4 distinct readings" count hides whether it is one dominant
     reading with a two-item typo tail or a real 47/19 split. Those need opposite decisions.
-  - [ ] Confirm it is live on the Pages site, then force-open it in her browser from the command
-    line — the rest of her instruction.
+  - ✅ **Live and confirmed**: https://emmaleonhart.github.io/shintowiki-scripts/kana-review.html
+    — HTTP 200, 41KB, 211 rows, deployed by run `32783052603`. Fetched and checked for the real
+    title and the NTA warning before opening it, rather than assuming the deploy meant the page.
+    Force-opened from the command line.
 
 - **Pinned tail (keep last)**
 
