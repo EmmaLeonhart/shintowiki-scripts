@@ -108,6 +108,11 @@ jobs:
         run: python generate_izumo_karakuni_page.py
         continue-on-error: true
 
+      - name: Build kana-review page
+        working-directory: modern-quickstatements
+        run: python generate_kana_review_page.py
+        continue-on-error: true
+
       - name: Combine sites
         run: |
           # Copy QS dashboard pages into main _site, renaming index to avoid collision
@@ -116,6 +121,9 @@ jobs:
           cp modern-quickstatements/_site/runs.html _site/runs.html 2>/dev/null || true
           # Ontology census — rebuilt monthly by ontology-census.yml, published here.
           cp modern-quickstatements/_site/ontology-census.html _site/ontology-census.html 2>/dev/null || true
+          # Kana review — Emma reads this to rule on readings, so it needs to be a page and
+          # not the JSON it is built from.
+          cp modern-quickstatements/_site/kana-review.html _site/kana-review.html 2>/dev/null || true
           # Copy all QS text files and summary
           cp modern-quickstatements/_site/*.txt _site/ 2>/dev/null || true
           cp modern-quickstatements/_site/summary.json _site/quickstatements-summary.json 2>/dev/null || true

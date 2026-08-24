@@ -1040,6 +1040,21 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     香取神社/Katori ×77, 白山神社/Hakusan ×59.
   - ⚠ Nothing staged, no generator written. This is the report she asked for, not a pipeline.
 
+- **▶ Kana review page — metabolised off the wiki-based queue 2026-08-24**
+
+  Her item, verbatim: *"MAke the requested github pages page. In fact do so and then run it and once
+  you confirm it is up use command line to force open it in my browser."* Prompted by
+  *"you made weird ass unreadable github json"* — `en_label_without_kana.json` is a machine artefact
+  and she has to read it to rule on the pairs.
+
+  - ✅ `modern-quickstatements/generate_kana_review_page.py` → `_site/kana-review.html`, wired into
+    `generate-pages.yml` (build step + the copy into the published site). 51 disagreeing pairs with
+    their FULL vote, 160 unanimous ones, and the NTA-registry warning at the top.
+  - The full vote is the point: a bare "4 distinct readings" count hides whether it is one dominant
+    reading with a two-item typo tail or a real 47/19 split. Those need opposite decisions.
+  - [ ] Confirm it is live on the Pages site, then force-open it in her browser from the command
+    line — the rest of her instruction.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the five session-local crons are running (this session 2026-08-05: work-loop bd4cf062
