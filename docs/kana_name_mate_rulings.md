@@ -269,3 +269,31 @@ A deity-shaped reading is only suspicious when the item's own name does **not** 
 selector today to report correct data as broken by not knowing the domain — after the shrine-word
 list that did not know やしろ, and the mismatch detector that did not know jawiki's disambiguation
 convention.
+
+
+## Confirmed-wrong readings, ruled 2026-08-24 — all uncited, so all fixable
+
+| item | ja | reading | Emma | disposition |
+|---|---|---|---|---|
+| [`Q97162781`](https://www.wikidata.org/wiki/Q97162781) | 若林八幡宮 | ほむたわけのみこと | *"name in Kana is wrong too"* | → わかばやしはちまんぐう, **and regenerate en/fr/id**, which were romanised from it |
+| [`Q117825988`](https://www.wikidata.org/wiki/Q117825988) | 駒形嶽駒弓神社 | お | *"the o reading is just wrong"* | **REMOVE only** — see below |
+| [`Q116784992`](https://www.wikidata.org/wiki/Q116784992) | 吉沼八幡神社 | つくば | *"I believe the kana was added by me and 100% wrong due to an automated script"* | → よしぬまはちまんじんじゃ |
+| [`Q135935015`](https://www.wikidata.org/wiki/Q135935015) | 春日神社 | カスガジンジャ | *"just an error"* | → かすがじんじゃ |
+| [`Q101781998`](https://www.wikidata.org/wiki/Q101781998) | 諏訪社 | すわじんじゃ | *"just an error"* | → すわしゃ |
+
+**`Q117825988` is a removal, not a correction — the right reading is already on the item.** It
+carries **two** `P1814` statements, both at normal rank:
+
+    お                       set 2025-06-27 02:37
+    こまがたけこまゆみじんじゃ   set 2025-07-31 00:06, via QuickStatements
+
+So somebody already fixed it and the bad value simply stayed. Rewriting it would create a third
+statement. ⚠ And a value-matched QuickStatements removal keyed on the property alone would take
+**both** — the removal has to match the value `お` exactly.
+
+**On the provenance of `つくば`:** her memory is right that she added it — 2025-06-27T02:36, by
+Immanuelle. Whether a script did it is not established: that particular edit carries no
+`#quickstatements` tag, unlike the later 駒形嶽 fix which does. Both bad values were written a minute
+apart (02:36 and 02:37), which *suggests* one bad session, but a `usercontribs` check meant to
+confirm it returned nothing because I passed the time bounds backwards for the direction. **Not
+verified, not disproved, and not chased further.**
