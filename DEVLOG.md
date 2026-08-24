@@ -4,6 +4,58 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 — Izumo entry 39: an erroneous merge, and two wrong readings of mine on the way there
+
+Emma found the cause by opening the item history: `Q135040908` was merged into `Q135040786` on
+**2026-05-23T21:28:33Z**. Everything else follows from that one edit.
+
+`Q135040908` **was** the entry-39 item, and a complete one — created 2025-06-24, ja label
+坐韓国伊**太**弖神社 (the 太 spelling, which is entry 39's register name), `P155` → `Q135040907`
+(entry 38), `P156` → `Q135040909` (entry 40), `P361` → the list at ordinal **39**, national Engishiki
+ordinal **2264**, and both ronsha candidates. The merge redirected it, so the list's ordinal-39
+membership now resolves to `Q135040786` and that item shows two list memberships.
+
+**So the fix is to undo the merge, not to create an item** — which is what I had been telling her to
+do. Restoring returns the QID the list already points at along with the sequence, the national
+ordinal and the ronsha links; a fresh item rebuilds all of that by hand and still fails to match what
+other statements reference.
+
+### Two readings of mine were wrong, and she caught both
+
+**1. The 大/太 spelling does not separate entries 28 and 39.** I wrote on 08-23 that
+`Q135040786`'s identity is entry 28 "because its ancient-name statement reads 大". Emma: *"the one
+that uses the sun character is on both of them."* She is right — expanding the register template
+shows entry 28's row carries 大 in the register-name column and **韓国伊太弖神社 in the modern-shrine
+column**. The 08-19 devlog had already recorded exactly this and warned against leaning on 大/太; I
+re-made a retired error five days later.
+
+What survives is narrower and does not depend on the spelling: `Q135040786`'s `P1448` is
+`同社坐韓国伊大弖神社`, character-for-character entry 28's *register* name.
+
+**2. "Ordinal 39 is empty and 29 holds the wrong shrine."** Also wrong, and this one was a parse
+error on my own query rather than a reasoning error. Re-measured:
+
+    28 -> Q135040786   correct
+    29 -> Q135040787   筑陽神社, correct
+    39 -> Q135040786   the defect
+    40 -> Q135040909   correct
+
+No ordinal is used twice. I had told her ordinal 39 did not exist at all, then that 29 held
+Karakuniitateno. Neither is true, and she had been trying to act on both.
+
+### The part worth keeping
+
+She said it plainly: *"you gave a bunch of codes in an unclear organization since this is editing a
+complex property."* I handed over `P361 → Q11395853 / P1545 "39" / P155 …` for an edit whose entire
+difficulty is knowing which value goes in which box of a qualified statement. Bare property codes
+carry none of that structure, and shintowiki's own CLAUDE.md already says not to make her look up
+property codes and to use English labels. Statements involving qualifiers get written out as the UI
+shows them — name first, code only where it must be pasted, nesting shown rather than described.
+
+**Nothing edited on Wikidata.** The lockout holds to 2026-09-18 and undoing a merge is hers to do.
+
+---
+
 ## 2026-08-23 (ninth) — the retracted model had left a third instance on Emma's page
 
 First tick after the retraction. Checked whether the wrong premise had been written anywhere else

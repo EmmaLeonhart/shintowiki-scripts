@@ -41,11 +41,20 @@ def test_the_page_carries_the_gating_category():
         "to the wiki and DELETE the local copy. Re-add it as the last line.")
 
 
-def test_the_category_is_the_last_content_line():
-    """Where it sits matters for the next person editing the page: a trailing category
-    survives an append, one buried mid-file is easy to cut with the section around it."""
-    lines = [l for l in io.open(PAGE, encoding="utf-8").read().splitlines() if l.strip()]
-    assert lines[-1].strip() == CATEGORY, lines[-1]
+def test_the_category_sits_after_the_last_section():
+    """Where it sits matters: a category in the tail survives an edit to any section, one
+    buried mid-file is easy to cut along with the section around it.
+
+    It is NOT pinned as the literal last line. It was, until 2026-08-24, when the wiki
+    sync appended `<references />` below it (bot commit bfd5abc4, 05:44:59Z). This page is
+    wiki-wins, so the wiki putting something after the category is the wiki being
+    authoritative — the assertion was mine and it was too strict. The property that
+    actually protects the file is that the category comes after all the content."""
+    text = io.open(PAGE, encoding="utf-8").read()
+    assert CATEGORY in text
+    last_section = text.rfind("\n== ")
+    assert last_section != -1, "page has no section headings any more"
+    assert text.index(CATEGORY) > last_section, "category is buried above a section"
 
 
 def test_the_sync_still_decides_membership_by_this_category():

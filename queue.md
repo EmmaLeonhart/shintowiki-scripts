@@ -158,31 +158,27 @@ Do not reintroduce it; `test_name_in_kana_guess_answer.py` asserts the file stay
 Emma, on the page, about exactly this shape: *"OH MY GOD IS THIS DONE OR NOT YOU CUNT"*. Neither of
 these needed her; both had been sitting as questions.
 
-- ▶ **意宇郡 entry 39, 同社坐韓国伊太弖神社 — and "it has no item" is NOT the right description of the
-  problem.** Her instruction stands: *"IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU
-  IDIOT."* But read against the live items rather than the table, 2026-08-23:
-  - **`Q135040786` already carries entry 39's ordinal.** Its P361 into `Q11395853` holds *two*
-    statements — `P1545 "28"` (`P155 Q11498399`, `P156 Q135040787`) **and** `P1545 "39"`
-    (`P155 Q135040907`, `P156 Q135040909`). One item standing in for two register entries, which is
-    the exact shape item 1 on `[[Open questions]]` described.
-  - **Its identity is entry 28, not 39.** Its `P1448` ojp-hani is 同社坐韓国伊**大**弖神社 — the 大
-    spelling, which is entry 28's register name. Entry 39's is 伊**太**弖, matching `Q135040778`
-    (entry 19). So the ordinal-39 statement is a stand-in on an item that is something else.
-  - **This is the `distinct_ordinals_LEGITIMATE` class** in `p361_multi_part_of_audit.json` — 47
-    items the audit marks DO NOT TOUCH, precisely because distinct ordinals are one shrine covering
-    two entries rather than a duplicate. So "create the item" is really **create, then MOVE one P361
-    statement**, and that is an add-then-remove: script 1 creates and adds; script 2 removes the
-    ordinal-39 statement from `Q135040786` only after a fresh SPARQL confirms the new item carries
-    it. Never one script (CLAUDE.md).
-  - ⚠ **The new item collides on both labels with `Q135040778`** — same ja 坐韓国伊太弖神社, same en
-    Nimasukarakuniitateno Shrine, because the two register entries genuinely share a name. It needs a
-    distinguishing description at creation, not afterwards.
-  - ⚠ **`create_items.py` cannot express the P361 statement**: `load_blocks` takes bare
-    `LAST|P|value` lines and there is no qualifier support, so `P1545`/`P155`/`P156` must follow as
-    ordinary QuickStatements once the QID exists. Also needs a new entry in its `GATES` map — a batch
-    with no gate is refused by design.
-  - BLOCKED-ON-EXTERNAL for *delivery* (`wikidata_editing_lockout.state`, 2026-09-18). Staging is
-    not blocked; the decomposition above is what to stage.
+- ✅ **CAUSE FOUND 2026-08-24 by Emma: an erroneous merge. No new item is needed — undo it.**
+  `Q135040908` was merged into `Q135040786` at **2026-05-23T21:28:33Z**
+  (`wbmergeitems-to` + `wbcreateredirect` in its history). `Q135040908` *was* the entry-39 item:
+  created 2025-06-24, ja 坐韓国伊**太**弖神社 (the 太 spelling = entry 39's register name), with
+  `P155`→`Q135040907` (38), `P156`→`Q135040909` (40), `P361`→list at ordinal **39**, national
+  ordinal **2264**, and both ronsha `P460`→`Q135070107`/`Q135070108`.
+  - **The list has exactly one wrong cell**, measured live: 28→`Q135040786` ✅, 29→`Q135040787`
+    筑陽神社 ✅, **39→`Q135040786`** ❌ (follows the redirect), 40→`Q135040909` ✅. **No ordinal is
+    used twice.**
+  - ⛔ **Two of my own readings were wrong and are corrected here, not left in chat.** I told her
+    (a) the 大/太 spelling separates entries 28 and 39 — the 08-19 devlog had already retired that,
+    because entry 28's *modern shrine* is spelled 太; and (b) ordinal 29 also held `Q135040786`
+    while 39 was empty — a parse error on my own query. Neither is true of the live data.
+  - ▶ **Restore the merge rather than create an item.** Un-merging returns the QID the list already
+    points at, plus the 38/40 sequence, the 2264 ordinal and the ronsha links — all of which a fresh
+    item would need rebuilt by hand and would still not match what other statements reference.
+    Then delete the two `part of`→list rows the merge pushed onto `Q135040786`: ordinal **39** and
+    the **bare** one. Keep 28.
+  - BLOCKED-ON-USER-ACTION: undoing a merge is a manual Wikidata action and her lockout holds to
+    2026-09-18. She is doing it herself; nothing to stage.
+
 - ⛔ **RETRACTED 2026-08-23. Both the "41 of 42 verdicts are wrong" finding and the "773 staged
   removals would strip a real membership" finding were MINE and both were WRONG**, on the same
   mistaken premise: that a register naming a shrine means the shrine belongs to the list. It does

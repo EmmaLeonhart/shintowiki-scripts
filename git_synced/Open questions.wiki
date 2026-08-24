@@ -34,20 +34,31 @@ That is the whole asymmetry. The file today: '''3,514 uk''' against '''5 id'''.
 : '''✓''' Fixed 2026-08-21 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]) — that case now emits a '''label-only''' line through the same uniqueness check. Not yet visible: the file only regenerates on a '''Sunday''' CI run, and CI was broken 08-19 → 08-22 (fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/3b0f44c8 3b0f44c8]). First Sunday run that survives, id should go from 5 to thousands. If it does not, the branch to re-read is that one.
 :* Uhh the pairs thing was actually somewhat made obsolete by the content I added to open questions a few revisions ago here https://shinto.miraheze.org/wiki/Open_questions?oldid=3832161
 
-=== Izumo — entry 39 is not missing, it is riding on entry 28's item ===
+=== Izumo entry 39 — CAUSE FOUND: an erroneous merge, and the fix is to undo it ===
 
-You said: ''"IF THERE IS NO ITEM THEN THERE SHOULD BE A FUCKING ITEM YOU IDIOT."'' Still the right call, but the table you were reading understated it — I checked the live items, not the table.
+You found it: [https://www.wikidata.org/w/index.php?title=Q135040908&action=history Q135040908] was merged into [[d:Q135040786|Q135040786]] on '''2026-05-23T21:28:33Z'''. That is the whole cause, and it means '''no new item needs creating''' — the entry-39 item already existed and is recoverable.
 
-'''[[d:Q135040786|Q135040786]] already carries entry 39.''' Its <code>part of</code> into [[d:Q11395853|Q11395853]] holds '''two''' statements: ordinal '''28''' and ordinal '''39'''. One item doing duty for two register entries.
+'''What Q135040908 was''', from its own history: created 2025-06-24 as the entry-39 shell, ja label 坐韓国伊'''太'''弖神社 with alias 同社坐韓国伊太弖神社 — the 太 spelling, which is entry 39's register name. It carried ''followed by'' → [[d:Q135040909|Q135040909]] (entry 40), ''follows'' → [[d:Q135040907|Q135040907]] (entry 38), ''part of'' the list at ordinal '''39''', the national Engishiki ordinal '''2264''', and both ronsha candidates ([[d:Q135070107|Q135070107]], [[d:Q135070108|Q135070108]]).
 
-And its identity is entry '''28''', not 39 — its ancient-name statement reads 同社坐韓国伊'''大'''弖神社, the 大 spelling. Entry 39 is 伊'''太'''弖, which matches [[d:Q135040778|Q135040778]] (entry 19).
+'''Current live state of the list''' — everything else is correct, there is exactly one wrong cell:
 
-: '''→''' So it is create-then-'''move''', not just create: the ordinal-39 statement has to come off [[d:Q135040786|Q135040786]] once the new item holds it, and per the standing rule that is two scripts with a SPARQL check between, never one. The new item will also share both labels with [[d:Q135040778|Q135040778]] — the two entries genuinely have the same name — so it needs a distinguishing description written at creation.
-: Staged in <code>queue.md</code>. Nothing goes out until your lockout lifts 2026-09-18.
-:* You are being very overly verbose in explaining this and it is significantly weaker. There is a missing shrine item that needs to be created but we are unsure as to what is even on it. I think this is the actual situation
+{| class="wikitable"
+! ordinal !! points at !! correct?
+|-
+| 28 || [[d:Q135040786|Q135040786]] 坐韓国伊大弖神社 || yes, its own entry
+|-
+| 29 || [[d:Q135040787|Q135040787]] 筑陽神社 || yes
+|-
+| '''39''' || [[d:Q135040786|Q135040786]] || '''no''' — follows the redirect from the merged item
+|-
+| 40 || [[d:Q135040909|Q135040909]] 志保美神社 || yes
+|}
 
-Please investigate the shrine and what links to it in order to see if any errors may have been introduced by the redirect being resolved and why I originally merged it. The fact they were merged is nontrivial as to why I did it and what information may have been lost.
-Why did I merge it?
+No ordinal is used twice. I earlier told you 29 was also Karakuniitateno and that 39 was empty — both were my own misreadings of the same query, and neither is true of the live data.
+
+: '''→''' The fix is '''restore the merge''', not build a new item. Un-merging brings back the QID the list already points at, the 38/40 sequence, the 2264 ordinal and the two ronsha links — all of which a fresh item would have to be rebuilt by hand and would still not match what other statements reference.
+: After the restore, the only thing left is to delete the ''part of'' → list rows on [[d:Q135040786|Q135040786]] that came across in the merge: the one carrying ordinal '''39''' and the one carrying '''no ordinal'''. Keep ordinal 28.
+: ⚠ Not done by me — your Wikidata lockout runs to 2026-09-18 and undoing a merge is a manual action anyway.
 
 === 御笏神社 — yes, it is staged, and I described it wrongly ===
 
