@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 (later, sixth) — the supershrine collapse is 23 items, and two thirds of the finding was already owned
+
+Measured the three shapes 御笏神社 suggested, with `audit_supershrine_collapse.py`. One is real and
+unowned; the other two are the existing kana-qualifier cleanup's population, and saying so is the
+point of measuring rather than announcing.
+
+**`part of` statements carrying more than one ordinal: 23 statements, 23 items.** A `part of`
+statement is one position in one list, so a second ordinal on it is the piped-link collapse made
+literal. `Q482065` and `Q110915859` carry five in a single statement; two more carry three; the rest
+two. Nothing in the repo looks for this shape, so this one is a genuine gap — and a small, bounded
+one.
+
+**Hyphen-truncated `P1814`: 735 values — NOT new.** 189 leading, 566 trailing, and **53 of 55
+sampled items are already in `kana_qualifier_add.txt`**. This is the ancient-katakana population
+`generate_kana_qualifier_add/remove` already owns, relocating those readings onto the ojp-hani
+`P1448`. Every sample is katakana, which is that cleanup's signature. Residue outside it in the
+sample: two items.
+
+**One kana qualifier stamped on several official names: 83 groups — same.** 33 of 35 sampled items
+already staged. Residue: two.
+
+So the honest report is 23 items of new work, not 841. Checking the overlap cost one grep and
+prevented re-announcing owned work as a discovery — the exact error made this morning with the
+kana detector.
+
+**Two things about the measurement itself:**
+
+- The first version of query 1 was unscoped — it asked WDQS to group **every** `part of` statement
+  on Wikidata and returned **504**. All three queries are now scoped to `wdt:P31 wd:Q845945`, and
+  the runner backs off 15/45/135s on 503/504 instead of retrying tightly, per the standing policy.
+- The hyphen test excludes **ー** (U+30FC), the katakana prolonged sound mark, which is ordinary and
+  correct in a reading. Including it would have reported most of the kana corpus as broken, and the
+  resulting number would have looked impressive and meant nothing.
+
+Nothing is staged. Splitting a five-ordinal statement is UNSAFE-TO-GUESS: the `P155`/`P156`
+qualifiers are piled in alongside, and pairing five ordinals to five predecessors is not mechanical.
+
+---
+
 ## 2026-08-24 (later, fifth) — the routine rewinds itself 153 commits, every run, on purpose
 
 Emma asked for a cloud run to test this morning's schedule change. It failed the same way, which is

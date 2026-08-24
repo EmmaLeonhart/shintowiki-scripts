@@ -979,35 +979,37 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   - **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
     which is additive and independent of whatever the other editor is doing.
 
-- **▶ The 御笏神社 supershrine: the collapsed statement, not the merges — found 2026-08-24**
+- **▶ The multi-ordinal `part of` collapse — MEASURED 2026-08-24, and it is 23 items**
 
-  that item is answered and its finding is on `[[Open questions]]`. What it turned up is bigger than
-  the question that started it, so it stays queued as this.
+  `modern-quickstatements/audit_supershrine_collapse.py` + `supershrine_collapse.json`. Three
+  shapes were suspected from 御笏神社 (`Q110915859`); measuring them says one is real and unowned
+  and two are already somebody's job.
 
-  `modern-quickstatements/audit_merge_provenance.py` diffs an item either side of each
-  `wbmergeitems-from` edit, which is the only way to see what a merge moved — a merge blanks its
-  source before redirecting, so the source itself shows nothing afterwards.
+  **1. `part of` statements carrying more than one ordinal — 23 statements, 23 items. REAL and
+  unowned.** A `part of` statement is one position in one list, so a second ordinal on it is the
+  piped-link collapse made literal. Worst are `Q482065` and `Q110915859`, five ordinals in a single
+  statement; then two items at three, and the rest at two. Nothing in the repo looks for this shape.
+  - [ ] Decide what a corrected statement looks like before touching any of them — one statement per
+    ordinal, presumably, with the matching `P155`/`P156` split out. UNSAFE-TO-GUESS: `P155`/`P156`
+    are also piled in, and pairing five ordinals to five predecessors is not mechanical.
+  - Nothing is staged. The three `Q110915859` removal lines already take its collapsed statement as
+    a side effect, so that one item is handled whatever is decided here.
 
-  **Settled for `Q110915859`:** both merges only ADDED (43 → 48 → 51, zero lost), and neither source
-  was a duplicate — `Q135192793` was the shrine as candidate for list ordinal **20**, `Q135192871` the
-  **sessha** as candidate for ordinal **34**. So the merges are a symptom of the same import, not the
-  cause of the supershrine.
+  **2. Hyphen-truncated `name in kana` — 735 values, and NOT a new finding.** 189 lead with a
+  hyphen, 566 trail. But **53 of 55 sampled items are already in `kana_qualifier_add.txt`** — this
+  is the ancient-katakana population the existing `generate_kana_qualifier_add/remove` pair owns,
+  relocating those readings onto the ojp-hani `P1448`. Every sample is katakana, which is that
+  cleanup's signature.
+  - Residue outside it in the sample: `Q11597242`, `Q246479`. Two of fifty-five.
+  - The hyphen test deliberately excludes **ー** (U+30FC), the prolonged sound mark, which is
+    ordinary in kana. Matching it would have reported most of the corpus as broken.
 
-  **The actual damage, and it predates both merges:** ONE `P361 → Q11380552` statement carrying
-  **five** `P1545` values at once (5, 14, 16, 20, 34) with five `P155` and five `P156` piled into it.
-  Emma's piped-link collapse, made concrete.
+  **3. One kana qualifier on several official names — 83 groups, same story.** 33 of 35 sampled
+  items are already in `kana_qualifier_add.txt`. Residue: `Q11592931`, `Q17226795`.
 
-  - [ ] **Is the five-ordinals-in-one-statement shape systemic?** Measure how many items carry a
-    `P361` with more than one `P1545` qualifier. That is the supershrine signature and nothing looks
-    for it today. Measure before staging anything.
-  - [ ] **The truncated kana is the same import.** `Q110915859` holds five `P1814`: おしゃくじんじゃ
-    (right) plus サキタマヒメノ-, ハヤシノ-, カタスカノ-, カミノ- — four ENTRY readings cut off with a
-    hyphen. `Q135040908` had `P1814 → -カラクニイタテノ`, hyphen on the front. Same defect, both ends.
-    Count how many `P1814` values begin or end with a hyphen; they are all wrong and none are staged.
-  - [ ] `P1448` on the same item carries ミナミコノ (the reading of 南子神社) as a `P1814` qualifier on
-    **five different** official names. Same cause, same measurement.
-  - NEEDS-INVESTIGATION until measured; nothing is staged and nothing should be. The removals already
-    in `list_membership_removals.txt` are value-matched, so they take the collapsed statement anyway.
+  ⚠ The first version of query 1 was unscoped and asked WDQS to group every `part of` statement on
+  Wikidata; it returned 504. All three are now scoped to `wdt:P31 wd:Q845945` and the script backs
+  off 15/45/135s on 503/504 rather than retrying tightly.
 
 - **▶ Metabolised off the wiki-based queue 2026-08-24**
 
