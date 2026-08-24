@@ -69,6 +69,14 @@ from shinto_miraheze.ua_contact import contact
 
 from shinto_miraheze.ua_for import ua_for
 
+# WDQS pacing. Emma, 2026-08-24: "We need to be properly throttling our own actions so that we
+# don't get a gazillion 429s with GitHub Actions." This script had `time.sleep(1)` between SPARQL
+# calls while the repo's documented floor is 2.5 — so it ran 2.5x faster than its own rule, in
+# VALUES batches of 150 across the whole target set, and 429'd itself out of every weekly refresh
+# since 2026-08-02. The 429 was reported for weeks as an external blocker; it was ours.
+WDQS_THROTTLE = 2.5
+
+
 OUT = os.path.join(HERE, "description_label_pairs.txt")
 GROUPS = os.path.join(HERE, "description_pair_collision_groups.json")
 PROPOSALS_DIR = os.path.join(REPO, "shinto-label-generator", "quickstatements")
@@ -137,7 +145,7 @@ def corpus_and_targets(cls, extra, lang):
     for b in sparql(q):
         qid = b["item"]["value"].rsplit("/", 1)[-1]
         out[qid] = (b["d"]["value"], b["hasLabel"]["value"] == "true", None)
-    time.sleep(1)
+    time.sleep(WDQS_THROTTLE)
     targets = [q_ for q_, (_, has, _p) in out.items() if not has]
     for i in range(0, len(targets), 150):
         batch = " ".join(f"wd:{x}" for x in targets[i:i + 150])
@@ -152,7 +160,7 @@ def corpus_and_targets(cls, extra, lang):
             qid = b["item"]["value"].rsplit("/", 1)[-1]
             d, has, _ = out[qid]
             out[qid] = (d, has, b["prefLabel"]["value"])
-        time.sleep(1)
+        time.sleep(WDQS_THROTTLE)
     return out
 
 
@@ -228,12 +236,12 @@ def main():
     lines, report, collisions = [], [], []
     for cls, extra in CLASSES:
         counts = langs_with_targets(cls, extra)
-        time.sleep(1)
+        time.sleep(WDQS_THROTTLE)
         for lang in sorted(counts, key=counts.get, reverse=True):
             if lang not in covered or counts[lang] == 0:
                 continue
             items = corpus_and_targets(cls, extra, lang)
-            time.sleep(1)
+            time.sleep(WDQS_THROTTLE)
             pref_t, gen = infer_templates(items, pref_labels(lang))
             if not (pref_t or gen):
                 report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
@@ -244,7 +252,7 @@ def main():
             # fixes are always safe (an item without a label forms no pair);
             # colliding units are emitted desc-only and their label withheld
             # into the collision groups for the cloud enrichment pipeline.
-            time.sleep(1)
+            time.sleep(WDQS_THROTTLE)
             taken = existing_pairs(cls, extra, lang)
             units = []   # (qid, desc_line, label_or_None, new_desc)
             fixed = skipped = already_standard = label_only = 0

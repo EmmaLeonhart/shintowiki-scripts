@@ -169,3 +169,33 @@ sentence:**
 
 - ▶ Her instruction stands: **fix the English from the kana** where a reading exists.
 - ⚠ Nothing staged. Wikidata lockout to 2026-09-18.
+
+
+## Omitting the word "shrine" — Emma, 2026-08-24, and it is NOT the sic rule
+
+> *"Anything with a name in Kana that just omits the word 'shrine' should have the word 'shrine'
+> put into it. The ones that seem like they're spelling mistakes or something like that, if they
+> have citations, we don't do it."*
+
+So an **omission** is repaired even when cited; a **spelling difference** that is cited is preserved
+as sic. Two different faults, two different dispositions.
+
+**Measured: 57 items** whose ja label ends in a shrine word (神社/神宮/大社/八幡宮/天満宮) but whose
+reading does not end in any shrine-word reading. **9 are NTA-sourced.**
+
+⚠ **But only some are omissions, and a bulk pass would corrupt the rest.** Four shapes are mixed in:
+
+| shape | example | disposition |
+|---|---|---|
+| genuine omission | 八幡神社 → `はちまん` *(NTA)* | **her rule applies** — add じんじゃ, citation notwithstanding |
+| **historical kana** | 福岡縣護國神社 → `ふくをかけんごこくじんじや` | ⛔ NOT an omission. `じんじや` is 旧仮名遣い for `じんじゃ` — the shrine word is already there, in old orthography. Also 宗我坐宗我都比古神社, 平群坐紀氏神社, 萬四郎神社. |
+| truncated katakana | 磐椅神社 → `-サキ` | the kana-qualifier pipeline's population; leave it |
+| **wrong value entirely** | 一之宮神社 → `スサノオ` (a deity), 駒形嶽駒弓神社 → `お` (one character), 吉沼八幡神社 → `つくば` (a place) | ⛔ appending じんじゃ produces nonsense. These are wrong *fields*, not short readings. |
+
+- ▶ The rule is right; the **selector** is what needs care. Matching on "does not end in a shrine
+  reading" catches all four shapes, and three of them must not be touched.
+- A correct selector has to treat `じんじや` / `しや` / `ぐう` in historical orthography as complete,
+  exclude anything already carrying the hyphen signature, and exclude values that are not readings
+  of the name at all.
+- NEEDS-DECISION on the wrong-value ones — `スサノオ` on 一之宮神社 is a deity in a reading field,
+  which is a different defect worth its own look.

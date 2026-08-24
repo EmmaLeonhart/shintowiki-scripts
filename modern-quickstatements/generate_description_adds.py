@@ -37,7 +37,16 @@ if _uar not in _usys.path:
 from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 from generate_description_fixes import (  # noqa: E402
+
     CLASSES, sparql, pref_labels, infer_templates)
+
+# WDQS pacing. Emma, 2026-08-24: "We need to be properly throttling our own actions so that we
+# don't get a gazillion 429s with GitHub Actions." This script had `time.sleep(1)` between SPARQL
+# calls while the repo's documented floor is 2.5 — so it ran 2.5x faster than its own rule, in
+# VALUES batches of 150 across the whole target set, and 429'd itself out of every weekly refresh
+# since 2026-08-02. The 429 was reported for weeks as an external blocker; it was ours.
+WDQS_THROTTLE = 2.5
+
 
 OUT = os.path.join(HERE, "description_adds.txt")
 GROUPS = os.path.join(HERE, "description_collision_groups.json")
@@ -77,7 +86,7 @@ def targets_with_pref(cls, extra, lang):
     }}
     """
     out = {b["item"]["value"].rsplit("/", 1)[-1]: [b["l"]["value"], None] for b in sparql(q)}
-    time.sleep(1)
+    time.sleep(WDQS_THROTTLE)
     qids = sorted(out)
     for i in range(0, len(qids), 150):
         batch = " ".join(f"wd:{x}" for x in qids[i:i + 150])
@@ -90,7 +99,7 @@ def targets_with_pref(cls, extra, lang):
         """
         for b in sparql(pq):
             out[b["item"]["value"].rsplit("/", 1)[-1]][1] = b["prefLabel"]["value"]
-        time.sleep(1)
+        time.sleep(WDQS_THROTTLE)
     return out
 
 
@@ -135,12 +144,12 @@ def main():
     lines, report, collisions = [], [], []
     for cls, extra in CLASSES:
         counts = langs_with_label_no_desc(cls, extra)
-        time.sleep(1)
+        time.sleep(WDQS_THROTTLE)
         for lang in sorted(counts, key=counts.get, reverse=True):
             if lang not in covered or counts[lang] == 0:
                 continue
             corpus = desc_corpus(cls, extra, lang)
-            time.sleep(1)
+            time.sleep(WDQS_THROTTLE)
             prefs = pref_labels(lang)
             pref_t, gen = infer_templates(corpus, prefs)
             if not (pref_t or gen):
@@ -170,7 +179,7 @@ def main():
                 report.append(f"{cls} {lang}: {counts[lang]} targets, no class-true template — skipped")
                 continue
             targets = targets_with_pref(cls, extra, lang)
-            time.sleep(1)
+            time.sleep(WDQS_THROTTLE)
             taken = existing_pairs(cls, extra, lang)
             # The uniqueness rule: proposals checked against each other
             # (internal) and against existing pairs (external); colliders are
