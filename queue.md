@@ -26,14 +26,14 @@ The Sunday `weekly-wiki-edit-test.yml` job re-tests a real edit and flips this t
 
 **THE QUEUE IS SPLIT IN TWO (Emma 2026-07-27).** Read this before picking work:
 
-- **§A — NOT gated on shintowiki.** Wikidata, external DBs, repo/CI work. **Runnable right now,
+- **that section — NOT gated on shintowiki.** Wikidata, external DBs, repo/CI work. **Runnable right now,
   today, regardless of the 403.** The work-loop starts here, every tick, always.
-- **§B — GATED on shintowiki access.** Nothing in §B can start until the marker says **GO**.
-  Do not fire §B decisions, do not "prepare" §B work, do not touch the wiki to check something.
+- **that section — GATED on shintowiki access.** Nothing in that section can start until the marker says **GO**.
+  Do not fire that section decisions, do not "prepare" that section work, do not touch the wiki to check something.
 
 **Work-loop, every tick:** SYNC (pull remote) first, then read the marker.
-- Marker **WAIT** → work §A only. §B does not exist for you.
-- Marker **GO** → §A still comes first; then §B unlocks and the decisions fire one at a time.
+- Marker **WAIT** → work that section only. that section does not exist for you.
+- Marker **GO** → that section still comes first; then that section unlocks and the decisions fire one at a time.
 
 **⏳ TIME-GATED WORK DOES NOT LIVE IN THIS FILE (Emma, 2026-08-20).** If the only thing standing
 between an item and being done is a DATE, it goes in `scheduled/scheduled_items.json`, not here
@@ -63,9 +63,9 @@ taxonomy above, or goes to her directly.
 
 ---
 
-# ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
+# ═══════ that section — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A-DUP. ✅ CLOSED 2026-08-24 by Emma: leave them. Measurement kept, nothing staged.
+## ✅ CLOSED 2026-08-24 by Emma: leave them. Measurement kept, nothing staged.
 
 Measured: **988 duplicate `P13723` groups across 917 items**, out of 16,995 statements on 8,188
 items — 11%, every group exactly ×2, byte-identical down to the `P13677`/`P248` reference.
@@ -79,7 +79,7 @@ order. **Emma's call: leave them.** They are untidy, not wrong.
   is finding a known and decided thing, not a new defect.
 - The audit script stays so the number is re-measurable without another investigation.
 
-## A-KANA. ▶ RESET 2026-08-24 on Emma's instruction — everything the programme produced is deleted
+## ▶ RESET 2026-08-24 on Emma's instruction — everything the programme produced is deleted
 
 I built a comparison layer she never asked for: `subject_mismatch()` compared each item's ja label
 against the first noun of its jawiki lead and declared the article "about a different shrine". The
@@ -122,10 +122,10 @@ Nothing had been delivered — the lockout blocks every write path and the newes
   repo** — `local_answers/label_typo_*.tsv`, not yet removed because she ordered the kana data out,
   not those.
 - ⭐ **SLOW IS THE DESIGN. ~5 items/day is intended behaviour, not a defect** (Emma, 2026-08-24).
-  Do not diagnose it, do not speed it up, do not route around it. See `A1`.
+  Do not diagnose it, do not speed it up, do not route around it. See that item.
 - ⚠ Not restarted. Nothing rebuilds until she says so.
 
-## A-OQ. ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
+## ▶ Metabolised off `[[Open questions]]` 2026-08-23 — both were ASKs that should have been DOs
 
 Emma, on the page, about exactly this shape: *"OH MY GOD IS THIS DONE OR NOT YOU CUNT"*. Neither of
 these needed her; both had been sitting as questions.
@@ -167,7 +167,7 @@ these needed her; both had been sitting as questions.
   - `recheck_orphan_memberships.py` is **deleted**: it answered "does the register name this shrine",
     which is not the question, and keeping it would invite the same wrong inference again.
 
-## A-CI. The 08-22 CI repair is VERIFIED. A separate, older defect remains.
+## The 08-22 CI repair is VERIFIED. A separate, older defect remains.
 
 Run `32615320387` (2026-08-23) settles the first half and rediagnoses the second.
 
@@ -185,7 +185,7 @@ that were red on 08-19 → 08-22 came back green or better:
 Every other job in the run is green. `secrets: inherit` and the 69 unbootstrapped imports are
 done; nothing further to check there.
 
-## A-CI2. ▶ The SUNDAY path does not fit in `generate-quickstatements`' timeout — and did not before this week
+## ▶ The SUNDAY path does not fit in `generate-quickstatements`' timeout — and did not before this week
 
 ⚠ **I got this wrong in the 05:10 status report** and am correcting it rather than leaving it: I
 guessed the 08-22 bootstrap fix had doubled the runtime by reviving 17 dead scripts. It had not.
@@ -230,7 +230,7 @@ still holds **5 `Did` against 3,514 `Duk`**.
   riding the daily job's budget. Raising the cap is the small fix, not the right shape.
   ⚠ Generation only. **Nothing is delivered** — the Wikidata lockout holds to 2026-09-18.
 
-## A0. 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
+## 🖥️ name-in-kana → label pipeline — BUILT 2026-08-03; bucket (b) DONE, bucket (a) draining
 
 **Status.** Builder `shinto_miraheze/build_name_in_kana_queue.py` + collector
 `collect_name_in_kana.py`, on the same work-file/ANSWER-marker pattern as the other cloud queues;
@@ -396,34 +396,19 @@ Model it on the `remote_queue.py` answer-marker + collector pattern (builder wri
 `<!-- ANSWER: -->` marker; the remote routine fills it; a `collect_*` script turns answers into QS) — same
 shape as `collect_label_typo_answers.py` / `collect_category_translations.py`.
 
-## A1. ⭐ Cloud-answer collectors — SLOW IS THE POINT. Do not optimise this.
+## Cloud-answer collectors — the routine's pace is intended. Do not optimise it.
 
-Emma, 2026-08-24, after a session deleted the routine's whole work supply by answering it locally:
+Emma, 2026-08-24: *"We're not trying to be fast with this project. This project is supposed to be
+slow."* ~5 items/day is the design; the routine's job is to run unattended forever and still move
+data. **The queue must keep work in it** — pending items are the only way to see the routine
+working, so draining one destroys the test surface.
 
-> *"The Claude routine being slow is intended behaviour… We're not trying to be fast with this
-> project. This project is supposed to be slow."*
+⚠ **She never complained about slowness.** This item began 2026-07-27 as a real bug — the routine
+did its work and lost it to a 403 on push. Sessions mutated that into "it is slow, find out why",
+which is nobody's complaint but ours. The full rule now lives in `CLAUDE.md`; it does not need
+restating here.
 
-> *"The entire fucking point of the Claude routine is that it could theoretically be running
-> basically forever and would not be getting any attention for running forever. At the same time,
-> it does actually do real progress on the readings and may very well be a thing that actually makes
-> it so that, in the future, once all our labelling stuff is finished, wikidata just consistently
-> has Kana for everything."*
-
-**What the routine is for:** running unattended, indefinitely, with nobody watching, and still moving
-the data. Its value is that it *exists and keeps going*, not its rate. ~5 items/day against thousands
-is fine. Fifteen months is fine.
-
-**⛔ The queue must KEEP work in it.** Her larger concern about the local bypass was not the answers
-it produced — it was that draining the queue destroys the only way to find out whether the routine
-works at all. The pending items are the test surface. A session that burns through them leaves
-nothing for the routine to chew on and no way to observe it.
-
-- **Do NOT:** measure the routine against a session on throughput · call ~5/day a trickle, a stall or
-  a bottleneck · "find out why it is slow" · build a faster path · drain a queue to finish it.
-- **DO:** check that it is still alive and still landing answers, and leave it alone.
-- The three prior notes in this file calling the rate a defect were wrong and are corrected here.
-
-## A2. ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
+## ⏭ Court-rank (P14005) people pipeline — pure Wikidata, finishable now
 
 Tags PEOPLE with P14005 from the ja.wp [[Category:日本の位階受位者]] tree. Decisions settled: create
 missing items, every rank held, primary-label rank map, skip 无位, no parent-rank double-tag.
@@ -440,7 +425,7 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
 - Note: base-rank items still carry sub-rank names as skos aliases (正四位 has "正四位上/下"); optional
   cleanup now that sub-ranks are their own items.
 
-## A3. 🤖 Shrine external-ID entity resolution — Wikidata + external sites
+## 🤖 Shrine external-ID entity resolution — Wikidata + external sites
 
 - 🤖 **Genbu.net (P13930)** — `generate_genbu_ids.py` → `genbu_ids.txt` (**1257**, up from 1041 after the
   kyūjitai + province-disambiguation passes). Registered; drips. Only the *live-wiki citation* source
@@ -571,7 +556,7 @@ missing items, every rank held, primary-label rank map, skip 无位, no parent-r
     the remainder now returns only `tests/test_user_agent_segregation.py`, where the old URL is a
     routing assertion rather than a call.
 
-## A4. 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
+## 🤖 Wikidata drip — staged, waiting on conflict_gate (NOT on the wiki)
 
 All registered atomic files are staged-but-not-delivered by design until `conflict_gate` lifts
 (~2026-08-08, or 7 days after ブルーノ・プラス goes quiet). Emma's caution gate, not a stall.
@@ -584,7 +569,7 @@ All registered atomic files are staged-but-not-delivered by design until `confli
   prefectural scraper?) once the drip resumes and the real gap is measurable.
 - 🤖 **Bruno archiver** — `archive_destroyed_items.py` runs in CI, auto-captures new damage.
 
-## A5. ✅ Husk guard — DONE and self-sweeping; kept because CI keeps re-emitting the lines
+## ✅ Husk guard — DONE and self-sweeping; kept because CI keeps re-emitting the lines
 
 - ⛔ **HUSK GUARD (2026-08-04).** Ten staged QuickStatements across five atomic files targeted the
   ブルーノ・プラス-repurposed items — including `Q123044569|Len|"Ōmiwa Shrine"`, which would have put
@@ -611,7 +596,7 @@ All registered atomic files are staged-but-not-delivered by design until `confli
     strip would quietly delete real staged work in files too large for anyone to notice.
 
 
-## A5b. Repurposed-item damage — Emma's THREE per-item rulings, promoted out of the doc
+## Repurposed-item damage — Emma's THREE per-item rulings, promoted out of the doc
 
 **Corrected 2026-08-19.** The queue carried this as one line saying *"document, don't touch; no
 contact"*. That was a flattening of Emma's actual position, and she called it: *"That was not
@@ -657,12 +642,12 @@ Conflating the two would restore statements onto items someone is still working 
 
 ---
 
-# ═══════ §B — GATED ON SHINTOWIKI · DO NOT START UNTIL `WIKI_GATE: GO` ═══════
+# ═══════ that section — GATED ON SHINTOWIKI · DO NOT START UNTIL `WIKI_GATE: GO` ═══════
 
 Everything below needs the wiki. While the blackout is on, these are not just blocked — **touching
 them means touching Miraheze, which is the exact thing the blackout exists to prevent.**
 
-## B0. 🤖 The gate itself
+## 🤖 The gate itself
 
 - **Weekly wiki edit-test** — `weekly-wiki-edit-test.yml`, Sundays. CI attempts a REAL edit to
   `User:EmmaBot/edit-test`. Success → unlocks for the week + marker GO; failure → 8-day lock + marker
@@ -674,7 +659,7 @@ them means touching Miraheze, which is the exact thing the blackout exists to pr
   `git_synced/Open questions.wiki`, plus every cleanup/orchestrator edit. Not fixable from CI.
   [[reference_miraheze_antiddos_challenge]]
 
-## B2–B8. ❓ DECISIONS — fire ONE at a time, in order, once the gate opens
+## ❓ DECISIONS — fire ONE at a time, in order, once the gate opens
 
 **Standing rule: EVERY decision carries a "walk me through it first / let's chat" option.** Emma often
 doesn't have the context to pick A vs B cold — she picks "explain it first", the bot lays out the
@@ -785,7 +770,7 @@ https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
 - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
   this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
 
-## B1b. Duplicated "part of" statements — ANSWERED and RECORDED 2026-08-19; one gated remainder
+## Duplicated "part of" statements — ANSWERED and RECORDED 2026-08-19; one gated remainder
 
 Emma hedged that it might be resolved. It is not, and the answer to the actual question ("is an
 unqualified `part of` always the leftover to strip?") is **no**.
@@ -825,7 +810,7 @@ careless "cleanup" away from being destroyed.
   different name. Folded into the Kokugakuin/orphan work rather than kept as a duplicate-statement
   class, so the same shrines are not walked twice.
 
-## B1c. ✅ Wiki-based queue — RESTORED 2026-08-19. Nothing open.
+## ✅ Wiki-based queue — RESTORED 2026-08-19. Nothing open.
 
 Emma decided *restore it* when asked directly, settling her July *"not 100% sure"*.
 
@@ -839,11 +824,11 @@ Restored as an empty section carrying only what it is for and how it round-trips
 was built — it rides the existing `[[Category:Git synced pages]]` sync, which is the hub's standing
 rule and which has round-tripped this page several times today.
 
-**The mirror-or-§B question is moot** and is deleted rather than left open: since it is a section of
+**The mirror-or-that section question is moot** and is deleted rather than left open: since it is a section of
 a page Emma writes in, it mirrors nothing. Copying 942 lines of `queue.md` onto a wiki page was never
 what she used it for.
 
-## B1d. Swept and closed on 2026-08-19 — no action, recorded so they are not re-raised
+## Swept and closed on 2026-08-19 — no action, recorded so they are not re-raised
 
 - **Sequential misc** — settled. Emma: *"I can confirm that I'm perfectly fine with this thing"*;
   design question answered *"sequential only"*. Built, 14 tests, ships empty.
@@ -857,13 +842,13 @@ what she used it for.
 - **"Edits being rejected"** — self-closing, as she said: *"this one is kind of tautological because
   in the event that this does get resolved, it's not going to be here anymore."* It is resolved.
 
-## B9. OUT-OF-SCOPE until the category drain is measured too slow — speed-up *("the category thing")*
+## OUT-OF-SCOPE until the category drain is measured too slow — speed-up *("the category thing")*
 
 A POSSIBLE future optimization to make wiki category-page processing faster (skip some ops on ~3k
 enwiki-junk cats, or shard the namespace). Only worth doing IF the Japanese-category-translation drain
 proves too slow. It isn't a problem now → dormant.
 
-## B10. Individual QuickStatements to CORRECT wrong/missing P958 sections
+## Individual QuickStatements to CORRECT wrong/missing P958 sections
 
 Emma, 2026-08-19, last item by her sequencing: *"There were actually significant errors here that we
 caught, but you caught them in such a bizarre way. We should have individual quick statements here
@@ -958,7 +943,7 @@ the lockout to 2026-09-18.
 
 ---
 
-## A5c. Create new items for the shrines lost to the repurposing — LAST, by Emma's sequencing
+## Create new items for the shrines lost to the repurposing — LAST, by Emma's sequencing
 
 **Emma's decision, 2026-08-19:** *"we create new otems for the ones lost due to their messing with
 them."* This replaces the old "is it debatable?" framing entirely — it is decided, and it covers
@@ -985,9 +970,9 @@ Known losses, from `docs/bruno_plus_analysis_2026-07.md` §4:
 - **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
   which is additive and independent of whatever the other editor is doing.
 
-## A-SUPER. ▶ The 御笏神社 supershrine: the collapsed statement, not the merges — found 2026-08-24
+## ▶ The 御笏神社 supershrine: the collapsed statement, not the merges — found 2026-08-24
 
-`A-MERGE` is answered and its finding is on `[[Open questions]]`. What it turned up is bigger than
+that item is answered and its finding is on `[[Open questions]]`. What it turned up is bigger than
 the question that started it, so it stays queued as this.
 
 `modern-quickstatements/audit_merge_provenance.py` diffs an item either side of each
@@ -1015,7 +1000,7 @@ Emma's piped-link collapse, made concrete.
 - NEEDS-INVESTIGATION until measured; nothing is staged and nothing should be. The removals already
   in `list_membership_removals.txt` are value-matched, so they take the collapsed statement anyway.
 
-## A-IZUMO2. ▶ Metabolised off the wiki-based queue 2026-08-24
+## ▶ Metabolised off the wiki-based queue 2026-08-24
 
 Emma's item, verbatim: *"Investigate Izumo entry 39 to see what is going on with it as per open
 questions"*.
@@ -1029,7 +1014,7 @@ Run against `Q135040786` this tick. The merge added 5 statements and removed non
 does not restore it, and the page had been telling her it would. That mattered because it is
 briefing a manual action.
 
-- The fix itself stays BLOCKED-ON-USER-ACTION in `A-OQ` — undoing a merge is manual and hers.
+- The fix itself stays BLOCKED-ON-USER-ACTION in that item — undoing a merge is manual and hers.
 - [ ] If she wants 2264 back it is a separate edit; it is staged nowhere.
 
 ## Pinned tail (keep last)
