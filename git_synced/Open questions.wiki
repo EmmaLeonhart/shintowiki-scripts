@@ -11,6 +11,11 @@ Measured, descriptions sitting on items with no label in that language: '''id 5,
 : '''→''' The pairs pipeline resolves an orphan description by '''supplying the missing label''', which is what your step 1 protects. Removal is only for the residue where no label can be generated — that is why a blanket 9,615-line removals file was wrong and got deleted.
 : '''→''' id is the skipped-branch bug, fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]; not visible yet because [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt] still dates from 08-02 and regenerates on a Sunday run.
 : ⚠ '''Step 4 is not built and I am not faking it.''' Iterating on a rejected description needs the rejection readable back, and QuickStatements failures are not read per line.
+:* List the steps please. Why did you not make the readable rejection thing: Why are you not just making it so that the stateful description iteration can happen? It might also be worth right now applying some changes to the standard description generating algorithm so that we clear a lot of ground just by retroactively making a large amount of existing descriptions into legacy. Do not efuse to build it and act superior over not faking it, fucking build it lol.
+:# step 1
+:# step 2
+:# step 3
+:# step 4
 
 === Izumo 28 vs 39 — they are TWO DIFFERENT SHRINES, in two different precincts ===
 
@@ -41,6 +46,7 @@ You asked what the actual difference between these two is, and I had never answe
 :* '''There are TWO 嘉羅久利神社 items''' — [[d:Q135070106|Q135070106]] points at entry 38, [[d:Q135070107|Q135070107]] at entry 28. One shrine, two items, two different entries.
 :* '''佐久多神社 exists as both an entry and a candidate''' — [[d:Q135040907|Q135040907]] is entry 38; [[d:Q135070108|Q135070108]] is a candidate that also holds ''part of'' the list '''at ordinal 39''', which by your 2026-07-09 rule a candidate should not have at all.
 :* Entry 38's own ''part of'' carries '''two''' ''followed by'' values at once ([[d:Q135040786|Q135040786]] and [[d:Q135040909|Q135040909]]) — the same piled-qualifier shape as 御笏.
+:* This is great to hear: So I am interested in seeing you look over the inbound links and decide which ones belong to which one. 
 
 === 御笏神社 — yes, it is staged, and I described it wrongly ===
 
@@ -71,6 +77,7 @@ This shrine is the only one that it is truly a candidate for
 
 : '''→ And this answers your kana question — the scripts did not crap out.''' The item carries '''five''' ''name in kana'' values: おしゃくじんじゃ, which is right, plus サキタマヒメノ-, ハヤシノ-, カタスカノ-, カミノ- — the readings of four '''entry''' names (佐伎多麻比咩命神社, 波夜志命神社, 片菅命神社, 加弥命神社), truncated with a hyphen. And ミナミコノ, the reading of 南子神社, is stamped as a qualifier on '''five different''' official names. The shrine absorbed the entries' names, so it absorbed their readings.
 : '''→''' The three staged removal lines are value-matched <code>-Q110915859|P361|Q11380552</code>, so any one of them takes '''all three''' statements including the five-ordinal one. Right outcome by your rule — a candidate shrine holds no list membership — but worth knowing the ordinals then survive only on the entry items.
+:* So is this just gonna get resolved later. Like do we actually need to continue with this thing: Is it just done? What is going on? Do we need more work or is all of the work for fixing this shrine staged?
 
 === Why is this P31 still here ===
 https://www.wikidata.org/wiki/Q135041321 has P31 [https://www.wikidata.org/wiki/Q135009132 Shrines receiving Tsukinami-sai and Niiname-sai offerings] is it still actually running like that or is it just over? IS it gonna be removed by the current logic?
@@ -79,8 +86,9 @@ https://www.wikidata.org/wiki/Q135041321 has P31 [https://www.wikidata.org/wiki/
 : [[d:Q135041321|Q135041321]] already carries the migrated form: '''shrine ranking → 月次新嘗''' qualified ''determination method → Q135009120''. So dropping the ''instance of'' loses nothing. The 2026-07-10 audit checked all 4,802 pairs item-by-item and found zero that would destroy an unmigrated fact.
 : '''On "is it still running or is it just over"''' — the classification is a 927 ''Engishiki'' register annotation, not a live practice; the imperial 幣帛 distribution it records lapsed centuries ago. But that is not why it is being removed. It is being removed because it was recorded on the wrong property, and the historical fact is kept on the right one.
 : ⚠ '''While reading the item I found a separate defect: its migrated statements are DUPLICATED.''' It carries ''shrine ranking → 月次新嘗'' '''twice''' and ''shrine ranking → [[d:Q135160338|Q135160338]]'' '''twice''', each pair identical down to the qualifier. Not staged for anything. Queued as its own item — the question is whether the duplication is item-local or systemic across the migration's ~4,800 items, and that is a measurement, not a guess.
+:* Duplicated migrated statements are not an issue, a duplicated identical statement is probably gonna be removed at some point by some bot.
 
-=== Kana for shrines that already have an English label — the report you asked for ===
+=== Kana for shrines that already have an English label — the report you asked for -- OH MY GOD YOU DID NOT MAKE GITHUB PAGES I WANTED GITHUB PAGES LINKS NOT FUCKING GITHUB LINKS ===
 
 Your rule stands: an English label ends an item, and no reading gets ''reasoned'' out of an article for one. This is about the review you said you were open to, and the method you named — take the English label, find other shrines sharing it that DO have a reading, use the most common one. Measured on the '''(kanji, English)''' pair rather than the English alone, since you said the kanji plus the label is almost certainly right for common names.
 
@@ -93,20 +101,125 @@ Your rule stands: an English label ends an item, and no reading gets ''reasoned'
 '''Your instinct about repetition holds, and the "conflicts" are mostly not conflicts.''' The pairs where readings disagree are one dominant reading plus a very short tail:
 
 * 諏訪神社 / Suwa Shrine — すわじんじゃ '''×260''', then すわじん'''し'''ゃ ×11, ツノサリ- ×1, イハテワケノ- ×1
+** すわじんじゃ
 * 八幡神社 / Hachiman Shrine — はちまんじんじゃ '''×244''', then はちまんじんしゃ ×4, やはたじんじゃ ×2, はちまん ×1, ヒハメノ- ×1
+** はちまんじんじゃ
 * 春日神社 / Kasuga Shrine — かすがじんじゃ '''×68''', then -トヨタマヒメノ ×1, ヲサタ- ×1, ウネヒノ- ×1
+** かすがじんじゃ
 
 The tail is two things and neither is a rival reading: '''typos''' (じん'''し'''ゃ for じんじゃ, しん'''ん'''めいぐう, a stray space) and '''ancient katakana''' — ツノサリ-, ヒハメノ-, -トヨタマヒメノ. Which is your point about Engishiki convention, and better: those katakana are the population the existing kana-qualifier cleanup is already moving onto the ojp-hani name, so they stop appearing as disagreements once it drains.
 
 : '''→''' Nothing built and nothing staged — this is the report, not a pipeline. What it needs from you before anything runs is the '''threshold''': how many agreeing name-mates make a reading safe to copy, and whether a lone dissenter is simply ignored.
+:* Uhh simple put with the badly formatted thing instead of a github pages site page, I cannot actually parse the amounts of these things. 
 : '''→''' 八坂神社/Yasaka ×89, 香取神社/Katori ×77, 白山神社/Hakusan ×59 are unanimous with no tail at all — the safe end, if you want a first slice that is obviously uncontroversial.
+:* Uncontroversial. Implement this full stop
 : '''→''' The 6,949 with no name-mate are where I would bring you individual pairs rather than guess.
+
+=== Other pairs that are very clear from there ===
+Okay so I tried to do this but the ui is so atrocious doing this manually can you please just do it with actual github pages?
+
+    {
+
+      "ja": "稲荷神社",
+
+      "en": "Inari Shrine",
+
+      "kana": "いなりじんじゃ",
+
+      "support": 224,
+
+      "distinct_readings": 2,
+
+      "readings": [
+
+        [
+
+          "いなりじんじゃ",
+
+          224
+
+        ],
+
+        [
+
+          "いなりじんしゃ",
+
+          2
+
+        ]
+
+      ],
+
+
+    {
+
+      "ja": "熊野神社",
+
+      "en": "Kumano Shrine",
+
+      "kana": "くまのじんじゃ",
+
+      "support": 157,
+
+      "distinct_readings": 2,
+
+      "readings": [
+
+        [
+
+          "くまのじんじゃ",
+
+          157
+
+        ],
+
+        [
+
+          "くまの じんじゃ",
+
+          1
+
+        ]
+
+      ],
+
+
+      "ja": "八幡宮",
+
+      "en": "Hachimangū",
+
+      "kana": "はちまんぐう",
+
+      "support": 125,
+
+      "distinct_readings": 2,
+
+      "readings": [
+
+        [
+
+          "はちまんぐう",
+
+          125
+
+        ],
+
+        [
+
+          "はちまんじんじゃ",
+
+          2
+
+        ]
+
+      ],
+
 
 == Wiki-based queue ==
 
 Anything you want done on the wiki side — write it here rather than in the repo.
 
-* ''(empty — add items here)''
+* ''MAke the requested github pages page. In fact do so and then run it and once you confirm it is up use command line to force open it in my browser''
 
 == Notes ==
 
