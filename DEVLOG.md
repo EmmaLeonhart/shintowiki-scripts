@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 (later, fourth) — the routine never broke; it was scheduled into the storm
+
+Emma's design, and it is a scheduling problem not an auth one: the Wikidata work is UTC-gated and
+stateful so it has to run first, then the wiki queue, once a day — and the Claude queue runs in the
+quiet **5 to 6 hours before** that cron, so the two never race.
+
+**Measured, pushes per UTC hour over 7 days.** 03Z–07Z carries **131 of ~250** — `cleanup-loop`
+(02:23Z) grinding through its orchestrator chain, plus build-remote-queue 04:00Z,
+generate-shrines-missing-en-label 05:17Z, enwiki-mention-check 06:40Z, inject-scheduled-items 07:17Z,
+generate-pages 07:23Z. **The routine sat at 07:41Z — the tail of exactly that.** Every run finished
+into a moved `main` and had to pull-rebase-retry.
+
+**Moved to `0 21 * * *`.** 21:00Z is 5h23m ahead of `cleanup-loop`, inside her window, and sits
+between the two nearest `strip-property-dumps` fires (`37 */2 * * *` → 20:37 and 22:37) — that one is
+12 commits a day on its own and is the main source of scattered conflicts across the rest of the
+clock.
+
+**Three things in the record were wrong and are corrected:**
+
+- **The routine never stopped.** Its own commits run daily and unbroken from 2026-05-20 to today,
+  ~130 pushes. Today's landed `f528b5e7`.
+- **The 403 was never an auth failure.** The full error is
+  `RPC failed; HTTP 403` followed by `! [rejected] main -> main (fetch first)` and
+  *"the remote contains work that you do not have locally"* — a non-fast-forward. Someone read the
+  403 line, concluded permissions, and built the rest on it.
+- **The repo was always bound.** `session_context.sources` carries
+  `git_repository: https://github.com/EmmaLeonhart/shintowiki-scripts`. The "created via the API so
+  it has no repo, recreate it in the console" hypothesis was never true, and its prompt already
+  handles rejection with `git pull --rebase` and a retry.
+
+**What did change, and is what she remembers:** 05-20 → 05-23 it ran **many times a day** — 13 runs
+on 05-21 — carrying `consume_remote_queue.state`, working the queue **in order**. From 05-24 the
+cursor disappears from every commit and it becomes one run a day picking **5 at random from 1,599**,
+640 of which are `fandom_unique`. So the queues she watches advance a few items a week and look dead
+while the routine is in fact working perfectly.
+
+---
+
 ## 2026-08-24 (later, third) — a hundred more kana, and a false positive with a new mechanism
 
 Eleventh `A-KANA` tranche: 100 built, 100 answered, 0 rejected, 99 QS lines. Coverage **1,216 →
