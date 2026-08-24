@@ -65,30 +65,41 @@ taxonomy above, or goes to her directly.
 
 # ═══════ §A — NOT GATED ON SHINTOWIKI · RUN THESE NOW ═══════
 
-## A-DUP. ▶ Are the migrated `P13723` ranking statements DUPLICATED at scale? — found 2026-08-24
+## A-DUP. ▶ MEASURED 2026-08-24: 917 items, 988 duplicated `P13723` statements — and no safe QS fix
 
-Emma asked on `[[Open questions]]` why `Q135041321` still has `P31 → Q135009132` (月次新嘗). Answered:
-it is the remove half of the ritsuryo-funding migration, it is staged, and it is safe because the
-item already carries the migrated `P13723 → Q135009132` form.
+Emma asked why `Q135041321` still has `P31 → Q135009132`. Answering that turned up something she
+did not ask about: its migrated `P13723` statements are written twice. Now measured rather than
+guessed, by `modern-quickstatements/audit_duplicate_rankings.py` — ONE aggregate SPARQL query, not
+a sweep, because statement multiplicity on Wikidata has no cheaper source.
 
-**But reading the item turned up something she did not ask about.** Its migrated statements are
-duplicated:
+**The numbers** (`duplicate_rankings.json`):
 
-    P13723 -> Q135009132   qualified P459 -> Q135009120     (twice)
-    P13723 -> Q135160338   qualified P459 -> Q135009120     (twice)
+- `P13723` overall: **16,995 statements across 8,188 items**.
+- **988 duplicate groups across 917 items** — 11% of the population.
+- **Every group is exactly ×2.** No item has three copies.
+- By ranking value: `Q135160342` 706 · `Q135160338` 200 · `Q135009132` 40 · `Q135009152` 21 ·
+  `Q135009205` 9 · `Q135009157` 9 · `Q135009221` 2 · `Q134917284` 1.
 
-Identical down to the qualifier, and nothing is staged to clean them.
+**The copies are byte-identical** — same value, same `P459 → Q135009120` qualifier, same single
+reference (`P13677` + `P248 → Q135159299`). Checked on `Q135039025` and `Q135041321`.
 
-- ▶ **Measure before deciding anything.** The migration covered ~4,802 pairs and the remove file
-  alone lists 3,952 `Q135160342` + 390 `Q135160338` + 192 `Q135009132` + smaller classes. If the
-  add half double-wrote, this is systemic; if it is one item, it is nothing. One SPARQL count of
-  items holding the same `(P13723 value, P459 qualifier)` more than once settles it.
-- ⚠ **Do NOT stage removals off this finding until it is measured.** A value-matched `-` line takes
-  *every* matching statement, so a naive dedup would delete both copies and leave the item with
-  nothing — the same shape as the `P361` hazard, and the 2026-07-10 audit exists because that class
-  of bug has bitten here before.
-- BLOCKED-ON-EXTERNAL for delivery only: the Wikidata lockout holds to 2026-09-18. Measuring and
-  staging are not blocked.
+**Cause not established, and the decision does not depend on it.** Two theories are already dead:
+it is not the generator's "additional reference groups become separate lines" branch, because the
+references are identical; and it is not two source claims per item, because
+`migrate_ritsuryo_funding_remove.txt` holds `P31` only and lists each of these items once. A
+double-submitted batch fits the evidence but is not proven.
+
+**⛔ The reason this stops here: it cannot be expressed as a QuickStatement.** A removal line is
+VALUE-MATCHED, so `-Q…|P13723|Q…` takes *both* copies; re-adding one afterwards is a second script
+that could fire before the removal under the random run order and lose the statement outright. The
+add-first/remove-later rule exists precisely because that ordering is not controllable, and dedup
+needs remove-first, which inverts it. Per `CLAUDE.md` — *"If something genuinely cannot be
+expressed as a QuickStatement, STOP and raise it with Emma"* — raised via AskUserQuestion.
+
+- **Nothing is staged and nothing should be** until she answers.
+- Worth stating plainly: the duplicates are untidy, not wrong. No fact is lost or misstated by
+  them, so "leave them" costs nothing but tidiness, while a 917-item remove-then-re-add costs real
+  data if the race lands badly.
 
 ## A-KANA. ▶ kana-from-jawiki, FULL BUILD — Emma's call 2026-08-23; guessing is wired, draining is not
 

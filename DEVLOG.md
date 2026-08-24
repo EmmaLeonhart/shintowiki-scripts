@@ -4,6 +4,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 (later) — 917 items duplicated, and the fix is the one thing the pipeline cannot express
+
+`A-DUP` measured. `Q135041321` was not noise: **988 duplicate `P13723` groups across 917 items**,
+out of 16,995 statements on 8,188 items — 11% of the population. Every group is exactly ×2; no item
+has three. By value: `Q135160342` 706, `Q135160338` 200, `Q135009132` 40, `Q135009152` 21, and four
+smaller classes.
+
+`modern-quickstatements/audit_duplicate_rankings.py` does it in ONE aggregate query. That is the
+line the "do not hammer Wikidata" rule actually draws — it was written against a run firing ~365
+queries, and grouping server-side to return only the duplicates is the opposite of that. There is
+also no cheaper source; statement multiplicity is a fact about Wikidata, so no jawiki category can
+answer it.
+
+**Two causal theories died on contact with the data.** The copies are byte-identical — same value,
+same `P459 → Q135009120`, same single reference (`P13677` + `P248 → Q135159299`) — so it is not the
+generator's "additional reference groups become separate lines" branch. And
+`migrate_ritsuryo_funding_remove.txt` holds `P31` only and lists each affected item once, so it is
+not two source claims per item. A double-submitted batch fits, but is not proven, and the decision
+does not depend on it.
+
+**Why it stops at a question rather than a staged file.** A QuickStatements removal is
+VALUE-MATCHED: `-Q…|P13723|Q…` takes *both* copies. Re-adding one is a second script, and under the
+random run order it can fire before the removal — leaving the item with nothing. The
+add-first/remove-later rule exists because that ordering is not controllable, and dedup needs
+remove-first, which inverts it. `CLAUDE.md` names this exact case: *"If something genuinely cannot
+be expressed as a QuickStatement, STOP and raise it with Emma."* Raised by AskUserQuestion; nothing
+staged.
+
+Worth keeping separate: the duplicates are **untidy, not wrong**. No fact is lost or misstated. So
+leaving them costs tidiness, while a 917-item remove-then-re-add costs real data if the race lands
+badly — and "visibility is worse than data loss" points the same way.
+
+**A test caught the new script on its first run.** It targeted `query.wikidata.org`, retired in the
+2026-08-04/08-20 migration, and `tests/test_sparql_endpoint_migration.py` failed the suite. The
+numbers above were then re-taken against `query-main.wikidata.org` and came back identical, so the
+retired endpoint was not serving something stale — but that was worth confirming rather than
+assuming, since a measurement read off a dead endpoint is exactly the kind of thing that looks
+fine.
+
+---
+
 ## 2026-08-24 — a merge destroys its own evidence, so read the revisions either side of it
 
 Emma asked twice on `[[Open questions]]` why she had merged something into 御笏神社 and what the
