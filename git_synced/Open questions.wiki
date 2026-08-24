@@ -2,17 +2,37 @@ __NOTOC__
 
 == Open questions ==
 
+=== Was the wiki agent standardised? — you asked this 08-19 and never got the answer here ===
+
+Your hypothesis: ''"There might have been some Shinto wiki edits that were not properly done if the user agent was not standard across all of the edits."'' You were right, and it was worse than one script.
+
+'''~30 distinct bot names across 58 files.''' The farm allowlists '''one exact string''', so everything running as <code>ShintoWikiBot/1.0</code>, <code>ShintoOrchestrator/1.0</code>, <code>ShintoWikiLabels</code>, <code>ShrineRankingPageBot</code>, <code>ShikinaishaListBot</code> and the rest could not be served no matter what the allowlist said. Three more found in the same pass: 6 files sent the '''wiki-side''' contact to <code>www.wikidata.org</code>; 14 shipped <code>{contact('wikidata')}</code> as literal text, braces and all; 4 wrapped the agent import in a <code>try/except</code> that '''failed open''' to a hand-built string, marked no-cover.
+
+: '''✓''' All fixed 2026-08-19 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/8ac7d8a2 8ac7d8a2]). <code>tests/test_no_hardcoded_user_agents.py</code> bans the pattern rather than the instances — the first version banned literals ''naming'' a known bot, which is why it caught 10 files and missed 48.
+: '''This answer has existed in DEVLOG.md since 08-19 and was never put here.''' That is the actual complaint you raised on 08-23, and it is a fair one: answered in the log I write, absent from the page you read.
+:* '''Please remove this from the open questions now that it is resolved. We are not supposed to be having such specific internals here as it is slightly sensitive information to our operations'''
+
 === Ukrainian and Indonesian labels ===
 
-You are right that the pairs framing was superseded. Your four-step path is now written down in the repo as [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/docs/description_label_policy.md docs/description_label_policy.md], quoted verbatim, and <code>CLAUDE.md</code> points at it — it had been living only in a chat message and one script docstring, which is why the answer here was still describing the old mechanism.
+'''Found it. One bug, and it explains why uk and id behaved opposite ways.'''
 
-Where the two meet: the pairs pipeline resolves an orphan description by '''supplying the missing label''', which is what your step 1 is protecting. Removal is only for the residue where no label can be generated. That is why the blanket 9,615-line removals file was wrong and got deleted — 3,511 of its items were also queued for a description by the other pipeline.
+Where it came from: <code>generate_description_fixes.py</code>, which has handled this since your 2026-07-07 spec — set the standardised description, then add the label, as one unit, 100/day, into [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt].
 
-Measured today, descriptions on items with no label in that language ([https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/orphan_descriptions_audit.json orphan_descriptions_audit.json], 10,250 total): '''id 5,024''', '''uk 4,591''', nl 168, everything else small.
+It had this:
 
-: '''→''' id is the skipped-branch bug, fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b] — not yet visible because [https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/modern-quickstatements/description_label_pairs.txt description_label_pairs.txt] still dates from 08-02 and only regenerates on a '''Sunday''' CI run.
-: '''→''' The uk residue (~1,900 with a description and no label coming) is the real step-1 population. I will size it against the regenerated file rather than the stale one.
-: ⚠ '''Step 4 is not built and I am not faking it.''' Iterating on a rejected description needs the rejection to be readable back, and QuickStatements failures are not read per-line today.
+<pre>
+new = pref_template or generic
+if not new or new == desc:
+    skipped += 1
+    continue          # <- dropped the LABEL too
+</pre>
+
+An item whose description was '''already''' the standard string got skipped entirely, label included — even though missing a label is the only reason it is a target. Your own 2025 bot pass had already standardised every Indonesian description to <code>kuil Shinto di Prefektur {pref}, Jepang</code>, so that branch caught all '''5,024''' of them on every weekly run. Ukrainian was never standardised, so uk sailed past it.
+
+That is the whole asymmetry. The file today: '''3,514 uk''' against '''5 id'''.
+
+: '''✓''' Fixed 2026-08-21 ([https://github.com/EmmaLeonhart/shintowiki-scripts/commit/96e3cb6b 96e3cb6b]) — that case now emits a '''label-only''' line through the same uniqueness check. Not yet visible: the file only regenerates on a '''Sunday''' CI run, and CI was broken 08-19 → 08-22 (fixed [https://github.com/EmmaLeonhart/shintowiki-scripts/commit/3b0f44c8 3b0f44c8]). First Sunday run that survives, id should go from 5 to thousands. If it does not, the branch to re-read is that one.
+:* Uhh the pairs thing was actually somewhat made obsolete by the content I added to open questions a few revisions ago here https://shinto.miraheze.org/wiki/Open_questions?oldid=3832161
 
 === Izumo entry 39 — CAUSE FOUND: an erroneous merge, and the fix is to undo it ===
 
@@ -48,16 +68,19 @@ I first said the point was that it carries repeated ordinals and the repeats are
 
 : '''→''' Removal is correct. Nothing about it depends on the repeats.
 : Yeah this is one of the "super repeaters" which exists because of the fact that on the original jawiki article that the import came from, there were a bunch of sessha that were piped links going to the same shrine. The shrine is not even rightfully on the [[:da:Q11380552|List of Shikinaisha in Izu Province (Q11380552)]] since it is not a shikinaisha only its setsumatsusha are
-: This is to say it is not even a candidate shrine
+: This is to say it is not even a candidate shrine 
 :* Oh nvm looking closer it is a candidate shrine for a lot of them at least superficially but it looks like a supershrine pattern
 :* Looking at the jawiki page it is pretty clear. It is a candidate shrine itself, but it is a goshi candidate for 4 others
-:* '''佐伎多麻比咩命神社''' — this shrine is the only one that it is truly a candidate for
+:* '''佐伎多麻比咩命神社'''
+This shrine is the only one that it is truly a candidate for
 :*The rest of the shrines it is supposedly a candidate for are actually ones that have goshi merged into it. A completely solved data representation problem.
 :*As it is simply a candidate shrine, it shold not have the part of list of shikinaisha anyways so the editor should eventually remove it
 :*Its name in Kana is weird and idk if our scripts just crapped out on it or something
 
-: '''→''' Picked up. Two merges, both yours, both on 2025-12-01: [[d:Q135192793|Q135192793]] (a plain duplicate — ''sanctuaire d'Oshaku'') at 03:08, and [[d:Q135192871|Q135192871]] (the '''sessha''' item — ''sanctuaire d'Oshaku (sessha)'') at 03:13. One unrelated redirect resolution by KrBot in July.
-: The lead, not yet confirmed: merging the '''sessha''' item into the '''shrine''' item would carry the sessha's candidacies onto the shrine — which is the six-<code>P460</code> shape you describe, where 佐伎多麻比咩命神社 is the only true one. If that is the source, the merge is the cause and the ''part of'' removals are treating the symptom. Statement-level attribution next.
+
+Please investigate the shrine and what links to it in order to see if any errors may have been introduced by the redirect being resolved and why I originally merged it. The fact they were merged is nontrivial as to why I did it and what information may have been lost.
+
+* Oh my god please investigate why the shrine was removed and what was going on with it
 
 === Why is this P31 still here ===
 https://www.wikidata.org/wiki/Q135041321 has P31 [https://www.wikidata.org/wiki/Q135009132 Shrines receiving Tsukinami-sai and Niiname-sai offerings] is it still actually running like that or is it just over? IS it gonna be removed by the current logic?
@@ -71,7 +94,7 @@ https://www.wikidata.org/wiki/Q135041321 has P31 [https://www.wikidata.org/wiki/
 
 Anything you want done on the wiki side — write it here rather than in the repo.
 
-* ''(empty — add items here)''
+* ''Investigate Izumo entry 39 to see what is going on with it as per open questions''
 
 == Notes ==
 
