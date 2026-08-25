@@ -18,7 +18,11 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   Both generators now use the 2.5s floor, and both emit a `::warning` naming the file that was not
   regenerated when they bail.
 
-  - [ ] **Unverified: whether 2.5s is actually enough.** The next `cleanup-loop` fire (02:23Z daily)
+  - **✓ Half verified 2026-08-24: the `force_weekly` dispatch input works.** Run `32792378280`
+    reached step 32, "Description fixes (desc-without-label pairs, weekly Sunday refresh)", on a
+    **Monday** — so the weekly steps no longer need an actual Sunday to be exercised, and the
+    remaining question can be tested on demand rather than waited out. Steps 1–31 all green.
+  - [ ] **Still unverified: whether 2.5s is actually enough.** The next `cleanup-loop` fire (02:23Z daily)
     exercises it on a weekday, where the weekly steps do not run — so the real test is either a
     Sunday or another `force_weekly=true` dispatch. Check for the `::warning` annotation; its
     absence plus a changed `Did` count is the pass.
