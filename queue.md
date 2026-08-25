@@ -214,9 +214,14 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
   damage** — nothing to merge, nothing to link, and the class dissolves the same way the
   "duplicates" did.
 
-  - [ ] Optional and cosmetic: making 八神殿 / 座摩神 / 御門巫祭神 / 生島巫祭神 `part of` the Jinmyōchō
-    would empty this report to the 2 genuinely bare items. Only worth it if the report is meant to be
-    a zero-inbox; it is a Wikidata edit, so it waits for 2026-09-18 either way.
+  **Decided 2026-08-24: not doing it.** The stated condition was "only worth it if the report is
+  meant to be a zero-inbox", and the 2026-08-24 work settled that it is not. The report's value
+  turned out to be as a *sample* — its 149 rows were what exposed the P460 test, and the 816 real
+  removals came from widening **past** the report to the whole defect shape, not from cleaning it.
+  Adding four `part of` statements to make a browse table read empty would assert something about
+  the register's structure in order to tidy a display, which is the wrong direction: the palace
+  groupings genuinely are not `part of` the Jinmyōchō item the way the province lists are, and that
+  distinction is the thing the report is showing.
 
   **Housekeeping done 2026-08-19:** the generator called the class "living/entry duplicates &mdash; the
   same shrine under the same name &rarr; link or merge". It now calls them **name collisions**, says
@@ -335,7 +340,9 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
 
 - **Pinned tail (keep last)**
 
-  - [ ] Ensure the five session-local crons are running (this session 2026-08-05: work-loop bd4cf062
-    :03, auto-flush 73fd217e :15, status-report c6048135 :42, briefing acf528e2 08:03, debrief
-    4c5db204 23:57). SYNC fast-forwards onto origin/main each tick.
+  - [ ] Ensure the five session-local crons are running. **Verified live 2026-08-24**, this session:
+    work-loop `0a52da5c` :03, auto-flush `aa735a3c` :15, status-report `f371ceee` :42, briefing
+    `ff8886e6` 08:03, debrief `924d2b08` 23:57. SYNC fast-forwards onto origin/main each tick.
+    (The IDs recorded here were the 2026-08-05 session's and had been dead since it ended — crons
+    are session-local, so a listed ID is only ever evidence about the session that made it.)
   - [ ] Run the status-report action once more independently as an end-of-session summary.
