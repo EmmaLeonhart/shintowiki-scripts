@@ -2,384 +2,58 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
-- **✓ WDQS throttle VERIFIED 2026-08-24 — 2.5s is enough. Item closed.**
+- **The two-Kokugakuin-id items — a reading job, worked off the table**
 
-  Forced run [`32792378280`](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/32792378280),
-  `force_weekly=true`, **success**, all 32 steps green.
+  Emma's ruling: leave them to be worked off the table rather than per-item with her. ~66 items each
+  hold two Kokugakuin ids, so each is a candidate for two different 927 entries and needs a "which
+  entry" `P958` qualifier. She earlier ruled all of them ambiguous.
 
-  | criterion | result |
-  |---|---|
-  | no `::warning title=Weekly refresh did not run` | **none** — the only annotation on the run is an unrelated Node 20 deprecation notice |
-  | `description_label_pairs.txt` regenerates | **10,716 lines**, committed as `cfe8f660` at 01:31Z. It had not moved since 2026-08-02 |
-  | the generator completes its sweep | per-language breakdown printed for every language — `id` 5,024 targets, `uk` 4,591, `nl` 168, `de` 28, `fr` 24, `ar` 15, `vi` 11 |
-
-  The description step ran **00:42:24Z → 01:10:57Z, 28.5 minutes on its own**, against a 150-minute
-  cap. That duration IS the verification: at `time.sleep(1)` the same sweep 429'd itself out of WDQS
-  in a fraction of the time and reported green through `continue-on-error`. Slower and finishing is
-  the pass condition, not a cost of it.
-
-  Two things this closes for good. The `force_weekly` input means a Sunday-gated step can be
-  exercised on any day, so the next silent failure in one is reproducible instead of a week-long
-  wait. And the 429 was ours the whole time — reported as BLOCKED-ON-EXTERNAL in three status
-  reports when a rate limit from our own scheduled job against our own documented floor was never
-  external.
-
-- **Individual QuickStatements to CORRECT wrong/missing P958 sections**
-
-  Emma, 2026-08-19, last item by her sequencing: *"There were actually significant errors here that we
-  caught, but you caught them in such a bizarre way. We should have individual quick statements here
-  that set these things... specifically, put it at the end of the queue of the shinto wiki. We have to
-  set up individual quick statements to change these things so that they get corrected."*
-
-  **Why the existing generator cannot do it.** `generate_p958_qualifiers.py` is ADD-only — it derives
-  the section from the parent list's P1352 ranking and adds it where absent. QuickStatements has no
-  "overwrite a qualifier" verb, so a statement whose P958 is present but WRONG is invisible to it
-  forever. A correction is necessarily two lines: remove the old qualifier, add the right one.
-
-  **Built 2026-08-19:** `modern-quickstatements/generate_p958_corrections.py` → `p958_corrections.txt`.
-  It reads live state first, so an already-correct item emits nothing rather than a churn pair.
-
-  Kokugakuin page **181621** carries three shrines, and that is what surfaced the errors:
-
-  | item | should be | live state | action |
-  |---|---|---|---|
-  | [Q111776816](https://www.wikidata.org/wiki/Q111776816) | `1` | **no P958 at all** | add |
-  | [Q134925373](https://www.wikidata.org/wiki/Q134925373) | `0` | `n/a` — **wrong** | remove + add |
-  | [Q135039671](https://www.wikidata.org/wiki/Q135039671) | `n/a` | `n/a` | correct, nothing emitted |
-
-  Batch as it stands (3 lines, built and ready — **but GATED, correcting what this item first said**).
-  `wikidata_editing_lockout.state` names the scope itself: *"Covers EVERY write path — the daily
-  direct-API drip, item creation, the one-shot property-proposal talk edit, **and the hand-run
-  QuickStatements batches**."* Emma's *"quickstatements are separate"* was about pacing, not about the
-  lockout. So this batch waits for **2026-09-18** like everything else:
-
-  ```
-  Q111776816|P13677|"181621"|P958|"1"
-  -Q134925373|P13677|"181621"|P958|"n/a"
-  Q134925373|P13677|"181621"|P958|"0"
-  ```
-
-  - **Emma pastes the batch** — moved to `scheduled/scheduled_items.json`, due **2026-09-18** when
-    the Wikidata lockout lifts. It is not listed here as a parked item on purpose (Emma, 2026-08-20);
-    the injector puts it in this queue and on `[[Open questions]]` on the day it becomes pasteable.
-    The unblock signal is still the state file, not a session deciding the batch is a small enough
-    exception.
-  **Widened 2026-08-19 — page 181621 is NOT special.** `modern-quickstatements/generate_p958_candidates_page.py`
-    checks every Kokugakuin id held by more than one item. Of **900** such ids, 619 are fine and **281
-    are candidates**:
-
-    | count | shape |
-    |---|---|
-    | **0** | **collisions** — nowhere do two items claim the same (id, real section) |
-    | **197** | a holder has NO section while its siblings do — **181621's exact shape** |
-    | **66** | no holder on the page has any section |
-    | **18** | every holder carries `0` or `n/a`, so none is distinguished |
-
-    The **zero is the load-bearing result**: the failure mode is under-specification, not two shrines
-    fighting over one entry. And the error Emma found on the one page she opened recurs on **197** pages.
-
-    Report: `_site/p958-candidates.html` (281 cards, each linking the Kokugakuin page and every holder),
-    data: `modern-quickstatements/p958_candidates_audit.json`. Report-only by design — the correct
-    section can only be read off the Kokugakuin page, which is how 181621's values were established, so
-    this narrows WHERE to look and never guesses WHAT the value is.
-
-  **Derivability tested 2026-08-19 — and my own guess was wrong.** I had written that deriving the
-    missing section from the parent's P1352 ranking "would turn most of them mechanical". It does not.
-    Of the **321** items missing a section across the 197 pages:
-
-    | count | share | disposition |
-    |---|---|---|
-    | **57** | 18% | exactly one parent ranking → **mechanically derivable** |
-    | **36** | 11% | **conflicting** rankings from different parents → manual |
-    | **228** | 71% | **no ranking anywhere** → must be read off the Kokugakuin page |
-
-    Data: `modern-quickstatements/p958_derivability.json`.
-
-    **Two things that bite whoever does this next:**
-    - P1352 is a *quantity*, so SPARQL returns `2.0` / `1.0` / `0.0` while P958 values are the strings
-      `"2"` / `"1"` / `"0"` / `"n/a"`. A derivation that does not format the float will write `2.0`.
-    - A derived `0` is legitimate but distinguishes nothing — section 0 carries no uniqueness — so
-      those add a value without resolving the ambiguity they appear to fix.
-
-  **✅ The reading queue is BUILT (2026-08-19)** — Emma chose the shape: *"One HTML page, all 228,
-  work at your own rate."* `modern-quickstatements/generate_p958_reading_queue.py` →
-  `_site/p958-reading-queue.html`: **226 shrines across 140 Kokugakuin pages**, one card per page
-  showing *every* holder so the taken sections are visible while choosing, a box per missing section,
-  and the QuickStatements building live at the bottom with a copy button. (228 boxes, 226 shrines —
-  two items sit on two pages each.) Nothing tracks progress and nothing chases; submission waits on
-  the lockout to 2026-09-18.
-
-  - **✓ RE-MEASURED 2026-08-24 against a verified-current file. My correction was right and my
-    explanation for it was wrong.** Coverage is **33 of the 57 derivable rows, 24 uncovered across 17
-    distinct items** — not the 44/7 I first reported.
-
-    **The artifacts were never different vintages.** That was my hypothesis and it does not survive
-    checking: run `32792378280` ran `generate_p958_qualifiers.py` at 00:29Z and it printed
-    *"Total QuickStatements: 68"*, which is exactly the file on disk. The file is current and
-    reproducible. `p958_summary.json`'s `generated: 167` / `p958_qualifiers: 0` are simply different
-    counters from the ones I read them as — I misread its schema, not its age.
-
-    **All 24 are genuinely missing P958** — checked against live Wikidata, none of them already
-    carries the qualifier, so none is a no-op the generator was right to skip.
-
-    **The finding worth keeping: only 4 of the 17 items are flagged for manual review. The other 13
-    fall through BOTH paths** — not emitted, not flagged, not counted anywhere. Flagged:
-    `Q17228423`, `Q11442850`, `Q65734340`, `Q135070147`. Silent: `Q135270127` 伊居太神社,
-    `Q135270129` 岡太神社, `Q17228121` 堅田神社, `Q134930603` 両神社, `Q11390944` 八幡宮来宮神社,
-    `Q134930633` 波布比咩命神社, `Q134926924` 左内神社 + `Q134927903` 右内神社 (sharing id 181633),
-    `Q11677857` 黄金山神社, `Q11481363` 常宮神社 (two ids, 182220/182221), `Q135194158` 長谷神社上社
-    + `Q135194159` 長谷神社下社 (sharing id 181981 at ranks 1 and 2), and `Q1466105` 廣田神社.
-
-    `Q1466105` is the one with a known structural reason — three ids all at rank `0.0`, and section
-    `0` carries no uniqueness — but it is **not** in the manual-review file either, so even the
-    genuinely-undecidable case is invisible rather than surfaced.
-
-  - **✓ INVESTIGATED AND CLOSED 2026-08-24. They never enter the pipeline — there is no third path.**
-
-    My framing last tick was wrong. "Neither emitted nor flagged" was the observation; "a third path
-    nobody wrote" was a guess, and so was the mechanism I proposed for it.
-
-    **Disproved on the way:** (1) `analyze_p13677` really does compute `has_p958` at ITEM level, so
-    one id carrying a section would suppress the whole item — but **none of the 17 has P958 anywhere**,
-    so that branch never fires for them. (2) They are not ambiguity cases either: `resolve_multi_p13677`
-    finds a **unique** match for every one of them, which is why they are correctly absent from
-    `p958_manual_review.txt`. The 4 that ARE in that file are there for the right reason ("no unique
-    match"), and its 15 entries are all legitimate.
-
-    **The actual cause.** The generator's query requires `?stmt pq:P1352 ?ranking` — a ranking
-    qualifier **on the P460/P527 link statement itself**. These items do not have one:
-
-    | item | link | P1352 |
-    |---|---|---|
-    | [`Q134926924`](https://www.wikidata.org/wiki/Q134926924) 左内神社 | both P460 links | **none** |
-    | [`Q11481363`](https://www.wikidata.org/wiki/Q11481363) 常宮神社 | all three P460 + two P527 | **none** |
-    | [`Q135270127`](https://www.wikidata.org/wiki/Q135270127) 伊居太神社 | has 1 and 2 on two links, but **none** on the link to entry [`Q135039219`](https://www.wikidata.org/wiki/Q135039219) — and the row in question is for id `181064`, which no parent claims |
-
-    So the query never returns them and the generator never sees them. Nothing is being dropped;
-    they are outside its input.
-
-    **What this really was: `p958_derivability.json` and the generator disagree about where a ranking
-    lives.** The audit called these "derivable — exactly one parent ranking" by reading rankings from
-    a different place than the link-statement qualifier the generator requires. Comparing the two
-    produced a coverage figure measuring nothing, which is the same error as keying P13677 on the id
-    instead of the (id, section) pair: **the unit has to match before a count means anything.** The
-    generator works per (item, parent-link-with-ranking); the audit rows are (item, kid).
-
-    The remedy, if anyone wants these sectioned, is to add the missing `P1352` qualifiers — a
-    data gap on Wikidata, not a code defect, and it waits for 2026-09-18 like everything else.
-
-  - **The 228 with no ranking** — OUT-OF-SCOPE for automation, permanently: the value only exists on the
-    Kokugakuin page. This is a reading job, and 228 pages is a real size — it belongs to Emma or to a
-    deliberate reading sprint, not to a work-loop tick.
-
-  ---
-
-
-
-These are not waiting on Wikidata. They are waiting on a ruling, and each names what is being asked.
-- **❓ DECISIONS — fire ONE at a time, in order, once the gate opens**
-
-  **Standing rule: EVERY decision carries a "walk me through it first / let's chat" option.** Emma often
-  doesn't have the context to pick A vs B cold — she picks "explain it first", the bot lays out the
-  situation in plain terms, they talk, THEN decide. Never treat a decision as "blocked on Emma" and skip
-  it; fire the question with the chat option so it can actually move.
-
-  > These can't be decided blind — Emma reviews them against the Open questions page **plus** the
-  > browsable tables. The tables are GitHub Pages and work right now, but the review pairs the two, so
-  > they wait for the gate (Emma 2026-07-13).
-
-  ### B2. ~~The duplicate shrine pairs — link or merge?~~ **WITHDRAWN 2026-08-19. Not a decision.**
-
-  Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html
-
-  **Emma settled this in JULY and the answer never reached the queue.** From [[Open questions]] on the
-  wiki, unhandled because B1 (the sweep that reads that page) was itself gated behind the 39-day wiki
-  blackout:
-
-      "I am pretty sure right now that, for literally all of them, it's a matter of Japanese Wikipedia
-       and the Kokugakuin database disagreeing with each other, and you're insisting that we should
-       merge them. This actually is a thing that was done by the original import bot ages ago, and it
-       was the source of a massive amount of problems!... If any of these ones are not a disputed
-       shikinai-sha, then it's different, and I'm going to manually go through them to ensure that there
-       aren't any. I am pretty strongly convinced that this thing here that you're talking about is just
-       a non-issue."
-
-  So merging is not merely undecided — she has already seen it do damage once, via the original import
-  bot, and said so. **This is the standing ruling; treat it as decided.** She reserves the manual pass
-  over any that are not disputed shikinaisha.
-
-  **And it is not decidable on the evidence either, because the "duplicate" class never established
-  identity.** Emma again, 2026-08-19, on being asked to pick link/merge/case-by-case:
-
-      "I'm extremely confused. What are you even doing here? What are you doing with duplicate labels?
-       What is the point of this? There's plenty of shrines with duplicate labels."
-
-  She is right, and it kills both halves of the class:
-
-  - **The Kokugakuin-id half was artifact.** It matched on bare P13677 while ignoring the P958 section.
-    Identity is the *combination*, and neither section `0` nor `n/a` is uniqueness-protected. Fixed at
-    source; the 36 "id disagreements" went to **zero** and none of the 11 id-matched pairs was real.
-  - **The name half is not evidence either.** It matched equal ja labels among entries of a list the
-    item already claims. That is narrower than "duplicate labels anywhere in Wikidata" — but not narrow
-    enough: **杉山神社 alone accounts for 4 of the 48**, and that name is multiplied all over the
-    Musashi region. Same-name-in-the-same-list is not the same shrine.
-
-  **Corrected state: 149 orphans, and NONE is provably a duplicate of a listed entry.** The 48 are a
-  list of name collisions; the report's own headline calls them duplicates, which overstates what it
-  knows. Do not re-raise link/merge on this basis.
-
-  **✅ ANSWERED 2026-08-24 — and there was no defect. They are the 宮中神, the palace shrines.**
-
-  The question was: why are items tagged Shikinaisha named as a part of no Jinmyōchō list? Measured
-  live, **it is 23 items, not 149** — the older figure counted something else or predates the list
-  rebuilds.
-
-  They are not listless. They are `part of` the palace groupings, which the Engishiki Jinmyōchō lists
-  BEFORE it reaches the provinces:
-
-  | part of | n |
-  |---|---|
-  | **八神殿** — the Eight Deities Hall (神産日, 高御産日, 玉積産日, 生産日, 足産日 …) | 8 |
-  | **座摩神** — the 座摩巫祭神五座 (生井, 福井, 綱長井, 波比祇 …) | 5 |
-  | **御門巫祭神 八座** | 2 |
-  | **生島巫祭神 二座** | 2 |
-  | modern shrines carrying `P460` — relocated or merged sites, correctly listless | 4 |
-  | no `P361` at all | 2 |
-
-  So the orphan query only catches them because those palace groupings are not themselves
-  `part of` the Jinmyōchō item, while the province lists are. **The register's own structure, not
-  damage** — nothing to merge, nothing to link, and the class dissolves the same way the
-  "duplicates" did.
-
-  **Decided 2026-08-24: not doing it.** The stated condition was "only worth it if the report is
-  meant to be a zero-inbox", and the 2026-08-24 work settled that it is not. The report's value
-  turned out to be as a *sample* — its 149 rows were what exposed the P460 test, and the 816 real
-  removals came from widening **past** the report to the whole defect shape, not from cleaning it.
-  Adding four `part of` statements to make a browse table read empty would assert something about
-  the register's structure in order to tidy a display, which is the wrong direction: the palace
-  groupings genuinely are not `part of` the Jinmyōchō item the way the province lists are, and that
-  distinction is the thing the report is showing.
-
-  **Housekeeping done 2026-08-19:** the generator called the class "living/entry duplicates &mdash; the
-  same shrine under the same name &rarr; link or merge". It now calls them **name collisions**, says
-  plainly that a shared name is not proof of identity, and carries the withdrawal note on the section
-  itself. Headline reads `149 orphans: 48 name collision / 0 Kokugakuin-id disagreement / 101 no-twin`.
-
-  ### B3. ~~The orphan Shikinaisha — mis-tagged, or missing entries?~~ **ANSWERED BY MEASUREMENT 2026-08-24.**
-
-  It was never one question, and the drifting count (66 → 101 → 149) was the symptom. Of the 149
-  orphans, **97 are pre-existing items and 52 are register-import-era** — so both classes the ask
-  offered are present at once and no single disposition could have been right.
-
-  The class that has an action attached is settled by the repo's own P460 test: **44 orphans point
-  at a register-era entry item, and 41 of those also carry `P361` into that entry's own list.** That
-  is the defect `list_membership_removals.txt` exists for, and **none of the 44 appears in it.**
-
-  **Widening the check past the orphan page found the real size: 2,788 items match the defect shape,
-  2,008 are already staged, and 816 are not.** The 149-item orphan page was a thin slice of it. The
-  existing file's 2,151 were selected AS RONSHA, so its population was always narrower than the rule.
-
-  **Emma approved staging all 816, 2026-08-24.** `generate_orphan_membership_removals.py` →
-  `orphan_membership_removals.txt` (829 lines), registered in `ATOMIC_FILES` in both submitters and
-  running in `generate-quickstatements.yml`. It re-reads what the older file already covers on every
-  build, so it shrinks to nothing as the drip delivers.
-
-  What remains genuinely open is only the residue: 102 orphans with no `P460` at all, which this test
-  cannot classify either way. No decision is available on those without reading them.
-
-  ### B4. The 18 missing Kokugakuin ids — auto-fill or eyes?
-  18 register entries lack a Kokugakuin database id; the strict matcher found ZERO safe to add (two
-  adjacent DB entries can share a name). **Same 18 as B7** — where five of them turn out to be the
-  one Izumo cluster, so this is 13 rows plus a knot, not 18 independent lookups.
-  Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-missing-ids.html
-  **Not a live decision — the auto-fill branch is an empty set.** The strict matcher already found
-  **zero** safe to add, so "auto-fill the exact matches" fills nothing and asking which to prefer is
-  asking about a choice that does not exist. The reason it found zero is the same fact B7 turns on:
-  two adjacent register entries can carry the same name, so an exact name match is not evidence of
-  identity — the Izumo cluster is that failure five times over. Per-item eyes by default, on 13 rows
-  plus the knot.
-
-  ### B5. The ~66 items with two Kokugakuin ids — how to assign the section?
-  Each is a candidate for two different 927 entries, so its parent-link needs a "which entry" (P958)
-  qualifier. Emma earlier ruled all ambiguous.
   Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-multi-p13677.html
-  **Emma's ruling, 2026-08-24: leave them to be worked off the table.** So this is mine, at my own
-  rate, the same shape as the 228-item reading queue — the section can only be read off the
-  Kokugakuin page, so it is a reading job rather than a derivation. No per-item session with her, and
-  it never becomes a work-loop tick's obligation.
 
-  ### B6. The Awa list fix — how to delete the wrong statement?
-  Awa entry 3 should be 天神社 (add already queued); the wrong 下立松原 statement must be deleted, but it
-  can't be a QuickStatement (下立松原 sits at ordinals 3 AND 5, same value).
-  https://emmaleonhart.github.io/shintowiki-scripts/awa-entry-3.html
-  **Emma's ruling, 2026-08-24:** *"Just add these as requirements where new items are created and I
-  fix them in just like the Izumo somewhere."* So the sequential-misc unit is NOT built. The Awa
-  entry 3 correction is recorded as a requirement travelling with the item-creation work, and she
-  hand-fixes the wrong 下立松原 statement the way she is handling the Izumo knot. Nothing here is
-  generated and nothing waits on her.
+  Same shape as the 228-item reading queue below: the section can only be read off the Kokugakuin
+  page, so it is reading, not derivation. No rate attached, and it never becomes a work-loop tick's
+  obligation.
 
-  ### B7. Kokugakuin P13677 matcher — examples DELIVERED 2026-08-19, one question left
-  Emma 2026-07: *"I don't even understand what this actual thing even is"* and *"I genuinely do not
-  have any idea what shrines this is referring to."* Both were asks for the shrines to be NAMED, not
-  linked. All 18 are now written out on [[Open questions]] itself.
+- **The 228 sections that can only be read off the Kokugakuin page**
 
-  **The finding that reframes it: five of the 18 are one cluster, not five cases.** 坐韓国伊大弖神社,
-  嘉羅久利神社, 佐久多神社 (意宇郡) and 韓國伊太弖奉神社, 天若日子神社 (出雲郡) are the Izumo knot.
-  佐久多神社 is two items for one shrine — Q135040907 holds id 182811, Q135070108 holds none — which is
-  the 佐久多/嘉羅久利 論社 split jawiki records. The two 野蚊神社 rows are likewise two distinct items
-  of the same name in one district, which is why the matcher refused to pick.
+  `_site/p958-reading-queue.html` — 226 shrines across 140 Kokugakuin pages, one card per page showing
+  every holder so the taken sections are visible while choosing, with the QuickStatements building
+  live at the bottom. Emma chose the shape: *"One HTML page, all 228, work at your own rate."*
 
-  **Emma's ruling, 2026-08-24: pull them out.** So this is not 18 cases. It is the Izumo knot, worked
-  once against the Izumo item, plus **13** genuinely separate no-anchor/no-match cases. The two
-  野蚊神社 rows stay inside the 13 — they are two distinct items of one name in one district, which is
-  a different problem from the Izumo cluster and does not resolve with it.
+  Nothing tracks progress and nothing chases. OUT-OF-SCOPE for automation permanently — the value
+  exists only on the Kokugakuin page.
 
-  ### B8. ~~Empty-items — which to restore?~~ **WITHDRAWN 2026-08-24. Wrong population.**
+- **The 13 Kokugakuin ids with no `P1352` on their link statement**
 
-  Emma asked the right question: *"Are these the items that were emptied by that one guy or are
-  these just random empty items? Who is it that emptied these items? If it is from that one guy then
-  you just restore everything from them with Quick Statements. If they're empty items that are not by
-  that guy then I don't know what you do. They might be just empty because I emptied them."*
+  Established 2026-08-24 (see `DEVLOG.md`): not a code defect and not a coverage gap. The `P958`
+  generator requires a ranking qualifier on the `P460`/`P527` link statement, and these links do not
+  carry one, so they are outside its input rather than dropped by it.
 
-  **Neither branch. It is not him and it is not her.** Measured across the 274 items in
-  `_site/empty-items.html`:
+  If they want sections, the remedy is adding the missing `P1352` qualifiers — a Wikidata data gap.
+  BLOCKED-ON-EXTERNAL for execution: the lockout runs to **2026-09-18**.
 
-  | editor | items |
-  |---|---|
-  | ブルーノ・プラス | **1 of 274** |
-  | Immanuelle | **2 of 274** |
-  | Emma | **0** |
-  | 606 other editors, mostly maintenance bots | the rest |
+- **Built and waiting on the lockout — no work left on any of them**
 
-  Top touchers are Edoderoobot (57), GZWDer (flood) (51), Mr.Ibrahembot (43), Emijrpbot (36), KrBot
-  (27) — general Wikidata janitorial traffic, 475 of 1,331 editor-appearances from accounts with
-  "bot" in the name.
+  BLOCKED-ON-EXTERNAL, one blocker: `wikidata_editing_lockout.state`, **2026-09-18**. All of these
+  regenerate on every build and deliver through the normal drip when it lifts.
 
-  **The population was never ours.** `analyze_empty_export.py` reads
-  `User:MisterSynergy/sysop/empty_items` — a Wikidata sysop's global list of empty items across the
-  whole project — and does not filter it to shrines or to the watched editor. The report contains
-  Gandhara architecture, a Malayalam actress, a Swedish moss expansion, an indium-platinum alloy and
-  a Turkish poet. Exactly one entry overlaps this project at all: `Q28069431` Kikuna Shrine, which is
-  already in `destroyed_items/`.
+  | file | lines | what it does |
+  |---|---|---|
+  | `orphan_membership_removals.txt` | 829 | the 816 modern shrines whose `P361` belongs to their register entry |
+  | `multi_ordinal_removals.txt` | 63 | `part of` statements carrying more than one series ordinal |
+  | `tenjinsha_en_labels.txt` | 47 | 天神社 English labels derived from each item's own reading |
+  | `lost_shrine_creates.txt` | 39 | the three shrines the repurposing left with no item — via `create_items.py`, not the drip |
+  | `p958_corrections.txt` | 3 | Kokugakuin page 181621, where a wrong `P958` needs remove-then-add |
 
-  So there is nothing here to restore and no rule of Emma's that applies. The repurposing victims are
-  the **24** archived in `destroyed_items/INDEX.md`, and those are handled: three recreated in
-  `lost_shrine_creates.txt`, the other 21 damaged as themselves rather than repurposed.
-
-- **Wikidata batches built and waiting on the lockout (2026-09-18) — no work left on them**
-
-  `multi_ordinal_removals.txt` (63 lines) is registered in `ATOMIC_FILES` in both submitters and
-  runs in `generate-quickstatements.yml`, so it delivers itself once the lockout lifts.
-
-  `lost_shrine_creates.txt` (39 lines, 3 CREATE blocks) is **not** registered, and that is the one
-  open decision: a creation is a different QuickStatements shape and creations have been switched
-  off before, so switching them on is Emma's call, not a side effect of the generator existing.
+  The Awa entry 3 fix rides along as a requirement on item creation, per Emma's ruling — she
+  hand-fixes the wrong 下立松原 statement the way she is handling the Izumo knot. No sequential unit
+  is built for it.
 
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the five session-local crons are running. **Verified live 2026-08-24**, this session:
     work-loop `0a52da5c` :03, auto-flush `aa735a3c` :15, status-report `f371ceee` :42, briefing
     `ff8886e6` 08:03, debrief `924d2b08` 23:57. SYNC fast-forwards onto origin/main each tick.
-    (The IDs recorded here were the 2026-08-05 session's and had been dead since it ended — crons
-    are session-local, so a listed ID is only ever evidence about the session that made it.)
+    (Crons are session-local, so a recorded ID is only ever evidence about the session that made it —
+    the IDs here before were the 2026-08-05 session's, dead since it ended.)
   - [ ] Run the status-report action once more independently as an end-of-session summary.

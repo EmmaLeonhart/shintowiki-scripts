@@ -4,6 +4,147 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-24 (later, seventh) — the throttle holds, three questions dissolve on measurement, and two of my own findings were artefacts
+
+A long session whose real output was less new work than **retraction of work I had reported**. Both
+halves are recorded, because the retracted ones cost more than the confirmed ones.
+
+### The WDQS throttle is verified — 2.5s is enough
+
+Forced run [`32792378280`](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/32792378280)
+with `force_weekly=true`: success, all 32 steps green, **no** `::warning title=Weekly refresh did not
+run`. `description_label_pairs.txt` regenerated to **10,716 lines** (committed `cfe8f660`) after
+sitting unchanged since 2026-08-02, and the generator printed its full per-language breakdown, so it
+completed the sweep rather than bailing partway.
+
+The description step took **28.5 minutes on its own** (00:42:24Z to 01:10:57Z) against a 150-minute
+cap. That duration IS the verification. Under `time.sleep(1)` the same sweep 429'd itself out of WDQS
+quickly and reported green through `continue-on-error`; slower-and-finishing was the pass condition,
+not a cost of it. The 429 was ours the whole time, from our own scheduled job, against this repo's
+own documented floor — and it was reported as BLOCKED-ON-EXTERNAL in three status reports.
+
+`force_weekly` also proved out: the Sunday-gated steps ran on a Monday. A weekly step that can only
+be observed weekly is how a silent failure buys three Sundays of cover.
+
+### Two findings of mine that were artefacts
+
+**The P958 coverage gap did not exist.** I reported the generator covering 44 of 57 derivable
+sections, corrected it to 33 of 57, then found the number meaningless in either form. I had been
+comparing `p958_derivability.json`'s (item, Kokugakuin-id) rows against the generator's
+(item, parent-link-with-ranking) output — two tools that read a ranking from different places. The
+13 items I called "silently falling through a third path" carry **no `P1352` on their `P460`/`P527`
+link statements**, so the generator's query never returns them: they are outside its input, not
+dropped by it. `Q134926924` has none on either link, `Q11481363` none on any of five, `Q135270127`
+has rankings on two links but none on the link to its register entry.
+
+Two mechanisms proposed and disproved on the way, both worth keeping. `analyze_p13677` **does**
+compute `has_p958` at item level, so one id carrying a section would suppress every other id on the
+same item — a genuine latent sharp edge, just not this one, since none of the 17 has `P958` anywhere.
+And they are not ambiguity cases: `resolve_multi_p13677` finds a unique match for all of them, which
+is exactly why they are correctly absent from `p958_manual_review.txt`, whose 15 entries are all
+legitimate.
+
+This is the same error the repo already corrected once — keying `P13677` on the bare id instead of
+the (id, section) pair. **The unit has to match before a subtraction means anything**, and nothing
+about either file announces that they disagree.
+
+**`p958_summary.json` was never stale.** I claimed a 68-line file and a summary reporting 167 could
+not describe the same run. They can: the generator ran at 00:29Z and printed `Total QuickStatements:
+68`, exactly the file on disk. Its fields are different counters from the ones I read them as. I
+misread a schema and blamed a vintage.
+
+### The one real gap: 816 membership removals
+
+`list_membership_removals.txt` implements a documented rule — a modern shrine carrying `P361` into
+the same list its own `P460` register entry belongs to — for 2,151 items. But those 2,151 were
+selected **as ronsha**, so the file has always covered a narrower population than the rule.
+**2,788 items meet the rule; 816 were never selected.** Emma approved staging all of them;
+`generate_orphan_membership_removals.py` re-reads what the older file covers on every build, so it
+shrinks to nothing as the drip delivers.
+
+A fix whose selection criterion is narrower than its own stated rule looks complete from the inside,
+because everything it *does* select is correct. Nothing about the 2,151 was wrong.
+
+Two bad queries on the way, both caught by reading output rather than code. The first had no scope
+and returned the axiom of choice, Zorn's lemma and Koenig's theorem — it would have emitted `P361`
+removals against unrelated mathematics items. The second over-corrected with
+`?entry wdt:P31 wd:Q845945` and `?list wdt:P360 wd:Q845945` and found 3 where a direct API check
+found 41: register entries are not typed as shrines and the list items carry no `P360`. **A query
+returning far fewer rows than a direct check of the same thing deserves more suspicion than one
+returning too many.**
+
+### The lost shrines, and a gate that had been lying
+
+Three items were repurposed onto different subjects, leaving the shrines with no item anywhere:
+[`Q123044569`](https://www.wikidata.org/wiki/Q123044569) Kamo Shrine (Odawara),
+[`Q134886554`](https://www.wikidata.org/wiki/Q134886554) Chikadono Shrine (Kumagaya),
+[`Q134736575`](https://www.wikidata.org/wiki/Q134736575) 見光寺 (Hanno).
+`generate_lost_shrine_creates.py` rebuilds them from the pre-damage revisions, which is the only
+surviving description of them — the archives store a revid, not content. **Three of the 24 archived
+items, not all**: the other 21 were damaged *as themselves* and still describe their own subject, so
+new items would be plain duplicates.
+
+**The references travel with the statements, and that is load-bearing.** 近殿神社's reading is
+ちかどのじんしゃ — the じんしゃ-for-じんじゃ misspelling. Emma's rule keeps a cited one and corrects an
+uncited one, and this is cited to `houjin-bangou.nta.go.jp`, so it is the legally registered
+フリガナ. A first draft emitted statements without references, which would have put a bare
+ちかどのじんしゃ on a brand-new item for the next pipeline pass to "correct". 見光寺's ja description
+is dropped: it placed the temple in Hodogaya, Yokohama while the item's own `P131`, coordinates,
+address and English description all say Hanno.
+
+Registering the batch turned out to be three things. `ATOMIC_FILES` is the wrong road — the drip
+samples lines at random and a `CREATE` block is ordered, so a `LAST|` line drawn without its `CREATE`
+is meaningless. It goes to `create_items.py` with a gate, **and** `create-items.yml` has to name it:
+a batch no step invokes never runs however well it is gated, which is the state `ise_jingu_creates.txt`
+had quietly been in.
+
+**`ise_jingu_gate.py` had been reporting OPEN since 2026-08-10.** It held `FREEZE_UNTIL =
+datetime.date(2026, 8, 10)` with a comment asking whoever extended the freeze to extend the gate by
+hand. Nobody did, so it read open throughout a lockout running to 2026-09-18, saved from mattering
+only because two other layers check the real state file. Both gates now read
+`wikidata_editing_lockout.state` and fail closed. When a mechanism is centralised the old copies do
+not announce themselves, and a stale one is most dangerous exactly where something else covers for it.
+
+### Questions that dissolved rather than being answered
+
+- **B8, empty items.** Emma asked whether they were the repurposing editor's, with a
+  restore-everything rule if so. Neither: he appears on **1 of 274**, Immanuelle on 2, Emma on 0, and
+  the other 606 editors are mostly maintenance bots. `analyze_empty_export.py` reads
+  `User:MisterSynergy/sysop/empty_items`, a Wikidata sysop's **global** list, unfiltered — the report
+  contains Gandhara architecture, a Malayalam actress, a Swedish moss and an indium-platinum alloy.
+  Exactly one of the 274 touches this project.
+- **B3, orphan Shikinaisha.** Never one question, which is what the drifting count (66, 101, 149)
+  was signalling: 97 are pre-existing items and 52 register-import-era, so both offered dispositions
+  were present at once.
+- **B4, the 18 missing Kokugakuin ids.** The auto-fill branch is an empty set — the strict matcher
+  already found **zero** safe to add, for the same reason B7 turns on: two adjacent register entries
+  can share a name.
+
+### Emma's rulings this session
+
+- Register the lost-shrine creates to deliver on 2026-09-18.
+- Stage all 816 membership removals.
+- Pull the Izumo five out — 13 separate no-anchor cases plus one knot, not 18 rows.
+- The Awa entry 3 fix rides along as a requirement on item creation; she hand-fixes the wrong
+  下立松原 statement like the Izumo knot. No sequential unit built.
+- The ~66 two-Kokugakuin-id items are worked off the table at my own rate, not per-item with her.
+
+### Also
+
+I broke CI (`32795682968`) and fixed it (`32796752999` green). Both new gate files imported the
+`shinto_miraheze` package with an ad-hoc `sys.path` fix-up instead of the canonical `_uos` walk-up
+bootstrap, which works from where those files sit — so it passed everything I ran. **I ran two of the
+seven test directories `ci.yml` runs and reported "844 tests pass"**, a true number attached to a
+claim it did not support. The repo-wide invariants live in the root `tests/` directory, which is
+precisely what a subdirectory-scoped run skips. The first correction also failed: the detector matches
+the `_uos`-aliased form literally, so semantic equivalence was not enough.
+
+The scheduled `cleanup-loop` from 03:27Z came back **fully green, all 26 jobs**, closing the repair
+that had been unverified since the four red days. `submit-quickstatements` and `direct-daily-edits`
+show skipped — the Wikidata lockout, not a failure.
+
+---
+
 ## 2026-08-24 (later, sixth) — the supershrine collapse is 23 items, and two thirds of the finding was already owned
 
 Measured the three shapes 御笏神社 suggested, with `audit_supershrine_collapse.py`. One is real and
