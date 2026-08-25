@@ -110,22 +110,27 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   two items sit on two pages each.) Nothing tracks progress and nothing chases; submission waits on
   the lockout to 2026-09-18.
 
-  - ✅ **ANSWERED 2026-08-25. No second generator is needed — `generate_p958_qualifiers.py` already
-    produces 44 of the 57**, and they are sitting in `p958_qualifiers.txt` (2,480 lines) waiting on
-    delivery like everything else. It runs in `generate-quickstatements.yml` every build, so "has not
-    been re-run" was not the explanation.
+  - [ ] **Re-measure the derivable 57 against a FRESH `p958_qualifiers.txt`.** I said on 2026-08-25
+    that the existing generator already produces 44 of the 57 and misses only 7 items. Measured
+    against the file on disk that is wrong: **33 of the 57 rows are covered and 24 are not**, across
+    17 distinct items — more than double the gap I reported.
 
-    It misses **7 distinct items**, and each has a structural reason rather than a bug:
+    But the artifacts disagree with each other, so neither number is trustworthy yet.
+    `p958_qualifiers.txt` is **68 lines** (the queue said 2,480), while `p958_summary.json` from the
+    same directory reports `generated: 167` and `p958_qualifiers: 0`. A file and its own summary
+    cannot both be right, so they are from different runs and the coverage figure is measured against
+    a stale artifact.
 
-    | item | why it is skipped |
-    |---|---|
-    | `Q1466105` 廣田神社 | claims **three** Kokugakuin ids (181069/181070/181071), all rank `0.0`. Three entries, and section `0` carries no uniqueness, so there is nothing to derive a section from. |
-    | `Q135194158` 長谷神社上社 / `Q135194159` 長谷神社下社 | share id 181981 at ranks 1 and 2, reached **via `P527`** rather than `P460` — a different route into the page, and the one case where P958 genuinely does the distinguishing work |
-    | `Q17228423`, `Q11442850`, `Q65734340`, `Q135070147` | each appears **twice with the same id and the same rank** — duplicated rows in `p958_derivability.json`, not two entries |
+    `generate_p958_qualifiers.py` runs in `generate-quickstatements.yml` on every build, so a fresh
+    pair settles it. Re-run the comparison against the regenerated file before deciding whether the
+    remainder is structural.
 
-    So the real remainder is small: one genuinely ambiguous item, one pair on an unhandled `P527`
-    route, and four duplicated rows in the audit file. None of it justifies a second generator, which
-    was the thing worth checking.
+    What does hold regardless: the generator **already queries P527** alongside P460, both with
+    `P1352` qualifiers. So "Q135194158/Q135194159 are skipped because P527 is an unhandled route" is
+    not the explanation — that route is handled, and their real cause is still unidentified.
+    `Q1466105` 廣田神社 is genuinely structural: three Kokugakuin ids, all rank `0.0`, and section `0`
+    carries no uniqueness, so there is nothing to derive from.
+
   - **The 228 with no ranking** — OUT-OF-SCOPE for automation, permanently: the value only exists on the
     Kokugakuin page. This is a reading job, and 228 pages is a real size — it belongs to Emma or to a
     deliberate reading sprint, not to a work-loop tick.
@@ -270,69 +275,14 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
   - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
     this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
 
-- **▶ The multi-ordinal `part of` collapse — MEASURED 2026-08-24, and it is 23 items**
+- **Wikidata batches built and waiting on the lockout (2026-09-18) — no work left on them**
 
-  `modern-quickstatements/audit_supershrine_collapse.py` + `supershrine_collapse.json`. Three
-  shapes were suspected from 御笏神社 (`Q110915859`); measuring them says one is real and unowned
-  and two are already somebody's job.
+  `multi_ordinal_removals.txt` (63 lines) is registered in `ATOMIC_FILES` in both submitters and
+  runs in `generate-quickstatements.yml`, so it delivers itself once the lockout lifts.
 
-  **1. `part of` statements carrying more than one ordinal — 23 statements, 23 items. REAL and
-  unowned.** A `part of` statement is one position in one list, so a second ordinal on it is the
-  piped-link collapse made literal. Worst are `Q482065` and `Q110915859`, five ordinals in a single
-  statement; then two items at three, and the rest at two. Nothing in the repo looks for this shape.
-  - ✅ **DECIDED and BUILT 2026-08-25.** Emma: *"I already established this ages ago: we remove them
-    entirely and then later on we have quickstatements that add proper membership stuff for the
-    lists."* And on scope: *"every single membership thing on those items should be removed unless
-    the membership of the Shikinaisha list is 100% accurate and is 100% what we want."*
-    `generate_multi_ordinal_removals.py` → `multi_ordinal_removals.txt`, **63 lines**, registered in
-    `ATOMIC_FILES` in both submitters and running in `generate-quickstatements.yml`. Value-matched, so
-    an affected item loses ALL its membership into that list — intended. Re-adding correct membership
-    is the separate later job.
-  - Nothing is staged. The three `Q110915859` removal lines already take its collapsed statement as
-    a side effect, so that one item is handled whatever is decided here.
-
-  **2. Hyphen-truncated `name in kana` — 735 values, and NOT a new finding.** 189 lead with a
-  hyphen, 566 trail. But **53 of 55 sampled items are already in `kana_qualifier_add.txt`** — this
-  is the ancient-katakana population the existing `generate_kana_qualifier_add/remove` pair owns,
-  relocating those readings onto the ojp-hani `P1448`. Every sample is katakana, which is that
-  cleanup's signature.
-  - Residue outside it in the sample: `Q11597242`, `Q246479`. Two of fifty-five.
-  - The hyphen test deliberately excludes **ー** (U+30FC), the prolonged sound mark, which is
-    ordinary in kana. Matching it would have reported most of the corpus as broken.
-
-  **3. One kana qualifier on several official names — 83 groups, same story.** 33 of 35 sampled
-  items are already in `kana_qualifier_add.txt`. Residue: `Q11592931`, `Q17226795`.
-
-  ⚠ The first version of query 1 was unscoped and asked WDQS to group every `part of` statement on
-  Wikidata; it returned 504. All three are now scoped to `wdt:P31 wd:Q845945` and the script backs
-  off 15/45/135s on 503/504 rather than retrying tightly.
-
-- **Create new items for the shrines lost to the repurposing — LAST, by Emma's sequencing**
-
-  **Emma's decision, 2026-08-19:** *"we create new otems for the ones lost due to their messing with
-  them."* This replaces the old "is it debatable?" framing entirely — it is decided, and it covers
-  every shrine whose item was taken over, not only Kamo.
-
-  **Her placement, verbatim:** *"This goes at the end of the queue to do any tooling or research on
-  because you're doing the bunrei book shit."* So no tooling and no research on this until the bunrei
-  attempt is finished or dropped.
-
-  Known losses, from `docs/bruno_plus_analysis_2026-07.md` §4:
-
-  | shrine | old item | what it is now |
-  |---|---|---|
-  | Kamo Shrine, Odawara | `Q123044569` | 大美和神社, different coords. No surviving item; none of the eight 加茂神社 items is Odawara |
-  | Chikadono Shrine, Kumagaya (熊谷市下増田749) | `Q134886554` | 近殿神社 in Kanagawa (Yokosuka). No item holds Chikadono any more |
-  | 見光寺, Hanno, Saitama | `Q134736575` | re-pointed to a different temple; the item asserts the wrong one |
-
-  - [ ] Build the CREATE batch — one new item per lost shrine, from the pre-damage archives
-    (`Q134736575.json` was archived pre-damage; check what else was). Creations are a different
-    QuickStatements shape from statements and Emma has previously turned creations OFF, so confirm the
-    create-mode before generating.
-  - BLOCKED-ON-EXTERNAL for execution: Wikidata lockout to **2026-09-18**. Building the batch is not
-    blocked; only submitting it is.
-  - **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
-    which is additive and independent of whatever the other editor is doing.
+  `lost_shrine_creates.txt` (39 lines, 3 CREATE blocks) is **not** registered, and that is the one
+  open decision: a creation is a different QuickStatements shape and creations have been switched
+  off before, so switching them on is Emma's call, not a side effect of the generator existing.
 
 - **Pinned tail (keep last)**
 
