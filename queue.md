@@ -130,17 +130,19 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   enwiki-junk cats, or shard the namespace). Only worth doing IF the Japanese-category-translation drain
   proves too slow. It isn't a problem now → dormant.
 
+## ▶ GENERATE NOW — the lockout does not block these
 
-## ⛔ AFTER WIKIDATA RETURNS — 2026-09-18. Nothing here is actionable before then.
+Corrected 2026-08-24 after Emma challenged the blocker: *"Why would it be dependent on the Wikidata
+thing being lifted as opposed to you just finishing and setting up scripts to make it so that the
+stuff we want to do on Wikidata is done?"*
 
-Emma, 2026-08-24: *"just move all of the wikidata stuff to a section in the end of the queue of
-stuff to do only after wikidata returns and do not add anything there unless I explicitly say so,
-and the queue we can actually act on"*.
+She is right. **The lockout gates exactly three scripts** — `create_items.py`,
+`direct_daily_edits.py`, `substitute_source_shrine_proposal.py` — the ones holding credentials.
+**No generator is gated.** So writing the QuickStatements is workable now; only the final
+submission waits, and that happens by itself through the daily drip once the lockout lifts.
 
-**DO NOT ADD TO THIS SECTION** unless she says so explicitly. Everything above it is work that can
-be done now — the shinto.miraheze wiki gate is open, CI runs, and generation, measurement and
-investigation are all unblocked. Only *delivery to Wikidata* is held.
-
+I had marked all twelve items "after Wikidata returns", which took "cannot deliver" and wrote it
+down as "cannot do". These are the ones that were mislabelled.
 - **▶ Izumo 28 vs 39 — the ACTUAL difference, investigated 2026-08-24 after Emma said I never had**
 
   Her words: *"You haven't really done much analysis on the two items here. You have just been
@@ -552,139 +554,6 @@ investigation are all unblocked. Only *delivery to Wikidata* is held.
   Everything below needs the wiki. While the blackout is on, these are not just blocked — **touching
   them means touching Miraheze, which is the exact thing the blackout exists to prevent.**
 
-- **❓ DECISIONS — fire ONE at a time, in order, once the gate opens**
-
-  **Standing rule: EVERY decision carries a "walk me through it first / let's chat" option.** Emma often
-  doesn't have the context to pick A vs B cold — she picks "explain it first", the bot lays out the
-  situation in plain terms, they talk, THEN decide. Never treat a decision as "blocked on Emma" and skip
-  it; fire the question with the chat option so it can actually move.
-
-  > These can't be decided blind — Emma reviews them against the Open questions page **plus** the
-  > browsable tables. The tables are GitHub Pages and work right now, but the review pairs the two, so
-  > they wait for the gate (Emma 2026-07-13).
-
-  ### B2. ~~The duplicate shrine pairs — link or merge?~~ **WITHDRAWN 2026-08-19. Not a decision.**
-
-  Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html
-
-  **Emma settled this in JULY and the answer never reached the queue.** From [[Open questions]] on the
-  wiki, unhandled because B1 (the sweep that reads that page) was itself gated behind the 39-day wiki
-  blackout:
-
-      "I am pretty sure right now that, for literally all of them, it's a matter of Japanese Wikipedia
-       and the Kokugakuin database disagreeing with each other, and you're insisting that we should
-       merge them. This actually is a thing that was done by the original import bot ages ago, and it
-       was the source of a massive amount of problems!... If any of these ones are not a disputed
-       shikinai-sha, then it's different, and I'm going to manually go through them to ensure that there
-       aren't any. I am pretty strongly convinced that this thing here that you're talking about is just
-       a non-issue."
-
-  So merging is not merely undecided — she has already seen it do damage once, via the original import
-  bot, and said so. **This is the standing ruling; treat it as decided.** She reserves the manual pass
-  over any that are not disputed shikinaisha.
-
-  **And it is not decidable on the evidence either, because the "duplicate" class never established
-  identity.** Emma again, 2026-08-19, on being asked to pick link/merge/case-by-case:
-
-      "I'm extremely confused. What are you even doing here? What are you doing with duplicate labels?
-       What is the point of this? There's plenty of shrines with duplicate labels."
-
-  She is right, and it kills both halves of the class:
-
-  - **The Kokugakuin-id half was artifact.** It matched on bare P13677 while ignoring the P958 section.
-    Identity is the *combination*, and neither section `0` nor `n/a` is uniqueness-protected. Fixed at
-    source; the 36 "id disagreements" went to **zero** and none of the 11 id-matched pairs was real.
-  - **The name half is not evidence either.** It matched equal ja labels among entries of a list the
-    item already claims. That is narrower than "duplicate labels anywhere in Wikidata" — but not narrow
-    enough: **杉山神社 alone accounts for 4 of the 48**, and that name is multiplied all over the
-    Musashi region. Same-name-in-the-same-list is not the same shrine.
-
-  **Corrected state: 149 orphans, and NONE is provably a duplicate of a listed entry.** The 48 are a
-  list of name collisions; the report's own headline calls them duplicates, which overstates what it
-  knows. Do not re-raise link/merge on this basis.
-
-  **✅ ANSWERED 2026-08-24 — and there was no defect. They are the 宮中神, the palace shrines.**
-
-  The question was: why are items tagged Shikinaisha named as a part of no Jinmyōchō list? Measured
-  live, **it is 23 items, not 149** — the older figure counted something else or predates the list
-  rebuilds.
-
-  They are not listless. They are `part of` the palace groupings, which the Engishiki Jinmyōchō lists
-  BEFORE it reaches the provinces:
-
-  | part of | n |
-  |---|---|
-  | **八神殿** — the Eight Deities Hall (神産日, 高御産日, 玉積産日, 生産日, 足産日 …) | 8 |
-  | **座摩神** — the 座摩巫祭神五座 (生井, 福井, 綱長井, 波比祇 …) | 5 |
-  | **御門巫祭神 八座** | 2 |
-  | **生島巫祭神 二座** | 2 |
-  | modern shrines carrying `P460` — relocated or merged sites, correctly listless | 4 |
-  | no `P361` at all | 2 |
-
-  So the orphan query only catches them because those palace groupings are not themselves
-  `part of` the Jinmyōchō item, while the province lists are. **The register's own structure, not
-  damage** — nothing to merge, nothing to link, and the class dissolves the same way the
-  "duplicates" did.
-
-  - [ ] Optional and cosmetic: making 八神殿 / 座摩神 / 御門巫祭神 / 生島巫祭神 `part of` the Jinmyōchō
-    would empty this report to the 2 genuinely bare items. Only worth it if the report is meant to be
-    a zero-inbox; it is a Wikidata edit, so it waits for 2026-09-18 either way.
-
-  **Housekeeping done 2026-08-19:** the generator called the class "living/entry duplicates &mdash; the
-  same shrine under the same name &rarr; link or merge". It now calls them **name collisions**, says
-  plainly that a shared name is not proof of identity, and carries the withdrawal note on the section
-  itself. Headline reads `149 orphans: 48 name collision / 0 Kokugakuin-id disagreement / 101 no-twin`.
-
-  ### B3. The orphan Shikinaisha — mis-tagged, or missing entries? **Re-read before deciding.**
-  Was 66; now **101** after 36 members arrived from B2's id-disagreement class, which turned out not to
-  exist. With B2 withdrawn the honest count is closer to all **149** orphans, since the 48 "duplicates"
-  are only name collisions. 101 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or real
-  entries the lists are missing. Same table as B2.
-  - **ASK:** "How do I treat the 66?" → *investigate case-by-case* / *treat as mis-tagged* (drop the
-    class) / *treat as missing entries* (add to the list).
-
-  ### B4. The 18 missing Kokugakuin ids — auto-fill or eyes?
-  18 register entries lack a Kokugakuin database id; the strict matcher found ZERO safe to add (two
-  adjacent DB entries can share a name).
-  Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-missing-ids.html
-  - **ASK:** "Is exact name-matching good enough to auto-fill, or do the 18 need per-item eyes?" →
-    *per-item eyes* / *auto-fill the exact matches*.
-
-  ### B5. The ~66 items with two Kokugakuin ids — how to assign the section?
-  Each is a candidate for two different 927 entries, so its parent-link needs a "which entry" (P958)
-  qualifier. Emma earlier ruled all ambiguous.
-  Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-multi-p13677.html
-  - **ASK:** "Go through these with me per-item now, or leave them for you to work off the table?" →
-    *per-item with you* / *leave for you*.
-
-  ### B6. The Awa list fix — how to delete the wrong statement?
-  Awa entry 3 should be 天神社 (add already queued); the wrong 下立松原 statement must be deleted, but it
-  can't be a QuickStatement (下立松原 sits at ordinals 3 AND 5, same value).
-  https://emmaleonhart.github.io/shintowiki-scripts/awa-entry-3.html
-  - **ASK:** "Sequential-misc unit (remove BOTH 下立松原 has-parts, re-add the correct #5), or you
-    hand-delete the one statement?" → *sequential unit* (I build it) / *you hand-delete*.
-
-  ### B7. Kokugakuin P13677 matcher — examples DELIVERED 2026-08-19, one question left
-  Emma 2026-07: *"I don't even understand what this actual thing even is"* and *"I genuinely do not
-  have any idea what shrines this is referring to."* Both were asks for the shrines to be NAMED, not
-  linked. All 18 are now written out on [[Open questions]] itself.
-
-  **The finding that reframes it: five of the 18 are one cluster, not five cases.** 坐韓国伊大弖神社,
-  嘉羅久利神社, 佐久多神社 (意宇郡) and 韓國伊太弖奉神社, 天若日子神社 (出雲郡) are the Izumo knot.
-  佐久多神社 is two items for one shrine — Q135040907 holds id 182811, Q135070108 holds none — which is
-  the 佐久多/嘉羅久利 論社 split jawiki records. The two 野蚊神社 rows are likewise two distinct items
-  of the same name in one district, which is why the matcher refused to pick.
-
-  - [ ] **ASK on the board:** pull the Izumo five out and work them with the Izumo item, leaving 13
-    genuinely separate no-anchor/no-match cases? Asked on the page 2026-08-19; awaiting her reply, not
-    blocking on it.
-
-  ### B8. Empty-items — which to restore?
-  285 emptied items, 217 lost their P31 — restoration candidates, sorted by how much was lost.
-  https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
-  - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
-    this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
-
 - **Duplicated "part of" statements — ANSWERED and RECORDED 2026-08-19; one gated remainder**
 
   Emma hedged that it might be resolved. It is not, and the answer to the actual question ("is an
@@ -820,32 +689,142 @@ investigation are all unblocked. Only *delivery to Wikidata* is held.
 
   ---
 
-- **Create new items for the shrines lost to the repurposing — LAST, by Emma's sequencing**
 
-  **Emma's decision, 2026-08-19:** *"we create new otems for the ones lost due to their messing with
-  them."* This replaces the old "is it debatable?" framing entirely — it is decided, and it covers
-  every shrine whose item was taken over, not only Kamo.
+## ❓ NEEDS A DECISION FROM EMMA — not the lockout
 
-  **Her placement, verbatim:** *"This goes at the end of the queue to do any tooling or research on
-  because you're doing the bunrei book shit."* So no tooling and no research on this until the bunrei
-  attempt is finished or dropped.
+These are not waiting on Wikidata. They are waiting on a ruling, and each names what is being asked.
+- **❓ DECISIONS — fire ONE at a time, in order, once the gate opens**
 
-  Known losses, from `docs/bruno_plus_analysis_2026-07.md` §4:
+  **Standing rule: EVERY decision carries a "walk me through it first / let's chat" option.** Emma often
+  doesn't have the context to pick A vs B cold — she picks "explain it first", the bot lays out the
+  situation in plain terms, they talk, THEN decide. Never treat a decision as "blocked on Emma" and skip
+  it; fire the question with the chat option so it can actually move.
 
-  | shrine | old item | what it is now |
-  |---|---|---|
-  | Kamo Shrine, Odawara | `Q123044569` | 大美和神社, different coords. No surviving item; none of the eight 加茂神社 items is Odawara |
-  | Chikadono Shrine, Kumagaya (熊谷市下増田749) | `Q134886554` | 近殿神社 in Kanagawa (Yokosuka). No item holds Chikadono any more |
-  | 見光寺, Hanno, Saitama | `Q134736575` | re-pointed to a different temple; the item asserts the wrong one |
+  > These can't be decided blind — Emma reviews them against the Open questions page **plus** the
+  > browsable tables. The tables are GitHub Pages and work right now, but the review pairs the two, so
+  > they wait for the gate (Emma 2026-07-13).
 
-  - [ ] Build the CREATE batch — one new item per lost shrine, from the pre-damage archives
-    (`Q134736575.json` was archived pre-damage; check what else was). Creations are a different
-    QuickStatements shape from statements and Emma has previously turned creations OFF, so confirm the
-    create-mode before generating.
-  - BLOCKED-ON-EXTERNAL for execution: Wikidata lockout to **2026-09-18**. Building the batch is not
-    blocked; only submitting it is.
-  - **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
-    which is additive and independent of whatever the other editor is doing.
+  ### B2. ~~The duplicate shrine pairs — link or merge?~~ **WITHDRAWN 2026-08-19. Not a decision.**
+
+  Table: https://emmaleonhart.github.io/shintowiki-scripts/shikinaisha-orphans.html
+
+  **Emma settled this in JULY and the answer never reached the queue.** From [[Open questions]] on the
+  wiki, unhandled because B1 (the sweep that reads that page) was itself gated behind the 39-day wiki
+  blackout:
+
+      "I am pretty sure right now that, for literally all of them, it's a matter of Japanese Wikipedia
+       and the Kokugakuin database disagreeing with each other, and you're insisting that we should
+       merge them. This actually is a thing that was done by the original import bot ages ago, and it
+       was the source of a massive amount of problems!... If any of these ones are not a disputed
+       shikinai-sha, then it's different, and I'm going to manually go through them to ensure that there
+       aren't any. I am pretty strongly convinced that this thing here that you're talking about is just
+       a non-issue."
+
+  So merging is not merely undecided — she has already seen it do damage once, via the original import
+  bot, and said so. **This is the standing ruling; treat it as decided.** She reserves the manual pass
+  over any that are not disputed shikinaisha.
+
+  **And it is not decidable on the evidence either, because the "duplicate" class never established
+  identity.** Emma again, 2026-08-19, on being asked to pick link/merge/case-by-case:
+
+      "I'm extremely confused. What are you even doing here? What are you doing with duplicate labels?
+       What is the point of this? There's plenty of shrines with duplicate labels."
+
+  She is right, and it kills both halves of the class:
+
+  - **The Kokugakuin-id half was artifact.** It matched on bare P13677 while ignoring the P958 section.
+    Identity is the *combination*, and neither section `0` nor `n/a` is uniqueness-protected. Fixed at
+    source; the 36 "id disagreements" went to **zero** and none of the 11 id-matched pairs was real.
+  - **The name half is not evidence either.** It matched equal ja labels among entries of a list the
+    item already claims. That is narrower than "duplicate labels anywhere in Wikidata" — but not narrow
+    enough: **杉山神社 alone accounts for 4 of the 48**, and that name is multiplied all over the
+    Musashi region. Same-name-in-the-same-list is not the same shrine.
+
+  **Corrected state: 149 orphans, and NONE is provably a duplicate of a listed entry.** The 48 are a
+  list of name collisions; the report's own headline calls them duplicates, which overstates what it
+  knows. Do not re-raise link/merge on this basis.
+
+  **✅ ANSWERED 2026-08-24 — and there was no defect. They are the 宮中神, the palace shrines.**
+
+  The question was: why are items tagged Shikinaisha named as a part of no Jinmyōchō list? Measured
+  live, **it is 23 items, not 149** — the older figure counted something else or predates the list
+  rebuilds.
+
+  They are not listless. They are `part of` the palace groupings, which the Engishiki Jinmyōchō lists
+  BEFORE it reaches the provinces:
+
+  | part of | n |
+  |---|---|
+  | **八神殿** — the Eight Deities Hall (神産日, 高御産日, 玉積産日, 生産日, 足産日 …) | 8 |
+  | **座摩神** — the 座摩巫祭神五座 (生井, 福井, 綱長井, 波比祇 …) | 5 |
+  | **御門巫祭神 八座** | 2 |
+  | **生島巫祭神 二座** | 2 |
+  | modern shrines carrying `P460` — relocated or merged sites, correctly listless | 4 |
+  | no `P361` at all | 2 |
+
+  So the orphan query only catches them because those palace groupings are not themselves
+  `part of` the Jinmyōchō item, while the province lists are. **The register's own structure, not
+  damage** — nothing to merge, nothing to link, and the class dissolves the same way the
+  "duplicates" did.
+
+  - [ ] Optional and cosmetic: making 八神殿 / 座摩神 / 御門巫祭神 / 生島巫祭神 `part of` the Jinmyōchō
+    would empty this report to the 2 genuinely bare items. Only worth it if the report is meant to be
+    a zero-inbox; it is a Wikidata edit, so it waits for 2026-09-18 either way.
+
+  **Housekeeping done 2026-08-19:** the generator called the class "living/entry duplicates &mdash; the
+  same shrine under the same name &rarr; link or merge". It now calls them **name collisions**, says
+  plainly that a shared name is not proof of identity, and carries the withdrawal note on the section
+  itself. Headline reads `149 orphans: 48 name collision / 0 Kokugakuin-id disagreement / 101 no-twin`.
+
+  ### B3. The orphan Shikinaisha — mis-tagged, or missing entries? **Re-read before deciding.**
+  Was 66; now **101** after 36 members arrived from B2's id-disagreement class, which turned out not to
+  exist. With B2 withdrawn the honest count is closer to all **149** orphans, since the 48 "duplicates"
+  are only name collisions. 101 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or real
+  entries the lists are missing. Same table as B2.
+  - **ASK:** "How do I treat the 66?" → *investigate case-by-case* / *treat as mis-tagged* (drop the
+    class) / *treat as missing entries* (add to the list).
+
+  ### B4. The 18 missing Kokugakuin ids — auto-fill or eyes?
+  18 register entries lack a Kokugakuin database id; the strict matcher found ZERO safe to add (two
+  adjacent DB entries can share a name).
+  Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-missing-ids.html
+  - **ASK:** "Is exact name-matching good enough to auto-fill, or do the 18 need per-item eyes?" →
+    *per-item eyes* / *auto-fill the exact matches*.
+
+  ### B5. The ~66 items with two Kokugakuin ids — how to assign the section?
+  Each is a candidate for two different 927 entries, so its parent-link needs a "which entry" (P958)
+  qualifier. Emma earlier ruled all ambiguous.
+  Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-multi-p13677.html
+  - **ASK:** "Go through these with me per-item now, or leave them for you to work off the table?" →
+    *per-item with you* / *leave for you*.
+
+  ### B6. The Awa list fix — how to delete the wrong statement?
+  Awa entry 3 should be 天神社 (add already queued); the wrong 下立松原 statement must be deleted, but it
+  can't be a QuickStatement (下立松原 sits at ordinals 3 AND 5, same value).
+  https://emmaleonhart.github.io/shintowiki-scripts/awa-entry-3.html
+  - **ASK:** "Sequential-misc unit (remove BOTH 下立松原 has-parts, re-add the correct #5), or you
+    hand-delete the one statement?" → *sequential unit* (I build it) / *you hand-delete*.
+
+  ### B7. Kokugakuin P13677 matcher — examples DELIVERED 2026-08-19, one question left
+  Emma 2026-07: *"I don't even understand what this actual thing even is"* and *"I genuinely do not
+  have any idea what shrines this is referring to."* Both were asks for the shrines to be NAMED, not
+  linked. All 18 are now written out on [[Open questions]] itself.
+
+  **The finding that reframes it: five of the 18 are one cluster, not five cases.** 坐韓国伊大弖神社,
+  嘉羅久利神社, 佐久多神社 (意宇郡) and 韓國伊太弖奉神社, 天若日子神社 (出雲郡) are the Izumo knot.
+  佐久多神社 is two items for one shrine — Q135040907 holds id 182811, Q135070108 holds none — which is
+  the 佐久多/嘉羅久利 論社 split jawiki records. The two 野蚊神社 rows are likewise two distinct items
+  of the same name in one district, which is why the matcher refused to pick.
+
+  - [ ] **ASK on the board:** pull the Izumo five out and work them with the Izumo item, leaving 13
+    genuinely separate no-anchor/no-match cases? Asked on the page 2026-08-19; awaiting her reply, not
+    blocking on it.
+
+  ### B8. Empty-items — which to restore?
+  285 emptied items, 217 lost their P31 — restoration candidates, sorted by how much was lost.
+  https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
+  - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
+    this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
 
 - **▶ The multi-ordinal `part of` collapse — MEASURED 2026-08-24, and it is 23 items**
 
@@ -907,6 +886,37 @@ investigation are all unblocked. Only *delivery to Wikidata* is held.
   - Unanimous with no tail at all, if a safe first slice is wanted: 八坂神社/Yasaka ×89,
     香取神社/Katori ×77, 白山神社/Hakusan ×59.
   - ⚠ Nothing staged, no generator written. This is the report she asked for, not a pipeline.
+
+
+## ⛔ TRULY GATED BY THE LOCKOUT — 2026-09-18
+
+Only work whose *doing* requires a credentialed write. Do not add to this without Emma saying so.
+- **Create new items for the shrines lost to the repurposing — LAST, by Emma's sequencing**
+
+  **Emma's decision, 2026-08-19:** *"we create new otems for the ones lost due to their messing with
+  them."* This replaces the old "is it debatable?" framing entirely — it is decided, and it covers
+  every shrine whose item was taken over, not only Kamo.
+
+  **Her placement, verbatim:** *"This goes at the end of the queue to do any tooling or research on
+  because you're doing the bunrei book shit."* So no tooling and no research on this until the bunrei
+  attempt is finished or dropped.
+
+  Known losses, from `docs/bruno_plus_analysis_2026-07.md` §4:
+
+  | shrine | old item | what it is now |
+  |---|---|---|
+  | Kamo Shrine, Odawara | `Q123044569` | 大美和神社, different coords. No surviving item; none of the eight 加茂神社 items is Odawara |
+  | Chikadono Shrine, Kumagaya (熊谷市下増田749) | `Q134886554` | 近殿神社 in Kanagawa (Yokosuka). No item holds Chikadono any more |
+  | 見光寺, Hanno, Saitama | `Q134736575` | re-pointed to a different temple; the item asserts the wrong one |
+
+  - [ ] Build the CREATE batch — one new item per lost shrine, from the pre-damage archives
+    (`Q134736575.json` was archived pre-damage; check what else was). Creations are a different
+    QuickStatements shape from statements and Emma has previously turned creations OFF, so confirm the
+    create-mode before generating.
+  - BLOCKED-ON-EXTERNAL for execution: Wikidata lockout to **2026-09-18**. Building the batch is not
+    blocked; only submitting it is.
+  - **Do NOT touch the repurposed items themselves.** This is creating new items for the lost shrines,
+    which is additive and independent of whatever the other editor is doing.
 
 - **Pinned tail (keep last)**
 
