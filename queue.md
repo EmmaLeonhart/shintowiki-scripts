@@ -42,7 +42,7 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   | `orphan_membership_removals.txt` | 829 | the 816 modern shrines whose `P361` belongs to their register entry |
   | `multi_ordinal_removals.txt` | 63 | `part of` statements carrying more than one series ordinal |
   | `tenjinsha_en_labels.txt` | 47 | 天神社 English labels derived from each item's own reading |
-  | `lost_shrine_creates.txt` | 39 | the three shrines the repurposing left with no item — via `create_items.py`, not the drip |
+  | `lost_shrine_creates.txt` | 44 | the three shrines the repurposing left with no item — via `create_items.py`, not the drip |
   | `p958_corrections.txt` | 3 | Kokugakuin page 181621, where a wrong `P958` needs remove-then-add |
 
   The Awa entry 3 fix rides along as a requirement on item creation, per Emma's ruling — she
