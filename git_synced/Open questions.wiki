@@ -2,16 +2,15 @@ __NOTOC__
 
 == Open questions ==
 
-=== Karakuniitateno Shrine — five shrines, one name, one bad merge ===
+=== Karakuniitateno Shrine — two entries, one merged into the other ===
 {{main|Karakuniitateno Shrine}}
 
-The ''Engishiki'' lists '''five''' 韓国伊太弖神社 in Izumo alone. They are told apart by the entry '''before''' each one — the 坐 prefix means "situated in", so each stands in a different parent shrine's precinct: 玉作湯 (19), 揖夜 (28), 佐久多 (39), 阿須伎 (92), and standalone (125). The 大/太 spelling is not the distinguishing feature.
+Entries '''28''' (in 揖夜神社's precinct) and '''39''' (in 佐久多神社's precinct) are two different shrines. [[d:Q135040908|Q135040908]] was merged into [[d:Q135040786|Q135040786]] in 2026-05.
 
-Entry '''39''' ([[d:Q135040908|Q135040908]], Sakuta's precinct) was merged into entry '''28''' ([[d:Q135040786|Q135040786]], Iya's precinct) on 2026-05-23. Two different shrines. Both had been given the '''same two candidates''' — [[d:Q135070107|Q135070107]] 嘉羅久利神社 and [[d:Q135070108|Q135070108]] 佐久多神社 — which is why they read as duplicates. 嘉羅久利 is the modern form of 韓国 and stands in Sakuta grounds, so those candidates belong to '''39'''.
+Both entries carry the '''same two candidates''' — [[d:Q135070107|Q135070107]] 嘉羅久利神社 and [[d:Q135070108|Q135070108]] 佐久多神社 — which is why they read as one shrine. 嘉羅久利 is the modern form of 韓国 and stands in 佐久多 grounds, so those candidates belong to '''39'''.
 
-: '''→ Not un-merging''' (your call, and the evidence agrees): the candidate assignment is wrong independently of the merge, so restoring the item restores the wrong candidates with it. Fix the candidates first.
-: '''→ Still tangled, all Wikidata edits so all after 2026-09-18:''' two separate 嘉羅久利神社 items pointing at different entries; 佐久多神社 existing as both entry 38 and a candidate that holds ordinal 39; entry 38 carrying two ''followed by'' values in one statement.
-: ⚠ '''On this wiki:''' [[Karakuniitateno Shrine (Q135040908)]] now resolves to Q135040786 through the redirect, so it and the main page point at one item while describing different shrines.
+: '''→''' Not un-merging, your call — the candidate assignment is wrong independently of the merge, so restoring the item restores the wrong candidates with it.
+: '''→''' Left to fix, all Wikidata so all after 2026-09-18: two separate 嘉羅久利神社 items on different entries; 佐久多神社 as both entry 38 and a candidate holding ordinal 39; entry 38 carrying two ''followed by'' values in one statement.
 
 == Wiki-based queue ==
 

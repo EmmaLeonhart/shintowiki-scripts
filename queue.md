@@ -77,23 +77,28 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   seen none of them. Dispatched the rebuild by hand: the queue now holds **58** kana items out of
   1,657. Anything that adds work-files must rebuild the queue or wait a day for it.
 
-- **The 08-22 CI repair is VERIFIED. A separate, older defect remains.**
+- **▶ Verify the WDQS throttle fix on the next scheduled run**
 
-  Run `32615320387` (2026-08-23) settles the first half and rediagnoses the second.
+  Both 08-22 CI defects are fixed and verified (`secrets: inherit`, the 69 unbootstrapped imports) —
+  all four red jobs green since 08-23, nothing further to check there.
 
-  **✅ Both 08-22 defects are fixed, measured on the run rather than on the diff.** All four jobs
-  that were red on 08-19 → 08-22 came back green or better:
+  The "separate older defect" that item carried is also diagnosed, and the diagnosis was wrong three
+  times before it was right. It was never a timeout: a forced run finished the whole path including
+  both weekly steps in **41.8 minutes** against a 150-minute cap. The two description generators
+  were **429ing themselves out of WDQS** — `time.sleep(1)` against this repo's own documented
+  `WDQS_THROTTLE = 2.5`, in VALUES batches of 150 across the full target set — and
+  `continue-on-error: true` reported the step green, so `description_label_pairs.txt` sat unchanged
+  since 2026-08-02 behind a passing check.
 
-  | job | 08-22 | 08-23 |
-  |---|---|---|
-  | `generate-pages / build` | failure (`MIRAHEZE_EMAIL is not set`) | **success** |
-  | `generate-pages / deploy` | skipped | **success** |
-  | `cleanup / cleanup` | failure (`ModuleNotFoundError`) | **success** |
-  | `untransclude-crud-templates` | failure (`ModuleNotFoundError`) | **success** |
-  | `generate-quickstatements / generate` | failure in ~90s | **cancelled at the 75m cap** |
+  Both generators now use the 2.5s floor, and both emit a `::warning` naming the file that was not
+  regenerated when they bail.
 
-  Every other job in the run is green. `secrets: inherit` and the 69 unbootstrapped imports are
-  done; nothing further to check there.
+  - [ ] **Unverified: whether 2.5s is actually enough.** The next `cleanup-loop` fire (02:23Z daily)
+    exercises it on a weekday, where the weekly steps do not run — so the real test is either a
+    Sunday or another `force_weekly=true` dispatch. Check for the `::warning` annotation; its
+    absence plus a changed `Did` count is the pass.
+  - The 429 was ours the whole time and was reported as BLOCKED-ON-EXTERNAL in three status reports.
+    A rate limit from our own scheduled job means our own pacing is wrong.
 
 - **Cloud-answer collectors — the routine's pace is intended. Do not optimise it.**
 
