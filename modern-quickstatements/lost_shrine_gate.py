@@ -38,9 +38,12 @@ _here = os.path.dirname(os.path.abspath(__file__))
 if _here not in sys.path:
     sys.path.insert(0, _here)
 
-_root = os.path.dirname(_here)
-if _root not in sys.path:
-    sys.path.insert(0, _root)
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
 
 import conflict_gate  # noqa: E402
 from shinto_miraheze.wikidata_edit_allowed import editing_allowed  # noqa: E402
