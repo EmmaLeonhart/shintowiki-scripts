@@ -10,9 +10,9 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
   Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-multi-p13677.html
 
-  Same shape as the 228-item reading queue below: the section can only be read off the Kokugakuin
-  page, so it is reading, not derivation. No rate attached, and it never becomes a work-loop tick's
-  obligation.
+  **NOT LOCKED — Emma's ruling, 2026-08-25: "work it now."** The lockout gates three credentialed
+  scripts and the hand-run batches. It does not gate SPARQL reads, generators, or deciding, so the
+  reading and the QuickStatements generation happen now; only delivery waits for 09-18.
 
 - **The 228 sections that can only be read off the Kokugakuin page**
 
@@ -20,8 +20,9 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   every holder so the taken sections are visible while choosing, with the QuickStatements building
   live at the bottom. Emma chose the shape: *"One HTML page, all 228, work at your own rate."*
 
-  Nothing tracks progress and nothing chases. OUT-OF-SCOPE for automation permanently — the value
-  exists only on the Kokugakuin page.
+  **NOT LOCKED — Emma's ruling, 2026-08-25: "grind it."** "Out of scope for automation" was about
+  automation and says nothing about the lockout; no Wikidata write happens until the batch is
+  submitted. Worked at my own rate, accumulating QuickStatements.
 
 - **The 13 Kokugakuin ids with no `P1352` on their link statement**
 
@@ -29,8 +30,10 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   generator requires a ranking qualifier on the `P460`/`P527` link statement, and these links do not
   carry one, so they are outside its input rather than dropped by it.
 
-  If they want sections, the remedy is adding the missing `P1352` qualifiers — a Wikidata data gap.
-  BLOCKED-ON-EXTERNAL for execution: the lockout runs to **2026-09-18**.
+  **NOT LOCKED — Emma's ruling, 2026-08-25: "generate the batch now."** I had marked this
+  BLOCKED-ON-EXTERNAL, which was wrong the same way as the two above: the *output* is a Wikidata
+  write, but building the batch is not. Work out each ranking from the register and stage the
+  `P1352` QuickStatements like everything else.
 
 - **Built and waiting on the lockout — no work left on any of them**
 
@@ -48,6 +51,25 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   The Awa entry 3 fix rides along as a requirement on item creation, per Emma's ruling — she
   hand-fixes the wrong 下立松原 statement the way she is handling the Izumo knot. No sequential unit
   is built for it.
+
+  - [ ] **Emma asked to see one before it delivers (2026-08-25).** Building a readable page for
+    `orphan_membership_removals.txt` — the largest, and the only one that removes statements from
+    816 items. A `.txt` of `-Q…|P361|Q…` is not reviewable.
+
+- **⛔ I keep mis-scoping the lockout. It gates WRITES, not work.**
+
+  Emma, 2026-08-25: *"do askuserquestion on everything there so that I can judge if they are or are
+  not locked with wikidata since you often just defaulted to saying stuff was wikidata locked."*
+  She put four items to the test and **three of my four labels were wrong.**
+
+  What `wikidata_editing_lockout.state` actually gates: `direct_daily_edits.py`, `create_items.py`,
+  `substitute_source_shrine_proposal.py`, their CI guard steps, and the hand-run QuickStatements
+  batches in `funding-and-networking`. That is the whole list.
+
+  What it does **not** gate: SPARQL queries, the Wikidata API for reading, any `generate_*.py`,
+  analysis, deciding, or writing a batch to a `.txt`. **An item is blocked only if the thing left to
+  do IS the write.** Everything upstream is available now, and marking it blocked is how a queue
+  fills up with work that could already have been done.
 
 - **Pinned tail (keep last)**
 
