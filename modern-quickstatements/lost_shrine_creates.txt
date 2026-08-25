@@ -1,0 +1,44 @@
+CREATE
+LAST|Lde|"Kamo Schrein"
+LAST|Len|"Kamo Shrine"
+LAST|Lfr|"sanctuaire de Kamo"
+LAST|Lid|"Kuil Kamo"
+LAST|Lja|"加茂神社"
+LAST|Dde|"Shinto-Schrein in Odawara, Kanagawa, Japan"
+LAST|Den|"Shinto shrine in Odawara, Kanagawa, Japan"
+LAST|Did|"kuil Shinto di Prefektur Kanagawa, Jepang"
+LAST|Dja|"小田原市にある神社"
+LAST|P31|Q845945
+LAST|P31|Q137640533
+LAST|P17|Q17
+LAST|P131|Q267258
+LAST|P625|@35.27712826106289/139.17583480745927
+LAST|P825|Q11634943
+LAST|P6375|en:"708 Kamonomiya, Odawara, Kanagawa 250-0874, Japan"
+
+CREATE
+LAST|Len|"Kenkō-ji Temple"
+LAST|Lid|"Wihara Kenkō-ji"
+LAST|Lja|"見光寺"
+LAST|Den|"Buddhist temple in Hannō, Japan"
+LAST|P31|Q5393308
+LAST|P17|Q17
+LAST|P131|Q850472|S854|"https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+LAST|P625|@35.838036/139.337402|S854|"https://geocode.csis.u-tokyo.ac.jp/home/simple-geocoding/"
+LAST|P6375|ja:"埼玉県飯能市岩沢1092"|S854|"https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+LAST|P1814|"けんこうじ"|S854|"https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+
+CREATE
+LAST|Len|"Chikadono Shrine"
+LAST|Lfr|"sanctuaire de Chikadono"
+LAST|Lid|"Kuil Chikadono"
+LAST|Lja|"近殿神社"
+LAST|Den|"Shinto shrine in Saitama Prefecture, Japan"
+LAST|Did|"kuil Shinto di Prefektur Saitama, Jepang"
+LAST|Dja|"埼玉県熊谷市下増田にある神社"
+LAST|P31|Q845945
+LAST|P17|Q17
+LAST|P131|Q41106|S854|"https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+LAST|P625|@36.209057/139.336243|S854|"https://geocode.csis.u-tokyo.ac.jp/home/simple-geocoding/"
+LAST|P6375|ja:"埼玉県熊谷市下増田749"|S854|"https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+LAST|P1814|"ちかどのじんしゃ"|S854|"https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
