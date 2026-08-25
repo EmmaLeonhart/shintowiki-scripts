@@ -155,7 +155,10 @@ def main():
                 lines.append(f'-{item}|P1814|{s(top)}')
 
     with open(REMOVE_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + ("\n" if lines else ""))
+        # Sorted at the writer, per DEVLOG 2026-08-21: WDQS row order is not stable, so
+        # emitting in result order reshuffled this file on every build — 49, 156 and 123
+        # lines on three consecutive regenerations, each an identical set in a new order.
+        f.write("\n".join(sorted(set(lines))) + ("\n" if lines else ""))
     print(f"Wrote {len(lines)} lines to {REMOVE_FILE} (0 is normal until adds have landed)")
 
 

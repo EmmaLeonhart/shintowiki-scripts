@@ -131,9 +131,13 @@ def main():
         for ln in lines[:12]:
             print("   " + ln)
         return
+    # Sorted at the writer, per DEVLOG 2026-08-21. This file has not regenerated since it
+    # was created, so it has no churn history — but the query has no ORDER BY and the writer
+    # preserved binding order, which is precisely the shape that reshuffles on first rebuild.
+    # Fixed before it happens rather than after.
     with io.open(OUT, "w", encoding="utf-8", newline="\n") as fh:
         if lines:
-            fh.write("\n".join(lines) + "\n")
+            fh.write("\n".join(sorted(set(lines))) + "\n")
     print("wrote %s" % OUT)
 
 
