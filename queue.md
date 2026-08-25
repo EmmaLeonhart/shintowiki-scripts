@@ -31,9 +31,31 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   carry one, so they are outside its input rather than dropped by it.
 
   **NOT LOCKED — Emma's ruling, 2026-08-25: "generate the batch now."** I had marked this
-  BLOCKED-ON-EXTERNAL, which was wrong the same way as the two above: the *output* is a Wikidata
-  write, but building the batch is not. Work out each ranking from the register and stage the
-  `P1352` QuickStatements like everything else.
+  BLOCKED-ON-EXTERNAL, which was wrong: the *output* is a write, but building the batch is not.
+
+  **Measured 2026-08-25, and the job is READING, not derivation.** It is **24 links across 13
+  items**, pointing at **23 distinct register entries**. The ranking says which numbered candidate
+  (現社名など（１）（２）…) the shrine is on its Kokugakuin page, so it can only be derived when an
+  entry has exactly one candidate — otherwise the page decides it.
+
+  | | |
+  |---|---:|
+  | entries with several candidates → must be read | **18** |
+  | entries with one or no resolvable candidate | **5** |
+
+  Worst cases are heavily contested: [`Q135040009`](https://www.wikidata.org/wiki/Q135040009) has
+  **five** candidates, [`Q135039676`](https://www.wikidata.org/wiki/Q135039676) and the two
+  常宮神社 entries [`Q135040140`](https://www.wikidata.org/wiki/Q135040140) /
+  [`Q135040141`](https://www.wikidata.org/wiki/Q135040141) have **four** each.
+
+  Two hypotheses tested and dropped rather than left as theories: the item-level `has_p958` flag
+  does not cause this (none of the 13 carries `P958` anywhere), and the `P527` links are **not**
+  shrine-to-sub-shrine relationships where a ranking would not apply — all six targets carry
+  Kokugakuin ids and are genuine register entries.
+
+  So this is the same work as the 228-section reading queue below, in a different property. It
+  belongs there rather than in a separate speculative batch, and generating one would mean guessing
+  ordinals — which is what `resolve_multi_p13677` already refuses to do by design.
 
 - **Built and waiting on the lockout — no work left on any of them**
 
