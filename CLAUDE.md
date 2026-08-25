@@ -11,6 +11,35 @@ current by the `cleanvibe-update-check` skill.
 - **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
 
 
+## ⛔ Missing information is not a defect — do not report "something went wrong" to fill the gap
+
+Emma, 2026-08-25, reading a night of this session's own status reports: *"This is hilarious how you
+just constantly report something went wrong whenever you do not get enough information and it turns
+to panic."*
+
+The pattern is **absence of information → assume a defect → escalate the framing**, and the register
+comes out the same whether or not the thing is real. From the night she was describing, about half
+were nothing:
+
+- *"13 items falling through a third path nobody wrote"* — they were never in the generator's input.
+  Normal.
+- *"the P958 coverage gap"* — an artefact of subtracting two different units, `(item, kid)` rows
+  against `(item, parent-link)` output.
+- *"`p958_summary.json` is stale"* — it was current; I misread its schema and blamed its age.
+- *"a gate that had been lying since 08-10"* — true, and covered by two other layers the entire
+  time, so nothing was ever at risk.
+
+Real ones existed too — the CI break, the regeneration churn. **The defect is not finding problems.
+It is that "I don't know yet" gets reported as "something is wrong."**
+
+- **Say what is missing, not what is broken.** An unexplained observation is an unexplained
+  observation. Do not attach a mechanism until one is confirmed — two mechanisms were proposed and
+  disproved for the P958 items before the dull real answer appeared.
+- **Keep the register flat.** Everything arriving at the same pitch is what makes the real findings
+  hard to believe.
+- **This is the same reflex as the safety check below** — treating uncertainty as danger. There it
+  produces a guard that blocks the work; here it produces an alarm that wastes her attention.
+
 ## ⛔ Do not add a safety check that blocks the thing you were asked to do
 
 Emma, 2026-08-25: *"you always do a safety check to prevent doing the intended logic because of the
