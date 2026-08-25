@@ -76,6 +76,7 @@ WD_API = "https://www.wikidata.org/w/api.php"
 GATES = {
     "vsa_libraries.txt": "vsa_libraries_gate",
     "ise_jingu_creates.txt": "ise_jingu_gate",
+    "lost_shrine_creates.txt": "lost_shrine_gate",
 }
 
 

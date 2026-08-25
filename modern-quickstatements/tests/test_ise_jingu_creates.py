@@ -94,16 +94,24 @@ def test_p612_always_carries_the_bunrei_qualifier(blocks):
                 assert "|P1013|Q195793|" in line, line
 
 
-def test_gate_is_shut_during_the_wikidata_freeze():
-    ok, why = ise_jingu_gate.is_open(today=datetime.date(2026, 8, 9),
+def test_gate_is_shut_while_the_lockout_state_says_locked(monkeypatch):
+    # The gate reads shinto_miraheze/wikidata_editing_lockout.state rather than
+    # carrying its own copy of the date. It used to hold FREEZE_UNTIL = 2026-08-10,
+    # and from that date it reported OPEN straight through the lockout running to
+    # 2026-09-18 — the duplicated-freeze failure CLAUDE.md names.
+    monkeypatch.setattr(ise_jingu_gate, "editing_allowed",
+                        lambda: (False, "LOCKED until 2026-09-18"))
+    ok, why = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 1),
                                      last_watched_edit=None)
     assert not ok
-    assert "freeze" in why
+    assert "lockout" in why
 
 
-def test_gate_opens_after_the_freeze_when_conflict_gate_is_clear():
+def test_gate_opens_when_the_lockout_is_clear_and_conflict_gate_is_clear(monkeypatch):
+    monkeypatch.setattr(ise_jingu_gate, "editing_allowed",
+                        lambda: (True, "no lockout"))
     long_ago = datetime.date(2020, 1, 1)
-    ok, _ = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 1),
+    ok, _ = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 30),
                                    last_watched_edit=long_ago)
     assert ok
 
@@ -111,17 +119,35 @@ def test_gate_opens_after_the_freeze_when_conflict_gate_is_clear():
 def test_gate_fails_closed_when_the_conflict_check_raises(monkeypatch):
     def boom():
         raise RuntimeError("network down")
+    monkeypatch.setattr(ise_jingu_gate, "editing_allowed",
+                        lambda: (True, "no lockout"))
     monkeypatch.setattr(ise_jingu_gate.conflict_gate,
                         "fetch_last_watched_edit", boom)
-    ok, why = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 1))
+    ok, why = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 30))
     assert not ok
     assert "refusing" in why
 
 
-def test_gate_is_not_wired_backwards():
-    # The freeze branch must reject dates BEFORE the cutoff, not after it — the
-    # same inversion that would have made the bunrei sunset a no-op.
-    before, _ = ise_jingu_gate.is_open(today=ise_jingu_gate.FREEZE_UNTIL
-                                       - datetime.timedelta(days=1),
-                                       last_watched_edit=None)
-    assert not before
+def test_gate_fails_closed_when_the_lockout_check_raises(monkeypatch):
+    def boom():
+        raise RuntimeError("state file unreadable")
+    monkeypatch.setattr(ise_jingu_gate, "editing_allowed", boom)
+    ok, why = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 30),
+                                     last_watched_edit=None)
+    assert not ok
+    assert "refusing" in why
+
+
+def test_gate_is_not_wired_backwards(monkeypatch):
+    # Locked must mean CLOSED and unlocked must mean OPEN — the same inversion
+    # that would have made the bunrei sunset a no-op.
+    long_ago = datetime.date(2020, 1, 1)
+    monkeypatch.setattr(ise_jingu_gate, "editing_allowed",
+                        lambda: (False, "LOCKED"))
+    locked, _ = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 30),
+                                       last_watched_edit=long_ago)
+    monkeypatch.setattr(ise_jingu_gate, "editing_allowed",
+                        lambda: (True, "clear"))
+    unlocked, _ = ise_jingu_gate.is_open(today=datetime.date(2026, 9, 30),
+                                         last_watched_edit=long_ago)
+    assert not locked and unlocked

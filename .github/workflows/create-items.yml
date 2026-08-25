@@ -109,6 +109,21 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python create_items.py --batch vsa_libraries.txt --apply
 
+      # The three shrines the ブルーノ・プラス repurposing left with no item — Kamo
+      # Shrine (Odawara), Chikadono Shrine (Kumagaya) and 見光寺 (Hannō). Emma,
+      # 2026-08-24: "Register it — deliver on 2026-09-18." Registering it in
+      # create_items.GATES is only half of that: a batch that no step invokes never
+      # runs however well it is gated, which is the state ise_jingu_creates.txt is
+      # still in. lost_shrine_gate holds it shut until the lockout state file says
+      # otherwise AND the conflict gate is clear.
+      - name: Create the lost-shrine items
+        if: steps.freeze.outputs.open == 'true'
+        working-directory: modern-quickstatements
+        env:
+          MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python create_items.py --batch lost_shrine_creates.txt --apply
+
       - name: Commit the state file
         run: |
           if git diff --quiet -- modern-quickstatements/*.state; then
