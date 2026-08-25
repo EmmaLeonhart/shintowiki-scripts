@@ -75,6 +75,7 @@ from shinto_miraheze.ua_for import ua_for
 # VALUES batches of 150 across the whole target set, and 429'd itself out of every weekly refresh
 # since 2026-08-02. The 429 was reported for weeks as an external blocker; it was ours.
 WDQS_THROTTLE = 2.5
+_LAST_CALL = 0.0  # monotonic stamp of the last WDQS request; see sparql()
 
 
 OUT = os.path.join(HERE, "description_label_pairs.txt")
@@ -94,9 +95,22 @@ GENERIC_SUPPORT = 3   # min corpus frequency for the generic modal form
 
 
 def sparql(query, retries=3):
+    """Every WDQS call in this script and in generate_description_adds.py goes through here.
+
+    The throttle lives INSIDE this function on purpose. It used to sit at the call sites, which
+    meant the VALUES-batch loop was paced and the four other call sites were not paced at all —
+    so the script could fire several queries back to back and 429 itself out of the run. Pacing
+    the transport rather than the callers is the only version that cannot be forgotten by a new
+    caller. Emma, 2026-08-24: "You just want to rate limit within your scripts."
+    """
     url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
     req = urllib.request.Request(url, headers={
         "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
+    global _LAST_CALL
+    gap = time.monotonic() - _LAST_CALL
+    if gap < WDQS_THROTTLE:
+        time.sleep(WDQS_THROTTLE - gap)
+    _LAST_CALL = time.monotonic()
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=300) as r:
