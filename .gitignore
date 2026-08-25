@@ -42,3 +42,10 @@ jinjacho/match_run*.log
 
 # UA contact addresses — the real values are repo secrets (MIRAHEZE_UA_CONTACT / WIKIDATA_UA_CONTACT)
 shinto_miraheze/.ua_contacts.json
+
+# Cached Kokugakuin Digital Museum entry pages (kokugakuin_candidates.py).
+# Kept on disk so the reading queue does not re-fetch a small museum site, and so the
+# corpus can be re-parsed without new requests — but regenerable, third-party, and
+# growing, so not committed. CLAUDE.md forbids writing outside the repo; this is the
+# other half of that: inside the tree, out of the history.
+modern-quickstatements/kokugakuin_pages/

@@ -60,6 +60,20 @@ CORRECTIONS = [
     ("Q111776816", "181621", "1"),
     ("Q134925373", "181621", "0"),
     ("Q135039671", "181621", "n/a"),
+
+    # Found 2026-08-25 by reading the Kokugakuin pages themselves, via
+    # kokugakuin_candidates.py, while measuring that reader against 120 items whose
+    # P958 is already set. It agreed with Wikidata on 72 and disagreed on these two —
+    # and on both, the page is right and the item is wrong. Each was confirmed by
+    # opening the entry rather than inferred from the mismatch.
+    #
+    # 181329 lists three candidates: (1)小山尾津神社 (2)尾津神社 (3)御衣野尾津神社.
+    # Q135186791 is labelled 尾津神社 exactly, so it is slot 2; its recorded "1" is
+    # 小山尾津神社's slot.
+    ("Q135186791", "181329", "2"),
+    # 180834 lists exactly one candidate and numbers it (2): （論）東大谷日女命神社.
+    # There is no slot 1 on that page at all, so the recorded "1" cannot be right.
+    ("Q135069120", "180834", "2"),
 ]
 
 
