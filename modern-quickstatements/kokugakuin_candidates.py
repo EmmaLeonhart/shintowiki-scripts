@@ -83,13 +83,25 @@ def normalise(name):
     return n.strip()
 
 
-def fetch(kid, refresh=False):
-    """Raw HTML for one entry page, cached on disk."""
+class NotCached(Exception):
+    """Asked for a page that is not on disk while running offline."""
+
+
+def fetch(kid, refresh=False, offline=False):
+    """Raw HTML for one entry page, from disk; fetches only when not offline.
+
+    `offline=True` is the safe default for bulk resolvers. Without it, a resolver run
+    while `fetch_all_kokugakuin_pages.py` is working becomes a SECOND crawler against the
+    same small site — which is exactly what happened on 2026-08-25 and is the reason this
+    parameter exists.
+    """
     if not os.path.isdir(CACHE):
         os.makedirs(CACHE)
     path = os.path.join(CACHE, "%s.html" % kid)
     if os.path.exists(path) and not refresh:
         return io.open(path, encoding="utf-8").read()
+    if offline:
+        raise NotCached(kid)
     req = urllib.request.Request(DET + str(kid),
                                  headers={"User-Agent": WIKIDATA_USER_AGENT})
     wd_pace(READ_INTERVAL)
@@ -99,9 +111,9 @@ def fetch(kid, refresh=False):
     return body
 
 
-def candidates(kid, refresh=False):
+def candidates(kid, refresh=False, offline=False):
     """{section: name} for one entry, e.g. {'1': '本宮神社境外末社日御崎神社', '2': '佐久多神社'}."""
-    body = fetch(kid, refresh=refresh)
+    body = fetch(kid, refresh=refresh, offline=offline)
     out = {}
     for fw, raw in SLOT.findall(body):
         name = re.sub(r"<[^>]+>", "", raw).strip()
@@ -110,12 +122,12 @@ def candidates(kid, refresh=False):
     return out
 
 
-def resolve(kid, label, refresh=False):
+def resolve(kid, label, refresh=False, offline=False):
     """(section, why) — the section this label occupies on this entry, or None.
 
     Exact normalised equality against that entry's own candidates. Ambiguity defers.
     """
-    cands = candidates(kid, refresh=refresh)
+    cands = candidates(kid, refresh=refresh, offline=offline)
     if not cands:
         return None, "page lists no candidates"
     target = normalise(label)

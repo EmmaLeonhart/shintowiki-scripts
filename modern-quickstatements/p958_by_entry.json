@@ -1,0 +1,4877 @@
+[
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180695",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q119929663",
+   "Q135184983"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180724",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135185020",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q43594918",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "片岡神社",
+   "2": "片岡神社元宮"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180928",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（合祀）片埜神社",
+   "2": "神社址（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135099507",
+   "Q135185533"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180937",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135185575",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（合祀）矢作神社",
+   "2": "長柄神社跡地碑"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135098886"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180959",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "当宗神社（誉田八幡宮境内社）",
+   "2": "旧社地"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11631426",
+   "Q135185626"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180966",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "酒屋神社（屯倉神社境内社）",
+   "2": "旧社地"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11465762",
+   "Q135185635"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180974",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135206688",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "合祀：陶荒田神社",
+   "2": "旧鎮座地"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039161"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180995",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "180996",
+  "placed": 2,
+  "why": "placed 2/4 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135039173",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135185682",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "合祀：大津神社",
+   "2": "粟神社跡地"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135185681",
+   "Q85593661"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181012",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "旧社地（元宮）：浜宮（現男神社摂社）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039188",
+   "Q135206791"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181023",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181029",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181030",
+  "placed": 0,
+  "why": "placed 0/3 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "現社地",
+   "2": "旧社地"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q117848511",
+   "Q135098895",
+   "Q135206799"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181050",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（旧社地？）",
+   "2": "（合祀先）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135098903",
+   "Q135206826"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181143",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）伊勢市八日市場町の神宮司庁山田工作場周辺"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11486118",
+   "Q135186128"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181161",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11544726",
+   "Q135186175"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181163",
+  "placed": 0,
+  "why": "placed 0/3 open holder(s); 3 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）明治44年合祀以前（東裏）",
+   "3": "（旧社地）明治41年合祀以前（中垣内）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039274",
+   "Q135186179",
+   "Q135186180"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181166",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（合祀）二十五柱神社",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135098916",
+   "Q135186191"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181184",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（合祀）二十五柱神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135098926",
+   "Q135186310"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181191",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135039301",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "伊佐和神社",
+   "2": "（旧社地）射和寺薬師堂境内"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135186341"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181200",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（旧社地）式内伊呂上神社跡",
+   "2": "畠田神社に合祀"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039309",
+   "Q135186407"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181203",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（旧社地）豊養稲荷大明神",
+   "2": "神山神社に合祀"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039310",
+   "Q135186416"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181209",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（旧社地）泉の森",
+   "2": "伊勢寺神社に合祀"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039315",
+   "Q135186425"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181280",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135039385",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "旧社地",
+   "2": "高岡神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135186728"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181382",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11603933",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135187134",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)籠守勝手神社",
+   "2": "(論社)天神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181451",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11495515",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)成海神社",
+   "2": "(旧社地)天神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135190167"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181482",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "砥鹿神社",
+   "2": "砥鹿神社(奥宮)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135190217",
+   "Q3530344"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181580",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134893133",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)走湯神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135288594"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181706",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135039737",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(現社地)伊波比神社",
+   "2": "(旧社地)八幡台(現社地の西方の地)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135193327"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181715",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q66105394",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(現社地)小被神社",
+   "2": "(旧社地)不動寺(大里郡寄居町富田)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135193348"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181728",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11647974",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(現社地)金鑚神社",
+   "2": "(旧社地)元森神社・八坂神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135193395"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181736",
+  "placed": 0,
+  "why": "placed 0/3 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)下立松原神社(白浜町)",
+   "2": "(論社)下立松原神社(千倉町)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11361262",
+   "Q135193410",
+   "Q135193411"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181833",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "現社地",
+   "2": "旧社地）青木神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11469988",
+   "Q135193631"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181856",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）姫塚古墳"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039836",
+   "Q135193669"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181875",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135098983",
+   "Q135193705"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181907",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135039883",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（遥拝所）大前神社",
+   "2": "（旧社地）大前山"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135193774"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181946",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地）御旅所"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11523053",
+   "Q135193944"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181948",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地）三井山南斜面中腹"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11488771",
+   "Q135193949"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181960",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135193982",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "恵那神社前宮",
+   "2": "恵那神社奥宮"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11492453"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181974",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194114",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "阿禮神社前宮",
+   "2": "阿禮神社奥宮"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q62056170"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "181975",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194118",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "穂高神社本宮",
+   "2": "穂高神社奥宮"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11597109"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182009",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194261",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "山家神社本宮",
+   "2": "山家神社奥宮"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135039944"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182100",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194402",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "鹿嶋御子神社",
+   "2": "鹿嶋御子神社古社地"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11677124"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182112",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11668370",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "2": "（奥宮）駒形神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135194429"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182117",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（合祀先）",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040039",
+   "Q135194431"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182144",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194471",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "塩湯彦神社奥宮",
+   "2": "塩湯彦鶴ヶ池神社 (塩湯彦神社里宮)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11428793"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182161",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040071",
+   "Q135194485"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182202",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（合祀先）利椋八幡神社",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040120",
+   "Q135194508"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182321",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（奥宮）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135194773",
+   "Q704702"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182429",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）青海神社",
+   "2": "（旧社地）青海神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040434",
+   "Q135195053"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182519",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040514",
+   "Q135195195"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182520",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040515",
+   "Q135195197"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182531",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）芦井神社",
+   "2": "（旧社地）蛭子神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040524",
+   "Q135195208"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "182668",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（旧社地）",
+   "2": "（現社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135040651",
+   "Q135195387"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183058",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（合祀）二宮神社内",
+   "2": "（旧社地？）車戸大明神"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041185",
+   "Q135197849"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183060",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（合祀）二宮神社",
+   "2": "（旧社地？）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041188",
+   "Q135197864"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183069",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11584766",
+   "Q135197886"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183070",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地？）布勢巨神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041199",
+   "Q135197890"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183071",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地？）古美山"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041202",
+   "Q135197892"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183076",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135197907",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "2": "（論社）内宮"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041208"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183080",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地？）御崎宮"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135197913",
+   "Q17228003"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183109",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地）彦山中腹"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041245",
+   "Q135197967"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183115",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（旧社地？）八国見山"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041250",
+   "Q135197983"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183232",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135041389",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135070326",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）宇閉神社本宮",
+   "2": "（論社B）宇閉神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183298",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "麻氐良布神社 （下宮）",
+   "2": "麻氐良布神社 （奥宮）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135041470",
+   "Q135198256"
+  ]
+ },
+ {
+  "bucket": "MISSING-ALL",
+  "kid": "183317",
+  "placed": 3,
+  "why": "placed 3/3 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11490808",
+    "section": "3",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135198295",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135198296",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "志々伎神社沖都宮",
+   "2": "志々伎神社邊都宮",
+   "3": "志々伎神社",
+   "4": "志々伎神社中宮跡"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180600",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論）住吉大伴神社",
+   "2": "（論）伴氏社（北野天満宮末社）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q662176"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180650",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180655",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180657",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180738",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180851",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11610732",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論）天満神社",
+   "2": "（論）耳成山口神社",
+   "3": "（論）山之坊山口神社"
+  },
+  "taken": [
+   "1",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180853",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q98082987",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論）畝尾坐健土安神社",
+   "2": "（論）天香山神社",
+   "3": "（論）春日神社"
+  },
+  "taken": [
+   "1",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180859",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q98082987",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論）天香山神社",
+   "2": "（論）国常立命神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180875",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180885",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "美具久留御魂神社境内社",
+   "2": "利雁神社（旧社地に復興＝羽曳野市尺度）"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": [
+   "Q11608777"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180946",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11479957",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（合祀）巽神社",
+   "2": "横野神社跡"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180950",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "旧社地（布施戎神社）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135185616"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "180975",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181001",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181011",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181022",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181024",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181052",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181053",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（伊射奈岐神社〈吹田市山田東〉",
+   "2": "（伊射奈岐神社〈吹田市佐井寺〉）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135270126"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181063",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）",
+   "2": "（論社）"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q11379327",
+   "Q135270127"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181064",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181069",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）",
+   "2": "（論社）"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q11379248",
+   "Q1466105"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181070",
+  "placed": 0,
+  "why": "placed 0/3 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）",
+   "2": "（論社）"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q135206858",
+   "Q135270129",
+   "Q1466105"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181071",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181072",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181129",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論）堅田神社",
+   "2": "（論）宇治山田神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q17228121"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181140",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181142",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q17228121",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "所在地不詳",
+   "2": "（論社）堅田神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181151",
+  "placed": 3,
+  "why": "placed 3/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135186136",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135186137",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135186139",
+    "section": "3",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "河原神社",
+   "2": "（合祀）大口神社（論社を合祀）",
+   "3": "（論社）檜尻社（河原淵神社に比定）"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181156",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q17225818",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社1）雷電神社",
+   "2": "（論社2）湯田神社",
+   "3": "（論社3）高向大社",
+   "4": "（論社4）神村神社（旧跡）",
+   "5": "（論社5）離宮院跡",
+   "6": "（論社6）雷社"
+  },
+  "taken": [
+   "1",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181172",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社1）佐那神社（合祀）",
+   "2": "（論社1）八柱神社（旧社地）",
+   "3": "（論社2）畠田神社（合祀）",
+   "4": "（論社2）御山御前神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "unplaced": [
+   "Q17226795"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181182",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社1）二十五柱神社（合祀）",
+   "2": "（論社2）清水神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q134928742"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181185",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社1）石田神社跡（旧社地）",
+   "2": "（論社1）畠田神社（合祀）",
+   "3": "（論社2）神垣神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069202"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181186",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社1）火地神社（多気郡岩内村）",
+   "2": "（論社1）竹神社（合祀）",
+   "3": "（論社2）多気郡保津村鎮座説",
+   "4": "（論社3）多気郡保津田村鎮座説",
+   "5": "（論社4）宇気比神社（乙部村）",
+   "6": "（論社4）二十五柱神社（合祀）",
+   "7": "（論社5）八柱神社（油夫）",
+   "8": "（論社5）佐那神社（合祀）",
+   "9": "（論社6）有爾岡村鎮座説",
+   "10": "（論社7）有爾村鎮座説"
+  },
+  "taken": [
+   "1",
+   "10",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9"
+  ],
+  "unplaced": [
+   "Q134928742",
+   "Q135069203"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181187",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（旧社地）遥拝所",
+   "2": "（合祀）畠田神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": [
+   "Q135186331"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181212",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135186429",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135186430",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）松阪神社",
+   "2": "（論社B）神戸神舘神明神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181234",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）比佐豆知菅原神社",
+   "2": "（論社B）比佐豆知神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069216",
+   "Q135069219"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181241",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）事忌神社",
+   "2": "（論社B）事忌神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069225",
+   "Q135069226"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181254",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）明神社",
+   "2": "（論社B）能褒野神社に合祀",
+   "3": "（論社C）片岡神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q11612066"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181259",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135186675",
+    "section": "4",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）大井神社古社地",
+   "2": "（論社Aを合祀する）関神社",
+   "3": "（論社B）大井神社",
+   "4": "（論社C）江神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q132658851"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181260",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135069237",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）三宅神社",
+   "2": "（論社B）三宅神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q22120521"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181261",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135069238",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）三宅神社に合祀",
+   "2": "（論社B）江神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q135186675"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181266",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135186708",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135186709",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）片山神社",
+   "2": "（論社B）関神社に合祀"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181268",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135186710",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135186711",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）神舘飯野高市神社",
+   "2": "（論社B）飯野神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181278",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135186710",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135186711",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）飯野神社",
+   "2": "（論社B）神舘飯野高市神社",
+   "3": "（論社C）飯野神社"
+  },
+  "taken": [
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181287",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）神舘飯野高市神社に合祀",
+   "2": "（論社B）大鹿三宅神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q22120521"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181356",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181414",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)片山八幡社",
+   "2": "(論社)天神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069344"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181430",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181457",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135190176",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)氷上姉子神社",
+   "2": "参道(氷上姉子神社元宮)"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181485",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135190221",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "石巻神社(山上社)",
+   "2": "石巻神社下社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181505",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135190252",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)高根神社",
+   "2": "(論社)六所神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181506",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135190252",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)堀谷六所神社(寄宮(摂社))",
+   "2": "(論社)六所神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181507",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135190252",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)春日神社",
+   "2": "(論社)六所神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181532",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)山名神社",
+   "2": "(論社)山名神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069406",
+   "Q135069407"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181570",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181571",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q30925511",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)后神社",
+   "2": "(論社)浅間神社(伊豆国二之宮)"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181573",
+  "placed": 1,
+  "why": "placed 1/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q110915859",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)御笏神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q134893135",
+   "Q134930603"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181576",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)若宮？",
+   "2": "(論社)大三王子神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q134927474"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181579",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11585503",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)石室神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11390944"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181582",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134893133",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)走湯神社",
+   "2": "(論社)峯指神社旧社地"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": [
+   "Q135288594"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181584",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)勝組神社",
+   "2": "(論社)片菅神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q110915859"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181586",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134930277",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)二宮神社(坪田)",
+   "2": "(論社)嶽比良神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": [
+   "Q135192783"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181588",
+  "placed": 2,
+  "why": "placed 2/4 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q110915859",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q134930277",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)御笏神社",
+   "2": "(論社)二宮神社(坪田)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q134927474",
+   "Q135192783"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181591",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)見高神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q134926963"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181593",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134930277",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)雲見浅間神社御嶽浅間宮",
+   "2": "(論社)二宮神社(坪田)"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q135192783"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181596",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11390944",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)八幡宮来宮神社",
+   "2": "(論社)熊野神社(南伊豆町岩殿)",
+   "3": "(論社)八幡神社(子浦)"
+  },
+  "taken": [
+   "2",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181602",
+  "placed": 1,
+  "why": "placed 1/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q110915859",
+    "section": "3",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)南子神社(神子島)",
+   "2": "(論社)南子神社",
+   "3": "(論社)御笏神社(境内社)",
+   "4": "(論社)南子宮(后神社境内)"
+  },
+  "taken": [
+   "1",
+   "2",
+   "4"
+  ],
+  "unplaced": [
+   "Q134930551",
+   "Q135069443"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181604",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)諏訪神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q134927903"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181605",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)王子神社(南伊豆町)"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q134930603"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181606",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134926910",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)三島神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q134930633"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181610",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134927474",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)月間神社",
+   "2": "(論社)八幡神社(下田市吉佐美)",
+   "3": "(論社)若宮神社(南伊豆町湊)"
+  },
+  "taken": [
+   "1",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181613",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134926924",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)左内神社(三嶋大社元摂社)",
+   "2": "(論社)満宮神社",
+   "3": "(論社)神明神社(神明八幡神社)"
+  },
+  "taken": [
+   "2",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181621",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)式内社 廣瀬神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q111776816"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181628",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)関八州総鎮護伊豆山神社",
+   "2": "(論社)摂社 雷電社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q30925511"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181633",
+  "placed": 1,
+  "why": "placed 1/4 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q134926924",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)左内神社(三嶋大社元摂社)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q134927903",
+   "Q134928007",
+   "Q134930691"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181641",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135193001",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)伊那下神社",
+   "2": "(論社)舟寄神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181660",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)金櫻神社",
+   "2": "(論社)金櫻神社",
+   "3": "(論社)金桜神社",
+   "4": "(論社)金桜神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "unplaced": [
+   "Q135069491"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181670",
+  "placed": 1,
+  "why": "placed 1/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135069498",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論社)佐久神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135069499",
+   "Q135270286"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181675",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181679",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181680",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181695",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論)大麻止乃豆乃天神社",
+   "2": "(論)武蔵御嶽神社",
+   "3": "(論)北野天満社(八王子市北野町)",
+   "4": "(論)大國魂神社(府中市)",
+   "5": "(論)天神社(府中市宮町か)"
+  },
+  "taken": [
+   "1",
+   "2",
+   "4",
+   "5"
+  ],
+  "unplaced": [
+   "Q11442850",
+   "Q11442850"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181703",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181707",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論)出雲祝神社",
+   "2": "(論)出雲伊波比神社",
+   "3": "(論)物部天神社・國渭地祇神社・天満天神(北野天神社)か？"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q11404276"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181714",
+  "placed": 1,
+  "why": "placed 1/4 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135069539",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(論)宮目神社(玉敷神社の境内社)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135069544",
+   "Q135270292",
+   "Q67752315"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181722",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 3 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(現社地)長幡部神社",
+   "2": "(旧社地)神流川の南岸字宮の西的場",
+   "3": "(旧社地)水天宮石碑"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135193369",
+   "Q135193370"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181727",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)吉田椋神社",
+   "2": "(論社)中蒔田椋神社",
+   "3": "(論社)上蒔田椋神社",
+   "4": "(論社)野巻椋神社",
+   "5": "(論社)皆野椋神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "unplaced": [
+   "Q135069571"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181730",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135193398",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "(現社地)伊古乃速御玉比売神社",
+   "2": "(旧社地)二宮山上(座標不明)"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135193399"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181751",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)三輪野江神社",
+   "2": "(論社)三輪茂侶神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q97311695"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181767",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181775",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "(論社)佐志能神社(笠間市)",
+   "2": "(論社)佐志能神社(石岡市柿岡)",
+   "3": "(論社)佐志能神社(石岡市)"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069601"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181801",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181815",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）長寸神社",
+   "2": "（論社）苗村神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135193605"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181826",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181837",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）小江神社（尾上）",
+   "2": "（論社）小江神社（東尾上）",
+   "3": "（論社）小江神社（海老江）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069635",
+   "Q135069641"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181848",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（合祀）乎彌神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135289475"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181957",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181977",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）布制神社（長野市篠ノ井石川）",
+   "2": "（論社）布制神社（長野市篠ノ井布施五明）",
+   "3": "（論社）布制神社（長野市篠ノ井山布施）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069768"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181981",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194158",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135194159",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "長谷神社上社",
+   "2": "長谷神社下社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181982",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）日置神社（東筑摩郡）",
+   "2": "（論社）日置神社（長野市）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069771",
+   "Q135069775"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181983",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）清水神社（長野市真島町）",
+   "2": "（論社）清水神社（長野市信更町田野口）",
+   "3": "（論社）清水神社（長野市信更町三水氷山）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069778",
+   "Q135069788"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181991",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）小川神社（小川村大字小根山）",
+   "2": "（論社）小川神社（長野県上水内郡小川村大字瀬戸川）",
+   "3": "（論社）小川八幡宮"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069803",
+   "Q135069806"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181992",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）守田神社（長野市七二会）",
+   "2": "（論社）守田廼神社",
+   "3": "（論社）守田神社（長野市大字穂保）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069811",
+   "Q135069815"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181993",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）粟野神社（長野市豊野）",
+   "2": "（論社）粟野神社（長野市上野）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069817",
+   "Q135069821"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "181995",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "飯縄神社奥宮",
+   "2": "飯縄神社里宮",
+   "3": "（論社）皇足穂命神社諏訪社合殿",
+   "4": "（論社）皇足穂命神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135194234"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182018",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182032",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182038",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）都都古別神社（棚倉町馬場）",
+   "2": "（論社）都都古別神社（棚倉町大字八槻）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q112152942",
+   "Q114593121"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182062",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11677110",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社）鹿島緒名太神社",
+   "2": "（論社）鹿島天足和気神社",
+   "3": "（論社）鹿島社（宮城県亘理郡亘理町吉田字作）"
+  },
+  "taken": [
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182063",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11677110",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q11677158",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社）鹿島緒名太神社",
+   "2": "（論社）鹿島天足和気神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182080",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182089",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）五十鈴神社境内龍神社",
+   "2": "（論社）朝日山計仙麻神社",
+   "3": "（論社）羽黒神社",
+   "4": "（論社）金華山黄金山神社",
+   "5": "（論社）計仙麻大嶋神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "5"
+  ],
+  "unplaced": [
+   "Q11677857"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182105",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）志波姫神社（大崎市）",
+   "2": "（論社）志波姫神社（栗原市高清水五輪）",
+   "3": "（論社）志波姫神社（栗原市志波姫）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069878",
+   "Q135069881"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182122",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182141",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）遠賀神社（鶴岡市井岡）",
+   "2": "（論社）遠賀神社（鶴岡市遠賀原）",
+   "3": "（論社）遠賀神社（鶴岡市外内島）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069891",
+   "Q135069893"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182210",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）高岡神社",
+   "2": "（論社）白山神社",
+   "3": "（論社）大塩八幡宮境内摂社高岡神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q11434131"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182214",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）剱神社境内末社織田神社",
+   "2": "（論社）野坂神社合祀織田神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069901"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182216",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11481363",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社）常宮神社",
+   "2": "（論社）大塩八幡宮境内摂社天八百萬姫神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": [
+   "Q11434131"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182220",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）常宮神社境内末社天國津彦神社",
+   "2": "（論社）大塩八幡宮境内末社天國津彦神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q11434131",
+   "Q11481363"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182221",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）常宮神社境内末社天國津姫神社",
+   "2": "（論社）大塩八幡宮境内末社天國津比咩神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q11434131",
+   "Q11481363"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182292",
+  "placed": 1,
+  "why": "placed 1/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135069920",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "春日神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135069921",
+   "Q135270265"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182327",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）楢本神社（白山市宮丸町）",
+   "2": "（論社）楢本神社（白山市下柏野町）",
+   "3": "（論社）楢本神社（白山市上柏野町）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069922",
+   "Q135069924"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182342",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135069931",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "笠野神社",
+   "2": "（論社）清水八幡神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135069932"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182348",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）瀬戸比古神社（鹿島郡）",
+   "2": "（論社）瀬戸比古神社（羽咋郡）",
+   "3": "（論社）瀬戸菅原神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069933",
+   "Q135069935"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182350",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）椎葉圓比咩神社",
+   "2": "（論社）椎葉円比咩神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069936",
+   "Q135069938"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182352",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）諸岡比古神社（志賀町二所宮）",
+   "2": "（論社）若宮神社",
+   "3": "（論社）諸岡比古神社（志賀町東小室）",
+   "4": "（論社）諸岡比古神社（輪島市）",
+   "5": "（論社）櫛比神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "unplaced": [
+   "Q135069939",
+   "Q135069945"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182354",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194870",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社）久麻加夫都阿良加志比古神社",
+   "2": "（論社）大穴持美代神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182356",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194870",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（有力）大名持像石神社",
+   "2": "（論社）大穴持美代神社",
+   "3": "（論社）八千鉾神社"
+  },
+  "taken": [
+   "1",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182370",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）久志伊奈太伎比咩神社（国分町）",
+   "2": "（論社）久志伊奈太伎比咩神社（飯川町）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069955",
+   "Q135069962"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182372",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）御門主比古神社（羽咋市）",
+   "2": "（論社）御門主比古神社（七尾市）",
+   "3": "（論社）御門主比古神社（鳳珠郡）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069964",
+   "Q135069967"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182383",
+  "placed": 3,
+  "why": "placed 3/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135194934",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135194935",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135194936",
+    "section": "3",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "須須神社高座宮",
+   "2": "須須神社金分宮",
+   "3": "須須神社奥宮"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182388",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）林神社（砺波市林）",
+   "2": "（論社）林神社（砺波市頼成）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069969"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182392",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）淺井神社（高岡市福岡町）",
+   "2": "（論社）淺井神社（高岡市石堤）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q115187945",
+   "Q134925834"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182394",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）道神社（射水市）",
+   "2": "（論社）道神社（高岡市）",
+   "3": "（論社）道神社（氷見市）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069970",
+   "Q135069971"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182399",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）速川神社（氷見市）",
+   "2": "（論社）速川神社（高岡市）",
+   "3": "（論社）早川八幡社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069973",
+   "Q135069974"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182409",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）熊野神社（富山市宮保）",
+   "2": "（論社）熊野神社（婦中町友坂）",
+   "3": "（論社）熊野神社（婦中町中名）",
+   "4": "（論社）熊野神社（婦中町熊野道）",
+   "5": "（論社）高岡関野神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "unplaced": [
+   "Q135069976",
+   "Q135069978"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182416",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）日置神社（立山町日中）",
+   "2": "（論社）日置神社（立山町利田）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069979",
+   "Q135069980"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182419",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）天津神社境内奴奈川神社",
+   "2": "（論社）白山神社",
+   "3": "（論社）奴奈川神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069982",
+   "Q135069983"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182420",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）天津神社",
+   "2": "（論社）大神社（糸魚川市）",
+   "3": "（論社）大野神社",
+   "4": "（論社）藤崎神社",
+   "5": "（論社）大神社",
+   "6": "（論社）關山神社（上越市）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "unplaced": [
+   "Q135069984"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182432",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）宮家神社（妙見町）",
+   "2": "（論社）宮家神社（中潟町）",
+   "3": "（論社）宮家神社（六日市町）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q135069990",
+   "Q135069992"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182433",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）桐原石部神社（上桐）",
+   "2": "（論社）桐原石部神社（寺泊）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135069994",
+   "Q135069995"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182441",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）三島神社",
+   "2": "（旧社地）三島神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135195083",
+   "Q135195085"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182442",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）石井神社（柏崎市西山町）",
+   "2": "（論社）石井神社（三島郡）",
+   "3": "（論社）石井神社（長岡市）",
+   "4": "（論社）石井神社（柏崎市大字北条）",
+   "5": "（論社）石井神社（柏崎市西本町）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "unplaced": [
+   "Q135070001"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182447",
+  "placed": 3,
+  "why": "placed 3/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135195104",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135195105",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135195106",
+    "section": "3",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社）川合神社",
+   "2": "（論社）明口神社",
+   "3": "（論社）諏訪神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182489",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（愛宕神社）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11493857"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182492",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11631810",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "2": "（論社）請田神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11529679"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182557",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）阿良須神社（福知山市）",
+   "2": "（論社）阿良須神社（舞鶴市）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070020",
+   "Q135070021"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182596",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）大野神社（丹後町）",
+   "2": "（論社）大野神社（大宮町）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070035",
+   "Q135070036"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182605",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）意布伎神社",
+   "2": "（論社）伊吹神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070042",
+   "Q135070043"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182630",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）楯縫神社",
+   "2": "（論社）楯縫神社（齋神社摂社）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070052",
+   "Q135070053"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182654",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）日出神社（但東町畑山）",
+   "2": "（論社）日出神社（但東町南尾）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070061",
+   "Q135070062"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182659",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）大生部兵主神社（奥野）",
+   "2": "（論社）大生部兵主神社（但東町）",
+   "3": "（論社）伊福部神社",
+   "4": "（論社）穴見郷戸主大生部兵主神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "unplaced": [
+   "Q135070064"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182660",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）安牟加神社",
+   "2": "（論社）阿牟加神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070067",
+   "Q135070068"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182663",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）小坂神社（出石町三木）",
+   "2": "（論社）小坂神社（出石町森井）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070070",
+   "Q135070071"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182704",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182707",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182791",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182793",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 1 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135195607",
+    "section": "3",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "玉作湯神社相殿",
+   "3": "本宮神社境外末社日御崎神社",
+   "4": "佐久多神社"
+  },
+  "taken": [
+   "2",
+   "4"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182804",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182811",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135195607",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "本宮神社境外末社日御崎神社",
+   "2": "佐久多神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182820",
+  "placed": 0,
+  "why": "placed 0/4 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "比婆山久米神社奥の宮（熊野神社）"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135070111",
+   "Q135070112",
+   "Q135070113",
+   "Q135270433"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182895",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182918",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182959",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182963",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182964",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182969",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）山邊八代姫命神社",
+   "2": "（論社B）山邊八代姫命神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070145",
+   "Q135070146"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182970",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182981",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）都野津大年神社",
+   "2": "（論社B）大年神社",
+   "3": "（論社C）大年神社",
+   "4": "（論社D）大歳神社",
+   "5": "（論社E）大歳神社",
+   "6": "（論社F）大歳神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "unplaced": [
+   "Q135070154"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "182986",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）大原神社",
+   "2": "（論社B）大原神社",
+   "3": "（論社C）大原神社",
+   "4": "（論社D）大原神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "unplaced": [
+   "Q135070166"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183048",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）住吉神社",
+   "2": "（論社）佐保神社",
+   "3": "（論社）佐保神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q11381861"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183088",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "2": "（合祀）池田神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070196"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183089",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（総社宮境内）",
+   "2": "（合祀）大和神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q11608173",
+   "Q135070197"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183110",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社1）吉備津神社境内",
+   "2": "（1の旧社地？）",
+   "3": "（論社2）當島八幡神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q6404042"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183118",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社）高杉町",
+   "2": "（論社）三良坂町"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q135070222"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183160",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "潮岬本之宮神社（論社）",
+   "2": "大斎原・海神社（論社）"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q705035"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183161",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "大斎原・御戸開神社（論社）",
+   "2": "力侍神社（論社）",
+   "3": "速玉大社・鍵宮（論社）"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": [
+   "Q335618",
+   "Q705035"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183169",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183177",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）宇志比古神社",
+   "2": "（論社B）宇志比古神社"
+  },
+  "taken": [
+   "1",
+   "2"
+  ],
+  "unplaced": [
+   "Q723417"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183188",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "蜂須神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135070283",
+   "Q135270351"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183191",
+  "placed": 0,
+  "why": "placed 0/2 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "医家神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135270439",
+   "Q43594549"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183195",
+  "placed": 1,
+  "why": "placed 1/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135070295",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "敷島神社"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q135070296",
+   "Q135070297"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183265",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 1 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（論社A）伊豫神社",
+   "2": "（論社B）伊豫神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": [
+   "Q11378828"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183268",
+  "placed": 0,
+  "why": "placed 0/1 open holder(s); 0 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "伊豫豆比古命神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": [
+   "Q11378828"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183297",
+  "placed": 1,
+  "why": "placed 1/2 open holder(s); 2 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135198253",
+    "section": "3",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "竈門神社上宮",
+   "2": "竈門神社中宮跡",
+   "3": "竈門神社下宮"
+  },
+  "taken": [],
+  "unplaced": [
+   "Q11597744"
+  ]
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183314",
+  "placed": 3,
+  "why": "placed 3/3 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135198290",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135198292",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135198293",
+    "section": "3",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "火男火売神社上宮",
+   "2": "火男火売神社中宮（御嶽権現）",
+   "3": "火男火売神社下宮（鶴見権現）"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183346",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11442606",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）天手長男神社",
+   "2": "（論社B）興神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183347",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11442606",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "天手長男神社",
+   "2": "天手長比売神社跡"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183349",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q135198631",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）国津神社",
+   "2": "（論社B）津の宮神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183357",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11442606",
+    "section": "1",
+    "how": "exact match"
+   },
+   {
+    "item": "Q135198631",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）天手長男神社",
+   "2": "（論社B）国津神社",
+   "3": "物部布都神社跡"
+  },
+  "taken": [
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183358",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11559099",
+    "section": "2",
+    "how": "exact match"
+   },
+   {
+    "item": "Q18457651",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）和多都美神社",
+   "2": "（論社B）海神神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183368",
+  "placed": 2,
+  "why": "placed 2/2 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11559099",
+    "section": "4",
+    "how": "exact match"
+   },
+   {
+    "item": "Q18457651",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）和多都美御子神社",
+   "2": "（論社B）和多都美神社",
+   "3": "（論社C）胡禄神社",
+   "4": "（論社D）海神神社"
+  },
+  "taken": [
+   "1",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183369",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11559099",
+    "section": "2",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）胡禄神社",
+   "2": "（論社B）海神神社"
+  },
+  "taken": [
+   "1"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183370",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q11559099",
+    "section": "4",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）胡禄御子神社",
+   "2": "（論社B）胡禄神社",
+   "3": "（論社C）能理刀神社",
+   "4": "（論社D）海神神社"
+  },
+  "taken": [
+   "1",
+   "2",
+   "3"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183372",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q18457651",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）和多都美神社",
+   "2": "（論社B）",
+   "3": "（論社C）元嶋神社",
+   "4": "（論社D）島大國魂神社"
+  },
+  "taken": [
+   "2",
+   "3",
+   "4"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "MISSING-SOME",
+  "kid": "183373",
+  "placed": 1,
+  "why": "placed 1/1 open holder(s); 0 slot(s) left",
+  "assignments": [
+   {
+    "item": "Q18457651",
+    "section": "1",
+    "how": "exact match"
+   }
+  ],
+  "slots": {
+   "1": "（論社A）和多都美神社",
+   "2": "（論社B）濱殿神社"
+  },
+  "taken": [
+   "2"
+  ],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "180969",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "大鳥大社",
+   "2": "大鳥北浜神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "181428",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "181450",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "181794",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "（現社地）",
+   "2": "（旧社地）"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "181971",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 4 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "諏訪大社上社本宮",
+   "2": "諏訪大社上社前宮",
+   "3": "諏訪大社下社春宮",
+   "4": "諏訪大社下社秋宮"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182138",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 3 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "鳥海山大物忌神社",
+   "2": "鳥海山大物忌神社吹浦口之宮",
+   "3": "鳥海山大物忌神社蕨岡口之宮"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182562",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "籠神社",
+   "2": "（奥宮）真名井神社"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182828",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182839",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182841",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182842",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182846",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182853",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182894",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "182900",
+  "placed": 0,
+  "why": "page lists no candidates",
+  "assignments": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "183237",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 3 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "高屋神社（本宮）",
+   "2": "高屋神社（中宮）",
+   "3": "高屋神社（下宮）"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "183290",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 3 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "沖津宮",
+   "2": "中津宮",
+   "3": "辺津宮"
+  },
+  "taken": [],
+  "unplaced": []
+ },
+ {
+  "bucket": "ALL-UNSET",
+  "kid": "183320",
+  "placed": 0,
+  "why": "placed 0/0 open holder(s); 2 slot(s) left",
+  "assignments": [],
+  "slots": {
+   "1": "阿蘇神社",
+   "2": "阿蘇山上神社"
+  },
+  "taken": [],
+  "unplaced": []
+ }
+]
