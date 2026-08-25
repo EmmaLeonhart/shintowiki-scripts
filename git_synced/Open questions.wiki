@@ -2,15 +2,7 @@ __NOTOC__
 
 == Open questions ==
 
-=== Karakuniitateno Shrine — two entries, one merged into the other ===
-{{main|Karakuniitateno Shrine}}
-
-Entries '''28''' (in 揖夜神社's precinct) and '''39''' (in 佐久多神社's precinct) are two different shrines. [[d:Q135040908|Q135040908]] was merged into [[d:Q135040786|Q135040786]] in 2026-05.
-
-Both entries carry the '''same two candidates''' — [[d:Q135070107|Q135070107]] 嘉羅久利神社 and [[d:Q135070108|Q135070108]] 佐久多神社 — which is why they read as one shrine. 嘉羅久利 is the modern form of 韓国 and stands in 佐久多 grounds, so those candidates belong to '''39'''.
-
-: '''→''' Not un-merging, your call — the candidate assignment is wrong independently of the merge, so restoring the item restores the wrong candidates with it.
-: '''→''' Left to fix, all Wikidata so all after 2026-09-18: two separate 嘉羅久利神社 items on different entries; 佐久多神社 as both entry 38 and a candidate holding ordinal 39; entry 38 carrying two ''followed by'' values in one statement.
+''(nothing open. Anything you write here gets answered and then deleted — it is a live channel, not an archive.)''
 
 == Wiki-based queue ==
 
