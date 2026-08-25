@@ -156,7 +156,11 @@ def main():
     if len(items) > 25:
         print("     ... and %d more" % (len(items) - 25))
 
-    lines = ["-%s|P361|%s" % (i, l) for i, l in pairs]
+    # SORTED, and that is not cosmetic. WDQS returns rows in no guaranteed order, so
+    # emitting in result order rewrites the whole file on every build: the first CI run
+    # after this generator landed changed 436 of 829 lines without changing the line
+    # count or a single statement. That churn is what buries a real diff.
+    lines = ["-%s|P361|%s" % (i, l) for i, l in sorted(set(pairs))]
     if args.dry_run:
         for ln in lines[:20]:
             print("   " + ln)

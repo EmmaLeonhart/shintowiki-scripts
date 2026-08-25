@@ -127,6 +127,11 @@ def main():
         print("     %-14s %-18s -> %-14s %d ordinals, %d statements all removed"
               % (item, ja[:17], lst, ords, n))
 
+    # Sorted for the same reason as generate_orphan_membership_removals.py: SPARQL row
+    # order is not stable, and unsorted output rewrote 48 of these 63 lines on the first
+    # scheduled run with no statement actually changing.
+    lines = sorted(set(lines))
+
     if args.dry_run:
         for ln in lines:
             print("   " + ln)
