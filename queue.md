@@ -228,7 +228,8 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
 
   ### B4. The 18 missing Kokugakuin ids — auto-fill or eyes?
   18 register entries lack a Kokugakuin database id; the strict matcher found ZERO safe to add (two
-  adjacent DB entries can share a name).
+  adjacent DB entries can share a name). **Same 18 as B7** — where five of them turn out to be the
+  one Izumo cluster, so this is 13 rows plus a knot, not 18 independent lookups.
   Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-missing-ids.html
   - **ASK:** "Is exact name-matching good enough to auto-fill, or do the 18 need per-item eyes?" →
     *per-item eyes* / *auto-fill the exact matches*.
@@ -258,9 +259,10 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
   the 佐久多/嘉羅久利 論社 split jawiki records. The two 野蚊神社 rows are likewise two distinct items
   of the same name in one district, which is why the matcher refused to pick.
 
-  - [ ] **ASK on the board:** pull the Izumo five out and work them with the Izumo item, leaving 13
-    genuinely separate no-anchor/no-match cases? Asked on the page 2026-08-19; awaiting her reply, not
-    blocking on it.
+  **Emma's ruling, 2026-08-24: pull them out.** So this is not 18 cases. It is the Izumo knot, worked
+  once against the Izumo item, plus **13** genuinely separate no-anchor/no-match cases. The two
+  野蚊神社 rows stay inside the 13 — they are two distinct items of one name in one district, which is
+  a different problem from the Izumo cluster and does not resolve with it.
 
   ### B8. Empty-items — which to restore?
   285 emptied items, 217 lost their P31 — restoration candidates, sorted by how much was lost.
