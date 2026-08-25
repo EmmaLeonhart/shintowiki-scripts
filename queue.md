@@ -243,15 +243,20 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
   Each is a candidate for two different 927 entries, so its parent-link needs a "which entry" (P958)
   qualifier. Emma earlier ruled all ambiguous.
   Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-multi-p13677.html
-  - **ASK:** "Go through these with me per-item now, or leave them for you to work off the table?" →
-    *per-item with you* / *leave for you*.
+  **Emma's ruling, 2026-08-24: leave them to be worked off the table.** So this is mine, at my own
+  rate, the same shape as the 228-item reading queue — the section can only be read off the
+  Kokugakuin page, so it is a reading job rather than a derivation. No per-item session with her, and
+  it never becomes a work-loop tick's obligation.
 
   ### B6. The Awa list fix — how to delete the wrong statement?
   Awa entry 3 should be 天神社 (add already queued); the wrong 下立松原 statement must be deleted, but it
   can't be a QuickStatement (下立松原 sits at ordinals 3 AND 5, same value).
   https://emmaleonhart.github.io/shintowiki-scripts/awa-entry-3.html
-  - **ASK:** "Sequential-misc unit (remove BOTH 下立松原 has-parts, re-add the correct #5), or you
-    hand-delete the one statement?" → *sequential unit* (I build it) / *you hand-delete*.
+  **Emma's ruling, 2026-08-24:** *"Just add these as requirements where new items are created and I
+  fix them in just like the Izumo somewhere."* So the sequential-misc unit is NOT built. The Awa
+  entry 3 correction is recorded as a requirement travelling with the item-creation work, and she
+  hand-fixes the wrong 下立松原 statement the way she is handling the Izumo knot. Nothing here is
+  generated and nothing waits on her.
 
   ### B7. Kokugakuin P13677 matcher — examples DELIVERED 2026-08-19, one question left
   Emma 2026-07: *"I don't even understand what this actual thing even is"* and *"I genuinely do not
@@ -269,11 +274,37 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
   野蚊神社 rows stay inside the 13 — they are two distinct items of one name in one district, which is
   a different problem from the Izumo cluster and does not resolve with it.
 
-  ### B8. Empty-items — which to restore?
-  285 emptied items, 217 lost their P31 — restoration candidates, sorted by how much was lost.
-  https://emmaleonhart.github.io/shintowiki-scripts/empty-items.html
-  - **ASK:** "Generate restore-QuickStatements for a slice (e.g. the ones that lost their P31), or is
-    this a browse-and-you-pick report?" → *generate restores for <slice>* / *browse-only for now*.
+  ### B8. ~~Empty-items — which to restore?~~ **WITHDRAWN 2026-08-24. Wrong population.**
+
+  Emma asked the right question: *"Are these the items that were emptied by that one guy or are
+  these just random empty items? Who is it that emptied these items? If it is from that one guy then
+  you just restore everything from them with Quick Statements. If they're empty items that are not by
+  that guy then I don't know what you do. They might be just empty because I emptied them."*
+
+  **Neither branch. It is not him and it is not her.** Measured across the 274 items in
+  `_site/empty-items.html`:
+
+  | editor | items |
+  |---|---|
+  | ブルーノ・プラス | **1 of 274** |
+  | Immanuelle | **2 of 274** |
+  | Emma | **0** |
+  | 606 other editors, mostly maintenance bots | the rest |
+
+  Top touchers are Edoderoobot (57), GZWDer (flood) (51), Mr.Ibrahembot (43), Emijrpbot (36), KrBot
+  (27) — general Wikidata janitorial traffic, 475 of 1,331 editor-appearances from accounts with
+  "bot" in the name.
+
+  **The population was never ours.** `analyze_empty_export.py` reads
+  `User:MisterSynergy/sysop/empty_items` — a Wikidata sysop's global list of empty items across the
+  whole project — and does not filter it to shrines or to the watched editor. The report contains
+  Gandhara architecture, a Malayalam actress, a Swedish moss expansion, an indium-platinum alloy and
+  a Turkish poet. Exactly one entry overlaps this project at all: `Q28069431` Kikuna Shrine, which is
+  already in `destroyed_items/`.
+
+  So there is nothing here to restore and no rule of Emma's that applies. The repurposing victims are
+  the **24** archived in `destroyed_items/INDEX.md`, and those are handled: three recreated in
+  `lost_shrine_creates.txt`, the other 21 damaged as themselves rather than repurposed.
 
 - **Wikidata batches built and waiting on the lockout (2026-09-18) — no work left on them**
 
