@@ -11,6 +11,28 @@ current by the `cleanvibe-update-check` skill.
 - **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
 
 
+## ⛔ The Wikidata lockout gates WRITES, not work
+
+Emma, 2026-08-25, after I had parked three queue items for a week: *"do askuserquestion on everything
+there so that I can judge if they are or are not locked with wikidata since you often just defaulted
+to saying stuff was wikidata locked."* She tested four of my labels. **Three were wrong.**
+
+`wikidata_editing_lockout.state` gates exactly: `direct_daily_edits.py`, `create_items.py`,
+`substitute_source_shrine_proposal.py`, their CI guard steps, and the hand-run QuickStatements
+batches in `funding-and-networking`. That is the whole surface.
+
+It does **not** gate SPARQL, the Wikidata API for reading, any `generate_*.py`, analysis, deciding,
+or writing a batch to a `.txt`.
+
+- **An item is blocked only when the thing left to do IS the write.** Everything upstream — the
+  querying, the reading, the generating, the staging — is available the entire time.
+- The three I parked (a 66-item reading job, a 228-section reading queue, 13 missing rankings) were
+  workable throughout, and once actually worked they collapsed into **one** job that was largely
+  finishable in a day.
+- **A gate on one verb reads as a gate on the subject**, and nothing corrects that from inside: a
+  wrongly-blocked item looks exactly like a rightly-blocked one, and no session re-tests a label it
+  wrote itself. It took Emma refusing to accept the labels.
+
 ## ⛔ Missing information is not a defect — do not report "something went wrong" to fill the gap
 
 Emma, 2026-08-25, reading a night of this session's own status reports: *"This is hilarious how you

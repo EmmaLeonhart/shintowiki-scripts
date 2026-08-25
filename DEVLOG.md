@@ -4,6 +4,76 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-25 (later) — the Kokugakuin reading job, done; and three things I had wrong about it
+
+Emma unblocked three queue items by refusing my "locked on Wikidata" labels, then pointed out the
+corpus could just be downloaded wholesale. Both corrections turned a job I had been describing as a
+long unpaced grind into something largely finished in a day.
+
+### The three items were one job
+
+The ~66 two-Kokugakuin-id items, the 228 sections readable only off the page, and the 13 links
+missing `P1352` had been separate queue entries for two weeks. Every one resolves to *read the
+numbered slot off the entry's page*. They looked distinct only because each was found from a
+different direction.
+
+### What was wrong, in order
+
+**1. The lockout does not gate this.** Three of four labels Emma tested were wrong. It gates writes —
+three credentialed scripts, their CI guards, the hand-run batches — and nothing upstream. All three
+items were workable the whole time. Recorded in `CLAUDE.md`.
+
+**2. Fetching on demand was the wrong shape.** Emma: *"you can just sequentially download the web
+pages the id links to using the id keys en masse."* The ids are a known key set — 2,846 distinct
+`P13677` values. Fetching lazily meant the corpus grew in whatever order jobs ran and the site got
+asked repeatedly across sessions. `fetch_all_kokugakuin_pages.py` now pulls all 2,846 once, paced at
+0.6s, resumable. **Zero errors.** The pages are committed (`kokugakuin_pages/`, `-text` pinned) so a
+section can be audited against the exact bytes it was read from, and every reading job is now an
+offline parse. Her second point: no browser tooling — the slots are in the raw HTML.
+
+**3. The unit of work was wrong.** The first reader judged each item alone, which forced a guard to
+drop 17 of 57 lines where two identically-named items claimed one slot. Resolving one **entry** at a
+time makes collisions structurally impossible, lets already-known sections constrain the remaining
+slots, and yields **109 assignments against 40**. The input file was already grouped by entry — the
+better structure had been there the whole time.
+
+### What shipped
+
+`p958_by_entry.txt`, 109 sections, exact-match only, registered in `ATOMIC_FILES`. Plus two
+corrections to *existing* Wikidata values the pages proved wrong (`Q135186791` recorded in a slot
+belonging to another shrine; `Q135069120` in a slot its page does not have), taking
+`p958_corrections.txt` from 3 lines to 7.
+
+### Three things measured and rejected
+
+**Elimination.** One holder left, one slot left, therefore forced — worth 26 extra lines. Held out
+280 known sections: exact match recovered **142 of 142**, elimination **3 of 4**. The failure exposes
+the assumption rather than being noise: elimination assumes every slot's occupant is among the items
+it can see, so when a slot's shrine has no Wikidata item it hands that slot to whoever remains. It
+broke on an item labelled **未知の神社**, "unknown shrine". Off by default.
+
+**A default for the residue.** 263 holders could not be placed, and assigning them `n/a` looked
+reasonable on an 86/14 frequency split. It was the wrong question: `n/a` marks disputed Engishiki
+entries, `0` marks ones on Wikipedia — semantics already encoded in `generate_p958_qualifiers.py`,
+in a `disputed_query` feeding a variable named `disputed_statements`. Applying the real rule reverses
+the answer: **261 of the 263 are the two types that generator deliberately excludes**, because their
+sections are genuinely unresolved. The residue is not a gap awaiting a default.
+
+**Loosening the matcher.** Categorising all 46 ground-truth deferrals: **61% are the label matching
+several slots**, and only 7% a single variant character. The one evidence-backed loosening buys 3 of
+46 — and loosening *increases* ambiguity by construction, so it makes the dominant failure worse. The
+sound direction is tightening: slot names carry disambiguators (`〈別所町〉` vs `〈西井戸堂町〉`) the
+matcher currently discards.
+
+### The lesson that repeats
+
+Three separate errors this day were the same error: **measuring how often instead of what.** A P958
+coverage figure that subtracted `(item, kid)` rows from `(item, parent-link)` output. A choice
+between two values justified by their frequency. A matcher optimisation sized by deferral count
+without asking which *kind* of deferral. In each case the number was real and answered nothing.
+
+---
+
 ## 2026-08-25 — the 08-21 churn fix had reached one pipeline of seven; class now swept
 
 The regeneration churn diagnosed and fixed on 2026-08-21 was fixed **for the label pipelines
