@@ -2,32 +2,27 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
-- **▶ Verify the WDQS throttle fix on the next scheduled run**
+- **✓ WDQS throttle VERIFIED 2026-08-24 — 2.5s is enough. Item closed.**
 
-  Both 08-22 CI defects are fixed and verified (`secrets: inherit`, the 69 unbootstrapped imports) —
-  all four red jobs green since 08-23, nothing further to check there.
+  Forced run [`32792378280`](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/32792378280),
+  `force_weekly=true`, **success**, all 32 steps green.
 
-  The "separate older defect" that item carried is also diagnosed, and the diagnosis was wrong three
-  times before it was right. It was never a timeout: a forced run finished the whole path including
-  both weekly steps in **41.8 minutes** against a 150-minute cap. The two description generators
-  were **429ing themselves out of WDQS** — `time.sleep(1)` against this repo's own documented
-  `WDQS_THROTTLE = 2.5`, in VALUES batches of 150 across the full target set — and
-  `continue-on-error: true` reported the step green, so `description_label_pairs.txt` sat unchanged
-  since 2026-08-02 behind a passing check.
+  | criterion | result |
+  |---|---|
+  | no `::warning title=Weekly refresh did not run` | **none** — the only annotation on the run is an unrelated Node 20 deprecation notice |
+  | `description_label_pairs.txt` regenerates | **10,716 lines**, committed as `cfe8f660` at 01:31Z. It had not moved since 2026-08-02 |
+  | the generator completes its sweep | per-language breakdown printed for every language — `id` 5,024 targets, `uk` 4,591, `nl` 168, `de` 28, `fr` 24, `ar` 15, `vi` 11 |
 
-  Both generators now use the 2.5s floor, and both emit a `::warning` naming the file that was not
-  regenerated when they bail.
+  The description step ran **00:42:24Z → 01:10:57Z, 28.5 minutes on its own**, against a 150-minute
+  cap. That duration IS the verification: at `time.sleep(1)` the same sweep 429'd itself out of WDQS
+  in a fraction of the time and reported green through `continue-on-error`. Slower and finishing is
+  the pass condition, not a cost of it.
 
-  - **✓ Half verified 2026-08-24: the `force_weekly` dispatch input works.** Run `32792378280`
-    reached step 32, "Description fixes (desc-without-label pairs, weekly Sunday refresh)", on a
-    **Monday** — so the weekly steps no longer need an actual Sunday to be exercised, and the
-    remaining question can be tested on demand rather than waited out. Steps 1–31 all green.
-  - [ ] **Still unverified: whether 2.5s is actually enough.** The next `cleanup-loop` fire (02:23Z daily)
-    exercises it on a weekday, where the weekly steps do not run — so the real test is either a
-    Sunday or another `force_weekly=true` dispatch. Check for the `::warning` annotation; its
-    absence plus a changed `Did` count is the pass.
-  - The 429 was ours the whole time and was reported as BLOCKED-ON-EXTERNAL in three status reports.
-    A rate limit from our own scheduled job means our own pacing is wrong.
+  Two things this closes for good. The `force_weekly` input means a Sunday-gated step can be
+  exercised on any day, so the next silent failure in one is reproducible instead of a week-long
+  wait. And the 429 was ours the whole time — reported as BLOCKED-ON-EXTERNAL in three status
+  reports when a rate limit from our own scheduled job against our own documented floor was never
+  external.
 
 - **Individual QuickStatements to CORRECT wrong/missing P958 sections**
 
@@ -114,26 +109,36 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   two items sit on two pages each.) Nothing tracks progress and nothing chases; submission waits on
   the lockout to 2026-09-18.
 
-  - [ ] **Re-measure the derivable 57 against a FRESH `p958_qualifiers.txt`.** I said on 2026-08-25
-    that the existing generator already produces 44 of the 57 and misses only 7 items. Measured
-    against the file on disk that is wrong: **33 of the 57 rows are covered and 24 are not**, across
-    17 distinct items — more than double the gap I reported.
+  - **✓ RE-MEASURED 2026-08-24 against a verified-current file. My correction was right and my
+    explanation for it was wrong.** Coverage is **33 of the 57 derivable rows, 24 uncovered across 17
+    distinct items** — not the 44/7 I first reported.
 
-    But the artifacts disagree with each other, so neither number is trustworthy yet.
-    `p958_qualifiers.txt` is **68 lines** (the queue said 2,480), while `p958_summary.json` from the
-    same directory reports `generated: 167` and `p958_qualifiers: 0`. A file and its own summary
-    cannot both be right, so they are from different runs and the coverage figure is measured against
-    a stale artifact.
+    **The artifacts were never different vintages.** That was my hypothesis and it does not survive
+    checking: run `32792378280` ran `generate_p958_qualifiers.py` at 00:29Z and it printed
+    *"Total QuickStatements: 68"*, which is exactly the file on disk. The file is current and
+    reproducible. `p958_summary.json`'s `generated: 167` / `p958_qualifiers: 0` are simply different
+    counters from the ones I read them as — I misread its schema, not its age.
 
-    `generate_p958_qualifiers.py` runs in `generate-quickstatements.yml` on every build, so a fresh
-    pair settles it. Re-run the comparison against the regenerated file before deciding whether the
-    remainder is structural.
+    **All 24 are genuinely missing P958** — checked against live Wikidata, none of them already
+    carries the qualifier, so none is a no-op the generator was right to skip.
 
-    What does hold regardless: the generator **already queries P527** alongside P460, both with
-    `P1352` qualifiers. So "Q135194158/Q135194159 are skipped because P527 is an unhandled route" is
-    not the explanation — that route is handled, and their real cause is still unidentified.
-    `Q1466105` 廣田神社 is genuinely structural: three Kokugakuin ids, all rank `0.0`, and section `0`
-    carries no uniqueness, so there is nothing to derive from.
+    **The finding worth keeping: only 4 of the 17 items are flagged for manual review. The other 13
+    fall through BOTH paths** — not emitted, not flagged, not counted anywhere. Flagged:
+    `Q17228423`, `Q11442850`, `Q65734340`, `Q135070147`. Silent: `Q135270127` 伊居太神社,
+    `Q135270129` 岡太神社, `Q17228121` 堅田神社, `Q134930603` 両神社, `Q11390944` 八幡宮来宮神社,
+    `Q134930633` 波布比咩命神社, `Q134926924` 左内神社 + `Q134927903` 右内神社 (sharing id 181633),
+    `Q11677857` 黄金山神社, `Q11481363` 常宮神社 (two ids, 182220/182221), `Q135194158` 長谷神社上社
+    + `Q135194159` 長谷神社下社 (sharing id 181981 at ranks 1 and 2), and `Q1466105` 廣田神社.
+
+    `Q1466105` is the one with a known structural reason — three ids all at rank `0.0`, and section
+    `0` carries no uniqueness — but it is **not** in the manual-review file either, so even the
+    genuinely-undecidable case is invisible rather than surfaced.
+
+  - [ ] **NEEDS-INVESTIGATION: why 13 derivable items are neither emitted nor flagged.** The
+    generator has an explicit multi-P13677 manual-review path and reports *"Flagged for manual
+    review (multiple P13677): 15"*, so a fall-through this size is a third path nobody wrote on
+    purpose. Blocker: the branch conditions in `generate_p958_qualifiers.py` have not been read
+    against these 13. Nothing here reaches Wikidata, so this is safe to work at any time.
 
   - **The 228 with no ranking** — OUT-OF-SCOPE for automation, permanently: the value only exists on the
     Kokugakuin page. This is a reading job, and 228 pages is a real size — it belongs to Emma or to a
