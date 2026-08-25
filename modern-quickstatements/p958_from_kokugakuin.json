@@ -1,0 +1,1723 @@
+{
+ "resolved": 40,
+ "deferred": 171,
+ "already_set": 0,
+ "total": 228,
+ "items": [
+  {
+   "item": "Q662176",
+   "kid": "180600",
+   "ja": "北野天満宮",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論）住吉大伴神社 / （論）伴氏社（北野天満宮末社）"
+  },
+  {
+   "item": "Q135038807",
+   "kid": "180650",
+   "ja": "神南備神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135038811",
+   "kid": "180655",
+   "ja": "綺原坐健伊那大比賣神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11473738",
+   "kid": "180657",
+   "ja": "岡田鴨神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270117",
+   "kid": "180738",
+   "ja": "為志神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q708859",
+   "kid": "180875",
+   "ja": "石上神宮",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11479957",
+   "kid": "180946",
+   "ja": "巽神社 (大阪市)",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135185616",
+   "kid": "180950",
+   "ja": "都留弥神社 旧社地",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 旧社地（布施戎神社）"
+  },
+  {
+   "item": "Q97276772",
+   "kid": "181001",
+   "ja": "山直神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11613492",
+   "kid": "181011",
+   "ja": "舊府神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q705949",
+   "kid": "181022",
+   "ja": "住吉大社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135039197",
+   "kid": "181024",
+   "ja": "草津大歳神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q705949",
+   "kid": "181024",
+   "ja": "住吉大社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270126",
+   "kid": "181052",
+   "ja": "三島鴨神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270126",
+   "kid": "181053",
+   "ja": "三島鴨神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （伊射奈岐神社〈吹田市山田東〉 / （伊射奈岐神社〈吹田市佐井寺〉）"
+  },
+  {
+   "item": "Q135186136",
+   "kid": "181151",
+   "ja": "河原神社",
+   "section": "1",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135186137",
+   "kid": "181151",
+   "ja": "（合祀）大口神社（論社を合祀）",
+   "section": "2",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135186139",
+   "kid": "181151",
+   "ja": "檜尻社（河原淵神社に比定）",
+   "section": "3",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q17226795",
+   "kid": "181172",
+   "ja": "佐那神社",
+   "section": "1",
+   "why": "exact match against 4 candidate(s)"
+  },
+  {
+   "item": "Q134928742",
+   "kid": "181182",
+   "ja": "二十五柱神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069202",
+   "kid": "181185",
+   "ja": "畠田神社",
+   "section": "2",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q134928742",
+   "kid": "181186",
+   "ja": "二十五柱神社",
+   "section": "6",
+   "why": "exact match against 10 candidate(s)"
+  },
+  {
+   "item": "Q135069203",
+   "kid": "181186",
+   "ja": "天香山神社",
+   "section": null,
+   "why": "no exact match among 10 candidate(s): （論社1）火地神社（多気郡岩内村） / （論社7）有爾村鎮座説 / （論社1）竹神社（合祀） / （論社2）多気郡保津村鎮座説 / （論社3）多気郡保津田村鎮座説 / （論社4）宇気比神社（乙部村） / （論社4）二十五柱神社（合祀） / （論社5）八柱神社（油夫） / （論社5）佐那神社（合祀） / （論社6）有爾岡村鎮座説"
+  },
+  {
+   "item": "Q135186331",
+   "kid": "181187",
+   "ja": "合祀：畠田神社 旧社地",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （旧社地）遥拝所 / （合祀）畠田神社"
+  },
+  {
+   "item": "Q135186429",
+   "kid": "181212",
+   "ja": "松阪神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135186430",
+   "kid": "181212",
+   "ja": "神戸神舘神明神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069216",
+   "kid": "181234",
+   "ja": "比佐豆知神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069219",
+   "kid": "181234",
+   "ja": "比佐豆知神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069225",
+   "kid": "181241",
+   "ja": "事忌神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069226",
+   "kid": "181241",
+   "ja": "事忌神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q11612066",
+   "kid": "181254",
+   "ja": "能褒野神社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): （論社A）明神社 / （論社B）能褒野神社に合祀 / （論社C）片岡神社"
+  },
+  {
+   "item": "Q132658851",
+   "kid": "181259",
+   "ja": "関神社",
+   "section": "2",
+   "why": "exact match against 4 candidate(s)"
+  },
+  {
+   "item": "Q135069237",
+   "kid": "181260",
+   "ja": "三宅神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069238",
+   "kid": "181261",
+   "ja": "江神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135186708",
+   "kid": "181266",
+   "ja": "片山神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135186709",
+   "kid": "181266",
+   "ja": "関神社に合祀",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135039477",
+   "kid": "181356",
+   "ja": "浅井神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135069344",
+   "kid": "181414",
+   "ja": "天神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069364",
+   "kid": "181430",
+   "ja": "金神社旧跡",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135190176",
+   "kid": "181457",
+   "ja": "参道(氷上姉子神社元宮)",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135190221",
+   "kid": "181485",
+   "ja": "石巻神社下社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069406",
+   "kid": "181532",
+   "ja": "山名神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069407",
+   "kid": "181532",
+   "ja": "山名神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q134893135",
+   "kid": "181573",
+   "ja": "波夜多麻和気命神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): (論社)御笏神社"
+  },
+  {
+   "item": "Q11585503",
+   "kid": "181579",
+   "ja": "石室神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135288594",
+   "kid": "181582",
+   "ja": "走湯神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q134926963",
+   "kid": "181591",
+   "ja": "姫宮神社 (南伊豆町)",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): (論社)見高神社"
+  },
+  {
+   "item": "Q134930551",
+   "kid": "181602",
+   "ja": "南子神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069443",
+   "kid": "181602",
+   "ja": "南子神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q134926910",
+   "kid": "181606",
+   "ja": "三島神社 (南伊豆町妻良)",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q111776816",
+   "kid": "181621",
+   "ja": "広瀬神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): (論社)式内社 廣瀬神社"
+  },
+  {
+   "item": "Q134928007",
+   "kid": "181633",
+   "ja": "天地神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): (論社)左内神社(三嶋大社元摂社)"
+  },
+  {
+   "item": "Q134930691",
+   "kid": "181633",
+   "ja": "気多神社 (沼津市)",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): (論社)左内神社(三嶋大社元摂社)"
+  },
+  {
+   "item": "Q135193001",
+   "kid": "181641",
+   "ja": "舟寄神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069491",
+   "kid": "181660",
+   "ja": "金桜神社",
+   "section": null,
+   "why": "label matches 2 slots (3,4) — ambiguous"
+  },
+  {
+   "item": "Q135069498",
+   "kid": "181670",
+   "ja": "佐久神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135069499",
+   "kid": "181670",
+   "ja": "佐久神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135270286",
+   "kid": "181670",
+   "ja": "佐久神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135069502",
+   "kid": "181675",
+   "ja": "杵衝神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135069503",
+   "kid": "181675",
+   "ja": "杵衝神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270289",
+   "kid": "181675",
+   "ja": "桙衝神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11672973",
+   "kid": "181679",
+   "ja": "高部屋神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11547364",
+   "kid": "181680",
+   "ja": "比々多神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11547364",
+   "kid": "181680",
+   "ja": "比々多神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11404276",
+   "kid": "181707",
+   "ja": "北野天神社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): (論)出雲祝神社 / (論)出雲伊波比神社 / (論)物部天神社・國渭地祇神社・天満天神(北野天神社)か？"
+  },
+  {
+   "item": "Q135069539",
+   "kid": "181714",
+   "ja": "宮目神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135069544",
+   "kid": "181714",
+   "ja": "神明神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): (論)宮目神社(玉敷神社の境内社)"
+  },
+  {
+   "item": "Q135270292",
+   "kid": "181714",
+   "ja": "宮目神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q67752315",
+   "kid": "181714",
+   "ja": "姫宮神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): (論)宮目神社(玉敷神社の境内社)"
+  },
+  {
+   "item": "Q135193369",
+   "kid": "181722",
+   "ja": "長幡部神社 旧社地",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): (現社地)長幡部神社 / (旧社地)神流川の南岸字宮の西的場 / (旧社地)水天宮石碑"
+  },
+  {
+   "item": "Q135193370",
+   "kid": "181722",
+   "ja": "長幡部神社 旧社地",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): (現社地)長幡部神社 / (旧社地)神流川の南岸字宮の西的場 / (旧社地)水天宮石碑"
+  },
+  {
+   "item": "Q135069571",
+   "kid": "181727",
+   "ja": "椋神社",
+   "section": null,
+   "why": "no exact match among 5 candidate(s): (論社)吉田椋神社 / (論社)中蒔田椋神社 / (論社)上蒔田椋神社 / (論社)野巻椋神社 / (論社)皆野椋神社"
+  },
+  {
+   "item": "Q135193398",
+   "kid": "181730",
+   "ja": "(現社地)伊古乃速御玉比売神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135193399",
+   "kid": "181730",
+   "ja": "伊古乃速御玉比売神社 旧社地",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): (現社地)伊古乃速御玉比売神社 / (旧社地)二宮山上(座標不明)"
+  },
+  {
+   "item": "Q97311695",
+   "kid": "181751",
+   "ja": "茂侶神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): (論社)三輪野江神社 / (論社)三輪茂侶神社"
+  },
+  {
+   "item": "Q11432217",
+   "kid": "181767",
+   "ja": "大井神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q66564749",
+   "kid": "181767",
+   "ja": "大井神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135069601",
+   "kid": "181775",
+   "ja": "佐志能神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q11554359",
+   "kid": "181801",
+   "ja": "油日神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270298",
+   "kid": "181801",
+   "ja": "川枯神社 二座",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q72183108",
+   "kid": "181801",
+   "ja": "八坂神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135193605",
+   "kid": "181815",
+   "ja": "長寸神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q11505112",
+   "kid": "181826",
+   "ja": "日向大神宮",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135069635",
+   "kid": "181837",
+   "ja": "小江神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069641",
+   "kid": "181837",
+   "ja": "小江神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135289475",
+   "kid": "181848",
+   "ja": "乃弥神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): （合祀）乎彌神社"
+  },
+  {
+   "item": "Q11364249",
+   "kid": "181957",
+   "ja": "中山神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11631934",
+   "kid": "181957",
+   "ja": "諏訪神社 (美濃加茂市)",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135069768",
+   "kid": "181977",
+   "ja": "布制神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069771",
+   "kid": "181982",
+   "ja": "日置神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069775",
+   "kid": "181982",
+   "ja": "日置神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069778",
+   "kid": "181983",
+   "ja": "清水神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069788",
+   "kid": "181983",
+   "ja": "清水神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069803",
+   "kid": "181991",
+   "ja": "小川神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069806",
+   "kid": "181991",
+   "ja": "小川神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069811",
+   "kid": "181992",
+   "ja": "守田神社",
+   "section": null,
+   "why": "label matches 2 slots (1,3) — ambiguous"
+  },
+  {
+   "item": "Q135069815",
+   "kid": "181992",
+   "ja": "守田神社",
+   "section": null,
+   "why": "label matches 2 slots (1,3) — ambiguous"
+  },
+  {
+   "item": "Q135069817",
+   "kid": "181993",
+   "ja": "粟野神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069821",
+   "kid": "181993",
+   "ja": "粟野神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135194234",
+   "kid": "181995",
+   "ja": "白玉足穂命神社 奥宮",
+   "section": null,
+   "why": "no exact match among 4 candidate(s): 飯縄神社奥宮 / 飯縄神社里宮 / （論社）皇足穂命神社諏訪社合殿 / （論社）皇足穂命神社"
+  },
+  {
+   "item": "Q135270416",
+   "kid": "182018",
+   "ja": "伊加保神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11618763",
+   "kid": "182032",
+   "ja": "荒橿神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q112152942",
+   "kid": "182038",
+   "ja": "八槻都々古別神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）都都古別神社（棚倉町馬場） / （論社）都都古別神社（棚倉町大字八槻）"
+  },
+  {
+   "item": "Q114593121",
+   "kid": "182038",
+   "ja": "馬場都々古別神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）都都古別神社（棚倉町馬場） / （論社）都都古別神社（棚倉町大字八槻）"
+  },
+  {
+   "item": "Q11660144",
+   "kid": "182080",
+   "ja": "零羊崎神社 (石巻市湊)",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11660145",
+   "kid": "182080",
+   "ja": "零羊崎神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135069878",
+   "kid": "182105",
+   "ja": "志波姫神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069881",
+   "kid": "182105",
+   "ja": "志波姫神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q11677855",
+   "kid": "182122",
+   "ja": "黄金山神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135069891",
+   "kid": "182141",
+   "ja": "遠賀神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069893",
+   "kid": "182141",
+   "ja": "遠賀神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q11434131",
+   "kid": "182210",
+   "ja": "大塩八幡宮",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): （論社）高岡神社 / （論社）白山神社 / （論社）大塩八幡宮境内摂社高岡神社"
+  },
+  {
+   "item": "Q135069901",
+   "kid": "182214",
+   "ja": "織田神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）剱神社境内末社織田神社 / （論社）野坂神社合祀織田神社"
+  },
+  {
+   "item": "Q11434131",
+   "kid": "182216",
+   "ja": "大塩八幡宮",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）常宮神社 / （論社）大塩八幡宮境内摂社天八百萬姫神社"
+  },
+  {
+   "item": "Q11434131",
+   "kid": "182220",
+   "ja": "大塩八幡宮",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）常宮神社境内末社天國津彦神社 / （論社）大塩八幡宮境内末社天國津彦神社"
+  },
+  {
+   "item": "Q11434131",
+   "kid": "182221",
+   "ja": "大塩八幡宮",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）常宮神社境内末社天國津姫神社 / （論社）大塩八幡宮境内末社天國津比咩神社"
+  },
+  {
+   "item": "Q135069920",
+   "kid": "182292",
+   "ja": "春日神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135069921",
+   "kid": "182292",
+   "ja": "春日神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135270265",
+   "kid": "182292",
+   "ja": "保曽呂伎神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 春日神社"
+  },
+  {
+   "item": "Q135069922",
+   "kid": "182327",
+   "ja": "楢本神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069924",
+   "kid": "182327",
+   "ja": "楢本神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069931",
+   "kid": "182342",
+   "ja": "笠野神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069932",
+   "kid": "182342",
+   "ja": "笠野神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069933",
+   "kid": "182348",
+   "ja": "瀬戸比古神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069935",
+   "kid": "182348",
+   "ja": "瀬戸比古神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069936",
+   "kid": "182350",
+   "ja": "椎葉円比咩神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069938",
+   "kid": "182350",
+   "ja": "椎葉円比咩神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135069939",
+   "kid": "182352",
+   "ja": "諸岡比古神社",
+   "section": null,
+   "why": "label matches 3 slots (1,3,4) — ambiguous"
+  },
+  {
+   "item": "Q135069945",
+   "kid": "182352",
+   "ja": "諸岡比古神社",
+   "section": null,
+   "why": "label matches 3 slots (1,3,4) — ambiguous"
+  },
+  {
+   "item": "Q135069955",
+   "kid": "182370",
+   "ja": "久志伊奈太伎比咩神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069962",
+   "kid": "182370",
+   "ja": "久志伊奈太伎比咩神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069964",
+   "kid": "182372",
+   "ja": "御門主比古神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069967",
+   "kid": "182372",
+   "ja": "御門主比古神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135194934",
+   "kid": "182383",
+   "ja": "須須神社高座宮",
+   "section": "1",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135194935",
+   "kid": "182383",
+   "ja": "須須神社金分宮",
+   "section": "2",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135194936",
+   "kid": "182383",
+   "ja": "須須神社 奥宮",
+   "section": "3",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135069969",
+   "kid": "182388",
+   "ja": "林神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q115187945",
+   "kid": "182392",
+   "ja": "浅井神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）淺井神社（高岡市福岡町） / （論社）淺井神社（高岡市石堤）"
+  },
+  {
+   "item": "Q134925834",
+   "kid": "182392",
+   "ja": "浅井神社 (高岡市福岡町赤丸)",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）淺井神社（高岡市福岡町） / （論社）淺井神社（高岡市石堤）"
+  },
+  {
+   "item": "Q135069970",
+   "kid": "182394",
+   "ja": "道神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069971",
+   "kid": "182394",
+   "ja": "道神社",
+   "section": null,
+   "why": "label matches 3 slots (1,2,3) — ambiguous"
+  },
+  {
+   "item": "Q135069973",
+   "kid": "182399",
+   "ja": "速川神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069974",
+   "kid": "182399",
+   "ja": "速川神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069976",
+   "kid": "182409",
+   "ja": "熊野神社",
+   "section": null,
+   "why": "label matches 4 slots (1,2,3,4) — ambiguous"
+  },
+  {
+   "item": "Q135069978",
+   "kid": "182409",
+   "ja": "熊野神社",
+   "section": null,
+   "why": "label matches 4 slots (1,2,3,4) — ambiguous"
+  },
+  {
+   "item": "Q135069979",
+   "kid": "182416",
+   "ja": "日置神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069980",
+   "kid": "182416",
+   "ja": "日置神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069982",
+   "kid": "182419",
+   "ja": "奴奈川神社",
+   "section": "3",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135069983",
+   "kid": "182419",
+   "ja": "奴奈川神社",
+   "section": "3",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135069984",
+   "kid": "182420",
+   "ja": "大神社",
+   "section": null,
+   "why": "label matches 2 slots (2,5) — ambiguous"
+  },
+  {
+   "item": "Q135069990",
+   "kid": "182432",
+   "ja": "三宅神社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): （論社）宮家神社（妙見町） / （論社）宮家神社（中潟町） / （論社）宮家神社（六日市町）"
+  },
+  {
+   "item": "Q135069992",
+   "kid": "182432",
+   "ja": "三宅神社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): （論社）宮家神社（妙見町） / （論社）宮家神社（中潟町） / （論社）宮家神社（六日市町）"
+  },
+  {
+   "item": "Q135069994",
+   "kid": "182433",
+   "ja": "桐原石部神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135069995",
+   "kid": "182433",
+   "ja": "桐原石部神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135195083",
+   "kid": "182441",
+   "ja": "（現社地）三島神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135195085",
+   "kid": "182441",
+   "ja": "三島神社 旧社地",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （現社地）三島神社 / （旧社地）三島神社"
+  },
+  {
+   "item": "Q135070001",
+   "kid": "182442",
+   "ja": "石井神社",
+   "section": null,
+   "why": "label matches 5 slots (1,2,3,4,5) — ambiguous"
+  },
+  {
+   "item": "Q135195104",
+   "kid": "182447",
+   "ja": "川合神社",
+   "section": "1",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135195105",
+   "kid": "182447",
+   "ja": "明口神社",
+   "section": "2",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135195106",
+   "kid": "182447",
+   "ja": "諏訪神社",
+   "section": "3",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q11493857",
+   "kid": "182489",
+   "ja": "愛宕神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): （愛宕神社）"
+  },
+  {
+   "item": "Q11529679",
+   "kid": "182492",
+   "ja": "松尾神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): （論社）請田神社"
+  },
+  {
+   "item": "Q11631810",
+   "kid": "182492",
+   "ja": "請田神社",
+   "section": "2",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135070020",
+   "kid": "182557",
+   "ja": "阿良須神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070021",
+   "kid": "182557",
+   "ja": "阿良須神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070035",
+   "kid": "182596",
+   "ja": "大野神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070036",
+   "kid": "182596",
+   "ja": "大野神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070042",
+   "kid": "182605",
+   "ja": "伊吹神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135070043",
+   "kid": "182605",
+   "ja": "意布伎神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135070052",
+   "kid": "182630",
+   "ja": "楯縫神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070053",
+   "kid": "182630",
+   "ja": "楯縫神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070061",
+   "kid": "182654",
+   "ja": "日出神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070062",
+   "kid": "182654",
+   "ja": "日出神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070064",
+   "kid": "182659",
+   "ja": "大生部兵主神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070067",
+   "kid": "182660",
+   "ja": "安牟加神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135070068",
+   "kid": "182660",
+   "ja": "安牟加神社",
+   "section": "1",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q135070070",
+   "kid": "182663",
+   "ja": "小坂神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135070071",
+   "kid": "182663",
+   "ja": "小坂神社",
+   "section": null,
+   "why": "label matches 2 slots (1,2) — ambiguous"
+  },
+  {
+   "item": "Q135270269",
+   "kid": "182704",
+   "ja": "海神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q21655263",
+   "kid": "182704",
+   "ja": "絹巻神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070073",
+   "kid": "182707",
+   "ja": "伊伎佐神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070074",
+   "kid": "182707",
+   "ja": "平内神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q11490726",
+   "kid": "182791",
+   "ja": "忌部神社 (松江市)",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070092",
+   "kid": "182791",
+   "ja": "久多弥神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070102",
+   "kid": "182804",
+   "ja": "山狭神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070103",
+   "kid": "182804",
+   "ja": "山狭神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270431",
+   "kid": "182804",
+   "ja": "山狭神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070111",
+   "kid": "182820",
+   "ja": "久米神社 奥宮",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 比婆山久米神社奥の宮（熊野神社）"
+  },
+  {
+   "item": "Q135070112",
+   "kid": "182820",
+   "ja": "熊野神社（里宮）",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 比婆山久米神社奥の宮（熊野神社）"
+  },
+  {
+   "item": "Q135070113",
+   "kid": "182820",
+   "ja": "久米神社 [跡]",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 比婆山久米神社奥の宮（熊野神社）"
+  },
+  {
+   "item": "Q135270433",
+   "kid": "182820",
+   "ja": "久米神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 比婆山久米神社奥の宮（熊野神社）"
+  },
+  {
+   "item": "Q135070129",
+   "kid": "182895",
+   "ja": "諏訪神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070130",
+   "kid": "182895",
+   "ja": "長浜神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070131",
+   "kid": "182895",
+   "ja": "素盞社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270434",
+   "kid": "182918",
+   "ja": "坐和加須西利比売神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q134892535",
+   "kid": "182959",
+   "ja": "苅田神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135270435",
+   "kid": "182963",
+   "ja": "迩弊姫神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070143",
+   "kid": "182964",
+   "ja": "佐比売山神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070143",
+   "kid": "182964",
+   "ja": "佐比売山神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070144",
+   "kid": "182964",
+   "ja": "佐比売山神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070145",
+   "kid": "182969",
+   "ja": "山辺八代姫命神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社A）山邊八代姫命神社 / （論社B）山邊八代姫命神社"
+  },
+  {
+   "item": "Q135070146",
+   "kid": "182969",
+   "ja": "山辺八代姫命神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社A）山邊八代姫命神社 / （論社B）山邊八代姫命神社"
+  },
+  {
+   "item": "Q135070154",
+   "kid": "182981",
+   "ja": "大年神社",
+   "section": null,
+   "why": "label matches 2 slots (2,3) — ambiguous"
+  },
+  {
+   "item": "Q135070166",
+   "kid": "182986",
+   "ja": "大原神社",
+   "section": null,
+   "why": "label matches 4 slots (1,2,3,4) — ambiguous"
+  },
+  {
+   "item": "Q11381861",
+   "kid": "183048",
+   "ja": "住吉神社",
+   "section": "1",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135070196",
+   "kid": "183088",
+   "ja": "池田神社",
+   "section": "2",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q11608173",
+   "kid": "183089",
+   "ja": "總社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （総社宮境内） / （合祀）大和神社"
+  },
+  {
+   "item": "Q135070197",
+   "kid": "183089",
+   "ja": "大和神社",
+   "section": "2",
+   "why": "exact match against 2 candidate(s)"
+  },
+  {
+   "item": "Q6404042",
+   "kid": "183110",
+   "ja": "吉備津神社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): （論社1）吉備津神社境内 / （1の旧社地？） / （論社2）當島八幡神社"
+  },
+  {
+   "item": "Q135070222",
+   "kid": "183118",
+   "ja": "知波夜比古神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社）高杉町 / （論社）三良坂町"
+  },
+  {
+   "item": "Q705035",
+   "kid": "183160",
+   "ja": "熊野本宮大社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): 潮岬本之宮神社（論社） / 大斎原・海神社（論社）"
+  },
+  {
+   "item": "Q335618",
+   "kid": "183161",
+   "ja": "熊野速玉大社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): 大斎原・御戸開神社（論社） / 力侍神社（論社） / 速玉大社・鍵宮（論社）"
+  },
+  {
+   "item": "Q705035",
+   "kid": "183161",
+   "ja": "熊野本宮大社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): 大斎原・御戸開神社（論社） / 力侍神社（論社） / 速玉大社・鍵宮（論社）"
+  },
+  {
+   "item": "Q135070257",
+   "kid": "183169",
+   "ja": "岸河神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q135070258",
+   "kid": "183169",
+   "ja": "山王神社",
+   "section": null,
+   "why": "page lists no candidates"
+  },
+  {
+   "item": "Q723417",
+   "kid": "183177",
+   "ja": "大麻比古神社",
+   "section": null,
+   "why": "no exact match among 2 candidate(s): （論社A）宇志比古神社 / （論社B）宇志比古神社"
+  },
+  {
+   "item": "Q135070283",
+   "kid": "183188",
+   "ja": "正八幡宮",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 蜂須神社"
+  },
+  {
+   "item": "Q135270351",
+   "kid": "183188",
+   "ja": "八十子神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 蜂須神社"
+  },
+  {
+   "item": "Q135270439",
+   "kid": "183191",
+   "ja": "倭大国玉神大国敷神社 二座",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 医家神社"
+  },
+  {
+   "item": "Q43594549",
+   "kid": "183191",
+   "ja": "倭大国魂神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 医家神社"
+  },
+  {
+   "item": "Q135070295",
+   "kid": "183195",
+   "ja": "敷島神社",
+   "section": "1",
+   "why": "exact match against 1 candidate(s)"
+  },
+  {
+   "item": "Q135070296",
+   "kid": "183195",
+   "ja": "杉尾神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 敷島神社"
+  },
+  {
+   "item": "Q135070297",
+   "kid": "183195",
+   "ja": "美奴間神社",
+   "section": null,
+   "why": "no exact match among 1 candidate(s): 敷島神社"
+  },
+  {
+   "item": "Q11597744",
+   "kid": "183297",
+   "ja": "竈門神社",
+   "section": null,
+   "why": "no exact match among 3 candidate(s): 竈門神社上宮 / 竈門神社中宮跡 / 竈門神社下宮"
+  },
+  {
+   "item": "Q135198253",
+   "kid": "183297",
+   "ja": "竈門神社下宮",
+   "section": "3",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135198290",
+   "kid": "183314",
+   "ja": "火男火売神社上宮",
+   "section": "1",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135198292",
+   "kid": "183314",
+   "ja": "火男火売神社中宮（御嶽権現）",
+   "section": "2",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135198293",
+   "kid": "183314",
+   "ja": "火男火売神社下宮（鶴見権現）",
+   "section": "3",
+   "why": "exact match against 3 candidate(s)"
+  },
+  {
+   "item": "Q135069216",
+   "kid": "181234",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 2 on 181234 also claimed by Q135069219"
+  },
+  {
+   "item": "Q135069219",
+   "kid": "181234",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 2 on 181234 also claimed by Q135069216"
+  },
+  {
+   "item": "Q135069498",
+   "kid": "181670",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 181670 also claimed by Q135069499, Q135270286"
+  },
+  {
+   "item": "Q135069499",
+   "kid": "181670",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 181670 also claimed by Q135069498, Q135270286"
+  },
+  {
+   "item": "Q135270286",
+   "kid": "181670",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 181670 also claimed by Q135069498, Q135069499"
+  },
+  {
+   "item": "Q135069539",
+   "kid": "181714",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 181714 also claimed by Q135270292"
+  },
+  {
+   "item": "Q135270292",
+   "kid": "181714",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 181714 also claimed by Q135069539"
+  },
+  {
+   "item": "Q135069920",
+   "kid": "182292",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 182292 also claimed by Q135069921"
+  },
+  {
+   "item": "Q135069921",
+   "kid": "182292",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 182292 also claimed by Q135069920"
+  },
+  {
+   "item": "Q135069931",
+   "kid": "182342",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 182342 also claimed by Q135069932"
+  },
+  {
+   "item": "Q135069932",
+   "kid": "182342",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 182342 also claimed by Q135069931"
+  },
+  {
+   "item": "Q135069936",
+   "kid": "182350",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 2 on 182350 also claimed by Q135069938"
+  },
+  {
+   "item": "Q135069938",
+   "kid": "182350",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 2 on 182350 also claimed by Q135069936"
+  },
+  {
+   "item": "Q135069982",
+   "kid": "182419",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 3 on 182419 also claimed by Q135069983"
+  },
+  {
+   "item": "Q135069983",
+   "kid": "182419",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 3 on 182419 also claimed by Q135069982"
+  },
+  {
+   "item": "Q135070067",
+   "kid": "182660",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 182660 also claimed by Q135070068"
+  },
+  {
+   "item": "Q135070068",
+   "kid": "182660",
+   "ja": "",
+   "section": null,
+   "why": "collision: section 1 on 182660 also claimed by Q135070067"
+  }
+ ]
+}

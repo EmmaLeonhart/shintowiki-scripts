@@ -166,6 +166,14 @@ jobs:
         continue-on-error: true
         run: python generate_orphan_membership_removals.py
 
+      # P958 sections read off the Kokugakuin entry pages for the items no ranking can reach.
+      # The pages are committed under kokugakuin_pages/, so this re-parses rather than
+      # re-fetching and costs the museum site nothing on a rebuild.
+      - name: Read P958 sections off the Kokugakuin pages
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_p958_from_kokugakuin.py
+
       - name: Generate 天神社 English labels from their readings
         working-directory: modern-quickstatements
         continue-on-error: true
