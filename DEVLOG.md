@@ -4,6 +4,78 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-25 — the 08-21 churn fix had reached one pipeline of seven; class now swept
+
+The regeneration churn diagnosed and fixed on 2026-08-21 was fixed **for the label pipelines
+it was found in, and nowhere else.** Eight more generators were still rewriting their entire
+output on every scheduled build. That entry's own warning — *"the audit method was wrong… it
+grepped for the presence of `ORDER BY` rather than checking what the clause orders BY"* —
+turned out to apply to its scope as well as its method.
+
+**Found by accident, from my own mistake.** Two generators I added the previous night
+(`generate_orphan_membership_removals.py`, `generate_multi_ordinal_removals.py`) rewrote 436
+of 829 and 48 of 63 lines on their first scheduled run. Chasing that into the class found six
+more, then a full sweep of every committed artifact found two beyond those.
+
+| file | lines rewritten per build |
+|---|---|
+| `kana_qualifier_add.txt` | 3,962 |
+| `migrate_ritsuryo_funding_remove.txt` | 2,494 |
+| `daily_operations.txt` | 2,483 |
+| `ronsha_ojp_name_removals.txt` | 1,739 |
+| `shikinaisha_kokugakuin_refs.txt` | 1,206 |
+| `orphan_membership_removals.txt` | 436 |
+| `kana_redundant_remove.txt` | 49 / 156 / 123 across three runs |
+| `address_citation_backfill.txt` | 76 |
+| `multi_ordinal_removals.txt` | 48 |
+
+`daily_operations.txt` needed no fix of its own — it concatenates the others, so sorted
+sources make it deterministic. `tenjinsha_en_labels.txt` was fixed **pre-emptively**: no churn
+history, only because it had not regenerated since creation, with a no-`ORDER BY` query and a
+writer that preserved binding order.
+
+### The method, which is the part worth keeping
+
+**Test the effect, not the property.** Equal insertions and deletions is a hint, not a finding.
+The decisive test is whether the file's **sorted content is byte-identical** across the commit:
+
+    git show <c>~1:<file> | sort | md5sum
+    git show <c>:<file>   | sort | md5sum
+
+**Unsorted is not the same as churning, and three files were deliberately left alone.**
+`court_rank_people.txt` changes one line in 12,651; `reisai.txt` only ever gains lines;
+`p958_qualifiers.txt` makes small real edits. All three are unsorted and all three are healthy.
+Sorting them would have produced one enormous diff for no benefit — the same harm as the churn.
+
+**Fix at the writer, never with `ORDER BY`** (from the 08-21 entry): that makes ordering a
+property of the file we control rather than a hope about the endpoint.
+
+**A naive line sort is WRONG where a file interleaves a `# Source:` comment with each
+statement** — it divorces every comment from its line. All eleven files here were checked for
+comment and blank lines first; every one is bare statements, so a line sort is safe *here*.
+Reading the 08-21 entry before acting is what prevented reaching for `ORDER BY` and possibly
+damaging the label files.
+
+### Why it stayed invisible
+
+A file that churns looks exactly like a file that changed. When the real diff is always
+thousands of lines of noise nobody reads it, and — as the 08-21 entry already noted about a
+pipeline death — the day it drops to one line, that reads as calm. These are removal batches:
+a genuine diff means statements about to be deleted from Wikidata.
+
+**And a fix recorded as done is done for the instance it names.** The class it belongs to stays
+broken silently, because nothing about the untouched generators announces that a sibling was
+repaired.
+
+Also noted, not chased: `p958_qualifiers.txt` carries one duplicate line. Harmless — a repeated
+QuickStatement is idempotent — but the generator can emit the same statement twice.
+
+**Still unverified:** every `generate` step so far ran before these fixes landed, so the clean
+regeneration diff that would prove them has not happened yet. The next scheduled regeneration
+is the test. Not forced by hand while the 03:22Z loop was still hitting WDQS.
+
+---
+
 ## 2026-08-24 (later, seventh) — the throttle holds, three questions dissolve on measurement, and two of my own findings were artefacts
 
 A long session whose real output was less new work than **retraction of work I had reported**. Both
