@@ -22,9 +22,16 @@ string equals the item's label after normalisation. Two candidates matching, or 
 `None` — the same direction `resolve_multi_p13677` already takes, because attaching a section
 number to the wrong candidate is worse than attaching none.
 
-**Cached on disk.** `kokugakuin_pages/` holds one file per entry id, so a re-run costs no requests
-and the corpus can be re-parsed without re-fetching. Requests are paced at `READ_INTERVAL`; this is
-a small museum site, not Wikidata.
+**Saved, not merely cached.** `kokugakuin_pages/` holds one file per entry id and is **committed**
+— Emma, 2026-08-25: *"you can save pages from that site."* So the site is fetched once per entry
+ever, the parse can be re-run and audited offline against exactly the bytes a section was read
+from, and the evidence for a `P958` value outlives the page. Requests are paced at `READ_INTERVAL`;
+this is a small museum site, not Wikidata.
+
+**No browser needed.** Emma, same day: *"so no need to browser stuff."* The candidate slots are in
+the raw HTML — a plain `urlopen` gets them, with no JavaScript rendering and no Playwright. The
+standing fallback-to-Playwright rule is for pages whose content is not in the source; this is not
+one of them, and reaching for a browser here would be cost with no return.
 
 Usage:
     python modern-quickstatements/kokugakuin_candidates.py 182811 181621
