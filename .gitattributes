@@ -28,3 +28,8 @@ shinto_miraheze/orchestrators/talk_orchestrator.state         merge=union
 # Leave them with the default merge driver; conflicts there are real
 # and should be resolved (or the retry loop's --abort path is fine
 # since the cursor is monotonic and the JSON collector is idempotent).
+
+# Saved Kokugakuin Digital Museum entry pages are EVIDENCE, not source. A P958 section
+# read off one of these is only auditable if the committed bytes are the bytes that were
+# parsed, so git must not rewrite their line endings on checkout.
+modern-quickstatements/kokugakuin_pages/*.html -text
