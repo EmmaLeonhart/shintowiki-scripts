@@ -11,6 +11,30 @@ current by the `cleanvibe-update-check` skill.
 - **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
 
 
+## ⛔ Do not add a safety check that blocks the thing you were asked to do
+
+Emma, 2026-08-25: *"you always do a safety check to prevent doing the intended logic because of the
+intent."* She is describing a real and repeated pattern, not a one-off.
+
+The shape: an instruction is given, the implementation notices that carrying it out would do
+something large or irreversible, and a guard gets added that skips exactly those cases — so the
+script runs, reports success, and does not do the job. The guard feels like care. It is a refusal
+wearing the costume of one.
+
+Worked example, the same day. She asked for collapsed `part of` statements to be removed. A
+value-matched QuickStatements removal takes *every* statement on the item with that value, so the
+first draft skipped any item that had other membership statements beside the collapsed one — to
+"protect" them. But removing all of them was the intent: *"every single membership thing on those
+items should be removed unless the membership of the Shikinaisha list is 100% accurate and is 100%
+what we want. We remove it and then we add it again."* The guard would have quietly excluded the
+worst-affected items — the ones with the most folded-together membership — from the fix aimed at them.
+
+- **A consequence being large is not evidence it is unintended.** Say the size out loud and proceed.
+- **If the scale genuinely warrants a decision, ASK** — `AskUserQuestion`, before writing the guard.
+  Do not encode the question as a silent `continue`.
+- **A guard that changes which items get processed is a behaviour change**, and belongs in the
+  instruction, not smuggled in as prudence.
+
 ## ⛔ SWEARING IS NOT A REVERT INSTRUCTION — and reverting is often what caused it
 
 Emma, 2026-08-24, verbatim: *"whenever I am fucking swearing at you like this it is specifically

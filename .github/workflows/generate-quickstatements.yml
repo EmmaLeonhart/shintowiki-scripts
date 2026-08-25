@@ -152,6 +152,12 @@ jobs:
       # 天神社 English labels from each item's own reading — a deliberate special case;
       # see the ATOMIC_FILES note in direct_daily_edits.py for why it is not a fix to
       # kana_english.label_for. Re-runs every build so a corrected reading moves the label.
+      # Collapsed `part of` statements — see the ATOMIC_FILES note in direct_daily_edits.py.
+      - name: Generate multi-ordinal part-of removals
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_multi_ordinal_removals.py
+
       - name: Generate 天神社 English labels from their readings
         working-directory: modern-quickstatements
         continue-on-error: true

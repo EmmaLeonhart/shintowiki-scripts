@@ -278,9 +278,14 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
   unowned.** A `part of` statement is one position in one list, so a second ordinal on it is the
   piped-link collapse made literal. Worst are `Q482065` and `Q110915859`, five ordinals in a single
   statement; then two items at three, and the rest at two. Nothing in the repo looks for this shape.
-  - [ ] Decide what a corrected statement looks like before touching any of them — one statement per
-    ordinal, presumably, with the matching `P155`/`P156` split out. UNSAFE-TO-GUESS: `P155`/`P156`
-    are also piled in, and pairing five ordinals to five predecessors is not mechanical.
+  - ✅ **DECIDED and BUILT 2026-08-25.** Emma: *"I already established this ages ago: we remove them
+    entirely and then later on we have quickstatements that add proper membership stuff for the
+    lists."* And on scope: *"every single membership thing on those items should be removed unless
+    the membership of the Shikinaisha list is 100% accurate and is 100% what we want."*
+    `generate_multi_ordinal_removals.py` → `multi_ordinal_removals.txt`, **63 lines**, registered in
+    `ATOMIC_FILES` in both submitters and running in `generate-quickstatements.yml`. Value-matched, so
+    an affected item loses ALL its membership into that list — intended. Re-adding correct membership
+    is the separate later job.
   - Nothing is staged. The three `Q110915859` removal lines already take its collapsed statement as
     a side effect, so that one item is handled whatever is decided here.
 
