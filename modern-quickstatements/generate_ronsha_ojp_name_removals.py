@@ -175,7 +175,9 @@ def main():
     path = args.out
     if os.path.dirname(path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
-    io.open(path, "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
+    # Sorted at the writer, per DEVLOG 2026-08-21: WDQS row order is not stable, so
+    # emitting in result order rewrote all 1,739 lines of this file every build.
+    io.open(path, "w", encoding="utf-8", newline="\n").write("\n".join(sorted(set(lines))) + "\n")
     publish_to_site(path)
 
     print(f"\n  {len(lines)} removals across {len(items)} items")

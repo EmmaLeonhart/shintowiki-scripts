@@ -417,7 +417,7 @@ def generate_hiteisha_removals():
         lines.append(f"-{item}|P31|Q135026601")
 
     with open(HITEISHA_OUTPUT_FILE, "w", encoding="utf-8") as f:
-        for line in lines:
+        for line in sorted(set(lines)):
             f.write(line + "\n")
 
     print(f"Written {len(lines)} lines to {HITEISHA_OUTPUT_FILE}")
@@ -456,7 +456,7 @@ def generate_shikinaisha_removals():
         lines.append(f"-{item}|P31|Q134917286")
 
     with open(SHIKINAISHA_OUTPUT_FILE, "w", encoding="utf-8") as f:
-        for line in lines:
+        for line in sorted(set(lines)):
             f.write(line + "\n")
 
     print(f"Written {len(lines)} lines to {SHIKINAISHA_OUTPUT_FILE}")
@@ -527,7 +527,7 @@ def generate_p459_qualifiers():
         p459_counts[determined_by] = p459_counts.get(determined_by, 0) + 1
 
     with open(output_file, "w", encoding="utf-8") as f:
-        for line in all_lines:
+        for line in sorted(set(all_lines)):
             f.write(line + "\n")
 
     print(f"Written {len(all_lines)} lines to {output_file}")
@@ -597,7 +597,7 @@ def generate_p4656_references():
         lines.append(f'{item}|P13723|{rankvalue}|S4656|"{url}"')
 
     with open(P4656_OUTPUT_FILE, "w", encoding="utf-8") as f:
-        for line in lines:
+        for line in sorted(set(lines)):
             f.write(line + "\n")
 
     print(f"Written {len(lines)} lines to {P4656_OUTPUT_FILE}")
@@ -853,7 +853,7 @@ def generate_migration(migration):
                     add_lines.extend(claim_to_qs_lines(item_id, claim, determined_by, override_ref=override_ref))
 
         with open(add_file, "w", encoding="utf-8") as f:
-            for line in add_lines:
+            for line in sorted(set(add_lines)):
                 f.write(line + "\n")
         print(f"Written {len(add_lines)} ADD lines to {add_file}")
 
@@ -867,7 +867,7 @@ def generate_migration(migration):
         remove_lines.append(f"-{item_id}|{source_prop}|{value_id}")
 
     with open(remove_file, "w", encoding="utf-8") as f:
-        for line in remove_lines:
+        for line in sorted(set(remove_lines)):
             f.write(line + "\n")
     print(f"Written {len(remove_lines)} REMOVE lines to {remove_file}")
 

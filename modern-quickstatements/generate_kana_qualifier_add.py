@@ -153,7 +153,9 @@ def main():
     print(f"  {n_seed} seed lines")
 
     with open(ADD_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + ("\n" if lines else ""))
+        # Sorted at the writer, per DEVLOG 2026-08-21: WDQS row order is not stable, so
+        # emitting in result order rewrote all 3,962 lines of this file every build.
+        f.write("\n".join(sorted(set(lines))) + ("\n" if lines else ""))
     print(f"\nWrote {len(lines)} lines to {ADD_FILE}")
 
 

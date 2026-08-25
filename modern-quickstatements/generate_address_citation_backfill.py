@@ -137,8 +137,10 @@ def main():
     url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(LIST_ARTICLE)
     lines, skipped = build_lines(bindings, addr_rows, url)
 
+    # Sorted at the writer, per DEVLOG 2026-08-21: WDQS row order is not stable, so
+    # emitting in result order rewrote all 76 lines of this file every build.
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        for line in lines:
+        for line in sorted(set(lines)):
             f.write(line + "\n")
     print(f"Wrote {len(lines)} reference-backfill lines -> {OUTPUT_FILE}")
     for qid, label, addr in skipped:
