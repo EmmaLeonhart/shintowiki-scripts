@@ -595,6 +595,23 @@ zero, at which point they do not even need to be unique."*
   blocks (`現社名など（１）（２）（３）…`). **P958 is which numbered candidate the item is.**
 - **A shared P13677 is NOT a duplicate.** Many items legitimately share an id and are separated by
   P958. Any check that reports duplicates on the id alone is reporting normal data as a defect.
+- **`n/a` and `0` are NOT interchangeable, and neither is a fallback.** Emma, 2026-08-25:
+  *"n/a is for disputed engishiki entries and 0 is for ones that are on wikipedia."* Counting how
+  often each appears tells you nothing — they mean different things, and a frequency split (it is
+  roughly 86/14) is not evidence about which one a given item wants.
+- **⛔ Items typed `Q135022904` (Shikinai Ronsha) or `Q135038714` (Disputed Shikinaisha) are
+  EXCLUDED from `n/a` on purpose.** `generate_p958_qualifiers.py` has said so since it was written:
+  *"their children have real ranked sections… we don't want to overwrite their nuance with n/a."*
+  Of the 263 holders the entry resolver cannot place, **261 are exactly these two types** — so the
+  residue is not an unfilled gap waiting for a default, it is a population the repo has already
+  decided to leave alone. Stamping `n/a` across it would erase the distinction the exclusion exists
+  to keep.
+- **This was already implemented and documented before I asked Emma about it.** The rule lives in
+  `generate_p958_qualifiers.py` around the `disputed_query`, in a variable named
+  `disputed_statements`, and `Q135022904` is annotated *"Shikinai Ronsha (disputed)"* in three other
+  files. Search the repo before taking a data-model question to her — and note that I asked it as a
+  frequency question, which is the deeper error: **measure what a value MEANS, not how often it
+  occurs.**
 - **`0` and `n/a` carry no uniqueness** — they mean "not one of the numbered candidates", so two
   items may hold the same id with section `0` and neither is wrong.
 - This was recorded only in `queue.md` prose until 2026-08-23. It is a data-model rule, so it lives
