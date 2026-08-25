@@ -21,11 +21,29 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
   genuinely unresolved and a default would erase that. The remaining 2 are already covered by that
   generator. **Nothing further should be assigned here without new evidence about specific items.**
 
-  - [ ] Optional, and the only open lever: the matcher defers on ~4 in 5 of the hard bucket, mostly
-    because candidate names carry annotations (`（論社A）八幡宮神社`) that do not equal the item's
-    label. Loosening normalisation is the change most likely to reintroduce false matches, so any
-    variant must be re-measured against `p958_ground_truth_sample.json` before it ships. The corpus
-    being local makes that experiment free.
+  **✓ The loosen-the-matcher lever is CLOSED — measured, and it points the wrong way.** I had
+  assumed the deferrals were mostly annotation noise a looser normaliser could absorb. Categorising
+  all 46 ground-truth deferrals says otherwise:
+
+  | why it deferred | share |
+  |---|---:|
+  | **the label matches SEVERAL slots** | **61%** |
+  | genuinely different names (`厳原八幡宮神社` vs `八幡宮神社`) | 11% |
+  | one name contains the other | 9% |
+  | the slot is absent from the page | 9% |
+  | **one variant character** (`高`/`髙`, `剣`/`剱`, `鬚`/`髭`) | **7%** |
+  | slot name empty once its annotation is stripped (`（論社）`) | 4% |
+
+  A variant-kanji fold — the only loosening with real evidence behind it — would fix **3 of 46**,
+  and the pairs supporting it were each seen exactly once. Meanwhile the dominant cause is
+  **ambiguity**, and loosening normalisation makes ambiguity *worse*: more strings compare equal, so
+  more labels match several slots. The lever does not merely have low upside, it points backwards.
+
+  The one sound direction is the opposite — **tightening, by using information currently thrown
+  away**. Slot names carry disambiguators the matcher ignores: `（論社）山辺御県神社〈別所町〉` versus
+  `〈西井戸堂町〉`. Matching on those would *separate* candidates rather than merge them, which is
+  the right shape for a 61%-ambiguity residue. Not attempted; recorded so the next attempt starts
+  from the measurement instead of the assumption.
 
 - **Built and waiting on the lockout — no work left on any of them**
 
