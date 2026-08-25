@@ -134,11 +134,39 @@ Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
     `0` carries no uniqueness — but it is **not** in the manual-review file either, so even the
     genuinely-undecidable case is invisible rather than surfaced.
 
-  - [ ] **NEEDS-INVESTIGATION: why 13 derivable items are neither emitted nor flagged.** The
-    generator has an explicit multi-P13677 manual-review path and reports *"Flagged for manual
-    review (multiple P13677): 15"*, so a fall-through this size is a third path nobody wrote on
-    purpose. Blocker: the branch conditions in `generate_p958_qualifiers.py` have not been read
-    against these 13. Nothing here reaches Wikidata, so this is safe to work at any time.
+  - **✓ INVESTIGATED AND CLOSED 2026-08-24. They never enter the pipeline — there is no third path.**
+
+    My framing last tick was wrong. "Neither emitted nor flagged" was the observation; "a third path
+    nobody wrote" was a guess, and so was the mechanism I proposed for it.
+
+    **Disproved on the way:** (1) `analyze_p13677` really does compute `has_p958` at ITEM level, so
+    one id carrying a section would suppress the whole item — but **none of the 17 has P958 anywhere**,
+    so that branch never fires for them. (2) They are not ambiguity cases either: `resolve_multi_p13677`
+    finds a **unique** match for every one of them, which is why they are correctly absent from
+    `p958_manual_review.txt`. The 4 that ARE in that file are there for the right reason ("no unique
+    match"), and its 15 entries are all legitimate.
+
+    **The actual cause.** The generator's query requires `?stmt pq:P1352 ?ranking` — a ranking
+    qualifier **on the P460/P527 link statement itself**. These items do not have one:
+
+    | item | link | P1352 |
+    |---|---|---|
+    | [`Q134926924`](https://www.wikidata.org/wiki/Q134926924) 左内神社 | both P460 links | **none** |
+    | [`Q11481363`](https://www.wikidata.org/wiki/Q11481363) 常宮神社 | all three P460 + two P527 | **none** |
+    | [`Q135270127`](https://www.wikidata.org/wiki/Q135270127) 伊居太神社 | has 1 and 2 on two links, but **none** on the link to entry [`Q135039219`](https://www.wikidata.org/wiki/Q135039219) — and the row in question is for id `181064`, which no parent claims |
+
+    So the query never returns them and the generator never sees them. Nothing is being dropped;
+    they are outside its input.
+
+    **What this really was: `p958_derivability.json` and the generator disagree about where a ranking
+    lives.** The audit called these "derivable — exactly one parent ranking" by reading rankings from
+    a different place than the link-statement qualifier the generator requires. Comparing the two
+    produced a coverage figure measuring nothing, which is the same error as keying P13677 on the id
+    instead of the (id, section) pair: **the unit has to match before a count means anything.** The
+    generator works per (item, parent-link-with-ranking); the audit rows are (item, kid).
+
+    The remedy, if anyone wants these sectioned, is to add the missing `P1352` qualifiers — a
+    data gap on Wikidata, not a code defect, and it waits for 2026-09-18 like everything else.
 
   - **The 228 with no ranking** — OUT-OF-SCOPE for automation, permanently: the value only exists on the
     Kokugakuin page. This is a reading job, and 228 pages is a real size — it belongs to Emma or to a
