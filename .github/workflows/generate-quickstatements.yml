@@ -158,6 +158,14 @@ jobs:
         continue-on-error: true
         run: python generate_multi_ordinal_removals.py
 
+      # The same P361 defect as list_membership_removals.txt, in the 816 items that file's
+      # ronsha-based selection never reached. Self-healing: it re-checks what is already
+      # staged there each build, so it shrinks to nothing as the drip delivers.
+      - name: Generate orphan membership removals
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_orphan_membership_removals.py
+
       - name: Generate 天神社 English labels from their readings
         working-directory: modern-quickstatements
         continue-on-error: true

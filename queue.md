@@ -223,21 +223,39 @@ These are not waiting on Wikidata. They are waiting on a ruling, and each names 
   plainly that a shared name is not proof of identity, and carries the withdrawal note on the section
   itself. Headline reads `149 orphans: 48 name collision / 0 Kokugakuin-id disagreement / 101 no-twin`.
 
-  ### B3. The orphan Shikinaisha — mis-tagged, or missing entries? **Re-read before deciding.**
-  Was 66; now **101** after 36 members arrived from B2's id-disagreement class, which turned out not to
-  exist. With B2 withdrawn the honest count is closer to all **149** orphans, since the 48 "duplicates"
-  are only name collisions. 101 confirmed-Shikinaisha with no twin: either modern shrines wrongly tagged as 927 entries, or real
-  entries the lists are missing. Same table as B2.
-  - **ASK:** "How do I treat the 66?" → *investigate case-by-case* / *treat as mis-tagged* (drop the
-    class) / *treat as missing entries* (add to the list).
+  ### B3. ~~The orphan Shikinaisha — mis-tagged, or missing entries?~~ **ANSWERED BY MEASUREMENT 2026-08-24.**
+
+  It was never one question, and the drifting count (66 → 101 → 149) was the symptom. Of the 149
+  orphans, **97 are pre-existing items and 52 are register-import-era** — so both classes the ask
+  offered are present at once and no single disposition could have been right.
+
+  The class that has an action attached is settled by the repo's own P460 test: **44 orphans point
+  at a register-era entry item, and 41 of those also carry `P361` into that entry's own list.** That
+  is the defect `list_membership_removals.txt` exists for, and **none of the 44 appears in it.**
+
+  **Widening the check past the orphan page found the real size: 2,788 items match the defect shape,
+  2,008 are already staged, and 816 are not.** The 149-item orphan page was a thin slice of it. The
+  existing file's 2,151 were selected AS RONSHA, so its population was always narrower than the rule.
+
+  **Emma approved staging all 816, 2026-08-24.** `generate_orphan_membership_removals.py` →
+  `orphan_membership_removals.txt` (829 lines), registered in `ATOMIC_FILES` in both submitters and
+  running in `generate-quickstatements.yml`. It re-reads what the older file already covers on every
+  build, so it shrinks to nothing as the drip delivers.
+
+  What remains genuinely open is only the residue: 102 orphans with no `P460` at all, which this test
+  cannot classify either way. No decision is available on those without reading them.
 
   ### B4. The 18 missing Kokugakuin ids — auto-fill or eyes?
   18 register entries lack a Kokugakuin database id; the strict matcher found ZERO safe to add (two
   adjacent DB entries can share a name). **Same 18 as B7** — where five of them turn out to be the
   one Izumo cluster, so this is 13 rows plus a knot, not 18 independent lookups.
   Table: https://emmaleonhart.github.io/shintowiki-scripts/kokugakuin-missing-ids.html
-  - **ASK:** "Is exact name-matching good enough to auto-fill, or do the 18 need per-item eyes?" →
-    *per-item eyes* / *auto-fill the exact matches*.
+  **Not a live decision — the auto-fill branch is an empty set.** The strict matcher already found
+  **zero** safe to add, so "auto-fill the exact matches" fills nothing and asking which to prefer is
+  asking about a choice that does not exist. The reason it found zero is the same fact B7 turns on:
+  two adjacent register entries can carry the same name, so an exact name match is not evidence of
+  identity — the Izumo cluster is that failure five times over. Per-item eyes by default, on 13 rows
+  plus the knot.
 
   ### B5. The ~66 items with two Kokugakuin ids — how to assign the section?
   Each is a candidate for two different 927 entries, so its parent-link needs a "which entry" (P958)
