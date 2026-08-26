@@ -167,6 +167,77 @@ jobs:
       # That shrinking is the whole design and it only works if this runs — it was registered in
       # ATOMIC_FILES but in no workflow, so list_membership_rebuild.txt sat frozen from
       # 2026-07-10 while being staged for delivery.
+
+      # ⛔ WIRED 2026-08-25. Every one of these was registered in ATOMIC_FILES — staged for
+      # delivery — while running in NO workflow, so its output sat frozen between 2026-07-06
+      # and 2026-08-04 and would have delivered six-week-old content when the lockout lifts.
+      # Emma: "Github actions should be updating these things periodically that's the entire
+      # point of this repo and how it works." A generator that is staged but unscheduled is a
+      # defect by design, not an oversight to note.
+      - name: Bunrei (分霊) P612 + qualifiers
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_bunrei_quickstatements.py
+      - name: P3225 corporate numbers
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_p3225_quickstatements.py
+      - name: Hisousha P119/P547
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_hisousha_quickstatements.py
+      - name: Province exclusions
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_province_exclusions.py
+      - name: List-membership removals (script 2 of the pair)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_list_membership_removals.py
+      - name: Miscellaneous edits
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_miscellaneous_edits.py
+      - name: Sangō (山号) P1448
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_sango_quickstatements.py
+      - name: Shintai (神体) P825
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_shintai_quickstatements.py
+      - name: Sōken-den (創建伝) P571
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_souken_den_quickstatements.py
+      - name: Kami parent qualifiers
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_kami_parent_qualifiers.py
+      - name: Shinto honorifics (stage 1)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_shinto_honorifics.py
+      - name: Shinto short names (stage 2)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_shinto_short_names.py
+      - name: Genbu ids
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_genbu_ids.py
+      - name: Shinmei ids
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_shinmei_ids.py
+      - name: Jinjacho P973
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_jinjacho_p973.py
+      - name: Saijin deity research
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_saijin_deity_research.py
       - name: Rebuild list membership from the list items
         working-directory: modern-quickstatements
         continue-on-error: true
