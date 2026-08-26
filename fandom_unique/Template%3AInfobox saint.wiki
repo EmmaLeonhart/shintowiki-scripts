@@ -95,11 +95,5 @@
 | misc5; module5 
 | misc6; module6 
 }}<noinclude>
-{{Documentation}}
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-</noinclude>
-<noinclude>
-[[Category:Independently git synced pages]][[Category:Pages using infobox saint with unknown parameters|_VALUE_{{PAGENAME}}]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
+[[Category:Infobox templates]]
 </noinclude>
