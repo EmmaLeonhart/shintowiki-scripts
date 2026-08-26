@@ -138,8 +138,12 @@ def main():
         if args.limit and len(lines) >= args.limit:
             break
 
+    # Sorted at the writer, per DEVLOG 2026-08-21: the query has no stable ordering, so
+    # emitting in result order rewrote the whole file on every build — 6 of 25 lines on
+    # 2026-08-26, 3 of 10 before that, identical content each time. Small, but these are
+    # label overwrites, and a diff that is always noise is one nobody reads.
     with open(OUT, 'w', encoding='utf-8', newline='\n') as fh:
-        for line in lines:
+        for line in sorted(set(lines)):
             fh.write(line + '\n')
     os.makedirs(os.path.dirname(LOG), exist_ok=True)
     with open(LOG, 'w', encoding='utf-8', newline='\n') as fh:
