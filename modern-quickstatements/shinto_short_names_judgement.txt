@@ -1,4 +1,17 @@
 # Stage 2 residue — Emma's judgement calls. Never emitted.
 
+Q1051960	ja=彦火火出見尊	en=Hoori	carries P1035 but the ja label ends with none of its forms
+Q10731395	ja=火闌降命	en=Hosuseri	carries P1035 but the ja label ends with none of its forms
+Q11380566	ja=伊豆山権現	en=Izusan Gongen	carries P1035 but the ja label ends with none of its forms
+Q11572729	ja=玉祖命	en=Tamanooya no Mikoto	carries P1035 but the ja label ends with none of its forms
+Q116026335	ja=ハヤアキツヒコ	en=Hayaakitsuhiko	carries P1035 but the ja label ends with none of its forms
+Q11666654	ja=飯縄権現	en=Izuna Gongen	carries P1035 but the ja label ends with none of its forms
+Q135431411	ja=駒形大神	en=Komagata Ōkami	carries P1035 but the ja label ends with none of its forms
+Q138340350	ja=蛇王権現	en=Jaō Gongen	carries P1035 but the ja label ends with none of its forms
+Q2280323	ja=保食神	en=Ukemochi	carries P1035 but the ja label ends with none of its forms
+Q261637	ja=八幡神	en=Hachiman	carries P1035 but the ja label ends with none of its forms
+Q3028663	ja=年神	en=Toshigami	carries P1035 but the ja label ends with none of its forms
+Q3137449	ja=水神	en=Suijin	carries P1035 but the ja label ends with none of its forms
+Q3275901	ja=神皇産霊尊	en=Kamimusubi	carries P1035 but the ja label ends with none of its forms
 Q682306	ja=伊奘冉尊	en=Izanami	carries P1035 but the ja label ends with none of its forms
 Q719665	ja=稲荷神	en=Inari	carries P1035 but the ja label ends with none of its forms
