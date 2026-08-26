@@ -161,18 +161,22 @@ jobs:
       # The same P361 defect as list_membership_removals.txt, in the 816 items that file's
       # ronsha-based selection never reached. Self-healing: it re-checks what is already
       # staged there each build, so it shrinks to nothing as the drip delivers.
+      # Script 1 of the membership pair: the LIST item is the source of truth, so for every
+      # item it names as a part, emit one clean `part of` with the ordinal, follows/followed-by
+      # and both references. ADD-only and diffed against live state, so it SHRINKS as it lands.
+      # That shrinking is the whole design and it only works if this runs — it was registered in
+      # ATOMIC_FILES but in no workflow, so list_membership_rebuild.txt sat frozen from
+      # 2026-07-10 while being staged for delivery.
+      - name: Rebuild list membership from the list items
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_list_membership_rebuild.py
+
       - name: Generate orphan membership removals
         working-directory: modern-quickstatements
         continue-on-error: true
         run: python generate_orphan_membership_removals.py
 
-      # P958 sections read off the Kokugakuin entry pages for the items no ranking can reach.
-      # The pages are committed under kokugakuin_pages/, so this re-parses rather than
-      # re-fetching and costs the museum site nothing on a rebuild.
-      - name: Read P958 sections off the Kokugakuin pages
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: python generate_p958_from_kokugakuin.py
 
       - name: Generate 天神社 English labels from their readings
         working-directory: modern-quickstatements

@@ -2,19 +2,10 @@
 
 Conventions in `CLAUDE.md`. Delete items when done (history → `DEVLOG.md`).
 
-- **Seven batches built and waiting on one date**
-
-  BLOCKED-ON-EXTERNAL, single blocker: `wikidata_editing_lockout.state`, **2026-09-18**. Each
-  regenerates on every CI build and delivers through the normal drip when it lifts. No work left on
-  any of them.
-
-  `orphan_membership_removals.txt` 829 · `p958_by_entry.txt` 109 · `multi_ordinal_removals.txt` 63 ·
-  `tenjinsha_en_labels.txt` 47 · `lost_shrine_creates.txt` 44 · `p958_from_kokugakuin.txt` 40 ·
-  `p958_corrections.txt` 7
-
-  `_site/membership-removals.html` renders the largest of them for review. It is built and wired into
-  `generate-pages.yml`, which only fires from `cleanup-loop`, so it publishes on the next scheduled
-  loop — not something this session triggers.
+Finished work does not live here, even when it has not delivered yet. Emma, 2026-08-25, on the
+lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in the queue."* Batches
+that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
+from `ATOMIC_FILES`; they are not queue items.
 
 - **Pinned tail (keep last)**
 
