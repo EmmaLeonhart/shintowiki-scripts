@@ -10796,3 +10796,28 @@ decision, which is Emma's, and it is the exact shape of thing she stopped a blin
 Extends the canonical rule usefully: when a group has two real titles, **the merged item's English
 label names the canonical** — same authority as the redirect itself. It settles the title question; it
 does not settle what to do with two real articles.
+
+## 2026-08-27 — the redirect-over-content path made a harmless heuristic destructive
+
+Pre-flighting `dedupe_duplicate_qids.py` before its first-ever `--apply` run caught a defect I
+introduced yesterday. The plan was **115 moves, not the ~31 reported**: 70 on the Wikidata-redirect
+rule (≈54 already done in the repo, so ~16 new) and **45 on the old JP-script → rōmaji heuristic**.
+
+That heuristic was safe for as long as `perform_move` only performed a MediaWiki *move* — a move
+cannot clobber a live page, so it returned `skipped:dst exists as real page` and a wrong guess cost
+nothing. Yesterday's redirect-over-content path removed that protection and made the same heuristic
+destructive.
+
+What it would have done, measured against the live wiki: 健磐龍命 is **19,095 bytes** with `Genealogy`,
+`Historical records`, `Nihon Shoki` and `Fudoki of Higo Province` sections. Its heuristic destination
+`Takeiwatatsu-no-Mikoto` is **13,161 bytes** with `Mythological background`, `The creation of Aso`,
+`The legend of Kihachi` — different content, not a superset. Seven of the eight source pages sampled
+were real articles of 2.3–19 KB. `--max-edits 50` takes them in QID order, and the JP-script moves
+sort early, so the first run would have been mostly these.
+
+**Two titles sharing a QID is not evidence that one article contains the other.** Content overwrite is
+now gated on `proven`, set only when the move's reason is a resolved Wikidata redirect. Unproven moves
+return to the old behaviour: skip when the destination is live. The JP-script rule keeps working for
+its safe case, a destination that does not exist yet.
+
+7 tests pin it, including the 健磐龍命 shape directly. 72 passing.

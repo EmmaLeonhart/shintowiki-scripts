@@ -240,7 +240,8 @@ def build_move_plan(state: dict, resolved: dict | None = None) -> tuple[list[dic
     return auto_moves, ambiguous
 
 
-def perform_move(site, src: str, dst: str, run_tag: str, apply: bool) -> str:
+def perform_move(site, src: str, dst: str, run_tag: str, apply: bool,
+                 proven: bool = False) -> str:
     """Move src → dst (leave redirect). Returns: 'moved', 'skipped', or 'error:<msg>'."""
     try:
         src_page = site.pages[src]
@@ -264,6 +265,17 @@ def perform_move(site, src: str, dst: str, run_tag: str, apply: bool) -> str:
         dst_text = dst_page.text()
         if re.match(r"^\s*#redirect\b", dst_text, re.IGNORECASE):
             return "skipped:dst is a redirect (title collision)"
+        if not proven:
+            # ⛔ Content overwrite is allowed ONLY for a proven Wikidata redirect.
+            # The JP-script heuristic was safe for as long as this branch just
+            # skipped: a move cannot clobber a live page, so a wrong guess cost
+            # nothing. Adding the redirect-over-content path below turned that
+            # same heuristic into a content-destroying one -- measured 2026-08-27,
+            # its 45 pending moves include 健磐龍命 (19,095 b, with Nihon Shoki and
+            # Fudoki sections) redirecting onto a 13,161 b page that does not
+            # contain them. Two titles sharing a QID is not evidence that one
+            # article contains the other.
+            return "skipped:dst exists as real page (heuristic move, unproven)"
         # Both pages exist as real pages. A MediaWiki move REFUSES this, which
         # is why every duplicate-QID group came back "skipped:dst exists as real
         # page": the move path could only ever help when the canonical title was
@@ -361,7 +373,8 @@ def main() -> None:
         print(f"  MOVE  {repr(src)}")
         print(f"    →   {repr(dst)}")
 
-        result = perform_move(site, src, dst, args.run_tag, args.apply)
+        result = perform_move(site, src, dst, args.run_tag, args.apply,
+                              proven=reason.startswith("Wikidata redirect"))
         print(f"  → {result}")
 
         if result.startswith(("moved", "redirected", "dry")):
