@@ -151,6 +151,43 @@ every session and every work-loop tick; each item is METABOLISED — appended to
 completion), `== Notes ==` (Emma's scratch). The page is wiki-wins: always pull the live wiki
 version before editing repo-side.
 
+## ⭐ A WIKIDATA REDIRECT IS PROOF TWO PAGES ARE ONE — redirect them here too (Emma, 2026-08-26)
+
+**Her words:** *"if one redirects into another on wikidata then that's clear evidence you can just
+redirect it on the shintowiki too."*
+
+This is the canonical-selection rule for `[[Duplicate page QIDs]]`, and it **outranks the title
+heuristics** in `dedupe_duplicate_qids.py` (QID-stub-loses-to-real-name, JP-script-loses-to-rōmaji).
+Those heuristics guess from the title; this reads the answer off Wikidata.
+
+**The test.** Ask the API for the stub's own title QID and compare the id it hands back:
+
+```
+action=wbgetentities&ids=Q135194831&props=info   ->   entity id = Q135069932
+```
+
+Requested id ≠ returned id means Q135194831 is a **redirect into** Q135069932. If the returned id is
+the QID the group is filed under, the two wiki pages are two pages for one Wikidata item — redirect
+the stub to the canonical title. Do **not** pass `redirects=no`; it suppresses the resolution and the
+pair reads as two distinct live items, which is exactly backwards.
+
+**Why the titles cannot decide it.** Of the 43 groups resolvable from the repo on 2026-08-26, 29 had
+a stub filed under a QID other than the one in its own title, and 8 pairs carried visibly different
+shrine names — 大宮神社/阿治古神社, 左内神社/阿米都瀬気多知命神社, 葛見神社/久豆弥神社. Five of those
+were tagged `[[Category:Shikinai Ronsha]]`, a **disputed** identification where a redirect picks a
+side. All of them turned out to be one Wikidata item: the *Engishiki Jinmyōchō* entry item had
+already been merged into the modern shrine's item upstream. 249 QIDs checked, zero exceptions.
+
+**So the differing name is not evidence against a merge** — it is the historical Engishiki name
+sitting next to the modern shrine name. The identification was made on Wikidata; this wiki follows it.
+
+**Canonical target** = the page whose own title QID equals the group's QID; failing that, the single
+page with no QID in its title. If neither picks exactly one page, it is ambiguous — leave it.
+
+**What still needs a human:** a page whose visible content names a *different shrine* from the label
+on the merged item. `Kasano Shrine (Q135194831)` reads 清水八幡神社 while Q135069932 is 笠野神社. The
+rule still applies (Emma confirmed), but flag the discrepancy rather than burying it.
+
 ## ⛔ NEVER drop `[[Category:Git synced pages]]` when editing a `git_synced/` file
 
 That trailing category is the sync's **membership test**, not decoration. Remove it and

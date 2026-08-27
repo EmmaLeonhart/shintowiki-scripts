@@ -1,24 +1,3 @@
-{{Infobox religious building
-| name = Hyōzu Shrine (Q135270268)
-| native_name = 兵主神社
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Hyōzu Shrine (Q135270268)
-| coordinates = {{coord|35.586183|134.81098}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-| website = {{Official website|http://www.hyogo-jinjacho.com/data/6322009.html}}
-}}
-
-{{nihongo|'''Hyōzu Shrine'''|兵主神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
-
-[[Category:Wikidata generated shikinaisha pages|Hyōzu Shrine (Q135270268)]][[Category:Shikinaisha|Hyōzu Shrine (Q135270268)]][[Category:Shikinai Shōsha]]
-
-{{wikidata link|Q135215048|grok=none|check_date=2026-05-29}}
-[[Category:Shikinai Ronsha]]
-[[Category:Shikinaisha in Tajima Province]]
+#REDIRECT [[Hyōzu Shrine (Q135215048)]]
 
 [[Category:Git synced pages]]

@@ -10658,3 +10658,35 @@ carried this page several times today.
 
 The "mirror everything or just §B?" question I had queued is moot and was deleted rather than left
 open: it is a section of a page Emma writes in, so it mirrors nothing.
+
+## 2026-08-26 — Duplicate page QIDs: 53 redirects, and the rule that made them safe
+
+`[[Duplicate page QIDs]]` listed 177 groups sharing a Wikidata QID, 356 pages. Only 34 groups had
+every page in `git_synced/`; 51 had one side; 92 had neither, including all 62 Template-namespace
+pages.
+
+The title evidence argued *against* redirecting. 29 of the 43 repo-resolvable stubs were filed under
+a QID other than the one in their own title, and 8 pairs carried different shrine names, 5 of them
+tagged `[[Category:Shikinai Ronsha]]` — a disputed identification, where a redirect endorses one
+side. A heuristic pass over titles would have merged those blind.
+
+Resolving the QIDs against the Wikidata API settled it: for 88 groups the stub's title QID is a
+REDIRECT into the group's QID — the Engishiki Jinmyōchō item was already merged into the modern
+shrine item upstream. 249 QIDs checked, zero exceptions. Emma's ruling on the finding: *"if one
+redirects into another on wikidata then that's clear evidence you can just redirect it on the
+shintowiki too."* Recorded in `CLAUDE.md`; it outranks `dedupe_duplicate_qids.py`'s title heuristics.
+
+One trap worth keeping: `wbgetentities` with `redirects=no` reports the pair as two distinct live
+items. That is the parameter suppressing the resolution, not a real answer — an intermediate check
+here read it that way and got the opposite conclusion.
+
+- 42 pages redirected on the first pass (`ef7f4366`), all with an unambiguous non-stub target.
+- 11 more this pass, extending the rule to groups where BOTH titles carry a QID: canonical is the
+  page whose own title QID equals the group QID. Includes `Kasano Shrine (Q135194831)`, held back
+  from the first pass because its text names 清水八幡神社 while the merged item is 笠野神社 — Emma's
+  rule covers it, and the text discrepancy is flagged rather than buried.
+
+Left alone: 2 three-page groups with two non-stub candidates each (Q135039533 Kaneno/Kinshin,
+Q18235752 Mononobe) — the rule does not pick one. 31 pages qualify under the rule but their file is
+not in `git_synced/`, so they need the bot rather than the repo. The 21 `Template:X` + `Template:X/doc`
+pairs are not duplicates at all — the doc subpage inherits its parent's `{{wikidata link}}`.
