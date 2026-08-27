@@ -86,10 +86,12 @@ ARTICLE_PROSE_BYTES = 200
 
 REASON_WD_REDIRECT = "Wikidata redirect → same item"
 REASON_PROPERTY_DUMP = "property dump → article (same QID)"
+REASON_WD_ALIAS = "Wikidata alias → label title (same item)"
 # Reasons allowed to overwrite a live page's content with a redirect. A Wikidata
 # redirect proves one entity; a property dump has no content to lose. The
 # JP-script heuristic is deliberately absent — see perform_move.
-PROVEN_REASONS = frozenset({REASON_WD_REDIRECT, REASON_PROPERTY_DUMP})
+PROVEN_REASONS = frozenset({REASON_WD_REDIRECT, REASON_PROPERTY_DUMP,
+                            REASON_WD_ALIAS})
 
 # Prose length only means something for ARTICLES. A template or a category has
 # little prose by nature, so the dump test classifies almost any of them as a dump
@@ -164,8 +166,41 @@ def resolve_qid_redirects(qids, user_agent: str) -> dict:
     return out
 
 
+def fetch_labels(qids, user_agent: str) -> dict:
+    """QID -> (english label, set of english aliases). Wikidata's own naming.
+
+    Used only where it can be decisive: a group whose titles are variant
+    romanisations of one name. See pick_canonical for why that is narrow.
+    """
+    out: dict = {}
+    ids = sorted({q for q in qids if q})
+    for i in range(0, len(ids), WD_BATCH):
+        batch = ids[i:i + WD_BATCH]
+        url = WD_API + "?" + urllib.parse.urlencode({
+            "action": "wbgetentities", "ids": "|".join(batch),
+            "format": "json", "props": "labels|aliases", "languages": "en",
+        })
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": user_agent})
+            with urllib.request.urlopen(req, timeout=60) as fh:
+                data = json.load(fh)
+        except Exception as e:
+            print(f"  Wikidata label fetch failed for batch {i // WD_BATCH}: {e}")
+            time.sleep(1.0)
+            continue
+        for key, ent in (data.get("entities") or {}).items():
+            if "missing" in ent:
+                continue
+            label = (ent.get("labels") or {}).get("en", {}).get("value")
+            aliases = {a["value"] for a in (ent.get("aliases") or {}).get("en", [])}
+            out[key] = (label, aliases)
+        time.sleep(0.25)
+    return out
+
+
 def pick_canonical(qid: str, pages: list[str],
-                   prose_lengths: dict | None = None) -> str | None:
+                   prose_lengths: dict | None = None,
+                   labels: dict | None = None) -> str | None:
     """The sole real-named page, else the page that OWNS the group's QID.
 
     ⚠ ORDER IS LOAD-BEARING, and it used to be the other way round. A title like
@@ -196,6 +231,25 @@ def pick_canonical(qid: str, pages: list[str],
     # opposite a genuine article turned a mechanical merge into a decision handed
     # to a human — 12 of the 25 such groups on 2026-08-27. An unmeasured page
     # counts as an article: unknown must never demote something real.
+    # Wikidata's own naming, applied STRICTLY. Exactly one page must equal the
+    # item's English label and EVERY other real-named page must be a registered
+    # English alias of the same item — i.e. Wikidata already says these are other
+    # names for one thing. Anything less gets no verdict.
+    #
+    # The strictness is the point, tested against the groups that must NOT resolve:
+    # `Benzaiten` / `Benzaiten shrines` declines because "Benzaiten shrines" is not
+    # an alias (it is a different subject sharing a QID — a wrong-link problem, not
+    # a merge), and so do Hime Shrine/Himegami, Amatsu Shrine/(Itoigawa), the two
+    # Achi Shrines and Sōja shrine/Template. Only variant romanisations of one
+    # name resolve — Shioe/Shionoe, Shinmei-sha variants, Kaneno/Kinshin.
+    if labels and len(no_stub) > 1 and qid in labels:
+        label, aliases = labels[qid]
+        if label:
+            named = [p for p in no_stub if p == label]
+            others = [p for p in no_stub if p != label]
+            if len(named) == 1 and others and all(p in aliases for p in others):
+                return named[0]
+
     # ⚠ Only a TIE-BREAKER among several real names. Applying it to a lone real
     # name is a regression I measured before shipping: a group of `X (Qnnn)` plus a
     # dump-shaped `X` was resolving fine, and disqualifying `X` for being a dump
@@ -226,7 +280,8 @@ def title_qid(title: str) -> str | None:
 
 
 def build_move_plan(state: dict, resolved: dict | None = None,
-                    prose_lengths: dict | None = None) -> tuple[list[dict], list[dict]]:
+                    prose_lengths: dict | None = None,
+                    labels: dict | None = None) -> tuple[list[dict], list[dict]]:
     """Return (auto_moves, ambiguous_groups) from the duplicate-QID state.
 
     PRIMARY RULE (Emma, 2026-08-26): *"if one redirects into another on wikidata
@@ -248,6 +303,7 @@ def build_move_plan(state: dict, resolved: dict | None = None,
     """
     resolved = resolved or {}
     prose_lengths = prose_lengths or {}
+    labels = labels or {}
     qid_to_pages: dict[str, list[str]] = defaultdict(list)
     for title, qid in state.items():
         qid_to_pages[qid].append(title)
@@ -267,7 +323,7 @@ def build_move_plan(state: dict, resolved: dict | None = None,
             continue
 
         # ── PRIMARY: proven Wikidata redirect ──────────────────────
-        canonical = pick_canonical(qid, pages, prose_lengths)
+        canonical = pick_canonical(qid, pages, prose_lengths, labels)
         if canonical is not None:
             proven = []
             for p in pages:
@@ -275,6 +331,9 @@ def build_move_plan(state: dict, resolved: dict | None = None,
                     continue
                 if resolved.get(title_qid(p)) == qid:
                     proven.append((p, REASON_WD_REDIRECT))
+                elif (not title_qid(p) and qid in labels
+                      and p in (labels[qid][1] or set())):
+                    proven.append((p, REASON_WD_ALIAS))
                 elif (not title_qid(p) and p in prose_lengths
                       and prose_lengths[p] < ARTICLE_PROSE_BYTES):
                     # Same QID, and nothing to lose: the page is a generated
@@ -452,7 +511,11 @@ def main() -> None:
         dumps = sum(1 for n in prose_lengths.values() if n < ARTICLE_PROSE_BYTES)
         print(f"  {dumps} of {len(prose_lengths)} are property dumps")
 
-    auto_moves, ambiguous = build_move_plan(state, resolved, prose_lengths)
+    # Wikidata's own naming, for groups whose titles are variant romanisations.
+    print(f"Fetching English labels/aliases for {len(dup_qids)} group QIDs...")
+    labels = fetch_labels(dup_qids, USER_AGENT)
+
+    auto_moves, ambiguous = build_move_plan(state, resolved, prose_lengths, labels)
     pending = [m for m in auto_moves if m["from"] not in done]
 
     print(f"Move plan: {len(auto_moves)} total auto-picks, "

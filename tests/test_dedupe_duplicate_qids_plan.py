@@ -325,3 +325,70 @@ def test_a_lone_real_name_stays_canonical_even_when_it_is_a_dump():
     assert ambiguous == []
     assert len(moves) == 1
     assert moves[0]["to"] == "Some Shrine"
+
+
+# ── Wikidata's own naming, applied strictly ───────────────────────────────
+#
+# Exactly one page must EQUAL the item's English label and every other
+# real-named page must be a registered English alias. Wikidata then already says
+# these are other names for one thing. The strictness is the whole point.
+
+def test_variant_romanisations_resolve_via_label_and_alias():
+    state = {"Shioe Shrine": "Q135187121", "Shionoe Shrine": "Q135187121"}
+    labels = {"Q135187121": ("Shioe Shrine", {"Shionoe Shrine"})}
+    moves, ambiguous = build_move_plan(state, {"Q135187121": "Q135187121"},
+                                       None, labels)
+    assert ambiguous == []
+    assert len(moves) == 1
+    assert moves[0]["from"] == "Shionoe Shrine"
+    assert moves[0]["to"] == "Shioe Shrine"
+    assert moves[0]["reason"] == "Wikidata alias → label title (same item)"
+
+
+def test_a_different_subject_sharing_a_qid_is_not_an_alias_and_must_not_resolve():
+    """`Benzaiten shrines` is a class of shrines, not another name for the deity.
+
+    This is the case the rule exists to decline. Q818468's only English alias is
+    "Benten"; a looser label-wins rule would have merged a 588-byte article into
+    an 11,419-byte one on the strength of a shared QID that is itself the defect.
+    """
+    state = {"Benzaiten": "Q818468", "Benzaiten shrines": "Q818468"}
+    labels = {"Q818468": ("Benzaiten", {"Benten"})}
+    moves, ambiguous = build_move_plan(state, {"Q818468": "Q818468"}, None, labels)
+    assert moves == []
+    assert ambiguous
+
+
+def test_a_label_with_no_aliases_gives_no_verdict():
+    """Amatsu Shrine / Amatsu Shrine (Itoigawa): label matches one, no aliases."""
+    state = {"Amatsu Shrine": "Q172253", "Amatsu Shrine (Itoigawa)": "Q172253"}
+    labels = {"Q172253": ("Amatsu Shrine", set())}
+    moves, ambiguous = build_move_plan(state, {"Q172253": "Q172253"}, None, labels)
+    assert moves == []
+    assert ambiguous
+
+
+def test_no_page_matching_the_label_gives_no_verdict():
+    """Both Achi titles are disambiguated; neither equals the bare label."""
+    state = {"Achi Shrine (Achi Village)": "Q11657447",
+             "Achi Shrine (Achi)": "Q11657447"}
+    labels = {"Q11657447": ("Achi Shrine", {"Achino shrine (Ronsha 1)"})}
+    moves, ambiguous = build_move_plan(state, {"Q11657447": "Q11657447"}, None, labels)
+    assert moves == []
+    assert ambiguous
+
+
+def test_the_label_rule_outranks_the_prose_tie_break():
+    """Two dumps with a label/alias pair must resolve, not fall to `no articles`.
+
+    Ordering bug caught by measuring: the prose branch returned None for two dumps
+    before the label rule was reached, so Shioe/Shionoe stayed ambiguous and the
+    whole rule produced zero moves.
+    """
+    state = {"Shioe Shrine": "Q135187121", "Shionoe Shrine": "Q135187121"}
+    prose = {"Shioe Shrine": 32, "Shionoe Shrine": 32}   # both property dumps
+    labels = {"Q135187121": ("Shioe Shrine", {"Shionoe Shrine"})}
+    moves, ambiguous = build_move_plan(state, {"Q135187121": "Q135187121"},
+                                       prose, labels)
+    assert ambiguous == []
+    assert [m["from"] for m in moves] == ["Shionoe Shrine"]

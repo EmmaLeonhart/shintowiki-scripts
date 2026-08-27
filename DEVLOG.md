@@ -10971,3 +10971,45 @@ Plan against the live state, 131 → **142 auto-moves**, 46 → **36 ambiguous**
 What is left is 21 template/doc pairs and 15 genuine two-article groups.
 
 96 passing, 9 new — including the lone-dump regression and both guards.
+
+## 2026-08-27 — the five "no real article" groups, and Wikidata's own naming as a rule
+
+Characterised the last unexamined bucket. My "no real article on either side" label was accurate but
+under-described: several are 5 KB pages that are *entirely* infobox plus property sections, so the
+prose measure correctly reports 32-80 bytes.
+
+What they actually are:
+
+- **Q135187121** `Shioe Shrine` / `Shionoe Shrine` — 鹽江神社, identical coordinates. Two romanisations.
+- **Q135187145** `Shinmei Shrine (Ishitsukuri Shrine)` / `Shinmei-sha (Ishitsukurino Shrine)` — 神明社
+  (石作神社), identical coordinates, differing only in a space and romanisation style.
+- **Q135070063** `Dainamabuheishushin Shrine` / `Ōube Hyōzu Shrine (Okuno)` — 大生部兵主神社, the second
+  carrying the （奥野） disambiguator.
+- **Q6852880** two `Category:Asia*` pages — an **enwiki/jawiki category pair** (`Emmabot enwiki
+  categories with wikidata` vs `… jawiki …`), both empty shells. This belongs to the
+  category-translation machinery, not to dedupe; noted rather than touched.
+- **Q135039533** Kaneno/Kinshin — already resolved repo-side on 08-26.
+
+**Every one of them is settled by Wikidata's own naming**: the item's English label names the
+canonical and the loser is a registered English alias. That is now a planner rule, applied STRICTLY —
+exactly one page must EQUAL the label and every other real-named page must be a registered alias.
+
+The strictness was designed against the cases that must NOT resolve, and tested on them:
+`Benzaiten` / `Benzaiten shrines` declines because "Benzaiten shrines" is not an alias (it is a
+different subject sharing a QID — a wrong-link problem, not a merge); so do `Hime Shrine`/`Himegami`,
+`Amatsu Shrine`/`(Itoigawa)`, the two Achi Shrines, and `Sōja shrine`/`Template:Sōja shrines`.
+
+**Ordering bug caught by measuring, not by reading:** placed after the prose tie-break, the rule
+produced ZERO moves — the prose branch returns None for two dumps before the label rule is reached.
+Moved ahead of it, since label+alias is the stricter and stronger signal.
+
+Plan: 142 → **147 auto-moves**, 36 → **32 ambiguous**. The 4 alias moves are Shionoe→Shioe, the two
+Shinmei variants, Kinshin→Kaneno (agreeing with what I did by hand on 08-26), and Teranomikoto→
+Kamisawa — which had been sitting in the "genuinely two articles" pile and is in fact one shrine.
+
+Also redirected `Dainamabuheishushin Shrine` → `Ōube Hyōzu Shrine (Okuno)` by hand: it is an exact
+registered alias, and the planner declines only because the label spells it `Hyoju` where the page
+spells it `Hyōzu`. Stating that explicitly because a hand edit the planner would not make is exactly
+the kind of thing that should not pass silently.
+
+101 passing, 5 new.
