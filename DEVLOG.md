@@ -11080,3 +11080,25 @@ here is signal until proven otherwise. Surfaced to her as a question with the pr
 first, rather than asked as "which title wins", which would have been wrong for all four.
 
 Nothing edited. 104 passing.
+
+## 2026-08-27 — removing the four wrong {{wikidata link}} calls (Emma's call)
+
+Asked with the premise established rather than as a merge question, and Emma chose removal for all
+four. Since every one of these pages is wiki-only, this follows the repo's standing rule — never
+postpone a wiki edit for lack of local credentials, wire a script into CI instead.
+
+`shinto_miraheze/remove_wrong_wikidata_links.py` + a dispatch-only workflow. What matters in it:
+
+- **It records the expected WRONG QID per page and refuses to act if the link no longer carries it.**
+  So a re-run cannot undo someone's later repoint, and the script is idempotent. That mattered more
+  than the removal itself — a one-off that quietly re-fires is how a fix becomes a defect.
+- **Only the `{{wikidata link}}` call is removed.** These pages are correct; the link is the defect.
+  Tested that infoboxes, reflists, categories and body text all survive.
+- Gated on the miraheze lockout **in code**, not only in the workflow, so a manual run is covered —
+  matching how the Wikidata lockout is enforced rather than how the miraheze one historically was.
+
+The workflow carries the lockout guard too, and `test_miraheze_writers_are_lockout_gated.py` — added
+earlier today — passed on it without being touched. That is the first time this session a guard-rail
+caught its intended case on a genuinely new file rather than a retrofit.
+
+7 new tests, 111 passing.

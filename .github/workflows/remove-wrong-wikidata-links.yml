@@ -1,0 +1,83 @@
+name: Remove Wrong Wikidata Links
+
+# One-shot. Removes {{wikidata link}} from four pages that carry a QID which is not
+# their subject — two navboxes wearing a concept's QID, two list articles wearing a
+# deity's. Emma's decision, 2026-08-27, taken after searching Wikidata established
+# there is nothing correct to repoint them at.
+#
+# DO NOT add a schedule. The script is idempotent (it only acts when the link still
+# carries the expected wrong QID), so a stray re-run is harmless, but there is
+# nothing for it to do after the first successful pass.
+#
+# Trigger manually: gh workflow run remove-wrong-wikidata-links.yml
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}
+  WIKIDATA_EMAIL: ${{ secrets.WIKIDATA_EMAIL }}
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  remove:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      # The lockout exists to stop hitting the wiki while its anti-DDoS 403 is up.
+      # The script also checks in code, so a manual run is covered; this keeps the
+      # workflow consistent with every other miraheze writer, which
+      # tests/test_miraheze_writers_are_lockout_gated.py enforces.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked - skipping this run."
+          fi
+
+      - name: Build run tag
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Remove wrong {{wikidata link}} calls"
+        if: steps.lockout.outputs.locked != 'true'
+        run: |
+          chmod +x shinto_miraheze/run_step.sh
+          shinto_miraheze/run_step.sh "Remove: remove_wrong_wikidata_links" \
+            python3 shinto_miraheze/remove_wrong_wikidata_links.py \
+              --apply \
+              --run-tag "${RUN_TAG}"
