@@ -118,3 +118,42 @@ def test_a_source_that_is_already_a_redirect_is_left_alone():
     result = perform_move(site, "SRC", "DST", "tag", apply=True, proven=True)
     assert result == "skipped:src already redirect"
     assert site.pages["SRC"].saved is None
+
+
+# ── a conditional skip must not be buried in the done-state ───────────────
+#
+# main() records skips into dedupe_duplicate_qids.state and filters `pending`
+# against it, so anything recorded never runs again. That is right for a finished
+# page and wrong for one merely awaiting evidence — it silently retired the 44
+# JP-script pages, which skip for lack of proof, not because they are resolved.
+
+from shinto_miraheze.dedupe_duplicate_qids import is_terminal_skip  # noqa: E402
+
+
+def test_a_finished_source_is_terminal():
+    assert is_terminal_skip("skipped:src already redirect")
+    assert is_terminal_skip("skipped:src missing")
+
+
+def test_an_unproven_heuristic_skip_is_conditional():
+    """It comes back the moment a Wikidata redirect or a human merge arrives."""
+    assert not is_terminal_skip(
+        "skipped:dst exists as real page (heuristic move, unproven)")
+
+
+def test_a_destination_that_is_currently_a_redirect_is_conditional():
+    assert not is_terminal_skip("skipped:dst is a redirect (title collision)")
+
+
+def test_the_real_perform_move_outcome_for_an_unproven_move_is_conditional():
+    """Wire the two halves together rather than trusting the string by eye."""
+    site = _site()
+    result = perform_move(site, "SRC", "DST", "tag", apply=True, proven=False)
+    assert result.startswith("skipped:")
+    assert not is_terminal_skip(result)
+
+
+def test_the_real_outcome_for_an_already_redirected_source_is_terminal():
+    site = _site(src_text="#REDIRECT [[Somewhere]]")
+    result = perform_move(site, "SRC", "DST", "tag", apply=True, proven=True)
+    assert is_terminal_skip(result)

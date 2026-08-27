@@ -93,6 +93,27 @@ REASON_WD_ALIAS = "Wikidata alias → label title (same item)"
 PROVEN_REASONS = frozenset({REASON_WD_REDIRECT, REASON_PROPERTY_DUMP,
                             REASON_WD_ALIAS})
 
+# Skip outcomes that are FINAL: the work is genuinely finished or the source is
+# gone, so recording them in the done-state is correct and stops a pointless
+# re-check every run.
+TERMINAL_SKIPS = ("skipped:src already redirect", "skipped:src missing")
+
+
+def is_terminal_skip(result: str) -> bool:
+    """Only a terminal skip belongs in the done-state.
+
+    ⚠ Every skip used to be recorded, and `pending` filters out anything in the
+    done-state — so a page skipped for a reason that MIGHT CHANGE was buried
+    permanently. That silently retired the 44 JP-script pages, which are skipped
+    for lack of proof, not because they are resolved: the moment a Wikidata
+    redirect appears or a human merges the content, they should come back.
+    Likewise a destination that is currently a redirect may stop being one.
+
+    Re-checking a conditional skip costs two API reads per run and no edits — a
+    skip never increments the move counter, so it cannot consume the edit budget.
+    """
+    return result.startswith(TERMINAL_SKIPS)
+
 # Prose length only means something for ARTICLES. A template or a category has
 # little prose by nature, so the dump test classifies almost any of them as a dump
 # and the tie-break then picks whichever happens to have more words. Measured
@@ -574,7 +595,10 @@ def main() -> None:
             time.sleep(THROTTLE)
         elif result.startswith("skipped"):
             skipped += 1
-            done[src] = f"skipped:{result}"
+            if is_terminal_skip(result):
+                done[src] = f"skipped:{result}"
+            else:
+                print("  (conditional — not recorded; will be re-checked next run)")
             print()
         else:
             errors += 1

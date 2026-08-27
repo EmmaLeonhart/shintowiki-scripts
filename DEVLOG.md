@@ -11102,3 +11102,29 @@ earlier today — passed on it without being touched. That is the first time thi
 caught its intended case on a genuinely new file rather than a retrofit.
 
 7 new tests, 111 passing.
+
+## 2026-08-27 — a conditional skip was being recorded as done
+
+`main()` wrote EVERY skip into the done-state (`done[src] = f"skipped:{result}"`), and `pending`
+filters out anything in the done-state. So a page skipped for a reason that might change was excluded
+permanently.
+
+That is right for a finished page and wrong for a deferred one. The 44 JP-script moves skip because
+there is no PROOF they are the same entity, not because they are resolved — the moment a Wikidata
+redirect appears or a human merges the content, they should come back. Same for a destination that
+happens to be a redirect today.
+
+Now only `skipped:src already redirect` and `skipped:src missing` are recorded. The rest are
+re-checked each run, which costs two API reads per page and no edits — a skip never increments the
+move counter, so it cannot consume the edit budget.
+
+**It never actually fired.** The done-state file does not exist and has zero entries, because
+`dedupe_duplicate_qids.py` has never been run with `--apply`. So this is a latent defect fixed before
+its first run, not damage repaired. Saying so plainly rather than letting the fix imply a rescue.
+
+Also corrected a claim from my own last status report: I flagged `cleanup-loop` running 65+ minutes as
+"worth watching". It is normal — yesterday's `generate-quickstatements` job took **62 minutes** and
+succeeded, and the timeout is 150. That was absence-of-information reported as a defect, which this
+repo's CLAUDE.md warns about by name, and the check took one command.
+
+5 new tests, 116 passing.
