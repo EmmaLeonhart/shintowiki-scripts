@@ -10690,3 +10690,34 @@ Left alone: 2 three-page groups with two non-stub candidates each (Q135039533 Ka
 Q18235752 Mononobe) — the rule does not pick one. 31 pages qualify under the rule but their file is
 not in `git_synced/`, so they need the bot rather than the repo. The 21 `Template:X` + `Template:X/doc`
 pairs are not duplicates at all — the doc subpage inherits its parent's `{{wikidata link}}`.
+
+## 2026-08-26 — dedupe_duplicate_qids.py decides from Wikidata, not from title shape
+
+Follow-on from the redirect passes earlier today. The rule was recorded in `CLAUDE.md` but the script
+still picked canonicals by title shape, so the bot would have kept getting it wrong on its own.
+
+- `resolve_qid_redirects()` — batched `wbgetentities&props=info`. The response is keyed by the id you
+  ASKED for while the entity's `id` is the id you LANDED on, so requested != returned is a redirect.
+  Paced at 0.25s per batch to satisfy `test_wikidata_pacing`. A failed batch is dropped, not guessed:
+  an unresolved QID fails the redirect test, which is the safe direction.
+- `build_move_plan(state, resolved)` — the redirect is now the PRIMARY rule; the title heuristics
+  survive only as a fallback for titles carrying no QID at all (JP-script vs rōmaji), where there is
+  nothing to resolve. `pick_canonical()` takes the page whose own title QID equals the group's, else
+  the sole page with no QID stub, else None — ambiguous groups are reported, never guessed.
+- **A stub with no proven redirect is no longer auto-moved.** That is the behaviour change with teeth:
+  it is exactly the shape the old rule moved on sight.
+
+**`perform_move` could never have resolved any of these.** It returns `skipped:dst exists as real page`
+whenever the destination is a live page — which is every duplicate group, by definition. The move path
+only ever helped when the canonical title was still free. Added a redirect-over-content path for that
+case, preserving `[[Category:Git synced pages]]` when the source had it, since dropping it makes the
+next sync untrack the page.
+
+Also guarded the module-level `sys.stdout` UTF-8 rewrap on the current encoding. Unguarded it made the
+module unimportable under pytest: the wrapper outlived pytest's captured file and teardown died on a
+closed handle. Anything already UTF-8 needs no help; a cp1252 Windows console still gets wrapped.
+
+11 new tests in `tests/test_dedupe_duplicate_qids_plan.py`, pure and offline. Full suite 58 passed,
+locally — the repo's workflows have not run since 22:14Z, so nothing here is CI-verified.
+
+Not run against the live wiki: `--apply` needs bot credentials, which this session does not have.
