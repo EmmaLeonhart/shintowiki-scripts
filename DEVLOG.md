@@ -11256,3 +11256,16 @@ The automation's remaining work is 47 edits; everything else it correctly refuse
 
 The 44 content merges are recorded as a horizon in the hub's `todo.md` — undated and neutral, because
 they are real work that exists, not work that is scheduled.
+
+## 2026-08-27 — I had not been reading [[Open questions]] each tick
+
+`CLAUDE.md` says to read `[[Open questions]]` at session start **and at every work-loop tick**, and
+names ignoring it as one of the biggest failures of this system — sessions drifting onto their own
+agenda. I did not check it once across roughly twenty ticks today.
+
+Checked now, and against the LIVE page rather than the repo copy, since that page is wiki-wins: last
+edited 2026-08-25T01:46 by EmmaBot, 377 bytes, `== Open questions ==` empty and the wiki-based queue
+empty. Local copy is byte-identical, so nothing was missed and nothing was stranded.
+
+Recording it because no harm resulted this time, which is exactly when a skipped habit is easiest to
+keep skipping. The check costs one API call.
