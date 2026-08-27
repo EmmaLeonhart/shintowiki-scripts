@@ -1,0 +1,105 @@
+{{Infobox 
+| bodyclass   = vcard
+| child       = {{{child|}}}
+| aboveclass  = n
+| abovestyle  = font-size:125%;background-color:gold; color:inherit;
+| above       = {{br separated entries
+ | 1 = {{#if:{{{honorific prefix|}}}{{{honorific_prefix|}}}{{{honorific-prefix|}}}|<div class="honorific-prefix" style="display:inline;font-size: 77%; font-weight: normal;">{{if empty|{{{honorific prefix|}}}|{{{honorific_prefix|}}}|{{{honorific-prefix}}}}}</div>}}
+ | 2 = <includeonly><div style="display:inline;" class="fn">{{if empty|{{{name|}}}|{{PAGENAMEBASE}}}}</div></includeonly>
+ | 3 = {{#if:{{{honorific suffix|}}}{{{honorific_suffix|}}}{{{honorific-suffix|}}}|<div class="honorific-prefix" style="display:inline;font-size: 77%; font-weight: normal;">{{if empty|{{{honorific suffix|}}}|{{{honorific_suffix|}}}|{{{honorific-suffix}}}}}</div>}}
+ }}
+
+| image       = {{#invoke:InfoboxImage|InfoboxImage |image={{{image|}}} |size={{if empty|{{{image_size|}}}|{{{imagesize|}}}}} |sizedefault=frameless |upright=1 |alt={{{alt|}}} |suppressplaceholder=yes}}
+| caption     = {{{caption|}}}
+
+| headerstyle = background-color:gold; color:inherit;
+
+| header1     = {{{titles|}}}
+
+| label2      = Born
+| data2       = {{br separated entries|{{{birth_name|}}} |{{{birth_date|}}} |{{{birth_place|}}} }}
+
+| label3      = Hometown
+| data3       = {{{home_town|}}}
+
+| label4      = Residence
+| data4       = {{{residence|}}}
+
+| label5      = Died
+| data5       = {{br separated entries |{{{death_date|}}} |{{{death_place|}}} }}
+
+| label6      = Cause&nbsp;of death
+| data6       = {{{death_cause|}}}
+
+| label7      = Resting place
+| data7       = {{br separated entries |{{if empty|{{{resting_place|}}}|{{{resting place|}}}}} |{{if empty|{{{resting_place_coordinates|}}}|{{{resting place coordinates|}}}}} }}
+
+| label8      = {{#if:{{{honoured_in|}}}|Honoured|{{#if:{{{honored_in|}}}|Honored|Venerated}}}}&nbsp;in
+| data8       = {{if empty|{{{honoured_in|}}}|{{{honored_in|}}}|{{{venerated_in|}}}}}
+
+| label9      = [[Beatification|Beatified]]
+| data9       = {{#if:{{{beatified_date|}}}|{{{beatified_date}}}{{#if:{{{beatified_place|}}}|, {{{beatified_place}}}}} {{#if:{{{beatified_by|}}}| by {{{beatified_by}}}}}}}
+
+| label10      = [[Canonization|Canonized]]
+| data10       = {{#if:{{{canonized_date|}}}|{{{canonized_date}}}{{#if:{{{canonized_place|}}}|, {{{canonized_place}}}}} {{#if:{{{canonized_by|}}}| by {{{canonized_by}}}}}}}
+
+| label11     = {{nowrap|Major [[shrine]]}}
+| data11      = {{{major_shrine|}}}
+
+| label12     = [[Calendar of saints|Feast]]
+| data12      = {{{feast_day|}}}
+
+| label13     = [[Saint symbolism|Attributes]]
+| data13      = {{{attributes|}}}
+
+| label14     = [[Patron saint|Patronage]]
+| data14      = {{{patronage|}}}
+
+| label15     = Controversy
+| data15      = {{{issues|}}}
+
+| label16     = {{longitem|[[Cult (religious practice)#In Christianity|Catholic cult]] suppressed}}
+| data16      = {{{suppressed_date|}}}{{#if:{{{suppressed_by|}}}|&nbsp;by {{{suppressed_by}}}}}
+
+| label17     = Influences
+| data17      = {{{influences|}}}
+
+| label18     = Influenced
+| data18      = {{{influenced|}}}
+
+| label19     = {{longitem|Tradition or genre}}
+| data19      = {{{tradition|}}}
+
+| label20     = {{nowrap|Major works}}
+| data20      = {{{major_works|}}}
+
+| data21      = {{if empty|{{{misc|}}}|{{{module|}}}}}
+| data22      = {{if empty|{{{misc2|}}}|{{{module2|}}}}}
+| data23      = {{if empty|{{{misc3|}}}|{{{module3|}}}}}
+| data24      = {{if empty|{{{misc4|}}}|{{{module4|}}}}}
+| data25      = {{if empty|{{{misc5|}}}|{{{module5|}}}}}
+| data26      = {{if empty|{{{misc6|}}}|{{{module6|}}}}}
+}}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox saint]] with unknown parameter "_VALUE_"|ignoreblank=y| alt | attributes | beatified_by | beatified_date | beatified_place | birth_date | birth_name | birth_place | canonized_by | canonized_date | canonized_place | caption | child | death_date | death_place | death_cause | feast_day | home_town | honored_in | honorific prefix | honorific suffix | honorific_prefix | honorific_suffix | honorific-prefix | honorific-suffix | honoured_in | image | image_size | imagesize | influenced | influences | issues | major_shrine | major_works | name | patronage | residence | resting place | resting place coordinates | resting_place | resting_place_coordinates | suppressed_by | suppressed_date | titles | tradition | venerated_in | regexp1 = misc[%d]* | regexp2 = module[%d]*}}{{#invoke:Check for conflicting parameters|check
+| template = [[Template:Infobox saint]]
+| cat = {{main other|Category:Pages using infobox saint with conflicting parameters}}
+| honorific prefix; honorific_prefix; honorific-prefix 
+| honorific suffix; honorific_suffix; honorific-suffix 
+| image_size; imagesize 
+| resting_place; resting place 
+| resting_place_coordinates; resting place coordinates 
+| honoured_in; honored_in; venerated_in 
+| misc; module 
+| misc2; module2 
+| misc3; module3 
+| misc4; module4 
+| misc5; module5 
+| misc6; module6 
+}}<noinclude>
+{{Documentation}}
+[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+</noinclude>
+<noinclude>
+[[Category:Independently git synced pages]][[Category:Pages using infobox saint with unknown parameters|_VALUE_{{PAGENAME}}]]
+[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
+[[Category:Independently git synced pages]][[Category:infobox templates]]
+</noinclude>
