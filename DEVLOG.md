@@ -11226,3 +11226,33 @@ looked for "before logging in" where the help says "exit BEFORE logging in"; cor
 the real string rather than softening the help.
 
 3 new tests, 125 passing.
+
+## 2026-08-27 — the report re-rendered: 177 → 97 groups, and the /doc filter is confirmed
+
+`cleanup-loop` finished after ~5 hours and `render-duplicate-qids` rewrote the page at 17:53:27Z.
+**177 → 97 duplicate groups**, 18,829 → 10,325 bytes. Every group acted on this session is gone from
+the live page, including the four wrong-link removals and the redirect groups.
+
+**The `/doc` filter is confirmed against the state, not inferred.** Zero `/doc` entries remain in
+`duplicate_qids.state`, down from 26 — the op popped them as the template orchestrator revisited each
+page. All 21 template/doc groups have vanished from the report and from the ambiguity breakdown. The
+2 cross-namespace wrong-link groups are gone too, since their links were removed.
+
+Re-measured against the refreshed state with `--plan-only` (its first real use, on data it had never
+seen):
+
+```
+Move plan: 47 total auto-picks, 47 PROVEN, 51 ambiguous
+  moves       34  [proven] Wikidata redirect → same item
+  moves       11  [proven] property dump → article (same QID)
+  moves        2  [proven] Wikidata alias → label title (same item)
+  ambiguous   44          two real articles — a content merge, not a redirect
+  ambiguous    7          two or more real names — no single canonical
+```
+
+102 → 47 proven moves, and the drop is the good kind: most of the 88 redirect-rule moves were the
+pages already redirected from the repo, which are now redirects on the wiki and have left the state.
+The automation's remaining work is 47 edits; everything else it correctly refuses.
+
+The 44 content merges are recorded as a horizon in the hub's `todo.md` — undated and neutral, because
+they are real work that exists, not work that is scheduled.
