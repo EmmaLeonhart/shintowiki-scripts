@@ -11013,3 +11013,42 @@ spells it `Hyōzu`. Stating that explicitly because a hand edit the planner woul
 the kind of thing that should not pass silently.
 
 101 passing, 5 new.
+
+## 2026-08-27 — the 11 "human calls" are three different questions, not one
+
+Classified every group the planner refuses, against each item's `P31` and description rather than by
+looking at the titles. They are not one question, and asking Emma "which title wins" across all of
+them would have baked a false premise into most.
+
+**(a) Wrong `{{wikidata link}}`, not a merge — 4 groups.** The two pages are different subjects that
+happen to share a QID; redirecting either would destroy a distinct page.
+
+- `Q1656379` "Shinto shrine with the highest rank in a province" — the article `Ichinomiya` IS that
+  concept; `Template:Ichinomiya` is a navbox that merely carries the same link.
+- `Q1107129` "type of Shinto shrine where the kami of a region are grouped" — same shape, with
+  `Template:Sōja shrines`.
+- `Q818468` P31 = **water deity** — `Benzaiten` is the deity; `Benzaiten shrines` is a class of
+  shrines, not the deity.
+- `Q22070227` P31 = **Japanese goddess** — `Himegami` is the goddess; `Hime Shrine` is a shrine.
+
+The first two are now a planner verdict: a `Template:`/`Category:` page grouped with a **mainspace**
+page is a wrong-link. It fires only on a MIX of namespaces, so `Template:警告` beside
+`Template:Warning` stays a genuine cross-language merge — tested both ways.
+
+The other two are deliberately NOT automated. Both pages are mainspace, and the only mechanical signal
+is "the item's P31 is a deity while a page is titled like a class of shrines" — a rule inferred from
+two samples, which is how the last several defects here were born.
+
+**(b) Genuine title/merge decisions — 6 groups.** `Achi Shrine (Achi Village)`/`(Achi)`, the two
+Amasashihiko hyphenations, `Amatakekanakaya`/`Amatakekanakusano`, `Amatsu Shrine`/`(Itoigawa)`,
+`Ōube Hyōzu (Okuno)`, and `Mishima Shrine (Iruma)`/`(Minamiizu )`.
+
+Worth noting on the last: **the trailing-space typo is on Wikidata too** — Q134930713's own English
+label is `Mishima Shrine (Minamiizu )`. So it is not a wiki-side slip to redirect around; fixing it
+properly means editing the label, and **Wikidata editing is locked until 2026-09-18**.
+
+**(c) Out of scope — 1 group.** `Q6852880`, an enwiki/jawiki category pair, belongs to the
+category-translation machinery.
+
+Plan unchanged at 147 auto-moves; ambiguity now reads 21 template/doc + 2 wrong-link + 9 genuine,
+where before it lumped 11 unlike things together. 104 passing, 3 new.

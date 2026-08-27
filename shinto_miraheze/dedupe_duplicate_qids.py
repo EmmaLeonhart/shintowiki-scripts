@@ -322,6 +322,26 @@ def build_move_plan(state: dict, resolved: dict | None = None,
             ambiguous.append({"qid": qid, "pages": pages, "reason": "template/doc pair"})
             continue
 
+        # A Template: or Category: page grouped with a MAINSPACE page is a
+        # wrong-link, not a duplicate: a navbox is not the concept it navigates.
+        # Measured 2026-08-27, `Template:Ichinomiya` sits on Q1656379 ("Shinto
+        # shrine with the highest rank in a province") beside the article
+        # `Ichinomiya`, and `Template:Sōja shrines` on Q1107129 beside `Sōja
+        # shrine`. Merging either would delete a navbox into an article. The fix
+        # belongs on the template's {{wikidata link}}.
+        #
+        # Template-to-template pairs are NOT this — `Template:警告` beside
+        # `Template:Warning` is a genuine cross-language duplicate — so this fires
+        # only on a MIX of namespaced and mainspace titles.
+        namespaced = [p for p in pages if NAMESPACED_RE.match(p)]
+        if namespaced and len(namespaced) != len(pages):
+            ambiguous.append({
+                "qid": qid, "pages": pages,
+                "reason": "template/category grouped with a mainspace page — "
+                          "wrong {{wikidata link}}, not a merge",
+            })
+            continue
+
         # ── PRIMARY: proven Wikidata redirect ──────────────────────
         canonical = pick_canonical(qid, pages, prose_lengths, labels)
         if canonical is not None:

@@ -392,3 +392,34 @@ def test_the_label_rule_outranks_the_prose_tie_break():
                                        prose, labels)
     assert ambiguous == []
     assert [m["from"] for m in moves] == ["Shionoe Shrine"]
+
+
+def test_a_template_beside_a_mainspace_article_is_a_wrong_link_not_a_merge():
+    """A navbox is not the concept it navigates.
+
+    Q1656379 is "Shinto shrine with the highest rank in a province"; the article
+    `Ichinomiya` is that concept and `Template:Ichinomiya` is a navigation box that
+    merely carries the same {{wikidata link}}. Merging would delete a navbox into
+    an article. The fix belongs on the template's link.
+    """
+    state = {"Ichinomiya": "Q1656379", "Template:Ichinomiya": "Q1656379"}
+    moves, ambiguous = build_move_plan(state, {"Q1656379": "Q1656379"})
+    assert moves == []
+    assert len(ambiguous) == 1
+    assert "wrong {{wikidata link}}" in ambiguous[0]["reason"]
+
+
+def test_two_templates_are_still_a_normal_cross_language_duplicate():
+    """Template:警告 beside Template:Warning IS a merge — the rule must not eat it."""
+    state = {"Template:Warning": "Q5528794", "Template:警告": "Q5528794"}
+    moves, ambiguous = build_move_plan(state, {"Q5528794": "Q5528794"})
+    assert not any("wrong {{wikidata link}}" in g["reason"] for g in ambiguous)
+    assert moves and moves[0]["from"] == "Template:警告"
+    assert moves[0]["to"] == "Template:Warning"
+
+
+def test_a_category_beside_a_mainspace_page_is_also_a_wrong_link():
+    state = {"Asia": "Q999", "Category:Asia templates": "Q999"}
+    moves, ambiguous = build_move_plan(state, {"Q999": "Q999"})
+    assert moves == []
+    assert "wrong {{wikidata link}}" in ambiguous[0]["reason"]
