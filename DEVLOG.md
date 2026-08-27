@@ -10847,3 +10847,30 @@ walks the workflow tree, resolves each step's scripts, and requires the lockout 
 applies edits to a miraheze-targeting script. Mechanical rather than an allowlist, so a new workflow
 cannot reintroduce the hole. Verified it actually fails by removing one guard — 2 failures naming the
 file — then restored. 76 passing.
+
+## 2026-08-27 — the test suite was not gating test-only changes
+
+`ci.yml` is paths-filtered so orchestrator state-commit churn does not trigger it. The filter listed
+the source trees and `.github/workflows/ci.yml` but **not** `tests/**.py`. So `b58dd81f` — a new test
+file plus four workflow YAMLs — produced **no CI run at all**.
+
+The misleading part is worse than the gap. Every "CI green" reported this session was true, but only
+because those commits happened to also touch `shinto_miraheze/**.py`. The suite looked gated and was
+not, and nothing errors when a paths filter is wrong — runs simply do not happen.
+
+Added `tests/**.py` and `.github/workflows/**` to both `push` and `pull_request`. The workflow entry is
+not housekeeping: `test_miraheze_writers_are_lockout_gated.py` READS the workflow tree, so a workflow
+edit changes that test's input, and without this the test guarding the wiki lockout would never run on
+the files it guards. The narrower `.github/workflows/ci.yml` entry is now subsumed and removed.
+
+Pinned by `tests/test_ci_runs_on_test_changes.py`, including a self-referential check that this very
+file sits under a covered path. Verified by deleting the `tests/**.py` line and watching it fail, then
+restoring.
+
+**A mistake worth recording from that verification:** I restored with `git checkout -- ci.yml`, which
+resets to HEAD — and the fix was still uncommitted, so it silently reverted my own work. The four
+failures that followed are the only reason I noticed. Committing before experimenting, or copying the
+file inside the repo, would both have been correct; `git checkout` on uncommitted work is not a
+restore, it is a discard.
+
+83 passing.

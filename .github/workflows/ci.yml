@@ -2,8 +2,19 @@ name: Tests
 
 # Runs the pytest suite so regressions are caught in CI — notably the
 # 2026-06-07 git-synced clobber fix (sync_revision_aware.resolve_conflict),
-# which previously had zero tests. Paths-filtered to Python changes so the
+# which previously had zero tests. Paths-filtered to code changes so the
 # orchestrator/state-commit churn ([skip ci]) doesn't trigger it.
+#
+# `tests/**.py` is in the filter as of 2026-08-27 because it was NOT, and a
+# test-only commit therefore ran no tests at all: b58dd81f added a new test file
+# plus four workflow YAMLs and got no CI run. Every green run before that was on a
+# commit that happened to also touch a source tree, so the suite looked gated when
+# it was not.
+#
+# `.github/workflows/**` is here for the mirror-image reason —
+# tests/test_miraheze_writers_are_lockout_gated.py READS the workflow tree, so a
+# workflow edit changes that test's input. Without this entry the test guarding the
+# wiki lockout would never run on the files it guards.
 on:
   push:
     paths:
@@ -12,7 +23,8 @@ on:
       - "shinto-label-generator/**.py"
       - "recreate-deleted-wikidata/**.py"
       - "jinjacho/**.py"
-      - ".github/workflows/ci.yml"
+      - "tests/**.py"
+      - ".github/workflows/**"
   pull_request:
     paths:
       - "shinto_miraheze/**.py"
@@ -20,6 +32,8 @@ on:
       - "shinto-label-generator/**.py"
       - "recreate-deleted-wikidata/**.py"
       - "jinjacho/**.py"
+      - "tests/**.py"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 env:
