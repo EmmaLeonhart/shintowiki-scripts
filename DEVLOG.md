@@ -11327,3 +11327,23 @@ reasons it names. 129 passing, no behaviour change.
 `[[Open questions]]` verified live this tick after yesterday's outage: unchanged since 2026-08-25,
 zero actionable bullets, identical to the repo copy. First attempt succeeded with no retries, so the
 wiki is genuinely healthy rather than having its errors absorbed.
+
+## 2026-08-27 — this session ran without the briefing and debrief crons
+
+Re-reading `queue.md`'s pinned tail — which I had not opened in many ticks — showed it expects **five**
+session-local crons. `CronList` showed three: work-loop `:03`, auto-flush `:15`, status-report `:42`.
+The briefing 08:03 and debrief 23:57 gates were never created, for roughly 24 ticks.
+
+The hub's `CLAUDE.md` carries a standing instruction to establish them at session start, and the
+`deep-briefing` skill is explicit that they are crons 4 and 5 of the same playbook — Emma, 2026-07-09:
+the briefing/debrief are a strict structural part of the work loop, not an optional extra.
+
+Nothing was lost: neither 08:03 nor 23:57 elapsed while this session was live, so no prompt was missed.
+Both are now created and verified via `CronList`, with prompts that do the skip-check against today's
+`DAILY.md` first and then push + `AskUserQuestion` — because the skill is equally explicit that the
+`AskUserQuestion` IS the deliverable, and a cron that fires and silently writes a file has failed.
+
+Second standing instruction found un-followed today, after `[[Open questions]]`. Both were discovered
+by reading a file I had stopped opening, not by anything failing. The pattern is that a habit with no
+immediate consequence goes quiet, and the queue's pinned tail exists precisely to catch this — it only
+worked because a tick with nothing else to do went and re-read it.

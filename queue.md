@@ -9,8 +9,12 @@ from `ATOMIC_FILES`; they are not queue items.
 
 - **Pinned tail (keep last)**
 
-  - [ ] Ensure the five session-local crons are running. Verified live, this session: work-loop
-    `0a52da5c` :03, auto-flush `aa735a3c` :15, status-report `f371ceee` :42, briefing `ff8886e6`
-    08:03, debrief `924d2b08` 23:57. Crons are session-local, so a recorded ID is only ever evidence
-    about the session that made it.
+  - [ ] Ensure the five session-local crons are running. Verified live via `CronList`, session of
+    2026-08-27: work-loop `0bcfcd0c` :03, auto-flush `fa3787f8` :15, status-report `8f65f73a` :42,
+    briefing `25b7500a` 08:03, debrief `23235e0d` 23:57. Crons are session-local, so a recorded ID
+    is only ever evidence about the session that made it.
+    ⚠ This session ran with only THREE for ~24 ticks — the briefing and debrief gates were never
+    created, despite the hub's CLAUDE.md carrying a standing "Session start" instruction to
+    establish them. Nothing was lost (no 08:03 or 23:57 elapsed while a session was live), but the
+    check is worth doing EARLY rather than on whatever tick happens to re-read this file.
   - [ ] Run the status-report action once more independently as an end-of-session summary.
