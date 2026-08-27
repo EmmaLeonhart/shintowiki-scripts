@@ -11190,3 +11190,39 @@ decision with its own reasoning, and it still does useful classification work.
 
 Plan: 146 → **102 auto-moves, all 102 proven**. Ambiguity 33 → 77, which is not a regression: it is the
 44 impossible moves moving to where they belonged. 122 passing.
+
+## 2026-08-27 — the plan is now reproducible without credentials
+
+Every status report this session quoted a move count — 115, then 131, 147, 146, 102 — each produced by
+an ad-hoc script retyped for the occasion. Emma could not check a single one of them. An
+unreproducible number is a claim, not a measurement, and the number in question is precisely what a
+person uses to decide whether to run something that edits a wiki.
+
+`--plan-only` runs the four planning stages (resolve QIDs → measure prose → fetch labels → build the
+plan), prints it grouped by reason, and **exits before login**. Every one of those stages is read-only,
+so it needs no bot password and anyone can run it:
+
+```
+Move plan: 102 total auto-picks, 102 PROVEN (can actually edit), 102 pending, 77 ambiguous
+  moves       88  [proven  ] Wikidata redirect → same item
+  moves       11  [proven  ] property dump → article (same QID)
+  moves        3  [proven  ] Wikidata alias → label title (same item)
+  ambiguous   44            two real articles — a content merge, not a redirect
+  ambiguous   21            template/doc pair
+  ambiguous   10            two or more real names — no single canonical
+  ambiguous    2            template/category grouped with a mainspace page — wrong link
+```
+
+The proven count is printed separately from the total on purpose: those diverged badly once (146 vs
+102) and a single headline number hid it.
+
+`--run-tag` is no longer unconditionally required — it is needed for anything that edits, and demanding
+it for a plan that writes nothing was friction with no safety value.
+
+**Two harness bugs of my own along the way, both worth the note.** `subprocess.run(text=True)` returned
+`stdout=None` because the script wraps stdout to UTF-8 (its help carries → and ō) while `text=True`
+decodes with the Windows locale codepage — fixed with an explicit `encoding="utf-8"`. And an assertion
+looked for "before logging in" where the help says "exit BEFORE logging in"; corrected the assertion to
+the real string rather than softening the help.
+
+3 new tests, 125 passing.

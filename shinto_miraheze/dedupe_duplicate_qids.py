@@ -32,7 +32,7 @@ import os
 import re
 import sys
 import time
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 import urllib.parse
 import urllib.request
@@ -539,9 +539,17 @@ def main() -> None:
                         help="Actually perform moves (default: dry-run).")
     parser.add_argument("--max-edits", type=int, default=50,
                         help="Maximum page moves per run (default 50).")
-    parser.add_argument("--run-tag", required=True,
-                        help="Edit-summary suffix linking back to the CI run.")
+    parser.add_argument("--run-tag", default="",
+                        help="Edit-summary suffix linking back to the CI run. "
+                             "Required for anything that edits; not for --plan-only.")
+    parser.add_argument("--plan-only", action="store_true",
+                        help="Print the plan and exit BEFORE logging in. Every "
+                             "planning stage is read-only, so this needs no bot "
+                             "password and can be run by anyone to check the "
+                             "numbers a report quotes.")
     args = parser.parse_args()
+    if not args.plan_only and not args.run_tag:
+        parser.error("--run-tag is required unless --plan-only is given")
 
     state = load_json(DUPES_STATE)
     if not state:
@@ -595,10 +603,28 @@ def main() -> None:
     auto_moves, ambiguous = build_move_plan(state, resolved, prose_lengths, labels)
     pending = [m for m in auto_moves if m["from"] not in done]
 
+    # Separate the executable count from the total. They diverged badly once —
+    # the plan advertised 146 auto-moves of which only 102 could ever run, because
+    # unproven heuristic moves always skip. A single headline number hid that.
+    executable = [m for m in auto_moves if m["reason"] in PROVEN_REASONS]
     print(f"Move plan: {len(auto_moves)} total auto-picks, "
+          f"{len(executable)} PROVEN (can actually edit), "
           f"{len(pending)} pending (not yet done), "
           f"{len(ambiguous)} ambiguous (skipped).")
     print()
+    by_reason = Counter(m["reason"] for m in auto_moves)
+    for reason, count in sorted(by_reason.items(), key=lambda kv: -kv[1]):
+        mark = "proven  " if reason in PROVEN_REASONS else "unproven"
+        print(f"  moves     {count:4}  [{mark}] {reason}")
+    for reason, count in sorted(Counter(g["reason"] for g in ambiguous).items(),
+                                key=lambda kv: -kv[1]):
+        print(f"  ambiguous {count:4}            {reason}")
+    print()
+
+    if args.plan_only:
+        print("--plan-only: stopping before login. Nothing was edited, and no "
+              "credentials were used.")
+        return
 
     site = mwclient.Site(WIKI_URL, path=WIKI_PATH, clients_useragent=USER_AGENT)
     site.connection.timeout = 120

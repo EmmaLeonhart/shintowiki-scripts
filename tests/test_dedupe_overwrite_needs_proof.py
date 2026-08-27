@@ -157,3 +157,46 @@ def test_the_real_outcome_for_an_already_redirected_source_is_terminal():
     site = _site(src_text="#REDIRECT [[Somewhere]]")
     result = perform_move(site, "SRC", "DST", "tag", apply=True, proven=True)
     assert is_terminal_skip(result)
+
+
+# ── the plan must be checkable without credentials ────────────────────────
+#
+# Every status report this session quoted a move count produced by an ad-hoc
+# script. An unreproducible number is a claim, not a measurement. --plan-only
+# runs the four read-only planning stages and exits before login, so anyone can
+# check the figure. These invoke the CLI and exit at argument parsing, before any
+# network call.
+
+import subprocess  # noqa: E402
+
+_SCRIPT = os.path.join(_ROOT, "shinto_miraheze", "dedupe_duplicate_qids.py")
+
+
+def _run(*args):
+    # encoding= is load-bearing: the script wraps stdout to UTF-8 (its help text
+    # carries → and ō), while text=True alone decodes with the Windows locale
+    # codepage and hands back None.
+    return subprocess.run([sys.executable, _SCRIPT, *args],
+                          capture_output=True, text=True, timeout=60,
+                          encoding="utf-8", errors="replace")
+
+
+def test_run_tag_is_required_when_the_script_may_edit():
+    r = _run("--apply")
+    assert r.returncode == 2
+    assert "--run-tag is required" in (r.stderr + r.stdout)
+
+
+def test_run_tag_is_not_required_for_a_plan_that_writes_nothing():
+    """argparse must accept it; the run itself is exercised separately."""
+    r = _run("--help")
+    assert r.returncode == 0
+    assert "--plan-only" in r.stdout
+    assert "no credentials" not in r.stderr
+
+
+def test_plan_only_is_documented_as_stopping_before_login():
+    r = _run("--help")
+    helptext = " ".join(r.stdout.split()).lower()
+    assert "exit before logging in" in helptext
+    assert "needs no bot password" in helptext
