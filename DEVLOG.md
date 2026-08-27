@@ -10821,3 +10821,29 @@ return to the old behaviour: skip when the destination is live. The JP-script ru
 its safe case, a destination that does not exist yet.
 
 7 tests pin it, including the 健磐龍命 shape directly. 72 passing.
+
+## 2026-08-27 — four wiki writers were editing straight through the lockout
+
+Noticed while pre-flighting the dedupe run: `dedupe-duplicate-qids.yml` had no `wiki_edit_allowed.py`
+guard, unlike every other wiki-writing workflow. A survey found three more —
+`sunset-jp-char-count-cats`, `sunset-templates-not-transcluded-in-mainspace-cat`,
+`tag-templates-not-transcluded-anywhere`. All four run a script whose `WIKI_URL` is
+shinto.miraheze.org with `--apply`.
+
+That matters because of what the lockout is FOR. `wiki-editing-lockout.yml` writes a 7-day lockout
+when the ~1AM check sees no EmmaBot edits in 8h — the signal that the anti-DDoS 403 is up. Every
+guarded workflow then stops hitting the wiki. An unguarded one keeps editing into the 403, which both
+defeats the point and is the exact failure mode the single state file was introduced to prevent (the
+Wikidata side learned this when `create-items.yml` was hours from creating items straight through the
+2026-08-06 freeze because it consulted a per-workflow date instead of the state file).
+
+Four NOT holes, checked rather than assumed: `create-items` and `substitute-source-shrine-proposal`
+target Wikidata and correctly carry `wikidata_edit_allowed` — two wikis, two gates.
+`configure-wikidata-link-grok-categories` edits `miraheze_unique/…wiki` in the repo, which a guarded
+sync propagates. `recreate-deleted-crossref` reads public Wikidata deletion logs and writes no wiki.
+
+Guards added to all four, and pinned by `tests/test_miraheze_writers_are_lockout_gated.py`, which
+walks the workflow tree, resolves each step's scripts, and requires the lockout `if:` on any step that
+applies edits to a miraheze-targeting script. Mechanical rather than an allowlist, so a new workflow
+cannot reintroduce the hole. Verified it actually fails by removing one guard — 2 failures naming the
+file — then restored. 76 passing.

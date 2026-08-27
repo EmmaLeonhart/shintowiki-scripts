@@ -63,7 +63,21 @@ jobs:
           RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
           echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
 
+      # Lockout guard. The miraheze lockout exists to stop hammering the
+      # anti-DDoS 403 during a blackout; a writer without this edits straight
+      # through one, which is what the single state file is meant to prevent.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked - skipping this run."
+          fi
+
       - name: "Tag: templates not transcluded in mainspace or categoryspace"
+        if: steps.lockout.outputs.locked != 'true'
         run: |
           shinto_miraheze/run_step.sh "Tag: tag_templates_not_transcluded_anywhere" \
             python3 shinto_miraheze/tag_templates_not_transcluded_anywhere.py \
