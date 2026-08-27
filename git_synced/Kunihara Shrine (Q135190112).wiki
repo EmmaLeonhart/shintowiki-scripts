@@ -1,21 +1,3 @@
-{{Infobox religious building
-| name = Kunihara Shrine (Q135190112)
-| native_name = 訓原神社
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Kunihara Shrine (Q135190112)
-| coordinates = {{coord|35.245978|136.887112}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-}}
-
-{{nihongo|'''Kunihara Shrine'''|訓原神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Owari Province]].
-
-[[Category:Wikidata generated shikinaisha pages|Kunihara Shrine (Q135190112)]][[Category:Shikinaisha|Kunihara Shrine (Q135190112)]][[Category:Shikinaisha in Owari Province]]
-
-{{wikidata link|Q135187225|grok=none|check_date=2026-05-31}}
+#REDIRECT [[Kunihara Shrine]]
 
 [[Category:Git synced pages]]

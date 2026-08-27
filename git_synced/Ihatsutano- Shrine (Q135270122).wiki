@@ -1,22 +1,3 @@
-{{Infobox religious building
-| name = Ihatsutano- Shrine (Q135270122)
-| native_name = 石津太社神社
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Ihatsutano- Shrine (Q135270122)
-| coordinates = {{coord|34.556882|135.453602}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-}}
-
-{{nihongo|'''Ihatsutano- Shrine'''|石津太社神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Izumi Province]].
-
-[[Category:Wikidata generated shikinaisha pages|Ihatsutano- Shrine (Q135270122)]][[Category:Shikinaisha|Ihatsutano- Shrine (Q135270122)]][[Category:Shikinaisha|Ihatsutano- Shrine (Q135270122)]][[Category:Kanpei-sha]]
-
-{{wikidata link|Q11586779|ja|石津太神社|grok=none|check_date=2026-05-29}}
-[[Category:Shikinaisha in Izumi Province]]
+#REDIRECT [[Iwatsuta Shrine]]
 
 [[Category:Git synced pages]]

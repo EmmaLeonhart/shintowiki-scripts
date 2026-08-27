@@ -1,0 +1,562 @@
+# Duplicate page QIDs — git-sync coverage
+
+Source: `shinto_miraheze/orchestrators/duplicate_qids.state` (the same dict
+`find_duplicate_page_qids.py` renders [[Duplicate page QIDs]] from), read
+2026-08-26. The renderer re-verifies each title against the live wiki before
+publishing, so the live report may list fewer groups than this file.
+
+`GIT` = a `.wiki` file for that exact title exists in `git_synced/`
+(i.e. the page is in [[Category:Git synced pages]] and editable from the repo).
+`wiki-only` = no such file; the page is only reachable through the wiki API.
+
+## QID-stub title + real name (71 groups)
+
+- **Q11390577** — git coverage: ALL
+  - GIT       `Hachikurahime Shrine`
+  - GIT       `Iwatowakeyakurahimeno Shrine (Q135270443)`
+- **Q11596632** — git coverage: ALL
+  - GIT       `Inagi Shrine`
+  - GIT       `Inakino Shrine (Q135270141)`
+- **Q11615716** — git coverage: ALL
+  - GIT       `Hananagakami Shrine`
+  - GIT       `Hananakano Shrine (Q135270215)`
+- **Q11618763** — git coverage: ALL
+  - GIT       `Arakashi Shrine`
+  - GIT       `Arakashi Shrine (Q135270258)`
+- **Q11621015** — git coverage: ALL
+  - GIT       `Kutsumino Shrine (Q135270418)`
+  - GIT       `Kuzumi Shrine`
+- **Q11648156** — git coverage: ALL
+  - GIT       `Harina Shrine`
+  - GIT       `Harinano Shrine (Q135270315)`
+- **Q131925939** — git coverage: ALL
+  - GIT       `Achiko Shrine (Q135270277)`
+  - GIT       `Omiya Shrine`
+- **Q134892535** — git coverage: ALL
+  - GIT       `Kamutano Shrine (Q135270353)`
+  - GIT       `Karita Shrine`
+- **Q134926924** — git coverage: ALL
+  - GIT       `Ametsuseno- Shrine (Q135270422)`
+  - GIT       `Sanai Shrine`
+- **Q134928894** — git coverage: ALL
+  - GIT       `Hotsusakeno- Shrine (Q135270276)`
+  - GIT       `Ouji Shrine`
+- **Q135069116** — git coverage: ALL
+  - GIT       `Kayanarumino Shrine (Q135270113)`
+  - GIT       `Kayorunarubiinochi Shrine`
+- **Q135069118** — git coverage: ALL
+  - GIT       `Asuka Kawakami-ni-Imasu Usutakihime-no-Mikoto Shrine (Q135270112)`
+  - GIT       `Asukakawakamizausutakihimeinochi Shrine`
+- **Q135069466** — git coverage: ALL
+  - GIT       `Hikitachikarano- Shrine (Q135270421)`
+  - GIT       `Hikiterikio Shrine`
+- **Q135069470** — git coverage: ALL
+  - GIT       `Kurotona Shrine`
+  - GIT       `Kurotonano Shrine (Q135270283)`
+- **Q135069932** — git coverage: ALL
+  - GIT       `Kasano Shrine (Kaga Province)`
+  - GIT       `Kasano Shrine (Q135194831)`
+- **Q135070075** — git coverage: ALL
+  - GIT       `Kuhaharano Shrine (Q135270271)`
+  - GIT       `Kuwahara Shrine`
+- **Q135070092** — git coverage: ALL
+  - GIT       `Kutamino Shrine (Q135270429)`
+  - GIT       `Kutaya Shrine`
+- **Q135070109** — git coverage: ALL
+  - GIT       `Itaki Shrine`
+  - GIT       `Itakino Shrine (Q135270432)`
+- **Q135070147** — git coverage: ALL
+  - GIT       `Hekireki Shrine`
+  - GIT       `Hiyakurakuno Shrine (Q135270437)`
+- **Q135187144** — git coverage: ALL
+  - GIT       `Ishitsukuri Shrine`
+  - GIT       `Ishizukuri Shrine (Q135187144)`
+- **Q135187187** — git coverage: ALL
+  - GIT       `Kumano Shrine (Q135190100)`
+  - GIT       `Kumano-sha`
+- **Q135187225** — git coverage: ALL
+  - GIT       `Kunihara Shrine`
+  - GIT       `Kunihara Shrine (Q135190112)`
+- **Q135193540** — git coverage: ALL
+  - GIT       `Karuno Shrine (Kano)`
+  - GIT       `Karuno Shrine (Q135193619)`
+- **Q135193541** — git coverage: ALL
+  - GIT       `Karuno Shrine (Iwakura)`
+  - GIT       `Karuno Shrine (Q135193620)`
+- **Q22120105** — git coverage: ALL
+  - GIT       `Hitsuji Shrine (Nagoya)`
+  - GIT       `Hitsushino Shrine (Q135270149)`
+- **Q66764741** — git coverage: ALL
+  - GIT       `Fuchiuchino Shrine (Q135270297)`
+  - GIT       `Fujiuchi Shrine`
+- **Q100544140** — git coverage: NONE
+  - wiki-only `Shibukawa Shrine (Owariasahi)`
+  - wiki-only `Shifukahano Shrine (Q135270309)`
+- **Q107664337** — git coverage: NONE
+  - wiki-only `Takanono Shrine (Q135040588)`
+  - wiki-only `Takeno Shrine`
+- **Q11432217** — git coverage: NONE
+  - wiki-only `Oi Shrine (Q135270296)`
+  - wiki-only `Ōi Shrine (Mito)`
+- **Q11445443** — git coverage: NONE
+  - wiki-only `Naratsuhiko Shrine`
+  - wiki-only `Naratsuhiko Shrine (Q135270108)`
+- **Q11541065** — git coverage: NONE
+  - wiki-only `Yanakihara Shrine (Q135270420)`
+  - wiki-only `Yohara Shrine`
+- **Q11570647** — git coverage: NONE
+  - wiki-only `Monoiminano- Shrine`
+  - wiki-only `Monoiminano- Shrine (Q135270282)`
+- **Q135039548** — git coverage: NONE
+  - wiki-only `Shimotsuchikamano Shrine`
+  - wiki-only `Shimotsuchikamano Shrine (Q135270312)`
+- **Q135040452** — git coverage: NONE
+  - wiki-only `Tatano Shrine`
+  - wiki-only `Tatano Shrine (Q135040452)`
+- **Q135068810** — git coverage: NONE
+  - wiki-only `Mitsui Shrine`
+  - wiki-only `Mitsuno Shrine (Q135270101)`
+- **Q135069093** — git coverage: NONE
+  - wiki-only `Yoshinonoyamakuchino Shrine (Q135270116)`
+  - wiki-only `Yoshinoyamaguchi Shrine`
+- **Q135069326** — git coverage: NONE
+  - wiki-only `Morokuhano Shrine (Q135270143)`
+  - wiki-only `Shokuwa Shrine`
+- **Q135069375** — git coverage: NONE
+  - wiki-only `Men Shrine`
+  - wiki-only `Watano Shrine (Q135270308)`
+- **Q135069928** — git coverage: NONE
+  - wiki-only `Noka Shrine (Kaga Province)`
+  - wiki-only `Noka Shrine (Q135069928)`
+- **Q135070089** — git coverage: NONE
+  - wiki-only `Noshirono Shrine (Q135270428)`
+  - wiki-only `Yahaku Shrine`
+- **Q135070143** — git coverage: NONE
+  - wiki-only `Sahime- Shrine (Q135270436)`
+  - wiki-only `Sahimeyama Shrine`
+- **Q3571285** — git coverage: NONE
+  - wiki-only `Sakusano Shrine (Q135270427)`
+  - wiki-only `Yaegaki Shrine`
+- **Q705297** — git coverage: NONE
+  - wiki-only `Nishinomiya Shrine`
+  - wiki-only `Ohokuninushino Shrine (Q135270424)`
+- **Q11465315** — git coverage: PARTIAL
+  - GIT       `Obari Shrine`
+  - wiki-only `Woharino Shrine (Q135270311)`
+- **Q11469625** — git coverage: PARTIAL
+  - GIT       `Yamanashioka Shrine, Fuefuki`
+  - wiki-only `Yamanashiwokano Shrine (Q135270284)`
+- **Q11522170** — git coverage: PARTIAL
+  - GIT       `Sugihokowake no Mikoto Shrine`
+  - wiki-only `Sukihoko- Shrine (Q135270280)`
+- **Q11586779** — git coverage: PARTIAL
+  - GIT       `Ihatsutano- Shrine (Q135270122)`
+  - wiki-only `Iwatsuta Shrine`
+- **Q11611103** — git coverage: PARTIAL
+  - wiki-only `Hijiri Shrine (Izumi, Osaka)`
+  - GIT       `Hijiri Shrine (Q11611103)`
+- **Q11631934** — git coverage: PARTIAL
+  - wiki-only `Nakayamano Shrine (Q135270218)`
+  - GIT       `Suwa Shrine (Minokamo)`
+- **Q11646128** — git coverage: PARTIAL
+  - wiki-only `Nomi Shrine (Ichinomiya)`
+  - GIT       `Nomi Shrine (Q11646128)`
+- **Q11672973** — git coverage: PARTIAL
+  - GIT       `Takabeya Shrine`
+  - wiki-only `Takaheyano Shrine (Q135270288)`
+- **Q11675604** — git coverage: PARTIAL
+  - GIT       `Kamo Shrine (Q11675604)`
+  - wiki-only `Kamo Shrine (Takatsuki)`
+- **Q134927545** — git coverage: PARTIAL
+  - wiki-only `Ohomeno Shrine (Q135270146)`
+  - GIT       `Ōma Shrine`
+- **Q134928475** — git coverage: PARTIAL
+  - GIT       `Inohanako Shrine`
+  - wiki-only `Wihanano Shrine (Q135270318)`
+- **Q134930277** — git coverage: PARTIAL
+  - wiki-only `Ninomiya Shrine (Miyake)`
+  - GIT       `Ninomiya Shrine (Q134930277)`
+- **Q135021848** — git coverage: PARTIAL
+  - wiki-only `Hayabusa Shrine (Kyoto)`
+  - GIT       `Hayabusa Shrine (Q135021848)`
+- **Q135069342** — git coverage: PARTIAL
+  - GIT       `Koguchi Shrine`
+  - wiki-only `Wokuchino Shrine (Q135270144)`
+- **Q135069379** — git coverage: PARTIAL
+  - GIT       `Dainoki Shrine`
+  - wiki-only `Ohonokino Shrine (Q135270310)`
+- **Q135070088** — git coverage: PARTIAL
+  - GIT       `Fukomino Shrine (Q135270426)`
+  - wiki-only `Nunowareya Shrine`
+- **Q135070295** — git coverage: PARTIAL
+  - GIT       `Amatsunumahikono Shrine (Q135270441)`
+  - wiki-only `Shikishima Shrine`
+- **Q135070313** — git coverage: PARTIAL
+  - GIT       `Kazunasaitomiso Shrine`
+  - wiki-only `Wanasaifusono Shrine (Q135270445)`
+- **Q17225931** — git coverage: PARTIAL
+  - GIT       `Kaharano- Shrine (Q135270137)`
+  - wiki-only `Takagawara Shrine`
+- **Q17238950** — git coverage: PARTIAL
+  - wiki-only `Iizuna Shrine (Mount Iizuna)`
+  - GIT       `Iizuna Shrine (Q17238950)`
+- **Q24899217** — git coverage: PARTIAL
+  - wiki-only `Taka- Shrine (Q135270109)`
+  - GIT       `Takahashi Shrine (Nara)`
+- **Q48758503** — git coverage: PARTIAL
+  - wiki-only `Kotoshironushi Shrine (Awa)`
+  - GIT       `Kotoshironushi Shrine (Q48758503)`
+- **Q63148107** — git coverage: PARTIAL
+  - wiki-only `Kanbara Shrine (Niigata)`
+  - GIT       `Kanbara Shrine (Q63148107)`
+- **Q63148121** — git coverage: PARTIAL
+  - wiki-only `Hakusan Shrine (Nuttari-higashi, Niigata)`
+  - GIT       `Hakusan Shrine (Q63148121)`
+- **Q70725130** — git coverage: PARTIAL
+  - wiki-only `Gomyo Tenjin Shrine`
+  - GIT       `Tenjin-sha (Q70725130)`
+- **Q72183108** — git coverage: PARTIAL
+  - wiki-only `Yasaka Shrine (Gika, Koka)`
+  - GIT       `Yasaka Shrine (Q72183108)`
+- **Q72727981** — git coverage: PARTIAL
+  - wiki-only `Nagahatabe Shrine (Kamisato)`
+  - GIT       `Nagahatabe Shrine (Q72727981)`
+- **Q85880047** — git coverage: PARTIAL
+  - wiki-only `Fuse Shrine (Nagano)`
+  - GIT       `Fuse Shrine (Q85880047)`
+
+## Japanese-script title + rōmaji/ASCII title (45 groups)
+
+- **Q100453532** — git coverage: NONE
+  - wiki-only `Shiomi no Sukune`
+  - wiki-only `塩海足尼`
+- **Q100453594** — git coverage: NONE
+  - wiki-only `Takakuni no Hikono Mikoto`
+  - wiki-only `武国彦命`
+- **Q108487215** — git coverage: NONE
+  - wiki-only `Harima Kuni no Miyatsuko`
+  - wiki-only `針間鴨国造`
+- **Q108487216** — git coverage: NONE
+  - wiki-only `Akashi no Kuni no Miyatsuko`
+  - wiki-only `明石国造`
+- **Q10888904** — git coverage: NONE
+  - wiki-only `Takeiwatatsu-no-Mikoto`
+  - wiki-only `健磐龍命`
+- **Q109287983** — git coverage: NONE
+  - wiki-only `Usatsuhiko no Mikoto`
+  - wiki-only `菟狭津彦命`
+- **Q10940767** — git coverage: NONE
+  - wiki-only `Amanomichine`
+  - wiki-only `天道根命`
+- **Q11065428** — git coverage: NONE
+  - wiki-only `Takehi-Nateru`
+  - wiki-only `建比良鳥命`
+- **Q11215212** — git coverage: NONE
+  - wiki-only `Template:Yukio Mishima`
+  - wiki-only `Template:三島由紀夫`
+- **Q11359471** — git coverage: NONE
+  - wiki-only `Kamitsuke no Kuni no Miyatsuko`
+  - wiki-only `上毛野国造`
+- **Q11361048** — git coverage: NONE
+  - wiki-only `Shimotsukeno no Kuni no Miyatsuko`
+  - wiki-only `下毛野国造`
+- **Q11361123** — git coverage: NONE
+  - wiki-only `Shimotsu Unakami no Kuni Miyatsuko`
+  - wiki-only `下海上国造`
+- **Q11378974** — git coverage: NONE
+  - wiki-only `Ise no Kuni no Miyatsuko`
+  - wiki-only `伊勢国造`
+- **Q11395443** — git coverage: NONE
+  - wiki-only `Funi-kawachi-no-Kuni-no-Miyatsuko`
+  - wiki-only `凡河内国造`
+- **Q11450454** — git coverage: NONE
+  - wiki-only `Yasu no Kuni no Miyatsuko`
+  - wiki-only `安国造`
+- **Q11465311** — git coverage: NONE
+  - wiki-only `Owari clan`
+  - wiki-only `尾張氏`
+- **Q11476801** — git coverage: NONE
+  - wiki-only `Shimazu no Kuni no Miyatsuko`
+  - wiki-only `島津国造`
+- **Q11486691** — git coverage: NONE
+  - wiki-only `Takeinadane`
+  - wiki-only `建稲種命`
+- **Q11568883** — git coverage: NONE
+  - wiki-only `Kumano Kokuzō`
+  - wiki-only `熊野国造`
+- **Q11570306** — git coverage: NONE
+  - wiki-only `Mukizu no Kuni no Miyatsuko`
+  - wiki-only `牟義都国造`
+- **Q11579960** — git coverage: NONE
+  - wiki-only `Shirakawa Kuni no Miyatsuko`
+  - wiki-only `白河国造`
+- **Q11595951** — git coverage: NONE
+  - wiki-only `Shinano no Kuni no Miyatsuko`
+  - wiki-only `科野国造`
+- **Q11604953** — git coverage: NONE
+  - wiki-only `Kii no Kuni no Miyatsuko`
+  - wiki-only `紀伊国造`
+- **Q11642909** — git coverage: NONE
+  - wiki-only `Nasu no Kuni no Miyatsuko`
+  - wiki-only `那須国造`
+- **Q11656591** — git coverage: NONE
+  - wiki-only `Tsuge no Kuni no Miyatsuko`
+  - wiki-only `闘鶏国造`
+- **Q119380336** — git coverage: NONE
+  - wiki-only `Kami Ōne`
+  - wiki-only `神大根王`
+- **Q13413959** — git coverage: NONE
+  - wiki-only `Template:Topic category`
+  - wiki-only `Template:テーマカテゴリ`
+- **Q14334739** — git coverage: NONE
+  - wiki-only `Template:Ruby-ja`
+  - wiki-only `Template:読み仮名`
+- **Q17224229** — git coverage: NONE
+  - wiki-only `Hikosashima no Ōkimi`
+  - wiki-only `彦狭島王`
+- **Q18700600** — git coverage: NONE
+  - wiki-only `Ichishi no Nagaochi`
+  - wiki-only `市磯長尾市`
+- **Q22125226** — git coverage: NONE
+  - wiki-only `Sueha Kokuzō`
+  - wiki-only `末羅国造`
+- **Q48760952** — git coverage: NONE
+  - wiki-only `Tottori-no-Kami`
+  - wiki-only `鳥取神`
+- **Q55177952** — git coverage: NONE
+  - wiki-only `Tsuge no Ōyamanushi`
+  - wiki-only `闘鶏大山主`
+- **Q5528794** — git coverage: NONE
+  - wiki-only `Template:Warning`
+  - wiki-only `Template:警告`
+- **Q55407038** — git coverage: NONE
+  - wiki-only `Yamato no Tehiko`
+  - wiki-only `倭手彦`
+- **Q5615163** — git coverage: NONE
+  - wiki-only `Template:Trivia`
+  - wiki-only `Template:雑多な内容の箇条書き`
+- **Q6062619** — git coverage: NONE
+  - wiki-only `Template:Japanese year`
+  - wiki-only `Template:和暦`
+- **Q6176883** — git coverage: NONE
+  - wiki-only `Template:Caution`
+  - wiki-only `Template:注意`
+- **Q6232685** — git coverage: NONE
+  - wiki-only `Template:Infobox museum`
+  - wiki-only `Template:博物館`
+- **Q6841435** — git coverage: NONE
+  - wiki-only `Template:Who`
+  - wiki-only `Template:誰`
+- **Q85875681** — git coverage: NONE
+  - wiki-only `Kuno no Kuni no Miyatsuko`
+  - wiki-only `久努国造`
+- **Q87863507** — git coverage: NONE
+  - wiki-only `Take Momotake no Mikoto`
+  - wiki-only `武五百建命`
+- **Q96273436** — git coverage: NONE
+  - wiki-only `Takekumateru no Mikoto`
+  - wiki-only `健隈照命`
+- **Q97383587** — git coverage: NONE
+  - wiki-only `Kubiki Kokuzo`
+  - wiki-only `久比岐国造`
+- **Q2483673** — git coverage: PARTIAL
+  - GIT       `Kuni no miyatsuko`
+  - wiki-only `国造`
+
+## two distinct real names (23 groups)
+
+- **Q135039533** — git coverage: ALL
+  - GIT       `Kaneno Shrine`
+  - GIT       `Kaneno Shrine (Q135270307)`
+  - GIT       `Kinshin Shrine`
+- **Q135187121** — git coverage: NONE
+  - wiki-only `Shioe Shrine`
+  - wiki-only `Shionoe Shrine`
+- **Q135187145** — git coverage: NONE
+  - wiki-only `Shinmei Shrine (Ishitsukuri Shrine)`
+  - wiki-only `Shinmei-sha (Ishitsukurino Shrine)`
+- **Q22070227** — git coverage: NONE
+  - wiki-only `Hime Shrine`
+  - wiki-only `Himegami`
+- **Q6852880** — git coverage: NONE
+  - wiki-only `Category:Asia templates`
+  - wiki-only `Category:Asia-related templates`
+- **Q818468** — git coverage: NONE
+  - wiki-only `Benzaiten`
+  - wiki-only `Benzaiten shrines`
+- **Q11570699** — git coverage: PARTIAL
+  - GIT       `Mononobe Shrine (Oda)`
+  - wiki-only `Mononobe Shrine (Ōda)`
+- **Q11657447** — git coverage: PARTIAL
+  - GIT       `Achi Shrine (Achi Village)`
+  - wiki-only `Achi Shrine (Achi)`
+- **Q11657523** — git coverage: PARTIAL
+  - wiki-only `Awayama-no-Ueno Shrine`
+  - GIT       `Awayamanoueno Shrine`
+- **Q11660144** — git coverage: PARTIAL
+  - GIT       `Hitsujisaki Shrine`
+  - wiki-only `Hitsujisaki Shrine (Minato, Ishinomaki)`
+- **Q127783765** — git coverage: PARTIAL
+  - wiki-only `Amasashi-hiko-no-Mikoto Shrine`
+  - GIT       `Amasashihiko-no-Mikoto Shrine`
+- **Q133940165** — git coverage: PARTIAL
+  - wiki-only `Hinama-ji Hime-no-Mikoto Shrine`
+  - GIT       `Hinamajihimemikoto Shrine`
+- **Q134926910** — git coverage: PARTIAL
+  - GIT       `Mishima Shrine (Minamiizu)`
+  - wiki-only `Mishima Shrine (Tsumara)`
+- **Q134930636** — git coverage: PARTIAL
+  - GIT       `Kamisawa Shrine`
+  - wiki-only `Teranomikoto Shrine`
+- **Q134930713** — git coverage: PARTIAL
+  - wiki-only `Mishima Shrine (Iruma)`
+  - GIT       `Mishima Shrine (Minamiizu )`
+- **Q135041144** — git coverage: PARTIAL
+  - GIT       `Amatakekanakaya Shrine`
+  - wiki-only `Amatakekanakusano Shrine`
+- **Q135069030** — git coverage: PARTIAL
+  - GIT       `Kashima Shrine (Kashiba City)`
+  - wiki-only `Kashima Shrine (Kashiba)`
+- **Q135069036** — git coverage: PARTIAL
+  - wiki-only `Oosakayamaguchi Shrine (Katsuge district)`
+  - GIT       `Ōsaka Yamaguchi Shrine (Kashiba)`
+- **Q135070063** — git coverage: PARTIAL
+  - GIT       `Dainamabuheishushin Shrine`
+  - wiki-only `Ōube Hyōzu Shrine (Okuno)`
+- **Q172253** — git coverage: PARTIAL
+  - GIT       `Amatsu Shrine`
+  - wiki-only `Amatsu Shrine (Itoigawa)`
+- **Q18235752** — git coverage: PARTIAL
+  - GIT       `Mononobe Shrine (Higashi-ku, Nagoya)`
+  - wiki-only `Mononobe Shrine (Nagoya)`
+  - wiki-only `Mononoheno Shrine (Q135270316)`
+- **Q66085127** — git coverage: PARTIAL
+  - wiki-only `Kamo-no-Ōkami-no-mikokami-nushi-tama Shrine`
+  - GIT       `Kamo-Ōkami-miko-kami-nushi-tama Shrine`
+- **Q701414** — git coverage: PARTIAL
+  - GIT       `Inaba Shrine`
+  - wiki-only `Inaba Shrine (Gifu)`
+
+## template + /doc subpage (21 groups)
+
+- **Q10777837** — git coverage: NONE
+  - wiki-only `Template:Harvard citation text`
+  - wiki-only `Template:Harvard citation text/doc`
+- **Q10897780** — git coverage: NONE
+  - wiki-only `Template:WikiIPA`
+  - wiki-only `Template:WikiIPA/doc`
+- **Q11195648** — git coverage: NONE
+  - wiki-only `Template:S-non`
+  - wiki-only `Template:S-non/doc`
+- **Q13101602** — git coverage: NONE
+  - wiki-only `Template:S-bus`
+  - wiki-only `Template:S-bus/doc`
+- **Q13173271** — git coverage: NONE
+  - wiki-only `Template:Tool warning`
+  - wiki-only `Template:Tool warning/doc`
+- **Q13391266** — git coverage: NONE
+  - wiki-only `Template:PAGESINCATEGORY`
+  - wiki-only `Template:PAGESINCATEGORY/doc`
+- **Q13415379** — git coverage: NONE
+  - wiki-only `Template:Phagspa`
+  - wiki-only `Template:Phagspa/doc`
+- **Q13566052** — git coverage: NONE
+  - wiki-only `Template:Cite NIE`
+  - wiki-only `Template:Cite NIE/doc`
+- **Q14397262** — git coverage: NONE
+  - wiki-only `Template:NIE poster`
+  - wiki-only `Template:NIE poster/doc`
+- **Q14402268** — git coverage: NONE
+  - wiki-only `Template:State establishment category`
+  - wiki-only `Template:State establishment category/doc`
+- **Q14407813** — git coverage: NONE
+  - wiki-only `Template:Vague`
+  - wiki-only `Template:Vague/doc`
+- **Q14448862** — git coverage: NONE
+  - wiki-only `Template:Pnt notice`
+  - wiki-only `Template:Pnt notice/doc`
+- **Q14449133** — git coverage: NONE
+  - wiki-only `Template:Redirect-distinguish`
+  - wiki-only `Template:Redirect-distinguish/doc`
+- **Q5612638** — git coverage: NONE
+  - wiki-only `Template:USA`
+  - wiki-only `Template:USA/doc`
+- **Q5915555** — git coverage: NONE
+  - wiki-only `Template:SWE`
+  - wiki-only `Template:SWE/doc`
+- **Q6079507** — git coverage: NONE
+  - wiki-only `Template:SGP`
+  - wiki-only `Template:SGP/doc`
+- **Q6455705** — git coverage: NONE
+  - wiki-only `Template:NOR`
+  - wiki-only `Template:NOR/doc`
+- **Q6839519** — git coverage: NONE
+  - wiki-only `Template:Technical`
+  - wiki-only `Template:Technical/doc`
+- **Q6926010** — git coverage: NONE
+  - wiki-only `Template:Cite Americana`
+  - wiki-only `Template:Cite Americana/doc`
+- **Q7466081** — git coverage: NONE
+  - wiki-only `Template:Selected X/doc`
+  - wiki-only `Template:Selected article`
+- **Q9002097** — git coverage: NONE
+  - wiki-only `Template:When`
+  - wiki-only `Template:When/doc`
+
+## two QID-stub titles (15 groups)
+
+- **Q135069348** — git coverage: ALL
+  - GIT       `Katayama Shrine (Q135069348)`
+  - GIT       `Katayamano Shrine (Q135270145)`
+- **Q135069931** — git coverage: ALL
+  - GIT       `Kasano Shrine (Q135069931)`
+  - GIT       `Kasano Shrine (Q135194830)`
+- **Q135070073** — git coverage: ALL
+  - GIT       `Ikisa Shrine (Q135070073)`
+  - GIT       `Isakino Shrine (Q135270270)`
+- **Q135187123** — git coverage: ALL
+  - GIT       `Hachiman Shrine (Q135187123)`
+  - GIT       `Hachiman Shrine (Q135190015)`
+- **Q135187179** — git coverage: ALL
+  - GIT       `Ide Shrine (Q135187179)`
+  - GIT       `Ide Shrine (Q135190089)`
+- **Q135187226** — git coverage: ALL
+  - GIT       `Hakusan Shrine (Q135187226)`
+  - GIT       `Hakusan Shrine (Q135190114)`
+- **Q135215048** — git coverage: ALL
+  - GIT       `Hyōzu Shrine (Q135215048)`
+  - GIT       `Hyōzu Shrine (Q135270268)`
+- **Q135187180** — git coverage: NONE
+  - wiki-only `Shinmei Shrine (Q135187180)`
+  - wiki-only `Shinmei Shrine (Q135190090)`
+- **Q135187224** — git coverage: NONE
+  - wiki-only `Tenjin-sha (Q135187224)`
+  - wiki-only `Tenjin-sha (Q135190111)`
+- **Q135270114** — git coverage: NONE
+  - wiki-only `Mii Shrine (Q135505912)`
+  - wiki-only `Miino Shrine (Q135270114)`
+- **Q135069451** — git coverage: PARTIAL
+  - GIT       `Ihatewakeno- Shrine (Q135270278)`
+  - wiki-only `Suwa Shrine (Q135069451)`
+- **Q135069454** — git coverage: PARTIAL
+  - GIT       `Fusawokino Shrine (Q135270417)`
+  - wiki-only `Mishima Shrine (Q135069454)`
+- **Q135070298** — git coverage: PARTIAL
+  - GIT       `Hihameno- Shrine (Q135270442)`
+  - wiki-only `Sugio Shrine (Q135070298)`
+- **Q18233534** — git coverage: PARTIAL
+  - GIT       `Takamu Shrine (Q18233534)`
+  - wiki-only `Takamuno Shrine (Q135270313)`
+- **Q65734340** — git coverage: PARTIAL
+  - GIT       `Takehime Shrine (Q65734340)`
+  - wiki-only `Takehimeno Shrine (Q135270291)`
+
+## cross-namespace (different namespaces share one QID) (2 groups)
+
+- **Q1107129** — git coverage: NONE
+  - wiki-only `Sōja shrine`
+  - wiki-only `Template:Sōja shrines`
+- **Q1656379** — git coverage: NONE
+  - wiki-only `Ichinomiya`
+  - wiki-only `Template:Ichinomiya`
+

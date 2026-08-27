@@ -1,22 +1,3 @@
-{{Infobox religious building
-| name = Kuhaharano Shrine (Q135270271)
-| native_name = 桑原神社
-| mapframe = yes
-| mapframe-zoom = 15
-| mapframe-wikidata = yes
-| mapframe-point = none
-| map_type = Japan
-| map_caption = Kuhaharano Shrine (Q135270271)
-| coordinates = {{coord|35.602857|134.748042}}
-| map_relief = 1
-| religious_affiliation = [[Shinto]]
-}}
-
-{{nihongo|'''Kuhaharano Shrine'''|桑原神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Tajima Province]].
-
-[[Category:Wikidata generated shikinaisha pages|Kuhaharano Shrine (Q135270271)]][[Category:Shikinaisha|Kuhaharano Shrine (Q135270271)]][[Category:Shikinaisha|Kuhaharano Shrine (Q135270271)]][[Category:Kokuhei-sha]]
-
-{{wikidata link|Q135070075|grok=none|check_date=2026-05-31}}
-[[Category:Shikinaisha in Tajima Province]]
+#REDIRECT [[Kuwahara Shrine]]
 
 [[Category:Git synced pages]]
