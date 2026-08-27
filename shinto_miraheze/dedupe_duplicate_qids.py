@@ -412,10 +412,36 @@ def build_move_plan(state: dict, resolved: dict | None = None,
         no_jp = [p for p in pages if not JP_RE.search(p)]
 
         if has_jp and len(no_jp) == 1 and not has_qid_stub:
-            for non_canon in has_jp:
+            # Split by what the demoted page actually HOLDS. An unproven move is
+            # skipped at execution anyway, so emitting one as an "auto-move"
+            # overstates the plan: it promises an edit that can never happen.
+            # Measured 2026-08-27, 41 of these 44 demote a REAL ARTICLE, and in
+            # most cases the Japanese page is the LARGER of the two
+            # (健磐龍命 10,069 → 6,873 prose bytes; 上毛野国造 4,658 → 2,959). Those
+            # are content merges for a human, not redirects. Unmeasured counts as
+            # an article — the safe direction.
+            # A TEMPLATE's content is its markup, not its prose, so prose length
+            # cannot clear it: Template:警告 measures 0 prose and is 4,074 bytes of
+            # working template. Namespaced pairs are therefore always a merge for a
+            # human. Combined with the dump rule reaching every measured mainspace
+            # pair first, this leaves the script heuristic emitting nothing
+            # executable — which is the honest state, not a rule to keep pretending
+            # with.
+            if any(NAMESPACED_RE.match(p) for p in pages):
+                mergeable = list(has_jp)
+            else:
+                mergeable = [p for p in has_jp
+                             if prose_lengths.get(p, ARTICLE_PROSE_BYTES) >= ARTICLE_PROSE_BYTES]
+            demotable = [p for p in has_jp if p not in mergeable]
+            for non_canon in demotable:
                 auto_moves.append({
                     "qid": qid, "from": non_canon, "to": no_jp[0],
                     "reason": "JP-script → ASCII/rōmaji",
+                })
+            if mergeable:
+                ambiguous.append({
+                    "qid": qid, "pages": mergeable + [no_jp[0]],
+                    "reason": "two real articles — a content merge, not a redirect",
                 })
             continue
 

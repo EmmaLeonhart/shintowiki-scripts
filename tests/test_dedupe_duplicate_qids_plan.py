@@ -122,15 +122,32 @@ def test_template_doc_pair_is_never_a_duplicate():
     assert _reasons(ambiguous) == {"template/doc pair"}
 
 
-def test_japanese_script_fallback_still_applies_when_no_qid_is_in_the_title():
-    """Nothing for Wikidata to resolve, so the shape heuristic is all there is."""
+def test_a_measured_mainspace_jp_pair_resolves_by_CONTENT_not_by_script():
+    """Once measured, the dump rule reaches this before the script heuristic — and
+    that is strictly better, because the dump rule is PROVEN and can execute while
+    a JP-script move is unproven and always skips.
+
+    So in mainspace the script heuristic is effectively superseded: one dump plus
+    one article resolves as a property dump, and two articles is a content merge.
+    What is left for the script rule is the namespaced case below, where prose
+    length means nothing.
+    """
     state = {"尾張氏": "Q11465311", "Owari clan": "Q11465311"}
-    moves, ambiguous = build_move_plan(state, {"Q11465311": "Q11465311"})
+    prose = {"尾張氏": 40, "Owari clan": 2000}   # JP side holds nothing
+    moves, ambiguous = build_move_plan(state, {"Q11465311": "Q11465311"}, prose)
     assert ambiguous == []
     assert len(moves) == 1
     assert moves[0]["from"] == "尾張氏"
     assert moves[0]["to"] == "Owari clan"
-    assert moves[0]["reason"] == "JP-script → ASCII/rōmaji"
+    assert moves[0]["reason"] == "property dump → article (same QID)"
+
+
+def test_the_script_heuristic_survives_where_prose_cannot_decide():
+    """Unmeasured mainspace pair: no dump verdict available, script rule applies."""
+    state = {"尾張氏": "Q11465311", "Owari clan": "Q11465311"}
+    moves, ambiguous = build_move_plan(state, {"Q11465311": "Q11465311"})
+    assert moves == []          # unmeasured counts as an article -> content merge
+    assert ambiguous and "content merge" in ambiguous[0]["reason"]
 
 
 def test_three_page_group_with_two_real_names_is_ambiguous():
@@ -410,13 +427,24 @@ def test_a_template_beside_a_mainspace_article_is_a_wrong_link_not_a_merge():
     assert "wrong {{wikidata link}}" in ambiguous[0]["reason"]
 
 
-def test_two_templates_are_still_a_normal_cross_language_duplicate():
-    """Template:警告 beside Template:Warning IS a merge — the rule must not eat it."""
+def test_two_templates_are_a_cross_language_MERGE_not_a_wrong_link():
+    """Template:警告 beside Template:Warning is a genuine duplicate — the
+    cross-namespace wrong-link rule must not eat it (that rule is for a template
+    beside a MAINSPACE page).
+
+    But a duplicate is not a redirect. A template's content is its MARKUP, not its
+    prose: Template:警告 measures 0 prose and is 4,074 bytes of working template, so
+    redirecting over it would destroy it. It is classified as a content merge, and
+    the move it used to emit would have been skipped at execution anyway.
+    """
     state = {"Template:Warning": "Q5528794", "Template:警告": "Q5528794"}
-    moves, ambiguous = build_move_plan(state, {"Q5528794": "Q5528794"})
+    prose = {"Template:警告": 0, "Template:Warning": 1631}
+    moves, ambiguous = build_move_plan(state, {"Q5528794": "Q5528794"}, prose)
     assert not any("wrong {{wikidata link}}" in g["reason"] for g in ambiguous)
-    assert moves and moves[0]["from"] == "Template:警告"
-    assert moves[0]["to"] == "Template:Warning"
+    assert moves == []
+    assert len(ambiguous) == 1
+    assert ambiguous[0]["reason"] == "two real articles — a content merge, not a redirect"
+    assert "Template:警告" in ambiguous[0]["pages"]
 
 
 def test_a_category_beside_a_mainspace_page_is_also_a_wrong_link():
@@ -451,3 +479,38 @@ def test_an_unmeasured_alias_is_not_overwritten_either():
     moves, ambiguous = build_move_plan(state, {"Q1": "Q1"}, {}, labels)
     assert moves == []
     assert ambiguous
+
+
+def test_a_japanese_page_holding_a_real_article_is_a_content_merge():
+    """The plan must not promise an edit it cannot make.
+
+    An unproven move is skipped at execution, so emitting one as an "auto-move"
+    overstates what a run will do. Measured 2026-08-27, 41 of the 44 JP-script
+    pairs demote a REAL ARTICLE and the Japanese page is usually the LARGER of the
+    two — 健磐龍命 at 10,069 prose bytes against 6,873. Those are merges for a
+    human, not redirects.
+    """
+    state = {"健磐龍命": "Q9999", "Takeiwatatsu-no-Mikoto": "Q9999"}
+    prose = {"健磐龍命": 10069, "Takeiwatatsu-no-Mikoto": 6873}
+    moves, ambiguous = build_move_plan(state, {"Q9999": "Q9999"}, prose)
+    assert moves == []
+    assert len(ambiguous) == 1
+    assert ambiguous[0]["reason"] == "two real articles — a content merge, not a redirect"
+    assert "健磐龍命" in ambiguous[0]["pages"]
+
+
+def test_an_unmeasured_japanese_page_is_treated_as_an_article():
+    """Unknown must not authorise a promised edit any more than a destructive one."""
+    state = {"未計測": "Q9998", "Unmeasured Clan": "Q9998"}
+    moves, ambiguous = build_move_plan(state, {"Q9998": "Q9998"})
+    assert moves == []
+    assert ambiguous
+
+
+def test_a_mixed_group_splits_rather_than_being_all_or_nothing():
+    """One JP stub and one JP article beside the rōmaji title."""
+    state = {"スタブ": "Q9997", "本文あり": "Q9997", "Romaji Title": "Q9997"}
+    prose = {"スタブ": 30, "本文あり": 3000, "Romaji Title": 2000}
+    moves, ambiguous = build_move_plan(state, {"Q9997": "Q9997"}, prose)
+    assert [m["from"] for m in moves] == ["スタブ"]
+    assert ambiguous and "本文あり" in ambiguous[0]["pages"]

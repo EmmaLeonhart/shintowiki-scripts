@@ -11158,3 +11158,35 @@ Plan: 147 → **146 auto-moves** (Teranomikoto correctly withheld), 32 → **33 
 surviving alias moves are all genuine dumps at 23-32 bytes.
 
 2 new tests, 118 passing.
+
+## 2026-08-27 — the plan was promising 44 edits it could never make
+
+`build_move_plan` reported 146 auto-moves. Only 102 of them could ever happen: the 44
+`JP-script → ASCII/rōmaji` entries are unproven, so `perform_move` always returns
+`skipped:dst exists as real page (heuristic move, unproven)`.
+
+That is the same species as a wrong diagnostic label. Nobody reading "146 auto-moves" expects 44 of
+them to be inert, and the number is what a person uses to decide whether to run the thing.
+
+**What the 44 actually are.** 41 demote a REAL ARTICLE, and in most cases the Japanese page is the
+LARGER of the two — 健磐龍命 at 10,069 prose bytes against Takeiwatatsu-no-Mikoto's 6,873;
+上毛野国造 4,658 against 2,959. The heuristic's direction is wrong in content terms, not just unproven.
+They are content merges for a human.
+
+Now classified as `two real articles — a content merge, not a redirect`. Two consequences worth
+stating rather than burying:
+
+- **In mainspace the script heuristic is superseded entirely.** Once pages are measured, the dump rule
+  reaches every such pair first — and that is strictly better, because the dump rule is PROVEN and can
+  execute where a script move never could. `尾張氏` → `Owari clan` went from an inert JP-script move to
+  a real property-dump move.
+- **For templates it is superseded too, for a different reason.** A template's content is its MARKUP,
+  not its prose: `Template:警告` measures 0 prose and is 4,074 bytes of working template. Prose length
+  cannot clear it, so namespaced pairs are always a human merge.
+
+**So the JP-script heuristic now emits nothing executable at all.** Saying that plainly instead of
+leaving a rule that only produces moves which skip. Not deleting it this tick — that is a separate
+decision with its own reasoning, and it still does useful classification work.
+
+Plan: 146 → **102 auto-moves, all 102 proven**. Ambiguity 33 → 77, which is not a regression: it is the
+44 impossible moves moving to where they belonged. 122 passing.
