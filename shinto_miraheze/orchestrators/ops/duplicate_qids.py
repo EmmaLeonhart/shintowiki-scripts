@@ -60,10 +60,34 @@ def state_path() -> str:
     return _STATE_FILE
 
 
+def is_tracked_title(title: str) -> bool:
+    """False for documentation subpages, which are never a second entity.
+
+    A ``/doc`` subpage documents its parent template and legitimately carries
+    the parent's ``{{wikidata link}}``, so recording it manufactured a duplicate
+    for every documented template -- 21 of the 177 groups on the 2026-08-26
+    report were exactly this shape.
+
+    The link on those subpages is NOT to be stripped from the wiki. Read live on
+    2026-08-26, ``Template:Cite NIE/doc`` carries ``en|Cite NIE/doc`` where its
+    parent carries ``en|Cite NIE``: the calls are parameterised per page, so they
+    were written deliberately. The noise is ours to stop collecting, not theirs
+    to stop having.
+    """
+    return not title.endswith("/doc")
+
+
 def apply(title: str, text: str):
     """Per-page callback. Updates the shared dict only; returns (None, None)
     so the orchestrator never tries to save the page."""
     d = _load()
+    if not is_tracked_title(title):
+        # Also drop anything a previous run recorded, so the state self-cleans
+        # as the orchestrator revisits these pages.
+        if title in d:
+            d.pop(title, None)
+            _save(d)
+        return None, None
     m = WDLINK_RE.search(text)
     new_qid = m.group(1).upper() if m else None
     old_qid = d.get(title)

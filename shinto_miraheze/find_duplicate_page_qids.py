@@ -41,6 +41,8 @@ from collections import defaultdict
 import mwclient
 from wiki_login import login_with_retry
 
+from shinto_miraheze.orchestrators.ops.duplicate_qids import is_tracked_title
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 WDLINK_RE = re.compile(r"\{\{\s*wikidata\s*link\s*\|\s*(Q\d+)", re.IGNORECASE)
@@ -230,6 +232,17 @@ def main():
 
     state = load_state(STATE_FILE)
     print(f"Loaded state: {len(state)} tracked titles before verification")
+
+    # Documentation subpages are never a second entity -- they carry their
+    # parent template's {{wikidata link}} by design. Filtering here as well as
+    # in the collector op means the report clears in ONE render, instead of
+    # waiting for the template orchestrator's budgeted sweep to revisit each
+    # page and pop it. See ops/duplicate_qids.is_tracked_title.
+    doc_pages = [t for t in state if not is_tracked_title(t)]
+    if doc_pages:
+        for t in doc_pages:
+            state.pop(t, None)
+        print(f"Dropped {len(doc_pages)} /doc subpages (documentation, not duplicates)")
 
     # Login before verification — the verification pass needs API
     # access, and we want the same Site for the eventual report save.

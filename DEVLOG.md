@@ -10721,3 +10721,31 @@ closed handle. Anything already UTF-8 needs no help; a cp1252 Windows console st
 locally — the repo's workflows have not run since 22:14Z, so nothing here is CI-verified.
 
 Not run against the live wiki: `--apply` needs bot credentials, which this session does not have.
+
+## 2026-08-26 — /doc subpages are documentation, not duplicates (21 groups of report noise)
+
+Reads against the wiki work fine with the canonical `USER_AGENT` from `shinto_miraheze/user_agent.py`.
+Three status reports in a row called the report page BLOCKED-ON-EXTERNAL on a 403; the 403 was a
+hand-written User-Agent, and `CLAUDE.md` already said reads work with a compliant one. The farm
+allowlists bots by UA. Read live, the page confirms the state file exactly: 177 groups, 16,894 tracked,
+16,715 distinct.
+
+21 of those 177 are `Template:X` beside `Template:X/doc`. The subpage carries its parent's
+`{{wikidata link}}`, so the collector was manufacturing a duplicate for every documented template.
+
+**The link is NOT stripped from the wiki**, and the live read is why. `Template:Cite NIE/doc` carries
+`{{wikidata link|Q13566052|ja|Template:Cite NIE|en|Cite NIE/doc}}` while its parent carries
+`{{wikidata link|Q13566052|en|Cite NIE}}` — different parameters per page, so those calls were written
+deliberately, not copied. Per this repo's own rule a weird thing here is signal until proven otherwise.
+The noise is ours to stop collecting, not theirs to stop having.
+
+- `ops/duplicate_qids.py`: `is_tracked_title()` rejects a trailing `/doc`; `apply()` also pops an entry
+  a previous run recorded, so the state self-cleans as the orchestrator revisits those pages. The pop
+  writes only when there is something to remove — no state churn on every doc page every sweep.
+- `find_duplicate_page_qids.py`: filters at load as well, so the report clears in ONE render instead of
+  waiting for the template orchestrator's budgeted sweep to reach each page.
+
+Measured against the live state: 16,894 -> 16,868 tracked titles (26 `/doc`, of which 21 were in
+duplicate groups), 177 -> 156 groups, and no group containing a `/doc` title survives.
+
+7 new tests, 65 passing locally.
