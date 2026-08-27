@@ -11269,3 +11269,33 @@ empty. Local copy is byte-identical, so nothing was missed and nothing was stran
 
 Recording it because no harm resulted this time, which is exactly when a skipped habit is easiest to
 keep skipping. The check costs one API call.
+
+## 2026-08-27 — a wiki outage crashed the planner; now it retries, and fails LOUDLY if it cannot
+
+shinto.miraheze.org went unstable around 20:00Z — HTTP 502 on three attempts with 0/20/60s backoff,
+then 500s. `fetch_contents` had no error handling at all, so the read died with a raw `HTTPError`
+traceback and `--plan-only` would have done the same.
+
+**The traceback was the lesser problem.** The tempting fix is to catch the error and return whatever
+pages were read — and that would have been the dangerous one. An unmeasured page counts as an ARTICLE
+in `pick_canonical`, so dropping measurements silently yields a DIFFERENT, smaller plan: fewer
+property-dump moves, more groups filed as content merges. It would look complete, and someone could
+dispatch on it. So `fetch_contents` retries with hard backoff and then raises `WikiUnavailable`, and
+the planner exits rather than planning from partial data.
+
+**Verified against the real outage, not only mocks.** A `--plan-only` run logged:
+
+```
+Measuring 156 real-named pages (article vs property dump)...
+  read failed (attempt 1): HTTPError HTTP Error 500: Internal Server Error
+  read failed (attempt 2): HTTPError HTTP Error 500: Internal Server Error
+Move plan: 47 total auto-picks, 47 PROVEN, 51 ambiguous
+```
+
+Two live failures absorbed, correct plan produced. Before this the same run was a stack trace.
+
+Correcting myself inside the same tick: I said "the wiki recovered" after one clean run. It had not —
+the retries were absorbing the errors, and a later direct read returned 500 again. A thing that stops
+failing visibly is not the same as a thing that stopped failing.
+
+4 new tests, 129 passing. Deliberately not probing the wiki further while it is unwell.

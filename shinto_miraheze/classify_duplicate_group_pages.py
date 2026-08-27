@@ -65,6 +65,21 @@ QUERY_BATCH = 40
 # Wide margin, not a fine line: dumps measured 90-174, articles 587-11,419.
 ARTICLE_PROSE_BYTES = 200
 
+# Back off HARD on a wiki error rather than retrying tightly — the repo's standing
+# policy for 503/504, and the same courtesy a 502 deserves.
+FETCH_RETRY_DELAYS = (5, 20, 60)
+
+
+class WikiUnavailable(RuntimeError):
+    """The wiki could not be read, so no plan can be built.
+
+    ⚠ This is deliberately FATAL rather than a partial result. An unmeasured page
+    counts as an article, so silently dropping measurements produces a DIFFERENT,
+    smaller plan — one that looks complete and that someone could dispatch on. A
+    missing measurement must never quietly change what the planner proposes.
+    """
+
+
 
 def strip_templates(text: str) -> str:
     """Remove {{...}} including nested, innermost-first until stable."""
@@ -104,8 +119,25 @@ def fetch_contents(titles):
             "format": "json", "formatversion": "2",
         })
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=90) as fh:
-            data = json.load(fh)
+        data = None
+        last_error = None
+        for attempt, delay in enumerate((0,) + FETCH_RETRY_DELAYS):
+            if delay:
+                time.sleep(delay)
+            try:
+                with urllib.request.urlopen(req, timeout=90) as fh:
+                    data = json.load(fh)
+                break
+            except Exception as e:          # noqa: BLE001 - reported, not swallowed
+                last_error = e
+                print(f"  read failed (attempt {attempt + 1}): {type(e).__name__} {e}")
+        if data is None:
+            raise WikiUnavailable(
+                f"Could not read {len(batch)} pages from {API} after "
+                f"{len(FETCH_RETRY_DELAYS) + 1} attempts: {last_error}. "
+                f"No plan was built — a partial read would silently produce a "
+                f"smaller plan that looks complete."
+            ) from last_error
         for page in data.get("query", {}).get("pages", []):
             if page.get("missing"):
                 out[page["title"]] = None

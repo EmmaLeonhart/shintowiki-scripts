@@ -583,14 +583,21 @@ def main() -> None:
     # without network I/O. See classify_duplicate_group_pages for the method and
     # for the nested-template trap in measuring prose.
     from shinto_miraheze.classify_duplicate_group_pages import (
-        fetch_contents, prose_length,
+        WikiUnavailable, fetch_contents, prose_length,
     )
     candidates = sorted({p for q in dup_qids for p in qid_to_pages_m[q]
                          if not title_qid(p)})
     prose_lengths = {}
     if candidates:
         print(f"Measuring {len(candidates)} real-named pages (article vs property dump)...")
-        for title, text in fetch_contents(candidates).items():
+        try:
+            fetched = fetch_contents(candidates)
+        except WikiUnavailable as e:
+            # Refuse to plan rather than plan from partial data. See WikiUnavailable.
+            print()
+            print(f"ABORTING: {e}")
+            raise SystemExit(1)
+        for title, text in fetched.items():
             if text is not None:
                 prose_lengths[title] = prose_length(text)
         dumps = sum(1 for n in prose_lengths.values() if n < ARTICLE_PROSE_BYTES)
