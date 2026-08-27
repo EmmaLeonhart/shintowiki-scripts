@@ -138,19 +138,38 @@ def resolve_qid_redirects(qids, user_agent: str) -> dict:
 
 
 def pick_canonical(qid: str, pages: list[str]) -> str | None:
-    """The page that OWNS the group's QID, else the sole page with no QID stub.
+    """The sole real-named page, else the page that OWNS the group's QID.
 
-    Returns None when neither test picks exactly one page — two real names, two
+    ⚠ ORDER IS LOAD-BEARING, and it used to be the other way round. A title like
+    ``Takanono Shrine (Q135040588)`` is a generator PLACEHOLDER, not a name anyone
+    chose; the real name is the intended final title, which is why the repo's
+    original heuristic said QID-stub loses to real name. Preferring the
+    QID-owning page inverted that: for a group of ``X`` plus ``X (Qnnn)`` where
+    the stub's own QID is the group's, it picked the stub as canonical, then found
+    nothing left to prove (the real-named page has no QID in its title to resolve)
+    and dropped the whole group into the ambiguous bucket.
+
+    Measured 2026-08-27: that mis-ordering accounted for 16 of the 18 groups filed
+    under "QID stub with no Wikidata redirect", i.e. almost the entire unexplained
+    residue of the report. It would also have redirected real titles onto
+    placeholder ones had those pages not already been fixed by hand.
+
+    QID ownership still decides, but only among stubs — ``X (Q1)`` vs ``X (Q2)``
+    filed under Q1 — where there is no real name to prefer.
+
+    Returns None when neither test picks exactly one page: two real names, two
     unrelated stubs, a three-page group with two candidates. Ambiguous groups are
     reported, never guessed.
     """
+    no_stub = [p for p in pages if not QID_PAREN_RE.search(p)]
+    if len(no_stub) == 1:
+        return no_stub[0]
+    if no_stub:
+        return None          # two or more real names — a human picks
     exact = [p for p in pages if QID_PAREN_RE.search(p)
              and QID_PAREN_RE.search(p).group(0)[1:-1] == qid]
     if len(exact) == 1:
         return exact[0]
-    no_stub = [p for p in pages if not QID_PAREN_RE.search(p)]
-    if len(no_stub) == 1 and not exact:
-        return no_stub[0]
     return None
 
 
@@ -230,9 +249,17 @@ def build_move_plan(state: dict, resolved: dict | None = None) -> tuple[list[dic
                 })
             continue
 
-        if has_qid_stub:
-            reason = ("both QID stubs" if not no_qid_stub
-                      else "QID stub with no Wikidata redirect into the group QID")
+        # Name the reason it ACTUALLY fell through. These labels are the only
+        # description anyone gets of the residue, and a wrong one sends the next
+        # reader hunting a defect that is not there: 18 groups sat under "no
+        # Wikidata redirect" on 2026-08-27 when 16 were a canonical-precedence bug
+        # and the other 2 had a perfectly good redirect but two real names.
+        if len(no_qid_stub) > 1:
+            reason = "two or more real names — no single canonical"
+        elif has_qid_stub and not no_qid_stub:
+            reason = "both QID stubs, neither owns the group QID"
+        elif has_qid_stub:
+            reason = "QID stub with no Wikidata redirect into the group QID"
         else:
             reason = "unclear canonical"
         ambiguous.append({"qid": qid, "pages": pages, "reason": reason})

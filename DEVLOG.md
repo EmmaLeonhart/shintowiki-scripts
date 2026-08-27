@@ -10874,3 +10874,35 @@ file inside the repo, would both have been correct; `git checkout` on uncommitte
 restore, it is a discard.
 
 83 passing.
+
+## 2026-08-27 — the "unexplained" 18 were my own canonical-precedence bug
+
+Investigated the residue the dedupe pre-flight could not classify: 18 groups filed under "QID stub
+with no Wikidata redirect into the group QID". **16 of the 18 were a bug in `pick_canonical`.**
+
+It tried QID-ownership FIRST and the real name second. For the common shape — `X` plus `X (Qnnn)`
+where the stub's own QID happens to be the group's — that made the **placeholder title canonical**.
+Nothing was then left to prove, because the real-named page carries no QID in its title to resolve,
+so the entire group fell through to the ambiguous bucket wearing a label about missing redirects.
+
+That inverted the repo's own long-standing heuristic (QID-stub loses to real name) and contradicted
+what the manual redirect passes actually did on 08-26. Those pages were already fixed by hand, which
+is the only reason it never redirected a real title onto a placeholder.
+
+Order corrected: the sole real-named page wins; two or more real names is a human call; QID ownership
+decides only among stubs, where there is no real name to prefer.
+
+**And the labels were lying.** The fallback reported "QID stub with no Wikidata redirect" for anything
+that fell through with a stub present, including the 2 groups that had a perfectly good redirect and
+simply had two real names. A wrong diagnostic label is what sent me hunting 18 phantom defects, so the
+reasons now name what actually happened.
+
+Measured against the live state, before → after:
+
+- auto-moves **115 → 131** (proven-redirect moves 70 → 86; the +16 are exactly the mis-ordered groups)
+- ambiguous **62 → 46**
+- unexplained residue **18 → 0**. Everything left is 21 template/doc pairs (understood, and already
+  filtered out of the report) and 25 groups with two or more real names, which is a genuine human call.
+
+87 passing. One existing assertion changed — it asserted the buggy precedence, so it encoded the
+defect; replaced with tests pinning the corrected order in both directions.

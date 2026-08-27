@@ -149,8 +149,43 @@ def test_three_page_group_with_two_real_names_is_ambiguous():
 def test_pick_canonical_returns_none_when_nothing_wins_outright():
     assert pick_canonical("Q1", ["A Shrine", "B Shrine"]) is None
     assert pick_canonical("Q1", ["A (Q2)", "B (Q3)"]) is None
-    assert pick_canonical("Q1", ["A (Q1)", "B Shrine"]) == "A (Q1)"
     assert pick_canonical("Q1", ["A (Q2)", "B Shrine"]) == "B Shrine"
+
+
+def test_a_real_name_beats_a_qid_stub_even_when_the_stub_owns_the_qid():
+    """This assertion used to say the opposite, and the opposite was the bug.
+
+    A title like ``Takanono Shrine (Q135040588)`` is a generator PLACEHOLDER. When
+    the group is ``X`` plus ``X (Qnnn)`` and the stub's own QID happens to BE the
+    group's, preferring the stub made it canonical — then nothing was left to prove,
+    because the real-named page carries no QID in its title to resolve. The whole
+    group fell into the ambiguous bucket.
+
+    Measured 2026-08-27: 16 of the 18 groups filed as "QID stub with no Wikidata
+    redirect" were this, i.e. nearly the entire unexplained residue of the report.
+    """
+    assert pick_canonical("Q1", ["A (Q1)", "B Shrine"]) == "B Shrine"
+
+
+def test_qid_ownership_still_decides_between_two_stubs():
+    """With no real name to prefer, owning the group QID is the tiebreak."""
+    assert pick_canonical("Q1", ["A (Q1)", "B (Q2)"]) == "A (Q1)"
+    assert pick_canonical("Q1", ["A (Q2)", "B (Q1)"]) == "B (Q1)"
+
+
+def test_two_real_names_are_never_guessed_between():
+    assert pick_canonical("Q1", ["A Shrine", "B Shrine", "C (Q1)"]) is None
+
+
+def test_the_stub_owning_the_qid_becomes_a_provable_move_not_an_ambiguity():
+    """The end-to-end shape of the 16: it should now plan, not fall through."""
+    state = {"Hijiri Shrine (Q11611103)": "Q11611103",
+             "Hijiri Shrine (Izumi, Osaka)": "Q11611103"}
+    moves, ambiguous = build_move_plan(state, {"Q11611103": "Q11611103"})
+    assert ambiguous == []
+    assert len(moves) == 1
+    assert moves[0]["from"] == "Hijiri Shrine (Q11611103)"
+    assert moves[0]["to"] == "Hijiri Shrine (Izumi, Osaka)"
 
 
 def test_resolved_none_falls_back_to_heuristics_only():
