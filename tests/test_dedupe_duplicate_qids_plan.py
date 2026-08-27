@@ -336,8 +336,9 @@ def test_a_lone_real_name_stays_canonical_even_when_it_is_a_dump():
 def test_variant_romanisations_resolve_via_label_and_alias():
     state = {"Shioe Shrine": "Q135187121", "Shionoe Shrine": "Q135187121"}
     labels = {"Q135187121": ("Shioe Shrine", {"Shionoe Shrine"})}
+    prose = {"Shioe Shrine": 32, "Shionoe Shrine": 32}   # both property dumps
     moves, ambiguous = build_move_plan(state, {"Q135187121": "Q135187121"},
-                                       None, labels)
+                                       prose, labels)
     assert ambiguous == []
     assert len(moves) == 1
     assert moves[0]["from"] == "Shionoe Shrine"
@@ -423,3 +424,30 @@ def test_a_category_beside_a_mainspace_page_is_also_a_wrong_link():
     moves, ambiguous = build_move_plan(state, {"Q999": "Q999"})
     assert moves == []
     assert "wrong {{wikidata link}}" in ambiguous[0]["reason"]
+
+
+def test_an_alias_that_is_a_real_article_is_not_overwritten():
+    """Wikidata calling two names one thing ≠ one article containing the other.
+
+    `Teranomikoto Shrine` IS a registered alias of Kamisawa Shrine's item, and it
+    also carries an imported `== Japanese Wikipedia content ==` section that
+    Kamisawa does not have. Before this check the alias rule was in PROVEN_REASONS
+    with no article test, so it would have redirected straight over that content —
+    the same failure the JP-script heuristic was gated for.
+    """
+    state = {"Kamisawa Shrine": "Q134930636", "Teranomikoto Shrine": "Q134930636"}
+    labels = {"Q134930636": ("Kamisawa Shrine", {"Teranomikoto Shrine"})}
+    prose = {"Kamisawa Shrine": 959, "Teranomikoto Shrine": 308}   # both real
+    moves, ambiguous = build_move_plan(state, {"Q134930636": "Q134930636"},
+                                       prose, labels)
+    assert moves == []
+    assert ambiguous
+
+
+def test_an_unmeasured_alias_is_not_overwritten_either():
+    """Unknown must never authorise a destructive edit."""
+    state = {"Keep Shrine": "Q1", "Alias Shrine": "Q1"}
+    labels = {"Q1": ("Keep Shrine", {"Alias Shrine"})}
+    moves, ambiguous = build_move_plan(state, {"Q1": "Q1"}, {}, labels)
+    assert moves == []
+    assert ambiguous

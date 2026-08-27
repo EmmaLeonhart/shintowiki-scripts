@@ -373,7 +373,17 @@ def build_move_plan(state: dict, resolved: dict | None = None,
                 if resolved.get(title_qid(p)) == qid:
                     proven.append((p, REASON_WD_REDIRECT))
                 elif (not title_qid(p) and qid in labels
-                      and p in (labels[qid][1] or set())):
+                      and p in (labels[qid][1] or set())
+                      # ⚠ Wikidata saying two names denote one thing does NOT mean
+                      # one article contains the other. Without this check the
+                      # alias rule would redirect over a real page: measured
+                      # 2026-08-27, `Teranomikoto Shrine` is a registered alias of
+                      # Kamisawa Shrine's item AND carries an imported
+                      # `== Japanese Wikipedia content ==` section that Kamisawa
+                      # does not have. Same reasoning that gated the JP-script
+                      # heuristic. An UNMEASURED page counts as an article — the
+                      # safe direction.
+                      and prose_lengths.get(p, ARTICLE_PROSE_BYTES) < ARTICLE_PROSE_BYTES):
                     proven.append((p, REASON_WD_ALIAS))
                 elif (not title_qid(p) and p in prose_lengths
                       and prose_lengths[p] < ARTICLE_PROSE_BYTES):

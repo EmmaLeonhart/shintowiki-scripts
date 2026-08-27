@@ -11128,3 +11128,33 @@ succeeded, and the timeout is 150. That was absence-of-information reported as a
 repo's CLAUDE.md warns about by name, and the check took one command.
 
 5 new tests, 116 passing.
+
+## 2026-08-27 — two defects in yesterday's own rules, found by asking why one move looked odd
+
+The alias rule proposed demoting `Teranomikoto Shrine` at 587 bytes of prose — not dump-shaped. Pulling
+that thread found two things, both mine.
+
+**1. `prose_length` counted `<ref>` CONTENTS as prose.** It stripped tags (`<[^>]+>`) but not what sat
+between them, so citation text and URLs scored as article prose. `Teranomikoto Shrine` measured 587 on
+nothing but two Kokugakuin reference URLs. Now strips `<ref …>…</ref>` bodies and self-closing refs.
+
+**2. `REASON_WD_ALIAS` allowed content overwrite with NO article check.** It sat in `PROVEN_REASONS`,
+so any page that is a registered Wikidata alias could be redirected over regardless of what it held.
+That is precisely the failure the JP-script heuristic was gated for, reintroduced by a different door.
+
+And the two compound, which is why this was worth chasing rather than filing as cosmetic. With refs
+stripped, `Teranomikoto Shrine` still measures **308** — because it carries an imported
+`== Japanese Wikipedia content ==` section, real Japanese prose that `Kamisawa Shrine` does not have.
+So it is a HYBRID: property dump plus genuine content. The alias rule would have redirected over it and
+that content would have gone. The fix withholds it: an alias is only proven when the demoted page is
+not a real article, and an **unmeasured** page counts as an article — unknown must never authorise a
+destructive edit.
+
+Worth stating: the ref fix alone would have made this LOOK safe while leaving the hazard, since 308 is
+still above the threshold only by luck of how much jawiki text was imported. The article check is what
+actually protects it.
+
+Plan: 147 → **146 auto-moves** (Teranomikoto correctly withheld), 32 → **33 ambiguous**. The three
+surviving alias moves are all genuine dumps at 23-32 bytes.
+
+2 new tests, 118 passing.

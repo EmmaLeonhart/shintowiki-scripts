@@ -80,6 +80,14 @@ def prose_length(text: str) -> int:
     t = strip_templates(t)
     t = re.sub(r"\[\[Category:[^\]]*\]\]", "", t)
     t = re.sub(r"\[\[File:[^\]]*\]\]", "", t, flags=re.IGNORECASE)
+    # ⚠ Strip ref BODIES, not just the tags. Removing only `<[^>]+>` leaves the
+    # citation text and URLs behind and counts them as prose. Measured 2026-08-27,
+    # that scored `Teranomikoto Shrine` -- a property dump whose headings are
+    # `instance of (P31)` and `part of (P361)` -- at 587 bytes, past the 200-byte
+    # threshold, on nothing but two Kokugakuin reference URLs. A citation is not
+    # article prose.
+    t = re.sub(r"<ref[^>]*/>", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"<ref[^>]*>.*?</ref>", "", t, flags=re.IGNORECASE | re.DOTALL)
     t = re.sub(r"<[^>]+>", "", t)
     t = re.sub(r"^=+.*$", "", t, flags=re.MULTILINE)
     t = re.sub(r"\[\[([^\]|]*\|)?([^\]]*)\]\]", r"\2", t)
