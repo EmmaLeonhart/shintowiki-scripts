@@ -11052,3 +11052,31 @@ category-translation machinery.
 
 Plan unchanged at 147 auto-moves; ambiguity now reads 21 template/doc + 2 wrong-link + 9 genuine,
 where before it lumped 11 unlike things together. 104 passing, 3 new.
+
+## 2026-08-27 — the four wrong-link pages have no correct QID to point at
+
+Followed the wrong-link classification to its actionable end: if the page is fine and only its
+`{{wikidata link}}` is wrong, what SHOULD it point at? Searched Wikidata, then read the pages.
+
+**Nothing. For all four.**
+
+- `Template:Ichinomiya`, `Template:Sōja shrines` — no `Wikimedia template` item exists for either.
+  Searching "Template:Ichinomiya" and "Template:Sōja shrines" returns nothing at all.
+- `Benzaiten shrines` — reading it settles what it is: *"Major Shrines Dedicated to Benzaiten"*,
+  a LIST (Enoshima, Zeniarai, Tenkawa Daibenzaiten, …). Wikidata has many individual *Benzaiten
+  Shrine* items (Q11486977, Q111024192, Q12151092 …) but no item for the class or the list. It is
+  certainly not Q818468, the water deity.
+- `Hime Shrine` — same shape: *"Shrines dedicated to Himegami are found throughout Japan… often the
+  sessha of larger shrines"*, then a list. Wikidata has several distinct *Hime Shrine* items
+  (Q11447444, Q60985334, Q43594869 …) and it is not any one of them, nor Q22070227, the goddess.
+
+So the two mainspace pages are **list articles wearing a deity's QID**, and the two templates are
+navboxes wearing a concept's QID. In every case the page is correct and the link is the defect, and
+in every case the honest repair is to REMOVE the link rather than repoint it — there is nothing to
+repoint to.
+
+Removing content is Emma's call, not a session's, and this repo's standing rule is that a weird thing
+here is signal until proven otherwise. Surfaced to her as a question with the premise established
+first, rather than asked as "which title wins", which would have been wrong for all four.
+
+Nothing edited. 104 passing.
