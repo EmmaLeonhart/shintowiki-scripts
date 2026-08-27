@@ -77,6 +77,33 @@ GIT_SYNCED_RE = re.compile(r"\[\[\s*Category\s*:\s*Git synced pages\s*\]\]",
 JP_RE = re.compile(r"[぀-ヿ一-鿿＀-￯]")
 QID_PAREN_RE = re.compile(r"\(Q\d+\)")
 
+# A page is a Wikidata PROPERTY DUMP, not an article, if almost nothing survives
+# stripping its `== … (Pxxx) ==` sections, templates and markup. Measured across
+# the whole duplicate report on 2026-08-27, dumps land at 90-174 bytes of prose
+# and real articles at 587-11,419 — so this threshold sits in a wide gap, not on a
+# fine line. `shinto_miraheze/classify_duplicate_group_pages.py` produces the map.
+ARTICLE_PROSE_BYTES = 200
+
+REASON_WD_REDIRECT = "Wikidata redirect → same item"
+REASON_PROPERTY_DUMP = "property dump → article (same QID)"
+# Reasons allowed to overwrite a live page's content with a redirect. A Wikidata
+# redirect proves one entity; a property dump has no content to lose. The
+# JP-script heuristic is deliberately absent — see perform_move.
+PROVEN_REASONS = frozenset({REASON_WD_REDIRECT, REASON_PROPERTY_DUMP})
+
+# Prose length only means something for ARTICLES. A template or a category has
+# little prose by nature, so the dump test classifies almost any of them as a dump
+# and the tie-break then picks whichever happens to have more words. Measured
+# 2026-08-27, that proposed `Template:Topic category` -> `Template:テーマカテゴリ`
+# and `Template:Japanese year` -> `Template:和暦`, pointing English at Japanese and
+# inverting this wiki's own convention. Mainspace only.
+NAMESPACED_RE = re.compile(r"^[A-Za-z][A-Za-z ]*:")
+
+# A destination must not be a malformed title. `Mishima Shrine (Minamiizu )` has a
+# trailing space inside its disambiguator; redirecting a well-formed page into it
+# would make the typo canonical.
+MALFORMED_TITLE_RE = re.compile(r"\s\)|\s$|  ")
+
 
 def load_json(path: str) -> dict:
     if not os.path.exists(path):
@@ -137,7 +164,8 @@ def resolve_qid_redirects(qids, user_agent: str) -> dict:
     return out
 
 
-def pick_canonical(qid: str, pages: list[str]) -> str | None:
+def pick_canonical(qid: str, pages: list[str],
+                   prose_lengths: dict | None = None) -> str | None:
     """The sole real-named page, else the page that OWNS the group's QID.
 
     ⚠ ORDER IS LOAD-BEARING, and it used to be the other way round. A title like
@@ -162,6 +190,25 @@ def pick_canonical(qid: str, pages: list[str]) -> str | None:
     reported, never guessed.
     """
     no_stub = [p for p in pages if not QID_PAREN_RE.search(p)]
+
+    # A property dump is not a real name. It has no `(Qnnn)` suffix, so a
+    # title-only test cannot tell it from an article, and every one sitting
+    # opposite a genuine article turned a mechanical merge into a decision handed
+    # to a human — 12 of the 25 such groups on 2026-08-27. An unmeasured page
+    # counts as an article: unknown must never demote something real.
+    # ⚠ Only a TIE-BREAKER among several real names. Applying it to a lone real
+    # name is a regression I measured before shipping: a group of `X (Qnnn)` plus a
+    # dump-shaped `X` was resolving fine, and disqualifying `X` for being a dump
+    # pushed it into the ambiguous bucket — moves 131 -> 103, ambiguity 46 -> 75.
+    # A dump is a page that needs CONTENT, not a page with the wrong title; when it
+    # is the only real name it is still the right destination.
+    if prose_lengths and len(no_stub) > 1 and not any(NAMESPACED_RE.match(p) for p in no_stub):
+        articles = [p for p in no_stub
+                    if prose_lengths.get(p, ARTICLE_PROSE_BYTES) >= ARTICLE_PROSE_BYTES]
+        if len(articles) == 1 and not MALFORMED_TITLE_RE.search(articles[0]):
+            return articles[0]
+        return None          # several articles, none, or a malformed target
+
     if len(no_stub) == 1:
         return no_stub[0]
     if no_stub:
@@ -178,7 +225,8 @@ def title_qid(title: str) -> str | None:
     return m.group(0)[1:-1] if m else None
 
 
-def build_move_plan(state: dict, resolved: dict | None = None) -> tuple[list[dict], list[dict]]:
+def build_move_plan(state: dict, resolved: dict | None = None,
+                    prose_lengths: dict | None = None) -> tuple[list[dict], list[dict]]:
     """Return (auto_moves, ambiguous_groups) from the duplicate-QID state.
 
     PRIMARY RULE (Emma, 2026-08-26): *"if one redirects into another on wikidata
@@ -199,6 +247,7 @@ def build_move_plan(state: dict, resolved: dict | None = None) -> tuple[list[dic
     primary rule entirely (offline/unit-test use) and fall back to heuristics.
     """
     resolved = resolved or {}
+    prose_lengths = prose_lengths or {}
     qid_to_pages: dict[str, list[str]] = defaultdict(list)
     for title, qid in state.items():
         qid_to_pages[qid].append(title)
@@ -218,17 +267,28 @@ def build_move_plan(state: dict, resolved: dict | None = None) -> tuple[list[dic
             continue
 
         # ── PRIMARY: proven Wikidata redirect ──────────────────────
-        canonical = pick_canonical(qid, pages)
+        canonical = pick_canonical(qid, pages, prose_lengths)
         if canonical is not None:
-            proven = [p for p in pages
-                      if p != canonical and resolved.get(title_qid(p)) == qid]
+            proven = []
+            for p in pages:
+                if p == canonical:
+                    continue
+                if resolved.get(title_qid(p)) == qid:
+                    proven.append((p, REASON_WD_REDIRECT))
+                elif (not title_qid(p) and p in prose_lengths
+                      and prose_lengths[p] < ARTICLE_PROSE_BYTES):
+                    # Same QID, and nothing to lose: the page is a generated
+                    # property dump whose prose is boilerplate.
+                    proven.append((p, REASON_PROPERTY_DUMP))
             if proven:
-                for non_canon in proven:
+                for non_canon, why in proven:
                     auto_moves.append({
                         "qid": qid, "from": non_canon, "to": canonical,
-                        "reason": "Wikidata redirect → same item",
+                        "reason": why,
                     })
-                unproven = [p for p in pages if p != canonical and p not in proven]
+                proven_pages = {p for p, _ in proven}
+                unproven = [p for p in pages
+                            if p != canonical and p not in proven_pages]
                 if unproven:
                     ambiguous.append({"qid": qid, "pages": unproven,
                                       "reason": "no Wikidata redirect into the group QID"})
@@ -373,7 +433,26 @@ def main() -> None:
     n_red = sum(1 for k, v in resolved.items() if v and v != k)
     print(f"  {n_red} of {len(resolved)} resolve to a different QID (redirects)")
 
-    auto_moves, ambiguous = build_move_plan(state, resolved)
+    # Measure the real-named pages so a property dump is not mistaken for an
+    # article. Done HERE rather than inside build_move_plan on purpose: the
+    # planner stays pure (titles + two lookup maps), so every test can call it
+    # without network I/O. See classify_duplicate_group_pages for the method and
+    # for the nested-template trap in measuring prose.
+    from shinto_miraheze.classify_duplicate_group_pages import (
+        fetch_contents, prose_length,
+    )
+    candidates = sorted({p for q in dup_qids for p in qid_to_pages_m[q]
+                         if not title_qid(p)})
+    prose_lengths = {}
+    if candidates:
+        print(f"Measuring {len(candidates)} real-named pages (article vs property dump)...")
+        for title, text in fetch_contents(candidates).items():
+            if text is not None:
+                prose_lengths[title] = prose_length(text)
+        dumps = sum(1 for n in prose_lengths.values() if n < ARTICLE_PROSE_BYTES)
+        print(f"  {dumps} of {len(prose_lengths)} are property dumps")
+
+    auto_moves, ambiguous = build_move_plan(state, resolved, prose_lengths)
     pending = [m for m in auto_moves if m["from"] not in done]
 
     print(f"Move plan: {len(auto_moves)} total auto-picks, "
@@ -401,7 +480,7 @@ def main() -> None:
         print(f"    →   {repr(dst)}")
 
         result = perform_move(site, src, dst, args.run_tag, args.apply,
-                              proven=reason.startswith("Wikidata redirect"))
+                              proven=reason in PROVEN_REASONS)
         print(f"  → {result}")
 
         if result.startswith(("moved", "redirected", "dry")):

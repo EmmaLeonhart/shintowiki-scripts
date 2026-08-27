@@ -204,3 +204,124 @@ def test_singleton_qids_produce_no_plan():
     moves, ambiguous = build_move_plan(state, {})
     assert moves == []
     assert ambiguous == []
+
+
+# ── property dumps are not real names ─────────────────────────────────────
+#
+# `pick_canonical` reads titles, and a Wikidata property dump -- an infobox plus
+# `== instance of (P31) ==` sections -- carries no `(Qnnn)` suffix, so it looks
+# exactly like an article. Every dump opposite a real article became a decision
+# handed to a human: 12 of the 25 such groups measured on 2026-08-27.
+
+DUMP = 94        # measured: dumps land at 90-174 bytes of prose
+ARTICLE = 1812   # measured: real articles at 587-11,419
+
+
+def test_a_property_dump_does_not_count_as_a_real_name():
+    state = {"Mononobe Shrine (Higashi-ku, Nagoya)": "Q18235752",
+             "Mononobe Shrine (Nagoya)": "Q18235752"}
+    prose = {"Mononobe Shrine (Higashi-ku, Nagoya)": ARTICLE,
+             "Mononobe Shrine (Nagoya)": DUMP}
+    moves, ambiguous = build_move_plan(state, {"Q18235752": "Q18235752"}, prose)
+    assert ambiguous == []
+    assert len(moves) == 1
+    assert moves[0]["from"] == "Mononobe Shrine (Nagoya)"
+    assert moves[0]["to"] == "Mononobe Shrine (Higashi-ku, Nagoya)"
+    assert moves[0]["reason"] == "property dump → article (same QID)"
+
+
+def test_two_real_articles_are_still_a_human_call():
+    state = {"Benzaiten": "Q818468", "Benzaiten shrines": "Q818468"}
+    prose = {"Benzaiten": 11419, "Benzaiten shrines": 588}
+    moves, ambiguous = build_move_plan(state, {"Q818468": "Q818468"}, prose)
+    assert moves == []
+    assert ambiguous and "real names" in ambiguous[0]["reason"]
+
+
+def test_two_dumps_are_not_ranked_against_each_other():
+    """Nothing to prefer; picking one would be a guess dressed as a rule."""
+    state = {"Shioe Shrine": "Q135187121", "Shionoe Shrine": "Q135187121"}
+    prose = {"Shioe Shrine": 32, "Shionoe Shrine": 32}
+    moves, ambiguous = build_move_plan(state, {"Q135187121": "Q135187121"}, prose)
+    assert moves == []
+    assert ambiguous
+
+
+def test_an_unmeasured_page_is_treated_as_an_article():
+    """Unknown must never demote something real — the safe direction."""
+    state = {"Measured Shrine": "Q1", "Unmeasured Shrine": "Q1"}
+    prose = {"Measured Shrine": ARTICLE}          # the other was never fetched
+    moves, ambiguous = build_move_plan(state, {"Q1": "Q1"}, prose)
+    assert moves == []
+    assert ambiguous
+
+
+def test_omitting_prose_lengths_keeps_the_old_behaviour():
+    state = {"Mononobe Shrine (Higashi-ku, Nagoya)": "Q18235752",
+             "Mononobe Shrine (Nagoya)": "Q18235752"}
+    moves, ambiguous = build_move_plan(state, {"Q18235752": "Q18235752"})
+    assert moves == []
+    assert ambiguous
+
+
+def test_a_dump_beside_a_stub_and_an_article_resolves_to_the_article():
+    """The three-page Mononobe group as it actually is on the wiki."""
+    state = {"Mononobe Shrine (Higashi-ku, Nagoya)": "Q18235752",
+             "Mononobe Shrine (Nagoya)": "Q18235752",
+             "Mononoheno Shrine (Q135270316)": "Q18235752"}
+    prose = {"Mononobe Shrine (Higashi-ku, Nagoya)": ARTICLE,
+             "Mononobe Shrine (Nagoya)": DUMP}
+    resolved = {"Q135270316": "Q18235752", "Q18235752": "Q18235752"}
+    moves, ambiguous = build_move_plan(state, resolved, prose)
+    assert ambiguous == []
+    assert {m["from"] for m in moves} == {"Mononobe Shrine (Nagoya)",
+                                         "Mononoheno Shrine (Q135270316)"}
+    assert {m["to"] for m in moves} == {"Mononobe Shrine (Higashi-ku, Nagoya)"}
+    assert {m["reason"] for m in moves} == {"property dump → article (same QID)",
+                                           "Wikidata redirect → same item"}
+
+
+def test_the_dump_rule_does_not_apply_to_templates():
+    """Prose length says nothing about a template.
+
+    Templates carry little prose by nature, so the dump test marks almost any of
+    them a dump and the tie-break then picks whichever has more words. Measured
+    2026-08-27, that proposed Template:Topic category -> Template:テーマカテゴリ
+    and Template:Japanese year -> Template:和暦 — pointing English at Japanese and
+    inverting this wiki's own convention.
+    """
+    state = {"Template:Topic category": "Q13413959",
+             "Template:テーマカテゴリ": "Q13413959"}
+    prose = {"Template:Topic category": 40, "Template:テーマカテゴリ": 300}
+    moves, ambiguous = build_move_plan(state, {"Q13413959": "Q13413959"}, prose)
+    assert not any(m["reason"].startswith("property dump") for m in moves)
+
+
+def test_a_malformed_title_is_never_made_canonical():
+    """`Mishima Shrine (Minamiizu )` has a trailing space in its disambiguator.
+
+    Redirecting a well-formed page into it would make the typo the canonical name.
+    """
+    state = {"Mishima Shrine (Iruma)": "Q134930713",
+             "Mishima Shrine (Minamiizu )": "Q134930713"}
+    prose = {"Mishima Shrine (Iruma)": DUMP,
+             "Mishima Shrine (Minamiizu )": ARTICLE}
+    moves, ambiguous = build_move_plan(state, {"Q134930713": "Q134930713"}, prose)
+    assert moves == []
+    assert ambiguous
+
+
+def test_a_lone_real_name_stays_canonical_even_when_it_is_a_dump():
+    """The regression I shipped and caught by measuring.
+
+    A dump is a page that needs CONTENT, not one with the wrong title. Treating it
+    as disqualified pushed resolvable groups into the ambiguous bucket — the whole
+    plan went 131 -> 103 moves and 46 -> 75 ambiguous before this was scoped to
+    multi-real-name groups only.
+    """
+    state = {"Some Shrine (Q900001)": "Q900001", "Some Shrine": "Q900001"}
+    prose = {"Some Shrine": DUMP}
+    moves, ambiguous = build_move_plan(state, {"Q900001": "Q900001"}, prose)
+    assert ambiguous == []
+    assert len(moves) == 1
+    assert moves[0]["to"] == "Some Shrine"

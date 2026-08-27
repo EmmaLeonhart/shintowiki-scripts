@@ -10940,3 +10940,34 @@ nothing to apply — rather than leaving it a throwaway, since the planner chang
 need it again. Separation is 90–174 vs 587–11,419, so the 200-byte threshold is not a fine call.
 
 Nothing edited on this pass, by the queue item's own terms. 87 passing.
+
+## 2026-08-27 — the planner can now tell a property dump from an article
+
+Implements the queued change. `build_move_plan` and `pick_canonical` take an optional
+`prose_lengths` map; `main()` measures the real-named pages and passes it in. The planner stays PURE —
+titles plus two lookup maps — so every test calls it without network I/O, which was the design
+constraint recorded when this was queued.
+
+New proof kind, `property dump → article (same QID)`: two pages on one QID where the demoted one is a
+generated dump whose prose is boilerplate. It joins `PROVEN_REASONS`, so it may overwrite content —
+justified because there is no content to lose, unlike the JP-script heuristic which stays excluded.
+
+**Three things I got wrong and caught by measuring rather than reasoning:**
+
+1. **Disqualifying a lone real name for being a dump.** Moves went 131 → 103 and ambiguity 46 → 75.
+   A dump is a page that needs CONTENT, not one with the wrong title; when it is the only real name it
+   is still the right destination. The article test is a TIE-BREAKER among several real names, nothing
+   more.
+2. **Applying the dump test to templates.** Templates have little prose by nature, so nearly all of
+   them classify as dumps and the tie-break picks whichever has more words — it proposed
+   `Template:Topic category` → `Template:テーマカテゴリ` and `Template:Japanese year` → `Template:和暦`,
+   pointing English at Japanese against this wiki's own convention. Mainspace only now.
+3. **Redirecting into a malformed title.** `Mishima Shrine (Iruma)` → `Mishima Shrine (Minamiizu )` —
+   the destination has a trailing space inside its disambiguator, so the merge would have made a typo
+   canonical.
+
+Plan against the live state, 131 → **142 auto-moves**, 46 → **36 ambiguous**:
+`Wikidata redirect` 87 · `JP-script` 44 (still never overwriting content) · `property dump` 11.
+What is left is 21 template/doc pairs and 15 genuine two-article groups.
+
+96 passing, 9 new — including the lone-dump regression and both guards.
