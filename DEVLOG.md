@@ -10906,3 +10906,37 @@ Measured against the live state, before → after:
 
 87 passing. One existing assertion changed — it asserted the buggy precedence, so it encoded the
 defect; replaced with tests pinning the corrected order in both directions.
+
+## 2026-08-27 — half the "human calls" were not decisions at all
+
+`pick_canonical` treats any title without a `(Qnnn)` suffix as a real name. A Wikidata **property
+dump** — a page that is an infobox plus `== instance of (P31) ==` style sections and nothing else —
+has exactly that shape. So every dump sitting opposite a real article turned a mechanical merge into
+a decision handed to Emma. Mononobe was the first one caught, by reading it; this pass measured the
+whole bucket.
+
+Of the **25** groups filed as "two or more real names":
+
+- **12 have exactly ONE genuine article.** The other side is a dump of 90–174 bytes of prose —
+  `Mononobe Shrine (Nagoya)`, `Mishima Shrine (Tsumara)`, `Inaba Shrine (Gifu)`, `Template:Ichinomiya`
+  and eight more. Not human calls.
+- **8 are genuinely two articles** and stay Emma's: `Benzaiten` (11,419b) vs `Benzaiten shrines`
+  (588b), `Hime Shrine` vs `Himegami`, `Sōja shrine` vs `Template:Sōja shrines`, `Amatsu Shrine` vs
+  `Amatsu Shrine (Itoigawa)`, and four more. Several look like genuinely different subjects sharing a
+  QID rather than duplicates — a wrong-link problem, not a merge.
+- **5 have no genuine article on either side** (both 0–80 bytes): Kaneno/Kinshin, the two
+  `Category:Asia*` pages, and two 32-byte pairs.
+
+**The measurement trap, worth keeping.** A single `re.sub(r"\{\{[^{}]*\}\}", "", text)` cannot match a
+template that contains another template, so infoboxes survive and get counted as prose. That scored
+`Mononobe Shrine (Nagoya)` at 491 "prose" bytes and classified a dump as an article — the exact
+opposite of the truth, and it contradicted a finding I had already established two ticks earlier by
+reading the page. Repeated innermost-first stripping scores it 94 against a real article's 1,812.
+I only caught it because the new answer disagreed with the old one; a first-time run would have been
+believed.
+
+Committed the classifier as `shinto_miraheze/classify_duplicate_group_pages.py` — read-only, no flags,
+nothing to apply — rather than leaving it a throwaway, since the planner change it argues for will
+need it again. Separation is 90–174 vs 587–11,419, so the 200-byte threshold is not a fine call.
+
+Nothing edited on this pass, by the queue item's own terms. 87 passing.
