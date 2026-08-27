@@ -11299,3 +11299,31 @@ the retries were absorbing the errors, and a later direct read returned 500 agai
 failing visibly is not the same as a thing that stopped failing.
 
 4 new tests, 129 passing. Deliberately not probing the wiki further while it is unwell.
+
+## 2026-08-27 — the module docstring described rules the file no longer has
+
+`dedupe_duplicate_qids.py` opens by listing two canonical-selection heuristics —
+QID-stub-loses-to-real-name, and ASCII-beats-Japanese — and presents the second as a live rule. After
+this week's work the actual rules are: proven Wikidata redirect, property dump → article, Wikidata
+label/alias, with the script heuristic superseded and emitting nothing executable. The docstring also
+never mentioned `--plan-only`, or the proven/unproven gate that decides whether a page may be
+redirected over.
+
+Same defect class as everything else chased today — a wrong label sends the next reader after
+behaviour that is not there — except positioned in the first thing anyone opening the file sees, which
+makes it the most likely of all of them to be believed.
+
+Rewritten around the distinction the file actually turns on, and which conflating twice caused real
+bugs: **which page is canonical** is a different question from **whether the other may be overwritten**.
+A group can have an obvious canonical and still be untouchable, because the non-canonical page holds
+content that exists nowhere else.
+
+It also now records why the JP-script rule is kept despite emitting nothing (it still classifies), and
+that an unmeasured page counts as an article everywhere — unknown never authorises an edit.
+
+Checked the docstring against the code rather than by eye: `PROVEN_REASONS` contains exactly the three
+reasons it names. 129 passing, no behaviour change.
+
+`[[Open questions]]` verified live this tick after yesterday's outage: unchanged since 2026-08-25,
+zero actionable bullets, identical to the repo copy. First attempt succeeded with no retries, so the
+wiki is genuinely healthy rather than having its errors absorbed.

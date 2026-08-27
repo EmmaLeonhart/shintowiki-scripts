@@ -6,23 +6,67 @@ Resolves duplicate-QID pairs from ``orchestrators/duplicate_qids.state``
 by moving the non-canonical title to a redirect pointing at the canonical
 title.
 
-Canonical-selection heuristics (applied in priority order):
+TWO SEPARATE QUESTIONS, and conflating them is how this file went wrong twice:
 
-  1. QID-stub name  vs  real name  →  real name is canonical.
-     A QID-stub name matches ``(Q\\d+)`` in the title, e.g.
-     ``Takanono Shrine (Q135040588)``.  The real name wins because it is
-     the intended final title.
+  * **Which page is canonical?** — ``pick_canonical``.
+  * **May the other page be REDIRECTED OVER?** — ``PROVEN_REASONS``.
 
-  2. ASCII / rōmaji title  vs  Japanese-script title  →  ASCII is canonical.
-     The wiki's primary language is English-romanised Japanese; the
-     kanji/kana pages are duplicates from an earlier import.
+A group can have an obvious canonical and still be untouchable, because the
+non-canonical page holds content that only exists there.
 
-Groups that don't fit either rule (two different real names, two QID stubs,
-encoding-variant disambiguations, template /doc pairs, etc.) are skipped and
-printed as an ambiguous report at the end.
+Canonical selection, in priority order
+--------------------------------------
+  1. The sole page with no ``(Qnnn)`` suffix. A QID-stub title is a generator
+     PLACEHOLDER, so a real name always beats one — including when the stub's own
+     QID happens to be the group's, which the reverse ordering got wrong and which
+     accounted for 16 of 18 "unexplained" groups on 2026-08-27.
+  2. Wikidata's own naming, applied strictly: exactly one page EQUALS the item's
+     English label and every other real-named page is a registered English alias.
+  3. Among several real names, the one that is a real ARTICLE rather than a
+     property dump (a page that is an infobox plus ``== instance of (P31) ==``
+     sections and nothing else). Mainspace only — prose length says nothing about
+     a template, whose content is its markup.
+  4. Among stubs only, the page whose own title QID is the group's.
 
-Standard flags: ``--apply`` (default dry-run), ``--max-edits`` (cap per run,
-default 50), ``--run-tag`` (wiki edit-summary link back to CI run).
+Anything else is reported as ambiguous, never guessed: two real articles, two
+unrelated stubs, a template beside a mainspace page (a wrong ``{{wikidata link}}``,
+not a duplicate), a template ``/doc`` subpage inheriting its parent's link.
+
+Permission to overwrite content
+-------------------------------
+Only a move whose reason is in ``PROVEN_REASONS`` may replace a live page:
+
+  * ``REASON_WD_REDIRECT`` — the demoted page's title QID is a Wikidata REDIRECT
+    into the group's QID, so the items were already merged upstream. Emma's
+    ruling, 2026-08-26: *"if one redirects into another on wikidata then that's
+    clear evidence you can just redirect it on the shintowiki too."*
+  * ``REASON_PROPERTY_DUMP`` — the demoted page is a generated dump, so there is
+    nothing to lose.
+  * ``REASON_WD_ALIAS`` — a registered alias AND not a real article. Wikidata
+    saying two names denote one thing does not mean one article contains the other.
+
+⚠ **The JP-script → rōmaji heuristic is deliberately NOT proven, and now emits
+nothing executable at all.** In mainspace the dump rule reaches every measured pair
+first (and is better, being proven); for templates prose cannot decide. It is kept
+because it still classifies, not because it acts. It was harmless for as long as
+this script only performed MediaWiki *moves* — a move cannot clobber a live page —
+and adding the redirect-over-content path in 2026-08-26 briefly made it
+destructive: it would have redirected 健磐龍命 (19,095 bytes, with Nihon Shoki and
+Fudoki sections) onto a page containing neither.
+
+An unmeasured page counts as an ARTICLE everywhere. Unknown never authorises an
+edit.
+
+Flags
+-----
+``--plan-only`` builds and prints the plan, then exits BEFORE login — every
+planning stage is read-only, so anyone can check the numbers a report quotes
+without credentials. ``--apply`` (default dry-run), ``--max-edits`` (cap per run,
+default 50), ``--run-tag`` (edit-summary link back to the CI run; required for
+anything that edits, not for ``--plan-only``).
+
+A wiki outage ABORTS rather than degrading: a partial read would silently produce a
+smaller plan that looks complete.
 """
 
 import argparse
