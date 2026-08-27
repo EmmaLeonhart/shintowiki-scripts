@@ -263,9 +263,12 @@ def main():
           f"removed_no_link={verify_stats['removed_no_link']} "
           f"updated_qid={verify_stats['updated_qid']} "
           f"kept={verify_stats['kept']}")
-    if any(verify_stats[k] for k in
-           ("removed_missing", "removed_redirect",
-            "removed_no_link", "updated_qid")):
+    # `doc_pages` counts toward the save: the prune above happens in memory, and
+    # without this a render that changed nothing else would compute it and throw
+    # it away, leaving the state file to be re-pruned on every subsequent render.
+    if doc_pages or any(verify_stats[k] for k in
+                        ("removed_missing", "removed_redirect",
+                         "removed_no_link", "updated_qid")):
         if args.apply:
             save_state(STATE_FILE, state)
             print(f"Saved cleaned state: {len(state)} tracked titles")

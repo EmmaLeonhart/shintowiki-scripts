@@ -10749,3 +10749,27 @@ Measured against the live state: 16,894 -> 16,868 tracked titles (26 `/doc`, of 
 duplicate groups), 177 -> 156 groups, and no group containing a `/doc` title survives.
 
 7 new tests, 65 passing locally.
+
+## 2026-08-27 — what actually re-renders the duplicate-QID report, and a prune that got discarded
+
+Three status reports called the stale report page "BLOCKED-ON-EXTERNAL: render-duplicate-qids.yml's
+next scheduled run." That workflow has **no `schedule` trigger** — only `workflow_dispatch` and
+`workflow_call`, and `gh run list` shows zero runs against it ever, because a called workflow does not
+appear as its own run. It is invoked by `cleanup-loop.yml` (job `render-duplicate-qids`, `needs:
+[window-gate, talk-orchestrator]`, `if: always()`), which is the thing on a schedule: `cron: "23 2 * * *"`,
+once a day.
+
+Last cleanup-loop run was 2026-08-26T03:28Z. Today's 02:23Z fire fell inside the GitHub scheduler stall
+(22:14Z–03:18Z), so the report waits for the next daily fire rather than for anything broken. Correct
+unblock signal is cleanup-loop, not the renderer, and a `workflow_dispatch` on cleanup-loop forces it.
+
+Also verified rather than assumed: the `is_tracked_title` import added yesterday resolves under CI's
+invocation form (`python3 shinto_miraheze/find_duplicate_page_qids.py`). `shinto_miraheze/` has no
+`__init__.py`, so it works as a namespace package while `orchestrators/` and `ops/` supply theirs. Had
+that been wrong the renderer would have crashed on every run and the report would never have updated
+again — a defect introduced by yesterday's change, not by anything pre-existing.
+
+**Fixed a real nit in yesterday's change.** The renderer prunes `/doc` entries from the state in memory,
+but the save was gated only on `verify_stats`. A render that changed nothing else computed the prune and
+threw it away, so the state file would be re-pruned on every subsequent render forever. `doc_pages` now
+counts toward the save condition. 65 tests still pass.
