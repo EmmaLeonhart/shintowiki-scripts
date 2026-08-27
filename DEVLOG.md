@@ -10773,3 +10773,26 @@ again — a defect introduced by yesterday's change, not by anything pre-existin
 but the save was gated only on `verify_stats`. A render that changed nothing else computed the prune and
 threw it away, so the state file would be re-pruned on every subsequent render forever. `doc_pages` now
 counts toward the save condition. 65 tests still pass.
+
+## 2026-08-27 — Kaneno resolved; Mononobe is a content merge, not a redirect
+
+The two groups `pick_canonical()` refused were both flagged "two non-stub candidates, do not guess".
+Reading the pages shows they are not the same kind of problem at all.
+
+**Q135039533 — resolved.** `Kaneno Shrine` (734b), `Kaneno Shrine (Q135270307)` (806b) and
+`Kinshin Shrine` (557b) are all 金神社, all carrying `{{wikidata link|Q135039533}}`, all one-line
+Engishiki stubs in Owari Province. Kane- and Kin- are two readings of 金. Q135270307 resolves as a
+Wikidata REDIRECT into Q135039533, and the item's own English label is `Kaneno Shrine`, which names
+the canonical without anyone guessing. Both others redirected; nothing of substance existed to lose.
+
+**Q18235752 — NOT done, and not for lack of evidence.** All three are 物部神社 at the same coordinates
+(~5m apart), so they are certainly one shrine, and Q135270316 redirects into Q18235752. But
+`Mononobe Shrine (Higashi-ku, Nagoya)` is a **15,682-byte article** in `git_synced/`, while the title
+Wikidata's label points at — `Mononobe Shrine, Nagoya` ≈ `Mononobe Shrine (Nagoya)` — is a 5,122-byte
+wiki-only page. Redirecting the big one into the small one would destroy the larger article, and
+redirecting the small one into the big one contradicts the label. That is a content merge plus a title
+decision, which is Emma's, and it is the exact shape of thing she stopped a blind pass over.
+
+Extends the canonical rule usefully: when a group has two real titles, **the merged item's English
+label names the canonical** — same authority as the redirect itself. It settles the title question; it
+does not settle what to do with two real articles.
