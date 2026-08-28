@@ -1,0 +1,103 @@
+name: Redirect Translated Duplicates
+
+# Redirects a Japanese-titled page onto its English-titled twin, for the pairs where
+# the English page is already a structurally parallel superset. The counterpart of
+# merge-duplicate-pairs.yml, which handles the pairs going the other way.
+#
+# The pair list is COMPUTED from orchestrators/duplicate_qids.state and every gate is
+# re-checked against the live pages inside the run, so a pair that stopped qualifying
+# since the last dispatch is refused on this one. Held pairs are printed with their
+# reason rather than guessed at.
+#
+# --plan-only is read-only and needs no credentials, so the numbers a report quotes
+# can be checked without a login.
+#
+# DO NOT add a schedule. The script is idempotent — an already-redirected source is
+# refused — but nothing here should run unattended.
+#
+# Trigger manually: gh workflow run redirect-translated-duplicates.yml
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_edits:
+        description: "Pages to redirect this run"
+        required: false
+        default: "50"
+      plan_only:
+        description: "Measure and print the plan without editing"
+        required: false
+        default: "false"
+
+permissions:
+  contents: read
+
+env:
+  MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}
+  WIKIDATA_EMAIL: ${{ secrets.WIKIDATA_EMAIL }}
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  redirect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        if: ${{ github.event.inputs.plan_only != 'true' }}
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      # The script also checks in code, so a manual run is covered; this keeps the
+      # workflow consistent with every other miraheze writer, which
+      # tests/test_miraheze_writers_are_lockout_gated.py enforces.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked - skipping this run."
+          fi
+
+      - name: Build run tag
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Plan only (read-only)"
+        if: ${{ github.event.inputs.plan_only == 'true' }}
+        run: python3 shinto_miraheze/redirect_translated_duplicates.py --plan-only
+
+      - name: "Redirect translated duplicates"
+        if: ${{ steps.lockout.outputs.locked != 'true' && github.event.inputs.plan_only != 'true' }}
+        run: |
+          chmod +x shinto_miraheze/run_step.sh
+          shinto_miraheze/run_step.sh "Redirect: redirect_translated_duplicates" \
+            python3 shinto_miraheze/redirect_translated_duplicates.py \
+              --apply \
+              --max-edits "${{ github.event.inputs.max_edits || '50' }}" \
+              --run-tag "${RUN_TAG}"
