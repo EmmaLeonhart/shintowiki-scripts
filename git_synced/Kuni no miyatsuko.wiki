@@ -1,63 +1,622 @@
-{{Short description|Officials in ancient Japan during the Yamato period}}
-{{Nihongo|'''''Kuni no miyatsuko'''''|国造|}}, also read as '''''kokuzō''''' or '''''kunitsuko''''', were officials in [[:en:Ancient Japan|Ancient Japan]] during the {{ill|Yamato period|ar|فترة ياماتو|be|Ямата (перыяд)|bg|Ямато (период)|ca|Període Yamato|ckb|سەردەمی یەماتۆ|cs|Období Jamato|de|Yamato-Zeit|eo|Epoko de Jamato|es|Período Yamato|fa|دوره یاماتو|fi|Yamato-kausi|fr|Période Yamato|hr|Yamato (razdoblje)|hu|Jamato-kor|id|Zaman Yamato|it|Periodo Yamato|ja|大和時代|ko|야마토 시대|ms|Zaman Yamato|nl|Yamatoperiode|pl|Yamato (okres)|ps|ياماتو|pt|Período Yamato|ro|Perioada Yamato|ru|Период Ямато|sh|Yamato period|sq|Periudha Jamato|sr|Јамато (период)|sv|Yamato (tidsperiod)|tl|Panahong Yamato|tr|Yamato Dönemi|uk|Період Ямато|vi|Thời kỳ Yamato|zh|大和時代|zh_min_nan|Yamato sî-tāi|qid=Q633881|lt=Yamato period}} who governed provinces called ''kuni''.
+[[File:Kuni-no-miyatsuko of ancient Japan.jpg|thumb|300px|Map of kokuzo distribution]]
+'''Kuni no miyatsuko''' (くにのみやつこ; also read ''kokuzo'' or ''kokuso'') was a type of official position in the local administrative structure of ancient Japan, based on the traditional clan-surname (ujikabane) system, who governed the provinces. The term also refers to the persons who held such positions. The [[ヤマト王権|Yamato Court]] recognized the territory of a ''kuni'' (province) as an administrative unit and designated its head as kuni no miyatsuko.
 
-==Yamato period==
+From the [[古墳時代|Kofun period]] onward, local powerful clans (gōzoku) that had long dominated the region were appointed to this role, and just as before, they continued to exercise military authority ([[国造軍|kokuzo-gun]]),<ref>They were also mobilized for foreign campaigns by order of the [[ヤマト王権|Yamato Court]].</ref> administrative authority, and judicial authority within their kuni. However, they became subordinate to the [[大和朝廷|Yamato Court]] and shifted to a position of being appointed by it.
 
-''Kuni no miyatsuko'' governed provinces called ''kuni'' (国), although the location, names, and borders of the provinces remain unclear. ''Kuni no miyatsuko'' were appointed by and remained under the jurisdiction of the Yamato Court, but over time the position became hereditary.<ref name="dijitaru">{{cite encyclopedia|encyclopedia=Dijitaru daijisen |title=国造 (Kuni no miyatsuko) |url=http://rekishi.jkn21.com/ |accessdate=2012-04-12 |year=2012 |publisher=Shogakukan |location=Tokyo |language=ja |url-status=dead |archiveurl=https://web.archive.org/web/20070825113418/http://rekishi.jkn21.com/ |archivedate=2007-08-25 }}</ref><ref name="encyclopedia">{{cite encyclopedia|encyclopedia=Encyclopedia of Japan |title=Kuni no miyatsuko |url=http://rekishi.jkn21.com/ |accessdate=2012-04-12 |year=2012 |publisher=Shogakukan |location=Tokyo |url-status=dead |archiveurl=https://web.archive.org/web/20070825113418/http://rekishi.jkn21.com/ |archivedate=2007-08-25 }}</ref> ''Kuni no miyatsuko'' carried ''[[kabane]]'' titles bestowed by the Yamato Court, commonly [[Kimi (kabane)|''kimi'']] (君) or ''[[atae]]'' (直). Prestigious ''kuni no miyatsuko'' held the title of ''[[Omi (title)|omi]]'' (臣).<ref name="encyclopedia"/>
+After the [[大化の改新|Taika Reform]] and the beginning of the [[律令制|Ritsuryo system]], kokuzo lost their governing authority and became a hereditary honorary title, primarily responsible for overseeing ceremonies and rituals ('''Ritsuryo kokuzo''').
 
-==Taika Reforms==
+Under the Ritsuryo system, the former local clans occupied the ranks of local officials called [[郡司|gunji]], and the traditional ujikabane system continued to support the Ritsuryo system in the provinces. The clans also continued to maintain armed forces and breed horses. In the early [[平安時代|Heian period]], their decline accelerated and they were replaced by a new class of provincial elite.
 
-The office of ''kuni no miyatsuko'' was abolished in the [[Taika Reform]]s in 645 and the former administrative ''kuni'' (provinces) were formally reorganized under the ''[[Ritsuryō]]'' system. The provinces became ruled by new officials called ''kuni no mikotomochi'', or more commonly, {{ill|Kokushi (official)|az|Kokuşi (vəzifə)|de|Kokushi|es|Kokushi|fa|کوکوشی|ff|Kokushi (official)|fr|Kokushi|it|Kokushi (ufficiale)|ja|国司|ko|고쿠시|pt|Kokushi|ru|Кокуси|sr|Кокуши|uk|Кокусі|vi|Kokushi|zh|國司|qid=Q1351234|lt=''kokushi''}}.<ref name="encyclopedia"/> The ''kuni no miyatsuko'' continued to be appointed after the Taika Reforms, generally to the office of {{Nihongo|gunji|郡司|}}.<ref name="dijitaru"/> ''Gunji'' were appointed from powerful regional ''kuni no miyatsuko'' families, for life, and the position became hereditary.<ref name="dijitaru-gunji">{{cite encyclopedia|encyclopedia=Dijitaru daijisen |title=郡司 (Gunji) |url=http://rekishi.jkn21.com/ |accessdate=2012-04-12 |year=2012 |publisher=Shogakukan |location=Tokyo |language=ja |url-status=dead |archiveurl=https://web.archive.org/web/20070825113418/http://rekishi.jkn21.com/ |archivedate=2007-08-25 }}</ref> The ''kuni no miyatsuko'' were now in charge of spiritual and religious affairs, specifically the [[Shinto|Shintō]] rites of each province.<ref name="encyclopedia"/> These religious officials became known as {{Nihongo|shin-kokuzō|新国造|}}, or "new" ''kuni no miyatsuko''.<ref name="encyclopedia"/> The ''kuni no miyatsuko'', now in the office of ''gunji'', often sided with peasants against the ruling ''kokushi'' elite. The ''gunji'' position, however, was abolished with the establishment of the manorial ''[[shōen]]'' system in the early {{ill|Heian period|ar|فترة هييآن|ast|Periodu Heian|az|Heyan dövrü|bcl|Panahon ni Heian|bg|Хеян|bn|হেইআন যুগ|br|Marevezh Heian|ca|Període Heian|cs|Období Heian|de|Heian-Zeit|el|Περίοδος Χεϊάν|eo|Epoko Heian|es|Período Heian|eu|Heian aroa|fa|دوره هی‌آن|fi|Heian-kausi|fr|Époque de Heian|gl|Período Heian|he|תקופת הייאן|hi|हेआन काल|hr|Heian (razdoblje)|hu|Heian-kor|hy|Հեիան ժամանակաշրջան|id|Zaman Heian|it|Periodo Heian|ja|平安時代|ka|ჰეიანის პერიოდი|ko|헤이안 시대|la|Aevum Heian|lt|Hejano laikotarpis|mn|Хэйан|mr|हियन कालावधी|ms|Zaman Heian|my|ဟဲအိအန်ခေတ်|nl|Heianperiode|nn|Heian|no|Heian-perioden|oc|Epòca d'Heian|pl|Heian|ps|هېيان دوره|pt|Período Heian|ro|Perioada Heian|ru|Период Хэйан|sh|Heianski period|simple|Heian period|sk|Obdobie Heian|sl|Obdobje Heian|sq|Periudha Heian|sr|Хеиан период|sv|Heian|ta|ஹையன் காலகட்டம்|th|ยุคเฮอัง|tl|Panahong Heian|tr|Heian Dönemi|uk|Період Хейан|vi|Thời kỳ Heian|war|Panahon Heian|wuu|平安时代|zh|平安时代|zh_classical|平安朝|zh_min_nan|Heian sî-tāi|zh_yue|平安時代|qid=Q193292|lt=Heian period}}.<ref name="dijitaru-gunji"/> A few ''kuni no miyatsuko'' clans retained influence after the Taika Reforms, such as the {{Nihongo|[[Izumo clan|Izumo no Kuni no Miyatsuko]]|Izumo Province 造}} of {{ill|Izumo Province|ar|إزومو (مقاطعة)|ca|Província d'Izumo|cs|Provincie Izumo|de|Provinz Izumo|es|Provincia de Izumo|fa|ولایت ایزومو|fr|Province d'Izumo|gl|Provincia de Izumo|id|Provinsi Izumo|it|Izumo (provincia)|ja|出雲国|ka|იზუმოს პროვინცია|ko|이즈모국|lt|Idzumo žemė|nl|Izumo (provincie)|no|Izumo|pt|Província de Izumo|ru|Идзумо (провинция)|simple|Izumo Province|sk|Izumo (provincia)|sr|Провинција Изумо|tr|Izumo (vilayet)|uk|Провінція Ідзумо|wuu|出云国|zh|出雲國|zh_classical|出雲國|zh_min_nan|Izumo-kok|zh_yue|出雲國|qid=Q582846|lt=Izumo Province}} in present-day eastern {{ill|Shimane Prefecture|ace|Prefektur Shimane|af|Shimane-prefektuur|an|Prefectura de Shimane|ar|شيمانه (محافظة)|az|Şimane prefekturası|azb|شیمانه اوستانی|ban|Préféktur Shimané|be|Сіманэ (прэфектура)|bg|Шимане|bn|শিমানে প্রশাসনিক অঞ্চল|ca|Prefectura de Shimane|cdo|Shimane-gâing|ce|Симане (префектура)|ceb|Shimane-ken|ckb|پارێزگای شیمانێ|cs|Prefektura Šimane|cy|Shimane (talaith)|da|Shimane-præfekturet|de|Präfektur Shimane|eo|Gubernio Shimane|es|Prefectura de Shimane|et|Shimane prefektuur|eu|Shimane (prefektura)|fa|استان شیمانه|fi|Shimanen prefektuuri|fr|Préfecture de Shimane|frr|Shimane (Prefektüür)|ga|Maoracht Shimane|gl|Prefectura de Shimane|hak|Shimane-yen|he|שימאנה (מחוז)|hr|Shimane (prefektura)|hu|Simane prefektúra|hy|Սիմանե (պրեֆեկտուրա)|id|Prefektur Shimane|ilo|Prepektura ti Shimane|it|Prefettura di Shimane|ja|島根県|ka|სიმანეს პრეფექტურა|km|ស៊ីម៉ាណិ(ខេត្ត)|ko|시마네현|lt|Šimanės prefektūra|lv|Simanes prefektūra|mk|Шимане (префектура)|mni|ꯁꯤꯃꯥꯅꯦ ꯂꯝꯈꯥꯢ|mr|शिमाने प्रांत|ms|Wilayah Shimane|ne|सिमाने|nl|Shimane (prefectuur)|no|Shimane (prefektur)|os|Симане|pl|Prefektura Shimane|pnb|ضلع شیمانے|ps|شیمانه|pt|Shimane|ro|Prefectura Shimane|ru|Симане|sd|شيماني پريفيڪچر|se|Shimane prefektuvra|sh|Prefektura Shimane|simple|Shimane Prefecture|sk|Šimane (prefektúra)|sr|Префектура Шимане|su|Shimane Prefecture|sv|Shimane prefektur|sw|Mkoa wa Shimane|tg|Префектураи Шимане|th|จังหวัดชิมาเนะ|tl|Prepektura ng Shimane|tr|Shimane|tt|Симане (префектура)|uk|Префектура Сімане|ur|شیمانے پریفیکچر|vi|Shimane|war|Shimane (prefektura)|wuu|岛根县|zh|岛根县|zh_classical|島根縣|zh_min_nan|Simane-koān|zh_yue|島根縣|qid=Q132751|lt=Shimane Prefecture}}.<ref>{{cite encyclopedia|encyclopedia=Nihon Daihyakka Zensho (Nipponika) (日本大百科全書(ニッポニカ) |title=Izumo Kuni no miyatsuko (Izumo Province 造) |url=http://rekishi.jkn21.com/ |accessdate=2012-04-12 |year=2012 |publisher=Shogakukan |location=Tokyo |language=ja |url-status=dead |archiveurl=https://web.archive.org/web/20070825113418/http://rekishi.jkn21.com/ |archivedate=2007-08-25 }}</ref>
+== Overview ==
+The kuni no miyatsuko was the head of a ''kuni'', one of the administrative units of the [[ヤマト王権|Yamato Court]]. Since these kuni predated the establishment of the [[令制国|Ritsuryo provincial system]], their boundaries are not clearly defined. It is thought that the territory controlled by regional powerful clans was treated as a kuni. Influential clans were either dispatched by the court or submitted to it and were appointed as kokuzo, with many receiving [[カバネ|kabane]] (clan surnames) such as [[臣|omi]], [[連|muraji]], [[キミ (カバネ)|kimi]] (kō), and [[直 (姓)|atai]] (ōnaotai) in the court of [[允恭天皇|Emperor Ingyō]]. Unlike the [[県主|agata-nushi]], who were directly under Yamato Court control, kokuzo were granted broad autonomy including military and judicial authority.
 
-== Legacy ==
-After their abolition several former Kuni no Miyatsuko became prominent priestly families these include the [[Izumo clan]] of [[Izumo-taisha]], the [[Aso clan]] of [[Aso Shrine]], the [[Owari clan]] of [[:en:Atsuta Jingu|Atsuta Jingu]], the {{ill|Munakata clan|fr|Clan Munakata|ja|宗像氏|simple|Munakata clan|qid=Q16481907}} of [[Munakata Taisha]],<ref name=":1">{{Cite web |last=Matsunaga |first=Naomichi |title=Kuni no miyatsuko |url=https://d-museum.kokugakuin.ac.jp/eos/detail/?id=8839 |url-status=live |archive-url=https://archive.today/20231025020641/https://d-museum.kokugakuin.ac.jp/eos/detail/?id=8839 |archive-date=2023-10-25 |access-date=2023-10-25 |website=Kokugakuin University Encyclopedia of Shinto |language=en}}</ref> the [[Amabe clan]] of [[Kono Shrine]]<ref name="Bunka1">{{cite web |title=海部氏系図 |trans-title=Amebe shikeizu |url=https://kunishitei.bunka.go.jp/heritage/detail/201/777 |accessdate=August 20, 2020 |publisher=[[Agency for Cultural Affairs]] |language=Japanese}}</ref> and the [[Yamato no Kuni no Miyatsuko|Yamato clan]] of [[Ōyamato Shrine]].
-{| class="wikitable"
-|+
-!Province
-!Clan
-!Shrine
+The earliest establishment of kokuzo appears in records from the court of [[神武天皇|Emperor Jinmu]], and systematic establishment began in earnest during the reign of [[崇神天皇|Emperor Sujin]], along routes of the [[四道将軍|Four Generals' expeditions]]. In the court of [[景行天皇|Emperor Keikō]], chiefs were placed throughout the land in coordination with the emperor's western expeditions and [[倭建命|Yamato Takeru]]'s eastern expeditions, and in the subsequent court of [[成務天皇|Emperor Seimu]], kokuzo were established in rapid succession. Details of these appointments appear in the [[国造本紀|Kokuzo Hongi]], and records of the establishment of the kuni-agata system by Emperor Seimu also appear in the [[記紀|Kiki]]. Some kokuzo were established later in the court of [[応神天皇|Emperor Ōjin]], and others were divided and redistributed during the court of [[仁徳天皇|Emperor Nintoku]].
+
+The kabane given to kokuzo by the Ōkimi (Great King) varied:
+# Atai-kabane kokuzo in [[畿内#日本の畿内|Kinai]] and surrounding provinces
+# Omi-kabane kokuzo in [[吉備国|Kibi]] and [[出雲国|Izumo]]
+# Ōnaotai-kabane kokuzo in parts of [[山陽道]] and [[南海道]]
+# Tomomiyatsuko-kabane kokuzo, named for groups under the ''namishiro no tomonozukuri'' system, in the [[東海道]] and [[東山道]] regions
+# Kimi-kabane kokuzo in the eastern [[毛野]] (Keno) region and the western [[筑紫国|Tsukushi]], [[豊国|Toyo]], and [[肥国|Hi]] regions
+
+This variety shows that the organization was not uniform.
+
+Kokuzo presided over the worship of ancestral deities (ujigami) of their respective kokuzo clans, and also managed [[部民|be-no-tami]] (clan workers) and [[屯倉|miyake]] (royal granaries). Daughters and sons of kokuzo clans served at court as [[舎人|toneri]] (attendants) and [[釆女|uneme]] (palace women), and some, such as the [[紀国造|Ki no Kokuzo]] and [[上毛野国造|Kamitsukeno no Kokuzo]], were involved in diplomacy. There were also kokuzo, such as the [[筑紫国造|Tsukushi no Kokuzo]], who brought northern Kyushu under their control and rebelled against the Yamato Court, and some, like the [[闘鶏国造|Tōchi Kokuzo]], were dissolved.
+
+Below the kokuzo were [[古代日本の地方官制#県（アガタ）|agata]] (sub-districts), and some scholars hold that there was a fairly developed kuni-agata system. However, many aspects of local governance before the Ritsuryo system remain unclear, including the actual state of the kokuzo system and relationships with medium and small clans.
+
+Kokuzo endured for a long time through the Kofun period, but from the late [[6世紀|6th century]] (reign of [[推古天皇|Empress Suiko]]) to the mid-[[7世紀|7th century]] (reign of [[孝徳天皇|Emperor Kōtoku]]), kokuzo throughout the land were changed to [[評督|hyō-toku]] (district overseers), and after the Taika Reform, when the [[大宝令|Taihō Code]] came into effect, hyō were replaced by gun (counties), with some kokuzo also holding concurrent positions as [[郡領|gunryō]] (county officials).
+
+The [[国造本紀|Kokuzo Hongi]] (Volume 10 of the [[先代旧事本紀|Sendai Kuji Hongi]]), believed to have been compiled in the [[9世紀|9th century]], contains records of 135 kokuzo throughout the country, including their establishment periods and those who were appointed.
+
+== Ritsuryo Kokuzo ==
+After the Taika Reform, the kuni governed by kokuzo were reorganized, consolidated, or divided and replaced by the Ritsuryo provincial system; nevertheless, kokuzo continued to exist under the Ritsuryo framework. These are called '''Ritsuryo Kokuzo'''. They became a hereditary honorary title primarily overseeing rituals, concurrently held by gunji — descendants of the former kokuzo. Kokuzo also received allocated rice fields known as kokuzo-den. Subsequently, from the latter half of the [[8世紀|8th century]] onward, kokuzo gradually disappeared. In modern scholarship, to distinguish kokuzo under the ujikabane system from Ritsuryo Kokuzo, a convention exists: for example, the former is written as ''Kazusa no Kuni no Miyatsuko'' (上総国造) and the latter as ''Kazusa no Kuni no Kokuzo'' (上総国国造).
+
+=== Kokuzo Named in Ritsuryo-era Records ===
+*[[凡河内石麻呂|Ōshikouchi no Imiki Ishimaro]] ([[摂津国造|Settsu Kokuzo]], ''[[続日本紀|Shoku Nihongi]]'', [[慶運|Keiyun]] 3 (706), 10th month, 12th day)
+*[[山背品遅|Yamashiro no Imiki Shinachi]] ([[山背国造|Yamashiro Kokuzo]], ''Shoku Nihongi'', Keiyun 3 (706), 10th month, 12th day)
+*[[出雲果安|Izumo no Omi Hatayasu]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', [[霊亀|Reiki]] 2 (716), 2nd month, 10th day)
+*[[大倭五百足|Ōyamato no Imiki Ihotari]] ([[大倭国造|Ōyamato Kokuzo]], ''Shoku Nihongi'', [[養老|Yōrō]] 7 (723), 10th month, 23rd day)
+*[[粟凡弟臣石麻呂|Awa no Ōnaotai Ototomi]] ([[粟国造|Awa Kokuzo]], "Awa Province Kokuzo Stele," Yōrō 7 (723))
+*[[出雲広嶋|Izumo no Omi Hiroshima]] ([[出雲国造|Izumo Kokuzo]], ''Shoku Nihongi'', [[神亀|Jinki]] 1 (724), 1st month, 27th day)
+*[[紀摩祖|Ki no Atai Maso]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', Jinki 1 (724), 10th month, 16th day)
+*[[紀豊嶋|Ki no Atai Toyoshima]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', [[天平|Tenpyō]] 1 (729), 3rd month, 27th day)
+*[[出雲弟山|Izumo no Omi Otoyama]] ([[出雲国造|Izumo Kokuzo]], ''Shoku Nihongi'', Tenpyō 18 (746), 3rd month, 7th day)
+*[[尾張小倉|Owari no Sukune Ogura]] ([[尾張国造|Owari no Kuni Kokuzo]], ''Shoku Nihongi'', Tenpyō 19 (747), 3rd month, 11th day)
+*[[粟若子|Awa no Atai Wakako]] ([[粟国造|Awa Kokuzo]], ''Dai Nihon Komonjo'', [[天平勝宝|Tenpyō Shōhō]] 4 (752), 5th month, 5th day)
+*[[上道斐太都|Kamitsumichi no Asomi Hitadzu]] ([[吉備国造|Kibi Kokuzo]], ''Shoku Nihongi'', [[天平宝字|Tenpyō Hōji]] 1 (757), intercalary 8th month, 8th day)
+*[[出雲益万|Izumo no Omi Masukazu]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', Tenpyō Hōji 8 (764), 1st month, 20th day)
+*[[紀国栖|Ki no Atai Kunikasugi]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', [[天平神護|Tenpyō Jingo]] 1 (765), 10th month, 22nd day)
+*[[上道斐太都|Kamitsumichi no Asomi Masadō]] ([[備前国|Bizen no Kuni Kokuzo]], ''Shoku Nihongi'', [[神護景雲|Jingo Keiun]] 1 (767), 9th month, 23rd day)
+*[[武蔵不破麻呂|Musashi no Sukune Fuwamarao]] ([[无邪志国造|Musashi no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 1 (767), 12th month, 8th day)
+*[[道嶋嶋足|Michishima no Sukune Shimatari]] ([[陸奥国|Mutsu no Kuni Daikokuzo]], ''Shoku Nihongi'', Jingo Keiun 1 (767), 12th month, 8th day)
+*[[道嶋三山|Michishima no Sukune Shimatari]] ([[陸奥国|Mutsu no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 1 (767), 12th month, 8th day)
+*[[漆部伊波|Nuribe no Atai Iwa]] ([[相武国造|Sagamu no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 2nd month, 3rd day)
+*[[伊勢老人|Ise no Asomi Okina]] ([[伊勢国造|Ise no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[壬生小家主|Mibu no Sukune Okuienushi]] ([[常陸国|Hitachi no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[美濃玉虫|Mino no Atai Tamamushi]] ([[美濃国|Mino no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[檜前部老刀自|Kamitsukeno Saibe no Asomi Oitoji]] ([[上毛野国造|Kōzuke no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 2 (768), 6th month, 6th day)
+*[[大和長岡|Yamato no Sukune Nagaoka]] ([[大倭国造|Yamato no Kuni Kokuzo]], ''Shoku Nihongi'', Jingo Keiun 3 (769), 10th month, 29th day)
+*[[因幡国造浄成女|Inaba no Kuni Kokuzo Jōjōme]] ([[因幡国造|Inaba no Kuni Kokuzo]], ''Shoku Nihongi'', [[宝亀|Hōki]] 2 (771), 12th month, 14th day)
+*[[出雲国上|Izumo no Omi Kunitaka]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', Hōki 4 (773), 9th month, 8th day)
+*[[丹波真養|Tanba no Atai Masayasu]] ([[丹後国造|Tango no Kuni Kokuzo]], ''Shoku Nihongi'', [[延暦|Enryaku]] 2 (783), 3rd month, 13th day)
+*[[粟凡豊穂|Awa no Ōnaotai Toyoho]] ([[粟国造|Awa Kokuzo]], ''Shoku Nihongi'', Enryaku 2 (783), 12th month, 2nd day)
+*[[飛騨国造祖門|Hida no Kuni Kokuzo Somon]] ([[飛騨国造|Hida no Kuni Kokuzo]], ''Shoku Nihongi'', Enryaku 2 (783), 12th month, 2nd day)
+*[[出雲国成|Izumo no Omi Kuninari]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Shoku Nihongi'', Enryaku 4 (785), 2nd month, 18th day)
+*[[和気清麻呂|Wake no Asomi Kiyomaro]] ([[美作国|Mimasaka]] / [[備前国|Bizen Kokuzo]], ''[[日本後紀|Nihon Kōki]]'', Enryaku 7 (788), 6th month, 7th day)
+*[[出雲人長|Izumo no Omi Hitotari]] ([[出雲国造|Izumo Kokuzo]], ''Shoku Nihongi'', Enryaku 9 (790), 4th month, 17th day)
+*[[紀五百友|Ki no Atai Ihotomo]] ([[紀伊国造|Ki Kokuzo]], ''Shoku Nihongi'', Enryaku 9 (790), 5th month, 8th day)
+*[[金刺舎人広名|Kanasashi no Toneri Hirona]] ([[駿河国造|Suruga no Kuni Kokuzo]], ''Shoku Nihongi'', Enryaku 10 (791), 4th month, 18th day)
+*[[武蔵弟総|Musashi no Sukune Ototusa]] ([[无邪志国造|Musashi no Kuni Kokuzo]], ''[[類聚国史|Ruijū Kokushi]]'', Enryaku 14 (795), 12th month, 8th day)
+*[[道嶋御楯|Michishima no Sukune Mitachi]] ([[陸奥国|Mutsu no Kuni Daikokuzo]], ''Ruijū Kokushi'', Enryaku 21 (802), 12th month, 8th day)
+*[[紀豊成|Ki no Atai Toyonari]] ([[紀伊国造|Ki no Kuni Kokuzo]], ''Nihon Kōki'', Enryaku 23 (804), 10th month, 12th day)
+*[[出雲門起|Izumo no Omi Kadoki]] ([[出雲国造|Izumo Kokuzo]], ''Nihon Kōki'', Enryaku 24 (805), 9th month, 27th day)
+*[[出雲旅人|Izumo no Omi Tabibito]] ([[出雲国造|Izumo Kokuzo]], ''Nihon Kōki'', [[弘仁|Kōnin]] 2 (811), 3rd month, 27th day)
+*[[出雲豊持|Izumo no Omi Toyomochi]] ([[出雲国造|Izumo no Kuni Kokuzo]], ''Ruijū Kokushi'', [[天長|Tenchō]] 3 (826), 3rd month, 29th day)
+*[[壱岐戈麻呂|Iki no Atai Hokimaro]] ([[壱岐国造|Iki no Shima-zukuri]], ''Ruijū Kokushi'', Tenchō 3 (829), 1st month, 20th day)
+*[[紀高継|Ki no Sukune Takatsugi]] ([[紀伊国造|Ki no Kuni Kokuzo]], ''[[続日本後紀|Shoku Nihon Kōki]]'', [[嘉祥|Kashō]] 2 (849), intercalary 12th month, 21st day)
+*[[伴千福麻呂|Tomo no Atai Chifukomaro]] ([[安房国造|Awa no Kuni Kokuzo]], ''[[文徳天皇実録|Montoku Tennō Jitsuroku]]'', Kashō 3 (850), 6th month, 3rd day)
+
+== List ==
+=== List of Kokuzo by Province ===
+Although kokuzo existed before the [[律令制|Ritsuryo system]], for convenience the provinces are classified using the later Ritsuryo provincial territories (from the 9th century onward).<ref>Compiled with reference to the table of ujikabane kokuzo in the kokuzo entry of ''Kokushi Daijiten''.</ref>
+
+{| class="wikitable" style="background:#ffffff;font-size:85%" align="left"
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Ritsuryo Province
+!style="background:#ccccff; white-space:nowrap" colspan="2" | Name of Kokuzo
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | First Kokuzo<br />(Appointment Period)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Clan (Kabane in parentheses)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Domain
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Notes
 |-
-|{{ill|Izumo Province|ar|إزومو (مقاطعة)|ca|Província d'Izumo|cs|Provincie Izumo|de|Provinz Izumo|es|Provincia de Izumo|fa|ولایت ایزومو|fr|Province d'Izumo|gl|Provincia de Izumo|id|Provinsi Izumo|it|Izumo (provincia)|ja|出雲国|ka|იზუმოს პროვინცია|ko|이즈모국|lt|Idzumo žemė|nl|Izumo (provincie)|no|Izumo|pt|Província de Izumo|ru|Идзумо (провинция)|simple|Izumo Province|sk|Izumo (provincia)|sr|Провинција Изумо|tr|Izumo (vilayet)|uk|Провінція Ідзумо|wuu|出云国|zh|出雲國|zh_classical|出雲國|zh_min_nan|Izumo-kok|zh_yue|出雲國|qid=Q582846|lt=Izumo Province}}
-|[[Izumo clan]]<ref name=":1" />
-|[[Izumo-taisha]]
+!style="background:#ccccff; white-space:nowrap" | Written Form
+!style="background:#ccccff; white-space:nowrap" | Reading
 |-
-|{{ill|Yamato Province|be|Ямата (правінцыя)|ca|Província de Yamato|ckb|پارێزگای یەماتۆ|cs|Provincie Jamato|de|Provinz Yamato|el|Επαρχία Γιαμάτο|es|Provincia de Yamato|fa|ولایت یاماتو|fi|Yamaton provinssi|fr|Province de Yamato|gl|Provincia de Yamato|hak|Yamato-koet|id|Provinsi Yamato|it|Yamato (provincia)|ja|大和国|ko|야마토국|lt|Jamato žemė|nl|Yamato (provincie)|no|Yamato (provins)|pt|Província de Yamato|ro|Provincia Yamato|ru|Ямато (провинция)|simple|Yamato Province|sk|Jamato (provincia)|sr|Провинција Јамато|th|แคว้นยามาโตะ|tr|Yamato (vilayet)|uk|Провінція Ямато|ur|یاماتو صوبہ|zh|大和國|zh_min_nan|Yamato-kok|zh_yue|大和國|qid=Q907495|lt=Yamato Province}}
-|[[Yamato no Kuni no Miyatsuko|Yamato clan]]
-|[[Ōyamato Shrine]]
+|colspan="7" style="background-color:#C0C0C0"|'''[[畿内|Kinai (Home Provinces)]]'''
 |-
-|{{ill|Higo Province|bar|Provinz Higo|ca|Província de Higo|cs|Provincie Higo|de|Provinz Higo|es|Provincia de Higo|fa|ولایت هیگو|fi|Higon provinssi|fr|Higo|gl|Provincia de Higo|he|היגו (פרובינציה)|hu|Higo tartomány|id|Provinsi Higo|it|Higo|ja|肥後国|ko|히고국|lt|Higo žemė|nl|Higo (provincie)|pt|Província de Higo|ru|Хиго (провинция)|simple|Higo Province|sk|Higo (provincia)|sr|Провинција Хиго|tr|Higo (vilayet)|uk|Провінція Хіґо|wuu|肥后国|zh|肥後國|zh_min_nan|Higo-kok|zh_yue|肥後國|qid=Q259705|lt=Higo Province}}?
-|[[Aso clan]]<ref name=":1" />
-|[[Aso Shrine]]
+| align="center" style="background:#E3E3FF" rowspan="3"| [[大和国]]
+| '''[[倭国造]]'''<br />（大倭国造）||Yamato||[[椎根津彦]]<br />(reign of Emperor Jinmu)||Yamato clan (Atai)||Central Yamato Province||Shrine family of [[大和神社]]
 |-
-|{{ill|Owari Province|en|Owari Province|qid=Q514506|lt=Owari Province}}
-|[[Owari clan]]<ref name=":1" />
-|[[:en:Atsuta Jingu|Atsuta Jingu]]
+| '''[[闘鶏国造]]'''||Tsuge||Takehikono-mikoto<br />(reign of Emperor Seimu)||Tsuge clan (Atai)||Eastern Yamato Province||Descendants' Kita clan are shrine family of [[都祁水分神社]]
 |-
-|{{ill|Tanba Province|cs|Tanba (provincie)|de|Provinz Tamba|es|Provincia de Tanba|fa|ولایت تانبا|fr|Province de Tanba|gl|Provincia de Tanba|id|Provinsi Tamba|it|Tanba (provincia)|ja|丹波国|ko|단바국|lt|Tambos žemė|nl|Tamba (provincie)|pt|Província de Tanba|ru|Тамба (провинция)|simple|Tamba Province|sk|Tanba (provincia)|sr|Провинција Тамба|tr|Tamba (vilayet)|uk|Провінція Тамба|zh|丹波國|zh_min_nan|Tanba-kok|qid=Q954511|lt=Tanba Province}}
-|[[Amabe clan]]<ref name="Bunka1" />
-|[[Kono Shrine]]
+| '''[[葛城国造]]'''||Katsuragi||Tsurugine-no-mikoto<br />(reign of Emperor Jinmu)||Katsuragi clan (Atai)||Western Yamato Province||
 |-
-| rowspan="2" |{{ill|Kii Province|cs|Provincie Kii|de|Provinz Kii|es|Provincia de Kii|eu|Kii probintzia|fa|ولایت کیئی|fr|Province de Kii|gl|Provincia de Kii|id|Provinsi Kii|it|Kii (provincia)|ja|紀伊国|ko|기이국|lt|Kijo žemė|nl|Kii (provincie)|pl|Prowincja Kii|pt|Província de Kii|ru|Кии (провинция)|simple|Kii Province|sk|Kii (provincia)|sr|Провинција Киј|th|แคว้นคิอิ|tr|Kii (vilayet)|uk|Провінція Кії|vi|Tỉnh Kii|zh|紀伊國|zh_min_nan|Kii-kok|qid=Q864053|lt=Kii Province}}
-|Ukai family
-|[[Kamayama Shrine]]
+| align="center" style="background:#E3E3FF; white-space:nowrap" rowspan="2"| [[山城国]]
+| '''[[山背国造|Yamashiro Kokuzo]]'''||Yamashiro|| style="white-space:nowrap"|Atarane-no-mikoto<br />(reign of Emperor Jinmu)||rowspan="2"|Yamashiro clan ([[山代氏]]) (Atai)||rowspan="2"|Southern Yamashiro Province||Descendants of the clan are shrine family of [[廣田神社]]
 |-
-|{{ill|Kii no Kuni no Miyatsuko|ja|紀氏|de|Ki (Klan)|uk|Рід Кі|ko|기씨 (황별)|fr|Kii no Kuni no Miyatsuko}}
-|[[Hinokuma Shrine]]
+| '''[[山背国造]]'''||Yamashiro||Sonofuri-no-mikoto<br />(reign of Emperor Seimu)||Duplicate entry for Yamashiro Kokuzo
+|-
+| align="center" style="background:#E3E3FF"| [[河内国]]
+| '''[[凡河内国造]]'''||Ōshikouchi / Ōshikawachi||Hikokoso Horino-mikoto<br />(reign of Emperor Jinmu)||[[凡河内氏]] (Atai)||Kawachi Province||Descendants' Watanabe clan are shrine family of [[坐摩神社]]
+|-
+| align="center" style="background:#E3E3FF"| [[和泉国]]
+| '''[[凡河内国造]]'''||Ōshikouchi / Ōshikawachi||Hikokoso Horino-mikoto<br />(reign of Emperor Jinmu)||[[凡河内氏]] (Atai)||Izumi Province||
+|-
+| align="center" style="background:#E3E3FF"| [[摂津国]]
+| '''[[凡河内国造]]'''||Ōshikouchi / Ōshikawachi||Hikokoso Horino-mikoto<br />(reign of Emperor Jinmu)||[[凡河内氏]] (Atai)||Settsu Province||There is a [[河内国魂神社]] in Kobe City enshrined by the Ōshikouchi Kokuzo.
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[東海道|Tōkaidō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[伊賀国]]
+| '''[[伊賀国造]]'''||Iga||Takeigatsuwake-no-mikoto<br />(reign of Emperor Seimu)||Iga clan (Kimi), [[阿保氏#阿保氏 （息速別命後裔）|Aho clan]] (Kimi)||Iga Province||
+|-
+| align="center" style="background:#E3E3FF"| [[伊勢国]]
+| '''[[伊勢国造]]'''||Ise||[[天日鷲命]] or [[天日別命]]<br />(reign of Emperor Jinmu)||[[伊勢氏]] (Atai)||Ise Province||
+|-
+| align="center" style="background:#E3E3FF"| [[志摩国]]
+| '''[[島津国造]]'''||Shimadzu||Izumo Kasayo-no-mikoto<br />(reign of Emperor Seimu)||Shima clan (Atai)||Shima Province||
+|-
+| align="center" style="background:#E3E3FF"| [[尾張国]]
+| '''[[尾張国造]]'''||Owari||[[小止與命]]<ref> [{{NDLDC|991097/216}} ''Kokushi Taikei'' Vol. 7] (Keizai Zasshisha; National Diet Library Digital Collection), frame 216.</ref> (Oyotome-no-mikoto)<br />(reign of Emperor Seimu)||[[尾張氏]] (Muraji),<br />later Chiaki clan||Owari Province||Head family of [[熱田神宮]]
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[三河国]]
+| '''[[参河国造]]'''||Mikawa||Chihaya-no-mikoto<br />(reign of Emperor Seimu)||Mikawa clan (Atai)||Western Mikawa Province||Descendants' [[永見氏|Nagami clan]] are shrine family of [[知立神社]]
+|-
+| '''[[穂国造]]'''||Ho||Asahi Tsuwake-ō<br />(reign of Emperor Seimu) or Usagami no Sukune<br />(reign of Emperor Yūryaku)||Ho clan (Kimi) or [[磯部氏]]||Eastern Mikawa Province||Shrine family of [[砥鹿神社]]
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[遠江国]]
+| '''[[遠淡海国造]]'''||Tōtsu-Ōmi||Inkimi-no-mikoto<br />(reign of Emperor Seimu)||Tōtsu-Ōmi clan (Atai) (tentative)||Western Tōtōmi Province||
+|-
+| '''[[久努国造]]'''||Kuno||Inbatarune<br />(reign of Emperor Chūai)||[[久野氏|Kuno clan]] (Atai)||Central Tōtōmi Province||
+|-
+| '''[[素賀国造]]'''||Suga / Soga||Mishiinno-mikoto<br />(reign of Emperor Jinmu)||||Eastern Tōtōmi Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[駿河国]]
+| '''[[廬原国造]]'''||Iohara||Ikabe Hikono-mikoto<br />(reign of Emperor Seimu)||[[庵原氏|Iohara clan]] (Kimi)||Western Suruga Province||
+|-
+| '''[[珠流河国造]]'''||Suruga||Katakataishi-no-mikoto<br />(reign of Emperor Seimu)||[[金刺氏]] (Toneri)||Eastern Suruga Province||
+|-
+| align="center" style="background:#E3E3FF"| [[伊豆国]]
+| '''[[伊豆国造]]'''||Izu||Wakatake-no-mikoto<br />(reign of Empress Jingū)||Izu clan (Atai),<br />later [[日下部氏]] (Atai),<br />renamed Izu clan (Atai)||Izu Province||Shrine family of [[三島大社]]
+|-
+| align="center" style="background:#E3E3FF"| [[甲斐国]]
+| '''[[甲斐国造]]'''||Kai||[[鹽海足尼]]<br />(reign of Emperor Keikō)||[[甲斐氏]] (Kimi),<br />later [[壬生氏]] (Atai) (tentative)||Kai Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[相模国]]
+| '''[[師長国造]]'''<br />(Shinaga Kokuzo)||Shinaga||Ōwashiomi-no-mikoto<br />(reign of Emperor Seimu)||[[丈部氏]] (tentative)||Western Sagami Province||The Sōgabe clan of the same lineage are shrine family of [[大國魂神社]]
+|-
+| '''[[相武国造]]'''<br />(Sagamu Kokuzo)||Sagamu||Kayatake Hikono-mikoto (Otake Hikono-mikoto)<br />(reign of Emperor Seimu)||[[壬生氏]] (Atai)||Eastern Sagami Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[武蔵国]]
+| '''[[知々夫国造]]'''||Chichibu||Chichibe Hikono-mikoto<br />(reign of Emperor Sujin)||Ōtomobe clan (Atai) (tentative)||Northwestern Musashi Province||
+|-
+| '''[[无邪志国造]]'''||Musashi||Enatamohino-mikoto<br />(reign of Emperor Seimu)||Musashi clan (Atai) and Kasahara clan (Atai),<br />later Hatori clan (Atai), renamed Musashi clan (Sukune)|| rowspan="2" |Musashi Province (excl. Chichibu)||Shrine family of [[氷川神社]]
+|-
+| '''[[胸刺国造]]'''||Munasashi||[[海上五十狭茅|Isachi no Atai]]<br />(period not recorded)||||Generally considered the same as Musashi Kokuzo
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[安房国]]
+| '''[[阿波国造]]'''||Awa||Ōtomo no Atai Ōtaki<br />(reign of Emperor Seimu)||Ōtomo clan (Atai)||Western Awa Province||
+|-
+| '''[[長狭国造]]'''||Nagasa||Descendants of [[神八井耳命]]<ref>In the ''Kojiki'', [[神八井耳命|Kamiyainimimi-no-mikoto]] is cited as the progenitor of Nagasa Kokuzo.</ref><br />(period not recorded)||Nagasa clan (unknown)<br />or Kusukabe clan (Obito)||Eastern Awa Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="6"| [[上総国]]
+| '''[[須恵国造]]'''||Sue||Ōbuhino-omi-no-mikoto<br />(reign of Emperor Seimu)||Sue clan (Obito)||Southern Kazusa Province||
+|-
+| '''[[馬来田国造]]'''||Umakuta / Makuta||Fukahano-omi-no-mikoto<br />(reign of Emperor Seimu)||||West-central Kazusa Province||
+|-
+| '''[[上海上国造]]'''||Kamitsu-Unakama||Oshitatachimotahi-no-mikoto<br />(reign of Emperor Seimu)||Hinokuma clan (Toneri-atai)||West-central Kazusa Province||
+|-
+| '''[[菊麻国造]]'''||Kukuma / Kikuma||[[大鹿国直]]<br />(reign of Emperor Seimu)||Kikumata clan (Miyatsuko) (tentative)||Northwestern Kazusa Province||
+|-
+| '''[[伊甚国造]]'''||Ijimu / Ijimi||Ikoro Tono-atai<br />(reign of Emperor Seimu)||Ijimi clan (Atai)||Eastern Kazusa Province||
+|-
+| '''[[武社国造]]'''||Musa||Hikooshine-no-mikoto<br />(reign of Emperor Seimu)||Musa clan (Omi)||Northeastern Kazusa Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[下総国]]
+| '''[[千葉国造]]'''||Chiha||Not recorded<ref>Later genealogies suggest Takenari no Atai of the Ōjin era.</ref>||Ōkisakurabe clan (Atai)||Southern Shimōsa Province||
+|-
+| '''[[印波国造]]'''||Inba||Idukori-no-mikoto<br />(reign of Emperor Ōjin)||Hatori clan (Atai)||Central Shimōsa Province||Descendants' Ōta clan are shrine family of [[麻賀多神社]]
+|-
+| '''[[下海上国造]]'''||Shimotsu-Unakama||Kudoki no Atai<br />(reign of Emperor Ōjin)||Tadahino Matsuri-be clan (Atai)||Eastern Shimōsa Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="7"| [[常陸国]]
+| '''[[筑波国造]]'''||Tsukuba||Aheshine-no-mikoto<br />(reign of Emperor Seimu)||||Southern Hitachi Province||
+|-
+| '''[[新治国造]]'''||Niihara||Hinarabu-no-mikoto<br />(reign of Emperor Seimu)||Niihara clan (Atai)||Western Hitachi Province||
+|-
+| '''[[茨城国造]]'''||Ibaraki||Tsukushi no Tone<br />(reign of Emperor Ōjin)||Mibu clan (Muraji)||Central Hitachi Province||
+|-
+| '''[[仲国造]]'''||Naka||Takekaruma-no-mikoto<br />(reign of Emperor Seimu)||Mibu clan (Atai)||Eastern Hitachi Province||
+|-
+| '''[[久自国造]]'''||Kuji||Funaseno Sukune<br />(reign of Emperor Seimu)||Ōbe clan (Miyatsuko)||North-central Hitachi Province||
+|-
+| '''[[高国造]]'''||Taka||Misahino-mikoto<br />(reign of Emperor Seimu)||[[岩城氏]] (Atai)||Northern Hitachi Province||
+|-
+| style="white-space:nowrap" |'''[[道口岐閉国造]]'''||Michinokuchi no Kihe||Usahino Tone<br />(reign of Emperor Ōjin)||||Far northern Hitachi Province||
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[東山道|Tōsandō]]'''
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[近江国]]
+| '''[[淡海国造]]'''<br />(Ōmi Kokuzo)||Ōmi||Ōtamuyawake<br />(reign of Emperor Seimu)||Ōmi clan (Omi)||Western Ōmi Province||
+|-
+| '''[[安国造]]'''<br />(Ōmi-Yasu Kokuzo)||Yasu||(not recorded)||Yasu clan (Atai)||Southeastern Ōmi Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="5"| [[美濃国]]
+| '''[[額田国造]]'''||Nukata||Ōnaorō-no-mikoto<br />(reign of Emperor Seimu)||Nukata clan (Kokuzo)||Northwestern Mino Province||
+|-
+| '''[[三野前国造]]'''||Mino no Saki / Mino no Michinokuchi||Yakuri-no-mikoto<br />(reign of Emperor Kaikwa)||Mino clan (Mino clan) (Atai)||West-central Mino Province||
+|-
+| '''[[本巣国造]]'''||Motosu||[[神大根王]]||Mino clan (Mino clan) (Atai)||West-central Mino Province||Also called Mino-mae Kokuzo
+|-
+| '''[[牟義都国造]]'''||Mugetsu||Oshikuroene Hikono-ō||||North-central Mino Province||
+|-
+| '''[[三野後国造]]'''||Mino no Shiri||Tomikabura-no-mikoto<br />(reign of Emperor Seimu)||Mino-shiri clan (Atai)||Eastern Mino Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="1"| [[飛騨国]]
+| '''[[斐陀国造]]'''||Hida||Ōyasaki-no-mikoto<br />(reign of Emperor Seimu)||Hida clan (Kokuzo)||Hida Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="1"| [[信濃国]]
+| '''[[科野国造]]'''||Shinano||[[武五百建命]]<br />(reign of Emperor Sujin)||Shinano clan (Kimi),<br />later [[金刺氏|Kanasashi clan]] and [[他田氏|Tada clan]] (Toneri)||All of Shinano Province||Shrine family of [[諏訪大社]] (Lower Shrine)
+|-
+| align="center" style="background:#E3E3FF"| [[上野国]]
+| '''[[上毛野国造]]'''||Kamitsukeno||[[彦狭島王|Hikosashima-no-mikoto]]<br />(period not recorded)||[[上毛野氏]] (Kimi)||Kōzuke Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[下野国]]
+| '''[[下毛野国造]]'''||Shimomitsukeno||[[奈良別|Narabetsu]]<br />(reign of Emperor Nintoku)||[[下毛野氏]] (Kimi)||Shimotsuke Province (excl. Nasu)||
+|-
+| '''[[那須国造]]'''||Nasu||[[大臣命]]<br />(reign of Emperor Keikō)||[[那須氏]] (Atai)||Northern Shimotsuke Province||Kamakura shogunate gokenin; Muromachi shogunate Kantō Hasshu Yakata; Edo shogunate kōtai-yoriai
+|-
+| align="center" style="background:#E3E3FF" rowspan="10"| [[陸奥国]]
+| '''[[白河国造]]'''||Shirakawa||Shioino Kojino-atai<br />(reign of Emperor Seimu)||Later Nasu clan (Atai) as gunji||Southern Mutsu Province<br />(southwestern Fukushima area)||
+|-
+| '''[[石背国造]]'''||Iwase||Takemiyorume-no-mikoto<br />(reign of Emperor Seimu)||[[吉弥侯部|Yoshimikobe clan]]||Southern Mutsu Province<br />(west-central Fukushima area)||Shrine family of Iwase Kokuzo Shrine
+|-
+| '''[[阿尺国造]]'''||Asaka||Hitoneno-mikoto<br />(reign of Emperor Seimu)||Hatori clan (Atai)||Southern Mutsu Province<br />(west-central Fukushima area)||Shrine family of [[安積国造神社]]
+|-
+| '''[[道奥菊多国造]]'''||Michinookuno Kikuta||Yanushino Tone<ref> [{{NDLDC|991097/219}} ''Kokushi Taikei'' Vol. 7] (Keizai Zasshisha; National Diet Library Digital Collection), frame 219.</ref> (Yanushi no Tone)<br />(reign of Emperor Ōjin)||Yuzakikuta clan (Omi)||Southern Mutsu Province<br />(southeastern Fukushima area)||
+|-
+| '''[[石城国造]]'''||Iwaki||[[建許呂命]]<br />(reign of Emperor Seimu)||Iwaki clan (Atai)||Southern Mutsu Province<br />(east-central Fukushima area)||
+|-
+| '''[[染羽国造]]'''||Shimeha / Shineha||Tarihikono-mikoto<br />(reign of Emperor Seimu)||||Southern Mutsu Province<br />(east-central Fukushima area)||
+|-
+| '''[[信夫国造]]'''||Shinobu||Kumano-atai<br />(reign of Emperor Seimu)||Hatori clan||Southern Mutsu Province<br />(northwestern Fukushima area)||
+|-
+| '''[[浮田国造]]'''||Ukita||[[鹿我別|Kagawakeno-ō]]<br />(reign of Emperor Seimu)||Yoshimikobe clan||Southern Mutsu Province<br />(northeastern Fukushima area)||
+|-
+| '''[[伊久国造]]'''||Iku||Toyoshima-no-mikoto<br />(reign of Emperor Seimu)||||Southern Mutsu Province<br />(southeastern Miyagi area)
+|
+|-
+| '''[[思国造]]'''<br />(possibly Hiri)||Watari||Shikuma Hiko<br />(reign of Emperor Seimu)||||Southern Mutsu Province<br />(southeastern Miyagi area)||Some suggest "思" is a miswriting of "日利," placing it in Watari District; others suggest "太" was omitted from "思太," placing it in [[志田郡|Shida District]], though this interpretation creates an isolated position far to the north and has not gained wide acceptance.<ref>There is also a theory that, based on the pattern of kofun construction north of Natori, it should be read as Shida District with the omission of "太" from "思太," but as this would leave it isolated and far to the north, it has not become a leading theory.</ref>
+|-
+| align="center" style="background:#E3E3FF"| [[出羽国]]
+| |||||||||
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[北陸道|Hokuriku-dō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[若狭国]]
+| '''[[若狭国造]]'''||Wakasa||[[荒礪命]]<br />(reign of Emperor Ingyō)||Wakakurabe clan (Omi)||Wakasa Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[越前国]]
+| '''[[角鹿国造]]'''||Tsunuga||Takekosahi-no-mikoto<br />(reign of Emperor Seimu)||Tsunuga clan (Atai)||Southwestern Echizen Province||Shrine family of [[氣比神宮]]
+|-
+| '''[[三国国造]]'''||Mikuni||Wakanagatarisune<br />(reign of Emperor Seimu)||||Northeastern Echizen Province||
+|-
+| '''[[高志国造]]'''<br />(Koshi Kokuzo / Furushi Kokuzo)||Koshi||[[市入命]]<br />(reign of Emperor Seimu)||Michi clan (Kimi / Kō)||Central Echizen Province<br />(Niū District, Echizen)||Sakaki clan, shrine family of Nunagawa Shrine, claims descent from Koshi Kokuzo; some assert their base was Echigo Province
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[加賀国]]
+| '''[[江沼国造]]'''||Enuma||Shiwakatsune<br />(reign of Emperor Hanzei)||Enuma clan (Omi)||Southern Kaga Province||
+|-
+| '''[[加我国造]]'''<br />(Kaga Kokuzo)||Kaga||Ōenohimekimi<br />(reign of Emperor Yūryaku)||||Central Kaga Province (shared with below)||
+|-
+| '''[[加宜国造]]'''||Kaga||Sudono Namiru-no-mikoto<br />(reign of Emperor Nintoku)||Michi clan (Kimi / Kō)||Central Kaga Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[能登国]]
+| '''[[羽咋国造]]'''||Hakui||Ishiki Wakeno-ō<br />(reign of Emperor Yūryaku)||Hakui clan (Kimi / Kō)||Southern Noto Province||
+|-
+| '''[[能等国造]]'''||Noto||[[彦狭島命]]<br />(reign of Emperor Seimu)||Noto clan (Omi)||Northern Noto Province||
+|-
+| align="center" style="background:#E3E3FF"| [[越中国]]
+| '''[[伊彌頭国造]]'''||Imidzu||[[大河音足尼]]<br />(reign of Emperor Seimu)||Imizu clan (Omi)||Etchū Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[越後国]]
+| '''[[久比岐国造]]'''||Kubiki||Mikoto-no-mikoto<br />(reign of Emperor Sujin)||Kubiki clan (Atai)||Western Echigo Province||
+|-
+| '''[[高志深江国造]]'''||Koshi no Fukae||[[素都乃奈美留命]]<br />(reign of Emperor Sujin)||Koshi clan (Kimi / Kō)||Northern Echigo Province||
+|-
+| align="center" style="background:#E3E3FF"| [[佐渡国]]
+| '''[[佐渡国造]]'''||Sado||Ōaraki no Atai<br />(reign of Emperor Seimu)||Unknown (Atai)||Sado Province||
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道|San'indō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[丹波国]]
+|  rowspan="2"|'''[[丹波国造]]'''||rowspan="2"|Tanba||rowspan="2"|Ōkuraki-no-mikoto<br />(reign of Emperor Seimu)||rowspan="2"|[[丹波氏]] (Atai)||rowspan="2"|Tanba Province and Tango Province||rowspan="2"|Branch of the kokuzo clan serves as shrine family of [[籠神社]]
+|-
+| align="center" style="background:#E3E3FF"| [[丹後国]]
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[但馬国]]
+| '''[[但遅麻国造]]'''||Tajima||Funahosune<br />(reign of Emperor Seimu)||Tajima clan (Kimi / Kō)||Eastern Tajima Province||
+|-
+| '''[[二方国造]]'''||Futagata||Minibu-no-mikoto<br />(reign of Emperor Seimu)||Futagata clan (Atai)||Western Tajima Province||
+|-
+| align="center" style="background:#E3E3FF"| [[因幡国]]
+| '''[[稲葉国造]]'''||Inaba||Hikataduhi-no-mikoto<br />(reign of Emperor Seimu)||[[因幡氏|Inaba clan]] (Kokuzo)||Inaba Province||Descendants' [[伊福部氏|Ifukube clan]] are shrine family of [[宇倍神社]]
+|-
+| align="center" style="background:#E3E3FF"| [[伯耆国]]
+| '''[[伯岐国造]]'''<br />(Hōki Kokuzo)||Hōki||Ōyakisune<br />(reign of Emperor Seimu)||Hōki clan (Hōki clan) (Miyatsuko)||Hōki Province||
+|-
+| align="center" style="background:#E3E3FF"| [[出雲国]]
+| '''[[出雲国造]]'''||Izumo||[[宇迦都久怒]]<br />(reign of Emperor Sujin)||[[出雲氏]] (Omi)||Izumo Province||Shrine family of [[出雲大社]]
+|-
+| align="center" style="background:#E3E3FF"| [[石見国]]
+| '''[[石見国造]]'''||Iwami||Ōyafuru-no-mikoto<br />(reign of Emperor Sujin)||||Iwami Province||
+|-
+| align="center" style="background:#E3E3FF"| [[隠岐国]]
+| '''[[意岐国造]]'''||Oki||Tōkahi Hikono-mikoto<br />(reign of Emperor Ōjin)||[[億岐氏]] (unknown)||Oki Province||Shrine family of [[玉若酢命神社]]
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陽道|Sanyōdō]]'''
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[播磨国]]
+| '''[[明石国造]]'''||Akashi||Tsumijisune<br />(reign of Emperor Ōjin)||Umi clan (Atai)||Southeastern Harima Province||
+|-
+| '''[[針間国造]]'''||Harima||Ikojiwake-no-mikoto<br />(reign of Emperor Seimu)||Harima clan (Atai), [[佐伯直#針間別佐伯直を祖とする佐伯氏|Saeki clan]] (Atai)||Northern Harima Province||
+|-
+| '''[[針間鴨国造]]'''||Harima no Kamo||Ichirikuwake-no-mikoto<br />(reign of Emperor Seimu)||Yama clan (Atai)||Eastern Harima Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="1"| [[美作国]]
+| '''[[吉備中県国造]]'''||Kibi no Nakatsu Agata||Akashihiko<br />(reign of Emperor Sujin)||Misabe clan (Atai)||Mimasaka Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[備前国]]
+| '''[[大伯国造]]'''||Ōku||Sakisune<br />(reign of Emperor Ōjin)||||Eastern Bizen Province||
+|-
+| '''[[上道国造]]'''||Kamitsumichi||Tasaomi<br />(reign of Emperor Ōjin)||Kamitsumichi clan (Omi)||Central Bizen Province||
+|-
+| '''[[三野国造]]'''||Mino||Otohikono-mikoto<br />(reign of Emperor Ōjin)||Mino clan (Omi)||Southwestern Bizen Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[備中国]]
+| '''[[笠臣国造]]'''||Kasa no Omi / Kasa||Kasa Mimai-omi<br />(reign of Emperor Ōjin)||Kasa clan (Omi)||Southwestern Bitchū Province||
+|-
+| '''[[加夜国造]]'''||Kaya||Nakahikono-mikoto<br />(reign of Emperor Ōjin)||Kaya clan (Omi)||Southeastern Bitchū Province||Negi family of [[吉備津神社]]
+|-
+| '''[[下道国造]]'''||Shimotsu-michi||Enohikono-mikoto (Inatakenowake)<br />(reign of Emperor Ōjin)||Shimotsu-michi clan (Omi)||Central Bitchū Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[備後国]]
+| '''[[吉備品治国造]]'''<br />(Kibi Homuchi Kokuzo)||Kibi no Homuchi||Ōfunesune<br />(reign of Emperor Seimu)||Kibi Homuchi-be clan (Kimi)||Southern Bingo Province||
+|-
+| '''[[吉備穴国造]]'''||Kibi-Ana||Yachinosune<br />(reign of Emperor Keikō)||Ana clan (Kō)||Eastern Bingo Province||
+|-
+| align="center" style="background:#E3E3FF"| [[安芸国]]
+| '''[[阿岐国造]]'''||Aki||[[飽速玉命]]<br />(reign of Emperor Seimu)||Aki clan (Aki clan) (Ōnaotai)||Aki Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="4"| [[周防国]]
+| '''[[大島国造]]'''||Ōshima||Anayamatofuru-no-mikoto<br />(reign of Emperor Seimu)||||Ōshima in Suō Province||Branch lineage of Izumo Kokuzo; supporting branch of Musashi Kokuzo
+|-
+| '''[[周防国造]]'''||Suō||Kameno Omi<br />(reign of Emperor Ōjin)||Suō clan (Ōnaotai)||Eastern Suō Province||
+|-
+| '''[[波久岐国造]]'''||Hakuki||Toyotamasuko-no-mikoto<br />(reign of Emperor Sujin)||||Western Suō Province||
+|-
+| '''[[都怒国造]]'''||Tsunu||Tadori Sune<br />(reign of Emperor Nintoku)||Tsuno clan (Omi)||Central Suō Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[長門国]]
+| '''[[阿武国造]]'''||Amu||Ajihawa-no-mikoto<br />(reign of Emperor Keikō)||Amu clan (Kō)||Eastern Nagato Province||
+|-
+| '''[[穴門国造]]'''||Anato||Hayatodori-no-mikoto<br />(reign of Emperor Keikō)||Anato clan (Atai)||Western Nagato Province||Shrine family of [[住吉神社 (下関市)|Sumiyoshi Shrine]]
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[南海道|Nankaidō]]'''
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[紀伊国]]
+| '''[[熊野国造]]'''||Kumano||Ōatosune<br />(reign of Emperor Seimu)||Kumano clan (Atai)||Eastern Kii Province||Shrine family of [[熊野本宮大社]]
+|-
+| '''[[紀国造]]'''<br />(Ki Kokuzo)||Ki / Kii||[[天道根命]]<br />(reign of Emperor Jinmu)||Ki clan (Kimi / Atai)||Western Kii Province||style="white-space:nowrap"|Shrine family of [[日前神宮・国懸神宮]]
+|-
+| align="center" style="background:#E3E3FF"| [[淡路国]]
+| '''[[淡道国造]]'''||Awaji||Yaguchisune<br />(reign of Emperor Seimu)||Awaji clan (Ōnaotai) or Hadomonbe clan (Miyatsuko)||Awaji Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[阿波国]]
+| '''[[粟国造]]'''||Awa||Chibasune<br />(reign of Emperor Ōjin)||Awa clan (Ōnaotai)||Northern Awa Province||
+|-
+| '''[[長国造]]'''||Naga||Karabisune<br />(reign of Emperor Seimu)||Naga clan (Kō / Atai)||Southern Awa Province||
+|-
+| align="center" style="background:#E3E3FF"| [[讃岐国]]
+| '''[[讃岐国造]]'''||Sanuki||Sumahorano-mikoto<br />(reign of Emperor Ōjin)||[[讃岐氏]] (Kō / Ōnaotai)||Sanuki Province||Descendants' [[十河氏]] are lords of [[十河城]]
+|-
+| align="center" style="background:#E3E3FF" rowspan="5"| [[伊予国]]
+| '''[[小市国造]]'''||Ochi / Oichi||[[小市国造|Kochino-mikoto]]<br />(reign of Emperor Ōjin)||[[越智氏|Kochi clan]] (Atai)||Eastern Iyo Province||Descendants' [[越智氏|Ōhōri clan]] are shrine family of [[大山祇神社]]
+|-
+| '''[[怒麻国造]]'''||Numa||Wakamio-no-mikoto<br />(reign of Empress Jingū)||||Northern Iyo Province||
+|-
+| '''[[風速国造]]'''||Kazehaya||Asari<br />(reign of Emperor Ōjin)||Kazahaya clan (Atai)||Central Iyo Province||
+|-
+| '''[[久味国造]]'''||Kumi||Iyonushi-no-mikoto<br />(reign of Emperor Ōjin)||[[久米氏#久米直|Kume clan]] (Atai)||Central Iyo Province||
+|-
+| '''[[伊余国造]]'''||Iyo||Hayaushikami-no-mikoto<br />(reign of Emperor Seimu)||Iyo clan (Iyo clan) (Ōnaotai)||Southern Iyo Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[土佐国]]
+| '''[[都佐国造]]'''||Tosa||Koidarisune<br />(reign of Emperor Seimu)||Tosa clan (Kō / Ōnaotai)||Central Tosa Province||
+|-
+| '''[[波多国造]]'''||Hata||Amakaragino-mikoto<br />(reign of Emperor Sujin)||[[波多氏 (古代)#地祇系氏族（波多国造）|Hata clan]] (Kimi)||Western Tosa Province||
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[西海道|Saikaidō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[筑前国]]
+| rowspan="2"|'''[[筑紫国造]]'''||rowspan="2"|Tsukushi||rowspan="2"|Taminchi-no-mikoto<br />(reign of Emperor Seimu)||rowspan="2"|[[筑紫氏]] (Kimi / Kō)||rowspan="2"|Chikuzen Province and Chikugo Province||rowspan="2"|
+|-
+| align="center" style="background:#E3E3FF"| [[筑後国]]
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[豊前国]]
+| '''[[豊国造]]'''||Toyo||Unanosune<br />(reign of Emperor Seimu)||Toyo clan (Atai)||Northern Buzen Province||
+|-
+| '''[[宇佐国造]]'''||Usa||[[宇佐都彦命]]<br />(reign of Emperor Jinmu)||[[宇佐氏]] (Kō)||Eastern Buzen Province||Shrine family of [[宇佐神宮]]
+|-
+| align="center" style="background:#E3E3FF" rowspan="3"| [[豊後国]]
+| '''[[国前国造]]'''||Kunisaki||Usajino-mikoto<br />(reign of Emperor Seimu)||Kunisaki clan (Omi)||Northern Bungo Province||
+|-
+| '''[[大分国造]]'''||Ōita / Ōkida||[[建弥阿久良命]]<br />(reign of Emperor Suinin)||Ōita clan (Kimi)||Eastern Bungo Province||
+|-
+| '''[[比多国造]]'''||Hita||Tohasune<br />(reign of Emperor Seimu)||||Western Bungo Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="4"| [[肥前国]]
+| '''[[筑志米多国造]]'''||Tsukushi no Meta||[[都紀女加]]<br />(reign of Emperor Seimu)||Tsukushi Meta clan (Kimi)||Eastern Hizen Province||
+|-
+| '''[[松津国造]]'''||||Kanayumi no Muraji<br />(reign of Emperor Nintoku)||||Possibly eastern Hizen Province||
+|-
+| '''[[末羅国造]]'''||Matsura||Yata Inayoshi<br />(reign of Emperor Seimu)||Matsura clan (Atai)||Northern Hizen Province||
+|-
+| '''[[葛津国造]]'''<br />(Fujitstachi Kokuzo)||Fujitsu / Fujitsutachi||Wakahikono-mikoto<br />(reign of Emperor Seimu)||||Western Hizen Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="4"| [[肥後国]]
+| '''[[阿蘇国造]]'''||Aso||Hayamihotama-no-mikoto<br />(reign of Emperor Sujin)||[[阿蘇君|Aso clan]] (Kimi)||Northeastern Higo Province||The clan's Uji clan are shrine family of [[阿蘇神社]]
+|-
+| '''[[火国造]]'''||Hi||[[建緒組命]]<br />(reign of Emperor Sujin)||Hi clan (Kimi)||Central Higo Province||
+|-
+| '''[[葦北国造]]'''||Ashikita||Miineko-no-mikoto<br />(reign of Emperor Keikō)||Ashikita clan (Kimi) (Osabe-Yugehabe)||Southern Higo Province||
+|-
+| '''[[天草国造]]'''||Amakusa||Takeshimamatsuno-mikoto<br />(reign of Emperor Seimu)||||Amakusa in Higo Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="1"| [[日向国]]
+| '''[[日向国造]]'''||Hyūga||Okinano-mikoto<br />(reign of Emperor Ōjin)||Morokata clan (Kimi)||Hyūga Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[大隅国]]
+| '''[[大隅国造]]'''||Ōsumi||Fushinu<br />(reign of Emperor Nintoku)||Ōzumi clan (Atai)||Ōsumi Province (excl. Tanegashima)||
+|-
+| '''[[多褹島造]]'''||Tane||(not recorded)||||Ōsumi Province (Tanegashima)||
+|-
+| align="center" style="background:#E3E3FF"| [[薩摩国]]
+| '''[[薩摩国造]]'''||Satsuma||Ikusokuno-mikoto<br />(reign of Emperor Nintoku)||Satsuma clan (Kimi)||Satsuma Province||
+|-
+| align="center" style="background:#E3E3FF"| [[壱岐国]]
+| '''[[壱岐国造]]'''<br />(Iki Shima-zukuri)||Iki||Kamiketabuno-atai<br />(reign of Emperor Keitai)||[[壱岐氏]] (Atai / Shima-zukuri)||Iki Province||
+|-
+| align="center" style="background:#E3E3FF" rowspan="2"| [[対馬国]]
+| '''[[上県国造]]'''||||Takemikoki-no-mikoto<br />(reign of Emperor Jinmu)||Tsushima-Agata clan (Atai)||rowspan="2"|Tsushima Island||rowspan="2"|
+|-
+| '''[[下県国造]]'''||||(not recorded)||Tsushima-Shimo-Agata clan (Atai)
 |}
+{{-}}
 
-==References==
+=== Kokuzo Established After the Taika Reform ===
+{| class="wikitable" style="background:#ffffff;font-size:85%" align="left"
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Ritsuryo Province
+!style="background:#ccccff; white-space:nowrap" colspan="2" | Name of Kokuzo
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | First Kokuzo<br />(Appointment Period)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Clan (Kabane in parentheses)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Domain
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Notes
+|-
+!style="background:#ccccff; white-space:nowrap" | Written Form
+!style="background:#ccccff; white-space:nowrap" | Reading
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[畿内|Kinai (Home Provinces)]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[和泉国]]
+| '''[[和泉国造]]'''||Izumi||(Reiki 1)||Unknown||Izumi Province||Established by renaming the Kayano-kan, separated from Kawachi Province.
+|-
+| align="center" style="background:#E3E3FF"| [[摂津国]]
+| '''[[摂津国造]]'''||Settsu||(reign of Emperor Kanmu?)||Ōshikouchi clan (Imiki)||Settsu Province||
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[東山道|Tōsandō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[陸奥国]]
+| '''[[陸奥国大国造]]'''||Michinoku||(Jingo Keiun 1?)||[[道嶋氏]] (Sukune)||Mutsu Province||Established by consolidating the various Mutsu kokuzo.
+|-
+| align="center" style="background:#E3E3FF"| [[出羽国]]
+| '''[[出羽国造]]'''||Dewa||(Wadō 5)||Unknown||Dewa Province||Established by dividing parts of Mutsu Province and Echigo Province.
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道|San'indō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[美作国]]
+| '''[[美作国造]]'''||Mimasaka||(Wadō 6)||Unknown||Mimasaka Province||Established by dividing from Bizen Province.
+|}
+{{-}}
 
-{{Reflist}}
+=== List of Non-Existent Kokuzo ===
+The following kokuzo appear in shrine traditions and texts such as Volume 28 of the ''Suwa Shiryō'' (containing the "Suwa Shimosha Ōhōri Takei-nohafuri Lineage Chart Abbreviated"), and the apocryphal works ''[[先代旧事本紀大成経|Sendai Kuji Hongi Taiseikyo]]'', ''[[科野国造|Aso-ke Ryakukeizu]]'', ''Shūho Suwa-shi Keizu Seien'', and ''Shokeifu''; however, since their credibility is low and they cannot be corroborated in other historical sources, they are considered to have not actually existed.
+{| class="wikitable" style="background:#ffffff;font-size:85%" align="left"
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Ritsuryo Province
+!style="background:#ccccff; white-space:nowrap" colspan="2" | Name of Kokuzo
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | First Kokuzo<br />(Appointment Period)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Clan (Kabane in parentheses)
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Domain
+!style="background:#ccccff; white-space:nowrap" rowspan="2" | Notes
+|-
+!style="background:#ccccff; white-space:nowrap" | Written Form
+!style="background:#ccccff; white-space:nowrap" | Reading
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[東海道|Tōkaidō]]'''
+|-
+| align="center" style="background:#E3E3FF" rowspan="1"| [[尾張国]]
+| '''[[嶋田国造]]'''<br />(Owari-Shimada Kokuzo)||Shimada||Nakatomi Kokami<br />(establishment period not recorded)||Shimada clan? (Omi)||Southern Owari Province||Possibly the Shimada-omi branch of the [[多氏|Ta clan]]; Nakatomi Kokami is the progenitor of the Niwa District master.
+|-
+| align="center" style="background:#E3E3FF"| [[下総国]]
+| '''[[布佐国造]]'''||Fusa||[[天富命|Ameno Tominoto]]<br />(reign of Emperor Jinmu)||Inbe clan (Obito)||Western Shimōsa Province||Based on tradition of [[竹内神社]].
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[東山道|Tōsandō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[信濃国]]
+| '''[[伊奈国造]]'''||Ina||Hayaushikami-no-mikoto<br />(establishment period not recorded)||Unknown||Southern Shinano Province||Note: another source records the establishment of [[科野国造|Shinano Kokuzo]] for Shinano Province; Hayaushikami-no-mikoto is the progenitor of Iyo Kokuzo.
+|-
+| align="center" style="background:#E3E3FF"| [[信濃国]]
+| '''[[洲羽国造]]'''||Suwa||[[建大臣命]] / [[神功皇后|Empress Jingū]]||Unknown||Central Shinano Province||The kokuzo establishment record for Suwa in the ''[[先代旧事本紀|Sendai Kuji Hongi]]'' Kokuzo Hongi is a miswriting of [[那須国造|Nasu Kokuzo]]; the specific details (establishment period, founder Takenōomi-no-mikoto, establishment circumstances) derive from the apocryphal ''Sendai Kuji Hongi Taiseikyo'', ''Aso-ke Ryakukeizu'', ''Shūho Suwa-shi Keizu Seien'', and ''Shokeifu'', making this kokuzo almost certainly fictional.<ref name="ReferenceA">Maeda Ryōtarō, "Reconsideration of the Ōhōri's Kami Clan Genealogy and Aso Family Abbreviated Lineage: Reconstructing Suwa Traditions" (''Kokugokokugo Kenkyū'' No. 161, August 2023)</ref>
+|-
+| align="center" style="background:#E3E3FF"| [[信濃国]]
+| '''[[木蘇国造]]'''||Kiso||Otohikono-mikoto<br />(establishment period not recorded)||Unknown||Southern Shinano Province||The Kiso Kokuzo appears only in apocryphal works such as the ''Sendai Kuji Hongi Taiseikyo'', ''Aso-ke Ryakukeizu'', ''Shūho Suwa-shi Keizu Seien'', and ''Shokeifu'', making it almost certainly fictional.<ref name="ReferenceA"/>
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陽道|Sanyōdō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[安芸国]]
+| '''[[沼田国造]]'''||Nuta||Ayahatadama-no-mikoto||Tsukushi clan||Eastern Aki Province||The Nuta Shrine family claims to be of the Nuta Kokuzo lineage; Ayahatadama-no-mikoto is the progenitor of Aki Kokuzo.
+|-
+|colspan="7" style="background-color:#C0C0C0"|'''[[山陰道|San'indō]]'''
+|-
+| align="center" style="background:#E3E3FF"| [[出雲国]]
+| '''[[須佐国造]]'''||Susa||Bonsei<br />(reign of Emperor Seimu)||Susa clan||Southwestern Izumo Province||The [[須佐神社|Susa Shrine]] family claims to be of the Susa Kokuzo lineage.
+|}
+{{-}}
 
-{{Portal|Ancient Japan}}
+== Kokuzo that Survived After the Taika Reform ==
+=== Main New Kokuzo ===
+* [[出雲国造|Izumo no Kuni Kokuzo]] (Kizuki Kokuzo)
+*: As the supreme Shinto priest of [[出雲大社|Izumo Taisha]], they were revered almost like a living deity (''arahitogami''). During the [[南北朝時代 (日本)|Northern and Southern Courts period]], they split into the Senke and Kitajima branches, but they continue today as shrine families of Izumo Taisha.
+* [[紀伊国造|Ki no Kuni Kokuzo]]
+*: Shrine family of [[日前神宮・国懸神宮]]. The family line lapsed in the early [[平安時代|Heian period]] and mid-[[江戸時代|Edo period]], but was maintained through maternal succession. Currently uses the Fujiwara surname.
 
-{{Japan-hist-stub}}
+==== Kokuzo Clans that Transmitted Their Lineage as Warrior Families ====
+* [[那須国造|Nasu Kokuzo]] — Claims to be of Fujiwara Nagaie lineage, but some assert that they intermarried with the kokuzo family to become the later Nasu clan.
+
+==== Kokuzo Clans that Transmitted Their Lineage as Shrine Families ====
+* [[阿尺国造|Asaka Kokuzo]] (Asaka Kokuzo)
+*: The Ando family, shrine family of [[安積国造神社|Asaka Kokuzo Shrine]] in Kōriyama City, Fukushima Prefecture. They claim descent from the Asaka Kokuzo clan and use the Asaka surname.
+* [[石背国造|Iwase Kokuzo]]
+* [[无邪志国造|Musashi Kokuzo]]
+* [[伊豆国造|Izu Kokuzo]]
+* [[尾張国造|Owari Kokuzo]]
+*: Head family of [[熱田神宮|Atsuta Jingū]]
+* [[出雲国造|Izumo Kokuzo]] (Kizuki Kokuzo)
+* [[熊野国造|Kumano Kokuzo]]
+*: Shrine family of Kumano Taisha
+* [[科野国造|Shinano Kokuzo]]
+*: The [[金刺氏|Kanasashi clan]], head priests (''Ōhōri'') of [[諏訪大社|Suwa Taisha]] (Lower Shrine). Later defeated in conflict with the Suwa clan and extinguished, with the collateral [[武居氏|Takei clan]] taking over.
+* [[斐陀国造|Hida Kokuzo]]
+* [[角鹿国造|Tsunuga Kokuzo]]
+* [[穂国造|Ho Kokuzo]]
+*: Shrine family of [[砥鹿神社|Tonoshiro Shrine]]
+* [[但島国造|Tajima Kokuzo]]
+* [[丹波国造|Tanba Kokuzo]]
+*: The [[海部氏|Amabe family]], shrine family of [[籠神社|Kono Shrine]] in Miyazu City, Kyoto Prefecture. The current high priest claims to be the 82nd Tanba Kokuzo. The [[海部氏系図|Amabe clan genealogy]] is a National Treasure.
+* [[凡河内国造|Ōshikouchi Kokuzo]]
+* [[賀陽国造|Kaya Kokuzo]]
+* [[三野国造|Mino Kokuzo]]
+* [[億岐国造|Oki Kokuzo]]
+* [[宇佐国造|Usa Kokuzo]]
+*: Shrine family of [[宇佐神宮|Usa Jingū]]
+* [[阿蘇国造|Aso Kokuzo]]
+*: The [[阿蘇氏|Uji clan]], later renamed Aso clan. As warlords during the [[戦国時代 (日本)|Sengoku period]], they were destroyed in the [[阿蘇合戦|Aso War]], but [[加藤清正|Kato Kiyomasa]] restored [[阿蘇惟種|Aso Koretane]]'s orphan [[阿蘇惟善|Koretomo]] as head priest. They continue to exist as the head priest family to this day.
+* [[日向国造|Hyūga Kokuzo]]
+* [[因幡国造|Inaba Kokuzo]]
+*: The [[伊福部氏|Ifukube clan]], who served as ''kannagi'' (ritual officiants) at [[宇倍神社|Ube Shrine]] and claimed the title Inaba Kokuzo, were actually a branch lineage that split off from the [[因幡氏|Inaba clan]] (Inaba Kokuzo clan), the true kokuzo.
+
+== Footnotes ==
+{{reflist}}
+
+== References ==
+* Kokuzo entry in ''Kokushi Daijiten'' (Yoshikawa Kōbunkan)
+* Ōkawara Ryūichi, "The Structure and Essence of the Kokuzo System Before the Taika Reform: Through an Examination of 'Kokuzo' Notation in the Kiki and 'Gunni' in the ''Suishu''," (''Historical Studies'' No. 829, 2007)
+* [[篠川賢|Shinokawa Ken]], Ōkawara Ryūichi, [[鈴木正信|Suzuki Masanobu]] (eds.), ''Research on the Kokuzo System: Sources and Studies'' (Yagi Shoten, 2013)
+* [[篠川賢|Shinokawa Ken]], ''Kokuzo: The Yamato Government and Local Clans'' (Chūō Kōron Shinsha, 2021)
+* Maeda Ryōtarō, "Reconsideration of the Ōhōri's Kami Clan Genealogy and Aso Family Abbreviated Lineage: Reconstructing Suwa Traditions" (''Kokugokokugo Kenkyū'' No. 161, August 2023)
+* [[鈴木正信|Suzuki Masanobu]], ''Kokuzo and Regional Rule in Ancient Japan'' (Yagi Shoten, 2023)
+
+== Related Articles ==
+* [[カバネ|Kabane (clan surname)]]
+* [[氏姓制度|Ujikabane system]]
+* [[筑紫君磐井|Tsukushi no Kimi Iwai]]
+* [[国造本紀|Kokuzo Hongi]]
+* [[国造軍|Kokuzo-gun (kokuzo military)]]
+* [[県主|Agata-nushi]]
+* [[県主の一覧|List of agata-nushi]]
+
+{{Japanese-history-stub}}
+
+{{カバネ}}
+{{Normdaten}}
 
 {{wikidata link|Q2483673|en|Kuni no miyatsuko|es|Kuni no miyatsuko|ff|Kuni no miyatsuko|it|Kuni no miyatsuko|ja|国造|ko|국조 (일본)|simple|Kuni no miyatsuko|vi|Kuni no miyatsuko|zh|國造|grok=kuni_no_miyatsuko|check_date=2026-05-31}}
+
 [[Category:Ancient Japan]]
-[[Category:Kuni no miyatsuko| ]]
+[[Category:Kuni no miyatsuko]]
 [[Category:Wikidata has short description]]
 [[Category:Pages with unresolved QID in ill template]]
-<!-- [git-synced 2026-06-07] DUPLICATE-MERGE partner: this page shares a Wikidata item with another shinto page (see queue.md merge list). Synced so both sides are visible for a content-aware merge; canonical title prefers the "Jingū"/proper form over romanised variants. Do NOT blind-redirect — merge content first. -->
 [[Category:Git synced pages]]
 [[Category:Pages git synced to resolve interlanguage and interwiki links]]
+[[Category:Shinto titles and roles]]
+[[Category:Kofun period]]
+[[Category:Asuka period]]
