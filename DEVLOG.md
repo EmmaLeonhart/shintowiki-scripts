@@ -11381,3 +11381,35 @@ bucket 7 → 2. Five of the six now resolve mechanically.
 - `Q6852880` — the enwiki/jawiki category pair, out of scope for dedupe.
 
 7 new tests, 136 passing.
+
+## 2026-08-28 — the 44 "content merges" are three jobs, and the premise was wrong
+
+Emma: *"Physically merge the content of the Japanese into the English and redirect the Japanese so
+qid shit is resolved."* Measured the 44 before building anything, and the premise needs correcting.
+
+**The Japanese-TITLED pages are English articles.** Their section headings are `Overview`, `Name`,
+`Ancestry`, `Clan`, `Base`, `Territory` — English, not Japanese — and they map 1:1 onto the
+English-titled page's (`Name`→`Naming`, `Base`→`Headquarters`, `Tutelary Shrines`→`Clan Shrines`,
+`Descendants`→`Descendants`). They are two English translations of one jawiki source sitting at
+different titles. So for most of the 44 there is no Japanese content to merge into anything.
+
+The split, measured rather than assumed:
+
+- **23 — redirect only.** The EN page is larger and structurally parallel, i.e. a superset of the
+  JP-titled one. 下毛野国造 5,635b → 15,001b, 市磯長尾市 4,737b → 21,601b, 倭手彦 2,540b → 17,371b.
+  Nothing unique is lost, and page history holds the other translation either way.
+- **9 — Templates.** `Template:警告`/`Warning`, `Template:和暦`/`Japanese year`, `Template:博物館`/
+  `Infobox museum` and six more. A template's content is MARKUP; reconciling template code is a
+  different operation from merging prose, and folding them in with the articles would be a category
+  error.
+- **12 — genuine merges**, where the JP-titled page holds more and the sections are complementary:
+  科野国造 45,829b vs 3,100b · 国造 48,631b vs 12,808b · 健磐龍命 19,095b (Nihon Shoki, Fudoki,
+  Engishiki, Kokuzo Hongi) vs Takeiwatatsu-no-Mikoto 13,161b (Kihachi, Worship, U-no-matsuri) ·
+  神大根王 5,158b vs 4,667b · plus the Mishima content move carried over from the six.
+
+**Two heuristics tried and discarded on the way**, both recorded because each looked sufficient:
+an explicit `jawiki content` marker on the EN page turned out to exist on only 1 of 24; and
+heading-COUNT parity says nothing about direction, which is why the size comparison decides instead.
+
+Nothing edited this pass. The decomposition is the deliverable — 44 as a blob is unstartable, and
+lumping templates and 45KB article merges together is how it would have gone wrong.
