@@ -38,7 +38,7 @@
 | below = {{Icon|Cat}} [[:Category:神社本庁|カテゴリ]]
 }}<noinclude>
 
-{{wikidata link|Q18994074|ja|Template:神社本庁}}
+{{wikidata link|Q18994074|ja|Template:神社本庁|check_date=2026-08-28}}
 [[Category:jawiki imported templates from 2025-05-27]]
 [[Category:Association of Shinto Shrines]]
 [[Category:Shinto templates]]
@@ -46,4 +46,5 @@
 [[Category:Templates fixed with noinclude]]
 [[Category:Japanese titled templates]]
 [[Category:need translation]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>

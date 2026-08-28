@@ -13,15 +13,13 @@
 | religious_affiliation = [[Shinto]]
 }}
 
-{{nihongo|'''Sukiyamano Shrine'''|杉山神社}} is a [[shinto shrine]] in the [[Engishiki Jinmyōchō]]. It is located in [[Musashi Province]].
+{{nihongo|'''Sukiyamano Shrine'''|杉山神社}} is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932|lt=Engishiki Jinmyōchō}}. It is located in {{ill|Musashi Province|ar|محافظة موساشي|ca|Província de Musashi|ckb|پارێزگای موساشی|cs|Provincie Musaši|de|Provinz Musashi|eo|Provinco Musaŝi|es|Provincia de Musashi|fa|ولایت موساشی|fr|Province de Musashi|gl|Provincia de Musashi|hak|Musashi-koet|id|Provinsi Musashi|it|Musashi (provincia)|ja|武蔵国|ko|무사시국|lt|Musašio žemė|nl|Musashi (provincie)|pl|Prowincja Musashi|pt|Província de Musashi|ru|Мусаси (провинция)|simple|Musashi Province|sk|Musaši (provincia)|sr|Провинција Мусаши|th|แคว้นมูซาชิ|tr|Musashi (vilayet)|uk|Провінція Мусаші|vi|Musashi (tỉnh)|zh|武藏國|zh_min_nan|Musasi-kok|zh_yue|武藏國|qid=Q907398|lt=Musashi Province}}.
 
 ==References==
 
 [[Category:Shikinaisha|Sukiyamano Shrine]][[Category:Shikinai Shōsha]]
 
-[[ja:杉山神社]]
-
-{{wikidata link|Q135039726|ja|杉山神社|check_date=2026-05-26}}
+{{wikidata link|Q135039726|ja|杉山神社|grok=none|check_date=2026-08-28}}
 
 {{translated page|ja|杉山神社|version=106747028|comment=Imported full ja history}}== Japanese content ==
 '''Sugiyama Shrine''' (杉山神社, *Sugiyama-jinja*) is a {{jalink|Shinto shrine|Q845945}} that primarily enshrines {{jalink|Isotakeru-no-Mikoto|Q10881556}} (a son of {{jalink|Susanoo|Q272993}}) and {{jalink|Yamato Takeru}} as its {{jalink|principal deities|主祭神}}.<ref name="akanedai-sugiyama"> {{Wayback |url=http://www.akanedai.net/sugiyama.php |title=杉山神社について |date=20140801182804}}akanedai.net. Accessed January 12, 2020</ref><ref>[http://rekisisuki.exblog.jp/15473809/ 杉山神社 大棚社 港北ニュータウン] (History and Pleasant Associations)</ref>  
