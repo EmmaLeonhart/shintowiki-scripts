@@ -2,9 +2,20 @@
 """
 remove_wrong_wikidata_links.py
 ==============================
-One-off. Removes ``{{wikidata link|...}}`` from four pages that carry a QID which
-is not their subject. Emma's call, 2026-08-27, asked with the premise established
-first: *"Remove the link from all four."*
+Removes ``{{wikidata link|...}}`` from pages that should not be claiming the QID
+they carry. Two batches, both Emma's call, each asked with the premise established
+first rather than as a merge question.
+
+**2026-08-27, four pages whose QID is not their subject** — *"Remove the link from
+all four."* Nothing to repoint to; searched Wikidata and no suitable item exists.
+
+**2026-08-28, nine Japanese-named templates duplicating an English twin** — *"Just
+drop the QID from the JP ones."* Here the QID is not wrong about the subject, it is
+merely claimed twice, so the edit summary says so rather than reusing the first
+batch's wording. Redirecting was the alternative and was NOT chosen: both sides are
+in live use (警告 3 transclusions against Warning's 70, 和暦 3 against Japanese
+year's 394), and a redirect would silently give the English markup to pages that
+asked for the Japanese template.
 
 Why removal and not a repoint
 -----------------------------
@@ -74,12 +85,35 @@ USERNAME = os.getenv("WIKI_USERNAME", "EmmaBot")
 PASSWORD = os.getenv("WIKI_PASSWORD", "")
 THROTTLE = 2.5
 
-# page -> the wrong QID it is expected to still carry
+# page -> (QID it is expected to still carry, why it should not carry it)
+# The reason is not decoration: it becomes the wiki edit summary, and the two
+# batches are wrong for DIFFERENT reasons. Reusing one wording for both would put a
+# false statement in the page history of nine templates.
+NOT_THIS_ITEM = "this page is not that item"
+DUPLICATE = "it duplicates the English template of the same name"
+
 TARGETS = {
-    "Template:Ichinomiya": "Q1656379",
-    "Template:Sōja shrines": "Q1107129",
-    "Benzaiten shrines": "Q818468",
-    "Hime Shrine": "Q22070227",
+    # 2026-08-27 — the QID is not this page's subject, and nothing exists to
+    # repoint to. A navbox is not the concept it navigates; a list of shrines
+    # dedicated to a deity is not the deity.
+    "Template:Ichinomiya": ("Q1656379", NOT_THIS_ITEM),
+    "Template:Sōja shrines": ("Q1107129", NOT_THIS_ITEM),
+    "Benzaiten shrines": ("Q818468", NOT_THIS_ITEM),
+    "Hime Shrine": ("Q22070227", NOT_THIS_ITEM),
+    # 2026-08-28 — Japanese-named templates duplicating an English twin. The QID is
+    # not WRONG about the subject here, it is merely claimed twice, so the summary
+    # says that instead. Both sides are in live use, which is why Emma chose
+    # dropping the QID over redirecting: a redirect would hand the English markup
+    # to pages that asked for the Japanese template.
+    "Template:警告": ("Q5528794", DUPLICATE),
+    "Template:和暦": ("Q6062619", DUPLICATE),
+    "Template:博物館": ("Q6232685", DUPLICATE),
+    "Template:誰": ("Q6841435", DUPLICATE),
+    "Template:注意": ("Q6176883", DUPLICATE),
+    "Template:雑多な内容の箇条書き": ("Q5615163", DUPLICATE),
+    "Template:読み仮名": ("Q14334739", DUPLICATE),
+    "Template:テーマカテゴリ": ("Q13413959", DUPLICATE),
+    "Template:三島由紀夫": ("Q11215212", DUPLICATE),
 }
 
 WDLINK_RE = re.compile(r"\{\{\s*wikidata\s*link\s*\|\s*(Q\d+)[^{}]*\}\}\n?", re.IGNORECASE)
@@ -123,7 +157,7 @@ def main():
     print(f"Logged in as {USERNAME}")
 
     edited = skipped = errors = 0
-    for title, expected in TARGETS.items():
+    for title, (expected, reason) in TARGETS.items():
         if edited >= args.max_edits:
             print(f"Budget of {args.max_edits} reached, stopping.")
             break
@@ -148,7 +182,7 @@ def main():
             continue
 
         summary = (f"Bot: remove {{{{wikidata link}}}} to {expected} — "
-                   f"this page is not that item {args.run_tag}").strip()
+                   f"{reason} {args.run_tag}").strip()
         if not args.apply:
             print(f"  [DRY] would remove {expected} from {title!r}")
             edited += 1

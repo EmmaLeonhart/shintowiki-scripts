@@ -27,20 +27,56 @@ for _p in (_ROOT, os.path.join(_ROOT, "shinto_miraheze")):
         sys.path.insert(0, _p)
 
 from shinto_miraheze.remove_wrong_wikidata_links import (  # noqa: E402
-    TARGETS, strip_link,
+    DUPLICATE, NOT_THIS_ITEM, TARGETS, strip_link,
 )
 
 REAL_CALL = ("{{wikidata link|Q22070227|en|Himegami|fr|Himégami|ja|比売神|zh|比賣神"
              "|grok=none|check_date=2026-05-29}}")
 
 
-def test_the_four_targets_are_the_ones_that_were_investigated():
+def test_the_targets_are_the_ones_that_were_investigated():
     assert TARGETS == {
-        "Template:Ichinomiya": "Q1656379",
-        "Template:Sōja shrines": "Q1107129",
-        "Benzaiten shrines": "Q818468",
-        "Hime Shrine": "Q22070227",
+        # 2026-08-27: QID is not this page's subject
+        "Template:Ichinomiya": ("Q1656379", NOT_THIS_ITEM),
+        "Template:Sōja shrines": ("Q1107129", NOT_THIS_ITEM),
+        "Benzaiten shrines": ("Q818468", NOT_THIS_ITEM),
+        "Hime Shrine": ("Q22070227", NOT_THIS_ITEM),
+        # 2026-08-28: Japanese template duplicating an English twin
+        "Template:警告": ("Q5528794", DUPLICATE),
+        "Template:和暦": ("Q6062619", DUPLICATE),
+        "Template:博物館": ("Q6232685", DUPLICATE),
+        "Template:誰": ("Q6841435", DUPLICATE),
+        "Template:注意": ("Q6176883", DUPLICATE),
+        "Template:雑多な内容の箇条書き": ("Q5615163", DUPLICATE),
+        "Template:読み仮名": ("Q14334739", DUPLICATE),
+        "Template:テーマカテゴリ": ("Q13413959", DUPLICATE),
+        "Template:三島由紀夫": ("Q11215212", DUPLICATE),
     }
+
+
+def test_the_two_batches_carry_DIFFERENT_edit_summaries():
+    """The reason becomes the wiki edit summary, and they are wrong differently.
+
+    A navbox carrying the concept's QID is not that item. Template:警告 IS the same
+    concept as Template:Warning — it merely claims the QID twice. Reusing the first
+    batch's wording would put a false statement in nine templates' page history.
+    """
+    assert TARGETS["Hime Shrine"][1] == NOT_THIS_ITEM
+    assert TARGETS["Template:警告"][1] == DUPLICATE
+    assert NOT_THIS_ITEM != DUPLICATE
+    reasons = {r for _, r in TARGETS.values()}
+    assert reasons == {NOT_THIS_ITEM, DUPLICATE}
+
+
+def test_every_japanese_template_pairs_with_a_live_english_twin():
+    """Emma chose dropping the QID over redirecting because both sides are in use.
+
+    Redirecting would have handed the English markup to pages that asked for the
+    Japanese template — 警告 has 3 transclusions, 和暦 3, 読み仮名 10.
+    """
+    jp = [t for t, (_, r) in TARGETS.items() if r == DUPLICATE]
+    assert len(jp) == 9
+    assert all(t.startswith("Template:") for t in jp)
 
 
 def test_only_the_link_is_removed():

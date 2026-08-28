@@ -11413,3 +11413,28 @@ heading-COUNT parity says nothing about direction, which is why the size compari
 
 Nothing edited this pass. The decomposition is the deliverable — 44 as a blob is unstartable, and
 lumping templates and 45KB article merges together is how it would have gone wrong.
+
+## 2026-08-28 — nine Japanese templates lose their duplicate QID
+
+Emma, asked with the transclusion counts in front of her: *"Just drop the QID from the JP ones."*
+Redirecting was the alternative and she did not take it — correctly, because **both sides are in live
+use**: 警告 has 3 transclusions against Warning's 70, 和暦 3 against Japanese year's 394, 読み仮名 10
+against Ruby-ja's 13. A redirect would have silently handed the English markup to every page that
+asked for the Japanese template. Dropping the QID leaves both working and only removes the duplicate
+claim.
+
+Folded into `remove_wrong_wikidata_links.py` rather than a second script — same operation, same
+safety property (each page records the QID it is expected to still carry, and the removal only fires
+while it does, so a re-run cannot undo a later fix).
+
+**One thing that needed fixing to do this honestly.** `TARGETS` mapped page → QID and the edit summary
+was hardcoded `this page is not that item`. That is true of the first batch — a navbox is not the
+concept it navigates — and FALSE of the templates: `Template:警告` genuinely IS the same concept as
+`Template:Warning`; it merely claims the QID twice. Reusing that wording would have written a false
+statement into nine templates' permanent page history. `TARGETS` now carries a per-page reason and the
+summary uses it.
+
+Verified all nine before touching anything: one flat `{{wikidata link}}` call each, no nested braces,
+QIDs exactly as expected.
+
+3 new tests, 138 passing.
