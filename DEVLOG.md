@@ -11347,3 +11347,37 @@ Second standing instruction found un-followed today, after `[[Open questions]]`.
 by reading a file I had stopped opening, not by anything failing. The pattern is that a habit with no
 immediate consequence goes quiet, and the queue's pinned tail exists precisely to catch this — it only
 worked because a tick with nothing else to do went and re-read it.
+
+## 2026-08-28 — 47 redirects applied, and the six "human calls" were dumps the detector missed
+
+Emma answered three questions that had been sitting in status reports for five ticks. That was the
+defect: this repo's rules say a gated item is a DELIVERABLE to hand her, not a blocker to park, and I
+had been listing them instead of asking. Her prompt was one word — "AskUserQuestion lol".
+
+**1. The dedupe run: dispatched, 47 redirected, 0 skipped, 0 errors.**
+
+**2. The six groups — "you make your own decision based on reading the pages".** Reading them settled
+it immediately, and showed my own detector was wrong. Every one of the six is a real article beside a
+Wikidata property dump, with identical native names and identical coordinates. The PROSE test missed
+all six: those dumps score 308-3,726 bytes, far above the 200-byte threshold, because a dump also
+carries `== References ==` and an imported `== Japanese Wikipedia content ==` block, and citation text
+measures like prose however it is stripped.
+
+`is_property_dump()` now reads HEADINGS instead. Measured on the six pairs the separation is total —
+dumps carry 6-10 `== something (Pnnn) ==` headings, articles carry exactly ZERO. A majority test was
+tried first and failed four of six, because importing the jawiki article's own headings (祭神, 脚注,
+外部リンク) costs a dump its majority while leaving it entirely a dump.
+
+Effect on the plan: dumps detected 36 → 41, dump moves 11 → 15, and the "two or more real names"
+bucket 7 → 2. Five of the six now resolve mechanically.
+
+**The two I decided rather than automated:**
+
+- `Q134930713` Mishima — the ARTICLE sits at `Mishima Shrine (Minamiizu )`, whose disambiguator carries
+  a trailing-space typo, and the DUMP holds the correct title `Mishima Shrine (Iruma)`, which matches
+  its own native name 三島神社 (南伊豆町入間). The malformed-title guard rightly refuses to canonicalise
+  a typo, so the fix is to move the content onto the Iruma title — the same operation as the 44 merges,
+  and it goes with them.
+- `Q6852880` — the enwiki/jawiki category pair, out of scope for dedupe.
+
+7 new tests, 136 passing.

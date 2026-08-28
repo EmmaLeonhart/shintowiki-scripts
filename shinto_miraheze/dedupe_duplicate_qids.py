@@ -627,7 +627,7 @@ def main() -> None:
     # without network I/O. See classify_duplicate_group_pages for the method and
     # for the nested-template trap in measuring prose.
     from shinto_miraheze.classify_duplicate_group_pages import (
-        WikiUnavailable, fetch_contents, prose_length,
+        WikiUnavailable, fetch_contents, is_property_dump, prose_length,
     )
     candidates = sorted({p for q in dup_qids for p in qid_to_pages_m[q]
                          if not title_qid(p)})
@@ -642,8 +642,14 @@ def main() -> None:
             print(f"ABORTING: {e}")
             raise SystemExit(1)
         for title, text in fetched.items():
-            if text is not None:
-                prose_lengths[title] = prose_length(text)
+            if text is None:
+                continue
+            # Heading test first, prose second. A page carrying `== x (Pnnn) ==`
+            # headings is a dump however much text it holds — measured 2026-08-28,
+            # the six groups left for a human were each an article beside a dump,
+            # and PROSE MISSED ALL SIX because those dumps also import the jawiki
+            # article and its citations. Prose still decides the headless stubs.
+            prose_lengths[title] = 0 if is_property_dump(text) else prose_length(text)
         dumps = sum(1 for n in prose_lengths.values() if n < ARTICLE_PROSE_BYTES)
         print(f"  {dumps} of {len(prose_lengths)} are property dumps")
 

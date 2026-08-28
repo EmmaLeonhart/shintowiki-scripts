@@ -109,6 +109,34 @@ def prose_length(text: str) -> int:
     return len(re.sub(r"\s+", " ", t).strip())
 
 
+PROPERTY_HEADING_RE = re.compile(r"^=+\s*.*\(P\d+\)\s*=+\s*$", re.MULTILINE)
+ANY_HEADING_RE = re.compile(r"^=+[^=\r\n]+=+\s*$", re.MULTILINE)
+MIN_PROPERTY_HEADINGS = 3
+
+
+def is_property_dump(text: str) -> bool:
+    """True when a page is a Wikidata property dump rather than an article.
+
+    ⚠ Section HEADINGS beat prose length, and this is why. Measured 2026-08-28,
+    the six groups left for a human were every one of them an article beside a
+    dump — and the prose test missed all six, scoring those dumps at 308-3,726
+    bytes, far above the 200-byte threshold. They clear it because a dump also
+    carries `== References ==` and an imported `== Japanese Wikipedia content ==`
+    section, and citation text measures like prose no matter how it is stripped.
+
+    A page carrying ``== something (Pnnn) ==`` headings is a dump whatever its byte
+    count. The prose test is kept as a second signal for the tiny stubs that have
+    no headings at all.
+
+    Measured across the six pairs, the separation is total: the dumps carry 6-10
+    property headings and the articles carry EXACTLY ZERO. So the count alone
+    decides, and a majority test is wrong -- it was the first thing tried and it
+    failed four of the six, because a dump also imports the jawiki article's own
+    headings (祭神, 脚注, 外部リンク) and so loses its own majority.
+    """
+    return len(PROPERTY_HEADING_RE.findall(text)) >= MIN_PROPERTY_HEADINGS
+
+
 def fetch_contents(titles):
     out = {}
     for i in range(0, len(titles), QUERY_BATCH):
