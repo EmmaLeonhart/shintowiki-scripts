@@ -4,6 +4,59 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-28 — the redirect-only remainder: 17 redirected, 16 held, and the count measured at last
+
+`redirect_translated_duplicates.py`, dispatched as
+[run 33180022185](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33180022185).
+**Redirected 17, held 19 (16 of them real), 0 errors.** A `--plan-only` re-run immediately after
+qualifies **0** and refuses 20 sources as already redirects — the idempotence property observed on
+a real second run rather than in a test.
+
+**The count was wrong four times, so it is no longer written down anywhere.** 44 → 23+9+12 → 33+2,
+each figure produced by reusing a metric already recorded as inadequate. The pair list is now
+DERIVED from `orchestrators/duplicate_qids.state` at run time and every gate is evaluated against
+live page text. Measured this pass: 36 Japanese/English mainspace pairs, 3 already redirects (the
+two merges plus 健隈照命, which an earlier run had done and no log recorded), 17 qualifying,
+16 held.
+
+**Two gates, and the second is the one that matters.**
+
+Byte ratio alone is not enough, and heading COUNT is worse than nothing — it says nothing about
+direction or about which sections exist, and it is what mis-classified this set twice. So each
+heading normalises to a concept class (`Base` / `Headquarters` / `Base of Operations` / 本拠 are
+one class) and every content-bearing heading on the Japanese page must have a counterpart class on
+the English one. Apparatus headings — footnotes, references, see also, external links — are exempt,
+in either script.
+
+That distinction earns its keep on 建稲種命: the English page is 1.04x by bytes and has **no
+Overview at all**. Byte ratio passes it; correspondence catches it. The ratio gate does the
+opposite job on 健磐龍命 (19,798b onto a 13,510b page with none of its Nihon Shoki, Fudoki or
+Engishiki sections), 建比良鳥命 and 神大根王.
+
+**An unrecognised heading refuses**, following `dedupe_duplicate_qids.py`: an unknown never
+authorises an edit. Six pairs are held that way and every one is a genuine judgement call rather
+than a map gap — 闘鶏大山主's "The Ice House of Tsuge" against the English "The Himuro of Tsuge",
+針間鴨国造's *Kitadera Chishiki-kyō* against "Kitadera Knowledge Sutra", plus 紀伊国造, 天道根命,
+牟義都国造 and 尾張氏, which is two genuinely different articles.
+
+**Two normalisation bugs found by measuring rather than by reading.** `脚注` was mistyped in the
+apparatus set, which held 倭手彦 and 天道根命 for a heading that is just "footnotes"; and stripping
+trailing punctuation before `etc.` left 白河国造's "Tutelary Shrine, etc." as an unknown. Both were
+real, both flipped a pair, and neither was visible without running the check over live pages.
+
+**Categories are deliberately NOT blanket-unioned**, unlike `merge_duplicate_pairs.py` — measured,
+not assumed. Across the qualifying pairs the source-only categories are almost entirely jawiki
+category names carried in by the import (下野国, 栃木県の歴史, 古墳時代の人物) plus maintenance
+categories describing the SOURCE's own state (`Need translation`, `Pages with 500+ untranslated
+japanese characters`). Carrying a maintenance one across would write something false onto the
+target. What IS carried is the narrow real case — an English-named, non-maintenance category the
+target lacks — which across all 17 came to five categories on one page (菟狭津彦命: `Usa clan`,
+`People from Buzen Province` and three more). Nothing on a target is ever removed.
+
+14 new tests, 1691 in the CI suite.
+
+---
+
 ## 2026-08-25 (later) — the Kokugakuin reading job, done; and three things I had wrong about it
 
 Emma unblocked three queue items by refusing my "locked on Wikidata" labels, then pointed out the
