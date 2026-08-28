@@ -250,13 +250,12 @@
 }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|ignoreblank=y|preview=Page using [[Template:Infobox deity]] with unknown parameter "_VALUE_"
 | abode | abodes | adherents | affiliation | age | alt | alusi_of | animals | army | artefacts | artifacts | associate | battles | birth_date | birth_name | birth_place | birthname | avatar_birth | avatar_end | Canaanite_equivalent | canaanite_equivalent | caption | children | Christian_equivalent | christian_equivalent | color | colour | complexion | consort | consorts | cult_center | cult_centre | day | death_date | death_place | deity_of | Devanagari | devanagari | dynasty | ethnic_group | Etruscan_equivalent | etruscan_equivalent | equivalent1 | equivalent1_type | equivalent2 | equivalent2_type | equivalent3 | equivalent3_type | equivalent4 | equivalent4_type | equivalent5 | equivalent5_type | father | festivals | gender | god_of | Greek_equivalent | greek_equivalent | Aztec_equivalent | aztec_equivalent | Maya_equivalent | maya_equivalent | height | Hinduism_equivalent | hinduism_equivalent | Hindu_equivalent | hindu_equivalent | hiero | image | image_upright | mantra | member_of | moksha_date | moksha_place | mother | mount | name | Norse_equivalent | norse_equivalent | number | offspring | Old_Norse | old_norse | other_names | parents | planet | predecessor | region | Roman_equivalent | roman_equivalent | Manipuri_equivalent | manipuri_equivalent | indo-european_equivalent | Indo-european_equivalent | Albanian_equivalent | albanian_equivalent | Celtic_equivalent | celtic_equivalent | Sanskrit_transliteration | sanskrit_transliteration  | script | script_name | siblings | Slavic_equivalent | slavic_equivalent | spouse | successor | symbol | symbols | temple | temples | texts | tree | type | venerated_in | weapon | weapons | world | sacred_flower | attributes | associated_deities | enemy}}{{#if:{{{type|}}}||}}{{#ifeq: {{Infobox deity/color|{{{type}}}}} | unrecognised |  }}{{#if:{{{color|}}}{{{colour|}}}|
 [[en:Template:Infobox deity]]}}<includeonly>{{#ifeq:{{{child|}}}|yes||{{Wikidata image|1={{{image|}}}|2={{{nocat_wdimage|}}}}}}}</includeonly>{{compare image with Wikidata|local={{{image|}}}}}<noinclude>
-{{Documentation}}[[Category:Templates with Documentation template]]{{wikidata link|Q10809670}}
+{{Documentation}}[[Category:Templates with Documentation template]]
 [[Category:Pages using infobox deity with color param]]
 [[Category:Pages using infobox deity with unknown parameters|_VALUE_{{PAGENAME}}]]
 [[Category:Pages using infobox deity with unrecognised type|{{{type}}}]]
 [[Category:Pages using infobox deity without type param]]
 [[Category:Templates]]
 [[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]]
 [[Category:infobox templates]]
 </noinclude>
