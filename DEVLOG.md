@@ -11466,3 +11466,19 @@ overwrites the target's body, so on a pair where the target is fuller it would d
 
 Dry-run against the live pages: 科野国造 45,829b → 45,870b result, 8 categories unioned;
 国造 48,631b → 48,878b, 9 categories unioned. 8 new tests, 146 passing.
+
+## 2026-08-28 — merge 2 of 2: both genuine merges are done
+
+`国造` 48,631b → `Kuni no miyatsuko`, which went 12,808b → 48,877b with 9 categories unioned and one
+`{{wikidata link}}` kept. Source is now a 31-byte redirect. Verified against the wiki.
+
+The same run **REFUSED** merge 1 — *"source is already a redirect"* — which is the idempotence
+property doing its job on a real second run rather than in a test. A re-dispatch cannot double-apply.
+
+Both genuine merges are complete. What is left of the original "44 content merges" is redirect work:
+23 measured on 2026-08-27 plus the 10 that turned out to have a comparable-or-larger English page
+already carrying `{{translated page}}`.
+
+⚠ **Re-measure before running those 33.** The number has moved three times — 44, then 23+9+12, then
+33+2 — each time because a metric I had already recorded as inadequate got reused. The set should be
+recomputed from the live state rather than from any figure in this log, including this one.
