@@ -11438,3 +11438,31 @@ Verified all nine before touching anything: one flat `{{wikidata link}}` call ea
 QIDs exactly as expected.
 
 3 new tests, 138 passing.
+
+## 2026-08-28 — merge 1 of 12, and the "12" is really 2
+
+First of the one-per-tick merges. Reading the pages before building anything reframed the set again.
+
+**科野国造 is 45,829b; `Shinano no Kuni no Miyatsuko` is 3,100b** — and the English page is the thin
+one. It reads as generic filler (*"played a crucial role in regional politics, cultural development,
+and military affairs"*) and cites *"Research by Taro Tanaka, 'The Historical Study of the Shinano
+Kokuzo,' Journal of Japanese History, 1985"*, which I could not verify and whose author name is the
+Japanese equivalent of "John Smith". It also carries `{{translated page|ja|科野国造|comment=Imported
+full ja history}}` — claiming to be a full import of a page fifteen times its size.
+
+**So I checked the claim across all twelve, and the classification was wrong.** Ten of them have an
+English page of comparable or greater size (0.4x-1.5x) already carrying `{{translated page}}`: those
+are genuinely translated and need only the redirect, like the 23. Only **two** have substantially more
+on the Japanese side — 科野国造 at 14.8x and 国造 at 3.8x.
+
+The "12 genuine merges" figure came from HEADING COUNTS, which is the same metric I had already
+written down as saying nothing about direction, and then used anyway. Byte ratio is the signal.
+
+`merge_duplicate_pairs.py`: source body wins, target's categories UNIONED (never replaced), target's
+`{{wikidata link}}` kept and the source's dropped so the page carries one. Refuses unless the source
+is ≥2x the target — checked against the LIVE pages at run time, not against what was true when a pair
+was added, because a page can grow in between. That gate is the whole safety property: the script
+overwrites the target's body, so on a pair where the target is fuller it would destroy content.
+
+Dry-run against the live pages: 科野国造 45,829b → 45,870b result, 8 categories unioned;
+国造 48,631b → 48,878b, 9 categories unioned. 8 new tests, 146 passing.

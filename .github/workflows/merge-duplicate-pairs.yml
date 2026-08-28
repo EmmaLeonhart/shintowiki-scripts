@@ -1,0 +1,90 @@
+name: Merge Duplicate Pairs
+
+# Merges a Japanese-titled page into its English-titled twin and redirects the
+# former, for the two pairs where the Japanese-titled page genuinely holds more.
+#
+# ONE PER RUN by design. Emma, 2026-08-28, offered a batch pass and choosing
+# against it: "I do them, one per work-loop tick." --max-merges defaults to 1, so
+# a run does one pair and stops; the next tick dispatches again.
+#
+# DO NOT add a schedule. The script is idempotent — a merged source is a redirect
+# and gets refused on the next run — but there is nothing here that should run
+# unattended.
+#
+# Trigger manually: gh workflow run merge-duplicate-pairs.yml
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_merges:
+        description: "Pairs to merge this run (default 1, one per work-loop tick)"
+        required: false
+        default: "1"
+
+permissions:
+  contents: read
+
+env:
+  MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}
+  WIKIDATA_EMAIL: ${{ secrets.WIKIDATA_EMAIL }}
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      # The script also checks in code, so a manual run is covered; this keeps the
+      # workflow consistent with every other miraheze writer, which
+      # tests/test_miraheze_writers_are_lockout_gated.py enforces.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked - skipping this run."
+          fi
+
+      - name: Build run tag
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Merge duplicate pairs"
+        if: steps.lockout.outputs.locked != 'true'
+        run: |
+          chmod +x shinto_miraheze/run_step.sh
+          shinto_miraheze/run_step.sh "Merge: merge_duplicate_pairs" \
+            python3 shinto_miraheze/merge_duplicate_pairs.py \
+              --apply \
+              --max-merges "${{ github.event.inputs.max_merges || '1' }}" \
+              --run-tag "${RUN_TAG}"
