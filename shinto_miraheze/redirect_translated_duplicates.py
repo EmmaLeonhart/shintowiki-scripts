@@ -36,8 +36,19 @@ THE TWO GATES — both must hold, and both are checked live
 
    **An UNRECOGNISED heading fails the gate.** A heading this map cannot classify is
    an unknown, and an unknown never authorises an edit — the same rule
-   ``dedupe_duplicate_qids.py`` follows. That is why a page-specific heading such as
-   ``The Ice House of Tsuge`` holds its pair back rather than being guessed at.
+   ``dedupe_duplicate_qids.py`` follows. A page-specific heading such as ``The Ice
+   House of Tsuge`` is not a concept class, so it is resolved in ``PAIR_HEADINGS``
+   against the one pair it belongs to rather than widened into ``CLASSES``.
+
+   **An EMPTY heading is exempt, for the same reason apparatus is.** Correspondence is
+   about CONTENT, and a heading with no body under it carries none — it is a wrapper
+   nesting its subsections (``== Base ==`` over ``=== Territory ===``) or a stub the
+   translator left behind. Measured across the held set on 2026-08-28, this was the
+   single largest cause of a false refusal: 島津国造 and 熊野国造 were held on an empty
+   ``Base``, 上毛野国造 on an empty ``Genealogy``, 伊勢国造 on an empty ``墓``. Nothing
+   was actually missing from any of those English pages. Emptiness is judged on the
+   SOURCE for the exemption and on the TARGET for what it may vouch for, so an empty
+   target heading cannot stand in for a section that was never written.
 
 WHAT IS NOT COPIED, AND WHY (measured 2026-08-28)
 -------------------------------------------------
@@ -143,6 +154,42 @@ CLASSES = {
     "analysis": ["analysis", "examination", "考察"],
     "place names": ["place names", "地名"],
 }
+# Per-pair heading equivalences — the honest alternative to widening ``CLASSES``.
+# A heading that occurs on ONE article and nowhere else is not a concept class, and
+# adding it to ``CLASSES`` would overfit a general map to a single page: it would then
+# silently match on pages nobody looked at. So the judgement is recorded against the
+# pair it was made about, keyed by the Japanese title, and applies to BOTH of that
+# pair's pages — the English twin usually carries the same section under its own
+# rendering, and it has to be recognised too or it cannot vouch for anything.
+#
+# Every entry was made by reading the two sections and confirming they hold the same
+# material (2026-08-28); the byte counts are from that reading.
+PAIR_HEADINGS = {
+    # himuro IS an ice house — one translation kept the loanword, the other rendered
+    # it. Source 2,046b, target 4,703b, same subject.
+    "闘鶏大山主": {"the ice house of tsuge": "himuro",
+                "the himuro of tsuge": "himuro"},
+    # The same sutra, transliterated on one page (Chishiki-kyō) and translated on the
+    # other (Knowledge Sutra). Source 635b, target 645b.
+    "針間鴨国造": {"kitadera chishiki-kyō": "kitadera sutra",
+                 "kitadera knowledge sutra": "kitadera sutra"},
+    # The succession list. The English page carries it at 19,294b under ``Genealogy``
+    # against the source's 4,093b, and also names it "Lineage of ...".
+    "紀伊国造": {"generations of kii no kuni no miyatsuko": "genealogy",
+               "lineage of kii no kuni no miyatsuko": "genealogy"},
+    # Translated verbatim on the English page, heading for heading.
+    "天道根命": {"降臨と東征": "descent",
+               "descent and eastern expedition": "descent",
+               "国造職": "kuni no miyatsuko office",
+               "the kuni no miyatsuko office": "kuni no miyatsuko office"},
+    # The source's ``Base`` (276b — Akashi-gō, and the neighbours north and west) is
+    # on the target under ``Territory`` (361b), saying the same thing in the same
+    # order. This is NOT a general base==territory equivalence and must not become
+    # one: 那須国造 carries Base (943b) and Territory (1,993b) as separate sections,
+    # and merging the two classes would silently lose its Territory.
+    "明石国造": {"base": "territory"},
+}
+
 CLASS_OF = collections.defaultdict(set)
 for _cls, _names in CLASSES.items():
     for _n in _names:
@@ -164,16 +211,35 @@ def normalize_heading(h):
     return h
 
 
-def heading_classes(h):
-    """None = apparatus (exempt). Empty set = unrecognised. Otherwise its classes."""
+def heading_classes(h, pair=None):
+    """None = apparatus (exempt). Empty set = unrecognised. Otherwise its classes.
+
+    ``pair`` is this pair's ``PAIR_HEADINGS`` entry, consulted before the general map
+    so a page-specific heading resolves without ``CLASSES`` growing a page-specific
+    entry.
+    """
     n = normalize_heading(h)
     if n in APPARATUS:
         return None
+    if pair and n in pair:
+        return {pair[n]}
     return set(CLASS_OF.get(n, ()))
 
 
-def headings(text):
-    return HEADING_RE.findall(text)
+def sections(text):
+    """[(heading, body)] — each heading with the text under it, up to the next one.
+
+    The body is what a heading actually contributes; ``check_pair`` needs it because a
+    heading with an empty body contributes nothing at all.
+    """
+    out, name, start = [], None, 0
+    for m in HEADING_RE.finditer(text):
+        if name is not None:
+            out.append((name, text[start:m.start()]))
+        name, start = m.group(1), m.end()
+    if name is not None:
+        out.append((name, text[start:]))
+    return out
 
 
 def is_maintenance_category(name):
@@ -197,8 +263,11 @@ def carried_categories(source, target):
     return out
 
 
-def check_pair(source, target):
-    """Return (ok, reason, detail). ``ok`` False means refuse — never guess."""
+def check_pair(source, target, source_title=None):
+    """Return (ok, reason, detail). ``ok`` False means refuse — never guess.
+
+    ``source_title`` selects this pair's ``PAIR_HEADINGS`` entry, if it has one.
+    """
     if REDIRECT_RE.match(source):
         return False, "source is already a redirect", {}
     if REDIRECT_RE.match(target):
@@ -211,17 +280,25 @@ def check_pair(source, target):
                        "English page is not the superset this redirect assumes"
                        % (t_bytes, s_bytes, MIN_TARGET_RATIO)), {}
 
+    pair = PAIR_HEADINGS.get(source_title or "")
+
+    # Only a target section that HAS a body may vouch for a source section. An empty
+    # target heading is a wrapper or a stub, and neither is the content being sought.
     target_classes = set()
-    for h in headings(target):
-        cls = heading_classes(h)
+    for h, body in sections(target):
+        if not body.strip():
+            continue
+        cls = heading_classes(h, pair)
         if cls:
             target_classes |= cls
 
     missing, unrecognised = [], []
-    for h in headings(source):
-        cls = heading_classes(h)
+    for h, body in sections(source):
+        cls = heading_classes(h, pair)
         if cls is None:
             continue
+        if not body.strip():
+            continue                    # carries no content, so its absence loses none
         if not cls:
             unrecognised.append(normalize_heading(h))
         elif not (cls & target_classes):
@@ -317,7 +394,7 @@ def main():
             print("ABORT: could not read %r/%r: %s" % (src_title, dst_title, e))
             return 2
 
-        ok, reason, detail = check_pair(src_text, dst_text)
+        ok, reason, detail = check_pair(src_text, dst_text, src_title)
         if ok:
             plan.append((qid, src_title, dst_title, reason, detail))
         else:

@@ -4,6 +4,50 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-28 — the 16 held pairs, decided: 9 were the gate's fault, 7 are real
+
+The held set was never 16 judgement calls. Reading both pages of all sixteen showed **nine were
+held by the correspondence gate rather than by anything missing from the English article**, and the
+two causes are worth separating because only one of them is a general defect.
+
+**The general defect: an EMPTY heading was being treated as content.** A heading with no body under
+it is either a wrapper nesting its subsections (`== Base ==` over `=== Territory ===`) or a stub the
+translator left. Either way it carries nothing, so its absence from the target loses nothing —
+exactly the argument that already exempts apparatus headings. This alone was the single largest
+cause of a false refusal: 島津国造 and 熊野国造 held on an empty `Base`, 上毛野国造 on an empty
+`Genealogy`, 伊勢国造 on an empty `墓`. The exemption is applied in both directions — an empty
+*target* heading may not vouch for a section either, or a blank stub would wave real content
+through.
+
+**The narrow one: five page-specific headings, resolved per pair in `PAIR_HEADINGS`.** Widening
+`CLASSES` for these would overfit a general map to single pages and then match silently on pages
+nobody looked at, so the judgement is keyed to the pair it was made about and applied to both of its
+pages. 闘鶏大山主's "The Ice House of Tsuge" is the target's "The Himuro of Tsuge"; 針間鴨国造's
+*Kitadera Chishiki-kyō* is its *Kitadera Knowledge Sutra*; 紀伊国造's "Generations of…" is the
+target's `Genealogy` (19,294b against the source's 4,093b); 天道根命's 降臨と東征 and 国造職 are
+translated heading-for-heading; 明石国造's `Base` (276b) is on the target as `Territory` (361b),
+same facts, same order.
+
+**明石国造 is why base and territory must NOT be merged into one class.** The temptation was to widen
+the map instead. 那須国造 carries `Base` (943b) and `Territory` (1,993b) as two separate real
+sections, and merging the classes would have passed it while silently stranding the Territory —
+turning the one pair with a genuine content gap into a qualifying redirect.
+
+**Live plan after the change: 9 qualifying, 7 genuinely held.** 上毛野国造, 伊勢国造, 島津国造,
+熊野国造, 明石国造, 天道根命, 紀伊国造, 針間鴨国造, 闘鶏大山主 now pass both gates at 1.12x–2.94x.
+The seven that remain are decomposed one per queue item: three need a section moved across first
+(建稲種命's whole Overview, 那須国造's Territory, 牟義都国造's Descendants), 尾張氏 is two genuinely
+different articles needing both of its sections carried over, and 健磐龍命 / 建比良鳥命 / 神大根王
+need a **section-wise union** that neither script performs. `merge_duplicate_pairs.py` replaces the
+target body, and its 2.0x gate is refusing all three correctly: their sections are complementary,
+not superset/subset — 健磐龍命's source holds Nihon Shoki, Fudoki, Engishiki and Kokuzo Hongi while
+its target holds the Kihachi legend and the U-no-matsuri festival. Lowering the gate to reach them
+would destroy the half that only the target has.
+
+Tests: 8 added, 1,699 pass across the full CI selection.
+
+---
+
 ## 2026-08-28 — the redirect-only remainder: 17 redirected, 16 held, and the count measured at last
 
 `redirect_translated_duplicates.py`, dispatched as

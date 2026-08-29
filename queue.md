@@ -7,26 +7,42 @@ lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in th
 that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
 from `ATOMIC_FILES`; they are not queue items.
 
-- [ ] **Decide the 16 held duplicate pairs.** `redirect_translated_duplicates.py --plan-only`
-  prints them live with their reason; the 17 mechanical ones are done. These need a judgement
-  the script correctly refuses to make, in three groups:
+- [ ] **Apply the 9 newly-qualifying redirects.** `redirect_translated_duplicates.py --plan-only`
+  lists them; the wiki lockout is open (`wiki_editing_lockout.state`, `locked: false` since
+  2026-08-23). Run `--apply --max-edits 9 --run-tag "(local)"`. Nine of the sixteen held pairs were
+  held by the gate, not by the pages: 上毛野国造, 伊勢国造, 島津国造, 熊野国造 (an empty wrapper
+  heading), and 明石国造, 天道根命, 紀伊国造, 針間鴨国造, 闘鶏大山主 (a page-specific heading now
+  in `PAIR_HEADINGS`).
 
-  - **The English page is genuinely missing a section** the Japanese one has — 上毛野国造
-    (genealogy), 伊勢国造 (墓), 建稲種命 (no Overview at all, despite being 1.04x by bytes),
-    那須国造 (territory), and 島津国造 / 明石国造 / 熊野国造 (base). Either the section moves
-    across first and then the pair redirects, or the pair is a merge.
-  - **The Japanese page is the fuller one** — 健磐龍命 (19,798b vs 13,510b, holding Nihon Shoki,
-    Fudoki, Engishiki and Kokuzo Hongi sections the English page has none of), 建比良鳥命 (still
-    carrying raw jawiki headings), 神大根王 (0.93x, near-parallel). These are `merge_duplicate_pairs`
-    shape, not redirect shape — but all three are under its 2.0x source gate, so neither script
-    will touch them as they stand.
-  - **A page-specific heading no map should be guessing at** — 闘鶏大山主 ("The Ice House of Tsuge"
-    vs "The Himuro of Tsuge"), 針間鴨国造 (*Kitadera Chishiki-kyō* vs "Kitadera Knowledge Sutra"),
-    紀伊国造 ("Generations of…" vs "Lineage of…"), 天道根命, 牟義都国造 ("Clan Temple"), and
-    尾張氏, which is two genuinely different articles — the Japanese one has an Inaba-Province
-    section with no counterpart. The first five look like straightforward translation variants on
-    inspection; adding each to `CLASSES` is overfitting a general map to single pages, so the
-    honest fix is per-pair.
+- [ ] **Move 建稲種命's Overview onto [[Takeinadane]], then redirect.** The English page has no
+  Overview at all — only Genealogy / Notelist / References — while the source's is 1,923b. It is the
+  one pair where the missing section is the article's whole opening.
+
+- [ ] **Move 那須国造's Territory onto [[Nasu no Kuni no Miyatsuko]], then redirect.** The English
+  page's `Headquarters` (952b) covers the source's `Base` (943b) and nothing else; the source's
+  `Territory` (1,993b — Nasu Province, the Kenu-river boundary from the *Hitachi no Kuni Fudoki*,
+  the absorption into Shimotsukenu) has no counterpart. Its `Base` and `Territory` are two real
+  sections, which is why base and territory must stay separate concept classes.
+
+- [ ] **Move 牟義都国造's Descendants onto [[Mukizu no Kuni no Miyatsuko]], then redirect.** 313b with
+  nowhere to land — the English page stops at `Notable Figures`. Its `Tombs` is an empty wrapper and
+  its `Clan Temple` (51b) is the English page's `Associated Temple`, so Descendants is the only real
+  gap; add the pair to `PAIR_HEADINGS` for the temple heading in the same change.
+
+- [ ] **Merge 尾張氏 into [[Owari clan]] section-wise, then redirect.** The only pair that is two
+  genuinely different articles rather than two translations of one. The source's *"The Owari clan
+  from the perspective of the Kinai regime"* (analysis) and *"Owari clan (Inaba Province)"* (a
+  distinct branch) have no counterpart in the English page's History / Atsuta Shrine / Later history
+  / Cultural influence. Both sections move across; neither script fits, so this is a hand edit.
+
+- [ ] **Union-merge the three pairs where the Japanese page is fuller.** 健磐龍命 (19,798b vs
+  13,510b), 建比良鳥命 (9,615b vs 8,387b), 神大根王 (5,710b vs 5,297b). `merge_duplicate_pairs.py`
+  REPLACES the target body, and its 2.0x source gate correctly refuses all three — the sections are
+  **complementary, not superset/subset**. 健磐龍命 is the clear case: the source holds Nihon Shoki,
+  Fudoki, Engishiki and Kokuzo Hongi; the target holds the Kihachi legend and the U-no-matsuri
+  festival, and a body-replacing merge would destroy those. What is needed is a section-wise union
+  that keeps both sides, which is a third operation neither script performs — do not lower the 2.0x
+  gate to reach these.
 
 - **Pinned tail (keep last)**
 

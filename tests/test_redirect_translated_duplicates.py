@@ -29,8 +29,8 @@ for _p in (_ROOT, os.path.join(_ROOT, "shinto_miraheze")):
         sys.path.insert(0, _p)
 
 from shinto_miraheze.redirect_translated_duplicates import (  # noqa: E402
-    MIN_TARGET_RATIO, append_categories, carried_categories, check_pair,
-    heading_classes, load_pairs, normalize_heading,
+    MIN_TARGET_RATIO, PAIR_HEADINGS, append_categories, carried_categories,
+    check_pair, heading_classes, load_pairs, normalize_heading, sections,
 )
 
 PAD = "prose. " * 60
@@ -154,3 +154,85 @@ def test_pairs_are_derived_from_live_state_not_hardcoded():
         assert ":" not in jp and ":" not in en, "templates must be excluded"
     titles = [jp for _, jp, _ in pairs]
     assert len(titles) == len(set(titles))
+
+
+# --- the empty-heading exemption -------------------------------------------
+# Measured 2026-08-28 across the 16 held pairs: the largest single cause of a false
+# refusal was a heading with nothing under it. 島津国造 and 熊野国造 were held on a
+# ``Base`` that only wraps ``=== Territory ===``; 上毛野国造 on a ``Genealogy`` with a
+# blank line under it; 伊勢国造 on an equally blank ``墓``. Nothing was missing from any
+# of those English pages.
+
+def _wrapper_page(pad=PAD):
+    """``== Base ==`` with no body, nesting ``=== Territory ===`` — the real shape."""
+    return ("== Overview ==\n\n=== Ancestry ===\n%s\n== Base ==\n\n"
+            "=== Territory ===\n%s\n" % (pad, pad))
+
+
+def test_an_empty_source_heading_does_not_hold_the_pair_back():
+    ok, reason, _ = check_pair(_wrapper_page(),
+                               _page(["Ancestry", "Governed Region"], PAD * 4))
+    assert ok, reason
+
+
+def test_an_empty_target_heading_cannot_vouch_for_a_missing_section():
+    """The other direction — otherwise a blank stub would wave content through."""
+    target = "== Ancestry ==\n%s\n== Tombs ==\n\n" % (PAD * 6)
+    ok, reason, _ = check_pair(_page(["Ancestry", "Tombs"]), target)
+    assert not ok
+    assert "'tombs'" in reason
+
+
+def test_a_section_with_real_content_is_still_required():
+    """那須国造: its Territory holds 1,993b the English page has nowhere."""
+    ok, reason, _ = check_pair(_page(["Base", "Territory"]),
+                               _page(["Headquarters"], PAD * 8))
+    assert not ok
+    assert "'territory'" in reason
+
+
+def test_sections_pairs_each_heading_with_its_own_body():
+    got = sections("lead\n== A ==\nalpha\n=== B ===\n\n== C ==\ngamma\n")
+    assert [h for h, _ in got] == ["A", "B", "C"]
+    assert got[0][1].strip() == "alpha"
+    assert got[1][1].strip() == ""
+    assert got[2][1].strip() == "gamma"
+
+
+# --- per-pair heading equivalences ------------------------------------------
+
+def test_a_pair_specific_heading_resolves_for_that_pair_only():
+    """闘鶏大山主's ice house is its himuro — but only on that pair."""
+    src = _page(["Overview", "The Ice House of Tsuge"])
+    dst = _page(["Overview", "The Himuro of Tsuge"], PAD * 4)
+    ok, reason, _ = check_pair(src, dst, source_title="闘鶏大山主")
+    assert ok, reason
+    ok, reason, _ = check_pair(src, dst)
+    assert not ok, "the equivalence must not leak to pairs it was not made about"
+    assert "unrecognised heading" in reason
+
+
+def test_base_maps_to_territory_for_akashi_and_nowhere_else():
+    """明石国造's Base IS the target's Territory; 那須国造's Base and Territory are two
+    separate sections, so a general base==territory class would lose one of them."""
+    ok, _, _ = check_pair(_page(["Base"]), _page(["Territory"], PAD * 4),
+                          source_title="明石国造")
+    assert ok
+    ok, reason, _ = check_pair(_page(["Base", "Territory"]),
+                               _page(["Territory"], PAD * 8), source_title="明石国造")
+    assert ok, reason  # only Base is remapped; Territory still needs its own match
+    ok, _, _ = check_pair(_page(["Base"]), _page(["Territory"], PAD * 4))
+    assert not ok
+
+
+def test_every_pair_headings_key_is_a_live_pair():
+    """A stale key is a decision recorded against a page that no longer pairs."""
+    japanese = {jp for _, jp, _ in load_pairs()}
+    assert set(PAIR_HEADINGS) <= japanese, sorted(set(PAIR_HEADINGS) - japanese)
+
+
+def test_pair_headings_are_normalised_forms():
+    """They are looked up post-``normalize_heading``, so they must match that output."""
+    for title, mapping in PAIR_HEADINGS.items():
+        for heading in mapping:
+            assert normalize_heading(heading) == heading, (title, heading)
