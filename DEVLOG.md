@@ -44,6 +44,18 @@ not superset/subset — 健磐龍命's source holds Nihon Shoki, Fudoki, Engishi
 its target holds the Kihachi legend and the U-no-matsuri festival. Lowering the gate to reach them
 would destroy the half that only the target has.
 
+**Applied: 9 redirected, 7 held, 0 errors**, dispatched as
+[run 33235580849](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33235580849).
+A `--plan-only` immediately after refuses all nine as already redirects and holds exactly the seven
+that were decomposed — idempotence observed on a real second run, not asserted.
+
+**The pair count moved 36 → 16 in the same sitting, and that is the collector working.** The first
+plan of the day read a state file from before the previous session's 17 redirects; pulling picked
+up `7375d940`, where the redirected sources are no longer collected as duplicate-QID groups. So
+16 = the 9 done here + the 7 real ones, and a figure quoted across a pull is a figure about a
+different state file. This is the fifth time a count in this workstream has been wrong by being
+carried rather than measured.
+
 Tests: 8 added, 1,699 pass across the full CI selection.
 
 ---

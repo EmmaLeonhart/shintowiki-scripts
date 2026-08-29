@@ -7,13 +7,6 @@ lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in th
 that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
 from `ATOMIC_FILES`; they are not queue items.
 
-- [ ] **Apply the 9 newly-qualifying redirects.** `redirect_translated_duplicates.py --plan-only`
-  lists them; the wiki lockout is open (`wiki_editing_lockout.state`, `locked: false` since
-  2026-08-23). Run `--apply --max-edits 9 --run-tag "(local)"`. Nine of the sixteen held pairs were
-  held by the gate, not by the pages: 上毛野国造, 伊勢国造, 島津国造, 熊野国造 (an empty wrapper
-  heading), and 明石国造, 天道根命, 紀伊国造, 針間鴨国造, 闘鶏大山主 (a page-specific heading now
-  in `PAIR_HEADINGS`).
-
 - [ ] **Move 建稲種命's Overview onto [[Takeinadane]], then redirect.** The English page has no
   Overview at all — only Genealogy / Notelist / References — while the source's is 1,923b. It is the
   one pair where the missing section is the article's whole opening.
