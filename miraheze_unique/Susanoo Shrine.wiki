@@ -1,106 +1,100 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[ja:素盞嗚神社]]
-<!--interwikis from wikidata-->[[ja:素盞嗚神社]]
-<!--interwikis from wikidata-->[[ja:素盞嗚神社]]
 
 __NOTOC__
-'''Susanoo Jinja''' (素盞嗚神社、素戔嗚神社、素盞鳴神社、素戔鳴神社、須佐之男神社) is a Shinto shrine dedicated to {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō|1=Gozu Tennō}} and {{ill|Susanoo-no-Mikoto|en|Susanoo-no-Mikoto|qid=Q272993|lt=Susanoo-no-Mikoto|1=Susanoo-no-Mikoto}}, central deities in {{ill|Gion cult|en|Gion cult|qid=Q11588425|lt=Gion Faith|1=Gion Faith}}. Such shrines are located throughout Japan. Variations in the name include using "戔" instead of "盞" for the second character and "鳴 (with the bird radical)" instead of "嗚 (with the crow radical)" for the third character. Other shrines associated with Gion Faith include {{ill|Yasaka Shrine (disambiguation)|ja|八坂神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Yasaka Shrine (disambiguation)}}, {{ill|Gion Shrine|ja|祇園神社|12=simple|13=User:Immanuelle/Gion Shrine|comment=changed title based on wikidata|1=Gion shrines|qid=Q11588442}}, {{ill|Hiromine Shrine|en|Hiromine Shrine|qid=Q11484399|lt=Hiromine Shrine|1=Hiromine Shrine}}, {{ill|Tenno Shrine|ja|天王神社|12=simple|13=User:Immanuelle/Tenno Shrine}}, {{ill|Yakumo Shrine|ja|八雲神社|12=simple|13=User:Immanuelle/Yakumo Shrine|1=Yakumo shrine|comment=changed title based on wikidata|qid=Q11391847}}, and {{ill|Suga Shrine|ja|須賀神社|12=simple|13=User:Immanuelle/Suga Shrine}}, which vary in usage across periods and sources.
+'''Susanoo Jinja''' (素盞嗚神社、素戔嗚神社、素盞鳴神社、素戔鳴神社、須佐之男神社) is a Shinto shrine dedicated to {{ill|Gozu Tennō|de|Gozu-Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247|lt=Gozu Tennō}} and {{ill|Susanoo-no-Mikoto|abstract|Q272993|ar|سوسانو|azb|سوسانو|bcl|Susanoo|be|Сусанаа|bg|Сусаноо|ca|Susanoo|cs|Susanoo|da|Susa-no-o|de|Susanoo|el|Σουσάνoο|eo|Susanoo|es|Susanoo|eu|Susanoo|fa|سوسانو (خدا)|fi|Susanoo|fr|Susanoo|hr|Susano|hu|Szuszanoo|hy|Սուսանո|id|Susanoo|it|Susanoo|ja|スサノオ|ka|სუსანოო-ნო-მიკოტო|ko|스사노오|la|Susano'o|lb|Susanoo|mni|ꯁꯨꯁꯅꯨ-ꯅꯣ-ꯃꯤꯀꯣꯇꯣ|nl|Susanoo|pl|Susanoo|pt|Susanoo|ro|Susanoo|rsk|Сусано|ru|Сусаноо|simple|Susanoo-no-Mikoto|sl|Susanovo|sr|Сусаноо|su|Susanoo|sv|Susanoo|ta|சுசானவோ|th|ซูซาโนโอะ|tok|jan sewi Susano|tr|Susanoo|uk|Сусаноо|vi|Susanoo-no-Mikoto|zh|素戔嗚尊|zh_min_nan|Susanoo|qid=Q272993|lt=Susanoo-no-Mikoto}}, central deities in {{ill|Gion Faith|ja|祇園信仰|simple|Gion worship|qid=Q11588425|lt=Gion Faith}}. Such shrines are located throughout Japan. Variations in the name include using "戔" instead of "盞" for the second character and "鳴 (with the bird radical)" instead of "嗚 (with the crow radical)" for the third character. Other shrines associated with Gion Faith include {{ill|Yasaka Shrine (disambiguation)|de|Yasaka-Schreine|ja|八坂神社 (曖昧さ回避)|qid=Q2599651}}, {{ill|Gion shrines|ja|祇園神社|qid=Q11588442}}, {{ill|Hiromine Shrine|ja|広峯神社|simple|Hiromine Shrine|zh|廣峯神社|qid=Q11484399|lt=Hiromine Shrine}}, {{ill|Tenno Shrine|ja|天王神社|qid=Q11443028}}, {{ill|Yakumo shrine|ja|八雲神社|qid=Q11391847}}, and {{ill|Suga Shrine|ja|須賀神社|ko|스가 신사|qid=Q11253400}}, which vary in usage across periods and sources.
 
 Susanoo may also be written as 素盞雄, 須佐男, 須佐之男, 進雄, or 素盞雄, often with the addition of "命" (Mikoto) or "尊."
 
-Until the Edo period, these shrines were generally referred to as '''Gozu Tennōsha''', venerating {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō|1=Gozu Tennō}}. Their main shrines are located in Kyoto at {{ill|Yasaka Shrine|en|Yasaka Shrine|qid=Q692714|lt=Yasaka Shrine|1=Yasaka Shrine}} or in Hyōgo Prefecture at {{ill|Hiromine Shrine|en|Hiromine Shrine|qid=Q11484399|lt=Hiromine Shrine|1=Hiromine Shrine}}.
+Until the Edo period, these shrines were generally referred to as '''Gozu Tennōsha''', venerating {{ill|Gozu Tennō|de|Gozu-Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247|lt=Gozu Tennō}}. Their main shrines are located in Kyoto at {{ill|Yasaka Shrine|bcl|Yasaka Shrine|ca|Santuari de Yasaka|de|Yasaka-Schrein|el|Ιερό Γιασάκα|es|Santuario Yasaka|fa|معبد یاساکا|fr|Yasaka-jinja|hu|Jaszaka-szentély|id|Kuil Yasaka|it|Santuario di Yasaka|ja|八坂神社|ko|야사카 신사|my|ယဆခနတ်ကျောင်း|pl|Yasaka-jinja|pt|Santuário Yasaka|ru|Ясака дзиндзя|simple|Yasaka Shrine|th|ศาลเจ้ายาซากะ|tr|Yasaka Tapınağı|uk|Храм Ясака|zh|八坂神社|qid=Q692714|lt=Yasaka Shrine}} or in Hyōgo Prefecture at {{ill|Hiromine Shrine|ja|広峯神社|simple|Hiromine Shrine|zh|廣峯神社|qid=Q11484399|lt=Hiromine Shrine}}.
 
 == Kantō Region ==
-* {{ill|Susanoo Shrine (Takasaki)|ja|進雄神社 (高崎市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Takasaki)|1=Susanoo Shrine (Takasaki)|comment=changed title based on wikidata|qid=Q119929513}} (Gunma Prefecture, Takasaki) – Former Gō-sha
-* {{ill|Susanoo Shrine (Hannō)|ja|素盞鳴神社 (飯能市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Hannō)|1=Susanoo Shrine|comment=changed title based on wikidata|qid=Q11605641}} (Saitama Prefecture, Hannō)
-* {{ill|Susanoo Shrine (Arakawa)|ja|素盞雄神社 (荒川区)|12=simple|13=User:Immanuelle/Susanoo Shrine (Arakawa)|1=Susanoo Shrine (Arakawa)|comment=changed title based on wikidata|qid=Q11605642}} (Tokyo, Arakawa, Minamisenju) – Former Gō-sha
+* {{ill|Susanoo Shrine (Takasaki)|ja|進雄神社 (高崎市)|qid=Q119929513}} (Gunma Prefecture, Takasaki) – Former Gō-sha
+* {{ill|Susanoo Shrine|ja|素盞鳴神社 (飯能市)|qid=Q11605641}} (Saitama Prefecture, Hannō)
+* {{ill|Susanoo Shrine (Arakawa)|ja|素盞雄神社 (荒川区)|qid=Q11605642}} (Tokyo, Arakawa, Minamisenju) – Former Gō-sha
 
 == Chūbu Region ==
 * Susanoo Shrine (Niigata Prefecture, Sado City) – Also known as Tenno Shrine
 * Susanoo Shrine (Niigata Prefecture, Shibata City)
-* {{ill|Susanoo Shrine (Higashiizu)|ja|素盞嗚神社 (東伊豆町)|12=simple|13=User:Immanuelle/Susanoo Shrine (Higashiizu)|1=Susanō Shrine|comment=changed title based on wikidata|qid=Q134893106}} (Shizuoka Prefecture, Kamo District, Higashiizu)
-* {{ill|Susanoo Shrine (Makinohara)|ja|須佐男神社 (牧之原市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Makinohara)|ja_comment=jawiki link invalid}} (Shizuoka Prefecture, Makinohara) – Former Gō-sha, Shikinaisha
-* {{ill|Susanoo Shrine (Okazaki, Katanomachi)|ja|須佐之男神社 (岡崎市鍛埜町)|12=simple|13=User:Immanuelle/Susanoo Shrine (Okazaki, Katanomachi)|ja_comment=jawiki redirects to 額田地区|1=Q17214124|comment=changed title based on wikidata|qid=Q17214124}} (Aichi Prefecture, Okazaki)
-* {{ill|Susanoo Shrine (Okazaki, Takijiri)|ja|須佐之男神社 (岡崎市滝尻町)|12=simple|13=User:Immanuelle/Susanoo Shrine (Okazaki, Takijiri)|ja_comment=jawiki redirects to 額田地区|1=Q17214124|comment=changed title based on wikidata|qid=Q17214124}} (Aichi Prefecture, Okazaki)
-* {{ill|Susanoo Shrine (Okazaki, Minamiōsū)|ja|須佐之男神社 (岡崎市南大須町)|12=simple|13=User:Immanuelle/Susanoo Shrine (Okazaki, Minamiōsū)|ja_comment=jawiki redirects to 額田地区|1=Q17214124|comment=changed title based on wikidata|qid=Q17214124}} (Aichi Prefecture, Okazaki)
-* {{ill|Susanoo Shrine (Gamagōri)|ja|素盞嗚神社 (蒲郡市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Gamagōri)|ja_comment=jawiki link invalid}} (Aichi Prefecture, Gamagōri)
-* {{ill|Toyokawa Susanoo Shrine|ja|豊川進雄神社|12=simple|13=User:Immanuelle/Toyokawa Susanoo Shrine|1=Toyokawa Susanoo Shrine|comment=changed title based on wikidata|qid=Q81030642}} (Aichi Prefecture, Toyokawa)
-* {{ill|Susanoo Shrine (Toyohashi)|ja|進雄神社 (豊橋市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Toyohashi)|1=Susanoo Shrine|comment=changed title based on wikidata|qid=Q18337115}} (Aichi Prefecture, Toyohashi)
-* {{ill|Susanoo Shrine (Tōei)|ja|須佐男神社 (東栄町)|12=simple|13=User:Immanuelle/Susanoo Shrine (Tōei)|ja_comment=jawiki link invalid}} (Aichi Prefecture, Kitashitara District, Tōei)
-* {{ill|Susanoo Shrine (Kiyosu)|ja|須佐之男神社 (清須市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Kiyosu)|ja_comment=jawiki link invalid}} (Aichi Prefecture, Kiyosu)
-* {{ill|Susanoo Shrine (Anjō)|ja|素盞嗚神社 (安城市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Anjō)|ja_comment=jawiki link invalid}} (Aichi Prefecture, Anjō)
-* {{ill|Susanoo Shrine (Nagoya)|ja|素盞鳴神社 (名古屋市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Nagoya)|ja_comment=jawiki link invalid}} (Aichi Prefecture, Nagoya, Minato Ward)
+* {{ill|Susanō Shrine|ja|素盞嗚神社 (東伊豆町)|qid=Q134893106}} (Shizuoka Prefecture, Kamo District, Higashiizu)
+* {{ill|Susanoo Shrine (Makinohara)|ja|須佐男神社 (牧之原市)}} (Shizuoka Prefecture, Makinohara) – Former Gō-sha, Shikinaisha
+* {{ill|Q17214124|ja|額田地区|qid=Q17214124}} (Aichi Prefecture, Okazaki)
+* {{ill|Q17214124|ja|額田地区|qid=Q17214124}} (Aichi Prefecture, Okazaki)
+* {{ill|Q17214124|ja|額田地区|qid=Q17214124}} (Aichi Prefecture, Okazaki)
+* {{ill|Susanoo Shrine (Gamagōri)|ja|素盞嗚神社 (蒲郡市)}} (Aichi Prefecture, Gamagōri)
+* {{ill|Toyokawa Susanoo Shrine|ja|豊川進雄神社|qid=Q81030642}} (Aichi Prefecture, Toyokawa)
+* {{ill|Susanoo Shrine|ja|進雄神社 (豊橋市)|qid=Q18337115}} (Aichi Prefecture, Toyohashi)
+* {{ill|Susanoo Shrine (Tōei)|ja|須佐男神社 (東栄町)}} (Aichi Prefecture, Kitashitara District, Tōei)
+* {{ill|Susanoo Shrine (Kiyosu)|ja|須佐之男神社 (清須市)}} (Aichi Prefecture, Kiyosu)
+* {{ill|Susanoo Shrine (Anjō)|ja|素盞嗚神社 (安城市)}} (Aichi Prefecture, Anjō)
+* {{ill|Susanoo Shrine (Nagoya)|ja|素盞鳴神社 (名古屋市)}} (Aichi Prefecture, Nagoya, Minato Ward)
 * Susanoo Shrine (Aichi Prefecture, Nagoya, Minami Ward)
 
 == Kansai Region ==
-* {{ill|Susanoo Shrine (Osaka)|ja|素盞烏尊神社 (大阪市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Osaka)|1=Susanoo-no-Mikoto Shrine|comment=changed title based on wikidata|qid=Q11605640}} (Osaka Prefecture, Osaka City)
-* {{ill|Susanoo Shrine (Himeji)|ja|素盞嗚神社 (姫路市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Himeji)|ja_comment=jawiki link invalid}} (Hyōgo Prefecture, Himeji City)
+* {{ill|Susanoo-no-Mikoto Shrine|ja|素盞烏尊神社 (大阪市)|qid=Q11605640}} (Osaka Prefecture, Osaka City)
+* {{ill|Susanoo Shrine (Himeji)|ja|素盞嗚神社 (姫路市)}} (Hyōgo Prefecture, Himeji City)
 * Additional shrines across Osaka and Hyōgo Prefectures
 
 == Chūgoku Region ==
-* {{ill|Susanoo Shrine (Wake)|ja|素盞嗚神社 (和気町)|12=simple|13=User:Immanuelle/Susanoo Shrine (Wake)|ja_comment=jawiki link invalid}} (Okayama Prefecture, Wake District, Wake)
-* {{ill|Susanoo Shrine (Fukuyama, Shinchichō Tote)|ja|素盞嗚神社 (福山市新市町戸手)|12=simple|13=User:Immanuelle/Susanoo Shrine (Fukuyama, Shinchichō Tote)|1=Susanoo Shrine (Fukuyama)|comment=changed title based on wikidata|qid=Q11605639}} (Hiroshima Prefecture, Fukuyama) – Origin of Gion Faith, Shikinaisha, Ichinomiya of Bingo Province, Former Ken-sha
+* {{ill|Susanoo Shrine (Wake)|ja|素盞嗚神社 (和気町)}} (Okayama Prefecture, Wake District, Wake)
+* {{ill|Susanoo Shrine (Fukuyama)|ja|素盞嗚神社 (福山市新市町戸手)|qid=Q11605639}} (Hiroshima Prefecture, Fukuyama) – Origin of Gion Faith, Shikinaisha, Ichinomiya of Bingo Province, Former Ken-sha
 
 == Kyūshū Region ==
-* {{ill|Susanoo Shrine (Kurume)|ja|須佐能袁神社|12=simple|13=User:Immanuelle/Susanoo Shrine (Kurume)|ja_comment=jawiki link invalid}} (Fukuoka Prefecture, Kurume) – Commonly known as Gion Shrine
-* {{ill|Susanoo Shrine (Yame)|ja|素盞嗚神社 (八女市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Yame)|ja_comment=jawiki link invalid}} (Fukuoka Prefecture, Yame)
-* {{ill|Susanoo Shrine (Ukiha)|ja|素盞嗚神社 (うきは市)|12=simple|13=User:Immanuelle/Susanoo Shrine (Ukiha)|ja_comment=jawiki link invalid}} (Fukuoka Prefecture, Ukiha)
+* {{ill|Susanoo Shrine (Kurume)|ja|須佐能袁神社}} (Fukuoka Prefecture, Kurume) – Commonly known as Gion Shrine
+* {{ill|Susanoo Shrine (Yame)|ja|素盞嗚神社 (八女市)}} (Fukuoka Prefecture, Yame)
+* {{ill|Susanoo Shrine (Ukiha)|ja|素盞嗚神社 (うきは市)}} (Fukuoka Prefecture, Ukiha)
 == See Also ==
-* {{ill|Susa Shrine|ja|須佐神社|12=simple|13=User:Immanuelle/Susa Shrine}}
-* {{ill|Susanoo Shrine (Fukuyama)|ja|素盞嗚神社 (福山市新市町戸手)|12=simple|13=User:Immanuelle/Susanoo Shrine (Fukuyama)}}
-* {{ill|Tenno Shrine|ja|天王神社|12=simple|13=User:Immanuelle/Tenno Shrine}}
-* {{ill|Gion cult|en|Gion cult|qid=Q11588425|lt=Gion Faith|1=Gion Faith}}
-* {{ill|Yasaka Shrine (disambiguation)|ja|八坂神社 (曖昧さ回避)|12=simple|13=User:Immanuelle/Yasaka Shrine (disambiguation)}}
-* {{ill|Gozu Tennō|en|Gozu Tennō|qid=Q11570247|lt=Gozu Tennō|1=Gozu Tennō}}
-* {{ill|Kōjin|en|Kōjin|qid=Q6455190|lt=Kōjin|1=Kōjin}}
+* {{ill|Susa Shrine|ja|須佐神社|qid=Q11664499}}
+* {{ill|Susanoo Shrine (Fukuyama)|ja|素盞嗚神社 (福山市新市町戸手)|qid=Q11605639}}
+* {{ill|Tenno Shrine|ja|天王神社|qid=Q11443028}}
+* {{ill|Gion Faith|ja|祇園信仰|simple|Gion worship|qid=Q11588425|lt=Gion Faith}}
+* {{ill|Yasaka Shrine (disambiguation)|de|Yasaka-Schreine|ja|八坂神社 (曖昧さ回避)|qid=Q2599651}}
+* {{ill|Gozu Tennō|de|Gozu-Tennō|it|Gozu Tennō|ja|牛頭天王|zh|牛頭天王|qid=Q11570247|lt=Gozu Tennō}}
+* {{ill|Kōjin|ja|荒神|mni|ꯀꯣꯖꯤꯟ|qid=Q6455190|lt=Kōjin}}
 
 {{Shinto Horizontal}}
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 === 素盞嗚神社 ===
-* {{ill|Susanoo Shrine (Q11605638)|lt=Susanoo Shrine|qid=Q11605638}} — Nishinomiya
-* {{ill|Susanoo Shrine (Q11605639)|lt=Susanoo Shrine|qid=Q11605639}} — Fukuyama
-* {{ill|Susanoo Shrine (Q11605641)|lt=Susanoo Shrine|qid=Q11605641}} — Hannō
-* {{ill|Susanoo Shrine (Q135070215)|lt=Susanoo Shrine|qid=Q135070215}} — Bingo Province
-* {{ill|Susanoo Shrine (Higashinada-ku, Kobe) (Q100969270)|lt=Susanoo Shrine (Higashinada-ku, Kobe)|qid=Q100969270}} — Higashinada-ku
-* {{ill|Susanō Shrine (Q11605637)|lt=Susanō Shrine|qid=Q11605637}} — Takarazuka
-* {{ill|Susanō Shrine (Q134893106)|lt=Susanō Shrine|qid=Q134893106}} — Higashiizu
+* {{ill|Susanoo Shrine (Q11605638)|ja|素盞嗚神社 (西宮市)|qid=Q11605638|lt=Susanoo Shrine}} — Nishinomiya
+* {{ill|Susanoo Shrine (Q11605639)|ja|素盞嗚神社 (福山市新市町戸手)|qid=Q11605639|lt=Susanoo Shrine}} — Fukuyama
+* {{ill|Susanoo Shrine (Q11605641)|ja|素盞鳴神社 (飯能市)|qid=Q11605641|lt=Susanoo Shrine}} — Hannō
+* {{ill|Susanoo Shrine (Q135070215)|qid=Q135070215|lt=Susanoo Shrine}} — Bingo Province
+* {{ill|Susanoo Shrine (Higashinada-ku, Kobe) (Q100969270)|ja|素盞鳴神社 (神戸市東灘区)|qid=Q100969270|lt=Susanoo Shrine (Higashinada-ku, Kobe)}} — Higashinada-ku
+* {{ill|Susanō Shrine (Q11605637)|ja|素盞嗚神社 (宝塚市)|qid=Q11605637|lt=Susanō Shrine}} — Takarazuka
+* {{ill|Susanō Shrine (Q134893106)|ja|素盞嗚神社 (東伊豆町)|qid=Q134893106|lt=Susanō Shrine}} — Higashiizu
 
 === 素戔嗚神社 ===
-* {{ill|Susanō Shrine (Q114797980)|lt=Susanō Shrine|qid=Q114797980}} — Heguri
-* {{ill|Susanō Shrine (Q119929670)|lt=Susanō Shrine|qid=Q119929670}} — Heguri
+* {{ill|Susanō Shrine (Q114797980)|ja|素戔嗚神社 (平群町信貴畑)|qid=Q114797980|lt=Susanō Shrine}} — Heguri
+* {{ill|Susanō Shrine (Q119929670)|ja|素戔嗚神社 (平群町久安寺)|qid=Q119929670|lt=Susanō Shrine}} — Heguri
 
 === 素盞鳴神社 ===
-* {{ill|Susanoo Shrine (Q39201727)|lt=Susanoo Shrine|qid=Q39201727}} — Amagasaki
-* {{ill|Susanō Shrine (Q134956314)|lt=Susanō Shrine|qid=Q134956314}} — Hamana-ku
-* {{ill|素盞鳴神社 (Q134956594)|lt=素盞鳴神社|qid=Q134956594}} — Higashiizu
-* {{ill|素盞鳴神社 (Q135459480)|lt=素盞鳴神社|qid=Q135459480}} — Sekikawa
-* {{ill|素盞鳴神社 (Q135459836)|lt=素盞鳴神社|qid=Q135459836}} — Sado
-* {{ill|素盞鳴神社 (Q135461121)|lt=素盞鳴神社|qid=Q135461121}} — Jōetsu-shi
+* {{ill|Susanoo Shrine (Q39201727)|qid=Q39201727|lt=Susanoo Shrine}} — Amagasaki
+* {{ill|Susanō Shrine (Q134956314)|qid=Q134956314|lt=Susanō Shrine}} — Hamana-ku
+* {{ill|素盞鳴神社 (Q134956594)|qid=Q134956594|lt=素盞鳴神社}} — Higashiizu
+* {{ill|素盞鳴神社 (Q135459480)|qid=Q135459480|lt=素盞鳴神社}} — Sekikawa
+* {{ill|素盞鳴神社 (Q135459836)|qid=Q135459836|lt=素盞鳴神社}} — Sado
+* {{ill|素盞鳴神社 (Q135461121)|qid=Q135461121|lt=素盞鳴神社}} — Jōetsu-shi
 
 === 素戔鳴神社 ===
 ''No Wikidata items currently labeled 素戔鳴神社.''
 
 === 須佐之男神社 ===
-* {{ill|Susanoo Shrine (Shōwa-ku, Nagoya) (Q123314150)|lt=Susanoo Shrine (Shōwa-ku, Nagoya)|qid=Q123314150}} — Ishizaka, Hiroji-chō, Nagoya
-* {{ill|Susanō Shrine (Q11664491)|lt=Susanō Shrine|qid=Q11664491}} — Okazaki
-* {{ill|Susanō Shrine (Q11664492)|lt=Susanō Shrine|qid=Q11664492}} — Okazaki
-* {{ill|Susanō Shrine (Q11664493)|lt=Susanō Shrine|qid=Q11664493}} — Okazaki
-* {{ill|須佐之男神社 (Q134957255)|lt=須佐之男神社|qid=Q134957255}} — Chūō Ward
-* {{ill|須佐之男神社 (Q135462535)|lt=須佐之男神社|qid=Q135462535}} — Shibata
-<!-- END: auto-generated Wikidata shrine list -->
+* {{ill|Susanoo Shrine (Shōwa-ku, Nagoya) (Q123314150)|qid=Q123314150|lt=Susanoo Shrine (Shōwa-ku, Nagoya)}} — Ishizaka, Hiroji-chō, Nagoya
+* {{ill|Susanō Shrine (Q11664491)|ja|須佐之男神社 (岡崎市南大須町)|qid=Q11664491|lt=Susanō Shrine}} — Okazaki
+* {{ill|Susanō Shrine (Q11664492)|ja|須佐之男神社 (岡崎市滝尻町)|qid=Q11664492|lt=Susanō Shrine}} — Okazaki
+* {{ill|Susanō Shrine (Q11664493)|ja|須佐之男神社 (岡崎市鍛埜町)|qid=Q11664493|lt=Susanō Shrine}} — Okazaki
+* {{ill|須佐之男神社 (Q134957255)|qid=Q134957255|lt=須佐之男神社}} — Chūō Ward
+* {{ill|須佐之男神社 (Q135462535)|qid=Q135462535|lt=須佐之男神社}} — Shibata
 
 {{translated page|ja|素盞嗚神社|version=103486696|comment=Imported full ja history}}
 
-<!--Susanoo Shrine--><!--Susanoo Shrine-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q11605636|ja|素盞嗚神社}}
+{{wikidata link|Q11605636|ja|素盞嗚神社|grok=none|check_date=2026-08-29}}
 [[Category:All disambiguation pages]]
 [[Category:Gion shrines]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
+[[Category:Pages with 50+ untranslated japanese characters]]
