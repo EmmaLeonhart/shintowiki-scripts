@@ -42,6 +42,17 @@ WHAT IS NEVER DONE HERE
 * **Categories are not carried.** The redirect script already carries the narrow real
   case (English-named, non-maintenance, source-only) at redirect time.
 
+THE GATE NEVER LOOKS AT A LEAD
+-----------------------------
+``redirect_translated_duplicates.py`` compares HEADINGS. A source lead that outweighs
+the target's is invisible to it, and it will pass the pair regardless — 尾張氏's lead was
+2,125b against 1,246b and held the clan's progenitor and its descendant houses. So an
+entry may carry ``lead``: ``{"heading", "anchor", "append"?}``, which brings the lead
+across under a heading of its own. Leading ``{{…}}`` blocks are dropped, because an
+infobox is structured data about the source page's rendering rather than prose; anything
+worth keeping from one goes in ``append``, written out and reviewable in the diff rather
+than generated at run time.
+
 Idempotence: a section whose heading is already on the target is refused, so a
 re-run after a successful carry refuses the pair and a re-dispatch is safe.
 
@@ -158,21 +169,44 @@ CARRIES = [
         # template) and ``Sources`` (443b, `{{Reflist}}`, the wikidata link and the
         # categories) are apparatus in fact as well as in name, read and not carried.
         #
-        # ⚠ THE LEAD IS NOT CARRIED AND IS NOT EMPTY. The source's 2,125b lead outweighs
-        # the target's 1,246b one, and after this carry the target still lacks: 天忍人命 /
-        # Ame no Oshihito (the progenitor), the Mino and Hida residence before the clan
-        # became Owari-no-kuni-no-miyatsuko, the Sukune descendant houses (Moriobe, the
-        # Baba chief-inspector family, the Tajima high-priest family, the Hakkenjingu
-        # priests, the Daiguji/Grand Shrine Master line), and the infobox's 世襲足媛,
-        # 尾張浜主 and 村国氏. The correspondence gate compares HEADINGS and never looks at
-        # a lead, so it will pass this pair regardless. Do not dispatch the redirect for
-        # 尾張氏 until that is settled — see the queue item.
+        # THE LEAD IS CARRIED, and this pair is why the capability exists. The source's
+        # lead is 2,125b against the target's 1,246b, and the correspondence gate compares
+        # HEADINGS — it never looks at a lead, so it would have passed this pair while the
+        # English page still lacked 天忍人命 / Ame no Oshihito (the progenitor), the Mino
+        # and Hida residence before the clan became Owari-no-kuni-no-miyatsuko, and the
+        # Sukune descendant houses (Moriobe of Atsuta's Dainai family, the Baba
+        # chief-inspector family, the Tajima high-priest family, the Hakkenjingū priests).
+        # Emma's call, 2026-08-30, asked with those facts named: carry it as a section,
+        # then redirect.
+        #
+        # 世襲足媛 is NOT in that list although a kanji search says it is missing — she is
+        # on the target as Yosotahonomihime, in the Kinai-regime section carried above.
+        # Searching for the kanji of a person the English page names in rōmaji reports a
+        # loss that is not there.
+        #
+        # ``append`` is the infobox reduced to prose. The jawiki infobox itself is not
+        # carried — it is structured data about the source page's rendering, and a second
+        # clan infobox mid-article is not what it means. Its remaining names are given as
+        # plain kanji rather than links because NONE of 天忍人命, 尾張大隅, 尾張草香,
+        # 尾張馬身, 尾張兼時, 尾張浜主, 村国氏 or 熱田神宮家 has a page on this wiki
+        # (checked 2026-08-30), so linking them would manufacture eight red links.
         "source": "尾張氏",
         "target": "Owari clan",
         "sections": [
             ("The Owari clan from the perspective of the Kinai regime", "Genealogy"),
             ("Owari clan (Inaba Province)", "Genealogy"),
         ],
+        "lead": {
+            "heading": "Lineage and descendant houses",
+            "anchor": "Cultural influence",
+            "append": (
+                "Also recorded in the clan infobox of the Japanese article merged here: "
+                "the clan titles 尾張連 and later 尾張宿禰; the classification 神別 (天孫); "
+                "a base in Aichi District, Owari Province (尾張国愛知郡); the progenitor "
+                "天忍人命; the members 尾張大隅, 尾張草香, 尾張馬身, 尾張兼時 and 尾張浜主; "
+                "and the descendant houses 熱田神宮家, 海部氏, 津守氏 and 村国氏."
+            ),
+        },
     },
 ]
 
@@ -202,6 +236,37 @@ def _headings(text):
     return out
 
 
+def _strip_leading_templates(text):
+    """Return (prose, None) — the lead with its leading ``{{…}}`` blocks removed.
+
+    An imported lead opens with an infobox, and an infobox is structured data about the
+    SOURCE page's rendering, not prose to drop into the middle of another article. Braces
+    are matched by depth rather than by regex because these boxes nest.
+    """
+    i, n = 0, len(text)
+    while True:
+        while i < n and text[i].isspace():
+            i += 1
+        if not text.startswith("{{", i):
+            break
+        depth, j = 0, i
+        while j < n:
+            if text.startswith("{{", j):
+                depth += 1
+                j += 2
+            elif text.startswith("}}", j):
+                depth -= 1
+                j += 2
+                if depth == 0:
+                    break
+            else:
+                j += 1
+        if depth != 0:
+            return None, "unbalanced template braces in the source lead"
+        i = j
+    return text[i:].strip(), None
+
+
 def _find_one(text, name):
     """The single heading normalising to ``name``, or (None, reason)."""
     want = normalize_heading(name)
@@ -213,11 +278,17 @@ def _find_one(text, name):
     return hits[0], None
 
 
-def carry_sections(source, target, plan, source_title=None):
+def carry_sections(source, target, plan, source_title=None, lead=None):
     """Return (new_target, notes) or (None, refusal_reason).
 
     ``plan`` is [(source heading, target heading to insert before)]. The result is
     the target with those source sections inserted and nothing else changed.
+
+    ``lead``, when given, is ``{"heading", "anchor", "append"?}`` and carries the source's
+    LEAD across under a heading of its own. The correspondence gate compares headings and
+    never looks at a lead, so a source lead that outweighs the target's is invisible to it
+    — 尾張氏's was 2,125b against 1,246b and held the clan's progenitor and its descendant
+    houses. Emma's call, 2026-08-30: carry it as a section, then redirect.
     """
     if REDIRECT_RE.match(source):
         return None, "source is already a redirect"
@@ -226,6 +297,27 @@ def carry_sections(source, target, plan, source_title=None):
 
     before_headings = [normalize_heading(h[1]) for h in _headings(target)]
     insertions, notes = [], []
+
+    if lead:
+        hs = _headings(source)
+        raw = source[:hs[0][2]] if hs else source
+        prose, why = _strip_leading_templates(raw)
+        if prose is None:
+            return None, why
+        if not prose:
+            return None, "the source lead is templates only, so there is nothing to carry"
+        if normalize_heading(lead["heading"]) in before_headings:
+            notes.append("lead as %r — already on the target, skipped" % lead["heading"])
+        else:
+            block = "== %s ==\n%s\n" % (lead["heading"], prose)
+            if lead.get("append"):
+                block += "\n%s\n" % lead["append"]
+            anchor, why = _find_one(target, lead["anchor"])
+            if anchor is None:
+                return None, "on the target, for the lead: " + why
+            insertions.append((anchor[2], block.rstrip("\n") + "\n\n"))
+            notes.append("lead as %r -> before %s (%db)"
+                         % (lead["heading"], lead["anchor"], len(block.encode("utf-8"))))
     for src_name, anchor_name in plan:
         src_h, why = _find_one(source, src_name)
         if src_h is None:
@@ -236,9 +328,16 @@ def carry_sections(source, target, plan, source_title=None):
             return None, ("source section %r is empty, so there is nothing to carry"
                           % src_name)
 
-        # Already there — this is what makes a re-run a no-op rather than a duplicate.
+        # Already there — SKIPPED, not refused. The guard exists to stop a section being
+        # added twice, and skipping one that is already present serves that exactly.
+        # Refusing the whole entry served it too, but it also made an entry that GREW
+        # after a partial carry permanently unrunnable, which 尾張氏 hit the moment its
+        # lead was added after its two sections had landed. A plain re-run is still
+        # refused: every part is skipped, nothing is left to insert, and the check below
+        # returns. The no-duplication property is unchanged.
         if normalize_heading(src_name) in before_headings:
-            return None, "target already has a %r heading" % src_name
+            notes.append("%s — already on the target, skipped" % src_name)
+            continue
         cls = heading_classes(src_name, None)
         if cls:
             for h in _headings(target):
@@ -268,6 +367,9 @@ def carry_sections(source, target, plan, source_title=None):
     # front of the first — which 尾張氏 was the first pair to hit, with two sections both
     # anchored before ``Genealogy``. Anchors themselves are applied back to front so the
     # earlier offsets stay valid.
+    if not insertions:
+        return None, "nothing left to carry — every part is already on the target"
+
     grouped = {}
     for at, block in insertions:
         grouped.setdefault(at, []).append(block)
@@ -329,7 +431,8 @@ def main():
             print("ABORT: could not read %r/%r: %s" % (src_title, dst_title, e))
             return 2
 
-        new_text, result = carry_sections(src_text, dst_text, entry["sections"], src_title)
+        new_text, result = carry_sections(src_text, dst_text, entry["sections"],
+                                          src_title, entry.get("lead"))
         if new_text is None:
             held.append((src_title, dst_title, result))
         else:

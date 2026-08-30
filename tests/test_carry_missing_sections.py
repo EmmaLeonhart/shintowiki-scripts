@@ -116,6 +116,27 @@ def test_a_rerun_after_a_successful_carry_is_refused():
     assert "already" in reason
 
 
+def test_an_entry_extended_after_a_partial_carry_does_only_the_new_part():
+    """A part already on the target is SKIPPED so the rest can still run.
+
+    尾張氏 needed this: its two sections landed, then its lead was added to the same
+    entry, and refusing the whole entry on the already-present sections would have made
+    the extended entry permanently unrunnable. The no-duplication property is what the
+    guard is for, and skipping preserves it — the test above still shows a plain re-run
+    being refused.
+    """
+    once, _ = carry_sections(SOURCE, TARGET, PLAN)
+    assert once.count("== Overview ==") == 1
+    twice, notes = carry_sections(
+        SOURCE, once, PLAN,
+        lead={"heading": "Lineage", "anchor": "Genealogy"})
+    assert twice is not None, notes
+    assert twice.count("== Overview ==") == 1      # not carried a second time
+    assert twice.count("== See also ==") == 1
+    assert "== Lineage ==" in twice                # the new part did run
+    assert any("skipped" in n for n in notes)
+
+
 def test_it_refuses_when_a_named_ref_would_be_left_behind():
     source = (
         "Lead with the definition.<ref name=\":0\">{{Cite web|title=x}}</ref>\n\n"
@@ -163,6 +184,64 @@ def test_an_empty_wrapper_over_a_real_subsection_is_still_carried():
     out, notes = carry_sections(source, TARGET, [("Overview", "Genealogy")])
     assert out is not None, notes
     assert "Carried with its parent." in out
+
+
+LEAD_SOURCE = (
+    "{{Infobox clan\n|founder = [[Someone]]\n|people = [[A]]<br/>[[B]]\n}}\n\n"
+    "The '''clan''' traces its progenitor to Someone.\n\n"
+    "== Genealogy ==\n*thin list\n"
+)
+
+
+def test_the_lead_can_be_carried_as_its_own_section():
+    """The gate compares headings and never sees a lead, so one has to be carried.
+
+    尾張氏's lead was 2,125b against the target's 1,246b and held the clan's progenitor
+    and its descendant houses. The redirect would have passed the pair anyway.
+    """
+    out, notes = carry_sections(
+        LEAD_SOURCE, TARGET, [],
+        lead={"heading": "Lineage", "anchor": "Genealogy", "append": "Also: X and Y."})
+    assert out is not None, notes
+    assert "== Lineage ==" in out
+    assert "traces its progenitor to Someone" in out
+    assert "Also: X and Y." in out
+    assert out.index("== Lineage ==") < out.index("==Genealogy==")
+
+
+def test_the_leads_infobox_is_dropped_not_carried():
+    """A second clan infobox mid-article is not what "carry the lead" means."""
+    out, _ = carry_sections(LEAD_SOURCE, TARGET, [],
+                            lead={"heading": "Lineage", "anchor": "Genealogy"})
+    assert "{{Infobox clan" not in out
+    assert "|founder" not in out
+    assert "traces its progenitor" in out
+
+
+def test_a_templates_only_lead_is_refused():
+    source = "{{Infobox clan\n|founder = [[Someone]]\n}}\n\n== Genealogy ==\n*thin\n"
+    out, reason = carry_sections(source, TARGET, [],
+                                 lead={"heading": "Lineage", "anchor": "Genealogy"})
+    assert out is None and "nothing to carry" in reason
+
+
+def test_nested_templates_in_the_lead_do_not_swallow_the_prose():
+    """Braces are matched by depth — a regex stops at the first ``}}``."""
+    source = ("{{Infobox|a={{nested|x}}|b=y}}\n\n"
+              "Real prose survives.\n\n== Genealogy ==\n*thin\n")
+    out, notes = carry_sections(source, TARGET, [],
+                                lead={"heading": "Lineage", "anchor": "Genealogy"})
+    assert out is not None, notes
+    assert "Real prose survives." in out
+    assert "{{Infobox" not in out and "{{nested" not in out
+
+
+def test_carrying_the_lead_twice_is_refused():
+    once, _ = carry_sections(LEAD_SOURCE, TARGET, [],
+                             lead={"heading": "Lineage", "anchor": "Genealogy"})
+    twice, reason = carry_sections(LEAD_SOURCE, once, [],
+                                   lead={"heading": "Lineage", "anchor": "Genealogy"})
+    assert twice is None and "already" in reason
 
 
 def test_every_carries_entry_is_well_formed():
