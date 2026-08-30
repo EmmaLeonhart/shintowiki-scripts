@@ -105,6 +105,29 @@ STATE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 # the surviving page is simply never the smaller of the two.
 MIN_TARGET_RATIO = 1.0
 
+# Pairs where the byte gate is measuring TEMPLATE BULK rather than content, keyed to the
+# one pair the reading was done on — the same discipline as ``PAIR_HEADINGS``, and for the
+# same reason: the global gate stays where it is and cannot start passing a page nobody
+# looked at. The heading-correspondence gate below still has to pass on its own.
+#
+# ⚠ This is NOT a way round a refusal. Every entry needs a section-by-section reading
+# showing the target is equal or fuller, recorded here. Emma was asked before the first
+# one went in (2026-08-30) because the queue names 神大根王 in a "do not lower the gate"
+# line; the answer was to record a per-pair exemption rather than move the gate.
+RATIO_EXEMPT = {
+    # 神大根王 5,710b / Kami Ōne 5,297b — 0.93x, and the entire difference is the source's
+    # jawiki {{Infobox}}: its lead is 1,292b raw but only 322b of prose, against the
+    # target's 253b of the same sentence. Read section by section 2026-08-30, the target
+    # is equal or fuller everywhere: Overview 3,229b vs 3,317b (the same three paragraphs
+    # — the Kojiki name Yatsuri-no-Iri-Hiko, the Sōkei-Ōzuka Kofun, the Takasaka and
+    # Iwanonishi shrines), Genealogy 1,010b vs 583b with QIDs the source lacks, See Also
+    # 604b vs 437b. Nothing on the source is missing from the target, so there is nothing
+    # to carry and no reason to hold it. The source itself carries
+    # ``[[Category:Translated but not moved]]`` — this repo's own tag for "the translation
+    # is done, the move is not".
+    "神大根王",
+}
+
 CJK_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿]")
 HEADING_RE = re.compile(r"^==+\s*(.+?)\s*==+\s*$", re.M)
 REDIRECT_RE = re.compile(r"^\s*#redirect\b", re.IGNORECASE)
@@ -305,7 +328,8 @@ def check_pair(source, target, source_title=None):
 
     s_bytes = len(source.encode("utf-8"))
     t_bytes = len(target.encode("utf-8"))
-    if s_bytes and t_bytes < s_bytes * MIN_TARGET_RATIO:
+    if (s_bytes and t_bytes < s_bytes * MIN_TARGET_RATIO
+            and (source_title or "") not in RATIO_EXEMPT):
         return False, ("target is %db against source %db — below the %sx gate, so the "
                        "English page is not the superset this redirect assumes"
                        % (t_bytes, s_bytes, MIN_TARGET_RATIO)), {}

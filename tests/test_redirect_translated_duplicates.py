@@ -30,7 +30,7 @@ for _p in (_ROOT, os.path.join(_ROOT, "shinto_miraheze")):
 
 from shinto_miraheze.redirect_translated_duplicates import (  # noqa: E402
     MIN_TARGET_RATIO, PAIR_HEADINGS, append_categories, carried_categories,
-    check_pair, heading_classes, load_pairs, normalize_heading, sections,
+    RATIO_EXEMPT, check_pair, heading_classes, load_pairs, normalize_heading, sections,
 )
 
 PAD = "prose. " * 60
@@ -246,6 +246,38 @@ def test_every_pair_headings_key_was_a_real_pair():
     """
     japanese = {jp for _, jp, _ in load_pairs()}
     unaccounted = sorted(set(PAIR_HEADINGS) - japanese - REDIRECTED_PAIRS)
+    assert not unaccounted, unaccounted
+
+
+def test_the_ratio_gate_still_refuses_a_pair_that_is_not_exempt():
+    """The exemption is per pair; nothing else may slip through with it."""
+    small_target = _page(["Overview"], "x")
+    big_source = _page(["Overview"], PAD * 8)
+    ok, reason, _ = check_pair(big_source, small_target)
+    assert not ok and "below the" in reason and "gate" in reason
+
+
+def test_an_exempt_pair_skips_the_ratio_gate_but_not_the_heading_gate():
+    """神大根王's exemption exists because the gate was measuring its infobox.
+
+    It must not become a way past the check that actually looks at content: a source
+    heading with no counterpart is still refused for an exempt pair.
+    """
+    exempt = sorted(RATIO_EXEMPT)[0]
+    small_target = _page(["Overview"], "x")
+    big_source = _page(["Overview"], PAD * 8)
+    ok, reason, _ = check_pair(big_source, small_target, source_title=exempt)
+    assert ok, reason
+
+    missing = _page(["Overview", "Territory"], PAD * 8)
+    ok, reason, _ = check_pair(missing, small_target, source_title=exempt)
+    assert not ok
+    assert "no counterpart" in reason and "territory" in reason
+
+
+def test_every_ratio_exempt_key_is_a_live_or_redirected_pair():
+    japanese = {jp for _, jp, _ in load_pairs()}
+    unaccounted = sorted(RATIO_EXEMPT - japanese - REDIRECTED_PAIRS)
     assert not unaccounted, unaccounted
 
 
