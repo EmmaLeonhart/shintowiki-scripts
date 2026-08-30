@@ -81,6 +81,26 @@ def test_sections_land_at_the_named_anchor():
     assert out.index("== See also ==") < out.index("==Notelist==")
 
 
+def test_two_sections_sharing_an_anchor_keep_their_declared_order():
+    """Inserting them one at a time at the same offset silently reverses them.
+
+    The second insertion lands in front of the first, so the page comes out with the
+    sections in the opposite order to the one written in CARRIES — a wrong edit that
+    saves cleanly and reports success. 尾張氏 was the first pair to need two sections at
+    one anchor, and the reversal was found in a dry-run before it shipped.
+    """
+    source = ("Lead.\n\n"
+              "== First ==\nsection one.\n\n"
+              "== Second ==\nsection two.\n\n"
+              "== Genealogy ==\n*thin\n")
+    out, notes = carry_sections(source, TARGET, [("First", "Genealogy"),
+                                                 ("Second", "Genealogy")])
+    assert out is not None, notes
+    assert out.index("== First ==") < out.index("== Second ==")
+    assert out.index("== Second ==") < out.index("==Genealogy==")
+    assert "The fuller genealogy table." in out
+
+
 def test_it_refuses_a_section_the_target_already_has():
     """The target's Genealogy is the fuller one; appending the source's duplicates it."""
     out, reason = carry_sections(SOURCE, TARGET, [("Genealogy", "Notelist")])

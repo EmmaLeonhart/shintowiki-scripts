@@ -196,6 +196,17 @@ PAIR_HEADINGS = {
     # should start matching on pages nobody has looked at.
     "牟義都国造": {"clan temple": "clan temple",
                 "associated temple": "clan temple"},
+    # The only pair that is two genuinely DIFFERENT articles rather than two translations
+    # of one, so these two headings have no counterpart to be equivalent TO — they are
+    # sections that exist on one page and, after the carry, on the other. Each is keyed to
+    # itself so the gate can recognise it on both pages rather than refusing it as an
+    # unknown. Read 2026-08-30: the Kinai-regime section (2,416b) is the Nihon Shoki
+    # descent and the imperial consort line (Yosotahonomihime → Emperor Kōan, Owari
+    # Ōamihime → Sujin); the Inaba section (982b) is a separate Owari family in Inaba
+    # Province, with its own infobox, the Saji and Hikita branches, and Saji Shigesada's
+    # Kamakura appointment. Neither belongs in ``CLASSES``.
+    "尾張氏": {"the owari clan from the perspective of the kinai regime": "kinai regime view",
+             "owari clan (inaba province)": "inaba branch"},
 }
 
 CLASS_OF = collections.defaultdict(set)

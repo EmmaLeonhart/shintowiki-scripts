@@ -143,6 +143,37 @@ CARRIES = [
         "target": "Mukizu no Kuni no Miyatsuko",
         "sections": [("Descendants", "See Also")],
     },
+    {
+        # 尾張氏 6,347b / Owari clan 11,735b, both read 2026-08-30. The only pair that is
+        # two genuinely different articles rather than two translations of one, so nothing
+        # here is a translation gap — these are sections the English article simply does
+        # not have.
+        #
+        # Both anchor before ``Genealogy``, which puts them after ``Cultural influence``
+        # and is the first time two sections share an anchor. That is what surfaced the
+        # insertion-order defect fixed above: one-at-a-time insertion at a single offset
+        # reverses them.
+        #
+        # ``Related items`` (243b, a jawiki link list of Japanese-titled pages plus a stub
+        # template) and ``Sources`` (443b, `{{Reflist}}`, the wikidata link and the
+        # categories) are apparatus in fact as well as in name, read and not carried.
+        #
+        # ⚠ THE LEAD IS NOT CARRIED AND IS NOT EMPTY. The source's 2,125b lead outweighs
+        # the target's 1,246b one, and after this carry the target still lacks: 天忍人命 /
+        # Ame no Oshihito (the progenitor), the Mino and Hida residence before the clan
+        # became Owari-no-kuni-no-miyatsuko, the Sukune descendant houses (Moriobe, the
+        # Baba chief-inspector family, the Tajima high-priest family, the Hakkenjingu
+        # priests, the Daiguji/Grand Shrine Master line), and the infobox's 世襲足媛,
+        # 尾張浜主 and 村国氏. The correspondence gate compares HEADINGS and never looks at
+        # a lead, so it will pass this pair regardless. Do not dispatch the redirect for
+        # 尾張氏 until that is settled — see the queue item.
+        "source": "尾張氏",
+        "target": "Owari clan",
+        "sections": [
+            ("The Owari clan from the perspective of the Kinai regime", "Genealogy"),
+            ("Owari clan (Inaba Province)", "Genealogy"),
+        ],
+    },
 ]
 
 REDIRECT_RE = re.compile(r"^\s*#redirect\b", re.IGNORECASE)
@@ -232,9 +263,17 @@ def carry_sections(source, target, plan, source_title=None):
         notes.append("%s -> before %s (%db)"
                      % (src_name, anchor_name, len(block.encode("utf-8"))))
 
+    # Blocks sharing an anchor are joined in DECLARED order and inserted once. Inserting
+    # them one at a time at the same offset reverses them — the second insertion lands in
+    # front of the first — which 尾張氏 was the first pair to hit, with two sections both
+    # anchored before ``Genealogy``. Anchors themselves are applied back to front so the
+    # earlier offsets stay valid.
+    grouped = {}
+    for at, block in insertions:
+        grouped.setdefault(at, []).append(block)
     out = target
-    for at, block in sorted(insertions, key=lambda x: -x[0]):
-        out = out[:at] + block + out[at:]
+    for at in sorted(grouped, reverse=True):
+        out = out[:at] + "".join(grouped[at]) + out[at:]
 
     # Insertion-only, asserted rather than assumed: nothing on the target may vanish.
     after = [normalize_heading(h[1]) for h in _headings(out)]
