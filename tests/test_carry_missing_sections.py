@@ -147,6 +147,44 @@ def test_it_refuses_when_a_named_ref_would_be_left_behind():
     assert "citation" in reason
 
 
+def test_a_ref_defined_in_another_block_of_the_SAME_run_is_fine():
+    """Citations are judged on the assembled page, not section by section.
+
+    健磐龍命 defines its named refs across the lead, three content sections and an
+    apparatus section. A per-section check refused that carry as broken when every
+    definition was in fact travelling in the same run.
+    """
+    source = (
+        "Lead.\n\n"
+        "== Overview ==\nBody citing it.<ref name=\"x\" />\n\n"
+        "== Notes ==\n<ref name=\"x\">the definition</ref>\n"
+    )
+    out, notes = carry_sections(source, TARGET,
+                                [("Overview", "Genealogy"), ("Notes", "Notelist")])
+    assert out is not None, notes
+    assert "Body citing it." in out and "the definition" in out
+
+
+def test_a_ref_already_dangling_on_the_target_is_not_blamed_on_the_carry():
+    """A pre-existing break is not this edit's, and must not block unrelated work."""
+    target = TARGET.replace("The target's lead.",
+                            "The target's lead.<ref name=\"orphan\" />")
+    out, notes = carry_sections(SOURCE, target, [("Overview", "Genealogy")])
+    assert out is not None, notes
+    assert "The overview only the source has." in out
+
+
+def test_a_renamed_section_lands_under_its_new_heading():
+    """健磐龍命's bibliography is ``References`` on both pages and they are different."""
+    source = "Lead.\n\n== References ==\n* a cited work\n"
+    out, notes = carry_sections(source, TARGET,
+                                [("References", "Notelist", "Bibliography")])
+    assert out is not None, notes
+    assert "== Bibliography ==" in out
+    assert "* a cited work" in out
+    assert "==References==" in out          # the target's own is untouched
+
+
 def test_a_ref_already_defined_on_the_target_is_fine():
     source = "Lead.\n\n== Overview ==\nBody.<ref name=\":0\" />\n"
     target = TARGET.replace("The target's lead.",
@@ -244,11 +282,54 @@ def test_carrying_the_lead_twice_is_refused():
     assert twice is None and "already" in reason
 
 
+def test_a_supplied_ref_definition_attaches_to_its_first_use():
+    source = ("Lead.\n\n== Overview ==\nBody.<ref name=\"g\" /> More.<ref name=\"g\" />\n")
+    out, notes = carry_sections(source, TARGET, [("Overview", "Genealogy")],
+                                ref_defs={"g": "the work, 1926."})
+    assert out is not None, notes
+    assert "<ref name=\"g\">the work, 1926.</ref>" in out
+    assert out.count("the work, 1926.") == 1        # attached once, not to every use
+
+
+def test_a_ref_definition_is_never_placed_inside_a_template():
+    """A definition inside a template parameter is invisible to ordinary uses.
+
+    健磐龍命's ``ruien`` landed inside a ``{{Refnest|group="note"|…}}``, which defines it
+    in the note group only; every main-group use then rendered "no text was provided".
+    It rendered correctly on the source because the infobox held a second, top-level
+    definition — and the infobox is exactly what the lead carry strips. Caught by
+    previewing through action=parse, not by any check over the wikitext.
+    """
+    source = ("Lead.\n\n== Overview ==\n"
+              "{{Refnest|group=\"note\"|nested use.<ref name=\"g\" />}}\n"
+              "then a plain use.<ref name=\"g\" />\n")
+    out, notes = carry_sections(source, TARGET, [("Overview", "Genealogy")],
+                                ref_defs={"g": "the work."})
+    assert out is not None, notes
+    definition = out.index("<ref name=\"g\">the work.</ref>")
+    assert definition > out.index("then a plain use.")
+    assert "{{Refnest|group=\"note\"|nested use.<ref name=\"g\" />}}" in out
+
+
+def test_it_refuses_to_supply_a_ref_the_target_already_uses():
+    """Supplying one would be editing the target's own citations, not carrying."""
+    target = TARGET.replace("The target's lead.", "The target's lead.<ref name=\"g\" />")
+    out, reason = carry_sections(SOURCE, target, [("Overview", "Genealogy")],
+                                 ref_defs={"g": "mine"})
+    assert out is None
+    assert "already appears on the target" in reason
+
+
 def test_every_carries_entry_is_well_formed():
     """The list is hand-written per pair, so the shape is worth asserting."""
     for entry in CARRIES:
         assert entry["source"] and entry["target"]
         assert entry["source"] != entry["target"]
         assert entry["sections"], "an entry with no sections carries nothing"
-        for pair in entry["sections"]:
-            assert len(pair) == 2 and all(isinstance(x, str) and x for x in pair)
+        for spec in entry["sections"]:
+            # (source heading, target anchor) or (…, …, heading to rename it to)
+            assert len(spec) in (2, 3)
+            assert all(isinstance(x, str) and x for x in spec)
+        lead = entry.get("lead")
+        if lead:
+            assert lead["heading"] and lead["anchor"]
