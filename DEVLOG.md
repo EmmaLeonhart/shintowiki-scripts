@@ -4,6 +4,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — queue hygiene: three spent things removed, and the durable rule moved to CLAUDE.md
+
+No pairs left to work, so this tick was the flow's own discipline rather than new work. `queue.md`
+had accumulated three things that were state, not steps — exactly what its own header forbids.
+
+**The 建比良鳥命 item is gone from the queue and its rule is in `CLAUDE.md`.** Emma's ruling was that
+there is nothing to do, so it was never a queue item; leaving a "do not do this" bullet in a queue is
+the crud the delete-on-completion rule exists to prevent. What a future session actually needs — that
+an untranslated Japanese page is a translation job and not a duplicate pair, how to tell (does the
+source carry `{{translated page}}`, how much CJK is in its BODY), why neither operation is right, and
+that `Q11065428` staying open is the correct state — is now a `⛔` section in `CLAUDE.md` beside the
+other data-model rules, where durable rules live.
+
+**The three paragraphs of carry instructions are gone**, having no pairs left to instruct. The
+mechanism they described lives in `carry_missing_sections.py`'s docstring, which is where someone
+looking at the tool will actually find it.
+
+**The pinned tail's cron IDs were two days dead.** It recorded `aeb3d7cb` / `fa3787f8` / `8f65f73a` /
+`25b7500a` from the 2026-08-28 session, and a status report flagged them as stale twice before
+anything removed them — the cost of leaving a spent record in a live file, which is the same fault as
+the item above in a smaller form. Replaced with this session's four, verified via `CronList`, and the
+line now says to check `CronList` rather than trust the IDs written down.
+
+`todo.md` was read for a promotable item and has none that is not gated: its two open tasks both
+begin *"Task to do only after exhausting the 2026-08-04 tasks"*, which is Emma's sequencing, and the
+rest are marked as human-review residue with nothing left to build.
+
+1,728 pass across the full CI selection.
+
+---
+
 ## 2026-08-30 — 神大根王 redirected; 建比良鳥命 turns out not to belong to this workstream at all
 
 Both remaining pairs went to Emma, because both hit something the workstream's premise did not cover

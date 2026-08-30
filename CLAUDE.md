@@ -151,6 +151,30 @@ every session and every work-loop tick; each item is METABOLISED — appended to
 completion), `== Notes ==` (Emma's scratch). The page is wiki-wins: always pull the live wiki
 version before editing repo-side.
 
+## ⛔ AN UNTRANSLATED JAPANESE PAGE IS NOT A DUPLICATE PAIR — it is a translation job (Emma, 2026-08-30)
+
+The duplicate-pair scripts rest on a premise stated outright in `merge_duplicate_pairs.py`: the
+Japanese-TITLED pages are **English articles** — translations of a jawiki source sitting at a
+Japanese title, beside a second translation at an English title. "Merge the Japanese into the
+English" is choosing which of two English translations survives.
+
+**That premise does not hold for every page, and when it fails the pair is out of scope.**
+`建比良鳥命` was the case: 2,169 CJK characters of body prose, headings 概要 / 記述 / 系譜 / 祀る神社,
+nine `Pages with N+ untranslated japanese characters` categories, `[[Category:Need translation]]`,
+and no `{{translated page}}` — beside a translated `Takehi-Nateru`. Both were already in
+`need_translation/`.
+
+- **Check before treating a pair as a duplicate:** does the source carry `{{translated page}}`, and
+  how much CJK is in its BODY (excluding categories and name glosses)? A translated page runs a
+  couple of hundred CJK characters of name glosses; this one ran ten times that.
+- **Neither operation is right on such a pair.** Carrying puts untranslated Japanese into a clean
+  English article and imports the untranslated-characters backlog with it. Redirecting deletes a page
+  the translation pipeline is queued to work on.
+- **The duplicate QID stays open, and that is the correct state** — not an unfinished job. `Q11065428`
+  is open for exactly this reason.
+- The next step for such a pair is **translation**, which `need_translation/` and the remote-queue
+  routine already own. Do not re-open it as a duplicate-pair task.
+
 ## ⭐ A WIKIDATA REDIRECT IS PROOF TWO PAGES ARE ONE — redirect them here too (Emma, 2026-08-26)
 
 **Her words:** *"if one redirects into another on wikidata then that's clear evidence you can just
