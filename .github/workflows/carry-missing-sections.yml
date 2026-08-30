@@ -1,0 +1,100 @@
+name: Carry Missing Sections
+
+# Carries the sections that only the Japanese-titled page has onto its English-titled
+# twin, for the duplicate pairs that are complementary rather than superset/subset.
+# The third operation in this workstream: merge-duplicate-pairs.yml replaces the
+# target's body, redirect-translated-duplicates.yml leaves it alone, and neither fits
+# a pair where each page holds something the other does not.
+#
+# The source page is NOT touched here — not blanked, not redirected. Once the carry
+# has landed the pair is an ordinary redirect job, and
+# redirect-translated-duplicates.yml decides it on its own gates against live text.
+#
+# ONE PER RUN by default, matching merge-duplicate-pairs.yml. Emma, 2026-08-28:
+# "I do them, one per work-loop tick."
+#
+# DO NOT add a schedule. The script is idempotent — a section already on the target is
+# refused — but nothing here should run unattended.
+#
+# Trigger manually: gh workflow run carry-missing-sections.yml
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_edits:
+        description: "Pairs to carry this run (default 1, one per work-loop tick)"
+        required: false
+        default: "1"
+      only:
+        description: "Restrict to this source title (blank = every entry)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+env:
+  MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}
+  WIKIDATA_EMAIL: ${{ secrets.WIKIDATA_EMAIL }}
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  carry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      WIKI_USERNAME: ${{ vars.WIKI_USERNAME }}
+      WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+    steps:
+      - name: Checkout (tip of branch)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mwclient requests
+
+      - name: Validate required secrets
+        run: |
+          if [ -z "${WIKI_USERNAME}" ] || [ -z "${WIKI_PASSWORD}" ]; then
+            echo "WIKI_USERNAME variable and WIKI_PASSWORD secret are required."
+            exit 1
+          fi
+          if [[ "${WIKI_USERNAME}" != *"@"* ]]; then
+            echo "WIKI_USERNAME must use bot-password format, e.g. EmmaBot@EmmaBot."
+            exit 1
+          fi
+
+      # The script also checks in code, so a manual run is covered; this keeps the
+      # workflow consistent with every other miraheze writer, which
+      # tests/test_miraheze_writers_are_lockout_gated.py enforces.
+      - name: Wiki-editing lockout guard
+        id: lockout
+        run: |
+          if python3 shinto_miraheze/wiki_edit_allowed.py; then
+            echo "locked=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "locked=true" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Wiki-editing lockout::Wiki editing is locked - skipping this run."
+          fi
+
+      - name: Build run tag
+        run: |
+          RUN_PATH="${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          echo "RUN_TAG=[[github:${RUN_PATH}|manual triggered pipeline]]" >> "$GITHUB_ENV"
+
+      - name: "Carry missing sections"
+        if: steps.lockout.outputs.locked != 'true'
+        run: |
+          chmod +x shinto_miraheze/run_step.sh
+          shinto_miraheze/run_step.sh "Carry: carry_missing_sections" \
+            python3 shinto_miraheze/carry_missing_sections.py \
+              --apply \
+              --max-edits "${{ github.event.inputs.max_edits || '1' }}" \
+              --only "${{ github.event.inputs.only }}" \
+              --run-tag "${RUN_TAG}"
