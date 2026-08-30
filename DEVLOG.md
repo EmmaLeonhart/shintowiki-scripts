@@ -4,6 +4,51 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — 牟義都国造 done: two refusals, and only one of them was a content gap
+
+Third pair through the carry operation. The redirect plan had been holding it on
+`unrecognised heading on the source: 'clan temple'`, and that refusal was never about
+missing content at all.
+
+**The temple was a naming difference, not a gap.** The source's `Clan Temple` (63b) says the
+clan's temple is Miroku-ji; the target's `Associated Temple` (173b) says the same thing about the
+same ja target (弥勒寺跡 (関市)) and carries a QID the source lacks. One heading, two renderings —
+so it goes in `PAIR_HEADINGS` keyed to this pair, not into `CLASSES`, where "clan temple" would
+start matching on pages nobody has read. With it in, the plan's refusal dropped from two headings
+to one.
+
+**The real gap was `Descendants`** (374b — Mugetsu Hiro, an Asuka-period gōzoku, possibly a toneri
+of Prince Ōama, active in the Jinshin War). The target stops at `Notable Figures`, so it anchored
+before `See Also`, where the source has it.
+
+This is the closest-matched pair in the set: 6,190b against 6,427b, **1.04x before the carry**, and
+1.10x after. Everything else lines up heading for heading — Writing/Terminology, Base/Headquarters,
+Tutelary Shrine/Shrine, Related Shrines/Related Shrines, People/Notable Figures.
+
+**Two exemptions checked rather than assumed, both of which the last two pairs had gone opposite
+ways on.** The source's `Tombs` is an EMPTY wrapper (0b) under Tutelary Shrine — carries nothing,
+loses nothing. And `See also` really is apparatus here: one link to the kuni-no-miyatsuko list that
+the target already has with a QID. On 建稲種命 the same heading held 2,274b of narrative. Three
+pairs in, the heading name has predicted the answer zero times.
+
+Carry [run 33330633128](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33330633128):
+6,427b → 6,821b, 0 errors. Redirect
+[run 33330678524](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33330678524):
+qualified at 1.10x, 1 redirected, 6 held, 0 errors. The carry dry-run now refuses all three
+finished pairs as already redirects.
+
+The queue's `Clan Temple` figure said 51b and measured 63b — the fourth carried count corrected this
+session, after `Headquarters`, `Base` and `Territory` on the previous pair.
+
+Tests: 1,712 pass across the full CI selection. No new ones — both changes are data, covered by
+`test_every_carries_entry_is_well_formed` and `test_pair_headings_are_normalised_forms`.
+
+**Four pairs left, in two queue items:** 尾張氏 (two sections, and the only pair that is two
+genuinely different articles) and the union trio 健磐龍命 / 建比良鳥命 / 神大根王, where the target
+is the smaller page and the redirect script's 1.0x gate will keep refusing until the carry lands.
+
+---
+
 ## 2026-08-30 — 那須国造 carried and redirected; the apparatus exemption checked, not assumed
 
 Second pair through `carry_missing_sections.py`, and the first where the answer to "is this

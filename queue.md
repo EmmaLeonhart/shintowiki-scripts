@@ -13,11 +13,6 @@ goes before, dispatch `carry-missing-sections.yml`, then dispatch `redirect-tran
 and let its own gates decide the redirect. Read both live pages before writing the entry — the byte
 counts recorded below were carried, not measured, and 建稲種命's was wrong by 386b.
 
-- [ ] **Move 牟義都国造's Descendants onto [[Mukizu no Kuni no Miyatsuko]], then redirect.** 313b with
-  nowhere to land — the English page stops at `Notable Figures`. Its `Tombs` is an empty wrapper and
-  its `Clan Temple` (51b) is the English page's `Associated Temple`, so Descendants is the only real
-  gap; add the pair to `PAIR_HEADINGS` for the temple heading in the same change.
-
 - [ ] **Merge 尾張氏 into [[Owari clan]] section-wise, then redirect.** The only pair that is two
   genuinely different articles rather than two translations of one. The source's *"The Owari clan
   from the perspective of the Kinai regime"* (analysis) and *"Owari clan (Inaba Province)"* (a
