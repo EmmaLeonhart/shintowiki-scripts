@@ -13,11 +13,10 @@ goes before, dispatch `carry-missing-sections.yml`, then dispatch `redirect-tran
 and let its own gates decide the redirect. Read both live pages before writing the entry — the byte
 counts recorded below were carried, not measured, and 建稲種命's was wrong by 386b.
 
-- [ ] **Merge 尾張氏 into [[Owari clan]] section-wise, then redirect.** The only pair that is two
-  genuinely different articles rather than two translations of one. The source's *"The Owari clan
-  from the perspective of the Kinai regime"* (analysis) and *"Owari clan (Inaba Province)"* (a
-  distinct branch) have no counterpart in the English page's History / Atsuta Shrine / Later history
-  / Cultural influence. Both sections move across as one `CARRIES` entry with two section pairs.
+The carry tool now also carries a LEAD (`lead = {heading, anchor, append?}`). Use it: the
+correspondence gate compares HEADINGS and never looks at a lead, so a source lead that outweighs the
+target's passes the gate invisibly. Check the lead byte counts on every remaining pair before
+redirecting, not just the headings.
 
 - [ ] **Union-merge the three pairs where the Japanese page is fuller.** 健磐龍命 (19,798b vs
   13,510b), 建比良鳥命 (9,615b vs 8,387b), 神大根王 (5,710b vs 5,297b). `merge_duplicate_pairs.py`

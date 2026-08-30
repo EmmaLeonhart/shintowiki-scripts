@@ -4,6 +4,60 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — 尾張氏 done, and two defects the pair exposed: reversed insertion, and the LEAD
+
+Fourth pair through the carry operation, and the one that found the most. Both were live before this
+session and neither had ever been exercised.
+
+**1. Two sections at one anchor came out REVERSED.** Inserting them one at a time at the same offset
+puts the second in front of the first, and the edit saves cleanly and reports success — a wrong page
+with a green run. 尾張氏 is the first pair to need two sections at one anchor, so nothing had hit it.
+Blocks sharing an anchor are now joined in declared order and inserted once. The old behaviour was
+reproduced explicitly before the fix, and the new test fails against it. Verified on the live page:
+Kinai regime, then Inaba Province, then Genealogy.
+
+**2. The correspondence gate NEVER LOOKS AT A LEAD.** It compares headings. 尾張氏's lead was 2,125b
+against the target's 1,246b, and after the two sections landed the English page still lacked 天忍人命
+/ Ame no Oshihito (the progenitor), the Mino and Hida residence before the clan became
+Owari-no-kuni-no-miyatsuko, and the Sukune descendant houses — Moriobe of Atsuta's Dainai family, the
+Baba chief-inspector family, the Tajima high-priest family, the Hakkenjingū priests. **The gate would
+have passed the pair anyway**, silently, exactly as the `see also` exemption nearly did on 建稲種命.
+Emma was asked with those facts named and chose to carry the lead as a section, then redirect.
+
+So `CARRIES` entries may now carry `lead = {heading, anchor, append?}`. Leading `{{…}}` blocks are
+dropped by depth-matched brace scanning — an infobox is structured data about the source page's
+rendering, and a second clan infobox mid-article is not what carrying a lead means. What is worth
+keeping from one goes in `append`, written out in the entry and reviewable in the diff rather than
+generated at run time. 尾張氏's gives the infobox's remaining names as plain kanji: none of 天忍人命,
+尾張大隅, 尾張草香, 尾張馬身, 尾張兼時, 尾張浜主, 村国氏 or 熱田神宮家 has a page on this wiki, so
+linking them would have manufactured eight red links.
+
+**A kanji search reported one loss that was not real.** 世襲足媛 looked missing from the target; she
+is there as Yosotahonomihime, in the Kinai-regime section carried an hour earlier. Searching for the
+kanji of a person the English page names in rōmaji finds nothing and means nothing.
+
+**A guard was narrowed, deliberately.** A section already on the target was refusing the whole entry.
+It now skips that part and carries the rest. The guard exists to stop a section being added twice and
+skipping serves that exactly — but the old behaviour also made an entry that GREW after a partial
+carry permanently unrunnable, which this pair hit the moment its lead was added after its sections
+had landed. A plain re-run is still refused, via "nothing left to carry", and the test asserting that
+still passes.
+
+Carry 1 [33333465686](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33333465686)
+11,735b → 15,233b (the two sections); carry 2
+[33333826808](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33333826808)
+15,233b → 17,180b (the lead); redirect
+[33333881695](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33333881695) at 2.71x.
+0 errors on all three. Every fact the lead uniquely held is verified present on the live target and
+the jawiki infobox is verified absent.
+
+Tests: 7 added (19 in the carry file), 1,719 across the full CI selection.
+
+**Three pairs left, one queue item:** 健磐龍命 / 建比良鳥命 / 神大根王, where the target is the smaller
+page. Check their LEADS as well as their headings — the gate will not.
+
+---
+
 ## 2026-08-30 — 牟義都国造 done: two refusals, and only one of them was a content gap
 
 Third pair through the carry operation. The redirect plan had been holding it on
