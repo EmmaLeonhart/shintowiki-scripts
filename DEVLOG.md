@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — 神大根王 redirected; 建比良鳥命 turns out not to belong to this workstream at all
+
+Both remaining pairs went to Emma, because both hit something the workstream's premise did not cover
+and one of them is named in the queue's own "do not lower the gate" line.
+
+**神大根王 needed no carry.** Read section by section, it and Kami Ōne are two translations of one
+article and the TARGET is equal or fuller everywhere: Overview 3,229b against 3,317b is the same
+three paragraphs (the Kojiki name Yatsuri-no-Iri-Hiko, the Sōkei-Ōzuka Kofun, the Takasaka and
+Iwanonishi shrines), Genealogy 1,010b against 583b with QIDs the source lacks, See Also 604b against
+437b. It was held at **0.93x**, and the whole 413b difference is the source's jawiki `{{Infobox}}` —
+its lead is 1,292b raw and 322b of prose, against the target's 253b of the same sentence. The source
+even carries `[[Category:Translated but not moved]]`, this repo's own tag for "translated, not yet
+moved".
+
+So the byte gate was measuring template bulk. Emma's call was a **per-pair `RATIO_EXEMPT`** rather
+than moving the gate — the same discipline as `PAIR_HEADINGS`, recorded against the pair the reading
+was done on. The exemption skips only the ratio: tests assert a non-exempt pair is still refused on
+ratio, and that an exempt pair with an uncovered source heading is still refused on correspondence.
+Redirected [run 33341481715](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33341481715),
+0 errors.
+
+**建比良鳥命 is not a duplicate-translation pair.** Every other pair here was two ENGLISH
+translations, one at a Japanese title — the premise `merge_duplicate_pairs.py`'s docstring states
+outright. This source is raw untranslated Japanese: **2,169 CJK characters** of body prose, headings
+概要 / 記述 / 系譜 / 祀る神社, nine `Pages with N+ untranslated japanese characters` categories,
+`[[Category:Need translation]]`, and no `{{translated page}}`. Both it and Takehi-Nateru are already
+in `need_translation/`. Emma's call: **drop it from this workstream.** Carrying would put
+untranslated Japanese into a clean English article; redirecting would delete a page the translation
+pipeline is queued to work on. **Q11065428 stays open until the translation lands**, and that is the
+correct state rather than an unfinished job.
+
+**A dispatch fired against the wrong commit and it cost nothing, because the gates are in the code.**
+The push was rejected (1 behind) while the `gh workflow run` in the same command still went out, so
+the run checked out origin WITHOUT the exemption and reported `Redirected: 0 Held: 7`. It re-measured
+against live pages and refused, exactly as a run with no reason to act should. Rebased, pushed, and
+re-dispatched. Worth recording as evidence for the design: the workflow trusts nothing from the
+dispatcher.
+
+**Six of the seven pairs are done**, one is correctly out of scope, and the queue item is closed.
+1,728 pass across the full CI selection.
+
+---
+
 ## 2026-08-30 — 健磐龍命: the union works, and PREVIEWING the merge caught 30 errors the wikitext hid
 
 Fifth pair, first where the SOURCE is the fuller page (19,798b vs 13,510b), and the one the queue

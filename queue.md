@@ -18,23 +18,18 @@ correspondence gate compares HEADINGS and never looks at a lead, so a source lea
 target's passes the gate invisibly. Check the lead byte counts on every remaining pair before
 redirecting, not just the headings.
 
-- [ ] **Union-merge the two pairs left where the Japanese page is fuller.** 建比良鳥命 (9,615b vs
-  8,387b) and 神大根王 (5,710b vs 5,297b). `merge_duplicate_pairs.py` REPLACES the target body and
-  its 2.0x gate refuses both correctly — the sections are **complementary, not superset/subset** —
-  so use `carry_missing_sections.py`, and do not lower that gate. The redirect script's 1.0x gate
-  will keep refusing each until the carry has made the target the larger page; that is the correct
-  order, not a failure.
-  - **健磐龍命 is DONE** (2026-08-30, 13,510b → 31,572b, 0 cite errors, redirected at 1.59x) and it
-    is the template for these two. What it needed beyond the sections: its LEAD, a `ref_defs` block
-    for eight named refs whose definitions lived in the apparatus and the infobox, a RENAME of its
-    bibliography (both pages called it `References`), and a `PAIR_HEADINGS` entry for the five
-    subsections named after the texts they summarise.
-  - **⭐ PREVIEW THE MERGED TEXT THROUGH `action=parse` BEFORE SAVING.** On 健磐龍命 the wikitext
-    check said the page was clean and the renderer reported **30 cite errors**, three of them on the
-    target's own refs. The remaining one after that was a definition landing inside a
-    `{{Refnest|group="note"}}`, invisible to main-group uses. Neither was findable from the wikitext.
-  - 建比良鳥命 is the odd one: its TARGET lead is 4,655b against the source's 1,165b, the reverse of
-    every other pair. Read both before assuming the lead needs carrying.
+- [ ] **建比良鳥命 is NOT a duplicate-translation pair — hand it to the translation pipeline.**
+  Emma's call, 2026-08-30, asked with the measurements. Every other pair in this workstream was two
+  ENGLISH translations, one sitting at a Japanese title. This source is raw untranslated Japanese:
+  **2,169 CJK characters** of body prose, headings 概要 / 記述 / 系譜 / 祀る神社, nine
+  `Pages with N+ untranslated japanese characters` categories and `[[Category:Need translation]]`,
+  and no `{{translated page}}`. Both it and [[Takehi-Nateru]] are already in `need_translation/`.
+  - **No carry and no redirect.** Carrying would put untranslated Japanese into a clean English
+    article; redirecting would delete a page the translation pipeline is queued to work on.
+  - The duplicate QID **Q11065428 stays open** for this one pair until the translation lands. That
+    is the correct state, not an unfinished job — record it rather than re-deriving it next time.
+  - The concrete next step is translation, which `need_translation/` and the remote-queue routine
+    already own. Do not re-open it here.
 
 - **Pinned tail (keep last)**
 
