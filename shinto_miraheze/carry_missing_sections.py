@@ -99,6 +99,28 @@ CARRIES = [
         "target": "Takeinadane",
         "sections": [("Overview", "Genealogy"), ("See also", "Notelist")],
     },
+    {
+        # 那須国造 12,838b / Nasu no Kuni no Miyatsuko 16,375b, both read 2026-08-30.
+        # The target is the fuller page section for section — Overview 5,475b against
+        # 2,517b, Ancestry 2,305b against 523b, Clan 3,138b against 1,962b — and its
+        # Headquarters (962b) covers the source's Base prose (~1,033b, once the Territory
+        # subsection nested under it is subtracted). The ONE gap is Territory, which is
+        # what the redirect script's plan already said in as many words: "the English page
+        # has no counterpart for: 'territory'".
+        #
+        # Territory is a ``===`` subsection of ``== Base ==`` on the source, so the anchor
+        # is the target's ``== Shrine ==``: inserting before it lands Territory at the tail
+        # of Headquarters, nested under it, which is the structure it already has.
+        #
+        # ``See also`` is NOT carried here, and the difference from 建稲種命 is the point.
+        # There it was annotated narrative hiding under an apparatus name. Here the source's
+        # two bullets — the kuni-no-miyatsuko list, the Nasu-clan descent theory — are the
+        # same two the target already carries under ``See Also``, better templated. Checked
+        # rather than assumed; the exemption is only safe when someone reads the section.
+        "source": "那須国造",
+        "target": "Nasu no Kuni no Miyatsuko",
+        "sections": [("Territory", "Shrine")],
+    },
 ]
 
 REDIRECT_RE = re.compile(r"^\s*#redirect\b", re.IGNORECASE)
