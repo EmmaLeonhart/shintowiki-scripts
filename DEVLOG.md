@@ -4,6 +4,54 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — the third operation exists: carry the section, then redirect. 1 of 7 done
+
+The seven pairs left after the 9 redirects are complementary, not superset/subset, and both existing
+scripts are all-or-nothing about the body. `merge_duplicate_pairs.py` replaces the target's and
+refuses below 2.0x; `redirect_translated_duplicates.py` leaves it alone and refuses when a
+content-bearing source heading has no counterpart. Neither fits a pair where each page holds
+something the other does not.
+
+**`carry_missing_sections.py` is the insertion.** Named source sections land at a named anchor on
+the target; nothing on the target is removed or rewritten; the source is not touched at all. The
+redirect stays with the redirect script, so it is still decided by the correspondence gate against
+live text rather than authorised by the carry having run. The judgement is recorded per pair, the
+way `PAIR_HEADINGS` already is — a decision made by reading two particular articles cannot then
+match silently on a page nobody looked at.
+
+**建稲種命 → [[Takeinadane]], done end to end.** Carry
+[run 33300718475](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33300718475):
+7,204b → 11,787b, 0 errors. Redirect
+[run 33321810380](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33321810380):
+qualified at 1.71x, 1 redirected, 6 held, 0 errors. A dry-run of the carry immediately after refuses
+the pair with *"source is already a redirect"* — idempotence observed on a real second run.
+
+**`See also` was carried, and that is the part worth keeping.** The redirect script exempts it as
+apparatus, correctly in general. On this page its three bullets are annotated narrative — the
+Utsutsu Shrine drowning legend and Yamato Takeru's "utsutsu kana", the Hazu Shrine burial on
+Miyazaki Beach, the Machiai-no-Ura naming — 2,274b that would have gone under a *passing* gate,
+silently, with nothing anywhere reporting a loss. The apparatus exemption is safe only because
+something checks what is actually under the heading.
+
+**The Overview was 2,309b, not the 1,923b the queue said.** Sixth time a figure in this workstream
+has been wrong by being carried instead of measured. Both pages were read before the entry was
+written; the remaining six items say to do the same.
+
+**CI went red on a test whose premise was inverted, and my commit is what exposed it.**
+`test_every_pair_headings_key_is_a_live_pair` asserted every `PAIR_HEADINGS` key still appears in
+`duplicate_qids.state`. But a key leaves that file exactly when its redirect lands — the collector
+stops grouping a redirected source — so the test failed the moment the mechanism worked. All five
+keys had been redirected by run 33235580849 on 08-29; the last green run predated the state commit
+that recorded it, and mine was simply the next commit to touch the tree. Replaced with two tests: a
+key must be live **or** in a `REDIRECTED_PAIRS` record, and nothing in that record may still be
+live. Being unable to distinguish "retired by success" from "typo" without a record is the whole
+reason the record exists.
+
+Tests: 12 added for the carry, 2 replacing the inverted one. 1,712 pass across the full CI selection.
+Six pairs remain, one queue item each.
+
+---
+
 ## 2026-08-28 — the 16 held pairs, decided: 9 were the gate's fault, 7 are real
 
 The held set was never 16 judgement calls. Reading both pages of all sixteen showed **nine were

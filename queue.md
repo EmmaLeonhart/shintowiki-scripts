@@ -7,9 +7,11 @@ lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in th
 that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
 from `ATOMIC_FILES`; they are not queue items.
 
-- [ ] **Move 建稲種命's Overview onto [[Takeinadane]], then redirect.** The English page has no
-  Overview at all — only Genealogy / Notelist / References — while the source's is 1,923b. It is the
-  one pair where the missing section is the article's whole opening.
+The remaining duplicate-pair items are all the same operation now: add a `CARRIES` entry to
+`shinto_miraheze/carry_missing_sections.py` naming the source sections and the target heading each
+goes before, dispatch `carry-missing-sections.yml`, then dispatch `redirect-translated-duplicates.yml`
+and let its own gates decide the redirect. Read both live pages before writing the entry — the byte
+counts recorded below were carried, not measured, and 建稲種命's was wrong by 386b.
 
 - [ ] **Move 那須国造's Territory onto [[Nasu no Kuni no Miyatsuko]], then redirect.** The English
   page's `Headquarters` (952b) covers the source's `Base` (943b) and nothing else; the source's
@@ -26,16 +28,17 @@ from `ATOMIC_FILES`; they are not queue items.
   genuinely different articles rather than two translations of one. The source's *"The Owari clan
   from the perspective of the Kinai regime"* (analysis) and *"Owari clan (Inaba Province)"* (a
   distinct branch) have no counterpart in the English page's History / Atsuta Shrine / Later history
-  / Cultural influence. Both sections move across; neither script fits, so this is a hand edit.
+  / Cultural influence. Both sections move across as one `CARRIES` entry with two section pairs.
 
 - [ ] **Union-merge the three pairs where the Japanese page is fuller.** 健磐龍命 (19,798b vs
   13,510b), 建比良鳥命 (9,615b vs 8,387b), 神大根王 (5,710b vs 5,297b). `merge_duplicate_pairs.py`
   REPLACES the target body, and its 2.0x source gate correctly refuses all three — the sections are
   **complementary, not superset/subset**. 健磐龍命 is the clear case: the source holds Nihon Shoki,
   Fudoki, Engishiki and Kokuzo Hongi; the target holds the Kihachi legend and the U-no-matsuri
-  festival, and a body-replacing merge would destroy those. What is needed is a section-wise union
-  that keeps both sides, which is a third operation neither script performs — do not lower the 2.0x
-  gate to reach these.
+  festival, and a body-replacing merge would destroy those. The section-wise union they need now
+  exists (`carry_missing_sections.py`) — do not lower the 2.0x gate to reach these. Note the
+  redirect script's 1.0x gate will still refuse each one until the carry has made the target the
+  larger page, which is the correct order and not a failure.
 
 - **Pinned tail (keep last)**
 

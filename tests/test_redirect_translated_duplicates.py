@@ -225,10 +225,35 @@ def test_base_maps_to_territory_for_akashi_and_nowhere_else():
     assert not ok
 
 
-def test_every_pair_headings_key_is_a_live_pair():
-    """A stale key is a decision recorded against a page that no longer pairs."""
+# Keys whose redirect has LANDED. A PAIR_HEADINGS key leaves duplicate_qids.state on
+# the day its pair is redirected -- the collector stops grouping a source that is a
+# redirect -- so "no longer a live pair" is the success condition, not staleness.
+REDIRECTED_PAIRS = frozenset({
+    # All five were redirected on 2026-08-29 by run 33235580849.
+    "天道根命", "明石国造", "紀伊国造", "針間鴨国造", "闘鶏大山主",
+})
+
+
+def test_every_pair_headings_key_was_a_real_pair():
+    """A key must name a pair that is live OR one whose redirect has landed.
+
+    This asserted every key was still LIVE, and therefore failed the moment the
+    mechanism worked: the nine redirects of 2026-08-29 took all five keys out of
+    ``duplicate_qids.state``, and CI went red on the next commit to touch the tree for
+    that reason alone. The thing worth guarding is unchanged -- a key that names no
+    pair at all is a typo or a decision recorded against the wrong page -- so a
+    redirected key has to be recorded rather than merely absent.
+    """
     japanese = {jp for _, jp, _ in load_pairs()}
-    assert set(PAIR_HEADINGS) <= japanese, sorted(set(PAIR_HEADINGS) - japanese)
+    unaccounted = sorted(set(PAIR_HEADINGS) - japanese - REDIRECTED_PAIRS)
+    assert not unaccounted, unaccounted
+
+
+def test_no_redirected_pair_is_still_live():
+    """The other direction: a key listed as redirected must not still be pairing."""
+    japanese = {jp for _, jp, _ in load_pairs()}
+    still_live = sorted(REDIRECTED_PAIRS & japanese)
+    assert not still_live, still_live
 
 
 def test_pair_headings_are_normalised_forms():
