@@ -13,12 +13,6 @@ goes before, dispatch `carry-missing-sections.yml`, then dispatch `redirect-tran
 and let its own gates decide the redirect. Read both live pages before writing the entry — the byte
 counts recorded below were carried, not measured, and 建稲種命's was wrong by 386b.
 
-- [ ] **Move 那須国造's Territory onto [[Nasu no Kuni no Miyatsuko]], then redirect.** The English
-  page's `Headquarters` (952b) covers the source's `Base` (943b) and nothing else; the source's
-  `Territory` (1,993b — Nasu Province, the Kenu-river boundary from the *Hitachi no Kuni Fudoki*,
-  the absorption into Shimotsukenu) has no counterpart. Its `Base` and `Territory` are two real
-  sections, which is why base and territory must stay separate concept classes.
-
 - [ ] **Move 牟義都国造's Descendants onto [[Mukizu no Kuni no Miyatsuko]], then redirect.** 313b with
   nowhere to land — the English page stops at `Notable Figures`. Its `Tombs` is an empty wrapper and
   its `Clan Temple` (51b) is the English page's `Associated Temple`, so Descendants is the only real

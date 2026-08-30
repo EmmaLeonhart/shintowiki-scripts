@@ -4,6 +4,50 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — 那須国造 carried and redirected; the apparatus exemption checked, not assumed
+
+Second pair through `carry_missing_sections.py`, and the first where the answer to "is this
+apparatus?" came out the other way.
+
+**One section, `Territory`.** Nasu no Kuni no Miyatsuko is the fuller page section for section —
+Overview 5,475b against 2,517b, Ancestry 2,305b against 523b, Clan 3,138b against 1,962b — and its
+`Headquarters` (962b) covers the source's `Base` prose (~1,033b once the Territory subsection nested
+under it is subtracted). Territory was the only gap, which is exactly what the redirect plan had
+been reporting: *"the English page has no counterpart for: 'territory'"*.
+
+`Territory` is a `===` subsection of `== Base ==` on the source, so it anchored before the target's
+`== Shrine ==`. That lands it at the tail of `Headquarters`, nested under it — the structure it
+already had, rather than a new top-level section.
+
+**`See also` was NOT carried, and that is the finding.** On 建稲種命 the same heading held annotated
+narrative and had to be carried or 2,274b would have gone under a passing gate. Here the source's
+two bullets — the kuni-no-miyatsuko list, the Nasu-clan descent theory — are the same two the target
+already carries under `See Also`, better templated. So the apparatus exemption is right on this pair
+and was wrong on the last one, and nothing about the heading name distinguishes them. Reading the
+section is the whole check.
+
+Carry [run 33327817032](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33327817032):
+16,375b → 18,556b, 0 errors. Redirect
+[run 33327864424](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33327864424):
+qualified at 1.45x, 1 redirected, 6 held, 0 errors. A carry dry-run after both now refuses two pairs
+as already redirects.
+
+**Three more carried byte counts were wrong.** The queue had `Headquarters` 952b (962b), `Base` 943b
+(~1,033b) and `Territory` 1,993b (2,161b body, 2,181b as a block). None changed a decision, and that
+is the point — the figures drift quietly because nothing re-measures them. The queue header now says
+to read both live pages first; this pair is why it stays there.
+
+`chizu` is the only named ref on either page and it is defined and used inside `Base` /
+`Headquarters`, not inside the carried section, so the citation gate had nothing to refuse. Noted
+because the gate has not yet fired on real input.
+
+Tests: no new ones — the entry is data, and `test_every_carries_entry_is_well_formed` covers its
+shape. 1,712 pass across the full CI selection.
+
+Five pairs left.
+
+---
+
 ## 2026-08-30 — the third operation exists: carry the section, then redirect. 1 of 7 done
 
 The seven pairs left after the 9 redirects are complementary, not superset/subset, and both existing
