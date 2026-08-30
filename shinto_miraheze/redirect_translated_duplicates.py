@@ -188,6 +188,14 @@ PAIR_HEADINGS = {
     # one: 那須国造 carries Base (943b) and Territory (1,993b) as separate sections,
     # and merging the two classes would silently lose its Territory.
     "明石国造": {"base": "territory"},
+    # One temple, named twice. The source's ``Clan Temple`` (63b) is "the clan's temple
+    # is Miroku-ji"; the target's ``Associated Temple`` (173b) is the same sentence about
+    # the same ja target (弥勒寺跡 (関市)), carrying a QID the source lacks. Read
+    # 2026-08-30. This does NOT go in ``CLASSES``: "clan temple" and "associated temple"
+    # are how these two pages happen to render one heading, not a concept class the map
+    # should start matching on pages nobody has looked at.
+    "牟義都国造": {"clan temple": "clan temple",
+                "associated temple": "clan temple"},
 }
 
 CLASS_OF = collections.defaultdict(set)

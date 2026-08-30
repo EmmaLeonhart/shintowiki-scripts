@@ -121,6 +121,28 @@ CARRIES = [
         "target": "Nasu no Kuni no Miyatsuko",
         "sections": [("Territory", "Shrine")],
     },
+    {
+        # 牟義都国造 6,190b / Mukizu no Kuni no Miyatsuko 6,427b, both read 2026-08-30 —
+        # the closest-matched pair in the set, 1.04x before the carry. Every source
+        # section has its counterpart (Writing/Terminology, Base/Headquarters,
+        # Tutelary Shrine/Shrine, People/Notable Figures, and Clan Temple/Associated
+        # Temple via this pair's new ``PAIR_HEADINGS`` entry) except one.
+        #
+        # ``Descendants`` (374b — Mugetsu Hiro, an Asuka-period gōzoku, possibly a toneri
+        # of Prince Ōama, active in the Jinshin War) has nothing on the target, which
+        # stops at ``Notable Figures``. It anchors before ``See Also``, putting it where
+        # the source has it: straight after the people section.
+        #
+        # Two things checked rather than assumed, both of which could have gone the other
+        # way. The source's ``Tombs`` is an EMPTY wrapper (0b) under Tutelary Shrine, so
+        # it carries nothing and its absence loses nothing. And ``See also`` really is
+        # apparatus here — one link to the kuni-no-miyatsuko list, which the target
+        # already has under ``See Also`` with a QID. Compare 建稲種命, where the same
+        # heading held 2,274b of narrative.
+        "source": "牟義都国造",
+        "target": "Mukizu no Kuni no Miyatsuko",
+        "sections": [("Descendants", "See Also")],
+    },
 ]
 
 REDIRECT_RE = re.compile(r"^\s*#redirect\b", re.IGNORECASE)
