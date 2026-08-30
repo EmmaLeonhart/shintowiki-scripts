@@ -207,6 +207,17 @@ PAIR_HEADINGS = {
     # Kamakura appointment. Neither belongs in ``CLASSES``.
     "尾張氏": {"the owari clan from the perspective of the kinai regime": "kinai regime view",
              "owari clan (inaba province)": "inaba branch"},
+    # The five subsections of 健磐龍命's ``Historical records``, each named for the text it
+    # summarises. They are titles of sources, not concept classes — widening ``CLASSES``
+    # with "engishiki" would start matching any page that happens to have a section named
+    # after the same work. Each is keyed to itself so the gate recognises it on both
+    # pages; ``Historical records`` was carried wholesale on 2026-08-30, so the target has
+    # all five under the same names.
+    "健磐龍命": {"nihon shoki": "nihon shoki",
+              "fudoki of higo province": "fudoki of higo province",
+              "engishiki": "engishiki",
+              "kokuzo hongi": "kokuzo hongi",
+              "traditions of aso": "traditions of aso"},
 }
 
 CLASS_OF = collections.defaultdict(set)
