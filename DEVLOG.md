@@ -4,6 +4,54 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — 健磐龍命: the union works, and PREVIEWING the merge caught 30 errors the wikitext hid
+
+Fifth pair, first where the SOURCE is the fuller page (19,798b vs 13,510b), and the one the queue
+named as the case against lowering `merge_duplicate_pairs.py`'s 2.0x gate. Three content sections
+had no counterpart — Genealogy (4,044b), Historical records (9,471b, with its Nihon Shoki, Fudoki of
+Higo Province, Engishiki, Kokuzo Hongi and Traditions of Aso subsections) and Sites of legend (501b)
+— while the target held Mythological background and Worship. A body-replacing merge at 1.47x would
+have destroyed the second set. Both halves are now on one page: 13,510b → **31,572b**, redirected at
+1.59x.
+
+**The citations were the actual work, and my own check was not enough.**
+
+An audit found the source's named refs defined in four different places: the lead prose, the content
+sections, the apparatus `=== Sources ===`, and the `{{Infobox person}}`. Carrying content alone
+would strand gunshi/keizu/mura/ihon, and stripping the infobox — which the lead carry does — also
+drops ruien/shiki/jingu. `kou` was used twice and **defined nowhere on the source**: a pre-existing
+break, and the source's only rendered cite error. Its work sits in the bibliography as
+`{{Cite book|author=Kurita Hiroshi|title=Kokuzo Hongi Kō|…|ref=kou}}`, so `ref_defs` transcribes
+that entry rather than carrying a broken citation onto a live page.
+
+**Then I rendered the merged text through `action=parse` before saving it, and the renderer
+disagreed with me.** The wikitext check said clean; the parser reported **30 cite errors**, three of
+them on the TARGET's own references. The cause was placement: definitions gathered into a
+`{{Reflist|refs=}}` block render a reference list at that point, so every definition above its uses
+reports "not used in prior text" and every use below reports "no text was provided". Defining at
+first use needs no second list. That left exactly one error, subtler still — the `ruien` definition
+had attached inside a `{{Refnest|group="note"|…}}`, which defines it in the note group only. It
+renders correctly on the source because the infobox carries a second top-level definition, the one
+the lead carry strips. Definitions now go to the first use at template depth 0.
+
+**Verified, not assumed: target 0 cite errors before, merged page 0 after, and 0 on the live page
+after saving.** Every one of those three numbers came from the parser.
+
+Two smaller additions the pair forced. A section spec may take a third element RENAMING it as it
+lands — both pages called their bibliography `References` and they are different lists, and the
+carried refs' `[[#gunshi|…]]` anchors point into the source's. And a `PAIR_HEADINGS` entry keys the
+five subsections named after the texts they summarise; "engishiki" is a source title, not a concept
+class, and putting it in `CLASSES` would match any page with a section named after the same work.
+
+Carry [33336629496](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33336629496),
+redirect [33336749698](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33336749698),
+0 errors on both. 6 tests added (25 in the carry file), 1,725 across the full CI selection.
+
+**Two pairs left.** 建比良鳥命 is the odd one: its TARGET lead is 4,655b against the source's 1,165b,
+the reverse of every pair so far.
+
+---
+
 ## 2026-08-30 — 尾張氏 done, and two defects the pair exposed: reversed insertion, and the LEAD
 
 Fourth pair through the carry operation, and the one that found the most. Both were live before this
