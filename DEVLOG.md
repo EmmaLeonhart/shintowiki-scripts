@@ -4,6 +4,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-31 — Weekly Open-questions sweep: nothing open, block deleted
+
+The `<!-- weekly-oq-sweep --> 2026-08-31` item auto-added by
+`.github/workflows/weekly-open-questions-sweep.yml` is closed with no queue changes, because the
+page it sweeps is empty.
+
+**Confirmed rather than assumed.** The item says the live wiki page is authoritative and the repo
+copy must not be trusted blind. It did not need a manual pull: the `chore(git-synced): sync Git
+synced pages` job ran today at 15:02 UTC (`df3a1442`) and did **not** touch
+`git_synced/Open questions.wiki`, so the synced copy provably matches the live page. The working
+copy is also identical to HEAD, so there is no local drift. Last real content change was Emma's own
+`ef664770` on 2026-08-24, which emptied it.
+
+All three sections are empty — Open questions "(nothing open)", the wiki-based queue "(empty)", and
+Notes. Nothing to decompose into the queue, nothing resolved to prune from the page. Block deleted
+per its own instruction.
+
+**Also corrected in the same commit: the pinned tail's cron IDs were dead again.** It recorded the
+2026-08-30 session's four (`7a2f68a3`, `7973144f`, `ec126e03`, `f7ed4ac5`). Sessions are local and
+these die with them. This is the **third** stale set in this file — and the note sitting beside them
+already described that exact cost, having been written about the *previous* stale set, then went
+stale itself. Replaced with the live IDs and a line saying to trust `CronList` over the file. The
+`:15` also changed ID mid-session (`8ba189b9` → `6e16d378`) because its prompt still carried a rule
+Emma revoked on 2026-08-31.
+
 ## 2026-08-30 — I queued six edits that did not exist; the run proved it and cost nothing
 
 `dedupe_duplicate_qids.py --plan-only` reported *"6 total auto-picks, 6 PROVEN (can actually edit),
