@@ -7,6 +7,9 @@ lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in th
 that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
 from `ATOMIC_FILES`; they are not queue items.
 
+- **Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-08-31)**
+  Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
