@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-08-30 — I queued six edits that did not exist; the run proved it and cost nothing
+
+`dedupe_duplicate_qids.py --plan-only` reported *"6 total auto-picks, 6 PROVEN (can actually edit),
+6 pending (not yet done)"*, and I read that as six outstanding wiki edits sitting in nobody's scope.
+It was not. **`pending` is measured against the script's own state file, not against the wiki.**
+
+The applied run made **0 edits**. All six printed `skipped:src already redirect` — Q10888904,
+Q11465311, Q11486691, Q11570306, Q11642909, Q119380336, which are 健磐龍命, 尾張氏, 建稲種命,
+牟義都国造, 那須国造 and 神大根王: the six pairs redirected earlier the same day by
+`redirect_translated_duplicates.py`. Dedupe had no way to know that, because it records what *it*
+has moved. It then wrote its state file, and the next `--plan-only` reported **0 pending**.
+
+Two things worth keeping, one about the tool and one about me.
+
+**About the tool:** a plan's counters describe the plan's bookkeeping. To ask what is outstanding on
+the wiki, read the wiki. And re-run `--plan-only` after `git pull` — the state file is committed by
+CI, so a checkout one commit behind reports the pre-run numbers and looks unchanged. That is exactly
+what happened here: the first re-measure still said 6 because `81cc2d37` had not been pulled. Written
+into `CLAUDE.md`.
+
+**About the process:** the previous tick found this incidentally, recorded it as a queue item with
+the measurement rather than dispatching on the spot, and said so. That was the right call and it did
+not save me from the misreading — it only meant the misreading was written down where it could be
+checked, and the check was one dispatch. The dispatch was safe because the script re-verifies every
+move against live pages before editing, which is the design working rather than luck.
+
+Net: 0 wiki edits, one state file advanced, one wrong belief corrected, and a `⛔` note in `CLAUDE.md`
+so the next reader does not repeat it. shintowiki state commit `81cc2d37`, run
+[33347164828](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/33347164828).
+
+---
+
 ## 2026-08-30 — queue hygiene: three spent things removed, and the durable rule moved to CLAUDE.md
 
 No pairs left to work, so this tick was the flow's own discipline rather than new work. `queue.md`

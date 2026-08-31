@@ -532,6 +532,25 @@ heuristic left per-page sweeps like `fix_template_noinclude.py` in
 legacy form while their state files kept growing. Use the
 sweep-vs-not-sweep distinction instead.
 
+## ⛔ "PENDING" IN A PLAN MEANS "not in MY state file" — it is not a count of outstanding wiki edits
+
+`dedupe_duplicate_qids.py --plan-only` reports e.g. *"6 total auto-picks, 6 PROVEN, 6 pending (not
+yet done)"*. **`pending` is measured against that script's own `.state` file, not against the wiki.**
+When another script does the work — `redirect_translated_duplicates.py` redirecting a source, say —
+the pair stays "pending" to dedupe until dedupe itself runs, sees the redirect, and records it.
+
+Measured 2026-08-30, the whole round trip: a session read "6 pending" as six outstanding edits and
+queued a dispatch. The run made **0 edits** — all six printed `skipped:src already redirect`, because
+they were the six pairs redirected earlier that day. It then wrote its state file, and the next
+`--plan-only` reported **0 pending**. Nothing was wrong on the wiki at any point.
+
+- **A plan's counters describe the plan's bookkeeping.** To ask what is outstanding *on the wiki*,
+  read the wiki — the per-item reasons in the applied run, or the live pages.
+- **Re-run `--plan-only` after `git pull`.** The state file is committed by CI (`commit_state.sh`),
+  so a local checkout that is one commit behind reports the pre-run numbers and looks unchanged.
+- The dispatch was harmless because the script re-checks every move against live pages before
+  editing. That is the design working; it is not a reason to skip the check.
+
 ## State files
 
 * **Orchestrator state** lives in `shinto_miraheze/orchestrators/` —
