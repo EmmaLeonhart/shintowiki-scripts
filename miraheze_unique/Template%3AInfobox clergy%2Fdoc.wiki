@@ -94,6 +94,5 @@ The '''child''' parameter is used when embedding this infobox into another.
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
 [[Category:Templates not transcluded in mainspace]]
 </noinclude>

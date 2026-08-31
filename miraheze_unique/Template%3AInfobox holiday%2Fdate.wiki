@@ -137,5 +137,4 @@ This subtemplate is used by {{tl|infobox holiday}} to generate the date for holi
 [[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]]
 [[Category:infobox templates]]
-[[Category:Templates missing wikidata]]
 </noinclude>

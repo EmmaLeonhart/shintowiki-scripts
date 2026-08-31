@@ -767,7 +767,6 @@ The following supplemental blocks may be copied into the template above as neede
 
 }}<noinclude>
 [[Category:WikiProject Military history template instructions|Military installation infobox]]
-[[Category:Templates missing wikidata]]
 </noinclude><includeonly>{{Sandbox other||
 {{#ifeq:{{{noheader|}}}|yes||
 
