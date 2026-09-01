@@ -38,16 +38,18 @@
 [[Category:Templates transcluded in mainspace]]
 </noinclude>
 
-
+[[Category:Templates fixed with noinclude]]
+</noinclude>
+<noinclude>
+{{wikidata link|Q99292216|en|Template:Atsuta Faith|fr|Modèle:Palette Foi Atsuta|ja|Template:熱田神宮45社|simple|Template:Atsuta Faith|check_date=2026-09-01}}
+[[Category:Templates fixed with noinclude]]
+</noinclude>
+<noinclude>
 [[Category:Atsuta Shrine]]
 [[Category:Owari clan]]
 [[Category:Shinto cult templates]]
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Yamato Takeru Legend]]
-[[Category:Templates fixed with noinclude]]
-</noinclude>
-<noinclude>
-{{wikidata link|Q99292216}}
 [[Category:Templates fixed with noinclude]]
 </noinclude>

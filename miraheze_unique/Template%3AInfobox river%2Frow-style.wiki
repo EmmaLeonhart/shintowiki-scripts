@@ -1,6 +1,5 @@
 <noinclude>{{pp-template|small=yes}}
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-</noinclude>padding: 0 0.6em 0.2em 0.6em;line-height: 1.2em;
+[[Category:Independently git synced pages]]</noinclude>padding: 0 0.6em 0.2em 0.6em;line-height: 1.2em;
 <noinclude>
 [[Category:Independently git synced pages]][[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]

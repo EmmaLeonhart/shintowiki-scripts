@@ -15,8 +15,7 @@
 | data5  = {{{notable_ideas|}}}
 
 }}{{#invoke:Check for unknown parameters|check|unknown={{main other|}}|preview=Page using [[Template:Infobox theological work]] with unknown parameter "_VALUE_"|ignoreblank=y| era | language | main_interests | notable_ideas | tradition_movement }}<noinclude>{{documentation}}
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-</noinclude>
+[[Category:Independently git synced pages]]</noinclude>
 <noinclude>
 [[Category:Independently git synced pages]][[Category:Pages using infobox theological work with unknown parameters|_VALUE_{{PAGENAME}}]]
 [[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]

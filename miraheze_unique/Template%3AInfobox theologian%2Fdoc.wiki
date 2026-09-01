@@ -166,5 +166,4 @@ This template accepts all parameters that {{tl|Infobox person}} does, see [[Temp
 [[Category:Independently git synced pages]][[Category:Templates that add a tracking category|{{PAGENAME}}]]
 [[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-</noinclude>
+[[Category:Independently git synced pages]]</noinclude>

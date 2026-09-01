@@ -1,6 +1,5 @@
 <noinclude>{{pp-template|small=yes}}
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-</noinclude>{{#if:{{{free|}}}
+[[Category:Independently git synced pages]]</noinclude>{{#if:{{{free|}}}
  |{{{free}}}{{#if:{{isnumeric|{{{free}}}}}|&nbsp;{{error|units?}}}}
  |{{#if:{{{met|}}}
   |{{convert|{{{met}}}|{{{met_unit|km}}}|abbr=on}}

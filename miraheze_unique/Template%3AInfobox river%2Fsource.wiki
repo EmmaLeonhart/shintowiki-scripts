@@ -1,6 +1,5 @@
 <noinclude>{{pp-template|small=yes}}
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-</noinclude>{{#if:{{{source|}}}{{{loc|}}}{{{coord|}}}{{{len|}}}{{{elev|}}}|{{infobox
+[[Category:Independently git synced pages]]</noinclude>{{#if:{{{source|}}}{{{loc|}}}{{{coord|}}}{{{len|}}}{{{elev|}}}|{{infobox
 
 | child     = yes
 

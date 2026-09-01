@@ -1,23 +1,15 @@
-<!-- shrine-disambig-page: refresh wikidata list -->
-<!--interwikis from wikidata-->[[ja:高田熊野神社]]
-<!--interwikis from wikidata-->[[ja:高田熊野神社]]
-<!--interwikis from wikidata-->[[ja:高田熊野神社]]
 
-'''Takada Kumano Shrine''' (高田熊野神社, Takada Kumano Jinja) refers to {{ill|Shinto shrine|en|Shinto shrine|qid=Q845945|lt=Shinto shrine|1=Shinto shrine}} named after [[:en:Kumano shrines|Kumano shrines]].
+'''Takada Kumano Shrine''' (高田熊野神社, Takada Kumano Jinja) refers to {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} named after [[:en:Kumano shrines|Kumano shrines]].
 
 {{disambiguation}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
-* {{ill|Takada Kumano Shrine (Chigasaki) (Q11672169)|lt=Takada Kumano Shrine (Chigasaki)|qid=Q11672169}} — Chigasaki
-<!-- END: auto-generated Wikidata shrine list -->
+* {{ill|Takada Kumano Shrine (Chigasaki) (Q11672169)|ja|高田熊野神社 (茅ヶ崎市)|qid=Q11672169|lt=Takada Kumano Shrine (Chigasaki)}} — Chigasaki
 
 {{translated page|ja|高田熊野神社|version=39622167|comment=Imported full ja history}}
 
-<!--note do not remove this category during translation--><!--Takada Kumano Shrine--><!--Takada Kumano Shrine-->
-<!--jawiki derived wikidata interwikis-->
-{{wikidata link|Q11672170|ja|高田熊野神社}}
+{{wikidata link|Q11672170|ja|高田熊野神社|grok=none|check_date=2026-09-01}}
 [[Category:Shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]

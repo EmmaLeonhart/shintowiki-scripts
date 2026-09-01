@@ -282,5 +282,4 @@ To use this template, copy the wikitext below and paste it in the "Veneration" s
 [[Category:Independently git synced pages]][[Category:Templates that add a tracking category|{{PAGENAME}}]]
 [[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
 [[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
-</noinclude>
+[[Category:Independently git synced pages]]</noinclude>

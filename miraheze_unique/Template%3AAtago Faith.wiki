@@ -69,7 +69,7 @@ https://ja.wikipedia.org/wiki/%E9%B7%B2%E5%B0%BE%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A
 
 }}
 
-{{wikidata link|Q136772090|ja|Template:愛宕信仰|ja|%E9%B7%B2%E5%B0%BE%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE|fr|Modèle:Palette Foi Atago|fr|Palette Foi Atago|ja|愛宕信仰|simple|Washio Atago Shrine}}
+{{wikidata link|Q136772090|fr|Modèle:Palette Foi Atago|simple|Template:Atago Faith|check_date=2026-09-01}}
 [[Category:11-Template--->[[Category:11-Atago Faith-->[[Category:Atago Faith]]
 [[Category:Atago Faith]]
 [[Category:Atago shrines]]
@@ -78,6 +78,7 @@ https://ja.wikipedia.org/wiki/%E9%B7%B2%E5%B0%BE%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
 <noinclude>
 [[Category:Pages with interwikis with duplicate languages]]
