@@ -40,8 +40,9 @@ import mwclient
 from wiki_login import login_with_retry
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from shinto_miraheze.sync_revision_aware import (
-    head_commit, resolve_conflict, LOWERCASE_COLLISION_TITLES,
+from shinto_miraheze.sync_revision_aware import head_commit, resolve_conflict
+from shinto_miraheze.title_filename import (  # noqa: E402
+    assign_filenames, filename_to_title, title_to_filename,
 )
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
@@ -61,7 +62,6 @@ WIKI_DIR = REPO_ROOT / "fandom_unique"
 STATE_FILE = SCRIPT_DIR / "sync_fandom_unique_pages.state"
 
 
-_FORBIDDEN = set('<>:"/\\|?*')
 
 CAT_RE = re.compile(
     r'\[\[\s*Category\s*:\s*Independently git synced pages\s*\]\]',
@@ -69,19 +69,8 @@ CAT_RE = re.compile(
 )
 
 
-def title_to_filename(title: str) -> str:
-    out = []
-    for c in title:
-        if c in _FORBIDDEN or c == "%":
-            out.append(f"%{ord(c):02X}")
-        else:
-            out.append(c)
-    return "".join(out) + ".wiki"
 
 
-def filename_to_title(filename: str) -> str:
-    name = filename[:-5] if filename.endswith(".wiki") else filename
-    return urllib.parse.unquote(name)
 
 
 def sha1_text(text: str) -> str:
@@ -243,6 +232,14 @@ def main():
         wiki_pages[title] = (revid, text)
     print(f"Wiki:  {len(wiki_pages)} pages in category")
 
+    # Filenames are assigned for the WHOLE title set at once, not per title.
+    # Two wiki titles differing only in case (Template:Infobox Historic Site vs
+    # ...historic site) map to one filename on a case-insensitive filesystem,
+    # which jams the checkout and deadlocks git pull --rebase. assign_filenames
+    # case-escapes only within a colliding group, so every other page keeps the
+    # filename it has always had. See shinto_miraheze/title_filename.py.
+    filenames = assign_filenames(wiki_pages.keys())
+
     local_files = {}
     for p in WIKI_DIR.iterdir():
         if p.is_file() and p.suffix == ".wiki":
@@ -253,15 +250,7 @@ def main():
     edits_performed = 0
 
     for title, (wiki_revid, wiki_text) in wiki_pages.items():
-        if title in LOWERCASE_COLLISION_TITLES:
-            # Case-collision lowercase twin being deleted on-wiki by
-            # delete_lowercase_template_collisions.py. Skip entirely so we
-            # never recreate it (the deleter would fight us) and never
-            # decategorize the wiki page (keeps the deleter's byte-identity
-            # gate intact). See LOWERCASE_COLLISION_TITLES.
-            skipped += 1
-            continue
-        local_path = WIKI_DIR / title_to_filename(title)
+        local_path = WIKI_DIR / filenames[title]
         entry = state.get(title) or {}
         base_revid = entry.get("revid")
         base_sha = entry.get("sha")
@@ -396,8 +385,6 @@ def main():
     # local content if it carries the category tag.
     orphans = sorted(set(local_files) - set(wiki_pages))
     for title in orphans:
-        if title in LOWERCASE_COLLISION_TITLES:
-            continue  # see LOWERCASE_COLLISION_TITLES — never recreate
         local_path = local_files[title]
         try:
             local_text = local_path.read_text(encoding="utf-8")

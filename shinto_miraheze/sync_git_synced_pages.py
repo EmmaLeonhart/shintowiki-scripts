@@ -57,6 +57,7 @@ from wiki_login import login_with_retry
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shinto_miraheze.sync_revision_aware import head_commit, resolve_conflict
+from shinto_miraheze.title_filename import title_to_filename, filename_to_title  # noqa: E402
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -76,7 +77,6 @@ WIKI_DIR = REPO_ROOT / "git_synced"
 STATE_FILE = SCRIPT_DIR / "sync_git_synced_pages.state"
 
 
-_FORBIDDEN = set('<>:"/\\|?*')
 
 CAT_RE = re.compile(
     r'\[\[\s*Category\s*:\s*Git synced pages\s*\]\]',
@@ -85,19 +85,8 @@ CAT_RE = re.compile(
 
 
 # ─── FILENAME MAPPING ──────────────────────────────────────
-def title_to_filename(title: str) -> str:
-    out = []
-    for c in title:
-        if c in _FORBIDDEN or c == "%":
-            out.append(f"%{ord(c):02X}")
-        else:
-            out.append(c)
-    return "".join(out) + ".wiki"
 
 
-def filename_to_title(filename: str) -> str:
-    name = filename[:-5] if filename.endswith(".wiki") else filename
-    return urllib.parse.unquote(name)
 
 
 # ─── HELPERS ───────────────────────────────────────────────

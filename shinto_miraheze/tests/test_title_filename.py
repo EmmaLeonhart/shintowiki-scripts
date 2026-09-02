@@ -10,10 +10,12 @@ That older test still guards the nine copied definitions and stays until the
 call sites are migrated.
 """
 
-import os
-import sys
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
 
 from shinto_miraheze.title_filename import (  # noqa: E402
     assign_filenames,
@@ -109,24 +111,14 @@ def test_percent_escaped_first():
     assert title_to_filename_case_escaped("100%").startswith("100%25")
 
 
-def test_agrees_with_the_nine_existing_copies():
-    # The historical mapping must not shift: the corpus on disk was written by
-    # the copied definitions, so any divergence here silently re-maps pages.
-    here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    src = open(os.path.join(here, "sync_git_synced_pages.py"), encoding="utf-8").read()
-    ns = {}
-    exec("import urllib.parse\n_FORBIDDEN = set('<>:\"/\\\\|?*')\n" + _extract_funcs(src), ns)
-    for t in TITLES + PAIR:
-        assert ns["title_to_filename"](t) == title_to_filename(t), t
-        assert ns["filename_to_title"](title_to_filename(t)) == filename_to_title(title_to_filename(t))
-
-
-def _extract_funcs(src):
-    import re
-    pat = re.compile(
-        r"^def (?:title_to_filename|filename_to_title)\(.*?(?=\n(?:def |class |[^\s#])|\Z)",
-        re.MULTILINE | re.DOTALL,
-    )
-    funcs = pat.findall(src)
-    assert len(funcs) == 2, f"expected 2 mapping funcs, found {len(funcs)}"
-    return "\n".join(funcs)
+def test_the_historical_mapping_is_unchanged():
+    """The corpus on disk was written by the old copied definitions, so the
+    plain mapping must not shift -- any divergence silently re-maps ~4,000
+    pages. These expectations are hardcoded rather than read back out of a
+    script, because after the 2026-09-01 migration there is no other copy left
+    to compare against."""
+    assert title_to_filename("Kehi Jingu") == "Kehi Jingu.wiki"
+    assert title_to_filename("Template:Interlanguage link") == "Template%3AInterlanguage link.wiki"
+    assert title_to_filename("a:b/c?d") == "a%3Ab%2Fc%3Fd.wiki"
+    assert title_to_filename("100%") == "100%25.wiki"
+    assert title_to_filename('A<b>"c*d|e?f') == 'A%3Cb%3E%22c%2Ad%7Ce%3Ff.wiki'

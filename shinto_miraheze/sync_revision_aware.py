@@ -32,34 +32,20 @@ from pathlib import Path
 from typing import Optional
 
 
-# Lowercase case-collision template twins (wiki titles) that
-# delete_lowercase_template_collisions.py is removing on-wiki. The
-# unique-pages sync scripts (sync_miraheze_unique_pages.py,
-# sync_fandom_unique_pages.py) MUST skip these titles entirely: otherwise,
-# once the deleter removes the lowercase wiki page, the sync's orphan/PULL
-# logic recreates it (the local twin still carries the gating category),
-# and the deleter + sync ping-pong forever. Skipping also keeps the sync
-# from decategorizing the wiki page, which preserves the deleter's
-# "byte-identical to canonical twin" precondition. The matching local
-# .wiki files were removed from the repo in the same change. See the
-# deleter's TEMPLATE_PAIRS, docs/case_collision_report.md, and DEVLOG
-# 2026-05-28. Includes the 10 base templates plus the 3 noble sub-variants
-# (family / (Japan) / /doc) that also collide.
-LOWERCASE_COLLISION_TITLES = {
-    "Template:Infobox chinese",
-    "Template:Infobox film",
-    "Template:Infobox historic site",
-    "Template:Infobox holiday",
-    "Template:Infobox kofun",
-    "Template:Infobox mountain",
-    "Template:Infobox museum",
-    "Template:Infobox noble",
-    "Template:Infobox noble (Japan)",
-    "Template:Infobox noble family",
-    "Template:Infobox noble/doc",
-    "Template:Infobox officeholder",
-    "Template:Infobox organization",
-}
+# LOWERCASE_COLLISION_TITLES was REMOVED 2026-09-01.
+#
+# It listed 13 lowercase Template:Infobox twins that both unique-pages sync
+# scripts skipped entirely, so that delete_lowercase_template_collisions.py
+# could remove them on-wiki without the sync recreating them. Emma ruled on
+# 2026-08-31 that those titles "are supposed to diverge" -- they are distinct
+# pages, not duplicates -- so the deleter is retired (script deleted, its
+# wiki-cleanup.yml step removed) and the skip with it. Those 13 pages are
+# mirrored again like any other.
+#
+# The collision that skip existed to dodge is handled properly now:
+# shinto_miraheze/title_filename.py assigns filenames for a whole title set at
+# once and case-escapes only within a colliding group, so both twins can exist
+# on a case-insensitive filesystem. Do not reintroduce a skip list.
 
 
 def _iso_to_epoch(ts: Optional[str]) -> Optional[float]:

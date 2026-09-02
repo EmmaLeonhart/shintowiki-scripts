@@ -23,6 +23,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.title_filename import title_to_filename  # noqa: E402
 import io
 import os
 import sys
@@ -38,12 +39,8 @@ UA = USER_AGENT
 CATEGORY = "Pages with deleted QID in ill template"
 TAG = "[[Category:Git synced pages]]"
 # Must match sync_git_synced_pages.title_to_filename so the sync maps file↔title.
-_FORBIDDEN = set('<>:"/\\|?*')
 
 
-def title_to_filename(title):
-    return "".join(f"%{ord(c):02X}" if (c in _FORBIDDEN or c == "%") else c
-                   for c in title) + ".wiki"
 NOTE = ("<!-- [git-synced 2026-07-06] Pulled for deleted-QID ill resolution: fix "
         "sub-topic {{ill|…|qid=DELETED_QID}} templates (→ section links where they are "
         "really sections, recreate real entities by hand, relink duplicates). Remove "

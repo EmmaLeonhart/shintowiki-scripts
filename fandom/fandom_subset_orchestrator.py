@@ -127,24 +127,12 @@ if _uar not in _usys.path:
 # version was wrong -- which is the quiet half of the same bug: a stale literal drifts
 # silently while the canonical constant moves.
 from shinto_miraheze.user_agent import USER_AGENT
-
-_FORBIDDEN = set('<>:"/\\|?*')
-
-
-def title_to_filename(title: str) -> str:
-    """Match the encoding used by sync_fandom_unique_pages.py."""
-    out = []
-    for c in title:
-        if c in _FORBIDDEN or c == "%":
-            out.append(f"%{ord(c):02X}")
-        else:
-            out.append(c)
-    return "".join(out) + ".wiki"
+from shinto_miraheze.title_filename import title_to_filename, filename_to_title  # noqa: E402
 
 
-def filename_to_title(filename: str) -> str:
-    name = filename[:-5] if filename.endswith(".wiki") else filename
-    return urllib.parse.unquote(name)
+
+
+
 
 
 def load_protected_titles() -> set:

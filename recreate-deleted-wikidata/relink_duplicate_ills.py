@@ -12,6 +12,14 @@ ja langlink or English label) and rewrite ``qid=DELETED_QID`` → ``qid=<live QI
 dropping the now-redundant ``dd=`` provenance param. The git_synced sync (repo-wins)
 pushes the edit to the wiki. Dry-run by default; ``--apply`` writes the files.
 """
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.title_filename import title_to_filename  # noqa: E402
+
 import argparse
 import glob
 import io
@@ -24,13 +32,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 ITEMS = os.path.join(HERE, "items")
 GIT_SYNCED = os.path.join(REPO, "git_synced")
-_FORBIDDEN = set('<>:"/\\|?*')
 _ILL = re.compile(r"\{\{\s*ill\s*\|([^{}]*)\}\}", re.IGNORECASE)
 
 
-def title_to_filename(title):
-    return "".join(f"%{ord(c):02X}" if (c in _FORBIDDEN or c == "%") else c
-                   for c in title) + ".wiki"
 
 
 def targets():

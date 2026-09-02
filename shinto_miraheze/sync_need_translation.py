@@ -50,6 +50,7 @@ from wiki_login import login_with_retry
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shinto_miraheze.sync_revision_aware import head_commit, resolve_conflict
+from shinto_miraheze.title_filename import title_to_filename, filename_to_title  # noqa: E402
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
@@ -69,25 +70,13 @@ STATE_FILE = SCRIPT_DIR / "sync_need_translation.state"
 
 
 # Windows-forbidden chars. '%' is escaped as well so the mapping is reversible.
-_FORBIDDEN = set('<>:"/\\|?*')
 
 CAT_RE = re.compile(r'\[\[\s*Category\s*:\s*Need translation\s*\]\]', re.IGNORECASE)
 
 
 # ─── FILENAME MAPPING ──────────────────────────────────────
-def title_to_filename(title: str) -> str:
-    out = []
-    for c in title:
-        if c in _FORBIDDEN or c == "%":
-            out.append(f"%{ord(c):02X}")
-        else:
-            out.append(c)
-    return "".join(out) + ".wiki"
 
 
-def filename_to_title(filename: str) -> str:
-    name = filename[:-5] if filename.endswith(".wiki") else filename
-    return urllib.parse.unquote(name)
 
 
 # ─── HELPERS ───────────────────────────────────────────────

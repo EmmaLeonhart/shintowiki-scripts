@@ -31,6 +31,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.user_agent import USER_AGENT
+from shinto_miraheze.title_filename import title_to_filename  # noqa: E402
 import argparse
 import io
 import os
@@ -82,8 +83,6 @@ def retag(text: str) -> str:
     return text
 
 
-def title_to_filename(title: str) -> str:
-    return title.replace(":", "%3A").replace("/", "%2F") + ".wiki"
 
 
 def _get_json(params: dict, post: bool = False):

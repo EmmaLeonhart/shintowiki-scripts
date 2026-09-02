@@ -496,19 +496,17 @@ jobs:
           shinto_miraheze/run_step.sh "Cleanup Loop: remove_crud_categories" \
             python3 shinto_miraheze/remove_crud_categories.py --max-edits "$WIKI_EDIT_LIMIT" --run-tag "${RUN_TAG}"
 
-      # Auto-fire delete_lowercase_template_collisions on every cycle. The
-      # script has per-template safety gates (must have zero transclusions
-      # + canonical twin must exist + content byte-identical or #REDIRECT)
-      # so it's a no-op for any template still in use. As the
-      # canonicalize_template_case orchestrator op drains references over
-      # time, individual templates clear and get deleted naturally — no
-      # manual coordination needed. First confirmed clear: Template:Infobox
-      # noble on miraheze (2026-05-28).
-      - name: "Cleanup: delete_lowercase_template_collisions"
-        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
-        run: |
-          shinto_miraheze/run_step.sh "Cleanup Loop: delete_lowercase_template_collisions" \
-            python3 shinto_miraheze/delete_lowercase_template_collisions.py --apply --max-deletes 50 --run-tag "${RUN_TAG}"
+      # ⛔ REMOVED 2026-09-01 — delete_lowercase_template_collisions is RETIRED.
+      # It auto-fired every cycle with --apply --max-deletes 50, deleting the
+      # lowercase Template:Infobox twins from BOTH wikis as canonicalize_template_case
+      # drained their transclusions to zero. Emma ruled on 2026-08-31 that those titles
+      # "are supposed to diverge" — distinct pages, not duplicates — so this step was
+      # destroying real pages on a decision that no longer holds. It had already taken
+      # at least one (Template:Infobox noble on miraheze, 2026-05-28). The script is
+      # deleted; git history retains it. The repo-side collision is handled instead by
+      # shinto_miraheze/title_filename.py, which case-escapes only within a colliding
+      # group so both twins coexist on a case-insensitive filesystem.
+      # DO NOT REINSTATE THIS STEP.
 
       # Kludge: Template:GaiadDate keeps getting swept up by deletion passes
       # but must not be deleted. Undelete it after the cleanup loop runs so

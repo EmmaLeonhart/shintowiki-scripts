@@ -26,6 +26,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+from shinto_miraheze.title_filename import title_to_filename  # noqa: E402
 import argparse
 import glob
 import io
@@ -48,7 +49,6 @@ THROTTLE = 0.2
 # this floor is one of those fresh creations (deleted-item QIDs are Q135xxxxxx, far
 # below). Used ONLY to disambiguate when several items share the same ja label.
 FRESH_MIN = 140_440_000
-_FORBIDDEN = set('<>:"/\\|?*')
 _ILL = re.compile(r"\{\{\s*ill\s*\|([^{}]*)\}\}", re.IGNORECASE)
 
 
@@ -56,9 +56,6 @@ def _has_cjk(s):
     return any("぀" <= c <= "ヿ" or "㐀" <= c <= "鿿" or "豈" <= c <= "﫿" for c in s)
 
 
-def title_to_filename(title):
-    return "".join(f"%{ord(c):02X}" if (c in _FORBIDDEN or c == "%") else c
-                   for c in title) + ".wiki"
 
 
 def relink_ill(inner, qid):
