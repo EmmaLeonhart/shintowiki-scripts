@@ -883,8 +883,9 @@
 }}}}
 <noinclude>
 
-{{wikidata link|Q110066542|ja|Template:近代社格制度}}
+{{wikidata link|Q110066542|ja|Template:近代社格制度|zh|Template:近代社格制度|check_date=2026-09-02}}
 [[Category:Shinto templates]]
 [[Category:Independently git synced pages]]
 [[Category:Templates fixed with noinclude]]
+[[Category:Templates transcluded in mainspace]]
 </noinclude>
