@@ -1,7 +1,7 @@
-'''Reiyosaki Shrine''' (零羊崎神社, pronounced *Hitsujisaki Jinja* or *Reiyosaki Jinja*) refers to two Shinto shrines located in {{ill|Ishinomaki|en|Ishinomaki|qid=Q270814|lt=Ishinomaki}}, {{ill|Miyagi Prefecture|en|Miyagi Prefecture|qid=Q47896|lt=Miyagi Prefecture}}. Both are considered candidates for the {{ill|Myōjin Taisha|ja|名神大社|fr|Myōjin Taisha|zh|名神大社|12=simple|13=User:Immanuelle/Myoujin Taisha|comment=changed title based on wikidata|qid=Q9610964}} listed as "Reiyosaki Shrine" in the {{ill|Engishiki Jinmyōchō|ja|延喜式神名帳}}.
+'''Reiyosaki Shrine''' (零羊崎神社, pronounced *Hitsujisaki Jinja* or *Reiyosaki Jinja*) refers to two Shinto shrines located in [[Ishinomaki]], [[Miyagi Prefecture]]. Both are considered candidates for the [[Myōjin Taisha]] listed as "Reiyosaki Shrine" in the [[Engishiki Jinmyōchō]].
 
-* {{ill|Hitsujisaki Shrine|ja|零羊崎神社 (石巻市湊)|12=simple|13=User:Immanuelle/Reiyosaki Shrine (Ishinomaki Minato)|comment=changed title based on wikidata|qid=Q11660144}} (*Hitsujisaki Jinja*) - Located in Minato, Ishinomaki City, Miyagi Prefecture. Formerly designated as a {{ill|Ken-sha|ja|県社|qid=Q90139226}}{{efn|Ken-sha|WD=Q90139226|lt=Ken-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/village shrine|qq=ja_comment|qid=Q90139226|qq= 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
-* {{ill|Hitsujisaki Shrine (Mano, Ishinomaki)|ja|零羊崎神社 (石巻市真野)|12=simple|13=User:Immanuelle/Reiyosaki Shrine (Ishinomaki Mano)|comment=changed title based on wikidata|qid=Q11660145}} (*Reiyosaki Jinja*) - Located in Mano, Ishinomaki City, Miyagi Prefecture. Formerly designated as a {{ill|Son-sha|ja|村社|qid=Q134917284}}{{efn|Former shrine rank|lt=Son-sha|1=modern system of ranked Shinto shrines|12=simple|13=User:Immanuelle/Son-sha|ja_comment=jawiki redirects to 近代社格制度|comment=changed title based on wikidata|WD=Q712534}}.
+* [[Hitsujisaki Shrine]] (*Hitsujisaki Jinja*) - Located in Minato, Ishinomaki City, Miyagi Prefecture. Formerly designated as a [[Ken-sha]].
+* [[Hitsujisaki Shrine (Mano, Ishinomaki)]] (*Reiyosaki Jinja*) - Located in Mano, Ishinomaki City, Miyagi Prefecture. Formerly designated as a [[Son-sha]].
 
 == Related Articles ==
 * {{Prefix}}
@@ -13,11 +13,5 @@
 
 == Shrines with this name ==
 
-* {{ill|Hitsujisaki Shrine (Q11660145)|lt=Hitsujisaki Shrine|qid=Q11660145}} — Oshika district
-
-{{translated page|ja|零羊崎神社|version=101856840|comment=Imported full ja history}}
-
-{{wikidata link|Q11660142|ja|零羊崎神社|check_date=2026-05-25}}
+* [[Hitsujisaki Shrine (Q11660145)|Hitsujisaki Shrine]] — Oshika district
 [[Category:Shrine disambiguations]]
-[[Category:Wikidata has short description]]
-[[Category:Independently git synced pages]]
