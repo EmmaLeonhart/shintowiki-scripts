@@ -1,23 +1,19 @@
-
 {{Coordinates list}}
-'''Takeminakata Tomi no Mikoto Hikokamiwake Shrine''' (健御名方富命彦神別神社) is a [[Shinto shrine]] name listed in the {{ill|Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki|ja|延喜式神名帳|1=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki Jinmyōchō|1=Engishiki Jinmyōchō|2=ja|3=延喜式神名帳|4=zh|5=延喜式神名帳|6=simple|7=Engishiki}} as a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} in {{ill|Shinano Province|en|Shinano Province|qid=Q289250|lt=Shinano Province}}, {{ill|Minochi district|ja|水内郡|comment=changed title based on wikidata|qid=Q11548296}}.
+'''Takeminakata Tomi no Mikoto Hikokamiwake Shrine''' (健御名方富命彦神別神社) is a {{ill|Shinto shrine|abstract|Q845945|ar|جينجا|arz|ضريح شنتو|bcl|Shinto shrine|ca|Jinja|cs|Šintoistická svatyně|da|Shinto-tempel|de|Shintō-Schrein|el|Σιντοϊστικό Ιερό|eo|Ŝintoa sanktejo|es|Jinja|eu|Jinja|fa|معبد شینتویی|fi|Šintolainen pyhäkkö|fr|Sanctuaire shinto|hi|शिंतो मंदिर|hr|Šintoistički hram|hu|Sintó szentély|id|Jinja|it|Jinja|ja|神社|ka|ძინძია|ko|신사 (신토)|lb|Shintō-Schräin|mr|शिंतो मंदिर|nl|Jinja (heiligdom)|no|Jinja|or|ଜିଞ୍ଜା|pl|Jinja|pt|Templo xintoísta|ru|Дзиндзя|sc|Jinja|simple|Shinto shrine|sl|Šintoistično svetišče|sr|Шинтоистички храм|sv|Jinja|th|ศาลเจ้าชินโต|tok|tomo sewi pi nasin sewi Sinto|tr|Şinto tapınağı|uk|Святилище (синто)|uz|Dzindzya|vi|Thần xã|wuu|神社|zh|神社|zh_yue|神社|qid=Q845945|lt=Shinto shrine}} name listed in the {{ill|Engishiki Jinmyōchō|abstract|Q11064932|fr|Engishiki Jinmyōchō|ja|延喜式神名帳|simple|Engishiki Jinmyōchō|zh|延喜式神名帳|qid=Q11064932}} as a {{ill|Shikinaisha|ja|式内社|lt=Shikinaisha}} in {{ill|Shinano Province|ckb|پارێزگای شینانۆ|cs|Provincie Šinano|de|Provinz Shinano|eo|Provinco Ŝinano|es|Provincia de Shinano|fa|ولایت شینانو|fr|Province de Shinano|gl|Provincia de Shinano|hak|Shinano-koet|id|Provinsi Shinano|it|Shinano (provincia)|ja|信濃国|knc|Shinano Province|ko|시나노국|lt|Šinano žemė|ms|Wilayah Shinano|nl|Shinano (provincie)|pl|Prowincja Shinano|pt|Província de Shinano|ru|Синано (провинция)|simple|Shinano Province|sk|Šinano (provincia)|sr|Провинција Шинано|th|แคว้นชินาโนะ|tr|Shinano (vilayet)|uk|Провінція Сінано|zh|信濃國|zh_min_nan|Sinano-kok|zh_yue|信濃國|qid=Q289250|lt=Shinano Province}}, {{ill|Minochi district|ja|水内郡|zh|水內郡|qid=Q11548296}}.
 
 {{disambiguation}}
 {{Shinto Navbox}}
 
-<!-- BEGIN: auto-generated Wikidata shrine list -->
 == Shrines with this name ==
 
 * {{ill|Takeminakata & Minomikotohikokamiwake Shrine (Q11387216)|ja|健御名方富命彦神別神社|qid=Q11387216|lt=Takeminakata & Minomikotohikokamiwake Shrine}} — Minochi district
-* {{ill|Takeminakatatomi-no-Mikoto Hikokamiwake Shrine (Q11387218)|lt=Takeminakatatomi-no-Mikoto Hikokamiwake Shrine|qid=Q11387218}} — Nagano
-* {{ill|Takeshigyomeihoutomiinochihikoshinbetsu Shrine (Q135069832)|lt=Takeshigyomeihoutomiinochihikoshinbetsu Shrine|qid=Q135069832}} — Minochi district
-* {{ill|Takeshigyomeihoutomiinochihikoshinbetsu Shrine (Shinano Province) (Q135069835)|lt=Takeshigyomeihoutomiinochihikoshinbetsu Shrine (Shinano Province)|qid=Q135069835}} — Minochi district
-
-<!-- END: auto-generated Wikidata shrine list -->
+* {{ill|Takeminakatatomi-no-Mikoto Hikokamiwake Shrine (Q11387218)|ja|健御名方富命彦神別神社 (長野市箱清水)|qid=Q11387218|lt=Takeminakatatomi-no-Mikoto Hikokamiwake Shrine}} — Nagano
+* {{ill|Takeshigyomeihoutomiinochihikoshinbetsu Shrine (Q135069832)|qid=Q135069832|lt=Takeshigyomeihoutomiinochihikoshinbetsu Shrine}} — Minochi district
+* {{ill|Takeshigyomeihoutomiinochihikoshinbetsu Shrine (Shinano Province) (Q135069835)|qid=Q135069835|lt=Takeshigyomeihoutomiinochihikoshinbetsu Shrine (Shinano Province)}} — Minochi district
 
 {{translated page|ja|健御名方富命彦神別神社|version=84269542|comment=Imported full ja history}}
 
-{{wikidata link|Q11387216|ja|健御名方富命彦神別神社|check_date=2026-05-26}}
+{{wikidata link|Q11387216|ja|健御名方富命彦神別神社|grok=none|check_date=2026-05-26}}
 [[Category:All disambiguation pages]]
 [[Category:Myōjin Taisha]]
 [[Category:Shikinaisha in Shinano Province]]
@@ -29,3 +25,4 @@
 [[Category:Myōjin Taisha]]
 [[Category:Kokuhei-sha]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
