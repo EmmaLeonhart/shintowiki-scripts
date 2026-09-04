@@ -1087,15 +1087,15 @@ The '''module''' parameter is used for embedding other templates into this infob
 
 }}</includeonly>
 <noinclude>
-[[Category:Independently git synced pages]][[Category:Royalty and nobility infobox templates| ]]
-[[Category:Independently git synced pages]][[Category:Biographical templates usable as a module|Royalty]]
-[[Category:Independently git synced pages]][[Category:Infobox templates with module parameter|Royalty]]
-[[Category:Independently git synced pages]][[Category:Politics and government infobox templates|Royalty]]
-[[Category:Independently git synced pages]][[Category:Templates generating hCalendars]]
-[[Category:Independently git synced pages]][[Category:Templates generating hCards]]
-[[Category:Independently git synced pages]][[Category:Templates that add a tracking category]]
-[[Category:Independently git synced pages]][[Category:Templates]]
-[[Category:Independently git synced pages]][[Category:Templates fixed with noinclude]]
-[[Category:Independently git synced pages]][[Category:infobox templates]]
-[[Category:Independently git synced pages]][[Category:Templates missing wikidata]]
+[[Category:Royalty and nobility infobox templates| ]]
+[[Category:Biographical templates usable as a module|Royalty]]
+[[Category:Infobox templates with module parameter|Royalty]]
+[[Category:Politics and government infobox templates|Royalty]]
+[[Category:Templates generating hCalendars]]
+[[Category:Templates generating hCards]]
+[[Category:Templates that add a tracking category]]
+[[Category:Templates]]
+[[Category:Templates fixed with noinclude]]
+[[Category:infobox templates]]
+[[Category:Templates missing wikidata]]
 </noinclude>
