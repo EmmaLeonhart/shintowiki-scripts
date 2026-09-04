@@ -231,6 +231,25 @@ def test_base_maps_to_territory_for_akashi_and_nowhere_else():
 REDIRECTED_PAIRS = frozenset({
     # All five were redirected on 2026-08-29 by run 33235580849.
     "天道根命", "明石国造", "紀伊国造", "針間鴨国造", "闘鶏大山主",
+    # The 2026-08-30 batch. Six pairs were worked and redirected that day; these are the
+    # four that also hold a key above, so they are the four that belong here. 建稲種命
+    # (→ Takeinadane) and 那須国造 (→ Nasu no Kuni no Miyatsuko) landed the same day but
+    # hold no key, and this set is the record of KEYS whose redirect has landed --
+    # listing a non-key would make it a log of the batch rather than the record these
+    # two assertions actually read.
+    #
+    # Each was checked against the LIVE wiki on 2026-09-04 before being recorded, because
+    # a name added here on the strength of the queue saying it was done would turn the
+    # assertion into a rubber stamp -- the thing it exists to catch is a key naming no
+    # pair at all. All four are #REDIRECT by EmmaBot on 2026-08-30, each pointing at a
+    # page that exists and is not itself a redirect:
+    #   健磐龍命  → Takeiwatatsu-no-Mikoto      (44,829b)  21:33Z
+    #   尾張氏    → Owari clan                  (17,180b)  20:32Z
+    #   牟義都国造 → Mukizu no Kuni no Miyatsuko  (6,821b)  19:22Z
+    #   神大根王  → Kami Ōne                     (5,297b)  23:19Z
+    # 神大根王's target is 5,297b, the exact figure ``RATIO_EXEMPT`` records from its
+    # section-by-section reading, so the exemption is still describing this pair.
+    "健磐龍命", "尾張氏", "牟義都国造", "神大根王",
 })
 
 
