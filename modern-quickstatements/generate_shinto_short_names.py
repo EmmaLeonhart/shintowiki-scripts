@@ -43,10 +43,26 @@ import os
 import re
 import sys
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 from generate_shinto_honorifics import (
     EXCLUDED, HONORIFIC_FORMS, KAMI_CLASS, UNKNOWN,
-    derive_from_english, kana_rendaku, qs_escape, rendaku_variants, sparql,
+    derive_from_english, kana_rendaku, rendaku_variants, sparql,
 )
+# Straight from the shared module rather than re-exported through honorifics, which
+# does not use it itself. The copy it used to re-export escaped quotes but not
+# backslashes, so a short name containing one emitted an invalid QS value.
+#
+# This file now needs its own bootstrap above: it used to reach `shinto_miraheze`
+# only as a side effect of the honorifics import running one first, which
+# `test_sys_path_bootstrap_ordering` refuses -- `python <file>` puts the script's
+# own directory on sys.path[0], never the repo root.
+from shinto_miraheze.qs_value import qs_escape
 
 # stdout is already wrapped for utf-8 by the stage-1 import above.
 

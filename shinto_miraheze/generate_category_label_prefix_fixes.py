@@ -43,6 +43,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.qs_value import qs_escape, qs_unescape
 from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
@@ -167,16 +168,19 @@ SELECT ?item ?label WHERE {{
     return out
 
 
-def qs_escape(value: str) -> str:
-    return value.replace("\\", "\\\\").replace('"', '\\"')
-
-
 def parse_qs_page(text: str) -> dict[str, str]:
+    """Return {qid: label} for every QS Len line on the page.
+
+    ``qs_unescape`` makes this the inverse of the render, so a preserved value
+    is a fixed point across runs. Without it the captured text is still escaped
+    and the render escapes it again, doubling every backslash on every run --
+    the bug that grew one [[QuickStatements/P6262]] line to 1,048,643 bytes.
+    """
     existing = {}
     for line in text.split("\n"):
         m = QS_LINE_RE.match(line.strip())
         if m:
-            existing[m.group(1)] = m.group(2)
+            existing[m.group(1)] = qs_unescape(m.group(2))
     return existing
 
 

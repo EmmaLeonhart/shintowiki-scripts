@@ -282,10 +282,6 @@ def existing(prop):
     return {r["k"]["value"].split("/")[-1] for r in rows}
 
 
-def qs_escape(s):
-    return s.replace('"', '\\"')
-
-
 # The suffix may be attached with NO separator at all. Emma 2026-07-16, on
 # Konohanasakuyahime (Q1781862):
 #

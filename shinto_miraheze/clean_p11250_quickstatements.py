@@ -31,6 +31,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.qs_value import qs_escape, qs_unescape
 from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
@@ -166,7 +167,7 @@ def main():
     for line in existing_text.split("\n"):
         m = QS_LINE_RE.match(line.strip())
         if m:
-            qs_entries[m.group(1)] = f"shinto:{m.group(2)}"
+            qs_entries[m.group(1)] = f"shinto:{qs_unescape(m.group(2))}"
 
     print(f"Found {len(qs_entries)} QS lines on [[{QS_PAGE_TITLE}]]")
 
@@ -202,7 +203,7 @@ def main():
     remaining = {qid: val for qid, val in qs_entries.items() if qid not in removed_set}
     qs_lines = []
     for qid in sorted(remaining.keys()):
-        qs_lines.append(f'{qid}|P11250|"{remaining[qid]}"')
+        qs_lines.append(f'{qid}|P11250|"{qs_escape(remaining[qid])}"')
 
     new_page_text = QS_PAGE_HEADER + "\n".join(qs_lines) + "\n" + QS_PAGE_FOOTER + "\n"
 

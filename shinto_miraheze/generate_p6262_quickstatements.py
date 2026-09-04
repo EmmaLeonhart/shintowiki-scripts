@@ -53,6 +53,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.qs_value import qs_escape, qs_unescape
 from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
@@ -203,11 +204,6 @@ SELECT ?item ?p6262 WHERE {{
     return p6262
 
 
-def qs_escape(value: str) -> str:
-    """Escape a string for inclusion in a QS v1 quoted value."""
-    return value.replace("\\", "\\\\").replace('"', '\\"')
-
-
 def fandom_value(title: str) -> str:
     """Return the P6262 value for a Miraheze page title. Pages mirror
     1:1 onto shinto.fandom.com under the same title."""
@@ -256,13 +252,59 @@ def filter_existing_on_miraheze(site, titles: list[str]) -> set[str]:
 
 
 def parse_qs_page(text: str) -> dict[str, str]:
-    """Return {qid: "shinto:Title"} for every QS line on the page."""
+    """Return {qid: "shinto:Title"} for every QS line on the page.
+
+    ``qs_unescape`` is what makes this the inverse of the render below. Without it
+    the captured text is still escaped and the render escapes it a second time, so
+    a value's backslashes double on every run -- the bug that grew Q123999885's
+    line to 1,048,643 bytes and pushed the page past MediaWiki's save ceiling.
+    """
     existing = {}
     for line in text.split("\n"):
         m = QS_LINE_RE.match(line.strip())
         if m:
-            existing[m.group(1)] = f"{FANDOM_SUBDOMAIN}:{m.group(2)}"
+            existing[m.group(1)] = f"{FANDOM_SUBDOMAIN}:{qs_unescape(m.group(2))}"
     return existing
+
+
+def resolve_existing(existing_qs, desired, wd_values):
+    """Decide what happens to each QS line already on the page.
+
+    Returns ``(preserved, removed, repaired)``: the lines to keep with the value to
+    keep them at, the QIDs whose claim is now on Wikidata, and a count of lines whose
+    page value disagreed with the state file.
+
+    **The state file is the source of truth for a QID's value**, so a preserved line
+    is re-derived from ``desired`` rather than carried over from the page text. Two
+    things that repairs, both seen live on 2026-09-04:
+
+    * A value corrupted by the old double-escape. Q123999885 sat only here -- its
+      page is missing on miraheze, so the existence check dropped it from ``new_qs``
+      -- and nothing ever refreshed it. That is why one line and no other ran away
+      to 1 MB while 12,877 neighbours stayed 130 bytes: every other line was rewritten
+      from state each run, and this one was copied from the page it had just polluted.
+    * A title that changed on the wiki after its line was written; the page copy would
+      otherwise sit at the old title indefinitely.
+
+    A QID the state does not know keeps the page's own value. 123 of them were on the
+    page on 2026-09-04, and dropping those is a different decision from this one.
+    """
+    preserved: dict[str, str] = {}
+    removed: list[str] = []
+    repaired = 0
+    for qid, on_page in existing_qs.items():
+        expected = desired.get(qid, on_page)
+        if expected != on_page:
+            repaired += 1
+        values = wd_values.get(qid)
+        if values is None:
+            preserved[qid] = expected
+            continue
+        if expected in values:
+            removed.append(qid)
+            continue
+        preserved[qid] = expected
+    return preserved, removed, repaired
 
 
 def load_state() -> dict[str, str]:
@@ -387,20 +429,11 @@ def main():
     existing_qs = parse_qs_page(existing_text)
     print(f"Existing QS lines on wiki:     {len(existing_qs)}")
 
-    preserved: dict[str, str] = {}
-    removed: list[str] = []
-    for qid, expected in existing_qs.items():
-        values = wd_p6262.get(qid)
-        if values is None:
-            preserved[qid] = expected
-            continue
-        if expected in values:
-            removed.append(qid)
-            continue
-        preserved[qid] = expected
+    preserved, removed, repaired = resolve_existing(existing_qs, desired, wd_p6262)
 
     merged = {**preserved, **new_qs}
     print(f"  Preserved existing lines:    {len(preserved)}")
+    print(f"  Re-derived from state:       {repaired}")
     print(f"  Removed (now on Wikidata):   {len(removed)}")
     print(f"  Final P6262 line count:      {len(merged)}")
 
