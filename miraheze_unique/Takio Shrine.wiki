@@ -15,10 +15,10 @@
 * {{ill|Taki-no-o Shrine (Nikkō, Torobu)|ja|滝尾神社 (日光市土呂部)}} - Located in Torobu, Nikkō City, Tochigi Prefecture.
 * {{ill|Taki-no-o Shrine (Nikkō, Moritomo)|ja|瀧尾神社 (日光市森友)}} - Located in Moritomo, Nikkō City, Tochigi Prefecture.
 * {{ill|Taki-no-o Shrine (Nikkō, Yamaguchi)|ja|瀧尾神社 (日光市山口)}} - Located in Yamaguchi, Nikkō City, Tochigi Prefecture.
-* {{ill|Takio Shrine|ja|滝尾神社|12=simple|13=User:Immanuelle/Taki-no-o Shrine (Nikkō, Sannai)|ja_comment=jawiki redirects to 瀧尾神社|comment=changed title based on wikidata|qid=Q85882196}} - Located in Sannai, Nikkō City, Tochigi Prefecture. A detached shrine of {{ill|Futarasan shrine|en|Futarasan shrine|qid=Q701927|lt=Nikkō Futarasan Shrine}}, guarding Mount Nyohō.
-* {{ill|Takio Shrine|ja|滝尾神社|12=simple|13=User:Immanuelle/Taki-no-o Shrine (Nikkō, Mount Nantai)|ja_comment=jawiki redirects to 瀧尾神社|comment=changed title based on wikidata|qid=Q85882196}} - Located at the eighth station of {{ill|Mount Nantai|en|Mount Nantai|qid=Q1964765|lt=Mount Nantai}}, Nikkō City, Tochigi Prefecture. A sub-shrine of Nikkō Futarasan Shrine.
+* {{ill|Takio Shrine|ja|瀧尾神社|qid=Q85882196}} - Located in Sannai, Nikkō City, Tochigi Prefecture. A detached shrine of {{ill|Futarasan shrine|ar|ضريح فوتاراسان|az|Futarasan məbədi|ca|Santuari Futarasan|cs|Svatyně Futarasan|de|Nikkō-Futarasan-Schrein|es|Santuario Futarasan|fa|معبد فوتاراسان|fr|Futarasan-jinja|id|Kuil Futarasan|ja|日光二荒山神社|ko|닛코 후타라산 신사|nl|Futarasan-schrijn|pl|Futarasan-jinja|pt|Futarasan jinja|th|ศาลเจ้านิกโกฟูตาราซัง|tr|Futarasan tapınağı|zh|日光二荒山神社|qid=Q701927|lt=Nikkō Futarasan Shrine}}, guarding Mount Nyohō.
+* {{ill|Takio Shrine|ja|瀧尾神社|qid=Q85882196}} - Located at the eighth station of {{ill|Mount Nantai|ar|جبل نانتاي|arz|جبل مونت نانتاى|ceb|Nantai San|cs|Nantaisan|de|Nantai (Vulkan)|es|Monte Nantai|eu|Nantai mendia|fa|کوه نانتای|fr|Mont Nantai|gl|Monte Nantai|id|Gunung Nantai|ja|男体山|ka|ნანტაის მთა|my|နန်းတိုင်းတောင်|pnb|ٹلہ نانٹائ|pt|Monte Nantai|ru|Нантай|sk|Nantai|tr|Nantai Dağı|uz|Nantai togʻi|vi|Núi Nantai|zh|男體山|qid=Q1964765|lt=Mount Nantai}}, Nikkō City, Tochigi Prefecture. A sub-shrine of Nikkō Futarasan Shrine.
 * {{ill|Taki-no-o Shrine (Mashiko)|ja|滝尾神社 (益子町)}} - Located in Nanae, Mashiko, Haga District, Tochigi Prefecture.
-* {{ill|Taki-no-o Shrine (Kyoto)|ja|瀧尾神社 (京都市)}} - Located in Honmachi, Higashiyama Ward, Kyoto City.
+* {{ill|Taki-no-o Shrine (Kyoto)|ja|瀧尾神社 (京都市)|qid=Q54153288}} - Located in Honmachi, Higashiyama Ward, Kyoto City.
 * {{ill|Taki-no-o Shrine (Nishiwaki)|ja|瀧尾神社 (西脇市)}} - Located in Kuroda, Nishiwaki City, Hyōgo Prefecture.
 
 {{disambiguation}}
@@ -26,14 +26,14 @@
 == Shrines with this name ==
 
 === 瀧尾神社 ===
-* {{ill|Takio Shrine (Q54153288)|lt=Takio Shrine|qid=Q54153288}} — Higashiyama-ku
+* {{ill|Takio Shrine (Q54153288)|ja|瀧尾神社 (京都市)|qid=Q54153288|lt=Takio Shrine}} — Higashiyama-ku
 
 === 滝尾神社 ===
-* {{ill|Takinoo Shrine (Q28952427)|lt=Takinoo Shrine|qid=Q28952427}} — Nikkō-shi
-* {{ill|Takinō Shrine (Q135154563)|lt=Takinō Shrine|qid=Q135154563}} — Yachiyo
-* {{ill|Takinō Shrine (Q135258869)|lt=Takinō Shrine|qid=Q135258869}} — Utsunomiya
-* {{ill|Takinō Shrine (Q135259160)|lt=Takinō Shrine|qid=Q135259160}} — Nikkō-shi
-* {{ill|Takinō Shrine (Q135259434)|lt=Takinō Shrine|qid=Q135259434}} — Nikkō-shi
+* {{ill|Takinoo Shrine (Q28952427)|fr|Takinoo-jinja|qid=Q28952427|lt=Takinoo Shrine}} — Nikkō-shi
+* {{ill|Takinō Shrine (Q135154563)|qid=Q135154563|lt=Takinō Shrine}} — Yachiyo
+* {{ill|Takinō Shrine (Q135258869)|qid=Q135258869|lt=Takinō Shrine}} — Utsunomiya
+* {{ill|Takinō Shrine (Q135259160)|qid=Q135259160|lt=Takinō Shrine}} — Nikkō-shi
+* {{ill|Takinō Shrine (Q135259434)|qid=Q135259434|lt=Takinō Shrine}} — Nikkō-shi
 * {{ill|Takinō Shrine (Q135259443)|qid=Q135259443|lt=Takinō Shrine}} — Nikkō-shi
 * {{ill|Takinō Shrine (Q135259645)|qid=Q135259645|lt=Takinō Shrine}} — Nikkō-shi
 * {{ill|Takinō Shrine (Q135259862)|qid=Q135259862|lt=Takinō Shrine}} — Nikkō-shi
@@ -44,13 +44,14 @@
 * {{ill|Takio Shrine (Q135258889)|qid=Q135258889|lt=Takio Shrine}} — Nikkō-shi
 * {{ill|Takio Shrine (Q135259169)|qid=Q135259169|lt=Takio Shrine}} — Nikkō-shi
 * {{ill|Takio Shrine (Q135259445)|qid=Q135259445|lt=Takio Shrine}} — Nikkō-shi
-* {{ill|Takio Shrine (Q135260518)|lt=Takio Shrine|qid=Q135260518}} — Mashiko
+* {{ill|Takio Shrine (Q135260518)|qid=Q135260518|lt=Takio Shrine}} — Mashiko
 
 {{translated page|ja|瀧尾神社|version=94035004|comment=Imported full ja history}}
 
-{{wikidata link|Q85882196|ja|瀧尾神社|check_date=2026-05-26}}
+{{wikidata link|Q85882196|ja|瀧尾神社|grok=none|check_date=2026-05-26}}
 [[Category:All disambiguation pages]]
 [[Category:Shrine disambiguations]]
 [[Category:shrine disambiguations]]
 [[Category:Wikidata has short description]]
 [[Category:Independently git synced pages]]
+[[Category:Pages with unresolved QID in ill template]]
