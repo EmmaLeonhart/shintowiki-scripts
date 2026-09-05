@@ -2,12 +2,12 @@
   "gate": "enwiki mentions of Immanuelle (Emma 2026-08-06)",
   "blocks": "Wikidata editing (QuickStatements submission + direct-edit fallback)",
   "condition": "clear when 'Immanuelle' appears on neither [[Wikipedia:AI noticeboard]] nor [[Wikipedia talk:WikiProject Japan]]",
-  "clear": false,
+  "clear": true,
   "pages": {
     "Wikipedia:AI noticeboard": 0,
-    "Wikipedia talk:WikiProject Japan": 2
+    "Wikipedia talk:WikiProject Japan": 0
   },
-  "checked": "2026-09-04T11:42:27Z",
+  "checked": "2026-09-05T10:53:51Z",
   "first_checked": "2026-08-07T05:05:55Z",
   "note": "shinto.miraheze.org editing is NOT gated on this — Emma 2026-08-06: 'the freeze thing there is a wikidata thing, based on the enwiki thing, shintowiki if it still runs is not an issue'."
 }
