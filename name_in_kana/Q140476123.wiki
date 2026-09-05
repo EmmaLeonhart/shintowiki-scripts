@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q140476123 -->
 <!-- JA: 杉山神社 (横浜市港北区新羽町) | EN_LABEL: (none) | BUCKET: b -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%9D%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_%28%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%96%B0%E7%BE%BD%E7%94%BA%29 -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: すぎやまじんじゃ -->
 <!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading
   GUESS: <hiragana>       the lead states no reading; this is derived (below)

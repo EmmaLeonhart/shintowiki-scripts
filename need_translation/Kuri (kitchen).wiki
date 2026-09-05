@@ -27,46 +27,24 @@ A {{nihongo|'''''kuri'''''|庫裏|lit. warehouse behind}} or {{nihongo|kuin|庫�
 {{wikidata link|Q3078145|en|Kuri (kitchen)|es|Kuri (cocina)|fr|Kuri (cuisine)|ja|庫裏|check_date=2026-05-17}}
 
 {{translated page|ja|庫裏|version=82636972|comment=Imported full ja history}}
-== Japanese Wikipedia content ==
-[[Category:need translation]]
-[[Category:Duplicated content translation]]
-[[Category:Pages with duplicated content]]
-{{出典の明記|date=2020年8月17日 (月) 10:41 (UTC)}}
-{{右|
-[[画像:Myohoin01s2040.jpg|thumb|none|200px|<small>京都・{{jalink|妙法院}}の庫裏（{{jalink|国宝|Q1139795}}）</small>]]
-[[画像:seihakuji_temple-02.JPG|thumb|200px|none|<small>山梨・{{jalink|清白寺}}の庫裏（{{jalink|重要文化財|Q1188622}}）</small>]]
-[[画像:Eiheiji19n4592.jpg|thumb|none|200px|<small>大庫裏の例（福井・{{jalink|永平寺}}大庫院</small>]]
-}}
-'''庫裏'''（くり）とは、{{jalink|仏教|Q748}}{{jalink|寺院|Q5393308}}における{{jalink|伽藍|Q3482038}}のひとつ。'''庫裡'''とも書く。裡は裏の俗字であり、どちらも“うち”や“なか”を意味する。また'''庫院'''ともいう。
 
-== 概要 ==
-寺院の{{jalink|僧侶}}の居住する場所、また寺内の時食を調える、つまり台所も兼ねる場合がある。なお現代では、その多くは僧侶の居住する場所をいうことが多い。
+'''Kuri''' (くり) is one of the {{jalink|伽藍|Q3482038|garan}} (temple buildings) in {{jalink|仏教|Q748|Buddhist}} {{jalink|寺院|Q5393308|temples}}. It is also written as '''庫裡'''. 裡 is a colloquial character for 裏, and both mean “inside” or “within”. It is also called '''kuin'''.
 
-庫裏は大規模寺院では独立した建物であるが、一般寺院では寺の事務を扱う寺務所と兼用となっていることが多い。一般の民家とよく似た建物も多い。
+== Overview ==
+It is the place where {{jalink|僧侶|monks}} of the temple reside, and also serves as a place to prepare meals within the temple, functioning as a kitchen. In modern times, it more often refers to the place where monks reside.
 
-歴史ある寺院では、{{jalink|文化財|Q858308}}に指定されているものもある。{{jalink|禅宗|Q7953}}の寺院では、伽藍の守護として{{jalink|韋駄天|Q2006388}}が祀られていることがある。
+In large-scale temples, the ''kuri'' is an independent building, but in ordinary temples it often doubles as the temple office that handles temple affairs. Many buildings closely resemble ordinary private homes.
 
-== 大庫裏と小庫裏 ==
-{{jalink|禅寺}}では、学僧を中心として住僧以下の僧侶や仏前に供える食事を調理する場所で僧堂と兼ねる。これを大庫裏（大庫院）という。これに対し、方丈建築の近傍に設けられるものを小庫裏（小庫院）といい、住持の内侍や客院などの厨房を指す。
+In temples with historical significance, some are designated as {{jalink|文化財|Q858308|cultural properties}}. In {{jalink|禅宗|Q7953|Zen}} temples, {{jalink|韋駄天|Q2006388|Idaten}} is sometimes enshrined as the guardian of the garan.
 
-==関連項目==
-*{{jalink|伽藍|Q3482038}}
-*{{jalink|玄関|Q1207721}}
-*{{jalink|方丈|Q96028062}}
+== Large Kuri and Small Kuri ==
+In {{jalink|禅寺|Zen temples}}, centered around scholar monks, it is a place where meals for resident monks and offerings to the Buddha are prepared, and it also serves as the monks' hall. This is called ''daikuri'' (large kuri) or ''daikuin'' (large hall). In contrast, that which is established near the ''{{jalink|方丈|Q96028062|hōjō}}'' building is called ''shōkuri'' (small kuri) or ''shōkuin'' (small hall), and refers to the kitchen for the abbot's attendants and guest quarters.
 
-{{日本の建築}}
-{{buddhism-stub}}
+==See also==
+*{{jalink|伽藍|Q3482038|Garan}}
+*{{jalink|玄関|Q1207721|Genkan}}
+*{{jalink|方丈|Q96028062|Hōjō}}
 
-==End Japanese==
-[[Category:寺]]
-[[Category:寺院建築]]
-[[Category:食関連設備]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
-[[Category:Pages with 150+ untranslated japanese characters]]
-[[Category:Pages with 200+ untranslated japanese characters]]
-[[Category:Pages with 250+ untranslated japanese characters]]
-[[Category:Pages with 300+ untranslated japanese characters]]
 [[Category:Temple Architecture]]
 [[Category:Wikidata has short description]]
 [[Category:Zen]]
