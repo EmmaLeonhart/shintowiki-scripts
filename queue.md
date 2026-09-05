@@ -22,7 +22,3 @@ from `ATOMIC_FILES`; they are not queue items.
     file, which is exactly the cost the previous note described and then repeated. Trust `CronList`,
     not this line.
   - [ ] Run the status-report action once more independently as an end-of-session summary.
-## Monthly verification sweep (<!-- monthly-verify-sweep --> 2026-09-01)
-
-Walk `docs/deferred_verification.md` and actually TEST each Open item (the batched verification we skip in the moment because wiki/CI changes are slow lagging indicators). For each: run its check; if it works, move it to the doc's Verified section with the date + what you observed; if it's broken, fix it and note the fix. Then delete THIS block.
-

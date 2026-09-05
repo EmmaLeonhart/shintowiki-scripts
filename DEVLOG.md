@@ -4,6 +4,69 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-05 — the monthly sweep's Open list was empty, and that was the defect
+
+The `<!-- monthly-verify-sweep --> 2026-09-01` block asked for every Open item in
+`docs/deferred_verification.md` to be tested. There were none. That is the second
+consecutive empty sweep (08-03 was the first), and taking it at face value a second time
+would have recorded "nothing to test" over a real outstanding item.
+
+**A deferred verification had been written into this DEVLOG instead of into the Open list.**
+The 2026-08-25 churn entry ends *"Still unverified: every `generate` step so far ran before
+these fixes landed, so the clean regeneration diff that would prove them has not happened
+yet. The next scheduled regeneration is the test."* That is exactly the shape the file
+exists to hold, and it never reached it. Found by grepping the post-08-03 log for
+unverified-ship language rather than by reading the Open list — the list was the thing
+under test, so it could not also be the evidence.
+
+### The fix verified: 9 of its 10 files
+
+`cleanup-loop` (daily, `cron: 23 2 * * *`) ran on all 12 days 08-25 → 09-05 — ten green, red
+on 09-02 and 09-05. In run `33848078978` (09-04) the `generate` job's log shows each
+generator **writing** its file: `kana_qualifier_add.txt` "Wrote 4965 lines",
+`kana_redundant_remove.txt` "Wrote 252 lines", `address_citation_backfill.txt` "Wrote 140
+reference-backfill lines", plus `ronsha_ojp_name_removals`, `shikinaisha_kokugakuin_refs`,
+`multi_ordinal_removals`, `orphan_membership_removals`, `tenjinsha_en_labels`.
+
+**None of those eight has produced a commit in the 11 days since**, against 2–22 commits
+each between 08-01 and 08-24. Generator ran, rewrote the file, output byte-identical. The
+absence of commits is the evidence.
+
+`daily_operations.txt` is the one that still commits daily, and correctly: all 8 commits
+08-28 → 09-04 are real deltas (+51…+157 lines, sorted content differing each time), not the
+2,483-line rewrite per build it produced before. The 08-25 entry predicted this — it
+concatenates its sources, so sorted sources make it deterministic — though its sources are
+not the nine, so it had to be measured on its own rather than inferred.
+
+### The step that made it conclusive, and would have made it wrong to skip
+
+Reading the run log for the "wrote" lines **before** reading anything into the zero commits.
+`generate-quickstatements.yml` carries a comment documenting its own trap: a generator that
+bails on HTTP 429 from WDQS is reported **green** by `continue-on-error: true` while the
+file silently does not regenerate — which is how `description_label_pairs.txt` sat unchanged
+through three Sundays with nothing looking wrong. Under that failure, a file that stopped
+regenerating and a file that regenerates deterministically are indistinguishable from commit
+history. Nine files with no commits is the signature of the fix working *or* of the
+generators having quietly stopped, and only the log separates them.
+
+### Left Open, and why it is not a failure
+
+`migrate_ritsuryo_funding_remove.txt` — the tenth. Written only by `submit_daily_batch.py`
+and `direct_daily_edits.py`, whose jobs report **skipped** on every run while
+`wikidata_editing_lockout.state` is locked to **2026-09-18**. No post-fix build exists to
+measure, so it is logged Open with its check written out, per this file's own rule for
+lockout-gated items. Unblock signal is the lockout date passing.
+
+Also still present, unchanged and out of scope here: the single duplicate line in
+`p958_qualifiers.txt` (`Q11677158|P13677|"182063"|P958|"1"`), noted as harmless on 08-24
+because a repeated QuickStatement is idempotent. Not a verification item; not chased.
+
+**Files:** `docs/deferred_verification.md` (Open + Verified + sweep log, plus two new usage
+rules: a DEVLOG "still unverified" line does not count as logging it here, and an empty Open
+list is a claim to test rather than a result to record), `queue.md` (sweep block deleted).
+
+---
+
 ## 2026-08-31 — Weekly Open-questions sweep: nothing open, block deleted
 
 The `<!-- weekly-oq-sweep --> 2026-08-31` item auto-added by
