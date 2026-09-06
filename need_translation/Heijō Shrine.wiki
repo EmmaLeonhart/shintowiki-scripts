@@ -75,48 +75,30 @@ In modern times, the site is a park, with a statue of {{ill|Kim Il Sung|en|Kim I
 {{translated page|ja|平壌神社|version=105146564|comment=Imported full ja history}}
 == Japanese Wikipedia content ==
 {{神社
- | 名称=平壌神社
+ | 名称=Heijō Shrine
  | 画像 =[[Image:Heijo Shrine.JPG|250px|center]]
- | 所在地=朝鮮平安南道平壌府慶上町
- | 祭神=天照大神<br />国魂大神
- | 社格=国幣小社<ref name=国体神祇辞典/>
- | 創建={{jalink|1913年|Q2080}}（{{jalink|大正|Q329174}}2年）<ref name=国体神祇辞典/>
+ | 所在地=Keikami-chō, Heijō-fu, Heian-nan Province, Korea
+ | 祭神=Amaterasu Ōmikami<br />Kunitama Ōkami
+ | 社格=Kokuhei Shōsha<ref name=国体神祇辞典/>
+ | 創建={{jalink|1913年|Q2080}} ({{jalink|大正|Q329174}} 2)<ref name=国体神祇辞典/>
  | 本殿={{jalink|神明造|Q930545}}
  | 例祭={{jalink|10月2日|Q2932}}<ref name=国体神祇辞典/>
 }}
 
-'''平壌神社'''（へいじょうじんじゃ）は、{{jalink|日本統治時代の朝鮮|Q503585|朝鮮}}{{jalink|平安南道 (日本統治時代)|Q11060859|平安南道}}平壌府（現・{{jalink|朝鮮民主主義人民共和国|Q423}}{{jalink|平壌直轄市}}）にあった{{jalink|神社|Q845945}}である。旧{{jalink|社格|Q10444029}}は{{jalink|近代社格制度|Q712534|国幣小社}}<ref name=国体神祇辞典/>。
+'''Heijō Shrine''' was a {{jalink|神社|Q845945|shrine}} located in Heijō-fu, {{jalink|平安南道 (日本統治時代)|Q11060859|Heian-nan Province}}, {{jalink|日本統治時代の朝鮮|Q503585|Korea under Japanese rule}} (now {{jalink|朝鮮民主主義人民共和国|Q423|North Korea}} {{jalink|平壌直轄市|Pyongyang}}). Its former {{jalink|社格|Q10444029|shrine rank}} was {{jalink|近代社格制度|Q712534|Kokuhei Shōsha}}<ref name=国体神祇辞典/>.
 
-{{jalink|祭神|Q11591100}}は{{jalink|天照大神|Q455602}}・{{jalink|国魂|Q9692242|国魂大神}}であった<ref name=国体神祇辞典>{{オープンアクセス}}[{{NDLDC|1909346/829}} 『国体神祇辞典』小倉鏗爾著 (錦正堂, 1940)  - 国立国会図書館デジタルコレクション] 1505頁（2018年1月30日閲覧）</ref>。
+The {{jalink|祭神|Q11591100|enshrined deities}} were {{jalink|天照大神|Q455602|Amaterasu Ōmikami}} and {{jalink|国魂|Q9692242|Kunitama Ōkami}}<ref name=国体神祇辞典>{{オープンアクセス}}[{{NDLDC|1909346/829}} 『国体神祇辞典』小倉鏗爾著 (錦正堂, 1940)  - 国立国会図書館デジタルコレクション] 1505頁（2018年1月30日閲覧）</ref>.
 
-== 歴史 ==
-{{jalink|1913年|Q2080}}（{{jalink|大正|Q329174}}2年）{{jalink|1月1日|Q2150}}に鎮座祭が行われ、{{jalink|1916年|Q2087}}（大正5年）{{jalink|5月4日|Q2549}}に正式な神社になった。{{jalink|1936年|Q18649}}（{{jalink|昭和|Q327567}}11年）9月に新しい{{jalink|神社建築|Q3080012|社殿}}が落成し<ref name=国体神祇辞典/>、{{jalink|1937年|Q18647}}（昭和12年）{{jalink|5月15日|Q2562}}、{{jalink|慶尚北道 (日本統治時代)|Q625101|慶尚北道}}{{jalink|大邱広域市|Q20927|大邱府}}の{{jalink|大邱神社|Q11439410}}とともに国幣小社に列格した<ref name=国体神祇辞典/>。{{jalink|1945年|Q5240}}（{{jalink|昭和|Q327567}}20年）、{{jalink|玉音放送|Q709465}}により{{jalink|第二次世界大戦|Q362}}の{{jalink|日本の降伏|Q6540361}}が国民に伝えられた{{jalink|8月15日|Q2774}}の夜、平壌神社は放火により焼失した<ref>{{Cite book|和書|author=森田芳夫|title=朝鮮終戦の記録 : 米ソ両軍の進駐と日本人の引揚|publisher=巌南堂書店|date=1964-08-15|pages=182|id={{NDLJP|3014647/107}}}}</ref>。その後、再建されることなく廃座された。
+== History ==
+The enshrinement ceremony was held on {{jalink|1月1日|Q2150|January 1}}, {{jalink|1913年|Q2080|1913}} ({{jalink|大正|Q329174|Taishō}} 2), and it became an official shrine on {{jalink|5月4日|Q2549|May 4}}, {{jalink|1916年|Q2087|1916}} (Taishō 5). A new {{jalink|神社建築|Q3080012|shrine building}} was completed in September {{jalink|1936年|Q18649|1936}} ({{jalink|昭和|Q327567|Shōwa}} 11)<ref name=国体神祇辞典/>, and on {{jalink|5月15日|Q2562|May 15}}, {{jalink|1937年|Q18647|1937}} (Shōwa 12), it was elevated to the rank of Kokuhei Shōsha together with {{jalink|大邱神社|Q11439410|Taegu Shrine}} in {{jalink|大邱広域市|Q20927|Taegu-fu}}, {{jalink|慶尚北道 (日本統治時代)|Q625101|Keishō-hokudō}}<ref name=国体神祇辞典/>. On the night of {{jalink|8月15日|Q2774|August 15}}, {{jalink|1945年|Q5240|1945}} (Shōwa 20), when {{jalink|日本の降伏|Q6540361|Japan's surrender}} in {{jalink|第二次世界大戦|Q362|World War II}} was announced to the nation through the {{jalink|玉音放送|Q709465|Imperial Rescript}}, Heijō Shrine was destroyed by arson<ref>{{Cite book|和書|author=森田芳夫|title=朝鮮終戦の記録 : 米ソ両軍の進駐と日本人の引揚|publisher=巌南堂書店|date=1964-08-15|pages=182|id={{NDLJP|3014647/107}}}}</ref>. It was subsequently abolished without being rebuilt.
 
-鎮座地は{{jalink|牡丹峰|Q717264}}（ぼたんほう、モランボン）と呼ばれる小高い{{jalink|丘|Q54050}}の南端で、平壌の景勝地である。1946年に平壌神社の跡地には{{jalink|牡丹峰劇場}}が建設されている<ref>{{Cite journal|和書|title=うまれかわる朝鮮――｢北朝鮮紀行｣より / 徐光霽|journal=新しい世界|issue=24|publisher=日本共産党出版局事業部|date=1949-07-01|pages=35|id={{NDLJP|3542933/19}}}}</ref><ref>{{Cite book|和書|editor=城戸又一|title=素顔の社会主義国 : 十人のジャーナリストは報告する|publisher=東洋書館|date=1956-12-15|pages=140|id={{NDLJP|2975357/74}}}}</ref>。
+The shrine site was located at the southern end of a small {{jalink|丘|Q54050|hill}} called {{jalink|牡丹峰|Q717264|Moranbong}}, a scenic spot in Pyongyang. In 1946, the {{jalink|牡丹峰劇場|Moranbong Theater}} was constructed on the former site of Heijō Shrine<ref>{{Cite journal|和書|title=うまれかわる朝鮮――｢北朝鮮紀行｣より / 徐光霽|journal=新しい世界|issue=24|publisher=日本共産党出版局事業部|date=1949-07-01|pages=35|id={{NDLJP|3542933/19}}}}</ref><ref>{{Cite book|和書|editor=城戸又一|title=素顔の社会主義国 : 十人のジャーナリストは報告する|publisher=東洋書館|date=1956-12-15|pages=140|id={{NDLJP|2975357/74}}}}</ref>.
 
-== 脚注 ==
+== References ==
 {{脚注ヘルプ}}
 {{reflist}}
 
-{{Japanese-history-stub}}
-{{shinto-stub}}
-
-{{神道 横}}
-{{Normdaten}}
-
 ==End Japanese==
-[[Category:朝鮮の神社]]
-[[Category:国幣小社]]
-[[Category:神明神社|廃へいしようしんしや]]
-[[Category:平壌市の建築物|廃へいしようしんしや]]
-[[Category:平壌市の歴史]]
-[[Category:平壌市の文化]]
-[[Category:現存しない北朝鮮の建築物]]
-[[Category:1913年竣工の建築物]]
-[[Category:1945年解体の建築物]]
-[[Category:日本の放火事件]]
-[[Category:Pages with 50+ untranslated japanese characters]]
-[[Category:Pages with 100+ untranslated japanese characters]]
 [[Category:1913 establishments in Korea]]
 [[Category:1945 disestablishments in Japan]]
 [[Category:20th-century Shinto shrines]]
@@ -129,6 +111,5 @@ In modern times, the site is a park, with a statue of {{ill|Kim Il Sung|en|Kim I
 [[Category:Shinmei shrines]]
 [[Category:Shinto shrines in Korea]]
 [[Category:Wikidata has short description]]
-[[Category:need translation]]
 [[Category:Duplicated content translation]]
 [[Category:Pages with duplicated content]]
