@@ -41,6 +41,25 @@ textarea of everything would be ~10 MB, would make the page unusable on a phone,
 QuickStatements does not want a paste that size anyway. Each batch is chunked so a chunk can
 be pasted, run, and ticked off independently — a run that dies halfway loses only its chunk.
 
+`ALL.txt` IS A SAMPLE, NOT THE CORPUS
+-------------------------------------
+It held all 131,567 lines until 2026-09-06, and that was the wrong shape for the one thing it
+exists for. Emma: *"all.txt is simply too large, largest batches I found pasted in were 10,000
+lines each. So we gotta have it be 10,000 randomly selected lines."* A file nobody can paste
+is not a convenience.
+
+So it is a random draw of `SAMPLE` lines, and three things follow:
+
+  * The corpus is not lost. The per-file chunks written beside it still hold every line, and
+    they are what to work through exhaustively.
+  * The draw is unseeded, so each regeneration deals a different hand and repeated runs cover
+    the corpus rather than re-offering the same 10,000. `--seed` fixes it when a reproducible
+    file is wanted.
+  * Lines are SELECTED at random and emitted in the ORIGINAL run order, so the orphan labels
+    still lead whatever came up. Only ~8% of the file is orphan labels now, though, where the
+    unsampled version led with all 9,976 — if that ordering matters more than the sampling,
+    the fix is to take the orphan block whole and sample only the remainder.
+
 This script is READ-ONLY and offline apart from reusing the orphan query result. It never
 edits Wikidata and never writes into the atomic files. It renders a page; delivery is still
 the operator's paste or the daily drip.
@@ -57,6 +76,7 @@ import html
 import io
 import json
 import os
+import random
 import re
 import sys
 
@@ -76,6 +96,13 @@ PAGES_URL = "https://emmaleonhart.github.io/shintowiki-scripts"
 # idempotent in a useful way and the duplicate work is pure cost, so it is excluded and the
 # sources are used directly.
 CONCATENATION_FILES = {"daily_operations.txt"}
+
+# ALL.txt is a PASTE, so it is bounded by what QuickStatements will actually take. Emma,
+# 2026-09-06: *"all.txt is simply too large, largest batches I found pasted in were 10,000
+# lines each. So we gotta have it be 10,000 randomly selected lines"*. The corpus is not
+# lost -- the per-file chunks beside it still hold every line -- and because the draw is
+# unseeded, regenerating deals a different hand, so repeated runs work through the corpus.
+SAMPLE = 10000
 
 
 def atomic_files():
@@ -182,6 +209,11 @@ def main(argv=None):
     ap.add_argument("--out", default=os.path.join(SITE_DIR, "emergency-batch.html"))
     ap.add_argument("--chunk", type=int, default=5000,
                     help="lines per .txt file (default 5000)")
+    ap.add_argument("--sample", type=int, default=SAMPLE,
+                    help="lines to draw into ALL.txt (default {}; 0 = the whole "
+                         "corpus)".format(SAMPLE))
+    ap.add_argument("--seed", type=int, default=None,
+                    help="seed the sample for a reproducible ALL.txt")
     ap.add_argument("--cache", default=os.path.join(REPO_ROOT, "_orphan_cache.json"),
                     help="orphan query cache from generate_orphan_label_fixes.py")
     args = ap.parse_args(argv)
@@ -277,13 +309,29 @@ def main(argv=None):
                  '<a href="orphan-label-fixes.html">Orphan label detail</a> · '
                  '<a href="index.html">dashboards</a></p>')
 
-    # ---- ALL.txt — the whole thing in one file, in run order ----
-    # Emma, 2026-09-06: "I'll just run all of atomic files at once then lol." The chunks stay
-    # for anyone who wants to go a piece at a time; this is the single paste. Order is the
-    # same and still matters: orphan labels lead, everything else follows.
-    all_lines = list(orphan_lines)
+    # ---- ALL.txt — a RUNNABLE SAMPLE, not the whole corpus ----
+    # It was the whole corpus (131,567 lines) until 2026-09-06, and that made it unpastable:
+    # Emma measured the largest batches actually accepted at ~10,000 lines each. So it is now
+    # a random draw of SAMPLE lines. The chunks written above are untouched and still hold
+    # every line for anyone going a piece at a time.
+    #
+    # SELECTED at random, not REORDERED: the draw picks which lines, then they are emitted in
+    # the original run order, so orphan labels still lead whatever came up. Shuffling would
+    # cost that for nothing.
+    corpus = list(orphan_lines)
     for _name, lines in per_file:
-        all_lines.extend(lines)
+        corpus.extend(lines)
+    corpus_total = len(corpus)
+    if args.sample and args.sample < corpus_total:
+        rng = random.Random(args.seed)
+        picked = sorted(rng.sample(range(corpus_total), args.sample))
+        all_lines = [corpus[i] for i in picked]
+        orphans_drawn = sum(1 for i in picked if i < len(orphan_lines))
+        print("ALL.txt — sampled {:,} of {:,} lines ({:,} orphan labels)".format(
+            len(all_lines), corpus_total, orphans_drawn))
+    else:
+        all_lines = corpus
+        orphans_drawn = len(orphan_lines)
     io.open(os.path.join(BATCH_DIR, "ALL.txt"), "w", encoding="utf-8",
             newline="\n").write("\n".join(all_lines) + "\n")
     all_bytes = sum(len(l.encode("utf-8")) + 1 for l in all_lines)
@@ -291,11 +339,12 @@ def main(argv=None):
 
     parts.insert(
         3,
-        '<p class="lede"><b>Running it all at once:</b> '
-        '<a href="emergency-batch/ALL.txt"><b>ALL.txt</b></a> — all {:,} lines in run order, '
-        'orphan labels first. {:.1f} MB, so GitHub will not preview it in the blob view; use '
-        'the <b>Raw</b> link and copy from there.</p>'.format(
-            len(all_lines), all_bytes / 1048576.0))
+        '<p class="lede"><b>One paste:</b> '
+        '<a href="emergency-batch/ALL.txt"><b>ALL.txt</b></a> — <b>{:,}</b> lines drawn at '
+        'random from the {:,} in the corpus ({:,} of them orphan labels), in run order. '
+        '{:.2f} MB. Sized to what QuickStatements actually accepts in one paste; regenerate '
+        'for a different draw. The per-file chunks below still hold every line.</p>'.format(
+            len(all_lines), corpus_total, orphans_drawn, all_bytes / 1048576.0))
 
     doc = "\n".join(parts)
     io.open(args.out, "w", encoding="utf-8", newline="\n").write(doc)
