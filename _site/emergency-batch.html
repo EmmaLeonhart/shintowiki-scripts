@@ -1,0 +1,310 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emergency batch — every QuickStatement, in run order</title>
+<style>
+ :root{--fg:#222;--muted:#666;--line:#e0e0e0;--accent:#b23c17;}
+ body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--fg);
+      margin:0 auto;padding:1rem;max-width:900px;line-height:1.5;}
+ h1{border-bottom:3px solid var(--accent);padding-bottom:.4rem;}
+ h2{margin-top:2rem;border-bottom:1px solid var(--line);padding-bottom:.25rem;font-size:1.1rem;}
+ .lede{background:#fdf3ef;border-left:4px solid var(--accent);padding:.8rem 1rem;border-radius:3px;}
+ .note{background:#f7f7f7;border-left:3px solid #bbb;padding:.5rem .8rem;font-size:.92rem;}
+ .muted{color:var(--muted);}
+ ul.files{columns:2;font-size:.92rem;}
+ ul.files li{break-inside:avoid;}
+ .chip{display:inline-block;background:#eef4ee;border:1px solid #cfe0cf;border-radius:12px;
+       padding:.1rem .55rem;font-size:.85rem;margin:.1rem;white-space:nowrap;}
+ code{background:#f0f0f0;padding:.05em .3em;border-radius:3px;}
+</style>
+
+<h1>Emergency batch</h1>
+<p class="lede"><b>Every generated QuickStatement, in run order.</b> Block 1 is the orphan-description labels and must run first; everything else follows. Paste one file at a time into QuickStatements — each is independent, so a run that dies loses only its own chunk.</p>
+<p class="lede"><b>Running it all at once:</b> <a href="emergency-batch/ALL.txt"><b>ALL.txt</b></a> — all 131,567 lines in run order, orphan labels first. 10.7 MB, so GitHub will not preview it in the blob view; use the <b>Raw</b> link and copy from there.</p>
+<p><b>131,567</b> lines total: <b>9,976</b> orphan labels, then <b>121,591</b> across 66 files. Generated 2026-09-06 21:29 UTC.</p>
+<h2>Block 1 — orphan-description labels</h2>
+<p class="note">These items each carry a <b>description with no label</b> in that language. On Wikidata the uniqueness constraint is on the <b>(label, description) pair</b>, so a description with no label stakes the half that matters least and can get the eventual label edit rejected — <b>a description with no label costs a label</b>. The standing remedy deletes the description; here we <b>add the label and keep it</b>, which is possible for 97% of them. That is why this block is first. Per language: <span class="chip">id 5,020</span> <span class="chip">uk 4,572</span> <span class="chip">nl 158</span> <span class="chip">de 20</span> <span class="chip">fr 20</span> <span class="chip">ar 12</span> <span class="chip">vi 10</span> <span class="chip">es 7</span> <span class="chip">zh 6</span> <span class="chip">ru 6</span> <span class="chip">ca 5</span> <span class="chip">pt 5</span> <span class="chip">pl 5</span> <span class="chip">ms 5</span> <span class="chip">ast 5</span> <span class="chip">eo 5</span> <span class="chip">zh-hant 4</span> <span class="chip">zh-hans 4</span> <span class="chip">tr 4</span> <span class="chip">sv 4</span> <span class="chip">sl 4</span> <span class="chip">ro 4</span> <span class="chip">nn 4</span> <span class="chip">nb 4</span> <span class="chip">min 4</span> <span class="chip">ko 4</span> <span class="chip">hu 4</span> <span class="chip">hr 4</span> <span class="chip">hi 4</span> <span class="chip">he 4</span> <span class="chip">gl 4</span> <span class="chip">fi 4</span> <span class="chip">fa 4</span> <span class="chip">eu 4</span> <span class="chip">el 4</span> <span class="chip">da 4</span> <span class="chip">cs 4</span> <span class="chip">bn 4</span> <span class="chip">it 4</span> <span class="chip">zh-tw 3</span> <span class="chip">zh-sg 3</span> <span class="chip">zh-mo 3</span> <span class="chip">zh-hk 3</span> <span class="chip">zh-cn 3</span> <span class="chip">jv 2</span> <span class="chip">pa 2</span> <span class="chip">mr 2</span> <span class="chip">as 2</span></p>
+<p><b>9,976</b> lines in <b>2</b> file(s).</p>
+<ul class="files">
+<li><a href="emergency-batch/00-orphan-labels.001.txt">00-orphan-labels.001.txt</a> <span class="muted">5,000 lines</span></li>
+<li><a href="emergency-batch/00-orphan-labels.002.txt">00-orphan-labels.002.txt</a> <span class="muted">4,976 lines</span></li>
+</ul>
+<h2>Blocks 2+ — everything else</h2>
+<p class="note">Ordered largest first. <code>daily_operations.txt</code> is excluded on purpose: it is a concatenation of these same files, so including it would run every line twice.</p>
+<h2>p6262_fandom_links.txt <span class="muted">12,779 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/p6262_fandom_links.001.txt">p6262_fandom_links.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/p6262_fandom_links.002.txt">p6262_fandom_links.002.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/p6262_fandom_links.003.txt">p6262_fandom_links.003.txt</a> <span class="muted">2,779</span></li>
+</ul>
+<h2>court_rank_people.txt <span class="muted">12,687 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/court_rank_people.001.txt">court_rank_people.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/court_rank_people.002.txt">court_rank_people.002.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/court_rank_people.003.txt">court_rank_people.003.txt</a> <span class="muted">2,687</span></li>
+</ul>
+<h2>bunrei.txt <span class="muted">9,975 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei.001.txt">bunrei.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/bunrei.002.txt">bunrei.002.txt</a> <span class="muted">4,975</span></li>
+</ul>
+<h2>temple_identical_name_en_labels.txt <span class="muted">8,755 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/temple_identical_name_en_labels.001.txt">temple_identical_name_en_labels.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/temple_identical_name_en_labels.002.txt">temple_identical_name_en_labels.002.txt</a> <span class="muted">3,755</span></li>
+</ul>
+<h2>sango_p1448.txt <span class="muted">7,603 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/sango_p1448.001.txt">sango_p1448.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/sango_p1448.002.txt">sango_p1448.002.txt</a> <span class="muted">2,603</span></li>
+</ul>
+<h2>saijin_deity_research.txt <span class="muted">6,796 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/saijin_deity_research.001.txt">saijin_deity_research.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/saijin_deity_research.002.txt">saijin_deity_research.002.txt</a> <span class="muted">1,796</span></li>
+</ul>
+<h2>description_label_pairs.txt <span class="muted">6,625 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/description_label_pairs.001.txt">description_label_pairs.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/description_label_pairs.002.txt">description_label_pairs.002.txt</a> <span class="muted">1,625</span></li>
+</ul>
+<h2>p11250_miraheze_links.txt <span class="muted">6,134 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/p11250_miraheze_links.001.txt">p11250_miraheze_links.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/p11250_miraheze_links.002.txt">p11250_miraheze_links.002.txt</a> <span class="muted">1,134</span></li>
+</ul>
+<h2>saijin_p825.txt <span class="muted">5,836 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/saijin_p825.001.txt">saijin_p825.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/saijin_p825.002.txt">saijin_p825.002.txt</a> <span class="muted">836</span></li>
+</ul>
+<h2>list_membership_rebuild.txt <span class="muted">5,584 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/list_membership_rebuild.001.txt">list_membership_rebuild.001.txt</a> <span class="muted">5,000</span></li>
+<li><a href="emergency-batch/list_membership_rebuild.002.txt">list_membership_rebuild.002.txt</a> <span class="muted">584</span></li>
+</ul>
+<h2>kana_qualifier_add.txt <span class="muted">4,956 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/kana_qualifier_add.txt">kana_qualifier_add.txt</a> <span class="muted">4,956</span></li>
+</ul>
+<h2>migrate_ritsuryo_funding_remove.txt <span class="muted">4,711 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/migrate_ritsuryo_funding_remove.txt">migrate_ritsuryo_funding_remove.txt</a> <span class="muted">4,711</span></li>
+</ul>
+<h2>souken_p571.txt <span class="muted">4,030 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/souken_p571.txt">souken_p571.txt</a> <span class="muted">4,030</span></li>
+</ul>
+<h2>reisai.txt <span class="muted">3,253 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/reisai.txt">reisai.txt</a> <span class="muted">3,253</span></li>
+</ul>
+<h2>shikinaisha_kokugakuin_refs.txt <span class="muted">2,715 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/shikinaisha_kokugakuin_refs.txt">shikinaisha_kokugakuin_refs.txt</a> <span class="muted">2,715</span></li>
+</ul>
+<h2>ronsha_ojp_name_removals.txt <span class="muted">2,300 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/ronsha_ojp_name_removals.txt">ronsha_ojp_name_removals.txt</a> <span class="muted">2,300</span></li>
+</ul>
+<h2>list_membership_removals.txt <span class="muted">2,195 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/list_membership_removals.txt">list_membership_removals.txt</a> <span class="muted">2,195</span></li>
+</ul>
+<h2>description_adds.txt <span class="muted">1,794 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/description_adds.txt">description_adds.txt</a> <span class="muted">1,794</span></li>
+</ul>
+<h2>identical_name_en_labels.txt <span class="muted">1,761 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/identical_name_en_labels.txt">identical_name_en_labels.txt</a> <span class="muted">1,761</span></li>
+</ul>
+<h2>jinjacho_p973.txt <span class="muted">1,526 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/jinjacho_p973.txt">jinjacho_p973.txt</a> <span class="muted">1,526</span></li>
+</ul>
+<h2>genbu_ids.txt <span class="muted">1,252 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/genbu_ids.txt">genbu_ids.txt</a> <span class="muted">1,252</span></li>
+</ul>
+<h2>kofun_imports.txt <span class="muted">1,041 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/kofun_imports.txt">kofun_imports.txt</a> <span class="muted">1,041</span></li>
+</ul>
+<h2>honzon_p825.txt <span class="muted">1,006 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/honzon_p825.txt">honzon_p825.txt</a> <span class="muted">1,006</span></li>
+</ul>
+<h2>orphan_membership_removals.txt <span class="muted">829 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/orphan_membership_removals.txt">orphan_membership_removals.txt</a> <span class="muted">829</span></li>
+</ul>
+<h2>souken_den_p571.txt <span class="muted">634 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/souken_den_p571.txt">souken_den_p571.txt</a> <span class="muted">634</span></li>
+</ul>
+<h2>beppyo_p612.txt <span class="muted">423 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/beppyo_p612.txt">beppyo_p612.txt</a> <span class="muted">423</span></li>
+</ul>
+<h2>kana_en_labels.txt <span class="muted">401 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/kana_en_labels.txt">kana_en_labels.txt</a> <span class="muted">401</span></li>
+</ul>
+<h2>province_exclusions.txt <span class="muted">376 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/province_exclusions.txt">province_exclusions.txt</a> <span class="muted">376</span></li>
+</ul>
+<h2>shinto_honorifics.txt <span class="muted">364 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/shinto_honorifics.txt">shinto_honorifics.txt</a> <span class="muted">364</span></li>
+</ul>
+<h2>temple_en_labels.txt <span class="muted">347 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/temple_en_labels.txt">temple_en_labels.txt</a> <span class="muted">347</span></li>
+</ul>
+<h2>en_labels_sonnet.txt <span class="muted">332 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/en_labels_sonnet.txt">en_labels_sonnet.txt</a> <span class="muted">332</span></li>
+</ul>
+<h2>kana_redundant_remove.txt <span class="muted">252 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/kana_redundant_remove.txt">kana_redundant_remove.txt</a> <span class="muted">252</span></li>
+</ul>
+<h2>task3_cites_existing.txt <span class="muted">243 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/task3_cites_existing.txt">task3_cites_existing.txt</a> <span class="muted">243</span></li>
+</ul>
+<h2>bunrei_shinwa_otaku.txt <span class="muted">205 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei_shinwa_otaku.txt">bunrei_shinwa_otaku.txt</a> <span class="muted">205</span></li>
+</ul>
+<h2>en_labels.txt <span class="muted">193 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/en_labels.txt">en_labels.txt</a> <span class="muted">193</span></li>
+</ul>
+<h2>multilingual_label_fixes.txt <span class="muted">156 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/multilingual_label_fixes.txt">multilingual_label_fixes.txt</a> <span class="muted">156</span></li>
+</ul>
+<h2>hisousha_p119_p547.txt <span class="muted">146 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/hisousha_p119_p547.txt">hisousha_p119_p547.txt</a> <span class="muted">146</span></li>
+</ul>
+<h2>address_citation_backfill.txt <span class="muted">140 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/address_citation_backfill.txt">address_citation_backfill.txt</a> <span class="muted">140</span></li>
+</ul>
+<h2>bunrei_ikkojin.txt <span class="muted">129 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei_ikkojin.txt">bunrei_ikkojin.txt</a> <span class="muted">129</span></li>
+</ul>
+<h2>bunrei_animism.txt <span class="muted">128 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei_animism.txt">bunrei_animism.txt</a> <span class="muted">128</span></li>
+</ul>
+<h2>kami_parent_qualifiers.txt <span class="muted">101 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/kami_parent_qualifiers.txt">kami_parent_qualifiers.txt</a> <span class="muted">101</span></li>
+</ul>
+<h2>bunrei_onkamui.txt <span class="muted">97 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei_onkamui.txt">bunrei_onkamui.txt</a> <span class="muted">97</span></li>
+</ul>
+<h2>label_typo_fixes.txt <span class="muted">79 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/label_typo_fixes.txt">label_typo_fixes.txt</a> <span class="muted">79</span></li>
+</ul>
+<h2>bunrei_nicovideo.txt <span class="muted">77 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei_nicovideo.txt">bunrei_nicovideo.txt</a> <span class="muted">77</span></li>
+</ul>
+<h2>shinmei_ids.txt <span class="muted">77 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/shinmei_ids.txt">shinmei_ids.txt</a> <span class="muted">77</span></li>
+</ul>
+<h2>p958_qualifiers.txt <span class="muted">68 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/p958_qualifiers.txt">p958_qualifiers.txt</a> <span class="muted">68</span></li>
+</ul>
+<h2>multi_ordinal_removals.txt <span class="muted">63 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/multi_ordinal_removals.txt">multi_ordinal_removals.txt</a> <span class="muted">63</span></li>
+</ul>
+<h2>shinto_short_names.txt <span class="muted">60 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/shinto_short_names.txt">shinto_short_names.txt</a> <span class="muted">60</span></li>
+</ul>
+<h2>doujou_address_fixes.txt <span class="muted">50 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/doujou_address_fixes.txt">doujou_address_fixes.txt</a> <span class="muted">50</span></li>
+</ul>
+<h2>tenjinsha_en_labels.txt <span class="muted">47 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/tenjinsha_en_labels.txt">tenjinsha_en_labels.txt</a> <span class="muted">47</span></li>
+</ul>
+<h2>category_label_fixes.txt <span class="muted">42 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/category_label_fixes.txt">category_label_fixes.txt</a> <span class="muted">42</span></li>
+</ul>
+<h2>bunrei_toranomaki.txt <span class="muted">40 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei_toranomaki.txt">bunrei_toranomaki.txt</a> <span class="muted">40</span></li>
+</ul>
+<h2>shintai_p825.txt <span class="muted">40 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/shintai_p825.txt">shintai_p825.txt</a> <span class="muted">40</span></li>
+</ul>
+<h2>miscellaneous_edits.txt <span class="muted">29 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/miscellaneous_edits.txt">miscellaneous_edits.txt</a> <span class="muted">29</span></li>
+</ul>
+<h2>french_elision_fixes.txt <span class="muted">25 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/french_elision_fixes.txt">french_elision_fixes.txt</a> <span class="muted">25</span></li>
+</ul>
+<h2>label_proposals_drip.txt <span class="muted">20 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/label_proposals_drip.txt">label_proposals_drip.txt</a> <span class="muted">20</span></li>
+</ul>
+<h2>sutra_profile.txt <span class="muted">18 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/sutra_profile.txt">sutra_profile.txt</a> <span class="muted">18</span></li>
+</ul>
+<h2>description_enrichment_en.txt <span class="muted">11 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/description_enrichment_en.txt">description_enrichment_en.txt</a> <span class="muted">11</span></li>
+</ul>
+<h2>p4656_jawiki_references.txt <span class="muted">10 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/p4656_jawiki_references.txt">p4656_jawiki_references.txt</a> <span class="muted">10</span></li>
+</ul>
+<h2>bunrei_qualifier_repair.txt <span class="muted">9 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/bunrei_qualifier_repair.txt">bunrei_qualifier_repair.txt</a> <span class="muted">9</span></li>
+</ul>
+<h2>migrate_ritsuryo_funding_underspecified_remove.txt <span class="muted">6 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/migrate_ritsuryo_funding_underspecified_remove.txt">migrate_ritsuryo_funding_underspecified_remove.txt</a> <span class="muted">6</span></li>
+</ul>
+<h2>sutra_label_rename.txt <span class="muted">3 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/sutra_label_rename.txt">sutra_label_rename.txt</a> <span class="muted">3</span></li>
+</ul>
+<h2>reisai_qualifier_repair.txt <span class="muted">2 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/reisai_qualifier_repair.txt">reisai_qualifier_repair.txt</a> <span class="muted">2</span></li>
+</ul>
+<h2>p3225_corporate_numbers.txt <span class="muted">2 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/p3225_corporate_numbers.txt">p3225_corporate_numbers.txt</a> <span class="muted">2</span></li>
+</ul>
+<h2>ronsha_ranking_qualifiers.txt <span class="muted">2 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/ronsha_ranking_qualifiers.txt">ronsha_ranking_qualifiers.txt</a> <span class="muted">2</span></li>
+</ul>
+<h2>cjk_ja_backfill.txt <span class="muted">1 lines</span></h2>
+<ul class="files">
+<li><a href="emergency-batch/cjk_ja_backfill.txt">cjk_ja_backfill.txt</a> <span class="muted">1</span></li>
+</ul>
+<p class="muted" style="margin-top:2rem">Built by <code>site/generate_emergency_batch.py</code>. <a href="orphan-label-fixes.html">Orphan label detail</a> · <a href="index.html">dashboards</a></p>

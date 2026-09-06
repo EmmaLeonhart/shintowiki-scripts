@@ -2,6 +2,19 @@
 
 A bot framework and automation pipeline for [shinto.miraheze.org](https://shinto.miraheze.org), with Wikidata integration via QuickStatements and a static GitHub Pages dashboard.
 
+## ⚡ Emergency batch — every QuickStatement, in run order
+
+**▶ [ALL.txt](https://github.com/EmmaLeonhart/shintowiki-scripts/raw/main/_site/emergency-batch/ALL.txt)** — all **131,567** lines in one file, ready to paste into QuickStatements.
+([chunked files](_site/emergency-batch/) · [page with per-language counts](https://emmaleonhart.github.io/shintowiki-scripts/emergency-batch.html) · [orphan detail](https://emmaleonhart.github.io/shintowiki-scripts/orphan-label-fixes.html))
+
+Linked here rather than only on the dashboard because the README updates the moment it is pushed, while Pages waits on a deploy.
+
+**Run order is deliberate.** The first **9,976** lines are labels for shrines that carry a *description with no label* in that language. Wikidata's uniqueness constraint is on the **(label, description) pair**, so a description with no label stakes the half that matters least, and when a label finally arrives the completed pair can collide — and it is the *label* edit that gets rejected. A description with no label costs a label. The standing remedy (`audit_orphan_descriptions.py`) therefore **deletes** the description; that is right only where no label exists. Measured 2026-09-06: **9,976 of 10,250 orphans (97%) already have a generated label** sitting in `shinto-label-generator/`, so for almost all of them the deletion would throw away a description we can complete instead. Hence labels first, then the remaining **121,591** lines.
+
+Nothing in the batch deletes a description. Regenerate with `python site/generate_emergency_batch.py`.
+
+---
+
 **Dashboard:** [emmaleonhart.github.io/shintowiki-scripts](https://emmaleonhart.github.io/shintowiki-scripts/) — project overview, QuickStatements status, and [run history](https://emmaleonhart.github.io/shintowiki-scripts/runs.html)
 
 **Wiki:** [shinto.miraheze.org](https://shinto.miraheze.org) — the wiki this pipeline maintains
