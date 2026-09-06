@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q137675136 -->
 <!-- JA: 波多岐神社 | EN_LABEL: (none) | BUCKET: b -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%B3%A2%E5%A4%9A%E5%B2%90%E7%A5%9E%E7%A4%BE -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: はたきじんじゃ -->
 <!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading
   GUESS: <hiragana>       the lead states no reading; this is derived (below)
