@@ -42,9 +42,21 @@ UA = WIKIDATA_USER_AGENT
 #
 # CAP is a runtime date-gate, NOT a commit-then-revert (Emma 2026-07-06: reverting
 # a config value is how things break — express the exception as a rule instead).
-# On the catch-up days below the cap is raised; every other day it is 300. At
-# ~30-90s/edit the 6h job timeout admits ~360 edits, so 500 is a real bump.
-_DEFAULT_MAX_EDITS = 300
+# _CAP_EXCEPTIONS raises the cap on named days; every other day takes the default.
+#
+# ⭐ DEFAULT RAISED 300 -> 500 on 2026-09-06, Emma: "I want 500 daily edit cap not
+# 300." This is the STANDING cap now, not a dated exception, so the two July entries
+# below are spent and no longer raise anything — they equal the default.
+#
+# ⚠ 500 IS NOT ALWAYS REACHABLE, and the arithmetic is worth keeping. Delay is
+# random in [MIN_DELAY, MAX_DELAY] = [30, 90]s, and the job's timeout-minutes is 360:
+#     at 30s/edit   500 edits = 4.2h   fits
+#     at 60s/edit   500 edits = 8.3h   TIMES OUT around edit ~360
+#     at 90s/edit   500 edits = 12.5h  times out around edit ~240
+# So a run that stops short of 500 is usually the 6h timeout, not a fault — the old
+# "~360 edits" note here assumed the 60s midpoint. A timed-out run has still made
+# every edit it got through; they are individually committed, not transactional.
+_DEFAULT_MAX_EDITS = 500
 _CAP_EXCEPTIONS = {
     datetime.date(2026, 7, 6): 500,
     datetime.date(2026, 7, 7): 500,

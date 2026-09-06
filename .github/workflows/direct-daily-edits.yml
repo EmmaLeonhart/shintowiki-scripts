@@ -13,9 +13,46 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  edit:
+  # ⏱ SEPTEMBER-ONLY TIMEOUT WINDOW. Emma, 2026-09-06: "raise the timeout minutes
+  # temporarily only in September if that's possible."
+  #
+  # Why it is needed: she raised _DEFAULT_MAX_EDITS from 300 to 500 the same day, and
+  # 500 does not fit the standing 360-minute timeout. Measured on run 34059230955 at
+  # ~61s per line (the midpoint of the [30, 90]s random delay), 500 lines is ~8.5h,
+  # so the job would be killed around line 360 every night and report red while having
+  # done most of its work. 540 minutes (9h) covers 500 lines at that rate.
+  #
+  # Why a job and not a literal: GitHub expressions have no date function, but
+  # `timeout-minutes` accepts an expression and the `needs` context is available to
+  # it. So the month is computed in a step, where `date` exists, and handed up.
+  #
+  # It EXPIRES BY ITSELF on 2026-10-01 — no revert, no diary entry, nothing to
+  # remember. That is deliberate and matches the same rule the edit cap follows
+  # (Emma 2026-07-06: "reverting a config value is how things break — express the
+  # exception as a rule instead"). If 500 is still wanted in October, widen the
+  # condition; do not reach for a manual edit on the 1st.
+  timeout-window:
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    outputs:
+      minutes: ${{ steps.pick.outputs.minutes }}
+    steps:
+      - id: pick
+        run: |
+          set -euo pipefail
+          month="$(date -u +%Y-%m)"
+          if [ "$month" = "2026-09" ]; then
+            echo "minutes=540" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Extended timeout::$month — 540 min, the September window for the 500-line cap."
+          else
+            echo "minutes=360" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Standard timeout::$month — 360 min. The September window has expired; if runs are now hitting the timeout, the 500 cap in direct_daily_edits.py is the thing to revisit."
+          fi
+
+  edit:
+    needs: timeout-window
+    runs-on: ubuntu-latest
+    # fromJSON because timeout-minutes wants a number and step outputs are strings.
+    timeout-minutes: ${{ fromJSON(needs.timeout-window.outputs.minutes) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
