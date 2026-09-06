@@ -7,6 +7,11 @@ lost-shrine creates: *"It is finished so it's not blocked lol shouldn't be in th
 that are built, wired and waiting only on the lockout date are recorded in `DEVLOG.md` and readable
 from `ATOMIC_FILES`; they are not queue items.
 
+## stuff to do today
+＊ I have decided that instead of removing katakana, any improper name in kana things should have the katakana replaced with hiragana, although wait that might not work based on citations and qualifiers so look over the presence of them before making a decision
+* look for other branches that are further along as one big one is having a lot of development now on claude cloud
+
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
