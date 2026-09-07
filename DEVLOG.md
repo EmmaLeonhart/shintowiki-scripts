@@ -67,6 +67,39 @@ list is a claim to test rather than a result to record), `queue.md` (sweep block
 
 ---
 
+## 2026-09-06: no branch is further along — the cloud sessions merge to main
+
+Emma's queue item: *"look for other branches that are further along as one big one is having a
+lot of development now on claude cloud"*. Surveyed every remote branch in shintowiki-scripts,
+central-command, geni and Topaz_Kingdom, by ahead/behind against each repo's own resolved
+default branch.
+
+**Nothing is stranded.** Every branch touched recently is `ahead=0` — already fully merged:
+
+| repo | newest branch | |
+|---|---|---|
+| shintowiki | `claude/wikidata-editing-repos-g4x13y` (09-06 23:02) | ahead=0, behind=4 |
+| geni | `claude/source-babes-patronymic-i4fgh9` (09-05) | ahead=0, behind=153 |
+| geni | `claude/geni-quickstatements-regen-woy1nl` (09-03) | ahead=0, behind=276 |
+| Topaz_Kingdom | nothing since 08-19 | |
+
+So the development she is seeing lands on `main` directly rather than accumulating on a branch.
+The sibling session working this repo tonight pushed straight to `main` — which is also why it
+collided with this session rather than diverging quietly.
+
+**Everything with unmerged commits is old and superseded**, and is left alone per the
+straggler-triage rule rather than re-litigated:
+
+* central-command `claude/day-reflection-tu4fcv` — 210 ahead but **9,250 behind**, 07-09.
+  Five siblings the same shape. A branch that far behind is not "further along"; the ahead
+  count is an artefact of how far main has moved.
+* geni's three — 2 commits each, 08-10 to 08-22, 1,126-1,846 behind.
+* shintowiki's — 03-01 to 07-09, all 1,370-6,265 behind.
+
+**Measured by recency, not by ahead-count.** A branch can be current AND fully merged, which is
+exactly the case for the three that matter; an ahead>0 filter alone would have reported them as
+absent and the stale ones as the live work.
+
 ## 2026-08-31 — Weekly Open-questions sweep: nothing open, block deleted
 
 The `<!-- weekly-oq-sweep --> 2026-08-31` item auto-added by

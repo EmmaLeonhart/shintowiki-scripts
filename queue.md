@@ -9,7 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 ＊ I have decided that instead of removing katakana, any improper name in kana things should have the katakana replaced with hiragana, although wait that might not work based on citations and qualifiers so look over the presence of them before making a decision
-* look for other branches that are further along as one big one is having a lot of development now on claude cloud
 
 
 - **Pinned tail (keep last)**
