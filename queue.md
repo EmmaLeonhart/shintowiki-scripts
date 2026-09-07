@@ -11,6 +11,9 @@ from `ATOMIC_FILES`; they are not queue items.
 ＊ I have decided that instead of removing katakana, any improper name in kana things should have the katakana replaced with hiragana, although wait that might not work based on citations and qualifiers so look over the presence of them before making a decision
 
 
+- **Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-09-07)**
+  Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
