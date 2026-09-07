@@ -157,9 +157,29 @@ def orphan_label_lines(cache_path):
 
     Reuses the cached orphan query if present so this does not re-hit WDQS; the join itself
     is entirely local against the generated label files.
+
+    With no cache, block 1 is read back off the previous run's own
+    `00-orphan-labels.*.txt` instead of coming out empty. `_orphan_cache.json` is untracked
+    and rebuilding it needs one WDQS request, which needs `WIKIDATA_EMAIL` for the
+    User-Agent — a repo secret. A checkout without it (a CI job, a fresh clone) would
+    otherwise regenerate a batch with NO orphan labels and overwrite the chunk files that
+    hold them, which is the one thing the run order exists to prevent. Only the `L` lines are
+    taken; the description lines interleaved into those files are re-hoisted below from the
+    CURRENT atomic files, so they refresh even when the label set does not.
     """
     if not os.path.exists(cache_path):
-        return [], {}
+        prior, per_lang = [], collections.Counter()
+        for path in sorted(glob.glob(os.path.join(BATCH_DIR, "00-orphan-labels*.txt"))):
+            for line in io.open(path, encoding="utf-8", errors="replace"):
+                line = line.strip()
+                f = line.split("|")
+                if len(f) >= 3 and f[0][:1] == "Q" and f[1][:1] == "L":
+                    prior.append(line)
+                    per_lang[f[1][1:]] += 1
+        if prior:
+            print("no orphan cache at {} — block 1 reused from the previous "
+                  "batch ({:,} labels)".format(cache_path, len(prior)))
+        return sorted(set(prior)), per_lang
     orphans = [tuple(r) for r in json.load(io.open(cache_path, encoding="utf-8"))]
     want_langs = {lang for _, lang, _ in orphans}
 
