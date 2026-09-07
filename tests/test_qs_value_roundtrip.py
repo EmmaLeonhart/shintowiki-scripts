@@ -36,7 +36,8 @@ for _p in (_ROOT, os.path.join(_ROOT, "shinto_miraheze")):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-from shinto_miraheze.qs_value import qs_escape, qs_unescape  # noqa: E402
+from shinto_miraheze.qs_value import (  # noqa: E402
+    MAX_PARSED_VALUE, qs_escape, qs_parse_value, qs_unescape)
 
 BS = chr(92)
 
@@ -202,3 +203,57 @@ def test_an_unknown_wikidata_answer_preserves_rather_than_drops():
     preserved, removed, _ = _gen.resolve_existing(
         {"Q1": "shinto:Page"}, {"Q1": "shinto:Page"}, {})
     assert preserved == {"Q1": "shinto:Page"} and removed == []
+
+
+# ── the bounded repair ────────────────────────────────────────────────────────────
+# Making parse-then-render a fixed point stopped the doubling. It does not shrink what
+# had already doubled, and the state-file repair could not reach this line: the state
+# does not know Q123999885 (its page is missing on miraheze -- the same reason it ran
+# away), so resolve_existing hands back the page's own text. Measured on the committed
+# p6262_fandom_links.txt on 2026-09-07, three days after the doubling was fixed: still
+# 1,048,623 characters of value, two runs of 524,287 backslashes.
+
+REAL_VALUE = 'shinto:List of Kofun in Japan with the Name "Hyō"'
+
+
+def _escaped_n_times(value, n):
+    for _ in range(n):
+        value = qs_escape(value)
+    return value
+
+
+def test_the_runaway_value_parses_back_to_the_real_title():
+    written = _escaped_n_times(REAL_VALUE, 19)
+    assert len(written) == 1048623, "the live line, reproduced"
+    assert qs_parse_value(written) == REAL_VALUE
+
+
+def test_the_repair_is_reached_only_by_values_that_cannot_be_titles():
+    """Unescaping to a fixed point is WRONG in general -- the length gate is the reason
+    it is right here. A value under the limit takes plain qs_unescape and the parse is
+    byte-for-byte what it was."""
+    for value in (r"a\b", "a\\\\b", "Template:\\", "Template:\\sandbox", 'q"uote', "plain"):
+        written = qs_escape(value)
+        assert len(written) <= MAX_PARSED_VALUE
+        assert qs_parse_value(written) == qs_unescape(written) == value
+
+
+def test_a_doubly_escaped_backslash_pair_survives_under_the_limit():
+    """The case fixed-point unescaping would corrupt, held below the gate on purpose."""
+    assert qs_parse_value(qs_escape("a\\\\b")) == "a\\\\b"
+
+
+def test_an_overlong_value_that_is_not_escaping_damage_is_left_alone():
+    long_plain = "shinto:" + "x" * (MAX_PARSED_VALUE * 2)
+    assert qs_parse_value(long_plain) == long_plain
+
+
+def test_the_committed_p6262_file_carries_no_runaway_line():
+    """The corpus feeds the daily drip and the emergency batch; a megabyte value in it
+    is a line that gets pasted or attempted."""
+    import io as _io
+    path = os.path.join(_ROOT, "modern-quickstatements", "p6262_fandom_links.txt")
+    if not os.path.exists(path):
+        return
+    for n, line in enumerate(_io.open(path, encoding="utf-8"), 1):
+        assert len(line) < 1000, "%s:%d is %d chars" % (path, n, len(line))

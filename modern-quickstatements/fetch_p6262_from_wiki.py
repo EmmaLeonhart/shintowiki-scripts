@@ -15,6 +15,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+from shinto_miraheze.qs_value import qs_escape, qs_parse_value
 from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import io
@@ -30,7 +31,7 @@ WIKI_API = "https://shinto.miraheze.org/w/api.php"
 SPARQL_URL = "https://query-main.wikidata.org/sparql"
 PAGE_TITLE = "QuickStatements/P6262"
 OUTPUT_FILE = "p6262_fandom_links.txt"
-QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"shinto:.+"$')
+QS_LINE_RE = re.compile(r'^(Q\d+)\|P6262\|"(shinto:.+)"$')
 
 
 def fetch_redirect_qids(qids):
@@ -127,13 +128,29 @@ def main():
         return
     wikitext = data.get("parse", {}).get("wikitext", {}).get("*", "")
 
+    # Lines are re-rendered through the escape pair rather than copied verbatim. This is
+    # the corpus entry point: whatever is on the page lands in an atomic file, and from
+    # there in the daily drip and the emergency batch. Q123999885 sat on the page at
+    # 1,048,623 characters — escape applied 19 times to
+    # `shinto:List of Kofun in Japan with the Name "Hyō"` — and the 2026-09-04 fix does
+    # not reach it: that repair re-derives a preserved line from duplicate_qids.state,
+    # which does not know this QID, because its page is missing on miraheze. Which is the
+    # same reason it ran away in the first place. Parsing here bounds the damage to the
+    # wiki page instead of letting it into the corpus, and takes effect on the next fetch
+    # rather than waiting on the Miraheze lockout to lift.
     p6262_lines = []
+    repaired = 0
     for line in wikitext.split("\n"):
         line = line.strip()
-        if QS_LINE_RE.match(line):
-            p6262_lines.append(line)
+        m = QS_LINE_RE.match(line)
+        if m:
+            rendered = '{}|P6262|"{}"'.format(m.group(1), qs_escape(qs_parse_value(m.group(2))))
+            if rendered != line:
+                repaired += 1
+                print(f"repaired {m.group(1)}: {len(line)} -> {len(rendered)} chars")
+            p6262_lines.append(rendered)
 
-    print(f"Found {len(p6262_lines)} P6262 lines on wiki page")
+    print(f"Found {len(p6262_lines)} P6262 lines on wiki page ({repaired} repaired)")
 
     existing_qids = fetch_existing_p6262_qids()
     if existing_qids is None:

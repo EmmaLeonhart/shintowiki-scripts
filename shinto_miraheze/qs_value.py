@@ -58,3 +58,40 @@ def qs_unescape(value: str) -> str:
             out.append(c)
             i += 1
     return "".join(out)
+
+
+# No value this pipeline writes comes near this. A MediaWiki page title is capped at 255
+# bytes and a Wikidata label/description at 250 characters, so every legitimate parsed
+# value -- a "shinto:Title" article id, an en label, a category label -- is an order of
+# magnitude under it. Runaway escaping is the only thing that produces a longer one, and it
+# produces one that is exponentially longer.
+MAX_PARSED_VALUE = 1000
+
+
+def qs_parse_value(value: str, limit: int = MAX_PARSED_VALUE) -> str:
+    r"""``qs_unescape`` for a value read off a QS page, with a bounded repair.
+
+    The 2026-09-04 fix made parse-then-render a FIXED POINT, which stopped Q123999885's
+    P6262 line doubling. It does not shrink it. The repair there re-derives a preserved
+    line from the state file, and that state does not know this QID -- its page is missing
+    on miraheze, so it never enters the fresh set, which is the same reason the line ran
+    away in the first place. ``desired.get(qid, on_page)`` therefore hands back the
+    corrupted page text, and the line has sat at 1,048,623 characters of value ever since:
+    two runs of 524,287 backslashes, or ``escape`` applied 19 times to
+
+        shinto:List of Kofun in Japan with the Name "Hyō"
+
+    ⚠ THE GATE IS WHAT MAKES THIS SAFE, and it is not a formality. Unescaping to a fixed
+    point is WRONG in general -- ``a\\b`` escapes to ``a\\\\b`` and a second unescape eats
+    a real backslash, which is why ``qs_unescape`` removes exactly one level. It is right
+    HERE only because a value over ``limit`` cannot be a title or a label at all, so
+    nothing legitimate reaches the loop. Under the limit this is plain ``qs_unescape`` and
+    the parse is unchanged.
+    """
+    if len(value) <= limit:
+        return qs_unescape(value)
+    while True:
+        reduced = qs_unescape(value)
+        if reduced == value:
+            return value
+        value = reduced
