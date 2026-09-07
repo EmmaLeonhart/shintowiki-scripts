@@ -67,6 +67,49 @@ list is a claim to test rather than a result to record), `queue.md` (sweep block
 
 ---
 
+## 2026-09-07: the pipeline works — 250/294, and the 44 failures are a two-hour window
+
+Run [`34059230955`](https://github.com/EmmaLeonhart/shintowiki-scripts/actions/runs/34059230955),
+dispatched by Emma from the GitHub mobile UI after the local permission classifier refused the
+CLI dispatch seven times. **success, 5h09m, 250 succeeded / 44 failed.** First Wikidata edits
+since 2026-08-18, and the answer to "I want to see if the pipeline works right now": it does.
+
+Every gate cleared — the lockout guard (Emma moved `locked_until` 09-18 -> 09-01 that day), the
+enwiki-mention condition (0 mentions), and the conflict-watch and damaged-item-archive steps.
+
+### The 44 failures are transient, not a data defect
+
+| hour UTC | OK | FAIL |
+|---|---|---|
+| 20 | 8 | 0 |
+| 21 | 58 | 0 |
+| 22 | 56 | 0 |
+| **23** | 24 | **30** |
+| **00** | 46 | **13** |
+| 01 | 58 | 1 |
+
+Three clean hours, a burst at 23:00Z peaking at a 56% failure rate, tapering back to ~2% by
+01:00Z. **Nothing about the lines changed across that boundary** — `P14005`, `P612`, `P571`,
+`P361`, `P825`, `P11250`, `P6262`, `P31` all appear on both sides of it, succeeding before and
+after and failing during. The message is Wikidata's generic `failed-save`.
+
+So this is a server-side window, and the useful conclusion is that **no line needs fixing**. The
+atomic files are self-healing and selection is random, so the 44 stay staged and get re-attempted
+on later runs; `execute_line` already answers a landed statement with "Skipped (already exists)",
+so a retry cannot double-apply.
+
+**What would have been the wrong read:** treating a 15% failure rate as a defect in the batch and
+going looking for bad lines. Grouping by property found no pattern; grouping by hour found the
+whole answer in one table. The register matters too — the run reports **success** and exits 0,
+because per-line failures are counted, not raised. The failures live only in the log.
+
+### Recorded because it will be asked again
+
+`_DEFAULT_MAX_EDITS` was 300 for this run and is 500 from the next one, with a September-only
+540-minute job timeout to fit it. At the measured pace — 294 attempts in 5h09m, ~63s each,
+consistent with the `[30, 90]s` random delay — 500 lines is ~8.7h, which is why the timeout had
+to move and why it moves back on 2026-10-01 by itself.
+
 ## 2026-09-06: no branch is further along — the cloud sessions merge to main
 
 Emma's queue item: *"look for other branches that are further along as one big one is having a
