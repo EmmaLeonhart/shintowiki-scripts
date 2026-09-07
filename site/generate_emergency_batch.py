@@ -92,12 +92,35 @@ def atomic_files():
 
 
 def read_lines(path):
+    """Atomic-file lines, with compound `||` units SPLIT into separate commands.
+
+    ⚠ THIS SPLIT IS REQUIRED AND WAS MISSING UNTIL 2026-09-06. `||` is a convention
+    private to `direct_daily_edits.py`, which splits on it at its line 834 to run sub-lines
+    sequentially and stop on the first failure. QuickStatements does NOT read a pasted `||`
+    that way: in the paste form commands are newline-separated, and `||` is only a command
+    separator in the URL (`&v1=`) form. So a pasted compound line is one malformed command.
+
+    `description_label_pairs.txt` is 3,285 compound lines out of 10,715 — the
+    "standardize the description, then add the label" pair from
+    `generate_description_fixes.py` (Emma's 2026-07-07 rule). Left joined, none of those
+    3,285 would have executed.
+
+    Splitting keeps the sub-lines ADJACENT AND IN ORDER, so the description edit still
+    precedes its label. What is lost is the atomicity: `direct_daily_edits` skips the label
+    when the description edit fails, and independent pasted lines cannot. The failure that
+    guards against is a label add colliding on the (label, description) pair — which is a
+    rejected edit, not damage. A malformed line that does nothing is worse.
+    """
     if not os.path.exists(path):
         return []
     out = []
     for line in io.open(path, encoding="utf-8", errors="replace"):
         line = line.rstrip("\n").strip()
-        if line and not line.startswith("#"):
+        if not line or line.startswith("#"):
+            continue
+        if "||" in line:
+            out.extend(s.strip() for s in line.split("||") if s.strip())
+        else:
             out.append(line)
     return out
 
@@ -189,6 +212,50 @@ def main(argv=None):
     # ---- block 1: the orphan-description labels, first by Emma's ordering ----
     orphan_lines, per_lang = orphan_label_lines(args.cache)
     print("block 1 — orphan labels: {:,} lines".format(len(orphan_lines)))
+
+    # ⚠ TWO OF EMMA'S RULES COLLIDE HERE, AND BOTH ARE SATISFIABLE.
+    #
+    #   2026-09-06: orphan-description labels run FIRST.
+    #   2026-07-07: "fix the DESCRIPTION first (standardized form), and only then may
+    #               label-adding QS touch the item" — because a non-standard description
+    #               collides on the (label, description) pair, and it is the LABEL edit that
+    #               gets rejected. That rule is why generate_description_fixes.py emits the
+    #               two as one compound `||` unit in the first place.
+    #
+    # Naively, block 1 breaks the July rule: the label goes to the front while its
+    # description standardization stays behind in block 2. Measured before this was added,
+    # 2,777 of the 3,285 pairs were separated exactly that way — the label running first with
+    # a stale description still on the item, which is the collision the pairing prevents.
+    #
+    # The fix is ordering, not choosing: hoist each paired description line into block 1
+    # IMMEDIATELY BEFORE its own label. Labels still lead the batch, and no label is ever
+    # attempted before its description is standardized.
+# Keyed by (QID, lang), NOT by the exact label string. Keying on the string caught only the
+    # compound `||` pairs and left 894 labels still running ahead of a standalone description
+    # row for the same item and language — the same defect in a shape the first fix missed.
+    # Every atomic file is scanned, because a description line for a block-1 item can sit in
+    # any of them, not only in description_label_pairs.txt.
+    desc_for = {}
+    for name in atomic_files():
+        if name in CONCATENATION_FILES:
+            continue
+        for line in read_lines(os.path.join(QS_DIR, name)):
+            f = line.split("|")
+            if len(f) >= 3 and f[1][:1] == "D" and f[0][:1] == "Q":
+                desc_for.setdefault((f[0], f[1][1:]), line)
+
+    hoisted, block1, taken = 0, [], set()
+    for lab in orphan_lines:
+        f = lab.split("|")
+        key = (f[0], f[1][1:]) if len(f) >= 3 else None
+        desc = desc_for.get(key) if key else None
+        if desc and desc not in taken:
+            block1.append(desc)
+            taken.add(desc)
+            hoisted += 1
+        block1.append(lab)
+    orphan_lines = block1
+    print("   hoisted {:,} description lines ahead of their labels".format(hoisted))
 
     # ---- block 2+: every other atomic file ----
     seen = set(orphan_lines)
