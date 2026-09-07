@@ -120,6 +120,33 @@ jobs:
         run: python generate_membership_removal_review_page.py
         continue-on-error: true
 
+      # ---- the emergency batch -------------------------------------------------------
+      # Wired in 2026-09-07. Both scripts existed and neither was in any workflow: the
+      # batch was referenced by one line of README.md and regenerated only by hand, while
+      # the atomic files under it are rebuilt by generate-quickstatements on every
+      # cleanup-loop fire. So it went stale daily — measured on 2026-09-07, 423 of ALL.txt's
+      # 10,000 lines no longer existed anywhere in the corpus.
+      #
+      # It belongs HERE and not in generate-quickstatements.yml, whose commit step is
+      # deliberately scoped to modern-quickstatements/ (git diff --name-only against that
+      # dir, then a clean/rebase/restore dance) and would have to be widened to carry root
+      # _site/. This job already commits root _site/ with a rebase-retry loop, already holds
+      # WIKIDATA_EMAIL for the User-Agent, and runs as the tail of cleanup-loop right after
+      # the QuickStatements are regenerated — so the batch is built from the corpus that
+      # cleanup-loop just wrote, in the same run.
+      #
+      # Order matters: the orphan query writes _orphan_cache.json, which the batch reads for
+      # block 1. continue-on-error on the query only — a WDQS 429 leaves no cache, and the
+      # batch then falls back to the previous run's own 00-orphan-labels chunks rather than
+      # emitting an empty block 1. The batch step itself is offline and deterministic, so a
+      # failure there is a real fault and should redden the run.
+      - name: Refresh orphan-description query and detail page (live SPARQL, one request)
+        continue-on-error: true
+        run: python3 site/generate_orphan_label_fixes.py --cache _orphan_cache.json
+
+      - name: Build the emergency batch (every QuickStatement, orphan labels first)
+        run: python3 site/generate_emergency_batch.py
+
       - name: Combine sites
         run: |
           # Copy QS dashboard pages into main _site, renaming index to avoid collision

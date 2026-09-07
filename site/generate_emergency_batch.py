@@ -215,8 +215,19 @@ def orphan_label_lines(cache_path):
 
 
 def write_chunks(name, lines, chunk):
-    """Split into chunk-sized .txt files; return [(filename, count)]."""
+    """Split into chunk-sized .txt files; return [(filename, count)].
+
+    Pre-existing chunks for this name are DELETED first. A batch that shrinks between runs
+    otherwise leaves its high-numbered chunks behind — unlinked from the page but still on
+    disk and still committed, so a `.003` of lines that no longer exist reads as live. That
+    matters most for `00-orphan-labels`, which shrinks as its labels get applied and which
+    `orphan_label_lines()` reads back when there is no WDQS cache: a stale chunk left here
+    would resurrect dead labels into block 1 on the next cache-less run.
+    """
     os.makedirs(BATCH_DIR, exist_ok=True)
+    for stale in (glob.glob(os.path.join(BATCH_DIR, "{}.txt".format(name)))
+                  + glob.glob(os.path.join(BATCH_DIR, "{}.[0-9][0-9][0-9].txt".format(name)))):
+        os.remove(stale)
     written = []
     if not lines:
         return written

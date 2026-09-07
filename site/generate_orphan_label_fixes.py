@@ -185,8 +185,18 @@ def render(rows_by_lang, orphan_counts, generated_at):
         '<code>docs/description_label_policy.md</code>.</p>')
     parts.append(
         '<p><b>{:,}</b> fixable rows across <b>{}</b> languages, out of <b>{:,}</b> orphan '
-        'descriptions total. Generated {} — read-only, one SPARQL request.</p>'.format(
-            total_fix, len(langs), total_orphan, esc(generated_at)))
+        'descriptions total. The other <b>{:,}</b> have <b>no generated label</b> and are '
+        'the removal residue — <code>audit_orphan_descriptions.py</code>\'s population, to '
+        'be removed or given a changed description. Generated {} — read-only, one SPARQL '
+        'request.</p>'.format(
+            total_fix, len(langs), total_orphan, total_orphan - total_fix,
+            esc(generated_at)))
+    if not langs:
+        parts.append(
+            '<p class="lede"><b>Nothing is fixable any more.</b> Every orphan description '
+            'left is residue: there is no generated label for it, so the choice is removal '
+            'or a changed description. That is the endpoint this page was built to detect, '
+            'not an error.</p>')
 
     parts.append('<div class="counts">')
     for lang in langs:
@@ -268,9 +278,21 @@ def main(argv=None):
     for lang, rows in sorted(rows_by_lang.items(), key=lambda kv: -len(kv[1]))[:12]:
         print("   {:<8} {:>6,} of {:>6,}".format(lang, len(rows), orphan_counts[lang]))
 
+    # The REMOVAL RESIDUE: orphans with no generated label, which is the other half of the
+    # partition in this module's docstring and the population `audit_orphan_descriptions.py`
+    # owns. It is the number that decides what to do next, so it is printed and rendered
+    # rather than left to be derived by subtracting two totals.
+    residue = len(orphans) - total
+    print("removal residue (orphan, no generated label): {:,} of {:,}".format(
+        residue, len(orphans)))
+
+    # ⚠ DO NOT restore the `return 1` that used to stand here when nothing was fixable.
+    # As the fixable labels get applied this page converges on exactly that state — every
+    # remaining orphan needing removal or a changed description — and bailing would delete
+    # nothing but the report saying so, at the moment it becomes the whole answer. An empty
+    # fixable set is a result, not a failure.
     if not rows_by_lang:
-        print("nothing to render — no orphan had a generated label")
-        return 1
+        print("no orphan had a generated label — every remaining orphan is removal residue")
 
     generated_at = datetime.datetime.now(datetime.timezone.utc).strftime(
         "%Y-%m-%d %H:%M UTC")
