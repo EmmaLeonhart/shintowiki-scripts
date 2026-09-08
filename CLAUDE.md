@@ -599,22 +599,6 @@ The habit came from shell heredocs breaking on quoting. The fix is not a temp fi
 
 ## Gotchas
 
-* **⛔ A JOB-level `timeout-minutes` CANNOT read `needs.*.outputs` — it silently becomes 360.**
-  Measured 2026-09-08. `direct-daily-edits.yml` computed a month-dependent timeout in a
-  `timeout-window` job and used `timeout-minutes: ${{ fromJSON(needs.timeout-window.outputs.minutes) }}`
-  on the `edit` job. The gate job SUCCEEDED and logged `##[notice]2026-09 — 540 min` and
-  `Set output 'minutes'` — and the edit job was still killed at 6h00m to the second on three
-  consecutive runs (`34078114907`, `34145346999`, `34171848333`). A job's timeout is fixed when
-  the workflow graph is built, before any needed job has run, so the expression resolves to
-  nothing and GitHub applies its **default of 360 minutes**. There is no error, no warning and no
-  annotation — and a job killed by timeout reports `cancelled`, which reads like someone cancelled
-  it rather than like a misconfiguration. The result: the September window Emma asked for never
-  applied once, and every run since the cap went 300→500 was cut around line 360.
-  **The fix is to put the expression on the STEP**, which is evaluated at run time when `needs`
-  has resolved, and leave a static ceiling on the job above it. Same failure family as the
-  wrong-default-branch and suppressed-submodule-`m` gotchas: not an error, just a value that
-  reads as health.
-
 * **Urgency: corrupted/time-sensitive DATA beats pipeline glitches.** A broken
   automated *pipeline* (cleanup-loop, an orchestrator timing out) is often the
   LEAST urgent thing — it's durable infrastructure, fixable any time, and a delay

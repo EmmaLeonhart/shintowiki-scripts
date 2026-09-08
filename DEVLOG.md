@@ -4,57 +4,6 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
-## 2026-09-08 — the September timeout window never once applied, and the gates had both flipped
-
-Started as a status check on the hub's top blocked item and turned into two findings, both of the
-same shape: a value that reads as health.
-
-**Both lockout gates were the opposite of what the hub queue recorded.** Re-read from the state
-files rather than from prose:
-- **Wikidata is OPEN and has been for a week.** Emma moved `locked_until` from 2026-09-18 to
-  **2026-09-01** in `f260f875` on 09-06 — to a date already past, which is how that gate is
-  released; her own reason text says "or letting the date pass". `wikidata_edit_allowed.py`
-  honours the date over the stale `locked: true`, so it returns ALLOWED. The enwiki-mention gate
-  is `clear: true`, 0 mentions on both watched pages. Both conditions the hub's blocked item named
-  had fired, unnoticed, since 09-01.
-- **shinto.miraheze is LOCKED until 2026-09-14**, auto-locked 09-06 when the weekly edit-test hit
-  a 403. It re-tests itself Sunday. The hub queue said this one was open.
-
-The hub queue item is closed rather than unblocked, because there is nothing left in it for a
-session to do: the QuickStatements paste path was retired 2026-07-04 ("no manual batch ever"), so
-`direct_daily_edits.py` is the only editor and it resumed by itself when the gate opened.
-
-**The real defect: the September timeout window has never applied.** Three consecutive runs
-(`34078114907`, `34145346999`, `34171848333`) show the `timeout-window` job succeeding, logging
-`##[notice]2026-09 — 540 min` and `Set output 'minutes'` — and the `edit` job killed at **6h00m to
-the second** every time. 360 minutes is GitHub's default, which is what you get when a JOB-level
-`timeout-minutes` expression fails to resolve: a job's timeout is fixed when the graph is built,
-before any needed job has produced outputs. No error, no warning, no annotation, and a timed-out
-job reports `cancelled` — which reads like someone cancelled it.
-
-So Emma raised the cap 300→500 on 09-06 and asked for the longer timeout in the same breath, and
-the timeout silently stayed at 360. Every run since was cut around line 360 at ~61s/line and
-reported red having done most of its work — exactly the failure the window was written to prevent.
-The workflow's own comment asserted "`timeout-minutes` accepts an expression and the `needs`
-context is available to it", and that premise is simply wrong.
-
-**Fixed** by moving the month-dependent value to the edit STEP, where it is evaluated at run time
-and `needs` has resolved, with a static `550` ceiling on the job above it. The self-expiring design
-Emma asked for is preserved — October reverts to 360 by itself, no manual edit on the 1st.
-Recorded in `CLAUDE.md` under Gotchas, beside the other not-an-error-just-a-blank failures.
-
-**Also:** deleted `wikidata-burst-2026-09-06.yml` (Emma approved). Its date gate can never match
-again, so it was firing twice an hour to exit immediately — 12 no-op runs on 09-08 alone — and its
-own header said to delete it once spent. `cleanup-loop.yml` (daily 02:23 UTC) is what actually
-schedules the drip, so nothing stops. Corrected the lockout-guard comment too, which duplicated a
-date ("through 2026-09-17") in the same breath as claiming no date was duplicated, and the
-duplicated date was wrong.
-
-**Files:** `.github/workflows/direct-daily-edits.yml`, `.github/workflows/wikidata-burst-2026-09-06.yml`
-(deleted), `CLAUDE.md`, `DEVLOG.md`.
-
----
-
 ## 2026-09-05 — the monthly sweep's Open list was empty, and that was the defect
 
 The `<!-- monthly-verify-sweep --> 2026-09-01` block asked for every Open item in
