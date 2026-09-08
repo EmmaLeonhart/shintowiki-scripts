@@ -51,8 +51,20 @@ jobs:
   edit:
     needs: timeout-window
     runs-on: ubuntu-latest
-    # fromJSON because timeout-minutes wants a number and step outputs are strings.
-    timeout-minutes: ${{ fromJSON(needs.timeout-window.outputs.minutes) }}
+    # ⚠ STATIC CEILING ONLY — do NOT put the month expression back here.
+    # A JOB-level `timeout-minutes` referencing `needs.*.outputs` does not work: the
+    # job's timeout is fixed when the workflow graph is built, before any needed job
+    # has produced outputs, so the expression silently degrades to GitHub's DEFAULT of
+    # 360 — no error, no warning, no annotation. Measured 2026-09-08 on three
+    # consecutive runs (34078114907, 34145346999, 34171848333): the `timeout-window`
+    # job logged `##[notice]2026-09 — 540 min` and `Set output 'minutes'` and SUCCEEDED,
+    # and the `edit` job was still killed at 6h00m to the second every time. So the
+    # September window has never actually applied; every run since the cap went to 500
+    # was cut around line 360 and reported `cancelled` — precisely the failure the
+    # window was added to prevent.
+    # This number is only a backstop above the real limit, which is on the edit STEP
+    # below, where the `needs` context is evaluated at run time and does resolve.
+    timeout-minutes: 550
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -93,9 +105,11 @@ jobs:
         continue-on-error: true
 
       # ⛔ WIKIDATA LOCKOUT GUARD. Single source of truth:
-      # shinto_miraheze/wikidata_editing_lockout.state (Emma 2026-08-18 — no Wikidata
-      # editing for a month, through 2026-09-17). No date is duplicated here; the guard
-      # exits 1 while locked. The script below ALSO checks it in code, so this step is
+      # shinto_miraheze/wikidata_editing_lockout.state. This comment used to say
+      # "through 2026-09-17" in the same breath as "no date is duplicated here" — and
+      # the duplicated date was wrong: Emma moved `locked_until` to 2026-09-01 on
+      # 2026-09-06 (f260f875), so the lockout expired and the drip resumed. Now really
+      # no date is duplicated here; the guard exits 1 while locked. The script below ALSO checks it in code, so this step is
       # belt-and-braces — it just stops the run before it even logs in, and makes the
       # skip visible in the run log rather than buried in the script's stdout.
       - name: Wikidata lockout guard
@@ -110,6 +124,10 @@ jobs:
 
       - name: Execute edits via Wikidata API
         if: steps.wikidata_lockout.outputs.open == 'true'
+        # THE REAL TIMEOUT. Step-level `timeout-minutes` is evaluated when the step
+        # runs, so `needs` has resolved by then and the September window actually
+        # takes effect here. Keep the job ceiling above whatever this can return.
+        timeout-minutes: ${{ fromJSON(needs.timeout-window.outputs.minutes) }}
         working-directory: modern-quickstatements
         env:
           MW_BOTNAME: ${{ secrets.MW_BOTNAME }}
