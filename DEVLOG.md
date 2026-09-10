@@ -4,6 +4,112 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-09 — the kana removal was deleting official names, and had already taken four
+
+Emma's queue note asked a narrow question: *"instead of removing katakana, any improper name in
+kana things should have the katakana replaced with hiragana, although wait that might not work
+based on citations and qualifiers so look over the presence of them before making a decision"*.
+The look found the operation itself was never possible.
+
+### QuickStatements has no qualifier removal, so the line removed the statement
+
+`generate_kana_qualifier_remove.py` emitted 332 lines of this shape:
+
+    -Q135040123|P1448|ojp-hani:"白城神社"|P1814|"シラキノ"
+
+Its docstring said this stripped the redundant raw katakana qualifier from the official name, the
+カミノヤシロ one having landed already. `Help:QuickStatements` lists *"remove a qualifier without
+removing the statement itself"* under what QuickStatements cannot do: a `-` line removes the whole
+statement, whatever fields follow it. `direct_daily_edits.execute_removal` arrives at the same
+place by its own route — it parses the trailing qualifier fields, ignores them, matches on
+entity+property+value and calls `wbremoveclaims` on the claim.
+
+**Four had run.** Removal resumed when Emma lifted the Wikidata lockout on 2026-09-06 (`f260f875`,
+`locked_until` 2026-09-18 → 2026-09-01, which is already past). Each of these now has no `P1448`
+at all, confirmed against the live items and against the revision that did it:
+
+| item | name | deleted | edit summary |
+|---|---|---|---|
+| Q135040123 | 白城神社 | 2026-09-07T21:16Z | `wbremoveclaims-remove:1| [[Property:P1448]]: 白城神社` |
+| Q135070009 | 御食神社 | 2026-09-07T19:33Z | ″ |
+| Q135194697 | 風速神社 | 2026-09-07T19:21Z | ″ |
+| Q135195565 | 大神社 | 2026-09-08T20:30Z | ″ |
+
+Each lost the official name, its two references, its `P1264`, and the カミノヤシロ qualifier that
+`generate_kana_qualifier_add.py` had put there — the add step's own work, undone by the remove step
+that was supposed to complete it.
+
+### The measurement Emma asked for
+
+All 332 pending lines matched a live statement. Every one carried references — 325 with two, 7 with
+one — and 329 carried a `P1264` besides the `P1814`. The 46 top-level `P1814` lines in the same
+file are a different shape and are correct: a top-level reading is its own statement, so removing it
+is what the line says. Those stay.
+
+### What the file's growth hid
+
+`kana_redundant_remove.txt` went 0 → 252 → 378 lines and never shrank, which reads as "nothing has
+executed". It was the wrong test. Adds outpaced removals, so the count grew while lines were
+running. Diffing consecutive commits for lines that *vanished* found them: three gone on 09-08, one
+on 09-09, plus one legitimate top-level removal on Q135070298. A monotone counter is not evidence
+about the events underneath it.
+
+### Stopped, guarded, restored
+
+- The generator no longer emits the sibling shape; the SPARQL still binds `?sibling` so the shape
+  stays documented where it used to fire. `ml()` went with it.
+- `kana_redundant_remove.txt` pruned to its 46 correct lines, so the next drip could not take a
+  fifth.
+- `execute_removal` now refuses any removal line carrying qualifier or reference fields, with the
+  reason in the message. `p958_corrections.txt` has the same shape and is unregistered; if it is
+  ever wired in, it is refused rather than silently destructive.
+- `tests/test_qualifier_removal_is_refused.py` pins the refusal, pins that a plain removal still
+  reaches `find_claim`, pins that no registered atomic file emits the shape, and pins the generator.
+- `generate_ojp_name_restores.py` → `ojp_name_restores.txt`, registered in both `ATOMIC_FILES`
+  lists and in `generate-quickstatements.yml`. 21 lines: content copied verbatim from each removing
+  edit's parent revision, so it is a restore and no value is inferred. One line per qualifier and
+  per reference block, because `execute_set_qualifier` fails the whole line when any one qualifier
+  is already present — the fat-line version becomes unrunnable the moment a piece of it lands, and
+  under the drip's random order some piece always lands first. Add-only and self-healing: it
+  re-asks Wikidata each build and goes empty when all four are whole.
+
+### Emma's three rulings
+
+**The four:** *"Rebuild them from history."* Done, above.
+
+**The 332 that are left:** leave them. The redundant qualifier is harmless next to the カミノヤシロ
+one, and clearing it needs an operation QuickStatements does not have. *"I later on want there to be
+a more sophisticated, non-click-statement-based pipeline that fixes this stuff up, but for now we're
+leaving them. This is a long-term thing. Let's say you set up GitHub Actions to put it into the
+queue a month from now."* → `.github/workflows/kana-sibling-pipeline-requeue.yml`, date-gated to
+2026-10-09, self-disabling through `shinto_miraheze/kana_sibling_pipeline_requeue.state` rather
+than a queue.md marker — queue items are deleted when done, so a marker guard would re-add the item
+the day after it was worked.
+
+**What her note actually meant**, and it was not this pipeline: *"When I said the katakana should be
+replaced, this is something that very specifically refers to katakana that are in the raw name, as
+Kana category. The raw name is Kana, as a top-level property. I don't think there are that many that
+have katakana there anymore."*
+
+She is right about the size. Of 9,314 shrine `P1814` statements, 772 are katakana-only, and 745 of
+those sit on items with an ojp-hani `P1448` — the kana-qualifier pipeline's own population.
+**27 statements on 26 items are left**, and no generator in the repo can reach them, because every
+one of them keys on the ojp-hani name these items do not have. Measured, split and annotated in
+`docs/katakana_name_in_kana_2026-09.md`; four already carry rulings (one fix, one correct as it
+stands, one deity in a reading field, one item that is an onsen), leaving six of ordinary work.
+All 26 have an English label, so the reading is derived from it, never read out of an article.
+
+### Also
+
+`tests/test_rate_limit_sentinel.py` was sitting untracked with a syntax error — `"\n".join` written
+as a literal newline inside the string, so the module could not be collected and the fix it guards
+was unpinned. Fixed and committed with the `direct_daily_edits.py` change it belongs to.
+
+Two tests fail and predate this session, both downstream of the 09-06 lockout lift; queued rather
+than folded in here.
+
+---
+
 ## 2026-09-05 — the monthly sweep's Open list was empty, and that was the defect
 
 The `<!-- monthly-verify-sweep --> 2026-09-01` block asked for every Open item in

@@ -13,10 +13,29 @@ official name. Because the confirmation is in the SPARQL itself, a removal can
 never be generated before the add has actually landed — so the raw katakana
 reading is never lost.
 
+⛔ **THE SIBLING-QUALIFIER HALF IS GONE (2026-09-09). QuickStatements cannot remove
+a qualifier.** `Help:QuickStatements` lists *"remove a qualifier without removing the
+statement itself"* under what QuickStatements cannot do: a `-` line removes the whole
+statement, whatever fields follow it. So the line this generator used to emit —
+
+    -Q135040123|P1448|ojp-hani:"白城神社"|P1814|"シラキノ"
+
+did not strip the redundant katakana qualifier. It deleted the entire ojp-hani official
+name, taking the statement's references, its P1264, and the カミノヤシロ qualifier that
+`generate_kana_qualifier_add.py` had just put there. `direct_daily_edits.execute_removal`
+does the same thing by a different route: it parses the trailing qualifier fields and then
+ignores them, matching on entity+property+value and calling `wbremoveclaims` on the claim.
+
+Measured on the 332 pending lines, 2026-09-09: every one carried references (325 with two,
+7 with one) and 329 carried a P1264 besides the P1814. **Four had already executed** —
+Q135040123, Q135070009, Q135194697 (2026-09-07/08) and Q135195565 (2026-09-08), each now
+with no P1448 at all. Removal resumed when Emma lifted the Wikidata lockout on 2026-09-06.
+
+Only the top-level branch survives, and it is a genuine whole-statement removal, so
+QuickStatements expresses it correctly.
+
 For each ojp-hani P1448 that has a confirmed `<base>カミノヤシロ` qualifier, it
-removes the now-redundant raw `<base>` katakana wherever it still sits:
-  * as a sibling P1814 qualifier on the same official name (safe per-statement —
-    that statement already carries the カミノヤシロ qualifier), and/or
+removes the now-redundant raw `<base>` katakana where it sits:
   * as a top-level P1814 statement on the item — but ONLY once EVERY ojp-hani
     P1448 name on the item already carries a カミノヤシロ qualifier. This guard
     matters for multi-name items (a shrine proposed as the site of several
@@ -98,11 +117,6 @@ def is_katakana(value):
     return has_kata and not has_hira
 
 
-def ml(text):
-    esc = text.replace("\\", "\\\\").replace('"', '\\"')
-    return f'{OJP}:"{esc}"'
-
-
 def s(text):
     esc = text.replace("\\", "\\\\").replace('"', '\\"')
     return f'"{esc}"'
@@ -141,12 +155,11 @@ def main():
         base = r["done"]["value"][: -len(SUFFIX)]   # e.g. エノカミノヤシロ -> エノ
         if not base:
             continue
-        sib = r.get("sibling", {}).get("value")
-        if sib and sib == base and is_katakana(sib):
-            key = ("q", item, on, sib)
-            if key not in seen:
-                seen.add(key)
-                lines.append(f'-{item}|P1448|{ml(on)}|P1814|{s(sib)}')
+        # ⛔ THE SIBLING-QUALIFIER REMOVAL IS NOT EMITTED — see the module docstring.
+        # `-<item>|P1448|<name>|P1814|<sib>` does not remove the sibling qualifier; it
+        # removes the whole P1448 official-name statement. Kept unemitted rather than
+        # deleted so the SPARQL still binds ?sibling and the shape is documented where
+        # it used to fire.
         top = r.get("top", {}).get("value")
         if top and top == base and is_katakana(top):
             key = ("t", item, top)

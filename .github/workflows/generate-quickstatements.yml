@@ -266,6 +266,14 @@ jobs:
           sleep 5
           python generate_kana_qualifier_remove.py
 
+      # Restores the four ojp-hani official names the REMOVE step above destroyed
+      # before its sibling-qualifier half was stopped (2026-09-09). Self-healing:
+      # writes 0 lines once all four are whole again.
+      - name: Generate ojp-hani official-name restores
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_ojp_name_restores.py
+
       # Must run AFTER label_typo_fixes.txt is up to date — it reads that file to
       # learn which English name changed, then rewrites the fr/id/de/tr labels
       # built on the old one. Self-healing: it skips any item whose en label has

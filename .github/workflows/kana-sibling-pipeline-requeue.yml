@@ -1,0 +1,114 @@
+name: Requeue the kana sibling-qualifier pipeline
+
+# ONE-SHOT, DATE-GATED. On or after 2026-10-09 this appends a single queue.md item
+# asking for the sophisticated non-QuickStatements pipeline that can fix a qualifier
+# without destroying the statement it sits on — then records that it has fired and
+# never fires again.
+#
+# Emma, 2026-09-09, on the 332 official names still carrying a redundant raw katakana
+# P1814 beside their カミノヤシロ one: "I later on want there to be a more
+# sophisticated, non-click-statement-based pipeline that fixes this stuff up, but for
+# now we're leaving them. This is a long-term thing. Let's say you set up GitHub
+# Actions to put it into the queue a month from now."
+#
+# The month is the point. Nothing here is urgent: the redundant qualifier is harmless,
+# and the destructive removal that prompted all this was stopped the same day.
+#
+# Self-disabling via shinto_miraheze/kana_sibling_pipeline_requeue.state, NOT via a
+# marker in queue.md — queue items are deleted when done, so a marker guard would
+# re-add the item the day after it was worked.
+
+on:
+  schedule:
+    # Daily 06:41 UTC, off the :00 mark. Gated on the date inside, so every run
+    # before 2026-10-09 is a no-op.
+    - cron: "41 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  requeue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Append the item once the date has arrived
+        run: |
+          python3 - <<'PY'
+          import datetime, json, pathlib, sys
+
+          DUE = datetime.date(2026, 10, 9)
+          state = pathlib.Path("shinto_miraheze/kana_sibling_pipeline_requeue.state")
+
+          if state.exists() and json.loads(state.read_text(encoding="utf-8")).get("queued"):
+              print("Already queued once; this workflow is spent.")
+              sys.exit(0)
+
+          today = datetime.datetime.now(datetime.timezone.utc).date()
+          if today < DUE:
+              print(f"Not due until {DUE} (today is {today}).")
+              sys.exit(0)
+
+          item = (
+              "- [ ] Build the non-QuickStatements pipeline that can edit a QUALIFIER "
+              "without destroying its statement.\n"
+              "  Emma, 2026-09-09: *\"I later on want there to be a more sophisticated, "
+              "non-click-statement-based pipeline that fixes this stuff up... This is a "
+              "long-term thing.\"* Population: the 332 ojp-hani P1448 official names "
+              "carrying a redundant raw katakana P1814 beside their カミノヤシロ one. "
+              "QuickStatements cannot express this — `Help:QuickStatements` lists "
+              "*\"remove a qualifier without removing the statement itself\"* under what "
+              "it cannot do, which is why the old `kana_redundant_remove.txt` lines "
+              "deleted four whole official names instead (DEVLOG 2026-09-09). So this "
+              "is the sanctioned exception to CLAUDE.md's one-mechanism rule: SHE asked "
+              "for it. Do not refuse it on that rule, and do not route ordinary work "
+              "around the QS pipeline because this exists.\n\n"
+          )
+
+          q = pathlib.Path("queue.md")
+          text = q.read_text(encoding="utf-8")
+          # Before the pinned tail, which by its own instruction stays last.
+          lines = text.splitlines(keepends=True)
+          at = next((i for i, ln in enumerate(lines) if "Pinned tail (keep last)" in ln),
+                    len(lines))
+          q.write_text("".join(lines[:at]) + item + "".join(lines[at:]), encoding="utf-8")
+
+          state.write_text(json.dumps({
+              "queued": True,
+              "queued_on": today.isoformat(),
+              "due": DUE.isoformat(),
+              "reason": "Emma 2026-09-09: requeue the sophisticated qualifier-editing "
+                        "pipeline a month out.",
+          }, indent=2) + "\n", encoding="utf-8")
+          print(f"Appended the item and spent the workflow ({today}).")
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "Nothing changed; nothing to commit."
+            exit 0
+          fi
+          git add queue.md shinto_miraheze/kana_sibling_pipeline_requeue.state
+          git commit -m "chore: queue the sophisticated qualifier-editing pipeline [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; pulling --rebase and retrying"
+            git pull --rebase
+          done
+          echo "All push attempts exhausted" >&2
+          exit 1

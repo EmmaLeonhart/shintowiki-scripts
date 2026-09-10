@@ -74,6 +74,11 @@ MAX_EDITS = _CAP_EXCEPTIONS.get(edit_day(), _DEFAULT_MAX_EDITS)
 MIN_DELAY = 30
 MAX_DELAY = 90
 
+# The exact string every HTTP-429 path in this file returns. Kept as a constant so
+# the bail-out test below matches the sentinel and not a substring of an error
+# message that merely contains those digits.
+RATE_LIMIT_MSG = "429 Too Many Requests"
+
 # MUST be a superset of submit_daily_batch.ATOMIC_FILES (drift-guard test
 # enforces it): with the QS path retired (2026-07-04), THIS list is the only
 # road to Wikidata — 7 files (both temple label files, kana/identical-name
@@ -110,6 +115,7 @@ ATOMIC_FILES = [
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",
     "kana_redundant_remove.txt",
+    "ojp_name_restores.txt",                  # Puts back the four ojp-hani P1448 official names that kana_redundant_remove.txt DELETED — its 5-field lines read as "drop this qualifier" but QuickStatements has no such operation, so each removed the whole statement with its two references, its P1264 and the カミノヤシロ qualifier. Q135040123/Q135070009/Q135194697 (2026-09-07) and Q135195565 (2026-09-08), the four that ran before the shape was stopped on 2026-09-09. Emma that day: "Rebuild them from history." Content copied verbatim from each removing edit's parent revision — a restore, not a reconstruction. ADD-only, one line per qualifier and per reference block so no line can fail on a piece that has already landed; self-healing (generate_ojp_name_restores.py re-asks Wikidata each build and goes empty when all four are whole).
     "migrate_ritsuryo_funding_remove.txt",
     "migrate_ritsuryo_funding_underspecified_remove.txt",
     "recreation_relations.txt",               # Deferred family relations (P22/P25/P40/P3373) between recreated deleted-items; from recreate-deleted-wikidata/match_new_qids.py
@@ -582,7 +588,29 @@ def find_claim(session, entity, prop, parsed_value):
 
 
 def execute_removal(session, csrf, parsed):
-    """Remove a claim matching the given property and value."""
+    """Remove a claim matching the given property and value.
+
+    ⛔ A removal line carrying qualifier or reference fields is REFUSED. Such a line
+    reads as "remove this qualifier from this statement", and neither path can do that:
+    Help:QuickStatements lists *"remove a qualifier without removing the statement
+    itself"* under what QuickStatements cannot do, and this function matches on
+    entity+property+value and calls wbremoveclaims on the whole claim. So the line
+    silently destroys the statement it appears to be editing, along with its references
+    and its other qualifiers.
+
+    Found 2026-09-09 in `kana_redundant_remove.txt`, whose 332 lines of the shape
+    `-Q…|P1448|ojp-hani:"白城神社"|P1814|"シラキノ"` were meant to strip a redundant
+    katakana qualifier. Four had run — Q135040123, Q135070009, Q135194697, Q135195565 —
+    and each lost its entire ojp-hani official name, two references, its P1264, and the
+    カミノヤシロ qualifier the add step had just placed. Every one of the 332 carried
+    references. The generator no longer emits them; this refuses the shape outright so
+    no other file can reintroduce it (`p958_corrections.txt`, unregistered, has it too).
+    """
+    if parsed.get("qualifiers") or parsed.get("references"):
+        return False, (
+            "Refused: removal line carries qualifier/reference fields — a '-' line removes "
+            "the WHOLE statement, not the named qualifier (see execute_removal docstring)"
+        )
     guid = find_claim(session, parsed["entity"], parsed["property"], parsed["value"])
     if not guid:
         return False, "Claim not found for removal"
@@ -873,7 +901,17 @@ def main():
                 else:
                     print(f"  FAIL: {msg}")
                     failed += 1
-                    if "429" in msg:
+                    # MATCH THE WHOLE SENTINEL, NOT THE BARE NUMBER. Every real
+                    # rate-limit path in this file returns exactly
+                    # "429 Too Many Requests"; nothing else does. `"429" in msg`
+                    # also matched any error text that happened to carry those
+                    # three digits — and Wikidata's qualifier-clash error quotes a
+                    # 40-char hex statement hash, which contains "429" about 0.9%
+                    # of the time. Run 34258613053 (2026-09-08) died on
+                    # "already a qualifier with hash a5a17d924a943d498c302ff429c1a…"
+                    # at line 168 of 501: 332 edits abandoned, and the log said
+                    # "Rate-limited" while Wikidata had not rate-limited anything.
+                    if RATE_LIMIT_MSG in msg:
                         print("  Rate-limited — stopping further edits")
                         rate_limited = True
                 if is_seq:
