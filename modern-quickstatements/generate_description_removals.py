@@ -88,6 +88,11 @@ TARGETS = {
     # quickstatements." A shrine carrying 40 "Wikimedia disambiguation page"
     # descriptions plus one orphan ru description.
     "Q11558526": "Fushima Shrine (Iyo Province) — dab-page descriptions on a shrine",
+    # Emma, 2026-09-10: "This one also needs all descriptions removed." Same shape
+    # — a Shikinai Ronsha candidate carrying "Wikimedia disambiguation page" in
+    # ~40 languages, and an Indonesian "Halaman disambiguasi" beside a real
+    # Indonesian label.
+    "Q17128375": "Shirakami Shrine — dab-page descriptions on a ronsha candidate",
 }
 
 THROTTLE = 1.0

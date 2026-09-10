@@ -419,6 +419,15 @@ jobs:
               || echo "::warning title=Weekly refresh did not run::generate_description_fixes.py bailed (usually HTTP 429 from WDQS). description_label_pairs.txt was NOT regenerated."; \
           else echo "not Sunday and not forced — keeping description_label_pairs.txt"; fi
 
+      # Puts back descriptions the fix drip replaced with a less specific one
+      # (Emma, 2026-09-10). Runs DAILY, not weekly: it repairs edits that have
+      # already landed, and it is cheap -- a contributions walk plus a few batched
+      # revision reads. Self-healing, so it empties as the restores land.
+      - name: Description restores (undo prefecture -> generic downgrades)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_description_restores.py
+
       - name: Description adds (labeled items missing descriptions, weekly Sunday refresh)
         working-directory: modern-quickstatements
         continue-on-error: true

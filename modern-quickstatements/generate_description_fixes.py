@@ -189,14 +189,57 @@ def pref_labels(lang):
     return [b["prefLabel"]["value"] for b in sparql(q)]
 
 
-def infer_templates(items, prefs):
+def pref_keys(prefs):
+    """{distinctive place-name -> full prefecture label}, for substring matching.
+
+    ⛔ THE WHOLE PREFECTURE TEMPLATE USED TO FAIL IN ANY INFLECTING LANGUAGE, and
+    it failed silently, by falling back to the generic modal.
+
+    Matching used the FULL label as a substring. Ukrainian labels these items
+    "Префектура Наґано" (nominative) and writes descriptions "…у префектурі
+    Наґано, Японія" (locative), so `"Префектура Наґано" in desc` is False for
+    every one of the 47. No prefecture form was ever inferred for uk, every uk
+    target fell to the generic `синтоїстське святилище в Японії`, and 216 items
+    had a prefecture-specific description REPLACED by that identical string
+    before Emma caught it on 2026-09-10. Indonesian's "Prefektur Nagano" does not
+    decline, which is exactly why id worked and uk did not, and why the bug
+    looked like a uk-only oddity rather than a design fault.
+
+    The fix is to match on the part that does NOT inflect. The generic word
+    ("Префектура", "Prefektur", "Prefecture") appears in every one of the 47
+    labels and is the part that declines; the Japanese place-name does not appear
+    in any other label and does not decline. So the shared tokens are dropped and
+    what is left is the key.
+
+    Derived from the label set itself rather than a per-language stopword list,
+    so it needs no maintenance as languages are added.
+    """
+    toks = {p: re.findall(r"\w+", p) for p in prefs if p}
+    if not toks:
+        return {}
+    freq = Counter(t for ts in toks.values() for t in set(ts))
+    # A token in most of the 47 labels is the generic word, not a place name.
+    common = {t for t, n in freq.items() if n >= max(2, 0.6 * len(toks))}
+    keys = {}
+    for label, ts in toks.items():
+        distinctive = " ".join(t for t in ts if t not in common)
+        if distinctive:
+            keys.setdefault(distinctive, label)
+    return keys
+
+
+def infer_templates(items, keys):
     """(pref_template_or_None, generic_or_None) from existing descriptions.
-    Prefecture detection by substring against the 47 known pref labels@lang —
-    no per-item P131 needed for the corpus."""
-    prefs = sorted(prefs, key=len, reverse=True)
+
+    Prefecture detection is by substring against the DISTINCTIVE place-name of
+    each of the 47 prefecture labels (see pref_keys) — no per-item P131 needed
+    for the corpus. The template therefore keeps whatever inflected form of the
+    generic word the description used, and `{pref}` carries the place-name
+    alone."""
+    ordered = sorted(keys, key=len, reverse=True)
     pref_forms, generic = Counter(), Counter()
     for desc, _has, _pref in items.values():
-        hit = next((p for p in prefs if p and p in desc), None)
+        hit = next((k for k in ordered if k and k in desc), None)
         if hit:
             pref_forms[desc.replace(hit, "{pref}")] += 1
         else:
@@ -256,7 +299,12 @@ def main():
                 continue
             items = corpus_and_targets(cls, extra, lang)
             time.sleep(WDQS_THROTTLE)
-            pref_t, gen = infer_templates(items, pref_labels(lang))
+            keys = pref_keys(pref_labels(lang))
+            # {full label -> distinctive key}: corpus_and_targets stores the full
+            # prefecture label per item, but the template's {pref} slot now holds
+            # the place-name alone, so the item's label is translated at fill time.
+            key_of = {label: key for key, label in keys.items()}
+            pref_t, gen = infer_templates(items, keys)
             if not (pref_t or gen):
                 report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
                 continue
@@ -273,9 +321,34 @@ def main():
             for qid, (desc, has_label, pref) in sorted(items.items()):
                 if has_label:
                     continue
-                new = (pref_t.replace("{pref}", pref) if (pref_t and pref) else gen)
+                pref_key = key_of.get(pref) if pref else None
+                new = (pref_t.replace("{pref}", pref_key)
+                       if (pref_t and pref_key) else gen)
                 if not new:
                     skipped += 1
+                    continue
+                # ⛔ NEVER REPLACE A MORE SPECIFIC DESCRIPTION WITH THE GENERIC.
+                #
+                # Emma, 2026-09-10: "we're actively worsening Ukrainian
+                # descriptions ... turning descriptive ones into generic highly
+                # duplicative ones." Q100902082 lost "Синтоїстське святилище у
+                # префектурі Наґано, Японія" and got "синтоїстське святилище в
+                # Японії" — the same string 3,509 other queued lines carried.
+                #
+                # The template fix above is what stops this arising in uk, but the
+                # rule has to hold whatever the template inference does, because
+                # this is the shape of the damage: the proposal is the generic
+                # modal, and the item already carries its own prefecture. A
+                # description naming the prefecture is strictly more use than one
+                # that does not, and the whole point of a description here is to
+                # be the deduplicator for the (label, description) pair.
+                #
+                # This is NOT a guard against doing the work. The label half — the
+                # reason the item is a target at all — still goes out, via the
+                # label-only unit below.
+                if pref_key and pref_key in desc and pref_key not in new:
+                    already_standard += 1
+                    units.append((qid, None, proposals.get((qid, lang)), desc))
                     continue
                 if new == desc:
                     # The description is ALREADY the standardized form -- but the item
