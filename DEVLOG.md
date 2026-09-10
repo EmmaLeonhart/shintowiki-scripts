@@ -4,6 +4,64 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-10 — the leftover top-level katakana: 15 of the 27 were reachable all along
+
+`docs/katakana_name_in_kana_2026-09.md` said of the 27 top-level katakana `P1814` statements that
+"nothing in the repo can reach them", on the grounds that every generator in the カミノヤシロ
+pipeline keys on the item having an ojp-hani `P1448` and these do not. The first half is true and
+the conclusion does not follow.
+
+**15 of them are Shikinai Ronsha whose Engishiki ENTRY item carries the official name one hop
+away** — the reading on the candidate, the name on the entry. The entry also carries the same
+katakana at top level, so `generate_kana_qualifier_add.py`'s SEED branch already selected it: those
+lines were in `kana_qualifier_add.txt` before anyone looked. A `P460` branch written for the add
+generator produced a byte-identical file and was deleted as dead code.
+
+The hop is not always `P460`. A 同社坐 sub-shrine — an Engishiki entry inside another shrine's
+precinct — is `part of` (P361) its parent, not `said to be the same as` it. `天若日子神社` and
+`韓國伊太弖奉神社` are both P361, and a P460-only exclusion left them in the derived-hiragana
+generator's population, proposing a modern reading for an Old Japanese one.
+
+### What was genuinely unreachable
+
+Only the REMOVAL. `generate_kana_qualifier_remove.py`'s top-level branch requires the ojp-hani name
+and the katakana on the *same* item, so a 論社's own copy survives however long the entry has
+carried the relocated reading. A RONSHA branch now mirrors the add across the hop, with an **exact**
+value confirmation in Python — `done == top + カミノヤシロ`, not `STRENDS` — because three of the 15
+point at an entry carrying a *different* entry's reading (`Q135040970` -アメワカヒコノ against
+阿須伎神社 アスキノ, and two more) and a loose suffix check would read those as confirmed and delete
+a reading that exists nowhere else. Those three are left alone deliberately; `Q135199795`'s `P460`
+looks like a genuine mis-link. It emitted 5 new lines into `kana_redundant_remove.txt`.
+
+The exact comparison is in Python and not in the SPARQL on purpose: as
+`FILTER(STR(?done) = CONCAT(STR(?top), "カミノヤシロ"))` Blazegraph computed a concat per candidate
+row and returned 504. The query is also driven from the entry side — starting at `?ronsha p:P1814`
+walks every `P1814` statement on Wikidata before any join can prune it, which timed out twice.
+
+### The residue, and where its hiragana comes from
+
+What is left is 4 items with no entry item behind them, and their reading is **derived**, never read
+out of an article: `english_to_kana.kana_for` takes the English label plus the shrine suffix from
+the Japanese, per CLAUDE.md's *"the English label IS the KANA reading"*. Two scripts, never one —
+`generate_katakana_reading_add.py` only adds, `generate_katakana_reading_remove.py` only removes and
+only where a fresh SPARQL confirms the derived value has already landed, so the drip's random order
+can never leave an item with no reading:
+
+    Q11430613  たくずだまじんじゃ    Q11444481   ふとのりとじんじゃ
+    Q135195212 いそべじんじゃ        Q135935015  かすがじんじゃ
+
+`Q135935015` 春日神社 is the one Emma ruled on directly on 2026-08-24 (*"this one in katakana is
+just an error"*); the derivation reproduces かすがじんじゃ without being told to. The generator
+refuses what it cannot do confidently, which is what keeps it off 四至神/座摩神 (correct as they
+stand), 岩井温泉 (not a shrine) and 一之宮神社 (スサノオ — a deity in a reading field, a wrong field
+rather than a short reading).
+
+Both files are registered in `submit_daily_batch.ATOMIC_FILES` and `direct_daily_edits.ATOMIC_FILES`
+and both generators run in `generate-quickstatements.yml`. The hyphens in values like
+`-シトリ-ハツチノ-` are not damage: jawiki's 式内社一覧 legend says *読みの「-」部分は、「神社」以外で
+仮名が振られていない部分* — they mark the parts the source left un-kana'd.
+
+
 ## 2026-09-09 — the kana removal was deleting official names, and had already taken four
 
 Emma's queue note asked a narrow question: *"instead of removing katakana, any improper name in

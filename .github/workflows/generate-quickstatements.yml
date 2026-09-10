@@ -266,6 +266,23 @@ jobs:
           sleep 5
           python generate_kana_qualifier_remove.py
 
+      # The residue the カミノヤシロ pipeline cannot reach: top-level katakana P1814
+      # on items with no ojp-hani P1448 of their own and no Engishiki entry item
+      # one P460/P361 hop away. The hiragana is DERIVED from the English label
+      # (docs/katakana_name_in_kana_2026-09.md). Add-first, then a SEPARATE remove
+      # that only fires where a fresh SPARQL confirms the add has landed.
+      - name: Generate derived-hiragana P1814 ADD QuickStatements
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_katakana_reading_add.py
+
+      - name: Generate katakana P1814 REMOVE QuickStatements (SPARQL-gated)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: |
+          sleep 5
+          python generate_katakana_reading_remove.py
+
       # Restores the four ojp-hani official names the REMOVE step above destroyed
       # before its sibling-qualifier half was stopped (2026-09-09). Self-healing:
       # writes 0 lines once all four are whole again.

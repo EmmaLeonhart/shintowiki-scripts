@@ -63,8 +63,6 @@ import sys
 import time
 import requests
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 SUFFIX = "カミノヤシロ"
@@ -103,6 +101,13 @@ def fetch_sparql(query, retries=3):
         if r.status_code == 429:
             print("FATAL: 429 Too Many Requests from SPARQL endpoint — bailing")
             raise RateLimitError("429")
+        if r.status_code in (503, 504):
+            # CLAUDE.md: 503/504 -> back off hard, do not retry tightly.
+            if attempt < retries:
+                time.sleep(15 * (3 ** (attempt - 1)))
+                continue
+            print(f"SPARQL returned {r.status_code} after retries — exiting gracefully")
+            return None
         r.raise_for_status()
         return r.json()["results"]["bindings"]
 
@@ -120,6 +125,20 @@ def is_katakana(value):
 def s(text):
     esc = text.replace("\\", "\\\\").replace('"', '\\"')
     return f'"{esc}"'
+
+
+def ronsha_removal_confirmed(top, done):
+    """Is a ronsha's top-level katakana `top` safe to remove, given that its P460
+    entry's ojp-hani official name carries the kana qualifier `done`?
+
+    Only when `done` is PRECISELY `top` + カミノヤシロ. A merely suffixed qualifier
+    is not enough: three of the fifteen 論社 point at an entry carrying a DIFFERENT
+    entry's reading (阿須伎神社 アスキノ against the ronsha's -アメワカヒコノ, and two
+    more), because their own reading belongs to a 同社坐 sub-entry with no item of
+    its own. A loose STRENDS check would read those as confirmed and delete a
+    reading that exists nowhere else.
+    """
+    return is_katakana(top) and done == top + SUFFIX
 
 
 def main():
@@ -167,6 +186,59 @@ def main():
                 seen.add(key)
                 lines.append(f'-{item}|P1814|{s(top)}')
 
+    # RONSHA: the mirror of the add generator's P460 branch. A Shikinai Ronsha
+    # holds the Engishiki entry's katakana reading as a top-level P1814 while the
+    # ojp-hani official name lives on the entry item it points at with P460. Once
+    # that entry's name carries `<this exact reading>カミノヤシロ`, the top-level
+    # copy on the ronsha is redundant in exactly the same way SEED's is, and this
+    # removes it.
+    #
+    # The confirmation is an EXACT value match in the SPARQL itself -- the entry
+    # must carry this ronsha's reading plus the suffix, not merely some suffixed
+    # qualifier -- so the reading provably still exists elsewhere before the copy
+    # goes. Under the drip's random order the remove can never precede the add.
+    #
+    # This is a whole-statement removal of a top-level P1814, which QuickStatements
+    # expresses correctly. It is NOT the qualifier removal that destroyed four
+    # ojp-hani official names on 2026-09-09 (see the module docstring).
+    # The exact-value comparison is done in PYTHON, not in the SPARQL. Expressing it
+    # as FILTER(STR(?done) = CONCAT(STR(?top), "カミノヤシロ")) made Blazegraph compute
+    # a string concat per candidate row and the query returned 504 Gateway Timeout
+    # (2026-09-10). The confirmation is just as strict either way -- a removal is
+    # still only emitted when the entry carries this ronsha's reading plus the
+    # suffix -- and the query stays cheap.
+    # Driven from the ENTRY side, which is the small one. Starting at
+    # `?ronsha p:P1814 ?ts` walks every P1814 statement on Wikidata before any
+    # join can prune it, and that ordering returned 504 Gateway Timeout twice on
+    # 2026-09-10. The relocated qualifiers (ojp-hani official names already
+    # carrying a カミノヤシロ reading) are a few thousand rows, so binding those
+    # first and then following P460 backwards keeps the query small.
+    ronsha_q = f"""
+    SELECT ?ronsha ?top ?done WHERE {{
+      ?entry p:P1448 ?st .
+      ?st ps:P1448 ?on . FILTER(LANG(?on) = "{OJP}")
+      ?st pq:P1814 ?done . FILTER(STRENDS(STR(?done), "{SUFFIX}"))
+      ?ronsha wdt:P460 ?entry ; wdt:P1814 ?top .
+      FILTER NOT EXISTS {{
+        ?ronsha p:P1448 ?rs . ?rs ps:P1448 ?ron . FILTER(LANG(?ron) = "{OJP}")
+      }}
+    }}
+    """
+    print("Querying RONSHA removals (entry carries this exact reading + suffix)...")
+    rows = fetch_sparql(ronsha_q) or []
+    n_ronsha = 0
+    for r in rows:
+        top = r["top"]["value"]
+        if not ronsha_removal_confirmed(top, r["done"]["value"]):
+            continue
+        key = ("r", qid(r["ronsha"]["value"]), top)
+        if key in seen:
+            continue
+        seen.add(key)
+        lines.append(f'-{qid(r["ronsha"]["value"])}|P1814|{s(top)}')
+        n_ronsha += 1
+    print(f"  {n_ronsha} ronsha removal lines")
+
     with open(REMOVE_FILE, "w", encoding="utf-8") as f:
         # Sorted at the writer, per DEVLOG 2026-08-21: WDQS row order is not stable, so
         # emitting in result order reshuffled this file on every build — 49, 156 and 123
@@ -176,4 +248,8 @@ def main():
 
 
 if __name__ == "__main__":
+    # Rebound here rather than at import time (same as submit_daily_batch.py):
+    # at module level it replaced pytest's captured stdout, and every test that
+    # imported this module died in teardown with "I/O operation on closed file".
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     main()

@@ -9,15 +9,7 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **Replace the katakana in top-level `P1814` with derived hiragana — 27 statements, 26 items.**
-  Population measured and split in `docs/katakana_name_in_kana_2026-09.md`; six are ordinary
-  derivation work, the rest already have rulings. Every item has an English label, so the reading
-  is DERIVED from it plus the shrine suffix taken from the Japanese — never reasoned out of an
-  article (CLAUDE.md). Emma 2026-09-09: *"derive the Kana from the English-language labels combined
-  with whatever the standard transliteration is of the other stuff."* Two scripts, add-first then
-  SPARQL-confirmed remove — never one file.
-
-- **Then the general case: proper kana for every shrine, derived, not read.**
+- **The general case: proper kana for every shrine, derived, not read.**
   Emma 2026-09-09: *"Realistically, all of the shrines should have proper Kana names derived from
   the Japanese put in them."* Existing pieces to connect rather than rebuild:
   `shinto-label-generator/translit_common.py`, `modern-quickstatements/kana_english.py`,

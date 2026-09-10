@@ -15,9 +15,15 @@ carry an Old-Japanese (ojp-hani) `P1448` official name. Those 745 belong to the
 カミノヤシロ kana-qualifier pipeline, which relocates the reading onto the official
 name and then strips the top-level statement.
 
-**The remaining 27 statements on 26 items have no ojp-hani `P1448`, so nothing
-in that pipeline can ever reach them** — every generator there keys on the item
-having one. This script is what reaches them.
+27 statements on 25 items have no ojp-hani `P1448` of their own. **15 of those
+are Shikinai Ronsha whose Engishiki ENTRY item carries the name one `P460` hop
+away** — the reading sits on the candidate, the official name on the entry — and
+they are the カミノヤシロ pipeline's business after all (the 2026-09-10 correction
+in `docs/katakana_name_in_kana_2026-09.md` works through why, and Emma confirmed
+that state is correct as it stands). They are excluded here.
+
+**What is left is the 10 with no entry item behind them**, which no generator
+anywhere can reach. This script is what reaches those.
 
 ## The derivation
 
@@ -42,6 +48,11 @@ generator off the four items the docs have already ruled on:
     Yokohama" leaves a multi-word stem once the suffix is stripped, which
     `kana_for` refuses.
 
+That leaves the six `docs/katakana_name_in_kana_2026-09.md` calls ordinary
+derivation work, plus `Q135935015` 春日神社 / `カスガジンジャ`, which Emma ruled on
+directly (2026-08-24, *"this one in katakana is just an error"* → かすがじんじゃ) and
+which the same derivation reproduces without being told to.
+
 This script ONLY adds. The katakana is removed by the SEPARATE script
 `generate_katakana_reading_remove.py`, which acts only after a fresh SPARQL
 query confirms the derived hiragana is already on the item. Two separate
@@ -64,15 +75,16 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+import argparse
 import io
+import os
+import shutil
 import sys
 import time
 import requests
 
 _usys.path.insert(0, _uos.path.dirname(_uos.path.abspath(__file__)))
 from english_to_kana import kana_for
-
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
@@ -89,6 +101,25 @@ SELECT ?item ?kana ?ja ?en WHERE {{
   ?st ps:P1814 ?kana .
   FILTER NOT EXISTS {{
     ?item p:P1448 ?ns . ?ns ps:P1448 ?on . FILTER(LANG(?on) = "ojp-hani")
+  }}
+  # …and no ojp-hani official name ONE HOP away either. A Shikinai Ronsha holds
+  # the Engishiki ENTRY's reading while the entry item holds the name, and that
+  # population belongs to the カミノヤシロ pipeline, not here — see the 2026-09-10
+  # correction in docs/katakana_name_in_kana_2026-09.md. Without this clause the
+  # generator proposes a modern hiragana reading for items whose value is an Old
+  # Japanese reading the pipeline is already relocating, and Emma confirmed that
+  # state is correct as it stands.
+  #
+  # BOTH properties, because the link is not always P460. A 同社坐 sub-shrine — an
+  # Engishiki entry sitting in another shrine's precinct — is `part of` its parent
+  # (P361), not `said to be the same as` it: 天若日子神社 (-アメワカヒコノ) is P361 into
+  # 阿須伎神社, and 韓國伊太弖奉神社 (-イタテ-) into 曽枳能夜神社. A P460-only clause
+  # left both behind. Restricting the target to one carrying an ojp-hani P1448 is
+  # what keeps this from catching the ordinary `part of` into a 式内社一覧 list
+  # item — list items carry no official name.
+  FILTER NOT EXISTS {{
+    ?item wdt:P460|wdt:P361 ?entry .
+    ?entry p:P1448 ?es . ?es ps:P1448 ?eon . FILTER(LANG(?eon) = "ojp-hani")
   }}
   OPTIONAL {{ ?item rdfs:label ?ja . FILTER(LANG(?ja) = "ja") }}
   OPTIONAL {{ ?item rdfs:label ?en . FILTER(LANG(?en) = "en") }}
@@ -186,7 +217,21 @@ def build_lines(items):
     return lines, report
 
 
+def publish_to_site(path):
+    """Copy the batch into _site/ for the GitHub Pages browser. The file the daily
+    editor reads is the bare-name one in this directory; this is only the published
+    copy. Guarded against SameFileError so it is safe if handed the _site path."""
+    os.makedirs("_site", exist_ok=True)
+    dest = os.path.join("_site", os.path.basename(path))
+    if os.path.abspath(dest) != os.path.abspath(path):
+        shutil.copy(path, dest)
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=OUTPUT_FILE)
+    args = ap.parse_args()
+
     print("=== Generate derived-hiragana P1814 ADD QuickStatements (no direct edits) ===\n")
     rows = fetch_sparql(QUERY)
     if rows is None:
@@ -199,13 +244,20 @@ def main():
         print(f"  {q:<12} {'/'.join(katakana):<26} {ja or '-':<24} "
               f"{en or '-':<52} -> {derived or '-'}  [{verdict}]")
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    path = args.out if os.path.dirname(args.out) else os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), args.out)
+    with open(path, "w", encoding="utf-8") as f:
         # Sorted at the writer, per DEVLOG 2026-08-21: WDQS row order is not stable,
         # so emitting in result order rewrites the whole file on every build.
         f.write("\n".join(sorted(set(lines))) + ("\n" if lines else ""))
-    print(f"\nWrote {len(lines)} lines to {OUTPUT_FILE} "
+    publish_to_site(path)
+    print(f"\nWrote {len(lines)} lines to {path} "
           f"({len(report)} katakana-bearing items seen)")
 
 
 if __name__ == "__main__":
+    # Rebound here rather than at import time: at module level it replaces the
+    # caller's stdout, which breaks both pytest's capture and the sibling remove
+    # generator that imports QUERY/collect from this module.
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     main()

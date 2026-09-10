@@ -22,9 +22,70 @@ carrying katakana and no hiragana (Blazegraph has no `\p{IsHiragana}`).
 The 745 are the カミノヤシロ kana-qualifier pipeline's own population — Old Japanese readings it
 relocates onto the ojp-hani official name and then strips from top-level. They are not this job.
 
-**The 27 are what is left over, and nothing in the repo can reach them**: every generator in that
-pipeline keys on the item having an ojp-hani `P1448`, and these items do not have one. They will
-sit there forever unless something is pointed at them.
+The 27 are what is left over. ~~Nothing in the repo can reach them~~ — see the correction below.
+
+## ⛔ CORRECTION, 2026-09-10 — "nothing can reach them" was wrong for 15 of the 27
+
+The claim above was that these items have no ojp-hani `P1448`, so no generator in the kana-qualifier
+pipeline can select them. The first half is true and the conclusion does not follow.
+
+**Every one of the 15 hyphen-bearing items links to its Engishiki entry item with `P460`, and every
+one of those entry items carries the ojp-hani `P1448`.** The reading sits on the 論社; the official
+name sits on the entry. That is the correct modelling, and the same shape as CLAUDE.md's
+list-membership rule — the Engishiki-era facts belong to the entry item and the candidate points at
+it with `P460`.
+
+**And the entry items ALSO carry the same katakana at top level**, which is what makes the pipeline
+reach them after all: `generate_kana_qualifier_add.py`'s SEED branch selects on
+*(ojp-hani name, no `P1814` qualifier, top-level katakana on the same item)*, and the ENTRY satisfies
+all three. Its seven lines were already in `kana_qualifier_add.txt` before anyone looked. A `P460`
+branch written for the add generator on 2026-09-10 produced a byte-identical file and was deleted as
+dead code.
+
+Measured across the 15, by their `P460` target:
+
+| state of the entry item's ojp-hani `P1448` | 論社 | disposition |
+|---|---|---|
+| already carries `<that exact reading>カミノヤシロ` | 4 items / 5 statements — 博西, 飛鳥川上坐宇須多伎比賣命, 健御名方富命彦神別 (×2), 伊勢御祖 | the top-level copy on the 論社 is **already redundant** |
+| carries the ojp-hani name, **no** kana qualifier yet | 8 items / 7 distinct values | SEED already emits the add; nothing new needed |
+| carries a **different** reading | 3 items | ⛔ leave alone — see below |
+
+**So the only thing genuinely unreachable is the REMOVAL.** `generate_kana_qualifier_remove.py`'s
+top-level branch requires the ojp-hani name and the top-level katakana on the same item, so a 論社's
+own copy is never removed however long the entry has carried the relocated reading. That branch —
+and only that branch — is what this job adds, mirroring the add side across the `P460` hop with an
+exact-value confirmation.
+
+### ⛔ The three where the entry carries a different reading
+
+| 論社 | its reading | `P460` entry | the entry's reading |
+|---|---|---|---|
+| `Q135040970` 天若日子神社 | `-アメワカヒコノ` | `Q135040959` 阿須伎神社 | `アスキノ` |
+| `Q135041051` 韓國伊太弖奉神社 | `-イタテ-` | `Q135041050` 曽枳能夜神社 | `ソキノヤノ` |
+| `Q135199795` 銀山神社 | `シロカネ-` | `Q135041546` 銀山上神社 | `カナヤマノヘノ` |
+
+In the first two the 論社's reading belongs to a **同社坐 sub-entry** — 出雲's jawiki list carries
+`同社坐天若日子神社` and `同社坐韓国伊太弖奉神社` as their own 神名帳 rows — and that sub-entry has no
+item of its own, so `P460` points at the parent shrine instead. In the third, 対馬's list carries
+`銀山神社` (シロカネ-) and `銀山上神社` (カナヤマノヘノ) as two separate entries and the `P460` points
+at the wrong one.
+
+Appending the 論社's reading to the name that IS there would attach a reading to a name it is not the
+reading of. The `NOT EXISTS ?st pq:P1814` guard in the add generator already excludes all three, and
+the remove generator's exact-value confirmation cannot match them. **Left alone deliberately;** the
+`P460` on `Q135199795` looks like a genuine mis-link worth a separate look.
+
+### Where the katakana and the hyphen come from
+
+jawiki's per-province `…国の式内社一覧` pages are the source, and they explain the shape exactly. The
+神名帳 column gives each entry's 社名 and its 読み in katakana — `健御名方富命彦神別神社 /
+タケミナカタトミノ- / タケミナカタトム-` is verbatim `Q135069835`'s two values — and the page's own
+legend says what the hyphen is:
+
+> 読みの「-」部分は、「神社」以外で仮名が振られていない部分。
+
+So `-シトリ-ハツチノ-` is 葛木(-)倭文(シトリ)坐(-)天羽雷命(ハツチノ)神社: the hyphens mark the parts
+the source left un-kana'd. They are not truncation damage.
 
 ## The 27
 

@@ -57,6 +57,8 @@ ATOMIC_FILES = [
     "genbu_ids.txt",                          # P13930 Genbu.net ID from our own genbu.net citations (generate_genbu_ids.py); ADD-only external id
     "shinmei_ids.txt",                        # P14391 Shinmei database ID for deities, exact ja-label match (generate_shinmei_ids.py); ADD-only external id
     "jinjacho_p973.txt",                      # P973 described-at-URL to each shrine's prefectural 神社庁 page (generate_jinjacho_p973.py); ADD-only
+    "katakana_reading_add.txt",               # Derived hiragana P1814 for the leftover katakana readings with no Engishiki entry item behind them — the residue the カミノヤシロ pipeline genuinely cannot reach, once the Shikinai Ronsha (name one P460/P361 hop away) are excluded. Derived by english_to_kana.kana_for from the English label + the shrine suffix in the Japanese, never read from an article (CLAUDE.md: "the English label IS the KANA reading"). Generator generate_katakana_reading_add.py. ADD-only; the katakana is retired by the separate katakana_reading_remove.txt.
+    "katakana_reading_remove.txt",            # Removal of those katakana values, emitted ONLY where a fresh SPARQL confirms the derived hiragana has already landed (generate_katakana_reading_remove.py). Whole-statement removal of a top-level P1814, which QuickStatements expresses correctly — not the qualifier removal that destroyed four ojp-hani official names on 2026-09-09.
     "sutra_label_rename.txt",                 # The 3-line S2->Sutra rename, all-at-once on 2026-07-30 per Emma's QS source; gated by sutra_gate.py
 ]
 
