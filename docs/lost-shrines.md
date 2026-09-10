@@ -173,9 +173,12 @@ dispatch on **2026-09-10** created them a second time.
 paragraph below already said the re-check is re-running `generate_lost_shrine_creates.py`. The
 dispatch did not do that.
 
-**Emma's ruling, 2026-09-10: do NOT merge them.** *"You edit them to be as good as possible …
-they should be identical in form"*, and *"apply the goddamn coordinates to all of them, the old
-ones I created and the ones you created"*. `generate_lost_shrine_parity.py` implements that: the
+**Emma merges them herself, and it takes a while.** 2026-09-10: *"it's not a 'ruling' I
+literally cannot merge them"*, then *"like I'm gonna fucking merge them lol it will just take a
+while"*. The merge is hers and is not a pending job here. What is ours is **parity**, so whichever
+item survives it is complete: *"You edit them to be as good as possible … they should be identical
+in form"*, and *"apply the goddamn coordinates to all of them, the old ones I created and the ones
+you created"*. **Do not offer a merge, and do not list these as unfinished.** `generate_lost_shrine_parity.py` implements that: the
 six differed in exactly one statement, `P625`, absent from the 09-10 three because
 `parse_qs_value` had no globe-coordinate case and printed one `ERROR: unencodable QS value` per
 block without stopping the creation. That case now exists, and the three coordinates are staged in

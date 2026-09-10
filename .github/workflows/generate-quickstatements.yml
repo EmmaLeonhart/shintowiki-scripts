@@ -267,9 +267,10 @@ jobs:
           python generate_kana_qualifier_remove.py
 
       # Brings the three 2026-09-10 lost-shrine items level with the three Emma
-      # created by hand on 2026-09-06. Emma ruled against merging them; the only
-      # gap is P625, which the create run could not encode. Self-healing: empty
-      # once the three coordinates land.
+      # created by hand on 2026-09-06. Emma merges the duplicates herself in her own
+      # time; ours is parity, so whichever survives is complete. The only gap is
+      # P625, which the create run could not encode. Self-healing: empty once the
+      # three coordinates land.
       - name: Generate lost-shrine twin-parity QuickStatements
         working-directory: modern-quickstatements
         continue-on-error: true

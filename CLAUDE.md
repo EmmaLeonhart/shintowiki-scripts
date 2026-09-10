@@ -808,6 +808,29 @@ for the gradual QuickStatements drip. It is not the place to look things up.
   article's own content, an already-generated local file, or ask Emma. A slow correct
   source beats a fast one that damages a service we depend on.
 
+## ⛔ EMMA MERGES DUPLICATE ITEMS — agents do not, and do not ask about it (Emma, 2026-09-10)
+
+I presented merging two duplicate items as a choice she was making. It is not a choice, and it is
+not ours. Her words, in order: *"it's not a 'ruling' I literally cannot merge them"* — meaning not
+now, not quickly — then *"like I'm gonna fucking merge them lol it will just take a while"*.
+
+- **She merges them. It takes a while. That is normal and it is not a pending job.** Do not chase
+  it, do not report an unmerged duplicate as an open item, and do not ask when it will happen.
+- **Never offer a merge as an option, and never write a `MERGE` generator.** Offering it is what
+  produced the exchange above.
+- **What agents do meanwhile is PARITY**: bring both items to the same labels, statements and
+  references, so whichever survives the merge is complete. Descriptions are the one exception and
+  cannot be equalised — Wikidata refuses a second item the same (label, description) pair in a
+  language — so each pair necessarily splits them until the merge collapses them.
+
+Worked example: the three lost-shrine items created twice, on 2026-09-06 and 2026-09-10
+(`docs/lost-shrines.md`, `generate_lost_shrine_parity.py`).
+
+**And the reason there were duplicates at all:** `create_items.py` has no duplicate guard, by
+Emma's instruction, so **re-run the batch's own generator before dispatching `create-items.yml`** —
+that is what re-checks whether the subjects already exist, and `docs/lost-shrines.md` says so.
+Dispatching without it is what produced this, and it cost her a merge she now has to do by hand.
+
 ## Wikidata editing — ONE path only, no edit summaries
 
 **Wikidata is edited by exactly one mechanism: the daily QuickStatements

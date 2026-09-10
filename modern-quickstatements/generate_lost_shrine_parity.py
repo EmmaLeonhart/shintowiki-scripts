@@ -20,9 +20,17 @@ re-check is re-running the generator, which was not done.
 | `Q141335121` | `Q141406056` | Kenkō-ji Temple / 見光寺 (Hannō) |
 | `Q141335129` | `Q141406059` | Chikadono Shrine / 近殿神社 (Kumagaya) |
 
-Emma's instruction, 2026-09-10, was NOT to merge them: *"You edit them to be as
-good as possible … they should be identical in form"*, and *"apply the goddamn
-coordinates to all of them, the old ones I created and the ones you created"*.
+**Emma merges them herself, and it takes a while.** 2026-09-10: *"it's not a
+'ruling' I literally cannot merge them"*, then *"like I'm gonna fucking merge them
+lol it will just take a while"*. So the merge is hers, it is not a pending job for
+anyone here, and offering one was the mistake.
+
+What this script does is the part that IS ours — parity, so whichever item survives
+the merge is complete: *"You edit them to be as good as possible … they should be
+identical in form"*, and *"apply the goddamn coordinates to all of them, the old
+ones I created and the ones you created"*.
+
+Do not write a MERGE generator for these, and do not report them as unfinished.
 
 ## What is actually missing
 

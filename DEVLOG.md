@@ -35,10 +35,14 @@ encoder knows the type, a malformed one is still refused, and every `@lat/lon` i
 must round-trip — so a future CREATE batch carrying a coordinate shape it cannot take fails in CI
 rather than quietly creating an item without it.
 
-### Emma's ruling: not a merge
+### The merge is Emma's; ours is parity
 
-*"You edit them to be as good as possible … they should be identical in form"*, and *"apply the
-goddamn coordinates to all of them, the old ones I created and the ones you created"*. Measured
+I offered merging as an option and then reported her answer as a ruling. It was neither. Emma:
+*"it's not a 'ruling' I literally cannot merge them"* — not now, not quickly — and then *"like I'm
+gonna fucking merge them lol it will just take a while"*. She merges them, in her own time; it is
+not a pending job here and offering it was the error. The instruction for this side is *"You edit them to be as good as possible … they should be identical in form"*, and
+*"apply the goddamn coordinates to all of them, the old ones I created and the ones you created"*.
+Measured
 against the live items, the six differ in exactly one statement each — `P625` on the 09-10 three.
 Every label, every other statement and every reference already matches within each pair.
 `generate_lost_shrine_parity.py` stages those three into `lost_shrine_parity.txt`, registered in
