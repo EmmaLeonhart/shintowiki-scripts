@@ -286,6 +286,25 @@ jobs:
         continue-on-error: true
         run: python generate_katakana_reading_add.py
 
+      # The GENERAL case of the same derivation: every shrine with a ja label, an
+      # en label and no P1814 at all. Tiered against a held-out measurement (the
+      # shrines that carry BOTH an en label and a real reading) -- ships where the
+      # derivation agrees with the item's name-mates and where no name-mate reading
+      # exists, holds the ~1,350 where they contradict. Emma's call, 2026-09-10.
+      # Add-only, self-healing: the file shrinks as the drip delivers.
+      - name: Generate derived P1814 for en-labelled shrines (general case)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: |
+          sleep 5
+          python generate_derived_name_in_kana.py
+
+      # ...and the held tier, routed to the LLM work-queue so a jawiki lead breaks
+      # the tie. Bounded per run; the queue is meant to stay non-empty.
+      - name: Queue the disputed kana readings for the LLM
+        continue-on-error: true
+        run: python shinto_miraheze/build_kana_disagreement_queue.py --limit 150
+
       - name: Generate katakana P1814 REMOVE QuickStatements (SPARQL-gated)
         working-directory: modern-quickstatements
         continue-on-error: true

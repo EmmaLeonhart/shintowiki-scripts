@@ -1,0 +1,17 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q131275531 -->
+<!-- JA: 吾妻神社 | EN_LABEL: Azuma Shrine (Nakanojo) | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%90%BE%E5%A6%BB%E7%A5%9E%E7%A4%BE_%28%E4%B8%AD%E4%B9%8B%E6%9D%A1%E7%94%BA%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): あずまじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): あづまじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+吾妻神社（あがつまじんじゃ）は、群馬県吾妻郡中之条町横尾にある神社。別名は和利宮（わりのみや）、旧社格は郷社、主祭神は大穴牟遅神。

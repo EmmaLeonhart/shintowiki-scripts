@@ -1,0 +1,17 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q116884577 -->
+<!-- JA: 鷲神社 | EN_LABEL: Ōtori Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E9%B7%B2%E7%A5%9E%E7%A4%BE_%28%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E5%B2%A9%E6%A7%BB%E5%8C%BA%E6%9C%AB%E7%94%B0%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): おおとりじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): わしじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+鷲神社（わしじんじゃ）は、埼玉県さいたま市岩槻区の神社。

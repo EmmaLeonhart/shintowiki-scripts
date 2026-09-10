@@ -1,0 +1,18 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11659119 -->
+<!-- JA: 雀宮神社 | EN_LABEL: Suzumemiya Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E9%9B%80%E5%AE%AE%E7%A5%9E%E7%A4%BE -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): すずめみやじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): すずめのみやじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+雀宮神社（すずめのみやじんじゃ）は、栃木県宇都宮市雀の宮一丁目にある神社。旧社格は郷社。
+歴史と趣のある神社として、地元民に敬愛されている。この地域を治めていた宇都宮氏の信仰は篤く、雀宮神社を、城を守る四神の内、南の『朱雀』と位置づけ、城主がしばしば遠乗りをしてお参りに来たという。皇族である御諸別王を祭神としていることから、1713年（正徳三年）東山天皇から金文字で『雀宮』と書かれた勅額が掲げられていたため、日光社参をする将軍家をはじめとして、諸大名は下馬して参拝したと伝えられる。

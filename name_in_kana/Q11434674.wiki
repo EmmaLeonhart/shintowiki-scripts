@@ -1,0 +1,19 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11434674 -->
+<!-- JA: 大山祇神社 | EN_LABEL: Oyamazumi Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%87%E7%A5%9E%E7%A4%BE_%28%E8%A5%BF%E4%BC%9A%E6%B4%A5%E7%94%BA%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): おやまずみじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): おおやまずみじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+大山祇神社（おおやまづみじんじゃ）は、福島県耶麻郡西会津町野沢にある神社である。「3年続けてお詣りすれば、なじょな（どんな）願いもききなさる」とされ、信仰を集める。
+山全体が神域とされ、大久保集落に建つ遥拝殿（下宮）から御本社まで徒歩約1-2時間ほどの参道には滝や樹齢400年超の杉並木、202段の石段がある。この参道は「ふくしまの遊歩道50選」選定委員会推奨遊歩道に選定されている。御本社からさらに約40分ほど険しい山道を進むと奥の院があり、参拝には案内人を要する。この奥の院への道は30年以上にわたって閉鎖されていたが、2014年に開通した。
+参拝者向けの銘菓として「大山まんじゅう」が90年以上にわたって販売されている。

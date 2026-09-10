@@ -1,0 +1,18 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q124496778 -->
+<!-- JA: 大山神社 | EN_LABEL: Oyama Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E7%A5%9E%E7%A4%BE_%28%E5%B0%BE%E9%81%93%E5%B8%82%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): おやまじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): おおやまじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+大山神社（おおやまじんじゃ）は、広島県尾道市因島の神社。
+773年（宝亀四年）に、伊予国大三島の大山祇神社より勧請して創建。中世、因島村上水軍の守護神として崇敬された。しまなみ海道上の神社としては、大山祇神社に次いで規模が大きく、サイクリングスポットとしても人気を集める。2018年の集計によると、因島内で最も観光客数が多い施設となっている。

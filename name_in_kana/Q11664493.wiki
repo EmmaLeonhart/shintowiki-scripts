@@ -1,0 +1,18 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11664493 -->
+<!-- JA: 須佐之男神社 | EN_LABEL: Susanō Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E9%A0%88%E4%BD%90%E4%B9%8B%E7%94%B7%E7%A5%9E%E7%A4%BE_%28%E5%B2%A1%E5%B4%8E%E5%B8%82%E9%8D%9B%E5%9F%9C%E7%94%BA%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): すさのうじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): すさのおじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+(NO LEAD AVAILABLE — the jawiki article is a redirect, a disambiguation page, empty, or the item has no jawiki sitelink at all, so there is no first sentence to read a reading out of. This will never change on its own.
+The two candidates below are still real evidence: pick between them if you can, from the readings other shrines of this name carry or from the place-name the shrine is named for. Answer NO_KANA only if you genuinely cannot.)

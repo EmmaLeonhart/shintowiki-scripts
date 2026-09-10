@@ -9,14 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **The general case: proper kana for every shrine, derived, not read.**
-  Emma 2026-09-09: *"Realistically, all of the shrines should have proper Kana names derived from
-  the Japanese put in them."* Existing pieces to connect rather than rebuild:
-  `shinto-label-generator/translit_common.py`, `modern-quickstatements/kana_english.py`,
-  `shinto_miraheze/build_name_in_kana_queue.py`. Note the builder's own rule excludes en-labelled
-  items from its LLM queue — that exclusion is about *reading* an article, not about *deriving*
-  from the label, so it does not block this.
-
 - **Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-09-07)**
   Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
 

@@ -1,0 +1,17 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q17229562 -->
+<!-- JA: 丹生神社 | EN_LABEL: Niu Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%B8%B9%E7%94%9F%E7%A5%9E%E7%A4%BE_%28%E5%A4%9A%E6%B0%97%E7%94%BA%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): にうじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): たんしょうじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+丹生神社（にうじんじゃ）は、埴山姫命を祭神とする三重県多気郡多気町丹生に鎮座する神社。延喜式神名帳、飯高郡九座に列せられた由緒ある神社である。

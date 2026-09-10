@@ -190,7 +190,18 @@ NAME_IN_KANA_INSTRUCTION = (
     "undoing, so it is recorded and deliberately NOT written to Wikidata. P1814 "
     "wants modern hiragana. A collector (collect_name_in_kana.py) rejects any "
     "answer that is not hiragana, so a katakana or romaji answer filed as KANA is "
-    "simply thrown away — file it correctly instead."
+    "simply thrown away — file it correctly instead.\n\n"
+    "SOME of these files are DISPUTED-READING items and say so in their own TASK "
+    "block: they name two candidate readings, A derived from the shrine's English "
+    "label and B taken from other shrines whose Japanese name is identical, and "
+    "they exist precisely because those two disagree. On such a file the LEAD is "
+    "the tiebreak and it OUTRANKS both candidates — if the lead gives a third "
+    "reading, that is the answer. They also accept a fourth form, `<!-- ANSWER: "
+    "GUESS: <hiragana> -->`, for when the lead states no reading but the other "
+    "evidence picks a candidate. Do not choose the candidate that merely looks "
+    "more regular: shrine names take irregular local readings, which is why the "
+    "two sources disagree in the first place. The TASK block inside the file is "
+    "authoritative wherever it differs from this instruction."
 )
 
 CATEGORY_TRANSLATION_INSTRUCTION = (

@@ -1,0 +1,10786 @@
+[
+ {
+  "derived": "しとりじんじゃ",
+  "en": "Shitori Shrine",
+  "ja": "倭文神社",
+  "ja_title": "倭文神社 (湯梨浜町)",
+  "mate": "しどりじんじゃ",
+  "qid": "Q245734"
+ },
+ {
+  "derived": "ののみやじんじゃ",
+  "en": "Nonomiya Shrine",
+  "ja": "野宮神社",
+  "ja_title": "野宮神社",
+  "mate": "のみやじんじゃ",
+  "qid": "Q501266"
+ },
+ {
+  "derived": "おおみわじんじゃ",
+  "en": "Ōmiwa Shrine",
+  "ja": "大神神社",
+  "ja_title": "大神神社 (一宮市)",
+  "mate": "おおかみじんじゃ",
+  "qid": "Q546197"
+ },
+ {
+  "derived": "いきめじんじゃ",
+  "en": "Ikime Shrine",
+  "ja": "生目神社",
+  "ja_title": "生目神社",
+  "mate": "いけめじんじゃ",
+  "qid": "Q3148421"
+ },
+ {
+  "derived": "けんくんじんじゃ",
+  "en": "Kenkun Shrine",
+  "ja": "建勲神社",
+  "ja_title": "建勲神社",
+  "mate": "たけいさおじんじゃ",
+  "qid": "Q3195151"
+ },
+ {
+  "derived": "みかどじんじゃ",
+  "en": "Mikado Shrine",
+  "ja": "神門神社",
+  "ja_title": "神門神社",
+  "mate": "ごうどじんじゃ",
+  "qid": "Q3313142"
+ },
+ {
+  "derived": "てじからおじんじゃ",
+  "en": "Tejikarao Shrine",
+  "ja": "手力雄神社",
+  "ja_title": "手力雄神社 (岐阜市)",
+  "mate": "たぢからおじんじゃ",
+  "qid": "Q3517214"
+ },
+ {
+  "derived": "いっくじんじゃ",
+  "en": "Ikku Shrine",
+  "ja": "一宮神社",
+  "ja_title": "一宮神社 (新居浜市)",
+  "mate": "いちのみやじんじゃ",
+  "qid": "Q11352599"
+ },
+ {
+  "derived": "いっきゅうじんじゃ",
+  "en": "Ikkyuu Shrine",
+  "ja": "一宮神社",
+  "ja_title": "一宮神社 (福知山市)",
+  "mate": "いちのみやじんじゃ",
+  "qid": "Q11352601"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "七社神社 (東京都北区)",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q11353658"
+ },
+ {
+  "derived": "みわじんじゃ",
+  "en": "Miwa Shrine",
+  "ja": "三和神社",
+  "ja_title": "三和神社",
+  "mate": "さんわじんじゃ",
+  "qid": "Q11354664"
+ },
+ {
+  "derived": "みつしまじんじゃ",
+  "en": "Mitsushima Shrine",
+  "ja": "三島神社",
+  "ja_title": "三島神社 (門真市)",
+  "mate": "みしまじんじゃ",
+  "qid": "Q11355280"
+ },
+ {
+  "derived": "さんじゃじんじゃ",
+  "en": "Sanja Shrine (Osaka)",
+  "ja": "三社神社",
+  "ja_title": "三社神社 (大阪市)",
+  "mate": "さんしゃじんじゃ",
+  "qid": "Q11356851"
+ },
+ {
+  "derived": "にゅじんじゃ",
+  "en": "Nyu Shrine",
+  "ja": "丹生神社",
+  "ja_title": "丹生神社 (田辺市)",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q11368605"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyuu Shrine",
+  "ja": "丹生神社",
+  "ja_title": "丹生神社 (長浜市)",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q11368606"
+ },
+ {
+  "derived": "いたてじんじゃ",
+  "en": "Itate Shrine",
+  "ja": "伊達神社",
+  "ja_title": "伊達神社 (和歌山市)",
+  "mate": "だてじんじゃ",
+  "qid": "Q11380847"
+ },
+ {
+  "derived": "いだてじんじゃ",
+  "en": "Idate Shrine",
+  "ja": "伊達神社",
+  "ja_title": "伊達神社 (色麻町)",
+  "mate": "だてじんじゃ",
+  "qid": "Q11380848"
+ },
+ {
+  "derived": "きやまじんじゃ",
+  "en": "Kiyama Shrine",
+  "ja": "城山神社",
+  "ja_title": "城山神社 (坂出市)",
+  "mate": "しろやまじんじゃ",
+  "qid": "Q11426120"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine (Kyoto)",
+  "ja": "大井神社",
+  "ja_title": "大井神社 (京都市)",
+  "mate": "おおいじんじゃ",
+  "qid": "Q11432214"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "大井神社 (北方町)",
+  "mate": "おおいじんじゃ",
+  "qid": "Q11432215"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "大井神社 (水戸市)",
+  "mate": "おおいじんじゃ",
+  "qid": "Q11432217"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "大宮神社 (大阪市旭区)",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q11434447"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "大宮神社 (岩出市)",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q11434451"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "大山祇神社 (新上五島町今里郷)",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q11434673"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "大山祇神社 (西会津町)",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q11434674"
+ },
+ {
+  "derived": "おたじんじゃ",
+  "en": "Ota Shrine",
+  "ja": "太田神社",
+  "ja_title": "太田神社 (久喜市久喜北)",
+  "mate": "おおたじんじゃ",
+  "qid": "Q11444367"
+ },
+ {
+  "derived": "やすいじんじゃ",
+  "en": "Yasui Shrine",
+  "ja": "安居神社",
+  "ja_title": "安居神社",
+  "mate": "あごじんじゃ",
+  "qid": "Q11450228"
+ },
+ {
+  "derived": "つきよみじんじゃ",
+  "en": "Tsukiyomi Shrine",
+  "ja": "月読神社",
+  "ja_title": "月読神社 (京都市)",
+  "mate": "つきよみじんしゃ",
+  "qid": "Q11516217"
+ },
+ {
+  "derived": "みなくちじんじゃ",
+  "en": "Minakuchi Shrine",
+  "ja": "水口神社",
+  "ja_title": "水口神社 (甲賀市)",
+  "mate": "みのぐちじんじゃ",
+  "qid": "Q11548384"
+ },
+ {
+  "derived": "こうちじんじゃ",
+  "en": "Kōchi Shrine (Saeki-ku)",
+  "ja": "河内神社",
+  "ja_title": "河内神社 (広島市)",
+  "mate": "かわうちじんじゃ",
+  "qid": "Q11553443"
+ },
+ {
+  "derived": "すざきじんじゃ",
+  "en": "Suzaki Shrine",
+  "ja": "洲崎神社",
+  "ja_title": "洲崎神社 (名古屋市)",
+  "mate": "すさきじんじゃ",
+  "qid": "Q11556515"
+ },
+ {
+  "derived": "ふしまじんじゃ",
+  "en": "Fushima Shrine (Iyo Province)",
+  "ja": "浮島神社",
+  "ja_title": "浮島神社",
+  "mate": "うきしまじんじゃ",
+  "qid": "Q11558526"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "荒神社 (高山市)",
+  "mate": "かわうじんじゃ",
+  "qid": "Q11618837"
+ },
+ {
+  "derived": "すごじんじゃ",
+  "en": "Sugo Shrine",
+  "ja": "菅生神社",
+  "ja_title": "菅生神社 (堺市)",
+  "mate": "すがうじんじゃ",
+  "qid": "Q11619344"
+ },
+ {
+  "derived": "すごうじんじゃ",
+  "en": "Sugō Shrine",
+  "ja": "菅生神社",
+  "ja_title": "菅生神社 (倉敷市)",
+  "mate": "すがうじんじゃ",
+  "qid": "Q11619345"
+ },
+ {
+  "derived": "ほうこくじんじゃ",
+  "en": "Hōkoku Shrine",
+  "ja": "豊国神社",
+  "ja_title": "豊国神社 (長浜市)",
+  "mate": "とよくにじんじゃ",
+  "qid": "Q11633365"
+ },
+ {
+  "derived": "きんぽうじんじゃ",
+  "en": "Kinpou Shrine",
+  "ja": "金峰神社",
+  "ja_title": "金峰神社 (南さつま市)",
+  "mate": "かなみねじんじゃ",
+  "qid": "Q11647035"
+ },
+ {
+  "derived": "おきつじんじゃ",
+  "en": "Okitsu Shrine (Nihonmatsu)",
+  "ja": "隠津島神社",
+  "ja_title": "隠津島神社 (二本松市)",
+  "mate": "おきつしまじんじゃ",
+  "qid": "Q11659061"
+ },
+ {
+  "derived": "すずめみやじんじゃ",
+  "en": "Suzumemiya Shrine",
+  "ja": "雀宮神社",
+  "ja_title": "雀宮神社",
+  "mate": "すずめのみやじんじゃ",
+  "qid": "Q11659119"
+ },
+ {
+  "derived": "すさのうじんじゃ",
+  "en": "Susanō Shrine",
+  "ja": "須佐之男神社",
+  "ja_title": "須佐之男神社 (岡崎市南大須町)",
+  "mate": "すさのおじんじゃ",
+  "qid": "Q11664491"
+ },
+ {
+  "derived": "すさのうじんじゃ",
+  "en": "Susanō Shrine",
+  "ja": "須佐之男神社",
+  "ja_title": "須佐之男神社 (岡崎市滝尻町)",
+  "mate": "すさのおじんじゃ",
+  "qid": "Q11664492"
+ },
+ {
+  "derived": "すさのうじんじゃ",
+  "en": "Susanō Shrine",
+  "ja": "須佐之男神社",
+  "ja_title": "須佐之男神社 (岡崎市鍛埜町)",
+  "mate": "すさのおじんじゃ",
+  "qid": "Q11664493"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "鷲神社 (台東区)",
+  "mate": "わしじんじゃ",
+  "qid": "Q11676284"
+ },
+ {
+  "derived": "きよみずじんじゃ",
+  "en": "Kiyomizu Shrine",
+  "ja": "清水神社",
+  "ja_title": "",
+  "mate": "しみずじんじゃ",
+  "qid": "Q15934402"
+ },
+ {
+  "derived": "おだじんじゃ",
+  "en": "Oda Shrine (Ibaraki)",
+  "ja": "太田神社",
+  "ja_title": "太田神社 (茨木市)",
+  "mate": "おおたじんじゃ",
+  "qid": "Q17222452"
+ },
+ {
+  "derived": "おおつじんじゃ",
+  "en": "Ōtsu Shrine",
+  "ja": "大津神社",
+  "ja_title": "大津神社 (伊勢市)",
+  "mate": "おおづじんじゃ",
+  "qid": "Q17222697"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "大山祇神社 (伊勢市)",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q17223627"
+ },
+ {
+  "derived": "さしのじんじゃ",
+  "en": "Sashino Shrine",
+  "ja": "佐志能神社",
+  "ja_title": "佐志能神社 (石岡市染谷)",
+  "mate": "さしのうじんじゃ",
+  "qid": "Q17225838"
+ },
+ {
+  "derived": "にうじんじゃ",
+  "en": "Niu Shrine",
+  "ja": "丹生神社",
+  "ja_title": "丹生神社 (多気町)",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q17229562"
+ },
+ {
+  "derived": "すさのおじんじゃ",
+  "en": "Susanoo Shrine",
+  "ja": "進雄神社",
+  "ja_title": "進雄神社 (豊橋市)",
+  "mate": "しんゆうじんじゃ",
+  "qid": "Q18337115"
+ },
+ {
+  "derived": "すごうじんじゃ",
+  "en": "Sugō Shrine",
+  "ja": "菅生神社",
+  "ja_title": "菅生神社 (岡崎市)",
+  "mate": "すがうじんじゃ",
+  "qid": "Q20045106"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "三宮神社 (吉岡町)",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q21655265"
+ },
+ {
+  "derived": "いしふねじんじゃ",
+  "en": "Ishifune Shrine",
+  "ja": "石船神社",
+  "ja_title": "石船神社",
+  "mate": "いしぶねじんじゃ",
+  "qid": "Q22117869"
+ },
+ {
+  "derived": "つきやまじんじゃ",
+  "en": "Tsukiyama Shrine",
+  "ja": "月山神社",
+  "ja_title": "月山神社 (高知県)",
+  "mate": "がっさんじんじゃ",
+  "qid": "Q28683648"
+ },
+ {
+  "derived": "たきのおじんじゃ",
+  "en": "Takinoo Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q28952427"
+ },
+ {
+  "derived": "やさかじんじゃ",
+  "en": "Yasaka Shrine",
+  "ja": "弥栄神社",
+  "ja_title": "弥栄神社 (長野市)",
+  "mate": "やえいじんじゃ",
+  "qid": "Q43594829"
+ },
+ {
+  "derived": "あかんたじんじゃ",
+  "en": "Akanta Shrine",
+  "ja": "赤田神社",
+  "ja_title": "赤田神社 (阿波市)",
+  "mate": "あかだじんじゃ",
+  "qid": "Q48758374"
+ },
+ {
+  "derived": "なかぎりてんじんしゃ",
+  "en": "Nakagiri Tenjinsha",
+  "ja": "天神社",
+  "ja_title": "",
+  "mate": "てんじんじゃ",
+  "qid": "Q60332793"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "大井神社 (笠間市)",
+  "mate": "おおいじんじゃ",
+  "qid": "Q66564749"
+ },
+ {
+  "derived": "てんのじんじゃ",
+  "en": "Tenno Shrine (Otsu)",
+  "ja": "天皇神社",
+  "ja_title": "天皇神社 (大津市)",
+  "mate": "てんのうじんじゃ",
+  "qid": "Q97202442"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q105761341"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q106690236"
+ },
+ {
+  "derived": "なにょじんじゃ",
+  "en": "Nanyo Shrine (Nagoya)",
+  "ja": "南陽神社",
+  "ja_title": "",
+  "mate": "なんようじんじゃ",
+  "qid": "Q107355498"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "十二社神社 (神山町)",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q107410085"
+ },
+ {
+  "derived": "ねのかみじんじゃ",
+  "en": "Nenokami Shrine",
+  "ja": "子之神社",
+  "ja_title": "",
+  "mate": "ねのじんじゃ",
+  "qid": "Q110895022"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q111024061"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q111024092"
+ },
+ {
+  "derived": "あまつにちじんじゃ",
+  "en": "Amatsunichi Shrine",
+  "ja": "天津日神社",
+  "ja_title": "",
+  "mate": "あまつひじんじゃ",
+  "qid": "Q111024123"
+ },
+ {
+  "derived": "にちげつじんじゃ",
+  "en": "Nichigetsu Shrine",
+  "ja": "日月神社",
+  "ja_title": "",
+  "mate": "じつげつじんじゃ",
+  "qid": "Q111024152"
+ },
+ {
+  "derived": "うかじんじゃ",
+  "en": "Uka Shrine",
+  "ja": "宇迦神社",
+  "ja_title": "",
+  "mate": "うがじんじゃ",
+  "qid": "Q111024154"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q111024168"
+ },
+ {
+  "derived": "いなおじんじゃ",
+  "en": "Inao Shrine",
+  "ja": "稲生神社",
+  "ja_title": "",
+  "mate": "いのうじんじゃ",
+  "qid": "Q111024189"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q111024273"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q111024423"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q111024446"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q111024452"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q111024454"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q111024472"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q111024481"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q111024498"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q111024502"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q111024525"
+ },
+ {
+  "derived": "にちげつじんじゃ",
+  "en": "Nichigetsu Shrine",
+  "ja": "日月神社",
+  "ja_title": "",
+  "mate": "じつげつじんじゃ",
+  "qid": "Q111025299"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q111025301"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q111025304"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q112899122"
+ },
+ {
+  "derived": "おんたけじんじゃ",
+  "en": "Ontake Shrine (Tenpaku-ku, Nagoya)",
+  "ja": "御嶽神社",
+  "ja_title": "",
+  "mate": "みたけじんじゃ",
+  "qid": "Q113506143"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "大宮神社 (伊豆市)",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q113679907"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "鷲神社 (さいたま市岩槻区末田)",
+  "mate": "わしじんじゃ",
+  "qid": "Q116884577"
+ },
+ {
+  "derived": "きぶねじんじゃ",
+  "en": "Kibune Shrine (Chichibu)",
+  "ja": "貴布禰神社",
+  "ja_title": "貴布禰神社 (秩父市)",
+  "mate": "きふねじんじゃ",
+  "qid": "Q118350680"
+ },
+ {
+  "derived": "すさのおじんじゃ",
+  "en": "Susanoo Shrine (Takasaki)",
+  "ja": "進雄神社",
+  "ja_title": "進雄神社 (高崎市)",
+  "mate": "しんゆうじんじゃ",
+  "qid": "Q119929513"
+ },
+ {
+  "derived": "あずまじんじゃ",
+  "en": "Azuma Shrine (Gotemba)",
+  "ja": "吾妻神社",
+  "ja_title": "吾妻神社 (御殿場市)",
+  "mate": "あづまじんじゃ",
+  "qid": "Q119929631"
+ },
+ {
+  "derived": "さわじんじゃ",
+  "en": "Sawa Shrine",
+  "ja": "佐波神社",
+  "ja_title": "佐波神社 (西伊豆町)",
+  "mate": "さばじんじゃ",
+  "qid": "Q123179471"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "大宮神社 (板野町)",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q124496702"
+ },
+ {
+  "derived": "おもとじんじゃ",
+  "en": "Omoto Shrine",
+  "ja": "大元神社",
+  "ja_title": "",
+  "mate": "おおもとじんしゃ",
+  "qid": "Q124496776"
+ },
+ {
+  "derived": "おやまじんじゃ",
+  "en": "Oyama Shrine",
+  "ja": "大山神社",
+  "ja_title": "大山神社 (尾道市)",
+  "mate": "おおやまじんじゃ",
+  "qid": "Q124496778"
+ },
+ {
+  "derived": "だいてんぱくじんじゃ",
+  "en": "Daitenpaku Shrine (Hanyū)",
+  "ja": "大天白神社",
+  "ja_title": "大天白神社",
+  "mate": "だいてんばくじんじゃ",
+  "qid": "Q128866703"
+ },
+ {
+  "derived": "じゅうにはしらじんじゃ",
+  "en": "Jūnihashira Shrine",
+  "ja": "十二柱神社",
+  "ja_title": "",
+  "mate": "とうふたはしらじんじゃ",
+  "qid": "Q128866774"
+ },
+ {
+  "derived": "おのじんじゃ",
+  "en": "Ono Shrine",
+  "ja": "大野神社",
+  "ja_title": "",
+  "mate": "おおのじんじゃ",
+  "qid": "Q131227053"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q131239501"
+ },
+ {
+  "derived": "ちかどじんじゃ",
+  "en": "Chikado Shrine (Maebashi)",
+  "ja": "近戸神社",
+  "ja_title": "近戸神社 (前橋市粕川町月田)",
+  "mate": "ちかとじんじゃ",
+  "qid": "Q131275526"
+ },
+ {
+  "derived": "あずまじんじゃ",
+  "en": "Azuma Shrine (Nakanojo)",
+  "ja": "吾妻神社",
+  "ja_title": "吾妻神社 (中之条町)",
+  "mate": "あづまじんじゃ",
+  "qid": "Q131275531"
+ },
+ {
+  "derived": "こもりじんじゃ",
+  "en": "Komori Shrine",
+  "ja": "子守神社",
+  "ja_title": "子守神社 (河津町大鍋)",
+  "mate": "こまもりじんじゃ",
+  "qid": "Q131925935"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "大宮神社 (大島町)",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q131925939"
+ },
+ {
+  "derived": "おつじんじゃ",
+  "en": "Otsu Shrine",
+  "ja": "澳津神社",
+  "ja_title": "",
+  "mate": "おくつじんじゃ",
+  "qid": "Q132146063"
+ },
+ {
+  "derived": "ちっぷじんじゃ",
+  "en": "Chippu Shrine",
+  "ja": "秩父神社",
+  "ja_title": "秩父神社 (秩父別町)",
+  "mate": "ちちぶじんじゃ",
+  "qid": "Q132745984"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134594912"
+ },
+ {
+  "derived": "こうむすひじんじゃ",
+  "en": "Kōmusuhi Shrine",
+  "ja": "皇産靈神社",
+  "ja_title": "",
+  "mate": "こうさんれいじんじゃ",
+  "qid": "Q134594927"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134594953"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134594972"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134595043"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134595243"
+ },
+ {
+  "derived": "いいずなじんじゃ",
+  "en": "Iizuna Shrine",
+  "ja": "飯綱神社",
+  "ja_title": "",
+  "mate": "いいづなじんじゃ",
+  "qid": "Q134595284"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q134595439"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595538"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134595606"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134595617"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134595622"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134595625"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595626"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "龍神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q134595631"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595648"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134595651"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595703"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595720"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134595721"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595735"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595736"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595738"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595739"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595740"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595795"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595798"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595807"
+ },
+ {
+  "derived": "あずまじんじゃ",
+  "en": "Azuma Shrine",
+  "ja": "吾妻神社",
+  "ja_title": "",
+  "mate": "あづまじんじゃ",
+  "qid": "Q134595816"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595817"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134595822"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134596164"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134596314"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134596555"
+ },
+ {
+  "derived": "にちげつじんじゃ",
+  "en": "Nichigetsu Shrine",
+  "ja": "日月神社",
+  "ja_title": "",
+  "mate": "じつげつじんじゃ",
+  "qid": "Q134596556"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134596570"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134596574"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134596597"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134596610"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134596613"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134596614"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134596935"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q134596940"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134596954"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134596955"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q134596979"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134597003"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q134597006"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597046"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597047"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597050"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597063"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597567"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597580"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597591"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597594"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597597"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134597786"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134597787"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134597789"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134597790"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134597798"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134598083"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598168"
+ },
+ {
+  "derived": "きさきじんじゃ",
+  "en": "Kisaki Shrine",
+  "ja": "木崎神社",
+  "ja_title": "",
+  "mate": "きさき",
+  "qid": "Q134598171"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598186"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598248"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598316"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q134598324"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q134598425"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598448"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598474"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598484"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598530"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134598587"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134598600"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q134598616"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q134598651"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598661"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598671"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598678"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598685"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598686"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598699"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598700"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598701"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598703"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598704"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598705"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598706"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134598802"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598813"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134598851"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134598852"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134598853"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134598855"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q134598865"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134598869"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134598871"
+ },
+ {
+  "derived": "こたいじんじゃ",
+  "en": "Kotai Shrine",
+  "ja": "皇太神社",
+  "ja_title": "",
+  "mate": "こうたいじんじゃ",
+  "qid": "Q134598944"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598960"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598965"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598972"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q134598974"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598979"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134598989"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134602834"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134602922"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "龍神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q134602928"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134602967"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134603010"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134603011"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134603012"
+ },
+ {
+  "derived": "あずまじんじゃ",
+  "en": "Azuma Shrine",
+  "ja": "吾妻神社",
+  "ja_title": "",
+  "mate": "あづまじんじゃ",
+  "qid": "Q134603114"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134603116"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134603149"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134603161"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134603205"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134603212"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134603213"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q134603223"
+ },
+ {
+  "derived": "ごれいじんじゃ",
+  "en": "Gorei Shrine",
+  "ja": "五霊神社",
+  "ja_title": "",
+  "mate": "ごりょうじんじゃ",
+  "qid": "Q134603248"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134603276"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q134603304"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q134604525"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134604564"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134695692"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134695701"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134695711"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134695718"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134695733"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134695740"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134885956"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134885972"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134885986"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886133"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886141"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q134886144"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q134886162"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134886176"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q134886205"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886219"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886303"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886305"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q134886375"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134886432"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886443"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886460"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886465"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134886532"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134886589"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886627"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886634"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134886704"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886751"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886780"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886781"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886792"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q134886885"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134886953"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134887024"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134887075"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134887101"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134887105"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134887127"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q134887290"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134887400"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "大山祇神社 (西海市)",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134888253"
+ },
+ {
+  "derived": "たじからおじんじゃ",
+  "en": "Tajikarao Shrine (Ogaki)",
+  "ja": "手力雄神社",
+  "ja_title": "手力雄神社 (大垣市)",
+  "mate": "たぢからおじんじゃ",
+  "qid": "Q134888254"
+ },
+ {
+  "derived": "かいじんじゃ",
+  "en": "Kai Shrine (Kinokawa)",
+  "ja": "海神社",
+  "ja_title": "海神社 (紀の川市)",
+  "mate": "わたつみじんじゃ",
+  "qid": "Q134888898"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "十二所神社 (横須賀市)",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q134892402"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955423"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955424"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134955435"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134955455"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955473"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955519"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955520"
+ },
+ {
+  "derived": "てんのじんじゃ",
+  "en": "Tenno Shrine",
+  "ja": "天王神社",
+  "ja_title": "",
+  "mate": "てんのうじんじゃ",
+  "qid": "Q134955521"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955534"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134955539"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955558"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955568"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134955593"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955598"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955604"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955613"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134955633"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955645"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q134955693"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q134955723"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134955726"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955780"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955827"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955834"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955837"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134955857"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955878"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134955902"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955921"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955931"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134955941"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q134955947"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955958"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955962"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134955965"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134955988"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956067"
+ },
+ {
+  "derived": "いいずなじんじゃ",
+  "en": "Iizuna Shrine",
+  "ja": "飯綱神社",
+  "ja_title": "",
+  "mate": "いいづなじんじゃ",
+  "qid": "Q134956094"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134956131"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134956135"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134956160"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956185"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956186"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956204"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956214"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956228"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956229"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956235"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956237"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134956268"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956279"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956293"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956360"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q134956394"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956414"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134956433"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956485"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q134956490"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956517"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956528"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956541"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956548"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956553"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956586"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "龍神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q134956587"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956593"
+ },
+ {
+  "derived": "てんのじんじゃ",
+  "en": "Tenno Shrine",
+  "ja": "天王神社",
+  "ja_title": "",
+  "mate": "てんのうじんじゃ",
+  "qid": "Q134956601"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956602"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956606"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134956610"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956616"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956618"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q134956652"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134956665"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956695"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956702"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134956707"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q134956708"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134956758"
+ },
+ {
+  "derived": "てんのじんじゃ",
+  "en": "Tenno Shrine",
+  "ja": "天王神社",
+  "ja_title": "",
+  "mate": "てんのうじんじゃ",
+  "qid": "Q134956760"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134956765"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134956783"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956805"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956810"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q134956813"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956825"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956834"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956842"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956855"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956856"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956861"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134956899"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134956907"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q134956969"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134956973"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957008"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q134957022"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134957039"
+ },
+ {
+  "derived": "てんのじんじゃ",
+  "en": "Tenno Shrine",
+  "ja": "天王神社",
+  "ja_title": "",
+  "mate": "てんのうじんじゃ",
+  "qid": "Q134957080"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134957083"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134957089"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134957098"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134957110"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957135"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957137"
+ },
+ {
+  "derived": "ほのいかつちのじんじゃ",
+  "en": "Honoikatsuchino Shrine",
+  "ja": "火雷神社",
+  "ja_title": "火雷神社 (函南町)",
+  "mate": "ほのいかづちじんじゃ",
+  "qid": "Q134957175"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957228"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957237"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957243"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134957247"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134957347"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957355"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957371"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q134957386"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134957443"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957444"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957463"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957482"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957500"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957513"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957514"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957554"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957561"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957591"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134957646"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134957653"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134957698"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957700"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q134957704"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957712"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134957737"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134957760"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q134957766"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957810"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957866"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957874"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957898"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134957913"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134957924"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q134957972"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q134958004"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134958135"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134958151"
+ },
+ {
+  "derived": "てんのじんじゃ",
+  "en": "Tenno Shrine",
+  "ja": "天王神社",
+  "ja_title": "",
+  "mate": "てんのうじんじゃ",
+  "qid": "Q134958153"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134958178"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134958191"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134958192"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134958201"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134958241"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134958242"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134958245"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134958303"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q134958356"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q134988737"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134988766"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134988773"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134988799"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134988804"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134988848"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134988856"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q134988875"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134988883"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134988892"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134988930"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q134988956"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134988957"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134988959"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134988966"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989020"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134989049"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q134989056"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989060"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134989088"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989107"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989117"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134989133"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q134989135"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989141"
+ },
+ {
+  "derived": "てんまんてんじんしゃ",
+  "en": "Tenman Tenjinsha",
+  "ja": "天満天神社",
+  "ja_title": "",
+  "mate": "てんまんてんじんじゃ",
+  "qid": "Q134989144"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989171"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989187"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989195"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989213"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134989214"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134989216"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989226"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989245"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989256"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q134989262"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989272"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989286"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q134989298"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989299"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134989301"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989304"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134989306"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989313"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q134989324"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989331"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989368"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989390"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q134989440"
+ },
+ {
+  "derived": "こうじんじゃ",
+  "en": "Kō Shrine",
+  "ja": "荒神社",
+  "ja_title": "",
+  "mate": "かわうじんじゃ",
+  "qid": "Q134989472"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q134989477"
+ },
+ {
+  "derived": "あらたまじんじゃ",
+  "en": "Aratama Shrine",
+  "ja": "荒魂神社",
+  "ja_title": "",
+  "mate": "あらみたまじんじゃ",
+  "qid": "Q134989484"
+ },
+ {
+  "derived": "ほのいかつちのじんじゃ",
+  "en": "Honoikatsuchino Shrine",
+  "ja": "火雷神社",
+  "ja_title": "",
+  "mate": "ほのいかづちじんじゃ",
+  "qid": "Q135021838"
+ },
+ {
+  "derived": "ふかかはのじんじゃ",
+  "en": "Fukakahano Shrine",
+  "ja": "深川神社",
+  "ja_title": "",
+  "mate": "ふかがわじんじゃ",
+  "qid": "Q135038767"
+ },
+ {
+  "derived": "いはたのじんじゃ",
+  "en": "Ihatano Shrine",
+  "ja": "石田神社",
+  "ja_title": "",
+  "mate": "いしだじんじゃ",
+  "qid": "Q135038797"
+ },
+ {
+  "derived": "つふのみあかたじんじゃ",
+  "en": "Tsufunomiakata- Shrine",
+  "ja": "添御県坐神社",
+  "ja_title": "",
+  "mate": "そうのみあがたにいますじんじゃ",
+  "qid": "Q135038845"
+ },
+ {
+  "derived": "うへのじんじゃ",
+  "en": "Uheno Shrine",
+  "ja": "於神社",
+  "ja_title": "",
+  "mate": "おのじんじゃ",
+  "qid": "Q135038948"
+ },
+ {
+  "derived": "いしのじんじゃ",
+  "en": "Ishino Shrine",
+  "ja": "為志神社",
+  "ja_title": "",
+  "mate": "いしじんじゃ",
+  "qid": "Q135038961"
+ },
+ {
+  "derived": "ふたみのじんじゃ",
+  "en": "Futamino Shrine",
+  "ja": "二見神社",
+  "ja_title": "",
+  "mate": "ふたみじんじゃ",
+  "qid": "Q135038964"
+ },
+ {
+  "derived": "うたみこまりのじんじゃ",
+  "en": "Utamikomarino Shrine",
+  "ja": "宇太水分神社",
+  "ja_title": "",
+  "mate": "うだみくまりじんじゃ",
+  "qid": "Q135038977"
+ },
+ {
+  "derived": "みいのじんじゃ",
+  "en": "Miino Shrine",
+  "ja": "御井神社",
+  "ja_title": "",
+  "mate": "みいじんじゃ",
+  "qid": "Q135038983"
+ },
+ {
+  "derived": "かかみつくりいたのじんじゃ",
+  "en": "Kakamitsukuriitano Shrine",
+  "ja": "鏡作伊多神社",
+  "ja_title": "",
+  "mate": "かがみつくりいたじんじゃ",
+  "qid": "Q135039007"
+ },
+ {
+  "derived": "さきのすのじんじゃ",
+  "en": "Sakinosuno Shrine",
+  "ja": "鷺栖神社",
+  "ja_title": "",
+  "mate": "さぎすじんじゃ",
+  "qid": "Q135039009"
+ },
+ {
+  "derived": "とりさかのじんじゃ",
+  "en": "Torisakano Shrine",
+  "ja": "鳥坂神社",
+  "ja_title": "",
+  "mate": "とりさかじんじゃ",
+  "qid": "Q135039021"
+ },
+ {
+  "derived": "うねひのじんじゃ",
+  "en": "Unehino- Shrine",
+  "ja": "畝尾坐健土安神社",
+  "ja_title": "",
+  "mate": "うねおにますたけはにやすじんじゃ",
+  "qid": "Q135039029"
+ },
+ {
+  "derived": "したゐじんじゃ",
+  "en": "Shitawi Shrine",
+  "ja": "下居神社",
+  "ja_title": "",
+  "mate": "おりいじんじゃ",
+  "qid": "Q135039034"
+ },
+ {
+  "derived": "たかやのじんじゃ",
+  "en": "Takayano Shrine",
+  "ja": "高屋神社",
+  "ja_title": "",
+  "mate": "たかやじんじゃ",
+  "qid": "Q135039109"
+ },
+ {
+  "derived": "おほつのじんじゃ",
+  "en": "Ohotsuno Shrine",
+  "ja": "大津神社",
+  "ja_title": "",
+  "mate": "おおづじんじゃ",
+  "qid": "Q135039122"
+ },
+ {
+  "derived": "いはたのじんじゃ",
+  "en": "Ihatano Shrine",
+  "ja": "石田神社",
+  "ja_title": "",
+  "mate": "いしだじんじゃ",
+  "qid": "Q135039132"
+ },
+ {
+  "derived": "うはのじんじゃ",
+  "en": "Uhano Shrine",
+  "ja": "宇婆神社",
+  "ja_title": "",
+  "mate": "うばじんじゃ",
+  "qid": "Q135039138"
+ },
+ {
+  "derived": "こまのじんじゃ",
+  "en": "Komano Shrine",
+  "ja": "許麻神社",
+  "ja_title": "",
+  "mate": "こまじんじゃ",
+  "qid": "Q135039144"
+ },
+ {
+  "derived": "あはのじんじゃ",
+  "en": "Ahano Shrine",
+  "ja": "合祀：大津神社",
+  "ja_title": "",
+  "mate": "ひょうずじんじゃ",
+  "qid": "Q135039173"
+ },
+ {
+  "derived": "いつみのじんじゃ",
+  "en": "Itsumino Shrine",
+  "ja": "和泉神社",
+  "ja_title": "",
+  "mate": "いずみじんじゃ",
+  "qid": "Q135039180"
+ },
+ {
+  "derived": "はたのじんじゃ",
+  "en": "Hatano Shrine",
+  "ja": "波多神社",
+  "ja_title": "",
+  "mate": "はたじんじゃ",
+  "qid": "Q135039185"
+ },
+ {
+  "derived": "ひめかみのじんじゃ",
+  "en": "Himekamino Shrine",
+  "ja": "比賣神社",
+  "ja_title": "",
+  "mate": "ひめじんじゃ",
+  "qid": "Q135039196"
+ },
+ {
+  "derived": "みしまかものじんじゃ",
+  "en": "Mishimakamono Shrine",
+  "ja": "三島鴨神社",
+  "ja_title": "",
+  "mate": "みしまかもじんじゃ",
+  "qid": "Q135039216"
+ },
+ {
+  "derived": "いけたのじんじゃ",
+  "en": "Iketano Shrine",
+  "ja": "伊居太神社",
+  "ja_title": "",
+  "mate": "いこたじんじゃ",
+  "qid": "Q135039219"
+ },
+ {
+  "derived": "とさかのじんじゃ",
+  "en": "Tosakano Shrine",
+  "ja": "鳥坂神社",
+  "ja_title": "",
+  "mate": "とりさかじんじゃ",
+  "qid": "Q135039241"
+ },
+ {
+  "derived": "たかせのじんじゃ",
+  "en": "Takaseno Shrine",
+  "ja": "高瀬神社",
+  "ja_title": "",
+  "mate": "たかせじんじゃ",
+  "qid": "Q135039257"
+ },
+ {
+  "derived": "あまのかごやまのじんじゃ",
+  "en": "Amanokagoyamano Shrine",
+  "ja": "天香山神社",
+  "ja_title": "",
+  "mate": "あまのかぐやまじんじゃ",
+  "qid": "Q135039290"
+ },
+ {
+  "derived": "いはたのじんじゃ",
+  "en": "Ihatano Shrine",
+  "ja": "石田神社",
+  "ja_title": "",
+  "mate": "いしだじんじゃ",
+  "qid": "Q135039295"
+ },
+ {
+  "derived": "おほくしのじんじゃ",
+  "en": "Ohokushino Shrine",
+  "ja": "豊原神社",
+  "ja_title": "",
+  "mate": "とよはらじんじゃ",
+  "qid": "Q135039310"
+ },
+ {
+  "derived": "はたのじんじゃ",
+  "en": "Hatano Shrine",
+  "ja": "波多神社",
+  "ja_title": "",
+  "mate": "はたじんじゃ",
+  "qid": "Q135039322"
+ },
+ {
+  "derived": "もののへのじんじゃ",
+  "en": "Mononoheno Shrine",
+  "ja": "物部神社",
+  "ja_title": "",
+  "mate": "もののべじんじゃ",
+  "qid": "Q135039323"
+ },
+ {
+  "derived": "みやけのじんじゃ",
+  "en": "Miyakeno Shrine",
+  "ja": "三宅神社",
+  "ja_title": "",
+  "mate": "みやけじんじゃ",
+  "qid": "Q135039366"
+ },
+ {
+  "derived": "おかぶとじんじゃ",
+  "en": "Okabuto Shrine",
+  "ja": "岡太神社",
+  "ja_title": "",
+  "mate": "おかたじんじゃ",
+  "qid": "Q135039380"
+ },
+ {
+  "derived": "いひののじんじゃ",
+  "en": "Ihinono Shrine",
+  "ja": "飯野神社",
+  "ja_title": "",
+  "mate": "いいのじんじゃ",
+  "qid": "Q135039382"
+ },
+ {
+  "derived": "ふかたのじんじゃ",
+  "en": "Fukatano Shrine",
+  "ja": "深田神社",
+  "ja_title": "",
+  "mate": "ふかたじんじゃ",
+  "qid": "Q135039391"
+ },
+ {
+  "derived": "はしのじんじゃ",
+  "en": "Hashino Shrine",
+  "ja": "土師神社",
+  "ja_title": "",
+  "mate": "はしじんじゃ",
+  "qid": "Q135039392"
+ },
+ {
+  "derived": "あしみたのじんじゃ",
+  "en": "Ashimitano Shrine",
+  "ja": "足見田神社",
+  "ja_title": "",
+  "mate": "あしみだじんじゃ",
+  "qid": "Q135039398"
+ },
+ {
+  "derived": "いそへのじんじゃ",
+  "en": "Isoheno Shrine",
+  "ja": "石部神社",
+  "ja_title": "",
+  "mate": "いそべじんじゃ",
+  "qid": "Q135039404"
+ },
+ {
+  "derived": "とりいてのじんじゃ",
+  "en": "Toriiteno Shrine",
+  "ja": "鳥出神社",
+  "ja_title": "",
+  "mate": "とりでじんじゃ",
+  "qid": "Q135039411"
+ },
+ {
+  "derived": "くしたのじんじゃ",
+  "en": "Kushitano Shrine",
+  "ja": "櫛田神社",
+  "ja_title": "",
+  "mate": "くしだじんじゃ",
+  "qid": "Q135039420"
+ },
+ {
+  "derived": "ほつみのじんじゃ",
+  "en": "Hotsumino Shrine",
+  "ja": "穂積神社",
+  "ja_title": "",
+  "mate": "ほづみじんじゃ",
+  "qid": "Q135039426"
+ },
+ {
+  "derived": "はせのじんじゃ",
+  "en": "Haseno Shrine",
+  "ja": "長谷神社",
+  "ja_title": "",
+  "mate": "ながやじんじゃ",
+  "qid": "Q135039431"
+ },
+ {
+  "derived": "かものじんじゃ",
+  "en": "Kamono Shrine",
+  "ja": "鴨神社",
+  "ja_title": "",
+  "mate": "かもじんじゃ",
+  "qid": "Q135039432"
+ },
+ {
+  "derived": "はせのじんじゃ",
+  "en": "Haseno Shrine",
+  "ja": "長谷神社",
+  "ja_title": "",
+  "mate": "ながやじんじゃ",
+  "qid": "Q135039453"
+ },
+ {
+  "derived": "さかてのじんじゃ",
+  "en": "Sakateno Shrine",
+  "ja": "坂手神社",
+  "ja_title": "",
+  "mate": "さかてじんじゃ",
+  "qid": "Q135039463"
+ },
+ {
+  "derived": "いはとのじんじゃ",
+  "en": "Ihatono Shrine",
+  "ja": "石刀神社",
+  "ja_title": "",
+  "mate": "いわとじんじゃ",
+  "qid": "Q135039471"
+ },
+ {
+  "derived": "ふちのじんじゃ",
+  "en": "Fuchino Shrine",
+  "ja": "布智神社",
+  "ja_title": "",
+  "mate": "ふちじんじゃ",
+  "qid": "Q135039483"
+ },
+ {
+  "derived": "かはしまのじんじゃ",
+  "en": "Kahashimano Shrine",
+  "ja": "川島神社",
+  "ja_title": "",
+  "mate": "かわしまじんじゃ",
+  "qid": "Q135039494"
+ },
+ {
+  "derived": "いなきのじんじゃ",
+  "en": "Inakino Shrine",
+  "ja": "稲木神社",
+  "ja_title": "",
+  "mate": "いなぎじんじゃ",
+  "qid": "Q135039497"
+ },
+ {
+  "derived": "やまなのじんじゃ",
+  "en": "Yamanano Shrine",
+  "ja": "山那神社",
+  "ja_title": "",
+  "mate": "やなじんじゃ",
+  "qid": "Q135039500"
+ },
+ {
+  "derived": "いくたのじんじゃ",
+  "en": "Ikutano Shrine",
+  "ja": "生田神社",
+  "ja_title": "",
+  "mate": "いくたじんじゃ",
+  "qid": "Q135039503"
+ },
+ {
+  "derived": "かたやまのじんじゃ",
+  "en": "Katayamano Shrine",
+  "ja": "片山神社",
+  "ja_title": "",
+  "mate": "かたやまじんじゃ",
+  "qid": "Q135039520"
+ },
+ {
+  "derived": "かたやまのじんじゃ",
+  "en": "Katayamano Shrine",
+  "ja": "片山神社",
+  "ja_title": "",
+  "mate": "かたやまじんじゃ",
+  "qid": "Q135039527"
+ },
+ {
+  "derived": "ひつしのじんじゃ",
+  "en": "Hitsushino Shrine",
+  "ja": "羊神社",
+  "ja_title": "",
+  "mate": "ひつじじんじゃ",
+  "qid": "Q135039529"
+ },
+ {
+  "derived": "たなはたのじんじゃ",
+  "en": "Tanahatano Shrine",
+  "ja": "多奈波太神社",
+  "ja_title": "",
+  "mate": "たなばたじんじゃ",
+  "qid": "Q135039536"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q135039541"
+ },
+ {
+  "derived": "はりなのじんじゃ",
+  "en": "Harinano Shrine",
+  "ja": "針名神社",
+  "ja_title": "",
+  "mate": "はりなじんじゃ",
+  "qid": "Q135039554"
+ },
+ {
+  "derived": "もののへのじんじゃ",
+  "en": "Mononoheno Shrine",
+  "ja": "物部神社",
+  "ja_title": "",
+  "mate": "もののべじんじゃ",
+  "qid": "Q135039556"
+ },
+ {
+  "derived": "はつのじんじゃ",
+  "en": "Hatsuno Shrine",
+  "ja": "羽豆神社",
+  "ja_title": "",
+  "mate": "はずじんじゃ",
+  "qid": "Q135039562"
+ },
+ {
+  "derived": "わしとりのじんじゃ",
+  "en": "Washitorino Shrine",
+  "ja": "和志取神社",
+  "ja_title": "",
+  "mate": "わしとりじんじゃ",
+  "qid": "Q135039572"
+ },
+ {
+  "derived": "おきのじんじゃ",
+  "en": "Okino Shrine",
+  "ja": "息神社",
+  "ja_title": "",
+  "mate": "おきじんじゃ",
+  "qid": "Q135039586"
+ },
+ {
+  "derived": "そこのみたちのじんじゃ",
+  "en": "Sokonomitachino Shrine",
+  "ja": "曽許乃御立神社",
+  "ja_title": "",
+  "mate": "そこのみたちじんじゃ",
+  "qid": "Q135039587"
+ },
+ {
+  "derived": "かくるのじんじゃ",
+  "en": "Kakuruno Shrine",
+  "ja": "賀久留神社",
+  "ja_title": "",
+  "mate": "かくるじんじゃ",
+  "qid": "Q135039588"
+ },
+ {
+  "derived": "おほせちのじんじゃ",
+  "en": "Ohosechino Shrine",
+  "ja": "三嶽神社",
+  "ja_title": "",
+  "mate": "みたけじんじゃ",
+  "qid": "Q135039593"
+ },
+ {
+  "derived": "なかののじんじゃ",
+  "en": "Nakanono Shrine",
+  "ja": "長野神社",
+  "ja_title": "",
+  "mate": "ながのじんじゃ",
+  "qid": "Q135039598"
+ },
+ {
+  "derived": "おほみかのじんじゃ",
+  "en": "Ohomikano Shrine",
+  "ja": "大甕神社",
+  "ja_title": "",
+  "mate": "おおみかじんじゃ",
+  "qid": "Q135039599"
+ },
+ {
+  "derived": "とろくのじんじゃ",
+  "en": "Torokuno Shrine",
+  "ja": "於呂神社",
+  "ja_title": "",
+  "mate": "おろじんじゃ",
+  "qid": "Q135039600"
+ },
+ {
+  "derived": "あさひはたかのじんじゃ",
+  "en": "Asahihatakano Shrine",
+  "ja": "有玉神社",
+  "ja_title": "",
+  "mate": "ありたまじんじゃ",
+  "qid": "Q135039604"
+ },
+ {
+  "derived": "たなかのじんじゃ",
+  "en": "Tanakano Shrine",
+  "ja": "田中神社",
+  "ja_title": "",
+  "mate": "たなかじんじゃ",
+  "qid": "Q135039608"
+ },
+ {
+  "derived": "みおやのじんじゃ",
+  "en": "Mioyano Shrine",
+  "ja": "御祖神社",
+  "ja_title": "",
+  "mate": "みおやじんじゃ",
+  "qid": "Q135039609"
+ },
+ {
+  "derived": "やまなのじんじゃ",
+  "en": "Yamanano Shrine",
+  "ja": "山名神社",
+  "ja_title": "",
+  "mate": "やまなじんじゃ",
+  "qid": "Q135039617"
+ },
+ {
+  "derived": "しまなのじんじゃ",
+  "en": "Shimanano Shrine",
+  "ja": "島名神社",
+  "ja_title": "",
+  "mate": "しまなじんじゃ",
+  "qid": "Q135039619"
+ },
+ {
+  "derived": "いひつさわのじんじゃ",
+  "en": "Ihitsusawano Shrine",
+  "ja": "飯津佐和乃神社",
+  "ja_title": "",
+  "mate": "はづさわのじんじゃ",
+  "qid": "Q135039625"
+ },
+ {
+  "derived": "たけほのじんじゃ",
+  "en": "Takehono Shrine",
+  "ja": "建穂神社",
+  "ja_title": "",
+  "mate": "たきょうじんじゃ",
+  "qid": "Q135039628"
+ },
+ {
+  "derived": "とよつみのじんじゃ",
+  "en": "Toyotsumino Shrine",
+  "ja": "豊積神社",
+  "ja_title": "",
+  "mate": "とよづみじんじゃ",
+  "qid": "Q135039631"
+ },
+ {
+  "derived": "ふじのじんじゃ",
+  "en": "Fujino Shrine",
+  "ja": "富知神社",
+  "ja_title": "",
+  "mate": "ふくちじんじゃ",
+  "qid": "Q135039633"
+ },
+ {
+  "derived": "ひろせのじんじゃ",
+  "en": "Hiroseno Shrine",
+  "ja": "広瀬神社",
+  "ja_title": "",
+  "mate": "ひろせじんじゃ",
+  "qid": "Q135039671"
+ },
+ {
+  "derived": "やなきはらじんじゃ",
+  "en": "Yanakihara Shrine",
+  "ja": "楊原神社",
+  "ja_title": "",
+  "mate": "やなぎはらじんじゃ",
+  "qid": "Q135039673"
+ },
+ {
+  "derived": "かひなのじんじゃ",
+  "en": "Kahinano Shrine",
+  "ja": "甲斐奈神社",
+  "ja_title": "",
+  "mate": "かいなじんじゃ",
+  "qid": "Q135039687"
+ },
+ {
+  "derived": "ほみのじんじゃ",
+  "en": "Homino Shrine",
+  "ja": "穂見神社",
+  "ja_title": "",
+  "mate": "ほみじんじゃ",
+  "qid": "Q135039702"
+ },
+ {
+  "derived": "さくのじんじゃ",
+  "en": "Sakuno Shrine",
+  "ja": "佐久神社",
+  "ja_title": "",
+  "mate": "さくじんじゃ",
+  "qid": "Q135039704"
+ },
+ {
+  "derived": "あさまのじんじゃ",
+  "en": "Asamano Shrine",
+  "ja": "浅間神社",
+  "ja_title": "",
+  "mate": "せんげんじんじゃ",
+  "qid": "Q135039708"
+ },
+ {
+  "derived": "たかへやのじんじゃ",
+  "en": "Takaheyano Shrine",
+  "ja": "高部屋神社",
+  "ja_title": "",
+  "mate": "たかべやじんじゃ",
+  "qid": "Q135039720"
+ },
+ {
+  "derived": "ひひたのじんじゃ",
+  "en": "Hihitano Shrine",
+  "ja": "比比多神社",
+  "ja_title": "",
+  "mate": "ひびたじんじゃ",
+  "qid": "Q135039721"
+ },
+ {
+  "derived": "すきやまのじんじゃ",
+  "en": "Sukiyamano Shrine",
+  "ja": "杉山神社",
+  "ja_title": "杉山神社",
+  "mate": "すぎやまじんじゃ",
+  "qid": "Q135039726"
+ },
+ {
+  "derived": "みやめのじんじゃ",
+  "en": "Miyameno Shrine",
+  "ja": "宮目神社",
+  "ja_title": "",
+  "mate": "みやのめじんじゃ",
+  "qid": "Q135039740"
+ },
+ {
+  "derived": "いつものいはひのじんじゃ",
+  "en": "Itsumonoihahino Shrine",
+  "ja": "出雲乃伊波比神社",
+  "ja_title": "",
+  "mate": "いずものいわいじんじゃ",
+  "qid": "Q135039741"
+ },
+ {
+  "derived": "しらかみのじんじゃ",
+  "en": "Shirakamino Shrine",
+  "ja": "白髪神社",
+  "ja_title": "",
+  "mate": "しらかみじんじゃ",
+  "qid": "Q135039743"
+ },
+ {
+  "derived": "たなかのじんじゃ",
+  "en": "Tanakano Shrine",
+  "ja": "田中神社",
+  "ja_title": "",
+  "mate": "たなかじんじゃ",
+  "qid": "Q135039744"
+ },
+ {
+  "derived": "むくのじんじゃ",
+  "en": "Mukuno Shrine",
+  "ja": "椋神社",
+  "ja_title": "",
+  "mate": "むくじんじゃ",
+  "qid": "Q135039749"
+ },
+ {
+  "derived": "さむかはじんじゃ",
+  "en": "Samukaha Shrine",
+  "ja": "寒川神社",
+  "ja_title": "",
+  "mate": "さむかわじんじゃ",
+  "qid": "Q135039756"
+ },
+ {
+  "derived": "まかたのじんじゃ",
+  "en": "Makatano Shrine",
+  "ja": "麻賀多神社",
+  "ja_title": "",
+  "mate": "まかたじんじゃ",
+  "qid": "Q135039757"
+ },
+ {
+  "derived": "もろのじんじゃ",
+  "en": "Morono Shrine",
+  "ja": "茂侶神社",
+  "ja_title": "",
+  "mate": "もろじんじゃ",
+  "qid": "Q135039758"
+ },
+ {
+  "derived": "いなむらのじんじゃ",
+  "en": "Inamurano Shrine",
+  "ja": "稲村神社",
+  "ja_title": "",
+  "mate": "いなむらじんじゃ",
+  "qid": "Q135039762"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q135039764"
+ },
+ {
+  "derived": "いはふねのじんじゃ",
+  "en": "Ihafuneno Shrine",
+  "ja": "石船神社",
+  "ja_title": "",
+  "mate": "いしぶねじんじゃ",
+  "qid": "Q135039767"
+ },
+ {
+  "derived": "さしののじんじゃ",
+  "en": "Sashinono Shrine",
+  "ja": "佐志能神社",
+  "ja_title": "",
+  "mate": "さしのうじんじゃ",
+  "qid": "Q135039768"
+ },
+ {
+  "derived": "しとりのじんじゃ",
+  "en": "Shitorino Shrine",
+  "ja": "倭文神社",
+  "ja_title": "",
+  "mate": "しどりじんじゃ",
+  "qid": "Q135039785"
+ },
+ {
+  "derived": "たかののじんじゃ",
+  "en": "Takanono Shrine",
+  "ja": "高野神社",
+  "ja_title": "",
+  "mate": "たかのじんじゃ",
+  "qid": "Q135039794"
+ },
+ {
+  "derived": "いそへのじんじゃ",
+  "en": "Isoheno Shrine",
+  "ja": "石部神社",
+  "ja_title": "",
+  "mate": "いそべじんじゃ",
+  "qid": "Q135039803"
+ },
+ {
+  "derived": "いそへのじんじゃ",
+  "en": "Isoheno Shrine",
+  "ja": "石部神社",
+  "ja_title": "",
+  "mate": "いそべじんじゃ",
+  "qid": "Q135039812"
+ },
+ {
+  "derived": "かたやまのじんじゃ",
+  "en": "Katayamano Shrine",
+  "ja": "片山神社",
+  "ja_title": "",
+  "mate": "かたやまじんじゃ",
+  "qid": "Q135039827"
+ },
+ {
+  "derived": "おほたのじんじゃ",
+  "en": "Ohotano Shrine",
+  "ja": "多太神社",
+  "ja_title": "",
+  "mate": "ただじんじゃ",
+  "qid": "Q135039842"
+ },
+ {
+  "derived": "たかののじんじゃ",
+  "en": "Takanono Shrine",
+  "ja": "高野神社",
+  "ja_title": "",
+  "mate": "たかのじんじゃ",
+  "qid": "Q135039859"
+ },
+ {
+  "derived": "おほかはのじんじゃ",
+  "en": "Ohokahano Shrine",
+  "ja": "大川神社",
+  "ja_title": "",
+  "mate": "おおかわじんじゃ",
+  "qid": "Q135039875"
+ },
+ {
+  "derived": "おほさきのじんじゃ",
+  "en": "Ohosakino Shrine",
+  "ja": "大前神社",
+  "ja_title": "",
+  "mate": "おおさきじんじゃ",
+  "qid": "Q135039883"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135039885"
+ },
+ {
+  "derived": "なかたのじんじゃ",
+  "en": "Nakatano Shrine",
+  "ja": "長田神社",
+  "ja_title": "",
+  "mate": "ながたじんじゃ",
+  "qid": "Q135039895"
+ },
+ {
+  "derived": "かたあかたつのじんじゃ",
+  "en": "Kataakatatsuno Shrine",
+  "ja": "方県津神社",
+  "ja_title": "",
+  "mate": "かたがたつじんじゃ",
+  "qid": "Q135039902"
+ },
+ {
+  "derived": "ひなもりのじんじゃ",
+  "en": "Hinamorino Shrine",
+  "ja": "比奈守神社",
+  "ja_title": "",
+  "mate": "ひなもりじんじゃ",
+  "qid": "Q135039903"
+ },
+ {
+  "derived": "おほやまのじんじゃ",
+  "en": "Ohoyamano Shrine",
+  "ja": "大山神社",
+  "ja_title": "",
+  "mate": "おおやまじんじゃ",
+  "qid": "Q135039905"
+ },
+ {
+  "derived": "たぶじんじゃ",
+  "en": "Tabu Shrine",
+  "ja": "太部神社",
+  "ja_title": "",
+  "mate": "たべじんじゃ",
+  "qid": "Q135039906"
+ },
+ {
+  "derived": "なかやまのじんじゃ",
+  "en": "Nakayamano Shrine",
+  "ja": "中山神社",
+  "ja_title": "",
+  "mate": "なかやまじんじゃ",
+  "qid": "Q135039907"
+ },
+ {
+  "derived": "えなのじんじゃ",
+  "en": "Enano Shrine",
+  "ja": "荏名神社",
+  "ja_title": "",
+  "mate": "えなじんじゃ",
+  "qid": "Q135039909"
+ },
+ {
+  "derived": "おほつのじんじゃ",
+  "en": "Ohotsuno Shrine",
+  "ja": "大津神社",
+  "ja_title": "",
+  "mate": "おおづじんじゃ",
+  "qid": "Q135039910"
+ },
+ {
+  "derived": "たかたのじんじゃ",
+  "en": "Takatano Shrine",
+  "ja": "高田神社",
+  "ja_title": "",
+  "mate": "たかだじんじゃ",
+  "qid": "Q135039911"
+ },
+ {
+  "derived": "しみつのじんじゃ",
+  "en": "Shimitsuno Shrine",
+  "ja": "清水神社",
+  "ja_title": "",
+  "mate": "しみずじんじゃ",
+  "qid": "Q135039921"
+ },
+ {
+  "derived": "なかむらのじんじゃ",
+  "en": "Nakamurano Shrine",
+  "ja": "中村神社",
+  "ja_title": "",
+  "mate": "なかむらじんじゃ",
+  "qid": "Q135039940"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135039967"
+ },
+ {
+  "derived": "むなかたのじんじゃ",
+  "en": "Munakatano Shrine",
+  "ja": "胸形神社",
+  "ja_title": "",
+  "mate": "むなかたじんじゃ",
+  "qid": "Q135039975"
+ },
+ {
+  "derived": "ゆくのじんじゃ",
+  "en": "Yukuno Shrine",
+  "ja": "行神社",
+  "ja_title": "",
+  "mate": "ゆきじんじゃ",
+  "qid": "Q135039988"
+ },
+ {
+  "derived": "とりやじんじゃ",
+  "en": "Toriya Shrine",
+  "ja": "鳥屋神社",
+  "ja_title": "",
+  "mate": "とやじんじゃ",
+  "qid": "Q135040006"
+ },
+ {
+  "derived": "おほしまじんじゃ",
+  "en": "Ohoshima Shrine",
+  "ja": "大島神社",
+  "ja_title": "",
+  "mate": "おおしまじんじゃ",
+  "qid": "Q135040007"
+ },
+ {
+  "derived": "ひたかみのじんじゃ",
+  "en": "Hitakamino Shrine",
+  "ja": "日高見神社",
+  "ja_title": "",
+  "mate": "ひだかみじんじゃ",
+  "qid": "Q135040011"
+ },
+ {
+  "derived": "ふたまたのじんじゃ",
+  "en": "Futamatano Shrine",
+  "ja": "二俣神社",
+  "ja_title": "",
+  "mate": "ふたまたじんじゃ",
+  "qid": "Q135040012"
+ },
+ {
+  "derived": "さかみねのじんじゃ",
+  "en": "Sakamineno Shrine",
+  "ja": "冠嶺神社",
+  "ja_title": "",
+  "mate": "さかみねじんじゃ",
+  "qid": "Q135040018"
+ },
+ {
+  "derived": "たかのじんじゃ",
+  "en": "Takano Shrine",
+  "ja": "多珂神社",
+  "ja_title": "",
+  "mate": "たかじんじゃ",
+  "qid": "Q135040020"
+ },
+ {
+  "derived": "こかねやまのじんじゃ",
+  "en": "Kokaneyamano Shrine",
+  "ja": "黄金山神社",
+  "ja_title": "",
+  "mate": "こがねやまじんじゃ",
+  "qid": "Q135040041"
+ },
+ {
+  "derived": "おきつしまのじんじゃ",
+  "en": "Okitsushimano Shrine",
+  "ja": "隠津島神社",
+  "ja_title": "",
+  "mate": "おきつしまじんじゃ",
+  "qid": "Q135040047"
+ },
+ {
+  "derived": "つきやまじんじゃ",
+  "en": "Tsukiyama Shrine",
+  "ja": "月山神社",
+  "ja_title": "",
+  "mate": "がっさんじんじゃ",
+  "qid": "Q135040053"
+ },
+ {
+  "derived": "そひかはのじんじゃ",
+  "en": "Sohikahano Shrine",
+  "ja": "副川神社",
+  "ja_title": "",
+  "mate": "そえがわじんじゃ",
+  "qid": "Q135040055"
+ },
+ {
+  "derived": "たたのじんじゃ",
+  "en": "Tatano Shrine",
+  "ja": "多太神社",
+  "ja_title": "",
+  "mate": "ただじんじゃ",
+  "qid": "Q135040056"
+ },
+ {
+  "derived": "にふのじんじゃ",
+  "en": "Nifuno Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135040066"
+ },
+ {
+  "derived": "にふのじんじゃ",
+  "en": "Nifuno Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135040085"
+ },
+ {
+  "derived": "すべのじんじゃ",
+  "en": "Subeno Shrine",
+  "ja": "恵比須神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q135040091"
+ },
+ {
+  "derived": "にふのじんじゃ",
+  "en": "Nifuno Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135040103"
+ },
+ {
+  "derived": "よこやまのじんじゃ",
+  "en": "Yokoyamano Shrine",
+  "ja": "横山神社",
+  "ja_title": "",
+  "mate": "よこやまじんじゃ",
+  "qid": "Q135040126"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135040155"
+ },
+ {
+  "derived": "いそへのじんじゃ",
+  "en": "Isoheno Shrine",
+  "ja": "石部神社",
+  "ja_title": "",
+  "mate": "いそべじんじゃ",
+  "qid": "Q135040158"
+ },
+ {
+  "derived": "すはあすきじんじゃ",
+  "en": "Suhaasuki Shrine",
+  "ja": "須波阿湏疑神社",
+  "ja_title": "",
+  "mate": "すわあずきじんじゃ",
+  "qid": "Q135040160"
+ },
+ {
+  "derived": "うへのじんじゃ",
+  "en": "Uheno Shrine",
+  "ja": "於神社",
+  "ja_title": "",
+  "mate": "おのじんじゃ",
+  "qid": "Q135040212"
+ },
+ {
+  "derived": "よこやまのじんじゃ",
+  "en": "Yokoyamano Shrine",
+  "ja": "横山神社",
+  "ja_title": "",
+  "mate": "よこやまじんじゃ",
+  "qid": "Q135040249"
+ },
+ {
+  "derived": "いはたのじんじゃ",
+  "en": "Ihatano Shrine",
+  "ja": "石田神社",
+  "ja_title": "",
+  "mate": "いしだじんじゃ",
+  "qid": "Q135040251"
+ },
+ {
+  "derived": "かさまのじんじゃ",
+  "en": "Kasamano Shrine",
+  "ja": "笠間神社",
+  "ja_title": "",
+  "mate": "かさまじんじゃ",
+  "qid": "Q135040254"
+ },
+ {
+  "derived": "たたのじんじゃ",
+  "en": "Tatano Shrine",
+  "ja": "多太神社",
+  "ja_title": "",
+  "mate": "ただじんじゃ",
+  "qid": "Q135040272"
+ },
+ {
+  "derived": "かさまのじんじゃ",
+  "en": "Kasamano Shrine",
+  "ja": "笠間神社",
+  "ja_title": "",
+  "mate": "かさまじんじゃ",
+  "qid": "Q135040284"
+ },
+ {
+  "derived": "かむたのじんじゃ",
+  "en": "Kamutano Shrine",
+  "ja": "神田神社",
+  "ja_title": "",
+  "mate": "かんだじんじゃ",
+  "qid": "Q135040286"
+ },
+ {
+  "derived": "のまのじんじゃ",
+  "en": "Nomano Shrine",
+  "ja": "野間神社",
+  "ja_title": "",
+  "mate": "のまじんじゃ",
+  "qid": "Q135040289"
+ },
+ {
+  "derived": "かんたのじんじゃ",
+  "en": "Kantano Shrine",
+  "ja": "神田神社",
+  "ja_title": "",
+  "mate": "かんだじんじゃ",
+  "qid": "Q135040292"
+ },
+ {
+  "derived": "はやしのじんじゃ",
+  "en": "Hayashino Shrine",
+  "ja": "林神社",
+  "ja_title": "",
+  "mate": "はやしじんじゃ",
+  "qid": "Q135040352"
+ },
+ {
+  "derived": "もののへのじんじゃ",
+  "en": "Mononoheno Shrine",
+  "ja": "物部神社",
+  "ja_title": "",
+  "mate": "もののべじんじゃ",
+  "qid": "Q135040361"
+ },
+ {
+  "derived": "はやほしのじんじゃ",
+  "en": "Hayahoshino Shrine",
+  "ja": "速星神社",
+  "ja_title": "",
+  "mate": "はやほしじんじゃ",
+  "qid": "Q135040381"
+ },
+ {
+  "derived": "もののへのじんじゃ",
+  "en": "Mononoheno Shrine",
+  "ja": "物部神社",
+  "ja_title": "",
+  "mate": "もののべじんじゃ",
+  "qid": "Q135040424"
+ },
+ {
+  "derived": "まとたのじんじゃ",
+  "en": "Matotano Shrine",
+  "ja": "圓田神社",
+  "ja_title": "",
+  "mate": "まるたじんじゃ",
+  "qid": "Q135040436"
+ },
+ {
+  "derived": "いはゐのじんじゃ",
+  "en": "Ihawino Shrine",
+  "ja": "石井神社",
+  "ja_title": "",
+  "mate": "いわいじんじゃ",
+  "qid": "Q135040453"
+ },
+ {
+  "derived": "おほさきのじんじゃ",
+  "en": "Ohosakino Shrine",
+  "ja": "大前神社",
+  "ja_title": "",
+  "mate": "おおさきじんじゃ",
+  "qid": "Q135040454"
+ },
+ {
+  "derived": "うつらはしのじんじゃ",
+  "en": "Utsurahashino Shrine",
+  "ja": "中山神社",
+  "ja_title": "",
+  "mate": "なかやまじんじゃ",
+  "qid": "Q135040457"
+ },
+ {
+  "derived": "いやひこのじんじゃ",
+  "en": "Iyahikono Shrine",
+  "ja": "弥彦神社",
+  "ja_title": "",
+  "mate": "やひこじんじゃ",
+  "qid": "Q135040462"
+ },
+ {
+  "derived": "なかやまのじんじゃ",
+  "en": "Nakayamano Shrine",
+  "ja": "中山神社",
+  "ja_title": "",
+  "mate": "なかやまじんじゃ",
+  "qid": "Q135040464"
+ },
+ {
+  "derived": "いしゐのじんじゃ",
+  "en": "Ishiwino Shrine",
+  "ja": "石井神社",
+  "ja_title": "",
+  "mate": "いわいじんじゃ",
+  "qid": "Q135040470"
+ },
+ {
+  "derived": "かまはらのじんじゃ",
+  "en": "Kamaharano Shrine",
+  "ja": "蒲原神社",
+  "ja_title": "",
+  "mate": "かんばらじんじゃ",
+  "qid": "Q135040473"
+ },
+ {
+  "derived": "あらかはのじんじゃ",
+  "en": "Arakahano Shrine",
+  "ja": "荒川神社",
+  "ja_title": "",
+  "mate": "あらかわじんじゃ",
+  "qid": "Q135040475"
+ },
+ {
+  "derived": "ももかはのじんじゃ",
+  "en": "Momokahano Shrine",
+  "ja": "桃川神社",
+  "ja_title": "",
+  "mate": "ももかわじんじゃ",
+  "qid": "Q135040478"
+ },
+ {
+  "derived": "もののへのじんじゃ",
+  "en": "Mononoheno Shrine",
+  "ja": "物部神社",
+  "ja_title": "",
+  "mate": "もののべじんじゃ",
+  "qid": "Q135040484"
+ },
+ {
+  "derived": "いつものじんじゃ",
+  "en": "Itsumono Shrine",
+  "ja": "出雲神社",
+  "ja_title": "",
+  "mate": "いずもじんじゃ",
+  "qid": "Q135040491"
+ },
+ {
+  "derived": "かむののじんじゃ",
+  "en": "Kamunono Shrine",
+  "ja": "宮川神社",
+  "ja_title": "",
+  "mate": "みやがわじんじゃ",
+  "qid": "Q135040493"
+ },
+ {
+  "derived": "かむたのじんじゃ",
+  "en": "Kamutano Shrine",
+  "ja": "神田神社",
+  "ja_title": "",
+  "mate": "かんだじんじゃ",
+  "qid": "Q135040507"
+ },
+ {
+  "derived": "にひゐのじんじゃ",
+  "en": "Nihiwino Shrine",
+  "ja": "新井神社",
+  "ja_title": "",
+  "mate": "あらいじんじゃ",
+  "qid": "Q135040522"
+ },
+ {
+  "derived": "かむのじんじゃ",
+  "en": "Kamuno Shrine",
+  "ja": "神野神社",
+  "ja_title": "",
+  "mate": "かんのじんじゃ",
+  "qid": "Q135040528"
+ },
+ {
+  "derived": "しとりのじんじゃ",
+  "en": "Shitorino Shrine",
+  "ja": "倭文神社",
+  "ja_title": "",
+  "mate": "しどりじんじゃ",
+  "qid": "Q135040552"
+ },
+ {
+  "derived": "たかたのじんじゃ",
+  "en": "Takatano Shrine",
+  "ja": "高田神社",
+  "ja_title": "",
+  "mate": "たかだじんじゃ",
+  "qid": "Q135040553"
+ },
+ {
+  "derived": "みやけのじんじゃ",
+  "en": "Miyakeno Shrine",
+  "ja": "三宅神社",
+  "ja_title": "",
+  "mate": "みやけじんじゃ",
+  "qid": "Q135040557"
+ },
+ {
+  "derived": "もののへのじんじゃ",
+  "en": "Mononoheno Shrine",
+  "ja": "物部神社",
+  "ja_title": "",
+  "mate": "もののべじんじゃ",
+  "qid": "Q135040559"
+ },
+ {
+  "derived": "うらのじんじゃ",
+  "en": "Urano Shrine",
+  "ja": "浦嶋神社",
+  "ja_title": "",
+  "mate": "うらしまじんじゃ",
+  "qid": "Q135040566"
+ },
+ {
+  "derived": "なくのじんじゃ",
+  "en": "Nakuno Shrine",
+  "ja": "奈具神社",
+  "ja_title": "",
+  "mate": "なぐじんじゃ",
+  "qid": "Q135040582"
+ },
+ {
+  "derived": "おほののじんじゃ",
+  "en": "Ohonono Shrine",
+  "ja": "大野神社",
+  "ja_title": "",
+  "mate": "おおのじんじゃ",
+  "qid": "Q135040587"
+ },
+ {
+  "derived": "ひめふのじんじゃ",
+  "en": "Himefuno Shrine",
+  "ja": "売布神社",
+  "ja_title": "",
+  "mate": "めふじんじゃ",
+  "qid": "Q135040594"
+ },
+ {
+  "derived": "ひめふのじんじゃ",
+  "en": "Himefuno Shrine",
+  "ja": "売布神社",
+  "ja_title": "",
+  "mate": "めふじんじゃ",
+  "qid": "Q135040601"
+ },
+ {
+  "derived": "あさこのいそべのじんじゃ",
+  "en": "Asakonoisobeno Shrine",
+  "ja": "石部神社",
+  "ja_title": "",
+  "mate": "いそべじんじゃ",
+  "qid": "Q135040605"
+ },
+ {
+  "derived": "ひやうすのじんじゃ",
+  "en": "Hiyausuno Shrine",
+  "ja": "兵主神社",
+  "ja_title": "",
+  "mate": "ひょうずじんじゃ",
+  "qid": "Q135040607"
+ },
+ {
+  "derived": "あかふちのじんじゃ",
+  "en": "Akafuchino Shrine",
+  "ja": "赤淵神社",
+  "ja_title": "",
+  "mate": "あかぶちじんじゃ",
+  "qid": "Q135040608"
+ },
+ {
+  "derived": "しとりのじんじゃ",
+  "en": "Shitorino Shrine",
+  "ja": "倭文神社",
+  "ja_title": "",
+  "mate": "しどりじんじゃ",
+  "qid": "Q135040610"
+ },
+ {
+  "derived": "あさまのじんじゃ",
+  "en": "Asamano Shrine",
+  "ja": "浅間神社",
+  "ja_title": "",
+  "mate": "せんげんじんじゃ",
+  "qid": "Q135040614"
+ },
+ {
+  "derived": "ゐのへのじんじゃ",
+  "en": "Winoheno Shrine",
+  "ja": "井上神社",
+  "ja_title": "",
+  "mate": "いがみじんじゃ",
+  "qid": "Q135040621"
+ },
+ {
+  "derived": "みゐのじんじゃ",
+  "en": "Miwino Shrine",
+  "ja": "御井神社",
+  "ja_title": "",
+  "mate": "みいじんじゃ",
+  "qid": "Q135040630"
+ },
+ {
+  "derived": "ひてのじんじゃ",
+  "en": "Hiteno Shrine",
+  "ja": "日出神社",
+  "ja_title": "",
+  "mate": "ひでじんじゃ",
+  "qid": "Q135040638"
+ },
+ {
+  "derived": "ひめふのじんじゃ",
+  "en": "Himefuno Shrine",
+  "ja": "売布神社",
+  "ja_title": "",
+  "mate": "めふじんじゃ",
+  "qid": "Q135040651"
+ },
+ {
+  "derived": "みゐのじんじゃ",
+  "en": "Miwino Shrine",
+  "ja": "御井神社",
+  "ja_title": "",
+  "mate": "みいじんじゃ",
+  "qid": "Q135040660"
+ },
+ {
+  "derived": "さくのじんじゃ",
+  "en": "Sakuno Shrine",
+  "ja": "佐久神社",
+  "ja_title": "",
+  "mate": "さくじんじゃ",
+  "qid": "Q135040662"
+ },
+ {
+  "derived": "かむとのじんじゃ",
+  "en": "Kamutono Shrine",
+  "ja": "神門神社",
+  "ja_title": "",
+  "mate": "ごうどじんじゃ",
+  "qid": "Q135040663"
+ },
+ {
+  "derived": "あまのじんじゃ",
+  "en": "Amano Shrine",
+  "ja": "海神社",
+  "ja_title": "",
+  "mate": "わたつみじんじゃ",
+  "qid": "Q135040693"
+ },
+ {
+  "derived": "たかののじんじゃ",
+  "en": "Takanono Shrine",
+  "ja": "鷹野神社",
+  "ja_title": "",
+  "mate": "たかのじんじゃ",
+  "qid": "Q135040695"
+ },
+ {
+  "derived": "あこたにのじんじゃ",
+  "en": "Akotanino Shrine",
+  "ja": "森神社",
+  "ja_title": "",
+  "mate": "もりじんじゃ",
+  "qid": "Q135040700"
+ },
+ {
+  "derived": "にふのじんじゃ",
+  "en": "Nifuno Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135040703"
+ },
+ {
+  "derived": "たかののじんじゃ",
+  "en": "Takanono Shrine",
+  "ja": "高野神社",
+  "ja_title": "",
+  "mate": "たかのじんじゃ",
+  "qid": "Q135040721"
+ },
+ {
+  "derived": "ひののじんじゃ",
+  "en": "Hinono Shrine",
+  "ja": "日野神社",
+  "ja_title": "",
+  "mate": "ひのじんじゃ",
+  "qid": "Q135040724"
+ },
+ {
+  "derived": "いわのじんじゃ",
+  "en": "Iwano Shrine",
+  "ja": "伊和神社",
+  "ja_title": "",
+  "mate": "いわじんじゃ",
+  "qid": "Q135040746"
+ },
+ {
+  "derived": "しとりのじんじゃ",
+  "en": "Shitorino Shrine",
+  "ja": "倭文神社",
+  "ja_title": "",
+  "mate": "しどりじんじゃ",
+  "qid": "Q135040758"
+ },
+ {
+  "derived": "かはかみのじんじゃ",
+  "en": "Kahakamino Shrine",
+  "ja": "川上神社",
+  "ja_title": "",
+  "mate": "かわかみじんじゃ",
+  "qid": "Q135040923"
+ },
+ {
+  "derived": "よこたのじんじゃ",
+  "en": "Yokotano Shrine",
+  "ja": "横田神社",
+  "ja_title": "",
+  "mate": "よこたじんじゃ",
+  "qid": "Q135040926"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q135040932"
+ },
+ {
+  "derived": "みゐのじんじゃ",
+  "en": "Miwino Shrine",
+  "ja": "御井神社",
+  "ja_title": "",
+  "mate": "みいじんじゃ",
+  "qid": "Q135040934"
+ },
+ {
+  "derived": "うちのじんじゃ",
+  "en": "Uchino Shrine",
+  "ja": "内神社",
+  "ja_title": "内神社 (松江市)",
+  "mate": "うちじんじゃ",
+  "qid": "Q135040935"
+ },
+ {
+  "derived": "たるみのじんじゃ",
+  "en": "Tarumino Shrine",
+  "ja": "垂水神社",
+  "ja_title": "",
+  "mate": "たるみじんじゃ",
+  "qid": "Q135040936"
+ },
+ {
+  "derived": "さかのじんじゃ",
+  "en": "Sakano Shrine",
+  "ja": "佐香神社",
+  "ja_title": "",
+  "mate": "さかじんじゃ",
+  "qid": "Q135040941"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135040949"
+ },
+ {
+  "derived": "いつものじんじゃ",
+  "en": "Itsumono Shrine",
+  "ja": "出雲神社",
+  "ja_title": "",
+  "mate": "いずもじんじゃ",
+  "qid": "Q135041043"
+ },
+ {
+  "derived": "とりやのじんじゃ",
+  "en": "Toriyano Shrine",
+  "ja": "鳥屋神社",
+  "ja_title": "",
+  "mate": "とやじんじゃ",
+  "qid": "Q135041048"
+ },
+ {
+  "derived": "たきのじんじゃ",
+  "en": "Takino Shrine",
+  "ja": "多伎神社",
+  "ja_title": "",
+  "mate": "たきじんじゃ",
+  "qid": "Q135041066"
+ },
+ {
+  "derived": "おほやまのじんじゃ",
+  "en": "Ohoyamano Shrine",
+  "ja": "大山神社",
+  "ja_title": "",
+  "mate": "おおやまじんじゃ",
+  "qid": "Q135041078"
+ },
+ {
+  "derived": "かむたのじんじゃ",
+  "en": "Kamutano Shrine",
+  "ja": "苅田神社",
+  "ja_title": "",
+  "mate": "かりたじんじゃ",
+  "qid": "Q135041107"
+ },
+ {
+  "derived": "つとのじんじゃ",
+  "en": "Tsutono Shrine",
+  "ja": "津門神社",
+  "ja_title": "",
+  "mate": "つとじんじゃ",
+  "qid": "Q135041126"
+ },
+ {
+  "derived": "あまつのじんじゃ",
+  "en": "Amatsuno Shrine",
+  "ja": "天津神社",
+  "ja_title": "",
+  "mate": "あまつじんじゃ",
+  "qid": "Q135041133"
+ },
+ {
+  "derived": "もののへのじんじゃ",
+  "en": "Mononoheno Shrine",
+  "ja": "物部神社",
+  "ja_title": "",
+  "mate": "もののべじんじゃ",
+  "qid": "Q135041147"
+ },
+ {
+  "derived": "いわつひめのじんじゃ",
+  "en": "Iwatsuhimeno Shrine",
+  "ja": "伊和都比売神社",
+  "ja_title": "",
+  "mate": "いわつひめじんじゃ",
+  "qid": "Q135041149"
+ },
+ {
+  "derived": "なかとみいたてのじんじゃ",
+  "en": "Nakatomiitateno Shrine",
+  "ja": "中臣印達神社",
+  "ja_title": "",
+  "mate": "なかとみいたてじんじゃ",
+  "qid": "Q135041153"
+ },
+ {
+  "derived": "おおつじんじゃ",
+  "en": "Ootsu Shrine",
+  "ja": "大津神社",
+  "ja_title": "",
+  "mate": "おおづじんじゃ",
+  "qid": "Q135041170"
+ },
+ {
+  "derived": "いそへのじんじゃ",
+  "en": "Isoheno Shrine",
+  "ja": "石部神社",
+  "ja_title": "",
+  "mate": "いそべじんじゃ",
+  "qid": "Q135041174"
+ },
+ {
+  "derived": "なかたのじんじゃ",
+  "en": "Nakatano Shrine",
+  "ja": "長田神社",
+  "ja_title": "",
+  "mate": "ながたじんじゃ",
+  "qid": "Q135041188"
+ },
+ {
+  "derived": "かくやのじんじゃ",
+  "en": "Kakuyano Shrine",
+  "ja": "高野神社",
+  "ja_title": "",
+  "mate": "たかのじんじゃ",
+  "qid": "Q135041189"
+ },
+ {
+  "derived": "かものじんじゃ",
+  "en": "Kamono Shrine",
+  "ja": "鴨神社",
+  "ja_title": "",
+  "mate": "かもじんじゃ",
+  "qid": "Q135041197"
+ },
+ {
+  "derived": "ふせじんじゃ",
+  "en": "Fuse Shrine",
+  "ja": "布勢神社",
+  "ja_title": "",
+  "mate": "ふせのじんじゃ",
+  "qid": "Q135041199"
+ },
+ {
+  "derived": "くにつじんじゃ",
+  "en": "Kunitsu Shrine",
+  "ja": "国神社",
+  "ja_title": "",
+  "mate": "くにじんじゃ",
+  "qid": "Q135041210"
+ },
+ {
+  "derived": "かものじんじゃ",
+  "en": "Kamono Shrine",
+  "ja": "鴨神社",
+  "ja_title": "",
+  "mate": "かもじんじゃ",
+  "qid": "Q135041213"
+ },
+ {
+  "derived": "かものじんじゃ",
+  "en": "Kamono Shrine",
+  "ja": "鴨神社",
+  "ja_title": "",
+  "mate": "かもじんじゃ",
+  "qid": "Q135041214"
+ },
+ {
+  "derived": "すかふのじんじゃ",
+  "en": "Sukafuno Shrine",
+  "ja": "菅生神社",
+  "ja_title": "",
+  "mate": "すがうじんじゃ",
+  "qid": "Q135041218"
+ },
+ {
+  "derived": "ちはやひこのじんじゃ",
+  "en": "Chihayahikono Shrine",
+  "ja": "知波夜比古神社",
+  "ja_title": "",
+  "mate": "ちはやひこじんじゃ",
+  "qid": "Q135041252"
+ },
+ {
+  "derived": "いつものじんじゃ",
+  "en": "Itsumono Shrine",
+  "ja": "出雲神社",
+  "ja_title": "",
+  "mate": "いずもじんじゃ",
+  "qid": "Q135041258"
+ },
+ {
+  "derived": "みさかのじんじゃ",
+  "en": "Misakano Shrine",
+  "ja": "御坂神社",
+  "ja_title": "",
+  "mate": "みさかじんじゃ",
+  "qid": "Q135041263"
+ },
+ {
+  "derived": "ふたまたのじんじゃ",
+  "en": "Futamatano Shrine",
+  "ja": "二俣神社",
+  "ja_title": "",
+  "mate": "ふたまたじんじゃ",
+  "qid": "Q135041265"
+ },
+ {
+  "derived": "いくひめのじんじゃ",
+  "en": "Ikuhimeno Shrine",
+  "ja": "伊久比売神社",
+  "ja_title": "",
+  "mate": "いくひめじんじゃ",
+  "qid": "Q135041277"
+ },
+ {
+  "derived": "ゆらのみなとのじんじゃ",
+  "en": "Yuranominatono Shrine",
+  "ja": "由良湊神社",
+  "ja_title": "",
+  "mate": "ゆらみなとじんじゃ",
+  "qid": "Q135041289"
+ },
+ {
+  "derived": "くとのじんじゃ",
+  "en": "Kutono Shrine",
+  "ja": "久度神社",
+  "ja_title": "",
+  "mate": "くどじんじゃ",
+  "qid": "Q135041300"
+ },
+ {
+  "derived": "かえひめのじんじゃ",
+  "en": "Kaehimeno Shrine",
+  "ja": "鹿江比賣神社",
+  "ja_title": "",
+  "mate": "かえひめじんじゃ",
+  "qid": "Q135041301"
+ },
+ {
+  "derived": "たけふつのじんじゃ",
+  "en": "Takefutsuno Shrine",
+  "ja": "建布都神社",
+  "ja_title": "",
+  "mate": "たけふつじんじゃ",
+  "qid": "Q135041304"
+ },
+ {
+  "derived": "たわのじんじゃ",
+  "en": "Tawano Shrine",
+  "ja": "田寸神社",
+  "ja_title": "",
+  "mate": "たきじんじゃ",
+  "qid": "Q135041306"
+ },
+ {
+  "derived": "よこたのじんじゃ",
+  "en": "Yokotano Shrine",
+  "ja": "横田神社",
+  "ja_title": "",
+  "mate": "よこたじんじゃ",
+  "qid": "Q135041307"
+ },
+ {
+  "derived": "たけのじんじゃ",
+  "en": "Takeno Shrine",
+  "ja": "建神社",
+  "ja_title": "",
+  "mate": "たてじんじゃ",
+  "qid": "Q135041309"
+ },
+ {
+  "derived": "あめよりたてのじんじゃ",
+  "en": "Ameyoritateno Shrine",
+  "ja": "天椅立神社",
+  "ja_title": "",
+  "mate": "あまのはしだてじんじゃ",
+  "qid": "Q135041311"
+ },
+ {
+  "derived": "いむへのじんじゃ",
+  "en": "Imuheno Shrine",
+  "ja": "忌部神社",
+  "ja_title": "",
+  "mate": "いんべじんじゃ",
+  "qid": "Q135041321"
+ },
+ {
+  "derived": "うなゐのじんじゃ",
+  "en": "Unawino Shrine",
+  "ja": "宇奈為神社",
+  "ja_title": "",
+  "mate": "うないじんじゃ",
+  "qid": "Q135041372"
+ },
+ {
+  "derived": "わなさいふそのじんじゃ",
+  "en": "Wanasaifusono Shrine",
+  "ja": "和奈佐意富曽神社",
+  "ja_title": "",
+  "mate": "わなさおうそじんじゃ",
+  "qid": "Q135041373"
+ },
+ {
+  "derived": "むろひめのじんじゃ",
+  "en": "Murohimeno Shrine",
+  "ja": "室比賣神社",
+  "ja_title": "",
+  "mate": "むろひめじんじゃ",
+  "qid": "Q135041374"
+ },
+ {
+  "derived": "かしはひめのじんじゃ",
+  "en": "Kashihahimeno Shrine",
+  "ja": "賀志波比売神社",
+  "ja_title": "",
+  "mate": "かしはひめじんじゃ",
+  "qid": "Q135041377"
+ },
+ {
+  "derived": "いびりょうじんじゃ",
+  "en": "Ibiryou Shrine",
+  "ja": "伊比良咩神社",
+  "ja_title": "",
+  "mate": "いひらめじんじゃ",
+  "qid": "Q135041379"
+ },
+ {
+  "derived": "ふねじんじんじゃ",
+  "en": "Funejin Shrine",
+  "ja": "船盡神社",
+  "ja_title": "",
+  "mate": "ふなはてじんじゃ",
+  "qid": "Q135041380"
+ },
+ {
+  "derived": "したはりのじんじゃ",
+  "en": "Shitaharino Shrine",
+  "ja": "志太張神社",
+  "ja_title": "",
+  "mate": "したはりじんじゃ",
+  "qid": "Q135041382"
+ },
+ {
+  "derived": "たわのじんじゃ",
+  "en": "Tawano Shrine",
+  "ja": "多和神社",
+  "ja_title": "",
+  "mate": "たわじんじゃ",
+  "qid": "Q135041385"
+ },
+ {
+  "derived": "わにかはじんじゃ",
+  "en": "Wanikaha Shrine",
+  "ja": "和爾賀波神社",
+  "ja_title": "",
+  "mate": "わにかわじんじゃ",
+  "qid": "Q135041387"
+ },
+ {
+  "derived": "くしなしのじんじゃ",
+  "en": "Kushinashino Shrine",
+  "ja": "櫛梨神社",
+  "ja_title": "",
+  "mate": "くしなしじんじゃ",
+  "qid": "Q135041390"
+ },
+ {
+  "derived": "かむののじんじゃ",
+  "en": "Kamunono Shrine",
+  "ja": "神野神社",
+  "ja_title": "",
+  "mate": "かんのじんじゃ",
+  "qid": "Q135041391"
+ },
+ {
+  "derived": "おほあさのじんじゃ",
+  "en": "Ohoasano Shrine",
+  "ja": "大麻神社",
+  "ja_title": "",
+  "mate": "おおあさじんじゃ",
+  "qid": "Q135041392"
+ },
+ {
+  "derived": "たかやのじんじゃ",
+  "en": "Takayano Shrine",
+  "ja": "高屋神社",
+  "ja_title": "",
+  "mate": "たかやじんじゃ",
+  "qid": "Q135041394"
+ },
+ {
+  "derived": "かまらのじんじゃ",
+  "en": "Kamarano Shrine",
+  "ja": "加麻良神社",
+  "ja_title": "",
+  "mate": "かまらじんじゃ",
+  "qid": "Q135041396"
+ },
+ {
+  "derived": "こうけじんじゃ",
+  "en": "Kouke Shrine",
+  "ja": "高家神社",
+  "ja_title": "",
+  "mate": "たかべじんじゃ",
+  "qid": "Q135041403"
+ },
+ {
+  "derived": "いよのじんじゃ",
+  "en": "Iyono Shrine",
+  "ja": "伊予神社",
+  "ja_title": "",
+  "mate": "いよじんじゃ",
+  "qid": "Q135041429"
+ },
+ {
+  "derived": "きりしまのじんじゃ",
+  "en": "Kirishimano Shrine",
+  "ja": "霧島神社",
+  "ja_title": "",
+  "mate": "きりしまじんじゃ",
+  "qid": "Q135041487"
+ },
+ {
+  "derived": "つくよみじんじゃ",
+  "en": "Tsukuyomi Shrine",
+  "ja": "月読神社",
+  "ja_title": "",
+  "mate": "つきよみじんしゃ",
+  "qid": "Q135041492"
+ },
+ {
+  "derived": "あまのじんじゃ",
+  "en": "Amano Shrine",
+  "ja": "海神社",
+  "ja_title": "",
+  "mate": "わたつみじんじゃ",
+  "qid": "Q135041512"
+ },
+ {
+  "derived": "つのじんじゃ",
+  "en": "Tsuno Shrine",
+  "ja": "津神社",
+  "ja_title": "",
+  "mate": "つじんじゃ",
+  "qid": "Q135041514"
+ },
+ {
+  "derived": "わたつみじんじゃ",
+  "en": "Watatsumi Shrine (Engishiki)",
+  "ja": "和多都美神社",
+  "ja_title": "",
+  "mate": "わたづみじんじゃ",
+  "qid": "Q135041526"
+ },
+ {
+  "derived": "わたつみのじんじゃ",
+  "en": "Watatsumino Shrine",
+  "ja": "和多都美神社",
+  "ja_title": "",
+  "mate": "わたづみじんじゃ",
+  "qid": "Q135041548"
+ },
+ {
+  "derived": "わたつみのじんじゃ",
+  "en": "Watatsumino Shrine",
+  "ja": "和多都美神社",
+  "ja_title": "",
+  "mate": "わたづみじんじゃ",
+  "qid": "Q135041552"
+ },
+ {
+  "derived": "たひらのじんじゃ",
+  "en": "Tahirano Shrine",
+  "ja": "平神社",
+  "ja_title": "",
+  "mate": "たいらじんじゃ",
+  "qid": "Q135041554"
+ },
+ {
+  "derived": "しきしまのじんじゃ",
+  "en": "Shikishimano Shrine",
+  "ja": "敷島神社",
+  "ja_title": "",
+  "mate": "しきしまじんじゃ",
+  "qid": "Q135041555"
+ },
+ {
+  "derived": "いわかみじんじゃ",
+  "en": "Iwakami Shrine",
+  "ja": "岩上神社",
+  "ja_title": "",
+  "mate": "いそがみじんじゃ",
+  "qid": "Q135068816"
+ },
+ {
+  "derived": "そえおけんざじんじゃ",
+  "en": "Soeokenza Shrine",
+  "ja": "添御県坐神社",
+  "ja_title": "",
+  "mate": "そうのみあがたにいますじんじゃ",
+  "qid": "Q135068907"
+ },
+ {
+  "derived": "おいじんじゃ",
+  "en": "Oi Shrine",
+  "ja": "大井神社",
+  "ja_title": "",
+  "mate": "おおいじんじゃ",
+  "qid": "Q135069234"
+ },
+ {
+  "derived": "さんめいじんじゃ",
+  "en": "Sanmei Shrine",
+  "ja": "山名神社",
+  "ja_title": "",
+  "mate": "やまなじんじゃ",
+  "qid": "Q135069406"
+ },
+ {
+  "derived": "さんめいじんじゃ",
+  "en": "Sanmei Shrine (Tōtōmi Province)",
+  "ja": "山名神社",
+  "ja_title": "",
+  "mate": "やまなじんじゃ",
+  "qid": "Q135069407"
+ },
+ {
+  "derived": "しらはじんじゃ",
+  "en": "Shiraha Shrine",
+  "ja": "白羽神社",
+  "ja_title": "",
+  "mate": "しろわじんじゃ",
+  "qid": "Q135069412"
+ },
+ {
+  "derived": "とみちろくところあさまじんじゃ",
+  "en": "Tomichirokutokoroasama Shrine",
+  "ja": "富知六所淺間神社",
+  "ja_title": "",
+  "mate": "ふじろくしょせんげんじんじゃ",
+  "qid": "Q135069413"
+ },
+ {
+  "derived": "みやめじんじゃ",
+  "en": "Miyame Shrine",
+  "ja": "宮目神社",
+  "ja_title": "",
+  "mate": "みやのめじんじゃ",
+  "qid": "Q135069539"
+ },
+ {
+  "derived": "いずものいなみひじんじゃ",
+  "en": "Izumonoinamihi Shrine",
+  "ja": "出雲乃伊波比神社",
+  "ja_title": "",
+  "mate": "いずものいわいじんじゃ",
+  "qid": "Q135069545"
+ },
+ {
+  "derived": "たいがせいしんじんじゃ",
+  "en": "Taigaseishin Shrine",
+  "ja": "大我井神社",
+  "ja_title": "",
+  "mate": "おおがいじんじゃ",
+  "qid": "Q135069549"
+ },
+ {
+  "derived": "いいずなじんじゃ",
+  "en": "Iizuna Shrine",
+  "ja": "飯綱神社",
+  "ja_title": "",
+  "mate": "いいづなじんじゃ",
+  "qid": "Q135069605"
+ },
+ {
+  "derived": "たいあんじんじゃ",
+  "en": "Taian Shrine",
+  "ja": "胎安神社",
+  "ja_title": "",
+  "mate": "たやすじんじゃ",
+  "qid": "Q135069607"
+ },
+ {
+  "derived": "しみつのじんじゃ",
+  "en": "Shimitsuno Shrine (candidate)",
+  "ja": "清水神社",
+  "ja_title": "",
+  "mate": "しみずじんじゃ",
+  "qid": "Q135069788"
+ },
+ {
+  "derived": "みさきじんじゃ",
+  "en": "Misaki Shrine",
+  "ja": "御崎神社",
+  "ja_title": "",
+  "mate": "みさきじんしゃ",
+  "qid": "Q135069871"
+ },
+ {
+  "derived": "しらぎじんじゃ",
+  "en": "Shiragi Shrine",
+  "ja": "新羅神社",
+  "ja_title": "",
+  "mate": "しんらじんじゃ",
+  "qid": "Q135069904"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135069913"
+ },
+ {
+  "derived": "しょうたんじょうじんじゃ",
+  "en": "Shoutanjou Shrine",
+  "ja": "小丹生神社",
+  "ja_title": "",
+  "mate": "おにふじんじゃ",
+  "qid": "Q135069996"
+ },
+ {
+  "derived": "いしいじんじゃ",
+  "en": "Ishii Shrine",
+  "ja": "石井神社",
+  "ja_title": "",
+  "mate": "いわいじんじゃ",
+  "qid": "Q135069999"
+ },
+ {
+  "derived": "いしいじんじゃ",
+  "en": "Ishii Shrine (Echigo Province)",
+  "ja": "石井神社",
+  "ja_title": "",
+  "mate": "いわいじんじゃ",
+  "qid": "Q135070000"
+ },
+ {
+  "derived": "いしいじんじゃ",
+  "en": "Ishii Shrine (Santō district)",
+  "ja": "石井神社",
+  "ja_title": "",
+  "mate": "いわいじんじゃ",
+  "qid": "Q135070001"
+ },
+ {
+  "derived": "ひのでじんじゃ",
+  "en": "Hinode Shrine",
+  "ja": "日出神社",
+  "ja_title": "",
+  "mate": "ひでじんじゃ",
+  "qid": "Q135070061"
+ },
+ {
+  "derived": "ひのでじんじゃ",
+  "en": "Hinode Shrine (Tajima Province)",
+  "ja": "日出神社",
+  "ja_title": "",
+  "mate": "ひでじんじゃ",
+  "qid": "Q135070062"
+ },
+ {
+  "derived": "うみがみじんじゃ",
+  "en": "Umigami Shrine",
+  "ja": "海神社",
+  "ja_title": "",
+  "mate": "わたつみじんじゃ",
+  "qid": "Q135070072"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135070125"
+ },
+ {
+  "derived": "やまとじんじゃ",
+  "en": "Yamato Shrine",
+  "ja": "大和神社",
+  "ja_title": "",
+  "mate": "おおやまとじんじゃ",
+  "qid": "Q135070197"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135070217"
+ },
+ {
+  "derived": "ちなみよるひこじんじゃ",
+  "en": "Chinamiyoruhiko Shrine",
+  "ja": "知波夜比古神社",
+  "ja_title": "",
+  "mate": "ちはやひこじんじゃ",
+  "qid": "Q135070221"
+ },
+ {
+  "derived": "ちなみよるひこじんじゃ",
+  "en": "Chinamiyoruhiko Shrine (Bingo Province)",
+  "ja": "知波夜比古神社",
+  "ja_title": "",
+  "mate": "ちはやひこじんじゃ",
+  "qid": "Q135070222"
+ },
+ {
+  "derived": "たすんじんじゃ",
+  "en": "Tasun Shrine",
+  "ja": "田寸神社",
+  "ja_title": "",
+  "mate": "たきじんじゃ",
+  "qid": "Q135070265"
+ },
+ {
+  "derived": "かもがみじんじゃ",
+  "en": "Kamogami Shrine",
+  "ja": "鴨神社",
+  "ja_title": "",
+  "mate": "かもじんじゃ",
+  "qid": "Q135070272"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135070278"
+ },
+ {
+  "derived": "たけかみじんじゃ",
+  "en": "Takekami Shrine",
+  "ja": "竹神社",
+  "ja_title": "",
+  "mate": "たけじんじゃ",
+  "qid": "Q135070280"
+ },
+ {
+  "derived": "てんこやさかじんじゃ",
+  "en": "Tenkoyasaka Shrine",
+  "ja": "天戸八坂神社",
+  "ja_title": "",
+  "mate": "あまどやさかじんじゃ",
+  "qid": "Q135070281"
+ },
+ {
+  "derived": "はちすじんじゃ",
+  "en": "Hachisu Shrine",
+  "ja": "蜂須神社",
+  "ja_title": "",
+  "mate": "はちじんじゃ",
+  "qid": "Q135070282"
+ },
+ {
+  "derived": "けんじんじゃ",
+  "en": "Ken Shrine",
+  "ja": "建神社",
+  "ja_title": "",
+  "mate": "たてじんじゃ",
+  "qid": "Q135070287"
+ },
+ {
+  "derived": "いかじんじゃ",
+  "en": "Ika Shrine",
+  "ja": "医家神社",
+  "ja_title": "",
+  "mate": "いげじんじゃ",
+  "qid": "Q135070293"
+ },
+ {
+  "derived": "てんむらくもじんじゃ",
+  "en": "Tenmurakumo Shrine",
+  "ja": "天村雲神社",
+  "ja_title": "",
+  "mate": "あまのむらくもじんじゃ",
+  "qid": "Q135070294"
+ },
+ {
+  "derived": "かずなさいとみそじんじゃ",
+  "en": "Kazunasaitomiso Shrine",
+  "ja": "和奈佐意富曽神社",
+  "ja_title": "",
+  "mate": "わなさおうそじんじゃ",
+  "qid": "Q135070313"
+ },
+ {
+  "derived": "あつじんじゃ",
+  "en": "Atsu Shrine",
+  "ja": "阿津神社",
+  "ja_title": "",
+  "mate": "あづじんじゃ",
+  "qid": "Q135070314"
+ },
+ {
+  "derived": "がしばひめじんじゃ",
+  "en": "Gashibahime Shrine",
+  "ja": "賀志波比売神社",
+  "ja_title": "",
+  "mate": "かしはひめじんじゃ",
+  "qid": "Q135070315"
+ },
+ {
+  "derived": "ふせじんじゃ",
+  "en": "Fuse Shrine",
+  "ja": "布勢神社",
+  "ja_title": "",
+  "mate": "ふせのじんじゃ",
+  "qid": "Q135070316"
+ },
+ {
+  "derived": "かあさりょうじんじゃ",
+  "en": "Kaasaryou Shrine",
+  "ja": "加麻良神社",
+  "ja_title": "",
+  "mate": "かまらじんじゃ",
+  "qid": "Q135070331"
+ },
+ {
+  "derived": "おじんじゃ",
+  "en": "O Shrine",
+  "ja": "於神社",
+  "ja_title": "",
+  "mate": "おのじんじゃ",
+  "qid": "Q135070334"
+ },
+ {
+  "derived": "みおやのじんじゃ",
+  "en": "Mioyano Shrine",
+  "ja": "御祖神社",
+  "ja_title": "",
+  "mate": "みおやじんじゃ",
+  "qid": "Q135098877"
+ },
+ {
+  "derived": "かものじんじゃ",
+  "en": "Kamono Shrine",
+  "ja": "鴨神社",
+  "ja_title": "",
+  "mate": "かもじんじゃ",
+  "qid": "Q135098878"
+ },
+ {
+  "derived": "なからのじんじゃ",
+  "en": "Nakarano Shrine",
+  "ja": "長柄神社",
+  "ja_title": "",
+  "mate": "ながらじんじゃ",
+  "qid": "Q135098886"
+ },
+ {
+  "derived": "ふなだまのじんじゃ",
+  "en": "Funadamano Shrine",
+  "ja": "船玉神社",
+  "ja_title": "",
+  "mate": "ふなだまじんじゃ",
+  "qid": "Q135098901"
+ },
+ {
+  "derived": "みてくらのじんじゃ",
+  "en": "Mitekurano Shrine",
+  "ja": "幣久良神社",
+  "ja_title": "",
+  "mate": "みてくらじんじゃ",
+  "qid": "Q135098903"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135153657"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135153681"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135153690"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135153724"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135153741"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135153753"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135153774"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135153790"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135153803"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135153819"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135153902"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135153963"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135153985"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135154031"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135154034"
+ },
+ {
+  "derived": "じゅうでんじんじゃ",
+  "en": "Jūden Shrine",
+  "ja": "十殿神社",
+  "ja_title": "",
+  "mate": "じゅうどのじんじゃ",
+  "qid": "Q135154051"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154077"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154078"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135154140"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135154163"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135154176"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135154225"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135154311"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135154332"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135154339"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135154345"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154381"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154428"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135154440"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135154455"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154496"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135154533"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135154556"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135154563"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135154569"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154662"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135154669"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135154681"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154704"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135154752"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135154766"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135154845"
+ },
+ {
+  "derived": "じゅうでんじんじゃ",
+  "en": "Jūden Shrine",
+  "ja": "十殿神社",
+  "ja_title": "",
+  "mate": "じゅうどのじんじゃ",
+  "qid": "Q135154921"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154932"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154942"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135154965"
+ },
+ {
+  "derived": "ごれいじんじゃ",
+  "en": "Gorei Shrine",
+  "ja": "五霊神社",
+  "ja_title": "",
+  "mate": "ごりょうじんじゃ",
+  "qid": "Q135154968"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135154969"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135154984"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135155006"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155040"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135155045"
+ },
+ {
+  "derived": "よんしゃじんじゃ",
+  "en": "Yonsha Shrine",
+  "ja": "四社神社",
+  "ja_title": "",
+  "mate": "ししゃじんじゃ",
+  "qid": "Q135155089"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135155090"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155106"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135155136"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135155151"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155197"
+ },
+ {
+  "derived": "じゅうでんじんじゃ",
+  "en": "Jūden Shrine",
+  "ja": "十殿神社",
+  "ja_title": "",
+  "mate": "じゅうどのじんじゃ",
+  "qid": "Q135155230"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155239"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135155251"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155263"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135155274"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135155340"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155341"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155366"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155385"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155465"
+ },
+ {
+  "derived": "つきよみじんじゃ",
+  "en": "Tsukiyomi Shrine",
+  "ja": "月読神社",
+  "ja_title": "",
+  "mate": "つきよみじんしゃ",
+  "qid": "Q135155487"
+ },
+ {
+  "derived": "じゅうでんじんじゃ",
+  "en": "Jūden Shrine",
+  "ja": "十殿神社",
+  "ja_title": "",
+  "mate": "じゅうどのじんじゃ",
+  "qid": "Q135155512"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135155534"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155548"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155553"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135155563"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155570"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155613"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "竜神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q135155724"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155746"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135155765"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135155766"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135155811"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135155818"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135155866"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135155998"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135156002"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135156009"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135156041"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135156061"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135156077"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135156085"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135156088"
+ },
+ {
+  "derived": "はせじんじゃ",
+  "en": "Hase Shrine",
+  "ja": "長谷神社",
+  "ja_title": "",
+  "mate": "ながやじんじゃ",
+  "qid": "Q135156097"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135156125"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135156130"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135156170"
+ },
+ {
+  "derived": "もりもとのじんじゃ",
+  "en": "Morimotono Shrine",
+  "ja": "杜本神社",
+  "ja_title": "",
+  "mate": "もりもとじんじゃ",
+  "qid": "Q135185400"
+ },
+ {
+  "derived": "おつかじんじゃ",
+  "en": "Otsuka Shrine",
+  "ja": "大塚神社",
+  "ja_title": "",
+  "mate": "おおつかじんじゃ",
+  "qid": "Q135186733"
+ },
+ {
+  "derived": "はじじんじゃ",
+  "en": "Haji Shrine",
+  "ja": "土師神社",
+  "ja_title": "",
+  "mate": "はしじんじゃ",
+  "qid": "Q135186741"
+ },
+ {
+  "derived": "あしみたじんじゃ",
+  "en": "Ashimita Shrine",
+  "ja": "足見田神社",
+  "ja_title": "",
+  "mate": "あしみだじんじゃ",
+  "qid": "Q135186751"
+ },
+ {
+  "derived": "ほずみじんじゃ",
+  "en": "Hozumi Shrine",
+  "ja": "穂積神社",
+  "ja_title": "",
+  "mate": "ほづみじんじゃ",
+  "qid": "Q135186767"
+ },
+ {
+  "derived": "ほずみじんじゃ",
+  "en": "Hozumi Shrine",
+  "ja": "穂積神社",
+  "ja_title": "",
+  "mate": "ほづみじんじゃ",
+  "qid": "Q135186774"
+ },
+ {
+  "derived": "しずじんじゃ",
+  "en": "Shizu Shrine",
+  "ja": "倭文神社",
+  "ja_title": "",
+  "mate": "しどりじんじゃ",
+  "qid": "Q135192929"
+ },
+ {
+  "derived": "さだじんじゃ",
+  "en": "Sada Shrine",
+  "ja": "佐田神社",
+  "ja_title": "",
+  "mate": "さたじんじゃ",
+  "qid": "Q135193737"
+ },
+ {
+  "derived": "おかわじんじゃ",
+  "en": "Okawa Shrine",
+  "ja": "大川神社",
+  "ja_title": "",
+  "mate": "おおかわじんじゃ",
+  "qid": "Q135193745"
+ },
+ {
+  "derived": "おたじんじゃ",
+  "en": "Ota Shrine",
+  "ja": "太田神社",
+  "ja_title": "",
+  "mate": "おおたじんじゃ",
+  "qid": "Q135193756"
+ },
+ {
+  "derived": "とりやじんじゃ",
+  "en": "Toriya Shrine",
+  "ja": "鳥屋神社",
+  "ja_title": "",
+  "mate": "とやじんじゃ",
+  "qid": "Q135194362"
+ },
+ {
+  "derived": "おかふとじんじゃ",
+  "en": "Okafuto Shrine",
+  "ja": "岡太神社",
+  "ja_title": "",
+  "mate": "おかたじんじゃ",
+  "qid": "Q135194637"
+ },
+ {
+  "derived": "ふせじんじゃ",
+  "en": "Fuse Shrine",
+  "ja": "布勢神社",
+  "ja_title": "",
+  "mate": "ふせのじんじゃ",
+  "qid": "Q135195020"
+ },
+ {
+  "derived": "きんぷじんじゃ",
+  "en": "Kinpu Shrine",
+  "ja": "金峯神社",
+  "ja_title": "",
+  "mate": "きんぽうじんじゃ",
+  "qid": "Q135195066"
+ },
+ {
+  "derived": "たきじんじゃ",
+  "en": "Taki Shrine",
+  "ja": "多岐神社",
+  "ja_title": "",
+  "mate": "たぎじんじゃ",
+  "qid": "Q135195079"
+ },
+ {
+  "derived": "たにのじんじゃ",
+  "en": "Tanino Shrine",
+  "ja": "旦飯野神社",
+  "ja_title": "",
+  "mate": "あさいのじんじゃ",
+  "qid": "Q135195131"
+ },
+ {
+  "derived": "かわちじんじゃ",
+  "en": "Kawachi Shrine",
+  "ja": "河内神社",
+  "ja_title": "",
+  "mate": "かわうちじんじゃ",
+  "qid": "Q135195178"
+ },
+ {
+  "derived": "あまむらくもじんじゃ",
+  "en": "Amamurakumo Shrine",
+  "ja": "天村雲神社",
+  "ja_title": "",
+  "mate": "あまのむらくもじんじゃ",
+  "qid": "Q135198111"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135258849"
+ },
+ {
+  "derived": "じゅにしゃじんじゃ",
+  "en": "Junisha Shrine",
+  "ja": "十二社神社",
+  "ja_title": "",
+  "mate": "じゅうにしゃじんじゃ",
+  "qid": "Q135258865"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135258869"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135258870"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135258890"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135258891"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135258896"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135258914"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135258930"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135258932"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135258955"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135259005"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q135259018"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q135259027"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135259029"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259048"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135259062"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259117"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259132"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259134"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259135"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259141"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135259160"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259161"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259162"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q135259175"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135259184"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135259187"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q135259220"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135259252"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135259277"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135259299"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135259301"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259386"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259388"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259391"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135259434"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259435"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259436"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135259443"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135259447"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135259448"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135259467"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "竜神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q135259530"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q135259537"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135259554"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259618"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135259645"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259680"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135259712"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135259719"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "竜神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q135259751"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "竜神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q135259765"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135259796"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259812"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135259829"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259833"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259836"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259837"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135259848"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135259858"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135259860"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135259862"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135259867"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259879"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135259893"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135259900"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135259911"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135259915"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135259951"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135259983"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q135260013"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260039"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260040"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260041"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135260060"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135260067"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135260071"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135260089"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260092"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260104"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "竜神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q135260117"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135260120"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135260199"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135260205"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260250"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260251"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260253"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135260256"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135260266"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135260276"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135260292"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260309"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135260314"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135260323"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260391"
+ },
+ {
+  "derived": "りゅうじんじんじゃ",
+  "en": "Ryūjin Shrine",
+  "ja": "竜神社",
+  "ja_title": "",
+  "mate": "りゅうじんしゃ",
+  "qid": "Q135260399"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135260413"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135260440"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260445"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260462"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260464"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260466"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260490"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135260492"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135260505"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135260585"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260603"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135260654"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260663"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260666"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260683"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260685"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260686"
+ },
+ {
+  "derived": "たきのうじんじゃ",
+  "en": "Takinō Shrine",
+  "ja": "滝尾神社",
+  "ja_title": "",
+  "mate": "たきおじんじゃ",
+  "qid": "Q135260688"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260689"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260690"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260714"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q135260735"
+ },
+ {
+  "derived": "さんのみやじんじゃ",
+  "en": "Sannomiya Shrine",
+  "ja": "三宮神社",
+  "ja_title": "",
+  "mate": "さんぐうじんじゃ",
+  "qid": "Q135260737"
+ },
+ {
+  "derived": "たかおかみじんじゃ",
+  "en": "Takaokami Shrine",
+  "ja": "高靇神社",
+  "ja_title": "",
+  "mate": "たかおじんじゃ",
+  "qid": "Q135260739"
+ },
+ {
+  "derived": "ごれいじんじゃ",
+  "en": "Gorei Shrine",
+  "ja": "五霊神社",
+  "ja_title": "",
+  "mate": "ごりょうじんじゃ",
+  "qid": "Q135260744"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135260767"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135260801"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135260849"
+ },
+ {
+  "derived": "みしまかものじんじゃ",
+  "en": "Mishimakamono Shrine",
+  "ja": "三島鴨神社",
+  "ja_title": "",
+  "mate": "みしまかもじんじゃ",
+  "qid": "Q135270126"
+ },
+ {
+  "derived": "いけたのじんじゃ",
+  "en": "Iketano Shrine",
+  "ja": "伊居太神社",
+  "ja_title": "",
+  "mate": "いこたじんじゃ",
+  "qid": "Q135270127"
+ },
+ {
+  "derived": "あまのじんじゃ",
+  "en": "Amano Shrine",
+  "ja": "海神社",
+  "ja_title": "",
+  "mate": "わたつみじんじゃ",
+  "qid": "Q135270269"
+ },
+ {
+  "derived": "ほみのじんじゃ",
+  "en": "Homino Shrine",
+  "ja": "穂見神社",
+  "ja_title": "",
+  "mate": "ほみじんじゃ",
+  "qid": "Q135270285"
+ },
+ {
+  "derived": "さくのじんじゃ",
+  "en": "Sakuno Shrine",
+  "ja": "佐久神社",
+  "ja_title": "",
+  "mate": "さくじんじゃ",
+  "qid": "Q135270286"
+ },
+ {
+  "derived": "みやめのじんじゃ",
+  "en": "Miyameno Shrine",
+  "ja": "宮目神社",
+  "ja_title": "",
+  "mate": "みやのめじんじゃ",
+  "qid": "Q135270292"
+ },
+ {
+  "derived": "まかたのじんじゃ",
+  "en": "Makatano Shrine",
+  "ja": "麻賀多神社",
+  "ja_title": "",
+  "mate": "まかたじんじゃ",
+  "qid": "Q135270425"
+ },
+ {
+  "derived": "ひむかいじんじゃ",
+  "en": "Himukai Shrine",
+  "ja": "日向神社",
+  "ja_title": "",
+  "mate": "ひなたじんじゃ",
+  "qid": "Q135405803"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135424949"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135424975"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135425044"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135425102"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135425129"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135425204"
+ },
+ {
+  "derived": "あずまじんじゃ",
+  "en": "Azuma Shrine",
+  "ja": "吾妻神社",
+  "ja_title": "",
+  "mate": "あづまじんじゃ",
+  "qid": "Q135425206"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135425246"
+ },
+ {
+  "derived": "じゅにしょじんじゃ",
+  "en": "Junisho Shrine",
+  "ja": "十二所神社",
+  "ja_title": "",
+  "mate": "じゅうにしょじんじゃ",
+  "qid": "Q135425260"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135425463"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135425609"
+ },
+ {
+  "derived": "すいじんじんじゃ",
+  "en": "Suijin Shrine",
+  "ja": "水神社",
+  "ja_title": "",
+  "mate": "すいじんじゃ",
+  "qid": "Q135425627"
+ },
+ {
+  "derived": "ごれいじんじゃ",
+  "en": "Gorei Shrine",
+  "ja": "五霊神社",
+  "ja_title": "",
+  "mate": "ごりょうじんじゃ",
+  "qid": "Q135425649"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135425668"
+ },
+ {
+  "derived": "おおとりじんじゃ",
+  "en": "Ōtori Shrine",
+  "ja": "鷲神社",
+  "ja_title": "",
+  "mate": "わしじんじゃ",
+  "qid": "Q135425694"
+ },
+ {
+  "derived": "いかずちじんじゃ",
+  "en": "Ikazuchi Shrine",
+  "ja": "雷神社",
+  "ja_title": "",
+  "mate": "いかづちじんじゃ",
+  "qid": "Q135425728"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135425820"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135425988"
+ },
+ {
+  "derived": "おみやじんじゃ",
+  "en": "Omiya Shrine",
+  "ja": "大宮神社",
+  "ja_title": "",
+  "mate": "おおみやじんじゃ",
+  "qid": "Q135426023"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135426027"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135426058"
+ },
+ {
+  "derived": "にゅうじんじゃ",
+  "en": "Nyū Shrine",
+  "ja": "丹生神社",
+  "ja_title": "",
+  "mate": "たんしょうじんじゃ",
+  "qid": "Q135426117"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135426158"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祇神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135426162"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135426189"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135433571"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135433594"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135433607"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135433624"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q135433651"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135433698"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135433716"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135433822"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135433823"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q135433876"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135433905"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135433944"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135433945"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135433950"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q135433988"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135433999"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q135434026"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135434058"
+ },
+ {
+  "derived": "ななしゃじんじゃ",
+  "en": "Nanasha Shrine",
+  "ja": "七社神社",
+  "ja_title": "",
+  "mate": "しちしゃじんじゃ",
+  "qid": "Q135434059"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135434067"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135434152"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q135434153"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q135434168"
+ },
+ {
+  "derived": "のまのじんじゃ",
+  "en": "Nomano Shrine",
+  "ja": "野間神社",
+  "ja_title": "",
+  "mate": "のまじんじゃ",
+  "qid": "Q135434170"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135434271"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135434295"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135434359"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135434406"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135434407"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135434430"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135434505"
+ },
+ {
+  "derived": "ひるこじんじゃ",
+  "en": "Hiruko Shrine",
+  "ja": "蛭子神社",
+  "ja_title": "",
+  "mate": "えびすじんじゃ",
+  "qid": "Q135434520"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135434532"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135434555"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山積神社",
+  "ja_title": "",
+  "mate": "おおやまつみじんじゃ",
+  "qid": "Q135434563"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135434569"
+ },
+ {
+  "derived": "おつかじんじゃ",
+  "en": "Otsuka Shrine",
+  "ja": "大塚神社",
+  "ja_title": "",
+  "mate": "おおつかじんじゃ",
+  "qid": "Q135434572"
+ },
+ {
+  "derived": "じゅごしゃじんじゃ",
+  "en": "Jugosha Shrine",
+  "ja": "十五社神社",
+  "ja_title": "",
+  "mate": "じゅうごしゃじんじゃ",
+  "qid": "Q135434576"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135459098"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459145"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459165"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459166"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459255"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459275"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459277"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459279"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459310"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459312"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459370"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459386"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459391"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459457"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459482"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135459498"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459501"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459505"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459516"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459540"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459559"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459565"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135459590"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459593"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459600"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459603"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459607"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459610"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459654"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459660"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459674"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459677"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135459693"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459699"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459711"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459718"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459722"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459768"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459779"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459780"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135459804"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459808"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459821"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459827"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459829"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459887"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135459894"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459914"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459929"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459933"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135459935"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135459936"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135459972"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460027"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460032"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460101"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460116"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460121"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460139"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460145"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460189"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460198"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460199"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460204"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460211"
+ },
+ {
+  "derived": "あおうみじんじゃ",
+  "en": "Aoumi Shrine",
+  "ja": "青海神社",
+  "ja_title": "",
+  "mate": "あおみじんじゃ",
+  "qid": "Q135460219"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460221"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460227"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135460250"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460278"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135460327"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460356"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460357"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460361"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135460407"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135460412"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460432"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460439"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460440"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460466"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135460491"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460524"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460538"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460555"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135460577"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135460597"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460604"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135460658"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460684"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460689"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135460707"
+ },
+ {
+  "derived": "にこじんじゃ",
+  "en": "Niko Shrine",
+  "ja": "二荒神社",
+  "ja_title": "",
+  "mate": "ふたあらじんじゃ",
+  "qid": "Q135460726"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460776"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135460795"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135460809"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460914"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460978"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135460987"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461124"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461133"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461274"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461300"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461342"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461389"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461434"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461452"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461533"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461535"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461586"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461597"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461670"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461671"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461709"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461722"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461800"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461802"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461803"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461810"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461926"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461927"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461928"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461976"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135461991"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462084"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462130"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462150"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462207"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q135462211"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462230"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462233"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462250"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462252"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462256"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462267"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462341"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462345"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462356"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462357"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462361"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462371"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462437"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462450"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462457"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462458"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462469"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462540"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462556"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462557"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462558"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462570"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462645"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135462658"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462662"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462664"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462743"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462763"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462764"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462765"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462776"
+ },
+ {
+  "derived": "かわちじんじゃ",
+  "en": "Kawachi Shrine",
+  "ja": "河内神社",
+  "ja_title": "",
+  "mate": "かわうちじんじゃ",
+  "qid": "Q135462832"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462866"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135462875"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135462890"
+ },
+ {
+  "derived": "おやまずみじんじゃ",
+  "en": "Oyamazumi Shrine",
+  "ja": "大山祗神社",
+  "ja_title": "",
+  "mate": "おおやまずみじんじゃ",
+  "qid": "Q135463115"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463124"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463184"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463188"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463189"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463253"
+ },
+ {
+  "derived": "いしいじんじゃ",
+  "en": "Ishii Shrine",
+  "ja": "石井神社",
+  "ja_title": "",
+  "mate": "いわいじんじゃ",
+  "qid": "Q135463256"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463258"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q135463307"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463308"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463326"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463330"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463331"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463380"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463394"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q135463426"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463439"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463442"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463443"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463487"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463512"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463523"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463537"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463548"
+ },
+ {
+  "derived": "ふたらさんじんじゃ",
+  "en": "Futarasan Shrine",
+  "ja": "二荒山神社",
+  "ja_title": "",
+  "mate": "ふたあらやまじんじゃ",
+  "qid": "Q135463552"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463559"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463565"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463571"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463577"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463578"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463611"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463640"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463650"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463678"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463683"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463684"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463695"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463696"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463707"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463730"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463750"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463764"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463824"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463879"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135463930"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463949"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135463950"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135464006"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464017"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464047"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464050"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464060"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135464079"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135464081"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464139"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464187"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464208"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464210"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135464221"
+ },
+ {
+  "derived": "やまじんじゃ",
+  "en": "Yama Shrine",
+  "ja": "山神社",
+  "ja_title": "",
+  "mate": "さんじんじゃ",
+  "qid": "Q135464225"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464250"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464287"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464321"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464342"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135464418"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464437"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464474"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464477"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464514"
+ },
+ {
+  "derived": "いしいじんじゃ",
+  "en": "Ishii Shrine",
+  "ja": "石井神社",
+  "ja_title": "",
+  "mate": "いわいじんじゃ",
+  "qid": "Q135464536"
+ },
+ {
+  "derived": "じゅにじんじゃ",
+  "en": "Juni Shrine",
+  "ja": "十二神社",
+  "ja_title": "",
+  "mate": "じゅうにじんじゃ",
+  "qid": "Q135464545"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135464604"
+ },
+ {
+  "derived": "まつのおじんじゃ",
+  "en": "Matsunoo Shrine",
+  "ja": "松尾神社",
+  "ja_title": "",
+  "mate": "まつおじんじゃ",
+  "qid": "Q135464636"
+ },
+ {
+  "derived": "ちんじゅがみじんじゃ",
+  "en": "Chinjugami Shrine",
+  "ja": "鎮守神社",
+  "ja_title": "",
+  "mate": "ちんじゅじんじゃ",
+  "qid": "Q135503319"
+ },
+ {
+  "derived": "こばらじんじゃ",
+  "en": "Kobara Shrine",
+  "ja": "小原神社",
+  "ja_title": "",
+  "mate": "おばらじんじゃ",
+  "qid": "Q135505774"
+ },
+ {
+  "derived": "ちほうじんじゃ",
+  "en": "Chihō Shrine",
+  "ja": "智方神社",
+  "ja_title": "",
+  "mate": "ちかたじんじゃ",
+  "qid": "Q135550806"
+ },
+ {
+  "derived": "ちはじんじゃ",
+  "en": "Chiha Shrine",
+  "ja": "血方神社",
+  "ja_title": "",
+  "mate": "ちかたじんじゃ",
+  "qid": "Q135550807"
+ },
+ {
+  "derived": "ちほうじんじゃ",
+  "en": "Chihō Shrine (Kazo Central)",
+  "ja": "千方神社",
+  "ja_title": "",
+  "mate": "ちかたじんじゃ",
+  "qid": "Q135550938"
+ },
+ {
+  "derived": "せいざんじんじゃ",
+  "en": "Seizan Shrine",
+  "ja": "西山神社",
+  "ja_title": "",
+  "mate": "にしやまじんじゃ",
+  "qid": "Q138684951"
+ },
+ {
+  "derived": "いそのかみじんじゃ",
+  "en": "Isonokami Shrine",
+  "ja": "石上神社",
+  "ja_title": "",
+  "mate": "いしがみじんじゃ",
+  "qid": "Q139743056"
+ }
+]

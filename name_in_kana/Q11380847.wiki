@@ -1,0 +1,18 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11380847 -->
+<!-- JA: 伊達神社 | EN_LABEL: Itate Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%BC%8A%E9%81%94%E7%A5%9E%E7%A4%BE_%28%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%B8%82%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): いたてじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): だてじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+伊達神社（いたてじんじゃ/いだてじんじゃ）は、和歌山県和歌山市園部にある神社。式内社（名神大社）で、旧社格は郷社。
+別称を「薗部神社（園部神社）」。また志磨神社（和歌山市中之島）、静火神社（和歌山市和田、竈山神社摂社）とともに「紀三所社（きのさんしょしゃ）」と称される。

@@ -1,0 +1,19 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q3517214 -->
+<!-- JA: 手力雄神社 | EN_LABEL: Tejikarao Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%89%8B%E5%8A%9B%E9%9B%84%E7%A5%9E%E7%A4%BE_%28%E5%B2%90%E9%98%9C%E5%B8%82%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): てじからおじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): たぢからおじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+手力雄神社（てぢからおじんじゃ）は、岐阜県岐阜市にある神社である。
+式内社の美濃国厚見郡比奈守神社とされているが、同じ岐阜市内の比奈守神社の説がある。現在の「比奈守神社」は明治元年「飛騨守神社」が改名したもの。新撰美濃誌には「比奈守神社今手力雄神社といふ」とある。
+長森地区（蔵前、高田、手力町、芋島、東中島、切通、細畑、岩地、前一色、北一色、野一色、長森本町、琴塚、水海道）の産土神社である。

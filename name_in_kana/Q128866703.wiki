@@ -1,0 +1,17 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q128866703 -->
+<!-- JA: 大天白神社 | EN_LABEL: Daitenpaku Shrine (Hanyū) | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%A4%A9%E7%99%BD%E7%A5%9E%E7%A4%BE -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): だいてんぱくじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): だいてんばくじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+大天白神社（だいてんぱくじんじゃ）は、埼玉県羽生市の神社。

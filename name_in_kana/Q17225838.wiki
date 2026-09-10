@@ -1,0 +1,18 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q17225838 -->
+<!-- JA: 佐志能神社 | EN_LABEL: Sashino Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%BD%90%E5%BF%97%E8%83%BD%E7%A5%9E%E7%A4%BE_%28%E7%9F%B3%E5%B2%A1%E5%B8%82%E6%9F%93%E8%B0%B7%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): さしのじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): さしのうじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+佐志能神社（さしのじんじゃ）は、茨城県石岡市染谷にある神社。竜神山に鎮座することから、江戸時代は龍神社（龍神宮）と呼ばれていた。現在は「竜神さん」 と親しまれているほか、染谷佐志能神社と呼ぶことがある。『日本三代実録』の「村上神」及び「延喜式神名帳」の「佐志能神社」の論社である。旧社格は郷社。
+茨城県内には式内佐志能神社の論社が4社あり、いずれも佐志能神社を称している。このうち、石岡市染谷と同市村上の佐志能神社は、ともに竜神山に鎮座する神社として関係が深く、「村上神」及び「龍神社」としては歴史が重なる部分もある。

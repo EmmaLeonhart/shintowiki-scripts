@@ -4,6 +4,48 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-10 — kana for every en-labelled shrine, and the measurement that shaped it
+
+Emma, 2026-09-09: *"Realistically, all of the shrines should have proper Kana names derived from
+the Japanese put in them."* `generate_derived_name_in_kana.py` is that, against the **16,753**
+shrines carrying a ja label, an en label and no `P1814`. It reuses `english_to_kana` — the same
+derivation `generate_katakana_reading_add.py` already runs on four items — rather than adding a
+second way of turning a label into a reading.
+
+The thing worth recording is that the accuracy was **measurable**, and measuring it changed the
+design twice. **5,781 shrines carry both an English label and a real reading**; deriving those and
+comparing says how often the derivation is right, with no jawiki, no LLM, no judgement.
+
+**First pass: 86.1%, and 63% of the errors were one bug.** All 506 macron-bearing derivations were
+wrong, because `_MACRONS` collapsed `ō` to `o` — 大神神社 / "Ōmiwa Shrine" derived おみわじんじゃ. The
+macron is the label writing the vowel length down; collapsing it discarded the one thing that was
+not lost. `expand_long_vowels` expands it instead, and the おお-vs-おう split for `ō` is tabulated
+from the held-out data (大 130, 太 7, 意/於/青/相/小/鷲 for おお; 王 9, 淡, 扇 for おう) rather than
+guessed. **93.5% after the fix.**
+
+**Second pass: the name-mates split the remainder sharply.** Checking the derived reading against
+the dominant reading on items with the identical ja label — Emma's own rule from
+`kana_name_mate_rulings.md` — separates the population far better than anything about the
+derivation does: agreement 97.74% (n=3,190), no mate to check against 93.86% (n=2,117), mates
+contradicting 64.35% (n=474). The name-mate rule alone is 89.35% leave-one-out, so it is worth
+having as a **check** and not as a source.
+
+**Emma chose tiers 1+2 — 10,588 lines — and routed tier 3 to the LLM queue.** The 1,348
+disagreements go into `name_in_kana/` work-files naming BOTH candidates, via
+`build_kana_disagreement_queue.py`, so a jawiki lead breaks the tie; 150 are seeded and CI adds up
+to 150 per fire. The lead usually settles it immediately — 倭文神社 opens
+`倭文神社（しとりじんじゃ/しずりじんじゃ）`, i.e. the derivation was right and the name-mates were wrong.
+
+Add-only against a `NOT EXISTS`, so it cannot overwrite a name-mate ruling, one of the 4,764
+NTA-registered readings, or a katakana value the カミノヤシロ pipeline is still relocating — by
+construction, not by a filter anyone has to keep in step. 天神社 + "Tenjin Shrine" (7 items) stays
+held: both readings are attested per item and the bulk-applied English label carries no per-item
+information.
+
+Full numbers, including the three residual error shapes that cannot be fixed from a label at all,
+in `docs/derived_name_in_kana_2026-09.md`.
+
+
 ## 2026-09-10 — the drip has been cut off at six hours every run, and the timeout was above the ceiling
 
 Six of the last eight `direct-daily-edits` runs ended at **exactly 6h00m ±30s** with conclusion

@@ -1,0 +1,18 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11516217 -->
+<!-- JA: 月読神社 | EN_LABEL: Tsukiyomi Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E6%9C%88%E8%AA%AD%E7%A5%9E%E7%A4%BE_%28%E4%BA%AC%E9%83%BD%E5%B8%82%29 -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): つきよみじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): つきよみじんしゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+月読神社（つきよみじんじゃ、月讀神社）は、京都市西京区にある神社。式内社（名神大社）で、現在は松尾大社の摂社。
+「松尾七社」の一社。松尾大社の南400メートルの地に鎮座する。

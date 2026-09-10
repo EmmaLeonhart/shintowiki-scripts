@@ -37,15 +37,22 @@ that will not tokenize, or an English label that does not end in the expected
 shrine word all return None, so the item is left alone rather than given a
 guessed reading.
 
-⚠ KNOWN LOSS: the repo's English labels are macron-free Hepburn (Kyoto, not
-Kyōto), so a long vowel is unrecoverable from the label — おおやま and おやま both
-romanize to "Oyama". The derived reading therefore carries the SHORT vowel. That
-is a property of deriving from the label at all, not a bug here; it is why this
-module refuses anything it is not confident about rather than guessing length.
+⚠ KNOWN LOSS: SOME of the repo's English labels are macron-free Hepburn (Kyoto,
+not Kyōto), and where the macron is absent a long vowel is unrecoverable — おおやま
+and おやま both romanize to "Oyama", and the derived reading carries the SHORT
+vowel. That is a property of deriving from the label at all, not a bug here.
+
+But where the label DOES carry a macron the length is written down, and it used
+to be thrown away: ``_MACRONS`` collapsed ō to o, so 大神神社 / "Ōmiwa Shrine"
+derived おみわじんじゃ instead of おおみわじんじゃ. Measured 2026-09-10 against the
+5,781 shrines that carry BOTH an English label and a real P1814: **all 506
+macron-bearing derivations were wrong**, and that alone was 63% of every error.
+Expanding the macron instead (see ``expand_long_vowels``) takes the whole
+held-out set from 86.1% to 93.5%.
 """
 
 import re
-from typing import Optional
+from typing import NamedTuple, Optional
 
 from kana_english import HEPBURN
 
@@ -73,18 +80,47 @@ def _build_inverse():
 _INVERSE = _build_inverse()
 _MORA = sorted(_INVERSE, key=len, reverse=True)  # longest first: "kyo" before "ki"
 _VOWELS = set("aeiou")
-_MACRONS = {"ō": "o", "ū": "u", "ā": "a", "ē": "e", "ī": "i",
-            "ô": "o", "û": "u", "â": "a", "ê": "e", "î": "i"}
+
+# A macron is a LONG VOWEL, so it expands to two morae rather than collapsing to
+# one. ō is the only genuinely ambiguous one -- おう in Sino-Japanese (黄金 /
+# "Ōgon" -> おうごん), おお after a handful of kanji (大神 / "Ōmiwa" -> おおみわ) --
+# and _OO_INITIAL below is what separates them.
+#
+# ā and ī are not really long vowels in these labels at all: they mark a vowel
+# COLLISION at a morpheme boundary (三島愛宕 / "Mishimātago" = みしま + あたご,
+# 森稲妻 / "Morīnazuma" = もり + いなずま). "aa"/"ii" is right for both readings.
+# ē does not occur anywhere in the shrine data; "ee" follows the same pattern.
+_LONG = {"ō": "ou", "ū": "uu", "ā": "aa", "ē": "ee", "ī": "ii",
+         "ô": "ou", "û": "uu", "â": "aa", "ê": "ee", "î": "ii"}
+
+# Leading kanji whose ō is おお, not おう. NOT a guess: tabulated from the 152
+# held-out shrines whose English stem starts Ō and whose real reading is known
+# (2026-09-10). 大 130, 太 7, 意/於/青/相/小/鷲 1 each are おお; 王 9, 淡 1, 扇 1 are
+# おう and so stay on the default. 皇 split 1/1 and is left on the default too.
+_OO_INITIAL = "大太意於青相小鷲"
+
+
+def expand_long_vowels(token: str, oo_initial: bool = False) -> str:
+    """Rewrite macrons as the two morae they stand for. ``oo_initial`` switches a
+    STEM-INITIAL ō from おう to おお; the caller decides that from the Japanese
+    label, because the English cannot tell 大 (おお) from 黄 (おう)."""
+    s = (token or "").strip().lower()
+    out = []
+    for i, ch in enumerate(s):
+        if ch not in _LONG:
+            out.append(ch)
+            continue
+        out.append("oo" if (ch in "ōô" and i == 0 and oo_initial) else _LONG[ch])
+    return "".join(out)
 
 
 def romaji_to_hiragana(token: str) -> Optional[str]:
-    """Macron-free Hepburn -> hiragana. None if any part will not tokenize.
+    """Hepburn -> hiragana. None if any part will not tokenize.
 
     ``Kasano`` -> かさの. ``Zeb`` -> None (a stranded consonant: the impossible
-    cluster romaji_phonology exists to reject)."""
-    s = (token or "").strip().lower()
-    for macron, plain in _MACRONS.items():
-        s = s.replace(macron, plain)
+    cluster romaji_phonology exists to reject). A macron is expanded to its two
+    morae with the おう default; ``derive`` is what supplies the おお case."""
+    s = expand_long_vowels(token)
     if not s:
         return None
     out = []
@@ -158,14 +194,27 @@ _SUFFIXES = [
 _PAREN = re.compile(r"\s*\([^)]*\)\s*$")
 
 
-def kana_for(ja: str, en: str) -> Optional[str]:
-    """Derive the hiragana reading of a shrine from its Japanese label (which
-    picks the shrine-type suffix) and its English label (which supplies the
-    romanized stem). None when nothing can be derived confidently."""
+class Derivation(NamedTuple):
+    """The outcome of one derivation attempt, with the reason it failed.
+
+    ``kana_for`` answers only "did it work"; a bulk generator needs to report
+    WHY an item was refused, because the refusal counts are the only way to see
+    whether the population is shaped the way the suffix table assumes. Reason
+    strings are stable — the generator groups by them.
+    """
+    kana: Optional[str]
+    reason: str
+    kanji_suffix: Optional[str] = None
+    en_phrase: Optional[str] = None
+    stem_romaji: Optional[str] = None
+
+
+def derive(ja: str, en: str) -> Derivation:
+    """``kana_for`` with the refusal reason attached. Same decisions, same order."""
     ja = (ja or "").strip()
     en = _PAREN.sub("", (en or "").strip())  # drop "(Kaga Province)" disambiguators
     if not ja or not en:
-        return None
+        return Derivation(None, "missing a ja or en label")
     # Entries are grouped by kanji suffix: 天神社 has two, one per attested
     # reading, and BOTH have to be offered the English label before the kanji
     # suffix is declared a non-match. Returning at the first entry would make
@@ -183,15 +232,33 @@ def kana_for(ja: str, en: str) -> Optional[str]:
                 continue
             stem_romaji = en[: -len(phrase)].strip(" -")
             if not stem_romaji:
-                return None
+                return Derivation(None, "en label is the shrine word alone",
+                                  kanji_suf, phrase)
             if " " in stem_romaji:
                 # A multi-word stem is not a single romanized name -- it is a
                 # gloss or an un-stripped disambiguator ("Ichinomiya Shrine
                 # Yokohama"). Refuse rather than concatenate words into a
                 # reading that was never a reading.
-                return None
-            stem = romaji_to_hiragana(stem_romaji)
+                return Derivation(None, "multi-word stem", kanji_suf, phrase,
+                                  stem_romaji)
+            # The Japanese label is the only thing that can say whether a
+            # stem-initial ō is おお or おう, so the expansion happens here rather
+            # than inside romaji_to_hiragana.
+            expanded = expand_long_vowels(
+                stem_romaji, oo_initial=bool(ja) and ja[0] in _OO_INITIAL)
+            stem = romaji_to_hiragana(expanded)
             if not stem:
-                return None
-            return stem + kana_suf
-    return None
+                return Derivation(None, "stem will not romanize", kanji_suf,
+                                  phrase, stem_romaji)
+            return Derivation(stem + kana_suf, "ok", kanji_suf, phrase, stem_romaji)
+    if matched_kanji:
+        return Derivation(None, "en label does not end in the expected shrine word",
+                          matched_kanji)
+    return Derivation(None, "ja label has no known shrine-type suffix")
+
+
+def kana_for(ja: str, en: str) -> Optional[str]:
+    """Derive the hiragana reading of a shrine from its Japanese label (which
+    picks the shrine-type suffix) and its English label (which supplies the
+    romanized stem). None when nothing can be derived confidently."""
+    return derive(ja, en).kana
