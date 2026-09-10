@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-10 — the pipeline could not clear a description, and had never been able to write a zh-hant label
+
+Emma, on `Q11558526` 浮嶋神社 / Fushima Shrine (Iyo Province), after Wikidata's anti-abuse limiter cut
+her off mid-cleanup: *"This one should have all its descriptions removed by the quickstatements."*
+
+The item was a shrine (`P31 = Q845945`, 東温市, no sitelinks) carrying **41 descriptions, 40 of them
+"Wikimedia disambiguation page"** in their own language, and 38 of them orphans — a description in a
+language the item has no label in, which `docs/description_label_policy.md` records as actively
+harmful because the (label, description) pair is what the uniqueness constraint is on. **She finished
+it by hand at 20:23–20:24Z** and dropped the stale `P31 = Q4167410` with it, so
+`generate_description_removals.py` regenerates to zero lines. That is the self-healing working, and
+the mechanism is now there for the next one.
+
+### Two things the item exposed that were not about the item
+
+**WDQS does not have the descriptions.** It answers `wdt:P31` for `Q11558526` correctly and returns
+no `schema:description` at all, so the obvious selector — query for shrines carrying a dab-page
+description — misses the very item that prompted the work. The generator reads the Wikidata API
+instead, and its target set is an explicit QID list rather than a query.
+
+**A hyphenated language code has never parsed as a term.** `parse_qs_line` tested
+`prop[1:].isalpha()`, which every hyphenated code fails, so `Dzh-hant`, `Dpt-br`, `Dtg-cyrl` fell
+through to the claim path and were read as a property named "Lzh-hant". Fourteen of the 41
+descriptions here were hyphenated — but the damage is older and wider than this item:
+
+    36 lines in description_label_pairs.txt   Lzh-hant/Lzh-hans/Lzh-tw/Lzh-hk/Lzh-cn/Lzh-sg/Lzh-mo
+     2 lines in label_proposals_drip.txt      Dzh-hant/Dzh-hans/Dzh-tw/Dzh-hk/Dzh-cn
+
+**38 lines already sitting in two registered batch files — every Chinese-variant label and
+description — could never have landed**, and `direct_daily_edits` is the only road to Wikidata since
+the QS path retired. Nothing reported it, because a line that parses as a claim with an unknown
+property is refused per-line and the run still succeeds. `TERM_CODE` now matches the full shape,
+tested across zh-hant/pt-br/tg-cyrl/be-tarask/nan-hani for all three of L/D/A.
+
+A cleared description is an ordinary `Dxx` line with an empty value — `Q11558526|Dsco|""` — which is
+QS v1's term removal and what `wbsetdescription` does with an empty `value`. Deliberately not the
+`-Qxxx` form: `execute_line` refuses term removals in that shape, and rightly, since that path is
+for statements.
+
+Six other shrines do carry dab-page descriptions (`Q123530063`, `Q131227053`, `Q17128375`,
+`Q56352076`, `Q60988677`, `Q85876874`). Emma named one, so `TARGETS` holds one.
+
+
 ## 2026-09-10 — kana for every en-labelled shrine, and the measurement that shaped it
 
 Emma, 2026-09-09: *"Realistically, all of the shrines should have proper Kana names derived from

@@ -9,6 +9,8 @@ assert that every currently-registered file has at least one executable line.
 import os
 import sys
 
+import pytest
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import direct_daily_edits as d  # noqa: E402
@@ -104,3 +106,43 @@ def test_the_tab_files_have_no_dead_lines_if_repopulated():
             if not line:
                 continue
             assert d.parse_qs_line(line) is not None or line.startswith("#"), (f, line)
+
+
+# ---- hyphenated language codes on term lines ---------------------------------
+#
+# The term shorthand test was `prop[1:].isalpha()`, which every hyphenated code
+# fails. Found 2026-09-10: 38 lines already sitting in two registered batch files
+# — every Chinese-variant label and description in description_label_pairs.txt
+# and label_proposals_drip.txt — parsed as CLAIM lines with a property named
+# "Lzh-hant", and direct_daily_edits is the only road to Wikidata since the QS
+# path retired, so none of them could ever have landed.
+
+HYPHENATED = ["zh-hant", "zh-hans", "zh-tw", "zh-hk", "zh-cn", "zh-sg", "zh-mo",
+              "pt-br", "tg-cyrl", "tt-latn", "be-tarask", "nan-hani"]
+
+
+@pytest.mark.parametrize("code", HYPHENATED)
+@pytest.mark.parametrize("kind", ["L", "D", "A"])
+def test_hyphenated_language_codes_parse_as_terms(kind, code):
+    parsed = d.parse_qs_line(f'Q1|{kind}{code}|"x"')
+    assert parsed["term_kind"] == kind
+    assert parsed["term_lang"] == code
+    assert "property" not in parsed
+
+
+def test_an_empty_term_value_is_a_clear_not_a_dropped_line():
+    """`Qxxx|Dyy|""` is how QuickStatements v1 removes a term, and how
+    generate_description_removals.py expresses one. It must reach execute_set_term
+    with an empty value — wbsetdescription with an empty `value` is the removal —
+    rather than being read as the `-Qxxx` statement-removal form, which
+    execute_line refuses for terms."""
+    parsed = d.parse_qs_line('Q11558526|Dzh-hant|""')
+    assert parsed["term_value"] == ""
+    assert parsed["is_removal"] is False
+
+
+def test_a_property_line_is_still_a_property_line():
+    """The widened pattern must not swallow anything else. Properties are
+    P-prefixed and references S-prefixed, so no real token starts L/D/A."""
+    for line in ('Q1|P31|Q5', 'Q1|P625|@35.8/139.3', 'Q1|P6375|ja:"あ"'):
+        assert "term_kind" not in d.parse_qs_line(line)

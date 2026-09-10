@@ -39,6 +39,7 @@ ATOMIC_FILES = [
     "engishiki_add_references.txt",           # Add Kokugakuin refs to Engishiki/Ritsuryō P13723
     "p11250_miraheze_links.txt",              # Add P11250 (Miraheze article ID) links
     "p6262_fandom_links.txt",                 # Add P6262 (Fandom article ID) links
+    "description_removals.txt",               # Every description cleared off an item Emma has named. Emma, 2026-09-10, after Wikidata's anti-abuse limiter cut her off mid-cleanup on Q11558526 (a shrine carrying 40 "Wikimedia disambiguation page" descriptions): "This one should have all its descriptions removed by the quickstatements." Ordinary Dxx term lines with an empty value -- QS v1's term removal. Descriptions are read from the Wikidata API, not WDQS, which returns no schema:description for that item at all. Self-healing (generate_description_removals.py).
     "en_labels.txt",                          # Add en labels (Len) for items with a shintowiki page but no en label
     "kana_en_labels.txt",                     # Stage 1: en labels (Len) + aliases (Aen) deterministically built from kana (generate_kana_en_labels.py); no LLM
     "identical_name_en_labels.txt",           # Stage 2: en labels (Len) + aliases (Aen) reused from same-ja-name shrines (generate_identical_name_en_labels.py); no LLM

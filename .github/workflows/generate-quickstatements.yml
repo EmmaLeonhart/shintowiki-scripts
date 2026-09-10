@@ -286,6 +286,14 @@ jobs:
         continue-on-error: true
         run: python generate_katakana_reading_add.py
 
+      # Clears every description off the items named in the generator's TARGETS.
+      # Emma hit Wikidata's anti-abuse limiter removing 41 by hand from Q11558526
+      # and asked for the pipeline to do it. Self-healing: zero lines once clean.
+      - name: Generate description removals for named items
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_description_removals.py
+
       # The GENERAL case of the same derivation: every shrine with a ja label, an
       # en label and no P1814 at all. Tiered against a held-out measurement (the
       # shrines that carry BOTH an en label and a real reading) -- ships where the
