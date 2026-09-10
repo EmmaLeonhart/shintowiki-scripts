@@ -120,6 +120,22 @@ jobs:
         run: python generate_membership_removal_review_page.py
         continue-on-error: true
 
+      # THE EMERGENCY BATCH. Built by hand on 2026-09-06 and wired into nothing, so it
+      # aged against the atomic files it is drawn from — the corpus had moved by 3,542
+      # lines and ~2,000 orphan descriptions had been resolved before anyone noticed.
+      # It regenerates here because this is the job that already commits _site/.
+      #
+      # The cache step is first because generate_emergency_batch.py reads it, and the
+      # cache is COMMITTED so a failed query degrades to the last good one rather than
+      # silently emitting a batch with an empty block 1 (the orphan labels, whose
+      # leading position is Emma's ordering and load-bearing).
+      - name: Refresh the orphan-label query cache (one WDQS request)
+        run: python3 site/generate_orphan_label_fixes.py --cache _orphan_cache.json
+        continue-on-error: true
+
+      - name: Rebuild the emergency batch (ALL.txt + per-file chunks)
+        run: python3 site/generate_emergency_batch.py
+
       - name: Combine sites
         run: |
           # Copy QS dashboard pages into main _site, renaming index to avoid collision
