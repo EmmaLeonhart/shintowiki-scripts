@@ -214,17 +214,35 @@ def pref_keys(prefs):
     Derived from the label set itself rather than a per-language stopword list,
     so it needs no maintenance as languages are added.
     """
-    toks = {p: re.findall(r"\w+", p) for p in prefs if p}
-    if not toks:
+    spans = {p: list(re.finditer(r"\w+", p)) for p in prefs if p}
+    if not spans:
         return {}
-    freq = Counter(t for ts in toks.values() for t in set(ts))
+    freq = Counter(t for ms in spans.values() for t in {m.group() for m in ms})
     # A token in most of the 47 labels is the generic word, not a place name.
-    common = {t for t, n in freq.items() if n >= max(2, 0.6 * len(toks))}
+    common = {t for t, n in freq.items() if n >= max(2, 0.6 * len(spans))}
     keys = {}
-    for label, ts in toks.items():
-        distinctive = " ".join(t for t in ts if t not in common)
-        if distinctive:
-            keys.setdefault(distinctive, label)
+    for label, ms in spans.items():
+        # Capitalised AND not shared. The capitalisation test is what removes an
+        # elision particle: French labels the item "préfecture d'Okayama", and a
+        # frequency test alone leaves the "d" (it is in only the vowel-initial
+        # labels, well under the threshold). Joining the surviving tokens with a
+        # space then produced the key "d Okayama", which is not a substring of
+        # anything, and filling the template with it emitted "bâtiment de d
+        # Okayama, Japon". Place-names are capitalised in every language sampled,
+        # Ukrainian and Czech included.
+        picked = [m for m in ms if m.group() not in common and m.group()[:1].isupper()]
+        if not picked:
+            # No capitalised survivor: fall back to the frequency test alone, for
+            # a language that does not capitalise its place-names.
+            picked = [m for m in ms if m.group() not in common]
+        if not picked:
+            continue
+        # Slice the ORIGINAL label between the first and last survivor rather than
+        # re-joining tokens, so internal punctuation and spacing are whatever the
+        # label really has and the key is always a real substring of it.
+        key = label[picked[0].start():picked[-1].end()]
+        if key:
+            keys.setdefault(key, label)
     return keys
 
 
@@ -346,7 +364,19 @@ def main():
                 # This is NOT a guard against doing the work. The label half — the
                 # reason the item is a target at all — still goes out, via the
                 # label-only unit below.
-                if pref_key and pref_key in desc and pref_key not in new:
+                # The test is on the DESCRIPTION, not on whether we resolved this
+                # item's own prefecture. Requiring `pref_key` left a hole exactly
+                # where the data is thinnest: an item whose P131 chain or whose
+                # prefecture label in this language does not resolve gets
+                # `pref_key = None`, and would then have its perfectly good
+                # prefecture-naming description flattened anyway. Seven languages
+                # still infer no template at all (nl, it, es, pl, cs, ca, vi --
+                # too few corpus descriptions to clear PREF_SUPPORT), so for those
+                # EVERY proposal is the generic and this test is the only thing
+                # standing between them and the same damage.
+                had_pref = next((k for k in sorted(keys, key=len, reverse=True)
+                                 if k and k in desc), None)
+                if had_pref and had_pref not in new:
                     already_standard += 1
                     units.append((qid, None, proposals.get((qid, lang)), desc))
                     continue

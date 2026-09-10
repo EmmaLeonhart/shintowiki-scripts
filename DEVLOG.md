@@ -4,6 +4,70 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-10 — we were flattening prefecture-specific descriptions into one generic string
+
+Emma: *"we're actively worsening Ukrainian descriptions why is this? Turning descriptive ones into
+generic highly duplicative ones"*. She is right, and it had already landed:
+
+    Q100902082, 2026-09-10T01:10:41Z
+      before  Синтоїстське святилище у префектурі Наґано, Японія
+      after   синтоїстське святилище в Японії
+
+**208 descriptions across uk/es/it/cs/vi/nl/ca**, and **3,509 queued lines** carrying that one
+identical string.
+
+### The cause is not Ukrainian
+
+`generate_description_fixes.py` uses the PREFECTURE form when it can resolve the item's prefecture
+and the GENERIC modal otherwise, and detection was a **case-sensitive substring test against the
+full prefecture label**. Ukrainian labels the item `Префектура Наґано` and writes descriptions
+`…у префектурі Наґано, Японія`; Dutch labels it `Prefectuur Nagano` and writes `…in de prefectuur
+Nagano, Japan`. Neither ever matched.
+
+**Nine languages inferred no prefecture template at all** and fell wholesale to the generic. `fr`
+(42 distinct proposed values) and `de` (16) happened to match, which is exactly what made this look
+like a Ukrainian oddity rather than a design fault in any language whose descriptions are worded
+differently from its labels.
+
+`pref_keys` now matches on the part that does not inflect — the generic word is in all 47 labels and
+is what declines, the place-name is in one and does not — so the shared tokens are dropped and what
+is left is the key. Derived from the label set itself, needing no per-language list.
+
+⚠ **The first version of that key extraction joined the surviving tokens with a space, and French
+broke on elision.** `préfecture d'Okayama` tokenises to `préfecture / d / Okayama`; `d` sits in only
+the vowel-initial labels, far under the frequency threshold, so the key came out `"d Okayama"` — not
+a substring of anything — and the filled template read **`bâtiment de d Okayama, Japon`**. The key is
+now the slice of the ORIGINAL label between its first and last capitalised non-shared token, so it is
+always a real substring, punctuation and all. Two of these reached the regenerated file and were
+caught by verifying it against live Wikidata rather than by reading the diff.
+
+### And a rule that holds whatever the inference does
+
+Never replace a description carrying the item's prefecture with one that does not. The test is on
+the DESCRIPTION, not on whether the item's own prefecture resolved — requiring that left the hole
+exactly where the data is thinnest, and seven languages still infer no template (too few corpus
+descriptions to clear `PREF_SUPPORT`), so for those this test is the only thing standing between
+them and the same damage. The label half still goes out as a label-only unit: this stops the damage
+without stopping the work.
+
+### Repair
+
+`generate_description_restores.py` — **208 lines**. The original comes from the **parent revision of
+our own edit**, not from rebuilding it out of `P131`: the community's exact string, capitalisation
+and connective included. A line is emitted only where the original named the prefecture and the
+current value does not, so an item someone has already repaired is skipped and the file empties
+itself. Daily in CI, not weekly, because it repairs edits that have already gone out.
+
+`description_label_pairs.txt` was regenerated locally: **uk goes from 3,514 description lines with 2
+distinct values to 1,525 with 49**, 1,177 items becoming label-only. It refreshes in CI only on
+Sundays, which would have been three more days at up to 100/day. Sixteen residual downgrade lines
+were verified against live Wikidata and stripped, their label halves kept.
+
+Emma declined to cancel the in-flight drip run, so a few more downgrades will land from the old
+file; the restore generator is driven by our contributions rather than a snapshot, so it picks those
+up on its next run without anything being re-derived.
+
+
 ## 2026-09-10 — the pipeline could not clear a description, and had never been able to write a zh-hant label
 
 Emma, on `Q11558526` 浮嶋神社 / Fushima Shrine (Iyo Province), after Wikidata's anti-abuse limiter cut
