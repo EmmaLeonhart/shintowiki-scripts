@@ -52,11 +52,43 @@ without stopping the work.
 
 ### Repair
 
-`generate_description_restores.py` — **208 lines**. The original comes from the **parent revision of
-our own edit**, not from rebuilding it out of `P131`: the community's exact string, capitalisation
-and connective included. A line is emitted only where the original named the prefecture and the
-current value does not, so an item someone has already repaired is skipped and the file empties
-itself. Daily in CI, not weekly, because it repairs edits that have already gone out.
+`generate_description_restores.py` — **1,433 lines**, and it reads **Wikidata's present state**, not
+our edit history. Emma: *"please don't walk contributions whatever that means. Walk wikidata."* The
+first version paged `usercontribs` for `wbsetdescription-set` comments and read each parent revision;
+that makes a repair depend on who made the edit, on a scan window, and on history staying readable —
+none of which bear on whether a description is right.
+
+So the selector is one SPARQL query per language: items of the class with a description in that
+language and a `P131`-resolvable prefecture. The generic modal is the most common description; the
+template is read off the most common of the OTHERS (`…у префектурі Айті, Японія` ×241 and `…Осака,
+Японія` ×237 differ in nothing but the slot); the slot's contents, keyed by the prefecture's QID, ARE
+the spellings the community uses.
+
+**That last part is why it reads the corpus and not the labels.** Wikidata's uk LABEL for 長野県 is
+`Префектура Нагано`; the 2,322 sibling descriptions spell it `Наґано`. Aichi is `Айчі` in the label
+and `Айті` in the descriptions. Filling from labels would have introduced a second spelling
+alongside the community's own — on 1,433 items.
+
+**Verified against 12 items whose pre-flattening value is in their revision history: 12 of 12
+proposals are byte-identical to the string that was there**, derived from present state alone.
+
+Two ways of inferring the template were tried and measured before this one. A common affix over all
+non-generic descriptions collapses to nothing on a single line of prose (`гора в Японії`). Bucketing
+by opening and using the largest bucket still fails, because that bucket holds one `Синтоїстське
+святилище в Японії` whose tail `в Японії` mismatches `, Японія` and zeroes the common suffix. Using
+the modal few sidesteps both, since an outlier is by definition not modal.
+
+⚠ **What it cannot reach.** nl, it, es, cs, ca and vi hold **21 flattened items** that will not be
+repaired: their corpora never had many prefecture forms, we flattened most of what there was, and
+what remains is under the threshold. There is no template to infer and no honest way to invent one.
+That is the real cost of reading state instead of history, and it is 21 items.
+
+⚠ **`id` is excluded on purpose.** Indonesian's template never failed — uninflected `Prefektur
+Nagano` is exactly why the bug looked Ukrainian — so nothing Indonesian was ever flattened.
+Including it emitted **1,737 lines of standardisation nobody asked for**, riding in on a repair
+batch. One constant turns it on if that is ever wanted.
+
+Daily in CI, not weekly, because it repairs edits that have already gone out.
 
 `description_label_pairs.txt` was regenerated locally: **uk goes from 3,514 description lines with 2
 distinct values to 1,525 with 49**, 1,177 items becoming label-only. It refreshes in CI only on
