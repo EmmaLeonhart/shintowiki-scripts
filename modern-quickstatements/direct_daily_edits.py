@@ -48,14 +48,28 @@ UA = WIKIDATA_USER_AGENT
 # 300." This is the STANDING cap now, not a dated exception, so the two July entries
 # below are spent and no longer raise anything — they equal the default.
 #
-# ⚠ 500 IS NOT ALWAYS REACHABLE, and the arithmetic is worth keeping. Delay is
-# random in [MIN_DELAY, MAX_DELAY] = [30, 90]s, and the job's timeout-minutes is 360:
+# ⚠ THE CEILING IS SIX HOURS AND IT CANNOT BE RAISED. GitHub kills a hosted job at
+# 6h of execution, whatever `timeout-minutes` says. `direct-daily-edits.yml` set 540
+# for September to fit this cap and it never took effect: measured 2026-09-10, six of
+# the last eight runs died at exactly 6h00m ±30s, today's at edit 356 of 501. Setting
+# a number ABOVE the ceiling looks like a fix and is not one.
+#
+# So 500 has to fit in 6h, which fixes the delay rather than the cap. At the old
+# [30, 90]s it could not:
 #     at 30s/edit   500 edits = 4.2h   fits
-#     at 60s/edit   500 edits = 8.3h   TIMES OUT around edit ~360
-#     at 90s/edit   500 edits = 12.5h  times out around edit ~240
-# So a run that stops short of 500 is usually the 6h timeout, not a fault — the old
-# "~360 edits" note here assumed the 60s midpoint. A timed-out run has still made
-# every edit it got through; they are individually committed, not transactional.
+#     at 60s/edit   500 edits = 8.3h   killed around edit ~360   <- the midpoint
+#     at 90s/edit   500 edits = 12.5h  killed around edit ~240
+# At [20, 50]s the whole range fits, so the run finishes rather than being cut off:
+#     at 20s/edit   500 edits = 2.8h
+#     at 35s/edit   500 edits = 4.9h   <- the midpoint
+#     at 50s/edit   500 edits = 7.0h   still over, but 500 draws never average 50s
+# Emma chose the delay over the cap on 2026-09-10, keeping 500/day. 35s between edits
+# is ~1.7 edits/min, still far under the ~24/min the wiki-side THROTTLE targets and
+# well inside bot norms — this is not a speed-up of the project, it is the same 500
+# edits fitting in the window they were always meant to fit in.
+#
+# A run that still stops short has made every edit it got through; they are
+# individually committed, not transactional.
 _DEFAULT_MAX_EDITS = 500
 _CAP_EXCEPTIONS = {
     datetime.date(2026, 7, 6): 500,
@@ -71,8 +85,8 @@ def edit_day(now=None):
 
 
 MAX_EDITS = _CAP_EXCEPTIONS.get(edit_day(), _DEFAULT_MAX_EDITS)
-MIN_DELAY = 30
-MAX_DELAY = 90
+MIN_DELAY = 20
+MAX_DELAY = 50
 
 # The exact string every HTTP-429 path in this file returns. Kept as a constant so
 # the bail-out test below matches the sentinel and not a substring of an error

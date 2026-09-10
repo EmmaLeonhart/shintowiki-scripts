@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-10 — the drip has been cut off at six hours every run, and the timeout was above the ceiling
+
+Six of the last eight `direct-daily-edits` runs ended at **exactly 6h00m ±30s** with conclusion
+`cancelled`. Today's dispatch died at **edit 356 of 501**, mid-`Waiting 64s`.
+
+| run | outcome | duration |
+|---|---|---|
+| 34462669959 | cancelled | 6h01m |
+| 34419809274 | cancelled | 6h00m |
+| 34282421192 | cancelled | 6h00m |
+| 34171848333 | cancelled | 6h00m |
+| 34145346999 | cancelled | 6h00m |
+| 34078114907 | cancelled | 6h00m |
+
+**GitHub kills a hosted job at 6h of execution whatever `timeout-minutes` says.** Emma raised the
+cap 300 → 500 on 2026-09-06 and asked for a bigger timeout "temporarily only in September"; a
+`timeout-window` job was written to compute the month and hand up `minutes: 540`. 540 is above the
+ceiling, so it could never fire — the job was killed three hours before its own timeout, and about
+145 lines were dropped from every run. `direct_daily_edits.py`'s own comment block had the
+arithmetic right (`at 60s/edit 500 edits = 8.3h`) and still called 360 "the job's timeout-minutes"
+while the workflow said 540.
+
+Nothing caught it because a killed run has still made every edit it got through — they are
+individually committed — and `cancelled` reads like something external rather than like a limit.
+
+### The fix went into the delay, on Emma's call
+
+She chose shortening the inter-edit delay over cutting the cap or splitting the job, so 500/day
+stands. `MIN_DELAY`/`MAX_DELAY` go `[30, 90]s` → `[20, 50]s`: 500 edits average **~4.9h** and the
+whole run finishes inside the ceiling. That is ~1.7 edits/min, far under the ~24/min the wiki-side
+`THROTTLE` targets — the same 500 edits fitting the window they were always meant to fit, not a
+speed-up of the project.
+
+The `timeout-window` job is deleted and the edit job declares a literal **350** minutes, deliberately
+*below* the ceiling so an overrun is our timeout saying so rather than GitHub cancelling with no
+explanation in the log.
+
+`tests/test_drip_fits_the_six_hour_ceiling.py` pins both halves: no workflow may declare a timeout
+above 360 minutes, the drip's must be a literal (an expression is what hid 540), the cap times the
+mean delay must fit with 45 minutes of headroom, and the delay must stay slow enough to be a bot on
+someone else's servers.
+
+
 ## 2026-09-10 — the lost-shrine batch delivered twice, and the coordinates could never have landed
 
 Emma cleared the lost-shrine creations to go now rather than wait for the 18th, and the
