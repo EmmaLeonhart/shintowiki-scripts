@@ -849,8 +849,12 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   thing there is a wikidata thing, based on the enwiki thing, shintowiki if it still runs
   is not an issue."* A shintowiki-side hold was built first and reverted; do not re-add
   it. Rationale: `docs/enwiki_mention_gate_2026-08-06.md`.
-- **⛔ WIKIDATA LOCKOUT until 2026-09-18 — a month, Emma 2026-08-18:** *"I want a gate
-  to be set up that there will be no wikidata editing for a month."* **One state file
+- **⛔ WIKIDATA LOCKOUT — a month, Emma 2026-08-18:** *"I want a gate
+  to be set up that there will be no wikidata editing for a month."* **The date is not
+  written here on purpose.** This heading said *until 2026-09-18* until 2026-09-10, by which
+  time Emma had shortened the lockout to 2026-09-01 (on 2026-09-06) and it had expired — so
+  the rule that exists to stop a freeze date being duplicated was itself carrying a duplicate
+  of it, four days stale. **Ask the state file. Never quote its date anywhere.** **One state file
   governs every Wikidata write path**, and that is the whole point of it:
   `shinto_miraheze/wikidata_editing_lockout.state` (`locked`, `locked_until`, `reason`),
   read by `shinto_miraheze/wikidata_edit_allowed.py` — exit 0 allowed, exit 1 locked,

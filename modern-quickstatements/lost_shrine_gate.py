@@ -9,7 +9,7 @@ registration actually consists of.
 written with `FREEZE_UNTIL = datetime.date(2026, 8, 10)` pasted into it, which is the exact
 shape CLAUDE.md forbids — *"a freeze duplicated per-workflow is a freeze one workflow can
 miss"* — and that date is now in the past, so that gate reports OPEN while the repo is
-inside a lockout running to 2026-09-18. It is saved from mattering only because
+inside the lockout. It is saved from mattering only because
 `create_items.py` and `create-items.yml` both check the real state file too. A gate whose
 own answer is wrong and is covered by something else is still a gate that will be believed
 by the next person to read it, so this one asks the single source of truth directly.

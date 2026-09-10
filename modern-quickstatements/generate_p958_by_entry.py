@@ -38,7 +38,7 @@ production run.
 **So: exact-match only, and everything else defers.** Two holders and two free slots defer; the
 page cannot say which is which, and guessing is what this refuses to do.
 
-⛔ Generates only. Nothing is delivered before the Wikidata lockout lifts on 2026-09-18; the
+⛔ Generates only. Nothing is delivered while `wikidata_editing_lockout.state` is shut; the
 generating is not gated.
 
 Usage:

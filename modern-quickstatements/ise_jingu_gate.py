@@ -10,7 +10,7 @@ gate is the conjunction of BOTH standing holds, and it fails closed on any error
    This gate used to carry `FREEZE_UNTIL = datetime.date(2026, 8, 10)` — its own
    copy of the date, with a comment telling the next person to extend it by hand
    when Emma extended the freeze. Nobody did, so from 2026-08-10 it reported
-   **OPEN throughout the lockout running to 2026-09-18**, and was saved from
+   **OPEN throughout the lockout**, and was saved from
    mattering only because `create_items.py` and `create-items.yml` check the real
    state file too. That is the precise failure CLAUDE.md describes: a freeze
    duplicated per-file is a freeze one file can miss, which is how create-items.yml

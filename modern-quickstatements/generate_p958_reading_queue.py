@@ -13,7 +13,7 @@ it, so the sections already taken are visible while choosing the missing one. Ty
 a box builds the QuickStatements line for it, live; one button copies every line entered so far.
 
 The page emits QuickStatements TEXT. It performs no edits and needs no network. Submission is
-governed by wikidata_editing_lockout.state (to 2026-09-18), which covers hand-run batches by its own
+governed by wikidata_editing_lockout.state — ask it, do not copy its date — which covers hand-run batches by its own
 wording -- so lines can be prepared now and pasted when it lifts.
 
 Usage:  python generate_p958_reading_queue.py
@@ -134,7 +134,7 @@ def main():
         "while choosing. Type a number (or <code>n/a</code>) into a yellow row and the QuickStatements "
         "line builds at the bottom.<br><br>"
         "<b>Nothing here edits anything</b>, and nothing tracks whether you have done any of it. "
-        "Submission waits on the Wikidata lockout to 2026-09-18."
+        "Submission waits on wikidata_editing_lockout.state."
         % (len(need), len(pages)))
 
     doc = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'

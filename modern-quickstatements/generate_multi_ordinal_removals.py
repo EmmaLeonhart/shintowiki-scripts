@@ -27,7 +27,7 @@ rest right, and re-adding correct membership is the later half of the job. An ea
 script skipped such items to protect the "good" statements beside the bad one — that was the wrong
 instinct and is why this note is here.
 
-⛔ Generates only. Nothing is delivered before the Wikidata lockout lifts on 2026-09-18.
+⛔ Generates only. Nothing is delivered while `wikidata_editing_lockout.state` is shut.
 
 Usage:
     python modern-quickstatements/generate_multi_ordinal_removals.py

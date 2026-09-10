@@ -136,8 +136,9 @@ jobs:
           #   every daily QS submission / direct-edit fallback from 2026-08-03
           #   through 2026-08-09 inclusive; auto-resumes 2026-08-10.
           # 2026-08-18 (Emma): "I want a gate to be set up that there will be no
-          #   wikidata editing for a month." Blocks every Wikidata write through
-          #   2026-09-17 inclusive; auto-resumes 2026-09-18.
+          #   wikidata editing for a month." Blocked every Wikidata write until the
+          #   state file's own date; Emma shortened that to 2026-09-01 on 2026-09-06,
+          #   so it expired then. The date is recorded here as history, never read.
           #
           # ⚠ THE DATE NO LONGER LIVES IN THIS FILE. It was a FREEZE_WIKIDATA_UNTIL
           # string duplicated here and in create-items.yml, and that duplication is

@@ -20,7 +20,7 @@ A correction is two QS lines, because that is the only way QS expresses it:
 
 REPORT + GENERATE ONLY. This writes a text file and makes no edits.
 
-Generating is NOT clearance to submit. `wikidata_editing_lockout.state` runs to 2026-09-18
+Generating is NOT clearance to submit. `wikidata_editing_lockout.state` is the one thing that says
 and covers "EVERY write path... and the hand-run QuickStatements batches" in its own
 words, so this output waits with everything else. (Emma's "quickstatements are separate"
 was about pacing, not about the lockout -- an earlier version of this docstring cited it

@@ -25,7 +25,7 @@ def _patch_common(monkeypatch):
     # the gate stays shut whatever the watched user did. Open it at the seam.
     monkeypatch.setattr(dde.conflict_gate, "pause_reason",
                         lambda *_a, **_k: None)
-    # The Wikidata lockout (Emma, 2026-08-18, locked to 2026-09-18) short-circuits main() the same
+    # The Wikidata lockout (Emma, 2026-08-18; expired 2026-09-01) short-circuits main() the same
     # way the conflict gate does — earlier, in fact — with `return 0` and a SKIPPED line. Left
     # closed, every test in this file fails on `assert main() == 1` for a reason that has nothing
     # to do with what it tests, and "fixing" that by asserting 0 would make the whole file pass

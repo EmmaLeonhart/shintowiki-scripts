@@ -68,6 +68,21 @@ jobs:
         working-directory: modern-quickstatements
         run: python generate_cjk_ja_backfill.py
 
+      # MUST be the last step before the commit, for the same reason it is the last
+      # step in generate-quickstatements.yml: this workflow ALSO writes atomic .txt
+      # files, and the husks are items ブルーノ・プラス repurposed (queue.md A5) that
+      # any sitelink lookup resolves to, so generators re-emit lines targeting them.
+      # Without this step the two workflows disagree — 96efe817 (this one, 2026-09-07)
+      # re-added `Q134886554|Len|"Chikadono Shrine"` to identical_name_en_labels.txt
+      # and turned tests/test_repurposed_husks_never_edited.py red on main until
+      # af5eb701 (the other one, 2026-09-10) stripped it again. The submitter's
+      # item_is_editable() refusal is still the load-bearing gate; this keeps the
+      # staged files clean too.
+      # NOT continue-on-error: if this cannot run, husk lines stay staged.
+      - name: Strip QuickStatements targeting repurposed husks
+        working-directory: modern-quickstatements
+        run: python strip_husk_lines.py --apply
+
       - name: Commit refreshed list
         run: |
           git config user.name "github-actions[bot]"

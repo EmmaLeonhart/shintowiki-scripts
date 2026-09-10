@@ -69,3 +69,42 @@ def test_no_atomic_file_stages_an_edit_to_a_husk():
                 offenders.append(f"{name}:{n} {line.strip()[:80]}")
     assert not offenders, (
         "staged QuickStatements target repurposed husks:\n  " + "\n  ".join(offenders))
+
+
+def test_every_workflow_that_writes_atomic_files_strips_husks():
+    """The chokepoint has to be on EVERY road, or it is not a chokepoint.
+
+    `strip_husk_lines.py` was wired into `generate-quickstatements.yml` as its last
+    step before the commit. `generate-shrines-missing-en-label.yml` also writes atomic
+    .txt files (identical_name_en_labels.txt, kana_en_labels.txt, the temple pair) and
+    had no such step, so the two workflows disagreed: 96efe817 re-added
+    `Q134886554|Len|"Chikadono Shrine"` on 2026-09-07 and the test above stayed red on
+    main until the other workflow stripped it on 2026-09-10.
+
+    A future workflow that generates into this directory and commits will hit this.
+    """
+    wf_dir = os.path.join(os.path.dirname(MQ), ".github", "workflows")
+    missing = []
+    for name in sorted(os.listdir(wf_dir)):
+        if not name.endswith((".yml", ".yaml")):
+            continue
+        text = open(os.path.join(wf_dir, name), encoding="utf-8").read()
+        # Does it RUN a generator that writes an atomic .txt, and commit afterwards?
+        writes = any(f"python {g}" in text for g in ATOMIC_GENERATORS)
+        if writes and "strip_husk_lines.py" not in text:
+            missing.append(name)
+    assert not missing, (
+        "these workflows generate atomic QuickStatements files but never strip husk "
+        "lines: " + ", ".join(missing))
+
+
+# Generators known to write into modern-quickstatements/*.txt. Named rather than
+# discovered so adding one is a deliberate act, and the test above then requires
+# whatever workflow runs it to carry the strip step.
+ATOMIC_GENERATORS = [
+    "generate_identical_name_en_labels.py",
+    "generate_kana_en_labels.py",
+    "generate_temple_en_labels.py",
+    "generate_temple_identical_name_en_labels.py",
+    "generate_cjk_ja_backfill.py",
+]

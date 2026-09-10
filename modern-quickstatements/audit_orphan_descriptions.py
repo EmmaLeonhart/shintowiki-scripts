@@ -26,7 +26,7 @@ QuickStatements clears a description, into an atomic file for the normal daily d
 never edits Wikidata itself -- per `CLAUDE.md`, the QuickStatements pipeline is the single
 road, and a bespoke direct-API editor is forbidden.
 
-⛔ Nothing can be delivered before the Wikidata lockout lifts on 2026-09-18
+⛔ Nothing can be delivered while `wikidata_editing_lockout.state` is shut
 (`shinto_miraheze/wikidata_editing_lockout.state`). Staging is workable; delivering is not.
 
 Usage:

@@ -4,6 +4,58 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-10 — the red tests: a lockout date copied out of the state file, and a chokepoint on only one road
+
+Two failures, both from Emma shortening the Wikidata lockout to 2026-09-01 on 2026-09-06.
+
+### A date copied into a test stops agreeing with the file it was copied from
+
+`test_lost_shrine_creates.py::test_gate_is_shut_right_now` read
+`if today < date(2026, 9, 18): assert not ok`. That is the lockout's *original* end, and the gate
+it was checking has never carried a date — it asks `wikidata_editing_lockout.state`. So the test
+went red the moment the state file and the copy disagreed. It now asks the same state file the gate
+asks, and holds whatever that file says.
+
+The same copy was in 20 other places, and `CLAUDE.md`'s own rule heading was one of them —
+**⛔ WIKIDATA LOCKOUT until 2026-09-18**, the rule that exists to stop a freeze date being
+duplicated, carrying a duplicate of it four days stale. All of them now point at the state file
+instead: the generator docstrings that said "nothing is delivered before the lockout lifts on
+2026-09-18", `docs/deferred_verification.md`, `docs/description_label_policy.md`,
+`docs/kana_name_mate_rulings.md`, the `cleanup-loop.yml` history comment, and the membership-removal
+review page, which now renders `editing_allowed()`'s live answer rather than a date baked into its
+HTML. What stays is the verbatim Emma quotes (*"Register it — deliver on 2026-09-18"*), the test
+fixtures that monkeypatch a locked string, and the floor on `scheduled_items.json`.
+
+### The husk chokepoint was on one road out of two
+
+`test_no_atomic_file_stages_an_edit_to_a_husk` had gone red on `identical_name_en_labels.txt:297`,
+`Q134886554|Len|"Chikadono Shrine"` — a ブルーノ・プラス-repurposed husk. Nothing could have reached
+Wikidata: `direct_daily_edits.item_is_editable` refuses all four husks without a network call.
+
+The queue read this as a missing exclusion in the generator. It is not. `strip_husk_lines.py`
+already exists precisely so the exclusion is NOT in each generator (queue.md A5: the next generator
+written would miss it), and it runs as the last step before the commit in
+`generate-quickstatements.yml`. But `generate-shrines-missing-en-label.yml` **also** writes atomic
+`.txt` files — five generators of them — and had no such step. So the two workflows disagreed:
+`96efe817` re-added the line on 2026-09-07 and it stayed staged until `af5eb701` stripped it on
+2026-09-10, which is why the test is green now without anyone fixing it.
+
+The strip step is now the last step before the commit in that workflow too, and a new test asserts
+the property rather than the instance: any workflow that runs one of the atomic-file generators must
+also run `strip_husk_lines.py`. A chokepoint on one road out of two is not a chokepoint.
+
+### Also fixed, both found by the suite
+
+- `site/generate_orphan_label_fixes.py` carried a one-level-up `REPO_ROOT` insert instead of the
+  canonical walking bootstrap, so `test_sys_path_bootstrap_ordering.py` counted it as having none.
+- `generate_katakana_reading_remove.py` had no `--out` / `publish_to_site`, which the
+  atomic-file-reachability tests require of every registered generator.
+
+Left red locally and only locally: `test_user_agent_segregation.py` — `shinto_miraheze/.ua_contacts.json`
+(gitignored, dev-only) has the same address under both `miraheze` and `wikidata`. CI reads two
+separate secrets, so this is a local config value, not a repo defect.
+
+
 ## 2026-09-10 — the leftover top-level katakana: 15 of the 27 were reachable all along
 
 `docs/katakana_name_in_kana_2026-09.md` said of the 27 top-level katakana `P1814` statements that

@@ -33,7 +33,7 @@ Both readings are heavily backed by the National Tax Agency corporate registry (
 19), which is why neither is "the wrong one" — they are two real readings, and the label follows
 whichever the item has.
 
-⛔ Generates only. Nothing is delivered before the Wikidata lockout lifts on 2026-09-18.
+⛔ Generates only. Nothing is delivered while `wikidata_editing_lockout.state` is shut.
 
 Usage:
     python modern-quickstatements/generate_tenjinsha_en_labels.py

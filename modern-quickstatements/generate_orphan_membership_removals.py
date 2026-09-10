@@ -29,7 +29,7 @@ re-derive the orphan set: it asks WDQS once for items holding both `P460 → ent
 then reads nothing further from the query service. Paced through `wd_pace(SPARQL_INTERVAL)`, the
 repo's 2.5s floor.
 
-⛔ Generates only. Nothing is delivered before the Wikidata lockout lifts on 2026-09-18.
+⛔ Generates only. Nothing is delivered while `wikidata_editing_lockout.state` is shut.
 
 Usage:
     python modern-quickstatements/generate_orphan_membership_removals.py

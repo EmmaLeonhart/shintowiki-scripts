@@ -157,9 +157,11 @@ def test_the_committed_store_parses_and_every_item_is_well_formed():
 
 
 def test_nothing_in_the_committed_store_is_due_before_the_wikidata_lockout_lifts():
-    """Every deferred item here waits on either the 2026-09-18 lockout or Emma's 09-21.
-    An item dated earlier than that would fire on the next scheduled run, which is not
-    what 'deferred' meant for any of them."""
+    """No deferred item is due before 2026-09-18 — the earliest date any of them was written
+    against (the Wikidata lockout's original end, and Emma's 09-21). An item dated earlier would
+    fire on the next scheduled run, which is not what 'deferred' meant for any of them. This is a
+    floor on the STORE's contents, not a claim about the lockout: that expired 2026-09-01 and is
+    read from `wikidata_editing_lockout.state`, never from a date written here."""
     for item in inj.load()["items"]:
         assert datetime.date.fromisoformat(item["due"]) >= datetime.date(2026, 9, 18), item["id"]
 

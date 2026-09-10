@@ -45,7 +45,7 @@ creations have been switched off in the past. This file is therefore kept SEPARA
 statement batches and is registered nowhere by default; wiring it into `ATOMIC_FILES` is a
 deliberate act, not a side effect of running this.
 
-⛔ Generates only. Nothing is created before the Wikidata lockout lifts on 2026-09-18.
+⛔ Generates only. Nothing is created while `wikidata_editing_lockout.state` is shut.
 
 Usage:
     python modern-quickstatements/generate_lost_shrine_creates.py

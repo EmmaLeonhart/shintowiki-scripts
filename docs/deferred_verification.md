@@ -39,8 +39,10 @@ batched verification we skip in the moment.
   lockout, not by anything wrong: the file is written only by `submit_daily_batch.py`
   and `direct_daily_edits.py`, whose jobs (`submit-quickstatements`, `direct-daily-edits`)
   report **skipped** on every `cleanup-loop` run while
-  `shinto_miraheze/wikidata_editing_lockout.state` is locked to **2026-09-18**. So it has
-  not regenerated since 2026-08-25 and there is no post-fix build to measure.
+  `shinto_miraheze/wikidata_editing_lockout.state` is shut. So it had not regenerated since
+  2026-08-25 and there was no post-fix build to measure. **The lockout expired 2026-09-01**
+  (Emma shortened it on 2026-09-06), so the check below is now actionable — do not wait on a
+  date, ask the state file.
   **Check, once the lockout date passes:** after a `cleanup-loop` run where those two jobs
   are no longer skipped, confirm the generator wrote the file in the run log, then confirm
   either no commit touched it, or that any commit is a small real delta rather than the

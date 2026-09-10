@@ -52,10 +52,15 @@ import time
 import urllib.parse
 import urllib.request
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-REPO_ROOT = os.path.dirname(HERE)
-if REPO_ROOT not in sys.path:
-    sys.path.insert(0, REPO_ROOT)
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
+HERE = _uos.path.dirname(_uos.path.abspath(__file__))
+REPO_ROOT = _uar
 
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E402
 

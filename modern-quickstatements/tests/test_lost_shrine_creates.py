@@ -35,6 +35,14 @@ import create_items  # noqa: E402
 import lost_shrine_gate  # noqa: E402
 import direct_daily_edits as dde  # noqa: E402
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+from shinto_miraheze.wikidata_edit_allowed import editing_allowed  # noqa: E402
+
 BATCH = "lost_shrine_creates.txt"
 BATCH_PATH = os.path.join(MQ, BATCH)
 
@@ -157,8 +165,21 @@ def test_gate_fails_closed_when_the_lockout_check_raises(monkeypatch):
     assert "refusing" in why
 
 
-def test_gate_is_shut_right_now():
-    """Belt and braces: whatever the date is when this runs, the real gate agrees."""
+def test_gate_agrees_with_the_lockout_state_file():
+    """Belt and braces: the live gate, run for real, agrees with the ONE state file.
+
+    This used to read `if today < date(2026, 9, 18): assert not ok` — the lockout's
+    original end date, copied into a test. Emma shortened the lockout to 2026-09-01 on
+    2026-09-06 and the assertion went red, which is the same defect CLAUDE.md forbids in
+    a workflow: a date duplicated away from `wikidata_editing_lockout.state` is a date
+    that stops agreeing with it. The gate itself never carried one; this now does not
+    either, and it holds whatever the state file is set to.
+    """
+    allowed, detail = editing_allowed()
     ok, why = lost_shrine_gate.is_open()
-    if datetime.date.today() < datetime.date(2026, 9, 18):
+    if not allowed:
         assert not ok, why
+        assert "wikidata lockout" in why, why
+    else:
+        # Lockout clear, so only the ブルーノ・プラス conflict gate can still hold it shut.
+        assert ok or "conflict_gate" in why, why

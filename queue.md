@@ -17,14 +17,6 @@ from `ATOMIC_FILES`; they are not queue items.
   items from its LLM queue — that exclusion is about *reading* an article, not about *deriving*
   from the label, so it does not block this.
 
-- **Two red tests, both predating this session, both from Emma lifting the lockout on 2026-09-06.**
-  `test_lost_shrine_creates.py::test_gate_is_shut_right_now` hardcodes 2026-09-18 while
-  `wikidata_editing_lockout.state` now says 2026-09-01 — the test, and the several docs that still
-  say 09-18, need to follow the state file. `test_repurposed_husks_never_edited.py::test_no_atomic_file_stages_an_edit_to_a_husk`
-  fails on `identical_name_en_labels.txt:297 Q134886554|Len|"Chikadono Shrine"`: the submitter's
-  husk gate still refuses it, so nothing can reach Wikidata, but the generator that emits it lacks
-  the husk exclusion and re-adds the line every build.
-
 - **Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-09-07)**
   Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
 

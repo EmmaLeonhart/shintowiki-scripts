@@ -124,8 +124,9 @@ how the object's value was given in the source"*. That is a **reference** qualif
 `P2241` (reason for deprecated rank) both exist but both change a statement's rank, which is a
 bigger claim than she asked for.
 
-⛔ **NEEDS-DECISION before anything is written**, and nothing can be delivered before the Wikidata
-lockout lifts on 2026-09-18 in any case.
+⛔ **NEEDS-DECISION before anything is written.** Delivery is governed by
+`wikidata_editing_lockout.state` and by nothing else; it expired 2026-09-01, so the lockout is no
+longer what is holding this.
 
 ### And it independently settles 天神社
 
@@ -168,7 +169,8 @@ sentence:**
 | あまつかむやしろ | 1 | **legitimate** — jawiki lists it. I had been treating it as noise. |
 
 - ▶ Her instruction stands: **fix the English from the kana** where a reading exists.
-- ⚠ Nothing staged. Wikidata lockout to 2026-09-18.
+- ⚠ Nothing staged. (The lockout that used to be named here expired 2026-09-01; it is not the
+  reason nothing is staged.)
 
 
 ## Omitting the word "shrine" — Emma, 2026-08-24, and it is NOT the sic rule

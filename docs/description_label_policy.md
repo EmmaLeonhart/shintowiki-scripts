@@ -93,5 +93,7 @@ file, not this one.
 rejection to be observable. QuickStatements failures are not currently read back per line, so
 there is nothing to iterate on. Do not invent a retry that cannot see a rejection.
 
-⛔ Nothing here is deliverable before the Wikidata lockout lifts on **2026-09-18**
-(`shinto_miraheze/wikidata_editing_lockout.state`). Staging is workable; delivering is not.
+⛔ Nothing here is deliverable while the Wikidata lockout is shut — ask
+`shinto_miraheze/wikidata_editing_lockout.state`, never a date copied out of it. Staging is
+workable whatever it says; delivering is not. (It expired **2026-09-01**; this paragraph used to
+name 2026-09-18, which is the defect it is now written to avoid.)
