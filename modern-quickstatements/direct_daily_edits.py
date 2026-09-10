@@ -117,6 +117,7 @@ ATOMIC_FILES = [
     "kana_redundant_remove.txt",
     "katakana_reading_add.txt",             # The residue the カミノヤシロ pipeline genuinely cannot reach. 27 top-level katakana P1814 statements sit on shrines with no ojp-hani P1448 of their own, but most are Shikinai Ronsha whose Engishiki ENTRY item carries the name one P460/P361 hop away — the reading on the candidate, the name on the entry — and those ARE the pipeline's, via its SEED branch (docs/katakana_name_in_kana_2026-09.md, 2026-09-10 correction). What is left is 4 items with no entry item behind them. Their hiragana is DERIVED by english_to_kana.kana_for from the English label plus the shrine suffix in the Japanese label — never read out of an article, per CLAUDE.md's "the English label IS the KANA reading" — and the generator refuses anything it cannot do confidently, which is what keeps it off 四至神/座摩神 (ruled correct as they stand), 岩井温泉 (not a shrine) and 一之宮神社 (スサノオ: a deity in a reading field, a wrong FIELD not a short reading). ADD-only, self-healing (generate_katakana_reading_add.py).
     "katakana_reading_remove.txt",          # Retires those katakana values, ONLY where a fresh SPARQL confirms the derived hiragana has already landed — both scripts derive through the same english_to_kana.kana_for, so the confirmed value is by construction the one the add proposed. Add-first/remove-later in two scripts, never one, so the drip's random order can never leave an item with no reading (generate_katakana_reading_remove.py). Whole-statement removal of a top-level P1814, which QuickStatements expresses correctly — NOT the qualifier removal that destroyed four ojp-hani official names on 2026-09-09.
+    "lost_shrine_parity.txt",                 # The three lost-shrine items the 2026-09-10 create-items dispatch made are duplicates of the three Emma made by hand on 2026-09-06, and Emma ruled they are NOT to be merged: "they should be identical in form". They already match on every label, statement and reference except one — P625, which the create run could not write because parse_qs_value had no globe-coordinate case (now added). This supplies it. Descriptions cannot be equalised: Wikidata refuses a second item the same (label, description) pair in a language, which is what every FAIL in that run was. ADD-only, self-healing (generate_lost_shrine_parity.py).
     "ojp_name_restores.txt",                  # Puts back the four ojp-hani P1448 official names that kana_redundant_remove.txt DELETED — its 5-field lines read as "drop this qualifier" but QuickStatements has no such operation, so each removed the whole statement with its two references, its P1264 and the カミノヤシロ qualifier. Q135040123/Q135070009/Q135194697 (2026-09-07) and Q135195565 (2026-09-08), the four that ran before the shape was stopped on 2026-09-09. Emma that day: "Rebuild them from history." Content copied verbatim from each removing edit's parent revision — a restore, not a reconstruction. ADD-only, one line per qualifier and per reference block so no line can fail on a piece that has already landed; self-healing (generate_ojp_name_restores.py re-asks Wikidata each build and goes empty when all four are whole).
     "migrate_ritsuryo_funding_remove.txt",
     "migrate_ritsuryo_funding_underspecified_remove.txt",
@@ -343,6 +344,21 @@ def parse_qs_value(raw):
             "precision": int(m.group(2)),
             "calendarmodel": "http://www.wikidata.org/entity/Q1985727",
         }}
+    # QS v1 globe coordinate: @35.838036/139.337402  (latitude/longitude).
+    # Without this it fell through to {"type": "unknown"} and execute_add refused
+    # the line -- which is how the three lost-shrine items were created on
+    # 2026-09-10 with every statement EXCEPT their P625, one ERROR per block that
+    # did not stop the creation. QuickStatements itself writes precision 1e-6 and
+    # the Earth globe, so reproducing QS semantics means those here too.
+    m = re.match(r"^@([+-]?\d+(?:\.\d+)?)/([+-]?\d+(?:\.\d+)?)$", raw)
+    if m:
+        return {"type": "globecoordinate", "value": {
+            "latitude": float(m.group(1)),
+            "longitude": float(m.group(2)),
+            "altitude": None,
+            "precision": 1e-6,
+            "globe": "http://www.wikidata.org/entity/Q2",
+        }}
     return {"type": "unknown", "value": raw}
 
 
@@ -503,7 +519,7 @@ def item_is_editable(qid, today=None):
 
 def value_to_api_json(parsed_value):
     """Convert a parsed value to the JSON string expected by wbcreateclaim/wbsetqualifier."""
-    if parsed_value["type"] in ("entity", "monolingualtext", "time"):
+    if parsed_value["type"] in ("entity", "monolingualtext", "time", "globecoordinate"):
         return json.dumps(parsed_value["value"])
     if parsed_value["type"] == "string":
         return json.dumps(parsed_value["value"])

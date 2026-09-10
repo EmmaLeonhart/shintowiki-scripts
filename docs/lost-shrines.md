@@ -155,9 +155,35 @@ asks two things, and any error fails closed:
 
 Emma registered the batch on 2026-08-24 to deliver on **2026-09-18**, and registration was
 implemented as *"when the lockout lifts"* rather than as that date. The lockout's `locked_until`
-was moved to **2026-09-01** on 2026-09-06, so **the gate now reports open** — CI at 21:20Z that
-day: `open: wikidata lockout clear and conflict_gate clear`. Nothing has run it; whether it should
-go now or wait for the 18th is a decision, not a bug.
+was moved to **2026-09-01** on 2026-09-06, so the gate reported open from then on.
+
+## ⛔ It delivered twice — Emma had already created all three by hand
+
+Emma created the three items herself through QuickStatements on **2026-09-06 at 23:17–23:18Z**
+(`#temporary_batch_1788736…`), the same evening she shortened the lockout. A `create-items.yml`
+dispatch on **2026-09-10** created them a second time.
+
+| Emma's, 09-06 | the dispatch's, 09-10 | subject |
+|---|---|---|
+| `Q141335127` | `Q141406052` | Kamo Shrine / 加茂神社 (Odawara) |
+| `Q141335121` | `Q141406056` | Kenkō-ji Temple / 見光寺 (Hannō) |
+| `Q141335129` | `Q141406059` | Chikadono Shrine / 近殿神社 (Kumagaya) |
+
+**Nothing failed.** `create_items.py` has no duplicate guard, by Emma's instruction, and the
+paragraph below already said the re-check is re-running `generate_lost_shrine_creates.py`. The
+dispatch did not do that.
+
+**Emma's ruling, 2026-09-10: do NOT merge them.** *"You edit them to be as good as possible …
+they should be identical in form"*, and *"apply the goddamn coordinates to all of them, the old
+ones I created and the ones you created"*. `generate_lost_shrine_parity.py` implements that: the
+six differed in exactly one statement, `P625`, absent from the 09-10 three because
+`parse_qs_value` had no globe-coordinate case and printed one `ERROR: unencodable QS value` per
+block without stopping the creation. That case now exists, and the three coordinates are staged in
+`lost_shrine_parity.txt`.
+
+**Descriptions cannot be equalised and that is not an open job.** Wikidata refuses a second item
+the same (label, description) pair in a language, which is what every `FAIL` in the 09-10 run was,
+so each pair necessarily splits them — Kamo carries `ja` on Emma's item and `en` on the other.
 
 ## Regenerating
 

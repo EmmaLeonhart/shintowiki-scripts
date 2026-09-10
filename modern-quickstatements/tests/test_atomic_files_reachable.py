@@ -42,6 +42,7 @@ GENERATORS = [
     "generate_hisousha_quickstatements",
     "generate_shintai_quickstatements",
     "generate_list_membership_rebuild",
+    "generate_lost_shrine_parity",
     "generate_katakana_reading_add",
     "generate_katakana_reading_remove",
 ]

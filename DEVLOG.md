@@ -4,6 +4,53 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-10 — the lost-shrine batch delivered twice, and the coordinates could never have landed
+
+Emma cleared the lost-shrine creations to go now rather than wait for the 18th, and the
+`create-items.yml` dispatch created three items. **She had already created all three by hand
+through QuickStatements on 2026-09-06 at 23:17–23:18Z**, the same evening she shortened the
+lockout, so the run produced duplicates:
+
+| Emma's, 09-06 | the dispatch's, 09-10 | subject |
+|---|---|---|
+| `Q141335127` | `Q141406052` | Kamo Shrine / 加茂神社 (Odawara) |
+| `Q141335121` | `Q141406056` | Kenkō-ji Temple / 見光寺 (Hannō) |
+| `Q141335129` | `Q141406059` | Chikadono Shrine / 近殿神社 (Kumagaya) |
+
+Nothing malfunctioned. `create_items.py` has no duplicate guard, by Emma's instruction, and
+`docs/lost-shrines.md` says in as many words that the re-check is re-running
+`generate_lost_shrine_creates.py`. The dispatch did not do that.
+
+### The coordinates never had a path
+
+Each block also printed `ERROR: unencodable QS value '@lat/lon' — parse_qs_value has no case for
+it`, once, and carried on creating the item. `parse_qs_value` handled entity, monolingual text,
+string, novalue/somevalue and time; it had no globe-coordinate case, so the value became
+`{"type": "unknown"}` and `value_to_api_json` refused it — correctly, since guessing a datatype is
+worse than refusing. The missing half was the case itself, which now exists.
+
+**The run reported success.** Three items were created, each missing one statement, and the only
+trace was one ERROR line per block. `tests/test_globe_coordinate_encoding.py` pins both halves: the
+encoder knows the type, a malformed one is still refused, and every `@lat/lon` in every staged file
+must round-trip — so a future CREATE batch carrying a coordinate shape it cannot take fails in CI
+rather than quietly creating an item without it.
+
+### Emma's ruling: not a merge
+
+*"You edit them to be as good as possible … they should be identical in form"*, and *"apply the
+goddamn coordinates to all of them, the old ones I created and the ones you created"*. Measured
+against the live items, the six differ in exactly one statement each — `P625` on the 09-10 three.
+Every label, every other statement and every reference already matches within each pair.
+`generate_lost_shrine_parity.py` stages those three into `lost_shrine_parity.txt`, registered in
+both submitters, and re-asks Wikidata each build so it goes empty once they land. The old three
+already carry their coordinates and are correctly left alone.
+
+Descriptions are the one thing that cannot be equalised: Wikidata refuses a second item the same
+(label, description) pair in a language — that is what every `FAIL` in the run was — so each pair
+necessarily splits them. That is the constraint `docs/description_label_policy.md` is built around,
+not an unfinished job.
+
+
 ## 2026-09-10 — the red tests: a lockout date copied out of the state file, and a chokepoint on only one road
 
 Two failures, both from Emma shortening the Wikidata lockout to 2026-09-01 on 2026-09-06.
