@@ -4,6 +4,67 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-11 — the generators that create statements but never enrich them
+
+Emma, after the deity `P1932` backfill: *"Are there any other, like, sort of updating things that
+kinda would be updating properties but do not update properties? because the updating of the existing
+ones to add more to them is kind of a very critical part that makes it so that this work is
+productive."*
+
+Surveyed every import property against live Wikidata. **Three real gaps, and the audit that would
+have surfaced them was wired into nothing.**
+
+### What was actually wrong
+
+| | statements | no reference | why it could never be fixed |
+|---|---|---|---|
+| `P571` inception (shrines + temples) | 3,642 | **1,471** | `generate_souken_quickstatements` does `if qid in have: continue` — it skips any item already carrying `P571`, so its `S143`+`S4656` bundle only ever landed on statements it created |
+| `P6375` address (shrines + temples) | 51,777 | **7,254** | `generate_address_citation_backfill` does this job but only from the 式内社一覧 per-district tables: 139 lines |
+
+Both are fixed by the same shape as the deity backfill, and in both the **value match is the whole
+safety of it**:
+
+* `souken_p571_citations.txt` — the jawiki reference onto an existing unreferenced `P571`, but only
+  where the article still states the SAME year the statement holds. A year mismatch means the value
+  came from elsewhere, or the article has changed, and citing it would assert what the article does
+  not say.
+* `address_citation_from_article.txt` — **2,728 lines**, citing the subject's OWN article where its
+  `所在地` normalises to exactly the stored address. **818 candidates were refused** on that gate, and
+  reading them is what shows it works: 鍛冶屋 against 鍛治屋, 京都府京都市 against 京都市, a dropped
+  block number, a different town entirely. Normalisation strips markup, postal codes, whitespace and
+  full-width digits — never an address component, so two real addresses cannot collide.
+
+Disjoint from `generate_uncited_address_removals.py` by construction: that one only deletes an
+uncited address on an item that ALSO carries a cited one, and is remove-only, so drip order cannot
+lose an address.
+
+### What was NOT wrong, said out loud
+
+* `P3225`, `P13677` unreferenced at ~100% — **external identifiers**. A reference is not expected, so
+  the number means nothing.
+* `P825` missing `P3831` on 15,957 — the principal-deity role is only correct for 主祭神, and most
+  deities are not principal.
+* `P571` missing `P1480` on 1,088 — sourcing circumstances only applies to legendary dates.
+* `P612` missing `P1013` (129) and `P837` missing `P3831` (3) — both already covered by wired
+  self-healing repairs, just pending in the drip.
+
+### ⛔ `P793` was in my own survey as a gap, and the measurement disproved it
+
+224 of 325 `P837` statements lack the festival-item qualifier. The model says *"if one exists"*, and
+for these it does not: `P276` links from festival items reach only **12** shrines, and what is
+located at those is sub-shrines, a sword, a lighthouse and a theatre; the jawiki `例祭` field parses
+date links (`[[4月15日]]`), not festival articles. The 93 existing `P793` values are the residue of
+somebody making the connection by hand, not a discoverable signal. A generator here would emit
+nothing, or point a festival qualifier at a lighthouse. **Dropped before building it.**
+
+### The meta-finding
+
+`audit_model_adoption.py` has measured exactly this since 2026-07-28 — CONFORMANCE, *"of the
+statements that exist, how many carry the full modelled shape"* — and **was in no workflow at all**,
+which is why these were found by a one-off survey rather than reported. Now wired, weekly, writing
+`docs/model_adoption.json`.
+
+
 ## 2026-09-11 — the katakana neither pipeline can reach, and P1932 on deities that already exist
 
 ### Q11361262, and 742 like it

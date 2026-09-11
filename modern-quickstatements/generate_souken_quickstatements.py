@@ -19,8 +19,27 @@ unambiguous Gregorian year are imported, at year precision. Skipped by design
   * fields with no Gregorian year at all (era-only or regnal-only, per jawiki
     citation-style rules some articles deliberately omit the Western year).
 
-Items already carrying P571 are skipped (SPARQL). Output: souken_p571.txt —
+Items already carrying P571 are skipped for the IMPORT. Output: souken_p571.txt —
     <item>|P571|+YYYY-00-00T00:00:00Z/9|S143|Q177837|S4656|"<jawiki url>"
+
+## The citation backfill (added 2026-09-11)
+
+Skipping them entirely left their statements permanently unsourced: 441 shrine
+and 1,030 temple P571 statements carry no reference at all, and this generator —
+the only thing that reads 創建 — could never reach one. Emma, on generators that
+create but never enrich: *"the updating of the existing ones to add more to them
+is kind of a very critical part that makes it so that this work is productive."*
+
+So an item that already has P571 now also gets checked: where its statement is
+UNREFERENCED and jawiki still states the SAME year the statement holds, the same
+reference bundle is emitted into souken_p571_citations.txt.
+
+The year match is the whole safety of it. A statement whose year differs from
+what the article now says came from somewhere else, or the article has changed;
+citing it to this article would assert something the article does not say, so
+those are counted as `year-mismatch` and skipped. Nothing is re-stated, no value
+is altered — QuickStatements matches the existing claim by value and attaches the
+reference to it.
 """
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
@@ -47,6 +66,10 @@ JA_API = "https://ja.wikipedia.org/w/api.php"
 WDQS = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 OUTPUT = os.path.join(HERE, "souken_p571.txt")
+# The citation backfill: the SAME reference bundle onto P571 statements that
+# already exist and carry no source. Separate file so it can be paced or stopped
+# without touching the import (Emma, 2026-09-11).
+CITE_OUTPUT = os.path.join(os.path.dirname(OUTPUT), "souken_p571_citations.txt")
 
 # A field value ends at the next `|` parameter boundary, NOT at the newline.
 # Articles that put the whole infobox on one line otherwise bleed the next
@@ -196,17 +219,48 @@ def parse_year(field):
     return years.pop()
 
 
-def items_with_p571():
-    q = ("SELECT ?item WHERE { { ?item wdt:P31 wd:Q845945 } UNION "
-         "{ ?item wdt:P31 wd:Q5393308 } ?item wdt:P571 [] . }")
+def _wdqs(q):
     url = WDQS + "?" + urllib.parse.urlencode({"query": q, "format": "json"})
     req = urllib.request.Request(url, headers={
         "User-Agent": UA, "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
+    with urllib.request.urlopen(req, timeout=300) as r:
         if r.status == 429:
             raise SystemExit("429 from WDQS — bailing.")
-        rows = json.load(r)["results"]["bindings"]
-    return {b["item"]["value"].rsplit("/", 1)[-1] for b in rows}
+        return json.load(r)["results"]["bindings"]
+
+
+def items_with_p571():
+    """(qids carrying P571, {qid: {year}} for the UNREFERENCED statements only).
+
+    The second half is what the citation backfill needs. Emma, 2026-09-11, on
+    generators that create but never enrich: *"the updating of the existing ones
+    to add more to them is kind of a very critical part that makes it so that
+    this work is productive."* Measured that day: 441 shrine and 1,030 temple
+    inception statements carry no reference at all, and this generator could
+    never reach them because it skips any item that already has P571.
+
+    The year is carried, not just the QID, because a reference may only be
+    attached where jawiki still states the SAME year the statement holds — see
+    the backfill line in main().
+    """
+    rows = _wdqs("SELECT ?item WHERE { { ?item wdt:P31 wd:Q845945 } UNION "
+                 "{ ?item wdt:P31 wd:Q5393308 } ?item wdt:P571 [] . }")
+    have = {b["item"]["value"].rsplit("/", 1)[-1] for b in rows}
+
+    rows = _wdqs("""SELECT ?item ?v WHERE {
+      { ?item wdt:P31 wd:Q845945 } UNION { ?item wdt:P31 wd:Q5393308 }
+      ?item p:P571 ?st . ?st ps:P571 ?v .
+      FILTER NOT EXISTS { ?st prov:wasDerivedFrom ?r }
+    }""")
+    uncited = {}
+    for b in rows:
+        qid = b["item"]["value"].rsplit("/", 1)[-1]
+        # "+0863-00-00T00:00:00Z" -> 863. A negative (BCE) year is not something
+        # this generator ever parses, so it simply never matches.
+        m = re.match(r"^\+(\d{4})-", b["v"]["value"])
+        if m:
+            uncited.setdefault(qid, set()).add(int(m.group(1)))
+    return have, uncited
 
 
 def main():
@@ -215,15 +269,16 @@ def main():
     ap.add_argument("--limit", type=int)
     args = ap.parse_args()
 
-    have = items_with_p571()
-    print(f"{len(have)} shrines/temples already carry P571")
-    lines = []
+    have, uncited = items_with_p571()
+    print(f"{len(have)} shrines/temples already carry P571; "
+          f"{len(uncited)} of them have an UNREFERENCED P571 statement")
+    lines, cite_lines = [], []
     for template, field_pat in CONFIGS:
         pat = re.compile(field_pat)
         titles = embedded_titles(template)
         if args.limit:
             titles = titles[:args.limit]
-        clean = skipped = no_qid = already = 0
+        clean = skipped = no_qid = already = cited = mismatch = 0
         for i in range(0, len(titles), 50):
             for title, qid, text in fetch_batch(titles[i:i + 50]):
                 m = pat.search(text or "")
@@ -236,19 +291,39 @@ def main():
                 if not qid:
                     no_qid += 1
                     continue
+                url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
                 if qid in have:
                     already += 1
+                    # THE CITATION BACKFILL. The statement exists and carries no
+                    # source; jawiki is where it came from, so jawiki can cite it
+                    # — but ONLY where the article still states the same year the
+                    # statement holds. A year mismatch means the statement came
+                    # from somewhere else or jawiki has since changed, and citing
+                    # it to this article would assert something the article does
+                    # not say.
+                    if year in uncited.get(qid, ()):
+                        cite_lines.append(
+                            f'{qid}|P571|+{year:04d}-00-00T00:00:00Z/9'
+                            f'|S143|Q177837|S4656|"{url}"')
+                        cited += 1
+                    elif qid in uncited:
+                        mismatch += 1
                     continue
-                url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
                 lines.append(f'{qid}|P571|+{year:04d}-00-00T00:00:00Z/9|S143|Q177837|S4656|"{url}"')
                 clean += 1
             time.sleep(0.3)
         print(f"{template}: {len(titles)} articles, clean-year={clean}, "
-              f"skipped-ambiguous={skipped}, no-QID={no_qid}, already-had-P571={already}")
+              f"skipped-ambiguous={skipped}, no-QID={no_qid}, already-had-P571={already} "
+              f"(citable={cited}, year-mismatch={mismatch})")
     lines = sorted(set(lines))
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
     print(f"{len(lines)} P571 lines -> {OUTPUT}")
+
+    cite_lines = sorted(set(cite_lines))
+    with open(CITE_OUTPUT, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(cite_lines) + ("\n" if cite_lines else ""))
+    print(f"{len(cite_lines)} P571 citation-backfill lines -> {CITE_OUTPUT}")
 
 
 if __name__ == "__main__":
