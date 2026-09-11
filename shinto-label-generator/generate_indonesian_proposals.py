@@ -1,18 +1,69 @@
 """
-Generate proposed Indonesian labels for Japanese-only shrines/temples.
-1. Query Wikidata for items with 'ja' label but NO 'id' label.
-2. Fetch 'ja' label, 'en' label (if any), and optional Kana reading (P1814/P5461).
-3. Convert to Romaji (Hepburn) using pykakasi.
-4. Strip common shrine/temple suffixes to avoid redundancy in "Kuil [Name]".
-5. Output to 'proposed_indonesian_labels.csv' and 'quickstatements/id_proposed.txt'.
+Generate proposed Indonesian labels for shrines/temples that have none.
+
+⭐ DERIVED FROM THE ENGLISH LABEL, not from the kanji. Emma, 2026-09-10: *"the
+Indonesian labels often appear quite dubious and I'm not sure how they were
+derived. They should be derived from the proposed English labels for the
+shrines."*
+
+## What it used to do, and why the output was junk
+
+It fetched the English label and used it ONLY in a `# Source:` comment. The label
+itself was `pykakasi(kana or ja_label)` — a reading guessed off the kanji — then
+macron-stripped and blanket-collapsed (`uu`/`ou`/`aa`/`ii`/`ee` -> one vowel), then
+had a suffix chopped off a glued-together string. Shrine names take irregular
+local readings, so pykakasi on kanji is a guess, and the collapse corrupted what
+survived:
+
+    元八幡        EN "Moto Hachiman"        ->  Kuil Genpachi Hata
+    藤崎八旛宮     EN "Fujisaki Hachimangū"  ->  Kuil Fujisaki Hachi Hata
+    陶山神社       EN "Tōzan Shrine"         ->  Kuil Sueyamajinja AND Kuil Tozanjinja
+    柞原八幡宮     EN "Yusuhara Hachimangū"  ->  Kuil Yusuharahachimangu
+
+Every one of those had the right answer sitting in the English label.
+
+## The convention, read off the corpus
+
+Measured 2026-09-11 over the **24,460** shrines that already carry both an id and
+an en label — this is the community's own house style, not a guess:
+
+| en label | id label | follows | other |
+|---|---|---|---|
+| `X Shrine` | `Kuil X` | **20,520** | 253 |
+| ends in a small transliterated suffix (`Tenmangū`, `Hachimangū`, `-gū`, `Tōshō-gū`, `Hachiman`) | `Kuil <the whole label>` | **1,449** | 27 |
+| ends in `Jingū` / `Taisha` / `Daijingū` | `Kuil Agung X` | 46 | **53** |
+
+So:
+
+  * **`Kuil` + the label with the word "Shrine" removed** is the rule.
+  * **A transliterated Japanese suffix is part of the name and stays.** CLAUDE.md:
+    "The ending is part of the name. 社 ≠ 神社 ≠ 宮."
+  * **Macrons are KEPT** — 623 of the sampled id labels carry one, and
+    `Kuil Ueno Tenmangū` / `Kuil Ueno Ōji` are the corpus form. The old
+    macron-stripping was simply wrong.
+  * **A parenthetical disambiguator is KEPT**: `Ueno Ōji Shrine (Osaka)` ->
+    `Kuil Ueno Ōji (Osaka)`.
+  * ⛔ **`Jingū` / `Taisha` are REFUSED.** 53 against 46 is not a convention, it
+    is a corpus that disagrees with itself, and "Kuil Agung" vs "Kuil <whole>"
+    changes the name. Left for Emma rather than guessed.
+
+## Source of the English label
+
+The item's own en label where Wikidata has one; otherwise the proposal our own
+en-label pipeline has already staged (`modern-quickstatements/*en_labels*.txt`),
+which is what "the PROPOSED English labels" means. An item with neither gets
+NOTHING — deriving from the kanji is what produced `Kuil Genpachi Hata`.
+
+Output: 'proposed_indonesian_labels.csv' and 'quickstatements/id_proposed.txt'.
 """
 
+import io
 import os
 import sys
 import csv
 import re
+from collections import Counter
 import requests
-import pykakasi
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
@@ -24,31 +75,27 @@ from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
-# Initialize pykakasi (v2.3.0 API)
-kks = pykakasi.kakasi()
+# pykakasi is GONE. Reading the kanji is what produced "Kuil Genpachi Hata";
+# the English label is the source now, so there is nothing left to transliterate.
 
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 
 SPARQL_SHRINES = """
-SELECT DISTINCT ?item ?jaLabel ?enLabel ?kanaName ?kanaReading WHERE {
+SELECT DISTINCT ?item ?jaLabel ?enLabel WHERE {
   ?item wdt:P31/wdt:P279* wd:Q845945 .
   ?item rdfs:label ?jaLabel . FILTER(LANG(?jaLabel) = "ja")
   FILTER NOT EXISTS { ?item rdfs:label ?idLabel . FILTER(LANG(?idLabel) = "id") }
   OPTIONAL { ?item rdfs:label ?enLabel . FILTER(LANG(?enLabel) = "en") }
-  OPTIONAL { ?item wdt:P1814 ?kanaName . }
-  OPTIONAL { ?item wdt:P5461 ?kanaReading . }
 }
 """
 
 SPARQL_TEMPLES = """
-SELECT DISTINCT ?item ?jaLabel ?enLabel ?kanaName ?kanaReading WHERE {
+SELECT DISTINCT ?item ?jaLabel ?enLabel WHERE {
   ?item wdt:P31 wd:Q5393308 .
   ?item wdt:P17 wd:Q17 .
   ?item rdfs:label ?jaLabel . FILTER(LANG(?jaLabel) = "ja")
   FILTER NOT EXISTS { ?item rdfs:label ?idLabel . FILTER(LANG(?idLabel) = "id") }
   OPTIONAL { ?item rdfs:label ?enLabel . FILTER(LANG(?enLabel) = "en") }
-  OPTIONAL { ?item wdt:P1814 ?kanaName . }
-  OPTIONAL { ?item wdt:P5461 ?kanaReading . }
 }
 """
 
@@ -77,57 +124,135 @@ def fetch_candidates():
     except Exception as e: print(f"Error fetching temples: {e}")
     return results
 
-def to_romaji(text):
-    cleaned = re.sub(r'\(.*?\)|（.*?）', '', text).strip()
-    result = kks.convert(cleaned)
-    # Get Hepburn, join parts
-    name = " ".join([item['hepburn'] for item in result]).title()
-    
-    # Normalize macrons for Indonesian (nearly 1-1 with Hepburn but usually no macrons)
-    name = name.replace("ā", "a").replace("ī", "i").replace("ū", "u").replace("ē", "e").replace("ō", "o")
-    # Also handle the 'uu' / 'ou' patterns that sometimes appear from pykakasi if not in Hepburn mode
-    name = name.replace("uu", "u").replace("ou", "o").replace("aa", "a").replace("ii", "i").replace("ee", "e")
+# A transliterated Japanese shrine suffix is part of the NAME and stays in the
+# label (corpus: 1,449 against 27). Longest first so Tōshō-gū is not read as -gū.
+KEEP_SUFFIXES = [
+    "Tōshō-gū", "Tosho-gu", "Tōshōgū", "Toshogu",
+    "Hachimangū", "Hachimangu", "Hachiman-gū", "Hachiman-gu",
+    "Tenmangū", "Tenmangu", "Tenman-gū", "Tenman-gu",
+    "Tenjinsha", "Tenjin-sha", "Hachiman",
+    "-no-miya", "no-miya", "-miya", "Jinja", "-gū", "-gu", "-sha",
+]
 
-    # Strip common Japanese shrine/temple suffixes to avoid redundancy in "Kuil [Name]"
-    # Added common variants and case sensitivity handled by .title() previously
-    suffixes = [
-        " Jinja", " Jingu", " Taisha", " Tenmangu", " Gu", 
-        " Ji", " Tera", " Dera", " In", " An", " Miya", " Yashiro"
-    ]
-    for suffix in suffixes:
-        if name.endswith(suffix):
-            name = name[:-len(suffix)].strip()
-            break
-    return re.sub(r'[ \t  ]+', ' ', name).strip()   # collapse spaces incl nbsp; keep U+3000
+# ⛔ Ambiguous in the corpus — 53 `Kuil <whole>` against 46 `Kuil Agung X`. The
+# two forms are different names, so neither is emitted.
+REFUSE_SUFFIXES = ["Daijingū", "Daijingu", "daijingū", "daijingu",
+                   "Jingū", "Jingu", "Taisha"]
+
+_PAREN_TAIL = re.compile(r"\s*\([^)]*\)\s*$")
+
+# Forbidden whitespace, per tests/test_label_whitespace.py. It arrives from the
+# ENGLISH labels — "Wakamiya Hachiman Shrine", "Aijikaue Shrine (Legendary
+# Site C)" — so deriving faithfully carries a defect through. Folded to a
+# single ordinary space here; the en label itself is a separate problem.
+_BAD_SPACE = re.compile(r"[   	]+")
+
+# An English label that is a DESCRIPTION rather than a name. "Co-Enshrinement of
+# Ohowano Shrine" derives "Kuil Co-Enshrinement of Ohowano", which is faithful to
+# the English and still junk — exactly the "shit Indonesian labels" complaint.
+# A Japanese shrine name romanises without English function words, so their
+# presence means the label is prose.
+_GLOSS = re.compile(r"(?:^|\s)(?:of|the|and|for|at|in|on|to)(?:\s|$)"
+                    r"|Legendary|Site|Co-Enshrinement|Unknown|Former|Possible",
+                    re.I)
+
+
+def indonesian_label(en, kind):
+    """(label, reason). The Indonesian label for an English one, or (None, why).
+
+    `kind` is "shrine" or "temple", which chooses Kuil / Wihara.
+    """
+    en = (en or "").strip()
+    if not en:
+        return None, "no English label to derive from"
+    if "," in en:
+        # 'Kawahara Shrine, Nagoya' is 'Kuil Kawahara' in the corpus — the comma
+        # disambiguator is dropped, not carried like a parenthetical one. One
+        # example is not a rule, so rather than guess which, refuse.
+        return None, "comma disambiguator — corpus drops it, not carried here"
+
+    en = _BAD_SPACE.sub(" ", en).strip()
+    if _GLOSS.search(en):
+        return None, "English label is a gloss, not a name"
+
+    prefix = "Kuil" if kind == "shrine" else "Wihara"
+    word = " Shrine" if kind == "shrine" else " Temple"
+
+    # The generic word usually ends the label, but sometimes sits before a
+    # parenthetical: 'Ueno Ōji Shrine (Osaka)'. Remove the WORD and keep the rest,
+    # which is what the corpus does.
+    bare = _PAREN_TAIL.sub("", en)
+    tail = en[len(bare):]
+    if bare.endswith(word):
+        stem = bare[: -len(word)].strip()
+        if not stem:
+            return None, "the generic word alone"
+        return f"{prefix} {stem}{tail}", "ok"
+
+    for suf in REFUSE_SUFFIXES:
+        if bare.endswith(suf):
+            return None, f"{suf} — corpus split 53/46 between Kuil and Kuil Agung"
+
+    for suf in sorted(KEEP_SUFFIXES, key=len, reverse=True):
+        if bare.endswith(suf):
+            return f"{prefix} {en}", "ok (suffix kept)"
+
+    return None, "English label ends in no known shrine/temple word"
+
+
+def load_en_proposals():
+    """{qid: proposed en label} from our own en-label batches.
+
+    "The PROPOSED English labels" — an item whose en label has been generated but
+    not yet delivered by the drip is still an item whose English name we know.
+    """
+    mq = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                      "modern-quickstatements")
+    out = {}
+    pat = re.compile(r'^(Q\d+)[|	]L(?:en|EN)[|	]"(.*)"\s*$')
+    for name in sorted(os.listdir(mq)) if os.path.isdir(mq) else []:
+        if not name.endswith(".txt") or "en_label" not in name:
+            continue
+        for line in open(os.path.join(mq, name), encoding="utf-8"):
+            m = pat.match(line.strip())
+            if m:
+                out.setdefault(m.group(1), m.group(2).replace('""', '"'))
+    return out
+
 
 def main():
     results = fetch_candidates()
+    staged = load_en_proposals()
+    print(f"{len(staged)} English labels staged but not yet delivered — usable as "
+          f"the 'proposed' English label")
     proposals = []
+    reasons = Counter()
     print("Processing items...")
     for binding in results:
         qid = binding["item"]["value"].split("/")[-1]
         ja_label = binding["jaLabel"]["value"]
-        en_label = binding.get("enLabel", {}).get("value", "")
-        source_text = binding.get("kanaName", {}).get("value") or binding.get("kanaReading", {}).get("value") or ja_label
+        # The item's own en label, else the one our pipeline has already staged.
+        # NEVER the kanji: reading it with pykakasi is what produced
+        # "Kuil Genpachi Hata" for 元八幡 / "Moto Hachiman".
+        en_label = binding.get("enLabel", {}).get("value", "") or staged.get(qid, "")
         item_type = binding["type"]["value"]
-        
-        try:
-            name = to_romaji(source_text)
-            if not name: continue
-            
-            prefix = "Kuil" if item_type == "shrine" else "Wihara"
-            proposed_label = f"{prefix} {name}"
-            
-            proposals.append({
-                "qid": qid,
-                "ja_label": ja_label,
-                "en_label": en_label,
-                "romaji": name,
-                "type": item_type,
-                "proposed_label": proposed_label
-            })
-        except Exception as e:
-            print(f"Error processing {qid}: {e}")
+
+        proposed_label, reason = indonesian_label(en_label, item_type)
+        reasons[reason] += 1
+        if not proposed_label:
+            continue
+        proposals.append({
+            "qid": qid,
+            "ja_label": ja_label,
+            "en_label": en_label,
+            "romaji": proposed_label.split(" ", 1)[1],
+            "type": item_type,
+            "proposed_label": proposed_label,
+        })
+
+    print("\nderivation outcomes:")
+    for reason, n in reasons.most_common():
+        print(f"  {n:>6}  {reason}")
 
     # Deterministic order, keyed on the QID.
     #
@@ -166,4 +291,9 @@ def main():
     print(f"Wrote {len(proposals)} proposals to {qs_file}")
 
 if __name__ == "__main__":
+    # Rebound HERE, not inside main(): the determinism tests call main()
+    # directly, and replacing pytest's captured stdout closes it and breaks
+    # every test after this one. Needed at all because the refusal reasons
+    # name Jingū and Taisha, which cp1252 cannot encode.
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     main()

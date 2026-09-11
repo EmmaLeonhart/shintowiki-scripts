@@ -29,11 +29,17 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 
-def _binding(num, ja="三嶋大社"):
+def _binding(num, ja="三嶋神社"):
+    """A row the generator can actually derive from.
+
+    The en label used to be irrelevant here — the label was read off the KANJI
+    with pykakasi, so an empty `enLabel` still produced output. Since 2026-09-11
+    the English label IS the source (Emma: "They should be derived from the
+    proposed English labels"), so a row without one correctly yields nothing and
+    these tests would be asserting against an empty file."""
     return {"item": {"value": "http://www.wikidata.org/entity/Q%d" % num},
             "jaLabel": {"value": ja},
-            "enLabel": {"value": ""},
-            "kanaReading": {"value": "みしま"},
+            "enLabel": {"value": "Mishima Shrine"},
             "type": {"value": "shrine"}}
 
 
@@ -49,6 +55,9 @@ def run_in(tmp_path, monkeypatch):
     def run(rows):
         import generate_indonesian_proposals as gip
         monkeypatch.setattr(gip, "fetch_candidates", lambda: rows)
+        # Isolate from the real staged en-label batches: they are resolved
+        # __file__-relative, so a temp cwd does not hide them.
+        monkeypatch.setattr(gip, "load_en_proposals", lambda: {})
         gip.main()
         return io.open(str(tmp_path / "quickstatements" / "id_proposed.txt"),
                        encoding="utf-8").read()
@@ -95,3 +104,79 @@ def test_the_query_still_has_no_order_by():
     assert not any("ORDER BY" in l for l in code), (
         "query gained an ORDER BY — the writer-side sort is now belt-and-braces; "
         "keep it, and update this test's rationale")
+
+
+# ---- the derivation itself ---------------------------------------------------
+#
+# Emma, 2026-09-10: "the Indonesian labels often appear quite dubious and I'm not
+# sure how they were derived. They should be derived from the proposed English
+# labels for the shrines." The four cases named below were the actual output of
+# the pykakasi-on-kanji derivation and are pinned so it cannot come back.
+
+import generate_indonesian_proposals as gip  # noqa: E402
+
+
+@pytest.mark.parametrize("en,expected", [
+    ("Sasuke Inari Shrine", "Kuil Sasuke Inari"),
+    # "Kuil Genpachi Hata" — pykakasi read 元八幡 as gen-pachi-hata.
+    ("Moto Hachiman", "Kuil Moto Hachiman"),
+    # "Kuil Fujisaki Hachi Hata" — 八旛 read as hachi-hata.
+    ("Fujisaki Hachimangū", "Kuil Fujisaki Hachimangū"),
+    # "Kuil Sueyamajinja" AND "Kuil Tozanjinja" — the same QID twice.
+    ("Tōzan Shrine", "Kuil Tōzan"),
+    # "Kuil Yusuharahachimangu" — no spaces, macron dropped.
+    ("Yusuhara Hachimangū", "Kuil Yusuhara Hachimangū"),
+])
+def test_the_english_label_is_the_source(en, expected):
+    assert gip.indonesian_label(en, "shrine")[0] == expected
+
+
+def test_a_macron_is_kept():
+    """623 of the sampled id labels carry one; `Kuil Ueno Tenmangū` is the corpus
+    form. The old code stripped them."""
+    assert gip.indonesian_label("Ueno Tenmangū", "shrine")[0] == "Kuil Ueno Tenmangū"
+
+
+def test_a_parenthetical_disambiguator_is_kept():
+    """Corpus: 'Ueno Ōji Shrine (Osaka)' -> 'Kuil Ueno Ōji (Osaka)'."""
+    assert (gip.indonesian_label("Ueno Ōji Shrine (Osaka)", "shrine")[0]
+            == "Kuil Ueno Ōji (Osaka)")
+
+
+def test_a_transliterated_suffix_stays_in_the_name():
+    """CLAUDE.md: "The ending is part of the name. 社 ≠ 神社 ≠ 宮." Corpus 1,449
+    against 27."""
+    assert (gip.indonesian_label("Kunōzan Tōshō-gū", "shrine")[0]
+            == "Kuil Kunōzan Tōshō-gū")
+
+
+@pytest.mark.parametrize("en", ["Udo Jingū", "Sumiyoshi Taisha", "Izumo-daijingū"])
+def test_jingu_and_taisha_are_refused(en):
+    """53 `Kuil <whole>` against 46 `Kuil Agung X` is a corpus disagreeing with
+    itself, and the two are different names. Emma's call, not a guess."""
+    assert gip.indonesian_label(en, "shrine")[0] is None
+
+
+def test_no_english_label_produces_nothing():
+    """Reading the kanji instead is what produced "Kuil Genpachi Hata"."""
+    assert gip.indonesian_label("", "shrine")[0] is None
+
+
+def test_forbidden_whitespace_is_folded():
+    """It arrives from the EN label, and tests/test_label_whitespace.py refuses
+    it in any committed batch."""
+    label = gip.indonesian_label("Wakamiya Hachiman Shrine", "shrine")[0]
+    assert label == "Kuil Wakamiya Hachiman"
+    assert " " not in label
+
+
+def test_a_gloss_label_is_refused():
+    """Deriving faithfully from a descriptive English label gives a faithful and
+    still-useless Indonesian one: "Kuil Co-Enshrinement of Ohowano"."""
+    assert gip.indonesian_label(
+        "Co-Enshrinement of Ohowano Shrine (Ronsha 1)", "shrine")[0] is None
+
+
+def test_a_temple_gets_wihara():
+    assert (gip.indonesian_label("Hojuji Temple (Toyonaka City)", "temple")[0]
+            == "Wihara Hojuji (Toyonaka City)")
