@@ -102,7 +102,7 @@ def test_build_lines_dedupes_and_principal_wins():
                                           "天照大御神": _ref(True, "天照大御神")}}
     resolved = {"天照大神": "Q2"}
     matched = {"天照大御神": "Q2"}
-    lines = build_lines(shrine_deities, resolved, matched, have=set(), have_principal=set())
+    lines, _named = build_lines(shrine_deities, resolved, matched, have=set(), have_principal=set())
     assert len(lines) == 1
     assert f'|P825|Q2|P3831|{PRINCIPAL_DEITY_ROLE}|P1932|"天照大御神"|S143|{JA_WIKIPEDIA}|S4656|' in lines[0]
 
@@ -111,7 +111,7 @@ def test_build_lines_skips_existing_general_but_adds_principal_qualifier():
     shrine_deities = {("A", "Q10"): {"d1": _ref(False, "n1"), "d2": _ref(True, "n2")}}
     resolved = {"d1": "Q2", "d2": "Q3"}
     # Q2 general pair already present -> skipped; Q3 principal not yet qualified -> emitted
-    lines = build_lines(shrine_deities, resolved, {},
+    lines, _named = build_lines(shrine_deities, resolved, {},
                         have={("Q10", "Q2"), ("Q10", "Q3")},
                         have_principal=set())
     assert len(lines) == 1
@@ -121,6 +121,71 @@ def test_build_lines_skips_existing_general_but_adds_principal_qualifier():
 def test_build_lines_skips_already_principal_qualified():
     shrine_deities = {("A", "Q10"): {"d2": _ref(True, "n2")}}
     resolved = {"d2": "Q3"}
-    lines = build_lines(shrine_deities, resolved, {},
-                        have={("Q10", "Q3")}, have_principal={("Q10", "Q3")})
+    lines, _named = build_lines(shrine_deities, resolved, {},
+                        have={("Q10", "Q3")}, have_principal={("Q10", "Q3")}, have_named=set(), have_ja_ref=set())
     assert lines == []
+
+
+# ---- P1932 backfill onto existing statements --------------------------------
+#
+# Emma, 2026-09-11, asking whether the script adds object-named-as to deities
+# that already exist: it did not, except as a passenger on the principal-deity
+# upgrade, and only 11 statements were left on that path. "Add where jawiki names
+# it." These pin the three things that decision turns on.
+
+def _one(named="天照皇大御神", principal=False):
+    return {("A", "Q10"): {"d1": _ref(principal, named)}}
+
+
+def test_an_existing_pair_now_gets_its_source_spelling():
+    _new, named = build_lines(_one(), {"d1": "Q3"}, {},
+                              have={("Q10", "Q3")}, have_principal=set(),
+                              have_named=set(), have_ja_ref={("Q10", "Q3")})
+    assert named == ['Q10|P825|Q3|P1932|"天照皇大御神"']
+
+
+def test_no_new_statement_is_created_for_an_existing_pair():
+    """The backfill must not reintroduce what build_lines already refuses: an
+    existing pair never gets a second P825."""
+    new, _named = build_lines(_one(), {"d1": "Q3"}, {},
+                              have={("Q10", "Q3")}, have_principal=set(),
+                              have_named=set(), have_ja_ref={("Q10", "Q3")})
+    assert new == []
+
+
+def test_the_jawiki_reference_rides_along_only_when_there_is_none():
+    """wbsetreference with no hash always writes a NEW reference block, so
+    re-asserting the same jawiki reference on a statement that already carries it
+    would duplicate it or fail the line. A statement with no reference at all gets
+    the spelling and its source together."""
+    _n, with_ref = build_lines(_one(), {"d1": "Q3"}, {},
+                               have={("Q10", "Q3")}, have_principal=set(),
+                               have_named=set(), have_ja_ref=set())
+    assert with_ref == ['Q10|P825|Q3|P1932|"天照皇大御神"|S143|Q177837'
+                        '|S4656|"https://ja.wikipedia.org/wiki/A"']
+
+
+def test_a_pair_that_already_has_p1932_is_left_alone():
+    _n, named = build_lines(_one(), {"d1": "Q3"}, {},
+                            have={("Q10", "Q3")}, have_principal=set(),
+                            have_named={("Q10", "Q3")}, have_ja_ref=set())
+    assert named == []
+
+
+def test_a_brand_new_pair_gets_no_backfill_line():
+    """A pair we are creating carries P1932 on the statement itself; a second
+    line adding the same qualifier would be redundant."""
+    new, named = build_lines(_one(), {"d1": "Q3"}, {},
+                             have=set(), have_principal=set(),
+                             have_named=set(), have_ja_ref=set())
+    assert named == []
+    assert new and "|P1932|" in new[0]
+
+
+def test_a_multi_name_display_is_still_refused_in_the_backfill():
+    """clean_named's rules hold on this path too: a piped display listing several
+    deities is not one source spelling."""
+    _n, named = build_lines(_one(named="表筒男命<br/>中筒男命"), {"d1": "Q3"}, {},
+                            have={("Q10", "Q3")}, have_principal=set(),
+                            have_named=set(), have_ja_ref={("Q10", "Q3")})
+    assert named == []

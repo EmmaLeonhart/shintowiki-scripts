@@ -4,6 +4,54 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-11 — the katakana neither pipeline can reach, and P1932 on deities that already exist
+
+### Q11361262, and 742 like it
+
+Emma: *"This one still has name in kana present with katakana. Idk what's going on with it."*
+
+`下立松原神社` carries the correct `しもたてまつばらじんじゃ`, a leftover top-level `シモタテ-`, and an
+ojp-hani official name whose reading qualifier is `シモタチマツハラノ`. `generate_kana_qualifier_remove.py`
+removes a top-level value only when it is **exactly** the name's qualifier minus `カミノヤシロ` — that
+exactness is deliberate and its own docstring records three 論社 where a loose match would have deleted
+a reading existing nowhere else. This item's qualifier has no suffix at all, so it never enters the
+query. The other pipeline (`generate_katakana_reading_add.py`) excludes any item with an ojp-hani
+`P1448` outright. Reachable by neither.
+
+**742 statements are in that position, and 713 of them carry a hyphen** — they are fragments of a
+longer reading, not names. `report_stuck_katakana_readings.py` sorts them into 26 categories
+(`docs/stuck_katakana_readings.md`), collapsed to eight decision rows on
+`[[Open questions]]` for a per-row ruling, which is what Emma asked for.
+
+The number that matters: **419 are fragments on items with no hiragana and nothing on the official
+name.** For those the value is the only reading the item has, and removing it loses the reading.
+
+**The 90 that ARE removable were already wired.** Checked rather than assumed: they sit in
+`kana_redundant_remove.txt`, which is registered in both submitter lists and regenerated daily in CI,
+and the daily reports show it draining and refilling — `lines_available` 293 → 378 → 74 across
+09-08/09/10. 78 of the current 79 lines are still pending simply because the file competes with
+~4,400 `kana_qualifier_add` lines and everything else for the day's 500 edits. That is the drip
+working, not a stall.
+
+### P1932 on existing deity statements
+
+Emma: *"The script does add the object named as for deities on existing deities right"*. **It did
+not.** `generate_saijin_deity_research.build_lines` emitted nothing at all for a (shrine, deity) pair
+that already existed — `P1932` reached an existing statement only as a passenger on the
+principal-deity upgrade, and only **11** statements were left on that path. Of **15,973** `P825`
+statements on shrines, **770** carried `P1932`.
+
+Her call: *"Add where jawiki names it."* `saijin_named_as.txt` is that, in a separate file so the
+backfill can be paced or stopped without touching the import.
+
+The reference handling is the part worth recording. `wbsetreference` with no hash always writes a
+**new** reference block, so re-asserting the jawiki reference on a statement that already carries it
+would duplicate it or fail the line. Measured: **4,078** existing statements are jawiki-referenced
+and lack `P1932` — those get the qualifier alone; **10,497** have no reference at all — those get the
+spelling and its source together. `clean_named` still refuses a multi-name or parenthetical display,
+so a piped label listing three deities stores nothing rather than junk.
+
+
 ## 2026-09-10 — we were flattening prefecture-specific descriptions into one generic string
 
 Emma: *"we're actively worsening Ukrainian descriptions why is this? Turning descriptive ones into

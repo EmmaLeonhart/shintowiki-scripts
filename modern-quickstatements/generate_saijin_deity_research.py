@@ -59,6 +59,9 @@ WDQS = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 TEMPLATE = "Template:神社"
 OUTPUT = os.path.join(HERE, "saijin_deity_research.txt")
+# P1932 added to P825 statements that ALREADY exist. A separate file so the
+# backfill can be paced, capped or stopped without touching the import.
+NAMED_OUTPUT = os.path.join(HERE, "saijin_named_as.txt")
 
 # P3831 role value marking a principal (主祭神) deity. Q140493995 = 主祭神 /
 # "Primary deity" ("Primary deity of a Shinto shrine", subclass of Q11591100
@@ -319,28 +322,71 @@ def match_names(names):
     return {n: next(iter(q)) for n, q in hits.items() if len(q) == 1}
 
 
+def _pairs(query):
+    return {(b["s"]["value"].rsplit("/", 1)[-1], b["d"]["value"].rsplit("/", 1)[-1])
+            for b in _wdqs(query)}
+
+
 def existing_pairs():
-    """((shrine,deity) with any P825, (shrine,deity) already qualified principal)."""
-    rows = _wdqs("SELECT ?s ?d WHERE { ?s wdt:P31 wd:Q845945 ; wdt:P825 ?d . }")
-    have = {(b["s"]["value"].rsplit("/", 1)[-1], b["d"]["value"].rsplit("/", 1)[-1])
-            for b in rows}
-    rows2 = _wdqs("""SELECT ?s ?d WHERE {
+    """Four sets of (shrine, deity): any P825, already principal-qualified,
+    already carrying P1932, and already referenced to jawiki.
+
+    The last two are what the object-named-as backfill needs. Emma, 2026-09-11:
+    *"Add where jawiki names it."* Measured the same day: of 15,973 P825
+    statements on shrines only 770 carry P1932, 4,078 are jawiki-referenced
+    without one, and 10,497 carry no reference at all."""
+    have = _pairs("SELECT ?s ?d WHERE { ?s wdt:P31 wd:Q845945 ; wdt:P825 ?d . }")
+    principal = _pairs("""SELECT ?s ?d WHERE {
       ?s wdt:P31 wd:Q845945 ; p:P825 ?st . ?st ps:P825 ?d ; pq:P3831 wd:%s . }"""
-                  % PRINCIPAL_DEITY_ROLE)
-    principal = {(b["s"]["value"].rsplit("/", 1)[-1], b["d"]["value"].rsplit("/", 1)[-1])
-                 for b in rows2}
-    return have, principal
+                       % PRINCIPAL_DEITY_ROLE)
+    named = _pairs("""SELECT ?s ?d WHERE {
+      ?s wdt:P31 wd:Q845945 ; p:P825 ?st . ?st ps:P825 ?d ; pq:P1932 ?nm . }""")
+    ja_ref = _pairs("""SELECT ?s ?d WHERE {
+      ?s wdt:P31 wd:Q845945 ; p:P825 ?st . ?st ps:P825 ?d .
+      ?st prov:wasDerivedFrom/pr:P143 wd:%s . }""" % JA_WIKIPEDIA)
+    return have, principal, named, ja_ref
 
 
-def build_lines(shrine_deities, resolved, matched, have, have_principal):
-    """Pure line assembly. shrine_deities: {(title,qid): {key: {principal, named}}}.
+def named_as_line(shrine_qid, deity_qid, named, url, has_ja_ref):
+    """P1932 onto a P825 statement that ALREADY exists.
 
-    key is a jawiki link title or a plain name; resolved/matched map those to QIDs.
-    Deduped by (shrine,deity) QID; principal wins; the principal spelling wins as
-    the P1932 name. Existing pairs are left alone (new statements only) so P1932
-    is never guessed onto a pre-existing statement.
+    Emma, 2026-09-11, asked whether the script adds object-named-as to existing
+    deities: it did not, except as a passenger on the principal-deity upgrade,
+    and only 11 statements were left on that path. *"Add where jawiki names
+    it."*
+
+    A qualifier-bearing line makes `direct_daily_edits` find the existing P825
+    claim and add to it rather than create a second one.
+
+    The jawiki reference rides along ONLY where the statement has none.
+    `wbsetreference` with no hash always writes a NEW reference block, so
+    re-asserting the same jawiki reference on the 4,078 statements that already
+    carry it would either duplicate it or fail the line. Where a statement has no
+    reference at all — 10,497 of them — the spelling and the source it came from
+    belong together, and both go.
     """
-    lines = []
+    named = clean_named(named)
+    if not named:
+        return None
+    ref = "" if has_ja_ref else f'|S143|{JA_WIKIPEDIA}|S4656|"{url}"'
+    return f'{shrine_qid}|P825|{deity_qid}|P1932|"{named.replace(chr(34), "")}"{ref}'
+
+
+def build_lines(shrine_deities, resolved, matched, have, have_principal,
+                have_named=frozenset(), have_ja_ref=frozenset()):
+    """(new_statement_lines, named_as_backfill_lines).
+
+    shrine_deities: {(title,qid): {key: {principal, named}}}; key is a jawiki link
+    title or a plain name, and resolved/matched map those to QIDs. Deduped by
+    (shrine,deity) QID; principal wins; the principal spelling wins as the P1932
+    name.
+
+    An existing pair still never gets a NEW statement. What changed on 2026-09-11
+    is that it can get the P1932 spelling added to the statement it already has,
+    into a SEPARATE file, so the backfill can be paced or stopped on its own
+    without touching the import.
+    """
+    lines, named_lines = [], []
     for (title, qid), refs in sorted(shrine_deities.items()):
         url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
         by_qid = {}
@@ -353,13 +399,17 @@ def build_lines(shrine_deities, resolved, matched, have, have_principal):
             if info["principal"]:
                 e["named"] = info["named"]
         for d, e in sorted(by_qid.items()):
+            if (qid, d) in have and (qid, d) not in have_named:
+                ln = named_as_line(qid, d, e["named"], url, (qid, d) in have_ja_ref)
+                if ln:
+                    named_lines.append(ln)
             if e["principal"]:
                 if (qid, d) in have_principal:
                     continue
             elif (qid, d) in have:
                 continue
             lines.append(qs_line(qid, d, e["principal"], e["named"], url))
-    return sorted(set(lines))
+    return sorted(set(lines)), sorted(set(named_lines))
 
 
 def main():
@@ -368,9 +418,11 @@ def main():
     ap.add_argument("--limit", type=int)
     args = ap.parse_args()
 
-    have, have_principal = existing_pairs()
+    have, have_principal, have_named, have_ja_ref = existing_pairs()
     print(f"{len(have)} existing (shrine,deity) P825 pairs; "
-          f"{len(have_principal)} already principal-qualified")
+          f"{len(have_principal)} already principal-qualified; "
+          f"{len(have_named)} already carry P1932; "
+          f"{len(have_ja_ref)} already referenced to jawiki")
     titles = shrine_titles()
     if args.limit:
         titles = titles[:args.limit]
@@ -428,11 +480,19 @@ def main():
     matched = match_names(all_plain)
     print(f"{len(matched)}/{len(all_plain)} plain names match a unique deity item")
 
-    lines = build_lines(shrine_deities, resolved, matched, have, have_principal)
+    lines, named_lines = build_lines(shrine_deities, resolved, matched, have,
+                                     have_principal, have_named, have_ja_ref)
     principal_n = sum(1 for ln in lines if "|P3831|" in ln)
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
     print(f"{len(lines)} P825 lines ({principal_n} principal-qualified) -> {OUTPUT}")
+
+    with_ref = sum(1 for ln in named_lines if "|S143|" in ln)
+    with open(NAMED_OUTPUT, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(named_lines) + ("\n" if named_lines else ""))
+    print(f"{len(named_lines)} P1932 backfill lines onto existing statements "
+          f"({with_ref} also supplying the missing jawiki reference) "
+          f"-> {NAMED_OUTPUT}")
 
 
 if __name__ == "__main__":

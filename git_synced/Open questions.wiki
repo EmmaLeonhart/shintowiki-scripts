@@ -2,7 +2,38 @@ __NOTOC__
 
 == Open questions ==
 
-''(nothing open. Anything you write here gets answered and then deleted — it is a live channel, not an archive.)''
+=== Katakana P1814 readings neither pipeline can remove — ruling wanted per row ===
+
+'''742''' top-level katakana <code>P1814</code> statements sit on shrines that also carry an
+ojp-hani <code>P1448</code> official name. The カミノヤシロ remover only touches a value that is
+'''exactly''' the name's qualifier minus <code>カミノヤシロ</code>; the other katakana pipeline skips
+any item with an ojp-hani name outright. Anything in between is reachable by neither.
+'''713 of the 742 carry a hyphen''' — they are fragments of a longer reading, not names.
+(<code>Q11361262</code> 下立松原神社 is one: top-level <code>シモタテ-</code>, name qualifier
+<code>シモタチマツハラノ</code>, correct hiragana already present.)
+
+Write a disposition after each arrow. Full per-item tables:
+[https://github.com/EmmaLeonhart/shintowiki-scripts/blob/main/docs/stuck_katakana_readings.md docs/stuck_katakana_readings.md]
+
+{| class="wikitable"
+! n !! ancient reading elsewhere? !! item has hiragana? !! disposition
+|-
+| 76 || confirmed, and the value matches || no || ''already draining — no ruling needed''
+|-
+| 14 || confirmed, and the value matches || yes || ''already draining — no ruling needed''
+|-
+| 43 || confirmed カミノヤシロ on the name || no || →
+|-
+| 17 || confirmed カミノヤシロ on the name || yes || →
+|-
+| 109 || a reading on the name, but unconfirmed || no || →
+|-
+| 13 || a reading on the name, but unconfirmed || yes || →
+|-
+| 51 || '''nothing on the name''' || yes || →
+|-
+| 419 || '''nothing on the name''' || no || → ''(removing these loses the reading entirely — nothing else holds it)''
+|}
 
 == Wiki-based queue ==
 

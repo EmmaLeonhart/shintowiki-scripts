@@ -286,6 +286,13 @@ jobs:
         continue-on-error: true
         run: python generate_katakana_reading_add.py
 
+      # The katakana P1814 values neither pipeline can reach, categorised for a
+      # per-category ruling ([[Open questions]], 2026-09-11). Report only.
+      - name: Report stuck katakana readings
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python report_stuck_katakana_readings.py
+
       # Clears every description off the items named in the generator's TARGETS.
       # Emma hit Wikidata's anti-abuse limiter removing 41 by hand from Q11558526
       # and asked for the pipeline to do it. Self-healing: zero lines once clean.

@@ -9,6 +9,17 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- **Indonesian labels are derived by pykakasi from the KANJI, not from the English label.**
+  Emma 2026-09-10: *"the Indonesian labels often appear quite dubious and I'm not sure how they were
+  derived. They should be derived from the proposed English labels for the shrines."*
+  `shinto-label-generator/generate_indonesian_proposals.py` fetches `?enLabel` and uses it only in a
+  `# Source:` comment; the label itself is `pykakasi(kana or ja_label)` with macrons stripped and
+  `uu/ou/aa/ii/ee` blanket-collapsed. 元八幡 / "Moto Hachiman" ships as `Kuil Genpachi Hata`; 陶山神社 /
+  "Tōzan Shrine" ships twice, as `Kuil Sueyamajinja` AND `Kuil Tozanjinja`. Rebuild it to take the
+  English label — existing on Wikidata, else the proposal from our own en-label files — strip the
+  English shrine/temple word, and emit `Kuil {stem}` / `Wihara {stem}`. Emit NOTHING where no English
+  label exists rather than guessing from kanji. 44,058 current proposals; measure the coverage drop.
+
 - **Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-09-07)**
   Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
 
