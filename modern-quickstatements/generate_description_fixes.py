@@ -2,47 +2,59 @@
 """
 generate_description_fixes.py
 ==============================
-Description-without-label cleanup (Emma 2026-07-07, [[Open questions]]).
+Give a LABEL to every shrine/temple that carries a description in a language it
+has no label in. Label-only — it does not edit descriptions.
 
-Problem: shrines/temples carry a description in language X but no label in X
-(≈10k items; almost all id + uk). A stale description blocks later label adds:
-the label+description pair must be unique, and the description is supposed to
-be the deduplicator. Rule: fix the DESCRIPTION first (standardized form), and
-only then may label-adding QS touch the item.
+## ⭐ The purpose, corrected by Emma 2026-09-11
 
-Method (data-driven, never invented):
-  * per (class, language), the standardized description is inferred from the
-    corpus of EXISTING descriptions on that class's items: the modal generic
-    form, plus a prefecture template ("… di Prefektur {pref}, Jepang"-style)
-    when ≥ PREF_SUPPORT existing descriptions contain the item's own
-    prefecture label — i.e. we reuse the community's own standard form.
-  * a target item (desc@X, no label@X) gets the prefecture form when its
-    prefecture label@X is known, else the generic modal.
-  * if the description ALREADY equals the target form, the description edit is
-    unneeded but the LABEL is not — the item still has no label, which is why it
-    is a target. Such items emit a LABEL-ONLY line.
+*"the Ukrainian descriptions are being updated in a bad way that seems to
+indicate a lack of understanding of the purpose, descriptions should not be being
+edited either way really. The emergency stuff was intended to rapidly apply
+labels to things with orphaned descriptions to see how much actual description
+changes were needed."*
 
-    ⚠ Fixed 2026-08-21. That branch used to `continue`, dropping the label with
-    the unneeded description edit, and it had silently stranded every Indonesian
-    target: Emma's own 2025 bot pass had already standardized those descriptions
-    to "kuil Shinto di Prefektur {pref}, Jepang", so `new == desc` held for all
-    5,024 of them and they were counted "already-standard" and skipped on every
-    run since. Ukrainian was never standardized, which is why uk produced 3,513
-    pairs and id produced nothing. The report now separates `no-template`,
-    `already-standard` and `label-only` so this cannot hide in one counter again.
+An **orphan description** — a description in language X on an item with no label
+in X — is actively harmful, because Wikidata's uniqueness constraint is on the
+(label, description) PAIR, so the description is occupying the slot and costing
+the item a label (`docs/description_label_policy.md`). **Supplying the label is
+the fix.** The description is then no longer an orphan, and whether it ALSO needs
+rewriting is a separate question that can only be answered once the labels are
+in — which is what "to see how much actual description changes were needed"
+means.
 
-Each output unit is the full PAIR Emma specified — "change description, then
-add label" — as ONE compound line (sub-lines joined by "||", executed
-sequentially by direct_daily_edits; the label half is skipped if the
-description edit fails). The label comes from the shinto-label-generator
-proposal files (id_proposed.txt, uk.txt, …); items with no proposed label
-get a desc-only line, and the label pipelines pick them up later.
+**13,099 orphan descriptions remained on 2026-09-11** (7,216 shrines, 5,883
+temples). That is the number this pipeline exists to bring down.
 
-Output: description_label_pairs.txt — `Qxxx|Dxx|"…"||Qxxx|Lxx|"…"` compound
-lines, plus bare `Qxxx|Lxx|"…"` label-only lines where the description is
-already correct (capped ~100/day in direct_daily_edits via FILE_DAILY_CAPS).
-Every label, in either shape, goes through the same (label, description)
-uniqueness check — a label-only line forms a pair the moment it lands.
+## ⛔ It used to rewrite the description too, and that was the defect
+
+Each unit was a compound `Qxxx|Dxx|"…"||Qxxx|Lxx|"…"` — standardise the
+description, then add the label — with the standard form inferred from the corpus
+per (class, language). Two things were wrong with it, in increasing order of
+importance:
+
+  1. The inference could not match a prefecture label through an inflected or
+     differently-cased description, so nine languages fell to a single generic
+     modal and **208 prefecture-specific descriptions were flattened into one
+     duplicative string** before Emma caught it (DEVLOG 2026-09-10).
+  2. More fundamentally, **the description edit was never the point.** It was
+     there to unblock the label, and the label lands without it: the
+     (label, description) uniqueness check below is what handles the constraint,
+     by WITHHOLDING a label that would collide rather than by rewriting the
+     description to make room.
+
+So the description is now read for exactly one reason — to form the pair that the
+uniqueness check tests — and never written. The template inference, the
+prefecture resolution and the downgrade guard are all deleted with the
+description half; a guard for a thing that no longer happens is just more code.
+
+Labels come from the shinto-label-generator proposal files (`id_proposed.txt`,
+`uk.txt`, …). An item with no proposed label yields nothing and waits for the
+label pipelines.
+
+Output: description_label_pairs.txt — bare `Qxxx|Lxx|"…"` label lines (capped
+~100/day in direct_daily_edits via FILE_DAILY_CAPS). Colliding labels are
+withheld into description_pair_collision_groups.json for the cloud enrichment
+pipeline.
 """
 import io
 import json
@@ -52,7 +64,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
-from collections import Counter, defaultdict
+from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -90,8 +102,6 @@ CLASSES = [
     ("Q845945", ""),                                   # Shinto shrine
     ("Q5393308", "?item wdt:P17 wd:Q17 ."),            # Buddhist temple (Japan)
 ]
-PREF_SUPPORT = 5      # min corpus descriptions containing the prefecture label
-GENERIC_SUPPORT = 3   # min corpus frequency for the generic modal form
 
 
 def sparql(query, retries=3):
@@ -140,13 +150,13 @@ def langs_with_targets(cls, extra):
 
 
 def corpus_and_targets(cls, extra, lang):
-    """{qid: (desc, has_label, pref_label_or_None)} for every item of cls with desc@lang.
+    """{qid: (desc, has_label, None)} for every item of cls with a desc@lang.
 
-    Split into cheap queries — the single joined query with OPTIONAL wdt:P131*
-    504'd on the 5k-item languages (2026-07-07):
-      1. items + desc + has-label flag (no prefecture);
-      2. the 47 prefecture labels@lang (for template inference by substring);
-      3. per-item prefecture ONLY for the label-less targets, in VALUES batches.
+    One cheap query. It used to run a second and third — the 47 prefecture labels
+    and then each target's own prefecture in VALUES batches of 150 — to fill a
+    description template. With the description half gone there is nothing to fill,
+    so those round trips are gone too; the third element stays only so the tuple
+    shape does not churn for callers.
     """
     q = f"""
     SELECT ?item ?d ?hasLabel WHERE {{
@@ -159,118 +169,7 @@ def corpus_and_targets(cls, extra, lang):
     for b in sparql(q):
         qid = b["item"]["value"].rsplit("/", 1)[-1]
         out[qid] = (b["d"]["value"], b["hasLabel"]["value"] == "true", None)
-    time.sleep(WDQS_THROTTLE)
-    targets = [q_ for q_, (_, has, _p) in out.items() if not has]
-    for i in range(0, len(targets), 150):
-        batch = " ".join(f"wd:{x}" for x in targets[i:i + 150])
-        pq = f"""
-        SELECT ?item ?prefLabel WHERE {{
-          VALUES ?item {{ {batch} }}
-          ?item wdt:P131* ?pref . ?pref wdt:P31 wd:Q50337 ;
-                rdfs:label ?prefLabel . FILTER(LANG(?prefLabel) = "{lang}")
-        }}
-        """
-        for b in sparql(pq):
-            qid = b["item"]["value"].rsplit("/", 1)[-1]
-            d, has, _ = out[qid]
-            out[qid] = (d, has, b["prefLabel"]["value"])
-        time.sleep(WDQS_THROTTLE)
     return out
-
-
-def pref_labels(lang):
-    """The 47 prefecture labels in this language (for template inference)."""
-    q = f"""
-    SELECT ?prefLabel WHERE {{
-      ?pref wdt:P31 wd:Q50337 ; rdfs:label ?prefLabel .
-      FILTER(LANG(?prefLabel) = "{lang}")
-    }}
-    """
-    return [b["prefLabel"]["value"] for b in sparql(q)]
-
-
-def pref_keys(prefs):
-    """{distinctive place-name -> full prefecture label}, for substring matching.
-
-    ⛔ THE WHOLE PREFECTURE TEMPLATE USED TO FAIL IN ANY INFLECTING LANGUAGE, and
-    it failed silently, by falling back to the generic modal.
-
-    Matching used the FULL label as a substring. Ukrainian labels these items
-    "Префектура Наґано" (nominative) and writes descriptions "…у префектурі
-    Наґано, Японія" (locative), so `"Префектура Наґано" in desc` is False for
-    every one of the 47. No prefecture form was ever inferred for uk, every uk
-    target fell to the generic `синтоїстське святилище в Японії`, and 216 items
-    had a prefecture-specific description REPLACED by that identical string
-    before Emma caught it on 2026-09-10. Indonesian's "Prefektur Nagano" does not
-    decline, which is exactly why id worked and uk did not, and why the bug
-    looked like a uk-only oddity rather than a design fault.
-
-    The fix is to match on the part that does NOT inflect. The generic word
-    ("Префектура", "Prefektur", "Prefecture") appears in every one of the 47
-    labels and is the part that declines; the Japanese place-name does not appear
-    in any other label and does not decline. So the shared tokens are dropped and
-    what is left is the key.
-
-    Derived from the label set itself rather than a per-language stopword list,
-    so it needs no maintenance as languages are added.
-    """
-    spans = {p: list(re.finditer(r"\w+", p)) for p in prefs if p}
-    if not spans:
-        return {}
-    freq = Counter(t for ms in spans.values() for t in {m.group() for m in ms})
-    # A token in most of the 47 labels is the generic word, not a place name.
-    common = {t for t, n in freq.items() if n >= max(2, 0.6 * len(spans))}
-    keys = {}
-    for label, ms in spans.items():
-        # Capitalised AND not shared. The capitalisation test is what removes an
-        # elision particle: French labels the item "préfecture d'Okayama", and a
-        # frequency test alone leaves the "d" (it is in only the vowel-initial
-        # labels, well under the threshold). Joining the surviving tokens with a
-        # space then produced the key "d Okayama", which is not a substring of
-        # anything, and filling the template with it emitted "bâtiment de d
-        # Okayama, Japon". Place-names are capitalised in every language sampled,
-        # Ukrainian and Czech included.
-        picked = [m for m in ms if m.group() not in common and m.group()[:1].isupper()]
-        if not picked:
-            # No capitalised survivor: fall back to the frequency test alone, for
-            # a language that does not capitalise its place-names.
-            picked = [m for m in ms if m.group() not in common]
-        if not picked:
-            continue
-        # Slice the ORIGINAL label between the first and last survivor rather than
-        # re-joining tokens, so internal punctuation and spacing are whatever the
-        # label really has and the key is always a real substring of it.
-        key = label[picked[0].start():picked[-1].end()]
-        if key:
-            keys.setdefault(key, label)
-    return keys
-
-
-def infer_templates(items, keys):
-    """(pref_template_or_None, generic_or_None) from existing descriptions.
-
-    Prefecture detection is by substring against the DISTINCTIVE place-name of
-    each of the 47 prefecture labels (see pref_keys) — no per-item P131 needed
-    for the corpus. The template therefore keeps whatever inflected form of the
-    generic word the description used, and `{pref}` carries the place-name
-    alone."""
-    ordered = sorted(keys, key=len, reverse=True)
-    pref_forms, generic = Counter(), Counter()
-    for desc, _has, _pref in items.values():
-        hit = next((k for k in ordered if k and k in desc), None)
-        if hit:
-            pref_forms[desc.replace(hit, "{pref}")] += 1
-        else:
-            generic[desc] += 1
-    gen = next((d for d, n in generic.most_common(1) if n >= GENERIC_SUPPORT), None)
-    # The prefecture template must BEAT the generic modal, not just clear an
-    # absolute floor: a handful of polluted legacy descriptions ("kuil Shinto"
-    # stamped on Buddhist temples) collapse into one {pref} form and would
-    # otherwise outrank a clean 23-strong generic (found 2026-07-07).
-    gen_n = generic.most_common(1)[0][1] if gen else 0
-    pref_t = next((t for t, n in pref_forms.most_common(1)
-                   if n >= PREF_SUPPORT and n >= gen_n), None)
-    return pref_t, gen
 
 
 def existing_pairs(cls, extra, lang):
@@ -317,134 +216,51 @@ def main():
                 continue
             items = corpus_and_targets(cls, extra, lang)
             time.sleep(WDQS_THROTTLE)
-            keys = pref_keys(pref_labels(lang))
-            # {full label -> distinctive key}: corpus_and_targets stores the full
-            # prefecture label per item, but the template's {pref} slot now holds
-            # the place-name alone, so the item's label is translated at fill time.
-            key_of = {label: key for key, label in keys.items()}
-            pref_t, gen = infer_templates(items, keys)
-            if not (pref_t or gen):
-                report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
-                continue
-            # Build proposals, then apply the uniqueness rule to the LABEL half
-            # of each pair: the post-edit (label, desc) must be unique both
-            # within our proposals and against existing pairs. Description-only
-            # fixes are always safe (an item without a label forms no pair);
-            # colliding units are emitted desc-only and their label withheld
-            # into the collision groups for the cloud enrichment pipeline.
-            time.sleep(WDQS_THROTTLE)
+            # The uniqueness rule, which is the ONLY thing the description is
+            # consulted for now: the post-edit (label, description) pair must be
+            # unique both within our own proposals and against pairs already on
+            # Wikidata. A colliding label is WITHHELD into the collision groups
+            # for the cloud enrichment pipeline rather than forced.
             taken = existing_pairs(cls, extra, lang)
-            units = []   # (qid, desc_line, label_or_None, new_desc)
-            fixed = skipped = already_standard = label_only = 0
-            for qid, (desc, has_label, pref) in sorted(items.items()):
+            units = []   # (qid, label, existing_desc)
+            no_proposal = 0
+            for qid, (desc, has_label, _pref) in sorted(items.items()):
                 if has_label:
                     continue
-                pref_key = key_of.get(pref) if pref else None
-                new = (pref_t.replace("{pref}", pref_key)
-                       if (pref_t and pref_key) else gen)
-                if not new:
-                    skipped += 1
+                label = proposals.get((qid, lang))
+                if not label:
+                    no_proposal += 1
                     continue
-                # ⛔ NEVER REPLACE A MORE SPECIFIC DESCRIPTION WITH THE GENERIC.
-                #
-                # Emma, 2026-09-10: "we're actively worsening Ukrainian
-                # descriptions ... turning descriptive ones into generic highly
-                # duplicative ones." Q100902082 lost "Синтоїстське святилище у
-                # префектурі Наґано, Японія" and got "синтоїстське святилище в
-                # Японії" — the same string 3,509 other queued lines carried.
-                #
-                # The template fix above is what stops this arising in uk, but the
-                # rule has to hold whatever the template inference does, because
-                # this is the shape of the damage: the proposal is the generic
-                # modal, and the item already carries its own prefecture. A
-                # description naming the prefecture is strictly more use than one
-                # that does not, and the whole point of a description here is to
-                # be the deduplicator for the (label, description) pair.
-                #
-                # This is NOT a guard against doing the work. The label half — the
-                # reason the item is a target at all — still goes out, via the
-                # label-only unit below.
-                # The test is on the DESCRIPTION, not on whether we resolved this
-                # item's own prefecture. Requiring `pref_key` left a hole exactly
-                # where the data is thinnest: an item whose P131 chain or whose
-                # prefecture label in this language does not resolve gets
-                # `pref_key = None`, and would then have its perfectly good
-                # prefecture-naming description flattened anyway. Seven languages
-                # still infer no template at all (nl, it, es, pl, cs, ca, vi --
-                # too few corpus descriptions to clear PREF_SUPPORT), so for those
-                # EVERY proposal is the generic and this test is the only thing
-                # standing between them and the same damage.
-                had_pref = next((k for k in sorted(keys, key=len, reverse=True)
-                                 if k and k in desc), None)
-                if had_pref and had_pref not in new:
-                    already_standard += 1
-                    units.append((qid, None, proposals.get((qid, lang)), desc))
-                    continue
-                if new == desc:
-                    # The description is ALREADY the standardized form -- but the item
-                    # still has no label, which is the entire reason it is a target here.
-                    #
-                    # This branch used to `continue`, which dropped the LABEL along with
-                    # the unneeded description edit. Found 2026-08-21: it had silently
-                    # stranded every Indonesian target. Emma's own 2025 bot pass had
-                    # already standardized those descriptions to "kuil Shinto di Prefektur
-                    # {pref}, Jepang" -- so `new == desc` for all 5,024 of them, and they
-                    # were counted as "already-standard" and skipped on every run since.
-                    # Ukrainian was never standardized, which is why uk got its 3,513
-                    # pairs and id got nothing at all.
-                    #
-                    # A desc-only "fix" is what is unneeded; the label is not. Emit a
-                    # LABEL-ONLY unit, and let it through the identical uniqueness check
-                    # below -- once the label lands it forms a (label, description) pair
-                    # like any other, so it must be checked like any other.
-                    already_standard += 1
-                    units.append((qid, None, proposals.get((qid, lang)), desc))
-                    continue
-                esc = new.replace('"', '""')
-                units.append((qid, f'{qid}|D{lang}|"{esc}"',
-                              proposals.get((qid, lang)), new))
+                units.append((qid, label, desc))
+
             by_pair = defaultdict(list)
-            for u in units:
-                if u[2]:
-                    by_pair[(u[2], u[3])].append(u[0])
+            for qid, label, desc in units:
+                by_pair[(label, desc)].append(qid)
             withheld = 0
-            for qid, desc_line, label, new in units:
-                unit = desc_line
-                if label:
-                    pair = (label, new)
-                    if len(by_pair[pair]) > 1 or pair in taken:
-                        withheld += 1
-                        collisions.append({"lang": lang, "class": cls, "label": label,
-                                           "proposed": new, "items": by_pair[pair],
-                                           "external": pair in taken})
-                        label = None
-                parts = []
-                if desc_line:
-                    parts.append(desc_line)
-                if label:
-                    lesc = label.replace('"', '""')
-                    parts.append(f'{qid}|L{lang}|"{lesc}"')
-                if not parts:
-                    # Description already standard AND the label withheld as colliding:
-                    # genuinely nothing to do for this item on this pass.
+            for qid, label, desc in units:
+                pair = (label, desc)
+                if len(by_pair[pair]) > 1 or pair in taken:
+                    withheld += 1
+                    collisions.append({"lang": lang, "class": cls, "label": label,
+                                       "proposed": desc, "items": by_pair[pair],
+                                       "external": pair in taken})
                     continue
-                lines.append("||".join(parts))
-                fixed += 1
-                if not desc_line:
-                    label_only += 1
-            report.append(f"{cls} {lang}: targets={counts[lang]} fix-lines={fixed} "
-                          f"(label-only={label_only}) no-template={skipped} "
-                          f"already-standard={already_standard} label-withheld={withheld} "
-                          f"pref_template={bool(pref_t)}")
+                lesc = label.replace('"', '""')
+                lines.append(f'{qid}|L{lang}|"{lesc}"')
+            report.append(f"{cls} {lang}: targets={counts[lang]} "
+                          f"label-lines={len(units) - withheld} "
+                          f"no-proposed-label={no_proposal} label-withheld={withheld}")
+            time.sleep(WDQS_THROTTLE)
+
+    for line in report:
+        print(f"  {line}")
     lines = sorted(set(lines))
-    with open(GROUPS, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(collisions, f, ensure_ascii=False, indent=1)
-    print(f"{len(collisions)} withheld-label collision entries -> {GROUPS}")
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
-    print(f"{len(lines)} description-fix lines -> {OUT}")
-    for r in report:
-        print(" ", r)
+    print(f"\n{len(lines)} LABEL lines -> {OUT}")
+    with open(GROUPS, "w", encoding="utf-8") as f:
+        json.dump(collisions, f, ensure_ascii=False, indent=1, sort_keys=True)
+    print(f"{len(collisions)} withheld labels -> {GROUPS}")
 
 
 if __name__ == "__main__":

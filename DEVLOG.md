@@ -4,6 +4,54 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-11 — descriptions are not the deliverable; the label is
+
+Emma: *"the Ukrainian descriptions are being updated in a bad way that seems to indicate a lack of
+understanding of the purpose, descriptions should not be being edited either way really. The
+emergency stuff was intended to rapidly apply labels to things with orphaned descriptions to see how
+much actual description changes were needed, idk how many orphaned descriptions actually exist
+now."*
+
+**13,099 orphan descriptions remain** — 7,216 shrines, 5,883 temples. That is the number the pipeline
+exists to bring down, and it is brought down by adding LABELS.
+
+### I had the purpose backwards, twice
+
+An orphan description costs the item a label, because the uniqueness constraint is on the (label,
+description) PAIR. **Supplying the label is the fix.** The description rewrite was only ever a means
+to unblock the label — and the label lands without it, because the uniqueness check WITHHOLDS a
+colliding label rather than rewriting the description to make room.
+
+So the compound `Qxxx|Dxx|"…"||Qxxx|Lxx|"…"` unit is gone. `generate_description_fixes.py` is
+label-only: the description is read for exactly one purpose, to form the pair the uniqueness check
+tests, and never written.
+
+**And `generate_description_restores.py` is deleted.** I built it the day before to undo the
+flattening, and it was 1,433 more description edits — the same mistake in the other direction. Its
+output, its registration in both submitter lists, its CI step and its tests are gone with it.
+
+Deleted along with the description half, because a guard for something that no longer happens is
+just more code to mislead someone: `infer_templates`, `pref_keys`, `pref_labels`, `_common_affixes`,
+the downgrade guard, and `corpus_and_targets`' per-item prefecture resolution — the last of which was
+two extra SPARQL round trips per class and language, in VALUES batches of 150, purely to fill a
+template that no longer exists.
+
+`tests/test_descriptions_are_not_edited.py` is what stops either path coming back: it scans every
+registered batch for a `Dxx` line and reads the generator's source for the emit shape.
+
+### Three description-writing paths exist; two are left running and raised rather than killed
+
+`description_adds.txt` adds a description to an item that HAS a label in that language and no
+description — step 3 of `docs/description_label_policy.md`, capped until January 2027, and it cannot
+overwrite anything because its selector requires the description to be absent.
+`description_enrichment_en.txt` supplies a unique English description for a collision group so that a
+label CAN land. Neither is the flattening she was describing, and both are documented policy, so they
+are flagged for her ruling instead of being removed on my reading of "either way really".
+
+`description_removals.txt` stays: she named `Q11558526` and `Q17128375` and asked for every
+description cleared off them.
+
+
 ## 2026-09-11 — the generators that create statements but never enrich them
 
 Emma, after the deity `P1932` backfill: *"Are there any other, like, sort of updating things that
