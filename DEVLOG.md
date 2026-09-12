@@ -4,6 +4,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the Sutra / papers drip removed: 10 pending edits that will now not happen
+
+Emma, on `Q140568870` (her researcher item), the two paper items and `Sutra` `Q140570154`:
+*"Those are kind of remnants of an earlier strategy that I had that basically isn't running anymore,
+but I want to know… what amount of editing is actually gonna be done on those pages."* Measured
+first, removed on her answer.
+
+### What was actually left
+
+| file | queued | landed | pending |
+|---|---:|---:|---:|
+| `sutra_profile.txt` | 18 | 9 | **9** |
+| `sutra_label_rename.txt` | 3 | 2 | **1** |
+| `sequential_misc.txt` (2 of its 66) | 2 | 2 | 0 |
+| `task3_cites_existing.txt` | 243 | **243** | 0 |
+
+So **10 edits** across the whole surface, and `task3` — 243 `P2860` citations across 16 of her paper
+items — was already fully landed and inert. The rename was two thirds done: the item's `mul` label is
+already `Sutra` with `S2` as an alias, and only the `P4970` line remained.
+
+The 9 on `sutra_profile.txt` were running at its 1/day cap, so this was ~9 more days of drip:
+`P921` main-subject, `P571` inception, `P1547`, two `P101` field-of-work, two `P800` notable-work,
+and two `P6262` Fandom links.
+
+### Removed
+
+`sutra_profile.txt`, `sutra_label_rename.txt`, `task3_cites_existing.txt`, `sutra_gate.py` (the
+timed gate built for her 2026-07-16 *"you should actually run this autonomously"*), the three
+`ATOMIC_FILES` registrations and the `FILE_DAILY_CAPS` entries in `direct_daily_edits.py`, its
+`import sutra_gate` and the gate branch in `read_all_lines`, the `submit_daily_batch.py`
+registration, and the `sutra_profile.txt` line in `docs/wikidata-completion-estimate.md`.
+
+**Nothing on Wikidata is touched.** The 13 statements that already landed stay.
+
+⚠ **`sequential_misc.txt` is deliberately NOT edited.** Its two lines for these items sit behind the
+cursor and have already executed, and the file's own rules are append-only, never insert or reorder
+an executable line — deleting lines would move every line under the cursor. It cannot re-fire them.
+
+Both submitters import cleanly; 2,083 passed, 5 skipped.
+
+
 ## 2026-09-12 — I deleted the address-citation backfill against Emma's own criterion, and put it back
 
 Emma flagged it: *"the script appears to be adding references to existing street addresses… I'm

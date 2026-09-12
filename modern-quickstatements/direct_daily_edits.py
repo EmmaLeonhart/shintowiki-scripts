@@ -28,7 +28,6 @@ import time
 import requests
 
 import conflict_gate
-import sutra_gate
 
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = WIKIDATA_USER_AGENT
@@ -120,11 +119,8 @@ ATOMIC_FILES = [
     "category_label_fixes.txt",
     "doujou_address_fixes.txt",
     "shinto_honorifics.txt",                  # Emma 2026-07-16: "a pipeline that actively creates quick statements that go into the queue that get constantly generated and inferred based off of the labels and aliases in Japanese". P1035 honorific suffix on kami + ONE P1813 short name (ja label minus the honorific) with the romaji as a P2440 qualifier + P21=Q24238356 (unknown) / P569=novalue ONLY where absent. The suffix set is data-driven from P31=Q137169543, so a new honorific item self-registers with no code change. Romaji is taken from the item's OWN en label, NEVER transliterated (Emma: "You absolutely should not, in fact, be trying to translate... it reads wrong"). Compounds/groups/label-conflicts go to shinto_honorifics_judgement.txt for Emma instead, never to the drip. ADD-only, self-healing (generate_shinto_honorifics.py).
-    "task3_cites_existing.txt",                # TASK 3 half A: P2860 from Emma's 37 papers to cited papers that ALREADY exist on Wikidata. 244 lines, pure add, no creation — order-independent, so genuinely atomic. Every target was existence-checked by DOI (P356) / arXiv (P818) first; 178 of 593 candidates were already there, and skipping that check is what made 5 duplicate papers on 2026-07-15. NOTE this file is a STATIC snapshot, not CI-regenerated like its neighbours, so it is not self-healing in their sense — it stays safe because execute_line() already refuses a claim that exists ("Skipped (already exists)"), so re-running it is a no-op rather than a duplicate. It simply goes inert once the statements land, whether from the drip or from Emma's own QS run of the same batch. Emma took the links and DECLINED the 415 creations (2026-07-16: "Don't create them — links only", "I'm still not mass creating"); regenerate both halves with wikidata-review/scripts/build_task3_cited_papers.py if that ever changes.
     "kami_parent_qualifiers.txt",             # Emma 2026-07-16, from the ontology census: on <parent> P40 <child>, the P25/P22 qualifier names the child's OTHER parent — and the child's own item already records it, so this is a JOIN over existing data, not an inference. "I believe we can do this pretty programmatically, and this is super easy to run, and it is valuable." Refuses blank-node (somevalue) parents and children naming >1 father/mother. ADD-only, self-healing (generate_kami_parent_qualifiers.py).
     "shinto_short_names.txt",               # STAGE 2 of the honorific pipeline (generate_shinto_short_names.py). Reads the P1035 that shinto_honorifics.txt (stage 1) has ALREADY landed, and only then adds the short name P1813 (ja label minus the honorific the item actually carries) + P2440 romaji qualifier + P21=Q24238356 / P569=novalue where absent. Emma 2026-07-16: "it's a stateful thing where the short name isn't even added until the honorific is known" — the pipeline is path-dependent and long-term, "it might take months for an edit to fully finish because it goes in based off of one thing, and then that thing's added. Another query catches it and then starts adding the required whatever's to it." So this file is SMALL at first and grows as stage 1 drips in. ADD-only, self-healing.
-    "sutra_label_rename.txt",               # Emma 2026-07-25 (QS source): "LABEL CHANGING: MUST BE DONE ALL AT ONCE ON JULY 30 if item exists". The 3-line S2->Sutra rename (alias mul "S2", label mul "Sutra", P4970 "S2"), split out of sutra_profile.txt because a 1/day drip would leave Q140570154 visibly half-renamed for two days. Capped at 3 so all three land in the first run after sutra_gate opens; same gate as sutra_profile.txt.
-    "sutra_profile.txt",                    # Emma 2026-07-16: "you should actually run this autonomously... a daily one edit... at a random point in our edit scheme". The Sutra item (Q140570154) + her researcher item (Q140568870) from wikidata-review/sutra-and-profile-quickstatements.txt. Capped to 1 line/day below and gated by sutra_gate.py (2-week settle from 2026-07-30 + her "#if this one is unmolested" existence check on Q140570154). Her ⚠ UNSURE social-media block (LinkedIn/X/GitHub/Substack) is deliberately EXCLUDED — she held it for a strategic descriptor discussion that has not happened.
     "address_citation_backfill.txt",
     "label_proposals_drip.txt",
     "kana_qualifier_add.txt",
@@ -190,19 +186,6 @@ ATOMIC_FILES = [
 # fixes/day, randomly interspersed, no separate queue).
 FILE_DAILY_CAPS = {
     "description_label_pairs.txt": 100,
-    # Emma 2026-07-16: "a daily one edit to the entry or one of the quick statements
-    # ... at a random point in our edit scheme". ONE line/day, deliberately: the
-    # Sutra/profile page is built up slowly rather than landing as a single
-    # self-promotional burst (sutra-page-plan.md). Gated by sutra_gate on top.
-    "sutra_profile.txt": 1,
-    # Emma 2026-07-25, in the QS source: "LABEL CHANGING: MUST BE DONE ALL AT ONCE
-    # ON JULY 30 if item exists". The alias/label/P4970 rename is NOT drip-safe —
-    # at 1 line/day the item sits for two days half-renamed (label moved to
-    # "Sutra" with no "S2" alias yet, or vice versa), which is exactly the
-    # visible-in-progress state the rename trick exists to avoid. Split into its
-    # own file with a cap of 3 so all three land in the first run after
-    # sutra_gate opens (START_DATE = 2026-07-30).
-    "sutra_label_rename.txt": 3,
 }
 # Description ADDS are capped until January 2027 so descriptions don't become
 # the dominant edit type while other backlogs drain (Emma 2026-07-07); the cap
@@ -315,14 +298,6 @@ def read_all_lines():
     for filepath in ATOMIC_FILES:
         if not os.path.exists(filepath):
             continue
-        if filepath in ("sutra_profile.txt", "sutra_label_rename.txt"):
-            # Two extra gates: the 2-week settle, and Emma's "#if this one is
-            # unmolested" existence check on the Sutra item. Fails closed.
-            ok, why = sutra_gate.is_open()
-            if not ok:
-                print(f"  {filepath} SKIPPED — {why}")
-                continue
-            print(f"  {filepath} {why}")
         with open(filepath, "r", encoding="utf-8") as f:
             file_lines = [l.strip() for l in f if l.strip()]
         cap = FILE_DAILY_CAPS.get(filepath)

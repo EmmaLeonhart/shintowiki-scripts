@@ -24,7 +24,7 @@ import pytest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MQ = os.path.dirname(HERE)
-# The submitter imports sibling modules (conflict_gate, sutra_gate) by bare name,
+# The submitter imports sibling modules (conflict_gate) by bare name,
 # so the package dir has to be importable — same shape as the drift-guard test.
 sys.path.insert(0, MQ)
 
