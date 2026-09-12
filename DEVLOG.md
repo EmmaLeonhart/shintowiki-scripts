@@ -4,6 +4,51 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the lead's bolded title is the name: 8 proposals become 12, and Take Shrine is right
+
+The entry below removed two evidence paths after `[[Take Shrine]]` resolved wrongly through each. The
+name was in the page the whole time, in the most ordinary place there is — the canonical MediaWiki
+lead, bolded page title then native name in parentheses:
+
+    '''Take Shrine''' (多家神社) is a Shinto shrine…
+
+Adding it, gated the same way as `{{Nihongo}}` (the **bold** must be this page's own title), takes the
+worklist from 8 resolutions to **12**, and `[[Take Shrine]]` now lands on **`Q11430665`**, whose
+English label is "Take Shrine" and whose description is *"Shinto shrine in Hiroshima Prefecture,
+Japan"* — the page's own subject, after two wrong answers.
+
+### Measured before it was written, this time
+
+Having widened the extractor twice today and been wrong twice, the rule was measured across the whole
+refused set first:
+
+| | |
+|---|---:|
+| refused pages | 50 |
+| carrying the bolded page title + a parenthesised CJK name in the lead | **16** |
+| of those, names that are jawiki sitelinks | **4** |
+| of those 4, subjects that check out | **4** |
+
+多家神社 → Q11430665 (Hiroshima shrine), 瀧原宮 → Q11566292 (Mie shrine), 修養団捧誠会 → Q11386384 and
+大和教団 → Q11433469 (both Japanese new religions). Every one carries an English label equal to the
+page title, which is independent corroboration the rule never asked for.
+
+The other 12 of the 16 state a name that is a sitelink of nothing — 大祖教, 世界平和教団, 四大道,
+神道親導教, 滄海窓問答 — which is the right answer for shintowiki-unique subjects, not a shortfall.
+
+### Why this one is safe when the last two were not
+
+The two removed sources never claimed identity: our staged en labels are names **we** invented, and a
+mid-prose `{{Nihongo}}` names whatever term the sentence is about. The lead bold is the page asserting
+its own title, so requiring it to equal the title is asking the page to agree with itself. Same gate,
+sound premise.
+
+**12 of 58 resolved.** The applier is unchanged and still re-reads every page before writing.
+
+⚠ Shipped in `23faf579` without this entry: the script writing it hit a quoting error and the commit
+went ahead anyway. Added here a commit late.
+
+
 ## 2026-09-12 — [[Take Shrine]] resolved wrongly twice, and both evidence paths are gone
 
 Checked the 9 proposed QIDs against the actual Wikidata items before the applier writes them
