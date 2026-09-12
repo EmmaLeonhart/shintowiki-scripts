@@ -4,6 +4,55 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the one conformity figure nothing was draining: 502 ronsha role qualifiers staged
+
+The conformity table had three numbers flat since July. Two of them are drip-limited rather than
+stalled — `P361`/`P1545` have 5,069 + 2,115 + 793 + 57 lines queued against them. The third had
+**nothing**: `grep -c "|P2868|"` across every atomic file in `modern-quickstatements/` returned zero,
+which is why it read *1,613 of 2,058* on both 2026-07-28 and 2026-09-12, identical to the statement.
+
+`generate_ronsha_role_qualifiers.py` fills it. 502 qualifier-only lines into
+`ronsha_role_qualifiers.txt`, registered in `direct_daily_edits.py`.
+
+### The value is read off the item's own type, not off a frequency
+
+Of the 1,613 statements already carrying the qualifier, **1,611 use `Q135022904`** — the same QID as
+the item's own `P31` — and 2 use `Q135026601` (Shikinai Hiteisha), which is a *denied* identification
+rather than a disputed one and is an inconsistency in existing data, not a pattern to copy. So the
+emitted role is not a majority vote; for an item typed Ronsha it restates what its own `P31` says.
+CLAUDE.md's `n/a`-vs-`0` lesson is the reason that distinction is drawn out loud: measure what a value
+MEANS, not how often it occurs.
+
+### The guard is inherited, not invented
+
+`P31` is not exclusive. `generate_ronsha_ojp_name_removals.py` already documents that items typed
+BOTH `Q135022904` and `Q135038714` (Disputed Shikinaisha) are Engishiki **entries** carrying the
+Ronsha class, with `Q134917286` the same case. This script excludes them the same way. Measured cost
+of the guard:
+
+| | items | (item, value) pairs |
+|---|---:|---:|
+| ronsha `P460` with no `P2868` | 469 | 525 |
+| after excluding the dual-typed | **459** | **502** |
+
+So the guard drops 10 items and 23 statements, and 502 is 525 minus those — the numbers tie out, and
+the gap between "469 items" and "502 lines" is items carrying more than one `P460`, not a discrepancy.
+
+### Checked before staging, because it flows unattended
+
+Five sampled items pulled live: all five typed `Q845945` + `Q135022904`, none typed Shikinaisha or
+Disputed, each with a `P460` carrying no qualifiers at all. Every one of the 502 lines matches
+`^Q\d+\|P460\|Q\d+\|P2868\|Q135022904$` and none begins with `-`.
+
+`tests/test_ronsha_role_qualifiers.py` pins the shape and the guard. The guard test reads the
+**rendered** `QUERY`, not the file's source text — an earlier draft accepted the QID appearing
+anywhere, which a comment would have satisfied, and the QIDs only ever appear as constants. Confirmed
+by deleting the `DISPUTED` exclusion and watching the test go red, then restoring it.
+
+Qualifier-only throughout: the line names the `P460` value because `execute_line` finds the claim by
+value, and nothing else. No value is restated, no reference attached, no removal emitted.
+
+
 ## 2026-09-12 — how a bare P612 gets onto Wikidata from a file that never emits one: confirmed
 
 The conformity re-measurement left this as "not established". It is now established, by reading
