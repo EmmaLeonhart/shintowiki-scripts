@@ -1,0 +1,39 @@
+name: Probe Miraheze 403
+
+# Read-only diagnostic. Runs shinto_miraheze/probe_miraheze_403.py on a runner so
+# its output can be compared with the same script run from a home connection.
+#
+# Why: weekly-wiki-edit-test has failed 5 of 8 runs with HTTP 403 on mwclient's
+# pre-login site-init, and each failure locks wiki editing for 8 days — but the
+# same call returns 200 from a local machine, so the difference not yet tested is
+# the ORIGIN of the request. Emma, 2026-09-12: "the miraheze wiki is supposed to
+# just get edited like normal so idk what is going on with it lol."
+#
+# This never logs in, never edits, and never writes wiki_editing_lockout.state.
+# It deliberately does NOT consult the lockout: a probe the lockout could silence
+# would be unable to diagnose the lockout.
+#
+# Manual only — no schedule. Delete it once the 403 is understood.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: Probe
+        env:
+          MIRAHEZE_EMAIL: ${{ secrets.MIRAHEZE_EMAIL }}
+          WIKIDATA_EMAIL: ${{ secrets.WIKIDATA_EMAIL }}
+        # No `|| echo`: swallowing this script's stdout is what left every previous
+        # 403 undiagnosable.
+        run: python3 shinto_miraheze/probe_miraheze_403.py

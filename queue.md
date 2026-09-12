@@ -9,6 +9,24 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- **Find out why shinto.miraheze 403s in CI but not locally.**
+  Emma 2026-09-12, on the Fandom-vs-Miraheze research: *"yeah the miraheze wiki is supposed to just
+  get edited like normal so idk what is going on with it lol."* That redirected the item from
+  migrating away to diagnosing. The Fandom research is written up in
+  `docs/fandom_vs_miraheze_2026-09-12.md` and is hers to read; no migration is planned.
+  - Established: from a home connection **all three real probes return 200** (plain siteinfo, a page
+    read, and siteinfo with mwclient's UA suffix), MediaWiki 1.45.4, `EmmaBot/3.1`. So the canonical
+    UA is not blocked and the wiki is not down.
+  - Established: a UA-policy refusal has a **distinct signature** — 403, `Content-Type: text/plain`,
+    193 bytes, *"Your request is not compliant with our user agent policy."* A Cloudflare challenge
+    would be HTML. Either one identifies itself; nothing recorded it until now.
+  - [ ] Dispatch `probe-miraheze-403.yml` and compare its output with the local baseline above.
+    Same script, two origins — that is the difference never tested. Azure `centralus` runner IPs
+    versus a home connection.
+  - [ ] Then fix the recording, whatever the answer: `weekly_wiki_edit_test.py` stores only the
+    exception's `str()`, and its workflow pipes the script through `|| echo`, so five 403s produced
+    no evidence between them. One failed probe also locks **8 days**.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

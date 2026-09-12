@@ -4,6 +4,62 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the Fandom question turned into a Miraheze diagnosis
+
+Promoted the last ungated `todo.md` item — Emma's *"serious analysis of whether it will be a good
+idea to long term switch our operations to the fandom wiki"*, gated *"only after exhausting the
+2026-08-04 tasks"*. Those are gone from `queue.md` and that file is delete-on-done, so the gate has
+lifted. Her instruction was explicit that the research is authorised and the switch is not.
+
+### The research: `docs/fandom_vs_miraheze_2026-09-12.md`
+
+Measured the same way on both wikis, today, from `list=recentchanges`:
+
+| | shinto.fandom.com | shinto.miraheze.org |
+|---|---|---|
+| last 500 changes span | 2026-08-05 → **2026-09-11** | **2026-09-04 only** |
+| days with edits in that span | **38 of 38, no gap** | 1 |
+| days since last edit | 1 | **8** |
+
+Miraheze's weekly edit-test has **failed 5 of 8 runs** on HTTP 403 (07-19, 07-26, 08-09, 08-16,
+09-06), passing 3 (08-19, 08-23, 08-30). Fandom infrastructure already exists and works —
+`fandom-sync.yml` is 20/20 over its last 20 runs, and `fandom_unique/` holds 651 pages.
+
+⚠ And the repo currently points the other way: `FANDOM_SUNSET_DATE = 2027-01-01`, honoured by seven
+write entry points, set on **2026-05-13** — two months before the first Miraheze 403. The wind-down
+was decided under conditions that no longer hold. That contradiction is the actual decision, and it
+is hers.
+
+### Her answer redirected it
+
+*"yeah the miraheze wiki is supposed to just get edited like normal so idk what is going on with it
+lol."* So: not a migration question, a diagnosis question.
+
+**What is now established.** From this machine, right now, the exact call that 403s — mwclient's
+pre-login `meta=siteinfo|userinfo` — returns **200, MediaWiki 1.45.4**, and so does a page read, and
+so does the same call carrying mwclient's UA suffix. The canonical `EmmaBot/3.1` UA is not blocked
+and the wiki is not down.
+
+And a **UA-policy refusal identifies itself**: 403, `Content-Type: text/plain`, 193 bytes,
+*"Your request is not compliant with our user agent policy."* — confirmed against a deliberately
+generic control UA in the same run. A Cloudflare challenge would be HTML instead. Either cause is
+distinguishable on sight.
+
+**What is not established** is why CI differs. The untested variable is the ORIGIN: Azure
+`centralus` runner IPs against a home connection. `shinto_miraheze/probe_miraheze_403.py` runs the
+identical four probes and `probe-miraheze-403.yml` runs it on a runner, read-only, never logging in,
+never editing, never touching the lockout state — and deliberately not consulting the lockout, since
+a probe the lockout could silence cannot diagnose the lockout.
+
+### Why five 403s taught us nothing
+
+`weekly_wiki_edit_test.py` records the exception's `str()` and nothing else — no status beyond 403,
+no `cf-ray`, no `server`, no `retry-after`, no body. Its workflow then pipes the script through
+`|| echo`, so its stdout never reached the log either. Five failures, no evidence between them, and
+each one locks editing for **8 days** on a single probe. That is the next thing to fix regardless of
+what the probe finds.
+
+
 ## 2026-09-12 — the Sutra / papers drip removed: 10 pending edits that will now not happen
 
 Emma, on `Q140568870` (her researcher item), the two paper items and `Sutra` `Q140570154`:
