@@ -10,7 +10,22 @@ state or read live from the two wikis today; where something is not known, it sa
 
 ⚠ Reports expire after a week (CLAUDE.md). Delete this by 2026-09-19.
 
-## 1. Reliability — the two wikis, measured the same way
+> ## ⛔ Read §1 with this correction, written the same day
+>
+> §1 was measured before the cause was known, and it does **not** compare the two wikis' reliability.
+> It compares **one host that Cloudflare challenges our GitHub runners on against one that does not.**
+> Miraheze is not down, not refusing our bot, and not rejecting our User-Agent: the identical probe
+> from Emma's own connection returns 200 throughout, and the same runner sending a deliberately
+> generic UA still gets Miraheze's own policy refusal — so the UA layer is reachable and working.
+> `EmmaBot/3.1` also passed from CI on 08-19, 08-23 and 08-30 and landed ~800 edits a day on
+> 09-01..09-04. The block is **intermittent** and began between 09-04 and 09-06.
+>
+> Nothing in §1 is factually wrong. The framing is: "Fandom works and Miraheze does not" is a
+> statement about our runners' route to each host, not about the wikis. Any decision to migrate on
+> the strength of that table would be founded on a comparison that was never made.
+> See `shinto_miraheze/probe_miraheze_403.py` and the DEVLOG entries of 2026-09-12.
+
+## 1. Reliability — as measured, and what it does NOT show
 
 Read from each wiki's `list=recentchanges` today.
 
@@ -36,10 +51,17 @@ changes all fall on a single day and then stop.
 week. Before the weekly test existed there were three more 403 events (07-12, 07-13, 07-15, the last
 an explicit Cloudflare challenge). Separately, Emma called a full blackout 07-27 → 08-10.
 
-The wiki is locked right now, until 2026-09-14.
+The wiki was locked when this was written. It still is; the daily test re-decides it every
+morning from 2026-09-13.
 
 **This is the pressure behind her sentence** *"the fandom wiki editing actually appears to work"*.
-It does; the measurement agrees with her impression.
+It does — and the reason it does is that Fandom is not challenging our runners. That is the whole of
+the difference the table above measures.
+
+⚠ The "5 of 8 weekly tests failed" line also needs reading with care: a weekly cadence means one
+challenged request condemned the following eight days, whether or not the wiki was reachable during
+them. The failure count is therefore closer to a count of unlucky Sundays than of bad weeks. Made
+daily on 2026-09-12 for exactly that reason.
 
 ## 2. What already exists on the Fandom side
 
@@ -89,10 +111,12 @@ arrangement is not (a mirror falling behind is not the work stopping), but it is
 * **Fandom's bot policy.** Emma named it as the main disadvantage and I have not verified it. What
   is observable is that our account has edited there daily for 38 days without interruption; that is
   evidence about practice, not about policy or about what happens at a higher rate.
-* **Whether Miraheze's 403s are rate-related or account-related.** The lockout reasons record the
-  symptom (`403 Client Error: Forbidden` on `api.php`, once explicitly a Cloudflare challenge) and
-  the repo already responded with a canonical User-Agent change on 2026-07-14. Whether a further
-  change would fix it is unknown.
+* ~~Whether Miraheze's 403s are rate-related or account-related.~~ **SETTLED the same day**: it is a
+  Cloudflare managed challenge on the connection, not the account and not the User-Agent. The
+  2026-07-14 UA change was not the fix and no further UA change will be. What remains unknown is
+  *why* the challenge starts and stops — the leading untested fit is that four days of ~800 edits
+  preceded it and the challenge page says "unusual activity", but Emma's 2026-07-27 quiet period is
+  evidence against volume being the whole story.
 * **Licence and content-ownership implications** of making Fandom primary. Not researched.
 * **History preservation.** Emma's stated reason for favouring Fandom is that it *"clearly preserves
   all of the history."* `fandom_mirror`'s own docstring says the GitHub XML archive is
