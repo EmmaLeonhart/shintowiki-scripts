@@ -189,3 +189,71 @@ inherited community data, is 29% referenced.
 * Populations use direct `P31` only, matching the rest of the repo. Shrines
   typed solely by a subclass (Q135160342 Kokuhei-sha etc.) are outside the
   denominator.
+
+---
+
+# Re-measured 2026-09-12
+
+Same script, same queries: `python modern-quickstatements/audit_model_adoption.py`.
+Raw numbers `modern-quickstatements/model_adoption_2026-09-12.json`; July's are still in
+`model_adoption.json` beside it. Populations grew slightly — **30,309** shrines (+35),
+**27,219** temples (+45).
+
+## Conformance — of the statements that exist, how many carry the modelled shape
+
+| invariant | conforming | of | now | 2026-07-28 |
+|---|---:|---:|---:|---:|
+| Reisai: `P837` carries `P3831=Q11385469` | 352 | 355 | **99.2%** | 99.2% |
+| Bunrei: `P612` carries `P1013=Q195793` | 1,825 | 1,954 | **93.4%** | 97.5% |
+| Ranking: `P13723` carries `P459` | 16,995 | 16,995 | **100.0%** | 100.0% |
+| Sangō: `P1448`+`P3831` sits on a temple | 919 | 936 | **98.2%** | 97.1% |
+| List membership: `P361` carries `P1545` | 5,011 | 6,214 | **80.6%** | 80.8% |
+| Ronsha carries `P460` to its entry item | 2,058 | 2,323 | **88.6%** | 88.6% |
+| that `P460` carries `P2868` | 1,613 | 2,058 | **78.4%** | 78.4% |
+
+## Reach — how much of Wikidata's use of the shape is ours
+
+| | ours | all of Wikidata | share |
+|---|---:|---:|---:|
+| statements carrying the reisai role | 352 | 367 | **95.9%** |
+| statements carrying the bunrei shape | 1,825 | 1,825 | **100.0%** |
+| `P837` statements of any kind | 355 | 7,369 | 4.8% |
+| `P612` statements of any kind | 1,954 | 2,793 | 70.0% |
+
+Unchanged in character since July: **where the shape is ours, essentially all of its use is ours.**
+The model is conformant because almost nobody else emits it, not because the community adopted the
+statement shape.
+
+## The one figure that moved the wrong way, and what it is
+
+Bunrei conformance fell 97.5% → 93.4%. The absolute count of bare `P612` went **9 → 129** while
+conforming statements went 350 → 1,825, so the bad shape grew faster than the good one.
+
+Split by what the bare statements point at:
+
+* **122** point at a real head shrine — `Iwashimizu Hachimangū → Usa Jingū`,
+  `Hie Shrine → Hiyoshi Taisha`, `Kumano Shrine → Kumano Hongū Taisha`. These are genuine
+  source-shrine statements missing the qualifier.
+* **7** point at `Q135508874` *autochthonous shrine*, which is the "no source shrine" marker rather
+  than a bunrei relation. (10 further autochthonous statements *do* carry `P1013`, so the repo is not
+  internally consistent about that small population either — 17 items in total.)
+
+**Not an unaddressed defect, and not ours to re-fix.** Every P612-emitting file in the repo is clean:
+11,225 `P612` lines across `bunrei`, `bunrei_animism`, `bunrei_ikkojin`, `bunrei_nicovideo`,
+`bunrei_onkamui`, `bunrei_shinwa_otaku`, `bunrei_toranomaki`, `beppyo_p612` and `ise_jingu_creates`,
+**zero without `P1013`**. And `bunrei_qualifier_repair.txt` holds exactly **129** lines — the same
+number — with every sampled bare item present in it. It is registered in `direct_daily_edits.py` and
+draining through the daily drip.
+
+⚠ It is registered in `direct_daily_edits.py` only, **not** in `submit_daily_batch.py`. That is worth
+a look but is not the same as being unqueued: `direct_daily_edits` is the live path.
+
+**How the bare statements arose is NOT established.** Clean input plus bare output on the wiki is
+consistent with the qualifier being applied as a second call that can fail independently, but nothing
+here confirms that, and the repair file's existence suggests it was diagnosed before.
+
+## Big movers since July, for context
+
+`P14005` Japanese court rank went 936 → **4,014** items and 11 → **3,086** on humans (the court-rank
+people batch landing); sangō 139 → **936** statements; bunrei 359 → **1,954**; `P6262` Fandom links
+555 → **1,618**; temple English labels 11,645 → **12,675**.

@@ -1,0 +1,87 @@
+{
+  "population": {
+    "shrines": 30309,
+    "temples": 27219
+  },
+  "reisai": {
+    "shrine_items": 346,
+    "shrine_stmts": 355,
+    "conforming": 352,
+    "missing_role": 3,
+    "with_p793": 101,
+    "referenced": 322,
+    "global_stmts": 7369,
+    "global_any_role": 387,
+    "global_reisai_role": 367
+  },
+  "bunrei": {
+    "shrine_items": 1951,
+    "shrine_stmts": 1954,
+    "conforming": 1825,
+    "bare": 129,
+    "global_stmts": 2793,
+    "global_any_p1013": 1825,
+    "global_bunrei": 1825
+  },
+  "shintai": {
+    "stmts": 8,
+    "on_shrines": 8
+  },
+  "p825_shrines": {
+    "items": 12067,
+    "stmts": 16060,
+    "referenced": 5553
+  },
+  "p825_temples": {
+    "items": 6273,
+    "stmts": 6369,
+    "referenced": 6162
+  },
+  "p13723": {
+    "items": 8188,
+    "stmts": 16995,
+    "with_p459": 16995,
+    "without_p459": 0,
+    "referenced": 16802,
+    "legacy_on_p1552": 0
+  },
+  "p14005": {
+    "items": 4014,
+    "stmts": 5091,
+    "referenced": 2026,
+    "distinct_ranks": 32,
+    "on_humans": 3086,
+    "on_shrines": 923
+  },
+  "list_membership": {
+    "items": 5310,
+    "stmts": 6214,
+    "with_ordinal": 5011,
+    "items_with_multiple": 631
+  },
+  "ronsha": {
+    "ronsha": 2323,
+    "with_p460": 2058,
+    "p460_with_p2868": 1613,
+    "p460_with_p3831": 14,
+    "deprecated_items": 7
+  },
+  "sango": {
+    "stmts": 936,
+    "on_temples": 919,
+    "temple_p1448_all": 9254
+  },
+  "p571": {
+    "shrines": 1119,
+    "temples": 2984
+  },
+  "identifiers": {
+    "p11250": 3859,
+    "p6262": 1618,
+    "p13677": 5092
+  },
+  "en_labels": {
+    "shrines_en": 25466,
+    "temples_en": 12675
+  }
+}
