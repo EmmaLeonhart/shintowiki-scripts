@@ -4,6 +4,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the completion estimate was answering with July's machinery
+
+`docs/wikidata-completion-estimate.md` exists because Emma asked *"how long it'll take our total
+queued-up edits to all go through."* Every figure in it had moved, and two described things that no
+longer exist:
+
+| | July said | actually |
+|---|---|---|
+| daily rate | `_DEFAULT_MAX_EDITS = 300` | **500** |
+| current state | *"0/day — `FREEZE_WIKIDATA_UNTIL = 2026-08-10`"* | **running**; that constant is gone, freezes live in one state file, the last lockout expired 2026-09-01 |
+| atomic files | 58 live | **81 registered, 78 present** |
+| queue size | 106,166 lines | **124,429** |
+| estimate | 354 days | **249** |
+
+The queue grew by 18,263 lines while the rate rose 300 → 500, so the estimate **fell** from 354 days
+to 249 — about eight months, roughly 2027-05.
+
+Corrected in place rather than written as a second document. A stale answer to a question someone
+asked is worse than no answer, and a second file would leave the wrong one still sitting there.
+
+Two things added that the July version did not say:
+
+* **249 days is a floor, not a forecast.** It assumes 500 lines land daily. They do not — a line
+  whose statement already exists returns *"Skipped (already exists)"* and still consumes one of the
+  500, the drip samples randomly rather than draining a file, and a lockout stops the day outright.
+* **The rate is not a target.** CLAUDE.md, Emma 2026-08-24: *"This project is supposed to be slow."*
+  The number answers her question; it is not something to improve.
+
+The three registered-but-absent files are named in the doc rather than left as a puzzle:
+`souken_p571_citations.txt` and `saijin_named_as.txt` (generated but uncommittable until today's
+`--full-name` fix) and `name_in_kana.txt` (appended by the cloud routine's collector as answers
+arrive).
+
+
 ## 2026-09-12 — the qualifier sweep: one more frozen figure, and it is not one we can fill
 
 Having found `P2868` frozen because nothing emitted it, the same test was run across every qualifier
