@@ -7,7 +7,7 @@ Resolution order: our own staged `en_labels` batches (free), then one batched
 `wbgetentities` sitelink call per wiki. No `wbsearchentities`, no SPARQL — see the
 script's docstring for why.
 
-9 resolved, 49 refused, of 58 named pages.
+8 resolved, 50 refused, of 58 named pages.
 
 ## Proposed
 
@@ -21,7 +21,6 @@ script's docstring for why.
 | [[Si Xingjian]] | [Q8463911](https://www.wikidata.org/wiki/Q8463911) | sitelink on enwiki |
 | [[Sites of Japan's Meiji Industrial Revolution: Iron and Steel, Shipbuilding and Coal Mining]] | [Q7751872](https://www.wikidata.org/wiki/Q7751872) | sitelink on enwiki |
 | [[Suikan]] | [Q11548540](https://www.wikidata.org/wiki/Q11548540) | jawiki sitelink of its own stated name 水干 |
-| [[Take Shrine]] | [Q137674386](https://www.wikidata.org/wiki/Q137674386) | our own staged en label |
 
 ## Refused
 
@@ -30,7 +29,7 @@ script's docstring for why.
 | [[Amenokumahito no Mikoto]] | no sitelink, and the page states no Japanese name |
 | [[Catechism of Tenrikyo]] | no sitelink, and the page states no Japanese name |
 | [[Corridor-type kofun]] | no sitelink, and the page states no Japanese name |
-| [[Engishiki Ranks]] | its stated Japanese names resolve to different items |
+| [[Engishiki Ranks]] | no sitelink, and the page states no Japanese name |
 | [[Enuma no Kuni no Miyatsuko]] | no sitelink, and the page states no Japanese name |
 | [[Fire-Pacification Festival]] | no sitelink, and the page states no Japanese name |
 | [[Gary Luscombe]] | no sitelink, and the page states no Japanese name |
@@ -69,6 +68,7 @@ script's docstring for why.
 | [[Taisokyo]] | no sitelink for its title or its stated name 大祖教 |
 | [[Taiwa Kyōdan]] | no sitelink for its title or its stated name 宗教法人大和教団 |
 | [[Takata Shrine (Hida Province)]] | no sitelink, and the page states no Japanese name |
+| [[Take Shrine]] | no sitelink, and the page states no Japanese name |
 | [[Takihara-no-Miya]] | no sitelink, and the page states no Japanese name |
 | [[Tenkei Mikyōsho]] | no sitelink, and the page states no Japanese name |
 | [[Tenrikyo Resource Wiki]] | no sitelink, and the page states no Japanese name |

@@ -4,6 +4,46 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — [[Take Shrine]] resolved wrongly twice, and both evidence paths are gone
+
+Checked the 9 proposed QIDs against the actual Wikidata items before the applier writes them
+unattended. Eight are right. The ninth was wrong, and fixing it made it wrong again by a different
+route, which is what makes it worth writing down.
+
+**The page:** `[[Take Shrine]]` is **多家神社**, in 広島県安芸郡府中町 — Fuchū, Aki District, Hiroshima.
+Its short description says so and its deity is 安芸津彦命, founder of Aki Province.
+
+| attempt | resolved to | what that actually is |
+|---|---|---|
+| our own staged en label | `Q137674386` | **竹神社** in Meiwa, **Mie** — 34.5373,136.6187 |
+| the page's stated ja name | `Q1107129` | **総社** — the article about sōsha *in general* |
+
+### Both sources were wrong in the same way: they never claimed identity
+
+* **The staged en labels are OUR proposals.** `modern-quickstatements/*en_labels*.txt` holds English
+  labels we generated and have not delivered. Matching a page title against our own guess at a name
+  is circular, and "unique within our staged file" says nothing about how many shrines share a name
+  in the world. It produced 1 resolution in 9 and it was wrong. **Removed.**
+* **`{{Nihongo}}` is used mid-prose for ordinary terms.** Take Shrine's lead reads
+  `{{nihongo|Sōja|総社}}` — 総社 is a CLASS of shrine, not this shrine. **Now gated on the romaji
+  argument**: it must be this page's subject. `{{nihongo|suikan|水干}}` on `[[Suikan]]` passes;
+  `Sōja` on `[[Take Shrine]]` does not. Macrons and case are folded for the comparison.
+* **A bare `{{lang|ja|…}}` marks text as Japanese** and does not claim it names the subject.
+  **Removed.** It contributed nothing to the current run.
+
+A missing title now **skips** the `{{Nihongo}}` source rather than running it ungated — an absent
+title is exactly when a caller would not notice the gate quietly not applying.
+
+**8 proposals stand**, and each was checked individually against its item's labels, description and
+`P31`: no disambiguation page, no category, no list. `Si Xingjian` → `Q8463911` is the Chinese
+geologist the page describes; `Sites of Japan's Meiji Industrial Revolution` → `Q7751872` is the
+World Heritage item; `Shizensha` → `Q139921367` remains Emma's own stated answer.
+
+**What this cost, had it not been checked:** the applier is wired into `wiki-cleanup.yml` and would
+have written `[[Take Shrine]] -> Q137674386` the first time the Miraheze lock lifted, with nobody
+watching. The lock being up is the only reason there was time to catch it.
+
+
 ## 2026-09-12 — the wiki edit-test runs DAILY now, and its first failure says why
 
 Emma, one word: *"Daily you cunt"*, then *"And run one right now"*. Both done; the run went first,

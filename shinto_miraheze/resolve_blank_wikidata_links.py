@@ -23,13 +23,22 @@ DESTINATION, not a database to query for working data."* A per-page
 ``wbsearchentities`` or SPARQL lookup over the worklist is exactly the shape that
 rule was written about. So:
 
-1. **Free evidence first.** Our own ``modern-quickstatements/*en_labels*.txt``
-   already map QID -> English label for tens of thousands of items. A title that
-   matches exactly one of them is resolved at zero request cost.
-2. **Then ONE batched sitelink call per wiki.** ``wbgetentities`` takes
+1. ⛔ **NOT our own staged en labels.** That path existed and was REMOVED on
+   2026-09-12 after it produced exactly one resolution in nine and that one was
+   wrong: the wiki's ``Take Shrine`` is 多家神社 in Fuchū, Aki District, Hiroshima,
+   and it was matched to ``Q137674386`` — 竹神社 in Meiwa, Mie. Different kanji,
+   different prefecture, different shrine.
+
+   The reasoning was circular. ``modern-quickstatements/*en_labels*.txt`` holds
+   English labels **we generated and have not delivered**; they are our proposals,
+   not something Wikidata asserts. Matching a page title against our own guess at
+   a name is not evidence that the page and the item are the same subject, and
+   "unique within our staged file" says nothing about how many shrines share the
+   name in the world.
+2. **ONE batched sitelink call per wiki.** ``wbgetentities`` takes
    ``sites=enwiki&titles=A|B|C…`` 50 at a time, so the whole remaining worklist
    costs 2 requests against enwiki and 2 against jawiki — not 58, and not 116.
-3. **Then the page's OWN Japanese name**, which is what actually resolves the
+3. **The page's OWN Japanese name**, which is what actually resolves the
    case Emma named. ``Shizensha`` is not a sitelink of anything — ``Q139921367``
    links to jawiki 自然社 — so a title lookup misses it, and the answer is sitting
    in the page's own infobox as ``native_name = 自然社``. CLAUDE.md's stated
@@ -42,7 +51,8 @@ Refusals are the point, not a shortfall
 * A title of 1-2 characters (``R``, ``S``, ``T``) is refused. An exact sitelink
   hit on a single letter says nothing about what the page is.
 * enwiki and jawiki resolving to DIFFERENT items is refused, not arbitrated.
-* An item that our own en-label file and the sitelink disagree about is refused.
+* A page that states no Japanese name AND is not a sitelink of anything is
+  refused. There is no third source; a name we invented is not one.
 
 Read-only against both wikis. No edit is made here, so neither the
 shinto.miraheze lockout nor the Wikidata one gates it; applying the proposals is
@@ -111,47 +121,62 @@ def named_blank_titles(report_path):
             and "(disambiguation)" not in t.lower()]
 
 
-def local_en_labels():
-    """{en label: {qid}} from our own staged batches. Costs nothing.
-
-    A label held by two QIDs is kept as a set so the caller can refuse it rather
-    than pick one — two items sharing an English name is exactly the case where
-    a title match proves nothing.
-    """
-    mq = os.path.join(_uar, "modern-quickstatements")
-    out = {}
-    if not os.path.isdir(mq):
-        return out
-    for name in sorted(os.listdir(mq)):
-        if not name.endswith(".txt") or "en_label" not in name:
-            continue
-        for line in io.open(os.path.join(mq, name), encoding="utf-8"):
-            m = _QS_EN_LABEL.match(line.strip())
-            if m:
-                out.setdefault(m.group(2).replace('""', '"'), set()).add(m.group(1))
-    return out
-
-
 # The page's own Japanese name, taken only from places that ANNOUNCE it as the
-# name. A bare CJK run anywhere in the body is not a candidate — these articles
-# are full of incidental Japanese, and guessing from it is how you resolve a
-# shrine to a place name that happened to appear in its address.
+# name OF THIS PAGE'S SUBJECT. A bare CJK run anywhere in the body is not a
+# candidate — these articles are full of incidental Japanese, and guessing from
+# it resolves a shrine to whatever term happened to be nearby.
+#
+# ⛔ Two sources were removed on 2026-09-12 after each produced a confident wrong
+# answer for the SAME page, `Take Shrine` (多家神社, Fuchū, Aki District, Hiroshima):
+#
+#   * our own staged en labels  -> Q137674386, 竹神社 in Meiwa, MIE. Circular: the
+#     label was one we generated, matched against the page title.
+#   * a bare `{{lang|ja|…}}`     -> marks text as Japanese; it does not claim the
+#     text is the subject's name.
+#
+# And `{{Nihongo}}` is now gated on its FIRST argument. It is used mid-prose for
+# ordinary terms, and on Take Shrine the lead says `{{nihongo|Sōja|総社}}` — 総社 is
+# a CLASS of shrine, not this shrine, and it resolved to Q1107129, the article
+# about sōsha in general. The romaji argument is what says which thing is being
+# named: `{{nihongo|suikan|水干}}` on [[Suikan]] is the subject; `Sōja` on
+# [[Take Shrine]] is not.
 _CJK = r"[぀-ヿ㐀-䶿一-鿿豈-﫿々〆ヵヶ・ー]"
-_NAME_FIELDS = (
-    re.compile(r"\|\s*native_name\s*=\s*(" + _CJK + r"{2,})\s*(?:\||$)", re.M),
-    re.compile(r"\{\{\s*[Nn]ihongo\s*\|[^|]*\|\s*(" + _CJK + r"{2,})\s*[|}]"),
-    re.compile(r"\{\{\s*lang\s*\|\s*ja\s*\|\s*(" + _CJK + r"{2,})\s*\}\}"),
-)
+_NATIVE_NAME_RE = re.compile(r"\|\s*native_name\s*=\s*(" + _CJK + r"{2,})\s*(?:\||$)", re.M)
+_NIHONGO_RE = re.compile(r"\{\{\s*[Nn]ihongo\s*\|([^|{}]*)\|\s*(" + _CJK + r"{2,})\s*[|}]")
+
+_MACRONS = str.maketrans("āīūēōÁáĀĪŪĒŌ", "aiueoAaAIUEO")
 
 
-def japanese_names(wikitext):
-    """Ordered, de-duplicated Japanese names the page states for itself."""
+def _key(text):
+    """Lowercased, macron-folded, alphanumerics only — for comparing a romaji
+    argument with a page title."""
+    return re.sub(r"[^a-z0-9]", "", (text or "").translate(_MACRONS).lower())
+
+
+def japanese_names(wikitext, title=""):
+    """Ordered, de-duplicated Japanese names the page states for ITS OWN subject.
+
+    `title` gates the `{{Nihongo}}` source: its first argument must be this page's
+    subject, or the Japanese it carries is some other thing's name.
+    """
     out = []
-    for pattern in _NAME_FIELDS:
-        for m in pattern.finditer(wikitext or ""):
-            name = m.group(1).strip()
-            if name and name not in out:
-                out.append(name)
+    for m in _NATIVE_NAME_RE.finditer(wikitext or ""):
+        name = m.group(1).strip()
+        if name and name not in out:
+            out.append(name)
+    want = _key(title)
+    if not want:
+        # No title to check against means the gate cannot run. Skip the source
+        # rather than let it through ungated — an absent title is exactly when a
+        # caller would not notice the difference.
+        return out
+    for m in _NIHONGO_RE.finditer(wikitext or ""):
+        romaji, name = m.group(1).strip(), m.group(2).strip()
+        if not name or name in out:
+            continue
+        if _key(romaji) != want:
+            continue
+        out.append(name)
     return out
 
 
@@ -175,20 +200,12 @@ def fetch_wikitext(titles, session):
 
 def resolve(titles, session, want_sites=("enwiki", "jawiki")):
     """[(title, qid | None, reason, evidence)] for every title."""
-    labels = local_en_labels()
     results = {}
     remaining = []
 
     for title in titles:
         if len(title) < MIN_TITLE_LEN:
             results[title] = (None, "title too short to be evidence", {})
-            continue
-        hits = labels.get(title)
-        if hits and len(hits) == 1:
-            results[title] = (next(iter(hits)), "our own staged en label", {"source": "local"})
-            continue
-        if hits and len(hits) > 1:
-            results[title] = (None, f"{len(hits)} staged items share this en label", {})
             continue
         remaining.append(title)
 
@@ -214,7 +231,7 @@ def resolve(titles, session, want_sites=("enwiki", "jawiki")):
     # nothing.
     if still_open:
         bodies = fetch_wikitext(still_open, session)
-        candidates = {t: japanese_names(bodies.get(t, "")) for t in still_open}
+        candidates = {t: japanese_names(bodies.get(t, ""), t) for t in still_open}
         flat = sorted({n for names in candidates.values() for n in names})
         ja_qid = sitelinks_for(flat, "jawiki", session) if flat else {}
         for title in still_open:
