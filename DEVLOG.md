@@ -4,6 +4,55 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — a new generated `.txt` could never enter the repo: two git commands disagreeing about paths
+
+`souken_p571_citations.txt` and `saijin_named_as.txt` — the two surviving backfills from
+`c121509e`, the enrichment work Emma asked for — were registered in both submitters and absent from
+the repo. Chased to a confirmed mechanism, which turned out not to be about those files at all.
+
+### The commit step in `generate-quickstatements.yml`
+
+It backs up this run's own output, resets and `git clean -fd`s the tree, rebases onto origin,
+restores the backup, and commits — so a rebase cannot clobber a file this run did not touch. The
+list of "this run's own output" is built from two commands, run from inside `modern-quickstatements`:
+
+```
+git diff --name-only -- .                 ->  modern-quickstatements/foo.txt
+git ls-files --others --exclude-standard  ->  foo.txt          (CWD-relative)
+sed -n 's|^modern-quickstatements/||p'    ->  keeps the first, DROPS the second
+```
+
+`git diff` prints repo-root-relative paths; `git ls-files` prints them relative to the working
+directory. The `sed -n …p` prints only lines whose substitution succeeded. So the **untracked** half
+of the list — which is to say **every brand-new file** — was dropped, then not backed up, then
+deleted by the `git clean -fd`, then never restored and never committed.
+
+**Every run, identically. A new atomic `.txt` could not enter the repo through this workflow at
+all.** The two files above are not the bug, they are the first symptom anyone chased.
+
+Verified rather than reasoned: reproduced both path formats locally in this checkout, and confirmed
+`--full-name` on the `ls-files` call makes it agree with `diff`. That is the fix.
+
+### Why it was invisible for so long
+
+The workflow succeeds. The commit lands. Modified tracked files update normally — today's
+`chore(qs)` commit `2d77529c` carried `souken_p571.txt` and `saijin_p825.txt`, the tracked siblings
+written by the *same two generators* in the same runs, three lines above the files that vanished.
+Nothing fails, and the only evidence is a file nobody is looking for.
+
+`tests/test_generated_qs_files_survive_the_rebase.py` pins the `--full-name`, the prefix filter and
+the `git clean` together, so the bug cannot come back in a renamed shape.
+
+### Two false starts worth recording, since both were nearly written up as findings
+
+- *"`generate-quickstatements.yml` hasn't run in 18 days"* — it is a `workflow_call` from
+  `cleanup-loop`, so `gh run list -w` never shows it under its own name. It runs daily.
+- *"the cleanup-loop has been stuck for four hours"* — `direct_daily_edits` has `MAX_EDITS = 500` at
+  30–90s spacing, so ~8 hours is its normal length. Nothing is stuck.
+
+Neither reached a commit. The mechanism above did, because it was reproduced first.
+
+
 ## 2026-09-12 — correction: CI reached Miraheze fine until 2026-09-04, at ~800 edits/day
 
 Emma's guess when I reported the challenge: *"Lemme guess you changed the user agent and it stopped

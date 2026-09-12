@@ -484,9 +484,23 @@ jobs:
           # `git diff --name-only` is the honest definition of "what this run
           # generated": a file untouched by every step above simply is not listed,
           # so the rebase's version of it survives.
+          #
+          # ⚠ --full-name on the ls-files line is LOAD-BEARING, added 2026-09-12.
+          # These two commands disagree about path format when run from inside a
+          # subdirectory: `git diff --name-only` prints repo-root-relative paths
+          # ("modern-quickstatements/foo.txt") while `git ls-files --others`
+          # prints them relative to the CWD ("foo.txt"). The `sed -n …p` below
+          # prints only lines whose prefix substitution succeeded, so every
+          # BRAND-NEW file was silently dropped from the list — then not backed
+          # up, then deleted by the `git clean -fd` further down, then never
+          # restored and never committed. Every run, so a new atomic file could
+          # never enter the repo through this workflow at all.
+          # Found because souken_p571_citations.txt and saijin_named_as.txt
+          # (added 2026-09-11) kept not appearing while their tracked siblings
+          # souken_p571.txt and saijin_p825.txt committed normally.
           mkdir -p /tmp/qs_backup
           git diff --name-only -- . > /tmp/qs_changed.txt
-          git ls-files --others --exclude-standard -- . >> /tmp/qs_changed.txt
+          git ls-files --others --exclude-standard --full-name -- . >> /tmp/qs_changed.txt
           sed -n 's|^modern-quickstatements/||p' /tmp/qs_changed.txt | sort -u > /tmp/qs_files.txt
           echo "this run changed $(wc -l < /tmp/qs_files.txt) file(s):"; cat /tmp/qs_files.txt
           while IFS= read -r f; do

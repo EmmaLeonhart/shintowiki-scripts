@@ -29,21 +29,6 @@ from `ATOMIC_FILES`; they are not queue items.
     host that challenges our runners with one that does not, which is not a comparison of the two
     wikis.
 
-- **Two enrichment backfills are registered but have no file — check once today's cleanup-loop lands.**
-  `direct_daily_edits.ATOMIC_FILES` lists 80 files; 3 are absent on disk. One is fine:
-  `name_in_kana.txt` is appended by `collect_name_in_kana.py` as the remote routine answers arrive, so
-  an empty gap is the slow routine working, not a fault.
-  The other two are the surviving halves of `c121509e`, the enrichment commit Emma asked for:
-  `souken_p571_citations.txt` (S143/S4656 onto existing unreferenced `P571`) and `saijin_named_as.txt`
-  (`P1932` onto existing `P825`). Both generators write unconditionally, both run inside
-  `generate-quickstatements.yml`, and both were added at 21:38Z on 09-11 — **after** that day's
-  cleanup-loop. Today's run (07:13Z) is the first that could produce them and was still in flight at
-  the time of checking, so its log was unavailable.
-  - [ ] Once it finishes, read the generate job's log for the two generators' line counts. Do NOT
-    re-run them locally in the meantime — that duplicates the SPARQL the in-flight run is already
-    spending.
-  - Not called a defect: nothing yet distinguishes "generated zero lines" from "never ran".
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
