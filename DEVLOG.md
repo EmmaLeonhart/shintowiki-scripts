@@ -4,6 +4,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the qualifier sweep: one more frozen figure, and it is not one we can fill
+
+Having found `P2868` frozen because nothing emitted it, the same test was run across every qualifier
+the model uses — count the lines queued for each in `modern-quickstatements/*.txt`:
+
+| qualifier | queued lines | |
+|---|---:|---|
+| `P3831` role | 10,537 | draining |
+| `P1013` bunrei | 11,580 | draining |
+| `P1545` ordinal | 2,589 | draining |
+| `P2868` ronsha role | 502 | staged today |
+| `P958` section | 251 | draining |
+| `P1352` ranking | 2 | hand-made file, no generator |
+| **`P459`** | **0** | **correct** — `P13723` is 16,995 of 16,995, nothing to fill |
+| **`P793`** | **0** | **a real gap** |
+
+### `P793` is frozen exactly the way `P2868` was
+
+The reisai model wants the festival item as a `P793` qualifier on the `P837` statement. It stands at
+**101** statements carrying it — *the same 101 as 2026-07-28* — while reisai statements themselves
+grew 256 → 355. So the share fell 39% → 28.5% without a single one being added.
+
+### But unlike `P2868`, the value cannot be derived
+
+`P2868` was fillable because the role restates the item's own `P31`. `P793` is not that. The 101 that
+carry it use **98 distinct festival items across 92 shrines** — Takayama Festival, Karatsu Kunchi,
+Kangensai, Hachinohe Sansha Taisai — essentially one named festival per shrine, and nothing in the
+shrine item implies which. It is per-shrine research, not a mechanical restatement, so no generator
+here can produce it from what the repo holds.
+
+That is the shape the cloud remote-queue routine exists for (`build_*_queue.py` → the routine answers
+→ `collect_*.py` folds the answers in). **Not built**: nobody asked for it, and a research queue is a
+larger commitment than a qualifier backfill. Recorded so the next conformity read does not re-derive
+why the number will not move.
+
+### And one non-finding, stated so it is not chased
+
+`P459`'s zero is correct, not a gap. `P13723` carries it on 16,995 of 16,995 statements, so there is
+nothing left for a generator to emit.
+
+
 ## 2026-09-12 — the one conformity figure nothing was draining: 502 ronsha role qualifiers staged
 
 The conformity table had three numbers flat since July. Two of them are drip-limited rather than
