@@ -4,6 +4,60 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — P825 → Q1188622 is invalid: 12 removed, 100 more stopped before they shipped
+
+Emma: *"is a completely invalid thing and we should never add it and should universally remove it
+from all items it is present on."*
+
+`P825` is **dedicated to** — the deity a temple's main image *is*. `Q1188622` is 重要文化財,
+**Important Cultural Property of Japan**, a designation the Agency for Cultural Affairs awards to an
+object. *"Dedicated to Important Cultural Property"* asserts nothing.
+
+### It was ours, and it was about to get much worse
+
+`generate_honzon_quickstatements.py` takes **every wikilink** out of the jawiki `{{日本の寺院}}`
+`本尊` field. Temple infoboxes write the designation beside the deity:
+
+    |本尊 = [[阿弥陀如来]]（[[重要文化財]]）
+
+so the designation is read as a second honzon. Q1188622 was the **second most-emitted value in
+`honzon_p825.txt`** — **100 of 973 lines**, behind only Amitābha at 115 — and **12 statements had
+already reached Wikidata**.
+
+| | |
+|---|---:|
+| live statements carrying it | **12** (all Buddhist temples) |
+| staged lines that would have added more | **100** |
+
+### Three things, in that order
+
+1. **`INVALID_HONZON`** in the honzon generator refuses it at emit time, with the infobox shape in
+   the comment so the next reader knows why a designation was ever in a deity slot.
+2. **The 100 staged lines are stripped** from `honzon_p825.txt`. Not waiting for a regeneration —
+   the drip samples that file daily and Wikidata editing is currently open.
+3. **`generate_invalid_p825_removals.py`** → `invalid_p825_removals.txt`, 12 lines, registered in
+   `direct_daily_edits.py`. Re-derived from SPARQL each run, so it empties and goes inert; queries
+   every item with the value rather than only temples, per *"universally"*.
+
+No item is skipped for carrying other `P825` statements — those have different values and are
+untouched, and skipping items to "protect" them is the guard-that-refuses shape CLAUDE.md warns
+about.
+
+### ⚠ The same error recurs twice more and is deliberately NOT fixed
+
+`Q1139795` 国宝 *National Treasure of Japan* — **23 queued lines** — is the identical mistake, another
+cultural-property designation caught by the same wikilink sweep. `Q11595955` 秘仏 *hibutsu* (53 lines)
+is a class of concealed icon rather than a named deity, which is arguable rather than plainly wrong.
+
+Emma named one QID. Both generators keep their invalid lists as sets so a further ruling is a
+one-line change, but an entry needs **her word** — a session deciding that something else looks wrong
+is how scope grows without anyone agreeing to it. Put to her as a question; not acted on.
+
+`tests/test_invalid_p825.py` pins the refusal, pins that no batch in the directory ADDS it (which
+catches a regression arriving from somewhere other than the honzon generator), and pins that
+`INVALID_VALUES` still contains exactly the one QID she ruled on.
+
+
 ## 2026-09-12 — the completion estimate was answering with July's machinery
 
 `docs/wikidata-completion-estimate.md` exists because Emma asked *"how long it'll take our total

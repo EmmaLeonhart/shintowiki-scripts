@@ -51,6 +51,26 @@ OUTPUT = os.path.join(HERE, "honzon_p825.txt")
 
 # Same ordered-alternation defect as 祭神: `[^\n|]` halted at the pipe inside the
 # first piped wikilink, dropping every later 本尊. See infobox_fields.py.
+# ⛔ NEVER emit these as a honzon. Emma, 2026-09-12, on Q1188622:
+# "a completely invalid thing and we should never add it and should universally
+# remove it from all items it is present on."
+#
+# P825 is "dedicated to" — the deity a temple's main image IS. Q1188622 is
+# 重要文化財, Important Cultural Property of Japan: a designation the Agency for
+# Cultural Affairs awards to an object. "Dedicated to Important Cultural
+# Property" is not a claim about anything.
+#
+# It gets in because this generator takes EVERY wikilink in the 本尊 field, and
+# temple infoboxes write the designation alongside the deity:
+#     |本尊 = [[阿弥陀如来]]（[[重要文化財]]）
+# Q1188622 was the SECOND most-emitted value in honzon_p825.txt — 100 of 973
+# lines — behind only Amitābha.
+#
+# `generate_invalid_p825_removals.py` takes the ones that already landed.
+INVALID_HONZON = {
+    "Q1188622",   # 重要文化財 Important Cultural Property of Japan
+}
+
 _FIELD_RE = re.compile(field_pattern("本尊"))
 _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 
@@ -183,12 +203,15 @@ def main():
     resolved = resolve_links(all_targets)
     print(f"{len(resolved)}/{len(all_targets)} deity link targets resolve to Wikidata items")
 
-    lines, dup = [], 0
+    lines, dup, invalid = [], 0, 0
     for (title, qid), links in sorted(shrine_deities.items()):
         url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
         for t in dict.fromkeys(links):
             d = resolved.get(t)
             if not d:
+                continue
+            if d in INVALID_HONZON:
+                invalid += 1
                 continue
             if (qid, d) in have:
                 dup += 1
@@ -197,7 +220,7 @@ def main():
     lines = sorted(set(lines))
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
-    print(f"{len(lines)} P825 lines -> {OUTPUT} (already-present pairs skipped: {dup})")
+    print(f"{len(lines)} P825 lines -> {OUTPUT} (already-present pairs skipped: {dup}, invalid honzon refused: {invalid})")
 
 
 if __name__ == "__main__":

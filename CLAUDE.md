@@ -730,6 +730,37 @@ blanket removals file is the wrong shape (the existing `generate_description_fix
 most orphans by supplying the missing label; removal is only for the residue). Read it before
 generating any label or description QuickStatements.
 
+## ⛔ P825 → Q1188622 IS INVALID: never add it, remove it wherever it appears (Emma, 2026-09-12)
+
+> *"https://www.wikidata.org/wiki/Property:P825 https://www.wikidata.org/wiki/Q1188622 is a
+> completely invalid thing and we should never add it and should universally remove it from all
+> items it is present on"*
+
+`P825` is **dedicated to** — the deity a temple's main image *is*, or the kami a shrine enshrines.
+`Q1188622` is 重要文化財, **Important Cultural Property of Japan**, a designation the Agency for
+Cultural Affairs awards to an object. *"Dedicated to Important Cultural Property"* asserts nothing.
+
+**How it got in, because the mechanism is the useful part.**
+`generate_honzon_quickstatements.py` takes **every wikilink** out of the jawiki `{{日本の寺院}}`
+`本尊` field, and temple infoboxes write the designation next to the deity:
+
+    |本尊 = [[阿弥陀如来]]（[[重要文化財]]）
+
+so the designation reads as a second honzon. It was the **second most-emitted value** in
+`honzon_p825.txt` — 100 of 973 lines, behind only Amitābha — and **12 had reached Wikidata**.
+
+**What is in place:** `INVALID_HONZON` in `generate_honzon_quickstatements.py` refuses it, the 100
+staged lines are stripped, and `generate_invalid_p825_removals.py` → `invalid_p825_removals.txt`
+removes the 12 live ones, re-derived from SPARQL each run so it goes inert once they are gone.
+
+⚠ **The same shape recurs and is NOT covered by this rule.** `Q1139795` 国宝 *National Treasure of
+Japan* is the identical error — another cultural-property designation in the `本尊` field, 23 queued
+lines — and `Q11595955` 秘仏 *hibutsu* (53 lines) is a class of concealed icon rather than a named
+deity. **Neither is blocked**, because Emma named `Q1188622` and only that. `INVALID_VALUES` in the
+removal generator and `INVALID_HONZON` in the honzon generator are both sets so a further ruling
+extends them in one line each — but an entry needs **her word**, not a session's judgement that
+something looks wrong.
+
 ## Wikidata data model for shrine festivals & bunrei
 
 **The authoritative model is [`docs/wikidata_shrine_festival_model.md`](docs/wikidata_shrine_festival_model.md)**
