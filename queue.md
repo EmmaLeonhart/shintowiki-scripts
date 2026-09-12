@@ -9,6 +9,22 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- **Fill `{{wikidata link}}` on the 58 named pages that have no interwiki pairs to resolve from.**
+  Promoted from `todo.md` 2026-09-12 (Emma's Shizensha item). Measured, so the numbers below are the
+  wiki's, not an estimate: `shinto_miraheze/report_blank_wikidata_links.py`, whole of ns 0.
+  - The ADD half is built and 95% done: **10,521 of 11,069** non-redirect mainspace pages carry a
+    filled `{{wikidata link|Q…}}`. **233 blank**, **315 with no template at all**.
+  - The gap is real but small: of the 233 blank, **170 are Q-titled stubs** (the QID is the title,
+    and `dedupe_duplicate_qids` is going to redirect them into the real-named page, so they are not
+    worth filling), 5 are lists/dabs, and **58 are named pages like `Shizensha`** — the ones
+    `wikidata_lookup` can never reach, because it resolves only from the template's own
+    (lang, target) pairs and these have none.
+  - [ ] Resolve those 58. ⛔ NOT with a per-page `wbsearchentities`/SPARQL sweep — CLAUDE.md forbids
+    exactly that shape. 58 is small enough to resolve from a source we already hold, or by hand.
+  - The 315 with no template are a separate and mostly-not-ours population: 57 Q-titled, and much of
+    the rest are language-prefixed mainspace titles (`Az:Bəşəriyyət`, `Ba:Category:…`, `Ast:Torre`)
+    plus `Main Page`. Weird is signal here — do not point an op at them without asking.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

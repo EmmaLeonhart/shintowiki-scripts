@@ -4,6 +4,61 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the blank `{{wikidata link}}` population is 233, and only 58 of them are the job
+
+Emma's `todo.md` item — *"add the wikidata template to existing articles. Look at Shizensha, it
+should get at the bottom a link to Q139921367"* — promoted and measured. It had no number attached,
+and the number turns out to decide what to build.
+
+### Where the hole actually is
+
+The ADD half is built: the `wikidata_link` op appends a blank `{{wikidata link}}` to every ns-0/14
+page. The FILL half is `wikidata_lookup`, and it resolves the QID **out of the template's own
+(lang, target) pairs**. `Shizensha` has a blank template and no pairs, so no number of runs will ever
+resolve it — while `Q139921367` sits there carrying `en: Shizensha` and a jawiki sitelink to 自然社.
+
+### Counting it without reading 11,069 bodies
+
+`Template:Wikidata link` emits `[[da:{{{1}}}]]` from **inside** `{{#if:{{{1|}}}|…}}`. The Danish
+langlink therefore exists exactly when the template has a QID, so one `allpages` sweep asking for
+`templates` + `langlinks&lllang=da` answers the question in 72 requests instead of a full-text
+download. `shinto_miraheze/report_blank_wikidata_links.py` is that sweep; it writes
+`docs/blank_wikidata_links.md` and makes no edit, so the shinto.miraheze lockout does not gate it.
+Validated against the one page whose answer was known in advance: `Shizensha` → `blank`.
+
+| verdict | pages | |
+|---|---:|---|
+| filled | **10,521** | 95.0% — `{{wikidata link\|Q…}}` |
+| blank | **233** | 2.1% — template, no QID |
+| missing | **315** | 2.8% — no template at all |
+
+### The 233 is not the worklist; 58 is
+
+**170 of the 233 are Q-titled stubs** — the QID is literally the page title, and
+`dedupe_duplicate_qids.py` is going to redirect them into the real-named page, so filling their
+template is work on pages that are about to stop existing as pages. 5 more are lists and a dab.
+**58 are named pages like `Shizensha`.** That is the job, and at 58 it does not justify the
+per-page `wbsearchentities` sweep that would otherwise be the obvious build — CLAUDE.md forbids
+exactly that shape, and the size says it was never needed.
+
+The 315 missing the template are a different population and mostly not ours: 57 Q-titled, `Main
+Page`, and a long tail of language-prefixed mainspace titles — `Az:Bəşəriyyət`, `Ba:Category:…`,
+`Ast:Torre`, `Arc:`. Weird is signal on this wiki; nothing is pointed at them.
+
+### Two things found while measuring, neither of them a defect
+
+`[[Category:Pages without wikidata]]` reads **0 members** while pages with a blank template plainly
+exist. The template's no-QID branch is `{{#switch:{{NAMESPACE}}|=|Category=}}` — it emits nothing.
+That is the reintroduction-collision fix CLAUDE.md describes, working as intended; the category is
+simply not the way to find these pages any more, which is why the sweep above exists.
+
+`shinto.miraheze` editing has been **locked since 2026-09-06** (`wiki_editing_lockout.state`, weekly
+edit-test got a 403, re-tests 2026-09-14), so `Git Synced Sync` has been skipping and the live
+`[[Open questions]]` page is still the 2026-08-25 revision — yesterday's katakana question has not
+reached the wiki and will not until the lock lifts. Wikidata is the other way round: that lockout
+expired 2026-09-01 and `direct-daily-edits` is running green.
+
+
 ## 2026-09-11 — Jingū and Taisha become Kuil Agung, and the Indonesian rebuild is closed out
 
 The rebuild itself shipped yesterday in `58307e75` and was never closed out — the queue item stayed,
