@@ -4,6 +4,57 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — 9 of the 58 blank `{{wikidata link}}` pages resolved, Shizensha among them
+
+`shinto_miraheze/resolve_blank_wikidata_links.py`. Read-only against both wikis; the applier is a
+separate script on purpose.
+
+### The check that mattered
+
+Emma's todo named the answer in advance — `Shizensha` should link to `Q139921367`. The resolver
+reaches it, and not by being told: `Shizensha` is a sitelink of nothing, because `Q139921367`'s jawiki
+sitelink is 自然社. The page states that name itself, in its infobox `native_name`, and one batched
+jawiki sitelink lookup on it returns exactly `Q139921367`.
+
+That is the whole method — the page's own stated name, not a search.
+
+### Three evidence steps, four requests, no search
+
+CLAUDE.md forbids the obvious build here: *"Never issue a large batched SPARQL sweep"*, *"Wikidata is
+a DESTINATION, not a database to query for working data."* A per-page `wbsearchentities` over 58
+titles is exactly that shape. Instead:
+
+1. **Our own staged `en_labels` batches** — free, no request. Resolved 1 (`Take Shrine`).
+2. **One batched `wbgetentities` sitelink call per wiki** — `sites=enwiki&titles=A|B|C…`, 50 at a
+   time, so 2 requests per wiki rather than 58. Resolved 5.
+3. **The page's own Japanese name**, read only from fields that ANNOUNCE it as the name
+   (`native_name`, `{{Nihongo}}`'s second argument, `{{lang|ja}}`), then one more batched jawiki
+   lookup. Resolved 3, including Shizensha.
+
+| | |
+|---|---:|
+| resolved | **9** |
+| refused, no sitelink and no stated Japanese name | 39 |
+| refused, stated name is not a sitelink | 6 |
+| refused, title 1-2 characters (`R`, `S`, `T`) | 3 |
+| refused, two stated names resolving to different items | 1 |
+
+### The refusals are the design, and the tests defend them
+
+39 of the 49 are Tenrikyo sect texts, kuni-no-miyatsuko and shintowiki-only pages; many plainly have
+no Wikidata item at all, and "unresolved" is the correct answer for them, not a shortfall.
+
+The step that can go quietly wrong is the third one. These articles are full of incidental Japanese —
+a deity, an address, a prefecture, a shrine rank — and a bare CJK run lifted from the body would hand
+the sitelink lookup a place name and get back a confident, wrong item. So the extractor reads
+announced-name fields only, and `test_resolve_blank_wikidata_links.py` spends most of its length on
+what must NOT match.
+
+Still to do: the applier, wired into `wiki-cleanup.yml` where the creds live. shinto.miraheze is
+locked until 2026-09-14, so it lands on the first fire after that — the lockout gates the write, not
+the build.
+
+
 ## 2026-09-12 — the Agung rule shipped 16 labels and one of them was a disambiguation page
 
 The regeneration `4cea5db5` triggered finished (24m36s, green) and the four labels the whole rebuild
