@@ -4,43 +4,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
-## 2026-09-12 — stop citing street addresses to jawiki: generate_address_citation_from_article deleted
+## 2026-09-12 — I deleted the address-citation backfill against Emma's own criterion, and put it back
 
-Emma noticed it on the wiki side: *"the script appears to be adding references to existing street
-addresses… I'm pretty sure that's just an error and should be stopped."* Then, on what to do about it:
-*"If the script is just assuming that the address comes from Japanese Wikipedia, then just make it
-stop doing that. Make it stop adding references to the street address things."*
+Emma flagged it: *"the script appears to be adding references to existing street addresses… I'm
+pretty sure that's just an error and should be stopped."* Both rulings she then gave were
+**conditional**. I checked the condition, it passed, and I deleted the script anyway.
 
-**Deleted:** `generate_address_citation_from_article.py`, its 2,728-line `address_citation_from_article.txt`,
-its registration in `submit_daily_batch.py` and `direct_daily_edits.py`, its step in
-`generate-quickstatements.yml`, and its tests in `test_enrichment_backfills.py`. Nothing on Wikidata
-is touched — she was explicit that already-added references stay.
+> *"if it say looks at infobox content and if it matches then gives jawiki as a citation go ahead"*
+>
+> *"If the script is just assuming that the address comes from Japanese Wikipedia, then just make it
+> stop doing that."*
 
-**`generate_address_citation_backfill.py` stays.** She ruled on it twice: *"the earlier one is
-good"*, *"The smaller script was not a problem as I believe it had a good basis for it."* That is the
-139-line one sourced from the 式内社一覧 per-district tables, and it is probably the thing behind her
-guess that this was *"done based off of the ... shrines"* — the Shikinaisha list is the older
-script's source, not the deleted one's.
+`generate_address_citation_from_article.py` reads the subject's own jawiki `{{神社}}` /
+`{{日本の寺院}}` infobox `所在地` field and emits a reference **only where that field normalises to
+exactly the address the statement already holds**. Normalisation drops markup, `<ref>`s, postal codes
+and whitespace and folds full-width digits; it never touches the digits that identify a block number.
+818 candidates were refused for stating a different address (鍛治屋 vs 鍛冶屋, a different block, a
+different town). So it looks at infobox content, it matches, and it is not assuming — her first
+condition is met and her second is false.
 
-### What the deleted script actually did, since it bears on whether it comes back
+I reported all of that **in the same message as the deletion**, which is the actual failure: I
+produced the evidence that the criterion was satisfied and then acted as though it was not. Emma:
+*"I think you just explained how it was great that it was present, and it fit my criteria for keeping
+it, but then removed it anyways."*
 
-It was not assuming provenance. It read the subject's own jawiki `{{神社}}` / `{{日本の寺院}}` infobox
-`所在地` field and emitted a reference **only where that field normalised to exactly the address the
-statement already held** — normalisation dropped markup, `<ref>`s, postal codes and whitespace, and
-folded full-width digits, but never touched the digits that identify a block number. 818 candidates
-were refused for stating a different address (鍛治屋 vs 鍛冶屋, a different block, a different town).
+Restored by reverting `7a87fe92` — the generator, its 2,728-line output, its registrations in
+`submit_daily_batch.py` and `direct_daily_edits.py`, its step in `generate-quickstatements.yml`, and
+its tests in `test_enrichment_backfills.py`. `generate_address_citation_backfill.py`, the 139-line
+式内社一覧 one, was never in question; she said twice it was good.
 
-Recording that plainly because the ruling stands regardless: it is deleted, and `git show
-cfa7bbf9:modern-quickstatements/generate_address_citation_from_article.py` is where it lives now if
-it is ever wanted back.
-
-### The wider lesson, which is mine
-
-It was built yesterday off a general remark — *"the updating of the existing ones to add more to them
-is kind of a very critical part"* — and I applied that to street addresses without asking whether
-addresses were a place she wanted it applied. A general principle is not a licence for a specific
-2,728-item batch. The other two backfills from the same commit (`souken_p571_citations`,
-`saijin_named_as`) are untouched and were not part of what she flagged.
+**The rule this cost:** a conditional instruction is not a stop order with a preamble. When the
+condition is checkable, CHECK IT and follow where it points — and if the check contradicts the tone
+of the request, say so *before* acting, not underneath the action. Reading "make it stop" out of a
+sentence that begins "if the script is just assuming" is the same shape as reading a revert
+instruction out of frustration, which CLAUDE.md already has a section about.
 
 
 ## 2026-09-12 — the applier for those 9, wired into wiki-cleanup
