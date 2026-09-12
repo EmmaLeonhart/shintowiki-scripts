@@ -107416,18 +107416,22 @@ Q140953202	Lko	"야간신사미빈정"
 Q140962719	Lko	"석신정신사"
 # Source: JA "荒太神社" (hanja reading)
 Q141046217	Lko	"황태신사"
+# Source: JA "成石神社" (hanja reading)
+Q141063863	Lko	"성석신사"
 # Source: JA "天尾神社" (hanja reading)
 Q141107407	Lko	"천미신사"
 # Source: JA "阿奈志神社 (愛知県美浜町)" (hanja reading)
 Q141109003	Lko	"아내지신사애지현미빈정"
-# Source: JA "壬生神社 (愛知県美浜町)" (hanja reading)
-Q141135039	Lko	"임생신사애지현미빈정"
+# Source: JA "壬生神社" (hanja reading)
+Q141135039	Lko	"임생신사"
 # Source: JA "海椙神社" (hanja reading)
 Q141143028	Lko	"해창신사"
 # Source: JA "春日神社" (hanja reading)
 Q141147558	Lko	"춘일신사"
 # Source: JA "須男神社" (hanja reading)
 Q141148407	Lko	"수남신사"
+# Source: JA "廣石神社" (hanja reading)
+Q141156651	Lko	"광석신사"
 # Source: JA "冨士山小御嶽神社" (hanja reading)
 Q141163727	Lko	"부사산소어악신사"
 # Source: JA "箭比神社" (hanja reading)
@@ -107474,6 +107478,14 @@ Q141272977	Lko	"삼산신사"
 Q141344360	Lko	"하합신사"
 # Source: JA "業葉神社" (hanja reading)
 Q141390681	Lko	"업엽신사"
+# Source: JA "鴨田天満宮" (hanja reading)
+Q141436766	Lko	"압전천만궁"
+# Source: JA "神明神社" (hanja reading)
+Q141436789	Lko	"신명신사"
+# Source: JA "白山神社（蒲郡市豊岡町）" (hanja reading)
+Q141436802	Lko	"백산신사포군시풍강정"
+# Source: JA "若宮神社" (hanja reading)
+Q141436824	Lko	"약궁신사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
