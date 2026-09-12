@@ -4,6 +4,51 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — the class rule was wrong twice more, and the second one would have deleted 42 good statements
+
+`4d4ef702` blocked `P31 = Q30634609`. That was too narrow, and widening it went badly before it went
+right. All three attempts are recorded because each looked correct when written.
+
+| attempt | caught | also caught |
+|---|---|---|
+| `?v wdt:P31 wd:Q30634609` | 2 of the 4 designations | — |
+| `?v (wdt:P31\|wdt:P279)/wdt:P279* wd:Q2065736` | all 4 | **42 legitimate statements** |
+| `?v wdt:P279* wd:Q2065736` | all 4 | `Q101659` dolmen |
+| **`?v wdt:P279* wd:Q858308`** | **all 4** | **nothing** |
+
+### Why the wide one was so wrong
+
+`Q858308` 日本の文化財 and `Q2901860` 有形文化財 carry **no `P31` at all**, so a `P31` test misses
+them — that is what pushed the walk wider. But adding the `P31` leg to a transitive subclass walk
+changes the question from *"is the value a KIND of cultural property"* to *"is the value AN INSTANCE
+of one"*, and that is true of every listed building on earth.
+
+It swept up **Holy Sepulchre — 31 statements** — plus the Church of the Holy Sepulchre, Santa Maria
+sopra Minerva, Portiuncula and the Warsaw Ghetto. Churches genuinely *are* dedicated to the Holy
+Sepulchre. That batch would have removed **42 correct `P825` statements** to delete 16 wrong ones.
+
+**It was caught by listing every value the batch would remove before shipping it**, not by a test and
+not by reading. The line count going 16 → 54 is what prompted the check.
+
+### The line that actually holds
+
+**A designation is invalid; a designated thing is not.** Rooting at the Japanese designation family
+draws exactly that; rooting at cultural property in general drags in dolmens and churches.
+
+Final: **16 removals** (12 × 重要文化財, 4 × 国宝) and **123 staged lines** stopped. Verified against
+12 cases — the four designations refused; Holy Sepulchre, its church, Warsaw Ghetto, dolmen, 秘仏,
+仏像, 阿弥陀如来 and 大曼荼羅 kept.
+
+### A fourth bug, caught by the check rather than by reading
+
+`P279*` includes zero steps, so a value that IS the root should be blocked. The client-side walk in
+the honzon generator only inspected *parents*, so `Q858308` itself was let through — the SPARQL side
+had it right and the two disagreed. The twelve-case check caught it; nothing else would have.
+
+`tests/test_invalid_p825.py` now pins the root, the subclass-only walk, and the zero-step case, and
+each guard was confirmed to fail when the thing it guards is undone.
+
+
 ## 2026-09-12 (cont.) — blocked by CLASS, not by QID: 16 removals, 123 staged lines stopped
 
 Emma, asked whether the two look-alikes should be named next: *"Block the whole class instead."*

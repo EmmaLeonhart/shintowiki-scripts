@@ -754,19 +754,29 @@ staged lines are stripped, and `generate_invalid_p825_removals.py` → `invalid_
 removes the 12 live ones, re-derived from SPARQL each run so it goes inert once they are gone.
 
 ⭐ **She then chose the CLASS over naming QIDs.** Asked which look-alike to name next, Emma answered
-*"Block the whole class instead."* So both generators gate on `P31 = Q30634609` **heritage
-designation**, which catches 重要文化財, 国宝 (`Q1139795`) and any designation nobody has hit yet.
-The QID version found 12 live statements; the class version found **16**.
+*"Block the whole class instead."* Both generators gate on **`?v wdt:P279* wd:Q858308`** — the value
+must itself be a kind of *Cultural Property of Japan* (日本の文化財).
 
-⚠ **Measured before the class was chosen, and three neighbours were deliberately left alone.** Over
-all 118 distinct values the honzon generator emits, `Q30634609` holds only those two designations and
-nothing legitimate. These were checked and are NOT blocked, because each contains real honzon:
-`Q23847174` religious concept (曼荼羅, 仏舎利, and Bodhisattva itself), `Q80071` symbol (曼荼羅),
-`Q838948` work of art (`Q1410999` 大曼荼羅, Nichiren's own Gohonzon), `Q3658341` literary character
-(地蔵菩薩, 文殊菩薩, 普賢菩薩). **Do not widen the class list without measuring what it excludes.**
+    Q1139795 国宝 -P279-> Q1188622 重要文化財 -P279-> Q2901860 有形文化財 -P279-> Q858308
 
-⚠ **秘仏 hibutsu (`Q11595955`, 53 lines) has NO `P31` at all**, so no class rule reaches it. It is
-still emitting. That is a known state, not an oversight.
+⛔ **Two narrower/wider versions were wrong first, and both looked right. Do not reintroduce either.**
+
+| attempt | result |
+|---|---|
+| `?v wdt:P31 wd:Q30634609` | **too narrow.** `Q858308` and `Q2901860` carry NO `P31` at all, so it caught 2 of the 4 |
+| `?v (wdt:P31\|wdt:P279)/wdt:P279* wd:Q2065736` | **far too wide.** The `P31` leg means *"the value is an instance of a cultural property"* — true of every listed building. It swept up **Holy Sepulchre (31 statements)**, its church, Santa Maria sopra Minerva, Portiuncula and the Warsaw Ghetto, and would have deleted **42 correct statements**. Churches really are dedicated to the Holy Sepulchre. |
+| `?v wdt:P279* wd:Q2065736` | still took `Q101659` dolmen — a monument type that subclasses cultural property without being a designation |
+
+**The line to hold: a DESIGNATION is invalid, a designated THING is not.** Rooting at the Japanese
+designation family draws it; rooting at cultural property in general does not. Verified against 12
+cases before shipping — the four designations refused; Holy Sepulchre, its church, the Warsaw Ghetto,
+dolmen, 秘仏, 仏像, 阿弥陀如来 and Nichiren's 大曼荼羅 all kept. `tests/test_invalid_p825.py` pins the
+walk, the root, and the fact that the root itself is blocked (`P279*` includes zero steps; the first
+client-side walk only looked at parents and let `Q858308` through).
+
+⚠ **秘仏 hibutsu (`Q11595955`, 53 lines) is NOT reached** — its chain is `Q1000809` Buddharupa →
+statue, an object of worship rather than a designation. Still emitting; a known state, not an
+oversight. Same for 仏像 itself.
 
 ## Wikidata data model for shrine festivals & bunrei
 

@@ -26,14 +26,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MQ = os.path.dirname(HERE)
 
 INVALID = "Q1188622"          # 重要文化財, the one Emma named
-HERITAGE_CLASS = "Q30634609"  # the class she then asked for instead
+ROOT = "Q858308"              # 日本の文化財 — the root of the class she asked for
 
 
 def test_the_honzon_generator_refuses_the_whole_class():
     """Emma chose a class over a list of QIDs — *Block the whole class instead*."""
     src = open(os.path.join(MQ, "generate_honzon_quickstatements.py"), encoding="utf-8").read()
-    assert "INVALID_HONZON_CLASSES" in src, "the class gate is gone"
-    assert HERITAGE_CLASS in src, f"{HERITAGE_CLASS} is no longer blocked"
+    assert "INVALID_HONZON_ROOTS" in src, "the class gate is gone"
+    assert ROOT in src, f"{ROOT} is no longer the blocked root"
     assert "if d in refused:" in src, (
         "the gate exists but nothing consults it in the emit loop")
     assert "def refused_classes(" in src
@@ -69,10 +69,35 @@ def test_the_removal_generator_works_by_class_not_by_qid():
     before she said to block the class: the QID version found 12 statements, the
     class version found 16."""
     src = open(os.path.join(MQ, "generate_invalid_p825_removals.py"), encoding="utf-8").read()
-    assert "INVALID_VALUE_CLASSES" in src
-    assert HERITAGE_CLASS in src
-    assert "?v wdt:P31 wd:{cls}" in src, (
-        "the query no longer filters by the VALUE's class")
+    assert "INVALID_VALUE_ROOTS" in src
+    assert ROOT in src
+    assert "?v wdt:P279* wd:{root}" in src, (
+        "the query no longer walks the subclass chain from the value")
+
+
+def test_the_walk_is_subclass_only():
+    """P31 must NOT be in the walk. `(P31|P279)/P279*` means "the value is an
+    INSTANCE of a cultural property", which is true of every listed building —
+    that version swept up Holy Sepulchre (31 statements), its church, Santa Maria
+    sopra Minerva, Portiuncula and the Warsaw Ghetto. Churches genuinely are
+    dedicated to the Holy Sepulchre; it would have deleted 42 correct statements."""
+    # Match the QUERY, not the prose — both docstrings quote the broken version
+    # to explain why it was wrong, and an earlier draft of this test failed on
+    # its own explanation.
+    rm = open(os.path.join(MQ, "generate_invalid_p825_removals.py"), encoding="utf-8").read()
+    query = rm[rm.index("rows = wdqs("):rm.index("return sorted({(b[")]
+    assert "wdt:P31" not in query, "the removal query reintroduced the P31 leg"
+    assert "?v wdt:P279* wd:{root}" in query
+
+    hz = open(os.path.join(MQ, "generate_honzon_quickstatements.py"), encoding="utf-8").read()
+    assert 'for prop in ("P279",):' in hz, "the client-side walk follows P31 again"
+
+
+def test_the_root_itself_is_blocked():
+    """`P279*` includes zero steps. The first client-side walk only inspected
+    parents, so Q858308 — which IS the root — was let through."""
+    hz = open(os.path.join(MQ, "generate_honzon_quickstatements.py"), encoding="utf-8").read()
+    assert "blocked = {q for q in qids if q in INVALID_HONZON_ROOTS}" in hz
 
 
 def test_classes_holding_real_honzon_are_not_blocked():
@@ -80,8 +105,10 @@ def test_classes_holding_real_honzon_are_not_blocked():
     these holds a legitimate honzon — 曼荼羅, 仏舎利, Nichiren's own 大曼荼羅,
     地蔵菩薩 — so blocking them would drop real data to catch a designation."""
     src = open(os.path.join(MQ, "generate_invalid_p825_removals.py"), encoding="utf-8").read()
-    block = src[src.index("INVALID_VALUE_CLASSES = {"):]
+    block = src[src.index("INVALID_VALUE_ROOTS = {"):]
     block = block[:block.index("}")]
     for cls, why in (("Q23847174", "religious concept"), ("Q80071", "symbol"),
-                     ("Q838948", "work of art"), ("Q3658341", "literary character")):
-        assert cls not in block, f"{cls} ({why}) contains real honzon and must not be blocked"
+                     ("Q838948", "work of art"), ("Q3658341", "literary character"),
+                     ("Q2065736", "cultural property — too wide, takes dolmen"),
+                     ("Q30634609", "heritage designation — too narrow, misses 2 of 4")):
+        assert cls not in block, f"{cls} ({why}) must not be the root"

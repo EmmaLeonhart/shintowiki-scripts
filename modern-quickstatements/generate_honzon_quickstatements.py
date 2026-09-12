@@ -81,25 +81,70 @@ OUTPUT = os.path.join(HERE, "honzon_p825.txt")
 #
 # ⚠ 秘仏 hibutsu (Q11595955, 53 lines) has NO P31 at all, so no class rule can
 # reach it. It is left emitting, and named here so that is a known state.
-INVALID_HONZON_CLASSES = {
-    "Q30634609",   # heritage designation — 重要文化財, 国宝, and any future one
+# The root of the class, reached by P279 ONLY. Two wrong versions came first:
+#   * P31 = Q30634609 alone caught 2 of the 4 — Q858308 (日本の文化財) and
+#     Q2901860 (有形文化財) carry no P31 at all.
+#   * (P31|P279)/P279* to Q2065736 cultural property caught all four AND 42
+#     legitimate statements, because "instance of a cultural property" is true of
+#     every listed building: Holy Sepulchre (31), its church, Santa Maria sopra
+#     Minerva, Portiuncula, the Warsaw Ghetto.
+# Subclass-only, rooted at the Japanese designation family, draws it exactly:
+#     Q1139795 国宝 -P279-> Q1188622 -P279-> Q2901860 -P279-> Q858308
+#
+# ⭐ It does NOT reach 秘仏 (Q11595955 -P279-> Q1000809 Buddharupa -P279-> statue),
+# 仏像, or Q101659 dolmen — a monument type that subclasses cultural property
+# without being a designation. The chain draws the line; a session does not.
+INVALID_HONZON_ROOTS = {
+    "Q858308",     # Cultural Property of Japan 日本の文化財, and every subclass
 }
+MAX_CLASS_DEPTH = 6
 
 
 def refused_classes(qids):
-    """{qid} whose P31 includes a blocked class. One batched call per 50."""
-    bad = set()
-    qids = sorted(q for q in qids if q)
-    for i in range(0, len(qids), 50):
-        d = _get({"action": "wbgetentities", "props": "claims",
-                  "ids": "|".join(qids[i:i + 50])}, api=WD_API)
-        for qid, ent in (d.get("entities") or {}).items():
-            for c in (ent.get("claims") or {}).get("P31", []):
-                v = c["mainsnak"].get("datavalue", {}).get("value", {})
-                if isinstance(v, dict) and v.get("id") in INVALID_HONZON_CLASSES:
-                    bad.add(qid)
-        time.sleep(0.3)
-    return bad
+    """{qid} whose P31/P279 ancestry reaches a blocked root.
+
+    Walks upward in batches rather than asking SPARQL, so this script keeps its
+    one dependency (the two MediaWiki APIs) and costs a handful of requests.
+    """
+    # `P279*` includes zero steps, so a target that IS a root counts. The first
+    # version only looked at parents and let Q858308 itself through — caught by
+    # the nine-case check, not by reading.
+    blocked = {q for q in qids if q in INVALID_HONZON_ROOTS}
+    seen = set()
+    frontier = {q for q in qids if q}
+    origin = {q: {q} for q in frontier}          # ancestor -> which targets it came from
+    for _ in range(MAX_CLASS_DEPTH):
+        frontier = {q for q in frontier if q not in seen}
+        if not frontier:
+            break
+        seen |= frontier
+        parents = {}
+        batch = sorted(frontier)
+        for i in range(0, len(batch), 50):
+            d = _get({"action": "wbgetentities", "props": "claims",
+                      "ids": "|".join(batch[i:i + 50])}, api=WD_API)
+            for qid, ent in (d.get("entities") or {}).items():
+                claims = ent.get("claims") or {}
+                # P279 ONLY. Adding P31 means "the value is an instance of a
+                # cultural property", which is true of every listed building —
+                # it swept up Holy Sepulchre, its church, and the Warsaw Ghetto.
+                for prop in ("P279",):
+                    for c in claims.get(prop, []):
+                        v = c["mainsnak"].get("datavalue", {}).get("value", {})
+                        if isinstance(v, dict) and v.get("id"):
+                            parents.setdefault(qid, set()).add(v["id"])
+            time.sleep(0.3)
+        nxt = set()
+        for qid, ps in parents.items():
+            src = origin.get(qid, set())
+            for parent in ps:
+                if parent in INVALID_HONZON_ROOTS:
+                    blocked |= src
+                else:
+                    origin.setdefault(parent, set()).update(src)
+                    nxt.add(parent)
+        frontier = nxt
+    return blocked
 
 
 _FIELD_RE = re.compile(field_pattern("本尊"))

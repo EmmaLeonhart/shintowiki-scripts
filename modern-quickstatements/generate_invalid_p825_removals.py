@@ -10,9 +10,31 @@ or shrine is dedicated to.
 Emma, 2026-09-12, on ``Q1188622``: *"a completely invalid thing and we should
 never add it and should universally remove it from all items it is present on."*
 Then, asked which of the look-alikes to name next: *"Block the whole class
-instead."* So this removes by **class**, not by a list of QIDs — ``Q1188622``
-(重要文化財) and ``Q1139795`` (国宝) are both ``P31 = Q30634609``, and so is any
-designation nobody has run into yet.
+instead."* So this removes by **class ancestry**, not by a list of QIDs.
+
+The walk is ``?v wdt:P279* wd:Q858308`` — **subclass only, rooted at the Japanese
+designation family**. Two wrong versions came first and both are worth recording,
+because each looked right:
+
+1. ``?v wdt:P31 wd:Q30634609``. Too narrow. ``Q858308`` (日本の文化財) and
+   ``Q2901860`` (有形文化財) carry **no P31 at all**, so it caught 2 of the 4
+   designations and left 16 staged lines in place.
+2. ``?v (wdt:P31|wdt:P279)/wdt:P279* wd:Q2065736``. Far too wide. The ``P31`` leg
+   means *"the value is an instance of a cultural property"*, which is true of
+   every listed building on earth — it swept up **Holy Sepulchre (31 statements)**,
+   the Church of the Holy Sepulchre, Santa Maria sopra Minerva, Portiuncula and
+   the Warsaw Ghetto. Churches really are dedicated to the Holy Sepulchre; those
+   are correct statements and it would have deleted 42 of them.
+
+Dropping the ``P31`` leg fixed most of it and still took ``Q101659`` dolmen, which
+subclasses cultural property as a monument type rather than as a designation.
+Rooting at ``Q858308`` instead of ``Q2065736`` draws the line exactly:
+
+    Q1139795 国宝 -P279-> Q1188622 -P279-> Q2901860 -P279-> Q858308
+
+⭐ Verified against 12 cases before shipping: the four designations refused;
+Holy Sepulchre, its church, Warsaw Ghetto, dolmen, 秘仏, 仏像, 阿弥陀如来 and
+Nichiren's 大曼荼羅 all kept.
 
 ``P825`` is **dedicated to** — the deity a temple's main image *is*, or the kami a
 shrine enshrines. ``Q1188622`` is 重要文化財, *Important Cultural Property of
@@ -88,11 +110,11 @@ OUTPUT = os.path.join(HERE, "invalid_p825_removals.txt")
 # checked and left alone — Q23847174 religious concept, Q80071 symbol and
 # Q838948 work of art each contain real honzon (曼荼羅, 仏舎利, and Nichiren's own
 # 大曼荼羅), and Q3658341 literary character is full of bodhisattvas.
-INVALID_VALUE_CLASSES = {
-    "Q30634609": "heritage designation — 重要文化財, 国宝, and any future one",
+# ⭐ ONE root, reached by P279 ONLY. Both halves of that were arrived at by being
+# wrong first; see the generator docstring.
+INVALID_VALUE_ROOTS = {
+    "Q858308": "Cultural Property of Japan 日本の文化財 — and every subclass",
 }
-
-
 def wdqs(query):
     time.sleep(WDQS_THROTTLE)
     url = WDQS + "?format=json&query=" + urllib.parse.quote(query)
@@ -109,14 +131,17 @@ def wdqs(query):
         raise
 
 
-def holders(cls):
-    """[(item, value)] for every P825 whose VALUE is in this class, any subject.
+def holders(root):
+    """[(item, value)] for every P825 whose VALUE's class ancestry reaches `root`.
 
-    Returns the value too, because a removal line has to name it — and because a
-    class can hold more than one, which is the whole reason it is a class.
+    `wdt:P279*` — subclass only, and rooted at the Japanese designation family.
+    Both of those were learned by getting it wrong; see the module docstring.
+
+    The value is returned too, because a removal line names it and because a
+    class holds more than one, which is the point of using a class.
     """
     rows = wdqs(f"""SELECT DISTINCT ?s ?v WHERE {{
-      ?s wdt:P825 ?v . ?v wdt:P31 wd:{cls} }}""")
+      ?s wdt:P825 ?v . ?v wdt:P279* wd:{root} }}""")
     return sorted({(b["s"]["value"].rsplit("/", 1)[-1],
                     b["v"]["value"].rsplit("/", 1)[-1]) for b in rows})
 
@@ -132,7 +157,7 @@ def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
     pairs = []
-    for cls, why in sorted(INVALID_VALUE_CLASSES.items()):
+    for cls, why in sorted(INVALID_VALUE_ROOTS.items()):
         found = holders(cls)
         pairs += found
         vals = sorted({v for _, v in found})
