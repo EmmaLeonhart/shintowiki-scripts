@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — how a bare P612 gets onto Wikidata from a file that never emits one: confirmed
+
+The conformity re-measurement left this as "not established". It is now established, by reading
+`direct_daily_edits.execute_line` rather than inferring from the data.
+
+For a line that carries qualifiers, the write is **three separate API calls and is not atomic**:
+
+```
+guid = find_claim(entity, prop, value)          # already there?
+if not guid:
+    execute_create_claim(...)                   # 1. the BARE statement lands here
+    time.sleep(1)
+for q_prop, q_val in parsed["qualifiers"]:
+    ok, msg = execute_set_qualifier(guid, ...)  # 2. the qualifier
+    if not ok: return False, msg                #    ← bails, statement stays bare
+```
+
+So a line that reads `Qxxx|P612|Qyyy|P1013|Q195793` creates the bare `P612` first and attaches
+`P1013` second. If the second call fails — rate limit, maxlag, an expired CSRF token, a dropped
+connection — **the bare statement is already on Wikidata** and the line reports failure. Input files
+carrying 11,225 clean `P612` lines with zero bare ones are entirely consistent with 122 bare
+statements existing on the wiki.
+
+**It self-heals on re-draw, and that is by design.** `find_claim` runs first, so the next time the
+drip samples that line it finds the existing bare claim, skips creation, and re-attempts the
+qualifier. `bunrei_qualifier_repair.txt` (129 lines, registered in `direct_daily_edits.py`) is the
+explicit sweep for the ones that have not come round again — the random sampling means "eventually"
+can be a long time on a 116,000-line pool.
+
+**Not changed, deliberately.** `wbsetclaim` can post a claim with its qualifiers and references in
+one request, which would make this atomic. That is a change to the single code path that writes to
+Wikidata at all, its failure mode is worse than the thing it fixes, and nobody asked for it. Recorded
+here so the next person to see a bare qualifier-less statement does not re-derive the mechanism or
+assume a generator is emitting them.
+
+### And a flag from the same measurement, closed
+
+`bunrei_qualifier_repair.txt` is registered in `direct_daily_edits.py` but not in
+`submit_daily_batch.py`. Checked: **`submit_daily_batch`'s 40 files are a strict subset of
+`direct_daily_edits`'s 80** — zero files are registered only in submit. So nothing is unreachable and
+40 files sit in exactly that position. Not a defect; the live path covers everything.
+
+
 ## 2026-09-12 — the lead's bolded title is the name: 8 proposals become 12, and Take Shrine is right
 
 The entry below removed two evidence paths after `[[Take Shrine]]` resolved wrongly through each. The
