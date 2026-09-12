@@ -4,6 +4,57 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — the other 9,088 queued removals, audited: all sound
+
+The Holy Sepulchre near-miss was caught by enumerating what a removal batch would actually delete. I
+had done that for exactly one batch. There are **ten**, holding **9,104 removal lines**, all
+registered in `direct_daily_edits.py` and firing unattended. This applies the same check to the rest.
+
+| file | removals | property | distinct values |
+|---|---:|---|---:|
+| `migrate_ritsuryo_funding_remove` | 3,784 | `P31` | 7 |
+| `ronsha_ojp_name_removals` | 2,224 | `P1448` ojp-hani | 847 |
+| `list_membership_removals` | 2,115 | `P361` | 59 |
+| `orphan_membership_removals` | 793 | `P361` | 68 |
+| `kana_redundant_remove` | 89 | `P1814` | 72 |
+| `multi_ordinal_removals` | 57 | `P361` | 21 |
+| `miscellaneous_edits` | 17 | `P6375` | 17 |
+| `invalid_p825_removals` | 16 | `P825` | 2 |
+| `doujou_address_fixes` | 6 | `P6375` | 1 — `ja:"同上"` |
+| `migrate_ritsuryo_funding_underspecified_remove` | 3 | `P31` | 1 |
+
+**Every batch is narrow and matches a documented purpose.** Nothing has the shape that made the
+widened P825 rule dangerous — a broad class-match sweeping in unrelated subjects. `doujou_address_fixes`
+removes the literal `同上` address bug; the three `P361` files are the list-membership drip CLAUDE.md
+documents; `ronsha_ojp_name_removals` has its own dual-typing guard.
+
+### The one that deserved a real check
+
+`migrate_ritsuryo_funding_remove.txt` removes **3,784 `P31` type statements** — 3,153 of them
+`Q135160342` Kokuhei-sha. Removing a class from three thousand items is the most consequential thing
+queued anywhere in this repo, and its two ADD siblings (`migrate_ritsuryo_funding.txt`,
+`migrate_ritsuryo_funding_add.txt`) are **both empty**, which is precisely the ordering CLAUDE.md's
+add-first/remove-later rule warns about.
+
+**It is safe, and safe by construction rather than by luck.** The generator emits a removal only for
+an item where a fresh SPARQL query confirms the replacement is already there:
+
+```
+?item wdt:P31 wd:{v} . ?item wdt:P13723 wd:{v} .
+```
+
+— literally *"the old statement and the new statement both exist right now"*. The empty add files
+mean the adds drained, not that they never ran.
+
+Verified against live Wikidata rather than taken from the code: **8 of 8** sampled items carry both
+the `P31` being removed and the `P13723` replacement.
+
+⚠ Worth knowing for the future, from that generator's own comments: these `_remove` files were
+**silently empty from 2026-04-05 to 2026-07-07** because a WDQS outage made every phase rate-limit-skip,
+and a single cross-value join 504'd on the 4.8k-item migrations. The removals stopped and nothing
+said so. The current per-value queries and the split endpoint are the fix.
+
+
 ## 2026-09-12 (cont.) — the class rule was wrong twice more, and the second one would have deleted 42 good statements
 
 `4d4ef702` blocked `P31 = Q30634609`. That was too narrow, and widening it went badly before it went
