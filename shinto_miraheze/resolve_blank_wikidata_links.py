@@ -143,6 +143,14 @@ def named_blank_titles(report_path):
 _CJK = r"[぀-ヿ㐀-䶿一-鿿豈-﫿々〆ヵヶ・ー]"
 _NATIVE_NAME_RE = re.compile(r"\|\s*native_name\s*=\s*(" + _CJK + r"{2,})\s*(?:\||$)", re.M)
 _NIHONGO_RE = re.compile(r"\{\{\s*[Nn]ihongo\s*\|([^|{}]*)\|\s*(" + _CJK + r"{2,})\s*[|}]")
+# The canonical MediaWiki lead: the bolded page title followed by the native name
+# in parentheses. Added 2026-09-12 after measuring it across all 50 refusals — 16
+# pages carry it and 4 of those names are jawiki sitelinks, every one correct. It
+# is what gets [[Take Shrine]] RIGHT (Q11430665, "Shinto shrine in Hiroshima
+# Prefecture, Japan") after two wrong answers from weaker sources. Gated exactly
+# like Nihongo: the BOLD text must be this page's own title, which is what makes
+# the parenthetical this subject's name and not some other thing's.
+_LEAD_BOLD_RE = re.compile(r"'''\s*(.{1,120}?)\s*'''\s*[（(]\s*(" + _CJK + r"{2,})")
 
 _MACRONS = str.maketrans("āīūēōÁáĀĪŪĒŌ", "aiueoAaAIUEO")
 
@@ -170,13 +178,14 @@ def japanese_names(wikitext, title=""):
         # rather than let it through ungated — an absent title is exactly when a
         # caller would not notice the difference.
         return out
-    for m in _NIHONGO_RE.finditer(wikitext or ""):
-        romaji, name = m.group(1).strip(), m.group(2).strip()
-        if not name or name in out:
-            continue
-        if _key(romaji) != want:
-            continue
-        out.append(name)
+    for pattern in (_NIHONGO_RE, _LEAD_BOLD_RE):
+        for m in pattern.finditer(wikitext or ""):
+            claimed, name = m.group(1).strip(), m.group(2).strip()
+            if not name or name in out:
+                continue
+            if _key(claimed) != want:
+                continue
+            out.append(name)
     return out
 
 

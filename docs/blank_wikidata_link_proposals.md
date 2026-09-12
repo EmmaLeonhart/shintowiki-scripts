@@ -7,7 +7,7 @@ Resolution order: our own staged `en_labels` batches (free), then one batched
 `wbgetentities` sitelink call per wiki. No `wbsearchentities`, no SPARQL — see the
 script's docstring for why.
 
-8 resolved, 50 refused, of 58 named pages.
+12 resolved, 46 refused, of 58 named pages.
 
 ## Proposed
 
@@ -18,9 +18,13 @@ script's docstring for why.
 | [[Shikigami]] | [Q1573015](https://www.wikidata.org/wiki/Q1573015) | sitelink on enwiki |
 | [[Shinkokushi]] | [Q872361](https://www.wikidata.org/wiki/Q872361) | sitelink on enwiki |
 | [[Shizensha]] | [Q139921367](https://www.wikidata.org/wiki/Q139921367) | jawiki sitelink of its own stated name 自然社 |
+| [[Shūyōdan Hōseikai]] | [Q11386384](https://www.wikidata.org/wiki/Q11386384) | jawiki sitelink of its own stated name 修養団捧誠会 |
 | [[Si Xingjian]] | [Q8463911](https://www.wikidata.org/wiki/Q8463911) | sitelink on enwiki |
 | [[Sites of Japan's Meiji Industrial Revolution: Iron and Steel, Shipbuilding and Coal Mining]] | [Q7751872](https://www.wikidata.org/wiki/Q7751872) | sitelink on enwiki |
 | [[Suikan]] | [Q11548540](https://www.wikidata.org/wiki/Q11548540) | jawiki sitelink of its own stated name 水干 |
+| [[Taiwa Kyōdan]] | [Q11433469](https://www.wikidata.org/wiki/Q11433469) | jawiki sitelink of its own stated name 大和教団 |
+| [[Take Shrine]] | [Q11430665](https://www.wikidata.org/wiki/Q11430665) | jawiki sitelink of its own stated name 多家神社 |
+| [[Takihara-no-Miya]] | [Q11566292](https://www.wikidata.org/wiki/Q11566292) | jawiki sitelink of its own stated name 瀧原宮 |
 
 ## Refused
 
@@ -32,44 +36,40 @@ script's docstring for why.
 | [[Engishiki Ranks]] | no sitelink, and the page states no Japanese name |
 | [[Enuma no Kuni no Miyatsuko]] | no sitelink, and the page states no Japanese name |
 | [[Fire-Pacification Festival]] | no sitelink, and the page states no Japanese name |
-| [[Gary Luscombe]] | no sitelink, and the page states no Japanese name |
+| [[Gary Luscombe]] | no sitelink for its title or its stated name ラスカン |
 | [[Hyakushu (Honda Chikaatsu)]] | no sitelink, and the page states no Japanese name |
 | [[Kai clan]] | no sitelink, and the page states no Japanese name |
 | [[Kofun interior gallery]] | no sitelink, and the page states no Japanese name |
 | [[Michi no Hikari and the Bible]] | no sitelink, and the page states no Japanese name |
-| [[Michi no Taigen]] | no sitelink, and the page states no Japanese name |
+| [[Michi no Taigen]] | no sitelink for its title or its stated name 道之大原 |
 | [[Okimono omikuji]] | no sitelink, and the page states no Japanese name |
 | [[QuickStatements]] | no sitelink, and the page states no Japanese name |
 | [[R]] | title too short to be evidence |
-| [[Reigakushō]] | no sitelink, and the page states no Japanese name |
+| [[Reigakushō]] | no sitelink for its title or its stated name 霊学抄 |
 | [[Roy Tetsuo Forbes]] | no sitelink, and the page states no Japanese name |
 | [[S]] | title too short to be evidence |
 | [[Seicho-No-Ie Holy Sutras]] | no sitelink, and the page states no Japanese name |
 | [[Sekai Heiwa Kyodan]] | no sitelink for its title or its stated name 世界平和教団 |
-| [[Senami Haguro Shrine]] | no sitelink, and the page states no Japanese name |
+| [[Senami Haguro Shrine]] | no sitelink for its title or its stated name 西奈彌羽黒神社 |
 | [[Shidaidō]] | no sitelink for its title or its stated name 四大道 |
 | [[Shineidō （神衞道）]] | no sitelink, and the page states no Japanese name |
-| [[Shinri Jikkō no Oshie]] | no sitelink, and the page states no Japanese name |
-| [[Shinsenkyō]] | no sitelink, and the page states no Japanese name |
+| [[Shinri Jikkō no Oshie]] | no sitelink for its title or its stated name 真理実行の教/宗教法人真理実行の教 |
+| [[Shinsenkyō]] | no sitelink for its title or its stated name 神宣教 |
 | [[Shinsokan prayer]] | no sitelink, and the page states no Japanese name |
 | [[Shinto Wiki]] | no sitelink, and the page states no Japanese name |
-| [[Shintō Montai]] | no sitelink, and the page states no Japanese name |
-| [[Shintō Shindōkyō]] | no sitelink for its title or its stated name 神道親導教本部教会 |
+| [[Shintō Montai]] | no sitelink for its title or its stated name 真道問対 |
+| [[Shintō Shindōkyō]] | no sitelink for its title or its stated name 神道親導教本部教会/神道親導教 |
 | [[Shrines receiving Hoe and Quiver]] | no sitelink, and the page states no Japanese name |
 | [[Shrines receiving Hoe offering]] | no sitelink, and the page states no Japanese name |
 | [[Shrines receiving Quiver offering]] | no sitelink, and the page states no Japanese name |
 | [[Shrines receiving Tsukinami-sai and Niiname-sai and Ainame-sai offerings]] | no sitelink, and the page states no Japanese name |
 | [[Shrines receiving Tsukinami-sai and Niiname-sai offerings]] | no sitelink, and the page states no Japanese name |
-| [[Shūyōdan Hōseikai]] | no sitelink, and the page states no Japanese name |
 | [[Song in Praise of the Bodhisattva Who Reflects the Sounds of the World]] | no sitelink, and the page states no Japanese name |
 | [[Susanoo Shrine (Fukuyama)]] | no sitelink, and the page states no Japanese name |
-| [[Sōkaisō Mondō]] | no sitelink, and the page states no Japanese name |
+| [[Sōkaisō Mondō]] | no sitelink for its title or its stated name 滄海窓問答 |
 | [[T]] | title too short to be evidence |
 | [[Taisokyo]] | no sitelink for its title or its stated name 大祖教 |
-| [[Taiwa Kyōdan]] | no sitelink for its title or its stated name 宗教法人大和教団 |
 | [[Takata Shrine (Hida Province)]] | no sitelink, and the page states no Japanese name |
-| [[Take Shrine]] | no sitelink, and the page states no Japanese name |
-| [[Takihara-no-Miya]] | no sitelink, and the page states no Japanese name |
 | [[Tenkei Mikyōsho]] | no sitelink, and the page states no Japanese name |
 | [[Tenrikyo Resource Wiki]] | no sitelink, and the page states no Japanese name |
 | [[Ōku no Kuni no Miyatsuko]] | no sitelink for its title or its stated name 大伯国造 |

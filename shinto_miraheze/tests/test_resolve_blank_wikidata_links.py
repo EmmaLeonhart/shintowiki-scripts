@@ -86,3 +86,28 @@ def test_no_title_disables_the_nihongo_source_rather_than_the_gate():
 def test_a_single_character_name_is_not_taken():
     """`{2,}` — one kanji is too weak to key a sitelink lookup on."""
     assert japanese_names("| native_name = 社 |", "X Shrine") == []
+
+
+def test_the_lead_bold_parenthetical_is_the_canonical_name():
+    """The MediaWiki lead convention: the bolded page title, then the native name.
+    Measured across all 50 refusals on 2026-09-12 before being added — 16 pages
+    carry it, 4 of those names are jawiki sitelinks, all 4 correct. It is what
+    finally gets [[Take Shrine]] to Q11430665."""
+    text = "'''Take Shrine''' (多家神社) is a Shinto shrine in Hiroshima."
+    assert japanese_names(text, "Take Shrine") == ["多家神社"]
+
+
+def test_a_lead_bold_naming_something_else_is_refused():
+    """Same gate as Nihongo: a bolded run that is not this page's title belongs to
+    some other subject."""
+    text = "'''Sōja shrine''' (総社) is a class of shrine."
+    assert japanese_names(text, "Take Shrine") == []
+
+
+def test_the_lead_wins_over_a_mid_prose_nihongo_on_the_same_page():
+    """[[Take Shrine]] in shape: the lead names 多家神社, the prose then uses
+    {{nihongo|Sōja|総社}} for a term. Only the first is this shrine, and 総社
+    resolved to Q1107129 — the article about sōsha in general — when it was let
+    through."""
+    text = ("'''Take Shrine''' (多家神社) is the {{nihongo|Sōja|総社}} of Aki Province.")
+    assert japanese_names(text, "Take Shrine") == ["多家神社"]

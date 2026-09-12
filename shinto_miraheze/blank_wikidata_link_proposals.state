@@ -25,7 +25,7 @@
  },
  "Gary Luscombe": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name ラスカン"
  },
  "Hyakushu (Honda Chikaatsu)": {
   "qid": null,
@@ -45,7 +45,7 @@
  },
  "Michi no Taigen": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name 道之大原"
  },
  "Okimono omikuji": {
   "qid": null,
@@ -61,7 +61,7 @@
  },
  "Reigakushō": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name 霊学抄"
  },
  "Reiha no Hikari": {
   "qid": "Q11660745",
@@ -89,7 +89,7 @@
  },
  "Senami Haguro Shrine": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name 西奈彌羽黒神社"
  },
  "Shidaidō": {
   "qid": null,
@@ -109,11 +109,11 @@
  },
  "Shinri Jikkō no Oshie": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name 真理実行の教/宗教法人真理実行の教"
  },
  "Shinsenkyō": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name 神宣教"
  },
  "Shinsokan prayer": {
   "qid": null,
@@ -125,11 +125,11 @@
  },
  "Shintō Montai": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name 真道問対"
  },
  "Shintō Shindōkyō": {
   "qid": null,
-  "reason": "no sitelink for its title or its stated name 神道親導教本部教会"
+  "reason": "no sitelink for its title or its stated name 神道親導教本部教会/神道親導教"
  },
  "Shizensha": {
   "qid": "Q139921367",
@@ -156,8 +156,8 @@
   "reason": "no sitelink, and the page states no Japanese name"
  },
  "Shūyōdan Hōseikai": {
-  "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "qid": "Q11386384",
+  "reason": "jawiki sitelink of its own stated name 修養団捧誠会"
  },
  "Si Xingjian": {
   "qid": "Q8463911",
@@ -181,7 +181,7 @@
  },
  "Sōkaisō Mondō": {
   "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "reason": "no sitelink for its title or its stated name 滄海窓問答"
  },
  "T": {
   "qid": null,
@@ -192,20 +192,20 @@
   "reason": "no sitelink for its title or its stated name 大祖教"
  },
  "Taiwa Kyōdan": {
-  "qid": null,
-  "reason": "no sitelink for its title or its stated name 宗教法人大和教団"
+  "qid": "Q11433469",
+  "reason": "jawiki sitelink of its own stated name 大和教団"
  },
  "Takata Shrine (Hida Province)": {
   "qid": null,
   "reason": "no sitelink, and the page states no Japanese name"
  },
  "Take Shrine": {
-  "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "qid": "Q11430665",
+  "reason": "jawiki sitelink of its own stated name 多家神社"
  },
  "Takihara-no-Miya": {
-  "qid": null,
-  "reason": "no sitelink, and the page states no Japanese name"
+  "qid": "Q11566292",
+  "reason": "jawiki sitelink of its own stated name 瀧原宮"
  },
  "Tenkei Mikyōsho": {
   "qid": null,
