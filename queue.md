@@ -9,24 +9,21 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **Miraheze is unreachable from CI — decide the route, it cannot be fixed from inside this repo.**
-  ANSWERED 2026-09-12 (`DEVLOG.md`, `shinto_miraheze/probe_miraheze_403.py`): Cloudflare serves our
+- **Miraheze: waiting for Cloudflare to stop challenging our runners. Nothing is owed by anyone.**
+  Diagnosed 2026-09-12 (`shinto_miraheze/probe_miraheze_403.py`, `DEVLOG.md`): Cloudflare serves the
   GitHub Actions runners a managed challenge — 272 KB of `text/html`, *"Checking your connection…"* —
-  on **every** request including unauthenticated reads, while the identical script from a home
-  connection gets 200 throughout. The control proves it is not the UA: a deliberately generic UA from
-  the same runner still gets Miraheze's own 193-byte `text/plain` policy message.
-  - So: not the User-Agent, not the bot account, not the wiki being down. Emma guessed a UA change
-    broke it; the dates rule that out both ways — `EmmaBot/3.1` (set 2026-08-18) passed the weekly
-    test from CI on 08-19, 08-23 and 08-30 and carried **3,000 edits over 09-01..09-04**, and no UA
-    change lands before the first 403s of 07-12. The block began **between 09-04 and 09-06**, so it
-    is INTERMITTENT — an earlier note here calling CI permanently unable to reach the wiki was wrong.
-  - Leading hypothesis, NOT confirmed: the challenge says *"unusual activity"* and the four days
-    before it ran 502/859/853/786 edits. A fit, not a finding — Emma's 2026-07-27 quiet period is
-    evidence against volume being the whole story, since the challenge came back after it.
-  - [ ] Emma's call, since the remedy is outside the repo: ask Miraheze to allowlist the bot, or run
-    the wiki-writing jobs from an origin that is not challenged. Do not spend more ticks re-probing.
-  - ⚠ This also reframes `docs/fandom_vs_miraheze_2026-09-12.md`: its reliability table compares one
-    host that challenges our runners with one that does not, which is not a comparison of the two
+  on every request, reads included, while the identical script from Emma's connection gets 200. The
+  control settles that it is not our UA: a deliberately generic UA from the same runner still gets
+  Miraheze's own 193-byte `text/plain` policy refusal.
+  - **Intermittent, not permanent.** `EmmaBot/3.1` passed from CI on 08-19, 08-23 and 08-30 and
+    carried ~800 edits/day on 09-01..09-04. It began between 09-04 and 09-06.
+  - **Probed DAILY since 2026-09-12** (Emma: *"Daily"*), `LOCK_DAYS` 8 → 2, so the day it lifts we
+    know within 24 hours instead of up to eight days. The failure reason now records which 403 it is.
+  - ⛔ **Emma has ruled out contacting Miraheze** (2026-09-12). Do not propose it again, and do not
+    re-probe by hand — the daily test is the probe. There is nothing to decide and nothing to do;
+    this item exists so the next session does not re-derive it.
+  - ⚠ It also reframes `docs/fandom_vs_miraheze_2026-09-12.md`: that reliability table compares one
+    host that challenges our runners against one that does not, which is not a comparison of the two
     wikis.
 
 - **Pinned tail (keep last)**

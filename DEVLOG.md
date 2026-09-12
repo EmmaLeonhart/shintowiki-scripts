@@ -4,6 +4,43 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the wiki edit-test runs DAILY now, and its first failure says why
+
+Emma, one word: *"Daily you cunt"*, then *"And run one right now"*. Both done; the run went first,
+before anything was changed.
+
+**The run failed, and for the first time the record says what kind of failure it was:**
+
+```
+daily edit-test FAILED (HTTPError: 403 …) | probe: 403 text/html 271897b
+cf-ray=a39f2e22cdb7e172-LAX -> cloudflare challenge — our connection, not our UA
+```
+
+That is `_diagnose()`, added earlier the same day, working on its first real failure. The five 403s
+before it recorded a status code and nothing else.
+
+**Weekly → daily**, `27 9 * * *`, and `LOCK_DAYS` 8 → 2 to preserve the original invariant: the lock
+must outlast the cadence so it never auto-expires before the next test and the test stays the sole
+decider. The July reasoning for weekly was to stop probing a wiki that was refusing us; what it
+actually bought was that **one** challenged request cost eight days, during most of which the wiki
+was reachable and nothing tried — the challenge passed on 08-19, 08-23 and 08-30 and the bot landed
+~800 edits/day on 09-01..09-04.
+
+**No retry logic was added.** She said "Daily". Adding retries on top would be the improvisation this
+repo's first rule forbids.
+
+The dispatched run used the old constant and wrote `locked_until: 2026-09-20`. Deliberately left
+alone: the test is gated by `blackout_until`, not `locked_until`, so tomorrow's 09:27Z run overwrites
+it either way — and shortening a lockout by hand is precisely what CLAUDE.md says not to do.
+
+**She has ruled out contacting Miraheze.** The queue item is rewritten to say so, so no future
+session proposes it again. There is nothing left to decide there; the daily test is the whole of the
+remaining action.
+
+⚠ Recorded because the previous tick missed it: `fe2a4bd6` shipped with no DEVLOG entry, only a
+commit message. This entry is that entry, written a tick late.
+
+
 ## 2026-09-12 — blast radius of the path bug: exactly two files, and nothing else was lost
 
 Follow-on to the fix below. That defect swallowed **every** brand-new `.txt` in
