@@ -31,7 +31,7 @@ an en label — this is the community's own house style, not a guess:
 |---|---|---|---|
 | `X Shrine` | `Kuil X` | **20,520** | 253 |
 | ends in a small transliterated suffix (`Tenmangū`, `Hachimangū`, `-gū`, `Tōshō-gū`, `Hachiman`) | `Kuil <the whole label>` | **1,449** | 27 |
-| ends in `Jingū` / `Taisha` / `Daijingū` | `Kuil Agung X` | 46 | **53** |
+| ends in `Jingū` / `Taisha` / `Daijingū` | `Kuil Agung X` | 46 | 53 — *Emma's ruling, not the count* |
 
 So:
 
@@ -43,9 +43,12 @@ So:
     macron-stripping was simply wrong.
   * **A parenthetical disambiguator is KEPT**: `Ueno Ōji Shrine (Osaka)` ->
     `Kuil Ueno Ōji (Osaka)`.
-  * ⛔ **`Jingū` / `Taisha` are REFUSED.** 53 against 46 is not a convention, it
-    is a corpus that disagrees with itself, and "Kuil Agung" vs "Kuil <whole>"
-    changes the name. Left for Emma rather than guessed.
+  * ⭐ **`Jingū` / `Taisha` / `Daijingū` become `Kuil Agung X`** — the suffix is
+    dropped and the grand-shrine sense is translated. 53 against 46 is a corpus
+    disagreeing with itself, so this was refused until **Emma ruled on
+    2026-09-11**: `Ise Jingū` -> `Kuil Agung Ise`, `Izumo Taisha` ->
+    `Kuil Agung Izumo`. It is a ruling, not a reading of the corpus — do not
+    "correct" it back to the majority form.
 
 ## Source of the English label
 
@@ -134,10 +137,14 @@ KEEP_SUFFIXES = [
     "-no-miya", "no-miya", "-miya", "Jinja", "-gū", "-gu", "-sha",
 ]
 
-# ⛔ Ambiguous in the corpus — 53 `Kuil <whole>` against 46 `Kuil Agung X`. The
-# two forms are different names, so neither is emitted.
-REFUSE_SUFFIXES = ["Daijingū", "Daijingu", "daijingū", "daijingu",
-                   "Jingū", "Jingu", "Taisha"]
+# A grand-shrine suffix. The corpus splits 53 `Kuil <whole>` against 46
+# `Kuil Agung X`, so this was refused until Emma ruled on 2026-09-11: the suffix
+# is TRANSLATED, not carried — drop it and mark the sense with Agung ("grand").
+AGUNG_SUFFIXES = ["Daijingū", "Daijingu", "daijingū", "daijingu",
+                  "Jingū", "Jingu", "Taisha", "taisha"]
+
+# Left behind when a suffix is stripped off a hyphenated name: "Izumo-daijingū".
+_STEM_TAIL = "-–— 	"
 
 _PAREN_TAIL = re.compile(r"\s*\([^)]*\)\s*$")
 
@@ -189,9 +196,12 @@ def indonesian_label(en, kind):
             return None, "the generic word alone"
         return f"{prefix} {stem}{tail}", "ok"
 
-    for suf in REFUSE_SUFFIXES:
+    for suf in AGUNG_SUFFIXES:
         if bare.endswith(suf):
-            return None, f"{suf} — corpus split 53/46 between Kuil and Kuil Agung"
+            stem = bare[: -len(suf)].rstrip(_STEM_TAIL).strip()
+            if not stem:
+                return None, "the grand-shrine word alone"
+            return f"{prefix} Agung {stem}{tail}", "ok (Agung)"
 
     for suf in sorted(KEEP_SUFFIXES, key=len, reverse=True):
         if bare.endswith(suf):

@@ -150,11 +150,22 @@ def test_a_transliterated_suffix_stays_in_the_name():
             == "Kuil Kunōzan Tōshō-gū")
 
 
-@pytest.mark.parametrize("en", ["Udo Jingū", "Sumiyoshi Taisha", "Izumo-daijingū"])
-def test_jingu_and_taisha_are_refused(en):
-    """53 `Kuil <whole>` against 46 `Kuil Agung X` is a corpus disagreeing with
-    itself, and the two are different names. Emma's call, not a guess."""
-    assert gip.indonesian_label(en, "shrine")[0] is None
+@pytest.mark.parametrize("en,want", [
+    ("Udo Jingū", "Kuil Agung Udo"),
+    ("Sumiyoshi Taisha", "Kuil Agung Sumiyoshi"),
+    ("Izumo-daijingū", "Kuil Agung Izumo"),
+    ("Ise Jingū (Naikū)", "Kuil Agung Ise (Naikū)"),
+])
+def test_jingu_and_taisha_become_kuil_agung(en, want):
+    """Emma's ruling, 2026-09-11. The corpus splits 53 `Kuil <whole>` against 46
+    `Kuil Agung X`, so it decides nothing; she chose Agung. The hyphen left by
+    stripping "Izumo-daijingū" goes with the suffix."""
+    assert gip.indonesian_label(en, "shrine")[0] == want
+
+
+def test_the_grand_shrine_word_alone_is_still_refused():
+    """"Kuil Agung" with no name is not a label."""
+    assert gip.indonesian_label("Jingū", "shrine")[0] is None
 
 
 def test_no_english_label_produces_nothing():

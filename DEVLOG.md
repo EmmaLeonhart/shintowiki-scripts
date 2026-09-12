@@ -4,6 +4,57 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-11 — Jingū and Taisha become Kuil Agung, and the Indonesian rebuild is closed out
+
+The rebuild itself shipped yesterday in `58307e75` and was never closed out — the queue item stayed,
+and nothing was written here. Both are done in this commit.
+
+### What the rebuild did (recorded now, not then)
+
+`shinto-label-generator/generate_indonesian_proposals.py` fetched the English label and used it only
+in a `# Source:` comment. The label itself was `pykakasi(kana or ja_label)` — a reading guessed off
+the kanji — macron-stripped, blanket-collapsed (`uu`/`ou`/`aa`/`ii`/`ee` to one vowel), then had a
+suffix chopped off a glued-together string:
+
+| kanji | English label | shipped Indonesian |
+|---|---|---|
+| 元八幡 | Moto Hachiman | `Kuil Genpachi Hata` |
+| 藤崎八旛宮 | Fujisaki Hachimangū | `Kuil Fujisaki Hachi Hata` |
+| 陶山神社 | Tōzan Shrine | `Kuil Sueyamajinja` **and** `Kuil Tozanjinja` |
+| 柞原八幡宮 | Yusuhara Hachimangū | `Kuil Yusuharahachimangu` |
+
+The right answer sat in the English label every time. The rule is now `Kuil` + the English label with
+the word "Shrine" removed, read off the 24,460 shrines that already carry both an id and an en label:
+`X Shrine` → `Kuil X` 20,520 against 253; a transliterated suffix (Tenmangū, Hachimangū, -gū) kept
+whole 1,449 against 27. Macrons are KEPT — 623 sampled id labels carry one, so the old stripping was
+simply wrong. Source is the item's own en label, else one our en-label pipeline has already staged;
+an item with neither gets nothing. **44,058 proposals became 12,779**, and the 7,339 dropped for
+having no English label are exactly the ones that were being guessed. pykakasi is gone from the
+module.
+
+### The one thing it left open, now ruled
+
+Grand-shrine suffixes were REFUSED, because the corpus splits **53** `Kuil <whole label>` against
+**46** `Kuil Agung X` — a corpus disagreeing with itself decides nothing, and the two forms are
+different names. Emma ruled today: **`Kuil Agung X`**. `Ise Jingū` → `Kuil Agung Ise`,
+`Izumo Taisha` → `Kuil Agung Izumo`, `Izumo-daijingū` → `Kuil Agung Izumo` (the hyphen goes with the
+suffix). `Jingū` alone is still refused — "Kuil Agung" with no name is not a label.
+
+⚠ **This is a ruling, not a reading of the corpus.** The majority form is the other one. Do not
+"correct" it back on the strength of the 53.
+
+`quickstatements/id_proposed.txt` is not regenerated here: `label-generator-regenerate.yml` fires on
+any push touching `shinto-label-generator/*.py`, so this commit regenerates it in CI rather than
+spending a local SPARQL run on it.
+
+### Weekly [[Open questions]] sweep — nothing actionable
+
+The repo copy carries one open item (the 742 stuck katakana P1814 readings, eight rows awaiting a
+disposition after each arrow) and an empty wiki-based queue. The live page is still the 2026-08-25
+revision — the katakana question went in this morning and has not synced yet — so there is nothing
+of Emma's to metabolise and nothing answered to prune. Sweep item deleted.
+
+
 ## 2026-09-11 — descriptions are not the deliverable; the label is
 
 Emma: *"the Ukrainian descriptions are being updated in a bad way that seems to indicate a lack of
