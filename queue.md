@@ -9,23 +9,19 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **Find out why shinto.miraheze 403s in CI but not locally.**
-  Emma 2026-09-12, on the Fandom-vs-Miraheze research: *"yeah the miraheze wiki is supposed to just
-  get edited like normal so idk what is going on with it lol."* That redirected the item from
-  migrating away to diagnosing. The Fandom research is written up in
-  `docs/fandom_vs_miraheze_2026-09-12.md` and is hers to read; no migration is planned.
-  - Established: from a home connection **all three real probes return 200** (plain siteinfo, a page
-    read, and siteinfo with mwclient's UA suffix), MediaWiki 1.45.4, `EmmaBot/3.1`. So the canonical
-    UA is not blocked and the wiki is not down.
-  - Established: a UA-policy refusal has a **distinct signature** — 403, `Content-Type: text/plain`,
-    193 bytes, *"Your request is not compliant with our user agent policy."* A Cloudflare challenge
-    would be HTML. Either one identifies itself; nothing recorded it until now.
-  - [ ] Dispatch `probe-miraheze-403.yml` and compare its output with the local baseline above.
-    Same script, two origins — that is the difference never tested. Azure `centralus` runner IPs
-    versus a home connection.
-  - [ ] Then fix the recording, whatever the answer: `weekly_wiki_edit_test.py` stores only the
-    exception's `str()`, and its workflow pipes the script through `|| echo`, so five 403s produced
-    no evidence between them. One failed probe also locks **8 days**.
+- **Miraheze is unreachable from CI — decide the route, it cannot be fixed from inside this repo.**
+  ANSWERED 2026-09-12 (`DEVLOG.md`, `shinto_miraheze/probe_miraheze_403.py`): Cloudflare serves our
+  GitHub Actions runners a managed challenge — 272 KB of `text/html`, *"Checking your connection…"* —
+  on **every** request including unauthenticated reads, while the identical script from a home
+  connection gets 200 throughout. The control proves it is not the UA: a deliberately generic UA from
+  the same runner still gets Miraheze's own 193-byte `text/plain` policy message.
+  - So: not the User-Agent, not the bot account, not the wiki being down. The 2026-07-14 UA change was
+    never the fix and no further UA change will be.
+  - [ ] Emma's call, since the remedy is outside the repo: ask Miraheze to allowlist the bot, or run
+    the wiki-writing jobs from an origin that is not challenged. Do not spend more ticks re-probing.
+  - ⚠ This also reframes `docs/fandom_vs_miraheze_2026-09-12.md`: its reliability table compares one
+    host that challenges our runners with one that does not, which is not a comparison of the two
+    wikis.
 
 - **Pinned tail (keep last)**
 

@@ -4,6 +4,53 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the Miraheze 403 is Cloudflare challenging the GitHub runners, not our User-Agent
+
+Emma: *"the miraheze wiki is supposed to just get edited like normal so idk what is going on with
+it lol."* Now answered, by running the same four probes from both origins.
+
+| probe (identical script, identical UA) | home connection | GitHub Actions runner |
+|---|---|---|
+| siteinfo — the call that 403s | **200** MediaWiki 1.45.4 | **403** |
+| page read | **200** | **403** |
+| siteinfo + mwclient's UA suffix | **200** | **403** |
+| CONTROL: deliberately generic UA | 403, `text/plain`, 193b | 403, `text/plain`, 193b |
+
+**The control is what settles it.** From the runner, a generic UA still gets Miraheze's UA-policy
+message — *"Your request is not compliant with our user agent policy"*, 193 bytes of `text/plain`.
+So the UA layer is reachable from the runner and it is working. Our compliant `EmmaBot/3.1` gets
+something completely different: **272 KB of `text/html`**, `Server: cloudflare`, titled
+*"Checking your connection... | Miraheze"*, described as *"Our systems have detected unusual
+activity."*
+
+That is a **Cloudflare managed challenge on the connection**, not a rejection of the bot. Edge was
+`LAX` from the runner and `YVR` from home; the runner is on Azure `centralus`.
+
+So:
+
+- **Nothing is wrong with the User-Agent.** The 2026-07-14 UA change was not the fix and no further
+  UA change will be.
+- **Nothing is wrong with the bot account.** The challenge lands before authentication — a plain
+  page read gets it too.
+- **The wiki is not down.** It answers a home connection normally, right now.
+- **CI cannot reach shinto.miraheze.org at all** while its IP ranges are challenged. That includes
+  reads, which is why `Git Synced Sync` has nothing to push and `[[Open questions]]` has been stuck
+  on the 2026-08-25 revision.
+- **This is why Fandom "appears to work"** — different host, no such challenge — and it means the
+  comparison in `docs/fandom_vs_miraheze_2026-09-12.md` was never a comparison of the two wikis'
+  reliability. It was a comparison of one host that challenges our runners against one that does not.
+
+Two different 403s were being recorded as one number for five consecutive failures. `_diagnose()` in
+`weekly_wiki_edit_test.py` now appends the content-type, size, `cf-ray` and a verdict to the reason
+string, so the next failure says which of the two it is.
+
+**What this does NOT establish:** whether the challenge is on GitHub's ranges generally, on this
+repo's traffic specifically, or something transient that a quiet period would clear — Emma's
+2026-07-27 blackout was aimed at exactly that theory and the challenge came back anyway. Fixing it
+is not something this repo can do from inside: it needs either Miraheze allowlisting the bot, or the
+wiki work running from an origin that is not challenged.
+
+
 ## 2026-09-12 — the Fandom question turned into a Miraheze diagnosis
 
 Promoted the last ungated `todo.md` item — Emma's *"serious analysis of whether it will be a good
@@ -53,11 +100,15 @@ a probe the lockout could silence cannot diagnose the lockout.
 
 ### Why five 403s taught us nothing
 
-`weekly_wiki_edit_test.py` records the exception's `str()` and nothing else — no status beyond 403,
-no `cf-ray`, no `server`, no `retry-after`, no body. Its workflow then pipes the script through
-`|| echo`, so its stdout never reached the log either. Five failures, no evidence between them, and
-each one locks editing for **8 days** on a single probe. That is the next thing to fix regardless of
-what the probe finds.
+`weekly_wiki_edit_test.py` records the exception's `str()` and nothing else — no content-type, no
+`cf-ray`, no `server`, no body. Five failures, no evidence between them, and each one locks editing
+for **8 days** on a single probe.
+
+⚠ Correction to the commit message of `2fd5ef32`: I wrote there that the workflow's `|| echo` meant
+the script's stdout never reached the log. **That is wrong** — `||` suppresses nothing, and the run
+log for 2026-09-06 carries `FAIL — HTTPError: 403 …` plainly at line 194. The gap was only ever in
+what the exception itself carried. I asserted a mechanism without checking it, in the same entry
+that criticises five failures for carrying no evidence.
 
 
 ## 2026-09-12 — the Sutra / papers drip removed: 10 pending edits that will now not happen

@@ -21,8 +21,9 @@ no body. Those are exactly the fields that separate
   * a UA-policy rejection by the farm (a short text body naming the policy)
   * ordinary rate limiting (`retry-after`)
 
-and without them a 403 is just a number. The workflow made it worse by piping the
-script through `|| echo`, so its stdout never reached the log either.
+and without them a 403 is just a number. (The workflow's `|| echo` was NOT part of
+this — the script's `FAIL — HTTPError: 403 …` line does reach the run log; `||`
+suppresses nothing. The gap is only in what the exception carries.)
 
 ## The one fact this is built to establish
 

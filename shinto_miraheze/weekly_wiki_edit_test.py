@@ -62,7 +62,45 @@ def try_edit():
             summary="weekly edit-test")
         return True, f"edit landed on [[{TEST_PAGE}]] at {stamp}"
     except Exception as e:
-        return False, f"{type(e).__name__}: {e}"
+        return False, f"{type(e).__name__}: {e}{_diagnose()}"
+
+
+# Two DIFFERENT 403s come back from shinto.miraheze.org, and recording only the
+# status conflated them for five consecutive failures (2026-07-19 .. 2026-09-06):
+#
+#   403 + text/plain, 193 bytes   -> the UA policy refused us. Our UA is wrong.
+#   403 + text/html, ~272 KB      -> Cloudflare's "Checking your connection..."
+#                                    managed challenge. Our UA is FINE; the
+#                                    CONNECTION is being challenged.
+#
+# Measured 2026-09-12 (probe_miraheze_403.py): from a GitHub Actions runner every
+# request gets the HTML challenge, while a generic control UA from the same runner
+# gets the text/plain policy message — so the UA layer is reachable and it is the
+# runner's origin that is challenged. The same probes from a home connection all
+# return 200. Which of the two a failure is decides whether there is anything to
+# fix in this repo at all, so it must be written down. The run log always had
+# the FAIL line; what it never had was the response behind the exception.
+def _diagnose():
+    """A short, self-describing tail for the reason string. Never raises."""
+    try:
+        import requests
+        from shinto_miraheze.user_agent import USER_AGENT as _UA
+        r = requests.get("https://shinto.miraheze.org/w/api.php",
+                         params={"action": "query", "meta": "siteinfo",
+                                 "siprop": "general", "format": "json"},
+                         headers={"User-Agent": _UA}, timeout=30)
+        ctype = r.headers.get("Content-Type", "?")
+        ray = r.headers.get("CF-RAY", "?")
+        if r.status_code == 200:
+            return f" | probe: 200 (the edit path failed, not the read path)"
+        kind = ("cloudflare challenge — our connection, not our UA"
+                if "html" in ctype.lower() and len(r.content) > 10000
+                else "UA policy refusal" if "text/plain" in ctype.lower()
+                else "unrecognised")
+        return (f" | probe: {r.status_code} {ctype} {len(r.content)}b "
+                f"cf-ray={ray} -> {kind}")
+    except Exception as probe_err:
+        return f" | probe itself failed: {type(probe_err).__name__}"
 
 
 def blackout_until():
