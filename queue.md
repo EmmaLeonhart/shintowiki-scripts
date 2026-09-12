@@ -15,8 +15,14 @@ from `ATOMIC_FILES`; they are not queue items.
   on **every** request including unauthenticated reads, while the identical script from a home
   connection gets 200 throughout. The control proves it is not the UA: a deliberately generic UA from
   the same runner still gets Miraheze's own 193-byte `text/plain` policy message.
-  - So: not the User-Agent, not the bot account, not the wiki being down. The 2026-07-14 UA change was
-    never the fix and no further UA change will be.
+  - So: not the User-Agent, not the bot account, not the wiki being down. Emma guessed a UA change
+    broke it; the dates rule that out both ways — `EmmaBot/3.1` (set 2026-08-18) passed the weekly
+    test from CI on 08-19, 08-23 and 08-30 and carried **3,000 edits over 09-01..09-04**, and no UA
+    change lands before the first 403s of 07-12. The block began **between 09-04 and 09-06**, so it
+    is INTERMITTENT — an earlier note here calling CI permanently unable to reach the wiki was wrong.
+  - Leading hypothesis, NOT confirmed: the challenge says *"unusual activity"* and the four days
+    before it ran 502/859/853/786 edits. A fit, not a finding — Emma's 2026-07-27 quiet period is
+    evidence against volume being the whole story, since the challenge came back after it.
   - [ ] Emma's call, since the remedy is outside the repo: ask Miraheze to allowlist the bot, or run
     the wiki-writing jobs from an origin that is not challenged. Do not spend more ticks re-probing.
   - ⚠ This also reframes `docs/fandom_vs_miraheze_2026-09-12.md`: its reliability table compares one

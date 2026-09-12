@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — correction: CI reached Miraheze fine until 2026-09-04, at ~800 edits/day
+
+Emma's guess when I reported the challenge: *"Lemme guess you changed the user agent and it stopped
+working lol."* It is a well-founded guess — `user_agent.py` warns *"The farm allowlists bots by
+User-Agent, so changing this string can un-allowlist the bot. Tell them before changing it"*, and the
+2026-08-18 commit is titled *"UA 3.0: work contact + source repo, because the allowlist is keyed on
+this string"*. So I checked it against the dates instead of dismissing it.
+
+**It does not fit, in either direction.**
+
+| | |
+|---|---|
+| UA `EmmaBot/2.0` | 2026-07-14 — **after** the first 403s (07-12, 07-13), so it was a response, not a cause |
+| UA `EmmaBot/3.0` → `3.1` | 2026-08-18 |
+| weekly edit-test PASSED from CI | 2026-08-19, 08-23, 08-30 — **on 3.1** |
+| EmmaBot edits landing from CI | 09-01 **502**, 09-02 **859**, 09-03 **853**, 09-04 **786** |
+| EmmaBot edits after that | **none**, 8 days |
+
+So the current User-Agent worked from GitHub Actions for two and a half weeks and carried 3,000 edits
+in the four days before it stopped. A UA change did not start this outage, and did not start the July
+one either — no UA change lands in the days before 07-12.
+
+**And my own claim yesterday was too absolute.** I wrote *"CI cannot reach shinto.miraheze.org at
+all"*. True today; false as a general statement, and the passing tests on 08-19/08-23/08-30 were
+already in the state file I had read. The challenge is **intermittent**, and it began between
+**2026-09-04 and 2026-09-06**.
+
+### The leading hypothesis, explicitly not confirmed
+
+The challenge page says *"Our systems have detected unusual activity."* The four days immediately
+before it appeared ran 502, 859, 853 and 786 edits — sustained, from one origin. That is a fit, not a
+finding: nothing here establishes that the volume caused the challenge, and the same pattern may have
+run before without tripping it. It is written down as the thing to test, not as the answer.
+
+What would test it: whether the challenge lifts on its own after a quiet stretch (Emma's 2026-07-27
+blackout was aimed at this theory and the challenge returned afterwards, which is evidence against
+it), and whether the resumption rate matters.
+
+
 ## 2026-09-12 — the Miraheze 403 is Cloudflare challenging the GitHub runners, not our User-Agent
 
 Emma: *"the miraheze wiki is supposed to just get edited like normal so idk what is going on with
