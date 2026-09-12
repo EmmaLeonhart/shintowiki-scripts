@@ -286,13 +286,6 @@ jobs:
         continue-on-error: true
         run: python generate_katakana_reading_add.py
 
-      # Cite existing unreferenced P6375 addresses to the subject's OWN jawiki
-      # article, where that article states the same address. The sibling backfill
-      # works from the 式内社一覧 tables and reaches 139; this reaches 2,728.
-      - name: Address citations from the subject's own article
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: python generate_address_citation_from_article.py
 
       # Model CONFORMANCE — "of the statements that exist, how many carry the full
       # modelled shape". This audit already existed and was wired into NOTHING,

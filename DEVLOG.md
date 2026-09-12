@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — stop citing street addresses to jawiki: generate_address_citation_from_article deleted
+
+Emma noticed it on the wiki side: *"the script appears to be adding references to existing street
+addresses… I'm pretty sure that's just an error and should be stopped."* Then, on what to do about it:
+*"If the script is just assuming that the address comes from Japanese Wikipedia, then just make it
+stop doing that. Make it stop adding references to the street address things."*
+
+**Deleted:** `generate_address_citation_from_article.py`, its 2,728-line `address_citation_from_article.txt`,
+its registration in `submit_daily_batch.py` and `direct_daily_edits.py`, its step in
+`generate-quickstatements.yml`, and its tests in `test_enrichment_backfills.py`. Nothing on Wikidata
+is touched — she was explicit that already-added references stay.
+
+**`generate_address_citation_backfill.py` stays.** She ruled on it twice: *"the earlier one is
+good"*, *"The smaller script was not a problem as I believe it had a good basis for it."* That is the
+139-line one sourced from the 式内社一覧 per-district tables, and it is probably the thing behind her
+guess that this was *"done based off of the ... shrines"* — the Shikinaisha list is the older
+script's source, not the deleted one's.
+
+### What the deleted script actually did, since it bears on whether it comes back
+
+It was not assuming provenance. It read the subject's own jawiki `{{神社}}` / `{{日本の寺院}}` infobox
+`所在地` field and emitted a reference **only where that field normalised to exactly the address the
+statement already held** — normalisation dropped markup, `<ref>`s, postal codes and whitespace, and
+folded full-width digits, but never touched the digits that identify a block number. 818 candidates
+were refused for stating a different address (鍛治屋 vs 鍛冶屋, a different block, a different town).
+
+Recording that plainly because the ruling stands regardless: it is deleted, and `git show
+cfa7bbf9:modern-quickstatements/generate_address_citation_from_article.py` is where it lives now if
+it is ever wanted back.
+
+### The wider lesson, which is mine
+
+It was built yesterday off a general remark — *"the updating of the existing ones to add more to them
+is kind of a very critical part"* — and I applied that to street addresses without asking whether
+addresses were a place she wanted it applied. A general principle is not a licence for a specific
+2,728-item batch. The other two backfills from the same commit (`souken_p571_citations`,
+`saijin_named_as`) are untouched and were not part of what she flagged.
+
+
 ## 2026-09-12 — the applier for those 9, wired into wiki-cleanup
 
 `shinto_miraheze/apply_blank_wikidata_links.py`, and a step in `wiki-cleanup.yml` behind the same
