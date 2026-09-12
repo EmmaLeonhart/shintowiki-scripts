@@ -163,6 +163,26 @@ def test_jingu_and_taisha_become_kuil_agung(en, want):
     assert gip.indonesian_label(en, "shrine")[0] == want
 
 
+@pytest.mark.parametrize("en", [
+    "Kōtai Jingū (disambiguation)",
+    "Hachiman Shrine (disambiguation)",
+])
+def test_a_disambiguation_page_is_refused(en):
+    """A parenthetical is normally kept as a disambiguator, but this one says the
+    item IS a Wikimedia disambiguation page. `Q20037429` is P31 both Q4167410 and
+    a shrine class, which is how it reaches the shrine query; the Agung rule then
+    proposed "Kuil Agung Kōtai (disambiguation)" for it — a shrine label on a
+    navigation page, in the wrong language, when the item already carries the id
+    description "Halaman disambiguasi"."""
+    assert gip.indonesian_label(en, "shrine")[0] is None
+
+
+def test_an_ordinary_parenthetical_is_still_kept():
+    """The refusal above must not swallow real disambiguators."""
+    assert (gip.indonesian_label("Ueno Ōji Shrine (Osaka)", "shrine")[0]
+            == "Kuil Ueno Ōji (Osaka)")
+
+
 def test_the_grand_shrine_word_alone_is_still_refused():
     """"Kuil Agung" with no name is not a label."""
     assert gip.indonesian_label("Jingū", "shrine")[0] is None

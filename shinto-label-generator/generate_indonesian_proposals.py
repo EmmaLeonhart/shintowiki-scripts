@@ -148,6 +148,16 @@ _STEM_TAIL = "-–— 	"
 
 _PAREN_TAIL = re.compile(r"\s*\([^)]*\)\s*$")
 
+# ⛔ A parenthetical disambiguator is normally KEPT ("Ueno Ōji Shrine (Osaka)" ->
+# "Kuil Ueno Ōji (Osaka)"), but "(disambiguation)" is not a disambiguator — it
+# says the item is a Wikimedia disambiguation page, and a disambiguation page is
+# not a shrine. `Q20037429` "Kōtai Jingū (disambiguation)" is P31 BOTH Q4167410
+# (disambiguation page) and a shrine class, which is how it reaches the shrine
+# query at all; it already carries the id description "Halaman disambiguasi".
+# Labelling it "Kuil Agung Kōtai (disambiguation)" would be a shrine label on a
+# navigation page, in the wrong language.
+_DISAMBIG_TAIL = re.compile(r"\(\s*disambiguation\s*\)\s*$", re.I)
+
 # Forbidden whitespace, per tests/test_label_whitespace.py. It arrives from the
 # ENGLISH labels — "Wakamiya Hachiman Shrine", "Aijikaue Shrine (Legendary
 # Site C)" — so deriving faithfully carries a defect through. Folded to a
@@ -181,6 +191,8 @@ def indonesian_label(en, kind):
     en = _BAD_SPACE.sub(" ", en).strip()
     if _GLOSS.search(en):
         return None, "English label is a gloss, not a name"
+    if _DISAMBIG_TAIL.search(en):
+        return None, "disambiguation page, not a shrine"
 
     prefix = "Kuil" if kind == "shrine" else "Wihara"
     word = " Shrine" if kind == "shrine" else " Temple"

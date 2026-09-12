@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the Agung rule shipped 16 labels and one of them was a disambiguation page
+
+The regeneration `4cea5db5` triggered finished (24m36s, green) and the four labels the whole rebuild
+was aimed at came out right — 元八幡 → `Kuil Moto Hachiman` where it used to be `Kuil Genpachi Hata`,
+藤崎八旛宮 → `Kuil Fujisaki Hachimangū` where it used to be `Kuil Fujisaki Hachi Hata`. 12,797 id
+labels, of which **16 are the new `Kuil Agung`** form.
+
+**One of the 16 was wrong, and it was wrong because of the new rule.** `Q20037429`, English label
+`Kōtai Jingū (disambiguation)`, got `Kuil Agung Kōtai (disambiguation)` — a shrine label on a
+navigation page, in the wrong language, on an item that already carries the id description
+*Halaman disambiguasi*. It reaches the shrine query legitimately: it is `P31` **both** `Q4167410`
+(Wikimedia disambiguation page) **and** a shrine class.
+
+The generator keeps a parenthetical because it is usually a disambiguator — `Ueno Ōji Shrine (Osaka)`
+→ `Kuil Ueno Ōji (Osaka)`. `(disambiguation)` is not that: it says what the item IS. Refused now,
+with a test either side of the line so the refusal cannot grow into swallowing real disambiguators.
+The bad pair is also deleted from the committed `id_proposed.txt` rather than left for the next
+regeneration, because `select_label_proposals.py` drips from that file.
+
+Count before the refusal: exactly 1 in 12,797, and zero in the pre-Agung output — so it is new, not
+uncovered.
+
+### And a CI failure of my own making
+
+`1c8cecc4` went red on `tests/test_sys_path_bootstrap_ordering.py`: the new test hand-rolled a
+triple-dirname `sys.path.insert` instead of the repo's bootstrap idiom. The guard is right — `python
+<file>` puts the script's own directory on `sys.path[0]`, never the repo root, so the hand-rolled
+form works under pytest and dies when the file is run directly, which is the failure that killed 17
+workflow-invoked scripts silently for three days in August. I had run `shinto_miraheze/tests` and not
+`tests/`, so local green meant nothing. The full CI command passes locally now: 2,067 passed, 5
+skipped.
+
+
 ## 2026-09-12 — the blank `{{wikidata link}}` population is 233, and only 58 of them are the job
 
 Emma's `todo.md` item — *"add the wikidata template to existing articles. Look at Shizensha, it
