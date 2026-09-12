@@ -14,13 +14,17 @@ whole measurement silently reclassifies every blank page as filled, and the
 number this script exists to produce becomes a quiet zero.
 """
 
+import os as _uos, sys as _usys
+_uar = _uos.path.dirname(_uos.path.abspath(__file__))
+while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
+    _uar = _uos.path.dirname(_uar)
+if _uar not in _usys.path:
+    _usys.path.insert(0, _uar)
+
 import os
 import re
-import sys
 
 import pytest
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from shinto_miraheze.report_blank_wikidata_links import classify  # noqa: E402
 
