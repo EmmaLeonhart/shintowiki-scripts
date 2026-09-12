@@ -4,6 +4,32 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — blast radius of the path bug: exactly two files, and nothing else was lost
+
+Follow-on to the fix below. That defect swallowed **every** brand-new `.txt` in
+`generate-quickstatements.yml`, not just the two that surfaced it, so the obvious next question is
+what else went missing over however long it was live. Audited two ways; both come out clean.
+
+* **Every generator the workflow invokes** — 47 scripts — checked for declared `.txt` outputs that
+  are not on disk. Two: `saijin_named_as.txt`, `souken_p571_citations.txt`.
+* **Every file the two submitters register**, which is the authoritative list because a generated
+  file nothing consumes is inert either way: `submit_daily_batch` 40 registered / 2 absent,
+  `direct_daily_edits` 80 registered / 3 absent. The same two, plus `name_in_kana.txt`.
+
+`name_in_kana.txt` is not a casualty: `shinto_miraheze/collect_name_in_kana.py` appends it as the
+remote routine's answers arrive, and that routine is deliberately slow. An empty gap there is the
+design.
+
+So the bug cost exactly the two files from `c121509e`, which is what you would expect — it only ever
+touched files that were **new**, and tracked files go through `git diff --name-only`, which was
+always right. Nothing that had ever landed once could be lost.
+
+Method, stated because it bounds the claim: the first pass is a regex over `*OUT*` / `OUTPUT_FILE`
+assignments and could miss an output declared in some other shape. The second does not depend on it —
+it reads the submitters' own registration lists — and the two agree. Both files will land on the
+next `generate-quickstatements` run; that has not been observed yet and is not claimed.
+
+
 ## 2026-09-12 — a new generated `.txt` could never enter the repo: two git commands disagreeing about paths
 
 `souken_p571_citations.txt` and `saijin_named_as.txt` — the two surviving backfills from
