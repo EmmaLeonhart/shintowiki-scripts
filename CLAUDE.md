@@ -753,13 +753,20 @@ so the designation reads as a second honzon. It was the **second most-emitted va
 staged lines are stripped, and `generate_invalid_p825_removals.py` → `invalid_p825_removals.txt`
 removes the 12 live ones, re-derived from SPARQL each run so it goes inert once they are gone.
 
-⚠ **The same shape recurs and is NOT covered by this rule.** `Q1139795` 国宝 *National Treasure of
-Japan* is the identical error — another cultural-property designation in the `本尊` field, 23 queued
-lines — and `Q11595955` 秘仏 *hibutsu* (53 lines) is a class of concealed icon rather than a named
-deity. **Neither is blocked**, because Emma named `Q1188622` and only that. `INVALID_VALUES` in the
-removal generator and `INVALID_HONZON` in the honzon generator are both sets so a further ruling
-extends them in one line each — but an entry needs **her word**, not a session's judgement that
-something looks wrong.
+⭐ **She then chose the CLASS over naming QIDs.** Asked which look-alike to name next, Emma answered
+*"Block the whole class instead."* So both generators gate on `P31 = Q30634609` **heritage
+designation**, which catches 重要文化財, 国宝 (`Q1139795`) and any designation nobody has hit yet.
+The QID version found 12 live statements; the class version found **16**.
+
+⚠ **Measured before the class was chosen, and three neighbours were deliberately left alone.** Over
+all 118 distinct values the honzon generator emits, `Q30634609` holds only those two designations and
+nothing legitimate. These were checked and are NOT blocked, because each contains real honzon:
+`Q23847174` religious concept (曼荼羅, 仏舎利, and Bodhisattva itself), `Q80071` symbol (曼荼羅),
+`Q838948` work of art (`Q1410999` 大曼荼羅, Nichiren's own Gohonzon), `Q3658341` literary character
+(地蔵菩薩, 文殊菩薩, 普賢菩薩). **Do not widen the class list without measuring what it excludes.**
+
+⚠ **秘仏 hibutsu (`Q11595955`, 53 lines) has NO `P31` at all**, so no class rule reaches it. It is
+still emitting. That is a known state, not an oversight.
 
 ## Wikidata data model for shrine festivals & bunrei
 

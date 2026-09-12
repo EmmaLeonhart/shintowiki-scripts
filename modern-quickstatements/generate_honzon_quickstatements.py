@@ -44,6 +44,8 @@ from infobox_fields import field_pattern
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
+# The class check below asks Wikidata, not jawiki, so _get takes an endpoint.
+WD_API = "https://www.wikidata.org/w/api.php"
 WDQS = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 TEMPLATE = "Template:日本の寺院"
@@ -51,34 +53,63 @@ OUTPUT = os.path.join(HERE, "honzon_p825.txt")
 
 # Same ordered-alternation defect as 祭神: `[^\n|]` halted at the pipe inside the
 # first piped wikilink, dropping every later 本尊. See infobox_fields.py.
-# ⛔ NEVER emit these as a honzon. Emma, 2026-09-12, on Q1188622:
-# "a completely invalid thing and we should never add it and should universally
-# remove it from all items it is present on."
+# ⛔ A honzon is a DEITY. Refuse any resolved target whose Wikidata class says it
+# is a heritage designation instead.
 #
-# P825 is "dedicated to" — the deity a temple's main image IS. Q1188622 is
-# 重要文化財, Important Cultural Property of Japan: a designation the Agency for
-# Cultural Affairs awards to an object. "Dedicated to Important Cultural
-# Property" is not a claim about anything.
+# Emma, 2026-09-12, first on Q1188622: "a completely invalid thing and we should
+# never add it and should universally remove it from all items it is present on."
+# Then, when the same error turned up twice more, on whether to keep naming QIDs:
+# "Block the whole class instead."
 #
-# It gets in because this generator takes EVERY wikilink in the 本尊 field, and
-# temple infoboxes write the designation alongside the deity:
+# P825 is "dedicated to". Q1188622 is 重要文化財 and Q1139795 is 国宝 — both
+# designations the Agency for Cultural Affairs awards to an object, and both
+# P31 = Q30634609 heritage designation. "Dedicated to National Treasure" asserts
+# nothing.
+#
+# They get in because this generator takes EVERY wikilink in the 本尊 field, and
+# temple infoboxes write the designation beside the deity:
 #     |本尊 = [[阿弥陀如来]]（[[重要文化財]]）
-# Q1188622 was the SECOND most-emitted value in honzon_p825.txt — 100 of 973
-# lines — behind only Amitābha.
 #
-# `generate_invalid_p825_removals.py` takes the ones that already landed.
-INVALID_HONZON = {
-    "Q1188622",   # 重要文化財 Important Cultural Property of Japan
+# MEASURED before choosing the class, over all 118 distinct values this generator
+# emits: Q30634609 contains exactly ONE of them, Q1139795, at 23 lines. Nothing
+# legitimate is in it. The neighbouring classes were checked and deliberately NOT
+# blocked, because each holds real honzon —
+#   Q23847174 religious concept : 曼荼羅, 仏舎利, and Bodhisattva itself
+#   Q80071     symbol           : 曼荼羅
+#   Q838948    work of art      : Q1410999 大曼荼羅, Nichiren's own Gohonzon
+#   Q3658341   literary character: 地蔵菩薩, 文殊菩薩, 普賢菩薩 …
+#
+# ⚠ 秘仏 hibutsu (Q11595955, 53 lines) has NO P31 at all, so no class rule can
+# reach it. It is left emitting, and named here so that is a known state.
+INVALID_HONZON_CLASSES = {
+    "Q30634609",   # heritage designation — 重要文化財, 国宝, and any future one
 }
+
+
+def refused_classes(qids):
+    """{qid} whose P31 includes a blocked class. One batched call per 50."""
+    bad = set()
+    qids = sorted(q for q in qids if q)
+    for i in range(0, len(qids), 50):
+        d = _get({"action": "wbgetentities", "props": "claims",
+                  "ids": "|".join(qids[i:i + 50])}, api=WD_API)
+        for qid, ent in (d.get("entities") or {}).items():
+            for c in (ent.get("claims") or {}).get("P31", []):
+                v = c["mainsnak"].get("datavalue", {}).get("value", {})
+                if isinstance(v, dict) and v.get("id") in INVALID_HONZON_CLASSES:
+                    bad.add(qid)
+        time.sleep(0.3)
+    return bad
+
 
 _FIELD_RE = re.compile(field_pattern("本尊"))
 _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 
 
-def _get(params):
+def _get(params, api=None):
     params = dict(params)
     params["format"] = "json"
-    req = urllib.request.Request(JA_API + "?" + urllib.parse.urlencode(params),
+    req = urllib.request.Request((api or JA_API) + "?" + urllib.parse.urlencode(params),
                                  headers={"User-Agent": UA})
     for attempt in range(3):
         try:
@@ -203,6 +234,9 @@ def main():
     resolved = resolve_links(all_targets)
     print(f"{len(resolved)}/{len(all_targets)} deity link targets resolve to Wikidata items")
 
+    refused = refused_classes(set(resolved.values()))
+    print(f"{len(refused)} resolved target(s) refused as a heritage designation")
+
     lines, dup, invalid = [], 0, 0
     for (title, qid), links in sorted(shrine_deities.items()):
         url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
@@ -210,7 +244,7 @@ def main():
             d = resolved.get(t)
             if not d:
                 continue
-            if d in INVALID_HONZON:
+            if d in refused:
                 invalid += 1
                 continue
             if (qid, d) in have:

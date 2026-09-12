@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — blocked by CLASS, not by QID: 16 removals, 123 staged lines stopped
+
+Emma, asked whether the two look-alikes should be named next: *"Block the whole class instead."*
+Both generators now gate on `P31 = Q30634609` **heritage designation** rather than on a list of QIDs.
+
+| | QID list | class |
+|---|---:|---:|
+| live statements removed | 12 | **16** |
+| staged lines stopped | 100 | **123** |
+
+The four extra removals and 23 extra staged lines are `Q1139795` 国宝 *National Treasure of Japan* —
+the same error, and exactly what a QID list was going to keep missing.
+
+### Measured before choosing the class, and three neighbours left alone
+
+Over all **118 distinct values** the honzon generator emits, `Q30634609` holds only the two
+designations and nothing legitimate. The adjacent classes were checked and are deliberately NOT
+blocked, because each contains real honzon:
+
+| class | holds | why it stays |
+|---|---|---|
+| `Q23847174` religious concept | 曼荼羅, 仏舎利, Bodhisattva itself | Bodhisattva is the single largest honzon class |
+| `Q80071` symbol | 曼荼羅 | a mandala is a real honzon |
+| `Q838948` work of art | `Q1410999` 大曼荼羅 | Nichiren's own Gohonzon |
+| `Q3658341` literary character | 地蔵菩薩, 文殊菩薩, 普賢菩薩 | 55 lines of ordinary bodhisattvas |
+
+That is the difference between "block the class" and "block anything that smells wrong". A class is
+only safe once you have looked at what is in it.
+
+⚠ **秘仏 hibutsu (`Q11595955`, 53 lines) has no `P31` at all**, so no class rule can reach it. Still
+emitting, named here and in CLAUDE.md so it is a known state rather than something missed.
+
+### Verified rather than assumed
+
+`refused_classes` was run against five known cases before anything shipped: `Q1188622` REFUSED,
+`Q1139795` REFUSED, `Q236242` 阿弥陀如来 kept, `Q1410999` Nichiren's Gohonzon kept, `Q11595955` kept
+(no `P31` to judge). And the test that pins the untouched neighbours was confirmed to fail — adding
+`Q23847174` to the blocked set turns it red.
+
+One defect of my own on the way: the first draft of the class gate called `_get(..., api=WD_API)`
+when `_get` took no endpoint and `WD_API` did not exist. Caught by reading, before running.
+
+
 ## 2026-09-12 — P825 → Q1188622 is invalid: 12 removed, 100 more stopped before they shipped
 
 Emma: *"is a completely invalid thing and we should never add it and should universally remove it

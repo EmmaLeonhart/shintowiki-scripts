@@ -9,6 +9,10 @@ or shrine is dedicated to.
 
 Emma, 2026-09-12, on ``Q1188622``: *"a completely invalid thing and we should
 never add it and should universally remove it from all items it is present on."*
+Then, asked which of the look-alikes to name next: *"Block the whole class
+instead."* So this removes by **class**, not by a list of QIDs — ``Q1188622``
+(重要文化財) and ``Q1139795`` (国宝) are both ``P31 = Q30634609``, and so is any
+designation nobody has run into yet.
 
 ``P825`` is **dedicated to** — the deity a temple's main image *is*, or the kami a
 shrine enshrines. ``Q1188622`` is 重要文化財, *Important Cultural Property of
@@ -74,11 +78,18 @@ WDQS_THROTTLE = 2.5
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT = os.path.join(HERE, "invalid_p825_removals.txt")
 
-# Kept as a set so a second ruling extends it without reshaping the script. Each
-# entry needs Emma's word — this is a list of things she has called invalid, not
-# a list of things that look wrong to a session.
-INVALID_VALUES = {
-    "Q1188622": "重要文化財 Important Cultural Property of Japan (Emma, 2026-09-12)",
+# Emma, 2026-09-12, asked which of the look-alikes to name next and answered
+# "Block the whole class instead." So this is a class, not a list of QIDs: any
+# P825 value that is a heritage designation goes, including ones nobody has seen
+# yet. Q1188622 (重要文化財) and Q1139795 (国宝) are both P31 = Q30634609.
+#
+# Measured over the 118 distinct values the honzon generator emits: Q30634609
+# holds exactly those two and nothing legitimate. The neighbouring classes were
+# checked and left alone — Q23847174 religious concept, Q80071 symbol and
+# Q838948 work of art each contain real honzon (曼荼羅, 仏舎利, and Nichiren's own
+# 大曼荼羅), and Q3658341 literary character is full of bodhisattvas.
+INVALID_VALUE_CLASSES = {
+    "Q30634609": "heritage designation — 重要文化財, 国宝, and any future one",
 }
 
 
@@ -98,18 +109,20 @@ def wdqs(query):
         raise
 
 
-def holders(value):
-    """Every item carrying P825 -> value, of any class."""
-    rows = wdqs(f"SELECT DISTINCT ?s WHERE {{ ?s wdt:P825 wd:{value} }}")
-    return sorted({b["s"]["value"].rsplit("/", 1)[-1] for b in rows})
+def holders(cls):
+    """[(item, value)] for every P825 whose VALUE is in this class, any subject.
+
+    Returns the value too, because a removal line has to name it — and because a
+    class can hold more than one, which is the whole reason it is a class.
+    """
+    rows = wdqs(f"""SELECT DISTINCT ?s ?v WHERE {{
+      ?s wdt:P825 ?v . ?v wdt:P31 wd:{cls} }}""")
+    return sorted({(b["s"]["value"].rsplit("/", 1)[-1],
+                    b["v"]["value"].rsplit("/", 1)[-1]) for b in rows})
 
 
-def build_lines(value_to_items):
-    out = []
-    for value in sorted(value_to_items):
-        for qid in value_to_items[value]:
-            out.append(f"-{qid}|P825|{value}")
-    return sorted(set(out))
+def build_lines(pairs):
+    return sorted({f"-{qid}|P825|{value}" for qid, value in pairs})
 
 
 def main():
@@ -118,13 +131,14 @@ def main():
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-    found = {}
-    for value, why in sorted(INVALID_VALUES.items()):
-        items = holders(value)
-        found[value] = items
-        print(f"{value}  {why}\n    {len(items)} item(s) carry it")
+    pairs = []
+    for cls, why in sorted(INVALID_VALUE_CLASSES.items()):
+        found = holders(cls)
+        pairs += found
+        vals = sorted({v for _, v in found})
+        print(f"{cls}  {why}\n    {len(found)} statement(s), values: {vals}")
 
-    lines = build_lines(found)
+    lines = build_lines(pairs)
     print(f"\n{len(lines)} removal line(s)")
     for line in lines[:5]:
         print("   ", line)

@@ -25,15 +25,18 @@ import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 MQ = os.path.dirname(HERE)
 
-INVALID = "Q1188622"
+INVALID = "Q1188622"          # 重要文化財, the one Emma named
+HERITAGE_CLASS = "Q30634609"  # the class she then asked for instead
 
 
-def test_the_honzon_generator_refuses_it():
+def test_the_honzon_generator_refuses_the_whole_class():
+    """Emma chose a class over a list of QIDs — *Block the whole class instead*."""
     src = open(os.path.join(MQ, "generate_honzon_quickstatements.py"), encoding="utf-8").read()
-    assert "INVALID_HONZON" in src, "the blocklist is gone"
-    assert INVALID in src, f"{INVALID} is no longer in the honzon blocklist"
-    assert "if d in INVALID_HONZON:" in src, (
-        "the blocklist exists but nothing consults it in the emit loop")
+    assert "INVALID_HONZON_CLASSES" in src, "the class gate is gone"
+    assert HERITAGE_CLASS in src, f"{HERITAGE_CLASS} is no longer blocked"
+    assert "if d in refused:" in src, (
+        "the gate exists but nothing consults it in the emit loop")
+    assert "def refused_classes(" in src
 
 
 def test_no_batch_adds_it():
@@ -58,21 +61,27 @@ def test_the_removal_batch_is_removal_only():
     lines = [ln.strip() for ln in open(path, encoding="utf-8") if ln.strip()]
     for ln in lines:
         assert re.match(r"^-Q\d+\|P825\|Q\d+$", ln), f"not a bare removal line: {ln}"
-        assert ln.split("|")[2] == INVALID or ln.split("|")[2] in _declared_values(), (
-            f"removes a value nobody ruled invalid: {ln}")
 
 
-def _declared_values():
+
+def test_the_removal_generator_works_by_class_not_by_qid():
+    """A QID list would have missed Q1139795, which is exactly what happened
+    before she said to block the class: the QID version found 12 statements, the
+    class version found 16."""
     src = open(os.path.join(MQ, "generate_invalid_p825_removals.py"), encoding="utf-8").read()
-    block = src[src.index("INVALID_VALUES = {"):]
+    assert "INVALID_VALUE_CLASSES" in src
+    assert HERITAGE_CLASS in src
+    assert "?v wdt:P31 wd:{cls}" in src, (
+        "the query no longer filters by the VALUE's class")
+
+
+def test_classes_holding_real_honzon_are_not_blocked():
+    """Measured 2026-09-12 over all 118 values the honzon generator emits. Each of
+    these holds a legitimate honzon — 曼荼羅, 仏舎利, Nichiren's own 大曼荼羅,
+    地蔵菩薩 — so blocking them would drop real data to catch a designation."""
+    src = open(os.path.join(MQ, "generate_invalid_p825_removals.py"), encoding="utf-8").read()
+    block = src[src.index("INVALID_VALUE_CLASSES = {"):]
     block = block[:block.index("}")]
-    return set(re.findall(r'"(Q\d+)"', block))
-
-
-def test_only_values_emma_ruled_on_are_removed():
-    """The removal generator must not grow entries on a session's own judgement.
-    Q1139795 (National Treasure) and Q11595955 (hibutsu) are the same shape and
-    are deliberately absent — she named one QID."""
-    assert _declared_values() == {INVALID}, (
-        "INVALID_VALUES changed; every entry needs Emma's word, not a session's "
-        "reading that something looks wrong")
+    for cls, why in (("Q23847174", "religious concept"), ("Q80071", "symbol"),
+                     ("Q838948", "work of art"), ("Q3658341", "literary character")):
+        assert cls not in block, f"{cls} ({why}) contains real honzon and must not be blocked"
