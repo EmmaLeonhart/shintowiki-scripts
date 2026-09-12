@@ -416,6 +416,21 @@ jobs:
           shinto_miraheze/run_step.sh "Core Loop: fix_ill_destinations" \
             python3 shinto_miraheze/fix_ill_destinations.py --apply --max-edits 50 --run-tag "${RUN_TAG}"
 
+      # Fills a BLANK {{wikidata link}} with the QID resolved for it by
+      # resolve_blank_wikidata_links.py (state file, committed). Those pages are
+      # the ones wikidata_lookup can never reach: it resolves a QID out of the
+      # template's own (lang, target) pairs, and these have none. The resolver
+      # measured 233 blank of 11,069 mainspace pages on 2026-09-12, of which 170
+      # are Q-titled stubs dedupe will redirect away and 58 are named pages; 9 of
+      # those 58 resolved. Edits the shinto wiki only — NOT a Wikidata edit, so
+      # not subject to the Wikidata lockout. Re-reads every page and fills only a
+      # template that is STILL blank, so it can never overwrite a QID that landed
+      # between resolve time and now.
+      - name: "Final: apply_blank_wikidata_links"
+        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
+        run: |
+          shinto_miraheze/run_step.sh "Core Loop: apply_blank_wikidata_links"             python3 shinto_miraheze/apply_blank_wikidata_links.py --apply --max-edits 25 --run-tag "${RUN_TAG}"
+
       # tag_untranslated_japanese ported to ops/untranslated_japanese.py —
       # runs via mainspace-orchestrator now. The standalone script is
       # retained for the one-off --category rebucket step below.

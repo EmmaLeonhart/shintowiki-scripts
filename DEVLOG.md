@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 — the applier for those 9, wired into wiki-cleanup
+
+`shinto_miraheze/apply_blank_wikidata_links.py`, and a step in `wiki-cleanup.yml` behind the same
+lockout gate as every other writer there. This repo has no local wiki credentials, and the rule is to
+ship a CI step rather than hand the edit to Emma.
+
+**Deliberately a second script.** The resolver reads two wikis and decides; this one only writes what
+the state file already records. One script that resolves and writes cannot answer "what would this
+have done?" without doing it.
+
+**It re-reads before it writes, and the proposal does not entitle it to anything.** `fill()` returns
+a refusal, not a page, unless the template is *still* blank — so a QID that landed between resolve
+time and run time (from `wikidata_lookup`, from a human) is never overwritten, including when it
+disagrees with ours. Two blank templates on one page is refused as ambiguous rather than guessed at.
+And it substitutes the call in place instead of rewriting the page, so `[[Category:Git synced pages]]`
+and every other trailing byte survives — the 2026-08-23 failure has a test of its own here.
+
+**Verified, and the limits of that.** The unit tests cover `fill()` on a realistically-shaped page
+(8 tests, most of them refusals). The live path could NOT be dry-run: `wiki_edit_allowed.py`
+short-circuits before login, as it does in `merge_duplicate_pairs.py`, and shinto.miraheze is locked
+until 2026-09-14. So instead the precondition was checked read-only against page text fetched at the
+time of writing: **all 9 pages still carry a blank template, 0 would be skipped.** The write itself
+has not been exercised and will not be until the lock lifts.
+
+Cap is 25 saves a run against a worklist of 9, so it drains on the first fire after the 14th and
+no-ops after that.
+
+
 ## 2026-09-12 — 9 of the 58 blank `{{wikidata link}}` pages resolved, Shizensha among them
 
 `shinto_miraheze/resolve_blank_wikidata_links.py`. Read-only against both wikis; the applier is a
