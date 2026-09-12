@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Weekly (Sunday) test: can EmmaBot actually EDIT shinto.miraheze.org right now?
+"""DAILY test: can EmmaBot actually EDIT shinto.miraheze.org right now?
 
-Emma 2026-07-15: rather than probe the wiki hourly/daily while it's blocked, test a
-REAL edit once a week. If the edit lands, wiki editing is enabled for the week; if
-it fails (the Cloudflare managed challenge blocks login, or the save errors), editing
-stays locked for the week so nothing keeps hammering the 403. Works → continue;
-otherwise → don't.
+Emma 2026-07-15 set this to once a week: rather than probe an apparently-blocked wiki
+hourly, test a REAL edit and let the result gate the period. Emma 2026-09-12 made it
+DAILY — one word, "Daily". The weekly cadence was costing far more than it saved: the
+Cloudflare challenge is INTERMITTENT (it passed 08-19, 08-23 and 08-30, and the bot
+landed ~800 edits/day 09-01..09-04), so a single challenged request locked eight days
+during most of which the wiki was reachable and nothing tried. Works → continue;
+otherwise → don't, until tomorrow.
 
 This REPLACES the hourly login gate + the daily 8h-contrib lockout with a single
 weekly edit-test. It writes:
@@ -14,7 +16,7 @@ weekly edit-test. It writes:
   * the WIKI_GATE marker + status line in queue.md (GO on pass / WAIT on fail).
 
 On failure the lock runs 8 days (> the 7-day test cadence) so it never auto-expires
-before the next Sunday test — the weekly test is the sole decider.
+before the next day's test — the test is the sole decider.
 
 Needs WIKI_USERNAME (bot-password format) + WIKI_PASSWORD in the env — runs in CI.
 
@@ -40,7 +42,8 @@ REPO = pathlib.Path(_uar)
 STATE = REPO / "shinto_miraheze" / "wiki_editing_lockout.state"
 QUEUE = REPO / "queue.md"
 TEST_PAGE = "User:EmmaBot/edit-test"
-LOCK_DAYS = 8   # > the 7-day cadence, so the lock never auto-expires before the next test
+LOCK_DAYS = 2   # > the DAILY cadence, so the lock never auto-expires before the next
+                # test and the test stays the sole decider. Was 8, for a weekly cadence.
 
 
 def try_edit():
@@ -57,7 +60,7 @@ def try_edit():
         page = site.pages[TEST_PAGE]
         page.save(
             f"Weekly edit-test: EmmaBot editing works as of {stamp}.\n\n"
-            "This page is written once a week by weekly_wiki_edit_test.py to confirm the "
+            "This page is written daily by weekly_wiki_edit_test.py to confirm the "
             "bot can edit; if the write fails, wiki editing is locked for the week.\n",
             summary="weekly edit-test")
         return True, f"edit landed on [[{TEST_PAGE}]] at {stamp}"
@@ -114,7 +117,7 @@ def blackout_until():
     probe holds off entirely until `blackout_until` passes. Without this the Sunday
     test would break the silence every 7 days and the streak would never exceed 6.
 
-    Distinct from `locked_until`, which is always ~8 days out and is what gates the
+    Distinct from `locked_until`, which is a couple of days out and is what gates the
     other workflows; using that here would suppress the probe forever. `blackout_until`
     is set once, by hand, and self-drains — once the date passes the normal weekly
     cadence resumes on its own.
@@ -147,7 +150,7 @@ def write_state(ok, detail, now):
     else:
         until = (now.date() + datetime.timedelta(days=LOCK_DAYS)).isoformat()
         st = {"locked": True, "locked_until": until,
-              "reason": f"weekly edit-test FAILED ({detail}) — locked until the next Sunday test",
+              "reason": f"daily edit-test FAILED ({detail}) — locked until tomorrow's test",
               "checked": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
     st.update(carried)
     STATE.write_text(json.dumps(st, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -164,7 +167,7 @@ def write_marker(ok, now):
                   " — wiki editing is live for the week; work-loop, start clearing the ❓ DECISIONS.")
     else:
         status = (f"**Status: ⏸ WAITING** (weekly edit-test failed, {stamp})"
-                  " — wiki editing is locked for the week. The Sunday `weekly-wiki-edit-test.yml`"
+                  " — wiki editing is locked until tomorrow. The daily `weekly-wiki-edit-test.yml`"
                   " job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.")
     text = re.sub(r"\*\*Status: (?:🟢 GO|⏸ WAITING)\*\*[^\n]*?(?=\n)", status, text, count=1)
     QUEUE.write_text(text, encoding="utf-8")

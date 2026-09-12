@@ -1,4 +1,4 @@
-name: Weekly wiki edit-test
+name: Daily wiki edit-test
 
 # Emma 2026-07-15: instead of probing the wiki hourly/daily while it's blocked,
 # test a REAL edit once a week (Sunday). If the edit lands, wiki editing is enabled
@@ -12,7 +12,10 @@ name: Weekly wiki edit-test
 
 on:
   schedule:
-    - cron: "27 9 * * 0"   # Sundays ~09:27 UTC, off the :00 mark
+    # DAILY from 2026-09-12 (Emma). Was Sundays-only, which meant one challenged
+    # request cost 8 days of wiki editing — and the challenge is intermittent, so
+    # most of that week the wiki was reachable and nothing tried.
+    - cron: "27 9 * * *"   # every day ~09:27 UTC, off the :00 mark
   workflow_dispatch:
 
 permissions:
