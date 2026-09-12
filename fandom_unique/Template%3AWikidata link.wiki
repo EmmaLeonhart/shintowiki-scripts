@@ -1,14 +1,6 @@
-{{#if:{{{1|}}}|{{tmbox
- |name=wikidata-entry
- |type=notice
- |image=[[File:Wikidata-logo.svg|30px]]
- |small=yes
- |smallimage=[[File:Wikidata-logo.svg|20px]]
- |smalltext=This {{pagetype}} is linked to its entry on [[Wikidata]]: [https://www.wikidata.org/wiki/{{{1}}} {{{1}}}].
-}}|{{#switch:{{NAMESPACE}}|=[[Category:Pages without wikidata]]|Category=[[Category:Categories missing wikidata]]}}}}<includeonly>
-</includeonly><noinclude>
-{{documentation}}
+<noinclude>
+This template is intentionally blank for fandom compatibility. On miraheze, it displays a Wikidata link notice, but fandom doesn't support those features.
+
 [[Category:Templates]]
 [[Category:Independently git synced pages]]
-[[Category:Templates fixed with noinclude]]
 </noinclude>

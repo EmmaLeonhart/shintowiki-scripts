@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q136625982 -->
 <!-- JA: 白岩神社 | EN_LABEL: (none) | BUCKET: b -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B2%A9%E7%A5%9E%E7%A4%BE_%28%E5%A4%A7%E7%A3%AF%E7%94%BA%29 -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: しらいわじんじゃ -->
 <!-- TASK: read the LEAD above and give this shrine's reading as MODERN HIRAGANA, for Wikidata P1814 (name in kana). Fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading
   GUESS: <hiragana>       the lead states no reading; this is derived (below)

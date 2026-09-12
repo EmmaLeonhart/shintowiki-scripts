@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11432215 -->
 <!-- JA: 大井神社 | EN_LABEL: Oi Shrine | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%BA%95%E7%A5%9E%E7%A4%BE_%28%E5%8C%97%E6%96%B9%E7%94%BA%29 -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: おおいじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): おいじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): おおいじんじゃ
