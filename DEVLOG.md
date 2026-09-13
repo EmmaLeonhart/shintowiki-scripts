@@ -4,6 +4,41 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — Swept all 82 atomic files for frozen snapshots; the wiring is clean
+
+Two generators produced nothing today while reporting success, so the obvious next
+question was how many more there are. Measured every file in
+`direct_daily_edits.ATOMIC_FILES` against its last real change and against whether
+any workflow invokes the script that writes it.
+
+**No unwired generator, and nothing frozen that should not be.** The old files all
+say why in their own run output — `modern_shrine_ranking_qualifiers.txt` prints
+`Found 0 to qualify (16995/16995 done)`, `remove_shikinaisha.txt` prints
+`Found 0 items`, `katakana_reading_remove.txt` prints `0 is normal until the adds
+have landed`. Three files are not generated at all and correctly so:
+`bunrei_onkamui.txt` (one parse of a fixed source, like its five bunrei siblings),
+`recreation_relations.txt` and `durability_backlinks.txt` (both hand-written audit
+output, both emptied by `aa10dd93` once every line had landed).
+
+`modern-quickstatements/tests/test_every_atomic_file_is_regenerated.py` asks the
+question of all 82 from now on. It exists because
+`generate_invalid_p825_removals.py` and `generate_ronsha_role_qualifiers.py` were
+both written, both registered, and neither wired into CI for several commits this
+week — `test_invalid_p825.py` catches exactly those two by name, which does nothing
+for the next one. Confirmed non-vacuous: with either step deleted from the
+workflow, the wiring check goes false.
+
+**It checks WIRING, not yield, and says so.** Neither of today's real defects is
+visible to it — both were inside generators that run every day. A test that implied
+otherwise would be a comfort rather than a guard.
+
+Two false alarms while building it, both from the matcher rather than the repo: the
+five cloud collectors are invoked from a shell loop by bare stem, and most
+generators are invoked by path, so a lookbehind rejecting `/` reported
+`generate_french_elision_fixes.py` and `generate_multilingual_label_fixes.py` as
+dead when both had run that morning.
+
+
 ## 2026-09-13 — "Move it, then delete" was already the pipeline; one filter excluded 742 readings
 
 Emma, asked what to do with the 742 top-level katakana `P1814` readings the
