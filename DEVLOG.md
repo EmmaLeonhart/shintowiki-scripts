@@ -4,6 +4,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — 16 designation lines survived my own strip, and the saijin side is clean
+
+Two checks, following the honzon defect outward. One found a gap I left three commits ago; the other
+found nothing, which is worth writing down so nobody re-runs it.
+
+### The gap: stripping and widening are two steps, and the second invalidates the first
+
+`honzon_p825.txt` still contained **16 lines the shipped gate refuses** — `Q858308` 日本の文化財 ×15
+and `Q2901860` 有形文化財 ×1.
+
+The sequence: I stripped the staged file using the narrow `P31 = Q30634609` rule (100 lines), then
+widened the rule to the `P279` chain so it would catch those two, **and never re-stripped the file**.
+The generator refused them from that moment on; the file the drip samples every day did not. Wikidata
+editing is open, so they were live candidates.
+
+Stripped now — using the shipped gate itself rather than a hand-written list, so the file and the code
+cannot disagree about what "blocked" means. 834 lines remain.
+
+`tests/test_invalid_p825.py` compares the staged file against `INVALID_HONZON_ROOTS` directly, so
+widening the gate again without re-stripping turns it red. Confirmed by putting a `Q858308` line back
+and watching it fail.
+
+### The non-finding: the shrine side does not have this bug
+
+The honzon flaw is *"take every wikilink in the 本尊 field"*. The obvious question is whether the
+shrine-side generators do the same with 祭神, at six times the volume.
+
+Checked all three `P825` batches together — **671 distinct values across 10,829 lines** — against
+`?v wdt:P279* wd:Q858308`:
+
+| file | P825 lines | designation values |
+|---|---:|---:|
+| `saijin_deity_research.txt` | 5,426 | **0** |
+| `saijin_p825.txt` | 4,553 | **0** |
+| `honzon_p825.txt` | 850 | 2 (the ones above) |
+
+**Zero on the shrine side.** Whatever the saijin generators do with the 祭神 field, they are not
+picking up cultural-property designations. Recorded so this is not re-derived — the answer is a
+negative, and a negative that took a SPARQL sweep to establish is worth keeping.
+
+
 ## 2026-09-12 (cont.) — the other 9,088 queued removals, audited: all sound
 
 The Holy Sepulchre near-miss was caught by enumerating what a removal batch would actually delete. I

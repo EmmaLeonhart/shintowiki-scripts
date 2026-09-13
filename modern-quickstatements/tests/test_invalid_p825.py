@@ -112,3 +112,36 @@ def test_classes_holding_real_honzon_are_not_blocked():
                      ("Q2065736", "cultural property — too wide, takes dolmen"),
                      ("Q30634609", "heritage designation — too narrow, misses 2 of 4")):
         assert cls not in block, f"{cls} ({why}) must not be the root"
+
+def test_the_staged_honzon_file_agrees_with_the_shipped_gate():
+    """The file and the gate drifted once and it shipped.
+
+    On 2026-09-12 the staged lines were stripped using the narrow P31 rule, the
+    rule was then widened to the P279 chain, and the file was never re-stripped —
+    so 16 lines the shipped gate refuses (Q858308 ×15, Q2901860 ×1) sat in a file
+    the drip samples daily. Stripping and widening are two steps and the second
+    one silently invalidates the first.
+
+    This compares the FILE against the gate's own root set rather than a
+    hand-written list, so widening the gate again cannot leave the file behind
+    without turning this red.
+    """
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "_gen_honzon", os.path.join(MQ, "generate_honzon_quickstatements.py"))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+
+    path = os.path.join(MQ, "honzon_p825.txt")
+    if not os.path.exists(path):
+        import pytest
+        pytest.skip("not generated in this checkout")
+    staged = set()
+    for line in open(path, encoding="utf-8"):
+        parts = line.split("|")
+        if len(parts) > 2 and parts[2].startswith("Q"):
+            staged.add(parts[2])
+    roots = mod.INVALID_HONZON_ROOTS & staged
+    assert not roots, (
+        f"the staged file contains blocked roots the gate refuses: {sorted(roots)} — "
+        "re-strip it after widening the gate")
