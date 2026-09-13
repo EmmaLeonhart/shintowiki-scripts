@@ -4,6 +4,31 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 (cont.) — swept all 52 lockout-gated steps; one more was wrong, and only one
+
+Yesterday's fix came from stumbling on a wrongly-gated step. The right follow-up is not to hope there
+are no others, so: every step in `wiki-cleanup.yml` was matched to the scripts it runs, and each of
+those checked for any way of reaching the wiki.
+
+**61 steps, 52 gated on the lockout, exactly 1 more wrong.**
+
+`generate_category_translation_moves` — the other half of the same monthly pair. It READS category
+pages and writes rows to `category_moves.csv`. Verified rather than assumed, because its `--run-tag`
+argument is the wiki-edit-summary convention and looked like a tell: a single `requests.get`, no
+POST, no CSRF token, no `mwclient`, no credentials — and its own docstring says *"`--run-tag` accepted
+for template consistency (unused — no wiki write)"*.
+
+So the whole monthly category-translation chain is now ungated up to the point where it writes:
+generate the CSV → collect cloud answers into it → commit it. `move_categories`, which consumes the
+CSV and moves pages, keeps its gate. Three steps prepare, one writes, and only the writer is gated.
+
+**The other 51 gated steps are correctly gated** — that is the useful half of the result. The sweep
+was worth running to find one more, and worth recording so nobody runs it again.
+
+The test now pins all four conditions plus the no-wiki-client check across both scripts, and the new
+case was confirmed to fail with the gate put back.
+
+
 ## 2026-09-13 — the wiki lockout was stopping a step that never touches the wiki
 
 Flagged in passing yesterday while wiring the new collectors, then fixed rather than left as a note.

@@ -582,8 +582,14 @@ jobs:
       # transform; never a guess) to the CSV, writes a residual report. The
       # CSV/residual are the human review surface (committed below); the move
       # itself is the move_categories step that follows.
+      # Also NOT gated on the wiki lockout, same reasoning as the collector
+      # below it and verified the same way: one `requests.get`, no POST, no token,
+      # no mwclient, and its own docstring says "--run-tag accepted for template
+      # consistency (unused — no wiki write)". It READS category pages and writes
+      # rows to category_moves.csv. move_categories, which consumes that CSV and
+      # does move pages, keeps its gate.
       - name: "Deprecated: generate_category_translation_moves"
-        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
+        if: always() && steps.*.outcome != 'cancelled'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           shinto_miraheze/run_step.sh "Deprecated: generate_category_translation_moves" \

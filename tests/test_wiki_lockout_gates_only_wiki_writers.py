@@ -59,6 +59,17 @@ def test_committing_that_csv_is_not_lockout_gated_either():
         f"accepts edits. Condition was: {cond}")
 
 
+def test_the_csv_generator_is_not_lockout_gated_either():
+    """The other half of the same monthly pair, found by sweeping all 52 gated
+    steps rather than by stumbling on it. Verified read-only: a single
+    `requests.get`, no POST, no token, no mwclient, and its docstring says
+    "--run-tag accepted for template consistency (unused — no wiki write)"."""
+    cond = _step_condition("Deprecated: generate_category_translation_moves")
+    assert GATE not in cond, (
+        "generate_category_translation_moves.py reads pages and writes a local CSV; "
+        f"gating it wastes the monthly slot whenever the wiki is down. Was: {cond}")
+
+
 def test_the_step_that_actually_edits_the_wiki_keeps_its_gate():
     """The other direction. move_categories moves pages on shinto.miraheze; if
     this ever loses its gate the bot edits straight through a lockout."""
@@ -70,10 +81,12 @@ def test_the_step_that_actually_edits_the_wiki_keeps_its_gate():
 def test_the_collector_still_has_no_way_to_edit_the_wiki():
     """The reason the gate was removed. If this script ever grows a wiki client,
     the gate has to come back — so the claim is asserted rather than remembered."""
-    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                        "shinto_miraheze", "collect_category_translations.py")
-    src = open(path, encoding="utf-8").read()
-    for forbidden in ("mwclient", "WIKI_PASSWORD", "login_with_retry", ".save("):
-        assert forbidden not in src, (
-            f"{forbidden} appeared in the collector — it can now reach the wiki, "
-            "so restore the lockout gate on its workflow step")
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    for name in ("collect_category_translations.py",
+                 "generate_category_translation_moves.py"):
+        src = open(os.path.join(root, "shinto_miraheze", name), encoding="utf-8").read()
+        for forbidden in ("mwclient", "WIKI_PASSWORD", "login_with_retry",
+                          ".save(", "requests.post"):
+            assert forbidden not in src, (
+                f"{forbidden} appeared in {name} — it can now reach the wiki, so "
+                "restore the lockout gate on its workflow step")
