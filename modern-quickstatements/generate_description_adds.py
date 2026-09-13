@@ -478,7 +478,14 @@ def main():
             label_to_key = {v: k for k, v in keys.items()}
             proposals = {}
             for qid, (label, pref) in targets.items():
-                slot = label_to_key.get(pref, pref) if pref else None
+                # ⚠ NO KEY, NO PREFECTURE TEMPLATE. Falling back to the raw label
+                # is what doubles the generic word, and it still happened once in
+                # 7,842 lines: Q97311695's P131 resolves to an admin unit whose id
+                # label is literally "Prefektur Tokyo", which is not one of the 47
+                # keyed labels, so the fallback produced "di Prefektur Prefektur
+                # Tokyo, Jepang". One malformed line is worth one skipped item —
+                # the item drops to the generic, or to nothing if there isn't one.
+                slot = label_to_key.get(pref) if pref else None
                 new = (pref_t.replace("{pref}", slot) if (pref_t and slot) else gen)
                 if new:
                     proposals[qid] = (label, new)

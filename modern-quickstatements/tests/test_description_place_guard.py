@@ -226,3 +226,31 @@ def test_a_skip_says_which_check_emptied_it():
     src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
     assert "no template could be inferred" in src
     assert "the place guard dropped it" in src
+
+
+def test_an_unkeyed_prefecture_label_skips_the_template():
+    """Falling back to the raw label is what doubles the generic word, and it still
+    happened once in 7,842 lines: Q97311695's P131 resolves to an admin unit whose
+    id label is literally "Prefektur Tokyo", not one of the 47 keyed labels, so the
+    fallback emitted "di Prefektur Prefektur Tokyo, Jepang". One malformed line is
+    worth one skipped item — it drops to the generic, or to nothing."""
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    body = src[src.index("label_to_key = "):src.index("by_pair = defaultdict(list)")]
+    assert "label_to_key.get(pref) if pref else None" in body, (
+        "an unkeyed prefecture label falls back to the raw label again, which "
+        "doubles the generic word")
+    assert "label_to_key.get(pref, pref)" not in body
+
+
+def test_the_staged_file_has_no_doubled_generic_word():
+    """Measured across id, sl, uk and de — the four that infer a prefecture
+    template. This is the check that reading the OUTPUT provides and no assertion
+    about the template ever did."""
+    path = os.path.join(MQ, "description_adds.txt")
+    if not os.path.exists(path):
+        import pytest
+        pytest.skip("not generated in this checkout")
+    text = io.open(path, encoding="utf-8").read()
+    for doubled in ("Prefektur Prefektur", "prefekturi Prefektura",
+                    "префектурі Префектура", "Präfektur Präfektur"):
+        assert doubled not in text, f"{doubled!r} is back in the staged file"

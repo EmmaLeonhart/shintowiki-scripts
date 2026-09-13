@@ -4,6 +4,48 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — `description_adds.txt` regenerated at last: 1,391 -> 7,841
+
+Third attempt. The first crashed at import, the second on a truncated WDQS body,
+this one completed. **1,391 -> 7,841 lines, 9 languages**, and every fault found
+today is absent from it:
+
+| check | result |
+|---|---|
+| `Prefektur Prefektur` / `prefekturi Prefektura` / `префектурі Префектура` | 0 |
+| fr *"à Kyoto"*, es/it *"Yokohama"*, pl/cs *"Jokohama"*, de *"Sammu"* | 0 |
+| tr *"Koishikawa"*, fr *"Matsuyama"*, el *"Κιότο"* | 0 — caught by the guard this run |
+| malformed lines | 0 |
+
+The prefecture templates now read correctly: `у префектурі Шімане, Японія` (uk),
+`v prefekturi Kjoto na Japonskem` (sl), `Osaka'da Budist tapınağı` (tr).
+
+**One line in 7,842 still doubled** and the cause is worth keeping: `Q97311695`'s
+`P131` resolves to an admin unit whose id label is literally *"Prefektur Tokyo"*,
+which is not one of the 47 keyed labels, so the fallback filled the slot with the
+raw label. There is now no fallback — an unkeyed label skips the prefecture template
+and the item drops to the generic, or to nothing. One malformed line is worth one
+skipped item. The line is stripped.
+
+⚠ **Two residual over-fires, named rather than hidden.** The stem test rescued uk
+(`Японії` is no longer read as a place) but not `ru` (`Японии`, 74 targets) or `hu`
+(`Japánban`, 21 targets) — their corpora must spell the country in too few distinct
+descriptions for even the stem to clear a majority. 95 targets get no description
+where they safely could. That is a smaller wrong than the 403 false locations the
+guard exists to stop, and the real fix is the queued one: take the place vocabulary
+from the corpus items' own `P131` labels instead of inferring it from frequency.
+
+⭐ **And the thing that actually found all of this: reading the generated file.**
+Every fault today — the doubling, the country false-positive, the misleading skip
+message, the one unkeyed label — was invisible to the tests I had written for the
+code and obvious in one pass over its output. The assertions came after.
+
+One reading error of my own: the background command ended in `| tail -90`, so the
+run's two summary lines and the whole large-language half of its report were cut,
+and I briefly read the shrine class as having emitted nothing. It had emitted 7,108
+fr lines. The output was fine; my view of it was truncated.
+
+
 ## 2026-09-13 — 65 of 72 WDQS callers cannot survive a short read; three of them were mine
 
 After the truncated body that killed a regeneration, the obvious question is how
