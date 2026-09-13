@@ -126,3 +126,43 @@ def test_the_staged_file_has_no_surviving_false_location():
         assert not offenders, (
             f"{lang} lines naming {needle!r} are back at {offenders[:3]} — these "
             "assert a location their items do not have")
+
+
+def test_the_target_must_be_in_japan():
+    """Every generic this script can infer names Japan, because the corpus is
+    Japan-shaped. The Buddhist-temple class already filtered on P17; the
+    Shinto-shrine class did not, so overseas shrines were being described as being
+    in Japan.
+
+    Measured 2026-09-13 over the 819 staged `bangunan kuil di Jepang` lines: 325 in
+    Japan, **98 demonstrably not** (Taiwan 62, Korea under Japanese rule 10, PRC 7,
+    Manchukuo 3, USA 3, Palau, Thailand, San Marino), 397 with no P17 at all. The
+    colonial-era shrines are the bulk — Changchun, Hsinking, Keijō, Karenkō.
+    """
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    body = src[src.index("def targets_with_pref("):src.index("def langs_with_label_no_desc(")
+               if "def langs_with_label_no_desc(" in src[src.index("def targets_with_pref("):]
+               else len(src)]
+    q = body[body.index("SELECT ?item ?l"):body.index('"""', body.index("SELECT ?item ?l"))]
+    assert "?item wdt:P17 wd:Q17" in q, (
+        "the target query no longer requires the item to be in Japan; overseas "
+        "shrines get a description saying they are")
+
+
+def test_the_country_filter_is_not_on_the_shared_class_list():
+    """CLASSES is shared with the label pipeline, and a LABEL asserts no country.
+    Filtering there would drop legitimate label work to fix a description bug."""
+    fixes = open(os.path.join(MQ, "generate_description_fixes.py"), encoding="utf-8").read()
+    block = fixes[fixes.index("CLASSES = ["):fixes.index("]", fixes.index("CLASSES = ["))]
+    assert '("Q845945", "")' in block, (
+        "the Shinto-shrine class in the SHARED list grew a country filter — that "
+        "belongs on this script's targets, not on the labels")
+
+
+def test_the_corpus_is_not_country_filtered_either():
+    """Template inference wants every existing description it can see; narrowing
+    the corpus would shrink the evidence for no gain."""
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    corpus = src[src.index("def desc_corpus("):src.index("def targets_with_pref(")]
+    assert "wdt:P17" not in corpus, (
+        "desc_corpus grew a country filter; it should read every description")

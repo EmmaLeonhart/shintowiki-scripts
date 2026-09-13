@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — 98 shrines told they are in Japan, in Taiwan, Korea and Manchukuo
+
+Follow-on from the description work, and I had reported it in a status line as an
+observation rather than doing anything about it — which is the "third thing"
+CLAUDE.md forbids. Measured instead.
+
+Every generic this script can infer names Japan, because the corpus is Japan-shaped:
+*bangunan kuil di Jepang*, *tempel in Japan*, *буддийский храм в Японии*. The
+Buddhist-temple class in `CLASSES` already carries `?item wdt:P17 wd:Q17`. The
+Shinto-shrine class does not.
+
+Over the 819 staged `di Jepang` lines:
+
+| P17 | n |
+|---|---:|
+| Japan | 325 |
+| **not Japan** | **98** — Taiwan 62, Korea under Japanese rule 10, PRC 7, Taiwan under Japanese rule 5, Manchukuo 3, ROC 3, USA 3, Palau, South Seas Mandate, Thailand, Kwantung, San Marino |
+| Empire of Japan | 12 |
+| no P17 at all | 397 |
+
+The colonial-era shrines are the bulk of it — Changchun, Hsinking, Keijō, Karenkō.
+
+`?item wdt:P17 wd:Q17` now applies to the **targets**, and the placement is the
+decision:
+
+* **not on `CLASSES`** — that tuple is shared with the label pipeline, and a LABEL
+  asserts no country. Filtering there would drop legitimate label work to fix a
+  description bug.
+* **not on the corpus** — template inference wants every existing description it can
+  see; narrowing it shrinks the evidence for no gain.
+
+The 397 with no `P17` are excluded too. Excluding one costs it a description it might
+have deserved; including it asserts a country nothing in the data supports. A wrong
+blank is worse than an empty one, and the filter self-heals as `P17` is added.
+
+
 ## 2026-09-13 — A dead generator, and 403 descriptions asserting a place their items are not in
 
 The 09:27 run's log carried `##[warning] generate_description_adds.py bailed

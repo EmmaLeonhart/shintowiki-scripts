@@ -257,10 +257,34 @@ def desc_corpus(cls, extra, lang):
 
 
 def targets_with_pref(cls, extra, lang):
-    """{qid: [label, pref_label_or_None]} for items with label@lang but no desc@lang."""
+    """{qid: [label, pref_label_or_None]} for items with label@lang but no desc@lang.
+
+    ⛔ `?item wdt:P17 wd:Q17` — THE TARGET MUST BE IN JAPAN, and this is on the
+    TARGETS only, deliberately not on CLASSES and not on the corpus.
+
+    Every generic this script can infer names Japan, because the corpus is
+    Japan-shaped: *bangunan kuil di Jepang*, *tempel in Japan*, *буддийский храм в
+    Японии*. The Buddhist-temple class already carries this filter; the Shinto-shrine
+    class does not, so overseas shrines were getting it. Measured 2026-09-13 over the
+    819 staged `di Jepang` lines: **325 are in Japan, 98 are demonstrably not** —
+    Taiwan 62, Korea under Japanese rule 10, PRC 7, Manchukuo 3, USA 3, Palau, Thailand,
+    San Marino — and 397 carry no P17 at all, so the claim is unverified rather than
+    false. The colonial-era shrines are the bulk of it: Changchun, Hsinking, Keijō,
+    Karenkō.
+
+    Excluding an item with no P17 costs it a description it might have deserved.
+    Including it asserts a country nothing in the data supports. The description is,
+    in Emma's words, *"a grammatically right fill in the blanks statement"* — a wrong
+    blank is worse than an empty one, and the filter self-heals as P17 is added.
+
+    NOT on `CLASSES`: that tuple is shared with the label pipeline, and a LABEL asserts
+    no country, so filtering there would drop legitimate label work for no reason.
+    NOT on the corpus: template inference wants every existing description it can see.
+    """
     q = f"""
     SELECT ?item ?l WHERE {{
       ?item wdt:P31 wd:{cls} . {extra}
+      ?item wdt:P17 wd:Q17 .
       ?item rdfs:label ?l . FILTER(LANG(?l) = "{lang}")
       FILTER NOT EXISTS {{ ?item schema:description ?d . FILTER(LANG(?d) = "{lang}") }}
     }}
