@@ -30,44 +30,16 @@ def test_comments_and_blanks_are_filtered(tmp_path):
 
 
 def test_the_shipped_file_holds_exactly_the_intended_lines():
-    """The file shipped empty until 2026-07-17, when Emma's inbound-links fix was
-    MOVED here from the atomic drip (commit 50b42c1a7): at ~105k pool lines a 2-line
-    file had a ~0.28%/day draw chance — about a year's expected wait — while this
-    channel lands one line/day in order. The old assertion (`== []`) was the
-    ships-empty tripwire and it fired as designed; it is repointed here rather than
-    deleted, so the file's contents still cannot drift unnoticed.
+    """Pin the exact lines, in order.
 
-    Pin the exact lines, in order: the cursor is an index into this list, so an
-    insertion or reorder above the cursor silently misaligns which edit runs next.
+    The cursor is a POSITIONAL INDEX into this list, so an insertion, a reorder or
+    a deletion above it silently changes which edit runs next.
 
-    Line 3 was appended by generate_scholar_id.py on its GATE_DATE (2026-07-29 UTC,
-    commit 3f69905cb) — the two-week-delayed P1960 for Emma's own researcher item. It
-    is BELOW the existing two, which is what the file's append-only rule requires.
-    (That script was DELETED 2026-09-12 with the rest of the Sutra/papers strategy;
-    it had gone inert — the statement is live on Wikidata and it re-added nothing.
-    The line stays: this file is append-only and the cursor indexes into it.)
-
-    Lines 4-5 (2026-08-04) are the first pair this file was actually built for. The
-    Open-questions note that created the channel said the mechanism existed but
-    "population is the open bit" — no clean remove-then-add pair had turned up. This
-    is one: 調田坐一事尼古神社's P1814 is the jawiki reading with its first character
-    missing (くだにます… for つくだにます…), so the correct value has to be ADDED and the
-    truncated one REMOVED, on the same property. In the random atomic drip the
-    removal could fire first and leave the shrine with no modern reading at all;
-    here line N is confirmed landed before N+1 is attempted.
-
-    Line 3 (the P1960 scholar ID) was REMOVED from the file by the generator on 2026-08-18
-    (bot commit 631f4c8c) because the statement had landed — verified 2026-08-19 against the live
-    API: Q140568870 carries exactly one P1960, value "kiJ9hGYAAAAJ". So the drop is the channel
-    working, not drift, and the expectation is updated rather than the file restored.
-
-    ⚠ THE HAZARD THIS LEAVES IS REAL AND IS NOT FIXED HERE. This file is documented append-only and
-    its cursor is a POSITIONAL INDEX, so deleting a line shifts everything below it up by one. It
-    was harmless this time only because the add/remove pair below moved together, preserving their
-    order. A deletion above a live cursor would misalign which edit runs next — and for this pair
-    specifically, running the removal before its add strips the shrine's only modern reading. If
-    the generator is going to delete completed lines, the cursor has to be keyed to line content
-    rather than to an index.
+    ⚠ UNFIXED HAZARD. The file is documented append-only, but the generators do
+    delete completed lines — and a deletion above a live cursor shifts everything
+    below it up by one. For the pair below that is not cosmetic: running the
+    removal before its add strips 調田坐一事尼古神社's only correct modern reading.
+    The real fix is to key the cursor to line content rather than to an index.
     """
     assert dde.load_sequential_lines() == [
         'Q140568717|P50|Q140568870|P1545|"1"',

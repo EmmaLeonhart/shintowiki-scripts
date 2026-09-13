@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — the chronicle came out of test_sequential_misc
+
+Emma, on the note I had just added to that docstring: *"I mean the historical prose shouldn't be
+there lol."* She is right and the fix is not a better-worded note — it is removing the prose.
+
+`test_the_shipped_file_holds_exactly_the_intended_lines` carried ~40 lines of docstring that was
+almost entirely chronicle: when the file shipped empty, which commit moved a line in, the ~0.28%/day
+draw-chance arithmetic that justified the move, which bot commit later removed line 3, and the
+verification that followed. All of it true, all of it in `git log`, none of it needed to understand
+or maintain the test.
+
+Now 11 lines, keeping only the two things that are live rather than past:
+
+* the cursor is a **positional index**, so an insertion, reorder or deletion above it changes which
+  edit runs next;
+* ⚠ the **unfixed hazard** — the file is documented append-only but generators do delete completed
+  lines, and for the pair in it, running the removal before its add strips 調田坐一事尼古神社's only
+  correct modern reading. The fix is to key the cursor to content rather than to an index.
+
+**The line worth holding: rationale that stops a future mistake stays; a record of what happened
+goes.** *"Do not reintroduce the P31 leg, it would have deleted 42 statements"* is the first.
+*"On 2026-07-17 this was moved here in commit 50b42c1a7"* is the second, and `git log` already has it.
+
+This is the same rule as `queue.md`'s and the wiki page's — a file that accumulates settled history
+gets worse every time someone adds to it.
+
+
 ## 2026-09-12 (cont.) — all seven cloud pipelines wired end to end, and the last Sutra leftover deleted
 
 Emma, asked whether the collectors should run automatically: *"Wire them all into CI."*
