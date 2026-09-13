@@ -303,7 +303,7 @@ jobs:
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
-          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then             python audit_model_adoption.py --json ../docs/model_adoption.json               || echo "::warning title=Audit did not run::audit_model_adoption.py bailed (usually WDQS timeout).";           else echo "not Sunday and not forced — skipping the conformance audit"; fi
+          if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then             python audit_model_adoption.py --json ../docs/model_adoption.json               || echo "::warning title=Audit did not run::audit_model_adoption.py exited non-zero — read the traceback above; do NOT assume WDQS.";           else echo "not Sunday and not forced — skipping the conformance audit"; fi
 
       # The katakana P1814 values neither pipeline can reach, categorised for a
       # per-category ruling ([[Open questions]], 2026-09-11). Report only.
@@ -460,13 +460,21 @@ jobs:
       # Original rationale, kept because the weekly cadence itself is still deliberate:
       # both generators self-drain via skip-if-standard on regeneration, so their data
       # barely drifts day to day.
+      # ⛔ THESE WARNINGS USED TO NAME A CAUSE, AND THE CAUSE WAS WRONG.
+      # They said "bailed (usually HTTP 429 from WDQS)". On 2026-09-13
+      # generate_description_adds.py was dying at IMPORT —
+      #   ImportError: cannot import name 'pref_labels' from 'generate_description_fixes'
+      # — after 47b42aff deleted that helper from the label-only sibling on 09-11.
+      # A deterministic two-line fix, reported as a rate limit for two weekly slots,
+      # while description_adds.txt went on dripping its 2026-08-25 content. Say the
+      # step failed and point at the traceback; the run log already has the answer.
       - name: Description fixes (desc-without-label pairs, weekly Sunday refresh)
         working-directory: modern-quickstatements
         continue-on-error: true
         run: |
           if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
             python generate_description_fixes.py \
-              || echo "::warning title=Weekly refresh did not run::generate_description_fixes.py bailed (usually HTTP 429 from WDQS). description_label_pairs.txt was NOT regenerated."; \
+              || echo "::warning title=Weekly refresh did not run::generate_description_fixes.py exited non-zero — read the traceback above; do NOT assume WDQS. description_label_pairs.txt was NOT regenerated."; \
           else echo "not Sunday and not forced — keeping description_label_pairs.txt"; fi
 
       - name: Description adds (labeled items missing descriptions, weekly Sunday refresh)
@@ -475,7 +483,7 @@ jobs:
         run: |
           if [ "$(date -u +%u)" = "7" ] || [ "${{ inputs.force_weekly }}" = "true" ]; then \
             python generate_description_adds.py \
-              || echo "::warning title=Weekly refresh did not run::generate_description_adds.py bailed (usually HTTP 429 from WDQS). description_adds.txt was NOT regenerated."; \
+              || echo "::warning title=Weekly refresh did not run::generate_description_adds.py exited non-zero — read the traceback above; do NOT assume WDQS. description_adds.txt was NOT regenerated."; \
           else echo "not Sunday and not forced — keeping description_adds.txt"; fi
 
       # MUST be the last step before the commit. The husks are items ブルーノ・プラス

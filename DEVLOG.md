@@ -4,6 +4,74 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — A dead generator, and 403 descriptions asserting a place their items are not in
+
+The 09:27 run's log carried `##[warning] generate_description_adds.py bailed
+(usually HTTP 429 from WDQS)`. It was not a 429. It was:
+
+    ImportError: cannot import name 'pref_labels' from 'generate_description_fixes'
+
+**Mine, from 47b42aff on 09-11.** That commit made `generate_description_fixes.py`
+label-only and deleted `pref_labels`, `pref_keys` and `infer_templates` from it —
+correctly — and did not check the other importer. `generate_description_adds.py`
+has died at import ever since. The step is `continue-on-error` behind a Sunday gate,
+so it cost two weekly slots and reported a rate limit both times.
+
+The helpers now live in `generate_description_adds.py`, where composing a description
+belongs (step 3 of `docs/description_label_policy.md`). The label-only sibling must
+not regrow them, and a test asserts it has not.
+
+**And the call site never had the 09-10 inflection fix.** `infer_templates` matches
+the prefecture by substring, and this one passed the raw labels where the distinctive
+keys were expected — so Ukrainian, which labels the item «Префектура Наґано» and
+writes «…у префектурі Наґано, Японія», never matched and every uk target fell to the
+generic. All 28 staged uk lines are the generic form, which is the symptom exactly.
+Now `pref_keys(pref_labels(lang))`, like its sibling.
+
+### The worse thing, found while checking the staged output
+
+**The generic is the modal description in the corpus, and in five languages the modal
+one names a city.** It is then stamped on every target with no resolved prefecture:
+
+| lang | lines | staged description | where the items actually are |
+|---|---:|---|---|
+| fr | 127 | *temple bouddhiste à Kyoto, au Japon* | Anan, Namie, Tokushima, Yokkaichi… |
+| es | 71 | *templo budista en Yokohama, Japón* | Anan, Namie, Iwamizawa, Heguri… |
+| pl | 41 | *świątynia buddyjska w Jokohamie…* | Asuka, Hakui, Uji… |
+| it | 41 | *tempio buddista a Yokohama…* | Akatsuka, Takahashi, Toshima… |
+| cs | 25 | *…v japonském městě Jokohama* | Anan, Kyoto, Fushimi-ku… |
+
+Of eight sampled `à Kyoto` items, three are in Tokushima, Fukushima and Mie. The
+class-specificity guard checks the template says WHAT the item is; nothing checked
+that it does not also say WHERE, falsely. **328 lines were live in the drip and are
+stripped.** The `{pref}` template is fine and stays — it fills from the item's own
+P131, so the place it names is the item's, and tr/Osaka, tr/Nara and id/Kanagawa all
+check out.
+
+`place_tokens()` turns `pref_keys`' own technique around: a capitalised token in a
+minority of DISTINCT description strings is a place name; the country is in nearly
+all of them. Counting distinct strings rather than items is what makes it work.
+`cls_label` words are excluded because **German capitalises every noun** and the
+first version flagged the perfectly good *"buddhistischer Tempel in Japan"*.
+
+### What it does NOT catch, said plainly
+
+A place in *every* description is invisible to a frequency test, and German is that
+case: its prefecture template came out **"Shinto-Schrein in Sammu, Präfektur {pref},
+Japan"**, a city in Chiba welded into the frame, and 75 of 104 staged de lines named
+it for items in 30 different prefectures. The corpus is poisoned, so nothing
+self-referential can see it. Those 75 are stripped by hand; the general fix — take
+the place vocabulary from the corpus items' own P131 labels instead of from
+capitalisation, one query per language — is in `queue.md`, not pretended at.
+
+Three step warnings stopped naming a cause. They said *"bailed (usually HTTP 429 from
+WDQS)"*; a deterministic ImportError wore that label for two weeks. They now say the
+step exited non-zero and to read the traceback.
+
+`description_adds.txt` 1,794 → 1,391 lines. It regenerates next Sunday with the fixes;
+it was not re-run by hand, because that run is ~40 minutes of WDQS and the slot exists.
+
+
 ## 2026-09-13 — 秘仏 is a qualifier, not an invalid value: the same damage, the opposite remedy
 
 `Q11595955` 秘仏 hibutsu was the **sixth most-emitted value in `honzon_p825.txt`, 53
