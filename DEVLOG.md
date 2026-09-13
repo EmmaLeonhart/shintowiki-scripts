@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — the other four collectors: 7 kana readings collected, 2 description lines deliberately not
+
+Finishing the previous entry rather than leaving four of five pipelines unchecked. Dry-ran each:
+
+| collector | pending | waiting to collect |
+|---|---:|---|
+| `collect_name_in_kana` | 204 | **7 QS lines + 5 en labels** |
+| `collect_description_enrichment` | 67 | 2 QS lines — **not collected, see below** |
+| `collect_beppyo_p612` | 0 | nothing |
+| `collect_label_typo_answers` | 0 | nothing |
+| `parse_onkamui_bunrei` | — | not a collector; no `--dry-run`, left alone |
+
+### Kana: collected
+
+7 `P1814` readings and 5 English labels, and `name_in_kana.txt` now exists — it was one of the three
+registered-but-absent atomic files, absent because nothing had run its collector, not because the
+routine had produced nothing. Seven answers had been sitting in `name_in_kana/` unconsumed.
+
+CLAUDE.md is unambiguous that this pipeline should keep running unattended and that its rate is the
+design rather than a defect, so collecting answers it has already produced is straightforwardly the
+job.
+
+### Description enrichment: NOT collected, on purpose
+
+`description_enrichment_en.txt` has 2 lines waiting and they stay waiting. On 2026-09-11 Emma said
+descriptions *"should not be being edited either way really"*; that entry killed one description path
+and **flagged this one for her ruling rather than removing it on my reading of her words**. Adding two
+more description edits to a file whose existence is an open question with her is the wrong direction
+while it is open — and it is a file, not a queue, so nothing is lost by waiting.
+
+The 2 answers stay in the work-files; collecting them later is one command.
+
+
 ## 2026-09-12 (cont.) — the collectors are not in CI; one answer had been sitting uncollected
 
 Generalising the unwired-generator defect: are there other registered atomic files whose producer
