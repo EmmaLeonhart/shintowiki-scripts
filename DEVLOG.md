@@ -4,6 +4,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — the builder half: 2 of 7 in CI, and the routine is documented not to run them
+
+Completing the previous entry, which checked collectors but not the builders that feed them.
+
+| pipeline | builder in CI | collector in CI |
+|---|---|---|
+| category translation | ✅ `build-remote-queue.yml` | ✅ `wiki-cleanup.yml` |
+| kana disagreement | ✅ `generate-quickstatements.yml` | — |
+| name in kana | ❌ | ❌ |
+| ronsha ranking | ❌ | ❌ |
+| description enrichment | ❌ | ❌ |
+| beppyo P612 | ❌ | ❌ |
+| label typo review | ❌ | ❌ |
+
+**One pipeline of seven is wired end to end.**
+
+### And it is not the cloud routine picking up the slack
+
+`docs/remote_queue_routine_prompt.md` is the routine's actual prompt, and it is scoped to
+`remote_queue.json` alone — the content pipeline over `duplicated_content/`, `need_translation/` and
+`fandom_unique/`. Step 5 is explicit: *"Touch NOTHING else in the repo. No refactors, no unrelated
+cleanup, no edits to scripts, workflows, docs, or queue files."*
+
+So the routine does not run builders and does not run collectors. **Something else answers the
+`*_review/` and `name_in_kana/` work-files** — that producer is not identified here and is not
+guessed at.
+
+### The cost is measured, not hypothetical
+
+10 answers were stranded when this was looked at today: 7 kana readings, 1 ronsha ranking, 2
+description enrichments. The first eight are now collected. They were produced, committed, and then
+sat because the step that turns an answer into a QuickStatements line runs only when a person
+remembers.
+
+⚠ Which means the note I wrote this morning — that `name_in_kana.txt`'s absence was *"the slow
+routine working"* — was wrong twice over: the routine had done its part, and the file was empty
+because of this gap, not because of the pace.
+
+Put to Emma rather than recorded a third time.
+
+
 ## 2026-09-12 (cont.) — the other four collectors: 7 kana readings collected, 2 description lines deliberately not
 
 Finishing the previous entry rather than leaving four of five pipelines unchecked. Dry-ran each:
