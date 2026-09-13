@@ -4,6 +4,55 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — The place guard stops guessing: it asks Wikidata what the places are
+
+The frequency heuristic is gone. It inferred place names from the corpus — a
+capitalised token in a minority of DISTINCT descriptions — and that rested on two
+assumptions, both of which broke within hours of shipping it:
+
+* **place names are capitalised.** German capitalises every noun, so *Tempel* and
+  *Schrein* scored like places.
+* **the country is spelled identically every time**, so it clears a majority and
+  reads as frame. In an inflecting language it is not — Японія / Японії / Японією,
+  Japán / Japánban — so the country read as a place. Stemming rescued `uk` and left
+  `ru` (74 targets) and `hu` (21) with nothing.
+
+And it could never see a place baked into EVERY description. German's template was
+`Shinto-Schrein in Sammu, Präfektur {pref}, Japan` — a city in Chiba welded into the
+frame, on 75 of 104 lines for items in 30 prefectures. A majority test cannot find a
+token that IS the majority.
+
+**`place_vocab(lang)` asks instead**: the labels, in that language, of every admin
+unit any shrine or temple sits in, read from the items' own `P131`. Cached per
+language and shared by both classes, so it costs one query per language that
+actually reaches the template stage — about 15 of 54 in a typical run, ~30s each.
+2,425 labels for `de`, 2,065 for `uk`. All three failures go at once: no
+capitalisation assumption, no majority test, and *Sammu* is simply in the set.
+
+### Two things that only running it could find
+
+**"Japan" was in the vocabulary.** Some items' `P131` resolves straight to the
+country, so the first version had *Japan* in the de set and *Японія* in the uk set —
+and would have dropped `buddhistischer Tempel in Japan` and Ukrainian's prefecture
+template, the two languages the whole change exists to rescue. Every generic names
+the country and is allowed to; what must not appear is somewhere more specific.
+Countries are now excluded. The unit tests did not catch this and could not: they
+are fed hand-made vocabularies with no country in them.
+
+**`cls_label` was assigned 40 lines below its first use.** Inside the language loop
+that does not raise — it silently carries the PREVIOUS language's class label into
+the check. Hoisted.
+
+⚠ **Limitation, stated rather than papered over:** matching uses word boundaries, so
+a language written without them (zh, ja, ko) gets no protection. None of those infers
+a template today, so nothing is emitted for them either way — but that is the gap.
+
+The staged file is NOT regenerated for this. It is current as of an hour ago and the
+delta is ~95 lines in `ru` and `hu`; a fourth full WDQS sweep in one evening is not
+what that is worth, and Sunday's run will take it. The file being three weeks stale
+was the problem earlier today; ninety-five lines is not the same thing.
+
+
 ## 2026-09-13 — `description_adds.txt` regenerated at last: 1,391 -> 7,841
 
 Third attempt. The first crashed at import, the second on a truncated WDQS body,

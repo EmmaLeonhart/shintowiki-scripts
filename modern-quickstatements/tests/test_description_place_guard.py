@@ -58,36 +58,6 @@ FR = ["temple bouddhiste à Kyoto, au Japon",
       "temple bouddhiste au Japon"]
 
 
-def test_a_city_in_the_generic_is_found():
-    mod = _mod()
-    places = mod.place_tokens(FR, "temple bouddhiste")
-    assert "Kyoto" in places and "Osaka" in places, places
-    assert mod.names_a_place(FR[0], {}, places) == "Kyoto"
-
-
-def test_the_country_is_not_a_place_token():
-    """It is in nearly every description, which is what marks it as the frame.
-    Flagging it would drop every generic in every language."""
-    mod = _mod()
-    places = mod.place_tokens(FR, "temple bouddhiste")
-    assert "Japon" not in places, places
-    assert mod.names_a_place("temple bouddhiste au Japon", {}, places) is None
-
-
-def test_a_german_class_word_is_not_a_place():
-    """German capitalises every noun, so "Tempel" scores like a place name. The
-    first version of this flagged the perfectly good generic "buddhistischer
-    Tempel in Japan" and would have left de with no description at all."""
-    mod = _mod()
-    de = ["buddhistischer Tempel in Japan",
-          "buddhistischer Tempel in Kyoto, Japan",
-          "buddhistischer Tempel in Osaka, Japan",
-          "buddhistischer Tempel in Nara, Japan"]
-    places = mod.place_tokens(de, "buddhistischer Tempel")
-    assert "Tempel" not in places, places
-    assert mod.names_a_place("buddhistischer Tempel in Japan", {}, places) is None
-
-
 def test_a_prefecture_key_is_found_even_when_frequency_misses_it():
     """The two vocabularies are complementary: the 47 prefecture keys are known
     outright, the corpus supplies the cities."""
@@ -100,7 +70,7 @@ def test_both_templates_are_checked_not_just_the_generic():
     """The pref template is substituted only at the prefecture key, so any OTHER
     place in the modal description survives into every filled line."""
     src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
-    body = src[src.index("places = place_tokens("):src.index("targets = targets_with_pref(")]
+    body = src[src.index("places = place_vocab("):src.index("targets = targets_with_pref(")]
     assert 'names_a_place(gen,' in body, "the generic is no longer checked"
     assert 'replace("{pref}", "")' in body, (
         "the prefecture template is no longer checked with its slot removed")
@@ -168,39 +138,6 @@ def test_the_corpus_is_not_country_filtered_either():
         "desc_corpus grew a country filter; it should read every description")
 
 
-def test_the_country_survives_inflection():
-    """⛔ The country is what has to score HIGH in place_tokens, and in an
-    inflecting language it is spelled differently in each description — Японія /
-    Японії / Японією — so no single form clears a majority and the country reads
-    as a place name.
-
-    The first version counted exact tokens and did exactly that: it dropped
-    "буддійський храм в Японії" (uk), "buddhista templom Japánban" (hu) and
-    "Βουδιστικός ναός στην Ιαπωνία" (el), leaving three languages with no
-    description at all. That is a guard blocking the work it was added to protect.
-    """
-    mod = _mod()
-    uk = ["синтоїстське святилище в Японії",
-          "буддійський храм в Японії",
-          "храм у префектурі Шімане, Японія",
-          "святилище у префектурі Нара, Японія",
-          "святилище в Японію"]
-    places = mod.place_tokens(uk, "буддійський храм")
-    assert not any(p.startswith("Япон") for p in places), places
-    assert mod.names_a_place("буддійський храм в Японії", {}, places) is None
-    # and the real place names are still found
-    assert mod.names_a_place("храм у префектурі Шімане, Японія", {}, places) == "Шімане"
-
-
-def test_a_city_is_still_caught_after_the_stemming_change():
-    """The stem is four characters, which must not be so coarse that a city
-    collapses into the frame."""
-    mod = _mod()
-    places = mod.place_tokens(FR, "temple bouddhiste")
-    assert {"Kyoto", "Osaka", "Tokyo"} <= places, places
-    assert mod.names_a_place(FR[0], {}, places) == "Kyoto"
-
-
 def test_the_prefecture_slot_is_filled_with_the_key_not_the_full_label():
     """⛔ infer_templates cuts the template at the KEY ("Shizuoka"), so the
     template keeps the generic word: "kuil Shinto di Prefektur {pref}, Jepang".
@@ -254,3 +191,111 @@ def test_the_staged_file_has_no_doubled_generic_word():
     for doubled in ("Prefektur Prefektur", "prefekturi Prefektura",
                     "префектурі Префектура", "Präfektur Präfektur"):
         assert doubled not in text, f"{doubled!r} is back in the staged file"
+
+
+# ---- the P131 vocabulary, which replaced the frequency heuristic ----------------
+
+def test_a_city_in_the_generic_is_found():
+    mod = _mod()
+    places = {"Kyoto", "Yokohama", "Sammu", "Bunkyō-ku"}
+    assert mod.names_a_place("temple bouddhiste à Kyoto, au Japon", {}, places) == "Kyoto"
+    assert mod.names_a_place("Shinto-Schrein in Sammu, Präfektur X, Japan",
+                             {}, places) == "Sammu"
+
+
+def test_a_place_baked_into_every_description_is_found():
+    """The case the frequency heuristic could never see. German's template was
+    "Shinto-Schrein in Sammu, Präfektur {pref}, Japan" — a city in Chiba welded
+    into the frame, named on 75 of 104 lines for items in 30 prefectures. A
+    majority test cannot find a token that IS the majority; asking Wikidata what
+    the places are can."""
+    mod = _mod()
+    tmpl = "Shinto-Schrein in Sammu, Präfektur , Japan"
+    assert mod.names_a_place(tmpl, {}, {"Sammu"}) == "Sammu"
+
+
+def test_the_country_is_not_in_the_vocabulary_at_all():
+    """The country is P17, not P131, so it cannot appear in this vocabulary in any
+    inflection. That retires the whole class of false positive that emptied ru and
+    hu — no stemming, no capitalisation assumption, nothing to tune."""
+    mod = _mod()
+    places = {"Йокогама", "Кіото"}          # as P131 labels really come back
+    for generic in ("буддійський храм в Японії",      # uk, locative
+                    "буддийский храм в Японии",       # ru, locative
+                    "buddhista templom Japánban",     # hu, inessive
+                    "Βουδιστικός ναός στην Ιαπωνία"):  # el
+        assert mod.names_a_place(generic, {}, places) is None, generic
+
+
+def test_a_class_word_never_counts_as_a_place():
+    """German capitalises every noun and some towns share a name with a common
+    word. A word that names the CLASS cannot empty a language."""
+    mod = _mod()
+    assert mod.names_a_place("buddhistischer Tempel in Japan", {},
+                             {"Tempel"}, "buddhistischer Tempel") is None
+    # …but the same word IS a place when it is not the class word
+    assert mod.names_a_place("sanctuaire shinto à Tempel", {},
+                             {"Tempel"}, "sanctuaire shinto") == "Tempel"
+
+
+def test_matching_respects_word_boundaries():
+    """Short labels — Ie, Uji, Mie — must not match inside a longer word."""
+    mod = _mod()
+    assert mod.names_a_place("sanctuaire shinto à Fujisawa, Japon", {}, {"Uji"}) is None
+    assert mod.names_a_place("sanctuaire shinto à Uji, Japon", {}, {"Uji"}) == "Uji"
+
+
+def test_a_multi_word_label_is_found_too():
+    """A token scan cannot see "Bunkyō-ku" as one unit, let alone "New Taipei"."""
+    mod = _mod()
+    assert mod.names_a_place("Budist tapınağı, Koishikawa Bunkyo ku", {},
+                             {"Koishikawa Bunkyo ku"}) == "Koishikawa Bunkyo ku"
+
+
+def test_the_vocabulary_is_cached_per_language_not_per_class():
+    """One query per language that reaches the template stage, reused across both
+    classes — the difference between ~7 minutes and ~14 added to a sweep."""
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    assert "_PLACE_VOCAB" in src and "if lang not in _PLACE_VOCAB:" in src
+    assert "wdt:P131 ?admin" in src, "the vocabulary is no longer read from P131"
+
+
+def test_the_frequency_heuristic_is_gone():
+    """It assumed place names are capitalised (German capitalises every noun) and
+    that the country is spelled identically every time (it is not, in any
+    inflecting language). Leaving it beside the vocabulary would be two answers to
+    one question."""
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    assert "def place_tokens(" not in src
+
+
+def test_cls_label_is_assigned_before_the_place_guard_uses_it():
+    """It was assigned 40 lines below its first use. Inside the language loop that
+    does not raise — it carries the PREVIOUS language's class label into the check."""
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    assert src.index("cls_label = class_label(cls, lang)") < src.index(
+        "named = names_a_place(gen,")
+
+
+def test_a_country_is_excluded_from_the_vocabulary():
+    """⛔ Every generic these descriptions can use names the COUNTRY and is allowed
+    to; what must not appear is somewhere more specific. Some items' P131 resolves
+    straight to Japan, so without an exclusion the country lands in the vocabulary
+    and the guard empties the language.
+
+    Measured 2026-09-13 against the live query: "Japan" was in the de set (2,427
+    labels) and "Японія" in the uk set (2,067), which would have dropped
+    "buddhistischer Tempel in Japan" and Ukrainian's prefecture template — the two
+    languages the vocabulary was built to rescue. With the exclusion: 2,425 and
+    2,065, and both templates pass.
+
+    The unit tests above did not catch it, because they are fed hand-made
+    vocabularies with no country in them. Running the real thing did.
+    """
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    q = src[src.index("SELECT DISTINCT ?al"):src.index("_PLACE_VOCAB[lang] =")]
+    assert "FILTER(?admin != wd:Q17)" in q, (
+        "Japan is back in the place vocabulary; every generic names it, so the "
+        "guard will empty every language")
+    assert "FILTER NOT EXISTS {{ ?admin wdt:P31 wd:Q6256 }}" in q, (
+        "countries in general are back in the place vocabulary")

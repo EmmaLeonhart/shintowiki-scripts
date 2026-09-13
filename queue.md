@@ -26,14 +26,6 @@ from `ATOMIC_FILES`; they are not queue items.
     host that challenges our runners against one that does not, which is not a comparison of the two
     wikis.
 
-- [ ] The description place-guard cannot see a place baked into EVERY description, and German is
-  that case: `infer_templates` produced `"Shinto-Schrein in Sammu, Präfektur {pref}, Japan"` — a city
-  in Chiba in the frame — and 75 of 104 staged de lines named it for items in 30 prefectures. The
-  corpus is poisoned, so the frequency test cannot see it. Fix: read the place vocabulary from the
-  corpus items' own `P131` labels instead of inferring it from capitalisation — one extra query per
-  LANGUAGE (not per class), reusable across both classes, and it retires the capitalisation
-  assumption that makes German a special case at all. The 75 lines are already stripped.
-
 - [ ] 62 of 72 WDQS callers still cannot survive a truncated response body. Each hand-rolls its
   transport; one short read ends the run, and these generators write their `.txt` only at the end.
   Surveyed 2026-09-13 after it happened. **Severity is low for CI and high for a hand-run**: every

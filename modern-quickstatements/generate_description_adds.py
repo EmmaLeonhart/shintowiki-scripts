@@ -157,87 +157,92 @@ def infer_templates(items, keys):
     return pref_t, gen
 
 
-def place_tokens(descs, cls_label=""):
-    """Tokens that behave like a PLACE NAME in this corpus.
+_PLACE_VOCAB = {}
 
-    ⛔ The reason this exists, measured 2026-09-13 against the staged file. The
-    generic is the modal description in the corpus, and in several languages the
-    modal one names a city:
 
-        fr  x127  "temple bouddhiste à Kyoto, au Japon"
-        es  x 71  "templo budista en Yokohama, Japón"
-        pl  x 41  "świątynia buddyjska w Jokohamie w Japonii"
-        it  x 41  "tempio buddista a Yokohama, Giappone"
-        cs  x 25  "buddhistický chrám v japonském městě Jokohama"
-        de  x 15  "Shinto-Schrein in Odawara, Kanagawa, Japan"
+def place_vocab(lang):
+    """Every place name a shrine or temple description in this language could name.
 
-    It is then stamped on every target with no resolved prefecture, wherever it
-    actually is. Of eight sampled `à Kyoto` items, three are in Tokushima,
-    Fukushima and Mie. The class-specificity guard below checks the template says
-    WHAT the item is; nothing checked that it does not also say WHERE, falsely.
+    The labels, in `lang`, of every admin unit that any Shinto shrine or Buddhist
+    temple sits in — read from the items' own ``P131``. Cached per language and
+    shared by both classes, so it costs one query per language that actually
+    reaches the template stage (~15 of 54 in a typical run, ~30s each).
 
-    A prefecture key catches Kyoto, because Kyoto is one of the 47. It does not
-    catch Yokohama, Odawara or Sammu, which are cities — so the vocabulary has to
-    come from the corpus itself.
+    ⭐ THIS REPLACED A FREQUENCY HEURISTIC, and the heuristic's failures are why.
+    It inferred place names from the corpus: a capitalised token in a minority of
+    DISTINCT descriptions. That assumed two things, and both broke.
 
-    The test is the one `pref_keys` already uses, turned around: a token shared by
-    nearly every DISTINCT description is the frame (the class word, the country,
-    the preposition); a capitalised token in only a few of them is a place name.
-    Counting DISTINCT strings rather than items is what makes it work — "à Kyoto"
-    is one string however many items carry it.
+    * **It assumed place names are capitalised.** German capitalises every noun, so
+      "Tempel" and "Schrein" scored like places.
+    * **It assumed the country is spelled the same way every time**, so that it
+      would clear a majority and be treated as frame. In an inflecting language it
+      is not — Японія / Японії / Японією, Japán / Japánban — and the country was
+      read as a place. Counting four-character stems rescued `uk` and still left
+      `ru` (74 targets) and `hu` (21) with no description at all.
 
-    ⚠ `cls_label` is not optional in practice. GERMAN CAPITALISES EVERY NOUN, so
-    "Tempel" and "Schrein" score exactly like a place name and the first version of
-    this flagged the perfectly good generic "buddhistischer Tempel in Japan". A word
-    that names the CLASS is not a place, and the caller already has the class label
-    in this language for the specificity guard below.
+    And it could never see a place baked into EVERY description: German's template
+    was "Shinto-Schrein in Sammu, Präfektur {pref}, Japan", with a city in Chiba
+    welded into the frame, and 75 of 104 lines named it for items in 30 different
+    prefectures. A majority test cannot find a token that is in the majority.
 
-    A language that does not capitalise its place-names yields nothing here and is
-    left exactly as it is today. That is the same limitation `pref_keys` documents,
-    and no worse than the status quo.
+    Asking Wikidata what the places ARE removes all three at once. Measured
+    2026-09-13: 2,427 labels for `de` (contains Sammu, Tokio, Yokohama) and 2,067
+    for `uk` (contains Йокогама, and NOT Японія — the country is `P17`, not `P131`,
+    so it cannot appear here in any inflection).
+
+    ⚠ Limitation, stated rather than papered over: matching uses word boundaries, so
+    a language written without them (zh, ja, ko) gets no protection from this.
+    Neither of those currently infers a template at all, so nothing is emitted for
+    them either way — but if one ever does, this is the gap.
     """
-    class_words = {w for w in re.split(r"\W+", (cls_label or "").lower()) if w}
-    distinct = {d for d in descs if d}
-    if len(distinct) < 4:
-        return set()
-    # ⛔ COUNT STEMS, NOT EXACT TOKENS. The country is what has to score high here,
-    # and in an inflecting language it is spelled differently in each description —
-    # Японія / Японії / Японією, Japonia / Japonii, Japán / Japánban — so no single
-    # form clears a majority and the country reads as a place name. The first version
-    # did exactly that and dropped the perfectly good generics
-    # "буддійський храм в Японії" (uk), "buddhista templom Japánban" (hu) and
-    # "Βουδιστικός ναός στην Ιαπωνία" (el), leaving three languages with nothing.
-    #
-    # A four-character casefolded prefix collapses the forms of one word within one
-    # language's corpus, which is all this has to do. It is the same lesson pref_keys
-    # records one level down: match on the part that does not inflect.
-    stem = lambda t: t.casefold()[:4]
-    freq = Counter()
-    for d in distinct:
-        for st in {stem(m.group()) for m in re.finditer(r"\w+", d)
-                   if m.group()[:1].isupper()}:
-            freq[st] += 1
-    cutoff = max(2, 0.5 * len(distinct))
-    out = set()
-    for d in distinct:
-        for m in re.finditer(r"\w+", d):
-            t = m.group()
-            if (t[:1].isupper() and freq[stem(t)] < cutoff
-                    and t.lower() not in class_words):
-                out.add(t)
-    return out
+    if lang not in _PLACE_VOCAB:
+        # ⛔ A COUNTRY IS NOT A PLACE, for this purpose. Every generic these
+        # descriptions can use names the country and is allowed to; what must not
+        # appear is somewhere more specific. Some items' P131 resolves straight to
+        # Japan, so without this the country lands in the vocabulary and the guard
+        # empties the language: measured 2026-09-13, "Japan" was in the de set and
+        # "Японія" in the uk set, which would have dropped
+        # "buddhistischer Tempel in Japan" and Ukrainian's prefecture template.
+        # Caught by running it, not by the unit tests — they were fed hand-made
+        # vocabularies that had no country in them.
+        rows = sparql(f"""
+        SELECT DISTINCT ?al WHERE {{
+          {{ ?item wdt:P31 wd:Q845945 }} UNION {{ ?item wdt:P31 wd:Q5393308 }}
+          ?item wdt:P131 ?admin .
+          FILTER(?admin != wd:Q17)
+          FILTER NOT EXISTS {{ ?admin wdt:P31 wd:Q6256 }}
+          ?admin rdfs:label ?al . FILTER(LANG(?al) = "{lang}")
+        }}
+        """)
+        _PLACE_VOCAB[lang] = {b["al"]["value"] for b in rows}
+    return _PLACE_VOCAB[lang]
 
 
-def names_a_place(text, keys, places):
-    """Does this template assert a location more specific than the country?"""
+def names_a_place(text, keys, places, cls_label=""):
+    """The place this template names, or None.
+
+    `keys` are the 47 prefecture place-names; `places` is `place_vocab(lang)`.
+    A word that names the CLASS is never a place: the class label is excluded so
+    that a German noun, or a town that happens to share a name with the word for
+    shrine, cannot empty a language.
+    """
     if not text:
         return None
+    class_words = {w for w in re.split(r"\W+", (cls_label or "").lower()) if w}
     for k in keys:
-        if k and k in text:
+        if k and k.lower() not in class_words and re.search(
+                r"(?<!\w)" + re.escape(k) + r"(?!\w)", text):
             return k
-    for t in re.finditer(r"\w+", text):
-        if t.group() in places:
-            return t.group()
+    # Single tokens first — a set lookup against thousands of labels, rather than
+    # thousands of regex searches.
+    single = {p for p in places if p and not re.search(r"\s", p)}
+    for m in re.finditer(r"\w+", text):
+        if m.group() in single and m.group().lower() not in class_words:
+            return m.group()
+    # Then the multi-word labels, which a token scan cannot see. A minority.
+    for p in places:
+        if re.search(r"\s", p) and p in text:
+            return p
     return None
 
 
@@ -393,10 +398,14 @@ def main():
             # six languages this was measured on. Dropping it means the language
             # gets no description rather than a wrong one, which is what this
             # script already does for a language with no inferable template.
-            places = place_tokens([d for d, _h, _p in corpus.values()],
-                                  class_label(cls, lang))
+            # Hoisted above the place guard on 2026-09-13: it was assigned
+            # 40 lines BELOW its first use, so inside this loop it silently
+            # carried the PREVIOUS language's class label into the place
+            # check instead of raising.
+            cls_label = class_label(cls, lang)
+            places = place_vocab(lang)
             dropped_for_place = False
-            named = names_a_place(gen, keys, places)
+            named = names_a_place(gen, keys, places, cls_label)
             if named:
                 dropped_for_place = True
                 report.append(f"{cls} {lang}: generic {gen!r} names {named!r} — "
@@ -409,7 +418,8 @@ def main():
             # out "Shinto-Schrein in Sammu, Präfektur {pref}, Japan" and 104 of
             # the 112 staged de lines named Sammu, a city in Chiba, for items in
             # 30 different prefectures.
-            named = names_a_place((pref_t or "").replace("{pref}", ""), keys, places)
+            named = names_a_place((pref_t or "").replace("{pref}", ""), keys,
+                                  places, cls_label)
             if named:
                 dropped_for_place = True
                 report.append(f"{cls} {lang}: pref template {pref_t!r} also names "
@@ -436,7 +446,6 @@ def main():
             # dropped (2026-07-07/08: two weaker guards let 7-9k junk fr
             # descriptions through; exact cross-class comparison was not
             # enough because each class infers DIFFERENT junk strings).
-            cls_label = class_label(cls, lang)
             def _class_true(t):
                 if not (t and cls_label):
                     return False
