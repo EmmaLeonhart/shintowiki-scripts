@@ -593,14 +593,23 @@ jobs:
       # remote routine filled the TRANSLATED marker in category_translation/*.wiki)
       # into category_moves.csv BEFORE move_categories consumes it, and delete the
       # finished work-files. No wiki edits — local files only.
+      # NOT gated on the wiki lockout: verified 2026-09-13 that this collector
+      # imports no mwclient, opens no site, saves no page and needs no
+      # credentials — `--apply` means "append rows to category_moves.csv and
+      # delete the finished work-files", entirely local. Gating it meant the
+      # monthly collection silently did not happen whenever Miraheze was locked
+      # on the 1st, which it is right now. move_categories, which consumes the
+      # CSV and DOES edit the wiki, keeps its gate.
       - name: "cat-translation: collect RAG answers into category_moves.csv"
-        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
+        if: always() && steps.*.outcome != 'cancelled'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           python3 shinto_miraheze/collect_category_translations.py --apply || echo "collector non-fatal"
 
+      # Ungated for the same reason — committing a local CSV to git has nothing
+      # to do with whether the wiki accepts edits.
       - name: "Commit: category_moves.csv + residual report"
-        if: always() && steps.*.outcome != 'cancelled' && steps.lockout.outputs.locked != 'true'
+        if: always() && steps.*.outcome != 'cancelled'
         run: |
           if [ "$(date +%d)" != "01" ] || [ "$(date +%Y-%m-%d)" = "2026-04-01" ]; then echo "Skipped (not 1st of month, or excluded date)"; exit 0; fi
           git add shinto_miraheze/category_moves.csv docs/category_translation_residual.md category_translation/ 2>/dev/null || true

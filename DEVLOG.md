@@ -4,6 +4,34 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — the wiki lockout was stopping a step that never touches the wiki
+
+Flagged in passing yesterday while wiring the new collectors, then fixed rather than left as a note.
+
+`collect_category_translations.py` was gated on `steps.lockout.outputs.locked != 'true'`. Verified
+before touching it: the script imports no `mwclient`, opens no site, saves no page and reads no
+credentials — `--apply` means *"append rows to `category_moves.csv` and delete the finished
+work-files"*, entirely local. Its own step comment already said *"No wiki edits — local files only"*,
+which is exactly the sort of claim worth checking rather than believing.
+
+**The cost is shaped by the monthly cadence.** That step runs only on the 1st. A lockout falling on
+the 1st means the month's cloud answers are not collected at all — not delayed, skipped. Miraheze has
+been locked since 2026-09-06.
+
+Ungated, along with the commit step beside it: pushing a local CSV to git has nothing to do with
+whether the wiki accepts edits.
+
+**`move_categories` keeps its gate.** It consumes that CSV and does move pages on shinto.miraheze.
+The two sit a few dozen lines apart and the distinction between them is the whole point — the gate
+belongs on the step that writes to the wiki, not on the one that prepares what it will write.
+Collecting during a lockout is strictly better: the CSV is simply ready when the wiki reopens.
+
+`tests/test_wiki_lockout_gates_only_wiki_writers.py` pins **both directions** — the collector
+ungated, `move_categories` gated — plus a check that the collector still has no way to reach the
+wiki, so if it ever grows a client the gate has to come back. Each of the three was confirmed to fail
+when reversed.
+
+
 ## 2026-09-12 (cont.) — the chronicle came out of test_sequential_misc
 
 Emma, on the note I had just added to that docstring: *"I mean the historical prose shouldn't be
