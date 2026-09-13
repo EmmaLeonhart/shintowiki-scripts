@@ -57,6 +57,7 @@ withheld into description_pair_collision_groups.json for the cloud enrichment
 pipeline.
 """
 import io
+import http.client
 import json
 import os
 import re
@@ -121,6 +122,18 @@ def sparql(query, retries=3):
     if gap < WDQS_THROTTLE:
         time.sleep(WDQS_THROTTLE - gap)
     _LAST_CALL = time.monotonic()
+    # ⛔ A TRUNCATED BODY IS RETRYABLE, and it used to kill the whole sweep.
+    # This loop caught HTTPError only. On 2026-09-13 WDQS returned 200 and then cut
+    # the response short mid-row —
+    #     json.decoder.JSONDecodeError: Unterminated string starting at: line 13162
+    # — which is not an HTTPError, so it escaped the loop and ended a 40-minute run
+    # at the last language with nothing written. The generators only write their .txt
+    # at the end, so one short read costs the entire run.
+    #
+    # 429 still bails immediately and without retries (CLAUDE.md). Everything else
+    # that means "the transport failed" now backs off and tries again.
+    transient = (json.JSONDecodeError, urllib.error.URLError, TimeoutError,
+                 ConnectionError, http.client.IncompleteRead)
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=300) as r:
@@ -134,6 +147,12 @@ def sparql(query, retries=3):
                 raise
             wait = 30 * (attempt + 1)
             print(f"  {e.code} — retrying in {wait}s", flush=True)
+            time.sleep(wait)
+        except transient as e:
+            if attempt == retries - 1:
+                raise
+            wait = 30 * (attempt + 1)
+            print(f"  {type(e).__name__}: {e} — retrying in {wait}s", flush=True)
             time.sleep(wait)
 
 
