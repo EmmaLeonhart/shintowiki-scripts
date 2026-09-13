@@ -104,3 +104,39 @@ def test_a_backfill_is_registered_on_the_only_road_to_wikidata(name):
     — the drift this repo already had to fix once for the temple label files."""
     import direct_daily_edits as d
     assert name in d.ATOMIC_FILES
+
+
+# ---- WDQS speaks xsd:dateTime, not Wikibase time ----------------------------
+
+def test_the_souken_year_parse_accepts_wdqs_output():
+    """WDQS returns an xsd:dateTime literal, which carries NO leading sign for
+    years 1-9999. Wikibase's own time format does ("+0863-…"), and so must every
+    QuickStatements line this generator emits — so the plus is correct everywhere
+    in that file EXCEPT when reading a SPARQL result back.
+
+    Requiring it there made the citation backfill inert for its whole life
+    (2026-09-11 to 2026-09-13). Every row failed the match, so the uncited map was
+    empty and the run printed "4115 shrines/temples already carry P571; 0 of them
+    have an UNREFERENCED P571 statement" — against a real figure of 1,625 — then
+    "citable=0, year-mismatch=0" for both templates. A backfill with nothing to do
+    and a backfill that cannot see its work look identical in the log.
+    """
+    import generate_souken_quickstatements as G
+    pat = re.compile(r"^\+?(\d{4})-")
+    # Verbatim from query-main.wikidata.org, 2026-09-13.
+    for literal, year in (("0715-01-01T00:00:00Z", 715),
+                          ("1924-01-01T00:00:00Z", 1924),
+                          ("0676-01-01T00:00:00Z", 676)):
+        m = pat.match(literal)
+        assert m and int(m.group(1)) == year, literal
+    # Wikibase's own spelling must keep working: the two formats coexist because
+    # the same generator writes one and reads the other.
+    assert pat.match("+0863-00-00T00:00:00Z").group(1) == "0863"
+    # A BCE year is not something this generator parses, and must not become one.
+    assert pat.match("-0044-01-01T00:00:00Z") is None
+
+    src = open(os.path.join(MQ, "generate_souken_quickstatements.py"),
+               encoding="utf-8").read()
+    assert r'm = re.match(r"^\+?(\d{4})-", b["v"]["value"])' in src, (
+        "the year parse in items_with_p571() no longer treats the leading plus "
+        "as optional; the citation backfill silently reverts to zero lines")

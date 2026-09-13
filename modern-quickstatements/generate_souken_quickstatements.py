@@ -255,9 +255,21 @@ def items_with_p571():
     uncited = {}
     for b in rows:
         qid = b["item"]["value"].rsplit("/", 1)[-1]
-        # "+0863-00-00T00:00:00Z" -> 863. A negative (BCE) year is not something
-        # this generator ever parses, so it simply never matches.
-        m = re.match(r"^\+(\d{4})-", b["v"]["value"])
+        # "0863-01-01T00:00:00Z" -> 863.
+        #
+        # ⚠ The leading "+" is OPTIONAL, and requiring it made this whole backfill
+        # inert from the day it was written (2026-09-11) to 2026-09-13. Wikibase
+        # stores a time value as "+0863-…" and that is what a QuickStatements line
+        # must carry, so the plus is everywhere else in this file — but WDQS hands
+        # back an xsd:dateTime literal, which has no sign for years 1-9999. Every
+        # row failed the match, `uncited` came back empty, and the generator
+        # printed "0 of them have an UNREFERENCED P571 statement" against 4,115
+        # items while the real figure was 1,625. Nothing looked wrong: 0 citable
+        # and 0 year-mismatch reads like a backfill with nothing left to do.
+        #
+        # A BCE year arrives as "-0044-…" and still does not match, which is what
+        # this generator wants — it never parses one.
+        m = re.match(r"^\+?(\d{4})-", b["v"]["value"])
         if m:
             uncited.setdefault(qid, set()).add(int(m.group(1)))
     return have, uncited

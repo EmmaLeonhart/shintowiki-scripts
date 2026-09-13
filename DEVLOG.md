@@ -4,6 +4,38 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — The P571 citation backfill has been inert since the day it was written
+
+`generate_souken_quickstatements.py` printed, in today's run:
+
+    4115 shrines/temples already carry P571; 0 of them have an UNREFERENCED P571 statement
+    Template:神社:      ... already-had-P571=704  (citable=0, year-mismatch=0)
+    Template:日本の寺院: ... already-had-P571=1812 (citable=0, year-mismatch=0)
+
+Zero of 4,115. The real figure, asked of WDQS directly, is **1,625**.
+
+`items_with_p571()` parsed the year out of the SPARQL result with
+`re.match(r"^\+(\d{4})-", …)`. **WDQS returns an `xsd:dateTime` literal, which has no
+sign for years 1-9999** — `0715-01-01T00:00:00Z`, not `+0715-…`. Wikibase's own time
+format does carry the plus, and every QuickStatements line this generator writes must
+carry it, so the plus is correct everywhere in that file except at the one point where it
+reads a SPARQL result back. Every row failed the match, `uncited` came back empty, and the
+backfill emitted nothing on every run since it was added on 2026-09-11.
+
+**Nothing looked wrong.** `citable=0, year-mismatch=0` is exactly what a backfill with no
+work left prints. The empty `souken_p571_citations.txt` was read as evidence of the
+missing-new-file bug in the commit step, which was a real bug and was not this one.
+
+Now `^\+?(\d{4})-`. A BCE year arrives as `-0044-…` and still does not match, which is
+what the generator wants. Pinned in `test_enrichment_backfills.py` against three literals
+copied verbatim from query-main.wikidata.org, plus the Wikibase spelling, plus the BCE
+case — the two formats coexist because one generator writes one and reads the other.
+
+How many lines it will actually emit is not yet known: 1,625 is the ceiling, and each one
+is kept only where jawiki still states the same year the statement holds. Tomorrow's run
+is the first that can say.
+
+
 ## 2026-09-13 — Yesterday's `--full-name` fix was half a diagnosis; the other half ate ~20 files
 
 Today's cleanup-loop was the first run of yesterday's wiring and `generate-quickstatements / generate`
