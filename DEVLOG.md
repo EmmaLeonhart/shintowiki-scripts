@@ -4,6 +4,52 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 (cont.) — the missing backfill file is explained, and `--full-name` was right all along
+
+Yesterday's entry left this unexplained rather than guessing. It is explained now, and the cause is
+the same broken step from this morning.
+
+`souken_p571_citations.txt` was written by its generator (*"0 P571 citation-backfill lines"*, so an
+empty file) and was still absent from the 25 files the commit step listed as changed.
+
+### A staged-but-uncommitted new file is invisible to both halves of that list
+
+```
+git diff --name-only -- .                  → unstaged changes    → does not list it
+git ls-files --others --exclude-standard   → UNTRACKED files     → does not list it
+```
+
+Verified locally: stage a new empty `.txt` and neither command reports it. It falls in the gap
+between the two.
+
+### The chain
+
+1. My *"Commit: collected answers"* step ran `git add modern-quickstatements/*.txt`, staging every
+   top-level `.txt` including the new empty one.
+2. Its `git commit` died on the missing author identity.
+3. `continue-on-error: true` painted the step green and **left everything staged**.
+4. The commit step below built its worklist from the two commands above, so the staged file appeared
+   in neither, was never backed up, and was wiped by that step's own `git clean -fd`.
+
+**The glob is the tell.** `modern-quickstatements/*.txt` matches only the top level, so
+`_site/katakana_reading_add.txt` and `_site/katakana_reading_remove.txt` — both brand new — were
+never staged, stayed untracked, and **did** come through the list. Two new files proving the
+`--full-name` fix works, sitting in the same commit as one that did not.
+
+The top-level tracked `.txt` files reappeared for a different reason: `strip_husk_lines.py --apply`
+rewrites them afterwards, which creates an unstaged modification on top of the staged one.
+
+### So
+
+`--full-name` was correct from the start. What hid the file was my own step staging files it had no
+business staging and then failing to commit them. Both halves of that are already fixed — the step
+sets an identity and stages only the work-file directories — so no further change is needed here.
+
+Recorded because "unexplained" was the honest label for a day and the explanation is worth more than
+the fix: **a step that stages and then fails leaves a hazard for every later step that reasons about
+"what changed"**, and neither of the usual two commands can see it.
+
+
 ## 2026-09-13 — the first run of yesterday's wiring failed, and the cause was mine
 
 `generate-quickstatements` failed in today's cleanup-loop. The whole run's generated output —
