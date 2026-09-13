@@ -426,11 +426,6 @@ jobs:
         continue-on-error: true
         run: python generate_reisai_qualifier_repair.py
 
-      - name: Scholar ID (P1960) for Q140568870 — date-gated to 2026-07-29
-        working-directory: modern-quickstatements
-        continue-on-error: true
-        run: python generate_scholar_id.py
-
       # Wired in 2026-07-28: the wire-in condition was "all 42 ja.wp per-rank
       # categories resolve once WDQS has indexed the 26 sub-rank items", and a
       # live rerun that day reported "42 rank categories resolved". Add-only,
@@ -483,6 +478,56 @@ jobs:
       # item_is_editable() refusal is still the load-bearing gate; this is what
       # keeps tests/test_repurposed_husks_never_edited.py green.
       # NOT continue-on-error: if this cannot run, husk lines stay staged.
+      # ── builder → cloud routine → collector pipelines ────────────────────
+      # Emma, 2026-09-12, asked whether these should run automatically:
+      # "Wire them all into CI."
+      #
+      # Before this, ONE of the seven was wired end to end (category
+      # translation). The rest depended on somebody running the collector by
+      # hand, so answers the routine had already produced sat in work-files —
+      # 10 of them were stranded on the day this was found, and the empty
+      # name_in_kana.txt had been misread as the routine being slow.
+      #
+      # ORDER MATTERS: collect first, then build. A collector consumes answers
+      # and deletes the work-file; a builder tops the queue back up. The other
+      # way round, a builder can recreate a file the collector is about to eat.
+      #
+      # NOT gated on the shinto.miraheze lockout. These touch local files and
+      # Wikidata only — the existing category-translation collector in
+      # wiki-cleanup.yml IS gated on it, which means that one silently stops
+      # whenever the wiki is locked, as it is now. Do not copy that here.
+      - name: "Collect: cloud answers into atomic files"
+        continue-on-error: true
+        run: |
+          for c in collect_name_in_kana collect_ronsha_rankings collect_beppyo_p612                    collect_label_typo_answers collect_description_enrichment; do
+            echo "--- $c"
+            python3 "shinto_miraheze/$c.py" || echo "$c non-fatal"
+          done
+
+      - name: "Build: refill the cloud work queues"
+        continue-on-error: true
+        run: |
+          for b in build_name_in_kana_queue build_ronsha_ranking_queue build_beppyo_p612_queue                    build_label_typo_review_queue build_description_enrichment_queue; do
+            echo "--- $b"
+            python3 "shinto_miraheze/$b.py" || echo "$b non-fatal"
+          done
+
+      # Separate commit: the collectors DELETE consumed work-files in
+      # repo-root directories, which the generated-.txt commit below does not
+      # stage — it only looks inside modern-quickstatements.
+      - name: "Commit: collected answers + refreshed work queues"
+        continue-on-error: true
+        run: |
+          git add name_in_kana/ ronsha_ranking_review/ beppyo_p612/                   label_typo_review/ description_enrichment_en/ 2>/dev/null || true
+          git add modern-quickstatements/*.txt 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No collected answers or queue changes to commit."
+          else
+            git commit -m "chore(cloud-queue): collect answers + refill work queues [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && echo "pushed." || echo "WARNING: push failed."
+          fi
+
       - name: Strip QuickStatements targeting repurposed husks
         working-directory: modern-quickstatements
         run: python strip_husk_lines.py --apply

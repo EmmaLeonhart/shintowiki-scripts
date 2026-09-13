@@ -4,6 +4,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — all seven cloud pipelines wired end to end, and the last Sutra leftover deleted
+
+Emma, asked whether the collectors should run automatically: *"Wire them all into CI."*
+
+Five collectors and five builders are now steps in `generate-quickstatements.yml`, with a dedicated
+commit for the work-file directories. Every one of the seven builder → routine → collector pipelines
+is wired end to end; before this, one was.
+
+Three things about how, each of which could have been got wrong:
+
+* **Collect first, then build.** A collector consumes an answer and deletes its work-file; a builder
+  refills the queue. The other order lets a builder recreate a file the collector is about to eat.
+* **A separate commit step.** The collectors delete consumed work-files in repo-**root** directories
+  (`name_in_kana/`, `ronsha_ranking_review/`, `beppyo_p612/`, `label_typo_review/`,
+  `description_enrichment_en/`). The existing generated-`.txt` commit only stages inside
+  `modern-quickstatements/`, so those deletions would never have been committed and every run would
+  re-consume nothing.
+* ⛔ **NOT gated on the shinto.miraheze lockout.** These touch local files and Wikidata only. The one
+  pre-existing collector — `collect_category_translations` in `wiki-cleanup.yml` — *is* gated on it,
+  which means it silently stops whenever the wiki is locked, as it is right now. That gate is not
+  copied here, and it is a defect in the older step rather than a pattern to follow.
+
+`description_enrichment_en` is included. It was left uncollected earlier today because Emma had
+flagged the file for a ruling on 2026-09-11; she has now seen that caveat in the question and
+answered "all", which settles it.
+
+### The last piece of the Sutra strategy, missed this morning
+
+`generate_scholar_id.py` — the two-week-delayed `P1960` Google Scholar ID for `Q140568870`, Emma's own
+researcher item. Same strategy she had removed, and it was not in the list I put to her, so it
+survived.
+
+It was already inert: run today it reports *"Q140568870 P1960 on Wikidata: live; gate 2026-07-29
+(today 2026-09-13)"* and *"TARGET_LINE absent (unchanged)"* — it checks live state, sees the statement
+landed, and adds nothing. Deleted with its workflow step. Nothing on Wikidata changes.
+
+`sequential_misc.txt` line 3, which that script appended in July, **stays** — the file is append-only
+and its cursor indexes into it. `test_sequential_misc.py`'s docstring now says the script is gone so
+nobody hunts for it.
+
+
 ## 2026-09-12 (cont.) — the builder half: 2 of 7 in CI, and the routine is documented not to run them
 
 Completing the previous entry, which checked collectors but not the builders that feed them.
