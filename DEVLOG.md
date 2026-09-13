@@ -4,6 +4,55 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — what the drip actually does in a day, and 23 of 26 "failures" were not failures
+
+I published a 249-day completion estimate this morning on the assumption that 500 lines land a day.
+`direct_daily_edits.py` writes no report, so the only record is the workflow log. Read the 2026-09-12
+run.
+
+**501 attempts, 459 succeeded:**
+
+| outcome | count |
+|---|---:|
+| `OK: Done` — qualifier or reference onto an existing statement | 207 |
+| `OK: Created` — a new statement | 139 |
+| `OK: Removed` | 34 |
+| `OK: Skipped (already exists)` | 21 |
+| label/description/alias sets | the rest |
+| `FAIL: Qualifier error` | 23 |
+| `SKIP:` — someone else edited the item recently | 16 |
+| `FAIL: Reference error` | 3 |
+
+So **the queue is live, not inert** — only 21 of 501 were already-present claims. The 249-day figure
+stands, a little optimistic: about 12% of a day's draw does not advance anything.
+
+### The finding: an idempotent operation was reporting failure
+
+`wbsetqualifier` and `wbsetreference` return an **error** when the qualifier or reference is already
+on the statement, and the writer passed that straight through as `FAIL`. **23 of the 26 reported
+failures were that.** Three were real.
+
+For a drip sampling 500 of ~117,000 lines a day, that is not a failure — the line's work is done, and
+the same line will be drawn again and fail again indefinitely. Worse, it is a reporting fault: a run
+that says 26 failures when it has 3 teaches everyone to ignore the number, which is exactly how a
+real failure gets missed.
+
+`is_already_present()` now recognises it and both call sites return success. Matched on the message,
+not the error code — `modification-failed` covers genuinely different refusals, and the test pins
+that "already been removed" and an empty string still count as failures.
+
+### And a false count on the way to it
+
+My first tally said **207 of 500 landed**, which would have meant the completion estimate was out by
+2.4×. Wrong: the marker is `OK: Done` and my regex anchored `Done` at line start, so it missed
+`Created`, `Removed` and every term-set. The run prints its own summary — `Results: 459 succeeded, 26
+failed` — and finding that is what corrected it.
+
+Fifth crude measurement today that read as alarming and was not. The pattern is consistent enough to
+name: **my ad-hoc greps are wrong often enough that a number from one is not a finding until the tool
+that owns it agrees.**
+
+
 ## 2026-09-13 — the 09:27 scheduled run was dropped, and a manual one confirmed three fixes
 
 The daily edit-test did not fire at its `27 9 * * *` slot. By 11:05Z — 1h38m late — it still had not,

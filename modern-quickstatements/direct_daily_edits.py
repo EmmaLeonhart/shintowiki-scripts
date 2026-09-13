@@ -679,6 +679,27 @@ def execute_create_claim(session, csrf, entity, prop, parsed_value):
     return True, "Created", guid
 
 
+# Wikidata refuses a qualifier or reference that is already on the statement, and
+# it refuses it as an ERROR. For this drip that is not a failure: the line's work
+# is done, and the same line will be drawn again out of a 117k pool and "fail"
+# again forever.
+#
+# Measured on the 2026-09-12 run: 26 of 501 lines reported failure, and 23 of
+# those 26 were this — "The statement has already a qualifier with hash …". Only
+# 3 were real. A run that reports 26 failures when it has 3 trains everyone to
+# ignore the number.
+#
+# Matched on the message rather than the error code because `modification-failed`
+# covers genuinely different refusals too; this text is the specific one.
+_ALREADY_PRESENT = ("already a qualifier with hash", "already a reference with hash")
+
+
+def is_already_present(info):
+    """True when Wikidata's refusal means 'this is already on the statement'."""
+    text = (info or "").lower()
+    return any(marker in text for marker in _ALREADY_PRESENT)
+
+
 def execute_set_qualifier(session, csrf, guid, prop, parsed_value):
     """Add a qualifier to an existing claim."""
     snaktype = "value"
@@ -699,7 +720,10 @@ def execute_set_qualifier(session, csrf, guid, prop, parsed_value):
     r.raise_for_status()
     result = r.json()
     if "error" in result:
-        return False, f"Qualifier error: {result['error'].get('info', str(result['error']))}"
+        info = result["error"].get("info", str(result["error"]))
+        if is_already_present(info):
+            return True, "Qualifier already present"
+        return False, f"Qualifier error: {info}"
     return True, "Qualifier added"
 
 
@@ -724,7 +748,10 @@ def execute_set_reference(session, csrf, guid, ref_pairs):
     r.raise_for_status()
     result = r.json()
     if "error" in result:
-        return False, f"Reference error: {result['error'].get('info', str(result['error']))}"
+        info = result["error"].get("info", str(result["error"]))
+        if is_already_present(info):
+            return True, "Reference already present"
+        return False, f"Reference error: {info}"
     return True, "Reference added"
 
 
