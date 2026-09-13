@@ -37,9 +37,45 @@ from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 from shinto_miraheze.ua_for import ua_for
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTDIR = os.path.join(ROOT, "ronsha_ranking_review")
+QS_OUT = os.path.join(ROOT, "modern-quickstatements", "ronsha_ranking_qualifiers.txt")
+RESOLVED_LOG = os.path.join(OUTDIR, "_resolved.log")
+UNDECIDABLE_LOG = os.path.join(OUTDIR, "_undecidable.log")
+
+
+def already_handled():
+    """QIDs already staged or answered — the same trap the beppyo and
+    name-in-kana builders were fixed for on 2026-08-04, and the only one of the
+    four that never got the guard.
+
+    Skipping on work-file EXISTENCE alone is not enough. The collector deletes
+    the file when it answers, and the SPARQL target query reads live Wikidata,
+    where the ranking is still absent because its QuickStatements line is staged
+    and has not been applied yet. So every rebuild re-queues finished work, the
+    cloud routine spends its handful of daily items re-answering it, and the
+    collector stages it again.
+
+    Harmless while the builder ran by hand. Wiring it into the daily cleanup-loop
+    on 2026-09-12 turned that into a loop that runs every day — caught the next
+    morning when a smoke-test run recreated three work-files whose answers were
+    already in `_resolved.log`.
+
+    UNDECIDABLE counts as answered: re-asking a question the routine has already
+    declined is the same waste as re-asking one it settled.
+    """
+    done = set()
+    sources = ((QS_OUT, r"^(Q\d+)\|"),
+               (RESOLVED_LOG, r"^(Q\d+)\s"),
+               (UNDECIDABLE_LOG, r"^(Q\d+)\s"))
+    for path, pat in sources:
+        if not os.path.exists(path):
+            continue
+        for line in open(path, encoding="utf-8"):
+            m = re.match(pat, line)
+            if m:
+                done.add(m.group(1))
+    return done
 WDQS = "https://query-main.wikidata.org/sparql"
 # UA removed 2026-08-19: the request sites now resolve the agent from the URL via
 # ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-ronsha/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
@@ -97,10 +133,19 @@ def targets():
 
 
 def main():
+    # Rebound HERE, not at module scope. At module scope it replaces the
+    # caller's stdout on import, which closes pytest's capture file and makes
+    # every test that imports this module error out. Same fix the beppyo builder
+    # already carries.
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     os.makedirs(OUTDIR, exist_ok=True)
     ronsha = targets()
-    written = skipped = 0
+    handled = already_handled()
+    written = skipped = done_already = 0
     for qid, rec in sorted(ronsha.items()):
+        if qid in handled:
+            done_already += 1
+            continue
         path = os.path.join(OUTDIR, f"{qid}.wiki")
         if os.path.exists(path):
             skipped += 1
@@ -119,7 +164,8 @@ def main():
         with open(path, "w", encoding="utf-8", newline="\n") as f:
             f.write("\n".join(lines) + "\n")
         written += 1
-    print(f"{written} work-files written, {skipped} already existed -> {OUTDIR}")
+    print(f"{written} work-files written, {skipped} already existed, "
+          f"{done_already} already answered or staged -> {OUTDIR}")
 
 
 if __name__ == "__main__":

@@ -4,6 +4,50 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 (cont.) — wiring the builders into CI turned a dormant loop into a daily one
+
+Caught by smoke-testing the ten steps I wired yesterday without ever having run them, on the grounds
+that `continue-on-error: true` would hide a crash. It did not find a crash. It found something worse.
+
+Running `build_ronsha_ranking_queue.py` recreated **five work-files, three of whose answers were
+already staged** in `ronsha_ranking_qualifiers.txt`.
+
+### The loop
+
+1. builder writes a work-file
+2. the cloud routine answers it
+3. the collector stages the answer as a QuickStatements line and **deletes** the work-file
+4. the builder's SPARQL target query reads **live Wikidata**, where the ranking is still absent
+   because that line is staged and has not been applied — so it writes the work-file again
+5. the routine spends one of its handful of daily items re-answering it
+
+The builder's only skip was *"work-file already exists"*, and step 3 removes exactly that. Harmless
+while it ran by hand. **Wiring it into the daily cleanup-loop yesterday made it run every day**, and a
+staged line waits a long time — the drip samples ~500 of 124,429 lines a day.
+
+### Three of the four builders already had the guard
+
+`build_name_in_kana_queue`, `build_beppyo_p612_queue` and `build_label_typo_review_queue` all consult
+`_resolved.log` and the staged `.txt`; the beppyo one's docstring names the same trap and the date it
+was fixed, 2026-08-04. The ronsha builder is the only one that never got it — which is why wiring
+them all at once exposed exactly one.
+
+`already_handled()` now reads all three records of done: the staged `.txt`, `_resolved.log`, and
+`_undecidable.log`. UNDECIDABLE counts — re-asking a question the routine has declined wastes the
+same slot as re-asking a settled one. Verified against the repo's own state: all five re-queued QIDs
+are now recognised.
+
+⚠ **Today's cleanup-loop is running with the unguarded version** — it started 07:31Z, before this fix.
+It will re-queue those items once more; tomorrow's run skips them. Nothing is damaged: a re-queued
+work-file costs the routine attention, not data.
+
+### And a second defect the same test exposed
+
+`build_ronsha_ranking_queue.py` rebound `sys.stdout` at **module scope**, so importing it closed
+pytest's capture file and every test touching it errored. Moved into `main()`, the fix its sibling
+already carried — and the third time today this exact module-scope stdout pattern has bitten.
+
+
 ## 2026-09-13 (cont.) — every Wikidata write path is gated; the sweep found nothing, and that is the result
 
 Having swept the *wiki* lockout, the higher-stakes direction is the Wikidata one: is there anything
