@@ -4,6 +4,48 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 (cont.) — every Wikidata write path is gated; the sweep found nothing, and that is the result
+
+Having swept the *wiki* lockout, the higher-stakes direction is the Wikidata one: is there anything
+that can edit Wikidata without consulting `wikidata_editing_lockout.state`?
+
+**No. Exactly three scripts can authenticate an edit and all three gate themselves** —
+`create_items.py`, `direct_daily_edits.py`, `substitute_source_shrine_proposal.py`, which is precisely
+the set CLAUDE.md names.
+
+### Two false positives, both alarming, both checked before being reported
+
+A first crude pass flagged **30 ungated writers**. Every one was wrong:
+
+* `requests.post` alongside the string `wikidata.org` is usually `.post(SPARQL …)` — a *read*. One
+  was `.post(WIKI_API)`, which is shinto.miraheze, not Wikidata.
+* Property names like `wbsetqualifier` appear in generator **docstrings**, describing what the
+  QuickStatements they emit will eventually do.
+
+The one that survived narrowing looked serious: `submit_daily_batch.py` holds `QS_TOKEN` and has no
+in-code gate, and its workflow carries `workflow_dispatch` — so a manual run during a lockout would
+submit batches. That is the exact shape of the documented `create-items.yml` incident.
+
+It is not real either. The QuickStatements path was retired 2026-07-04: the script has four
+functions, imports no HTTP client, and its own docstring says *"No network calls; the
+QS_TOKEN/QS_USERNAME secrets are no longer used."* `main()` writes a report and exits 1 so the direct
+path fires.
+
+**Three times today a crude detector produced an alarming false positive** — 32 answered work-files,
+30 ungated writers, and a hole in the most safety-critical gate in the repo. None reached a report.
+The thing that caught all three was refusing to write the finding before running the tool that owns
+the question.
+
+### What the sweep leaves behind
+
+`tests/test_every_wikidata_writer_is_gated.py`. It finds writers by **environment lookups of
+`MW_BOTNAME`/`BOT_TOKEN`** rather than by a hand-kept list, so a fourth one cannot appear ungated. It
+also pins that the gate comes *before* any edit call in `main()` — gating after the work has started
+is not gating — and that the retired submitter still imports no HTTP client. Each of the three was
+confirmed to fail: by adding an ungated credential holder, by moving an edit call above the gate, and
+by giving the submitter `import requests` back.
+
+
 ## 2026-09-13 (cont.) — swept all 52 lockout-gated steps; one more was wrong, and only one
 
 Yesterday's fix came from stumbling on a wrongly-gated step. The right follow-up is not to hope there
