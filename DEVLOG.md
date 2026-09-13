@@ -4,6 +4,52 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — Yesterday's `--full-name` fix was half a diagnosis; the other half ate ~20 files
+
+Today's cleanup-loop was the first run of yesterday's wiring and `generate-quickstatements / generate`
+went red. Three separate faults, in the order they fired:
+
+1. **`Commit: collected answers` staged `modern-quickstatements/*.txt`** — the file set the step
+   below owns — and then its `git commit` died on the missing git identity. Both already fixed this
+   morning in `3cef09cc`, but this run predates that commit by twelve minutes.
+2. **So ~30 regenerated files were sitting in the index**, and the backup list was built with
+   `git diff --name-only`, which compares the worktree against the **index**, not HEAD. It reported
+   25 of ~45. The unlisted ones were not backed up, and the step's own
+   `git checkout -- .` / `git clean -fd` reverted them to HEAD: `invalid_p825_removals.txt` from its
+   regenerated **17** lines back to 16, `ronsha_role_qualifiers.txt` from **497** back to 502. No
+   error, no log line. Both regenerate tomorrow.
+3. **GitHub rejected the push** (`remote: fatal error in commit_refs`, server-side transient) and the
+   retry pulled with rebase and no `--autostash`, so it died on *"cannot pull with rebase: You have
+   unstaged changes"* and the whole commit was lost. Also already fixed in `3cef09cc`.
+
+**What is new here is (2), and it is the same bug as yesterday's in a second disguise.** Yesterday
+`souken_p571_citations.txt` and `saijin_named_as.txt` were missing because `git diff` and
+`git ls-files --others` print different path formats from a subdirectory; `--full-name` fixed that
+and was reported as the cause. It was one of two blind spots in the same two-command list — and the
+one still open is worse, because it drops files that already exist rather than files nobody had yet.
+
+The list is now **one** command:
+
+    git -C "$GITHUB_WORKSPACE" -c core.quotePath=false status --porcelain --untracked-files=all -- modern-quickstatements
+
+`git status --porcelain` reports staged, unstaged and untracked alike, in one root-relative format.
+Neither mistake is expressible in it: one command cannot disagree with itself about paths, and
+porcelain has no blind spot for the index. Verified against a staged-new and a staged-modified file
+from inside the subdirectory — both listed.
+
+`tests/test_generated_qs_files_survive_the_rebase.py` is rewritten around the single command (its
+old first test pinned the `--full-name` half-diagnosis and had to go), and
+`test_workflow_commit_steps_can_commit.py` gains a test that the list is asked of `status`, not
+`diff`. 2,137 tests pass.
+
+Also checked and **not** a defect, so it does not get re-derived: `[[Open questions]]` has not been
+pushed to the wiki since 2026-08-25. The page and the repo file were byte-identical from then until
+2026-09-11, when the katakana section was added — and Cloudflare has been challenging the runners
+since 09-06. The sync is not broken; it simply has not been able to reach Miraheze since the content
+diverged. It will push on the first run after the block lifts.
+
+---
+
 ## 2026-09-13 — `modern-quickstatements/reports/` looks exactly like crud and is not
 
 168 JSON files back to 2026-03-24, about 1 MB, and 33 of them since 2026-07-04 say only

@@ -90,6 +90,46 @@ def test_the_two_commit_steps_in_the_generator_job_do_not_stage_the_same_files()
         "'Commit generated files to repo' step below already owns")
 
 
+def test_the_changed_file_list_is_asked_of_git_status_not_git_diff():
+    """`git diff` compares the worktree against the INDEX, so a file another step
+    has already staged is invisible to it.
+
+    That is not hypothetical. On 2026-09-13 the step above staged
+    `modern-quickstatements/*.txt` and then failed to commit (no git identity), so
+    ~30 regenerated files were sitting staged when this step asked what had
+    changed. `git diff --name-only` listed 25 of ~45; the rest were not backed up
+    and the `git clean -fd` / `git checkout -- .` below reverted them to HEAD —
+    `invalid_p825_removals.txt` from its regenerated 17 lines back to 16,
+    `ronsha_role_qualifiers.txt` from 497 back to 502, silently.
+
+    `git status --porcelain` reports staged, unstaged and untracked alike, in one
+    root-relative format, which also retires the diff-vs-ls-files path-format
+    disagreement that lost every brand-new file until 2026-09-12. One command
+    cannot disagree with itself.
+    """
+    text = open(os.path.join(WORKFLOWS, "generate-quickstatements.yml"),
+                encoding="utf-8").read()
+    body = dict(_steps_with_run(text))["Commit generated files to repo"]
+    listing = body[:body.index("/tmp/qs_files.txt")]
+    # The comment block right above the command names both retired commands to
+    # explain why they are retired. Assert against the CODE, not its own
+    # explanation of itself — the same trap `test_invalid_p825` fell into.
+    code = "\n".join(l for l in listing.splitlines() if not l.lstrip().startswith("#"))
+    # `git -C … -c … status --porcelain`, so match the subcommand, not "git status".
+    assert "status --porcelain" in code, (
+        "the changed-file list is no longer built from `git status --porcelain`")
+    assert "--untracked-files=all" in code, (
+        "without --untracked-files=all git names a new DIRECTORY instead of the "
+        "files in it, and the backup loop skips directories")
+    assert '-C "$GITHUB_WORKSPACE"' in code, (
+        "run it from the repo root — the `sed` below strips a "
+        "'modern-quickstatements/' prefix that only root-relative output has")
+    assert "git diff --name-only" not in code, (
+        "`git diff --name-only` is index-relative and cannot see staged changes")
+    assert "git ls-files --others" not in code, (
+        "git status already reports untracked files, in the same path format")
+
+
 def test_the_push_retries_survive_a_dirty_tree():
     """The tree is never clean at that point — _site/ and the json reports are
     still modified — so a bare `git pull --rebase` in a retry path cannot run.
