@@ -385,6 +385,27 @@ jobs:
         continue-on-error: true
         run: python generate_honzon_quickstatements.py
 
+      # Removals for P825 values that are Cultural-Property-of-Japan designations
+      # rather than deities. Runs right after the honzon generator because that is
+      # what produces them: it takes every wikilink in the jawiki 本尊 field, and
+      # the infoboxes write |本尊 = [[阿弥陀如来]]（[[重要文化財]]）.
+      # This MUST regenerate — its whole design is to re-derive from live Wikidata
+      # so the batch empties and goes inert once the statements are gone. Left
+      # unwired it is a frozen snapshot that never drains and never sees new ones.
+      - name: Invalid P825 designation removals (regenerate each run)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_invalid_p825_removals.py
+
+      # P2868 role qualifiers onto EXISTING P460 statements on pure Shikinai
+      # Ronsha. Also must regenerate: it skips statements that already carry the
+      # qualifier, so a static file would keep re-emitting work already done and
+      # would never pick up ronsha created since.
+      - name: Ronsha P2868 role qualifiers (regenerate each run)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_ronsha_role_qualifiers.py
+
       - name: Souken (創建) P571 founding dates from jawiki (regenerate each run)
         working-directory: modern-quickstatements
         continue-on-error: true

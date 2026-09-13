@@ -126,7 +126,14 @@ def test_the_staged_honzon_file_agrees_with_the_shipped_gate():
     hand-written list, so widening the gate again cannot leave the file behind
     without turning this red.
     """
+    # `generate_honzon_quickstatements` does `from infobox_fields import ...`,
+    # a sibling-module import that only resolves with modern-quickstatements on
+    # sys.path. Without this the test passes when pytest is run from that
+    # directory and fails from the repo root — which is how CI runs it.
     import importlib.util
+    import sys as _sys
+    if MQ not in _sys.path:
+        _sys.path.insert(0, MQ)
     spec = importlib.util.spec_from_file_location(
         "_gen_honzon", os.path.join(MQ, "generate_honzon_quickstatements.py"))
     mod = importlib.util.module_from_spec(spec)
@@ -145,3 +152,19 @@ def test_the_staged_honzon_file_agrees_with_the_shipped_gate():
     assert not roots, (
         f"the staged file contains blocked roots the gate refuses: {sorted(roots)} — "
         "re-strip it after widening the gate")
+
+
+def test_the_removal_generator_actually_runs_in_ci():
+    """Its docstring promises it re-derives from live Wikidata each run and goes
+    inert once the statements are gone. That promise is false unless something
+    runs it — and for the first several commits of its life, nothing did. A
+    removal batch that never regenerates keeps re-attempting deletions already
+    applied and never notices new ones."""
+    wf = os.path.normpath(os.path.join(MQ, "..", ".github", "workflows",
+                                       "generate-quickstatements.yml"))
+    text = open(wf, encoding="utf-8").read()
+    assert "generate_invalid_p825_removals.py" in text, (
+        "the removals generator is not wired into generate-quickstatements.yml, so "
+        "its file is a frozen snapshot")
+    assert "generate_ronsha_role_qualifiers.py" in text, (
+        "the ronsha role generator is not wired in either")

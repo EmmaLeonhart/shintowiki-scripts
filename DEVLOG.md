@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — both of today's Wikidata generators were unwired, so neither regenerated
+
+Checked whether the scripts added today are actually reachable by anything. Two were not.
+
+| script | wired? |
+|---|---|
+| `generate_invalid_p825_removals.py` | **no** — nothing ran it |
+| `generate_ronsha_role_qualifiers.py` | **no** — nothing ran it |
+| `apply_blank_wikidata_links.py` | yes, `wiki-cleanup.yml` |
+| `probe_miraheze_403.py` | yes, `probe-miraheze-403.yml` |
+| `report_blank_wikidata_links.py` | no, and correctly so — a one-off measurement |
+
+### The removals one made a promise it could not keep
+
+Its docstring says it *"re-derives from live Wikidata on each run rather than working from a frozen
+list. Once the statements are gone the file empties and the batch goes inert."* **That is false for a
+script nothing runs.** It would have sat as a 16-line snapshot: re-attempting deletions already
+applied, and never noticing a new designation arriving in the 本尊 field. The same for the ronsha
+qualifiers — a static file re-emitting work already done and blind to ronsha created since.
+
+Both are now steps in `generate-quickstatements.yml`, the removals one placed directly after the
+honzon generator because that is what produces the junk it cleans up.
+
+`tests/test_invalid_p825.py` asserts both step names are in the workflow. Confirmed it fails by
+replacing the removals step with `echo skipped`.
+
+### And a defect in a test I wrote an hour ago
+
+`test_the_staged_honzon_file_agrees_with_the_shipped_gate` imports the honzon generator, which does
+`from infobox_fields import field_pattern` — a sibling import that only resolves with
+`modern-quickstatements` on `sys.path`. It passed when I ran pytest from that directory and failed
+from the repo root, **which is how CI runs it**. So the guard I added to catch the file/gate drift
+would itself have gone red in CI on the next push.
+
+Fixed by putting `MQ` on `sys.path` inside the test, and verified from both working directories
+rather than the one that happened to work.
+
+
 ## 2026-09-12 (cont.) — 16 designation lines survived my own strip, and the saijin side is clean
 
 Two checks, following the honzon defect outward. One found a gap I left three commits ago; the other
