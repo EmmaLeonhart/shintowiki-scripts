@@ -4,6 +4,24 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — `modern-quickstatements/reports/` looks exactly like crud and is not
+
+168 JSON files back to 2026-03-24, about 1 MB, and 33 of them since 2026-07-04 say only
+`"outcome": "qs_retired"` — the retired submitter writing a daily note that it is retired. Under
+CLAUDE.md's *"reports expire after a week"* rule that is a textbook clear-out.
+
+**They are load-bearing.** `generate_run_history.py` globs **every** file in that directory to build
+`_site/runs.html`. They are the page's data, not a report about it; clearing the old ones silently
+truncates a published page and nothing would fail.
+
+Nothing deleted. The exception is written into CLAUDE.md beside the rule that would otherwise
+authorise it — at the point where the decision gets made, rather than in a devlog entry nobody
+consults while tidying.
+
+The "expire after a week" rule still applies to the rendered artifact, which here is
+`_site/runs.html`, not to its inputs.
+
+
 ## 2026-09-13 — what the drip actually does in a day, and 23 of 26 "failures" were not failures
 
 I published a 249-day completion estimate this morning on the assumption that 500 lines land a day.

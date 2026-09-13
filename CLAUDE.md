@@ -140,6 +140,12 @@ Emma 2026-07-08: reports and similar write-ups (on the wiki page, in `_site/`, i
 snapshots) are cleared once they are a week old — they are working artifacts, not archives.
 History lives in DEVLOG.md + git.
 
+⛔ **`modern-quickstatements/reports/*.json` is NOT covered by this and must not be cleared.**
+Checked 2026-09-13: 168 files back to 2026-03-24, ~1 MB, and `generate_run_history.py` globs **all**
+of them to build `_site/runs.html`. They are the run-history page's DATA, not a report about it —
+deleting the old ones silently truncates a published page. The rule above is about the rendered
+write-up, which in this case is `_site/runs.html` itself.
+
 ## `[[Open questions]]` page — structure & rules (rules live HERE, not on the page)
 
 Emma 2026-07-07: the page must stay lean — no "system prompt" prose on the wiki side. All
