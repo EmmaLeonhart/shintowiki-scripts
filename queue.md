@@ -34,6 +34,15 @@ from `ATOMIC_FILES`; they are not queue items.
   LANGUAGE (not per class), reusable across both classes, and it retires the capitalisation
   assumption that makes German a special case at all. The 75 lines are already stripped.
 
+- [ ] 62 of 72 WDQS callers still cannot survive a truncated response body. Each hand-rolls its
+  transport; one short read ends the run, and these generators write their `.txt` only at the end.
+  Surveyed 2026-09-13 after it happened. **Severity is low for CI and high for a hand-run**: every
+  generator is `continue-on-error` and the next day's run repairs the file, which is the pacing this
+  project wants — so this is a migration to do as files are touched, not a sweep. The shared
+  transport exists (`modern-quickstatements/wdqs_transport.py`) with the policy already pinned;
+  three callers use it. `generate_description_fixes.py` keeps its own on purpose — same policy,
+  and its sibling imports from it, so moving it is a separate change.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

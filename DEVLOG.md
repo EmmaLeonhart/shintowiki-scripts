@@ -4,6 +4,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — 65 of 72 WDQS callers cannot survive a short read; three of them were mine
+
+After the truncated body that killed a regeneration, the obvious question is how
+many other callers would die the same way. Surveyed all 72 files in this repo that
+query WDQS: **65 have no retry for a truncated response**, because each one
+hand-rolls its transport.
+
+**That is not a sweep to make in one sitting, and the severity does not ask for it.**
+Every generator runs `continue-on-error` in CI and the next day's run repairs the
+file — which is the pacing this project wants, not a defect. A hand-run is where it
+hurts, and a hand-run is rare. Recorded in `queue.md` as a migrate-as-touched item
+with that reasoning attached, so the next session does not read the number and panic.
+
+What was worth doing tonight is narrower: **three of the 65 are files I wrote on
+09-12 and 09-13**, and they carried the *same function*, copy-pasted, with no retry
+at all — `generate_invalid_p825_removals.py`, `generate_ronsha_role_qualifiers.py`,
+`generate_misplaced_form_removals.py`. Finishing my own work to the documented
+standard is not a refactor.
+
+`modern-quickstatements/wdqs_transport.py` now holds it once: the 2.5s floor
+enforced inside the transport (Emma, 2026-08-24: *"You just want to rate limit
+within your scripts"* — the only version a new caller cannot forget), 429 bailing
+unconditionally, and transport failures backing off 30/60/90s.
+`generate_description_fixes.py` keeps its own copy deliberately — same policy, and
+its sibling imports other things from it, so moving that one has its own blast
+radius and belongs in its own change.
+
+Five tests drive the real function with a faked transport rather than reading its
+source: a short read retries and then succeeds, a 429 bails on the first call, a
+persistent 504 surfaces after `RETRIES` attempts rather than being swallowed, the
+throttle is inside `query()`, and none of the three migrated files calls `urlopen`
+directly any more.
+
+
 ## 2026-09-13 — 98 shrines told they are in Japan, in Taiwan, Korea and Manchukuo
 
 Follow-on from the description work, and I had reported it in a status line as an

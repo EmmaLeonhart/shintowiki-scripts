@@ -92,6 +92,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+import wdqs_transport
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 WDQS = "https://query-main.wikidata.org/sparql"
@@ -115,20 +116,12 @@ OUTPUT = os.path.join(HERE, "invalid_p825_removals.txt")
 INVALID_VALUE_ROOTS = {
     "Q858308": "Cultural Property of Japan 日本の文化財 — and every subclass",
 }
+# The copy-pasted transport this file used to carry is now wdqs_transport.query.
+# It had no retry at all, so one truncated body from WDQS ended the run — see that
+# module's docstring for the incident and for why only three callers moved.
 def wdqs(query):
-    time.sleep(WDQS_THROTTLE)
-    url = WDQS + "?format=json&query=" + urllib.parse.quote(query)
-    req = urllib.request.Request(url, headers={
-        "User-Agent": WIKIDATA_USER_AGENT,
-        "Accept": "application/sparql-results+json",
-    })
-    try:
-        with urllib.request.urlopen(req, timeout=300) as r:
-            return json.load(r)["results"]["bindings"]
-    except urllib.error.HTTPError as e:
-        if e.code == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        raise
+    """Run a SPARQL query. Throttled, 429 bails, transport failures back off."""
+    return wdqs_transport.query(query)
 
 
 def holders(root):
