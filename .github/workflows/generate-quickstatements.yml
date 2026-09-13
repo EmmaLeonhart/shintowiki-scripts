@@ -515,16 +515,32 @@ jobs:
       # Separate commit: the collectors DELETE consumed work-files in
       # repo-root directories, which the generated-.txt commit below does not
       # stage — it only looks inside modern-quickstatements.
+      # ⛔ TWO THINGS HERE WERE WRONG ON THE FIRST RUN (2026-09-13) AND BOTH
+      # MATTER MORE THAN THEY LOOK.
+      #
+      # 1. No `git config user.*`. `git commit` died with "Author identity
+      #    unknown", `continue-on-error: true` painted the step green, and the
+      #    staged changes were left in the index for the NEXT commit step to trip
+      #    over. A commit step that cannot commit is worse than no commit step:
+      #    it fails silently and hands the mess downstream.
+      # 2. It staged `modern-quickstatements/*.txt`, which is exactly the set the
+      #    "Commit generated files to repo" step below owns and handles with a
+      #    backup / reset / clean / rebase / restore dance. Two steps committing
+      #    the same files in one job is a race by construction.
+      #
+      # So this stages ONLY the work-file directories — the thing the step below
+      # does not cover, because it only ever looks inside modern-quickstatements.
       - name: "Commit: collected answers + refreshed work queues"
         continue-on-error: true
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add name_in_kana/ ronsha_ranking_review/ beppyo_p612/                   label_typo_review/ description_enrichment_en/ 2>/dev/null || true
-          git add modern-quickstatements/*.txt 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No collected answers or queue changes to commit."
           else
             git commit -m "chore(cloud-queue): collect answers + refill work queues [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" 2>/dev/null || true
             git push origin "HEAD:${GITHUB_REF_NAME}" && echo "pushed." || echo "WARNING: push failed."
           fi
 
@@ -597,8 +613,13 @@ jobs:
             cd ..
             git diff --cached --quiet && echo "No changes after rebase" || {
               git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
-              # Retry push once after pulling if it gets rejected again
-              git push || { git pull --rebase && git push; }
+              # Retry push once after pulling if it gets rejected again.
+              # --autostash is load-bearing: on 2026-09-13 GitHub rejected the
+              # push with "remote: fatal error in commit_refs" — a server-side
+              # transient — and the retry then died on "cannot pull with rebase:
+              # You have unstaged changes", losing the whole commit. The tree is
+              # never clean here; _site/ and the json reports are still dirty.
+              git push || { git pull --rebase --autostash && git push; }
             }
           }
 

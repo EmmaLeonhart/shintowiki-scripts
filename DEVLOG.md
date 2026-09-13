@@ -4,6 +4,61 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — the first run of yesterday's wiring failed, and the cause was mine
+
+`generate-quickstatements` failed in today's cleanup-loop. The whole run's generated output —
+commit `17f7d13c`, 20 files — was created and then lost.
+
+### What actually happened, from the log rather than from inference
+
+My first reading was that my new commit step raced the old one. Wrong. The log says:
+
+```
+Author identity unknown
+*** Please tell me who you are.
+```
+
+**My "Commit: collected answers + refreshed work queues" step never set `git config user.name`.**
+`git commit` died, `continue-on-error: true` painted the step green, and the staged changes were left
+in the index. Step #68 then ran against that, hit a **transient GitHub rejection** —
+`remote: fatal error in commit_refs`, a server-side error — and its retry died on *"cannot pull with
+rebase: You have unstaged changes"*, exit 128.
+
+Three faults, only the middle one not mine:
+
+1. **A commit step that cannot commit.** Every other committing step in the repo has an identity set
+   by an earlier step of the same job; in `generate`, the only one that sets it is step #68, which
+   runs *after* mine. `continue-on-error: true` then made the failure invisible.
+2. GitHub's `commit_refs` error. Transient, not ours.
+3. **The retry could not run.** `git push || { git pull --rebase && git push; }` — the tree is never
+   clean there (`_site/` and the json reports are still dirty), so the fallback pull always refuses.
+   Pre-existing, and it is what turned a transient rejection into a lost commit. `--autostash` now.
+
+My step also staged `modern-quickstatements/*.txt`, the set step #68 owns and handles with a
+backup/reset/clean/rebase/restore dance. Two steps committing one file set in one job is a race by
+construction, so it now stages only the work-file directories — the part #68 does not cover.
+
+### What the run did prove
+
+The collectors and builders all ran. `build_name_in_kana_queue` reported **"7 targets already staged
+or answered — not re-queued"** and the beppyo builder **423** — the guards work. The description
+collector staged its 2 lines, which Emma's "wire them all" covers.
+
+⚠ **And the `--full-name` fix is still unproven.** `souken_p571_citations.txt` was written — the log
+says *"0 P571 citation-backfill lines"* — but it is **not** among the 25 files the run listed as
+changed, so it was still not committed. An empty untracked `.txt` in that directory IS listed by
+`git ls-files --others --exclude-standard --full-name` when tested locally, and nothing gitignores
+it, so the mechanism is **not yet explained**. Left as unexplained rather than guessed at; the next
+run is the next evidence.
+
+`tests/test_workflow_commit_steps_can_commit.py` pins all three: an identity set before any commit in
+the same job, the two steps not staging the same files, and `--autostash` on every push-retry. Its
+first version asserted something false — that each step needs its own `git config` — and flagged
+seven healthy workflows; `git config` is repo-scoped and persists across a job's steps. Its second
+missed steps that configure and commit in one block. Both were wrong before the real defect was
+pinned.
+
+
 ## 2026-09-13 (cont.) — wiring the builders into CI turned a dormant loop into a daily one
 
 Caught by smoke-testing the ten steps I wired yesterday without ever having run them, on the grounds
