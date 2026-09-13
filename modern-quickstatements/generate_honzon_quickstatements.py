@@ -15,8 +15,16 @@ HIGH-PRECISION design — no name-matching, no guessing:
   * unlinked plain-text deity names are counted and skipped;
   * (shrine, deity) pairs already on Wikidata are skipped (SPARQL set).
 
+A parenthetical FORM in the field — 「[[阿弥陀如来]]（[[秘仏]]）」 — is not a
+second honzon. Emma, 2026-09-13: *"hibitsu and buddharupa are qualifiers"*,
+*"qualifiers on the other thing"*. It is emitted as a P3831 qualifier on the deity
+it follows, inline when that statement is being created and as a qualifier-only
+enrichment line when it already exists. See IMAGE_FORM_ROOTS.
+
 Output: honzon_p825.txt — atomic cited lines
     <shrine>|P825|<deity>|S143|Q177837|S4656|"<jawiki url>"
+    <shrine>|P825|<deity>|P3831|<form>|S143|Q177837|S4656|"<jawiki url>"
+    <shrine>|P825|<deity>|P3831|<form>                     (enrichment, no value created)
 
 Usage:
     python generate_honzon_quickstatements.py             # full run
@@ -30,6 +38,7 @@ if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
+import collections
 import io
 import json
 import os
@@ -79,8 +88,8 @@ OUTPUT = os.path.join(HERE, "honzon_p825.txt")
 #   Q838948    work of art      : Q1410999 大曼荼羅, Nichiren's own Gohonzon
 #   Q3658341   literary character: 地蔵菩薩, 文殊菩薩, 普賢菩薩 …
 #
-# ⚠ 秘仏 hibutsu (Q11595955, 53 lines) has NO P31 at all, so no class rule can
-# reach it. It is left emitting, and named here so that is a known state.
+# ⚠ 秘仏 hibutsu is NOT one of these and is not refused — it is MOVED. See
+# IMAGE_FORM_ROOTS below.
 # The root of the class, reached by P279 ONLY. Two wrong versions came first:
 #   * P31 = Q30634609 alone caught 2 of the 4 — Q858308 (日本の文化財) and
 #     Q2901860 (有形文化財) carry no P31 at all.
@@ -93,15 +102,43 @@ OUTPUT = os.path.join(HERE, "honzon_p825.txt")
 #
 # ⭐ It does NOT reach 秘仏 (Q11595955 -P279-> Q1000809 Buddharupa -P279-> statue),
 # 仏像, or Q101659 dolmen — a monument type that subclasses cultural property
-# without being a designation. The chain draws the line; a session does not.
+# without being a designation. The chain draws the line; a session does not. The
+# first two are handled by IMAGE_FORM_ROOTS below, which is a different remedy,
+# not a second blocklist.
 INVALID_HONZON_ROOTS = {
     "Q858308",     # Cultural Property of Japan 日本の文化財, and every subclass
 }
+
+# ⭐ NOT invalid — MISPLACED. Emma, 2026-09-13: *"hibitsu and buddharupa are
+# qualifiers"*, and then *"qualifiers on the other thing"*. A temple infobox writes
+#
+#     |本尊 = [[阿弥陀如来]]（[[秘仏]]）
+#
+# and the parenthetical is not a second honzon, it is the FORM the honzon takes.
+# So it belongs on the deity's own P825 statement as a qualifier, not beside it as
+# a value — the same parse damage as 重要文化財 above, with a different remedy:
+# that one is meaningless and goes, this one is true and moves.
+#
+# Rooted at 仏像 Buddharupa and walked by P279, exactly like the designation root.
+# Checked against all 115 distinct values in the file, 2026-09-13: it reaches four,
+# and every one is a form rather than a deity — 秘仏 hibutsu (53 lines), 仏像 itself
+# (7), 涅槃仏 Reclining Buddha (1), 磨崖仏 magaibutsu (1). No buddha or bodhisattva
+# is under it: 阿弥陀 and 藥師 are P31 Q7055, 観音 is P31 Q178149, and P31 is not
+# walked here for the reason recorded above.
+IMAGE_FORM_ROOTS = {
+    "Q1000809",    # 仏像 Buddharupa — a statue, and every subclass of one
+}
+
+# "object has role" — the role or generic identity of the value of a statement,
+# which is what 秘仏 is to the 阿弥陀 it qualifies. Same property the festival
+# model uses for the Reisai role on P837 (docs/wikidata_shrine_festival_model.md).
+FORM_QUALIFIER = "P3831"
+
 MAX_CLASS_DEPTH = 6
 
 
-def refused_classes(qids):
-    """{qid} whose P31/P279 ancestry reaches a blocked root.
+def refused_classes(qids, roots=None):
+    """{qid} whose P279 ancestry reaches one of `roots` (default: the invalid ones).
 
     Walks upward in batches rather than asking SPARQL, so this script keeps its
     one dependency (the two MediaWiki APIs) and costs a handful of requests.
@@ -109,7 +146,8 @@ def refused_classes(qids):
     # `P279*` includes zero steps, so a target that IS a root counts. The first
     # version only looked at parents and let Q858308 itself through — caught by
     # the nine-case check, not by reading.
-    blocked = {q for q in qids if q in INVALID_HONZON_ROOTS}
+    roots = INVALID_HONZON_ROOTS if roots is None else roots
+    blocked = {q for q in qids if q in roots}
     seen = set()
     frontier = {q for q in qids if q}
     origin = {q: {q} for q in frontier}          # ancestor -> which targets it came from
@@ -138,7 +176,7 @@ def refused_classes(qids):
         for qid, ps in parents.items():
             src = origin.get(qid, set())
             for parent in ps:
-                if parent in INVALID_HONZON_ROOTS:
+                if parent in roots:
                     blocked |= src
                 else:
                     origin.setdefault(parent, set()).update(src)
@@ -238,6 +276,58 @@ def existing_pairs():
             for b in rows}
 
 
+def emit_for_temple(lines, counts, qid, url, links, resolved, refused, forms, have):
+    """Append this temple's QuickStatements to `lines`, tallying into `counts`.
+
+    `lines` holds [head, source-tail] pairs so a qualifier can still be inserted
+    between the value and its references — house style is value|qualifier|source,
+    as in reisai.txt.
+
+    ⭐ The field is read IN ORDER, and that is the whole of the rule. A temple
+    infobox writes 「[[阿弥陀如来]]（[[秘仏]]）」, so a form qualifies the deity most
+    recently seen in the same field. Emma, 2026-09-13: *"hibitsu and buddharupa
+    are qualifiers"*, *"qualifiers on the other thing"*.
+
+    Three cases for a form, and the second is the one that carries most of the
+    value here:
+
+    * the deity's statement is being created now → the qualifier goes inline;
+    * the deity's statement already exists → a qualifier-only enrichment line,
+      which is the case for every temple whose honzon has already landed;
+    * no deity precedes it → nothing to attach to, so it is dropped and counted
+      rather than guessed at.
+    """
+    pending = None                 # (deity qid, index into `lines`, or None if extant)
+    for t in links:
+        d = resolved.get(t)
+        if not d:
+            continue
+        if d in refused:
+            counts["invalid"] += 1
+            continue
+        if d in forms:
+            if pending is None:
+                counts["orphan_form"] += 1
+                continue
+            deity, idx = pending
+            if idx is None:
+                # Emma, 2026-09-11, on generators that create but never enrich:
+                # *"the updating of the existing ones to add more to them is kind
+                # of a very critical part that makes it so that this work is
+                # productive."*
+                lines.append([f"{qid}|P825|{deity}|{FORM_QUALIFIER}|{d}", ""])
+            else:
+                lines[idx][0] += f"|{FORM_QUALIFIER}|{d}"
+            counts["qualified"] += 1
+            continue
+        if (qid, d) in have:
+            counts["dup"] += 1
+            pending = (d, None)
+            continue
+        lines.append([f"{qid}|P825|{d}", f'|S143|Q177837|S4656|"{url}"'])
+        pending = (d, len(lines) - 1)
+
+
 def main():
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     ap = argparse.ArgumentParser()
@@ -281,25 +371,26 @@ def main():
 
     refused = refused_classes(set(resolved.values()))
     print(f"{len(refused)} resolved target(s) refused as a heritage designation")
+    forms = refused_classes(set(resolved.values()), roots=IMAGE_FORM_ROOTS)
+    print(f"{len(forms)} resolved target(s) are an image FORM -> {FORM_QUALIFIER} qualifier")
 
-    lines, dup, invalid = [], 0, 0
+    # Each new statement is held as [head, source] so a qualifier can still be
+    # inserted between them. House style is value|qualifier|source (see reisai.txt),
+    # and while direct_daily_edits sorts trailing P/S pairs either way round,
+    # matching the shape everything else in this directory uses is worth the list.
+    lines, counts = [], collections.Counter()
     for (title, qid), links in sorted(shrine_deities.items()):
         url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
-        for t in dict.fromkeys(links):
-            d = resolved.get(t)
-            if not d:
-                continue
-            if d in refused:
-                invalid += 1
-                continue
-            if (qid, d) in have:
-                dup += 1
-                continue
-            lines.append(f'{qid}|P825|{d}|S143|Q177837|S4656|"{url}"')
-    lines = sorted(set(lines))
+        emit_for_temple(lines, counts, qid, url, dict.fromkeys(links),
+                        resolved, refused, forms, have)
+    lines = sorted({head + tail for head, tail in lines})
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
-    print(f"{len(lines)} P825 lines -> {OUTPUT} (already-present pairs skipped: {dup}, invalid honzon refused: {invalid})")
+    print(f"{len(lines)} P825 lines -> {OUTPUT} "
+          f"(already-present pairs skipped: {counts['dup']}, "
+          f"invalid honzon refused: {counts['invalid']}, "
+          f"form qualifiers attached: {counts['qualified']}, "
+          f"forms with no deity to attach to: {counts['orphan_form']})")
 
 
 if __name__ == "__main__":

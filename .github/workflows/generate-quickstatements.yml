@@ -397,6 +397,14 @@ jobs:
         continue-on-error: true
         run: python generate_invalid_p825_removals.py
 
+      # Step 2 of the honzon image-form relocation. Emits nothing until the P3831
+      # qualifiers from the honzon generator above have landed, and that ordering
+      # is enforced by its SPARQL, not by step order here.
+      - name: Misplaced honzon form removals (regenerate each run)
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_misplaced_form_removals.py
+
       # P2868 role qualifiers onto EXISTING P460 statements on pure Shikinai
       # Ronsha. Also must regenerate: it skips statements that already carry the
       # qualifier, so a static file would keep re-emitting work already done and

@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — 秘仏 is a qualifier, not an invalid value: the same damage, the opposite remedy
+
+`Q11595955` 秘仏 hibutsu was the **sixth most-emitted value in `honzon_p825.txt`, 53
+of 834 lines**, and it got there exactly as 重要文化財 did — the generator takes every
+wikilink out of the jawiki 本尊 field, and a temple infobox writes
+`|本尊 = [[阿弥陀如来]]（[[秘仏]]）`. I put it to Emma as another block-the-class
+question. Her answer was neither of the options: ***"hibitsu and buddharupa are
+qualifiers"***, then ***"qualifiers on the other thing"***.
+
+Which is right, and is the distinction the designation case obscured. *"Dedicated to
+Important Cultural Property"* asserts nothing, so it is deleted. *"This Amitābha is a
+concealed image"* is **true** — it is just filed as a sibling of the deity instead of
+as a property of it. So it moves onto the deity's own statement as `P3831` (object
+has role), the property the festival model already uses for the Reisai role.
+
+**The rule is positional.** The field is read in order and a form qualifies the deity
+most recently seen in it: `[[阿弥陀如来]] [[薬師如来]]（[[秘仏]]）` qualifies 薬師, not
+阿弥陀. Getting that wrong is silent in both directions — attach to the wrong deity
+and the claim is false, attach to none and 62 lines of real information vanish — so
+the emit loop is extracted as `emit_for_temple()` and unit-tested rather than only
+exercised by a live run.
+
+`IMAGE_FORM_ROOTS = {Q1000809}` (仏像 Buddharupa), walked by `P279` exactly like the
+designation root, and measured against all 115 distinct values before use: it reaches
+**four, all forms** — 秘仏 (53 lines), 仏像 itself (7), 涅槃仏 Reclining Buddha (1),
+磨崖仏 magaibutsu (1). No buddha or bodhisattva is under it; 阿弥陀 and 薬師 are
+`P31 Q7055`, 観音 is `P31 Q178149`, and `P31` is not walked here.
+
+Three shapes come out of it: inline where the deity statement is being created, a
+**qualifier-only enrichment line** where it already exists — which is most of them,
+and without that branch the form would never reach a single already-imported temple —
+and dropped-and-counted where no deity precedes it.
+
+**The 62 staged lines are stripped now, not next run.** They were live for the drip to
+sample today. The file regenerates tomorrow with the qualifier form.
+
+**The 4 that had already landed** (`Q11580781` and `Q11628433` with 秘仏, `Q85881206`
+with 仏像 — each with a real deity statement beside it) are removed by a second
+script, `generate_misplaced_form_removals.py`, whose SPARQL requires the `P3831`
+qualifier to be present before it will emit. It writes 0 lines today. That is the
+add-first rule working, not a fault.
+
+
 ## 2026-09-13 — Swept all 82 atomic files for frozen snapshots; the wiring is clean
 
 Two generators produced nothing today while reporting success, so the obvious next

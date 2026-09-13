@@ -780,9 +780,28 @@ dolmen, 秘仏, 仏像, 阿弥陀如来 and Nichiren's 大曼荼羅 all kept. `t
 walk, the root, and the fact that the root itself is blocked (`P279*` includes zero steps; the first
 client-side walk only looked at parents and let `Q858308` through).
 
-⚠ **秘仏 hibutsu (`Q11595955`, 53 lines) is NOT reached** — its chain is `Q1000809` Buddharupa →
-statue, an object of worship rather than a designation. Still emitting; a known state, not an
-oversight. Same for 仏像 itself.
+⭐ **秘仏 hibutsu is a QUALIFIER, not an invalid value — it moves, it is not deleted** (Emma,
+2026-09-13). Shown that `Q11595955` was the sixth most-emitted value in `honzon_p825.txt`, 53 of 834
+lines: ***"hibitsu and buddharupa are qualifiers"***, then ***"qualifiers on the other thing"***.
+
+Same parse damage, opposite remedy. `|本尊 = [[阿弥陀如来]]（[[秘仏]]）` — the parenthetical is
+the FORM the honzon takes, so it belongs on the deity's own `P825` statement as `P3831` (object has
+role), the property the festival model already uses for the Reisai role. *"Dedicated to Important
+Cultural Property"* asserts nothing and goes; *"this Amitabha is a concealed image"* is true and moves.
+
+- **The rule is POSITIONAL.** The 本尊 field is read in order and a form qualifies the deity most
+  recently seen in it — `[[阿弥陀如来]] [[薬師如来]]（[[秘仏]]）` qualifies 薬師, not 阿弥陀.
+  A form with no deity before it is dropped and counted, never guessed at.
+- **`IMAGE_FORM_ROOTS = {Q1000809}`** (仏像 Buddharupa), walked by `P279` exactly like the designation
+  root. Measured over all 115 distinct values in the file: it reaches four, all forms — 秘仏 (53),
+  仏像 itself (7), 涅槃仏 (1), 磨崖仏 (1). No buddha or bodhisattva is under it.
+- **Where the deity statement already exists it is a qualifier-only enrichment line**, which is most
+  of them — without that branch the form would never reach any temple already imported.
+- **The 4 that had already landed as values are removed by a SECOND script**,
+  `generate_misplaced_form_removals.py`, gated on SPARQL confirming the `P3831` qualifier is there.
+  Empty until then; that is the add-first rule, not a fault.
+- Pinned in `tests/test_honzon_image_forms.py`, including that the two root sets never overlap — a
+  class cannot be both deleted and moved.
 
 ## Wikidata data model for shrine festivals & bunrei
 

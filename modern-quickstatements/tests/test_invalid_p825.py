@@ -95,9 +95,16 @@ def test_the_walk_is_subclass_only():
 
 def test_the_root_itself_is_blocked():
     """`P279*` includes zero steps. The first client-side walk only inspected
-    parents, so Q858308 — which IS the root — was let through."""
+    parents, so Q858308 — which IS the root — was let through.
+
+    The walk takes a `roots` argument since 2026-09-13, because the same machinery
+    now also finds image forms (仏像 and its subclasses) to relocate as qualifiers;
+    Q1000809 is itself in the file, so the zero-step case matters for that root
+    too. Same invariant, one spelling."""
     hz = open(os.path.join(MQ, "generate_honzon_quickstatements.py"), encoding="utf-8").read()
-    assert "blocked = {q for q in qids if q in INVALID_HONZON_ROOTS}" in hz
+    assert "roots = INVALID_HONZON_ROOTS if roots is None else roots" in hz, (
+        "the walk no longer defaults to the invalid roots")
+    assert "blocked = {q for q in qids if q in roots}" in hz
 
 
 def test_classes_holding_real_honzon_are_not_blocked():
