@@ -166,3 +166,63 @@ def test_the_corpus_is_not_country_filtered_either():
     corpus = src[src.index("def desc_corpus("):src.index("def targets_with_pref(")]
     assert "wdt:P17" not in corpus, (
         "desc_corpus grew a country filter; it should read every description")
+
+
+def test_the_country_survives_inflection():
+    """⛔ The country is what has to score HIGH in place_tokens, and in an
+    inflecting language it is spelled differently in each description — Японія /
+    Японії / Японією — so no single form clears a majority and the country reads
+    as a place name.
+
+    The first version counted exact tokens and did exactly that: it dropped
+    "буддійський храм в Японії" (uk), "buddhista templom Japánban" (hu) and
+    "Βουδιστικός ναός στην Ιαπωνία" (el), leaving three languages with no
+    description at all. That is a guard blocking the work it was added to protect.
+    """
+    mod = _mod()
+    uk = ["синтоїстське святилище в Японії",
+          "буддійський храм в Японії",
+          "храм у префектурі Шімане, Японія",
+          "святилище у префектурі Нара, Японія",
+          "святилище в Японію"]
+    places = mod.place_tokens(uk, "буддійський храм")
+    assert not any(p.startswith("Япон") for p in places), places
+    assert mod.names_a_place("буддійський храм в Японії", {}, places) is None
+    # and the real place names are still found
+    assert mod.names_a_place("храм у префектурі Шімане, Японія", {}, places) == "Шімане"
+
+
+def test_a_city_is_still_caught_after_the_stemming_change():
+    """The stem is four characters, which must not be so coarse that a city
+    collapses into the frame."""
+    mod = _mod()
+    places = mod.place_tokens(FR, "temple bouddhiste")
+    assert {"Kyoto", "Osaka", "Tokyo"} <= places, places
+    assert mod.names_a_place(FR[0], {}, places) == "Kyoto"
+
+
+def test_the_prefecture_slot_is_filled_with_the_key_not_the_full_label():
+    """⛔ infer_templates cuts the template at the KEY ("Shizuoka"), so the
+    template keeps the generic word: "kuil Shinto di Prefektur {pref}, Jepang".
+    Filling that with the full label "Prefektur Shizuoka" doubles it.
+
+    Measured in the 2026-09-13 regeneration this was found in: ~600 lines came out
+    "di Prefektur Prefektur Shizuoka" (id), "v prefekturi Prefektura Kjoto" (sl),
+    "у префектурі Префектура Шімане" (uk). A regression from the same change that
+    gave this script pref_keys — before it the template was cut at the full label,
+    so filling with the full label matched.
+    """
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    body = src[src.index("proposals = {}"):src.index("by_pair = defaultdict(list)")]
+    assert "label_to_key" in body, (
+        "the prefecture slot is filled from the raw label again; the generic word "
+        "doubles")
+    assert 'pref_t.replace("{pref}", slot)' in body
+
+
+def test_a_skip_says_which_check_emptied_it():
+    """46 languages printed "no place-free template" in one run when most of them
+    simply had no inferable template at all — a cause attached without checking."""
+    src = open(os.path.join(MQ, "generate_description_adds.py"), encoding="utf-8").read()
+    assert "no template could be inferred" in src
+    assert "the place guard dropped it" in src

@@ -200,11 +200,32 @@ def place_tokens(descs, cls_label=""):
     distinct = {d for d in descs if d}
     if len(distinct) < 4:
         return set()
-    freq = Counter(t for d in distinct
-                   for t in {m.group() for m in re.finditer(r"\w+", d)}
-                   if t[:1].isupper())
+    # ⛔ COUNT STEMS, NOT EXACT TOKENS. The country is what has to score high here,
+    # and in an inflecting language it is spelled differently in each description —
+    # Японія / Японії / Японією, Japonia / Japonii, Japán / Japánban — so no single
+    # form clears a majority and the country reads as a place name. The first version
+    # did exactly that and dropped the perfectly good generics
+    # "буддійський храм в Японії" (uk), "buddhista templom Japánban" (hu) and
+    # "Βουδιστικός ναός στην Ιαπωνία" (el), leaving three languages with nothing.
+    #
+    # A four-character casefolded prefix collapses the forms of one word within one
+    # language's corpus, which is all this has to do. It is the same lesson pref_keys
+    # records one level down: match on the part that does not inflect.
+    stem = lambda t: t.casefold()[:4]
+    freq = Counter()
+    for d in distinct:
+        for st in {stem(m.group()) for m in re.finditer(r"\w+", d)
+                   if m.group()[:1].isupper()}:
+            freq[st] += 1
     cutoff = max(2, 0.5 * len(distinct))
-    return {t for t, n in freq.items() if n < cutoff and t.lower() not in class_words}
+    out = set()
+    for d in distinct:
+        for m in re.finditer(r"\w+", d):
+            t = m.group()
+            if (t[:1].isupper() and freq[stem(t)] < cutoff
+                    and t.lower() not in class_words):
+                out.add(t)
+    return out
 
 
 def names_a_place(text, keys, places):
@@ -374,8 +395,10 @@ def main():
             # script already does for a language with no inferable template.
             places = place_tokens([d for d, _h, _p in corpus.values()],
                                   class_label(cls, lang))
+            dropped_for_place = False
             named = names_a_place(gen, keys, places)
             if named:
+                dropped_for_place = True
                 report.append(f"{cls} {lang}: generic {gen!r} names {named!r} — "
                               f"dropped, it would be stamped on items elsewhere")
                 gen = None
@@ -388,12 +411,19 @@ def main():
             # 30 different prefectures.
             named = names_a_place((pref_t or "").replace("{pref}", ""), keys, places)
             if named:
+                dropped_for_place = True
                 report.append(f"{cls} {lang}: pref template {pref_t!r} also names "
                               f"{named!r} — dropped, it is baked in for every item")
                 pref_t = None
             if not (pref_t or gen):
-                report.append(f"{cls} {lang}: {counts[lang]} targets, no place-free "
-                              f"template — skipped")
+                # Say WHICH check emptied it. The first version printed "no
+                # place-free template" for every skip, so 46 languages that simply
+                # had no inferable template at all read as if the place guard had
+                # rejected them — a cause attached without checking, which is the
+                # thing this file spent the day fixing elsewhere.
+                why = "the place guard dropped it" if dropped_for_place else                       "no template could be inferred"
+                report.append(f"{cls} {lang}: {counts[lang]} targets, "
+                              f"{why} — skipped")
                 continue
             if not (pref_t or gen):
                 report.append(f"{cls} {lang}: {counts[lang]} targets, NO inferable template — skipped")
@@ -428,9 +458,28 @@ def main():
             # (internal) and against existing pairs (external); colliders are
             # never emitted — they become collision groups for the cloud
             # enrichment pipeline.
+            # ⛔ FILL WITH THE KEY, NOT THE FULL PREFECTURE LABEL.
+            #
+            # `infer_templates` builds the template by replacing the KEY — the
+            # distinctive place-name, "Shizuoka" — so the template keeps whatever
+            # form of the generic word the description used: "kuil Shinto di
+            # Prefektur {pref}, Jepang". Filling that with the full label
+            # "Prefektur Shizuoka" doubles the generic word.
+            #
+            # Measured 2026-09-13 in the run this was found in: ~600 lines came out
+            # "di Prefektur Prefektur Shizuoka" (id), "v prefekturi Prefektura
+            # Kjoto" (sl), "у префектурі Префектура Шімане" (uk).
+            #
+            # ⚠ This is MY regression, from the same commit that gave this script
+            # pref_keys. Before it, the template was cut at the full label and
+            # filling with the full label matched; pref_keys changed the template's
+            # shape and nothing changed the fill. Turkish hid it, because its labels
+            # carry the generic word as a suffix the key extraction takes with it.
+            label_to_key = {v: k for k, v in keys.items()}
             proposals = {}
             for qid, (label, pref) in targets.items():
-                new = (pref_t.replace("{pref}", pref) if (pref_t and pref) else gen)
+                slot = label_to_key.get(pref, pref) if pref else None
+                new = (pref_t.replace("{pref}", slot) if (pref_t and slot) else gen)
                 if new:
                     proposals[qid] = (label, new)
             by_pair = defaultdict(list)
