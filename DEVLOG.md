@@ -4,6 +4,47 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — the 09:27 scheduled run was dropped, and a manual one confirmed three fixes
+
+The daily edit-test did not fire at its `27 9 * * *` slot. By 11:05Z — 1h38m late — it still had not,
+so "GitHub scheduler lag" stopped being the explanation.
+
+**It was dropped, not delayed.** Scheduled runs in this repo fired today at 00:14, 00:25, 01:18,
+05:16, 05:19, 06:34, 07:31, **09:22** and 10:20. The scheduler was alive five minutes before our slot
+and twenty-three minutes after it. The workflow itself is `state=active`, correctly renamed *Daily
+wiki edit-test*, cron `27 9 * * *`. GitHub documents dropping `schedule` events under load; that is
+the fit, and one missed day is not enough to build anything on.
+
+**Recorded, not fixed.** A second cron would cover a dropped slot but doubles the probes, against the
+reason the cadence was throttled in the first place. One data point. If tomorrow's fires, this was a
+one-off.
+
+### Dispatching it manually confirmed three things in production
+
+| change | evidence |
+|---|---|
+| daily cadence | the run executed under the new name and cron |
+| `LOCK_DAYS` 8 → 2 | `locked_until: 2026-09-15`, not 09-21 |
+| `_diagnose()` | the reason line now carries the discriminating detail |
+
+```
+daily edit-test FAILED (HTTPError: 403 …) | probe: 403 text/html; charset=UTF-8
+271897b cf-ray=a3a6b0144a76dadc-ORD -> cloudflare challenge — our connection, not our UA
+```
+
+That is the first time a lockout has recorded *which* 403 it hit. Five earlier failures recorded a
+status code and nothing else.
+
+**The challenge persists**, on a different edge — `ORD` today against `LAX` yesterday — which is one
+more small piece of evidence that it follows the runner rather than anything about our request.
+
+### And a false alarm, checked before reporting
+
+The reason string rendered as `â€"` in my terminal. The state file is valid UTF-8 and the bytes are
+`\xe2\x80\x94`, a proper em-dash — cp1252 rendering on this side, not a writer defect. Fourth crude
+observation today that looked like a bug and was not.
+
+
 ## 2026-09-13 (cont.) — the missing backfill file is explained, and `--full-name` was right all along
 
 Yesterday's entry left this unexplained rather than guessing. It is explained now, and the cause is
