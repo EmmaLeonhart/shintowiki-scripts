@@ -4,6 +4,52 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — "Move it, then delete" was already the pipeline; one filter excluded 742 readings
+
+Emma, asked what to do with the 742 top-level katakana `P1814` readings the
+カミノヤシロ pipeline cannot reach: ***"Move it, then delete."***
+
+**No new script was needed.** `generate_kana_qualifier_add.py` +
+`generate_kana_qualifier_remove.py` are that pair already: the add puts
+`<reading>カミノヤシロ` on the item's ojp-hani `P1448` official name, the remove
+retires the top-level once a fresh SPARQL query confirms that exact value landed.
+The add's second pass just could not see these items. It was gated on the name
+carrying **no** `P1814` qualifier at all — `FILTER NOT EXISTS { ?st pq:P1814 ?anyq }`
+— and the first pass only ever suffixes the qualifier already sitting on a name. So
+for a name that already held some reading, nothing moved the top-level, and the
+remove step, which demands exactly `<top>カミノヤシロ`, had nothing to confirm. The
+population was not outside the pipeline; it was inside it, behind one filter.
+
+Widened to "the name does not yet carry THIS reading plus the suffix":
+**724 move lines, 216 of them newly reachable**, against 509 the old gate found.
+`kana_qualifier_add.txt` regenerated — 212 added, 168 removed, the removals being
+lines that have landed since (spot-checked: `Q11379320` 伊富利部神社 now carries
+`イフリヘノカミノヤシロ` on its name).
+
+**What these readings actually are**, which the 09-11 report got only half right.
+A top-level katakana here is the Old-Japanese reading of the item's *Engishiki*
+name, not of the modern shrine: `Q11549570` 氷室神社 is read ひむろじんじゃ and carries
+`タカ-`, the reading of 高橋神社 in its `P1448`. And the hyphen is not truncation —
+it marks a portion the source did not read. `アハシマノ-イサハノ` for 粟島坐伊射波神社
+is 粟島ノ + (坐, unread) + 伊射波ノ; `-ヤクラヒメノ` has the head unread. So the value
+is a **gap-marked partial reading**, which is a reading, and moving it preserves
+the gap as written. That is why relocating beat deleting.
+
+⚠ The exact-value confirmation on the remove side matters more now, not less:
+widening the add puts a second and third reading on names that already had one, and
+a STRENDS-style "some suffixed qualifier is present" test would start deleting
+top-level readings confirmed by a *different* entry's reading. Pinned both
+directions in `modern-quickstatements/tests/test_stuck_katakana_readings_move.py`.
+
+`docs/stuck_katakana_readings.md` is no longer "categories for a ruling" — the
+report now opens with the ruling and reads as a burn-down. A category that stops
+shrinking is the thing to look at; a category that is large is not.
+
+The `[[Open questions]]` section carrying the question is deleted in this commit.
+It had never reached her: the page has not synced since 2026-08-25 and Cloudflare
+has blocked the runners since 09-06, so it went out by `AskUserQuestion` instead.
+
+
 ## 2026-09-13 — The P571 citation backfill has been inert since the day it was written
 
 `generate_souken_quickstatements.py` printed, in today's run:
