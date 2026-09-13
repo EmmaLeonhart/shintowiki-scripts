@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-12 (cont.) — the collectors are not in CI; one answer had been sitting uncollected
+
+Generalising the unwired-generator defect: are there other registered atomic files whose producer
+nothing runs? **Five**, and all five are `collect_*.py` — the scripts that fold the cloud routine's
+answers into QuickStatements. Only one collector is invoked by any workflow
+(`collect_category_translations.py`, in `wiki-cleanup.yml`).
+
+`beppyo_p612.txt`, `bunrei_onkamui.txt`, `description_enrichment_en.txt`, `label_typo_fixes.txt`,
+`ronsha_ranking_qualifiers.txt`.
+
+**That matters for the property Emma actually values in this pipeline** — CLAUDE.md: it should run
+*"unattended, indefinitely, with nobody watching"*. The builder runs in CI, the cloud routine answers
+in the cloud, and then the last step waits for a human. The routine's slowness is by design; a
+collector that only runs when somebody remembers is not.
+
+Measured, then collected: `ronsha_ranking_review/` held 34 work-files, **2 genuinely answered**, and
+the collector turned one into a QuickStatements line (`Q135041107|P460|Q135070140|P1352|1`); the
+other was `UNDECIDABLE`, which correctly produces nothing. Its own tally — `pending=30 resolved=1
+undecidable=1 malformed=0 qs-lines=1` — matched the count arrived at independently.
+
+**Not wired into CI here.** Automating the collectors puts cloud-written answers onto the road to
+Wikidata with no run in between, and that is a pipeline design decision rather than a defect fix.
+Recorded for Emma; the one pending answer is collected either way.
+
+### Three wrong measurements before the right one, on the same question
+
+Worth writing down because each looked like a finding:
+
+1. `ANSWER:\s*(\S+)` — reported **32 answered**. It was capturing `-->` from the blank placeholder
+   `<!-- ANSWER: -->`. I was one step from reporting "30 answers sitting unconsumed".
+2. `<!--\s*ANSWER:\s*(.+?)-->` — reported **32** again. `.+?` cannot match empty, so on a blank answer
+   it ran past the closing `-->` into the next comment.
+3. `<!--\s*ANSWER:(.*?)-->` — **2**, and the collector's own count agreed.
+
+The lesson is not about regexes. Twice the wrong number was the alarming one, and both times it would
+have been reported as a stalled pipeline. The check that settled it was running the tool that owns the
+question and comparing.
+
+
 ## 2026-09-12 (cont.) — both of today's Wikidata generators were unwired, so neither regenerated
 
 Checked whether the scripts added today are actually reachable by anything. Two were not.
