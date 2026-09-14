@@ -39,6 +39,7 @@ if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import collections
+import re
 import io
 import sys
 import time
@@ -111,9 +112,58 @@ def s(text):
     return f'"{esc}"'
 
 
+# Resolved __file__-relative, not cwd-relative (CLAUDE.md): CI sets
+# working-directory but a hand-run does not.
+_HERE = _uos.path.dirname(_uos.path.abspath(__file__))
+REMOVALS_FILE = _uos.path.join(_HERE, "ronsha_ojp_name_removals.txt")
+
+
+def names_queued_for_removal():
+    """{(qid, ojp-hani name)} that `ronsha_ojp_name_removals.txt` is going to delete.
+
+    ⛔ WHY THIS SKIP IS NOT A GUARD THAT BLOCKS THE WORK. A qualifier line here reads
+
+        Q10896675|P1448|ojp-hani:"出雲神社"|P1814|"イツモノカミノヤシロ"
+
+    and `direct_daily_edits.execute_line` does `guid = find_claim(...)` and then, at
+    lines 823-825, **creates the claim if it is missing**. So once the ronsha removal
+    has deleted that official name, this line does not decorate anything — it
+    RE-CREATES the statement the removal deliberately deleted, without its references
+    and without its P1264. Both generators re-derive from live Wikidata every build,
+    so the removal re-queues, the add re-queues, and the pair oscillates forever at
+    two edits a cycle, stripping the statement's sources each time round.
+
+    Measured 2026-09-13: **1,734 items appear in both files** (2,564 (item, property,
+    value) triples are staged both ways across all atomic files, and this pair is the
+    bulk of them). Sampled 20 of the 1,734 against live Wikidata: every ojp-hani name
+    still present, all with references and P1264 — **so nothing has been damaged yet**.
+    The removals simply have not reached them. This is a latent collision, closed
+    before it fires, not a repair.
+
+    Nothing is lost by skipping: the statement these readings would decorate is the
+    one being deleted. The reading belongs on the Engishiki ENTRY item, which is what
+    the removal exists to enforce (CLAUDE.md, list membership belongs to the entry
+    item).
+
+    The removals file is regenerated at step 128 of `generate-quickstatements.yml` and
+    this generator runs at step 260, so the file read here is this run's own output.
+    """
+    out = set()
+    if not _uos.path.exists(REMOVALS_FILE):
+        return out
+    for line in io.open(REMOVALS_FILE, encoding="utf-8"):
+        m = re.match(r'^-(Q\d+)\|P1448\|ojp-hani:"(.*)"$', line.strip())
+        if m:
+            out.add((m.group(1), m.group(2).replace('\\"', '"')))
+    return out
+
+
 def main():
     print("=== Generate カミノヤシロ kana-qualifier ADD QuickStatements (no direct edits) ===\n")
     lines = []
+    doomed = names_queued_for_removal()
+    n_doomed = 0
+    print(f"{len(doomed)} ojp-hani name(s) queued for removal — not decorating those")
 
     # APPEND: ojp-hani P1448 with a katakana qualifier not ending in カミノヤシロ,
     # and the statement does NOT already carry a カミノヤシロ qualifier.
@@ -132,6 +182,9 @@ def main():
     for r in rows:
         kana = r["kana"]["value"]
         if not is_katakana(kana):
+            continue
+        if (qid(r["item"]["value"]), r["on"]["value"]) in doomed:
+            n_doomed += 1
             continue
         lines.append(f'{qid(r["item"]["value"])}|P1448|{ml(r["on"]["value"])}|P1814|{s(kana + SUFFIX)}')
         n_app += 1
@@ -196,6 +249,9 @@ def main():
             if top + SUFFIX in done[(item, on)]:
                 n_already += 1
                 continue
+            if (item, on) in doomed:
+                n_doomed += 1
+                continue
             lines.append(f'{item}|P1448|{ml(on)}|P1814|{s(top + SUFFIX)}')
             n_move += 1
     print(f"  {n_move} move lines ({n_already} already on the name)")
@@ -204,7 +260,8 @@ def main():
         # Sorted at the writer, per DEVLOG 2026-08-21: WDQS row order is not stable, so
         # emitting in result order rewrote all 3,962 lines of this file every build.
         f.write("\n".join(sorted(set(lines))) + ("\n" if lines else ""))
-    print(f"\nWrote {len(lines)} lines to {ADD_FILE}")
+    print(f"\nWrote {len(lines)} lines to {ADD_FILE} "
+          f"({n_doomed} skipped: their ojp-hani name is queued for removal)")
 
 
 if __name__ == "__main__":

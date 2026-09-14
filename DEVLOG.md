@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — One staged file was going to re-create what another deletes, 1,734 items
+
+Nothing in this repo checked whether two atomic files stage the same statement both
+ways. They do: **2,564 (item, property, value) triples**, measured across all 82.
+
+The dominant pair, 1,734 items: `kana_qualifier_add.txt` puts a `P1814` kana
+qualifier on an ojp-hani `P1448` official name, while `ronsha_ojp_name_removals.txt`
+deletes that whole name — correctly, because a modern shrine should not carry the
+Engishiki entry's official name.
+
+**And the add does not merely fail on a deleted statement.**
+`direct_daily_edits.execute_line` resolves the claim with `find_claim(...)` and then,
+at lines 823-825, **creates it if it is missing**. So an add landing after the removal
+re-creates the ojp-hani name the removal deliberately deleted — without its references
+and without its `P1264`. Both generators re-derive from live Wikidata every build, so
+the removal re-queues, the add re-queues, and the pair oscillates forever at two edits
+a cycle, stripping the statement's sources each time round.
+
+**Nothing has been damaged yet.** Sampled 20 of the 1,734 against live Wikidata: every
+ojp-hani name still present, all with references and `P1264`. The removals have not
+reached them. This is a latent collision closed before it fired, not a repair — worth
+saying, because the mechanism reads far worse than the current state.
+
+`generate_kana_qualifier_add.py` now reads the removals file — regenerated at step 128
+of the same job, this one runs at step 260, so it is that run's own output — and skips
+any name queued for deletion. **4,387 -> 2,261 lines**, and the collision count
+**2,564 -> 761**. Nothing is lost: the statement those readings would decorate is the
+one being deleted, and the reading belongs on the entry item, which is what the
+removal exists to enforce.
+
+⭐ **The 761 that remain are deliberate and must not be "fixed."** Emma, on collapsed
+membership: *"every single membership thing on those items should be removed unless
+the membership of the Shikinaisha list is 100% accurate and is 100% what we want. We
+remove it and then we add it again."* 728 of them are
+`list_membership_rebuild.txt` against `orphan_membership_removals.txt` — that
+instruction, working. So the new test bans NEW collisions against a named list of
+three intended pairs, rather than banning collisions.
+
+
 ## 2026-09-13 — Ran the honzon rewrite before CI does, on 300 articles
 
 The one piece of today's code that had never been executed. `emit_for_temple` was
