@@ -47,9 +47,10 @@ separate change with its own blast radius.
   sites. Emma, 2026-08-24: *"You just want to rate limit within your scripts."*
   Pacing the transport is the only version a new caller cannot forget.
 * **429 bails immediately, no retries.** Repo policy, unconditional.
-* **503/504 and transport failures back off exponentially** — **15/45/135s**, which is
-  the pattern CLAUDE.md names as the floor and `generate_genbu_ids.py` implements.
-  A truncated body is a transport failure, not a result.
+* **503/504 and transport failures back off exponentially** — **15/45/135s over four
+  attempts**, the pattern CLAUDE.md names as the floor and `generate_genbu_ids.py`
+  implements. Four, not three: at three only 15 and 45 fire and the documented third
+  step never happens. A truncated body is a transport failure, not a result.
 
   ⚠ This was 30/60/90 for its first day, copied from `generate_description_fixes.py`
   without checking it against the documented rule. Measured 2026-09-14: **10 of the 69
@@ -76,7 +77,11 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 ENDPOINT = "https://query-main.wikidata.org/sparql"
 WDQS_THROTTLE = 2.5
-RETRIES = 3
+# FOUR attempts, because that is what makes the backoff 15/45/135. At three, only
+# 15 and 45 ever fire and the documented third step is decoration — which is what
+# this module shipped with for a day. `generate_genbu_ids.py`, the file CLAUDE.md
+# points at as the floor, uses `for attempt in range(4)` for exactly this reason.
+RETRIES = 4
 
 # Everything that means "the transport failed", as opposed to "the server answered
 # and the answer was no". A truncated body is in here because that is what actually

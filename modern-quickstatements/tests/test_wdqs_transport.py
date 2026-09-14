@@ -158,5 +158,10 @@ def test_the_backoff_is_the_repo_pattern_not_the_one_it_was_lifted_from():
         mod.query("SELECT * WHERE {}")
     except mod.urllib.error.HTTPError:
         pass
-    # The last attempt re-raises rather than sleeping, so RETRIES-1 waits.
-    assert waits == [15, 45][: mod.RETRIES - 1], waits
+    # The last attempt re-raises rather than sleeping, so RETRIES-1 waits. All three
+    # documented steps must actually fire: at RETRIES=3 the 135 never happens, which
+    # is what this module shipped with for a day.
+    assert waits == [15, 45, 135], waits
+    assert mod.RETRIES == 4, (
+        "four attempts is what makes the backoff 15/45/135; generate_genbu_ids.py, "
+        "the file CLAUDE.md points at as the floor, uses range(4)")

@@ -4,6 +4,26 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — The backoff I had just "fixed" still never reached its third step
+
+An hour after changing `wdqs_transport` from 30/60/90 to the repo's 15/45/135, the
+module still had `RETRIES = 3`. Three attempts means two sleeps: **15 and 45. The 135
+never fired.** The constant was right and the loop could not reach it.
+
+`generate_genbu_ids.py` — the file CLAUDE.md names as the floor — uses
+`for attempt in range(4)`, and four attempts is precisely what makes the sequence
+15/45/135. Now four here too.
+
+⚠ **My own test agreed with the bug.** It asserted `waits == [15, 45][:RETRIES - 1]`,
+which is true for any value of `RETRIES` — it pinned the shape of the arithmetic
+rather than the sequence the docstring promised. It now asserts the literal
+`[15, 45, 135]` and that `RETRIES == 4`, so the constant and the claim cannot drift
+apart again.
+
+That is the same failure as the backoff itself, one level up: I checked that the code
+matched the formula instead of checking that it matched the documented behaviour.
+
+
 ## 2026-09-14 — A third wrong count, and the shared transport had the wrong backoff
 
 Went looking for a batch of WDQS callers safe to migrate. Found instead that my
