@@ -7,19 +7,27 @@ copy-pasted one.
 
 ## Why this exists, and why it is deliberately small
 
-Seventy-two files in this repo call WDQS and each hand-rolls its transport. On
-2026-09-13 WDQS answered 200 and then cut a response short mid-row —
+**69 files** in this repo call WDQS and each hand-rolls its transport. On 2026-09-13
+WDQS answered 200 and then cut a response short mid-row —
 
     json.decoder.JSONDecodeError: Unterminated string starting at:
     line 13162 column 9 (char 326356)
 
 — which ended a forty-minute sweep at its last language with nothing written,
-because these generators write their `.txt` only at the end. A survey the same
-evening found **65 of the 72 cannot survive that**.
+because these generators write their `.txt` only at the end.
 
-Sixty-five files is not a change to make in one sitting, and the severity does not
-call for it: every generator runs `continue-on-error` in CI and the next day's run
-repairs the file, which is the pacing this project wants. A hand-run is where it
+⛔ **DO NOT PUT A NUMBER ON HOW MANY ARE FRAGILE.** Three separate regexes over this
+population gave three wrong answers on 2026-09-13/14 — "65 of 72" missed every
+`except Exception` and `except (ValueError, KeyError)`, which already catch a JSON
+error; "50" counted a file fixed hours earlier whose clause puts the tuple in a
+variable; "~41 with no retry loop" matched only `for attempt in range` and missed the
+`for wait in (0, 15, 45, 135)` shape entirely. What is grounded, by reading: **34 have
+some retry construct, 35 have none, and 10 already use the 15/45/135 backoff.**
+
+**Migration is per-file reading and is NOT uniformly an upgrade.** Those 10 have a
+stronger escalation than a flat one would give them, and no two of the unmigrated
+transports share a body. Against the effort: the failure costs one day of one file,
+because CI is `continue-on-error` and the next run repairs it. A hand-run is where it
 hurts, and a hand-run is rare.
 
 So this module covers **the three callers that were literally the same function
@@ -39,8 +47,15 @@ separate change with its own blast radius.
   sites. Emma, 2026-08-24: *"You just want to rate limit within your scripts."*
   Pacing the transport is the only version a new caller cannot forget.
 * **429 bails immediately, no retries.** Repo policy, unconditional.
-* **503/504 and transport failures back off hard** — 30/60/90s — and then give up.
+* **503/504 and transport failures back off exponentially** — **15/45/135s**, which is
+  the pattern CLAUDE.md names as the floor and `generate_genbu_ids.py` implements.
   A truncated body is a transport failure, not a result.
+
+  ⚠ This was 30/60/90 for its first day, copied from `generate_description_fixes.py`
+  without checking it against the documented rule. Measured 2026-09-14: **10 of the 69
+  WDQS callers already use 15/45/135**, so a migration onto the linear version would
+  have quietly downgraded every one of them. The shared module has to carry the
+  repo's pattern, not the pattern of whichever file it was lifted from.
 """
 
 import http.client
@@ -76,7 +91,7 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT):
     """Run a SPARQL query and return its `results.bindings`.
 
     Raises `SystemExit` on 429 without retrying, per repo policy. Retries a
-    transport failure or a 5xx on a 30/60/90s backoff, then re-raises.
+    transport failure or a 5xx on the repo's 15/45/135s backoff, then re-raises.
     """
     global _last_call
     url = endpoint + "?format=json&query=" + urllib.parse.quote(sparql_text)
@@ -97,12 +112,12 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT):
                 raise SystemExit("429 from WDQS — bailing.")
             if attempt == retries - 1:
                 raise
-            wait = 30 * (attempt + 1)
+            wait = 15 * (3 ** attempt)
             print(f"  WDQS {e.code} — retrying in {wait}s", flush=True)
             time.sleep(wait)
         except TRANSIENT as e:
             if attempt == retries - 1:
                 raise
-            wait = 30 * (attempt + 1)
+            wait = 15 * (3 ** attempt)
             print(f"  WDQS {type(e).__name__}: {e} — retrying in {wait}s", flush=True)
             time.sleep(wait)

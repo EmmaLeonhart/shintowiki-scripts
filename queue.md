@@ -26,21 +26,22 @@ from `ATOMIC_FILES`; they are not queue items.
     host that challenges our runners against one that does not, which is not a comparison of the two
     wikis.
 
-- [ ] ~41 WDQS callers have no retry loop at all, so a truncated response body ends the run and
-  their `.txt` — written only at the end — is lost for the day. **All 8 that HAD a retry loop are
-  now covered** (2026-09-14), each with a faked-transport test that drives the real fetcher.
+- [ ] WDQS transports: **69 callers, each hand-rolled.** All 8 that had a retry loop catching only
+  `ReadTimeout`/`ConnectionError` are now covered (2026-09-14). What is left is the rest, and it is
+  per-file reading.
 
-  ⛔ **Not a batch job, and the count is not the point.** Two published figures for this were regex
-  artifacts before the taxonomy was read off the files; any regex over except-clauses will miscount.
-  No two of the ~40 unmigrated transports share a body, so each is its own judgement about throttle,
-  bail policy and where the parse sits. Against that: the failure costs one day of one file, because
-  CI is `continue-on-error` and the next run repairs it. So this rides with each file's next real
-  change, and `modern-quickstatements/wdqs_transport.py` is what it migrates to.
+  ⛔ **DO NOT PUT A NUMBER ON HOW MANY ARE FRAGILE.** Three regexes gave three wrong answers:
+  *"65 of 72"* missed every `except Exception` and `except (ValueError, KeyError)`, which already
+  catch a JSON error; *"50"* counted a file fixed hours earlier whose clause puts the tuple in a
+  variable; *"~41 with no retry loop"* matched only `for attempt in range` and missed the
+  `for wait in (0, 15, 45, 135)` shape. Grounded, by reading: **34 have some retry construct, 35
+  have none, 10 already use the 15/45/135 backoff.**
 
-  ⭐ What made the 8 doable was realising the fix is ADDITIVE in both shapes — widen the clause
-  where the parse is inside the try, guard the parse where it is outside — and that a faked
-  transport verifies it without running a forty-minute sweep. I had tagged five of them
-  "verifiable only by running a sweep" an hour after disproving exactly that.
+  ⚠ **Migration is NOT uniformly an upgrade.** Those 10 escalate harder than a flat backoff, and
+  no two unmigrated transports share a body. The failure costs one day of one file — CI is
+  `continue-on-error` and the next run repairs it — so this rides with each file's next real change.
+  `modern-quickstatements/wdqs_transport.py` is the target, and it now carries the repo's 15/45/135
+  so adopting it cannot downgrade anyone.
 
 - **Pinned tail (keep last)**
 

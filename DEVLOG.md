@@ -4,6 +4,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — A third wrong count, and the shared transport had the wrong backoff
+
+Went looking for a batch of WDQS callers safe to migrate. Found instead that my
+third regex over this population was also wrong, and that migrating would have made
+ten files worse.
+
+**The third miscount.** *"~41 have no retry loop at all"* matched only
+`for attempt in range`. `generate_multi_ordinal_removals.py` retries with
+`for wait in (0, 15, 45, 135)` — a shape the pattern never saw. Checking four retry
+shapes instead of one: **34 of the 69 callers have some retry construct, 35 have
+none.** That is the third figure I have published for this and the third correction;
+the queue item and the module docstring now say outright that a regex over this
+population miscounts, and give the method rather than a number.
+
+**And the finding that mattered.** Ten of those callers back off **15/45/135**, which
+is the pattern CLAUDE.md names as the floor and `generate_genbu_ids.py` implements as
+`time.sleep(15 * (3 ** attempt))`. `wdqs_transport.py` — which I wrote last night and
+proposed as the migration target — used **30/60/90**, copied out of
+`generate_description_fixes.py` without checking it against the rule.
+
+So the shared module would have **downgraded every one of those ten on adoption**, and
+the queue item was recommending exactly that. Now 15/45/135, pinned by a test that
+asserts the actual sleep sequence rather than the constant.
+
+⭐ The general lesson, third time in a night: **a shared module has to carry the
+repo's pattern, not the pattern of whichever file it was lifted from.** I extracted
+`wdqs_transport` from three copies of one helper and inherited that helper's opinion
+without noticing it was the minority one.
+
+No migrations done. The population is heterogeneous, migration is not uniformly an
+upgrade, and the failure it prevents costs one day of one file under
+`continue-on-error`.
+
+
 ## 2026-09-14 — All eight, and I was wrong that five of them needed a sweep to verify
 
 An hour after using a faked transport to verify three short-read fixes, I tagged the

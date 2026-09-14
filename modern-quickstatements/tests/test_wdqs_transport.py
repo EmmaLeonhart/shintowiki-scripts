@@ -131,3 +131,32 @@ def test_the_copy_pasted_transports_are_gone():
         assert "import wdqs_transport" in src, f"{name} no longer uses the transport"
         assert "urllib.request.urlopen" not in src, (
             f"{name} calls urlopen directly again, outside the retry policy")
+
+
+def test_the_backoff_is_the_repo_pattern_not_the_one_it_was_lifted_from():
+    """15/45/135, exponential — CLAUDE.md names it the floor and
+    `generate_genbu_ids.py` implements it as `time.sleep(15 * (3 ** attempt))`.
+
+    ⚠ This module shipped with 30/60/90 for its first day, copied from
+    `generate_description_fixes.py` without checking it against the rule. Measured
+    2026-09-14: **10 of the 69 WDQS callers already use 15/45/135**, so migrating any
+    of them onto the linear version would have quietly downgraded it. A shared module
+    has to carry the repo's pattern, not the pattern of whichever file it came from.
+    """
+    mod = _mod()
+    waits = []
+    calls = {"n": 0}
+
+    def fake(req, timeout=None):
+        calls["n"] += 1
+        raise mod.urllib.error.HTTPError(req.full_url, 504, "Gateway", {}, None)
+
+    mod.urllib.request.urlopen = fake
+    mod.time.sleep = lambda s: waits.append(s)
+    mod.WDQS_THROTTLE = 0
+    try:
+        mod.query("SELECT * WHERE {}")
+    except mod.urllib.error.HTTPError:
+        pass
+    # The last attempt re-raises rather than sleeping, so RETRIES-1 waits.
+    assert waits == [15, 45][: mod.RETRIES - 1], waits
