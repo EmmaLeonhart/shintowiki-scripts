@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — Ran the honzon rewrite before CI does, on 300 articles
+
+The one piece of today's code that had never been executed. `emit_for_temple` was
+extracted, unit-tested against hand-made inputs, and shipped without the generator
+itself ever running — after a day in which every real fault was found by running
+things. So: `--limit 300`, staged file backed up and restored afterwards.
+
+    260 temples with linked honzon
+      2 resolved target(s) refused as a heritage designation   (42 lines)
+      1 resolved target(s) are an image FORM -> P3831 qualifier
+     81 P825 lines  (already-present skipped: 227, form qualifiers attached: 17,
+                     forms with no deity to attach to: 0)
+
+**17 form qualifiers in a 300-article sample, and 13 of them are the qualifier-only
+enrichment branch** — the one I argued carries most of the value, because a temple
+whose honzon has already landed has no new statement to hang the form on. It is
+carrying it in practice, not just in a unit test.
+
+Both shapes come out well-formed, no malformed lines, and **zero** lines give a form
+as the P825 value.
+
+⭐ **The add-first pair is demonstrably connected.** Two of the sample's
+qualifier-only lines are
+
+    Q11628433|P825|Q854773|P3831|Q11595955
+    Q11580781|P825|Q11404731|P3831|Q11595955
+
+which are two of the exact three items whose live `P825 -> 秘仏` statement
+`generate_misplaced_form_removals.py` is waiting to remove. Its SPARQL requires that
+qualifier to be present before it will emit, so the two halves meet on real data
+rather than on my description of them.
+
+The staged file is restored to its 772 lines — 81 is a 300-article sample, and CI
+regenerates the full 8,879 tomorrow.
+
+
 ## 2026-09-13 — I published the same measurement twice and it was wrong both times
 
 The WDQS-fragility figure. First **"65 of 72 cannot survive a truncated body"**, from
