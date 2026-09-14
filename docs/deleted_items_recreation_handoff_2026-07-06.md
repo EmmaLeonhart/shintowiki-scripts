@@ -15,6 +15,16 @@ editors, visibility is worse than data loss).
 
 ## 2. The pipeline (each script is isolated, tested, no auto-submit)
 
+> ⛔ **Steps 1-3 no longer exist, deleted 2026-09-14 (Emma).** The source
+> `context dump/deleted.txt` was removed 2026-07-05 (*"audit clear, all content
+> extracted"*), so `rag_deleted_logs.py` had been failing on a missing file every
+> Monday for ten weeks and `crossref_deleted_labels.py` never got to run behind it;
+> `recreate-deleted-crossref.yml` is gone with them. **Their outputs are kept and
+> still current** — `deleted_log_rag.md`/`.json` and `shinto_wiki_crossref.md`/`.json`
+> are committed, and the later steps read the JSONs. This run order is history, not
+> instructions: the programme finished 2026-07-06 and the ~213 unreferenced deleted
+> items are not to be recreated.
+
 Run order, all in `recreate-deleted-wikidata/`:
 
 1. **Source:** `../context dump/deleted.txt` — XTools export of the 455 deleted QIDs (QID +
@@ -56,8 +66,8 @@ enrichment:      {romaji_reading, labels{lang:{label,source}}, label_count,
 - All 213 candidates have **multilingual labels (median 59 languages)**.
 - **134/213 have a P31** (kami 28, festival 26, Shinto shrine 42, human 19, Buddhist temple 9,
   kofun 6, dance 2, book 2). **79 left null for review** — see §6.
-- 35 unit tests green (`recreate-deleted-wikidata/tests/`); CI-wired (`ci.yml`,
-  `recreate-deleted-crossref.yml`).
+- 35 unit tests green (`recreate-deleted-wikidata/tests/`); CI-wired via `ci.yml`.
+  (`recreate-deleted-crossref.yml` was deleted 2026-09-14 — see the note above.)
 
 ## 5. Load-bearing decisions / gotchas (don't relearn these the hard way)
 

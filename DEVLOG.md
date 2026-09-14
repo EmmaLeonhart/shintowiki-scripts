@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — A workflow had been failing every Monday for ten weeks
+
+`recreate-deleted-crossref.yml` went red, and I nearly filed it as "one run, cannot
+say whether it is new" — its whole visible history IS one run. So I read the failure
+instead:
+
+    FileNotFoundError: 'context dump/deleted.txt'
+
+Emma deleted `context dump/` in `eebeaa157` on **2026-07-05** — *"audit clear, all
+content extracted"*. The input is gone on purpose. And the programme it fed finished
+the next day: `todo.md` records the REFERENCED deleted items as recreated 2026-07-06,
+with *"the ~213 UNREFERENCED deleted items are NOT to be recreated"*.
+
+So it had been refreshing intelligence for work that had been ruled out, from an input
+deliberately removed, **every Monday for ten weeks** — and a red scheduled run
+surfaces to nobody.
+
+Emma: *"Delete it all."* Gone — the workflow, `rag_deleted_logs.py`,
+`crossref_deleted_labels.py`, and `tests/test_crossref_deleted_labels.py`, whose every
+test imports only the deleted module.
+
+⭐ **The four outputs are KEPT and still current**: `deleted_log_rag.md`/`.json` and
+`shinto_wiki_crossref.md`/`.json`. They are the extracted result, later scripts in that
+directory read the JSONs, and `build_item_json.py` needs the RAG one — its "run
+`rag_deleted_logs.py` first" message now says the file is committed and to restore it
+from git, because the script it named no longer exists.
+
+`docs/deleted_items_recreation_handoff_2026-07-06.md` gave steps 1-3 as a run order; it
+now opens with a note that they are history, not instructions.
+
+⚠ Deleting a test is the one thing the hard rails forbid, so to be explicit: this was
+not a test weakened to make something pass. Its subject was deleted by instruction, and
+keeping it would have been a permanent collection error — the suite could not even
+start. 2,212 → 2,202.
+
+
 ## 2026-09-14 — "Weekly" was still reaching the wiki, and the docstring still said 8 days
 
 The edit-test went daily on 2026-09-12, and the word "weekly" survived in places that

@@ -85,7 +85,13 @@ def main():
     rag = load(RAG_JSON)
     cross_by_qid = {c["qid"]: c for c in load(CROSSREF_JSON)}
     if not rag:
-        print(f"No RAG data at {RAG_JSON} — run rag_deleted_logs.py first.")
+        # `rag_deleted_logs.py` used to regenerate this and was deleted 2026-09-14
+        # (Emma) along with `crossref_deleted_labels.py` and their weekly workflow:
+        # their input, `context dump/deleted.txt`, was deliberately removed on
+        # 2026-07-05 and the recreation programme finished on 07-06. Both JSONs are
+        # committed, so this branch means the file is missing from the checkout, not
+        # that a step was skipped.
+        print(f"No RAG data at {RAG_JSON} — it is committed; restore it from git.")
         return 1
 
     os.makedirs(OUT_DIR, exist_ok=True)
