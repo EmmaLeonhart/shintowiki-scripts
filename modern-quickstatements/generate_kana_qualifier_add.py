@@ -45,8 +45,6 @@ import sys
 import time
 import requests
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 SUFFIX = "カミノヤシロ"
@@ -86,7 +84,25 @@ def fetch_sparql(query, retries=3):
             print("FATAL: 429 Too Many Requests from SPARQL endpoint — bailing")
             raise RateLimitError("429")
         r.raise_for_status()
-        return r.json()["results"]["bindings"]
+        try:
+            return r.json()["results"]["bindings"]
+        except ValueError as e:
+            # A TRUNCATED BODY. WDQS answers 200 and then cuts the response short
+            # mid-row; `r.json()` raises requests' JSONDecodeError, a ValueError,
+            # and this loop caught only ReadTimeout. On 2026-09-13 that ended a
+            # forty-minute sweep at its last language with nothing written, because
+            # these generators write their .txt only at the end.
+            #
+            # The parse sits OUTSIDE the request's try on purpose — the request and
+            # the parse fail differently — so it gets its own guard rather than a
+            # restructured loop. Purely additive: the success path is untouched and
+            # a previously-fatal case now retries on the same backoff.
+            if attempt < retries:
+                print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
+                time.sleep(10 * attempt)
+                continue
+            print("SPARQL short read after retries — exiting gracefully")
+            return None
 
 
 def qid(uri):
@@ -159,6 +175,15 @@ def names_queued_for_removal():
 
 
 def main():
+    # ⛔ INSIDE main(), NOT AT MODULE SCOPE. Rebinding sys.stdout at import
+    # replaces pytest's captured stream with a wrapper over a buffer pytest then
+    # closes, and every later test in the same PROCESS dies on "I/O operation on
+    # closed file" — not just this module's. It poisoned four sibling modules'
+    # tests before being traced back here, and it is the fourth time this repo has
+    # hit the same thing (build_ronsha_ranking_queue.py was moved for exactly this
+    # reason). The rebind is for the CI console's encoding, which only matters when
+    # the file is run as a script.
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     print("=== Generate カミノヤシロ kana-qualifier ADD QuickStatements (no direct edits) ===\n")
     lines = []
     doomed = names_queued_for_removal()

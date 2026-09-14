@@ -26,31 +26,21 @@ from `ATOMIC_FILES`; they are not queue items.
     host that challenges our runners against one that does not, which is not a comparison of the two
     wikis.
 
-- [ ] WDQS callers that cannot survive a truncated response body — **the count I published twice
-  was wrong both times**, so the taxonomy matters more than the number. First I said 65 of 72, from
-  grepping for `JSONDecodeError` or `except ValueError` literally; that missed every `except
-  Exception` and `except (ValueError, KeyError)`, which already catch it, because a JSON error IS a
-  ValueError. A second pass said 50 and counted `generate_description_fixes.py`, which I had fixed
-  hours earlier, because its clause is `except transient as e:` with the tuple in a variable. Any
-  regex over except-clauses will miscount; the real question is per-file and needs reading.
+- [ ] ~41 WDQS callers have no retry loop at all, so a truncated response body ends the run and
+  their `.txt` — written only at the end — is lost for the day. **All 8 that HAD a retry loop are
+  now covered** (2026-09-14), each with a faked-transport test that drives the real fetcher.
 
-  Three of the 8 are DONE (2026-09-14): `generate_identical_name_en_labels`,
-  `generate_shrines_missing_en_label` and `generate_cjk_ja_backfill` parse inside the try, so adding
-  a `ValueError` clause was purely additive and is covered by faked-transport tests.
+  ⛔ **Not a batch job, and the count is not the point.** Two published figures for this were regex
+  artifacts before the taxonomy was read off the files; any regex over except-clauses will miscount.
+  No two of the ~40 unmigrated transports share a body, so each is its own judgement about throttle,
+  bail policy and where the parse sits. Against that: the failure costs one day of one file, because
+  CI is `continue-on-error` and the next run repairs it. So this rides with each file's next real
+  change, and `modern-quickstatements/wdqs_transport.py` is what it migrates to.
 
-  What is solid: **~41 have no retry loop at all**, ~8 have one that catches only
-  `requests.exceptions.ReadTimeout`/`ConnectionError` (`generate_cjk_ja_backfill`,
-  `generate_derived_name_in_kana`, `generate_identical_name_en_labels`, `generate_kana_qualifier_add`
-  and `_remove`, `generate_katakana_reading_add` and `_remove`, `generate_shrines_missing_en_label` —
-  and in half of those the `r.json()` sits OUTSIDE the try, so widening the clause is not enough),
-  and the rest are already covered by a broad clause.
-
-  ⛔ **Not a batch job.** No two of the 40 unmigrated transports share a body — checked, zero
-  matches against the one already migrated — so each is its own judgement about throttle, bail
-  policy and where the parse sits, and the only way to verify one is to run that generator's sweep.
-  Against that: the failure costs one day of one file, because CI is `continue-on-error` and the next
-  run repairs it. So this rides along with each file's next real change, and
-  `modern-quickstatements/wdqs_transport.py` is what it migrates to.
+  ⭐ What made the 8 doable was realising the fix is ADDITIVE in both shapes — widen the clause
+  where the parse is inside the try, guard the parse where it is outside — and that a faked
+  transport verifies it without running a forty-minute sweep. I had tagged five of them
+  "verifiable only by running a sweep" an hour after disproving exactly that.
 
 - **Pinned tail (keep last)**
 

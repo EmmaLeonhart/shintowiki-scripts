@@ -4,6 +4,43 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — All eight, and I was wrong that five of them needed a sweep to verify
+
+An hour after using a faked transport to verify three short-read fixes, I tagged the
+other five **UNSAFE-TO-GUESS: "verifiable only by running a forty-minute sweep."**
+That was already disproved by the thing I had just done. The faked transport IS the
+verification.
+
+And the fix is additive in both shapes, not just one. Where the parse sits inside the
+try, widen the clause. Where it sits outside — all five, identically —
+
+    r.raise_for_status()
+    return r.json()["results"]["bindings"]
+
+wrap that one line in its own `try/except ValueError` that retries on the same
+backoff. The success path is untouched either way; a previously-fatal case now
+retries. No loop restructuring, no code moved.
+
+All eight are covered, each driven through its real fetcher with a faked transport.
+
+### The fourth time this repo has hit the same import-time trap
+
+Adding the five to the test made **seven tests error**, including ones for modules I
+had not touched:
+
+    ValueError: I/O operation on closed file
+
+`generate_kana_qualifier_add.py` rebound `sys.stdout` at MODULE SCOPE, so importing it
+replaced pytest's captured stream with a wrapper over a buffer pytest then closed —
+and every later test in the same PROCESS died, not just its own. Four sibling modules
+looked broken and were not.
+
+Moved into `main()`, which is where `build_ronsha_ranking_queue.py` was moved for
+exactly this reason. The rebind exists for the CI console's encoding and only matters
+when the file is run as a script. The comment now says so at the site, because "hit
+three times today" was already in this devlog and did not stop the fourth.
+
+
 ## 2026-09-14 — Three of the eight short-read gaps close safely; five cannot
 
 Of the 8 WDQS callers whose retry loop catches only `ReadTimeout`/`ConnectionError`,

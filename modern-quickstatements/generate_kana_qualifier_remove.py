@@ -109,7 +109,25 @@ def fetch_sparql(query, retries=3):
             print(f"SPARQL returned {r.status_code} after retries — exiting gracefully")
             return None
         r.raise_for_status()
-        return r.json()["results"]["bindings"]
+        try:
+            return r.json()["results"]["bindings"]
+        except ValueError as e:
+            # A TRUNCATED BODY. WDQS answers 200 and then cuts the response short
+            # mid-row; `r.json()` raises requests' JSONDecodeError, a ValueError,
+            # and this loop caught only ReadTimeout. On 2026-09-13 that ended a
+            # forty-minute sweep at its last language with nothing written, because
+            # these generators write their .txt only at the end.
+            #
+            # The parse sits OUTSIDE the request's try on purpose — the request and
+            # the parse fail differently — so it gets its own guard rather than a
+            # restructured loop. Purely additive: the success path is untouched and
+            # a previously-fatal case now retries on the same backoff.
+            if attempt < retries:
+                print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
+                time.sleep(10 * attempt)
+                continue
+            print("SPARQL short read after retries — exiting gracefully")
+            return None
 
 
 def qid(uri):

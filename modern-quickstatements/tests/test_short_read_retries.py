@@ -33,22 +33,17 @@ COVERED = [
     ("generate_shrines_missing_en_label", lambda m: m.fetch_sparql("SELECT * WHERE {}")),
     ("generate_identical_name_en_labels", lambda m: m.fetch_batch(["jinja"])),
     ("generate_cjk_ja_backfill", lambda m: m.fetch_rows()),
+    # The five whose parse sits OUTSIDE the request's try. They were tagged
+    # "verifiable only by running a forty-minute sweep" and that was wrong — the
+    # faked transport below IS the verification, as the first three had already
+    # shown an hour earlier. Guarding the parse is as additive as widening a clause.
+    ("generate_derived_name_in_kana", lambda m: m.fetch_sparql("SELECT * WHERE {}")),
+    ("generate_kana_qualifier_add", lambda m: m.fetch_sparql("SELECT * WHERE {}")),
+    ("generate_kana_qualifier_remove", lambda m: m.fetch_sparql("SELECT * WHERE {}")),
+    ("generate_katakana_reading_add", lambda m: m.fetch_sparql("SELECT * WHERE {}")),
+    ("generate_katakana_reading_remove", lambda m: m.fetch_sparql("SELECT * WHERE {}")),
 ]
 
-# The five that still cannot be fixed by widening a clause, named so the gap is a
-# fact in the test suite rather than a memory.
-PARSE_OUTSIDE_THE_TRY = (
-    "generate_derived_name_in_kana.py",
-    "generate_kana_qualifier_add.py",
-    "generate_kana_qualifier_remove.py",
-    "generate_katakana_reading_add.py",
-    "generate_katakana_reading_remove.py",
-)
-
-# One binding carrying every field any of the three post-processes, so the second
-# (successful) response survives each module's own row handling. The test is about
-# the retry, not about the shapes, but a payload that crashes the post-processing
-# would hide whether the retry happened at all.
 OK = (b'{"results": {"bindings": [{"item": {"value": "http://www.wikidata.org/entity/Q1"},'
       b' "lab": {"value": "jinja"}, "l": {"value": "x"}, "x": {"value": "ok"}}]}}')
 SHORT = b'{"results": {"bindings": [{"item": {"value": "http://www.wikidata.org/entit'
@@ -97,14 +92,3 @@ def test_a_short_read_is_retried_then_succeeds(name, call, monkeypatch):
     # a second request was made.
     call(mod)
     assert calls["n"] == 2, f"{name}: short read not retried ({calls['n']} call(s))"
-
-
-@pytest.mark.parametrize("name", PARSE_OUTSIDE_THE_TRY)
-def test_the_uncovered_five_are_still_uncovered_and_that_is_recorded(name):
-    """Not a wish — a fact. These parse the body after the try block, so the fix is
-    moving code rather than widening a clause. If one of them grows the clause, this
-    goes red and the list should shrink."""
-    src = open(os.path.join(MQ, name), encoding="utf-8").read()
-    assert "SPARQL short read" not in src, (
-        f"{name} now handles a short read — move it into COVERED above and give it "
-        "a faked-transport test like the other three")
