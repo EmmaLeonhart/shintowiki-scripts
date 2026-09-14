@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — `description_enrichment_en`'s fate, closed by measuring instead of asking
+
+The last of three decisions this session inherited as "recorded for Emma, deliberately
+not re-asked". `test_descriptions_are_not_edited.py` exempts three batches from the
+no-description-writes rule, and its comment ended *"left running and raised with her
+rather than killed silently."*
+
+⛔ **It had been "raised" in a commit message and in that comment.** Neither is a
+channel she reads — CLAUDE.md says the only one is `AskUserQuestion` — so this was the
+"flagged for review" non-outcome, sitting in the repo since 09-11 looking handled.
+
+But the question dissolves once measured rather than asked. All 13 items in
+`description_enrichment_en.txt`, checked live:
+
+* **13/13 have an English label**
+* **0/13 have an English description**
+
+So every line is exactly step 3 of `docs/description_label_policy.md` — *"If item has
+a label and no description, add a programmatically generated fill in the blanks
+description"* — and `Den` cannot overwrite anything, which is the same property
+`description_adds.txt` is exempted for. Emma's 09-11 objection was to *rewriting*
+existing descriptions, and this rewrites nothing. Nothing to decide.
+
+The exemption's premise had been inferred from the pipeline's purpose and never
+checked against the file or against Wikidata. It is now stated as a dated measurement.
+
+⭐ **And the collision-breaking property is now tested**, because it is the half that
+can fail silently. Three of the 13 are all labelled **"Nifuno Shrine"** and only work
+because their descriptions differ — Onyū / Mikata / Tsuruga district. Two identical
+descriptions would recreate the exact collision the batch exists to break, and nothing
+would have noticed. 13 lines, 13 distinct descriptions today.
+
+
 ## 2026-09-14 — Weekly [[Open questions]] sweep: nothing to metabolise
 
 `weekly-open-questions-sweep.yml` injected its bullet at the top of `queue.md`. Pulled
