@@ -4,6 +4,39 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — The P793 gap looks exactly like the ronsha one and is not it
+
+Went through the conformance snapshot for a figure that is frozen because nothing
+emits it — the method that produced `generate_ronsha_role_qualifiers.py` when
+`ronsha.p460_with_p2868` sat at 1,613 of 2,058 for six weeks.
+
+`reisai.with_p793 = 101 of 352` is the best candidate, and it has the same
+fingerprint: **P793 appears in exactly one file in this repo, `audit_model_adoption.py`
+— the thing that measures it.** Nothing emits it, nothing stages it.
+
+**But the gap is correct.** Measured against live Wikidata:
+
+* **282** reisai statements carry the `P3831` role and no `P793`;
+* of those shrines, **9** have a festival item on Wikidata that refers to them at all.
+
+The model says *"P793 = the festival item, **if one exists**"*, and for 273 of 282 one
+does not. A generator would have nothing to emit for 97% of its population. That is
+the opposite of the ronsha case, where the role item was derivable from the item's own
+`P31` for all 445.
+
+And the only way to find more would be matching festival items to shrines **by name**
+— precisely what `generate_saijin_quickstatements.py` and
+`generate_honzon_quickstatements.py` refuse to do ("no name-matching, no guessing";
+jawiki's editorial linking is the identification).
+
+Recorded in `docs/wikidata_shrine_festival_model.md` beside the rule, because
+`101 of 352` will look like a missing generator to the next reader exactly as it did
+to me. **A frozen conformity figure means "nothing emits this"; it does not mean
+"something should."**
+
+No code written. The value of this tick is a generator that does not get built.
+
+
 ## 2026-09-14 — Same bug, second file: the daily katakana burn-down was discarded too
 
 Asked the same question of every CI output — *does it actually reach the repo?* — and

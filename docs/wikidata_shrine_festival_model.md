@@ -22,6 +22,14 @@ everything:
   at a specific festival item — that was the 2026-07-07 modeling error.
 * **The festival item goes in P793** — as a QUALIFIER on the P837 statement
   ("significant event qualifier"), not competing with the role.
+  ⛔ **"if one exists" is doing almost all the work, and no generator emits P793 on
+  purpose.** Measured 2026-09-14: **282** reisai statements carry the role and no
+  P793, and of those shrines only **9** have a festival item on Wikidata that refers
+  to them at all. So the gap is this rule working as written, not a pipeline hole.
+  The conformance audit reports `reisai.with_p793 = 101 of 352`, which reads like the
+  frozen `ronsha.p460_with_p2868` figure that genuinely did need a generator — it is
+  not the same thing. Finding more festival items would mean matching them to shrines
+  BY NAME, which is precisely what the saijin and honzon importers refuse to do.
 * Day = the shrine's date from our reisai QS (jawiki 例祭); if no date exists
   in our QS, use **Q19798648 (unknown value item)** as the P837 value — do
   NOT look dates up from the festival item or elsewhere.
