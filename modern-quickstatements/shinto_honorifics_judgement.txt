@@ -3,9 +3,8 @@
 #  The extent that we're not able to is the extent, probably, that I'm going
 #  to be able to make judgement calls."
 #
-# 25 cases.
+# 23 cases.
 
-Q10933447	ja=大事忍男神	en=Oogotooshionokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q10948069	ja=宗像三女神	en=Three Goddesses of Munakata	EXCLUDED by Emma — complicated ontology
 Q1114013	ja=住吉三神	en=Sumiyoshi sanjin	EXCLUDED by Emma — complicated ontology
 Q11455406	ja=家宅六神	en=Katakurokushin	EXCLUDED by Emma — complicated ontology
@@ -27,6 +26,5 @@ Q555212	ja=阿加流比売神	en=Akaruhime	ja says 神 (Q140588460); en says a d
 Q644201	ja=淤加美神	en=Kuraokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q65249011	ja=八十神	en=Eighty Gods	EXCLUDED by Emma — complicated ontology
 Q8191715	ja=須勢理姫神	en=Suseri-hime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
-Q85878978	ja=大野手比売	en=Ōnotehime-no-Kami	ja says 比売 (Q140588570); en says a different honorific (Q140588460)
 Q86728307	ja=武居大伴主神	en=Takei-Otomo-no-Ookami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q98082969	ja=八女姫神	en=Yametsuhime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
