@@ -1,0 +1,102 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q140190511 -->
+<!-- JA: 赤穂大石神社 | EN: (none) | SITELINKS: 0 -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E8%B5%A4%E7%A9%82%E5%A4%A7%E7%9F%B3%E7%A5%9E%E7%A4%BE -->
+<!-- ANSWER: -->
+<!-- TASK: read the ARTICLE below and identify this shrine's MOTHER HOUSE — the shrine it was branched from (勧請元 / 分霊元 / 総本社 / 本社). This is normally stated in the 由緒 or 歴史 prose, not in the infobox. Fill ANSWER with exactly one of:
+  MOTHER: <Qid> # <shrine name>   the mother house, as a Wikidata Q-id
+  AUTOCHTHONOUS:                  the article says the shrine is of indigenous/local origin (地主神, 国津神 of the place, founded in situ) with no parent shrine — this is a REAL finding, use Q135508874
+  UNCLEAR: <what the article says>  the article does not settle it
+
+Rules:
+  * The mother house is the shrine this one was BRANCHED FROM. Do not confuse it with: a shrine merged INTO this one (合祀), a 摂社/末社 inside this one's grounds, or a shrine this one is the head OF (that is the reverse direction).
+  * 総本社/総本宮 of the network is the right answer when the article says this shrine is a 分社 of it. If the article names a nearer, more specific parent (e.g. branched from a regional shrine which is itself a branch), prefer the NEARER one — the accurate individual layer is the whole point of this pass.
+  * Give a Q-id you have actually verified names that shrine. Do NOT guess a Q-id from a name; if you cannot confirm the item, answer UNCLEAR with the shrine name in the text.
+  * Founding by a person/clan, or 分霊 from a deity rather than a named shrine, is not a mother house — UNCLEAR.
+When ANSWER is filled this file is done. -->
+
+== ARTICLE ==
+赤穂大石神社（あこうおおいしじんじゃ）は、兵庫県赤穂市上仮屋旧城内にある神社。旧社格は県社で、現在は神社本庁の別表神社。
+
+
+== 祭神 ==
+主祭神 - 大石良雄以下四十七士命、萱野三平、浅野家三代、森家七将。主君の仇討ちという大願を果たした祭神に因み、「大願成就」の神徳で信仰を集める。
+
+
+== 歴史 ==
+赤穂事件以降、赤穂浪士を称揚する人々によって赤穂城内にあった旧大石邸内に小さな祠が設けられ密かに祀られていたが、江戸時代には江戸幕府にはばかって表立って顕彰することはできなかった。
+1868年（明治元年）に明治天皇が赤穂浪士の墓のある泉岳寺に勅使を遣わし、これを弔って以降、赤穂城内に神社を作ろうとする動きが起きた。しかし、明治維新になり城は売却され、建物も取り壊されて城地は耕地として払い下げられ、千種川（ちくさがわ）の洪水などもあって城跡一帯は荒廃していた。
+1900年（明治33年）に改めて大石良雄ら赤穂浪士47人および途中で自害した萱野重実などを主祭神とする「大石神社」を創建することが政府から許可されたが、建築の募金が集まらず難航し、大町桂月ら右翼や国粋主義者の反対もあったが、1910年（明治43年）4月にようやく起工され、1912年（大正元年）11月に社殿が竣工し、創建された。
+1928年（昭和3年）に無格社から県社に昇格している。
+太平洋戦争後、江戸時代後期から流行していた藩祖を祀った神社のひとつでもある赤穂城跡の中にあった赤穂神社に祀られていた赤穂藩主・浅野氏3代（長直・長友・長矩）及び、城外の赤穂神社に祀られていた、浅野家の後に赤穂藩主となった森氏の遠祖の七武将（可成、可隆、長可、成利（蘭丸）、長隆（坊丸）、長氏（力丸）、忠政）を合祀している。
+また、神社本庁の別表神社に加列されている。
+2000年（平成12年）に大石神社と赤穂神社は合併し、稲荷神社や恵比寿社なども境内社として合祀して新たに赤穂大石神社となった。
+
+
+=== 高麗犬 ===
+境内には 高麗犬の石像が随所に見られる。通常の神社における狛犬より獅子の要素が薄く犬に近い。義士宝物殿には「犬の受け取り証」も展示されており、浅野家治世の赤穂藩が犬と非常に縁があった史料となっている。当社は犬を連れて参拝できる全国でも稀有な神社である。
+
+
+== 境内 ==
+本殿、拝殿のほか、境内社として浅野家が藩主だった時代から藩民の崇敬を受けた摂末社が多数ある。宝物展示施設として、赤穂浪士の遺品などを陳列する義士宝物殿、長矩・四十七士らの木像を展示する義士木像奉安殿、大石邸長屋門（国の史跡「大石良雄宅跡」のうち）などがある。
+
+本殿 - 1912年（大正元年）建立。
+拝殿 - 1912年（大正元年）建立。
+社務所
+義士史料館 - 日本博物館協会会員館、兵庫県博物館協会加盟館。全国歴史民俗系博物館協議会加盟館。またひょうごっ子ココロンカードの対象施設になっている。
+義士宝物殿 - 大石内蔵助が所持していた備前長船清光・康光の大小刀、肖像掛軸など義士所縁の品々を展示。
+義士宝物殿別館 - 浅野家・大石家・森家の宝物を展示。
+義士木像奉安殿 - 山崎朝雲、平櫛田中ら現代彫刻家による義士の彫像を展示。全49体。
+大石邸庭園（国指定史跡）
+大石邸長屋門（国指定史跡）
+土蔵
+神門
+赤穂義士石造群
+
+
+=== 摂末社 ===
+境内社合祀殿 - 国助稲荷社、淡嶋社、恵美寿宮、天満宮、山鹿社（祭神：山鹿素行）、八田社（祭神：塩田の守護神）、忠魂社。2000年（平成12年）建立。それまであった社を1か所に纏め、合祀した。
+大石稲荷社 - かつて大石内蔵助が常陸国笠間（現・茨城県笠間市）より勧請したもの。浅野氏は赤穂藩に転封される前は笠間藩主であった。
+
+
+== 文化財 ==
+
+
+=== 国指定史跡 ===
+大石良雄宅跡 - 管理団体は赤穂市。
+
+
+== 年中行事 ==
+1月15日：とんど祭
+4月第2日曜日：春の義士祭
+5月5日：大石力餅
+6月30日：お田植祭
+10月日曜日：抜穂祭
+12月14日：赤穂義士祭
+
+
+== 前後の札所 ==
+神仏霊場巡拝の道
+77 圓教寺 - 78 赤穂大石神社　-　79 一乗寺
+
+
+== 所在地 ==
+兵庫県赤穂市上仮屋旧城内
+
+
+== アクセス ==
+JR赤穂線 播州赤穂駅より徒歩約15分。
+
+
+== 脚注 ==
+
+
+=== 注釈 ===
+
+
+=== 出典 ===
+
+
+== 外部リンク ==
+
+赤穂大石神社
+赤穂市 赤穂大石神社

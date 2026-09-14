@@ -1,0 +1,17 @@
+<!-- ITEM: https://www.wikidata.org/wiki/Q11435394 -->
+<!-- JA: 大庭神社 | EN_LABEL: Ooba Shrine | BUCKET: a -->
+<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%BA%AD%E7%A5%9E%E7%A4%BE -->
+<!-- ANSWER: -->
+<!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
+  CANDIDATE A (from the English label): おおばじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): おほはのじんじゃ
+Read the LEAD and fill ANSWER with exactly one of:
+  KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
+  GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
+  KATAKANA: <katakana>    the lead gives only an ancient/katakana reading
+  NO_KANA: <reason>       no reading, and neither candidate can be chosen over the other
+Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), not a 旧称 (former name), and not the reading of the place it stands in. Drop interpuncts and spaces. Do NOT pick a candidate just because it looks more regular — shrine names take irregular local readings, which is exactly why these two disagree. A KATAKANA answer is recorded and NOT written to Wikidata.
+When ANSWER is filled this file is done. -->
+
+== LEAD ==
+大庭神社（おおばじんじゃ）とは、延長5年（927年）の『延喜式神名帳』に記載された相模国の延喜式内社十三社の内の一社（小社）であるが、二つの論社（比定社）が存在する。両社間は距離にして約1.5km（徒歩20分程）と比較的近い。本項ではこの両社について併記している。

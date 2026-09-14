@@ -1,0 +1,23 @@
+<!-- GROUP: fr|sanctuaire de Kamono | proposed-collides: sanctuaire shinto au Japon -->
+<!-- STAGE: EN-first (docs/description_enrichment_pipeline.md) -->
+<!-- ANSWERS:
+Q135039432: 
+Q135039440: 
+Q135039667: 
+Q135041197: 
+Q135041213: 
+Q135041214: 
+Q135041305: 
+Q135098878: 
+-->
+<!-- TASK: every member of this group shares the same label and would get the same standardized description — they need UNIQUE, informative ENGLISH descriptions. Using each member's context below (municipality, deities, and anything you can see on the item), write one short English description per member that (a) says what it is, (b) distinguishes it from every other member, and (c) stays in the normal Wikidata description register (no final period; capitalize only a proper noun, which for these means the leading 'Shinto' — measured 2026-08-05, the corpus is 11,487 'Shinto …' to 1 'shinto …'), e.g. 'Shinto shrine in Maebashi, Gunma Prefecture, Japan'. Municipality-level location is usually the cheapest distinguisher; add the deity or a local place-name when members share a municipality. Fill each line of the ANSWERS block after its QID. Leave a line EMPTY if you cannot find anything distinguishing. Do NOT edit Wikidata yourself — a collector turns answers into QuickStatements later. -->
+
+== Members ==
+* [[d:Q135039432]] — en='Kamono Shrine' | ja='鴨神社' | in Ise Province / Inabe district
+* [[d:Q135039440]] — en='Kamono Shrine' | ja='賀毛神社' | in Ise Province / Inabe district
+* [[d:Q135039667]] — en='Kamono Shrine' | ja='加毛神社 二座' | in Izu Province / Kamo district
+* [[d:Q135041197]] — en='Kamono Shrine' | ja='鴨神社' | in Bizen Province / Akasaka district
+* [[d:Q135041213]] — en='Kamono Shrine' | ja='鴨神社' | in Bizen Province / Tsudaka district
+* [[d:Q135041214]] — en='Kamono Shrine' | ja='鴨神社' | in Bizen Province / Kojima district
+* [[d:Q135041305]] — en='Kamono Shrine' | ja='鴨神社 (東みよし町)' | in Awa Province / Mima district
+* [[d:Q135098878]] — en='Kamono Shrine' | ja='鴨神社' | in Kawachi Province / Takayasu
