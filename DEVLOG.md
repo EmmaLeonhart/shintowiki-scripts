@@ -4,6 +4,33 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — Three of the eight short-read gaps close safely; five cannot
+
+Of the 8 WDQS callers whose retry loop catches only `ReadTimeout`/`ConnectionError`,
+**three parse `r.json()` INSIDE the try** — `generate_identical_name_en_labels`,
+`generate_shrines_missing_en_label`, `generate_cjk_ja_backfill`. For those, adding a
+`ValueError` clause is purely additive: no previously-succeeding path changes, and a
+previously-fatal one retries. Done, with faked-transport tests that drive the real
+fetcher rather than reading its source for an `except`.
+
+Each fetcher takes different arguments — a query, a list of labels, nothing at all —
+so the test spells the call per module instead of assuming a shape. Worth the extra
+few lines: the first version assumed `fetch_sparql(query)` everywhere and two of the
+three did not have it.
+
+**The other five parse the body AFTER the try**, so widening a clause does nothing for
+them; they need code moved, in generators verifiable only by running a forty-minute
+sweep. They are named in a test that asserts they are still uncovered — a fact in the
+suite rather than a memory — and it goes red if one of them is fixed, which is when
+the list should shrink.
+
+One thing the faked transport caught that source-reading would not: the retry fires
+and then the second, good response goes through each module's own row handling, so a
+placeholder payload crashed `fetch_rows` on a missing `item` key. The retry was
+working; my fake was wrong. A test that had only asserted "no exception" would have
+called that a failure of the code.
+
+
 ## 2026-09-14 — The drip ran clean, and its one "failure" was not one
 
 First full drip since today's changes, and it is healthy: **501 attempted, 481

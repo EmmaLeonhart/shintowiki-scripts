@@ -34,6 +34,10 @@ from `ATOMIC_FILES`; they are not queue items.
   hours earlier, because its clause is `except transient as e:` with the tuple in a variable. Any
   regex over except-clauses will miscount; the real question is per-file and needs reading.
 
+  Three of the 8 are DONE (2026-09-14): `generate_identical_name_en_labels`,
+  `generate_shrines_missing_en_label` and `generate_cjk_ja_backfill` parse inside the try, so adding
+  a `ValueError` clause was purely additive and is covered by faked-transport tests.
+
   What is solid: **~41 have no retry loop at all**, ~8 have one that catches only
   `requests.exceptions.ReadTimeout`/`ConnectionError` (`generate_cjk_ja_backfill`,
   `generate_derived_name_in_kana`, `generate_identical_name_en_labels`, `generate_kana_qualifier_add`

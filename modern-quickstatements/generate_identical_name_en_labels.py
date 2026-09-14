@@ -110,6 +110,18 @@ def fetch_batch(ja_labels, retries=3, instance_triples=SHRINE_TRIPLES):
                 return None
             r.raise_for_status()
             return r.json()["results"]["bindings"]
+        except ValueError as e:
+            # A TRUNCATED BODY. WDQS answers 200 and then cuts the response short
+            # mid-row; `r.json()` then raises requests' JSONDecodeError, which is a
+            # ValueError and was caught by nothing here. On 2026-09-13 that ended a
+            # forty-minute sweep at its last language with nothing written, because
+            # these generators write their .txt only at the end. Purely additive:
+            # no previously-succeeding path changes, a previously-fatal one retries.
+            print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
+            if attempt < retries:
+                time.sleep(10 * attempt)
+            else:
+                return None
         except requests.exceptions.ReadTimeout:
             print(f"SPARQL timeout (attempt {attempt}/{retries})")
             if attempt < retries:
