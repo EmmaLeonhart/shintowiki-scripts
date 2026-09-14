@@ -4,6 +4,43 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — Same bug, second file: the daily katakana burn-down was discarded too
+
+Asked the same question of every CI output — *does it actually reach the repo?* — and
+found one more.
+
+`report_stuck_katakana_readings.py` runs **daily** and writes
+`docs/stuck_katakana_readings.md`. Nothing in `generate-quickstatements.yml` staged
+it, so the generated-files step's `git checkout -- .` reverted it every run. Last real
+commit to that file: **2026-09-11, by hand.**
+
+⭐ Unlike `model_adoption.json` this one is TRACKED, so the discard has been visible in
+plain sight the whole time — `M docs/stuck_katakana_readings.md` appears in the
+"Unstaged changes after reset" list of every run, including the one I read line by
+line yesterday while chasing a different fault. A modified-then-reverted tracked file
+looks exactly like a file nothing touched.
+
+And it is a **burn-down**. I rewrote its header yesterday to say *"the numbers should
+fall on their own; a category that stops shrinking is the thing to look at"* — advice
+that is unreadable when the regenerated file never lands. The report has been frozen
+at its 09-11 hand-commit while the population underneath it drained.
+
+`wiki-cleanup.yml` names `docs/category_translation_residual.md` explicitly in its
+`git add` for exactly this reason, so the pattern was already understood in the repo;
+this workflow simply never applied it.
+
+### What the sweep did NOT find, so the next session does not redo it
+
+* Only **one** output path is passed to a CI step by flag (`--json`), and that was
+  yesterday's `model_adoption.json`.
+* `docs/category_translation_residual.md` is committed by `github-actions[bot]`
+  (2026-09-01) — handled.
+* `docs/page_churn_diagnostic.md` is written by `diagnose_page_churn.py`, which **no
+  workflow runs**. A hand-run diagnostic, correctly last touched 2026-05-27.
+
+So two discarded outputs, both now staged, and no third.
+
+
 ## 2026-09-14 — The Sunday conformance audit has been computing and discarding its answer
 
 Went looking for other frozen conformity figures — the method that produced

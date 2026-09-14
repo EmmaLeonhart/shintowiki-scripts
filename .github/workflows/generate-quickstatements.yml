@@ -572,6 +572,20 @@ jobs:
           # gives the conformity TREND for free, which is what the hand-made snapshot
           # was created to provide.
           git add docs/model_adoption.json 2>/dev/null || true
+          # ⛔ SAME BUG, SECOND FILE. `report_stuck_katakana_readings.py` runs DAILY
+          # (step "Report stuck katakana readings") and writes
+          # docs/stuck_katakana_readings.md. That file IS tracked, so the discard was
+          # visible all along as `M docs/stuck_katakana_readings.md` in the
+          # "Unstaged changes after reset" list of every run — CI regenerated it and
+          # the generated-files step's `git checkout -- .` put it straight back.
+          # Last real commit to it: 2026-09-11, by hand.
+          #
+          # It is a BURN-DOWN. Its own header says "the numbers should fall on their
+          # own; a category that stops shrinking is the thing to look at" — which is
+          # unreadable if the regenerated file never lands. wiki-cleanup.yml already
+          # names docs/category_translation_residual.md explicitly for this reason,
+          # so the pattern was understood; this workflow just never applied it.
+          git add docs/stuck_katakana_readings.md 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No collected answers or queue changes to commit."
           else
