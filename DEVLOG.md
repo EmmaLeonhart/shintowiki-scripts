@@ -4,6 +4,36 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — Swept all 46 workflows for the same ten-week silence; there are no others
+
+Having found one workflow red every Monday since July, the obvious question is how
+many more. Asked the API for every workflow's most recent run. **No workflow is
+quietly failing.** That is the result.
+
+⚠ **The sweep LOOKS alarming and is not, for a reason worth writing down.** Eleven of
+46 came back as never-run, failed or cancelled:
+
+* **Nine are `workflow_call` reusables** — `Random Wait`, `Template Orchestrator`,
+  `Mainspace Orchestrator`, `Render Duplicate QIDs`, `Build Run History`,
+  `fandom-cleanup-loop` and the rest. A reusable workflow has **no runs of its own**;
+  it executes as a job inside `cleanup-loop`, which went green this morning. This is
+  the same illusion that had me believing `generate-quickstatements.yml` had not run
+  since 2026-08-25 — it runs daily, as a job. Second time in two days, so: **a
+  never-run workflow is almost always a callee.** Check its `on:` before reading
+  anything into it.
+* **Three are dated one-shots that are not due yet** —
+  `sunset-jp-char-count-cats` is coordinated with `SUNSET_DATE = 2027-09-01` in
+  `untranslated_japanese.py`, `sunset-templates-not-transcluded-in-mainspace-cat` says
+  *"run on/after 2027-07-01"*, and `tag-templates-not-transcluded-anywhere` is a manual
+  sweep to run until its source category empties. Never-dispatched is their correct
+  state for another year.
+* **`pages-build-deployment` failed 2026-03-24** — GitHub's built-in Pages workflow,
+  superseded by this repo's own `generate-pages`, whose deploy succeeded today.
+
+So the crossref workflow was the only one, and what made it findable was that its
+input had been deleted rather than that it was red.
+
+
 ## 2026-09-14 — A workflow had been failing every Monday for ten weeks
 
 `recreate-deleted-crossref.yml` went red, and I nearly filed it as "one run, cannot
