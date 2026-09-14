@@ -4,6 +4,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — The two "self-healing" repair sweeps are healing; and P612 is not ours
+
+"It self-heals on re-draw, and that is by design" is the kind of claim that has been
+wrong twice this session, so I measured both repair sweeps against live Wikidata.
+
+**They are exact.**
+
+| sweep | live bare statements | lines in the file |
+|---|---:|---:|
+| `bunrei_qualifier_repair.txt` — P612 with no `P1013` | **125** | **125** |
+| `reisai_qualifier_repair.txt` — P837 with no `P3831` | **3** | **3** |
+
+Not approximately: exactly. Each file is a live mirror of the outstanding population,
+regenerated every build, not a stale snapshot. `bunrei` was 129 on 09-12 and is 125
+now — four drained in two days, which is what random sampling of a ~116,000-line pool
+looks like.
+
+⛔ **AND A TRAP I WALKED INTO FIRST, worth the entry on its own.** My first query asked
+for every `P612` statement with no `P1013` qualifier and got **964**, against the 122
+recorded on 09-12. That reads as an eight-fold explosion. It is not: **P612 is a
+general Wikidata property and 839 of those statements are on non-shrine items** —
+other people's data, where a bunrei qualifier would be meaningless. The generator
+scopes to `?shrine wdt:P31 wd:Q845945`, and with that scope the number is 125.
+
+So: **an unscoped question about P612 is not a question about this repo.** Same shape
+as the P13677 duplicate scare CLAUDE.md records — a property this project uses for one
+narrow purpose is not a property this project owns. I nearly published "964 vs 122"
+before checking what the generator actually asks for, which would have been the fourth
+bad number in two days.
+
+
 ## 2026-09-14 — `description_enrichment_en`'s fate, closed by measuring instead of asking
 
 The last of three decisions this session inherited as "recorded for Emma, deliberately
