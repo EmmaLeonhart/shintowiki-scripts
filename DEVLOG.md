@@ -4,6 +4,42 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — README: a freeze date CLAUDE.md forbids, and a retired API described as current
+
+Checked README.md against the code rather than reading it. Four claims were false, and
+one of them is a rule violation rather than staleness.
+
+**"Chunk 3: Wikidata (paused until May 2026) … via a date check in the workflow."**
+There is no date check in `wiki-cleanup.yml`, and May 2026 is four months gone. Those
+steps edit *shintowiki* and are gated on `steps.lockout.outputs.locked`; Wikidata
+writes are gated separately by `wikidata_editing_lockout.state`. ⛔ CLAUDE.md forbids
+copying that state file's date anywhere — the rule exists because a duplicated freeze
+date is one a reader can act on after it expires, and the heading itself had been
+carrying a stale duplicate for four months. Replaced with a pointer to the state file
+and the reason.
+
+**"Generates and submits Wikidata property edits via the QuickStatements API."** The QS
+API was retired 2026-07-04. `submit_daily_batch.py` makes no network calls — its own
+docstring says the secrets are unused — and exits non-zero so `direct-daily-edits.yml`
+fires. So `direct_daily_edits.py` is **the** write path, not the "fallback" the table
+called it, which is the script CLAUDE.md's "ONE path only" rule is about.
+
+**Five atomic files listed; there are 83.** Not re-listed — a hand-copied snapshot of a
+generated set goes stale silently, which is exactly what happened to the five. The
+README now points at `ATOMIC_FILES`.
+
+**Four named scripts do not exist.** `test_wikidata_qualifier.py`, and
+`reimport_from_enwiki.py` / `migrate_talk_pages.py` / `normalize_category_pages.py`,
+all deleted 2026-07-05. Their rows are gone and a note gives each one's recorded
+reason, taken from the comments beside the commented-out steps in `wiki-cleanup.yml`
+rather than guessed.
+
+The check that found them is worth keeping in mind: extract every `` `name.py` `` the
+README mentions and assert the file exists. Four of 41 did not. It reports the four
+again now, because the notes name them to explain their removal — the same
+quotes-its-own-explanation false positive that three tests hit yesterday.
+
+
 ## 2026-09-14 — The backoff I had just "fixed" still never reached its third step
 
 An hour after changing `wdqs_transport` from 30/60/90 to the repo's 15/45/135, the

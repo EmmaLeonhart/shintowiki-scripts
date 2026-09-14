@@ -94,7 +94,6 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 ### Chunk 1: Import & Categorization
 | Script | Purpose |
 |--------|---------|
-| `reimport_from_enwiki.py` | Reimports pages from enwiki XML to fix broken template transclusions (10/run) |
 | `overwrite_deleted_enwiki_pages.py` | Overwrites local pages whose enwiki source was deleted |
 | `create_wanted_categories.py` | Creates stub pages for Special:WantedCategories |
 | `categorize_uncategorized_categories.py` | Tags uncategorized categories under EmmaBot umbrella |
@@ -112,16 +111,27 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 | `fix_double_redirects.py` | Fixes Special:DoubleRedirects |
 | `resolve_double_category_qids.py` | Simplifies QID disambiguation pages where all targets resolve to the same category |
 
-### Chunk 3: Wikidata (paused until May 2026)
+### Chunk 3: Wikidata-related wiki edits
 
-> **Note:** All Wikidata steps are paused until May 2026 via a date check in the workflow. When active, they run at 50 edits/run (separate from the global `WIKI_EDIT_LIMIT` of 100).
+> ⛔ **There is no date check here, and no date belongs here.** This section said
+> *"paused until May 2026 via a date check in the workflow"* until 2026-09-14, four
+> months after that date and long after the mechanism changed. These steps edit
+> **shintowiki**, so they are gated on the wiki lockout
+> (`steps.lockout.outputs.locked`); Wikidata writes are gated separately by
+> `shinto_miraheze/wikidata_editing_lockout.state`. Ask the state file — CLAUDE.md
+> forbids copying its date anywhere, precisely because a duplicated freeze date is one
+> a reader can act on after it has expired. Each step runs at `--max-edits 50`,
+> separate from the global `WIKI_EDIT_LIMIT`.
 
 | Script | Purpose |
 |--------|---------|
 | `generate_p11250_quickstatements.py` | Generates P11250 QuickStatements for items missing the property |
 | `clean_p11250_quickstatements.py` | Removes applied QuickStatements lines |
-| `tag_pages_without_wikidata.py` | Tags pages lacking `{{wikidata link}}` |
 | `clean_wikidata_cat_redirects.py` | Removes wikidata category tags from redirect pages |
+
+`tag_pages_without_wikidata.py` was in this list and is not a step any more — the
+`mainspace_orchestrator` owns that work, and the workflow step is commented out with
+that note beside it. The script is still on disk.
 
 ### Chunk 4: Final Core
 | Script | Purpose |
@@ -131,11 +141,18 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 | `tag_untranslated_japanese.py` | Detects and categorizes pages with untranslated Japanese text |
 | `tag_untranslated_japanese.py --category` | Re-buckets 300+ untranslated pages with extended thresholds (TEMPORARY) |
 
+> **Three scripts this section used to list were deleted on 2026-07-05 and their steps
+> are gone, each for a recorded reason** — `reimport_from_enwiki.py` (0 imports across
+> three runs; its input queue drained), `migrate_talk_pages.py` (removed 2026-04-22, the
+> talk-page rebuild was predicated on a wiki direction no longer being pursued), and
+> `normalize_category_pages.py` (ported to the `normalize_category_page` orchestrator op,
+> so it runs on every sweep instead of Sundays only). The reasons live beside the
+> commented-out steps in `wiki-cleanup.yml`.
+
 ### Cleanup Loop
 | Script | Purpose |
 |--------|---------|
 | `delete_unused_categories.py` | Deletes Special:UnusedCategories (skips `{{Possibly empty category}}`) |
-| `migrate_talk_pages.py` | Rebuilds talk pages with discussion content from Wikipedia |
 | `delete_orphaned_talk_pages.py` | Deletes talk pages with no subject page |
 | `delete_broken_redirects.py` | Deletes Special:BrokenRedirects |
 | `remove_crud_categories.py` | Strips crud category tags from pages |
@@ -148,7 +165,6 @@ The main cleanup job runs all `shinto_miraheze/` scripts in order, grouped into 
 ### Deprecated (Sunday + monthly)
 | Script | Schedule | Purpose |
 |--------|----------|---------|
-| `normalize_category_pages.py` | Sunday | Enforces canonical category page layout |
 | `tag_shikinaisha_talk_pages.py` | Sunday | Adds "generated from Wikidata" notice to shikinaisha talk pages |
 | `fix_erroneous_qid_category_links.py` | 1st of month | Fixes category/QID mismatches |
 | `remove_legacy_cat_templates.py` | 1st of month | Removes legacy template artifacts from categories |
@@ -171,26 +187,38 @@ Full per-page revision history offloaded by the `history_offload` op lives in a 
 
 ## QuickStatements pipeline (modern-quickstatements/)
 
-Generates and submits Wikidata property edits via the [QuickStatements API](https://quickstatements.toolforge.org/):
+⚠ **The QuickStatements API is retired (2026-07-04) and nothing here calls it.** This
+section described it as the mechanism until 2026-09-14. `submit_daily_batch.py` makes
+no network calls at all — its own docstring says *"the QS_TOKEN/QS_USERNAME secrets are
+no longer used"* — and it exits non-zero so `direct-daily-edits.yml` fires.
+`direct_daily_edits.py` is therefore **the only path to Wikidata**, not a fallback, and
+CLAUDE.md's "ONE path only" rule is about that script.
+
+Dozens of `generate_*.py` scripts each emit QuickStatements lines into an atomic `.txt`
+file; the drip samples across all of them and executes ~500 lines a day through the
+Wikidata API at a randomised ~35-40s spacing. A representative few:
 
 | Script | What it does |
 |--------|--------------|
-| `generate_p958_qualifiers.py` | Generates P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) |
-| `generate_modern_shrine_ranking_qualifiers.py` | Generates P459 (determination method) qualifiers for P13723 (shrine ranking) |
-| `submit_daily_batch.py` | Submits atomic QS operations; writes JSON reports to `reports/` |
-| `test_wikidata_qualifier.py` | Applies P459 qualifiers to P13723 via Wikidata API directly (bypasses QuickStatements) |
-| `direct_daily_edits.py` | Fallback: applies edits via Wikidata API directly when QuickStatements API fails |
-| `fetch_p11250_from_wiki.py` | Fetches P11250 QuickStatements lines from shintowiki and writes to `p11250_miraheze_links.txt` |
-| `generate_run_history.py` | Builds `_site/runs.html` from all report JSONs |
+| `generate_p958_qualifiers.py` | P958 (section) qualifiers for P13677 (Kokugakuin Museum entry ID) |
+| `generate_modern_shrine_ranking_qualifiers.py` | P459 (determination method) qualifiers for P13723 (shrine ranking) |
+| `submit_daily_batch.py` | Inert since the QS API was retired; writes a JSON report to `reports/` and exits 1 |
+| `direct_daily_edits.py` | **The** write path: executes ~500 sampled lines a day via the Wikidata API |
+| `fetch_p11250_from_wiki.py` | Fetches P11250 lines from shintowiki into `p11250_miraheze_links.txt` |
+| `generate_run_history.py` | Builds `_site/runs.html` from every JSON in `reports/` |
+| `wdqs_transport.py` | Shared throttled/retrying WDQS transport (2.5s floor, 429 bails, 15/45/135 backoff) |
 
-Atomic files submitted daily:
-- `modern_shrine_ranking_qualifiers.txt` — P459 qualifiers on P13723
-- `p4656_jawiki_references.txt` — P4656 ja.wiki references on P13723
-- `p958_qualifiers.txt` — P958 section qualifiers on P13677
-- `remove_shikinai_hiteisha.txt` — Remove P31=Q135026601 (Shikinai Hiteisha)
-- `p11250_miraheze_links.txt` — P11250 (ShintoDB article ID) links fetched from shintowiki
+**The list of atomic files is `ATOMIC_FILES` in `direct_daily_edits.py` — 83 of them as
+of 2026-09-14, not the five this section used to name.** It is not reproduced here
+because a hand-copied list of a generated set goes stale silently; that is what
+happened to the five.
 
-The submission job exits non-zero when all batches fail, which triggers the `direct-daily-edits.yml` fallback. The workflow step has `continue-on-error: true` so the overall pipeline continues regardless. All outcomes (submitted/partial/skipped/failed) are logged to JSON reports. The run history page at `runs.html` tracks all outcomes over time.
+`test_wikidata_qualifier.py` was in the table above and no longer exists.
+
+All outcomes (submitted/partial/skipped/failed) are logged to JSON reports, and
+`runs.html` tracks them over time. ⛔ Those reports are NOT covered by the
+"reports expire after a week" rule — `generate_run_history.py` globs every file in
+`reports/` to build the page, so they are its data. See CLAUDE.md.
 
 ---
 
