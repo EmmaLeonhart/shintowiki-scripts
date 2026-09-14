@@ -1,0 +1,74 @@
+"""The Sunday conformance audit's output must actually reach the repo.
+
+`generate-quickstatements.yml` runs `audit_model_adoption.py --json
+../docs/model_adoption.json` every Sunday. Checked 2026-09-14: **that path had never
+once been committed** — zero commits to it in the repo's history — and it is not
+gitignored. Nothing staged `docs/`: the generated-files step only ever looks inside
+`modern-quickstatements`, and the cloud-queue step listed the five work-file
+directories. So every Sunday the runner computed the whole model-adoption picture and
+threw it away.
+
+It is the answer to Emma's *"how much model conformity does wikidata have with our
+ontology? Because we can measure this now right?"* — and the only adoption data in the
+repo was a 2026-07-28 file plus a hand-made 2026-09-12 snapshot someone took because
+there was no series to read.
+
+⚠ It is staged in the **cloud-queue** step, not the generated-files one. That step has
+no reset/checkout/clean/rebase/restore dance; the other does, scoped to
+`modern-quickstatements`, and its `git checkout -- .` would destroy an unstaged
+`docs/` file before it was ever added.
+"""
+
+import os
+import re
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+WORKFLOW = os.path.join(ROOT, ".github", "workflows", "generate-quickstatements.yml")
+
+
+def _text():
+    with open(WORKFLOW, encoding="utf-8") as fh:
+        return fh.read()
+
+
+def _code_lines():
+    """Command lines only — the comment above the fix names the path in prose."""
+    return [l for l in _text().splitlines() if not l.lstrip().startswith("#")]
+
+
+def test_the_audit_output_is_staged():
+    staged = [l for l in _code_lines() if "git add docs/model_adoption.json" in l]
+    assert staged, (
+        "nothing stages docs/model_adoption.json, so the Sunday audit writes it on "
+        "the runner and it is discarded — as it was for every Sunday until 2026-09-14")
+
+
+def test_it_is_staged_in_the_step_without_the_reset_dance():
+    """The generated-files step resets, checks out and cleans before committing. An
+    unstaged docs/ file does not survive that."""
+    # Command lines only. The comment above the `git add` explains the danger by
+    # naming `git checkout -- .`, and matching that instead of the command is a
+    # mistake three separate tests in this repo made in two days.
+    code = "\n".join(_code_lines())
+    add_at = code.index("git add docs/model_adoption.json")
+    dance_at = code.index("git checkout -- .")
+    assert add_at < dance_at, (
+        "docs/model_adoption.json is staged after the reset/checkout dance; "
+        "`git checkout -- .` will have discarded it")
+
+
+def test_the_audit_still_writes_where_the_commit_step_looks():
+    """The producer and the consumer of this path must agree. The audit runs with
+    working-directory: modern-quickstatements, so `../docs/` is `docs/`."""
+    text = _text()
+    assert "audit_model_adoption.py --json ../docs/model_adoption.json" in text, (
+        "the audit's output path moved; the git add below it now stages nothing")
+
+
+def test_the_path_is_not_gitignored():
+    """It never was — but a future ignore rule for docs/*.json would silently undo
+    this, and the failure would look exactly like the original bug."""
+    import subprocess
+    r = subprocess.run(["git", "check-ignore", "-q", "docs/model_adoption.json"],
+                       cwd=ROOT)
+    assert r.returncode != 0, "docs/model_adoption.json is gitignored; staging it is a no-op"

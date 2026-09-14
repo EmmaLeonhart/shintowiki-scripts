@@ -4,6 +4,49 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — The Sunday conformance audit has been computing and discarding its answer
+
+Went looking for other frozen conformity figures — the method that produced
+`generate_ronsha_role_qualifiers.py`. Found something better and something worse.
+
+⛔ **`docs/model_adoption.json` has NEVER ONCE been committed.** Zero commits to that
+path in the repo's history, and it is not gitignored.
+`generate-quickstatements.yml` runs `audit_model_adoption.py --json
+../docs/model_adoption.json` every Sunday, and nothing stages `docs/` — the
+generated-files step only ever looks inside `modern-quickstatements`, and the
+cloud-queue step listed five work-file directories. So every Sunday the runner
+computed the whole model-adoption picture and threw it away.
+
+That is the answer to Emma's *"how much model conformity does wikidata have with our
+ontology? Because we can measure this now right?"*, discarded weekly. The only
+adoption data in the repo was a **2026-07-28** file and a hand-made **2026-09-12**
+snapshot — which someone took precisely because there was no series to read.
+
+Now staged in the **cloud-queue** commit step, deliberately not the generated-files
+one: that step's `git checkout -- .` would destroy an unstaged `docs/` file before it
+was ever added, which is the same class of loss as the backup-list bug. One file
+overwritten each Sunday, so it is not an accumulating archive and does not fall foul
+of "reports expire after a week" — and git history then gives the conformity TREND for
+free.
+
+### ⚠ And I nearly reported a catastrophe
+
+Diffing the two committed snapshots, I got: `bunrei.shrine_items` −1594,
+`p14005.on_humans` −3075, `sango.on_temples` −784, `p825_shrines.stmts` −1456 —
+thousands of statements apparently vanishing from Wikidata.
+
+**My column labels were inverted.** `model_adoption.json` was last committed
+**2026-07-28**; the file named `model_adoption_2026-09-12.json` is the newer one. I
+had labelled the July file "now". Every one of those deltas is **growth**, July →
+September, and the model is being adopted strongly.
+
+The tell was there to read before I computed anything: `population.shrines` moved by
+35 while individual property counts supposedly moved by thousands. That is not what
+data loss looks like; it is what a reversed diff looks like. **Check which snapshot is
+newer before subtracting them** — a filename with a date in it is not automatically
+the older one.
+
+
 ## 2026-09-14 — The two "self-healing" repair sweeps are healing; and P612 is not ours
 
 "It self-heals on re-draw, and that is by design" is the kind of claim that has been

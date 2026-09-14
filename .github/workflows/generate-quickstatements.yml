@@ -552,10 +552,30 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add name_in_kana/ ronsha_ranking_review/ beppyo_p612/                   label_typo_review/ description_enrichment_en/ 2>/dev/null || true
+          # ⛔ docs/model_adoption.json HAD NEVER ONCE BEEN COMMITTED. The Sunday
+          # conformance audit writes it (step "Audit model adoption", ../docs/ from
+          # modern-quickstatements) and nothing staged `docs/` — the step below only
+          # ever looks inside modern-quickstatements — so every Sunday the runner
+          # computed the whole model-adoption picture and threw it away. Checked
+          # 2026-09-14: zero commits to that path in the repo's history, and it is
+          # not gitignored. It is the answer to Emma's *"how much model conformity
+          # does wikidata have with our ontology?"*, and the only adoption data in
+          # the repo was a 2026-07-28 file and a hand-made 09-12 snapshot.
+          #
+          # Staged HERE rather than in the generated-files step, deliberately: that
+          # one does a reset / checkout / clean / rebase / restore dance scoped to
+          # modern-quickstatements, and an unstaged docs/ file would be destroyed by
+          # its `git checkout -- .` before ever being added. This step has no dance.
+          #
+          # One file, overwritten each Sunday — not an accumulating archive, so it
+          # does not fall foul of "reports expire after a week"; git history then
+          # gives the conformity TREND for free, which is what the hand-made snapshot
+          # was created to provide.
+          git add docs/model_adoption.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No collected answers or queue changes to commit."
           else
-            git commit -m "chore(cloud-queue): collect answers + refill work queues [skip ci]"
+            git commit -m "chore(cloud-queue): collect answers + refill work queues + conformance audit [skip ci]"
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" 2>/dev/null || true
             git push origin "HEAD:${GITHUB_REF_NAME}" && echo "pushed." || echo "WARNING: push failed."
           fi
