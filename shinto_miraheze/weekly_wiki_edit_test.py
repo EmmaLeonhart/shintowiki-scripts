@@ -10,13 +10,21 @@ during most of which the wiki was reachable and nothing tried. Works → continu
 otherwise → don't, until tomorrow.
 
 This REPLACES the hourly login gate + the daily 8h-contrib lockout with a single
-weekly edit-test. It writes:
+daily edit-test. It writes:
   * shinto_miraheze/wiki_editing_lockout.state — locked/unlocked, consumed by
     wiki_edit_allowed.py (the guard every wiki-writing workflow calls);
   * the WIKI_GATE marker + status line in queue.md (GO on pass / WAIT on fail).
 
-On failure the lock runs 8 days (> the 7-day test cadence) so it never auto-expires
-before the next day's test — the test is the sole decider.
+On failure the lock runs LOCK_DAYS = 2 days — longer than the daily cadence, so it
+never auto-expires before the next day's test and the test stays the sole decider.
+(It was 8, for the 7-day cadence.)
+
+⚠ THE FILENAME STILL SAYS WEEKLY AND THAT IS DELIBERATE. Renaming this file and
+`weekly-wiki-edit-test.yml` would start a fresh workflow in GitHub's UI and lose the
+run history — and for this workflow the run history IS the measurement. The spacing of
+the scheduled runs (08-23, 08-30, 09-06 exactly 7 days apart, then 09-13 after the
+cron changed) is how the cadence gets checked at all. Every string a person or the
+wiki actually reads says "daily"; only the paths say weekly.
 
 Needs WIKI_USERNAME (bot-password format) + WIKI_PASSWORD in the env — runs in CI.
 
@@ -59,10 +67,11 @@ def try_edit():
         stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         page = site.pages[TEST_PAGE]
         page.save(
-            f"Weekly edit-test: EmmaBot editing works as of {stamp}.\n\n"
+            f"Daily edit-test: EmmaBot editing works as of {stamp}.\n\n"
             "This page is written daily by weekly_wiki_edit_test.py to confirm the "
-            "bot can edit; if the write fails, wiki editing is locked for the week.\n",
-            summary="weekly edit-test")
+            "bot can edit; if the write fails, wiki editing is locked until the next "
+            f"test ({LOCK_DAYS} days).\n",
+            summary="daily edit-test")
         return True, f"edit landed on [[{TEST_PAGE}]] at {stamp}"
     except Exception as e:
         return False, f"{type(e).__name__}: {e}{_diagnose()}"
@@ -114,12 +123,12 @@ def blackout_until():
     hammering a challenge looks more malicious than one that goes quiet, so the
     challenge never gets relaxed. The fix is a genuine stretch of silence: every
     Miraheze-touching job is now gated on the lockout (reads included), and this
-    probe holds off entirely until `blackout_until` passes. Without this the Sunday
-    test would break the silence every 7 days and the streak would never exceed 6.
+    probe holds off entirely until `blackout_until` passes. Without this the daily
+    test would break the silence every day and the streak would never exceed 0.
 
     Distinct from `locked_until`, which is a couple of days out and is what gates the
     other workflows; using that here would suppress the probe forever. `blackout_until`
-    is set once, by hand, and self-drains — once the date passes the normal weekly
+    is set once, by hand, and self-drains — once the date passes the normal daily
     cadence resumes on its own.
     """
     if not STATE.exists():
@@ -138,14 +147,14 @@ def blackout_until():
 
 def write_state(ok, detail, now):
     # Preserve an in-force blackout across a rewrite — losing it would silently
-    # restart the weekly probing that the blackout exists to stop.
+    # restart the daily probing that the blackout exists to stop.
     carried = {}
     bo = blackout_until()
     if bo and now.date() < bo:
         carried["blackout_until"] = bo.isoformat()
     if ok:
         st = {"locked": False, "locked_until": None,
-              "reason": f"weekly edit-test PASSED — {detail}",
+              "reason": f"daily edit-test PASSED — {detail}",
               "checked": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
     else:
         until = (now.date() + datetime.timedelta(days=LOCK_DAYS)).isoformat()
@@ -163,10 +172,10 @@ def write_marker(ok, now):
     state = "GO" if ok else "WAIT"
     text = re.sub(r"<!-- WIKI_GATE: (?:GO|WAIT) -->", f"<!-- WIKI_GATE: {state} -->", text, count=1)
     if ok:
-        status = (f"**Status: 🟢 GO** (weekly edit-test passed, {stamp})"
-                  " — wiki editing is live for the week; work-loop, start clearing the ❓ DECISIONS.")
+        status = (f"**Status: 🟢 GO** (daily edit-test passed, {stamp})"
+                  " — wiki editing is live; work-loop, start clearing the ❓ DECISIONS.")
     else:
-        status = (f"**Status: ⏸ WAITING** (weekly edit-test failed, {stamp})"
+        status = (f"**Status: ⏸ WAITING** (daily edit-test failed, {stamp})"
                   " — wiki editing is locked until tomorrow. The daily `weekly-wiki-edit-test.yml`"
                   " job re-tests a real edit and flips this to **`WIKI_GATE: GO`** when it lands.")
     text = re.sub(r"\*\*Status: (?:🟢 GO|⏸ WAITING)\*\*[^\n]*?(?=\n)", status, text, count=1)

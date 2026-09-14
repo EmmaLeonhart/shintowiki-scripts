@@ -4,6 +4,45 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — "Weekly" was still reaching the wiki, and the docstring still said 8 days
+
+The edit-test went daily on 2026-09-12, and the word "weekly" survived in places that
+matter. It was going **onto shintowiki** — the test page read *"Weekly edit-test:
+EmmaBot editing works as of …"* and every edit summary said `weekly edit-test` — and
+into the lockout state's `reason`, which is the field I quote in status reports.
+
+Two of them were not just stale wording but wrong facts:
+
+* the module docstring said *"On failure the lock runs 8 days (> the 7-day test
+  cadence)"*. `LOCK_DAYS` has been **2** since 09-12, against a daily cadence.
+* `blackout_until()`'s docstring said the Sunday test *"would break the silence every
+  7 days and the streak would never exceed 6"* — with a daily probe it is every day
+  and the streak never exceeds 0, which is a much stronger reason for the blackout.
+
+Fixed in the page text, the edit summary, both state `reason` strings, the GO/WAIT
+status lines, the CI step name and its commit message. Ran `--simulate pass` and
+`--simulate fail`; both paths work and the dry-run writes nothing.
+
+⚠ **The filenames still say weekly, deliberately.** Renaming `weekly_wiki_edit_test.py`
+and `weekly-wiki-edit-test.yml` would start a fresh workflow in GitHub's UI and lose
+the run history — and for this workflow **the run history IS the measurement.** It is
+what I used an hour ago to check the cadence actually changed: scheduled runs at 08-23,
+08-30, 09-06 exactly seven days apart, then 09-13 after the cron went daily. That note
+is now in the docstring so the next session neither believes the name nor renames it.
+
+### Two things measured rather than assumed while here
+
+**The cron is fine.** One scheduled run since the change (09-13) and it fired 4h22m
+after its nominal 09:27. Today's had not arrived at 10:20. GitHub's scheduled runs are
+best-effort and hours of delay are normal, so one late-but-present run and one pending
+is not evidence of a miss — it is one data point.
+
+**The suite's 4 skips became 0.** Not something disabled: `souken_p571_citations.txt`,
+`saijin_named_as.txt` and their siblings arrived from CI this morning, so four tests
+that had been skipping on "not generated in this checkout" now assert against real
+data. 2,212 passing, none skipped.
+
+
 ## 2026-09-14 — The cleanup-loop ran green and every change from the night landed
 
 `generate-quickstatements / generate` succeeded for the first time since 2026-09-12,

@@ -7,7 +7,7 @@ name: Daily wiki edit-test
 # Works -> continue; otherwise -> don't.
 #
 # Replaces wiki-editing-gate.yml (hourly login check) and wiki-editing-lockout.yml
-# (daily 8h-contrib check) with this single weekly test. The lock/marker it writes
+# (daily 8h-contrib check) with this single daily test. The lock/marker it writes
 # are enforced by wiki_edit_allowed.py, already wired into every wiki-writing job.
 
 on:
@@ -50,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: pip install mwclient
 
-      - name: Run the weekly edit-test (a failed test is a normal "locked" outcome, not a CI error)
+      - name: Run the daily edit-test (a failed test is a normal "locked" outcome, not a CI error)
         run: |
           python shinto_miraheze/weekly_wiki_edit_test.py --apply \
             || echo "edit-test failed — wiki editing locked for the week (expected while the 403 is up)"
@@ -63,7 +63,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "no change to lockout state / marker"
           else
-            git commit -m "chore: weekly wiki edit-test result [skip ci]"
+            git commit -m "chore: daily wiki edit-test result [skip ci]"
             for attempt in 1 2 3 4 5; do
               if git push origin "HEAD:$GITHUB_REF_NAME"; then break; fi
               git fetch origin "$GITHUB_REF_NAME" || true
