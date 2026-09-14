@@ -92,6 +92,19 @@ MAX_DELAY = 50
 # message that merely contains those digits.
 RATE_LIMIT_MSG = "429 Too Many Requests"
 
+# A removal whose target statement is not there. `sequential_should_advance` has
+# always treated this as the intended end state — the cursor moves past it — while
+# the run summary counted it as a failure, so 2026-09-13's run reported
+# "481 succeeded, 1 failed" for a batch in which nothing had gone wrong. That is the
+# same misleading signal as a step warning that blames WDQS without checking: it
+# trains the reader to skim the failure count, which is the one number that has to
+# stay believable. Counted and printed separately now.
+#
+# ⚠ It is NOT folded into "succeeded", because this message cannot distinguish
+# "already removed" from "the value never matched" — a formatting difference in the
+# staged line looks identical from here. Its own category says what is known.
+CLAIM_ABSENT_MSG = "Claim not found for removal"
+
 # MUST be a superset of submit_daily_batch.ATOMIC_FILES (drift-guard test
 # enforces it): with the QS path retired (2026-07-04), THIS list is the only
 # road to Wikidata — 7 files (both temple label files, kana/identical-name
@@ -292,7 +305,7 @@ def sequential_should_advance(success, msg):
     the out-of-order blanking Emma built this file to prevent."""
     if success:
         return True
-    return msg == "Claim not found for removal"
+    return msg == CLAIM_ABSENT_MSG
 
 
 def read_all_lines():
@@ -641,7 +654,7 @@ def execute_removal(session, csrf, parsed):
         )
     guid = find_claim(session, parsed["entity"], parsed["property"], parsed["value"])
     if not guid:
-        return False, "Claim not found for removal"
+        return False, CLAIM_ABSENT_MSG
     r = session.post(WD_API, data={
         "action": "wbremoveclaims", "claim": guid,
         "token": csrf, "bot": 1, "format": "json",
@@ -900,6 +913,7 @@ def main():
 
     succeeded = 0
     failed = 0
+    already_absent = 0
     skipped = 0
 
     rate_limited = False
@@ -953,6 +967,12 @@ def main():
                 if success:
                     print(f"  OK: {msg}")
                     succeeded += 1
+                elif msg == CLAIM_ABSENT_MSG:
+                    # Not a failure: the statement this line exists to delete is
+                    # already gone. Control flow is unchanged — the pair still
+                    # stops here — only the tally and the word are honest.
+                    print(f"  ABSENT: {msg}")
+                    already_absent += 1
                 else:
                     print(f"  FAIL: {msg}")
                     failed += 1
@@ -988,7 +1008,8 @@ def main():
             print(f"  Waiting {delay}s before next edit...", flush=True)
             time.sleep(delay)
 
-    print(f"\n=== Results: {succeeded} succeeded, {failed} failed ===")
+    print(f"\n=== Results: {succeeded} succeeded, {failed} failed, "
+          f"{already_absent} already absent ===")
 
     # Advance the sequential-misc cursor iff today's sequential line reached its end
     # state. Held otherwise (error / rate-limit / gate skip / never reached because a

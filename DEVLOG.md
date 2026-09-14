@@ -4,6 +4,40 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — The drip ran clean, and its one "failure" was not one
+
+First full drip since today's changes, and it is healthy: **501 attempted, 481
+succeeded, 19 skipped by the human-edit guard, 1 failed** over five hours at the
+deliberate ~35-40s spacing.
+
+The one failure:
+
+    [190/501] REMOVE: -Q135039251|P31|Q135160342
+      FAIL: Claim not found for removal
+
+The statement was already gone, which is the outcome that line exists to produce.
+**The code already knew** — `sequential_should_advance` has treated that exact
+message as the intended end state since it was written, and moves the cursor past it.
+Only the tally disagreed, so a batch in which nothing went wrong reported a failure.
+
+That is worth one line of change because the failure count is the number a reader has
+to be able to trust, and it is the same misleading signal as a step warning that
+blames WDQS without checking — three of which came off this repo the same day.
+`CLAIM_ABSENT_MSG` is now one constant shared by the producer, the cursor rule and
+the tally (it was a bare literal in two places, which is how they came to disagree),
+it prints `ABSENT:` rather than `FAIL:`, and it has its own counter.
+
+⚠ **Not folded into "succeeded."** The message cannot distinguish *already removed*
+from *the value never matched* — a formatting difference in a staged line looks
+identical from here — so it gets its own category rather than a guess. Control flow
+is untouched: the pair still stops there.
+
+One consequence checked rather than assumed: the outage detector fires on
+`succeeded == 0 and failed > 0`, and exists for an invalidated bot token failing
+every save. A run whose removals were all already done is not that, and now stays
+green instead of reddening. Pinned.
+
+
 ## 2026-09-14 — One staged file was going to re-create what another deletes, 1,734 items
 
 Nothing in this repo checked whether two atomic files stage the same statement both
