@@ -4,6 +4,27 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — Weekly [[Open questions]] sweep: nothing to metabolise
+
+`weekly-open-questions-sweep.yml` injected its bullet at the top of `queue.md`. Pulled
+the live page and read it in full: `== Open questions ==` says *"(nothing open)"*,
+`== Wiki-based queue ==` says *"(empty — add items here)"*, `== Notes ==` is Emma's
+untouched scratch space. Repo copy byte-identical to the wiki.
+
+So there is no item to decompose, no disposition to act on, and no bullet to prune.
+Block deleted, which is what finishes the sweep.
+
+Worth one line because an empty sweep is the normal outcome and should not read as a
+skipped one: the page has been empty since the katakana question was answered by
+`AskUserQuestion` on 09-13 and removed in the same commit that answered it.
+
+⚠ It has also not reached the wiki since 2026-08-25 — Cloudflare has blocked the sync
+from CI since 09-06, so the live page is the pre-katakana version and the repo copy
+happens to match it again only because the question was deleted after being answered.
+That is a coincidence of content, not a working sync, and the next thing written to
+the page from either side will diverge until the block lifts.
+
+
 ## 2026-09-14 — Swept all 46 workflows for the same ten-week silence; there are no others
 
 Having found one workflow red every Monday since July, the obvious question is how
