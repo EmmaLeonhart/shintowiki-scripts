@@ -4,6 +4,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — The cleanup-loop ran green and every change from the night landed
+
+`generate-quickstatements / generate` succeeded for the first time since 2026-09-12,
+and it is the first CI exercise of five changes that had only ever run on my machine.
+Read from the committed artifacts rather than predicted:
+
+| change | evidence |
+|---|---|
+| `git status --porcelain` backup list | **`souken_p571_citations.txt` and `saijin_named_as.txt` are in the repo** — the two files that could never enter it through this workflow |
+| the `+YYYY` parse fix | `souken_p571_citations.txt` is **920 lines**; it was 0 for its entire life |
+| honzon `P3831` relocation | `honzon_p825.txt` carries **64 qualifier lines**, and 0 forms as a value |
+| the paired removal | `misplaced_honzon_form_removals.txt` is **0 lines** — the add-first gate holding, exactly as designed |
+| the kana-add skip | **0 doomed names decorated**; collisions **2,564 → 737** |
+
+`saijin_named_as.txt` came in at 5,075 lines — a file the drip has never been able to
+sample because the commit step could not carry a brand-new one.
+
+Two details worth recording because they are predictions that came true rather than
+surprises. `kana_qualifier_add.txt` came back **2,259** where I committed 2,261: the
+generator reads the removals file regenerated earlier in the same job, which is two
+lines fresher than the one I read last night. I noted that shift was expected before
+it happened, so a diff would not be misread as a fault. And the collision count moved
+761 → 737 for the same reason.
+
+⛔ **The commit step's diffstat lists `_site/` first and `modern-quickstatements/`
+after it**, alphabetically. Reading the first thirty lines of it, I concluded the
+generated `.txt` files had not been committed at all. They had. Checking
+`--diff-filter=A` on the actual paths took ten seconds and said the opposite. Second
+time in a day I have drawn a conclusion from a truncated view of a log.
+
+
 ## 2026-09-14 — README: a freeze date CLAUDE.md forbids, and a retired API described as current
 
 Checked README.md against the code rather than reading it. Four claims were false, and
