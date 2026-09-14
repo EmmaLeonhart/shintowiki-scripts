@@ -4,6 +4,37 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-13 — I published the same measurement twice and it was wrong both times
+
+The WDQS-fragility figure. First **"65 of 72 cannot survive a truncated body"**, from
+grepping for `JSONDecodeError` or `except ValueError` literally — which missed every
+`except Exception` and every `except (ValueError, KeyError)`, and a JSON error **is** a
+`ValueError`, so a large part of that 65 was already covered. Then a second pass said
+**50**, and included `generate_description_fixes.py`, which I had fixed four hours
+earlier: its clause reads `except transient as e:` with the tuple in a variable, so the
+regex could not see it.
+
+Both numbers went into a commit message, a devlog entry and a status report before
+either was checked. The queue item now carries the taxonomy instead of a number, and
+says outright that a regex over except-clauses will miscount.
+
+What actually holds up, from reading rather than matching:
+
+* **~41 have no retry loop at all.**
+* **8 have one that catches only `ReadTimeout`/`ConnectionError`** — and in half of
+  those the `r.json()` sits OUTSIDE the try, so widening the clause would not even fix
+  it. Named individually in `queue.md`.
+* The rest are covered by a broad clause and were never at risk.
+
+⛔ **And I did not make the eight edits.** No two of the 40 unmigrated transports share
+a body — zero matches against the one already migrated — so each is its own judgement
+about throttle, bail policy and where the parse sits, and none can be verified without
+running that generator's forty-minute sweep. The failure they guard against costs one
+day of one file, because CI is `continue-on-error` and the next run repairs it. Editing
+eight working transports blind, at midnight, to prevent that is the wrong trade, and
+saying so is the work rather than an excuse for skipping it.
+
+
 ## 2026-09-13 — The place guard stops guessing: it asks Wikidata what the places are
 
 The frequency heuristic is gone. It inferred place names from the corpus — a

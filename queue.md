@@ -26,14 +26,27 @@ from `ATOMIC_FILES`; they are not queue items.
     host that challenges our runners against one that does not, which is not a comparison of the two
     wikis.
 
-- [ ] 62 of 72 WDQS callers still cannot survive a truncated response body. Each hand-rolls its
-  transport; one short read ends the run, and these generators write their `.txt` only at the end.
-  Surveyed 2026-09-13 after it happened. **Severity is low for CI and high for a hand-run**: every
-  generator is `continue-on-error` and the next day's run repairs the file, which is the pacing this
-  project wants — so this is a migration to do as files are touched, not a sweep. The shared
-  transport exists (`modern-quickstatements/wdqs_transport.py`) with the policy already pinned;
-  three callers use it. `generate_description_fixes.py` keeps its own on purpose — same policy,
-  and its sibling imports from it, so moving it is a separate change.
+- [ ] WDQS callers that cannot survive a truncated response body — **the count I published twice
+  was wrong both times**, so the taxonomy matters more than the number. First I said 65 of 72, from
+  grepping for `JSONDecodeError` or `except ValueError` literally; that missed every `except
+  Exception` and `except (ValueError, KeyError)`, which already catch it, because a JSON error IS a
+  ValueError. A second pass said 50 and counted `generate_description_fixes.py`, which I had fixed
+  hours earlier, because its clause is `except transient as e:` with the tuple in a variable. Any
+  regex over except-clauses will miscount; the real question is per-file and needs reading.
+
+  What is solid: **~41 have no retry loop at all**, ~8 have one that catches only
+  `requests.exceptions.ReadTimeout`/`ConnectionError` (`generate_cjk_ja_backfill`,
+  `generate_derived_name_in_kana`, `generate_identical_name_en_labels`, `generate_kana_qualifier_add`
+  and `_remove`, `generate_katakana_reading_add` and `_remove`, `generate_shrines_missing_en_label` —
+  and in half of those the `r.json()` sits OUTSIDE the try, so widening the clause is not enough),
+  and the rest are already covered by a broad clause.
+
+  ⛔ **Not a batch job.** No two of the 40 unmigrated transports share a body — checked, zero
+  matches against the one already migrated — so each is its own judgement about throttle, bail
+  policy and where the parse sits, and the only way to verify one is to run that generator's sweep.
+  Against that: the failure costs one day of one file, because CI is `continue-on-error` and the next
+  run repairs it. So this rides along with each file's next real change, and
+  `modern-quickstatements/wdqs_transport.py` is what it migrates to.
 
 - **Pinned tail (keep last)**
 
