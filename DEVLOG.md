@@ -4,6 +4,44 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-15 — The katakana burn-down is falling, and NOT for the reason it looks like
+
+Regenerated `docs/stuck_katakana_readings.md`, which had been frozen at its 09-11
+hand-commit while CI rebuilt and discarded it daily (staged as of yesterday, first CI
+proof due on the next cleanup-loop).
+
+**742 → 734.** Eight gone in three days. The obvious reading is that "move it, then
+delete" is landing. **It is not.**
+
+Checked every line of `kana_redundant_remove.txt` against live Wikidata:
+**0 of 93 have executed. All 93 top-level values are still there.** The remove half of
+that pair has not run once.
+
+So the eight left the report's SCOPE rather than being removed. The report counts
+top-level katakana on shrines *that carry an ojp-hani `P1448`* — and
+`ronsha_ojp_name_removals.txt` is deleting exactly those official names, 2,224 lines
+of them. An item whose P1448 goes drops out of this report with its top-level katakana
+untouched.
+
+⚠ **Which means the burn-down can fall without a single reading being moved**, and I
+was one sentence from reporting the opposite. The header I wrote on 09-13 says *"the
+numbers should fall on their own; a category that stops shrinking is the thing to look
+at"* — that is now only half right, and the shrinkage needs attributing before it is
+believed.
+
+### 0 of 93 is not a stall — the arithmetic says so
+
+The drip samples ~500 lines a day from **132,812** staged across 83 atomic files.
+`kana_redundant_remove.txt` is 93 of those, **0.070%**, so the expected yield is
+**0.35 hits a day — about 1 in the three days since 09-11.** Observing zero is
+unremarkable, and the file being small is exactly why.
+
+Recorded because "a whole file with zero executions" reads like a broken registration,
+and here it is the deliberate slowness working. The ADD half of the same pair is
+landing precisely because `kana_qualifier_add.txt` is 40× larger and gets sampled 40×
+as often.
+
+
 ## 2026-09-14 — Shrine P825 is 35% referenced against temples' 97%, and that is correct too
 
 The last conformity ratio worth chasing: `p825_shrines.referenced` 5,553 of 16,060,
