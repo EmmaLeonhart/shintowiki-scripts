@@ -393,6 +393,31 @@ Local full rebuild: `!regenerateQuickStatements.bat`.
   `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`.
 * **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
 
+## ⛔ THE STRANDED KATAKANA READINGS ARE NOT A PROBLEM TO SOLVE — stop raising it (Emma, 2026-09-15)
+
+Her words: *"if miraheze isn't working then shut the fuck up this problem is unsolvable."*
+
+**The question, so nobody re-derives it and asks again.** Of the 734 stuck top-level katakana
+`P1814` readings, **388 sit on shrines whose ojp-hani `P1448` name is queued for deletion** by
+`ronsha_ojp_name_removals.txt` — so "move it, then delete" (her 2026-09-13 ruling) has no
+destination for them. There is an apparent one: the Engishiki entry item the shrine points at with
+`P460`, and `generate_kana_qualifier_remove.py` has a RONSHA branch whose comment calls itself
+*"the mirror of the add generator's P460 branch"* — a branch that has never existed.
+
+**Do not build it. Do not ask about it again.** It was put to her with four options and the answer
+was to stop. The actionable population today is **23** candidates; the 388 is a projection.
+
+- **The 2026-09-13 ruling still stands for the readings it can reach** — the widened MOVE pass in
+  `generate_kana_qualifier_add.py` and the existing remove step. Nothing there is reverted.
+- **A comment describing a branch that does not exist is not a work item.** The remove side's
+  "mirror of the add generator's P460 branch" is the only thing that makes the hole look like a
+  defect, and it is one sentence in a docstring.
+- ⚠ **The deeper lesson is about the asking, not the kana.** This was the fourth question of a
+  session, raised at 2am, about 23 items, framed as blocking her own ruling — while the work she
+  actually cares about was blocked on Cloudflare. Marginal analysis dressed as a blocker costs her
+  attention she has said repeatedly is the scarce thing. When the real work is blocked, the answer
+  is not to mine the corner that still has queries left in it.
+
 ## ⛔ AN ENGLISH LABEL MEANS THE ITEM IS DONE — no kana reading (Emma, 2026-08-24)
 
 > *"Once something has an English label, it's graduated past the point that we care about its KANA
