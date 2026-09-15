@@ -1,3 +1,54 @@
+## 2026-09-15 — Court rank was the one property with no citation, and it was a ratchet
+
+`audit_model_adoption.py` put P14005 at **2,026 referenced of 5,180 statements (39%)**, against
+16,802/16,995 (98.9%) for P13723 and 6,172/6,379 (96.8%) for temple P825. It was the only property
+in the survey with a gap of that size, and Emma had just named citations as one of three things in
+scope.
+
+Two faults in `generate_court_rank_quickstatements.py`, each survivable alone:
+
+- The emitted line was a bare `QID|P14005|<rank>`. The rank was read from a named ja.wikipedia
+  article, so the source was in hand — and thrown away: the title was dropped when `person_ranks`
+  was built, leaving nothing for an S4656 URL to name.
+- The skip set was `existing_pairs()` — every pair holding the statement at all.
+
+Together they ratchet: each run added unreferenced statements and made them permanently unreachable,
+by this generator or anything else. Fixed to the `c121509e` shape — `referenced_pairs()` (gated on
+`prov:wasDerivedFrom`) is the skip set, the jawiki title rides through to the emit, and every line
+carries `S143=Q177837` + `S4656`, the same reference shape the saijin and honzon generators use. An
+existing bare statement is re-emitted with the reference; QuickStatements attaches it to the matching
+statement rather than duplicating.
+
+`tests/test_court_rank_is_referenced.py` pins both halves, including that the skip guard names
+`referenced` and that `referenced_pairs()` actually filters on a reference existing — a query that
+forgets `prov:wasDerivedFrom` returns every pair and silently restores the old behaviour while
+looking right.
+
+## 2026-09-15 — Both wikis are dead, so 54% of the cloud queue could not land
+
+Emma: *"almost all of the non-labelling grunge is shit that is just straight up 100% blocked by the
+wiki being dead. Both wikis are dead so forget about them."*
+
+Five of the ten `remote_queue.json` categories drain by pushing to a wiki — the worker edits the
+mirrored file, drops its gating category, and a sync pushes the page and deletes the local copy.
+Miraheze has been behind a Cloudflare managed challenge from the runners since 09-06 and Fandom is
+out, so an answered item was an edit that reached nothing, having spent one of the routine's five
+daily slots. 1,124 of 2,091 items were wiki-bound. Now 967, all bound for Wikidata via the
+collectors: name_in_kana 361, category_translation 328, description_enrichment_en 247,
+ronsha_ranking_review 30, beppyo_p612 1.
+
+Not a rate change — still 5 random items a day. The gated sections sit behind `WIKI_REACHABLE =
+False`, skipped rather than deleted, and a test asserts they are still in the source so a later
+cleanup pass cannot read the block as dead code.
+
+Also settled, investigating Emma's *"I don't think the cloud stuff is working at all"*: the drain
+routine has run **every day** since May (June 29/29, July 31/31, August 31/31, September 14/14) and
+`consume_remote_queue.state`, frozen at 2026-05-23, is an orphan its own prompt orders it to ignore.
+What genuinely never ran was the consuming half — the collectors were in no workflow until
+2026-09-12. And only two routines exist on this account, one a spent one-shot: routines do not
+survive the 2026-07-27 account move, and `docs/remote_queue_pipeline.md` records that recreating one
+through the API returns 200 while silently dropping the repo binding.
+
 ﻿# Devlog — shintowiki bot operations
 
 Running log of all significant bot operations and wiki changes. Most recent first.

@@ -15,10 +15,20 @@ Pipeline
 3. For each rank subcategory, recursively collect its ns=0 member pages (all
    descendants of a rank category still hold that rank), resolve each page to
    its Wikidata QID (ja.wp pageprops wikibase_item), and emit
-       QID|P14005|<rank-item-QID>
-4. Add-only / non-destructive: a person who ALREADY has P14005 = that rank is
-   skipped (existing person->rank pairs preloaded from WDQS). Nothing is ever
-   removed here — consistent with the repo's add-first, two-scripts rule.
+       QID|P14005|<rank-item-QID>|S143|Q177837|S4656|"<jawiki url>"
+   The reference is the ja.wikipedia article the rank was read from — the same
+   S143/S4656 shape the saijin and honzon generators use.
+4. Add-only / non-destructive: a person whose P14005 = that rank ALREADY CARRIES
+   A REFERENCE is skipped. An existing BARE statement is re-emitted with the
+   reference, which QuickStatements attaches to the matching statement rather
+   than duplicating it. Nothing is ever removed here — consistent with the
+   repo's add-first, two-scripts rule.
+
+   ⚠ The skip used to be "has the rank at all", and the emitted line carried no
+   reference. That combination left P14005 at **39% referenced — 2,026 of 5,180
+   statements — against 98.9% for P13723 and 96.8% for temple P825**
+   (`audit_model_adoption.py`, 2026-09-15): the generator produced unreferenced
+   statements and then refused to ever look at them again.
 
 Output (atomic): modern-quickstatements/court_rank_people.txt
 Like every generator here, this ONLY writes the .txt. Wikidata is edited solely
@@ -54,6 +64,7 @@ import re
 import sys
 import time
 import argparse
+import urllib.parse
 import requests
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
@@ -156,6 +167,36 @@ def existing_pairs():
     return out
 
 
+def referenced_pairs():
+    """(person, rank) pairs whose P14005 statement ALREADY carries a reference.
+
+    ⛔ THIS IS THE SKIP SET, not `existing_pairs()`. Skipping every pair that
+    merely exists is what left this property at **39% referenced (2,026 of
+    5,180) while P13723 sits at 98.9% and temple P825 at 96.8%** — measured by
+    `audit_model_adoption.py` on 2026-09-15. The generator emitted a bare
+    `QID|P14005|<rank>` with no reference, then refused to touch the statement
+    again, so an unreferenced court rank was unreachable for good.
+
+    Re-emitting the same statement WITH a reference does not duplicate it:
+    QuickStatements matches the existing (item, property, value) and attaches
+    the reference to it. That is the same enrichment shape as `c121509e`, which
+    fixed three generators that created statements but never enriched the ones
+    already there.
+    """
+    rows = _sparql("""
+      SELECT ?p ?r WHERE {
+        ?p p:P14005 ?st .
+        ?st ps:P14005 ?r .
+        ?st prov:wasDerivedFrom ?ref .
+      }
+    """)
+    out = set()
+    for b in rows:
+        out.add((b["p"]["value"].rsplit("/", 1)[1],
+                 b["r"]["value"].rsplit("/", 1)[1]))
+    return out
+
+
 def subcategories(cat):
     """Direct subcategory titles (ns=14) of a category on ja.wikipedia."""
     subs, cont = [], {}
@@ -229,9 +270,13 @@ def main():
     rank_map = rank_label_to_qid()
     print(f"  {len(rank_map)} court-rank items.", flush=True)
 
-    print("Existing person->rank pairs (skip re-adds)...", flush=True)
+    print("Existing person->rank pairs...", flush=True)
     have = existing_pairs()
     print(f"  {len(have)} existing P14005 statements.", flush=True)
+    print("Which of them already carry a reference (the real skip set)...", flush=True)
+    referenced = referenced_pairs()
+    print(f"  {len(referenced)} referenced; {len(have) - len(referenced)} bare "
+          f"and reachable for enrichment.", flush=True)
 
     print(f"Subcategories of {PARENT_CAT}...", flush=True)
     subs = subcategories(PARENT_CAT)
@@ -266,17 +311,32 @@ def main():
         qmap = titles_to_qids(titles)
         print(f"  {rank_name}: {len(titles)} pages, {len(qmap)} with QIDs", flush=True)
         for title, pq in qmap.items():
-            person_ranks.setdefault(pq, []).append((rank_qid, rank_name))
+            # Carry the ja.wikipedia TITLE through: it is the source the rank was
+            # read from, so it is what the S4656 reference URL has to name. It was
+            # dropped here before, which is why the emitted lines had no reference
+            # they could have cited.
+            person_ranks.setdefault(pq, []).append((rank_qid, rank_name, title))
 
     lines = []
+    new_stmts = enriched = 0
     for pq, ranks in person_ranks.items():
         chosen = ranks
         if args.highest_only:
             chosen = [min(ranks, key=lambda rr: strength(rr[1]))]
-        for rank_qid, rank_name in chosen:
-            if (pq, rank_qid) in have:
+        for rank_qid, rank_name, title in chosen:
+            # Skip only what is already REFERENCED. A pair in `have` but not in
+            # `referenced` is an existing bare statement, and re-emitting it with
+            # the reference is how it gets one — QuickStatements attaches the
+            # reference to the matching statement rather than duplicating it.
+            if (pq, rank_qid) in referenced:
                 continue
-            lines.append(f"{pq}|P14005|{rank_qid}")
+            if (pq, rank_qid) in have:
+                enriched += 1
+            else:
+                new_stmts += 1
+            url = ("https://ja.wikipedia.org/wiki/"
+                   + urllib.parse.quote(title.replace(" ", "_")))
+            lines.append(f'{pq}|P14005|{rank_qid}|S143|Q177837|S4656|"{url}"')
 
     # de-dup lines while preserving order
     seen, uniq = set(), []
@@ -286,7 +346,9 @@ def main():
     if args.max:
         uniq = uniq[: args.max]
 
-    print(f"{len(person_ranks)} people -> {len(uniq)} new P14005 statements.", flush=True)
+    print(f"{len(person_ranks)} people -> {len(uniq)} P14005 lines "
+          f"({new_stmts} new statements, {enriched} references onto statements "
+          f"that already exist).", flush=True)
     if args.dry_run:
         for ln in uniq[:20]:
             print("   ", ln)
