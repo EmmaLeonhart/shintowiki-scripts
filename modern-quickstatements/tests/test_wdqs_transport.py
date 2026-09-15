@@ -165,3 +165,52 @@ def test_the_backoff_is_the_repo_pattern_not_the_one_it_was_lifted_from():
     assert mod.RETRIES == 4, (
         "four attempts is what makes the backoff 15/45/135; generate_genbu_ids.py, "
         "the file CLAUDE.md points at as the floor, uses range(4)")
+
+
+def test_a_deterministic_client_error_is_not_retried():
+    """⛔ Observed 2026-09-15: a query with a 2,095-entry VALUES clause came back
+    414 URI Too Long — this transport sends the query in the URL of a GET — and the
+    loop backed off 15s, 45s and 135s before failing. Three minutes to re-learn a
+    deterministic fact.
+
+    The reasoning that makes 429 bail applies: the server has answered, and the
+    answer does not change because we ask again. Only 5xx and transport failures are
+    worth a second attempt.
+    """
+    mod = _mod()
+    for code in (400, 403, 404, 414, 431):
+        calls = {"n": 0}
+
+        def fake(req, timeout=None, _c=code):
+            calls["n"] += 1
+            raise mod.urllib.error.HTTPError(req.full_url, _c, "no", {}, None)
+
+        mod.urllib.request.urlopen = fake
+        mod.time.sleep = lambda *_: None
+        mod.WDQS_THROTTLE = 0
+        try:
+            mod.query("SELECT * WHERE {}")
+        except mod.urllib.error.HTTPError:
+            pass
+        else:
+            raise AssertionError(f"{code} should surface")
+        assert calls["n"] == 1, f"{code} was retried {calls['n']} times"
+
+
+def test_a_5xx_is_still_retried_after_that_change():
+    """The narrowing must not have swept up the errors that ARE worth retrying."""
+    mod = _mod()
+    calls = {"n": 0}
+
+    def fake(req, timeout=None):
+        calls["n"] += 1
+        raise mod.urllib.error.HTTPError(req.full_url, 503, "busy", {}, None)
+
+    mod.urllib.request.urlopen = fake
+    mod.time.sleep = lambda *_: None
+    mod.WDQS_THROTTLE = 0
+    try:
+        mod.query("SELECT * WHERE {}")
+    except mod.urllib.error.HTTPError:
+        pass
+    assert calls["n"] == mod.RETRIES, f"503 attempted {calls['n']} times"

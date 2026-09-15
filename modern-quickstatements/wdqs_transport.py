@@ -89,6 +89,21 @@ RETRIES = 4
 TRANSIENT = (json.JSONDecodeError, urllib.error.URLError, TimeoutError,
              ConnectionError, http.client.IncompleteRead)
 
+# ⛔ CLIENT ERRORS THAT CANNOT SUCCEED ON RETRY. Observed 2026-09-15: a query with a
+# 2,095-entry VALUES clause came back **414 URI Too Long** — this transport sends the
+# query in the URL of a GET — and the loop dutifully backed off 15s, 45s and 135s
+# before failing. Three minutes to re-learn a deterministic fact.
+#
+# The same reasoning that makes 429 bail applies here: the server has answered, and
+# the answer will not change because we ask again. Only 5xx and transport failures are
+# worth a second attempt.
+#
+# ⚠ 414 is also a real limitation of this module, not just a status to classify: it
+# is GET-only, so a long VALUES clause does not fit. No current caller sends one —
+# `report_stuck_katakana_readings.py` uses POST for exactly that reason. If a caller
+# ever needs one, add POST rather than chunking around it here.
+FATAL_STATUS = frozenset({400, 401, 403, 404, 405, 414, 431})
+
 _last_call = 0.0
 
 
@@ -115,6 +130,10 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT):
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 raise SystemExit("429 from WDQS — bailing.")
+            if e.code in FATAL_STATUS:
+                # Deterministic: retrying spends the whole backoff to fail identically.
+                print(f"  WDQS {e.code} — not retryable, giving up", flush=True)
+                raise
             if attempt == retries - 1:
                 raise
             wait = 15 * (3 ** attempt)

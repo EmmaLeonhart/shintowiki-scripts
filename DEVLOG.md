@@ -4,6 +4,50 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-15 — A 414 retried three times, and the branch the remove side waits for
+
+Chasing where the 734 stuck readings can actually go, I asked WDQS a question with a
+2,095-entry `VALUES` clause and got **414 URI Too Long** — `wdqs_transport` sends the
+query in the URL of a GET. The loop then backed off **15s, 45s and 135s** before
+failing: three minutes to re-learn a deterministic fact.
+
+The reasoning that makes 429 bail applies exactly: the server has answered, and the
+answer does not change because we ask again. `FATAL_STATUS = {400, 401, 403, 404, 405,
+414, 431}` now surfaces immediately; 5xx and transport failures still retry, pinned
+both ways. The 414 is also a real limitation of the module and is noted as one — it is
+GET-only, and `report_stuck_katakana_readings.py` uses POST for precisely this reason.
+
+Re-run in chunks of 300, the measurement stands: **388 of the 734 stuck statements
+(53%) sit on items whose ojp-hani name is queued for deletion** by
+`ronsha_ojp_name_removals.txt`. Their move destination is being removed.
+
+### ⭐ And the missing half of a pair that documents itself
+
+`generate_kana_qualifier_remove.py` has a RONSHA branch whose comment opens *"the
+mirror of the add generator's P460 branch"* — it removes a ronsha's top-level reading
+once the entry item it points at with `P460` carries that exact reading on its
+ojp-hani name.
+
+**The add generator has never had a P460 branch.** `git log -S"P460"` on that file
+returns nothing at all. So the remove side has been waiting for a producer that does
+not exist, and the 388 are not stranded by accident — they are stranded by a hole the
+codebase already describes.
+
+⚠ **Not built yet, and not because of scope.** Two things make it a decision rather
+than a mechanical fix, and both come from the remove side's own docstring:
+
+* it warns that *"three of the fifteen 論社 point at an entry carrying a DIFFERENT
+  entry's reading, because their own reading belongs to a 同社坐 sub-entry with no
+  item of its own"* — so a ronsha's top-level value is not reliably the reading of the
+  entry it points at;
+* the remove side trusts an exact `<top>カミノヤシロ` match as confirmation. An add
+  branch would **manufacture the very evidence the remove then trusts**, which is
+  circular in a way the current one-directional design is not.
+
+23 candidates today, ~388 as the name deletions land. Sized, and going to Emma rather
+than guessed at.
+
+
 ## 2026-09-15 — The katakana burn-down is falling, and NOT for the reason it looks like
 
 Regenerated `docs/stuck_katakana_readings.md`, which had been frozen at its 09-11
