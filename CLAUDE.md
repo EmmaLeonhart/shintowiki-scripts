@@ -412,11 +412,29 @@ was to stop. The actionable population today is **23** candidates; the 388 is a 
 - **A comment describing a branch that does not exist is not a work item.** The remove side's
   "mirror of the add generator's P460 branch" is the only thing that makes the hole look like a
   defect, and it is one sentence in a docstring.
-- ⚠ **The deeper lesson is about the asking, not the kana.** This was the fourth question of a
-  session, raised at 2am, about 23 items, framed as blocking her own ruling — while the work she
-  actually cares about was blocked on Cloudflare. Marginal analysis dressed as a blocker costs her
-  attention she has said repeatedly is the scarce thing. When the real work is blocked, the answer
-  is not to mine the corner that still has queries left in it.
+### ⛔ AND THE STRUCTURAL REASON, which is bigger than the kana
+
+Her follow-up, and the actual point: *"It can only realistically work with open questions which is
+dead."*
+
+**`[[Open questions]]` is the channel these judgement calls get made through, and it is dead.** The
+page has not reached the wiki since **2026-08-25**; Cloudflare has blocked the sync from CI since
+09-06. So a question of this shape — a data-model call needing her to weigh options against the
+ontology — has no working channel at all right now.
+
+- **`AskUserQuestion` is NOT a substitute for the page.** The page lets her answer in her own time,
+  in writing, beside the rest of the context. A modal question interrupts her to demand an answer
+  now. Using it as the overflow for everything the page would have carried is what made four
+  questions in one session feel like an assault rather than a conversation.
+- **So while the page cannot sync, do not generate this class of question.** Not on the page (she
+  will not see it), not by `AskUserQuestion` (that is not what it is for). Record the finding in
+  `DEVLOG.md` and move to work that does not need a ruling.
+- ⚠ This does NOT re-open "raise blockers on the page" — that rule assumes the page works. While it
+  does not, an unanswerable question is not a blocker to file, it is a thing to stop producing.
+- The secondary lesson stands on its own: this was the fourth question of a session, at 2am, about
+  **23** actionable items, framed as blocking her own ruling, while the work she cares about was
+  blocked on Cloudflare. When the real work is blocked, the answer is not to mine whichever corner
+  still has queries left in it.
 
 ## ⛔ AN ENGLISH LABEL MEANS THE ITEM IS DONE — no kana reading (Emma, 2026-08-24)
 
