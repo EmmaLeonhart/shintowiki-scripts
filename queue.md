@@ -43,6 +43,11 @@ from `ATOMIC_FILES`; they are not queue items.
   `modern-quickstatements/wdqs_transport.py` is the target, and it now carries the repo's 15/45/135
   so adopting it cannot downgrade anyone.
 
+  Adopters: 4. `generate_court_rank_quickstatements.py` joined 2026-09-15 on the tick after its
+  reference fix — the intended cadence. It qualified plainly: **0.5s** spacing (the exact figure
+  CLAUDE.md cites from the incident that set the 2.5s floor) and a 5/10/15 backoff, so the shared
+  module is strictly stronger. Live-checked after the swap: two calls 2.6s apart.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

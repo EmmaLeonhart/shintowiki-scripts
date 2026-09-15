@@ -22,7 +22,16 @@ MQ = os.path.dirname(HERE)
 
 MIGRATED = ("generate_invalid_p825_removals.py",
             "generate_ronsha_role_qualifiers.py",
-            "generate_misplaced_form_removals.py")
+            "generate_misplaced_form_removals.py",
+            # Adopted 2026-09-15, on the tick after its reference fix — the
+            # "rides with the file's next real change" cadence the queue item
+            # sets. It qualified on the item's own test for whether a migration
+            # is an upgrade: its transport spaced queries **0.5s** apart (the
+            # exact figure CLAUDE.md cites from the match_jinjacho_shrines.py
+            # incident that produced the 2.5s floor) and backed off 5/10/15,
+            # weaker than the documented 15/45/135. Safe on the module's
+            # GET-only constraint: three short fixed queries, no VALUES clause.
+            "generate_court_rank_quickstatements.py")
 
 
 def _mod():

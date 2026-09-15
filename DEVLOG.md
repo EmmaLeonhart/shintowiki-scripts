@@ -1,3 +1,31 @@
+## 2026-09-15 — Court rank's transport spaced its queries at exactly the figure the floor exists to forbid
+
+`generate_court_rank_quickstatements.py` adopted `wdqs_transport`, the fourth file to do so. It came
+up because the queue item's cadence is "migrate a file on its next real change", and this one had
+been changed on the previous tick.
+
+It qualified on the item's own test for whether a migration is an upgrade rather than a downgrade:
+
+- **`time.sleep(0.5)` between queries.** Not a near-miss on the 2.5s floor — 0.5s is the exact
+  spacing CLAUDE.md cites when it explains where the floor came from, the `match_jinjacho_shrines.py`
+  run that fired ~365 queries three times in one evening and drew 503/504 that were then blamed on
+  the endpoint. This generator issues three queries per run so it never did that damage, but it
+  carried the pattern.
+- **Backoff 5/10/15**, weaker than the documented 15/45/135. So unlike the ten callers that already
+  escalate harder than a flat policy, this one is strictly improved by the shared module.
+
+Safe against the module's GET-only constraint: all three call sites send short fixed queries with no
+VALUES clause, so none can hit the 414 it documents. Same endpoint, so nothing else changed. Dead
+`SPARQL`/`SPARQL_HDR` constants removed; `UA` stays, the ja.wikipedia calls still use it.
+
+Live-verified after the swap: two consecutive `_sparql` calls 2.6s apart, which is the shared
+throttle firing — under the old transport they would have been ~1.0s.
+
+⚠ One thing the test caught that reading would not have: the other three adopters use
+`import wdqs_transport`, and `test_wdqs_transport.py` asserts that exact line as the evidence a file
+has not grown its own `urlopen` back. A `from wdqs_transport import query as ...` failed it. The
+right fix was to conform to the convention, not to broaden the assertion.
+
 ## 2026-09-15 — Court rank was the one property with no citation, and it was a ratchet
 
 `audit_model_adoption.py` put P14005 at **2,026 referenced of 5,180 statements (39%)**, against

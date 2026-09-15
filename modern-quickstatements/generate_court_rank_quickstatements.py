@@ -77,16 +77,21 @@ from shinto_miraheze.ua_contact import contact
 
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
+# Plain module import, matching the other three adopters — test_wdqs_transport.py
+# checks for exactly this line as the evidence a file has not grown its own
+# urlopen back.
+import wdqs_transport
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "court_rank_people.txt")
 
 JA_API = "https://ja.wikipedia.org/w/api.php"
-SPARQL = "https://query-main.wikidata.org/sparql"
 PARENT_CAT = "Category:日本の位階受位者"
 RANK_SUFFIX = "受位者"
 
+# The WDQS endpoint and its Accept header moved into wdqs_transport with the
+# transport itself. UA stays: the ja.wikipedia API calls below still use it.
 UA = {"User-Agent": WIKIDATA_USER_AGENT}
-SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 
 
 def _utf8():
@@ -97,21 +102,28 @@ def _utf8():
 
 
 def _sparql(query):
-    for attempt in range(4):
-        time.sleep(0.5)
-        try:
-            r = requests.post(SPARQL, data={"query": query, "format": "json"},
-                              headers=SPARQL_HDR, timeout=120)
-            if r.status_code == 429:
-                raise SystemExit("429 from WDQS — bailing (repo rule).")
-            r.raise_for_status()
-            return r.json()["results"]["bindings"]
-        except SystemExit:
-            raise
-        except Exception as e:
-            print(f"  [WDQS retry {attempt+1}] {e}", flush=True)
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError("WDQS failed after retries")
+    """Delegates to the shared throttled transport.
+
+    ⛔ THIS FILE'S OWN TRANSPORT SPACED ITS QUERIES 0.5s APART. That is not a
+    near-miss on the 2.5s floor — 0.5s is the exact figure CLAUDE.md names when it
+    explains where the floor came from: `match_jinjacho_shrines.py` fired ~365
+    queries per run "at 0.5s spacing, three times in one evening, and drew repeated
+    503/504 which were then blamed on the endpoint." This generator issues only
+    three queries per run, so it never produced that damage, but it carried the
+    pattern the rule exists to stop.
+
+    Its backoff was 5/10/15s, which is also weaker than the documented 15/45/135 —
+    so unlike the ten callers that already escalate harder than a flat policy, this
+    one is strictly improved by adopting the shared module. That is the test the
+    queue item sets for a migration, and this file met it on the tick after its
+    reference fix, which is exactly the "rides with the file's next real change"
+    cadence the item prescribes.
+
+    Safe on the GET-only constraint: all three call sites send short fixed queries
+    with no VALUES clause, so nothing here can hit the 414 the module documents.
+    Same endpoint (`query-main.wikidata.org`), so nothing else changes.
+    """
+    return wdqs_transport.query(query)
 
 
 def _ja_api(params):
