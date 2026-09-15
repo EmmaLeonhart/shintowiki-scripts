@@ -4,6 +4,52 @@ Running log of all significant bot operations and wiki changes. Most recent firs
 
 ---
 
+## 2026-09-14 — Shrine P825 is 35% referenced against temples' 97%, and that is correct too
+
+The last conformity ratio worth chasing: `p825_shrines.referenced` 5,553 of 16,060,
+against `p825_temples` at 6,162 of 6,369. A three-fold asymmetry in the same property.
+
+**The explanation is which generator made the statements.** Temple honzon statements
+were nearly all created by `generate_honzon_quickstatements.py`, which emits
+`S143|Q177837|S4656|<url>` on every line it writes — so they are cited by
+construction. Shrine saijin statements largely predate our pipeline and came from
+sources we cannot cite.
+
+Measured live: **16,137 shrine P825 statements, 10,507 with no reference at all.**
+`saijin_named_as.txt` supplies a reference for 1,263 of them — every pair where
+jawiki's 祭神 field actually names that deity. The other ~9,200 are statements jawiki
+does not support, and adding a jawiki reference to them would assert something the
+article does not say. Same shape as the P793 finding: the gap is the honesty gate
+working.
+
+### One real coupling, measured and not worth fixing
+
+The reference is a **side-effect of the P1932 backfill** — `build_lines` only reaches
+a pair via `if (qid, d) in have and (qid, d) not in have_named`, so a statement that
+already carries P1932 but no reference is unreachable.
+
+That is a genuine structural hole. It strands **10 statements of 16,137**. Measured
+rather than assumed, and left alone: decoupling them means touching the single
+generator that feeds two atomic files, to reach ten statements the next re-derivation
+may pick up anyway.
+
+### ⛔ This seam is now exhausted — do not grind it again
+
+Three conformity gaps chased in three ticks, by the method that legitimately produced
+`generate_ronsha_role_qualifiers.py`:
+
+| gap | verdict |
+|---|---|
+| `ronsha.p460_with_p2868` 1,613/2,058 | **real** — generator built 2026-09-13, 502 lines |
+| `reisai.with_p793` 101/352 | correct — 9 of 282 shrines have a festival item to link |
+| `p825_shrines.referenced` 5,553/16,060 | correct — jawiki does not name the deity for ~9,200 |
+
+One in three. The others were right the way they were, and the tell in both is the
+same: **a low conformity number is only a defect if the missing data exists
+somewhere.** Check that the gap is fillable before reading a frozen figure as a
+missing generator.
+
+
 ## 2026-09-14 — The P793 gap looks exactly like the ronsha one and is not it
 
 Went through the conformance snapshot for a figure that is frozen because nothing
