@@ -43,10 +43,13 @@ from `ATOMIC_FILES`; they are not queue items.
   `modern-quickstatements/wdqs_transport.py` is the target, and it now carries the repo's 15/45/135
   so adopting it cannot downgrade anyone.
 
-  Adopters: 4. `generate_court_rank_quickstatements.py` joined 2026-09-15 on the tick after its
-  reference fix — the intended cadence. It qualified plainly: **0.5s** spacing (the exact figure
-  CLAUDE.md cites from the incident that set the 2.5s floor) and a 5/10/15 backoff, so the shared
-  module is strictly stronger. Live-checked after the swap: two calls 2.6s apart.
+  Adopters: 5. Both of the last two joined on the tick of their own reference fix — the intended
+  cadence. `generate_court_rank_quickstatements.py` had **0.5s** spacing (the exact figure CLAUDE.md
+  cites from the incident that set the 2.5s floor) and a 5/10/15 backoff; the saijin generator had no
+  retry, no throttle, and a 429 check placed after a *successful* urlopen, which never fires.
+  Both strictly improved, both live-checked after the swap. The transport's own tests no longer
+  leave `time.sleep` monkeypatched process-wide — that had `test_wd_pace_actually_waits` failing
+  for any run that put this directory ahead of `tests/`, which `ci.yml`'s argument order hid.
 
 - **Pinned tail (keep last)**
 

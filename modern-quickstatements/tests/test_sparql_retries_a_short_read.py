@@ -22,9 +22,26 @@ import inspect
 import json
 import os
 import sys
+import time
+
+import pytest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MQ = os.path.dirname(HERE)
+
+
+@pytest.fixture(autouse=True)
+def _restore_sleep():
+    """`mod.time` is the shared `time` module, so `mod.time.sleep = ...` below is a
+    process-wide patch. Restore it: an unrestored one leaves
+    `tests/test_wikidata_pacing.py::test_wd_pace_actually_waits` failing for anyone
+    who runs this directory ahead of `tests/`. Same note as
+    `test_wdqs_transport.py`."""
+    sleep = time.sleep
+    try:
+        yield
+    finally:
+        time.sleep = sleep
 
 
 def _mod():

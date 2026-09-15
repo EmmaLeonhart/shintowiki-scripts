@@ -1,3 +1,88 @@
+## 2026-09-15 — The drip is alive: two missed days were the gate, not the pipeline
+
+Emma: *"key thgn is just that the wikidata editing script is supposed to run now consistently and try
+to run a test of it right now"*. Dispatched `direct-daily-edits.yml` (run 35025831565) and watched it
+reach Wikidata.
+
+**It ran.** Login, lockout guard open, edits landing from 21:33 UTC:
+
+    21:36:01  Q106852499  P837  <- reference    (Reisai, with its P3831 role)
+    21:34:52  Q86744766   P14005 + reference    (court rank, the fix from earlier today)
+    21:33:36  Q97206543   P825  <- reference
+
+The last previous edit was **2026-09-14T02:20Z** — the tail of the 09-13 run. So exactly two edit-days
+were missed, 09-14 and 09-15.
+
+**Nothing in the pipeline was broken.** Both cleanup-loops on those days reached the wikidata jobs and
+reported `skipped`, which is the window-gate doing its job: the enwiki-mention gate was closed on one
+mention of "Immanuelle" on [[Wikipedia:AI noticeboard]]. The 09-12 loop before it ran both jobs to
+success. With that page suppressed this morning and the month-long lockout expired on 09-01, both
+conditions now report open, and the next scheduled loop (02:23 UTC) fires the jobs with no further
+intervention.
+
+⚠ `submit-quickstatements` is **not** a substitute for a manual test. Its reports have read
+`outcome: qs_retired` since 2026-07-04 — it submits nothing and exits non-zero so the direct editor
+runs as its fallback. Dispatching it alone would write a report for today, which is what the gate
+reads to decide the edit-day is done, and no edits would follow.
+
+Also removed a date from `direct-daily-edits.yml`: the lockout guard's comment said the freeze ran
+*"through 2026-09-17"*. Emma shortened it to 2026-09-01 on 09-06 and it expired then. The guard reads
+the state file and was correct throughout — but a stale date sitting next to it is exactly the failure
+the state file was introduced to end.
+
+## 2026-09-15 — Shrine P825 was at 35% referenced because a bare statement was unreachable
+
+`generate_saijin_quickstatements.py` skipped on `existing_pairs()` — every (shrine, deity) pair that
+held the statement at all. Same fault as the second half of the court-rank ratchet fixed earlier
+today, and `audit_model_adoption.py` had the number in the same survey, unremarked:
+
+| population | referenced | % |
+|---|---|---|
+| shrine P825 | 5,630 / 16,137 | **35%** |
+| temple P825 | 6,172 / 6,379 | 96.8% |
+| P13723 | 16,802 / 16,995 | 98.9% |
+
+The emit was never the problem — this generator has cited `S143|Q177837|S4656` with the ja.wikipedia
+article since it was written. The two P825 halves differ because we built nearly all of the temple
+side ourselves from 本尊, cited, while the shrine side is largely older imports that landed bare. This
+generator is the only thing that knows which article named the deity, so skipping on "has the
+statement" put those out of reach permanently.
+
+Skip set is now `referenced_pairs()`, gated on `prov:wasDerivedFrom` through the statement node.
+Measured on the full run after the change:
+
+    16,135 existing pairs; 5,629 referenced; 10,514 bare and reachable for enrichment
+    5,295 lines -> saijin_p825.txt  (844 enrichment of an existing bare statement, 4,451 new)
+
+**844, not 10,514** — the generator only reaches a pair it re-derives from a wikilinked 祭神 field, and
+most bare statements are on shrines whose article has no infobox, no article, or names the deity in
+plain text. The larger number is what is bare, not what this fixes. What it also stops is the ratchet:
+every future run would otherwise lock in its own new bare statements the same way.
+
+⚠ Re-emitting does not duplicate. QuickStatements matches the existing (item, property, value) and
+attaches the reference to that statement.
+
+**Fifth adopter of `wdqs_transport`**, on the same tick, which is the queue item's cadence. It
+qualified with room to spare: its WDQS client had no retry, no throttle, and an `if r.status == 429`
+check placed after a *successful* urlopen — dead code, since urllib raises `HTTPError` on 429 and
+never returns a response to test. So none of the documented policy was in force. Its ja.wikipedia
+fetcher moved to `requests` at the same time: `test_wdqs_transport.py` reads a raw urlopen in an
+adopter as evidence it regrew its own transport, and conforming to that is better than teaching the
+assertion to tell two urlopens apart.
+
+`modern-quickstatements/tests/test_saijin_is_referenced.py` pins the skip set, that the query reaches
+a reference at all, that it goes through `p:`/`ps:` rather than the truthy `wdt:` shortcut (which
+carries no reference node, so the query would return empty and re-emit all 16,000), and that both
+queries select the same population so the printed bare count means something.
+
+⚠ Found on the way in, and pre-existing: `test_wdqs_transport.py` and
+`test_sparql_retries_a_short_read.py` patch `mod.time.sleep`, and `mod.time` is the shared `time`
+module — so the patch is process-wide and neither restored it.
+`tests/test_wikidata_pacing.py::test_wd_pace_actually_waits` therefore failed for any run that put
+`modern-quickstatements/tests/` ahead of `tests/`; wd_pace was calling a no-op sleep. CI has been
+green on it only because `ci.yml` lists `tests/` first, which is argument order, not isolation. Both
+files now restore what they patch, and the suite passes in either order.
+
 ## 2026-09-15 — The AI noticeboard mention is about someone else, so it stops gating for 30 days
 
 Emma: *"uhh stop that mention gate thing for 30 days on the AI noticeboard, it is a mostly unrelated

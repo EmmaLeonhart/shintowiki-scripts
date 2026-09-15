@@ -14,7 +14,23 @@ HIGH-PRECISION design — no name-matching, no guessing:
     pageprops (wikibase_item), following redirects — jawiki's editorial
     linking is the identification, we never match by string;
   * unlinked plain-text deity names are counted and skipped;
-  * (shrine, deity) pairs already on Wikidata are skipped (SPARQL set).
+  * (shrine, deity) pairs whose statement is ALREADY REFERENCED are skipped.
+
+⛔ **The skip set is `referenced_pairs()`, not `existing_pairs()`.**
+`audit_model_adoption.py` measured shrine P825 on 2026-09-15 at **5,630 referenced
+of 16,137 statements — 35%** — beside temple P825 at 6,172/6,379 (96.8%) and
+P13723 at 16,802/16,995 (98.9%). The temple sibling scores high because we created
+nearly all of it, cited, from the 本尊 field; the shrine population is mostly older
+imports by other editors that landed bare.
+
+Skipping every pair that merely *exists* made those ~10,500 bare statements
+unreachable: this generator would not touch them again, and it is the only thing
+that knows which jawiki article the deity was read from. Skipping only the
+REFERENCED ones re-emits a bare statement WITH its citation — QuickStatements
+matches the existing (item, property, value) and attaches the reference to that
+statement rather than duplicating it. Same fix as
+`generate_court_rank_quickstatements.py` took on 2026-09-15, and the `c121509e`
+shape before it.
 
 Output: saijin_p825.txt — atomic cited lines
     <shrine>|P825|<deity>|S143|Q177837|S4656|"<jawiki url>"
@@ -32,20 +48,25 @@ if _uar not in _usys.path:
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import io
-import json
 import os
 import re
 
 import sys
 import time
 import urllib.parse
-import urllib.request
+
+import requests
 
 from infobox_fields import field_pattern
 
+# Plain module import, matching the other adopters — test_wdqs_transport.py checks
+# for exactly this line as the evidence a file has not grown its own urlopen back.
+import wdqs_transport
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
-WDQS = "https://query-main.wikidata.org/sparql"
+# The SPARQL endpoint and its Accept header moved into wdqs_transport with the
+# transport itself. UA stays: the ja.wikipedia calls below still use it.
 UA = WIKIDATA_USER_AGENT
 TEMPLATE = "Template:神社"
 OUTPUT = os.path.join(HERE, "saijin_p825.txt")
@@ -61,14 +82,27 @@ _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 
 
 def _get(params):
+    """One ja.wikipedia API call, retried three times.
+
+    `requests`, not a raw urlopen, for the same reason
+    `generate_court_rank_quickstatements.py` uses it: this file's SPARQL now goes
+    through `wdqs_transport`, and `test_wdqs_transport.py` reads a hand-rolled
+    urlopen anywhere in an adopter as evidence it has grown its own WDQS transport
+    back. Conforming to that convention is the right move; loosening the assertion
+    is not. Behaviour is unchanged — same params, same UA, same three attempts.
+    """
     params = dict(params)
     params["format"] = "json"
-    req = urllib.request.Request(JA_API + "?" + urllib.parse.urlencode(params),
-                                 headers={"User-Agent": UA})
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                return json.load(r)
+            r = requests.get(JA_API, params=params,
+                             headers={"User-Agent": UA}, timeout=60)
+            if r.status_code == 429:
+                raise SystemExit("429 from ja.wikipedia — bailing.")
+            r.raise_for_status()
+            return r.json()
+        except SystemExit:
+            raise
         except Exception:
             if attempt == 2:
                 raise
@@ -134,17 +168,48 @@ def resolve_links(titles):
     return out
 
 
-def existing_pairs():
-    q = "SELECT ?s ?d WHERE { ?s wdt:P31 wd:Q845945 ; wdt:P825 ?d . }"
-    url = WDQS + "?" + urllib.parse.urlencode({"query": q, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        rows = json.load(r)["results"]["bindings"]
+def _pairs(rows):
     return {(b["s"]["value"].rsplit("/", 1)[-1], b["d"]["value"].rsplit("/", 1)[-1])
             for b in rows}
+
+
+def existing_pairs():
+    """Every (shrine, deity) P825 pair on Wikidata. COUNT ONLY — not the skip set.
+
+    ⚠ The 429 check this used to carry — `if r.status == 429` after a successful
+    `urlopen` — was dead code: urllib raises `HTTPError` on a 429 and never returns
+    a response to test. The transport bails on it properly.
+    """
+    return _pairs(wdqs_transport.query(
+        "SELECT ?s ?d WHERE { ?s wdt:P31 wd:Q845945 ; wdt:P825 ?d . }"))
+
+
+def referenced_pairs():
+    """(shrine, deity) pairs whose P825 statement ALREADY carries a reference.
+
+    ⛔ THIS IS THE SKIP SET, not `existing_pairs()`. Skipping every pair that
+    merely exists is what left shrine P825 at **5,630 referenced of 16,137
+    statements (35%)** while the temple sibling, built by the 本尊 generator with
+    the same reference shape, sits at 96.8% — measured by
+    `audit_model_adoption.py` on 2026-09-15.
+
+    The shrine population is mostly older imports that landed bare, and this
+    generator is the only thing that knows which ja.wikipedia article named the
+    deity. Skipping on "has the statement" made all ~10,500 of them unreachable
+    for good.
+
+    Re-emitting the same statement WITH a reference does not duplicate it:
+    QuickStatements matches the existing (item, property, value) and attaches the
+    reference to it. Same fix `generate_court_rank_quickstatements.py` took on
+    2026-09-15, and the `c121509e` shape before that.
+    """
+    return _pairs(wdqs_transport.query("""
+      SELECT ?s ?d WHERE {
+        ?s wdt:P31 wd:Q845945 ; p:P825 ?st .
+        ?st ps:P825 ?d .
+        ?st prov:wasDerivedFrom ?ref .
+      }
+    """))
 
 
 def main():
@@ -154,7 +219,10 @@ def main():
     args = ap.parse_args()
 
     have = existing_pairs()
-    print(f"{len(have)} existing (shrine, deity) P825 pairs on Wikidata")
+    referenced = referenced_pairs()
+    print(f"{len(have)} existing (shrine, deity) P825 pairs on Wikidata; "
+          f"{len(referenced)} referenced, "
+          f"{len(have - referenced)} bare and reachable for enrichment")
     titles = shrine_titles()
     if args.limit:
         titles = titles[:args.limit]
@@ -195,14 +263,14 @@ def main():
             d = resolved.get(t)
             if not d:
                 continue
-            if (qid, d) in have:
+            if (qid, d) in referenced:
                 dup += 1
                 continue
             lines.append(f'{qid}|P825|{d}|S143|Q177837|S4656|"{url}"')
     lines = sorted(set(lines))
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
-    print(f"{len(lines)} P825 lines -> {OUTPUT} (already-present pairs skipped: {dup})")
+    print(f"{len(lines)} P825 lines -> {OUTPUT} (already-REFERENCED pairs skipped: {dup})")
 
 
 if __name__ == "__main__":

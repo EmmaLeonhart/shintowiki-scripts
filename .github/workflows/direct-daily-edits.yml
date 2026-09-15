@@ -76,8 +76,11 @@ jobs:
         continue-on-error: true
 
       # ⛔ WIKIDATA LOCKOUT GUARD. Single source of truth:
-      # shinto_miraheze/wikidata_editing_lockout.state (Emma 2026-08-18 — no Wikidata
-      # editing for a month, through 2026-09-17). No date is duplicated here; the guard
+      # shinto_miraheze/wikidata_editing_lockout.state. NO DATE IS WRITTEN HERE — this
+      # comment carried "through 2026-09-17" until 2026-09-15, by which point Emma had
+      # already shortened that lockout to 2026-09-01 and it had expired. A date quoted
+      # beside the guard is a date that goes stale while looking authoritative, which
+      # is the whole reason the state file exists. Ask the file. The guard
       # exits 1 while locked. The script below ALSO checks it in code, so this step is
       # belt-and-braces — it just stops the run before it even logs in, and makes the
       # skip visible in the run log rather than buried in the script's stdout.

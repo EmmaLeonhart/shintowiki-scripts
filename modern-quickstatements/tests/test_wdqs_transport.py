@@ -16,6 +16,31 @@ caller cannot forget it.
 import importlib.util
 import os
 import sys
+import time
+import urllib.request
+
+import pytest
+
+
+@pytest.fixture(autouse=True)
+def _restore_the_globals_these_tests_patch():
+    """⛔ `_mod()` gives a FRESH module object, but `mod.time` and `mod.urllib` are
+    the same singletons every other test imports. So `mod.time.sleep = ...` below
+    is not a local patch — it clobbers `time.sleep` process-wide and, without this,
+    leaves it clobbered.
+
+    It left `tests/test_wikidata_pacing.py::test_wd_pace_actually_waits` failing
+    for anyone who ran the suite with this directory ahead of `tests/`: wd_pace
+    called a no-op sleep and returned instantly. CI only stayed green because
+    `ci.yml` happens to list `tests/` first, which is argument order, not
+    isolation — the next person to reorder that line would have inherited a
+    failure with nothing in it pointing here.
+    """
+    sleep, urlopen = time.sleep, urllib.request.urlopen
+    try:
+        yield
+    finally:
+        time.sleep, urllib.request.urlopen = sleep, urlopen
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MQ = os.path.dirname(HERE)
@@ -31,7 +56,21 @@ MIGRATED = ("generate_invalid_p825_removals.py",
             # incident that produced the 2.5s floor) and backed off 5/10/15,
             # weaker than the documented 15/45/135. Safe on the module's
             # GET-only constraint: three short fixed queries, no VALUES clause.
-            "generate_court_rank_quickstatements.py")
+            "generate_court_rank_quickstatements.py",
+            # Adopted 2026-09-15 alongside its own reference fix, same cadence.
+            # Its WDQS client was the weakest in the set: no retry at all, no
+            # throttle, and a `if r.status == 429` check after a SUCCESSFUL
+            # urlopen — dead code, because urllib raises HTTPError on a 429 and
+            # never returns a response to test. So the whole documented policy
+            # (bail on 429, back off on 5xx and truncation, 2.5s spacing) was
+            # absent, and the module is strictly stronger.
+            #
+            # ⚠ It also talks to ja.wikipedia, which the other adopters do
+            # through `requests`. Its fetcher moved to `requests` too rather
+            # than narrowing the urlopen assertion below — the assertion is the
+            # evidence, and an adopter with a raw urlopen in it cannot be told
+            # apart from one that regrew a WDQS client.
+            "generate_saijin_quickstatements.py")
 
 
 def _mod():
