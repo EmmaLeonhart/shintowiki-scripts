@@ -393,6 +393,35 @@ Local full rebuild: `!regenerateQuickStatements.bat`.
   `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')`.
 * **429 policy.** Wikidata/SPARQL scripts bail immediately on HTTP 429 — no retries.
 
+## ⭐⭐ THE PROJECT IS CLOSING. IMPOSE THE ONTOLOGY. EDGE CASES BE DAMNED. (Emma, 2026-09-15)
+
+Her words, and this outranks a great deal of what is written below:
+
+> *"for about six months — yes, six months — this project has been in its supposed-to-be closing
+> phase. I don't give a shit enough about the edge cases to actually put in the effort that you
+> expect me to put in there. We have an ontology. We are imposing our ontology. Edge cases be
+> damned."*
+
+**The ontology is the answer to the edge case.** `docs/wikidata_shrine_festival_model.md`,
+`docs/description_label_policy.md`, the list-membership rule, the P13677/P958 pairing, the
+four-step label path — those documents already decide. When a population does not fit cleanly,
+**apply the model to it anyway and move on.** Do not build a taxonomy of exceptions, do not open a
+decision, do not write a report of categories for her to rule on row by row.
+
+- **An edge case is not a blocker. It is a case the ontology already covers, awkwardly.** The awkward
+  fit is the cost of closing, and she has decided to pay it.
+- **"I'll give you a comprehensive list of the categories and rule on each" was a one-off** (the
+  katakana readings, 2026-09-11) and it went badly: it produced a 26-category report, then four
+  questions, then this. Do not reach for that shape again.
+- **She is not withholding a decision — there is no decision she wants to make.** Reading her silence
+  or her anger as "needs more analysis to help her choose" is the error. More analysis is the thing
+  she is refusing to be handed.
+- **What still warrants asking:** scale that is irreversible or destructive (mass removals, item
+  creation, anything the boot prompt gates), and a genuine conflict BETWEEN two documented rules.
+  Not "this population is unusual".
+- **Six months of closing phase** also means: no new pipelines for marginal populations, no widening
+  of scope, no "while I'm here" additions. Finish, drip, stop.
+
 ## ⛔ THE STRANDED KATAKANA READINGS ARE NOT A PROBLEM TO SOLVE — stop raising it (Emma, 2026-09-15)
 
 Her words: *"if miraheze isn't working then shut the fuck up this problem is unsolvable."*
