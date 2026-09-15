@@ -1,3 +1,42 @@
+## 2026-09-15 — The AI noticeboard mention is about someone else, so it stops gating for 30 days
+
+Emma: *"uhh stop that mention gate thing for 30 days on the AI noticeboard, it is a mostly unrelated
+item and we need to get our items through. Another user who once copied something from me"*.
+
+The gate had been closed since 09-13 on **one** mention of "Immanuelle" on
+[[Wikipedia:AI noticeboard]], and `submit-quickstatements` and `direct-daily-edits` were skipped in
+the 09-14 and 09-15 cleanup-loops as a result. It was clear 09-05 → 09-12 and the drip ran every day
+of that window, so the gate is the only thing that was holding it — the month-long lockout expired
+on its own date and `wikidata_edit_allowed.py` reports ALLOWED.
+
+**Suppression, not removal.** The page is still read, still counted, still recorded; it just does not
+hold the gate shut. [[Wikipedia talk:WikiProject Japan]] gates exactly as before, and a mention
+appearing there closes the gate with the noticeboard still suppressed. Live check after the change:
+
+    Wikipedia:AI noticeboard: 1 mention(s) of 'Immanuelle'  [SUPPRESSED - does not gate]
+    Wikipedia talk:WikiProject Japan: 0 mention(s) of 'Immanuelle'
+    GATE OPEN
+
+**The date lives in one file**, `shinto_miraheze/enwiki_mention_suppressions.state`, which is the
+lesson the Wikidata lockout already paid for: a date pasted into a workflow is a date another
+workflow can miss, and `create-items.yml` came hours from creating two items through the 2026-08-06
+freeze that way. It is a separate file from `enwiki_mention_gate.state` because that one is rewritten
+wholesale by the daily `--record` run — an override stored there would be erased inside 24 hours and
+the gate would close again with nothing saying why.
+
+One decision worth naming: **an unreadable suppressed page does not fail closed.** The gate's
+fail-closed rule is right for a page that gates, but applying it to a suppressed page would let an
+enwiki outage reinstate precisely the block being lifted. An unreadable *unsuppressed* page still
+fails closed, and both directions are pinned.
+
+`shinto_miraheze/tests/test_enwiki_mention_suppression.py` covers the two failure shapes that would
+look like success — a suppression that outlives its date, and an unreadable or missing suppression
+file read as "suppress everything" — plus a check that the live file names a page that is actually in
+`PAGES`, since a typo'd title would suppress nothing and look like it worked.
+
+Nothing was dispatched by hand. The window-gate evaluates the check live, so the next scheduled
+cleanup-loop fire is what resumes the drip.
+
 ## 2026-09-15 — Court rank's transport spaced its queries at exactly the figure the floor exists to forbid
 
 `generate_court_rank_quickstatements.py` adopted `wdqs_transport`, the fourth file to do so. It came

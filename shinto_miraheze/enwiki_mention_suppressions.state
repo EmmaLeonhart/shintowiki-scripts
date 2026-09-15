@@ -1,0 +1,14 @@
+{
+  "what": "Per-page suppressions for the enwiki mention gate (check_enwiki_mentions.py).",
+  "why_a_separate_file": "enwiki_mention_gate.state is rewritten wholesale by the daily --record run, so an override living in it would be erased within 24 hours. This file is written by hand and read by the check.",
+  "how_to_lift_early": "Delete the entry, or set its 'until' to today. Do NOT lift it by editing the script, the workflow, or PAGES.",
+  "suppressions": [
+    {
+      "page": "Wikipedia:AI noticeboard",
+      "until": "2026-10-15",
+      "set": "2026-09-15",
+      "set_by": "Emma",
+      "reason": "Emma, 2026-09-15: \"uhh stop that mention gate thing for 30 days on the AI noticeboard, it is a mostly unrelated item and we need to get our items through. Another user who once copied something from me\" — the mention is about a third party, not about this project's editing, so it is not the situation the 2026-08-06 gate was built for."
+    }
+  ]
+}

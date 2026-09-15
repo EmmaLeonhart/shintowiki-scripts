@@ -18,6 +18,15 @@ state file carries a visible history rather than a memory of the last check.
 Reads en.wikipedia.org only. It touches NOTHING on shinto.miraheze.org — the Miraheze
 blackout is a separate rule with its own state file.
 
+⚠ A page can be SUPPRESSED for a period, which means it is still read and still
+recorded but does not hold the gate shut. Emma did that to the AI noticeboard on
+2026-09-15 — *"it is a mostly unrelated item and we need to get our items through.
+Another user who once copied something from me"* — the mention there being about a
+third party rather than about this project's editing, which is not the situation the
+gate was built for. Suppressions and their expiry dates live in
+`shinto_miraheze/enwiki_mention_suppressions.state`; lift or extend one by editing
+that file, never by editing this script, `PAGES`, or a workflow.
+
     python check_enwiki_mentions.py            # report
     python check_enwiki_mentions.py --record   # also write enwiki_mention_gate.state
 
@@ -48,6 +57,50 @@ PAGES = [
     "Wikipedia:AI noticeboard",
     "Wikipedia talk:WikiProject Japan",
 ]
+SUPPRESSIONS = pathlib.Path(_uar) / "shinto_miraheze" / "enwiki_mention_suppressions.state"
+
+
+def active_suppressions(today=None):
+    """{page title: reason} for suppressions that have not expired.
+
+    A page listed here is still READ and its count still reported and recorded — it
+    simply does not hold the gate shut. Emma, 2026-09-15, on the AI noticeboard:
+    *"it is a mostly unrelated item and we need to get our items through. Another
+    user who once copied something from me"*.
+
+    ⚠ A SEPARATE file from `enwiki_mention_gate.state` on purpose. That one is
+    rewritten wholesale by the daily `--record` run, so an override stored in it
+    would be erased within 24 hours and the gate would quietly close again.
+
+    Expiry matches `wikidata_edit_allowed.py`: `today >= until` means expired, so
+    the suppression covers the days before `until` and lapses on it. The date lives
+    in the state file and nowhere else — do not copy it into a script, a workflow
+    or a doc, which is the mistake the Wikidata lockout was restructured to stop.
+    """
+    if not SUPPRESSIONS.exists():
+        return {}
+    try:
+        data = json.loads(SUPPRESSIONS.read_text(encoding="utf-8"))
+    except Exception as e:
+        # An unreadable override must not silently suppress anything: the safe
+        # direction here is the gate doing its normal job.
+        print(f"suppression file unreadable ({e}) — nothing suppressed")
+        return {}
+    today = today or datetime.datetime.now(datetime.timezone.utc).date()
+    out = {}
+    for entry in data.get("suppressions", []):
+        page, until = entry.get("page"), entry.get("until")
+        if not page or not until:
+            continue
+        try:
+            expiry = datetime.date.fromisoformat(until)
+        except ValueError:
+            print(f"suppression for {page!r} has unparseable until={until!r} — ignored")
+            continue
+        if today >= expiry:
+            continue
+        out[page] = entry.get("reason", "")
+    return out
 
 
 def count_mentions(title):
@@ -63,19 +116,27 @@ def count_mentions(title):
     return text.count(NEEDLE), None
 
 
-def evaluate():
-    """(clear: bool, per_page: dict, failed: bool)."""
+def evaluate(today=None):
+    """(clear: bool, per_page: dict, failed: bool, suppressed: dict)."""
+    suppressed = active_suppressions(today)
     per_page, total, failed = {}, 0, False
     for title in PAGES:
         n, err = count_mentions(title)
         if err is not None:
-            failed = True
             per_page[title] = f"CHECK FAILED: {err}"
+            # A suppressed page does not gate, so failing to read one does not
+            # either — otherwise an outage on the suppressed page would reinstate
+            # exactly the block the suppression exists to lift.
+            if title not in suppressed:
+                failed = True
             continue
         per_page[title] = n
+        if title in suppressed:
+            continue
         total += n
-    # A page that could not be read is not evidence of absence. Fail closed.
-    return (not failed and total == 0), per_page, failed
+    # An unsuppressed page that could not be read is not evidence of absence.
+    # Fail closed.
+    return (not failed and total == 0), per_page, failed, suppressed
 
 
 def main():
@@ -85,10 +146,15 @@ def main():
                     help="write the result to shinto_miraheze/enwiki_mention_gate.state")
     args = ap.parse_args()
 
-    clear, per_page, failed = evaluate()
+    clear, per_page, failed, suppressed = evaluate()
     for title, val in per_page.items():
-        print(f"{title}: {val}" if isinstance(val, str)
-              else f"{title}: {val} mention(s) of {NEEDLE!r}")
+        line = (f"{title}: {val}" if isinstance(val, str)
+                else f"{title}: {val} mention(s) of {NEEDLE!r}")
+        if title in suppressed:
+            line += "  [SUPPRESSED — does not gate]"
+        print(line)
+    for title, reason in suppressed.items():
+        print(f"suppressed: {title} — {reason}")
 
     if failed:
         print("GATE CLOSED — a page could not be read; an unreadable page is not absence.")
@@ -111,9 +177,11 @@ def main():
             "blocks": "Wikidata editing (QuickStatements submission + direct-edit fallback)",
             "condition": ("clear when 'Immanuelle' appears on neither "
                           "[[Wikipedia:AI noticeboard]] nor "
-                          "[[Wikipedia talk:WikiProject Japan]]"),
+                          "[[Wikipedia talk:WikiProject Japan]], ignoring any page "
+                          "listed in enwiki_mention_suppressions.state"),
             "clear": clear,
             "pages": per_page,
+            "suppressed": suppressed,
             "checked": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "first_checked": prior.get("first_checked") or now.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "note": ("shinto.miraheze.org editing is NOT gated on this — Emma 2026-08-06: "

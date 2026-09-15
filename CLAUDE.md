@@ -1017,6 +1017,18 @@ them, fall back to running ~50. Nothing else touches Wikidata.
   thing there is a wikidata thing, based on the enwiki thing, shintowiki if it still runs
   is not an issue."* A shintowiki-side hold was built first and reverted; do not re-add
   it. Rationale: `docs/enwiki_mention_gate_2026-08-06.md`.
+  - ⭐ **A PAGE CAN BE SUPPRESSED, and one is** (Emma, 2026-09-15): *"uhh stop that mention gate
+    thing for 30 days on the AI noticeboard, it is a mostly unrelated item and we need to get our
+    items through. Another user who once copied something from me"* — the mention there is about a
+    third party, not about this project's editing, which is not what the gate was built for. A
+    suppressed page is **still read and still recorded**; it just stops holding the gate shut, and
+    [[Wikipedia talk:WikiProject Japan]] gates exactly as before. `shinto_miraheze/
+    enwiki_mention_suppressions.state` holds the page and its expiry, **and the date is not written
+    here** — same reason as the lockout below. Lift or extend by editing that file; never by editing
+    `check_enwiki_mentions.py`, `PAGES`, or a workflow.
+  - ⚠ So "do not attach a date to it" above means *do not invent one*. This one is Emma's, it is
+    scoped to one page, and it expires by itself. **Do not delete it as a stray override**, and do
+    not read the `[SUPPRESSED]` line in the daily check as a defect.
 - **⛔ WIKIDATA LOCKOUT — a month, Emma 2026-08-18:** *"I want a gate
   to be set up that there will be no wikidata editing for a month."* **The date is not
   written here on purpose.** This heading said *until 2026-09-18* until 2026-09-10, by which

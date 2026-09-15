@@ -20,12 +20,17 @@ def _counts(monkeypatch, mapping):
         v = mapping[title]
         return (None, v) if isinstance(v, str) else (v, None)
     monkeypatch.setattr(cem, "count_mentions", fake)
+    # These tests are about the BASE gate. Point the suppression file at something
+    # that does not exist so a live suppression in the repo cannot make them pass
+    # for the wrong reason — suppression behaviour has its own test file.
+    monkeypatch.setattr(cem, "SUPPRESSIONS",
+                        pathlib.Path(__file__).with_name("no-such-suppressions.state"))
 
 
 def test_clear_only_when_both_pages_are_at_zero(monkeypatch):
     _counts(monkeypatch, {p: 0 for p in cem.PAGES})
-    clear, _, failed = cem.evaluate()
-    assert clear and not failed
+    clear, _, failed, suppressed = cem.evaluate()
+    assert clear and not failed and suppressed == {}
 
 
 def test_any_mention_closes_the_gate(monkeypatch):
@@ -41,7 +46,7 @@ def test_a_failed_read_is_not_absence(monkeypatch):
     first, second = cem.PAGES
     # Zero mentions on the page we could read, and the other unreachable.
     _counts(monkeypatch, {first: 0, second: "URLError: timed out"})
-    clear, _, failed = cem.evaluate()
+    clear, _, failed, _sup = cem.evaluate()
     assert failed
     assert clear is False
 
