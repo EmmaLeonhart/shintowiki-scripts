@@ -59,10 +59,10 @@ from `ATOMIC_FILES`; they are not queue items.
     trust the IDs written here.
     ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
     in this repo lol."* Do not recreate it from any doc that still says five.
-    ✓ Live IDs, session of **2026-09-11**: `14f69b80` :03, `0bc8be25` :15, `e63f99f1` :42,
-    `d553fe57` 08:03, created and verified via `CronList` this session. The four listed before these
-    were the 2026-08-31 session's and were dead on arrival — the fourth such stale set this file has
-    carried. Trust `CronList`, not this line.
+    ✓ Live IDs, session of **2026-09-15**: `dd6be5f4` :03, `9922761b` :15, `7e0ea256` :42,
+    `8806bfcf` 08:03. `CronList` reported **no jobs at all** at the start of this session, which is
+    the normal state of a fresh one — the 2026-09-11 set listed here before was dead, as every
+    recorded set has been. Trust `CronList`, not this line.
     ⚠ The 08:03 briefing has **no skill in this repo** — `deep-briefing` lives in the hub and there is
     no `DAILY.md` here, so its prompt was written from what `DEVLOG.md` 2026-08-27 records of it:
     skip-check, push, then `AskUserQuestion` as the deliverable.
