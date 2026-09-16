@@ -38,14 +38,39 @@ old name is what made "has the statement" look like the right skip set in the fi
 
 ———
 
-Checked the rest of the citing generators for the same skip-on-existence shape. Six emit a citation
-without ever asking whether one is already there; of those, only `generate_sango_quickstatements.py`
-skips on the statement existing (by ITEM, on a role-qualified `P1448`). **Measured: 1,038 of 1,039
-sangō statements are referenced — one bare.** The ratchet is latent there and has cost essentially
-nothing, so it is not worth a change of its own; it rides with that file's next real change, like the
-rest of the transport migration. The other five skip for unrelated reasons or not at all
-(`souken_den` refuses to overwrite an extant `P571` by design; bunrei leans on QuickStatements' own
-dedup and re-emits with the reference each run, so it has no ratchet).
+Checked the rest of the citing generators for the same skip-on-existence shape.
+
+⚠ **The first pass of this sweep said "six generators" and that number was wrong.** It came from
+grepping for `S143`, so it saw only the generators citing *imported from Wikimedia project* and
+missed every one that cites with `S4656`, `S854` or `S248` alone — reisai, bunrei, kofun, hisousha,
+p3225, shakaku and the ranking qualifiers among them. Re-done by enumerating any `S<digits>` field in
+an emitted line: **20 citing generators**, classified by reading rather than by a second regex.
+
+The conclusion survives the correction, and no generator has a reachable unfixed ratchet:
+
+- **No skip set at all** — bunrei, doujou, hisousha, kofun, reisai, shintai. They regenerate from
+  scratch and re-emit every line, so a bare statement gets its reference back on the next run.
+  QuickStatements' own idempotency is doing the work. No ratchet.
+- **Reference-gated already** — saijin, honzon, court rank (all fixed this week), plus the four that
+  exist *for* this: `address_citation_backfill`, `address_citation_from_article`, `shakaku_references`
+  and `shikinaisha_kokugakuin_refs`, each gated on `FILTER NOT EXISTS { ?st prov:wasDerivedFrom ?r }`.
+  `modern_shrine_ranking_qualifiers` filters SPARQL-side too.
+- **Skips by design** — `souken_den` refuses to overwrite an extant `P571`, which is the point of it.
+- **Latent ratchet, reaches almost nothing** — two files, and neither is worth a change of its own:
+  - `generate_sango_quickstatements.py`: **1,038 of 1,039** sangō statements referenced. One bare.
+  - `generate_p3225_quickstatements.py`: skips any item already carrying `P3225`, so the 8,400 bare
+    statements on temples (23,505 total, 15,105 referenced) are out of its reach. But the jawiki
+    法人番号 field is ~1% filled and this generator was **exhausted at 2 lines on 2026-07-08** — it
+    cannot cite what the article does not carry, whatever its skip set says. The bare 8,400 came from
+    somewhere that is not us.
+
+Both ride with their file's next real change, like the rest of the transport migration.
+
+⚠ **`generate_souken_quickstatements.py` already solved this properly and is the precedent if it is
+ever wanted again**: a separate `uncited` map from a `FILTER NOT EXISTS` query, a VALUE-MATCH guard
+(cite a bare `P571` only where the article still states the same year), a mismatch counter, and a
+separate atomic file `souken_p571_citations.txt` so the backfill can be paced or stopped without
+touching the import. That is the shape — not a widened skip set.
 
 ## 2026-09-15 — The drip is alive: two missed days were the gate, not the pipeline
 
