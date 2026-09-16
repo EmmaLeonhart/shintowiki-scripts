@@ -1,3 +1,34 @@
+## 2026-09-16 — The drip ran itself: 468 edits, no intervention
+
+The 09-15 entry below ended on a prediction — that with the AI-noticeboard page suppressed and the
+lockout expired, *"the next scheduled loop fires the jobs with no further intervention."* It did.
+`cleanup-loop` 35070207661 fired on schedule at 07:45Z and every job in it succeeded:
+
+    Selected 500 random lines from 123096 available
+    === Results: 468 succeeded, 0 failed, 0 already absent ===
+
+09:05:14Z → 14:06:31Z, five hours, which is the documented profile (500 edits at [20, 50]s delays
+average ~4.9h against the job's 350-minute timeout — `direct-daily-edits.yml` says so, and the last
+five standalone runs were 5h09m, 5h01m, 5h04m, 5h00m, 5h00m). **The runtime is not a symptom of
+anything; it is the pace.**
+
+The 32 that were not edits are the two gates doing their jobs, not failures: `SKIP: Q29511926 —
+Fraxinus.cs edited it on 2026-09-13` is the per-item freshness gate declining to touch what another
+contributor just touched, and 11 lines came back `OK: Skipped (already exists)`, which is the
+submitter re-checking live Wikidata before every edit. That re-check is also why a month of staged
+atomic files being stale costs nothing.
+
+Also this run: all twelve orchestrators green, including `property-orchestrator` and
+`talk-orchestrator`, which both failed on 09-15. That failure was never explained — the logs returned
+`BlobNotFound` before anyone read them — and it has not recurred. Recorded as unexplained, not as
+resolved.
+
+⚠ **A green sync job does not mean the wiki was reached.** `git-synced-sync` reports `success` while
+printing *"Wiki editing is locked — skipping the git-synced sync this run"*. Every wiki-writing job
+behaves that way under the lockout, so the run list looks healthy while nothing reaches Miraheze.
+Today's edit-test still failed with the Cloudflare challenge (fresh probe, `cf-ray
+a3c07bad4d3855da-LAX`), locked to 09-18.
+
 ## 2026-09-15 — Temple P825: the same unreachable-bare-statement ratchet, closed before it cost anything
 
 The shrine half was fixed earlier today. `generate_honzon_quickstatements.py` had the identical
