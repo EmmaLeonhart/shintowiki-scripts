@@ -64,13 +64,10 @@ rather than invented.
 Output: shinto_honorifics.txt (an ATOMIC_FILES entry -> the daily drip).
 """
 import io
-import json
 import os
 import re
 import sys
 import time
-import urllib.parse
-import urllib.request
 
 _here = os.path.dirname(os.path.abspath(__file__))
 _root = _here
@@ -78,11 +75,11 @@ while _root != os.path.dirname(_root) and not os.path.isdir(os.path.join(_root, 
     _root = os.path.dirname(_root)
 if _root not in sys.path:
     sys.path.insert(0, _root)
-# Imported unconditionally on purpose. This used to sit in a try/except whose handler was
-#         WIKIDATA_USER_AGENT = <a non-canonical hand-built agent>
-# marked `pragma: no cover`. That is a silent fail-OPEN in a system whose whole design is
-# fail-closed: any import hiccup would quietly put the wrong domain on Wikidata
-# requests, untested and invisible. An unimportable agent must stop the run instead.
+# The User-Agent moved into wdqs_transport with the request. It still imports
+# WIKIDATA_USER_AGENT unconditionally, for the reason this comment used to carry:
+# the import used to sit in a try/except whose handler built a non-canonical agent
+# by hand, marked `pragma: no cover` — a silent fail-OPEN in a system whose whole
+# design is fail-closed. An unimportable agent must stop the run instead.
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
@@ -90,11 +87,10 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 
-from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
+import wdqs_transport
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-SPARQL = "https://query-main.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
 
 KAMI_CLASS = "Q524158"           # kami
@@ -148,13 +144,7 @@ EXCLUDED = {
 
 
 def sparql(query):
-    url = SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT,
-                                               "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=90) as r:
-        if r.status == 429:                     # repo policy: bail, never retry
-            raise SystemExit("429 from WDQS — bailing, no retries (CLAUDE.md)")
-        return json.loads(r.read().decode("utf-8"))["results"]["bindings"]
+    return wdqs_transport.query(query)
 
 
 # ── The honorific forms. HARDCODED, deliberately. ────────────────────────────

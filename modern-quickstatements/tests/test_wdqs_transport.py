@@ -74,7 +74,34 @@ MIGRATED = ("generate_invalid_p825_removals.py",
             # Adopted 2026-09-15 with its own skip-set fix, same cadence and the
             # same client as its saijin sibling: no retry, no throttle, and a
             # `if r.status == 429` after a successful urlopen that can never fire.
-            "generate_honzon_quickstatements.py")
+            "generate_honzon_quickstatements.py",
+            # ── Adopted 2026-09-16, as one batch, and the batching needs a word ──
+            # The queue item says migration "rides with each file's next real
+            # change", because it is per-file reading and NOT uniformly an upgrade.
+            # That still holds. What the reading found is a SUBCLASS where it is
+            # uniform: a file whose only 429 handling is `if r.status == 429` after
+            # a successful urlopen. That branch is unreachable — urllib raises
+            # HTTPError on a 429 and never returns a response to test (proved
+            # against a local server that answers 429: the with-body never runs) —
+            # and none of these five had any retry construct at all. So the whole
+            # documented policy was absent from every one of them, and the module
+            # is strictly stronger. No judgement call was left per file.
+            #
+            # These five are the members of that subclass whose ONLY urlopen was
+            # the WDQS one, so nothing else had to move to satisfy the assertion
+            # below. The rest of the subclass also fetches ja.wikipedia or the
+            # Wikidata API through urlopen; converting those fetchers is each
+            # file's own change, on the cadence above.
+            "generate_bunrei_qualifier_repair.py",
+            "generate_reisai_qualifier_repair.py",
+            # ⚠ This one paced itself with a bare `wd_pace()` — READ_INTERVAL,
+            # **0.3s** — for a SPARQL caller, which `wd_pace.py` tells you in its
+            # own docstring not to do, and it fires one query per property pair.
+            # 0.5s in generate_court_rank_quickstatements.py was called out as the
+            # figure from the incident that set the 2.5s floor; this was lower.
+            "generate_kami_parent_qualifiers.py",
+            "generate_sango_quickstatements.py",
+            "generate_shinto_honorifics.py")
 
 
 def _mod():
@@ -173,6 +200,53 @@ def test_the_throttle_is_in_the_transport():
     src = open(os.path.join(MQ, "wdqs_transport.py"), encoding="utf-8").read()
     assert "_last_call" in src and "time.monotonic()" in src, (
         "the throttle is no longer enforced inside query()")
+
+
+def test_a_429_check_after_a_successful_urlopen_can_never_fire():
+    """The mechanism that made the 2026-09-16 batch a uniform upgrade rather than a
+    judgement call — pinned because it is the whole argument.
+
+    Eleven WDQS callers in this repo carried, or carried until that batch::
+
+        with urllib.request.urlopen(req, timeout=180) as r:
+            if r.status == 429:
+                raise SystemExit("429 from WDQS — bailing.")
+
+    which reads as the repo's unconditional 429 policy and is not it. urllib's
+    default opener raises `HTTPError` for any non-2xx, so the body of that `with`
+    never runs on a 429 and `r.status` is always a success code. The policy held in
+    those files only by accident, through an uncaught traceback.
+
+    Asserted against a real server rather than from memory, because "urlopen raises
+    on 4xx" is exactly the kind of thing that gets asserted confidently and wrongly.
+    """
+    import http.server
+    import threading
+    import urllib.error
+
+    class _H(http.server.BaseHTTPRequestHandler):
+        def do_GET(self):
+            self.send_response(429)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+
+        def log_message(self, *a):
+            pass
+
+    srv = http.server.HTTPServer(("127.0.0.1", 0), _H)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    try:
+        reached = False
+        try:
+            with urllib.request.urlopen(f"http://127.0.0.1:{srv.server_port}/", timeout=10) as r:
+                reached = r.status
+        except urllib.error.HTTPError as e:
+            assert e.code == 429
+        assert reached is False, (
+            "urlopen returned a 429 response instead of raising, so `if r.status == 429` "
+            "would be live after all — re-read the migration note in MIGRATED above")
+    finally:
+        srv.shutdown()
 
 
 def test_the_copy_pasted_transports_are_gone():

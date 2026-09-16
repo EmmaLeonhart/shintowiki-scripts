@@ -1,3 +1,62 @@
+## 2026-09-16 — Five more WDQS transports, and the one subclass where migrating is not a judgement call
+
+The queue item's rule stands: migrating a WDQS caller onto `wdqs_transport` is per-file reading and
+is **not** uniformly an upgrade, so it rides with each file's next real change. What the reading
+found today is a subclass where it *is* uniform, and the reason is mechanical.
+
+Eleven files carried this, and three more like it:
+
+    with urllib.request.urlopen(req, timeout=180) as r:
+        if r.status == 429:
+            raise SystemExit("429 from WDQS — bailing.")
+
+That reads as the repo's unconditional 429 policy and is not it. **urllib's default opener raises
+`HTTPError` for any non-2xx**, so the body of that `with` never runs on a 429 and `r.status` is
+always a success code. Checked against a local server that answers 429 rather than asserted from
+memory — the `with` body never executed — and pinned as
+`test_a_429_check_after_a_successful_urlopen_can_never_fire`.
+
+Fourteen files are in that subclass, and none of them has a live `except HTTPError` 429 branch or
+any retry construct around its WDQS call either. (kofun's loop is `for q in (q1, q2)`; the loops in
+address-citation, p3225, shakaku and souken are in their ja.wikipedia fetchers.) So the entire
+documented policy — bail on 429, back off 15/45/135 on 5xx and truncation, 2.5s spacing — was
+absent from every one, and the shared module is strictly stronger with nothing left to weigh.
+
+**Migrated: the five whose ONLY urlopen was the WDQS one**, so nothing else had to move to satisfy
+`test_the_copy_pasted_transports_are_gone`:
+
+* `generate_bunrei_qualifier_repair.py`, `generate_reisai_qualifier_repair.py`
+* `generate_kami_parent_qualifiers.py` — ⚠ this one paced itself with a bare `wd_pace()`, which is
+  `READ_INTERVAL`, **0.3s**. `wd_pace.py` says in its own docstring not to pace a SPARQL caller at
+  `READ_INTERVAL`, and the file fires one query per property pair. 0.5s was called out yesterday as
+  the figure from the incident that set the 2.5s floor; this was lower than that.
+* `generate_sango_quickstatements.py`, `generate_shinto_honorifics.py`
+
+Adopters 6 → 11. All five live-checked against WDQS after the swap: `kami_parent.sparql` and
+`honorifics.sparql` each returned `Shinto shrine`, `sango.items_with_sango_role()` 1,070 QIDs, the
+bunrei repair query 124 rows and the reisai repair query 3. The User-Agent is unchanged by the swap
+— `ua_for("https://query-main.wikidata.org/sparql")` is `WIKIDATA_USER_AGENT`, which is what the
+transport sends.
+
+**What is NOT migrated, and why, so it is not re-derived.** Eight of the remaining nine also fetch
+ja.wikipedia, rakuten or the Wikidata API through `urlopen`; that fetcher has to move to `requests`
+first (what `generate_court_rank_quickstatements.py` did) or the no-raw-urlopen assertion cannot
+tell an adopter from a file that regrew a WDQS client. The ninth,
+`shinto_miraheze/build_ronsha_ranking_queue.py`, has only the one urlopen and would swap cleanly —
+but `wdqs_transport` lives in `modern-quickstatements/` and a plain `import wdqs_transport` does not
+reach across, so wiring it is a cross-subproject dependency decision, not a mechanical swap.
+`generate_description_fixes.py` carries the dead line too but is **not** in the subclass: it has a
+live `except HTTPError` 429 bail beside it, so the dead line there is decoration.
+
+**And one real defect, surfaced by the new test rather than by looking for it.**
+`test_sparql_retries_a_short_read.py` sets `mod.urllib.request.urlopen = fake_urlopen` — the shared
+module — and its autouse fixture restored only `time.sleep`, while its docstring claimed parity with
+the sibling file that restores both. Nothing caught it because no later test in the suite used the
+real `urlopen`; the moment one did, it failed in the *other* file with `AttributeError: 'str' object
+has no attribute 'full_url'`, raised from a `fake_urlopen` defined in this one. Fixture now restores
+both. Suite: 2,237 pass, and still 1,886 pass with `modern-quickstatements/tests/` listed first,
+which is the ordering `ci.yml`'s argument order otherwise hides.
+
 ## 2026-09-16 — The drip ran itself: 468 edits, no intervention
 
 The 09-15 entry below ended on a prediction — that with the AI-noticeboard page suppressed and the

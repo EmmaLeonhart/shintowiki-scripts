@@ -49,18 +49,16 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
-from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import io
-import json
 import os
 import re
 import shutil
 import sys
 import time
 import urllib.parse
-import urllib.request
 
+import wdqs_transport
 from infobox_fields import field_pattern
 from generate_souken_quickstatements import (
     embedded_titles,
@@ -71,9 +69,6 @@ from generate_souken_quickstatements import (
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = "sango_p1448.txt"
 OUTPUT = os.path.join(HERE, OUTPUT_FILE)
-
-WDQS = "https://query-main.wikidata.org/sparql"
-UA = WIKIDATA_USER_AGENT
 
 TEMPLATE = "Template:日本の寺院"
 SANGO = "Q11058522"        # sangō — "a part of name of Buddhist temples (in Japan)"
@@ -145,13 +140,7 @@ def items_with_sango_role():
     """QIDs already carrying P1448 qualified as a sangō — never re-add."""
     q = ("SELECT ?item WHERE { ?item p:%s ?st . ?st pq:%s wd:%s }"
          % (P_OFFICIAL_NAME, P_ROLE, SANGO))
-    url = WDQS + "?" + urllib.parse.urlencode({"query": q, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        rows = json.load(r)["results"]["bindings"]
+    rows = wdqs_transport.query(q)
     return {b["item"]["value"].rsplit("/", 1)[-1] for b in rows}
 
 

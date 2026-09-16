@@ -43,13 +43,40 @@ from `ATOMIC_FILES`; they are not queue items.
   `modern-quickstatements/wdqs_transport.py` is the target, and it now carries the repo's 15/45/135
   so adopting it cannot downgrade anyone.
 
-  Adopters: 6. The last three joined on the tick of their own reference fix — the intended
+  Adopters: 11. The first three joined on the tick of their own reference fix — the intended
   cadence. `generate_court_rank_quickstatements.py` had **0.5s** spacing (the exact figure CLAUDE.md
   cites from the incident that set the 2.5s floor) and a 5/10/15 backoff; the saijin and honzon
   generators each had no retry, no throttle, and a 429 check placed after a *successful* urlopen,
   which never fires. All strictly improved, all live-checked after the swap. The transport's own tests no longer
   leave `time.sleep` monkeypatched process-wide — that had `test_wd_pace_actually_waits` failing
   for any run that put this directory ahead of `tests/`, which `ci.yml`'s argument order hid.
+
+  ⭐ **The one subclass where migration IS uniform, found 2026-09-16 by reading:** a file whose
+  ONLY 429 handling is `if r.status == 429` inside a `with urlopen(...)` block. That branch is
+  unreachable — urllib's default opener raises `HTTPError` on any non-2xx, so the body never runs
+  and `r.status` is always a success code (proved against a local server answering 429, pinned in
+  `test_wdqs_transport.py`). None of them had a retry construct either, so the whole documented
+  policy was absent and the module is strictly stronger with no per-file judgement left. Verified by
+  reading every member: none has an `except HTTPError` 429 branch, and none has a retry construct
+  around its WDQS call (kofun's loop is `for q in (q1, q2)`; the loops in address-citation, p3225,
+  shakaku and souken are in their ja.wikipedia fetchers).
+
+  **Fourteen files are in it.** The five whose only urlopen was the WDQS one migrated as one batch.
+  Eight of the other nine also fetch ja.wikipedia, rakuten or the Wikidata API through urlopen, so
+  each needs that fetcher moved to `requests` as well (what `generate_court_rank_quickstatements.py`
+  did) before it can satisfy the no-raw-urlopen assertion — still each file's own next-real-change:
+  `generate_address_citation_from_article.py`, `generate_kofun_quickstatements.py`,
+  `generate_ontology_census_page.py`, `generate_p3225_quickstatements.py`,
+  `generate_shakaku_references.py`, `generate_souken_quickstatements.py`, `match_kokugakuin_ids.py`,
+  `parse_onkamui_bunrei.py` (WDQS half only — its rakuten fetcher carries the same dead check and is
+  a different host).
+  - ⚠ **`generate_description_fixes.py` is NOT in the subclass** even though it carries the dead
+    line: it has a live `except HTTPError` 429 bail beside it, so the dead line is decoration, not
+    the whole policy. It keeps its own transport by the module's own note.
+  - ⚠ **`shinto_miraheze/build_ronsha_ranking_queue.py` is in the subclass and was left alone**:
+    `wdqs_transport` lives in `modern-quickstatements/`, and a plain `import wdqs_transport` does
+    not reach across. Nothing here imports that way yet, so wiring it is a cross-subproject
+    dependency decision, not a mechanical swap.
 
 - **Pinned tail (keep last)**
 

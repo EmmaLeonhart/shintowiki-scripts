@@ -23,6 +23,7 @@ import json
 import os
 import sys
 import time
+import urllib.request
 
 import pytest
 
@@ -31,17 +32,27 @@ MQ = os.path.dirname(HERE)
 
 
 @pytest.fixture(autouse=True)
-def _restore_sleep():
-    """`mod.time` is the shared `time` module, so `mod.time.sleep = ...` below is a
-    process-wide patch. Restore it: an unrestored one leaves
+def _restore_the_globals_these_tests_patch():
+    """`mod.time` and `mod.urllib` are the shared modules, so `mod.time.sleep = ...`
+    and `mod.urllib.request.urlopen = ...` below are process-wide patches. Restore
+    BOTH: an unrestored sleep leaves
     `tests/test_wikidata_pacing.py::test_wd_pace_actually_waits` failing for anyone
     who runs this directory ahead of `tests/`. Same note as
-    `test_wdqs_transport.py`."""
-    sleep = time.sleep
+    `test_wdqs_transport.py`.
+
+    ⚠ `urlopen` was missing from here until 2026-09-16, while the docstring claimed
+    parity with the sibling file that restores both. Nothing caught it because no
+    later test in the suite used the real `urlopen` — so the leak was invisible
+    exactly until one did, and then it failed in the *other* file with
+    `AttributeError: 'str' object has no attribute 'full_url'` raised from a
+    `fake_urlopen` defined in THIS one. A half-restored fixture is worse than none:
+    it reads as the guard being present.
+    """
+    sleep, urlopen = time.sleep, urllib.request.urlopen
     try:
         yield
     finally:
-        time.sleep = sleep
+        time.sleep, urllib.request.urlopen = sleep, urlopen
 
 
 def _mod():
