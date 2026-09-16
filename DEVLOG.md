@@ -1,3 +1,17 @@
+## 2026-09-16 — The four session crons, recreated again, and `durable` is a no-op
+
+`CronList` reported **no jobs at all** at the start of this session, as it has at the start of every
+session that has checked. Recreated: `6d83d5f0` work-loop :03, `15ff3f04` auto-flush :15,
+`403be522` status-report :42, `6730a8f1` briefing 08:03. Four, not five — there is no debrief cron
+(Emma retired it 2026-08-28).
+
+Worth writing down because `queue.md` and CLAUDE.md both reach for `durable: true` as the fix for
+crons dying with the session: **`durable` does nothing.** `CronCreate`'s own parameter description
+says so — *"Has no effect — durable persistence is not available. All jobs are session-only
+(in-memory, gone when this Claude session ends)."* So recreating the set at the start of every
+session is not a workaround for a persistence mechanism that keeps failing; it is the only
+mechanism there is. The pinned tail item is doing exactly what it should.
+
 ## 2026-09-16 — Five more WDQS transports, and the one subclass where migrating is not a judgement call
 
 The queue item's rule stands: migrating a WDQS caller onto `wdqs_transport` is per-file reading and

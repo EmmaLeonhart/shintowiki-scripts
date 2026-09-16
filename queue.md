@@ -86,10 +86,13 @@ from `ATOMIC_FILES`; they are not queue items.
     trust the IDs written here.
     ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
     in this repo lol."* Do not recreate it from any doc that still says five.
-    ✓ Live IDs, session of **2026-09-15 (evening)**: `73ea2203` :03, `4db94229` :15, `68188662` :42,
-    `5824b16c` 08:03. `CronList` reported **no jobs at all** at the start of this session — including
-    the set created earlier the same day, which died with that session. Every recorded set this file
-    has carried has been dead by the time the next session read it. Trust `CronList`, not this line.
+    ✓ Live IDs, session of **2026-09-16**: `6d83d5f0` :03, `15ff3f04` :15, `403be522` :42,
+    `6730a8f1` 08:03. `CronList` again reported **no jobs at all** at the start of this session, as
+    it has at the start of every session that has checked. Every recorded set this file has carried
+    has been dead by the time the next session read it. Trust `CronList`, not this line.
+    ⚠ `durable: true` does nothing — `CronCreate` says so in its own parameter description ("Has no
+    effect — durable persistence is not available"). So the recreate-every-session step is the only
+    mechanism there is, not a workaround for one that keeps failing.
     ⚠ The 08:03 briefing has **no skill in this repo** — `deep-briefing` lives in the hub and there is
     no `DAILY.md` here, so its prompt was written from what `DEVLOG.md` 2026-08-27 records of it:
     skip-check, push, then `AskUserQuestion` as the deliverable.
