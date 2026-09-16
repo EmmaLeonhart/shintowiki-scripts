@@ -1,3 +1,33 @@
+## 2026-09-16 (evening) — Read the rest of the WDQS callers; it is not a second batch
+
+Having closed the dead-429 subclass, the obvious next move was the population with no retry
+construct at all — the same property that made the first batch uniform. Reading it says no, for a
+reason a grep does not show:
+
+⛔ **The `sparql_csv` callers ask WDQS for CSV, not JSON bindings.** `wdqs_transport.query` returns
+`results.bindings`. Pointing one of these at it would not fail loudly; it would hand the caller a
+different shape. Six files — the two list-membership generators and four `report_*`. Each would need
+its parsing rewritten in the same change. That is a per-file rewrite, not a transport swap.
+
+What is genuinely bare-and-JSON is seven files, four of them outside `modern-quickstatements/`, so
+each needs the `sys.path` entry `build_ronsha_ranking_queue.py` now carries. Left for their own
+ticks; the cadence in the queue item is unchanged and this time the reading supports it rather than
+contradicting it.
+
+Also worth writing down: **a `try` with no loop is not a retry.** Six more files catch the failure
+and exit rather than trying again. In a survey they read as covered.
+
+⚠ And a trap in measuring this at all: **migrating a file deletes its endpoint constant**, so it
+drops out of a `wikidata.org/sparql` grep. The first pass of this scan reported 11 adopters when
+there were 20, purely because nine of them no longer contain the string being searched for. Count
+`import wdqs_transport`.
+
+**State of the machine, checked not assumed:** `cleanup-loop` 35070207661 ran the generator job
+green today, so the twenty migrated generators run daily through it and get exercised on the next
+07:45Z fire. The only non-success steps in that job are the four that fetch from Miraheze — skipped,
+Cloudflare, already the subject of its own queue item. Nothing is rotting behind
+`continue-on-error`.
+
 ## 2026-09-16 (later still) — The last WDQS transport carries the repo's backoff
 
 `generate_description_fixes.py` is the one WDQS caller deliberately NOT on the shared module — its

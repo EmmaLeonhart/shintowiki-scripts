@@ -68,6 +68,28 @@ from `ATOMIC_FILES`; they are not queue items.
   - Five of the eight carried a byte-identical `_get` for the ja.wikipedia API. **It is still five
     copies.** A shared ja.wp transport is a second module and was not smuggled into this change.
 
+  **Read the rest the same evening. It is NOT a second batch, and here is the specific reason.**
+  The obvious next population is "has no retry construct at all" — the same thing that made the
+  dead-429 subclass uniform. Reading it, it splits:
+  - ⛔ **`sparql_csv` callers ask WDQS for CSV, not JSON bindings.** `wdqs_transport.query` returns
+    `results.bindings`, so pointing one of these at it does not fail loudly — it hands the caller a
+    different shape. `generate_list_membership_rebuild.py`, `generate_list_membership_removals.py`,
+    `report_commons_label_accuracy.py`, `report_list_structure.py`, `report_orphan_shikinaisha.py`,
+    `report_ronsha_list_membership.py`. Migrating one means rewriting its parsing too. **Do not
+    batch these.**
+  - The genuinely bare JSON ones are `audit_orphan_descriptions.py`, `generate_bunrei_quickstatements.py`,
+    `generate_p958_candidates_page.py`, `fetch_shrines_tokiponize.py`,
+    `generate_chinese_quickstatements.py`, `generate_korean_quickstatements.py`,
+    `site/generate_orphan_label_fixes.py` — and the last four are outside `modern-quickstatements/`,
+    so each needs the `sys.path` entry `build_ronsha_ranking_queue.py` now carries.
+  - A `try` with no loop is not a retry: `audit_duplicate_rankings.py`, `audit_model_adoption.py`,
+    `generate_saijin_deity_research.py`, `investigate_property_modelling.py`,
+    `generate_religious_building_labels.py`, `create_shrine_ranking_pages.py` catch and exit rather
+    than try again. They read as covered in a grep and are not.
+  - ⚠ **Do not re-derive the adopter count from a `wikidata.org/sparql` grep.** Migrating a file
+    deletes its endpoint constant, so it drops out of that grep entirely — which made the adopter
+    count read as 11 instead of 20 on the first pass of this scan. Count `import wdqs_transport`.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
