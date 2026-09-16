@@ -68,14 +68,6 @@ from `ATOMIC_FILES`; they are not queue items.
   - Five of the eight carried a byte-identical `_get` for the ja.wikipedia API. **It is still five
     copies.** A shared ja.wp transport is a second module and was not smuggled into this change.
 
-- [ ] `generate_description_fixes.py` backs off **30/60/90 over three attempts**. That is the linear
-  pattern `wdqs_transport` was mistakenly lifted from and then corrected away from, and CLAUDE.md
-  names 15/45/135 as the floor. Its 429 bail and its retryable set already match; only the
-  escalation diverges. It is the one WDQS caller deliberately NOT on the shared transport — it is
-  imported by its sibling — so this is a change to the file itself, on its next real touch. The
-  transport's docstring used to claim it "has the same policy"; that claim is corrected, not the
-  code.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

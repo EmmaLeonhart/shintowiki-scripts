@@ -1,3 +1,26 @@
+## 2026-09-16 (later still) — The last WDQS transport carries the repo's backoff
+
+`generate_description_fixes.py` is the one WDQS caller deliberately NOT on the shared module — its
+sibling imports from it, so moving it has its own blast radius. That is about where the code lives,
+not about which policy it follows, and the two had drifted:
+
+* backoff was **30/60/90 over three attempts**, linear. CLAUDE.md names 15/45/135 as the floor and
+  `generate_genbu_ids.py` implements it. Now `15 * (3 ** attempt)` over **four** — four, because at
+  three only 15 and 45 fire and the documented third step is decoration.
+* no fatal-status branch, so a **414 URI Too Long** would spend the whole backoff to fail
+  identically. `wdqs_transport` learned that on 2026-09-15 at a cost of three minutes. This
+  transport is the likelier of the two to meet one: it also sends the query in a GET URL, and this
+  script is the one that builds VALUES batches.
+
+**This file is where `wdqs_transport` was copied from**, which is why the linear version shipped
+there for a day before it was caught — and why the shared module's docstring then described this
+file as having "the same policy" when the escalation did not match. Both halves are now true.
+
+Pinned by driving the real function, not by reading it: `test_the_backoff_is_the_repo_pattern_not_
+the_linear_one_this_file_invented` measures the actual sleeps as `[15, 45, 135]` over 4 attempts, and
+`test_a_client_error_is_not_retried` asserts a 414 is attempted once. Live-checked after the change.
+Suite 2,241.
+
 ## 2026-09-16 (later) — The dead-429 subclass is closed: 14 files, adopters 6 -> 20
 
 Second pass on the same finding. The earlier entry migrated the five whose only `urlopen` was the

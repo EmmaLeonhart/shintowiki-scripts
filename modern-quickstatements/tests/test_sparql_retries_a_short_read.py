@@ -120,3 +120,53 @@ def test_the_retryable_set_names_the_short_read():
         "the whole sweep")
     for name in ("urllib.error.URLError", "TimeoutError"):
         assert name in src, f"{name} is no longer retried"
+
+
+def test_the_backoff_is_the_repo_pattern_not_the_linear_one_this_file_invented():
+    """15/45/135 over FOUR attempts, measured by driving the real function.
+
+    This file carried **30/60/90 over three** until 2026-09-16, and it is where
+    `wdqs_transport.py` was copied from — so the shared module shipped with the
+    linear version for a day, and its docstring then described this file as having
+    "the same policy" when the escalation did not match. CLAUDE.md names 15/45/135
+    as the floor and `generate_genbu_ids.py` implements it.
+
+    Four attempts, not three: at three only 15 and 45 ever fire and the documented
+    third step never happens.
+    """
+    mod = _mod()
+    waits = []
+    calls = {"n": 0}
+
+    def fake_urlopen(req, timeout=None):
+        calls["n"] += 1
+        raise mod.urllib.error.HTTPError(req.full_url, 504, "Gateway", {}, None)
+
+    mod.urllib.request.urlopen = fake_urlopen
+    mod.time.sleep = lambda s=0: waits.append(s)
+    mod.WDQS_THROTTLE = 0
+    with pytest.raises(mod.urllib.error.HTTPError):
+        mod.sparql("SELECT * WHERE {}")
+    assert calls["n"] == mod.RETRIES == 4, f"{calls['n']} attempts, RETRIES={mod.RETRIES}"
+    # The throttle is patched to 0 but still calls sleep(0) once before the loop.
+    assert [w for w in waits if w] == [15, 45, 135], waits
+
+
+def test_a_client_error_is_not_retried():
+    """A 414 cannot succeed on a retry, and this transport is the likelier of the
+    two to see one: it sends the query in a GET URL and this script builds VALUES
+    batches. wdqs_transport learned it on 2026-09-15 at a cost of three minutes of
+    dutiful backoff."""
+    mod = _mod()
+    calls = {"n": 0}
+
+    def fake_urlopen(req, timeout=None):
+        calls["n"] += 1
+        raise mod.urllib.error.HTTPError(req.full_url, 414, "URI Too Long", {}, None)
+
+    mod.urllib.request.urlopen = fake_urlopen
+    mod.time.sleep = lambda *_: None
+    mod.WDQS_THROTTLE = 0
+    with pytest.raises(mod.urllib.error.HTTPError):
+        mod.sparql("SELECT * WHERE {}")
+    assert calls["n"] == 1, f"a 414 was retried {calls['n']} times"

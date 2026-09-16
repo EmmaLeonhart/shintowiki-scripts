@@ -88,6 +88,14 @@ from shinto_miraheze.ua_for import ua_for
 # VALUES batches of 150 across the whole target set, and 429'd itself out of every weekly refresh
 # since 2026-08-02. The 429 was reported for weeks as an external blocker; it was ours.
 WDQS_THROTTLE = 2.5
+# FOUR attempts, because that is what makes the backoff 15/45/135. At three, only 15
+# and 45 ever fire and the documented third step is decoration. Same constant and
+# same reasoning as wdqs_transport.RETRIES; this file is deliberately not on that
+# module (its sibling imports from here), so the policy is carried, not shared.
+RETRIES = 4
+# Client errors that cannot succeed on a retry — the server has answered and the
+# answer will not change because we ask again. Mirrors wdqs_transport.FATAL_STATUS.
+FATAL_STATUS = frozenset({400, 401, 403, 404, 405, 414, 431})
 _LAST_CALL = 0.0  # monotonic stamp of the last WDQS request; see sparql()
 
 
@@ -105,7 +113,7 @@ CLASSES = [
 ]
 
 
-def sparql(query, retries=3):
+def sparql(query, retries=RETRIES):
     """Every WDQS call in this script and in generate_description_adds.py goes through here.
 
     The throttle lives INSIDE this function on purpose. It used to sit at the call sites, which
@@ -132,6 +140,14 @@ def sparql(query, retries=3):
     #
     # 429 still bails immediately and without retries (CLAUDE.md). Everything else
     # that means "the transport failed" now backs off and tries again.
+    #
+    # ⚠ The backoff was **30/60/90 over three attempts** until 2026-09-16 — linear,
+    # and not the repo's pattern. CLAUDE.md names 15/45/135 as the floor and
+    # `generate_genbu_ids.py` implements it. `wdqs_transport.py` was lifted from
+    # THIS function and shipped with the linear version for a day before that was
+    # caught; the docstring there then described this file as having "the same
+    # policy", which it did not. Four attempts, not three, because that is what
+    # makes the third documented step actually fire.
     transient = (json.JSONDecodeError, urllib.error.URLError, TimeoutError,
                  ConnectionError, http.client.IncompleteRead)
     for attempt in range(retries):
@@ -145,15 +161,23 @@ def sparql(query, retries=3):
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 raise SystemExit("429 from WDQS — bailing.")
+            if e.code in FATAL_STATUS:
+                # Deterministic: retrying spends the whole backoff to fail the same
+                # way. `wdqs_transport` learned this on 2026-09-15 from a 414 URI
+                # Too Long that cost three minutes of dutiful backoff; this
+                # transport sends its query in a GET URL too, and this script builds
+                # VALUES batches, so it is the likelier of the two to hit it.
+                print(f"  {e.code} — not retryable, giving up", flush=True)
+                raise
             if attempt == retries - 1:
                 raise
-            wait = 30 * (attempt + 1)
+            wait = 15 * (3 ** attempt)
             print(f"  {e.code} — retrying in {wait}s", flush=True)
             time.sleep(wait)
         except transient as e:
             if attempt == retries - 1:
                 raise
-            wait = 30 * (attempt + 1)
+            wait = 15 * (3 ** attempt)
             print(f"  {type(e).__name__}: {e} — retrying in {wait}s", flush=True)
             time.sleep(wait)
 
