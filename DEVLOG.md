@@ -36,6 +36,17 @@ stays a usable signal; behaviour there is unchanged (same params, same UA, same 
 old name is what made "has the statement" look like the right skip set in the first place.
 `test_honzon_image_forms.py` follows it, and its existing-deity case is now a *cited*-deity case.
 
+———
+
+Checked the rest of the citing generators for the same skip-on-existence shape. Six emit a citation
+without ever asking whether one is already there; of those, only `generate_sango_quickstatements.py`
+skips on the statement existing (by ITEM, on a role-qualified `P1448`). **Measured: 1,038 of 1,039
+sangō statements are referenced — one bare.** The ratchet is latent there and has cost essentially
+nothing, so it is not worth a change of its own; it rides with that file's next real change, like the
+rest of the transport migration. The other five skip for unrelated reasons or not at all
+(`souken_den` refuses to overwrite an extant `P571` by design; bunrei leans on QuickStatements' own
+dedup and re-emits with the reference each run, so it has no ratchet).
+
 ## 2026-09-15 — The drip is alive: two missed days were the gate, not the pipeline
 
 Emma: *"key thgn is just that the wikidata editing script is supposed to run now consistently and try
