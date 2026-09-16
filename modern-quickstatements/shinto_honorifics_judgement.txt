@@ -7,12 +7,12 @@
 
 Q10948069	ja=宗像三女神	en=Three Goddesses of Munakata	EXCLUDED by Emma — complicated ontology
 Q1114013	ja=住吉三神	en=Sumiyoshi sanjin	EXCLUDED by Emma — complicated ontology
+Q11326733	ja=ハヤアキツヒコ・ハヤアキツヒメ	en=Hayaakitsuhiko and Hayaakitsuhime	EXCLUDED by Emma — complicated ontology
 Q11455406	ja=家宅六神	en=Katakurokushin	EXCLUDED by Emma — complicated ontology
 Q11574224	ja=甕速日神	en=Mikahayahi-no-Mikoto	ja says 神 (Q140588460); en says a different honorific (Q140588459)
 Q11619891	ja=菊理媛神	en=Kikurihime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
 Q134862171	ja=闇龗神	en=kuraokaminokami	ja says 神 (Q140588460); en says a different honorific (Q140588457)
 Q135493035	ja=草奈井比売神	en=Kusanoi-hime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
-Q136731213	ja=速佐須良比売神	en=Hayasasurahime	ja says 神 (Q140588460); en says a different honorific (Q140588570)
 Q140446059	ja=竜田姫命	en=Tatsuta-hime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
 Q140446061	ja=大山三所権現	en=Three Deities of Mount Daisen	EXCLUDED by Emma — complicated ontology
 Q140446119	ja=三足比咩命	en=Mitarashi-hime	ja says 命 (Q140588459); en says a different honorific (Q140588570)
