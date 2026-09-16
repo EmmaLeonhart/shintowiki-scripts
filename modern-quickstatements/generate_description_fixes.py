@@ -137,8 +137,10 @@ def sparql(query, retries=3):
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=300) as r:
-                if r.status == 429:
-                    raise SystemExit("429 from WDQS — bailing.")
+                # An `if r.status == 429` used to sit here. It could never fire —
+                # urllib raises HTTPError on a 429, so this body never runs on one —
+                # and it read as the policy while the real bail was the clause
+                # below. Removed 2026-09-16; the live one is `except HTTPError`.
                 return json.load(r)["results"]["bindings"]
         except urllib.error.HTTPError as e:
             if e.code == 429:

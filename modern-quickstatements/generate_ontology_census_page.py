@@ -29,6 +29,10 @@ import io
 import json
 import os
 import sys
+
+import requests
+
+import wdqs_transport
 import time
 import urllib.parse
 import urllib.request
@@ -64,13 +68,9 @@ _LBL = {}
 
 
 def sparql(q, timeout=300):
-    url = SPARQL + "?" + urllib.parse.urlencode({"query": q, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT,
-                                               "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        if r.status == 429:                 # repo policy: bail, never retry
-            raise SystemExit("429 from WDQS — bailing, no retries (CLAUDE.md)")
-        return json.loads(r.read().decode("utf-8"))["results"]["bindings"]
+    # `timeout` is accepted and ignored: wdqs_transport uses one 300s timeout for
+    # every caller. No call site here passed anything else.
+    return wdqs_transport.query(q)
 
 
 def labels(pids):
@@ -80,9 +80,11 @@ def labels(pids):
         url = API + "?" + urllib.parse.urlencode({
             "action": "wbgetentities", "ids": "|".join(todo[i:i + 50]),
             "props": "labels", "languages": "en", "format": "json"})
-        req = urllib.request.Request(url, headers={"User-Agent": WIKIDATA_USER_AGENT})
-        with urllib.request.urlopen(req, timeout=60) as r:
-            d = json.loads(r.read().decode("utf-8"))
+        r = requests.get(url, headers={"User-Agent": WIKIDATA_USER_AGENT}, timeout=60)
+        if r.status_code == 429:
+            raise SystemExit("429 from the Wikidata API — bailing.")
+        r.raise_for_status()
+        d = r.json()
         for pid, e in d.get("entities", {}).items():
             _LBL[pid] = e.get("labels", {}).get("en", {}).get("value", "")
         time.sleep(0.3)

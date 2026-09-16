@@ -31,6 +31,10 @@ import json
 import os
 import re
 import sys
+
+import wdqs_transport
+
+import requests
 import time
 import urllib.parse
 import urllib.request
@@ -58,13 +62,7 @@ _SHAKAKU_RE = re.compile(r"\|\s*社格\s*=\s*([^\n]*)")
 
 
 def sparql(query):
-    url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        return json.load(r)["results"]["bindings"]
+    return wdqs_transport.query(query)
 
 
 def unsourced_with_sitelink():
@@ -86,14 +84,32 @@ def unsourced_with_sitelink():
 
 
 def _get(params):
+    """One ja.wikipedia API call, retried. `requests`, not `urlopen`, on purpose.
+
+    The WDQS half of this file goes through `wdqs_transport`, and
+    `test_wdqs_transport.py` reads a raw `urlopen` call anywhere in an
+    adopter as evidence it regrew its own WDQS client. It cannot tell this fetcher
+    apart from that, so the assertion stays sharp and the fetcher moves — same
+    choice `generate_court_rank_quickstatements.py` made.
+
+    ⚠ One behaviour change beyond the transport: a 429 now BAILS instead of being
+    retried three times. `urlopen` raised `HTTPError` on it, which `except
+    Exception` swallowed straight into the retry loop — the opposite of the repo's
+    unconditional 429 policy, and invisible because nothing distinguished it from a
+    timeout.
+    """
     params = dict(params)
     params["format"] = "json"
-    req = urllib.request.Request(JA_API + "?" + urllib.parse.urlencode(params),
-                                 headers={"User-Agent": UA})
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                return json.load(r)
+            r = requests.get(JA_API, params=params,
+                             headers={"User-Agent": UA}, timeout=60)
+            if r.status_code == 429:
+                raise SystemExit("429 from ja.wikipedia — bailing.")
+            r.raise_for_status()
+            return r.json()
+        except SystemExit:
+            raise
         except Exception:
             if attempt == 2:
                 raise

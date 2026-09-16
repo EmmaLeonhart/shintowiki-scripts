@@ -37,9 +37,16 @@ copy-pasted**, all written on 2026-09-12/13:
 * `generate_ronsha_role_qualifiers.py`
 * `generate_misplaced_form_removals.py`
 
-Others adopt it when they are next touched. `generate_description_fixes.py` keeps
-its own — it has the same policy and is imported by its sibling, so moving it is a
-separate change with its own blast radius.
+Others adopt it when they are next touched — and as of 2026-09-16 that is all of
+them but one. `generate_description_fixes.py` keeps its own, because it is imported
+by its sibling and moving it is a separate change with its own blast radius.
+
+⚠ This paragraph used to say that file "has the same policy". It does not, and this
+module's own closing note is the evidence: its backoff is **30/60/90 over three
+attempts**, the linear pattern lifted from it and then corrected here. Its 429 bail
+and its retryable set do match; its escalation does not. Aligning it is that file's
+own next change, not a docs edit — recorded in `queue.md` rather than done quietly
+here.
 
 ## The policy, which is CLAUDE.md's and not this module's
 

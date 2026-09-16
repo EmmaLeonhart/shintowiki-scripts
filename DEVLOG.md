@@ -1,3 +1,54 @@
+## 2026-09-16 (later) — The dead-429 subclass is closed: 14 files, adopters 6 -> 20
+
+Second pass on the same finding. The earlier entry migrated the five whose only `urlopen` was the
+WDQS one; this finishes the other nine, which is the whole subclass.
+
+Eight of them also fetched ja.wikipedia, the Wikidata API, jmapps or rakuten through `urlopen`, so
+each of those fetchers moved to `requests` first — `test_wdqs_transport.py` reads a raw urlopen
+anywhere in an adopter as evidence it regrew its own WDQS client, and that assertion is the evidence,
+so the fetcher moves rather than the assertion narrowing. Same choice
+`generate_court_rank_quickstatements.py` made.
+
+⚠ **Each of those conversions also turned a 429 into a bail, and that is the larger fix.** Under
+`urlopen` a 429 raised `HTTPError`, which the fetcher's `except Exception` swallowed straight back
+into a three-attempt retry loop — the exact opposite of the repo's unconditional 429 policy, and
+invisible because nothing distinguished it from a timeout. So these files were not merely missing
+the policy on the WDQS side; they were hammering on the API side after being told to stop.
+
+`parse_onkamui_bunrei.py`'s rakuten fetcher carried the same dead `if r.status == 429` beside the
+WDQS one. Moving it to `requests` — which RETURNS a 429 response rather than raising — is what makes
+that check fire for the first time. Kept, not deleted.
+
+`shinto_miraheze/build_ronsha_ranking_queue.py` was the one held back this morning as a
+cross-subproject dependency question. It is not one: the file already writes its output into
+`modern-quickstatements/` (`QS_OUT`), so it already knows where that directory is. One explicit
+`sys.path` entry, pinned by `test_the_one_adopter_outside_this_directory_is_wired_and_stays_wired`
+because an import that works only through a hand-inserted path is the kind someone tidies away.
+
+**Live-checked after the swap, every one:** the five `sparql`/`_wdqs` helpers each returned
+`Shinto shrine`; kofun `existing_sets()` 1,272 shaped and 226 with P571; p3225 86,224 QIDs;
+ontology-census `labels()` resolved P31 and P131 through the converted API fetcher;
+`parse_onkamui.all_shrines()` 30,476; all five converted `_get`s round-tripped 伊勢神宮 from
+ja.wikipedia; the jmapps streamed 4 KB read returned the same `<title>` as before.
+
+⚠ **And one thing I broke and put back.** Calling `match_kokugakuin_ids.harvest([1], {})` to test the
+converted fetcher wrote its empty index over `kokugakuin_title_index.json` — `harvest` unconditionally
+dumps the index at the end, so probing it with an empty dict truncates the cache. Restored from git
+(59,832 bytes) and re-verified against a real id out-of-band instead. The function is behaving as
+written; the mistake was using it as a probe.
+
+**Last trace removed.** `generate_description_fixes.py` kept the dead line even though it has a live
+`except HTTPError` bail beside it, so the line was decoration that read as the policy. Gone; the
+repo-wide scan for `.status == 429` outside comments is now clean.
+
+⚠ **What that file still has, and is not fixed here:** a **30/60/90 over three attempts** backoff —
+the linear pattern `wdqs_transport` was lifted from and then corrected away from, against CLAUDE.md's
+15/45/135. The transport's docstring claimed that file "has the same policy". It does not. The
+docstring is corrected and the divergence is a queue item; the retry timing of a file that is
+deliberately off the shared transport was not changed quietly in a commit about something else.
+
+Adopters 6 -> 20. Suite 2,239 pass, and 1,888 with `modern-quickstatements/tests/` listed first.
+
 ## 2026-09-16 — The four session crons, recreated again, and `durable` is a no-op
 
 `CronList` reported **no jobs at all** at the start of this session, as it has at the start of every

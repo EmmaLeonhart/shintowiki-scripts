@@ -15,6 +15,7 @@ caller cannot forget it.
 
 import importlib.util
 import os
+import re
 import sys
 import time
 import urllib.request
@@ -44,6 +45,12 @@ def _restore_the_globals_these_tests_patch():
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MQ = os.path.dirname(HERE)
+
+# Strip comments and docstrings before scanning a source file, so a note ABOUT
+# the dead 429 check is not mistaken for the check itself. Several of the
+# adopters carry exactly such a note.
+COMMENT_RE = re.compile(r"#.*")
+DOCSTRING_RE = re.compile(r'"""[\s\S]*?"""')
 
 MIGRATED = ("generate_invalid_p825_removals.py",
             "generate_ronsha_role_qualifiers.py",
@@ -101,7 +108,31 @@ MIGRATED = ("generate_invalid_p825_removals.py",
             # figure from the incident that set the 2.5s floor; this was lower.
             "generate_kami_parent_qualifiers.py",
             "generate_sango_quickstatements.py",
-            "generate_shinto_honorifics.py")
+            "generate_shinto_honorifics.py",
+            # ── The rest of the subclass, same day, second pass ──────────────
+            # These eight also fetched ja.wikipedia, the Wikidata API, jmapps or
+            # rakuten through urlopen, so each needed that fetcher moved to
+            # `requests` before it could satisfy the assertion below. Five of them
+            # carried a byte-identical `_get`; it is still five copies, not one
+            # shared helper — building a second shared transport for the ja.wp API
+            # is its own change and was not smuggled into this one.
+            #
+            # ⚠ Each conversion also turned a 429 from a retried exception into a
+            # bail. Under `urlopen` a 429 raised `HTTPError`, and `except Exception`
+            # swallowed it straight back into the retry loop — the opposite of the
+            # repo's unconditional policy, and indistinguishable from a timeout.
+            "generate_address_citation_from_article.py",
+            "generate_kofun_quickstatements.py",
+            "generate_ontology_census_page.py",
+            "generate_p3225_quickstatements.py",
+            "generate_shakaku_references.py",
+            "generate_souken_quickstatements.py",
+            "match_kokugakuin_ids.py",
+            # ⚠ Its rakuten fetcher carried the SAME dead `if r.status == 429`
+            # beside the WDQS one. Moving it to `requests` — which returns a 429
+            # response rather than raising — is what makes that check fire for the
+            # first time. It was kept, not deleted.
+            "parse_onkamui_bunrei.py")
 
 
 def _mod():
@@ -257,6 +288,49 @@ def test_the_copy_pasted_transports_are_gone():
         assert "import wdqs_transport" in src, f"{name} no longer uses the transport"
         assert "urllib.request.urlopen" not in src, (
             f"{name} calls urlopen directly again, outside the retry policy")
+
+
+def test_the_one_adopter_outside_this_directory_is_wired_and_stays_wired():
+    """`shinto_miraheze/build_ronsha_ranking_queue.py` is the only WDQS caller
+    outside `modern-quickstatements/`, so `MIGRATED` above cannot hold it — those
+    paths are all resolved against `MQ`.
+
+    It needs an explicit `sys.path` entry for this directory to import the
+    transport at all. That reads like a new cross-subproject dependency and is not
+    one: the file already writes its output straight into this directory. Pinned
+    because an import that exists only through a hand-inserted path is exactly the
+    kind that gets tidied away by someone who cannot see what it is for.
+    """
+    path = os.path.join(os.path.dirname(MQ), "shinto_miraheze",
+                        "build_ronsha_ranking_queue.py")
+    src = open(path, encoding="utf-8").read()
+    assert "import wdqs_transport" in src, "it no longer uses the shared transport"
+    assert 'path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))' in src, (
+        "the sys.path entry that makes `import wdqs_transport` resolve from "
+        "shinto_miraheze/ is gone; the import above cannot work without it")
+    assert "urllib.request.urlopen" not in src, (
+        "it calls urlopen directly again, outside the retry policy")
+
+
+def test_no_adopter_kept_the_unreachable_429_check():
+    """The check that made this whole subclass migrate must not come back.
+
+    `if r.status == 429` inside a `with urlopen(...)` block is unreachable — see
+    `test_a_429_check_after_a_successful_urlopen_can_never_fire`. A `requests`
+    caller testing `r.status_code` is a DIFFERENT and live thing, and is allowed;
+    this asserts only on the dead form.
+    """
+    paths = [os.path.join(MQ, n) for n in MIGRATED]
+    paths.append(os.path.join(os.path.dirname(MQ), "shinto_miraheze",
+                              "build_ronsha_ranking_queue.py"))
+    offenders = []
+    for path in paths:
+        src = open(path, encoding="utf-8").read()
+        body = COMMENT_RE.sub("", DOCSTRING_RE.sub("", src))
+        if re.search(r"\.status\s*==\s*429", body):
+            offenders.append(os.path.basename(path))
+    assert not offenders, (
+        "these adopters carry the unreachable 429 check again: " + ", ".join(offenders))
 
 
 def test_the_backoff_is_the_repo_pattern_not_the_one_it_was_lifted_from():

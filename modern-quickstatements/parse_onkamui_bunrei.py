@@ -31,10 +31,13 @@ Output: bunrei_onkamui.txt — atomic QS lines
 Report: onkamui_parse_report.txt (networks, match rates, unresolved heads).
 """
 import io
-import json
 import os
 import re
 import sys
+
+import requests
+
+import wdqs_transport
 import urllib.parse
 import urllib.request
 import os as _uos, sys as _usys
@@ -140,12 +143,16 @@ def head_qid(name):
 def fetch(url=URL, cache=None):
     if cache and os.path.exists(cache):
         return open(cache, encoding="utf-8", errors="replace").read()
-    req = urllib.request.Request(url, headers={"User-Agent": ua_for(url)})
     wd_pace(SPARQL_INTERVAL)
-    with urllib.request.urlopen(req, timeout=120) as r:
-        if r.status == 429:
-            raise SystemExit("429 from rakuten — bailing.")
-        html = r.read().decode("utf-8", errors="replace")
+    r = requests.get(url, headers={"User-Agent": ua_for(url)}, timeout=120)
+    # ⚠ This check was dead too, and for the same reason as the WDQS one it sat
+    # beside: under `urlopen` a 429 raised `HTTPError` and the `with` body never
+    # ran. Moving to `requests`, which RETURNS a 429 response rather than raising,
+    # is what makes it fire for the first time.
+    if r.status_code == 429:
+        raise SystemExit("429 from rakuten — bailing.")
+    r.raise_for_status()
+    html = r.content.decode("utf-8", errors="replace")
     if cache:
         open(cache, "w", encoding="utf-8", newline="\n").write(html)
     return html
@@ -225,14 +232,7 @@ def all_shrines():
           '?item wdt:P31 wd:Q845945 ; rdfs:label ?ja . FILTER(LANG(?ja)="ja") '
           'OPTIONAL { ?item wdt:P131* ?pref . ?pref wdt:P31 wd:Q50337 ; '
           'rdfs:label ?prefLabel . FILTER(LANG(?prefLabel)="ja") } }')
-    url = WDQS + "?" + urllib.parse.urlencode({"query": qy, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
-    wd_pace(SPARQL_INTERVAL)
-    with urllib.request.urlopen(req, timeout=300) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        rows = json.load(r)["results"]["bindings"]
+    rows = wdqs_transport.query(qy)
     return [(x["item"]["value"].rsplit("/", 1)[-1], x["ja"]["value"],
              x.get("prefLabel", {}).get("value")) for x in rows]
 

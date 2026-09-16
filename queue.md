@@ -27,8 +27,8 @@ from `ATOMIC_FILES`; they are not queue items.
     wikis.
 
 - [ ] WDQS transports: **69 callers, each hand-rolled.** All 8 that had a retry loop catching only
-  `ReadTimeout`/`ConnectionError` are now covered (2026-09-14). What is left is the rest, and it is
-  per-file reading.
+  `ReadTimeout`/`ConnectionError` are now covered (2026-09-14), and the whole dead-429 subclass is
+  closed (2026-09-16, below). What is left is the rest, and it is per-file reading.
 
   ⛔ **DO NOT PUT A NUMBER ON HOW MANY ARE FRAGILE.** Three regexes gave three wrong answers:
   *"65 of 72"* missed every `except Exception` and `except (ValueError, KeyError)`, which already
@@ -43,40 +43,38 @@ from `ATOMIC_FILES`; they are not queue items.
   `modern-quickstatements/wdqs_transport.py` is the target, and it now carries the repo's 15/45/135
   so adopting it cannot downgrade anyone.
 
-  Adopters: 11. The first three joined on the tick of their own reference fix — the intended
+  **Adopters: 20.** The first six joined on the tick of their own reference fix — the intended
   cadence. `generate_court_rank_quickstatements.py` had **0.5s** spacing (the exact figure CLAUDE.md
   cites from the incident that set the 2.5s floor) and a 5/10/15 backoff; the saijin and honzon
-  generators each had no retry, no throttle, and a 429 check placed after a *successful* urlopen,
-  which never fires. All strictly improved, all live-checked after the swap. The transport's own tests no longer
-  leave `time.sleep` monkeypatched process-wide — that had `test_wd_pace_actually_waits` failing
-  for any run that put this directory ahead of `tests/`, which `ci.yml`'s argument order hid.
+  generators each had no retry, no throttle, and a 429 check placed after a *successful* urlopen.
 
-  ⭐ **The one subclass where migration IS uniform, found 2026-09-16 by reading:** a file whose
-  ONLY 429 handling is `if r.status == 429` inside a `with urlopen(...)` block. That branch is
-  unreachable — urllib's default opener raises `HTTPError` on any non-2xx, so the body never runs
-  and `r.status` is always a success code (proved against a local server answering 429, pinned in
-  `test_wdqs_transport.py`). None of them had a retry construct either, so the whole documented
-  policy was absent and the module is strictly stronger with no per-file judgement left. Verified by
-  reading every member: none has an `except HTTPError` 429 branch, and none has a retry construct
-  around its WDQS call (kofun's loop is `for q in (q1, q2)`; the loops in address-citation, p3225,
-  shakaku and souken are in their ja.wikipedia fetchers).
+  ✅ **The dead-429 subclass is CLOSED (2026-09-16) — 14 files, all migrated.** A file whose only
+  429 handling was `if r.status == 429` inside a `with urlopen(...)` block. That branch is
+  unreachable: urllib's default opener raises `HTTPError` on any non-2xx, so the body never runs and
+  `r.status` is always a success code. Proved against a local server answering 429, and pinned as
+  `test_a_429_check_after_a_successful_urlopen_can_never_fire`. None of the 14 had a retry construct
+  around its WDQS call either, so the whole documented policy was absent from every one — no
+  per-file judgement was left, which is what made migrating them as a batch right rather than a
+  breach of the cadence above. `test_no_adopter_kept_the_unreachable_429_check` stops it coming back.
+  - Eight of them also fetched ja.wikipedia, the Wikidata API, jmapps or rakuten through `urlopen`;
+    each of those fetchers moved to `requests` too, because the transport test reads a raw urlopen
+    anywhere in an adopter as evidence it regrew its own WDQS client.
+  - ⚠ **Each of those conversions also turned a 429 into a bail.** Under `urlopen` a 429 raised
+    `HTTPError` and `except Exception` swallowed it straight back into a 3× retry loop — the
+    opposite of the repo's unconditional policy, and indistinguishable from a timeout.
+  - `shinto_miraheze/build_ronsha_ranking_queue.py` needed an explicit `sys.path` entry, since the
+    transport lives in `modern-quickstatements/`. Not a new cross-subproject dependency: that file
+    already writes its output into that directory.
+  - Five of the eight carried a byte-identical `_get` for the ja.wikipedia API. **It is still five
+    copies.** A shared ja.wp transport is a second module and was not smuggled into this change.
 
-  **Fourteen files are in it.** The five whose only urlopen was the WDQS one migrated as one batch.
-  Eight of the other nine also fetch ja.wikipedia, rakuten or the Wikidata API through urlopen, so
-  each needs that fetcher moved to `requests` as well (what `generate_court_rank_quickstatements.py`
-  did) before it can satisfy the no-raw-urlopen assertion — still each file's own next-real-change:
-  `generate_address_citation_from_article.py`, `generate_kofun_quickstatements.py`,
-  `generate_ontology_census_page.py`, `generate_p3225_quickstatements.py`,
-  `generate_shakaku_references.py`, `generate_souken_quickstatements.py`, `match_kokugakuin_ids.py`,
-  `parse_onkamui_bunrei.py` (WDQS half only — its rakuten fetcher carries the same dead check and is
-  a different host).
-  - ⚠ **`generate_description_fixes.py` is NOT in the subclass** even though it carries the dead
-    line: it has a live `except HTTPError` 429 bail beside it, so the dead line is decoration, not
-    the whole policy. It keeps its own transport by the module's own note.
-  - ⚠ **`shinto_miraheze/build_ronsha_ranking_queue.py` is in the subclass and was left alone**:
-    `wdqs_transport` lives in `modern-quickstatements/`, and a plain `import wdqs_transport` does
-    not reach across. Nothing here imports that way yet, so wiring it is a cross-subproject
-    dependency decision, not a mechanical swap.
+- [ ] `generate_description_fixes.py` backs off **30/60/90 over three attempts**. That is the linear
+  pattern `wdqs_transport` was mistakenly lifted from and then corrected away from, and CLAUDE.md
+  names 15/45/135 as the floor. Its 429 bail and its retryable set already match; only the
+  escalation diverges. It is the one WDQS caller deliberately NOT on the shared transport — it is
+  imported by its sibling — so this is a change to the file itself, on its next real touch. The
+  transport's docstring used to claim it "has the same policy"; that claim is corrected, not the
+  code.
 
 - **Pinned tail (keep last)**
 

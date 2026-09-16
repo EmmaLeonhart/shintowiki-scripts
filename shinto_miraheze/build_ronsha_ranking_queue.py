@@ -23,8 +23,6 @@ import json
 import os
 import re
 import sys
-import urllib.parse
-import urllib.request
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
@@ -32,10 +30,16 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 
-from shinto_miraheze.ua_contact import contact
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
+# ⚠ wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here. That looks like a new
+# cross-subproject dependency and is not one: this file already writes its output
+# straight into that directory (QS_OUT below), so it already knows where it is.
+# The alternative was leaving the only WDQS caller outside modern-quickstatements
+# with no 429 policy and no retry at all.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
 
-from shinto_miraheze.ua_for import ua_for
+import wdqs_transport
+from shinto_miraheze.ua_contact import contact
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTDIR = os.path.join(ROOT, "ronsha_ranking_review")
@@ -76,8 +80,9 @@ def already_handled():
             if m:
                 done.add(m.group(1))
     return done
-WDQS = "https://query-main.wikidata.org/sparql"
-# UA removed 2026-08-19: the request sites now resolve the agent from the URL via
+# Endpoint, User-Agent and pacing all live in wdqs_transport now. It keeps the
+# query-main split endpoint and resolves the same Wikidata agent ua_for() did.
+# UA removed 2026-08-19: the request sites resolved the agent from the URL via
 # ua_for(), so this hand-built literal was dead and could only drift. Was: UA = f"shintowiki-ronsha/1.0 (https://shinto.miraheze.org; {contact('wikidata')})"
 
 TASK = (
@@ -93,14 +98,7 @@ TASK = (
 
 
 def sparql(query):
-    url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
-    wd_pace(SPARQL_INTERVAL)
-    with urllib.request.urlopen(req, timeout=180) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        return json.load(r)["results"]["bindings"]
+    return wdqs_transport.query(query)
 
 
 def targets():

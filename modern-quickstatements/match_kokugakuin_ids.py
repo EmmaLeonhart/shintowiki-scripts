@@ -29,6 +29,10 @@ import json
 import os
 import re
 import sys
+
+import requests
+
+import wdqs_transport
 import time
 import urllib.parse
 import urllib.request
@@ -64,13 +68,7 @@ _DISTRICT_SUFFIX = ("郡", "国", "島")
 
 
 def sparql(query):
-    url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": ua_for(url), "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        return json.load(r)["results"]["bindings"]
+    return wdqs_transport.query(query)
 
 
 def fetch_targets():
@@ -117,12 +115,22 @@ def harvest(ids, index):
         key = str(i)
         if key in index:
             continue
-        req = urllib.request.Request(DET.format(i), headers={"User-Agent": ua_for(DET.format(i))})
+        det = DET.format(i)
         try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                html = r.read(4096).decode("utf-8", "replace")
+            # `requests`, not `urlopen` — see the note on _get in the sibling
+            # generators: a raw urlopen in an adopter cannot be told apart from a
+            # regrown WDQS client, which is what the transport test asserts on.
+            r = requests.get(det, headers={"User-Agent": ua_for(det)}, timeout=60,
+                             stream=True)
+            if r.status_code == 429:
+                raise SystemExit("429 from jmapps — bailing.")
+            r.raise_for_status()
+            # Only the <title> is wanted; the original read 4096 bytes and stopped.
+            html = r.raw.read(4096, decode_content=True).decode("utf-8", "replace")
             m = _TITLE_RE.search(html)
             index[key] = m.group(1).strip() if m else None
+        except SystemExit:
+            raise
         except Exception as e:
             print(f"  id {i}: fetch failed ({e}) — leaving uncached")
         time.sleep(THROTTLE)
