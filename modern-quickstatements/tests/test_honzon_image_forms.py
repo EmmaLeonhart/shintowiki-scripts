@@ -62,9 +62,15 @@ def _mod():
     return mod
 
 
-def _emit(links, have=()):
+def _emit(links, referenced=()):
     """Run one temple's field through the generator. `links` are jawiki titles;
-    they resolve to themselves here so the test reads as the field does."""
+    they resolve to themselves here so the test reads as the field does.
+
+    `referenced` is the skip set, and it is the pairs whose P825 statement ALREADY
+    CARRIES A REFERENCE — not merely the pairs that exist. See
+    test_honzon_is_referenced.py; a bare statement is deliberately re-emitted so
+    the citation can reach it.
+    """
     mod = _mod()
     lines, counts = [], collections.Counter()
     mod.emit_for_temple(
@@ -72,7 +78,7 @@ def _emit(links, have=()):
         resolved={t: t for t in links},
         refused={DESIGNATION},
         forms={HIBUTSU, BUDDHARUPA},
-        have=set(have))
+        referenced=set(referenced))
     return sorted(h + t for h, t in lines), counts
 
 
@@ -93,11 +99,12 @@ def test_the_qualifier_sits_between_the_value_and_its_sources():
     assert body.index("|P3831|") < body.index("|S143|")
 
 
-def test_a_form_after_an_EXISTING_deity_becomes_a_qualifier_only_line():
-    """The case that carries most of the value: the honzon has already landed, so
-    there is no new statement to hang the form on inline. Without this the
-    qualifier would simply never be emitted for any temple already imported."""
-    lines, counts = _emit([DEITY, HIBUTSU], have=[("Q1", DEITY)])
+def test_a_form_after_a_CITED_deity_becomes_a_qualifier_only_line():
+    """The case that carries most of the value: the honzon has already landed AND
+    is cited, so there is no new statement to hang the form on inline. Without
+    this the qualifier would simply never be emitted for any temple already
+    imported — which, temple P825 being 96.8% referenced, is nearly all of them."""
+    lines, counts = _emit([DEITY, HIBUTSU], referenced=[("Q1", DEITY)])
     assert lines == [f'Q1|P825|{DEITY}|P3831|{HIBUTSU}']
     assert counts["qualified"] == 1 and counts["dup"] == 1
 

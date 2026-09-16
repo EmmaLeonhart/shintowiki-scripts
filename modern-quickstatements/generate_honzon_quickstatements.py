@@ -40,22 +40,27 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import collections
 import io
-import json
 import os
 import re
 
 import sys
 import time
 import urllib.parse
-import urllib.request
+
+import requests
 
 from infobox_fields import field_pattern
+
+# Plain module import, matching the other adopters — test_wdqs_transport.py checks
+# for exactly this line as the evidence a file has not grown its own client back.
+import wdqs_transport
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JA_API = "https://ja.wikipedia.org/w/api.php"
 # The class check below asks Wikidata, not jawiki, so _get takes an endpoint.
 WD_API = "https://www.wikidata.org/w/api.php"
-WDQS = "https://query-main.wikidata.org/sparql"
+# The SPARQL endpoint and its Accept header moved into wdqs_transport with the
+# transport itself. UA stays: the ja.wikipedia and Wikidata API calls still use it.
 UA = WIKIDATA_USER_AGENT
 TEMPLATE = "Template:日本の寺院"
 OUTPUT = os.path.join(HERE, "honzon_p825.txt")
@@ -190,14 +195,25 @@ _LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 
 
 def _get(params, api=None):
+    """One ja.wikipedia (or Wikidata) API call, retried three times.
+
+    `requests` rather than a raw urlopen, matching the other adopters: this file's
+    SPARQL now goes through `wdqs_transport`, and `test_wdqs_transport.py` reads a
+    hand-rolled urlopen anywhere in an adopter as evidence it regrew its own WDQS
+    client. Behaviour is unchanged — same params, same UA, same three attempts.
+    """
     params = dict(params)
     params["format"] = "json"
-    req = urllib.request.Request((api or JA_API) + "?" + urllib.parse.urlencode(params),
-                                 headers={"User-Agent": UA})
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                return json.load(r)
+            r = requests.get(api or JA_API, params=params,
+                             headers={"User-Agent": UA}, timeout=60)
+            if r.status_code == 429:
+                raise SystemExit("429 from the MediaWiki API — bailing.")
+            r.raise_for_status()
+            return r.json()
+        except SystemExit:
+            raise
         except Exception:
             if attempt == 2:
                 raise
@@ -263,20 +279,52 @@ def resolve_links(titles):
     return out
 
 
-def existing_pairs():
-    q = "SELECT ?s ?d WHERE { ?s wdt:P31 wd:Q5393308 ; wdt:P825 ?d . }"
-    url = WDQS + "?" + urllib.parse.urlencode({"query": q, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        if r.status == 429:
-            raise SystemExit("429 from WDQS — bailing.")
-        rows = json.load(r)["results"]["bindings"]
+def _pairs(rows):
     return {(b["s"]["value"].rsplit("/", 1)[-1], b["d"]["value"].rsplit("/", 1)[-1])
             for b in rows}
 
 
-def emit_for_temple(lines, counts, qid, url, links, resolved, refused, forms, have):
+def existing_pairs():
+    """Every (temple, honzon) P825 pair. COUNT ONLY — not the skip set.
+
+    ⚠ The `if r.status == 429` check this used to carry, after a SUCCESSFUL
+    urlopen, was dead code: urllib raises `HTTPError` on a 429 and never returns a
+    response to test. The transport bails on it properly.
+    """
+    return _pairs(wdqs_transport.query(
+        "SELECT ?s ?d WHERE { ?s wdt:P31 wd:Q5393308 ; wdt:P825 ?d . }"))
+
+
+def referenced_pairs():
+    """(temple, honzon) pairs whose P825 statement ALREADY carries a reference.
+
+    ⛔ THIS IS THE SKIP SET, not `existing_pairs()`. The shrine half of the same
+    property was fixed on 2026-09-15 for exactly this: skipping every pair that
+    merely exists means a statement that landed bare can never be given the
+    reference, because this generator is the only thing that knows which
+    ja.wikipedia article named the deity.
+
+    Temple P825 is in far better shape than the shrine half — 6,173 of 6,380
+    referenced, because we built nearly all of it ourselves from 本尊 with the
+    citation attached. So this closes a ratchet rather than recovering a
+    population: the 207 bare ones become reachable, and future runs stop locking
+    in their own.
+
+    Re-emitting does not duplicate: QuickStatements matches the existing
+    (item, property, value) and attaches the reference to that statement. A form
+    qualifier seen later in the same field is then inlined on that line instead of
+    needing the separate qualifier-only shape, which is the same edit either way.
+    """
+    return _pairs(wdqs_transport.query("""
+      SELECT ?s ?d WHERE {
+        ?s wdt:P31 wd:Q5393308 ; p:P825 ?st .
+        ?st ps:P825 ?d .
+        ?st prov:wasDerivedFrom ?ref .
+      }
+    """))
+
+
+def emit_for_temple(lines, counts, qid, url, links, resolved, refused, forms, referenced):
     """Append this temple's QuickStatements to `lines`, tallying into `counts`.
 
     `lines` holds [head, source-tail] pairs so a qualifier can still be inserted
@@ -320,7 +368,10 @@ def emit_for_temple(lines, counts, qid, url, links, resolved, refused, forms, ha
                 lines[idx][0] += f"|{FORM_QUALIFIER}|{d}"
             counts["qualified"] += 1
             continue
-        if (qid, d) in have:
+        if (qid, d) in referenced:
+            # Already cited, so there is nothing to add — but it EXISTS, so a form
+            # seen later in the same field still has a statement to qualify, via
+            # the qualifier-only branch above.
             counts["dup"] += 1
             pending = (d, None)
             continue
@@ -335,7 +386,10 @@ def main():
     args = ap.parse_args()
 
     have = existing_pairs()
-    print(f"{len(have)} existing (temple, honzon) P825 pairs on Wikidata")
+    referenced = referenced_pairs()
+    print(f"{len(have)} existing (temple, honzon) P825 pairs on Wikidata; "
+          f"{len(referenced)} referenced, "
+          f"{len(have - referenced)} bare and reachable for enrichment")
     titles = temple_titles()
     if args.limit:
         titles = titles[:args.limit]
@@ -382,7 +436,7 @@ def main():
     for (title, qid), links in sorted(shrine_deities.items()):
         url = "https://ja.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
         emit_for_temple(lines, counts, qid, url, dict.fromkeys(links),
-                        resolved, refused, forms, have)
+                        resolved, refused, forms, referenced)
     lines = sorted({head + tail for head, tail in lines})
     with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))

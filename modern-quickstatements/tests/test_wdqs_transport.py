@@ -70,7 +70,11 @@ MIGRATED = ("generate_invalid_p825_removals.py",
             # than narrowing the urlopen assertion below — the assertion is the
             # evidence, and an adopter with a raw urlopen in it cannot be told
             # apart from one that regrew a WDQS client.
-            "generate_saijin_quickstatements.py")
+            "generate_saijin_quickstatements.py",
+            # Adopted 2026-09-15 with its own skip-set fix, same cadence and the
+            # same client as its saijin sibling: no retry, no throttle, and a
+            # `if r.status == 429` after a successful urlopen that can never fire.
+            "generate_honzon_quickstatements.py")
 
 
 def _mod():

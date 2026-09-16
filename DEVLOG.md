@@ -1,3 +1,41 @@
+## 2026-09-15 — Temple P825: the same unreachable-bare-statement ratchet, closed before it cost anything
+
+The shrine half was fixed earlier today. `generate_honzon_quickstatements.py` had the identical
+fault — it skipped on `existing_pairs()`, every (temple, honzon) pair holding the statement at all —
+so a P825 that landed bare could never be given its citation, because this generator is the only
+thing that knows which ja.wikipedia article named the deity.
+
+Skip set is now `referenced_pairs()`, gated on `prov:wasDerivedFrom` through the statement node.
+Measured live after the change:
+
+    6,380 existing (temple, honzon) pairs; 6,173 referenced; 207 bare and reachable for enrichment
+    897 lines -> honzon_p825.txt  (81 enrichment of a bare statement, 762 new, 54 qualifier-only)
+
+**Unlike the shrine side this recovers almost nothing** — temple P825 is 96.8% referenced, because
+we built nearly all of it ourselves from the jawiki 本尊 field with `S143|Q177837|S4656` attached
+since the generator was written. 81 of the 207 bare pairs are reachable; the rest are on temples
+whose article has no infobox or names the honzon in plain text. What it closes is the ratchet:
+every future run would otherwise have locked in its own new bare statements the same way.
+
+⚠ The skip branch still sets `pending`, and that is load-bearing. A form (秘仏, 仏像) qualifies the
+deity most recently seen in the same 本尊 field, so a pair skipped for being cited must stay
+available for a later form to attach to via the qualifier-only line. Dropping it would silently
+lose the form on nearly every temple. `tests/test_honzon_is_referenced.py` pins that, the
+`prov:wasDerivedFrom` filter, and the fact that the query uses `p:`/`ps:` rather than the truthy
+`wdt:` shortcut — which carries no reference node, so a query written against it comes back empty
+and reads as "nothing is referenced".
+
+**Sixth adopter of `wdqs_transport`**, on the tick of its own reference fix, which is the intended
+cadence. Its hand-rolled client was the saijin generator's twin: no retry, no throttle, and an
+`if r.status == 429` placed after a *successful* urlopen — dead code, since urllib raises
+`HTTPError` on a 429 and never returns a response to test. The MediaWiki `_get` moved to `requests`
+in the same change so the "no raw urlopen in an adopter" assertion in `test_wdqs_transport.py`
+stays a usable signal; behaviour there is unchanged (same params, same UA, same three attempts).
+
+`emit_for_temple`'s parameter renamed `have` → `referenced`, which is the rename that matters — the
+old name is what made "has the statement" look like the right skip set in the first place.
+`test_honzon_image_forms.py` follows it, and its existing-deity case is now a *cited*-deity case.
+
 ## 2026-09-15 — The drip is alive: two missed days were the gate, not the pipeline
 
 Emma: *"key thgn is just that the wikidata editing script is supposed to run now consistently and try
