@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q21655265 -->
-<!-- JA: 三宮神社 | EN_LABEL: Sannomiya Shrine | BUCKET: a -->
-<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E4%B8%89%E5%AE%AE%E7%A5%9E%E7%A4%BE_%28%E5%90%89%E5%B2%A1%E7%94%BA%29 -->
-<!-- ANSWER: KANA: さんのみやじんじゃ -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q134989056 -->
+<!-- JA: 石上神社 | EN_LABEL: Isonokami Shrine | BUCKET: a -->
+<!-- ARTICLE: (none) -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): さんのみやじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): さんぐうじんじゃ
+  CANDIDATE A (from the English label): いそのかみじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): いしがみじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
@@ -14,4 +14,5 @@ Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), n
 When ANSWER is filled this file is done. -->
 
 == LEAD ==
-三宮神社（さんのみやじんじゃ）は、群馬県北群馬郡吉岡町大久保にある神社。式内社（名神大社）で、上野国三宮。旧社格は村社。
+(NO LEAD AVAILABLE — the jawiki article is a redirect, a disambiguation page, empty, or the item has no jawiki sitelink at all, so there is no first sentence to read a reading out of. This will never change on its own.
+The two candidates below are still real evidence: pick between them if you can, from the readings other shrines of this name carry or from the place-name the shrine is named for. Answer NO_KANA only if you genuinely cannot.)
