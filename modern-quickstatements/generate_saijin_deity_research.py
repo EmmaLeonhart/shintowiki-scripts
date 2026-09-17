@@ -7,7 +7,7 @@ The *research* companion to `generate_saijin_quickstatements.py`.
 `generate_saijin_quickstatements.py` is high-precision: it imports 祭神 P825 only
 for deities that jawiki editorially WIKILINKED, and skips every unlinked
 plain-text name. This script does the deferred deity RESEARCH the review doc
-called for (`docs/jawiki_infobox_import_review_2026-07.md`: "parse deity names,
+called for (`docs/script-rationale/jawiki_infobox_import_review_2026-07.md`: "parse deity names,
 match to kami items … Multi-deity + 主祭神 distinction via qualifier"), and adds:
 
   1. **Unlinked-name matching.** Plain-text 祭神 names are matched to Wikidata

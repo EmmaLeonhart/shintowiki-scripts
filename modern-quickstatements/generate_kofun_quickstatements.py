@@ -3,7 +3,7 @@
 generate_kofun_quickstatements.py
 ==================================
 Import kofun data from the jawiki {{日本の古墳}} infobox onto Wikidata — the
-new-class build from `docs/jawiki_infobox_import_review_2026-07.md`.
+new-class build from `docs/script-rationale/jawiki_infobox_import_review_2026-07.md`.
 
 Two fields, both conservative:
   * 形状 (mound shape) → an additional **P31 shape-class** statement. The

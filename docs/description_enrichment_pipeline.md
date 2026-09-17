@@ -106,7 +106,7 @@ and as one context signal in the cloud stages, but it cannot replace the
 pipeline. Corollary non-blocking: only 1 colliding item had a deity without an
 English label. Side finding: 6,841 colliding shrines have NO P825 at all —
 independent support for the jawiki 祭神 import
-(`docs/jawiki_infobox_import_review_2026-07.md`).
+(`docs/script-rationale/jawiki_infobox_import_review_2026-07.md`).
 
 ## Current implementation state (2026-07-07)
 

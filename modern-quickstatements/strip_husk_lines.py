@@ -3,7 +3,7 @@
 strip_husk_lines.py
 ===================
 Remove every staged QuickStatement whose SUBJECT is a ブルーノ・プラス-repurposed
-husk (queue.md A5; `docs/bruno_plus_analysis_2026-07.md`).
+husk (queue.md A5; `docs/script-rationale/bruno_plus_analysis_2026-07.md`).
 
 WHY THIS EXISTS AS A SEPARATE STEP. The husks arrive honestly and repeatedly:
 each one now IS the 大美和神社 / 近殿神社 / 見光寺 item on Wikidata, so any

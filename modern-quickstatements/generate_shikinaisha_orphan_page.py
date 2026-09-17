@@ -3,7 +3,7 @@
 
 Emma asked (Open questions, 2026-07): *"Yes, please respond to this thing with a
 link to the GitHub Pages thing, browsable table."* This is that page — the same
-data as `report_orphan_shikinaisha.py` writes to `docs/orphan_shikinaisha_2026-07.md`,
+data as `report_orphan_shikinaisha.py` writes to `docs/script-rationale/orphan_shikinaisha_2026-07.md`,
 but rendered as a filterable HTML table with the **twin entry QID surfaced** so the
 84 twin pairs can be eyeballed side by side.
 

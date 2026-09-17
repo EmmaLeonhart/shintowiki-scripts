@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Caution gate for the Wikidata drip while ブルーノ・プラス is active.
 
-Emma 2026-07-10, after reading `docs/bruno_plus_analysis_2026-07.md`:
+Emma 2026-07-10, after reading `docs/script-rationale/bruno_plus_analysis_2026-07.md`:
 
     "First of all, I think that we should have a one-week-long pause. … I want to
     have the freshness constraint of no editing until something hasn't been edited

@@ -162,7 +162,7 @@ TASK = (
 # this queue legitimately: each is a shrine with a jawiki sitelink and no P1814,
 # because the repurposing stripped what was there. Writing a reading to one would
 # be editing the husk and would look like a response to that editor.
-# Source: docs/bruno_plus_analysis_2026-07.md §3.2 and its damage table.
+# Source: docs/script-rationale/bruno_plus_analysis_2026-07.md §3.2 and its damage table.
 REPURPOSED = {
     "Q123044569",   # was Kamo Shrine (Odawara) -> repurposed into 大美和神社
     "Q134886554",   # was Chikadono Shrine (Saitama) -> repurposed into 近殿神社

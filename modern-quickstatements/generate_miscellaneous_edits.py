@@ -22,7 +22,7 @@ removal.
 here. A one-line fix that is not worth its own generator belongs in this list.
 
 **2. Wrong addresses on Shikinai Ronsha.**  `STATIC_REMOVALS`, 17 of them, decided
-by Emma on 2026-07-10 from `docs/ronsha_address_resolution_2026-07.md`. Each names
+by Emma on 2026-07-10 from `docs/script-rationale/ronsha_address_resolution_2026-07.md`. Each names
 the address to drop *and the address to keep*; the generator refuses to emit the
 removal unless it can see both of them live on the item, so a shrine can never be
 left with no address at all. See `ADDRESS_REMOVALS` below for how each was decided.

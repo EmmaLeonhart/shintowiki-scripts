@@ -11,7 +11,7 @@ name: Ontology Census (monthly)
 #
 # Monthly rather than daily because the shape of the ontology moves on the scale
 # of the drip (months), not the scale of a day. It replaces
-# docs/deity_qualifier_analysis_2026-07.md, a hand-written snapshot that only
+# docs/script-rationale/deity_qualifier_analysis_2026-07.md, a hand-written snapshot that only
 # counted qualifiers on P825 and that nothing regenerated — the exact failure
 # mode this workflow exists to prevent (CLAUDE.md: "Reports expire after a week").
 #

@@ -4,7 +4,7 @@ generate_p3225_quickstatements.py
 ==================================
 Import 法人番号 (Japan Corporate Number) from the jawiki {{日本の寺院}} temple
 infobox onto Wikidata as P3225 — the first build from
-`docs/jawiki_infobox_import_review_2026-07.md` (Emma's jawiki-infobox review,
+`docs/script-rationale/jawiki_infobox_import_review_2026-07.md` (Emma's jawiki-infobox review,
 2026-07-08). Government-issued 13-digit identifier; exact-match, authoritative.
 
 Same shape as the reisai import: walk every jawiki article embedding the

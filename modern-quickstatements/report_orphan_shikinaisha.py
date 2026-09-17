@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """REPORT ONLY — the confirmed Shikinaisha that no Engishiki list names as a part.
 
-Emits nothing. Touches nothing. Writes `docs/orphan_shikinaisha_2026-07.md`.
+Emits nothing. Touches nothing. Writes `docs/script-rationale/orphan_shikinaisha_2026-07.md`.
 
 Emma 2026-07-10, on the list-membership work: *"there's confirmed shikinaisha i.e. not
 disputed ones"* — the 126 Ronsha named as list parts were not the whole story, because

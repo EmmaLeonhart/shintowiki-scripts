@@ -8,7 +8,7 @@ items. **Qualifier-only** — it never restates or alters the ``P460`` value.
 ## Why this exists
 
 The 2026-09-12 conformity re-measurement
-(`docs/wikidata_model_adoption_review_2026-07-28.md`) found this figure frozen:
+(`docs/script-rationale/wikidata_model_adoption_review_2026-07-28.md`) found this figure frozen:
 
     ronsha P460 statements carrying P2868 :  1,613 of 2,058   2026-07-28
                                              1,613 of 2,058   2026-09-12

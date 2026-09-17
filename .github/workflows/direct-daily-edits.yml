@@ -59,7 +59,7 @@ jobs:
       # whether it may run at all. Read-only: it never edits or posts anywhere.
       # If this step fails the state file is stale or absent, and the editor
       # fails CLOSED — that is the intended behaviour, so `continue-on-error`.
-      # See docs/bruno_plus_analysis_2026-07.md.
+      # See docs/script-rationale/bruno_plus_analysis_2026-07.md.
       - name: Check for on-wiki attention to the watched editor
         working-directory: modern-quickstatements
         run: python watch_conflicting_editor.py

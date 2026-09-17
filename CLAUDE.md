@@ -140,16 +140,18 @@ Emma 2026-07-08: reports and similar write-ups (on the wiki page, in `_site/`, i
 snapshots) are cleared once they are a week old — they are working artifacts, not archives.
 History lives in DEVLOG.md + git.
 
-⚠ **AND MOST `docs/` DATED REPORTS ARE CITED BY LIVE CODE — check before deleting one.** Applied
-2026-09-17 for the first time since the rule was written: of 29 dated reports in `docs/`, **15 are
-referenced by running scripts and workflows** — `report_list_structure.py`, `report_orphan_shikinaisha.py`,
-`generate_ontology_census_page.py`, `direct_daily_edits.py`, `jinjacho_reisai.py` and others point at
-them as their RATIONALE, not as decoration. A further 3 are cited by `todo.md`/`queue.md`. Only **11**
-were genuinely inert, and those were cleared.
-- The check that matters is `git grep -l <filename>` across the WHOLE repo. A scan of just the
-  top-level docs said "only 3 are live" and was wrong by twelve files; the mistake was caught before
-  anything was deleted, but it was caught by luck of double-checking, not by the first scan.
-- So the rule stands, and the mechanical application of it does not. A dated report in `docs/` is a
+⭐ **`docs/script-rationale/` IS EXEMPT — it is script documentation, not reports** (Emma,
+2026-09-17: *"specific directory for docs explaining running scripts that is different from general
+docs and style guide"*). 15 docs live there because a running script or workflow cites each one as
+its RATIONALE — `report_list_structure.py`, `generate_ontology_census_page.py`,
+`generate_p958_qualifiers.py`, `direct_daily_edits.py`, `jinjacho_reisai.py`, `conflict_gate.py`,
+`lost_shrine_gate.py` and a dozen more. They are dated because they were investigations; the date is
+when the reasoning happened, not a shelf life. See that directory's own README.
+- **Before deleting ANY dated doc, `git grep -l <filename>` across the whole repo.** Applying the
+  expiry rule for the first time on 2026-09-17, a scan of only the five top-level docs reported
+  "3 of 29 are live" and was wrong by fifteen. 11 were genuinely inert and were cleared; the 15 moved
+  to `script-rationale/`; 3 stayed in `docs/` because `todo.md`/`queue.md` cite them.
+- So the rule stands and the mechanical application of it does not. A dated report in `docs/` is a
   candidate, not a target.
 
 ⛔ **`modern-quickstatements/reports/*.json` is NOT covered by this and must not be cleared.**

@@ -1,3 +1,30 @@
+## 2026-09-17 — `docs/script-rationale/`: the 15 held docs were never reports
+
+Emma's answer to what to do with the 15 dated docs that live code cites: *"specific directory for
+docs explaining running scripts that is different from general docs and style guide."*
+
+That reframes the whole question. They were never candidates for the report-expiry rule and the
+argument about whether to delete them was the wrong argument — a doc that a running script points at
+as its RATIONALE is documentation of that script, not a status snapshot with a shelf life. The dates
+in their filenames record when the reasoning was done, not when it expires.
+
+Moved with `git mv` so history survives, and **every reference fixed in the same change**, which is
+CLAUDE.md's own rule for a move: **41 source files**, including three workflows, ~25 generators and
+gates, `remote_queue.py`, a test, and five sibling docs. Verified afterwards by grepping for the old
+paths — one hit left, and deliberately.
+
+⚠ **The one deliberate exception:** `ronsha_ranking_review/_undecidable.log` still names an old path.
+It is machine-written queue OUTPUT, a record of what a worker concluded at the time. Rewriting a
+log's recorded past to keep a link tidy would be falsifying it, so it stays as written.
+
+`docs/script-rationale/README.md` states the exemption where it lives, and CLAUDE.md's expiry rule
+now points at it. Both carry the check that matters: **`git grep -l <filename>` across the whole
+repo before deleting any dated doc** — the scan that started this looked at five top-level files and
+was wrong by fifteen.
+
+Final shape of the 29: **11 cleared**, **15 moved to `script-rationale/`**, **3 left in `docs/`**
+because `todo.md`/`queue.md` cite them.
+
 ## 2026-09-17 — Pruned queue.md: I had turned a queue item into a 226-line archive
 
 `queue.md` was **273 lines**, and 226 of them were one item. I wrote every one of those lines, a few
@@ -4189,7 +4216,7 @@ separate secrets, so this is a local config value, not a repo defect.
 
 ## 2026-09-10 — the leftover top-level katakana: 15 of the 27 were reachable all along
 
-`docs/katakana_name_in_kana_2026-09.md` said of the 27 top-level katakana `P1814` statements that
+`docs/script-rationale/katakana_name_in_kana_2026-09.md` said of the 27 top-level katakana `P1814` statements that
 "nothing in the repo can reach them", on the grounds that every generator in the カミノヤシロ
 pipeline keys on the item having an ojp-hani `P1448` and these do not. The first half is true and
 the conclusion does not follow.
@@ -4336,7 +4363,7 @@ She is right about the size. Of 9,314 shrine `P1814` statements, 772 are katakan
 those sit on items with an ojp-hani `P1448` — the kana-qualifier pipeline's own population.
 **27 statements on 26 items are left**, and no generator in the repo can reach them, because every
 one of them keys on the ojp-hani name these items do not have. Measured, split and annotated in
-`docs/katakana_name_in_kana_2026-09.md`; four already carry rulings (one fix, one correct as it
+`docs/script-rationale/katakana_name_in_kana_2026-09.md`; four already carry rulings (one fix, one correct as it
 stands, one deity in a reading field, one item that is an onsen), leaving six of ordinary work.
 All 26 have an English label, so the reading is derived from it, never read out of an article.
 
@@ -7242,7 +7269,7 @@ pause and was rewritten to describe the mechanism plus the current date.
 **Review.** `modern-quickstatements/audit_model_adoption.py` (new, read-only —
 SPARQL + read API, safe under the freeze) measures coverage / conformance / reach
 for twelve modelling conventions, plus revision-comment attribution sampling.
-Findings in `docs/wikidata_model_adoption_review_2026-07-28.md`, raw numbers in
+Findings in `docs/script-rationale/wikidata_model_adoption_review_2026-07-28.md`, raw numbers in
 `modern-quickstatements/model_adoption.json`. Headline: adopted at the ontology
 layer (7 properties live from 20 proposals; the Shinto class vocabulary; Louperibot
 migrating P31 → P14005 and maintaining P13723 qualifiers), not at the statement-shape
@@ -7652,7 +7679,7 @@ NDL Digital Collections search shows **~17 prefectures with 神社誌 marked イ
 (Kanagawa 1981 + Hiroshima/Hyogo/Kumamoto/Okayama/Ishikawa/Ehime/Ibaraki/Tochigi/Miyazaki/Shiga/
 Fukui/Yamaguchi/… — newer 2019+ ones are paper/restricted). So the high-provenance model is
 extensible; the cost is per-shrine reading of the scans (the Kanagawa 77 were a manual import),
-not source availability. Recorded in `docs/deity_qualifier_analysis_2026-07.md`. Report only; a
+not source availability. Recorded in `docs/script-rationale/deity_qualifier_analysis_2026-07.md`. Report only; a
 per-prefecture reading/OCR effort is a scoping decision for Emma.
 
 ## 2026-07-11 — Kokugakuin ranking sequence anomalies: all 6 resolved (INTENTIONAL)
@@ -7666,7 +7693,7 @@ Finding — one structural explanation covers all 6: 現社名など（１） is
 site (現社地) = the parent/entry item itself**, which isn't stored as a self-referential P527
 candidate, so the *other* 論社 (former sites 旧社地, or a distinct shrine) correctly start at rank
 2. Every "expected [1], got [2]" was a false alarm. Verdicts + per-item table:
-`docs/kokugakuin_ranking_anomaly_verdicts_2026-07.md`. No renumbers, no Wikidata edits.
+`docs/script-rationale/kokugakuin_ranking_anomaly_verdicts_2026-07.md`. No renumbers, no Wikidata edits.
 
 Also: the Kokugakuin detail pages are **static HTML** — a plain `urllib` fetch of
 `jmapps.ne.jp/kokugakuin/det.html?data_id=<id>` returns the full 現社名など list; the gstack
@@ -7689,7 +7716,7 @@ collector once answers land" step; re-run it whenever a remote-routine commit ar
 
 Emma's periodic human-directed pass. Read-only against the live Wikidata API (no state
 scripts re-run locally — the archiver + `watch_conflicting_editor` already do that in CI; this
-is the reporting half). Baseline: `docs/bruno_plus_analysis_2026-07.md` (523 edits, compiled
+is the reporting half). Baseline: `docs/script-rationale/bruno_plus_analysis_2026-07.md` (523 edits, compiled
 2026-07-10).
 
 * **Activity:** 809 edits now, +285 since the analysis; last active 2026-07-10T14:10:39Z,
@@ -7755,7 +7782,7 @@ pass (removals + atomic-alignment + gate). Docstrings/print corrected from "run 
 
 Emma's Wiki-based-queue item: *"Analyze [Q137721156]… particularly the deities… an analysis
 on the qualifiers that are used… we might be overlooking them."* Done —
-`docs/deity_qualifier_analysis_2026-07.md`.
+`docs/script-rationale/deity_qualifier_analysis_2026-07.md`.
 
 Findings (live query-main, 2026-07-10): Q137721156 (日月神社) uses a **gold-standard model** —
 each `P825` deity carries `P1932` (原文表記 source spelling) + a book reference (神奈川県神社誌
@@ -7818,7 +7845,7 @@ Engishiki list names** (84 with a twin entry, 66 without), which she asked to re
 *"with a link to the GitHub Pages thing, browsable table."*
 
 * `modern-quickstatements/generate_shikinaisha_orphan_page.py` — reuses the report's
-  live SPARQL `gather()` (so the page and `docs/orphan_shikinaisha_2026-07.md` never
+  live SPARQL `gather()` (so the page and `docs/script-rationale/orphan_shikinaisha_2026-07.md` never
   drift), and additionally surfaces the **twin entry QID + match reason** so the 84
   pairs can be eyeballed side by side (the report only listed the orphan's claims).
   Filterable single-file HTML → `_site/shikinaisha-orphans.html`.
@@ -7837,7 +7864,7 @@ Engishiki list names** (84 with a twin entry, 66 without), which she asked to re
    per item (7 NO-MATCH, 6 NO-ANCHOR, 3 ENTRY-TAKEN, 2 AMBIGUOUS).
 3. `awa-entry-3.html` — the piped-link theft of 天神社; before/after + two-halves fix.
 4. `izumo-karakuni.html` — the comprehensive Q135040786 report (rendered from
-   `docs/izumo_ou_karakuni_2026-07.md`). Investigation found it worse than the earlier
+   `docs/script-rationale/izumo_ou_karakuni_2026-07.md`). Investigation found it worse than the earlier
    note: one item carries list@28 + host 揖夜神社 + list@39; the list side has a spurious
    ord-29 dup, an empty ord-39 hole, and three class/rank items wrongly listed as parts.
 
@@ -7847,7 +7874,7 @@ Engishiki list names** (84 with a twin entry, 66 without), which she asked to re
 
 `generate_saijin_deity_research.py` — the research companion to the high-precision
 `generate_saijin_quickstatements.py`. It does the deferred deity RESEARCH from
-`docs/jawiki_infobox_import_review_2026-07.md` and emits the FULL P825 model Emma's
+`docs/script-rationale/jawiki_infobox_import_review_2026-07.md` and emits the FULL P825 model Emma's
 screenshot showed (existing shrine convention): deity item + `P1932` "object named as"
 (the source's exact 祭神 spelling) + `S4656` jawiki ref, plus `P3831` = principal-deity
 role where jawiki marks a 主祭神. Emma 2026-07-10 chose the P3831 model and "research
@@ -8158,7 +8185,7 @@ also revises last night's claim that those four "correctly" lack a Kokugakuin id
 index these kami, just one at a time. Both models say true things and nothing is wrong today.
 **Emma: report only.**
 
-`docs/engishiki_list_structure_2026-07.md`. Nothing emitted, nothing removed. 1124 tests pass.
+`docs/script-rationale/engishiki_list_structure_2026-07.md`. Nothing emitted, nothing removed. 1124 tests pass.
 
 ---
 
@@ -8225,7 +8252,7 @@ count: 196 of the other 197 carry a quantity qualifier and name a class. Queued 
 `miscellaneous_edits.txt` — `Q11420254|P527|Q11474068|P1545|"7"` — with four tests, one of which
 pins that nothing may ever strip `instance of` from the onsen.
 
-`docs/engishiki_list_defects_2026-07.md` section 3 is rewritten with the superseded recommendation
+`docs/script-rationale/engishiki_list_defects_2026-07.md` section 3 is rewritten with the superseded recommendation
 marked as such rather than quietly replaced. 1096 tests pass.
 
 ---
@@ -8264,7 +8291,7 @@ shrine *and* Shikinaisha, claiming membership of the Inaba list. Our own bot add
 2025-06-26 from the jawiki spa article; the register shrine at that spa is 御湯神社. Three removals
 recommended via the enumerated-removal path; nothing edited.
 
-`docs/engishiki_list_defects_2026-07.md`. 1092 tests pass.
+`docs/script-rationale/engishiki_list_defects_2026-07.md`. 1092 tests pass.
 
 ---
 
@@ -8366,7 +8393,7 @@ The three kinds, all Emma's calls:
 `〒708-0013 津山市二宮601` carries the postcode and block number, `岡山県津山市二宮` carries the
 prefecture. Dropping either loses something. Left alone and flagged.
 
-Reported and untouched, in `docs/ronsha_address_resolution_2026-07.md`: 4 items carrying two
+Reported and untouched, in `docs/script-rationale/ronsha_address_resolution_2026-07.md`: 4 items carrying two
 coordinate statements (the own-coordinates rule cannot break the tie), 10 where both addresses
 share a municipality (several are genuinely two places — a mountain 奥宮 and a village 里宮), and
 `Q30929765`, whose Kokugakuin record has no coordinates to check against.
@@ -8386,7 +8413,7 @@ address at all. Verified: script 2 currently emits nothing, which is correct unt
 ## 2026-07-10 — measured the prefectural-jinjachō avenue before building it, and it is thin
 
 Emma had chosen the 47 prefectural 神社庁 databases as the reisai source beyond jawiki. I measured
-first. `docs/reisai_prefectural_feasibility_2026-07.md` has the numbers; she then chose to **wait
+first. `docs/script-rationale/reisai_prefectural_feasibility_2026-07.md` has the numbers; she then chose to **wait
 for the gate and reassess**.
 
 **47 sites are 47 problems.** `jinja-net.jp`, the platform serving Mie, hosts exactly **two**
@@ -8691,7 +8718,7 @@ behaviour (a piped wikilink survives, a bare pipe still ends the field) for ever
 ## 2026-07-10 — a caution gate around a Wikidata editor, and what the evidence actually showed
 
 Emma flagged `ブルーノ・プラス` as a likely conflict and asked for analysis before any policy.
-`docs/bruno_plus_analysis_2026-07.md` is the result; `conflict_gate.py` is the policy.
+`docs/script-rationale/bruno_plus_analysis_2026-07.md` is the result; `conflict_gate.py` is the policy.
 
 **Her hunch about labels was right, and it mattered.** Of their 197 term edits, **181 are
 Japanese** descriptions and only 16 are English. They are not competing with our English-label
@@ -9250,7 +9277,7 @@ comparison → class-label words); a missing `re` import masked by output piping
 (lesson: don't pipe generator output through tail; the exit code lies). Drips 50/day (auto-uncap
 2027-01-01) alongside the pairs' 100/day. The class-dropped languages' targets (fr shrines etc.)
 are in NEITHER file by design — the cloud pipeline enumerates them from SPARQL when built.
-**jawiki infobox review** (wiki-queue item) delivered: `docs/jawiki_infobox_import_review_2026-07.md`
+**jawiki infobox review** (wiki-queue item) delivered: `docs/script-rationale/jawiki_infobox_import_review_2026-07.md`
 — 3 templates field-mapped; build order P3225 corporate numbers → 社格-as-ref for unsourced modern
 ranks → P825 deities/本尊 → P571 → kofun shapes/periods; 5 modeling calls flagged for Emma.
 
@@ -15557,7 +15584,7 @@ work-files remain.
 
 **The repurposed items — my one-line summary was wrong.** The queue said *"document, don't touch; no
 contact."* Emma: *"That was not actually my ruling. That was your bad summary of my ruling."* She had
-given three specific per-item rulings, and they were sitting in `docs/bruno_plus_analysis_2026-07.md`
+given three specific per-item rulings, and they were sitting in `docs/script-rationale/bruno_plus_analysis_2026-07.md`
 §6 rather than in the queue — which is exactly why a session reading only the queue never acted on
 them. Promoted to A5b.
 

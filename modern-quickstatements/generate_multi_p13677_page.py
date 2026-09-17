@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Browsable table of the multiple-P13677 review set — for Emma's per-item eyes.
 
-Emma's standing verdict (docs/kokugakuin_anomaly_review_scope_2026-07.md): the ~47
+Emma's standing verdict (docs/script-rationale/kokugakuin_anomaly_review_scope_2026-07.md): the ~47
 items carrying 2+ Kokugakuin entry ids are ALL ambiguous; deciding which entry backs
 each parent-link needs the Kokugakuin page per item, no batch fix, heuristics
 prohibited. So this does the LEGWORK and presents it — it emits no Wikidata edits.

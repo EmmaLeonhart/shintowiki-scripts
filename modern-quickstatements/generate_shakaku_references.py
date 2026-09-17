@@ -4,7 +4,7 @@ generate_shakaku_references.py
 ===============================
 Reference-backfill for unsourced MODERN shrine rankings (P13723) using the
 jawiki {{神社}} infobox 社格 field — build #2 from
-`docs/jawiki_infobox_import_review_2026-07.md`. The 2026-07-08 triage found
+`docs/script-rationale/jawiki_infobox_import_review_2026-07.md`. The 2026-07-08 triage found
 ~92 unsourced modern-rank statements (Son/Ken/Gō-sha …) that the
 engishiki-reference generator cannot cover (its scope is engishiki/ritsuryō
 values with P13677); where the shrine's own jawiki infobox states the same

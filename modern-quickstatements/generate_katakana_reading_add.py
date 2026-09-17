@@ -9,7 +9,7 @@ ONE path only".)
 
 ## The population
 
-`docs/katakana_name_in_kana_2026-09.md`, measured 2026-09-09: of 9,314 shrine
+`docs/script-rationale/katakana_name_in_kana_2026-09.md`, measured 2026-09-09: of 9,314 shrine
 `P1814` statements, 772 are katakana-only, and 745 of those sit on items that
 carry an Old-Japanese (ojp-hani) `P1448` official name. Those 745 belong to the
 カミノヤシロ kana-qualifier pipeline, which relocates the reading onto the official
@@ -19,7 +19,7 @@ name and then strips the top-level statement.
 are Shikinai Ronsha whose Engishiki ENTRY item carries the name one `P460` hop
 away** — the reading sits on the candidate, the official name on the entry — and
 they are the カミノヤシロ pipeline's business after all (the 2026-09-10 correction
-in `docs/katakana_name_in_kana_2026-09.md` works through why, and Emma confirmed
+in `docs/script-rationale/katakana_name_in_kana_2026-09.md` works through why, and Emma confirmed
 that state is correct as it stands). They are excluded here.
 
 **What is left is the 10 with no entry item behind them**, which no generator
@@ -48,7 +48,7 @@ generator off the four items the docs have already ruled on:
     Yokohama" leaves a multi-word stem once the suffix is stripped, which
     `kana_for` refuses.
 
-That leaves the six `docs/katakana_name_in_kana_2026-09.md` calls ordinary
+That leaves the six `docs/script-rationale/katakana_name_in_kana_2026-09.md` calls ordinary
 derivation work, plus `Q135935015` 春日神社 / `カスガジンジャ`, which Emma ruled on
 directly (2026-08-24, *"this one in katakana is just an error"* → かすがじんじゃ) and
 which the same derivation reproduces without being told to.
@@ -94,7 +94,7 @@ SHRINE = "Q845945"
 # The whole population in one query: every top-level P1814 on a shrine that has
 # no ojp-hani official name, with both labels. Katakana-only is filtered client
 # side — Blazegraph has no \p{IsHiragana}, which is why the measurement in
-# docs/katakana_name_in_kana_2026-09.md was done this way too.
+# docs/script-rationale/katakana_name_in_kana_2026-09.md was done this way too.
 QUERY = f"""
 SELECT ?item ?kana ?ja ?en WHERE {{
   ?item wdt:P31 wd:{SHRINE} ; p:P1814 ?st .
@@ -105,7 +105,7 @@ SELECT ?item ?kana ?ja ?en WHERE {{
   # …and no ojp-hani official name ONE HOP away either. A Shikinai Ronsha holds
   # the Engishiki ENTRY's reading while the entry item holds the name, and that
   # population belongs to the カミノヤシロ pipeline, not here — see the 2026-09-10
-  # correction in docs/katakana_name_in_kana_2026-09.md. Without this clause the
+  # correction in docs/script-rationale/katakana_name_in_kana_2026-09.md. Without this clause the
   # generator proposes a modern hiragana reading for items whose value is an Old
   # Japanese reading the pipeline is already relocating, and Emma confirmed that
   # state is correct as it stands.

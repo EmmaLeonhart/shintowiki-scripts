@@ -704,7 +704,7 @@ def build_queue() -> list[dict]:
     # collect_category_translations.py folds answers into category_moves.csv.
     items.extend(_build_section("category_translation", CATEGORY_TRANSLATION_INSTRUCTION))
     # Queue #8: review the 161 kana-vs-label romaji-typo candidates (see
-    # build_label_typo_review_queue.py + docs/kana_label_mismatch_audit_2026-07.md);
+    # build_label_typo_review_queue.py + docs/script-rationale/kana_label_mismatch_audit_2026-07.md);
     # the worker researches which side is wrong and fills the ANSWER marker.
     items.extend(_build_section("label_typo_review", LABEL_TYPO_REVIEW_INSTRUCTION))
     items.extend(_build_section("ronsha_ranking_review", RONSHA_RANKING_INSTRUCTION))

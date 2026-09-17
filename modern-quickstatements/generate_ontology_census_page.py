@@ -18,7 +18,7 @@ matters: flat, P9675 MediaWiki page ID looks like kami's top qualifier (346
 uses); paired, 312 of those sit on P11250 alone and it is plainly import
 plumbing, not ontology.
 
-This replaces docs/deity_qualifier_analysis_2026-07.md, which counted qualifiers
+This replaces docs/script-rationale/deity_qualifier_analysis_2026-07.md, which counted qualifiers
 on P825 only ("almost useless ... we can just say it didn't happen") and which
 nothing regenerated — it was a hand-written snapshot that expired.
 

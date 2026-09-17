@@ -4,7 +4,7 @@ generate_saijin_quickstatements.py
 ===================================
 Import 祭神 (enshrined deities) from the jawiki {{神社}} shrine infobox onto
 Wikidata as P825 (dedicated to) — the volume build from
-`docs/jawiki_infobox_import_review_2026-07.md`. Independently motivated by the
+`docs/script-rationale/jawiki_infobox_import_review_2026-07.md`. Independently motivated by the
 deity-description test (2026-07-08): 6,841 colliding English-labeled shrines
 have no P825 at all.
 

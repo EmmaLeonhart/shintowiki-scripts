@@ -2,7 +2,7 @@
 """Browsable explainer of the Awa Province entry-3 defect + the by-hand delete.
 
 Emma asked (Open questions, 2026-07): *"oh god fucking link this."* This is the page
-for the Awa list defect written up in `docs/engishiki_list_defects_2026-07.md §1`:
+for the Awa list defect written up in `docs/script-rationale/engishiki_list_defects_2026-07.md §1`:
 the 927 register's Awa entry #3 is 天神社 (Tenjinsha), but the jawiki list wrote it as
 a piped link to a *different* shrine, 下立松原神社 (Shimotachimatsubara), and the import
 followed the link — so Wikidata now says Awa entry #3 IS Shimotachimatsubara. The add
@@ -144,7 +144,7 @@ remove-then-add pairs safely.</p>
   {AWA_LIST}  has part  {SHIMO}  (series ordinal 5)   &larr; keep</pre>
 </div>
 
-<p>Detail: <code>docs/engishiki_list_defects_2026-07.md §1</code>. Report only — the
+<p>Detail: <code>docs/script-rationale/engishiki_list_defects_2026-07.md §1</code>. Report only — the
 delete is not automated; the add sits behind the conflict gate.</p>
 <footer>Generated {now} by
 <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a>

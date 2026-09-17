@@ -1,7 +1,7 @@
 """The ブルーノ・プラス-repurposed husks must never receive an edit.
 
 queue.md A5, Emma: "document, don't touch; no contact until we understand the
-editor." Detail in docs/bruno_plus_analysis_2026-07.md — these are items whose
+editor." Detail in docs/script-rationale/bruno_plus_analysis_2026-07.md — these are items whose
 entire contents were replaced with a different shrine, so editing one both
 touches an item we were told to leave alone and implicitly endorses the
 repurposing.

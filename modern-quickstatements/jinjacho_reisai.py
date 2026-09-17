@@ -21,7 +21,7 @@ month without a day, or a relative date such as 第２日曜 / 体育の日前�
 The value model stays `P837` day-of-year + `P3831` = `Q11385469` Reisai, per
 `docs/wikidata_shrine_festival_model.md`. Nothing here emits QuickStatements; it is
 a parser plus the scoping evidence, pending Emma's go/no-go on the whole avenue —
-see `docs/reisai_prefectural_feasibility_2026-07.md`.
+see `docs/script-rationale/reisai_prefectural_feasibility_2026-07.md`.
 """
 import re
 

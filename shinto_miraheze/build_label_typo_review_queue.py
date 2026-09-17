@@ -3,7 +3,7 @@
 build_label_typo_review_queue.py
 ================================
 Queue #8 typo review -> cloud RAG. Parses the committed audit table
-(docs/kana_label_mismatch_audit_2026-07.md — 161 shrines whose EN label letters
+(docs/script-rationale/kana_label_mismatch_audit_2026-07.md — 161 shrines whose EN label letters
 diverge from their romanized P1814 kana) and writes one work-file per candidate
 into label_typo_review/, for the claude.ai remote routine (remote_queue.py emits
 them). The worker researches WHICH side is wrong (label typo? historical-kana

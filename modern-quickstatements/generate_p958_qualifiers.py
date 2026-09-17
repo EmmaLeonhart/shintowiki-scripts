@@ -46,7 +46,7 @@ SUMMARY_FILE = "p958_summary.json"
 
 # Sequence-anomaly parents INVESTIGATED and cleared as INTENTIONAL (2026-07-11),
 # each verified against the Kokugakuin entry page's 現社名など（１..N） ordering
-# (docs/kokugakuin_ranking_anomaly_verdicts_2026-07.md). In every case the
+# (docs/script-rationale/kokugakuin_ranking_anomaly_verdicts_2026-07.md). In every case the
 # candidate ranks start at 2 because 現社名など（１） is the shrine's CURRENT SITE
 # (現社地) — the parent/entry item itself — which is not stored as a self-
 # referential P527 candidate. So the P527 candidates (former sites 旧社地, or a

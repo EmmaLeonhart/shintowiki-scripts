@@ -26,7 +26,7 @@ Both standing holds have to be clear, and any error fails closed:
 
 What this gate does NOT do is check whether the three shrines already have items. Nothing
 at run time does — `create_items.py` has no duplicate guard, by Emma's instruction. That
-question was answered when the batch was generated: `docs/bruno_plus_analysis_2026-07.md`
+question was answered when the batch was generated: `docs/script-rationale/bruno_plus_analysis_2026-07.md`
 §4 established that none of the eight 加茂神社 items is the Odawara one, that no item holds
 Chikadono any more, and that 見光寺's item now asserts a different temple. Re-running
 `generate_lost_shrine_creates.py` is what re-checks it.

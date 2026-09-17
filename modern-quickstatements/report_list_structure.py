@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """REPORT ONLY — structural defects in the 69 Engishiki list items.
 
-Emits nothing. Touches nothing. Writes `docs/engishiki_list_structure_2026-07.md`.
+Emits nothing. Touches nothing. Writes `docs/script-rationale/engishiki_list_structure_2026-07.md`.
 
 Background: `docs/engishiki_lists_primer.md`. The Awa defect (2026-07-10) was found by
 noticing that the Kokugakuin id sequence skipped 181734 while an entry item held it and no

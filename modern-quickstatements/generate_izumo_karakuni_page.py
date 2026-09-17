@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the Izumo 韓国伊太弖 report (docs/izumo_ou_karakuni_2026-07.md) as a
+"""Render the Izumo 韓国伊太弖 report (docs/script-rationale/izumo_ou_karakuni_2026-07.md) as a
 browsable GitHub Pages page.
 
 Emma, Open questions 2026-07: *"write a relatively comprehensive report on what the fuck
@@ -155,7 +155,7 @@ def render(md):
 <body>
 <p class="nav"><a href="index.html">&larr; shintowiki</a></p>
 {body}
-<footer>Generated {now} from <code>docs/izumo_ou_karakuni_2026-07.md</code> by
+<footer>Generated {now} from <code>docs/script-rationale/izumo_ou_karakuni_2026-07.md</code> by
 <a href="https://github.com/EmmaLeonhart/shintowiki-scripts">shintowiki-scripts</a>
 (<code>generate_izumo_karakuni_page.py</code>). Report only; no Wikidata edits.</footer>
 </body>

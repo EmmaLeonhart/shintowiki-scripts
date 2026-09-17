@@ -46,11 +46,6 @@ from `ATOMIC_FILES`; they are not queue items.
   - `generate_description_fixes.py` stays off the shared module (its sibling imports it); it carries
     the policy rather than sharing it.
 
-- [ ] **15 dated `docs/` reports: Emma's call.** She approved clearing everything not referenced by a
-  live file, on a list that said only 3 of 29 were live. A whole-repo `git grep` then found 15 more
-  cited by running code and workflows as their RATIONALE. 11 were cleared; these 15 are held rather
-  than deleted on a false premise. Needs a fresh yes/no, not a widening of the old approval.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

@@ -4,7 +4,7 @@ generate_souken_quickstatements.py
 ===================================
 Import founding dates from jawiki infoboxes onto Wikidata as P571 (inception)
 — shrines ({{神社}} 創建) and temples ({{日本の寺院}} 創建年), from
-`docs/jawiki_infobox_import_review_2026-07.md`.
+`docs/script-rationale/jawiki_infobox_import_review_2026-07.md`.
 
 CONSERVATIVE parser (verified against a live 50-article sample): the dominant
 clean pattern is an era date with a parenthetical Gregorian year —

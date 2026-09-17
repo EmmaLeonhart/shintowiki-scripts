@@ -5,7 +5,7 @@ generate_honzon_quickstatements.py
 Import 本尊 (principal image / main object of veneration) from the jawiki
 {{日本の寺院}} temple infobox onto Wikidata as P825 (dedicated to) — the temple
 sibling of generate_saijin_quickstatements.py, from
-`docs/jawiki_infobox_import_review_2026-07.md`.
+`docs/script-rationale/jawiki_infobox_import_review_2026-07.md`.
 
 HIGH-PRECISION design — no name-matching, no guessing:
   * only deities that are WIKILINKED in the 祭神 field are imported;
