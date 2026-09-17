@@ -221,6 +221,30 @@ def test_a_5xx_is_retried_then_gives_up():
     assert calls["n"] == mod.RETRIES
 
 
+def test_the_timeout_reaches_urlopen_and_is_not_silently_replaced():
+    """`timeout` is a parameter because the callers genuinely differ, and the
+    default would have quietly halved one of them.
+
+    `site/generate_orphan_label_fixes.py` allowed **600s**; this module hardcoded
+    300. Adopting it without the parameter is not a visible break — it is the same
+    query given half the budget, which shows up as an occasional timeout on the
+    longest run and nowhere else.
+    """
+    mod = _mod()
+    seen = {}
+
+    def fake(req, timeout=None):
+        seen["timeout"] = timeout
+        return _Resp(b'{"results": {"bindings": []}}')
+
+    mod.urllib.request.urlopen = fake
+    mod.WDQS_THROTTLE = 0
+    mod.query("SELECT * WHERE {}")
+    assert seen["timeout"] == mod.TIMEOUT == 300, seen
+    mod.query("SELECT * WHERE {}", timeout=600)
+    assert seen["timeout"] == 600, seen
+
+
 def test_the_throttle_is_in_the_transport():
     """Emma, 2026-08-24: "You just want to rate limit within your scripts." Pacing
     the transport is the only version a new caller cannot forget."""

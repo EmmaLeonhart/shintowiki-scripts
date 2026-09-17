@@ -12,7 +12,6 @@ import os
 import sys
 import io
 import re
-import requests
 import hanja
 from koreanizer import koreanize
 from fetch_shrines_tokiponize import process_label
@@ -23,6 +22,13 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here. Same entry that
+# shinto_miraheze/build_ronsha_ranking_queue.py carries, for the same reason:
+# the alternative is a WDQS caller with no 429 policy and no retry at all.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
@@ -84,16 +90,7 @@ KOREAN_SUFFIX = {
 def run_sparql(query, label):
     """Run a SPARQL query and return results."""
     print(f"Querying Wikidata: {label}...")
-    wd_pace(SPARQL_INTERVAL)
-    r = requests.get(
-        SPARQL_ENDPOINT,
-        params={"query": query, "format": "json"},
-        headers={"User-Agent": WIKIDATA_USER_AGENT},
-        timeout=300,
-    )
-    r.raise_for_status()
-    data = r.json()
-    results = data["results"]["bindings"]
+    results = wdqs_transport.query(query)
     print(f"  Got {len(results)} results.")
     return results
 

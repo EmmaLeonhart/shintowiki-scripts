@@ -38,7 +38,8 @@ import io
 import json
 import os
 import sys
-import time
+
+import wdqs_transport
 import urllib.parse
 import urllib.request
 
@@ -111,15 +112,10 @@ SELECT ?item ?desc WHERE {
 
 
 def sparql(query):
-    url = SPARQL_ENDPOINT + "?" + urllib.parse.urlencode(
-        {"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": WIKIDATA_USER_AGENT,
-        "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=300) as fh:
-        data = json.load(fh)
-    time.sleep(WDQS_THROTTLE)
-    return data["results"]["bindings"]
+    # The `time.sleep(WDQS_THROTTLE)` that used to trail this call is gone: the
+    # transport paces BEFORE each request from its own clock, which also covers the
+    # first call of a run — a trailing sleep never did.
+    return wdqs_transport.query(query)
 
 
 def count_by_language():

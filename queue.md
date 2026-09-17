@@ -68,20 +68,27 @@ from `ATOMIC_FILES`; they are not queue items.
   - Five of the eight carried a byte-identical `_get` for the ja.wikipedia API. **It is still five
     copies.** A shared ja.wp transport is a second module and was not smuggled into this change.
 
-  **Read the rest the same evening. It is NOT a second batch, and here is the specific reason.**
-  The obvious next population is "has no retry construct at all" — the same thing that made the
-  dead-429 subclass uniform. Reading it, it splits:
-  - ⛔ **`sparql_csv` callers ask WDQS for CSV, not JSON bindings.** `wdqs_transport.query` returns
-    `results.bindings`, so pointing one of these at it does not fail loudly — it hands the caller a
-    different shape. `generate_list_membership_rebuild.py`, `generate_list_membership_removals.py`,
+  ✅ **The no-retry-construct population is CLOSED too (2026-09-16). Adopters: 26.** Same property
+  that made the dead-429 subclass uniform — a bare request with nothing wrapping it — so migrating
+  is the same strict upgrade. Six migrated: `audit_orphan_descriptions.py`,
+  `generate_bunrei_quickstatements.py`, `fetch_shrines_tokiponize.py`,
+  `generate_chinese_quickstatements.py`, `generate_korean_quickstatements.py`,
+  `site/generate_orphan_label_fixes.py`. The last four are outside `modern-quickstatements/` and
+  carry the `sys.path` entry `build_ronsha_ranking_queue.py` introduced.
+  - ⛔ **CSV callers stay out, and this is the trap.** `wdqs_transport.query` returns
+    `results.bindings`; a CSV caller pointed at it does not fail loudly, it gets a different shape.
+    `generate_list_membership_rebuild.py`, `generate_list_membership_removals.py`,
     `report_commons_label_accuracy.py`, `report_list_structure.py`, `report_orphan_shikinaisha.py`,
-    `report_ronsha_list_membership.py`. Migrating one means rewriting its parsing too. **Do not
-    batch these.**
-  - The genuinely bare JSON ones are `audit_orphan_descriptions.py`, `generate_bunrei_quickstatements.py`,
-    `generate_p958_candidates_page.py`, `fetch_shrines_tokiponize.py`,
-    `generate_chinese_quickstatements.py`, `generate_korean_quickstatements.py`,
-    `site/generate_orphan_label_fixes.py` — and the last four are outside `modern-quickstatements/`,
-    so each needs the `sys.path` entry `build_ronsha_ranking_queue.py` now carries.
+    `report_ronsha_list_membership.py` — and **`generate_p958_candidates_page.py`**, which this
+    queue listed as a JSON caller until it was actually read: its function is named `fetch`, not
+    `sparql_csv`, and it sends `Accept: text/csv` and returns a `csv.DictReader`. **A caller is CSV
+    or JSON by its Accept header, not by what its function is called.**
+  - ⚠ **`timeout` was hardcoded at 300 in the transport and the callers differ** — 600 in
+    `site/generate_orphan_label_fixes.py`, 120 in `fetch_shrines_tokiponize.py`. Adopting without a
+    parameter would not have broken visibly; it would have halved the longest query's budget and
+    shown up as an occasional timeout. `query()` takes `timeout` now, pinned by
+    `test_the_timeout_reaches_urlopen_and_is_not_silently_replaced`, and
+    `generate_ontology_census_page.py` no longer accepts one and discards it.
   - A `try` with no loop is not a retry: `audit_duplicate_rankings.py`, `audit_model_adoption.py`,
     `generate_saijin_deity_research.py`, `investigate_property_modelling.py`,
     `generate_religious_building_labels.py`, `create_shrine_ranking_pages.py` catch and exit rather

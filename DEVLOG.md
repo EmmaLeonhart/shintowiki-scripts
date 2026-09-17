@@ -1,3 +1,40 @@
+## 2026-09-16 (work-loop tick) — The no-retry population closes too; adopters 26
+
+Last night's entry said the next population was not a batch. Re-reading it function by function
+rather than by name, most of it is — and the part that genuinely is not turned out to be bigger than
+recorded.
+
+**Migrated, six:** `audit_orphan_descriptions.py`, `generate_bunrei_quickstatements.py`,
+`fetch_shrines_tokiponize.py`, `generate_chinese_quickstatements.py`,
+`generate_korean_quickstatements.py`, `site/generate_orphan_label_fixes.py`. Each was a bare request
+with nothing wrapping it — no retry, no 429 bail — which is the same property that made the dead-429
+subclass a uniform upgrade. Four are outside `modern-quickstatements/` and carry the `sys.path`
+entry `build_ronsha_ranking_queue.py` introduced.
+
+⛔ **A correction to what I wrote last night.** `generate_p958_candidates_page.py` was listed there
+as a bare JSON caller. It is not — it sends `Accept: text/csv` and returns a `csv.DictReader`. The
+earlier pass classified by function name (`sparql_csv`) and this one is called `fetch`, so it sorted
+into the wrong group. **A caller is CSV or JSON by its Accept header.** Pointing a CSV caller at
+`wdqs_transport.query` would not fail loudly; it would hand back `results.bindings` — a different
+shape — so this is the misclassification that actually costs something. Queue corrected, file left
+alone.
+
+⚠ **And a silent halving that nearly shipped.** The transport hardcoded `timeout=300`.
+`site/generate_orphan_label_fixes.py` allowed **600**, and `fetch_shrines_tokiponize.py` 120. Moving
+the 600 caller onto the module without a parameter is not a visible break — it is the same query
+given half the budget, surfacing as an occasional timeout on the longest run and nowhere else.
+`query()` now takes `timeout`; every migrated caller passes its own figure rather than inheriting
+the default; `generate_ontology_census_page.py` no longer accepts a timeout and discards it, which
+is what it did between this morning and now. Pinned by
+`test_the_timeout_reaches_urlopen_and_is_not_silently_replaced`.
+
+**Live-checked, all six, with their real queries:** `audit_orphan_descriptions.sparql` returned
+`Shinto shrine`; bunrei `all_shrines()` 30,309; tokipona `fetch_shrines()` 74,259 rows; Chinese
+`fetch_shrines()` 53,530; Korean `run_sparql` 1; `site/generate_orphan_label_fixes.sparql`
+`Shinto shrine`.
+
+Adopters 20 -> 26. Suite run: 2,241 before the new transport test, 12 in the transport file after.
+
 ## 2026-09-16 (evening) — Read the rest of the WDQS callers; it is not a second batch
 
 Having closed the dead-429 subclass, the obvious next move was the population with no retry

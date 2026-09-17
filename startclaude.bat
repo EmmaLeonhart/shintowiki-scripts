@@ -65,7 +65,13 @@ REM Opening prompt: pick up the work queue. Edit the text below to change
 REM what the boot session does; delete it to get a plain idle session.
 set "BOOT_PROMPT=Read queue.md and start working the highest-priority item that is not blocked on user action. Follow the queue-driven-workflow skill: finish an item, delete it from queue.md, append a dated devlog.md entry in the same commit, then push. Ask me before anything destructive."
 
-"%CLAUDE_EXE%" "%BOOT_PROMPT%"
+REM Remote Control: the logon sessions are the ones Emma drives from another
+REM device, and without this flag they open WITHOUT it and her workflows stop.
+REM The name is given EXPLICITLY. --remote-control takes an OPTIONAL value, so
+REM a bare flag immediately before "%BOOT_PROMPT%" would swallow the prompt as
+REM the session name and the session would open idle. Measured 2026-09-16:
+REM   claude --remote-control "<name>" -p "<prompt>"  ->  prompt runs, name set.
+"%CLAUDE_EXE%" --remote-control "shintowiki-scripts" "%BOOT_PROMPT%"
 
 REM Keep the window open if Claude exits, so errors stay readable.
 echo.

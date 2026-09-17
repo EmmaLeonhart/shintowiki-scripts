@@ -12,7 +12,6 @@ import re
 import csv
 import sys
 import io
-import requests
 from tokiponizer import tokiponize
 from generate_multilang_quickstatements import extract_name_from_en
 import os as _uos, sys as _usys
@@ -21,6 +20,13 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here. Same entry that
+# shinto_miraheze/build_ronsha_ranking_queue.py carries, for the same reason:
+# the alternative is a WDQS caller with no 429 policy and no retry at all.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
@@ -60,16 +66,7 @@ ORDER BY ?srcLabel
 def fetch_shrines():
     """Fetch target shrine/temple items with Indonesian labels from Wikidata."""
     print("Querying Wikidata SPARQL for Shinto shrines + Japan Buddhist temples with id/ru/uk/lt labels...")
-    wd_pace(SPARQL_INTERVAL)
-    r = requests.get(
-        SPARQL_ENDPOINT,
-        params={"query": SPARQL_QUERY, "format": "json"},
-        headers={"User-Agent": WIKIDATA_USER_AGENT},
-        timeout=120,
-    )
-    r.raise_for_status()
-    data = r.json()
-    results = data["results"]["bindings"]
+    results = wdqs_transport.query(SPARQL_QUERY, timeout=120)
     print(f"Got {len(results)} results from Wikidata.")
     return results
 

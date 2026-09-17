@@ -58,6 +58,13 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here. Same entry that
+# shinto_miraheze/build_ronsha_ranking_queue.py carries, for the same reason:
+# the alternative is a WDQS caller with no 429 policy and no retry at all.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 HERE = _uos.path.dirname(_uos.path.abspath(__file__))
 REPO_ROOT = _uar
@@ -88,15 +95,9 @@ SELECT ?item ?lang ?desc WHERE {
 
 
 def sparql(query):
-    url = SPARQL_ENDPOINT + "?" + urllib.parse.urlencode(
-        {"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": WIKIDATA_USER_AGENT,
-        "Accept": "application/sparql-results+json"})
-    with urllib.request.urlopen(req, timeout=600) as fh:
-        data = json.load(fh)
-    time.sleep(WDQS_THROTTLE)
-    return data["results"]["bindings"]
+    # timeout=600 is this file's own figure and is passed through deliberately —
+    # the transport defaults to 300, which would have halved it silently.
+    return wdqs_transport.query(query, timeout=600)
 
 
 def fetch_orphans():

@@ -84,6 +84,9 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 ENDPOINT = "https://query-main.wikidata.org/sparql"
 WDQS_THROTTLE = 2.5
+# The default socket timeout. Per-caller, because the callers genuinely differ:
+# 120s in fetch_shrines_tokiponize, 600s in site/generate_orphan_label_fixes.
+TIMEOUT = 300
 # FOUR attempts, because that is what makes the backoff 15/45/135. At three, only
 # 15 and 45 ever fire and the documented third step is decoration — which is what
 # this module shipped with for a day. `generate_genbu_ids.py`, the file CLAUDE.md
@@ -114,11 +117,17 @@ FATAL_STATUS = frozenset({400, 401, 403, 404, 405, 414, 431})
 _last_call = 0.0
 
 
-def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT):
+def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
     """Run a SPARQL query and return its `results.bindings`.
 
     Raises `SystemExit` on 429 without retrying, per repo policy. Retries a
     transport failure or a 5xx on the repo's 15/45/135s backoff, then re-raises.
+
+    `timeout` exists because it was hardcoded at 300 and that is not universal:
+    `site/generate_orphan_label_fixes.py` allowed **600**, and adopting the module
+    without this parameter would have halved the budget of its longest query
+    silently. Callers that were under 300 are left at their own figure rather than
+    quietly given more.
     """
     global _last_call
     url = endpoint + "?format=json&query=" + urllib.parse.quote(sparql_text)
@@ -132,7 +141,7 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT):
             time.sleep(WDQS_THROTTLE - gap)
         _last_call = time.monotonic()
         try:
-            with urllib.request.urlopen(req, timeout=300) as r:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
                 return json.load(r)["results"]["bindings"]
         except urllib.error.HTTPError as e:
             if e.code == 429:

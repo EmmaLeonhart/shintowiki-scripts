@@ -26,7 +26,6 @@ Read-only against Wikidata.
 """
 import html
 import io
-import json
 import os
 import sys
 
@@ -68,9 +67,7 @@ _LBL = {}
 
 
 def sparql(q, timeout=300):
-    # `timeout` is accepted and ignored: wdqs_transport uses one 300s timeout for
-    # every caller. No call site here passed anything else.
-    return wdqs_transport.query(q)
+    return wdqs_transport.query(q, timeout=timeout)
 
 
 def labels(pids):

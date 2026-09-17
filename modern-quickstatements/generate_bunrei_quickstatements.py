@@ -49,9 +49,10 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import datetime
 import io
-import json
 import os
 import sys
+
+import wdqs_transport
 import urllib.parse
 
 # Emma 2026-08-03: "keep the suffix-based generator but time-box it to ~6 months,
@@ -171,12 +172,7 @@ def all_shrines():
     """[(qid, ja_label)] for every Wikidata Shinto shrine (P31=Q845945) with a ja label."""
     qy = ('SELECT ?item ?ja WHERE { ?item wdt:P31 wd:Q845945 ; rdfs:label ?ja . '
           'FILTER(LANG(?ja)="ja") }')
-    url = WDQS + "?" + urllib.parse.urlencode({"query": qy, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": UA,
-                                               "Accept": "application/sparql-results+json"})
-    wd_pace(SPARQL_INTERVAL)
-    with urllib.request.urlopen(req, timeout=180) as r:
-        rows = json.load(r)["results"]["bindings"]
+    rows = wdqs_transport.query(qy, timeout=180)
     return [(x["item"]["value"].rsplit("/", 1)[-1], x["ja"]["value"]) for x in rows]
 
 
