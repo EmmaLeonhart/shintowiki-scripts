@@ -26,231 +26,30 @@ from `ATOMIC_FILES`; they are not queue items.
     host that challenges our runners against one that does not, which is not a comparison of the two
     wikis.
 
-- [ ] WDQS transports: **69 callers, each hand-rolled.** All 8 that had a retry loop catching only
-  `ReadTimeout`/`ConnectionError` are now covered (2026-09-14), and the whole dead-429 subclass is
-  closed (2026-09-16, below). What is left is the rest, and it is per-file reading.
+- [ ] WDQS transports: adopters **63**; the rest ride each file's next real change.
+  Seven defect classes were found and closed 2026-09-16/17 (dead-429, no-retry, CSV, sub-floor
+  pacing, catch-and-exit, HTTPError-only, and three callers RETRYING a 429). Full accounts are in
+  `DEVLOG.md` — they are finished work and do not belong here.
 
-  ⛔ **DO NOT PUT A NUMBER ON HOW MANY ARE FRAGILE.** Three regexes gave three wrong answers:
-  *"65 of 72"* missed every `except Exception` and `except (ValueError, KeyError)`, which already
-  catch a JSON error; *"50"* counted a file fixed hours earlier whose clause puts the tuple in a
-  variable; *"~41 with no retry loop"* matched only `for attempt in range` and missed the
-  `for wait in (0, 15, 45, 135)` shape. Grounded, by reading: **34 have some retry construct, 35
-  have none, 10 already use the 15/45/135 backoff.**
+  What is still OPEN, and only this:
+  - ⛔ **Do not batch the remainder.** 26 hand-rolled transport functions are left and **18 are clean
+    on all four properties** (retry loop, 429 bails, truncated body retried, pace ≥ 2.5s), audited by
+    AST 2026-09-16. There is no named defect left to fix.
+  - ⛔ **Migration is NOT uniformly an upgrade — three proven mechanisms**, not a general warning:
+    a stronger hand-rolled backoff (`generate_modern_shrine_ranking_qualifiers`: 450s vs the shared
+    195s, so it STAYS); `strict=False` parsing; and a caller pacing itself above the 2.5s floor.
+    `query()` takes `timeout` and `throttle` for the last two; `max(throttle, WDQS_THROTTLE)` means
+    no caller can ask to be faster than the floor.
+  - ⛔ **DO NOT PUT A NUMBER ON HOW MANY ARE FRAGILE from a regex.** Seven wrong answers so far from
+    pattern-matching this population — the last three were checks I wrote myself in one night. Parse
+    with `ast`, and read one flagged file before reporting anything.
+  - `generate_description_fixes.py` stays off the shared module (its sibling imports it); it carries
+    the policy rather than sharing it.
 
-  ⚠ **Migration is NOT uniformly an upgrade.** Those 10 escalate harder than a flat backoff, and
-  no two unmigrated transports share a body. The failure costs one day of one file — CI is
-  `continue-on-error` and the next run repairs it — so this rides with each file's next real change.
-  `modern-quickstatements/wdqs_transport.py` is the target, and it now carries the repo's 15/45/135
-  so adopting it cannot downgrade anyone.
-
-  **Adopters: 20.** The first six joined on the tick of their own reference fix — the intended
-  cadence. `generate_court_rank_quickstatements.py` had **0.5s** spacing (the exact figure CLAUDE.md
-  cites from the incident that set the 2.5s floor) and a 5/10/15 backoff; the saijin and honzon
-  generators each had no retry, no throttle, and a 429 check placed after a *successful* urlopen.
-
-  ✅ **The dead-429 subclass is CLOSED (2026-09-16) — 14 files, all migrated.** A file whose only
-  429 handling was `if r.status == 429` inside a `with urlopen(...)` block. That branch is
-  unreachable: urllib's default opener raises `HTTPError` on any non-2xx, so the body never runs and
-  `r.status` is always a success code. Proved against a local server answering 429, and pinned as
-  `test_a_429_check_after_a_successful_urlopen_can_never_fire`. None of the 14 had a retry construct
-  around its WDQS call either, so the whole documented policy was absent from every one — no
-  per-file judgement was left, which is what made migrating them as a batch right rather than a
-  breach of the cadence above. `test_no_adopter_kept_the_unreachable_429_check` stops it coming back.
-  - Eight of them also fetched ja.wikipedia, the Wikidata API, jmapps or rakuten through `urlopen`;
-    each of those fetchers moved to `requests` too, because the transport test reads a raw urlopen
-    anywhere in an adopter as evidence it regrew its own WDQS client.
-  - ⚠ **Each of those conversions also turned a 429 into a bail.** Under `urlopen` a 429 raised
-    `HTTPError` and `except Exception` swallowed it straight back into a 3× retry loop — the
-    opposite of the repo's unconditional policy, and indistinguishable from a timeout.
-  - `shinto_miraheze/build_ronsha_ranking_queue.py` needed an explicit `sys.path` entry, since the
-    transport lives in `modern-quickstatements/`. Not a new cross-subproject dependency: that file
-    already writes its output into that directory.
-  - Five of the eight carried a byte-identical `_get` for the ja.wikipedia API. **It is still five
-    copies.** A shared ja.wp transport is a second module and was not smuggled into this change.
-
-  ✅ **The no-retry-construct population is CLOSED too (2026-09-16). Adopters: 26.** Same property
-  that made the dead-429 subclass uniform — a bare request with nothing wrapping it — so migrating
-  is the same strict upgrade. Six migrated: `audit_orphan_descriptions.py`,
-  `generate_bunrei_quickstatements.py`, `fetch_shrines_tokiponize.py`,
-  `generate_chinese_quickstatements.py`, `generate_korean_quickstatements.py`,
-  `site/generate_orphan_label_fixes.py`. The last four are outside `modern-quickstatements/` and
-  carry the `sys.path` entry `build_ronsha_ranking_queue.py` introduced.
-  ✅ **And the CSV callers are in too (2026-09-16). Adopters: 33.** Not by converting them — by
-  giving the transport a `query_csv`. Two of them say why in their own docstring: *"CSV, not JSON:
-  the JSON body for these result sets comes back truncated."* Converting them to `query` would
-  reintroduce, on the very result sets known to provoke it, the failure this module exists to
-  survive. The CSV choice is load-bearing; what they were missing was the policy around it.
-  `generate_list_membership_rebuild.py`, `generate_list_membership_removals.py`,
-  `report_commons_label_accuracy.py`, `report_list_structure.py`, `report_orphan_shikinaisha.py`,
-  `report_ronsha_list_membership.py`, `generate_p958_candidates_page.py`.
-  - ⚠ **`query_csv` is NOT as protected as `query`, and the gap is real.** A truncated JSON body
-    raises `JSONDecodeError` and is retried; a truncated CSV body is still valid CSV, just shorter.
-    Only the truncations the transport itself notices — `IncompleteRead`, a dropped connection, a
-    timeout — are catchable. A clean mid-stream close on a chunked response returns fewer rows and
-    nothing raises. That was equally true of all seven hand-rolled versions; it is written down so
-    nobody reads `query_csv` as making CSV safe.
-  - ⛔ **`query` and `query_csv` share one `_run`, and the parse runs INSIDE the `with`.** Moving it
-    out — read bytes in the loop, decode after — would put the one failure this module was built for
-    outside the thing retrying it. Pinned by `test_the_parse_happens_inside_the_retry_loop`.
-  - ⚠ **A caller is CSV or JSON by its Accept header, not by what its function is called.** This
-    queue listed `generate_p958_candidates_page.py` as a JSON caller until it was read: its function
-    is `fetch`, not `sparql_csv`, and it sends `Accept: text/csv`.
-
-  ✅ **And the sub-floor pacers (2026-09-16). Adopters: 42.** Nine callers paced WDQS at **0.3–0.5s**
-  against the 2.5s floor CLAUDE.md sets — 0.5 is the exact figure it cites from the incident that
-  set the floor, and 0.3 is `READ_INTERVAL`, which `wd_pace.py` says in its own docstring not to
-  pace a SPARQL caller at. All nine also backed off 5/10/15 against the documented 15/45/135, and
-  one had no backoff at all.
-  - ⛔ **Every one of them was a POST caller**, each carrying a VALUES clause, and the transport was
-    GET-only. Its own note said *"if a caller ever needs one, add POST rather than chunking around
-    it here"* — they needed one. `query(..., post=True)` puts the same encoded string in the body
-    instead of the URL; pinned by `test_post_puts_the_query_in_the_body_and_not_the_url`.
-  - `test_no_wdqs_caller_paces_below_the_documented_floor` now walks the tree for this shape. It
-    **found a ninth file the hand survey missed** — `bfs/buddhist_deity_analysis.py` at 0.3s, whose
-    `_get` is shared with the Wikidata API, so an AST scan looking for a WDQS-only function skipped
-    it. Only the WDQS half moved; `_get` stays for the API.
-
-  ✅ **And the catch-and-exit six (2026-09-16). Adopters: 48.** A `try` with no loop is not a retry —
-  these caught the failure and exited, so a truncated body ended the run with nothing written, which
-  is the failure the module exists for. They read as covered in any grep for `try`.
-  `audit_duplicate_rankings.py`, `audit_model_adoption.py`, `generate_saijin_deity_research.py`,
-  `investigate_property_modelling.py`, `generate_religious_building_labels.py`,
-  `create_shrine_ranking_pages.py`.
-  - ⚠ **Two of them are NOT a bare swap and must not be "tidied" into one.**
-    `audit_model_adoption.wdqs` returns **None** when a query cannot be answered, deliberately — it
-    is an audit, and a server-side timeout is a result it reports, not a reason to die. The swallow
-    is kept, wrapped around the transport. `create_shrine_ranking_pages.query_wikidata_p301` degrades
-    to `(None, None)` per category for the same reason.
-  - ⭐ **Both get their 429 bail back for free**: `SystemExit` is a `BaseException`, so the
-    transport's bail passes straight through `except Exception` while everything else still
-    degrades. `query_wikidata_p301` had been swallowing 429s outright.
-  - `audit_duplicate_rankings.run` also changed SHAPE — it returned the whole JSON document and both
-    call sites indexed `["results"]["bindings"]` themselves. Both updated.
-  - `test_no_adopter_builds_its_own_wdqs_request` walks the tree for regrowth across ALL adopters,
-    not just `MIGRATED` — whose urlopen ban cannot tell a WDQS client from a legitimate API fetcher,
-    which is why several of these files can never be listed there. ⚠ It matches a call that NAMES
-    the endpoint; a `Request` built first and passed as a variable is not caught. Narrows the gap,
-    does not close it.
-
-  ✅ **And the HTTPError-only five (2026-09-16). Adopters: 53.** The subtlest class yet, because
-  these read as fully compliant: correct `for wait in (0, 15, 45, 135)` backoff — the repo's own
-  pattern — and a correct 429 bail. What they lacked was the retryable **set**. They caught
-  `urllib.error.HTTPError` and nothing else, so a truncated body escaped the loop entirely and ended
-  the run: **the exact 2026-09-13 incident this module was written for.** They also `continue`d on
-  503/504 only, so a 500 or 502 was raised on the first attempt instead of retried.
-  `audit_supershrine_collapse.py`, `generate_multi_ordinal_removals.py`,
-  `generate_orphan_membership_removals.py`, `generate_tenjinsha_en_labels.py`,
-  `report_en_label_without_kana.py`.
-  - ⚠ **This is a DIFFERENT class from the one closed on 2026-09-14**, which was the eight catching
-    only `ReadTimeout`/`ConnectionError`. Same defect, different narrow clause. The lesson is that
-    *having* the right backoff is not evidence of having the right retryable set, and the backoff is
-    the part a survey notices.
-  - Each keeps its own "nothing measured / wrote nothing" exit, now naming the actual failure —
-    the hand-rolled message asserted "kept timing out" unconditionally and would have printed it for
-    a malformed query too.
-
-  ⛔⛔ **TWO CALLERS WERE RETRYING A 429 (found 2026-09-16). Both fixed; adopters 57.**
-  CLAUDE.md is unconditional — a 429 bails immediately, no retries — and these waited
-  **30/60/120/240s and asked four more times.** Both advertised it in their own docstring
-  (*"retry + exponential backoff on 429"*), which is how it survived: the description was accurate
-  and the description was the bug.
-  - `generate_p958_qualifiers.sparql_query` — migrated. Its own Wikidata API half, forty lines
-    below, already bailed on the first 429, so the file disagreed with itself. Its `RateLimitError`
-    is kept and the transport's `SystemExit` is translated into it: `__main__` catches that, prints
-    "partial results" and exits **0**, because being rate-limited is deliberately not a CI failure
-    for this script. That contract was never the problem.
-  - `generate_modern_shrine_ranking_qualifiers.fetch_sparql` — **fixed in place, NOT migrated.** It
-    had `429` bundled into `(429, 500, 502, 503, 504)`; the 429 is split out to bail. It keeps its
-    own transport on purpose: its truncated-body branch uses `json.loads(r.text, strict=False)` to
-    survive the Java stack trace WDQS appends to an already-200 response, and the shared transport's
-    strict `json.load` would not. **Migrating that file would be a regression.**
-  - `test_no_wdqs_caller_retries_a_429` pins it, **by AST**. ⛔ A regex first draft — "the indented
-    lines after `== 429:`" — ran past the end of the branch and flagged **fourteen** files whose 429
-    branch raises immediately, because it swallowed a ValueError handler further down the same
-    function. CLAUDE.md already records three wrong regex answers over this population; that was the
-    fourth, and it is why the test parses.
-
-  ⛔⛔ **A THIRD 429-RETRY, and it has no 429 in it at all** (2026-09-16). **A broad retry handler
-  with no 429 branch retries 429s BY OMISSION**: `raise_for_status()` turns a 429 into an
-  `HTTPError`, `except Exception` catches it, the loop sleeps and asks again. Nothing in such a
-  function mentions 429, so a check for the literal branch shape cannot see it.
-  - `generate_multilang_quickstatements.run_sparql` did this **three times per language, across 43
-    languages, nightly** — it is the generator `label-generator-regenerate` runs. Migrated. Its
-    retry loop existed for a real reason (2026-07-04: one transient failure killed the whole
-    multilang loop at lang 3/43 and `continue-on-error` hid it) and the transport serves it better,
-    15/45/135 against 30/60/90.
-  - `generate_indonesian_proposals.fetch_candidates` **swallowed** a 429 and reported a partial
-    result as success. The per-query degrade is deliberate and is kept; `SystemExit` passes through
-    `except Exception`, so the bail works and the degrade still does.
-  - The test now covers both shapes. ⚠ **Its second false positive is also recorded**: gating on
-    "the word sparql appears in the function" flagged `fetch_p11250_from_wiki.fetch_redirect_qids`,
-    which calls the Wikidata **API** and matched only because it paces with
-    `wd_pace(SPARQL_INTERVAL)`. It now gates on the request's actual endpoint. Checked against the
-    pre-fix source to confirm it is not vacuous.
-
-  📋 **Audited what remains (AST, 2026-09-16): 26 hand-rolled transport functions, 18 clean on all
-  four properties** — retry loop present, 429 bails, truncated body retried, pace ≥ 2.5s. Of the 8
-  flagged, 2 were the fixes above and the rest are known false positives worth not re-deriving:
-  `wdqs_transport._run` and `generate_description_fixes.sparql` catch a module-level `TRANSIENT`/
-  `transient` tuple that a name-based checker cannot resolve; `fetch_p11250_from_wiki` and
-  `resolve_doujou_addresses` functions call the Wikidata API or ja.wikipedia, not WDQS.
-
-  ⛔ **THE TRANSPORT ITSELF WAS THE DOWNGRADE, for five files (fixed 2026-09-17).** WDQS emits RAW
-  control characters inside string literals — a label or description containing a real newline comes
-  back unescaped — and Python's JSON parser rejects that unless `strict=False`. The module used
-  `json.load`, which is strict.
-  - **The failure mode was worse than an error.** `JSONDecodeError` is in `TRANSIENT`, so a
-    perfectly readable response was RETRIED on 15/45/135 and then re-raised: **195 seconds to fail
-    on data we could have parsed.** Same shape as the 414 note.
-  - Five callers already parsed with `strict=False`, one saying why outright — *"literals
-    legitimately contain raw newlines."* So migrating any of them onto the module would have been a
-    **downgrade**, which is the concrete mechanism behind this item's "migration is NOT uniformly an
-    upgrade" caveat. Until now that caveat named only backoff strength.
-  - ✔ **No adopter was regressed by it**: checked all 59 against their pre-session source, none had
-    `strict=False`. The five that do are all still unmigrated.
-  - `_parse_bindings` now uses `strict=False`. A truncated body still raises and is still retried —
-    `test_a_truncated_body_still_raises_and_is_still_retried` pins that the forgiveness did not
-    extend to the failure this module exists for.
-  - ➡ **Four of the five migrated (2026-09-17). Adopters: 63.** The per-file read changed the
-    answer for the fifth, and the numbers are why.
-
-  ✅ **`throttle` exists now, floor-guarded, because four callers were MORE polite than the floor.**
-  `generate_province_exclusions.py`, `generate_ronsha_ojp_name_removals.py`,
-  `generate_shikinaisha_kokugakuin_refs.py`, `generate_uncited_address_removals.py` are identical
-  and pace themselves at **3s**. A bare migration would have run them at 2.5 and made them less
-  polite than their authors chose — on the axis CLAUDE.md cares most about. `query(..., throttle=3)`
-  keeps their figure; `max(throttle, WDQS_THROTTLE)` means **no caller can ask to be faster**, which
-  is the whole difference between a parameter and a hole in the rate limit. Measured after the swap:
-  four queries took 9.4s, so the 3s gaps held.
-  - What they gained: 15/45/135 in place of 10/20/30/40 — fewer attempts (4 vs 5) but 195s of
-    waiting against 100s, the right direction for a service asking us to ease off.
-
-  ⛔ **`generate_modern_shrine_ranking_qualifiers.py` STAYS hand-rolled, and now with numbers.**
-  Throttle **10s** (transport 2.5, or 10 via the new parameter) and backoff **30/60/120/240 over 5
-  attempts = 450s** against the transport's 195s. Even with `throttle=10` the escalation is less
-  than half. **Migrating it is a downgrade on the backoff axis and always was** — this is the third
-  distinct mechanism behind this item's "not uniformly an upgrade", after backoff strength and
-  `strict=False`. Its 429 bundling was fixed in place on 2026-09-16; nothing else about it needs
-  doing.
-
-  ✅ **Also this tick: the loop-without-a-try four.** `generate_p958_qualifiers.py` (above),
-  `resolve_ronsha_addresses.py`, `collect_beppyo_p612.py`, `generate_soja_only.py` — their loop was
-  pagination or a status check, with no `try` in it, so a truncated body ended the run.
-  `generate_soja_only.py` had no 429 check at all. `collect_beppyo_p612.verify_shrines` lost every
-  already-verified chunk when it failed mid-batch, because `ok` is only returned at the end.
-  - ⚠ **`timeout` was hardcoded at 300 in the transport and the callers differ** — 600 in
-    `site/generate_orphan_label_fixes.py`, 120 in `fetch_shrines_tokiponize.py`. Adopting without a
-    parameter would not have broken visibly; it would have halved the longest query's budget and
-    shown up as an occasional timeout. `query()` takes `timeout` now, pinned by
-    `test_the_timeout_reaches_urlopen_and_is_not_silently_replaced`, and
-    `generate_ontology_census_page.py` no longer accepts one and discards it.
-  - A `try` with no loop is not a retry: `audit_duplicate_rankings.py`, `audit_model_adoption.py`,
-    `generate_saijin_deity_research.py`, `investigate_property_modelling.py`,
-    `generate_religious_building_labels.py`, `create_shrine_ranking_pages.py` catch and exit rather
-    than try again. They read as covered in a grep and are not.
-  - ⚠ **Do not re-derive the adopter count from a `wikidata.org/sparql` grep.** Migrating a file
-    deletes its endpoint constant, so it drops out of that grep entirely — which made the adopter
-    count read as 11 instead of 20 on the first pass of this scan. Count `import wdqs_transport`.
+- [ ] **15 dated `docs/` reports: Emma's call.** She approved clearing everything not referenced by a
+  live file, on a list that said only 3 of 29 were live. A whole-repo `git grep` then found 15 more
+  cited by running code and workflows as their RATIONALE. 11 were cleared; these 15 are held rather
+  than deleted on a false premise. Needs a fresh yes/no, not a widening of the old approval.
 
 - **Pinned tail (keep last)**
 

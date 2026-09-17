@@ -1,3 +1,31 @@
+## 2026-09-17 — Pruned queue.md: I had turned a queue item into a 226-line archive
+
+`queue.md` was **273 lines**, and 226 of them were one item. I wrote every one of those lines, a few
+at a time, at the end of each of the night's work-loop ticks — appending each finding to the WDQS
+item as I closed it.
+
+Every one of those findings was already written into `DEVLOG.md` in the same commit. So the queue
+was carrying a second copy of finished work, which is the exact thing this repo's conventions say it
+must not do: *"queue.md is a queue, not a state snapshot"*, *"Keep items TERSE (checkbox + 1-2
+lines)"*, *"Finished work does not live here"*. CLAUDE.md says the same about the wiki page in
+stronger terms — *"Length is the signal"*, *"A section that exists only to say 'this was settled' is
+crud"* — and I was doing it to the queue instead.
+
+The item is **25 lines** now and holds only what is open: do not batch the remainder, the three
+proven mechanisms behind "migration is not uniformly an upgrade", the ast-not-regex rule, and the
+one file that stays off the shared module. Everything else is in this file, dated, where it already
+was. `queue.md` 273 -> 72 lines.
+
+⚠ **The failure mode is worth naming because it looked like diligence.** Each addition was a real
+finding, correctly recorded, in a file I was also correctly updating. Nothing was wrong at any single
+tick. What went wrong is that a queue item is not where a finding goes once it is finished, and
+"append the result to the item I am working" is a habit that never trips an alarm — it just makes the
+control surface unreadable, one careful paragraph at a time.
+
+Also added as an item, because it is genuinely open and mine to have caused: the **15 held `docs/`
+reports** need a fresh decision from Emma. She approved clearing everything unreferenced by a live
+file, on a list I built from a five-file scan that missed 15 files cited by running code.
+
 ## 2026-09-17 — Applied the report-expiry rule to docs/ for the first time, and it is not mechanical
 
 The rule has been in CLAUDE.md since 2026-07-08 — *"reports and similar write-ups ... in `docs/`
