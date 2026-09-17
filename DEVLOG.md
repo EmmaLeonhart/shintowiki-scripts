@@ -1,3 +1,26 @@
+## 2026-09-17 — The four session crons, recreated; and the queue's first two items are not work
+
+`CronList` at session start: **no jobs at all**, which is the expected state and not a symptom.
+Created and re-verified: `83b0a8e7` work-loop :03, `ce4a2a9e` auto-flush :15, `c1304ac0`
+status-report :42, `747bc950` briefing 08:03. Four, not five — there is no debrief cron.
+
+The 08:03 prompt says out loud that `deep-briefing` and `DAILY.md` live in the hub and not here, so
+the gate in this repo is skip-check -> push -> `AskUserQuestion`, and that the question is the
+deliverable. The work-loop prompt carries the lockout's actual scope inline (writes only: the three
+scripts, the CI guard steps, the hand-run batches) rather than the word "lockout", because the word
+is what gets read as a gate on the whole subject.
+
+⚠ **What reading the queue for an actionable item turned up:** the two non-pinned items are both
+states, not work. The Miraheze one says so itself — *"Nothing is owed by anyone"*, and Emma has ruled
+out both contacting Miraheze and re-probing by hand, so the daily CI probe is the entire response.
+The WDQS one says *"There is no named defect left to fix"*: 26 hand-rolled transports remain, 18
+audited clean by AST on all four properties, and the remainder rides each file's next real change.
+
+So this tick's honest report is that the queue's actionable surface is the pinned tail. That is not a
+stall and it is not a defect — a queue that holds two watch-items and no work is a queue that has
+been drained correctly. Anything further this session comes from `todo.md`, planned into `queue.md`
+first.
+
 ## 2026-09-17 — `docs/script-rationale/`: the 15 held docs were never reports
 
 Emma's answer to what to do with the 15 dated docs that live code cites: *"specific directory for
