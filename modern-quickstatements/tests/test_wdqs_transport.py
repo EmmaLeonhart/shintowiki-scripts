@@ -433,6 +433,46 @@ def test_no_wdqs_caller_retries_a_429():
                 if any(isinstance(x, (_ast.Continue,))
                        for x in _ast.walk(_ast.Module(body=node.body, type_ignores=[]))):
                     offenders.append(os.path.relpath(path, root))
+
+            # ── The variant with NO 429 branch at all ────────────────────────
+            # `raise_for_status()` turns a 429 into an HTTPError; `except
+            # Exception` catches it; the loop sleeps and asks again. Nothing in
+            # such a function mentions 429, so the check above cannot see it.
+            # generate_multilang_quickstatements.run_sparql did exactly this —
+            # three times per language, across 43 languages, nightly.
+            #
+            # A broad retry handler with no 429 branch retries 429s BY OMISSION.
+            for fn in [n for n in _ast.walk(tree)
+                       if isinstance(n, _ast.FunctionDef)]:
+                seg = _ast.get_source_segment(src, fn) or ""
+                # ⚠ The request must actually go to a SPARQL ENDPOINT. Gating on
+                # "sparql appears in the function" flagged
+                # fetch_p11250_from_wiki.fetch_redirect_qids, which calls the
+                # Wikidata *API* and matched only because it paces itself with
+                # `wd_pace(SPARQL_INTERVAL)`. Its chunk loop is not a retry loop
+                # either. Second false positive from a loose gate in this test.
+                if not re.search(r"(requests\.(?:get|post)|urlopen)\s*\(\s*[^)]*?"
+                                 r"(SPARQL_ENDPOINT|SPARQL\b|WDQS\b|ENDPOINT\b"
+                                 r"|wikidata\.org/sparql)", seg):
+                    continue
+                if "429" in seg:
+                    continue                      # has SOME 429 handling; checked above
+                loops = [x for x in _ast.walk(fn) if isinstance(x, (_ast.For, _ast.While))]
+                if not loops:
+                    continue                      # no retry at all is a different defect
+                broad = False
+                for t in [x for x in _ast.walk(fn) if isinstance(x, _ast.Try)]:
+                    for h in t.handlers:
+                        name = _ast.unparse(h.type) if h.type else "bare"
+                        if "Exception" in name or name == "bare":
+                            # does that handler go round again?
+                            inner = _ast.Module(body=h.body, type_ignores=[])
+                            if any(isinstance(x, _ast.Continue) for x in _ast.walk(inner)) \
+                                    or not any(isinstance(x, _ast.Raise)
+                                               for x in _ast.walk(inner)):
+                                broad = True
+                if broad:
+                    offenders.append(os.path.relpath(path, root))
     assert not offenders, (
         "these WDQS callers retry a 429 instead of bailing: "
         + ", ".join(sorted(set(offenders))))

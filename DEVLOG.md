@@ -1,3 +1,41 @@
+## 2026-09-16 (work-loop tick) — The third 429-retry had no 429 in it
+
+**A broad retry handler with no 429 branch retries 429s by omission.** `raise_for_status()` turns a
+429 into an `HTTPError`, `except Exception` catches it, the loop sleeps and asks again. Nothing in
+such a function mentions 429 anywhere, so yesterday's check for the literal branch shape
+(`if status == 429: ... continue`) cannot see it. That is the finding; the two files are almost
+incidental to it.
+
+**`generate_multilang_quickstatements.run_sparql`** did this **three times per language, across 43
+languages** — it is the generator `label-generator-regenerate` runs nightly, and one of the two that
+this session watched run green in CI twice. Migrated. Its retry loop exists for a real reason and is
+still served: 2026-07-04, one transient WDQS failure killed the whole multilang loop at lang 3/43
+and `continue-on-error` hid it, so only tr+de were written. The transport gives it 15/45/135 where
+it had 30/60/90.
+
+**`generate_indonesian_proposals.fetch_candidates`** swallowed a 429 and returned a partial result
+as a success. Its per-query degrade is deliberate — one query failing should not cost the other's
+results — and is kept, because `SystemExit` is a `BaseException` and passes straight through
+`except Exception`.
+
+⚠ **The test needed widening to find this, and its second false positive is worth writing down.**
+Gating the new check on "the word sparql appears in the function" flagged
+`fetch_p11250_from_wiki.fetch_redirect_qids`, which calls the Wikidata **API** and matched only
+because it paces itself with `wd_pace(SPARQL_INTERVAL)` — and whose loop is chunking, not retrying.
+It now gates on the request's actual endpoint. **Verified against the pre-fix source from git that
+the widened check really catches `run_sparql`**, rather than trusting that a passing test means a
+working test.
+
+**And an audit of what is left.** 26 hand-rolled WDQS transport functions remain; **18 are clean on
+all four documented properties** — retry loop present, 429 bails, truncated body retried, pace at or
+above 2.5s. Of the 8 flagged, 2 were the fixes above and 6 are false positives I am recording so
+nobody re-derives them: `wdqs_transport._run` and `generate_description_fixes.sparql` catch a
+module-level `TRANSIENT`/`transient` tuple a name-based checker cannot resolve, and the
+`fetch_p11250_from_wiki` / `resolve_doujou_addresses` functions call the Wikidata API or
+ja.wikipedia rather than WDQS.
+
+Adopters 57 -> 59. Suite 2,249, run. Live-checks batched.
+
 ## 2026-09-16 (work-loop tick) — Two callers were retrying a 429
 
 The clearest policy violation found in this whole sweep, and it was hiding in plain sight because

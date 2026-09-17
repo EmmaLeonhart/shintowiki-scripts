@@ -33,6 +33,11 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
@@ -1068,31 +1073,26 @@ ORDER BY ?item
 
 
 def run_sparql(query, label):
-    """One transient WDQS failure used to kill the WHOLE multilang loop mid-
-    run (2026-07-04: the regenerate run died on lang 3/43 and continue-on-
-    error hid it — only tr+de were written). Bounded retries with backoff."""
-    import time as _t
+    """One WDQS query, through the shared transport.
+
+    ⛔ This RETRIED A 429, and nothing in it mentioned 429 at all. That is the
+    whole point of recording it: `raise_for_status()` turns a 429 into an
+    `HTTPError`, `except Exception` caught it, and the loop slept 30/60/90s and
+    asked again — three times, per language, across 43 languages. A check for the
+    literal shape `if status == 429: ... continue` does not find this, because
+    there is no such branch. **A broad retry handler with no 429 branch retries
+    429s by omission.**
+
+    The reason the retry loop exists is kept and is still served: one transient WDQS
+    failure used to kill the WHOLE multilang loop mid-run (2026-07-04 — the
+    regenerate run died on lang 3/43 and `continue-on-error` hid it; only tr+de were
+    written). The transport retries transport failures and 5xx on 15/45/135, which
+    is strictly more than the 30/60/90 this had.
+    """
     print(f"  Querying Wikidata: {label}...")
-    last_err = None
-    for attempt in range(3):
-        try:
-            wd_pace(SPARQL_INTERVAL)
-            r = requests.get(
-                SPARQL_ENDPOINT,
-                params={"query": query, "format": "json"},
-                headers={"User-Agent": WIKIDATA_USER_AGENT},
-                timeout=300,
-            )
-            r.raise_for_status()
-            results = r.json()["results"]["bindings"]
-            print(f"  Got {len(results)} results.")
-            return results
-        except Exception as e:
-            last_err = e
-            wait = 30 * (attempt + 1)
-            print(f"  [RETRY] SPARQL failed ({e}); waiting {wait}s...", flush=True)
-            _t.sleep(wait)
-    raise last_err
+    results = wdqs_transport.query(query, timeout=300)
+    print(f"  Got {len(results)} results.")
+    return results
 
 # ----------------------------
 # Main

@@ -170,6 +170,31 @@ from `ATOMIC_FILES`; they are not queue items.
     function. CLAUDE.md already records three wrong regex answers over this population; that was the
     fourth, and it is why the test parses.
 
+  ⛔⛔ **A THIRD 429-RETRY, and it has no 429 in it at all** (2026-09-16). **A broad retry handler
+  with no 429 branch retries 429s BY OMISSION**: `raise_for_status()` turns a 429 into an
+  `HTTPError`, `except Exception` catches it, the loop sleeps and asks again. Nothing in such a
+  function mentions 429, so a check for the literal branch shape cannot see it.
+  - `generate_multilang_quickstatements.run_sparql` did this **three times per language, across 43
+    languages, nightly** — it is the generator `label-generator-regenerate` runs. Migrated. Its
+    retry loop existed for a real reason (2026-07-04: one transient failure killed the whole
+    multilang loop at lang 3/43 and `continue-on-error` hid it) and the transport serves it better,
+    15/45/135 against 30/60/90.
+  - `generate_indonesian_proposals.fetch_candidates` **swallowed** a 429 and reported a partial
+    result as success. The per-query degrade is deliberate and is kept; `SystemExit` passes through
+    `except Exception`, so the bail works and the degrade still does.
+  - The test now covers both shapes. ⚠ **Its second false positive is also recorded**: gating on
+    "the word sparql appears in the function" flagged `fetch_p11250_from_wiki.fetch_redirect_qids`,
+    which calls the Wikidata **API** and matched only because it paces with
+    `wd_pace(SPARQL_INTERVAL)`. It now gates on the request's actual endpoint. Checked against the
+    pre-fix source to confirm it is not vacuous.
+
+  📋 **Audited what remains (AST, 2026-09-16): 26 hand-rolled transport functions, 18 clean on all
+  four properties** — retry loop present, 429 bails, truncated body retried, pace ≥ 2.5s. Of the 8
+  flagged, 2 were the fixes above and the rest are known false positives worth not re-deriving:
+  `wdqs_transport._run` and `generate_description_fixes.sparql` catch a module-level `TRANSIENT`/
+  `transient` tuple that a name-based checker cannot resolve; `fetch_p11250_from_wiki` and
+  `resolve_doujou_addresses` functions call the Wikidata API or ja.wikipedia, not WDQS.
+
   ✅ **Also this tick: the loop-without-a-try four.** `generate_p958_qualifiers.py` (above),
   `resolve_ronsha_addresses.py`, `collect_beppyo_p612.py`, `generate_soja_only.py` — their loop was
   pagination or a status check, with no `try` in it, so a truncated body ended the run.

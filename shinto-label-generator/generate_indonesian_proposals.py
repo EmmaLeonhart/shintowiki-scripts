@@ -73,6 +73,11 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
@@ -103,28 +108,24 @@ SELECT DISTINCT ?item ?jaLabel ?enLabel WHERE {
 """
 
 def fetch_candidates():
-    results = []
-    print("Querying Wikidata for Japanese-only Shrines...")
-    try:
-        wd_pace(SPARQL_INTERVAL)
-        r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_SHRINES, "format": "json"}, headers={"User-Agent": WIKIDATA_USER_AGENT}, timeout=300)
-        r.raise_for_status()
-        bindings = r.json()["results"]["bindings"]
-        for b in bindings:
-            b["type"] = {"value": "shrine"}
-            results.append(b)
-    except Exception as e: print(f"Error fetching shrines: {e}")
+    """Shrine + temple candidates, each query degrading independently.
 
-    print("Querying Wikidata for Japanese-only Temples...")
-    try:
-        wd_pace(SPARQL_INTERVAL)
-        r = requests.get(SPARQL_ENDPOINT, params={"query": SPARQL_TEMPLES, "format": "json"}, headers={"User-Agent": WIKIDATA_USER_AGENT}, timeout=300)
-        r.raise_for_status()
-        bindings = r.json()["results"]["bindings"]
-        for b in bindings:
-            b["type"] = {"value": "temple"}
-            results.append(b)
-    except Exception as e: print(f"Error fetching temples: {e}")
+    ⚠ The per-query `except` is deliberate — one query failing should still let
+    the other's results through — but it also swallowed a **429**, reporting a
+    partial result as a success. Through the transport that is fixed without
+    touching the degrade: `SystemExit` is a `BaseException`, so the 429 bail passes
+    straight through `except Exception` while everything else still degrades.
+    """
+    results = []
+    for label, query, kind in (("Shrines", SPARQL_SHRINES, "shrine"),
+                               ("Temples", SPARQL_TEMPLES, "temple")):
+        print(f"Querying Wikidata for Japanese-only {label}...")
+        try:
+            for b in wdqs_transport.query(query, timeout=300):
+                b["type"] = {"value": kind}
+                results.append(b)
+        except Exception as e:
+            print(f"Error fetching {label.lower()}: {e}")
     return results
 
 # A transliterated Japanese shrine suffix is part of the NAME and stays in the
