@@ -388,6 +388,56 @@ def test_no_adopter_builds_its_own_wdqs_request():
         + ", ".join(sorted(offenders)))
 
 
+def test_no_wdqs_caller_retries_a_429():
+    """CLAUDE.md is unconditional: a 429 bails immediately, no retries.
+
+    `generate_p958_qualifiers.sparql_query` did the opposite — 30/60/120/240s over
+    four attempts — and said so in its own docstring: *"retry + exponential backoff
+    on 429"*. It read as careful. The Wikidata API half of that same file, forty
+    lines below, already bailed on the first 429, so the file disagreed with itself.
+
+    The shape banned here is a 429 branch that loops round again. A 429 branch that
+    raises, exits or returns is fine — that is the policy.
+
+    ⛔ **Parsed with AST, not matched with a regex, and the first draft proves why.**
+    A regex that took the 429 branch as "the indented lines after `== 429:`" ran
+    straight past the end of that branch and flagged **fourteen** files whose 429
+    branch raises immediately — the `sleep`/`continue` it found belonged to a
+    ValueError handler further down the same function. CLAUDE.md already records
+    three wrong regex answers over this exact population; this was the fourth.
+    """
+    import ast as _ast
+
+    root = os.path.dirname(MQ)
+    offenders = []
+    for dirpath, dirnames, files in os.walk(root):
+        dirnames[:] = [d for d in dirnames
+                       if d not in {".git", "__pycache__", "node_modules", "tests"}]
+        for fn in files:
+            if not fn.endswith(".py"):
+                continue
+            path = os.path.join(dirpath, fn)
+            src = open(path, encoding="utf-8", errors="replace").read()
+            if "wikidata.org/sparql" not in src and "import wdqs_transport" not in src:
+                continue
+            try:
+                tree = _ast.parse(src)
+            except SyntaxError:
+                continue
+            for node in _ast.walk(tree):
+                if not isinstance(node, _ast.If):
+                    continue
+                if "429" not in _ast.unparse(node.test):
+                    continue
+                # the branch's OWN body only — nothing after the `if` closes
+                if any(isinstance(x, (_ast.Continue,))
+                       for x in _ast.walk(_ast.Module(body=node.body, type_ignores=[]))):
+                    offenders.append(os.path.relpath(path, root))
+    assert not offenders, (
+        "these WDQS callers retry a 429 instead of bailing: "
+        + ", ".join(sorted(set(offenders))))
+
+
 def test_no_wdqs_caller_paces_below_the_documented_floor():
     """CLAUDE.md sets `WDQS_THROTTLE = 2.5` as the FLOOR, after an unpaced sweep
     fired ~365 queries and drew repeated 503/504.

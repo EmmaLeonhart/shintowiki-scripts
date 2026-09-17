@@ -148,6 +148,33 @@ from `ATOMIC_FILES`; they are not queue items.
   - Each keeps its own "nothing measured / wrote nothing" exit, now naming the actual failure —
     the hand-rolled message asserted "kept timing out" unconditionally and would have printed it for
     a malformed query too.
+
+  ⛔⛔ **TWO CALLERS WERE RETRYING A 429 (found 2026-09-16). Both fixed; adopters 57.**
+  CLAUDE.md is unconditional — a 429 bails immediately, no retries — and these waited
+  **30/60/120/240s and asked four more times.** Both advertised it in their own docstring
+  (*"retry + exponential backoff on 429"*), which is how it survived: the description was accurate
+  and the description was the bug.
+  - `generate_p958_qualifiers.sparql_query` — migrated. Its own Wikidata API half, forty lines
+    below, already bailed on the first 429, so the file disagreed with itself. Its `RateLimitError`
+    is kept and the transport's `SystemExit` is translated into it: `__main__` catches that, prints
+    "partial results" and exits **0**, because being rate-limited is deliberately not a CI failure
+    for this script. That contract was never the problem.
+  - `generate_modern_shrine_ranking_qualifiers.fetch_sparql` — **fixed in place, NOT migrated.** It
+    had `429` bundled into `(429, 500, 502, 503, 504)`; the 429 is split out to bail. It keeps its
+    own transport on purpose: its truncated-body branch uses `json.loads(r.text, strict=False)` to
+    survive the Java stack trace WDQS appends to an already-200 response, and the shared transport's
+    strict `json.load` would not. **Migrating that file would be a regression.**
+  - `test_no_wdqs_caller_retries_a_429` pins it, **by AST**. ⛔ A regex first draft — "the indented
+    lines after `== 429:`" — ran past the end of the branch and flagged **fourteen** files whose 429
+    branch raises immediately, because it swallowed a ValueError handler further down the same
+    function. CLAUDE.md already records three wrong regex answers over this population; that was the
+    fourth, and it is why the test parses.
+
+  ✅ **Also this tick: the loop-without-a-try four.** `generate_p958_qualifiers.py` (above),
+  `resolve_ronsha_addresses.py`, `collect_beppyo_p612.py`, `generate_soja_only.py` — their loop was
+  pagination or a status check, with no `try` in it, so a truncated body ended the run.
+  `generate_soja_only.py` had no 429 check at all. `collect_beppyo_p612.verify_shrines` lost every
+  already-verified chunk when it failed mid-batch, because `ok` is only returned at the end.
   - ⚠ **`timeout` was hardcoded at 300 in the transport and the callers differ** — 600 in
     `site/generate_orphan_label_fixes.py`, 120 in `fetch_shrines_tokiponize.py`. Adopting without a
     parameter would not have broken visibly; it would have halved the longest query's budget and

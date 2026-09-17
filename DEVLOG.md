@@ -1,3 +1,48 @@
+## 2026-09-16 (work-loop tick) — Two callers were retrying a 429
+
+The clearest policy violation found in this whole sweep, and it was hiding in plain sight because
+both files **described it accurately in their own docstrings**: *"Run a SPARQL query with retry +
+exponential backoff on 429."* CLAUDE.md is unconditional — a 429 bails immediately, no retries — and
+these waited 30s, 60s, 120s, 240s and asked four more times. A 5xx means the server failed and might
+not next time; a 429 means it is asking us to stop.
+
+**`generate_p958_qualifiers.sparql_query` — migrated.** Its own Wikidata API half, forty lines below
+in the same file, already raised on the first 429. The file disagreed with itself and the WDQS half
+was the one arguing with the policy. Its `RateLimitError` is preserved and the transport's
+`SystemExit` translated into it, because `__main__` catches that, prints "exiting with partial
+results" and falls off the end — **exit code 0**. Being rate-limited is deliberately not a CI failure
+for this script, and that contract was never what was wrong.
+
+**`generate_modern_shrine_ranking_qualifiers.fetch_sparql` — fixed in place, deliberately NOT
+migrated.** It had `429` bundled into `if r.status_code in (429, 500, 502, 503, 504)`. The 429 is
+split out to bail; the 5xx retry is untouched. ⛔ **Migrating this file would be a regression**: its
+truncated-body branch is `json.loads(r.text, strict=False)`, which exists because WDQS signals a
+mid-stream query abort by appending a Java stack trace to an already-200 body, and `strict=False`
+tolerates the raw newlines in it. The shared transport's `json.load` is strict. Better handling than
+the shared module has, for a case the shared module does not model.
+
+⛔ **The test that found the second one had to be rewritten to find it.** A regex draft that read
+"the indented lines after `== 429:`" as the branch ran straight past where the branch ended, and
+flagged **fourteen** files whose 429 branch raises immediately — what it had actually matched was a
+`ValueError` handler further down the same function. One check of one file showed it. CLAUDE.md
+already records three wrong regex answers over this exact population; this was the fourth, over the
+exact same failure mode, and it is why `test_no_wdqs_caller_retries_a_429` parses with `ast` and
+looks only inside the `If` node's own body. **From 14 false positives to 1 true one.**
+
+**Also migrated: the loop-without-a-try four.** `resolve_ronsha_addresses.py` (retried a non-200 but
+a truncated 200 raised straight out of `r.json()`), `collect_beppyo_p612.py` (no retry at all, and a
+mid-batch failure lost every chunk already verified, because `ok` is only returned at the end),
+`generate_soja_only.py` (**no 429 check of any kind** — the last two WDQS queries in the tree with
+neither a check nor a retry), plus the p958 one above.
+
+Adopters 53 -> 57. Suite 2,249, run. Live-checks batched into one process again.
+
+⭐ And a thing worth keeping: `collect_beppyo_p612.verify_shrines` had a comment recording that its
+User-Agent was once built INLINE from the wiki-side contact on a Wikidata request, and that inline
+construction is *"how it evaded the module-level audit — the shape to watch for, not just the
+value."* The transport now owns the header, so the dict is gone; the lesson is kept in place, because
+a transport owning the header is precisely the version a call site cannot get wrong.
+
 ## 2026-09-16 (work-loop tick) — The HTTPError-only five: right backoff, wrong retryable set
 
 The subtlest class so far, because these read as fully compliant. Each had the repo's own backoff

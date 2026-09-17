@@ -26,13 +26,14 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import io
 import json
 import sys
+
+import wdqs_transport
 import requests
 import time
 from datetime import datetime, timezone
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 HEADERS = {
     "User-Agent": WIKIDATA_USER_AGENT,
@@ -66,25 +67,24 @@ class RateLimitError(Exception):
 
 
 def sparql_query(query):
-    """Run a SPARQL query with retry + exponential backoff on 429."""
-    max_retries = 4
-    for attempt in range(max_retries + 1):
-        resp = requests.get(
-            SPARQL_ENDPOINT,
-            params={"query": query, "format": "json"},
-            headers=HEADERS,
-            timeout=60,
-        )
-        if resp.status_code == 429:
-            if attempt < max_retries:
-                wait = 30 * (2 ** attempt)
-                print(f"429 Too Many Requests — retrying in {wait}s (attempt {attempt + 1}/{max_retries})", flush=True)
-                time.sleep(wait)
-                continue
-            print(f"FATAL: 429 Too Many Requests after {max_retries} retries — bailing")
-            raise RateLimitError(f"429 Too Many Requests: {resp.url}")
-        resp.raise_for_status()
-        return resp.json()["results"]["bindings"]
+    """One WDQS query, through the shared transport.
+
+    ⛔ This used to **RETRY a 429** — 30/60/120/240s over four attempts — and its
+    docstring said so outright: *"retry + exponential backoff on 429"*. CLAUDE.md is
+    unconditional here: a 429 bails immediately, no retries. The Wikidata API half
+    of THIS SAME FILE, forty lines below, already did the right thing and raised on
+    the first 429; only the WDQS half argued with the policy.
+
+    The `RateLimitError` translation is deliberate and is NOT what was wrong.
+    `__main__` catches it, prints "exiting with partial results" and falls off the
+    end — exit code 0, because being rate-limited is not a CI failure for this
+    script. That contract is preserved; only the retrying is removed.
+    """
+    try:
+        return wdqs_transport.query(query, timeout=60)
+    except SystemExit as e:
+        # The transport raises SystemExit for one reason only: a 429.
+        raise RateLimitError(str(e)) from e
 
 
 def get_entities_batch(qids):

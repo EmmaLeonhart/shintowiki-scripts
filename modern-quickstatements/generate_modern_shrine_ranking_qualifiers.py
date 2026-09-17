@@ -171,7 +171,12 @@ _last_sparql_time = 0.0
 
 
 def fetch_sparql(query):
-    """Run a SPARQL query against Wikidata with retry + exponential backoff on 429/timeout."""
+    """Run a SPARQL query against Wikidata with retry + exponential backoff on 5xx/timeout.
+
+    NOT on 429 — that bails immediately, per CLAUDE.md. This docstring said "429"
+    until 2026-09-16 and the code agreed with it, which is how the violation
+    survived: it described itself accurately and the description was the bug.
+    """
     global _last_sparql_time
     max_retries = 4
     for attempt in range(max_retries + 1):
@@ -195,15 +200,21 @@ def fetch_sparql(query):
                 continue
             raise
         _last_sparql_time = time.time()
-        if r.status_code in (429, 500, 502, 503, 504):
+        # ⛔ 429 IS NOT A 5xx AND IS NOT RETRYABLE. It was bundled into the tuple
+        # below until 2026-09-16 and retried 30/60/120/240s before bailing — this
+        # function's own docstring advertised "retry + exponential backoff on 429".
+        # CLAUDE.md is unconditional: a 429 bails immediately, no retries. A 5xx
+        # means the server failed and may not next time; a 429 means it is asking us
+        # to stop, and asking again four times is the opposite of complying.
+        if r.status_code == 429:
+            print("FATAL: 429 Too Many Requests — bailing immediately (no retries)")
+            raise RateLimitError(f"429 Too Many Requests: {r.url}")
+        if r.status_code in (500, 502, 503, 504):
             if attempt < max_retries:
                 wait = 30 * (2 ** attempt)  # 30s, 60s, 120s, 240s
                 print(f"{r.status_code} Server Error — retrying in {wait}s (attempt {attempt + 1}/{max_retries})", flush=True)
                 time.sleep(wait)
                 continue
-            if r.status_code == 429:
-                print(f"FATAL: 429 Too Many Requests after {max_retries} retries — bailing")
-                raise RateLimitError(f"429 Too Many Requests: {r.url}")
             print(f"FATAL: {r.status_code} after {max_retries} retries — bailing")
             r.raise_for_status()
         r.raise_for_status()

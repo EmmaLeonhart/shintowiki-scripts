@@ -8,15 +8,15 @@ if _uar not in _usys.path:
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import io
 import sys
+
+import wdqs_transport
 import json
 import time
 import requests
 
 
-SPARQL = "https://query-main.wikidata.org/sparql"
 API = "https://www.wikidata.org/w/api.php"
 UA = WIKIDATA_USER_AGENT
-H = {"User-Agent": UA, "Accept": "application/sparql-results+json"}
 
 VALUE = "Q1107129"        # sōja
 DETERMINED_BY = "Q742460"  # ritsuryō
@@ -72,9 +72,10 @@ def main():
     }}
     ORDER BY ?item
     """
-    r = requests.get(SPARQL, params={"query": remaining_query, "format": "json"}, headers=H, timeout=90)
-    r.raise_for_status()
-    items_need_add = [qid(b["item"]["value"]) for b in r.json()["results"]["bindings"]]
+    # ⚠ Both WDQS queries in this function had NO 429 check and no retry of any
+    # kind. The deliberate 10s gap between them is kept.
+    items_need_add = [qid(b["item"]["value"])
+                      for b in wdqs_transport.query(remaining_query, timeout=90)]
     print(f"  {len(items_need_add)} items need P13723 added")
 
     time.sleep(10)
@@ -88,9 +89,8 @@ def main():
     }}
     ORDER BY ?item
     """
-    r = requests.get(SPARQL, params={"query": safe_remove_query, "format": "json"}, headers=H, timeout=90)
-    r.raise_for_status()
-    items_safe_remove = [qid(b["item"]["value"]) for b in r.json()["results"]["bindings"]]
+    items_safe_remove = [qid(b["item"]["value"])
+                         for b in wdqs_transport.query(safe_remove_query, timeout=90)]
     print(f"  {len(items_safe_remove)} items safe to remove old {SRC_PROP}")
 
 

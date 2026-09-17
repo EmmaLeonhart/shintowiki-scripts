@@ -40,10 +40,13 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.ua_contact import contact
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
-from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(SCRIPT_DIR)
@@ -88,26 +91,22 @@ def mother_target(payload, subject):
 
 def verify_shrines(qids):
     """{qid -> True} for targets that really are Shinto shrines (SPARQL)."""
-    import requests
     ok = set()
     uniq = sorted(qids)
-    # Was building the agent inline from the wiki-side contact on a Wikidata request.
-    # Inline construction is also how it evaded the module-level audit -- the shape to
-    # watch for, not just the value.
-    hdr = {"User-Agent": WIKIDATA_USER_AGENT,
-           "Accept": "application/sparql-results+json"}
+    # The User-Agent moved into wdqs_transport with the request. Keeping the lesson
+    # it carried: this once built the agent INLINE, from the wiki-side contact, on a
+    # Wikidata request -- and inline construction is how it evaded the module-level
+    # audit in the first place. The shape is the thing to watch for, not the value.
+    # A transport that owns the header is the version a call site cannot get wrong.
     for i in range(0, len(uniq), 50):
         vals = " ".join("wd:%s" % q for q in uniq[i:i + 50])
         query = ("SELECT ?item WHERE { VALUES ?item { %s } "
                  "?item wdt:P31/wdt:P279* wd:Q845945 }" % vals)
-        wd_pace(SPARQL_INTERVAL)
-        r = requests.post("https://query-main.wikidata.org/sparql",
-                          data={"query": query, "format": "json"},
-                          headers=hdr, timeout=120)
-        if r.status_code == 429:
-            raise SystemExit("429 from WDQS — bailing (CLAUDE.md 429 policy).")
-        r.raise_for_status()
-        for b in r.json()["results"]["bindings"]:
+        # ⚠ The chunking loop stays; only the request moves. This had NO retry at
+        # all — a truncated body ended the run mid-batch and lost every chunk already
+        # verified, because `ok` is only returned at the end. post=True keeps the
+        # VALUES clause out of a GET URL, as it did before.
+        for b in wdqs_transport.query(query, timeout=120, post=True):
             ok.add(b["item"]["value"].rsplit("/", 1)[-1])
     return ok
 

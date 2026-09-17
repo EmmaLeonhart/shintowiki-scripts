@@ -51,6 +51,8 @@ import json
 import os
 import re
 import sys
+
+import wdqs_transport
 import time
 import urllib.parse
 
@@ -62,7 +64,6 @@ DEFAULT_OUT = os.path.join(REPO, "docs", "ronsha_address_resolution_2026-07.md")
 
 UA = WIKIDATA_USER_AGENT
 HEADERS = {"User-Agent": UA}
-SPARQL = "https://query-main.wikidata.org/sparql"
 
 RONSHA = "Q135022904"
 KOKUGAKUIN = "https://jmapps.ne.jp/kokugakuin/det.html?data_id={}"
@@ -206,16 +207,13 @@ def resolve_address(addresses, prefecture, municipality):
 # ─────────────────────────── live lookups ───────────────────────────
 
 def sparql(query):
-    for attempt in range(4):
-        r = requests.get(SPARQL, params={"query": query, "format": "json"},
-                         headers=dict(HEADERS, Accept="application/sparql-results+json"),
-                         timeout=180)
-        if r.status_code == 429:
-            raise SystemExit("FATAL: 429 — bailing (429 policy)")
-        if r.status_code == 200:
-            return r.json()["results"]["bindings"]
-        time.sleep(5 * (attempt + 1))
-    raise RuntimeError("SPARQL failed")
+    """One WDQS query, through the shared transport.
+
+    ⚠ The loop this replaces was a retry loop with no `try` inside it: a non-200
+    was retried, but a 200 whose body came back truncated raised straight out of
+    `r.json()` and ended the run. Backoff was 5/10/15 against the repo's 15/45/135.
+    """
+    return wdqs_transport.query(query, timeout=180)
 
 
 def candidates():
