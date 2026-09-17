@@ -47,6 +47,13 @@ WIKIDATA_BOUND = {
     "ronsha_ranking_review",
     "beppyo_p612",
     "label_typo_review",
+    # Added 2026-09-17. Stage 4 of the English-label pipeline, folded in after its
+    # own cloud routine was lost in the 2026-07-27 account move. Wikidata-bound
+    # end to end: the worklist comes from SPARQL, the answer becomes a `Len`
+    # QuickStatement via collect_en_labels.py, and nothing touches Miraheze. This
+    # is the "labelling" Emma's quote at the top of this file is contrasting the
+    # blocked grunge against.
+    "en_label",
 }
 
 

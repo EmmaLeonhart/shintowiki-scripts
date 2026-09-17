@@ -1,3 +1,62 @@
+## 2026-09-17 — The cloud sessions were not doing labels, and had not been since the account move
+
+Emma: *"Are the cloud sessions actually doing labels or not lol?"* **No.** They are alive and working
+— just not on labels.
+
+**What is actually running.** Two routines exist on this account. One is a spent one-shot from
+09-07, disabled. The only live one is **"Drain remote_queue.json (5 random/day)"**, which fired today
+at 21:04Z and succeeded, as it has every day. But its queue is 1,412 items of `name_in_kana` (807),
+`category_translation` (328), `description_enrichment_en` (247), `ronsha_ranking_review` (29) and
+`beppyo_p612` (1). **Zero label items.**
+
+**When labels stopped, and why.** `chore(en-labels): 5 Sonnet-translated shrine labels` landed daily
+from late June to **2026-07-27**, then never again — 52 days. 2026-07-27 is the day Emma moved
+Claude accounts, and `docs/remote_queue_pipeline.md` already records that **routines do not survive an
+account move**. The drainer was recreated that same night (created 2026-07-27T23:33:36Z); the label
+routine was not. So Stage 4 of the English-label pipeline was not retired, not broken, not blocked
+— it was simply **absent**, and nobody noticed for seven weeks.
+
+⚠ **It was invisible by construction.** Stages 0-2 kept running and committing daily, the worklists
+kept refreshing, `en_labels_sonnet.txt` kept being read by the submitter. The only symptom of a
+missing pipeline stage was a file that stopped growing, against a backlog that grows on its own.
+Nothing in the repo asserts that a stage still has something driving it.
+
+**Emma's call:** fold labels into the drainer that already works, rather than recreate a second
+routine. Built:
+
+- `shinto_miraheze/build_en_label_queue.py` — tops up a capped pool of work-files in `en_label/`,
+  reusing `select_shrines_to_translate.py` so only the genuine residual is ever queued.
+- `EN_LABEL_INSTRUCTION` + the `en_label` section in `remote_queue.py`.
+- `shinto_miraheze/collect_en_labels.py` — folds `LABEL:` into `en_labels_sonnet.txt` (already in
+  both submitters' `ATOMIC_FILES`, so the loop closes), logs `SKIP:`, deletes the work-file.
+- Both wired into `generate-quickstatements.yml`, collector before builder.
+
+⛔ **The pool cap is the whole substance of "fold in" and not tidiness.** The residual is ~18,000
+items (4,777 shrines + 13,288 temples) against ~1,400 for everything else combined. Queued whole,
+labels would be **93%** of the queue and the drainer's 5 random picks would be labels nearly every
+day — every other category starved by an accident of population size rather than a decision. At
+`--pool 400` labels are **22%** of a 1,812-item queue, second-largest, roughly one a day.
+
+⛔ **A rejected answer keeps its work-file.** A QS line is `Qxxx|Len|"..."`, so a quote in the payload
+is not a bad label, it is a malformed COMMAND that the submitter would carry to Wikidata as whatever
+it parsed to. `validate()` refuses those, and refusing must not delete the file — deleting also
+re-queues the item, so a bad answer would cycle forever unseen. An unprefixed free-text answer is a
+SKIP, never a label.
+
+**A real bug the tests caught before it shipped:** `want // 2` per kind meant the two batches could
+not cover an odd shortfall, so the pool settled one short of target on every run (a pool of 7 filled
+to 6). Ceiling division.
+
+`tests/test_en_label_queue.py` (19) pins the cap, the top-up, residual-only selection, every
+malformed-label rejection, the free-text-is-a-SKIP rule, and the CI wiring including collector-before-
+builder. `test_remote_queue_skips_dead_wikis.py` caught the new category arriving undeclared and now
+records it as Wikidata-bound — which is exactly the "labelling" Emma's 2026-09-15 quote in that file
+contrasts against the wiki-blocked grunge. Suite 1,662 -> 1,681.
+
+⚠ **Not done, and not attempted:** nothing now asserts that a pipeline stage still has a live driver.
+That is the defect class this whole entry is about, and a test for it would have to know what
+"driving" means for each stage. Recorded, not diagnosed.
+
 ## 2026-09-17 — The doc move missed six paths, and a grep could not have found them
 
 This morning's `docs/script-rationale/` move fixed 41 references and verified itself by grepping for

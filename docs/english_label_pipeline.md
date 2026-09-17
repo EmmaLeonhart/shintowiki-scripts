@@ -53,7 +53,49 @@ throttle is spent on shrines that need no LLM at all.
 | **1** | `ja` + kana, no `en` | Deterministic kana→English rules (jinja→Shrine, taisha→Grand Shrine [alias], daijinja→Daijinja, -sha→-sha Shrine, -gu→-gu Shrine, daijingu→Daijingu). NOT pykakasi/Indonesian. | **DONE — `kana_english.py` + `generate_kana_en_labels.py`** |
 | **2** | `ja`, no kana, no `en` | Reuse en label from another shrine with identical `ja` label (dominant wins + less-common alias; tie→random; alias only when exactly one other) | **DONE — `reuse_labels.py` + `generate_identical_name_en_labels.py`** |
 | **3** | no `en`/kana/identical-name match, has a non-CJK-script label | Transliterate, drop 2nd word, replace with "Shrine" | **DROPPED (Emma, 2026-06-21)** — only 2 such shrines exist & all irregular; they route to Stage 4 (LLM) |
-| **4** | everything still without `en` | LLM remote Sonnet routine (5/day) | **DONE (A4)** — `select_shrines_to_translate.py` now excludes every QID already in `en_labels.txt` / `kana_en_labels.txt` / `identical_name_en_labels.txt` / `en_labels_sonnet.txt`; residual 5060→2688 |
+| **4** | everything still without `en` | LLM, via the **remote_queue drainer** (shared 5/day) | **REBUILT 2026-09-17** — was a dedicated routine; that routine died in the 2026-07-27 account move and nothing recreated it for 52 days. Now a queue category: `build_en_label_queue.py` → `en_label/` → drainer → `collect_en_labels.py` → `en_labels_sonnet.txt`. See below. |
+
+## Stage 4 as rebuilt (2026-09-17) — a remote-queue category, not its own routine
+
+**What broke.** Stage 4 ran as its own claude.ai routine emitting
+`chore(en-labels): 5 Sonnet-translated shrine labels` every day from late June. The last one is
+**2026-07-27** — the day Emma moved Claude accounts. Routines do not survive an account move
+(`docs/remote_queue_pipeline.md` says so, and it is why the remote_queue drainer was recreated that
+same night). The label routine was not recreated, so Stage 4 was simply **absent for 52 days**.
+
+Nothing looked wrong, and that is the part worth remembering. Stages 0-2 kept running daily and kept
+committing, `shrines_missing_en_label.json` kept refreshing, `en_labels_sonnet.txt` kept being read
+by the submitter. The only symptom was a file that stopped growing.
+
+**Emma's call, 2026-09-17:** fold labels into the drainer that already works rather than recreate a
+second routine. One routine, already repo-bound, already proven to fire daily.
+
+**The shape:**
+
+| piece | does |
+|---|---|
+| `shinto_miraheze/build_en_label_queue.py` | tops a **capped pool** of work-files up in `en_label/` |
+| `remote_queue.py` (`EN_LABEL_INSTRUCTION`) | emits them as the `en_label` category |
+| the drainer (`trig_015viL16x9ReKsQRmsJEscH7`) | picks 5 random items/day across ALL categories, fills `<!-- ANSWER: -->` |
+| `shinto_miraheze/collect_en_labels.py` | folds `LABEL:` into `en_labels_sonnet.txt`, logs `SKIP:`, deletes the work-file |
+| `submit_daily_batch.py` / `direct_daily_edits.py` | already carry `en_labels_sonnet.txt` in `ATOMIC_FILES` |
+
+Both the collector and the builder run in `generate-quickstatements.yml`, collector first.
+
+⛔ **The pool cap is load-bearing, not tidiness.** The residual is ~18,000 items (4,777 shrines +
+13,288 temples) against ~1,400 for every other category combined. Queued whole, labels would be
+**~93%** of the queue and the drainer's 5 random picks would be labels nearly every day — every other
+category starved, by an accident of population size rather than a decision. At `--pool 400` labels
+sit at ~22% of the queue, second-largest, roughly one label a day.
+
+⛔ **A rejected answer keeps its work-file.** A QuickStatement is `Qxxx|Len|"..."`, so a quote or a
+newline in the payload does not produce a bad label — it produces a malformed *command*, and the
+submitter would carry whatever that parsed to out to Wikidata. `collect_en_labels.validate()` refuses
+those, and refusing must not delete the file, because deleting it also re-queues the item and the bad
+answer would cycle forever with nothing to look at.
+
+⚠ An unprefixed free-text answer is treated as a **SKIP**, never as the label. Guessing that a
+sentence of reasoning was meant as the label is how a sentence of reasoning becomes a Wikidata label.
 
 ## Stage 1 as built (A1, 2026-06-21)
 - `modern-quickstatements/kana_english.py` — `label_for(ja, kana)` picks the

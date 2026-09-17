@@ -515,7 +515,7 @@ jobs:
       - name: "Collect: cloud answers into atomic files"
         continue-on-error: true
         run: |
-          for c in collect_name_in_kana collect_ronsha_rankings collect_beppyo_p612                    collect_label_typo_answers collect_description_enrichment; do
+          for c in collect_name_in_kana collect_ronsha_rankings collect_beppyo_p612                    collect_label_typo_answers collect_description_enrichment collect_en_labels; do
             echo "--- $c"
             python3 "shinto_miraheze/$c.py" || echo "$c non-fatal"
           done
@@ -523,7 +523,7 @@ jobs:
       - name: "Build: refill the cloud work queues"
         continue-on-error: true
         run: |
-          for b in build_name_in_kana_queue build_ronsha_ranking_queue build_beppyo_p612_queue                    build_label_typo_review_queue build_description_enrichment_queue; do
+          for b in build_name_in_kana_queue build_ronsha_ranking_queue build_beppyo_p612_queue                    build_label_typo_review_queue build_description_enrichment_queue build_en_label_queue; do
             echo "--- $b"
             python3 "shinto_miraheze/$b.py" || echo "$b non-fatal"
           done
@@ -551,7 +551,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add name_in_kana/ ronsha_ranking_review/ beppyo_p612/                   label_typo_review/ description_enrichment_en/ 2>/dev/null || true
+          git add name_in_kana/ ronsha_ranking_review/ beppyo_p612/                   label_typo_review/ description_enrichment_en/ en_label/ 2>/dev/null || true
           # ⛔ docs/model_adoption.json HAD NEVER ONCE BEEN COMMITTED. The Sunday
           # conformance audit writes it (step "Audit model adoption", ../docs/ from
           # modern-quickstatements) and nothing staged `docs/` — the step below only

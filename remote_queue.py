@@ -279,6 +279,37 @@ LABEL_TYPO_REVIEW_INSTRUCTION = (
     "into QuickStatements later. When ANSWER is filled you are done with the file."
 )
 
+EN_LABEL_INSTRUCTION = (
+    "This file is a WORK ITEM giving a Shinto shrine or Japanese Buddhist "
+    "temple its English Wikidata label - Stage 4 of "
+    "docs/english_label_pipeline.md, the residual that the deterministic "
+    "stages (kana romanization, identical-name reuse) could not name. The "
+    "`<!-- KIND / JA / KANA -->` marker carries what is known; KANA is the "
+    "authoritative reading when it is filled, and EMPTY when the reading is "
+    "exactly what you have to establish.\n\n"
+    "Conventions, which are not negotiable - they must match the files this "
+    "folds into:\n"
+    "  * shrine: `<Stem> Shrine` (Iino Shrine, Kushikino Shrine).\n"
+    "  * temple: `<Stem>-<suffix> Temple`, the suffix romanized from the "
+    "KANA so the reading survives - the kanji alone does not determine it "
+    "(誓願寺 せいがんじ -> `Seigan-ji Temple`; "
+    "清水寺 きよみずでら -> `Kiyomizu-dera Temple`). "
+    "Accepted: -ji / -dera / -tera / -in / -an / -do / -bo.\n"
+    "  * MACRON-FREE Hepburn (`Kozen-ji`, not `Kōzen-ji`), no "
+    "parenthetical disambiguator, no trailing period.\n\n"
+    "RESEARCH the reading (jawiki article, official site, Kokugakuin "
+    "database). Japanese place and temple names have irregular readings, so "
+    "do NOT romanize the kanji by guess. Fill the `<!-- ANSWER: -->` marker "
+    "with exactly one of `LABEL: <the English label>` or `SKIP: <short "
+    "reason>` - SKIP when the reading is genuinely unsourceable or the item "
+    "is not a shrine or temple at all. Never invent a reading to avoid a "
+    "SKIP.\n\n"
+    "Do NOT edit Wikidata yourself and do NOT edit any other file - "
+    "collect_en_labels.py folds ANSWER into en_labels_sonnet.txt and the "
+    "daily submitter drips it out. When ANSWER is filled you are done with "
+    "this file."
+)
+
 MIRAHEZE_SHRINE_DISAMBIG_NO_AUTOGEN_KANJI_KNOWN_TEMPLATE = (
     "This shrine disambiguation page (tagged [[Category:Shrine "
     "disambiguations]]) doesn't have the auto-generated `== Shrines "
@@ -729,6 +760,13 @@ def build_queue() -> list[dict]:
             )
         )
     items.extend(_build_section("description_enrichment_en", DESCRIPTION_ENRICHMENT_INSTRUCTION))
+    # Stage 4 of the English-label pipeline, folded in here 2026-09-17 (Emma's
+    # call) after its own cloud routine was lost in the 2026-07-27 account move
+    # and nothing recreated it for 52 days. build_en_label_queue.py keeps a
+    # CAPPED pool of work-files: the residual is ~18,000 against ~1,400 for
+    # everything else, so queueing it whole would make labels ~93% of the queue
+    # and starve every other category out of the drainer's 5 random picks.
+    items.extend(_build_section("en_label", EN_LABEL_INSTRUCTION))
     # Shuffle so the consumer picks pages in random order. With no cursor-based
     # statefulness (work is gated purely on file-presence + category), random
     # order keeps the consumer from repeatedly hitting the same early pages —
