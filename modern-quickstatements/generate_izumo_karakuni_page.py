@@ -22,7 +22,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(HERE)
-DOC = os.path.join(REPO_ROOT, "docs", "izumo_ou_karakuni_2026-07.md")
+DOC = os.path.join(REPO_ROOT, "docs", "script-rationale", "izumo_ou_karakuni_2026-07.md")
 OUT = os.path.join(REPO_ROOT, "_site", "izumo-karakuni.html")
 
 _LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")

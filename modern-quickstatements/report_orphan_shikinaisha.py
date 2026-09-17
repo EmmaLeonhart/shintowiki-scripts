@@ -50,7 +50,7 @@ import urllib.parse
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DOC = os.path.join(os.path.dirname(HERE), "docs", "orphan_shikinaisha_2026-07.md")
+DOC = os.path.join(os.path.dirname(HERE), "docs", "script-rationale", "orphan_shikinaisha_2026-07.md")
 
 UA = WIKIDATA_USER_AGENT
 

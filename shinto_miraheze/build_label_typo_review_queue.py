@@ -19,7 +19,7 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-AUDIT = os.path.join(ROOT, "docs", "kana_label_mismatch_audit_2026-07.md")
+AUDIT = os.path.join(ROOT, "docs", "script-rationale", "kana_label_mismatch_audit_2026-07.md")
 OUTDIR = os.path.join(ROOT, "label_typo_review")
 
 TASK = (

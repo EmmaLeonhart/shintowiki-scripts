@@ -38,7 +38,7 @@ import urllib.parse
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DOC = os.path.join(os.path.dirname(HERE), "docs", "engishiki_list_structure_2026-07.md")
+DOC = os.path.join(os.path.dirname(HERE), "docs", "script-rationale", "engishiki_list_structure_2026-07.md")
 
 UA = WIKIDATA_USER_AGENT
 

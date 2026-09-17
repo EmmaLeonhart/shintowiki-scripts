@@ -1,3 +1,26 @@
+## 2026-09-17 — The doc move missed six paths, and a grep could not have found them
+
+This morning's `docs/script-rationale/` move fixed 41 references and verified itself by grepping for
+the old paths. Six survived, all the same shape:
+
+    DOC = os.path.join(REPO_ROOT, "docs", "izumo_ou_karakuni_2026-07.md")
+
+`git grep docs/izumo_ou_karakuni_2026-07.md` cannot see that — the directory and the filename are
+separate arguments, and the path only exists after `os.path.join` runs. **The verification method was
+the reason the miss happened**, not carelessness on top of it.
+
+Two failure modes, and only one was loud:
+
+- `build_label_typo_review_queue.py` **READS** its audit table, so it was already dead —
+  `FileNotFoundError` on a queue builder, found while extending that same subsystem.
+- The other five **WRITE** their report. They would have quietly recreated a second copy at the old
+  `docs/` path, where the report-expiry rule deletes it as a stale report while `script-rationale/`
+  keeps a diverging one. Nothing would have looked wrong.
+
+All six repointed. `tests/test_script_rationale_paths_resolve.py` resolves the constants themselves
+rather than grepping for them, checks each lands under `script-rationale/`, and asserts no moved doc
+reappears at its old path. Mutation-checked. Suite 1,649 -> 1,662.
+
 ## 2026-09-17 — A 429 bail was throwing away five steps' work, and the obvious fix is the sibling's bug
 
 `generate-shrines-missing-en-label.yml` went red 2026-09-16 and 2026-09-17, green the 13 days

@@ -60,7 +60,7 @@ import requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
-DEFAULT_OUT = os.path.join(REPO, "docs", "ronsha_address_resolution_2026-07.md")
+DEFAULT_OUT = os.path.join(REPO, "docs", "script-rationale", "ronsha_address_resolution_2026-07.md")
 
 UA = WIKIDATA_USER_AGENT
 HEADERS = {"User-Agent": UA}
