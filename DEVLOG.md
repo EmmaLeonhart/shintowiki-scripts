@@ -1,3 +1,38 @@
+## 2026-09-17 — A 429 bail was throwing away five steps' work, and the obvious fix is the sibling's bug
+
+`generate-shrines-missing-en-label.yml` went red 2026-09-16 and 2026-09-17, green the 13 days
+before. Both days are the same and neither is a code defect: the temple Stage 2 query is the biggest
+of the run — **6,114 distinct ja labels**, against the shrine pass's 3,176 — and WDQS answered 429.
+`fetch_batch` bails immediately with no retries, which is exactly this repo's 429 policy.
+
+**What was actually broken is the step order.** The commit is the second-to-last step, so a bail in
+step 6 skipped it, and `shrines_missing_en_label.json`, `kana_en_labels.txt`,
+`identical_name_en_labels.txt`, `temples_missing_en_label.json` and `temple_en_labels.txt` were all
+computed and then discarded — twice. Last refresh on main was **2026-09-15**.
+
+⚠ **The obvious fix is a documented fault in this repo, in the sibling workflow.**
+`generate-quickstatements.yml` marks its generators `continue-on-error: true` with nothing re-failing
+the job, and its own line-36 comment records the cost: a 429 bail reports **GREEN** while the file
+silently stops regenerating — `description_label_pairs.txt` sat unchanged from 2026-08-02 through
+three Sundays and *"nothing ever looking wrong"*. So the two workflows have been failing in opposite
+directions: this one loses the work loudly, that one loses it quietly.
+
+The fix takes both halves and neither alone: the eight generation steps get `continue-on-error` +
+an `id` so the commit still runs, and a **final step after the commit** re-fails the job if any of
+them failed. Commit what succeeded; go red anyway. `strip_husk_lines.py` keeps hard-failing — its
+own comment says why, and softening it would let husk-targeting lines reach the staged `.txt`.
+
+`tests/test_en_label_workflow_keeps_partial_work.py` pins both halves, plus the commit's position
+(second-to-last) and the husk step staying hard. Mutation-checked rather than assumed: deleting the
+re-fail step fails 3 tests, dropping one generator's `continue-on-error` fails 1. Suite 1,637 ->
+1,649.
+
+⚠ **Not claimed here:** why WDQS started 429ing this query on 09-16. The workflow fires all eight
+generators back to back with no pacing between steps and the largest query last, which is a
+plausible shape for it, but nothing measured says that is the cause — the endpoint's own load would
+look identical from here. What is fixed is that a 429, whatever its cause, no longer costs a day of
+output.
+
 ## 2026-09-17 — The four session crons, recreated; and the queue's first two items are not work
 
 `CronList` at session start: **no jobs at all**, which is the expected state and not a symptom.

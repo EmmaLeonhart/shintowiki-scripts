@@ -36,36 +36,70 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      # ⚠ The eight generation steps below are `continue-on-error` + `id`, and the
+      # LAST step of the job re-fails it if any of them failed. Both halves matter,
+      # because this workflow and its sibling have failed in OPPOSITE directions:
+      #
+      #   * Here (red 2026-09-16 and 09-17): the temple Stage 2 query is the biggest
+      #     of the run (~6,114 distinct ja labels) and got a 429. Bailing on 429 is
+      #     correct repo policy. But the commit is a LATER step, so five steps that
+      #     had already succeeded had their output computed and thrown away, twice.
+      #     Last refresh on main was 2026-09-15.
+      #   * The sibling (generate-quickstatements.yml, line 36): blanket
+      #     `continue-on-error: true` with nothing re-failing the job, so a 429 bail
+      #     reports GREEN and the file silently stops regenerating —
+      #     description_label_pairs.txt sat unchanged from 2026-08-02 through three
+      #     Sundays and nothing ever looked wrong.
+      #
+      # So: continue past a bail (keep the work), then go red anyway (keep it visible).
+      # Do NOT add `continue-on-error` here without the re-fail step, and do NOT drop
+      # the re-fail step to make the workflow look clean.
       - name: Generate list
+        id: gen_shrines
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_shrines_missing_en_label.py
 
       - name: Generate Stage 1 deterministic kana en-labels
+        id: gen_kana
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_kana_en_labels.py
 
       - name: Generate Stage 2 identical-name reuse en-labels
+        id: gen_identical
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_identical_name_en_labels.py
 
       - name: Generate Japanese-temple missing-en-label worklist
+        id: gen_temples
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_temples_missing_en_label.py
 
       - name: Generate deterministic temple en-labels ("<Stem>-<suffix> Temple")
+        id: gen_temple_en
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_temple_en_labels.py
 
       - name: Generate Stage 2 identical-name reuse temple en-labels
+        id: gen_temple_identical
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_temple_identical_name_en_labels.py
 
       - name: Prune LLM labels superseded by Stage 0/1/2 (priority)
+        id: gen_dedup
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python dedup_sonnet_labels.py
 
       - name: Generate C1 CJK->ja label backfill
+        id: gen_cjk
         working-directory: modern-quickstatements
+        continue-on-error: true
         run: python generate_cjk_ja_backfill.py
 
       # MUST be the last step before the commit, for the same reason it is the last
@@ -97,3 +131,25 @@ jobs:
               sleep 5
             done
           fi
+
+      # MUST be last, and must be after the commit: the point is that what succeeded
+      # is committed AND the job still goes red. A 429 from WDQS is the expected
+      # reason to land here; it is not a defect in this repo, but it does mean the
+      # named file did not regenerate today, and that has to stay visible.
+      - name: Re-fail if any generation step failed
+        if: always()
+        run: |
+          failed=""
+          for s in             "shrines_missing_en_label:${{ steps.gen_shrines.outcome }}"             "kana_en_labels:${{ steps.gen_kana.outcome }}"             "identical_name_en_labels:${{ steps.gen_identical.outcome }}"             "temples_missing_en_label:${{ steps.gen_temples.outcome }}"             "temple_en_labels:${{ steps.gen_temple_en.outcome }}"             "temple_identical_name_en_labels:${{ steps.gen_temple_identical.outcome }}"             "dedup_sonnet_labels:${{ steps.gen_dedup.outcome }}"             "cjk_ja_backfill:${{ steps.gen_cjk.outcome }}"; do
+            name="${s%%:*}"; outcome="${s##*:}"
+            if [ "$outcome" = "failure" ]; then
+              echo "::error::$name did not regenerate this run (step outcome: failure)"
+              failed="$failed $name"
+            fi
+          done
+          if [ -n "$failed" ]; then
+            echo "Everything that DID succeed was committed by the previous step."
+            echo "Did not regenerate:$failed"
+            exit 1
+          fi
+          echo "All eight generation steps succeeded."
