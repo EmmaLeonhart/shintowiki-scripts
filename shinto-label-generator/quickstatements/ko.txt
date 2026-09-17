@@ -26176,8 +26176,8 @@ Q134887261	Lko	"신메이샤 신사"
 Q134887264	Lko	"다이로쿠텐 신사"
 # Source: ID "Kuil Yagumo" (romanization)
 Q134887265	Lko	"야구모 신사"
-# Source: ID "Kuil īzuka" (romanization)
-Q134887266	Lko	"이즈카 신사"
+# Source: ID "Kuil Iizuka" (romanization)
+Q134887266	Lko	"이이즈카 신사"
 # Source: ID "Kuil Shinmei" (romanization)
 Q134887267	Lko	"신메이 신사"
 # Source: ID "Kuil Sengen" (romanization)
@@ -56532,6 +56532,8 @@ Q135460420	Lko	"주니 신사"
 Q135460421	Lko	"주니 신사"
 # Source: ID "Kuil Juni" (romanization)
 Q135460422	Lko	"주니 신사"
+# Source: ID "Kuil Shingū" (romanization)
+Q135460423	Lko	"신구 신사"
 # Source: ID "Kuil Hachimangū" (romanization)
 Q135460425	Lko	"하치만구 신사"
 # Source: ID "Kuil Shibu Umigami Sha" (romanization)
@@ -61844,8 +61846,6 @@ Q15931876	Lko	"돈간 신사"
 Q15934402	Lko	"인슈이 신사"
 # Source: ID "Kuil Hinomisaki" (romanization)
 Q1619446	Lko	"히노미사키 신사"
-# Source: JA "大観密寺" (hanja reading fallback)
-Q1621882	Lko	"대관밀사"
 # Source: ID "Wihara Ryūkō-ji" (romanization)
 Q1632583	Lko	"류코지 사원"
 # Source: ID "Kuil Tokyo Tens" (romanization)
@@ -66652,8 +66652,6 @@ Q70203929	Lko	"쿠와바라 신사"
 Q70280025	Lko	"이즈모이와이 신사"
 # Source: ID "Kuil Masuda" (romanization)
 Q70370553	Lko	"마스다 신사"
-# Source: ID "Kuil Oyamazumi" (romanization)
-Q703904	Lko	"오야마즈미 신사"
 # Source: ID "Kuil Terukuni" (romanization)
 Q704219	Lko	"테루쿠니 신사"
 # Source: ID "Kuil Agung Kirishima" (romanization)
@@ -70552,8 +70550,8 @@ Q11494983	Lko	"자광사"
 Q11495000	Lko	"자은사구산시"
 # Source: JA "慈恩寺" (hanja reading)
 Q11495001	Lko	"자은사"
-# Source: JA "慈明寺 (橿原市)" (hanja reading)
-Q11495020	Lko	"자명사강원시"
+# Source: JA "慈明寺" (hanja reading)
+Q11495020	Lko	"자명사"
 # Source: JA "慈願寺 (八尾市)" (hanja reading)
 Q11495055	Lko	"자원사팔미시"
 # Source: JA "慈願寺 (高槻市)" (hanja reading)
@@ -101200,8 +101198,6 @@ Q135460414	Lko	"적성사"
 Q135460415	Lko	"상원신사"
 # Source: JA "三社" (hanja reading)
 Q135460416	Lko	"삼사"
-# Source: JA "新宮神社" (hanja reading)
-Q135460423	Lko	"신궁신사"
 # Source: JA "白山媛神社" (hanja reading)
 Q135460424	Lko	"백산원신사"
 # Source: JA "矢放社" (hanja reading)
@@ -106436,6 +106432,8 @@ Q135935023	Lko	"동광사"
 Q135943073	Lko	"우황신사"
 # Source: JA "普賢院" (hanja reading)
 Q135966624	Lko	"보현원"
+# Source: JA "西光寺" (hanja reading)
+Q135967745	Lko	"서광사"
 # Source: JA "法源寺 (名古屋市)" (hanja reading)
 Q135974721	Lko	"법원사명고옥시"
 # Source: JA "宝国寺" (hanja reading)
@@ -106582,8 +106580,8 @@ Q136745135	Lko	"동정사"
 Q136756098	Lko	"아라하바키신"
 # Source: JA "宇賀神社" (hanja reading)
 Q136759659	Lko	"우하신사"
-# Source: JA "圓頓寺 (岡崎市)" (hanja reading)
-Q136762022	Lko	"원돈사강기시"
+# Source: JA "圓頓寺" (hanja reading)
+Q136762022	Lko	"원돈사"
 # Source: JA "東林寺" (hanja reading)
 Q136766872	Lko	"동림사"
 # Source: JA "八甲田神社" (hanja reading)
@@ -106680,6 +106678,8 @@ Q137485181	Lko	"팔번신사"
 Q137537998	Lko	"적총신명사"
 # Source: JA "長源寺 (東海市)" (hanja reading)
 Q137569609	Lko	"장원사동해시"
+# Source: JA "回向院" (hanja reading)
+Q137612192	Lko	"회향원"
 # Source: JA "天澤院" (hanja reading)
 Q137612204	Lko	"천택원"
 # Source: JA "一乗寺" (hanja reading)
@@ -107474,6 +107474,8 @@ Q141247231	Lko	"명통사"
 Q141247333	Lko	"도춘원"
 # Source: JA "杉山神社" (hanja reading)
 Q141272977	Lko	"삼산신사"
+# Source: JA "久須神社" (hanja reading)
+Q141317175	Lko	"구수신사"
 # Source: JA "河合神社" (hanja reading)
 Q141344360	Lko	"하합신사"
 # Source: JA "業葉神社" (hanja reading)
@@ -107486,6 +107488,22 @@ Q141436789	Lko	"신명신사"
 Q141436802	Lko	"백산신사포군시풍강정"
 # Source: JA "若宮神社" (hanja reading)
 Q141436824	Lko	"약궁신사"
+# Source: JA "法蔵寺" (hanja reading)
+Q141440900	Lko	"법장사"
+# Source: JA "一畑山薬師寺名古屋別院" (hanja reading)
+Q141440934	Lko	"일전산약사사명고옥별원"
+# Source: JA "定泉寺" (hanja reading)
+Q141442863	Lko	"정천사"
+# Source: JA "琵琶島神社" (hanja reading)
+Q141442927	Lko	"비파도신사"
+# Source: JA "善揚院" (hanja reading)
+Q141445308	Lko	"선양원"
+# Source: JA "円福寺" (hanja reading)
+Q141451275	Lko	"엔복사"
+# Source: JA "縣神社" (hanja reading)
+Q141475899	Lko	"현신사"
+# Source: JA "熊野神社" (hanja reading)
+Q141477382	Lko	"웅야신사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
@@ -107954,7 +107972,7 @@ Q24875675	Lko	"보천사"
 Q24875968	Lko	"정복사"
 # Source: JA "法善寺" (hanja reading)
 Q24876066	Lko	"법선사"
-# Source: JA "眞言寺" (hanja reading)
+# Source: JA "真言寺" (hanja reading)
 Q24876444	Lko	"진언사"
 # Source: JA "龍泉院 (南魚沼市)" (hanja reading)
 Q24876488	Lko	"용천원남어소시"
@@ -109422,6 +109440,8 @@ Q60986714	Lko	"고창사"
 Q60986747	Lko	"불성사"
 # Source: JA "護徳寺" (hanja reading)
 Q60986788	Lko	"호덕사"
+# Source: JA "悟渓寺" (hanja reading)
+Q60986794	Lko	"오부사"
 # Source: JA "福徳寺" (hanja reading)
 Q60986804	Lko	"복덕사"
 # Source: JA "光照寺" (hanja reading)
