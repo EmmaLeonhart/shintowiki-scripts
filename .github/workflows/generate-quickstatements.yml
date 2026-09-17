@@ -520,6 +520,16 @@ jobs:
             python3 "shinto_miraheze/$c.py" || echo "$c non-fatal"
           done
 
+      # Reports cloud-fed stages whose output has stopped growing while work is
+      # still queued -- the shape of the 52-day Stage 4 gap, whose driver lived
+      # outside this repo and so was invisible to every test in it. Prints GH
+      # ::warning:: annotations so the finding lands on the run, not in a log.
+      # Always exits 0 on purpose: a quiet cloud routine must not stop the
+      # pipeline. continue-on-error too, so it cannot break the job either way.
+      - name: "Check: cloud-fed stages still have a driver"
+        continue-on-error: true
+        run: python3 shinto_miraheze/check_stage_liveness.py
+
       - name: "Build: refill the cloud work queues"
         continue-on-error: true
         run: |

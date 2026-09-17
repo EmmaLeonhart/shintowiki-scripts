@@ -1,3 +1,43 @@
+## 2026-09-17 — A liveness check for stages whose driver is not in this repo
+
+The gap this closes is the one from earlier today: Stage 4 of the English-label pipeline lost its
+cloud routine in the 2026-07-27 account move and was **absent for 52 days** while every in-repo
+symptom looked healthy. No test could see it, because the driver was not in the repo.
+
+`shinto_miraheze/check_stage_liveness.py` reads the one signal that does cross that boundary —
+**git history of the output file**. A stage with work-files queued but an output that has stopped
+growing is a stage with nothing driving it.
+
+⚠ **Two thresholds were wrong before one was right, and the real data caught both.**
+
+- **A flat day count.** `beppyo_p612` had gone **44 days** without growing, and that is correct
+  behaviour: it is **one** work-file, and the drainer takes 5 random items from ~1,800, so it comes
+  up about once a *year*. A flat threshold calls a healthy stage dead on every run, which is how a
+  check becomes noise and then stops being read. The rule is relative to the expected draw rate,
+  `queue_total / (5 * pool)`.
+- **Draw rate alone**, which actually fired on the first run: it flagged `category_translation` at
+  16 days. Its collector runs **on the 1st of the month**, so on the 17th the output is necessarily
+  16 days stale. An answer cannot reach the output faster than the collector that folds it in. Each
+  pair now carries a cadence and the threshold adds it.
+
+I nearly reported that second one as a finding. It was a wrong model on my side, not a defect in the
+pipeline — which is the distinction this file keeps having to relearn.
+
+**Current reading: 1 of 7 quiet** — `en_label`, 52 days, which is the real gap and clears as soon
+as the drainer answers one (next fire 2026-09-18 21:03Z). The other six are correctly silent,
+including the two that a naive check would have shouted about.
+
+**It reports, it does not gate.** Always exits 0, `continue-on-error` in CI, and prints GitHub
+`::warning::` annotations so the finding lands on the workflow run rather than in a log nobody opens.
+A quiet cloud routine must not stop the pipeline — that would be the same class of mistake as the
+guard-instead-of-the-work pattern.
+
+Wired into `generate-quickstatements.yml` between the collectors and the builders (collect, check,
+refill). `tests/test_stage_liveness.py` (15) pins both rejected models against their real dates, the
+empty-pool and empty-queue cases, that it never gates, and that **every `collect_*.py` output has a
+liveness entry** — so a new cloud-fed stage cannot arrive unwatched, which was the whole failure.
+Suite 1,681 -> 1,696.
+
 ## 2026-09-17 — The cloud sessions were not doing labels, and had not been since the account move
 
 Emma: *"Are the cloud sessions actually doing labels or not lol?"* **No.** They are alive and working
