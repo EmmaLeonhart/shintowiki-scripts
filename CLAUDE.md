@@ -140,6 +140,18 @@ Emma 2026-07-08: reports and similar write-ups (on the wiki page, in `_site/`, i
 snapshots) are cleared once they are a week old — they are working artifacts, not archives.
 History lives in DEVLOG.md + git.
 
+⚠ **AND MOST `docs/` DATED REPORTS ARE CITED BY LIVE CODE — check before deleting one.** Applied
+2026-09-17 for the first time since the rule was written: of 29 dated reports in `docs/`, **15 are
+referenced by running scripts and workflows** — `report_list_structure.py`, `report_orphan_shikinaisha.py`,
+`generate_ontology_census_page.py`, `direct_daily_edits.py`, `jinjacho_reisai.py` and others point at
+them as their RATIONALE, not as decoration. A further 3 are cited by `todo.md`/`queue.md`. Only **11**
+were genuinely inert, and those were cleared.
+- The check that matters is `git grep -l <filename>` across the WHOLE repo. A scan of just the
+  top-level docs said "only 3 are live" and was wrong by twelve files; the mistake was caught before
+  anything was deleted, but it was caught by luck of double-checking, not by the first scan.
+- So the rule stands, and the mechanical application of it does not. A dated report in `docs/` is a
+  candidate, not a target.
+
 ⛔ **`modern-quickstatements/reports/*.json` is NOT covered by this and must not be cleared.**
 Checked 2026-09-13: 168 files back to 2026-03-24, ~1 MB, and `generate_run_history.py` globs **all**
 of them to build `_site/runs.html`. They are the run-history page's DATA, not a report about it —

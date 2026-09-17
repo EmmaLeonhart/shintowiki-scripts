@@ -1,3 +1,40 @@
+## 2026-09-17 — Applied the report-expiry rule to docs/ for the first time, and it is not mechanical
+
+The rule has been in CLAUDE.md since 2026-07-08 — *"reports and similar write-ups ... in `docs/`
+status snapshots are cleared once they are a week old"* — and `docs/` still held **29 dated reports**,
+most from July. Emma's call on scope: clear everything not referenced by a live file.
+
+⚠ **The list I put to her was wrong, and I want that recorded because the error is the interesting
+part.** My reference check scanned five top-level files — `CLAUDE.md`, `README.md`, `todo.md`,
+`queue.md`, `DEVLOG.md` — and concluded only 3 of the 29 were live. A `git grep` across the whole
+repo says **15 more are cited by running code and workflows**: `report_list_structure.py`,
+`report_orphan_shikinaisha.py`, `report_ronsha_list_membership.py`, `generate_ontology_census_page.py`,
+`generate_p958_qualifiers.py`, `direct_daily_edits.py`, `jinjacho_reisai.py`, `conflict_gate.py`,
+`lost_shrine_gate.py`, `resolve_ronsha_addresses.py`, two workflows and several sibling docs. They
+cite these files as their RATIONALE — the reason the script does what it does — not as decoration.
+
+So **11 were deleted, not 26.** That is a strict subset of what was approved and breaks no
+references; the other 15 were held rather than deleted on a premise that turned out to be false.
+Going back for a fresh decision on those is the honest next step, not quietly widening my own
+approval.
+
+**The rule stands; the mechanical application of it does not.** A dated report in `docs/` is a
+candidate, not a target, and the check that decides it is `git grep -l <filename>` across the whole
+repo. CLAUDE.md now says so, with the numbers, so the next session does not repeat the five-file
+scan.
+
+Cleared (11): the two backlog-resolution snapshots, `commons_label_accuracy_2026-07`,
+`commons_labels_other_religions_report_2026-07`, `crashed_session_2026-05-20`,
+`deity_property_modelling_2026-07`, `deleted_items_recreation_handoff_2026-07-06`,
+`derived_name_in_kana_2026-09`, `province_exclusion_residual_2026-07`,
+`religious_building_multilang_design_2026-07`, `shrine_repeated_names_audit_2026-07`. Git keeps them,
+which is what the rule says history is for.
+
+**Separately, the overnight loop is the first full CI run since all 63 transport migrations.**
+`cleanup-loop` 35196408870: `generate-quickstatements / generate` green, **74 steps, 4 skipped** —
+byte-identical to the pre-migration baseline, and the 4 are the Cloudflare-blocked Miraheze fetches
+that were already skipping. Every migrated generator ran.
+
 ## 2026-09-17 — Four of the five migrate; the fifth stays, and the numbers say why
 
 Yesterday's `strict=False` fix removed the blanket reason not to migrate the last five hand-rolled
