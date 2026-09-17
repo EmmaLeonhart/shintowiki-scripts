@@ -1,3 +1,39 @@
+## 2026-09-17 — The shared transport was the downgrade, and it cost 195s to fail on readable data
+
+Spot-reading two of the eighteen transports last night's audit called clean — to check the audit
+rather than trust it — turned up something about the shared module instead of about them.
+
+**WDQS emits RAW control characters inside string literals.** A label or description containing a
+real newline comes back unescaped, and Python's JSON parser rejects that unless `strict=False`.
+`wdqs_transport` parsed with `json.load`, which is strict.
+
+⛔ **The failure mode was worse than a plain error.** `JSONDecodeError` is in `TRANSIENT`, so a
+response that was perfectly readable got retried on 15/45/135 and then re-raised — **195 seconds
+spent to fail on data we could have parsed.** That is the same shape as the 414 the module already
+classifies as fatal: a deterministic fact, re-learned slowly.
+
+⭐ **And it inverts the item's own caveat.** Five callers already parse with `strict=False`, one
+saying why in a comment — *"strict=False because literals legitimately contain raw newlines."*
+Migrating any of them onto the shared module would therefore have been a **downgrade**. This item
+has warned since it was written that "migration is NOT uniformly an upgrade", and until now the only
+mechanism it could name was backoff strength. This is a second, sharper one: **a hand-rolled
+transport can handle a case the shared one does not.**
+
+✔ **Nothing was regressed by it.** Checked all 59 adopters against their pre-session source: none
+carried `strict=False`, so no migration this session took it away. The five that have it are all
+still unmigrated, which is now luck rather than judgement, and worth saying so.
+
+`_parse_bindings` uses `strict=False` now. The forgiveness is bounded and pinned:
+`test_a_truncated_body_still_raises_and_is_still_retried` asserts a body that stops mid-token still
+raises and is still retried, because that is the failure this module was built for. Verified the new
+test is not vacuous by running the OLD parse against the same body and watching it raise.
+
+➡ The five are now migratable without downgrade. Each still needs its own read — this removed the
+blanket reason not to, not the per-file judgement. Not done in this commit: a behaviour change to a
+transport 59 files depend on earns its own commit and its own CI run before anything moves onto it.
+
+Suite 2,251, run. All three transport paths live-checked (GET, POST, CSV).
+
 ## 2026-09-16 (work-loop tick) — The third 429-retry had no 429 in it
 
 **A broad retry handler with no 429 branch retries 429s by omission.** `raise_for_status()` turns a

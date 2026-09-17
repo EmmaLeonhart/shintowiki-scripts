@@ -568,6 +568,58 @@ def test_query_csv_bails_on_429_and_backs_off_like_query():
     assert [w for w in waits if w] == [15, 45, 135], waits
 
 
+def test_a_raw_newline_inside_a_literal_parses_instead_of_costing_195_seconds():
+    """WDQS emits RAW control characters inside string literals — a label or
+    description containing a real newline comes back unescaped. Python's JSON
+    parser rejects that unless `strict=False`.
+
+    This module used `json.load`, which is strict, and the failure mode was worse
+    than a plain error: `JSONDecodeError` is in `TRANSIENT`, so a response that was
+    perfectly readable got RETRIED on 15/45/135 and then re-raised. Three minutes
+    to fail on data we could have parsed.
+
+    Five callers in this repo already parsed with `strict=False` — one of them
+    saying why in a comment — which also meant migrating any of them onto this
+    module would have been a downgrade.
+    """
+    mod = _mod()
+    calls = {"n": 0}
+    raw = b'{"results": {"bindings": [{"l": {"value": "line one\nline two"}}]}}'
+
+    def fake(req, timeout=None):
+        calls["n"] += 1
+        return _Resp(raw)
+
+    mod.urllib.request.urlopen = fake
+    mod.time.sleep = lambda *_: None
+    mod.WDQS_THROTTLE = 0
+    rows = mod.query("SELECT * WHERE {}")
+    assert rows == [{"l": {"value": "line one\nline two"}}], rows
+    assert calls["n"] == 1, (
+        f"the body was retried {calls['n']} times instead of parsed — strict=False "
+        "is gone from _parse_bindings")
+
+
+def test_a_truncated_body_still_raises_and_is_still_retried():
+    """The counterpart to the test above: `strict=False` must forgive control
+    characters WITHOUT forgiving a body that stops mid-token. If it did, the
+    failure this whole module exists for would stop being detected at all."""
+    mod = _mod()
+    calls = {"n": 0}
+
+    def fake(req, timeout=None):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            return _Resp(b'{"results": {"bindings": [{"x": {"value": "tru')
+        return _Resp(b'{"results": {"bindings": [{"x": {"value": "ok"}}]}}')
+
+    mod.urllib.request.urlopen = fake
+    mod.time.sleep = lambda *_: None
+    mod.WDQS_THROTTLE = 0
+    assert mod.query("SELECT * WHERE {}") == [{"x": {"value": "ok"}}]
+    assert calls["n"] == 2, f"a truncated body was not retried ({calls['n']} call(s))"
+
+
 def test_the_parse_happens_inside_the_retry_loop():
     """⛔ A truncated JSON body surfaces as a `JSONDecodeError` raised by the PARSE.
     If the parse moved outside the `with` — read the bytes in the loop, decode them

@@ -120,6 +120,33 @@ FATAL_STATUS = frozenset({400, 401, 403, 404, 405, 414, 431})
 _last_call = 0.0
 
 
+def _parse_bindings(r):
+    """Decode a WDQS JSON body to `results.bindings`, tolerantly.
+
+    ⛔ `strict=False` is load-bearing, not tidiness. Python's JSON parser rejects a
+    RAW control character inside a string literal, and WDQS emits them: a label or
+    description containing a real newline comes back unescaped. Five callers in this
+    repo already parse with `strict=False` for exactly that reason, one of them
+    saying so in a comment — *"strict=False because literals legitimately contain
+    raw newlines."*
+
+    This module did not, and the consequence was worse than a plain failure: a
+    `JSONDecodeError` is in `TRANSIENT`, so a response that was perfectly readable
+    would be RETRIED — 15s, 45s, 135s — and then re-raised. Three minutes and
+    change to fail on data we could have parsed, which is the same shape as the 414
+    note above.
+
+    It also meant migrating any of those five onto this module would have been a
+    DOWNGRADE. That is the concrete version of the queue item's "migration is not
+    uniformly an upgrade", which until now named only backoff strength.
+
+    A truncated body still raises here and is still retried, which is the behaviour
+    this module was built for: `strict=False` forgives control characters, not a
+    body that stops mid-token.
+    """
+    return json.loads(r.read().decode("utf-8"), strict=False)["results"]["bindings"]
+
+
 def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string, post):
     """The retry loop, shared by `query` and `query_csv`.
 
@@ -181,7 +208,7 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post
     quietly given more.
     """
     return _run(sparql_text, "application/sparql-results+json",
-                lambda r: json.load(r)["results"]["bindings"],
+                _parse_bindings,
                 retries, endpoint, timeout,
                 "format=json&query=" + urllib.parse.quote(sparql_text), post)
 

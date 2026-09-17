@@ -195,6 +195,27 @@ from `ATOMIC_FILES`; they are not queue items.
   `transient` tuple that a name-based checker cannot resolve; `fetch_p11250_from_wiki` and
   `resolve_doujou_addresses` functions call the Wikidata API or ja.wikipedia, not WDQS.
 
+  ⛔ **THE TRANSPORT ITSELF WAS THE DOWNGRADE, for five files (fixed 2026-09-17).** WDQS emits RAW
+  control characters inside string literals — a label or description containing a real newline comes
+  back unescaped — and Python's JSON parser rejects that unless `strict=False`. The module used
+  `json.load`, which is strict.
+  - **The failure mode was worse than an error.** `JSONDecodeError` is in `TRANSIENT`, so a
+    perfectly readable response was RETRIED on 15/45/135 and then re-raised: **195 seconds to fail
+    on data we could have parsed.** Same shape as the 414 note.
+  - Five callers already parsed with `strict=False`, one saying why outright — *"literals
+    legitimately contain raw newlines."* So migrating any of them onto the module would have been a
+    **downgrade**, which is the concrete mechanism behind this item's "migration is NOT uniformly an
+    upgrade" caveat. Until now that caveat named only backoff strength.
+  - ✔ **No adopter was regressed by it**: checked all 59 against their pre-session source, none had
+    `strict=False`. The five that do are all still unmigrated.
+  - `_parse_bindings` now uses `strict=False`. A truncated body still raises and is still retried —
+    `test_a_truncated_body_still_raises_and_is_still_retried` pins that the forgiveness did not
+    extend to the failure this module exists for.
+  - ➡ **The five are now migratable without downgrade**: `generate_modern_shrine_ranking_qualifiers.py`,
+    `generate_province_exclusions.py`, `generate_ronsha_ojp_name_removals.py`,
+    `generate_shikinaisha_kokugakuin_refs.py`, `generate_uncited_address_removals.py`. Each still
+    needs its own read — this removed the blanket reason not to, not the per-file judgement.
+
   ✅ **Also this tick: the loop-without-a-try four.** `generate_p958_qualifiers.py` (above),
   `resolve_ronsha_addresses.py`, `collect_beppyo_p612.py`, `generate_soja_only.py` — their loop was
   pagination or a status check, with no `try` in it, so a truncated body ended the run.
