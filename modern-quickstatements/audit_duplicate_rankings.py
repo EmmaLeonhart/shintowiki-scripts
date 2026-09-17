@@ -30,6 +30,8 @@ import io
 import json
 import os
 import sys
+
+import wdqs_transport
 import time
 import urllib.error
 import urllib.parse
@@ -65,18 +67,13 @@ SELECT (COUNT(DISTINCT ?item) AS ?items) (COUNT(?st) AS ?statements) WHERE {
 
 
 def run(query):
-    url = ENDPOINT + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": WIKIDATA_USER_AGENT, "Accept": "application/sparql-results+json"})
-    time.sleep(WDQS_THROTTLE)
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        if exc.code == 429:
-            print("HTTP 429 from WDQS — bailing immediately, per standing policy. Nothing measured.")
-            sys.exit(1)
-        raise
+    """-> `results.bindings`. NOTE the shape change: this used to hand back the whole
+    JSON document and both call sites indexed `["results"]["bindings"]` themselves.
+
+    It had no retry — a truncated body ended the run with nothing measured — and it
+    threw its 429 away as a `sys.exit(1)` print rather than the repo's SystemExit.
+    """
+    return wdqs_transport.query(query, timeout=120)
 
 
 def qid(uri):
@@ -89,12 +86,12 @@ def main():
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-    totals = run(TOTAL_QUERY)["results"]["bindings"][0]
+    totals = run(TOTAL_QUERY)[0]
     n_items = int(totals["items"]["value"])
     n_statements = int(totals["statements"]["value"])
     print("P13723 overall: %d statements across %d items" % (n_statements, n_items))
 
-    rows = run(QUERY)["results"]["bindings"]
+    rows = run(QUERY)
     print("duplicate (item, value, method) groups: %d" % len(rows))
 
     if not rows:

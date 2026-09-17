@@ -47,6 +47,8 @@ import json
 import os
 import re
 import sys
+
+import wdqs_transport
 import time
 import urllib.parse
 import urllib.request
@@ -283,19 +285,16 @@ def resolve_links(titles):
 
 
 def _wdqs(query):
-    # POST the query in the body — VALUES batches make the URL too long for GET
-    # (HTTP 431). 429 bails immediately per repo policy.
-    data = urllib.parse.urlencode({"query": query, "format": "json"}).encode()
-    req = urllib.request.Request(WDQS, data=data, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json",
-        "Content-Type": "application/x-www-form-urlencoded"})
-    try:
-        with urllib.request.urlopen(req, timeout=180) as r:
-            return json.load(r)["results"]["bindings"]
-    except urllib.error.HTTPError as e:
-        if e.code == 429:
-            raise SystemExit("429 from WDQS — bailing (repo policy: no retries).")
-        raise
+    """One WDQS query, through the shared transport.
+
+    ⚠ `post=True` preserves what this already did and why: the VALUES batches make
+    the URL too long for a GET. The transport classifies 414/431 as fatal rather
+    than retryable for the same reason.
+
+    It had no retry at all — a truncated body ended the run — and no throttle. Both
+    now come from the transport.
+    """
+    return wdqs_transport.query(query, timeout=180, post=True)
 
 
 def match_names(names):

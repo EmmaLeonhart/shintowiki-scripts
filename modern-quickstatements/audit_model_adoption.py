@@ -46,6 +46,8 @@ import json
 import random
 import re
 import sys
+
+import wdqs_transport
 import time
 import urllib.error
 import urllib.parse
@@ -61,17 +63,18 @@ TEMPLE = "Q5393308"      # Buddhist temple (Japan)
 
 
 def wdqs(query, timeout=180):
-    data = urllib.parse.urlencode({"query": query, "format": "json"}).encode()
-    req = urllib.request.Request(WDQS, data=data, headers={
-        "User-Agent": WIKIDATA_USER_AGENT, "Accept": "application/sparql-results+json",
-        "Content-Type": "application/x-www-form-urlencoded"})
+    """-> bindings, or **None** when the query could not be answered.
+
+    ⚠ The `None` is deliberate and is kept: this is an audit, and a query that times
+    out at the server is a RESULT it reports, not a reason to die. The transport
+    raises instead, so the swallow stays here, wrapped around it — which is why this
+    is not a bare `return wdqs_transport.query(...)`.
+
+    `SystemExit` is a `BaseException`, so the transport's 429 bail passes straight
+    through `except Exception` and is not swallowed. That is load-bearing.
+    """
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.load(r)["results"]["bindings"]
-    except urllib.error.HTTPError as e:
-        if e.code == 429:
-            raise SystemExit("429 from WDQS — bailing (repo policy: no retries).")
-        return None                      # 500 = query timeout; report it, don't die
+        return wdqs_transport.query(query, timeout=timeout, post=True)
     except Exception:
         return None
 

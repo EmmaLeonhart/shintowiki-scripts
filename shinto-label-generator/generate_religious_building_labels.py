@@ -38,6 +38,11 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
@@ -101,17 +106,16 @@ def commons_to_english(commons_name):
 # ─────────────────────────── network ───────────────────────────
 
 def _wdqs(query):
-    data = urllib.parse.urlencode({"query": query, "format": "json"}).encode()
-    req = urllib.request.Request(WDQS, data=data, headers={
-        "User-Agent": UA, "Accept": "application/sparql-results+json",
-        "Content-Type": "application/x-www-form-urlencoded"})
-    try:
-        with urllib.request.urlopen(req, timeout=180) as r:
-            return json.load(r)["results"]["bindings"]
-    except urllib.error.HTTPError as e:
-        if e.code == 429:
-            raise SystemExit("429 from WDQS — bailing (repo policy: no retries).")
-        raise
+    """One WDQS query, through the shared transport.
+
+    ⚠ `post=True` preserves what this already did and why: the VALUES batches make
+    the URL too long for a GET. The transport classifies 414/431 as fatal rather
+    than retryable for the same reason.
+
+    It had no retry at all — a truncated body ended the run — and no throttle. Both
+    now come from the transport.
+    """
+    return wdqs_transport.query(query, timeout=180, post=True)
 
 
 def fetch_candidates(limit=None):

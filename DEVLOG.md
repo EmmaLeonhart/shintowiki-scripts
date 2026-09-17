@@ -1,3 +1,48 @@
+## 2026-09-16 (work-loop tick) — The catch-and-exit six, and a 429 of my own making
+
+**A `try` with no loop is not a retry.** Six WDQS callers caught the failure and exited, so a
+truncated body ended the run with nothing written — the exact failure `wdqs_transport` exists for —
+while reading as covered in any survey that greps for `try`. All six are on the transport now;
+adopters 42 -> 48.
+
+⚠ **Two of them are not a bare swap, and flattening them into one would have been a real
+regression.** `audit_model_adoption.wdqs` returns **None** when a query cannot be answered, on
+purpose: it is an audit, and a server-side timeout is a result it reports rather than a reason to
+die. `create_shrine_ranking_pages.query_wikidata_p301` degrades to `(None, None)` per category for
+the same reason. Both keep their swallow, wrapped around the transport.
+
+⭐ **And both get their 429 bail back for free.** `SystemExit` is a `BaseException`, so the
+transport's bail passes straight through `except Exception` while everything else still degrades.
+`query_wikidata_p301` had been swallowing 429s outright — printing a per-category warning and
+carrying on, which is the opposite of the unconditional policy.
+
+`audit_duplicate_rankings.run` also changed shape: it returned the whole JSON document and both call
+sites indexed `["results"]["bindings"]` themselves. Both updated, and the function documents the
+change.
+
+⚠ **I drew a 429 from WDQS this tick, and it was mine.** After live-checking six migrated transports
+back to back — on top of roughly thirty such checks across the evening — a further query came back
+429 and the transport bailed immediately, correctly. Nothing was damaged and no run was in progress.
+Recording it because the cause is not mysterious: **the verification itself is WDQS traffic**, and at
+this session's rate of migrate-then-live-check it adds up. The transport paces at 2.5s within a
+process; it cannot pace across the dozens of separate one-shot processes a session like this spawns.
+Future ticks: batch the live-checks, or check fewer.
+
+It also settled an ambiguous result without another query. `query_wikidata_p301('Q8286188')` returned
+`(None, None)`, which that function produces both for "no P301" and for "the call failed". It prints
+a warning on the failure path and printed none — so the query succeeded and the category simply has
+no P301. Reading the code beat re-querying.
+
+**New regrowth guard.** `test_no_adopter_builds_its_own_wdqs_request` walks the tree for every
+adopter rather than the `MIGRATED` list, whose blanket urlopen ban cannot tell a WDQS client from a
+legitimate Wikidata-API fetcher — which is precisely why `audit_model_adoption.py`,
+`investigate_property_modelling.py` and `generate_saijin_deity_research.py` can never be listed
+there. ⚠ Its blind spot is in its own docstring: it matches a call that NAMES the endpoint, so a
+`Request` built first and passed as a variable slips through. A first draft flagged 27 files because
+it also matched the bare endpoint string, which is a constant, not a request.
+
+Suite 2,248, run.
+
 ## 2026-09-16 (work-loop tick) — The sub-floor pacers, and the transport learns POST
 
 Nine WDQS callers paced themselves at **0.3–0.5s**. CLAUDE.md's floor is **2.5s**, set after an

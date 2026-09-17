@@ -109,6 +109,28 @@ from `ATOMIC_FILES`; they are not queue items.
     **found a ninth file the hand survey missed** — `bfs/buddhist_deity_analysis.py` at 0.3s, whose
     `_get` is shared with the Wikidata API, so an AST scan looking for a WDQS-only function skipped
     it. Only the WDQS half moved; `_get` stays for the API.
+
+  ✅ **And the catch-and-exit six (2026-09-16). Adopters: 48.** A `try` with no loop is not a retry —
+  these caught the failure and exited, so a truncated body ended the run with nothing written, which
+  is the failure the module exists for. They read as covered in any grep for `try`.
+  `audit_duplicate_rankings.py`, `audit_model_adoption.py`, `generate_saijin_deity_research.py`,
+  `investigate_property_modelling.py`, `generate_religious_building_labels.py`,
+  `create_shrine_ranking_pages.py`.
+  - ⚠ **Two of them are NOT a bare swap and must not be "tidied" into one.**
+    `audit_model_adoption.wdqs` returns **None** when a query cannot be answered, deliberately — it
+    is an audit, and a server-side timeout is a result it reports, not a reason to die. The swallow
+    is kept, wrapped around the transport. `create_shrine_ranking_pages.query_wikidata_p301` degrades
+    to `(None, None)` per category for the same reason.
+  - ⭐ **Both get their 429 bail back for free**: `SystemExit` is a `BaseException`, so the
+    transport's bail passes straight through `except Exception` while everything else still
+    degrades. `query_wikidata_p301` had been swallowing 429s outright.
+  - `audit_duplicate_rankings.run` also changed SHAPE — it returned the whole JSON document and both
+    call sites indexed `["results"]["bindings"]` themselves. Both updated.
+  - `test_no_adopter_builds_its_own_wdqs_request` walks the tree for regrowth across ALL adopters,
+    not just `MIGRATED` — whose urlopen ban cannot tell a WDQS client from a legitimate API fetcher,
+    which is why several of these files can never be listed there. ⚠ It matches a call that NAMES
+    the endpoint; a `Request` built first and passed as a variable is not caught. Narrows the gap,
+    does not close it.
   - ⚠ **`timeout` was hardcoded at 300 in the transport and the callers differ** — 600 in
     `site/generate_orphan_label_fixes.py`, 120 in `fetch_shrines_tokiponize.py`. Adopting without a
     parameter would not have broken visibly; it would have halved the longest query's budget and

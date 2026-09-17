@@ -337,6 +337,57 @@ def test_post_puts_the_query_in_the_body_and_not_the_url():
     assert "query=" in seen["url"], seen["url"]
 
 
+def test_no_adopter_builds_its_own_wdqs_request():
+    """Regrowth guard for EVERY adopter, not just the ones listed in `MIGRATED`.
+
+    `MIGRATED`'s check is `"urllib.request.urlopen" not in src`, which is blunt: it
+    cannot tell a WDQS client from a ja.wikipedia or Wikidata-API fetcher, so a file
+    that legitimately keeps one can never be listed there. Several adopters are in
+    exactly that position — `audit_model_adoption.py`, `investigate_property_modelling.py`
+    and `generate_saijin_deity_research.py` each still read the API through `urlopen`,
+    correctly.
+
+    This asks the narrower question instead: does a file that imports the transport
+    also aim a request at a SPARQL endpoint itself? That is the thing being banned,
+    and it can be asked of every adopter regardless of what else the file talks to.
+
+    ⚠ **Its blind spot, stated rather than left to be discovered.** It matches a call
+    whose argument list names the endpoint — `requests.get(SPARQL, ...)`,
+    `requests.post(WDQS, ...)`. A regrowth that builds a `Request` object first and
+    then passes the variable — `req = Request(SPARQL + "?" + ...)` followed by
+    `urlopen(req)` — is NOT caught here. For the files in `MIGRATED` that shape is
+    covered by the blanket urlopen ban; for the rest it is not covered at all. This
+    narrows the gap, it does not close it.
+    """
+    root = os.path.dirname(MQ)
+    offenders = []
+    for dirpath, dirnames, files in os.walk(root):
+        dirnames[:] = [d for d in dirnames
+                       if d not in {".git", "__pycache__", "node_modules", "tests"}]
+        for fn in files:
+            if not fn.endswith(".py"):
+                continue
+            path = os.path.join(dirpath, fn)
+            if os.path.basename(path) == "wdqs_transport.py":
+                continue
+            src = open(path, encoding="utf-8", errors="replace").read()
+            if "import wdqs_transport" not in src:
+                continue
+            body = COMMENT_RE.sub("", DOCSTRING_RE.sub("", src))
+            # A request CONSTRUCTED against a SPARQL endpoint, by either verb.
+            #
+            # ⚠ Deliberately not `"wikidata.org/sparql" in body`. Several adopters
+            # still hold a now-unused endpoint constant, or name the URL in passing,
+            # and neither is a request — a first draft of this test flagged 27 files
+            # on that alternative alone. What is banned is aiming a call at it.
+            if re.search(r"(urlopen|requests\.(?:get|post))\s*\([^)]*\b"
+                         r"(?:SPARQL|WDQS|SPARQL_ENDPOINT|ENDPOINT)\b", body):
+                offenders.append(os.path.relpath(path, root))
+    assert not offenders, (
+        "these adopters aim a request at a SPARQL endpoint themselves again: "
+        + ", ".join(sorted(offenders)))
+
+
 def test_no_wdqs_caller_paces_below_the_documented_floor():
     """CLAUDE.md sets `WDQS_THROTTLE = 2.5` as the FLOOR, after an unpaced sweep
     fired ~365 queries and drew repeated 503/504.

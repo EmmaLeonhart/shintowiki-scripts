@@ -21,6 +21,11 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 from shinto_miraheze.ua_for import ua_for
 from shinto_miraheze.user_agent import USER_AGENT
 import argparse
@@ -87,13 +92,13 @@ def query_wikidata_p301(cat_qid):
       SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,ja". }}
     }}
     """
-    # was "ShrineRankingPageBot/1.0" -- no contact address at all, on query.wikidata.org.
-    headers = {"Accept": "application/json", "User-Agent": ua_for(url)}
+    # ⚠ The `except Exception` below is best-effort by design — one category failing
+    # must not end the run. But it also swallowed a 429, which the repo's policy says
+    # is unconditional. Through the transport that is fixed for free: `SystemExit` is
+    # a `BaseException`, so the 429 bail passes straight through this handler while
+    # everything else still degrades to (None, None).
     try:
-        resp = requests.get(url, params={"query": query, "format": "json"},
-                            headers=headers, timeout=30)
-        resp.raise_for_status()
-        results = resp.json().get("results", {}).get("bindings", [])
+        results = wdqs_transport.query(query, timeout=30)
         if results:
             main_topic_uri = results[0]["mainTopic"]["value"]
             qid = main_topic_uri.split("/")[-1]
