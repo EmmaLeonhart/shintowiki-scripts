@@ -46,6 +46,15 @@ from `ATOMIC_FILES`; they are not queue items.
   - `generate_description_fixes.py` stays off the shared module (its sibling imports it); it carries
     the policy rather than sharing it.
 
+- [ ] Nothing asserts a pipeline stage still has something DRIVING it.
+  Stage 4 of the English-label pipeline was absent for 52 days (2026-07-27 account move killed its
+  routine) and the only symptom was `en_labels_sonnet.txt` not growing, against a backlog that grows
+  by itself. Stages 0-2 kept committing daily the whole time, so everything looked healthy.
+  - The cheap version is a staleness check on each atomic `.txt` a stage feeds: if the file has not
+    grown in N days while its worklist is non-empty, say so.
+  - ⚠ Not "add monitoring" generally. The specific hole is a stage whose driver is OUTSIDE the repo
+    (a cloud routine), which no test in here can see.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
