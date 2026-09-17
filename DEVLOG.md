@@ -1,3 +1,38 @@
+## 2026-09-17 — Four of the five migrate; the fifth stays, and the numbers say why
+
+Yesterday's `strict=False` fix removed the blanket reason not to migrate the last five hand-rolled
+transports. Reading them one at a time — which is what the queue item has always asked for — changed
+the answer for two of them in opposite directions.
+
+**Four are identical siblings paced at 3s.** `generate_province_exclusions.py`,
+`generate_ronsha_ojp_name_removals.py`, `generate_shikinaisha_kokugakuin_refs.py`,
+`generate_uncited_address_removals.py`. Three seconds is ABOVE the 2.5s floor: their author chose to
+be more polite than required. A bare migration would have run them at 2.5 and quietly made them less
+polite, on the axis CLAUDE.md cares most about.
+
+So `query()` takes `throttle` now, and the guard is the point: `max(throttle, WDQS_THROTTLE)`.
+**A caller may ask to be slower; no caller can ask to be faster, whatever it passes.** Without the
+`max`, a throttle parameter is a hole in the rate limit with a friendly name. Pinned both ways by
+`test_a_caller_may_be_slower_than_the_floor_but_never_faster`, and measured live after the swap:
+four queries took **9.4s**, i.e. the three 3s gaps held.
+
+What the four gained is real: 15/45/135 in place of 10/20/30/40 — fewer attempts (4 against 5) but
+195s of waiting against 100s, which is the right direction for a service asking us to ease off.
+
+⛔ **The fifth stays hand-rolled, and this time with numbers rather than an instinct.**
+`generate_modern_shrine_ranking_qualifiers.fetch_sparql` paces at **10s** and backs off
+**30/60/120/240 over 5 attempts — 450s**. The transport gives 195s. Even passing `throttle=10`, the
+escalation is less than half of what the file already does. **Migrating it is a downgrade on the
+backoff axis, and always was.** I declined it yesterday on the `strict=False` argument alone; that
+argument has since evaporated and the file should still not move. Its 429 bundling was fixed in
+place on 2026-09-16 and nothing else about it needs doing.
+
+That makes **three distinct mechanisms** behind this item's standing "migration is NOT uniformly an
+upgrade", where a week ago there was one: backoff strength, `strict=False` parsing, and a caller
+pacing itself above the floor. The caveat was right the whole time; what it lacked was reasons.
+
+Adopters 59 -> 63. Suite 2,252, run. All four live-checked in one process.
+
 ## 2026-09-17 — The shared transport was the downgrade, and it cost 195s to fail on readable data
 
 Spot-reading two of the eighteen transports last night's audit called clean — to check the audit

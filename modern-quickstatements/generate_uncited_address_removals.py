@@ -49,16 +49,13 @@ import json
 import os
 import shutil
 import sys
+
+import wdqs_transport
 import time
 import urllib.parse
 
 import requests
 
-SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
-HEADERS = {
-    "User-Agent": WIKIDATA_USER_AGENT,
-    "Accept": "application/sparql-results+json",
-}
 
 RONSHA = "Q135022904"
 OUTPUT_FILE = "uncited_address_removals.txt"
@@ -74,30 +71,26 @@ EXCEPTIONS = {
     "Q114593121",  # Baba Tsutsukowake Shrine
 }
 
-_last = 0.0
 
 
 def sparql(query):
-    global _last
-    for attempt in range(5):
-        gap = time.time() - _last
-        if gap < 3:
-            time.sleep(3 - gap)
-        r = requests.get(SPARQL_ENDPOINT, params={"query": query, "format": "json"},
-                         headers=HEADERS, timeout=180)
-        _last = time.time()
-        if r.status_code == 429:
-            raise SystemExit("FATAL: 429 Too Many Requests — bailing (429 policy)")
-        if r.status_code >= 500:
-            time.sleep(10 * (attempt + 1))
-            continue
-        r.raise_for_status()
-        try:
-            return json.loads(r.text, strict=False)["results"]["bindings"]
-        except (ValueError, KeyError):
-            print(f"  truncated body ({len(r.text)} bytes) — retrying", flush=True)
-            time.sleep(10 * (attempt + 1))
-    raise RuntimeError("SPARQL kept returning truncated bodies")
+    """One WDQS query, through the shared transport.
+
+    ⚠ `throttle=3` is not a copied constant, it is this file's own figure. It
+    paced itself at 3s, above the 2.5s floor, by its author's choice; the transport
+    would otherwise have run it at 2.5 and made it LESS polite than it was. The
+    floor is a floor, so the parameter can only slow a caller down.
+
+    What it gains: the repo's 15/45/135 backoff in place of 10/20/30/40 — fewer
+    attempts (4 rather than 5) but a far harder escalation, 195s of waiting against
+    100s, which is the right direction for a service asking us to ease off.
+
+    It keeps what mattered: `strict=False`, now in `_parse_bindings`. Until
+    2026-09-17 the shared module parsed strictly, and migrating this file would
+    have been a downgrade — a raw newline in a literal would have been retried
+    three times and then raised.
+    """
+    return wdqs_transport.query(query, timeout=180, throttle=3)
 
 
 def build_query():

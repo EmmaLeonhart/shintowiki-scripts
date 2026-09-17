@@ -245,6 +245,37 @@ def test_the_timeout_reaches_urlopen_and_is_not_silently_replaced():
     assert seen["timeout"] == 600, seen
 
 
+def test_a_caller_may_be_slower_than_the_floor_but_never_faster():
+    """`throttle` exists because four callers pace themselves at **3s** — above the
+    2.5s floor, by their own choice — and moving them onto a bare 2.5s would have
+    made them less polite than their authors decided, on the axis CLAUDE.md cares
+    most about.
+
+    ⛔ The `max` is the point. The floor is a FLOOR: a caller can ask to be slower,
+    and no caller can ask to be faster whatever it passes. Without that, a
+    `throttle` parameter is just a hole in the rate limit with a friendly name.
+    """
+    mod = _mod()
+    waits = []
+    mod.time.sleep = lambda s=0: waits.append(s)
+    mod.urllib.request.urlopen = lambda req, timeout=None: _Resp(
+        b'{"results": {"bindings": []}}')
+
+    # slower than the floor: honoured
+    mod._last_call = mod.time.monotonic()
+    waits.clear()
+    mod.query("SELECT * WHERE {}", throttle=3)
+    assert waits and max(waits) > 2.5, (
+        f"a caller asking for 3s was paced at {waits} — slower-than-floor ignored")
+
+    # faster than the floor: refused, clamped back up to it
+    mod._last_call = mod.time.monotonic()
+    waits.clear()
+    mod.query("SELECT * WHERE {}", throttle=0.1)
+    assert waits and max(waits) > 2.0, (
+        f"a caller asking for 0.1s got {waits} — the floor is not a floor")
+
+
 def test_the_throttle_is_in_the_transport():
     """Emma, 2026-08-24: "You just want to rate limit within your scripts." Pacing
     the transport is the only version a new caller cannot forget."""

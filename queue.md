@@ -211,10 +211,27 @@ from `ATOMIC_FILES`; they are not queue items.
   - `_parse_bindings` now uses `strict=False`. A truncated body still raises and is still retried —
     `test_a_truncated_body_still_raises_and_is_still_retried` pins that the forgiveness did not
     extend to the failure this module exists for.
-  - ➡ **The five are now migratable without downgrade**: `generate_modern_shrine_ranking_qualifiers.py`,
-    `generate_province_exclusions.py`, `generate_ronsha_ojp_name_removals.py`,
-    `generate_shikinaisha_kokugakuin_refs.py`, `generate_uncited_address_removals.py`. Each still
-    needs its own read — this removed the blanket reason not to, not the per-file judgement.
+  - ➡ **Four of the five migrated (2026-09-17). Adopters: 63.** The per-file read changed the
+    answer for the fifth, and the numbers are why.
+
+  ✅ **`throttle` exists now, floor-guarded, because four callers were MORE polite than the floor.**
+  `generate_province_exclusions.py`, `generate_ronsha_ojp_name_removals.py`,
+  `generate_shikinaisha_kokugakuin_refs.py`, `generate_uncited_address_removals.py` are identical
+  and pace themselves at **3s**. A bare migration would have run them at 2.5 and made them less
+  polite than their authors chose — on the axis CLAUDE.md cares most about. `query(..., throttle=3)`
+  keeps their figure; `max(throttle, WDQS_THROTTLE)` means **no caller can ask to be faster**, which
+  is the whole difference between a parameter and a hole in the rate limit. Measured after the swap:
+  four queries took 9.4s, so the 3s gaps held.
+  - What they gained: 15/45/135 in place of 10/20/30/40 — fewer attempts (4 vs 5) but 195s of
+    waiting against 100s, the right direction for a service asking us to ease off.
+
+  ⛔ **`generate_modern_shrine_ranking_qualifiers.py` STAYS hand-rolled, and now with numbers.**
+  Throttle **10s** (transport 2.5, or 10 via the new parameter) and backoff **30/60/120/240 over 5
+  attempts = 450s** against the transport's 195s. Even with `throttle=10` the escalation is less
+  than half. **Migrating it is a downgrade on the backoff axis and always was** — this is the third
+  distinct mechanism behind this item's "not uniformly an upgrade", after backoff strength and
+  `strict=False`. Its 429 bundling was fixed in place on 2026-09-16; nothing else about it needs
+  doing.
 
   ✅ **Also this tick: the loop-without-a-try four.** `generate_p958_qualifiers.py` (above),
   `resolve_ronsha_addresses.py`, `collect_beppyo_p612.py`, `generate_soja_only.py` — their loop was

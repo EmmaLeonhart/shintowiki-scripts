@@ -147,7 +147,8 @@ def _parse_bindings(r):
     return json.loads(r.read().decode("utf-8"), strict=False)["results"]["bindings"]
 
 
-def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string, post):
+def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string, post,
+         throttle):
     """The retry loop, shared by `query` and `query_csv`.
 
     ⛔ `parse` is applied INSIDE the `with`, and that placement is the point. A
@@ -167,10 +168,15 @@ def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string, p
                                      headers=headers)
     else:
         req = urllib.request.Request(endpoint + "?" + query_string, headers=headers)
+    # ⛔ The floor is a FLOOR. A caller may ask to be SLOWER than 2.5s and four do
+    # — they chose 3s for themselves — but `max` means none can ask to be faster,
+    # whatever it passes. Migrating a 3s caller onto a bare 2.5s would have made it
+    # less polite than its author chose, on the axis CLAUDE.md cares most about.
+    pace = max(throttle if throttle is not None else WDQS_THROTTLE, WDQS_THROTTLE)
     for attempt in range(retries):
         gap = time.monotonic() - _last_call
-        if gap < WDQS_THROTTLE:
-            time.sleep(WDQS_THROTTLE - gap)
+        if gap < pace:
+            time.sleep(pace - gap)
         _last_call = time.monotonic()
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -195,11 +201,16 @@ def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string, p
             time.sleep(wait)
 
 
-def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post=False):
+def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post=False,
+          throttle=None):
     """Run a SPARQL query and return its `results.bindings`.
 
     Raises `SystemExit` on 429 without retrying, per repo policy. Retries a
     transport failure or a 5xx on the repo's 15/45/135s backoff, then re-raises.
+
+    `throttle` lets a caller be SLOWER than the 2.5s floor, never faster. Four
+    callers pace themselves at 3s by their own choice, and moving them onto a bare
+    2.5s would have quietly made them less polite than their authors decided.
 
     `timeout` exists because it was hardcoded at 300 and that is not universal:
     `site/generate_orphan_label_fixes.py` allowed **600**, and adopting the module
@@ -210,10 +221,12 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post
     return _run(sparql_text, "application/sparql-results+json",
                 _parse_bindings,
                 retries, endpoint, timeout,
-                "format=json&query=" + urllib.parse.quote(sparql_text), post)
+                "format=json&query=" + urllib.parse.quote(sparql_text), post,
+                throttle)
 
 
-def query_csv(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post=False):
+def query_csv(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post=False,
+              throttle=None):
     """Run a SPARQL query asking for CSV, and return `list(csv.DictReader(...))`.
 
     ## Why a CSV mode exists at all, rather than moving those callers to `query`
@@ -240,4 +253,5 @@ def query_csv(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, 
     return _run(sparql_text, "text/csv",
                 lambda r: list(csv.DictReader(io.StringIO(r.read().decode("utf-8")))),
                 retries, endpoint, timeout,
-                urllib.parse.urlencode({"query": sparql_text}), post)
+                urllib.parse.urlencode({"query": sparql_text}), post,
+                throttle)
