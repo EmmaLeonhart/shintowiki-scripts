@@ -95,6 +95,20 @@ from `ATOMIC_FILES`; they are not queue items.
   - ⚠ **A caller is CSV or JSON by its Accept header, not by what its function is called.** This
     queue listed `generate_p958_candidates_page.py` as a JSON caller until it was read: its function
     is `fetch`, not `sparql_csv`, and it sends `Accept: text/csv`.
+
+  ✅ **And the sub-floor pacers (2026-09-16). Adopters: 42.** Nine callers paced WDQS at **0.3–0.5s**
+  against the 2.5s floor CLAUDE.md sets — 0.5 is the exact figure it cites from the incident that
+  set the floor, and 0.3 is `READ_INTERVAL`, which `wd_pace.py` says in its own docstring not to
+  pace a SPARQL caller at. All nine also backed off 5/10/15 against the documented 15/45/135, and
+  one had no backoff at all.
+  - ⛔ **Every one of them was a POST caller**, each carrying a VALUES clause, and the transport was
+    GET-only. Its own note said *"if a caller ever needs one, add POST rather than chunking around
+    it here"* — they needed one. `query(..., post=True)` puts the same encoded string in the body
+    instead of the URL; pinned by `test_post_puts_the_query_in_the_body_and_not_the_url`.
+  - `test_no_wdqs_caller_paces_below_the_documented_floor` now walks the tree for this shape. It
+    **found a ninth file the hand survey missed** — `bfs/buddhist_deity_analysis.py` at 0.3s, whose
+    `_get` is shared with the Wikidata API, so an AST scan looking for a WDQS-only function skipped
+    it. Only the WDQS half moved; `_get` stays for the API.
   - ⚠ **`timeout` was hardcoded at 300 in the transport and the callers differ** — 600 in
     `site/generate_orphan_label_fixes.py`, 120 in `fetch_shrines_tokiponize.py`. Adopting without a
     parameter would not have broken visibly; it would have halved the longest query's budget and

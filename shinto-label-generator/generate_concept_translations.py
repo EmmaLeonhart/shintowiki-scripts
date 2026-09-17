@@ -17,14 +17,18 @@ import re
 import sys
 import io
 import json
-import time
-import requests
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here. Same entry the other adopters
+# outside that directory carry.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.ua_contact import contact
 
@@ -34,8 +38,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "concept_translations.txt")
 STATE = os.path.join(HERE, "concept_translations.state")
 SPARQL = "https://query-main.wikidata.org/sparql"
-UA = {"User-Agent": WIKIDATA_USER_AGENT,
-      "Accept": "application/sparql-results+json"}
 
 # Hand-authored translations. Only languages I'm confident about per item; a
 # language omitted for an item = "unclear, skip", not a gap to guess.
@@ -153,23 +155,14 @@ def existing_langs(qids):
     values = " ".join(f"wd:{q}" for q in qids)
     q = (f"SELECT ?item ?lang WHERE {{ VALUES ?item {{ {values} }} "
          f"?item rdfs:label ?l . BIND(LANG(?l) AS ?lang) }}")
-    for attempt in range(4):
-        time.sleep(0.5)
-        try:
-            r = requests.post(SPARQL, data={"query": q, "format": "json"}, headers=UA, timeout=90)
-            if r.status_code == 429:
-                raise SystemExit("429 from WDQS — bailing.")
-            r.raise_for_status()
-            out = {}
-            for b in r.json()["results"]["bindings"]:
-                out.setdefault(b["item"]["value"].rsplit("/", 1)[1], set()).add(b["lang"]["value"])
-            return out
-        except SystemExit:
-            raise
-        except Exception as e:
-            print(f"  [retry {attempt+1}] {e}", flush=True)
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError("WDQS failed")
+    # post=True: the VALUES clause is why the hand-rolled version POSTed — a GET
+    # URL does not fit it and comes back 414. Paced by the transport at the repo's
+    # 2.5s floor; this used to sleep 0.5s per call, and the backoff was 5/10/15
+    # against the documented 15/45/135.
+    out = {}
+    for b in wdqs_transport.query(q, timeout=90, post=True):
+        out.setdefault(b["item"]["value"].rsplit("/", 1)[1], set()).add(b["lang"]["value"])
+    return out
 
 
 def main():

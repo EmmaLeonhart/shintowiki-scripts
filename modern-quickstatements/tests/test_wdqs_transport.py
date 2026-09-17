@@ -304,6 +304,69 @@ def test_a_429_check_after_a_successful_urlopen_can_never_fire():
         srv.shutdown()
 
 
+def test_post_puts_the_query_in_the_body_and_not_the_url():
+    """`post=True` exists because a long VALUES clause does not fit in a GET URL and
+    comes back **414 URI Too Long** — deterministically, after burning the backoff.
+
+    This module's own note used to read *"it is GET-only ... if a caller ever needs
+    one, add POST rather than chunking around it here."* Callers needed one: every
+    WDQS caller in the repo pacing below the 2.5s floor turned out to be a POST
+    caller, each with a VALUES clause, and none of them could adopt the module until
+    this existed.
+    """
+    mod = _mod()
+    seen = {}
+
+    def fake(req, timeout=None):
+        seen["url"] = req.full_url
+        seen["data"] = req.data
+        seen["ctype"] = req.get_header("Content-type")
+        return _Resp(b'{"results": {"bindings": []}}')
+
+    mod.urllib.request.urlopen = fake
+    mod.WDQS_THROTTLE = 0
+
+    mod.query("SELECT * WHERE {}", post=True)
+    assert seen["data"] is not None, "post=True sent no body"
+    assert b"query=" in seen["data"], seen["data"]
+    assert "?" not in seen["url"], f"the query is still in the URL: {seen['url']}"
+    assert seen["ctype"] == "application/x-www-form-urlencoded", seen["ctype"]
+
+    mod.query("SELECT * WHERE {}")
+    assert seen["data"] is None, "GET sent a body"
+    assert "query=" in seen["url"], seen["url"]
+
+
+def test_no_wdqs_caller_paces_below_the_documented_floor():
+    """CLAUDE.md sets `WDQS_THROTTLE = 2.5` as the FLOOR, after an unpaced sweep
+    fired ~365 queries and drew repeated 503/504.
+
+    Eight callers were pacing at 0.4s or 0.5s — under half the floor, and 0.5 is the
+    exact figure CLAUDE.md cites from that incident. They are on the transport now.
+    This walks the tree rather than trusting that: a bare `time.sleep(<2.5)` at the
+    top of a retry loop around a WDQS request is the shape being banned.
+    """
+    root = os.path.dirname(MQ)
+    offenders = []
+    for dirpath, dirnames, files in os.walk(root):
+        dirnames[:] = [d for d in dirnames
+                       if d not in {".git", "__pycache__", "node_modules", "tests"}]
+        for fn in files:
+            if not fn.endswith(".py"):
+                continue
+            path = os.path.join(dirpath, fn)
+            src = open(path, encoding="utf-8", errors="replace").read()
+            if "wikidata.org/sparql" not in src or "import wdqs_transport" in src:
+                continue
+            body = COMMENT_RE.sub("", DOCSTRING_RE.sub("", src))
+            for m in re.finditer(
+                    r"for \w+ in range\([^)]*\):\s*\n\s*time\.sleep\(\s*([0-9.]+)\s*\)", body):
+                if float(m.group(1)) < 2.5:
+                    offenders.append(f"{os.path.relpath(path, root)} ({m.group(1)}s)")
+    assert not offenders, (
+        "these WDQS callers pace below the 2.5s floor: " + ", ".join(sorted(offenders)))
+
+
 def test_query_csv_asks_for_csv_and_never_for_json():
     """The CSV callers exist for a recorded reason and it must not be optimised away.
 

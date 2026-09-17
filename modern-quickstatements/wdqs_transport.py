@@ -110,16 +110,17 @@ TRANSIENT = (json.JSONDecodeError, urllib.error.URLError, TimeoutError,
 # the answer will not change because we ask again. Only 5xx and transport failures are
 # worth a second attempt.
 #
-# ⚠ 414 is also a real limitation of this module, not just a status to classify: it
-# is GET-only, so a long VALUES clause does not fit. No current caller sends one —
-# `report_stuck_katakana_readings.py` uses POST for exactly that reason. If a caller
-# ever needs one, add POST rather than chunking around it here.
+# ⚠ 414 was also a real limitation of this module: it was GET-only, so a long VALUES
+# clause did not fit, and the note here said *"if a caller ever needs one, add POST
+# rather than chunking around it here."* Callers needed one — every WDQS caller
+# pacing below the 2.5s floor turned out to be a POST caller — so `post=True` exists
+# now and this status stays classified rather than worked around.
 FATAL_STATUS = frozenset({400, 401, 403, 404, 405, 414, 431})
 
 _last_call = 0.0
 
 
-def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string):
+def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string, post):
     """The retry loop, shared by `query` and `query_csv`.
 
     ⛔ `parse` is applied INSIDE the `with`, and that placement is the point. A
@@ -129,10 +130,16 @@ def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string):
     the thing retrying it.
     """
     global _last_call
-    req = urllib.request.Request(endpoint + "?" + query_string, headers={
-        "User-Agent": WIKIDATA_USER_AGENT,
-        "Accept": accept,
-    })
+    headers = {"User-Agent": WIKIDATA_USER_AGENT, "Accept": accept}
+    if post:
+        # The SAME encoded string, in the body instead of the URL — which is the
+        # whole point of POST here: a long VALUES clause does not fit in a GET URL
+        # and comes back 414, deterministically, after burning the full backoff.
+        headers["Content-Type"] = "application/x-www-form-urlencoded"
+        req = urllib.request.Request(endpoint, data=query_string.encode("utf-8"),
+                                     headers=headers)
+    else:
+        req = urllib.request.Request(endpoint + "?" + query_string, headers=headers)
     for attempt in range(retries):
         gap = time.monotonic() - _last_call
         if gap < WDQS_THROTTLE:
@@ -161,7 +168,7 @@ def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string):
             time.sleep(wait)
 
 
-def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
+def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post=False):
     """Run a SPARQL query and return its `results.bindings`.
 
     Raises `SystemExit` on 429 without retrying, per repo policy. Retries a
@@ -176,10 +183,10 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
     return _run(sparql_text, "application/sparql-results+json",
                 lambda r: json.load(r)["results"]["bindings"],
                 retries, endpoint, timeout,
-                "format=json&query=" + urllib.parse.quote(sparql_text))
+                "format=json&query=" + urllib.parse.quote(sparql_text), post)
 
 
-def query_csv(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
+def query_csv(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT, post=False):
     """Run a SPARQL query asking for CSV, and return `list(csv.DictReader(...))`.
 
     ## Why a CSV mode exists at all, rather than moving those callers to `query`
@@ -206,4 +213,4 @@ def query_csv(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
     return _run(sparql_text, "text/csv",
                 lambda r: list(csv.DictReader(io.StringIO(r.read().decode("utf-8")))),
                 retries, endpoint, timeout,
-                urllib.parse.urlencode({"query": sparql_text}))
+                urllib.parse.urlencode({"query": sparql_text}), post)

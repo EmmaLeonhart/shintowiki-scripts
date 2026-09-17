@@ -19,15 +19,19 @@ import re
 import sys
 import io
 import json
-import time
 import glob
-import requests
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here. Same entry the other adopters
+# outside that directory carry.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.ua_contact import contact
 
@@ -37,9 +41,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 LEVELS_DIR = os.path.join(HERE, "levels")
 OUT_JSON = os.path.join(HERE, "layer_analysis.json")
 
-SPARQL = "https://query-main.wikidata.org/sparql"
-UA = {"User-Agent": WIKIDATA_USER_AGENT,
-      "Accept": "application/sparql-results+json"}
 CHUNK = 250
 THROTTLE = 0.4
 
@@ -57,25 +58,18 @@ def _utf8():
 
 
 def sparql(query):
-    """POST with bounded retries on transient 5xx / network errors. 429 bails."""
-    last = None
-    for attempt in range(4):
-        time.sleep(THROTTLE)
-        try:
-            r = requests.post(SPARQL, data={"query": query, "format": "json"},
-                              headers=UA, timeout=120)
-            if r.status_code == 429:
-                raise SystemExit("HTTP 429 from WDQS — bailing (repo policy).")
-            r.raise_for_status()
-            return r.json()["results"]["bindings"]
-        except SystemExit:
-            raise
-        except Exception as e:
-            last = e
-            wait = 5 * (attempt + 1)
-            print(f"  [retry {attempt+1}/4] WDQS {e}; waiting {wait}s...", flush=True)
-            time.sleep(wait)
-    raise last
+    """One WDQS query, through the shared transport.
+
+    ⚠ `post=True` is not decoration: this query carries a VALUES clause, which is
+    why the hand-rolled version POSTed. A GET URL does not fit it and comes back
+    414 — deterministically, after burning the whole backoff.
+
+    ⚠ Paced by the transport at the repo's **2.5s** floor. This used to sleep
+    THROTTLE = 0.4s per call. CLAUDE.md sets that floor after an unpaced sweep fired ~365
+    queries and drew repeated 503/504, and 0.5s is the figure it cites from that
+    incident. The backoff was 5/10/15; the transport's is 15/45/135.
+    """
+    return wdqs_transport.query(query, timeout=120, post=True)
 
 
 def read_level(path):

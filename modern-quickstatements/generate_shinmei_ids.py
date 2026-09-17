@@ -38,6 +38,8 @@ bail. Throttled ~0.4s/page (polite to kokugakuin).
 import os
 import re
 import sys
+
+import wdqs_transport
 import time
 import html
 import requests
@@ -58,9 +60,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "shinmei_ids.txt")
 REPORT = os.path.join(HERE, "_site", "shinmei_unmatched.txt")
 INDEX = "https://kojiki.kokugakuin.ac.jp/shinmei/"
-SPARQL = "https://query-main.wikidata.org/sparql"
 UA = {"User-Agent": WIKIDATA_USER_AGENT}
-SPARQL_HDR = dict(UA, **{"Accept": "application/sparql-results+json"})
 
 SLUG_RE = re.compile(r'href="(https://kojiki\.kokugakuin\.ac\.jp/shinmei/([^"/]+)/)"')
 SHORTLINK_RE = re.compile(r"\?p=(\d+)")
@@ -75,21 +75,18 @@ def _utf8():
 
 
 def _sparql(query):
-    for attempt in range(4):
-        time.sleep(0.5)
-        try:
-            r = requests.post(SPARQL, data={"query": query, "format": "json"},
-                              headers=SPARQL_HDR, timeout=120)
-            if r.status_code == 429:
-                raise SystemExit("429 from WDQS — bailing.")
-            r.raise_for_status()
-            return r.json()["results"]["bindings"]
-        except SystemExit:
-            raise
-        except Exception as e:
-            print(f"  [WDQS retry {attempt+1}] {e}", flush=True)
-            time.sleep(5 * (attempt + 1))
-    raise RuntimeError("WDQS failed")
+    """One WDQS query, through the shared transport.
+
+    ⚠ `post=True` is not decoration: this query carries a VALUES clause, which is
+    why the hand-rolled version POSTed. A GET URL does not fit it and comes back
+    414 — deterministically, after burning the whole backoff.
+
+    ⚠ Paced by the transport at the repo's **2.5s** floor. This used to sleep 0.5s
+    per call. CLAUDE.md sets that floor after an unpaced sweep fired ~365 queries
+    and drew repeated 503/504, and 0.5s is the figure it cites from that incident.
+    The backoff was 5/10/15; the transport's is 15/45/135.
+    """
+    return wdqs_transport.query(query, timeout=120, post=True)
 
 
 def deity_slugs():

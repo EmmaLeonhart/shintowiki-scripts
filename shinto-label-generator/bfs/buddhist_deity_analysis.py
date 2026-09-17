@@ -30,6 +30,11 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.ua_contact import contact
 
@@ -52,6 +57,13 @@ def _utf8():
 
 
 def _get(url, params, post=False):
+    """The **Wikidata API** fetcher. WDQS no longer comes through here.
+
+    ⚠ The 0.3s below is `READ_INTERVAL`, which is the API's pace, not WDQS's. It was
+    also pacing WDQS until 2026-09-16 — the lowest figure in the tree, against a
+    2.5s floor. `wd_pace.py` says in its own docstring not to pace a SPARQL caller
+    at READ_INTERVAL; that is exactly what this was doing.
+    """
     for a in range(4):
         time.sleep(0.3)
         try:
@@ -72,8 +84,13 @@ def _get(url, params, post=False):
 def main():
     _utf8()
     covered = set(COVERED)
-    rows = _get(SPARQL, {"query": f"SELECT ?item WHERE {{ ?item wdt:P31/wdt:P279* wd:{CLASS} . }}",
-                         "format": "json"}, post=True)["results"]["bindings"]
+    # WDQS goes through the shared transport; the Wikidata API below keeps `_get`.
+    # post=True as before. Paced at the repo's 2.5s floor instead of the 0.3s this
+    # used — the lowest in the tree, against a floor CLAUDE.md set after an unpaced
+    # sweep drew repeated 503/504 — and backed off 15/45/135 instead of 5/10/15.
+    rows = wdqs_transport.query(
+        f"SELECT ?item WHERE {{ ?item wdt:P31/wdt:P279* wd:{CLASS} . }}",
+        timeout=90, post=True)
     qids = [b["item"]["value"].rsplit("/", 1)[1] for b in rows]
     print(f"{len(qids)} Buddhist deities. Fetching all labels...")
 

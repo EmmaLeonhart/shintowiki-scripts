@@ -1,3 +1,43 @@
+## 2026-09-16 (work-loop tick) — The sub-floor pacers, and the transport learns POST
+
+Nine WDQS callers paced themselves at **0.3–0.5s**. CLAUDE.md's floor is **2.5s**, set after an
+unpaced sweep fired ~365 queries and drew repeated 503/504 — and **0.5 is the exact figure it cites
+from that incident**. 0.3 is `READ_INTERVAL`, which `wd_pace.py` tells you in its own docstring not
+to pace a SPARQL caller at. All nine also backed off 5/10/15 against the documented 15/45/135, and
+`bfs/analyze_layers.py` had no backoff at all.
+
+⛔ **Every one of them was a POST caller**, each carrying a VALUES clause, and the transport was
+GET-only. Its own note read: *"if a caller ever needs one, add POST rather than chunking around it
+here."* They needed one. `post=True` puts the same encoded string in the body instead of the URL —
+one branch, no second code path — and the 414 note is rewritten from a limitation into a classified
+status.
+
+Migrated: `generate_shinmei_ids.py`, `bfs/analyze_layers.py`, `bfs/list_miscellaneous.py`,
+`bfs/property_label_report.py`, `bfs/buddhist_deity_analysis.py`, `generate_concept_translations.py`,
+`generate_courtrank_translations.py`, `generate_property_translations.py`,
+`build_name_in_kana_queue.py`. Adopters 33 -> 42. All nine live-checked.
+
+⭐ **The new test found a file the hand survey did not.** `test_no_wdqs_caller_paces_below_the_
+documented_floor` walks the tree for a sub-2.5s sleep at the top of a retry loop around a WDQS
+request, and failed on `bfs/buddhist_deity_analysis.py` at **0.3s** — the lowest in the repo. My AST
+scan had filed it as *"no function-level WDQS transport found"* because its `_get` is shared with
+the Wikidata API and so matched neither shape. Only the WDQS half moved; `_get` stays for the API,
+where 0.3s is the right pace and is now labelled as such.
+
+⚠ **Two things I got wrong in this tick, both recorded because the second one cost work.**
+
+1. The cleanup pass that strips now-unused constants deleted the FIRST line of four multi-line
+   `UA = {...}` assignments and left the continuation behind, breaking four files. Caught by the
+   static check before anything was committed, repaired by hand.
+2. **I ran `git checkout --` on `generate_shinmei_ids.py` and destroyed this tick's uncommitted
+   migration of it.** The cleanup script had crashed on that file, and I reached for a revert to
+   "see whether the partial run damaged anything" — the file was in fact untouched by the crash, so
+   the only thing the revert removed was my own work. Re-done. Nothing else was affected, and
+   nothing was committed in the broken state. The rule this breaks is the repo's own: reverting is
+   the reflex to be suspicious of, not the safe default.
+
+Suite 2,247, run. CI verified on the push.
+
 ## 2026-09-16 (work-loop tick) — The CSV callers join, by giving the transport a CSV mode
 
 The seven CSV callers were the last hand-rolled WDQS transports, and the obvious move — convert them

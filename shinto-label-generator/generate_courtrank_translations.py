@@ -15,14 +15,18 @@ import os
 import re
 import sys
 import io
-import time
-import requests
 import os as _uos, sys as _usys
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
 while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_uar, "shinto_miraheze")):
     _uar = _uos.path.dirname(_uar)
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
+# wdqs_transport lives in modern-quickstatements/, so a plain `import
+# wdqs_transport` does not reach it from here. Same entry the other adopters
+# outside that directory carry.
+_usys.path.insert(0, _uos.path.join(_uar, "modern-quickstatements"))
+
+import wdqs_transport
 
 from shinto_miraheze.ua_contact import contact
 
@@ -30,9 +34,6 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "quickstatements", "courtrank_translations.txt")
-SPARQL = "https://query-main.wikidata.org/sparql"
-UA = {"User-Agent": WIKIDATA_USER_AGENT,
-      "Accept": "application/sparql-results+json"}
 
 ORDINAL = {"first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5,
            "sixth": 6, "seventh": 7, "eighth": 8, "ninth": 9}
@@ -65,20 +66,18 @@ def _utf8():
 
 
 def _sparql(q):
-    for a in range(4):
-        time.sleep(0.5)
-        try:
-            r = requests.post(SPARQL, data={"query": q, "format": "json"}, headers=UA, timeout=90)
-            if r.status_code == 429:
-                raise SystemExit("429 from WDQS — bailing.")
-            r.raise_for_status()
-            return r.json()["results"]["bindings"]
-        except SystemExit:
-            raise
-        except Exception as e:
-            print(f"  [retry {a+1}] {e}", flush=True)
-            time.sleep(5 * (a + 1))
-    raise RuntimeError("WDQS failed")
+    """One WDQS query, through the shared transport.
+
+    ⚠ `post=True` is not decoration: this query carries a VALUES clause, which is
+    why the hand-rolled version POSTed. A GET URL does not fit it and comes back
+    414 — deterministically, after burning the whole backoff.
+
+    ⚠ Paced by the transport at the repo's **2.5s** floor. This used to sleep
+    0.5s per call. CLAUDE.md sets that floor after an unpaced sweep fired ~365
+    queries and drew repeated 503/504, and 0.5s is the figure it cites from that
+    incident. The backoff was 5/10/15; the transport's is 15/45/135.
+    """
+    return wdqs_transport.query(q, timeout=90, post=True)
 
 
 def main():
