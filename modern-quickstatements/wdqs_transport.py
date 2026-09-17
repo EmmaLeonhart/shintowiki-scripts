@@ -66,7 +66,9 @@ here.
   repo's pattern, not the pattern of whichever file it was lifted from.
 """
 
+import csv
 import http.client
+import io
 import json
 import time
 import urllib.error
@@ -117,23 +119,19 @@ FATAL_STATUS = frozenset({400, 401, 403, 404, 405, 414, 431})
 _last_call = 0.0
 
 
-def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
-    """Run a SPARQL query and return its `results.bindings`.
+def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string):
+    """The retry loop, shared by `query` and `query_csv`.
 
-    Raises `SystemExit` on 429 without retrying, per repo policy. Retries a
-    transport failure or a 5xx on the repo's 15/45/135s backoff, then re-raises.
-
-    `timeout` exists because it was hardcoded at 300 and that is not universal:
-    `site/generate_orphan_label_fixes.py` allowed **600**, and adopting the module
-    without this parameter would have halved the budget of its longest query
-    silently. Callers that were under 300 are left at their own figure rather than
-    quietly given more.
+    ⛔ `parse` is applied INSIDE the `with`, and that placement is the point. A
+    truncated body is what this module was built for, and for JSON it surfaces as a
+    `JSONDecodeError` raised by the parse — so a version that read the bytes here
+    and parsed them after the loop would put the very failure being retried outside
+    the thing retrying it.
     """
     global _last_call
-    url = endpoint + "?format=json&query=" + urllib.parse.quote(sparql_text)
-    req = urllib.request.Request(url, headers={
+    req = urllib.request.Request(endpoint + "?" + query_string, headers={
         "User-Agent": WIKIDATA_USER_AGENT,
-        "Accept": "application/sparql-results+json",
+        "Accept": accept,
     })
     for attempt in range(retries):
         gap = time.monotonic() - _last_call
@@ -142,7 +140,7 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
         _last_call = time.monotonic()
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return json.load(r)["results"]["bindings"]
+                return parse(r)
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 raise SystemExit("429 from WDQS — bailing.")
@@ -161,3 +159,51 @@ def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
             wait = 15 * (3 ** attempt)
             print(f"  WDQS {type(e).__name__}: {e} — retrying in {wait}s", flush=True)
             time.sleep(wait)
+
+
+def query(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
+    """Run a SPARQL query and return its `results.bindings`.
+
+    Raises `SystemExit` on 429 without retrying, per repo policy. Retries a
+    transport failure or a 5xx on the repo's 15/45/135s backoff, then re-raises.
+
+    `timeout` exists because it was hardcoded at 300 and that is not universal:
+    `site/generate_orphan_label_fixes.py` allowed **600**, and adopting the module
+    without this parameter would have halved the budget of its longest query
+    silently. Callers that were under 300 are left at their own figure rather than
+    quietly given more.
+    """
+    return _run(sparql_text, "application/sparql-results+json",
+                lambda r: json.load(r)["results"]["bindings"],
+                retries, endpoint, timeout,
+                "format=json&query=" + urllib.parse.quote(sparql_text))
+
+
+def query_csv(sparql_text, retries=RETRIES, endpoint=ENDPOINT, timeout=TIMEOUT):
+    """Run a SPARQL query asking for CSV, and return `list(csv.DictReader(...))`.
+
+    ## Why a CSV mode exists at all, rather than moving those callers to `query`
+
+    Seven callers ask WDQS for CSV, and two of them say why in their own docstring:
+    *"CSV, not JSON: the JSON body for these result sets comes back truncated."*
+    So converting them to `query` would reintroduce the exact failure this module
+    was written to survive — on the result sets already known to provoke it. The
+    CSV choice is load-bearing and is kept; what those callers were missing is the
+    policy around it, which is all this adds.
+
+    ⚠ **It is NOT as well protected as `query`, and the difference is real.** A
+    truncated JSON body raises `JSONDecodeError` and is retried. A truncated CSV
+    body is still valid CSV — it is simply shorter — so the only truncations
+    catchable here are the ones the transport itself notices: `IncompleteRead`
+    (a body short of its `Content-Length`), a dropped connection, a timeout. A
+    server that closes cleanly mid-stream on a chunked response returns fewer rows
+    and nothing raises. That was equally true of every hand-rolled version this
+    replaces; it is stated here so nobody reads `query_csv` as making CSV safe.
+
+    No caller passes a `format` parameter — the header does the asking, exactly as
+    the seven hand-rolled versions did.
+    """
+    return _run(sparql_text, "text/csv",
+                lambda r: list(csv.DictReader(io.StringIO(r.read().decode("utf-8")))),
+                retries, endpoint, timeout,
+                urllib.parse.urlencode({"query": sparql_text}))

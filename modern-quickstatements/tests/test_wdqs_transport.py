@@ -304,6 +304,87 @@ def test_a_429_check_after_a_successful_urlopen_can_never_fire():
         srv.shutdown()
 
 
+def test_query_csv_asks_for_csv_and_never_for_json():
+    """The CSV callers exist for a recorded reason and it must not be optimised away.
+
+    Two of them said it in their own docstring: *"CSV, not JSON: the JSON body for
+    these result sets comes back truncated."* So moving them to `query` would
+    reintroduce, on the very result sets known to provoke it, the failure this
+    module was written to survive. `query_csv` gives them the policy without
+    touching that choice.
+    """
+    mod = _mod()
+    seen = {}
+
+    def fake(req, timeout=None):
+        seen["accept"] = req.get_header("Accept")
+        seen["url"] = req.full_url
+        return _Resp(b"item,ja\r\nQ1,\xe7\xa5\x9e\xe7\xa4\xbe\r\n")
+
+    mod.urllib.request.urlopen = fake
+    mod.WDQS_THROTTLE = 0
+    rows = mod.query_csv("SELECT * WHERE {}")
+    assert seen["accept"] == "text/csv", seen
+    assert "format=json" not in seen["url"], (
+        "query_csv asked for JSON in the URL; the header and the query string "
+        "would then disagree")
+    assert rows == [{"item": "Q1", "ja": "神社"}], rows
+
+
+def test_query_csv_bails_on_429_and_backs_off_like_query():
+    """It shares `_run` with `query`, so the policy is the same object, not a
+    second copy of it. Driven rather than read, because "it calls the same
+    function" is exactly the claim that rots."""
+    mod = _mod()
+    calls = {"n": 0}
+
+    def bail(req, timeout=None):
+        calls["n"] += 1
+        raise mod.urllib.error.HTTPError(req.full_url, 429, "Too Many", {}, None)
+
+    mod.urllib.request.urlopen = bail
+    mod.time.sleep = lambda *_: None
+    mod.WDQS_THROTTLE = 0
+    with pytest.raises(SystemExit):
+        mod.query_csv("SELECT * WHERE {}")
+    assert calls["n"] == 1, f"429 was retried {calls['n']} times"
+
+    waits = []
+    calls["n"] = 0
+
+    def gateway(req, timeout=None):
+        calls["n"] += 1
+        raise mod.urllib.error.HTTPError(req.full_url, 504, "Gateway", {}, None)
+
+    mod.urllib.request.urlopen = gateway
+    mod.time.sleep = lambda s=0: waits.append(s)
+    with pytest.raises(mod.urllib.error.HTTPError):
+        mod.query_csv("SELECT * WHERE {}")
+    assert calls["n"] == mod.RETRIES
+    assert [w for w in waits if w] == [15, 45, 135], waits
+
+
+def test_the_parse_happens_inside_the_retry_loop():
+    """⛔ A truncated JSON body surfaces as a `JSONDecodeError` raised by the PARSE.
+    If the parse moved outside the `with` — read the bytes in the loop, decode them
+    after — the one failure this module was built for would land outside the thing
+    retrying it. Asserted by driving a short read, not by reading the source."""
+    mod = _mod()
+    calls = {"n": 0}
+
+    def short_then_whole(req, timeout=None):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            return _Resp(b'{"results": {"bindings": [{"x": {"value": "tru')
+        return _Resp(b'{"results": {"bindings": [{"x": {"value": "ok"}}]}}')
+
+    mod.urllib.request.urlopen = short_then_whole
+    mod.time.sleep = lambda *_: None
+    mod.WDQS_THROTTLE = 0
+    assert mod.query("SELECT * WHERE {}") == [{"x": {"value": "ok"}}]
+    assert calls["n"] == 2, f"the short read was not retried ({calls['n']} call(s))"
+
+
 def test_the_copy_pasted_transports_are_gone():
     """These three carried the same function with no retry at all. If one grows its
     own urlopen back, it has left the shared policy behind."""

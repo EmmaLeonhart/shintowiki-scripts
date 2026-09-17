@@ -32,20 +32,19 @@ if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 
 import collections
-import csv
 import html
 import io
 import json
 import sys
+
+import wdqs_transport
 import urllib.parse
 import urllib.request
 
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-SPARQL = "https://query-main.wikidata.org/sparql"
 DET = "https://jmapps.ne.jp/kokugakuin/det.html?data_id="
 WD = "https://www.wikidata.org/wiki/"
 OUT = _uos.path.join(_uar, "_site", "p958-candidates.html")
@@ -67,13 +66,11 @@ CLASSES = [
 
 
 def fetch():
-    wd_pace(SPARQL_INTERVAL)
     q = ("SELECT ?item ?ja ?kid ?sec WHERE { ?item p:P13677 ?st . ?st ps:P13677 ?kid . "
          'OPTIONAL { ?st pq:P958 ?sec } OPTIONAL { ?item rdfs:label ?ja FILTER(lang(?ja)="ja") } }')
-    req = urllib.request.Request(SPARQL + "?" + urllib.parse.urlencode({"query": q}),
-                                 headers={"User-Agent": WIKIDATA_USER_AGENT, "Accept": "text/csv"})
-    with urllib.request.urlopen(req, timeout=600) as r:
-        return list(csv.DictReader(io.StringIO(r.read().decode("utf-8"))))
+    # timeout=600 is this file's own figure, passed through: the transport defaults
+    # to 300, and this query walks every P13677 statement.
+    return wdqs_transport.query_csv(q, timeout=600)
 
 
 def classify(holders):

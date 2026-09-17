@@ -75,14 +75,26 @@ from `ATOMIC_FILES`; they are not queue items.
   `generate_chinese_quickstatements.py`, `generate_korean_quickstatements.py`,
   `site/generate_orphan_label_fixes.py`. The last four are outside `modern-quickstatements/` and
   carry the `sys.path` entry `build_ronsha_ranking_queue.py` introduced.
-  - ⛔ **CSV callers stay out, and this is the trap.** `wdqs_transport.query` returns
-    `results.bindings`; a CSV caller pointed at it does not fail loudly, it gets a different shape.
-    `generate_list_membership_rebuild.py`, `generate_list_membership_removals.py`,
-    `report_commons_label_accuracy.py`, `report_list_structure.py`, `report_orphan_shikinaisha.py`,
-    `report_ronsha_list_membership.py` — and **`generate_p958_candidates_page.py`**, which this
-    queue listed as a JSON caller until it was actually read: its function is named `fetch`, not
-    `sparql_csv`, and it sends `Accept: text/csv` and returns a `csv.DictReader`. **A caller is CSV
-    or JSON by its Accept header, not by what its function is called.**
+  ✅ **And the CSV callers are in too (2026-09-16). Adopters: 33.** Not by converting them — by
+  giving the transport a `query_csv`. Two of them say why in their own docstring: *"CSV, not JSON:
+  the JSON body for these result sets comes back truncated."* Converting them to `query` would
+  reintroduce, on the very result sets known to provoke it, the failure this module exists to
+  survive. The CSV choice is load-bearing; what they were missing was the policy around it.
+  `generate_list_membership_rebuild.py`, `generate_list_membership_removals.py`,
+  `report_commons_label_accuracy.py`, `report_list_structure.py`, `report_orphan_shikinaisha.py`,
+  `report_ronsha_list_membership.py`, `generate_p958_candidates_page.py`.
+  - ⚠ **`query_csv` is NOT as protected as `query`, and the gap is real.** A truncated JSON body
+    raises `JSONDecodeError` and is retried; a truncated CSV body is still valid CSV, just shorter.
+    Only the truncations the transport itself notices — `IncompleteRead`, a dropped connection, a
+    timeout — are catchable. A clean mid-stream close on a chunked response returns fewer rows and
+    nothing raises. That was equally true of all seven hand-rolled versions; it is written down so
+    nobody reads `query_csv` as making CSV safe.
+  - ⛔ **`query` and `query_csv` share one `_run`, and the parse runs INSIDE the `with`.** Moving it
+    out — read bytes in the loop, decode after — would put the one failure this module was built for
+    outside the thing retrying it. Pinned by `test_the_parse_happens_inside_the_retry_loop`.
+  - ⚠ **A caller is CSV or JSON by its Accept header, not by what its function is called.** This
+    queue listed `generate_p958_candidates_page.py` as a JSON caller until it was read: its function
+    is `fetch`, not `sparql_csv`, and it sends `Accept: text/csv`.
   - ⚠ **`timeout` was hardcoded at 300 in the transport and the callers differ** — 600 in
     `site/generate_orphan_label_fixes.py`, 120 in `fetch_shrines_tokiponize.py`. Adopting without a
     parameter would not have broken visibly; it would have halved the longest query's budget and

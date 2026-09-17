@@ -1,3 +1,41 @@
+## 2026-09-16 (work-loop tick) — The CSV callers join, by giving the transport a CSV mode
+
+The seven CSV callers were the last hand-rolled WDQS transports, and the obvious move — convert them
+to `query` — is the wrong one. Two of them say why in their own docstring:
+
+    CSV, not JSON: the JSON body for these result sets comes back truncated.
+
+So converting them would reintroduce, on the very result sets already known to provoke it, the exact
+failure `wdqs_transport` was written to survive. **The CSV choice is load-bearing.** What those seven
+were missing is the policy around it — no retry, and in five of them no 429 bail — so the module
+grows a `query_csv` instead.
+
+`query` and `query_csv` now share one `_run`. ⛔ The parse runs INSIDE the `with`, and that placement
+is the whole point: a truncated JSON body surfaces as a `JSONDecodeError` raised by the parse, so a
+version that read the bytes in the loop and decoded them afterwards would put the one failure this
+module exists for outside the thing retrying it. Pinned by driving a short read, not by reading the
+source.
+
+⚠ **`query_csv` is honestly weaker than `query`, and the docstring says so.** A truncated CSV body is
+still valid CSV — just shorter — so only the truncations the transport itself notices are catchable:
+`IncompleteRead`, a dropped connection, a timeout. A clean mid-stream close on a chunked response
+returns fewer rows and nothing raises. That was equally true of all seven hand-rolled versions, so
+this is not a regression; it is written down so nobody reads `query_csv` as making CSV safe.
+
+**Live-checked, all seven:** the six `sparql_csv` helpers each returned 2 rows with keys
+`['item', 'ja']`, and `generate_p958_candidates_page.fetch()` returned **5,198** rows with keys
+`['item', 'ja', 'kid', 'sec']` — its real query, at its own `timeout=600`. Its `wd_pace` call is gone
+because the transport paces; keeping it would have doubled the wait.
+
+Adopters 26 -> 33. Suite 2,245, run.
+
+**Also this tick: the migration got exercised in CI on its own.** `label-generator-regenerate`
+35166293681 ran green at 01:00Z, after the 00:22Z push, and regenerated through the migrated Korean
+and Chinese generators — `ko.txt` +33/-13, `zh.txt` +29/-5, files intact at 110,614 and 107,060
+lines. The commit is large (47,714 insertions across 88 files) and that is within the ordinary range
+for this job: the last six regenerations were 302,742 / 2,480 / 1,389 / 336 / 1 insertions. The bulk
+is in `generate_multilang_quickstatements.py`'s languages, which this work did not touch.
+
 ## 2026-09-16 (work-loop tick) — The no-retry population closes too; adopters 26
 
 Last night's entry said the next population was not a batch. Re-reading it function by function

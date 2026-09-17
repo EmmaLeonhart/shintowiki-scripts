@@ -23,23 +23,22 @@ if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
-import csv
 import io
 import json
 import os
 import re
 import sys
+
+import wdqs_transport
 import urllib.parse
 import urllib.request
 
 import commons_normalize
 from kana_english import hardcoded_label
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOC = os.path.join(os.path.dirname(HERE), "docs")
 UA = WIKIDATA_USER_AGENT
-SPARQL = "https://query-main.wikidata.org/sparql"
 
 SHRINE = "Q845945"
 TEMPLE = "Q5393308"
@@ -142,12 +141,7 @@ def build_report(rows):
 # ─────────────────────────── live fetch ───────────────────────────
 
 def sparql_csv(query):
-    req = urllib.request.Request(
-        SPARQL + "?" + urllib.parse.urlencode({"query": query}),
-        headers={"User-Agent": UA, "Accept": "text/csv"})
-    wd_pace(SPARQL_INTERVAL)
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return list(csv.DictReader(io.StringIO(r.read().decode("utf-8"))))
+    return wdqs_transport.query_csv(query)
 
 
 def _query(p31_clause):

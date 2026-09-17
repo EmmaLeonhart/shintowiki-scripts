@@ -61,19 +61,18 @@ if _uar not in _usys.path:
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import collections
-import csv
 import io
 import os
 import sys
+
+import wdqs_transport
 import urllib.parse
 import urllib.request
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = "list_membership_removals.txt"
 
 UA = WIKIDATA_USER_AGENT
-SPARQL = "https://query-main.wikidata.org/sparql"
 
 RONSHA = "Q135022904"            # Shikinai Ronsha (disputed)
 JINMYOCHO = "Q11064932"          # Engishiki Jinmyōchō
@@ -81,12 +80,7 @@ P_PART_OF = "P361"
 
 
 def sparql_csv(query):
-    req = urllib.request.Request(
-        SPARQL + "?" + urllib.parse.urlencode({"query": query}),
-        headers={"User-Agent": UA, "Accept": "text/csv"})
-    wd_pace(SPARQL_INTERVAL)
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return list(csv.DictReader(io.StringIO(r.read().decode("utf-8"))))
+    return wdqs_transport.query_csv(query)
 
 
 def qid(u):

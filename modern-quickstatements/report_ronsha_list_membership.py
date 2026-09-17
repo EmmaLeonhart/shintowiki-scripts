@@ -67,11 +67,12 @@ if _uar not in _usys.path:
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 import argparse
 import collections
-import csv
 import io
 import json
 import os
 import sys
+
+import wdqs_transport
 import time
 
 import requests
@@ -82,7 +83,6 @@ DEFAULT_OUT = os.path.join(REPO, "docs", "ronsha_list_membership_2026-07.md")
 
 UA = WIKIDATA_USER_AGENT
 WD_API = "https://www.wikidata.org/w/api.php"
-SPARQL = "https://query-main.wikidata.org/sparql"
 
 RONSHA = "Q135022904"
 JINMYOCHO = "Q11064932"
@@ -97,12 +97,7 @@ P_KOKUGAKUIN = "P13677"
 
 def sparql_csv(query):
     """CSV, not JSON: the JSON body for these result sets comes back truncated."""
-    r = requests.get(SPARQL, params={"query": query},
-                     headers={"User-Agent": UA, "Accept": "text/csv"}, timeout=300)
-    if r.status_code == 429:
-        raise SystemExit("FATAL: 429 — bailing (429 policy)")
-    r.raise_for_status()
-    return list(csv.DictReader(io.StringIO(r.text)))
+    return wdqs_transport.query_csv(query)
 
 
 def entities(qids):
