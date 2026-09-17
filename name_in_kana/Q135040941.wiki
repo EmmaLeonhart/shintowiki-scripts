@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q134596555 -->
-<!-- JA: 山神社 | EN_LABEL: Yama Shrine | BUCKET: a -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q135040941 -->
+<!-- JA: 佐香神社 | EN_LABEL: Sakano Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: GUESS: やまじんじゃ -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): やまじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): さんじんじゃ
+  CANDIDATE A (from the English label): さかのじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): さかじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
