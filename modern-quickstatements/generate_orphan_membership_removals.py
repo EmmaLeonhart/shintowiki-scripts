@@ -41,6 +41,8 @@ import json
 import os
 import re
 import sys
+
+import wdqs_transport
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -52,13 +54,10 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 
-from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
-from shinto_miraheze.wd_pace import wd_pace, SPARQL_INTERVAL
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "orphan_membership_removals.txt")
 ALREADY = os.path.join(HERE, "list_membership_removals.txt")
-ENDPOINT = "https://query-main.wikidata.org/sparql"
 
 # An item that says "I am the same as <register entry>" AND separately claims to be
 # part of the register's list. The P460 target is what identifies it as the modern
@@ -89,28 +88,24 @@ SELECT DISTINCT ?item ?ja ?list WHERE {
 
 
 def sparql(query):
-    url = ENDPOINT + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": WIKIDATA_USER_AGENT, "Accept": "application/sparql-results+json"})
-    for wait in (0, 15, 45, 135):
-        if wait:
-            print("  backing off %ds" % wait, flush=True)
-            import time
-            time.sleep(wait)
-        wd_pace(SPARQL_INTERVAL)
-        try:
-            with urllib.request.urlopen(req, timeout=180) as resp:
-                return json.loads(resp.read().decode("utf-8"))["results"]["bindings"]
-        except urllib.error.HTTPError as exc:
-            if exc.code == 429:
-                print("429 from WDQS — bailing, per standing policy.")
-                sys.exit(1)
-            if exc.code in (503, 504):
-                print("  HTTP %d from WDQS" % exc.code)
-                continue
-            raise
-    print("WDQS kept timing out; wrote nothing.")
-    sys.exit(1)
+    """One WDQS query, through the shared transport.
+
+    ⚠ The hand-rolled loop this replaces had the RIGHT backoff -- `for wait in
+    (0, 15, 45, 135)`, the repo's own pattern -- and the right 429 bail. What it did
+    not have was the retryable set: it caught `urllib.error.HTTPError` **only**, so a
+    truncated body escaped the loop entirely and ended the run. That is the
+    2026-09-13 incident this module was written for, in a file that reads as
+    compliant at a glance. It also `continue`d on 503/504 alone, so a 500 or a 502
+    was raised on the first attempt rather than retried.
+    """
+    try:
+        return wdqs_transport.query(query, timeout=180)
+    except Exception as e:
+        # Message kept from the hand-rolled version, but it now names the actual
+        # failure. "kept timing out" was asserted unconditionally there, and would
+        # have been printed for a malformed query just the same.
+        print(f"WDQS failed ({type(e).__name__}: {e}). Wrote nothing.")
+        sys.exit(1)
 
 
 def already_staged():

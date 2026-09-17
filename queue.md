@@ -131,6 +131,23 @@ from `ATOMIC_FILES`; they are not queue items.
     which is why several of these files can never be listed there. ⚠ It matches a call that NAMES
     the endpoint; a `Request` built first and passed as a variable is not caught. Narrows the gap,
     does not close it.
+
+  ✅ **And the HTTPError-only five (2026-09-16). Adopters: 53.** The subtlest class yet, because
+  these read as fully compliant: correct `for wait in (0, 15, 45, 135)` backoff — the repo's own
+  pattern — and a correct 429 bail. What they lacked was the retryable **set**. They caught
+  `urllib.error.HTTPError` and nothing else, so a truncated body escaped the loop entirely and ended
+  the run: **the exact 2026-09-13 incident this module was written for.** They also `continue`d on
+  503/504 only, so a 500 or 502 was raised on the first attempt instead of retried.
+  `audit_supershrine_collapse.py`, `generate_multi_ordinal_removals.py`,
+  `generate_orphan_membership_removals.py`, `generate_tenjinsha_en_labels.py`,
+  `report_en_label_without_kana.py`.
+  - ⚠ **This is a DIFFERENT class from the one closed on 2026-09-14**, which was the eight catching
+    only `ReadTimeout`/`ConnectionError`. Same defect, different narrow clause. The lesson is that
+    *having* the right backoff is not evidence of having the right retryable set, and the backoff is
+    the part a survey notices.
+  - Each keeps its own "nothing measured / wrote nothing" exit, now naming the actual failure —
+    the hand-rolled message asserted "kept timing out" unconditionally and would have printed it for
+    a malformed query too.
   - ⚠ **`timeout` was hardcoded at 300 in the transport and the callers differ** — 600 in
     `site/generate_orphan_label_fixes.py`, 120 in `fetch_shrines_tokiponize.py`. Adopting without a
     parameter would not have broken visibly; it would have halved the longest query's budget and

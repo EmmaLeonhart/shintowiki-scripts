@@ -38,6 +38,8 @@ import io
 import json
 import os
 import sys
+
+import wdqs_transport
 import time
 import urllib.error
 import urllib.parse
@@ -50,13 +52,9 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 
-from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "multi_ordinal_removals.txt")
-ENDPOINT = "https://query-main.wikidata.org/sparql"
-WDQS_THROTTLE = 2.5
-_LAST = 0.0
 
 # Every (item, list) pair, with how many statements join them and how many
 # distinct ordinals those statements carry between them.
@@ -72,32 +70,27 @@ GROUP BY ?item ?ja ?list
 
 
 def sparql(query):
-    """Throttle lives here, not at the call sites — a caller cannot forget it."""
-    global _LAST
-    url = ENDPOINT + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": WIKIDATA_USER_AGENT, "Accept": "application/sparql-results+json"})
-    gap = time.monotonic() - _LAST
-    if gap < WDQS_THROTTLE:
-        time.sleep(WDQS_THROTTLE - gap)
-    _LAST = time.monotonic()
-    for wait in (0, 15, 45, 135):
-        if wait:
-            print("  backing off %ds" % wait, flush=True)
-            time.sleep(wait)
-        try:
-            with urllib.request.urlopen(req, timeout=180) as resp:
-                return json.loads(resp.read().decode("utf-8"))["results"]["bindings"]
-        except urllib.error.HTTPError as exc:
-            if exc.code == 429:
-                print("429 from WDQS — bailing, per standing policy.")
-                sys.exit(1)
-            if exc.code in (503, 504):
-                print("  HTTP %d from WDQS" % exc.code)
-                continue
-            raise
-    print("WDQS kept timing out; wrote nothing.")
-    sys.exit(1)
+    """One WDQS query, through the shared transport.
+
+    ⚠ The hand-rolled loop this replaces had the RIGHT backoff -- `for wait in
+    (0, 15, 45, 135)`, the repo's own pattern -- and the right 429 bail. What it did
+    not have was the retryable set: it caught `urllib.error.HTTPError` **only**, so a
+    truncated body escaped the loop entirely and ended the run. That is the
+    2026-09-13 incident this module was written for, in a file that reads as
+    compliant at a glance. It also `continue`d on 503/504 alone, so a 500 or a 502
+    was raised on the first attempt rather than retried.
+
+    The throttle moves with it: it lived in this function rather than at the call
+    sites so a caller could not forget it, which is the transport's own reason.
+    """
+    try:
+        return wdqs_transport.query(query, timeout=180)
+    except Exception as e:
+        # Message kept from the hand-rolled version, but it now names the actual
+        # failure. "kept timing out" was asserted unconditionally there, and would
+        # have been printed for a malformed query just the same.
+        print(f"WDQS failed ({type(e).__name__}: {e}). Wrote nothing.")
+        sys.exit(1)
 
 
 def main():

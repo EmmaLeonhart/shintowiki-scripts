@@ -1,3 +1,45 @@
+## 2026-09-16 (work-loop tick) — The HTTPError-only five: right backoff, wrong retryable set
+
+The subtlest class so far, because these read as fully compliant. Each had the repo's own backoff
+written out longhand — `for wait in (0, 15, 45, 135)` — and a correct unconditional 429 bail. A
+survey looking for "does it back off properly" passes them.
+
+What they lacked was the retryable **set**. They caught `urllib.error.HTTPError` and nothing else, so
+a `JSONDecodeError` from a truncated body escaped the loop entirely and ended the run — **the exact
+2026-09-13 incident this module exists for**, in five files that look like the answer to it. They
+also `continue`d on 503/504 alone, so a 500 or a 502 was raised on the first attempt rather than
+retried.
+
+⚠ **This is not the class closed on 2026-09-14.** That one was the eight catching only
+`ReadTimeout`/`ConnectionError`. Same defect, different narrow clause — and the lesson is worth
+keeping: **having the right backoff is not evidence of having the right retryable set**, and the
+backoff is the half a survey notices. Both halves have to be read.
+
+Migrated: `audit_supershrine_collapse.py`, `generate_multi_ordinal_removals.py`,
+`generate_orphan_membership_removals.py`, `generate_tenjinsha_en_labels.py`,
+`report_en_label_without_kana.py`. Adopters 48 -> 53.
+
+Each keeps its own exit message — "Nothing measured — reporting that rather than a partial number",
+"Wrote nothing" — but the message now names the actual failure. The hand-rolled version asserted
+"WDQS kept timing out" unconditionally, and would have printed exactly that for a malformed query.
+
+**Two process corrections from earlier ticks, applied here rather than just written down.**
+
+1. **The live-checks ran in ONE process**, not five. Last tick's 429 came from ~thirty separate
+   one-shot verification processes, across which the transport's 2.5s pacer cannot reach. Inside a
+   single process it does, and all five checks paced themselves.
+2. **The dead-constant cleanup used AST line ranges, not a line regex.** The regex pass earlier
+   today cut the first line off four multi-line `UA = {...}` assignments and left the continuations
+   behind, breaking four files. The AST version deletes a statement's full `lineno..end_lineno`
+   span, refuses any statement that binds a name it was not asked about, and re-checks that the name
+   has exactly one reference before touching it.
+
+Also: the patch itself was written to a repo file and deleted in this commit, rather than fought
+through a shell heredoc — the heredoc died on quoting and wrote nothing, which is the failure
+CLAUDE.md's "never write outside the repo" note already describes the fix for.
+
+Suite 2,248, run. All five live-checked.
+
 ## 2026-09-16 (work-loop tick) — The catch-and-exit six, and a 429 of my own making
 
 **A `try` with no loop is not a retry.** Six WDQS callers caught the failure and exited, so a

@@ -37,6 +37,8 @@ import io
 import json
 import os
 import sys
+
+import wdqs_transport
 import time
 import urllib.error
 import urllib.parse
@@ -49,10 +51,7 @@ while _uar != _uos.path.dirname(_uar) and not _uos.path.isdir(_uos.path.join(_ua
 if _uar not in _usys.path:
     _usys.path.insert(0, _uar)
 
-from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
-ENDPOINT = "https://query-main.wikidata.org/sparql"
-WDQS_THROTTLE = 2.5
 
 # Every shrine with an English label, with its ja label and its kana if it has one.
 # One query; the split into has-kana / lacks-kana happens here, not on the endpoint.
@@ -67,27 +66,24 @@ SELECT ?item ?ja ?en ?kana WHERE {
 
 
 def run(query):
-    url = ENDPOINT + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
-    req = urllib.request.Request(url, headers={
-        "User-Agent": WIKIDATA_USER_AGENT, "Accept": "application/sparql-results+json"})
-    for wait in (0, 15, 45, 135):
-        if wait:
-            print("  backing off %ds" % wait)
-            time.sleep(wait)
-        time.sleep(WDQS_THROTTLE)
-        try:
-            with urllib.request.urlopen(req, timeout=300) as resp:
-                return json.loads(resp.read().decode("utf-8"))["results"]["bindings"]
-        except urllib.error.HTTPError as exc:
-            if exc.code == 429:
-                print("HTTP 429 from WDQS — bailing immediately per standing policy.")
-                sys.exit(1)
-            if exc.code in (503, 504):
-                print("  HTTP %d from WDQS" % exc.code)
-                continue
-            raise
-    print("WDQS kept timing out. Nothing measured.")
-    sys.exit(1)
+    """One WDQS query, through the shared transport.
+
+    ⚠ The hand-rolled loop this replaces had the RIGHT backoff -- `for wait in
+    (0, 15, 45, 135)`, the repo's own pattern -- and the right 429 bail. What it did
+    not have was the retryable set: it caught `urllib.error.HTTPError` **only**, so a
+    truncated body escaped the loop entirely and ended the run. That is the
+    2026-09-13 incident this module was written for, in a file that reads as
+    compliant at a glance. It also `continue`d on 503/504 alone, so a 500 or a 502
+    was raised on the first attempt rather than retried.
+    """
+    try:
+        return wdqs_transport.query(query, timeout=300)
+    except Exception as e:
+        # Message kept from the hand-rolled version, but it now names the actual
+        # failure. "kept timing out" was asserted unconditionally there, and would
+        # have been printed for a malformed query just the same.
+        print(f"WDQS failed ({type(e).__name__}: {e}). Nothing measured.")
+        sys.exit(1)
 
 
 def main():
