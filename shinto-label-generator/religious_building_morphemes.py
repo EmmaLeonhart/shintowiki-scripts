@@ -101,6 +101,31 @@ SAINT_MARKERS = {
 
 SAINT_PREFIX = {"ja": "聖", "zh": "圣", "ko": "성"}
 
+# ⚠ THE zh COLUMN IS CATHOLIC REGISTER, AND THAT IS A CHOICE (audited 2026-09-18)
+#
+# Chinese has two parallel Christian vocabularies and they disagree on almost
+# every name. Mine are consistently the CATHOLIC forms; Wikidata's own labels are
+# frequently the Protestant or transliterated ones:
+#
+#     saint        mine (Catholic)   Wikidata      register
+#     Michael      弥额尔             米迦勒         Protestant
+#     Matthew      玛窦               馬太           Protestant
+#     Elijah       厄里亚             以利亞         Protestant
+#     Andrew       安德肋             安得烈         Protestant
+#     Christopher  圣基道             聖克里斯多福    transliteration
+#
+# This is not an error either way, and Catholic register is the right one here:
+# these are overwhelmingly Catholic parish churches, chapels and basilicas. It
+# is written down because it was an unflagged decision, and because a future
+# audit against Wikidata labels will "find" all of these again.
+#
+# ⚠ The ja column was audited the same way: of the 58 entries where Wikidata has
+# a ja label, 19 are IDENTICAL to mine and most of the rest differ only by a
+# disambiguator (アレクサンドリアのカタリナ vs カタリナ) or a 聖 prefix this module
+# adds separately. Three were genuinely wrong and are corrected above -- each was
+# a literal translation where Japanese Catholicism has a settled term
+# (絶えざる御助けの聖母, 扶助者聖マリア, 慈悲の聖母).
+#
 # --------------------------------------------------------------------------
 # Known dedicatees. The measured list — Maria/María 1,393, Mary 341,
 # Nicholas 314, Pedro 310, Michael 271 — plus the obvious companions. Only
@@ -373,10 +398,10 @@ DEDICATIONS = {
     "queen of poland":  {"ja": "ポーランドの元后聖母", "zh": "波兰之后圣母", "ko": "폴란드의 모후 성모"},
     "carme":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
     "carmo":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
-    "perpetual help":   {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
+    "perpetual help":   {"ja": "絶えざる御助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
     "perpétuo socorro": {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
     "perpetuo socorro": {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
-    "help of christians": {"ja": "キリスト信者の扶助者聖母", "zh": "进教之佑", "ko": "신자들의 도움이신 성모"},
+    "help of christians": {"ja": "扶助者聖マリア", "zh": "进教之佑", "ko": "신자들의 도움이신 성모"},
     "scapular":         {"ja": "スカプラリオの聖母", "zh": "圣衣圣母", "ko": "스카풀라의 성모"},
     "szkaplerznej":     {"ja": "スカプラリオの聖母", "zh": "圣衣圣母", "ko": "스카풀라의 성모"},
     "smolensk":         {"ja": "スモレンスクの生神女", "zh": "斯摩棱斯克圣母", "ko": "스몰렌스크의 성모"},
@@ -390,7 +415,7 @@ DEDICATIONS = {
     "of the angels":    {"ja": "天使の聖母", "zh": "天神之后圣母", "ko": "천사의 성모"},
     "consolation":      {"ja": "慰めの聖母", "zh": "安慰之母", "ko": "위로의 성모"},
     "bon secours":      {"ja": "善き助けの聖母", "zh": "善佑圣母", "ko": "좋은 도움의 성모"},
-    "merced":           {"ja": "メルセーの聖母", "zh": "赎虏圣母", "ko": "자비의 성모"},
+    "merced":           {"ja": "慈悲の聖母", "zh": "赎虏圣母", "ko": "자비의 성모"},
     "piedade":          {"ja": "憐れみの聖母", "zh": "怜悯圣母", "ko": "자비의 성모"},
     "guia":             {"ja": "導きの聖母", "zh": "引导圣母", "ko": "인도의 성모"},
     "luz":              {"ja": "光の聖母", "zh": "光明圣母", "ko": "빛의 성모"},
@@ -753,14 +778,14 @@ EN_FROM_JA = {
     "ウラジーミルの生神女": "Our Lady of Vladimir",
     "カザンの生神女": "Our Lady of Kazan",
     "カルメル山の聖母": "Our Lady of Mount Carmel",
-    "キリスト信者の扶助者聖母": "Our Lady Help of Christians",
+    "扶助者聖マリア": "Our Lady Help of Christians",
     "グアダルーペの聖母": "Our Lady of Guadalupe",
     "スカプラリオの聖母": "Our Lady of the Scapular",
     "スモレンスクの生神女": "Our Lady of Smolensk",
     "チェンストホヴァの聖母": "Our Lady of Częstochowa",
     "ファティマの聖母": "Our Lady of Fátima",
     "ポーランドの元后聖母": "Our Lady Queen of Poland",
-    "メルセーの聖母": "Our Lady of Mercy",
+    "慈悲の聖母": "Our Lady of Mercy",
     "ルルドの聖母": "Our Lady of Lourdes",
     "ロザリオ": "the Rosary", "ロザリオの聖母": "Our Lady of the Rosary",
     "ロレートの聖母": "Our Lady of Loreto",
@@ -781,7 +806,7 @@ EN_FROM_JA = {
     "慰めの聖母": "Our Lady of Consolation",
     "憐れみの聖母": "Our Lady of Pity",
     "救いの聖母": "Our Lady of Remedies",
-    "永遠の助けの聖母": "Our Lady of Perpetual Help",
+    "絶えざる御助けの聖母": "Our Lady of Perpetual Help",
     "無原罪の御宿り": "the Immaculate Conception",
     "生神女": "the Theotokos", "生神女就寝": "the Dormition",
     "生神女庇護": "the Protection of the Theotokos",

@@ -1,3 +1,40 @@
+## 2026-09-18 — Auditing the tables I said could not be audited
+
+Last tick I called the ~90 dedication renderings and ~40 saint names *"the largest remaining unknown
+... not something I can resolve by measuring"*. That was wrong and it was the same reflex as
+everything else this session: **every one of them is a Wikidata ITEM carrying its own ja/zh/ko
+labels.** Assumption of Mary, Saint Lawrence, Theotokos of Vladimir. They were checkable the whole
+time.
+
+**Result: the tables are not junk, and they are not clean either.** Of the 58 entries where Wikidata
+has a ja label, **19 are IDENTICAL** to mine — アンデレ, アンナ, バルバラ, クリストフォロス, エリヤ,
+ゲオルギオス, 洗礼者ヨハネ, マタイ, ミカエル, ステファノ, 受胎告知, 悲しみの聖母, 雪の聖母,
+ファティマの聖母, グアダルーペの聖母, カザンの生神女, ウラジーミルの生神女, ルルドの聖母.
+
+**Three were genuinely wrong**, all the same shape — I translated literally where Japanese
+Catholicism has a settled term:
+
+| | mine | corrected |
+|---|---|---|
+| Our Lady of Perpetual Help | 永遠の助けの聖母 | **絶えざる御助けの聖母** |
+| Our Lady Help of Christians | キリスト信者の扶助者聖母 | **扶助者聖マリア** |
+| Our Lady of Mercy | メルセーの聖母 | **慈悲の聖母** (I had transliterated "Merced") |
+
+⚠ **The 33% agreement figure is a floor, not a verdict.** Most of the other 39 are explicable: the
+audit's own search resolved `Saint John` to **セイント・ジョンズ** (a city), `Corpus Christi` to the
+Texas city, `Saint Martin` to a place. The rest differ by a disambiguator Wikidata carries and a
+dedication does not (アレクサンドリアのカタリナ vs カタリナ) or by a 聖 prefix this module adds
+separately. **This is exactly why nothing was auto-applied** — a wrong item match would have
+replaced a right answer with a city.
+
+⚠ **And it surfaced a systematic decision I had never flagged.** My `zh` column is consistently
+**Catholic register** while Wikidata's labels are frequently Protestant or transliterated — 弥额尔
+vs 米迦勒, 玛窦 vs 馬太, 厄里亚 vs 以利亞, 安德肋 vs 安得烈. Neither is an error; Catholic is the
+right register for what these buildings are. Written into the module because it WAS a silent choice,
+and because the next audit will otherwise "find" all of them again as defects.
+
+ja output unchanged at 3,333 — the three corrections change strings, not counts. 655 tests.
+
 ## 2026-09-18 — "Falls back to Italian" was hiding 14,000 items, and French was the proof
 
 The P17 rule-selection landed and the first full run with it exposed the thing the design had been

@@ -1,0 +1,102 @@
+term	qid	wd_en	desc	mine_ja	wd_ja	mine_zh	wd_zh	differs
+All Saints	Q165386	All Saints	British girl group	諸聖人	オール・セインツ	诸圣	聖女合唱團	ja,zh,ko
+Saint Andrew	Q43399	Andrew the Apostle	religious figure of the Christian 	アンデレ	アンデレ	安德肋	安得烈	zh,ko
+Saint Anne	Q164294	Saint Anne	mother of Virgin Mary in Christian	アンナ	アンナ	亚纳	聖安妮	zh
+Saint Anthony	Q170547	Anthony the Great	Egyptian Christian monk, hermit, a	アントニオ	大アントニオス	安多尼	聖安東尼	ja,zh,ko
+Saint Barbara	Q192816	Saint Barbara	early Christian saint and martyr, 	バルバラ	バルバラ	巴尔巴拉	白芭蕾	zh
+Saint Boniface	Q160445	Saint Boniface	8th‑century Anglo‑Saxon bishop and	ボニファティウス	聖ボニファティウス	波尼法爵	圣波尼法爵	ja,zh
+Saint Catherine	Q179718	Catherine of Alexandria	Egyptian missionary, saint depicte	カタリナ	アレクサンドリアのカタリナ	加大肋纳	亚历山大的加大肋纳	ja,zh,ko
+Saint Christ	Q1218032	Saint-Christ-Briost	Commune in Somme, France	キリスト		基督	圣克里斯特-布里约斯特	zh
+Saint Christopher	Q193507	Saint Christopher	saint in the Catholic and Orthodox	クリストフォロス	クリストフォロス	圣基道	聖克里斯多福	zh,ko
+Corpus Christi	Q49242	Corpus Christi	city and county seat of Nueces Cou	聖体	コーパス・クリスティ	基督圣体	科珀斯克里斯蒂	ja,zh,ko
+Saint Demetrius	Q106772315	Saint Demetrius	painting by Dimitar Simon	デメトリオス		德米特里		
+Saint Elijah	Q133507	Elijah	Biblical prophet	エリヤ	エリヤ	厄里亚	以利亞	zh
+Saint Francis	Q676555	Francis of Assisi	Italian Catholic saint, friar, dea	フランチェスコ	アッシジのフランチェスコ	方济各	亞西西的方濟各	ja,zh,ko
+Saint George	Q48438	Saint George	Christian saint and martyr (died 3	ゲオルギオス	ゲオルギオス	乔治	圣乔治	zh,ko
+Saint Isidore	Q3462458	Saint-Isidore	municipality in Chaudière-Appalach	イシドロ		依西多禄		
+Saint James	Q28723548	Saint-James	commune in Manche, France	ヤコブ	サン＝ジェームズ	雅各	圣雅姆	ja,zh
+Saint John	Q2082	St. John's	capital and largest city of the pr	ヨハネ	セイント・ジョンズ	约翰	聖約翰斯	ja,zh,ko
+Saint John the Baptist	Q40662	John the Baptist	1st-century Jewish itinerant preac	洗礼者ヨハネ	洗礼者ヨハネ	施洗约翰	施洗約翰	zh
+Saint Joseph	Q918737	Saint-Joseph	commune in Martinique, France	ヨセフ		若瑟	圣约瑟夫	zh
+Saint Lawrence	Q509090	Saint Lawrence	parish of Jersey in the Channel Is	ラウレンティウス		老楞佐		
+Saint Mamas	Q532019	Mammes of Caesarea	semi-legendary child-martyr	マメス	聖ママス	玛默德	凱撒利亞的馬梅斯	ja,zh
+Saint Marina	Q24039028	Saint Marina	painting by Francisco de Zurbarán	マリナ		玛丽娜		
+Saint Martin	Q126125	Saint-Martin	French overseas collectivity, part	マルティヌス	サン・マルタン	玛尔定	法屬聖馬丁	ja,zh,ko
+Saint Mary	Q345	Mary	mother of Jesus Christ	マリア	聖母マリア	玛利亚	圣母玛利亚	ja,zh
+Saint Matthew	Q43600	Matthew the Apostle	Christian evangelist and apostle (	マタイ	マタイ	玛窦	馬太	zh
+Saint Maurice	Q274327	Saint-Maurice	commune in Val-de-Marne, France	マウリティウス	サン＝モーリス	毛里丘	圣莫里斯	ja,zh,ko
+Saint Michael	Q45581	Michael	archangel in Jewish, Christian, an	ミカエル	ミカエル	弥额尔	米迦勒	zh
+Saint Nicholas	Q44269	Saint Nicholas	4th-century Christian bishop and s	ニコラオス	ミラのニコラオス	尼古拉	圣尼古拉	ja,zh,ko
+Our Lady	Q345	Mary	mother of Jesus Christ	聖母	聖母マリア	圣母	圣母玛利亚	ja,zh,ko
+Our Lady Help of Christians	Q1895556	Mary Help of Christians	title of the Virgin Mary	キリスト信者の扶助者聖母	扶助者聖マリア	进教之佑	圣母进教之佑瞻礼	ja,zh
+Our Lady Joy of All Who Sorrow	-	NO MATCH						
+Our Lady Queen of Heaven	Q26521357	Our Lady Queen of Heaven	Catholic church in Bayswater, Lond	天の元后		天上元后		
+Our Lady Queen of Poland	Q11745453	Our Lady Queen of Poland church in Świebodzin	church building in Świebodzin, Pol	ポーランドの元后聖母		波兰之后圣母		
+Our Lady Star of the Sea	Q1186717	Our Lady, Star of the Sea	invocation of Mary, Mother of Jesu	海の星の聖母	うみのほしのせいぼ	海星圣母	海星聖母	ja,zh,ko
+Our Lady of Consolation	Q2457205	Our Lady of Consolation	Roman Catholic title of the Virgin	慰めの聖母		安慰之母		
+Our Lady of Częstochowa	Q573619	Black Madonna of Częstochowa	icon of the Virgin Mary in Poland	チェンストホヴァの聖母	ヤスナ・グラの聖母	琴斯托霍瓦圣母	琴斯托霍瓦的黑色聖母	ja,zh,ko
+Our Lady of Fátima	Q719524	Our Lady of Fátima	title for the Virgin Mary due to h	ファティマの聖母	ファティマの聖母	法蒂玛圣母	花地瑪聖母	zh
+Our Lady of Good Help	Q137802787	Our Lady of Good Help	Catholic church building in Liverp	善き助けの聖母		善佑圣母		
+Our Lady of Grace	Q1636804	Our Lady of Graces	title of the Virgin Mary	恩寵の聖母		宠爱圣母		
+Our Lady of Guadalupe	Q31877	Our Lady of Guadalupe	title of the Virgin Mary as she ap	グアダルーペの聖母	グアダルーペの聖母	瓜达卢佩圣母	瓜達盧佩聖母	zh
+Our Lady of Guidance	Q18216847	Our Lady of Guidance	16th-century Roman Catholic image 	導きの聖母		引导圣母		
+Our Lady of Kazan	Q540173	Our Lady of Kazan	holy icon of the Virgin Mary in Ka	カザンの生神女	カザンの生神女	喀山圣母	喀山圣母像	zh
+Our Lady of Light	Q240236	Our Lady of Zeitoun	Marian apparition that occurred in	光の聖母	our lady of cairo	光明圣母		ja
+Our Lady of Loreto	Q9094350	Our Lady of Loreto	title of Virgin Mary	ロレートの聖母		罗雷托圣母		
+Our Lady of Lourdes	Q21532387	Our Lady of Lourdes	Title of Mary, mother of Jesus, re	ルルドの聖母	ルルドの聖母	露德圣母	无染原罪者	zh
+Our Lady of Mercy	Q176813	Virgin of Mercy	depiction of the Virgin Mary shelt	メルセーの聖母	慈悲の聖母	赎虏圣母	慈悲聖母	ja,zh
+Our Lady of Miracles	Q19863175	Our Lady of Miracles	sicilian patron saint	奇跡の聖母		显灵圣母		
+Our Lady of Mount Carmel	Q1065053	Our Lady of Mount Carmel	title of the Virgin Mary	カルメル山の聖母	イエスの母マリア	加尔默罗圣母	加爾默羅山聖母	ja,zh,ko
+Our Lady of Perpetual Help	Q178754	Our Lady of Perpetual Help	title for the Virgin Mary and a 15	永遠の助けの聖母	絶えざる御助けの聖母	永援圣母	永援聖母	ja,zh
+Our Lady of Pity	Q133250793	Reservoir Church		憐れみの聖母		怜悯圣母		
+Our Lady of Remedies	Q28804196	Our Lady of Remedies	Patroness of Valencia de Alcantara	救いの聖母		济助圣母		
+Our Lady of Smolensk	Q1998132	Our Lady of Smolensk	medieval Byzantine icon depicting 	スモレンスクの生神女		斯摩棱斯克圣母		
+Our Lady of Sorrows	Q1196075	Our Lady of Sorrows	title of Mary, mother of Jesus	悲しみの聖母	悲しみの聖母	痛苦圣母	痛苦聖母	zh,ko
+Our Lady of Vladimir	Q546241	Theotokos of Vladimir	medieval Byzantine icon	ウラジーミルの生神女	ウラジーミルの生神女	弗拉基米尔圣母	弗拉迪米爾的聖母像	zh
+Our Lady of the Angels	Q3949145	Virgin of the Angels	title of Virgin Mary	天使の聖母	処女天使	天神之后圣母		ja
+Our Lady of the Rosary	Q54875	Our Lady of the Rosary	title of the Blessed Virgin Mary i	ロザリオの聖母	聖マリーア・デル・ロザーリオ	玫瑰圣母	玫瑰聖母	ja,zh
+Our Lady of the Scapular	Q11745268	Our Lady of the Scapular church in Żary	church building in Żary, Poland	スカプラリオの聖母		圣衣圣母		
+Our Lady of the Sign	Q597232	Our Lady of the Sign	style of icon	しるしの生神女		神视圣母	徵兆之母	zh
+Our Lady of the Snows	Q263827	Our Lady of the Snows	feast day in the General Roman Cal	雪の聖母	雪の聖母	雪地圣母		ko
+Saint Paraskeva	Q46973192	Saint Paraskeva	painting by Moscow School	パラスケヴィ		帕拉斯克娃		
+Saint Paul	Q316887	Saint-Paul	commune in La Réunion, France	パウロ	サン＝ポール	保罗	圣保罗	ja,zh,ko
+Peace	Q7157305	Peace	family name	平和		和平	皮斯	zh
+Saint Peregrine	Q141838	Peregrine Laziosi	Italian saint of the Servite Order	ペレグリヌス		培肋格利诺		
+Saint Peter	Q33923	Saint Peter	apostle of Jesus Christ	ペトロ	ペトロ	彼得	彼得	
+Saint Pius	Q43739	Pius X	Pope of the Catholic Church from 1	ピオ	ピウス10世	碧岳	庇護十世	ja,zh,ko
+Saint Roch	Q961984	Saint-Roch	commune in Indre-et-Loire, France	ロクス		圣罗格	圣罗克	zh
+Saint Anthony the Abbot	Q3948786	Saint Anthony Abbot Tempted by a Heap of Gold	painting by the Master of the Osse	大アントニオ	荒野の聖アントニウス	圣安当	圣安东尼院长在旷野中	ja,zh,ko
+Saint Stanislaus	Q203437	Stanislaus Kostka	Polish Jesuit, saint, secondary pa	スタニスラウス	スタニスラス・コストカ	斯坦尼斯劳		ja
+Saint Stephen	Q161775	Saint Stephen	Deacon, martyr, and saint	ステファノ	ステファノ	斯德望	聖斯德望	zh
+Saint Terentian	-	NO MATCH						
+Saint Teresa	Q174880	Teresa of Ávila	Roman Catholic saint (1515-1582)	テレサ	アビラのテレサ	德肋撒	阿维拉的德兰	ja,zh,ko
+Saint Thomas	Q463937	Saint Thomas	one of the main islands of the Uni	トマス	セント・トーマス島	多默	聖托馬斯島	ja,zh,ko
+Saint Vincent	Q35436	Saint-Vincent	Italian municipality in the Aosta 	ウィンケンティウス	サン＝ヴァンサン	文生	圣樊尚	ja,zh
+the Annunciation	Q154326	Annunciation	announcement of the birth of Jesus	受胎告知	受胎告知	圣母领报	圣母领报	ko
+the Archangel	Q45581	Michael	archangel in Jewish, Christian, an	大天使	ミカエル	总领天使	米迦勒	ja,zh,ko
+the Ascension	Q96759287	The Ascension	album by Sufjan Stevens	主の昇天		耶稣升天		
+the Assumption	Q162691	Assumption of Mary	the bodily taking up of the Virgin	聖母被昇天	聖母の被昇天	圣母升天	圣母蒙召升天	ja,zh
+the Assumption	Q162691	Assumption of Mary	the bodily taking up of the Virgin	被昇天	聖母の被昇天	升天	圣母蒙召升天	ja,zh,ko
+the Dormition	Q116916223	The Dormition	painting by Abraham Matthijs	生神女就寝		圣母安息		
+the Entry of the Theotokos	-	NO MATCH						
+the Epiphany	Q2276130	The Epiphany	Triptych by Hieronymus Bosch	主の公現	東方三博士の礼拝の三連祭壇画 (ボス)	主显节		ja
+the Exaltation of the Holy Cross	-	NO MATCH						
+the Holy Cross	Q105104231	The Holy Cross	church in Airedale, West Yorkshire	聖十字架		圣十字		
+the Holy Innocents	Q1630061	The Holy Innocents	1984 film by Mario Camus	幼子殉教者	無垢なる聖者	诸圣婴孩	天真聖人	ja,zh
+the Holy Spirit	Q139680635	The Holy Spirit	painting by Corrado Giaquinto	聖霊		圣神		
+the Holy Trinity	Q6553555	The Holy Trinity	painting by El Greco	至聖三者	聖三位一体 (エル・グレコ)	圣三一	三位一體	ja,zh
+the Immaculate Conception	Q140667408	The Immaculate Conception	painting by Agostino Carracci	無原罪の御宿り		圣母无染原罪		
+the Immaculate Heart of Mary	Q137884092	The Immaculate Heart of Mary	Catholic church building in Tidesw	聖母の汚れなき御心		圣母无玷圣心		
+the Most Precious Blood	Q137841909	St Edmund's Church	catholic church in Edmonton, Enfie	尊き御血		宝血		
+the Nativity	Q51628	Nativity of Jesus	birth of Jesus	降誕	キリストの降誕	圣诞	耶穌降生	ja,zh,ko
+the Nativity of the Lord	-	NO MATCH						
+the Nativity of the Theotokos	-	NO MATCH						
+the Presentation	Q114487233	The Presentation	episode of Hangin' with Mr. Cooper	奉献		献堂		
+the Protection of the Theotokos	-	NO MATCH						
+the Resurrection	Q106923112	The Resurrection	music by Alex Brachet	復活		复活		
+the Rosary	Q64225601	The Rosary	1922 film directed by Jerome Storm	ロザリオ		玫瑰经		
+the Sacred Heart	Q137884480	The Sacred Heart	Catholic church building in Wadhur	イエスの聖心		耶稣圣心		
+the Saviour	Q302	Jesus Christ	central figure of Christianity (c.	救世主	イエス・キリスト	救主	耶稣	ja,zh,ko
+the Theotokos	Q125759304	THE THEOTOKOS IN SIXTH-CENTURY CONSTANTINOPLE	scientific article published in 19	生神女		圣母		
+the Transfiguration	Q2344437	Transfiguration	painting by Raphael	主の変容	キリストの変容	主显圣容	基督變容	ja,zh
+the Visitation	Q21806457	The Visitation	painting by Master MS	聖母訪問		圣母访亲		
