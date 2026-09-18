@@ -9,33 +9,15 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **Miraheze/Fandom: FORMALLY ABANDONED 2026-09-17, machinery still running.**
-  Emma: *"we are formally abandoning it but our abandonment means the machinery is still here and
-  still indefinitely tries to run."* So nothing was switched off — the syncs, the daily 403 probe
-  and the wiki-bound queue categories keep trying indefinitely, and would resume on their own if
-  Cloudflare ever stopped challenging the runners. 2,281 wiki-bound files sit in the repo meanwhile.
-  **It is not pending work and not a blocker; do not report it as one.** Background on the
-  Cloudflare diagnosis is in `DEVLOG.md` (2026-09-12).
-
-- [ ] WDQS transports: adopters **63**; the rest ride each file's next real change.
-  Seven defect classes were found and closed 2026-09-16/17 (dead-429, no-retry, CSV, sub-floor
-  pacing, catch-and-exit, HTTPError-only, and three callers RETRYING a 429). Full accounts are in
-  `DEVLOG.md` — they are finished work and do not belong here.
-
-  What is still OPEN, and only this:
-  - ⛔ **Do not batch the remainder.** 26 hand-rolled transport functions are left and **18 are clean
-    on all four properties** (retry loop, 429 bails, truncated body retried, pace ≥ 2.5s), audited by
-    AST 2026-09-16. There is no named defect left to fix.
-  - ⛔ **Migration is NOT uniformly an upgrade — three proven mechanisms**, not a general warning:
-    a stronger hand-rolled backoff (`generate_modern_shrine_ranking_qualifiers`: 450s vs the shared
-    195s, so it STAYS); `strict=False` parsing; and a caller pacing itself above the 2.5s floor.
-    `query()` takes `timeout` and `throttle` for the last two; `max(throttle, WDQS_THROTTLE)` means
-    no caller can ask to be faster than the floor.
-  - ⛔ **DO NOT PUT A NUMBER ON HOW MANY ARE FRAGILE from a regex.** Seven wrong answers so far from
-    pattern-matching this population — the last three were checks I wrote myself in one night. Parse
-    with `ast`, and read one flagged file before reporting anything.
-  - `generate_description_fixes.py` stays off the shared module (its sibling imports it); it carries
-    the policy rather than sharing it.
+- [ ] `category_translation` is wiki-bound and is being treated as Wikidata-bound.
+  Its RAG answers land in `category_moves.csv`, whose ONLY consumer is `move_categories.py` —
+  lockout-gated, and it performs wiki page moves. The wiki is formally abandoned, so **328
+  work-files, 18% of the drainer's queue, are picks that cannot land.** Emma's 2026-09-15 rule
+  (*"forget about them"*) already covers this; `tests/test_remote_queue_skips_dead_wikis.py` lists
+  it under `WIKIDATA_BOUND` because it *"writes rows to category_moves.csv"*, and a CSV row is not
+  a Wikidata edit.
+  - Needs Emma's word first: dropping it frees 18% of the daily picks for label/kana work, but
+    stops accumulating answers that would be ready if the wiki ever returns.
 
 - **Pinned tail (keep last)**
 

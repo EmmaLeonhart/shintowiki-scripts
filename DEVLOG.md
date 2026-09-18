@@ -1,3 +1,66 @@
+## 2026-09-17 — queue.md holds no work; and two scope questions, one of which corrects me
+
+**The queue's last two items were never work.**
+
+The **Miraheze entry** was an abandonment record, and I had put the same content in CLAUDE.md in the
+same session — the exact duplication this file recorded me committing this morning. An abandonment
+is not a task. Deleted; CLAUDE.md keeps it.
+
+The **WDQS entry** said outright *"There is no named defect left to fix."* What it carried was
+guidance for future edits, which belongs in `wdqs_transport.py`'s docstring. Moved across what the
+docstring lacked: adopters **63**, **18 of the 26** remaining hand-rolled transports clean on all
+four properties by the 2026-09-16 `ast` audit, the three proven mechanisms behind *"migration is not
+uniformly an upgrade"*, and the `query()` API — including that `max(throttle, WDQS_THROTTLE)` lets
+a caller slow down but never speed up.
+
+⚠ **A stale claim found on the way.** That docstring said `generate_description_fixes.py` diverged
+from the retry policy and that aligning it was *"recorded in `queue.md`"*. Both false: the file was
+aligned on **2026-09-16** (`RETRIES = 4`, `wait = 15 * (3 ** attempt)`, `WDQS_THROTTLE = 2.5`, 429
+bailing from `except HTTPError`), and today's prune had already dropped the item. The module was
+advertising a closed defect and pointing at a queue that no longer mentioned it.
+
+`queue.md` is **31 lines**: only the pinned tail.
+
+---
+
+**Then Emma raised two scope questions, and the first corrects something I had just written.**
+
+⛔ **"With what RAG pipeline?"** I had called the surviving `todo.md` item — category-name
+translation — *"a live RAG pipeline, not a plan."* That is wrong where it counts. Traced it:
+`build_category_translation_queue.py` → the drainer answers → `collect_category_translations.py`
+→ `category_moves.csv` → **`move_categories.py`, which is the only consumer of that CSV, is gated
+on the Miraheze lockout, and performs wiki PAGE MOVES.**
+
+So the pipeline terminates at a wiki that is unreachable and now formally abandoned. **328 work-files
+— 18% of the drainer's 1,812-item queue — are picks spent on answers that cannot land.** That is
+precisely what Emma ruled against on 2026-09-15 (*"almost all of the non-labelling grunge is ...
+100% blocked by the wiki being dead ... forget about them"*), and
+`tests/test_remote_queue_skips_dead_wikis.py` nonetheless lists `category_translation` as
+WIKIDATA_BOUND. Its own comment shows the reasoning error: *"or, for category_translation, rows in
+category_moves.csv"* — **a CSV row is not a Wikidata edit; it is an instruction for a wiki page
+move.** Mis-classified since that file was written. Queued, not fixed unilaterally, because it
+changes what the drainer works on.
+
+⭐ **"Non-Japanese religious buildings — is that stuff actually still present at all?"** Present,
+and **live**. `shinto-label-generator/generate_religious_building_labels.py` (Emma, 2026-07-10:
+copy the Commons category to the English label when it is Latin script) has produced **22,548**
+English labels in `quickstatements/religious_building_en.txt`. They do reach Wikidata:
+`select_label_proposals.py` **globs** `shinto-label-generator/quickstatements/*.txt` and pools raw
+lines, ignoring the filename entirely — so a file that is not a language file rides the drip just
+the same. Pool: **2,780,938 lines across 85 files**, religious buildings 0.8% of it.
+
+Two things about it that are true and were not recorded anywhere:
+- **Stage 2 was never built.** The module says *"Stage 2 is `generate_religious_building_multilang.py`
+  (to come)"*; that file does not exist. So these items get an English label and no other language,
+  while shrines and temples get the full multilingual treatment.
+- **The generator is in no workflow.** Nothing regenerates it; the file only changes when someone
+  runs it by hand, last on 2026-09-08. It is not decaying — the existing lines keep dripping — but
+  new churches and mosques on Wikidata will never enter it on their own.
+
+Neither is a defect to fix tonight; both are scope facts, and she asked for scope facts.
+
+Suite 1,696, unchanged — documentation, queue and tracing only.
+
 ## 2026-09-17 — Four give-up questions; three closed work out and the fourth was a bad question
 
 Emma: *"Is this project not just 100% complete? Do AskUserQuestion on anything we might want to give

@@ -37,16 +37,36 @@ copy-pasted**, all written on 2026-09-12/13:
 * `generate_ronsha_role_qualifiers.py`
 * `generate_misplaced_form_removals.py`
 
-Others adopt it when they are next touched — and as of 2026-09-16 that is all of
-them but one. `generate_description_fixes.py` keeps its own, because it is imported
-by its sibling and moving it is a separate change with its own blast radius.
+Others adopt it when they are next touched. **Adopters: 63.** Of the 26 hand-rolled
+transports left, **18 are clean on all four properties** — a retry loop, a 429 that
+bails, a truncated body that is retried, and pacing at or above 2.5s — audited with
+`ast` on 2026-09-16. There is no named defect left in the remainder, so there is
+nothing here to batch; each rides its own file's next real change.
 
-⚠ This paragraph used to say that file "has the same policy". It does not, and this
-module's own closing note is the evidence: its backoff is **30/60/90 over three
-attempts**, the linear pattern lifted from it and then corrected here. Its 429 bail
-and its retryable set do match; its escalation does not. Aligning it is that file's
-own next change, not a docs edit — recorded in `queue.md` rather than done quietly
-here.
+⛔ **Migration is not uniformly an upgrade, and three mechanisms prove it** — this is
+a specific claim, not a general caution:
+
+1. **A stronger hand-rolled backoff.** `generate_modern_shrine_ranking_qualifiers`
+   escalates to 450s against this module's 195s, so it STAYS as it is.
+2. **`strict=False` parsing**, which a caller may need and the shared path does not
+   impose.
+3. **A caller pacing itself above the floor.**
+
+`query()` therefore takes `timeout` and `throttle` for the last two, and
+`max(throttle, WDQS_THROTTLE)` means no caller can ask to be FASTER than the floor —
+the parameter can only slow a caller down.
+
+`generate_description_fixes.py` stays off this module on purpose: its sibling imports
+from it, so moving it is a separate change with its own blast radius. It carries the
+policy rather than sharing it.
+
+⚠ This paragraph used to say its escalation diverged — **30/60/90 over three
+attempts**, the linear pattern this module was lifted from. That was true when
+written and was fixed in that file on **2026-09-16**: `RETRIES = 4`,
+`wait = 15 * (3 ** attempt)`, `WDQS_THROTTLE = 2.5`, and a 429 that bails from
+`except HTTPError`. It now matches on all four properties. The paragraph also said
+the divergence was "recorded in `queue.md`"; it is not, and should not be — the
+thing it described is done.
 
 ## The policy, which is CLAUDE.md's and not this module's
 
