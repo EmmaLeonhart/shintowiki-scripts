@@ -1,3 +1,40 @@
+## 2026-09-18 — The label targets are completely bare, which settles the description question
+
+`docs/description_label_policy.md` makes this load-bearing: the constraint is on the **(label,
+description) PAIR**, and a description on an item with **no label** in that language is actively
+harmful because it costs a label. My pipeline emits labels only, so what these items already carry
+decides whether that policy is in play at all.
+
+**Measured on 400 of the 3,879 distinct items, 861 language-slots: 100% "neither".** Not one
+sampled item has a label OR a description in ja, zh or ko.
+
+| | slots |
+|---|---|
+| ja: neither | 341 |
+| zh: neither | 373 |
+| ko: neither | 147 |
+| anything else | **0** |
+
+⚠ **Controlled before believing it**, same as the collision check — a uniform result from a
+filtered API call is indistinguishable from a filter that drops everything. The identical call
+shape on `Q4176` / `Q48435` / `Q157229` returns labels and descriptions where they exist, and
+correctly shows Q157229 with labels and no descriptions. The 100% is real.
+
+**What it settles:**
+
+- **The policy's harmful case does not arise here.** There are no orphan descriptions for these
+  labels to rescue, and equally none to be made harmful by.
+- **Nothing is being overwritten.** Every label lands on an empty slot.
+- **The residual risk is the empty-description collision**: two items sharing a label and both
+  having no description collide on the pair. That is covered by the same thing as everything else
+  — the mandatory place prefix, 0 duplicates internally and 0 of 250 against live Wikidata.
+
+The reason is unsurprising in hindsight: the source population was selected as items with **no
+English label** that have a Commons category. Obscure European parish churches are bare in every
+language, which is why they were candidates in the first place.
+
+Nothing changed in the repo beyond the queue and this entry.
+
 ## 2026-09-18 — Do the emitted labels collide with labels already ON Wikidata?
 
 Uniqueness had only ever been checked **inside** my own files. That proves nothing about the
