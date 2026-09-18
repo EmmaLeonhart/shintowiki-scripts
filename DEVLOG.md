@@ -1,3 +1,42 @@
+## 2026-09-18 — Auditing what the labels THREW AWAY, instead of waiting to trip over it
+
+Two defects of the same class had turned up by accident (`santissima` swallowing the Trinità;
+longest-string beating the feast). Both were invisible in the counters. So rather than wait for a
+third, I measured the thing directly: **for each emitted label, what is left of the source after
+removing the type words, stopwords, saint markers and whatever matched?** That residue is what was
+discarded.
+
+⚠ **The audit's own first answer was wrong**, and it is the same mistake in miniature. It reported
+36% of lines dropping something, with `christuskirche` (75), `marienkapelle`, `johanneskirche` at
+the top — but the generator *does* strip those compounds to `christus`/`marien` and renders them
+correctly. The audit checked the unstripped token. Corrected: **29.2%**.
+
+**What was genuinely being lost**, each rendering as something less specific:
+
+| dropped | count | was rendering as |
+|---|---|---|
+| `täufer` | 29 | 聖ヨハネ — "St. Johannes der **Täufer**" is John the BAPTIST |
+| `grazie` | 25 | plain 聖母 |
+| `neve` | 19 | plain 聖母 — Our Lady of the Snows |
+| `rosary` | 13 | plain 聖母 — the Romance `rosario` was in, the English form was not |
+| `addolorata` | 12 | plain 聖母 |
+| `königin` | 9 | plain 聖母 |
+| `loreto` | 8 | plain 聖母 |
+
+**And one systemic cause behind several:** the table listed `fátima` and `asunción` but the corpus
+also spells them `Fatima` and `Asuncion`. Listing every accented variant across five source
+languages is a losing game, so matching now folds accents on both sides — output keeps them,
+only the comparison is folded.
+
+**After the fix the residue is benign.** The most-dropped tokens are now `madonna`, `vergine`,
+`beata`, `señora`, `theotokos` — the Marian *carrier*, correctly subsumed by the more specific feast
+that matched. "Madonna della Neve" renders 雪の聖母, and 聖母 is already in it.
+
+Output **7,712 -> 7,989** (ja 3,071 · zh 3,606 · ko 1,312), zero duplicate labels, zero duplicate
+QIDs, still in `paused/`. Tests 38 -> 50 in the stage-2 file, 274 in the tree; each dropped devotion
+is pinned against the label that exposed it, plus that folding never reaches the output and that a
+carrier alone still resolves.
+
 ## 2026-09-17 — The dedication lookup preferred the LONGEST phrase, and lost the feast
 
 Auditing my own tables for another instance of the `santissima` defect found one, systematic, and

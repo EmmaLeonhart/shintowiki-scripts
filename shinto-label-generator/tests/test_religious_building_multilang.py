@@ -222,3 +222,51 @@ def test_a_bare_modifier_is_never_a_dedication():
             f"matches before the thing it qualifies"
         )
     assert m.render("Chiesa Santissima", "Q16970", "ja", place="X") is None
+
+
+# --------------------------------------------------------------------------
+# Accent folding, and the devotions the drop-audit found
+# --------------------------------------------------------------------------
+
+@pytest.mark.parametrize("label,expect", [
+    # Accented and unaccented must behave identically. The table listed "fátima"
+    # and "asunción" only, so the plain-ASCII spellings in the corpus missed.
+    ("Our Lady of Fatima church", "ファティマの聖母"),
+    ("Our Lady of Fátima church", "ファティマの聖母"),
+    ("Nuestra Senora de la Asuncion", "聖母被昇天"),
+    ("Nuestra Señora de la Asunción", "聖母被昇天"),
+])
+def test_accents_do_not_change_the_match(label, expect):
+    got = m.render(label, "Q16970", "ja", place="X")
+    assert got == "Xの" + expect + "教会", got
+
+
+def test_folding_is_for_matching_only():
+    """Output keeps its accents; only the comparison is folded."""
+    assert m._fold("Asunción") == "Asuncion"
+    assert m.render("Madonna di Loreto", "Q16970", "ja",
+                    place="レーデン").startswith("レーデンの")
+
+
+@pytest.mark.parametrize("label,expect", [
+    # Each of these was silently dropped while a less specific dedication
+    # rendered in its place -- found by auditing the emitted labels against
+    # their sources, not by reading the tables.
+    ("St. Johannes der Täufer", "洗礼者ヨハネ"),   # was plain 聖ヨハネ
+    ("Beata Vergine delle Grazie", "恩寵の聖母"),
+    ("Madonna della Neve", "雪の聖母"),
+    ("Beata Vergine Addolorata", "悲しみの聖母"),
+    ("Madonna di Loreto", "ロレートの聖母"),
+    ("Our Lady of the Rosary church", "ロザリオの聖母"),
+    ("Maria Königin", "天の元后"),
+])
+def test_a_devotion_is_not_lost_to_its_carrier(label, expect):
+    got = m.render(label, "Q16970", "ja", place="X")
+    assert got == "Xの" + expect + "教会", got
+
+
+def test_the_carrier_alone_still_resolves():
+    """Removing a devotion's carrier from the answer must not break the case
+    where the carrier is all there is."""
+    assert m.render("Madonna", "Q16970", "ja", place="X") == "Xの聖母教会"
+    assert m.render("Beata Vergine", "Q16970", "ja", place="X") == "Xの聖母教会"

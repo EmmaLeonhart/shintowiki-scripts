@@ -332,6 +332,22 @@ DEDICATIONS = {
     "esaltazione della santa croce": {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
     "esaltazione della croce": {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
     "kreuzerhöhung":    {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+    # --- found by auditing what the emitted labels DROPPED, 2026-09-17 ---
+    # Each of these was being silently discarded while a less specific
+    # dedication rendered in its place.
+    "täufer":           {"ja": "洗礼者ヨハネ", "zh": "施洗约翰", "ko": "세례자 요한"},
+    "grazie":           {"ja": "恩寵の聖母", "zh": "宠爱圣母", "ko": "은총의 성모"},
+    "gracia":           {"ja": "恩寵の聖母", "zh": "宠爱圣母", "ko": "은총의 성모"},
+    "neve":             {"ja": "雪の聖母", "zh": "雪地圣母", "ko": "눈의 성모"},
+    "nieves":           {"ja": "雪の聖母", "zh": "雪地圣母", "ko": "눈의 성모"},
+    "snows":            {"ja": "雪の聖母", "zh": "雪地圣母", "ko": "눈의 성모"},
+    "addolorata":       {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
+    "loreto":           {"ja": "ロレートの聖母", "zh": "罗雷托圣母", "ko": "로레토의 성모"},
+    "rosary":           {"ja": "ロザリオの聖母", "zh": "玫瑰圣母", "ko": "로사리오의 성모"},
+    "königin":          {"ja": "天の元后", "zh": "天上元后", "ko": "천상 모후"},
+    "reina":            {"ja": "天の元后", "zh": "天上元后", "ko": "천상 모후"},
+    "concezione":       {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
+    "conception":       {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
 }
 
 # A feast or event names WHICH dedication; a Marian title alone only names who it
@@ -358,6 +374,9 @@ SPECIFIC_DEDICATIONS = {
     "guadalupe", "lourdes", "fátima",
     "exaltation of the holy cross", "esaltazione della santa croce",
     "esaltazione della croce", "kreuzerhöhung",
+    # devotions the audit found being dropped
+    "täufer", "grazie", "gracia", "neve", "nieves", "snows", "addolorata",
+    "loreto", "rosary", "königin", "reina", "concezione", "conception",
 }
 
 # Generic titles — checked only after every feast has had its chance.
@@ -447,12 +466,34 @@ def parse_name(label):
 _PLACE_JOIN = {"ja": "の", "zh": "", "ko": "의 "}
 
 
+def _fold(text):
+    """Accent-folded for matching only — never for output."""
+    return "".join(c for c in unicodedata.normalize("NFD", text)
+                   if not unicodedata.combining(c))
+
+
+_FOLDED = {}
+
+
+def _folded_group(group):
+    """Phrase-set folded once, cached: {folded: original}."""
+    key = id(group)
+    if key not in _FOLDED or len(_FOLDED[key]) != len(group):
+        _FOLDED[key] = {_fold(p): p for p in group}
+    return _FOLDED[key]
+
+
 def dedication(label, lang):
     """The dedication rendered in `lang`, or None if any part is unknown."""
     # Hyphens joined the phrase in the corpus ("Notre-Dame", "Herz-Jesu"), so the
     # phrase lookup saw "notre-dame" and missed. 111 labels turned on this alone.
     low = re.sub(r"[-–—']", " ", _norm(label))
     low = re.sub(r"\s+", " ", low)
+    # ...and accents. The corpus spans five source languages and the same feast
+    # appears as "Fátima"/"Fatima", "Asunción"/"Asuncion", "Natività"/"Nativita".
+    # Listing every accented variant is a losing game, so both sides of the
+    # comparison are folded instead.
+    low = _fold(low)
     # ⛔ Priority, NOT string length. Sorting by length let "beata vergine" (13)
     # beat "visitation" (10) on `Visitazione della Beata Vergine`, and
     # "nuestra señora" beat "assumption" on `Nuestra Señora de la Asunción` --
@@ -461,9 +502,10 @@ def dedication(label, lang):
     # so SPECIFIC is checked first and only then the generic titles; within each
     # group, longest first so "sacred heart" still beats a bare "heart".
     for group in (SPECIFIC_DEDICATIONS, GENERIC_DEDICATIONS):
-        for phrase in sorted(group, key=len, reverse=True):
+        folded = _folded_group(group)
+        for phrase in sorted(folded, key=len, reverse=True):
             if phrase in low:
-                return DEDICATIONS[phrase][lang]
+                return DEDICATIONS[folded[phrase]][lang]
     tokens, saw_saint = parse_name(label)
     if not tokens:
         return None
