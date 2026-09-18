@@ -1,3 +1,36 @@
+## 2026-09-18 — Do the emitted labels collide with labels already ON Wikidata?
+
+Uniqueness had only ever been checked **inside** my own files. That proves nothing about the
+constraint that actually matters: Wikidata rejects a second item with the same (label, description)
+pair in a language, so a ja label identical to one already on a different item is the real
+pre-submission risk.
+
+**Sampled 250 of the 8,323 emitted labels: zero collisions.**
+
+⚠ **A null from a search API means nothing without a control**, and after three wrong "unverifiable"
+claims today I ran one before believing it. Searching for labels known to exist:
+
+    ケルン大聖堂          ja  exact=1  Q4176
+    聖母教会             ja  exact=5  Q917183, Q157229, ...
+    サグラダ・ファミリア    ja  exact=1  Q48435
+    科隆主教座堂          zh  exact=1  Q4176
+    쾰른 대성당           ko  exact=1  Q4176
+
+The search finds exact matches, across all three languages, including multi-item ones. The method
+works, so the zero is a real zero.
+
+⭐ **And the control incidentally proved the anti-collision rule against live data.** Bare 聖母教会
+is already carried by **five separate items** on Wikidata. That is precisely the string this
+pipeline produced 515 times before the place became mandatory. The rule was derived from my own
+output; it turns out to be true of the wider corpus as well.
+
+⚠ **What the number does and does not say.** 0 of 250 puts the true collision rate under roughly
+1.2% at 95% confidence — so up to ~100 of the 8,323 could still collide. It is not a proof of
+zero, and the reason the rate is low is structural: every emitted label begins with a place name,
+which makes it specific enough that a pre-existing duplicate is unlikely.
+
+Nothing changed in the repo beyond the queue and this entry.
+
 ## 2026-09-18 — The ko column, and the third time I declared something unverifiable without looking
 
 I reported ko as the one part of the tables the audit could not reach, because *"Wikidata's ko
