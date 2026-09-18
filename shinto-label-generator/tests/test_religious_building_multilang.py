@@ -345,3 +345,47 @@ def test_the_immaculate_conception_is_not_the_immaculate_heart():
     heart = m.render("Immaculate Heart of Mary", "Q16970", "ja", place="X")
     assert conception != heart
     assert conception == "Xの無原罪の御宿り教会"
+
+
+# --------------------------------------------------------------------------
+# English rendering (for replacing the stage-1 labels that reached Wikidata)
+# --------------------------------------------------------------------------
+
+@pytest.mark.parametrize("label,p31,expect", [
+    ("Auferstehungskirche", "Q16970", "Church of the Resurrection"),
+    ("Sacro Cuore", "Q16970", "Church of the Sacred Heart"),
+    ("Santa Caterina", "Q108325", "Chapel of Saint Catherine"),
+    ("Sant'Anna", "Q16970", "Church of Saint Anne"),
+    ("San Martino", "Q16970", "Church of Saint Martin"),
+    ("Stella Maris", "Q16970", "Church of Our Lady Star of the Sea"),
+])
+def test_english_renders_from_the_same_tables(label, p31, expect):
+    assert morph_en(label, p31) == expect
+
+
+def morph_en(label, p31):
+    return m.render_en(label, p31)
+
+
+@pytest.mark.parametrize("label,p31", [
+    ("Frauenkirche", "Q16970"),          # 聖母 begins with the saint prefix
+    ("Heiligen-Geist-Kapelle", "Q16970"),  # 聖霊 does too
+    ("Church of Holy Trinity", "Q16970"),  # 至聖三者 contains it
+])
+def test_a_dedication_beginning_with_the_saint_prefix_still_renders(label, p31):
+    """SAINT_PREFIX['ja'] is 聖, and 聖母 / 聖霊 / 聖体 / 聖十字架 legitimately
+    begin with it. Stripping it naively reduced them to 母 and 霊 and returned
+    None, silently dropping every such dedication from English."""
+    assert m.render_en(label, p31) is not None, label
+
+
+def test_an_apostrophised_saint_marker_is_split():
+    """Sant'Anna and Sant'Antonio arrived as one unknown token until the
+    apostrophe was split like a hyphen."""
+    toks, saw_saint = m.parse_name("Sant'Anna")
+    assert saw_saint and toks == ["anna"]
+
+
+def test_english_refuses_what_the_tables_cannot_render():
+    assert m.render_en("St. Fictitious", "Q16970") is None
+    assert m.render_en("Cultural heritage monuments in Foo", "Q16970") is None

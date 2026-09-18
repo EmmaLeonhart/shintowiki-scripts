@@ -1,3 +1,44 @@
+## 2026-09-18 — English rendering, and 聖 is a prefix AND the start of half the dedications
+
+Emma's two calls: **replace** the stage-1 labels that reached Wikidata rather than remove them, and
+**handle place-name qualifiers too**. The first is done; the second is queued with its hard part
+named.
+
+**The replacements: 16 of 33.** All 33 live labels were read individually. Eleven already read as
+English and were left alone ("Church of Mümliswil", "Zangilan Mosque", "Saint Matthew church in
+Gębice"); five cannot be rendered from the tables; one has no P31 mapping. The other sixteen were
+German, Italian, Catalan or Latin strings sitting in an `en` label — `Auferstehungskirche`,
+`Sacro Cuore`, `Sant'Antonio Abate`, `Frauenkirche`, `Stella Maris`, `Capella de la Puríssima Sang`
+— and now render as `Church of the Resurrection`, `Church of the Sacred Heart`, and so on. The
+emit test is stated rather than eyeballed: **no English type word in the current label, and the
+tables can render one**.
+
+English comes from a single **`EN_FROM_JA`** map keyed by the canonical ja rendering — about 90
+entries instead of an `en` on all ~200 table rows, and a name with no entry simply does not render.
+
+⛔ **Three bugs, and the third would have silently gutted English.**
+
+1. **Apostrophes were not split.** `Sant'Anna` and `Sant'Antonio` arrived as one unknown token;
+   hyphens were split and apostrophes were not.
+2. **The saint prefix was already applied.** `dedication()` returns 聖マルティヌス, and the map is
+   keyed by the bare マルティヌス, so every saint missed.
+3. **Then the fix for (2) broke worse.** Stripping a leading 聖 assumes 聖 is only ever the prefix.
+   It is also the first character of **聖母, 聖霊, 聖体, 聖十字架** — so those became 母 and 霊 and
+   returned None. `Frauenkirche` and `Heiligen-Geist-Kapelle` were the symptom. The lookup now tries
+   the whole string first and only falls back to stripping.
+
+Also added the Italian/Catalan saint forms the live labels needed (caterina, isidoro, pellegrino,
+maurici, terenziano, innocenti, teresa, pio, bonifatius) and the German/Italian/Latin dedication
+forms (auferstehung, sacro cuore, frauenkirche, heiligen geist, stella maris, antonio abate,
+purissima sang). Those widen ja/zh/ko too: **7,552 -> 8,136** (ja 3,146 · zh 3,635 · ko 1,355).
+
+⚠ **What I am NOT claiming about the place-name half.** For `ja` a Romance-to-katakana rule is
+tractable. For `zh` and `ko` there is no rule-based route from an Italian village name to characters
+or hangul, and generating one fabricates a reading rather than sourcing it. Queued with that written
+down, not hidden in the implementation.
+
+Tests 79 -> 91 in the stage-2 file, 595 across the two trees.
+
 ## 2026-09-18 — The individual Marian qualifiers, and the stage-1 damage is 33 items
 
 **Sizing first, because it was asked for and it reframes everything.** Of the 22,542 stage-1

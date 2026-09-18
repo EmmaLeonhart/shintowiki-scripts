@@ -206,6 +206,19 @@ NAMES = {
     "petka":     {"ja": "パラスケヴィ", "zh": "帕拉斯克娃", "ko": "파라스케바"},
     "archangel": {"ja": "大天使", "zh": "总领天使", "ko": "대천사"},
     "arcangelo": {"ja": "大天使", "zh": "总领天使", "ko": "대천사"},
+    # Italian and Catalan forms, from the labels that actually reached Wikidata.
+    "caterina":  {"ja": "カタリナ", "zh": "加大肋纳", "ko": "가타리나"},
+    "anna":      {"ja": "アンナ", "zh": "亚纳",   "ko": "안나"},
+    "isidoro":   {"ja": "イシドロ", "zh": "依西多禄", "ko": "이시도로"},
+    "pellegrino": {"ja": "ペレグリヌス", "zh": "培肋格利诺", "ko": "펠레그리노"},
+    "maurici":   {"ja": "マウリティウス", "zh": "毛里丘", "ko": "마우리시오"},
+    "terenziano": {"ja": "テレンティアヌス", "zh": "德肋左", "ko": "테렌시아노"},
+    "innocenti": {"ja": "幼子殉教者", "zh": "诸圣婴孩", "ko": "무죄한 어린이"},
+    "teresa":    {"ja": "テレサ", "zh": "德肋撒", "ko": "데레사"},
+    "pio":       {"ja": "ピオ", "zh": "碧岳",   "ko": "비오"},
+    "bonifatius": {"ja": "ボニファティウス", "zh": "波尼法爵", "ko": "보니파시오"},
+    "matthew":   {"ja": "マタイ", "zh": "玛窦",   "ko": "마태오"},
+    "thomas":    {"ja": "トマス", "zh": "多默",   "ko": "토마스"},
 }
 
 # Multi-token saint names that must be read as ONE dedicatee. Without this,
@@ -399,6 +412,21 @@ DEDICATIONS = {
     "nostra signora":   {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
     "blessed virgin":   {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
     "vergine":          {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    # German, Italian and Latin forms of dedications the table had in English
+    # only -- all six came from the labels that actually reached Wikidata.
+    "auferstehung":     {"ja": "復活",     "zh": "复活",   "ko": "부활"},
+    "risurrezione":     {"ja": "復活",     "zh": "复活",   "ko": "부활"},
+    "sacro cuore":      {"ja": "イエスの聖心", "zh": "耶稣圣心", "ko": "예수 성심"},
+    "sagrado coração":  {"ja": "イエスの聖心", "zh": "耶稣圣心", "ko": "예수 성심"},
+    "frauenkirche":     {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    "liebfrauen":       {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    "heiligen geist":   {"ja": "聖霊",     "zh": "圣神",   "ko": "성령"},
+    "heiliger geist":   {"ja": "聖霊",     "zh": "圣神",   "ko": "성령"},
+    "espírito santo":   {"ja": "聖霊",     "zh": "圣神",   "ko": "성령"},
+    "stella maris":     {"ja": "海の星の聖母", "zh": "海星圣母", "ko": "바다의 별 성모"},
+    "antonio abate":    {"ja": "大アントニオ", "zh": "圣安当", "ko": "대 안토니오"},
+    "antonio abad":     {"ja": "大アントニオ", "zh": "圣安当", "ko": "대 안토니오"},
+    "purissima sang":   {"ja": "尊き御血", "zh": "宝血",   "ko": "보혈"},
 }
 
 # A feast or event names WHICH dedication; a Marian title alone only names who it
@@ -439,6 +467,9 @@ SPECIFIC_DEDICATIONS = {
     "immaculate heart", "cuore immacolato", "corazón inmaculado",
     "nativity of the lord", "nativity of christ",
     "nativity of the theotokos", "nativity of the virgin",
+    "auferstehung", "risurrezione", "sacro cuore", "sagrado coração",
+    "heiligen geist", "heiliger geist", "espírito santo", "stella maris",
+    "antonio abate", "antonio abad", "purissima sang",
 }
 
 # Generic titles — checked only after every feast has had its chance.
@@ -449,6 +480,7 @@ GENERIC_DEDICATIONS = {
     # Italian carrier, missing until the residue audit -- 12 labels were reading
     # "Nostra Signora" as a qualifier rather than as the title it is.
     "nostra signora", "blessed virgin", "vergine",
+    "frauenkirche", "liebfrauen",
 }
 
 # --------------------------------------------------------------------------
@@ -514,8 +546,10 @@ def parse_name(label):
         if stem in SAINT_MARKERS:
             saw_saint = True
             continue
-        # A hyphenated cluster like "st.-petri" carries its own marker.
-        parts = [p for p in re.split(r"[-–—]", stem) if p]
+        # A hyphenated or apostrophised cluster carries its own marker:
+        # "st.-petri", and the Italian "Sant'Anna" / "Sant'Antonio", which were
+        # arriving here as a single unknown token.
+        parts = [p for p in re.split(r"[-–—'’]", stem) if p]
         for p in parts:
             if p in SAINT_MARKERS:
                 saw_saint = True
@@ -631,6 +665,82 @@ def dedication(label, lang):
     return core
 
 
+# --------------------------------------------------------------------------
+# English, keyed by the canonical ja rendering
+# --------------------------------------------------------------------------
+# Stage 1's English is paused, but Emma asked (2026-09-18) for the handful that
+# reached Wikidata to be REPLACED with stage-2 quality English rather than
+# removed. Keying off the ja form means one map of ~90 entries instead of an
+# "en" on every one of the ~200 table rows, and it cannot drift out of step
+# with them — a name with no entry here simply does not render in English.
+EN_FROM_JA = {
+    # saints
+    "アンデレ": "Andrew", "アントニオ": "Anthony", "アンナ": "Anne",
+    "ウィンケンティウス": "Vincent", "エリヤ": "Elijah", "カタリナ": "Catherine",
+    "キリスト": "Christ", "クリストフォロス": "Christopher",
+    "ゲオルギオス": "George", "スタニスラウス": "Stanislaus",
+    "ステファノ": "Stephen", "デメトリオス": "Demetrius",
+    "ニコラオス": "Nicholas", "バルバラ": "Barbara", "パウロ": "Paul",
+    "パラスケヴィ": "Paraskeva", "フランチェスコ": "Francis", "ペトロ": "Peter",
+    "マメス": "Mamas", "マリア": "Mary", "マリナ": "Marina",
+    "マルティヌス": "Martin", "ミカエル": "Michael", "ヤコブ": "James",
+    "ヨセフ": "Joseph", "ヨハネ": "John", "ラウレンティウス": "Lawrence",
+    "ロクス": "Roch", "大天使": "the Archangel", "救世主": "the Saviour",
+    "洗礼者ヨハネ": "John the Baptist",
+    "イシドロ": "Isidore", "ペレグリヌス": "Peregrine",
+    "マウリティウス": "Maurice", "テレンティアヌス": "Terentian",
+    "幼子殉教者": "the Holy Innocents", "テレサ": "Teresa", "ピオ": "Pius",
+    "ボニファティウス": "Boniface", "マタイ": "Matthew", "トマス": "Thomas",
+    # dedications
+    "しるしの生神女": "Our Lady of the Sign",
+    "イエスの聖心": "the Sacred Heart",
+    "ウラジーミルの生神女": "Our Lady of Vladimir",
+    "カザンの生神女": "Our Lady of Kazan",
+    "カルメル山の聖母": "Our Lady of Mount Carmel",
+    "キリスト信者の扶助者聖母": "Our Lady Help of Christians",
+    "グアダルーペの聖母": "Our Lady of Guadalupe",
+    "スカプラリオの聖母": "Our Lady of the Scapular",
+    "スモレンスクの生神女": "Our Lady of Smolensk",
+    "チェンストホヴァの聖母": "Our Lady of Częstochowa",
+    "ファティマの聖母": "Our Lady of Fátima",
+    "ポーランドの元后聖母": "Our Lady Queen of Poland",
+    "メルセーの聖母": "Our Lady of Mercy",
+    "ルルドの聖母": "Our Lady of Lourdes",
+    "ロザリオ": "the Rosary", "ロザリオの聖母": "Our Lady of the Rosary",
+    "ロレートの聖母": "Our Lady of Loreto",
+    "主の公現": "the Epiphany", "主の変容": "the Transfiguration",
+    "主の昇天": "the Ascension", "主の降誕": "the Nativity of the Lord",
+    "光の聖母": "Our Lady of Light",
+    "全ての悲しむ者の喜び": "Our Lady Joy of All Who Sorrow",
+    "十字架挙栄": "the Exaltation of the Holy Cross",
+    "受胎告知": "the Annunciation",
+    "善き助けの聖母": "Our Lady of Good Help",
+    "天の元后": "Our Lady Queen of Heaven",
+    "天使の聖母": "Our Lady of the Angels",
+    "奇跡の聖母": "Our Lady of Miracles",
+    "奉献": "the Presentation", "導きの聖母": "Our Lady of Guidance",
+    "平和": "Peace", "復活": "the Resurrection",
+    "恩寵の聖母": "Our Lady of Grace",
+    "悲しみの聖母": "Our Lady of Sorrows",
+    "慰めの聖母": "Our Lady of Consolation",
+    "憐れみの聖母": "Our Lady of Pity",
+    "救いの聖母": "Our Lady of Remedies",
+    "永遠の助けの聖母": "Our Lady of Perpetual Help",
+    "無原罪の御宿り": "the Immaculate Conception",
+    "生神女": "the Theotokos", "生神女就寝": "the Dormition",
+    "生神女庇護": "the Protection of the Theotokos",
+    "生神女誕生": "the Nativity of the Theotokos",
+    "生神女進堂": "the Entry of the Theotokos",
+    "聖体": "Corpus Christi", "聖十字架": "the Holy Cross",
+    "聖母": "Our Lady", "聖母の汚れなき御心": "the Immaculate Heart of Mary",
+    "聖母被昇天": "the Assumption", "聖母訪問": "the Visitation",
+    "聖霊": "the Holy Spirit", "至聖三者": "the Holy Trinity",
+    "被昇天": "the Assumption", "諸聖人": "All Saints",
+    "降誕": "the Nativity", "雪の聖母": "Our Lady of the Snows",
+    "海の星の聖母": "Our Lady Star of the Sea", "大アントニオ": "Saint Anthony the Abbot",
+    "尊き御血": "the Most Precious Blood",
+}
+
 # A place label often carries its own disambiguator -- "Freden (Leine)" gives
 # フレーデン (ライネ), and without this the building's label inherits it as
 # "フレーデン (ライネ)の聖ラウレンティウス教会". The parenthetical disambiguates the
@@ -642,6 +752,37 @@ def clean_place(place):
     if not place:
         return place
     return _PLACE_PAREN.sub("", place).strip()
+
+
+def render_en(label, p31):
+    """English label, or None when any piece is unknown.
+
+    English word order is "Church of X", not the place-first form the CJK
+    languages take, and no place is prefixed — the labels this replaces do not
+    carry one. Saints get "Saint"; dedications already read as noun phrases.
+    """
+    if is_category_shaped(label):
+        return None
+    type_words = TYPES.get(p31)
+    if not type_words:
+        return None
+    ja = dedication(label, "ja")
+    if not ja:
+        return None
+    # dedication() has already applied the saint prefix for a SAINT, and
+    # EN_FROM_JA is keyed by the bare name. But the prefix is 聖, and 聖母 /
+    # 聖霊 / 聖体 / 聖十字架 are dedications that legitimately BEGIN with it — a
+    # naive startswith reduced them to 母 and 霊 and returned None. So the whole
+    # string is looked up first, and only a miss falls back to stripping.
+    en = EN_FROM_JA.get(ja)
+    if en is None and ja.startswith(SAINT_PREFIX["ja"]):
+        bare = ja[len(SAINT_PREFIX["ja"]):]
+        en = EN_FROM_JA.get(bare)
+        if en is not None and not en.startswith("the "):
+            en = "Saint " + en
+    if not en:
+        return None
+    return "%s of %s" % (type_words["en"], en)
 
 
 def render(label, p31, lang, place=None):
