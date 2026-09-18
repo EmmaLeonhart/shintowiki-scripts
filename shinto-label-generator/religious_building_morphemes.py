@@ -100,6 +100,9 @@ STOPWORDS = {
     "apostolo", "apostle", "apostel", "apostol", "evangelista", "evangelist",
     "martire", "martyr", "martir", "confessor", "bispo", "obispo", "vescovo",
     "bishop", "papa", "pope", "abad", "abbot", "the", "athonite",
+    "prophet", "profeta", "sts", "ss", "at", "casa", "misericordia",
+    "misericórdia", "reformed", "nederlands", "hervormd", "borromeo",
+    "kolbe", "tours", "loyola", "sales",
 }
 
 # Saint / dedication markers — recognised so the following token is read as a
@@ -312,6 +315,38 @@ NAMES = {
     "fiz":       {"ja": "フェリクス", "zh": "斐理斯", "ko": "펠릭스"},
     "felix":     {"ja": "フェリクス", "zh": "斐理斯", "ko": "펠릭스"},
     "xurxo":     {"ja": "ゲオルギオス", "zh": "乔治", "ko": "게오르기오스"},
+    # --- pass 2, 2026-09-18, again from the measured frequency list ---
+    # more Galician: the corpus is 15% gl and this is where the tail lives
+    "xulián":    {"ja": "ユリアヌス", "zh": "儒略", "ko": "율리아노"},
+    "xián":      {"ja": "ユリアヌス", "zh": "儒略", "ko": "율리아노"},
+    "julián":    {"ja": "ユリアヌス", "zh": "儒略", "ko": "율리아노"},
+    "bieito":    {"ja": "ベネディクトゥス", "zh": "本笃", "ko": "베네딕토"},
+    "benedict":  {"ja": "ベネディクトゥス", "zh": "本笃", "ko": "베네딕토"},
+    "benito":    {"ja": "ベネディクトゥス", "zh": "本笃", "ko": "베네딕토"},
+    "madanela":  {"ja": "マグダラのマリア", "zh": "抹大拉的玛利亚", "ko": "막달레나 마리아"},
+    "santalla":  {"ja": "エウラリア", "zh": "欧拉利亚", "ko": "에울랄리아"},
+    "antón":     {"ja": "アントニオ", "zh": "安多尼", "ko": "안토니오"},
+    "xosé":      {"ja": "ヨセフ", "zh": "若瑟",   "ko": "요셉"},
+    "vicenzo":   {"ja": "ウィンケンティウス", "zh": "文生", "ko": "빈첸시오"},
+    "cibrao":    {"ja": "キプリアヌス", "zh": "西彼廉", "ko": "치프리아노"},
+    "cyprian":   {"ja": "キプリアヌス", "zh": "西彼廉", "ko": "치프리아노"},
+    "andrés":    {"ja": "アンデレ", "zh": "安德肋", "ko": "안드레아"},
+    # the Sebastian family -- 81 items across three spellings
+    "sebastian": {"ja": "セバスティアヌス", "zh": "圣塞巴斯弟盎", "ko": "세바스티아노"},
+    "sebastiano": {"ja": "セバスティアヌス", "zh": "圣塞巴斯弟盎", "ko": "세바스티아노"},
+    "sebastián": {"ja": "セバスティアヌス", "zh": "圣塞巴斯弟盎", "ko": "세바스티아노"},
+    "sebastião": {"ja": "セバスティアヌス", "zh": "圣塞巴斯弟盎", "ko": "세바스티아노"},
+    # German saints
+    "hubertus":  {"ja": "フベルトゥス", "zh": "胡伯特", "ko": "후베르토"},
+    "florian":   {"ja": "フロリアヌス", "zh": "圣佛罗里安", "ko": "플로리아노"},
+    "wendelin":  {"ja": "ヴェンデリン", "zh": "文德林", "ko": "벤델리노"},
+    "maximilian": {"ja": "マキシミリアノ", "zh": "国柏", "ko": "막시밀리아노"},
+    "johann":    {"ja": "ヨハネ", "zh": "约翰",   "ko": "요한"},
+    "johannis":  {"ja": "ヨハネ", "zh": "约翰",   "ko": "요한"},
+    "nikolai":   {"ja": "ニコラオス", "zh": "尼古拉", "ko": "니콜라오"},
+    "carlo":     {"ja": "カルロ", "zh": "嘉禄", "ko": "가롤로"},
+    "carlos":    {"ja": "カルロ", "zh": "嘉禄", "ko": "가롤로"},
+    "quiteria":  {"ja": "キテリア", "zh": "基德利亚", "ko": "퀴테리아"},
     "pedro":     {"ja": "ペトロ", "zh": "彼得",   "ko": "베드로"},
     "thomas":    {"ja": "トマス", "zh": "多默",   "ko": "토마스"},
 }
@@ -338,6 +373,12 @@ NAME_PHRASES = {
     "antonio padua":     {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
     "antónio padua":     {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
     "mary magdalene":    {"ja": "マグダラのマリア", "zh": "抹大拉的玛利亚", "ko": "막달레나 마리아"},
+    "francis assisi":    {"ja": "アッシジのフランチェスコ", "zh": "亚西西的方济各", "ko": "아시시의 프란치스코"},
+    "francesco assisi":  {"ja": "アッシジのフランチェスコ", "zh": "亚西西的方济各", "ko": "아시시의 프란치스코"},
+    "demetrius thessaloniki": {"ja": "テッサロニキのデメトリオス", "zh": "得撒洛尼的德米特里", "ko": "테살로니카의 데메트리오"},
+    "anthony padova":    {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
+    "antonio padova":    {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
+    "boris gleb":        {"ja": "ボリスとグレプ", "zh": "鲍里斯和格列布", "ko": "보리스와 글레프"},
     "maria magdalena":   {"ja": "マグダラのマリア", "zh": "抹大拉的玛利亚", "ko": "막달레나 마리아"},
 }
 
@@ -539,6 +580,10 @@ DEDICATIONS = {
     "christ the king":  {"ja": "王たるキリスト", "zh": "基督君王", "ko": "그리스도 왕"},
     "mandylion":        {"ja": "自印聖像", "zh": "不由人手所画的救主圣像", "ko": "만딜리온"},
     "heilig geist":     {"ja": "聖霊",   "zh": "圣神",   "ko": "성령"},
+    "holy shroud":      {"ja": "聖骸布", "zh": "都灵裹尸布", "ko": "성해포"},
+    "versöhnung":       {"ja": "和解",   "zh": "和好",   "ko": "화해"},
+    "archangels":       {"ja": "大天使", "zh": "总领天使", "ko": "대천사"},
+    "virgin mary queen": {"ja": "天の元后", "zh": "天上元后", "ko": "천상 모후"},
 }
 
 # A feast or event names WHICH dedication; a Marian title alone only names who it
@@ -576,6 +621,7 @@ SPECIFIC_DEDICATIONS = {
     "znamenie", "dores", "angustias", "entry of the theotokos",
     "joy of all who sorrow", "of the angels", "consolation", "bon secours",
     "merced", "piedade", "guia", "luz", "grace of nieppe",
+    "holy shroud", "versöhnung", "archangels", "virgin mary queen",
     "santa croce", "dreifaltigkeit", "erlöser", "cristo re",
     "christ the king", "mandylion", "heilig geist",
     "immaculate heart", "cuore immacolato", "corazón inmaculado",
@@ -753,6 +799,24 @@ def _qualifier_residue(folded_label, matched_phrase):
     return out
 
 
+def name_key(token):
+    """The NAMES key a token resolves to, or None.
+
+    German compounds carry a GENITIVE: Martinskirche is Martin-s-kirche, so
+    stripping the type tail leaves `martins`, and Peterskirche leaves `peters`.
+    Listing every saint twice would be the wrong fix -- the -s is grammar. The
+    Latin genitive -i (Nikolai, Pauli) is the same story.
+    """
+    if token in NAMES:
+        return token
+    for suffix in ("s", "i", "is", "us", "en"):
+        if token.endswith(suffix):
+            stem = token[: -len(suffix)]
+            if stem in NAMES:
+                return stem
+    return None
+
+
 def _unfold_tokens(label, folded_tokens):
     """Map folded residue tokens back to their ORIGINAL spelling.
 
@@ -826,9 +890,10 @@ def dedication(label, lang, rules="it"):
     for t in tokens:
         if t in SELF_SAINT:
             saw_saint = True
-        if t not in NAMES:
+        key = name_key(t)
+        if key is None:
             return None          # unknown name — caller decides, not this module
-        rendered.append(NAMES[t][lang])
+        rendered.append(NAMES[key][lang])
     core = "".join(rendered)
     if saw_saint:
         core = SAINT_PREFIX[lang] + core

@@ -517,3 +517,30 @@ def test_a_german_location_compound_names_no_dedication():
     """Wegkapelle is "wayside chapel" -- it says where, not who for."""
     assert m.render("Wegkapelle", "Q108325", "ja", place="X") is None
     assert m.render("Hofkapelle Aichet", "Q108325", "ja", place="X") is None
+
+
+@pytest.mark.parametrize("label,expect", [
+    # German compounds carry a genitive: Martin-s-kirche, Peter-s-kirche. The -s
+    # is grammar, so listing every saint twice would be the wrong fix.
+    ("Martinskirche", "マルティヌス"),
+    ("Peterskirche", "ペトロ"),
+    ("St. Pauli", "聖パウロ"),
+])
+def test_a_genitive_compound_resolves_to_the_saint(label, expect):
+    assert m.render(label, "Q16970", "ja", place="X") == "Xの" + expect + "教会"
+
+
+def test_the_genitive_rule_does_not_invent_names():
+    """Stripping a suffix must not turn an unknown word into a known one."""
+    assert m.name_key("fictitious") is None
+    assert m.name_key("martins") == "martin"
+    assert m.render("St. Fictitious", "Q16970", "ja", place="X") is None
+
+
+@pytest.mark.parametrize("label,expect", [
+    ("Saint Francis of Assisi church", "聖アッシジのフランチェスコ"),
+    ("Sts. Boris and Gleb Church", "ボリスとグレプ"),
+    ("Holy Shroud chapel", "聖骸布"),
+])
+def test_pass_two_additions(label, expect):
+    assert m.render(label, "Q16970", "ja", place="X") == "Xの" + expect + "教会"

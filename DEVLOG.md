@@ -1,3 +1,36 @@
+## 2026-09-18 — Coverage pass 2: 10,105 -> 10,979, and the German genitive is grammar not vocabulary
+
+Second widening pass on Emma's standing pick. The frequency list again decided what to add rather
+than my sense of what a saint list should contain.
+
+**More Galician**, which keeps being the largest seam — xulián 28, bieito 27 (Benedict), madanela 27
+(Magdalene), santalla 25 (Eulalia), antón 25, xosé 24, xián 24, vicenzo 23, cibrao 23 (Cyprian). The
+corpus is 15% Galician and the tables started with none of it.
+
+**The Sebastian family**, 81 items across sebastian / sebastiano / sebastián. **German saints**:
+hubertus, florian, wendelin, maximilian. **Compound saints** as phrases so they render once:
+Francis of Assisi, Demetrius of Thessaloniki, Boris and Gleb.
+
+⛔ **And a rule rather than table rows, which is the useful part.** German compounds carry a
+**genitive**: `Martinskirche` is Martin-**s**-kirche, `Peterskirche` is Peter-**s**-kirche, and the
+Latin `St. Pauli` / `St.-Nikolai-` is the same thing with -i. Stripping the type tail left `martins`
+and `peters`, which are not names — they are names plus grammar. Listing every saint a second time
+in its genitive would have been the wrong fix; `name_key()` now tries the token, then the stem
+without -s / -i / -is / -us / -en.
+
+⚠ It is guarded against the obvious danger: a suffix strip must not turn an unknown word into a
+known one. `name_key("fictitious")` is None, and the test says so.
+
+Also stopworded the roles this pass surfaced — prophet, sts, evangelista, borromeo, kolbe, tours —
+and the Dutch/German denominations (nederlands, hervormd, reformed).
+
+**ja 4,023 -> 4,358 · zh 4,438 -> 4,840 · ko 1,644 -> 1,781. Total 10,105 -> 10,979**, zero
+duplicates, zero malformed. 671 tests.
+
+⚠ Still 14,551 unknown-dedication skips, and the remaining tail is genuinely long: 7,000+ distinct
+first-unknown tokens, most of them place names inside "San X de PLACE" constructions, which the
+names path refuses by design because it requires every token known.
+
 ## 2026-09-18 — Widening coverage: 8,323 -> 10,105, and the top two "unknown names" were not names
 
 Emma picked widening as the day's work. Measured the 14,457 unknown-dedication skips by first-unknown
