@@ -49,24 +49,9 @@ reads live state first, so an already-correct item emits nothing instead of a ch
 - **BLOCKED-ON-USER-ACTION** once the date passes: her account, her paste, no date on it and
   nobody chasing it.
 
+<!-- Spent injector markers below. NOT queue items, and not a done-list:
+     scheduled/inject_due_items.py re-injects any item whose marker is missing from this
+     file, whatever its json records, so the marker has to outlive the work. Each one's
+     outcome is in DEVLOG.md under its date. -->
 <!-- scheduled:p361-duplicate-part-of-removals -->
-## Scheduled — the 24 `part of` removals are unblocked
-
-Held by the Wikidata lockout to **2026-09-18**. Re-read
-`shinto_miraheze/wikidata_editing_lockout.state` before acting; the file decides, not this
-text.
-
-**14 true duplicates** (the same ordinal repeated) plus **10 confirmed leftovers** (the
-blank-ordinal side, in the cases where the list itself names the item at the ordinal already
-carried). Per-item evidence is committed at
-`modern-quickstatements/p361_multi_part_of_audit.json`.
-
-**This is the sequential-misc mechanism's job, not QuickStatements'** — which of two
-*identical* statements gets removed is not expressible by value. The mechanism is built,
-tested, and ships empty.
-
-⚠️ **Do not widen this to the other classes.** The audit's other two are explicitly not
-defects: **47** carry distinct ordinals and are legitimate, and **42** name the item nowhere
-on the list side — those were folded into the orphan work by Emma on 2026-08-19, not into
-this removal. A blanket strip would have been wrong for 45 of 55.
 

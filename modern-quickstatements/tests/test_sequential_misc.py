@@ -48,7 +48,30 @@ def test_the_shipped_file_holds_exactly_the_intended_lines():
         '"https://ja.wikipedia.org/wiki/%E8%AA%BF%E7%94%B0%E5%9D%90%E4%B8%80%E4%BA%8B'
         '%E5%B0%BC%E5%8F%A4%E7%A5%9E%E7%A4%BE"',
         '-Q22119431|P1814|"くだにますひとことねこじんじゃ"',
+        # The ordinal-less `part of` leftovers, appended 2026-09-18 by
+        # generate_p361_leftover_removals.py. Each removes the item's FIRST P361
+        # claim into that list, which live state showed to be the blank one.
+        '-Q107664337|P361|Q11368516',
+        '-Q112953068|P361|Q11668489',
+        '-Q11383014|P361|Q11658590',
+        '-Q11393842|P361|Q11465292',
+        '-Q11487792|P361|Q11553385',
+        '-Q11607305|P361|Q11467693',
+        '-Q123118271|P361|Q11458212',
     ]
+
+
+def test_the_leftover_removals_are_not_also_in_a_registered_atomic_file():
+    """A value-matched removal that also drips from the random pool can fire twice,
+    and the second firing takes the statement this one exists to preserve. Being in
+    exactly one channel is the property, not a coincidence of the current files."""
+    import generate_p361_leftover_removals as gen  # noqa: E402
+    staged = gen.load_staged()
+    for line in dde.load_sequential_lines():
+        if not line.startswith('-') or '|P361|' not in line:
+            continue
+        item, _, lst = line[1:].split('|')[:3]
+        assert (item, lst) not in staged, line
 
 
 def test_the_add_precedes_its_removal():

@@ -1,3 +1,57 @@
+## 2026-09-18 — The 24 `part of` duplicates: 17 were someone else's job, 7 are staged
+
+The scheduled queue item said the lockout had passed and 24 duplicate `P361` statements were the
+sequential-misc mechanism's to remove — 14 `true_duplicate`, 10 confirmed `blank_ordinal_side`
+leftovers. `wikidata_edit_allowed.py` reports **ALLOWED** (the state file's own date was
+2026-09-01, not the 2026-09-18 the queue text carried), so the gate is open.
+
+Read live before acting, because the audit JSON is from 2026-08-19 and Wikidata has moved:
+`Q11481363`, `Q11512854` and `Q134927474` now hold **one** statement each, and `Q135040786`'s two
+are distinct ordinals.
+
+### What decides which of two identical statements gets removed
+
+QuickStatements matches a removal by entity+property+VALUE, so `-Q|P361|Qlist` does not name either
+twin. The QuickStatements path is retired; `direct_daily_edits.find_claim` is what actually runs,
+and it returns the **first** claim matching that property and value and removes that one only —
+qualifiers are never read. So the line is correct exactly when the leftover is live claim **[0]**,
+which is a fact about claim order that a generator can read and a static batch file cannot.
+
+It also has to run **once**. Drawn a second time out of the ~105k atomic pool the same line matches
+the survivor and takes the membership. That, not the pairing rule, is why this belongs in
+`sequential_misc.txt`: its cursor never revisits a line.
+
+### 17 excluded, each for a stated reason
+
+- **All 14 `true_duplicate`** are already staged in `list_membership_removals.txt`,
+  `multi_ordinal_removals.txt` or `orphan_membership_removals.txt` — registered, dripping files that
+  strip an affected item's membership into that list entirely, per *"we remove it and then we add it
+  again"*. A sequential line would be one removal past that, aimed at whatever survives. Most are
+  not duplicate pairs at all: `Q110915859` carries one statement with five `P1545` values beside two
+  clean ones, which is the multi-ordinal collapse and `multi_ordinal_removals.txt`'s job. The audit
+  flattened ordinals across statements, so the collapse reads as a repeat.
+- `Q135288221`, `Q85878507` — same, via `orphan_membership_removals.txt`.
+- `Q107306769` 網野神社 — its blank side has since acquired ordinal 44 and sits at claim [0] with two
+  references, so value-matching reaches the better statement. The 2026-07-10 ruling on that shape
+  stands: report only.
+
+### 7 staged
+
+`generate_p361_leftover_removals.py`, read-only against Wikidata (one batched `wbgetentities`,
+`wd_pace`d) and re-runnable, appended seven lines to `sequential_misc.txt` — `Q107664337`,
+`Q112953068`, `Q11383014`, `Q11393842`, `Q11487792`, `Q11607305`, `Q123118271`. The cursor sat at 4
+on a drained file and now points at the first of them, so they land one a day over the next week.
+
+`Q11487792`'s leftover carries a reference. It is still the statement that says nothing, and it goes.
+
+⚠ **Residual, not guarded.** If something else removes a blank statement before its line runs, the
+line's value still matches the ordinalled keeper and takes it; nothing in the executor can tell the
+difference. Same exposure every value-matched removal file here carries, and the standing ruling
+covers the outcome. Re-run the generator to re-confirm before appending anything further.
+
+12 new tests (`test_p361_leftover_removals.py`), plus one in `test_sequential_misc.py` asserting no
+sequential `P361` removal is also in a registered atomic file, and the shipped-lines pin updated.
+
 ## 2026-09-18 — In the pipeline is not the same as maintained
 
 Moving the religious-building labels into `quickstatements/` made them live. It did not make anything

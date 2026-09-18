@@ -64,3 +64,39 @@ Q140568719|P50|Q140568870|P1545|"1"
 # this one. Two passes touching the same property is how values get lost.
 Q22119431|P1814|"つくだにますひとことねこじんじゃ"|S143|Q177837|S4656|"https://ja.wikipedia.org/wiki/%E8%AA%BF%E7%94%B0%E5%9D%90%E4%B8%80%E4%BA%8B%E5%B0%BC%E5%8F%A4%E7%A5%9E%E7%A4%BE"
 -Q22119431|P1814|"くだにますひとことねこじんじゃ"
+
+# ── The ordinal-less `part of` leftovers (2026-09-18) ───────────────────────────
+# Generator: generate_p361_leftover_removals.py (re-runnable, read-only against
+# Wikidata). Population: the `blank_ordinal_side` class of
+# p361_multi_part_of_audit.json — a shrine holding TWO P361 statements into the
+# same Engishiki list, one carrying the P1545 ordinal the list names and one
+# carrying nothing. The blank one is import residue.
+#
+# WHY HERE AND NOT IN AN ATOMIC FILE. Both statements carry the same value, so
+# `-Q|P361|Qlist` does not say which to take; what decides is
+# direct_daily_edits.find_claim, which removes the FIRST matching claim and never
+# looks at qualifiers. Each line below was emitted only because the blank
+# statement is live claim [0] and an ordinalled one survives it. Drawn a SECOND
+# time the same line would match that survivor and take the membership — so the
+# line must run exactly once, which is what this file's cursor guarantees and the
+# random atomic pool does not.
+#
+# NOT a pair: each line stands alone, no add follows.
+#
+# The 14 `true_duplicate` items are deliberately absent. All 14 are already staged
+# in list_membership_removals.txt / multi_ordinal_removals.txt /
+# orphan_membership_removals.txt, which strip an affected item's membership into
+# that list entirely — Emma 2026-08-25, "we remove it and then we add it again."
+# A line here would be one removal past that, aimed at whatever survives the drip.
+#
+# Q107306769 網野神社 is also absent: its blank side has since acquired ordinal 44
+# and now sits at claim [0] carrying two references, so value-matching reaches the
+# better of the two statements and not the leftover. The 2026-07-10 ruling on that
+# shape stands — report only.
+-Q107664337|P361|Q11368516
+-Q112953068|P361|Q11668489
+-Q11383014|P361|Q11658590
+-Q11393842|P361|Q11465292
+-Q11487792|P361|Q11553385
+-Q11607305|P361|Q11467693
+-Q123118271|P361|Q11458212
