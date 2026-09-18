@@ -36,13 +36,23 @@ WIKI_BOUND = {
     "fandom_unique",
     "miraheze_unique",
     "git_synced",
+    # Moved here 2026-09-17. It reads as Wikidata-bound because its collector
+    # writes category_moves.csv instead of editing a wiki -- but that CSV's only
+    # consumer is move_categories.py, which is lockout-gated and performs wiki PAGE
+    # MOVES. A CSV row is not a Wikidata edit; it is an instruction for one. It sat
+    # in WIKIDATA_BOUND from the day this file was written and cost 18% of the
+    # drainer's daily picks.
+    "category_translation",
 }
 
-# Categories that end at Wikidata, via a collector writing QuickStatements lines (or,
-# for category_translation, rows in category_moves.csv). Reachable with both wikis down.
+# Categories that end at Wikidata, via a collector writing QuickStatements lines the
+# daily drip submits. Reachable with both wikis down.
+#
+# ⚠ The test for membership is WHERE THE CHAIN ENDS, not what the collector writes.
+# category_translation used to be listed here because its collector writes a CSV --
+# but the CSV is consumed by a wiki page move, so it belongs above.
 WIKIDATA_BOUND = {
     "name_in_kana",
-    "category_translation",
     "description_enrichment_en",
     "ronsha_ranking_review",
     "beppyo_p612",

@@ -1,3 +1,55 @@
+## 2026-09-17 — Three rulings applied; Stage 2 stopped before it was written
+
+**1. `category_translation` dropped from the drainer.** Moved under `WIKI_REACHABLE` in
+`remote_queue.py`, which is where it always belonged: its answers reach `category_moves.csv`, whose
+only consumer is `move_categories.py` — lockout-gated, performing wiki PAGE MOVES. It read as
+Wikidata-bound because the collector writes a CSV, and **a CSV row is not a Wikidata edit, it is an
+instruction for one.** `tests/test_remote_queue_skips_dead_wikis.py` had it in `WIKIDATA_BOUND` from
+the day it was written; it is now in `WIKI_BOUND` with the reasoning error recorded, and the header
+comment now says the test is WHERE THE CHAIN ENDS, not what the collector writes. Gated, not
+deleted, so it returns by itself if the wiki does.
+
+Queue **1,812 -> 1,484**; `en_label` 22% -> **27%**. `todo.md` now has no open items.
+
+**2. Religious-building stage 1 wired into CI.** `generate_religious_building_labels.py` had never
+been in any workflow, so its 22,548 lines changed only when someone ran it by hand (last
+2026-09-08) and new churches on Wikidata could never enter it. Added to
+`label-generator-regenerate.yml`. Its output already rides the drip — `select_label_proposals.py`
+globs `quickstatements/*.txt` and pools raw lines, so a file that is not a language file is carried
+identically.
+
+⛔ **3. Stage 2 was NOT built, and the reason is in the data.** The design is the shrine one: take
+the English label, strip the type word, re-attach the type in each target language. That works for
+shrines because every item is the same type and Stages 0-2 machine-build the label into a known
+`<Name> Shrine` shape.
+
+It does not hold here. Measured across all **22,548** lines:
+
+| type word in the label | count |
+|---|---|
+| **none** | **15,001 (67%)** |
+| Church | 5,147 |
+| Chapel | 1,652 |
+| Synagogue | 389 |
+| Monastery | 167 |
+| Mosque | 154 |
+| Cathedral / Temple / Basilica / Abbey | 38 |
+
+The reason is upstream and is not a bug: these labels are **Commons category names copied verbatim**,
+which is exactly what Emma's 2026-07-10 rule says to do, and a Latin-script Commons category is
+frequently not English — `Kirche Rehden`, `St.-Petri-Kirche`, `Jerusalemkirche`, `San Giovanni
+Battista`, `Madonna del Pero`. So two thirds have no type word to strip, the rest span nine types
+rather than one, and a large share are **already in one of the target languages**, where
+"translating" is a no-op at best and nonsense at worst.
+
+Seeding the multilang generator from this would emit wrong labels across a dozen languages on
+tens of thousands of items. CLAUDE.md: conspicuous bad editing on Wikidata is worse than losing
+data. Stopped and put back to Emma rather than built. The workflow step for it was written and then
+removed — a step invoking a file that should not exist yet is not a placeholder, it is a daily
+error.
+
+Suite 1,696.
+
 ## 2026-09-17 — queue.md holds no work; and two scope questions, one of which corrects me
 
 **The queue's last two items were never work.**

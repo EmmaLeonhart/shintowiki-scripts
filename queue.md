@@ -9,16 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] `category_translation` is wiki-bound and is being treated as Wikidata-bound.
-  Its RAG answers land in `category_moves.csv`, whose ONLY consumer is `move_categories.py` —
-  lockout-gated, and it performs wiki page moves. The wiki is formally abandoned, so **328
-  work-files, 18% of the drainer's queue, are picks that cannot land.** Emma's 2026-09-15 rule
-  (*"forget about them"*) already covers this; `tests/test_remote_queue_skips_dead_wikis.py` lists
-  it under `WIKIDATA_BOUND` because it *"writes rows to category_moves.csv"*, and a CSV row is not
-  a Wikidata edit.
-  - Needs Emma's word first: dropping it frees 18% of the daily picks for label/kana work, but
-    stops accumulating answers that would be ready if the wiki ever returns.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

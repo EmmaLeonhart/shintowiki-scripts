@@ -729,11 +729,21 @@ def build_queue() -> list[dict]:
             )
         )
         items.extend(_build_no_autogen_disambig_items())
-    # Queue item 5: agentic RAG the category-translation residual. Each work-file
-    # is a Japanese category needing an English name (see build_category_
-    # translation_queue.py); the worker fills the TRANSLATED marker and
-    # collect_category_translations.py folds answers into category_moves.csv.
-    items.extend(_build_section("category_translation", CATEGORY_TRANSLATION_INSTRUCTION))
+        # Queue item 5: agentic RAG the category-translation residual. Each work-file
+        # is a Japanese category needing an English name (see build_category_
+        # translation_queue.py); the worker fills the TRANSLATED marker and
+        # collect_category_translations.py folds answers into category_moves.csv.
+        #
+        # ⛔ MOVED UNDER THE GATE 2026-09-17 (Emma). It looked Wikidata-bound because
+        # its collector writes a CSV rather than editing a wiki, and that is the
+        # wrong test: the CSV's ONLY consumer is move_categories.py, which is
+        # lockout-gated and performs wiki PAGE MOVES. A CSV row is not a Wikidata
+        # edit, it is an instruction for one. So the whole chain ends at a wiki that
+        # is unreachable and formally abandoned, and it was taking 328 of 1,812
+        # queue slots -- 18% of the drainer's 5 daily picks -- on answers that could
+        # not land. Same rule as the sections above it (Emma 2026-09-15: "forget
+        # about them"); it was simply not recognised as one of them.
+        items.extend(_build_section("category_translation", CATEGORY_TRANSLATION_INSTRUCTION))
     # Queue #8: review the 161 kana-vs-label romaji-typo candidates (see
     # build_label_typo_review_queue.py + docs/script-rationale/kana_label_mismatch_audit_2026-07.md);
     # the worker researches which side is wrong and fills the ANSWER marker.

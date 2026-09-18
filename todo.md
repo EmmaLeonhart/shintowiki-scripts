@@ -20,8 +20,6 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 
 > ⚠ Most of this section was closed on 2026-09-17 (see the bottom of this file). [`docs/wiki_content_scripting_plans_2026-05.md`](docs/wiki_content_scripting_plans_2026-05.md) still holds the per-item designs, but its recommended build order names four things that are now won't-do — read it as history, not as a plan.
 
-- [ ] **Translate category names in `[[Category:Japanese language category names]]`** → canonical English titles. Deterministic resolvers all SHIPPED (`generate_category_translation_moves.py`, wired monthly before `move_categories`): dated-maintenance transform + Wikidata-anchored resolver + phase-(c) place gazetteer (`の神社`→"Shinto shrines in X", `の寺院`/`の建築物`/`の歴史`/`の重要文化財`; jawiki→enwiki place + P31 gate; `の旧県社`/bare-`郡` verified as having no enwiki category convention → residual, 2026-07-06). **Everything the deterministic resolvers can't confidently name now routes to agentic RAG** (queue #5, 2026-07-06): `build_category_translation_queue.py` writes a work-file per residual category → the cloud remote routine researches the English name → `collect_category_translations.py` folds answers into `category_moves.csv`. So no "guessing-risk" gazetteer to hand-build and no dead human-only queue — the residual drains via RAG. Nothing left to build here.
-
 
 
 ## What was closed on 2026-09-17, and by whose word
