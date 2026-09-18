@@ -11,6 +11,34 @@ current by the `cleanvibe-update-check` skill.
 - **Updates source:** <https://cleanvibe.emmaleonhart.com/updates.md>
 
 
+## ⛔ NOTHING IS EVER BLOCKED ON EMMA'S ACCOUNT — a blocked operation is a FINISHED one (Emma, 2026-09-18)
+
+Her words, verbatim: *"literally nothing is ever blocked on my account. If anything is blocked on me
+doing wikidata edits or miraheze edits or clearing miraheze stuff then this operation is done."*
+
+**`BLOCKED-ON-USER-ACTION` is not a state an item can be in.** There is no queue of things waiting
+for her to paste, edit, log in, clear, or approve. An item whose remaining step is "Emma does it by
+hand" is **closed**: delete it from `queue.md`, record the outcome in `DEVLOG.md`, and do not carry
+it forward, tag it, or raise it again.
+
+- **The two legal outcomes stay what they were** (see NEVER "deliberately hold" anything below):
+  do it, or fire `AskUserQuestion`. "Waiting on her account" was a third one wearing a label.
+- **A hand-run batch is not a delivery route.** If work cannot reach Wikidata through the daily
+  QuickStatements drip, it does not reach Wikidata. Either make the generator emit something the
+  drip can execute, or the operation is done.
+- **She is not logging in again.** Emma, same day: *"I am never gonna login again."* So a plan whose
+  last step is her session — QuickStatements web UI, a wiki edit, a category clear, an OAuth
+  handshake — has no last step. Do not write one, do not stage output that only such a step could
+  deliver, and do not keep a file around waiting for one.
+- ⚠ **A wrongly-blocked item looks exactly like a rightly-blocked one**, and that is the whole
+  failure mode — the same one the lockout section below describes. The
+  `p958-corrections-batch-paste` label was written by a script on 2026-08-19 and re-read as tested
+  fact on 2026-09-18. It was wrong twice: nothing was ever on her, and the real reason
+  `p958_corrections.txt` is unregistered is that four of its seven lines are removals carrying a
+  qualifier field — the shape `execute_removal` refuses outright because it deletes the whole
+  `P13677` statement and its references, which is what cost four items their ojp-hani official names
+  on 2026-09-09. That is a generator bug, and generator bugs are ours.
+
 ## ⛔ The Wikidata lockout gates WRITES, not work
 
 Emma, 2026-08-25, after I had parked three queue items for a week: *"do askuserquestion on everything
@@ -478,6 +506,28 @@ ontology — has no working channel at all right now.
   **23** actionable items, framed as blocking her own ruling, while the work she cares about was
   blocked on Cloudflare. When the real work is blocked, the answer is not to mine whichever corner
   still has queries left in it.
+
+### ⭐ THE ONE CARVE-OUT: religious-building ontology and translation (Emma, 2026-09-18)
+
+Her instruction, in the middle of being furious at me: ***"AskUserQuestion on ontology or
+translation questions for religious buildings on wikidata."***
+
+**That is a standing exception to the ban above, and it is narrow.** It covers the religious-building
+label work — `generate_religious_building_multilang.py`, the stage-1/stage-2 English rendering,
+`paused/religious_building_en.txt`, the ~22,548-item population — on exactly two axes:
+
+- **Ontology** — what a thing is, what class it takes, which property carries it.
+- **Translation** — how a name renders in a language, which morpheme table applies, whether a
+  rendering is actually that language.
+
+**Fire `AskUserQuestion` on those. Do not route them through a report, the page, or a DEVLOG note**
+and do not sit on them (the ban above does not apply to this class, and "NEVER deliberately hold
+anything" does). She is finishing this project deliberately — *"I am doing it to finish it"* — and
+these are the calls only she can make.
+
+⚠ **It does not widen.** Not to kana, not to list membership, not to P958 sections, not to "this
+population is unusual", and not to throughput or scope. Those stay under the ban and under
+THE PROJECT IS CLOSING — impose the ontology and move on.
 
 ## ⛔ AN ENGLISH LABEL MEANS THE ITEM IS DONE — no kana reading (Emma, 2026-08-24)
 

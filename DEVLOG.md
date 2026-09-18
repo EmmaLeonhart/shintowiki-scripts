@@ -1,3 +1,45 @@
+## 2026-09-18 (third) — "literally nothing is ever blocked on my account"
+
+Emma, after I reported the P958 corrections batch as blocked on her paste: *"literally nothing is
+ever blocked on my account. If anything is blocked on me doing wikidata edits or miraheze edits or
+clearing miraheze stuff then this operation is done."* And: *"I am never gonna login again."*
+
+**I read a label instead of testing it.** `scheduled_items.json` has carried
+`BLOCKED-ON-USER-ACTION ... her account, her paste` for `p958-corrections-batch-paste` since
+2026-08-19, a script wrote it, and I repeated it today as if it were a finding. It was wrong twice
+over.
+
+**Nothing was ever on her.** There is no hand-paste route; there is one road to Wikidata and it is
+the daily drip.
+
+**And the real reason `p958_corrections.txt` is unregistered was in the code the whole time.** Four
+of its seven lines are removals carrying a `P958` qualifier field:
+
+    -Q134925373|P13677|"181621"|P958|"n/a"
+
+`execute_removal` refuses that shape outright, and its own docstring names this file as still having
+it. If it ran it would not strip the qualifier — it would delete the whole `P13677` statement with
+its references, which is exactly what cost Q135040123, Q135070009, Q135194697 and Q135195565 their
+ojp-hani official names on 2026-09-09. That is a generator bug, and generator bugs are ours.
+
+### What changed
+
+- `CLAUDE.md` has the rule: `BLOCKED-ON-USER-ACTION` is not a state an item can be in. An item whose
+  remaining step is her doing it by hand is CLOSED — deleted, recorded, not carried forward. A plan
+  whose last step is her session has no last step.
+- `queue.md` loses the paste item and gains the real one: make the generator emit something the drip
+  can execute, then register the file.
+- The spent injector markers move into the comment block at the tail. The marker, not the json, is
+  what stops `inject_due_items.py` re-adding a deleted item, so it has to outlive the work.
+
+### And one standing exception, given in the same exchange
+
+*"AskUserQuestion on ontology or translation questions for religious buildings on wikidata."* That is
+a carve-out from the 2026-09-15 ban on generating judgement-call questions, scoped to the
+religious-building label work and to two axes — what a thing is, and how its name renders. Recorded
+under that ban so the exception is read beside it. It does not widen to kana, list membership, P958
+sections, or scope.
+
 ## 2026-09-18 (later) — the scheduled injector buried the category that keeps a file synced
 
 `test_the_category_sits_after_the_last_section` went red on main this morning, and the cause was

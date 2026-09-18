@@ -30,28 +30,15 @@ from `ATOMIC_FILES`; they are not queue items.
     skip-check, push, then `AskUserQuestion` as the deliverable.
   - [ ] Run the status-report action once more independently as an end-of-session summary.
 
-<!-- scheduled:p958-corrections-batch-paste -->
-## Scheduled — the P958 corrections batch is now pasteable
-
-The Wikidata lockout (`shinto_miraheze/wikidata_editing_lockout.state`) ran to **2026-09-18**
-and its own wording covered *"the hand-run QuickStatements batches"*, so this waited rather
-than being treated as small enough to be an exception. That date has passed.
-
-**Re-read the state file before acting** — the date passing is the expected unlock, but the
-file is the authority, not this text.
-
-Built 2026-08-19 by `modern-quickstatements/generate_p958_corrections.py`. A correction is
-necessarily two lines, because QuickStatements has no verb for overwriting a qualifier.
-
-**Regenerate before pasting** rather than trusting any block written earlier — the generator
-reads live state first, so an already-correct item emits nothing instead of a churn pair.
-
-- **BLOCKED-ON-USER-ACTION** once the date passes: her account, her paste, no date on it and
-  nobody chasing it.
+- [ ] `generate_p958_corrections.py` emits 4 removal lines carrying a `P958` qualifier field —
+  the shape `execute_removal` refuses because it deletes the whole `P13677` statement. Make it
+  emit something the drip can execute, then register `p958_corrections.txt`. Nothing about this
+  was ever a paste.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this
      file, whatever its json records, so the marker has to outlive the work. Each one's
      outcome is in DEVLOG.md under its date. -->
 <!-- scheduled:p361-duplicate-part-of-removals -->
+<!-- scheduled:p958-corrections-batch-paste -->
 
