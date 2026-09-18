@@ -1,3 +1,40 @@
+## 2026-09-17 — The dedication lookup preferred the LONGEST phrase, and lost the feast
+
+Auditing my own tables for another instance of the `santissima` defect found one, systematic, and
+the fix took two steps because the first one could not fire.
+
+**Step 1: longest-string-first is the wrong rule.** `Visitazione della Beata Vergine` matched
+"beata vergine" (13 chars) over "visitation" (10) and came out as plain 聖母 — **losing the
+Visitation, which the table already had**. `Nuestra Señora de la Asunción` lost the Assumption the
+same way. A feast or event names WHICH dedication; a Marian title alone only names who it is to. So
+the lookup now walks `SPECIFIC_DEDICATIONS` before `GENERIC_DEDICATIONS`, longest-first only within
+each group.
+
+**Step 2, and this is why the audit mattered: the fix changed nothing on its own.** The feast table
+was **English-only** while the corpus is Italian, Spanish, Galician, Portuguese and German.
+"visitation" is not a substring of "Visitazione", "assumption" is not one of "Asunción". Added the
+source-language forms — visitazione/visitación/heimsuchung, asunción/assunção, natività/natividad,
+trasfigurazione/verklärung, annunciazione/verkündigung, immacolata/inmaculada/conceição — plus the
+Marian devotions the corpus actually carries: dolores/sorrows, carmine, rosario, milagres, remedios,
+guadalupe, lourdes, fátima.
+
+**A third, smaller one:** "exaltation" and "holy cross" are both exactly 10 characters, so
+`Exaltation of the Holy Cross` broke the tie arbitrarily and rendered as plain 聖十字架. Full phrases
+added; it is 十字架挙栄 now.
+
+Output **7,251 -> 7,712** (ja 2,959 · zh 3,483 · ko 1,270), still zero duplicate labels, zero
+duplicate QIDs, all in `paused/`. Tests 27 -> 38, pinning each rejected rule against the label that
+exposed it, that the two groups are disjoint and cover every phrase, and that specificity does not
+run backwards (a plain "Holy Cross Church" is not upgraded to the feast).
+
+⚠ **Still open and NOT mine to decide: 434 ja lines carry a bare generic 聖母** where the source had
+a qualifier that is not in the table — "Madonna del Pero", "Madonna del Cardello". The label is
+true but less specific than the source. Emitting it is defensible; refusing costs most of the
+Marian output. Put to Emma rather than chosen.
+
+Also checked: two CI label-generator regens landed on top of the stage-1 pause and did not resurrect
+`religious_building_en.txt`. The pause held, and its test still passes.
+
 ## 2026-09-17 — Stage 2 over all 22,548, and a bare modifier that was labelling 354 items wrong
 
 Full run: **ja 2,780 · zh 3,281 · ko 1,190 = 7,251 lines**, all in `paused/`, none in the drip. Zero

@@ -282,6 +282,89 @@ DEDICATIONS = {
     "presentation":     {"ja": "奉献",     "zh": "献堂",   "ko": "봉헌"},
     "all saints":       {"ja": "諸聖人",   "zh": "诸圣",   "ko": "모든 성인"},
     "corpus christi":   {"ja": "聖体",     "zh": "基督圣体", "ko": "성체"},
+    # --- the feasts in the corpus's OWN languages, 2026-09-17 ---
+    # The table was English-only while the corpus is Italian, Spanish, Galician,
+    # Portuguese and German, so the specificity fix could not fire: "visitation"
+    # is not a substring of "Visitazione della Beata Vergine", and "assumption"
+    # is not one of "Nuestra Señora de la Asunción". Both feasts were already
+    # mapped and both were being lost to the generic Marian title.
+    "visitazione":      {"ja": "聖母訪問", "zh": "圣母访亲", "ko": "성모 방문"},
+    "visitación":       {"ja": "聖母訪問", "zh": "圣母访亲", "ko": "성모 방문"},
+    "visitação":        {"ja": "聖母訪問", "zh": "圣母访亲", "ko": "성모 방문"},
+    "heimsuchung":      {"ja": "聖母訪問", "zh": "圣母访亲", "ko": "성모 방문"},
+    "asunción":         {"ja": "聖母被昇天", "zh": "圣母升天", "ko": "성모 승천"},
+    "asuncion":         {"ja": "聖母被昇天", "zh": "圣母升天", "ko": "성모 승천"},
+    "assunção":         {"ja": "聖母被昇天", "zh": "圣母升天", "ko": "성모 승천"},
+    "asunta":           {"ja": "聖母被昇天", "zh": "圣母升天", "ko": "성모 승천"},
+    "natività":         {"ja": "降誕",     "zh": "圣诞",   "ko": "성탄"},
+    "natividad":        {"ja": "降誕",     "zh": "圣诞",   "ko": "성탄"},
+    "natividade":       {"ja": "降誕",     "zh": "圣诞",   "ko": "성탄"},
+    "trasfigurazione":  {"ja": "主の変容", "zh": "主显圣容", "ko": "주님 거룩한 변모"},
+    "transfiguración":  {"ja": "主の変容", "zh": "主显圣容", "ko": "주님 거룩한 변모"},
+    "verklärung":       {"ja": "主の変容", "zh": "主显圣容", "ko": "주님 거룩한 변모"},
+    "annunciazione":    {"ja": "受胎告知", "zh": "圣母领报", "ko": "주님 탄생 예고"},
+    "anunciación":      {"ja": "受胎告知", "zh": "圣母领报", "ko": "주님 탄생 예고"},
+    "anunciação":       {"ja": "受胎告知", "zh": "圣母领报", "ko": "주님 탄생 예고"},
+    "verkündigung":     {"ja": "受胎告知", "zh": "圣母领报", "ko": "주님 탄생 예고"},
+    "esaltazione":      {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+    "exaltation":       {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+    "exaltación":       {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+    "immacolata":       {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
+    "inmaculada":       {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
+    "concepción":       {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
+    "conceição":        {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
+    "dolores":          {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
+    "sorrows":          {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
+    "dolorosa":         {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
+    "carmen":           {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
+    "carmine":          {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
+    "rosario":          {"ja": "ロザリオの聖母", "zh": "玫瑰圣母", "ko": "로사리오의 성모"},
+    "rosenkranz":       {"ja": "ロザリオの聖母", "zh": "玫瑰圣母", "ko": "로사리오의 성모"},
+    "milagres":         {"ja": "奇跡の聖母", "zh": "显灵圣母", "ko": "기적의 성모"},
+    "remedios":         {"ja": "救いの聖母", "zh": "济助圣母", "ko": "구원의 성모"},
+    "guadalupe":        {"ja": "グアダルーペの聖母", "zh": "瓜达卢佩圣母", "ko": "과달루페의 성모"},
+    "lourdes":          {"ja": "ルルドの聖母", "zh": "露德圣母", "ko": "루르드의 성모"},
+    "fátima":           {"ja": "ファティマの聖母", "zh": "法蒂玛圣母", "ko": "파티마의 성모"},
+    # Full phrases, because "exaltation" and "holy cross" are both 10 characters
+    # and the tie was broken arbitrarily -- Exaltation of the Holy Cross came out
+    # as plain 聖十字架 and lost the feast.
+    "exaltation of the holy cross": {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+    "esaltazione della santa croce": {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+    "esaltazione della croce": {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+    "kreuzerhöhung":    {"ja": "十字架挙栄", "zh": "光荣十字圣架", "ko": "십자가 현양"},
+}
+
+# A feast or event names WHICH dedication; a Marian title alone only names who it
+# is to. When both appear, the feast is the dedication.
+SPECIFIC_DEDICATIONS = {
+    "holy trinity", "santissima trinità", "santissima trinita", "holy cross",
+    "santa cruz", "vera cruz", "heilig kreuz", "kreuz", "holy spirit",
+    "assumption", "assunta", "mariä himmelfahrt", "himmelfahrt",
+    "nativity", "transfiguration", "ascension", "dormition", "annunciation",
+    "santissima annunziata", "visitation", "intercession", "immaculate",
+    "sacred heart", "herz jesu", "sagrado corazón", "resurrection", "epiphany",
+    "presentation", "all saints", "corpus christi", "santissimo sacramento",
+    "santissimo redentore", "santissimo crocifisso", "santissimo rosario",
+    # the same feasts in the corpus's own languages
+    "visitazione", "visitación", "visitação", "heimsuchung",
+    "asunción", "asuncion", "assunção", "asunta",
+    "natività", "natividad", "natividade",
+    "trasfigurazione", "transfiguración", "verklärung",
+    "annunciazione", "anunciación", "anunciação", "verkündigung",
+    "esaltazione", "exaltation", "exaltación",
+    "immacolata", "inmaculada", "concepción", "conceição",
+    "dolores", "sorrows", "dolorosa", "carmen", "carmine",
+    "rosario", "rosenkranz", "milagres", "remedios",
+    "guadalupe", "lourdes", "fátima",
+    "exaltation of the holy cross", "esaltazione della santa croce",
+    "esaltazione della croce", "kreuzerhöhung",
+}
+
+# Generic titles — checked only after every feast has had its chance.
+GENERIC_DEDICATIONS = {
+    "our lady", "madonna", "theotokos", "notre dame", "nosa señora",
+    "nossa senhora", "nuestra señora", "virxe", "beata vergine",
+    "santissima vergine", "friedens",
 }
 
 # --------------------------------------------------------------------------
@@ -370,10 +453,17 @@ def dedication(label, lang):
     # phrase lookup saw "notre-dame" and missed. 111 labels turned on this alone.
     low = re.sub(r"[-–—']", " ", _norm(label))
     low = re.sub(r"\s+", " ", low)
-    # Longest phrase first, so "sacred heart" beats a bare "heart".
-    for phrase in sorted(DEDICATIONS, key=len, reverse=True):
-        if phrase in low:
-            return DEDICATIONS[phrase][lang]
+    # ⛔ Priority, NOT string length. Sorting by length let "beata vergine" (13)
+    # beat "visitation" (10) on `Visitazione della Beata Vergine`, and
+    # "nuestra señora" beat "assumption" on `Nuestra Señora de la Asunción` --
+    # dropping the very feast the label names, which the table already had. A
+    # feast or event is always more specific than the Marian title carrying it,
+    # so SPECIFIC is checked first and only then the generic titles; within each
+    # group, longest first so "sacred heart" still beats a bare "heart".
+    for group in (SPECIFIC_DEDICATIONS, GENERIC_DEDICATIONS):
+        for phrase in sorted(group, key=len, reverse=True):
+            if phrase in low:
+                return DEDICATIONS[phrase][lang]
     tokens, saw_saint = parse_name(label)
     if not tokens:
         return None

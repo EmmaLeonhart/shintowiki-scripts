@@ -161,3 +161,64 @@ def test_stopwords_and_names_do_not_overlap():
 def test_english_is_not_emitted():
     """Stage 1's English is paused and is not re-derived here."""
     assert m.render("St. Laurentius", "Q16970", "en", place="Freden") is None
+
+
+# --------------------------------------------------------------------------
+# Specificity: a feast beats the Marian title carrying it
+# --------------------------------------------------------------------------
+
+def test_every_dedication_is_grouped():
+    """A phrase in neither group is unreachable — the lookup walks the two
+    groups, not the dict."""
+    ungrouped = set(m.DEDICATIONS) - (m.SPECIFIC_DEDICATIONS | m.GENERIC_DEDICATIONS)
+    assert not ungrouped, f"dedications in no group: {sorted(ungrouped)}"
+
+
+def test_the_groups_do_not_overlap():
+    both = m.SPECIFIC_DEDICATIONS & m.GENERIC_DEDICATIONS
+    assert not both, f"phrase is both specific and generic: {sorted(both)}"
+
+
+@pytest.mark.parametrize("label,expect", [
+    # Sorting by string LENGTH lost the feast in each of these.
+    ("Visitazione della Beata Vergine", "聖母訪問"),
+    ("Nuestra Señora de la Asunción", "聖母被昇天"),
+    ("Our Lady of Sorrows", "悲しみの聖母"),
+    ("Nossa Senhora da Conceição", "無原罪の御宿り"),
+    # ...and these two are both 10 characters, so the tie was arbitrary.
+    ("Exaltation of the Holy Cross", "十字架挙栄"),
+])
+def test_a_feast_beats_the_marian_title_carrying_it(label, expect):
+    got = m.render(label, "Q16970", "ja", place="X")
+    assert got == "Xの" + expect + "教会", got
+
+
+def test_a_bare_title_still_resolves():
+    """The generic titles are a fallback, not something the fix removed."""
+    assert m.render("Madonna", "Q16970", "ja", place="X") == "Xの聖母教会"
+
+
+def test_a_plain_holy_cross_is_not_upgraded_to_the_feast():
+    """Specificity must not run the other way."""
+    assert m.render("Holy Cross Church", "Q16970", "ja",
+                    place="X") == "Xの聖十字架教会"
+
+
+def test_the_feast_table_covers_the_corpus_languages():
+    """English-only feast names could not fire on an Italian or Spanish label,
+    which is why the specificity fix did nothing until these were added."""
+    for phrase in ("visitazione", "asunción", "natividade", "trasfigurazione",
+                   "anunciación", "immacolata", "verkündigung"):
+        assert phrase in m.DEDICATIONS, f"{phrase} missing"
+        assert phrase in m.SPECIFIC_DEDICATIONS, f"{phrase} not marked specific"
+
+
+def test_a_bare_modifier_is_never_a_dedication():
+    """The santissima defect: a modifier matching as a whole dedication swallows
+    what it qualifies. 354 labels came out as 至聖教会, 'Most Holy Church'."""
+    for modifier in ("santissima", "santissimo"):
+        assert modifier not in m.DEDICATIONS, (
+            f"{modifier!r} is a modifier, not a dedication; as a bare entry it "
+            f"matches before the thing it qualifies"
+        )
+    assert m.render("Chiesa Santissima", "Q16970", "ja", place="X") is None
