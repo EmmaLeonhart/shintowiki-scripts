@@ -17,7 +17,8 @@ sitting in an `en` label), and the morpheme tables can render a proper English
 one. A label that already reads as English is left alone — "Church of Mümliswil"
 and "Zangilan Mosque" need nothing.
 
-Output: paused/stage1_en_replacements.txt. Not in the drip.
+Output: quickstatements/stage1_en_replacements.txt (rides the drip);
+provenance in paused/stage1_en_replacements.log.
 
 Usage: python generate_stage1_en_replacements.py
 """
@@ -35,7 +36,8 @@ import religious_building_morphemes as morph  # noqa: E402
 SRC = os.path.join(HERE, "paused", "religious_building_en.txt")
 LANDED = os.path.join(HERE, "paused", "stage1_landed.json")
 CACHE = os.path.join(HERE, "religious_building_cache.json")
-OUT = os.path.join(HERE, "paused", "stage1_en_replacements.txt")
+OUT = os.path.join(HERE, "quickstatements", "stage1_en_replacements.txt")
+LOG = os.path.join(HERE, "paused", "stage1_en_replacements.log")
 
 # An English type word means the label already reads as English enough to leave.
 _TYPE_EN = re.compile(
@@ -58,7 +60,7 @@ def main():
             if landed.get(q) and landed[q].strip() == p.strip()]
     print("stage-1 labels live on Wikidata: %d" % len(ours))
 
-    lines, skipped = [], {"already English": 0, "cannot render": 0,
+    lines, provenance, skipped = [], [], {"already English": 0, "cannot render": 0,
                           "no P31 mapping": 0, "same as current": 0}
     for qid in sorted(ours):
         current = landed[qid]
@@ -76,14 +78,24 @@ def main():
         if better.strip() == current.strip():
             skipped["same as current"] += 1
             continue
-        lines.append('%s|Len|"%s"\t# was: %s' % (qid, better, current))
+        # ⛔ QS line ONLY. A trailing "# was:" comment after a TAB does not
+        # survive the drip: select_label_proposals.py does s.replace("\t", "|"),
+        # so the comment becomes a QuickStatements FIELD and every one of these
+        # lines is a malformed command. Provenance goes to a sibling .log.
+        lines.append('%s|Len|"%s"' % (qid, better))
+        provenance.append('%s\t%s\t%s' % (qid, current, better))
 
     with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join(lines) + ("\n" if lines else ""))
-    print("%d replacements -> paused/%s" % (len(lines), os.path.basename(OUT)))
+    with open(LOG, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("qid\twas\tnow\n" + "\n".join(provenance)
+                 + ("\n" if provenance else ""))
+    print("%d replacements -> quickstatements/%s"
+          % (len(lines), os.path.basename(OUT)))
     for k, v in sorted(skipped.items(), key=lambda kv: -kv[1]):
         print("  skipped %-18s %d" % (k, v))
-    print("\n⚠ paused/, not the drip.")
+    print("\nOn the daily drip; provenance in paused/%s"
+          % os.path.basename(LOG))
     return 0
 
 

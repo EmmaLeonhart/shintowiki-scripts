@@ -16,7 +16,11 @@ Emma's decisions, 2026-09-17, in the order they were made:
   (5,540 of 22,548) across **96** distinct dedications.
 * **Place first, possessive** — `<place>の<dedication><type>`.
 * **Everything in the tree**, destroyed buildings included.
-* **Output to `paused/`**, for review before anything is submitted.
+* **Output to `quickstatements/`** — ordinary generated output, on the daily
+  drip like every other language file. It sat in `paused/` until 2026-09-18;
+  Emma: *"why is all of this shit paused instead of part of the pipeline as
+  expected"*. There was no defect in it, and a review directory nobody is
+  obliged to read is the human-gate CLAUDE.md warns against.
 
 ## Why the place is mandatory, and not a nicety
 
@@ -78,7 +82,7 @@ from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT  # noqa: E40
 
 API = "https://www.wikidata.org/w/api.php"
 SRC = os.path.join(HERE, "paused", "religious_building_en.txt")
-OUTDIR = os.path.join(HERE, "paused")
+OUTDIR = os.path.join(HERE, "quickstatements")
 CACHE = os.path.join(HERE, "religious_building_cache.json")
 LANGS = ("ja", "zh", "ko")
 BATCH = 50
@@ -222,13 +226,12 @@ def main():
         path = os.path.join(OUTDIR, "religious_building_%s.txt" % lg)
         with open(path, "w", encoding="utf-8", newline="\n") as fh:
             fh.write("\n".join(out[lg]) + ("\n" if out[lg] else ""))
-        print("  %-3s %6d lines -> paused/%s" % (lg, len(out[lg]),
-                                                 os.path.basename(path)))
+        print("  %-3s %6d lines -> quickstatements/%s"
+              % (lg, len(out[lg]), os.path.basename(path)))
     print("\nskipped:")
     for k, v in sorted(reasons.items(), key=lambda kv: -kv[1]):
         print("  %-20s %6d" % (k, v))
-    print("\n⚠ Output is in paused/ and is NOT in the drip. Move a file into "
-          "quickstatements/ to submit it.")
+    print("\nOn the daily drip via select_label_proposals.py.")
     return 0
 
 

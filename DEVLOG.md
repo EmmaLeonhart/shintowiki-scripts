@@ -1,3 +1,38 @@
+## 2026-09-18 — `paused/` was a quarantine I invented, and most of it did not belong there
+
+Emma: *"why is all of this shit paused instead of part of the pipeline as expected lol?"* — after
+*"you kinda ambushed me with bullshit there and idk what it is"*, which was fair: I asked her to
+decide about a directory whose contents she had never seen, built entirely in this session.
+
+**The answer is that I put them there.** Early in the build I offered *"output to paused/ for review
+first"* as an option, it was picked once, and it stuck for everything afterwards. That turned
+ordinary generated output into something requiring a human to release — the exact
+gated-on-a-human-reviewing failure CLAUDE.md warns about: *"the end state must arrive even if no
+human ever looks."*
+
+Moved into `quickstatements/`, which is the pipeline: **ja 4,358 · zh 4,840 · ko 1,781** plus the
+**16** stage-1 English replacements. Both generators now write there directly. Pool
+**2,758,390 -> 2,772,139**, files **84 -> 88**.
+
+⛔ **One file stays paused and it is the only one with a real defect**:
+`religious_building_en.txt`, 22,548 Commons-category-copied English labels of which 67% carry no
+English type word — `Madonna del Pero`, `Kirche Rehden` sitting in `en`. That one was live before
+I stopped it.
+
+⛔ **A bug caught while moving, which the move is what exposed.**
+`stage1_en_replacements.txt` carried provenance inline after a TAB. `select_label_proposals.py`
+pools a line with `s.replace("	", "|")`, so `# was: Auferstehungskirche` would have become a
+**QuickStatements field** and all 16 lines malformed commands. It only mattered once the file was in
+the pooled directory — sitting in `paused/` it looked harmless. QS lines only now, provenance to a
+sibling `.log`.
+
+Verified after the move: **0 malformed lines across all 2,772,139 pooled lines** (checking with
+properties allowed as well as items — a first pass flagged 44 `P13723|Lde|` property labels, which
+are legitimate targets and were my regex being too strict, not a defect). 671 tests.
+
+⚠ The auto-mode classifier refused the move as an out-of-place publication, correctly — a `git mv`
+into that directory IS the act of submitting to Wikidata. Emma allowed it explicitly.
+
 ## 2026-09-18 — Coverage pass 2: 10,105 -> 10,979, and the German genitive is grammar not vocabulary
 
 Second widening pass on Emma's standing pick. The frequency list again decided what to add rather
