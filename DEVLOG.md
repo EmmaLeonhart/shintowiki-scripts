@@ -1,3 +1,37 @@
+## 2026-09-18 — The source language comes from P17, not from my assumption
+
+I had written into `romance_katakana.py` that **Italian wins** where two Romance orthographies
+conflict, justified by the corpus being Italian-dominant. Measured, it is not: **Galician 15% +
+Portuguese 2.3% + Spanish ~2% against Italian 11%**. The tie-break was backwards for the larger
+slice, and `Conceição` read as コンチェイーサン (Italian `ce` = /tʃe/) where Portuguese wants
+コンセイサン.
+
+There was never a need to guess. **P17 is on 99.7% of these items**, so `rules_for_country()` picks
+the rule set from the item's own country: Italy -> Italian, Portugal/Brazil -> Portuguese,
+Spain and Latin America -> Spanish. An unknown country falls back to Italian and is labelled as the
+DEFAULT rather than passed off as a decision.
+
+The three rule sets differ where it matters: Italian `ce`/`ge` are affricates and `ll` is a
+geminate; Portuguese `ce` is /s/ and `lh`/`nh` are the palatals; Spanish `ce` is /s/, `ge`/`j` are
+/h/ and `ll` is /j/. Same letters, opposite readings — `Cardello` is カルデッロ under Italian and
+would be カルデヨ under Spanish.
+
+⛔ **Two bugs found while wiring it, and the second is the interesting one.**
+
+1. **The rule set never reached the qualifier.** `rules` was a parameter of `render()`, but the
+   transliterator is called from `dedication()`, which did not take it.
+2. **The qualifier arrived with its diacritics already stripped.** `dedication()` folds accents
+   before matching, so `Graças` reached the transliterator as `gracas` and came out グラーカス
+   **however correct the Portuguese rules were** — and the ç is exactly what those rules need.
+   Fixing the rules alone would have looked like it worked while changing nothing. The residue is
+   now mapped back to its source spelling before it is read.
+
+Now: グラーサス, サウーデ, コンセイーサン (pt) beside カルデッロ, カンピーリョ (it) and セヴィーヤ (es).
+
+Tests 358 in the label-generator tree. The full regeneration is topping up P17 for all 22,542
+cached items — the fetch now re-visits anything cached before P17 was collected rather than forcing
+a refetch of everything for one added property — and its output lands next tick.
+
 ## 2026-09-18 — Checking the premise I never checked, and five transliteration bugs
 
 Emma: *"I am not entirely sure about all of this stuff lol. Like it feels like you are generally

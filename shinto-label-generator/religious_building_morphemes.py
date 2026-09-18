@@ -595,15 +595,22 @@ except ImportError:                                    # pragma: no cover
 _QUALIFIER_LANGS = {"ja"}
 
 
-def qualifier_kana(tokens):
+def qualifier_kana(tokens, rules=None):
     """Katakana for an unmapped place qualifier, or None.
+
+    `rules` picks the source language's orthography and comes from the item's
+    own P17 -- Italian ce is /tʃe/ while Portuguese and Spanish ce is /s/, and
+    guessing one for all of them was backwards for the larger slice of this
+    corpus. Absent a country, the module default applies.
 
     Refuses unless EVERY token reads as Romance, so a mixed or non-Romance
     qualifier produces nothing instead of a half-transliteration.
     """
     if not tokens or _romance_kana is None:
         return None
-    return _romance_kana(" ".join(tokens))
+    if rules is None:
+        return _romance_kana(" ".join(tokens))
+    return _romance_kana(" ".join(tokens), rules)
 
 
 def _qualifier_residue(folded_label, matched_phrase):
@@ -634,7 +641,25 @@ def _qualifier_residue(folded_label, matched_phrase):
     return out
 
 
-def dedication(label, lang):
+def _unfold_tokens(label, folded_tokens):
+    """Map folded residue tokens back to their ORIGINAL spelling.
+
+    ⛔ `dedication()` folds accents before matching, so by the time a qualifier
+    is extracted its ç and ã are already gone -- Graças reached the
+    transliterator as "gracas" and came out グラーカス however good the
+    Portuguese rules were. The diacritics are exactly what those rules need, so
+    the residue is mapped back to the source spelling before it is read.
+    """
+    originals = {}
+    for raw in re.split(r"[\s/,\.]+",
+                        re.sub(r"[-–—'’]", " ", label)):
+        tok = raw.strip(" .,'’").lower()
+        if tok:
+            originals.setdefault(_fold(tok), tok)
+    return [originals.get(t, t) for t in folded_tokens]
+
+
+def dedication(label, lang, rules=None):
     """The dedication rendered in `lang`, or None if any part is unknown."""
     # Hyphens joined the phrase in the corpus ("Notre-Dame", "Herz-Jesu"), so the
     # phrase lookup saw "notre-dame" and missed. 111 labels turned on this alone.
@@ -675,7 +700,7 @@ def dedication(label, lang):
             # refusal stands.
             if lang not in _QUALIFIER_LANGS:
                 return None
-            kana = qualifier_kana(residue)
+            kana = qualifier_kana(_unfold_tokens(label, residue), rules)
             if not kana:
                 return None
             return kana + "の" + DEDICATIONS[folded[phrase]][lang]
@@ -818,7 +843,7 @@ def render_en(label, p31):
     return "%s of %s" % (type_words["en"], en)
 
 
-def render(label, p31, lang, place=None):
+def render(label, p31, lang, place=None, rules=None):
     """The label in `lang`, or None when any piece is unknown.
 
     `place` is the P131 area's OWN label in `lang` — passed in, never derived
@@ -841,7 +866,7 @@ def render(label, p31, lang, place=None):
     place = clean_place(place)
     if not place:
         return None
-    ded = dedication(label, lang)
+    ded = dedication(label, lang, rules)
     if not ded:
         return None
     return place + _PLACE_JOIN[lang] + ded + type_words[lang]

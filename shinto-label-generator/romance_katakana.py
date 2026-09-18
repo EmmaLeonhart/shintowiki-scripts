@@ -110,66 +110,101 @@ def is_romance_shaped(word):
     return True
 
 
-def _romanise(word):
+# --------------------------------------------------------------------------
+# Per-language rules, chosen from the item's own P17 rather than assumed
+# --------------------------------------------------------------------------
+# ⛔ An earlier version applied Italian rules to everything and said so in a
+# comment, on the belief that the corpus was Italian-dominant. Measured, it is
+# not: Galician 15% + Portuguese 2.3% + Spanish ~2% against Italian 11%. So the
+# tie-break was backwards for the larger slice, and `Conceição` read as
+# コンチェイーサン (Italian ce = /tʃe/) where Portuguese wants コンセイサン.
+#
+# There is no need to guess at all: P17 is present on 99.7% of these items.
+
+# Shared by every Romance language here.
+_COMMON_HEAD = [("qu", "k"), ("gue", "ge"), ("gui", "gi"),
+                ("que", "ke"), ("qui", "ki")]
+_COMMON_TAIL = [("x", "ks"), ("c", "k"), ("Ĉ", "ch")]
+
+_RULES = {
+    # Italian: soft c/g are affricates, gn/gli are palatals, z is ts, double
+    # consonants are geminates.
+    "it": _COMMON_HEAD + [
+        ("cch", "kk"), ("ggh", "gg"),
+        ("chi", "ki"), ("che", "ke"), ("cha", "ka"), ("cho", "ko"),
+        ("ghi", "gi"), ("ghe", "ge"),
+        ("h", ""),
+        ("scia", "sha"), ("scio", "sho"), ("sciu", "shu"),
+        ("sci", "shi"), ("sce", "she"), ("sc", "sk"),
+        ("cia", "Ĉa"), ("cio", "Ĉo"), ("ciu", "Ĉu"),
+        ("ce", "Ĉe"), ("ci", "Ĉi"),
+        ("gia", "ja"), ("gio", "jo"), ("giu", "ju"), ("ge", "je"), ("gi", "ji"),
+        ("gn", "ny"), ("gli", "ry"), ("gl", "l"),
+        ("z", "ts"),
+    ] + _COMMON_TAIL,
+    # Portuguese: soft c/g are fricatives, lh/nh are the palatals, z is z,
+    # and ç/ão are handled before folding.
+    "pt": _COMMON_HEAD + [
+        ("ch", "sh"),
+        ("lh", "ry"), ("nh", "ny"),
+        ("h", ""),
+        ("ce", "se"), ("ci", "si"),
+        ("gia", "ja"), ("gio", "jo"), ("giu", "ju"), ("ge", "je"), ("gi", "ji"),
+        ("ss", "s"), ("z", "z"), ("j", "j"),
+    ] + _COMMON_TAIL,
+    # Spanish: soft c is s, g before e/i is h, j is h, ll is y, ñ is ny.
+    "es": _COMMON_HEAD + [
+        ("ch", "Ĉ"),
+        ("ll", "y"), ("h", ""),
+        ("ce", "se"), ("ci", "si"),
+        ("ge", "he"), ("gi", "hi"), ("ja", "ha"), ("jo", "ho"), ("ju", "hu"),
+        ("je", "he"), ("ji", "hi"),
+        ("z", "s"),
+    ] + _COMMON_TAIL,
+}
+DEFAULT_RULES = "it"
+
+# P17 country QID -> which rule set. Anything absent falls back to DEFAULT_RULES.
+COUNTRY_RULES = {
+    "Q38": "it",                                   # Italy
+    "Q45": "pt", "Q155": "pt", "Q1029": "pt", "Q916": "pt",   # PT, BR, MZ, AO
+    "Q29": "es", "Q96": "es", "Q414": "es", "Q739": "es",     # ES, MX, AR, CO
+    "Q419": "es", "Q298": "es", "Q717": "es", "Q736": "es",   # PE, CL, VE, EC
+    "Q77": "es", "Q750": "es", "Q241": "es", "Q800": "es",    # UY, BO, CU, CR
+    "Q774": "es", "Q783": "es", "Q811": "es", "Q736": "es",   # GT, HN, NI
+}
+
+
+def rules_for_country(qid):
+    """Which rule set an item's P17 implies."""
+    return COUNTRY_RULES.get(qid, DEFAULT_RULES)
+
+
+def _romanise(word, rules=DEFAULT_RULES):
     """Romance spelling -> a plain consonant/vowel string kana can be built from.
 
-    The digraphs are the whole reason this is language-specific:
-      * Italian `ch`/`gh` are hard K/G before i and e — Chiesa is KI, not CHI.
-      * Italian `ci`/`gi` before a vowel are CH/J with the i silent — Campiglio.
-      * `gn` is NY, `gl` before i is LY.
-      * Spanish `ñ` is NY, `qu` is K, `x` is KS.
-      * Portuguese `lh` is LY, `nh` is NY, final `-ão` is AN.
+    The digraphs are the whole reason this is language-specific, and why the
+    rule set is chosen per item rather than fixed:
+      * Italian `ch`/`gh` are hard K/G, `ci`/`ge` are affricates, `gn`/`gli` are
+        palatals, `z` is TS.
+      * Portuguese `ce`/`ci` are S, `lh`/`nh` are the palatals, `ch` is SH.
+      * Spanish `ce`/`ci` are S, `ge`/`gi`/`j` are H, `ll` is Y.
 
-    ⚠ Where two Romance languages disagree, **Italian wins**, because the corpus
-    is Italian-dominant (Madonna del/di, San, Chiesa). Spanish `ll` = Y is
-    therefore NOT applied: it was turning the Italian geminate in `Cardello`
-    into カルデヨ instead of カルデッロ. Spanish names with `ll` come out with a
-    geminate, which is the cost of that choice and is stated rather than hidden.
+    ⛔ The sentinel Ĉ is not decoration: the leftover ("c","k") would otherwise
+    rewrite the c of a `ch` a soft-c rule had just produced. Città -> クヒッタ.
     """
     if not is_romance_shaped(word):
         return None
     # ⛔ Before folding: the cedilla and the tilde are NOT stress marks, they
     # change the sound. _fold() strips combining marks, so ç became a bare c and
     # then k -- Graças came out グラーカス instead of グラーサス -- and the "ão"
-    # rule below could never match a string the fold had already flattened.
+    # rule could never match a string the fold had already flattened.
     w = word.lower()
     for a, b in (("ç", "s"), ("ãe", "ain"), ("ão", "an"), ("õe", "oin"),
-                 ("ã", "an"), ("õ", "on")):
+                 ("ã", "an"), ("õ", "on"), ("ñ", "ny")):
         w = w.replace(a, b)
     w = _fold(w)
-    subs = [
-        # 1. endings and qu-
-        ("qu", "k"), ("gue", "ge"), ("gui", "gi"),
-        ("que", "ke"), ("qui", "ki"),
-        # 2. hard ch/gh BEFORE the silent-h strip
-        ("cch", "kk"), ("ggh", "gg"),
-        ("chi", "ki"), ("che", "ke"), ("cha", "ka"), ("cho", "ko"),
-        ("ghi", "gi"), ("ghe", "ge"),
-        # 3. Portuguese lh/nh, also before the strip -- they are not silent h
-        ("lh", "ry"), ("nh", "ny"),
-        # 4. ⛔ NOW strip the remaining silent h. This MUST come before any rule
-        #    that PRODUCES an h: it used to sit at the end of the list and ate
-        #    the h out of the sh/ch this function had just created, so Brescia
-        #    came out ブレサ instead of ブレシア.
-        ("h", ""),
-        # 5. sc- before c-, or "scia" loses to the "cia" rule
-        ("scia", "sha"), ("scio", "sho"), ("sciu", "shu"),
-        ("sci", "shi"), ("sce", "she"), ("sc", "sk"),
-        # 6. soft c/g
-        # ⛔ Sentinel, not "ch": the leftover ("c","k") below would otherwise
-        # rewrite the c of a ch this rule had just produced. Città -> クヒッタ.
-        ("cia", "Ĉa"), ("cio", "Ĉo"), ("ciu", "Ĉu"),
-        ("ce", "Ĉe"), ("ci", "Ĉi"),
-        ("gia", "ja"), ("gio", "jo"), ("giu", "ju"), ("ge", "je"),
-        ("gi", "ji"),
-        # 7. the palatals
-        ("gn", "ny"), ("gli", "ry"), ("gl", "l"),
-        # 8. leftovers
-        ("z", "ts"), ("x", "ks"), ("c", "k"),
-        # the sentinel goes back to ch only AFTER the leftover c rule has run
-        ("Ĉ", "ch"),
-    ]
-    for a, b in subs:
+    for a, b in _RULES.get(rules, _RULES[DEFAULT_RULES]):
         w = w.replace(a, b)
     return w or None
 
@@ -237,7 +272,7 @@ def _stress_unit(vowel_units, word):
     return groups[-2][-1][0]
 
 
-def to_katakana(word):
+def to_katakana(word, rules=DEFAULT_RULES):
     """Katakana for one Romance word, or None if it cannot be read.
 
     ⚠ **Vowel length is applied by RULE, and the rule is not universal.** Romance
@@ -249,7 +284,7 @@ def to_katakana(word):
     (Pero, Cardello, Campiglio, Tábuas), essentially none of which have an
     established Japanese exonym to conflict with.
     """
-    w = _romanise(word)
+    w = _romanise(word, rules)
     if not w:
         return None
     out = []
@@ -311,7 +346,7 @@ def to_katakana(word):
     return "".join(_lengthen(out, _stress_unit(vowel_units, word)))
 
 
-def place_to_katakana(phrase):
+def place_to_katakana(phrase, rules=DEFAULT_RULES):
     """Katakana for a multi-word place, or None if ANY word fails.
 
     Partial output would be a half-transliterated name, which is worse than
@@ -324,7 +359,7 @@ def place_to_katakana(phrase):
         return None
     parts = []
     for w in words:
-        kana = to_katakana(w)
+        kana = to_katakana(w, rules)
         if not kana:
             return None
         parts.append(kana)

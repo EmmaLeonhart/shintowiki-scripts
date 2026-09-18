@@ -136,3 +136,37 @@ def test_the_ordering_bugs_stay_fixed(word, expect):
 def test_a_geminate_survives():
     for w in ("Assisi", "Nossa", "Cardello"):
         assert "ッ" in r.to_katakana(w), w
+
+
+# --------------------------------------------------------------------------
+# Per-language rules, chosen from P17
+# --------------------------------------------------------------------------
+
+def test_the_country_picks_the_rule_set():
+    assert r.rules_for_country("Q38") == "it"     # Italy
+    assert r.rules_for_country("Q45") == "pt"     # Portugal
+    assert r.rules_for_country("Q155") == "pt"    # Brazil
+    assert r.rules_for_country("Q29") == "es"     # Spain
+    assert r.rules_for_country("Q414") == "es"    # Argentina
+    assert r.rules_for_country("Q183") == r.DEFAULT_RULES   # Germany -> default
+
+
+@pytest.mark.parametrize("word,rules,expect", [
+    # ⛔ The case that proved "Italian wins" was backwards: Italian ce is an
+    # affricate, Portuguese and Spanish ce is /s/.
+    ("Conceição", "pt", "コンセイーサン"),
+    ("Conceição", "it", "コンチェイーサン"),
+])
+def test_soft_c_differs_by_language(word, rules, expect):
+    assert r.to_katakana(word, rules) == expect
+
+
+def test_spanish_ll_is_y_and_italian_ll_is_a_geminate():
+    """The same two letters, opposite readings. Applying one rule to both was
+    the bug: Cardello came out カルデヨ under Spanish rules."""
+    assert r.to_katakana("Sevilla", "es") == "セヴィーヤ"
+    assert r.to_katakana("Cardello", "it") == "カルデッロ"
+
+
+def test_the_default_is_still_italian():
+    assert r.to_katakana("Cardello") == r.to_katakana("Cardello", "it")

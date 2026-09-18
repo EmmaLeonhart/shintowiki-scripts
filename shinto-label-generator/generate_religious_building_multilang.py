@@ -60,6 +60,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 import religious_building_morphemes as morph  # noqa: E402
+try:
+    from romance_katakana import rules_for_country as _rules_for
+except ImportError:                                    # pragma: no cover
+    def _rules_for(_qid):
+        return None
 
 import os as _uos, sys as _usys  # noqa: E402
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
@@ -124,11 +129,15 @@ def fetch(qids, refresh=False):
     cache.setdefault("items", {})
     cache.setdefault("places", {})
 
-    todo = [q for q in qids if q not in cache["items"]]
+    # Also top up items cached before P17 was fetched, rather than forcing a
+    # full refetch of all 22,542 for one added property.
+    todo = [q for q in qids
+            if q not in cache["items"] or "p17" not in cache["items"][q]]
     for i in range(0, len(todo), BATCH):
         for qid, ent in _get(todo[i:i + BATCH], "claims").items():
             cache["items"][qid] = {"p31": _claim_id(ent, "P31"),
-                                   "p131": _claim_id(ent, "P131")}
+                                   "p131": _claim_id(ent, "P131"),
+                                   "p17": _claim_id(ent, "P17")}
         time.sleep(THROTTLE)
 
     places = {v["p131"] for v in cache["items"].values() if v.get("p131")}
@@ -164,6 +173,8 @@ def build(rows, cache):
             reasons["no P131"] += 1
             continue
         place_labels = cache["places"].get(meta["p131"]) or {}
+        # The source language comes from the item's own country, not a guess.
+        rules = _rules_for(meta.get("p17"))
         if morph.dedication(label, "ja") is None:
             reasons["unknown dedication"] += 1
             continue
@@ -172,7 +183,8 @@ def build(rows, cache):
             if not place:
                 reasons["no place label"] += 1
                 continue
-            rendered = morph.render(label, meta["p31"], lg, place=place)
+            rendered = morph.render(label, meta["p31"], lg, place=place,
+                                    rules=rules)
             if not rendered:
                 continue
             # A duplicate label is the failure this whole design exists to avoid;

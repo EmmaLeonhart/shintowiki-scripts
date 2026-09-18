@@ -434,3 +434,17 @@ def test_a_mapped_devotion_is_not_transliterated():
 
 def test_a_bare_title_is_untouched_by_the_qualifier_path():
     assert m.render("Madonna", "Q16970", "ja", place="X") == "Xの聖母教会"
+
+
+def test_the_qualifier_keeps_its_diacritics():
+    """⛔ dedication() folds accents before matching, so a qualifier reached the
+    transliterator already stripped -- Graças arrived as "gracas" and came out
+    グラーカス however good the Portuguese rules were. The residue is mapped back
+    to its source spelling first."""
+    assert m.render("Nossa Senhora das Graças", "Q16970", "ja",
+                    place="X", rules="pt") == "Xのグラーサスの聖母教会"
+
+
+def test_the_rule_set_reaches_the_qualifier():
+    it = m.render("Madonna del Cardello", "Q16970", "ja", place="X", rules="it")
+    assert it == "Xのカルデッロの聖母教会"
