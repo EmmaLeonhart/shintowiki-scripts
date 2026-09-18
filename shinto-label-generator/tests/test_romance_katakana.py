@@ -148,7 +148,7 @@ def test_the_country_picks_the_rule_set():
     assert r.rules_for_country("Q155") == "pt"    # Brazil
     assert r.rules_for_country("Q29") == "es"     # Spain
     assert r.rules_for_country("Q414") == "es"    # Argentina
-    assert r.rules_for_country("Q183") == r.DEFAULT_RULES   # Germany -> default
+    assert r.rules_for_country("Q183") is None    # Germany -> refuse, not a default
 
 
 @pytest.mark.parametrize("word,rules,expect", [
@@ -170,3 +170,15 @@ def test_spanish_ll_is_y_and_italian_ll_is_a_geminate():
 
 def test_the_default_is_still_italian():
     assert r.to_katakana("Cardello") == r.to_katakana("Cardello", "it")
+
+
+def test_an_unlisted_country_refuses_rather_than_defaulting():
+    """⛔ This returned Italian for anything unlisted, which on the real corpus
+    meant 14,000+ items -- and it leaked: French passes the Romance shape gate,
+    so Notre-Dame-de-Pitié de Trouville-sur-Mer came out
+    ピーチエ・トロウヴィッレ・スル・メル. Same failure as reading Rzhavets as
+    Italian, just harder to see because the letters look plausible."""
+    for qid in ("Q142", "Q183", "Q36", "Q159", "Q16"):   # FR, DE, PL, RU, CA
+        assert r.rules_for_country(qid) is None, qid
+    for qid, expect in (("Q38", "it"), ("Q45", "pt"), ("Q29", "es")):
+        assert r.rules_for_country(qid) == expect

@@ -1,3 +1,48 @@
+## 2026-09-18 — "Falls back to Italian" was hiding 14,000 items, and French was the proof
+
+The P17 rule-selection landed and the first full run with it exposed the thing the design had been
+carrying all along: `rules_for_country()` returned **Italian for anything unlisted**. I wrote that
+as a harmless default. On the real corpus it covered **14,000+ of 22,542 items**, because the
+countries are nothing like what I assumed —
+
+| country | items |
+|---|---|
+| Germany | 5,490 |
+| Spain | 4,169 |
+| **Italy** | **3,157** |
+| Poland | 2,664 |
+| Russia | 1,628 |
+| France | 717 |
+
+Italy is third. The corpus is German-dominant and the Romance slice is mostly Iberian.
+
+⛔ **And the default leaked.** Non-Romance spellings are refused by the shape gate, so Germany and
+Poland were harmless — but **French passes it**, and was being read as Italian:
+
+    Chapelle Notre-Dame-de-Pitié de Trouville-sur-Mer
+      -> ピーチエ・トロウヴィッレ・スル・メルの聖母礼拝堂
+    Sanctuaire Notre-Dame du Sacré-Coeur
+      -> サンクツアイーレ・サークレ・コエウルの聖母礼拝堂
+
+That is the `Rzhavets` failure again — a confident wrong reading — and **harder to catch, because
+French letters look plausible where Cyrillic-transcribed ones do not.** 142 emitted labels came
+through the transliterator from a non-Romance country, 35 of them French or Québécois.
+
+French orthography is not close to phonemic (silent finals, nasal vowels), so there is no cheap rule
+for it. **An unlisted country now REFUSES.** `it`/`pt`/`es` are the only rule sets, chosen from P17,
+and everything else declines rather than guessing. ja **3,375 -> 3,333**, and the 42 lost are the
+garbage.
+
+⚠ **A second, quieter one found in the same output:** a **soft hyphen (U+00AD)** in a place label
+reached the emitted label — `­ラドヴィシュの生神女就寝教会`. Invisible in a terminal, a real
+character in the data. `clean_place()` now strips the soft hyphen, zero-width spaces and BOM.
+
+⚠ **I also wrote a test asserting the bad default** (`Q183 == DEFAULT_RULES`) and it failed when the
+behaviour changed, which is the test doing its job: it pinned what the code did, and what the code
+did was wrong. Updated to assert the refusal.
+
+655 tests. Zero duplicates, zero invisible characters in any of the three files.
+
 ## 2026-09-18 — The source language comes from P17, not from my assumption
 
 I had written into `romance_katakana.py` that **Italian wins** where two Romance orthographies

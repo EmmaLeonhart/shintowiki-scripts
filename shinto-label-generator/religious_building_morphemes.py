@@ -606,10 +606,8 @@ def qualifier_kana(tokens, rules=None):
     Refuses unless EVERY token reads as Romance, so a mixed or non-Romance
     qualifier produces nothing instead of a half-transliteration.
     """
-    if not tokens or _romance_kana is None:
+    if not tokens or _romance_kana is None or rules is None:
         return None
-    if rules is None:
-        return _romance_kana(" ".join(tokens))
     return _romance_kana(" ".join(tokens), rules)
 
 
@@ -659,7 +657,7 @@ def _unfold_tokens(label, folded_tokens):
     return [originals.get(t, t) for t in folded_tokens]
 
 
-def dedication(label, lang, rules=None):
+def dedication(label, lang, rules="it"):
     """The dedication rendered in `lang`, or None if any part is unknown."""
     # Hyphens joined the phrase in the corpus ("Notre-Dame", "Herz-Jesu"), so the
     # phrase lookup saw "notre-dame" and missed. 111 labels turned on this alone.
@@ -806,9 +804,18 @@ EN_FROM_JA = {
 _PLACE_PAREN = re.compile(r"\s*[（(\[][^）)\]]*[）)\]]\s*$")
 
 
+_INVISIBLE = re.compile(r"[­​-‏⁠﻿]")
+
+
 def clean_place(place):
+    """Strip the parenthetical disambiguator and any invisible characters.
+
+    A soft hyphen (U+00AD) in a place label reached the output as
+    "­ラドヴィシュ" -- invisible in a terminal, a real character in the label.
+    """
     if not place:
         return place
+    place = _INVISIBLE.sub("", place)
     return _PLACE_PAREN.sub("", place).strip()
 
 
@@ -843,7 +850,7 @@ def render_en(label, p31):
     return "%s of %s" % (type_words["en"], en)
 
 
-def render(label, p31, lang, place=None, rules=None):
+def render(label, p31, lang, place=None, rules="it"):
     """The label in `lang`, or None when any piece is unknown.
 
     `place` is the P131 area's OWN label in `lang` — passed in, never derived

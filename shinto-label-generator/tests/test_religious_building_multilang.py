@@ -448,3 +448,19 @@ def test_the_qualifier_keeps_its_diacritics():
 def test_the_rule_set_reaches_the_qualifier():
     it = m.render("Madonna del Cardello", "Q16970", "ja", place="X", rules="it")
     assert it == "Xのカルデッロの聖母教会"
+
+
+def test_a_qualifier_from_an_unsupported_language_is_refused():
+    """French reads nothing like Italian; refusing beats a plausible-looking
+    wrong answer."""
+    import romance_katakana as rk
+    assert m.render("Notre-Dame de Pitié de Trouville", "Q108325", "ja",
+                    place="X", rules=rk.rules_for_country("Q142")) is None
+
+
+def test_an_invisible_character_never_reaches_the_label():
+    """A soft hyphen in a place label reached the output as a real character
+    that is invisible in a terminal."""
+    got = m.render("Madonna", "Q16970", "ja", place="\u00adラドヴィシュ")
+    assert got == "ラドヴィシュの聖母教会"
+    assert "\u00ad" not in got

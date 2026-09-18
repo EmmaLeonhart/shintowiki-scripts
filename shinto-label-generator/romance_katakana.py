@@ -176,8 +176,22 @@ COUNTRY_RULES = {
 
 
 def rules_for_country(qid):
-    """Which rule set an item's P17 implies."""
-    return COUNTRY_RULES.get(qid, DEFAULT_RULES)
+    """Which rule set an item's P17 implies, or **None** to refuse.
+
+    ⛔ This returned DEFAULT_RULES for anything unlisted, which meant every
+    country fell back to ITALIAN. Measured on the real corpus that was 14,000+
+    items, and it leaked: French names pass the Romance shape gate and were read
+    as Italian --
+
+        Chapelle Notre-Dame-de-Pitié de Trouville-sur-Mer
+          -> ピーチエ・トロウヴィッレ・スル・メル
+
+    which is the same failure as reading Rzhavets as Italian, just harder to
+    spot because the letters look plausible. French orthography is not close to
+    phonemic (silent finals, nasal vowels), so there is no cheap rule for it.
+    An unlisted country now REFUSES rather than guessing.
+    """
+    return COUNTRY_RULES.get(qid)
 
 
 def _romanise(word, rules=DEFAULT_RULES):
