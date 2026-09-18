@@ -536,6 +536,46 @@ answers, and then leave it alone.
 orchestrator budgets, the multi-cycle pacing in the section below — slowness is usually load-bearing
 and deliberate. Reach for the reason before reaching for a speed-up.
 
+### ⛔ DO NOT COMPUTE A COMPLETION DATE FOR ANYTHING THE DRIP OWNS (Emma, 2026-09-17)
+
+I asked whether to give up on temple English labels, evidenced as *"13,288 temples, 45 years at
+1.1/day."* Her answer: ***"Of course not is this even a task ... I think this is just an automated
+thing."***
+
+**It is an automated thing, and that is the whole answer.** A horizon divided out of the drainer's
+rate is not a finding, because nothing is waiting at the end of it. The section above already says
+never to call the rate a stall, a trickle or a bottleneck; **"45 years" is the same banned move
+wearing arithmetic**, and it is more persuasive than the plain version, which is what makes it
+worse. It turned a process working exactly as designed into a candidate for deletion, and the
+population it proposed deleting was 74% of the remaining work.
+
+- **Never divide a backlog by a drip rate and present the quotient**, to Emma or in a report. Not for
+  labels, not for the QuickStatements queue, not for the remote routine.
+- **"This will never finish" is not a reason to stop doing it.** Unattended and indefinite is the
+  design. The 18,065 missing English labels are fine; so is the ~80,000-line staged queue.
+- **Scope questions are about SCOPE**, not throughput. If temples were ever to leave, it would be
+  because they are Buddhist and this is a Shinto project — an argument I did not make and she did
+  not accept. The time figure was doing all the work in my question and it should not have been
+  there at all.
+
+### ⭐ THE WIKI SIDE IS FORMALLY ABANDONED, AND THE MACHINERY STAYS UP (Emma, 2026-09-17)
+
+> *"we are formally abandoning it but our abandonment means the machinery is still here and still
+> indefinitely tries to run"*
+
+Both halves are load-bearing and they are easy to collapse into each other.
+
+- **Abandoned** means: shinto.miraheze.org and shinto.fandom content work is not pending work, not a
+  blocker, and not something to report, plan around or ask about. The 2,281 wiki-bound files in the
+  repo are not a backlog. `FANDOM_SUNSET_DATE` needs no decision — abandonment resolves it.
+- **The machinery stays** means: do **not** delete or disable the syncs, the daily 403 probe,
+  `WIKI_REACHABLE`, or the wiki-bound remote-queue categories. They keep trying indefinitely and
+  would resume on their own if Cloudflare ever stopped challenging the runners. Switching them off
+  is not what abandonment meant here, and it would throw away the only thing that would notice.
+- Detection ops that populate review categories (unresolved ILL QIDs, multiple wikidata links,
+  double category QIDs) **also keep running**. What was closed on 2026-09-17 is the promise that
+  anyone reviews their output — not the ops.
+
 ## Editing pace philosophy
 
 Bot edits must satisfy three constraints **simultaneously**:

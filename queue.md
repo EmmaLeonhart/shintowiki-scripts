@@ -9,22 +9,13 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **Miraheze: waiting for Cloudflare to stop challenging our runners. Nothing is owed by anyone.**
-  Diagnosed 2026-09-12 (`shinto_miraheze/probe_miraheze_403.py`, `DEVLOG.md`): Cloudflare serves the
-  GitHub Actions runners a managed challenge — 272 KB of `text/html`, *"Checking your connection…"* —
-  on every request, reads included, while the identical script from Emma's connection gets 200. The
-  control settles that it is not our UA: a deliberately generic UA from the same runner still gets
-  Miraheze's own 193-byte `text/plain` policy refusal.
-  - **Intermittent, not permanent.** `EmmaBot/3.1` passed from CI on 08-19, 08-23 and 08-30 and
-    carried ~800 edits/day on 09-01..09-04. It began between 09-04 and 09-06.
-  - **Probed DAILY since 2026-09-12** (Emma: *"Daily"*), `LOCK_DAYS` 8 → 2, so the day it lifts we
-    know within 24 hours instead of up to eight days. The failure reason now records which 403 it is.
-  - ⛔ **Emma has ruled out contacting Miraheze** (2026-09-12). Do not propose it again, and do not
-    re-probe by hand — the daily test is the probe. There is nothing to decide and nothing to do;
-    this item exists so the next session does not re-derive it.
-  - ⚠ It also reframes `docs/fandom_vs_miraheze_2026-09-12.md`: that reliability table compares one
-    host that challenges our runners against one that does not, which is not a comparison of the two
-    wikis.
+- **Miraheze/Fandom: FORMALLY ABANDONED 2026-09-17, machinery still running.**
+  Emma: *"we are formally abandoning it but our abandonment means the machinery is still here and
+  still indefinitely tries to run."* So nothing was switched off — the syncs, the daily 403 probe
+  and the wiki-bound queue categories keep trying indefinitely, and would resume on their own if
+  Cloudflare ever stopped challenging the runners. 2,281 wiki-bound files sit in the repo meanwhile.
+  **It is not pending work and not a blocker; do not report it as one.** Background on the
+  Cloudflare diagnosis is in `DEVLOG.md` (2026-09-12).
 
 - [ ] WDQS transports: adopters **63**; the rest ride each file's next real change.
   Seven defect classes were found and closed 2026-09-16/17 (dead-429, no-retry, CSV, sub-floor
