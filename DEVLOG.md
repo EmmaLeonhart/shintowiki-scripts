@@ -1,3 +1,48 @@
+## 2026-09-18 — Reading the place-name qualifiers, and refusing the ones that only LOOK readable
+
+The last queue item: *"Madonna di X"* -> Our Lady of X with X transliterated. `romance_katakana.py`
+reads Italian/Spanish/Portuguese localities into kana by rule, and the generic-qualifier path now
+falls back to it **for ja only**.
+
+⛔ **zh and ko get nothing, deliberately.** There is no rule-based route from an Italian village
+name to Chinese characters or hangul — those are conventions (the Xinhua tables), not derivations.
+A transliterator there would be inventing a reading, so those keep refusing.
+
+⛔ **The dangerous failure is not a clumsy reading, it is a confident wrong one**, and the first
+version had it: `Rzhavets` — a Russian name — came back **ルツァヴェツ**, read as though it were
+Italian. The corpus carries Polish, Czech, German and Russian localities mixed in with the Italian
+ones. `is_romance_shaped()` now refuses: letters absent from native Romance spelling (k, w, y), four
+or more consonants in a row, and any word-initial cluster outside the set Romance permits. Rzhavets,
+Bąkowa, Zgierz, Kraków, Przemyśl, Szczecin, Welschenrohr and Mümliswil all refuse.
+
+⚠ **Four orthography bugs, each found by reading output against known renderings:**
+
+| was | should be | cause |
+|---|---|---|
+| Campiglio -> **None** then カムピリョ | カンピリョ | `gli` mapped to a cluster the kana builder could not read; and m before a labial closes the syllable |
+| Cardello -> カルデ**ヨ** | カルデッロ | I applied the SPANISH `ll` -> Y rule to an Italian geminate |
+| Brescia -> ブレ**サ** | ブレシャ | the silent-h strip sat at the END of the list and ate the h out of the `sh` the sci- rule had just produced |
+| Sondrio -> ソン**ヅ**リオ | ソンドリオ | a bare t/d took the u-column, ツ/ヅ, which is archaic |
+
+And one over-correction of my own: I refused any word with three consonants in a row, which threw
+out **Umbria** (um-bri-a). Relaxed to four; the word-initial check is what actually catches the
+Slavic names.
+
+⚠ Where two Romance languages disagree, **Italian wins** — the corpus is Italian-dominant. That is
+why Spanish `ll` = Y is not applied, and Spanish names with `ll` come out with a geminate. Stated in
+the module rather than left as a surprise.
+
+**ja 3,146 -> 3,375**; zh and ko unchanged at 3,635 and 1,355, which is the zh/ko refusal doing
+exactly what it should. Zero duplicates anywhere. Total **8,365**.
+
+Three of my own refusal tests failed, and all three were right to — `Madonna del Pero`, `del
+Cardello` and `di Campiglio` were the refusal examples and are Italian, so they are read now. Moved
+to assertions that they render, with the refusal test repointed at Slavic qualifiers. That is the
+third time this file's tests have moved from refusal to rendering as the tables widened, which is
+the shape of the instruction rather than churn.
+
+Tests 91 -> 121 in the stage-2 file plus 30 new for the transliterator; 635 across both trees.
+
 ## 2026-09-18 — English rendering, and 聖 is a prefix AND the start of half the dedications
 
 Emma's two calls: **replace** the stage-1 labels that reached Wikidata rather than remove them, and

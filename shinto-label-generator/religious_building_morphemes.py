@@ -582,6 +582,30 @@ def _folded_group(group):
     return _FOLDED[key]
 
 
+try:
+    from romance_katakana import place_to_katakana as _romance_kana
+except ImportError:                                    # pragma: no cover
+    _romance_kana = None
+
+# ⛔ ja ONLY. Emma, 2026-09-18: handle the place-name qualifiers too. A Romance
+# locality can be read into kana by rule, so "Madonna del Pero" becomes
+# ペロの聖母. There is no equivalent route to Chinese characters or hangul --
+# those are conventions, not derivations -- so zh and ko keep refusing rather
+# than invent a reading.
+_QUALIFIER_LANGS = {"ja"}
+
+
+def qualifier_kana(tokens):
+    """Katakana for an unmapped place qualifier, or None.
+
+    Refuses unless EVERY token reads as Romance, so a mixed or non-Romance
+    qualifier produces nothing instead of a half-transliteration.
+    """
+    if not tokens or _romance_kana is None:
+        return None
+    return _romance_kana(" ".join(tokens))
+
+
 def _qualifier_residue(folded_label, matched_phrase):
     """Tokens left after removing a matched generic title and all known frame.
 
@@ -643,9 +667,18 @@ def dedication(label, lang):
     folded = _folded_group(GENERIC_DEDICATIONS)
     for phrase in sorted(folded, key=len, reverse=True):
         if phrase in low:
-            if _qualifier_residue(low, phrase):
+            residue = _qualifier_residue(low, phrase)
+            if not residue:
+                return DEDICATIONS[folded[phrase]][lang]
+            # A qualifier the table cannot name. For ja it can still be read by
+            # rule if it is a Romance locality; for zh/ko it cannot, and the
+            # refusal stands.
+            if lang not in _QUALIFIER_LANGS:
                 return None
-            return DEDICATIONS[folded[phrase]][lang]
+            kana = qualifier_kana(residue)
+            if not kana:
+                return None
+            return kana + "の" + DEDICATIONS[folded[phrase]][lang]
     tokens, saw_saint = parse_name(label)
     if not tokens:
         return None

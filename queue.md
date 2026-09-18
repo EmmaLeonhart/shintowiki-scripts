@@ -9,14 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] Place-name qualifiers: "Madonna di X" -> Our Lady of X, X transliterated per language.
-  Emma, 2026-09-18. This is the part the table cannot finish by listing devotions — the residue is
-  Italian/Portuguese/Catalan localities (del Pero, di Campiglio, das Tabuas).
-  - ja is tractable rule-based: Romance orthography -> katakana is regular.
-  - ⛔ zh/ko are NOT. There is no rule-based route from an Italian village name to Chinese
-    characters or hangul; inventing one fabricates a reading. Those stay refused unless the place
-    itself has a label, which is the same lookup the generator already does for P131.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

@@ -277,13 +277,15 @@ def test_the_carrier_alone_still_resolves():
 # --------------------------------------------------------------------------
 
 @pytest.mark.parametrize("label", [
-    # Qualifiers that are place names, which is the kind that cannot be "done"
-    # in the table -- Pero and Cardello are Italian localities.
-    "Madonna del Pero",
-    "Madonna del Cardello",
-    "Madonna di Campiglio",
+    # Qualifiers that cannot be READ either -- Slavic and German localities,
+    # where Romance rules would give a confident wrong answer.
+    # (Pero / Cardello / Campiglio were here until the transliterator landed;
+    # they are Italian, so they are handled now rather than refused.)
+    "Our Lady of Rzhavets",
+    "Madonna di Bąkowa",
+    "Our Lady of Zgierz",
 ])
-def test_a_generic_title_with_an_unmapped_qualifier_is_refused(label):
+def test_a_generic_title_with_an_unreadable_qualifier_is_refused(label):
     """Emma, 2026-09-18: 'Refuse each one until the table individual qualifier is
     done.' These rendered as a bare 聖母教会 -- true, unique once the place is
     prefixed, and less specific than the source said."""
@@ -389,3 +391,46 @@ def test_an_apostrophised_saint_marker_is_split():
 def test_english_refuses_what_the_tables_cannot_render():
     assert m.render_en("St. Fictitious", "Q16970") is None
     assert m.render_en("Cultural heritage monuments in Foo", "Q16970") is None
+
+
+# --------------------------------------------------------------------------
+# Place-name qualifiers: read by rule for ja, refused for zh/ko
+# --------------------------------------------------------------------------
+
+@pytest.mark.parametrize("label,expect", [
+    ("Madonna del Pero", "ペロの聖母"),
+    ("Madonna del Cardello", "カルデッロの聖母"),
+    ("Madonna di Campiglio", "カンピリョの聖母"),
+])
+def test_a_romance_place_qualifier_is_read_for_ja(label, expect):
+    """Emma, 2026-09-18: handle the place-name qualifiers too. These were the
+    refusal cases; a Romance locality can be read into kana by rule."""
+    assert m.render(label, "Q16970", "ja", place="X") == "Xの" + expect + "教会"
+
+
+@pytest.mark.parametrize("lang", ["zh", "ko"])
+@pytest.mark.parametrize("label", ["Madonna del Pero", "Madonna di Campiglio"])
+def test_a_place_qualifier_stays_refused_for_zh_and_ko(lang, label):
+    """⛔ There is no rule-based route from an Italian village name to Chinese
+    characters or hangul. Those are conventions, not derivations, and inventing
+    one fabricates a reading."""
+    assert m.render(label, "Q16970", lang, place="X") is None
+
+
+def test_a_non_romance_qualifier_is_refused_in_every_language():
+    """The corpus carries Polish and Russian localities too, and reading one
+    with Romance rules gives a confident wrong answer."""
+    for lang in ("ja", "zh", "ko"):
+        assert m.render("Our Lady of Rzhavets", "Q16970", lang, place="X") is None
+
+
+def test_a_mapped_devotion_is_not_transliterated():
+    """The tables win; transliteration is the last resort, not the first."""
+    assert m.render("Madonna della Neve", "Q16970", "ja",
+                    place="X") == "Xの雪の聖母教会"
+    assert m.render("Our Lady of Vladimir", "Q16970", "zh",
+                    place="Y") == "Y弗拉基米尔圣母教堂"
+
+
+def test_a_bare_title_is_untouched_by_the_qualifier_path():
+    assert m.render("Madonna", "Q16970", "ja", place="X") == "Xの聖母教会"
