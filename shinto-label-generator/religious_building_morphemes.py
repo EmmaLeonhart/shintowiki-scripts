@@ -483,6 +483,34 @@ def _folded_group(group):
     return _FOLDED[key]
 
 
+def _qualifier_residue(folded_label, matched_phrase):
+    """Tokens left after removing a matched generic title and all known frame.
+
+    Anything here is a qualifier the table cannot render — "del Pero", "delle
+    Grazie" before it was added, "of Vladimir". Its presence means the generic
+    title would understate the source.
+    """
+    rest = folded_label.replace(matched_phrase, " ")
+    out = []
+    for raw in re.split(r"[\s/,\.]+", rest):
+        tok = _norm(raw)
+        if not tok:
+            continue
+        if (tok in STOPWORDS or tok in TYPE_WORDS or tok in SAINT_MARKERS
+                or tok in NAMES or tok in SELF_SAINT):
+            continue
+        stem = _strip_compound_type(tok)
+        if (not stem or stem in TYPE_WORDS or stem in STOPWORDS
+                or stem in NAMES or stem in SAINT_MARKERS):
+            continue
+        # A folded generic title that is not the one we matched (e.g. "beata"
+        # left over from "beata vergine") is still carrier, not a qualifier.
+        if any(tok in _fold(g) for g in GENERIC_DEDICATIONS):
+            continue
+        out.append(tok)
+    return out
+
+
 def dedication(label, lang):
     """The dedication rendered in `lang`, or None if any part is unknown."""
     # Hyphens joined the phrase in the corpus ("Notre-Dame", "Herz-Jesu"), so the
@@ -501,11 +529,24 @@ def dedication(label, lang):
     # feast or event is always more specific than the Marian title carrying it,
     # so SPECIFIC is checked first and only then the generic titles; within each
     # group, longest first so "sacred heart" still beats a bare "heart".
-    for group in (SPECIFIC_DEDICATIONS, GENERIC_DEDICATIONS):
-        folded = _folded_group(group)
-        for phrase in sorted(folded, key=len, reverse=True):
-            if phrase in low:
-                return DEDICATIONS[folded[phrase]][lang]
+    folded = _folded_group(SPECIFIC_DEDICATIONS)
+    for phrase in sorted(folded, key=len, reverse=True):
+        if phrase in low:
+            # A feast names WHICH dedication, so the Marian title it rides on is
+            # correctly subsumed and any residue is that carrier.
+            return DEDICATIONS[folded[phrase]][lang]
+
+    # ⛔ A GENERIC title is only acceptable when there is nothing left over.
+    # Emma, 2026-09-18: "Refuse each one until the table individual qualifier is
+    # done." "Madonna del Pero" and "Madonna del Cardello" both rendered 聖母教会
+    # — true, unique once the place is prefixed, and less specific than the
+    # source said. A bare "Madonna" has no qualifier to lose and still resolves.
+    folded = _folded_group(GENERIC_DEDICATIONS)
+    for phrase in sorted(folded, key=len, reverse=True):
+        if phrase in low:
+            if _qualifier_residue(low, phrase):
+                return None
+            return DEDICATIONS[folded[phrase]][lang]
     tokens, saw_saint = parse_name(label)
     if not tokens:
         return None

@@ -1,3 +1,34 @@
+## 2026-09-18 — Two decisions that sat in reports instead of being asked
+
+Emma: *"Anything that needs a decision is Askuserquestion and don't ever fucking mention [the
+abandoned wiki] again."* Both are corrections to my reporting, not to the work.
+
+**The decision one is the rule I already had.** CLAUDE.md says a question written into a report is
+not a question, because she does not read prose questions. I had two items tagged
+**NEEDS-DECISION (Emma)** in three consecutive status reports. The taxonomy tag is what made it feel
+handled — it looks like process rather than like the deliberate hold the rule bans. Asked properly,
+both were answered in one exchange.
+
+**The other is worse because I wrote the note myself.** `queue.md` carries my own line saying the
+abandoned wiki *"is not pending work and not a blocker; do not report it as one"*, and I then listed
+it as BLOCKED-ON-EXTERNAL three reports running. The report template has a blocker section; an
+abandoned thing is an easy thing to put in it. The habit outlived the decision. Both are now rules in
+CLAUDE.md rather than resolutions.
+
+**The work Emma's answers directed:**
+
+**Refuse a generic Marian title when a qualifier is present but unmapped.** *"Refuse each one until
+the table individual qualifier is done."* `Madonna del Pero` and `Madonna del Cardello` both rendered
+聖母教会 — true, unique once the place is prefixed, and less specific than the source said. A
+generic title now emits only when nothing is left over; a bare `Madonna` still resolves, and the
+mapped devotions (雪の聖母, 悲しみの聖母, 恩寵の聖母) are untouched. A feast is exempt, because the
+Marian carrier it rides on is correctly subsumed rather than being a lost qualifier.
+
+Cost **7,989 -> 7,287** (ja 2,824 · zh 3,282 · ko 1,181) — 702 lines refused, which is the
+point of the rule. Tests 50 -> 63.
+
+Sizing how many stage-1 labels actually reached Wikidata is running; results next tick.
+
 ## 2026-09-18 — Auditing what the labels THREW AWAY, instead of waiting to trip over it
 
 Two defects of the same class had turned up by accident (`santissima` swallowing the Trinità;

@@ -270,3 +270,46 @@ def test_the_carrier_alone_still_resolves():
     where the carrier is all there is."""
     assert m.render("Madonna", "Q16970", "ja", place="X") == "Xの聖母教会"
     assert m.render("Beata Vergine", "Q16970", "ja", place="X") == "Xの聖母教会"
+
+
+# --------------------------------------------------------------------------
+# A generic title with an unmapped qualifier is refused
+# --------------------------------------------------------------------------
+
+@pytest.mark.parametrize("label", [
+    "Madonna del Pero",
+    "Madonna del Cardello",
+    "Our Lady of Vladimir",
+    "Nossa Senhora do Carmo da Encarnacao",
+])
+def test_a_generic_title_with_an_unmapped_qualifier_is_refused(label):
+    """Emma, 2026-09-18: 'Refuse each one until the table individual qualifier is
+    done.' These rendered as a bare 聖母教会 -- true, unique once the place is
+    prefixed, and less specific than the source said."""
+    assert m.render(label, "Q16970", "ja", place="X") is None, label
+
+
+@pytest.mark.parametrize("label", ["Madonna", "Beata Vergine", "Notre-Dame",
+                                   "Our Lady"])
+def test_a_bare_generic_title_still_resolves(label):
+    """Nothing is lost when there is no qualifier to lose."""
+    assert m.render(label, "Q16970", "ja", place="X") == "Xの聖母教会", label
+
+
+@pytest.mark.parametrize("label,expect", [
+    ("Madonna della Neve", "雪の聖母"),
+    ("Our Lady of Sorrows", "悲しみの聖母"),
+    ("Beata Vergine delle Grazie", "恩寵の聖母"),
+])
+def test_a_mapped_qualifier_is_not_refused(label, expect):
+    """The rule must not swallow the devotions already in the table."""
+    assert m.render(label, "Q16970", "ja", place="X") == "Xの" + expect + "教会"
+
+
+def test_a_feast_is_unaffected_by_the_rule():
+    """A feast subsumes its Marian carrier, so leftover carrier is not a
+    qualifier and must not trigger a refusal."""
+    assert m.render("Visitazione della Beata Vergine", "Q16970", "ja",
+                    place="X") == "Xの聖母訪問教会"
+    assert m.render("Nuestra Señora de la Asunción", "Q16970", "ja",
+                    place="X") == "Xの聖母被昇天教会"
