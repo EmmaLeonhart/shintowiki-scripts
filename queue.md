@@ -9,10 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] Run religious-building stage 2 over the full 22,548, not the 400-item sample.
-  The sample gave ja 62 / zh 75 / ko 24 and the skip reasons; Emma needs the real numbers and real
-  output in `paused/` to review. ~450 read-API calls at 1s, cache makes a re-run free.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

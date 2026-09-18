@@ -257,8 +257,19 @@ DEDICATIONS = {
     "himmelfahrt":      {"ja": "被昇天",   "zh": "升天",   "ko": "승천"},
     "mariä himmelfahrt": {"ja": "聖母被昇天", "zh": "圣母升天", "ko": "성모 승천"},
     "assunta":          {"ja": "聖母被昇天", "zh": "圣母升天", "ko": "성모 승천"},
-    "santissima":       {"ja": "至聖",     "zh": "至圣",   "ko": "지극히 거룩한"},
-    "santissimo":       {"ja": "至聖",     "zh": "至圣",   "ko": "지극히 거룩한"},
+    # ⛔ Bare "santissima"/"santissimo" was here and produced 354 wrong labels --
+    # 至聖教会, "Most Holy Church", a modifier qualifying nothing. The phrase
+    # lookup is substring-based, so "Chiesa della Santissima Trinità" matched the
+    # bare modifier and the Trinità was lost. The full phrases are below; an
+    # unmatched remainder is now refused, which is the correct outcome.
+    "santissima trinità":   {"ja": "至聖三者", "zh": "圣三一", "ko": "삼위일체"},
+    "santissima trinita":   {"ja": "至聖三者", "zh": "圣三一", "ko": "삼위일체"},
+    "santissima annunziata": {"ja": "受胎告知", "zh": "圣母领报", "ko": "주님 탄생 예고"},
+    "santissimo sacramento": {"ja": "聖体",   "zh": "基督圣体", "ko": "성체"},
+    "santissimo redentore": {"ja": "救世主", "zh": "救主",   "ko": "구세주"},
+    "santissimo crocifisso": {"ja": "聖十字架", "zh": "圣十字", "ko": "성십자가"},
+    "santissimo rosario":   {"ja": "ロザリオ", "zh": "玫瑰经", "ko": "로사리오"},
+    "santissima vergine":   {"ja": "聖母",   "zh": "圣母",   "ko": "성모"},
     "kreuz":            {"ja": "聖十字架", "zh": "圣十字", "ko": "성십자가"},
     "santa cruz":       {"ja": "聖十字架", "zh": "圣十字", "ko": "성십자가"},
     "vera cruz":        {"ja": "聖十字架", "zh": "圣十字", "ko": "성십자가"},

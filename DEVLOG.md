@@ -1,3 +1,38 @@
+## 2026-09-17 — Stage 2 over all 22,548, and a bare modifier that was labelling 354 items wrong
+
+Full run: **ja 2,780 · zh 3,281 · ko 1,190 = 7,251 lines**, all in `paused/`, none in the drip. Zero
+duplicate labels, zero duplicate QIDs, zero malformed lines in any of the three files.
+
+The skip reasons are the honest shape of the corpus:
+
+| reason | items |
+|---|---|
+| unknown dedication | 15,111 |
+| no place label in that language | 6,732 |
+| no P31 mapping | 1,316 |
+| category-shaped | 818 |
+| duplicate (refused) | 690 |
+| no P131 | 412 |
+
+⛔ **A defect the first full run exposed and the 400-item sample had not.** Reading the output
+rather than the counters turned up `アルビーノの至聖教会` — "Most Holy Church", a modifier
+qualifying nothing. The phrase lookup is substring-based, so bare `santissima` matched before the
+thing it modifies and **"Chiesa della Santissima Trinità" came out as 至聖教会, losing the Trinità**.
+It affected **354 lines** across the three languages (ja 171, zh 133, ko 50).
+
+Bare `santissima`/`santissimo` are gone from `DEDICATIONS` and the full phrases are in
+(santissima trinità, santissima annunziata, santissimo sacramento, santissimo redentore, santissimo
+crocifisso, santissimo rosario, santissima vergine). An unmatched remainder is now **refused**,
+which is the correct outcome and costs 41 ja / 41 zh / 15 ko lines. `Chiesa Santissima` alone
+renders `None`.
+
+⚠ **The counters looked fine while this was wrong.** 2,821/3,322/1,205 with zero collisions is a
+clean-looking result, and the bad labels were inside it. Nothing but reading the actual strings
+would have found it, which is the argument for the output landing in `paused/` first.
+
+`religious_building_cache.json` is 1.9 MB and committed — it makes a re-run free and the paused
+output auditable against exactly what was fetched. Suite 544 in the two touched trees.
+
 ## 2026-09-17 — Religious-building stage 2, built by measuring rather than designing
 
 Emma: *"barrel through but actively ask me tons of questions at every fork."* Nine forks, and the
