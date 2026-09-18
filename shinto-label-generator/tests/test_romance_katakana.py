@@ -22,15 +22,15 @@ import romance_katakana as r  # noqa: E402
 
 
 @pytest.mark.parametrize("word,expect", [
-    ("Pero", "ペロ"),
-    ("Loreto", "ロレト"),
-    ("Milano", "ミラノ"),
-    ("Assisi", "アシシ"),
-    ("Genova", "ジェノヴァ"),
+    ("Pero", "ペーロ"),
+    ("Loreto", "ロレート"),
+    ("Milano", "ミラーノ"),
+    ("Assisi", "アッシーシ"),
+    ("Genova", "ジェノーヴァ"),
     ("Firenze", "フィレンツェ"),      # z -> ts
     ("Giovanni", "ジョヴァンニ"),      # gio -> jo, geminate nn
-    ("Bologna", "ボロニャ"),          # gn -> ny
-    ("Chiesa", "キエサ"),             # ch -> hard k
+    ("Bologna", "ボローニャ"),          # gn -> ny
+    ("Chiesa", "キエーサ"),             # ch -> hard k
     ("Coimbra", "コインブラ"),         # m before b closes the syllable
     ("Umbria", "ウンブリア"),          # three consonants IS Romance
 ])
@@ -40,10 +40,10 @@ def test_it_reads_romance_names(word, expect):
 
 @pytest.mark.parametrize("word,expect", [
     # Each of these was wrong in a way worth pinning.
-    ("Campiglio", "カンピリョ"),   # gli -> ry, and m before p is ン not ム
+    ("Campiglio", "カンピーリョ"),   # gli -> ry, and m before p is ン not ム
     ("Cardello", "カルデッロ"),    # Italian geminate, NOT the Spanish ll -> y
-    ("Brescia", "ブレシャ"),       # the silent-h strip used to eat this sh
-    ("Pescia", "ペシャ"),
+    ("Brescia", "ブレーシャ"),       # the silent-h strip used to eat this sh
+    ("Pescia", "ペーシャ"),
     ("Sondrio", "ソンドリオ"),     # bare d is ド, not the archaic ヅ
     ("Trento", "トレント"),        # bare t is ト, not ツ
 ])
@@ -76,7 +76,7 @@ def test_the_shape_gate_agrees_with_the_reader():
 
 
 def test_a_multi_word_place_joins_with_nakaguro():
-    assert r.place_to_katakana("Santa Maria") == "サンタ・マリア"
+    assert r.place_to_katakana("Santa Maria") == "サンタ・マーリア"
 
 
 def test_one_unreadable_word_refuses_the_whole_phrase():
@@ -90,6 +90,49 @@ def test_empty_input_is_refused():
     assert r.place_to_katakana("   ") is None
 
 
-def test_accents_are_dropped_not_rejected():
-    """Romance accents mark stress, which kana does not write."""
-    assert r.to_katakana("Tábuas") == r.to_katakana("Tabuas") == "タブアス"
+def test_an_accent_places_the_stress():
+    """This asserted that accents were merely DROPPED, which was true when the
+    output had no long vowels at all. Now a written accent marks irregular
+    stress and moves the ー, which is the whole point of reading it."""
+    assert r.to_katakana("Tábuas") == "ターブアス"
+    assert r.to_katakana("Città") == "チッタ"   # final stress, closed syllable
+
+
+# --------------------------------------------------------------------------
+# Vowel length — added 2026-09-18 after checking against real ja labels
+# --------------------------------------------------------------------------
+
+@pytest.mark.parametrize("word,expect", [
+    ("Fiore", "フィオーレ"),     # サンタ・マリア・デル・フィオーレ大聖堂 on Wikidata
+    ("Salute", "サルーテ"),      # サンタ・マリア・デッラ・サルーテ聖堂
+    ("Loreto", "ロレート"),
+    ("Bologna", "ボローニャ"),
+    ("Roma", "ローマ"),
+])
+def test_the_stressed_open_syllable_is_long(word, expect):
+    """The first version produced NO long vowels at all, while every real ja
+    church label has them. Romance stress is penultimate unless written
+    otherwise, and Japanese writes a stressed open syllable long."""
+    assert r.to_katakana(word) == expect
+
+
+@pytest.mark.parametrize("word,expect", [
+    ("Cardello", "カルデッロ"),   # closed by the geminate
+    ("Trento", "トレント"),       # closed by ン
+])
+def test_a_closed_syllable_takes_no_long_vowel(word, expect):
+    assert r.to_katakana(word) == expect
+
+
+@pytest.mark.parametrize("word,expect", [
+    # Both were mangled by a rule running in the wrong order.
+    ("Città", "チッタ"),     # the leftover c->k ate the ch the soft-c rule made
+    ("Nossa", "ノッサ"),     # ss is a geminate; collapsing it lost the small tsu
+])
+def test_the_ordering_bugs_stay_fixed(word, expect):
+    assert r.to_katakana(word) == expect
+
+
+def test_a_geminate_survives():
+    for w in ("Assisi", "Nossa", "Cardello"):
+        assert "ッ" in r.to_katakana(w), w

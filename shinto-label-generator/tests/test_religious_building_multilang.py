@@ -398,9 +398,9 @@ def test_english_refuses_what_the_tables_cannot_render():
 # --------------------------------------------------------------------------
 
 @pytest.mark.parametrize("label,expect", [
-    ("Madonna del Pero", "ペロの聖母"),
+    ("Madonna del Pero", "ペーロの聖母"),
     ("Madonna del Cardello", "カルデッロの聖母"),
-    ("Madonna di Campiglio", "カンピリョの聖母"),
+    ("Madonna di Campiglio", "カンピーリョの聖母"),
 ])
 def test_a_romance_place_qualifier_is_read_for_ja(label, expect):
     """Emma, 2026-09-18: handle the place-name qualifiers too. These were the

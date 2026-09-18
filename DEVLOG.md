@@ -1,3 +1,61 @@
+## 2026-09-18 — Checking the premise I never checked, and five transliteration bugs
+
+Emma: *"I am not entirely sure about all of this stuff lol. Like it feels like you are generally
+confident over a lot of shit."* She was right, and the specific thing I had never checked was the
+**premise**.
+
+**What I had verified** were measurements: corpus counts, 67% with no English type word, 192
+distinct places per 200 items, the collision numbers, 33 labels live on Wikidata. **What I had
+asserted** was every ja/zh/ko string in the tables, and the word order, and that my katakana
+"matches standard renderings" — checked against nothing.
+
+**The check I should have run before building any of it.** Real ja labels on European churches:
+
+| | |
+|---|---|
+| Santa Maria del Fiore | サンタ・マリア・デル・フィオーレ大聖堂 |
+| Santa Maria della Salute | サンタ・マリア・デッラ・サルーテ聖堂 |
+| San Vitale | サン・ヴィターレ聖堂 |
+| São Roque | サン・ロッケ教会 |
+| Karlskirche | カールス教会 |
+| Church of the Savior on Blood | 血の上の救世主教会 |
+
+**Seven transliterated to one translated.** Real practice transliterates the native name for Romance
+AND German dedication names; Slavic ones get translated. My design translates the dedication, which
+is the minority pattern for the population that dominates this corpus. Emma was shown both samples
+and confirmed twice: **impose our ontology**. Ours is consistent and machine-derivable; jawiki's is
+descriptive. The 8,365 lines stand.
+
+⛔ **Every real example has long vowels and mine had NONE**, which is the part that was simply wrong
+rather than a matter of convention. Fixed, and the fix took four attempts because I kept modelling
+the wrong thing:
+
+1. Stress counted **kana**, so Coimbra came out コインブーラ — ブラ is two morae and one syllable.
+2. Rebuilt on source vowels, and adjacency compared a **counter** rather than a character position,
+   so every word collapsed into one group and NOTHING lengthened.
+3. `ç` — the fold strips combining marks, so Graças became グラー**カ**ス instead of グラーサス. A
+   cedilla is not a stress mark.
+4. `ão` likewise: the fold flattened it before the rule could see it, and expanding the tilde alone
+   left the o stranded — João came out ジョアーノ.
+
+Also two ordering bugs of the same family as the ones before: the leftover `c` -> `k` rewrote the
+`ch` the soft-c rule had just produced (Città -> クヒッタ), and `ss` -> `s` killed the Italian
+geminate. Now: コインブラ, ロレート, ボローニャ, ウンブリア, フィオーレ, サルーテ, グラーサス, ジョアン.
+
+⚠ **Stated costs, not hidden ones.** The rule gives ミラーノ and アッシーシ where established usage
+is ミラノ and アッシジ. It is right for the population it actually reads — obscure localities with
+no Japanese exonym to contradict.
+
+⚠ **And one thing I got backwards that is NOT yet fixed.** The module says Italian wins where two
+Romance languages conflict. Measured, the corpus is **gl 15% + pt 2.3% + es ~2% against it 11%** —
+Ibero-Romance outweighs Italian. So `Conceição` reads as コンチェイーサン (Italian `ce` = /tʃe/)
+where Portuguese wants コンセイサン. Put to Emma rather than decided: **P17 is on 99.7% of items**,
+so the source language is derivable from the country instead of assumed.
+
+Tests 645 across both trees. Several expectations moved and each new value was checked
+individually rather than pasted from the code's output — including one whose PREMISE changed:
+accents used to be merely dropped, and now they place the stress.
+
 ## 2026-09-18 — Reading the place-name qualifiers, and refusing the ones that only LOOK readable
 
 The last queue item: *"Madonna di X"* -> Our Lady of X with X transliterated. `romance_katakana.py`
