@@ -1,3 +1,29 @@
+## 2026-09-18 — The cancelled label-generator runs: mechanism confirmed, not a defect
+
+Left unexplained last tick, and tagged NEEDS-INVESTIGATION. Investigated, because a tag with no
+named owner or external signal is just a deferral with better vocabulary.
+
+Three runs of `Regenerate label-generator QuickStatements` ended `cancelled` today, on `d43300d9`,
+`2fa1c616` and `747bea74` — all my own commits. The workflow sets `cancel-in-progress: false`,
+which is why this did not look like ordinary supersede behaviour.
+
+**They executed nothing.** `gh run view --json jobs` returns an empty job list for all three: no
+job ever started. That settles it — they were **pending**, not running, and GitHub drops pending
+runs in a concurrency group when a newer one queues, keeping only the latest. `cancel-in-progress`
+governs the run that is *in progress*; it has no bearing on the queue behind it.
+
+The workflow takes **26–46 minutes** and I pushed eight times today, so a new push regularly
+arrived while one run was executing and another was queued behind it. The queued one was dropped.
+Each cancelled run is followed by a successful one 4–26 minutes later, on the newer sha.
+
+Nothing to fix. Recorded so the next session reading `cancelled` in the run list does not chase it,
+and because the reason it looked odd — `cancel-in-progress: false` — is the thing that makes it
+look like a contradiction when it is not.
+
+⚠ It will recur on any burst of commits. That is the concurrency group working as configured.
+
+No code changed.
+
 ## 2026-09-18 — The en-label workflow fix proved itself in production, and the step list lies
 
 `generate-shrines-missing-en-label.yml` went red on today's scheduled run, and it is the fix working
