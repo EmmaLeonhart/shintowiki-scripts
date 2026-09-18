@@ -119,6 +119,15 @@ SAINT_PREFIX = {"ja": "聖", "zh": "圣", "ko": "성"}
 # is written down because it was an unflagged decision, and because a future
 # audit against Wikidata labels will "find" all of these again.
 #
+# ⚠ The ko column was audited too (2026-09-18), after I twice claimed it could
+# not be. Wikidata has a ko label for **45%** of these concepts, not "mostly
+# absent" as I reported without looking. 17 are identical to mine; of the 28 that
+# differ, all but one are a bad item match, a disambiguator a dedication does not
+# want, or a case where MINE is the current Korean Catholic term and Wikidata's
+# is the older one -- 주님 탄생 예고 for the Annunciation is the post-2011 form,
+# 성모 영보 the pre-2011 one. The single real fix was Mount Carmel, where 산
+# belongs in the title.
+#
 # ⚠ The ja column was audited the same way: of the 58 entries where Wikidata has
 # a ja label, 19 are IDENTICAL to mine and most of the rest differ only by a
 # disambiguator (アレクサンドリアのカタリナ vs カタリナ) or a 聖 prefix this module
@@ -354,8 +363,8 @@ DEDICATIONS = {
     "dolores":          {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
     "sorrows":          {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
     "dolorosa":         {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
-    "carmen":           {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
-    "carmine":          {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
+    "carmen":           {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜 산의 성모"},
+    "carmine":          {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜 산의 성모"},
     "rosario":          {"ja": "ロザリオの聖母", "zh": "玫瑰圣母", "ko": "로사리오의 성모"},
     "rosenkranz":       {"ja": "ロザリオの聖母", "zh": "玫瑰圣母", "ko": "로사리오의 성모"},
     "milagres":         {"ja": "奇跡の聖母", "zh": "显灵圣母", "ko": "기적의 성모"},
@@ -396,8 +405,8 @@ DEDICATIONS = {
     "częstochowa":      {"ja": "チェンストホヴァの聖母", "zh": "琴斯托霍瓦圣母", "ko": "쳉스토호바의 성모"},
     "czestochowa":      {"ja": "チェンストホヴァの聖母", "zh": "琴斯托霍瓦圣母", "ko": "쳉스토호바의 성모"},
     "queen of poland":  {"ja": "ポーランドの元后聖母", "zh": "波兰之后圣母", "ko": "폴란드의 모후 성모"},
-    "carme":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
-    "carmo":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
+    "carme":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜 산의 성모"},
+    "carmo":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜 산의 성모"},
     "perpetual help":   {"ja": "絶えざる御助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
     "perpétuo socorro": {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
     "perpetuo socorro": {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
