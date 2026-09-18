@@ -63,17 +63,6 @@ jobs:
         continue-on-error: true
         run: python generate_indonesian_proposals.py
 
-      # Non-Japanese religious buildings (churches, mosques, synagogues): English
-      # label copied from the Latin-script Commons category (Emma 2026-07-10).
-      # Wired in 2026-09-17 -- it had never been in any workflow, so its 22,548
-      # lines only changed when someone ran it by hand (last 2026-09-08) and new
-      # items on Wikidata could never enter it. The output already rides the drip:
-      # select_label_proposals.py globs quickstatements/*.txt and pools raw lines.
-      - name: Run religious-building English pipeline (stage 1)
-        working-directory: shinto-label-generator
-        continue-on-error: true
-        run: python generate_religious_building_labels.py
-
       - name: Run multilang pipeline
         working-directory: shinto-label-generator
         continue-on-error: true
