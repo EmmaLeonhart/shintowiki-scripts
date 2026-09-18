@@ -1,3 +1,24 @@
+## 2026-09-18 (later) — the scheduled injector buried the category that keeps a file synced
+
+`test_the_category_sits_after_the_last_section` went red on main this morning, and the cause was
+the same automated commit that delivered today's queue items. `inject_due_items.py` created its
+`== Scheduled items ==` section by appending to the end of `git_synced/Open questions.wiki`, which
+put it **below** `[[Category:Git synced pages]]`.
+
+That category is `sync_git_synced_pages.py`'s membership test, and CLAUDE.md already records what
+happens when a rewrite drops it: the sync pushes the categoryless text and `unlink()`s the local
+file. Nothing was lost here — the category is still on the page — but it now sat mid-file, which is
+the position the test exists to prevent, because a section rewrite around it cuts it by accident.
+
+Both branches of the create path are now explicit: `split_category_tail()` peels the trailing
+category block, the new section goes above it, and the whole tail travels intact
+(`<references />` included, which the sync itself appended on 2026-08-24). A page with no category
+appends as before. The page is repaired, and four tests pin it, including the edge where the file
+is nothing but a tail.
+
+This was not the queue item; it was a red test on main that the queue item's own delivery
+mechanism caused.
+
 ## 2026-09-18 — The 24 `part of` duplicates: 17 were someone else's job, 7 are staged
 
 The scheduled queue item said the lockout had passed and 24 duplicate `P361` statements were the

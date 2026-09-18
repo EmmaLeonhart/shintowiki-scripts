@@ -116,6 +116,24 @@ def inject_queue(text, item):
     return text + sep + block, "appended (anchor not found)"
 
 
+def split_category_tail(text):
+    """(body, tail), where tail is the page's trailing `[[Category:...]]` block.
+
+    A new section appended to the very end of the page lands BELOW
+    `[[Category:Git synced pages]]`, which is the sync's membership test — buried
+    mid-page it is easy to cut along with whatever section grows around it, and
+    `sync_git_synced_pages.py` reads its absence as "remove this page from the set"
+    and unlinks the local file. That happened on 2026-09-18: the first time this
+    injector created the section, it put it after the category.
+
+    Returns ("", text) for nothing but a tail, and (text, "") for no category at all.
+    """
+    i = text.find("\n[[Category:")
+    if i == -1:
+        return text, ""
+    return text[:i + 1], text[i + 1:]
+
+
 def inject_wiki(text, item):
     block = render_wiki(item)
     if not block:
@@ -127,9 +145,13 @@ def inject_wiki(text, item):
         offset = len(rest) - len(rest.lstrip("\n"))
         head = rest[:offset]
         return text[:i] + head + block + rest[offset:], "into %r" % WIKI_SECTION
-    section = "\n%s\n\n%s\n\n%s" % (WIKI_SECTION, WIKI_SECTION_BLURB, block)
-    sep = "" if text.endswith("\n") else "\n"
-    return text + sep + section, "created %r" % WIKI_SECTION
+    section = "%s\n\n%s\n\n%s" % (WIKI_SECTION, WIKI_SECTION_BLURB, block)
+    body, tail = split_category_tail(text)
+    if not tail:
+        sep = "" if body.endswith("\n") else "\n"
+        return body + sep + "\n" + section, "created %r" % WIKI_SECTION
+    return ("%s\n\n%s\n%s" % (body.rstrip("\n"), section.rstrip("\n") + "\n", tail),
+            "created %r above the category tail" % WIKI_SECTION)
 
 
 def main(argv=None):

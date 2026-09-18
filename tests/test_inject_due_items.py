@@ -94,6 +94,39 @@ def test_wiki_creates_its_own_section_then_reuses_it():
     assert "into" in how2
 
 
+# ───────────────── the category tail is the sync's membership test ─────────────────
+
+CATEGORIED = ("__NOTOC__\n\n== Notes ==\n\nscratch\n\n"
+              "[[Category:Git synced pages]]\n<references />\n")
+
+
+def test_a_new_section_goes_above_the_category_tail():
+    """Appended below it, the category ends up buried mid-page, where the next rewrite
+    of a section can cut it -- and sync_git_synced_pages.py reads its absence as
+    "remove this page from the set" and unlinks the local file. The first real
+    injection did exactly this on 2026-09-18."""
+    out, how = inj.inject_wiki(CATEGORIED, ITEM)
+    assert out.index(inj.WIKI_SECTION) < out.index("[[Category:Git synced pages]]")
+    assert "above the category tail" in how
+    assert out.rstrip().endswith("<references />")
+
+
+def test_the_whole_tail_travels_not_just_the_category_line():
+    out, _ = inj.inject_wiki(CATEGORIED, ITEM)
+    assert out.index("[[Category:Git synced pages]]") < out.index("<references />")
+
+
+def test_a_page_with_no_category_still_gets_its_section():
+    out, how = inj.inject_wiki("page\n", ITEM)
+    assert inj.WIKI_SECTION in out and "above the category tail" not in how
+
+
+def test_split_category_tail_handles_the_edges():
+    assert inj.split_category_tail("body\n") == ("body\n", "")
+    body, tail = inj.split_category_tail("a\n[[Category:X]]\n")
+    assert body == "a\n" and tail == "[[Category:X]]\n"
+
+
 # ───────────────────────── idempotence: the marker decides ─────────────────────────
 
 def test_marker_is_written_and_detected():

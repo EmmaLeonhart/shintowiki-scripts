@@ -14,9 +14,6 @@ Anything you want done on the wiki side — write it here rather than in the rep
 
 ''(your scratch space.)''
 
-[[Category:Git synced pages]]
-<references />
-
 == Scheduled items ==
 
 ''Injected automatically on each item's due date by <code>scheduled/inject_due_items.py</code>. Nothing here was visible in <code>queue.md</code> before today -- that is the point of it. Delete an item once it is settled; nothing re-adds it.''
@@ -26,3 +23,5 @@ Anything you want done on the wiki side — write it here rather than in the rep
 ** Regenerate with <code>generate_p958_corrections.py</code> before pasting; it reads live state, so anything already correct emits nothing rather than a churn pair.
 ** As built on 2026-08-19 it was three lines: an add for Q111776816, and a remove+add pair for Q134925373, whose <code>n/a</code> should be <code>0</code>.
 
+[[Category:Git synced pages]]
+<references />
