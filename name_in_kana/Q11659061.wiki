@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11659061 -->
 <!-- JA: 隠津島神社 | EN_LABEL: Okitsu Shrine (Nihonmatsu) | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E9%9A%A0%E6%B4%A5%E5%B3%B6%E7%A5%9E%E7%A4%BE_%28%E4%BA%8C%E6%9C%AC%E6%9D%BE%E5%B8%82%29 -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: おきつしまじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): おきつじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): おきつしまじんじゃ
