@@ -5,6 +5,10 @@ religious_building_morphemes.py
 The tables and the parser behind religious-building labels in ja/zh/ko. Pure
 logic, no network, so it can be tested without touching Wikidata.
 
+**Full write-up:** `docs/script-rationale/religious_building_morphemes_2026-09.md` — the slots,
+every table, the parse order, why the place is mandatory, the three Romance rule sets, and the
+register choices.
+
 **Why a morpheme table and not per-item translation.** Emma, 2026-09-17:
 *"We look at common words and morphemes across all of the things lol."* Measured
 over all 22,548 stage-1 labels, that is the right read: **62.3% are a known frame
