@@ -1,3 +1,45 @@
+## 2026-09-18 — The individual Marian qualifiers, and the stage-1 damage is 33 items
+
+**Sizing first, because it was asked for and it reframes everything.** Of the 22,542 stage-1
+proposals checked against Wikidata: **93 (0.4%) now carry an English label at all, and only 33
+(0.1%) match what stage 1 proposed.** Those 33 are ours. Of them: **0 category-shaped, 22 with no
+English type word, 11 plausible.** The drip takes 20/day from a 2.78M-line pool, so almost nothing
+had gone out before the pause. The exposure is 33 items, not thousands.
+
+**Then the qualifiers.** *"Refuse each one until the table individual qualifier is done."* The
+refusal shipped last tick; this is the second half. Measuring what it rejected: **916 distinct
+qualifier tokens**, and the head of the distribution is **almost entirely real devotions and icons,
+not place names** — which is the opposite of what I wrote in the queue item.
+
+Protection/Pokrov 49 · Kazan 43 · Częstochowa 39 · Queen of Poland 39 · Carme/Carmo 36 ·
+Perpetual Help 28 · Scapular 16 · Smolensk 13 · of the Sign 12 · Vladimir 11 · Entry of the
+Theotokos 10 · Joy of All Who Sorrow 8 · Angustias, Piedade, Guia, Luz, Merced, Consolation,
+Bon Secours. Thirty added.
+
+⛔ **Then auditing residue on SPECIFIC matches found three genuinely wrong renderings**, which the
+generic-only residue check could never have caught:
+
+- **"Immaculate HEART of Mary" is not the Immaculate CONCEPTION.** `immaculate` matched first and
+  **30 labels** came out as 無原罪の御宿り. They differ by one word and are different devotions.
+- **"Nativity of the Lord" is Christmas; "Nativity of the Theotokos" is the Virgin's birth.** Bare
+  `nativity` cannot tell them apart and rendered both as 降誕. Both explicit forms named; the bare
+  one stays as the fallback.
+- **"Nostra Signora" was not in the generic carriers**, so 12 labels read the Italian Marian title
+  as a qualifier and were refused for it.
+
+⚠ **Two of my own tests failed and both were right to.** `Our Lady of Vladimir` and
+`Nossa Senhora do Carmo` were written as refusal cases when those qualifiers were unmapped; they are
+mapped now, so they render. That is the instruction working, not a regression — the cases moved to
+a test asserting exactly that progression, and the refusal test now uses qualifiers that are place
+names (del Pero, del Cardello, di Campiglio), which is the kind that genuinely cannot be finished in
+a table.
+
+I also broke collection for one run by inserting a function between a `parametrize` decorator and
+its function. Noted because it is the kind of thing a green-looking edit hides.
+
+Output **7,287 -> 7,552** (ja 2,916 · zh 3,394 · ko 1,242), zero duplicates. Tests 63 -> 79 in the
+stage-2 file, 290 in the tree.
+
 ## 2026-09-18 — Two decisions that sat in reports instead of being asked
 
 Emma: *"Anything that needs a decision is Askuserquestion and don't ever fucking mention [the

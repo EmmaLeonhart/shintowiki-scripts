@@ -277,10 +277,11 @@ def test_the_carrier_alone_still_resolves():
 # --------------------------------------------------------------------------
 
 @pytest.mark.parametrize("label", [
+    # Qualifiers that are place names, which is the kind that cannot be "done"
+    # in the table -- Pero and Cardello are Italian localities.
     "Madonna del Pero",
     "Madonna del Cardello",
-    "Our Lady of Vladimir",
-    "Nossa Senhora do Carmo da Encarnacao",
+    "Madonna di Campiglio",
 ])
 def test_a_generic_title_with_an_unmapped_qualifier_is_refused(label):
     """Emma, 2026-09-18: 'Refuse each one until the table individual qualifier is
@@ -313,3 +314,34 @@ def test_a_feast_is_unaffected_by_the_rule():
                     place="X") == "Xの聖母訪問教会"
     assert m.render("Nuestra Señora de la Asunción", "Q16970", "ja",
                     place="X") == "Xの聖母被昇天教会"
+
+
+def test_widening_the_table_turns_a_refusal_into_a_rendering():
+    """The other half of Emma's instruction: "refuse each one UNTIL the table
+    individual qualifier is done". Vladimir and Carmo were refusal cases when
+    this file was written and are mapped now, which is the intended direction."""
+    assert m.render("Our Lady of Vladimir", "Q16970", "ja",
+                    place="X") == "Xのウラジーミルの生神女教会"
+    assert m.render("Nossa Senhora do Carmo", "Q16970", "ja",
+                    place="X") == "Xのカルメル山の聖母教会"
+
+
+@pytest.mark.parametrize("label,expect", [
+    # Residue on a SPECIFIC match found these; each was rendering as a different
+    # devotion entirely.
+    ("Church of the Immaculate Heart of Mary", "聖母の汚れなき御心"),
+    ("Church of Nativity of the Lord", "主の降誕"),
+    ("Nativity of the Theotokos", "生神女誕生"),
+])
+def test_a_longer_dedication_beats_the_shorter_one_inside_it(label, expect):
+    got = m.render(label, "Q16970", "ja", place="X")
+    assert got == "Xの" + expect + "教会", got
+
+
+def test_the_immaculate_conception_is_not_the_immaculate_heart():
+    """They differ by one word and mean different things; `immaculate` matched
+    first and 30 labels came out as the Conception."""
+    conception = m.render("Immaculate Conception church", "Q16970", "ja", place="X")
+    heart = m.render("Immaculate Heart of Mary", "Q16970", "ja", place="X")
+    assert conception != heart
+    assert conception == "Xの無原罪の御宿り教会"

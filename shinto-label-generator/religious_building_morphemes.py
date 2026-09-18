@@ -348,6 +348,57 @@ DEDICATIONS = {
     "reina":            {"ja": "天の元后", "zh": "天上元后", "ko": "천상 모후"},
     "concezione":       {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
     "conception":       {"ja": "無原罪の御宿り", "zh": "圣母无染原罪", "ko": "원죄 없으신 잉태"},
+    # --- the individual Marian qualifiers, 2026-09-18 (Emma: "refuse each one
+    # until the table individual qualifier is done"). Measured from what the
+    # refusal rule rejected; the head of that distribution is almost entirely
+    # established devotions and icons, not place names as I had assumed.
+    "protection":       {"ja": "生神女庇護", "zh": "圣母帡幪", "ko": "성모 보호"},
+    "pokrov":           {"ja": "生神女庇護", "zh": "圣母帡幪", "ko": "성모 보호"},
+    "kazan":            {"ja": "カザンの生神女", "zh": "喀山圣母", "ko": "카잔의 성모"},
+    "częstochowa":      {"ja": "チェンストホヴァの聖母", "zh": "琴斯托霍瓦圣母", "ko": "쳉스토호바의 성모"},
+    "czestochowa":      {"ja": "チェンストホヴァの聖母", "zh": "琴斯托霍瓦圣母", "ko": "쳉스토호바의 성모"},
+    "queen of poland":  {"ja": "ポーランドの元后聖母", "zh": "波兰之后圣母", "ko": "폴란드의 모후 성모"},
+    "carme":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
+    "carmo":            {"ja": "カルメル山の聖母", "zh": "加尔默罗圣母", "ko": "가르멜의 성모"},
+    "perpetual help":   {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
+    "perpétuo socorro": {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
+    "perpetuo socorro": {"ja": "永遠の助けの聖母", "zh": "永援圣母", "ko": "영원한 도움의 성모"},
+    "help of christians": {"ja": "キリスト信者の扶助者聖母", "zh": "进教之佑", "ko": "신자들의 도움이신 성모"},
+    "scapular":         {"ja": "スカプラリオの聖母", "zh": "圣衣圣母", "ko": "스카풀라의 성모"},
+    "szkaplerznej":     {"ja": "スカプラリオの聖母", "zh": "圣衣圣母", "ko": "스카풀라의 성모"},
+    "smolensk":         {"ja": "スモレンスクの生神女", "zh": "斯摩棱斯克圣母", "ko": "스몰렌스크의 성모"},
+    "vladimir":         {"ja": "ウラジーミルの生神女", "zh": "弗拉基米尔圣母", "ko": "블라디미르의 성모"},
+    "of the sign":      {"ja": "しるしの生神女", "zh": "神视圣母", "ko": "표징의 성모"},
+    "znamenie":         {"ja": "しるしの生神女", "zh": "神视圣母", "ko": "표징의 성모"},
+    "dores":            {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
+    "angustias":        {"ja": "悲しみの聖母", "zh": "痛苦圣母", "ko": "통고의 성모"},
+    "entry of the theotokos": {"ja": "生神女進堂", "zh": "圣母献堂", "ko": "성모 자헌"},
+    "joy of all who sorrow": {"ja": "全ての悲しむ者の喜び", "zh": "苦者之乐圣母", "ko": "모든 슬픈 이의 기쁨"},
+    "of the angels":    {"ja": "天使の聖母", "zh": "天神之后圣母", "ko": "천사의 성모"},
+    "consolation":      {"ja": "慰めの聖母", "zh": "安慰之母", "ko": "위로의 성모"},
+    "bon secours":      {"ja": "善き助けの聖母", "zh": "善佑圣母", "ko": "좋은 도움의 성모"},
+    "merced":           {"ja": "メルセーの聖母", "zh": "赎虏圣母", "ko": "자비의 성모"},
+    "piedade":          {"ja": "憐れみの聖母", "zh": "怜悯圣母", "ko": "자비의 성모"},
+    "guia":             {"ja": "導きの聖母", "zh": "引导圣母", "ko": "인도의 성모"},
+    "luz":              {"ja": "光の聖母", "zh": "光明圣母", "ko": "빛의 성모"},
+    "grace of nieppe":  {"ja": "恩寵の聖母", "zh": "宠爱圣母", "ko": "은총의 성모"},
+    # --- found by auditing residue on SPECIFIC matches, 2026-09-18 ---
+    # ⛔ "Immaculate HEART of Mary" is not the Immaculate CONCEPTION. `immaculate`
+    # matched first and 30 labels came out as 無原罪の御宿り. Longer phrases, so
+    # they win the within-group sort.
+    "immaculate heart": {"ja": "聖母の汚れなき御心", "zh": "圣母无玷圣心", "ko": "성모 성심"},
+    "cuore immacolato": {"ja": "聖母の汚れなき御心", "zh": "圣母无玷圣心", "ko": "성모 성심"},
+    "corazón inmaculado": {"ja": "聖母の汚れなき御心", "zh": "圣母无玷圣心", "ko": "성모 성심"},
+    # "Nativity of the Lord" is Christmas; "Nativity of the Theotokos" is the
+    # Virgin's birth. Bare `nativity` cannot tell them apart, so both explicit
+    # forms are named and the bare one stays as the fallback.
+    "nativity of the lord": {"ja": "主の降誕", "zh": "主诞", "ko": "주님 성탄"},
+    "nativity of christ": {"ja": "主の降誕", "zh": "主诞", "ko": "주님 성탄"},
+    "nativity of the theotokos": {"ja": "生神女誕生", "zh": "圣母诞辰", "ko": "성모 탄생"},
+    "nativity of the virgin": {"ja": "生神女誕生", "zh": "圣母诞辰", "ko": "성모 탄생"},
+    "nostra signora":   {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    "blessed virgin":   {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    "vergine":          {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
 }
 
 # A feast or event names WHICH dedication; a Marian title alone only names who it
@@ -377,6 +428,17 @@ SPECIFIC_DEDICATIONS = {
     # devotions the audit found being dropped
     "täufer", "grazie", "gracia", "neve", "nieves", "snows", "addolorata",
     "loreto", "rosary", "königin", "reina", "concezione", "conception",
+    # the individual Marian qualifiers
+    "protection", "pokrov", "kazan", "częstochowa", "czestochowa",
+    "queen of poland", "carme", "carmo", "perpetual help",
+    "perpétuo socorro", "perpetuo socorro", "help of christians",
+    "scapular", "szkaplerznej", "smolensk", "vladimir", "of the sign",
+    "znamenie", "dores", "angustias", "entry of the theotokos",
+    "joy of all who sorrow", "of the angels", "consolation", "bon secours",
+    "merced", "piedade", "guia", "luz", "grace of nieppe",
+    "immaculate heart", "cuore immacolato", "corazón inmaculado",
+    "nativity of the lord", "nativity of christ",
+    "nativity of the theotokos", "nativity of the virgin",
 }
 
 # Generic titles — checked only after every feast has had its chance.
@@ -384,6 +446,9 @@ GENERIC_DEDICATIONS = {
     "our lady", "madonna", "theotokos", "notre dame", "nosa señora",
     "nossa senhora", "nuestra señora", "virxe", "beata vergine",
     "santissima vergine", "friedens",
+    # Italian carrier, missing until the residue audit -- 12 labels were reading
+    # "Nostra Signora" as a qualifier rather than as the title it is.
+    "nostra signora", "blessed virgin", "vergine",
 }
 
 # --------------------------------------------------------------------------
