@@ -1,3 +1,53 @@
+## 2026-09-17 — Religious-building stage 2, built by measuring rather than designing
+
+Emma: *"barrel through but actively ask me tons of questions at every fork."* Nine forks, and the
+measurements changed the design three times.
+
+**Stage 1 paused first.** It copied the Latin-script Commons category verbatim into the `en` label;
+67% of its 22,548 labels carry no English type word and many are plain German or Italian. Out of the
+drip pool, unwired from CI, pinned by a test.
+
+**Then: look at what actually exists.** Emma's answer to my algorithm question, and it was right
+every time.
+
+- *"All the labels ... through a complex algorithm"* — sampled 300 items: **median labels per item
+  is 1**, median sitelinks 1 and **87% of those are commonswiki**. There is no set of labels to
+  cross-reference. P1448 official name: 1.7%. What does exist is P17 (99.7%), P131 (98%), P625 (93%).
+- *"We look at common words and morphemes across all of the things"* — measured across all 22,548:
+  **62.3% are a known frame plus at most one unknown token**, on a top-200 vocabulary. `of` 30.5%,
+  `Church` 22.7%, `San` 15.5%, `St` 11.7%. German glues the type on: `kirche` in 2,521 labels.
+
+⛔ **The first working version was fatally wrong and only measurement showed it.** Composing
+dedication + type gave **36 distinct outputs for 2,392 labels — 99.6% colliding**: 515 different
+Madonna churches all becoming 聖母教会, 201 becoming 聖ニコラオス教会. For this population the *name*
+IS the dedication and hundreds of buildings share it. Emma: *"Place too lol."* P131 is on 100% of the
+sample with **192 distinct places per 200 items**, so it very nearly disambiguates alone. `render()`
+now refuses without a place.
+
+⚠ **But the place must have its own ja/zh/ko label, and usually does not** — measured: ja 44.8%,
+zh 56.2%, ko 24.5%, **42.2% none of the three**. Those are skipped, not transliterated.
+
+**Coverage, widened twice on measured misses**: 10.6% -> 20.3% -> **24.6%** (5,540 of 22,548, 96
+distinct dedications). Several "unknown names" turned out not to be names: `sint` is the Dutch saint
+marker and was missing entirely, `santi`/`saints` are the PLURAL marker, `nosa`/`nossa`/`nuestra`/
+`notre` are "Our (Lady)", `paroquial`/`filial` are modifiers.
+
+**Four defects found by running it, not by reading it:**
+- `San Giovanni Battista` rendered John twice — 聖ヨハネ洗礼者ヨハネ. Needed a multi-token phrase table.
+- `Santiago` lost its 聖 — the marker is fused into the name (Sant+Iago).
+- `Notre-Dame` matched no phrase, because the hyphen made it one token. 111 labels.
+- The place's own disambiguator leaked in: フレーデン **(ライネ)** の聖ラウレンティウス教会.
+
+Sample run of 400 items: ja 62, zh 75, ko 24 — and the skip reasons are the honest picture
+(unknown dedication 230, no place label 97, no P31 mapping 65, category-shaped 13, duplicate 6).
+
+⛔ **Output goes to `paused/`, not the drip.** Nothing here reaches Wikidata until the files are moved
+into `quickstatements/`. `tests/test_religious_building_multilang.py` (27) pins every defect above
+plus the anti-collision rule, that the type comes from P31 and not the label, and that English is
+never emitted. An existing test also caught the new file using a non-canonical sys.path bootstrap.
+
+Suite 2,214.
+
 ## 2026-09-17 — Three rulings applied; Stage 2 stopped before it was written
 
 **1. `category_translation` dropped from the drainer.** Moved under `WIKI_REACHABLE` in
