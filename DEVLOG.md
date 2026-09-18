@@ -1,3 +1,30 @@
+## 2026-09-17 — The Wikidata drip is healthy, and the trail that said otherwise was my own truncation
+
+Checked end to end because the label work depends on it: once an answer reaches
+`en_labels_sonnet.txt`, does anything still carry it to Wikidata? **Yes.** Today's cleanup-loop ran
+`direct-daily-edits / edit` to completion — **501/501 attempted, 478 succeeded, 0 failed, 0 already
+absent**, 09:56 to 15:04 UTC. That is **5h08m**, inside the 6-hour hosted-job ceiling, so the
+2026-09-06 delay change ([30,90]s -> [20,50]s) is doing what it was for. Both gates are open: the
+lockout expired 2026-09-01 and `check_enwiki_mentions.py` reads clear with the AI-noticeboard page
+suppressed to 2026-10-15.
+
+⚠ **I spent most of this tick chasing a defect that did not exist, and the cause is worth writing
+down because it will recur.** `gh run view --json jobs` on cleanup-loop returns **26** jobs. I read
+the first 25, saw no `direct-daily-edits`, and built a plausible chain on top of that absence — the
+QS submitter deliberately exits nonzero to hand off, so a missing fallback would mean no Wikidata
+edits at all. I went as far as evaluating the window-gate's edit-day arithmetic by hand before
+re-listing without the cut and finding `direct-daily-edits / edit` sitting at position 26, green.
+
+The chain was sound and the input was wrong. Two things that would have caught it sooner: the gate's
+own logic proves `wikidata-daily-fire` was **true** (submit-quickstatements is gated on exactly that
+output and it ran), so "the fallback did not fire" required `qs-failed` to be false, which the
+notice in its log directly contradicted. **When two independent readings disagree, doubt the
+reading, not the system** — CLAUDE.md's rule that an absence of information is not a defect, hit
+from a new direction: here the absence was manufactured by my own `head -25`.
+
+Nothing changed in the repo. Recorded so the next session does not re-run the same chase, and does
+not have to re-derive that the drip is alive.
+
 ## 2026-09-17 — A liveness check for stages whose driver is not in this repo
 
 The gap this closes is the one from earlier today: Stage 4 of the English-label pipeline lost its
