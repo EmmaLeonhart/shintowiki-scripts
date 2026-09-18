@@ -63,3 +63,54 @@ def test_no_workflow_regenerates_a_paused_file():
             f".github/workflows/{fn} runs generate_religious_building_labels.py, "
             f"which regenerates a paused file. Unwire it or un-pause deliberately."
         )
+
+
+# --------------------------------------------------------------------------
+# The mirror: what IS in the pipeline must also be regenerated
+# --------------------------------------------------------------------------
+
+_WIRED_GENERATORS = [
+    "generate_religious_building_multilang",   # ja/zh/ko labels
+    "generate_stage1_en_replacements",         # the 16 English fixes
+]
+
+
+@pytest.mark.parametrize("generator", _WIRED_GENERATORS)
+def test_a_pipeline_generator_is_actually_run_by_ci(generator):
+    """Output sitting in quickstatements/ with nothing regenerating it is the
+    gap found twice: the stage-1 English generator was in no workflow for its
+    whole life, and stage 2 was in none on the day its output went live.
+
+    A file in the pooled directory is submitted whether or not anything
+    maintains it, so "in the pipeline" and "regenerated" are separate facts and
+    both need asserting."""
+    wf_dir = os.path.join(_ROOT, ".github", "workflows")
+    hits = [fn for fn in os.listdir(wf_dir)
+            if fn.endswith((".yml", ".yaml"))
+            and generator in open(os.path.join(wf_dir, fn), encoding="utf-8").read()]
+    assert hits, (
+        f"{generator}.py is in no workflow, but its output is in "
+        f"shinto-label-generator/quickstatements/ and therefore being submitted."
+    )
+
+
+@pytest.mark.parametrize("name", ["religious_building_ja.txt",
+                                  "religious_building_zh.txt",
+                                  "religious_building_ko.txt",
+                                  "stage1_en_replacements.txt"])
+def test_the_moved_files_are_in_the_pipeline(name):
+    """Moved out of paused/ on 2026-09-18. Emma: "why is all of this shit paused
+    instead of part of the pipeline as expected"."""
+    assert os.path.exists(os.path.join(_POOL, name)), name
+    assert not os.path.exists(os.path.join(_PAUSED, name)), (
+        f"{name} is back in paused/; it has no defect and belongs in the drip"
+    )
+
+
+def test_the_cache_is_committed_by_ci():
+    """The stage-2 cache is 1.9 MB of fetched P31/P131/P17. If CI does not
+    commit it, every run refetches 22,542 items."""
+    wf = os.path.join(_ROOT, ".github", "workflows",
+                      "label-generator-regenerate.yml")
+    text = open(wf, encoding="utf-8").read()
+    assert "religious_building_cache.json" in text

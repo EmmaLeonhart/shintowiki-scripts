@@ -1,3 +1,35 @@
+## 2026-09-18 — In the pipeline is not the same as maintained
+
+Moving the religious-building labels into `quickstatements/` made them live. It did not make anything
+regenerate them: **`generate_religious_building_multilang.py` was in no workflow.** Same gap found
+for the stage-1 English generator on 09-17, one day apart, and I walked into it again the same day I
+fixed the first one.
+
+The two facts are separate and both need asserting:
+
+- **In the pipeline** — the file is in the globbed directory, so `select_label_proposals.py` pools
+  it and it is being submitted.
+- **Maintained** — something runs the generator, so table changes and new items reach the file.
+
+A file can be the first without the second indefinitely, and nothing looks wrong: it keeps dripping
+the same content it had the day it was written. Wired into `label-generator-regenerate.yml`, with the
+stage-1 English replacements beside it.
+
+⚠ **The commit step needed widening too.** It added only `quickstatements/` and `docs/`, so
+`religious_building_cache.json` (1.9 MB of fetched P31/P131/P17) would never be committed and every
+run would refetch 22,542 items. Added, along with `paused/` for the provenance log.
+
+⚠ **A limit worth naming rather than discovering later.** Stage 2 reads
+`paused/religious_building_en.txt`, which is FROZEN — the stage-1 generator that writes it is
+deliberately unwired because 67% of its labels are not English. So CI re-renders a **fixed item
+list** through the current morpheme tables. Table widening flows through automatically; **new
+churches appearing on Wikidata do not**. That is the cost of pausing stage 1, it is written into the
+workflow comment, and it is not a reason to re-enable stage 1.
+
+`tests/test_paused_labels_stay_out_of_the_drip.py` now pins both directions: the one defective file
+stays out of the pool and unwired, and the four live files stay in it with their generators wired.
+671 -> 678 tests.
+
 ## 2026-09-18 — `paused/` was a quarantine I invented, and most of it did not belong there
 
 Emma: *"why is all of this shit paused instead of part of the pipeline as expected lol?"* — after
