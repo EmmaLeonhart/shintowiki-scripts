@@ -1,3 +1,40 @@
+## 2026-09-18 — The en-label workflow fix proved itself in production, and the step list lies
+
+`generate-shrines-missing-en-label.yml` went red on today's scheduled run, and it is the fix working
+rather than a regression.
+
+`identical_name_en_labels` took a **429** from WDQS and bailed — correct policy, unchanged. The
+other seven generation steps succeeded, **the commit step ran**, and the job then went red naming
+exactly what was lost:
+
+    ::error::identical_name_en_labels did not regenerate this run (step outcome: failure)
+    Everything that DID succeed was committed by the previous step.
+
+Confirmed on disk: `shrines_missing_en_label.json` and `kana_en_labels.txt` carry today's date;
+`identical_name_en_labels.txt` is still on 09-17, which is the one that 429'd. Before 2026-09-17
+this run would have discarded all seven along with it.
+
+⚠ **The job's step list showed all eight steps as `success`.** That is `continue-on-error` masking
+the conclusion — and it is the whole reason the re-fail step reads `outcome` instead. Anyone
+reading the step list would conclude nothing failed. I nearly did: my first thought on seeing eight
+green steps and a red job was that my own guard had a bug.
+
+⚠ **Two things that looked like rot and are not:**
+
+- `cjk_ja_backfill.txt` last changed **2026-06-23**, which reads as a dead generator. It is not:
+  today's log says *"Shrines with a zh label but no ja: 1; emitting 1 Lja backfills."* The file is
+  one line because the population is one item. The generator runs every day and writes the same
+  thing.
+- `temple_en_labels.txt` also kept its 09-17 date despite its step succeeding — no diff, nothing to
+  commit.
+
+⚠ **And one thing I have NOT explained:** two `Regenerate label-generator QuickStatements` runs
+ended `cancelled`, at 26m27s and 4m36s. The workflow is `cancel-in-progress: false`, so this is not
+the usual supersede-in-group behaviour. Its most recent runs succeed, so nothing is broken. I do not
+have the mechanism and am not proposing one.
+
+No code changed this tick.
+
 ## 2026-09-18 — The label targets are completely bare, which settles the description question
 
 `docs/description_label_policy.md` makes this load-bearing: the constraint is on the **(label,
