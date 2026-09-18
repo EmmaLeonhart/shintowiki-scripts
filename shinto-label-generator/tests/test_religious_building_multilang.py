@@ -464,3 +464,56 @@ def test_an_invisible_character_never_reaches_the_label():
     got = m.render("Madonna", "Q16970", "ja", place="\u00adラドヴィシュ")
     assert got == "ラドヴィシュの聖母教会"
     assert "\u00ad" not in got
+
+
+# --------------------------------------------------------------------------
+# Coverage widening, 2026-09-18
+# --------------------------------------------------------------------------
+
+def test_an_apostrophe_fragment_is_not_a_name():
+    """⛔ Fragments the apostrophe split creates. These were the two most frequent
+    "unknown names" in the whole corpus -- s 56, d 46 -- and neither is a name.
+
+    Checked at the PARSE level for the French case: stripping `d` is what this
+    fixes, and that label still refuses afterwards because `agnane` is a place
+    the tables do not know. Asserting a rendering there would have been asserting
+    the wrong thing."""
+    assert m.render("St. Nicholas's Church", "Q16970", "ja",
+                    place="X") == "Xの聖ニコラオス教会"
+    tokens, saw_saint = m.parse_name("Chapelle Saint-Pierre d'Agnane")
+    assert "d" not in tokens and saw_saint
+    assert tokens == ["pierre", "agnane"]
+
+
+@pytest.mark.parametrize("label,expect", [
+    # Compound saints -- both halves render and the name doubles otherwise.
+    ("Chapel of St. John of Nepomuk", "聖ネポムクのヨハネ"),
+    ("St. Antonius von Padua", "聖パドヴァのアントニオ"),
+    ("Chapel of Saint Mary Magdalene", "聖マグダラのマリア"),
+])
+def test_a_compound_saint_renders_once(label, expect):
+    got = m.render(label, "Q16970", "ja", place="X")
+    assert got == "Xの" + expect + "教会", got
+
+
+def test_a_role_word_is_not_a_name():
+    """"San Pietro Apostolo" is Peter; apostolo is his role."""
+    assert m.render("San Pietro Apostolo", "Q16970", "ja",
+                    place="X") == "Xの聖ペトロ教会"
+    assert m.render("Saint Athanasius the Athonite church", "Q16970", "ja",
+                    place="X") == "Xの聖アタナシオス教会"
+
+
+@pytest.mark.parametrize("label,expect", [
+    ("Santa Croce", "聖十字架"),
+    ("Dreifaltigkeitskapelle", "至聖三者"),
+    ("Erlöserkirche", "救世主"),
+])
+def test_the_added_dedications_render(label, expect):
+    assert m.render(label, "Q16970", "ja", place="X") == "Xの" + expect + "教会"
+
+
+def test_a_german_location_compound_names_no_dedication():
+    """Wegkapelle is "wayside chapel" -- it says where, not who for."""
+    assert m.render("Wegkapelle", "Q108325", "ja", place="X") is None
+    assert m.render("Hofkapelle Aichet", "Q108325", "ja", place="X") is None

@@ -73,6 +73,13 @@ TYPE_WORDS = {
     "friedhofskapelle", "friedhofs", "friedhofskirche", "cemetery", "orthodox",
     "orthodoxe", "anglican", "methodist", "baptist_church", "chiesetta",
     "pfarrkirchlein", "kirchlein", "bethaus", "betsaal",
+    # German compound heads that describe WHERE or WHOSE, not who it is for:
+    # Wegkapelle (wayside), Hofkapelle (farm), Ortskapelle (village),
+    # Schlosskapelle (castle), plus more denominations.
+    "weg", "wegkapelle", "hof", "hofkapelle", "orts", "ortskapelle",
+    "schloss", "schlosskapelle", "burgkapelle", "burg", "friedhof",
+    "protestantische", "protestantisch", "hervormde", "evangelical",
+    "lutherkirche", "luther", "templo", "iglesia_parroquial",
 }
 
 # Connectives and articles — dropped entirely.
@@ -84,6 +91,15 @@ STOPWORDS = {
     # Modifiers, measured: paroquial 158, filial 54, old 73, new 61.
     "paroquial", "parroquial", "filial", "old", "new", "alte", "alten", "neue",
     "neuen", "former", "ancienne", "vecchia", "nuova",
+    # ⛔ Fragments the apostrophe split produces. Splitting on ' was needed for
+    # Sant'Anna, and it also turns "St. Nicholas's" into [nicholas, s] and
+    # "d'Agnane" into [d, agnane]. Measured: s 56, d 46 -- the two biggest
+    # "unknown names" in the corpus were not names at all.
+    "s", "d", "l", "dell", "nell", "sull", "all", "quell",
+    # Roles, not names: "San Pietro Apostolo" is Peter (apostolo 48 in the corpus).
+    "apostolo", "apostle", "apostel", "apostol", "evangelista", "evangelist",
+    "martire", "martyr", "martir", "confessor", "bispo", "obispo", "vescovo",
+    "bishop", "papa", "pope", "abad", "abbot", "the", "athonite",
 }
 
 # Saint / dedication markers — recognised so the following token is read as a
@@ -252,6 +268,51 @@ NAMES = {
     "pio":       {"ja": "ピオ", "zh": "碧岳",   "ko": "비오"},
     "bonifatius": {"ja": "ボニファティウス", "zh": "波尼法爵", "ko": "보니파시오"},
     "matthew":   {"ja": "マタイ", "zh": "玛窦",   "ko": "마태오"},
+    # --- widened 2026-09-18 from the measured unknown-token frequency list ---
+    "bartholomew": {"ja": "バルトロマイ", "zh": "巴尔多禄茂", "ko": "바르톨로메오"},
+    "bartholomäus": {"ja": "バルトロマイ", "zh": "巴尔多禄茂", "ko": "바르톨로메오"},
+    "bartolomeo": {"ja": "バルトロマイ", "zh": "巴尔多禄茂", "ko": "바르톨로메오"},
+    "bartolomeu": {"ja": "バルトロマイ", "zh": "巴尔多禄茂", "ko": "바르톨로메오"},
+    "bartolomé": {"ja": "バルトロマイ", "zh": "巴尔多禄茂", "ko": "바르톨로메오"},
+    "lucia":     {"ja": "ルチア", "zh": "路济亚", "ko": "루치아"},
+    "lucy":      {"ja": "ルチア", "zh": "路济亚", "ko": "루치아"},
+    "vitus":     {"ja": "ウィトゥス", "zh": "维托", "ko": "비토"},
+    "veit":      {"ja": "ウィトゥス", "zh": "维托", "ko": "비토"},
+    "petrus":    {"ja": "ペトロ", "zh": "彼得",   "ko": "베드로"},
+    "paulus":    {"ja": "パウロ", "zh": "保罗",   "ko": "바울로"},
+    "stephanus": {"ja": "ステファノ", "zh": "斯德望", "ko": "스테파노"},
+    "nepomuk":   {"ja": "ネポムクのヨハネ", "zh": "内波穆克的若望", "ko": "네포무크의 요한"},
+    "elisabeth": {"ja": "エリーザベト", "zh": "依撒伯尔", "ko": "엘리사벳"},
+    "elizabeth": {"ja": "エリーザベト", "zh": "依撒伯尔", "ko": "엘리사벳"},
+    "hedwig":    {"ja": "ヘドヴィヒ", "zh": "海德维希", "ko": "헤드비히"},
+    "jadwiga":   {"ja": "ヘドヴィヒ", "zh": "海德维希", "ko": "헤드비히"},
+    "leonhard":  {"ja": "レオンハルト", "zh": "良纳", "ko": "레오나르도"},
+    "leonard":   {"ja": "レオンハルト", "zh": "良纳", "ko": "레오나르도"},
+    "leonardo":  {"ja": "レオンハルト", "zh": "良纳", "ko": "레오나르도"},
+    "magdalene": {"ja": "マグダラのマリア", "zh": "抹大拉的玛利亚", "ko": "막달레나 마리아"},
+    "magdalena": {"ja": "マグダラのマリア", "zh": "抹大拉的玛利亚", "ko": "막달레나 마리아"},
+    "athanasius": {"ja": "アタナシオス", "zh": "亚大纳西", "ko": "아타나시오"},
+    "ulrich":    {"ja": "ウルリヒ", "zh": "吾尔利", "ko": "울리히"},
+    "mauritius": {"ja": "マウリティウス", "zh": "毛里丘", "ko": "마우리시오"},
+    "cristina":  {"ja": "クリスティーナ", "zh": "基利斯汀", "ko": "크리스티나"},
+    "christina": {"ja": "クリスティーナ", "zh": "基利斯汀", "ko": "크리스티나"},
+    "martín":    {"ja": "マルティヌス", "zh": "玛尔定", "ko": "마르티노"},
+    "agatha":    {"ja": "アガタ", "zh": "亚加大", "ko": "아가타"},
+    "margaret":  {"ja": "マルガリタ", "zh": "玛加利大", "ko": "마르가리타"},
+    "margareta": {"ja": "マルガリタ", "zh": "玛加利大", "ko": "마르가리타"},
+    "gallus":    {"ja": "ガルス", "zh": "加卢斯", "ko": "갈루스"},
+    "wenceslaus": {"ja": "ヴァーツラフ", "zh": "瓦茨拉夫", "ko": "바츨라프"},
+    "adalbert":  {"ja": "アダルベルト", "zh": "圣达德", "ko": "아달베르토"},
+    # Galician saints -- the corpus has a large Galician slice
+    "baia":      {"ja": "エウラリア", "zh": "欧拉利亚", "ko": "에울랄리아"},
+    "eulalia":   {"ja": "エウラリア", "zh": "欧拉利亚", "ko": "에울랄리아"},
+    "tomé":      {"ja": "トマス", "zh": "多默",   "ko": "토마스"},
+    "paio":      {"ja": "ペラギウス", "zh": "培拉吉", "ko": "펠라기오"},
+    "xiao":      {"ja": "ユリアヌス", "zh": "儒略", "ko": "율리아노"},
+    "fiz":       {"ja": "フェリクス", "zh": "斐理斯", "ko": "펠릭스"},
+    "felix":     {"ja": "フェリクス", "zh": "斐理斯", "ko": "펠릭스"},
+    "xurxo":     {"ja": "ゲオルギオス", "zh": "乔治", "ko": "게오르기오스"},
+    "pedro":     {"ja": "ペトロ", "zh": "彼得",   "ko": "베드로"},
     "thomas":    {"ja": "トマス", "zh": "多默",   "ko": "토마스"},
 }
 
@@ -268,6 +329,16 @@ NAME_PHRASES = {
     "pedro pablo":       {"ja": "ペトロとパウロ", "zh": "伯多禄和保禄", "ko": "베드로와 바오로"},
     "peter paul":        {"ja": "ペトロとパウロ", "zh": "伯多禄和保禄", "ko": "베드로와 바오로"},
     "pietro paolo":      {"ja": "ペトロとパウロ", "zh": "伯多禄和保禄", "ko": "베드로와 바오로"},
+    # ⛔ Compound saints, or both halves render and the name doubles:
+    # "St. John of Nepomuk" came out 聖ヨハネネポムクのヨハネ.
+    "john nepomuk":      {"ja": "ネポムクのヨハネ", "zh": "内波穆克的若望", "ko": "네포무크의 요한"},
+    "johannes nepomuk":  {"ja": "ネポムクのヨハネ", "zh": "内波穆克的若望", "ko": "네포무크의 요한"},
+    "anthony padua":     {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
+    "antonius padua":    {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
+    "antonio padua":     {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
+    "antónio padua":     {"ja": "パドヴァのアントニオ", "zh": "帕多瓦的安多尼", "ko": "파도바의 안토니오"},
+    "mary magdalene":    {"ja": "マグダラのマリア", "zh": "抹大拉的玛利亚", "ko": "막달레나 마리아"},
+    "maria magdalena":   {"ja": "マグダラのマリア", "zh": "抹大拉的玛利亚", "ko": "막달레나 마리아"},
 }
 
 # Names that ALREADY contain the saint marker, so the prefix must be supplied
@@ -461,6 +532,13 @@ DEDICATIONS = {
     "antonio abate":    {"ja": "大アントニオ", "zh": "圣安当", "ko": "대 안토니오"},
     "antonio abad":     {"ja": "大アントニオ", "zh": "圣安当", "ko": "대 안토니오"},
     "purissima sang":   {"ja": "尊き御血", "zh": "宝血",   "ko": "보혈"},
+    "santa croce":      {"ja": "聖十字架", "zh": "圣十字", "ko": "성십자가"},
+    "dreifaltigkeit":   {"ja": "至聖三者", "zh": "圣三一", "ko": "삼위일체"},
+    "erlöser":          {"ja": "救世主", "zh": "救主",   "ko": "구세주"},
+    "cristo re":        {"ja": "王たるキリスト", "zh": "基督君王", "ko": "그리스도 왕"},
+    "christ the king":  {"ja": "王たるキリスト", "zh": "基督君王", "ko": "그리스도 왕"},
+    "mandylion":        {"ja": "自印聖像", "zh": "不由人手所画的救主圣像", "ko": "만딜리온"},
+    "heilig geist":     {"ja": "聖霊",   "zh": "圣神",   "ko": "성령"},
 }
 
 # A feast or event names WHICH dedication; a Marian title alone only names who it
@@ -498,6 +576,8 @@ SPECIFIC_DEDICATIONS = {
     "znamenie", "dores", "angustias", "entry of the theotokos",
     "joy of all who sorrow", "of the angels", "consolation", "bon secours",
     "merced", "piedade", "guia", "luz", "grace of nieppe",
+    "santa croce", "dreifaltigkeit", "erlöser", "cristo re",
+    "christ the king", "mandylion", "heilig geist",
     "immaculate heart", "cuore immacolato", "corazón inmaculado",
     "nativity of the lord", "nativity of christ",
     "nativity of the theotokos", "nativity of the virgin",

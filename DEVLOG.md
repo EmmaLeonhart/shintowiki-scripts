@@ -1,3 +1,46 @@
+## 2026-09-18 — Widening coverage: 8,323 -> 10,105, and the top two "unknown names" were not names
+
+Emma picked widening as the day's work. Measured the 14,457 unknown-dedication skips by first-unknown
+token, and **the two most frequent were parsing artefacts, not missing entries**:
+
+- **`s` (56)** — the English possessive. "St. Nicholas's Church" split to `[nicholas, s]`.
+- **`d` (46)** — the French contraction. "Saint-Pierre d'Agnane" split to `[d, agnane]`.
+
+Both were created by the apostrophe-splitting added yesterday for `Sant'Anna`. Fixing one thing made
+two others look like vocabulary gaps.
+
+**What was genuinely missing**, from the frequency list rather than from imagination:
+
+- **Bartholomew in four spellings** — bartholomäus / bartholomew / bartolomeo / bartolomeu, **154
+  items** between them, none of them present.
+- **A Galician cluster** — baia (Eulalia) 55, tomé 41, paio 37, xiao 34, fiz 31. The corpus is 15%
+  Galician and the tables had almost none of it.
+- German saint spellings: petrus, paulus, stephanus, bartholomäus — the Latin-German forms beside
+  the English ones I already had.
+- Dedications: **Santa Croce** 35 (I had the Spanish `santa cruz` and not the Italian),
+  Dreifaltigkeit 35, Erlöser 35, Cristo Re, Mandylion.
+
+⛔ **Two further classes that are NOT names and now say so:**
+
+- **Role words** — "San Pietro Apostolo" is Peter; `apostolo` (48) is his role. Same for evangelista,
+  martire, vescovo, abad, athonite.
+- **German location compounds** — Wegkapelle (wayside), Hofkapelle (farm), Ortskapelle (village),
+  Schlosskapelle (castle). These say WHERE, not who for, and correctly render nothing.
+
+⛔ **And one more doubled saint**, the third of its kind: "St. John of Nepomuk" came out
+聖ヨハネ**ネポムクのヨハネ** because both halves resolve. Added as a phrase, with Anthony of Padua
+and Mary Magdalene beside it.
+
+**ja 3,333 -> 4,023 · zh 3,635 -> 4,438 · ko 1,355 -> 1,644. Total 8,323 -> 10,105**, zero
+duplicates, zero malformed, zero invisible characters.
+
+⚠ **One of my new tests was wrong and the code was right.** I asserted that
+"Chapelle Saint-Pierre d'Agnane" renders; it does not, because `agnane` is a place the tables do not
+know, and refusing is correct. The `d` fix works — `parse_name` returns `[pierre, agnane]` — so the
+test now checks that, rather than asserting a rendering that should never happen.
+
+655 tests.
+
 ## 2026-09-18 — The cancelled label-generator runs: mechanism confirmed, not a defect
 
 Left unexplained last tick, and tagged NEEDS-INVESTIGATION. Investigated, because a tag with no
