@@ -107504,6 +107504,10 @@ Q141451275	Lko	"엔복사"
 Q141475899	Lko	"현신사"
 # Source: JA "熊野神社" (hanja reading)
 Q141477382	Lko	"웅야신사"
+# Source: JA "栽松寺" (hanja reading)
+Q141488548	Lko	"재송사"
+# Source: JA "栖了寺" (hanja reading)
+Q141492825	Lko	"서료사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
