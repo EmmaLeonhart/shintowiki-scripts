@@ -28,7 +28,10 @@
       "due": "2026-09-21",
       "emma_also_said": "September 1 was named first in the same sentence, before she specified Sept 21.",
       "title": "continue-on-error on the five label-generator pipeline steps",
-      "targets": ["queue", "open-questions"],
+      "targets": [
+        "queue",
+        "open-questions"
+      ],
       "queue_anchor": "## Pinned tail (keep last)",
       "injected": null,
       "body_md": [
@@ -65,9 +68,12 @@
       "id": "p958-corrections-batch-paste",
       "due": "2026-09-18",
       "title": "The P958 corrections batch — pasteable once the Wikidata lockout lifts",
-      "targets": ["queue", "open-questions"],
+      "targets": [
+        "queue",
+        "open-questions"
+      ],
       "queue_anchor": "## Pinned tail (keep last)",
-      "injected": null,
+      "injected": "2026-09-18",
       "body_md": [
         "## Scheduled — the P958 corrections batch is now pasteable",
         "",
@@ -97,9 +103,11 @@
       "id": "p361-duplicate-part-of-removals",
       "due": "2026-09-18",
       "title": "The 14 true duplicate part-of statements plus 10 confirmed leftovers",
-      "targets": ["queue"],
+      "targets": [
+        "queue"
+      ],
       "queue_anchor": "## Pinned tail (keep last)",
-      "injected": null,
+      "injected": "2026-09-18",
       "body_md": [
         "## Scheduled — the 24 `part of` removals are unblocked",
         "",
