@@ -145,6 +145,118 @@ SAINT_MARKERS = {
 
 SAINT_PREFIX = {"ja": "聖", "zh": "圣", "ko": "성"}
 
+# --------------------------------------------------------------------------
+# The mosque family — a separate slot system, because the dedication slot is
+# not a saint (Emma, 2026-09-18: "translate the generic, transliterate the
+# name", with `Old Mosque` → 旧モスク, `Upper Mosque` → 上モスク, `Omer Mosque`
+# → オメル・モスク).
+# --------------------------------------------------------------------------
+# `dedication()` is a Christian saint vocabulary and there is nothing in it a
+# mosque can match, so all 245 mosques in the corpus produced ZERO labels. The
+# shapes, measured 2026-09-19 over those 245:
+#
+#     bare type word only      77   "Mosque", "Džamija", "Masjid"
+#     generic modifier only    18   "Old Mosque", "Nova Džamija", "Merkez-Moschee"
+#     carries a name          137   "Omer Mosque", "Surau Bulian"
+#     not named as a mosque    10   "Nablus", "WikiBanua 2.0", "Donauwörther Straße 165"
+#     category-shaped           3   "Mosques in Dubai"
+#
+# The first two buckets render in all three languages, because a translation of
+# `old` is a translation and not a reading. The third is ja-only, for the same
+# reason `romance_katakana` is — see `plain_latin_katakana`.
+MOSQUE_P31 = {"Q32815"}
+
+# Words that just mean "mosque", in every source language the corpus uses. Kept
+# OUT of the global TYPE_WORDS on purpose: that set is consulted for all 22,548
+# items and `_strip_compound_type` matches it as a suffix, so adding `cami` or
+# `mosk` there would change how 18,148 church labels parse for no gain.
+MOSQUE_TYPE_WORDS = {
+    "mosque", "mosques", "moschee", "moske", "mosk", "moské", "moskee",
+    "mosquee", "mosquée", "mezquita", "meczet",
+    "džamija", "dzamija", "džamije", "dzamija", "xhamia", "xhamija",
+    "cami", "camii", "camisi", "camia", "mescit", "mescidi", "məscidi",
+    "masjid", "masjids", "mesjid", "musalla", "musholla", "moschea",
+}
+
+# ⛔ A *surau* is not a mosque (Emma, 2026-09-19): a small Malay/Minangkabau
+# prayer hall, filed under P31 mosque because Wikidata has no closer class. She
+# chose the loanword over folding it into モスク, which is the same call the
+# TYPES table already makes for ワット and グルドワーラー — the classes Wikidata
+# keeps apart stay apart. 9 items.
+#
+# ⚠ The zh cell is MINE, not hers: 苏劳 is a Xinhua-style transliteration, since
+# Chinese has no settled term and the alternative (祈祷室) is a translation,
+# which is the option she did not pick.
+SURAU_WORDS = {"surau", "suraus"}
+SURAU_TYPE = {"ja": "スラウ", "zh": "苏劳", "ko": "수라우"}
+
+# A *jāmi'* / *juma* mosque is the congregational one — the Friday mosque — as
+# against a neighbourhood *masjid*. Emma, 2026-09-19, chose to translate the
+# distinction rather than strip it. 18 items.
+FRIDAY_WORDS = {
+    "jami", "jame", "jami'", "jamik", "jamig", "jamia", "juma", "jumah",
+    "jama", "djami", "djamik", "cuma", "cümə", "cume", "jame'", "jum'a",
+}
+FRIDAY_MODIFIER = {"ja": "金曜", "zh": "聚礼", "ko": "금요 "}
+
+# Generic modifiers: translated, never transliterated. Every key was taken from
+# the measured token list over the 245, not invented — the Slavic, Turkish and
+# Malay forms are there because the labels are not all English.
+#
+# ⚠ The ko column is NATIVE Korean (옛/새/위/아래/큰), Emma's choice on
+# 2026-09-19 over the Sino-Korean 구/신/상/하/대 that would have paralleled the
+# ja column one-for-one. It is spaced; ja and zh are not.
+GENERIC_MODIFIERS = {
+    "old":     {"ja": "旧",   "zh": "旧",   "ko": "옛 "},
+    "new":     {"ja": "新",   "zh": "新",   "ko": "새 "},
+    "great":   {"ja": "大",   "zh": "大",   "ko": "큰 "},
+    "upper":   {"ja": "上",   "zh": "上",   "ko": "위 "},
+    "lower":   {"ja": "下",   "zh": "下",   "ko": "아래 "},
+    "middle":  {"ja": "中",   "zh": "中",   "ko": "가운데 "},
+    "central": {"ja": "中央", "zh": "中央", "ko": "중앙 "},
+}
+
+# Source spellings → the modifier they are. Measured spellings only.
+MODIFIER_ALIASES = {
+    "old": "old", "stara": "old", "stari": "old", "staro": "old",
+    "eski": "old", "alte": "old", "alten": "old", "ancienne": "old",
+    "vieux": "old", "usang": "old", "tuo": "old", "lama": "old",
+    "new": "new", "nova": "new", "novi": "new", "novo": "new",
+    "yeni": "new", "neue": "new", "neu": "new", "nouvelle": "new",
+    "baru": "new",
+    "great": "great", "grand": "great", "grande": "great", "gran": "great",
+    "büyük": "great", "buyuk": "great", "kebir": "great", "velika": "great",
+    "agung": "great", "raya": "great", "besar": "great",
+    "upper": "upper", "yukarı": "upper", "yukari": "upper",
+    "gornja": "upper", "gorna": "upper", "atas": "upper",
+    "lower": "lower", "aşağı": "lower", "asagi": "lower", "ashaghi": "lower",
+    "donja": "lower", "dolna": "lower", "bawah": "lower",
+    "middle": "middle", "orta": "middle", "srednja": "middle",
+    "sredna": "middle", "tengah": "middle",
+    "central": "central", "merkez": "central", "centrale": "central",
+    "centralna": "central", "pusat": "central",
+}
+
+# Ordinal disambiguators on an otherwise identical name — "Nova Džamija I" beside
+# "Nova Džamija II". They say nothing about the building, and rendering them as a
+# transliterated name gave イイ. Dropped; the duplicate guard then decides which
+# of the colliding labels survives, which is what it is for.
+_ROMAN = re.compile(r"^[ivx]+$")
+
+# ⛔ An ENGLISH word in the name slot means the label is English, and none of the
+# three orthographies `plain_latin_katakana` reads is English. Reading one with
+# Malay rules gave ブルネイ・インテルナティオナル・アイルポルト・モスク for
+# `Brunei International Airport Mosque` — confident, systematic and wrong, the
+# same failure `romance_katakana` had when it read French as Italian. The
+# transliterator cannot detect this (the letters are all legal), so the parser
+# refuses the item instead.
+ENGLISH_MARKERS = {
+    "international", "airport", "police", "village", "station", "kiosk",
+    "prophet", "queen", "tiled", "complex", "monastery", "cemetery", "city",
+    "town", "district", "street", "north", "south", "east", "west", "main",
+    "royal", "national", "memorial", "university", "hospital", "market",
+}
+
 # ⚠ THE zh COLUMN IS CATHOLIC REGISTER, AND THAT IS A CHOICE (audited 2026-09-18)
 #
 # Chinese has two parallel Christian vocabularies and they disagree on almost
@@ -1054,7 +1166,109 @@ def render_en(label, p31):
     return "%s of %s" % (type_words["en"], en)
 
 
-def render(label, p31, lang, place=None, rules="it"):
+try:
+    from plain_latin_katakana import name_to_katakana as _plain_kana
+except ImportError:                                    # pragma: no cover
+    _plain_kana = None
+
+# ⛔ ja only, for the reason `_QUALIFIER_LANGS` gives: a transliteration is a
+# reading, and there is no rule-based reading of a Macedonian village name into
+# hanzi or hangul. The generic mosques still reach zh and ko, because a
+# translation of `old` is a translation.
+_MOSQUE_NAME_LANGS = {"ja"}
+
+_KATAKANA = re.compile(r"[ァ-ヺー]")
+
+
+def _kana_join(left, right):
+    """`・` between two katakana runs, nothing between anything else.
+
+    Emma's own example is オメル・モスク, and without the separator オメルモスク
+    reads as one word. A kanji type word (教会, 金曜モスク's 金曜) needs no
+    separator and must not get one.
+    """
+    if not left or not right:
+        return (left or "") + (right or "")
+    if _KATAKANA.match(left[-1]) and _KATAKANA.match(right[0]):
+        return left + "・" + right
+    return left + right
+
+
+def mosque_parse(label):
+    """(modifiers, friday, surau, name_tokens, saw_type) for a mosque label.
+
+    The generic-vs-name test, and it is a lookup rather than a heuristic: a
+    token is generic when `MODIFIER_ALIASES` names it, and everything left over
+    after the type words, the modifiers, the stopwords and the ordinals is a
+    name. Anything guessed at here would be guessed at in 245 different
+    languages at once.
+    """
+    modifiers, names = [], []
+    friday = surau = saw_type = False
+    for raw in re.split(r"[\s/,\.\-–—'’]+", label):
+        tok = _norm(raw)
+        if not tok:
+            continue
+        if tok in MOSQUE_TYPE_WORDS:
+            saw_type = True
+        elif tok in SURAU_WORDS:
+            saw_type = surau = True
+        elif tok in FRIDAY_WORDS:
+            saw_type = friday = True
+        elif tok in MODIFIER_ALIASES:
+            alias = MODIFIER_ALIASES[tok]
+            if alias not in modifiers:
+                modifiers.append(alias)
+        elif tok in STOPWORDS or _ROMAN.match(tok) or len(tok) == 1:
+            # A one-letter leftover is an initial or an honorific abbreviation —
+            # the H. of `Masjid H. Bakri` (Haji), which read as フ.
+            continue
+        else:
+            names.append(raw.strip(" .,'’"))
+    return modifiers, friday, surau, names, saw_type
+
+
+def render_mosque(label, p31, lang, place, latin_rules=None):
+    """A mosque-family label in `lang`, or None.
+
+    Slots, in this order: `<place>の` `<name>` `<modifiers>` `<friday>` `<type>`.
+    A modifier is translated, a name is transliterated, and both modifier and
+    Friday marker sit against the type word they qualify.
+
+    ⚠ The modifier goes AFTER the name, not before it. First written the other
+    way round, `Adana New Mosque` came out 新アダナ・モスク — which reads as a
+    mosque in a place called New Adana, because a Japanese prefix attaches to
+    whatever follows it. アダナ新モスク is the new mosque at Adana, which is what
+    the label says. The same mistake turned `Ashaghi Mosque in Buzovna` into
+    下ブゾヴナ・モスク, "the Lower Buzovna mosque".
+    """
+    modifiers, friday, surau, names, saw_type = mosque_parse(label)
+    if not saw_type:
+        # "Nablus", "WikiBanua 2.0", "Donauwörther Straße 165" — filed under
+        # P31 mosque but not named as one. There is no slot to put them in.
+        return None
+    type_word = SURAU_TYPE[lang] if surau else TYPES[p31][lang]
+    tail = ("".join(GENERIC_MODIFIERS[m][lang] for m in modifiers)
+            + (FRIDAY_MODIFIER[lang] if friday else "") + type_word)
+
+    if not names:
+        return place + _PLACE_JOIN[lang] + tail
+    if any(_norm(n) in ENGLISH_MARKERS for n in names):
+        return None
+    if lang not in _MOSQUE_NAME_LANGS or _plain_kana is None:
+        return None
+    kana = _plain_kana(" ".join(names), latin_rules)
+    if not kana:
+        return None
+    # A name word that IS the place is already in the place slot: "Mosque in
+    # Pirshagi" would otherwise read ピルシャギのピルシャギ・モスク.
+    kept = [k for k in kana.split("・") if k != place]
+    if not kept:
+        return place + _PLACE_JOIN[lang] + tail
+    return place + _PLACE_JOIN[lang] + _kana_join("・".join(kept), tail)
+
+
+def render(label, p31, lang, place=None, rules="it", latin_rules=None):
     """The label in `lang`, or None when any piece is unknown.
 
     `place` is the P131 area's OWN label in `lang` — passed in, never derived
@@ -1077,7 +1291,9 @@ def render(label, p31, lang, place=None, rules="it"):
     place = clean_place(place)
     if not place:
         return None
+    if p31 in MOSQUE_P31:
+        return render_mosque(label, p31, lang, place, latin_rules)
     ded = dedication(label, lang, rules)
     if not ded:
         return None
-    return place + _PLACE_JOIN[lang] + ded + type_words[lang]
+    return place + _PLACE_JOIN[lang] + _kana_join(ded, type_words[lang])

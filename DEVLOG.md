@@ -1,3 +1,70 @@
+## 2026-09-19 — mosque labels: 0 to 137, and a second transliterator
+
+`dedication()` is a Christian saint vocabulary, and `build()` gated every item on it returning
+something. So all **245 mosques** in the religious-building corpus produced **zero** labels — not
+because they were hard, but because they were never eligible. Emma, 2026-09-18:
+*"translate the generic, transliterate the name"*, with `Old Mosque` → 旧モスク, `Upper Mosque` →
+上モスク, `Omer Mosque` → オメル・モスク.
+
+Measured the 245 before writing any table. The shape is the whole reason the instruction works:
+**77 bare type word**, **18 generic modifier only**, **137 carrying a name**, 10 not named as a
+mosque at all, 3 category-shaped. Countries: North Macedonia 98, Indonesia 39, Turkey 23,
+Azerbaijan 17.
+
+**What shipped.** `MOSQUE_TYPE_WORDS` / `GENERIC_MODIFIERS` / `MODIFIER_ALIASES` / `mosque_parse` /
+`render_mosque` in `religious_building_morphemes.py`, and a new
+`shinto-label-generator/plain_latin_katakana.py` for the name half. Output: **ja 4,358 → 4,618,
+zh 4,840 → 5,099, ko 1,781 → 1,940** — 137 new lines, and **zero existing lines changed**, which is
+the check that adding the mosque vocabulary did not disturb the 18,148 churches.
+
+**The generic-vs-name test is a lookup, not a heuristic.** A token is generic when
+`MODIFIER_ALIASES` names it; everything left after the type words, modifiers, stopwords, ordinals
+and one-letter honorifics is a name. The aliases are measured spellings in the corpus's own
+languages — `stara`/`eski`/`tuo`/`usang`, `nova`/`yeni`/`baru`, `agung`/`raya`/`besar`/`kebir`.
+
+**Three calls put to Emma** (the religious-building ontology/translation carve-out), all answered in
+one modal:
+
+- **Jāmi'/juma/jama/jamik/cümə is the congregational mosque and the distinction is TRANSLATED** —
+  金曜 / 聚礼 / 금요. 18 items.
+- **A surau is not a mosque** — it keeps its own word, スラウ / 수라우, the call `TYPES` already makes
+  for ワット and グルドワーラー. 9 items. ⚠ The zh cell 苏劳 is mine, not hers.
+- **The ko modifiers are native, not Sino-Korean** — 옛/새/위/아래/큰/중앙 over 구/신/상/하/대.
+
+**`plain_latin_katakana.py` is a sibling of `romance_katakana.py`, not an extension of it.** That
+module's entire output rule is Romance penultimate stress written as ー (Loreto → ロレート), and
+Ömer is オメル, not オーメル. The new one shares the kana grid and nothing else, covering `bs`
+(Bosnian/Croatian/Serbian-Latin/Macedonian-Latin), `tr` (Turkish/Azerbaijani) and `ms`
+(Malay/Indonesian) — **186 of the 245**. `rules_for_country` never defaults: French, romanised
+Arabic, Russian-romanised Tatar and German all sit in this population and all get nothing.
+
+**Four things that were wrong first, each caught by reading the output rather than the code:**
+
+- **The modifier was in front of the name.** `Adana New Mosque` came out 新アダナ・モスク — a mosque
+  in a place called *New Adana*, because a Japanese prefix attaches to what follows it. Modifier now
+  follows the name: アダナ新モスク.
+- **`č → ch` then `c → ts` ate its own output.** Gradačac → グラダツハツ. Parked on a sentinel, the
+  same trick `romance_katakana` uses for Ĉ.
+- **Phonotactics, not the alphabet, tell these languages apart.** `Rzhavets` is spelled entirely in
+  legal Turkish letters and read as ルズハヴェツ. Turkish has no native initial cluster; an onset
+  check catches what the letter set cannot. It removed nothing from the real output — it guards a
+  class that is not there yet.
+- **An English label read as Malay.** `Brunei International Airport Mosque` →
+  ブルネイ・インテルナティオナル・アイルポルト・モスク. Every letter is legal Malay, so only the
+  vocabulary gives it away; `ENGLISH_MARKERS` refuses the item.
+
+Also: `y` with no vowel after it is the vowel /i/, not the glide (Süleyman was スレユマン); `tu`/`ti`
+are トゥ/ティ, not ツ/チ (Saltuk was サルツク); a palatal with no vowel takes the i column
+(Vrbanjska was ヴルバニュスカ).
+
+⚠ **Not our bug, worth knowing:** `Adana New Mosque` renders as 強川のアダナ新モスク because
+Wikidata's ja label for Seyhan (`Q524349`) is 強川 — someone translated the name's literal meaning.
+The place label is read from Wikidata and never derived, which is the documented rule, so it passes
+through.
+
+53 new tests in `shinto-label-generator/tests/test_mosque_labels.py`, including Emma's three
+examples as the acceptance test. Rationale doc updated with section 7a. Full suite 2,597 pass.
+
 ## 2026-09-18 (seventh) — accelerating the English labels, and the registry that unblocks them
 
 Emma reversed the deliberate-slowness rule for this work on purpose: *"I do want to accelerate it

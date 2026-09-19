@@ -32,10 +32,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
-- [ ] Religious buildings: mosque labels = translate the generic, transliterate the name (Emma,
-  same day). `Old Mosque` -> 旧モスク, `Upper Mosque` -> 上モスク, `Omer Mosque` -> オメル・モスク.
-  Needs a generic-modifier table and a generic-vs-name test. 245 mosques currently get **0** labels
-  because `dedication()` is a saint vocabulary; 64 of them are the bare word `Mosque`.
 - [ ] Religious buildings: drop the `is_latin_script()` gate in stage 1 and transliterate
   Arabic/Hebrew/Devanagari names. ⚠ MY CALL, not hers — she did not answer the question. It follows
   from the two rulings she did give (no dedication means transliteration; non-Japanese temples are in

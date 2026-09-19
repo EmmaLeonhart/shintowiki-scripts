@@ -1,7 +1,10 @@
 # How a religious-building label is assembled (2026-09-18)
 
 Rationale doc for `shinto-label-generator/religious_building_morphemes.py`,
-`romance_katakana.py` and `generate_religious_building_multilang.py`.
+`romance_katakana.py`, `plain_latin_katakana.py` and
+`generate_religious_building_multilang.py`.
+
+*Section 7a and the mosque rows of section 10 added 2026-09-19.*
 
 The problem: 22,548 churches, chapels, mosques and synagogues need ja/zh/ko labels, and the only
 text we have for each is a Commons category name that is usually **not English** — `Kirche Rehden`,
@@ -157,6 +160,84 @@ stay refused.
 
 ---
 
+## 7a. The mosque family — a second slot system (2026-09-19)
+
+Everything above is a Christian saint vocabulary, and **nothing in it can match a mosque**. All 245
+mosques in the corpus produced zero labels, not because they were hard but because they were never
+eligible: `build()` gated every item on `dedication(label, "ja")` returning something.
+
+Emma, 2026-09-18: ***"translate the generic, transliterate the name"***, with three worked examples
+— `Old Mosque` → 旧モスク, `Upper Mosque` → 上モスク, `Omer Mosque` → オメル・モスク.
+
+**The measured shape of the 245**, which is what makes that instruction tractable:
+
+| shape | n | example |
+|---|---|---|
+| bare type word only | 77 | `Mosque`, `Džamija`, `Masjid` |
+| generic modifier only | 18 | `Old Mosque`, `Nova Džamija`, `Merkez-Moschee` |
+| carries a name | 137 | `Omer Mosque`, `Surau Bulian` |
+| not named as a mosque | 10 | `Nablus`, `WikiBanua 2.0`, `Donauwörther Straße 165` |
+| category-shaped | 3 | `Mosques in Dubai` |
+
+The first two buckets reach **all three languages** — a translation of *old* is a translation, not a
+reading. The third is **ja only**, for the same reason section 7 gives.
+
+**Slots:** `<place>の` `<name>` `<modifiers>` `<friday>` `<type>`.
+
+⚠ **The modifier goes after the name, not before it.** Written the other way round first,
+`Adana New Mosque` came out 新アダナ・モスク — a mosque in a place called *New Adana*, because a
+Japanese prefix attaches to whatever follows it. アダナ新モスク is the new mosque at Adana.
+
+**The generic-vs-name test is a lookup, not a heuristic.** A token is generic when
+`MODIFIER_ALIASES` names it; everything surviving the type words, the modifiers, the stopwords, the
+ordinals and the one-letter honorifics is a name. The aliases are measured spellings across the
+corpus's actual source languages, not English only — `stara` / `eski` / `tuo` / `usang` for *old*,
+`nova` / `yeni` / `baru` for *new*, `agung` / `raya` / `besar` / `kebir` for *great*.
+
+**Three calls Emma made on 2026-09-19**, none of which the ontology settled by itself:
+
+- **Jāmi' / juma / jama / jamik / cümə** (18 items) is the *congregational* mosque, and the
+  distinction is **translated**: 金曜 / 聚礼 / 금요.
+- **A surau is not a mosque** (9 items) — a small Malay prayer hall, filed under P31 mosque because
+  Wikidata has no closer class. It keeps **its own word** (スラウ / 수라우), the call the TYPES table
+  already makes for ワット and グルドワーラー. ⚠ The zh cell 苏劳 is mine, not hers.
+- **The ko modifiers are native, not Sino-Korean**: 옛 / 새 / 위 / 아래 / 큰 / 중앙, over the
+  구 / 신 / 상 / 하 / 대 that would have paralleled the ja column one-for-one.
+
+### `plain_latin_katakana.py`, and why it is not `romance_katakana`
+
+The name half needed a transliterator, and the Romance one is the wrong tool: its whole output rule
+is Romance penultimate stress written as ー (Loreto → ロレート). Ömer is オメル, not オーメル. So a
+sibling module, sharing the kana grid and nothing else, covering the three orthographies this
+population actually uses — **186 of 245 items**:
+
+| | languages | the digraphs that matter |
+|---|---|---|
+| `bs` | Bosnian / Croatian / Serbian-Latin / Macedonian-Latin | č ć š ž đ dž lj nj, c = ts, j = y |
+| `tr` | Turkish / Azerbaijani | c ç ş ğ ı ö ü ə x |
+| `ms` | Malay / Indonesian | sy kh gh th dh c q, ŋ |
+
+⛔ **Everything else refuses**, and `rules_for_country` never defaults — the lesson section 7 records
+the Romance module learning the expensive way. French (`Mosquée de Carpentras`), romanised Arabic
+(`Abd Al-Mun'im Riyad`), Russian-romanised Tatar (`Bolshiye Kaybitsy`) and German
+(`Donauwörther Straße`) all sit in this population and all get nothing.
+
+**Two guards exist because the letters alone are not enough:**
+
+- **Phonotactics.** `Rzhavets` is spelled entirely in legal Turkish letters and came back
+  ルズハヴェツ. Turkish has no native initial consonant cluster and Malay only a short list, so an
+  onset check catches what the alphabet cannot.
+- **English vocabulary.** `Brunei International Airport Mosque` read as Malay gave
+  ブルネイ・インテルナティオナル・アイルポルト・モスク. Every letter is legal; only the words give it
+  away, so `ENGLISH_MARKERS` refuses the item outright.
+
+⚠ **`MOSQUE_TYPE_WORDS` is deliberately NOT merged into the global `TYPE_WORDS`.** That set is
+consulted for all 22,548 items and `_strip_compound_type` matches it as a suffix, so adding `cami`
+or `mosk` there would change how 18,148 church labels parse for no gain. Regenerating after this
+change removed **zero** existing lines, which is the check that it did not.
+
+---
+
 ## 8. What is refused outright
 
 - **Category-shaped labels** (8 patterns). ~818 of the corpus name a *grouping*, not a building:
@@ -185,15 +266,20 @@ stay refused.
 
 ## 10. Current output
 
-| | lines |
-|---|---|
-| ja | 4,358 |
-| zh | 4,840 |
-| ko | 1,781 |
-| stage-1 English replacements | 16 |
+| | lines | of which mosque-family (2026-09-19) |
+|---|---|---|
+| ja | 4,618 | 76 |
+| zh | 5,099 | 31 |
+| ko | 1,940 | 30 |
+| stage-1 English replacements | 16 | — |
 
 Zero duplicate labels, zero duplicate QIDs, zero malformed lines, **0 collisions in 250 sampled
 against live Wikidata**. All in `shinto-label-generator/quickstatements/`, on the 20/day drip.
 
-**14,551 still refuse**, and the tail is genuinely long: 7,000+ distinct unknown tokens, mostly
+**~14,500 still refuse**, and the tail is genuinely long: 7,000+ distinct unknown tokens, mostly
 place names inside `San X de PLACE`. The cheap seam is worked out.
+
+The mosque family went from **0 labels to 137** across 245 items. What it does not reach is the
+Arab-world, French, Bangladeshi and Central Asian slices, which have no rule set and are not getting
+one from a guess — and the 34 mosques whose P131 place carries no ja/zh/ko label at all, which is the
+same ceiling every other item in the corpus hits.

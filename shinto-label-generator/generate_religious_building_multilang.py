@@ -69,6 +69,11 @@ try:
 except ImportError:                                    # pragma: no cover
     def _rules_for(_qid):
         return None
+try:
+    from plain_latin_katakana import rules_for_country as _latin_rules_for
+except ImportError:                                    # pragma: no cover
+    def _latin_rules_for(_qid):
+        return None
 
 import os as _uos, sys as _usys  # noqa: E402
 _uar = _uos.path.dirname(_uos.path.abspath(__file__))
@@ -203,7 +208,8 @@ def build(rows, cache):
     out = {lg: [] for lg in LANGS}
     seen = {lg: set() for lg in LANGS}
     reasons = {"no P31 mapping": 0, "no P131": 0, "category-shaped": 0,
-               "unknown dedication": 0, "no place label": 0, "duplicate": 0}
+               "unknown dedication": 0, "no place label": 0, "duplicate": 0,
+               "not named as a mosque": 0}
     for qid, label in rows:
         meta = cache["items"].get(qid) or {}
         if morph.is_category_shaped(label):
@@ -219,7 +225,15 @@ def build(rows, cache):
         place_labels = cache["places"].get(meta["p131"]) or {}
         # The source language comes from the item's own country, not a guess.
         rules = _rules_for(meta.get("p17"))
-        if morph.dedication(label, "ja") is None:
+        latin_rules = _latin_rules_for(meta.get("p17"))
+        # ⛔ The mosque family does not go through `dedication()` at all — that
+        # is a Christian saint vocabulary, and gating on it is what gave all 245
+        # mosques zero labels. `render_mosque` owns their parse.
+        if p31 in morph.MOSQUE_P31:
+            if not morph.mosque_parse(label)[4]:
+                reasons["not named as a mosque"] += 1
+                continue
+        elif morph.dedication(label, "ja") is None:
             reasons["unknown dedication"] += 1
             continue
         for lg in LANGS:
@@ -228,7 +242,7 @@ def build(rows, cache):
                 reasons["no place label"] += 1
                 continue
             rendered = morph.render(label, p31, lg, place=place,
-                                    rules=rules)
+                                    rules=rules, latin_rules=latin_rules)
             if not rendered:
                 continue
             # A duplicate label is the failure this whole design exists to avoid;
