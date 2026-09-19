@@ -41,7 +41,12 @@ _WIKI_HOSTS = ("miraheze.org", "fandom.com", "wikia.com", "wikia.org")
 # generate_multi_p13677_page.py did exactly that, with a spoofed "Mozilla/5.0 (compatible; EmmaBot/1.0;
 # +https://shinto.miraheze.org/...)" string. Sending NO contact address instead is not an improvement:
 # it is worse citizenship and still leaves the calling script unidentifiable.
-_WIKIDATA_SOURCE_HOSTS = ("jmapps.ne.jp", "kokugakuin.ac.jp")
+# houjin-bangou.nta.go.jp joins them 2026-09-18 for the same reason: Japan's National Tax Agency
+# corporate-number registry is where a 宗教法人's legally registered フリガナ comes from, it is the
+# source 4,764 P1814 statements already cite, and fetch_nta_religious_readings.py reads it in service
+# of Wikidata work and nothing else. ua_for fails closed, so an unlisted host raises rather than
+# guessing -- which is how this needed adding at all, and is the mechanism working.
+_WIKIDATA_SOURCE_HOSTS = ("jmapps.ne.jp", "kokugakuin.ac.jp", "nta.go.jp")
 
 
 def ua_for(url_or_host: str) -> str:

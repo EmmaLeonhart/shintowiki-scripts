@@ -118,6 +118,7 @@ ATOMIC_FILES = [
     "p4656_jawiki_references.txt",
     "p958_qualifiers.txt",
     "p958_corrections.txt",
+    "nta_kana.txt",
     "remove_shikinai_hiteisha.txt",
     "remove_shikinaisha.txt",
     "engishiki_add_references.txt",

@@ -156,6 +156,18 @@ jobs:
         continue-on-error: true
         run: python generate_p958_corrections.py
 
+      # The English-label residual is blocked on READINGS, not on the romanization rule:
+      # generate_kana_en_labels.py turns kana into a label with no judgement and has nothing
+      # to turn. This supplies them from the National Tax Agency registry — a 宗教法人's
+      # legally registered フリガナ, the source 4,764 existing P1814 statements already cite.
+      # Self-healing: it re-queries for items that STILL have no P1814, so a landed reading
+      # drops out. The registry index is refreshed separately (it is a ~240MB download and
+      # the registry republishes monthly); this step reads whatever index is committed.
+      - name: Kana from the National Tax Agency registry
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_nta_kana.py
+
       - name: Drip-feed 20 label proposals from the label-generator subtree
         working-directory: modern-quickstatements
         continue-on-error: true
