@@ -32,6 +32,20 @@ from `ATOMIC_FILES`; they are not queue items.
 
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
+- [ ] Religious buildings: kana rule sets for the five orthographies the residue is made of
+  (Emma, 2026-09-19, asked which to build and answered **"All of them, French included"**).
+  6,627 refuse at the dedication gate and it is a country map: `de` 3,357 (DE 2,754 + AT 521 +
+  CH 82), `pl` 748, `fr` 594 (FR 556 + BE + QC), `ru` 529 romanised (RU 456 + UA 73), `cs` 289
+  (CZ 233 + SK 56). New families in `plain_latin_katakana.py` — `_RULES`, `_FOREIGN`,
+  `_MAX_ONSET`, `COUNTRY_RULES` — one family per commit, biggest first.
+  ⚠ She was shown the French caveat in the option text (Trouville-sur-Mer → トロウヴィッレ・スル・メル,
+  the reading `romance_katakana.rules_for_country` refuses by design) and picked it anyway. Build it.
+  ⚠ Each family needs the PHONOTACTIC gate too, not just the letter set — `Rzhavets` is spelled in
+  legal Turkish letters. `_onset_ok` / `_FOREIGN` are where that lives.
+- [ ] Religious buildings: the long tail after those five — Moldova+Romania 221, Netherlands 258,
+  Sweden 83, Armenia 47, Finland 31, Norway 18, Lithuania 14. Same treatment or documented refusal;
+  decide once the five are in and the shape of the residue is visible.
+
 - [ ] Religious buildings: emit `P825` (dedicated to) from the parsed dedication, not just labels
   (Emma, same day: *"using the dedicated to for other ontology not just labels"*). The morpheme
   table already resolves a dedication to a saint; nothing turns it into a statement. Must respect
