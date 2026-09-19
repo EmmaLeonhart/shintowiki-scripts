@@ -144,6 +144,18 @@ jobs:
           sleep 10
           python generate_p958_qualifiers.py
 
+      # The sections generate_p958_qualifiers.py can never reach: it is add-only, so a
+      # section that is PRESENT but wrong is invisible to it forever. Self-healing — it
+      # re-reads live state each build, so a correction that has landed emits nothing.
+      # Two outputs: p958_corrections.txt (sections merely MISSING; atomic, registered)
+      # and an append to sequential_misc.txt (sections WRONG; a remove-then-rebuild pair
+      # that only the sequential cursor can run in the right order). The append dedups
+      # against what is already in that file.
+      - name: Correct wrong and missing P958 sections
+        working-directory: modern-quickstatements
+        continue-on-error: true
+        run: python generate_p958_corrections.py
+
       - name: Drip-feed 20 label proposals from the label-generator subtree
         working-directory: modern-quickstatements
         continue-on-error: true

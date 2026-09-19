@@ -34,10 +34,14 @@ it forward, tag it, or raise it again.
   failure mode — the same one the lockout section below describes. The
   `p958-corrections-batch-paste` label was written by a script on 2026-08-19 and re-read as tested
   fact on 2026-09-18. It was wrong twice: nothing was ever on her, and the real reason
-  `p958_corrections.txt` is unregistered is that four of its seven lines are removals carrying a
-  qualifier field — the shape `execute_removal` refuses outright because it deletes the whole
-  `P13677` statement and its references, which is what cost four items their ojp-hani official names
-  on 2026-09-09. That is a generator bug, and generator bugs are ours.
+  `p958_corrections.txt` was unregistered is that its removal lines carried a qualifier field —
+  the shape `execute_removal` refuses outright because it deletes the whole `P13677` statement and
+  its references, which is what cost four items their ojp-hani official names on 2026-09-09. That
+  is a generator bug, and generator bugs are ours. **Fixed and registered 2026-09-18**: a section
+  that is merely MISSING is an ordinary add and drips from that file; a section that is PRESENT but
+  wrong is a remove-then-REBUILD pair in `sequential_misc.txt`, where the cursor guarantees the
+  rebuild follows the removal and the rebuild restores every qualifier and reference the live
+  statement carried.
 
 ## ⛔ The Wikidata lockout gates WRITES, not work
 

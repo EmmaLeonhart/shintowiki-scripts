@@ -60,10 +60,6 @@ from `ATOMIC_FILES`; they are not queue items.
 - [ ] Religious buildings: render BOTH dedications (Emma, same day). `Sint-Bartholomeus- en
   Barbarakerk`, `Saints Apostles Peter and Paul church in …`. Needs a join word per language and
   the Dutch hyphen-elision form.
-- [ ] `generate_p958_corrections.py` emits 4 removal lines carrying a `P958` qualifier field —
-  the shape `execute_removal` refuses because it deletes the whole `P13677` statement. Make it
-  emit something the drip can execute, then register `p958_corrections.txt`. Nothing about this
-  was ever a paste.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this

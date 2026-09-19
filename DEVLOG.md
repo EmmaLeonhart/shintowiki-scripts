@@ -1,3 +1,52 @@
+## 2026-09-18 (sixth) — the P958 corrections can run now, in two channels
+
+`generate_p958_corrections.py` emitted, for every correction, the pair
+
+    -QID|P13677|"id"|P958|"old"
+     QID|P13677|"id"|P958|"new"
+
+The first line is the shape `direct_daily_edits.execute_removal` refuses: a `-` line matches on
+entity+property+VALUE and `wbremoveclaims` takes the whole claim, so it deletes the statement, its
+references and its other qualifiers instead of the named qualifier. It is the shape that cost four
+items their entire ojp-hani `P1448` name on 2026-09-09. That, and not anything on Emma's account, is
+why `p958_corrections.txt` sat unregistered for a month.
+
+**No new verb was added to the executor.** Two shapes already existed and each correction is routed
+to the one that fits it:
+
+* **Section MISSING** → an ordinary add line in `p958_corrections.txt`, now registered in
+  `ATOMIC_FILES` (both lists) and drawn by the random daily drip. One line today: `Q111776816`
+  `181621` → `1`, whose statement carries no `P958` at all.
+* **Section PRESENT but wrong** → a remove-then-REBUILD pair appended to `sequential_misc.txt`. The
+  `-` line carries no qualifier fields, so it is not the refused shape and it means what it says:
+  the statement goes, and the line below recreates it. The rebuild is generated from the LIVE
+  statement, so every qualifier besides `P958` and every reference comes back. Three pairs:
+  `Q134925373` `181621` `n/a`→`0`, `Q135186791` `181329` `1`→`2`, `Q135069120` `180834` `1`→`2`.
+  The two 尾津/東大谷 statements carry `P3831 = Q135159299`; the rebuild restores it. None of the
+  three carries a reference, checked live.
+
+`sequential_misc.txt` is the only channel here where the rebuild is guaranteed to follow its
+removal — one line/day, strict order, cursor held until a line lands. In the random atomic pool the
+remove could fire second and leave the item with no statement at all. The cost is one day per item
+of no Kokugakuin id, which is what QuickStatements having no overwrite-a-qualifier verb costs.
+
+`Q135039671` emitted nothing: it is already `n/a`. The generator re-reads live state each run, so
+every correction goes inert once it lands, and the appended lines dedup against what is already in
+the sequential file. Wired into `generate-quickstatements.yml` so the file is not a frozen snapshot
+(`test_every_atomic_file_is_regenerated.py` catches exactly that, and did).
+
+**Refusals, stated rather than guarded away.** A statement whose rank is not normal, or which carries
+a snak this file cannot render back into QS v1, is REPORTED and not emitted — a rebuild that silently
+drops a reference is worse than a wrong section. Same for an item carrying two `P13677` statements
+with the same id: a value-matched removal cannot say which it takes. Zero cases today; nothing is
+held back by them.
+
+`tests/test_p958_corrections_shape.py` pins the routing, the three-field removal, the reference
+round-trip and each refusal; `test_sequential_misc.py` gains a pin that every `P13677` removal is
+immediately followed by its rebuild, so the gap can never become permanent. Full CI suite: 2511 pass.
+
+⚠ Generating is not clearance to submit. `wikidata_editing_lockout.state` gates the write, as ever.
+
 ## 2026-09-18 (fifth) — 90/10, temples are Shinto, and the cloud loop is closed
 
 Emma: *"general religious buildings vs Shinto shrines should be 90% Shinto 10% others. Japanese

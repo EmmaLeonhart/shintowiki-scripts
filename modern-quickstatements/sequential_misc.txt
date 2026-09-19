@@ -100,3 +100,38 @@ Q22119431|P1814|"つくだにますひとことねこじんじゃ"|S143|Q177837|
 -Q11487792|P361|Q11553385
 -Q11607305|P361|Q11467693
 -Q123118271|P361|Q11458212
+
+# ── P958 section corrections (2026-09-18) ──────────────────────────────────────
+# Generator: generate_p958_corrections.py (re-runnable, read-only against Wikidata).
+#
+# A P13677 Kokugakuin id is unique by the PAIR (id, P958 section), so an item whose
+# section is wrong is asserting it is a different numbered candidate than it is.
+# generate_p958_qualifiers.py is add-only and cannot reach a statement that already
+# carries a P958, so these three are invisible to it forever.
+#
+# WHY HERE AND NOT IN AN ATOMIC FILE. QuickStatements has no verb that overwrites a
+# qualifier — Help:QuickStatements lists "remove a qualifier without removing the
+# statement itself" under what it cannot do — and the shape that LOOKS like one,
+# `-Q|P13677|"id"|P958|"old"`, deletes the whole statement. That is the shape
+# direct_daily_edits.execute_removal refuses, after four items lost their entire
+# ojp-hani P1448 name to it on 2026-09-09. So a correction is a genuine
+# remove-then-REBUILD: the '-' line takes the statement and the line below it
+# recreates it with the right section plus every qualifier and reference the live
+# statement carried. Only this file guarantees the rebuild follows its removal.
+#
+# Each rebuild was generated from the live statement on 2026-09-18. All three are
+# rank normal and carry no references; the two 尾津/東大谷 items carry P3831 =
+# Q135159299, which the rebuild restores.
+#
+# Q134925373 181621 'n/a' -> '0'; Q135186791 181329 '1' -> '2' (it is labelled 尾津神社
+# exactly and the page numbers that candidate (2)); Q135069120 180834 '1' -> '2' (the
+# page lists exactly one candidate and numbers it (2), so there is no slot 1 at all).
+#
+# The fourth correction, Q111776816 181621 -> '1', is NOT here: its statement carries no
+# P958 at all, so it is an ordinary add and drips from p958_corrections.txt.
+-Q134925373|P13677|"181621"
+Q134925373|P13677|"181621"|P958|"0"
+-Q135186791|P13677|"181329"
+Q135186791|P13677|"181329"|P958|"2"|P3831|Q135159299
+-Q135069120|P13677|"180834"
+Q135069120|P13677|"180834"|P958|"2"|P3831|Q135159299

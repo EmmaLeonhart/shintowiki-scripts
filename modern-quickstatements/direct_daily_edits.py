@@ -117,6 +117,7 @@ ATOMIC_FILES = [
     "modern_shrine_ranking_qualifiers.txt",
     "p4656_jawiki_references.txt",
     "p958_qualifiers.txt",
+    "p958_corrections.txt",
     "remove_shikinai_hiteisha.txt",
     "remove_shikinaisha.txt",
     "engishiki_add_references.txt",
@@ -645,7 +646,16 @@ def execute_removal(session, csrf, parsed):
     and each lost its entire ojp-hani official name, two references, its P1264, and the
     カミノヤシロ qualifier the add step had just placed. Every one of the 332 carried
     references. The generator no longer emits them; this refuses the shape outright so
-    no other file can reintroduce it (`p958_corrections.txt`, unregistered, has it too).
+    no other file can reintroduce it.
+
+    `p958_corrections.txt` carried it too, which is the whole reason that file went
+    unregistered for a month. Fixed 2026-09-18: a P958 section that is merely MISSING is
+    an ordinary add and drips from that file, now registered; a section that is PRESENT
+    but wrong is a remove-then-REBUILD pair in `sequential_misc.txt`, where the '-' line
+    carries no qualifier fields (so it is not this shape, and it means what it says -- the
+    statement goes) and the line below it recreates the statement from the live one, with
+    the right section and every qualifier and reference restored. The cursor there is what
+    guarantees the rebuild follows the removal.
     """
     if parsed.get("qualifiers") or parsed.get("references"):
         return False, (

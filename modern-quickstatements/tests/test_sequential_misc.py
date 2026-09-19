@@ -58,6 +58,18 @@ def test_the_shipped_file_holds_exactly_the_intended_lines():
         '-Q11487792|P361|Q11553385',
         '-Q11607305|P361|Q11467693',
         '-Q123118271|P361|Q11458212',
+        # The P958 section corrections, appended 2026-09-18 by
+        # generate_p958_corrections.py. QuickStatements has no verb that overwrites
+        # a qualifier, so each is a remove-then-REBUILD pair: the '-' line takes the
+        # whole P13677 statement (it carries NO qualifier fields, so it is not the
+        # shape execute_removal refuses) and the line below recreates it with the
+        # right section plus every qualifier the live statement carried.
+        '-Q134925373|P13677|"181621"',
+        'Q134925373|P13677|"181621"|P958|"0"',
+        '-Q135186791|P13677|"181329"',
+        'Q135186791|P13677|"181329"|P958|"2"|P3831|Q135159299',
+        '-Q135069120|P13677|"180834"',
+        'Q135069120|P13677|"180834"|P958|"2"|P3831|Q135159299',
     ]
 
 
@@ -84,6 +96,27 @@ def test_the_add_precedes_its_removal():
     rm = next(i for i, l in enumerate(lines)
               if l.startswith('-Q22119431|P1814|'))
     assert add < rm
+
+
+def test_every_p13677_removal_is_immediately_followed_by_its_rebuild():
+    """A P958 correction removes the whole statement and rebuilds it on the next line.
+
+    The gap between the two is one day of this item having no Kokugakuin id at all, and
+    that is the cost of QuickStatements having no overwrite-a-qualifier verb. What must
+    not happen is the gap becoming permanent or unbounded: if anything is ever inserted
+    between a '-Q|P13677|"id"' and its rebuild, or the rebuild goes missing, the item
+    keeps losing the statement and never gets it back.
+    """
+    lines = dde.load_sequential_lines()
+    for i, line in enumerate(lines):
+        if not (line.startswith('-') and '|P13677|' in line):
+            continue
+        qid, prop, value = line[1:].split('|')[:3]
+        assert i + 1 < len(lines), "removal %s has no line after it" % line
+        nxt = lines[i + 1]
+        assert nxt.startswith('%s|%s|%s|P958|' % (qid, prop, value)), (
+            "removal %s is not immediately followed by its rebuild; next line is %s"
+            % (line, nxt))
 
 
 def test_every_shipped_sequential_line_parses():

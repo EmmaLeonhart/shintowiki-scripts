@@ -31,6 +31,7 @@ ATOMIC_FILES = [
     "modern_shrine_ranking_qualifiers.txt",   # Phase 1: add P459 to existing P13723
     "p4656_jawiki_references.txt",            # Add P4656 ja.wiki references to modern P13723
     "p958_qualifiers.txt",                    # Add P958 section qualifiers to P13677
+    "p958_corrections.txt",                   # P958 sections that are MISSING on a P13677 statement Emma has corrected by reading the Kokugakuin page. ADD-only by construction: generate_p958_corrections.py routes a correction here ONLY when the statement carries no P958 at all, so every line is order-independent. A section that is present but WRONG cannot be expressed as a QuickStatement — QS has no overwrite-a-qualifier verb and the shape that looks like one deletes the whole statement (execute_removal refuses it) — so those go to sequential_misc.txt as a remove-then-rebuild pair, where the cursor guarantees the rebuild follows the removal. Unregistered until 2026-09-18 because the generator emitted the refused shape.
     "remove_shikinai_hiteisha.txt",           # Remove P31=Q135026601 (Shikinai Hiteisha)
     "remove_shikinaisha.txt",                 # Remove P31=Q134917286 (Shikinaisha) from Shikinai Ronsha items
     "ronsha_ojp_name_removals.txt",           # Remove Old Japanese (ojp-*) P1448 official names from pure Shikinai Ronsha candidates
