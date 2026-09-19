@@ -26,6 +26,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import religious_building_morphemes as m  # noqa: E402
+import generate_religious_building_multilang as gen  # noqa: E402
 
 
 # --------------------------------------------------------------------------
@@ -544,3 +545,40 @@ def test_the_genitive_rule_does_not_invent_names():
 ])
 def test_pass_two_additions(label, expect):
     assert m.render(label, "Q16970", "ja", place="X") == "Xの" + expect + "教会"
+
+
+# ───────── a designation P31 must not hide the building class ─────────
+
+def test_all_p31_statements_are_kept():
+    """Wikidata serves the designation first on thousands of these, and keeping only
+    the first statement recorded `architectural landmark` and lost `church building`.
+    1,749 items were refused for it."""
+    ent = {"claims": {"P31": [
+        {"mainsnak": {"datavalue": {"value": {"id": "Q2319498"}}}},
+        {"mainsnak": {"datavalue": {"value": {"id": "Q16970"}}}},
+    ]}}
+    assert gen._claim_ids(ent, "P31") == ["Q2319498", "Q16970"]
+    assert gen._claim_id(ent, "P31") == "Q2319498"
+
+
+def test_building_type_skips_past_a_designation():
+    meta = {"p31s": ["Q2319498", "Q16970"]}
+    assert gen.building_type(meta, m.TYPES) == "Q16970"
+
+
+def test_building_type_reads_a_legacy_single_p31():
+    """A cache written before p31s existed still resolves, so the fix does not force a
+    refetch of all 22,542."""
+    assert gen.building_type({"p31": "Q16970"}, m.TYPES) == "Q16970"
+    assert gen.building_type({"p31": "Q2319498"}, m.TYPES) is None
+
+
+def test_building_type_is_none_when_no_statement_is_a_type():
+    assert gen.building_type({"p31s": ["Q2319498", "Q2065736"]}, m.TYPES) is None
+    assert gen.building_type({}, m.TYPES) is None
+
+
+def test_malformed_snaks_do_not_break_the_walk():
+    ent = {"claims": {"P31": [{"mainsnak": {}},
+                              {"mainsnak": {"datavalue": {"value": {"id": "Q16970"}}}}]}}
+    assert gen._claim_ids(ent, "P31") == ["Q16970"]

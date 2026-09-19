@@ -116,11 +116,43 @@ def _get(ids, props, languages=None):
 
 
 def _claim_id(entity, prop):
+    ids = _claim_ids(entity, prop)
+    return ids[0] if ids else None
+
+
+def _claim_ids(entity, prop):
+    """EVERY entity-valued statement on that property, in the order served.
+
+    P31 needs all of them. The selection query (`generate_religious_building_labels.py`)
+    matches `wdt:P31` against 5 building classes, so every item in the population is one
+    of those -- but an item commonly carries a DESIGNATION statement beside it and
+    Wikidata serves the designation first:
+
+        Q106484005  P31 = [Q2319498 architectural landmark, Q16970 church building]
+
+    Keeping only `[0]` recorded the landmark and lost the church. That is what put 1,749
+    items in the "no P31 mapping" bucket, 1,412 of them under `architectural landmark`, and
+    it read as junk in the population rather than as a dropped statement. Sampled 40 of
+    them on 2026-09-18: 40 of 40 carry a selection class.
+    """
+    out = []
     for c in (entity.get("claims") or {}).get(prop, []):
         try:
-            return c["mainsnak"]["datavalue"]["value"]["id"]
+            out.append(c["mainsnak"]["datavalue"]["value"]["id"])
         except (KeyError, TypeError):
             continue
+    return out
+
+
+def building_type(meta, types):
+    """The item's P31 that `types` knows, or None.
+
+    Reads `p31s` when present and falls back to the legacy single `p31`, so a cache
+    written before this fix still resolves rather than refetching 22,542 items.
+    """
+    for qid in (meta.get("p31s") or ([meta["p31"]] if meta.get("p31") else [])):
+        if qid in types:
+            return qid
     return None
 
 
@@ -134,12 +166,19 @@ def fetch(qids, refresh=False):
     cache.setdefault("places", {})
 
     # Also top up items cached before P17 was fetched, rather than forcing a
-    # full refetch of all 22,542 for one added property.
+    # full refetch of all 22,542 for one added property. Same treatment for `p31s`:
+    # an entry whose single cached `p31` is not a building type is the one the
+    # first-statement-only bug mangled, so refetch exactly those and leave the rest.
     todo = [q for q in qids
-            if q not in cache["items"] or "p17" not in cache["items"][q]]
+            if q not in cache["items"]
+            or "p17" not in cache["items"][q]
+            or ("p31s" not in cache["items"][q]
+                and building_type(cache["items"][q], morph.TYPES) is None)]
     for i in range(0, len(todo), BATCH):
         for qid, ent in _get(todo[i:i + BATCH], "claims").items():
-            cache["items"][qid] = {"p31": _claim_id(ent, "P31"),
+            p31s = _claim_ids(ent, "P31")
+            cache["items"][qid] = {"p31s": p31s,
+                                   "p31": p31s[0] if p31s else None,
                                    "p131": _claim_id(ent, "P131"),
                                    "p17": _claim_id(ent, "P17")}
         time.sleep(THROTTLE)
@@ -170,7 +209,8 @@ def build(rows, cache):
         if morph.is_category_shaped(label):
             reasons["category-shaped"] += 1
             continue
-        if not meta.get("p31") or meta["p31"] not in morph.TYPES:
+        p31 = building_type(meta, morph.TYPES)
+        if not p31:
             reasons["no P31 mapping"] += 1
             continue
         if not meta.get("p131"):
@@ -187,7 +227,7 @@ def build(rows, cache):
             if not place:
                 reasons["no place label"] += 1
                 continue
-            rendered = morph.render(label, meta["p31"], lg, place=place,
+            rendered = morph.render(label, p31, lg, place=place,
                                     rules=rules)
             if not rendered:
                 continue

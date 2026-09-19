@@ -30,6 +30,21 @@ from `ATOMIC_FILES`; they are not queue items.
     skip-check, push, then `AskUserQuestion` as the deliverable.
   - [ ] Run the status-report action once more independently as an end-of-session summary.
 
+- [ ] Religious buildings: no dedication means TRANSLITERATE (Emma, 2026-09-18, *"No dedication
+  means transliteration"*). 13,696 of 22,548 are refused at that gate — `Dorfkirche Jördenstorf`,
+  `Église du Pras de La Mulatière`, `Santo André de Lourizán`. `romance_katakana` already exists
+  and is already wired for country rules; it is the starting point, not a new build.
+- [ ] Religious buildings: emit `P825` (dedicated to) from the parsed dedication, not just labels
+  (Emma, same day: *"using the dedicated to for other ontology not just labels"*). The morpheme
+  table already resolves a dedication to a saint; nothing turns it into a statement. Must respect
+  the `INVALID_HONZON` / designation-class rules already in CLAUDE.md.
+- [ ] Religious buildings: the saint reading comes from WIKIDATA's label on the resolved QID, not
+  from my table (Emma, same day). Table becomes a QID map; `paused/table_audit.tsv`'s 101 rows are
+  the seed. Drop rows whose term resolved to a non-religious-figure — `All Saints` → `Q165386` is
+  a girl group.
+- [ ] Religious buildings: render BOTH dedications (Emma, same day). `Sint-Bartholomeus- en
+  Barbarakerk`, `Saints Apostles Peter and Paul church in …`. Needs a join word per language and
+  the Dutch hyphen-elision form.
 - [ ] `generate_p958_corrections.py` emits 4 removal lines carrying a `P958` qualifier field —
   the shape `execute_removal` refuses because it deletes the whole `P13677` statement. Make it
   emit something the drip can execute, then register `p958_corrections.txt`. Nothing about this
