@@ -182,3 +182,19 @@ def test_an_unlisted_country_refuses_rather_than_defaulting():
         assert r.rules_for_country(qid) is None, qid
     for qid, expect in (("Q38", "it"), ("Q45", "pt"), ("Q29", "es")):
         assert r.rules_for_country(qid) == expect
+
+
+# --------------------------------------------------------------------------
+# A geminate DIGRAPH, which the single-character test cannot see
+# --------------------------------------------------------------------------
+def test_italian_zz_is_a_geminate():
+    """Italian `zz` is /tts/, and `z -> ts` turns `piazza` into `piatstsa`, where
+    no two adjacent characters are equal. It came out ピアーツツァ. Measured
+    2026-09-19: 12 emitted labels carried the defect."""
+    assert r.place_to_katakana("piazza", "it") == "ピアッツァ"
+    assert r.place_to_katakana("pozzo", "it") == "ポッツォ"
+    assert r.place_to_katakana("mazza", "it") == "マッツァ"
+
+
+def test_the_digraph_rule_leaves_a_single_ts_alone():
+    assert "ッ" not in r.place_to_katakana("grazie", "it")

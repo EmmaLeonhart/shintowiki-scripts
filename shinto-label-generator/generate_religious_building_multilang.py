@@ -90,6 +90,11 @@ SRC = os.path.join(HERE, "paused", "religious_building_en.txt")
 OUTDIR = os.path.join(HERE, "quickstatements")
 CACHE = os.path.join(HERE, "religious_building_cache.json")
 LANGS = ("ja", "zh", "ko")
+# The place's ENGLISH label is fetched too, and is never emitted. It is the only
+# thing in the same alphabet as the source string, so it is what tells a
+# qualifier that merely repeats the place ("Santa Clara, Vitoria-Gasteiz") from
+# one that says something — see `_echoes_place`.
+PLACE_LANGS = LANGS + ("en",)
 BATCH = 50
 THROTTLE = 1.0          # read API, not WDQS; still paced.
 
@@ -189,13 +194,19 @@ def fetch(qids, refresh=False):
         time.sleep(THROTTLE)
 
     places = {v["p131"] for v in cache["items"].values() if v.get("p131")}
-    todo_p = sorted(p for p in places if p not in cache["places"])
+    # `"en" not in …` tops up places cached before the English label was needed,
+    # the same treatment `p17` got above rather than a full refetch. The key is
+    # written even when the place has no English label, so a place that genuinely
+    # lacks one is not refetched on every run.
+    todo_p = sorted(p for p in places
+                    if p not in cache["places"] or "en" not in cache["places"][p])
     for i in range(0, len(todo_p), BATCH):
         for qid, ent in _get(todo_p[i:i + BATCH], "labels",
-                             languages="|".join(LANGS)).items():
+                             languages="|".join(PLACE_LANGS)).items():
             labs = ent.get("labels") or {}
-            cache["places"][qid] = {lg: labs[lg]["value"]
-                                    for lg in LANGS if lg in labs}
+            row = {lg: labs[lg]["value"] for lg in LANGS if lg in labs}
+            row["en"] = (labs.get("en") or {}).get("value")
+            cache["places"][qid] = row
         time.sleep(THROTTLE)
 
     with open(CACHE, "w", encoding="utf-8") as fh:
@@ -210,6 +221,10 @@ def build(rows, cache):
     reasons = {"no P31 mapping": 0, "no P131": 0, "category-shaped": 0,
                "unknown dedication": 0, "no place label": 0, "duplicate": 0,
                "not named as a mosque": 0}
+    # Not a skip reason — how many of the emitted ja labels came from the
+    # transliteration fallback rather than the table. Reported separately so the
+    # two paths stay countable.
+    read_not_named = 0
     for qid, label in rows:
         meta = cache["items"].get(qid) or {}
         if morph.is_category_shaped(label):
@@ -223,6 +238,7 @@ def build(rows, cache):
             reasons["no P131"] += 1
             continue
         place_labels = cache["places"].get(meta["p131"]) or {}
+        place_en = place_labels.get("en")
         # The source language comes from the item's own country, not a guess.
         rules = _rules_for(meta.get("p17"))
         latin_rules = _latin_rules_for(meta.get("p17"))
@@ -233,16 +249,30 @@ def build(rows, cache):
             if not morph.mosque_parse(label)[4]:
                 reasons["not named as a mosque"] += 1
                 continue
-        elif morph.dedication(label, "ja") is None:
-            reasons["unknown dedication"] += 1
-            continue
+        elif morph.dedication(label, "ja", rules) is None:
+            # ⛔ This gate runs BEFORE `render`, so the transliteration fallback
+            # that lives inside `render` has to be asked here too — otherwise it
+            # never fires at all, which is what the first run of it did: the
+            # output was byte-identical and the skip counter still read
+            # "unknown dedication 13470".
+            #
+            # ⚠ `rules` is now passed to `dedication()`. It used to be called
+            # bare, taking its own `"it"` default, so the gate was more permissive
+            # than `render` and some items passed it only to be refused a line
+            # later. That never changed the output, only the counter.
+            if morph.transliterate_dedication(label, "ja", rules, latin_rules,
+                                              place_en) is None:
+                reasons["unknown dedication"] += 1
+                continue
+            read_not_named += 1
         for lg in LANGS:
             place = place_labels.get(lg)
             if not place:
                 reasons["no place label"] += 1
                 continue
             rendered = morph.render(label, p31, lg, place=place,
-                                    rules=rules, latin_rules=latin_rules)
+                                    rules=rules, latin_rules=latin_rules,
+                                    place_en=place_en)
             if not rendered:
                 continue
             # A duplicate label is the failure this whole design exists to avoid;
@@ -252,6 +282,7 @@ def build(rows, cache):
                 continue
             seen[lg].add(rendered)
             out[lg].append('%s|L%s|"%s"' % (qid, lg, rendered))
+    reasons["(of which READ, not named)"] = read_not_named
     return out, reasons
 
 
@@ -282,9 +313,11 @@ def main():
             fh.write("\n".join(out[lg]) + ("\n" if out[lg] else ""))
         print("  %-3s %6d lines -> quickstatements/%s"
               % (lg, len(out[lg]), os.path.basename(path)))
+    read = reasons.pop("(of which READ, not named)", 0)
     print("\nskipped:")
     for k, v in sorted(reasons.items(), key=lambda kv: -kv[1]):
         print("  %-20s %6d" % (k, v))
+    print("\nja dedications READ rather than named: %d" % read)
     print("\nOn the daily drip via select_label_proposals.py.")
     return 0
 

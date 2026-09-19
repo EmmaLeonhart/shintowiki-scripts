@@ -90,7 +90,14 @@ def test_a_hyphenated_dedication_phrase_is_found():
 
 
 def test_an_unknown_dedicatee_is_refused():
+    """⚠ Narrowed 2026-09-19. "Unknown dedicatee -> refuse" was the whole rule
+    until Emma's *"No dedication means transliteration"*; what survives of it is
+    that the TABLE still does not invent a name, and that a country with no
+    reading rule still refuses. Given Italian rules this label is now READ."""
+    assert m.dedication("St. Fictitious", "ja") is None
     assert m.render("St. Fictitious", "Q16970", "ja", place="レーデン") is None
+    assert m.render("St. Fictitious", "Q16970", "zh", place="レーデン",
+                    rules="it") is None
 
 
 # --------------------------------------------------------------------------
@@ -222,6 +229,7 @@ def test_a_bare_modifier_is_never_a_dedication():
             f"{modifier!r} is a modifier, not a dedication; as a bare entry it "
             f"matches before the thing it qualifies"
         )
+    assert m.dedication("Chiesa Santissima", "ja") is None
     assert m.render("Chiesa Santissima", "Q16970", "ja", place="X") is None
 
 
@@ -405,8 +413,15 @@ def test_english_refuses_what_the_tables_cannot_render():
 ])
 def test_a_romance_place_qualifier_is_read_for_ja(label, expect):
     """Emma, 2026-09-18: handle the place-name qualifiers too. These were the
-    refusal cases; a Romance locality can be read into kana by rule."""
-    assert m.render(label, "Q16970", "ja", place="X") == "Xの" + expect + "教会"
+    refusal cases; a Romance locality can be read into kana by rule.
+
+    ⚠ `rules="it"` is now passed EXPLICITLY. These three are Italian items and
+    the generator has always passed `_rules_for("Q38")`; the test was relying on
+    `render`'s old `rules="it"` default, which was removed on 2026-09-19 because
+    an implicit Italian reading of a German name is exactly the confident-wrong
+    failure the country map exists to refuse."""
+    assert m.render(label, "Q16970", "ja", place="X",
+                    rules="it") == "Xの" + expect + "教会"
 
 
 @pytest.mark.parametrize("lang", ["zh", "ko"])
@@ -515,9 +530,15 @@ def test_the_added_dedications_render(label, expect):
 
 
 def test_a_german_location_compound_names_no_dedication():
-    """Wegkapelle is "wayside chapel" -- it says where, not who for."""
+    """Wegkapelle is "wayside chapel" -- it says where, not who for.
+
+    ⚠ `Hofkapelle Aichet` is a GERMAN label and `rules_for_country("Q183")` is
+    None, so nothing reads it. It passed here before 2026-09-19 only because
+    `render` defaulted to Italian; ホーフカペッレ・アイケット would have been a
+    confident wrong reading, not a refusal."""
     assert m.render("Wegkapelle", "Q108325", "ja", place="X") is None
     assert m.render("Hofkapelle Aichet", "Q108325", "ja", place="X") is None
+    assert m.dedication("Hofkapelle Aichet", "ja") is None
 
 
 @pytest.mark.parametrize("label,expect", [

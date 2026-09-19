@@ -305,6 +305,15 @@ def to_katakana(word, rules=DEFAULT_RULES):
     vowel_units = []          # (index in out, position of the vowel IN w)
     i = 0
     while i < len(w):
+        # ⛔ A geminate DIGRAPH, which the single-character test below cannot see.
+        # Italian `zz` is /tts/, and `z -> ts` turns `piazza` into `piatstsa`,
+        # where no two adjacent characters are equal — so it came out ピアーツツァ
+        # instead of ピアッツァ. Measured 2026-09-19: 12 emitted labels, among them
+        # ポーツツォ for Pozzo and ラツツァーロ for Lazzaro.
+        if any(w.startswith(d + d, i) for d in ("ts", "ch", "sh")):
+            out.append("ッ")
+            i += 2
+            continue
         # geminate: double consonant -> small tsu
         if (i + 1 < len(w) and w[i] == w[i + 1] and w[i] not in _ORDER
                 and w[i] not in "ny"):

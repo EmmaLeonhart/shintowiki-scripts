@@ -105,6 +105,16 @@ TYPE_WORDS = {
     "schloss", "schlosskapelle", "burgkapelle", "burg", "friedhof",
     "protestantische", "protestantisch", "hervormde", "evangelical",
     "lutherkirche", "luther", "templo", "iglesia_parroquial",
+    # ⭐ Measured 2026-09-19, once the transliteration fallback started READING
+    # whatever it found in the name slot: these were being read as dedicatees.
+    # `Església` is Catalan for church (18), `gereja` Indonesian (14),
+    # `hermitage` the English of `ermita` (18), and `convento` / `parroquia` /
+    # `santuario` / `ermida` the same kind of word. A type word read as a name
+    # is the failure this whole module is built to avoid.
+    "església", "esglesia", "gereja", "hermitage", "convento", "convent",
+    "abbazia", "badia", "abadia", "abadía", "abbaziale",
+    "parroquia", "parróquia", "paróquia", "ermida", "santuario", "santuário",
+    "santuari",
 }
 
 # Connectives and articles — dropped entirely.
@@ -491,6 +501,29 @@ NAMES = {
 # Multi-token saint names that must be read as ONE dedicatee. Without this,
 # "San Giovanni Battista" renders Giovanni AND Battista and comes out as
 # 聖ヨハネ洗礼者ヨハネ教会 — John twice. Checked before single tokens.
+# ⭐ Spelling variants of saints the table ALREADY names, measured 2026-09-19 over
+# the population the transliteration fallback reaches. These are here so ONE saint
+# never gets two different Japanese forms — `francesco` was フランチェスコ from the
+# table while `francisco`, absent, was read as フランシースコ. That is the table's
+# own precedent, which already lists five spellings of Nicholas and eight of John.
+#
+# ⛔ A saint the table does NOT name is NOT added here. Gregorio, Filippo, Marco,
+# Marta, Agostino, Domenico, Biagio, Vittore, Bernardo, Román and the Galician
+# saints (Amaro, Breixo, Cibrán, Comba, Santaia, Xillao) are absent, and absent is
+# what "no dedication means transliteration" is FOR. Naming them would be a
+# per-saint translation call; reading them is the rule Emma gave.
+NAMES.update({
+    "francisco": NAMES["francesco"], "francisca": NAMES["francesco"],
+    "agata": NAMES["agatha"],
+    "tommaso": NAMES["thomas"],
+    "benedetto": NAMES["benedict"],
+    "ana": NAMES["anna"],
+    "nicolò": NAMES["nicola"], "niccolò": NAMES["nicola"],
+    "margherita": NAMES["margaret"],
+    "cristo": NAMES["christus"],
+    "vito": NAMES["vitus"],
+})
+
 NAME_PHRASES = {
     "giovanni battista": {"ja": "洗礼者ヨハネ", "zh": "施洗约翰", "ko": "세례자 요한"},
     "juan bautista":     {"ja": "洗礼者ヨハネ", "zh": "施洗约翰", "ko": "세례자 요한"},
@@ -1268,8 +1301,197 @@ def render_mosque(label, p31, lang, place, latin_rules=None):
     return place + _PLACE_JOIN[lang] + _kana_join("・".join(kept), tail)
 
 
-def render(label, p31, lang, place=None, rules="it", latin_rules=None):
+# --------------------------------------------------------------------------
+# The transliteration fallback — "No dedication means transliteration"
+# --------------------------------------------------------------------------
+# Emma, 2026-09-18. `dedication()` refuses the moment ONE name token is absent
+# from `NAMES`, and measured over the 22,548-item corpus that refusal is the
+# single biggest gate in the pipeline: **13,470 items**, against 7,599 that
+# resolve. `Santo André de Lourizán` is not an unknown saint — it is Andrew, at
+# a place the table has never heard of.
+#
+# ⛔ ja only, for the third time and the same reason (`_QUALIFIER_LANGS`,
+# `_MOSQUE_NAME_LANGS`): a transliteration is a READING. Romance and plain-Latin
+# orthography give a rule-based route to kana; there is no rule-based route to
+# hanzi or hangul, and inventing one fabricates a reading instead of deriving it.
+_TRANSLIT_LANGS = {"ja"}
+
+# Genitive and locative links — where a dedicatee ENDS and its qualifier begins.
+# `San Francesco di Paola` is Francis *of Paola*, not a person called Francesco
+# Paola, and the shape that says so is the one the generic-title branch already
+# emits: `qualifier + の + dedication`, e.g. ペーロの聖母教会. These are all in
+# STOPWORDS already and stay dropped from the output; what they add here is the
+# SPLIT POINT.
+_LINKERS = {
+    "of", "in", "at", "near", "de", "da", "do", "di", "del", "della", "dello",
+    "dei", "degli", "delle", "des", "du", "dos", "das", "van", "von", "zu",
+    "zum", "zur", "am", "im", "an", "auf", "bei", "alle", "alla", "allo", "ai",
+    "al", "all", "sul", "sulla", "na", "nad", "w", "en", "u",
+}
+
+
+def _dedicatee_split(label):
+    """(head_tokens, qualifier_tokens, saw_saint) — the dedicatee and its qualifier.
+
+    The split is the first `_LINKERS` word (or comma) that follows at least one
+    name token, so the `of` in `Church of Santa Clara` links the TYPE to the
+    dedicatee and does not split, while the comma in `…Santa Clara, Vitoria-Gasteiz`
+    does.
+
+    ⚠ A saint marker after the split is not read as one: `Chapel of St Anne in
+    San Pedro` is Anne, in a place called San Pedro, and prefixing 聖 to the
+    qualifier would say the place is a saint.
+    """
+    head, qual = [], []
+    saw_saint = False
+    split = False
+
+    def bucket():
+        return qual if split else head
+
+    def frame(tok, group):
+        """Membership, accent-folded. `dedication()` folds its whole input before
+        matching and this splitter cannot — the transliterator needs the
+        diacritics — so the frame sets are folded here instead. `apóstol` is in
+        STOPWORDS as `apostol` and was reaching the name slot as a dedicatee."""
+        return tok in group or _fold(tok) in _folded_group(group)
+
+    for raw in re.split(r"[\s/]+", label):
+        if not raw:
+            continue
+        breaks = raw.rstrip().endswith((",", ";", "("))
+        tok = _norm(raw)
+        if not tok:
+            continue
+        if frame(tok, _LINKERS):
+            if head:
+                split = True
+            continue
+        if frame(tok, SAINT_MARKERS):
+            if not split:
+                saw_saint = True
+            continue
+        if frame(tok, STOPWORDS) or frame(tok, TYPE_WORDS):
+            if head and breaks:
+                split = True
+            continue
+        stem = _strip_compound_type(tok)
+        if not stem or frame(stem, TYPE_WORDS):
+            if head and breaks:
+                split = True
+            continue
+        for p in [p for p in re.split(r"[-–—'’]", stem) if p]:
+            if frame(p, SAINT_MARKERS):
+                if not split:
+                    saw_saint = True
+            elif frame(p, STOPWORDS) or frame(p, TYPE_WORDS) or frame(p, _LINKERS):
+                continue
+            else:
+                bucket().append(p)
+        if head and breaks:
+            split = True
+    return head, qual, saw_saint
+
+
+def _echoes_place(token, place_en):
+    """True when a token just repeats the P131 place's own name.
+
+    `Church of Santa Clara, Vitoria-Gasteiz` sits in Vitoria-Gasteiz, and the
+    place is already in the first slot — without this it reads
+    ビトリア＝ガステイスのヴィトーリア・ガーステイスの聖クラーラ教会, naming the
+    town twice in two different spellings, because the ja label is Wikidata's
+    and the qualifier is derived. The comparison is therefore against the place's
+    ENGLISH label, which is the same alphabet as the source string.
+    """
+    if not place_en:
+        return False
+    parts = {_fold(t) for t in re.split(r"[\s/,\.\-–—'’]+", place_en.lower()) if t}
+    return _fold(token) in parts
+
+
+def _translit_tokens(tokens, lang, rules=None, latin_rules=None):
+    """Tokens rendered in `lang`: `NAMES` where known, kana where not, else None.
+
+    All-or-nothing, like every other transliterator here: a half-read name looks
+    deliberate and is not.
+    """
+    out = ""
+    for t in tokens:
+        # ⛔ FOLD for the table lookup, and only for the lookup. `dedication()`
+        # folds its whole input before matching; this function does not, because
+        # the transliterator needs the diacritics (`_unfold_tokens` exists for
+        # exactly that). Looking `lucía` up unfolded missed a saint the table has
+        # had all along, and measured over the reachable population that one
+        # slip covered `lucía` 20, `antónio` 19, `román` 18 and 200-odd more —
+        # each of which would have been READ instead of NAMED.
+        key = name_key(t) or name_key(_fold(t))
+        if key is not None:
+            out = _kana_join(out, NAMES[key][lang])
+            continue
+        kana = None
+        if rules is not None and _romance_kana is not None:
+            kana = _romance_kana(t, rules)
+        elif latin_rules is not None and _plain_kana is not None:
+            kana = _plain_kana(t, latin_rules)
+        if not kana:
+            return None
+        out = _kana_join(out, kana)
+    return out or None
+
+
+# Returned by `transliterate_dedication` when every name token the label carries
+# turned out to BE the place — `Pančevo Synagogue` in Pančevo. There is then
+# nothing to put in the dedication slot and `place + type` is the whole label,
+# which is what `render_mosque` already does for `Mosque in Pirshagi`.
+PLACE_ONLY = "<place-only>"
+
+
+def transliterate_dedication(label, lang, rules=None, latin_rules=None,
+                             place_en=None):
+    """The dedication READ rather than translated, or None.
+
+    The fallback for everything `dedication()` refuses. Slots are the ones the
+    generic-title branch already established: `<qualifier>の<聖><dedicatee>`,
+    which the caller then prefixes with the place and suffixes with the type.
+
+    A qualifier that cannot be read refuses the whole label rather than dropping
+    it — `_qualifier_residue` makes the same call, and for the same reason: a
+    label that silently loses its qualifier claims less than the source said.
+    """
+    if lang not in _TRANSLIT_LANGS:
+        return None
+    head, qual, saw_saint = _dedicatee_split(label)
+    if not head:
+        return None
+    head = [t for t in head if not _echoes_place(t, place_en)]
+    qual = [t for t in qual if not _echoes_place(t, place_en)]
+    if not head:
+        return PLACE_ONLY if not qual else None
+    core = _translit_tokens(head, lang, rules, latin_rules)
+    if not core:
+        return None
+    if saw_saint:
+        core = SAINT_PREFIX[lang] + core
+    if qual:
+        q = _translit_tokens(qual, lang, rules, latin_rules)
+        if not q:
+            return None
+        core = q + _PLACE_JOIN[lang] + core
+    return core
+
+
+def render(label, p31, lang, place=None, rules=None, latin_rules=None,
+           place_en=None):
     """The label in `lang`, or None when any piece is unknown.
+
+    ⛔ `rules` DEFAULTS TO NONE, which means refuse — "unlisted means refuse,
+    never a default", the same doctrine `romance_katakana.rules_for_country`
+    states. It used to default to `"it"`, which was harmless while an unknown
+    name was refused outright and became a live hazard the moment the
+    transliteration fallback existed: `Hofkapelle Aichet` is German and was read
+    as Italian, `St. Fictitious` as ホーフカペッレ・フィクチーオウス. The
+    generator was never exposed — it passes `rules=_rules_for(p17)` — but four
+    tests were passing only because of the default, which is how this was found.
 
     `place` is the P131 area's OWN label in `lang` — passed in, never derived
     here. It is what makes the output unique: measured over 200 sampled items
@@ -1294,6 +1516,13 @@ def render(label, p31, lang, place=None, rules="it", latin_rules=None):
     if p31 in MOSQUE_P31:
         return render_mosque(label, p31, lang, place, latin_rules)
     ded = dedication(label, lang, rules)
+    if not ded:
+        # ⛔ "No dedication means transliteration" (Emma, 2026-09-18). Until this
+        # existed the refusal WAS the answer, and it was the pipeline's biggest
+        # gate: 13,470 of 22,548 items. ja only — see `_TRANSLIT_LANGS`.
+        ded = transliterate_dedication(label, lang, rules, latin_rules, place_en)
+        if ded == PLACE_ONLY:
+            return place + _PLACE_JOIN[lang] + type_words[lang]
     if not ded:
         return None
     return place + _PLACE_JOIN[lang] + _kana_join(ded, type_words[lang])

@@ -1,3 +1,95 @@
+## 2026-09-19 (third) — no dedication means transliteration: the pipeline's biggest gate, 13,470 items
+
+Emma, 2026-09-18: ***"No dedication means transliteration."*** `dedication()` refuses the moment
+ONE name token is absent from `NAMES`, and measured over the 22,548-item corpus that refusal was the
+single biggest thing in the pipeline — **13,470 items refused against 7,599 resolved**.
+`Santo André de Lourizán` is not an unknown saint. It is Andrew, at a place the table has never
+heard of.
+
+**ja 4,618 → 6,722** (+2,104), zh 5,099 → 5,180, ko 1,940 → 1,970. **No existing line changed and
+no QID lost a label.** 2,104 new lines, 6,849 items whose dedication was read rather than named.
+
+### The slots are the ones the generic-title branch already shipped
+
+    Santo André de Lourizán   ->  ポンテベドラのロウリーサンの聖アンデレ教会
+    San Francesco di Paola    ->  パルティニーコのパオーラの聖フランチェスコ教会
+
+`<place>の<qualifier>の<聖><dedicatee><type>`, the same shape as ペーロの聖母教会. The dedicatee is
+NAMED where the table knows it and READ only where it does not, so both paths mix inside one label.
+
+⭐ **Poland, Germany and Austria gained labels without gaining a transliterator** — 139, 92 and 39.
+`Saint Anne church in Poznań` refused because `Poznań` was an unknown token; Anne comes from the
+table and the qualifier is dropped as the place. That was not the point of the change and it is a
+third of the gain.
+
+### Five things that were wrong first, each found by reading output rather than code
+
+- **The first run changed nothing at all.** The generator gates on `dedication()` BEFORE calling
+  `render`, and the fallback lives inside `render` — so the output was byte-identical and the skip
+  counter still read "unknown dedication 13,470". A fallback that never fires looks exactly like one
+  that finds nothing.
+- **The qualifier was glued onto the saint's name.** `San Francesco di Paola` came out
+  聖フランチェスコ・パオーラ, a person called Francesco Paola.
+- **The place was named twice, in two spellings.** `Church of Santa Clara, Vitoria-Gasteiz` read
+  ビトリア＝ガステイスのヴィトーリア・ガーステイスの聖クラーラ教会 — the first is Wikidata's ja
+  label, the second derived. The guard compares against the place's **English** label, the only
+  thing in the same alphabet as the source; the generator now caches `en` for all 15,232 places.
+- **The table lookup did not fold accents** where `dedication()` does, so `lucía` missed a saint the
+  table has had all along — 20 of those, 19 `antónio`, 18 `román` and 200-odd more.
+- **Type words were being read as dedicatees** once something started reading whatever it found in
+  the name slot: `Església` 18, `gereja` 14, `hermitage` 18, `convento`, `parroquia`, `santuario`,
+  `abbazia`.
+
+### ⛔ `render`'s `rules` defaulted to Italian, and four tests were passing only because of it
+
+`rules_for_country` refuses an unlisted country by design — "unlisted means refuse, never a
+default". `render`'s own signature said `rules="it"`. That was harmless while an unknown name was
+refused outright and went live the moment the fallback existed: `Hofkapelle Aichet` is German and
+was read as Italian, `St. Fictitious` as フィクチーオウス. **The generator was never exposed** — it
+passes `rules=_rules_for(p17)` — but `test_an_unknown_dedicatee_is_refused`,
+`test_a_bare_modifier_is_never_a_dedication`, `test_a_german_location_compound_names_no_dedication`
+and `test_the_genitive_rule_does_not_invent_names` all asserted None while relying on the Italian
+default to produce it. The default is now `None`; the four tests say what they meant; the three
+Madonna-qualifier tests pass `rules="it"` explicitly, which is what the generator does for Q38.
+
+### A `romance_katakana` bug this surfaced
+
+Italian `zz` is the geminate /tts/, and `z -> ts` turns `piazza` into `piatstsa` — where **no two
+adjacent characters are equal**, so the geminate test could not see it. ピアーツツァ. 12 emitted
+labels carried it (ポーツツォ, ラツツァーロ). `to_katakana` now tests for a repeated DIGRAPH before
+the single-character test.
+
+### The table line: variants yes, new saints no
+
+Spelling variants of saints the table ALREADY names were added — `francisco`, `agata`, `tommaso`,
+`benedetto`, `ana`, `nicolò`, `margherita`, `cristo`, `vito` — so one saint never gets two Japanese
+forms (`francesco` was フランチェスコ from the table while `francisco`, absent, was read as
+フランシースコ). The table's own precedent: five spellings of Nicholas, eight of John.
+
+⛔ **A saint the table does NOT name was not added.** Gregorio, Filippo, Marco, Marta, Agostino,
+Domenico, Biagio, Vittore, Bernardo, Román and the Galician saints are absent, and absent is what
+this rule is FOR. Naming them is a per-saint translation call; reading them is what Emma said.
+
+### What still refuses is a country map, not a tail of tokens
+
+**6,627**, led by Germany 2,964, Poland 1,543, Austria 608, France 607, Russia 517, Czechia 337,
+Netherlands 273. Two of Emma's own three examples are in it — `Dorfkirche Jördenstorf` and
+`Église du Pras de La Mulatière` — because neither `romance_katakana` nor `plain_latin_katakana`
+has a rule set for those orthographies, and an unlisted country refuses rather than guessing. Put to
+Emma under the religious-building translation carve-out.
+
+⚠ **Two labels are still misparsed and are left that way.** `Santa Margherita Vergine e Martire`
+matches the generic Marian title `vergine` and emits ロッカセッカの聖母教会, losing Margaret; the
+virgin-martyr epithet is not the Virgin Mary. 2 items in 22,548, and the fix reaches into the scan
+7,599 table-path items run through. Recorded, not fixed.
+
+⚠ **Session shape:** this is the 10%. The queue held nothing else — `todo.md` has no concrete
+shrine or temple item left in it — so the 90/10 split was not available to honour by picking a
+different item, only by saying so.
+
+32 new tests in `shinto-label-generator/tests/test_translit_fallback.py`, 2 in
+`test_romance_katakana.py`. Rationale doc section 7b. Full suite 2,635 pass.
+
 ## 2026-09-19 (second) — the Latin-script gate stays: the item was wrong four ways
 
 Queue item: *"drop the `is_latin_script()` gate in stage 1 and transliterate

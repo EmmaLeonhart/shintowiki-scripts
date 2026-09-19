@@ -238,6 +238,114 @@ change removed **zero** existing lines, which is the check that it did not.
 
 ---
 
+## 7b. No dedication means transliteration (2026-09-19)
+
+Emma, 2026-09-18: ***"No dedication means transliteration."***
+
+`dedication()` refuses the moment ONE name token is absent from `NAMES`, and over the corpus that
+refusal was the pipeline's single biggest gate - **13,470 items** against 7,599 that resolved.
+`Santo Andre de Lourizan` is not an unknown saint; it is Andrew, at a place the table has never
+heard of. Section 7 already read a leftover qualifier for the *generic-title* branch; this extends
+the same treatment to the *names* branch, which is where the 13,470 sit.
+
+### The slots are the ones section 7 already established
+
+    <place> no  <qualifier> no  <sei><dedicatee>  <type>
+
+    Santo Andre de Lourizan   ->  ポンテベドラのロウリーサンの聖アンデレ教会
+    San Francesco di Paola    ->  パルティニーコのパオーラの聖フランチェスコ教会
+    Santa Maria della Grazia  ->  ヴェネツィアのグラーツィアの聖マリア教会
+
+**The qualifier is not part of the saint's name.** Written the other way first, `San Francesco di
+Paola` came out 聖フランチェスコ・パオーラ - a person called Francesco Paola. The split is the first
+genitive or locative linker (`_LINKERS`) or comma that follows at least one name token, so the `of`
+in `Church of Santa Clara` links the TYPE to the dedicatee and does not split.
+
+**A saint marker after the split is not read as one.** `Chapel of St Anne in San Pedro` is Anne, in
+a town called San Pedro; prefixing 聖 to the qualifier would say the place is a saint.
+
+**The dedicatee is NAMED where the table knows it and READ only where it does not**, so the two
+paths mix inside one label: `Santa Margherita di Massignano` is 聖マルガリタ from the table plus
+マッシニャーノ by rule.
+
+### The place is not named twice
+
+`Church of Santa Clara, Vitoria-Gasteiz` read
+ビトリア＝ガステイスのヴィトーリア・ガーステイスの聖クラーラ教会 - the town twice, in two
+spellings, because the first is Wikidata's ja label and the second is derived. `_echoes_place`
+compares against the place's **English** label, which is the only thing in the same alphabet as the
+source string; `generate_religious_building_multilang.py` now fetches `en` alongside ja/zh/ko for
+every P131 place.
+
+When *every* name token turns out to be the place - `Pancevo Synagogue` in Pancevo - there is
+nothing left for the dedication slot and the label is `place + type`, the call `render_mosque`
+already makes for `Mosque in Pirshagi`. **253 of the 6,722 ja lines are that shape.** A label with
+no name at all (`Kirche`) is a different thing and stays refused: not named after its place, not
+named.
+
+**This is why Poland, Germany and Austria gained labels without gaining a transliterator** - 139, 92
+and 39 of them. `Saint Anne church in Poznan` refused because `Poznan` was an unknown token; now
+Anne comes from the table and the qualifier is dropped as the place.
+
+### What still refuses, and it is a country map
+
+**ja only**, for the third time and the same reason (`_QUALIFIER_LANGS`, `_MOSQUE_NAME_LANGS`): a
+transliteration is a READING, and there is no rule-based route from a Galician village name to hanzi
+or hangul.
+
+Within ja, the gate is `rules_for_country`, and an unlisted country **refuses rather than guessing**.
+Two of Emma's own three examples are on the wrong side of it - `Dorfkirche Joerdenstorf` (German)
+and `Eglise du Pras de La Mulatiere` (French). The 6,627 still refused are led by Germany 2,964,
+Poland 1,543, Austria 608, France 607, Russia 517, Czechia 337 and the Netherlands 273.
+
+**`render`'s `rules` parameter now defaults to `None`**, i.e. to refusal - "unlisted means refuse,
+never a default", the doctrine `romance_katakana` already states. It defaulted to `"it"`, which was
+harmless while an unknown name was refused outright and became live the moment this fallback
+existed: `Hofkapelle Aichet` is German and read as Italian. The generator was never exposed - it
+passes `rules=_rules_for(p17)` - but **four existing tests were passing only because of the
+default**, which is how it was found.
+
+### Three things that were wrong first
+
+- **The generator gates on `dedication()` BEFORE calling `render`**, so the first run of the fallback
+  changed nothing at all: byte-identical output, skip counter still reading "unknown dedication
+  13,470". The gate has to ask the fallback too.
+- **The table lookup did not fold accents** where `dedication()` does, so `lucia` with an accent
+  missed a saint the table has had all along - 20 of those, plus 19 `antonio`, 18 `roman` and
+  200-odd more that would have been read instead of named.
+- **Type words were being read as dedicatees** once something started reading whatever it found in
+  the name slot: `Esglesia` (Catalan, 18), `gereja` (Indonesian, 14), `hermitage` (18), `convento`,
+  `parroquia`, `santuario`, `abbazia`. A type word read as a name is the failure this module exists
+  to avoid.
+
+### Two fixes in the tables, and the line between them
+
+**Spelling variants of saints the table ALREADY names** were added - `francisco`, `agata`,
+`tommaso`, `benedetto`, `ana`, `nicolo`, `margherita`, `cristo`, `vito` - so ONE saint never gets
+two Japanese forms. `francesco` was フランチェスコ from the table while `francisco`, absent, was read
+as フランシースコ. That follows the table's own precedent: it already lists five spellings of
+Nicholas and eight of John.
+
+**A saint the table does NOT name was not added.** Gregorio, Filippo, Marco, Marta, Agostino,
+Domenico, Biagio, Vittore, Bernardo, Roman and the Galician saints (Amaro, Breixo, Cibran, Comba,
+Santaia, Xillao) are absent, and absent is what "no dedication means transliteration" is FOR. Naming
+them is a per-saint translation call; reading them is the rule Emma gave.
+
+### A bug in `romance_katakana` this surfaced
+
+Italian `zz` is the geminate /tts/, and `z -> ts` turns `piazza` into `piatstsa`, where **no two
+adjacent characters are equal** - so the geminate test could not see it and it came out ピアーツツァ.
+12 emitted labels carried it: ポーツツォ for Pozzo, ラツツァーロ for Lazzaro. `to_katakana` now tests
+for a repeated DIGRAPH (`ts`, `ch`, `sh`) before the single-character test. ピアッツァ.
+
+**Two labels are still misparsed and are left that way.** `Santa Margherita Vergine e Martire`
+matches the generic Marian title `vergine` and emits ロッカセッカの聖母教会, losing Margaret;
+`Santa Maria Incoronata e Santa Lucia Vergine Martire` the same. The virgin-martyr epithet is not
+the Virgin Mary. It is **2 items** in 22,548 and the fix would reach into the scan that 7,599
+table-path items run through, so it stays as recorded. Edge cases be damned.
+
+---
+
 ## 8. What is refused outright
 
 - **Category-shaped labels** (8 patterns). ~818 of the corpus name a *grouping*, not a building:
@@ -245,8 +353,9 @@ change removed **zero** existing lines, which is the check that it did not.
 - **No P31 mapping** — a type the tables do not render.
 - **No P131**, or a place with no label in the target language (ja 44.8%, zh 56.2%, ko 24.5% have
   one; 42.2% have none of the three).
-- **Any unknown token** on the names path. `San Xulián de Cela` refuses because `Cela` is a place
-  the tables do not know.
+- **An unknown token the country has no reading rule for.** Until 2026-09-19 *any* unknown token
+  refused; now it is read where `rules_for_country` gives a rule set and refuses where it does not
+  (section 7b). `San Xulian de Cela` is read; `Dorfkirche Joerdenstorf` is not.
 - **A duplicate** — if two items still produce the same string, neither is emitted.
 
 ---
@@ -266,18 +375,25 @@ change removed **zero** existing lines, which is the check that it did not.
 
 ## 10. Current output
 
-| | lines | of which mosque-family (2026-09-19) |
-|---|---|---|
-| ja | 4,618 | 76 |
-| zh | 5,099 | 31 |
-| ko | 1,940 | 30 |
-| stage-1 English replacements | 16 | — |
+| | lines | of which mosque-family | of which READ, not named (7b) |
+|---|---|---|---|
+| ja | 6,722 | 76 | 2,104 |
+| zh | 5,180 | 31 | - (ja only) |
+| ko | 1,970 | 30 | - (ja only) |
+| stage-1 English replacements | 16 | - | - |
 
-Zero duplicate labels, zero duplicate QIDs, zero malformed lines, **0 collisions in 250 sampled
-against live Wikidata**. All in `shinto-label-generator/quickstatements/`, on the 20/day drip.
+Figures as of 2026-09-19, after section 7b. Before it: ja 4,618, zh 5,099, ko 1,940. **No existing
+line changed and no QID lost a label**; the 9 ja labels that did change were the type words 7b added
+being dropped from a qualifier (サンツアーリオ, パッローキア).
 
-**~14,500 still refuse**, and the tail is genuinely long: 7,000+ distinct unknown tokens, mostly
-place names inside `San X de PLACE`. The cheap seam is worked out.
+Zero duplicate labels, zero duplicate QIDs, zero malformed lines, re-checked 2026-09-19 over all
+13,872 lines. The **0 collisions in 250 sampled against live Wikidata** is from 2026-09-18 and was
+NOT re-run against the 2,104 new lines — WDQS is not queried for this and the read API sample costs
+a run of its own. All in `shinto-label-generator/quickstatements/`, on the 20/day drip.
+
+**6,627 still refuse at the dedication gate**, and that is now a COUNTRY map rather than a long
+tail of tokens: Germany 2,964, Poland 1,543, Austria 608, France 607, Russia 517, Czechia 337,
+Netherlands 273. None of them has a kana rule set and none is getting one from a guess.
 
 The mosque family went from **0 labels to 137** across 245 items. What it does not reach is the
 Arab-world, French, Bangladeshi and Central Asian slices, which have no rule set and are not getting
