@@ -44,3 +44,49 @@ def test_commons_to_english_none_for_non_latin():
 
 def test_commons_to_english_collapses_whitespace():
     assert commons_to_english("Category:St   Paul's   Cathedral") == "St Paul's Cathedral"
+
+
+# ---------------------------------------------------------------------------
+# The Latin-script gate STAYS. Pinned 2026-09-19 with the measurement, because
+# "drop the gate and transliterate Arabic/Hebrew/Devanagari" reached queue.md
+# once already and the behaviour was pinned while the REASON was not.
+# ---------------------------------------------------------------------------
+def test_the_gate_still_refuses_the_three_scripts_a_queue_item_wanted_opened():
+    """⛔ Arabic and Hebrew omit short vowels, so a romaniser INVENTS them.
+    Measured with aksharamukha, which this repo already depends on:
+        مسجد النور    (Masjid al-Nur)        -> masajada alanav̈ara
+        בית הכנסת הגדול (Beit HaKnesset HaGadol) -> vĕyt hĕk͟hnĕst hĕgdĕvl
+    That is the confident-wrong failure romance_katakana.rules_for_country and
+    plain_latin_katakana's refusals exist to prevent."""
+    assert commons_to_english("Category:مسجد النور") is None
+    assert commons_to_english("Category:בית הכנסת הגדול") is None
+    assert commons_to_english("Category:श्री राम मन्दिर") is None
+
+
+def test_the_gate_lets_through_what_the_item_claimed_it_blocked():
+    """The premise was "no Arab-world mosques and no Hebrew-named synagogues at
+    all: never selected". Measured over the corpus: 16 Arab-world mosques and 451
+    synagogues ARE selected. Their Commons categories are Latin, like these."""
+    assert commons_to_english("Category:Masjid al-Hudaibiyah") == "Masjid al-Hudaibiyah"
+    assert commons_to_english("Category:Queen Arwa mosque, Jibla") == "Queen Arwa mosque, Jibla"
+    assert commons_to_english("Category:Synagogue in Nýrsko") == "Synagogue in Nýrsko"
+
+
+def test_the_output_path_is_the_paused_directory():
+    """⛔ The 2026-09-17 pause moved the file with `git mv` and unwired CI, but never
+    touched this constant — it still said `quickstatements/`, the one directory
+    `select_label_proposals.py` globs. A hand-run would have put all 22,548 paused
+    labels straight back on the drip. `test_no_workflow_regenerates_a_paused_file`
+    cannot catch that, because a hand-run is not a workflow."""
+    import generate_religious_building_labels as gen
+    parts = os.path.normpath(gen.OUT).split(os.sep)
+    assert parts[-2:] == ["paused", "religious_building_en.txt"], gen.OUT
+
+
+def test_the_docstring_says_the_script_is_paused():
+    """The docstring described a live stage-1 pipeline and said stage 2 was "to come".
+    Both were two months stale, and reading it is how the drop-the-gate item got
+    written in the first place."""
+    import generate_religious_building_labels as gen
+    assert "PAUSED" in gen.__doc__
+    assert "paused/README.md" in gen.__doc__

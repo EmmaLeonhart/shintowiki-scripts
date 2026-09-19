@@ -32,11 +32,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
-- [ ] Religious buildings: drop the `is_latin_script()` gate in stage 1 and transliterate
-  Arabic/Hebrew/Devanagari names. ⚠ MY CALL, not hers — she did not answer the question. It follows
-  from the two rulings she did give (no dedication means transliteration; non-Japanese temples are in
-  scope, and a mandir's name is Devanagari). Reverse it if wrong. Today the gate is why there are no
-  Arab-world mosques and no Hebrew-named synagogues at all: not refused downstream, never selected.
 - [ ] Religious buildings: no dedication means TRANSLITERATE (Emma, 2026-09-18, *"No dedication
   means transliteration"*). 13,696 of 22,548 are refused at that gate — `Dorfkirche Jördenstorf`,
   `Église du Pras de La Mulatière`, `Santo André de Lourizán`. `romance_katakana` already exists

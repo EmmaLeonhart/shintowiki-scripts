@@ -2,22 +2,54 @@
 generate_religious_building_labels.py
 =====================================
 Religious buildings that are NOT Shinto shrines or Buddhist temples — churches,
-cathedrals, chapels, mosques, synagogues — get an English label copied from their
-Wikimedia Commons category, provided that category is in Latin script (Emma
-2026-07-10: "We always copy the commons category name to the English label,
-assuming that the commons category is in Latin script … for mosques and churches
-and synagogues").
+cathedrals, chapels, mosques, synagogues, and the non-Japanese temple tree — get an
+English label copied from their Wikimedia Commons category, provided that category is
+in Latin script (Emma 2026-07-10: "We always copy the commons category name to the
+English label, assuming that the commons category is in Latin script … for mosques and
+churches and synagogues").
 
-This is **stage 1** of the religious-building label pipeline. It produces the
-English seed; the multilingual stage (English → other languages, nativised per
-each language's conventions) runs FROM this English label, exactly as
-`generate_multilang_quickstatements.py` uses the English shrine/temple label as
-its seed. Stage 2 is `generate_religious_building_multilang.py` (to come).
+⛔ **THIS SCRIPT IS PAUSED, AND ITS OUTPUT DOES NOT GO TO WIKIDATA.**
+Paused 2026-09-17 (`df9303510`), Emma: *"Earlier sessions underestimated the difficulty
+and used wikimedia commons as the only source like it was somehow authoritative."*
+Measured over all 22,548 lines, 67% carry no English type word and many are plain German
+or Italian — `Kirche Rehden`, `Jerusalemkirche`, `San Giovanni Battista`. **The script
+check only ever asked whether the characters were Latin, never whether the string was
+English.** The output lives in `paused/religious_building_en.txt`, outside the directory
+`select_label_proposals.py` globs, and this generator is unwired from CI. See
+`paused/README.md`; `tests/test_paused_labels_stay_out_of_the_drip.py` pins it.
 
-Non-destructive: only items with NO English label yet are emitted. Latin-script
-only — a Commons category in Cyrillic/Arabic/CJK/etc. is skipped, never guessed.
+The file is retained because **stage 2 reads it as its input corpus** —
+`generate_religious_building_multilang.py` derives the ja/zh/ko labels from these
+strings, and those are on the drip. So the file is live as a corpus and dead as output.
 
-Output: quickstatements/religious_building_en.txt   (<qid>|Len|"<label>")
+⭐ **DO NOT "drop the Latin-script gate and transliterate Arabic/Hebrew/Devanagari".**
+It was a 2026-09-19 queue item and it is wrong four separate ways, measured rather than
+argued — recorded here so it is not re-derived a third time:
+
+* **The gate rejects 2 items.** The 2026-07-11 run: 22,644 candidates, **2** non-Latin
+  Commons names skipped, ~94 producing no clean label. 0.009%, not a population.
+* **Arab-world mosques are already selected** — 16 of them (Saudi 4, Egypt 3, Palestine
+  2, UAE 2, Iran 2, Oman, Tunisia, Yemen), plus **451 synagogues**. The claim that they
+  are "never selected" is false; the few that go no further are refused *downstream* by
+  `plain_latin_katakana.rules_for_country`, which is a different and deliberate thing.
+* **Arabic and Hebrew do not romanise derivably.** Both scripts omit short vowels, so a
+  transliterator invents them. Measured with `aksharamukha`, which this repo already
+  depends on: `مسجد النور` (Masjid al-Nur) → `masajada alanav̈ara`, and
+  `בית הכנסת הגדול` (Beit HaKnesset HaGadol) → `vĕyt hĕk͟hnĕst hĕgdĕvl`. That is the
+  confident-wrong failure `romance_katakana.rules_for_country` and
+  `plain_latin_katakana`'s refusals exist to prevent. (Devanagari *is* clean —
+  `श्री राम मन्दिर` → `śrī rāma mandira` — but see the first point for the population.)
+* **It widens the intake that got this script paused.** An English label transliterated
+  out of an Arabic Commons category is further from "an authoritative English source"
+  than the German strings that stopped it.
+
+This is **stage 1** of the religious-building label pipeline. Stage 2 is
+`generate_religious_building_multilang.py`, which exists.
+
+Non-destructive: only items with NO English label yet are emitted. Latin-script only —
+a Commons category in Cyrillic/Arabic/CJK/etc. is skipped, never guessed.
+
+Output: paused/religious_building_en.txt   (<qid>|Len|"<label>")
 
     python generate_religious_building_labels.py             # full run (paged)
     python generate_religious_building_labels.py --limit 500 # sample
@@ -48,7 +80,12 @@ from shinto_miraheze.ua_contact import contact
 from shinto_miraheze.wikidata_user_agent import WIKIDATA_USER_AGENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "quickstatements", "religious_building_en.txt")
+# ⛔ `paused/`, NOT `quickstatements/`. Membership of that directory is the whole
+# submit decision — `select_label_proposals.py` globs it and pools the raw lines — and
+# the 2026-09-17 pause moved this file out of it. The constant still said
+# `quickstatements/`, so a hand-run of this script would have silently put 22,548 paused
+# labels straight back on the drip.
+OUT = os.path.join(HERE, "paused", "religious_building_en.txt")
 # query.wikidata.org has been 429-outaged since 2026-07-06; the SPLIT endpoint
 # query-main serves everything except scholarly articles (repo policy).
 WDQS = "https://query-main.wikidata.org/sparql"
@@ -185,11 +222,11 @@ def main():
 
     cands = fetch_candidates(args.limit)
     print(f"{len(cands)} religious buildings with a Commons category and no English label")
-    lines, skipped = [], 0
+    lines, skipped = [], []
     for qid, commons in cands:
         label = commons_to_english(commons)
         if not label:
-            skipped += 1
+            skipped.append((qid, commons))
             continue
         esc = label.replace('"', '')
         lines.append(f'{qid}|Len|"{esc}"')
@@ -198,7 +235,13 @@ def main():
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + ("\n" if lines else ""))
     print(f"{len(lines)} English labels -> {OUT} "
-          f"(non-Latin Commons names skipped: {skipped})")
+          f"(Commons names skipped: {len(skipped)})")
+    # NAME them, do not just count them. The bare count is what made "the gate is why
+    # there are no Arab-world mosques" unfalsifiable without a fresh WDQS sweep: the
+    # 2026-07-11 run recorded "2 skipped" and nothing about WHICH 2, so a later session
+    # read the number as a population. Printing them makes it checkable from one run.
+    for qid, commons in skipped:
+        print(f"  skipped {qid}  {commons}")
 
 
 if __name__ == "__main__":

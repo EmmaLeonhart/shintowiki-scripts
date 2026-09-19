@@ -1,3 +1,51 @@
+## 2026-09-19 (second) — the Latin-script gate stays: the item was wrong four ways
+
+Queue item: *"drop the `is_latin_script()` gate in stage 1 and transliterate
+Arabic/Hebrew/Devanagari names ... today the gate is why there are no Arab-world mosques and no
+Hebrew-named synagogues at all: not refused downstream, never selected."* It carried its own warning
+that it was a session's inference and not Emma's ruling. **It is wrong, and the repo already held
+the measurement.**
+
+- **The gate rejects 2 items.** DEVLOG 2026-07-11, the stage-1 run that produced the corpus: 22,644
+  candidates, **2** non-Latin Commons names skipped, ~94 producing no clean label. 0.009%.
+- **Arab-world mosques are already selected — 16 of them**, from Saudi Arabia 4, Egypt 3, Palestine
+  2, UAE 2, Iran 2, Oman, Tunisia and Yemen, plus **451 synagogues**. Counted from the local stage-1
+  corpus, no network. The handful that go no further are refused *downstream* by
+  `plain_latin_katakana.rules_for_country`, which is a different and deliberate thing — and which I
+  wrote yesterday, so the premise was already falsified by the session that stated it.
+- **Arabic and Hebrew do not romanise derivably.** Both omit short vowels, so a romaniser invents
+  them. Measured with `aksharamukha`, already a CI dependency: `مسجد النور` (Masjid al-Nur) →
+  `masajada alanav̈ara`; `בית הכנסת הגדול` (Beit HaKnesset HaGadol) → `vĕyt hĕk͟hnĕst hĕgdĕvl`. That
+  is the confident-wrong failure `romance_katakana.rules_for_country` and `plain_latin_katakana`
+  exist to refuse. Devanagari *is* clean (`श्री राम मन्दिर` → `śrī rāma mandira`) — and reaches a
+  population of about two.
+- **It widens the intake that got the script PAUSED.** `generate_religious_building_labels.py` was
+  paused 2026-09-17 (`df9303510`) because *"earlier sessions ... used wikimedia commons as the only
+  source like it was somehow authoritative"*, and that commit names this very check: *"The script
+  check only ever asked whether the characters were Latin, never whether the string was English."*
+  An English label transliterated out of an Arabic Commons category is further from an authoritative
+  English source than the German strings that stopped it.
+
+**Why the item existed at all, which is the part worth fixing.** The generator's docstring still
+described a live stage-1 pipeline with *"Stage 2 ... (to come)"*. It never said the script was
+paused, never said why, and gave the gate no defence beyond Emma's quote. A session reading it saw
+an undefended gate in a live pipeline. The docstring now carries the pause, the reason, and all four
+measurements above; `paused/README.md` carries them too.
+
+⭐ **A live bug found on the way, and the more valuable half of this.** The 2026-09-17 pause moved
+the output with `git mv` and unwired CI — but never touched `OUT`, which still pointed at
+`quickstatements/`, the one directory `select_label_proposals.py` globs to build the drip. **A hand
+run of the paused generator would have written all 22,548 paused labels straight back onto the
+drip.** `test_no_workflow_regenerates_a_paused_file` cannot catch it, because a hand-run is not a
+workflow. `OUT` now points at `paused/` and a test pins it.
+
+Also: the skip counter now **names** what it skipped instead of only counting it. The bare "2
+skipped" in the 2026-07-11 log is exactly what let a later session read the number as a population —
+there was no way to check the claim without a fresh WDQS sweep, and WDQS answered 504 then 429 while
+I tried (bailed per policy; the count above came from the repo and the local corpus instead).
+
+4 new tests. Full suite 2,601 pass.
+
 ## 2026-09-19 — mosque labels: 0 to 137, and a second transliterator
 
 `dedication()` is a Christian saint vocabulary, and `build()` gated every item on it returning
