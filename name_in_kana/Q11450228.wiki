@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q11450228 -->
 <!-- JA: 安居神社 | EN_LABEL: Yasui Shrine | BUCKET: a -->
 <!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%AE%89%E5%B1%85%E7%A5%9E%E7%A4%BE -->
-<!-- ANSWER: -->
+<!-- ANSWER: KANA: やすいじんじゃ -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): やすいじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): あごじんじゃ
