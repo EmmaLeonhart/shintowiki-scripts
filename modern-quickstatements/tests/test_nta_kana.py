@@ -33,12 +33,17 @@ KATAKANA = re.compile(r"[ァ-ヶ]")
 
 
 def idx(entries):
-    """{(city, name): [(kana, houjin)]} built the way load_index would."""
+    """{(city, folded name): [(kana, houjin)]} built exactly the way load_index does.
+
+    The fold MUST be here too: load_index keys on gen.fold_name(name) and build() looks
+    up gen.fold_name(ja), so a helper that skipped it would make every folding test fail
+    for a reason that has nothing to do with the generator.
+    """
     import collections
     by = collections.defaultdict(list)
     for city, name, kana, houjin in entries:
         for ck in gen.city_keys(city):
-            by[(ck, name)].append((kana, houjin))
+            by[(ck, gen.fold_name(name))].append((kana, houjin))
     return by
 
 
@@ -80,6 +85,39 @@ def test_an_ambiguous_tail_is_skipped_not_guessed():
 def test_a_temple_reading_that_carries_its_own_tail_is_kept():
     assert gen.complete("多田寺", "タダジ")[0] == "タダジ"
     assert gen.complete("清水寺", "キヨミズデラ")[0] == "キヨミズデラ"
+
+
+def test_old_form_kanji_folds_to_the_modern_form():
+    """The registry records the LEGALLY REGISTERED name, usually pre-1949 old forms."""
+    assert gen.fold_name("淨嚴寺") == "浄厳寺"
+    assert gen.fold_name("圓行寺") == "円行寺"
+    assert gen.fold_name("寳藏院") == "宝蔵院"
+    assert gen.fold_name("三ッ宮神社") == "三ツ宮神社"
+
+
+def test_folding_matches_across_the_two_spellings():
+    index = idx([("上越市", "淨嚴寺", "ジョウゴンジ", "1234567890123")])
+    lines, _ = gen.build([("Q9", "浄厳寺", "上越市")], index)
+    assert len(lines) == 1 and lines[0].startswith('Q9|P1814|"じょうごんじ"')
+
+
+def test_folding_turns_a_spelling_pair_into_a_refusal_not_a_coin_flip():
+    """龍源寺 and 竜源寺 in one municipality are two corporations with one folded name."""
+    index = idx([("鈴鹿市", "龍源寺", "リュウゲンジ", "1"),
+                 ("鈴鹿市", "竜源寺", "タツミナモトジ", "2")])
+    lines, stats = gen.build([("Q10", "龍源寺", "鈴鹿市")], index)
+    assert lines == []
+    assert stats["same name twice in one municipality"] == 1
+
+
+def test_the_folded_name_is_never_what_gets_emitted():
+    """Folding is a comparison form. The emitted line carries the QID and the reading,
+    never a rewritten name -- nothing downstream should see 竜 where Wikidata says 龍."""
+    index = idx([("甲府市", "龍雲寺", "リュウウンジ", "1234567890123")])
+    lines, _ = gen.build([("Q11", "龍雲寺", "甲府市")], index)
+    assert lines == ['Q11|P1814|"りゅううんじ"|S854|"%s"'
+                     % (gen.REGISTRY % "1234567890123")]
+    assert "竜" not in lines[0]
 
 
 def test_a_match_in_a_different_municipality_is_not_used():

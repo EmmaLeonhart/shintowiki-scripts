@@ -113,6 +113,39 @@ COMPLETABLE = [
 ]
 
 
+# Old-form (旧字体) -> modern (新字体), applied to the NAME on BOTH sides of the match.
+#
+# The registry records the LEGALLY REGISTERED name, which for a corporation founded before
+# the 1949 reform is usually the old form: 淨嚴寺, 圓行寺, 寳藏院. Wikidata labels the same
+# building in modern kanji. Measured over the 34,050-entry index, the old forms are not a
+# tail — 藏 appears 292 times, 淨 240, 寳 224, 嚴 165, 國 155, 眞 154, 廣 153, 壽 149.
+#
+# Normalising creates collisions on purpose: 龍源寺 and 竜源寺 in one municipality collapse
+# to one key and are then REFUSED as ambiguous, which is the correct outcome — two
+# corporations, one name, no way to tell which the item is.
+#
+# The small-kana variants are here for the same reason: 三ッ宮神社 and 三ツ宮神社 are one name
+# spelled two ways, and the registry and Wikidata do not agree on which.
+_OLD_TO_NEW = {
+    "藏": "蔵", "淨": "浄", "寳": "宝", "寶": "宝", "嚴": "厳", "國": "国", "眞": "真",
+    "廣": "広", "壽": "寿", "德": "徳", "樂": "楽", "應": "応", "萬": "万", "澤": "沢",
+    "瀧": "滝", "榮": "栄", "彌": "弥", "禪": "禅", "惠": "恵", "觀": "観", "圓": "円",
+    "學": "学", "藝": "芸", "齋": "斎", "齊": "斉", "淺": "浅", "濱": "浜", "邊": "辺",
+    "邉": "辺", "會": "会", "亞": "亜", "拜": "拝", "縣": "県", "舊": "旧", "假": "仮",
+    "靈": "霊", "豐": "豊", "辨": "弁", "辯": "弁", "瓣": "弁", "攝": "摂", "續": "続",
+    "團": "団", "對": "対", "醫": "医", "兒": "児", "髙": "高", "﨑": "崎", "櫻": "桜",
+    "靜": "静", "當": "当", "歸": "帰", "來": "来", "體": "体", "變": "変", "辭": "辞",
+    "殘": "残", "燈": "灯", "爐": "炉", "龍": "竜", "圀": "国", "傳": "伝", "淸": "清",
+    "峯": "峰", "嶋": "島", "曉": "暁", "濟": "済", "檜": "桧", "寫": "写", "從": "従",
+    "ヶ": "ケ", "ヵ": "カ", "ッ": "ツ", "ヂ": "ジ", "ヅ": "ズ",
+}
+
+
+def fold_name(name):
+    """The form both sides of the match are compared in. Never emitted, only compared."""
+    return "".join(_OLD_TO_NEW.get(c, c) for c in name)
+
+
 def to_hiragana(text):
     """Katakana -> hiragana. The long vowel mark and the nakaguro are left alone."""
     return "".join(chr(ord(c) - 0x60) if "ァ" <= c <= "ヶ" else c for c in text)
@@ -142,7 +175,7 @@ def load_index(path=None):
     for key, rec in raw.items():
         _pref, city, name = key.split("|", 2)
         for ck in city_keys(city):
-            by[(ck, name)].append((rec["kana"], rec["houjin"]))
+            by[(ck, fold_name(name))].append((rec["kana"], rec["houjin"]))
     return by
 
 
@@ -171,7 +204,7 @@ def build(rows, index):
     lines = []
     stats = collections.Counter()
     for qid, ja, city in rows:
-        cands = index.get((city, ja), [])
+        cands = index.get((city, fold_name(ja)), [])
         if not cands:
             stats["no match in the registry"] += 1
             continue
