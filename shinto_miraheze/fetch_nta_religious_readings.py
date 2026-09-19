@@ -106,8 +106,21 @@ C_HOUJIN, C_NAME, C_PREF, C_CITY, C_FURIGANA = 1, 6, 9, 10, 28
 # us -- there is no "religious corporation" flag in the CSV -- so the corporate-form
 # words are excluded first, because 株式会社 ends in 社 and would otherwise swamp the
 # set (9,125 "religious-looking" rows in Yamanashi against a real 2,586).
-_CORP = re.compile("会社|有限|合同|合資|組合|財団|社団|学校|医療|協会|連合")
-_WORSHIP = re.compile(r"(寺|神社|神宮|八幡宮|大社|院|庵|坊|稲荷)$")
+# ⚠ The corporate-form list is checked FIRST and has to be wider than it looks, because
+# the worship test below now accepts a bare 社 and a bare 宮. 株式会社 was always the
+# obvious one; 甲州市土地開発公社 — a municipal land-development corporation — is the one
+# that actually slipped through when 社 was added, and 公団 / 事業団 / 商工会 are the same
+# shape. Getting this wrong puts a company's フリガナ into a shrine reading file.
+_CORP = re.compile("会社|有限|合同|合資|組合|財団|社団|学校|医療|協会|連合"
+                   "|公社|公団|事業団|商工|振興|協議|生活|共済|信用|農業|漁業")
+# A bare 社 and a bare 宮 are shrines: 八幡社, 神明社, 天満宮, 若宮. Measured on Yamanashi,
+# adding them finds 18 more shrines with a registered furigana that the 神社-only rule
+# dropped — 八幡社 -> ハチマンシャ, 櫻井神明社 -> サクライシンメイシャ.
+#
+# 教会 is deliberately NOT here. Those are the general religious-building population —
+# the 10% under Emma's 2026-09-18 split — and they are matched by a different pipeline.
+# Yamanashi alone holds 34 of them with furigana, so this is a scope line, not an oversight.
+_WORSHIP = re.compile(r"(寺|神社|神宮|八幡宮|大社|院|庵|坊|稲荷|社|宮)$")
 
 
 def is_worship(name):
