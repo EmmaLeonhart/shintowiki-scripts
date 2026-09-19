@@ -804,6 +804,9 @@ _GERMAN_DEDICATIONS = {
     # match it. A bare Geist in a church name is always the Holy Spirit.
     "geist": "holy spirit",
     "allerheiligen": "all saints",
+    "immaculata": "conception",
+    "schmerzhaften": "sorrows",
+    "schmerzhafte": "sorrows",
     "mariä heimsuchung": "visitation",
     "mariae heimsuchung": "visitation",
     "heilig kreuz": "holy cross",
@@ -879,6 +882,36 @@ SPECIFIC_DEDICATIONS = SPECIFIC_DEDICATIONS | set(_GERMAN_DEDICATIONS)
 # ⚠ A GENERIC title needs a DEDICATIONS row of its own -- the generic branch
 # looks the matched phrase up there, so adding a phrase to the set alone raises
 # KeyError. The German Marian carriers all resolve to plain 聖母.
+# ⭐ Feasts and titles Poland's English-language labels named that the table did
+# not carry at all (2026-09-19). Each has ONE fixed Japanese form, which is the
+# test for a table row; a person's name still does not get one.
+DEDICATIONS.update({
+    "holy family": {"ja": "聖家族", "zh": "圣家", "ko": "성가정"},
+    "sacra famiglia": {"ja": "聖家族", "zh": "圣家", "ko": "성가정"},
+    "sagrada familia": {"ja": "聖家族", "zh": "圣家", "ko": "성가정"},
+    "sagrada família": {"ja": "聖家族", "zh": "圣家", "ko": "성가정"},
+    "heilige familie": {"ja": "聖家族", "zh": "圣家", "ko": "성가정"},
+    "heiligen familie": {"ja": "聖家族", "zh": "圣家", "ko": "성가정"},
+    "divine mercy": {"ja": "神のいつくしみ", "zh": "耶稣慈悲", "ko": "하느님의 자비"},
+    "miłosierdzia bożego": {"ja": "神のいつくしみ", "zh": "耶稣慈悲",
+                            "ko": "하느님의 자비"},
+    "good shepherd": {"ja": "善き牧者", "zh": "善牧", "ko": "착한 목자"},
+    "guten hirten": {"ja": "善き牧者", "zh": "善牧", "ko": "착한 목자"},
+    "buen pastor": {"ja": "善き牧者", "zh": "善牧", "ko": "착한 목자"},
+    "bom pastor": {"ja": "善き牧者", "zh": "善牧", "ko": "착한 목자"},
+    "buon pastore": {"ja": "善き牧者", "zh": "善牧", "ko": "착한 목자"},
+    "mother of god": {"ja": "神の母", "zh": "天主之母", "ko": "천주의 모친"},
+    "muttergottes": {"ja": "神の母", "zh": "天主之母", "ko": "천주의 모친"},
+    "mutter gottes": {"ja": "神の母", "zh": "天主之母", "ko": "천주의 모친"},
+})
+SPECIFIC_DEDICATIONS = SPECIFIC_DEDICATIONS | {
+    "holy family", "sacra famiglia", "sagrada familia", "sagrada família",
+    "heilige familie", "heiligen familie", "divine mercy",
+    "miłosierdzia bożego", "good shepherd", "guten hirten", "buen pastor",
+    "bom pastor", "buon pastore", "mother of god", "muttergottes",
+    "mutter gottes",
+}
+
 DEDICATIONS.update({phrase: DEDICATIONS["our lady"]
                     for phrase in ("unserer lieben frau", "unser lieben frauen",
                                    "lieben frau", "lieben frauen", "liebe frau",
@@ -1086,6 +1119,12 @@ def name_key(token):
             stem = token[: -len(suffix)]
             if stem in NAMES:
                 return stem
+    # ⚠ A German name ending in -a takes the weak genitive -n, so the compound
+    # keeps the a: Katharinenkirche is Katharina-n-kirche, Magdalenenkapelle
+    # Magdalena-n-, Annenkirche Anna-n-. Stripping the -en leaves `katharin`,
+    # which is not a name, and 9 + 10 + 5 items were READ instead of NAMED.
+    if token.endswith("en") and token[:-2] + "a" in NAMES:
+        return token[:-2] + "a"
     return None
 
 
@@ -1419,6 +1458,55 @@ def render_mosque(label, p31, lang, place, latin_rules=None):
 # hanzi or hangul, and inventing one fabricates a reading instead of deriving it.
 _TRANSLIT_LANGS = {"ja"}
 
+# ⛔ AN ENGLISH WORD MUST NOT BE READ WITH A FOREIGN ORTHOGRAPHY, and the Polish
+# slice is where this became unmissable: stage 1's labels for Poland are mostly
+# ENGLISH descriptions of Polish churches, so `Blessed Jerzy Popiełuszko chapel`
+# read as ブレスセト, `Roman catholic church` as ツァトホリツ, `Bar Confederation
+# chapel` as ツォンフェデラティオン and `Ćmielów Castle` as ツァストレ. Every one
+# of them is a confident wrong reading of a word we know the meaning of.
+#
+# These are CONTENT words that survive the frame filters. A frame word (church,
+# of, former, cemetery) is dropped by STOPWORDS or TYPE_WORDS and never reaches a
+# transliterator; these would, so the whole label is refused instead.
+#
+# ⚠ Refusing the LABEL, not the token. Dropping the token silently would emit
+# `ジェジ・ポピエウシュコ礼拝堂` for a chapel the source calls Blessed — less than
+# the source said, which is the call `_qualifier_residue` already makes.
+_ENGLISH_CONTENT = {
+    "blessed", "bl", "divine", "mercy", "good", "shepherd", "god", "gods",
+    "prince", "princess", "castle", "tower", "bell", "confederation",
+    "sepulchre", "sepulcher", "catholic", "protestant", "franciscan",
+    "dominican", "jesuit", "pentecostal", "congregation", "brotherhood",
+    "brethren", "fraternity", "society", "house", "hall", "tomb", "grave",
+    "school", "college", "museum", "ruins", "greater", "lesser", "elder",
+    "younger", "wooden", "stone", "brick", "upper", "lower", "little",
+    "great", "roman", "greek", "latin", "eastern", "western", "united",
+    "reformed", "adventist", "baptist", "anglican", "presbyterian",
+    "articular", "unitarian", "calvinist", "cathedral", "belfry", "shrine",
+    "burial", "funeral", "bishops", "archbishop", "cardinal", "abbess",
+    "hermit", "deacon", "widow", "queen",
+    # ⭐ Second pass, measured against the Polish output 2026-09-19. Poland's
+    # labels are English almost throughout, so the list has to cover ordinary
+    # English vocabulary and not just the religious register: `Almoner` read as
+    # アルモネル, `Brother` as ブロトヘル, `Prayerhouse` as プライェルホウセ,
+    # `Mortuary` as モルトゥアリ, `Guardian Angels` as グアルディアン・アンゲルス.
+    "family", "families", "almoner", "brother", "sister", "sisters",
+    "prayerhouse", "prayer", "mortuary", "guardian", "angels", "angel",
+    "pallotines", "redemptorists", "salesians", "capuchins", "carmelites",
+    "bernardines", "centre", "center", "culture", "military", "almighty",
+    "providence", "crucified", "passion", "wounds", "blood", "immaculate",
+    "transfiguration", "ascension", "assumption", "annunciation",
+    "visitation", "resurrection", "presentation", "exaltation", "conversion",
+    "dormition", "epiphany", "pentecost", "corpus", "christi", "saviour",
+    "savior", "redeemer", "consolation", "perpetual", "help", "succour",
+    "victory", "victorious", "peace", "rosary", "snows", "sorrows", "mercy",
+    # English exonyms in the qualifier slot, which a foreign rule set has no
+    # business reading: `of Cologne` came back ツォログネ, `of Prague` プラグエ.
+    "cologne", "prague", "warsaw", "vienna", "munich", "rome", "naples",
+    "florence", "venice", "milan", "lisbon", "seville", "moscow", "kiev",
+    "kyiv", "cracow", "krakow", "danzig", "breslau",
+}
+
 # Genitive and locative links — where a dedicatee ENDS and its qualifier begins.
 # `San Francesco di Paola` is Francis *of Paola*, not a person called Francesco
 # Paola, and the shape that says so is the one the generic-title branch already
@@ -1565,6 +1653,8 @@ def transliterate_dedication(label, lang, rules=None, latin_rules=None,
         return None
     head, qual, saw_saint = _dedicatee_split(label)
     if not head:
+        return None
+    if any(_fold(t) in _ENGLISH_CONTENT for t in head + qual):
         return None
     head = [t for t in head if not _echoes_place(t, place_en)]
     qual = [t for t in qual if not _echoes_place(t, place_en)]

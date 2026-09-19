@@ -62,6 +62,10 @@ _H = "Ĥ"
 # German's own `z -> ts` rule one pass later: Salvator came back ツァルファトル,
 # Rosen ロツェン, Sachsen ツァハツェン. Same trick, same reason, as `_CH` and `_J`.
 _Z = "Ż"
+# ⛔ Polish ł is /w/ and Polish w is /v/, so the two collide: `Łódź` became
+# `wudź` and the `w -> v` rule one pass later turned it into ヴジュ. It is ウッチ,
+# and ロッチ or ヴジュ is a different town.
+_W = "Ŵ"
 
 _RULES = {
     # Bosnian / Croatian / Serbian-Latin / Macedonian-Latin. Diacritics are the
@@ -113,6 +117,54 @@ _RULES = {
         ("ce", "tse"), ("ci", "tsi"), ("cy", "tsi"), ("c", "k"),
         (_H, "h"), (_CH, "ch"), (_Z, "z"),
     ],
+    # Polish. 748 of the 6,627. Fully phonemic once the digraphs and the two
+    # nasal vowels are resolved, which `_pre_polish` does first.
+    #
+    # ⚠ `szcz` must beat `sz` and `cz`; `dz`-family must beat a bare `d` + `z`;
+    # `rz` must run before `z` becomes anything.
+    "pl": [
+        ("szcz", "sh" + _CH), ("sz", "sh"), ("cz", _CH),
+        # ⚠ A palatal followed by i + VOWEL is one syllable, not two: `Kościan`
+        # is コシチャン, not コシュチアン. The i is the palatalisation sign and
+        # is not itself a vowel. Listed before the bare forms so it wins.
+        ("dzia", _J + "a"), ("dzie", _J + "e"), ("dzio", _J + "o"),
+        ("dziu", _J + "u"), ("dzi", _J + "i"),
+        ("dź", _J), ("dż", _J), ("dz", _J),
+        ("rz", _J), ("ż", _J), ("ź", _J),
+        ("ch", "h"),
+        ("cia", _CH + "a"), ("cie", _CH + "e"), ("cio", _CH + "o"),
+        ("ciu", _CH + "u"), ("ci", _CH + "i"), ("ć", _CH),
+        ("sia", "sha"), ("sie", "she"), ("sio", "sho"), ("siu", "shu"),
+        ("si", "shi"), ("ś", "sh"),
+        ("nia", "nya"), ("nie", "nye"), ("nio", "nyo"), ("niu", "nyu"),
+        ("ni", "nyi"), ("ń", "ny"),
+        ("zia", _J + "a"), ("zie", _J + "e"), ("zio", _J + "o"),
+        ("ziu", _J + "u"), ("zi", _J + "i"),
+        ("c", "ts"), ("w", "v"), ("j", "y"),
+        (_J, "j"), (_CH, "ch"), (_W, "w"),
+    ],
+    # Czech and Slovak. 289 of the 6,627. The háčeks are the phonemes and the
+    # acutes are LENGTH, which is the one thing this family writes that the
+    # Balkan one does not -- `_pre_czech` turns them into ー.
+    #
+    # ⛔ `ř` reads as a plain r. It is /r̝/, a sound with no kana at all, and the
+    # established ドヴォルザーク for Dvořák is a convention rather than a
+    # derivation. A village name has no such convention to borrow, so the honest
+    # output is the r.
+    "cs": [
+        ("ch", "h"),
+        ("č", _CH), ("š", "sh"), ("ž", _J), ("ř", "r"),
+        # ⚠ `dě` `tě` `ně` are the PALATALS /ɟɛ cɛ ɲɛ/, not d + ye: České
+        # Budějovice is ブジェヨヴィツェ, and read as d + ye it was ブドイェ-.
+        # `ď` and `ť` are the same two sounds under a different sign.
+        ("dě", _J + "e"), ("tě", _CH + "e"), ("ně", "nye"), ("mě", "mnye"),
+        ("ď", _J), ("ť", _CH), ("ě", "ye"), ("ň", "ny"),
+        ("ľ", "ry"), ("ĺ", "l"), ("ŕ", "r"),
+        # Czech j is /j/, so `ji` is イ: Jihlava イフラヴァ, Trojice トロイツェ.
+        ("ji", "i"),
+        ("c", "ts"), ("w", "v"), ("j", "y"),
+        (_J, "j"), (_CH, "ch"),
+    ],
     # Malay / Indonesian. Fully phonemic; the only digraphs are sy, kh, gh and
     # c. ng before a VOWEL needs no rule — a bare n closes the syllable as ン
     # and the g carries on (Nanga → ナンガ, Bangis → バンギス); ng before a
@@ -150,6 +202,11 @@ _FOREIGN = {
     # accents. Their presence means the word is not German -- the cheap half of
     # the test; `_onset_ok` is the other half.
     "de": set("çñčćšžđıəğşàéèêëîïôùûý"),
+    # Polish has no háčeks, no umlauts, no Romance accents, and no q/v/x at all.
+    "pl": set("qvxçñčćšžđıəğşäöüßàâéèêëîïôùûýğ"),
+    # Czech/Slovak have no Polish ogoneks or ł, no umlauts except Slovak ä, and
+    # no French accents.
+    "cs": set("qąęłńśźżçñđıəğşöüßàèêëîïùû"),
 }
 
 # Loanword columns the bare kana grid does not carry. Turkish and Malay tu/ti
@@ -162,7 +219,7 @@ _EXTRA = {
     # ⛔ `ye` and `yi` are HOLES in the bare grid (`_ROWS["y"]` is "ヤ-ユ-ヨ"),
     # and a hole returns None for the whole word. German j is /j/, so `Jerusalem`
     # and `Jördenstorf` -- Emma's own example -- both fell through one.
-    "y": ("ヤ", "イィ", "ユ", "イェ", "ヨ"),
+    "y": ("ヤ", "イ", "ユ", "イェ", "ヨ"),
 }
 
 # ⛔ Which doubled consonants become ッ, per family. bs/tr/ms needed none, so the
@@ -177,6 +234,12 @@ _GEMINATES = {"de": set("ptkbdgsfzh")}
 # A palatal with no vowel after it takes the i column, not the u column: the nj
 # of Vrbanjska is ヴルバニスカ, not ヴルバニュスカ.
 _BARE_YOON = {"ny": "ニ", "ry": "リ"}
+
+# ⚠ A word-final affricate is チ in the Slavic families -- Czech Třebíč, Polish
+# Łódź, both full of final č/ć -- and チュ in German, whose -tsch is a cluster
+# with an audible off-glide: Deutsch is ドイチュ. So the override is per family,
+# not global; set globally it broke German.
+_BARE_YOON_BY_RULES = {"pl": {"ch": "チ"}, "cs": {"ch": "チ"}}
 
 # ö and ü after a consonant that HAS a small-y row take it — Göreme is ギョレメ,
 # Büyük is ビュユク. After s/z/t/d/f/v/l and word-initially they do not: Süleyman
@@ -308,6 +371,69 @@ def _pre_german(word):
     return w
 
 
+# ------------------------------------------------------------------ Polish
+# The two nasal vowels. Before a labial they close with m, elsewhere with n, and
+# a word-final ę is plain e -- Łódź's neighbours are full of both.
+_PL_NASAL = [("ą", "on"), ("ę", "en")]
+# ⚠ The DIGRAPHS come first and the single letters must not touch them.
+# `Bydgoszcz` ends in a z that belongs to `cz`, and devoicing it letter-wise gave
+# ビドゴシュツス; `Łódź` ends in the affricate `dź`, whose voiceless partner is
+# `ć`, not `d` + `ś`.
+_PL_FINAL_DIGRAPH = {"dź": "ć", "dż": "cz", "dz": "c"}
+_PL_FINAL_KEEP = ("cz", "sz", "rz", "ch", "ść", "szcz")
+_PL_FINAL_DEVOICE = {"w": "f", "b": "p", "d": "t", "g": "k", "z": "s",
+                     "ż": "sz", "ź": "ś"}
+_PL_NASAL_LABIAL = [("ąb", "omb"), ("ąp", "omp"), ("ęb", "emb"), ("ęp", "emp")]
+
+
+def _pre_polish(word):
+    """Nasal vowels, ó and ł.
+
+    ⚠ `ł` is /w/, not /l/: Łódź is ウッチ and Łagiewniki ワギェヴニキ. Read as an
+    l it would be ロッチ, which is a different town.
+    """
+    w = unicodedata.normalize("NFC", word).lower()
+    for a, b in _PL_NASAL_LABIAL:
+        w = w.replace(a, b)
+    if w.endswith("ę"):
+        w = w[:-1] + "e"
+    for a, b in _PL_NASAL:
+        w = w.replace(a, b)
+    w = w.replace("ó", "u").replace("ł", _W)
+    # Final obstruents devoice, and the commonest of them by far is the -ów of a
+    # genitive plural place name: Rzeszów is ジェシュフ, Tczew トチェフ.
+    for a, b in _PL_FINAL_DIGRAPH.items():
+        if w.endswith(a):
+            w = w[: -len(a)] + b
+            return w
+    if (w and w[-1] in _PL_FINAL_DEVOICE
+            and not any(w.endswith(k) for k in _PL_FINAL_KEEP)):
+        w = w[:-1] + _PL_FINAL_DEVOICE[w[-1]]
+    return w
+
+
+# ------------------------------------------------------------ Czech / Slovak
+# ⭐ The acutes are LENGTH, and they are the reason this is not the `bs` family:
+# Bosnian writes no vowel length, Czech writes it on every long vowel. `ů` is the
+# same long u under a different sign (Dvůr ドヴール).
+_CS_LONG = {"á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u", "ý": "i",
+            "ů": "u"}
+# ⚠ NOT length. Slovak ô is the diphthong /uo/ and ä is a plain open e; both
+# were taking a ー from the long-vowel table they do not belong in.
+_CS_PLAIN = {"ô": "uo", "ä": "e"}
+
+
+def _pre_czech(word):
+    w = unicodedata.normalize("NFC", word).lower()
+    out = []
+    for ch in w:
+        if ch in _CS_LONG:
+            out.append(_CS_LONG[ch] + _CHOONPU)
+        else:
+            out.append(_CS_PLAIN.get(ch, ch))
+    return "".join(out)
+
+
 _DOUBLE_VOWEL = re.compile(r"([aeiou])\1")
 
 
@@ -322,7 +448,8 @@ _MS_ONSETS = {"br", "bl", "dr", "kr", "kl", "pr", "pl", "tr", "gr", "gl",
               "sp", "st", "sk", "sw", "sl", "sn", "sm"}
 # German really does cluster three deep -- `Strasse` is s-t-r, and after
 # `^s[pt] -> sh` the sh counts as one, so the cap is 3.
-_MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3, "de": 3}
+# Slavic really does cluster: `Wszystkich` is w-sz-yst-, `Świętych` is św-.
+_MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3, "de": 3, "pl": 3, "cs": 3}
 
 # Digraphs that are ONE consonant by the time the kana grid reads them.
 _DIGRAPHS = ("sh", "ch", "ts", "ny", "ry", "ky", "gy", "hy", "by", "py", "my")
@@ -355,6 +482,10 @@ def _romanise(word, rules):
         w = _pre_turkic_rounded(w)
     if rules == "de":
         w = _pre_german(w)
+    if rules == "pl":
+        w = _pre_polish(w)
+    if rules == "cs":
+        w = _pre_czech(w)
     for a, b in _RULES[rules]:
         w = w.replace(a, b)
     if rules == "ms":
@@ -386,6 +517,7 @@ def to_katakana(word, rules):
     out = []
     i = 0
     geminates = _GEMINATES.get(rules, frozenset())
+    bare_yoon = dict(_BARE_YOON, **_BARE_YOON_BY_RULES.get(rules, {}))
     while i < len(w):
         if w[i] == _CHOONPU:
             out.append(_CHOONPU)
@@ -403,7 +535,7 @@ def to_katakana(word, rules):
                     out.append(_YOON[cons][_ORDER.index(w[j])])
                     i = j + 1
                 else:
-                    out.append(_BARE_YOON.get(cons, _YOON[cons][2]))
+                    out.append(bare_yoon.get(cons, _YOON[cons][2]))
                     i = j
                 matched = True
                 break
@@ -491,6 +623,10 @@ COUNTRY_RULES = {
     "Q40": "de",    # Austria
     "Q39": "de",    # Switzerland
     "Q347": "de",   # Liechtenstein
+    # Slavic Latin, added 2026-09-19 with the other four families.
+    "Q36": "pl",    # Poland
+    "Q213": "cs",   # Czechia
+    "Q214": "cs",   # Slovakia
 }
 
 
