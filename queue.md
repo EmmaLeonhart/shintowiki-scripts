@@ -30,12 +30,8 @@ from `ATOMIC_FILES`; they are not queue items.
     skip-check, push, then `AskUserQuestion` as the deliverable.
   - [ ] Run the status-report action once more independently as an end-of-session summary.
 
-- [ ] ⚠ The four religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
+- [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
-- [ ] Religious buildings: add the non-Japanese temple classes to `CLASSES` in
-  `generate_religious_building_labels.py` (Emma, 2026-09-18: *"Temples that aren't Japanese go in
-  the 10%"*). Hindu temple, gurdwara, Jain temple, Buddhist temples outside Japan. Today CLASSES is
-  5 Abrahamic classes and no temple of any kind, so a mandir or a wat is in NO pipeline.
 - [ ] Religious buildings: mosque labels = translate the generic, transliterate the name (Emma,
   same day). `Old Mosque` -> 旧モスク, `Upper Mosque` -> 上モスク, `Omer Mosque` -> オメル・モスク.
   Needs a generic-modifier table and a generic-vs-name test. 245 mosques currently get **0** labels
