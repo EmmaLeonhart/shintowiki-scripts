@@ -32,6 +32,19 @@ from `ATOMIC_FILES`; they are not queue items.
 
 - [ ] ⚠ The four religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
+- [ ] Religious buildings: add the non-Japanese temple classes to `CLASSES` in
+  `generate_religious_building_labels.py` (Emma, 2026-09-18: *"Temples that aren't Japanese go in
+  the 10%"*). Hindu temple, gurdwara, Jain temple, Buddhist temples outside Japan. Today CLASSES is
+  5 Abrahamic classes and no temple of any kind, so a mandir or a wat is in NO pipeline.
+- [ ] Religious buildings: mosque labels = translate the generic, transliterate the name (Emma,
+  same day). `Old Mosque` -> 旧モスク, `Upper Mosque` -> 上モスク, `Omer Mosque` -> オメル・モスク.
+  Needs a generic-modifier table and a generic-vs-name test. 245 mosques currently get **0** labels
+  because `dedication()` is a saint vocabulary; 64 of them are the bare word `Mosque`.
+- [ ] Religious buildings: drop the `is_latin_script()` gate in stage 1 and transliterate
+  Arabic/Hebrew/Devanagari names. ⚠ MY CALL, not hers — she did not answer the question. It follows
+  from the two rulings she did give (no dedication means transliteration; non-Japanese temples are in
+  scope, and a mandir's name is Devanagari). Reverse it if wrong. Today the gate is why there are no
+  Arab-world mosques and no Hebrew-named synagogues at all: not refused downstream, never selected.
 - [ ] Religious buildings: no dedication means TRANSLITERATE (Emma, 2026-09-18, *"No dedication
   means transliteration"*). 13,696 of 22,548 are refused at that gate — `Dorfkirche Jördenstorf`,
   `Église du Pras de La Mulatière`, `Santo André de Lourizán`. `romance_katakana` already exists

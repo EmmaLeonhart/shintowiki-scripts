@@ -632,6 +632,12 @@ Buddhist exception to a Shinto project.
 - **Check the split before picking up the next item**, not after. Shrine and temple work first;
   general religious buildings when they are the tenth.
 
+⭐ **A TEMPLE THAT IS NOT JAPANESE IS THE 10%** (Emma, same day): *"Temples that aren't Japanese go in
+the 10%."* So the line is nationality, not religion — a Japanese Buddhist temple is Shinto and sits in
+the 90%; a mandir, a wat, a gurdwara joins the church/mosque/synagogue population. That answers the
+`CLASSES` gap in `generate_religious_building_labels.py`, whose five classes carry no temple of any
+kind: the temple classes are ADDED there, not routed to the shrine pipeline.
+
 ### ⛔ DO NOT NAME THE ABANDONED WIKI AGAIN — not even as a blocker (Emma, 2026-09-18)
 
 > *"don't ever fucking mention [it] again"*
