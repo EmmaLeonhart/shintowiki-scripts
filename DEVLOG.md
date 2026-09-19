@@ -1,3 +1,95 @@
+## 2026-09-19 (fourth) — five orthographies, because she said all of them: 6,627 refused -> 2,604
+
+Asked which transliterators to build for the residue section 7b left, and shown the French caveat in
+the question itself, Emma answered ***"All of them, French included."*** Five new families in
+`plain_latin_katakana.py`.
+
+**ja 6,722 → 9,080** across the day (4,618 before any of this), zh 5,099 → 5,434, ko 1,940 → 2,065.
+**No QID lost a ja label at any point.**
+
+| family | countries | of the 6,627 |
+|---|---|---|
+| `de` | Germany, Austria, Switzerland, Liechtenstein | 3,357 |
+| `pl` | Poland | 748 |
+| `fr` | France, Belgium, Quebec, Luxembourg | 594 |
+| `ru` | Russia, Ukraine, Belarus — a ROMANISATION, not an orthography | 529 |
+| `cs` | Czechia, Slovakia | 289 |
+
+### ⭐ The English guard, which matters more than any one family
+
+Stage 1's labels for Poland are mostly **English descriptions of Polish churches**, and the moment
+`pl` existed they were read with Polish rules: `Blessed` → ブレスセト, `Roman catholic` →
+ロマン・ツァトホリツ, `Bar Confederation` → ツォンフェデラティオン, `Ćmielów Castle` → ツァストレ,
+`of Cologne` → ツォログネ. Every one is a confident wrong reading of a word whose meaning we know —
+the failure `romance_katakana.rules_for_country` was written to refuse.
+
+`_ENGLISH_CONTENT` refuses the whole **LABEL**, not the token. Dropping the token silently would
+emit ジェジ・ポピエウシュコ礼拝堂 for a chapel the source calls Blessed, which claims less than the
+source said — the call `_qualifier_residue` already makes.
+
+### What each family needed that the Balkan/Turkic/Malay three did not
+
+- **German** — umlauts (⚠ ö is NOT the Turkish ö: Köln is ケルン and the Turkish rule gives ケョルン),
+  written length, s-voicing, final devoicing, the four things `ch` spells, and a geminate rule the
+  module had never needed. German geminates OBSTRUENTS only — Müller is ミュラー, Göttingen
+  ゲッティンゲン.
+- **Polish** — ł is /w/ while w is /v/, so ł parks on a sentinel or Łódź becomes ヴジュ, a different
+  town. A palatal + i + vowel is one syllable. Final obstruents devoice, and the digraphs devoice as
+  a unit: `Bydgoszcz` ends in a z that belongs to `cz` and letter-wise devoicing gave ビドゴシュツス.
+- **Czech/Slovak** — the acutes are LENGTH, which is exactly what the Balkan family does not write.
+  dě/tě/ně are palatals, not d + ye. `ř` reads as a plain r: /r̝/ has no kana at all and ドヴォルザーク
+  is a convention a village name cannot borrow.
+- **French** — the one the repo had refused on purpose, and three ordering bugs each produced a
+  plausible-looking word: **softness before the mute e is dropped** (`Vincent` was ヴァンク,
+  `Hayange` エアン); **the mute e before the accents are folded** (`é` is not mute, and `Pitié` ended
+  in a droppable e); **the nasal ン on a sentinel** (a nasal is a VOWEL and its n looked exactly like
+  a silent final, so `Jean` was ジェア). The mute e is PARKED rather than deleted, because it is what
+  makes the consonant before it sound — `Dame` ダム, `Sainte` サント.
+- **Russian** — reads a TRANSCRIPTION, so the digraphs are English conventions for Cyrillic letters
+  (zh = ж, kh = х, shch = щ) and any diacritic at all refuses.
+
+### Two things that were quietly wrong all along and only now bit
+
+- **Bare `burg` and `orts` were type words.** `_strip_compound_type` matches any tail of 4+
+  characters, so they ate the end of every -burg place name: `Yekaterinburg Synagogue` read
+  イェカテリン・シナゴーグ, and Magdeburg, Hamburg and Regensburg were all one syllable short.
+  Removing them cost exactly 2 labels, both `Hubertusburg`, a castle whose -burg was being stripped
+  to reach St Hubert. Two against every -burg place name is the right trade.
+- **`_strip_compound_type` returned one- and two-letter stumps.** `Hospitalkirche` ends with the
+  German type word `spitalkirche` and came back `ho` → 聖ホ・ヤコブ. 19 tokens corpus-wide, all junk.
+
+Also: **one label line per QID per language**. Stage 1 emitted two Commons categories for 6 items,
+and while both were refused that cost nothing; once `de` could read them QuickStatements would have
+set one item's ja label twice, the second winning arbitrarily.
+
+### Table gaps the new families exposed, and the line drawn through them
+
+German and Polish both revealed dedications the table names in some other language: Christkönig,
+Trinitatis, Mariä Geburt, Maria Hilf, Unserer Lieben Frau, Hl. Geist, Allerheiligen, Immaculata,
+Schmerzhafte — plus Holy Family, Divine Mercy, Good Shepherd and Mother of God, which it carried in
+no language at all.
+
+⛔ **The line: a liturgical FEAST or TITLE has one fixed Japanese form and gets a table row; a
+person's NAME does not.** There are thousands of saints, each a separate judgement, and "no
+dedication means transliteration" is what covers them. So Gregorio, Filippo, Marco, Marta, Agostino,
+Domenico, Biagio, Vittore, Bernardo, Román and the Galician saints are still READ, on purpose.
+
+The one name-side exception is spelling variants of saints already named — `salvator`, `matthäus`,
+and the German weak genitive (`Katharinenkirche` is Katharina-n-kirche, so stripping the -en left
+`katharin` and 24 items were read instead of named).
+
+### What is left
+
+**2,604**, led by Germany 859 — and those are NOT a missing family, they are labels `de` refuses:
+digits, foreign words, the English guard. Then Poland 337, Netherlands 258, Spain 232, Moldova 140,
+Russia 113, Sweden 83, Romania 81. Dutch, Romanian, Swedish, Armenian, Finnish, Norwegian and
+Lithuanian have no family and have not been asked about; that is the queue item left behind, and it
+should be ASKED rather than inferred from "all of them", which was an answer about a country map
+that no longer has these at the top of it.
+
+125 new tests across `test_german_katakana.py`, `test_slavic_katakana.py` and
+`test_french_russian_katakana.py`. Rationale doc section 7c. Full suite 2,760 pass.
+
 ## 2026-09-19 (third) — no dedication means transliteration: the pipeline's biggest gate, 13,470 items
 
 Emma, 2026-09-18: ***"No dedication means transliteration."*** `dedication()` refuses the moment

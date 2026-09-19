@@ -101,8 +101,13 @@ TYPE_WORDS = {
     # German compound heads that describe WHERE or WHOSE, not who it is for:
     # Wegkapelle (wayside), Hofkapelle (farm), Ortskapelle (village),
     # Schlosskapelle (castle), plus more denominations.
-    "weg", "wegkapelle", "hof", "hofkapelle", "orts", "ortskapelle",
-    "schloss", "schlosskapelle", "burgkapelle", "burg", "friedhof",
+    "weg", "wegkapelle", "hof", "hofkapelle", "ortskapelle",
+    "schloss", "schlosskapelle", "burgkapelle", "friedhof",
+    # ⛔ Bare `burg` and `orts` are GONE. `_strip_compound_type` matches any tail
+    # of 4+ characters, so they ate the end of every -burg place name:
+    # `Yekaterinburg Synagogue` read イェカテリン・シナゴーグ, and Magdeburg,
+    # Hamburg and Regensburg were all one syllable short. The compounds that
+    # needed them (`burgkapelle`, `ortskapelle`) are listed in full.
     "protestantische", "protestantisch", "hervormde", "evangelical",
     "lutherkirche", "luther", "templo", "iglesia_parroquial",
     # ⭐ Measured 2026-09-19, once the transliteration fallback started READING
@@ -125,6 +130,15 @@ TYPE_WORDS = {
     "spitalkirche", "spitalkapelle", "stiftskirche", "stiftskapelle",
     "dorfkapelle", "gnadenkapelle", "klosterkapelle", "kriegergedächtniskapelle",
     "hospitalkirche", "hospitalkapelle",
+    # ⭐ French common nouns, measured against the `fr` output 2026-09-19. Each
+    # names the building or its setting, not its dedicatee: `Chapelle du
+    # séminaire Saint-Yves` is the seminary chapel, and `séminaire` was reaching
+    # the name slot as 聖セミネル.
+    "séminaire", "seminaire", "couvent", "presbytère", "presbytere",
+    "maison", "chambre", "commerce", "retraite", "gymnase", "lycée", "lycee",
+    "rue", "route", "place", "avenue", "boulevard", "hôpital", "hopital",
+    "ancienne", "ancien", "collégiale", "collegiale", "prieuré", "prieure",
+    "paroissiale", "paroisse", "cimetière", "cimetiere", "temple_protestant",
     "kriegergedächtnis", "kriegerdenkmal", "gemeinde", "filialkirche",
     "filial", "syrisch", "armenisch", "griechisch", "russisch", "koptisch",
     "altkatholische", "freikirche", "kapellchen",
@@ -1502,6 +1516,8 @@ _ENGLISH_CONTENT = {
     "victory", "victorious", "peace", "rosary", "snows", "sorrows", "mercy",
     # English exonyms in the qualifier slot, which a foreign rule set has no
     # business reading: `of Cologne` came back ツォログネ, `of Prague` プラグエ.
+    "churchyard", "joy", "sorrow", "plant", "martyrs", "gymnasium",
+    "seminary", "convent", "rectory", "parsonage", "presbytery",
     "cologne", "prague", "warsaw", "vienna", "munich", "rome", "naples",
     "florence", "venice", "milan", "lisbon", "seville", "moscow", "kiev",
     "kyiv", "cracow", "krakow", "danzig", "breslau",

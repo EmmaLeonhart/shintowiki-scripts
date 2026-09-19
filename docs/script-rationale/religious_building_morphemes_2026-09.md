@@ -4,7 +4,7 @@ Rationale doc for `shinto-label-generator/religious_building_morphemes.py`,
 `romance_katakana.py`, `plain_latin_katakana.py` and
 `generate_religious_building_multilang.py`.
 
-*Section 7a and the mosque rows of section 10 added 2026-09-19.*
+*Sections 7a, 7b and 7c, and the current-output rows of section 10, added 2026-09-19.*
 
 The problem: 22,548 churches, chapels, mosques and synagogues need ja/zh/ko labels, and the only
 text we have for each is a Commons category name that is usually **not English** — `Kirche Rehden`,
@@ -346,6 +346,90 @@ table-path items run through, so it stays as recorded. Edge cases be damned.
 
 ---
 
+## 7c. Five orthographies, because Emma said all of them (2026-09-19)
+
+Section 7b left **6,627** refused at the dedication gate, and it was no longer a tail of tokens but
+a COUNTRY MAP: Germany 2,964, Poland 1,543, Austria 608, France 607, Russia 517, Czechia 337,
+Netherlands 273. Asked which transliterators to build, and shown the French caveat in the question
+itself, Emma answered ***"All of them, French included."***
+
+Five new families in `plain_latin_katakana.py`. **6,627 -> 2,604**, and ja **6,722 -> 9,080**.
+
+| family | countries | of the 6,627 |
+|---|---|---|
+| `de` | Germany, Austria, Switzerland, Liechtenstein | 3,357 |
+| `pl` | Poland | 748 |
+| `fr` | France, Belgium, Canada (Quebec), Luxembourg | 594 |
+| `ru` | Russia, Ukraine, Belarus — a ROMANISATION, not an orthography | 529 |
+| `cs` | Czechia, Slovakia | 289 |
+
+### What each family needed that the Balkan/Turkic/Malay three did not
+
+- **German** — umlauts (and ö is NOT the Turkish ö: Köln is ケルン, `_pre_turkic_rounded` would give
+  ケョルン), written length, s-voicing, final devoicing, the four things `ch` spells, and a geminate
+  rule the module had never needed. ⚠ German geminates OBSTRUENTS only; Müller is ミュラー.
+- **Polish** — ł is /w/ while w is /v/, so ł parks on a sentinel or Łódź becomes ヴジュ, a different
+  town. A palatal + i + vowel is one syllable (Kościan コシチャン). Final obstruents devoice, and the
+  digraphs devoice as a unit.
+- **Czech/Slovak** — the acutes are LENGTH, which is exactly what the Balkan family does not write.
+  dě/tě/ně are palatals, not d + ye. `ř` reads as a plain r: /r̝/ has no kana at all, and ドヴォルザーク
+  for Dvořák is a convention a village name cannot borrow.
+- **French** — the hard one, and the one the repo had refused on purpose. Three ordering bugs, each
+  producing a plausible-looking word:
+  - **Softness before the mute e is dropped.** Softness is caused by the very letter the mute-e rule
+    deletes. `Vincent` came out ヴァンク, `Hayange` エアン.
+  - **The mute e before the accents are folded.** `é` is not mute; folding first made `Pitié` end in
+    a droppable e.
+  - **The nasal ン on a sentinel.** A nasal is a VOWEL and its n looked exactly like a silent final
+    consonant to the next pass: `Jean` was ジェア.
+  Also: the mute e is PARKED, not deleted, because it is what makes the consonant before it sound
+  (`Dame` ダム, `Sainte` サント); `ch` restores to `sh`; a double consonant is one.
+- **Russian** — reads a TRANSCRIPTION. Stage 1 writes Russian names in the English romanisation, so
+  the digraphs are English conventions for Cyrillic letters (zh = ж, kh = х, shch = щ). Any diacritic
+  at all refuses, because a romanised name is plain ASCII by definition.
+
+### ⭐ The English guard, which Poland forced and which matters more than any one family
+
+Stage 1's labels for Poland are mostly **English descriptions of Polish churches**. The moment `pl`
+existed they were read with Polish rules:
+
+    Blessed Jerzy Popiełuszko chapel   ->  ブレスセト
+    Roman catholic church, Trebišov    ->  ロマン・ツァトホリツ
+    Bar Confederation chapel           ->  ツォンフェデラティオン
+    Ćmielów Castle                     ->  ツァストレ
+    Saint Heribert of Cologne          ->  ツォログネ
+
+Every one is a confident wrong reading of a word whose meaning we know. `_ENGLISH_CONTENT` lists the
+English CONTENT words that survive the frame filters — a frame word is dropped by STOPWORDS or
+TYPE_WORDS and never reaches a transliterator; these would.
+
+⚠ **It refuses the LABEL, not the token.** Dropping the token silently would emit
+ジェジ・ポピエウシュコ礼拝堂 for a chapel the source calls Blessed — less than the source said, which
+is the call `_qualifier_residue` already makes.
+
+### Two things that were quietly wrong all along and only now bit
+
+- **The generator gates on `dedication()` before `render`**, so the first run of the whole
+  transliteration fallback produced BYTE-IDENTICAL output and a skip counter still reading 13,470.
+- **Bare `burg` and `orts` were type words.** `_strip_compound_type` matches any tail of 4+
+  characters, so they ate the end of every -burg place name: `Yekaterinburg Synagogue` read
+  イェカテリン・シナゴーグ, and Magdeburg, Hamburg and Regensburg were all one syllable short. Removing
+  them cost exactly 2 labels, both `Hubertusburg` — a castle whose -burg was being stripped to reach
+  St Hubert.
+
+Also: **one label line per QID per language**. Stage 1 emitted two Commons categories for 6 items,
+and while both were refused that cost nothing; once `de` could read them, QuickStatements would have
+set one item's ja label twice.
+
+### What is left, and it is still a country map
+
+**2,604**, led by Germany 859 (labels German cannot read — digits, foreign words, the English
+guard), Poland 337, Netherlands 258, Spain 232, Moldova 140, Russia 113, Sweden 83, Romania 81.
+Dutch, Romanian, Swedish, Armenian, Finnish, Norwegian and Lithuanian have no family and have not
+been asked about.
+
+---
+
 ## 8. What is refused outright
 
 - **Category-shaped labels** (8 patterns). ~818 of the corpus name a *grouping*, not a building:
@@ -375,25 +459,25 @@ table-path items run through, so it stays as recorded. Edge cases be damned.
 
 ## 10. Current output
 
-| | lines | of which mosque-family | of which READ, not named (7b) |
+| | lines | of which mosque-family | of which READ, not named (7b/7c) |
 |---|---|---|---|
-| ja | 6,722 | 76 | 2,104 |
-| zh | 5,180 | 31 | - (ja only) |
-| ko | 1,970 | 30 | - (ja only) |
+| ja | 9,080 | 76 | 4,462 |
+| zh | 5,434 | 31 | - (ja only) |
+| ko | 2,065 | 30 | - (ja only) |
 | stage-1 English replacements | 16 | - | - |
 
-Figures as of 2026-09-19, after section 7b. Before it: ja 4,618, zh 5,099, ko 1,940. **No existing
-line changed and no QID lost a label**; the 9 ja labels that did change were the type words 7b added
-being dropped from a qualifier (サンツアーリオ, パッローキア).
+Figures as of 2026-09-19, after 7c. Before 7b: ja 4,618, zh 5,099, ko 1,940. **No QID lost a ja
+label at any point**; zh and ko each lost 2, both `Hubertusburg`, explained in 7c.
 
 Zero duplicate labels, zero duplicate QIDs, zero malformed lines, re-checked 2026-09-19 over all
-13,872 lines. The **0 collisions in 250 sampled against live Wikidata** is from 2026-09-18 and was
-NOT re-run against the 2,104 new lines — WDQS is not queried for this and the read API sample costs
+16,579 lines. The **0 collisions in 250 sampled against live Wikidata** is from 2026-09-18 and was
+NOT re-run against the 4,462 new lines — WDQS is not queried for this and the read API sample costs
 a run of its own. All in `shinto-label-generator/quickstatements/`, on the 20/day drip.
 
-**6,627 still refuse at the dedication gate**, and that is now a COUNTRY map rather than a long
-tail of tokens: Germany 2,964, Poland 1,543, Austria 608, France 607, Russia 517, Czechia 337,
-Netherlands 273. None of them has a kana rule set and none is getting one from a guess.
+**2,604 still refuse at the dedication gate**, down from 6,627 before the five families and
+13,470 before the fallback existed. Still a country map: Germany 859, Poland 337, Netherlands 258,
+Spain 232, Moldova 140, Russia 113, Sweden 83, Romania 81. Dutch, Romanian, Swedish, Armenian,
+Finnish, Norwegian and Lithuanian have no family and have not been asked about.
 
 The mosque family went from **0 labels to 137** across 245 items. What it does not reach is the
 Arab-world, French, Bangladeshi and Central Asian slices, which have no rule set and are not getting

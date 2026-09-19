@@ -66,6 +66,15 @@ _Z = "Ż"
 # `wudź` and the `w -> v` rule one pass later turned it into ヴジュ. It is ウッチ,
 # and ロッチ or ヴジュ is a different town.
 _W = "Ŵ"
+# French nasal vowels close with ン, and that ン must survive the silent-final
+# pass: `Jean` is ジャン, and letter-wise the n looked like a silent final and
+# was stripped, leaving ジェア. Same for the ny of `gn` (Bourgogne ブルゴーニュ).
+_N = "Ň"
+_NY = "Ņ"
+# The mute final e, kept as a sentinel rather than deleted. It is what stops the
+# consonant before it from nasalising or falling silent: `Dame` is ダム and not
+# ダン, `Sainte` サント and not サン. Removed after both of those passes.
+_E = "Ə"
 
 _RULES = {
     # Bosnian / Croatian / Serbian-Latin / Macedonian-Latin. Diacritics are the
@@ -116,6 +125,52 @@ _RULES = {
         # which are resolved above. Without it `Clemens` was refused outright.
         ("ce", "tse"), ("ci", "tsi"), ("cy", "tsi"), ("c", "k"),
         (_H, "h"), (_CH, "ch"), (_Z, "z"),
+    ],
+    # French. 594 of the 6,627 (France 556, Belgium and Quebec the rest).
+    #
+    # ⛔ THE ONE EMMA WAS WARNED ABOUT. `romance_katakana.rules_for_country`
+    # refuses French by design and says why in its own docstring: French
+    # orthography is not close to phonemic, and reading it with Italian rules
+    # gave `Chapelle Notre-Dame-de-Pitié de Trouville-sur-Mer` ->
+    # ピーチエ・トロウヴィッレ・スル・メル. Shown that and asked which families
+    # to build, Emma answered "All of them, French included" on 2026-09-19. So
+    # this exists, and what makes it defensible rather than a guess is that the
+    # hard parts are handled EXPLICITLY rather than fallen through:
+    #
+    #   * silent final consonants, which is most of them
+    #   * the four nasal vowel series, which are the thing a letter-wise reader
+    #     gets most wrong
+    #   * the digraph vowels (eau, ou, oi, ai, eu), which are not the sum of
+    #     their letters
+    #
+    # `_pre_french` does all three before the table below runs.
+    # ⚠ Everything French does is order-dependent, so it all lives in
+    # `_pre_french` and this table only puts the sentinels back. Restoring them
+    # earlier is what turned `Chapelle` into サペルル: the `h -> ""` rule deleted
+    # the h of the `sh` the `ch` rule had just written.
+    # ⚠ `_CH` restores to `sh`, not `ch`: French ch is /ʃ/, so Chapelle is
+    # シャペル. Restored as ch the kana grid read it チャペル.
+    # ⛔ `_NY` is NOT restored here. `_Y_VOWEL` runs after this table and would
+    # read the y of `ny` as the vowel /i/ — `Bourgogne` came back ブルゴニ. It is
+    # restored after that pass instead. A lookbehind was tried first and was too
+    # blunt: it also spared the b of Polish `Bydgoszcz`, whose y IS the vowel.
+    "fr": [(_CH, "sh"), (_N, "n"), (_Z, "z")],
+    # Romanised Russian and Ukrainian. 529 of the 6,627.
+    #
+    # ⚠ This family reads a TRANSCRIPTION, not an orthography. Stage 1's labels
+    # write Russian names in the English scholarly-ish romanisation
+    # (`Spaso-Preobrazhensky`, `Verkhnii Startsevo`, `Konevskaya`), so the
+    # digraphs are English conventions for Cyrillic letters and the rules are a
+    # map back to those letters: zh = ж, kh = х, shch = щ, ts = ц.
+    "ru": [
+        ("shch", "sh" + _CH), ("zh", _J), ("kh", "h"), ("ph", "f"),
+        # A consonant + y + vowel is a PALATALISED consonant, not two syllables:
+        # Lyubov is リュボフ and came back ルユボヴ.
+        ("ly", "ry"), ("ny", "ny"), ("ty", "ty"), ("dy", "dy"),
+        ("yo", "yo"), ("ya", "ya"), ("yu", "yu"), ("ye", "ye"), ("yi", "i"),
+        ("ie", "ye"), ("io", "yo"),
+        ("j", "y"),
+        (_J, "j"), (_CH, "ch"),
     ],
     # Polish. 748 of the 6,627. Fully phonemic once the digraphs and the two
     # nasal vowels are resolved, which `_pre_polish` does first.
@@ -207,6 +262,12 @@ _FOREIGN = {
     # Czech/Slovak have no Polish ogoneks or ł, no umlauts except Slovak ä, and
     # no French accents.
     "cs": set("qąęłńśźżçñđıəğşöüßàèêëîïùû"),
+    # French has no háčeks, no Polish letters, no German ß, no Turkish ı.
+    "fr": set("čćšžđłąęńśźżıəğşßñ"),
+    # A romanised name is plain ASCII by definition: any diacritic at all means
+    # the string is not a transcription and this family has no business reading
+    # it. The apostrophe of a soft sign is stripped by `_pre_russian` first.
+    "ru": set("čćšžđłąęńśźżıəğşßñçäöüàâéèêëîïôùûý"),
 }
 
 # Loanword columns the bare kana grid does not carry. Turkish and Malay tu/ti
@@ -239,7 +300,10 @@ _BARE_YOON = {"ny": "ニ", "ry": "リ"}
 # Łódź, both full of final č/ć -- and チュ in German, whose -tsch is a cluster
 # with an audible off-glide: Deutsch is ドイチュ. So the override is per family,
 # not global; set globally it broke German.
-_BARE_YOON_BY_RULES = {"pl": {"ch": "チ"}, "cs": {"ch": "チ"}}
+_BARE_YOON_BY_RULES = {"pl": {"ch": "チ"}, "cs": {"ch": "チ"},
+                       # French -gne is /ɲ/ with an audible off-glide:
+                       # Bourgogne ブルゴーニュ, not ブルゴニ.
+                       "fr": {"ny": "ニュ"}}
 
 # ö and ü after a consonant that HAS a small-y row take it — Göreme is ギョレメ,
 # Büyük is ビュユク. After s/z/t/d/f/v/l and word-initially they do not: Süleyman
@@ -434,6 +498,134 @@ def _pre_czech(word):
     return "".join(out)
 
 
+# ------------------------------------------------------------------ French
+# ⛔ The silent final consonant is the single biggest thing French spelling does
+# that its letters do not say, and it is why `romance_katakana` refuses the
+# language: `Planty` ends in a pronounced y, `Plants` would not sound its s.
+# c, f, l and r ARE sounded finally (the traditional CaReFuL set), and so is a
+# final consonant followed by e.
+# ⛔ The silent final consonant is the single biggest thing French spelling does
+# that its letters do not say, and it is why `romance_katakana` refuses the
+# language. c, f, l and r ARE sounded finally -- the traditional CaReFuL set --
+# and so is any consonant followed by a mute e.
+_FR_SILENT_FINAL = "stdxzpgbn"
+# The four nasal series. Each is a VOWEL, not vowel + consonant.
+_FR_NASALS = [
+    ("ean", "a" + _N),          # Jean is ジャン, not ジェアン
+    ("aim", "a" + _N), ("ain", "a" + _N), ("eim", "a" + _N),
+    ("ein", "a" + _N), ("oin", "wa" + _N), ("ien", "ya" + _N),
+    ("yn", "a" + _N), ("ym", "a" + _N), ("im", "a" + _N), ("in", "a" + _N),
+    ("um", "a" + _N), ("un", "a" + _N),
+    ("am", "a" + _N), ("em", "a" + _N), ("om", "o" + _N),
+    ("an", "a" + _N), ("en", "a" + _N), ("on", "o" + _N),
+]
+# Vowel digraphs, longest first. None is the sum of its letters.
+_FR_VOWELS = [("eau", "o"), ("œu", "u"), ("eu", "u"), ("au", "o"),
+              ("ou", "u"), ("oi", "wa"), ("ai", "e"), ("ei", "e"),
+              ("œ", "e")]
+# ⚠ `ay`/`ey` are a digraph only when NOTHING follows them: in `Hayange` the y
+# is the onset of the next syllable and folding it to e gave アンジュ, losing
+# the first syllable outright.
+_FR_AY = re.compile(r"[ae]y(?![aeiou])")
+_FR_ACCENTS = {"é": "e", "è": "e", "ê": "e", "ë": "e", "à": "a", "â": "a",
+               "î": "i", "ï": "i", "ô": "o", "ù": "u", "û": "u", "ü": "u",
+               "ÿ": "i"}
+_FR_SOFT = [("qu", "k"), ("gu", "g"), ("ch", _CH), ("gn", _NY), ("ph", "f"),
+            ("th", "t"),
+            ("ce", "se"), ("ci", "si"), ("cy", "si"), ("ç", "s"),
+            ("ge", "je"), ("gi", "ji"), ("gy", "ji"),
+            ("c", "k"), ("h", "")]
+_FR_ILL = re.compile(r"([aeiou])ill")
+_FR_S_VOICED = re.compile(r"(?<=[aeiouy])s(?=[aeiouy])")
+_FR_DOUBLE = re.compile(r"([bcdfgklmnprstvz])\1")
+
+
+def _pre_french(word):
+    """Everything French, in the one order that works.
+
+    ⚠ The order IS the design, and three of its steps were wrong before the
+    first sample was read:
+
+      * **Soft c/g before the mute e is dropped.** Softness is caused by the
+        very letter the mute-e rule deletes. `Vincent` came out ヴァンク because
+        `ce` had already become a bare c by the time the c rule ran; `Hayange`
+        came out エア because its -ge had lost its e.
+      * **The mute e before the accents are folded.** `é` is not mute, and
+        folding first made `Pitié` and `Nativité` end in a droppable e.
+      * **The nasal ン on a sentinel.** A nasal is a vowel, and its n looked
+        exactly like a silent final consonant to the pass that follows.
+    """
+    w = unicodedata.normalize("NFC", word).lower()
+    # ⛔ SOFTNESS FIRST. It is caused by the very letter the mute-e rule
+    # deletes: `Hayange` lost the e of its -ge and came out エアン instead of
+    # アヤンジュ, `Vincent` lost the e of its -ce and came out ヴァンク.
+    for a, b in _FR_SOFT:
+        w = w.replace(a, b)
+    # -er and -ez are /e/, and this runs AFTER the soft rules: the g of
+    # `Boulanger` is soft because of that e, and folding first gave ブランゲ.
+    if len(w) > 3 and (w.endswith("er") or w.endswith("ez")):
+        w = w[:-2] + "é"
+    # A final x is silent (-eux is /ø/), and must go before `x -> ks`, which
+    # would otherwise leave a k the silent-final pass cannot remove.
+    if w.endswith("x") and len(w) > 2:
+        w = w[:-1]
+    w = w.replace("x", "ks")
+    # The mute e, which is also what makes the consonant before it SOUND, so it
+    # is parked rather than deleted. ⛔ Checked against the UNFOLDED string: `é`
+    # is not mute.
+    for tail in ("es", "e"):
+        if w.endswith(tail) and len(w) > len(tail) + 1:
+            w = w[: -len(tail)] + _E
+            break
+    w = _FR_ILL.sub(r"\1y", w)
+    w = w.replace("ss", _Z + _Z)
+    w = _FR_S_VOICED.sub("z", w)
+    w = w.replace(_Z + _Z, "s")
+    w = "".join(_FR_ACCENTS.get(c, c) for c in w)
+    for a, b in _FR_VOWELS:
+        w = w.replace(a, b)
+    w = _FR_AY.sub("e", w)
+    # A nasal only nasalises before a consonant or at the end of the word;
+    # `une` and `ami` are not nasal.
+    out, i = [], 0
+    while i < len(w):
+        for a, b in _FR_NASALS:
+            # ⚠ Not nasal before a vowel (`une`, `ami`), before the mute-e
+            # sentinel (`Dame` is ダム), or before a DOUBLED n/m -- `-ienne` is
+            # /jɛn/ and Étienne came out エトヤン.
+            if w.startswith(a, i) and (
+                    i + len(a) >= len(w)
+                    or (w[i + len(a)] not in "aeiouy" + _E
+                        and not (a[-1] in "nm" and w[i + len(a)] in "nm"))):
+                out.append(b)
+                i += len(a)
+                break
+        else:
+            out.append(w[i])
+            i += 1
+    w = "".join(out)
+    while w and w[-1] in _FR_SILENT_FINAL:
+        w = w[:-1]
+    w = w.replace(_E, "")
+    # French writes double consonants and pronounces one: Chapelle シャペル,
+    # Villa ヴィラ. Read letter-wise they came back サペルル and ヴィルラ.
+    return _FR_DOUBLE.sub(r"\1", w)
+
+
+# ----------------------------------------------------------------- Russian
+_RU_SOFT = re.compile(r"['’ʹʺ]")
+# `-sky`, `-skiy`, `-skii` are all the adjective ending -ский, which Japanese
+# writes long: Preobrazhensky プレオブラジェンスキー.
+_RU_SKY = re.compile(r"sk(?:iy|ii|y|i)$")
+
+
+def _pre_russian(word):
+    w = unicodedata.normalize("NFC", word).lower()
+    w = _RU_SOFT.sub("", w)
+    w = _RU_SKY.sub("ski" + _CHOONPU, w)
+    return w
+
+
 _DOUBLE_VOWEL = re.compile(r"([aeiou])\1")
 
 
@@ -449,7 +641,8 @@ _MS_ONSETS = {"br", "bl", "dr", "kr", "kl", "pr", "pl", "tr", "gr", "gl",
 # German really does cluster three deep -- `Strasse` is s-t-r, and after
 # `^s[pt] -> sh` the sh counts as one, so the cap is 3.
 # Slavic really does cluster: `Wszystkich` is w-sz-yst-, `Świętych` is św-.
-_MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3, "de": 3, "pl": 3, "cs": 3}
+_MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3, "de": 3, "pl": 3, "cs": 3,
+              "fr": 3, "ru": 3}
 
 # Digraphs that are ONE consonant by the time the kana grid reads them.
 _DIGRAPHS = ("sh", "ch", "ts", "ny", "ry", "ky", "gy", "hy", "by", "py", "my")
@@ -486,11 +679,16 @@ def _romanise(word, rules):
         w = _pre_polish(w)
     if rules == "cs":
         w = _pre_czech(w)
+    if rules == "fr":
+        w = _pre_french(w)
+    if rules == "ru":
+        w = _pre_russian(w)
     for a, b in _RULES[rules]:
         w = w.replace(a, b)
     if rules == "ms":
         w = _NG.sub("n", w)
     w = _Y_VOWEL.sub("i", w)
+    w = w.replace(_NY, "ny")
     # Turkish ğ is deleted above, which leaves the vowels it separated adjacent:
     # Ağa → aa. Japanese writes that as a long vowel, not as two — アー, not アア.
     w = _DOUBLE_VOWEL.sub(r"\1" + _CHOONPU, w)
@@ -627,6 +825,15 @@ COUNTRY_RULES = {
     "Q36": "pl",    # Poland
     "Q213": "cs",   # Czechia
     "Q214": "cs",   # Slovakia
+    # French-speaking, and romanised East Slavic. Added 2026-09-19 on Emma's
+    # "All of them, French included".
+    "Q142": "fr",   # France
+    "Q31": "fr",    # Belgium
+    "Q16": "fr",    # Canada — the refused labels are all Quebec parishes
+    "Q32": "fr",    # Luxembourg
+    "Q159": "ru",   # Russia
+    "Q212": "ru",   # Ukraine
+    "Q184": "ru",   # Belarus
 }
 
 

@@ -186,8 +186,11 @@ def test_refusals(word, rules):
 def test_an_unlisted_country_refuses_rather_than_defaulting():
     """⛔ `romance_katakana.rules_for_country` defaulted to Italian once and read
     French as Italian across 14,000 items. Nothing here defaults."""
-    assert p.rules_for_country("Q142") is None      # France
-    assert p.rules_for_country("Q159") is None      # Russia
+    # ⚠ France, Germany, Poland and Russia were the examples here until
+    # 2026-09-19, when Emma answered "All of them, French included" and they got
+    # rule sets. The doctrine is unchanged and the countries testing it moved.
+    assert p.rules_for_country("Q34") is None       # Sweden
+    assert p.rules_for_country("Q33") is None       # Finland
     assert p.rules_for_country("Q79") is None       # Egypt
     assert p.rules_for_country(None) is None
     assert p.rules_for_country("Q221") == "bs"      # North Macedonia
