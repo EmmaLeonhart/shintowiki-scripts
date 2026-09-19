@@ -30,6 +30,8 @@ from `ATOMIC_FILES`; they are not queue items.
     skip-check, push, then `AskUserQuestion` as the deliverable.
   - [ ] Run the status-report action once more independently as an end-of-session summary.
 
+- [ ] ⚠ The four religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
+  10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
 - [ ] Religious buildings: no dedication means TRANSLITERATE (Emma, 2026-09-18, *"No dedication
   means transliteration"*). 13,696 of 22,548 are refused at that gate — `Dorfkirche Jördenstorf`,
   `Église du Pras de La Mulatière`, `Santo André de Lourizán`. `romance_katakana` already exists

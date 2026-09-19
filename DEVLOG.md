@@ -1,3 +1,42 @@
+## 2026-09-18 (fifth) — 90/10, temples are Shinto, and the cloud loop is closed
+
+Emma: *"general religious buildings vs Shinto shrines should be 90% Shinto 10% others. Japanese
+Buddhist temples are Shinto."*
+
+**That settles the temple scope question outright.** The 2026-09-17 note said a temple would only
+leave for being Buddhist, an argument she had not accepted; she has now ruled the other way. A
+Japanese Buddhist temple is in scope AS Shinto, and is not part of the 10%.
+
+**The 10% is the general religious-building population** — the ~22,500 churches, chapels, mosques and
+synagogues. Her four rulings on it stand, at a tenth of the effort.
+
+⚠ **The correction was about this session.** Asked why the religious-building ontology kept being
+reported as finished, I went and worked only that population for the rest of the session. The
+`_claim_ids` fix was right; the allocation was not, and that is why the rule is in `CLAUDE.md` rather
+than only here. Check the split before picking up an item, not after.
+
+### Cloud operations: yes, working, and the loop is closed
+
+Asked directly. Measured rather than asserted:
+
+| date | items addressed by the remote routine |
+|---|---|
+| 09-12 | 4 |
+| 09-13 | 4 |
+| 09-14 | 5 |
+| 09-15 | 5 |
+| 09-16 | 5 |
+| 09-17 | 5 |
+| 09-18 | 4 |
+
+Unbroken. The collector ran in CI at 08:19Z today — resolved a `description_enrichment_en` answer
+into `_resolved.log` and refilled `name_in_kana` with eight items — and `remote_queue.json` was
+rebuilt at 08:56Z carrying **1,631**: 954 `name_in_kana`, 400 `en_label`, 247
+`description_enrichment_en`, 29 `ronsha_ranking_review`, 1 `beppyo_p612`.
+
+Routine chewing, collector picking up, queue still holding work. That is the ~5/day the design
+intends and it is not a number to improve.
+
 ## 2026-09-18 (fourth) — "you really think you got a comprehensive ontology of all religious buildings lol"
 
 No, and I had been reporting the pipeline as done instead of measuring it. Emma: *"why are you just

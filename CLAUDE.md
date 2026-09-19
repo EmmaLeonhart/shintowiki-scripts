@@ -608,6 +608,30 @@ population it proposed deleting was 74% of the remaining work.
   not accept. The time figure was doing all the work in my question and it should not have been
   there at all.
 
+### ⭐⭐ 90% SHINTO, 10% EVERYTHING ELSE — and Japanese Buddhist temples ARE Shinto (Emma, 2026-09-18)
+
+> *"general religious buildings vs Shinto shrines should be 90% Shinto 10% others. Japanese Buddhist
+> temples are Shinto"*
+
+**This is the effort split, and it is a ruling about where sessions spend time**, not a filter on any
+one file. It settles the temple question above outright: a Japanese Buddhist temple is **in scope as
+Shinto**, not as the 10%. Do not ask again whether temples belong, and do not frame them as the
+Buddhist exception to a Shinto project.
+
+- **The 10% is the general religious-building population** — the ~22,500 churches, chapels, mosques
+  and synagogues of `generate_religious_building_multilang.py`. Real work, and a tenth of the effort.
+  A session that spends itself on the European-church morpheme tables while shrine and temple
+  backlogs sit is misallocated even when every commit in it is correct.
+- ⚠ **That is what happened on 2026-09-18**, which is why this is written here: asked why the
+  religious-building ontology was being reported as finished, I went and worked *only* that
+  population, and the split arrived as a correction. The fix to `_claim_ids` was right; the session
+  shape was not.
+- **It does not make the religious-building work optional.** Her four rulings that day —
+  transliterate when there is no dedication, emit `P825` from the parsed dedication, take the saint
+  reading from Wikidata's resolved QID, render both dedications — stand, at a tenth of the effort.
+- **Check the split before picking up the next item**, not after. Shrine and temple work first;
+  general religious buildings when they are the tenth.
+
 ### ⛔ DO NOT NAME THE ABANDONED WIKI AGAIN — not even as a blocker (Emma, 2026-09-18)
 
 > *"don't ever fucking mention [it] again"*
