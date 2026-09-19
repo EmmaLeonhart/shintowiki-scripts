@@ -113,6 +113,21 @@ TYPE_WORDS = {
     # is the failure this whole module is built to avoid.
     "església", "esglesia", "gereja", "hermitage", "convento", "convent",
     "abbazia", "badia", "abadia", "abadía", "abbaziale",
+    # ⭐ German compounds, measured 2026-09-19 once `de` started reading whatever
+    # it found in the name slot. Each says WHERE or WHAT KIND, not who for:
+    # Feldkapelle is a field chapel, Wegekapelle a wayside one, Spitalkirche a
+    # hospital church, Kriegergedächtniskapelle a war memorial.
+    # ⛔ The whole compound, never the stem. `_strip_compound_type` matches any
+    # tail of 4+ characters, so a bare "feld" would reduce Bielefeld to "biele"
+    # and a bare "dorf" Ebersdorf to "ebers" -- for all 22,548 items, not just
+    # the German ones.
+    "feldkapelle", "wegekapelle", "wegkapelle", "bergkirche", "bergkapelle",
+    "spitalkirche", "spitalkapelle", "stiftskirche", "stiftskapelle",
+    "dorfkapelle", "gnadenkapelle", "klosterkapelle", "kriegergedächtniskapelle",
+    "hospitalkirche", "hospitalkapelle",
+    "kriegergedächtnis", "kriegerdenkmal", "gemeinde", "filialkirche",
+    "filial", "syrisch", "armenisch", "griechisch", "russisch", "koptisch",
+    "altkatholische", "freikirche", "kapellchen",
     "parroquia", "parróquia", "paróquia", "ermida", "santuario", "santuário",
     "santuari",
 }
@@ -131,6 +146,9 @@ STOPWORDS = {
     # "d'Agnane" into [d, agnane]. Measured: s 56, d 46 -- the two biggest
     # "unknown names" in the corpus were not names at all.
     "s", "d", "l", "dell", "nell", "sull", "all", "quell",
+    # German articles in the dative, which the dedication phrases run through:
+    # `Zu den Heiligen Engeln` was reading `den` as a dedicatee.
+    "den", "dem", "einer", "eine", "ein", "zur", "zum",
     # Roles, not names: "San Pietro Apostolo" is Peter (apostolo 48 in the corpus).
     "apostolo", "apostle", "apostel", "apostol", "evangelista", "evangelist",
     "martire", "martyr", "martir", "confessor", "bispo", "obispo", "vescovo",
@@ -522,6 +540,11 @@ NAMES.update({
     "margherita": NAMES["margaret"],
     "cristo": NAMES["christus"],
     "vito": NAMES["vitus"],
+    # German, added with the `de` family 2026-09-19. Salvator is the Saviour the
+    # table already renders 救世主 under salvador/salvatore; read, it was
+    # 聖ザルファトル. Matthäus folds to `matthaus` and is Matthew.
+    "salvator": NAMES["salvatore"],
+    "matthaus": NAMES["matthew"], "matthäus": NAMES["matthew"],
 })
 
 NAME_PHRASES = {
@@ -758,6 +781,44 @@ DEDICATIONS = {
 
 # A feast or event names WHICH dedication; a Marian title alone only names who it
 # is to. When both appear, the feast is the dedication.
+# ⭐ German spellings of feasts and titles the table already carries (2026-09-19).
+# Exactly the NAMES-variant rule one level up: `Christkönig` is the dedication
+# `christ the king` already renders as 王たるキリスト, and reading it as
+# クリストケニヒ would give one concept two Japanese forms. Registered before
+# SPECIFIC_DEDICATIONS is built so the phrase scan sees them.
+#
+# ⛔ The line, and it is the same one the NAMES block draws: a liturgical FEAST
+# or TITLE has one fixed Japanese form and belongs in this table. A person's NAME
+# does not -- there are thousands of saints, each a separate judgement, and
+# "no dedication means transliteration" is what covers them.
+_GERMAN_DEDICATIONS = {
+    "christkönig": "christ the king",
+    "christuskönig": "christ the king",
+    "trinitatis": "holy trinity",
+    "mariä geburt": "nativity of the virgin",
+    "mariae geburt": "nativity of the virgin",
+    "mariä himmelfahrt": "assumption",
+    "mariae himmelfahrt": "assumption",
+    "christi himmelfahrt": "ascension",
+    # `Hl. Geist` writes the marker, not the adjective, so `heilig geist` cannot
+    # match it. A bare Geist in a church name is always the Holy Spirit.
+    "geist": "holy spirit",
+    "allerheiligen": "all saints",
+    "mariä heimsuchung": "visitation",
+    "mariae heimsuchung": "visitation",
+    "heilig kreuz": "holy cross",
+    "heiligkreuz": "holy cross",
+    "heilig geist": "holy spirit",
+    "heiliggeist": "holy spirit",
+    "heiliger geist": "holy spirit",
+    "herz jesu": "sacred heart",
+    "herz-jesu": "sacred heart",
+    "heiligstes herz jesu": "sacred heart",
+    "maria hilf": "help of christians",
+    "mariahilf": "help of christians",
+    "auferstehungs": "resurrection",
+}
+
 SPECIFIC_DEDICATIONS = {
     "holy trinity", "santissima trinità", "santissima trinita", "holy cross",
     "santa cruz", "vera cruz", "heilig kreuz", "kreuz", "holy spirit",
@@ -803,6 +864,27 @@ SPECIFIC_DEDICATIONS = {
 }
 
 # Generic titles — checked only after every feast has had its chance.
+# The German phrases above are registered here, once both tables exist. A feast
+# is SPECIFIC -- it names which dedication -- so it joins that set and beats the
+# Marian carrier it may ride on, exactly as `mariä himmelfahrt` already does.
+#
+# ⚠ `dedication()` folds accents before matching, so the umlaut spellings are
+# already reachable from the unaccented ones. They are listed anyway because the
+# corpus writes both and a reader of this table should not have to know that.
+DEDICATIONS.update({phrase: DEDICATIONS[src]
+                    for phrase, src in _GERMAN_DEDICATIONS.items()
+                    if phrase not in DEDICATIONS})
+SPECIFIC_DEDICATIONS = SPECIFIC_DEDICATIONS | set(_GERMAN_DEDICATIONS)
+
+# ⚠ A GENERIC title needs a DEDICATIONS row of its own -- the generic branch
+# looks the matched phrase up there, so adding a phrase to the set alone raises
+# KeyError. The German Marian carriers all resolve to plain 聖母.
+DEDICATIONS.update({phrase: DEDICATIONS["our lady"]
+                    for phrase in ("unserer lieben frau", "unser lieben frauen",
+                                   "lieben frau", "lieben frauen", "liebe frau",
+                                   "unsere liebe frau")})
+
+
 GENERIC_DEDICATIONS = {
     "our lady", "madonna", "theotokos", "notre dame", "nosa señora",
     "nossa senhora", "nuestra señora", "virxe", "beata vergine",
@@ -811,6 +893,11 @@ GENERIC_DEDICATIONS = {
     # "Nostra Signora" as a qualifier rather than as the title it is.
     "nostra signora", "blessed virgin", "vergine",
     "frauenkirche", "liebfrauen",
+    # ⭐ German writes the Marian title as a phrase, and only `liebfrauen` was
+    # here: `Zu unserer Lieben Frau` and `Unser Lieben Frauen` both reached the
+    # name slot and were read as ウンゼラー・リーベン・フラウ.
+    "unserer lieben frau", "unser lieben frauen", "lieben frau",
+    "lieben frauen", "liebe frau", "unsere liebe frau",
 }
 
 # --------------------------------------------------------------------------
@@ -849,7 +936,14 @@ def _strip_compound_type(token):
         if len(tail) < 4 or not low.endswith(tail):
             continue
         stem = low[: -len(tail)].rstrip("-­ ")
-        if stem:
+        # ⛔ A stem of one or two letters is a MIS-STRIP, not a name, and the
+        # longest-tail-first loop must keep looking rather than return it.
+        # `Hospitalkirche` ends with the German type word `spitalkirche` and came
+        # back as `ho` -> 聖ホ・ヤコブ; `Ölbergkapelle` ends with `bergkapelle`
+        # and came back `öl`. Falling through to the shorter `kirche`/`kapelle`
+        # gives `hospital` and `ölberg`, which is what those words are.
+        # Measured over the whole corpus: 19 tokens, 11 distinct, all junk.
+        if len(stem) >= 3:
             return stem
     return low
 
@@ -925,7 +1019,7 @@ except ImportError:                                    # pragma: no cover
 _QUALIFIER_LANGS = {"ja"}
 
 
-def qualifier_kana(tokens, rules=None):
+def qualifier_kana(tokens, rules=None, latin_rules=None):
     """Katakana for an unmapped place qualifier, or None.
 
     `rules` picks the source language's orthography and comes from the item's
@@ -936,9 +1030,17 @@ def qualifier_kana(tokens, rules=None):
     Refuses unless EVERY token reads as Romance, so a mixed or non-Romance
     qualifier produces nothing instead of a half-transliteration.
     """
-    if not tokens or _romance_kana is None or rules is None:
+    if not tokens:
         return None
-    return _romance_kana(" ".join(tokens), rules)
+    if rules is not None and _romance_kana is not None:
+        return _romance_kana(" ".join(tokens), rules)
+    # ⭐ 2026-09-19: the branch knew only `romance_katakana`, so
+    # `Kapelle Unserer Lieben Frau ob der Brücke` matched the Marian title, found
+    # a qualifier it could not read, and refused -- in a country that by then had
+    # a perfectly good rule set, just not a Romance one.
+    if latin_rules is not None and _plain_kana is not None:
+        return _plain_kana(" ".join(tokens), latin_rules)
+    return None
 
 
 def _qualifier_residue(folded_label, matched_phrase):
@@ -1005,7 +1107,7 @@ def _unfold_tokens(label, folded_tokens):
     return [originals.get(t, t) for t in folded_tokens]
 
 
-def dedication(label, lang, rules="it"):
+def dedication(label, lang, rules="it", latin_rules=None):
     """The dedication rendered in `lang`, or None if any part is unknown."""
     # Hyphens joined the phrase in the corpus ("Notre-Dame", "Herz-Jesu"), so the
     # phrase lookup saw "notre-dame" and missed. 111 labels turned on this alone.
@@ -1046,7 +1148,8 @@ def dedication(label, lang, rules="it"):
             # refusal stands.
             if lang not in _QUALIFIER_LANGS:
                 return None
-            kana = qualifier_kana(_unfold_tokens(label, residue), rules)
+            kana = qualifier_kana(_unfold_tokens(label, residue), rules,
+                                  latin_rules)
             if not kana:
                 return None
             return kana + "の" + DEDICATIONS[folded[phrase]][lang]
@@ -1515,7 +1618,7 @@ def render(label, p31, lang, place=None, rules=None, latin_rules=None,
         return None
     if p31 in MOSQUE_P31:
         return render_mosque(label, p31, lang, place, latin_rules)
-    ded = dedication(label, lang, rules)
+    ded = dedication(label, lang, rules, latin_rules)
     if not ded:
         # ⛔ "No dedication means transliteration" (Emma, 2026-09-18). Until this
         # existed the refusal WAS the answer, and it was the pipeline's biggest

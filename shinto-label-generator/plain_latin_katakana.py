@@ -50,8 +50,18 @@ from romance_katakana import (          # noqa: F401
 # be eaten by a later rule's input. ž → j → y would turn Žarko into ヤルコ, and
 # č → ch → (c → ts) turned Gradačac into グラダツハツ, a c the ch rule had just
 # written. Both park on a sentinel until the plain-letter rules have run.
+_CHOONPU = "ー"
+
 _J = "Ĵ"
 _CH = "Ĉ"
+# German `ch` is a fricative that the kana grid writes with the h row (Bach バッハ,
+# ich イヒ). It parks on its own sentinel because `ch -> h` would otherwise be
+# re-read by nothing, but `tsch -> ch` writes a ch the same pass must NOT touch.
+_H = "Ĥ"
+# ⛔ German s before a vowel is /z/, and written as a plain `z` it was eaten by
+# German's own `z -> ts` rule one pass later: Salvator came back ツァルファトル,
+# Rosen ロツェン, Sachsen ツァハツェン. Same trick, same reason, as `_CH` and `_J`.
+_Z = "Ż"
 
 _RULES = {
     # Bosnian / Croatian / Serbian-Latin / Macedonian-Latin. Diacritics are the
@@ -76,6 +86,32 @@ _RULES = {
         # h opened its own syllable -- ガザクフ, バクフシ.
         ("kh", "h"),
         ("ğ", ""),
+    ],
+    # German (Germany, Austria, German-speaking Switzerland). Emma, 2026-09-19,
+    # asked which orthographies to build for the refused residue: "All of them,
+    # French included." German is 3,357 of the 6,627 and is the most regular of
+    # them -- the spelling is a near-transparent map onto the sound once the
+    # digraphs and the umlauts are resolved, which `_pre_german` does first.
+    #
+    # ⚠ Order is load-bearing throughout. `tsch` must beat `sch`; `chs` must beat
+    # `ch`; `v -> f` must run before `w -> v` or every W becomes an F.
+    "de": [
+        ("tsch", _CH), ("sch", "sh"),
+        ("chs", "ks"), ("ch", _H),
+        ("ck", "kk"), ("ph", "f"), ("th", "t"), ("qu", "kv"), ("x", "ks"),
+        ("tz", "tts"), ("z", "ts"),
+        ("v", "f"), ("w", "v"), ("j", "y"),
+        # Diphthongs and written length. `eu`/`äu` are /ɔʏ/ (Häuser ホイザー),
+        # `ei`/`ey` are /aɪ/ (Stein シュタイン), `ie` is a long i (Lieben リーベン).
+        ("eu", "oi"), ("ei", "ai"), ("ey", "ai"),
+        ("ie", "i" + _CHOONPU), ("ee", "e" + _CHOONPU),
+        ("aa", "a" + _CHOONPU), ("oo", "o" + _CHOONPU),
+        # A bare `c` is only in loans, and it is /ts/ before a front vowel and
+        # /k/ elsewhere: Cäcilia ツェツィーリア, Clemens クレメンス. Last in the
+        # list so it cannot touch the c of `sch`, `tsch`, `ch` or `ck`, all of
+        # which are resolved above. Without it `Clemens` was refused outright.
+        ("ce", "tse"), ("ci", "tsi"), ("cy", "tsi"), ("c", "k"),
+        (_H, "h"), (_CH, "ch"), (_Z, "z"),
     ],
     # Malay / Indonesian. Fully phonemic; the only digraphs are sy, kh, gh and
     # c. ng before a VOWEL needs no rule — a bare n closes the syllable as ン
@@ -110,9 +146,11 @@ _FOREIGN = {
     "bs": set("qwxyÿäöüßıəğşàâéèêëîïôùûñç"),
     "tr": set("qwäßàâéèêëîïôùûñčćšžđ"),
     "ms": set("xäöüßàâéèêëîïôùûñčćšžđıəğş"),
+    # German has no ç ñ, no Slavic háčeks, no Turkish dotless ı, and no French
+    # accents. Their presence means the word is not German -- the cheap half of
+    # the test; `_onset_ok` is the other half.
+    "de": set("çñčćšžđıəğşàéèêëîïôùûý"),
 }
-
-_CHOONPU = "ー"
 
 # Loanword columns the bare kana grid does not carry. Turkish and Malay tu/ti
 # are /tu/ and /ti/, not /tsu/ and /tʃi/: Saltuk is サルトゥク, Cipaganti is
@@ -121,7 +159,20 @@ _EXTRA = {
     "t": ("タ", "ティ", "トゥ", "テ", "ト"),
     "d": ("ダ", "ディ", "ドゥ", "デ", "ド"),
     "w": ("ワ", "ウィ", "ウ", "ウェ", "ウォ"),
+    # ⛔ `ye` and `yi` are HOLES in the bare grid (`_ROWS["y"]` is "ヤ-ユ-ヨ"),
+    # and a hole returns None for the whole word. German j is /j/, so `Jerusalem`
+    # and `Jördenstorf` -- Emma's own example -- both fell through one.
+    "y": ("ヤ", "イィ", "ユ", "イェ", "ヨ"),
 }
+
+# ⛔ Which doubled consonants become ッ, per family. bs/tr/ms needed none, so the
+# module had no geminate rule at all and `Göttingen` came back ゲトティンゲン.
+#
+# ⚠ German is NOT Italian here: only OBSTRUENTS geminate. Müller is ミュラー and
+# Mannheim マンハイム, not ミュッレル and マンンハイム, while Göttingen really is
+# ゲッティンゲン and Rostock ロストック. So l/m/n/r collapse to a single consonant
+# in `_pre_german` and never reach this set.
+_GEMINATES = {"de": set("ptkbdgsfzh")}
 
 # A palatal with no vowel after it takes the i column, not the u column: the nj
 # of Vrbanjska is ヴルバニスカ, not ヴルバニュスカ.
@@ -147,6 +198,116 @@ def _pre_turkic_rounded(word):
     return "".join(out)
 
 
+# ------------------------------------------------------------------ German
+# Word-initial s before p or t is /ʃ/: Straße シュトラーセ, Spital シュピタール.
+_DE_INITIAL_SP = re.compile(r"^s(?=[pt])")
+# An h AFTER a vowel and not before one is the length mark, not a consonant:
+# Kuhstall クーシュタル, Mühle ミューレ. Before a vowel it is a real h (Ehe エーエ
+# is the length mark case too, but `sehen` is ze-hen and keeps its h).
+_DE_LENGTH_H = re.compile(r"(?<=[aeiou])h(?![aeiou])")
+# s before a vowel is /z/: Salvator ザルヴァトール, Rosen ローゼン. A DOUBLED s
+# is /s/ and is parked first, or `Straße -> strasse` would come back シュトラゼ.
+_DE_S_VOICED = re.compile(r"s(?=[aeiou])")
+
+
+def _de_ch(w):
+    """German `ch` with no vowel after it, which is most of them.
+
+    It takes the colour of the NEAREST PRECEDING VOWEL, and that vowel may be
+    several consonants back — the ch of `Kirch` is coloured by the i of Kir-.
+    A regex with `([aeiou])ch` could not see it and left キルフ.
+
+    ⚠ Front vs back matters and is not the same rule. After e or i it is the
+    ich-Laut and is written ヒ regardless of the vowel: Knecht クネヒト, Licht
+    リヒト. After a, o or u it is the ach-Laut and echoes: Nacht ナハト, Tochter
+    トホター, Bach バハ.
+
+    With NO preceding vowel at all it is the Greek-loan /k/: Christkönig is
+    クリストケーニヒ, not フリストケニク.
+    """
+    out = []
+    i = 0
+    while i < len(w):
+        if not w.startswith("ch", i):
+            out.append(w[i])
+            i += 1
+            continue
+        # `tsch` is one affricate and belongs to the rules table, not here.
+        if w[max(0, i - 2):i] == "ts":
+            out.append("ch")
+            i += 2
+            continue
+        if i + 2 < len(w) and w[i + 2] in "aeiou":
+            out.append("ch")            # a real syllable onset; rules handle it
+            i += 2
+            continue
+        # `chs` is /ks/: Sachsen ザクセン, Fuchs フクス. Handled here rather than
+        # in the rules table because this pass consumes every ch before the table
+        # is reached, and without it Sachsen came back ザハゼン.
+        #
+        # ⚠ That s may already be the voiced-s sentinel — s-voicing runs first and
+        # the s of Sachsen is followed by e. It is /s/ here, so the k takes the s
+        # with it and the sentinel never survives to be read as ゼ.
+        if i + 2 < len(w) and w[i + 2] in ("s", _Z):
+            out.append("ks")
+            i += 3
+            continue
+        prev = next((c for c in reversed(w[:i]) if c in "aeiou"), None)
+        if prev is None:
+            out.append("k")
+        elif prev in "ei":
+            out.append("hi")
+        else:
+            out.append("h" + prev)
+        i += 2
+    return "".join(out)
+# Final -ig is /ɪç/: König ケーニヒ. Devoicing would otherwise make it ク.
+_DE_FINAL_IG = re.compile(r"ig$")
+# Only obstruents geminate in German loans; l/m/n/r collapse. Müller ミュラー.
+_DE_COLLAPSE = re.compile(r"([lmnr])\1")
+# Final -er is /ɐ/, written アー: Wanderer ヴァンデラー, Peter ペター.
+_DE_FINAL_ER = re.compile(r"er$")
+# A final obstruent devoices: Wald ヴァルト, Berg ベルク, Jakob ヤーコプ. This is
+# Auslautverhärtung and it is exceptionless in the standard language.
+_DE_FINAL_DEVOICE = {"b": "p", "d": "t", "g": "k"}
+_SS = "Ŝ"
+
+
+def _pre_german(word):
+    """Umlauts, written length, s-voicing and final devoicing.
+
+    ⚠ German ö is NOT the Turkish ö. Köln is ケルン and Göttingen ゲッティンゲン,
+    so it reads as a plain e; `_pre_turkic_rounded` would have given ケョルン.
+    ü is the one that takes the small-y row, and only after a consonant that can
+    host it: München ミュンヘン but Übersee ウーバーゼー.
+    """
+    w = unicodedata.normalize("NFC", word).lower()
+    w = w.replace("ß", _SS)
+    w = w.replace("ss", _SS)
+    w = w.replace("ä", "e").replace("ö", "e")
+    out = []
+    for i, ch in enumerate(w):
+        if ch != "ü":
+            out.append(ch)
+            continue
+        prev = w[i - 1] if i else ""
+        out.append("yu" if prev in _YOON_HOSTS else "u")
+    w = "".join(out)
+    w = _DE_INITIAL_SP.sub("sh", w)
+    w = _DE_S_VOICED.sub(_Z, w)
+    w = w.replace(_SS, "ss")
+    w = _DE_FINAL_IG.sub("ihi", w)
+    w = _de_ch(w)
+    w = _DE_LENGTH_H.sub(_CHOONPU, w)
+    w = _DE_COLLAPSE.sub(r"\1", w)
+    w = _DE_FINAL_ER.sub("a" + _CHOONPU, w)
+    # ⚠ Final -ng is the velar nasal, not a devoicing g: Wolfgang is
+    # ヴォルフガング. Auslautverhärtung applies to the stop, and /ŋ/ is not one.
+    if w and w[-1] in _DE_FINAL_DEVOICE and not w.endswith("ng"):
+        w = w[:-1] + _DE_FINAL_DEVOICE[w[-1]]
+    return w
+
+
 _DOUBLE_VOWEL = re.compile(r"([aeiou])\1")
 
 
@@ -159,7 +320,9 @@ _DOUBLE_VOWEL = re.compile(r"([aeiou])\1")
 # only refuses the extreme case.
 _MS_ONSETS = {"br", "bl", "dr", "kr", "kl", "pr", "pl", "tr", "gr", "gl",
               "sp", "st", "sk", "sw", "sl", "sn", "sm"}
-_MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3}
+# German really does cluster three deep -- `Strasse` is s-t-r, and after
+# `^s[pt] -> sh` the sh counts as one, so the cap is 3.
+_MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3, "de": 3}
 
 # Digraphs that are ONE consonant by the time the kana grid reads them.
 _DIGRAPHS = ("sh", "ch", "ts", "ny", "ry", "ky", "gy", "hy", "by", "py", "my")
@@ -190,6 +353,8 @@ def _romanise(word, rules):
         return None
     if rules == "tr":
         w = _pre_turkic_rounded(w)
+    if rules == "de":
+        w = _pre_german(w)
     for a, b in _RULES[rules]:
         w = w.replace(a, b)
     if rules == "ms":
@@ -220,9 +385,14 @@ def to_katakana(word, rules):
         return None
     out = []
     i = 0
+    geminates = _GEMINATES.get(rules, frozenset())
     while i < len(w):
         if w[i] == _CHOONPU:
             out.append(_CHOONPU)
+            i += 1
+            continue
+        if (w[i] in geminates and i + 1 < len(w) and w[i] == w[i + 1]):
+            out.append("ッ")
             i += 1
             continue
         matched = False
@@ -315,6 +485,12 @@ COUNTRY_RULES = {
     "Q833": "ms",   # Malaysia
     "Q921": "ms",   # Brunei
     "Q334": "ms",   # Singapore
+    # German-speaking. 3,357 of the 6,627 religious buildings still refused at
+    # the dedication gate on 2026-09-19 are these three.
+    "Q183": "de",   # Germany
+    "Q40": "de",    # Austria
+    "Q39": "de",    # Switzerland
+    "Q347": "de",   # Liechtenstein
 }
 
 

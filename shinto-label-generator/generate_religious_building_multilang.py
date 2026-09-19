@@ -218,9 +218,15 @@ def build(rows, cache):
     """{lang: [qs_line]} plus a reason counter."""
     out = {lg: [] for lg in LANGS}
     seen = {lg: set() for lg in LANGS}
+    # ⛔ ONE label line per QID per language. Stage 1 emitted two Commons
+    # categories for 6 items -- Q49147232 is both `Engels-Skulptur` and
+    # `Wandgrabanlage Richter` -- and while both were refused that cost nothing.
+    # Once `de` could read them, both rendered and QuickStatements would have set
+    # the item's ja label twice, the second winning arbitrarily.
+    seen_qid = {lg: set() for lg in LANGS}
     reasons = {"no P31 mapping": 0, "no P131": 0, "category-shaped": 0,
                "unknown dedication": 0, "no place label": 0, "duplicate": 0,
-               "not named as a mosque": 0}
+               "not named as a mosque": 0, "second label for one item": 0}
     # Not a skip reason — how many of the emitted ja labels came from the
     # transliteration fallback rather than the table. Reported separately so the
     # two paths stay countable.
@@ -249,7 +255,7 @@ def build(rows, cache):
             if not morph.mosque_parse(label)[4]:
                 reasons["not named as a mosque"] += 1
                 continue
-        elif morph.dedication(label, "ja", rules) is None:
+        elif morph.dedication(label, "ja", rules, latin_rules) is None:
             # ⛔ This gate runs BEFORE `render`, so the transliteration fallback
             # that lives inside `render` has to be asked here too — otherwise it
             # never fires at all, which is what the first run of it did: the
@@ -280,7 +286,11 @@ def build(rows, cache):
             if rendered in seen[lg]:
                 reasons["duplicate"] += 1
                 continue
+            if qid in seen_qid[lg]:
+                reasons["second label for one item"] += 1
+                continue
             seen[lg].add(rendered)
+            seen_qid[lg].add(qid)
             out[lg].append('%s|L%s|"%s"' % (qid, lg, rendered))
     reasons["(of which READ, not named)"] = read_not_named
     return out, reasons

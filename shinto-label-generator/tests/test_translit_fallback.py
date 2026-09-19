@@ -140,13 +140,17 @@ def test_an_unlisted_country_refuses_rather_than_guessing():
     """
     import romance_katakana
     import plain_latin_katakana
-    for country in ("Q183", "Q142"):          # Germany, France
+    # ⚠ Germany and France were the examples here until 2026-09-19, when Emma
+    # answered "All of them, French included" and they got rule sets. The
+    # doctrine is unchanged and the countries testing it moved: Sweden, Finland
+    # and Armenia have none and are not getting one from a guess.
+    for country in ("Q34", "Q33", "Q399"):    # Sweden, Finland, Armenia
         assert romance_katakana.rules_for_country(country) is None
         assert plain_latin_katakana.rules_for_country(country) is None
-    assert m.render("Dorfkirche Jördenstorf", CHURCH, "ja",
-                    place="テッセン", rules=None) is None
-    assert m.render("Église du Pras de La Mulatière", CHURCH, "ja",
-                    place="リヨン", rules=None) is None
+    assert m.render("Björkskatakyrkan", CHURCH, "ja",
+                    place="ルレオ", rules=None) is None
+    assert m.render("Surb Astvatsatsin Church", CHURCH, "ja",
+                    place="エレバン", rules=None) is None
 
 
 def test_all_or_nothing():
