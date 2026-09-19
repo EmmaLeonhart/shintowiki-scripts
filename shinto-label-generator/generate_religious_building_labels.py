@@ -67,6 +67,33 @@ CLASSES = [
     "Q34627",    # synagogue
 ]
 
+# The temple family, added 2026-09-18. Emma: *"Temples that aren't Japanese go in the
+# 10%."* So the line is NATIONALITY, not religion — a Japanese Buddhist temple is Shinto
+# and belongs to the 90% pipeline (generate_temple_en_labels.py); a mandir, a wat or a
+# gurdwara joins the church/mosque/synagogue population here.
+#
+# ⛔ A FLAT LIST OF QIDS IS THE WRONG SHAPE HERE, and the first draft of this was one.
+# Emma: *"my assumption is that the p31 subclasses are treated as their own subclasses
+# anyway with divergent logic."* The five classes above are siblings and enumerate
+# correctly; the temple tree does not. Q44539 `temple` has a real subclass hierarchy under
+# it — Hindu temple, Buddhist temple, wat, gurdwara, Jain temple, temple of Confucius —
+# and enumerating twelve of them by hand means every subclass nobody typed out is silently
+# out of scope, with no symptom. So the SELECTION walks `P279*` from the root, and the
+# DIVERGENT part lives where it belongs: `religious_building_morphemes.TYPES` gives each
+# subclass its own type word, and a subclass with no entry emits nothing rather than
+# inheriting a word that would be wrong for it.
+#
+# ⚠ WHAT THIS IS WORTH, measured 2026-09-18 rather than assumed. At this stage's gate —
+# has a Commons category, has no English label — the enumerated temple family was 534
+# items, 210 of them Japanese Buddhist. The class list is not what limits it; the GATE is.
+# Hindu temple is 16,587 items on Wikidata and 5 of them pass, because an Indian temple
+# article is titled in English and the item already carries an English label. 6,788 Hindu
+# temples have an en label, no ja label and a P131 place — reachable by stage 2 and
+# invisible to it, because stage 2 reads only this stage's output file. That is a real and
+# separate gap; it is recorded in DEVLOG.md 2026-09-18 and is not this query's job.
+TEMPLE_ROOT = "Q44539"      # temple — walked with P279*, not enumerated
+TEMPLE_COUNTRY_EXCLUDED = "Q17"   # Japan: those temples are the 90% pipeline's
+
 _BRACKETS = re.compile(r"\s*[（(\[][^）)\]]*[）)\]]\s*$")
 
 
@@ -119,14 +146,23 @@ def _wdqs(query):
 
 
 def fetch_candidates(limit=None):
-    """[(qid, commons)] for buildings of CLASSES that have a Commons category but
-    no English label. Paged to stay under WDQS result caps."""
+    """[(qid, commons)] for buildings of CLASSES, plus the whole P279* temple tree, that have a Commons
+    category but no English label. Paged to stay under WDQS result caps.
+
+    The temple branch is a UNION rather than one VALUES list because only it carries the
+    country filter: a temple in Japan is the 90% pipeline's, a church in Japan is ours."""
     out, offset, page = [], 0, 4000
     values = " ".join("wd:" + c for c in CLASSES)
     while True:
         q = f"""SELECT ?item ?commons WHERE {{
-          VALUES ?cls {{ {values} }}
-          ?item wdt:P31 ?cls ; wdt:P373 ?commons .
+          {{
+            VALUES ?cls {{ {values} }}
+            ?item wdt:P31 ?cls ; wdt:P373 ?commons .
+          }} UNION {{
+            ?cls wdt:P279* wd:{TEMPLE_ROOT} .
+            ?item wdt:P31 ?cls ; wdt:P373 ?commons .
+            FILTER NOT EXISTS {{ ?item wdt:P17 wd:{TEMPLE_COUNTRY_EXCLUDED} }}
+          }}
           FILTER NOT EXISTS {{ ?item rdfs:label ?l . FILTER(LANG(?l)="en") }}
         }} ORDER BY ?item LIMIT {page} OFFSET {offset}"""
         rows = _wdqs(q)

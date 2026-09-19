@@ -50,6 +50,27 @@ TYPES = {
     "Q160742":  {"en": "Abbey",      "ja": "修道院", "zh": "修道院", "ko": "수도원"},
     "Q44613":   {"en": "Monastery",  "ja": "修道院", "zh": "修道院", "ko": "수도원"},
     "Q163687":  {"en": "Basilica",   "ja": "バシリカ", "zh": "宗座圣殿", "ko": "바실리카"},
+
+    # ── The temple family (2026-09-18) ──────────────────────────────────────────
+    # Emma: "Temples that aren't Japanese go in the 10%." Selected by
+    # generate_religious_building_labels.TEMPLE_CLASSES, which excludes P17=Japan —
+    # a Japanese Buddhist temple is Shinto and belongs to the 90% pipeline.
+    #
+    # Transliterated, not translated, which is what the table already does: モスク and
+    # シナゴーグ above are loanwords, not 礼拝所. So a wat stays a wat and does not
+    # collapse into 寺院, and the classes Wikidata keeps apart stay apart.
+    "Q44539":   {"en": "Temple",     "ja": "神殿",   "zh": "神殿",   "ko": "신전"},
+    "Q5393308": {"en": "Temple",     "ja": "仏教寺院", "zh": "佛寺",   "ko": "불교 사원"},
+    "Q842402":  {"en": "Temple",     "ja": "ヒンドゥー教寺院", "zh": "印度教寺廟", "ko": "힌두교 사원"},
+    "Q337986":  {"en": "Gurdwara",   "ja": "グルドワーラー", "zh": "謁師所", "ko": "구르드와라"},
+    "Q2613100": {"en": "Temple",     "ja": "ジャイナ教寺院", "zh": "耆那教寺廟", "ko": "자이나교 사원"},
+    "Q427287":  {"en": "Wat",        "ja": "ワット", "zh": "瓦寺",   "ko": "왓"},
+    "Q199451":  {"en": "Pagoda",     "ja": "仏塔",   "zh": "塔",     "ko": "탑"},
+    "Q180987":  {"en": "Stupa",      "ja": "仏塔",   "zh": "佛塔",   "ko": "탑"},
+    "Q1151612": {"en": "Temple",     "ja": "道観",   "zh": "道觀",   "ko": "도관"},
+    "Q618618":  {"en": "Temple",     "ja": "孔子廟", "zh": "孔廟",   "ko": "공자묘"},
+    "Q2680845": {"en": "Temple",     "ja": "廟",     "zh": "廟",     "ko": "묘"},
+    "Q115278":  {"en": "Fire Temple", "ja": "拝火神殿", "zh": "拜火廟", "ko": "배화교 사원"},
 }
 
 # --------------------------------------------------------------------------
