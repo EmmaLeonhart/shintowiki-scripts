@@ -195,6 +195,44 @@ def test_a_unique_municipality_needs_no_prefecture():
     assert len(lines) == 1
 
 
+def test_an_unplaced_item_takes_a_nationally_unique_name():
+    """No P131 means no municipality to match on and no claim to contradict, so a name
+    the registry holds exactly once is an unambiguous identification."""
+    by_name = {gen.fold_name("福谷寺"): [("ウキガイジ", "1234567890123")]}
+    lines, stats = gen.build_unplaced([("Q30", "福谷寺")], by_name)
+    assert lines == ['Q30|P1814|"うきがいじ"|S854|"%s"' % (gen.REGISTRY % "1234567890123")]
+    assert stats["unplaced: emitted"] == 1
+
+
+def test_an_unplaced_item_with_a_repeated_name_is_refused():
+    by_name = {gen.fold_name("少林寺"): [("ショウリンジ", "1"), ("ショウリンジ", "2")]}
+    lines, stats = gen.build_unplaced([("Q31", "少林寺")], by_name)
+    assert lines == []
+    assert stats["unplaced: name is not nationally unique"] == 1
+
+
+def test_an_unplaced_item_absent_from_the_registry_is_refused():
+    lines, stats = gen.build_unplaced([("Q32", "汕頭神社")], {})
+    assert lines == []
+    assert stats["unplaced: name absent from the registry"] == 1
+
+
+def test_an_unplaced_item_still_needs_its_corporate_number():
+    by_name = {gen.fold_name("有金寺"): [("ユウキンジ", "")]}
+    lines, stats = gen.build_unplaced([("Q33", "有金寺")], by_name)
+    assert lines == []
+    assert stats["unplaced: no corporate number — would be uncited"] == 1
+
+
+def test_the_unique_name_rule_is_not_applied_to_a_placed_item():
+    """A nationally unique name in a DIFFERENT municipality is a conflict with an
+    explicit P131, not evidence. build() must refuse it however unique the name is."""
+    index, ambiguous = idx([("豊田市", "平勝寺", "ヘイショウジ", "1234567890123")])
+    lines, stats = gen.build([("Q34", "平勝寺", "岡崎市")], index, ambiguous)
+    assert lines == []
+    assert stats["no match in the registry"] == 1
+
+
 def test_the_shipped_file_holds_no_katakana_and_every_line_is_referenced():
     path = os.path.join(QS_DIR, "nta_kana.txt")
     if not os.path.exists(path):

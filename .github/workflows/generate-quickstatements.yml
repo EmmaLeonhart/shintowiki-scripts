@@ -166,7 +166,10 @@ jobs:
       - name: Kana from the National Tax Agency registry
         working-directory: modern-quickstatements
         continue-on-error: true
-        run: python generate_nta_kana.py
+        # --refresh re-queries WDQS. Locally the target rows are cached (the two queries
+        # are expensive and WDQS is frequently 503/504), but CI must never work from a
+        # stale cache or the file would stop noticing items that gained a label.
+        run: python generate_nta_kana.py --refresh
 
       - name: Drip-feed 20 label proposals from the label-generator subtree
         working-directory: modern-quickstatements

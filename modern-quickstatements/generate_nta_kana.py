@@ -87,6 +87,11 @@ import wdqs_transport  # noqa: E402
 HERE = os.path.dirname(os.path.abspath(__file__))
 INDEX = os.path.join(_uar, "shinto_miraheze", "nta_religious_readings.json")
 OUT = os.path.join(HERE, "nta_kana.txt")
+# The two target queries are expensive and WDQS is frequently 503/504. The rows are
+# cached so a re-run — iterating on the matching rules, which is most of the work — costs
+# nothing and does not add load to an endpoint this repo already has a no-hammering rule
+# about. --refresh re-queries; CI runs with --refresh so the file never goes stale.
+CACHE = os.path.join(HERE, "nta_kana_targets.json")
 ENDPOINT = "https://query-main.wikidata.org/sparql"
 REGISTRY = "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=%s"
 
@@ -104,6 +109,29 @@ SELECT ?item ?ja ?cityja ?prefja WHERE {
     ?item wdt:P131+ ?pref . ?pref wdt:P31 wd:Q50337 .
     ?pref rdfs:label ?prefja . FILTER(LANG(?prefja)="ja")
   }
+}"""
+
+# Pass 2: items with NO P131 at all. There is no municipality to match on and no
+# conflicting claim to override, so the only honest key left is a name that occurs
+# EXACTLY ONCE in the whole 34,050-entry national registry.
+#
+# Measured 2026-09-18 over all 245 such items: 32 have a nationally unique name, 132 have
+# a name the registry holds more than once (refused — nothing says which), and 81 are
+# absent. What they do NOT have is any other locator: 3 carry coordinates, 1 carries an
+# address, and of the 42 with a country, 16 are overseas colonial shrines (China, Taiwan,
+# Korea, the USA) that can never appear in a Japanese registry at all.
+#
+# ⚠ This rule is deliberately NOT applied to items that HAVE a P131. There, a name that
+# is nationally unique but sits in a different municipality is a CONFLICT between the
+# registry and an explicit Wikidata claim, and resolving it by preferring the registry
+# would be overriding a statement on the strength of a guess.
+QUERY_NO_P131 = """
+SELECT ?item ?ja WHERE {
+  { ?item wdt:P31 wd:Q845945 } UNION { ?item wdt:P31 wd:Q5393308 }
+  ?item rdfs:label ?ja . FILTER(LANG(?ja)="ja")
+  FILTER NOT EXISTS { ?item rdfs:label ?en . FILTER(LANG(?en)="en") }
+  FILTER NOT EXISTS { ?item wdt:P1814 ?k }
+  FILTER NOT EXISTS { ?item wdt:P131 ?c }
 }"""
 
 # Municipality names that are NOT unique nationally -- 北区, 中央区, 伊達市, 南部町. Derived
@@ -254,35 +282,92 @@ def build(rows, index, ambiguous_cities=frozenset()):
     return lines, stats
 
 
-def fetch_population():
-    rows = wdqs_transport.query_csv(QUERY, endpoint=ENDPOINT, timeout=300, post=True)
+def load_by_name(path=None):
+    """{folded name: [(kana, houjin)]} over the whole registry, municipality ignored."""
+    with io.open(path or INDEX, encoding="utf-8") as fh:
+        raw = json.load(fh)
+    by = collections.defaultdict(list)
+    for key, rec in raw.items():
+        name = key.split("|", 2)[2]
+        by[fold_name(name)].append((rec["kana"], rec["houjin"]))
+    return by
+
+
+def build_unplaced(rows, by_name):
+    """(lines, stats) for items with no P131, keyed on a nationally unique name."""
+    lines = []
+    stats = collections.Counter()
+    for qid, ja in rows:
+        cands = by_name.get(fold_name(ja), [])
+        if not cands:
+            stats["unplaced: name absent from the registry"] += 1
+            continue
+        if len(cands) > 1:
+            stats["unplaced: name is not nationally unique"] += 1
+            continue
+        kana, houjin = cands[0]
+        if not houjin:
+            stats["unplaced: no corporate number — would be uncited"] += 1
+            continue
+        full, why = complete(ja, kana)
+        if full is None:
+            stats["unplaced: ambiguous tail, skipped"] += 1
+            continue
+        hira = to_hiragana(full)
+        if re.search(r"[ァ-ヶ]", hira):
+            stats["unplaced: still katakana after conversion"] += 1
+            continue
+        lines.append('%s|P1814|"%s"|S854|"%s"' % (qid, hira, REGISTRY % houjin))
+        stats["unplaced: emitted"] += 1
+    return lines, stats
+
+
+def fetch_rows(query, keys):
+    rows = wdqs_transport.query_csv(query, endpoint=ENDPOINT, timeout=300, post=True)
     out = []
     for r in rows:
-        # An OPTIONAL that did not bind comes back as a present key holding None, so
-        # `.get(k, "")` returns None rather than the default -- which is how projecting
-        # ?prefja turned every row's ja label into None on the first run.
         v = {k: ((r[k].get("value") if isinstance(r[k], dict) else r[k]) or "") for k in r}
-        out.append((v.get("item", "").rsplit("/", 1)[-1], v.get("ja", ""),
-                    v.get("cityja", ""), v.get("prefja", "")))
+        out.append(tuple([v.get("item", "").rsplit("/", 1)[-1]] + [v.get(k, "") for k in keys]))
     return out
+
+
+def targets(refresh):
+    """(placed, unplaced) target rows, from the cache unless --refresh."""
+    if not refresh and os.path.exists(CACHE):
+        with io.open(CACHE, encoding="utf-8") as fh:
+            d = json.load(fh)
+        return ([tuple(r) for r in d["placed"]], [tuple(r) for r in d["unplaced"]])
+    placed = fetch_rows(QUERY, ["ja", "cityja", "prefja"])
+    unplaced = fetch_rows(QUERY_NO_P131, ["ja"])
+    with io.open(CACHE, "w", encoding="utf-8", newline="\n") as fh:
+        json.dump({"placed": placed, "unplaced": unplaced}, fh, ensure_ascii=False)
+    return placed, unplaced
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=OUT)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--refresh", action="store_true",
+                    help="re-query WDQS instead of using the cached target rows")
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
     index, ambiguous = load_index()
-    rows = fetch_population()
+    rows, unplaced = targets(args.refresh)
     print("registry: %d (municipality, name) keys; %d municipality names are not unique "
           "nationally" % (len(index), len(ambiguous)))
     print("targets:  %d shrines/temples with no en label, no P1814, and a P131" % len(rows))
 
     lines, stats = build(rows, index, ambiguous)
+
+    print("unplaced: %d shrines/temples with no P131 at all" % len(unplaced))
+    more, ustats = build_unplaced(unplaced, load_by_name())
+    lines += more
+    stats.update(ustats)
+
     for reason, n in stats.most_common():
-        print("  %-42s %5d" % (reason, n))
+        print("  %-52s %5d" % (reason, n))
 
     if args.dry_run:
         for ln in lines[:15]:
