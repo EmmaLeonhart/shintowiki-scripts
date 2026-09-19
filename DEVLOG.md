@@ -1,3 +1,93 @@
+## 2026-09-18 (seventh) — accelerating the English labels, and the registry that unblocks them
+
+Emma reversed the deliberate-slowness rule for this work on purpose: *"I do want to accelerate it
+... get this to as close to zero as possible through local agentic work and then after we will let
+the cloud operations clean up the residuals as they develop"*, on the view that cloud operations may
+not be resilient as long-term things. She named the reversal herself; it is not inferred.
+
+### What the queue actually holds, against what it looks like
+
+| category | work-files staged | actually needs doing |
+|---|---|---|
+| `name_in_kana` | 954 | **66** |
+| `en_label` | 400 (capped) | **~18,065** |
+| `description_enrichment_en` | 247 | 2,278 collision groups |
+| `ronsha_ranking_review` | 29 | 29 |
+
+**The 954 staged kana work-files are ~90% dead.** The builder's own `--stats` reports 66 live
+targets; sampling 100 of the staged files, **95 now carry an English label**, which by the
+2026-08-24 rule means they are finished and should never have been in that queue.
+
+### 39 English labels, answered by reading the source
+
+Every reading came out of the jawiki lead's furigana — 栄養寺（えいようじ） -> `Eiyo-ji Temple`,
+波多岐神社（はたきじんじゃ） -> `Hataki Shrine`. 0 rejected by the collector's validator. Two
+judgement calls: `Gen'yu-ji Temple` for げんゆうじ, so ん does not read as *ge-nyu*; and
+`Akaidake Yakushi Temple` for 閼伽井嶽薬師, whose 薬師 is not one of the convention's accepted
+suffixes — emitted rather than skipped.
+
+That exhausted the channel: only **23 of 400** work-files have a jawiki article at all.
+
+### Web research does not work here, and the evidence is specific
+
+Of 50 sampled pending items, **39 carry no source of any kind** — no official site, no Commons
+category, no Kokugakuin id, no ja alias. Web search fills that gap with the *search engine's own
+inference*, and two were checked against their claimed sources and were in neither: `わせんじ` for
+和泉寺 cited a jawiki page that does not exist, and `なかはらじ` for 中原寺 cited tesshow.jp, which
+lists that temple in kanji with no reading anywhere on the page. Both would have landed on Wikidata
+as facts. The work-files forbid exactly this.
+
+### The National Tax Agency registry, which does work
+
+A 宗教法人's フリガナ is the one it registered with the state, and this repo already treats that as
+authoritative — 4,764 P1814 statements cite it and Emma's ruling is that an NTA-cited reading is
+preserved while an uncited one is corrected.
+
+`shinto_miraheze/fetch_nta_religious_readings.py` builds the index: **34,050 readings with their
+corporate numbers**, from the per-prefecture bulk CSVs. The download is a session POST, not a link —
+fetch the index for a cookie, then POST `selDlFileNo` + `event=download`; without the cookie the
+server returns the HTML page as `application/octet-stream` with a 200.
+
+`generate_nta_kana.py` matches and emits `Q…|P1814|"<hiragana>"|S854|"<that corporation's registry
+page>"` into `nta_kana.txt`, registered in ATOMIC_FILES and wired into
+`generate-quickstatements.yml`. **1,401 readings** against 17,397 targets. Those feed
+`generate_kana_en_labels.py`, which turns kana into an English label with no judgement at all — the
+bottleneck was never the romanization rule, it was that the items carry no kana.
+
+### Five bugs, each of which looked fine from the outside
+
+1. **The prefecture→file mapping paired names to download ids positionally** and mapped 北海道 to
+   青森県's file. Every prefecture was off by one region; the run returned 0 readings and exited 0.
+2. **The first index dropped the corporate number**, so every reading would have been emitted
+   UNCITED — and an uncited reading is one the next pass is entitled to "correct".
+   `generate_lost_shrine_creates.py` records that exact near miss on 近殿神社's ちかどのじんしゃ.
+3. **NTA writes towns as 郡+町 and wards as 市+区** where Wikidata labels the bare unit. 87 of 350
+   first-pass misses were this alone.
+4. **Old-form kanji.** The registry records the legally registered name, usually pre-1949: 淨嚴寺,
+   圓行寺, 寳藏院. Not a tail — 藏 appears 292 times in the index, 淨 240, 寳 224, 嚴 165. Folding
+   both sides gained 111 and correctly turned 龍源寺/竜源寺 pairs into refusals.
+5. ⚠ **The match key had no prefecture**, and 34 municipality names are not unique nationally — 北区,
+   中央区, 伊達市, 南部町. **106 of 1,433 emitted matches sat on one**, and when the prefecture was
+   added, **27 of them disagreed outright**: those were wrong readings that nothing in the output
+   would have looked odd about. Two sub-bugs inside that fix: `?prefja` was bound in the OPTIONAL
+   but never projected in the SELECT, and an unbound OPTIONAL comes back as a present key holding
+   None, so `.get(k, "")` returned None and turned every row's ja label into None.
+
+### What is left, measured rather than guessed
+
+I had said "~13,000 items with no P131 or no ja label". That was wrong by an order of magnitude:
+
+  * **245** have no `P131` — possibly reachable through the registry's address field.
+  * **804** have no ja label — nothing to match a name against. Out of reach this way.
+  * **729** have kana and still no en label, of which the shrine worklist shows 371 of 389 already
+    handled and staged in `kana_en_labels.txt`. Not a gap.
+  * **15,964** have no registry match. 9,766 of those have the name in the registry under a
+    different municipality — 少林寺, 真福寺, 大雲寺 are common temple names and those are genuinely
+    different buildings, correctly rejected. The rest simply have no furigana filed, which is
+    optional on registration. That is the ceiling of this source, not a defect in the matching.
+
+⚠ Generating is not clearance to submit. `wikidata_editing_lockout.state` gates the writes.
+
 ## 2026-09-18 (sixth) — the P958 corrections can run now, in two channels
 
 `generate_p958_corrections.py` emitted, for every correction, the pair

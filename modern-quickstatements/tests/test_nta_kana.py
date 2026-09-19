@@ -32,8 +32,8 @@ import generate_nta_kana as gen  # noqa: E402
 KATAKANA = re.compile(r"[ァ-ヶ]")
 
 
-def idx(entries):
-    """{(city, folded name): [(kana, houjin)]} built exactly the way load_index does.
+def idx(entries, pref="山梨県"):
+    """({(city, folded name): [(kana, houjin, pref)]}, ambiguous) exactly as load_index.
 
     The fold MUST be here too: load_index keys on gen.fold_name(name) and build() looks
     up gen.fold_name(ja), so a helper that skipped it would make every folding test fail
@@ -41,10 +41,14 @@ def idx(entries):
     """
     import collections
     by = collections.defaultdict(list)
-    for city, name, kana, houjin in entries:
+    prefs = collections.defaultdict(set)
+    for entry in entries:
+        city, name, kana, houjin = entry[:4]
+        p = entry[4] if len(entry) > 4 else pref
         for ck in gen.city_keys(city):
-            by[(ck, gen.fold_name(name))].append((kana, houjin))
-    return by
+            by[(ck, gen.fold_name(name))].append((kana, houjin, p))
+            prefs[ck].add(p)
+    return by, {c for c, ps in prefs.items() if len(ps) > 1}
 
 
 def test_katakana_becomes_hiragana():
@@ -96,16 +100,16 @@ def test_old_form_kanji_folds_to_the_modern_form():
 
 
 def test_folding_matches_across_the_two_spellings():
-    index = idx([("上越市", "淨嚴寺", "ジョウゴンジ", "1234567890123")])
-    lines, _ = gen.build([("Q9", "浄厳寺", "上越市")], index)
+    index, ambiguous = idx([("上越市", "淨嚴寺", "ジョウゴンジ", "1234567890123")])
+    lines, _ = gen.build([("Q9", "浄厳寺", "上越市")], index, ambiguous)
     assert len(lines) == 1 and lines[0].startswith('Q9|P1814|"じょうごんじ"')
 
 
 def test_folding_turns_a_spelling_pair_into_a_refusal_not_a_coin_flip():
     """龍源寺 and 竜源寺 in one municipality are two corporations with one folded name."""
-    index = idx([("鈴鹿市", "龍源寺", "リュウゲンジ", "1"),
+    index, ambiguous = idx([("鈴鹿市", "龍源寺", "リュウゲンジ", "1"),
                  ("鈴鹿市", "竜源寺", "タツミナモトジ", "2")])
-    lines, stats = gen.build([("Q10", "龍源寺", "鈴鹿市")], index)
+    lines, stats = gen.build([("Q10", "龍源寺", "鈴鹿市")], index, ambiguous)
     assert lines == []
     assert stats["same name twice in one municipality"] == 1
 
@@ -113,8 +117,8 @@ def test_folding_turns_a_spelling_pair_into_a_refusal_not_a_coin_flip():
 def test_the_folded_name_is_never_what_gets_emitted():
     """Folding is a comparison form. The emitted line carries the QID and the reading,
     never a rewritten name -- nothing downstream should see 竜 where Wikidata says 龍."""
-    index = idx([("甲府市", "龍雲寺", "リュウウンジ", "1234567890123")])
-    lines, _ = gen.build([("Q11", "龍雲寺", "甲府市")], index)
+    index, ambiguous = idx([("甲府市", "龍雲寺", "リュウウンジ", "1234567890123")])
+    lines, _ = gen.build([("Q11", "龍雲寺", "甲府市")], index, ambiguous)
     assert lines == ['Q11|P1814|"りゅううんじ"|S854|"%s"'
                      % (gen.REGISTRY % "1234567890123")]
     assert "竜" not in lines[0]
@@ -122,30 +126,30 @@ def test_the_folded_name_is_never_what_gets_emitted():
 
 def test_a_match_in_a_different_municipality_is_not_used():
     """遠妙寺 exists in 中央市 and 笛吹市; 長谷寺 in 徳島市 reads チョウコクジ."""
-    index = idx([("山梨県中央市", "遠妙寺", "オンミョウジ", "1")])
-    lines, stats = gen.build([("Q1", "遠妙寺", "笛吹市")], index)
+    index, ambiguous = idx([("山梨県中央市", "遠妙寺", "オンミョウジ", "1")])
+    lines, stats = gen.build([("Q1", "遠妙寺", "笛吹市")], index, ambiguous)
     assert lines == []
     assert stats["no match in the registry"] == 1
 
 
 def test_a_reading_with_no_corporate_number_is_refused():
-    index = idx([("甲府市", "専徳寺", "セントクジ", "")])
-    lines, stats = gen.build([("Q2", "専徳寺", "甲府市")], index)
+    index, ambiguous = idx([("甲府市", "専徳寺", "セントクジ", "")])
+    lines, stats = gen.build([("Q2", "専徳寺", "甲府市")], index, ambiguous)
     assert lines == []
     assert stats["no corporate number — would be uncited"] == 1
 
 
 def test_two_corporations_of_the_same_name_in_one_municipality_are_refused():
-    index = idx([("甲府市", "八幡神社", "ハチマンジンジャ", "1"),
+    index, ambiguous = idx([("甲府市", "八幡神社", "ハチマンジンジャ", "1"),
                  ("甲府市", "八幡神社", "ヤワタジンジャ", "2")])
-    lines, stats = gen.build([("Q3", "八幡神社", "甲府市")], index)
+    lines, stats = gen.build([("Q3", "八幡神社", "甲府市")], index, ambiguous)
     assert lines == []
     assert stats["same name twice in one municipality"] == 1
 
 
 def test_an_emitted_line_is_hiragana_and_carries_its_reference():
-    index = idx([("甲府市", "船形神社", "フナカタジンジャ", "1234567890123")])
-    lines, _ = gen.build([("Q4", "船形神社", "甲府市")], index)
+    index, ambiguous = idx([("甲府市", "船形神社", "フナカタジンジャ", "1234567890123")])
+    lines, _ = gen.build([("Q4", "船形神社", "甲府市")], index, ambiguous)
     assert len(lines) == 1
     line = lines[0]
     assert line.startswith('Q4|P1814|"ふなかたじんじゃ"|S854|"')
@@ -155,6 +159,40 @@ def test_an_emitted_line_is_hiragana_and_carries_its_reference():
     assert parsed["property"] == "P1814"
     assert parsed["value"] == {"type": "string", "value": "ふなかたじんじゃ"}
     assert [p for p, _ in parsed["references"]] == ["P854"]
+
+
+def test_an_ambiguous_municipality_with_no_prefecture_is_refused():
+    """北区 exists in several prefectures. Without a prefecture there is nothing to tell
+    a Tokyo 北区 temple from an Osaka one, and 106 of 1,433 first-pass emissions sat on
+    exactly such a name."""
+    index, ambiguous = idx([("北区", "大護寺", "ダイゴジ", "1", "東京都"),
+                            ("北区", "妙覚寺", "ミョウカクジ", "2", "大阪府")])
+    assert "北区" in ambiguous
+    lines, stats = gen.build([("Q20", "大護寺", "北区")], index, ambiguous)
+    assert lines == []
+    assert stats["municipality name not unique, no prefecture to settle it"] == 1
+
+
+def test_an_ambiguous_municipality_is_settled_by_the_prefecture():
+    index, ambiguous = idx([("北区", "大護寺", "ダイゴジ", "1234567890123", "東京都"),
+                            ("北区", "妙覚寺", "ミョウカクジ", "2", "大阪府")])
+    lines, _ = gen.build([("Q21", "大護寺", "北区", "東京都")], index, ambiguous)
+    assert len(lines) == 1 and lines[0].startswith('Q21|P1814|"だいごじ"')
+
+
+def test_a_prefecture_that_disagrees_refuses_the_match():
+    index, ambiguous = idx([("北区", "大護寺", "ダイゴジ", "1", "東京都"),
+                            ("北区", "妙覚寺", "ミョウカクジ", "2", "大阪府")])
+    lines, stats = gen.build([("Q22", "大護寺", "北区", "大阪府")], index, ambiguous)
+    assert lines == []
+    assert stats["municipality name not unique, prefecture disagrees"] == 1
+
+
+def test_a_unique_municipality_needs_no_prefecture():
+    index, ambiguous = idx([("甲府市", "船形神社", "フナカタジンジャ", "1234567890123")])
+    assert ambiguous == set()
+    lines, _ = gen.build([("Q23", "船形神社", "甲府市")], index, ambiguous)
+    assert len(lines) == 1
 
 
 def test_the_shipped_file_holds_no_katakana_and_every_line_is_referenced():

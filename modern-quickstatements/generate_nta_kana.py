@@ -94,13 +94,27 @@ REGISTRY = "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzi
 # Emma's 2026-08-24 rule), NO top-level P1814 (so nothing is overwritten), a ja label to
 # match on and a P131 to disambiguate by.
 QUERY = """
-SELECT ?item ?ja ?cityja WHERE {
+SELECT ?item ?ja ?cityja ?prefja WHERE {
   { ?item wdt:P31 wd:Q845945 } UNION { ?item wdt:P31 wd:Q5393308 }
   ?item rdfs:label ?ja . FILTER(LANG(?ja)="ja")
   FILTER NOT EXISTS { ?item rdfs:label ?en . FILTER(LANG(?en)="en") }
   FILTER NOT EXISTS { ?item wdt:P1814 ?k }
   ?item wdt:P131 ?city . ?city rdfs:label ?cityja . FILTER(LANG(?cityja)="ja")
+  OPTIONAL {
+    ?item wdt:P131+ ?pref . ?pref wdt:P31 wd:Q50337 .
+    ?pref rdfs:label ?prefja . FILTER(LANG(?prefja)="ja")
+  }
 }"""
+
+# Municipality names that are NOT unique nationally -- 北区, 中央区, 伊達市, 南部町. Derived
+# from the index itself rather than listed, so it tracks the registry.
+#
+# ⚠ THIS IS A CORRECTNESS GATE, not a tidy-up. The first version keyed on (municipality,
+# name) with no prefecture, and 106 of 1,433 emitted matches sat on one of these names --
+# a 北区 temple on Wikidata could take the reading of a 北区 corporation in a different
+# prefecture entirely, and nothing in the output would look wrong. Where Wikidata gives a
+# prefecture the candidates are filtered by it; where it does not, an ambiguous
+# municipality is REFUSED rather than guessed.
 
 # A name tail whose reading is unambiguous, so a stem-only furigana can be completed.
 # Anything NOT here is skipped when the tail is missing -- 寺 (じ/でら), 宮 (ぐう/みや),
@@ -168,15 +182,17 @@ def city_keys(city):
 
 
 def load_index(path=None):
-    """{(city, name): [(kana, houjin)]} over every municipality spelling."""
+    """({(city, folded name): [(kana, houjin, prefecture)]}, {ambiguous municipality names})."""
     with io.open(path or INDEX, encoding="utf-8") as fh:
         raw = json.load(fh)
     by = collections.defaultdict(list)
+    prefs = collections.defaultdict(set)
     for key, rec in raw.items():
-        _pref, city, name = key.split("|", 2)
+        pref, city, name = key.split("|", 2)
         for ck in city_keys(city):
-            by[(ck, fold_name(name))].append((rec["kana"], rec["houjin"]))
-    return by
+            by[(ck, fold_name(name))].append((rec["kana"], rec["houjin"], pref))
+            prefs[ck].add(pref)
+    return by, {c for c, p in prefs.items() if len(p) > 1}
 
 
 def complete(name, kana):
@@ -199,19 +215,29 @@ def complete(name, kana):
     return kana, None
 
 
-def build(rows, index):
+def build(rows, index, ambiguous_cities=frozenset()):
     """(lines, stats) — one QuickStatement per confidently matched item."""
     lines = []
     stats = collections.Counter()
-    for qid, ja, city in rows:
+    for row in rows:
+        qid, ja, city = row[0], row[1], row[2]
+        pref = row[3] if len(row) > 3 else ""
         cands = index.get((city, fold_name(ja)), [])
+        if cands and city in ambiguous_cities:
+            if not pref:
+                stats["municipality name not unique, no prefecture to settle it"] += 1
+                continue
+            cands = [c for c in cands if c[2] == pref]
+            if not cands:
+                stats["municipality name not unique, prefecture disagrees"] += 1
+                continue
         if not cands:
             stats["no match in the registry"] += 1
             continue
         if len(cands) > 1:
             stats["same name twice in one municipality"] += 1
             continue
-        kana, houjin = cands[0]
+        kana, houjin, _pref = cands[0]
         if not houjin:
             stats["no corporate number — would be uncited"] += 1
             continue
@@ -232,8 +258,12 @@ def fetch_population():
     rows = wdqs_transport.query_csv(QUERY, endpoint=ENDPOINT, timeout=300, post=True)
     out = []
     for r in rows:
-        v = {k: (r[k]["value"] if isinstance(r[k], dict) else r[k]) for k in r}
-        out.append((v.get("item", "").rsplit("/", 1)[-1], v.get("ja", ""), v.get("cityja", "")))
+        # An OPTIONAL that did not bind comes back as a present key holding None, so
+        # `.get(k, "")` returns None rather than the default -- which is how projecting
+        # ?prefja turned every row's ja label into None on the first run.
+        v = {k: ((r[k].get("value") if isinstance(r[k], dict) else r[k]) or "") for k in r}
+        out.append((v.get("item", "").rsplit("/", 1)[-1], v.get("ja", ""),
+                    v.get("cityja", ""), v.get("prefja", "")))
     return out
 
 
@@ -244,12 +274,13 @@ def main():
     args = ap.parse_args()
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-    index = load_index()
+    index, ambiguous = load_index()
     rows = fetch_population()
-    print("registry: %d (municipality, name) keys" % len(index))
+    print("registry: %d (municipality, name) keys; %d municipality names are not unique "
+          "nationally" % (len(index), len(ambiguous)))
     print("targets:  %d shrines/temples with no en label, no P1814, and a P131" % len(rows))
 
-    lines, stats = build(rows, index)
+    lines, stats = build(rows, index, ambiguous)
     for reason, n in stats.most_common():
         print("  %-42s %5d" % (reason, n))
 
