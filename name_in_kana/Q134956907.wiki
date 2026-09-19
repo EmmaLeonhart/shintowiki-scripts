@@ -1,7 +1,7 @@
 <!-- ITEM: https://www.wikidata.org/wiki/Q134956907 -->
 <!-- JA: 山神社 | EN_LABEL: Yama Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: -->
+<!-- ANSWER: NO_KANA: no lead available; both candidates plausible (山 as yama vs san); cannot choose -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
   CANDIDATE A (from the English label): やまじんじゃ
   CANDIDATE B (from other shrines whose Japanese name is identical): さんじんじゃ
