@@ -263,6 +263,43 @@ QID_BY_RENDERING = {
     "恩寵の聖母":       "Q1636804",   #   65 slots  Our Lady of Graces — title of the Virgin Mar
 }
 
+# ── Second round, 2026-09-20 ─────────────────────────────────────────────
+# Same script, same acceptance rule, same hand review. ⚠ The review earned
+# its keep: the script accepted `諸聖人 -> Q10405623`, whose own description
+# says "Swedish Christian festival, DISTINCT FROM THE MORE COMMON" one — 56
+# churches would have been dedicated to a Swedish national holiday. It is
+# refused, and the general item was not found (Q18378, my guess at it, is an
+# Italian comune). A better query for it is next round's job.
+QID_BY_RENDERING.update({
+    "ヨセフ":         "Q128267",    #  137 slots  Saint Joseph — Christian saint; husband of
+    "バルトロマイ":      "Q43982",     #   84 slots  Bartholomew the Apostle — Christian apostl
+    "復活":          "Q51624",     #   78 slots  Resurrection of Jesus — event in the Chris
+    "セバスティアヌス":    "Q183332",    #   70 slots  Saint Sebastian — Christian saint and mart
+    "王たるキリスト":     "Q2558835",   #   57 slots  Christ the King — title of Jesus
+    "パウロ":         "Q9200",      #   53 slots  Paul the Apostle — Early Christian apostle
+    "ウィトゥス":       "Q212850",    #   49 slots  Vitus — 3rd or 4th-century Sicilian saint
+    "レオンハルト":      "Q558148",    #   46 slots  Leonard of Noblac — Frankish saint
+    "パラスケヴィ":      "Q13564538",  #   42 slots  Paraskevi of Iconium — Christian martyr
+    "天の元后":        "Q1358870",   #   40 slots  Queen of Heaven — Christian devotion of Ma
+    "聖母の汚れなき御心":   "Q748124",    #   40 slots  Immaculate Heart of Mary — title of Mary, 
+    "マグダラのマリア":    "Q63070",     #   33 slots  Mary Magdalene — follower of Jesus (–100)
+})
+
+# ⭐ Hand-resolved where the script refused for MORE THAN ONE survivor and the
+# identity is not actually in doubt. The script exists to avoid making a
+# judgement silently, not to forbid one being made and written down.
+QID_BY_RENDERING.update({
+    # Q302 is "central figure of Christianity"; the other survivors were an
+    # American Internet personality of the same name and the Last Supper.
+    "キリスト": "Q302",                 #   91 slots
+    # ⚠ A judgement, not an identity: Q185606 is the DOCTRINE ("Mary was
+    # conceived free from original sin") and Q3538509 is the FEAST on
+    # 8 December. A church called Immaculate Conception is dedicated to the
+    # mystery, not to the day in the calendar. Recorded so it can be
+    # overturned by anyone who reads it and disagrees.
+    "無原罪の御宿り": "Q185606",          #  132 slots
+})
+
 
 def _term_index():
     """{ja rendering: qid} for the TERM map, via the table key each term names.

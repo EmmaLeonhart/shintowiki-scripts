@@ -49,13 +49,16 @@ from `ATOMIC_FILES`; they are not queue items.
   multilingual and `COUNTRY_RULES` is one family per country, so a French label in Q39 gets German
   rules and is correctly refused rather than mis-read. 5 items; not worth a per-item language guess.
 
-- [ ] Religious buildings: the next dedication-QID lookup round. `resolve_dedication_qids.py`
-  prints its own refusals and they are the list: `聖母` 489 (the query returned nothing, which is a
-  query problem — Mary plainly has an item), `聖十字架` 257 and `十字架挙栄` 97 (True Cross and Feast
-  of the Cross carry NO P31 at all, so the class filter cannot clear them), `ヨハネ` 171 and
-  `キリスト` 90 (genuinely ambiguous — a bare Johannes is the Evangelist or John of Patmos).
-  ⚠ Every added QID widens `religious_building_p825.txt` on the next run; the generator is wired and
-  regenerates every time, so this is ordinary drip work and nothing has to be re-plumbed.
+- [ ] Religious buildings: the third dedication-QID lookup round. `resolve_dedication_qids.py`
+  prints its own worklist; after round two, 78 concepts covering 2,296 slots are left, led by:
+  `聖十字架` 260 and `十字架挙栄` 97 — True Cross and Feast of the Cross carry NO P31 at all, so
+  the class filter cannot clear them and no query will change that; `ペトロとパウロ` 122 and
+  `聖母訪問` 89 and `聖家族` 54 — the search returns only paintings and churches, so these need a
+  better query, not a rule change; `ヨハネ` 123, `無原罪の御宿り`-style pairs and `平和` 58 — two
+  survivors each, genuinely ambiguous; `諸聖人` 56 — the one candidate is the SWEDISH All Saints'
+  Day and the general item was not found.
+  ⚠ Read every accepted line. Round two accepted the Swedish All Saints' Day on a clean class check,
+  and only its Wikidata description ("distinct from the more common") gave it away.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this

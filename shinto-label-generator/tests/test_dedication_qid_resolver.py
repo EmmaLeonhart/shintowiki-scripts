@@ -148,3 +148,55 @@ def test_no_concept_contradicts_the_term_map():
     dedicatee they must agree."""
     assert sq.QID_BY_RENDERING.get("聖母被昇天") == sq.SAINT_QIDS.get("the Assumption")
     assert sq.QID_BY_RENDERING.get("恩寵の聖母") == sq.SAINT_QIDS.get("Our Lady of Grace")
+
+
+# --------------------------------------------------------------------------
+# ⛔ The second round, and what the hand review caught (2026-09-20)
+# --------------------------------------------------------------------------
+def test_the_swedish_all_saints_day_is_not_a_dedicatee():
+    """The script ACCEPTED `諸聖人 -> Q10405623` — one candidate, right class —
+    and its own Wikidata description says "Swedish Christian festival, distinct
+    from the more common" one. 56 churches would have been dedicated to a Swedish
+    national holiday. This is the case that justifies reading every line."""
+    assert "諸聖人" not in sq.QID_BY_RENDERING
+    assert sq.qid_for_match(m.match_dedication("Allerheiligenkapelle")) is None
+
+
+def test_the_guessed_replacement_was_not_installed_either():
+    """⚠ Q18378, reached for as the general All Saints' Day, is an Italian
+    comune. A guess made while correcting a guess."""
+    assert "Q18378" not in sq.QID_BY_RENDERING.values()
+    assert "Q18378" not in sq.SAINT_QIDS.values()
+
+
+def test_a_query_that_finds_nothing_looks_like_a_concept_that_does_not_exist():
+    """⚠ `Mary mother of Jesus` returned ZERO hits and was reported as a blocker
+    for 489 items. wbsearchentities is not a sentence parser — and `Our Lady` was
+    already in the term map all along, so 聖母 was never unresolved at all."""
+    assert sq._index()["聖母"] == "Q345"
+    assert sq.SAINT_QIDS["Our Lady"] == "Q345"
+
+
+def test_the_hand_resolutions_are_recorded_with_their_reason():
+    """The script refuses when more than one candidate survives. A human may
+    still decide — and must write down which and why."""
+    src = open(os.path.join(HERE, "saint_qids.py"), encoding="utf-8").read()
+    assert sq.QID_BY_RENDERING["キリスト"] == "Q302"
+    assert sq.QID_BY_RENDERING["無原罪の御宿り"] == "Q185606"
+    assert "American Internet personality" in src
+    assert "A judgement, not an identity" in src
+
+
+def test_the_genuinely_ambiguous_are_still_refused():
+    """A bare `Johannes` on a German church is the Evangelist or John of Patmos
+    and the label does not say. `Our Lady of Peace` has two candidates. Neither
+    was hand-resolved, because neither is an identity."""
+    assert "ヨハネ" not in sq.QID_BY_RENDERING
+    assert "平和" not in sq.QID_BY_RENDERING
+
+
+def test_the_unclassified_stay_unclassified():
+    """`True Cross` and `Feast of the Cross` carry no P31 at all — 357 slots
+    between them, and no amount of wanting them changes what can be verified."""
+    for ja in ("聖十字架", "十字架挙栄"):
+        assert ja not in sq.QID_BY_RENDERING, ja

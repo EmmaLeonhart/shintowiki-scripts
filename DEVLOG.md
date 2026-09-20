@@ -1,3 +1,54 @@
+## 2026-09-20 (third) — 4,888 → 5,840, and the line that only the hand review caught
+
+Work-loop tick: the second dedication-QID lookup round. **5,840 P825 statements from 57 distinct
+dedicatees**, up from 4,888 from 43.
+
+### ⛔ The script accepted a Swedish national holiday
+
+`諸聖人` (All Saints) resolved to `Q10405623` — one surviving candidate, correct class, clean by
+every rule the script has. Its own Wikidata description reads *"Swedish Christian festival,
+**distinct from the more common**"* one. **56 churches would have been dedicated to a Swedish public
+holiday.**
+
+Nothing automated would have caught it. The class filter is designed to reject paintings, communes
+and albums and this is none of those — it is the right KIND of thing and the wrong one. That is
+what "read every accepted line" is for, and it is the first time in three rounds that the reading
+has earned its keep rather than confirming the script.
+
+⚠ And the correction nearly repeated the mistake: `Q18378`, which I reached for as the general All
+Saints' Day, is **an Italian comune**. Checked before installing. `諸聖人` stays refused and needs a
+better query, not a guess.
+
+### ⛔ A blocker I reported last tick did not exist
+
+`聖母`, 489 item-slots, "the query returned nothing". The query really did return nothing — `Mary
+mother of Jesus` gets zero hits because `wbsearchentities` is not a sentence parser — but `Our
+Lady` was **already a term in `SAINT_QIDS` mapping to Q345**, so those 489 were never unresolved.
+`Q345` has been the single most-used dedicatee in the output all along, at 759 items.
+
+The false gap came from `unresolved_concepts()` rebuilding the term join instead of asking
+`saint_qids._index()`. That is the same defect as yesterday's — a hand-built join disagreeing with
+the shipped one — in the same week, in a function written *while* fixing the first instance. It now
+calls `qid_for_match`, so there is one join and one answer.
+
+### What landed, and what is honestly refused
+
+12 validated by the script and read line by line: Joseph, Bartholomew, the Resurrection, Sebastian,
+Christ the King, Paul, Vitus, Leonard of Noblac, Paraskevi, Queen of Heaven, the Immaculate Heart,
+Mary Magdalene. Plus two resolved by hand where the script refused for more than one survivor:
+
+- **`キリスト` → Q302**, "central figure of Christianity". The other survivors were an American
+  Internet personality of the same name and the Last Supper. Identity, not judgement.
+- **`無原罪の御宿り` → Q185606**, the DOCTRINE, against `Q3538509` the FEAST on 8 December. A church
+  called Immaculate Conception is dedicated to the mystery, not to the day in the calendar. ⚠ That
+  IS a judgement and it is written down where someone who disagrees can find it.
+
+Still refused, with reasons that are not going to change by asking again: `聖十字架` 260 and
+`十字架挙栄` 97 carry **no P31 at all**; `ヨハネ` 123 is genuinely ambiguous between the Evangelist
+and John of Patmos and the label does not say; `平和` 58 has two candidates.
+
+6 new tests. Full suite 2,918 pass.
+
 ## 2026-09-20 (second) — P825 ships: 4,888 statements from the dedication the label already named
 
 Work-loop tick, and the item Emma opened on 2026-09-18: *"using the dedicated to for other ontology

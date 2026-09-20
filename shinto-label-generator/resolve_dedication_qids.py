@@ -96,7 +96,35 @@ QUERY_BY_JA = {
     "恩寵の聖母": "Our Lady of Graces",
     "平和": "Our Lady of Peace",
     "カルメル山の聖母": "Our Lady of Mount Carmel",
-    "聖母訪問": "Visitation of Mary",
+    "聖母訪問": "Visitation of the Blessed Virgin Mary",
+    # Second round, 2026-09-20. ⚠ `Mary mother of Jesus` returned ZERO hits —
+    # wbsearchentities is not a sentence parser — while `Blessed Virgin Mary`
+    # returns Q345 and nothing else survives the class filter. A query that finds
+    # nothing looks exactly like a concept Wikidata does not have.
+    "ヨセフ": "Saint Joseph",
+    "無原罪の御宿り": "Immaculate Conception",
+    "聖霊": "Holy Spirit",
+    "バルトロマイ": "Bartholomew the Apostle",
+    "復活": "Resurrection of Jesus",
+    "セバスティアヌス": "Saint Sebastian",
+    "王たるキリスト": "Christ the King",
+    "諸聖人": "All Saints' Day",
+    "聖家族": "Holy Family",
+    "ロザリオの聖母": "Our Lady of the Rosary",
+    "雪の聖母": "Our Lady of the Snows",
+    "マグダラのマリア": "Mary Magdalene",
+    "受胎告知": "Annunciation",
+    "降誕": "Nativity of Jesus",
+    "天の元后": "Queen of Heaven",
+    "悲しみの聖母": "Our Lady of Sorrows",
+    "レオンハルト": "Leonard of Noblac",
+    "ウィトゥス": "Saint Vitus",
+    "パウロ": "Paul the Apostle",
+    "聖母の汚れなき御心": "Immaculate Heart of Mary",
+    "パラスケヴィ": "Paraskevi of Iconium",
+    "ニコラオス": "Nicholas of Myra",
+    "アントニオ": "Anthony of Padua",
+    "フランチェスコ": "Francis of Assisi",
 }
 
 
@@ -131,63 +159,43 @@ def classes(qids):
 
 
 def unresolved_concepts():
-    """{ja_rendering: (item_slots, [table keys])} for what has no QID yet."""
-    def cands(term):
-        t = m._fold(term.lower())
-        out = {t}
-        for p in ("saint ", "st ", "st. ", "the ", "our lady of the ",
-                  "our lady of ", "our lady "):
-            if t.startswith(p):
-                out.add(t[len(p):].strip())
-        return {k for k in out if k}
+    """{ja_rendering: (item_slots, [table keys])} for what has no QID yet.
 
-    ded = (set(m._folded_group(m.SPECIFIC_DEDICATIONS))
-           | set(m._folded_group(m.GENERIC_DEDICATIONS)))
-    byja = collections.defaultdict(set)
-    for k, v in m.NAMES.items():
-        byja[v["ja"]].add(k)
-    have_name, have_ded = set(), set()
-    for term in sq.SAINT_QIDS:
-        for k in cands(term):
-            if k in m.NAMES:
-                have_name |= byja[m.NAMES[k]["ja"]]
-            elif k in ded:
-                have_ded.add(k)
-
+    ⛔ Asks `saint_qids._index()` rather than rebuilding the term join. The first
+    version rebuilt it, and a rebuilt join is how `qid_for_match` came to read
+    one map while the measurement read two — 2,168 statements against a measured
+    4,155. One join, one answer.
+    """
     rows = G.source_labels()
     with io.open(G.CACHE, encoding="utf-8") as fh:
         cache = json.load(fh)
+    index = sq._index()
     un = collections.Counter()
     kinds = {}
     for qid, label in rows:
         meta = cache["items"].get(qid) or {}
         if m.is_category_shaped(label):
             continue
-        p31 = G.building_type(meta, m.TYPES)
-        if not p31 or not meta.get("p131") or p31 in m.MOSQUE_P31:
+        if not G.building_type(meta, m.TYPES):
             continue
         hit = m.match_dedication(label)
         if not hit:
             continue
+        if sq.qid_for_match(hit):
+            continue                      # already resolved, by either map
         kind, key, _ = hit
-        if kind in ("specific", "generic"):
-            if m._fold(key) not in have_ded:
-                un[key] += 1
-                kinds[key] = kind
-        elif kind == "names":
-            for x in key:
-                if x not in have_name:
-                    un[x] += 1
-                    kinds[x] = "name"
-        else:
-            un[key] += 1
-            kinds[key] = "phrase"
+        if kind == "names":
+            if len(key) != 1:
+                continue                  # two dedicatees is a caller problem
+            key = key[0]
+        un[key] += 1
+        kinds[key] = kind
 
     def render(k):
         kind = kinds[k]
         if kind in ("specific", "generic"):
             return m.DEDICATIONS[k]["ja"]
-        if kind == "name":
+        if kind == "names":
             return m.NAMES[k]["ja"]
         return m.NAME_PHRASES[k]["ja"]
 
@@ -196,6 +204,8 @@ def unresolved_concepts():
         try:
             r = render(k)
         except KeyError:
+            continue
+        if r in index:
             continue
         grouped[r][0] += n
         grouped[r][1].append(k)
