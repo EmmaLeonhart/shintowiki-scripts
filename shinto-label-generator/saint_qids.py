@@ -110,6 +110,15 @@ ALLOWED_CLASSES = {
     "Q3045134": "Christian dogma",
     "Q2634521": "title of Jesus",          # the parallel of Q1509831 for Mary
     "Q1445650": "holiday",                 # a feast; the narrower Q375011 missed it
+    # ⭐ Round three, 2026-09-20, same method: the class of the item being wrongly
+    # refused, read rather than guessed. `Holy Family` is a GROUP of dedicatees
+    # and `Holy Spirit` a person of the Trinity.
+    "Q22813674": "group of biblical humans",
+    "Q651118": "hypostasis",
+    # ⛔ NOT added, though both sit on those same two items: `family` (Q8436) and
+    # `triad` (Q29430681) are ordinary classes of ordinary things, and
+    # `biblical concept` (Q30149195) would admit covenant and sin. The allow-list
+    # earns its name by refusing the classes that merely happen to be attached.
     "Q375011": "religious holiday",
     "Q106355253": "gospel episode",
     "Q13418847": "historical event",
@@ -301,6 +310,42 @@ QID_BY_RENDERING.update({
 })
 
 
+
+# ── Round three, 2026-09-20 ───────────────────────────────────────────────
+# `Holy Family` and `Holy Spirit` were refused by class until the allow-list
+# learned "group of biblical humans" and "hypostasis"; `Visitation` needed a
+# SHORTER query — `Visitation of the Blessed Virgin Mary` matched only
+# churches and a monastery, because a longer query is a narrower text match
+# and not a more precise one.
+QID_BY_RENDERING.update({
+    "聖母訪問":        "Q691810",    #   89 slots  Visitation — Christian story of Mary visit
+    "聖霊":          "Q37302",     #   85 slots  Holy Spirit — conception of God, or an att
+    "聖家族":         "Q618057",    #   54 slots  Holy Family — Jesus, Mary and Saint Joseph
+})
+
+
+# ⛔ CANDIDATES A HUMAN REVIEW HAS ALREADY REJECTED, so the resolver cannot
+# re-offer them. Without this the script proposed `諸聖人 -> Q10405623` in round
+# two, the review rejected it, and round three proposed the identical line —
+# because nothing had recorded the rejection. A rejection that is not written
+# down is a rejection that gets re-offered until somebody installs it.
+#
+# ⚠ Keyed by (rendering, qid): the CONCEPT is not rejected, this ANSWER for it is.
+# `諸聖人` is still wanted; `Q10405623` is not the item.
+REJECTED_BY_REVIEW = {
+    ("諸聖人", "Q10405623"):
+        "the SWEDISH All Saints' Day — its own description says 'distinct from "
+        "the more common' one. One surviving candidate, correct class, and wrong "
+        "by 56 churches. Q18378, reached for as the general item, is an Italian "
+        "comune; the right one has not been found.",
+}
+
+
+def rejected(ja, qid):
+    """True when a human review has already turned this exact answer down."""
+    return (ja, qid) in REJECTED_BY_REVIEW
+
+
 def _term_index():
     """{ja rendering: qid} for the TERM map, via the table key each term names.
 
@@ -345,6 +390,60 @@ def _index():
         merged.update(QID_BY_RENDERING)
         _BY_RENDERING = merged
     return _BY_RENDERING
+
+
+def qids_for_match(hit):
+    """EVERY dedicatee a match names, as a list — [] when any is unknown.
+
+    `Santi Pietro e Paolo` is dedicated to two people and wants two `P825`
+    statements. `qid_for_match` returns None for it on purpose, because ONE
+    statement would assert the label names one dedicatee; this returns both.
+
+    ⛔ A NAME_PHRASES entry is not automatically a pair. The table mixes two
+    shapes that look identical from the key:
+
+        peter paul       -> Peter AND Paul          two dedicatees
+        antonio padova   -> Anthony OF PADUA        one dedicatee, one place
+        john nepomuk     -> John OF NEPOMUK         one dedicatee, one place
+
+    Splitting the second kind would dedicate a church to the city of Padua —
+    the same class of error that put French communes in the seed. A phrase
+    splits only when **every** part is itself a NAMES key: `peter` and `paul`
+    are, `padova` and `nepomuk` and `assisi` and `thessaloniki` are not.
+
+    ⚠ And a phrase whose parts are not all names is NOT resolved from its first
+    part either. `antonio` happens to map to Anthony of Padua today, so
+    `antonio padova` would come out right by luck; if it had resolved to Anthony
+    the Abbot the same code would be silently wrong. Those phrases stay
+    unresolved until the phrase itself has a QID.
+
+    ⛔ All-or-nothing. A label naming three saints where two resolve emits
+    nothing, because two statements assert the label named two.
+    """
+    if not hit:
+        return []
+    import religious_building_morphemes as _m
+    kind, key, _extra = hit
+    index = _index()
+    if kind in ("specific", "generic"):
+        row = _m.DEDICATIONS.get(key)
+        qid = index.get(row["ja"]) if row else None
+        return [qid] if qid else []
+    if kind == "phrase":
+        row = _m.NAME_PHRASES.get(key)
+        qid = index.get(row["ja"]) if row else None
+        if qid:
+            return [qid]
+        parts = key.split()
+        if len(parts) > 1 and all(p in _m.NAMES for p in parts):
+            qids = [index.get(_m.NAMES[p]["ja"]) for p in parts]
+            if all(qids) and len(set(qids)) == len(qids):
+                return qids
+        return []
+    qids = [index.get(_m.NAMES[k]["ja"]) if k in _m.NAMES else None for k in key]
+    if not all(qids) or len(set(qids)) != len(qids):
+        return []
+    return qids
 
 
 def qid_for_match(hit):

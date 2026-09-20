@@ -1,3 +1,64 @@
+## 2026-09-20 (fourth) — 5,840 → 6,406, and a rejection that came straight back
+
+Work-loop tick: the third dedication-QID round, plus emitting a statement per dedicatee where a
+label names several. **6,406 statements over 6,236 items, 60 distinct dedicatees.**
+
+### ⛔ The rejected answer was re-proposed the very next round
+
+Round two accepted `諸聖人 → Q10405623`, the review caught that it is the **Swedish** All Saints'
+Day, and it was left out. Round three proposed **the identical line** — because nothing had recorded
+the rejection. One surviving candidate, correct class, and it would have gone in on the second
+offer if the reading had been a fraction less careful.
+
+`saint_qids.REJECTED_BY_REVIEW` now holds it, keyed by `(rendering, qid)` so the CONCEPT stays
+wanted while that ANSWER is refused, and the resolver filters rejected candidates out *before*
+counting survivors. **A rejection that is not written down is a rejection that gets re-offered until
+somebody installs it.**
+
+### Two more classes, same method as the last two rounds
+
+`Holy Family` and `Holy Spirit` were correct items refused by class. Read their `P31` rather than
+guessing: `group of biblical humans` and `hypostasis`, both added. ⛔ Not added, though they sit on
+the same two items: `family` and `triad` are ordinary classes of ordinary things, and
+`biblical concept` would admit covenant and sin.
+
+⚠ `聖母訪問` needed a SHORTER query. `Visitation of the Blessed Virgin Mary` matched only churches
+and a monastery; the bare `Visitation` returns the gospel episode. A longer query is a narrower text
+match, not a more precise one — the same lesson as `Mary mother of Jesus` returning zero hits.
+
+### A statement per dedicatee, and the trap inside it
+
+185 labels name two or three saints and were being skipped whole, because one statement would assert
+the label named one. `qids_for_match` returns every dedicatee, all-or-nothing, and the generator
+emits a line each — **168 items now carry two or three statements**, and `Santi Pietro e Paolo` is
+two lines rather than none.
+
+⛔ **The NAME_PHRASES table mixes two shapes that look identical from the key:**
+
+    peter paul       ->  Peter AND Paul        two dedicatees
+    antonio padova   ->  Anthony OF PADUA      one dedicatee and a place
+    john nepomuk     ->  John OF NEPOMUK       one dedicatee and a place
+
+Splitting the second kind would have dedicated churches to the city of Padua — the same class of
+error that put French communes in the seed, arrived at from the opposite direction. A phrase splits
+only when **every** part is itself a NAMES key.
+
+⚠ And a phrase is never resolved from its first part. `antonio` maps to Anthony of Padua today, so
+`antonio padova` would come out right by luck; had it resolved to Anthony the Abbot the same code
+would be silently wrong. Those phrases stay unresolved until the phrase itself has a QID.
+
+### The CI failure this morning was not a defect
+
+`Generate shrines-missing-en-label list` failed: both Stage 2 steps hit **WDQS 429**, which the
+repo's rule says to bail on immediately rather than retry, and the re-fail step exists to make that
+visible. What is worth recording is what happened next: Stage 1 regenerated against a refreshed
+worklist while Stage 2's files stayed stale, which is exactly the scenario
+`dedupe_en_label_files.py` was written for two days ago — *"a Stage 2 file left stale beside a
+freshly advanced Stage 1 is an ordinary Tuesday"*. The deduper ran, and the one-label-per-item
+invariant still checks clean. The prediction was right on day one.
+
+6 new tests; 2 rewritten where the behaviour deliberately changed. Full suite 2,927 pass.
+
 ## 2026-09-20 (third) — 4,888 → 5,840, and the line that only the hand review caught
 
 Work-loop tick: the second dedication-QID lookup round. **5,840 P825 statements from 57 distinct

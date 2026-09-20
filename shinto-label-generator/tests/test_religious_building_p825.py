@@ -14,6 +14,8 @@ the day a designation enters the QID map is the day nobody is looking.
 import os
 import sys
 
+import collections
+
 import pytest
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,13 +36,18 @@ def emitted():
 # --------------------------------------------------------------------------
 # Shape
 # --------------------------------------------------------------------------
-def test_every_line_is_one_statement_per_item(emitted):
+def test_one_statement_per_dedicatee_and_no_duplicates(emitted):
+    """⚠ WIDENED 2026-09-20. This asserted one line per ITEM, which was right
+    while a multi-saint dedication was skipped entirely. A church dedicated to
+    Peter and Paul now carries TWO statements, so an item legitimately repeats —
+    what must never repeat is a STATEMENT."""
     pairs, _ = emitted
     assert pairs, "the corpus should produce statements"
-    items = [q for q, _ in pairs]
-    assert len(items) == len(set(items)), "one P825 line per item"
+    assert len(pairs) == len(set(pairs)), "no duplicate (item, dedicatee)"
     for item, value in pairs:
         assert item.startswith("Q") and value.startswith("Q")
+    per_item = collections.Counter(q for q, _ in pairs)
+    assert max(per_item.values()) <= 3, "a label naming four dedicatees is new"
 
 
 def test_the_values_are_all_validated(emitted):
@@ -83,13 +90,43 @@ def test_the_designations_named_are_the_ones_claude_md_names():
 # --------------------------------------------------------------------------
 # ⛔ Two dedicatees are two statements, so one is not emitted
 # --------------------------------------------------------------------------
-def test_a_two_saint_dedication_is_skipped_not_halved(emitted):
-    """`Santi Martino e Giorgio` needs TWO statements; emitting one silently
-    asserts the label names a single dedicatee."""
-    _pairs, stats = emitted
-    assert stats["two or more dedicatees"] > 0
+def test_a_two_saint_dedication_emits_two_statements(emitted):
+    """⚠ CHANGED 2026-09-20. It used to be skipped, because one statement would
+    assert the label names a single dedicatee. Now both are emitted — which is
+    what the label actually says — and `qid_for_match` still returns None so no
+    caller can take half by accident."""
     hit = m.match_dedication("Santi Martino e Giorgio")
-    assert sq.qid_for_match(hit) is None
+    assert sq.qid_for_match(hit) is None, "the single-value accessor still refuses"
+    assert sq.qids_for_match(hit) == ["Q133704", "Q48438"]
+    _pairs, stats = emitted
+    assert stats["  (of which several dedicatees)"] > 0
+
+
+def test_a_partly_unknown_multi_dedication_emits_nothing():
+    """⛔ All-or-nothing: two statements where the label names three assert it
+    named two."""
+    hit = ("names", ["martino", "totally_unknown_saint"], True)
+    assert sq.qids_for_match(hit) == []
+
+
+def test_a_saint_qualified_by_a_PLACE_is_not_two_dedicatees():
+    """⛔ The NAME_PHRASES table mixes two shapes that look identical from the
+    key: `peter paul` is Peter AND Paul, `antonio padova` is Anthony OF PADUA.
+    Splitting the second would dedicate a church to the city of Padua — the same
+    class of error that put French communes in the seed."""
+    assert sq.qids_for_match(m.match_dedication("Santi Pietro e Paolo")) == [
+        "Q33923", "Q9200"]
+    for label in ("Sant Antonio da Padova", "San Francesco d Assisi"):
+        assert sq.qids_for_match(m.match_dedication(label)) == [], label
+
+
+def test_a_phrase_is_never_resolved_from_its_first_part():
+    """⚠ `antonio` maps to Anthony of Padua today, so `antonio padova` would come
+    out right by luck. Had it resolved to Anthony the Abbot the same code would
+    be silently wrong, so the phrase needs its own QID or nothing."""
+    import religious_building_morphemes as _m
+    assert "antonio padova" in _m.NAME_PHRASES
+    assert sq._index().get(_m.NAME_PHRASES["antonio padova"]["ja"]) is None
 
 
 # --------------------------------------------------------------------------

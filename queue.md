@@ -49,16 +49,20 @@ from `ATOMIC_FILES`; they are not queue items.
   multilingual and `COUNTRY_RULES` is one family per country, so a French label in Q39 gets German
   rules and is correctly refused rather than mis-read. 5 items; not worth a per-item language guess.
 
-- [ ] Religious buildings: the third dedication-QID lookup round. `resolve_dedication_qids.py`
-  prints its own worklist; after round two, 78 concepts covering 2,296 slots are left, led by:
-  `聖十字架` 260 and `十字架挙栄` 97 — True Cross and Feast of the Cross carry NO P31 at all, so
-  the class filter cannot clear them and no query will change that; `ペトロとパウロ` 122 and
-  `聖母訪問` 89 and `聖家族` 54 — the search returns only paintings and churches, so these need a
-  better query, not a rule change; `ヨハネ` 123, `無原罪の御宿り`-style pairs and `平和` 58 — two
-  survivors each, genuinely ambiguous; `諸聖人` 56 — the one candidate is the SWEDISH All Saints'
-  Day and the general item was not found.
-  ⚠ Read every accepted line. Round two accepted the Swedish All Saints' Day on a clean class check,
-  and only its Wikidata description ("distinct from the more common") gave it away.
+- [ ] Religious buildings: the fourth dedication-QID lookup round. 73 concepts, 1,845 slots left.
+  `resolve_dedication_qids.py` prints the worklist and filters anything already rejected by review.
+  ⚠ Three groups, and they want different things:
+  • **No P31 at all** — `聖十字架` 260, `十字架挙栄` 97. The class filter cannot clear them and no
+    query changes that. Leave refused unless the items gain a class upstream.
+  • **Genuinely ambiguous** — `ヨハネ` 123 (Evangelist vs John of Patmos), `平和` 58. Two survivors
+    each; the label does not say which.
+  • **`諸聖人` 56** — the only candidate a search finds is the SWEDISH All Saints' Day, already in
+    `REJECTED_BY_REVIEW`. It needs the general item, which has not been found; `Q18378` is an
+    Italian comune.
+  ⚠ Also unresolved and worth a round: the `X of PLACE` phrases — `antonio padova` 22+6+3,
+  `francesco assisi` 13+2, `john nepomuk` 10+8, `demetrius thessaloniki` 3. Each is ONE saint and
+  needs the phrase's own QID; ⛔ do NOT resolve them from their first part, which would be right by
+  luck today and silently wrong if that name ever resolves to a different saint of the same name.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this

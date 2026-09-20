@@ -30,9 +30,10 @@ from the language files; a statement is not a label and goes on the ordinary
 * **An unvalidated dedicatee.** `saint_qids` covers 62 terms and concepts, every
   one class-checked; the 101-row seed it grew from was 52% wrong, so anything
   outside it is refused rather than looked up here.
-* **A dedication naming two saints.** `Santi Martino e Giorgio` needs TWO
-  statements, and emitting one silently asserts the label names a single
-  dedicatee. `qid_for_match` returns None for it on purpose.
+* **A dedication naming several saints where any of them is unknown.** Two
+  statements where the label names three assert it named two, so it is
+  all-or-nothing. Where all of them resolve, `qids_for_match` returns every one
+  and this file emits a statement each — `Santi Pietro e Paolo` is two lines.
 * ⛔ **A cultural-property designation, or anything under one.** This is the rule
   CLAUDE.md states for `P825` outright: `P825 → Q1188622` (重要文化財) asserts
   "dedicated to Important Cultural Property", which asserts nothing. None of the
@@ -82,7 +83,13 @@ INVALID_VALUES = {"Q1188622",   # 重要文化財 Important Cultural Property
 
 
 def rows():
-    """[(item_qid, dedicatee_qid)] — one statement per item."""
+    """[(item_qid, dedicatee_qid)] — one statement per DEDICATEE.
+
+    ⚠ An item may appear on more than one line, and that is the point: a church
+    dedicated to Peter and Paul carries two P825 statements. The de-duplication
+    below is per ITEM reaching this loop twice (stage 1 emitted two Commons
+    categories for six of them), not per line.
+    """
     src = G.source_labels()
     with io.open(G.CACHE, encoding="utf-8") as fh:
         cache = json.load(fh)
@@ -100,22 +107,22 @@ def rows():
         if hit is None:
             stats["no dedication matched"] += 1
             continue
-        if hit[0] == "names" and len(hit[1]) > 1:
-            stats["two or more dedicatees"] += 1
-            continue
-        value = sq.qid_for_match(hit)
-        if not value:
+        values = sq.qids_for_match(hit)
+        if not values:
             stats["dedicatee has no validated QID"] += 1
             continue
-        if value in INVALID_VALUES:
+        if any(v in INVALID_VALUES for v in values):
             stats["⛔ cultural-property designation refused"] += 1
             continue
         if qid in seen:
-            stats["second statement for one item"] += 1
+            stats["second label for one item"] += 1
             continue
         seen.add(qid)
-        out.append((qid, value))
+        for value in values:
+            out.append((qid, value))
         stats["emitted"] += 1
+        if len(values) > 1:
+            stats["  (of which several dedicatees)"] += 1
     return out, stats
 
 

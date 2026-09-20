@@ -25,6 +25,14 @@ one saint; `holy trinity` and `dreifaltigkeit` are one Trinity. Two table entrie
 that render to the same Japanese string are the same thing, which is the same
 join that took the NAMES coverage from 18 keys to 63.
 
+## ⛔ A rejection is recorded, or it comes back
+
+Round two proposed `諸聖人 -> Q10405623`, the review rejected it as the SWEDISH
+All Saints' Day, and round three proposed the identical line — because nothing
+had written the rejection down. `saint_qids.REJECTED_BY_REVIEW` now holds it, and
+this script filters those candidates out before counting survivors, so a rejected
+answer can never become the single survivor that gets installed.
+
 ## The acceptance rule
 
 A concept is accepted only when **exactly one** search candidate survives the
@@ -96,7 +104,6 @@ QUERY_BY_JA = {
     "恩寵の聖母": "Our Lady of Graces",
     "平和": "Our Lady of Peace",
     "カルメル山の聖母": "Our Lady of Mount Carmel",
-    "聖母訪問": "Visitation of the Blessed Virgin Mary",
     # Second round, 2026-09-20. ⚠ `Mary mother of Jesus` returned ZERO hits —
     # wbsearchentities is not a sentence parser — while `Blessed Virgin Mary`
     # returns Q345 and nothing else survives the class filter. A query that finds
@@ -125,6 +132,13 @@ QUERY_BY_JA = {
     "ニコラオス": "Nicholas of Myra",
     "アントニオ": "Anthony of Padua",
     "フランチェスコ": "Francis of Assisi",
+    # Round three. ⚠ `Visitation of the Blessed Virgin Mary` returned only
+    # churches and a monastery; the bare `Visitation` returns the gospel episode.
+    # A longer query is not a better one — it is a narrower text match.
+    "聖母訪問": "Visitation",
+    "聖家族": "Holy Family",
+    "聖霊": "Holy Spirit",
+    "降誕": "Nativity of Jesus",
 }
 
 
@@ -219,7 +233,9 @@ def resolve(ja, query):
         return None, "search returned nothing for %r" % query
     cls = classes([h[0] for h in hits])
     time.sleep(THROTTLE)
-    kept = [h for h in hits if set(cls.get(h[0], [])) & set(sq.ALLOWED_CLASSES)]
+    kept = [h for h in hits
+            if set(cls.get(h[0], [])) & set(sq.ALLOWED_CLASSES)
+            and not sq.rejected(ja, h[0])]
     if not kept:
         got = "; ".join("%s %s (%s)" % (h[0], h[1], h[2][:30]) for h in hits[:3])
         return None, "no candidate is a dedicatee class — %s" % got
