@@ -63,5 +63,20 @@ jobs:
             "Triggered by [[github:${RUN_PATH}|configure-wikidata-link-grok-categories]]. Re-applied the conditional GROK_BLOCK to the repo file; the next sync_miraheze_unique_pages run will propagate to shinto.miraheze.org.")
           git commit -m "$MSG"
           git pull --rebase origin "${GITHUB_REF_NAME}" 2>/dev/null || true
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          # ⛔ Retry, and go red if it never lands (2026-09-20). A bare push here
+          # discards the commit on one concurrent push or one GitHub 500 — the
+          # failure CLAUDE.md records for commit_state.sh: "concurrent pushes from
+          # other workflow jobs were silently rejecting orchestrator state commits,
+          # and only one ever reached origin over many weeks. Keep the retry."
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then pushed=true; break; fi
+            echo "push rejected (attempt $attempt); rebasing and retrying"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            sleep 5
+          done
+          if [ "$pushed" != true ]; then
+            echo "push still rejected after 5 attempts"
+            exit 1
+          fi
           echo "Pushed."

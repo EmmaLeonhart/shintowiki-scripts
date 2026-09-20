@@ -65,7 +65,33 @@ jobs:
           git stash --include-untracked || true
           git pull --rebase || true
           git stash pop || true
-          git push
+          # ⛔ Retry, and go red if it never lands. Both halves are load-bearing and
+          # this step had neither. A bare `git push` here lost a whole day's work
+          # twice in six days, in two different ways:
+          #   * 2026-09-18, this workflow: `! [rejected] main -> main (fetch first)`
+          #     — an ordinary race. The cleanup loop runs ~26 jobs and several of
+          #     them push to main; the rebase above had already happened when
+          #     another job's push arrived.
+          #   * 2026-09-15, build-run-history.yml (same bare push, now also fixed):
+          #     `! [remote rejected] main -> main (Internal Server Error)` — a
+          #     transient on GitHub's side.
+          # CLAUDE.md already says the retry loop in commit_state.sh is
+          # load-bearing for exactly this: "concurrent pushes from other workflow
+          # jobs were silently rejecting orchestrator state commits". ⚠ `--autostash`
+          # on the retry pull is not optional — the tree is dirty at this point and
+          # `test_the_push_retries_survive_a_dirty_tree` exists because a retry that
+          # cannot pull is not a retry.
+          # ⚠ The `exit 1` is deliberate. A loop that runs out of attempts and falls
+          # through green is the failure generate-quickstatements.yml's own comment
+          # warns about — the work stops landing and nothing ever looks wrong.
+          for attempt in 1 2 3 4 5; do
+            git push && exit 0
+            echo "push rejected (attempt $attempt); rebasing and retrying"
+            git pull --rebase --autostash || true
+            sleep 5
+          done
+          echo "push still rejected after 5 attempts"
+          exit 1
 
       - name: Note the deliberate nonzero exit
         if: steps.qs-submit.outcome != 'success'

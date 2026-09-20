@@ -1,3 +1,64 @@
+## 2026-09-20 (sixth) — four workflows pushed to main with no retry, and two of them lost a day
+
+Work-loop tick. The top queue item is the en-label 429 watch, so the first move was to give it a
+measurement instead of waiting for tomorrow's cron: `gh workflow run
+generate-shrines-missing-en-label.yml`. While that ran, a sweep of the last 200 workflow runs for
+failures turned up something unrelated and older.
+
+### The failures were pushes, not the work
+
+`cleanup-loop` has gone red on 09-13, 09-15 and 09-18. On the two most recent, the failing job had
+nothing wrong with what it computed:
+
+- **09-18 `submit-quickstatements / submit`** — `! [rejected] main -> main (fetch first)`. An
+  ordinary race: the cleanup loop runs **26 jobs**, several of which push to main, and another
+  job's push arrived between this one's rebase and its push. ⚠ The day's Wikidata edits were fine —
+  `direct-daily-edits / edit` ran inside the same loop and succeeded. What was lost is the dated
+  report JSON, and `generate_run_history.py` globs `reports/*.json` to build the published page, so
+  **there is no 09-18 row and there never will be**.
+- **09-15 `build-run-history / build`** — `! [remote rejected] main -> main (Internal Server
+  Error)`, a transient on GitHub's side, same shape.
+
+Both steps ended in a bare `git push` with nothing after it. CLAUDE.md has said what that costs
+since 2026-04-23, about `commit_state.sh`: *"concurrent pushes from other workflow jobs were
+silently rejecting orchestrator state commits, and only one ever reached origin over many weeks.
+Keep the retry — do not replace it with a single-shot push."*
+
+### What was actually missing, measured
+
+Of the **20** push sites in `.github/workflows/`, **16** already retried, guarded with
+`if git push; then`, or fell back with `|| echo WARNING`. **Four** did not:
+
+| workflow | step |
+|---|---|
+| `submit-quickstatements.yml` | Commit and push run report |
+| `build-run-history.yml` | Commit and push run history |
+| `configure-wikidata-link-grok-categories.yml` | Commit + push if the file changed |
+| `wiki-cleanup.yml` | Push remaining state |
+
+⚠ The first grep found only two, because it matched a bare `git push` at end of line and the other
+two push `origin "HEAD:${GITHUB_REF_NAME}"`. The test found the rest — which is the argument for
+writing the test rather than the grep.
+
+All four now retry five times, rebasing with **`--autostash`** between attempts (the tree is dirty
+at that point; `test_the_push_retries_survive_a_dirty_tree` already exists because a retry that
+cannot pull is not a retry), and **exit 1 if the push never lands**.
+
+⛔ **Both halves, deliberately.** A retry loop that falls through green would turn a persistent
+failure into silence — which is the exact trap `generate-quickstatements.yml`'s own comment
+describes: *"a 429 bail reports GREEN and the file silently stops regenerating —
+description_label_pairs.txt sat unchanged from 2026-08-02 through three Sundays and nothing ever
+looked wrong."* Retry so a race costs nothing; still go red so a real problem is visible.
+
+### On the en-label 429 watch
+
+Not concluded at commit time, and not claimed. The dispatched run got **past the shrine Stage 2
+step that 429'd on 09-19 and 09-20**; the temple Stage 2, which is the bigger query (~6,114
+distinct ja labels) and the one named in the workflow's own comment, was still running. The queue
+item stays until a full run is green.
+
+2 new tests in `tests/test_workflow_commit_steps_can_commit.py`; that file 6 pass.
+
 ## 2026-09-20 (fifth) — five days of 429s, and the rule they were breaking
 
 Work-loop tick, and the 90% side finally had something: **`Generate shrines-missing-en-label list`

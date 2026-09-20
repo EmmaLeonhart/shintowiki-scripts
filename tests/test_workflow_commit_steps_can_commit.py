@@ -140,3 +140,66 @@ def test_the_push_retries_survive_a_dirty_tree():
         assert "--autostash" in match.group(1), (
             "a push-retry pulls with rebase and no --autostash; it will die on "
             "'cannot pull with rebase: You have unstaged changes'")
+
+
+def _push_lines(block):
+    """Lines that invoke `git push`, stripped, comments removed."""
+    for line in block.splitlines():
+        code = line.strip()
+        if code.startswith("#"):
+            continue
+        if re.match(r"^git push(\s|$)", code):
+            yield code
+
+
+def test_no_workflow_pushes_without_a_recovery_path():
+    """A bare `git push` with nothing after it loses the commit on any rejection.
+
+    Two workflows had one, and both lost a day's work inside six days:
+
+      * 2026-09-18 `submit-quickstatements.yml` — `! [rejected] main -> main
+        (fetch first)`. An ordinary race: the cleanup loop runs 26 jobs, several
+        push to main, and the rebase two lines above had already happened when
+        another job's push arrived. The day's dated report JSON was computed and
+        thrown away, so `generate_run_history.py` — which globs `reports/*.json`
+        to build the published page — has no 09-18 row and never will.
+      * 2026-09-15 `build-run-history.yml` — `! [remote rejected] main -> main
+        (Internal Server Error)`, a transient on GitHub's side.
+
+    ⚠ The other eighteen push sites in `.github/workflows/` were already fine:
+    they retry in a loop, or guard with `if git push`, or `|| echo WARNING`. This
+    is not a new convention — it is the two places that never got it. CLAUDE.md
+    says the same thing about `commit_state.sh`: "concurrent pushes from other
+    workflow jobs were silently rejecting orchestrator state commits, and only
+    one ever reached origin over many weeks. Keep the retry."
+    """
+    offenders = []
+    for filename, text in _workflow_files():
+        for name, block in _steps_with_run(text):
+            for code in _push_lines(block):
+                # A recovery path is anything that reacts to the exit status:
+                # `&& break`, `&& exit 0`, `|| { … }`, `|| echo WARNING`, or an
+                # `if git push; then …` wrapper (which starts with "if", so it
+                # never reaches _push_lines).
+                if "&&" not in code and "||" not in code:
+                    offenders.append("%s: %s" % (filename, name))
+    assert not offenders, (
+        "these push with no retry and no fallback, so one concurrent push or one "
+        "GitHub 500 discards the commit: %s" % offenders)
+
+
+def test_the_two_repaired_steps_retry_and_still_go_red():
+    """Both halves. A retry alone would turn a persistent failure green, which is
+    the trap `generate-quickstatements.yml`'s own comment describes — the work
+    stops landing and nothing ever looks wrong."""
+    for filename in ("submit-quickstatements.yml", "build-run-history.yml"):
+        text = open(os.path.join(WORKFLOWS, filename), encoding="utf-8").read()
+        block = next(b for n, b in _steps_with_run(text) if n.startswith("Commit"))
+        body = "\n".join(l for l in block.splitlines()
+                         if not l.strip().startswith("#"))
+        assert "for attempt in 1 2 3 4 5; do" in body, filename
+        assert "git pull --rebase --autostash" in body, (
+            "%s retries with a pull that cannot run against its own dirty tree"
+            % filename)
+        assert body.rstrip().endswith("exit 1"), (
+            "%s falls out of the retry loop green" % filename)
