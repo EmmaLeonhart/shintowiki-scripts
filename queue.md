@@ -55,11 +55,15 @@ from `ATOMIC_FILES`; they are not queue items.
   ✓ The QID half is DONE and validated — `saint_qids.py`, 48 terms, built 2026-09-19. Emma ruled the
   same day that the **QID identifies and the TABLE renders**, so this emits a statement and changes
   no label.
-  ⚠ What is left is the JOIN, and it is the whole remaining job: the morpheme table keys on bare
-  tokens (`andrew`, `nicholas`) while `saint_qids` keys on phrases (`Saint Andrew`,
-  `Our Lady of Kazan`). Measure the join before writing the generator — how many of the 7,599
-  table-path items reach a validated QID is not known, and 48 terms is a small map against ~200
-  table rows.
+  ✓ The JOIN is measured and the seam exists: `match_dedication()` names which table entry a label
+  matched (2026-09-19), which is what a statement needs. **2,153 of 8,080 table-path items reach a
+  validated QID.**
+  ⚠ The limit is the SEED, not the join. The commonest dedications have no QID at all — `holy
+  trinity` 196, `martin` 163, `assunta` 106, `madonna` 105, `peter paul` 99, `notre dame` 97,
+  `mariä himmelfahrt` 90, `christus` 89. Resolving those ~12 keys would roughly double the yield,
+  and each needs the same `ALLOWED_CLASSES` validation — the 101-row seed was 52% wrong and a
+  fresh lookup will be too.
+  ⚠ Decide before writing the generator whether 2,153 ships on its own or waits for the top keys.
 - [ ] Religious buildings: render BOTH dedications (Emma, same day). `Sint-Bartholomeus- en
   Barbarakerk`, `Saints Apostles Peter and Paul church in …`. Needs a join word per language and
   the Dutch hyphen-elision form.

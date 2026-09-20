@@ -1,3 +1,73 @@
+## 2026-09-19 (tenth) — naming the match, and three alarms that were nothing
+
+Work-loop tick. The 90% side had no local item available — the shrine and temple label pipeline has
+no parsing gap I can find, and `remote_queue.json`'s 1,631 items belong to the cloud routine, which
+⛔ a local session must not drain (`apply_local_answers.py` was deleted for exactly that). So this is
+the 10% item I had named as next.
+
+### ⛔ Three alarming readings, all checked before reporting, all nothing
+
+- **"40 QuickStatements files totalling ~71,000 lines are unregistered."** I read
+  `submit_daily_batch.ATOMIC_FILES` (42 entries) — the RETIRED path. `direct_daily_edits` has **85**
+  and carries 67 of the 68 files. This is the exact shape CLAUDE.md warns about: absence of
+  information read as a defect.
+- **"`p958_by_entry.txt` is generated and nothing submits it."** True, and deliberate. Emma,
+  2026-08-25: *"This is incomprehensible… I think you turned a minor question into a bizarre
+  operation."* Both section-qualifier files were unregistered; the per-entry one stays in the tree
+  because its method is sound but *"does not ship until there is one comprehensible thing rather
+  than two."*
+- **"The DEVLOG says it was registered in ATOMIC_FILES."** It was, for about four hours, and the
+  next commit unregistered it. The entry was true when written.
+
+### ⭐ `match_dedication()` — the seam a statement needs
+
+`dedication()` returned a rendered STRING, which is the one thing `P825` cannot use: 安德肋 does not
+identify anybody, `Q43399` does. The match is split out so the entry can be named, and `dedication()`
+renders from it — **one** implementation of the precedence, not two. That precedence has already
+been wrong twice (length beating priority; the fix doing nothing because the feast table was
+English-only), so a second copy walking the same tables was not worth the risk.
+
+Verified by regenerating all three languages: **ja and ko byte-identical, zh one line.**
+
+### ⛔ The third way the precedence was wrong: equal-length phrases had no tie-break
+
+`Schmerzhafte Muttergottes` matches both `muttergottes` and `schmerzhafte` — 12 characters each — so
+the winner came from **set iteration order**, which moves whenever anything else is added to the
+set. My refactor perturbed it and the zh label silently changed from 天主之母 to 痛苦圣母.
+
+The new answer is the better one — it *is* the Sorrowful Mother of God — but it got there by luck,
+and an output that flips on set ordering is worse than either answer. Both scans now sort
+`(-len, phrase)`, and the real case is settled by the table rather than by a tie-break:
+`schmerzhafte muttergottes` is a phrase of its own, so the longest-match rule decides it.
+
+### The measurement, and two wrong numbers on the way to it
+
+**2,153 of 8,080 table-path items reach a validated QID.** Getting there took two wrong answers,
+both worth recording because each looked reasonable:
+
+- **1,601** — a substring join against the raw label. Too high: `anne` is inside `Annecy`, `paul`
+  inside `Paulo`.
+- **979** — joining on the matched key, but on one spelling only. Too low: `NAMES` holds a key per
+  spelling (`andrea`/`andrew`/`andré`/`andrés`) and an audit term matches just one of them. Two
+  NAMES keys with the same ja rendering are the same saint, and expanding those siblings took the
+  covered keys from 18 to **63**.
+
+⚠ **The limit is the seed, not the join.** The commonest dedications have no QID at all — `holy
+trinity` 196, `martin` 163, `assunta` 106, `madonna` 105, `peter paul` 99, `notre dame` 97. Twelve
+more lookups would roughly double the yield, and each needs the same validation, because the 101-row
+seed was 52% wrong and a fresh lookup will be too.
+
+⚠ **`P825` is still not emitted.** 2,153 is worth shipping and so is doubling it first; that is a
+scope call and the queue now carries the number rather than a guess.
+
+### Three of my own tests were wrong about the data, none about the code
+
+`Saints Peter and Paul` and `Santi Pietro e Paolo` are both in `NAME_PHRASES`, so neither is a
+two-name example; a bare `大神宮` has no stem; `Sant'Andrea` matches the spelling the label used,
+not the canonical key. Each was my assumption, corrected against what the tables actually hold.
+
+21 new tests. Full suite 2,890 pass.
+
 ## 2026-09-19 (ninth) — the dedication QID seed was 52% wrong
 
 Work-loop tick, the 10% item that was due. `paused/table_audit.tsv` resolves 101 dedication terms to

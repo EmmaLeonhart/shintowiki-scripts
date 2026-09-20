@@ -830,6 +830,12 @@ _GERMAN_DEDICATIONS = {
     "geist": "holy spirit",
     "allerheiligen": "all saints",
     "immaculata": "conception",
+    # ⭐ The compound, so the longest-phrase rule settles it instead of a tie:
+    # `Schmerzhafte Muttergottes` is the Sorrowful Mother of God, i.e. Our Lady
+    # of Sorrows, and matching the bare `muttergottes` dropped the sorrow.
+    "schmerzhafte muttergottes": "sorrows",
+    "schmerzhafter muttergottes": "sorrows",
+    "schmerzhaften muttergottes": "sorrows",
     "schmerzhaften": "sorrows",
     "schmerzhafte": "sorrows",
     "mariä heimsuchung": "visitation",
@@ -1178,8 +1184,24 @@ def _unfold_tokens(label, folded_tokens):
     return [originals.get(t, t) for t in folded_tokens]
 
 
-def dedication(label, lang, rules="it", latin_rules=None):
-    """The dedication rendered in `lang`, or None if any part is unknown."""
+def match_dedication(label):
+    """WHICH table entry the label matches, or None — the precedence, once.
+
+    Returns `(kind, key, extra)`:
+
+        ("specific", phrase, None)        a feast or named devotion
+        ("generic",  phrase, residue)     a bare Marian title + leftover tokens
+        ("phrase",   joined, saw_saint)   a NAME_PHRASES compound saint
+        ("names",    [keys], saw_saint)   one or more NAMES entries
+
+    ⭐ Split out of `dedication()` on 2026-09-19 so a `P825` statement can name
+    the dedicatee. `dedication()` returned a rendered STRING, which is the one
+    thing a statement cannot use — 安德肋 does not identify anybody, Q43399 does.
+    A second function walking the same tables would have been a second copy of
+    the precedence below, and that precedence has already been wrong twice (see
+    the length-vs-priority note). So there is one implementation and
+    `dedication()` renders from it.
+    """
     # Hyphens joined the phrase in the corpus ("Notre-Dame", "Herz-Jesu"), so the
     # phrase lookup saw "notre-dame" and missed. 111 labels turned on this alone.
     low = re.sub(r"[-–—']", " ", _norm(label))
@@ -1196,12 +1218,19 @@ def dedication(label, lang, rules="it", latin_rules=None):
     # feast or event is always more specific than the Marian title carrying it,
     # so SPECIFIC is checked first and only then the generic titles; within each
     # group, longest first so "sacred heart" still beats a bare "heart".
+    # ⛔ `key=len, reverse=True` alone leaves EQUAL-LENGTH phrases in set
+    # iteration order, which is arbitrary and moves whenever anything else is
+    # added to the set. `Schmerzhafte Muttergottes` matches both `muttergottes`
+    # and `schmerzhafte` — 12 characters each — and silently changed answer on
+    # 2026-09-19 when an unrelated refactor perturbed the order. An output that
+    # flips on set ordering is worse than either answer, so the tie breaks
+    # alphabetically and the table settles the real case with a longer phrase.
     folded = _folded_group(SPECIFIC_DEDICATIONS)
-    for phrase in sorted(folded, key=len, reverse=True):
+    for phrase in sorted(folded, key=lambda p: (-len(p), p)):
         if phrase in low:
             # A feast names WHICH dedication, so the Marian title it rides on is
             # correctly subsumed and any residue is that carrier.
-            return DEDICATIONS[folded[phrase]][lang]
+            return ("specific", folded[phrase], None)
 
     # ⛔ A GENERIC title is only acceptable when there is nothing left over.
     # Emma, 2026-09-18: "Refuse each one until the table individual qualifier is
@@ -1209,36 +1238,55 @@ def dedication(label, lang, rules="it", latin_rules=None):
     # — true, unique once the place is prefixed, and less specific than the
     # source said. A bare "Madonna" has no qualifier to lose and still resolves.
     folded = _folded_group(GENERIC_DEDICATIONS)
-    for phrase in sorted(folded, key=len, reverse=True):
+    for phrase in sorted(folded, key=lambda p: (-len(p), p)):
         if phrase in low:
-            residue = _qualifier_residue(low, phrase)
-            if not residue:
-                return DEDICATIONS[folded[phrase]][lang]
-            # A qualifier the table cannot name. For ja it can still be read by
-            # rule if it is a Romance locality; for zh/ko it cannot, and the
-            # refusal stands.
-            if lang not in _QUALIFIER_LANGS:
-                return None
-            kana = qualifier_kana(_unfold_tokens(label, residue), rules,
-                                  latin_rules)
-            if not kana:
-                return None
-            return kana + "の" + DEDICATIONS[folded[phrase]][lang]
+            return ("generic", folded[phrase], _qualifier_residue(low, phrase))
+
     tokens, saw_saint = parse_name(label)
     if not tokens:
         return None
     joined = " ".join(tokens)
     if joined in NAME_PHRASES:
-        return SAINT_PREFIX[lang] + NAME_PHRASES[joined][lang] if saw_saint             else NAME_PHRASES[joined][lang]
-    rendered = []
+        return ("phrase", joined, saw_saint)
+    keys = []
     for t in tokens:
         if t in SELF_SAINT:
             saw_saint = True
         key = name_key(t)
         if key is None:
             return None          # unknown name — caller decides, not this module
-        rendered.append(NAMES[key][lang])
-    core = "".join(rendered)
+        keys.append(key)
+    return ("names", keys, saw_saint)
+
+
+def dedication(label, lang, rules="it", latin_rules=None):
+    """The dedication rendered in `lang`, or None if any part is unknown."""
+    hit = match_dedication(label)
+    if hit is None:
+        return None
+    kind, key, extra = hit
+    if kind == "specific":
+        return DEDICATIONS[key][lang]
+    if kind == "generic":
+        residue = extra
+        if not residue:
+            return DEDICATIONS[key][lang]
+        # A qualifier the table cannot name. For ja it can still be read by
+        # rule if it is a Romance locality; for zh/ko it cannot, and the
+        # refusal stands.
+        if lang not in _QUALIFIER_LANGS:
+            return None
+        kana = qualifier_kana(_unfold_tokens(label, residue), rules,
+                              latin_rules)
+        if not kana:
+            return None
+        return kana + "の" + DEDICATIONS[key][lang]
+    if kind == "phrase":
+        saw_saint = extra
+        return (SAINT_PREFIX[lang] + NAME_PHRASES[key][lang] if saw_saint
+                else NAME_PHRASES[key][lang])
+    keys, saw_saint = key, extra
+    core = "".join(NAMES[k][lang] for k in keys)
     if saw_saint:
         core = SAINT_PREFIX[lang] + core
     return core
