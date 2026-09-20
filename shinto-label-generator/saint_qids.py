@@ -102,6 +102,14 @@ ALLOWED_CLASSES = {
     "Q1509831": "titles of Mary, mother of Jesus",
     "Q507850": "Marian apparition",
     "Q620749": "dogma",
+    # ⭐ Added 2026-09-20 from measured evidence, not intuition: the 101-row seed
+    # was people-heavy and never contained a devotion or a feast, so the first
+    # allow-list refused `Holy Trinity`, `Sacred Heart` and `Intercession of the
+    # Theotokos` — each of them the correct answer, each refused for a class the
+    # sample happened not to include.
+    "Q3045134": "Christian dogma",
+    "Q2634521": "title of Jesus",          # the parallel of Q1509831 for Mary
+    "Q1445650": "holiday",                 # a feast; the narrower Q375011 missed it
     "Q375011": "religious holiday",
     "Q106355253": "gospel episode",
     "Q13418847": "historical event",
@@ -225,3 +233,55 @@ def qid_for(term):
     `REFUSED` — that is the wrong answer, kept on purpose.
     """
     return SAINT_QIDS.get(term)
+
+# ⭐ Dedication CONCEPTS, keyed by what the table renders them as (2026-09-20).
+#
+# The unit is the concept, not the table key: `assunta`, `asunción` and
+# `mariä himmelfahrt` are one Assumption, `martin` and `martino` one saint. Two
+# table entries that render to the same Japanese string are the same thing —
+# the join that took NAMES coverage from 18 keys to 63.
+#
+# Every line was produced by `resolve_dedication_qids.py`, which searches, then
+# filters on ALLOWED_CLASSES, then accepts ONLY when exactly one candidate
+# survives — and then read by hand, because a search engine's first hit is what
+# made the 101-row seed 52% wrong. The refusals it printed are in the docstring
+# of that script; they are refusals of behaviour, not of the concept.
+QID_BY_RENDERING = {
+    "至聖三者":        "Q37090",     #  297 slots  Holy Trinity — Christian conception of God a
+    "聖母被昇天":       "Q162691",    #  262 slots  Assumption of Mary — the bodily taking up of
+    "マルティヌス":      "Q133704",    #  232 slots  Martin of Tours — Christian saint (c.316/336
+    "洗礼者ヨハネ":      "Q40662",     #  190 slots  John the Baptist — 1st-century Jewish itiner
+    "イエスの聖心":      "Q408284",    #  189 slots  Sacred Heart — Christian devotion symbolisin
+    "ラウレンティウス":    "Q17590",     #  143 slots  Lawrence of Rome — Christian saint, martyr a
+    "生神女誕生":       "Q501107",    #  121 slots  Nativity of Mary — feast day
+    "生神女庇護":       "Q1410684",   #  111 slots  Intercession of the Theotokos — protection o
+    "ロクス":         "Q152457",    #  104 slots  Saint Roch — Christian saint (c.1348 - c.137
+    "カルメル山の聖母":    "Q1065053",   #  103 slots  Our Lady of Mount Carmel — title of the Virg
+    "主の変容":        "Q201201",    #   91 slots  Transfiguration of Jesus — episode in the li
+    "主の昇天":        "Q5686605",   #   82 slots  Ascension of Jesus — in Christianity, the de
+    "生神女就寝":       "Q4069073",   #   65 slots  Dormition of the Mother of God — Great Feast
+    "恩寵の聖母":       "Q1636804",   #   65 slots  Our Lady of Graces — title of the Virgin Mar
+}
+
+
+def qid_for_match(hit):
+    """The QID for a `match_dedication()` result, or None.
+
+    ⛔ Returns None for a multi-name match. `Santi Martino e Giorgio` is
+    dedicated to two saints and `P825` would need two statements; emitting
+    one of them silently asserts the label names one dedicatee. The caller
+    decides whether to emit a pair, which is not a decision this file makes.
+    """
+    if not hit:
+        return None
+    kind, key, _extra = hit
+    import religious_building_morphemes as _m
+    if kind in ("specific", "generic"):
+        row = _m.DEDICATIONS.get(key)
+    elif kind == "phrase":
+        row = _m.NAME_PHRASES.get(key)
+    else:
+        if len(key) != 1:
+            return None
+        row = _m.NAMES.get(key[0])
+    return QID_BY_RENDERING.get(row["ja"]) if row else None

@@ -55,15 +55,19 @@ from `ATOMIC_FILES`; they are not queue items.
   ✓ The QID half is DONE and validated — `saint_qids.py`, 48 terms, built 2026-09-19. Emma ruled the
   same day that the **QID identifies and the TABLE renders**, so this emits a statement and changes
   no label.
-  ✓ The JOIN is measured and the seam exists: `match_dedication()` names which table entry a label
-  matched (2026-09-19), which is what a statement needs. **2,153 of 8,080 table-path items reach a
-  validated QID.**
-  ⚠ The limit is the SEED, not the join. The commonest dedications have no QID at all — `holy
-  trinity` 196, `martin` 163, `assunta` 106, `madonna` 105, `peter paul` 99, `notre dame` 97,
-  `mariä himmelfahrt` 90, `christus` 89. Resolving those ~12 keys would roughly double the yield,
-  and each needs the same `ALLOWED_CLASSES` validation — the 101-row seed was 52% wrong and a
-  fresh lookup will be too.
-  ⚠ Decide before writing the generator whether 2,153 ships on its own or waits for the top keys.
+  ✓ The seam and the map are both done. `match_dedication()` names which table entry matched;
+  `saint_qids.qid_for_match()` turns that into a QID; `resolve_dedication_qids.py` is the
+  reproducible lookup. **4,155 of 8,080 table-path items reach a validated QID** (2,153 → 4,155 on
+  2026-09-20, from 14 concept lookups).
+  ⚠ WRITE THE GENERATOR NEXT — that is the whole remaining step, and it SHIPS what is validated
+  rather than waiting for the rest. Add-only, reversible, and the drip owns the rate; more concepts
+  resolve later and the file regenerates.
+  ⚠ Two shapes the generator must handle, both already surfaced: a two-saint dedication needs TWO
+  statements and `qid_for_match` deliberately returns None for it; and assert the values carry no
+  cultural-property designation, per the `INVALID_HONZON` rule, even though none of the 14 is one.
+  ⚠ The next lookup round is the refusals `resolve_dedication_qids.py` prints — `聖母` 489 (the
+  query returns nothing), `聖十字架` 257 and `十字架挙栄` 97 (correct items with NO P31 at all, which
+  the class filter cannot clear), `ヨハネ` 171 and `キリスト` 90 (genuinely ambiguous).
 - [ ] Religious buildings: render BOTH dedications (Emma, same day). `Sint-Bartholomeus- en
   Barbarakerk`, `Saints Apostles Peter and Paul church in …`. Needs a join word per language and
   the Dutch hyphen-elision form.

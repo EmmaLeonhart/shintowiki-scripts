@@ -1,3 +1,65 @@
+## 2026-09-20 — 2,153 → 4,155, and an allow-list that was wrong the way its sample was
+
+Work-loop tick. The named next step: resolve the dedication concepts that had no QID.
+
+### The unit was wrong before it was measured
+
+271 table keys are unresolved — but they collapse to **29 concepts**. `assunta`, `asunción` and
+`mariä himmelfahrt` are one Assumption; `martin` and `martino` one saint; `holy trinity` and
+`dreifaltigkeit` one Trinity. Two table entries that render to the same Japanese string are the same
+thing, which is the join that took NAMES coverage from 18 keys to 63 yesterday. 29 lookups, not 271.
+
+### `resolve_dedication_qids.py`, and why it is a script
+
+The 101-row seed was an ad-hoc lookup and was **52% wrong**. There is no reason a second hand lookup
+would be cleaner, so this one states its query, filters on `ALLOWED_CLASSES`, and accepts **only when
+exactly one candidate survives** — then gets read by hand. It proposes; it does not install.
+
+⭐ **Its refusals are the evidence it works.** `Sacred Heart` returned a university and a Dio album
+above the devotion. `Saints Peter and Paul` returned three paintings. `Exaltation of the Holy Cross`
+returned a painting and a church in Jelenia Góra. A first-hit lookup takes every one of those.
+
+### ⛔ The allow-list was wrong in exactly the direction its sample made likely
+
+Drawn from a people-heavy 101-row seed, it had no class for a DEVOTION, a CHRISTIAN DOGMA or a
+FEAST — so it refused `Holy Trinity`, `Sacred Heart` and `Intercession of the Theotokos`, **each of
+them the correct answer**. Widened by three classes taken from the measured `P31` of the three items
+it was refusing, not from intuition: `Q3045134` Christian dogma, `Q2634521` title of Jesus (the
+parallel of the `Q1509831` titles-of-Mary it already had), `Q1445650` holiday.
+
+⚠ That is the second time this seed's shape has misled a rule built on it. The first was reading
+"All Saints is a girl group" as one bad row when 52 were.
+
+### What landed
+
+14 concepts, every line read against its label and description before installing. Two of them —
+the Assumption and Our Lady of Graces — were already in the term map under a different key and
+agree, which is a free cross-check and is now a test.
+
+**4,155 of 8,080 table-path items reach a validated QID, up from 2,153.**
+
+### What is refused, and honestly
+
+- `聖母` (489 slots): the query returned nothing at all. A query problem, not a data problem.
+- `聖十字架` 257 and `十字架挙栄` 97: `True Cross` and `Feast of the Cross` carry **no P31 at all**,
+  so the class filter cannot clear them. Unlisted means refuse and so does unclassified — these are
+  correct answers this method cannot verify, not wrong ones.
+- `ヨハネ` 171 and `キリスト` 90: genuinely ambiguous. A bare `Johannes` is the Evangelist or John of
+  Patmos and the label does not say.
+
+### A repo guard caught a real defect in my new file
+
+`tests/test_sys_path_bootstrap_ordering.py` failed: the script imported `shinto_miraheze` with no
+`sys.path` bootstrap, so `python shinto-label-generator/resolve_dedication_qids.py` would have
+raised `ModuleNotFoundError` from any cwd. It then caught the same file a second time for spelling
+the bootstrap `os.path` where the guard matches the repo's `_uos` idiom literally. Both were my
+defects and both were caught before push.
+
+⚠ **`P825` is still not emitted**, and the queue now says to write the generator next and to ship
+the 4,155 rather than wait — add-only, reversible, and the drip owns the rate.
+
+18 new tests. Full suite 2,908 pass.
+
 ## 2026-09-19 (tenth) — naming the match, and three alarms that were nothing
 
 Work-loop tick. The 90% side had no local item available — the shrine and temple label pipeline has
