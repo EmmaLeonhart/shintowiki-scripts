@@ -178,9 +178,22 @@ def test_the_five_families_are_wired():
 
 
 def test_an_unlisted_country_still_refuses():
-    """⚠ The doctrine is unchanged and the countries testing it moved. Sweden,
-    Finland and Armenia have no rule set and are not getting one from a guess."""
-    for country in ("Q34", "Q33", "Q399", "Q55"):
+    """⚠ The doctrine is unchanged and the countries testing it moved — again.
+
+    2026-09-20: **Q55 Netherlands left this list**, because Emma asked for it by
+    name. Shown the measurement (492 of the 1,119 long-tail labels are in the
+    local language, 304 of them Dutch) and asked which families to build, she
+    answered *"All four — nl, sv, no, da"*. So Dutch is an instruction, not the
+    guess this test guards against, and Sweden will leave the same way when `sv`
+    is built.
+
+    ⛔ What is NOT allowed to change is the doctrine: unlisted means refuse. The
+    two left here are the interesting cases, and they stay refused for a reason
+    that is not "nobody has got to them" — Finland is 29 of 36 English-labelled
+    and Armenia 48 of 51, so their labels are not in the local language at all
+    and belong to the placename path, not to a transliteration family.
+    """
+    for country in ("Q33", "Q399"):
         assert p.rules_for_country(country) is None
 
 

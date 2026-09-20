@@ -111,7 +111,12 @@ _RULES = {
     "de": [
         ("tsch", _CH), ("sch", "sh"),
         ("chs", "ks"), ("ch", _H),
-        ("ck", "kk"), ("ph", "f"), ("th", "t"), ("qu", "kv"), ("x", "ks"),
+        # ⚠ `qu -> kw`, not `kv`. Written `kv`, the `v -> f` rule two lines down
+        # ate it and `Quelle` came back クフェレ, `Quirinus` クフィリヌス — found
+        # 2026-09-20 while building the Dutch family, which has the same pair.
+        # `kw` survives that rule and German's own `w -> v` restores it: クヴェレ.
+        # 2 labels in the corpus are affected, both `St. Quirin`.
+        ("ck", "kk"), ("ph", "f"), ("th", "t"), ("qu", "kw"), ("x", "ks"),
         ("tz", "tts"), ("z", "ts"),
         ("v", "f"), ("w", "v"), ("j", "y"),
         # Diphthongs and written length. `eu`/`äu` are /ɔʏ/ (Häuser ホイザー),
@@ -231,6 +236,42 @@ _RULES = {
         ("th", "t"), ("dh", "d"),
         ("c", "ch"), ("q", "k"),
     ],
+    # Dutch. 304 of the 492 native-language long-tail labels, and the most
+    # regular of the four Germanic families Emma asked for on 2026-09-20.
+    #
+    # ⚠ Order is load-bearing, as everywhere here. `sch` must beat `ch`; `ij`
+    # must be resolved before the bare `j -> y` rule, or Rijk becomes リユク;
+    # `ui`/`ou`/`ei` must beat their own single letters.
+    "nl": [
+        # ⚠ `sch` and `cht` are BOTH resolved in `_pre_dutch` — the first because
+        # a bare s beside an h is read as one consonant by the kana grid, the
+        # second because its fricative takes a different column. What reaches
+        # here is the remaining plain `ch`.
+        ("ch", _H),
+        # ⛔ `qu` FIRST, before the vowel digraphs. `Quirinuskerk` — the one word
+        # of the 304 this family could not read — contains `ui` inside its `qui`,
+        # and the vowel rule fired there, leaving a bare `q` that nothing can
+        # read: quirinuskerk -> qaurinuskerk -> refused.
+        # ⚠ And `kw`, not `kv`: German writes `kv` and its own `v -> f` two rules
+        # later turns that into `kf` (Quelle -> クフェレ). Dutch leaves `w` alone,
+        # so `kw` lands on the ワ row: クウィリヌスケルク.
+        ("qu", "kw"),
+        # The digraph vowels. `ij` is /ɛi/ (Rijn ライン), `ui` is /œy/, which
+        # Japanese has written アウ since Huis ten Bosch ハウステンボス.
+        ("ij", "ai"), ("ui", "au"), ("ou", "au"), ("au", "au"),
+        ("ei", "ai"), ("ey", "ai"),
+        ("oe", "u" + _CHOONPU), ("eu", "u" + _CHOONPU), ("ie", "i" + _CHOONPU),
+        ("ph", "f"), ("th", "t"), ("x", "ks"),
+        # ⚠ v is /v/ but word-initial Dutch devoices it, and Japanese has
+        # followed that for centuries: Van Gogh is ファン, Vermeer フェルメール.
+        # w is NOT German w — it is /ʋ/, the ワ row, which `_EXTRA["w"]` carries.
+        ("v", "f"),
+        ("j", "y"),
+        # A bare c is a loan letter: /s/ before a front vowel, /k/ elsewhere.
+        # Last, so it cannot touch the c of `sch` or `ch`, both resolved above.
+        ("ce", "se"), ("ci", "si"), ("cy", "si"), ("c", "k"),
+        (_H, "h"),
+    ],
 }
 
 # Malay ŋ with no following vowel: Mungsolkanas is mung-sol, not mun-gu-sol.
@@ -268,6 +309,11 @@ _FOREIGN = {
     # the string is not a transcription and this family has no business reading
     # it. The apostrophe of a soft sign is stripped by `_pre_russian` first.
     "ru": set("čćšžđłąęńśźżıəğşßñçäöüàâéèêëîïôùûý"),
+    # Dutch has no haceks, no Polish letters, no Romance accents beyond the
+    # trema (which `_pre_dutch` removes before this runs), no Turkish letters,
+    # and no German szlig. ⚠ It DOES have q/x/y, unlike Polish, and it is the
+    # only family here whose ij is a letter pair rather than a diacritic.
+    "nl": set("čćšžđłąęńśźżıəğşßñçàâêîôùûáíóúýéè"),
 }
 
 # Loanword columns the bare kana grid does not carry. Turkish and Malay tu/ti
@@ -290,7 +336,11 @@ _EXTRA = {
 # Mannheim マンハイム, not ミュッレル and マンンハイム, while Göttingen really is
 # ゲッティンゲン and Rostock ロストック. So l/m/n/r collapse to a single consonant
 # in `_pre_german` and never reach this set.
-_GEMINATES = {"de": set("ptkbdgsfzh")}
+# ⚠ Dutch doubles a consonant to mark the vowel BEFORE it short, not to
+# geminate the consonant: Bakker is バッケル and Hogendijk ホーヘンダイク,
+# so the obstruent set is the same as German's and l/m/n/r stay single for
+# the same reason — Willem is ウィレム, not ウィッレム.
+_GEMINATES = {"de": set("ptkbdgsfzh"), "nl": set("ptkbdgsfzh")}
 
 # A palatal with no vowel after it takes the i column, not the u column: the nj
 # of Vrbanjska is ヴルバニスカ, not ヴルバニュスカ.
@@ -626,6 +676,73 @@ def _pre_russian(word):
     return w
 
 
+# ------------------------------------------------------------------ Dutch
+# Added 2026-09-20 on Emma's "All four — nl, sv, no, da", asked with the
+# measurement in front of her: of the 1,119 long-tail religious buildings with no
+# family, 492 are in the local language and **304 of those are Dutch** — the
+# single biggest block left.
+#
+# ⛔ THE COMPOUND IS THE CORPUS, and it is why this family is tractable.
+# `kerk` appears in **232 of the 304** labels, almost always glued to the end of
+# a name: Bonifatiuskerk, Fonteinkerk, Zeemanskerk. Dutch compounds are written
+# solid, so a letter-wise reader walks straight across the seam. Splitting the
+# type word off FIRST is not a convenience — it is what keeps the two halves'
+# phonology apart, and it is the same move the Swedish family will need for
+# `kyrka` (68 of 84) and the Nordic ones for `kirke`.
+_NL_TYPE = re.compile(r"(kerk(?:je|en)?|kapel|klooster|synagoge|basiliek|"
+                      r"kathedraal|moskee|tempel)$")
+# Trema. Dutch ë ï ü ö do not change the vowel — they mark that it starts a new
+# syllable rather than joining the one before (België, ruïne). The syllable break
+# is already implied by reading the vowels separately, so the mark just goes.
+# ⛔ The TREMA only — not the acute or the grave. Folding é to e let `Pitié`
+# through the foreign-letter gate and this family read it as ピティー, which
+# is the exact confident-wrong failure the module docstring exists to warn
+# about. Measured: **0** of the 304 Netherlands labels carry an acute or a
+# grave, so refusing them costs nothing and buys the French refusal back.
+_NL_TREMA = {"ë": "e", "ï": "i", "ü": "u", "ö": "o"}
+# ⚠ Word-final `-sch` is a fossil spelling pronounced /s/: Bosch is ボス, which
+# is why Huis ten Bosch is ハウステンボス and not ハウステンボスフ. Elsewhere
+# `sch` is /sx/, two sounds — Scheveningen スヘフェニンゲン.
+_NL_FINAL_SCH = re.compile(r"sch(?=$|[^aeiou])")
+# ⛔ `-cht` is everywhere in Dutch placenames — Utrecht, Dordrecht, Sliedrecht,
+# Maastricht — and the fricative takes the ヒ column there, not フ: Utrecht is
+# ユトレヒト and Maastricht マーストリヒト. Left to the grid's bare-h default it
+# came back ウトレフト and マーストリフト.
+_NL_CHT = re.compile(r"cht")
+# ⛔ `sch` is s + the fricative, TWO sounds, and writing it as a bare `s` next to
+# an `h` is not enough: the kana grid reads `sh` as one consonant, so
+# Scheveningen came back シェフェニンゲン. It is スヘフェニンゲン. Forcing the
+# ス explicitly is what keeps the two apart.
+_NL_SCH = re.compile(r"sch")
+# Dutch doubles a consonant to mark the vowel before it short. For the obstruents
+# that is the ッ `_GEMINATES` writes (Bakker バッケル); for l/m/n/r there is no
+# geminate at all and the pair is one consonant — Willem is ウィレム, and left
+# alone it came back ウィルレム.
+_NL_COLLAPSE = re.compile(r"([lmnr])\1")
+# ⚠ `ieuw` is not i + eu + w. It is /iu/ and Japanese has written it ニュー since
+# Nieuw Amsterdam: nieuwe -> ニューウェ. Read letter-wise, with `eu` winning over
+# `ie`, it came back ニウーウェ.
+_NL_IEUW = re.compile(r"ieuw")
+
+
+def _pre_dutch(word):
+    """Trema, the final -sch fossil, and the digraph vowels.
+
+    ⚠ Dutch spells its long vowels doubled (aa ee oo uu), and `_DOUBLE_VOWEL`
+    below already turns any doubled vowel into vowel + ー. So they are NOT in the
+    table: adding them would have written the ー twice.
+    """
+    w = unicodedata.normalize("NFC", word).lower()
+    for a, b in _NL_TREMA.items():
+        w = w.replace(a, b)
+    w = _NL_FINAL_SCH.sub("s", w)
+    w = _NL_IEUW.sub("yu" + _CHOONPU + "w", w)
+    w = _NL_CHT.sub(_H + "it", w)
+    w = _NL_SCH.sub("su" + _H, w)
+    w = _NL_COLLAPSE.sub(r"\1", w)
+    return w
+
+
 _DOUBLE_VOWEL = re.compile(r"([aeiou])\1")
 
 
@@ -641,8 +758,11 @@ _MS_ONSETS = {"br", "bl", "dr", "kr", "kl", "pr", "pl", "tr", "gr", "gl",
 # German really does cluster three deep -- `Strasse` is s-t-r, and after
 # `^s[pt] -> sh` the sh counts as one, so the cap is 3.
 # Slavic really does cluster: `Wszystkich` is w-sz-yst-, `Świętych` is św-.
+# ⚠ Dutch takes 3 for the same reason German does — `schr-` (Schrijver),
+# `str-` (Struisvogel), `spr-`. It is not 4: `sch` is already two sounds by the
+# time this runs, s + the h-row fricative.
 _MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3, "de": 3, "pl": 3, "cs": 3,
-              "fr": 3, "ru": 3}
+              "fr": 3, "ru": 3, "nl": 3}
 
 # Digraphs that are ONE consonant by the time the kana grid reads them.
 _DIGRAPHS = ("sh", "ch", "ts", "ny", "ry", "ky", "gy", "hy", "by", "py", "my")
@@ -683,6 +803,8 @@ def _romanise(word, rules):
         w = _pre_french(w)
     if rules == "ru":
         w = _pre_russian(w)
+    if rules == "nl":
+        w = _pre_dutch(w)
     for a, b in _RULES[rules]:
         w = w.replace(a, b)
     if rules == "ms":
@@ -834,6 +956,13 @@ COUNTRY_RULES = {
     "Q159": "ru",   # Russia
     "Q212": "ru",   # Ukraine
     "Q184": "ru",   # Belarus
+    # Dutch. Added 2026-09-20 on Emma's "All four — nl, sv, no, da", the first
+    # of the four and 304 of the 492 native-language long-tail labels.
+    # ⚠ Belgium is already "fr" above and stays there: `COUNTRY_RULES` is one
+    # family per country, and the Belgian labels in this corpus are French. The
+    # same one-family limit that leaves 5 French labels in Switzerland refused
+    # rather than mis-read — a refusal is the correct outcome, not a gap.
+    "Q55": "nl",    # Netherlands
 }
 
 

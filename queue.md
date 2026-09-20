@@ -65,12 +65,40 @@ from `ATOMIC_FILES`; they are not queue items.
 
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
-- [ ] Religious buildings: the long tail after the five families — Netherlands 258, Moldova 140,
-  Sweden 83, Romania 81, Armenia 44, Finland, Norway, Lithuania. Dutch and Romanian are regular
-  enough to read; the Nordic ones and Armenian-in-romanisation are not obviously so. Same
-  `plain_latin_katakana` treatment or a documented refusal — ASK before building, under the
-  religious-building translation carve-out, rather than inferring from the "all of them" answer,
-  which was about a country map that no longer has these at the top of it.
+- [ ] Religious buildings, native-language tail: the **Nordic three — sv 84, no 21, da 14**.
+  Emma 2026-09-20, asked which of nl/sv/no/da to build: ***"All four — nl, sv, no, da"***. Dutch
+  shipped that day; these are the rest of the same answer, not a reduced version of it, and they
+  are one per tick because this population is the 10%.
+  The analysis is already done, so start from it rather than re-measuring:
+  • **Letter inventories** (native-shaped labels only): sv = ASCII + ä å ö; no = ASCII + å æ ø;
+    da = ASCII + æ é ø.
+  • **The type word is the corpus.** `kyrk` is in 68 of the 84 Swedish, `kirke` in 9 of 21
+    Norwegian and 8 of 14 Danish — so split the type word off as a morpheme boundary FIRST, the
+    way the Dutch family splits `kerk`, and apply phonology to each element.
+  • ⛔ **The Swedish `sky` trap, measured.** 17 labels have `sk` before a front vowel. **16 are
+    `sky`, and every one of them is a compound `…s` + `kyrka`** — Brukskyrkan, Högåskyrkan,
+    Korskyrkan, Betlehemskyrkan. Reading that as the /ɧ/ of `sk`+front swallows the linking s
+    and gives ブルーシュルカン for ブルークスシュルカン. The other two are `skä` — `Rönnskärs`,
+    `Skänninge` — and those ARE genuinely /ɧ/. Splitting the type word first resolves all 17
+    without a special case.
+  • Swedish still wants k/g palatalisation before e i y ä ö, and `sj`/`skj`/`stj`/`tj`/`kj`.
+  • ⚠ **Danish is the least transparent of the four** and is last for that reason: soft `d`,
+    soft `g`, the reduced `-er`/`-en` endings. 14 items, so it can afford an explicit pass over
+    the hard parts the way `_pre_french` does rather than a letter-wise table.
+
+- [ ] Religious buildings, the 627 ENGLISH-shaped long-tail labels. Emma 2026-09-20:
+  ***"Translate, transliterate the place"*** — dedication and type word through the existing
+  morpheme tables, and the placename transliterated **from its own language**.
+  These are labels like `Saint Demetrius of Thessaloniki church in Botnărești, Anenii Noi` and
+  `Archangels' church in Veza`: an English dedication + an English type word + a local placename.
+  Measured 2026-09-20 — Moldova 249/249 English, Hungary 21/21, Lithuania 37/38, Romania 110/115,
+  Armenia 48/51, Latvia 17/18, Bulgaria 16/18, Finland 29/36.
+  • So the new families here exist **to carry placenames only** — ro, hy, lt, hu, bg, lv. The
+    dedication and the type word already have tables.
+  • ⛔ Do NOT transliterate these as if the whole label were the local language. It is English;
+    only the place is not.
+  • ⚠ All 1,119 long-tail items render to nothing today, in ja, zh and ko alike — checked by
+    calling `render()` directly. There is no partial output to preserve.
   ⚠ The German block is MEASURED and closed: of 909, 790 named nothing (664 now reach the
   denomination/setting slot, 113 are a bare type word and stay refused), 40 are addresses with
   digits, 25 English wording, 13 punctuation (fixed), 11 French/Italian labels in a German-speaking
