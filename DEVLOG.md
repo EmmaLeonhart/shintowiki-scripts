@@ -1,3 +1,70 @@
+## 2026-09-20 (ninth) — the last open deferred verification, closed by measurement
+
+The 429 watch is waiting on a scheduled run and re-dispatching to hurry it would be hammering
+the endpoint I have spent the day trying to stop hammering. So: the one **Open** item in
+`docs/deferred_verification.md`, which that file itself says is now actionable — *"do not wait on
+a date, ask the state file."*
+
+### The item, and why it had been stuck
+
+`migrate_ritsuryo_funding_remove.txt` was the tenth of ten files covered by the 2026-08-24
+sort-at-the-writer fix (`8c65d9b6`), and the only one with **no post-fix build to measure**: its
+writers are `submit_daily_batch.py` and `direct_daily_edits.py`, whose jobs report *skipped* while
+the Wikidata lockout is shut. `wikidata_edit_allowed.py` now prints `ALLOWED — wikidata lockout
+expired (2026-09-01)`, those jobs have run, and there are nine post-fix commits to read.
+
+### The measurement, run on every commit rather than sampled
+
+| era | commits | diff shape | sorted md5 |
+|---|---|---|---|
+| **before** 08-15 → 08-25 | 9 | `+2880/-2880` … `+3950/-3950` | `0a042f48bc5f` on **all nine**, parent and child |
+| **after** 09-07 → 09-17 | 9 | `+0/-5` … `+0/-499` | **changes every time** |
+
+**Pure reshuffle became pure deletion.** Every post-fix commit adds zero lines and removes between
+5 and 499 — the drip consuming lines that landed, the writer rewriting the remainder in sorted
+order. Verified and closed.
+
+⚠ Two readings that would have been wrong. `8c65d9b6` itself is `+3950/-3950` with an unchanged
+sorted md5 — that is the fix's **one-time** re-sort, not a counterexample. And the sorted md5 sat
+at `0a042f48bc5f` from 08-15 to 09-07: three weeks of no content change at all, which is the
+lockout, not a stall.
+
+### ⛔ And the list did not come out empty
+
+`docs/deferred_verification.md` mandates a grep of the DEVLOG for unverified-ship language before
+recording "nothing to test", because in 2026-09-05 an empty Open list was the symptom rather than
+the result. Ran it. It caught **my own entries from earlier today** — *"not claimed to fix it"*,
+*"the next scheduled run is the measurement"* — so the three WDQS pacing and backoff commits are
+now the single Open item, with the check written out, including the step-outcome-versus-conclusion
+trap that made a failed run read green to me this morning.
+
+### The standing guard, and the file that is rightly exempt
+
+A one-off comparison closes an item; it does not stop the regression. So nine of the ten files are
+now pinned as sorted by `test_churn_fixed_files_stay_sorted.py`.
+
+⛔ **The tenth is excluded on purpose and the exclusion is itself guarded.**
+`daily_operations.txt` is a **priority-ordered concatenation** — `generate_daily_operations()`
+documents the order as *"Phase 1 (P459 qualifiers) until complete, Phase 2 (property edits) after
+Phase 1 complete, P4656 references…"* — so sorting it would destroy the instruction it exists to
+carry. It is also not churning, which is the property a sort check is only ever a proxy for: its
+six most recent commits run `+0/-2` to `+2/-75` with the sorted md5 differing each time. A test
+asserts it is still shaped like a concatenation, so the exemption cannot be quietly widened.
+
+⚠ **A blanket rule would have been false.** 27 of the 86 atomic files are not plain-sorted, and
+most have their own key or their own order. Pinning all of them would be asserting something
+untrue, which the repo's own tests name as worse than asserting nothing.
+
+Checked the guard has teeth rather than assuming it: at `8c65d9b6~1`, five of the nine were
+**unsorted**, so it would have failed on pre-fix content.
+
+⚠ One survey result that was wrong and is worth recording: a sweep of `ATOMIC_FILES` reported five
+files with "no wired generator", including this one. It has no `generate_*.py` by design — the two
+drip scripts are its only writers, and the doc already said so. The writer-search was the naive
+part, not the pipeline.
+
+12 new tests. Full suite 2,950 pass.
+
 ## 2026-09-20 (eighth) — eight more callers on the same tight retry, two of them in the same workflow
 
 Yesterday's fix was one file. A sweep of **every WDQS caller in the repo** — 56 files that name the

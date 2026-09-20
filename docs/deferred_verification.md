@@ -34,23 +34,53 @@ batched verification we skip in the moment.
 
 ## Open (shipped, not yet verified)
 
-- [ ] **`migrate_ritsuryo_funding_remove.txt` — the 2026-08-24 sort-at-the-writer fix
-  (`8c65d9b6`) is unverified for this one file of the ten.** Blocked by the Wikidata
-  lockout, not by anything wrong: the file is written only by `submit_daily_batch.py`
-  and `direct_daily_edits.py`, whose jobs (`submit-quickstatements`, `direct-daily-edits`)
-  report **skipped** on every `cleanup-loop` run while
-  `shinto_miraheze/wikidata_editing_lockout.state` is shut. So it had not regenerated since
-  2026-08-25 and there was no post-fix build to measure. **The lockout expired 2026-09-01**
-  (Emma shortened it on 2026-09-06), so the check below is now actionable — do not wait on a
-  date, ask the state file.
-  **Check, once the lockout date passes:** after a `cleanup-loop` run where those two jobs
-  are no longer skipped, confirm the generator wrote the file in the run log, then confirm
-  either no commit touched it, or that any commit is a small real delta rather than the
-  ~2,494-line reshuffle it produced per build before the fix. The decisive form is
-  `git show <c>~1:<f> | sort | md5sum` vs `git show <c>:<f> | sort | md5sum` — identical
-  sorted content across a large diff is churn.
+- [ ] **The WDQS pacing and backoff changes of 2026-09-20 (`a29bf5cf`, `f66ec730`,
+  `2fbf1f00`) are shipped unverified.** `Generate shrines-missing-en-label list` had failed
+  5 of 6 runs on `RateLimitError: 429`; three documented violations were removed from its
+  path — a sub-floor `THROTTLE = 0.5` in Stage 2, a `10 * attempt` retry in Stage 2, and the
+  same tight retry in steps 1 and 8, which run before and after it and share the endpoint
+  budget. ⛔ **None of the three is claimed to fix the 429s.** A dispatch between the first
+  and second measured that the first alone did not.
+  **Check:** on the next `Generate shrines-missing-en-label list` run, read the **step
+  outcomes, not the conclusions** — `continue-on-error: true` rewrites a step's conclusion
+  to `success` while its outcome stays `failure`, which is how a failed run read green to me
+  on 09-20. `gh run view <id> --json jobs` shows conclusions; the job's own "Re-fail if any
+  generation step failed" step reads outcomes and is the honest signal. If it still 429s,
+  the levers left are a `BATCH` under 150 labels per POST, or a throttle slower than the
+  floor. Also watch the wall clock: an exhausted backoff is now 195s per batch against a
+  `timeout-minutes: 20` job that normally finishes in ~7m.
+  ⚠ Entered here as well as in `queue.md` because of the rule above — a change that ships
+  unverified needs a line in **both**, and the 2026-08-25 item is the precedent for what
+  happens when it only gets the DEVLOG.
 
 ## Verified (kept briefly, then prune)
+
+* **2026-09-20 — the tenth file is verified, and it is the cleanest of the ten.**
+  `migrate_ritsuryo_funding_remove.txt` was the one file of the 2026-08-24 sort-at-the-writer
+  fix (`8c65d9b6`) with no post-fix build to measure, because the Wikidata lockout kept
+  `submit-quickstatements` and `direct-daily-edits` skipped. The lockout expired 2026-09-01
+  (`wikidata_edit_allowed.py` now prints `ALLOWED — wikidata lockout expired`), those jobs
+  have run since, and there are nine post-fix commits to read. Ran the decisive check on
+  every one of them:
+
+  | era | commits | shape | sorted md5 |
+  |---|---|---|---|
+  | **before** 08-15 → 08-25 | 9 | `+2880/-2880` … `+3950/-3950` | `0a042f48bc5f` on **all nine**, parent and child |
+  | **after** 09-07 → 09-17 | 9 | `+0/-5` … `+0/-499` | **changes every time** |
+
+  Pure reshuffle became pure deletion. Every post-fix commit adds **zero** lines and removes
+  between 5 and 499 — the drip consuming lines that landed and the writer rewriting the
+  remainder in sorted order, which is exactly the intended shape.
+
+  ⚠ Two details worth keeping. `8c65d9b6` itself reads `+3950/-3950` with an unchanged
+  sorted md5 — that is the fix's **one-time** re-sort, not a counterexample. And the sorted
+  md5 stayed `0a042f48bc5f` from 08-15 all the way to `cf156076d`'s parent on 09-07: the
+  file's content did not change at all for three weeks, which is the lockout, not a stall.
+
+  ⚠ The file has **no `generate_*.py`**, which is correct and is why a writer-search finds
+  none: `submit_daily_batch.py` and `direct_daily_edits.py` are its only writers. A survey
+  this session flagged it as an atomic file with no wired generator; that reading was wrong
+  and the doc above already said so.
 
 * **2026-09-05 — the 2026-08-24/25 sort-at-the-writer churn fix holds for 9 of its 10
   files.** The 08-25 DEVLOG entry deferred this explicitly (*"every `generate` step so far
@@ -82,6 +112,14 @@ batched verification we skip in the moment.
   identical from the commit history alone.
 
 ## Sweep log
+
+* **2026-09-20** — the one Open item was tested and closed, and the list did **not** come
+  out empty, because the grep this file mandates found two entries in the same day's DEVLOG
+  shipping unverified ("not claimed to fix it", "the next scheduled run is the measurement").
+  Those are now the single Open item. The 09-05 lesson held exactly as written: the sweep
+  that matters is the grep, not the list. ⚠ This one caught **my own** entries from hours
+  earlier, which is the case for running the grep even when you believe you know what is
+  outstanding.
 
 * **2026-09-05** — the Open list was empty, and that was the finding rather than the
   result. A real deferred verification had been written into `DEVLOG.md` on 2026-08-25
