@@ -62,6 +62,50 @@ where it has more than one it is **skipped rather than guessed**: 寺 is じ or 
 ぐう or みや, and picking one is inventing a reading. That is the same line the web-search
 rejection above draws, applied to our own output.
 
+## A ward is INSIDE the city Wikidata names (2026-09-19)
+
+``city_keys`` handles one direction: the registry writes 市+区 and Wikidata labels the
+bare 区. The other direction was missing. Wikidata often carries the **designated city**
+(京都市, 神戸市, 名古屋市) while the registry files the corporation under **city+ward**
+(京都市伏見区). Those do not conflict — 伏見区 is inside 京都市, so the registry is simply
+more precise than the claim — and the whole prefecture-and-name key already agrees.
+
+Measured over the unmatched targets: **30 items where exactly one ward-level entry sits
+inside the claimed city, and 2 where several do but all carry the same reading.** Zero
+where the readings differ. The other direction (Wikidata ward, registry bare city) is
+**0** and is not implemented.
+
+⚠ Uniqueness is checked WITHIN the claimed city, not within the prefecture. 京都市 having
+one 瑞光寺 is a fact about 京都市; it says nothing about 京都府.
+
+## ⛔ The prefecture-unique rule was measured and is WRONG — do not re-propose it
+
+The obvious next widening is: if the name is unique within the item's **prefecture**, take
+that reading even though the municipality differs. It looks like the national-uniqueness
+rule below, tightened by a prefecture the item actually asserts. It is not.
+
+Measured 2026-09-19 over the 15,948 unmatched: **1,959 are unique within the prefecture
+and a further 1,420 have several entries that all share one reading — 3,379 candidates.**
+Read the candidates and they fall apart:
+
+    本行寺   Wikidata 墨田区      registry's only 東京都 entry: 小平市
+    林泉寺   Wikidata 文京区      registry's only 東京都 entry: 立川市
+    妙光寺   Wikidata 品川区      registry's only 東京都 entry: 世田谷区
+
+A temple in Sumida is not a temple in Kodaira. "Unique within the prefecture" does not
+mean "the same temple" — it means the registry happens to hold one temple of that name in
+Tokyo, and this one is not it. Emitting those 3,379 would have put a stranger's reading on
+each, cited to that stranger's corporate number.
+
+That is the same reasoning the no-P131 note below gives, and it survives being tested:
+**a municipality that disagrees is a disagreement, and no amount of prefecture-level
+uniqueness turns it into an agreement.** The ward rule above is not an exception to this —
+there the municipalities do not disagree, one contains the other.
+
+Of the rest: **6,352** have the name in the registry but not in that prefecture, and
+**6,041** have it nowhere in the registry at all. Most small shrines are not separately
+incorporated 宗教法人, so no reading exists to find this way.
+
 Read-only against Wikidata and the local index. REPORT + GENERATE ONLY.
 
 Usage:
@@ -209,6 +253,10 @@ def city_keys(city):
     return out
 
 
+# A registry municipality written as designated-city + ward: 京都市伏見区, 名古屋市東区.
+_CITY_WARD = re.compile(r"^(.+市)(.+区)$")
+
+
 def load_index(path=None):
     """({(city, folded name): [(kana, houjin, prefecture)]}, {ambiguous municipality names})."""
     with io.open(path or INDEX, encoding="utf-8") as fh:
@@ -221,6 +269,25 @@ def load_index(path=None):
             by[(ck, fold_name(name))].append((rec["kana"], rec["houjin"], pref))
             prefs[ck].add(pref)
     return by, {c for c, p in prefs.items() if len(p) > 1}
+
+
+def load_wards(path=None):
+    """{(designated city, folded name): [(kana, houjin, prefecture, ward)]}.
+
+    The ward-level entries of each designated city, keyed by the CITY. Used only when
+    the (city, name) lookup misses and Wikidata's claim is the bare city — the registry
+    entry is then more precise than the claim rather than in conflict with it.
+    """
+    with io.open(path or INDEX, encoding="utf-8") as fh:
+        raw = json.load(fh)
+    by = collections.defaultdict(list)
+    for key, rec in raw.items():
+        pref, city, name = key.split("|", 2)
+        m = _CITY_WARD.match(city)
+        if m:
+            by[(m.group(1), fold_name(name))].append(
+                (rec["kana"], rec["houjin"], pref, city))
+    return by
 
 
 def complete(name, kana):
@@ -243,10 +310,19 @@ def complete(name, kana):
     return kana, None
 
 
-def build(rows, index, ambiguous_cities=frozenset()):
+def wards_inside(city, ja, pref, wards):
+    """Ward-level entries sitting INSIDE the claimed designated city, or []."""
+    if not city.endswith("市"):
+        return []
+    inside = wards.get((city, fold_name(ja)), [])
+    return [c for c in inside if not pref or c[2] == pref]
+
+
+def build(rows, index, ambiguous_cities=frozenset(), wards=None):
     """(lines, stats) — one QuickStatement per confidently matched item."""
     lines = []
     stats = collections.Counter()
+    wards = wards or {}
     for row in rows:
         qid, ja, city = row[0], row[1], row[2]
         pref = row[3] if len(row) > 3 else ""
@@ -260,8 +336,16 @@ def build(rows, index, ambiguous_cities=frozenset()):
                 stats["municipality name not unique, prefecture disagrees"] += 1
                 continue
         if not cands:
-            stats["no match in the registry"] += 1
-            continue
+            # The claim may be the designated CITY where the registry files the ward.
+            inside = wards_inside(city, ja, pref, wards)
+            if not inside:
+                stats["no match in the registry"] += 1
+                continue
+            if len({c[0] for c in inside}) > 1:
+                stats["several wards in the city, readings differ"] += 1
+                continue
+            cands = [(inside[0][0], inside[0][1], inside[0][2])]
+            stats["matched a ward inside the claimed city"] += 1
         if len(cands) > 1:
             stats["same name twice in one municipality"] += 1
             continue
@@ -359,7 +443,7 @@ def main():
           "nationally" % (len(index), len(ambiguous)))
     print("targets:  %d shrines/temples with no en label, no P1814, and a P131" % len(rows))
 
-    lines, stats = build(rows, index, ambiguous)
+    lines, stats = build(rows, index, ambiguous, load_wards())
 
     print("unplaced: %d shrines/temples with no P131 at all" % len(unplaced))
     more, ustats = build_unplaced(unplaced, load_by_name())

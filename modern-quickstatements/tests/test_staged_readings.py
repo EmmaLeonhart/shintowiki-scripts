@@ -157,12 +157,12 @@ EN_LABEL_FILES = [
     "en_labels.txt", "en_labels_sonnet.txt",
 ]
 
-# ⚠ One grandfathered pair, 2026-09-19. `en_labels.txt` gives Q65268013
-# "Nenbutsu-ji (Sakai)" from its shintowiki page title while Stage 2 gives
-# "Nenbutsu-ji Temple". Which is right depends on whether another Nenbutsu-ji
-# already holds the bare label on live Wikidata, and that is one API call's worth
-# of judgement for one item — recorded here so it is visible rather than silent.
-KNOWN_COLLISIONS = {"Q65268013"}
+# ⚠ The grandfathered Q65268013 is GONE, resolved 2026-09-19 by precedence rather
+# than by exception: `en_labels.txt` gave it "Nenbutsu-ji (Sakai)" from a page
+# title and Stage 2 gives "Nenbutsu-ji Temple". The pipeline already strips
+# parenthetical disambiguators from reused labels on purpose, so the convention
+# -shaped one wins and there is no exception list left to accumulate in.
+KNOWN_COLLISIONS = set()
 
 
 def _en_lines():
@@ -178,6 +178,58 @@ def _en_lines():
             if m:
                 owners.setdefault(m.group(1), set()).add(name)
     return owners
+
+
+def test_the_deduper_and_this_test_watch_the_same_files():
+    """The guard and the tool that fixes it must not drift apart."""
+    import dedupe_en_label_files as dd
+    assert set(EN_LABEL_FILES) == set(dd.FILES)
+
+
+def test_the_deduper_leaves_nothing_behind():
+    """`--check` is what CI can run; it must agree with the assertion below."""
+    import dedupe_en_label_files as dd
+    assert dd.superseded() == {}
+
+
+def test_the_alias_goes_with_its_label():
+    """An `Aen` line belongs to the `Len` it was generated beside, so a
+    superseded item loses both. Carried across from the retired
+    `dedup_sonnet_labels.py`, whose tests pinned this."""
+    import dedupe_en_label_files as dd
+    import tempfile, os as _os
+    with tempfile.TemporaryDirectory() as d:
+        path = _os.path.join(d, "en_labels_sonnet.txt")
+        io.open(path, "w", encoding="utf-8").write(
+            "\n".join(['Q1|Len|"a"', "", "  ", 'Q2|Len|"b"',
+                       'Q2|Aen|"b2"', 'Q3|Len|"c"']) + "\n")
+        dd.apply({"en_labels_sonnet.txt": {"Q2"}}, base=d)
+        assert io.open(path, encoding="utf-8").read().splitlines() == [
+            'Q1|Len|"a"', 'Q3|Len|"c"'], "alias kept, or blank line kept"
+
+
+def test_the_retired_script_is_gone():
+    """Repo rule: delete a superseded script, do not leave two tools with
+    different file lists — that divergence is what hid the temple collisions."""
+    assert not _os_path_exists("dedup_sonnet_labels.py")
+    assert not _os_path_exists(_os.path.join("tests", "test_dedup_sonnet_labels.py"))
+
+
+import os as _os
+
+
+def _os_path_exists(rel):
+    return _os.path.exists(_os.path.join(HERE, rel))
+
+
+def test_deterministic_beats_reuse_beats_the_llm():
+    import dedupe_en_label_files as dd
+    assert dd.RANK["kana_en_labels.txt"] < dd.RANK["identical_name_en_labels.txt"]
+    assert dd.RANK["temple_en_labels.txt"] < dd.RANK["temple_identical_name_en_labels.txt"]
+    assert dd.RANK["identical_name_en_labels.txt"] < dd.RANK["en_labels.txt"]
+    assert dd.RANK["en_labels.txt"] < dd.RANK["en_labels_sonnet.txt"]
+    # Same-rank files cover disjoint populations and never override each other.
+    assert dd.RANK["kana_en_labels.txt"] == dd.RANK["temple_en_labels.txt"]
 
 
 def test_one_en_label_line_per_item():

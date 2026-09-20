@@ -1,3 +1,77 @@
+## 2026-09-19 (sixth) — a ward is inside the city; a prefecture is not
+
+Work-loop tick, shrine and temple side again. One fix, one refusal, and one tool that turned out to
+already exist in a smaller and staler form.
+
+### ⭐ The fix: 32 readings, and `city_keys` only ever handled one direction
+
+`city_keys` knew that the registry writes 市+区 where Wikidata labels the bare 区. The reverse was
+missing: Wikidata often carries the **designated city** (京都市, 神戸市, 名古屋市) while the registry
+files the corporation under **city+ward** (京都市伏見区). Those do not conflict — 伏見区 is inside
+京都市, so the registry is simply more precise than the claim.
+
+**30 items where exactly one ward-level entry sits inside the claimed city, 2 where several do but
+all read the same, 0 where they disagree.** The other direction (Wikidata ward, registry bare city)
+is 0 and is not implemented. `nta_kana.txt` 1,449 → 1,481; temple Stage 1 1,436 → 1,468 labels,
+because every one of the 32 was a temple.
+
+⚠ Uniqueness is checked WITHIN the claimed city. 京都市 having one 瑞光寺 is a fact about 京都市 and
+says nothing about 京都府 — which is the whole of the next section.
+
+### ⛔ The refusal: 3,379 candidates that are different temples
+
+The obvious next widening is "unique within the **prefecture**" — it looks like the existing
+national-uniqueness rule, tightened by a prefecture the item actually asserts. Measured over the
+15,948 unmatched: 1,959 unique in the prefecture plus 1,420 whose several entries share one reading,
+**3,379 candidates**. Then read them:
+
+    本行寺   Wikidata 墨田区    the registry's only 東京都 本行寺: 小平市
+    林泉寺   Wikidata 文京区    the registry's only 東京都 林泉寺: 立川市
+    妙光寺   Wikidata 品川区    the registry's only 東京都 妙光寺: 世田谷区
+
+A temple in Sumida is not a temple in Kodaira. "Unique in the prefecture" does not mean "the same
+temple"; it means the registry holds one of that name in Tokyo and this is not it. Emitting them
+would have put a stranger's reading on 3,379 items, each cited to that stranger's corporate number.
+
+**A municipality that disagrees is a disagreement, and no amount of prefecture-level uniqueness
+turns it into an agreement.** The generator's own docstring now carries the measurement, and a test
+asserts the docstring still carries it, so the next session to have this idea finds it answered
+rather than re-deriving it. The ward rule is not an exception: there the municipalities do not
+disagree, one contains the other.
+
+Of the rest: 6,352 have the name in the registry but not in that prefecture, 6,041 have it nowhere.
+Most small shrines are not separately incorporated 宗教法人, so there is no reading to find this way.
+
+### The guard from the last tick caught its own case within the hour
+
+`test_one_en_label_line_per_item`, added an hour earlier, failed the moment the 32 new readings gave
+Stage 1 items Stage 2 had already claimed: 22 collisions. That is the guard working — and two
+occurrences in two consecutive changes is a process, not an accident.
+
+⭐ **And the tool already existed, covering a third of the problem.** `dedup_sonnet_labels.py` pruned
+ONE file against a hardcoded priority list:
+
+    HIGHER_PRIORITY = ["en_labels.txt", "kana_en_labels.txt", "identical_name_en_labels.txt"]
+
+`temple_en_labels.txt`, `temple_identical_name_en_labels.txt` and `tenjinsha_en_labels.txt` had never
+been added, so **13 temple/LLM collisions were live and that script could not have found them**. It
+also could not see a Stage 1 / Stage 2 collision at all, because it only ever rewrote the LLM file —
+and that is the case that arises whenever Stage 2's SPARQL fails, which its own docstring calls
+frequent, in a workflow where every generation step is `continue-on-error: true`.
+
+`dedupe_en_label_files.py` replaces it: one tool, one list, full stage precedence, a `--check` mode,
+and a test asserting the guard and the deduper watch the same files so neither list can go stale
+alone. The old script and its tests are deleted rather than archived, per the repo rule. The
+pipeline doc said "all four en-label files are pairwise disjoint"; it is seven, and that stale
+sentence is exactly the shape of the bug.
+
+⚠ The grandfathered `Q65268013` from the last tick is resolved rather than carried: `en_labels.txt`
+gave it "Nenbutsu-ji (Sakai)" from a page title, Stage 2 gives "Nenbutsu-ji Temple", and the
+pipeline already strips parenthetical disambiguators from reused labels on purpose. No exception
+list survives.
+
+17 new tests, 2 retired ones carried across. Full suite 2,787 pass.
+
 ## 2026-09-19 (fifth) — the readings were already in the repo: +1,406 English labels
 
 Work-loop tick. The queue held only religious-building items — the **10%** — and the previous two

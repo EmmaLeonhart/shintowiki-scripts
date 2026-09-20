@@ -118,14 +118,24 @@ construction plus two guards:
   the no-kana subset → 1 and 2 are disjoint (verified: 0 QID overlap).
 - **Stage 4** (`select_shrines_to_translate.py`) excludes every QID already in
   any higher-priority file (A4).
-- **`dedup_sonnet_labels.py`** (A5) prunes `en_labels_sonnet.txt` of QIDs a
-  higher-priority deterministic file now covers — needed because that file
+- **`dedupe_en_label_files.py`** (replaced `dedup_sonnet_labels.py` on
+  2026-09-19) enforces ONE `Len` line per item across every en-label file, in
+  stage order. The script it replaced pruned only `en_labels_sonnet.txt` against
+  a priority list that had never learned about the temple files, so 13
+  temple/LLM collisions were live and it could not have found them. It also
+  could not see a Stage 1 / Stage 2 collision at all, which is the case that
+  arises whenever Stage 2's SPARQL fails and its file is left stale beside a
+  freshly advanced Stage 1. Prunes QIDs a — needed because that file
   accumulated LLM labels before Stages 1/2/A4 existed. Run in the daily workflow
   after Stage 1/2 generation.
-- Verified after the prune: **all four en-label files (`en_labels`,
-  `kana_en_labels`, `identical_name_en_labels`, `en_labels_sonnet`) are pairwise
-  disjoint on `Len` QIDs** — no double-emission. The daily submitter draws from
-  all four via `ATOMIC_FILES`.
+- Verified after the prune: **all SEVEN en-label files are pairwise disjoint on
+  `Len` QIDs** — no double-emission. ⚠ "All four" was the 2026-06-21 count and it
+  went stale as the temple and 天神社 files were added; the list that mattered
+  lived in a script nobody re-read, which is how 13 temple/LLM collisions stayed
+  live. `tests/test_staged_readings.py::test_one_en_label_line_per_item` now
+  asserts the disjointness, and another test asserts the guard and the deduper
+  watch the same file list, so neither can go stale alone. The daily submitter
+  draws from all of them via `ATOMIC_FILES`.
 
 ## Stage 2 as built (A2, 2026-06-21)
 - `modern-quickstatements/reuse_labels.py` — `choose_label(candidates, qid)`:

@@ -90,11 +90,15 @@ jobs:
         continue-on-error: true
         run: python generate_temple_identical_name_en_labels.py
 
-      - name: Prune LLM labels superseded by Stage 0/1/2 (priority)
+      # Replaced dedup_sonnet_labels.py 2026-09-19: that pruned only the LLM file
+      # and its priority list had never learned about temples, so 13 temple/LLM
+      # collisions were live and unfindable by it. This enforces one Len line per
+      # item across ALL the en-label files, in stage order.
+      - name: Enforce one en-label per item across the stages
         id: gen_dedup
         working-directory: modern-quickstatements
         continue-on-error: true
-        run: python dedup_sonnet_labels.py
+        run: python dedupe_en_label_files.py
 
       - name: Generate C1 CJK->ja label backfill
         id: gen_cjk
@@ -140,7 +144,7 @@ jobs:
         if: always()
         run: |
           failed=""
-          for s in             "shrines_missing_en_label:${{ steps.gen_shrines.outcome }}"             "kana_en_labels:${{ steps.gen_kana.outcome }}"             "identical_name_en_labels:${{ steps.gen_identical.outcome }}"             "temples_missing_en_label:${{ steps.gen_temples.outcome }}"             "temple_en_labels:${{ steps.gen_temple_en.outcome }}"             "temple_identical_name_en_labels:${{ steps.gen_temple_identical.outcome }}"             "dedup_sonnet_labels:${{ steps.gen_dedup.outcome }}"             "cjk_ja_backfill:${{ steps.gen_cjk.outcome }}"; do
+          for s in             "shrines_missing_en_label:${{ steps.gen_shrines.outcome }}"             "kana_en_labels:${{ steps.gen_kana.outcome }}"             "identical_name_en_labels:${{ steps.gen_identical.outcome }}"             "temples_missing_en_label:${{ steps.gen_temples.outcome }}"             "temple_en_labels:${{ steps.gen_temple_en.outcome }}"             "temple_identical_name_en_labels:${{ steps.gen_temple_identical.outcome }}"             "dedupe_en_label_files:${{ steps.gen_dedup.outcome }}"             "cjk_ja_backfill:${{ steps.gen_cjk.outcome }}"; do
             name="${s%%:*}"; outcome="${s##*:}"
             if [ "$outcome" = "failure" ]; then
               echo "::error::$name did not regenerate this run (step outcome: failure)"
