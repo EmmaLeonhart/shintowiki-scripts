@@ -46,6 +46,8 @@ import time
 import requests
 
 _usys.path.insert(0, _uos.path.dirname(_uos.path.abspath(__file__)))
+
+from wdqs_transport import backoff, RETRIES
 from english_to_kana import kana_for
 from generate_katakana_reading_add import QUERY, collect, is_katakana, qid
 
@@ -61,7 +63,7 @@ class RateLimitError(Exception):
 _last = 0.0
 
 
-def fetch_sparql(query, retries=3):
+def fetch_sparql(query, retries=RETRIES):
     global _last
     for attempt in range(1, retries + 1):
         elapsed = time.time() - _last
@@ -77,7 +79,7 @@ def fetch_sparql(query, retries=3):
         except requests.exceptions.ReadTimeout:
             _last = time.time()
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
                 continue
             print("SPARQL timed out after retries — exiting gracefully")
             return None
@@ -88,7 +90,7 @@ def fetch_sparql(query, retries=3):
         if r.status_code in (503, 504):
             # CLAUDE.md: 503/504 -> back off hard, do not retry tightly.
             if attempt < retries:
-                time.sleep(15 * (3 ** (attempt - 1)))
+                time.sleep(backoff(attempt))
                 continue
             print(f"SPARQL returned {r.status_code} after retries — exiting gracefully")
             return None
@@ -108,7 +110,7 @@ def fetch_sparql(query, retries=3):
             # a previously-fatal case now retries on the same backoff.
             if attempt < retries:
                 print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
                 continue
             print("SPARQL short read after retries — exiting gracefully")
             return None

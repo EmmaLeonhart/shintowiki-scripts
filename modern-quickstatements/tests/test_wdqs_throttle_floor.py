@@ -42,6 +42,23 @@ def _sources():
                 yield os.path.join(dirpath, name)
 
 
+# The names in `wdqs_transport` that actually PERFORM a request. Importing one of
+# these makes a file a transport user; importing `WDQS_THROTTLE`, `RETRIES` or
+# `backoff` does not — those are the policy, and a hand-rolled loop is expected to
+# import them rather than retype the numbers.
+_PERFORMERS = ("query", "query_csv", "run")
+
+
+def _uses_transport(text):
+    if re.search(r"^\s*import wdqs_transport\b", text, re.M):
+        return True
+    for m in re.finditer(r"^\s*from wdqs_transport import ([^\n(]+)", text, re.M):
+        names = {n.strip().split(" as ")[0] for n in m.group(1).split(",")}
+        if names & set(_PERFORMERS):
+            return True
+    return False
+
+
 def _hand_rolled_wdqs_callers():
     """Files that hit the query service WITHOUT `wdqs_transport`.
 
@@ -54,6 +71,14 @@ def _hand_rolled_wdqs_callers():
     ⚠ A sub-floor throttle is also fine when it paces something else entirely:
     `generate_religious_building_multilang.py` sits at 1.0 for `wbgetentities`,
     the READ API, which is not the query service and has its own limits.
+
+    ⛔ WIDENED 2026-09-20, and it had to be. The first version skipped any file
+    that named `wdqs_transport` at all — so the moment a hand-rolled caller
+    imported one CONSTANT from it, the file left this guarded population while
+    still running its own request loop. `generate_identical_name_en_labels.py`
+    did exactly that the same morning: it imported `WDQS_THROTTLE` and thereby
+    made itself invisible to the test written to catch it. A file counts as a
+    transport USER only when it imports something that PERFORMS a request.
     """
     for path in _sources():
         if os.path.basename(path) == "wdqs_transport.py":
@@ -61,7 +86,7 @@ def _hand_rolled_wdqs_callers():
         text = io.open(path, encoding="utf-8", errors="replace").read()
         if not _ENDPOINT.search(text):
             continue
-        if "import wdqs_transport" in text or "from wdqs_transport" in text:
+        if _uses_transport(text):
             continue
         yield path, text
 
@@ -128,8 +153,53 @@ def test_the_transient_backoff_is_the_documented_one():
     policy, which it did not, and which raising THROTTLE earlier that day did not
     touch — the retry path never consulted THROTTLE at all.
     """
-    import generate_identical_name_en_labels as g
-    assert [g._backoff(a) for a in (1, 2, 3)] == [15, 45, 135]
+    from wdqs_transport import backoff
+    assert [backoff(a) for a in (1, 2, 3)] == [15, 45, 135]
+
+
+def test_no_hand_rolled_wdqs_caller_retries_tighter_than_the_policy():
+    """⛔ The eight that did, and the two that half-did.
+
+    Measured 2026-09-20 across every WDQS caller in the repo: eight hand-rolled
+    transports slept `10 * attempt`, and one also slept `15 * attempt`. Two of
+    them are steps of the very workflow that kept 429ing —
+    `generate_shrines_missing_en_label.py` runs first in it and
+    `generate_cjk_ja_backfill.py` runs last, so they share its endpoint budget.
+
+    ⚠ `generate_kana_qualifier_remove.py` and `generate_katakana_reading_remove.py`
+    already carried `15 * (3 ** (attempt - 1))` in their 503/504 branch, with the
+    CLAUDE.md line quoted directly above it, while their truncated-body and timeout
+    branches still slept ten seconds. The rule was known and applied to the branch
+    someone happened to be looking at. That is the case for one importable
+    definition over a number retyped per branch.
+    """
+    import ast
+    offenders = []
+    for path, text in _hand_rolled_wdqs_callers():
+        if os.sep + "tests" + os.sep in path:
+            continue
+        try:
+            tree = ast.parse(text)
+        except SyntaxError:
+            continue
+        for node in ast.walk(tree):
+            if not (isinstance(node, ast.Call)
+                    and isinstance(node.func, ast.Attribute)
+                    and node.func.attr == "sleep"
+                    and node.args):
+                continue
+            arg = node.args[0]
+            # A literal multiple of `attempt` is the tight-retry shape; a call
+            # (backoff(...)) or a name is not.
+            if (isinstance(arg, ast.BinOp) and isinstance(arg.op, ast.Mult)
+                    and isinstance(arg.left, ast.Constant)
+                    and isinstance(arg.right, ast.Name)
+                    and arg.right.id == "attempt"):
+                offenders.append("%s (%s * attempt)" % (
+                    os.path.relpath(path, ROOT).replace("\\", "/"), arg.left.value))
+    assert not offenders, (
+        "these hand-roll a WDQS transport and back off linearly on `attempt`, "
+        "which is the 502-then-429 sequence: %s" % "; ".join(sorted(offenders)))
 
 
 def test_four_attempts_or_the_third_step_never_fires():

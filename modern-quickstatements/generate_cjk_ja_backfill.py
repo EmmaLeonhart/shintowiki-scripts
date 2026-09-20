@@ -31,6 +31,8 @@ import time
 
 import requests
 
+from wdqs_transport import backoff, RETRIES
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = os.path.join(HERE, "cjk_ja_backfill.txt")
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
@@ -66,7 +68,7 @@ def lines_for(qid, label):
     return [f'{qid}|Lja|"{label}"']
 
 
-def fetch_rows(retries=3):
+def fetch_rows(retries=RETRIES):
     """Shrines with NO ja label but a zh-family label. Returns [(qid, label)]
     (first zh-family label per item), or None if the endpoint stayed down."""
     query = f"""
@@ -90,7 +92,7 @@ def fetch_rows(retries=3):
                 raise RateLimitError("429")
             if r.status_code in TRANSIENT_STATUS:
                 if attempt < retries:
-                    time.sleep(10 * attempt)
+                    time.sleep(backoff(attempt))
                     continue
                 return None
             r.raise_for_status()
@@ -105,12 +107,12 @@ def fetch_rows(retries=3):
             # no previously-succeeding path changes, a previously-fatal one retries.
             print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
             else:
                 return None
         except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError):
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
             else:
                 return None
     # first zh-family label per item

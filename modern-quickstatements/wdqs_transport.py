@@ -115,6 +115,40 @@ TIMEOUT = 300
 # points at as the floor, uses `for attempt in range(4)` for exactly this reason.
 RETRIES = 4
 
+# The 15/45/135 backoff itself, as a function, so the hand-rolled transports can
+# import it instead of each spelling it out.
+#
+# ⛔ They did not spell it out. Measured 2026-09-20 across every WDQS caller in the
+# repo: EIGHT hand-rolled ones slept `10 * attempt` — 10s then 20s — which is the
+# sequence that cost the en-label workflow five days:
+#
+#     SPARQL 502 transient (attempt 1/3)
+#     FATAL: 429 Too Many Requests from SPARQL endpoint — bailing
+#
+# CLAUDE.md says the opposite twice: *"503/504 → back off hard, do not retry
+# tightly"*, and the floor it points at in `generate_genbu_ids.py` comes *"with
+# exponential backoff (15/45/135s)"*.
+#
+# ⚠ Two of those eight — `generate_kana_qualifier_remove` and
+# `generate_katakana_reading_remove` — already carried `15 * (3 ** (attempt - 1))`
+# in their 503/504 branch, with the CLAUDE.md line quoted above it, while their
+# truncated-body and timeout branches still slept 10s. So the rule was known, and
+# applied to the branch someone was looking at. That is the argument for one
+# importable definition rather than a number retyped per branch.
+BACKOFF_BASE = 15
+BACKOFF_FACTOR = 3
+
+
+def backoff(attempt):
+    """Seconds to wait before retry `attempt`, 1-based: 15, 45, 135.
+
+    1-based because every hand-rolled loop in this repo counts
+    `for attempt in range(1, retries + 1)` and guards its sleep with
+    `if attempt < retries`, so the fourth attempt never sleeps.
+    """
+    return BACKOFF_BASE * (BACKOFF_FACTOR ** (attempt - 1))
+
+
 # Everything that means "the transport failed", as opposed to "the server answered
 # and the answer was no". A truncated body is in here because that is what actually
 # happened; the rest are the neighbours it arrives with.
@@ -210,13 +244,13 @@ def _run(sparql_text, accept, parse, retries, endpoint, timeout, query_string, p
                 raise
             if attempt == retries - 1:
                 raise
-            wait = 15 * (3 ** attempt)
+            wait = backoff(attempt + 1)
             print(f"  WDQS {e.code} — retrying in {wait}s", flush=True)
             time.sleep(wait)
         except TRANSIENT as e:
             if attempt == retries - 1:
                 raise
-            wait = 15 * (3 ** attempt)
+            wait = backoff(attempt + 1)
             print(f"  WDQS {type(e).__name__}: {e} — retrying in {wait}s", flush=True)
             time.sleep(wait)
 

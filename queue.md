@@ -52,6 +52,11 @@ from `ATOMIC_FILES`; they are not queue items.
   `BATCH` than 150 labels per POST, or a slower throttle (the floor is a floor, a caller may be
   slower). ⚠ And a cost to watch: an exhausted backoff is now 195s per batch, not 30s, against a
   `timeout-minutes: 20` job that normally finishes in ~7m.
+  ⚠ A sweep of every WDQS caller then found **eight** hand-rolled transports on the same tight
+  retry, **two of them other steps of this same workflow** — `generate_shrines_missing_en_label.py`
+  runs first in it and `generate_cjk_ja_backfill.py` last, so they share its endpoint budget and
+  step 1 was hammering before Stage 2 ever ran. All eight now import `wdqs_transport.backoff`.
+  That widens what the next run measures: it is no longer one generator's pacing.
   ⚠ Reading `gh run view --json jobs` for this is a trap: `continue-on-error: true` rewrites a
   step's **conclusion** to success while its **outcome** stays failure, so both Stage 2 steps read
   green there while the re-fail step correctly called them failed.

@@ -1,3 +1,61 @@
+## 2026-09-20 (eighth) — eight more callers on the same tight retry, two of them in the same workflow
+
+Yesterday's fix was one file. A sweep of **every WDQS caller in the repo** — 56 files that name the
+endpoint — found the same defect in eight more hand-rolled transports, and two of them are other
+steps of the workflow that keeps 429ing.
+
+### The population, measured rather than guessed
+
+| file | tight sleeps | note |
+|---|---|---|
+| `generate_shrines_missing_en_label.py` | 4 | **step 1** of the failing workflow |
+| `generate_cjk_ja_backfill.py` | 3 | **step 8** of the failing workflow |
+| `generate_kana_qualifier_remove.py` | 2 | + one branch already correct |
+| `generate_katakana_reading_remove.py` | 2 | + one branch already correct |
+| `generate_derived_name_in_kana.py` | 2 | |
+| `generate_kana_qualifier_add.py` | 2 | |
+| `generate_katakana_reading_add.py` | 2 | |
+| `report_stuck_katakana_readings.py` | 2 | one of them `15 * attempt` |
+
+**19 sites.** That step 1 of the workflow retries tightly matters directly: it runs before Stage 2
+and shares the endpoint's opinion of us. Raising Stage 2's pacing while step 1 was still asking
+again ten seconds after a 502 was half a fix.
+
+### ⚠ Two files already knew the rule and applied it to one branch
+
+`generate_kana_qualifier_remove.py` and `generate_katakana_reading_remove.py` carry
+`15 * (3 ** (attempt - 1))` in their 503/504 branch with the CLAUDE.md line quoted directly above
+it — and their truncated-body and timeout branches still slept ten seconds. The rule was known. It
+was applied to the branch someone was looking at.
+
+That is the argument for **one importable definition** over a number retyped per branch, so
+`wdqs_transport` now exports `backoff(attempt)` (1-based: 15, 45, 135) plus `BACKOFF_BASE` and
+`BACKOFF_FACTOR`, its own `_run` computes its wait from it, and all nine callers import it. The
+local `_backoff` added this morning lasted about an hour before becoming the shared one.
+`retries=3` went to `RETRIES` in the same pass, because at three the documented third step never
+fires — the module's own comment says so.
+
+### ⛔ The test had made itself blind, the same morning it was written
+
+`_hand_rolled_wdqs_callers` skipped any file that named `wdqs_transport` at all. So the moment
+`generate_identical_name_en_labels.py` imported `WDQS_THROTTLE` from it — this morning, in the fix —
+**it left the population the test was written to guard.** A file is a transport USER only when it
+imports something that performs a request (`query`, `query_csv`, `run`); importing the policy
+constants is what a hand-rolled loop is supposed to do.
+
+Verified the new guard is not vacuous by running its detector against `HEAD`: **19 sites across 8
+files** would have failed it.
+
+⚠ Still not a claim that the 429s stop. It widens what the next scheduled run measures.
+
+⚠ And a mistake worth recording: I ran `python generate_shrines_missing_en_label.py --help` as a
+smoke test. It has no argparse, so it ignored the flag and fired a live SPARQL query at an endpoint
+that had already 429'd twice today. Killed at the 120s mark; these generators write their `.txt`
+only at the end, so nothing was written and `git status` showed no output file touched. An import
+check is the smoke test for these, not an invocation.
+
+1 new test. Full suite 2,938 pass.
+
 ## 2026-09-20 (seventh) — the throttle was not the 429, and the log said so in three lines
 
 Dispatched `Generate shrines-missing-en-label list` to measure this morning's throttle change

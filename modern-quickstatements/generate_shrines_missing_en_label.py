@@ -32,6 +32,8 @@ from datetime import datetime, timezone
 
 import requests
 
+from wdqs_transport import backoff, RETRIES
+
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 SHINTO_SHRINE = "Q845945"
@@ -53,7 +55,7 @@ class RateLimitError(Exception):
     """Raised on HTTP 429 — Wikidata/SPARQL scripts bail immediately, no retries."""
 
 
-def fetch_sparql(query, retries=3):
+def fetch_sparql(query, retries=RETRIES):
     """Run a SPARQL query, retrying on timeout / transient 5xx / connection
     errors; bail immediately on 429. Returns the result bindings, or None if the
     endpoint stayed unavailable after all retries (the caller then leaves the
@@ -74,7 +76,7 @@ def fetch_sparql(query, retries=3):
             if r.status_code in TRANSIENT_STATUS:
                 print(f"SPARQL {r.status_code} transient server error (attempt {attempt}/{retries})")
                 if attempt < retries:
-                    time.sleep(10 * attempt)
+                    time.sleep(backoff(attempt))
                     continue
                 print("SPARQL endpoint returned transient errors after all retries — exiting gracefully")
                 return None
@@ -89,20 +91,20 @@ def fetch_sparql(query, retries=3):
             # no previously-succeeding path changes, a previously-fatal one retries.
             print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
             else:
                 return None
         except requests.exceptions.ReadTimeout:
             print(f"SPARQL timeout (attempt {attempt}/{retries})")
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
             else:
                 print("SPARQL endpoint timed out after all retries — exiting gracefully")
                 return None
         except requests.exceptions.ConnectionError as e:
             print(f"SPARQL connection error (attempt {attempt}/{retries}): {e}")
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
             else:
                 print("SPARQL endpoint unreachable after all retries — exiting gracefully")
                 return None

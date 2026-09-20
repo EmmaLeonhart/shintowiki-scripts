@@ -122,6 +122,8 @@ import urllib.parse
 import requests
 
 _usys.path.insert(0, _uos.path.dirname(_uos.path.abspath(__file__)))
+
+from wdqs_transport import backoff, RETRIES
 from english_to_kana import derive  # noqa: E402
 
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
@@ -168,7 +170,7 @@ class RateLimitError(Exception):
 _last = 0.0
 
 
-def fetch_sparql(query, retries=3):
+def fetch_sparql(query, retries=RETRIES):
     """One POSTed query, spaced at least 5s from the last. Returns None on a
     timeout that survives the retries, so the caller can leave the existing file
     alone rather than truncating it to zero lines."""
@@ -188,7 +190,7 @@ def fetch_sparql(query, retries=3):
         except requests.exceptions.ReadTimeout:
             _last = time.time()
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
                 continue
             print("SPARQL timed out after retries — exiting gracefully")
             return None
@@ -212,7 +214,7 @@ def fetch_sparql(query, retries=3):
             # a previously-fatal case now retries on the same backoff.
             if attempt < retries:
                 print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
                 continue
             print("SPARQL short read after retries — exiting gracefully")
             return None

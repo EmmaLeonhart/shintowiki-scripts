@@ -63,6 +63,8 @@ import time
 
 import requests
 
+from wdqs_transport import backoff, RETRIES
+
 SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 SUFFIX = "カミノヤシロ"
@@ -80,7 +82,7 @@ SELECT ?item ?ja ?top ?q ?hira ?on WHERE {
 """
 
 
-def sparql(query, retries=3):
+def sparql(query, retries=RETRIES):
     for attempt in range(1, retries + 1):
         time.sleep(2.5)
         try:
@@ -90,7 +92,7 @@ def sparql(query, retries=3):
                               timeout=300)
         except requests.exceptions.ReadTimeout:
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(backoff(attempt))
                 continue
             return None
         if r.status_code == 429:
@@ -100,7 +102,7 @@ def sparql(query, retries=3):
             return r.json()["results"]["bindings"]
         except ValueError:
             if attempt < retries:
-                time.sleep(15 * attempt)
+                time.sleep(backoff(attempt))
                 continue
             return None
     return None
