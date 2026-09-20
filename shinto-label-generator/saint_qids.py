@@ -264,6 +264,52 @@ QID_BY_RENDERING = {
 }
 
 
+def _term_index():
+    """{ja rendering: qid} for the TERM map, via the table key each term names.
+
+    ⛔ `qid_for_match` originally read `QID_BY_RENDERING` alone, so the 48 terms
+    in `SAINT_QIDS` — the whole first lookup — were invisible to it. The P825
+    generator emitted 2,168 statements from 14 distinct dedicatees where the
+    measurement had said 4,155 from all of them, and the two maps were the
+    difference. A map nothing reads is not a map.
+
+    The join is the same one used everywhere here: a term normalises to a table
+    key, and a key renders to a Japanese string that identifies the concept.
+    """
+    import religious_building_morphemes as _m
+    out = {}
+    for term, qid in SAINT_QIDS.items():
+        low = _m._fold(term.lower())
+        forms = {low}
+        for prefix in ("saint ", "st ", "st. ", "the ", "our lady of the ",
+                       "our lady of ", "our lady "):
+            if low.startswith(prefix):
+                forms.add(low[len(prefix):].strip())
+        for form in forms:
+            if not form:
+                continue
+            row = (_m.NAMES.get(form) or _m.DEDICATIONS.get(form)
+                   or _m.NAME_PHRASES.get(form))
+            if row:
+                out.setdefault(row["ja"], qid)
+                break
+    return out
+
+
+_BY_RENDERING = None
+
+
+def _index():
+    """Both maps, keyed by rendering. `QID_BY_RENDERING` wins — it is the later,
+    script-validated lookup and the terms it overlaps were cross-checked."""
+    global _BY_RENDERING
+    if _BY_RENDERING is None:
+        merged = _term_index()
+        merged.update(QID_BY_RENDERING)
+        _BY_RENDERING = merged
+    return _BY_RENDERING
+
+
 def qid_for_match(hit):
     """The QID for a `match_dedication()` result, or None.
 
@@ -284,4 +330,4 @@ def qid_for_match(hit):
         if len(key) != 1:
             return None
         row = _m.NAMES.get(key[0])
-    return QID_BY_RENDERING.get(row["ja"]) if row else None
+    return _index().get(row["ja"]) if row else None

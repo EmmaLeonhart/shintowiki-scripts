@@ -1,3 +1,63 @@
+## 2026-09-20 (second) — P825 ships: 4,888 statements from the dedication the label already named
+
+Work-loop tick, and the item Emma opened on 2026-09-18: *"using the dedicated to for other ontology
+not just labels"*. The tables have resolved a label to a dedicatee since 2026-09-17, but only ever
+to a STRING, and a string identifies nobody — 安德肋 is not a value a statement can carry, `Q43399`
+is.
+
+    Q106484005|P825|Q133704     Martin of Tours
+    Q41412170|P825|Q408284      Sacred Heart
+
+**4,888 statements, 43 distinct dedicatees, one line per item, zero malformed.** Registered in
+`direct_daily_edits.ATOMIC_FILES` and wired into `generate-quickstatements.yml`, so it regenerates
+every run and widens by itself as more concepts resolve.
+
+⛔ **The output lands in `modern-quickstatements/`, not beside the labels.** The label files are
+drip-fed by `select_label_proposals.py`, 20 a day from the language files. A statement is not a
+label and goes on the ordinary `direct_daily_edits` path like every other `P825` import here.
+
+### ⛔ A map nothing reads is not a map
+
+The first run emitted **2,168 statements from 14 distinct dedicatees**, where the measurement two
+days earlier had said 4,155 across all of them. `qid_for_match` read `QID_BY_RENDERING` alone — so
+the 48 terms in `SAINT_QIDS`, the *entire first lookup*, were invisible to it. The measurement had
+joined both maps ad hoc and the shipped function joined one.
+
+That is the third time this week a number came from a join done by hand and then differed from what
+the code did. The fix puts the join inside `saint_qids._index()`, so there is one merged
+rendering-keyed lookup and the measurement and the generator cannot diverge again. 2,168 → 4,888.
+
+### The top fourteen values, checked against live Wikidata
+
+759 `Q345` Mary · 409 `Q162691` Assumption · 301 `Q37090` Holy Trinity · 266 `Q44269` Nicholas ·
+226 `Q133704` Martin of Tours · 190 `Q408284` Sacred Heart · 185 `Q48438` George · 185 `Q45581`
+Michael · 156 `Q40662` John the Baptist · 145 `Q33923` Peter · 139 `Q17590` Lawrence · 122 `Q501107`
+Nativity of Mary · 115 `Q164294` Anne · 114 `Q54875` Our Lady of the Rosary.
+
+Every one read against its live label and description before the file was written — 3,102 of the
+4,888 are in those fourteen, so a single wrong row would be worth hundreds of false statements.
+
+### What it refuses
+
+- **An unvalidated dedicatee** (3,081 items). Nothing is looked up at emit time; the seed the maps
+  grew from was 52% wrong, so outside the checked map is a refusal, not a lookup.
+- **A dedication naming two saints** (185). `Santi Martino e Giorgio` needs TWO statements, and
+  emitting one silently asserts the label names a single dedicatee.
+- ⛔ **A cultural-property designation**, which CLAUDE.md states for `P825` outright:
+  `P825 → Q1188622` asserts "dedicated to Important Cultural Property", which asserts nothing. None
+  of the current 43 values is one — they are saints, Marian titles, dogmas and feasts — and the
+  check is made anyway, with a test that forces a designation into the map to prove the guard fires.
+  A guard that has never fired is a guard nobody has tested.
+
+### What it deliberately does not check
+
+Whether the item already carries the statement. `direct_daily_edits` treats an already-present value
+as a success (`test_already_present_is_not_a_failure.py`), so a re-offered line costs one API call
+and changes nothing. Querying 8,080 items to save that would cost more than it saves against an
+endpoint this repo has a rule about.
+
+10 new tests. Full suite 2,918 pass.
+
 ## 2026-09-20 — 2,153 → 4,155, and an allow-list that was wrong the way its sample was
 
 Work-loop tick. The named next step: resolve the dedication concepts that had no QID.

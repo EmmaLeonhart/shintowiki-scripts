@@ -49,28 +49,13 @@ from `ATOMIC_FILES`; they are not queue items.
   multilingual and `COUNTRY_RULES` is one family per country, so a French label in Q39 gets German
   rules and is correctly refused rather than mis-read. 5 items; not worth a per-item language guess.
 
-- [ ] Religious buildings: emit `P825` (dedicated to) from the parsed dedication, not just labels
-  (Emma, same day: *"using the dedicated to for other ontology not just labels"*). Must respect the
-  `INVALID_HONZON` / designation-class rules already in CLAUDE.md.
-  ✓ The QID half is DONE and validated — `saint_qids.py`, 48 terms, built 2026-09-19. Emma ruled the
-  same day that the **QID identifies and the TABLE renders**, so this emits a statement and changes
-  no label.
-  ✓ The seam and the map are both done. `match_dedication()` names which table entry matched;
-  `saint_qids.qid_for_match()` turns that into a QID; `resolve_dedication_qids.py` is the
-  reproducible lookup. **4,155 of 8,080 table-path items reach a validated QID** (2,153 → 4,155 on
-  2026-09-20, from 14 concept lookups).
-  ⚠ WRITE THE GENERATOR NEXT — that is the whole remaining step, and it SHIPS what is validated
-  rather than waiting for the rest. Add-only, reversible, and the drip owns the rate; more concepts
-  resolve later and the file regenerates.
-  ⚠ Two shapes the generator must handle, both already surfaced: a two-saint dedication needs TWO
-  statements and `qid_for_match` deliberately returns None for it; and assert the values carry no
-  cultural-property designation, per the `INVALID_HONZON` rule, even though none of the 14 is one.
-  ⚠ The next lookup round is the refusals `resolve_dedication_qids.py` prints — `聖母` 489 (the
-  query returns nothing), `聖十字架` 257 and `十字架挙栄` 97 (correct items with NO P31 at all, which
-  the class filter cannot clear), `ヨハネ` 171 and `キリスト` 90 (genuinely ambiguous).
-- [ ] Religious buildings: render BOTH dedications (Emma, same day). `Sint-Bartholomeus- en
-  Barbarakerk`, `Saints Apostles Peter and Paul church in …`. Needs a join word per language and
-  the Dutch hyphen-elision form.
+- [ ] Religious buildings: the next dedication-QID lookup round. `resolve_dedication_qids.py`
+  prints its own refusals and they are the list: `聖母` 489 (the query returned nothing, which is a
+  query problem — Mary plainly has an item), `聖十字架` 257 and `十字架挙栄` 97 (True Cross and Feast
+  of the Cross carry NO P31 at all, so the class filter cannot clear them), `ヨハネ` 171 and
+  `キリスト` 90 (genuinely ambiguous — a bare Johannes is the Evangelist or John of Patmos).
+  ⚠ Every added QID widens `religious_building_p825.txt` on the next run; the generator is wired and
+  regenerates every time, so this is ordinary drip work and nothing has to be re-plumbed.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this

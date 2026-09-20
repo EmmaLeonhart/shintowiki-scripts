@@ -631,6 +631,15 @@ jobs:
             git push origin "HEAD:${GITHUB_REF_NAME}" && echo "pushed." || echo "WARNING: push failed."
           fi
 
+      # Lives in shinto-label-generator because that is where the morpheme tables
+      # and the validated QID map are; its OUTPUT is an ordinary atomic file in
+      # modern-quickstatements, because a statement is not a label and does not
+      # go through select_label_proposals' 20-a-day drip.
+      - name: Religious-building P825 (dedicated to, from the parsed dedication)
+        working-directory: shinto-label-generator
+        continue-on-error: true
+        run: python generate_religious_building_p825.py
+
       - name: Strip QuickStatements targeting repurposed husks
         working-directory: modern-quickstatements
         run: python strip_husk_lines.py --apply
