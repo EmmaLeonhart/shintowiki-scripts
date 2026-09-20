@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q135039497 -->
-<!-- JA: 稲木神社 | EN_LABEL: Inakino Shrine | BUCKET: a -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q135425820 -->
+<!-- JA: 大山祇神社 | EN_LABEL: Oyamazumi Shrine | BUCKET: a -->
 <!-- ARTICLE: (none) -->
-<!-- ANSWER: NO_KANA: no lead available; both candidates plausible (木 as -ki vs -gi); cannot choose -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): いなきのじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): いなぎじんじゃ
+  CANDIDATE A (from the English label): おやまずみじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): おおやまずみじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports

@@ -1,10 +1,10 @@
-<!-- ITEM: https://www.wikidata.org/wiki/Q11450228 -->
-<!-- JA: 安居神社 | EN_LABEL: Yasui Shrine | BUCKET: a -->
-<!-- ARTICLE: https://ja.wikipedia.org/wiki/%E5%AE%89%E5%B1%85%E7%A5%9E%E7%A4%BE -->
-<!-- ANSWER: KANA: やすいじんじゃ -->
+<!-- ITEM: https://www.wikidata.org/wiki/Q135260492 -->
+<!-- JA: 二荒山神社 | EN_LABEL: Futarasan Shrine | BUCKET: a -->
+<!-- ARTICLE: (none) -->
+<!-- ANSWER: -->
 <!-- TASK: this shrine's reading is DISPUTED between two mechanical sources, and the lead above is the tiebreak.
-  CANDIDATE A (from the English label): やすいじんじゃ
-  CANDIDATE B (from other shrines whose Japanese name is identical): あごじんじゃ
+  CANDIDATE A (from the English label): ふたらさんじんじゃ
+  CANDIDATE B (from other shrines whose Japanese name is identical): ふたあらやまじんじゃ
 Read the LEAD and fill ANSWER with exactly one of:
   KANA: <hiragana>        the LEAD states this reading — it may be A, B, or neither; the lead wins over both
   GUESS: <hiragana>       the lead states no reading; this is the candidate the other evidence supports
@@ -14,4 +14,5 @@ Rules: give the reading of the SHRINE NAME itself, not a 通称 (common name), n
 When ANSWER is filled this file is done. -->
 
 == LEAD ==
-安居神社（やすいじんじゃ）は、大阪市天王寺区にある神社。旧社格は村社。安居天満宮、安井神社ともいう。真田信繁が討死した地である。
+(NO LEAD AVAILABLE — the jawiki article is a redirect, a disambiguation page, empty, or the item has no jawiki sitelink at all, so there is no first sentence to read a reading out of. This will never change on its own.
+The two candidates below are still real evidence: pick between them if you can, from the readings other shrines of this name carry or from the place-name the shrine is named for. Answer NO_KANA only if you genuinely cannot.)
