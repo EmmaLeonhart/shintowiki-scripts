@@ -50,13 +50,16 @@ from `ATOMIC_FILES`; they are not queue items.
   rules and is correctly refused rather than mis-read. 5 items; not worth a per-item language guess.
 
 - [ ] Religious buildings: emit `P825` (dedicated to) from the parsed dedication, not just labels
-  (Emma, same day: *"using the dedicated to for other ontology not just labels"*). The morpheme
-  table already resolves a dedication to a saint; nothing turns it into a statement. Must respect
-  the `INVALID_HONZON` / designation-class rules already in CLAUDE.md.
-- [ ] Religious buildings: the saint reading comes from WIKIDATA's label on the resolved QID, not
-  from my table (Emma, same day). Table becomes a QID map; `paused/table_audit.tsv`'s 101 rows are
-  the seed. Drop rows whose term resolved to a non-religious-figure — `All Saints` → `Q165386` is
-  a girl group.
+  (Emma, same day: *"using the dedicated to for other ontology not just labels"*). Must respect the
+  `INVALID_HONZON` / designation-class rules already in CLAUDE.md.
+  ✓ The QID half is DONE and validated — `saint_qids.py`, 48 terms, built 2026-09-19. Emma ruled the
+  same day that the **QID identifies and the TABLE renders**, so this emits a statement and changes
+  no label.
+  ⚠ What is left is the JOIN, and it is the whole remaining job: the morpheme table keys on bare
+  tokens (`andrew`, `nicholas`) while `saint_qids` keys on phrases (`Saint Andrew`,
+  `Our Lady of Kazan`). Measure the join before writing the generator — how many of the 7,599
+  table-path items reach a validated QID is not known, and 48 terms is a small map against ~200
+  table rows.
 - [ ] Religious buildings: render BOTH dedications (Emma, same day). `Sint-Bartholomeus- en
   Barbarakerk`, `Saints Apostles Peter and Paul church in …`. Needs a join word per language and
   the Dutch hyphen-elision form.

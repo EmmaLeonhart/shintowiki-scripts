@@ -1,3 +1,72 @@
+## 2026-09-19 (ninth) — the dedication QID seed was 52% wrong
+
+Work-loop tick, the 10% item that was due. `paused/table_audit.tsv` resolves 101 dedication terms to
+Wikidata QIDs and the queue item called for turning it into a QID map, *"drop rows whose term
+resolved to a non-religious-figure — `All Saints` → `Q165386` is a girl group."*
+
+**It is not an outlier.** Measured against the live `P31` of all 101 rows:
+
+    painting                    11   the Transfiguration -> Raphael's canvas
+    commune of France            6   Saint Joseph -> a commune in Martinique
+    Catholic church building     5   Our Lady Queen of Heaven -> a church in Bayswater
+    church building              4
+    icon                         3   Our Lady of Kazan -> the physical icon
+    film                         2   the Holy Innocents -> a 1984 Mario Camus film
+    album / audio track /        6   the Ascension -> a Sufjan Stevens album
+      article / TV episode /
+      girl group / family name
+    city / island / parish /     7   Saint Thomas -> a US Virgin Islands island
+      municipality / comune
+    no QID resolved              7
+                                ---
+                                 52
+
+⛔ **Unvalidated, this table would have dedicated churches to French communes, a film and an
+album** — and to eight other CHURCHES, which is the most plausible-looking wrong answer in it.
+The lookup was done for the LABEL work, where a wrong QID costs nothing because the labels come from
+the morpheme table. Used for `P825` it asserts a fact.
+
+`saint_qids.py`: an explicit `ALLOWED_CLASSES` allow-list of what a dedicatee may BE (person, angel,
+deity, Marian title, dogma, feast). Unlisted refuses, the doctrine
+`romance_katakana.rules_for_country` already holds. **48 validated, 52 refused with the reason
+recorded** so the next lookup does not rediscover them.
+
+⛔ **A DEPICTION of X is not X**, and depictions are the largest refused group. `the Transfiguration`
+resolved to Raphael's painting; the feast has its own item and this lookup did not find it. `Our
+Lady of Kazan` is the icon in Kazan Cathedral — a real thing a church could be dedicated to, and
+still not the Marian title the label names. Same line `generate_honzon_quickstatements` holds when
+it refuses `P825 → 重要文化財`.
+
+⚠ `the Assumption` survives on its `dogma` statement while also carrying `artistic theme`, so the
+test is whether ANY class is a dedicatee class, not whether every one is. A naive depiction filter
+would have dropped it.
+
+### ⭐ The QID identifies; the TABLE renders (Emma's ruling)
+
+The item's other half — *"the saint reading comes from WIKIDATA's label, not from my table"* —
+turned out to collide with a documented decision. Measured over the 49 validated terms, **25 ja and
+36 zh labels differ**, and not as noise: Wikidata's are disambiguated full names
+(アッシジのフランチェスコ, ミラのニコラオス, アレクサンドリアのカタリナ) and its zh is a different
+church register (安德肋 → 安得烈, Catholic → Protestant; 巴尔巴拉 → 白芭蕾, Catholic →
+transliteration), which `docs/script-rationale/...` §9 records as a deliberate call.
+
+A disambiguated name is right for identifying a person and wrong for naming a church: the place slot
+already carries a の, so `リヨンのアッシジのフランチェスコ教会` reads with two, and Assisi is not
+where the building is.
+
+Put to her as a conflict between two documented rules, Emma split the two uses rather than picking a
+side: **the resolved QID goes in `P825`; the table renders the label.** So the module supplies
+identity and never a string, and no label changes.
+
+### What is left, named precisely
+
+`P825` emission is NOT built. The remaining job is the JOIN: the morpheme table keys on bare tokens
+(`andrew`) while `saint_qids` keys on phrases (`Saint Andrew`). How many of the 7,599 table-path
+items reach a validated QID is not known, and 48 terms is a small map against ~200 table rows — so
+the join gets measured before the generator gets written.
+
+28 new tests. Full suite 2,869 pass.
+
 ## 2026-09-19 (eighth) — the kana is what settles the stem boundary
 
 Work-loop tick, shrine and temple side. Started as a health scan of the 42 registered atomic files
