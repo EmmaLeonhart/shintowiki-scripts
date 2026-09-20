@@ -45,6 +45,7 @@ from collections import Counter
 
 import requests
 
+import staged_readings
 from reuse_labels import choose_label
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -174,10 +175,21 @@ def lines_for_target(qid, ja, counters):
 
 
 def load_targets(worklist=WORKLIST):
+    """The no-kana subset — AFTER the staged readings are applied.
+
+    ⛔ The top-up has to happen here too, not only in Stage 1. Stage 2 selects
+    the items Stage 1 could not handle, and it decides that by asking whether
+    the item has kana. Topping up in Stage 1 alone would leave these items
+    looking kana-less here, so BOTH stages would emit an ``Len`` line for the
+    same QID into two different atomic files, and whichever the drip ran second
+    would silently overwrite the first. There is exactly one such collision in
+    the whole output today, and it is not one of ours.
+    """
     if not os.path.exists(worklist):
         return []
     with open(worklist, encoding="utf-8") as f:
         items = json.load(f).get("items", [])
+    staged_readings.fill(items)
     # no-kana subset: kana-bearing items are Stage 1's job
     return [it for it in items if not (it.get("kana") or "").strip() and it.get("ja")]
 

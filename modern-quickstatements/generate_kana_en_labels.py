@@ -27,6 +27,7 @@ import json
 import os
 import sys
 
+import staged_readings
 from kana_english import hardcoded_label, label_for
 
 WORKLIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "shrines_missing_en_label.json")
@@ -58,10 +59,23 @@ def lines_for_item(item):
 
 
 def load_worklist():
+    """The worklist, with empty kana topped up from our own staged readings.
+
+    The worklist's kana is read off WIKIDATA, so a reading sitting in
+    ``nta_kana.txt`` waiting its turn on the drip is invisible to it and Stage 1
+    emits nothing. Measured 2026-09-19: 296 shrines. See ``staged_readings`` for
+    why only the registry-sourced file is consulted.
+    """
     if not os.path.exists(WORKLIST):
         return []
     with open(WORKLIST, encoding="utf-8") as f:
-        return json.load(f).get("items", [])
+        items = json.load(f).get("items", [])
+    global _FILLED_FROM_STAGED
+    _FILLED_FROM_STAGED = staged_readings.fill(items)
+    return items
+
+
+_FILLED_FROM_STAGED = 0
 
 
 def main():
@@ -81,7 +95,8 @@ def main():
         all_lines.extend(lines)
 
     total = len(items)
-    print(f"Worklist: {total} shrines missing en label; {len(with_kana)} have kana.")
+    print(f"Worklist: {total} shrines missing en label; {len(with_kana)} have kana "
+          f"({_FILLED_FROM_STAGED} of them topped up from staged readings).")
     print(f"Stage 1 deterministically handled {handled}/{len(with_kana)} kana shrines "
           f"-> {len(all_lines)} QuickStatements lines.")
 

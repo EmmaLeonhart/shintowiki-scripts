@@ -25,6 +25,7 @@ import json
 import os
 import sys
 
+import staged_readings
 from temple_english import label_for
 
 WORKLIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "temples_missing_en_label.json")
@@ -45,10 +46,22 @@ def lines_for_item(item):
 
 
 def load_worklist():
+    """The worklist, with empty kana topped up from our own staged readings.
+
+    Same reason as the shrine generator, and a bigger population: measured
+    2026-09-19, **1,116 temples** in this worklist have an NTA reading staged in
+    ``nta_kana.txt`` and no kana on Wikidata.
+    """
     if not os.path.exists(WORKLIST):
         return []
     with open(WORKLIST, encoding="utf-8") as f:
-        return json.load(f).get("items", [])
+        items = json.load(f).get("items", [])
+    global _FILLED_FROM_STAGED
+    _FILLED_FROM_STAGED = staged_readings.fill(items)
+    return items
+
+
+_FILLED_FROM_STAGED = 0
 
 
 def main():
@@ -67,7 +80,8 @@ def main():
             handled += 1
         all_lines.extend(lines)
 
-    print(f"Worklist: {len(items)} temples missing en label; {len(with_kana)} have kana.")
+    print(f"Worklist: {len(items)} temples missing en label; {len(with_kana)} have kana "
+          f"({_FILLED_FROM_STAGED} of them topped up from staged readings).")
     print(f"Deterministically handled {handled}/{len(with_kana)} kana temples "
           f"-> {len(all_lines)} QuickStatements lines.")
 

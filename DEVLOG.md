@@ -1,3 +1,71 @@
+## 2026-09-19 (fifth) — the readings were already in the repo: +1,406 English labels
+
+Work-loop tick. The queue held only religious-building items — the **10%** — and the previous two
+sessions were spent entirely there, so this went looking for shrine and temple work instead. It was
+not in `queue.md` and it is not a new pipeline; it is two existing generators being allowed to see
+readings this repo had already staged.
+
+### The bottleneck `ATOMIC_FILES` names, and where it actually was
+
+> *"the ~18,065-item English-label residual is blocked on READINGS, not on the romanization rule:
+> `generate_kana_en_labels.py` turns kana into a label with no judgement and simply has nothing to
+> turn."*
+
+True, and incomplete. The worklists' `kana` field is read off **Wikidata**, so a reading sitting in
+our own `nta_kana.txt` waiting its turn on the drip is invisible to them. Measured: **296 shrines
+and 1,116 temples** in the missing-en-label worklists have an NTA registry reading staged and no
+kana on Wikidata.
+
+    shrine Stage 1   370 -> 662 lines   (+292)
+    temple Stage 1   322 -> 1,436 lines (+1,114)
+
+`staged_readings.py` tops the worklist up; both Stage 1s and the shared Stage 2 selector consult it.
+
+⛔ **Only the registry-sourced file, and the reason is circularity.** The other two staged `P1814`
+files — `derived_name_in_kana.txt` and `katakana_reading_add.txt` — are DERIVED FROM THE ENGLISH
+LABEL, so feeding them back would derive a label from a reading derived from a label. Today it
+cannot happen: an item in those files already has an en label and is therefore not in a
+missing-en-label worklist, and the measured overlap is **0 for both**. That is a property of how
+they are built, not a promise about how they will be built later, so the exclusion is explicit and
+the zero-overlap is pinned by a test.
+
+⛔ **Both stages had to get the top-up, not just Stage 1.** Stage 2 selects the items Stage 1 could
+not handle, and decides that by asking whether the item has kana. Topping up in Stage 1 alone leaves
+them looking kana-less to Stage 2, so both emit an `Len` line for the same QID into two different
+atomic files and whichever the drip runs second wins, arbitrarily.
+
+### ⭐ The guard that was missing on the output side
+
+`select_shrines_to_translate.EXCLUDE_FILES` has always enforced one label per item on the **input**
+side. **Nothing ever checked the output.** The moment Stage 1 could reach items Stage 2 had already
+claimed, **959** QIDs carried two competing `Len` lines — and the collision would have been silent,
+because both files are valid and the drip submits both.
+
+Most of the disagreements are **macrons**: Stage 1 derives from kana and writes none (`Chomyo-ji`),
+Stage 2 reuses another item's existing Wikidata label and inherits them (`Chōmyō-ji`). A smaller
+class is genuine reading disagreement — `Kodaka` vs `Otaka` for 小高, `Enpuku-ji` vs `Enfuku-ji` —
+where Stage 1's reading is the NTA registry's and Stage 2's is whatever a same-named item happens to
+carry. Emma's 2026-08-24 rule makes the registry authoritative, and the pipeline's own stage order
+already says the deterministic stage comes first, so Stage 1 wins both classes.
+
+The committed Stage 2 output was synced to what the code now produces (179 + 761 lines dropped;
+Stage 2 regenerates wholesale from SPARQL in CI and would have dropped them on its next run), and 19
+superseded lines were dropped from `en_labels_sonnet.txt` for the same reason the LLM would not have
+picked those items in the first place. `test_one_en_label_line_per_item` now fails if it ever
+regrows.
+
+⚠ **One grandfathered pair.** `Q65268013` is `Nenbutsu-ji (Sakai)` from its shintowiki page title
+and `Nenbutsu-ji Temple` from Stage 2. Which is right depends on whether another Nenbutsu-ji already
+holds the bare label on live Wikidata — one API call's worth of judgement for one item. Named and
+dated in the test rather than resolved silently.
+
+⚠ **1,355 labels are claimed by more than one QID and that is CORRECT** — fifteen different
+Itsukushima Shrines are all `Itsukushima Shrine`. Wikidata constrains the (label, description) PAIR,
+not the label. Nearly reported as a defect; a test now says so explicitly so the next reader does not
+make the same mistake.
+
+12 new tests. Full suite 2,772 pass.
+
 ## 2026-09-19 (fourth) — five orthographies, because she said all of them: 6,627 refused -> 2,604
 
 Asked which transliterators to build for the residue section 7b left, and shown the French caveat in
