@@ -1,3 +1,71 @@
+## 2026-09-19 (eighth) — the kana is what settles the stem boundary
+
+Work-loop tick, shrine and temple side. Started as a health scan of the 42 registered atomic files
+and ended in the English-label suffix table. **Most of this tick is negative results**, and they are
+written down so the next session does not re-derive them.
+
+### ⭐ The fix: a mismatched reading is EVIDENCE, not a gap
+
+`kana_english._SUFFIXES` is ordered most-specific-kanji-first and returned **None** the moment the
+specific entry's READING did not match. So `大神社 / おおかみしゃ` was refused — when the reading had
+just answered the question:
+
+    大神社 requires だいじんじゃ.  The reading is おおかみしゃ.
+    So it is not 大 + 神社.  So it is 大神 + 社.  So it is `Okami-sha Shrine`.
+
+It now falls through to the next entry instead. Plus the `神社` tail variants the National Tax Agency
+registry actually files: じんしゃ (unvoiced, a real variant), じんじや (large や) and じんじじゃ
+(doubled じ), both plainly typos. ⛔ Emma, 2026-08-24: an NTA-cited reading is PRESERVED even when it
+looks like a typo — and nothing here changes a stored reading. The stem is やさか whichever tail the
+registry recorded, so `Yasaka Shrine` was being thrown away over something the variant never put in
+doubt.
+
+**7 new labels, 0 existing changed or lost.**
+
+⛔ **`水神社 / すいじんしゃ` is why the variant needed a guard.** 神社 is essentially always じんじゃ,
+so an unvoiced じんしゃ is usually not a variant at all — it is the ordinary 社/しゃ with a stem
+ending in 神. 水神社 is 水神 + 社, `Suijin-sha Shrine`, and accepting the variant blindly emitted
+`Sui Shrine`. The signal is what is LEFT of the suffix: one character and the other parse is live,
+two or more and the stem is a real place or name (八坂, 坊金, 若宮).
+
+### ⛔ What was deliberately NOT changed
+
+`神宮` is `skip` — deferred, not broken. When the kana matches じんぐう **both parses stay open**:
+明治/神宮 is Meiji Jingū and 天神/宮 is Tenjin-gū. Falling through there would read 明治神宮 as
+めいじじん + ぐう and emit `Meijijin-gu Shrine`, which is the failure that entry exists to prevent.
+The skip is now checked AFTER the reading rather than before, so a 神宮 whose reading rules the parse
+out can fall through — but when the reading agrees, it defers exactly as it always has. 5 items.
+
+### The negative results, which are most of the tick
+
+- **7 of 42 atomic files are empty, and none of them is a defect.** Three are declared (`ONE_SHOT`,
+  and `katakana_reading_remove.txt`, which is empty until its adds land — the add-first rule, not a
+  fault). Two are **verified drained**: `SELECT (COUNT(*))` says **0** items still carry
+  `P31=Q135026601` and **0** Shikinai Ronsha still carry `P31=Q134917286`. Two more are written by
+  `generate_modern_shrine_ranking_qualifiers.py`, which is wired and runs daily.
+  ⚠ Git cannot tell drained from broken here: a generator that emits zero writes an empty file, git
+  sees no diff, nothing is committed — so "last changed 2026-05-24" means "last time the content
+  changed", not "last time it ran". That is the gap
+  `test_every_atomic_file_is_regenerated`'s own docstring names ("it checks WIRING, not yield").
+- **`engishiki_add_references.txt` is not orphaned.** A first grep said no generator writes it; it is
+  written by `generate_modern_shrine_ranking_qualifiers.py` and my pattern missed it. Checked before
+  reporting.
+- **339 temple labels carry a trailing parenthetical** and `ja.endswith("寺")` fails on them — the
+  same class of bug fixed in the religious-building parser hours earlier. **Exactly 1 of them has
+  kana, and it would not label anyway.** Those 339 are blocked on readings, not on parsing, so there
+  is nothing to fix.
+- **The other 36 kana-bearing refusals are correct.** Buddhist sects (臨済宗方広寺派), 合殿 shared-hall
+  shrines, a Shrine Agency office, devotional names (長谷観音), and five whose kana does not match
+  their own label at all — `賢沼寺` read as みつぞういん.
+
+### The one-label-per-item guard fired for the third time in three changes
+
+7 new Stage 1 labels landed on items Stage 2 had already claimed. Second time it was 22, first time
+959. `dedupe_en_label_files.py` now exists for exactly this and cleared it in one command. Three
+occurrences in three consecutive label changes is what that tool was built on.
+
+3 new tests plus 12 covering the suffix table. Full suite 2,841 pass.
+
 ## 2026-09-19 (seventh) — 86% of the German residue named nothing at all
 
 Work-loop tick, and the 10% item that was owed: classifying the 909 German-family labels still

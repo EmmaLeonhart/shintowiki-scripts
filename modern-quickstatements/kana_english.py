@@ -177,15 +177,45 @@ def romanize(kana: str) -> Optional[str]:
 #   style "space" -> "<Stem> <word>"; "gu" -> "<Stem>-gu Shrine";
 #   "sha" -> "<Stem>-sha Shrine"; "skip" -> deterministically ambiguous, defer.
 # Each entry: (kanji_suffix, kana_suffix, english_word, alias_word, style).
+# ⚠ The kana suffix may be a TUPLE of accepted readings. 神社 is じんじゃ in the
+# overwhelming majority and the National Tax Agency registry also files じんしゃ
+# (unvoiced, a real variant in some shrine names) and two spellings that are
+# plainly typos — じんじや with a large や, じんじじゃ with a doubled じ.
+#
+# ⛔ Emma, 2026-08-24: an NTA-cited reading is PRESERVED even when it looks like a
+# typo. Nothing here changes a stored reading. The STEM is やさか either way, and
+# `Yasaka Shrine` is the right label whichever tail the registry recorded — so
+# accepting the variant costs nothing and refusing it threw the label away.
 _SUFFIXES = [
-    ("大神宮", "だいじんぐう", "Daijingu", None, "space"),
-    ("大神社", "だいじんじゃ", "Daijinja", None, "space"),
-    ("神宮", "じんぐう", None, None, "skip"),       # ambiguous stem boundary -> Stage 4
-    ("神社", "じんじゃ", "Shrine", None, "space"),
-    ("大社", "たいしゃ", "Grand Shrine", "Taisha", "space"),
-    ("宮", "ぐう", "Shrine", None, "gu"),
-    ("社", "しゃ", "Shrine", None, "sha"),
+    ("大神宮", ("だいじんぐう",), "Daijingu", None, "space"),
+    ("大神社", ("だいじんじゃ",), "Daijinja", None, "space"),
+    ("神宮", ("じんぐう",), None, None, "skip"),    # ambiguous stem boundary -> Stage 4
+    ("神社", ("じんじゃ", "じんしゃ", "じんじや", "じんじじゃ"),
+     "Shrine", None, "space"),
+    ("大社", ("たいしゃ",), "Grand Shrine", "Taisha", "space"),
+    ("宮", ("ぐう",), "Shrine", None, "gu"),
+    ("社", ("しゃ",), "Shrine", None, "sha"),
 ]
+
+
+def _variant_ok(ja: str, kanji_suf: str, matched: str, accepted) -> bool:
+    """⛔ A VARIANT reading is only safe when the alternative parse is dead.
+
+    `神社` is essentially always じんじゃ, so an unvoiced じんしゃ is usually not a
+    variant at all — it is the ordinary 社/しゃ suffix with a stem that happens to
+    end in 神. 水神社 / すいじんしゃ is 水神 + 社 (Suijin-sha Shrine), not
+    水 + 神社 (Sui Shrine), and accepting the variant blindly emitted the latter.
+
+    The signal is what is LEFT of the kanji suffix. One character and the other
+    parse is live — 水神社 leaves 水; two or more and it is a real place or name
+    that owns the whole suffix: 八坂神社 leaves 八坂, 坊金神社 leaves 坊金,
+    若宮神社 leaves 若宮, all correctly `<Stem> Shrine`.
+
+    The canonical reading is never subject to this — only the variants are.
+    """
+    if matched == accepted[0]:
+        return True
+    return len(ja) - len(kanji_suf) >= 2
 
 
 def label_for(ja: str, kana: str) -> Optional[LabelResult]:
@@ -197,13 +227,32 @@ def label_for(ja: str, kana: str) -> Optional[LabelResult]:
     confidently romanized."""
     ja = (ja or "").strip()
     h = katakana_to_hiragana((kana or "").strip())
-    for kanji_suf, kana_suf, word, alias_word, style in _SUFFIXES:
+    for kanji_suf, kana_suffixes, word, alias_word, style in _SUFFIXES:
         if not ja.endswith(kanji_suf):
             continue
+        matched = next((k for k in kana_suffixes
+                        if h.endswith(k) and _variant_ok(ja, kanji_suf, k,
+                                                         kana_suffixes)), None)
+        if matched is None:
+            # ⭐ FALL THROUGH, do not refuse. The table is ordered most-specific
+            # kanji first, and when the specific one's READING does not match,
+            # the reading has ruled that parse out — it is evidence, not a gap.
+            #
+            #     大神社 / おおかみしゃ   だいじんじゃ? no -> it is 大神 + 社,
+            #                             so 社/しゃ gives Ookami-sha Shrine.
+            #
+            # Returning None here lost the label instead of consulting the very
+            # thing that settles the stem boundary.
+            continue
         if style == "skip":
+            # ⛔ Only NOW, with the reading agreeing. 神宮 is genuinely ambiguous
+            # when the kana matches — 明治/神宮 is Meiji Jingū and 天神/宮 is
+            # Tenjin-gū, and じんぐう fits both — so it defers, as it always has.
+            # Falling through would read 明治神宮 as めいじじん + ぐう and emit
+            # `Meijijin-gu Shrine`, which is the failure this entry exists to
+            # prevent.
             return None
-        if not h.endswith(kana_suf):
-            return None  # reading doesn't match the kanji suffix -> unreliable
+        kana_suf = matched
         stem_kana = h[: -len(kana_suf)]
         if not stem_kana:
             return None

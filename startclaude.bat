@@ -71,6 +71,26 @@ REM The name is given EXPLICITLY. --remote-control takes an OPTIONAL value, so
 REM a bare flag immediately before "%BOOT_PROMPT%" would swallow the prompt as
 REM the session name and the session would open idle. Measured 2026-09-16:
 REM   claude --remote-control "<name>" -p "<prompt>"  ->  prompt runs, name set.
+REM ---------------------------------------------------------------
+REM MEMORY REAPER OPT-OUT. Emma's call, 2026-09-19, taken with AskUserQuestion.
+REM
+REM Claude Code kills BACKGROUND shell commands when system memory runs
+REM critically low while the session is idle. It is a harness feature, not
+REM Windows and not the command: the killed process has done nothing wrong and
+REM the notice says so. On 2026-09-19 it killed a ~30-minute elevated test
+REM suite mid-section, and then a 56.8 GB robocopy at 36.85 GB. Both had to be
+REM resumed by hand, and this machine routinely runs multi-GB dump copies and
+REM long suites in the background.
+REM
+REM IT MUST BE SET BEFORE claude STARTS. Setting it from a shell command inside
+REM a running session has NO EFFECT, which is why it lives in the launcher and
+REM cannot be fixed from a prompt.
+REM
+REM The trade-off Emma accepted: nothing now stops a runaway background job
+REM driving the machine into swap. If that starts happening, delete this line
+REM rather than working around it.
+set "CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1"
+
 "%CLAUDE_EXE%" --remote-control "shintowiki-scripts" "%BOOT_PROMPT%"
 
 REM Keep the window open if Claude exits, so errors stay readable.
