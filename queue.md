@@ -17,11 +17,15 @@ from `ATOMIC_FILES`; they are not queue items.
     trust the IDs written here.
     ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
     in this repo lol."* Do not recreate it from any doc that still says five.
-    ✓ Live IDs, session of **2026-09-17**: `83b0a8e7` :03, `ce4a2a9e` :15, `c1304ac0` :42,
-    `747bc950` 08:03 — created and re-verified with `CronList`. It again reported **no jobs at all**
-    at the start of this session, as it has at the start of every session that has checked. Every
-    recorded set this file has carried has been dead by the time the next session read it. Trust
-    `CronList`, not this line.
+    ✓ Live IDs, session of **2026-09-19**: `2951de5d` :03, `172cd60d` :15, `cc2f00d1` :42,
+    `bd6c1736` 08:03 — created and re-verified with `CronList`, which again reported **no jobs at
+    all** beforehand, as it has at the start of every session that has checked. Every recorded set
+    this file has carried has been dead by the time the next session read it. Trust `CronList`, not
+    this line.
+    ⚠ 2026-09-19: this session read "keep last" as "optional", did the queue work, and reported the
+    crons as something to offer rather than doing them. It is not optional — a fresh session has
+    none, so recreating the set IS the item, and the only reason it is pinned last is that a
+    planning burst kills them.
     ⚠ `durable: true` does nothing — `CronCreate` says so in its own parameter description ("Has no
     effect — durable persistence is not available"). So the recreate-every-session step is the only
     mechanism there is, not a workaround for one that keeps failing.
