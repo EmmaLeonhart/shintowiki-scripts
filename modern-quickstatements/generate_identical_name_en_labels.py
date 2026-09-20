@@ -56,7 +56,34 @@ SPARQL_ENDPOINT = "https://query-main.wikidata.org/sparql"
 UA = WIKIDATA_USER_AGENT
 SHINTO_SHRINE = "Q845945"
 BATCH = 150
-THROTTLE = 0.5  # gentle pacing between SPARQL POSTs
+
+# ⛔ 0.5s HERE WAS A RULE VIOLATION, AND THE 429s WERE ITS PREDICTED RESULT.
+# CLAUDE.md: "DO NOT HAMMER WIKIDATA … never issue a large batched SPARQL sweep",
+# and `wdqs_transport.WDQS_THROTTLE = 2.5` is the repo's floor, described there as
+# "no caller can ask to be FASTER than the floor". This file hand-rolls its own
+# transport and paced itself at **0.5s**, five times faster, across ~70 batched
+# POSTs per run for shrines and temples together.
+#
+# `Generate shrines-missing-en-label list` failed 5 of its last 6 runs — 09-16,
+# 09-17, 09-18, 09-19, 09-20 — every one of them `RateLimitError: 429` from both
+# Stage 2 steps, so `identical_name_en_labels.txt` and
+# `temple_identical_name_en_labels.txt` have not regenerated since 09-17 and have
+# been re-offering landed lines since.
+#
+# ⚠ This removes the violation and cuts this generator's request rate fivefold.
+# It is NOT a claim that the 429s stop: the endpoint's limit is not published and
+# the workflow makes other WDQS calls in the same window. The next runs are the
+# measurement. If it still rate-limits, the levers are a slower throttle (the
+# transport lets a caller be slower, never faster) or a smaller BATCH.
+#
+# ⚠ Why the throttle and not a full migration to `wdqs_transport`: that module's
+# own docstring says migration "is per-file reading and is NOT uniformly an
+# upgrade", and this file's `except ValueError` truncated-body handling is one of
+# the cases it cites — WDQS answering 200 and cutting the body mid-row. Swapping
+# several hard-won error paths at once, in the only producer of two atomic files,
+# to fix a pacing bug is more change than the bug needs.
+from wdqs_transport import WDQS_THROTTLE
+THROTTLE = max(0.5, WDQS_THROTTLE)
 TRANSIENT_STATUS = (500, 502, 503, 504)
 
 _PAREN_DISAMBIG = re.compile(r"\s*\([^)]*\)\s*$")

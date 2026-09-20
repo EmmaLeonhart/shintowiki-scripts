@@ -1,3 +1,56 @@
+## 2026-09-20 (fifth) — five days of 429s, and the rule they were breaking
+
+Work-loop tick, and the 90% side finally had something: **`Generate shrines-missing-en-label list`
+has failed 5 of its last 6 runs** — 09-16, 09-17, 09-18, 09-19, 09-20 — every one
+`RateLimitError: 429` from both Stage 2 steps. Not transient, and older than anything I changed.
+
+### ⛔ The generator was breaking a rule the repo writes down twice
+
+CLAUDE.md: *"DO NOT HAMMER WIKIDATA … never issue a large batched SPARQL sweep."*
+`wdqs_transport.WDQS_THROTTLE = 2.5` is the floor, and that module describes itself as
+*"`max(throttle, WDQS_THROTTLE)` means no caller can ask to be FASTER than the floor"* — which is
+true of callers that USE it, and was not true of this one.
+
+`generate_identical_name_en_labels.py` hand-rolls its own transport and paced itself at **0.5s**,
+five times faster, across roughly 70 batched POSTs per run for shrines and temples together. Now
+`THROTTLE = max(0.5, WDQS_THROTTLE)`, importing the floor so it cannot drift from it.
+
+⚠ **This is not a claim that the 429s stop.** The endpoint's limit is not published and the same
+workflow makes other WDQS calls in the window. It removes a documented violation and cuts this
+generator's request rate fivefold; the next runs are the measurement, and the queue says so along
+with the next two levers.
+
+⚠ **Why not a full migration to `wdqs_transport`**, which its docstring says should happen when a
+file is next touched: that same docstring says migration *"is per-file reading and is NOT uniformly
+an upgrade"*, and this file's `except ValueError` truncated-body handling — WDQS answering 200 and
+cutting the body mid-row — is one of the cases it cites. Swapping several hard-won error paths at
+once, in the only producer of two atomic files, to fix a pacing bug is more change than the bug
+needs.
+
+### The guard, and the two versions of it that were wrong
+
+A test now fails if a hand-rolled WDQS caller paces under the floor. Getting it right took two
+passes, both instructive:
+
+- **First version matched the word "sparql"** and flagged `generate_religious_building_multilang.py`
+  — which mentions SPARQL in prose explaining that it deliberately uses the read API instead.
+- **Second version flagged three files declaring 0.4 and 1.0** that are not offenders at all: they
+  pass those numbers to `wdqs_transport`, which applies the floor. A test that flagged them would
+  have been reporting the floor working.
+
+The rule that survives is narrow and is the real one: **a file that hits the query service WITHOUT
+the transport must not pace under the floor.** A transport user may declare anything; a sub-floor
+number that paces the read API is not an offence either.
+
+### What the failure cost, stated plainly
+
+`identical_name_en_labels.txt` and `temple_identical_name_en_labels.txt` have not regenerated since
+09-17, so they re-offer lines that have already landed. `direct_daily_edits` treats an
+already-present value as a success, so that is one wasted API call per line — untidy, not harmful,
+and it resolves itself the first run that succeeds.
+
+5 new tests. Full suite 2,932 pass.
+
 ## 2026-09-20 (fourth) — 5,840 → 6,406, and a rejection that came straight back
 
 Work-loop tick: the third dedication-QID round, plus emitting a statement per dedicatee where a

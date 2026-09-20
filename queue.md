@@ -34,6 +34,17 @@ from `ATOMIC_FILES`; they are not queue items.
     skip-check, push, then `AskUserQuestion` as the deliverable.
   - [ ] Run the status-report action once more independently as an end-of-session summary.
 
+- [ ] Watch whether `Generate shrines-missing-en-label list` stops 429ing. Its Stage 2 steps hand-
+  rolled a WDQS transport at `THROTTLE = 0.5`, five times faster than the repo floor, and the
+  workflow failed 5 of 6 runs from 09-16 to 09-20 — so `identical_name_en_labels.txt` and
+  `temple_identical_name_en_labels.txt` have not regenerated since 09-17. Raised to the floor
+  2026-09-20.
+  ⚠ This is NOT known to fix it. The endpoint's limit is not published and the same workflow makes
+  other WDQS calls in the window. If the next runs still 429, the levers are a slower throttle (the
+  transport lets a caller be slower, never faster) or a smaller `BATCH` than 150 labels per POST.
+  ⚠ While it fails, those two files are frozen snapshots re-offering landed lines — which costs an
+  API call each and changes nothing, so it is untidy rather than harmful.
+
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
 - [ ] Religious buildings: the long tail after the five families — Netherlands 258, Moldova 140,
