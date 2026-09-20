@@ -107,3 +107,62 @@ def test_a_caller_may_still_be_slower():
     a bare 2.5 would have made them less polite than their authors decided."""
     assert max(0.5, WDQS_THROTTLE) == WDQS_THROTTLE
     assert max(3.0, WDQS_THROTTLE) == 3.0
+
+
+def test_the_transient_backoff_is_the_documented_one():
+    """⛔ 15/45/135, not 10/20.
+
+    The 2026-09-20 dispatch measured what a tight retry buys. In order, from the
+    step log:
+
+        Stage 2 targets (no-kana, no-en): 4082 shrines, 3041 distinct ja labels.
+        SPARQL 502 transient (attempt 1/3)
+        FATAL: 429 Too Many Requests from SPARQL endpoint — bailing
+
+    The endpoint said it was struggling, the generator waited ten seconds, asked
+    again, and was told to go away. CLAUDE.md: *"503/504 → back off hard, do not
+    retry tightly"*, and the floor it names comes *"with exponential backoff
+    (15/45/135s)"*.
+
+    ⚠ This does NOT assert the 429s stop. It asserts the retry follows the written
+    policy, which it did not, and which raising THROTTLE earlier that day did not
+    touch — the retry path never consulted THROTTLE at all.
+    """
+    import generate_identical_name_en_labels as g
+    assert [g._backoff(a) for a in (1, 2, 3)] == [15, 45, 135]
+
+
+def test_four_attempts_or_the_third_step_never_fires():
+    """`wdqs_transport`: "FOUR attempts, because that is what makes the backoff
+    15/45/135. At three, only 15 and 45 ever fire and the documented third step is
+    decoration." The sleep is guarded by `attempt < retries`, so retries=3 would
+    stop after 45s."""
+    import generate_identical_name_en_labels as g
+    from wdqs_transport import RETRIES
+    assert RETRIES == 4
+    import inspect
+    sig = inspect.signature(g.fetch_batch)
+    assert sig.parameters["retries"].default == RETRIES, (
+        "fetch_batch pins its own retry count instead of the transport's")
+
+
+def test_no_tight_retry_is_left_in_the_file():
+    """⚠ Asserted against the CODE, with docstrings stripped by `ast`.
+
+    The first version filtered `#` lines only and failed on `_backoff`'s own
+    docstring, which quotes the retired backoff to explain why it went.
+    `tests/test_workflow_commit_steps_can_commit.py` names the same trap in its
+    own words: assert against the code, not against its explanation of itself.
+    """
+    import ast
+    src = io.open(os.path.join(HERE, "generate_identical_name_en_labels.py"),
+                  encoding="utf-8").read()
+    tree = ast.parse(src)
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.Module, ast.FunctionDef, ast.AsyncFunctionDef,
+                             ast.ClassDef)) and ast.get_docstring(node):
+            node.body = node.body[1:]
+    code = ast.unparse(tree)
+    assert "10 * attempt" not in code, (
+        "a retry path still sleeps 10s and then re-asks an endpoint that just "
+        "returned 5xx; that is the sequence that produced the 429")

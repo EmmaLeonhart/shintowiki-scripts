@@ -82,7 +82,7 @@ BATCH = 150
 # the cases it cites — WDQS answering 200 and cutting the body mid-row. Swapping
 # several hard-won error paths at once, in the only producer of two atomic files,
 # to fix a pacing bug is more change than the bug needs.
-from wdqs_transport import WDQS_THROTTLE
+from wdqs_transport import WDQS_THROTTLE, RETRIES
 THROTTLE = max(0.5, WDQS_THROTTLE)
 TRANSIENT_STATUS = (500, 502, 503, 504)
 
@@ -104,11 +104,39 @@ def normalize_en(label):
     return _PAREN_DISAMBIG.sub("", label).strip()
 
 
+
+def _backoff(attempt):
+    """The repo's documented 5xx backoff: 15s, 45s, 135s (1-based attempt).
+
+    ⛔ This was `10 * attempt` — 10s then 20s — and CLAUDE.md says the opposite in
+    two places: *"503/504 -> back off hard, do not retry tightly"*, and the
+    `generate_genbu_ids.py` floor is *"WDQS_THROTTLE = 2.5 ... with exponential
+    backoff (15/45/135s)"*. `wdqs_transport` implements it as `15 * (3 ** attempt)`
+    over `RETRIES = 4`, and its own comment says three attempts make the documented
+    third step decoration.
+
+    ⚠ This is what the 2026-09-20 dispatch actually showed, in the log, in order:
+
+        Stage 2 targets (no-kana, no-en): 4082 shrines, 3041 distinct ja labels.
+        SPARQL 502 transient (attempt 1/3)
+        FATAL: 429 Too Many Requests from SPARQL endpoint - bailing
+
+    The endpoint said "I am struggling", this waited ten seconds, asked again, and
+    was told to go away. Raising THROTTLE to the floor earlier the same day did not
+    touch that path, because the retry never consulted THROTTLE at all.
+
+    ⚠ Cost, stated because it is not free: a batch that exhausts the backoff now
+    spends 195s instead of 30s, against a `timeout-minutes: 20` job that normally
+    finishes in ~7m. A run where several batches go transient could hit that
+    ceiling. The job already treats a bail as red, so it would be visible.
+    """
+    return 15 * (3 ** (attempt - 1))
+
 def _sparql_escape(s):
     return s.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def fetch_batch(ja_labels, retries=3, instance_triples=SHRINE_TRIPLES):
+def fetch_batch(ja_labels, retries=RETRIES, instance_triples=SHRINE_TRIPLES):
     """POST a VALUES query for a batch of ja labels; return (ja, en) rows, or
     None if the endpoint stayed unavailable. Bails on 429."""
     values = " ".join('"%s"@ja' % _sparql_escape(j) for j in ja_labels)
@@ -133,7 +161,7 @@ def fetch_batch(ja_labels, retries=3, instance_triples=SHRINE_TRIPLES):
             if r.status_code in TRANSIENT_STATUS:
                 print(f"SPARQL {r.status_code} transient (attempt {attempt}/{retries})")
                 if attempt < retries:
-                    time.sleep(10 * attempt)
+                    time.sleep(_backoff(attempt))
                     continue
                 return None
             r.raise_for_status()
@@ -147,19 +175,19 @@ def fetch_batch(ja_labels, retries=3, instance_triples=SHRINE_TRIPLES):
             # no previously-succeeding path changes, a previously-fatal one retries.
             print(f"SPARQL short read (attempt {attempt}/{retries}): {e}")
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(_backoff(attempt))
             else:
                 return None
         except requests.exceptions.ReadTimeout:
             print(f"SPARQL timeout (attempt {attempt}/{retries})")
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(_backoff(attempt))
             else:
                 return None
         except requests.exceptions.ConnectionError as e:
             print(f"SPARQL connection error (attempt {attempt}/{retries}): {e}")
             if attempt < retries:
-                time.sleep(10 * attempt)
+                time.sleep(_backoff(attempt))
             else:
                 return None
 

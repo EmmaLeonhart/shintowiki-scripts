@@ -1,3 +1,54 @@
+## 2026-09-20 (seventh) — the throttle was not the 429, and the log said so in three lines
+
+Dispatched `Generate shrines-missing-en-label list` to measure this morning's throttle change
+instead of waiting for tomorrow's cron. **It failed again.** Run 35509769098, both Stage 2 steps,
+same bail.
+
+### What I got wrong first, and how
+
+`gh run view --json jobs` reported both Stage 2 steps as `success`, and I read that as the fix
+working. It is not what it looks like: **`continue-on-error: true` rewrites a step's CONCLUSION to
+success while its OUTCOME stays failure.** The workflow's own re-fail step reads `outcome`, which
+is why it correctly went red listing both steps. The API field I read is the masked one.
+
+### The actual cause, from the step log
+
+    Stage 2 targets (no-kana, no-en): 4082 shrines, 3041 distinct ja labels.
+    SPARQL 502 transient (attempt 1/3)
+    FATAL: 429 Too Many Requests from SPARQL endpoint - bailing
+
+The endpoint said it was struggling. The generator waited **ten seconds**, asked again, and was
+told to go away.
+
+⛔ **The retry path never consulted `THROTTLE` at all**, so raising it to the floor this morning
+could not have touched this. The retry slept `10 * attempt` — 10s, then 20s — and CLAUDE.md says
+the opposite twice: *"503/504 -> back off hard, do not retry tightly"*, and the floor it points at
+in `generate_genbu_ids.py` comes *"with exponential backoff (15/45/135s)"*. `wdqs_transport`
+implements exactly that, `15 * (3 ** attempt)` over `RETRIES = 4`, and its own comment explains why
+four: *"At three, only 15 and 45 ever fire and the documented third step is decoration."*
+
+So the same file was breaking the same rule in two places, and this morning I found one of them.
+
+Now `_backoff()`, with `RETRIES` imported from the transport so neither number can drift.
+
+⚠ **This is also not claimed to fix it.** The next scheduled run is the measurement. The levers
+after it are a `BATCH` smaller than 150 labels per POST, or a throttle slower than the floor.
+
+⚠ **And it is not free**, which is in the docstring rather than discovered later: a batch that
+exhausts the backoff now costs 195s instead of 30s, against a `timeout-minutes: 20` job that
+normally finishes in ~7m. A run where several batches go transient could reach that ceiling — and
+would be visible, because the job already treats a bail as red.
+
+### The test that was wrong in the familiar way
+
+`test_no_tight_retry_is_left_in_the_file` filtered `#` comments and then failed on `_backoff`'s own
+docstring, which quotes the retired `10 * attempt` to explain why it went. That is the trap
+`tests/test_workflow_commit_steps_can_commit.py` already names — *"assert against the CODE, not its
+own explanation of itself"* — so it now strips docstrings with `ast` and asserts on the unparsed
+source.
+
+3 new tests. Full suite 2,937 pass.
+
 ## 2026-09-20 (sixth) — four workflows pushed to main with no retry, and two of them lost a day
 
 Work-loop tick. The top queue item is the en-label 429 watch, so the first move was to give it a

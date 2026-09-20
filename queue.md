@@ -39,9 +39,22 @@ from `ATOMIC_FILES`; they are not queue items.
   workflow failed 5 of 6 runs from 09-16 to 09-20 — so `identical_name_en_labels.txt` and
   `temple_identical_name_en_labels.txt` have not regenerated since 09-17. Raised to the floor
   2026-09-20.
-  ⚠ This is NOT known to fix it. The endpoint's limit is not published and the same workflow makes
-  other WDQS calls in the window. If the next runs still 429, the levers are a slower throttle (the
-  transport lets a caller be slower, never faster) or a smaller `BATCH` than 150 labels per POST.
+  ⛔ MEASURED 2026-09-20, by dispatching the workflow: the throttle change did **not** stop it.
+  Run 35509769098 bailed again, and the log says why it was never going to:
+      Stage 2 targets (no-kana, no-en): 4082 shrines, 3041 distinct ja labels.
+      SPARQL 502 transient (attempt 1/3)
+      FATAL: 429 Too Many Requests from SPARQL endpoint — bailing
+  The retry path never consulted `THROTTLE` at all. It slept `10 * attempt` — ten seconds after a
+  502 — where CLAUDE.md says *"503/504 → back off hard, do not retry tightly"* and the floor it
+  names comes *"with exponential backoff (15/45/135s)"*. Now `_backoff()`, four attempts, imported
+  from `wdqs_transport` so it cannot drift.
+  ⚠ Also NOT known to fix it. Next measurement is the next run; the levers after this are a smaller
+  `BATCH` than 150 labels per POST, or a slower throttle (the floor is a floor, a caller may be
+  slower). ⚠ And a cost to watch: an exhausted backoff is now 195s per batch, not 30s, against a
+  `timeout-minutes: 20` job that normally finishes in ~7m.
+  ⚠ Reading `gh run view --json jobs` for this is a trap: `continue-on-error: true` rewrites a
+  step's **conclusion** to success while its **outcome** stays failure, so both Stage 2 steps read
+  green there while the re-fail step correctly called them failed.
   ⚠ While it fails, those two files are frozen snapshots re-offering landed lines — which costs an
   API call each and changes nothing, so it is untidy rather than harmful.
 
