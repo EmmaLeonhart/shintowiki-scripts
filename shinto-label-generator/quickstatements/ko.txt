@@ -107508,6 +107508,10 @@ Q141477382	Lko	"웅야신사"
 Q141488548	Lko	"재송사"
 # Source: JA "栖了寺" (hanja reading)
 Q141492825	Lko	"서료사"
+# Source: JA "道音寺" (hanja reading)
+Q141497816	Lko	"도음사"
+# Source: JA "川邊八幡神社" (hanja reading)
+Q141504085	Lko	"천변팔번신사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
