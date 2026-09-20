@@ -1,3 +1,68 @@
+## 2026-09-19 (seventh) — 86% of the German residue named nothing at all
+
+Work-loop tick, and the 10% item that was owed: classifying the 909 German-family labels still
+refused. The answer was not a missing transliterator.
+
+    790  name no dedicatee at all -- and only 68 distinct texts between them
+     40  addresses with digits
+     25  English wording
+     13  punctuation, all fixable
+     11  French or Italian labels in a German-speaking country
+      6  other
+
+### ⭐ Emma: "translate the modifier, like the mosques"
+
+Shown the 790 and the four options, she chose her own 2026-09-18 mosque call applied to a population
+with no name at all: place + translated modifier + type. **A translation reaches all three
+languages**, unlike the transliteration fallback.
+
+**ja 9,114 → 9,552, zh 5,442 → 5,937, ko 2,065 → 2,170.** 664 items reach the new slot.
+
+⛔ **`evangelisch` is 福音主義, `protestantisch` is プロテスタント** — her second call, and the
+reason is mechanical: the two mean the same thing in German, the corpus keeps them apart, and one
+word for both would give a town holding one of each a single label for the duplicate guard to halve.
+福音主義 is also what Japanese uses for the EKD.
+
+⚠ **`hof` as 農場 is mine, not hers**, flagged the way the zh cell for surau was.
+
+### Two guards the slot needed, one found by reading output
+
+- **Only when the label names nothing else.** Without it the slot fired for zh and ko on every item
+  ja had just transliterated: `Evangelische Kirche Blankenbach` was ゾントラのブランケンバハ教会 in
+  ja and 松特拉福音主义教堂 in zh — the same building described two ways, zh dropping the one word
+  that distinguishes it. **814 zh lines appeared that way and 172 promptly collided.** ja gained
+  **zero** while zh gained 814, which is what made it visible.
+- **Only if it names a modifier.** A bare `Kapelle` is not named after its setting either; it is
+  simply not named. 113 stay refused.
+
+### The punctuation gaps, invisible until the fallback existed
+
+`St. Laurentius (Wuppertal)` refused entirely — the token `(wuppertal)` failed the allowed-letters
+check, and the fallback refuses the WHOLE label when one token cannot be read. Before 7b those
+labels were refused anyway for an unknown name, so the bracket cost nothing and left no trace.
+Fixed: parentheticals anywhere in the label (nesting is common), German low-9 quotes, `St.Bartholomeus`
+glued by its period, `Sta.` as a saint marker, and `Ev.`/`Luth.`/`Kath.`/`Dr.` as frame.
+
+### Three things that looked like losses and were not
+
+Three labels vanished and were alive on another QID. The duplicate guard keeps the **first** item to
+produce a string and the winner is chosen by iteration order, so a parser change moves a label
+between two colliding items. The comment there said *"if two items still collide, neither is
+emitted"*, which is not what the code does and never was — corrected, because I relied on that
+behaviour to explain the three.
+
+Two losses were real and correct: `Klosterkirche Bronnbach at night`, which had been emitting
+ニグフト for "night", and `Krankenhauskapelle`, which had been reading "hospital" as a dedicatee.
+
+### Seven existing tests changed meaning, none were weakened
+
+All seven pinned "a setting word renders nothing", which stopped being the rule the moment Emma said
+to translate it. The invariant they were written for — a setting word is not a DEDICATEE — is
+unchanged and is now asserted directly, with the new destination asserted after it. Each is a
+stronger assertion than before: it says what the output must be rather than only that there is none.
+
+39 new tests. Full suite 2,826 pass.
+
 ## 2026-09-19 (sixth) — a ward is inside the city; a prefecture is not
 
 Work-loop tick, shrine and temple side again. One fix, one refusal, and one tool that turned out to

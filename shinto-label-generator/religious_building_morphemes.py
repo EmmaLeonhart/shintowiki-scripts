@@ -130,6 +130,9 @@ TYPE_WORDS = {
     "spitalkirche", "spitalkapelle", "stiftskirche", "stiftskapelle",
     "dorfkapelle", "gnadenkapelle", "klosterkapelle", "kriegergedächtniskapelle",
     "hospitalkirche", "hospitalkapelle",
+    # German for the same thing, and it was read as a dedicatee:
+    # `Krankenhauskirche „Maria Heil der Kranken“` came out クランケンハウス・…
+    "krankenhauskirche", "krankenhauskapelle", "anstaltskirche",
     # ⭐ French common nouns, measured against the `fr` output 2026-09-19. Each
     # names the building or its setting, not its dedicatee: `Chapelle du
     # séminaire Saint-Yves` is the seminary chapel, and `séminaire` was reaching
@@ -163,6 +166,10 @@ STOPWORDS = {
     # German articles in the dative, which the dedication phrases run through:
     # `Zu den Heiligen Engeln` was reading `den` as a dedicatee.
     "den", "dem", "einer", "eine", "ein", "zur", "zum",
+    # Abbreviated German denominations and a title, measured in the residue:
+    # `Ev.-luth. Kirche Münchehagen`, `Dr.-Martin-Luther-Kirche`.
+    "ev", "ev.", "luth", "luth.", "evang", "evang.", "kath", "kath.",
+    "röm", "röm.", "rom", "dr", "dr.", "prof", "prof.", "hl", "hl.",
     # Roles, not names: "San Pietro Apostolo" is Peter (apostolo 48 in the corpus).
     "apostolo", "apostle", "apostel", "apostol", "evangelista", "evangelist",
     "martire", "martyr", "martir", "confessor", "bispo", "obispo", "vescovo",
@@ -183,6 +190,9 @@ SAINT_MARKERS = {
     # marker, which is a marker and not a dedicatee.
     "sint", "santi", "saints", "santos", "santas", "ss", "ss.", "sant'",
     "szentharomsag", "sv", "sv.",
+    # `Sta.` is the abbreviated Santa and was reaching the name slot as a
+    # dedicatee called "sta": `Sta. Maria (Sulzbach)` lost its 聖 prefix.
+    "sta", "sta.",
 }
 
 SAINT_PREFIX = {"ja": "聖", "zh": "圣", "ko": "성"}
@@ -558,6 +568,7 @@ NAMES.update({
     # table already renders 救世主 under salvador/salvatore; read, it was
     # 聖ザルファトル. Matthäus folds to `matthaus` and is Matthew.
     "salvator": NAMES["salvatore"],
+    "bartholomeus": NAMES["bartholomew"],
     "matthaus": NAMES["matthew"], "matthäus": NAMES["matthew"],
 })
 
@@ -969,8 +980,15 @@ def is_category_shaped(label):
     return any(p.search(label) for p in _CATEGORY_PATTERNS)
 
 
+# ⚠ German low-9 quotes and the guillemets, which several labels put round the
+# dedication: `Krankenhauskirche „Maria Heil der Kranken"` reached the
+# transliterator as `„maria` and failed the allowed-letters check, refusing the
+# whole label over a punctuation mark.
+_STRIP = " .,'’„“”«»\"‚‘"
+
+
 def _norm(token):
-    return unicodedata.normalize("NFC", token).strip(" .,'’").lower()
+    return unicodedata.normalize("NFC", token).strip(_STRIP).lower()
 
 
 def _strip_compound_type(token):
@@ -1458,6 +1476,129 @@ def render_mosque(label, p31, lang, place, latin_rules=None):
 
 
 # --------------------------------------------------------------------------
+# A building named after NOTHING but its denomination or its setting
+# --------------------------------------------------------------------------
+# Emma, 2026-09-19, shown that 790 German-family labels name no dedicatee at all
+# and only 68 distinct texts between them: **translate the modifier, like the
+# mosques.** That is her 2026-09-18 mosque call — "translate the generic,
+# transliterate the name", `Old Mosque` -> 旧モスク — applied to a population
+# where there is no name at all, so the whole label is place + modifier + type.
+#
+# ⭐ A translation reaches ALL THREE languages. Unlike the transliteration
+# fallback, nothing here is a reading, so zh and ko get these too.
+#
+# The measured vocabulary: `evangelische Kirche` 308, `neuapostolische` 118,
+# `hofkapelle` 33, `friedhofskapelle` 31, `protestantische` 29, `wegkapelle` 24,
+# `dorfkirche` 23, `stadtkirche` 15, `ortskapelle` 12, `feldkapelle` 9, and a
+# tail of ones and twos.
+#
+# ⛔ `evangelisch` is 福音主義 and `protestantisch` is プロテスタント, Emma's call
+# the same day. They mean the same thing in German usage and the corpus keeps
+# them apart, so collapsing both onto one word would give a town holding one of
+# each a single label — and the duplicate guard would drop the second. 福音主義
+# is also what Japanese uses for the EKD (ドイツ福音主義教会).
+#
+# ⚠ `hof` as 農場 is MINE, not hers, the way the zh cell 苏劳 for surau was. A
+# bare `Hofkapelle` in this corpus is Austrian and Bavarian and means the chapel
+# at a farm; a named one (`Ammerhofkapelle`) never reaches here, because
+# `_strip_compound_type` takes the `hofkapelle` off and leaves `Ammer` as a name.
+BUILDING_MODIFIERS = {
+    # Denominations — the adjective the label leads with.
+    "evangelisch":      {"ja": "福音主義", "zh": "福音主义", "ko": "복음주의 "},
+    "protestantisch":   {"ja": "プロテスタント", "zh": "新教", "ko": "개신교 "},
+    "neuapostolisch":   {"ja": "新使徒", "zh": "新使徒", "ko": "새사도 "},
+    "reformiert":       {"ja": "改革派", "zh": "归正", "ko": "개혁파 "},
+    "altreformiert":    {"ja": "旧改革派", "zh": "旧归正", "ko": "옛 개혁파 "},
+    "lutherisch":       {"ja": "ルター派", "zh": "信义会", "ko": "루터파 "},
+    "katholisch":       {"ja": "カトリック", "zh": "天主教", "ko": "가톨릭 "},
+    "altkatholisch":    {"ja": "古カトリック", "zh": "老天主教", "ko": "옛 가톨릭 "},
+    "freikirche":       {"ja": "自由", "zh": "自由", "ko": "자유 "},
+    "apostel":          {"ja": "使徒", "zh": "使徒", "ko": "사도 "},
+    # Settings — the compound head saying WHERE, not who for.
+    "friedhof":         {"ja": "墓地", "zh": "墓地", "ko": "묘지 "},
+    "weg":              {"ja": "道端", "zh": "路旁", "ko": "길가 "},
+    "hof":              {"ja": "農場", "zh": "农场", "ko": "농장 "},
+    "orts":             {"ja": "村", "zh": "村", "ko": "마을 "},
+    "dorf":             {"ja": "村", "zh": "村", "ko": "마을 "},
+    "feld":             {"ja": "野", "zh": "田野", "ko": "들 "},
+    "stadt":            {"ja": "町", "zh": "市镇", "ko": "읍 "},
+    "berg":             {"ja": "山", "zh": "山", "ko": "산 "},
+    "kloster":          {"ja": "修道院", "zh": "修道院", "ko": "수도원 "},
+    "schloss":          {"ja": "城", "zh": "城堡", "ko": "성 "},
+    "burg":             {"ja": "城", "zh": "城堡", "ko": "성 "},
+    "spital":           {"ja": "病院", "zh": "医院", "ko": "병원 "},
+    "hospital":         {"ja": "病院", "zh": "医院", "ko": "병원 "},
+    "krankenhaus":      {"ja": "病院", "zh": "医院", "ko": "병원 "},
+    "wallfahrt":        {"ja": "巡礼", "zh": "朝圣", "ko": "순례 "},
+    "kriegergedächtnis": {"ja": "戦没者記念", "zh": "阵亡者纪念",
+                          "ko": "전몰자 기념 "},
+    "pfarr":            {"ja": "教区", "zh": "堂区", "ko": "본당 "},
+    "filial":           {"ja": "分", "zh": "分", "ko": "분 "},
+}
+
+# German adjectives inflect (evangelische / evangelischen / evangelisch-) and the
+# settings are compound HEADS (friedhofskapelle), so both are matched by stem
+# rather than listed in every form. Longest stem first: `altkatholisch` must beat
+# `katholisch`, and `neuapostolisch` must not be read as `apostel`.
+_MODIFIER_STEMS = sorted(BUILDING_MODIFIERS, key=len, reverse=True)
+
+# ⚠ `alte`/`neue` come from the MOSQUE table, which already has 旧 and 新 in all
+# three languages. One vocabulary for one concept.
+_SHARED_MODIFIERS = ("old", "new", "great")
+
+
+def building_modifiers(label):
+    """[modifier keys] in the order the label states them, or [].
+
+    Reads the raw label rather than the parsed tokens, because every one of these
+    words is in TYPE_WORDS — that is exactly why the item has no name token and
+    reaches this function at all.
+    """
+    low = _fold(_norm(label))
+    out = []
+    for raw in re.split(r"[\s/,\.\-–—'’]+", low):
+        if not raw:
+            continue
+        alias = MODIFIER_ALIASES.get(raw)
+        if alias in _SHARED_MODIFIERS and alias not in out:
+            out.append(alias)
+            continue
+        for stem in _MODIFIER_STEMS:
+            if raw.startswith(_fold(stem)) and stem not in out:
+                out.append(stem)
+                break
+    return out
+
+
+def render_generic(label, p31, lang, place):
+    """`<place>の<modifiers><type>` for a building named after nothing else.
+
+    ⛔ Returns None when the label carries no modifier at all. A bare `Kapelle`
+    or `Synagoge` is not named after its setting either — it is simply not named,
+    which is the line `render` has always held. 113 of the 790 are that shape and
+    they stay refused.
+    """
+    if lang not in ("ja", "zh", "ko"):
+        return None
+    # ⛔ ONLY when the label names nothing else. Without this it fired for zh and
+    # ko on every item whose name ja had just transliterated: `Evangelische
+    # Kirche Blankenbach` came out ゾントラのブランケンバハ教会 in ja and
+    # 松特拉福音主义教堂 in zh — the same building described two different ways,
+    # with zh dropping the one word that distinguishes it. 814 zh lines appeared
+    # that way and 172 of them promptly collided with each other.
+    if _dedicatee_split(label)[0]:
+        return None
+    keys = building_modifiers(label)
+    if not keys:
+        return None
+    parts = []
+    for k in keys:
+        table = GENERIC_MODIFIERS if k in _SHARED_MODIFIERS else BUILDING_MODIFIERS
+        parts.append(table[k][lang])
+    return place + _PLACE_JOIN[lang] + "".join(parts) + TYPES[p31][lang]
+
+
+# --------------------------------------------------------------------------
 # The transliteration fallback — "No dedication means transliteration"
 # --------------------------------------------------------------------------
 # Emma, 2026-09-18. `dedication()` refuses the moment ONE name token is absent
@@ -1516,6 +1657,9 @@ _ENGLISH_CONTENT = {
     "victory", "victorious", "peace", "rosary", "snows", "sorrows", "mercy",
     # English exonyms in the qualifier slot, which a foreign rule set has no
     # business reading: `of Cologne` came back ツォログネ, `of Prague` プラグエ.
+    # A photograph's category, not a building: `St. Laurentius (Wuppertal) at
+    # night` read as ニグフト once the bracket stopped refusing the whole label.
+    "night", "interior", "exterior", "view", "detail", "ruin", "ruins",
     "churchyard", "joy", "sorrow", "plant", "martyrs", "gymnasium",
     "seminary", "convent", "rectory", "parsonage", "presbytery",
     "cologne", "prague", "warsaw", "vienna", "munich", "rome", "naples",
@@ -1537,6 +1681,16 @@ _LINKERS = {
 }
 
 
+# A DISAMBIGUATOR in parentheses at the end of the label: `St. Laurentius
+# (Wuppertal)`. Nesting happens and is common -- `St. Bonifatius (Selters
+# (Westerwald))`, `Christuskirche (Wetter (Ruhr))` -- so one level of nesting
+# is matched rather than the simpler `[^()]*`.
+_LABEL_PAREN = re.compile(r"\s*\((?:[^()]|\([^()]*\))*\)\s*")
+
+
+_GLUED_MARKER = re.compile(r"\b([Ss]t\.|[Hh]l\.|[Ss]te?\.)(?=[A-Za-zÀ-ÿ])")
+
+
 def _dedicatee_split(label):
     """(head_tokens, qualifier_tokens, saw_saint) — the dedicatee and its qualifier.
 
@@ -1549,6 +1703,22 @@ def _dedicatee_split(label):
     San Pedro` is Anne, in a place called San Pedro, and prefixing 聖 to the
     qualifier would say the place is a saint.
     """
+    # ⛔ A trailing parenthetical is a DISAMBIGUATOR, not part of the name, and it
+    # is the same thing `clean_place` already strips off a place label. Left in,
+    # the whole `(wuppertal)` token reached the transliterator with its brackets
+    # and failed the allowed-letters check -- which refused the WHOLE label, so 46
+    # items whose dedicatee the table knows perfectly well (Laurentius,
+    # Bonifatius, Nikolaus) emitted nothing at all.
+    #
+    # Its contents are qualifier material: usually the town, which `_echoes_place`
+    # then drops because it is already in the place slot.
+    # ⚠ Not only a TRAILING one. `St. Laurentius (Wuppertal) at night`,
+    # `Taschenberg (Uckerland) church` and `Wegkapelle (Badanhausen) Nord` all put
+    # the disambiguator in the middle, and an end-anchored rule left every one of
+    # them refused over the same bracket.
+    trailing = " ".join(m.group(0) for m in _LABEL_PAREN.finditer(label))
+    label = _LABEL_PAREN.sub(" ", label)
+
     head, qual = [], []
     saw_saint = False
     split = False
@@ -1562,6 +1732,11 @@ def _dedicatee_split(label):
         diacritics — so the frame sets are folded here instead. `apóstol` is in
         STOPWORDS as `apostol` and was reaching the name slot as a dedicatee."""
         return tok in group or _fold(tok) in _folded_group(group)
+
+    # `St.Bartholomeus` — no space after the period. Splitting on the period
+    # generally would break `St.` itself, so only a marker glued to a following
+    # word is separated.
+    label = _GLUED_MARKER.sub(r"\1 ", label)
 
     for raw in re.split(r"[\s/]+", label):
         if not raw:
@@ -1597,6 +1772,16 @@ def _dedicatee_split(label):
                 bucket().append(p)
         if head and breaks:
             split = True
+
+    for raw in re.split(r"[\s/]+", trailing.strip(" ()")):
+        tok = _norm(raw.strip("()"))
+        if not tok or frame(tok, _LINKERS) or frame(tok, SAINT_MARKERS):
+            continue
+        if frame(tok, STOPWORDS) or frame(tok, TYPE_WORDS):
+            continue
+        stem = _strip_compound_type(tok)
+        if stem and not frame(stem, TYPE_WORDS):
+            qual.append(stem)
     return head, qual, saw_saint
 
 
@@ -1733,5 +1918,7 @@ def render(label, p31, lang, place=None, rules=None, latin_rules=None,
         if ded == PLACE_ONLY:
             return place + _PLACE_JOIN[lang] + type_words[lang]
     if not ded:
-        return None
+        # Named after neither a dedicatee nor its place: a denomination or a
+        # setting, which is TRANSLATED and so reaches zh and ko as well.
+        return render_generic(label, p31, lang, place)
     return place + _PLACE_JOIN[lang] + _kana_join(ded, type_words[lang])

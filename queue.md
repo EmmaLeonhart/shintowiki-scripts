@@ -42,9 +42,12 @@ from `ATOMIC_FILES`; they are not queue items.
   `plain_latin_katakana` treatment or a documented refusal — ASK before building, under the
   religious-building translation carve-out, rather than inferring from the "all of them" answer,
   which was about a country map that no longer has these at the top of it.
-  ⚠ Germany is STILL the largest single block of the 2,604 residue at 859, and those are not a
-  missing family — they are labels `de` refuses (digits, foreign words, the English guard). Look at
-  what they actually are before adding anything.
+  ⚠ The German block is MEASURED and closed: of 909, 790 named nothing (664 now reach the
+  denomination/setting slot, 113 are a bare type word and stay refused), 40 are addresses with
+  digits, 25 English wording, 13 punctuation (fixed), 11 French/Italian labels in a German-speaking
+  country. Nothing there wants a new family. ⚠ Those 11 are the one loose thread: Switzerland is
+  multilingual and `COUNTRY_RULES` is one family per country, so a French label in Q39 gets German
+  rules and is correctly refused rather than mis-read. 5 items; not worth a per-item language guess.
 
 - [ ] Religious buildings: emit `P825` (dedicated to) from the parsed dedication, not just labels
   (Emma, same day: *"using the dedicated to for other ontology not just labels"*). The morpheme

@@ -430,6 +430,79 @@ been asked about.
 
 ---
 
+## 7d. Named after nothing but a denomination or a setting (2026-09-19)
+
+Classifying the 909 German-family labels 7c still refused showed that **86% of them name no
+dedicatee at all** — and only 68 distinct texts between them:
+
+    evangelische kirche 283   neuapostolische kirche 116   kapelle 74   hofkapelle 33
+    friedhofskapelle 31   protestantische kirche 25   kirche 19   wegkapelle 19
+    synagoge 18   dorfkirche 15   ortskapelle 12   ... 57 more, all under 12
+
+Emma, shown that: ***"translate the modifier, like the mosques."*** Her 2026-09-18 mosque call —
+"translate the generic, transliterate the name", `Old Mosque` → 旧モスク — applied where there is no
+name at all, so the label is place + modifier + type.
+
+⭐ **A translation reaches all three languages.** Unlike section 7b, nothing here is a reading.
+ja 9,114 → 9,552, zh 5,442 → 5,937, ko 2,065 → 2,170.
+
+### ⛔ `evangelisch` is 福音主義 and `protestantisch` is プロテスタント
+
+Emma's call the same day. The two words mean the same thing in German usage and the corpus keeps
+them apart, so one Japanese word for both would give a town holding one of each a single label —
+and the duplicate guard would drop the second. 福音主義 is also what Japanese uses for the EKD
+(ドイツ福音主義教会).
+
+| | ja | zh | ko |
+|---|---|---|---|
+| evangelisch (308) | 福音主義 | 福音主义 | 복음주의 |
+| neuapostolisch (118) | 新使徒 | 新使徒 | 새사도 |
+| protestantisch (29) | プロテスタント | 新教 | 개신교 |
+| reformiert (16) | 改革派 | 归正 | 개혁파 |
+| friedhof (31) | 墓地 | 墓地 | 묘지 |
+| weg (24) | 道端 | 路旁 | 길가 |
+| hof (33) | 農場 | 农场 | 농장 |
+
+⚠ **`hof` as 農場 is MINE, not hers**, the way the zh cell 苏劳 for surau was. A bare `Hofkapelle`
+here is Austrian and Bavarian and means the chapel at a farm; a NAMED one never reaches this slot,
+because `_strip_compound_type` takes `hofkapelle` off `Ammerhofkapelle` and leaves `Ammer`.
+
+### ⛔ Only when the label names nothing else, and only if it names a modifier
+
+Written without the first guard it fired for zh and ko on every item whose name ja had just
+transliterated: `Evangelische Kirche Blankenbach` came out ゾントラのブランケンバハ教会 in ja and
+松特拉福音主义教堂 in zh — the same building described two different ways, with zh dropping the one
+word that distinguishes it. **814 zh lines appeared that way and 172 promptly collided.**
+
+Without the second, a bare `Kapelle` or `Synagoge` would become "the chapel at X". It is not named
+after its setting either; it is simply not named, which is the line `render` has always held.
+**113 of the 790 are that shape and stay refused.**
+
+### The punctuation gaps the same classification exposed
+
+Every one of these refused a label whose dedicatee the table knows perfectly well, over a bracket:
+
+- **A disambiguator in parentheses**, trailing or mid-label, and nesting is common —
+  `St. Laurentius (Wuppertal)`, `St. Bonifatius (Selters (Westerwald))`,
+  `Wegkapelle (Badanhausen) Nord`. Its contents are qualifier material, so `_echoes_place` drops it
+  when it is just the town. **46 items.**
+- **German low-9 quotation marks** — `Krankenhauskirche „Maria Heil der Kranken“` reached the
+  transliterator as `„maria`.
+- **A marker glued to its name by a period** — `St.Bartholomeus`.
+- **`Sta.`**, the abbreviated Santa, was a dedicatee called `sta`.
+- **`Ev.`, `Luth.`, `Kath.`, `Dr.`** reaching the name slot.
+
+⚠ These were invisible until 7b existed. The transliteration fallback refuses the WHOLE label when
+one token cannot be read, so `(wuppertal)` does not degrade the output, it deletes it. Before that,
+the labels were refused anyway for carrying an unknown name and the bracket cost nothing.
+
+⚠ **Three labels appeared to be lost and were alive on another QID.** The duplicate guard keeps the
+FIRST item to produce a string, and the winner is chosen by iteration order — so a parser change
+moves a label between two colliding items. The comment there said "neither is emitted", which is not
+what the code does and never was; it is corrected.
+
+---
+
 ## 8. What is refused outright
 
 - **Category-shaped labels** (8 patterns). ~818 of the corpus name a *grouping*, not a building:
@@ -459,12 +532,13 @@ been asked about.
 
 ## 10. Current output
 
-| | lines | of which mosque-family | of which READ, not named (7b/7c) |
-|---|---|---|---|
-| ja | 9,080 | 76 | 4,462 |
-| zh | 5,434 | 31 | - (ja only) |
-| ko | 2,065 | 30 | - (ja only) |
-| stage-1 English replacements | 16 | - | - |
+| | lines | of which mosque-family | READ, not named (7b/7c) | denomination/setting (7d) |
+|---|---|---|---|---|
+| ja | 9,552 | 76 | 4,462 | 438 |
+| zh | 5,937 | 31 | - (ja only) | 495 |
+| ko | 2,170 | 30 | - (ja only) | 105 |
+
+Figures as of 2026-09-19, after 7d. Before 7b: ja 4,618, zh 5,099, ko 1,940.
 
 Figures as of 2026-09-19, after 7c. Before 7b: ja 4,618, zh 5,099, ko 1,940. **No QID lost a ja
 label at any point**; zh and ko each lost 2, both `Hubertusburg`, explained in 7c.
@@ -474,10 +548,11 @@ Zero duplicate labels, zero duplicate QIDs, zero malformed lines, re-checked 202
 NOT re-run against the 4,462 new lines — WDQS is not queried for this and the read API sample costs
 a run of its own. All in `shinto-label-generator/quickstatements/`, on the 20/day drip.
 
-**2,604 still refuse at the dedication gate**, down from 6,627 before the five families and
-13,470 before the fallback existed. Still a country map: Germany 859, Poland 337, Netherlands 258,
-Spain 232, Moldova 140, Russia 113, Sweden 83, Romania 81. Dutch, Romanian, Swedish, Armenian,
-Finnish, Norwegian and Lithuanian have no family and have not been asked about.
+**About 1,900 still refuse**, down from 2,604 before 7d and 13,470 before the fallback existed.
+The German family, measured in full: 790 named nothing (664 of them now reach the modifier slot,
+113 are a bare type word and stay refused), 40 are addresses with digits, 25 are English wording,
+11 are French or Italian labels in a German-speaking country, 13 other. The Netherlands,
+Moldova, Sweden, Romania, Armenia, Finland, Norway and Lithuania have no family at all.
 
 The mosque family went from **0 labels to 137** across 245 items. What it does not reach is the
 Arab-world, French, Bangladeshi and Central Asian slices, which have no rule set and are not getting

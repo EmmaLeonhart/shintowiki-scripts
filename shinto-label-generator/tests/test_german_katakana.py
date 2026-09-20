@@ -187,9 +187,20 @@ def test_a_german_saint_variant_resolves_to_the_table():
                                    "Dorfkapelle", "Gnadenkapelle"])
 def test_a_german_compound_type_word_is_not_a_name(label):
     """Each says WHERE or WHAT KIND, not who for. `Feldkapelle` is a field
-    chapel and emitted フィエロッツォのフェルド礼拝堂 before this."""
-    assert m.render(label, CHAPEL, "ja", place="X", rules=None,
-                    latin_rules="de") is None
+    chapel and emitted フィエロッツォのフェルド礼拝堂 before this.
+
+    ⚠ NARROWED 2026-09-19. Until Emma ruled "translate the modifier, like the
+    mosques", not-a-name meant refused outright. It now means the word goes in
+    the MODIFIER slot instead of the name slot — 野礼拝堂, not フェルド礼拝堂.
+    The invariant these five were written for is unchanged and is what is
+    asserted first; what follows it is the new destination.
+    """
+    assert m._dedicatee_split(label)[0] == [], "must not be read as a dedicatee"
+    out = m.render(label, CHAPEL, "ja", place="X", rules=None, latin_rules="de")
+    if m.building_modifiers(label):
+        assert out and out.endswith("礼拝堂") and "フェルド" not in out
+    else:
+        assert out is None, "no modifier to translate either"
 
 
 def test_the_compound_stems_are_never_added_bare():

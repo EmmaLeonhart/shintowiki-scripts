@@ -226,7 +226,8 @@ def build(rows, cache):
     seen_qid = {lg: set() for lg in LANGS}
     reasons = {"no P31 mapping": 0, "no P131": 0, "category-shaped": 0,
                "unknown dedication": 0, "no place label": 0, "duplicate": 0,
-               "not named as a mosque": 0, "second label for one item": 0}
+               "not named as a mosque": 0, "second label for one item": 0,
+               "named only by denomination or setting": 0}
     # Not a skip reason — how many of the emitted ja labels came from the
     # transliteration fallback rather than the table. Reported separately so the
     # two paths stay countable.
@@ -268,9 +269,16 @@ def build(rows, cache):
             # later. That never changed the output, only the counter.
             if morph.transliterate_dedication(label, "ja", rules, latin_rules,
                                               place_en) is None:
-                reasons["unknown dedication"] += 1
-                continue
-            read_not_named += 1
+                # ⛔ The gate is ja-shaped and skips the item for ALL languages,
+                # so the denomination/setting slot has to be asked here too —
+                # it is a TRANSLATION and reaches zh and ko, and 790 items name
+                # nothing but their denomination.
+                if morph.render_generic(label, p31, "ja", "X") is None:
+                    reasons["unknown dedication"] += 1
+                    continue
+                reasons["named only by denomination or setting"] += 1
+            else:
+                read_not_named += 1
         for lg in LANGS:
             place = place_labels.get(lg)
             if not place:
@@ -281,8 +289,14 @@ def build(rows, cache):
                                     place_en=place_en)
             if not rendered:
                 continue
-            # A duplicate label is the failure this whole design exists to avoid;
-            # if two items still collide, neither is emitted.
+            # A duplicate label is the failure this whole design exists to avoid.
+            # ⚠ The FIRST item to produce a string keeps it and the rest are
+            # dropped — the comment here used to say "neither is emitted", which
+            # is not what the code does and never was. It matters because the
+            # winner is chosen by iteration order, so a parser change that alters
+            # which item is reached first moves a label between two colliding
+            # items. Three labels moved that way on 2026-09-19 and read as losses
+            # until they were found alive on the other QID.
             if rendered in seen[lg]:
                 reasons["duplicate"] += 1
                 continue

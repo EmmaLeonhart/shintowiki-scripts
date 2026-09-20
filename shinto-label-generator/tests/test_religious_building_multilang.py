@@ -536,9 +536,18 @@ def test_a_german_location_compound_names_no_dedication():
     None, so nothing reads it. It passed here before 2026-09-19 only because
     `render` defaulted to Italian; ホーフカペッレ・アイケット would have been a
     confident wrong reading, not a refusal."""
-    assert m.render("Wegkapelle", "Q108325", "ja", place="X") is None
-    assert m.render("Hofkapelle Aichet", "Q108325", "ja", place="X") is None
+    # ⚠ NARROWED 2026-09-19: a setting is now TRANSLATED rather than refused, so
+    # `Wegkapelle` is 道端礼拝堂. What this test was written to hold — that the
+    # setting is never read as the dedicatee — is asserted directly instead.
+    assert m.dedication("Wegkapelle", "ja") is None
     assert m.dedication("Hofkapelle Aichet", "ja") is None
+    assert m._dedicatee_split("Wegkapelle")[0] == []
+    assert m.render("Wegkapelle", "Q108325", "ja",
+                    place="X") == "Xの道端礼拝堂"
+    # `Hofkapelle Aichet` IS named — after Aichet — and German has a rule set, so
+    # it is the name that renders, not the setting.
+    assert m.render("Hofkapelle Aichet", "Q108325", "ja", place="X",
+                    latin_rules="de") == "Xのアイヘト礼拝堂"
 
 
 @pytest.mark.parametrize("label,expect", [
