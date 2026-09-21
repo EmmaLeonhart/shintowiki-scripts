@@ -12,10 +12,10 @@
     "name": "P4656 Japanese Wikipedia references",
     "description": "Add Wikimedia import URL (P4656) references pointing to ja.wikipedia for all P13723 statements",
     "total": 16995,
-    "remaining": 17,
-    "completed": 16978,
+    "remaining": 18,
+    "completed": 16977,
     "output_file": "p4656_jawiki_references.txt",
-    "lines": 17
+    "lines": 18
   },
   "hiteisha": {
     "name": "Remove P31 Shikinai Hiteisha",
@@ -62,26 +62,30 @@
       "description": "Kinpei-sha, Ginpei-sha, Hakuhei-sha",
       "source_property": "P1552",
       "determined_by": "Q137901635",
+      "total": 0,
+      "remaining": 0,
+      "completed": 0,
       "add_file": "migrate_gifu_ranking_add.txt",
       "remove_file": "migrate_gifu_ranking_remove.txt",
-      "total": 0,
-      "completed": 0,
-      "remaining": 0,
       "add_lines": 0,
-      "remove_lines": 0
+      "remove_lines": 0,
+      "underspec_file": null,
+      "underspec_lines": 0
     },
     {
       "name": "Beppyo Shrine",
       "description": "Beppyo Shrine",
       "source_property": "P31",
       "determined_by": "Q908077",
+      "total": 0,
+      "remaining": 0,
+      "completed": 0,
       "add_file": "migrate_beppyo_shrine_add.txt",
       "remove_file": "migrate_beppyo_shrine_remove.txt",
-      "total": 0,
-      "completed": 0,
-      "remaining": 0,
       "add_lines": 0,
-      "remove_lines": 0
+      "remove_lines": 0,
+      "underspec_file": null,
+      "underspec_lines": 0
     },
     {
       "name": "X-no-miya",
