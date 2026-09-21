@@ -147,6 +147,23 @@ TYPE_WORDS = {
     "altkatholische", "freikirche", "kapellchen",
     "parroquia", "parróquia", "paróquia", "ermida", "santuario", "santuário",
     "santuari",
+    # ⭐ Nordic type words, 2026-09-20. `kerk`, `kirke`, `kyrka` and `kapel`
+    # were already here; these are the inflected and compound forms the three
+    # corpora actually use. The definite article is a SUFFIX in these languages,
+    # so `kyrkan` and `kirken` are the same word as `kyrka` and `kirke` and had
+    # to be listed — `Korskyrkan` was otherwise read whole.
+    # ⛔ The whole compound, never the stem, for the same reason the German block
+    # above says so: `_strip_compound_type` matches any tail of 4+ characters, so
+    # a bare `kyrk` would cut into a placename and a bare `sal` into anything.
+    "kyrkan", "kyrkor", "kyrkoruin", "kyrkplats", "kyrkoplats",
+    "kyrkogårdskapell", "gravkapell", "kapell", "bönehus",
+    "kirken", "kirkje", "kirkja", "kirkesal", "metodistkirke", "baptistkirke",
+    "sjømannskirke", "adventkirken", "adventkyrkan", "adventistkirke",
+    "valgmenighedskirke", "slotskapel", "gravkapel",
+    # ⚠ The Nordic word for mosque. It was the one unreadable Danish stem, and
+    # it was unreadable because it is a TYPE, not a name — `é` is not in the
+    # kana grid and this is the right place to stop it, not the reader.
+    "moské", "moske", "moské", "moskée", "moskee",
 }
 
 # Connectives and articles — dropped entirely.
@@ -193,6 +210,14 @@ SAINT_MARKERS = {
     # `Sta.` is the abbreviated Santa and was reaching the name slot as a
     # dedicatee called "sta": `Sta. Maria (Sulzbach)` lost its 聖 prefix.
     "sta", "sta.",
+    # Nordic, 2026-09-20. `sankt` was already here and does most of the work,
+    # but the definite adjective is the Nordic way of saying it: Norwegian
+    # `Den hellige Dorotheas kapell` is Saint Dorothea's chapel, and without
+    # `hellige` the name slot got a dedicatee called "hellige".
+    # ⚠ `helig`/`heliga`/`hellig`/`hellige`/`hellig e` are the Swedish and
+    # Norwegian forms; Danish uses `hellige` too. They are markers, not names —
+    # the same reason `heilige` is here for German.
+    "helig", "heliga", "helige", "hellig", "hellige", "helliga",
 }
 
 SAINT_PREFIX = {"ja": "聖", "zh": "圣", "ko": "성"}
@@ -630,6 +655,13 @@ DEDICATIONS = {
     "nossa senhora":    {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
     "nuestra señora":   {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
     "virxe":            {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    # Nordic and Dutch carriers of the same title, 2026-09-20. `Vår Frue kirke`
+    # is Our Lady's church and was being READ — ヴォル・フルエ教会 — while every
+    # other language's form of the phrase was already translated here.
+    "vår frue":         {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    "vor frue":         {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    "vår fru":          {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
+    "onze lieve vrouw": {"ja": "聖母",     "zh": "圣母",   "ko": "성모"},
     # --- second widening pass, 2026-09-17, from the remaining unknown list ---
     "himmelfahrt":      {"ja": "被昇天",   "zh": "升天",   "ko": "승천"},
     "mariä himmelfahrt": {"ja": "聖母被昇天", "zh": "圣母升天", "ko": "성모 승천"},
@@ -952,6 +984,7 @@ DEDICATIONS.update({phrase: DEDICATIONS["our lady"]
 GENERIC_DEDICATIONS = {
     "our lady", "madonna", "theotokos", "notre dame", "nosa señora",
     "nossa senhora", "nuestra señora", "virxe", "beata vergine",
+    "vår frue", "vor frue", "vår fru", "onze lieve vrouw",
     "santissima vergine", "friedens",
     # Italian carrier, missing until the residue audit -- 12 labels were reading
     # "Nostra Signora" as a qualifier rather than as the title it is.
@@ -1582,6 +1615,45 @@ BUILDING_MODIFIERS = {
                           "ko": "전몰자 기념 "},
     "pfarr":            {"ja": "教区", "zh": "堂区", "ko": "본당 "},
     "filial":           {"ja": "分", "zh": "分", "ko": "분 "},
+    # ------------------------------------------------------------------
+    # Nordic (sv / no / da), added 2026-09-20 with the reading families.
+    #
+    # ⛔ THE VOCABULARY HAD TO COME FIRST, and the Swedish corpus says why in one
+    # number: `gamla` — "old" — is the SECOND most common word in it, 27 of 84
+    # labels. A reading family without this table would have emitted
+    # 聖ガムラ教会 for `Gamla kyrka`, which is "the old church". That is the exact
+    # failure this module exists to prevent, and it is the same one measured for
+    # German and French in 2026-09-19: a type or frame word reaching the name slot.
+    #
+    # Emma ruled the class on 2026-09-20 for the denomination/setting labels —
+    # *"Translate the modifier, like the mosques"* — so these are translated, not
+    # read. No per-word question is owed.
+    "gamla":            {"ja": "旧", "zh": "旧", "ko": "구 "},
+    "gamle":            {"ja": "旧", "zh": "旧", "ko": "구 "},
+    "gammel":           {"ja": "旧", "zh": "旧", "ko": "구 "},
+    "nya":              {"ja": "新", "zh": "新", "ko": "신 "},
+    # ⚠ `ny` is NOT here. Two letters would match inside any name that happens
+    # to contain them, and the 4-character floor in `_strip_compound_type` exists
+    # for exactly that reason.
+    "katolska":         {"ja": "カトリック", "zh": "天主教", "ko": "가톨릭 "},
+    "katolsk":          {"ja": "カトリック", "zh": "天主教", "ko": "가톨릭 "},
+    "katolske":         {"ja": "カトリック", "zh": "天主教", "ko": "가톨릭 "},
+    "metodist":         {"ja": "メソジスト", "zh": "循道", "ko": "감리교 "},
+    "baptist":          {"ja": "バプテスト", "zh": "浸信", "ko": "침례교 "},
+    "adventist":        {"ja": "アドベンチスト", "zh": "复临", "ko": "안식교 "},
+    "advent":           {"ja": "アドベンチスト", "zh": "复临", "ko": "안식교 "},
+    "apostolske":       {"ja": "使徒", "zh": "使徒", "ko": "사도 "},
+    "missions":         {"ja": "伝道", "zh": "传道", "ko": "전도 "},
+    "misjons":          {"ja": "伝道", "zh": "传道", "ko": "전도 "},
+    "sjömans":          {"ja": "船員", "zh": "海员", "ko": "선원 "},
+    "sjømanns":         {"ja": "船員", "zh": "海员", "ko": "선원 "},
+    # Settings, the Nordic half of the `friedhof`/`schloss` group above.
+    "kyrkogård":        {"ja": "墓地", "zh": "墓地", "ko": "묘지 "},
+    "kirkegård":        {"ja": "墓地", "zh": "墓地", "ko": "묘지 "},
+    "grav":             {"ja": "墓", "zh": "墓", "ko": "묘 "},
+    "slots":            {"ja": "城", "zh": "城堡", "ko": "성 "},
+    "slott":            {"ja": "城", "zh": "城堡", "ko": "성 "},
+    "hospitals":        {"ja": "病院", "zh": "医院", "ko": "병원 "},
 }
 
 # German adjectives inflect (evangelische / evangelischen / evangelisch-) and the

@@ -75,6 +75,11 @@ _NY = "Ņ"
 # consonant before it from nasalising or falling silent: `Dame` is ダム and not
 # ダン, `Sainte` サント and not サン. Removed after both of those passes.
 _E = "Ə"
+# ⛔ The velar nasal must survive the palatalisation rules. Swedish `-inge` is
+# /ɪŋɛ/ — the g belongs to the ŋ and is not a front-vowel g — but the table's
+# `ge -> ye` rule cannot see that and `Skänninge` came back シェンニニェ. It is
+# シェンニンゲ. Same sentinel trick as `_CH` and `_Z`, same reason.
+_G = "Ĝ"
 
 _RULES = {
     # Bosnian / Croatian / Serbian-Latin / Macedonian-Latin. Diacritics are the
@@ -272,7 +277,69 @@ _RULES = {
         ("ce", "se"), ("ci", "si"), ("cy", "si"), ("c", "k"),
         (_H, "h"),
     ],
+    # Swedish. 84 of the 492, and the one of the Nordic three whose
+    # palatalisation Japanese convention actually reflects: Göteborg is
+    # イェーテボリ and Köping シェーピング, so `g` and `k` before a front vowel
+    # are written as they sound.
+    #
+    # ⚠ The front vowels are `e i y` by the time this runs — `_pre_swedish` has
+    # already folded ä and ö to e.
+    "sv": [
+        ("skj", "sh"), ("stj", "sh"), ("sj", "sh"),
+        # ⛔ `sk` + front is /ɧ/ — but see `_NORDIC_NOTE`: the type word is split
+        # off FIRST, which is what makes this safe. 16 of the 17 `sk`-before-front
+        # cases in the corpus are `…s` + `kyrka(n)` compounds, and applying this
+        # across that seam swallowed the linking s.
+        ("ske", "she"), ("ski", "shi"), ("sky", "shu"),
+        ("tj", "sh"), ("kj", "sh"),
+        ("ke", "she"), ("ki", "shi"), ("ky", "shu"),
+        ("gj", "y"), ("ge", "ye"), ("gi", "yi"), ("gy", "yu"),
+        ("ck", "kk"), ("x", "ks"), ("z", "s"), ("q", "k"),
+        ("ce", "se"), ("ci", "si"), ("cy", "si"), ("c", "k"),
+        ("j", "y"), ("w", "v"),
+        (_G, "g"),
+    ],
+    # Norwegian. 21 of the 492.
+    #
+    # ⛔ NO bare k/g palatalisation here, and that is the deliberate difference
+    # from Swedish. Norwegian `ki` is /çɪ/, but Japanese convention writes it
+    # with the k row — Kirkenes is キルケネス, not シルケネス — whereas the
+    # Swedish forms above are attested the other way. The unambiguous DIGRAPHS
+    # (`kj`, `skj`, `sj`, `gj`) are safe in both and are all this takes.
+    "no": [
+        ("skj", "sh"), ("sj", "sh"), ("kj", "sh"), ("gj", "y"),
+        ("hv", "v"),
+        ("ck", "kk"), ("x", "ks"), ("z", "s"), ("q", "k"),
+        ("ce", "se"), ("ci", "si"), ("cy", "si"), ("c", "k"),
+        ("j", "y"), ("w", "v"),
+        (_G, "g"),
+    ],
+    # Danish. 14 of the 492, and the smallest because it is the least
+    # transparent of the four — see `_pre_danish` for what is deliberately NOT
+    # attempted.
+    #
+    # ⛔ Danish does NOT palatalise k or g before a front vowel at all. `kirke`
+    # is /ˈkiɐ̯kə/ — キルケ, not シルケ. Copying the Swedish table here would have
+    # been the single biggest error available in this family.
+    "da": [
+        ("sj", "sh"), ("hv", "v"),
+        ("ck", "kk"), ("x", "ks"), ("z", "s"), ("q", "k"),
+        ("ce", "se"), ("ci", "si"), ("cy", "si"), ("c", "k"),
+        ("j", "y"), ("w", "v"),
+        (_G, "g"),
+    ],
 }
+
+# ⛔ THE NORDIC FAMILIES ASSUME THE TYPE WORD IS ALREADY OFF.
+# `religious_building_morphemes._strip_compound_type` splits `kyrka(n)`,
+# `kirke(n)`, `kapell` and their compounds before anything reaches here, and the
+# Swedish table above depends on it. Measured 2026-09-20: 17 Swedish labels have
+# `sk` before a front vowel, and **16 are `sky` from a compound** — Brukskyrkan,
+# Högåskyrkan, Korskyrkan, Betlehemskyrkan, where the s is the linking s of the
+# first element. Read across the seam, `sk` + front gives /ɧ/ and swallows it:
+# ブルーシュルカン for ブルークスシュルカン. The other two, `Rönnskärs` and
+# `Skänninge`, are genuinely /ɧ/ and read correctly once the seam is gone.
+_NORDIC_NOTE = "see religious_building_morphemes._strip_compound_type"
 
 # Malay ŋ with no following vowel: Mungsolkanas is mung-sol, not mun-gu-sol.
 _NG = re.compile(r"ng(?=[^aeiou]|$)")
@@ -314,6 +381,14 @@ _FOREIGN = {
     # and no German szlig. ⚠ It DOES have q/x/y, unlike Polish, and it is the
     # only family here whose ij is a letter pair rather than a diacritic.
     "nl": set("čćšžđłąęńśźżıəğşßñçàâêîôùûáíóúýéè"),
+    # ⚠ The Nordic three are told apart from each other by COUNTRY_RULES, not by
+    # their letters — no and da share æ ø å exactly. What these sets DO catch is
+    # a Swedish word in a Norwegian label and the reverse: ä/ö are Swedish, æ/ø
+    # are not, and reading one family with the other's rules is the confident-
+    # wrong failure this module is built around.
+    "sv": set("čćšžđłąęńśźżıəğşßñçüàâêîôùûáíóúýéèøæ"),
+    "no": set("čćšžđłąęńśźżıəğşßñçüàâêîôùûáíóúýéèäö"),
+    "da": set("čćšžđłąęńśźżıəğşßñçüàâêîôùûáíóúýèäö"),
 }
 
 # Loanword columns the bare kana grid does not carry. Turkish and Malay tu/ti
@@ -340,7 +415,12 @@ _EXTRA = {
 # geminate the consonant: Bakker is バッケル and Hogendijk ホーヘンダイク,
 # so the obstruent set is the same as German's and l/m/n/r stay single for
 # the same reason — Willem is ウィレム, not ウィッレム.
-_GEMINATES = {"de": set("ptkbdgsfzh"), "nl": set("ptkbdgsfzh")}
+_GEMINATES = {"de": set("ptkbdgsfzh"), "nl": set("ptkbdgsfzh"),
+              # ⚠ The Nordic three double for the same reason and needed
+              # the same set: `Uppsala` came back ウププサラ, two full プ,
+              # and `Stockholm` needs the ッ of ストックホルム.
+              "sv": set("ptkbdgsfzh"), "no": set("ptkbdgsfzh"),
+              "da": set("ptkbdgsfzh")}
 
 # A palatal with no vowel after it takes the i column, not the u column: the nj
 # of Vrbanjska is ヴルバニスカ, not ヴルバニュスカ.
@@ -676,6 +756,57 @@ def _pre_russian(word):
     return w
 
 
+# ------------------------------------------------------------------ Nordic
+# The three extra vowels, folded to the plain letter Japanese writes them with.
+# ⚠ ö and ø are エ, not オ: Malmö is マルメ, Göteborg イェーテボリ. Reading them
+# as o is the mistake that makes every Nordic name sound German.
+# ⚠ å is オ and NOT a long one: Umeå is ウメオ.
+_SV_VOWELS = {"å": "o", "ä": "e", "ö": "e"}
+_NO_VOWELS = {"å": "o", "æ": "e", "ø": "e"}
+# ⛔ `jö`/`jø` is the ョ cluster, not j + the plain vowel. Folded first, `Björk`
+# came back ビェルク; it is ビョーク, and `Mjøndalen` ミョンダレン not ミェンダレン.
+# ⚠ This runs BEFORE the vowel fold, which is the whole point.
+_J_ROUND = [("jö", "yo"), ("jø", "yo"), ("jå", "yo")]
+# Doubled consonants. These languages double to mark the vowel before them
+# short, exactly as Dutch and German do, so the obstruents take ッ.
+
+
+def _pre_swedish(word):
+    w = unicodedata.normalize("NFC", word).lower()
+    for a, b in _J_ROUND:
+        w = w.replace(a, b)
+    for a, b in _SV_VOWELS.items():
+        w = w.replace(a, b)
+    return w.replace("ng", "n" + _G)
+
+
+def _pre_norwegian(word):
+    w = unicodedata.normalize("NFC", word).lower()
+    for a, b in _J_ROUND:
+        w = w.replace(a, b)
+    for a, b in _NO_VOWELS.items():
+        w = w.replace(a, b)
+    return w.replace("ng", "n" + _G)
+
+
+def _pre_danish(word):
+    """Danish shares Norwegian's three vowels and nothing else here.
+
+    ⛔ WHAT THIS DELIBERATELY DOES NOT DO, because 14 labels do not justify
+    guessing at it: the soft `d` (/ð/ after a vowel), the soft `g`, and the
+    reduction of final `-er`/`-en`. Danish orthography is the furthest of the
+    four from its phonology, which is why it is last and smallest. A letter-wise
+    reading of the remaining consonants is a simplification, and it is recorded
+    as one rather than presented as a pronunciation.
+    """
+    w = unicodedata.normalize("NFC", word).lower()
+    for a, b in _J_ROUND:
+        w = w.replace(a, b)
+    for a, b in _NO_VOWELS.items():
+        w = w.replace(a, b)
+    return w.replace("ng", "n" + _G)
+
+
 # ------------------------------------------------------------------ Dutch
 # Added 2026-09-20 on Emma's "All four — nl, sv, no, da", asked with the
 # measurement in front of her: of the 1,119 long-tail religious buildings with no
@@ -762,7 +893,9 @@ _MS_ONSETS = {"br", "bl", "dr", "kr", "kl", "pr", "pl", "tr", "gr", "gl",
 # `str-` (Struisvogel), `spr-`. It is not 4: `sch` is already two sounds by the
 # time this runs, s + the h-row fricative.
 _MAX_ONSET = {"tr": 1, "ms": 2, "bs": 3, "de": 3, "pl": 3, "cs": 3,
-              "fr": 3, "ru": 3, "nl": 3}
+              "fr": 3, "ru": 3, "nl": 3,
+              # skr- (Skräddaregatan), str-, spr- in all three.
+              "sv": 3, "no": 3, "da": 3}
 
 # Digraphs that are ONE consonant by the time the kana grid reads them.
 _DIGRAPHS = ("sh", "ch", "ts", "ny", "ry", "ky", "gy", "hy", "by", "py", "my")
@@ -805,6 +938,12 @@ def _romanise(word, rules):
         w = _pre_russian(w)
     if rules == "nl":
         w = _pre_dutch(w)
+    if rules == "sv":
+        w = _pre_swedish(w)
+    if rules == "no":
+        w = _pre_norwegian(w)
+    if rules == "da":
+        w = _pre_danish(w)
     for a, b in _RULES[rules]:
         w = w.replace(a, b)
     if rules == "ms":
@@ -963,6 +1102,10 @@ COUNTRY_RULES = {
     # same one-family limit that leaves 5 French labels in Switzerland refused
     # rather than mis-read — a refusal is the correct outcome, not a gap.
     "Q55": "nl",    # Netherlands
+    # The Nordic three, the rest of the same answer. 2026-09-20.
+    "Q34": "sv",    # Sweden
+    "Q20": "no",    # Norway
+    "Q35": "da",    # Denmark
 }
 
 
