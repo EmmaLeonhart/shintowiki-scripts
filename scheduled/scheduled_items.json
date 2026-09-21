@@ -33,7 +33,7 @@
         "open-questions"
       ],
       "queue_anchor": "## Pinned tail (keep last)",
-      "injected": null,
+      "injected": "2026-09-21",
       "body_md": [
         "## Scheduled — `continue-on-error` on the label-generator pipelines",
         "",
@@ -73,7 +73,7 @@
         "open-questions"
       ],
       "queue_anchor": "## Pinned tail (keep last)",
-      "injected": "2026-09-18",
+      "injected": "2026-09-21",
       "body_md": [
         "## Scheduled — the P958 corrections batch is now pasteable",
         "",
@@ -107,7 +107,7 @@
         "queue"
       ],
       "queue_anchor": "## Pinned tail (keep last)",
-      "injected": "2026-09-18",
+      "injected": "2026-09-21",
       "body_md": [
         "## Scheduled — the 24 `part of` removals are unblocked",
         "",

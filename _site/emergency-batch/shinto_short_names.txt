@@ -8,6 +8,8 @@ Q106241380|P1813|ja:"布留多摩"|P2440|"Furutama"
 Q106241380|P569|novalue
 Q1073925|P1813|ja:"シナツ"|P2440|"Shinatsu"
 Q1073925|P569|novalue
+Q10881556|P1813|ja:"五十猛"|P2440|"Isotakeru"
+Q10881556|P569|novalue
 Q10891903|P1813|ja:"八上"|P2440|"Yagami"
 Q10891903|P569|novalue
 Q10932592|P1813|ja:"湍津"|P2440|"Tagitsu"
@@ -91,7 +93,6 @@ Q462803|P1813|ja:"天鈿女"|P2440|"Ame no Uzume"
 Q462803|P569|novalue
 Q48745417|P1813|ja:"刺国"|P2440|"Sashikuni"
 Q48745417|P569|novalue
-Q48760952|P1813|ja:"鳥耳"|P2440|"Totori"
 Q48760952|P569|novalue
 Q65269923|P1813|ja:"日名照額田毘道男伊許知邇"|P2440|"Hinateri-Nukada-Bichio-Ikochini"
 Q65269923|P569|novalue

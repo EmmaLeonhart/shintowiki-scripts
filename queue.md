@@ -9,6 +9,9 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- **Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-09-21)**
+  Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
+
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
@@ -127,4 +130,27 @@ from `ATOMIC_FILES`; they are not queue items.
      outcome is in DEVLOG.md under its date. -->
 <!-- scheduled:p361-duplicate-part-of-removals -->
 <!-- scheduled:p958-corrections-batch-paste -->
+
+<!-- scheduled:label-generator-continue-on-error -->
+## Scheduled — `continue-on-error` on the label-generator pipelines
+
+Deferred by Emma on 2026-08-20 to this date, and deliberately kept out of the queue in the
+meantime: *"it being visible in the queue as 'parked' adds clutter."*
+
+**The finding it came from (2026-08-20).** `label-generator-regenerate.yml` reported
+**success** for two days while all five of its pipeline steps died on their first line
+(`ModuleNotFoundError: No module named 'shinto_miraheze'`, a sys.path ordering bug, since
+fixed). `continue-on-error: true` on every step is what bought that failure two days of
+silence. The only visible traces were job time falling **12m24s to ~55s** and the commit
+diff shrinking to a one-line date stamp — which reads as *"nothing needed regenerating"*.
+
+**The decision, unchanged and still hers:** drop `continue-on-error` on the five steps so a
+breakage goes red the same day; keep it so one bad pipeline cannot block the other four and
+the docs step; or keep it and add a final step that fails the run if any pipeline exited
+non-zero, which preserves the isolation and restores the signal.
+
+This repo is **public**, so Actions minutes are free and a red run costs only the
+notification. The repo already applies the strict version of this reasoning elsewhere:
+`strip_husk_lines.py` is *"deliberately not continue-on-error: if the step cannot run, the
+lines stay staged and the test stays red, which is the visible failure."*
 
