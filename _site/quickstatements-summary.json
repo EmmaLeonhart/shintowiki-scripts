@@ -92,39 +92,45 @@
       "description": "Ichinomiya, Ni-no-Miya, San-no-Miya, Shi-no-Miya, Go-no-Miya, Roku-no-Miya, Regional Ichinomiya",
       "source_property": "P31",
       "determined_by": "Q134916677",
+      "total": 0,
+      "remaining": 0,
+      "completed": 0,
       "add_file": "migrate_x_no_miya_add.txt",
       "remove_file": "migrate_x_no_miya_remove.txt",
-      "total": 0,
-      "completed": 0,
-      "remaining": 0,
       "add_lines": 0,
-      "remove_lines": 0
+      "remove_lines": 0,
+      "underspec_file": null,
+      "underspec_lines": 0
     },
     {
       "name": "S\u014dja",
       "description": "S\u014dja (provincial shrine enshrining the kami of a province)",
       "source_property": "P31",
       "determined_by": "Q742460",
+      "total": 0,
+      "remaining": 0,
+      "completed": 0,
       "add_file": "migrate_soja_add.txt",
       "remove_file": "migrate_soja_remove.txt",
-      "total": 0,
-      "completed": 0,
-      "remaining": 0,
       "add_lines": 0,
-      "remove_lines": 0
+      "remove_lines": 0,
+      "underspec_file": null,
+      "underspec_lines": 0
     },
     {
       "name": "Ritsury\u014d funding type",
       "description": "Kokuhei-sha, Kanpei-sha, and ritual offering types",
       "source_property": "P31",
       "determined_by": "Q135009120",
+      "total": 3623,
+      "remaining": 0,
+      "completed": 3623,
       "add_file": "migrate_ritsuryo_funding_add.txt",
       "remove_file": "migrate_ritsuryo_funding_remove.txt",
-      "total": 0,
-      "completed": 0,
-      "remaining": 0,
       "add_lines": 0,
-      "remove_lines": 0
+      "remove_lines": 3619,
+      "underspec_file": "migrate_ritsuryo_funding_underspecified_remove.txt",
+      "underspec_lines": 3
     }
   ],
   "property_edits": {

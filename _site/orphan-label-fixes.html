@@ -29,10 +29,10 @@
 
 <h1>Orphan descriptions we can fix with a label</h1>
 <p class="lede">These are shrine items carrying a <b>description</b> in a language with <b>no label</b> in that language — and for which <code>shinto-label-generator/</code> has <b>already generated</b> the missing label.<br><br>On Wikidata the uniqueness constraint is on the <b>(label, description) pair</b>, so a description with no label stakes the half that matters least and can get the eventual label edit rejected: <b>a description with no label costs a label</b>. <code>audit_orphan_descriptions.py</code> therefore <i>removes</i> such descriptions. That is right only where no label exists. Every row below is an orphan we can <b>fix instead of clear</b> — step 2 of the four-step path in <code>docs/description_label_policy.md</code>.</p>
-<p><b>5,037</b> fixable rows across <b>49</b> languages, out of <b>8,260</b> orphan descriptions total. Generated 2026-09-21 14:24 UTC — read-only, one SPARQL request.</p>
+<p><b>4,966</b> fixable rows across <b>49</b> languages, out of <b>8,260</b> orphan descriptions total. Generated 2026-09-22 08:57 UTC — read-only, one SPARQL request.</p>
 <div class="counts">
 <span class="chip"><a href="#uk">uk</a> 2,641 / 3,021 (87%)</span>
-<span class="chip"><a href="#id">id</a> 2,126 / 4,682 (45%)</span>
+<span class="chip"><a href="#id">id</a> 2,055 / 4,682 (44%)</span>
 <span class="chip"><a href="#nl">nl</a> 91 / 114 (80%)</span>
 <span class="chip"><a href="#fr">fr</a> 17 / 22 (77%)</span>
 <span class="chip"><a href="#de">de</a> 12 / 23 (52%)</span>
@@ -5368,10 +5368,10 @@ Q99485303	Luk	&quot;Святилище Рокусёгу&quot;</textarea><p class
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q99463928">Q99463928</a></td><td class="lab">Святилище Цусіми</td><td class="muted">Синтоїстське святилище у префектурі Канаґава, Японія</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q99485303">Q99485303</a></td><td class="lab">Святилище Рокусёгу</td><td class="muted">Синтоїстське святилище у префектурі Айті, Японія</td></tr>
 </tbody></table></div>
-<h2 id="id">id — 2,126 fixable
+<h2 id="id">id — 2,055 fixable
  <span class="muted">of 4,682 orphans</span>
 </h2>
-<details><summary>QuickStatements for all 2,126 (id labels)</summary><textarea readonly onclick="this.select()">Q11370879	Lid	&quot;Kuil Kameyama&quot;
+<details><summary>QuickStatements for all 2,055 (id labels)</summary><textarea readonly onclick="this.select()">Q11370879	Lid	&quot;Kuil Kameyama&quot;
 Q11395081	Lid	&quot;Kuil Fuji Omuro Sengen&quot;
 Q11459659	Lid	&quot;Kuil Fujisan Shimomiya Omuro Sengen&quot;
 Q11509681	Lid	&quot;Kuil Himure Hachimangū&quot;
@@ -5608,7 +5608,6 @@ Q134598967	Lid	&quot;Kuil Dairoku&quot;
 Q134602818	Lid	&quot;Kuil Suhataka&quot;
 Q134602837	Lid	&quot;Kuil Futāra&quot;
 Q134602882	Lid	&quot;Kuil Torimi&quot;
-Q134602962	Lid	&quot;Kuil Kōtaijingū&quot;
 Q134603019	Lid	&quot;Kuil Inō&quot;
 Q134603042	Lid	&quot;Kuil Yonsha&quot;
 Q134603043	Lid	&quot;Kuil Yamatsumi&quot;
@@ -5673,9 +5672,8 @@ Q134886095	Lid	&quot;Kuil Higashi&quot;
 Q134886096	Lid	&quot;Kuil Winoheno&quot;
 Q134886097	Lid	&quot;Kuil Kariyado&quot;
 Q134886107	Lid	&quot;Kuil Muku&quot;
-Q134886117	Lid	&quot;Kuil Neno&quot;
+Q134886117	Lid	&quot;Kuil Ne&quot;
 Q134886119	Lid	&quot;Kuil Sakuragi&quot;
-Q134886120	Lid	&quot;Kuil Kuboinari&quot;
 Q134886135	Lid	&quot;Kuil Kawairi&quot;
 Q134886155	Lid	&quot;Kuil Aso&quot;
 Q134886201	Lid	&quot;Kuil Kanasugi&quot;
@@ -5683,7 +5681,6 @@ Q134886205	Lid	&quot;Kuil Isonokami&quot;
 Q134886221	Lid	&quot;Kuil Yamiya&quot;
 Q134886226	Lid	&quot;Kuil Jingūji&quot;
 Q134886257	Lid	&quot;Kuil Tsurugi&quot;
-Q134886271	Lid	&quot;Kuil Ryokamisanryokami&quot;
 Q134886299	Lid	&quot;Kuil Jingūji&quot;
 Q134886306	Lid	&quot;Kuil Chikata&quot;
 Q134886355	Lid	&quot;Kuil Īmori&quot;
@@ -5698,7 +5695,7 @@ Q134886526	Lid	&quot;Kuil Irinishi&quot;
 Q134886539	Lid	&quot;Kuil Matsuyama&quot;
 Q134886574	Lid	&quot;Kuil Tokoyokihime&quot;
 Q134886580	Lid	&quot;Kuil Shirako&quot;
-Q134886594	Lid	&quot;Kuil Ryokami&quot;
+Q134886594	Lid	&quot;Kuil Ryōkami&quot;
 Q134886603	Lid	&quot;Kuil Tsukiyomi&quot;
 Q134886606	Lid	&quot;Kuil Hayashi&quot;
 Q134886645	Lid	&quot;Kuil Washi Katori&quot;
@@ -5711,7 +5708,7 @@ Q134886709	Lid	&quot;Kuil Ōuchi&quot;
 Q134886710	Lid	&quot;Kuil Yatsurugi&quot;
 Q134886713	Lid	&quot;Kuil Dairai&quot;
 Q134886723	Lid	&quot;Kuil Tokoyokihime&quot;
-Q134886739	Lid	&quot;Kuil Ojika&quot;
+Q134886739	Lid	&quot;Kuil Oshika&quot;
 Q134886747	Lid	&quot;Kuil Yamatotakeru&quot;
 Q134886846	Lid	&quot;Kuil Oya&quot;
 Q134886850	Lid	&quot;Kuil Higashiyama&quot;
@@ -5733,7 +5730,6 @@ Q134886996	Lid	&quot;Kuil Myōgi&quot;
 Q134887001	Lid	&quot;Kuil Hachirō&quot;
 Q134887003	Lid	&quot;Kuil Ishigami&quot;
 Q134887028	Lid	&quot;Kuil Kuroishi&quot;
-Q134887033	Lid	&quot;Kuil Kotsurugi&quot;
 Q134887055	Lid	&quot;Kuil Yudono&quot;
 Q134887057	Lid	&quot;Kuil Ōta&quot;
 Q134887069	Lid	&quot;Kuil Kumano Daijin&quot;
@@ -5774,7 +5770,6 @@ Q134955540	Lid	&quot;Kuil Ne&quot;
 Q134955545	Lid	&quot;Kuil Nagasaki&quot;
 Q134955549	Lid	&quot;Kuil Ogawa Sensui&quot;
 Q134955550	Lid	&quot;Kuil Sanai&quot;
-Q134955585	Lid	&quot;Kuil Sekitaihachiman-gu&quot;
 Q134955602	Lid	&quot;Kuil Ebisu&quot;
 Q134955603	Lid	&quot;Kuil Ne&quot;
 Q134955606	Lid	&quot;Kuil Hayatamawakenomikoto&quot;
@@ -5782,7 +5777,6 @@ Q134955609	Lid	&quot;Kuil Tsukima&quot;
 Q134955611	Lid	&quot;Kuil Amakawa&quot;
 Q134955614	Lid	&quot;Kuil Inakami&quot;
 Q134955618	Lid	&quot;Kuil Moroishi&quot;
-Q134955623	Lid	&quot;Kuil Ikegawa&quot;
 Q134955638	Lid	&quot;Kuil Hataori&quot;
 Q134955644	Lid	&quot;Kuil Yahono&quot;
 Q134955652	Lid	&quot;Kuil Benten&quot;
@@ -5837,7 +5831,6 @@ Q134956277	Lid	&quot;Kuil Homusubi&quot;
 Q134956280	Lid	&quot;Kuil Kanda&quot;
 Q134956282	Lid	&quot;Kuil Asahi&quot;
 Q134956284	Lid	&quot;Kuil Kameyama&quot;
-Q134956297	Lid	&quot;Kuil Toyonari&quot;
 Q134956323	Lid	&quot;Kuil Tsushima&quot;
 Q134956331	Lid	&quot;Kuil Shingū&quot;
 Q134956336	Lid	&quot;Kuil Wikuchi&quot;
@@ -5919,8 +5912,6 @@ Q134957182	Lid	&quot;Kuil Mirume&quot;
 Q134957221	Lid	&quot;Kuil Konpira&quot;
 Q134957235	Lid	&quot;Kuil Konabe&quot;
 Q134957245	Lid	&quot;Kuil Tsukihara&quot;
-Q134957252	Lid	&quot;Kuil Takagi&quot;
-Q134957263	Lid	&quot;Kuil Miura&quot;
 Q134957278	Lid	&quot;Kuil Wotsuno&quot;
 Q134957288	Lid	&quot;Kuil Ichikishima&quot;
 Q134957311	Lid	&quot;Kuil Takamatsu&quot;
@@ -5940,7 +5931,7 @@ Q134957509	Lid	&quot;Kuil Chikata&quot;
 Q134957539	Lid	&quot;Kuil Shagūji&quot;
 Q134957549	Lid	&quot;Kuil Fujimori Inari&quot;
 Q134957565	Lid	&quot;Kuil Kinkai&quot;
-Q134957568	Lid	&quot;Kuil Yamanokamisha&quot;
+Q134957568	Lid	&quot;Kuil Yamano&quot;
 Q134957596	Lid	&quot;Kuil Kazamiya&quot;
 Q134957613	Lid	&quot;Kuil Okuyama&quot;
 Q134957650	Lid	&quot;Kuil Iwata&quot;
@@ -5965,11 +5956,11 @@ Q134957964	Lid	&quot;Kuil Shirowa&quot;
 Q134957969	Lid	&quot;Kuil Iwata&quot;
 Q134957974	Lid	&quot;Kuil Sengen&quot;
 Q134957978	Lid	&quot;Kuil Ishimiya&quot;
-Q134957990	Lid	&quot;Kuil Kumanojunisha&quot;
+Q134957990	Lid	&quot;Kuil Kumano Junisha&quot;
 Q134958000	Lid	&quot;Kuil Nichigetsu&quot;
 Q134958001	Lid	&quot;Kuil Ashitsukino&quot;
 Q134958081	Lid	&quot;Kuil Awashima&quot;
-Q134958095	Lid	&quot;Kuil Oihachiman&quot;
+Q134958095	Lid	&quot;Kuil Ōihachiman&quot;
 Q134958137	Lid	&quot;Kuil Ooasa&quot;
 Q134958138	Lid	&quot;Kuil Saya&quot;
 Q134958144	Lid	&quot;Kuil Takagi&quot;
@@ -5986,7 +5977,6 @@ Q134958305	Lid	&quot;Kuil Nichigetsu&quot;
 Q134958308	Lid	&quot;Kuil Ōnamochi&quot;
 Q134958331	Lid	&quot;Kuil Ikenomiya&quot;
 Q134958361	Lid	&quot;Kuil Kuwahara&quot;
-Q134958416	Lid	&quot;Kuil Hiyoshisengen&quot;
 Q134958417	Lid	&quot;Kuil Wakamiya&quot;
 Q134988747	Lid	&quot;Kuil Afuri&quot;
 Q134988752	Lid	&quot;Kuil Akamatsu&quot;
@@ -6110,7 +6100,6 @@ Q135153738	Lid	&quot;Kuil Shiogama&quot;
 Q135153740	Lid	&quot;Kuil Hiraizumi&quot;
 Q135153742	Lid	&quot;Kuil Suijin&quot;
 Q135153766	Lid	&quot;Kuil Tateyama&quot;
-Q135153767	Lid	&quot;Kuil Kitano&quot;
 Q135153774	Lid	&quot;Kuil Nyū&quot;
 Q135153798	Lid	&quot;Kuil Iizuna&quot;
 Q135153806	Lid	&quot;Kuil Shiraha&quot;
@@ -6129,7 +6118,7 @@ Q135153923	Lid	&quot;Kuil Obara&quot;
 Q135153924	Lid	&quot;Kuil Ishii&quot;
 Q135153927	Lid	&quot;Kuil Aoso&quot;
 Q135153946	Lid	&quot;Kuil Iwafune&quot;
-Q135153954	Lid	&quot;Kuil Sashino&quot;
+Q135153954	Lid	&quot;Kuil Sashinou&quot;
 Q135153958	Lid	&quot;Kuil Tesugi&quot;
 Q135153977	Lid	&quot;Kuil Hitokotonushi&quot;
 Q135154005	Lid	&quot;Kuil Nichigetsu&quot;
@@ -6137,7 +6126,7 @@ Q135154010	Lid	&quot;Kuil Raiden-sha&quot;
 Q135154022	Lid	&quot;Kuil Suijin&quot;
 Q135154038	Lid	&quot;Kuil Kusunoki&quot;
 Q135154040	Lid	&quot;Kuil Tokiwa&quot;
-Q135154045	Lid	&quot;Kuil Tsu&quot;
+Q135154045	Lid	&quot;Kuil Tsuno&quot;
 Q135154046	Lid	&quot;Kuil Takayama&quot;
 Q135154068	Lid	&quot;Kuil Kōtaijingūsha&quot;
 Q135154074	Lid	&quot;Kuil Wakitaka&quot;
@@ -6149,7 +6138,7 @@ Q135154125	Lid	&quot;Kuil Ukemochi&quot;
 Q135154130	Lid	&quot;Kuil Afuri&quot;
 Q135154148	Lid	&quot;Kuil Itsukushima&quot;
 Q135154161	Lid	&quot;Kuil Ueno&quot;
-Q135154177	Lid	&quot;Kuil Ishibune&quot;
+Q135154177	Lid	&quot;Kuil Ihafuneno&quot;
 Q135154178	Lid	&quot;Kuil Ikisu&quot;
 Q135154182	Lid	&quot;Kuil Kasahara Koyasu&quot;
 Q135154188	Lid	&quot;Kuil Takafusa&quot;
@@ -6157,19 +6146,18 @@ Q135154197	Lid	&quot;Kuil Kashima Suwa&quot;
 Q135154202	Lid	&quot;Kuil Kamado&quot;
 Q135154203	Lid	&quot;Kuil Tsu&quot;
 Q135154246	Lid	&quot;Kuil Tegosaki&quot;
-Q135154249	Lid	&quot;Kuil Mayumi&quot;
 Q135154267	Lid	&quot;Kuil Katori Hoshi&quot;
 Q135154282	Lid	&quot;Kuil Dairoku&quot;
 Q135154291	Lid	&quot;Kuil Hachiryū&quot;
 Q135154301	Lid	&quot;Kuil Ōhi&quot;
-Q135154307	Lid	&quot;Kuil Kashikone&quot;
+Q135154307	Lid	&quot;Kuil Kōne&quot;
 Q135154314	Lid	&quot;Kuil Awashima&quot;
 Q135154323	Lid	&quot;Kuil Sakai Inari&quot;
 Q135154325	Lid	&quot;Kuil Akitsu&quot;
 Q135154327	Lid	&quot;Kuil Ichiki&quot;
 Q135154342	Lid	&quot;Kuil Shiogama&quot;
 Q135154387	Lid	&quot;Kuil Yamada&quot;
-Q135154404	Lid	&quot;Kuil Hyuga&quot;
+Q135154404	Lid	&quot;Kuil Himukai&quot;
 Q135154407	Lid	&quot;Kuil Nichigetsu&quot;
 Q135154421	Lid	&quot;Kuil Ishigami&quot;
 Q135154435	Lid	&quot;Kuil Ōhirumemuchi&quot;
@@ -6195,7 +6183,7 @@ Q135154590	Lid	&quot;Kuil Nitta&quot;
 Q135154599	Lid	&quot;Kuil Tsukiyomi&quot;
 Q135154611	Lid	&quot;Kuil Ikisu&quot;
 Q135154638	Lid	&quot;Kuil Shiogama&quot;
-Q135154661	Lid	&quot;Kuil Shingu&quot;
+Q135154661	Lid	&quot;Kuil Shingū&quot;
 Q135154664	Lid	&quot;Kuil Tennō&quot;
 Q135154665	Lid	&quot;Kuil Akiyo&quot;
 Q135154676	Lid	&quot;Kuil Ise Shinmeisha&quot;
@@ -6217,7 +6205,6 @@ Q135154876	Lid	&quot;Kuil Nagamiya&quot;
 Q135154878	Lid	&quot;Kuil Awa&quot;
 Q135154891	Lid	&quot;Kuil Hoko&quot;
 Q135154899	Lid	&quot;Kuil Ichikishima&quot;
-Q135154901	Lid	&quot;Kuil Tachibanagozo&quot;
 Q135154905	Lid	&quot;Kuil Ikisu&quot;
 Q135154917	Lid	&quot;Kuil Sawawachigi&quot;
 Q135154920	Lid	&quot;Kuil Inamurano&quot;
@@ -6242,7 +6229,6 @@ Q135155229	Lid	&quot;Kuil Kagami&quot;
 Q135155250	Lid	&quot;Kuil Ōmiya Daijin&quot;
 Q135155260	Lid	&quot;Kuil Takafusa&quot;
 Q135155267	Lid	&quot;Kuil Takamiyano&quot;
-Q135155280	Lid	&quot;Kuil Kotohira-sha&quot;
 Q135155314	Lid	&quot;Kuil Nomura&quot;
 Q135155315	Lid	&quot;Kuil Yamazaki&quot;
 Q135155353	Lid	&quot;Kuil Kashimakatori&quot;
@@ -6257,7 +6243,7 @@ Q135155485	Lid	&quot;Kuil Atsuta&quot;
 Q135155487	Lid	&quot;Kuil Tsukiyomi&quot;
 Q135155493	Lid	&quot;Kuil Shingū&quot;
 Q135155499	Lid	&quot;Kuil Miwatari&quot;
-Q135155514	Lid	&quot;Kuil Tsu&quot;
+Q135155514	Lid	&quot;Kuil Tsuno&quot;
 Q135155520	Lid	&quot;Kuil Kōmō&quot;
 Q135155521	Lid	&quot;Kuil Ōhira&quot;
 Q135155524	Lid	&quot;Kuil Sumera&quot;
@@ -6276,7 +6262,6 @@ Q135155767	Lid	&quot;Kuil Ikisu&quot;
 Q135155774	Lid	&quot;Kuil Inokami&quot;
 Q135155790	Lid	&quot;Kuil Otsuka&quot;
 Q135155820	Lid	&quot;Kuil Takamiyano&quot;
-Q135155836	Lid	&quot;Kuil Suwakenmoku&quot;
 Q135155845	Lid	&quot;Kuil Newatari&quot;
 Q135155848	Lid	&quot;Kuil Himemiya&quot;
 Q135155880	Lid	&quot;Kuil Hachiryū&quot;
@@ -6292,7 +6277,6 @@ Q135155964	Lid	&quot;Kuil Yamano&quot;
 Q135155965	Lid	&quot;Kuil Tatenui&quot;
 Q135156008	Lid	&quot;Kuil Hitokoto&quot;
 Q135156052	Lid	&quot;Kuil Mikumano&quot;
-Q135156054	Lid	&quot;Kuil Okitsuse&quot;
 Q135156062	Lid	&quot;Kuil Tsu&quot;
 Q135156071	Lid	&quot;Kuil Taki&quot;
 Q135156086	Lid	&quot;Kuil Takagi&quot;
@@ -6300,7 +6284,6 @@ Q135156093	Lid	&quot;Kuil Iwafune&quot;
 Q135156097	Lid	&quot;Kuil Hase&quot;
 Q135156103	Lid	&quot;Kuil Iwafune&quot;
 Q135156104	Lid	&quot;Kuil Sekison&quot;
-Q135156111	Lid	&quot;Kuil Kabuto&quot;
 Q135156112	Lid	&quot;Kuil Shizu&quot;
 Q135156114	Lid	&quot;Kuil Tateno&quot;
 Q135156121	Lid	&quot;Kuil Nichigetsu&quot;
@@ -6318,7 +6301,6 @@ Q135258996	Lid	&quot;Kuil Tawara&quot;
 Q135259009	Lid	&quot;Kuil Yamatotakeru&quot;
 Q135259010	Lid	&quot;Kuil Yudono&quot;
 Q135259018	Lid	&quot;Kuil Isonokami&quot;
-Q135259023	Lid	&quot;Kuil Rokusan&quot;
 Q135259096	Lid	&quot;Kuil Futahashira&quot;
 Q135259112	Lid	&quot;Kuil Fujinomiya&quot;
 Q135259125	Lid	&quot;Kuil Yudono&quot;
@@ -6334,7 +6316,7 @@ Q135259207	Lid	&quot;Kuil Tawara&quot;
 Q135259220	Lid	&quot;Kuil Isonokami&quot;
 Q135259248	Lid	&quot;Kuil Hashimoto&quot;
 Q135259303	Lid	&quot;Kuil Shijūku&quot;
-Q135259315	Lid	&quot;Kuil Suzumemiya&quot;
+Q135259315	Lid	&quot;Kuil Suzumenomiya&quot;
 Q135259339	Lid	&quot;Kuil Tōmiya&quot;
 Q135259357	Lid	&quot;Kuil Nakajima&quot;
 Q135259369	Lid	&quot;Kuil Yudono&quot;
@@ -6345,8 +6327,7 @@ Q135259429	Lid	&quot;Kuil Sokubi&quot;
 Q135259433	Lid	&quot;Kuil Shiraishi&quot;
 Q135259439	Lid	&quot;Kuil Aio Inari&quot;
 Q135259458	Lid	&quot;Kuil Arakashi&quot;
-Q135259459	Lid	&quot;Kuil Aimiya&quot;
-Q135259460	Lid	&quot;Kuil Ikiuma&quot;
+Q135259460	Lid	&quot;Kuil Ikumano&quot;
 Q135259466	Lid	&quot;Kuil Seiryū&quot;
 Q135259486	Lid	&quot;Kuil Futāra&quot;
 Q135259536	Lid	&quot;Kuil Nagata&quot;
@@ -6355,16 +6336,14 @@ Q135259548	Lid	&quot;Kuil Oide&quot;
 Q135259549	Lid	&quot;Kuil Sannomiya&quot;
 Q135259558	Lid	&quot;Kuil Mikatono&quot;
 Q135259573	Lid	&quot;Kuil San&quot;
-Q135259583	Lid	&quot;Kuil Kantogoshainari&quot;
 Q135259584	Lid	&quot;Kuil Sazagi&quot;
-Q135259585	Lid	&quot;Kuil Chikyuinari&quot;
 Q135259603	Lid	&quot;Kuil Chigatsu&quot;
 Q135259629	Lid	&quot;Kuil Toga&quot;
 Q135259632	Lid	&quot;Kuil Afuri&quot;
 Q135259644	Lid	&quot;Kuil Sankō&quot;
-Q135259654	Lid	&quot;Kuil Kobo&quot;
+Q135259654	Lid	&quot;Kuil Takafusa&quot;
 Q135259660	Lid	&quot;Kuil Ōhirume&quot;
-Q135259661	Lid	&quot;Kuil Sanmiya&quot;
+Q135259661	Lid	&quot;Kuil Sannomiya&quot;
 Q135259666	Lid	&quot;Kuil Mikazuki&quot;
 Q135259687	Lid	&quot;Kuil Iwasakunesaku&quot;
 Q135259697	Lid	&quot;Kuil Tawara&quot;
@@ -6376,8 +6355,7 @@ Q135259803	Lid	&quot;Kuil Mikazuki&quot;
 Q135259818	Lid	&quot;Kuil Chigata&quot;
 Q135259855	Lid	&quot;Kuil Shizu&quot;
 Q135259863	Lid	&quot;Kuil Takao&quot;
-Q135259878	Lid	&quot;Kuil Kumanonyotai&quot;
-Q135259884	Lid	&quot;Kuil Shusseinari&quot;
+Q135259884	Lid	&quot;Kuil Shusse Inari&quot;
 Q135259940	Lid	&quot;Kuil Tsurugi&quot;
 Q135259978	Lid	&quot;Kuil Newatari&quot;
 Q135259985	Lid	&quot;Kuil Kamikura&quot;
@@ -6393,7 +6371,6 @@ Q135260164	Lid	&quot;Kuil Tadasu&quot;
 Q135260186	Lid	&quot;Kuil Takashima&quot;
 Q135260191	Lid	&quot;Kuil Ōasa&quot;
 Q135260204	Lid	&quot;Kuil Iizuna&quot;
-Q135260218	Lid	&quot;Kuil Magotaro&quot;
 Q135260219	Lid	&quot;Kuil Otsuka&quot;
 Q135260226	Lid	&quot;Kuil Suijin&quot;
 Q135260230	Lid	&quot;Kuil Hime&quot;
@@ -6405,7 +6382,6 @@ Q135260294	Lid	&quot;Kuil Suijin&quot;
 Q135260295	Lid	&quot;Kuil Fuji Sengen&quot;
 Q135260305	Lid	&quot;Kuil Nichigetsu&quot;
 Q135260354	Lid	&quot;Kuil Sunosaki&quot;
-Q135260358	Lid	&quot;Kuil Hokinemishima&quot;
 Q135260361	Lid	&quot;Kuil Uji&quot;
 Q135260363	Lid	&quot;Kuil Kokufu&quot;
 Q135260388	Lid	&quot;Kuil Akiraishigami&quot;
@@ -6421,18 +6397,13 @@ Q135260465	Lid	&quot;Kuil Tateiwa&quot;
 Q135260480	Lid	&quot;Kuil Yudono&quot;
 Q135260484	Lid	&quot;Kuil Togakushi&quot;
 Q135260507	Lid	&quot;Kuil Fuji Sengen&quot;
-Q135260513	Lid	&quot;Kuil Shutsuryuoyama&quot;
-Q135260515	Lid	&quot;Kuil Shika&quot;
 Q135260517	Lid	&quot;Kuil Sannomiya&quot;
 Q135260565	Lid	&quot;Kuil Myōgi&quot;
-Q135260575	Lid	&quot;Kuil Tagamishima&quot;
-Q135260649	Lid	&quot;Kuil Nishiura&quot;
 Q135260655	Lid	&quot;Kuil Asosawa&quot;
 Q135260697	Lid	&quot;Kuil Arakawa&quot;
 Q135260705	Lid	&quot;Kuil Yudono&quot;
 Q135260708	Lid	&quot;Kuil Kōtaijingū&quot;
 Q135260716	Lid	&quot;Kuil Niko&quot;
-Q135260728	Lid	&quot;Kuil Takaharayama&quot;
 Q135260749	Lid	&quot;Kuil Takahashi&quot;
 Q135260750	Lid	&quot;Kuil Yasuzumi&quot;
 Q135260751	Lid	&quot;Kuil Tenshokō&quot;
@@ -6442,7 +6413,6 @@ Q135260796	Lid	&quot;Kuil Kagami&quot;
 Q135260866	Lid	&quot;Kuil Awashima&quot;
 Q135424914	Lid	&quot;Kuil Shimana&quot;
 Q135424934	Lid	&quot;Kuil Iizuna&quot;
-Q135424945	Lid	&quot;Kuil Iseshima&quot;
 Q135424949	Lid	&quot;Kuil Nyū&quot;
 Q135424974	Lid	&quot;Kuil Misaki&quot;
 Q135424982	Lid	&quot;Kuil Isasumi&quot;
@@ -6451,7 +6421,6 @@ Q135425016	Lid	&quot;Kuil Hakone&quot;
 Q135425033	Lid	&quot;Kuil Kagami&quot;
 Q135425051	Lid	&quot;Kuil Nukihoko&quot;
 Q135425070	Lid	&quot;Kuil Itsukushima&quot;
-Q135425077	Lid	&quot;Kuil Tatsuishi&quot;
 Q135425078	Lid	&quot;Kuil Nyū&quot;
 Q135425081	Lid	&quot;Kuil Funako&quot;
 Q135425085	Lid	&quot;Kuil Kashimagū&quot;
@@ -6464,7 +6433,6 @@ Q135425153	Lid	&quot;Kuil Akaiwa&quot;
 Q135425154	Lid	&quot;Kuil Ōzasa&quot;
 Q135425170	Lid	&quot;Kuil Ichikishima&quot;
 Q135425171	Lid	&quot;Kuil Tachibana&quot;
-Q135425213	Lid	&quot;Kuil Nansai&quot;
 Q135425219	Lid	&quot;Kuil Mizumiya&quot;
 Q135425227	Lid	&quot;Kuil Honoikatsuchino&quot;
 Q135425235	Lid	&quot;Kuil Ikushina&quot;
@@ -6496,7 +6464,6 @@ Q135425433	Lid	&quot;Kuil Ōta&quot;
 Q135425441	Lid	&quot;Kuil Azumayama&quot;
 Q135425460	Lid	&quot;Kuil Shirakahano&quot;
 Q135425484	Lid	&quot;Kuil Higashi&quot;
-Q135425496	Lid	&quot;Kuil Torifusa&quot;
 Q135425521	Lid	&quot;Kuil Imai&quot;
 Q135425556	Lid	&quot;Kuil Ikushina&quot;
 Q135425578	Lid	&quot;Kuil Kojima&quot;
@@ -6524,8 +6491,6 @@ Q135425804	Lid	&quot;Kuil Sachimiya&quot;
 Q135425810	Lid	&quot;Kuil Takinomiya&quot;
 Q135425832	Lid	&quot;Kuil Fushimi&quot;
 Q135425841	Lid	&quot;Kuil Kahakamino&quot;
-Q135425850	Lid	&quot;Kuil Ueki&quot;
-Q135425852	Lid	&quot;Kuil Fuchina&quot;
 Q135425870	Lid	&quot;Kuil Sakuma&quot;
 Q135425874	Lid	&quot;Kuil Noda&quot;
 Q135425936	Lid	&quot;Kuil Fuji Sengen&quot;
@@ -6536,7 +6501,6 @@ Q135425958	Lid	&quot;Kuil Hozumi&quot;
 Q135425965	Lid	&quot;Kuil Isoheno&quot;
 Q135425966	Lid	&quot;Kuil Takasu&quot;
 Q135425968	Lid	&quot;Kuil Shirayama Hime&quot;
-Q135425979	Lid	&quot;Kuil Ozawa&quot;
 Q135425988	Lid	&quot;Kuil Nyū&quot;
 Q135425991	Lid	&quot;Kuil Hirachi&quot;
 Q135425994	Lid	&quot;Kuil Yamazaki&quot;
@@ -6544,12 +6508,11 @@ Q135426050	Lid	&quot;Kuil Nagara&quot;
 Q135426057	Lid	&quot;Kuil Tsukiji&quot;
 Q135426109	Lid	&quot;Kuil Shirayama Hime&quot;
 Q135426117	Lid	&quot;Kuil Nyū&quot;
-Q135426122	Lid	&quot;Kuil Hisawa&quot;
 Q135426125	Lid	&quot;Kuil Kashiwagi&quot;
 Q135426154	Lid	&quot;Kuil Shiogama&quot;
 Q135426173	Lid	&quot;Kuil Horowa&quot;
 Q135426200	Lid	&quot;Kuil Kashimagū&quot;
-Q135433500	Lid	&quot;Kuil Kuro&quot;
+Q135433500	Lid	&quot;Kuil Kuroo&quot;
 Q135433512	Lid	&quot;Kuil Akiba&quot;
 Q135433513	Lid	&quot;Kuil Shiogama&quot;
 Q135433535	Lid	&quot;Kuil īdome&quot;
@@ -6622,7 +6585,6 @@ Q135434084	Lid	&quot;Kuil Toshi&quot;
 Q135434090	Lid	&quot;Kuil Sannō&quot;
 Q135434106	Lid	&quot;Kuil Chinju&quot;
 Q135434116	Lid	&quot;Kuil Inatomi&quot;
-Q135434121	Lid	&quot;Kuil Nisshu&quot;
 Q135434128	Lid	&quot;Kuil Ōmiwa&quot;
 Q135434138	Lid	&quot;Kuil Inadome&quot;
 Q135434139	Lid	&quot;Kuil Ikatsu&quot;
@@ -6644,9 +6606,9 @@ Q135434236	Lid	&quot;Kuil Takino&quot;
 Q135434237	Lid	&quot;Kuil Ukemochi&quot;
 Q135434243	Lid	&quot;Kuil Kogarasu&quot;
 Q135434249	Lid	&quot;Kuil Shibi&quot;
-Q135434259	Lid	&quot;Kuil Kinpo&quot;
+Q135434259	Lid	&quot;Kuil Kinpu&quot;
 Q135434281	Lid	&quot;Kuil Nakama&quot;
-Q135434285	Lid	&quot;Kuil Nanshu&quot;
+Q135434285	Lid	&quot;Kuil Nanshū&quot;
 Q135434286	Lid	&quot;Kuil Takachiho&quot;
 Q135434287	Lid	&quot;Kuil Takachiho&quot;
 Q135434292	Lid	&quot;Kuil Kotohira&quot;
@@ -6739,7 +6701,6 @@ Q135459398	Lid	&quot;Kuil Murakami&quot;
 Q135459399	Lid	&quot;Kuil Araki&quot;
 Q135459400	Lid	&quot;Kuil Ohokurano&quot;
 Q135459404	Lid	&quot;Kuil Gosho&quot;
-Q135459408	Lid	&quot;Kuil Hachimanwakamiya&quot;
 Q135459410	Lid	&quot;Kuil Shiroyamahime&quot;
 Q135459414	Lid	&quot;Kuil Kehi&quot;
 Q135459419	Lid	&quot;Kuil Inari&quot;
@@ -6756,7 +6717,6 @@ Q135459507	Lid	&quot;Kuil Kitano&quot;
 Q135459509	Lid	&quot;Kuil Agung Sawane&quot;
 Q135459511	Lid	&quot;Kuil Hosho&quot;
 Q135459513	Lid	&quot;Kuil Kitano&quot;
-Q135459517	Lid	&quot;Kuil Hachimanwakamiya&quot;
 Q135459520	Lid	&quot;Kuil Mano-gu&quot;
 Q135459524	Lid	&quot;Kuil Kehi&quot;
 Q135459527	Lid	&quot;Kuil Tsubaki&quot;
@@ -6780,7 +6740,6 @@ Q135459623	Lid	&quot;Kuil Kehi&quot;
 Q135459633	Lid	&quot;Kuil Izu&quot;
 Q135459635	Lid	&quot;Kuil Konomoto&quot;
 Q135459638	Lid	&quot;Kuil Tsugami&quot;
-Q135459640	Lid	&quot;Kuil Hachimanwakamiya&quot;
 Q135459646	Lid	&quot;Kuil Mishima&quot;
 Q135459655	Lid	&quot;Kuil Wakamiya&quot;
 Q135459668	Lid	&quot;Kuil Nakayama&quot;
@@ -6895,7 +6854,6 @@ Q135460322	Lid	&quot;Kuil Dōso&quot;
 Q135460332	Lid	&quot;Kuil Daimon&quot;
 Q135460345	Lid	&quot;Kuil Yahanashi&quot;
 Q135460359	Lid	&quot;Kuil Matsuo&quot;
-Q135460360	Lid	&quot;Kuil Yahanachi&quot;
 Q135460364	Lid	&quot;Kuil Matsuo&quot;
 Q135460368	Lid	&quot;Kuil Zao&quot;
 Q135460376	Lid	&quot;Kuil Wakamiya&quot;
@@ -6917,7 +6875,6 @@ Q135460487	Lid	&quot;Kuil Tenjin-sha&quot;
 Q135460493	Lid	&quot;Kuil Unagushi&quot;
 Q135460494	Lid	&quot;Kuil Katsura&quot;
 Q135460496	Lid	&quot;Kuil Shimizu&quot;
-Q135460501	Lid	&quot;Kuil Akagi-sha&quot;
 Q135460502	Lid	&quot;Kuil Uenoshima&quot;
 Q135460512	Lid	&quot;Kuil Ne-no-Kami&quot;
 Q135460522	Lid	&quot;Kuil Yahanachi&quot;
@@ -6935,7 +6892,6 @@ Q135460594	Lid	&quot;Kuil Junisha&quot;
 Q135460595	Lid	&quot;Kuil Tenmangū&quot;
 Q135460606	Lid	&quot;Kuil Matsuo&quot;
 Q135460607	Lid	&quot;Kuil Matsuo&quot;
-Q135460622	Lid	&quot;Kuil Utsuro&quot;
 Q135460627	Lid	&quot;Kuil Usa Hachimangū&quot;
 Q135460630	Lid	&quot;Kuil Gokoku Inari&quot;
 Q135460635	Lid	&quot;Kuil Chikagura&quot;
@@ -6971,7 +6927,6 @@ Q135460932	Lid	&quot;Kuil Tsurugi&quot;
 Q135460944	Lid	&quot;Kuil Fuji&quot;
 Q135460947	Lid	&quot;Kuil Mononobe&quot;
 Q135460961	Lid	&quot;Kuil Tenjin-sha&quot;
-Q135460975	Lid	&quot;Kuil Kurohime&quot;
 Q135460984	Lid	&quot;Kuil Kanda&quot;
 Q135460996	Lid	&quot;Kuil Kamo&quot;
 Q135461015	Lid	&quot;Kuil Asaino&quot;
@@ -6980,13 +6935,10 @@ Q135461043	Lid	&quot;Kuil Takahashi&quot;
 Q135461060	Lid	&quot;Kuil Kashima&quot;
 Q135461064	Lid	&quot;Kuil Sannō&quot;
 Q135461100	Lid	&quot;Kuil Toyokuni&quot;
-Q135461102	Lid	&quot;Kuil Haguro-sha&quot;
 Q135461113	Lid	&quot;Kuil Hishi&quot;
 Q135461119	Lid	&quot;Kuil Kashima&quot;
 Q135461121	Lid	&quot;Kuil Susanoo&quot;
 Q135461123	Lid	&quot;Kuil Tsurugi&quot;
-Q135461130	Lid	&quot;Kuil Kurohime&quot;
-Q135461142	Lid	&quot;Kuil Hishi&quot;
 Q135461144	Lid	&quot;Kuil Kanayama&quot;
 Q135461154	Lid	&quot;Kuil Homusubi&quot;
 Q135461167	Lid	&quot;Kuil Akagi&quot;
@@ -6997,7 +6949,6 @@ Q135461184	Lid	&quot;Kuil Imai&quot;
 Q135461196	Lid	&quot;Kuil Sone&quot;
 Q135461197	Lid	&quot;Kuil Tomioka&quot;
 Q135461199	Lid	&quot;Kuil Akasabi&quot;
-Q135461296	Lid	&quot;Kuil Kurohime-sha&quot;
 Q135461306	Lid	&quot;Kuil Tsurugi&quot;
 Q135461319	Lid	&quot;Kuil Hachimansuwaaidono&quot;
 Q135461321	Lid	&quot;Kuil Tenjin&quot;
@@ -7045,7 +6996,6 @@ Q135461723	Lid	&quot;Kuil Shiroyama&quot;
 Q135461727	Lid	&quot;Kuil Kanayama-sha&quot;
 Q135461733	Lid	&quot;Kuil Togakushi&quot;
 Q135461735	Lid	&quot;Kuil Hishi&quot;
-Q135461738	Lid	&quot;Kuil Hokura&quot;
 Q135461755	Lid	&quot;Kuil Iyahiko-sha&quot;
 Q135461757	Lid	&quot;Kuil Kusanagi-sha&quot;
 Q135461761	Lid	&quot;Kuil Kotohira&quot;
@@ -7064,7 +7014,6 @@ Q135461878	Lid	&quot;Kuil Wada&quot;
 Q135461882	Lid	&quot;Kuil Kamo&quot;
 Q135461885	Lid	&quot;Kuil Kamo-sha&quot;
 Q135461892	Lid	&quot;Kuil Jinbo&quot;
-Q135461895	Lid	&quot;Kuil Kusanagi-sha&quot;
 Q135461905	Lid	&quot;Kuil Hiyoshi&quot;
 Q135461906	Lid	&quot;Kuil Munakata-sha&quot;
 Q135461923	Lid	&quot;Kuil Sakurataki&quot;
@@ -7075,8 +7024,7 @@ Q135461961	Lid	&quot;Kuil Hongō&quot;
 Q135461967	Lid	&quot;Kuil Izu&quot;
 Q135461972	Lid	&quot;Kuil Tenjin-sha&quot;
 Q135461983	Lid	&quot;Kuil Wakamiya&quot;
-Q135461985	Lid	&quot;Kuil Kurohime&quot;
-Q135461986	Lid	&quot;Kuil Ko&quot;
+Q135461986	Lid	&quot;Kuil Kō&quot;
 Q135461997	Lid	&quot;Kuil Tanaori&quot;
 Q135462001	Lid	&quot;Kuil Funakura&quot;
 Q135462007	Lid	&quot;Kuil Mishima&quot;
@@ -7089,7 +7037,6 @@ Q135462065	Lid	&quot;Kuil Makishinmei-gu&quot;
 Q135462079	Lid	&quot;Kuil Kotohira-sha&quot;
 Q135462114	Lid	&quot;Kuil Fuji&quot;
 Q135462117	Lid	&quot;Kuil Ōyamato&quot;
-Q135462120	Lid	&quot;Kuil Asama-sha&quot;
 Q135462125	Lid	&quot;Kuil Tenjin-sha&quot;
 Q135462132	Lid	&quot;Kuil Hinomiya&quot;
 Q135462159	Lid	&quot;Kuil Tsukanomiyahachiman-gu&quot;
@@ -7125,7 +7072,6 @@ Q135462364	Lid	&quot;Kuil Sengen&quot;
 Q135462367	Lid	&quot;Kuil Yasaka&quot;
 Q135462369	Lid	&quot;Kuil Yoshino&quot;
 Q135462379	Lid	&quot;Kuil Yahanachi-sha&quot;
-Q135462399	Lid	&quot;Kuil Minatoinari&quot;
 Q135462401	Lid	&quot;Kuil Shirane&quot;
 Q135462414	Lid	&quot;Kuil Suwa&quot;
 Q135462418	Lid	&quot;Kuil Oyamatsumiinari&quot;
@@ -7138,10 +7084,8 @@ Q135462459	Lid	&quot;Kuil Kawachi&quot;
 Q135462471	Lid	&quot;Kuil Suga&quot;
 Q135462472	Lid	&quot;Kuil Junisho&quot;
 Q135462479	Lid	&quot;Kuil Hiyoshi-sha&quot;
-Q135462480	Lid	&quot;Kuil Yahanachi-sha&quot;
 Q135462482	Lid	&quot;Kuil Otogo&quot;
 Q135462495	Lid	&quot;Kuil Taihei&quot;
-Q135462496	Lid	&quot;Kuil Toyoteruinari&quot;
 Q135462499	Lid	&quot;Kuil Maruyama&quot;
 Q135462501	Lid	&quot;Kuil Shōnose&quot;
 Q135462511	Lid	&quot;Kuil Kamikuroyama&quot;
@@ -7202,10 +7146,9 @@ Q135462854	Lid	&quot;Kuil Suijin-sha&quot;
 Q135462861	Lid	&quot;Kuil Suga&quot;
 Q135462870	Lid	&quot;Kuil Akiba&quot;
 Q135462871	Lid	&quot;Kuil Ikazuchi&quot;
-Q135462879	Lid	&quot;Kuil Kawauchi&quot;
+Q135462879	Lid	&quot;Kuil Kawachi&quot;
 Q135462885	Lid	&quot;Kuil Taki&quot;
 Q135462889	Lid	&quot;Kuil Himemiya&quot;
-Q135462904	Lid	&quot;Kuil Yahanachi-sha&quot;
 Q135462911	Lid	&quot;Kuil Mihashira&quot;
 Q135462924	Lid	&quot;Kuil Tenman&quot;
 Q135462927	Lid	&quot;Kuil Homusubi&quot;
@@ -7226,7 +7169,6 @@ Q135463009	Lid	&quot;Kuil Hachiōji&quot;
 Q135463014	Lid	&quot;Kuil Yasaka&quot;
 Q135463015	Lid	&quot;Kuil Sannō&quot;
 Q135463027	Lid	&quot;Kuil Mishima-sha&quot;
-Q135463036	Lid	&quot;Kuil Nishinomiya-sha&quot;
 Q135463037	Lid	&quot;Kuil Sakai&quot;
 Q135463065	Lid	&quot;Kuil Uchinuma&quot;
 Q135463071	Lid	&quot;Kuil Toyota&quot;
@@ -7247,7 +7189,6 @@ Q135463134	Lid	&quot;Kuil Yasaka&quot;
 Q135463140	Lid	&quot;Kuil Dewa&quot;
 Q135463146	Lid	&quot;Kuil Aiyoshi&quot;
 Q135463149	Lid	&quot;Kuil Funayama&quot;
-Q135463150	Lid	&quot;Kuil Yahanachi-sha&quot;
 Q135463186	Lid	&quot;Kuil Kashima&quot;
 Q135463192	Lid	&quot;Kuil Yasaka&quot;
 Q135463206	Lid	&quot;Kuil Yasaka&quot;
@@ -7261,7 +7202,6 @@ Q135463243	Lid	&quot;Kuil Niibo&quot;
 Q135463252	Lid	&quot;Kuil Asahi&quot;
 Q135463255	Lid	&quot;Kuil Shiroyama&quot;
 Q135463256	Lid	&quot;Kuil Ishii&quot;
-Q135463261	Lid	&quot;Kuil Suwai&quot;
 Q135463263	Lid	&quot;Kuil Okuchi&quot;
 Q135463271	Lid	&quot;Kuil Yasaka&quot;
 Q135463276	Lid	&quot;Kuil Kiriharaishibe&quot;
@@ -7277,7 +7217,7 @@ Q135463351	Lid	&quot;Kuil Tenjin&quot;
 Q135463353	Lid	&quot;Kuil Akagi&quot;
 Q135463359	Lid	&quot;Kuil Sumera&quot;
 Q135463370	Lid	&quot;Kuil Sukunahikona&quot;
-Q135463385	Lid	&quot;Kuil Wakamiyajinsha&quot;
+Q135463385	Lid	&quot;Kuil Wakamiya&quot;
 Q135463387	Lid	&quot;Kuil Kashima&quot;
 Q135463388	Lid	&quot;Kuil Sannō&quot;
 Q135463396	Lid	&quot;Kuil Ibuki-sha&quot;
@@ -7338,7 +7278,6 @@ Q135463758	Lid	&quot;Kuil Hinode&quot;
 Q135463761	Lid	&quot;Kuil Tamatsushima&quot;
 Q135463762	Lid	&quot;Kuil Futahashira&quot;
 Q135463771	Lid	&quot;Kuil Hachioji&quot;
-Q135463775	Lid	&quot;Kuil Kashima-sha&quot;
 Q135463784	Lid	&quot;Kuil Io&quot;
 Q135463786	Lid	&quot;Kuil Sumori&quot;
 Q135463787	Lid	&quot;Kuil Sumori&quot;
@@ -7376,11 +7315,8 @@ Q135463961	Lid	&quot;Kuil Tenjin-sha&quot;
 Q135463964	Lid	&quot;Kuil Sansha&quot;
 Q135463979	Lid	&quot;Kuil Sannō&quot;
 Q135463988	Lid	&quot;Kuil Yukyu&quot;
-Q135463995	Lid	&quot;Kuil Nikko-sha&quot;
 Q135463997	Lid	&quot;Kuil Hachimangu-sha&quot;
-Q135464015	Lid	&quot;Kuil Ogunisawa&quot;
 Q135464027	Lid	&quot;Kuil Rokusho-sha&quot;
-Q135464028	Lid	&quot;Kuil Nanokamachi&quot;
 Q135464029	Lid	&quot;Kuil Atago&quot;
 Q135464034	Lid	&quot;Kuil Doso&quot;
 Q135464035	Lid	&quot;Kuil Fukudo&quot;
@@ -7397,7 +7333,7 @@ Q135464072	Lid	&quot;Kuil Ryoyama&quot;
 Q135464077	Lid	&quot;Kuil Hirose&quot;
 Q135464078	Lid	&quot;Kuil Tsukiyama&quot;
 Q135464108	Lid	&quot;Kuil Atago&quot;
-Q135464128	Lid	&quot;Kuil Tenman-gu&quot;
+Q135464128	Lid	&quot;Kuil Tenmangū&quot;
 Q135464135	Lid	&quot;Kuil Miyake&quot;
 Q135464136	Lid	&quot;Kuil Kashima&quot;
 Q135464142	Lid	&quot;Kuil Magoshi&quot;
@@ -7437,19 +7373,15 @@ Q135464336	Lid	&quot;Kuil Sekiyama&quot;
 Q135464346	Lid	&quot;Kuil Hakkai&quot;
 Q135464347	Lid	&quot;Kuil Imai&quot;
 Q135464361	Lid	&quot;Kuil Ukahano&quot;
-Q135464366	Lid	&quot;Kuil Kurohime&quot;
 Q135464369	Lid	&quot;Kuil Shinbo&quot;
 Q135464389	Lid	&quot;Kuil Mononobe&quot;
 Q135464392	Lid	&quot;Kuil Ukahano&quot;
 Q135464393	Lid	&quot;Kuil Kagamihiyoshi&quot;
 Q135464394	Lid	&quot;Kuil Katori&quot;
-Q135464398	Lid	&quot;Kuil Kurohime&quot;
 Q135464406	Lid	&quot;Kuil Sumiyoshi-sha&quot;
 Q135464426	Lid	&quot;Kuil Ontakesan&quot;
 Q135464448	Lid	&quot;Kuil Hachioji&quot;
 Q135464460	Lid	&quot;Kuil Ishii&quot;
-Q135464467	Lid	&quot;Kuil Kurohime&quot;
-Q135464471	Lid	&quot;Kuil Sagawa&quot;
 Q135464487	Lid	&quot;Kuil Tenjin-sha&quot;
 Q135464491	Lid	&quot;Kuil Hachiōji&quot;
 Q135464492	Lid	&quot;Kuil Hamatsuda&quot;
@@ -7459,7 +7391,6 @@ Q135464496	Lid	&quot;Kuil Yasaka&quot;
 Q135464497	Lid	&quot;Kuil Wakamiya&quot;
 Q135464499	Lid	&quot;Kuil Ishii&quot;
 Q135464503	Lid	&quot;Kuil Osaki&quot;
-Q135464509	Lid	&quot;Kuil Kurohime&quot;
 Q135464510	Lid	&quot;Kuil Sannō&quot;
 Q135464511	Lid	&quot;Kuil Sabaishi&quot;
 Q135464526	Lid	&quot;Kuil Tenjin-sha&quot;
@@ -7467,7 +7398,6 @@ Q135464530	Lid	&quot;Kuil Shirayamahime&quot;
 Q135464531	Lid	&quot;Kuil Hirata&quot;
 Q135464534	Lid	&quot;Kuil Yonahime&quot;
 Q135464536	Lid	&quot;Kuil Ishii&quot;
-Q135464541	Lid	&quot;Kuil Kurohime&quot;
 Q135464559	Lid	&quot;Kuil Takao&quot;
 Q135464564	Lid	&quot;Kuil Shiroyamahime&quot;
 Q135464569	Lid	&quot;Kuil Yamamuro&quot;
@@ -7476,7 +7406,6 @@ Q135464572	Lid	&quot;Kuil Isonokami&quot;
 Q135464577	Lid	&quot;Kuil Ochishu&quot;
 Q135464578	Lid	&quot;Kuil Aramisaki&quot;
 Q135464596	Lid	&quot;Kuil Tsurugi&quot;
-Q135464605	Lid	&quot;Kuil Mishimaisobe&quot;
 Q135464606	Lid	&quot;Kuil Yahiko&quot;
 Q135464607	Lid	&quot;Kuil Yohashira&quot;
 Q135464612	Lid	&quot;Kuil Ukahano&quot;
@@ -7735,7 +7664,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134602818">Q134602818</a></td><td class="lab">Kuil Suhataka</td><td class="muted">kuil Shinto di Prefektur Chiba, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134602837">Q134602837</a></td><td class="lab">Kuil Futāra</td><td class="muted">kuil Shinto di Prefektur Chiba, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134602882">Q134602882</a></td><td class="lab">Kuil Torimi</td><td class="muted">kuil Shinto di Prefektur Chiba, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134602962">Q134602962</a></td><td class="lab">Kuil Kōtaijingū</td><td class="muted">kuil Shinto di Prefektur Chiba, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134603019">Q134603019</a></td><td class="lab">Kuil Inō</td><td class="muted">kuil Shinto di Prefektur Chiba, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134603042">Q134603042</a></td><td class="lab">Kuil Yonsha</td><td class="muted">kuil Shinto di Prefektur Chiba, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134603043">Q134603043</a></td><td class="lab">Kuil Yamatsumi</td><td class="muted">kuil Shinto di Prefektur Chiba, Jepang</td></tr>
@@ -7800,9 +7728,8 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886096">Q134886096</a></td><td class="lab">Kuil Winoheno</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886097">Q134886097</a></td><td class="lab">Kuil Kariyado</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886107">Q134886107</a></td><td class="lab">Kuil Muku</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886117">Q134886117</a></td><td class="lab">Kuil Neno</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886117">Q134886117</a></td><td class="lab">Kuil Ne</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886119">Q134886119</a></td><td class="lab">Kuil Sakuragi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886120">Q134886120</a></td><td class="lab">Kuil Kuboinari</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886135">Q134886135</a></td><td class="lab">Kuil Kawairi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886155">Q134886155</a></td><td class="lab">Kuil Aso</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886201">Q134886201</a></td><td class="lab">Kuil Kanasugi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
@@ -7810,7 +7737,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886221">Q134886221</a></td><td class="lab">Kuil Yamiya</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886226">Q134886226</a></td><td class="lab">Kuil Jingūji</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886257">Q134886257</a></td><td class="lab">Kuil Tsurugi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886271">Q134886271</a></td><td class="lab">Kuil Ryokamisanryokami</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886299">Q134886299</a></td><td class="lab">Kuil Jingūji</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886306">Q134886306</a></td><td class="lab">Kuil Chikata</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886355">Q134886355</a></td><td class="lab">Kuil Īmori</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
@@ -7825,7 +7751,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886539">Q134886539</a></td><td class="lab">Kuil Matsuyama</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886574">Q134886574</a></td><td class="lab">Kuil Tokoyokihime</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886580">Q134886580</a></td><td class="lab">Kuil Shirako</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886594">Q134886594</a></td><td class="lab">Kuil Ryokami</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886594">Q134886594</a></td><td class="lab">Kuil Ryōkami</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886603">Q134886603</a></td><td class="lab">Kuil Tsukiyomi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886606">Q134886606</a></td><td class="lab">Kuil Hayashi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886645">Q134886645</a></td><td class="lab">Kuil Washi Katori</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
@@ -7838,7 +7764,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886710">Q134886710</a></td><td class="lab">Kuil Yatsurugi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886713">Q134886713</a></td><td class="lab">Kuil Dairai</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886723">Q134886723</a></td><td class="lab">Kuil Tokoyokihime</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886739">Q134886739</a></td><td class="lab">Kuil Ojika</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886739">Q134886739</a></td><td class="lab">Kuil Oshika</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886747">Q134886747</a></td><td class="lab">Kuil Yamatotakeru</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886846">Q134886846</a></td><td class="lab">Kuil Oya</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134886850">Q134886850</a></td><td class="lab">Kuil Higashiyama</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
@@ -7860,7 +7786,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134887001">Q134887001</a></td><td class="lab">Kuil Hachirō</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134887003">Q134887003</a></td><td class="lab">Kuil Ishigami</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134887028">Q134887028</a></td><td class="lab">Kuil Kuroishi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134887033">Q134887033</a></td><td class="lab">Kuil Kotsurugi</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134887055">Q134887055</a></td><td class="lab">Kuil Yudono</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134887057">Q134887057</a></td><td class="lab">Kuil Ōta</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134887069">Q134887069</a></td><td class="lab">Kuil Kumano Daijin</td><td class="muted">kuil Shinto di Prefektur Saitama, Jepang</td></tr>
@@ -7901,7 +7826,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955545">Q134955545</a></td><td class="lab">Kuil Nagasaki</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955549">Q134955549</a></td><td class="lab">Kuil Ogawa Sensui</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955550">Q134955550</a></td><td class="lab">Kuil Sanai</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955585">Q134955585</a></td><td class="lab">Kuil Sekitaihachiman-gu</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955602">Q134955602</a></td><td class="lab">Kuil Ebisu</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955603">Q134955603</a></td><td class="lab">Kuil Ne</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955606">Q134955606</a></td><td class="lab">Kuil Hayatamawakenomikoto</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
@@ -7909,7 +7833,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955611">Q134955611</a></td><td class="lab">Kuil Amakawa</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955614">Q134955614</a></td><td class="lab">Kuil Inakami</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955618">Q134955618</a></td><td class="lab">Kuil Moroishi</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955623">Q134955623</a></td><td class="lab">Kuil Ikegawa</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955638">Q134955638</a></td><td class="lab">Kuil Hataori</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955644">Q134955644</a></td><td class="lab">Kuil Yahono</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134955652">Q134955652</a></td><td class="lab">Kuil Benten</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
@@ -7964,7 +7887,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134956280">Q134956280</a></td><td class="lab">Kuil Kanda</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134956282">Q134956282</a></td><td class="lab">Kuil Asahi</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134956284">Q134956284</a></td><td class="lab">Kuil Kameyama</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134956297">Q134956297</a></td><td class="lab">Kuil Toyonari</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134956323">Q134956323</a></td><td class="lab">Kuil Tsushima</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134956331">Q134956331</a></td><td class="lab">Kuil Shingū</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134956336">Q134956336</a></td><td class="lab">Kuil Wikuchi</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
@@ -8046,8 +7968,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957221">Q134957221</a></td><td class="lab">Kuil Konpira</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957235">Q134957235</a></td><td class="lab">Kuil Konabe</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957245">Q134957245</a></td><td class="lab">Kuil Tsukihara</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957252">Q134957252</a></td><td class="lab">Kuil Takagi</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957263">Q134957263</a></td><td class="lab">Kuil Miura</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957278">Q134957278</a></td><td class="lab">Kuil Wotsuno</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957288">Q134957288</a></td><td class="lab">Kuil Ichikishima</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957311">Q134957311</a></td><td class="lab">Kuil Takamatsu</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
@@ -8067,7 +7987,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957539">Q134957539</a></td><td class="lab">Kuil Shagūji</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957549">Q134957549</a></td><td class="lab">Kuil Fujimori Inari</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957565">Q134957565</a></td><td class="lab">Kuil Kinkai</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957568">Q134957568</a></td><td class="lab">Kuil Yamanokamisha</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957568">Q134957568</a></td><td class="lab">Kuil Yamano</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957596">Q134957596</a></td><td class="lab">Kuil Kazamiya</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957613">Q134957613</a></td><td class="lab">Kuil Okuyama</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957650">Q134957650</a></td><td class="lab">Kuil Iwata</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
@@ -8092,11 +8012,11 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957969">Q134957969</a></td><td class="lab">Kuil Iwata</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957974">Q134957974</a></td><td class="lab">Kuil Sengen</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957978">Q134957978</a></td><td class="lab">Kuil Ishimiya</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957990">Q134957990</a></td><td class="lab">Kuil Kumanojunisha</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134957990">Q134957990</a></td><td class="lab">Kuil Kumano Junisha</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958000">Q134958000</a></td><td class="lab">Kuil Nichigetsu</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958001">Q134958001</a></td><td class="lab">Kuil Ashitsukino</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958081">Q134958081</a></td><td class="lab">Kuil Awashima</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958095">Q134958095</a></td><td class="lab">Kuil Oihachiman</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958095">Q134958095</a></td><td class="lab">Kuil Ōihachiman</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958137">Q134958137</a></td><td class="lab">Kuil Ooasa</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958138">Q134958138</a></td><td class="lab">Kuil Saya</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958144">Q134958144</a></td><td class="lab">Kuil Takagi</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
@@ -8113,7 +8033,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958308">Q134958308</a></td><td class="lab">Kuil Ōnamochi</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958331">Q134958331</a></td><td class="lab">Kuil Ikenomiya</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958361">Q134958361</a></td><td class="lab">Kuil Kuwahara</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958416">Q134958416</a></td><td class="lab">Kuil Hiyoshisengen</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134958417">Q134958417</a></td><td class="lab">Kuil Wakamiya</td><td class="muted">kuil Shinto di Prefektur Shizuoka, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134988747">Q134988747</a></td><td class="lab">Kuil Afuri</td><td class="muted">kuil Shinto di Prefektur Kagawa, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q134988752">Q134988752</a></td><td class="lab">Kuil Akamatsu</td><td class="muted">kuil Shinto di Prefektur Kagawa, Jepang</td></tr>
@@ -8237,7 +8156,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153740">Q135153740</a></td><td class="lab">Kuil Hiraizumi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153742">Q135153742</a></td><td class="lab">Kuil Suijin</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153766">Q135153766</a></td><td class="lab">Kuil Tateyama</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153767">Q135153767</a></td><td class="lab">Kuil Kitano</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153774">Q135153774</a></td><td class="lab">Kuil Nyū</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153798">Q135153798</a></td><td class="lab">Kuil Iizuna</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153806">Q135153806</a></td><td class="lab">Kuil Shiraha</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8256,7 +8174,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153924">Q135153924</a></td><td class="lab">Kuil Ishii</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153927">Q135153927</a></td><td class="lab">Kuil Aoso</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153946">Q135153946</a></td><td class="lab">Kuil Iwafune</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153954">Q135153954</a></td><td class="lab">Kuil Sashino</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153954">Q135153954</a></td><td class="lab">Kuil Sashinou</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153958">Q135153958</a></td><td class="lab">Kuil Tesugi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135153977">Q135153977</a></td><td class="lab">Kuil Hitokotonushi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154005">Q135154005</a></td><td class="lab">Kuil Nichigetsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8264,7 +8182,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154022">Q135154022</a></td><td class="lab">Kuil Suijin</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154038">Q135154038</a></td><td class="lab">Kuil Kusunoki</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154040">Q135154040</a></td><td class="lab">Kuil Tokiwa</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154045">Q135154045</a></td><td class="lab">Kuil Tsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154045">Q135154045</a></td><td class="lab">Kuil Tsuno</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154046">Q135154046</a></td><td class="lab">Kuil Takayama</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154068">Q135154068</a></td><td class="lab">Kuil Kōtaijingūsha</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154074">Q135154074</a></td><td class="lab">Kuil Wakitaka</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8276,7 +8194,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154130">Q135154130</a></td><td class="lab">Kuil Afuri</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154148">Q135154148</a></td><td class="lab">Kuil Itsukushima</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154161">Q135154161</a></td><td class="lab">Kuil Ueno</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154177">Q135154177</a></td><td class="lab">Kuil Ishibune</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154177">Q135154177</a></td><td class="lab">Kuil Ihafuneno</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154178">Q135154178</a></td><td class="lab">Kuil Ikisu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154182">Q135154182</a></td><td class="lab">Kuil Kasahara Koyasu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154188">Q135154188</a></td><td class="lab">Kuil Takafusa</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8284,19 +8202,18 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154202">Q135154202</a></td><td class="lab">Kuil Kamado</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154203">Q135154203</a></td><td class="lab">Kuil Tsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154246">Q135154246</a></td><td class="lab">Kuil Tegosaki</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154249">Q135154249</a></td><td class="lab">Kuil Mayumi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154267">Q135154267</a></td><td class="lab">Kuil Katori Hoshi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154282">Q135154282</a></td><td class="lab">Kuil Dairoku</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154291">Q135154291</a></td><td class="lab">Kuil Hachiryū</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154301">Q135154301</a></td><td class="lab">Kuil Ōhi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154307">Q135154307</a></td><td class="lab">Kuil Kashikone</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154307">Q135154307</a></td><td class="lab">Kuil Kōne</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154314">Q135154314</a></td><td class="lab">Kuil Awashima</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154323">Q135154323</a></td><td class="lab">Kuil Sakai Inari</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154325">Q135154325</a></td><td class="lab">Kuil Akitsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154327">Q135154327</a></td><td class="lab">Kuil Ichiki</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154342">Q135154342</a></td><td class="lab">Kuil Shiogama</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154387">Q135154387</a></td><td class="lab">Kuil Yamada</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154404">Q135154404</a></td><td class="lab">Kuil Hyuga</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154404">Q135154404</a></td><td class="lab">Kuil Himukai</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154407">Q135154407</a></td><td class="lab">Kuil Nichigetsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154421">Q135154421</a></td><td class="lab">Kuil Ishigami</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154435">Q135154435</a></td><td class="lab">Kuil Ōhirumemuchi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8322,7 +8239,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154599">Q135154599</a></td><td class="lab">Kuil Tsukiyomi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154611">Q135154611</a></td><td class="lab">Kuil Ikisu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154638">Q135154638</a></td><td class="lab">Kuil Shiogama</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154661">Q135154661</a></td><td class="lab">Kuil Shingu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154661">Q135154661</a></td><td class="lab">Kuil Shingū</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154664">Q135154664</a></td><td class="lab">Kuil Tennō</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154665">Q135154665</a></td><td class="lab">Kuil Akiyo</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154676">Q135154676</a></td><td class="lab">Kuil Ise Shinmeisha</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8344,7 +8261,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154878">Q135154878</a></td><td class="lab">Kuil Awa</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154891">Q135154891</a></td><td class="lab">Kuil Hoko</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154899">Q135154899</a></td><td class="lab">Kuil Ichikishima</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154901">Q135154901</a></td><td class="lab">Kuil Tachibanagozo</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154905">Q135154905</a></td><td class="lab">Kuil Ikisu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154917">Q135154917</a></td><td class="lab">Kuil Sawawachigi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135154920">Q135154920</a></td><td class="lab">Kuil Inamurano</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8369,7 +8285,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155250">Q135155250</a></td><td class="lab">Kuil Ōmiya Daijin</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155260">Q135155260</a></td><td class="lab">Kuil Takafusa</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155267">Q135155267</a></td><td class="lab">Kuil Takamiyano</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155280">Q135155280</a></td><td class="lab">Kuil Kotohira-sha</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155314">Q135155314</a></td><td class="lab">Kuil Nomura</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155315">Q135155315</a></td><td class="lab">Kuil Yamazaki</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155353">Q135155353</a></td><td class="lab">Kuil Kashimakatori</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8384,7 +8299,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155487">Q135155487</a></td><td class="lab">Kuil Tsukiyomi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155493">Q135155493</a></td><td class="lab">Kuil Shingū</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155499">Q135155499</a></td><td class="lab">Kuil Miwatari</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155514">Q135155514</a></td><td class="lab">Kuil Tsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155514">Q135155514</a></td><td class="lab">Kuil Tsuno</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155520">Q135155520</a></td><td class="lab">Kuil Kōmō</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155521">Q135155521</a></td><td class="lab">Kuil Ōhira</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155524">Q135155524</a></td><td class="lab">Kuil Sumera</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8403,7 +8318,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155774">Q135155774</a></td><td class="lab">Kuil Inokami</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155790">Q135155790</a></td><td class="lab">Kuil Otsuka</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155820">Q135155820</a></td><td class="lab">Kuil Takamiyano</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155836">Q135155836</a></td><td class="lab">Kuil Suwakenmoku</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155845">Q135155845</a></td><td class="lab">Kuil Newatari</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155848">Q135155848</a></td><td class="lab">Kuil Himemiya</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155880">Q135155880</a></td><td class="lab">Kuil Hachiryū</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8419,7 +8333,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135155965">Q135155965</a></td><td class="lab">Kuil Tatenui</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156008">Q135156008</a></td><td class="lab">Kuil Hitokoto</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156052">Q135156052</a></td><td class="lab">Kuil Mikumano</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156054">Q135156054</a></td><td class="lab">Kuil Okitsuse</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156062">Q135156062</a></td><td class="lab">Kuil Tsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156071">Q135156071</a></td><td class="lab">Kuil Taki</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156086">Q135156086</a></td><td class="lab">Kuil Takagi</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8427,7 +8340,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156097">Q135156097</a></td><td class="lab">Kuil Hase</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156103">Q135156103</a></td><td class="lab">Kuil Iwafune</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156104">Q135156104</a></td><td class="lab">Kuil Sekison</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156111">Q135156111</a></td><td class="lab">Kuil Kabuto</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156112">Q135156112</a></td><td class="lab">Kuil Shizu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156114">Q135156114</a></td><td class="lab">Kuil Tateno</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135156121">Q135156121</a></td><td class="lab">Kuil Nichigetsu</td><td class="muted">kuil Shinto di Prefektur Ibaraki, Jepang</td></tr>
@@ -8445,7 +8357,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259009">Q135259009</a></td><td class="lab">Kuil Yamatotakeru</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259010">Q135259010</a></td><td class="lab">Kuil Yudono</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259018">Q135259018</a></td><td class="lab">Kuil Isonokami</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259023">Q135259023</a></td><td class="lab">Kuil Rokusan</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259096">Q135259096</a></td><td class="lab">Kuil Futahashira</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259112">Q135259112</a></td><td class="lab">Kuil Fujinomiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259125">Q135259125</a></td><td class="lab">Kuil Yudono</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8461,7 +8372,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259220">Q135259220</a></td><td class="lab">Kuil Isonokami</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259248">Q135259248</a></td><td class="lab">Kuil Hashimoto</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259303">Q135259303</a></td><td class="lab">Kuil Shijūku</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259315">Q135259315</a></td><td class="lab">Kuil Suzumemiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259315">Q135259315</a></td><td class="lab">Kuil Suzumenomiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259339">Q135259339</a></td><td class="lab">Kuil Tōmiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259357">Q135259357</a></td><td class="lab">Kuil Nakajima</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259369">Q135259369</a></td><td class="lab">Kuil Yudono</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8472,8 +8383,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259433">Q135259433</a></td><td class="lab">Kuil Shiraishi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259439">Q135259439</a></td><td class="lab">Kuil Aio Inari</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259458">Q135259458</a></td><td class="lab">Kuil Arakashi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259459">Q135259459</a></td><td class="lab">Kuil Aimiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259460">Q135259460</a></td><td class="lab">Kuil Ikiuma</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259460">Q135259460</a></td><td class="lab">Kuil Ikumano</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259466">Q135259466</a></td><td class="lab">Kuil Seiryū</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259486">Q135259486</a></td><td class="lab">Kuil Futāra</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259536">Q135259536</a></td><td class="lab">Kuil Nagata</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8482,16 +8392,14 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259549">Q135259549</a></td><td class="lab">Kuil Sannomiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259558">Q135259558</a></td><td class="lab">Kuil Mikatono</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259573">Q135259573</a></td><td class="lab">Kuil San</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259583">Q135259583</a></td><td class="lab">Kuil Kantogoshainari</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259584">Q135259584</a></td><td class="lab">Kuil Sazagi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259585">Q135259585</a></td><td class="lab">Kuil Chikyuinari</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259603">Q135259603</a></td><td class="lab">Kuil Chigatsu</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259629">Q135259629</a></td><td class="lab">Kuil Toga</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259632">Q135259632</a></td><td class="lab">Kuil Afuri</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259644">Q135259644</a></td><td class="lab">Kuil Sankō</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259654">Q135259654</a></td><td class="lab">Kuil Kobo</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259654">Q135259654</a></td><td class="lab">Kuil Takafusa</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259660">Q135259660</a></td><td class="lab">Kuil Ōhirume</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259661">Q135259661</a></td><td class="lab">Kuil Sanmiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259661">Q135259661</a></td><td class="lab">Kuil Sannomiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259666">Q135259666</a></td><td class="lab">Kuil Mikazuki</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259687">Q135259687</a></td><td class="lab">Kuil Iwasakunesaku</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259697">Q135259697</a></td><td class="lab">Kuil Tawara</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8503,8 +8411,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259818">Q135259818</a></td><td class="lab">Kuil Chigata</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259855">Q135259855</a></td><td class="lab">Kuil Shizu</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259863">Q135259863</a></td><td class="lab">Kuil Takao</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259878">Q135259878</a></td><td class="lab">Kuil Kumanonyotai</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259884">Q135259884</a></td><td class="lab">Kuil Shusseinari</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259884">Q135259884</a></td><td class="lab">Kuil Shusse Inari</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259940">Q135259940</a></td><td class="lab">Kuil Tsurugi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259978">Q135259978</a></td><td class="lab">Kuil Newatari</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135259985">Q135259985</a></td><td class="lab">Kuil Kamikura</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8520,7 +8427,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260186">Q135260186</a></td><td class="lab">Kuil Takashima</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260191">Q135260191</a></td><td class="lab">Kuil Ōasa</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260204">Q135260204</a></td><td class="lab">Kuil Iizuna</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260218">Q135260218</a></td><td class="lab">Kuil Magotaro</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260219">Q135260219</a></td><td class="lab">Kuil Otsuka</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260226">Q135260226</a></td><td class="lab">Kuil Suijin</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260230">Q135260230</a></td><td class="lab">Kuil Hime</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8532,7 +8438,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260295">Q135260295</a></td><td class="lab">Kuil Fuji Sengen</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260305">Q135260305</a></td><td class="lab">Kuil Nichigetsu</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260354">Q135260354</a></td><td class="lab">Kuil Sunosaki</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260358">Q135260358</a></td><td class="lab">Kuil Hokinemishima</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260361">Q135260361</a></td><td class="lab">Kuil Uji</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260363">Q135260363</a></td><td class="lab">Kuil Kokufu</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260388">Q135260388</a></td><td class="lab">Kuil Akiraishigami</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8548,18 +8453,13 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260480">Q135260480</a></td><td class="lab">Kuil Yudono</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260484">Q135260484</a></td><td class="lab">Kuil Togakushi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260507">Q135260507</a></td><td class="lab">Kuil Fuji Sengen</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260513">Q135260513</a></td><td class="lab">Kuil Shutsuryuoyama</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260515">Q135260515</a></td><td class="lab">Kuil Shika</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260517">Q135260517</a></td><td class="lab">Kuil Sannomiya</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260565">Q135260565</a></td><td class="lab">Kuil Myōgi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260575">Q135260575</a></td><td class="lab">Kuil Tagamishima</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260649">Q135260649</a></td><td class="lab">Kuil Nishiura</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260655">Q135260655</a></td><td class="lab">Kuil Asosawa</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260697">Q135260697</a></td><td class="lab">Kuil Arakawa</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260705">Q135260705</a></td><td class="lab">Kuil Yudono</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260708">Q135260708</a></td><td class="lab">Kuil Kōtaijingū</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260716">Q135260716</a></td><td class="lab">Kuil Niko</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260728">Q135260728</a></td><td class="lab">Kuil Takaharayama</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260749">Q135260749</a></td><td class="lab">Kuil Takahashi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260750">Q135260750</a></td><td class="lab">Kuil Yasuzumi</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260751">Q135260751</a></td><td class="lab">Kuil Tenshokō</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
@@ -8569,7 +8469,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135260866">Q135260866</a></td><td class="lab">Kuil Awashima</td><td class="muted">kuil Shinto di Prefektur Tochigi, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135424914">Q135424914</a></td><td class="lab">Kuil Shimana</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135424934">Q135424934</a></td><td class="lab">Kuil Iizuna</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135424945">Q135424945</a></td><td class="lab">Kuil Iseshima</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135424949">Q135424949</a></td><td class="lab">Kuil Nyū</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135424974">Q135424974</a></td><td class="lab">Kuil Misaki</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135424982">Q135424982</a></td><td class="lab">Kuil Isasumi</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
@@ -8578,7 +8477,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425033">Q135425033</a></td><td class="lab">Kuil Kagami</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425051">Q135425051</a></td><td class="lab">Kuil Nukihoko</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425070">Q135425070</a></td><td class="lab">Kuil Itsukushima</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425077">Q135425077</a></td><td class="lab">Kuil Tatsuishi</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425078">Q135425078</a></td><td class="lab">Kuil Nyū</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425081">Q135425081</a></td><td class="lab">Kuil Funako</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425085">Q135425085</a></td><td class="lab">Kuil Kashimagū</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
@@ -8591,7 +8489,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425154">Q135425154</a></td><td class="lab">Kuil Ōzasa</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425170">Q135425170</a></td><td class="lab">Kuil Ichikishima</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425171">Q135425171</a></td><td class="lab">Kuil Tachibana</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425213">Q135425213</a></td><td class="lab">Kuil Nansai</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425219">Q135425219</a></td><td class="lab">Kuil Mizumiya</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425227">Q135425227</a></td><td class="lab">Kuil Honoikatsuchino</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425235">Q135425235</a></td><td class="lab">Kuil Ikushina</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
@@ -8623,7 +8520,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425441">Q135425441</a></td><td class="lab">Kuil Azumayama</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425460">Q135425460</a></td><td class="lab">Kuil Shirakahano</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425484">Q135425484</a></td><td class="lab">Kuil Higashi</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425496">Q135425496</a></td><td class="lab">Kuil Torifusa</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425521">Q135425521</a></td><td class="lab">Kuil Imai</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425556">Q135425556</a></td><td class="lab">Kuil Ikushina</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425578">Q135425578</a></td><td class="lab">Kuil Kojima</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
@@ -8651,8 +8547,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425810">Q135425810</a></td><td class="lab">Kuil Takinomiya</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425832">Q135425832</a></td><td class="lab">Kuil Fushimi</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425841">Q135425841</a></td><td class="lab">Kuil Kahakamino</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425850">Q135425850</a></td><td class="lab">Kuil Ueki</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425852">Q135425852</a></td><td class="lab">Kuil Fuchina</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425870">Q135425870</a></td><td class="lab">Kuil Sakuma</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425874">Q135425874</a></td><td class="lab">Kuil Noda</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425936">Q135425936</a></td><td class="lab">Kuil Fuji Sengen</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
@@ -8663,7 +8557,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425965">Q135425965</a></td><td class="lab">Kuil Isoheno</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425966">Q135425966</a></td><td class="lab">Kuil Takasu</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425968">Q135425968</a></td><td class="lab">Kuil Shirayama Hime</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425979">Q135425979</a></td><td class="lab">Kuil Ozawa</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425988">Q135425988</a></td><td class="lab">Kuil Nyū</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425991">Q135425991</a></td><td class="lab">Kuil Hirachi</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135425994">Q135425994</a></td><td class="lab">Kuil Yamazaki</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
@@ -8671,12 +8564,11 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426057">Q135426057</a></td><td class="lab">Kuil Tsukiji</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426109">Q135426109</a></td><td class="lab">Kuil Shirayama Hime</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426117">Q135426117</a></td><td class="lab">Kuil Nyū</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426122">Q135426122</a></td><td class="lab">Kuil Hisawa</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426125">Q135426125</a></td><td class="lab">Kuil Kashiwagi</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426154">Q135426154</a></td><td class="lab">Kuil Shiogama</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426173">Q135426173</a></td><td class="lab">Kuil Horowa</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135426200">Q135426200</a></td><td class="lab">Kuil Kashimagū</td><td class="muted">kuil Shinto di Prefektur Gunma, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135433500">Q135433500</a></td><td class="lab">Kuil Kuro</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135433500">Q135433500</a></td><td class="lab">Kuil Kuroo</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135433512">Q135433512</a></td><td class="lab">Kuil Akiba</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135433513">Q135433513</a></td><td class="lab">Kuil Shiogama</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135433535">Q135433535</a></td><td class="lab">Kuil īdome</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
@@ -8749,7 +8641,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434090">Q135434090</a></td><td class="lab">Kuil Sannō</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434106">Q135434106</a></td><td class="lab">Kuil Chinju</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434116">Q135434116</a></td><td class="lab">Kuil Inatomi</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434121">Q135434121</a></td><td class="lab">Kuil Nisshu</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434128">Q135434128</a></td><td class="lab">Kuil Ōmiwa</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434138">Q135434138</a></td><td class="lab">Kuil Inadome</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434139">Q135434139</a></td><td class="lab">Kuil Ikatsu</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
@@ -8771,9 +8662,9 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434237">Q135434237</a></td><td class="lab">Kuil Ukemochi</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434243">Q135434243</a></td><td class="lab">Kuil Kogarasu</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434249">Q135434249</a></td><td class="lab">Kuil Shibi</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434259">Q135434259</a></td><td class="lab">Kuil Kinpo</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434259">Q135434259</a></td><td class="lab">Kuil Kinpu</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434281">Q135434281</a></td><td class="lab">Kuil Nakama</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434285">Q135434285</a></td><td class="lab">Kuil Nanshu</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434285">Q135434285</a></td><td class="lab">Kuil Nanshū</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434286">Q135434286</a></td><td class="lab">Kuil Takachiho</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434287">Q135434287</a></td><td class="lab">Kuil Takachiho</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135434292">Q135434292</a></td><td class="lab">Kuil Kotohira</td><td class="muted">kuil Shinto di Prefektur Kagoshima, Jepang</td></tr>
@@ -8866,7 +8757,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459399">Q135459399</a></td><td class="lab">Kuil Araki</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459400">Q135459400</a></td><td class="lab">Kuil Ohokurano</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459404">Q135459404</a></td><td class="lab">Kuil Gosho</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459408">Q135459408</a></td><td class="lab">Kuil Hachimanwakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459410">Q135459410</a></td><td class="lab">Kuil Shiroyamahime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459414">Q135459414</a></td><td class="lab">Kuil Kehi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459419">Q135459419</a></td><td class="lab">Kuil Inari</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -8883,7 +8773,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459509">Q135459509</a></td><td class="lab">Kuil Agung Sawane</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459511">Q135459511</a></td><td class="lab">Kuil Hosho</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459513">Q135459513</a></td><td class="lab">Kuil Kitano</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459517">Q135459517</a></td><td class="lab">Kuil Hachimanwakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459520">Q135459520</a></td><td class="lab">Kuil Mano-gu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459524">Q135459524</a></td><td class="lab">Kuil Kehi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459527">Q135459527</a></td><td class="lab">Kuil Tsubaki</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -8907,7 +8796,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459633">Q135459633</a></td><td class="lab">Kuil Izu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459635">Q135459635</a></td><td class="lab">Kuil Konomoto</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459638">Q135459638</a></td><td class="lab">Kuil Tsugami</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459640">Q135459640</a></td><td class="lab">Kuil Hachimanwakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459646">Q135459646</a></td><td class="lab">Kuil Mishima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459655">Q135459655</a></td><td class="lab">Kuil Wakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135459668">Q135459668</a></td><td class="lab">Kuil Nakayama</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9022,7 +8910,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460332">Q135460332</a></td><td class="lab">Kuil Daimon</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460345">Q135460345</a></td><td class="lab">Kuil Yahanashi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460359">Q135460359</a></td><td class="lab">Kuil Matsuo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460360">Q135460360</a></td><td class="lab">Kuil Yahanachi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460364">Q135460364</a></td><td class="lab">Kuil Matsuo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460368">Q135460368</a></td><td class="lab">Kuil Zao</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460376">Q135460376</a></td><td class="lab">Kuil Wakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9044,7 +8931,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460493">Q135460493</a></td><td class="lab">Kuil Unagushi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460494">Q135460494</a></td><td class="lab">Kuil Katsura</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460496">Q135460496</a></td><td class="lab">Kuil Shimizu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460501">Q135460501</a></td><td class="lab">Kuil Akagi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460502">Q135460502</a></td><td class="lab">Kuil Uenoshima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460512">Q135460512</a></td><td class="lab">Kuil Ne-no-Kami</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460522">Q135460522</a></td><td class="lab">Kuil Yahanachi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9062,7 +8948,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460595">Q135460595</a></td><td class="lab">Kuil Tenmangū</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460606">Q135460606</a></td><td class="lab">Kuil Matsuo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460607">Q135460607</a></td><td class="lab">Kuil Matsuo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460622">Q135460622</a></td><td class="lab">Kuil Utsuro</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460627">Q135460627</a></td><td class="lab">Kuil Usa Hachimangū</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460630">Q135460630</a></td><td class="lab">Kuil Gokoku Inari</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460635">Q135460635</a></td><td class="lab">Kuil Chikagura</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9098,7 +8983,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460944">Q135460944</a></td><td class="lab">Kuil Fuji</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460947">Q135460947</a></td><td class="lab">Kuil Mononobe</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460961">Q135460961</a></td><td class="lab">Kuil Tenjin-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460975">Q135460975</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460984">Q135460984</a></td><td class="lab">Kuil Kanda</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135460996">Q135460996</a></td><td class="lab">Kuil Kamo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461015">Q135461015</a></td><td class="lab">Kuil Asaino</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9107,13 +8991,10 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461060">Q135461060</a></td><td class="lab">Kuil Kashima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461064">Q135461064</a></td><td class="lab">Kuil Sannō</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461100">Q135461100</a></td><td class="lab">Kuil Toyokuni</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461102">Q135461102</a></td><td class="lab">Kuil Haguro-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461113">Q135461113</a></td><td class="lab">Kuil Hishi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461119">Q135461119</a></td><td class="lab">Kuil Kashima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461121">Q135461121</a></td><td class="lab">Kuil Susanoo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461123">Q135461123</a></td><td class="lab">Kuil Tsurugi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461130">Q135461130</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461142">Q135461142</a></td><td class="lab">Kuil Hishi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461144">Q135461144</a></td><td class="lab">Kuil Kanayama</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461154">Q135461154</a></td><td class="lab">Kuil Homusubi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461167">Q135461167</a></td><td class="lab">Kuil Akagi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9124,7 +9005,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461196">Q135461196</a></td><td class="lab">Kuil Sone</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461197">Q135461197</a></td><td class="lab">Kuil Tomioka</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461199">Q135461199</a></td><td class="lab">Kuil Akasabi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461296">Q135461296</a></td><td class="lab">Kuil Kurohime-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461306">Q135461306</a></td><td class="lab">Kuil Tsurugi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461319">Q135461319</a></td><td class="lab">Kuil Hachimansuwaaidono</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461321">Q135461321</a></td><td class="lab">Kuil Tenjin</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9172,7 +9052,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461727">Q135461727</a></td><td class="lab">Kuil Kanayama-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461733">Q135461733</a></td><td class="lab">Kuil Togakushi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461735">Q135461735</a></td><td class="lab">Kuil Hishi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461738">Q135461738</a></td><td class="lab">Kuil Hokura</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461755">Q135461755</a></td><td class="lab">Kuil Iyahiko-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461757">Q135461757</a></td><td class="lab">Kuil Kusanagi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461761">Q135461761</a></td><td class="lab">Kuil Kotohira</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9191,7 +9070,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461882">Q135461882</a></td><td class="lab">Kuil Kamo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461885">Q135461885</a></td><td class="lab">Kuil Kamo-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461892">Q135461892</a></td><td class="lab">Kuil Jinbo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461895">Q135461895</a></td><td class="lab">Kuil Kusanagi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461905">Q135461905</a></td><td class="lab">Kuil Hiyoshi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461906">Q135461906</a></td><td class="lab">Kuil Munakata-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461923">Q135461923</a></td><td class="lab">Kuil Sakurataki</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9202,8 +9080,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461967">Q135461967</a></td><td class="lab">Kuil Izu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461972">Q135461972</a></td><td class="lab">Kuil Tenjin-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461983">Q135461983</a></td><td class="lab">Kuil Wakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461985">Q135461985</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461986">Q135461986</a></td><td class="lab">Kuil Ko</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461986">Q135461986</a></td><td class="lab">Kuil Kō</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135461997">Q135461997</a></td><td class="lab">Kuil Tanaori</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462001">Q135462001</a></td><td class="lab">Kuil Funakura</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462007">Q135462007</a></td><td class="lab">Kuil Mishima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9216,7 +9093,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462079">Q135462079</a></td><td class="lab">Kuil Kotohira-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462114">Q135462114</a></td><td class="lab">Kuil Fuji</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462117">Q135462117</a></td><td class="lab">Kuil Ōyamato</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462120">Q135462120</a></td><td class="lab">Kuil Asama-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462125">Q135462125</a></td><td class="lab">Kuil Tenjin-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462132">Q135462132</a></td><td class="lab">Kuil Hinomiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462159">Q135462159</a></td><td class="lab">Kuil Tsukanomiyahachiman-gu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9252,7 +9128,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462367">Q135462367</a></td><td class="lab">Kuil Yasaka</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462369">Q135462369</a></td><td class="lab">Kuil Yoshino</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462379">Q135462379</a></td><td class="lab">Kuil Yahanachi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462399">Q135462399</a></td><td class="lab">Kuil Minatoinari</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462401">Q135462401</a></td><td class="lab">Kuil Shirane</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462414">Q135462414</a></td><td class="lab">Kuil Suwa</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462418">Q135462418</a></td><td class="lab">Kuil Oyamatsumiinari</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9265,10 +9140,8 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462471">Q135462471</a></td><td class="lab">Kuil Suga</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462472">Q135462472</a></td><td class="lab">Kuil Junisho</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462479">Q135462479</a></td><td class="lab">Kuil Hiyoshi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462480">Q135462480</a></td><td class="lab">Kuil Yahanachi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462482">Q135462482</a></td><td class="lab">Kuil Otogo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462495">Q135462495</a></td><td class="lab">Kuil Taihei</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462496">Q135462496</a></td><td class="lab">Kuil Toyoteruinari</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462499">Q135462499</a></td><td class="lab">Kuil Maruyama</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462501">Q135462501</a></td><td class="lab">Kuil Shōnose</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462511">Q135462511</a></td><td class="lab">Kuil Kamikuroyama</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9329,10 +9202,9 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462861">Q135462861</a></td><td class="lab">Kuil Suga</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462870">Q135462870</a></td><td class="lab">Kuil Akiba</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462871">Q135462871</a></td><td class="lab">Kuil Ikazuchi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462879">Q135462879</a></td><td class="lab">Kuil Kawauchi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462879">Q135462879</a></td><td class="lab">Kuil Kawachi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462885">Q135462885</a></td><td class="lab">Kuil Taki</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462889">Q135462889</a></td><td class="lab">Kuil Himemiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462904">Q135462904</a></td><td class="lab">Kuil Yahanachi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462911">Q135462911</a></td><td class="lab">Kuil Mihashira</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462924">Q135462924</a></td><td class="lab">Kuil Tenman</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135462927">Q135462927</a></td><td class="lab">Kuil Homusubi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9353,7 +9225,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463014">Q135463014</a></td><td class="lab">Kuil Yasaka</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463015">Q135463015</a></td><td class="lab">Kuil Sannō</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463027">Q135463027</a></td><td class="lab">Kuil Mishima-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463036">Q135463036</a></td><td class="lab">Kuil Nishinomiya-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463037">Q135463037</a></td><td class="lab">Kuil Sakai</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463065">Q135463065</a></td><td class="lab">Kuil Uchinuma</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463071">Q135463071</a></td><td class="lab">Kuil Toyota</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9374,7 +9245,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463140">Q135463140</a></td><td class="lab">Kuil Dewa</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463146">Q135463146</a></td><td class="lab">Kuil Aiyoshi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463149">Q135463149</a></td><td class="lab">Kuil Funayama</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463150">Q135463150</a></td><td class="lab">Kuil Yahanachi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463186">Q135463186</a></td><td class="lab">Kuil Kashima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463192">Q135463192</a></td><td class="lab">Kuil Yasaka</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463206">Q135463206</a></td><td class="lab">Kuil Yasaka</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9388,7 +9258,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463252">Q135463252</a></td><td class="lab">Kuil Asahi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463255">Q135463255</a></td><td class="lab">Kuil Shiroyama</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463256">Q135463256</a></td><td class="lab">Kuil Ishii</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463261">Q135463261</a></td><td class="lab">Kuil Suwai</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463263">Q135463263</a></td><td class="lab">Kuil Okuchi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463271">Q135463271</a></td><td class="lab">Kuil Yasaka</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463276">Q135463276</a></td><td class="lab">Kuil Kiriharaishibe</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9404,7 +9273,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463353">Q135463353</a></td><td class="lab">Kuil Akagi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463359">Q135463359</a></td><td class="lab">Kuil Sumera</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463370">Q135463370</a></td><td class="lab">Kuil Sukunahikona</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463385">Q135463385</a></td><td class="lab">Kuil Wakamiyajinsha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463385">Q135463385</a></td><td class="lab">Kuil Wakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463387">Q135463387</a></td><td class="lab">Kuil Kashima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463388">Q135463388</a></td><td class="lab">Kuil Sannō</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463396">Q135463396</a></td><td class="lab">Kuil Ibuki-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9465,7 +9334,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463761">Q135463761</a></td><td class="lab">Kuil Tamatsushima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463762">Q135463762</a></td><td class="lab">Kuil Futahashira</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463771">Q135463771</a></td><td class="lab">Kuil Hachioji</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463775">Q135463775</a></td><td class="lab">Kuil Kashima-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463784">Q135463784</a></td><td class="lab">Kuil Io</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463786">Q135463786</a></td><td class="lab">Kuil Sumori</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463787">Q135463787</a></td><td class="lab">Kuil Sumori</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9503,11 +9371,8 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463964">Q135463964</a></td><td class="lab">Kuil Sansha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463979">Q135463979</a></td><td class="lab">Kuil Sannō</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463988">Q135463988</a></td><td class="lab">Kuil Yukyu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463995">Q135463995</a></td><td class="lab">Kuil Nikko-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135463997">Q135463997</a></td><td class="lab">Kuil Hachimangu-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464015">Q135464015</a></td><td class="lab">Kuil Ogunisawa</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464027">Q135464027</a></td><td class="lab">Kuil Rokusho-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464028">Q135464028</a></td><td class="lab">Kuil Nanokamachi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464029">Q135464029</a></td><td class="lab">Kuil Atago</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464034">Q135464034</a></td><td class="lab">Kuil Doso</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464035">Q135464035</a></td><td class="lab">Kuil Fukudo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9524,7 +9389,7 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464077">Q135464077</a></td><td class="lab">Kuil Hirose</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464078">Q135464078</a></td><td class="lab">Kuil Tsukiyama</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464108">Q135464108</a></td><td class="lab">Kuil Atago</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464128">Q135464128</a></td><td class="lab">Kuil Tenman-gu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
+<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464128">Q135464128</a></td><td class="lab">Kuil Tenmangū</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464135">Q135464135</a></td><td class="lab">Kuil Miyake</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464136">Q135464136</a></td><td class="lab">Kuil Kashima</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464142">Q135464142</a></td><td class="lab">Kuil Magoshi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9564,19 +9429,15 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464346">Q135464346</a></td><td class="lab">Kuil Hakkai</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464347">Q135464347</a></td><td class="lab">Kuil Imai</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464361">Q135464361</a></td><td class="lab">Kuil Ukahano</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464366">Q135464366</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464369">Q135464369</a></td><td class="lab">Kuil Shinbo</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464389">Q135464389</a></td><td class="lab">Kuil Mononobe</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464392">Q135464392</a></td><td class="lab">Kuil Ukahano</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464393">Q135464393</a></td><td class="lab">Kuil Kagamihiyoshi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464394">Q135464394</a></td><td class="lab">Kuil Katori</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464398">Q135464398</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464406">Q135464406</a></td><td class="lab">Kuil Sumiyoshi-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464426">Q135464426</a></td><td class="lab">Kuil Ontakesan</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464448">Q135464448</a></td><td class="lab">Kuil Hachioji</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464460">Q135464460</a></td><td class="lab">Kuil Ishii</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464467">Q135464467</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464471">Q135464471</a></td><td class="lab">Kuil Sagawa</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464487">Q135464487</a></td><td class="lab">Kuil Tenjin-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464491">Q135464491</a></td><td class="lab">Kuil Hachiōji</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464492">Q135464492</a></td><td class="lab">Kuil Hamatsuda</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9586,7 +9447,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464497">Q135464497</a></td><td class="lab">Kuil Wakamiya</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464499">Q135464499</a></td><td class="lab">Kuil Ishii</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464503">Q135464503</a></td><td class="lab">Kuil Osaki</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464509">Q135464509</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464510">Q135464510</a></td><td class="lab">Kuil Sannō</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464511">Q135464511</a></td><td class="lab">Kuil Sabaishi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464526">Q135464526</a></td><td class="lab">Kuil Tenjin-sha</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9594,7 +9454,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464531">Q135464531</a></td><td class="lab">Kuil Hirata</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464534">Q135464534</a></td><td class="lab">Kuil Yonahime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464536">Q135464536</a></td><td class="lab">Kuil Ishii</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464541">Q135464541</a></td><td class="lab">Kuil Kurohime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464559">Q135464559</a></td><td class="lab">Kuil Takao</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464564">Q135464564</a></td><td class="lab">Kuil Shiroyamahime</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464569">Q135464569</a></td><td class="lab">Kuil Yamamuro</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
@@ -9603,7 +9462,6 @@ Q702042	Lid	&quot;Kuil Hie&quot;</textarea><p class="muted">Paste-ready. Deliver
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464577">Q135464577</a></td><td class="lab">Kuil Ochishu</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464578">Q135464578</a></td><td class="lab">Kuil Aramisaki</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464596">Q135464596</a></td><td class="lab">Kuil Tsurugi</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
-<tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464605">Q135464605</a></td><td class="lab">Kuil Mishimaisobe</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464606">Q135464606</a></td><td class="lab">Kuil Yahiko</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464607">Q135464607</a></td><td class="lab">Kuil Yohashira</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
 <tr><td class="q"><a href="https://www.wikidata.org/wiki/Q135464612">Q135464612</a></td><td class="lab">Kuil Ukahano</td><td class="muted">kuil Shinto di Prefektur Niigata, Jepang</td></tr>
