@@ -1,3 +1,44 @@
+## 2026-09-21 — the weekly sweep, and the injector's anchor never matched
+
+**The sweep found one thing open and it was a decision, so it went straight to `AskUserQuestion`.**
+`[[Open questions]]` carries nothing under Open questions or Wiki-based queue. Its Scheduled items
+section carried two injected bullets: `p958-corrections-batch-paste`, settled 2026-09-18 when the
+remove-then-REBUILD routing shipped, and `label-generator-continue-on-error`, due today and
+genuinely undecided. Both bullets are pruned from the page and from `queue.md`; both markers stay,
+because the marker is what stops `inject_due_items.py` re-injecting, not the json's `injected` field.
+
+**Emma declined all three options and asked for a campaign.** Offered drop / keep / keep-plus-re-fail
+on `label-generator-regenerate.yml`, her answer was ***"We run a campaign to fix it on Thursday.
+Meanwhile cron job for you to trigger a run in 30 minutes."*** So:
+
+* A one-shot local cron at **20:16 today** (`6842b35a`) dispatches the workflow and records the real
+  per-step outcomes in this file. It is told explicitly not to touch the workflow.
+* The campaign is registered as a scheduled item, **`label-generator-continue-on-error-campaign`,
+  due 2026-09-24** — not parked in `queue.md`, which is the whole reason the injector exists.
+  It is scoped as the blindness, not the one file: `git grep -ln continue-on-error
+  .github/workflows/` and decide each, generalising the re-fail step that
+  `generate-shrines-missing-en-label.yml:147` already runs, and preserving `strip_husk_lines.py`
+  as the deliberate counter-example.
+* ⚠ The old note says five pipeline steps. It is **eight** now.
+
+**And the injector has been silently misfiling every item it ever injected.** All three items in the
+store anchored on `"## Pinned tail (keep last)"`. `queue.md` says `- **Pinned tail (keep last)**`.
+`inject_queue` treats a missing anchor as *append* — deliberately, so a renamed heading cannot drop
+an item on the floor — so each one landed at the very bottom of the file, below the spent-marker
+comment block, which is the one region of that file nothing is meant to be read out of. Nobody
+noticed because appending is not an error and the blocks were findable. The fallback is the safety
+net; landing on it every time was the bug. Anchors fixed; the Thursday item now dry-runs to
+`before '- **Pinned tail (keep last)**'`.
+
+Two tests pin it: every `queue`-targeted item's anchor must occur in `queue.md`, and no `body_md`
+may repeat its own marker (`render_md` prepends it, so a copy in the body emits it twice — invisible
+in rendered Markdown, and later a marker the idempotence check and a human pruning the queue
+disagree about). I wrote that second one after putting the duplicate in myself.
+
+**Crons.** `CronList` again reported no jobs at all at session start, as it has every session that
+has checked. The four are recreated: `f9177ea8` :03 work-loop, `77dc3fc6` :15 auto-flush,
+`12c63985` :42 status-report, `f6ded1e6` 08:03 briefing.
+
 ## 2026-09-20 (tenth) — the long tail splits on a line the queue item did not have, and Dutch ships
 
 The 429 watch is waiting on a scheduled run, and every commit today has been 90%-side pipeline

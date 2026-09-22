@@ -32,7 +32,7 @@
         "queue",
         "open-questions"
       ],
-      "queue_anchor": "## Pinned tail (keep last)",
+      "queue_anchor": "- **Pinned tail (keep last)**",
       "injected": "2026-09-21",
       "body_md": [
         "## Scheduled — `continue-on-error` on the label-generator pipelines",
@@ -72,7 +72,7 @@
         "queue",
         "open-questions"
       ],
-      "queue_anchor": "## Pinned tail (keep last)",
+      "queue_anchor": "- **Pinned tail (keep last)**",
       "injected": "2026-09-21",
       "body_md": [
         "## Scheduled — the P958 corrections batch is now pasteable",
@@ -106,7 +106,7 @@
       "targets": [
         "queue"
       ],
-      "queue_anchor": "## Pinned tail (keep last)",
+      "queue_anchor": "- **Pinned tail (keep last)**",
       "injected": "2026-09-21",
       "body_md": [
         "## Scheduled — the 24 `part of` removals are unblocked",
@@ -130,6 +130,43 @@
         "this removal. A blanket strip would have been wrong for 45 of 55."
       ],
       "body_wiki": []
+    },
+    {
+      "id": "label-generator-continue-on-error-campaign",
+      "due": "2026-09-24",
+      "title": "Campaign: fix the label-generator continue-on-error blindness",
+      "emma_also_said": "2026-09-21, asked to pick between drop / keep / keep+re-fail: 'We run a campaign to fix it on Thursday. Meanwhile cron job for you to trigger a run in 30 minutes.' So the three-way choice is NOT re-asked -- she declined to pick one lever and asked for the whole thing fixed properly on the day.",
+      "targets": [
+        "queue"
+      ],
+      "queue_anchor": "- **Pinned tail (keep last)**",
+      "injected": null,
+      "body_md": [
+        "- [ ] **Campaign: fix the label-generator `continue-on-error` blindness.** Emma, 2026-09-21,",
+        "  offered drop / keep / keep+re-fail and picked none of them: ***\"We run a campaign to fix it",
+        "  on Thursday.\"*** So this is not \"apply one of the three options\" -- it is the whole",
+        "  blindness, across every workflow that has it.",
+        "  • **The failure being fixed:** `label-generator-regenerate.yml` reported **success** for two",
+        "    days in Aug 2026 while all of its pipeline steps died on their first line. The only visible",
+        "    traces were job time falling **12m24s to ~55s** and the diff shrinking to a one-line date",
+        "    stamp, which reads as \"nothing needed regenerating\".",
+        "  • **It is 8 steps now, not the five the old note says** -- tokipona, korean, chinese,",
+        "    indonesian, multilang, religious-building multilang, stage-1 en replacements, docs HTML.",
+        "  • ⛔ **The reporting trap, and it is the same one the missing-en-label item hit:**",
+        "    `continue-on-error: true` rewrites a step's **conclusion** to success while its **outcome**",
+        "    stays failure, so `gh run view --json jobs` reads green on a step that died. Any check",
+        "    written for this must read `outcome`, not `conclusion`.",
+        "  • **The pattern already exists in this repo** -- `generate-shrines-missing-en-label.yml:147`",
+        "    keeps per-step isolation and then re-fails the run from the collected `outcome`s. That is",
+        "    the shape to generalise, not to reinvent per workflow.",
+        "  • **So sweep, do not patch one file:** `git grep -ln 'continue-on-error' .github/workflows/`",
+        "    and decide each one, because a workflow with tolerant steps and no re-fail step is the",
+        "    silent-failure shape wherever it appears.",
+        "  • ⚠ `strip_husk_lines.py` is the counter-example to preserve: *\"deliberately not",
+        "    continue-on-error\"*. A step whose failure must stay red is not a gap to fill in.",
+        "  • **Evidence to start from:** the 2026-09-21 20:16 cron triggered a run and recorded its",
+        "    real per-step outcomes in `DEVLOG.md`. Read that before touching anything."
+      ]
     }
   ],
   "_not_moved": [

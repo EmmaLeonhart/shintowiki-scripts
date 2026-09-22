@@ -16,18 +16,14 @@ Anything you want done on the wiki side — write it here rather than in the rep
 
 == Scheduled items ==
 
+<!-- Both scheduled items below are SETTLED; their bullets are pruned and only the markers
+     remain. The marker, not the json, is what stops inject_due_items.py re-injecting an
+     item, so it has to outlive the work it guarded. Outcomes live in DEVLOG.md. -->
 <!-- scheduled:label-generator-continue-on-error -->
-* '''continue-on-error on the label-generator pipelines''' — deferred by you on 2026-08-20 to today, and kept out of <code>queue.md</code> in the meantime so it did not sit there as clutter.
-** '''Why it came up:''' <code>label-generator-regenerate.yml</code> reported ''success'' for two days while all five of its pipeline steps died on their first line. <code>continue-on-error: true</code> is what hid it — the only signs were job time dropping 12m24s to 55s and the diff shrinking to a one-line date stamp, which reads as "nothing to regenerate".
-** '''Your call:''' drop it (breakage goes red the same day) / keep it (one bad pipeline cannot block the rest) / keep it plus a final step that fails the run if any pipeline exited non-zero (keeps both).
-** This repo is public, so the minutes are free and a red run costs only the notification.
-
-''Injected automatically on each item's due date by <code>scheduled/inject_due_items.py</code>. Nothing here was visible in <code>queue.md</code> before today -- that is the point of it. Delete an item once it is settled; nothing re-adds it.''
-
 <!-- scheduled:p958-corrections-batch-paste -->
-* '''The P958 corrections batch is pasteable now.''' The Wikidata lockout ran to 2026-09-18 and covered hand-run QuickStatements by its own wording, so this waited. Re-read <code>wikidata_editing_lockout.state</code> first — the file is the authority, not this note.
-** Regenerate with <code>generate_p958_corrections.py</code> before pasting; it reads live state, so anything already correct emits nothing rather than a churn pair.
-** As built on 2026-08-19 it was three lines: an add for Q111776816, and a remove+add pair for Q134925373, whose <code>n/a</code> should be <code>0</code>.
+
+''Injected automatically on each item's due date by <code>scheduled/inject_due_items.py</code>.
+Nothing here was visible in <code>queue.md</code> before its due date -- that is the point of it.''
 
 [[Category:Git synced pages]]
 <references />

@@ -9,9 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **Weekly sweep: analyse [[Open questions]] into queue.md (<!-- weekly-oq-sweep --> 2026-09-21)**
-  Auto-added by `.github/workflows/weekly-open-questions-sweep.yml`. Read `git_synced/Open questions.wiki` (the wiki version is authoritative — pull/confirm the live page, don't clobber Emma's edits). For every actionable item or Emma disposition not yet handled: either decompose it into concrete steps lower in this queue, or act on it now and prune the resolved bullet from the page. Then delete THIS block.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
@@ -20,11 +17,10 @@ from `ATOMIC_FILES`; they are not queue items.
     trust the IDs written here.
     ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
     in this repo lol."* Do not recreate it from any doc that still says five.
-    ✓ Live IDs, session of **2026-09-19**: `2951de5d` :03, `172cd60d` :15, `cc2f00d1` :42,
-    `bd6c1736` 08:03 — created and re-verified with `CronList`, which again reported **no jobs at
-    all** beforehand, as it has at the start of every session that has checked. Every recorded set
-    this file has carried has been dead by the time the next session read it. Trust `CronList`, not
-    this line.
+    ✓ Live IDs, session of **2026-09-21**: `f9177ea8` :03, `77dc3fc6` :15, `12c63985` :42,
+    `f6ded1e6` 08:03 — created after `CronList` reported, once again, no jobs at all beforehand.
+    Every recorded set this file has carried has been dead by the time the next session read it.
+    Trust `CronList`, not this line.
     ⚠ 2026-09-19: this session read "keep last" as "optional", did the queue work, and reported the
     crons as something to offer rather than doing them. It is not optional — a fresh session has
     none, so recreating the set IS the item, and the only reason it is pinned last is that a
@@ -130,27 +126,4 @@ from `ATOMIC_FILES`; they are not queue items.
      outcome is in DEVLOG.md under its date. -->
 <!-- scheduled:p361-duplicate-part-of-removals -->
 <!-- scheduled:p958-corrections-batch-paste -->
-
 <!-- scheduled:label-generator-continue-on-error -->
-## Scheduled — `continue-on-error` on the label-generator pipelines
-
-Deferred by Emma on 2026-08-20 to this date, and deliberately kept out of the queue in the
-meantime: *"it being visible in the queue as 'parked' adds clutter."*
-
-**The finding it came from (2026-08-20).** `label-generator-regenerate.yml` reported
-**success** for two days while all five of its pipeline steps died on their first line
-(`ModuleNotFoundError: No module named 'shinto_miraheze'`, a sys.path ordering bug, since
-fixed). `continue-on-error: true` on every step is what bought that failure two days of
-silence. The only visible traces were job time falling **12m24s to ~55s** and the commit
-diff shrinking to a one-line date stamp — which reads as *"nothing needed regenerating"*.
-
-**The decision, unchanged and still hers:** drop `continue-on-error` on the five steps so a
-breakage goes red the same day; keep it so one bad pipeline cannot block the other four and
-the docs step; or keep it and add a final step that fails the run if any pipeline exited
-non-zero, which preserves the isolation and restores the signal.
-
-This repo is **public**, so Actions minutes are free and a red run costs only the
-notification. The repo already applies the strict version of this reasoning elsewhere:
-`strip_husk_lines.py` is *"deliberately not continue-on-error: if the step cannot run, the
-lines stay staged and the test stays red, which is the visible failure."*
-

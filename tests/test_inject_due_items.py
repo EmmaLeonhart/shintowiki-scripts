@@ -221,3 +221,31 @@ def _restore_module_paths():
     store, targets = inj.STORE, dict(inj.TARGETS)
     yield
     inj.STORE, inj.TARGETS = store, targets
+
+
+def test_every_queue_anchor_in_the_committed_store_exists_in_queue_md():
+    """An anchor that does not appear in `queue.md` is not an error — `inject_queue` appends
+    instead, deliberately, so a renamed heading cannot drop an item on the floor. But appending
+    puts the item at the very bottom, below the spent-marker comment block, which is the one
+    place in that file nothing is meant to be read from.
+
+    All three items in the store carried `"## Pinned tail (keep last)"` and `queue.md` says
+    `- **Pinned tail (keep last)**`, so every injection so far took the fallback path silently.
+    The fallback is the safety net; landing on it every time is the bug."""
+    queue = io.open(os.path.join(inj.ROOT, "queue.md"), encoding="utf-8").read()
+    for item in inj.load()["items"]:
+        anchor = item.get("queue_anchor")
+        if not anchor or "queue" not in item.get("targets", []):
+            continue
+        assert anchor in queue, (
+            "%s anchors on %r, which is not in queue.md — it would append to the bottom"
+            % (item["id"], anchor))
+
+
+def test_no_body_md_repeats_its_own_marker():
+    """`render_md` prepends the marker itself. A copy inside `body_md` emits it twice, and the
+    duplicate is invisible in rendered Markdown — it only shows up later as a marker the
+    injector's idempotence check and a human pruning the queue disagree about."""
+    for item in inj.load()["items"]:
+        body = "\n".join(item.get("body_md") or [])
+        assert inj.marker(item["id"]) not in body, item["id"]
