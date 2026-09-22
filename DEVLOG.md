@@ -1,3 +1,41 @@
+## 2026-09-21 (cont. 3) — the cache is staged, and the blocker was one file I had not read
+
+The item queued an hour earlier said the fix was "not a one-line patch" because the commit step
+wipes the tree and restores only what `/tmp/qs_files.txt` lists, so staging the cache might not
+reach it. **Reading the block settled that: it is a one-line patch, twice.**
+
+`/tmp/qs_files.txt` is built from `git status --porcelain --untracked-files=all`, which reports
+every changed file whatever its extension. The run's own log confirms it — `nta_kana_targets.json`
+appears in that run's *"this run changed 52 file(s)"* list and again as `M` after the restore. The
+cache was backed up, survived the rebase and was sitting modified in the tree at commit time. It was
+never **staged**, because the step says `git add *.txt` and `git add _site/`.
+
+So the fix is `git add nta_kana_targets.json` at both staging sites — before the rebase and after
+it. Both, because a fix applied only to the first would look right in the diff and change nothing:
+the post-rebase one is what reaches the commit.
+
+**Scope held to the cache.** That run rewrote five tracked `.json` files. Four —
+`p958_summary`, `doujou_resolution`, `derived_name_in_kana_disagreements`,
+`province_exclusions_report` — are reports ABOUT the run and stay unstaged. The cache is an input
+TO it, and only an input makes the output reproducible. `git add *.json` would have swept in all
+four, which is a different change than the one the incident called for.
+
+`tests/test_qs_commit_stages_its_inputs.py`, 7 tests: both staging sites carry the cache, the cache
+is not gitignored (or the `git add` is a silent no-op), the backup list is still derived from
+`git status` and carries no `.txt` filter, and none of the four reports has been swept in.
+
+⚠ **One of those assertions was wrong when written and is worth recording.** The backup-list test
+originally asserted `".txt" not in pipeline`, which matches `qs_status.txt` and `qs_files.txt` — the
+pipeline's own temp filenames — so it failed for a reason that had nothing to do with filtering. It
+now looks for an actual narrowing (`grep`, `--include`, `.txt$`).
+
+**The guard was mutation-tested, not assumed:** removing the post-rebase `git add` turns
+`test_every_staging_site_also_stages_the_cache` red, and restoring it turns it green.
+
+⚠ Still unknown, and still not attributed: why that run's `--refresh` produced a degraded target
+set. Committing the cache does not prevent it — it makes the next one diagnosable, which is what
+was missing.
+
 ## 2026-09-21 (cont. 2) — CI was red before I arrived, and the red test was right
 
 **CI had been failing since 15:57, on `7fb9c36b8`.** Four tests. Three were stale guards; the

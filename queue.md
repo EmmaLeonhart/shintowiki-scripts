@@ -46,28 +46,6 @@ from `ATOMIC_FILES`; they are not queue items.
   that has not been tried is issuing FEWER queries, not pacing them better** — 36 queries for 18
   languages, two per language, is the shape to attack before touching THROTTLE again.
 
-- [ ] `generate-quickstatements.yml` commits the OUTPUT but never its INPUT cache, so a
-  degraded run cannot be diagnosed and silently replaces a good file. Measured 2026-09-21:
-  `nta_kana.txt` went **1,481 → 772** in CI commit `81fb4f0b1`, and that commit touched
-  `nta_kana.txt` alone — the `nta_kana_targets.json` the run had just rewritten was left behind.
-  • ⛔ It is NOT drainage, and both drainage stories were checked and disproved against live
-    Wikidata: of 30 dropped items, **0 had gained `P1814`** and **0 had gained an English label**;
-    all 30 still carried `P131`. They still qualified as targets.
-  • The generator is fine — re-run on the committed cache it emits **1,481, byte-identical** to
-    the pre-drop file. Restored 2026-09-21 by regenerating.
-  • **The fix is in the commit step**, `.github/workflows/generate-quickstatements.yml` ~line 715:
-    `git add *.txt` + `git add _site/` never reaches a `.json`. ⚠ Staging it is not enough on its
-    own — the step first wipes the tree (`git checkout -- .`, `git clean -fd`) and restores only
-    the paths listed in `/tmp/qs_files.txt` from `/tmp/qs_backup`, so the cache has to be in THAT
-    list too or it is deleted before the `git add` ever sees it. Read the whole restore block
-    before editing; that is why this is an item and not a one-line patch.
-  • ⚠ Once input and output are committed together, a test can pin that `nta_kana.txt` is exactly
-    what the committed cache reproduces. Today that test would be red after every legitimate
-    refresh, which is why it is not written yet.
-  • ⚠ The likely trigger is WDQS being unhealthy — the same endpoint that 429'd twice on 09-20/21
-    — but that is NOT confirmed and should not be written down as the cause. What is measured is
-    that the output does not follow from the committed inputs.
-
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
 - [ ] Religious buildings, native-language tail: the **Nordic three — sv 84, no 21, da 14**.

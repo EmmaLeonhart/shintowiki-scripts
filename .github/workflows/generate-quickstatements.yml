@@ -697,6 +697,20 @@ jobs:
           # Stage ALL .txt files (including empty ones that replaced old content)
           git add *.txt 2>/dev/null || true
           git add _site/ 2>/dev/null || true
+          # ⛔ AND THE INPUT CACHE, or the output cannot be reproduced. `nta_kana.txt`
+          # is matched out of `nta_kana_targets.json`, the cached WDQS target rows that
+          # `--refresh` rewrites on every CI run. Staging only the .txt committed the
+          # OUTPUT and threw the INPUT away: on 2026-09-21 commit 81fb4f0b1 wrote a
+          # degraded nta_kana.txt (1,481 -> 772 lines) and nothing in the repo could say
+          # why, because the cache that produced it was restored into the tree here and
+          # then never added. Re-running the generator on the COMMITTED cache emitted
+          # 1,481 again, byte-identical to the pre-drop file — the two had simply stopped
+          # describing each other.
+          # ⚠ The cache only, not the other four .json this run rewrites
+          # (p958_summary, doujou_resolution, derived_name_in_kana_disagreements,
+          # province_exclusions_report). Those are REPORTS ABOUT the run; this is an
+          # INPUT TO it, and only an input makes the output reproducible.
+          git add nta_kana_targets.json 2>/dev/null || true
           cd ..
           git diff --cached --quiet && echo "No generated file changes to commit" || {
             # Reset index and working tree, pull latest, then re-apply generated files
@@ -714,6 +728,20 @@ jobs:
             cd modern-quickstatements
             git add *.txt 2>/dev/null || true
             git add _site/ 2>/dev/null || true
+            # ⛔ AND THE INPUT CACHE, or the output cannot be reproduced. `nta_kana.txt`
+            # is matched out of `nta_kana_targets.json`, the cached WDQS target rows that
+            # `--refresh` rewrites on every CI run. Staging only the .txt committed the
+            # OUTPUT and threw the INPUT away: on 2026-09-21 commit 81fb4f0b1 wrote a
+            # degraded nta_kana.txt (1,481 -> 772 lines) and nothing in the repo could say
+            # why, because the cache that produced it was restored into the tree here and
+            # then never added. Re-running the generator on the COMMITTED cache emitted
+            # 1,481 again, byte-identical to the pre-drop file — the two had simply stopped
+            # describing each other.
+            # ⚠ The cache only, not the other four .json this run rewrites
+            # (p958_summary, doujou_resolution, derived_name_in_kana_disagreements,
+            # province_exclusions_report). Those are REPORTS ABOUT the run; this is an
+            # INPUT TO it, and only an input makes the output reproducible.
+            git add nta_kana_targets.json 2>/dev/null || true
             cd ..
             git diff --cached --quiet && echo "No changes after rebase" || {
               git commit -m "chore(qs): update generated QuickStatements files [skip ci]"
