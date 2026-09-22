@@ -9,24 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- [ ] `generate_multilang_quickstatements.py` asks WDQS **two queries per language, 57 languages
-  = 114 per run**, and each returns ~37,000 rows. It drew a 429 on 2026-09-21 (run 35682528723)
-  at language 18, and it was already importing `wdqs_transport` — it was never one of the eight
-  hand-rolled callers fixed on 09-20. **So the untried lever is asking FEWER questions, not pacing
-  them better.** Both queries per language differ only by a per-language
-  `FILTER NOT EXISTS { ?item rdfs:label ?x FILTER(LANG(?x)="<lang>") }` over the same fixed
-  shrine/temple set.
-  • ⚠ Not a speed optimisation, and must not be argued as one — this project is deliberately slow.
-    It is load reduction, which CLAUDE.md demands outright: *"You don't fucking hammer it."*
-  • ⚠ The rotation added 2026-09-21 spreads the COST of a bail across languages; it does not
-    reduce the load that causes one. Both are wanted.
-  • ⛔ Do NOT widen the per-language `except Exception` to catch the 429 `SystemExit`. A 429 bails
-    by policy, and continuing to the next language is the hammering the policy exists to stop.
-  • ⚠ Bounded first step: measure whether one query per language, or one query for the whole
-    class set plus a single (item, language) label-existence pass, returns the same rows. If the
-    row sets differ at all, stop and write down how — do not ship a query that changes the
-    population.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,

@@ -1,3 +1,48 @@
+## 2026-09-22 (cont. 2) — 114 WDQS queries per run become 57, with byte-identical output
+
+The two per-language queries in `generate_multilang_quickstatements.py` differed only in which
+label they SELECT. Both walked the same class set and both carried the same per-language
+`FILTER NOT EXISTS { rdfs:label ?x FILTER(LANG(?x) = lang) }`, so the expensive half was computed
+twice per language — **114 queries per run across 57 languages, ~37,000 rows each**.
+
+**Measured first, on `shn`, against the real endpoint:**
+
+```
+current shape : 37636 en rows + 34428 id rows = 2 queries, 19s
+combined shape: 38466 rows                    = 1 query,  10s
+
+en labels identical      True   (37,636 / 37,636)
+id labels identical      True   (34,428 / 34,428)
+union of QIDs identical  True
+```
+
+Then end to end: a full single-language run through `main()` issued **1 query instead of 2** and
+wrote a file **byte-identical** to the committed one.
+
+**The change is a feed change, not a restructure.** `make_sparql_both()` returns both labels as
+OPTIONALs with `FILTER(BOUND(?enLabel) || BOUND(?idLabel))` to reproduce the union, and the result
+is split into the two lists the existing passes already expected. The passes themselves are
+untouched, deliberately: they carry the precedence rule — English wins, and an en label that does
+not parse falls through to the id pass — and they set the order of the output file. Filtering
+preserves `ORDER BY ?item`, so each list is exactly what its own query used to return.
+
+⚠ `rdfs:label` is single-valued per language on Wikidata (aliases are `skos:altLabel`), so the two
+OPTIONALs cannot fan a row out. That is the property the whole equivalence rests on.
+
+⛔ **This is load reduction, not a speed-up, and must not be re-argued as one.** This project is
+deliberately slow and that is not the thing being changed. The reason it was worth doing is that
+this generator drew a 429 on 2026-09-21 at language 18 of 57 **while already using the shared
+transport** — so pacing was not the remaining lever, and CLAUDE.md is explicit that the endpoint is
+not to be hammered.
+
+⚠ It does not make a 429 impossible. It halves the questions asked; the rotation added on 09-21
+spreads the cost of a bail. Neither prevents one.
+
+`tests/test_multilang_single_query.py`, 7 tests: one query per language, both labels asked for, the
+union filter present, the class set and existence filter still there exactly once, English winning an
+overlap, and an unparseable en label still falling through to the id pass. **Mutation-tested** —
+restoring the second query turns two of them red.
+
 ## 2026-09-22 (cont.) — the 429 watch closes: two clean scheduled runs, and the workflow tells on itself
 
 Run **35713822422** (scheduled, 10:03 UTC, 3m47s) is the second consecutive clean run of

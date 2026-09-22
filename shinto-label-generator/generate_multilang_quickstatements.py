@@ -1107,6 +1107,48 @@ ORDER BY ?item
 """
 
 
+def make_sparql_both(lang_code):
+    """The en-source and id-source queries as ONE query.
+
+    ⛔ WHY: the two differed only in which label they SELECT. Both walked the same
+    class set and both carried the same per-language
+    `FILTER NOT EXISTS { rdfs:label ?x FILTER(LANG(?x) = lang) }`, so the whole
+    expensive part was being computed twice per language — **114 queries per run
+    across 57 languages, each returning ~37,000 rows**. That is not a speed
+    concern. `generate_multilang_quickstatements.py` drew a 429 from WDQS on
+    2026-09-21 at language 18 of 57 while already using the shared transport, so
+    pacing was not the remaining lever; asking fewer questions was.
+
+    ⚠ MEASURED before shipping, on `shn`, against the two queries it replaces:
+
+        en labels identical      True   (37,636 / 37,636)
+        id labels identical      True   (34,428 / 34,428)
+        union of QIDs identical  True
+        2 queries 19s  ->  1 query 10s
+
+    `rdfs:label` is single-valued per language on Wikidata — aliases are
+    `skos:altLabel` — so the two OPTIONALs cannot fan a row out. The final FILTER
+    reproduces the union: an item with neither label was in neither original query.
+    """
+    return f"""
+SELECT DISTINCT ?item ?enLabel ?idLabel WHERE {{
+  {{
+    ?item wdt:P31/wdt:P279* wd:Q845945 .
+  }}
+  UNION
+  {{
+    ?item wdt:P31 wd:Q5393308 .
+    ?item wdt:P17 wd:Q17 .
+  }}
+  FILTER NOT EXISTS {{ ?item rdfs:label ?existing . FILTER(LANG(?existing) = "{lang_code}") }}
+  OPTIONAL {{ ?item rdfs:label ?enLabel . FILTER(LANG(?enLabel) = "en") }}
+  OPTIONAL {{ ?item rdfs:label ?idLabel . FILTER(LANG(?idLabel) = "id") }}
+  FILTER(BOUND(?enLabel) || BOUND(?idLabel))
+}}
+ORDER BY ?item
+"""
+
+
 def run_sparql(query, label):
     """One WDQS query, through the shared transport.
 
@@ -1153,8 +1195,17 @@ def main():
         rows = []
         seen = set(EXCLUDE_QIDS)   # pre-seed so both source loops skip the kami above
 
+        # ONE query, split into the two source lists the passes below expect.
+        # ⚠ Deliberately NOT restructured into a single pass: the two-pass shape
+        # carries the precedence rule (English wins, and an en label that does not
+        # parse falls through to the id pass) and it sets the ORDER of the output
+        # file. Filtering preserves the query's `ORDER BY ?item`, so each list is
+        # exactly what its own query returned, and the emitted file is unchanged.
+        both = run_sparql(make_sparql_both(lang), f"shrines missing {lang} label (en+id)")
+        en_results = [b for b in both if "enLabel" in b]
+        id_results = [b for b in both if "idLabel" in b]
+
         # 1. From English labels (primary, accurate source — B1).
-        en_results = run_sparql(make_sparql_en(lang), f"shrines (en source) missing {lang} label")
         en_added = 0
         for binding in en_results:
             qid = binding["item"]["value"].split("/")[-1]
@@ -1173,7 +1224,7 @@ def main():
         print(f"  From English: {en_added} rows")
 
         # 2. From Indonesian labels (KEPT — covers temples + shrines en doesn't reach).
-        results = run_sparql(make_sparql(lang), f"shrines missing {lang} label")
+        results = id_results
         skipped = 0
         id_added = 0
 
