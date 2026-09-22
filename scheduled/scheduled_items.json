@@ -164,8 +164,14 @@
         "    silent-failure shape wherever it appears.",
         "  • ⚠ `strip_husk_lines.py` is the counter-example to preserve: *\"deliberately not",
         "    continue-on-error\"*. A step whose failure must stay red is not a gap to fill in.",
-        "  • **Evidence to start from:** the 2026-09-21 20:16 cron triggered a run and recorded its",
-        "    real per-step outcomes in `DEVLOG.md`. Read that before touching anything."
+        "  • **Evidence to start from, and it is not hypothetical:** the 2026-09-21 20:16 cron ran it",
+        "    (**run 35682528723**) and caught the blindness live — `Run multilang pipeline` exited 1 on a",
+        "    WDQS 429, **17 of 57 languages regenerated and 39 never ran**, and the run, every step's",
+        "    conclusion, `--log-failed` and the commit diff all read clean. Full writeup in `DEVLOG.md`",
+        "    under 2026-09-21 (cont.). Read it before touching anything.",
+        "  • ⛔ **One third of the question is already answered:** the API does not expose `outcome` at",
+        "    all, only `conclusion`. An external/after-the-fact checker is not buildable, so the re-fail",
+        "    step is the only thing that restores the signal without dropping `continue-on-error`."
       ]
     }
   ],

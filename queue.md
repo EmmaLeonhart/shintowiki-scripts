@@ -61,6 +61,14 @@ from `ATOMIC_FILES`; they are not queue items.
   green there while the re-fail step correctly called them failed.
   ⚠ While it fails, those two files are frozen snapshots re-offering landed lines — which costs an
   API call each and changes nothing, so it is untidy rather than harmful.
+  ⛔ MEASURED 2026-09-21, and it is NOT confined to this workflow. A dispatched
+  `label-generator-regenerate.yml` (run 35682528723) drew a 429 too, in
+  `generate_multilang_quickstatements.py` — which already imports `wdqs_transport` and was never
+  one of the eight hand-rolled callers. It died at language 18 of 57, so **39 languages did not
+  regenerate**, and two 502s before it (`de`, `it`) retried at 15s and recovered.
+  So the shared transport is working as written and the endpoint is still refusing us. **The lever
+  that has not been tried is issuing FEWER queries, not pacing them better** — 36 queries for 18
+  languages, two per language, is the shape to attack before touching THROTTLE again.
 
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.

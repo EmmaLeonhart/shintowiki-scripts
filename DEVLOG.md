@@ -1,3 +1,56 @@
+## 2026-09-21 (cont.) — the cron-triggered run caught the blindness live: a step failed, the run says success
+
+The 20:16 cron dispatched `label-generator-regenerate.yml` (run **35682528723**, 13m17s, close to
+the ~12m baseline, so nothing resembling the ~55s all-dead signature). **One of the nine steps
+failed and nothing anywhere says so.**
+
+```
+run conclusion            success
+every step's conclusion   success
+gh run view --log-failed  (empty)
+```
+
+**What actually happened**, from the raw log — `Run multilang pipeline` exited 1:
+
+```
+=== CA ===
+  Querying Wikidata: shrines (en source) missing ca label...
+  Got 37507 results.
+  From English: 33922 rows
+  Querying Wikidata: shrines missing ca label...
+429 from WDQS — bailing.
+##[error]Process completed with exit code 1.
+```
+
+`ALL_LANGS` is **57 languages**. It finished 17 (`tr de nl es it eu lt ru uk fa ar arz hi fr pt vi
+bn`), died on `ca`, and **39 never ran at all** — `gl sv nb da hu la ast sh hr el az tl war min eo
+jv he ms br mr nn ceb mai as ur pl ro fi cs sl th new pa mad my km lo dz shn`. The other 8 steps
+genuinely succeeded; their logs are clean.
+
+**⛔ And the diff carries no signal either.** The run's own commit `4ce127f66` touched eleven files
+— `ko.txt` and the ten Chinese-family outputs — and **not one multilang language file**. The 17
+languages it did reach produced no new rows, and the 39 it never reached cannot produce a diff by
+definition. So a reviewer reading that commit sees an ordinary small regeneration. Job duration was
+normal, the conclusion was green, the diff was plausible: all three of the signals the August
+incident was diagnosed by read clean here, on a run that skipped two thirds of its work.
+
+**⛔ The `outcome` field is not exposed by the API at all.** `gh run view --json jobs` returns
+`status` and `conclusion` per step and nothing else; `outcome` exists only inside the workflow as
+`steps.<id>.outcome`. So this cannot be audited after the fact by anyone — only read out of raw
+logs, or surfaced by a step inside the run. That settles one third of Thursday's question before it
+is asked: an external checker is not buildable, so a re-fail step is not one of three equal options,
+it is the only mechanism that restores the signal without dropping `continue-on-error`.
+
+**The 429 is the same 429 the missing-en-label watch is about, and it is wider than that workflow.**
+`generate_multilang_quickstatements.py` already imports `wdqs_transport` — it is not one of the
+hand-rolled transports fixed on 09-20 — and it still drew a 429 after 36 queries across 18
+languages. Two 502s came first (`de`, `it`), each retried at 15s and recovered. So the shared
+transport is doing what it was written to do and the endpoint is still refusing us; the lever that
+has not been tried is issuing fewer queries, not pacing them better.
+
+Per Emma's instruction the workflow is **not** touched — that is Thursday's campaign
+(`label-generator-continue-on-error-campaign`, due 2026-09-24), whose body now names this run.
+
 ## 2026-09-21 — the weekly sweep, and the injector's anchor never matched
 
 **The sweep found one thing open and it was a decision, so it went straight to `AskUserQuestion`.**
