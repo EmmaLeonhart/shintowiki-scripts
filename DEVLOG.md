@@ -1,3 +1,46 @@
+## 2026-09-21 (cont. 5) — the program audit was telling the next session to break things
+
+`queue.md` drained to one item waiting on a scheduled run three hours out, so this promoted the
+only concrete entry left in `todo.md`: the 2026-06-05 full program audit. Its architecture map
+(sections 1-7) is still the best description of the machine. **Its verdicts are three and a half
+months old and two of them are now actively wrong.**
+
+**The retire list would delete machinery Emma said keeps running.** Section 8 says to
+confirm-then-delete `undelete_gaiad_date`, `create_shrine_ranking_pages` and
+`rebucket_300plus_untranslated` — `undelete_gaiad_date` specifically *"kept one more CI cycle to
+confirm before retiring"*, in June. All three still exist and are still wired into
+`wiki-cleanup.yml`. That verdict was correct when the wiki side was live work and a spent kludge
+was clutter; the 2026-09-17 ruling is that the wiki machinery stays up and keeps trying
+indefinitely, which makes leaving them wired the correct state rather than an unfinished cleanup.
+**The later ruling wins, and the doc now says so in place.** Nothing was deleted.
+
+✓ The two the audit marks RETIRED really are gone — `undelete_immanuelle_common_js` and
+`audit_double_category_qids` survive only as explanatory comments in the workflows. A `git grep`
+hits those comments, which is what made them look live for a moment.
+
+**And it carried a `BLOCKED-ON-USER-ACTION` label, which was wrong twice over.** It is not a state
+an item can be in — nothing is ever blocked on Emma's account, and an item whose remaining step is
+hers is closed. It was also wrong on the facts: **backlog item 5 shipped.**
+`recreate-deleted-wikidata/` holds the generators, the RUNNABLE batches and its own tests;
+`recreation_relations.txt` is registered in `ATOMIC_FILES` in **both** `direct_daily_edits.py` and
+`submit_daily_batch.py`; `DEVLOG.md` records the pipeline creating the items; last activity
+2026-09-14. It has been reaching Wikidata through the daily drip for months while that line said it
+was waiting for a go/no-go.
+
+⚠ This is the failure CLAUDE.md's lockout section describes exactly — *a wrongly-blocked item looks
+exactly like a rightly-blocked one*, and no session re-tests a label it wrote itself. It sat unread
+in a published document for three and a half months. The thing that surfaced it was the queue
+draining, not anyone doubting the label.
+
+The `todo.md` entry is closed; the doc stays, because it is the architecture map and
+`site/generate_pages.py` publishes it. ⚠ It is dated and lives in `docs/`, so the expiry rule
+applies to it on paper — the `git grep` that rule demands finds that citation, which is exactly
+what the rule exists to catch.
+
+⚠ **`todo.md` now has no concrete task left in it.** Its remaining sections are the label-generator
+horizon statement, the closed 2026-09-17 rulings, and this pointer. That is a real state, not a
+gap: `queue.md` holds one externally-blocked watch, and Thursday's campaign is scheduled.
+
 ## 2026-09-21 (cont. 4) — the religious-building population goes dormant, mid-measurement
 
 Picked up the Nordic three to check whether `42849537b` had already delivered it. It had delivered

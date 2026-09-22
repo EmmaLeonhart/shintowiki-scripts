@@ -5,6 +5,12 @@ what runs, when, what state it keeps, what's stuck or orphaned, where the
 in-flight wiki migrations are, and a keep/fix/retire verdict per item. Written
 2026-06-05 during the wiki-content backlog barrel-through session.
 
+> ⛔ **ITS VERDICTS ARE SUPERSEDED — READ SECTION 8 WITH THE 2026-09-21 NOTE BESIDE IT.**
+> The architecture in sections 1–7 is still the best map of the machine and is what this
+> document is for. The keep/fix/retire calls in section 8 were made while the wiki side was
+> live work, and two of them are now wrong in ways that would cause damage if executed. Both
+> are corrected in place below. Checked 2026-09-21.
+
 > Scope note: this is an architecture-level audit, not a line-by-line inventory
 > of all ~70 scripts. Per-page transforms are grouped by their orchestrator; the
 > standalone CI scripts are grouped by their workflow chunk. The authoritative
@@ -146,9 +152,10 @@ Gating: `wikidata-daily-fire` (one fire/UTC-day) AND the **hard freeze to
 (the P459/kana ones were deleted 2026-05-23).
 
 → **Verdict: keep, do not touch the shape.** This is the most safety-sensitive
-subsystem. The freeze auto-resumes 2026-06-06. Backlog item 5 (recreate deleted
+subsystem. The freeze auto-resumes 2026-06-06. ~~Backlog item 5 (recreate deleted
 WD items) is the only pending Wikidata work and is **BLOCKED-ON-USER-ACTION** (open
-question posted 2026-06-05).
+question posted 2026-06-05).~~ ⛔ **Corrected 2026-09-21: item 5 shipped and drips via
+`recreation_relations.txt`; see the note in section 8. It was never blocked.**
 
 ---
 
@@ -235,8 +242,28 @@ deferred verification (churn-inspection half pending a healthy wiki — see
   ~~`audit_double_category_qids` (disabled, superseded)~~ **— RETIRED 2026-06-06**,
   and the 5 manual-only dispatch workflows once their one-time jobs are confirmed
   done.
-- **BLOCKED-ON-USER-ACTION:** backlog item 5 (recreate deleted Wikidata items) — go/no-go
-  + minimum claim set (open question posted 2026-06-05).
+  - ⛔ **SUPERSEDED 2026-09-21 — DO NOT EXECUTE THIS.** `undelete_gaiad_date`,
+    `create_shrine_ranking_pages` and `rebucket_300plus_untranslated` all still exist and are
+    still wired into `wiki-cleanup.yml`. This verdict was written in June, when the wiki side
+    was live work and a spent kludge was clutter. The 2026-09-17 ruling is that the wiki
+    machinery **stays up and keeps trying indefinitely** — so leaving them wired is now the
+    correct state, not an unfinished cleanup. **The later ruling wins.**
+  - ✓ The two marked RETIRED really are gone. `undelete_immanuelle_common_js` and
+    `audit_double_category_qids` survive only as explanatory comments in the workflows; a
+    `git grep` for either name hits those comments, not live calls. Verified 2026-09-21.
+- ~~**BLOCKED-ON-USER-ACTION:** backlog item 5 (recreate deleted Wikidata items) — go/no-go
+  + minimum claim set (open question posted 2026-06-05).~~
+  ⛔ **WRONG TWICE, corrected 2026-09-21.** First, `BLOCKED-ON-USER-ACTION` is not a state an
+  item can be in — CLAUDE.md is explicit that nothing is ever blocked on Emma's account, and an
+  item whose remaining step is hers is closed, not pending. Second, it is wrong on the facts:
+  **backlog item 5 shipped.** `recreate-deleted-wikidata/` holds the generators, the RUNNABLE
+  batches and its own tests; `recreation_relations.txt` is registered in `ATOMIC_FILES` in both
+  `direct_daily_edits.py` and `submit_daily_batch.py`; `DEVLOG.md` records the pipeline creating
+  the items; last activity 2026-09-14. It has been reaching Wikidata through the daily drip for
+  months while this line said it was waiting for permission to start.
+  ⚠ This is the failure the lockout section of CLAUDE.md describes exactly: *a wrongly-blocked
+  item looks exactly like a rightly-blocked one*, and no session re-tests a label it wrote
+  itself. This one sat unread for three and a half months.
 - **Pending deferred verification:** sync-churn inspection + the 4
   wiki-`action=parse` items (a healthy wiki needed — see
   `docs/deferred_verification.md`).

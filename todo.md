@@ -13,7 +13,11 @@ Long-horizon backlog — genuine, not-yet-done tasks ONLY. Active session work i
 
 ## Repo / script tasks
 
-- **Full program audit:** [`docs/program_audit_2026-06.md`](docs/program_audit_2026-06.md) (2026-06-05) — the single read-through of the whole machine: CI invocation graph, orchestrators+ops, legacy CI scripts, the Wikidata QS path, the sync/cloud-queue loop, known kludges, in-flight migrations, keep/fix/retire verdicts.
+> ⚠ The full-program-audit entry was closed 2026-09-21. `docs/program_audit_2026-06.md` stays as
+> the architecture map — `site/generate_pages.py` publishes it — but it is reference, not a task,
+> so it does not belong here. Its section-8 verdicts were checked and two were corrected in place:
+> the retire list is superseded by the 2026-09-17 machinery-stays-up ruling and must not be
+> executed, and its `BLOCKED-ON-USER-ACTION` line was wrong both as a state and on the facts.
 
 
 ## Wiki content tasks

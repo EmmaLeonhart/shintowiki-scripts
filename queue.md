@@ -46,23 +46,6 @@ from `ATOMIC_FILES`; they are not queue items.
   that has not been tried is issuing FEWER queries, not pacing them better** — 36 queries for 18
   languages, two per language, is the shape to attack before touching THROTTLE again.
 
-- [ ] `docs/program_audit_2026-06.md` is the only concrete entry left in `todo.md`, and its
-  verdicts have aged out. Correct the doc, then close the `todo.md` entry.
-  • ⛔ **It carries a `BLOCKED-ON-USER-ACTION` label**, which CLAUDE.md says is not a state an item
-    can be in — and it is wrong on the facts too. Backlog item 5 (recreate deleted Wikidata items)
-    **shipped**: `recreate-deleted-wikidata/` holds the generators, the RUNNABLE batches and tests,
-    `recreation_relations.txt` is registered in `ATOMIC_FILES` in BOTH `direct_daily_edits.py` and
-    `submit_daily_batch.py`, and `DEVLOG.md` records the items being created. Last activity
-    2026-09-14. This is the exact failure the lockout section names: a wrongly-blocked item looks
-    identical to a rightly-blocked one and no session re-tests a label it wrote itself.
-  • ⛔ **Its retire verdicts are superseded and must NOT be executed.** `undelete_gaiad_date`,
-    `create_shrine_ranking_pages` and `rebucket_300plus_untranslated` still exist and are still
-    wired into `wiki-cleanup.yml`. The audit (2026-06) says retire-after-one-CI-cycle; the
-    2026-09-17 ruling says the wiki machinery stays up and keeps trying indefinitely. **The later
-    ruling wins.** Do not delete them.
-  • ✓ Already accurate and needing no change: `undelete_immanuelle_common_js` and
-    `audit_double_category_qids` really are retired — the remaining hits are historical comments.
-
 - **Pinned tail (keep last)**
 
   - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
