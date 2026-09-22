@@ -511,6 +511,42 @@ ontology — has no working channel at all right now.
   blocked on Cloudflare. When the real work is blocked, the answer is not to mine whichever corner
   still has queries left in it.
 
+### ⛔⛔ THE GENERAL RELIGIOUS-BUILDING WORK IS DORMANT — it leaves for the genealogy project (Emma, 2026-09-21)
+
+Her words, closing a question about how 9,410 placenames should render: ***"Ehh just drop the
+ontology imposition on this please. I want to do religious buildings of other cultures but my idea
+is that that moves into the genealogy project. So this post part of the project goes dormant for
+now."***
+
+**This supersedes the two sections below it for that population.** The 10% — the ~22,500 churches,
+chapels, mosques and synagogues of `generate_religious_building_multilang.py` — is **not work any
+more**, here. It is not a backlog, not a queue item, not a thing to measure, and not something to
+propose an improvement to. It moves to the genealogy project when she takes it there.
+
+- **The 90% is unchanged and is now the whole of it.** Shrines and Japanese Buddhist temples stay in
+  scope exactly as before — *"Japanese Buddhist temples are Shinto"* still holds and is not affected
+  by this.
+- **⛔ THE `AskUserQuestion` CARVE-OUT BELOW IS INERT.** It existed to get ontology and translation
+  calls made *for this population*. Dormant means there are no such calls to make. Do not fire one
+  about religious buildings; the answer to every one of them is now this section. The ban in
+  ⛔ THE STRANDED KATAKANA READINGS covers the rest as it always did.
+- **The machinery stays up**, on exactly the precedent in ⭐ THE WIKI SIDE IS FORMALLY ABANDONED:
+  `generate_religious_building_multilang.py`, `generate_religious_building_labels.py`,
+  `generate_religious_building_p825.py`, `religious_building_morphemes.py`, the katakana modules,
+  `paused/religious_building_en.txt`, the CI step and every test keep running and keep their names.
+  Dormant is a rule about what gets WORKED ON, not about deleting anything. The drip keeps drip-
+  feeding whatever those files already hold.
+- ⚠ **What was measured on the way to this ruling, so nobody re-derives it.** Denmark emits 14 of 14,
+  Norway 15 of 21, Sweden 22 of 86 — and the Swedish shortfall is **not** phonology. Emma's own
+  `42849537b` shipped the sv/no/da rules and they work. 60 of 86 fail on a missing Japanese label for
+  the P131 place, which generalises: **9,410 items across ~20 countries clear every other gate and
+  are refused only for that**, 83% of them having an English place label that reads
+  `"Luleå Municipality"` — English, with an administrative type word, which `to_katakana` correctly
+  refuses. That is the question she declined to answer, and it stays unanswered.
+- ⚠ **Do not read "dormant" as an invitation to finish it first.** The Nordic three, the 627
+  English-shaped long tail and the fourth dedication-QID round were deleted from `queue.md` unfinished
+  on 2026-09-21. That is the correct state.
+
 ### ⭐ THE ONE CARVE-OUT: religious-building ontology and translation (Emma, 2026-09-18)
 
 Her instruction, in the middle of being furious at me: ***"AskUserQuestion on ontology or

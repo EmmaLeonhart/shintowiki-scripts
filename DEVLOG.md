@@ -1,3 +1,49 @@
+## 2026-09-21 (cont. 4) — the religious-building population goes dormant, mid-measurement
+
+Picked up the Nordic three to check whether `42849537b` had already delivered it. It had delivered
+the part it was about, and the measurement then walked into something much larger, which Emma
+closed outright.
+
+**What the Nordic item actually stood at.** Emitted ja labels against the cached corpus:
+
+| | corpus | emitted | |
+|---|---|---|---|
+| Denmark (da) | 14 | 14 | 100% |
+| Norway (no) | 21 | 15 | 71% |
+| Sweden (sv) | 86 | 22 | 26% |
+
+**The Swedish shortfall is not phonology.** Emma's rules work; the `sky` trap, the palatalisation
+and the type-word split that the queue item was about are all doing their job. Running the
+generator's own gates over just the Swedish rows, 60 of the 86 fail on **`no ja place label`** — the
+P131 municipality has no Japanese label on Wikidata — and only 1 fails on an unknown dedication.
+
+**And it is not a Nordic problem.** Across the whole population, **9,410 items clear every other
+gate and are refused only for a missing Japanese place label** — 48% of the 19,720 that otherwise
+pass. Spain 3,634, Poland 1,588, Germany 1,160, Russia 696, Czechia 435, Portugal 409, France 395,
+Austria 340. **83% of those places do have an English label**, but it reads `"Luleå Municipality"`,
+`"Eksjö Municipality"` — English, carrying an administrative type word — and `to_katakana` refuses
+it, correctly. ⚠ `test_translit_fallback.py` already assumes the answer: it renders
+`Björkskatakyrkan` with `place="ルレオ"`, the bare native name, not the English one.
+
+**Emma's answer, and it is the end of the area:** *"Ehh just drop the ontology imposition on this
+please. I want to do religious buildings of other cultures but my idea is that that moves into the
+genealogy project. So this post part of the project goes dormant for now."*
+
+So nothing was built. Four items — the 90/10 marker, the Nordic three, the 627 English-shaped long
+tail, the fourth dedication-QID round — are deleted from `queue.md` unfinished, which is the correct
+state, and `CLAUDE.md` carries the ruling above the 2026-09-18 carve-out it supersedes.
+
+- **The 90% is unchanged**: shrines and Japanese Buddhist temples stay in scope exactly as before.
+- **The `AskUserQuestion` carve-out for religious-building ontology and translation is now inert** —
+  it existed to get calls made for a population that is no longer being worked.
+- **The machinery stays up**, on the precedent already written for the other dormant area: the
+  generators, the morpheme tables, the CI step and every test keep running and keep their names.
+  Nothing is deleted, and the drip keeps feeding on what those files already hold.
+
+⚠ The question this started from — how a placename should render when Wikidata has no ja label for
+it — is not answered and should not be picked up. It was asked once, under the carve-out, and
+declined.
+
 ## 2026-09-21 (cont. 3) — the cache is staged, and the blocker was one file I had not read
 
 The item queued an hour earlier said the fix was "not a one-line patch" because the commit step
