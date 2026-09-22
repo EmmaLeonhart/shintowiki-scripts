@@ -1,3 +1,38 @@
+## 2026-09-22 (cont.) — the 429 watch closes: two clean scheduled runs, and the workflow tells on itself
+
+Run **35713822422** (scheduled, 10:03 UTC, 3m47s) is the second consecutive clean run of
+`generate-shrines-missing-en-label.yml` since the backoff fix landed on 09-20. Read from the log,
+not the conclusion field: **no 429, no FATAL, no 502/503 anywhere in 385 lines.** Both Stage 2 steps
+ran to completion —
+
+```
+Stage 2 targets (no-kana, no-en): 4074 shrines, 3038 distinct ja labels.
+Reused a same-name en label for 1466/4074 targets -> 1466 labels + 0 aliases.
+Stage 2 targets (no-kana, no-en): 11716 temples, 5784 distinct ja labels.
+Reused a same-name en label for 6753/11716 targets -> 6753 labels + 0 aliases.
+```
+
+and its commit `c5e838949` refreshed `identical_name_en_labels.txt` and
+`temple_identical_name_en_labels.txt`, the two files that had been frozen since 09-17.
+
+**Before the fix: 09-16, 09-17, 09-18, 09-19, 09-20 scheduled all failed, and the 09-20 dispatch
+that tested the throttle-only change failed too. After it: 09-21 and 09-22 both clean.**
+
+⚠ Two runs is evidence, not proof. The reason it is safe to stop watching anyway is that **this
+workflow reports its own failure**: it pairs `continue-on-error` with a final step that re-fails the
+job from each step's `outcome`, and prints `::error::<name> did not regenerate this run`. A future
+429 goes red by itself. The watch existed because nobody would otherwise notice, and that premise no
+longer holds here.
+
+**What does not close is the finding the watch turned up.** `generate_multilang_quickstatements.py`
+429'd on the same endpoint the night before, and it was already on the shared transport — so pacing
+is not the remaining lever there. It asks **114 queries per run**, two per language across 57
+languages, each returning ~37,000 rows, and the two differ only by a per-language label-existence
+filter over the same fixed set. That is now its own queue item, scoped to measuring whether a
+smaller query shape returns the same rows before anything ships.
+
+⚠ It is load reduction, not a speed-up, and must not be argued as one.
+
 ## 2026-09-22 — the staging fix held, and the 12-line drop is the drainage the 709 was not
 
 **First live test of last night's commit-step fix.** CI run committed `fe76a6958`, and it carries
