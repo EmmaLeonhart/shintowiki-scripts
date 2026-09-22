@@ -106,8 +106,29 @@ def test_fill_leaves_unknown_items_alone():
 
 
 def test_load_parses_the_real_file():
+    """⛔ THE FLOOR IS NOT AN ARBITRARY NUMBER AND MUST NOT BE LOWERED TO GO GREEN.
+
+    On 2026-09-21 this test went red at 772 and the obvious reading — a worklist
+    drains, so the floor is stale — was wrong twice over. Both plausible drainage
+    mechanisms were checked against live Wikidata and both were disproved: of 30
+    dropped items sampled, **0 had gained `P1814`** and **0 had gained an English
+    label**, and all 30 still carried the `P131` the target query needs. They still
+    qualified; they had simply stopped being emitted.
+
+    The generator was not at fault either. Re-run against the committed cache and
+    index it produced 1,481 lines, byte-identical to the file before the drop. What
+    CI committed was a degraded run's output, and the input that produced it was
+    never committed — the workflow stages `*.txt` and `_site/`, never the
+    `nta_kana_targets.json` cache beside them.
+
+    So a low number here means the last CI run wrote an output its own committed
+    inputs do not reproduce. Regenerate and compare before touching this line.
+    """
     staged = staged_readings.load()
-    assert len(staged) > 1000, "nta_kana.txt should carry over a thousand readings"
+    assert len(staged) > 1000, (
+        "nta_kana.txt carries %d readings. This is a floor on a REGENERATED file, "
+        "not a drain counter — check it against `python generate_nta_kana.py` on "
+        "the committed cache before assuming the floor is stale." % len(staged))
     assert all(q.startswith("Q") for q in staged)
     assert all(v and '"' not in v for v in staged.values())
 

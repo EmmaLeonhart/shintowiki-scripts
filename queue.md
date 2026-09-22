@@ -9,30 +9,6 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
-- **Pinned tail (keep last)**
-
-  - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
-    status-report :42, briefing 08:03. Crons are session-local and expire after 7 days, so a
-    recorded ID is only ever evidence about the session that made it — check `CronList`, do not
-    trust the IDs written here.
-    ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
-    in this repo lol."* Do not recreate it from any doc that still says five.
-    ✓ Live IDs, session of **2026-09-21**: `f9177ea8` :03, `77dc3fc6` :15, `12c63985` :42,
-    `f6ded1e6` 08:03 — created after `CronList` reported, once again, no jobs at all beforehand.
-    Every recorded set this file has carried has been dead by the time the next session read it.
-    Trust `CronList`, not this line.
-    ⚠ 2026-09-19: this session read "keep last" as "optional", did the queue work, and reported the
-    crons as something to offer rather than doing them. It is not optional — a fresh session has
-    none, so recreating the set IS the item, and the only reason it is pinned last is that a
-    planning burst kills them.
-    ⚠ `durable: true` does nothing — `CronCreate` says so in its own parameter description ("Has no
-    effect — durable persistence is not available"). So the recreate-every-session step is the only
-    mechanism there is, not a workaround for one that keeps failing.
-    ⚠ The 08:03 briefing has **no skill in this repo** — `deep-briefing` lives in the hub and there is
-    no `DAILY.md` here, so its prompt was written from what `DEVLOG.md` 2026-08-27 records of it:
-    skip-check, push, then `AskUserQuestion` as the deliverable.
-  - [ ] Run the status-report action once more independently as an end-of-session summary.
-
 - [ ] Watch whether `Generate shrines-missing-en-label list` stops 429ing. Its Stage 2 steps hand-
   rolled a WDQS transport at `THROTTLE = 0.5`, five times faster than the repo floor, and the
   workflow failed 5 of 6 runs from 09-16 to 09-20 — so `identical_name_en_labels.txt` and
@@ -69,6 +45,28 @@ from `ATOMIC_FILES`; they are not queue items.
   So the shared transport is working as written and the endpoint is still refusing us. **The lever
   that has not been tried is issuing FEWER queries, not pacing them better** — 36 queries for 18
   languages, two per language, is the shape to attack before touching THROTTLE again.
+
+- [ ] `generate-quickstatements.yml` commits the OUTPUT but never its INPUT cache, so a
+  degraded run cannot be diagnosed and silently replaces a good file. Measured 2026-09-21:
+  `nta_kana.txt` went **1,481 → 772** in CI commit `81fb4f0b1`, and that commit touched
+  `nta_kana.txt` alone — the `nta_kana_targets.json` the run had just rewritten was left behind.
+  • ⛔ It is NOT drainage, and both drainage stories were checked and disproved against live
+    Wikidata: of 30 dropped items, **0 had gained `P1814`** and **0 had gained an English label**;
+    all 30 still carried `P131`. They still qualified as targets.
+  • The generator is fine — re-run on the committed cache it emits **1,481, byte-identical** to
+    the pre-drop file. Restored 2026-09-21 by regenerating.
+  • **The fix is in the commit step**, `.github/workflows/generate-quickstatements.yml` ~line 715:
+    `git add *.txt` + `git add _site/` never reaches a `.json`. ⚠ Staging it is not enough on its
+    own — the step first wipes the tree (`git checkout -- .`, `git clean -fd`) and restores only
+    the paths listed in `/tmp/qs_files.txt` from `/tmp/qs_backup`, so the cache has to be in THAT
+    list too or it is deleted before the `git add` ever sees it. Read the whole restore block
+    before editing; that is why this is an item and not a one-line patch.
+  • ⚠ Once input and output are committed together, a test can pin that `nta_kana.txt` is exactly
+    what the committed cache reproduces. Today that test would be red after every legitimate
+    refresh, which is why it is not written yet.
+  • ⚠ The likely trigger is WDQS being unhealthy — the same endpoint that 429'd twice on 09-20/21
+    — but that is NOT confirmed and should not be written down as the cause. What is measured is
+    that the output does not follow from the committed inputs.
 
 - [ ] ⚠ The religious-building items below are the **10%** (Emma, 2026-09-18: *"90% Shinto
   10% others. Japanese Buddhist temples are Shinto"*). Shrine and temple work comes first.
@@ -127,6 +125,30 @@ from `ATOMIC_FILES`; they are not queue items.
   `francesco assisi` 13+2, `john nepomuk` 10+8, `demetrius thessaloniki` 3. Each is ONE saint and
   needs the phrase's own QID; ⛔ do NOT resolve them from their first part, which would be right by
   luck today and silently wrong if that name ever resolves to a different saint of the same name.
+
+- **Pinned tail (keep last)**
+
+  - [ ] Ensure the FOUR session-local crons are running: work-loop :03, auto-flush :15,
+    status-report :42, briefing 08:03. Crons are session-local and expire after 7 days, so a
+    recorded ID is only ever evidence about the session that made it — check `CronList`, do not
+    trust the IDs written here.
+    ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
+    in this repo lol."* Do not recreate it from any doc that still says five.
+    ✓ Live IDs, session of **2026-09-21**: `f9177ea8` :03, `77dc3fc6` :15, `12c63985` :42,
+    `f6ded1e6` 08:03 — created after `CronList` reported, once again, no jobs at all beforehand.
+    Every recorded set this file has carried has been dead by the time the next session read it.
+    Trust `CronList`, not this line.
+    ⚠ 2026-09-19: this session read "keep last" as "optional", did the queue work, and reported the
+    crons as something to offer rather than doing them. It is not optional — a fresh session has
+    none, so recreating the set IS the item, and the only reason it is pinned last is that a
+    planning burst kills them.
+    ⚠ `durable: true` does nothing — `CronCreate` says so in its own parameter description ("Has no
+    effect — durable persistence is not available"). So the recreate-every-session step is the only
+    mechanism there is, not a workaround for one that keeps failing.
+    ⚠ The 08:03 briefing has **no skill in this repo** — `deep-briefing` lives in the hub and there is
+    no `DAILY.md` here, so its prompt was written from what `DEVLOG.md` 2026-08-27 records of it:
+    skip-check, push, then `AskUserQuestion` as the deliverable.
+  - [ ] Run the status-report action once more independently as an end-of-session summary.
 
 <!-- Spent injector markers below. NOT queue items, and not a done-list:
      scheduled/inject_due_items.py re-injects any item whose marker is missing from this

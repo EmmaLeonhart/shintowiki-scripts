@@ -1,3 +1,75 @@
+## 2026-09-21 (cont. 2) — CI was red before I arrived, and the red test was right
+
+**CI had been failing since 15:57, on `7fb9c36b8`.** Four tests. Three were stale guards; the
+fourth had caught a real regression that nothing else had noticed.
+
+### The three stale guards — Emma shipped the Nordic rules herself
+
+`42849537b` ("q", 15:56) added Swedish, Norwegian and Danish to `plain_latin_katakana.COUNTRY_RULES`
+and the Nordic type words to `religious_building_morphemes.TYPE_WORDS`. That is the queue's "Nordic
+three" item, done by hand. It broke three guards that had nothing to do with the Nordics:
+
+* Two assert that *an unlisted country refuses rather than defaulting*, using **Sweden** as the
+  example. Sweden is now listed. ⚠ **This is the second time**: France, Germany, Poland and Russia
+  were the examples until 2026-09-19, when they got rule sets and Sweden replaced them. Each time a
+  correct table change looked like a test failure. The example is now **derived** — any QID absent
+  from `COUNTRY_RULES` must refuse — so a country gaining rules just stops being the example.
+* `test_the_mosque_type_words_stay_out_of_the_global_set` enforced its ban by OMISSION from an
+  allowlist, so recording a deliberate addition meant widening the same line that carried the ban.
+  `moske`/`moské`/`moskée`/`moskee` now sit in the allowlist beside `moschee`, which they match in
+  shape and kind, and the prohibition is its own assertion naming `cami`, `camii` and the bare stem
+  `mosk` — verified absent from `TYPE_WORDS`. A second test pins that nothing under five characters
+  can enter the allowlist, since suffix matching is what makes a stem dangerous.
+
+### The fourth was real: `nta_kana.txt` lost 709 readings and CI committed it
+
+`test_load_parses_the_real_file` asserts the file carries over a thousand readings. It held 772.
+
+The obvious reading — a worklist drains, so the floor is stale — was wrong, and **both drainage
+stories were checked against live Wikidata and both died**:
+
+| hypothesis | result |
+|---|---|
+| the readings landed, so they dropped out | of 30 dropped items, **0 have `P1814`** |
+| they gained an English label, so they are done | of the same 30, **0 have an en label** |
+
+All 30 still carried the `P131` the target query needs. They still qualified. And the generator was
+not at fault: re-run against the committed cache and index it emits **1,481 lines, byte-identical**
+to the file before the drop.
+
+**What CI committed was a degraded run's output, and the input that produced it was thrown away.**
+`81fb4f0b1` touched `nta_kana.txt` alone; the `nta_kana_targets.json` the run had just rewritten was
+not in it, because the commit step stages `*.txt` and `_site/` and never a `.json`. So the repo held
+an output its own committed inputs do not reproduce, and nothing could say why.
+
+Restored by regenerating (deterministic, no WDQS). The workflow fix is queued rather than guessed:
+the commit step wipes the tree and restores only what is listed in `/tmp/qs_files.txt`, so staging
+the cache is not a one-line patch, and I did not want to edit that block on a hunch.
+
+⚠ **The trigger is not established.** WDQS being unhealthy is plausible — the same endpoint 429'd
+twice in two days — but it is not confirmed and is not written down as the cause. What is measured
+is that the output did not follow from the committed inputs.
+
+### The rotation, from tonight's earlier measurement
+
+`generate_multilang_quickstatements.py` now rotates `ALL_LANGS` by ordinal date. The order was
+load-bearing and undocumented: a 429 ends the run where it lands, so with a fixed order the same
+tail loses every time — run 35682528723 bailed at index 17 of 57 and the same 39 languages lost,
+while `tr de nl es it` had never once been among them. That does not make coverage slow, it makes it
+never happen, which breaks the premise the whole unattended design rests on. Rotation is stateless
+(no `.state` to commit or drift) and gives every language the front within 57 days.
+
+⚠ It cannot change output — `_gen_lang` rebuilds its `seen` set per call and reads no cross-language
+state — and `test_multilang_rotation.py` pins that structurally, along with the permutation property
+and the one-cycle guarantee.
+
+A bail now also reports what it cost (`[BAILED] 3 of 57 languages regenerated; 54 did not: …`),
+exercised end to end with a faked 429. ⛔ The `except Exception` around each language still does not
+catch `SystemExit`, and must not be widened to: a 429 bails immediately by repo policy, and
+continuing to the next language is the hammering the policy exists to stop.
+
+**CI is green: 3,033 pass on the exact command `ci.yml` runs.**
+
 ## 2026-09-21 (cont.) — the cron-triggered run caught the blindness live: a step failed, the run says success
 
 The 20:16 cron dispatched `label-generator-regenerate.yml` (run **35682528723**, 13m17s, close to

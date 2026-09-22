@@ -24,6 +24,7 @@ import sys
 import io
 import re
 import csv
+import datetime
 import unicodedata
 import requests
 from tokiponizer import kana_to_romaji, tokenize_romaji
@@ -1032,6 +1033,40 @@ ALL_LANGS = ["tr", "de", "nl", "es", "it", "eu", "lt", "ru", "uk", "fa", "ar", "
              "pl", "ro", "fi", "cs", "sl", "th", "new", "pa", "mad", "my", "km", "lo", "dz", "shn"]
 
 
+def rotated_langs(today=None):
+    """`ALL_LANGS` rotated by day, so the cost of a bail does not always land on the
+    same languages.
+
+    ⛔ THE ORDER OF THIS LIST IS LOAD-BEARING AND NOBODY HAD WRITTEN THAT DOWN.
+    A 429 ends the run where it lands (repo policy, see main()), so every language
+    after that point keeps its previous file. With a fixed order the same tail loses
+    every single time: run 35682528723 bailed at index 17 of 57, and `gl sv nb da hu
+    la ast sh hr el az tl war min eo jv he ms br mr nn ceb mai as ur pl ro fi cs sl
+    th new pa mad my km lo dz shn` did not regenerate — while `tr de nl es it` had
+    regenerated on every run that ever completed a single language.
+
+    That is not a throughput problem and it must not be read as one. This project is
+    deliberately slow and unattended, and its whole premise is that *eventually*
+    everything is covered. A fixed order under a recurring bail breaks the
+    "eventually": the tail is never covered, not covered slowly.
+
+    Rotating by ordinal date is stateless on purpose — no `.state` file, nothing to
+    commit, nothing to drift — and gives every language a turn at the front within
+    57 days.
+
+    ⚠ Rotation cannot change OUTPUT. `_gen_lang` is independent per language: its
+    `seen` set is local and `EXCLUDE_QIDS` is a constant, so no language's result
+    depends on which ran before it. This only changes who gets served first when the
+    endpoint cuts us off. `tests/test_multilang_rotation.py` pins that.
+    """
+    day = (today or datetime.date.today()).toordinal()
+    i = day % len(ALL_LANGS)
+    order = ALL_LANGS[i:] + ALL_LANGS[:i]
+    print("Language order rotated by %d (day %d): starts at %r, ends at %r"
+          % (i, day, order[0], order[-1]))
+    return order
+
+
 def make_sparql(lang_code):
     return f"""
 SELECT DISTINCT ?item ?idLabel WHERE {{
@@ -1191,13 +1226,31 @@ def main():
     # kill the remaining 40+ (that's how a whole regenerate run silently
     # produced only tr+de). Failures are collected and the run exits nonzero
     # so continue-on-error can't disguise a partial regeneration as success.
-    failed = []
-    for lang in ALL_LANGS:
-        try:
-            _gen_lang(lang)
-        except Exception as e:
-            print(f"[LANG-FAILED] {lang}: {e}", flush=True)
-            failed.append(lang)
+    #
+    # ⛔ This does NOT catch a 429, and must not be widened to. `wdqs_transport`
+    # raises `SystemExit`, a BaseException, so a 429 goes straight past
+    # `except Exception` and ends the run — which is repo policy: a 429 bails
+    # immediately with no retries, and carrying on to the next language after the
+    # endpoint has refused us is exactly the hammering the policy exists to stop.
+    order = rotated_langs()
+    failed, done = [], []
+    try:
+        for lang in order:
+            try:
+                _gen_lang(lang)
+            except Exception as e:
+                print(f"[LANG-FAILED] {lang}: {e}", flush=True)
+                failed.append(lang)
+            done.append(lang)
+    except SystemExit:
+        # Report what the bail cost, then honour it. The run still dies on the next
+        # line; this only makes the loss legible. Run 35682528723 bailed on `ca` and
+        # its last line named `ca` — nothing in the log said the other 39 languages
+        # had not run, and the commit diff could not say it either.
+        missed = [x for x in order if x not in done]
+        print("\n[BAILED] %d of %d languages regenerated; %d did not: %s"
+              % (len(done), len(order), len(missed), ", ".join(missed)), flush=True)
+        raise
 
     if failed:
         sys.exit(f"{len(failed)} language(s) failed: {', '.join(failed)}")

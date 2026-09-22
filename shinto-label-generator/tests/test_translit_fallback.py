@@ -140,15 +140,21 @@ def test_an_unlisted_country_refuses_rather_than_guessing():
     """
     import romance_katakana
     import plain_latin_katakana
-    # ⚠ Germany and France were the examples here until 2026-09-19, when Emma
-    # answered "All of them, French included" and they got rule sets. The
-    # doctrine is unchanged and the countries testing it moved: Sweden, Finland
-    # and Armenia have none and are not getting one from a guess.
-    for country in ("Q34", "Q33", "Q399"):    # Sweden, Finland, Armenia
-        assert romance_katakana.rules_for_country(country) is None
-        assert plain_latin_katakana.rules_for_country(country) is None
-    assert m.render("Björkskatakyrkan", CHURCH, "ja",
-                    place="ルレオ", rules=None) is None
+    # ⚠ Germany and France were the examples until 2026-09-19 ("All of them,
+    # French included"); Sweden replaced them and got `sv` rules in 42849537b the
+    # next day, turning a correct table change into a red test. The example is
+    # derived now — see the same note in `test_mosque_labels.py`.
+    unlisted = [q for q in ("Q33", "Q399", "Q79", "Q17")
+                if q not in plain_latin_katakana.COUNTRY_RULES
+                and q not in romance_katakana.COUNTRY_RULES]
+    assert unlisted, "every sample country now has rules — pick new samples"
+    for country in unlisted:
+        assert romance_katakana.rules_for_country(country) is None, country
+        assert plain_latin_katakana.rules_for_country(country) is None, country
+
+    # ⛔ Björkskatakyrkan is NO LONGER an example of this: Sweden has rules as of
+    # 42849537b, so `rules=None` is not what the generator would pass for it any
+    # more. Armenia still has none, and the refusal it tests is the same one.
     assert m.render("Surb Astvatsatsin Church", CHURCH, "ja",
                     place="エレバン", rules=None) is None
 

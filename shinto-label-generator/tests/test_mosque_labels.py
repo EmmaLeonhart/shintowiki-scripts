@@ -185,17 +185,35 @@ def test_refusals(word, rules):
 
 def test_an_unlisted_country_refuses_rather_than_defaulting():
     """⛔ `romance_katakana.rules_for_country` defaulted to Italian once and read
-    French as Italian across 14,000 items. Nothing here defaults."""
-    # ⚠ France, Germany, Poland and Russia were the examples here until
-    # 2026-09-19, when Emma answered "All of them, French included" and they got
-    # rule sets. The doctrine is unchanged and the countries testing it moved.
-    assert p.rules_for_country("Q34") is None       # Sweden
-    assert p.rules_for_country("Q33") is None       # Finland
-    assert p.rules_for_country("Q79") is None       # Egypt
+    French as Italian across 14,000 items. Nothing here defaults.
+
+    ⚠ THE DOCTRINE IS PERMANENT; THE EXAMPLES ARE NOT, and this test has now gone
+    red twice for that reason alone. France, Germany, Poland and Russia were the
+    examples until 2026-09-19 ("All of them, French included"); Sweden replaced
+    them and was itself given rules in 42849537b the following day, which broke
+    the assertion below it. Each time, a correct change to the table looked like a
+    test failure.
+
+    So the example is DERIVED. Any QID absent from `COUNTRY_RULES` must refuse,
+    and a country gaining rules is then not a failure — it just stops being the
+    example."""
+    unlisted = [q for q in ("Q33", "Q79", "Q399", "Q408", "Q17")
+                if q not in p.COUNTRY_RULES]
+    assert unlisted, "every sample country now has rules — pick new samples"
+    for qid in unlisted:
+        assert p.rules_for_country(qid) is None, qid
+
+    # The doctrine itself, which no table change can invalidate.
     assert p.rules_for_country(None) is None
+    assert p.rules_for_country("Q-not-a-country") is None
+
+    # And the positive direction, including the three that arrived in 42849537b.
     assert p.rules_for_country("Q221") == "bs"      # North Macedonia
     assert p.rules_for_country("Q43") == "tr"       # Turkey
     assert p.rules_for_country("Q252") == "ms"      # Indonesia
+    assert p.rules_for_country("Q34") == "sv"       # Sweden
+    assert p.rules_for_country("Q20") == "no"       # Norway
+    assert p.rules_for_country("Q35") == "da"       # Denmark
 
 
 def test_a_multiword_name_is_all_or_nothing():
@@ -221,8 +239,46 @@ def test_an_english_label_refuses_rather_than_being_read_as_malay():
                     place="X", latin_rules="ms") is None
 
 
+# Mosque words that ARE allowed in the global `TYPE_WORDS`: whole, unambiguous
+# type words that cannot be a tail of anything else. `moschee` (de) and
+# `mezquita` (es) were always here; `moske`/`moské`/`moskée` (Nordic) and
+# `moskee` (nl) joined in 42849537b with the same reasoning written next to them
+# — *"it is a TYPE, not a name ... this is the right place to stop it, not the
+# reader."* Same shape, same class, so the allowlist follows the code.
+MOSQUE_WORDS_ALLOWED_GLOBALLY = {
+    "mosque", "mosques", "moschee", "mezquita", "synagogue",
+    "moske", "moské", "moskée", "moskee",
+}
+
+# ⛔ These must NEVER reach the global set, and naming them is the point. The old
+# version of this test enforced the prohibition by OMISSION from the allowlist,
+# so the only way to record a deliberate addition was to widen the same line that
+# carried the ban — which makes a real relaxation and a routine one look identical
+# in the diff. The ban is now its own assertion.
+MOSQUE_WORDS_BANNED_GLOBALLY = {
+    "cami", "camii", "camia", "camisi",   # Turkish; `cami` is 4 chars and suffix-matched
+    "mosk",                                # a STEM, not a word
+    "masjid", "dzamija", "džamija",
+}
+
+
 def test_the_mosque_type_words_stay_out_of_the_global_set():
-    """⛔ TYPE_WORDS is consulted for all 22,548 items and matched as a suffix.
-    Adding `cami` or `mosk` there would change how 18,148 church labels parse."""
-    assert not (m.MOSQUE_TYPE_WORDS - {"mosque", "mosques", "moschee",
-                                       "mezquita", "synagogue"}) & m.TYPE_WORDS
+    """⛔ TYPE_WORDS is consulted for all 22,548 items and matched as a SUFFIX, so
+    a word here changes how 18,148 church labels parse. `_strip_compound_type`
+    takes any tail of 4+ characters, which is why a stem like `mosk` is dangerous
+    in a way the whole word `moskee` is not."""
+    for word in MOSQUE_WORDS_BANNED_GLOBALLY:
+        assert word not in m.TYPE_WORDS, (
+            "%r reached the global TYPE_WORDS; it is suffix-matched against every "
+            "church label" % word)
+    leaked = (m.MOSQUE_TYPE_WORDS - MOSQUE_WORDS_ALLOWED_GLOBALLY) & m.TYPE_WORDS
+    assert not leaked, sorted(leaked)
+
+
+def test_the_global_allowlist_is_not_a_place_to_park_a_stem():
+    """Guards the guard: every word allowed globally must be a whole type word of
+    at least five characters. `mosk` is four and is banned; the rule that keeps it
+    banned should not be a memory."""
+    for word in MOSQUE_WORDS_ALLOWED_GLOBALLY:
+        assert len(word) >= 5, word
+        assert word not in MOSQUE_WORDS_BANNED_GLOBALLY, word
