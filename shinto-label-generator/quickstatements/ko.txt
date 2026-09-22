@@ -107516,6 +107516,8 @@ Q141504085	Lko	"천변팔번신사"
 Q141523722	Lko	"보본사"
 # Source: JA "松蔭神社" (hanja reading)
 Q141524039	Lko	"송음신사"
+# Source: JA "大善寺" (hanja reading)
+Q141529004	Lko	"대선사"
 # Source: JA "平間寺" (hanja reading)
 Q1504465	Lko	"평간사"
 # Source: JA "蓮花寺" (hanja reading)
