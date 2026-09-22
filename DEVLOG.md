@@ -1,3 +1,37 @@
+## 2026-09-22 — the staging fix held, and the 12-line drop is the drainage the 709 was not
+
+**First live test of last night's commit-step fix.** CI run committed `fe76a6958`, and it carries
+**`nta_kana_targets.json` alongside `nta_kana.txt`** — the input and the output in one commit, which
+is the whole point. The file now holds 1,469 lines, and re-running `generate_nta_kana.py` against
+the committed cache reproduces exactly those 1,469, identical. That property is what was missing
+when the file dropped to 772 with its input discarded.
+
+**And the 12 lines that went are all accounted for.** I flagged the 1,481 → 1,469 difference an hour
+ago and said explicitly I had not checked it and would not call it benign. Checked now, against live
+Wikidata:
+
+| | |
+|---|---|
+| gained `P1814` — the reading landed | 4 |
+| gained an English label — done under the 2026-08-24 rule | 8 |
+| unexplained | **0** |
+
+⭐ **This is the comparison that matters for the open investigation.** The same two tests, run on the
+same file, one day apart:
+
+| drop | sampled | explained |
+|---|---|---|
+| 1,481 → 772 (2026-09-21, CI) | 30 | **0 of 30** |
+| 1,481 → 1,469 (2026-09-22, CI) | 12 (all of them) | **12 of 12** |
+
+So a healthy refresh drains a handful of items for reasons that are visible on the items themselves,
+and the 709-line drop did not look like that at all. That does not identify what happened on 09-21
+— it remains unattributed — but it does rule out the reading that the earlier sample was unlucky or
+that the tests were the wrong tests. They are the right tests; they simply found nothing to find.
+
+⚠ Still unknown: why that run's `--refresh` returned a smaller target set. The evidence for it is a
+recurrence, which will now arrive with its input attached.
+
 ## 2026-09-21 (cont. 5) — the program audit was telling the next session to break things
 
 `queue.md` drained to one item waiting on a scheduled run three hours out, so this promoted the
