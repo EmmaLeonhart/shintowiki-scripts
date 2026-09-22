@@ -1,3 +1,36 @@
+## 2026-09-22 (cont. 3) — the single-query change verified in production: 57 queries, 57 languages, no bail
+
+Run **35722621544** on `aa456ff0e` is the first scheduled `label-generator-regenerate.yml` since the
+change. Read from the log:
+
+```
+queries issued  : 57   (was 114)
+languages reached: 57   (was 18 of 57 before it bailed)
+'Total: Wrote' lines: 57
+Done!
+```
+
+No 429, no FATAL, no `[BAILED]`. One `WDQS 504 — retrying in 15s` recovered, which is the backoff
+doing its job rather than a fault.
+
+For comparison, run 35682528723 the night before died at language 18 with
+`429 from WDQS — bailing` and 39 languages never ran.
+
+⚠ **AND THE PART THAT IS EASY TO MISREPORT.** The run's commit `70042a990` touched exactly one
+file in `quickstatements/` — `id_proposed.txt`. **None of the 39 previously-unreached language
+files show a diff.** That is not the fix failing, and it is not "39 files refreshed" either. All 57
+were written; 56 were written with content identical to what they already held, so git sees
+nothing. These files list *items still missing a label in language X*, and an item leaves a file
+only when its proposal lands — which happens a few at a time. A single day's change for one
+language is commonly zero.
+
+So the honest statement of what the bail cost is narrower than it first looked: **not automatic
+data loss, but files that stop tracking reality**, where whether that matters depends on whether
+reality moved. On 09-21 it had not moved much. That is luck, not a property of the design.
+
+⭐ The load claim holds on measurement, not on argument: 57 queries where there were 114, over an
+endpoint this repo has a no-hammering rule about, with output unchanged.
+
 ## 2026-09-22 (cont. 2) — 114 WDQS queries per run become 57, with byte-identical output
 
 The two per-language queries in `generate_multilang_quickstatements.py` differed only in which
