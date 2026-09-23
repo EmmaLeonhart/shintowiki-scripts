@@ -17,8 +17,8 @@ from `ATOMIC_FILES`; they are not queue items.
     trust the IDs written here.
     ⛔ **There is NO debrief cron.** Emma retired it 2026-08-28: *"Debrief shouldn't happen anymore
     in this repo lol."* Do not recreate it from any doc that still says five.
-    ✓ Live IDs, session of **2026-09-21**: `f9177ea8` :03, `77dc3fc6` :15, `12c63985` :42,
-    `f6ded1e6` 08:03 — created after `CronList` reported, once again, no jobs at all beforehand.
+    ✓ Live IDs, session of **2026-09-23**: `420f4ec3` :03, `ebc63cff` :15, `a5c98015` :42,
+    `0b4acc3b` 08:03 — created after `CronList` reported no jobs at all beforehand.
     Every recorded set this file has carried has been dead by the time the next session read it.
     Trust `CronList`, not this line.
     ⚠ 2026-09-19: this session read "keep last" as "optional", did the queue work, and reported the

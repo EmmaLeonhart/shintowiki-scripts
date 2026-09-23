@@ -1,3 +1,14 @@
+## 2026-09-23 — the four session crons, recreated; the queue's actionable surface is the pinned tail
+
+`CronList` at session start: no jobs, the expected state. Created: `420f4ec3` work-loop :03,
+`ebc63cff` auto-flush :15, `a5c98015` status-report :42, `0b4acc3b` briefing 08:03. Four, not five.
+
+Nothing else in `queue.md` or `todo.md` is a concrete work item. `queue.md` holds only the pinned
+tail; `todo.md` holds the label-generator horizon (abstract, and owned by the drip) and records of
+what was closed on 2026-09-17 and 2026-09-21. Every CI run today succeeded; the daily QS submission
+report landed at 09:22 UTC. `label-generator-regenerate.yml` did not run today because it is monthly
+plus push-triggered, not daily.
+
 ## 2026-09-22 (cont. 3) — the single-query change verified in production: 57 queries, 57 languages, no bail
 
 Run **35722621544** on `aa456ff0e` is the first scheduled `label-generator-regenerate.yml` since the
