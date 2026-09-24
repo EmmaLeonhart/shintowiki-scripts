@@ -33,7 +33,7 @@
         "open-questions"
       ],
       "queue_anchor": "- **Pinned tail (keep last)**",
-      "injected": "2026-09-21",
+      "injected": "2026-09-24",
       "body_md": [
         "## Scheduled — `continue-on-error` on the label-generator pipelines",
         "",
@@ -73,7 +73,7 @@
         "open-questions"
       ],
       "queue_anchor": "- **Pinned tail (keep last)**",
-      "injected": "2026-09-21",
+      "injected": "2026-09-24",
       "body_md": [
         "## Scheduled — the P958 corrections batch is now pasteable",
         "",
@@ -107,7 +107,7 @@
         "queue"
       ],
       "queue_anchor": "- **Pinned tail (keep last)**",
-      "injected": "2026-09-21",
+      "injected": "2026-09-24",
       "body_md": [
         "## Scheduled — the 24 `part of` removals are unblocked",
         "",
@@ -140,7 +140,7 @@
         "queue"
       ],
       "queue_anchor": "- **Pinned tail (keep last)**",
-      "injected": null,
+      "injected": "2026-09-24",
       "body_md": [
         "- [ ] **Campaign: fix the label-generator `continue-on-error` blindness.** Emma, 2026-09-21,",
         "  offered drop / keep / keep+re-fail and picked none of them: ***\"We run a campaign to fix it",
