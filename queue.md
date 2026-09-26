@@ -9,6 +9,12 @@ from `ATOMIC_FILES`; they are not queue items.
 
 ## stuff to do today
 
+- [ ] **Get this repo's Wikidata edits going through: find which ones are not, and fix that.**
+  Emma, 2026-09-26 (queued from genealogy). Evidence, 2026-09-26: the direct drip works
+  (cleanup-loop run 36110401739: 497/501 succeeded, 1 x 502, 1 x label+description clash on
+  Q9670634), but `create-items.yml` is dispatch-only and last ran 2026-09-10, and
+  `wikidata_editing_lockout.state` still reads `locked: true` (date expired 2026-09-01).
+
 <!-- scheduled:label-generator-continue-on-error-campaign -->
 - [ ] **Campaign: fix the label-generator `continue-on-error` blindness.** Emma, 2026-09-21,
   offered drop / keep / keep+re-fail and picked none of them: ***"We run a campaign to fix it
